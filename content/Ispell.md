@@ -9,8 +9,6 @@ pukiwiki: "Ispell"
 
 ## Ispell {#m5b4a889}
 
-みなさま，このページへの追加・改訂・改善等をよろしくお願いいたします。
-
 ### Ispell へのドイツ語辞書の追加法 {#l61b1466}
 
 #### Windows の場合 {#ke9caba1}
@@ -89,7 +87,7 @@ pukiwiki: "Ispell"
     rpm -e ispell 3.1*
     ```
 
-    などとして古い Ispell を消しておきます。その後 Ispell のページ [http://ficus-www.cs.ucla.edu/project-members/geoff/ispell.html](http://ficus-www.cs.ucla.edu/project-members/geoff/ispell.html) から
+    などとして古い Ispell を消しておきます。その後 [Ispell のページ](http://ficus-www.cs.ucla.edu/project-members/geoff/ispell.html) から
 
     ```
     ispell-3.2.06.tar.gz (Ispell 本体)
@@ -139,7 +137,7 @@ pukiwiki: "Ispell"
     で完了です。
 
 - 
-    Ispell にドイツ語辞書を組み込むためには [http://ficus-www.cs.ucla.edu/project-members/geoff/ispell-dictionaries.html](http://ficus-www.cs.ucla.edu/project-members/geoff/ispell-dictionaries.html) ページから
+    Ispell にドイツ語辞書を組み込むためには [Ispell のページ](http://ficus-www.cs.ucla.edu/project-members/geoff/ispell-dictionaries.html) から
 
     ```
     hk2-deutsch.tar.gz (旧正書法用辞書の素)
