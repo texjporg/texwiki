@@ -20,7 +20,7 @@ TeXなら簡単にきれいな数式ができます。
 ## 簡単な数式なら…… {#td464375}
 
 TeX で無指定で使われるフォントは，本文は Computer Modern Roman 10pt (cmr10)，数式は Computer Modern Math Italic 10pt (cmmi10) です。
-これらは TrueType や Type 1 形式で配布されていますので，これをインストールすれば他のアプリケーションでも使えます。 
+これらは TrueType や Type 1 形式で配布されていますので，これをインストールすれば他のアプリケーションでも使えます。
 
 TrueType 版の Computer Modern フォントの一つである BaKoMa フォントは，たとえば [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) で入手できます。 
 pfb 形式のフォントは TeX に標準で入っています。 cmr10.pfb，cmmi10.pfb などを検索してください。 
@@ -71,7 +71,7 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 <table>
 <tbody>
-<tr><td style="text-align:center"><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
+<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
 <tr><td>Illustrator 10.0.3に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustratorから保存したEPS。</td></tr>
 </tbody>
 </table>
@@ -84,7 +84,7 @@ dvipsの出力するEPSにはプレビュー画像が付いていませんので
 これでもPostScriptデバイス（PSプリンタやDistiller（Adobe PDF））に出力すれば，きれいに出ます。
 また，IllustratorからEPSで保存しても大丈夫です（保存時に「配置した画像を含む」チェックボックスをオンにします）。 
 
-EPSにプレビューを付けておけば，配置したときにプレビューを見ることができますので，便利です。 GSviewのEdit→Add EPS Previewでプレビューが付けられます。 
+EPSにプレビューを付けておけば，配置したときにプレビューを見ることができますので，便利です。 GSviewの［Edit］→［Add EPS Preview］でプレビューが付けられます。 
 
 この方法ではIllustratorから直接PDFで保存すると文字化けしますので，PDF化するならいったんEPSで保存してからDistillerで処理してください。 
 
@@ -132,8 +132,8 @@ Mac版でも，IllustratorからEPSで保存したものは大丈夫です。 PD
 また，あらかじめWindowsにBaKoMaのComputer Modern TrueTypeフォントなどをインストールしておく必要があります。 
 
 dviout（2002年10月9日以降のもの）では次のようにしてEMF形式でクリップボードにコピーできます。
-まずDisplay→Region→On（ショートカットは Ctrl+\[ ）にして，Shiftを押しながら左クリックで矩形領域の左上隅，やはりShiftを押しながら右クリックで右下隅を指定します。
-これでFile→Save as image→EMF in clipboard（ショートカットはAlt+FSE）すると，クリップボードにコピーされます。
+まず［Display］→［Region］→［On］（ショートカットは Ctrl+\[ ）にして，Shiftを押しながら左クリックで矩形領域の左上隅，やはりShiftを押しながら右クリックで右下隅を指定します。
+これで［File］→［Save as image］→［EMF in clipboard］（ショートカットはAlt+FSE）すると，クリップボードにコピーされます。
 これでIllustrator（EMF形式を理解するソフトなら何でも）に貼り付ければOKです。 
 
 また，[pstoedit](http://www.pstoedit.net/pstoedit/) をGSviewと同じところ（標準では C:\Program Files\Ghostgum\pstoedit）にインストールしておけば，GSviewからEdit→Convert to vector format...でWMFやEMFに変換できます。 
@@ -197,7 +197,7 @@ gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -dNOPAUSE -dBATCH -dSAFER
 
 TeXではありませんが同様な機能を持つ数式エディタとして [Equation Magic Lite](http://www.micropress-inc.com/eqmlite.htm) があります。
 これは [Equation Magic Pro](http://www.micropress-inc.com/eqmpro/index.html) の機能制限版で，無償で配布されています。
-これはWordなどOLE対応ソフトからは［挿入］→［オブジェクト］→［Equation Magic］で編集することができます。
+これはWordなどOLE対応ソフトからは［挿入］→［オブジェクト］→［Equation Magic］で編集することができます。 <!-- 全角の［］ですか・・・。 -->
 Illustratorにはクリップボード経由で文字として貼り付けられます。 
 Windowsに「mv」で始まる名前のTrueTypeフォントが9個インストールされ，それが使われますので，Illustratorの中から簡単な修正ができます。
 これらのフォントはComputer Modernとそっくりです。 
