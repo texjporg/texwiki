@@ -29,7 +29,8 @@ TeXで作った本を出している出版社：
 > [マガジンハウス](http://www.magazine.co.jp/)，
 > [丸善](http://pub.maruzen.co.jp/)，
 > [森北出版](http://www.morikita.co.jp/)，
-> [コロナ社](http://www.coronasha.co.jp/)<br>
+> [コロナ社](http://www.coronasha.co.jp/)，
+> [学術図書出版社](http://www.gakujutsu.co.jp/)<br>
 
 意外な本：
 
