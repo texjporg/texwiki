@@ -7,7 +7,9 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 # 表記の哲学/\mathrm{d}x?
 
-[TeX Q &amp; A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) (11579--580, 616, 622, 627, 629, 648, 656--657, 659--661; 15174--175, 184, 233, 235--236, 239, 242, 244, 249, 251, 254, 256, 258, 261--262, 265) より：
+<div style="text-align:right"><a href="https://okumuralab.org/~okumura/texfaq/qa/11579.html">qa:11579</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11580.html">qa:11580</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11616.html">qa:11616</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11622.html">qa:11622</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11627.html">qa:11627</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11629.html">qa:11629</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11648.html">qa:11648</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11656.html">qa:11656</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11657.html">qa:11657</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11659.html">qa:11659</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11660.html">qa:11660</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/11661.html">qa:11661</a>;</div>
+
+<div style="text-align:right"><a href="https://okumuralab.org/~okumura/texfaq/qa/15174.html">qa:15174</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15175.html">qa:15175</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15184.html">qa:15184</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15233.html">qa:15233</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15235.html">qa:15235</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15236.html">qa:15236</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15239.html">qa:15239</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15242.html">qa:15242</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15244.html">qa:15244</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15249.html">qa:15249</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15251.html">qa:15251</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15254.html">qa:15254</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15256.html">qa:15256</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15258.html">qa:15258</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15261.html">qa:15261</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15262.html">qa:15262</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15265.html">qa:15265</a>.</div>
 
 - そのまま引用して貼り付ける
 - 内容をまとめながら示す
@@ -67,13 +69,13 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 ***
 
-<div style="text-align:right"><a href="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/9353.html">Q&amp;A 9353</a> より抜粋</div>
+<div style="text-align:right"><a href="https://okumuralab.org/~okumura/texfaq/qa/9353.html">qa:9353</a> より抜粋</div>
 
-PostScriptさえあれば任意のものを傾けられます。
-但し、箱の中では改行されないので、長い文章を
-斜体で書いたりはできません。引数を1文字ずつ取り出して \slbox に
-渡すマクロを書く手もありますが、禁則処理とかに対処するのは大変
-でしょう。
+> PostScriptさえあれば任意のものを傾けられます。
+> 但し、箱の中では改行されないので、長い文章を
+> 斜体で書いたりはできません。引数を1文字ずつ取り出して \slbox に
+> 渡すマクロを書く手もありますが、禁則処理とかに対処するのは大変
+> でしょう。
 
 <pre><code>\def\slantbox#1#2&#123;&#123;%
         % 箱#2の大きさと位置は変えずに、箱の中身だけ#1ほど傾ける
@@ -118,27 +120,11 @@ PostScriptさえあれば任意のものを傾けられます。
 - ある程度決まり事ができているのにも関わらず，その約束を徹底せず，思いのままに数式を書いて出版し，それを読者が見て学んでしまう･･･ という流れ
 - ISO 表記法を知らない人はともかくとして，ISO のルールを知っていても，今のイタリック表記が美しいと思って使っている方たちも多いはずですから．長年この形が変わらず使われてきたのは，やはりこれにはこれの「完成された美しさ」があるからなのかもしれませんね．
 - 美しい，美しくない，という問題以前に，数学上の記述を ISO 的に行うと意味の面で不適切になる場合もあるのです．
+    <span style="color:#003;">\[そもそも \int f(x) dx の dx は \`\`測度（に対する符牒）&#x27;&#x27; である場合と \`\`微分形式&#x27;&#x27;（丁寧には \`\`f(x) dx&#x27;&#x27; で 1 つの微分形式ですが）である場合があります．前者の場合には決して \`\`d を x に作用させたもの&#x27;&#x27; ではありませんから d を作用素とみて立体で表記するのはむしろ誤りになります．一方，微分形式の文脈では d を（微分）作用素とみるのは妥当ですが，その場合でも（sin のような）\`\`固有名詞的&#x27;&#x27; な作用素であるか，と問われると，首を傾げざるを得ません．\]</span>
 
-    ```
-    %%% そもそも \int f(x) dx の dx は ``測度（に対する符牒）'' である場合と
-    %%% ``微分形式''（丁寧には ``f(x) dx'' で 1 つの微分形式ですが）である
-    %%% 場合があります．前者の場合には決して ``d を x に作用させたもの'' では
-    %%% ありませんから d を作用素とみて立体で表記するのはむしろ誤りになります．
-    %%% 一方，微分形式の文脈では d を（微分）作用素とみるのは妥当ですが，
-    %%% その場合でも（sin のような）``固有名詞的'' な作用素であるか，
-    %%% と問われると，首を傾げざるを得ません．
-    ```
-
-- また，定数は立体，変数はイタリックという使い分けについても，数学では何が変数であるかは \`\`文脈依存'' ですから，厳格に使い分けると収拾がつかなくなります．
-
-    ```
-    %%% まあ，自然対数の底のような ``常に定数扱い'' のもののみ立体表記，
-    %%% というのであれば，多少は納得しますが．
-    %%% %%% そもそも，数学には ``変数'' というものはありませんね．
-    %%% %%% （変数のように見えても，とりうる値のうちの任意の 1 個に
-    %%% %%% 固定した状態で議論を行います．（そして，必要に応じて
-    %%% %%% 個々の値に対する結果を集めるわけです．））
-    ```
+- また，定数は立体，変数はイタリックという使い分けについても，数学では何が変数であるかは \`\`文脈依存&#x27;&#x27; ですから，厳格に使い分けると収拾がつかなくなります．
+    <span style="color:#003;">\[まあ，自然対数の底のような \`\`常に定数扱い&#x27;&#x27; のもののみ立体表記，というのであれば，多少は納得しますが．\]</span>
+    <span style="color:#033;">\[そもそも，数学には \`\`変数&#x27;&#x27; というものはありませんね．（変数のように見えても，とりうる値のうちの任意の 1 個に固定した状態で議論を行います．（そして，必要に応じて個々の値に対する結果を集めるわけです．））\]</span>
 
 - 数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x ({{< katex >}}\int f(x) \mathrm{d}x{{< /katex >}}) といった表記を用いるのも，それはそれで尊重
 
@@ -148,7 +134,7 @@ PostScriptさえあれば任意のものを傾けられます。
 - 日本の教科書も岩波数学辞典（版による？）も「伝統派」
 - ISO のお膝元のヨーロッパでは立体派が多いようだ (しかし Elsevier の本は統一されていない)
 - さきごろなくなられた森口繁一先生（東大工学部計数工学科教授）の著書では、初期に書かれたものは、イタリック体でしたが、ISO（JIS) が制定されたころからでしょうか、立体を使われるようになりました。
-    - たとえば、『数値計算工学』(1989年、岩波書店）では、$\frac{\mathrm{d}x}{\mathrm{d}t}$とか、$\mathrm{e}^x=1+\frac{x}{1!}+ \cdots$ とか書かれています。
+    - たとえば、『数値計算工学』(1989年、岩波書店）では、$\frac{\mathrm{d}x}{\mathrm{d}t}$ ({{< katex >}}{{< /katex >}}) とか、$\mathrm{e}^x=1+\frac{x}{1!}+ \cdots$ ({{< katex >}}{{< /katex >}}) とか書かれています。
 - Phys. Rev.をはじめとする米国の出版物はイタリックになっているようです。
 - 日本物理学会の英文論文誌では，微分の d，exponential の e，虚数の i (j も?)を立体にしています。
 - 応用物理学会や電子情報通信学会の英文誌は，原則的に米国式のイタリックのようです。
