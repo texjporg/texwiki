@@ -45,7 +45,7 @@ Windows 用のフロントエンドは GSview 4.6，X11 用のフロントエン
     の EPS-draw，EPS-conv，EPS-merg などは便利そうです
 
 - [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
-- [Dia](http://www.lysator.liu.se/~alla/dia/) の [日本語化](http://dengaku.org/yasu/dia/)
+- [Dia](http://www.gnome.org/projects/dia/) の [日本語化](http://dengaku.org/yasu/dia/)
 - [Gimp-Print](http://gimp-print.sourceforge.net/) (高品質のプリンタドライバ)
 - [Piece de l'Ensemble](http://pop-club.hp.infoseek.co.jp/) (安宅さん &amp; 荒川さん)
     Ghostscript 7.06 や dvipdfmx のインストール情報，AUC TeX，X-Symbol 等々
