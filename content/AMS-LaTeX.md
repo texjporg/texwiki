@@ -7,7 +7,8 @@ pukiwiki: "AMS-LaTeX"
 
 # AMS-LaTeX
 
-Alexandru Scorpan から texhax メーリングリスト宛のメール:
+Alexandru Scorpan から texhax メーリングリスト宛のメ
+ール:
 
 I don't know if you know, but I though I'd let you know:
 There a new version (v.2) of AMSLaTeX available to download as
