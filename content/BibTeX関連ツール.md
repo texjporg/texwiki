@@ -32,6 +32,8 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
 <tr><td><a href="http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm">TeXBibMaker</a></td><td>Excel2000が動くパソコン</td><td>文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート</td></tr>
 <tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref for Windows</a></td><td> Windows</td><td>フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．<a href="http://members3.jcom.home.ne.jp/refwin/html/latex.htm">LaTeXへのサポート</a></td></tr>
+<tr><td> <a href="http://namazu.org/~satoru/scbib/">scbib</a> </td><td> <a href="http://www.shiro.dreamhost.com/scheme/gauche/">Gauche</a>（Schemeインタプリタ）</td><td> Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能 </td></tr>
+<tr><td> <a href="http://biborb.glymn.net/doku.php">BibORB</a> </td><td> Webサーバ, PHP (&gt;=4.0.3), PHP XSLT, PHP Pear </td><td> Webベースの文献管理システム、Web上でbibファイルの編集・インポート・エキスポートができ、電子ジャーナルと連携できる。</td></tr>
 </tbody>
 </table>
 
@@ -111,6 +113,7 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td><a href="http://www.litech.org/~wkiri/bib2html/">bib2html</a></td><td>Unix</td><td>.bibファイルをHTMLに変換</td></tr>
 <tr><td><a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a></td><td>UNIX/Windows</td><td>.bibファイルをHTMLに変換。abstract, url, ps, pdfなどを勝手にリンク付けしてくれる。<a href="http://www.reitter-it-media.de/software/pubabstract.perl">pubabstract.perl</a>と組み合わせると、1文献1ファイルのHTMLも用意してくれる。日本語はOKだがjbibtexと日本語用bstファイルを使用する必要あり。<a href="http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5">使用例1</a>。VinePlusに収録されいてるので、VineLinuxユーザはapt-getでインストール可能。。 </td></tr>
 <tr><td><a href="http://galland.stephane.free.fr/arakhne.org/bib2html/">Bib2HTML</a></td><td>perl</td><td> Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaffの<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a>とほぼ同名であるため注意。</td></tr>
+<tr><td><a href="http://www.spinellis.gr/sw/textproc/bib2xhtml/">bib2xhtml</a></td><td>perl</td><td>.bibファイルをXHTML1.0に変換</td></tr>
 </tbody>
 </table>
 
@@ -136,6 +139,5 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td> hyperbibtex </td><td> </td><td> </td></tr>
 <tr><td> mathsci2bibtex </td><td> </td><td> </td></tr>
 <tr><td> noTeX.bst </td><td> </td><td> </td></tr>
-<tr><td> <a href="http://namazu.org/~satoru/scbib/">scbib</a> </td><td> <a href="http://www.shiro.dreamhost.com/scheme/gauche/">Gauche</a>（Schemeインタプリタ）</td><td> Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能 </td></tr>
 </tbody>
 </table>
