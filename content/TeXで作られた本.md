@@ -13,7 +13,23 @@ pukiwiki: "TeXで作られた本"
 
 TeXで作った本を出している出版社：
 
-> アスキー，インプレス，技術評論社(以上はコンピュータ書)，朝倉書店，岩波書店，内田老鶴圃，旺文社，共立出版，三省堂，シュプリンガー・フェアラーク東京，培風館，白水社，平凡社，マガジンハウス，丸善，森北出版，コロナ社
+> [アスキー](http://www.ascii.co.jp/)，
+> [インプレス](http://home.impress.co.jp/)，
+> [技術評論社](http://www.gihyo.co.jp/)(以上はコンピュータ書)，
+> [朝倉書店](http://www.asakura.co.jp/)，
+> [岩波書店](http://www.iwanami.co.jp/)，
+> 内田老鶴圃，
+> [旺文社](http://www.obunsha.co.jp/)，
+> [共立出版](http://www.kyoritsu-pub.co.jp/)，
+> [三省堂](http://www.sanseido-publ.co.jp/)，
+> [シュプリンガー・フェアラーク東京](http://www.springer-tokyo.co.jp/)，
+> [培風館](http://www.baifukan.co.jp/)，
+> [白水社](http://www.hakusuisha.co.jp/)，
+> [平凡社](http://www.heibonsha.co.jp/)，
+> [マガジンハウス](http://www.magazine.co.jp/)，
+> [丸善](http://pub.maruzen.co.jp/)，
+> [森北出版](http://www.morikita.co.jp/)，
+> [コロナ社](http://www.coronasha.co.jp/)<br>
 
 意外な本：
 
@@ -45,6 +61,11 @@ TeXで作った本を出している出版社：
 - 『萬葉集語法概論』津之地直一先生遺稿集　ISBN4-944185-04、A5判270p, 縦組、万葉書房
 - 『文芸心理学から見た日本文学』星野五彦著　ISBN4-844185-05-7、A5版縦組284p、万葉書房
 - 『謎！？　クイズ万葉集』万葉書房編集部編、ISBN4-944185-06-5、四六版縦組198ｐ、万葉書房
+
+著者自身がTeX (LaTeX) で原稿を作成したと報告のあった本：
+
+- 高橋正雄. [『基礎と演習　理工系の電磁気学』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31795.html). 2004年9月27日発売. 共立出版. ISBN4-320-03432-5.
+- 宮腰忠. [『高校数学＋α：基礎と論理の物語 』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31681.html). 2004年9月24日発売. ISBN4-320-01768-4.
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
