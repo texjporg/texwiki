@@ -56,7 +56,7 @@ japanese/dvipsk-vflib
 japanese/teTeXは日本語TeX関連PortsのMeta-Portsです．
 GhostScriptやフォント関連は依存関係で自動的に導入されます．
 
-新ドキュメントクラスはjapanese/platex-jsclassesにあるので，お好みにより
+[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/%7eokumura/jsclasses/)はjapanese/platex-jsclassesにあるので，お好みにより
 
 ```
 # cd /usr/ports/japanese/platex-jsclasses && make && make install
@@ -86,5 +86,6 @@ make &amp;&amp; make installで導入できます．
 <tr><td>latex-mathabx</td><td>print/latex-mathabx</td><td>Math series, aka mathabx MetaFont fontset for TeX/LaTeX</td></tr>
 <tr><td>ja-plain2</td><td>japanese/plain2</td><td>A text converter from plain to any format</td></tr>
 <tr><td>tgif2tex</td><td>print/tgif2tex</td><td>Converting texts in figure by tgif to LaTeX commands</td></tr>
+<tr><td>smartdoc</td><td>textproc/smartdoc</td><td>XML utility to create various documents</td></tr>
 </tbody>
 </table>
