@@ -88,4 +88,4 @@ make install
 
 と入力します。
 
-使用できるコマンド、フォントの詳細はtipaman.texをご参照下さい。
+使用できるコマンド、フォントの詳細はtipaman.texをご参照下さい ([TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)のページでは、tipaman.texをコンパイルした文書のPDF版 (TIPAマニュアル) を見ることもできます)。
