@@ -25,9 +25,17 @@ pukiwiki: "ArchiveQandA"
 
 ### dvioutのエラーメッセージ {#lb61846e}
 
-### TeX本体のエラーメッセージ {#s54a975c}
+- エラーが発生した場合には，関連する HELP が開くので熟読すること。
+
+<br>
+
+    また，[dvioutにおけるトラブル](http://akagi.ms.u-tokyo.ac.jp/dvioutQA.html)を参照しましょう。
+
+<!-- **TeX本体のエラーメッセージ [#s54a975c] -->
 
 ### LaTeXのエラーメッセージ {#m585375b}
+
+- [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>) にまとめました．
 
 ### 表記の哲学 {#l951f950}
 
