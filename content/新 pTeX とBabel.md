@@ -7,10 +7,13 @@ pukiwiki: "新 pTeX とBabel"
 
 # 新 pTeX とBabel
 
-## 新 pTeX とBabel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
+## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
-- \[040925\]
-    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました(参照：TeX Q &amp; A 投稿記事 31641番）。
+- \[040927\]（永田善久）
+    map ファイルも texmf-local/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，texmf/ メインツリーには基本的に手を加えないでよいこととなります。
+
+- \[040925\]（永田善久）
+    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。[元記事\[qa:31641\]参照](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31641.html)
 
 以下では LaTeX/pLaTeX フォーマットファイルに追加のハイフネーションパタンを組み込む方法を具体例で記します。
 
@@ -28,7 +31,7 @@ pLaTeX に german（旧正書法）, ngerman（新正書法）, french, greek, r
 ### pLaTeX に german, ngerman, french, greek, russian を組み込む {#r08eeedc}
 
 - 
-    texmf/ptex/platex/hyphen.cfg を Orig_hyphen.cfg のようにリネームする
+    texmf/ptex/platex/config/hyphen.cfg を Orig_hyphen.cfg のようにリネームする
 
 - 
     texmf/tex/generic/config/language.dat を開き greek, russian がある行頭の % 記号を取り去り，上書き保存する
@@ -182,13 +185,13 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 - 
     （cm-super 用の map ファイルはデフォルトで存在しています）<br>
-    CTAN の fonts/greek/cb/dvips.tar.gz (または dvips.zip) をダウンロードし，その「中身」である cbgreek.map を texmf/fonts/map/dvips/cbgreek/ 以下にコピーする<br>
+    CTAN の fonts/greek/cb/dvips.tar.gz (または dvips.zip) をダウンロードし，その「中身」である cbgreek.map を texmf-local/fonts/map/dvips/cbgreek/ 以下にコピーする<br>
     （先の工程において cb.tar.gz 等を丸ごとダウンロードしてきた場合には，展開して得られる dvips フォルダを cbgreek とリネームして texmf/fonts/map/dvips/ 内に移動する）
 
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) ページにある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) ページにある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
@@ -213,6 +216,15 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     ```
 
     と打ち込む
+
+- 
+    pdftex.map には既に cm-super 関連の記述があるので，pdflatex を走らせた場合は
+
+```
+`ecrm0500' already exists, duplicates ignored
+```
+
+といったウォーニングが出ます。苦になるのであれば，重複部分を削除してください
 
 ### PDF 作成テスト {#mca7623b}
 
