@@ -30,7 +30,9 @@ TeXで作った本を出している出版社：
 > [丸善](http://pub.maruzen.co.jp/)，
 > [森北出版](http://www.morikita.co.jp/)，
 > [コロナ社](http://www.coronasha.co.jp/)，
-> [学術図書出版社](http://www.gakujutsu.co.jp/)
+> [学術図書出版社](http://www.gakujutsu.co.jp/)，
+> [数理工学社](http://www.sjk.co.jp/c/w.exe?y=www.saiensu.co.jp/company.htm) (サイエンス社子会社)，
+> [九天社](http://www.9-ten.co.jp/) 
 
 意外な本（コンピュータ書や大学レベル以上の理系の本はたくさんのものがTeXで組まれていますが，それ以外のもの）：
 
