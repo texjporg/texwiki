@@ -144,11 +144,17 @@ dvips の -E オプションを使う方法しかないようです。
 後で EPS ファイルを編集する必要があり，面倒です。
 
 そこで PSTtoEPS や dvips の -E オプションを使わずに PSTricks の PDF 変換の
-ためのマクロ pstpdfmx を作りました．
-まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
+ためのマクロ pstpdfmx を作りました．目標は dvipdfm(x) を使って PSTricks の
+図をPDFで取り込み，完全なPDFを作成することです．まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
 ダウンロードしてください (Unix 系 OS 専用です，要 bash/Make/gcc)．
 これを使うとデバイスドライバに dvipdfm(x)を使って PSTricks のある程度のマクロを
-使えるようになります．
+使えるようになります．使い方はmakeするだけです．個別にPDFファイルを作成するには
+
+```
+./genpdf.sh filename
+```
+
+とします．
 
 丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)
 : pstpdfmx, bbb, genpdf.sh 等がすべて含まれています．
@@ -159,19 +165,20 @@ pstpdfmx の解説 [pstpdfmx.pdf](/attach/PSTricks/pstpdfmx.pdf)
 出力例 [p2p.pdf](/attach/PSTricks/p2p.pdf)
 : 実際に pstpdfmx, genpdf.sh, bbb, Make を使って作成した PDF．
 
-方針としては原稿中の PSTricks による図を一度別ファイル fig.tex に書き出し，そのファイルを
+原稿中の PSTricks による図を一度別ファイル fig.tex に書き出し，そのファイルを
+次のように処理します．
 
 ```
 platex fig.tex
 pdvips -Ppdf -o fig.ps fig.dvi
 epstopdf fig.ps fig.pdf
-gs -sDEVICE=pbm -fig.ps -sOutputFIle=fig.pbm
+gs -sDEVICE=pbm -fig.ps -sOutputFile=fig.pbm
 bbb < fig.pbm > fib.bb
 ```
 
-という作業を，図の数だけ行います．そうすると正しいバウンディングボックス情報 fig.bb 
-と PSTricks 画像から PDF に変換したファイル fig.pdf ができます．元原稿では
-ファイル fig.pdf が存在する時だけ fig.pdf を読み込むようにすることになります．
+上記の作業 genpdf.sh が図の数だけ自動的に行います．そうすると正しいバウンディングボックス
+情報 fig.bb と，PSTricks 画像から PDF に変換したファイル fig.pdf ができます．元原稿では
+ファイル fig.pdf が存在する時だけ fig.pdf を読み込むようにしています．
 
 上記の PDF を生成するスクリプトは genpdf.sh というファイルにまとめています．
 すると完全な PDF ファイル file.pdf は次のように作ることになります．
