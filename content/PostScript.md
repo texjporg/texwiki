@@ -27,7 +27,7 @@ PostScript は業界標準のページ記述言語です。
 
 - [gs-cjk プロジェクト](http://www.gyve.org/gs-cjk/)
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html) (旧 JAIST コンテンツのミラー)
-- [Gimp-Print](http://gimp-print.sourceforge.net/) (高品質のプリンタドライバ)
+- [Gutenprint / Gimp-Print](http://gimp-print.sourceforge.net/) (高品質のプリンタドライバ)
 - [POSTSCRIPT &amp; GHOSTSCRIPT Resources](http://www.geocities.com/SiliconValley/5682/postscript.html)
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html) (新堂さん)
 - [GNU Ghostscript 7.05 のインストール方法](http://www.klavis.info/gnugs.html) /
