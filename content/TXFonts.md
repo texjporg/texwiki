@@ -58,6 +58,8 @@ improve the spacing of $S$ with subscripts.
 Computer Modern Roman/Italic と TX フォントの出力例です（PNG画像）。
 本物の Times ではなく Ghostscript 付属のフリーの互換フォントを使っています。
 
+!["Computer Modern と TX フォントの比較"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/txr.png)
+
 LaTeX2e はもともと times パッケージを使うと Times フォントになるように作られていますが，
 times パッケージは TeX の得意な ffi や ffl のリガチャ（合字）も出せず，
 数式部分は Computer Modern になってしまいます。
