@@ -34,13 +34,19 @@ kakenhi.cls というファイルは kkhgrp.mac の先頭に次のものを加�
 % use jis and jisg
 \DeclareFontShape{JY1}{mc}{m}{n}{<-> s * jis}{}
 \DeclareFontShape{JY1}{gt}{m}{n}{<-> s * jisg}{}
-\renewcommand{\normalsize}{%
-  \@setfontsize\normalsize\@xpt\@xiipt
-  \abovedisplayskip 10\p@ \@plus3\p@ \@minus4\p@
-  \abovedisplayshortskip \z@ \@plus3\p@
-  \belowdisplayskip \abovedisplayskip
-  \belowdisplayshortskip \belowdisplayskip
-  \let\@listi\@listI}
+\def\@setfontsize#1#2#3{%
+  \ifx\protect\@typeset@protect
+    \let\@currsize#1%
+  \fi
+  \fontsize{#2}{#3}\selectfont
+  \ifdim\parindent>\z@
+    \parindent=1zw
+  \fi
+  \kanjiskip=0zw plus .1zw minus .01zw
+  \ifdim\xkanjiskip>\z@
+    \xkanjiskip=0.25em plus 0.15em minus 0.06em
+  \fi}
+\renewcommand{\normalsize}{\@setfontsize\normalsize\@xiipt\@xivpt}
 \normalsize
 % from latex209.def
 \newdimen\@maxsep
@@ -73,5 +79,9 @@ kakenhi.cls はもう1か所だけ修正が必要です。
 これでほぼ完成です。
 あとは kkhform.mac や kkh.mac の中の goth10 を jisg に置換すれば全部 jis
 フォントになるはずです。
+
+もっとブラッシュアップしたいところがありますが，とりあえずこれだけで
+¥usepackage{okumacro}
+のようにして LaTeX2e 用のパッケージが問題なく読み込めるようになります。
 
 ***
