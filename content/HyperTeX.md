@@ -59,3 +59,70 @@ LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念の�
 ```
 
 のようにします。
+
+### hyperref を上手に呼んで便利な PDF を作る {#ubbc3ac6}
+
+$TEXMF/doc/latex/hyperref/ や [PDFによる詳細な説明書 (角藤氏)](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web753w32.pdf), [qa:33459](https://okumuralab.org/~okumura/texfaq/qa/33459.html) などを参考にして，うまく hyperref を呼ぶことで，手間少なく便利な PDF を作ることができます．
+
+下にソース例を示しますが，\\@subtitle, \\@belongsto, \advisor@prefix, \\@advisor, \advisor@suffix, \\@keywords は適切に定義されているとします．このとき，注目点は {} の使い方です．
+
+```
+\author{NANNO Nanibeh}
+```
+
+といった名前の指定をしたとき，
+
+```
+pdfauthor=\@author
+```
+
+としたのでは，半角空白が詰まってしまいます．
+
+```
+pdfauthor={\@author}
+```
+
+とすることで半角空白が活きます．
+
+```
+pdfauthor={\@author{} (\advisor@prefix:{} \@advisor{} \advisor@suffix)}
+```
+
+のように随所に {} を挟んでいるのも，その次の半角空白を活かすためです (このあたりの技術は TeX ユーザのよく知るところですね?)．
+
+タイトルには，強制改行の \\\ や，ベタ打ちでは消えてほしい半角空白を付け加えていることもあるかもしれません．余分な半角空白を消すだけなら，上記のトリックを逆に利用して，
+
+```
+pdftitle=\@title
+```
+
+とすればよいわけです．
+強制改行の \\\ が入っているときには，usepackage のオプションで指定することは厳しいので，先に hyperref を呼んでから，あとから \hypersetup を加えるとうまくいきます．
+
+```
+\pdfstringdefDisableCommands{\let\\\empty}
+```
+
+というコマンドや maketitle に追記する仕方は，$TEXMF/doc/latex/hyperref/paper.pdf からいただきました．
+
+```
+\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\RequirePackage[dvipdfm,%
+ bookmarks=true, bookmarksnumbered=true, bookmarkstype=toc, bookmarksopen=true,%
+ pdfstartview={FitH -32768}, pdfpagelayout=TwoColumnRight, pdfdisplaydoctitle=true,%
+% pdftitle=\@title,
+ pdfsubject={\@subtitle{} (\@belongsto)},%
+ pdfauthor={\@author{} (\advisor@prefix:{} \@advisor{} \advisor@suffix)},%
+ pdfkeywords={\@keywords}%
+]{hyperref}
+
+\newcommand\org@maketitle{}
+\let\org@maketitle\maketitle
+\def\maketitle{%
+  \pdfstringdefDisableCommands{\let\\\empty}
+  \hypersetup{
+    pdftitle={\@title},
+  }%
+  \org@maketitle
+}
+```
