@@ -62,5 +62,6 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 - [HTML と LaTeX の比較](</TeX入門/HTMLとLaTeXの比較/>)
 - [複雑な数式](</TeX入門/複雑な数式/>)
 - 図
+- 宜しくない見本
 
 以下，工事中。
