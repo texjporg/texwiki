@@ -112,7 +112,7 @@ pukiwiki: "Ispell"
     emacs local.h
     ```
 
-    等として，local.h をお使いの環境に合わせて編集します。例えば Vine 2.1.5 では
+    等として，local.h をお使いの環境に合わせて編集します。例えば Vine 2.1.5, Vine 3.0 では
 
     ```
     #define BINDIR "/usr/local/bin" ----> #define BINDIR "/usr/bin"
@@ -124,7 +124,7 @@ pukiwiki: "Ispell"
     #define USG
     ```
 
-    も付け加えます。
+    も付け加えます。 
 
 - 
     最後に
@@ -135,6 +135,27 @@ pukiwiki: "Ispell"
     ```
 
     で完了です。
+
+- 
+    Vine 2.1.5 は以上で OK ですが，Vine 3.0 では make するのに足りないツールがありますので
+
+    ```
+    apt-get build-dep ispell
+    ```
+
+    で取ってきます。また，config.X ファイル中の
+
+    ```
+    #define TERMLIB	"-ltermcap"
+    ```
+
+    という箇所を
+
+    ```
+    #define TERMLIB	"-lncurses"
+    ```
+
+    と書き換えておかないと make できません。なお，ispell-3.2.06 は Vine 3.0 にはじめから入っている aspell との整合性に問題があるようです。ispell 使用に際しては，自己責任でお願いいたします。
 
 - 
     Ispell にドイツ語辞書を組み込むためには [Ispell のページ](http://ficus-www.cs.ucla.edu/project-members/geoff/ispell-dictionaries.html) から
