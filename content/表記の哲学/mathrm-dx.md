@@ -18,6 +18,8 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 - $dx$ か $\mathrm{d}x$ か
 - $\Delta$ か $\varDelta$ か ($\Delta$ 記号は右下が鈍角になるべきだ)
+    <!-- この項目の括弧書きは要りますか？ 斜体のデルタの字形の問題にすぎないようですが？ -->
+
 - ベクトルはbold italic か bold upright か
 
 ## ISO / JIS 派 {#s00d4318}
