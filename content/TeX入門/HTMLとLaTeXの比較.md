@@ -14,7 +14,8 @@ pukiwiki: "TeX入門/HTMLとLaTeXの比較"
 [レポート](</TeX入門/レポート/>)/
 HTMLとLaTeXの比較/
 [複雑な数式](</TeX入門/複雑な数式/>)/
-図
+図/
+[文献引用](</文献引用/>)
 
 ## HTML と LaTeX の比較 {#g8b7bce6}
 
