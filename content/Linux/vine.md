@@ -13,6 +13,12 @@ VineLinux3.1がリリースされました。おそらく、日本語TeXを使�
 最もよく調整されたものになっているはず。
 なお Vine3.0 からは 3.1 にアップグレードすることが勧められています。
 
+Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://vinelinux.org/errata/3x/20050301-2.html)
+\[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
+が出ていますので apt-get upgrade するのがよいでしょう。
+ただし、小さなデグレが報告されています。
+\[[vine-users:070537\]](http://search.luky.org/vine-users.7/msg00534.html)
+
 ### インストール {#c9fbb999}
 
 ```
@@ -55,8 +61,9 @@ apt-get 自動実行スクリプト
 
 <a href="/attach/Linux/vine/tex-apt-get.sh">tex-apt-get.sh</a>
 
-Vine3.0 ではjsarticle，jsbookが古いのでdvipdfmxと組み合わせたとき不具合が起こる
-(Vine3.1 では大丈夫)
+Vine3.0 のインストール直後の状態では
+jsarticle，jsbookが古いのでdvipdfmxと組み合わせたとき不具合が起こる
+(update すれば直る、Vine3.1 でも大丈夫)
 [qa:32161](https://okumuralab.org/~okumura/texfaq/qa/32161.html)，
 [qa:32163](https://okumuralab.org/~okumura/texfaq/qa/32163.html)，
 [qa:32167](https://okumuralab.org/~okumura/texfaq/qa/32167.html)。
@@ -138,7 +145,7 @@ bookmarkstype=toc]{hyperref}
 のように書いておきます。（３行目がポイントです。）
 Linux 版 Adobe Reader では日本語のしおりは化けるので、
 Win 版などで動作確認してください。
-なお、dvipdfm は dvidfmx へのシンボリックリンクにしています。
+なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。
 
 - tetex-extra パッケージはインストール CD には収録されていません。
     TX fonts, PX fonts 等も含まれているので、
@@ -154,6 +161,8 @@ Win 版などで動作確認してください。
     囲み付き文字や「はしご高 (&#x9ad9;)」などを含んだ PDF を作れます。
 
 - dvipdfmx で大きな括弧など一部のフォントが欠落してしまうことがあります。
-    [Make](/Make/#content_1_4) にある通り、\usepackage{type1cm} とするのがよいようです。
-    どうしても気になる人は、updmap スクリプトを修正しても構いません。
-    [qa:32659](https://okumuralab.org/~okumura/texfaq/qa/32659.html) を御覧下さい。
+    [ソースからのMake](/Make/#content_1_4) にある通り、
+    \usepackage{type1cm} とするのがよいようです。
+    [qa:32659](https://okumuralab.org/~okumura/texfaq/qa/32659.html) のように updmap スクリプトを修正しても構いません。
+    →\[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
+    (tetex-2.0.2-0vl14) で修正されました。
