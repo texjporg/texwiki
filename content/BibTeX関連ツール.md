@@ -49,6 +49,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/xbibfile/">xbibfile</a> </td><td>gtk+</td><td>.bibファイルの作成・検索などを対話的に行うGUIプログラム。日本語が通らない。 </td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/tkbibtex/">tkbibtex</a></td><td>tcl/tk </td><td>.bibファイル作成編集プログラム。日本語表示OKだが、atokxでは入力できない。</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
+<tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
 </tbody>
 </table>
 
@@ -88,8 +89,10 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td> bibweb </td><td> </td><td> </td></tr>
 <tr><td> bib2dvi </td><td>Unixなど </td><td>bibファイルをdviに変換 </td></tr>
 <tr><td> printbib </td><td>Unix </td><td>.bibファイルの中の全文献を処理して.dviファイルを作るシェルスクリプト </td></tr>
-<tr><td><a href="http://www.media.osaka-cu.ac.jp/~k-abe/bunkenhtml/">bunkenhtml</a></td><td>perl</td><td>BibTeXのデータベースから業績リストをHTMLで作成するプログラム</td></tr>
+<tr><td><a href="http://www.media.osaka-cu.ac.jp/~k-abe/bunkenhtml/">bunkenhtml</a></td><td>perl</td><td>BibTeXのデータベースから業績リストをHTMLで作成するプログラム。<a href="http://narayama.aist-nara.ac.jp/~y-takata/research/">使用例1</a>、<a href="http://www.forest.eis.ynu.ac.jp/~mori/ja/pub.html">使用例2</a> </td></tr>
 <tr><td><a href="http://www.litech.org/~wkiri/bib2html/">bib2html</a></td><td>Unix</td><td>.bibファイルをHTMLに変換</td></tr>
+<tr><td><a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a></td><td>UNIX/Windows</td><td>.bibファイルをHTMLに変換。abstract, url, ps, pdfなどを勝手にリンク付けしてくれる。<a href="http://www.reitter-it-media.de/software/pubabstract.perl">pubabstract.perl</a>と組み合わせると、1文献1ファイルのHTMLも用意してくれる。日本語はOKだがjbibtexと日本語用bstファイルを使用する必要あり。<a href="http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5">使用例1</a>。VinePlusに収録されいてるので、VineLinuxユーザはapt-getでインストール可能。。 </td></tr>
+<tr><td><a href="http://galland.stephane.free.fr/arakhne.org/bib2html/">Bib2HTML</a></td><td>perl</td><td> Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaffの<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a>とほぼ同名であるため注意。</td></tr>
 </tbody>
 </table>
 
@@ -111,11 +114,6 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td> findbib </td><td> </td><td> </td></tr>
 <tr><td> fixbbl </td><td> </td><td> </td></tr>
 <tr><td> hyperbibtex </td><td> </td><td> </td></tr>
-</tbody>
-</table>
-
-<table>
-<tbody>
 <tr><td> mathsci2bibtex </td><td> </td><td> </td></tr>
 <tr><td> noTeX.bst </td><td> </td><td> </td></tr>
 </tbody>
