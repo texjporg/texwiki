@@ -22,10 +22,10 @@ improve the spacing of $S$ with subscripts.
     のほうも角藤さんが作ってくださいました
 
 - \[2004-01-27\] txfonts で $S$ の後ろのスペースが広すぎる件で本田さんのご指摘
-    \[[qa:25199\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/25199.html) に従って txmi.tfm，txmi.vf
+    [qa:25199](https://okumuralab.org/~okumura/texfaq/qa/25199.html)に従って txmi.tfm，txmi.vf
     を修正してみました（[txmi.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi.zip)）。
 
-- \[2001-04-16\] [作者 Young U. Ryu のコメント](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/young.txt) (comp.text.tex)
+- \[2001-04-16\] [作者 Young U. Ryu のコメント](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/young.txt)(comp.text.tex)
 - \[2001-03-17\] Mac のかたにご注意：
     texmf:dvips:config 中のテキストファイル（tx8r.enc，txr.map，txr1.map，txr2.map）
     の改行コードを必ず Mac 形式に変換してください（Thanks: 神山さん）
@@ -52,8 +52,7 @@ improve the spacing of $S$ with subscripts.
 
 そんな人には Times を TeX 用に配置し直した TX フォントをお薦めします。
 私の最新刊
-[『［改訂版］LaTeX2e 美文書作成入門』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)
-も TX フォントを使っています。
+[『［改訂版］LaTeX2e 美文書作成入門』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)も TX フォントを使っています。
 
 Computer Modern Roman/Italic と TX フォントの出力例です（PNG画像）。
 本物の Times ではなく Ghostscript 付属のフリーの互換フォントを使っています。
@@ -112,8 +111,9 @@ TX フォントのバージョンを上げたなら
 
 次のところからダウンロードします（約 3.5M バイト）。
 
-- [Ringサーバ](http://www.ring.gr.jp/) の
-    [/pub/text/CTAN/fonts/txfonts/](http://www.ring.gr.jp/pub/text/CTAN/fonts/txfonts/)
+- [Ringサーバ](http://www.ring.gr.jp/)
+    の
+    [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
 
 - 会津大学のCTANミラー:
     [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/)
@@ -257,7 +257,7 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 ```
 \DeclareSymbolFont{cmSymbols}{OMS}{cmsy}{m}{n}
 \DeclareMathSymbol{\cmrightarrow}{\mathrel}{cmSymbols}{"21}
-\let\to\cmtrightarrow
+\let\to\cmrightarrow
 ```
 
 ★ [TeX Q&amp;A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/)
@@ -281,9 +281,9 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 
 TX フォントの数式のバランスが気になる方のために，Times 系の商品フォントをあげておきます。
 
-- [Y&amp;Y Inc.](http://www.YandY.com/) --
-    [MathTime](http://www.YandY.com/mathtime.htm)
-    (MathTime 1.1 + MathTime Plus = MathTime Complete: オンライン $225)
+- [Y&amp;Y Inc.](http://www.YandY.com/)
+    - [MathTime](http://www.YandY.com/mathtime.htm)
+        (MathTime 1.1 + MathTime Plus = MathTime Complete: オンライン $225)
 
 - [MicroPress](http://www.micropress-inc.com/) --
     [TM Math](http://www.micropress-inc.com/fonts/tmmath/tmmain.htm)
