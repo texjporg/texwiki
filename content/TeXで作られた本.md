@@ -98,5 +98,5 @@ Knuth の [3:16 Bible Texts Illuminated](http://www-cs-faculty.stanford.edu/~knu
 
 Han The Thanhの学位論文
 Micro-typographic extensions to the \TeX\ typesetting system
-([TUGBoat, Volume 21 (2000), No. 4](http://www.pragma-pod.nl/pdftex/thesis.pdf), pp. 317--434)
+([TUGBoat, Volume 21 (2000), No. 4](http://www.pragma-ade.com/pdftex/thesis.pdf), pp. 317--434) <!-- ([[TUGBoat, Volume 21 (2000), No. 4:http://www.pragma-pod.nl/pdftex/thesis.pdf]], pp. 317- -434) -->
 もたいへんきれいです。
