@@ -16,8 +16,8 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 ## 対立項 {#x8b1c3a7}
 
-- $dx$ か $\mathrm{d}x$ か
-- $\Delta$ か $\varDelta$ か ($\Delta$ 記号は右下が鈍角になるべきだ)
+- $dx$ ({{< katex >}}dx{{< /katex >}}) か $\mathrm{d}x$ ({{< katex >}}\mathrm{d}x{{< /katex >}}) か
+- $\Delta$ ({{< katex >}}\Delta{{< /katex >}}) か $\varDelta$ ({{< katex >}}\varDelta{{< /katex >}}) か ($\Delta$ 記号は右下が鈍角になるべきだ)
     <!-- この項目の括弧書きは要りますか？ 斜体のデルタの字形の問題にすぎないようですが？ -->
     <!-- というよりは，以前の記事を確認しないとどんなことが話題になっていたか存じていないのです． -->
 
@@ -140,9 +140,7 @@ PostScriptさえあれば任意のものを傾けられます。
     %%% %%% 個々の値に対する結果を集めるわけです．））
     ```
 
-- 数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x
-#mimetex(center,\int f(x) \mathrm{d}x)
-    といった表記を用いるのも，それはそれで尊重
+- 数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x ({{< katex >}}\int f(x) \mathrm{d}x{{< /katex >}}) といった表記を用いるのも，それはそれで尊重
 
 ## 具体例 {#l237f2fe}
 
