@@ -74,6 +74,7 @@ make &amp;&amp; make installで導入できます．
 <tr><td>dvipdfmx</td><td>print/dvipdfmx</td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
 <tr><td>detex</td><td>print/detex</td><td>Strips TeX/LaTeX codes from a file</td></tr>
 <tr><td>latex2html</td><td>textproc/latex2html</td><td>Convert LaTeX documents to HTML</td></tr>
+<tr><td>ja-latex2html</td><td>japanese/latex2html</td><td>Japanese LaTeX2HTML with JA patch</td></tr>
 <tr><td>yatex</td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs (for Emacs{19,20} and XEmacs{19,20})</td></tr>
 <tr><td>TeXmacs</td><td>editors/texmacs</td><td>A free WYSIWYG scientific text editor.</td></tr>
 <tr><td>auctex</td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
