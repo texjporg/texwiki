@@ -285,10 +285,10 @@ GNOME端末で
 
 ```
 cd /tmp
-wget ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/5.x/linux-508.tar.gz
+wget ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/5.x/linux-509.tar.gz
 mkdir acroread
 cd acroread
-tar zxvf ../linux-508.tar.gz
+tar zxvf ../linux-509.tar.gz
 su -c './INSTALL'
 ```
 
