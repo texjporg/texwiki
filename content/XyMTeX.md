@@ -12,7 +12,10 @@ XyMTeX
 
 作者 藤田眞作さんのページ<br>
 [http://imt.chem.kit.ac.jp/fujita/fujitas3/xymtex/index.html](http://imt.chem.kit.ac.jp/fujita/fujitas3/xymtex/index.html)
-:LaTeX で化学構造式 --- XyMTeX の紹介<br>
+
+LaTeX で化学構造式 --- XyMTeX の紹介
+: &nbsp;
+
 [http://www.klavis.info/xym.html](http://www.klavis.info/xym.html)
 
 PukiWiki xymtex プラグイン
