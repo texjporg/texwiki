@@ -15,24 +15,26 @@ TeXで作った本を出している出版社：
 
 > [アスキー](http://www.ascii.co.jp/)，
 > [インプレス](http://home.impress.co.jp/)，
-> [技術評論社](http://www.gihyo.co.jp/)(以上はコンピュータ書)，
+> [技術評論社](http://www.gihyo.co.jp/)（以上はコンピュータ書），
 > [朝倉書店](http://www.asakura.co.jp/)，
-> [岩波書店](http://www.iwanami.co.jp/)，
+> [岩波書店](http://www.iwanami.co.jp/)， 
 > 内田老鶴圃，
 > [旺文社](http://www.obunsha.co.jp/)，
+> [学術図書出版社](http://www.gakujutsu.co.jp/)，
+> [九天社](http://www.9-ten.co.jp/)，
 > [共立出版](http://www.kyoritsu-pub.co.jp/)，
+> [コロナ社](http://www.coronasha.co.jp/)，
 > [三省堂](http://www.sanseido-publ.co.jp/)，
 > [シュプリンガー・フェアラーク東京](http://www.springer-tokyo.co.jp/)，
+> [数理工学社](http://www.sjk.co.jp/c/w.exe?y=www.saiensu.co.jp/company.htm) （サイエンス社子会社），
+> [駿台文庫](http://www.sundaibunko.jp/)，
+> [Z会出版](http://www.zkai.co.jp/books/)，
 > [培風館](http://www.baifukan.co.jp/)，
 > [白水社](http://www.hakusuisha.co.jp/)，
 > [平凡社](http://www.heibonsha.co.jp/)，
 > [マガジンハウス](http://www.magazine.co.jp/)，
 > [丸善](http://pub.maruzen.co.jp/)，
-> [森北出版](http://www.morikita.co.jp/)，
-> [コロナ社](http://www.coronasha.co.jp/)，
-> [学術図書出版社](http://www.gakujutsu.co.jp/)，
-> [数理工学社](http://www.sjk.co.jp/c/w.exe?y=www.saiensu.co.jp/company.htm) (サイエンス社子会社)，
-> [九天社](http://www.9-ten.co.jp/) 
+> [森北出版](http://www.morikita.co.jp/)
 
 意外な本（コンピュータ書や大学レベル以上の理系の本はたくさんのものがTeXで組まれていますが，それ以外のもの）：
 
@@ -46,9 +48,11 @@ TeXで作った本を出している出版社：
 - 『パスポート独和辞典』（白水社，編集責任 細谷行輝）…… 東京書籍印刷（株）で組版。Computer Modern 使用
 - アラン・ソーカル，ジャン・ブリクモン著，田崎晴明，大野克嗣，堀茂樹訳『[「知」の欺瞞―ポストモダン思想における科学の濫用](http://www.gakushuin.ac.jp/~881791/fn/)』（岩波書店，2000年）
 - 村上宣寛，村上千恵子著『性格は五次元だった―性格心理学入門』（培風館，1999年）
-- レッシグ，山形浩生訳『コモンズ』（翔泳社，2002）……縦組，Computer Modern
+- ローレンス・レッシグ著，山形浩生，柏木亮二訳『CODE―インターネットの合法・違法・プライバシー』（翔泳社，2001年）……縦組，Computer Modern，以下の2冊も
+- ローレンス・レッシグ著，山形浩生訳『コモンズ』（翔泳社，2002年）
+- ローレンス・レッシグ著，山形浩生，守岡桜訳『Free Culture』（翔泳社，2004年）
 - 宮岡伯人『[「語」とはなにか：エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』(三省堂, 2002年)
-- 亀田隆，高村正樹著『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
+- 亀田隆，高村正樹『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
 - 力武健次『インターネットコミュニティ－国際ネットワーク最前線－』（オーム社，1994年）
 
 青磁書房から出ている次の本がみなTeXとのこと：
