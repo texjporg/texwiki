@@ -50,11 +50,11 @@ cd ghostscript-8.15
 また，/usr/local/teTeX/share/ghostscript/8.15 の下にたくさんのものが入ります。
 /usr/local/teTeX/man/man1 と /usr/local/teTeX/man/de/man1 の中にもマニュアル類が入ります。
 
-欧文フォントについては \[\[Ghostscript 7.07\] と同じです。
+欧文フォントについては [Ghostscript 7.07](</Ghostscript 7.07/>) と同じです。
 /usr/local/teTeX/share/ghostscript/fonts の中に入れておきます（あるいは従来の
 /usr/local/share/ghostscript/fonts をシンボリックリンクしておきます）。
 
-和文については，\[\[Ghostscript 7.07\] では CIDFnmap で設定しましたが，8 シリーズでは cidfmap
+和文については，[Ghostscript 7.07](</Ghostscript 7.07/>) では CIDFnmap で設定しましたが，8 シリーズでは cidfmap
 (上の設定では /usr/local/teTeX/share/ghostscript/8.15/lib/cidfmap)
 に記述します。
 以下は [sazanami](http://wiki.fdiary.net/font/?sazanami)
@@ -82,3 +82,5 @@ CIDフォントなら使えます。
 ```
 
 と書いておきます。
+
+なお，内山さんから「sazanamiでしたら，FontForgeで読み込んでCIDを生成すれば，使用できるかもしれません」というコメントをいただきました。
