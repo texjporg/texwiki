@@ -39,7 +39,7 @@ Windows 用のフロントエンドは GSview，X11 用のフロントエンド�
     綺麗で小さなPostScript及びPDFをTeXから作る / hyperrefと日本語 / 画像を含むPSファイルを小さくする
 
 - [東北大物性理論研](http://www.cmpt.phys.tohoku.ac.jp/Busseiriron/r410/) (EPS, tgif などの話題あり)
-- [PoweredKobe さん](http://member.nifty.ne.jp/~PoweredKobe/)
+- [PoweredKobe さん](http://member.nifty.ne.jp/~PoweredKobe/)リンク切れてます
     (フリーソフトでpdf作成，簡単ポストスクリプトの記述)
 
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html) (奥村＠滋賀県立大さん)
