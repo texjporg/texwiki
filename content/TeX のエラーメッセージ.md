@@ -232,7 +232,7 @@ $ の場合には，$}$ のような具合に数式中に余分な閉じ括弧�
 不要な \endgroup を削除するとよいでしょう．
 \endcsname の場合には，対応する \csname を補うか不要な \endcsname を削除してください．
 
-(Fatal format file error; I'm styied)
+(Fatal format file error; I'm stymied)
 : &nbsp;<br>
 
 違うバージョンの TeX 用のフォーマットファイルを読み込んだときに現れるメッセージです．
@@ -461,7 +461,7 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 このメッセージが現れます．<br>
 → \setbox を用いる箇所を変更してください．
 \halign の直後で \setbox0=\lastbox
-といった具合に配列全体を取得する必要がある場合には，
+といった具合に配列の最後の行を取得する必要がある場合には，
 垂直ボックスの中で作業を行ってください．
 
 ! Improper \spacefactor.
