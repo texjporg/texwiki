@@ -10,6 +10,9 @@ pukiwiki: "新 pTeX とBabel"
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
 - \[040929\]（永田善久）
+    ギリシア数字の出力に関して greek.ldf にバグがあります。訂正法は[投稿記事\[qa:31769\]参照](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31769.html)
+
+- \[040929\]（永田善久）
     russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
 
 - \[040927\]（永田善久）
@@ -250,7 +253,8 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 `ecrm0500' already exists, duplicates ignored
 ```
 
-といったウォーニングが出ます。苦になるのであれば，重複部分を削除してください
+といったウォーニングが出ます。苦になるのであれば，重複部分を削除してください。
+最も新しい pdftex-w32.tar.gz を使った場合には、この重複はおこりません。
 
 ### PDF 作成テスト {#mca7623b}
 
