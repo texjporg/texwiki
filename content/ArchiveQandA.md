@@ -9,10 +9,6 @@ pukiwiki: "ArchiveQandA"
 
 ここでは、[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
 
-<span style="font-size:12px">Q &amp; A で話題になったのかというくくりが必要か知らないが，分類してみた．</span><br>
-
-<span style="font-size:12px">正方形を「長方形の特殊な場合」というか「正多角形の特殊な場合」というか，みたいなことは両方やっておいて悪くないと思うので．</span>
-
 <!-- *目次 [#c74dbb77] -->
 
 ### WinShellのエラーメッセージ {#l91d86a6}
@@ -31,13 +27,25 @@ pukiwiki: "ArchiveQandA"
 
     また，[dvioutにおけるトラブル](http://akagi.ms.u-tokyo.ac.jp/dvioutQA.html)を参照しましょう。
 
-<!-- **TeX本体のエラーメッセージ [#s54a975c] -->
+### TeX本体のエラーメッセージ {#s54a975c}
+
+- <strong>! TeX capacity exceeded, sorry ...</strong>
+
+<br>
+
+    スタイルファイルやマクロの衝突や不具合で起きることがあるので，使用するスタイルファイルやマクロを再検討すること。
+    本当に足らない場合には，不足すると言われたパラメータの数値が $TEXMF/web2c/texmf.cnf で指定されているので，その数値を大きくする。
+    texmf.cnf でパラメータを大きくしても反映されない場合にはフォーマットファイルを作り直してみる。
 
 ### LaTeXのエラーメッセージ {#m585375b}
 
 - [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>) にまとめました．
 
 ### 表記の哲学 {#l951f950}
+
+<span style="font-size:12px">Q &amp; A で話題になったのかというくくりが必要か知らないが，分類してみた．</span><br>
+
+<span style="font-size:12px">正方形を「長方形の特殊な場合」というか「正多角形の特殊な場合」というか，みたいなことは両方やっておいて悪くないと思うので．</span>
 
 - [\mathrm{d}x?](</表記の哲学/mathrm-dx/>)
 - [重力加速度の g](</表記の哲学/重力加速度の g/>)
