@@ -188,7 +188,7 @@ gs/gs\[VER\]/lib/ps2epsi.bat を使うことで，かなりよい BoundingBox �
 open(ARGV[0],"r").each_line{|line|;if line =~ /%%BoundingBox/; print line; break; end;}
 ```
 
-のような ruby のスクリプト (perl でも何でもいいと思うけど) と，
+のような ruby のスクリプト (perl でも何でもいいと思うけど) bb (パーミッションにフラグ x を立てておく) と，
 
 ```
 IMGSRCS = fig.tex
@@ -214,4 +214,4 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 	$(PS2EPS) $*.ps $*.eps
 ```
 
-のような Makefile を作れば，make を実行することでまともな BoundingBox を持った (表した) fig.pdf, fig.bb, fig.eps を得ることができるように思います．
+のような Makefile を作れば，make を実行することでまともな BoundingBox を持った (表した) fig.pdf, fig.bb, fig.eps を得ることができるように思います．\[<strong>追記</strong>: <em>しかし，これでも少し小さめに BoundingBox が測られるように思います．GSView の \[File\] -> \[PS to EPS\] で変換したときくらいの BoundingBox を持った矩形を切り出したいのですが，手作業をいれずにできる方法を誰かご存じないでしょうか？</em>\]
