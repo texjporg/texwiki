@@ -53,6 +53,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
 <tr><td> BibTexMng </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
 <tr><td> JavaBib </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
+<tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
 </tbody>
 </table>
 
