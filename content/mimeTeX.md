@@ -30,4 +30,8 @@ PukiWiki から使うには
 
 ### imgTeX {#za7a547f}
 
-中丸さん: [imgTeX](http://www.on.cs.keio.ac.jp/~maru/imgtex/), [インタラクティヴに](http://www.on.cs.keio.ac.jp/~maru/imgtex/interactive.html). cf.) [qa:33461](https://okumuralab.org/~okumura/texfaq/qa/33461.html), [qa:33504](https://okumuralab.org/~okumura/texfaq/qa/33504.html)
+中丸さん: [imgTeX](http://www.on.cs.keio.ac.jp/~maru/imgtex/), [インタラクティヴに](http://www.on.cs.keio.ac.jp/~maru/imgtex/interactive.html),  [PukiWikiプラグイン](http://www.on.cs.keio.ac.jp/~maru/imgtex/sources/imgtex_inc_php.txt). cf.) [qa:33461](https://okumuralab.org/~okumura/texfaq/qa/33461.html), [qa:33504](https://okumuralab.org/~okumura/texfaq/qa/33504.html), [qa:33899](https://okumuralab.org/~okumura/texfaq/qa/33899.html)
+
+### texvc用 {#v1c9afd6}
+
+藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/archives/2004/12/pukiwiki_texvc.html)
