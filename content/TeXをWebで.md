@@ -34,8 +34,8 @@ pTeX（日本語版 TeX）については，日本語化が十分でないディ
 ソースからコンパイルする方法は以下のページをご参照ください。
 
 - [Apache](http://oku.edu.mie-u.ac.jp/~okumura/networking/apache.html)
-- [PHP](http://oku.edu.mie-u.ac.jp/~okumura/networking/php.html)
-- [Linux での teTeX-2.0，pTeX，pLaTeX2e のインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-linux.html)
+- [PHP](http://oku.edu.mie-u.ac.jp/~okumura/linux/?PHP)
+- [Linux での teTeX-2.0，pTeX，pLaTeX2e のインストール](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Make)
 
 ### セキュリティ上の配慮 {#aeb59313}
 
