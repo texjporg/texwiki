@@ -18,7 +18,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
 <tr><td> <a href="http://www.imamod.ru/~vab/bibtexmng/">BibTexMng</a> </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
 <tr><td> <a href="http://www.tug.org/tex-archive/biblio/bibtex/utils/JavaBib/">JavaBib</a> </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
-<tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト（旧称 <a href="http://csb.stanford.edu/nbatada/JBibtexManager/">JBibtexManager</a>）</td></tr>
+<tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト（旧称 <a href="http://csb.stanford.edu/nbatada/JBibtexManager/">JBibtexManager</a>）<a href="http://bibkeeper.sourceforge.net">bibkeeper</a>もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる</td></tr>
 <tr><td> <a href="http://bibdesk.sourceforge.net/">BibDesk</a> </td><td> MacOSX </td><td> BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます </td></tr>
 <tr><td><a href="http://homepage.mac.com/tukanobu/sonota/yamako2.html">やまこ２号</a></td><td> MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4</td><td> 文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる</td></tr>
 <tr><td> <a href="http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame">bibdb</a> </td><td>DOS/Windows </td><td>日本語が扱えない</td></tr>
@@ -34,6 +34,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref for Windows</a></td><td> Windows</td><td>フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．<a href="http://members3.jcom.home.ne.jp/refwin/html/latex.htm">LaTeXへのサポート</a></td></tr>
 <tr><td> <a href="http://namazu.org/~satoru/scbib/">scbib</a> </td><td> <a href="http://www.shiro.dreamhost.com/scheme/gauche/">Gauche</a>（Schemeインタプリタ）</td><td> Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能 </td></tr>
 <tr><td> <a href="http://biborb.glymn.net/doku.php">BibORB</a> </td><td> Webサーバ, PHP (&gt;=4.0.3), PHP XSLT, PHP Pear </td><td> Webベースの文献管理システム、Web上でbibファイルの編集・インポート・エキスポートができ、電子ジャーナルと連携できる。</td></tr>
+<tr><td> <a href="http://www.periapsis.org/tellico/">tellico</a> </td><td> KDE &gt;= 3.1, Qt &gt;= 3.1, libxml2, libxslt1 &gt;= 1.0.19 </td><td> KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。日本語不可。</td></tr>
 </tbody>
 </table>
 
