@@ -34,9 +34,12 @@ pukiwiki: "ArchiveQandA"
 <!-- Q&A で良く出るものはここに書いたほうが良い？  -->
 - [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
 
-### LaTeXのエラーメッセージ {#m585375b}
+### LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
 
-- [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>) にまとめました．
+- [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)
+- [LaTeX の警告メッセージ](</LaTeX の警告メッセージ/>)
+
+の各々にまとめました．
 
 ### 表記の哲学 {#l951f950}
 
@@ -65,6 +68,11 @@ pukiwiki: "ArchiveQandA"
 
 - 自分自身のファイル名の取得
     - \jobname ([qa:32943](https://okumuralab.org/~okumura/texfaq/qa/32943.html), [qa:17412](https://okumuralab.org/~okumura/texfaq/qa/17412.html), [qa:11872](https://okumuralab.org/~okumura/texfaq/qa/11872.html)).
+- 余白に行番号
+    - [CTAN:macros/latex/contrib/lineno/](https://mirror.ctan.org/macros/latex/contrib/lineno/) ([qa:33113](https://okumuralab.org/~okumura/texfaq/qa/33113.html), ...)
+- 紙面の外側に通し番号
+- \label{}, \ref{} を目に見えるように張る
+    - [CTAN:macros/latex/required/tools/showkeys.dtx](https://mirror.ctan.org/macros/latex/required/tools/showkeys.dtx) ([qa:19427](https://okumuralab.org/~okumura/texfaq/qa/19427.html), ...)
 
 ### コメント {#adc20c89}
 
