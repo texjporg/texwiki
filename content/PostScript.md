@@ -16,7 +16,7 @@ pukiwiki: "PostScript"
 
 PostScript は業界標準のページ記述言語です。
 技術情報は Adobe の
-[Technical Notes for Developers](http://partners.adobe.com/asn/developer/technotes.html)
+[Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp)
 ですべて得られます。
 本では
 [ページ記述言語 PostScriptチュートリアル&amp;クックブック](http://www.amazon.co.jp/exec/obidos/ASIN/4756100058/)，[PostScriptリファレンスマニュアル](http://www.amazon.co.jp/exec/obidos/ASIN/4756138225/)
