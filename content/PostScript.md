@@ -29,8 +29,9 @@ PostScript は業界標準のページ記述言語です。
 - [ghostscript.com](http://www.ghostscript.com/)
 - [Ghostscript](http://sourceforge.net/projects/ghostscript/) (SourceForge)
 - [WMF2EPS](http://www.wmf2eps.de.vu/) (シェアウェア。WindowsのPSプリンタドライバで簡単にEPSを作るツール。プレビューも付けられる)
-- [Ghostscript 8.14 + GSview 4.6 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html)
-    (堀田さん＠愛教大)
+- [Ghostscript 8.14 + GSview 4.6 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html) /
+    [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/index.html)
+    (堀田さん＠愛知教育大・数学)
 
 - [松本隆太郎](http://www.rmatsumoto.org/tex-ps-pdf/)さん:
     綺麗で小さなPostScript及びPDFをTeXから作る / hyperrefと日本語 / 画像を含むPSファイルを小さくする
