@@ -223,7 +223,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[このページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
