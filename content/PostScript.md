@@ -65,6 +65,5 @@ PostScript は業界標準のページ記述言語です。
 
 ### その他 {#af57d83a}
 
-- [ページ記述言語 PostScriptチュートリアル&amp;クックブック](http://www.amazon.co.jp/exec/obidos/ASIN/4756100058/)
 - [PostScriptリファレンスマニュアル](http://www.amazon.co.jp/exec/obidos/ASIN/4756138225/)
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html) (奥村＠滋賀県立大さん)
