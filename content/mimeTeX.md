@@ -15,7 +15,7 @@ PukiWiki から使うには
 で公開されているプラグインを使います。例えば
 
 ```
- #mimetex(\sqrt{x^2+y^2}=z^2)
+ #mimetex(\sqrt{x^2+y^2=z^2)
 ```
 
 と書けば
