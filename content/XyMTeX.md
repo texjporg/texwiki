@@ -7,13 +7,13 @@ pukiwiki: "XyMTeX"
 
 # XyMTeX
 
-一般に化学雑誌への投稿には、化学者専用の化学構造描画パッケージ・ソフトとして
+一般に化学雑誌への投稿には、化学者専用の化学構造描画パッケージソフトとして
 [ChemDraw](http://software.univcoop.or.jp/products/chemoffice/chemdraw.html)
 または
 [ISISDraw](http://www.chem-station.com/soft/Isisdraw.htm)
-を利用することが普通です。
+を利用することが普通である。
 
-TeX での投稿が可能な雑誌等への場合には、藤田さん（京都工繊大・工芸学部）の
+TeX による投稿も可能な雑誌等への場合には、藤田さん（京都工繊大・工芸学部）の
 [XyM（キュム）TeX](http://imt.chem.kit.ac.jp/fujita/fujitas3/xymtex/index.html)
 を参照してください。
 
