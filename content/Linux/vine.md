@@ -24,30 +24,35 @@ $ sudo apt-get install task-tetex
 
 <table>
 <tbody>
-<tr><td> detex </td><td> TeXコマンドを取り除くプログラム</td></tr>
-<tr><td> ghostscript-fonts </td><td> Fonts for the Ghostscript PostScript(TM) interpreter.</td></tr>
-<tr><td> latex2html </td><td> LaTeX ファイルを HTML 形式に変換するツール</td></tr>
-<tr><td> yatex </td><td> 野鳥(YaTeX) - Yet Another TeX mode for Emacs</td></tr>
-<tr><td> TeXmacs </td><td> A structured wysiwyg scientific  text editor</td></tr>
-<tr><td> auctex </td><td> Emacs 上でのtexファイル編集を支援するマクロパッケージです</td></tr>
-<tr><td> dvi2tty </td><td> convert dvi files to simple ASCII</td></tr>
-<tr><td> jadetex </td><td> TeX macros used by Jade TeX output.</td></tr>
-<tr><td> latex-xft-fonts </td><td> xft-compatible LaTeX fonts for math symbols</td></tr>
-<tr><td> lyx </td><td> LaTeX形式でも保存できる簡易ワープロ</td></tr>
-<tr><td> mathabx </td><td> TeX 用の新しい数式フォント</td></tr>
-<tr><td> plain2 </td><td> plain-text converter (to LaTeX, ROFF and HTML)</td></tr>
-<tr><td> task-texmacro-info </td><td> 情報科学工学に関する teTeX マクロをインストールするための仮想パッケージ</td></tr>
-<tr><td> task-texmacro-phys </td><td> 物理学に関する teTeX マクロをインストールするための仮想パッケージ</td></tr>
-<tr><td> tetex-doc </td><td> TeX テキスト整形システムに関する説明文書類</td></tr>
-<tr><td> texmacro-his </td><td> tetex で使うマクロパッケージ ヒューマンインタフェース学会論文原稿作成用</td></tr>
-<tr><td> texmacro-ieice </td><td> teTeX で使うマクロパッケージ 電子情報通信学会論文原稿、技術研究報告作成用</td></tr>
-<tr><td> texmacro-ipsj </td><td> teTeX で使うマクロパッケージ 情報処理学会論文原稿作成用</td></tr>
-<tr><td> texmacro-jps </td><td> tetex で使うマクロパッケージ 日本物理学会論文原稿作成用</td></tr>
-<tr><td> texmacro-otf </td><td> tetex で使うマクロパッケージ (齋藤修三郎氏による「OpenType Font用VF」)</td></tr>
-<tr><td> tgif2tex </td><td> tgif の図中の文字列を TeX で処理する</td></tr>
-<tr><td> python-bibtex </td><td> Python extension to parse BibTeX files.</td></tr>
+<tr><td> Name </td><td> 用途 </td><td> tex-apt-get.sh</td></tr>
+<tr><td> detex </td><td> TeXコマンドを取り除くプログラム</td><td>○</td></tr>
+<tr><td> ghostscript-fonts </td><td> Fonts for the Ghostscript PostScript(TM) interpreter.</td><td>○</td></tr>
+<tr><td> latex2html </td><td> LaTeX ファイルを HTML 形式に変換するツール</td><td>○</td></tr>
+<tr><td> yatex </td><td> 野鳥(YaTeX) - Yet Another TeX mode for Emacs</td><td>○</td></tr>
+<tr><td> TeXmacs </td><td> A structured wysiwyg scientific  text editor</td><td>○</td></tr>
+<tr><td> auctex </td><td> Emacs 上でのtexファイル編集を支援するマクロパッケージです</td><td>○</td></tr>
+<tr><td> dvi2tty </td><td> convert dvi files to simple ASCII</td><td>○</td></tr>
+<tr><td> jadetex </td><td> TeX macros used by Jade TeX output.</td><td>○</td></tr>
+<tr><td> latex-xft-fonts </td><td> xft-compatible LaTeX fonts for math symbols</td><td>○</td></tr>
+<tr><td> lyx </td><td> LaTeX形式でも保存できる簡易ワープロ</td><td>○</td></tr>
+<tr><td> mathabx </td><td> TeX 用の新しい数式フォント</td><td>○</td></tr>
+<tr><td> plain2 </td><td> plain-text converter (to LaTeX, ROFF and HTML)</td><td>○</td></tr>
+<tr><td> task-texmacro-info </td><td> 情報科学工学に関する teTeX マクロをインストールするための仮想パッケージ</td><td>○</td></tr>
+<tr><td> task-texmacro-phys </td><td> 物理学に関する teTeX マクロをインストールするための仮想パッケージ</td><td>○</td></tr>
+<tr><td> tetex-doc </td><td> TeX テキスト整形システムに関する説明文書類</td><td>○</td></tr>
+<tr><td> texmacro-his </td><td> tetex で使うマクロパッケージ ヒューマンインタフェース学会論文原稿作成用</td><td>○</td></tr>
+<tr><td> texmacro-ieice </td><td> teTeX で使うマクロパッケージ 電子情報通信学会論文原稿、技術研究報告作成用</td><td>○</td></tr>
+<tr><td> texmacro-ipsj </td><td> teTeX で使うマクロパッケージ 情報処理学会論文原稿作成用</td><td>○</td></tr>
+<tr><td> texmacro-jps </td><td> tetex で使うマクロパッケージ 日本物理学会論文原稿作成用</td><td>○</td></tr>
+<tr><td> texmacro-otf </td><td> tetex で使うマクロパッケージ (齋藤修三郎氏による「OpenType Font用VF」)</td><td>○</td></tr>
+<tr><td> tgif2tex </td><td> tgif の図中の文字列を TeX で処理する</td><td>○</td></tr>
+<tr><td> python-bibtex </td><td> Python extension to parse BibTeX files.</td><td>○</td></tr>
 </tbody>
 </table>
+
+apt-get 自動実行スクリプト
+
+<a href="/attach/Linux/vine/tex-apt-get.sh">tex-apt-get.sh</a>
 
 ## xdvi関連の設定 {#j0808b38}
 
