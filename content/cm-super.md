@@ -11,7 +11,7 @@ pukiwiki: "cm-super"
 
 ## cm-super {#vb256d79}
 
-[CTAN: fonts/ps-type1/cm-super](http://www.t.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/) でミラーされています。 
+[CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 
 [cm-super.tar.gz](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.tar.gz) の形で圧縮ダウンロードしても60Mバイト以上あります。 
 
 ### インストール： {#iaa9cbb7}
