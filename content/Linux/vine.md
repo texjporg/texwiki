@@ -55,7 +55,9 @@ apt-get 自動実行スクリプト
 <a href="/attach/Linux/vine/tex-apt-get.sh">tex-apt-get.sh</a>
 
 jsarticle，jsbookが古いのでdvipdfmxと組み合わせたとき不具合が起こる
-[qa:32161](https://okumuralab.org/~okumura/texfaq/qa/32161.html)。
+[qa:32161](https://okumuralab.org/~okumura/texfaq/qa/32161.html)，
+[qa:32163](https://okumuralab.org/~okumura/texfaq/qa/32163.html)，
+[qa:32167](https://okumuralab.org/~okumura/texfaq/qa/32167.html)。
 
 ## xdvi関連の設定 {#j0808b38}
 
