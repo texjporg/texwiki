@@ -1,0 +1,272 @@
+---
+title: "MetaPost"
+url: "/MetaPost/"
+date: 2004-09-22T22:42:45Z
+pukiwiki: "MetaPost"
+---
+
+# MetaPost
+
+## MetaPost {#v0160eb8}
+
+### はじめに {#q0dc30bf}
+
+この文章は角藤さんの
+[MetaPost の紹介](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
+という文章に触発されて書いたものです。角藤さんに感謝いたします。
+
+日本語版については
+[松山さん](http://village.infoweb.ne.jp/~fwhw5892/jweb/jmpost.htm)
+→ [hideyukiさん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
+が開発されています。
+
+### MetaPost とは {#e4617397}
+
+MetaPostはJohn Hobbyが作ったMETAFONT類似のソフトで，
+METAFONTがgf形式のフォントを出力するのに対して，
+MetaPostはPostScript（EPS）形式のファイルを出力します。
+1995年からAT&amp;Tライセンス不要のフリーソフトになりました。
+詳しくは作者Hobby自身による
+[MetaPost](http://cm.bell-labs.com/who/hobby/MetaPost.html)
+ページをご覧ください。
+web2c配布にもMetaPostのマニュアルが入っています。
+
+まず簡単なMetaPostプログラムを作ってみましょう。
+
+```
+beginfig(1);
+u=100;
+draw (u,0)--(2u,u)--(u,2u)--(0,u);
+endfig;
+end.
+```
+
+これは単に4点を3本の線分で結ぶだけです。
+
+このファイルをたとえば test.mp
+という名前で保存して，
+
+```
+mpost test
+```
+
+と打ち込むと，beginfig(1); から endfig;
+までに描かれた内容が test.1 というEPSファイルに出力されます。
+Ghostscript などで確認してみてください。
+
+もしさらに beginfig(2);……endfig;
+が同じ test.mp に書かれていれば，その中身は test.2
+に出力されます。
+要するに beginfig() は拡張子を決めるだけですが，
+拡張子は数字（番号）しか使えません。
+
+上の例は単なる折れ線でした。閉じた図形にするには，
+
+```
+draw (u,0)--(2u,u)--(u,2u)--(0,u)--cycle;
+```
+
+とします。さらに，滑らかな線で結ぶには，
+
+```
+draw (u,0)..(2u,u)..(u,2u)..(0,u)..cycle;
+```
+
+とします。もちろん
+
+```
+draw (u,0)--(2u,u)--(u,2u)..(0,u)..cycle;
+```
+
+のような使い方もできます。
+
+塗りつぶしや色指定もできます。たとえば
+
+```
+fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
+```
+
+としてみてください。
+
+文字を入れることもできます。たとえば
+
+```
+prologues:=1;
+defaultfont := "rptmr";
+defaultscale := 1.5;
+beginfig(1);
+u=100;
+fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
+label("Red Ball", (u,u));
+endfig;
+end.
+```
+
+のようにすれば，点 (u,u) を中心とする位置に Red Ball と書かれます。
+このように文字を入れる場合は，
+PostScript フォントを指定し，
+最初に prologues:=1; としておけば，
+独立のEPSとして使えます。
+ただし，
+defaultfont := "rptmr";
+のような命令でデフォールトのフォント名を標準的な PS
+フォントに指定しておく必要があります（rptmr
+は Times-Roman の TeX での名前です）。
+そうでなければ cmr10 になってしまい，一般のプリンタでは出力できません。
+
+> しかし Ghostscript では次のようにして cmr10 などを出力することができます：
+> GS_LIB という環境変数を CM Type1 フォントのある場所
+> （たとえば /usr/local/teTeX/share/texmf/fonts/type1/bluesky/cm）
+> に設定しておき（あるいはここにある pfb ファイルを /usr/local/share/ghostscript/fonts
+> にコピーしておき），Ghostscript のディレクトリの Fontmap
+> ファイルにたとえば
+>
+> ```
+> /CMR10                                  (cmr10.pfb)     ;
+> /CMMI10                                 (cmmi10.pfb)    ;
+> /CMR7                                   (cmr7.pfb)      ;
+> /CMMI7                                  (cmmi7.pfb)     ;
+> /CMEX10                                 (cmex10.pfb)    ;
+> ```
+>
+> などのように書いておきます。
+> 別の手として，cmr10.pfb などを CMR10 という名前で /Resource/Font
+> ディレクトリにコピーしておいてもいいでしょう。
+
+TeX/LaTeX の文書の中に組み込んで使う場合は，
+逆に prologues:=1; は指定しません。
+この場合，たとえば
+
+```
+\documentclass{jsarticle}
+\usepackage[dvips]{graphicx}
+\begin{document}
+……
+\begin{center}
+\includegraphics{test.1}
+\end{center}
+……
+\end{document}
+```
+
+のようにして組み込み，
+
+```
+platex test
+```
+
+として処理して
+
+```
+dvips test -o test.ps
+```
+
+と打ち込むと test.ps というPostScriptファイルができますので，
+Ghostscriptで見るか，PostScriptプリンタに送ります。
+
+ここで
+
+```
+\documentclass{article}
+\usepackage[dvips]{graphicx}
+\pagestyle{empty}
+\begin{document}
+\includegraphics{test.1}
+\end{document}
+```
+
+のように図だけを含むTeXファイルから dvi を作り，
+
+```
+dvips -E test -o test.eps
+```
+
+のようにdvipsの -E オプションを使えば，
+本物のEPSファイルになり，
+TeX以外のアプリケーションに取り込むこともできます。
+
+上のような方法ではカーニングやリガチャは入りませんし，
+数式を含ませることもできません。
+ちゃんと組まれた文や数式を含ませるには，次のように label
+中に btex …… etex で囲んで入れます。
+
+```
+verbatimtex
+\documentclass{article}
+\begin{document}
+etex;
+beginfig(1);
+u=100;
+fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
+label(btex Area is $\pi r^2$ etex, (u,u));
+endfig;
+verbatimtex
+\end{document}
+etex;
+end.
+```
+
+このように TeX や LaTeX の文書が含まれている場合は，
+TeX または LaTeX を起動するコマンドをあらかじめ環境変数 TEX
+で指定しておく必要があります。
+たとえば上の例で LaTeX を起動するコマンドが latex なら，
+Bシェルの類なら export TEX=latex，
+Cシェルなら setenv TEX latex
+としてから mpost test と打ち込みます。
+
+もうちょっと数学のテスト問題に使えそうな例をあげておきます。
+
+```
+verbatimtex
+\documentclass{article}
+\begin{document}
+etex;
+beginfig(1);
+u=1cm;
+drawarrow (-.5u,0)--(4u,0);
+drawarrow (0,-.5u)--(0,2u);
+pickup pencircle scaled 1pt;
+draw (0,0){up}
+for i=1 upto 8: ..(i/2,sqrt(i/2))*u endfor;
+label.lrt(btex $\sqrt{x}$ etex, (3,sqrt(3))*u);
+label.rt(btex $x$ etex, (4,0)*u);
+label.top(btex $y$ etex, (0,2)*u);
+label.llft(btex O etex, (0,0));
+endfig;
+verbatimtex
+\end{document}
+etex;
+end.
+```
+
+Unix 版（web2c 版）では曲線 ..
+でつなぐ場合の最大長は 1000 点です。
+
+日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
+さきほどの例で（prologues:=1; を指定しておき）
+
+```
+\documentclass{jsarticle}
+\usepackage[dvips]{graphicx,psfrag}
+\begin{document}
+……
+\begin{center}
+\psfrag{Red Ball}{赤いボール}
+\includegraphics{test.1}
+\end{center}
+……
+\end{document}
+```
+
+のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。
+ただし，日本語としてセンタリングされるわけではありませんので，
+一般に位置がずれます。
+
+もっとたくさんの例が
+[Metapost : exemples](http://www.math.jussieu.fr/~zoonek/LaTeX/Metapost/metapost.html)
+というページにあります。
+
+### おまけ {#nec162e2}
+
+MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/contour.html)
+を作ってみました。
