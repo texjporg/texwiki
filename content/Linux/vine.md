@@ -144,3 +144,8 @@ Win 版などで動作確認してください。
 - 齋藤修三郎氏の OTF パッケージが、VinePlus に texmacro-otf として用意されています。
     dvipdfmx と組み合わせると、商用フォントがなくても、
     囲み付き文字や「はしご高 (&#x9ad9;)」などを含んだ PDF を作れます。
+
+- dvipdfmx で大きな括弧など一部のフォントが欠落してしまうことがあります。
+    [Make](/Make/#content_1_4) にある通り、\usepackage{type1cm} とするのがよいようです。
+    どうしても気になる人は、updmap スクリプトを修正しても構いません。
+    [qa:32659](https://okumuralab.org/~okumura/texfaq/qa/32659.html) を御覧下さい。
