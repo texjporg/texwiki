@@ -7,9 +7,7 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 # 表記の哲学/\mathrm{d}x?
 
-[TeX Q &amp; A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) (15265, 15262, 15261, 15258, 15256, 15254, 15251, 15249, 15244, 15242, 15239, 15236, 15235, 15233, 15184, 15175, 15174) より：
-
-TODO: [Q&amp;A11579](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/11579.html) 以下の議論
+[TeX Q &amp; A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) (11579--580, 616, 622, 627, 629, 648, 656--657, 659--661; 15174--175, 184, 233, 235--236, 239, 242, 244, 249, 251, 254, 256, 258, 261--262, 265) より：
 
 - そのまま引用して貼り付ける
 - 内容をまとめながら示す
@@ -54,14 +52,61 @@ TODO: [Q&amp;A11579](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/11579.html) �
     - f (function) がイタリックなのかが気になる
 - 一方，ISOは変数は斜体，定数やオペレータは立体（でも f(x) は例外）ということだったと思います（e は定数だが光速 c は定数ではない？）。
     - ちなみに，π (3.14)，e (2.71)，i (-1 の平方根) 等は単位を持たない（何かの物の量を表さない）【定数】で，c (光速)，G (万有引力定数)等は，単位を持つ（何かの物の量を表す）【物理定数】という分け方で，これがイタリックとローマンの分かれ目になっているとどこかで知りました．
+    - 微細構造定数のような無次元の物理定数はどうなるんだろう？？
 
 - いま日本エディタースクール『標準編集必携第2版』を見たら，点 P は立体だけれど線分 PQ は斜体だと書いてありました（これも高校教科書とは違いますね）。
 
-### 立体のπの書き方 {#s119d912}
+### 立体のギリシア文字の書き方 {#ie50e6b7}
 
-- $pi$ を立てる?
-- 奥村さんの本の p.233 Symbol (pifont) --- \Pisymbol{psy}{"70}
+- $\textrm{\Pisymbol{psy}{"70}}, \textrm{\Pisymbol{psy}{"64}}$: 対応表は奥村さんの美文書 p. 233 など
 - t(p)xfonts 限定で "\piup", "\deltaup", ･･･ というギリシャ文字直立体の命令がある
+- 以下の \slantbox を用いて，\slantbox{-14.0362}{$\mu$} とする <em>註: PS に依存する</em>
+
+***
+
+<div style="text-align:right"><a href="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/9353.html">Q&amp;A 9353</a> より抜粋</div>
+
+PostScriptさえあれば任意のものを傾けられます。
+但し、箱の中では改行されないので、長い文章を
+斜体で書いたりはできません。引数を1文字ずつ取り出して \slbox に
+渡すマクロを書く手もありますが、禁則処理とかに対処するのは大変
+でしょう。
+
+<pre><code>\def\slantbox#1#2&#123;&#123;%
+        % 箱#2の大きさと位置は変えずに、箱の中身だけ#1ほど傾ける
+        % #1には角度を度単位で指定するかあるいは「sl」「it」と書く
+        % 「sl」と書くとarctan(1/6)だけ傾く(ほぼ\itの傾き)
+        % 「it」と書くとarctan(1/4)だけ傾く(ほぼ\slの傾き)
+        % 箱の大きさは変わらないので、傾いた分中身が箱の前後にはみ出す
+        % graphicsパッケージ要  #1に角度を指定する場合はeclarith.styも要
+        \setbox\tmp@X\hbox{#2}\edef\tmptok@a{#1}%
+        \def\tmptok@b{sl}\ifx\tmptok@a\tmptok@b% θ=atan(1/6)=9.46232°
+                \def\@RotDeg{49.7312}\def\sec@Theta{1.01379}%
+                \def\csDif@hTheta{.914112}\def\csSum@hTheta{1.07907}%
+        \else \def\tmptok@b{it}\ifx\tmptok@a\tmptok@b% θ=atan(1/4)=14.0362°
+                \def\@RotDeg{52.0181}\def\sec@Theta{1.03078}%
+                \def\csDif@hTheta{.870324}\def\csSum@hTheta{1.11469}%
+        \else
+                \Mul{#1}{.5}\@hTheta \Add{45}\@hTheta\@RotDeg
+                \DegRad\@hTheta\@hTheta
+                \Cos\@hTheta\c@hTheta \Sin\@hTheta\s@hTheta
+                \Add\c@hTheta\s@hTheta\csSum@hTheta
+                \Sub\c@hTheta\s@hTheta\csDif@hTheta
+                \Mul\csSum@hTheta\csDif@hTheta\sec@Theta
+                \Div{1}\sec@Theta\sec@Theta
+        \fi\fi
+        \mbox{\rotatebox{-\@RotDeg}{\scalebox{\csDif@hTheta}[\csSum@hTheta]{%
+                \rotatebox{45}{\scalebox{1}[\sec@Theta]{%
+                        \smash{\makebox[0pt][l]{\usebox{\tmp@X}}}%
+                }}%
+        }}\phantom{\usebox{\tmp@X}}}%
+}}
+\def\slbox{\slantbox{sl}}\def\itbox{\slantbox{it}}</code></pre>
+
+### 立体の偏微分記号の書き方 {#h96165a7}
+
+- ConcMath フォント
+- $\textrm{\Pisymbol{psy}{"B6}}$
 
 ## 伝統派 {#o924c33b}
 
