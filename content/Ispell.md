@@ -9,8 +9,7 @@ pukiwiki: "Ispell"
 
 ## Ispell {#m5b4a889}
 
-- \[041013\]（永田善久）
-    新しく Ispell の項目を立ててみました。皆様，追加・改訂・改善等を宜しくお願いいたします。
+- \[041013\] みなさま，このページへの追加・改訂・改善等を宜しくお願いいたします。
 
 ### Ispell へのドイツ語辞書の追加法 {#l61b1466}
 
@@ -19,7 +18,7 @@ pukiwiki: "Ispell"
 角藤版 ispell-3.2.06-w32.tar.gz がインストール済みのシステムに，新・旧両正書法対応のドイツ語辞書を追加する方法を説明します。
 
 - 
-    dic-german.zip &amp;ref{dic-german.zip} をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
+    [dic-german.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
 
 ```
 ispell-w32/dic/
@@ -37,7 +36,7 @@ Meadow/site-lisp/etc/ispell/
     deutsch.hash (7, 8ビット両対応のドイツ語旧正書法辞書) はそのまま。\*-german.hash (7, 8ビット両対応のドイツ語新正書法辞書) から「一つ」を選んで，german.hash とリネームします。
 
 - 
-    具体的には，Joghurt, Jogurt, Spaghetti, Spagetti 等々の表記をどのようにチェックさせるかによって「一つ」の新正書法辞書を決めます (通常は normal-german.hash を選びます)。
+    具体的には，Joghurt, Jogurt, Spaghetti, Spagetti 等々の表記をどのようにチェックさせるかによって「一つ」新正書法辞書を決めます (通常は normal-german.hash を選びます)。それぞれの辞書の違いは
 
 ```
 normal-german.hash ---> チェックしない，つまり，全て正しい綴りとみなす
@@ -46,12 +45,14 @@ extreme-german.hash ---> Joghurt, Spaghetti をチェックする
                             (過激に新正書法の綴りだけを貫徹するということ)
 ```
 
+ということです。
+
 - 
-    最後に，スペルチェックのテストをしてみます。test-german.zip &amp;ref{test-german.zip} を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    最後に，スペルチェックのテストをしてみます。[test-german.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/test-german.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
 
 ```
 ispell -d deutsch deutsch.tex <--- 7ビット入力ファイルを旧正書法でチェック
-ispell -d german german.tex <--- 7ビット入力ファイルを旧正書法でチェック
+ispell -d german german.tex <--- 7ビット入力ファイルを新正書法でチェック
 ```
 
 のように打ち込んでテストします。
@@ -193,7 +194,7 @@ make install
 #### Windows の場合 {#w091e4da}
 
 - 
-    dic-french.zip &amp;ref{dic-french.zip} をダウンロード・解凍して得られる francais.hash, francais-tex.hash を
+    [dic-french.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/dic-french.zip) をダウンロード・解凍して得られる francais.hash, francais-tex.hash を
 
 ```
 ispell-w32/dic/
@@ -208,7 +209,7 @@ Meadow/site-lisp/etc/ispell/
 ディレクトリ以下にコピーします。
 
 - 
-    スペルチェックのテスト。test-french.zip &amp;ref{test-french.zip} を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    スペルチェックのテスト。[test-french.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/test-french.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
 
 ```
 ispell -d francais francais-tex.tex <--- 7ビット入力ファイルをチェック
