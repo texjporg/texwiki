@@ -14,7 +14,7 @@ pukiwiki: "Ghostscript 7.07"
 
 ### News {#qc5125cb}
 
-- \[040723\] [URWフォントのバグ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq//~okumura/texfaq/urwbug.html)
+- \[040723\] [URWフォントのバグ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/urwbug.html)
 
 ### はじめに {#he9c7727}
 
