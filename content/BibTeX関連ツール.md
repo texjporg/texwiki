@@ -39,7 +39,7 @@ pukiwiki: "BibTeX関連ツール"
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
 <tr><td>bibtex.el </td><td> emacs </td><td> 文献の効率的入力を支援 </td></tr>
-<tr><td>reftex.el </td><td> emacs </td><td> LaTeX文書とbibファイルの連携機能を提供</td></tr>
+<tr><td><a href="http://remote.science.uva.nl/~dominik/Tools/reftex/">reftex.el</a> </td><td> emacs </td><td> LaTeX文書とbibファイルの連携機能を提供</td></tr>
 <tr><td> bibfind </td><td>perl</td><td>bibファイルの中を検索 </td></tr>
 <tr><td> bibindex </td><td>UNIX</td><td>bibファイルをbixファイルに変換。bixファイルの中を検索 </td></tr>
 <tr><td> bible </td><td>windows</td><td>bibファイル作成 </td></tr>
