@@ -66,6 +66,13 @@ pukiwiki: "表記の哲学/重力加速度の g"
 <tr><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png" alt=""></a></td></tr>
 </tbody></table>
 
+- (参考) PukiWiki + [mimeTeX](/mimeTeX/) では以下のように表示される．
+
+<table><tbody>
+<tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">*mimetex(\mathrm{g})*</td><td style="text-align:center">*mimetex(g)*</td></tr>
+<tr><td style="text-align:center">g</td><td style="text-align:center"><em>g</em></td><td style="text-align:center"><code>\mathrm{g}</code></td><td style="text-align:center"><code>g</code></td></tr>
+</tbody></table>
+
 ### コメント {#g27ade79}
 
 - 説明が分かりにくいので、画像を貼ってはどうでしょう。 --  2004-09-16 (木) 13:03:48
