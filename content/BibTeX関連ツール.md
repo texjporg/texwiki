@@ -54,10 +54,11 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> BibTexMng </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
 <tr><td> JavaBib </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
 <tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
+<tr><td> <a href="http://bibdesk.sourceforge.net/">BibDesk</a> </td><td> MacOSX </td><td> BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます </td></tr>
 </tbody>
 </table>
 
-## bibファイルの編集支援ツール {#t7b99d07}
+## bibファイルの作成編集支援ツール {#t7b99d07}
 
 <table>
 <tbody>
