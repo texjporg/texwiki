@@ -61,7 +61,7 @@ pukiwiki: "BibTeX関連ツール"
 </tbody>
 </table>
 
-emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、
+emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、.emacsファイルに、
 
 ```
 (setq bibtex-user-optional-fields
