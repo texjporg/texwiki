@@ -31,6 +31,20 @@ TeXで作った本を出している出版社：
 - 宮岡伯人『[「語」とはなにか：エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』(三省堂, 2002年)
 - 亀田隆，高村正樹著『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
 
+青磁書房から出ている次の本がみなTeXとのこと：
+
+- 『語と構造の間---英語学研究序説---』小池一夫著　IBSN4-915988-21-X A5判、288p、
+- 『黒人研究の世界』黒人研究の会編、黒人研究の会創立50周年記念出版、ISBN4-916988-22-1 A5判、398p
+- 『超越論的経験---フッセル「デカルト的省察の研究---』向来道男著、ISBN4-915988-21-X　B6判縦組、680p
+- "Art and Society" Yukiko Kinoshita著　ISBN4-92588-14-7　A5判320p 全英文
+- "The Shy Voice in American Literature" by Alex Shishin, ISBN4-915988-08-2　A5版188p　全英文
+
+上記以外に青磁書房が組版したTeXの本：
+
+- 『萬葉集語法概論』津之地直一先生遺稿集　ISBN4-944185-04、A5判270p, 縦組、万葉書房
+- 『文芸心理学から見た日本文学』星野五彦著　ISBN4-844185-05-7、A5版縦組284p、万葉書房
+- 『謎！？　クイズ万葉集』万葉書房編集部編、ISBN4-944185-06-5、四六版縦組198ｐ、万葉書房
+
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
 ```
