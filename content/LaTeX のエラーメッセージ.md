@@ -97,10 +97,46 @@ tabbing 環境で \\&lt;（現在の行の先頭項目のタブ位置（項目�
 （\begin{document} のあと）で用いた場合に現れるエラーメッセージです．<br>
 → このエラーを引き起こした記述をプリアンブルに移動してください．
 
+#### ! LaTeX Error: Can not include graphics of type: <em>extension</em>. {#re44c6a5}
+
+拡張子が .<em>extension</em> の形式の画像ファイルの取り込み方法が
+（def ファイルにおいて）規定されていない場合に現れるエラーメッセージです．<br>
+→ <em>extension</em>  形式の画像をサポートした dviware を用いるように
+graphicx パッケージのオプション指定を変更するか，
+画像ファイルの形式のほうを適宜変換してください．
+
 #### ! LaTeX Error: Cannot be used in preamble. {#kf524371}
 
 \nocite をプリアンブルで用いた場合に現れるエラーメッセージです．<br> <!-- LaTeX2e <2003/12/01> での変更点． -->
 → \nocite を本文部分（\begin{document} 以降）に移動してください．
+
+#### ! LaTeX Error: Cannot determine size of graphic in <em>filename</em> (no BoundingBox). {#q73ae398}
+
+\includegraphics による画像ファイルの取り込みの際に，
+eps ファイル自身や bb ファイルから“バウンディングボックス情報”
+（eps ファイルの場合は画像自体の寸法）を取得することに失敗した場合に現れるエラーメッセージです．<br>
+→ 必要な bb ファイルを用意してください．
+あるいは graphicx パッケージに hiresbb オプションを指定しているにもかかわらず，
+取り込む eps ファイルには &#37;&#37;HiResBoundingBox 行がない
+（&#37;&#37;BoundingBox 行しかない），という可能性もあります．
+
+> graphicx パッケージのオプション指定によっては，
+> サポートしているか否かに関係なく“処理が定義されていない拡張子に対するデフォルトの処理”
+> が（def ファイルの中で）与えられていることがあります（例えば，dvips や dvipdfm
+> のようなオプションを指定した場合）．
+> この場合には，サポートしていない形式の画像ファイルを取り込もうとしても
+> “Unknown graphics extension: ...”のエラーは生じないでこのエラーが生じることがあります．
+
+#### ! LaTeX Error: Cannot determine size of graphic in <em>filename</em> (no size specified). {#d6559755}
+
+画像自身の“バウンディングボックス情報”は用いずに
+\includegraphics の width，height（あるいは totalheight）
+の両オプションによって画像が占める（予定の）領域の寸法を指定することになっている場合に，
+幅と高さの指定の少なくとも一方が欠けている場合に現れるエラーメッセージです．<br>
+→ \includegraphics のオプション指定で幅と高さの両方を指定してください．
+
+> 直前に挙げたメッセージの場合と同様に，
+> サポートされていない形式の画像を取り込もうとしているという場合もあります．
 
 #### ! LaTeX Error: \caption outside float. {#ee50ed0c}
 
@@ -272,16 +308,64 @@ fd ファイルが充分に新しいものであるかどうかにも注意し�
 正しければ，\DeclareFontFamily または \DeclareKanjiFamily を用いてエンコーディング
 <em>encoding</em> にファミリー <em>family</em> が存在することを宣言してください．
 
+#### ! LaTeX Error: ftnright package used in one-column mode. {#v8346838}
+
+ftnright パッケージ使用時に，1 段組部分（正確には，LaTeX の \*デフォルトの\*
+2 段組の処理を用いていない箇所）に脚注が存在する場合に現れるエラーメッセージです．<br>
+→ ftnright パッケージを用いる場合には，twocolumn クラスオプション（または
+\twocolumn コマンド）で 2 段組にし，さらに， 1 段組部分では脚注を用いないでください．
+これは，ftnright パッケージの仕様と思われます．
+特に，multicol パッケージとは併用できないことに注意してください． <!-- 2 段組部分では脚注を右カラムに集める一方，1 段組部分では通常の --> <!-- （デフォルトと同じ）脚注を作成するには… ユーザ自身で出力ルーチンを --> <!-- 切り換えることになるのでしょう． -->
+
 #### ! LaTeX Error: Illegal character in array arg. {#i55d4bb2}
 
 array，tabular 両環境の引数（個々の列の揃え方の指定）の中に使用できない文字
 （k など）が存在する場合のエラーメッセージです．<br>
 → 列の揃え方の指定が c，r などの使用できる指定だけからなるかどうかををチェックしてください．
 
+#### ! LaTeX Error: Illegal use of \verb command. {#s892f53b}
+
+doc パッケージ使用時（例えば，dtx ファイルの記述）において，
+何らかのコマンド（例えば，\section）の引数の中で \verb
+を用いた場合に現れるエラーメッセージです．<br>
+→ \verb は（原則として）ほかのコマンドの引数の中では使えないので，
+\verb を用いている箇所を \texttt などを用いて書き換えてください．
+また，doc パッケージ使用時には，コマンド名の記述に \cs を用いることもできます．
+
 #### ! LaTeX Error: \include cannot be nested. {#z1a6e5cc}
 
 \include で読み込んだファイルの中で再び \include を用いた場合に現れるエラーメッセージです．<br>
 → \include で読み込んだファイルの中では \include を使わずに \input などを用いてください．
+
+#### ! LaTeX Error: Index type \`<em>type</em>&#39; already defined. {#f138b1c1}
+
+index パッケージ使用時に \newindex を用いてすでに定義してあるタイプ
+<em>type</em> の索引を再び \newindex コマンドで定義した場合に現れるエラーメッセージです．<br>
+
+→ 同じタイプの索引を重複定義しないように，\newindex の引数を適宜変更してください．
+定義済みの索引を再定義する場合には \renewindex を用いてください．
+なお，index パッケージ使用時には \makeindex コマンドによって
+タイプ default の索引が定義されることに注意してください．
+
+#### ! LaTeX Error: Index type \`<em>type</em>&#39; not defined. {#k506ba1b}
+
+index パッケージ使用時に \renewindex を用いて未定義のタイプ
+<em>type</em> の索引を再定義しようとした場合に現れるエラーメッセージです．<br>
+
+→ 索引のタイプの名称を確認してください．
+正しい名称を用いている場合には，\newindex を用いて新規定義にしてください．
+
+#### ! LaTeX Error: Index type \`<em>type</em>&#39; undefined. {#x002310c}
+
+index パッケージ使用時に \index または \printindex
+のオプション引数で指定したタイプ <em>type</em>
+（オプション引数を与えない場合にはdefault タイプになります）の索引が
+\newindex によって定義されていない場合に現れるエラーメッセージです．<br>
+→ \index のオプション引数が正しいかどうかを確認してください．
+正しい引数を用いている場合には，そのタイプの索引を \newindex で定義してください．
+また，オプション引数なしの \index/\printindex を使用する場合には，
+プリアンプルで \makeindex コマンドを使用するか，
+default タイプの索引を定義する必要があることに注意してください．
 
 #### ! LaTeX Error: KANJI Encoding scheme  \`<em>encoding</em>&#39; unknown. {#zbba26a3}
 
@@ -312,6 +396,15 @@ enumetate 環境，itemize 環境といった list 系の環境の外部で
 → \item を用いた箇所の周囲の記述を調べ，
 その \item が適切な箇条書きの環境に含まれるように変更してください．
 
+<!-- ***! LaTeX Error: Marginpar lost. -->
+<!-- ulem パッケージが提供する \uline といった下線などを作成するコマンドの -->
+<!-- 引数の中の \mbox，\parbox といったものの中で \marginpar -->
+<!-- を用いた場合に現れる（ことになっている）エラーメッセージですが… -->
+<!-- 2000/05/26 版の ulem パッケージでは \@latexerr -->
+<!-- コマンドの第 2 引数を書き忘れているため，別のエラーが生じます．~ -->
+<!-- → 明示的に作成したボックスあるいは数式の中では \marginpar を用いないように -->
+<!-- \marginpar を用いる位置を変更してください． -->
+
 #### ! LaTeX Error: Math alphabet identifier \somecs is undefined in math version \`<em>version</em>&#39;. {#sa91836b}
 
 “数式用書体変更コマンド \somecs は，数式バージョン <em>version</em> に対しては未定義”ということですが…
@@ -325,6 +418,18 @@ enumetate 環境，itemize 環境といった list 系の環境の外部で
 → まず，バージョン名が正しいかどうかを確認してください．
 正しければ，\DeclareMathVersion を用いて数式バージョン <em>version</em> を宣言してください．
 必要があれば，さらに \SetSymbolFont，\SetMathAlphabet を用いてこのバージョンの数式で用いるフォントの設定を行ってください．
+
+#### ! LaTeX Error: Misplaced \endSbox! Should be in LR mode. {#f735a2c2}
+
+（fancybox パッケージによる）Sbox 環境の終端で用いられる \endSbox
+を水平ボックスの中ではない箇所で用いた場合に現れるエラーメッセージですが…
+Sbox 環境の中身に余分な閉じ括弧 } が存在しないかどうかをチェックしたほうがよいでしょう．
+
+#### ! LaTeX Error: Misplaced \end{Verbatim}. {#r1463a2c}
+
+fancybox パッケージ使用時に \endVerbatim
+などのコマンドを直接使用すると現れるエラーメッセージです．<br>
+→ 各種の環境を環境の形で使用してください． <!-- このエラーが生じる条件については，あまり詳しい詮索は行っていません． -->
 
 #### ! LaTeX Error: Missing @-exp in array arg. {#qbae2773}
 
@@ -378,6 +483,17 @@ array，tabular 両環境の引数（個々の列の揃え方の指定）の末�
 （使用するクラスファイルによっては現れないこともあります）．<br>
 → \maketitle を用いる前に \title を用いて文書の表題を与えてください．
 
+#### ! LaTeX Error: No verbatim file <em>filename</em>. {#jeadec09}
+
+fancybox パッケージによる \VerbatimInput などで読み込もうとしたファイル
+<em>filename</em> を読み込めなかった場合に現れるエラーメッセージです．<br>
+
+→ まず，読み込み対象のファイル名を確認してください．
+正しいファイル名を指定している場合には，
+そのファイルが“TeX が探し出せる”ディレクトリ
+（カレント・ディレクトリあるいはファイル texmf.cnf の TEXINPUTS.platex
+などで指定されるディレクトリ）にあるかどうかをチェックしてください．
+
 #### ! LaTeX Error: Not a command name: \`<em>something</em>&#39;. {#x14fd096}
 
 \DeclareMathAccent の第 1 引数（数式用アクセント記号として定義されるコマンドのはずのもの）が，
@@ -427,6 +543,17 @@ figure，table の両環境や \marginpar を“ページ分割できない”�
 > を調整するためのオプションの導入を促すか，
 > 特定の環境を前提としているものとして諦めるか，のいずれかでしょう．
 
+#### ! LaTeX Error: Page height already too large. {#r48c1f85}
+
+\vsize（ページ分割時に用いられる“ページの高さ”を表す寸法，
+LaTeX においては \textheight 経由で設定されます）の値が充分に大きい状況
+（8192pt 以上の場合）において \enlargethispage を用いたときに現れるエラーメッセージです．<br>
+→ \enlargethispage を用いるのを取り止めるか，版面寸法を再検討してください．
+本当に版面が大きい状況でさらに \enlargethispage を用いなければならないのであれば…
+組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）
+全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，
+版面寸法（および \enlargethispage の引数）を充分に小さいままにすることになるでしょう．
+
 #### ! LaTeX Error: \pushtabs and \poptabs don't match. {#e0554bfb}
 
 tabbing 環境の中では \pushtabs によってタブ位置（\\= によって設定した，各項目を揃える位置）
@@ -447,6 +574,35 @@ tabbing 環境の中では \pushtabs によってタブ位置（\\= によって
 オプション自身には適当なフラグを立てさせるだけにし，\ExecuteOptions および
 \ProcessOptions の処理ののちにそのフラグに従ったパッケージの読み込みを行う，
 といった方法をとることができます．
+
+#### ! LaTeX Error: Rotation not supported. {#l664a64a}
+
+回転処理をサポートしない dviware に対応するオプションを
+graphicx パッケージに対して指定しているときに，\rotatebox
+などの回転処理を伴うコマンドを用いた場合に現れるエラーメッセージです．<br>
+→ 回転処理をサポートした dviware を用いるように
+graphicx パッケージに対するオプション指定を変更してください．
+使用する dviware を変更できない場合には，
+回転処理を必要としないように文書の記述などを変更することになります．
+
+#### ! LaTeX Error: Scaling not supported. {#u1acbcce}
+
+拡大・縮小処理をサポートしない dviware に対応するオプションを
+graphicx パッケージに対して指定しているときに，\scalebox
+などの拡大・縮小処理を伴うコマンドを用いた場合に現れるエラーメッセージです．<br>
+→ 拡大・縮小処理をサポートした dviware を用いるように
+graphicx パッケージに対するオプション指定を変更してください．
+使用する dviware を変更できない場合には，
+拡大・縮小処理を必要としないように文書の記述などを変更することになります．
+
+#### ! LaTeX Error: Slide rotation \`<em>type</em>&#39; not defined.. {#k26105de}
+
+slide クラス使用時の \sliderotation の引数にサポートされていないもの
+（デフォルトでは left，right，none のみサポート）
+を指定した場合に現れるエラーメッセージです．<br>
+→ \slidetotation の引数にはサポートされる left，right，none
+のいずれかを用いてください．
+また，left，right を用いる場合には，クラスオプションに semrot を加えてください．
 
 #### ! LaTeX Error: \somecs allowed only in math mode. {#bada1d0b}
 
@@ -477,6 +633,16 @@ tabbing 環境の中では \pushtabs によってタブ位置（\\= によって
 > enumerate 環境あたりで書くようなことがなされてもいたようですが，
 > そのような記述は然るべき記述に書き換えてください．
 
+#### ! LaTeX Error: Suggested extra height (<em>size</em>) dangerously large. {#b78332fc}
+
+\enlargethispage で指定した寸法 <em>size</em> が大きすぎる場合
+（8192pt 以上の場合）に現れるエラーメッセージです．<br>
+→ \enlargethispage で指定する寸法を減らしてください．
+本当に大きな寸法を指定しなければならない場合には…
+組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）
+全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，
+\enlargethispage の引数は充分に小さいままにすることになるでしょう．
+
 #### ! LaTeX Error: Symbol font \`<em>mathgroup</em>&#39; is not defined. {#je2304f5}
 
 \SetMathAlphabet を用いて数式グループ <em>mathgroup</em> に対するフォントの設定を行う場合や
@@ -497,6 +663,15 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 > 設定可能なタブ位置の個数を増やすのは，
 > ファイル latex.ltx に手を加えてからフォーマットファイルを再作成するか，
 > tabbing 環境の実装にかなり手を加えない限り無理のようです． <!-- 既製品がどこかにあるかもしれませんが． -->
+
+#### ! LaTeX Error: Text for \verb command ended by end of line. {#w08e49a0}
+
+doc パッケージ使用時（例えば，dtx ファイルの記述）において，行末にいたっても
+\verb の適用範囲が終了していない場合に現れるエラーメッセージです．<br>
+→ doc パッケージでは（\MakeShortVerb を用いて）\verb|...| の代わりに単に
+|...| と記述できるといった設定を行うことができますが，
+このような \verb の短縮記法（あるいは \verb そのもの）
+の適用範囲の終端を表す文字を適宜補ってください．
 
 #### ! LaTeX Error: The font size command \normalsize is not defined:<br>  there is probably something wrong with the class file. {#bfa94d51}
 
@@ -522,6 +697,16 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 > ```
 >
 > という具合に記述することになります．
+
+#### ! LaTeX Error: \TheSbox is empty!. {#db4eb157}
+
+fancybox パッケージ使用時に，Sbox 環境を用いて保存した対象が存在しない状態で
+\TheSbox（Sbox 環境で保存した対象を使用するコマンド）
+を用いた場合に現れるエラーメッセージです．<br>
+→ \TheSbox を用いる前に Sbox 環境を用いてください．
+なお，Sbox 環境で保存した対象を \TheSbox で使用できるのは 1 回限りです．
+同じ対象を複数個コピーすることはできないので，
+\TheSbox を使用する前に毎回保存してください．
 
 #### ! LaTeX Error: This file needs format \`<em>format_X</em>&#39;<br>  but this is \`<em>format_Y</em>&#39;. {#ubb38849}
 
@@ -654,12 +839,33 @@ disablejfam クラスオプションを適用すれば，
 一方，\usepackage で読み込むパッケージの中の \LoadClass については，
 読み込まれるファイルの拡張子を変更して \RequirePackage あたりで済ませてください．
 
+#### ! LaTeX Error: Undefined color \`<em>colorname</em>&#39;. {#l19cf9b8}
+
+\textcolor などでの色指定に，定義されていない色名 <em>colorname</em>
+を用いた場合に現れるエラーメッセージです．<br>
+→ 指定した色名が正しいものであるかどうかをチェックしてください．
+正しい（はずの）色名を用いている場合には，
+color パッケージに対するオプション指定に usenames を追加してください．
+それでも未定義なら，\definecolor コマンドを用いて色名 <em>colorname</em>
+に対応する色（カラーモデルとパラメータ）を与えることになるでしょう．
+
 #### ! LaTeX Error: Undefined tab position. {#y5a7553b}
 
 tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，
 \\> を用いて次のタブ位置に移動するときなどに未設定のタブ位置を使用しようとした場合に上記のエラーメッセージが現れます．<br>
 → \\= を用いて適切なタブ位置を与えてください（途中の行でタブ位置を追加・変更しても構いません）．
 または，不要な \\>，\\&lt; などがないかどうか調べ，不要なものを削除してください．
+
+#### ! LaTeX Error: Unknown graphics extension: <em>extension</em>. {#re9f90fb}
+
+拡張子 <em>extension</em> をもったファイル名の画像ファイルを
+\includegraphics によって取り込む際に，
+graphicx パッケージのオプションで指定した dviware
+ではその拡張子に対応する形式をサポートしていない場合に現れるエラーメッセージ
+（のひとつ）です．<br>
+→ 取り込みたい画像の形式をサポートした dviware を用いるように
+graphicx パッケージのオプション指定を変更するか，
+画像ファイルの形式のほうを適宜変換してください．
 
 #### ! LaTeX Error: Unknown option \`<em>option</em>&#39; for package \`<em>package</em>&#39;. {#r7f57ab1}
 
@@ -684,6 +890,12 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 文字通り，\usepackage を \documentclass よりも前で用いた場合に現れるエラーメッセージです．<br>
 → \usepackage を \documentclass コマンドと \begin{document} の間の部分に移動してください．
 
+#### ! LaTeX Error: Variable name ended by end of line.. {#m10ee5a0}
+
+program パッケージ使用時に，行末にいたっても“変数名”の記述
+（文字 | で挟まれた部分）が終わらない場合に現れるエラーメッセージです．<br>
+→ 変数名部分の開始・終了の対応をチェックしてください．
+
 #### ! LaTeX Error: \verb ended by end of line. {#c70f9d04}
 
 文字通り，行末にいたっても \verb の範囲が終わっていない場合に現れるエラーメッセージです．<br>
@@ -697,6 +909,17 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 → \verb は（原則として）ほかのコマンドの引数の中では使えないので，
 \texttt などを用いて書き換えてください．
 特殊文字に関しては \symbol{\`\\^}，\symbol{\`\\\\} のように記述することができます．
+
+#### ! LaTeX Error: Verbatim file <em>filename</em> is empty. {#dd107e8f}
+
+fancybox パッケージによる \VerbatimInput などで読み込んだファイル
+<em>filename</em> が空である場合に現れるエラーメッセージです．<br>
+
+→ まず，読み込み対象のファイル名を確認してください．ファイル名が正しい場合には，
+ファイルの中身が意図どおりのものであるかどうかをチェックしてください．
+本当に空のファイルを読み込ませる場合には…
+（ファイルを読み込んだとしても何も出力されないわけですから）
+当該箇所の \VerbatimInput などを用いるのを取り止めても構わないでしょう．
 
 #### ! LaTeX source files more than 5 years old!. {#ie24ee78}
 
