@@ -38,8 +38,7 @@ The LaTeX Graphics Companion
 > 邦訳『LaTeXグラフィックスコンパニオン』が出ました
 > （鷺谷好輝訳，ISBN4-7561-3461-0，本体5400円，アスキー）。
 
-PSTricks は [CTAN](/CTAN/)
-の graphics/pstricks ディレクトリにあります。
+PSTricks は [CTAN:graphics/pstricks/](https://mirror.ctan.org/graphics/pstricks/) ディレクトリにあります。
 
 インストールは，TeX が /usr/local/share/texmf
 以下にインストールされていれば，
@@ -73,41 +72,22 @@ dvips 用の pst-text.pro は，
 とします。さらに，特定の拡張機能を使うなら，
 次のうち必要なファイルを \usepackage します。
 
-multido
-: ループマクロ
-
-pst-3d
-: 3次元射影
-
-pst-char
-: 文字パスのストローキングとフィリング
-
-pst-coil
-: コイルとジグザグ
-
-pst-eps
-: EPS への変換
-
-pst-fill
-: フィリングとタイリング
-
-pst-grad
-: 色のグラディエント
-
-pst-node
-: ノードとその接続
-
-pst-plot
-: プロット
-
-pst-text
-: 文字をパスに沿わせる
-
-pst-tree
-: 木表示
-
-pst-all
-: 以上すべてと，標準 graphics パッケージ中の pstcol を読み込む
+<table>
+<tbody>
+<tr><td><strong>multido</strong> </td><td>ループマクロ</td></tr>
+<tr><td><strong>pst-3d</strong>  </td><td>3次元射影</td></tr>
+<tr><td><strong>pst-char</strong></td><td>文字パスのストローキングとフィリング</td></tr>
+<tr><td><strong>pst-coil</strong></td><td>コイルとジグザグ</td></tr>
+<tr><td><strong>pst-eps</strong> </td><td>EPS への変換</td></tr>
+<tr><td><strong>pst-fill</strong></td><td>フィリングとタイリング</td></tr>
+<tr><td><strong>pst-grad</strong></td><td>色のグラディエント</td></tr>
+<tr><td><strong>pst-node</strong></td><td>ノードとその接続</td></tr>
+<tr><td><strong>pst-plot</strong></td><td>プロット</td></tr>
+<tr><td><strong>pst-text</strong></td><td>文字をパスに沿わせる</td></tr>
+<tr><td><strong>pst-tree</strong></td><td>木表示</td></tr>
+<tr><td><strong>pst-all</strong> </td><td>以上すべてと，標準 graphics パッケージ中の pstcol を読み込む</td></tr>
+</tbody>
+</table>
 
 これらのいずれかを読み込めば，
 \usepackage{pstricks} は省略できます。
@@ -132,6 +112,8 @@ color の代わりに graphics パッケージ集の中にある pstcol を使�
 \end{center}
 \end{document}
 ```
+
+### 実際に<em>使える</em>画像ファイルを作るには {#d57cdc19}
 
 独立の EPS を作るためには，PSTricks の中の pst-eps
 パッケージの PSTtoEPS という命令を使います。
@@ -196,3 +178,40 @@ dvips を指定し， genpdf.sh の中で fig.ps の BoundingBox を awk/perl �
 pdfLaTeX などが日本語化されれば pdftricks や ps4pdf などのパッケージが使える
 ようになるでしょう．いずれにしても pdfTeX/pdfLaTeX で日本語が使
 えるようになるまでは，このような面倒な処理が必要になると思います．
+
+### 実際に<em>使える</em>画像ファイルを作るには (別解) {#cddb53cd}
+
+gs/gs\[VER\]/lib/ps2epsi.bat を使うことで，かなりよい BoundingBox を得ることができるように思います．
+
+```
+#!/usr/bin/ruby -w
+open(ARGV[0],"r").each_line{|line|;if line =~ /%%BoundingBox/; print line; break; end;}
+```
+
+のような ruby のスクリプト (perl でも何でもいいと思うけど) と，
+
+```
+IMGSRCS = fig.tex
+TEX    = platex
+DVIPS  = dvipsk
+PS2EPS = ps2epsi.bat
+PS2PDF = epstopdf -d --nogs
+BB     = ./bb
+all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
+.tex.dvi:
+	$(TEX) $<
+
+.dvi.pdf:
+	$(DVIPS) -Ppdf -z $<
+	$(PS2EPS) $*.ps $*.eps
+	$(PS2PDF) --outfile=$*.pdf $*.eps
+
+.pdf.bb:
+	$(BB) $*.pdf > $*.bb
+
+.dvi.eps:
+	$(DVIPS) -D600 -z $<
+	$(PS2EPS) $*.ps $*.eps
+```
+
+のような Makefile を作れば，make を実行することでまともな BoundingBox を持った (表した) fig.pdf, fig.bb, fig.eps を得ることができるように思います．
