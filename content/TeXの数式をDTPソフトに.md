@@ -31,7 +31,7 @@ pfb 形式のフォントは TeX に標準で入っています。 cmr10.pfb，c
 
 たとえば次の数式を作ってみましょう。 
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="">
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeXで作った数式">
 
 お好きなテキストエディタに次のように打ち込んでください（MacでもWindowsでもLinuxでも何でもかまいません）。 
 
@@ -61,7 +61,7 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 上で作ったEPSファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。 
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="">
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0に配置したところ">
 
 上の例では，LaTeXのデフォルトのフォント（Computer Modern）を使いました。 
 
@@ -71,7 +71,7 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 <table>
 <tbody>
-<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt=""></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt=""></td></tr>
+<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
 </tbody>
 </table>
 
