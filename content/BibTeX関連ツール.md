@@ -85,7 +85,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 </tbody>
 </table>
 
-### Web上で提供されいるBibTeX変換サービス {#o3a13db0}
+### Web上で提供されているBibTeX変換サービス {#o3a13db0}
 
 BibTeX形式に変換するWebアプリが公開されている
 
