@@ -200,9 +200,6 @@ u=100;
 fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
 label(btex Area is $\pi r^2$ etex, (u,u));
 endfig;
-verbatimtex
-\end{document}
-etex;
 end.
 ```
 
@@ -214,10 +211,29 @@ Bシェルの類なら export TEX=latex，
 Cシェルなら setenv TEX latex
 としてから mpost test と打ち込みます。
 
+なお、比較的新しい TeX 環境では、makempx が利口になっており、
+
+```
+verbatimtex
+%&latex
+\documentclass{article}
+\begin{document}
+etex;
+beginfig(1);
+u=100;
+fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
+label(btex Area is $\pi r^2$ etex, (u,u));
+endfig;
+end.
+```
+
+と書いておくだけで、自動的に latex を使ってくれます。
+
 もうちょっと数学のテスト問題に使えそうな例をあげておきます。
 
 ```
 verbatimtex
+%&latex
 \documentclass{article}
 \begin{document}
 etex;
@@ -233,14 +249,12 @@ label.rt(btex $x$ etex, (4,0)*u);
 label.top(btex $y$ etex, (0,2)*u);
 label.llft(btex O etex, (0,0));
 endfig;
-verbatimtex
-\end{document}
-etex;
 end.
 ```
 
 Unix 版（web2c 版）では曲線 ..
-でつなぐ場合の最大長は 1000 点です。
+でつなぐ場合の最大長はデフォルトでは 2000 点です。
+W32TeX の場合は 10000 点です。設定できる最大数は 300000 です。
 
 日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
 さきほどの例で（prologues:=1; を指定しておき）
