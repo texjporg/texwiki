@@ -62,7 +62,7 @@ LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念の�
 
 ### hyperref を上手に呼んで便利な PDF を作る {#ubbc3ac6}
 
-$TEXMF/doc/latex/hyperref/ や [PDFによる詳細な説明書 (角藤氏)](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web753w32.pdf), [qa:33459](https://okumuralab.org/~okumura/texfaq/qa/33459.html) などを参考にして，うまく hyperref を呼ぶことで，手間少なく便利な PDF を作ることができます．
+$TEXMF/doc/latex/hyperref/ や [PDFによる詳細な説明書 (角藤氏)](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web754w32.pdf), [qa:33459](https://okumuralab.org/~okumura/texfaq/qa/33459.html) などを参考にして，うまく hyperref を呼ぶことで，手間少なく便利な PDF を作ることができます．
 
 下にソース例を示しますが，\\@subtitle, \\@belongsto, \advisor@prefix, \\@advisor, \advisor@suffix, \\@keywords は適切に定義されているとします．このとき，注目点は {} の使い方です．
 
@@ -98,12 +98,6 @@ pdftitle=\@title
 
 とすればよいわけです．
 強制改行の \\\ が入っているときには，usepackage のオプションで指定することは厳しいので，先に hyperref を呼んでから，あとから \hypersetup を加えるとうまくいきます．
-
-```
-\pdfstringdefDisableCommands{\let\\\empty}
-```
-
-というコマンドや maketitle に追記する仕方は，$TEXMF/doc/latex/hyperref/paper.pdf からいただきました．
 
 ```
 \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
