@@ -15,6 +15,8 @@ Anthony Phan 氏 （ Universit&#233; de Poitiers ; フランス ） に
 配布、および mathabx の利用方法についての詳細な解説をされてみえますので
 以下のページを参考になさってください。
 
+なお、最新の Vine Linux 3.1 用の Vine Plus には mathabx-2003-0vl3.noarch.rpm として、堀田先生の公開パッケージが同梱されています。
+
 大学内のメインサイトの URL は次のようです ：
 : &nbsp;
 
