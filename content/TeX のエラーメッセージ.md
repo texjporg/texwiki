@@ -14,8 +14,11 @@ pukiwiki: "TeX のエラーメッセージ"
 意味は“文字通り”というものも多いのですが，
 とりあえず日本語による説明と対処法（のヒント）を挙げています．
 
-! A &lt;box> was supposed to be here.
-: &nbsp;<br>
+<!-- 目次があったほうが検索に便利だしリンクもはることが出来るので良いと思う。 -->
+
+***
+
+#### ! A &lt;box> was supposed to be here. {#w8179566}
 
 ボックスが必要な箇所にボックスがない場合に現れるエラーメッセージです．
 例えば，\setbox0={...} という記述を行うとこのエラーが生じます
@@ -24,8 +27,7 @@ pukiwiki: "TeX のエラーメッセージ"
 → エラーが生じた箇所の近辺の記述をチェックして，
 \hbox，\vbox などを補ってください．
 
-! Ambiguous; you need another { and }.
-: &nbsp;<br>
+#### ! Ambiguous; you need another { and }. {#z1707221}
 
 $a \over b \over c$
 のように分数の分母・分子の範囲が不明確な記述を行った場合に現れるエラーメッセージです．<br>
@@ -34,16 +36,14 @@ $a \over b \over c$
 \frac のような適切なマクロを用いている限り，
 このエラーにはお目にかからずに済むことでしょう．
 
-! Argument of \somecs has an extra }.
-: &nbsp;<br>
+#### ! Argument of \somecs has an extra }. {#x710bb23}
 
 \mbox{\label} という記述を行った場合のように，
 コマンドの引数を読み取っている際に余分な閉じ括弧が現れた場合のエラーメッセージです．<br>
 → 今の例のようにコマンドの引数が不足していると思われるので，
 問題となっている箇所で用いたコマンドの引数の個数をチェックしてください．
 
-! Arithmetic overflow.
-: &nbsp;<br>
+#### ! Arithmetic overflow. {#h23057f3}
 
 \multiply，\divide による整数・寸法の乗除算の際に，
 ゼロ除算などによって“数値オーバーフロー”が生じた場合に現れるエラーメッセージです．<br>
@@ -55,16 +55,14 @@ $a \over b \over c$
 その場合には \resizebox\* のように \* をつけるか，寸法を変更する対象に
 （\strut のような）ダミーの支柱を入れるとよいでしょう．
 
-! Bad character code (<em>code</em>).
-: &nbsp;<br>
+#### ! Bad character code (<em>code</em>). {#d9ba1cb4}
 
 \char あるいは \chardef の際に，文字コードとしては不適切な <em>code</em>
 という値を指定した場合に現れるエラーメッセージです．<br>
 → 文字コードの値が正しいかどうかを確認してください．
 和文文字の文字コードを指定する場合には，\euc，\jis，\sjis を前置してください．
 
-! Bad delimiter code (<em>code</em>).
-: &nbsp;<br>
+#### ! Bad delimiter code (<em>code</em>). {#v0756104}
 
 \delimiter または \radical のあとに区切り記号コード
 （根号にも同じ形式のコードが用いられます）としては不適切な <em>code</em>
@@ -80,15 +78,13 @@ $a \over b \over c$
 （それは“構文上必要な空白文字”です）を忘れると
 \langle A のような記述が上記のエラーを引き起こします．
 
-! Bad mathchar (<em>code</em>).
-: &nbsp;<br>
+#### ! Bad mathchar (<em>code</em>). {#oc946c80}
 
 \mathchar あるいは \mathchardef の際に，数式用文字のコードとしては不適切な <em>code</em>
 という値を指定した場合に現れるエラーメッセージです．<br>
 → 0 以上 32767 以下の値を指定してください．
 
-! Bad number (<em>number</em>).
-: &nbsp;<br>
+#### ! Bad number (<em>number</em>). {#ad306e6a}
 
 \openout や \ifeof の直後のように 0 以上 15 以下の整数が必要な箇所で，
 その範囲外の数値 <em>number</em> を用いた場合に現れるエラーメッセージです．<br>
@@ -97,21 +93,18 @@ $a \over b \over c$
 > ただし，充分に新しい処理系では，\ifeof18 の真偽によって“shell-escape”
 > の機能を有効にしているか否かを知ることができるようになっています． <!-- この“ただし…”の部分は [[qa:33410]] を受けたものですが， --> <!-- 追記者自身は実際に最新の処理系を用いた確認を行ったわけではありません． -->
 
-! Bad \patterns.
-: &nbsp;<br>
+#### ! Bad \patterns. {#fa8ff04d}
 
 \patterns の引数の中に通常の文字以外の（\relax のような）ものが含まれる場合に現れるエラーメッセージです．<br>
 → \patterns の引数を修正するところですが，むしろ問題となっている \patterns
 を含むファイルが壊れている，という可能性を疑った方がよいかもしれません．
 
-! Bad \prevgraf (<em>number</em>).
-: &nbsp;<br>
+#### ! Bad \prevgraf (<em>number</em>). {#i2695551}
 
 \prevgraf に対して，負の値 <em>number</em> を設定しようとした場合に現れるエラーメッセージです．<br>
 → \prevgraf に値を設定する場合には 0 以上の値を設定してください．
 
-! Bad register code (<em>number</em>).
-: &nbsp;<br>
+#### ! Bad register code (<em>number</em>). {#bbe80a53}
 
 “\count1000=0”のようにレジスタ番号としては不適切な値 <em>number</em>
 をレジスタ番号に指定した場合に現れるエラーメッセージです．<br>
@@ -119,14 +112,12 @@ $a \over b \over c$
 また，マクロを作成していると，\dimen@\\@tempdima と書くつもりで
 \dimen\\@tempdima としてしまう，というミスもよくあります．
 
-! Bad space factor (<em>factor</em>).
-: &nbsp;<br>
+#### ! Bad space factor (<em>factor</em>). {#lb4b5b8b}
 
 \spacefactor を用いる際に，スペースファクターとして不適切な値を指定した場合に現れるエラーメッセージです．<br>
 → 1 以上 32767 以下の値を指定してください．
 
-! \box255 is not void.
-: &nbsp;<br>
+#### ! \box255 is not void. {#x3228f1e}
 
 出力ルーチン開始時に \box255 が空（無効，void）でない場合に現れるエラーメッセージです．<br>
 → 文書中では，原則として \box255 はユーザ自身では使用しないでください．
@@ -135,22 +126,19 @@ $a \over b \over c$
 必要があればユーザ自身の処理に用いるボックス・レジスタを
 \newbox を用いて確保してください．
 
-! Dimension too large.
-: &nbsp;<br>
+#### ! Dimension too large. {#kdfc5490}
 
 TeX が扱える最大の寸法（2^{30}-1 sp）を超える寸法を与えた場合に現れるエラーメッセージです．<br>
 → 文書中で指定した寸法が適切であるかどうかをチェックしてください． <!-- \includegraphics で読み込む eps ファイルの BoundingBox が極端に大きい場合にも --> <!-- このエラーが生じることがあります． -->
 また，マクロでの寸法の計算のミスによってもこのエラーが生じることがあります．
 
-! Discretionary list is too long.
-: &nbsp;<br>
+#### ! Discretionary list is too long. {#e0701907}
 
 \discretionary の“ノンブレーク・テキスト”（第 3 引数）が長すぎる場合に現れるエラーメッセージです．<br>
 → 行分割が起こる箇所を（必要があれば出力結果を眺めて）絞り込んで，
 \discretionary に対してもっと短い文字列を与えるだけで済むように変更してください．
 
-! Display math should end with $$.
-: &nbsp;<br>
+#### ! Display math should end with $$. {#aa3d3e4e}
 
 $$...$ のような具合に，（TeX のプリミティブな機能で与えられる）
 ディスプレイ数式の終端が単一の $ になっている場合に現れるエラーメッセージです．<br>
@@ -160,16 +148,14 @@ LaTeX の場合には，\\\[ ... \\\] の \\\] を書き忘れている場合も
 > なお，LaTeX 文書では $$...$$ の形式のディスプレイ数式は原則として用いないでください
 > （$$...$$ には fleqn クラスオプションなどの指定が適用されない，といった不利益があります）．
 
-! Double subscript.
-: &nbsp;<br>
+#### ! Double subscript. {#j9f0e487}
 
 $a_b_c$ のような具合に同じ文字・記号（この例では a）
 に対して下添字の指定を複数回行った場合に現れるエラーメッセージです．<br>
 → この例の場合で言えば，$a\_{b_c}$（こちらを意図していることが多いでしょう）
 あるいは ${a_b}\_c$ のように書き換えて，添字のつき方を明確にしてください．
 
-! Double superscript.
-: &nbsp;<br>
+#### ! Double superscript. {#w34c9626}
 
 $a^b^c$ のような具合に同じ文字・記号（この例では a）
 に対して上添字の指定を複数回行った場合に現れるエラーメッセージです．<br>
@@ -179,16 +165,14 @@ $a^b^c$ のような具合に同じ文字・記号（この例では a）
 ' どうしの間に空白文字を入れて $f' '$
 のように記述した場合にもこのエラーが生じることに注意してください．
 
-! Duplicate pattern.
-: &nbsp;<br>
+#### ! Duplicate pattern. {#n68841a4}
 
 \patterns の引数に同一項目が複数回現れる場合のエラーメッセージです．<br>
 → \patterns の引数を重複項目がなくなるように修正するところですが，
 むしろ問題となっている \patterns を含むファイルが壊れている，
 という可能性を疑った方がよいかもしれません．
 
-! Emergency stop.
-: &nbsp;<br>
+#### ! Emergency stop. {#s9ac5238}
 
 TeX を非対話的に使用している場合に，
 “読み込むべきファイルが見つからなかった”といった理由で対話的な処理を必要としたり，
@@ -201,8 +185,7 @@ TeX を非対話的に使用している場合に，
 といった理由で“! Emergency stop.”自身が本当に対処すべきエラーメッセージになっている場合でも，
 対話的に使用すれば何が問題になっているかがわかることでしょう． <!-- もちろん，log ファイルには“! Emergency stop.”のあとに --> <!-- “That makes 100 errors; please try again.”といった --> <!-- “非常終了の理由”が記されていますので，それも参考になるでしょう --> <!-- （ただ，そのあたりの情報を活用できる方は，然るべきリファレンスをすでにお持ちでしょう…）． -->
 
-! Extra }, or forgotten <em>something</em>.
-: &nbsp;<br>
+#### ! Extra }, or forgotten <em>something</em>. {#v1751df9}
 
 開き括弧 { よりも閉じ括弧 } のほうが多い場合に現れるエラーメッセージ（の一種）です．<br>
 → <em>something</em> に応じた対処を施してください．
@@ -212,16 +195,14 @@ $ の場合には，$}$ のような具合に数式中に余分な閉じ括弧�
 \left に対応する \right が欠けているという場合もあるので，
 エラーが生じた箇所の近辺の記述を見直してください．
 
-! Extra alignment tab has been changed to \cr.
-: &nbsp;<br>
+#### ! Extra alignment tab has been changed to \cr. {#h3559f15}
 
 表や各種のディスプレイ数式環境の記述の際に，
 ひとつの行に含まれる &amp; が多すぎる場合に現れるエラーメッセージです．<br>
 → エラーを引き起こした行に含まれる &amp; の個数をチェックしてください．
 また，その直前の行の終端に \\\ を書き忘れていないかどうかもチェックしてください．
 
-! Extra \somecs.
-: &nbsp;<br>
+#### ! Extra \somecs. {#n0e58543}
 
 文字通り，\somecs が余分である場合に現れるエラーメッセージです．<br>
 → \somecs に応じた対処を施してください．
@@ -235,8 +216,7 @@ $ の場合には，$}$ のような具合に数式中に余分な閉じ括弧�
 不要な \endgroup を削除するとよいでしょう．
 \endcsname の場合には，対応する \csname を補うか不要な \endcsname を削除してください．
 
-(Fatal format file error; I'm stymied)
-: &nbsp;<br>
+#### (Fatal format file error; I'm stymied) {#ta758343}
 
 違うバージョンの TeX 用のフォーマットファイルを読み込んだときに現れるメッセージです．
 このメッセージが現れた場合には，
@@ -244,8 +224,7 @@ TeX 処理系自身のインストールが正しく行われているかをチ�
 特に，複数の処理系を混在させた（あるいは古い処理系を更新した）場合には，
 本来読み込むべきフォーマットファイルとは異なるフォーマットファイルが読み込まれることがあります．
 
-! File ended within \read.
-: &nbsp;<br>
+#### ! File ended within \read. {#a9800b9d}
 
 \read によるファイルからの読み込みを行う際に，
 ファイル終端まで読み込んでも括弧の対応がつかない（開き括弧のほうが多い）
@@ -254,8 +233,7 @@ TeX 処理系自身のインストールが正しく行われているかをチ�
 TeX の特殊文字のカテゴリーコードを
 12 に変更した状態でファイルを読み込むことになる場合もあります．
 
-! File ended while scanning <em>item</em> of \somecs.
-: &nbsp;<br>
+#### ! File ended while scanning <em>item</em> of \somecs. {#r747a244}
 
 \somecs に関する <em>item</em>（例えば，マクロの引数）
 を読み取っている間にファイル終端に到った場合に現れるエラーメッセージです．<br>
@@ -263,8 +241,7 @@ TeX の特殊文字のカテゴリーコードを
 といったもの）があるわけですが… 原因は様々ですから，とりあえず，
 \somecs を用いた箇所の近辺の記述が正しいかどうかを見直してください．
 
-! Font \somecs=<em>fontname</em> not loadable: Bad metric (TFM) file.
-: &nbsp;<br>
+#### ! Font \somecs=<em>fontname</em> not loadable: Bad metric (TFM) file. {#t061d5e5}
 
 tfm ファイルが壊れているためフォント <em>fontname</em> を読み込むことができない，
 ということです．問題となっているフォントの tfm ファイルの充分に新しいもの
@@ -272,14 +249,13 @@ tfm ファイルが壊れているためフォント <em>fontname</em> を読み
 自作フォントについてこのエラーが生じた場合には…
 とりあえず，フォント作成に用いたツールを更新した上で再作成することになるのでしょう．
 
-<!-- :! Font \somecs has only '''number''' fontdimen parameters.|~ -->
+<!-- :! Font \somecs has only '''number''' fontdimen parameters. -->
 <!-- テキスト用フォントには 7 個の \fontdimen パラメータが必要ですが， -->
 <!-- フォント識別子 \somecs に割り当てられたフォントには -->
 <!-- '''number''' 個のパラメータしかない，という場合に現れるエラーメッセージのようです… -->
 <!-- が，確認できず，手元の資料にも具体的な記述はありません． -->
 
-! Font \somecs=<em>fontname</em> not loaded: Not enough room left.
-: &nbsp;<br>
+#### ! Font \somecs=<em>fontname</em> not loaded: Not enough room left. {#z3219297}
 
 フォント <em>fontname</em> のフォントメトリックを読み込む余地がない，
 ということですが，この場合にはファイル texmf.cnf の中の
@@ -287,8 +263,7 @@ font_max（フォント数の上限）あるいは
 font_mem_size（概ね，フォントメトリックデータ自身の合計サイズの上限）
 を増やしてください．
 
-! Forbidden control sequence found while scanning  <em>item</em> of \somecs.
-: &nbsp;<br>
+#### ! Forbidden control sequence found while scanning  <em>item</em> of \somecs. {#lacd9cb4}
 
 \somecs に関する <em>item</em>（例えば，マクロの引数）
 を読み取っている間に \outer 指定がなされた
@@ -300,8 +275,7 @@ LaTeX2e のデフォルトでは \outer 指定がなされた“コマンド”�
 文書中の記述に何か間違い（例えば，マクロの引数の個数や書式指定の間違い（} の欠落など））
 があると疑って，\somecs を用いた箇所の近辺の記述を見直すとよいでしょう．
 
-! Huge page cannot be shipped out.
-: &nbsp;<br>
+#### ! Huge page cannot be shipped out. {#ye3540ad}
 
 幅または高さが TeX に扱える最大の寸法を超えるような巨大なページを
 dvi ファイルに送り出そうとした場合に現れるエラーメッセージです．
@@ -334,8 +308,7 @@ dvi ファイルに送り出そうとした場合に現れるエラーメッセ�
 そのような場合には適当に“分割出力”するように細工してください
 （そのようなパッケージもあるようです）．
 
-! I can't find file \`<em>filename</em>&#39;.
-: &nbsp;<br>
+#### ! I can't find file \`<em>filename</em>&#39;. {#pbdf0136}
 
 （TeX のプリミティブの）\input によってファイル <em>filename</em> を読み込む際に，
 このファイルを見つけることができなかった場合に現れるエラーメッセージです．<br>
@@ -344,15 +317,13 @@ dvi ファイルに送り出そうとした場合に現れるエラーメッセ�
 （カレント・ディレクトリあるいはファイル texmf.cnf の
 TEXINPUTS.platex などで指定されるディレクトリ）にあるかどうかをチェックしてください．
 
-! I can't go on meeting you like this.
-: &nbsp;<br>
+#### ! I can't go on meeting you like this. {#e8826183}
 
 『TeX ブック』によれば，
 “このエラーが表示されると TeX はハングしてしまう．TeX を修正してもう一度実行してほしい．”
 とのことです．
 
-! I can't write on file \`<em>filename</em>&#39;.
-: &nbsp;<br>
+#### ! I can't write on file \`<em>filename</em>&#39;. {#ed64dd8a}
 
 dvi ファイル・log ファイルあるいは \openout でオープンするファイル
 <em>filename</em> が（リードオンリーになっているといった理由で）
@@ -364,15 +335,13 @@ dvi ファイル・log ファイルあるいは \openout でオープンする�
 保存しておくべき組版結果である，といった理由でリードオンリーにしているのでしたら，
 別のディレクトリに退避させてください．
 
-! Illegal magnification has been changed to 1000 (<em>magnification</em>).
-: &nbsp;<br>
+#### ! Illegal magnification has been changed to 1000 (<em>magnification</em>). {#ab26ac22}
 
 \mag の値として不適切な値を指定した場合，あるいは
 \font\somefont=cmr10 scaled 40000 のような具合に不適切な拡大率をに指定した場合に現れるエラーメッセージです．<br>
 → \mag の値または scaled 指定の値を 1 以上 32768 以下の値に修正してください．
 
-! Illegal math \discretionary.
-: &nbsp;<br>
+#### ! Illegal math \discretionary. {#v3ba2100}
 
 数式中で（$\discretionary{-}{}{-}$ のような具合に）
 “ノンブレーク・テキスト”（\discretionary の第 3 引数）が空文字列ではないような
@@ -381,8 +350,7 @@ dvi ファイル・log ファイルあるいは \openout でオープンする�
 このエラーを引き起こした \discretionary の
 “ノンブレーク・テキスト”部分だけを残してください．
 
-! Illegal parameter number in definition of \somecs.
-: &nbsp;<br>
+#### ! Illegal parameter number in definition of \somecs. {#l5997ac1}
 
 マクロ \somecs の定義の置換テキスト部分に，
 \somecs の引数になっていない番号をもった“引数”が含まれる場合，
@@ -392,8 +360,7 @@ dvi ファイル・log ファイルあるいは \openout でオープンする�
 （\def\somecs と開き括弧の間）に追加するか，
 置換テキスト内の不要な“引数”を削除してください．
 
-! Illegal unit of measure (<em>message</em>).
-: &nbsp;<br>
+#### ! Illegal unit of measure (<em>message</em>). {#eccdfcd2}
 
 寸法・グルーの単位に“TeX が理解できない”ものを与えた場合に現れるエラーメッセージです．
 <em>message</em> には次のものがあります．
@@ -404,17 +371,14 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 → 寸法（あるいは無限大）の単位が正しいものであるかどうかをチェックしてください．
 なお，zw，zh はオリジナルの TeX では使えないことにも注意してください．
 
-! Improper \`at' size (<em>size</em>pt), replaced by 10pt.
-: &nbsp;<br>
+#### ! Improper \`at' size (<em>size</em>pt), replaced by 10pt. {#p51e3a76}
 
 \font\somefont=cmr10 at 3000pt のような具合に不適切な拡大率を指定した場合に現れるエラーメッセージです．<br>
 → at 指定で与える寸法は，2048pt 未満の正の寸法にしてください．
 
-! Improper alphabetic constant.
-: &nbsp;
+#### ! Improper alphabetic constant. {#l95026e8}
 
-! Improper alphabetic or KANJI constant.
-: ~
+#### ! Improper alphabetic or KANJI constant. {#qf7ed741}
 
 \`\a のような，“バッククォート＋ 1 文字コマンド”の形式での数値（文字コード）
 の指定を行う際に，バッククォートのあとに（\relax のような）
@@ -423,15 +387,13 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 → 数値の記述が正しいかどうかを確認してください．
 “\`\a”のあとに入れるべき空白文字を入れ忘れている，ということもよくあります．
 
-! Improper discretionary list.
-: &nbsp;<br>
+#### ! Improper discretionary list. {#q208d427}
 
 \discretionary{}{}{\hskip10pt} のように，
 \discretionary の指定に不適切な項目が含まれる場合に現れるエラーメッセージです．<br>
 → \discretionary の記述を（基本的には文字および \kern からなるように）修正してください．
 
-! Improper \halign inside $$'s.
-: &nbsp;<br>
+#### ! Improper \halign inside $$'s. {#zabb4a53}
 
 ディスプレイ数式中の \halign がディスプレイ数式の先頭にない場合に現れるエラーメッセージです．<br>
 → ディスプレイ数式の開始の $$ と \halign の間に，
@@ -439,24 +401,21 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 特に，数式中では {} も“サブ数式”としてそこに存在するので，
 “$${}\halign{...}$$”という記述を行っただけでもこのエラーが生じます． <!-- ある fd ファイルに余分な括弧があったためにこのエラーが生じた， --> <!-- という話は TeX Q&A で出ていました． -->
 
-! Improper \hyphenation will be flushed.
-: &nbsp;<br>
+#### ! Improper \hyphenation will be flushed. {#qd3f70ee}
 
 \hyphenation の引数の中に通常の文字以外の（\relax のような）ものが含まれる場合に現れるエラーメッセージです．<br>
 → \hyphenation の引数を修正してください．
 アクセント記号つき文字などを含める必要がある場合には，適宜 ^^xx（xx は小文字の
 16 進数字）の形式を用いてください．
 
-! Improper \prevdepth.
-: &nbsp;<br>
+#### ! Improper \prevdepth. {#t5384d50}
 
 \prevdepth の値を水平モード（段落内など）の箇所あるいは \write
 の引数中で読み取ろうとしたときに現れるエラーメッセージです．<br>
 → 段落を終了させた上で \prevdepth を用いるか，
 適宜出力ルーチンを呼び出して出力ルーチン内で \box255 の depth を調べてください．
 
-! Improper \setbox.
-: &nbsp;<br>
+#### ! Improper \setbox. {#s7b8cb2e}
 
 \setbox を用いることができない箇所で \setbox を用いた場合に現れるエラーメッセージです．
 具体的には，“\accent と \accent をつける対象となる文字の間”，
@@ -467,15 +426,13 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 といった具合に配列の最後の行を取得する必要がある場合には，
 垂直ボックスの中で作業を行ってください．
 
-! Improper \spacefactor.
-: &nbsp;<br>
+#### ! Improper \spacefactor. {#p4656461}
 
 \spacefactor を垂直モード（段落間など）の箇所あるいは \write
 の引数中で読み取ろうとしたときに現れるエラーメッセージです．<br>
 → 必要に応じて，\leavevmode などで段落を開始してから \spacefactor を読みとってください．
 
-! Incompatible direction list can't be unboxed.
-: &nbsp;<br>
+#### ! Incompatible direction list can't be unboxed. {#o789d612}
 
 pTeX では，縦組みボックスの中身を横組みモードの箇所で（\unhbox，\unvbox で）
 取り出すことはできませんし，横組みボックスの中身を縦組みモードの箇所で
@@ -484,8 +441,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 → 中身を取り出すボックスと同じ組版方向の箇所で \unhbox，\unvbox
 を用いるように文書の記述あるいはマクロ定義を変更してください．
 
-! Incompatible glue units.
-: &nbsp;<br>
+#### ! Incompatible glue units. {#s0307fc1}
 
 \hskip\thinmuskip という記述を行った場合のように，
 通常のグルーを必要とするところに数式グルーを与えるか，
@@ -494,16 +450,14 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 数式グルーの“実寸”が必要な場合には（\fontdimen パラメータを読み取るなどして）
 数式グルーと通常のグルーの換算を行うようなマクロを用意することになるでしょう．
 
-! Incompatible list can't be unboxed.
-: &nbsp;<br>
+#### ! Incompatible list can't be unboxed. {#l960d989}
 
 \unhbox を垂直ボックスに適用したり，\unvbox を垂直ボックスに適用した場合に現れるエラーメッセージです．
 また，\unhbox を数式中で用いた場合にも現れます．<br> <!-- \unvbox を数式中で用いると別のエラーが生じます． -->
 → \unhbox と \unvbox は，中身を取り出すボックスに応じて選んでください
 （水平ボックスには \unhbox を，垂直ボックスには \unvbox を用いてください）．
 
-! Incompatible magnification (<em>magnification</em>).
-: &nbsp;<br>
+#### ! Incompatible magnification (<em>magnification</em>). {#bd6061eb}
 
 \mag による拡大（あるいは縮小）の指定が有効になったのちに，
 さらに \mag を用いて別の拡大率を指定したときに現れるエラーメッセージです．<br>
@@ -515,8 +469,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 > “true つきの寸法を計算するとき”，“dvi ファイルにすべて出力したとき”
 > に調べられます．
 
-! Incomplete \somecs; all text ignored after line <em>lineno</em>.
-: &nbsp;<br>
+#### ! Incomplete \somecs; all text ignored after line <em>lineno</em>. {#p5fb6bd0}
 
 \somecs（この場合は，\ifx などの条件処理に関するプリミティブ）
 に対応する条件処理が終了していないか，
@@ -530,8 +483,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 \protect を付け忘れた結果，予定外の条件処理が行われた”といったことが考えられますが，
 いずれにせよ，エラーを引き起こした記述を見直すことになります．
 
-! Infinite glue shrinkage found in a paragraph.
-: &nbsp;<br>
+#### ! Infinite glue shrinkage found in a paragraph. {#sc1d84e5}
 
 \hss のような無限大の縮小度をもったグルーを段落内（の行分割可能な箇所）
 で用いた場合に現れるエラーメッセージです．<br>
@@ -540,8 +492,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 使う必要があれば，“幅を縮める範囲”をボックスに入れて，
 そのボックスの中で \hss などを用いてください．
 
-! Infinite glue shrinkage found in box being split.
-: &nbsp;<br>
+#### ! Infinite glue shrinkage found in box being split. {#ge274b70}
 
 \vsplit で分割しようとしているボックスの中に，
 無限大の縮小度を持ったグルーが存在する場合に現れるエラーメッセージです．<br>
@@ -552,8 +503,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 > ボックスの中での一時的な多段組の処理の際にも \vsplit が用いられることがあるので，
 > 注意が必要です．
 
-! Infinite glue shrinkage found on current page.
-: &nbsp;<br>
+#### ! Infinite glue shrinkage found on current page. {#f39fc300}
 
 現在作成中のページ上に無限大の縮小度をもったグルー
 （\vss など）が現れた場合のエラーメッセージです．<br>
@@ -564,8 +514,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 > レイアウト上（TeX 自身の処理上も）問題があります．
 > そのため，無限大の縮小度をもったグルーを用いても構わない箇所は制限されています．
 
-! Infinite glue shrinkage inserted from \skip<em>number</em>.
-: &nbsp;<br>
+#### ! Infinite glue shrinkage inserted from \skip<em>number</em>. {#ebcf41b1}
 
 番号 <em>number</em> の \insert に付随するグルー（\skip<em>number</em>）
 が無限大の縮小度をもったグルーを現在のページに追加した場合に現れるエラーメッセージです．
@@ -574,8 +523,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 → \insert に付随するグルー（典型的なものとしては \skip\footins があります）
 の縮小度は必ず有限の値にしてください．
 
-! Insertions can only be added to a vbox.
-: &nbsp;<br>
+#### ! Insertions can only be added to a vbox. {#oa619081}
 
 ある番号（<em>n</em> とします）の \insert を用いた際に，
 \box <em>n</em> にすでに水平ボックスが収められていた場合に現れるエラーメッセージです．
@@ -593,36 +541,31 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 → マクロ定義を見直して，
 \insert に用いるボックス・レジスタには常に垂直ボックスが収められているように変更してください．
 
-! Interruption.
-: &nbsp;<br>
+#### ! Interruption. {#bd441480}
 
 （CTRL+C などによって）処理を中断したときに現れるエラーメッセージです．<br>
 →単に \[ENTER\] などによって処理を続行させるか，“x”で処理を中止させればよいでしょう．
 
-! Invalid code (<em>code</em>), should be at most 16777215.
-: &nbsp;<br>
+#### ! Invalid code (<em>code</em>), should be at most 16777215. {#y8f2e722}
 
 \delcode を用いて何らかの文字の区切り記号コードを設定する場合に，
 区切り記号コードとして不適切な値を指定した場合に現れるエラーメッセージです．<br>
 → メッセージに従って 16777215（＝ "FFFFFF）以下の値を設定してください．
 
-! Invalid code (<em>code</em>), should be in the range 0..<em>max code</em>.
-: &nbsp;<br>
+#### ! Invalid code (<em>code</em>), should be in the range 0..<em>max code</em>. {#caa08d30}
 
 ある文字に対して \catcode，\mathcode，\lccode，\lccode，\sfcode
 を設定する場合に，不適切な値を指定したときに現れるエラーメッセージです．<br>
 → エラーメッセージに現れている範囲（0 以上 <em>max code</em> 以下）の範囲の値を指定してください．
 
-! Leaders not followed by proper glue.
-: &nbsp;<br>
+#### ! Leaders not followed by proper glue. {#sa11c7a0}
 
 \leaders/\clearders/\xleaders に与えるグルーの指定が正しくない場合に現れるエラーメッセージです．
 グルーの自然長・伸縮度の記述（単位など）が正しくない場合だけでなく，
 “\leaders\hbox{.}100pt”のような具合に \hskip なのか
 \vskip なのかの指定を忘れた場合にもこのエラーが生じます．<br>
 
-! Limit controls must follow a math operator.
-: &nbsp;<br>
+#### ! Limit controls must follow a math operator. {#j4e6cc8c}
 
 \limits，\nolimits，\displaylimits
 を用いた添字のつき方の設定を大型演算子以外に適用した場合に現れるエラーメッセージです．<br>
@@ -630,8 +573,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 大型演算子ではないものの上下に添字をつけたい場合には，
 amsmath パッケージが提供する \overset，\underset を用いるとよいでしょう．
 
-! Math formula deleted: Insufficient extension fonts.
-: &nbsp;<br>
+#### ! Math formula deleted: Insufficient extension fonts. {#pd68dd5d}
 
 family 3（数学拡張フォント）として用いるフォントに必要な
 \fontdimen パラメータ（13 個）が備わっていない場合に現れるエラーメッセージです．
@@ -640,8 +582,7 @@ LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
 → 数式用フォントの設定を見直して，largesymbols グループ
 （family 3）に用いるフォントを適切なものに変更してください．
 
-! Math formula deleted: Insufficient symbol fonts.
-: &nbsp;<br>
+#### ! Math formula deleted: Insufficient symbol fonts. {#re4b93ce}
 
 family 2（数式用記号）として用いるフォントに必要な
 \fontdimen パラメータ（22 個）が備わっていない場合に現れるエラーメッセージです．
@@ -650,8 +591,7 @@ LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
 → 数式用フォントの設定を見直して，symbols グループ
 （family 2）に用いるフォントを適切なものに変更してください．
 
-! Misplaced <em>something</em>.
-: &nbsp;<br>
+#### ! Misplaced <em>something</em>. {#yde365f6}
 
 配列（表）に関する各種のプリミティブあるいは文字 &amp;
 の位置が適切ではない場合に現れるエラーメッセージです．<br>
@@ -664,8 +604,7 @@ LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
 
 その場合には，とりあえず \multicolumn の使用法が正しいかどうかをチェックしてみてください．
 
-! Missing # inserted in alignment preamble.
-: &nbsp;<br>
+#### ! Missing # inserted in alignment preamble. {#a2e95aa5}
 
 配列のプリアンブルでは，最初の &amp; の前，&amp; どうしの間，
 最後の &amp; と \cr の間の各々には原則として # がちょうど 1 個存在しなければなりません
@@ -675,8 +614,7 @@ LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
 LaTeX の \\@mkpream のように，# の代わりに \\@sharp の類を用いている場合には，
 プリアンブル部分を実際に使用する直前に \\@sharp（に相当するもの）を # のコピーにすることを忘れないでください．
 
-! Missing $ inserted.
-: &nbsp;<br>
+#### ! Missing $ inserted. {#y19836ed}
 
 数式ではない箇所で数式用の記述（例えば，\_（下添字の指定），\alpha（数式用文字））を用いた場合，
 あるいはインライン数式が終了しないまま段落の終端に到達したような場合に現れるエラーメッセージです．<br>
@@ -684,39 +622,33 @@ LaTeX の \\@mkpream のように，# の代わりに \\@sharp の類を用い�
 また，文字 \_ などはそのままでは出力できず，\\\_ のように書き換えることになる，
 という点にも注意してください．
 
-! Missing $$ inserted.
-: &nbsp;<br>
+#### ! Missing $$ inserted. {#s9be3edc}
 
 ある種のディスプレイ数式の終端の $$ が欠けている場合（例えば，
 $$\halign{#\cr} のような記述を行った場合）に現れるエラーメッセージです．<br>
 → ディスプレイ数式の終端の \\\] などを適切に補ってください．
 
-! Missing { inserted.
-: &nbsp;<br>
+#### ! Missing { inserted. {#ub136c4e}
 
 開き括弧が必要であるにもかかわらず，開き括弧が存在しない箇所が現れた場合のエラーメッセージです．
 例えば，“\hbox a”や“\def\a a}”のような記述を行うとこのメッセージが現れます．<br>
 → エラーが生じた箇所の記述を見直し，必要な括弧を補ってください．
 
-! Missing } inserted.
-: &nbsp;<br>
+#### ! Missing } inserted. {#s46b54db}
 
 閉じ括弧と開き括弧の対応がとれていない場合に現れるエラーメッセージ（のひとつ）です．<br>
 → 閉じ括弧と開き括弧の対応をチェックしてください．
 {...\endgroup のような記述が行われている可能性もあります．
 
-! Missing = inserted for \ifdim.
-: &nbsp;
+#### ! Missing = inserted for \ifdim. {#pda21804}
 
-! Missing = inserted for \ifnum.
-: ~
+#### ! Missing = inserted for \ifnum. {#q1246b30}
 
 \ifnum または \ifdim による数値または寸法の比較の際に，
 比較される 2 個の数値・寸法の間に等号あるいは不等号が存在しない場合に現れるエラーメッセージです．<br>
 → 比較される 2 個の数値・寸法の間に適切な等号または不等号を追加してください．
 
-! Missing control sequence inserted.
-: &nbsp;<br>
+#### ! Missing control sequence inserted. {#wa30c8f7}
 
 \def a{...} のような具合に \def，\gdef
 の類の直後に定義されるべきコマンドまたはアクティブ文字が存在しない場合に現れるエラーメッセージです．<br>
@@ -725,8 +657,7 @@ $$\halign{#\cr} のような記述を行った場合）に現れるエラーメ�
 の第 1 引数は（再）定義するコマンドになることに注意してください
 （\newcommand{somecs}{...} ではなく，\newcommand{\somecs}{...} になります）．
 
-! Missing \cr inserted.
-: &nbsp;<br>
+#### ! Missing \cr inserted. {#q5bb7504}
 
 配列（表）の個々の行（\valign の場合には列）の終端となる \cr あるいは \crcr
 が欠けている場合に現れるエラーメッセージ（のひとつ）です．
@@ -734,8 +665,7 @@ $$\halign{#\cr} のような記述を行った場合）に現れるエラーメ�
 → 配列（表）の記述をチェックして，必要な \cr（LaTeX の表作成環境・
 ディスプレイ数式環境を用いている場合には \\\）を補ってください．
 
-! Missing delimiter (. inserted).
-: &nbsp;<br>
+#### ! Missing delimiter (. inserted). {#gc0e8688}
 
 \left，\right の直後のように区切り記号（括弧類）
 を必要とする箇所に区切り記号が存在しない場合に現れるエラーメッセージです．<br>
@@ -751,8 +681,7 @@ $$\halign{#\cr} のような記述を行った場合）に現れるエラーメ�
 
 という具合になります．
 
-! Missing \endcsname inserted.
-: &nbsp;<br>
+#### ! Missing \endcsname inserted. {#kbe7795f}
 
 \csname と \endcsname の間に（\relax のような）
 展開できないコマンドが現れた場合のエラーメッセージです．<br>
@@ -762,16 +691,14 @@ $$\halign{#\cr} のような記述を行った場合）に現れるエラーメ�
 ユーザ定義の（あるいは何らかのパッケージで提供される）
 マクロの定義に不備があると思われます．
 
-! Missing \endgroup inserted.
-: &nbsp;<br>
+#### ! Missing \endgroup inserted. {#jaf66b69}
 
 \begingroup と \endgroup の対応がとれていない場合に現れるエラーメッセージ（のひとつ）です．
 例えば，$\begingroup $ といった記述を行うとこのエラーが生じます．<br>
 → \begingroup と \endgroup の対応をチェックしてください．
 LaTeX の場合には，環境の開始・終了の対応がおかしくなっている，という可能性もあります．
 
-! Missing font identifier.
-: &nbsp;<br>
+#### ! Missing font identifier. {#i99790dd}
 
 \fontname，\fontdimen <em>number</em>（<em>number</em> は番号）
 の直後のようなフォント識別子を必要とする箇所にフォント識別子
@@ -779,30 +706,26 @@ LaTeX の場合には，環境の開始・終了の対応がおかしくなっ�
 → エラーが生じた箇所の記述をチェックして，適切なフォント識別子または
 \font（\jfont，\tfont）を与えてください．
 
-! Missing number, treated as zero.
-: &nbsp;<br>
+#### ! Missing number, treated as zero. {#rb4318d6}
 
 数値あるいは寸法・グルーが必要な箇所に然るべき値が与えられなかった場合に現れるエラーメッセージ
 （のうちのひとつ）です．<br>
 → エラーを引き起こした箇所で与えた数値などが正しいかどうかをチェックしてください． <!-- また，LaTeX のカウンタの値を 10 進表記していることを仮定しているようなマクロを用いると， --> <!-- カウンタを文字列化する際の形式を \alph などに変更した際にこのエラーが生じる， --> <!-- といったことも考えられます． -->
 
-! Missing \right. inserted.
-: &nbsp;<br>
+#### ! Missing \right. inserted. {#tbe1d435}
 
 \left に対応する \right がない場合に現れるエラーメッセージです．<br>
 → 適宜 \right を補うか，不要な \left を削除してください．
 なお，ディスプレイ数式の記述では，\left と \right を別の行に分けて配置することはできないので，
 ダミーの \right. を補うか，\biggl/\biggr などを用いて書き換えてください．
 
-! Missing \`to' inserted.
-: &nbsp;<br>
+#### ! Missing \`to' inserted. {#q14fce01}
 
 \vsplit<em>box number</em> to <em>size</em> または \read<em>number</em> to \somecs
 という記述において to を欠いている場合に現れるエラーメッセージです．<br>
 → 必要な to を補ってください．
 
-! No room for a new \somecs.
-: &nbsp;<br>
+#### ! No room for a new \somecs. {#ke4454a5}
 
 レジスタなどの割り当ての際に，\somecs
 に対応する項目を割り当てる余地がない場合に現れるエラーメッセージです．<br>
@@ -812,8 +735,7 @@ LaTeX の場合には，環境の開始・終了の対応がおかしくなっ�
 また，グルーピングを工夫することによって同じレジスタを使いまわすこともできます
 （…これは，一般的なプログラミングでは“やるべきではない”ことに属しますが…）．
 
-! Nonletter.
-: &nbsp;<br>
+#### ! Nonletter. {#u3a117b1}
 
 \patterns の引数に，数字あるいはピリオド以外に \lccode の値が 0 でないような文字
 （すなわち，“小文字化できない”文字）が含まれている場合，
@@ -821,8 +743,7 @@ LaTeX の場合には，環境の開始・終了の対応がおかしくなっ�
 → \patterns の引数を修正するところですが，むしろ問題となっている \patterns
 を含むファイルが壊れている，という可能性を疑った方がよいかもしれません．
 
-! Not a letter.
-: &nbsp;<br>
+#### ! Not a letter. {#r8b0a930}
 
 \hyphenation を用いて登録するハイフネーションの例外辞書の項目に，
 ハイフン以外に \lccode の値が 0 でないような文字
@@ -834,8 +755,7 @@ LaTeX の場合には，環境の開始・終了の対応がおかしくなっ�
 （\lccode\`\\@=\`\\@ のような具合に，
 \lowercase を施しても変わらないように設定すればよいでしょう）．
 
-! Number too big.
-: &nbsp;<br>
+#### ! Number too big. {#sc226bf8}
 
 10 進，8 進，16 進表記の文字列として与えられた数値を読み取る際に，
 数値の絶対値が 2147483647 を超えると判明した場合に現れるエラーメッセージです．<br>
@@ -843,8 +763,7 @@ LaTeX の場合には，環境の開始・終了の対応がおかしくなっ�
 本当に桁数の多い数値を扱う必要があれば，
 TeX の外部で計算を行って計算結果のみを TeX 文書に記述するのがよいでしょう． <!-- もちろん，多倍長計算用のマクロを作ることは可能ですが， --> <!-- うまく書かないと“遅すぎて”使いものにならないと思われます． -->
 
-! OK.
-: &nbsp;<br>
+#### ! OK. {#ba678cf7}
 
 実は，これはエラーメッセージではありません．
 TeX を対話的に使用しているときに
@@ -852,8 +771,7 @@ TeX を対話的に使用しているときに
 その際に現れるメッセージです．
 もちろん，単に \[ENTER\] か何かでスキップして構いません．
 
-! Only one # is allowed per tab.
-: &nbsp;<br>
+#### ! Only one # is allowed per tab. {#eb7cb95b}
 
 配列のプリアンブルでは，最初の &amp; の前，&amp; どうしの間，
 最後の &amp; と \cr の間の各々には原則として # がちょうど 1 個存在しなければなりません
@@ -861,8 +779,7 @@ TeX を対話的に使用しているときに
 この規則に反した余分な # がある場合に現れるエラーメッセージです．<br>
 → 配列のプリアンブルの記述を見直し，不要な # を削除するか必要な &amp; を追加してください．
 
-! Output loop---<em>number</em> consecutive dead cycles.
-: &nbsp;<br>
+#### ! Output loop---<em>number</em> consecutive dead cycles. {#deb3189b}
 
 最後に \shipout（完成したページの dvi ファイルへの出力）を行ってから，
 <em>number</em>（\maxdeadcycles の値）回の“\shipout を伴わない出力ルーチン”が用いられた，
@@ -872,8 +789,7 @@ TeX を対話的に使用しているときに
 出力ルーチンでは正しい処理が行われている場合には，
 \maxdeadcycles の値を増やしてください．
 
-! Output routine didn't use all of \box255.
-: &nbsp;<br>
+#### ! Output routine didn't use all of \box255. {#j7988a86}
 
 出力ルーチンの終了時に \box255 が空（無効，void）でない場合に現れるエラーメッセージです．<br>
 → 出力ルーチン内での処理を変更して，\box255 の中身をすべて用いるようにしてください
@@ -881,14 +797,12 @@ TeX を対話的に使用しているときに
 その場合には別のボックス・レジスタに保存するなどして
 \box255 には残さないようにしてください）．
 
-! Paragraph ended before \somecs was complete.
-: &nbsp;<br>
+#### ! Paragraph ended before \somecs was complete. {#p50eb3f2}
 
 \label などの引数が複数段落にわたることがないコマンドの引数を読み取っている間に段落が終了した場合に現れるエラーメッセージです．
 → 問題となっている箇所で用いたコマンドの引数の個数（または引数を囲む括弧の形式）をチェックしてください．
 
-! Parameters must be numbered consecutively.
-: &nbsp;<br>
+#### ! Parameters must be numbered consecutively. {#p3ade282}
 
 マクロ定義の際に引数の指定が連番になっていない場合，例えば，
 \def\x#1#3{...} あるいは \def\x#1#2#1{...} のような定義を行った場合，
@@ -905,29 +819,24 @@ TeX を対話的に使用しているときに
 のような具合に“可変な書式指定文字列”をいったん取得したのち，
 それを用いて書式指定つきマクロをその場で定義して用いる，という方法が使えます．
 
-! Patterns can be loaded only by INITEX.
-: &nbsp;<br>
+#### ! Patterns can be loaded only by INITEX. {#jc2d6e72}
 
 文字通り，\patterns によるハイフネーションパターンの登録は initex（-ini オプション使用時）
 にしか行えない，ということです．
 必要があれば，新しいフォーマットファイルを作成してください．
 
-! Please use \mathaccent for accents in math mode.
-: &nbsp;<br>
+#### ! Please use \mathaccent for accents in math mode. {#h69843c8}
 
 $\\^a$ のようにテキスト（非数式部分）用のアクセント記号用コマンドを数式中で用いた場合に現れるエラーメッセージです．<br>
 → この例では \\^ の代わりに \hat を用いる，という具合に数式用アクセントのためのコマンドを用いてください．
 
-! \scriptfont <em>number</em> is undefined (character <em>letter</em>).
-: &nbsp;
+#### ! \scriptfont <em>number</em> is undefined (character <em>letter</em>). {#h83f48d2}
 
-! \scriptscriptfont <em>number</em> is undefined (character <em>letter</em>).
-: ~
+#### ! \scriptscriptfont <em>number</em> is undefined (character <em>letter</em>). {#i998c5c2}
 
 \scriptfont または \scriptscriptfont を \textfont に変えたメッセージを参照してください．
 
-! TeX capacity exceeded, sorry \[<em>type</em>=<em>given size</em>\].
-: &nbsp;<br>
+#### ! TeX capacity exceeded, sorry \[<em>type</em>=<em>given size</em>\]. {#s68f7998}
 
 TeX が作業領域として用意したメモリを使い果たした場合に現れるエラーメッセージです．
 <em>type</em> は何を使い果たしたかを表し，<em>given size</em> は <em>type</em> に対して与えられている領域の大きさです．
@@ -973,8 +882,7 @@ semantic nest size
 text input levels
 : （プリミティブの）\input で読み込まれるファイル内でさらに \input を用いる場合の \input を多重にする段階数（など）の上限（max_in_open）
 
-: ~
-
+:
 →このエラーが生じた場合は，
 まず，文書自体の記述あるいは文書中で用いられているマクロの定義が適切であるかどうかを確認してください．
 例えば，grouping levels の制限に引っかかる場合には，
@@ -1004,8 +912,7 @@ text input levels
 > のような例でもこのエラーを引き起こします（この例では \fi の前の \x に
 > \expandafter を前置すればエラーを回避できます）． <!-- pool_size の制限に引っかかる場合には，“string pool overflow [... bytes]” --> <!-- のようなメッセージが出ることもあるようです． --> <!-- nest_size の制限に引っかかる場合，nest_size を大きくするよりも， --> <!-- 文書の記述あるいはマクロの定義を見直すほうがよいでしょう． --> <!-- 実際，ボックスというのはひとつのグループをなすので，nest_size の制限だけでなく --> <!-- “grouping levels”（こちらは固定(?)）の制限も考慮しなければなりません． -->
 
-! Text line contains an invalid character.
-: &nbsp;<br>
+#### ! Text line contains an invalid character. {#o07b93cd}
 
 文書中に不正な文字（カテゴリーコードが 15 の文字）が存在する場合に現れるエラーメッセージです．<br>
 → 問題となっている文字（エラーメッセージの次の行に含まれています）を削除するか，
@@ -1014,8 +921,7 @@ TeX 文書中で用いても構わない記述で書き換えてください．
 “不正な文字”となっているので，テキストエディタ等の設定に注意して不用意に
 EOF コードを追加しないように注意してください．
 
-! \textfont <em>number</em> is undefined (character <em>letter</em>).
-: &nbsp;<br>
+#### ! \textfont <em>number</em> is undefined (character <em>letter</em>). {#ofd346e5}
 
 family 番号  <em>number</em> のテキストスタイル用の数式フォント（\textfont <em>number</em>）
 が設定されていない（問題となっている数式では文字 <em>letter</em> が該当），
@@ -1024,15 +930,13 @@ family 番号  <em>number</em> のテキストスタイル用の数式フォン�
 もし，このエラーが生じたら，“\textfont <em>number</em> を直接設定する”か，
 NFSS2 の枠組みに従って数式用のフォントの設定をやり直すとよいでしょう．
 
-! This can't happen (<em>where</em>).
-: &nbsp;<br>
+#### ! This can't happen (<em>where</em>). {#ref71c83}
 
 『TeX ブック』によれば，
 “使用中の TeX に間違いがある．TeX をインストールした人に厳しく文句を言おう．”
 とのことです（メッセージの通り，起こり得ない状況なのでしょう）．
 
-! Too late for \patterns.
-: &nbsp;<br>
+#### ! Too late for \patterns. {#t94a700c}
 
 いったん \dump されたフォーマットファイルに対してさらに別の記述を追加して新たなフォーマットファイルを作成するとき，
 \patterns によってハイフネーションパターンを追加しようとした場合に現れるエラーメッセージです．
@@ -1046,43 +950,37 @@ tex -ini "&tex" zzz
 → ハイフネーションパターンの追加を行わなければならないような変更が必要な場合には，
 フォーマットファイル全体を一度に作成してください．
 
-! Too many }'s.
-: &nbsp;<br>
+#### ! Too many }'s. {#ae9efb9f}
 
 開き括弧 { と閉じ括弧 } の対応がとれていない場合に現れるエラーメッセージ（のひとつ）で，
 単に閉じ括弧のほうが多い（というだけの情報しかない）場合に現れます．<br>
 → 不要な } を削除するか，必要な { を補ってください．
 
-! Unable to read an entire line---bufsize=<em>size</em>.
-: &nbsp;<br>
+#### ! Unable to read an entire line---bufsize=<em>size</em>. {#a153d202}
 
 ファイル中のひとつの行が長すぎたため行全体を読み込めなかった，
 ということです（1 段落＝1 行形式のデータを用いると，まれに起こります）．<br>
 → ファイル texmf.cnf の中の buf_size の値を増やしてください．
 
-! Unbalanced output routine.
-: &nbsp;<br>
+#### ! Unbalanced output routine. {#nac37bed}
 
 開き括弧と閉じ括弧の対応がとれていない出力ルーチンを用いた場合に現れるエラーメッセージ（のひとつ）です．
 例えば，\output{\shipout\box255 \ifnum0=\`{\fi}} のような設定を行うと，このエラーが生じます．<br>
 → 出力ルーチンの記述を見直し，括弧の対応がとれているように書き換えてください．
 
-! Unbalanced write command.
-: &nbsp;<br>
+#### ! Unbalanced write command. {#x0af51ed}
 
 \immediate\write16{\ifnum0=\`{\fi}} のような，
 開き括弧と閉じ括弧の対応がとれていない \write を用いた場合に現れるエラーメッセージ（のひとつ）です．<br>
 → \write の引数を見直し，括弧の対応がとれているように書き換えてください．
 
-! Undefined control sequence.
-: &nbsp;<br>
+#### ! Undefined control sequence. {#b38c87ce}
 
 未定義のコマンドを使用した場合に現れるエラーメッセージです．<br>
 → 用いているコマンドの名称が正しいかどうかを確認してください．
 正しければ，適当なパッケージを読み込む，といった方法でそのコマンドの定義を与えてください．
 
-! Use of \somecs doesn't match its definition.
-: &nbsp;<br>
+#### ! Use of \somecs doesn't match its definition. {#c16515b9}
 
 例えば，\def\――{\makebox\[2zw\]{―\kern-.5zw ―\kern-.5zw ―}}のように定義された
 \―（\―― の 2 番目の―は \― の書式指定文字列です）を単に \― として用いた場合などの，
@@ -1090,15 +988,13 @@ tex -ini "&tex" zzz
 → エラーを引き起こしたコマンド（およびその引数）の使用法を確認し，
 正しい書式で使用してください．
 
-! \vsplit needs a \vbox.
-: &nbsp;<br>
+#### ! \vsplit needs a \vbox. {#ba9cf86a}
 
 文字通り，垂直ボックスではないボックスを \vsplit で分割しようとしたときに現れるエラーメッセージです．<br>
 → マクロの定義（あるいは文書中の記述）を見直して，
 \vspilt で分割しようとするボックスが垂直ボックスになるように変更してください．
 
-! You already have nine parameters.
-: &nbsp;<br>
+#### ! You already have nine parameters. {#i85e3d4d}
 
 \def\x#1#2#3#4#5#6#7#8#9#10{...} のように
 10 個以上の引数をもったマクロを定義しようとしたときに現れるエラーメッセージです．<br>
@@ -1117,14 +1013,12 @@ tex -ini "&tex" zzz
 という場合には keyval パッケージを用いて
 “key=value 形式の記述を必要なだけ与える”ように変更するのもよいでしょう．
 
-! You can't dump inside a group.
-: &nbsp;<br>
+#### ! You can't dump inside a group. {#h99ef60d}
 
 文字通り，グループ内で \dump を用いることはできない，ということです．<br>
 → 閉じ忘れているグループについて調べて，適宜 }，\endgroup を補ってください．
 
-! You can't \insert255.
-: &nbsp;<br>
+#### ! You can't \insert255. {#cd5ce9b4}
 
 文字通り，番号 255 は \insert には用いることはできない，ということですが…
 \newinsert で割り当てた番号を \insert
@@ -1132,8 +1026,7 @@ tex -ini "&tex" zzz
 このエラーが生じた場合には，番号 255 を用いた \insert に別の番号を
 （必要があれば \newinsert で割り当ててから）用いてください．
 
-! You can't use a prefix with \`<em>something</em>&#39;.
-: &nbsp;<br>
+#### ! You can't use a prefix with \`<em>something</em>&#39;. {#r884adfb}
 
 \long\hskip10pt のように，\long，\outer，\global を前置しても意味のない記述
 <em>something</em> が \long，\outer，\global の直後に現れた場合のエラーメッセージです．<br>
@@ -1141,23 +1034,20 @@ tex -ini "&tex" zzz
 → この場合，おそらく \long，\outer，\global は不要でしょうから，
 エラーが生じた箇所の \long などを削除してください．
 
-! You can't use \`\hrule&#39; here except with leaders.
-: &nbsp;<br>
+#### ! You can't use \`\hrule&#39; here except with leaders. {#v5c146ff}
 
 \hrule を（\leaders/\clearders/\xleaders を伴わない状態で）
 水平ボックス内などで用いた場合に現れるエラーメッセージです．<br>
 → \hrule を \vrule に変更してください．
 
-! You can't use \`\long&#39; or \`\outer&#39; with \`<em>something</em>&#39;.
-: &nbsp;<br>
+#### ! You can't use \`\long&#39; or \`\outer&#39; with \`<em>something</em>&#39;. {#y67db6a4}
 
 \long あるいは \outer のあとで用いても意味のない項目 <em>something</em>
 （例えば，ただの文字）が \long あるいは \outer
 に続いている場合に現れるエラーメッセージです．<br>
 → 不要な \long，\outer を削除するか，\def，\gdef の類を補ってください．
 
-! You can't use \`\somecs&#39; in <em>mode</em>.
-: &nbsp;<br>
+#### ! You can't use \`\somecs&#39; in <em>mode</em>. {#cf1b15c8}
 
 \\@（LaTeX のデフォルトでは \spacefactor=1000）を段落間で用いた場合のように，
 モード <em>mode</em> の箇所でそのモードでは用いることのできないコマンド
@@ -1165,8 +1055,7 @@ tex -ini "&tex" zzz
 → 必要に応じて“\leavevmode で段落を開始する”，“空白行で段落を終わらせる”，
 “\mbox に入れて数式扱いにするのをやめる”といった対策をとってください．
 
-! You can't use \`<em>something</em>&#39; after \somecs.
-: &nbsp;<br>
+#### ! You can't use \`<em>something</em>&#39; after \somecs. {#tb8a7733}
 
 “\the a”や“\advance\char97...”のように \somecs
 の直後で用いても意味のない項目 <em>something</em> を
