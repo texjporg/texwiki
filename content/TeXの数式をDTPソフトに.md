@@ -71,11 +71,10 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 <table>
 <tbody>
-<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
+<tr><td style="text-align:center"><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
+<tr><td>Illustrator 10.0.3に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustratorから保存したEPS。</td></tr>
 </tbody>
 </table>
-
-| Illustrator 10.0.3に配置したところ。箱しか見えない。| Illustratorから保存したEPS。|  
 
 EPSを作るところまでは上と同じです。
 ただ，このEPSをそのままIllustratorに［ファイル］→［配置...］（「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）すると，「所在不明のフォントは、初期設定のフォントで代用されます。」というメッセージが出て，文字化けします。 
