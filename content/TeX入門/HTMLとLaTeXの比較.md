@@ -18,6 +18,8 @@ HTMLとLaTeXの比較/
 
 ## HTML と LaTeX の比較 {#g8b7bce6}
 
+Webページを記述する際に使われるのが，HTMLとよばれる言語です．LaTeXもHTMLも，「普通のテキストの中に文書整形の命令を埋め込む」という点で共通しており，この2つに対応関係を見ることが出来ます．（したがって，LaTeXを知っている人なら，HTMLを覚えてWebページを書くことも，簡単に出来ると思います．）
+
 HTML と LaTeX には次のような対応関係があります。 
 
 <table>
@@ -25,12 +27,12 @@ HTML と LaTeX には次のような対応関係があります。
 <tr><td><strong>HTML</strong>                  </td><td><strong>LaTeX</strong></td></tr>
 <tr><td rowspan="2">&lt;html&gt;                    </td><td>\documentclass{jarticle}</td></tr>
 <tr><td>または \documentclass{jsarticle} など</td></tr>
-<tr><td>&lt;head&gt;                    </td><td></td></tr>
+<tr><td>&lt;head&gt;                    </td><td>% プリアンブル開始</td></tr>
 <tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td></td></tr>
 <tr><td>&lt;link rel="stylesheet"    </td><td>% スタイルシートに対応するものは</td></tr>
 <tr><td>      type="text/css"     </td><td>% ドキュメントクラスとパッケージ</td></tr>
 <tr><td>      href="hoge.css"&gt;    </td><td>\usepackage{txfonts}</td></tr>
-<tr><td>&lt;/head&gt;                   </td><td></td></tr>
+<tr><td>&lt;/head&gt;                   </td><td>% プリアンブル終了</td></tr>
 <tr><td>&lt;body&gt;                    </td><td>\begin{document}</td></tr>
 <tr><td>                          </td><td></td></tr>
 <tr><td>&lt;h1&gt;...&lt;/h1&gt;              </td><td>\title{題名}</td></tr>
