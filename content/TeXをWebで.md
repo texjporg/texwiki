@@ -19,7 +19,7 @@ pukiwiki: "TeXをWebで"
 
 まずサーバが必要です。
 通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します。
-最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば10万円以下でできます。
+最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます。
 
 通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです。
 これらについては特に手を加える必要はありません。
