@@ -29,13 +29,13 @@ pukiwiki: "ArchiveQandA"
 
 ### TeX本体のエラーメッセージ {#s54a975c}
 
-- <strong>! TeX capacity exceeded, sorry ...</strong>
+- <strong>! TeX capacity exceeded, sorry ...</strong>（[qa:32844](https://okumuralab.org/~okumura/texfaq/qa/32844.html), [qa:32596](https://okumuralab.org/~okumura/texfaq/qa/32596.html)など）
 
 <br>
 
     スタイルファイルやマクロの衝突や不具合で起きることがあるので，使用するスタイルファイルやマクロを再検討すること。
-    本当に足らない場合には，不足すると言われたパラメータの数値が $TEXMF/web2c/texmf.cnf で指定されているので，その数値を大きくする。
-    texmf.cnf でパラメータを大きくしても反映されない場合にはフォーマットファイルを作り直してみる。
+    本当に足らない場合には $TEXMF/web2c/texmf.cnf にあるパラメータの数値を大きくする。大きくしても反映されない場合にはフォーマットファイルを作り直してみる。
+    なお，最近の TeX ではこれらのパラメータは最初から大きなものに設定されている。
 
 ### LaTeXのエラーメッセージ {#m585375b}
 
