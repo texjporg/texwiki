@@ -109,7 +109,7 @@ teTeX ベースのシステムでないなら，他の設定もしなければ�
 まずはスタイルファイルです。
 いずれかの ZIP ファイルを展開してできる psnfss ディレクトリに LaTeX2e
 用の材料が収められています（[CTAN](/CTAN/) の
-[macros/latex/contrib/supported/psnfssx/mathtime](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/supported/psnfssx/mathtime/)
+[macros/latex/contrib/psnfssx/mathtime/](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/psnfssx/mathtime/)
 にも同じものが入っています）。
 ここで次のようにします。
 
