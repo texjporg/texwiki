@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
+- \[041020\]
+    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんのページ (Hyphenation の項目)](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
+
 - \[040929\]（永田善久）
     ギリシア数字の出力に関して greek.ldf にバグがあります。訂正法は[投稿記事\[qa:31769\]参照](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31769.html)
 
@@ -267,3 +270,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     ```
 
     とすることで Type1 の埋め込まれた PDF が作成されます
+
+### もっと本格的に・・・ {#z684b1d0}
+
+もっと沢山の，もっと別の言語を，という場合には，稲垣徹さんの [日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/index.html) のページを参照してください
