@@ -133,7 +133,7 @@ Mac版でも，IllustratorからEPSで保存したものは大丈夫です。 PD
 また，あらかじめWindowsにBaKoMaのComputer Modern TrueTypeフォントなどをインストールしておく必要があります。 
 
 dviout（2002年10月9日以降のもの）では次のようにしてEMF形式でクリップボードにコピーできます。
-まずDisplay→Region→On（ショートカットは Ctrl+\[）にして，Shiftを押しながら左クリックで矩形領域の左上隅，やはりShiftを押しながら右クリックで右下隅を指定します。
+まずDisplay→Region→On（ショートカットは Ctrl+\[ ）にして，Shiftを押しながら左クリックで矩形領域の左上隅，やはりShiftを押しながら右クリックで右下隅を指定します。
 これでFile→Save as image→EMF in clipboard（ショートカットはAlt+FSE）すると，クリップボードにコピーされます。
 これでIllustrator（EMF形式を理解するソフトなら何でも）に貼り付ければOKです。 
 
