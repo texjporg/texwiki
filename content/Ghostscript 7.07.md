@@ -52,12 +52,13 @@ CTAN ミラー，たとえば [Ring Server](http://www.ring.gr.jp/)
 - gnu-gs-fonts-other-6.0.tar.gz
 - jpegsrc.v6b.tar.gz
 
-次のものは [Ring Server](http://www.ring.gr.jp/)
+次のものの Windows 版 (シンボリックリンクを含まないもの) は
+[Ring Server](http://www.ring.gr.jp/)
 の [/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-から入手できるはずです（[ftp://ftp.gyve.org/pub/gs-cjk/](ftp://ftp.gyve.org/pub/gs-cjk/)
-からのミラーです。
-念のため [ここ](http://oku.edu.mie-u.ac.jp/mirror/gs-cjk/)
-にも置いておきます）。
+から入手できます。オリジナルは [gs-cjk](ftp://ftp.gyve.org/pub/gs-cjk/)
+にあります。 Unix 系 OS の場合は
+[ここ](http://oku.edu.mie-u.ac.jp/mirror/gs-cjk/)
+から入手できます。
 
 - adobe-cmaps-200204.tar.gz
 - acro5-cmaps-2001.tar.gz
