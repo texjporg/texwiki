@@ -400,7 +400,8 @@ make
 su -c 'make install'
 ```
 
-を実行すれば、tamagoのインストールと、tamagoでcannaを使うためのパッチが当たります。
+を実行すれば、tamagoのインストールと、tamagoでcannaを使うた
+めのパッチが当たります。
 途中でいろいろ聞かれましたが、全て黙ってEnterキーを押しました。
 
 次に、.emacs をエディタで開き、
