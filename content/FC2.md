@@ -7,11 +7,11 @@ pukiwiki: "FC2"
 
 # FC2
 
-<span style="color:red;background-color:white;">このページは書きかけです。</span>
-
 ## Fedora Core 2 へのインストール {#v03f1475}
 
 Fedora Core 2 を「パーソナルデスクトップ」でインストールして、TeXで日本語が使えるようにするための設定です。
+
+### 目次 {#cba370e7}
 
 ### Yumの設定 {#p1a58a1f}
 
@@ -144,7 +144,7 @@ Transaction(s) Complete
 
 ### ここまでのテスト {#f064671b}
 
-#### ファイルの作成（gedit編） {#e39b751d}
+#### ソースファイルの作成（gedit編） {#e39b751d}
 
 今までUnixやLinuxを使ったことのない人は、こちらがお勧めです。
 
@@ -178,7 +178,7 @@ gedit &
 
 これで、日本語EUCで test.tex というファイルがホームディレクトリに保存されます。
 
-#### ファイルの作成（Emacs編） {#d3f67474}
+#### ソースファイルの作成（Emacs編） {#d3f67474}
 
 これからガリガリTeXで文章を書くぞ、という人は、こちらがお勧めです。
 
@@ -452,4 +452,51 @@ service canna restart
 
 ### AUCTeXのインストール（オプション） {#d924e221}
 
-rpmをインストールします。（まだ）
+GNOME端末で
+
+```
+wget http://ftp.gnu.org/pub/gnu/auctex/auctex-emacs-11.53-1.fedora.noarch.rpm
+```
+
+を実行します。
+
+スーパーユーザになって
+
+```
+rpm -ivh auctex-emacs-11.53-1.fedora.noarch.rpm
+```
+
+を実行します。
+
+.emacs の最後に
+
+```
+;; use AUCTeX
+(require 'tex-site)
+(setq TeX-default-mode 'japanese-latex-mode)
+(setq japanese-TeX-command-default "pTeX")
+(setq japanese-LaTeX-command-default "pLaTeX")
+(setq japanese-LaTeX-default-style "jsarticle")
+(setq TeX-file-extensions '("tex" "sty" "cls" "ltx" "texi" "texinfo" "dtx"))
+(setq kinsoku-limit 10)
+(setq LaTeX-indent-level 4)
+(setq TeX-view-style
+     '(
+       ("." "pxdvi %d")
+       ))
+```
+
+を追加します。
+
+理由は分かりませんが、AUCTeXがプレビューにxdviを呼び出してしまいます。
+とりあえず、スーパーユーザになって
+
+```
+mv /usr/bin/xdvi /usr/bin/xdvi.org
+ln -s /usr/bin/pxdvi /usr/bin/xdvi
+```
+
+を実行すれば、xdviコマンドでも日本語を含むdviファイルを見られるようになります。
+（TeX-view-style が無視されているようです。）
+
+これでAUCTeXが使えるようになります。
