@@ -33,7 +33,7 @@ PostScript は業界標準のページ記述言語です。
 - [GNU Ghostscript 7.05 のインストール方法](http://www.klavis.info/gnugs.html) /
     [Ghostscriptと GSviewのインストール](http://www.klavis.info/gsinst.html) (大友さん)
 
-- [Windows 用 Ghostscript と GSview のインストール](http://forum.nifty.com/fdtp/install/win/gs.htm) (@nifty FTEX)
+- [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm) (トニイ)
 - [Piece de l'Ensemble](http://pop-club.hp.infoseek.co.jp/) (安宅さん &amp; 荒川さん)
     Ghostscript 7.06 や dvipdfmx のインストール情報，AUC TeX，X-Symbol 等々
 
