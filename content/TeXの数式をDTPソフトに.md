@@ -31,7 +31,7 @@ pfb 形式のフォントは TeX に標準で入っています。 cmr10.pfb，c
 
 たとえば次の数式を作ってみましょう。 
 
-![](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg)
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="">
 
 お好きなテキストエディタに次のように打ち込んでください（MacでもWindowsでもLinuxでも何でもかまいません）。 
 
@@ -61,7 +61,7 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 上で作ったEPSファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。 
 
-![](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg)
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="">
 
 上の例では，LaTeXのデフォルトのフォント（Computer Modern）を使いました。 
 
@@ -69,11 +69,13 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 ## Illustratorに配置1 {#q2427dd4}
 
-![](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg)            
-Illustrator 10.0.3に配置したところ。箱しか見えない。
+<table>
+<tbody>
+<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt=""></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt=""></td></tr>
+</tbody>
+</table>
 
-![](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg)
-Illustratorから保存したEPS。  
+| Illustrator 10.0.3に配置したところ。箱しか見えない。| Illustratorから保存したEPS。|  
 
 EPSを作るところまでは上と同じです。
 ただ，このEPSをそのままIllustratorに［ファイル］→［配置...］（「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）すると，「所在不明のフォントは、初期設定のフォントで代用されます。」というメッセージが出て，文字化けします。 
@@ -110,12 +112,13 @@ Macでも，TeXからはUNIXやWindowsと同じType 1（PFB）フォントが使
 インストールの場所は，Adobe製品だけから使うなら /Library/Application Support/Adobe/Fonts/Reqrd/Base/ ですが，Mac OS XではMxdviも同じフォントを使うことを考えれば，次の場所のいずれかに入れるのがいいかもしれません。
 Mac OS Xでは次の順にフォントを探してくれます（→ [Mac OS X: Font Locations and Their Purposes](http://docs.info.apple.com/article.html?artnum=106417)）。 
 
-1. ~/Library/Fonts (自分だけで使うなら)
+1. &#x7e;/Library/Fonts (自分だけで使うなら)
 1. /Library/Fonts (全員で使うなら)
 1. /Network/Library/Fonts (ネットワーク用)
 1. /System/Library/Fonts (通常はここはいじらない)
 1. /システムフォルダ/フォント (Classic用だがMac OS Xでも使える)
-    私は ~/Library/Fonts の中に一つフォルダを作ってその中にまとめて入れました（Mac OS X 10.2以降で可能）。 
+
+私は &#x7e;/Library/Fonts の中に一つフォルダを作ってその中にまとめて入れました（Mac OS X 10.2以降で可能）。 
 
 ただ，Mac版Illustrator 10.0.3ではPDFで保存すると一部の文字が化けます。 
 \\\[ \Gamma - \gamma \\\] で実験してみてください（$\Gamma$ や $-$ は化けやすいので有名）。 Windows版なら大丈夫なのに残念です。 
@@ -169,7 +172,7 @@ gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -dNOPAUSE -dBATCH -dSAFER
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です（Windowsならdvipsの代わりにdvipskを使います）。
-できたtesteq2.epsの <del>BoundingBox: 行がなぜか変なので，元のtesteq.epsの </del>BoundingBox: 行と置き換えます。
+できたtesteq2.epsの &#x25;&#x25;BoundingBox: 行がなぜか変なので，元のtesteq.epsの &#x25;&#x25;BoundingBox: 行と置き換えます。
 これでtesteq2.epsはフォントを含まないアウトラインだけのEPSになり，MacでもWindowsでも，Illustratorなどに安全に配置できます。 
 
 新ドキュメントクラスを使う方法以外に，\scalebox で数式を拡大する方法もあります。
@@ -191,7 +194,8 @@ gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -dNOPAUSE -dBATCH -dSAFER
 
 ## 他の方法 {#b00fa762}
 
-Equation Magic（Lite）
+### Equation Magic（Lite） {#e1e0d1fe}
+
 TeXではありませんが同様な機能を持つ数式エディタとして [Equation Magic Lite](http://www.micropress-inc.com/eqmlite.htm) があります。
 これは [Equation Magic Pro](http://www.micropress-inc.com/eqmpro/index.html) の機能制限版で，無償で配布されています。
 これはWordなどOLE対応ソフトからは［挿入］→［オブジェクト］→［Equation Magic］で編集することができます。
