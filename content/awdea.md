@@ -12,13 +12,21 @@ pukiwiki: "awdea"
 非常に下手な書き方です。
 どなたか（書き込まれたかたとは別のかた）が，コメントの形で，下手なところを指摘してくださっています。 <!-- 「編集」をクリックすればコメントが見えますのでご参考まで。 -->
 
+***
+
 \documentclass\[a4paper,11pt\]{jarticle}
+
+<br>
 
 \usepackage{color}
 
 % 入れ子の分数の定義 %
 
+<br>
+
 \def\leqq{\mbox{\small ≦}}
+
+<br>
 
 \def\geqq{\mbox{\small ≧}}
 
@@ -39,23 +47,39 @@ pukiwiki: "awdea"
 
 \def\dlim#1{{\displaystyle \lim \_{#1}}}
 
+<br>
+
 \def\dsum#1#2{{\displaystyle \sum \_{#1}^{#2}}}
 
+<br>
+
 \def\norm#1{{\left\\| #1 \right\\|}}
+
+<br>
 
 \def\dint#1#2{{\displaystyle \int \_{#1}^{#2}}}
 
 \oddsidemargin=-5mm
 
+<br>
+
 \textwidth=170mm
 
+<br>
+
 \topmargin=-20mm
+
+<br>
 
 \textheight=250mm
 
 \begin{document}
 
+<br>
+
 \begin{center}
+
+<br>
 
 {\bf \Large 動力学 \quad 練習問題~23}\\\\
 
@@ -65,15 +89,27 @@ pukiwiki: "awdea"
 
 インターネット上より印刷\\\\
 
+<br>
+
 \today\\\\
+
+<br>
 
 Ver. 1.80
 
+<br>
+
 \end{center}
+
+<br>
 
 {\bf （２）}
 
+<br>
+
 \color{blue}
+
+<br>
 
 仕事率を$P\[W\]$とすれば、\\\ \\\\
 
@@ -94,6 +130,8 @@ Ver. 1.80
 
 \begin{flushright}
 
+<br>
+
 \underline{ A. $49.0\\,\[W\]$ }
 
 ```
@@ -103,6 +141,8 @@ Ver. 1.80
 ```
 
 \end{flushright}
+
+<br>
 
 \vspace\*{12pt}
 
@@ -116,125 +156,237 @@ Ver. 1.80
 
 \color{black}
 
+<br>
+
 {\bf （３）}
 
+<br>
+
 \color{blue}
+
+<br>
 
 力が物体になした仕事を$W\\,\[J\]$、$5.00\\,\[s\]$間に物体が進んだ距離を$x\\,\[m\]$
 とすれば、\\\ \\\\
 
+<br>
+
 \qquad $F \times 5.00 \\, = \\, 3.00 \times 20.0 - 3.00 \times 0$ \dots (1)\\\ 
 \\\\
+
+<br>
 
 \qquad $x = \dfrac{1}{2} \times \dfrac{20.0}{5.00} \times (5.00)^2 = 50.0 
 \\,\[m\]$ \dots (2)\\\ \\\\
 
+<br>
+
 \qquad $W = Fx$ \dots (3)\\\ \\\\
+
+<br>
 
 よって、(1)～(3)式より、$W = 600 \\, \[J\]$\\\\
 
+<br>
+
 \begin{flushright}
+
+<br>
 
 \underline{ A. $600\\,\[J\]$ }
 
+<br>
+
 \end{flushright}
+
+<br>
 
 \vspace\*{12pt}
 
+<br>
+
 \color{black}
+
+<br>
 
 {\bf （６）}
 
+<br>
+
 \color{blue}
+
+<br>
 
 この電車を等速度$36.0\\,\[km/h\]\\,(\\,=\\,10.0\\,\[m/s\])$で動かすのに必要な力を$F\\,\[N\]$
 、 
 
+<br>
+
 その時の仕事率を$P\\,\[kW\]$とすれば、\\\ \\\\
+
+<br>
 
 \qquad $F \\, = 2.50 \times 80.0 \times 9.80 + 80.0 \times 10^3 \times \sin 
 \left( \tan ^{-1} \dfrac{1}{100} \right) \times 9.80$ \dots (1)\\\ \\\\
 
+<br>
+
 \qquad $P \times 10^3 \\, = \dfrac{F \times 10.0}{1.00} \\, \cos \left( \tan 
 ^{-1} \dfrac{1}{100} \right)$ \dots (2)\\\ \\\\
 
+<br>
+
 よって、(1)、(2)式より、$P = 98.0\\,\[kW\]$\\\\
 
+<br>
+
 \begin{flushright}
+
+<br>
 
 \underline{ A. $98.0\\,\[kW\]$ }
 
+<br>
+
 \end{flushright}
+
+<br>
 
 \vspace\*{12pt}
 
+<br>
+
 \color{black}
+
+<br>
 
 {\bf （７）}
 
+<br>
+
 \color{blue}
+
+<br>
 
 この物体を動かすのに必要な力を$F\\,\[N\]$、仕事率を$P\\,\[W\]$とすれば、\\\ \\\\
 
+<br>
+
 \qquad $F \\, = 0.300 \times 30.0 \times 9.80$ \dots (1)\\\ \\\\
+
+<br>
 
 \qquad $P \\, = \dfrac{F \times 4.00}{5.00}$ \dots (2)\\\ \\\\
 
+<br>
+
 よって、(1)、(2)式より、$P = 70.6\\,\[W\]$\\\\
+
+<br>
 
 \begin{flushright}
 
+<br>
+
 \underline{ A. $70.6\\,\[W\]$ }
+
+<br>
 
 \end{flushright}
 
+<br>
+
 \vspace\*{12pt}
+
+<br>
 
 \color{black}
 
+<br>
+
 {\bf （８）}
 
+<br>
+
 \color{blue}
+
+<br>
 
 物体を$3.00\\,\[m\]$引き上げた時、速さが$5.00\\,\[m/s\]$になるまでにかかる時間
 を$t\\,\[s\]$、 
 
+<br>
+
 その時の加速度を$\alpha \\,\[m/s^2\]$、引き上げるのに必要な力を$F\\,\[N\]$とす
 れば、\\\ \\\\
 
+<br>
+
 \qquad $5.00 = \alpha \\, t$\dots (1)\\\ \\\\
 
+<br>
+
 \qquad $3.00 = \dfrac{1}{2} \\, \alpha t^2$\dots (2)\\\ \\\\
+
+<br>
 
 \qquad $5.00 \times \alpha = F - 5.00 \times 9.80 \sin \dfrac{\pi}{6} - 
 0.350 \times 5.00 \times 9.80 \cos \dfrac{\pi}{6}$\dots (3)\\\ \\\\
 
+<br>
+
 \qquad $W = F \times 3.00$\dots (4)\\\ \\\\
+
+<br>
 
 よって、(1)～(4)式より、$W = 181\\,\[J\]$\\\\
 
+<br>
+
 \begin{flushright}
+
+<br>
 
 \underline{ A. $181\\,\[J\]$}
 
+<br>
+
 \end{flushright}
+
+<br>
 
 \vspace\*{12pt}
 
+<br>
+
 \color{black}
+
+<br>
 
 {\bf （９）}
 
+<br>
+
 \color{blue}
 
+<br>
+
 パイプ内の平均流速を$v\\,\[m/s\]$、仕事率を$P\\,\[W\]$とすれば、\\\ \\\\
+
+<br>
 
 \qquad $\dfrac{120 \times 10^3}{10.0} \times 10^{-2} = v \times 60.0$\dots 
 (1)\\\ \\\\
 
+<br>
+
 ここで、$5\\,\[\ell\] = 5\\,\[kg\]$より、\\\ \\\\
 
+<br>
+
 \qquad $P = \dfrac{5.00 \times 9.80 \times v}{1.00}$\dots (2)\\\ \\\\
+
+<br>
 
 よって、(1)、(2)式より、$v = 2.00 \\, \[m/s\]$ , $P = 98.0\\,\[W\]$\\\\
 
@@ -243,6 +395,8 @@ Ver. 1.80
 ```
 
 \begin{flushright}
+
+<br>
 
 \quad パイプ内の平均流速 : $2.00\\,\[m/s\]$\\\\
 
@@ -254,7 +408,11 @@ Ver. 1.80
 
 \underline{ A. \quad \quad \quad \quad \quad \quad 仕事率 : $98.0\\,\[W\]$ }
 
+<br>
+
 \end{flushright}
+
+<br>
 
 \end{document}
 
