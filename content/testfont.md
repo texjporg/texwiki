@@ -37,9 +37,21 @@ Unix あるいは Unix 互換 shell を使っている場合、これを簡単�
 echo pzdr | tex tab
 ```
 
-とすれば一発で tab.dvi ができます。 Windows のコマンドプロンプトでは echo の仕様が異なるので上のようにできません。
+とすれば一発で tab.dvi ができます。 Windows のコマンドプロンプトでは echo とパイプの仕様が異なるので上のようにできません。Windows のコマンドプロンプトの場合は、
 
-> ちなみに，tex 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルする．出力結果はデフォルトではカレントディレクトリに置かれる．TEXINPUTS 変数はプログラム名によってことなり、platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されている。
+```
+tex tab
+```
+
+のあと、TeX からのプロンプトに答えてフォント名
+
+```
+pzdr
+```
+
+を入力したら tab.dvi ができます。
+
+> ちなみに，TeX 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルする．出力結果はデフォルトではカレントディレクトリに置かれる．TEXINPUTS 変数はプログラム名によってことなり、platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されている。
 
 なお，ファイル testfont.tex については『The METAFONTbook』（D.E. Knuth 著）
 の Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
