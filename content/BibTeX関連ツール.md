@@ -29,6 +29,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://pybliographer.org/">Pybliographer</a></td><td>gtk python</td><td>多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り</td></tr>
 <tr><td><a href="http://sourceforge.net/projects/sixpack">Sixpack</a></td><td>perl</td><td>文献・電子ジャーナル管理ソフト</td></tr>
 <tr><td><a href="http://refdb.sourceforge.net/">RefDB</a></td><td>UNIX/MacOS X/Windows</td><td>SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる</td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
 </tbody>
 </table>
 
@@ -45,6 +46,9 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> bibextract </td><td>UNIX</td><td>bibファイルから検索条件に合致したエントリを抽出 </td></tr>
 <tr><td> bibsort </td><td>UNIX </td><td>.bibファイルの中の文献データをsortするプログラム。emacsのBiBTeXモードのM-x bibtex-sort-bufferよりの断然速い </td></tr>
 <tr><td><a href="http://hide.maruo.co.jp/lib/macro/biblist102.html">BiBTeX 文献リスト作成支援マクロ</a></td><td>秀丸</td><td>Hidemaruで編集するときに便利なマクロ及び強調表示の定義ファイル</td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/xbibfile/">xbibfile</a> </td><td>gtk+</td><td>.bibファイルの作成・検索などを対話的に行うGUIプログラム。日本語が通らない。 </td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/tkbibtex/">tkbibtex</a></td><td>tcl/tk </td><td>.bibファイル作成編集プログラム。日本語表示OKだが、atokxでは入力できない。</td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
 </tbody>
 </table>
 
@@ -57,6 +61,8 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> ams2bib </td><td>Unixなど </td><td>AmSTeX文献をBibTeX形式に変換 </td></tr>
 <tr><td><a href="http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html">medlinebib</a></td><td>UNIX?</td><td>MEDLINE形式データのインポート</td></tr>
 <tr><td><a href="http://shakan2.tm.nagasaki-u.ac.jp/ichu2bibtex.pl.html">ichu2bibtex.pl</a></td><td>perl</td><td>和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム</td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/rfc2bib/">rfc2bib</a></td><td>awk </td><td>rfc-index.txtをBibTeX形式に変換 </td></tr>
+<tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/refer-tools/">refer-tools</a> </td><td>perl</td><td>refer形式をBibTeX形式に変換</td></tr>
 </tbody>
 </table>
 
@@ -105,15 +111,12 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td> findbib </td><td> </td><td> </td></tr>
 <tr><td> fixbbl </td><td> </td><td> </td></tr>
 <tr><td> hyperbibtex </td><td> </td><td> </td></tr>
-<tr><td> lookbibtex </td><td> </td><td> </td></tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
 <tr><td> mathsci2bibtex </td><td> </td><td> </td></tr>
 <tr><td> noTeX.bst </td><td> </td><td> </td></tr>
-<tr><td> qbibman </td><td> </td><td> </td></tr>
-<tr><td> r2bib </td><td> </td><td> </td></tr>
-<tr><td> refer-tools </td><td> </td><td> </td></tr>
-<tr><td> rfc2bib </td><td> </td><td> </td></tr>
-<tr><td> tkbibtex </td><td> </td><td> </td></tr>
-<tr><td> xbibfile </td><td> </td><td> </td></tr>
-<tr><td> xbibtex </td><td> </td><td> </td></tr>
 </tbody>
 </table>
