@@ -52,21 +52,24 @@ TeXで作った本を出している出版社：
 青磁書房から出ている次の本がみなTeXとのこと：
 
 - 『語と構造の間---英語学研究序説---』小池一夫著　IBSN4-915988-21-X A5判、288p、
-- 『黒人研究の世界』黒人研究の会編、黒人研究の会創立50周年記念出版、ISBN4-916988-22-1 A5判、398p
+- 『黒人研究の世界』黒人研究の会編、黒人研究の会創立50周年記念出版、ISBN4-915988-22-1 A5判、398p
 - 『超越論的経験---フッセル「デカルト的省察の研究---』向来道男著、ISBN4-915988-21-X　B6判縦組、680p
-- "Art and Society" Yukiko Kinoshita著　ISBN4-92588-14-7　A5判320p 全英文
+- "Art and Society" Yukiko Kinoshita著　ISBN4-915988-14-7　A5判320p 全英文
 - "The Shy Voice in American Literature" by Alex Shishin, ISBN4-915988-08-2　A5版188p　全英文
 
 上記以外に青磁書房が組版したTeXの本：
 
-- 『萬葉集語法概論』津之地直一先生遺稿集　ISBN4-944185-04、A5判270p, 縦組、万葉書房
-- 『文芸心理学から見た日本文学』星野五彦著　ISBN4-844185-05-7、A5版縦組284p、万葉書房
+- 『萬葉集語法概論』津之地直一先生遺稿集　ISBN4-944185-04-9、A5判270p, 縦組、万葉書房
+- 『文芸心理学から見た日本文学』星野五彦著　ISBN4-944185-05-7、A5版縦組284p、万葉書房
 - 『謎！？　クイズ万葉集』万葉書房編集部編、ISBN4-944185-06-5、四六版縦組198ｐ、万葉書房
 
 著者自身がTeX (LaTeX) で原稿を作成したと報告のあった本：
 
-- 高橋正雄. [『基礎と演習　理工系の電磁気学』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31795.html). 2004年9月27日発売. 共立出版. ISBN4-320-03432-5.
-- 宮腰忠. [『高校数学＋α：基礎と論理の物語 』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31681.html). 2004年9月24日発売. ISBN4-320-01768-4.
+- 高橋正雄. [『基礎と演習　理工系の電磁気学』](http://www.kyoritsu-pub.co.jp/shinkan/shin0409_10.html). 2004年9月27日発売. 共立出版. ISBN4-320-03432-5. ([qa:31795](https://okumuralab.org/~okumura/texfaq/qa/31795.html))
+    <!-- http://www.kyoritsu-pub.co.jp/bookhtml/0406/002798.html -->
+
+- 宮腰忠. [『高校数学＋α：基礎と論理の物語 』](http://www.h6.dion.ne.jp/~hsbook_a/). 2004年9月24日発売. 共立出版．ISBN4-320-01768-4. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
+    <!-- http://www.kyoritsu-pub.co.jp/shinkan/shin0409_08.html -->
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
