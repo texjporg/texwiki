@@ -800,7 +800,9 @@ TeX を対話的に使用しているときに
 #### ! Paragraph ended before \somecs was complete. {#p50eb3f2}
 
 \label などの引数が複数段落にわたることがないコマンドの引数を読み取っている間に段落が終了した場合に現れるエラーメッセージです．
-→ 問題となっている箇所で用いたコマンドの引数の個数（または引数を囲む括弧の形式）をチェックしてください．
+→ 問題となっている箇所で用いたコマンド（メッセージ中の \somecs
+自身とは限りません）の引数の個数（または引数を囲む括弧の形式）
+をチェックしてください．
 
 #### ! Parameters must be numbered consecutively. {#p3ade282}
 
@@ -867,8 +869,8 @@ parameter stack size
 pattern memory
 : ハイフネーション・パターン用の領域（trie_size）
 
-<!-- ::pattern memory ops| -->
-<!-- ::pattern memory ops per language| -->
+<!-- :pattern memory ops| -->
+<!-- :pattern memory ops per language| -->
 
 pool size
 : コマンド名・ファイル名といった文字列そのものを保存する領域のサイズ（pool_size）
@@ -882,7 +884,6 @@ semantic nest size
 text input levels
 : （プリミティブの）\input で読み込まれるファイル内でさらに \input を用いる場合の \input を多重にする段階数（など）の上限（max_in_open）
 
-:
 →このエラーが生じた場合は，
 まず，文書自体の記述あるいは文書中で用いられているマクロの定義が適切であるかどうかを確認してください．
 例えば，grouping levels の制限に引っかかる場合には，
