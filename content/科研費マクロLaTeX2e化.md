@@ -48,11 +48,16 @@ kakenhi.cls というファイルは kkhgrp.mac の先頭に次のものを加�
   \fi}
 \renewcommand{\normalsize}{\@setfontsize\normalsize\@xiipt\@xivpt}
 \normalsize
+
 % from latex209.def
+% LaTeX 2.09の命令をたくさん使った場合は \input latex209.def してください。
+% 以下は latex209.def から最小限の内容をコピーしたものです。
 \newdimen\@maxsep
 \newdimen\@dblmaxsep
 \def\@magscale#1{ scaled \magstep#1 }
 \let\gtfam\gtfamily
+\let\rm\rmfamily
+\let\bf\bfseries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ```
 
@@ -90,3 +95,4 @@ kakenhi.cls はもう1か所だけ修正が必要です。
 
 - Wiki の使い方分からなくて空砲を撃ってしまいました。itemize-env でただの \item を使ったら, \bf が未定義と叱られてストップしました。実際, lkkh.sty 中に \bf がありましたので全部 \bfseries に書き換えてその場を凌いでいます。他に \rm とか goth8, goth7 等あります。どうすべきかアイデアがありません。 -- [mikami@math.akita-u.ac.jp](mailto:mikami@math.akita-u.ac.jp) 2004-10-13 (水) 21:47:04
 - あれ，うちでは問題なかったですが，変ですね。¥let¥bf=¥bfseries で逃げましょうか -- 奥村 2004-10-13 (水) 22:23:20
+- 上のコードに \let\bf\bfseries を追加しておきました。ほかにも不具合報告歓迎します -- 奥村 2004-10-14 (木) 09:09:05
