@@ -26,6 +26,10 @@ CTAN（Comprehensive TeX Archive Network）は TeX 関連のソフトやスタ�
 はたくさんのサーバの集合体です。
 下の方に一覧がありますので，ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です。
 CTAN 以外にもたくさんのフリーソフトをミラーしています。
+以下のような DNS による負荷分散も実験的に行われています。
+
+- [http://www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/) (近いサーバ優先)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/) (空いているサーバ優先)
 
 オリジナルの CTAN サイトは次の三つです。
 
