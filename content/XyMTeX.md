@@ -9,7 +9,7 @@ pukiwiki: "XyMTeX"
 
 一般に化学の学術雑誌への投稿には、化学者専用の化学構造描画パッケージとして
 [ChemDraw](http://software.univcoop.or.jp/products/chemoffice/chemdraw.html)
-または無料の
+または、アカデミックユーザーのみ無料で使用可能であり登録する必要もない
 [ISIS/Draw](http://www.chem-station.com/soft/Isisdraw.htm)
 などのソフトを利用することが化学者の場合には常識であります。
 
