@@ -53,10 +53,8 @@ PSTricks 配布ディレクトリ中の dvips ディレクトリの中身は，
 /usr/local/share/texmf/dvips/pstricks
 というディレクトリを作ってその中に移動します。
 あとは必要に応じて contrib
-の中の \*.tex を /usr/local/share/texmf/tex/generic/pstricks に，
-
-## .sty ファイルを /usr/local/share/texmf/tex/latex/pstricks {#pd13620b}
-
+の中の \*.tex を /usr/local/share/texmf/tex/generic/pstricks
+に，\*.sty ファイルを /usr/local/share/texmf/tex/latex/pstricks
 に入れます
 （たとえば contrib/pst-poly の中身や contrib/misc/pst-key.\*）。
 
@@ -145,4 +143,49 @@ dvips の -E オプションを使う方法しかないようです。
 しかし，これではバウンディングボックス情報が正しく入らないため，
 後で EPS ファイルを編集する必要があり，面倒です。
 
-EPS化やPDF化に関して、最近は[様々な方法](http://www.pstricks.de/pdf/pdftricks.phtml)が模索されているようです。
+そこで PSTtoEPS や dvips の -E オプションを使わずに PSTricks の PDF 変換の
+ためのマクロ pstpdfmx を作りました．
+まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
+ダウンロードしてください (Unix 系 OS 専用です，要 bash/Make/gcc)．
+これを使うとデバイスドライバに dvipdfm(x)を使って PSTricks のある程度のマクロを
+使えるようになります．
+
+丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)
+: pstpdfmx, bbb, genpdf.sh 等がすべて含まれています．
+
+pstpdfmx の解説 [pstpdfmx.pdf](/attach/PSTricks/pstpdfmx.pdf)
+: pstpdfmx パッケージの説明書．
+
+出力例 [p2p.pdf](/attach/PSTricks/p2p.pdf)
+: 実際に pstpdfmx, genpdf.sh, bbb, Make を使って作成した PDF．
+
+方針としては原稿中の PSTricks による図を一度別ファイル fig.tex に書き出し，そのファイルを
+
+```
+platex fig.tex
+pdvips -Ppdf -o fig.ps fig.dvi
+epstopdf fig.ps fig.pdf
+gs -sDEVICE=pbm -fig.ps -sOutputFIle=fig.pbm
+bbb < fig.pbm > fib.bb
+```
+
+という作業を，図の数だけ行います．そうすると正しいバウンディングボックス情報 fig.bb 
+と PSTricks 画像から PDF に変換したファイル fig.pdf ができます．元原稿では
+ファイル fig.pdf が存在する時だけ fig.pdf を読み込むようにすることになります．
+
+上記の PDF を生成するスクリプトは genpdf.sh というファイルにまとめています．
+すると完全な PDF ファイル file.pdf は次のように作ることになります．
+
+```
+platex file
+./genpdf.sh file
+platex file
+dvipdfmx file
+```
+
+dvips にこのマクロを流用するには 1 行か 2 行の修正で済みます (デバイスドライバに
+dvips を指定し， genpdf.sh の中で fig.ps の BoundingBox を awk/perl で
+プログラム bbb が出力した正しいものに置換するだけです)．しかし、やはり大変面倒です． 
+pdfLaTeX などが日本語化されれば pdftricks や ps4pdf などのパッケージが使える
+ようになるでしょう．いずれにしても pdfTeX/pdfLaTeX で日本語が使
+えるようになるまでは，このような面倒な処理が必要になると思います．
