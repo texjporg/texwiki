@@ -17,10 +17,10 @@ pukiwiki: "ArchiveQandA"
 
 ### WinShellのエラーメッセージ {#l91d86a6}
 
-- 文字が90&deg;回転して表示される（[qa:22602](https://okumuralab.org/~okumura/texfaq/qa/22602.html),[qa:32720](https://okumuralab.org/~okumura/texfaq/qa/32720.html)など）
+- 文字が90&deg;回転して表示される（[qa:22602](https://okumuralab.org/~okumura/texfaq/qa/22602.html), [qa:32720](https://okumuralab.org/~okumura/texfaq/qa/32720.html)など）
     - \[Options\]-\[Font\]で設定した表示フォントに「@」のついたフォントを指定していませんか？ @は縦書き用のフォントです。@のない「MS ゴシック」などに変えましょう。
 
-- DVIWINボタンを押しても“One or more errors occured!　Please check the options!”と言われます（[qa:29850](https://okumuralab.org/~okumura/texfaq/qa/29850.html),[qa:29142](https://okumuralab.org/~okumura/texfaq/qa/29142.html)など）
+- DVIWINボタンを押しても“One or more errors occured!　Please check the options!”と言われます（[qa:29850](https://okumuralab.org/~okumura/texfaq/qa/29850.html), [qa:29142](https://okumuralab.org/~okumura/texfaq/qa/29142.html)など）
     - dvioutへのパスを通していない、あるいはDVIWIN設定ダイアログで（インストールディレクトリ）C:\dviout\dviout.exeと正しい場所を指定していないからです。[WinShell](/WinShell/#h2ab6f8d)のページを参照して、修正しましょう。
 
 ### dvioutのエラーメッセージ {#lb61846e}
@@ -37,6 +37,20 @@ pukiwiki: "ArchiveQandA"
 ### 画像の作り方、扱い方 {#kbcf5f4a}
 
 - [PDFの作り方#画像の用意の仕方](</PDFの作り方/#l580b75f>)
+- “Cannot determine size of graphic in filename.xxx (no size specifed)”というエラーが出て画像（JPG, PNGなど）が取り込めない（[qa:29325](https://okumuralab.org/~okumura/texfaq/qa/29325.html), [qa:19304](https://okumuralab.org/~okumura/texfaq/qa/19304.html)など）
+    - その画像に対応する“枠”を記述した .bb ファイル（Bounding Box）がないからです。コマンドプロンプトで画像ファイルのあるディレクトリに移動し
+
+        ```
+        c:\(画像ファイルの場所) ebb filename.xxx
+        ```
+
+        とします。すると、そのディレクトリに filename.bb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
+
+        ```
+        c:\(画像ファイルの場所) bmc -b filename.xxx
+        ```
+
+        となります。
 
 ### Tips {#de167df2}
 
