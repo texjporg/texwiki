@@ -144,3 +144,5 @@ color の代わりに graphics パッケージ集の中にある pstcol を使�
 dvips の -E オプションを使う方法しかないようです。
 しかし，これではバウンディングボックス情報が正しく入らないため，
 後で EPS ファイルを編集する必要があり，面倒です。
+
+EPS化やPDF化に関して、最近は[様々な方法](http://www.pstricks.de/pdf/pdftricks.phtml)が模索されているようです。
