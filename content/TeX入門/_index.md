@@ -8,7 +8,7 @@ pukiwiki: "TeX入門"
 
 # TeX入門
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="">
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX入門&quot;">
 
 <div style="text-align:right"><strong>TeX</strong> /tek/ [名] 〔コンピュータ〕テフ，テック</div>
 
@@ -45,17 +45,13 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 
 ## インストールのしかた {#i326adb5}
 
-パソコン初心者にはこれが一番難しいところです。Windows については次のページにまとめておきました。 
+パソコン初心者にはこれが一番難しいところです。
+このTeX WikiにOSごとのインストール法が詳しく書かれていますのでご参照ください。
+特にWindows については インストール(Windows) をご覧ください。
 
-- [Windows へのインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-win32.html)
-
-旧Mac OSについては内山さんのページをご覧ください。 
-
-- [MacpTeXとその周辺](http://macptex.appi.keio.ac.jp/~uchiyama/macptex.html)
-
-Linux についてはディストリビューションによって差があるようですが，少なくとも [Vine Linux](http://vinelinux.org/) や [MLD7](http://www.mlb.co.jp/linux/mld7.html) には完璧な pTeX 等が含まれています。ソースからコンパイルする場合の手順は次のページにまとめておきました。 
-
-- [Linux へのインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-linux.html)
+インストール不要でTeXが使えるページ
+[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/tex/)
+もあります。
 
 ## 使い方 {#hf6bc116}
 
