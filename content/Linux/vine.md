@@ -126,6 +126,11 @@ Win 版などで動作確認してください。
     TX fonts, PX fonts 等も含まれているので、
     apt-get でインストールするのがよいでしょう。
 
+    ```
+    # apt-get update
+    # apt-get install tetex-extra
+    ```
+
 - 齋藤修三郎氏の OTF パッケージが、VinePlus に texmacro-otf として用意されています。
     dvipdfmx と組み合わせると、商用フォントがなくても、
     囲み付き文字や「はしご高」などを含んだ PDF を作れます。
