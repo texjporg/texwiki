@@ -630,22 +630,22 @@ amsmath パッケージが提供する \overset，\underset を用いるとよ�
 ! Math formula deleted: Insufficient extension fonts.
 : &nbsp;<br>
 
-family 2（数式用記号）として用いるフォントに必要な
-\fontdimen パラメータ（22 個）が備わっていない場合に現れるエラーメッセージです．
-例えば，\DeclareSymbolFont{symbols}{OT1}{cmr}{m}{n} という設定を行った
-LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
-→ 数式用フォントの設定を見直して，symbols グループ
-（family 2）に用いるフォントを適切なものに変更してください．
-
-! Math formula deleted: Insufficient symbol fonts.
-: &nbsp;<br>
-
 family 3（数学拡張フォント）として用いるフォントに必要な
 \fontdimen パラメータ（13 個）が備わっていない場合に現れるエラーメッセージです．
 例えば，\DeclareSymbolFont{largesymbols}{OT1}{cmr}{m}{n} という設定を行った
 LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
 → 数式用フォントの設定を見直して，largesymbols グループ
 （family 3）に用いるフォントを適切なものに変更してください．
+
+! Math formula deleted: Insufficient symbol fonts.
+: &nbsp;<br>
+
+family 2（数式用記号）として用いるフォントに必要な
+\fontdimen パラメータ（22 個）が備わっていない場合に現れるエラーメッセージです．
+例えば，\DeclareSymbolFont{symbols}{OT1}{cmr}{m}{n} という設定を行った
+LaTeX 文書で数式を用いるとこのエラーが生じます．<br>
+→ 数式用フォントの設定を見直して，symbols グループ
+（family 2）に用いるフォントを適切なものに変更してください．
 
 ! Misplaced <em>something</em>.
 : &nbsp;<br>
