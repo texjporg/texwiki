@@ -30,6 +30,7 @@ TeXで作った本を出している出版社：
 - レッシグ，山形浩生訳『コモンズ』（翔泳社，2002）……縦組，Computer Modern
 - 宮岡伯人『[「語」とはなにか：エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』(三省堂, 2002年)
 - 亀田隆，高村正樹著『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
+- 力武健次『インターネットコミュニティ－国際ネットワーク最前線－』（オーム社，1994年）
 
 青磁書房から出ている次の本がみなTeXとのこと：
 
