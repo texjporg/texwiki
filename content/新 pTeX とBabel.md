@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
+- \[040929\]（永田善久）
+    russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
+
 - \[040927\]（永田善久）
     map ファイルも texmf-local/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，texmf/ メインツリーには基本的に手を加えないでよいこととなります。
 
@@ -35,6 +38,29 @@ pLaTeX に german（旧正書法）, ngerman（新正書法）, french, greek, r
 
 - 
     texmf/tex/generic/config/language.dat を開き greek, russian がある行頭の % 記号を取り去り，上書き保存する
+
+- 
+    texmf/tex/generic/hyphen/ruhyphen/ruhyphen.tex を開き
+
+```
+\def\Encoding{t2a}
+%\def\Encoding{ucy}
+%\def\Encoding{lcy}
+%\def\Encoding{ot2}
+%\def\Encoding{koi}
+```
+
+とある箇所を
+
+```
+%\def\Encoding{t2a}
+%\def\Encoding{ucy}
+%\def\Encoding{lcy}
+\def\Encoding{ot2}
+%\def\Encoding{koi}
+```
+
+と書き換え，上書き保存する
 
 - 
     念のため，texmf/web2c/ptex/platex.fmt を Orig_platex.fmt のようにリネームしておく
