@@ -85,6 +85,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 <tr><td><a href="http://shakan2.tm.nagasaki-u.ac.jp/ichu2bibtex.pl.html">ichu2bibtex.pl</a></td><td>perl</td><td>和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/rfc2bib/">rfc2bib</a></td><td>awk </td><td>rfc-index.txtをBibTeX形式に変換 </td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/refer-tools/">refer-tools</a> </td><td>perl</td><td>refer形式をBibTeX形式に変換</td></tr>
+<tr><td> <a href="http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib">r2bib</a> </td><td> </td><td> referからBibTeXに変換するツールだが、<a href="http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html">EndNoteに対応した</a>。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。 </td></tr>
 </tbody>
 </table>
 
