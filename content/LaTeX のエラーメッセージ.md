@@ -33,6 +33,21 @@ NFSS1 のコマンド \new@fontshape の引数を調べている最中に，
 \DeclareFontShape を用いて書き換えてください．
 必要があれば，パッケージあるいはクラスファイルの作成者に連絡して修正を促すことになるでしょう．
 
+#### ! Bad texsys.cfg file: \\@currdir . {#n18be11a}
+
+フォーマットファイル latex.fmt/platex.fmt の作成時に，
+ファイル texsys.cfg で \\@currdir が定義されているにもかかわらずその \\@currdir
+で与えられる文字列がカレント・ディレクトリを正しく表していない
+（カレント・ディレクトリにあるはずのファイル“\\@currdir texsys.aux”
+（\\@currdir が与える文字列に texsys.aux を連結した文字列）を読み込めない）
+場合に現れるエラーメッセージです．<br>
+→ （ヘルプメッセージに現れるように）とりあえず，ファイル texsys.cfg を削除
+（あるいは退避）させてから再びフォーマットファイルの作成を試みてください．
+特に，UNIX タイプ，Macintosh タイプ，VMS タイプのファイルシステム <!-- 丁寧には，“ファイルシステム”というよりも“ファイル名の指定法”というべきところ -->
+に対しては \\@currdir およびファイルネーム・パーサは自動選択されるので，
+それらのシステムを用いている場合にはファイル texsys.cfg の中で
+\\@currdir を定義する必要はありません．
+
 #### ! Corrupted NFSS tables. {#fd9ea825}
 
 何らかの理由でフォントの代替に失敗した場合に現れるエラーメッセージ（のひとつ）です．
@@ -55,6 +70,16 @@ NFSS 関係のマクロの引数を書き間違えたくらいではこのエラ
 → このエラーが生じた場合には…
 LaTeX システム自体を構成するファイルのどれかが壊れている，
 という可能性を疑った方がよいでしょう．
+
+#### ! Infinite tan !. {#p2599222}
+
+trig パッケージ使用時に，\UseTan の引数に±90 といった
+tan の定義域に含まれない値を与えた場合に現れるエラーメッセージです．<br>
+→ \UseTan の引数の値が±90＋（360 の倍数）にならないように
+\UseTan の引数を変更してください．
+ユーザ定義のマクロの中で \UseTan を用いている場合
+（特に，\UseTan の引数が可変である場合）には，
+\UseTan の引数のチェック処理を導入することになるでしょう．
 
 #### ! LaTeX Error: \\&lt; in mid line. {#rd81bf4a}
 
@@ -921,11 +946,48 @@ fancybox パッケージによる \VerbatimInput などで読み込んだファ�
 （ファイルを読み込んだとしても何も出力されないわけですから）
 当該箇所の \VerbatimInput などを用いるのを取り止めても構わないでしょう．
 
+#### ! LaTeX must be made using an initex with no format preloaded. {#p6f247ba}
+
+フォーマットファイル latex.fmt/platex.fmt の作成の際に，
+ファイル latex.ltx の読み込みを開始した時点ですでに文字 { のカテゴリーコードが
+1 になっている（すなわち，すでにほかのフォーマットファイルが読み込まれていると想定される）
+場合に現れるエラーメッセージです．<br>
+→ フォーマットファイル latex.fmt/platex.fmt を作成する場合には，
+ほかのフォーマットファイルを読み込まない状態でファイル latex.ltx
+あるいは platex.ltx を処理してください．
+
+> なお，一般には tex -ini "&amp;tex" otherfmt のような具合に，
+> あるフォーマットに別の定義を追加したフォーマットファイルを作成することができますが，
+> LaTeX/pLaTeX のフォーマットファイルを作成する際にはそのようなことはしないでください，
+> ということです．
+
 #### ! LaTeX source files more than 5 years old!. {#ie24ee78}
 
 文字通りです．
 5 年前より昔の latex.ltx を用いてフォーマットファイルを作成しようとした場合に現れるエラーメッセージです．<br>
 → LaTeX システム全体を更新しましょう．
+
+#### ! Multicol Error. {#f4ab81e2}
+
+multicol パッケージによる multicols 環境において，内部処理に用いられるコマンド
+\page@sofar が垂直モードでない箇所で用いられた場合に現れるエラーメッセージですが…
+通常の文書においてはこのエラーメッセージにお目にかかることはないでしょう．
+
+> とりあえず次のようなことをすれば，このメッセージを目にすることができます．
+>
+> ```
+> \documentclass{article}
+> \usepackage{multicol}
+> \begin{document}
+> \begin{minipage}{200pt}
+> \begin{multicols}{3}
+> ...
+> \aftergroup\leavevmode
+> \end{multicols}
+> \end{minipage}
+> \end{document}
+> ```
+>
 
 #### ! No declaration for shape <em>attributes</em>. {#e9990ea5}
 
@@ -933,6 +995,36 @@ fancybox パッケージによる \VerbatimInput などで読み込んだファ�
 代替先の属性 <em>attributes</em> のフォント定義がなされていない場合に現れるエラーメッセージです．<br>
 → 代替元のフォント定義を修正して適切な代替先に変更するか，
 属性 <em>attributes</em> のフォント定義を追加してください．
+
+<!-- ***! No definitions for language `'''langname'''&#39; found! -->
+<!-- backref パッケージあるいは hyperref パッケージの内部処理において -->
+<!-- \backref'''langname''' あるいは \HyLang@'''langname''' -->
+<!-- が定義されていない言語についての設定を \extras'''langname''' -->
+<!-- に追加しようとしたときに現れるエラーメッセージですが… -->
+<!-- これは一般のユーザが目にするようなメッセージではありませんね． -->
+
+#### ! OOPS! I can't find any hyphenation patterns for US english.<br>Think of getting some or the latex2e setup will never succeed. {#ve28f5e0}
+
+フォーマットファイル latex.fmt/platex.fmt の作成時にファイル hyphen.tex
+を読み込むことができなかった場合に現れるエラーメッセージです．<br>
+→ TeX/LaTeX システムで用いる各種のファイルが正しくインストールされているかどうかをチェックしてください．
+TeX/LaTeX システムを更新したような場合には，各種の環境変数（例えば，TEXINPUTS）
+の値が正しいかどうかにも注意してください．
+
+#### ! Undefined font size function <em>function</em>. {#pdc7ca68}
+
+tracefnt パッケージ使用時に，フォント定義の中に未定義のサイズ関数 <em>function</em>
+が現れているような属性のフォントを用いようとした場合に現れるエラーメッセージです．<br>
+→ 問題となっているサイズ関数 <em>function</em> が含まれているような
+fd ファイルなどでのフォント定義を修正するか，
+サイズ関数 <em>function</em> に対応する処理を（\DeclareSizeFunction を用いて）
+与えてください．
+なお，サイズ関数 <em>function</em> がどの属性のフォントのフォント定義に現れているかは，
+このエラーメッセージには表示されないので，修正すべきフォント定義については
+log ファイル中のほかの記述などを調べて割り出してください．
+
+> tracefnt パッケージを使用していない場合には，未定義のサイズ関数が用いられたとしても，
+> 単に“Font <em>attributes</em> not found.”のエラーになるだけです．
 
 <!-- とりあえず，ファイル latex.ltx などにあるものをチェックしました． -->
 <!-- 各種パッケージが（パッケージのエラー・警告としてではなく） -->
