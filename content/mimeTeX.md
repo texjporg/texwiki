@@ -27,3 +27,7 @@ PukiWiki から使うには
 ```
 
 インライン数式にも対応したようです。{{< katex >}}\sqrt{x^2+y^2}=z^2{{< /katex >}} のような具合に。
+
+### imgTeX {#za7a547f}
+
+中丸さん: [imgTeX](http://www.on.cs.keio.ac.jp/~maru/imgtex/), [インタラクティヴに](http://www.on.cs.keio.ac.jp/~maru/imgtex/interactive.html). cf.) [qa:3461](https://okumuralab.org/~okumura/texfaq/qa/3461.html), [qa:33504](https://okumuralab.org/~okumura/texfaq/qa/33504.html)
