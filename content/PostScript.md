@@ -40,6 +40,8 @@ PostScript は業界標準のページ記述言語です。
 - [GNU Ghostscript 7.05 のインストール方法](http://www.klavis.info/gnugs.html) /
     [Ghostscriptと GSviewのインストール](http://www.klavis.info/gsinst.html) (大友さん)
 
+- [Windows 用 Ghostscript と GSview のインストール](http://forum.nifty.com/fdtp/install/win/gs.htm) (@nifty FTEX)
+
 ### EPS作成 {#lceaa8b7}
 
 - [WMF2EPS](http://www.wmf2eps.de.vu/) (シェアウェア。WindowsのPSプリンタドライバで簡単にEPSを作るツール。プレビューも付けられる)
