@@ -33,16 +33,16 @@ pTeX（日本語版 TeX）については，日本語化が十分でないディ
 特に，dvipdfm が日本語化されていないかもしれません。
 ソースからコンパイルする方法は以下のページをご参照ください。
 
-- [Apache](http://oku.edu.mie-u.ac.jp/~okumura/networking/apache.html)
-- [PHP](http://oku.edu.mie-u.ac.jp/~okumura/linux/?PHP)
-- [Linux での teTeX-2.0，pTeX，pLaTeX2e のインストール](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Make)
+- [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
+- [LinuxWiki:PHP](https://okumuralab.org/~okumura/linux/?PHP)
+- [UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール](/Make/)
 
 ### セキュリティ上の配慮 {#aeb59313}
 
 以下で $TEXMF と書いた部分は /usr/\[local\[/teTeX\*\]/\]share/texmf
 のような名前のディレクトリを意味します。
 
-TeX の設定ファイル $TEXMF/web2c/texmf.cnf を次のように書き換えます。
+TeX の設定ファイル $TEXMF/web2c/texmf.cnf が次のようになっていなかったら書き換えます。
 
 ```
 % シェルにエスケープさせない
@@ -53,6 +53,8 @@ openin_any = p
 % 1行めのコメントで TeX の種類を指定する機能を外す
 parse_first_line = f
 ```
+
+Vine Linux 3.1 の teTeX では openin_any = a となっているので注意が必要です。
 
 #### テスト1 {#p4f76648}
 
