@@ -18,7 +18,7 @@ tabbing 環境で \\&lt;（現在の行の先頭項目のタブ位置（項目�
 を行の先頭項目以外で用いた場合に（原則として）現れるエラーメッセージです．<br> <!-- 行の左端（から 0pt だけ下がったところ）に複数のタブ位置を設定するような記述を行うと， --> <!-- \< をある行の 2 番目以降の項目の中で用いてもエラーにならない場合が起こり得ます． -->
 → tabbing 環境内で \\&lt; を用いる場合には，行の先頭項目の中（先頭に置くのがよいでしょう）で用いてください．
 
-!LaTeX Error: Bad \line or \vector argument.
+! LaTeX Error: Bad \line or \vector argument.
 : &nbsp;<br>
 
 （picture 環境内の）\line あるいは \vector の方向が
@@ -50,7 +50,7 @@ tabbing 環境で \\&lt;（現在の行の先頭項目のタブ位置（項目�
 環境の終了順序を間違えているということもよくあることですし，
 また，必要があれば \end{<em>env_X</em>} あるいは \begin{<em>env_Y</em>} を補うことになるでしょう．
 
-!LaTeX Error: Can be used only in preamble.
+! LaTeX Error: Can be used only in preamble.
 : &nbsp;<br>
 
 \usepackage のようなプリアンブルでしか使えないコマンドを本文部分
@@ -144,7 +144,7 @@ latexsym パッケージあるいは amsmath パッケージ（あるいはそ�
 \sqsupset，\lhd，\unlhd，\rhd，\unrhd のいずれかを用いた場合に現れるエラーメッセージです．<br>
 → latexsym パッケージなどを用いて，使いたい記号に対応するコマンドを定義してください．
 
-!LaTeX Error: Command \somecs unavailable in encoding <em>encoding</em>.
+! LaTeX Error: Command \somecs unavailable in encoding <em>encoding</em>.
 : &nbsp;<br>
 
 現在のエンコーディングが <em>encoding</em> である箇所で，
@@ -167,7 +167,7 @@ latexsym パッケージあるいは amsmath パッケージ（あるいはそ�
 （特に細工しなくても出力されるように）再定義するとよいでしょう．
 ほかの記号に関しても同様です．
 
-!LaTeX Error: Command <em>something</em> invalid in math mode.
+! LaTeX Error: Command <em>something</em> invalid in math mode.
 : &nbsp;<br>
 
 数式中では使えない記述  <em>something</em> を数式中で用いた場合のエラーメッセージで，
@@ -236,14 +236,14 @@ fd ファイルが充分に新しいものであるかどうかにも注意し�
 正しければ，\DeclareFontFamily または \DeclareKanjiFamily を用いてエンコーディング
 <em>encoding</em> にファミリー <em>family</em> が存在することを宣言してください．
 
-!LaTeX Error: Illegal character in array arg.
+! LaTeX Error: Illegal character in array arg.
 : &nbsp;<br>
 
 array，tabular 両環境の引数（個々の列の揃え方の指定）の中に使用できない文字
 （k など）が存在する場合のエラーメッセージです．<br>
 → 列の揃え方の指定が c，r などの使用できる指定だけからなるかどうかををチェックしてください．
 
-!LaTeX Error: \include cannot be nested.
+! LaTeX Error: \include cannot be nested.
 : &nbsp;<br>
 
 \include で読み込んだファイルの中で再び \include を用いた場合に現れるエラーメッセージです．<br>
@@ -297,7 +297,7 @@ enumetate 環境，itemize 環境といった list 系の環境の外部で
 正しければ，\DeclareMathVersion を用いて数式バージョン <em>version</em> を宣言してください．
 必要があれば，さらに \SetSymbolFont，\SetMathAlphabet を用いてこのバージョンの数式で用いるフォントの設定を行ってください．
 
-!LaTeX Error: Missing @-exp in array arg.
+! LaTeX Error: Missing @-exp in array arg.
 : &nbsp;<br>
 
 array，tabular 両環境の引数（個々の列の揃え方の指定）の末尾が文字 @
@@ -313,7 +313,7 @@ array，tabular 両環境の引数（個々の列の揃え方の指定）の末�
 後続のコマンドの引数になるはずのものがただの文字列として扱われている”
 ということも多いようです．いずれにせよ，プリアンブル部分の記述を見直すことになります．
 
-!LaTeX Error: Missing p-arg in array arg.
+! LaTeX Error: Missing p-arg in array arg.
 : &nbsp;<br>
 
 array，tabular 両環境の引数（個々の列の揃え方の指定）の末尾が文字 p
@@ -370,7 +370,7 @@ array，tabular 両環境の引数（個々の列の揃え方の指定）の末�
 のような記述を行った場合に現れます．<br>
 → \DeclareMathAccent の第 1 引数を修正して何らかのコマンドを用いるようにしてください．
 
-!LaTeX Error: Not in outer par mode.
+! LaTeX Error: Not in outer par mode.
 : &nbsp;<br>
 
 figure，table の両環境や \marginpar を“ページ分割できない”箇所で用いた場合のエラーメッセージです．<br>
@@ -388,7 +388,7 @@ figure，table の両環境や \marginpar を“ページ分割できない”�
 ! LaTeX Error: Option clash for package <em>package</em>.
 : &nbsp;<br>
 
-<em>package</em> を 2 度以上読み込んだ際に，
+<em>package</em> パッケージを 2 度以上読み込んだ際に，
 
 個々の読み込みの際のオプション指定が一致していない場合に現れるエラーメッセージです．
 例えば，プリアンブルで
@@ -448,7 +448,7 @@ tabbing 環境の中では \pushtabs によってタブ位置（\\= によって
 正しければ（コマンドを新設することになるのなら），
 \renewcommand ではなく \newcommand を使ってください．
 
-!LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 : &nbsp;<br>
 
 メッセージにもあるように，enumerate 環境などで \item
@@ -526,7 +526,7 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 オリジナルの LaTeX で処理すると上記のエラーメッセージが現れるので，
 オリジナルの LaTeX ではなく pLaTeX で処理するようにします．
 
-!LaTeX Error: This may be a LaTeX bug.
+! LaTeX Error: This may be a LaTeX bug.
 : &nbsp;<br>
 
 バグかもしれないと言っていますが，実際には単に“起こり得ないはずの状況”が起こった，ということです．
@@ -646,7 +646,7 @@ bm パッケージの使用を取り止めて \boldsymbol を用いることに�
 一方，\usepackage で読み込むパッケージの中の \LoadClass については，
 読み込まれるファイルの拡張子を変更して \RequirePackage あたりで済ませてください．
 
-!LaTeX Error: Undefined tab position.
+! LaTeX Error: Undefined tab position.
 : &nbsp;<br>
 
 tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，
