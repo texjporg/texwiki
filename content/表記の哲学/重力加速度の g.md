@@ -46,7 +46,7 @@ pukiwiki: "表記の哲学/重力加速度の g"
     \usepackage[varg]{txfonts}
     ```
 
-    とパッケージ指定すればよい．
+    と，varg オプションを指定すればよい．
 
 <table><tbody>
 <tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">$\mathrm{g}$</td><td style="text-align:center">$g$</td></tr>
@@ -59,7 +59,7 @@ pukiwiki: "表記の哲学/重力加速度の g"
     \usepackage{txfonts}
     ```
 
-    とパッケージ指定した場合は以下のように表示される．
+    と，デフォルトの場合は以下のように表示される．
 
 <table><tbody>
 <tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">$\mathrm{g}$</td><td style="text-align:center">$g$</td></tr>
@@ -69,7 +69,7 @@ pukiwiki: "表記の哲学/重力加速度の g"
 - (参考) PukiWiki + [mimeTeX](/mimeTeX/) では以下のように表示される．
 
 <table><tbody>
-<tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">*mimetex(\mathrm{g})*</td><td style="text-align:center">*mimetex(g)*</td></tr>
+<tr><td style="text-align:center">g</td><td style="text-align:center">&#39;&#39;&#39;g&#39;&#39;&#39;</td><td style="text-align:center">&amp;mimetex(\mathrm{g});</td><td style="text-align:right">&amp;mimetex(g);</td></tr>
 <tr><td style="text-align:center">g</td><td style="text-align:center"><em>g</em></td><td style="text-align:center"><code>\mathrm{g}</code></td><td style="text-align:center"><code>g</code></td></tr>
 </tbody></table>
 
@@ -79,5 +79,6 @@ pukiwiki: "表記の哲学/重力加速度の g"
 - 書き味ともに加工してみましたが，いかがですか？ --  2004-09-16 (木) 21:42:33
 - その昔FAQでこの回答をした者です．久しぶりに読んだら分かりづらいなあ．．と思っておりました．ありがとうございます！とても分かりやすくなりましたね！ちなみに，，重力加速度をどちらの字形で示すのかという決まりは「無い」と思われます（あれ以来調べておりましたが，記述は見付かりませんでした）． -- momo 2004-09-16 (木) 23:31:15
 - 上記の質問をしたものです．明確な答えがなかったのですが，再度の質問がしにくかったので，この際と思ってまとめてみました．褒めてもらってうれしいです（たぶん論点が少しずれてしまっていたのですよね）．あれ以来ずっと気にしていただいているのもうれしいです．私もそういう記事は見つけられずにいます． -- Kuroky 2004-09-16 (木) 23:53:55
+- 単位記号はローマン体，変数記号（重力加速度を含め）は数式用イタリック体，重力加速度gと他の変数gを字形で区別するルールはない（がするのは自由），ということでしょうか -- 奥村 2004-09-20 (月) 20:05:14
 
 [^1]: 今のところ重力加速度はどちらの字形で示すかの回答はない
