@@ -50,6 +50,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/tkbibtex/">tkbibtex</a></td><td>tcl/tk </td><td>.bibファイル作成編集プログラム。日本語表示OKだが、atokxでは入力できない。</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
 <tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
+<tr><td><a href="http://www.h7.dion.ne.jp/~yochian/macro.htm">BibFile Editor</a></td><td>Windows95が動くコンピュータ</td><td>簡易エディタ。</td></tr>
 </tbody>
 </table>
 
