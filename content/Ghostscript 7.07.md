@@ -14,7 +14,7 @@ pukiwiki: "Ghostscript 7.07"
 
 ### News {#qc5125cb}
 
-- \[040723\] [URWフォントのバグ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/urwbug.html)
+- \[040723\] URWフォントのバグ
 
 ### はじめに {#he9c7727}
 
@@ -353,4 +353,4 @@ B列（B5判など）の出力については TeX の掲示板の
 以下に話題が出ています。
 GhostscriptのB列はJISではなくISOなのでサイズが微妙に違います。
 たとえばJISのB4は /jisb4 と定義されています（gs_statd.ps）。
-dvipsのサイズ指定については [ここ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dvips.html) 参照。
+dvipsのサイズ指定については [ここ](/dvips/) 参照。
