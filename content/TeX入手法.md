@@ -9,6 +9,10 @@ pukiwiki: "TeX入手法"
 
 ## TeXと関連ソフトの入手先 {#z43d673b}
 
+\[TODO\] OSごとのページができたのでこれはそちらに吸収させてもいいですね。-- 奥村
+
+***
+
 Windows については インストール(Windows) のページをご覧ください。
 
 Macintosh 用は，内山さんの
@@ -21,12 +25,12 @@ Mac OS X については上記のほか桐木さんの
 [pTeX package for MacOSX](http://www.r.dendai.ac.jp/kiriki/tex/)
 に詳しい情報や掲示板があります。
 Mac OS X は中身は UNIX ですので，私の
-[Linux での teTeX-2.0，pTeX，pLaTeX2e のインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-linux.html)
+[UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール](/Make/)
 もまったくそのままで大丈夫でした。
 
 LinuxについてはUedaさんのWikiがこのTeX Wikiにマージされましたので，ディストリビューションごとの項目をご覧ください。
 ソースからコンパイルする方法は私の
-[Linux での teTeX，pTeX，pLaTeX2e のインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-linux.html)
+[UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール](/Make/)
 をご覧ください。
 以下は要編集：
 
@@ -59,7 +63,7 @@ TeX 関連のソフトやスタイルファイルを集大成した
 CTAN (Comprehensive TeX Archive Network) については
 [CTAN](/CTAN/) の項目をご覧ください。
 
-UNIX 上で dviout に相当するソフトは xdvi です。
+UNIX 上で dviout に相当するソフトは xdvi です。（Red Hat Linux、Fedora Core では pxdvi です。）
 日本語版についての詳細は [山賀さん](http://www.yama-ga.com/) の
 [xdvi 日本語化・機能拡張パッチのページ](http://www.yama-ga.com/xdvi-j/)
 および土村さんの
