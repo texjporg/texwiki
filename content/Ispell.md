@@ -57,8 +57,16 @@ ispell -d german german.tex <--- 7ビット入力ファイルを新正書法で�
 
 のように打ち込んでテストします。
 
+[7ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/deutsch.png)
+
+[7ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/german.png)
+
 - 
     Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Deutsch8 Dict (8ビット旧正書法用) あるいは German8 Dict (8ビット新正書法用) 辞書を選択し，deutsch8.tex または german8.tex を開いてスペルチェックをかけてみてください。
+
+[8ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/deutsch8.png)
+
+[8ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/german8.png)
 
 #### Linux の場合 {#h8de4132}
 
@@ -217,5 +225,9 @@ ispell -d francais francais-tex.tex <--- 7ビット入力ファイルをチェ�
 
 のように打ち込んでテストします。
 
+[7ビット入力ファイルをチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/francais-tex.png)
+
 - 
-    Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Francais Dict 辞書を選択し，fraincais8.tex を開いてスペルチェックをかけてみてください。
+    Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Francais Dict 辞書を選択し，fraincais.tex を開いてスペルチェックをかけてみてください。
+
+[8ビット入力ファイルをチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/francais.png)
