@@ -31,6 +31,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://refdb.sourceforge.net/">RefDB</a></td><td>UNIX/MacOS X/Windows</td><td>SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
 <tr><td><a href="http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm">TeXBibMaker(Excel2000マクロ)</a></td><td>Excel2000が動くパソコン</td><td>文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート</td></tr>
+<tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref</a></td><td> Windows</td><td>論文を書くための文献管理ソフトウェア</td></tr>
 </tbody>
 </table>
 
