@@ -14,7 +14,8 @@ pukiwiki: "ArchiveQandA"
 ### WinShellのエラーメッセージ {#l91d86a6}
 
 - 文字が90&deg;回転して表示される（[qa:22602](https://okumuralab.org/~okumura/texfaq/qa/22602.html), [qa:32720](https://okumuralab.org/~okumura/texfaq/qa/32720.html)など）
-    - \[Options\]-\[Font\]で設定した表示フォントに「@」のついたフォントを指定していませんか？ @は縦書き用のフォントです。@のない「MS ゴシック」などに変えましょう。
+    - \[Options\]-\[Font\]で設定した表示フォントに「@」のついたフォントを指定していませんか？ @は縦書き用のフォントです。@のない「ＭＳ ゴシック」などに変えましょう。
+        <!-- 気持ち悪いですが，ＭＳは全角英数のようです． -->
 
 - DVIWINボタンを押しても“One or more errors occured!　Please check the options!”と言われます（[qa:29850](https://okumuralab.org/~okumura/texfaq/qa/29850.html), [qa:29142](https://okumuralab.org/~okumura/texfaq/qa/29142.html)など）
     - dvioutへのパスを通していない、あるいはDVIWIN設定ダイアログで（インストールディレクトリ）C:\dviout\dviout.exeと正しい場所を指定していないからです。[WinShell](/WinShell/#h2ab6f8d)のページを参照して、修正しましょう。
@@ -29,15 +30,9 @@ pukiwiki: "ArchiveQandA"
 
 ### TeX本体のエラーメッセージ {#s54a975c}
 
-- <strong>! TeX capacity exceeded, sorry ...</strong>（[qa:32844](https://okumuralab.org/~okumura/texfaq/qa/32844.html), [qa:32596](https://okumuralab.org/~okumura/texfaq/qa/32596.html)など）
-
-<br>
-
-    スタイルファイルやマクロの衝突や不具合で起きることがあるので，使用するスタイルファイルやマクロを再検討すること。
-    本当に足らない場合には $TEXMF/web2c/texmf.cnf にあるパラメータの数値を大きくする。大きくしても反映されない場合にはフォーマットファイルを作り直してみる。
-    なお，最近の TeX ではこれらのパラメータは最初から大きなものに設定されている。
-
-<div style="text-align:right"><a href="/TeX のエラーメッセージ/">一覧</a></div>
+<!-- -''! TeX capacity exceeded, sorry ...''（[[qa:32844]], [[qa:32596]]など） -->
+<!-- Q&A で良く出るものはここに書いたほうが良い？  -->
+- [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
 
 ### LaTeXのエラーメッセージ {#m585375b}
 
