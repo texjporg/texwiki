@@ -38,13 +38,13 @@ Mathabx フォントの出力例を次に示します。
 - Mathux : 特殊な大型演算子等を含む数式記号類 (<strong>u</strong>nsupported e<strong>x</strong>tensible symbols series)
 - Mathastrotest : 天文記号等 (about the metaness of <strong>astro</strong>nomical/logical symbols)
 
-詳細は配布に含まれる [mathtest.tex](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.tex) を tex で typeset して得られる文書を参照してください。これはそれ自体が Mathabx フォントのサンプルと簡単な説明を兼ねたものになっています。同じものを PS 形式 ([mathtest.ps](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.ps)) および PDF 形式 ([mathtest.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.pdf)) に変換したものも CTAN の同じディレクトリ ([CTAN:fonts/mathabx/](https://mirror.ctan.org/fonts/mathabx/)) に置いてあります。あるいは[一次配布元](http://www-math.univ-poitiers.fr/~phan/metafont.html#mathabx)には PS を gzip で固めたものが置いてあります。
+詳細は配布に含まれる [mathtest.tex](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.tex) を <strong>tex</strong> で typeset して得られる文書を参照してください。これはそれ自体が Mathabx フォントのサンプルと簡単な説明を兼ねたものになっています。同じものを PS 形式 ([mathtest.ps](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.ps)) および PDF 形式 ([mathtest.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/mathtest.pdf)) に変換したものも CTAN の同じディレクトリ ([CTAN:fonts/mathabx/](https://mirror.ctan.org/fonts/mathabx/)) に置いてあります。あるいは[一次配布元](http://www-math.univ-poitiers.fr/~phan/metafont.html#mathabx)には PS を gzip で固めたものが置いてあります。
 
 ### インストール {#q2fbcaf5}
 
-[CTAN](https://mirror.ctan.org/fonts/mathabx/) から MetaFont 形式のフォント本体 (source ディレクトリ下) とマクロ (texinputs ディレクトリ下) を取ってきて、[README](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/README) にしたがって適切なディレクトリに収めてください。実際の利用には TFM (\*.tfm) や Type1 フォント (\*.pfb) 等を自動または手動で生成して使用することになるでしょう。
+[CTAN](https://mirror.ctan.org/fonts/mathabx/) から MetaFont 形式のフォント本体 (source ディレクトリ下) とマクロ (texinputs ディレクトリ下) を取ってきて、[README](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/README) にしたがって適切なディレクトリに収めてください。実際の利用時に mf ファイルから TFM (\*.tfm) が生成され, mathabx が利用可能となります. Type1 フォントを埋め込んだ PS ファイルを作成する場合などには[CTAN](https://mirror.ctan.org/fonts/ps-type1/mathabx/) から map ファイルおよび Type1 フォントファイル (\*.pfb) を取ってきて、[README](http://mirror.ctan.org/fonts/ps-type1/mathabx/README) を参考にして適切なディレクトリに収め, 必要に応じて mktexlsr や updmap を実行してください.
 
-後述の堀田先生のページには、すぐに利用可能な形でこれらのファイルをまとめたものが用意されていますので、そちらからパッケージを頂いてきたほうが簡単です。Vine Linux 3.1 用の Vine Plus には mathabx-2003-0vl3.noarch.rpm として、堀田先生の公開パッケージが同梱されています。
+また, mathabx は TeXLive にも収録されており, たとえば Debian(deb) や Fedora(rpm) などでは texlive-fonts-extra パッケージをインストールすることで mathabx が利用可能になります.
 
 ### その他 Web 上にある情報 {#qad506aa}
 
