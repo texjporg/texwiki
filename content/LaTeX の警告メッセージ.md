@@ -16,7 +16,8 @@ pukiwiki: "LaTeX の警告メッセージ"
 
 なお，以下の記述では \somecs を“コマンド名を一般的に表す記号”として用いています．
 メッセージに \somecs という文字列が現れているわけではないので注意してください．
-また，警告メッセージ中の“on input line <em>lineno</em>”（<em>lineno</em> は行番号）
+また，メッセージは原則としてアルファベット順に並べ，
+メッセージ中の“on input line <em>lineno</em>”（<em>lineno</em> は行番号）
 という記述は原則として“...”と略し，
 メッセージの 2 行目以降の先頭に現れることがある“(Font)”の類の
 （メッセージが継続していることを表す）記述は省略しています．
@@ -203,7 +204,7 @@ LaTeX Warning: File \`<em>filename</em>&#39; already exists on the system.<br> N
 : &nbsp;<br>
 
 filecontents(\*) 環境を用いてファイル <em>filename</em> を生成しようとした際に，
-すでにこのファイルが存在していたため生成するのを取り止めた場合に現れるメッセージです．
+すでにこのファイルが存在していたため生成するのを取り止めた場合に現れるメッセージです．<br>
 → 無視しても構いませんが，処理結果がおかしい場合にはファイル <em>filename</em>
 の中身が filecontents(\*) 環境から生成させたものと一致するかどうかを確認してください．
 一致しない場合には，すでに存在しているほうのファイル <em>filename</em>
@@ -306,7 +307,7 @@ LaTeX Warning: No \author given.
 （使用するクラスファイルによっては現れないこともあります）．<br>
 → \maketitle 以前の部分で \author を用いてください．
 
-LaTeX Warning: No positions in optional float specifier.<br> Default added (so using \`positions&#39;).
+LaTeX Warning: No positions in optional float specifier.<br> Default added (so using \`<em>positions</em>&#39;).
 : &nbsp;<br>
 
 figure 環境などの配置指定（オプション指定）に
