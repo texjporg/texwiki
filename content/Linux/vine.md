@@ -1,0 +1,131 @@
+---
+title: "Linux/vine"
+url: "/Linux/vine/"
+date: 2004-09-06T17:10:27Z
+pukiwiki: "Linux/vine"
+---
+
+# Linux/vine
+
+## VineLinux3.0 {#c910db28}
+
+VineLinux3.0がリリースされました。おそらく、日本語TeXを使う上では
+最もよく調整されたものになっているはず。
+
+### インストール {#c9fbb999}
+
+```
+$ sudo apt-get install task-tetex
+```
+
+これで、jvf tetex tetex-extra xdvik dvipdfmx tetex-macros がインストールされる。
+
+その他、必要に応じて下記をインストールする。
+
+<table>
+<tbody>
+<tr><td> detex </td><td> TeXコマンドを取り除くプログラム</td></tr>
+<tr><td> ghostscript-fonts </td><td> Fonts for the Ghostscript PostScript(TM) interpreter.</td></tr>
+<tr><td> latex2html </td><td> LaTeX ファイルを HTML 形式に変換するツール</td></tr>
+<tr><td> yatex </td><td> 野鳥(YaTeX) - Yet Another TeX mode for Emacs</td></tr>
+<tr><td> TeXmacs </td><td> A structured wysiwyg scientific  text editor</td></tr>
+<tr><td> auctex </td><td> Emacs 上でのtexファイル編集を支援するマクロパッケージです</td></tr>
+<tr><td> dvi2tty </td><td> convert dvi files to simple ASCII</td></tr>
+<tr><td> jadetex </td><td> TeX macros used by Jade TeX output.</td></tr>
+<tr><td> latex-xft-fonts </td><td> xft-compatible LaTeX fonts for math symbols</td></tr>
+<tr><td> lyx </td><td> LaTeX形式でも保存できる簡易ワープロ</td></tr>
+<tr><td> mathabx </td><td> TeX 用の新しい数式フォント</td></tr>
+<tr><td> plain2 </td><td> plain-text converter (to LaTeX, ROFF and HTML)</td></tr>
+<tr><td> task-texmacro-info </td><td> 情報科学工学に関する teTeX マクロをインストールするための仮想パッケージ</td></tr>
+<tr><td> task-texmacro-phys </td><td> 物理学に関する teTeX マクロをインストールするための仮想パッケージ</td></tr>
+<tr><td> tetex-doc </td><td> TeX テキスト整形システムに関する説明文書類</td></tr>
+<tr><td> texmacro-his </td><td> tetex で使うマクロパッケージ ヒューマンインタフェース学会論文原稿作成用</td></tr>
+<tr><td> texmacro-ieice </td><td> teTeX で使うマクロパッケージ 電子情報通信学会論文原稿、技術研究報告作成用</td></tr>
+<tr><td> texmacro-ipsj </td><td> teTeX で使うマクロパッケージ 情報処理学会論文原稿作成用</td></tr>
+<tr><td> texmacro-jps </td><td> tetex で使うマクロパッケージ 日本物理学会論文原稿作成用</td></tr>
+<tr><td> texmacro-otf </td><td> tetex で使うマクロパッケージ (齋藤修三郎氏による「OpenType Font用VF」)</td></tr>
+<tr><td> tgif2tex </td><td> tgif の図中の文字列を TeX で処理する</td></tr>
+<tr><td> python-bibtex </td><td> Python extension to parse BibTeX files.</td></tr>
+</tbody>
+</table>
+
+## xdvi関連の設定 {#j0808b38}
+
+Vine3.0では、xdviがType1 フォントを使えるようになったので、もう pk フォントは必要なくなりました。また、src-special に対応になりました。 xdvi とエディタの間で、対応する部分に相互にジャンプができるようになりました。 
+
+### src-special {#q8a76901}
+
+platexコマンドにに-src-specialsオプションを付けてコンパイルするとsrc-specialが埋め込まれたdviができあがります。
+
+#### emacsの設定 {#dd48a0a7}
+
+$HOME/.emacs.el の設定は、/etc/skel/.emacs.el に標準的なものが書いてありますが、524行目あたりの
+
+```
+     tex-command "platex"
+```
+
+を
+
+```
+     tex-command "platex -src-specials"
+```
+
+に書き換えておくと便利でしょう。
+
+標準的な設定とは以下のことです。
+
+```
+;; TeX source special のための設定
+(require 'xdvi-search) ; 必須
+(custom-set-variables
+ '(server-switch-hook (quote (raise-frame)))) ; 窓を上に
+(custom-set-faces)
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map "\C-c\C-j" 'xdvi-jump-to-line)))
+```
+
+#### 使い方 {#m58ea2ef}
+
+- emacs から xdvi へのジャンプは、 TeX ソースを編集中に C-c C-j または M-x xdvi-jump-to-line と入力します。（必要ならば）xdvi が立ち上がり、該当部分に四角の印がつきます。
+
+- xdvi から emacs へのジャンプは、 Ctrl + マウスクリックです。
+
+## Tips {#i9701d34}
+
+- ghostscript-7.07 のおかげで、日本語PDFを作れる場面が増えました。
+
+```
+ps2pdf -dNOKANJI hoge.ps
+```
+
+と、"-dNOKANJI" オプションを付けるのがポイントです。
+
+なお、ghostscript のフロントエンドとしては、
+ggv が採用されました。
+以前の gv は VinePlus にあります。
+
+- PDF 作成の dvipdfmx が Vine本体に収録されました。
+    日本語のしおりの作り方が変更になりました。
+    dvipdfm で必要だった out2uni は不要になり、
+    その代わりに、プリアンプルに
+
+```
+\usepackage[dvipdfm,bookmarks=true,bookmarksnumbered=true,%
+bookmarkstype=toc]{hyperref}
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+```
+
+のように書いておきます。（３行目がポイントです。）
+Linux 版 Adobe Reader では日本語のしおりは化けるので、
+Win 版などで動作確認してください。
+なお、dvipdfm は dvidfmx へのシンボリックリンクにしています。
+
+- tetex-extra パッケージはインストール CD には収録されていません。
+    TX fonts, PX fonts 等も含まれているので、
+    apt-get でインストールするのがよいでしょう。
+
+- 齋藤修三郎氏の OTF パッケージが、VinePlus に texmacro-otf として用意されています。
+    dvipdfmx と組み合わせると、商用フォントがなくても、
+    囲み付き文字や「はしご高」などを含んだ PDF を作れます。
