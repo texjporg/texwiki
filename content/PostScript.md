@@ -19,7 +19,7 @@ PostScript は業界標準のページ記述言語です。
 
 なお、Ghostscript は PostScript ソフトウェア RIP （インタープリタ） です。
 
-### POSTSCRIPT, GHOSTSCRIPT {#h5ddd3dc}
+### PostScript, Ghostscript {#h5ddd3dc}
 
 - [Ghostscript, Ghostview and GSview](http://www.cs.wisc.edu/~ghost/) (wisc.edu) /
     [Ghostscript](http://sourceforge.net/projects/ghostscript/) (SourceForge)
