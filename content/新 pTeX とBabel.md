@@ -10,19 +10,19 @@ pukiwiki: "新 pTeX とBabel"
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
 - \[041020\]
-    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんのページ (Hyphenation の項目)](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
+    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの Hyphenation](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
-- \[040929\]（永田善久）
-    ギリシア数字の出力に関して greek.ldf にバグがあります。訂正法は[投稿記事\[qa:31769\]参照](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31769.html)
+- \[040929\]
+    ギリシア数字の出力に関して greek.ldf にバグがあります。\[[qa:31769\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31769.html)
 
-- \[040929\]（永田善久）
+- \[040929\]
     russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
 
-- \[040927\]（永田善久）
+- \[040927\]
     map ファイルも texmf-local/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，texmf/ メインツリーには基本的に手を加えないでよいこととなります。
 
-- \[040925\]（永田善久）
-    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。[元記事\[qa:31641\]参照](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31641.html)
+- \[040925\]
+    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
 
 以下では LaTeX/pLaTeX フォーマットファイルに追加のハイフネーションパタンを組み込む方法を具体例で記します。
 
@@ -223,7 +223,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) ページにある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[このページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
@@ -273,4 +273,4 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ### もっと本格的に・・・ {#z684b1d0}
 
-もっと沢山の，もっと別の言語を，という場合には，稲垣徹さんの [日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/index.html) のページを参照してください
+世界の言語あるいは文字をどこまで表現できるかについては，[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/index.html) のページを参照してください
