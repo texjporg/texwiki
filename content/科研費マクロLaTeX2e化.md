@@ -42,7 +42,7 @@ kakenhi.cls というファイルは kkhgrp.mac の先頭に次のものを加�
   \ifdim\parindent>\z@
     \parindent=1zw
   \fi
-  \kanjiskip=0zw plus .1zw minus .01zw
+  \kanjiskip=0zw plus .1zw minus .05zw
   \ifdim\xkanjiskip>\z@
     \xkanjiskip=0.25em plus 0.15em minus 0.06em
   \fi}
