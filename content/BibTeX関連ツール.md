@@ -116,5 +116,6 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td> hyperbibtex </td><td> </td><td> </td></tr>
 <tr><td> mathsci2bibtex </td><td> </td><td> </td></tr>
 <tr><td> noTeX.bst </td><td> </td><td> </td></tr>
+<tr><td> <a href="http://namazu.org/~satoru/scbib/">scbib</a> </td><td> <a href="http://www.shiro.dreamhost.com/scheme/gauche/">Gauche</a>（Schemeインタプリタ）</td><td> Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能 </td></tr>
 </tbody>
 </table>
