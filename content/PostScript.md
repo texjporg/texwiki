@@ -22,10 +22,7 @@ PostScript は業界標準のページ記述言語です。
 [ページ記述言語 PostScriptチュートリアル&amp;クックブック](http://www.amazon.co.jp/exec/obidos/ASIN/4756100058/)，[PostScriptリファレンスマニュアル](http://www.amazon.co.jp/exec/obidos/ASIN/4756138225/)
 がお薦めです（レファレンスは上記サイトからもダウンロードできます）。
 
-Ghostscript は PostScript ソフトウェア RIP（インタープリタ）です。
-最新バージョンは AFPL 版が 8.14，GPL 版が 7.07 です。
-どちらも問題なく使えます（8.00 は問題あり）。
-Windows 用のフロントエンドは GSview，X11 用のフロントエンドには gv，ggv があります。
+[Ghostscript](/Ghostscript/) は PostScript ソフトウェア RIP（インタープリタ）です。
 
 - [POSTSCRIPT &amp; GHOSTSCRIPT Resources](http://www.geocities.com/SiliconValley/5682/postscript.html)
 - [Ghostscript, Ghostview and GSview](http://www.cs.wisc.edu/~ghost/) (wisc.edu)
@@ -41,7 +38,7 @@ Windows 用のフロントエンドは GSview，X11 用のフロントエンド�
 - [東北大物性理論研](http://www.cmpt.phys.tohoku.ac.jp/Busseiriron/r410/) (EPS, tgif などの話題あり)
 - [PoweredKobe さん](http://member.nifty.ne.jp/~PoweredKobe/)リンク切れてます
     (フリーソフトでpdf作成，簡単ポストスクリプトの記述)
-
+    - [Googleのキャッシュ](http://www.google.co.jp/search?q=cache:h4cIXDxkyNsJ:member.nifty.ne.jp/~PoweredKobe/gsw/)
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html) (奥村＠滋賀県立大さん)
 - [PDFlib home page](http://www.pdflib.com/)
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html) (旧 JAIST コンテンツのミラー)
