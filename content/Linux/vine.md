@@ -36,7 +36,7 @@ $ sudo apt-get install task-tetex
 <tr><td> jadetex </td><td> TeX macros used by Jade TeX output.</td><td>○</td></tr>
 <tr><td> latex-xft-fonts </td><td> xft-compatible LaTeX fonts for math symbols</td><td>○</td></tr>
 <tr><td> lyx </td><td> LaTeX形式でも保存できる簡易ワープロ</td><td>○</td></tr>
-<tr><td> mathabx </td><td> TeX 用の新しい数式フォント</td><td>○</td></tr>
+<tr><td> mathabx </td><td> TeX 用の新しい数式フォント (堀田先生の<a href="http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html">作成パッケージ</a> / <a href="http://www.geocities.jp/koh_hotta/ghost/mathabx.html">ミラーサイト</a>)</td><td>○</td></tr>
 <tr><td> plain2 </td><td> plain-text converter (to LaTeX, ROFF and HTML)</td><td>○</td></tr>
 <tr><td> task-texmacro-info </td><td> 情報科学工学に関する teTeX マクロをインストールするための仮想パッケージ</td><td>○</td></tr>
 <tr><td> task-texmacro-phys </td><td> 物理学に関する teTeX マクロをインストールするための仮想パッケージ</td><td>○</td></tr>
