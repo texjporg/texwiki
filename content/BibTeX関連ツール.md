@@ -27,7 +27,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.iui.se/staff/jonasb/bibedit/">BibEdit</a></td><td>Windows</td><td>.bibファイル作成・管理</td></tr>
 <tr><td><a href="http://allbib.sourceforge.net/">allbib</a></td><td>perl gtk</td><td>.bibファイル編集・管理ソフト</td></tr>
 <tr><td><a href="http://pybliographer.org/">Pybliographer</a></td><td>gtk python</td><td>多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り</td></tr>
-<tr><td><a href="http://sourceforge.net/projects/sixpack">Sixpack</a></td><td>perl</td><td>文献・電子ジャーナル管理ソフト</td></tr>
+<tr><td><a href="http://sourceforge.net/projects/sixpack">Sixpack</a></td><td>perl perl-Tk</td><td>文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。</td></tr>
 <tr><td><a href="http://refdb.sourceforge.net/">RefDB</a></td><td>UNIX/MacOS X/Windows</td><td>SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
 </tbody>
@@ -38,7 +38,7 @@ pukiwiki: "BibTeX関連ツール"
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td>bibtex.el </td><td> emacs </td><td> 文献の効率的入力を支援 </td></tr>
+<tr><td>bibtex.el </td><td> emacs </td><td> 文献の効率的入力を支援</td></tr>
 <tr><td><a href="http://remote.science.uva.nl/~dominik/Tools/reftex/">reftex.el</a> </td><td> emacs </td><td> LaTeX文書とbibファイルの連携機能を提供</td></tr>
 <tr><td> bibfind </td><td>perl</td><td>bibファイルの中を検索 </td></tr>
 <tr><td> bibindex </td><td>UNIX</td><td>bibファイルをbixファイルに変換。bixファイルの中を検索 </td></tr>
@@ -52,6 +52,19 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
 </tbody>
 </table>
+
+emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、
+
+```
+(setq bibtex-user-optional-fields
+ '(("annote" "Personal annotation (ignored)")
+ ("yomi" "Yomigana")
+ ("location" "where it is (ignored)")
+ ("memo" "Memorundum (ignored)")
+))
+```
+
+とでも設定しておく。
 
 ## BibTeX形式への変換ツール（インポート） {#t7366eb3}
 
