@@ -73,6 +73,10 @@ pukiwiki: "ArchiveQandA"
 - 紙面の外側に通し番号
 - \label{}, \ref{} を目に見えるように張る
     - [CTAN:macros/latex/required/tools/showkeys.dtx](https://mirror.ctan.org/macros/latex/required/tools/showkeys.dtx) ([qa:19427](https://okumuralab.org/~okumura/texfaq/qa/19427.html), ...)
+- ハイフネーションの禁止
+    - \hyphenpenalty=10000 \exhyphenpenalty=10000 と設定
+    - \lefthyphenmin=100 \righthyphenmin=100 と設定
+        <!-- ほかにもありますが，この 2 通りが手軽でしょう． -->
 
 ### コメント {#adc20c89}
 
