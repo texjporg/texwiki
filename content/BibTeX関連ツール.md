@@ -16,8 +16,8 @@ pukiwiki: "BibTeX関連ツール"
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td> BibTexMng </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
-<tr><td> JavaBib </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
+<tr><td> <a href="http://www.imamod.ru/~vab/bibtexmng/">BibTexMng</a> </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
+<tr><td> <a href="http://www.tug.org/tex-archive/biblio/bibtex/utils/JavaBib/">JavaBib</a> </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
 <tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト（旧称 <a href="http://csb.stanford.edu/nbatada/JBibtexManager/">JBibtexManager</a>）</td></tr>
 <tr><td> <a href="http://bibdesk.sourceforge.net/">BibDesk</a> </td><td> MacOSX </td><td> BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます </td></tr>
 <tr><td><a href="http://homepage.mac.com/tukanobu/sonota/yamako2.html">やまこ２号</a></td><td> MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4</td><td> 文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる</td></tr>
@@ -31,9 +31,11 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://refdb.sourceforge.net/">RefDB</a></td><td>UNIX/MacOS X/Windows</td><td>SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
 <tr><td><a href="http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm">TeXBibMaker(Excel2000マクロ)</a></td><td>Excel2000が動くパソコン</td><td>文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート</td></tr>
-<tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref</a></td><td> Windows</td><td>論文を書くための文献管理ソフトウェア</td></tr>
+<tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref for Windows</a></td><td> Windows</td><td>フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．<a href="http://members3.jcom.home.ne.jp/refwin/html/latex.htm">LaTeXへのサポート</a></td></tr>
 </tbody>
 </table>
+
+<br>
 
 ## bibファイルの作成編集支援ツール {#t7b99d07}
 
@@ -111,6 +113,8 @@ BibTeX形式に変換するWebアプリが公開されている
 <tr><td><a href="http://galland.stephane.free.fr/arakhne.org/bib2html/">Bib2HTML</a></td><td>perl</td><td> Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaffの<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a>とほぼ同名であるため注意。</td></tr>
 </tbody>
 </table>
+
+<br>
 
 ## 未整理 {#w1b8079d}
 
