@@ -60,21 +60,24 @@ Computer Modern Roman/Italic と TX フォントの出力例です（PNG画像�
 
 !["Computer Modern と TX フォントの比較"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/txr.png)
 
-LaTeX2e はもともと times パッケージを使うと Times フォントになるように作られていますが，
-times パッケージは TeX の得意な ffi や ffl のリガチャ（合字）も出せず，
-数式部分は Computer Modern になってしまいます。
-数式部分も Times にする mathptm，mathptmx というパッケージもありますが，
-出力できない数学記号もあり，バランスもいまいちでした。
-
 TX フォントの作者
 [Young U. Ryu](http://www.utdallas.edu/~ryoung/)
 さんは Palatino ベースの
 [PX Fonts](http://www.utdallas.edu/~ryoung/pxfonts/)
 も作っておられます。
 
+### 補足 {#ma713e1b}
+
+TXフォントが出たころは、期待感がたいへん大きかったのですが、Ryu氏はその後TXやPXからまったく手を引いてしまい、彼のWebページからも削除された状態です。
+バランスの悪いところは未修整のままです。
+今では、LaTeXに標準で含まれ、少しずつ改良が続けられているmathptmxのほうに期待を持っている人のほうが多いかもしれません。
+
+でも、それはオープンソースソフトの良いところで、誰でも彼のやり残したところを改善することができますし、mathptmxの良いところを合わせてまったく新しいものを作ることもできます。
+どなたかぜひ挑戦してください。
+
 ### インストール（Windows） {#o79bd0d3}
 
-角藤さんの W32TeX にはすでに含まれています（txpx-pazofonts.tar.gz，t1fonts.tar.gz）ので，何もする必要はありません。
+角藤さんの W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.gz，t1fonts.tar.gz）ので，何もする必要はありません。
 dviout で使う場合は Ghostscript もインストールする必要があります。
 
 TX フォントのバージョンを上げたなら
