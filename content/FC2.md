@@ -29,7 +29,7 @@ su
 mv /etc/yum.conf /etc/yum.conf.org
 ```
 
-を実行して設定ファイルのバックアップをと。
+を実行して設定ファイルのバックアップをとります。
 次に
 
 ```
@@ -248,7 +248,7 @@ pdvips -o test.ps test
 このファイルは
 
 ```
-ggv test.ps &
+ggv test.ps
 ```
 
 で見ることができます。
@@ -294,7 +294,7 @@ su -c './INSTALL'
 
 を実行すると、Acrobat Reader がインストールされます。
 途中で「To accept the terms and conditions of this agreement enter "accept".」などと聞かれるので、「accept」と答えます。
-他の質問にはそのままエンターキーで進みます。
+他の質問にはそのままEnterキーで進みます。
 
 ```
 cd /tmp
@@ -379,7 +379,7 @@ dvipdfmx test
 ここで
 
 ```
-acroread test.pdf &
+acroread test.pdf
 ```
 
 を実行すると、確認することができます。
