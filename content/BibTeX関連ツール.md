@@ -71,7 +71,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td> isi2bibtex </td><td>perl </td><td>isiの検索結果をBibTeX書式に変換 </td></tr>
+<tr><td> <a href="http://www-lab.imr.tohoku.ac.jp/~t-nissie/computer/software/isi2bibtex/">isi2bibtex</a> </td><td>Ruby,perl</td><td>isi(Web of Science等)の検索結果をBibTeX書式に変換 </td></tr>
 <tr><td> ams2bib </td><td>Unixなど </td><td>AmSTeX文献をBibTeX形式に変換 </td></tr>
 <tr><td><a href="http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html">medlinebib</a></td><td>UNIX?</td><td>MEDLINE形式データのインポート</td></tr>
 <tr><td><a href="http://shakan2.tm.nagasaki-u.ac.jp/ichu2bibtex.pl.html">ichu2bibtex.pl</a></td><td>perl</td><td>和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム</td></tr>
