@@ -15,11 +15,30 @@ pukiwiki: "科研費マクロLaTeX2e化"
 これを LaTeX2e らしく \documentclass を使うように書き直してみます。
 
 まず k2004mac.tar.bz2 を適当な場所で展開します。
+このファイルは頻繁に更新されていますので，最新のものを取ってきてください。
 
 この中の macro というフォルダ中のものだけが必要なものです。
 src.tex がサンプルファイルです。
-まず，これの先頭に \documentclass{kakenhi} を，末尾に \end{document} を付けます。
-また，この中の \input kkhgrp.mac という行はコメントアウトします（消します）。
+まず，これの先頭に
+
+```
+\documentclass{kakenhi}
+```
+
+を，末尾に
+
+```
+\end{document}
+```
+
+を付けます。
+また，この中の
+
+```
+\input kkhgrp.mac
+```
+
+という行はコメントアウトします（消します）。
 
 \begin{document} はどこにあるの？
 \OutputPages という命令が \begin{document} を呼び出しています。
