@@ -205,3 +205,183 @@ Ver. 1.80
 \end{flushright}
 
 \end{document}
+
+### 上記の記述を改善した例 {#b940a313}
+
+```
+% デバイスドライバは適宜 dvips, dvipdfm, dviout などに変更
+\documentclass[a4j,11pt,dvipdfm]{jsarticle}
+\usepackage{color}
+% 乱暴な方法だが....
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{1cm}
+% 自作のコマンドの定義
+\makeatletter
+% 標準の設定では 数式の番号は \normalcolor で基準色に戻される
+\def\@eqnnum{{\normalfont %\normalcolor
+   (\theequation)}}
+% \mondai[#1] -> 「問題」の見出しを作成する命令
+\newcounter{cnt@mondai}
+\newcommand\mondai{\@ifnextchar[{\@mondai}{\@@mondai}}
+\long\def\@mondai[#1]{\par\vskip\Cvs
+  ({\normalfont\bfseries#1})\par\nobreak
+  \setcounter{cnt@mondai}{#1}%
+}
+\long\def\@@mondai{%
+  \refstepcounter{cnt@mondai}\par\vskip\Cvs
+  ({\normalfont\bfseries\thecnt@mondai})\par\nobreak
+}
+\makeatother
+% Toi -> 「問」を記述するための環境
+\newenvironment{Toi}{\bgroup\color{blue}}{\egroup}%\color{black}}
+% Kai -> 「解」を記述するための環境
+\newenvironment{Kai}{\begin{flushright}}{\end{flushright}}
+% \kaito#1 -> 回答には下線を付けるようなので
+\newcommand{\kaito}[1]{\underline{A\@. #1}}
+% \U#1 -> 単位はローマン体にする
+\newcommand*\U[1]{\ensuremath{\mathrm{#1}}}
+% 好みの問題で「～」にしても良い。
+\newcommand*\digitEmDash{\raise.2ex\hbox{--}}
+
+\begin{document}
+
+% 表題
+\title{動力学 練習問題~23}
+\author{インターネット上より印刷}
+\date{\today\\ Ver. 1.80}
+\maketitle
+
+% 問題の始まり、任意引数で番号を指定する。
+% 2 を任意引数で渡した場合、次は 3 からカウントされる。
+\mondai[2]
+
+% 「問」全体に色を着色するということで Toi 環境を使用する。
+\begin{Toi}
+仕事率を $P\ [\U{W}]$ とすれば、
+\begin{equation}
+ P = \frac{20.0 \times 9.80 \times 10.0 \times \sin 
+ (\pi/6) } {20.0}  = 49.0 \ [\U{W}] 
+\end{equation}
+
+% 「解」は Kai 環境に記述する。
+\begin{Kai}
+% 下線を引きたい解答は \kaito#1 とする。
+\kaito{$49.0\ [\U{W}]$}
+\end{Kai}
+
+\end{Toi}
+
+\mondai
+
+\begin{Toi}
+力が物体になした仕事を$W\ [\U{J}]$、
+時間 $5.00\ [\U{s}]$ 間に物体が進んだ
+距離を$x\ [\U{m}]$ とすれば、
+\begin{eqnarray}
+ F \times 5.00 &=&  3.00 \times 20.0 - 3.00 \times 0 
+   \label{hoge:1} \\
+ x &=& \frac{1}{2} \times \frac{20.0}{5.00} \times 
+        (5.00)^2 = 50.0 \ [\U{m}] \label{hoge:2}\\
+ W &=& F x \label{hoge:3}
+\end{eqnarray}
+よって、式~(\ref{hoge:1}\digitEmDash\ref{hoge:3}) より、
+$W = 600 \ [\U{J}]$ となる。
+
+\begin{Kai}
+\kaito{$600\ [\U{J}]$ }
+\end{Kai}
+
+\end{Toi}
+
+\mondai[6]
+
+\begin{Toi}
+この電車を等速度 $36.0\ [\U{km/h}]
+\ (\mbox{} = 10.0\ [\U{m/s}])$ で動かすのに必要な力を$F
+\ [\U{N}]$、 その時の仕事率を$P\ [\U{kW}]$ とすれば、
+
+\begin{eqnarray}
+ F & = & 2.50 \times 80.0 \times 9.80 + 80.0 \times 10^3 
+         \times \sin \left( \tan^{-1} \frac{1}{100} \right) 
+         \times 9.80 \label{hoge:4} \\
+ P \times 10^3 & =  & 
+     \frac{F \times 10.0}{1.00} 
+     \cos \left( \tan^{-1} \frac{1}{100} \right) \label{hoge:5}
+\end{eqnarray}
+よって、式~(\ref{hoge:4}, \ref{hoge:5})より、$P = 98.0\ [\U{kW}]$ となる。
+
+\begin{Kai}
+\kaito{$98.0\ [\U{kW}]$}
+\end{Kai}
+
+\end{Toi}
+
+\mondai
+
+\begin{Toi}
+この物体を動かすのに必要な力を $F\ [\U{N}]$、
+仕事率を $P\ [\U{W}]$ とすれば、
+\begin{eqnarray}
+F & = & 0.300 \times 30.0 \times 9.80 \\
+P & = & \frac{F \times 4.00}{5.00} 
+\end{eqnarray}
+よって、式~(1, 2) より、$P = 70.6\ [\U{W}]$ となる。
+
+\begin{Kai}
+\kaito{ $70.6\ [\mathrm{W}]$ }
+\end{Kai}
+
+\end{Toi}
+
+\mondai
+
+\begin{Toi}
+
+物体を $3.00\ [\U{m}]$ 引き上げた時、速さが 
+$5.00\ [\U{m/s}]$になるまでにかかる時間を $t\ [\U{s}]$、 
+その時の加速度を $\alpha\ [\U{m/s^2}]$、引き上げるのに必要
+な力を $F\ [\U{N}]$ とすれば、
+\begin{eqnarray}
+ 5.00 &=& \alpha  t \label{hoge:6} \\
+ 3.00 &=& \frac{1}{2} \alpha t^2 \label{hoge:7} \\
+ 5.00 \times \alpha &=& F - 5.00 \times 9.80 \sin 
+      \frac{\pi}{6} - 0.350 \times 5.00 \times 9.80 
+      \cos \frac{\pi}{6} \label{hoge:8} \\
+    W &=& F \times 3.00 \label{hoge:9}
+\end{eqnarray}
+よって、式~(\ref{hoge:6}\digitEmDash\ref{hoge:9}) より、
+$W = 181\ [\U{J}]$ となる。
+
+\begin{Kai}
+\kaito{ $181\ [\mathrm{J}]$}
+\end{Kai}
+
+\end{Toi}
+
+\mondai
+
+\begin{Toi}
+パイプ内の平均流速を $v\ [\U{m/s}]$、仕事率を$P\ [\U{W}]$ 
+とすれば、
+\begin{equation}
+\frac{120 \times 10^3}{10.0} \times 10^{-2} = v \times 60.0 
+\label{hoge:10}
+\end{equation}
+ここで、$5\ [\U{L}] = 5\ [\U{kg}]$ より、
+\begin{equation}
+P = \frac{5.00 \times 9.80 \times v}{1.00} 
+\label{hoge:11}
+\end{equation}
+よって、式~(\ref{hoge:10}, \ref{hoge:11}) より、
+$v = 2.00\ [\U{m/s}]$、$P = 98.0\ [\U{W}]$ となる。
+
+\begin{Kai}
+\kaito{% 少々 \kenten{ずる}をしているようにも思える。
+  \vbox{%
+  \hbox{パイプ内の平均流速：$2.00\ [\U{m/s}]$}%
+  \hbox{仕事率：$98.0\ [\U{W}]$ }}}
+\end{Kai}
+
+\end{Toi}
+\end{document}
+```
