@@ -256,7 +256,7 @@ ggv test.ps &
 
 ### 新ドキュメントクラスのインストール（オプション） {#t1f89e20}
 
-松浦さんのホームページ（[http://my.reset.jp/~t-matsuu/install-memo/fc/](http://my.reset.jp/~t-matsuu/install-memo/fc/)）から tetex-jisfont-1-4.src.rpm と tetex-jsclasses-040823-1.src.rpm をダウンロードさせてもらいます。
+松浦さんのホームページ（[http://my.reset.jp/~t-matsuu/install-memo/fc/](http://my.reset.jp/~t-matsuu/install-memo/fc/)）から tetex-jisfont-1-4.src.rpm と tetex-jsclasses-040927-1.src.rpm をダウンロードさせてもらいます。
 
 GNOME端末で
 
@@ -270,8 +270,8 @@ su
 yum install 'rpm*'
 rpmbuild --rebuild tetex-jisfont-1-4.src.rpm
 rpm -ivh /usr/src/redhat/RPMS/noarch/tetex-jisfont-1-4.noarch.rpm
-rpmbuild --rebuild tetex-jsclasses-040823-1.src.rpm
-rpm -ivh /usr/src/redhat/RPMS/noarch/tetex-jsclasses-040823-1.noarch.rpm
+rpmbuild --rebuild tetex-jsclasses-040927-1.src.rpm
+rpm -ivh /usr/src/redhat/RPMS/noarch/tetex-jsclasses-040927-1.noarch.rpm
 ```
 
 を実行すると新ドキュメントクラスのインストールが終了します。
