@@ -78,6 +78,9 @@ pukiwiki: "ArchiveQandA"
     - \lefthyphenmin=100 \righthyphenmin=100 と設定
         <!-- ほかにもありますが，この 2 通りが手軽でしょう． -->
 
+- 二段組にしたときに最終ページの左右カラムを揃える
+    - [blance.sty](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/balance.html)，[CTAN:macros/latex/contrib/preprint/](https://mirror.ctan.org/macros/latex/contrib/preprint/)内 ([qa:32276](https://okumuralab.org/~okumura/texfaq/qa/32276.html)...)
+
 ### コメント {#adc20c89}
 
 - インストール先がCドライブとは限らないので（インストールディレクトリ）\dvioutとしたのですが…。 -- 若雲 2004-12-05 (日) 17:35:30
