@@ -1,0 +1,69 @@
+---
+title: "TeX入門"
+url: "/TeX入門/"
+date: 2004-09-10T20:12:19Z
+bookCollapseSection: true
+pukiwiki: "TeX入門"
+---
+
+# TeX入門
+
+<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="">
+
+<div style="text-align:right"><strong>TeX</strong> /tek/ [名] 〔コンピュータ〕テフ，テック</div>
+
+<div style="text-align:right">《テキストベースの組み版システム；</div>
+
+<div style="text-align:right">数式の処理を得意とする》．</div>
+
+<div style="text-align:right">―『ジーニアス英和大辞典』 </div>
+
+## TeX，LaTeX とは？ {#nef9fd41}
+
+TeX および LaTeX の正式なロゴはこのページのタイトルのようなデザインですが，テキストで書くときはそれぞれ TeX，LaTeX のように書くことになっています。 
+
+TeX は「テック」または「テフ」と読みます。どちらかというと大学系の人は「テフ」派が多いようです。英語圏では「tek」「tekh」または誤読ですが「teks」，ドイツ語圏では「テヒ」とも読むようです。同様に LaTeX は「ラテック」「ラテフ」などと読みます。 
+
+TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作った組版（くみはん）システムです。 LaTeX は [Leslie Lamport](http://lamport.org/) が TeX の上に構築した文書処理システムです。いずれもフリーソフトであり， Windows，Macintosh，UNIX（Linux や \*BSD，Mac OS X も含む）など，ほとんどのコンピュータで使えます。 
+
+日本では TeX，LaTeX を [（株）アスキー](http://www.ascii.co.jp/) が日本語化した [pTeX，pLaTeX](http://www.ascii.co.jp/pb/ptex/) がよく使われています。 pTeX，pLaTeX の頭の p（ピー）は publishing（出版）の意味で，アスキーでは pTeX，pLaTeX およびこれらに基づく編集支援システム [EWB](http://www2.ascii.co.jp/EWB/) を（ソースコードの形で）無償配布し、自社の本の製作に利用しています。 
+
+> ［参考］ TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX もあります。これらは現在は千葉大の櫻井貴文さんが [TeXfamily](ftp://ftp.math.s.chiba-u.ac.jp/tex/) としてメンテナンスしておられます。
+
+1994年に LaTeX の新版 LaTeX2ε（ツー・イー）， 1995年にはアスキーから日本語版 pLaTeX2ε が出ました。以下ではこれらに基づいて説明します。 LaTeX2ε は半角文字だけで書くときは LaTeX2e と書くことになっていますので，以下では LaTeX2e，pLaTeX2e と書きます。 
+
+TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の力持ち」としてそれぞれ TeX，pTeX が働いていると言うにとどめておき，詳しい説明は省略します。 
+
+LaTeX2e，pLaTeX2e の入門書
+とりあえず次の本を挙げておきます。 
+
+- Lamport著，阿瀬はる美訳 『[文書処理システムLaTeX2e](http://www.mmjp.or.jp/pearsoned/washo/prog/wa_pro17-j.html)』 （[ピアソン・エデュケーション](http://www.mmjp.or.jp/pearsoned/)，1999） ［LaTeX2e の原典です］
+- 奥村晴彦 『[［改訂第3版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』 （[技術評論社](http://www.gihyo.co.jp/)，2004年） ［Windows，Mac OS Xのバイナリ，UNIX系OS用のソースを収めたCD-ROMが付いています］
+
+これ以外にもたくさん良書が出ていますので，書店でお選びください。 
+
+## インストールのしかた {#i326adb5}
+
+パソコン初心者にはこれが一番難しいところです。Windows については次のページにまとめておきました。 
+
+- [Windows へのインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-win32.html)
+
+旧Mac OSについては内山さんのページをご覧ください。 
+
+- [MacpTeXとその周辺](http://macptex.appi.keio.ac.jp/~uchiyama/macptex.html)
+
+Linux についてはディストリビューションによって差があるようですが，少なくとも [Vine Linux](http://vinelinux.org/) や [MLD7](http://www.mlb.co.jp/linux/mld7.html) には完璧な pTeX 等が含まれています。ソースからコンパイルする場合の手順は次のページにまとめておきました。 
+
+- [Linux へのインストール](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/install-linux.html)
+
+## 使い方 {#hf6bc116}
+
+- 最初の例
+- 簡単な数式 (1)
+- 簡単な数式 (2)
+- レポート
+- HTML と LaTeX の比較
+- 複雑な数式
+- 図
+
+以下，工事中。
