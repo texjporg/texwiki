@@ -70,3 +70,15 @@ TrueType フォントを使う例です（実際は1行です）：
 
 これで1ページ目は表示できますが，2ページ目に移動しようとすると，Bus error
 で落ちてしまいます。
+
+CIDフォントなら使えます。
+/usr/local/teTeX/share/ghostscript/8.15/Resource/CIDFont
+の中にたとえば WadaMin-Regular，WadaGo-Bold
+というCIDフォントを入れておき，上記cidfmapに
+
+```
+/Ryumin-Light /WadaMin-Regular ;
+/GothicBBB-Medium /WadaGo-Bold ;
+```
+
+と書いておきます。
