@@ -63,15 +63,4 @@ Windows 用のフロントエンドは GSview 4.6，X11 用のフロントエン
     [Ghostscriptと GSviewのインストール](http://www.klavis.info/gsinst.html) (大友さん)
 
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html) (新堂さん)
-
-### ぞくぞく登場している PDF プリンタ (作成ソフト) {#l96b2a22}
-
-- [Adobe](http://www.adobe.co.jp/main.html) [Acrobat](http://www.adobe.co.jp/products/acrobat/main.html) (10 000 円超)
-    - [Acrobat Reader](http://www.adobe.co.jp/products/acrobat/readstep2.html), [Download Page](http://www.adobe.com/products/acrobat/alternate.html)
-- [クセロ PDF](http://xelo.jp/xelopdf/) 2004-09-01 より無償配布を開始
-- [pdf995](http://www.pdf995.com/)
-    - [ZDNet による紹介](http://www.zdnet.co.jp/products/us/file/pdf995_u.html)
-    - One Way Ticket To PDF - pdf995 [(1)](http://pcweb.mycom.co.jp/column/toolexp/toolexp008.html) [(2)](http://pcweb.mycom.co.jp/column/toolexp/toolexp009.html) [(3)](http://pcweb.mycom.co.jp/column/toolexp/toolexp010.html) 使い方の説明が詳しい
-- [CutePDF](http://www.acrosoftware.com/Products/CutePDF/)
-- [PrimoPDF](http://www.primopdf.com/)
-- [SkyPDF](http://www.skycom.jp/product/2_1.htm) (2 079 円, 5 145 円)
+- PDF 作成に関しては[PDFの作り方](</PDFの作り方/>)も
