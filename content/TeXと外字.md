@@ -11,7 +11,7 @@ pukiwiki: "TeXと外字"
 
 ## OTFパッケージで2万字 {#ve311433}
 
-[OTFパッケージ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/otf.html) でAdobe-Japan1-5の2万グリフが使えます。ほとんどの文字はこれで大丈夫です。 
+[OTFパッケージ](/OTF/) でAdobe-Japan1-5の2万グリフが使えます。ほとんどの文字はこれで大丈夫です。 
 
 ## Illustratorで外字作成 {#oad7ee64}
 
