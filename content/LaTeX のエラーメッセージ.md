@@ -11,6 +11,39 @@ pukiwiki: "LaTeX のエラーメッセージ"
 メッセージに“\somecs”，“\othercs”という文字列が現れているわけではありません．
 また，メッセージは原則としてアルファベット順に並べています．
 
+! \*\*\* What's this? NFSS release 0? \*\*\*
+: &nbsp;<br>
+
+NFSS1 のコマンド \new@fontshape の引数を調べている最中に，
+仕様に合わない記述が見つかった場合のエラーメッセージのようですが…
+もしこれを目にしたら，問題となっている \new@fontshape を
+\DeclareFontShape を用いて書き換えてください．
+必要があれば，パッケージあるいはクラスファイルの作成者に連絡して修正を促すことになるでしょう．
+
+! Corrupted NFSS tables.
+: &nbsp;<br>
+
+何らかの理由でフォントの代替に失敗した場合に現れるエラーメッセージ（のひとつ）です．
+NFSS 関係のマクロの引数を書き間違えたくらいではこのエラーにお目にかかることはまずないでしょう．
+例えば，次のような記述を行うとこのエラーが生じます．
+
+```
+\documentclass{article}
+\begin{document}
+\makeatletter
+\@namedef{D@OT1}{%
+  \def\default@family{cmr}%
+  \def\default@series{mc}%
+  \def\default@shape{n}}%
+\makeatother
+{\fontseries{mc}\selectfont a}
+\end{document}
+```
+
+→ このエラーが生じた場合には…
+LaTeX システム自体を構成するファイルのどれかが壊れている，
+という可能性を疑った方がよいでしょう．
+
 ! LaTeX Error: \\&lt; in mid line.
 : &nbsp;<br>
 
@@ -695,6 +728,21 @@ tabbing 環境では \\= によってタブ位置（項目を揃える位置）�
 → \verb は（原則として）ほかのコマンドの引数の中では使えないので，
 \texttt などを用いて書き換えてください．
 特殊文字に関しては \symbol{\`\\^}，\symbol{\`\\\\} のように記述することができます．
+
+! LaTeX source files more than 5 years old!.
+: &nbsp;<br>
+
+文字通りです．
+5 年前より昔の latex.ltx を用いてフォーマットファイルを作成しようとした場合に現れるエラーメッセージです．<br>
+→ LaTeX システム全体を更新しましょう．
+
+! No declaration for shape <em>attributes</em>.
+: &nbsp;<br>
+
+（sub/ssub サイズ関数を用いた）フォントの代替の際に，
+代替先の属性 <em>attributes</em> のフォント定義がなされていない場合に現れるエラーメッセージです．<br>
+→ 代替元のフォント定義を修正して適切な代替先に変更するか，
+属性 <em>attributes</em> のフォント定義を追加してください．
 
 <!-- とりあえず，ファイル latex.ltx などにあるものをチェックしました． -->
 <!-- 各種パッケージが（パッケージのエラー・警告としてではなく） -->
