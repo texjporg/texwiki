@@ -53,13 +53,13 @@ pukiwiki: "ArchiveQandA"
     - その画像に対応する“枠”を記述した .bb ファイル（Bounding Box）がないからです。コマンドプロンプトで画像ファイルのあるディレクトリに移動し
 
         ```
-        c:\(画像ファイルの場所) ebb filename.xxx
+        ebb filename.xxx
         ```
 
-        とします。すると、そのディレクトリに filename.bb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
+        を実行します。すると、そのディレクトリに filename.bb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
 
         ```
-        c:\(画像ファイルの場所) bmc -b filename.xxx
+        bmc -b filename.xxx
         ```
 
         となります。
