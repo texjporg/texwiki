@@ -15,18 +15,19 @@ PostScript は業界標準のページ記述言語です。
 ですべて得られます。
 本では
 [ページ記述言語 PostScriptチュートリアル&amp;クックブック](http://www.amazon.co.jp/exec/obidos/ASIN/4756100058/)，[PostScriptリファレンスマニュアル](http://www.amazon.co.jp/exec/obidos/ASIN/4756138225/)
-がお薦めです（レファレンスは上記サイトからもダウンロードできます）。
+がお薦めです （レファレンスは上記サイトからもダウンロードできます）。
 
-[Ghostscript](/Ghostscript/) は PostScript ソフトウェア RIP（インタープリタ）です。
+なお、Ghostscript は PostScript ソフトウェア RIP （インタープリタ） です。
 
 ### POSTSCRIPT, GHOSTSCRIPT {#h5ddd3dc}
 
-- [Ghostscript, Ghostview and GSview](http://www.cs.wisc.edu/~ghost/) (wisc.edu)
+- [Ghostscript, Ghostview and GSview](http://www.cs.wisc.edu/~ghost/) (wisc.edu) /
+    [Ghostscript](http://sourceforge.net/projects/ghostscript/) (SourceForge)
+
 - [ghostscript.com](http://www.ghostscript.com/)
-- [Ghostscript](http://sourceforge.net/projects/ghostscript/) (SourceForge)
 - [Ghostscript 8.14 + GSview 4.6 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html) /
     [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/index.html)
-    (堀田さん＠愛知教育大・数学)
+    （堀田さん＠愛知教育大・数学）
 
 - [gs-cjk プロジェクト](http://www.gyve.org/gs-cjk/)
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html) (旧 JAIST コンテンツのミラー)
@@ -68,10 +69,3 @@ PostScript は業界標準のページ記述言語です。
 ### その他 {#af57d83a}
 
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html) (奥村＠滋賀県立大さん)
-
-### リンク切れ {#s7153c17}
-
-- [東北大物性理論研](http://www.cmpt.phys.tohoku.ac.jp/Busseiriron/r410/) (EPS, tgif などの話題あり)
-- [PoweredKobe さん](http://member.nifty.ne.jp/~PoweredKobe/)リンク切れてます
-    (フリーソフトでpdf作成，簡単ポストスクリプトの記述)
-    - [Googleのキャッシュ](http://www.google.co.jp/search?q=cache:h4cIXDxkyNsJ:member.nifty.ne.jp/~PoweredKobe/gsw/)
