@@ -19,6 +19,10 @@ pukiwiki: "MathTime"
 からオンライン購入できます。
 MathTime Complete (MathTime 1.1 + MathTime Plus) が225ドルです。
 
+\[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
+MathTimeの後継MathTime Professionalが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
+以下にある他のベンダについても古い情報ですのでご注意ください。
+
 \[2003年追記\] ↓現在Y&amp;Yは持ち直しています。
 CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出ています。
 
