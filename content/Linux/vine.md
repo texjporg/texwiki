@@ -54,6 +54,9 @@ apt-get 自動実行スクリプト
 
 <a href="/attach/Linux/vine/tex-apt-get.sh">tex-apt-get.sh</a>
 
+jsarticle，jsbookが古いのでdvipdfmxと組み合わせたとき不具合が起こる
+[qa:32161](https://okumuralab.org/~okumura/texfaq/qa/32161.html)。
+
 ## xdvi関連の設定 {#j0808b38}
 
 Vine3.0では、xdviがType1 フォントを使えるようになったので、もう pk フォントは必要なくなりました。また、src-special に対応になりました。 xdvi とエディタの間で、対応する部分に相互にジャンプができるようになりました。 
