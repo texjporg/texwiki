@@ -211,6 +211,19 @@ eps ファイル自身や bb ファイルから“バウンディングボック
 数式用のコマンドを使って書き換えてください．
 例えば，${\rmfamily a}$ → $\mathrm{a}$ のようにします．
 
+#### ! LaTeX Error: Command \somecs invalid with \`disablejfam&#39; class option.. {#se983c32}
+
+和文フォントに対する数式用書体変更コマンド（標準配布のクラスファイルでは
+\mathmc，\mathgt の 2 個が用意されています）を
+disablejfam クラスオプション適用時に使用した場合に現れるエラーメッセージです．<br>
+→ disablejfam クラスオプションを用いるのを取り止めるか，
+\textgt 等の（数式フォントを用いない）コマンドで書き換えてください．
+
+> 何もパッケージを用いない状態で \textgt などを数式中で用いると，
+> 添字の中でも地の文における文字サイズになってしまいますが，
+> amsmath パッケージ（amstext パッケージで充分です）
+> を併用すると使用箇所に応じた文字サイズで出力されるようになります．
+
 #### ! LaTeX Error: Command \`\somecs&#39; not defined as a math alphabet. {#j08c7ccd}
 
 \SetMathAlphabet を用いて“あるバージョンの数式で数式用書体変更コマンド \somecs
@@ -1005,7 +1018,11 @@ multicol パッケージによる multicols 環境において，内部処理に
 
 #### ! OOPS! I can't find any hyphenation patterns for US english.<br>Think of getting some or the latex2e setup will never succeed. {#ve28f5e0}
 
-フォーマットファイル latex.fmt/platex.fmt の作成時にファイル hyphen.tex
+#### ! OOPS! I can't find any kinsoku patterns for japanese<br>Think of getting some or the platex2e setup will never succeed. {#ia9997a1}
+
+前者はフォーマットファイル latex.fmt/platex.fmt の作成時にファイル hyphen.tex
+を読み込むことができなかった場合に現れるエラーメッセージで，
+後者はフォーマットファイル platex.fmt の作成時にファイル kinsoku.tex
 を読み込むことができなかった場合に現れるエラーメッセージです．<br>
 → TeX/LaTeX システムで用いる各種のファイルが正しくインストールされているかどうかをチェックしてください．
 TeX/LaTeX システムを更新したような場合には，各種の環境変数（例えば，TEXINPUTS）
