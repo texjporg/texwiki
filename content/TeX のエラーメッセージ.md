@@ -431,7 +431,7 @@ replaced by filll: グルーの伸縮度の指定に fillll のような“l が
 
 \spacefactor を垂直モード（段落間など）の箇所あるいは \write
 の引数中で読み取ろうとしたときに現れるエラーメッセージです．<br>
-→ 必要に応じて，\leavevmode などで段落を開始してから \spacefactor を読みとってください．
+→ 必要に応じて，\leavevmode などで段落を開始してから \spacefactor を読みとってください． <!-- 別のメッセージの場合と混同していたので，先の追記を削除します． -->
 
 #### ! Incompatible direction list can't be unboxed. {#o789d612}
 
