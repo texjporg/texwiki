@@ -29,7 +29,7 @@ su
 mv /etc/yum.conf /etc/yum.conf.org
 ```
 
-を実行して設定ファイルのバックアップをとります。
+を実行して設定ファイルのバックアップをと。
 次に
 
 ```
@@ -256,15 +256,199 @@ ggv test.ps &
 
 ### 新ドキュメントクラスのインストール（オプション） {#t1f89e20}
 
-どなたかが作ってくださったrpmファイルを使わせていただきましょう。（まだ）
+松浦さんのホームページ（[http://my.reset.jp/~t-matsuu/install-memo/fc/](http://my.reset.jp/~t-matsuu/install-memo/fc/)）から tetex-jisfont-1-4.src.rpm と tetex-jsclasses-040823-1.src.rpm をダウンロードさせてもらいます。
+
+GNOME端末で
+
+```
+su
+```
+
+コマンドでスーパーユーザになり、
+
+```
+yum install 'rpm*'
+rpmbuild --rebuild tetex-jisfont-1-4.src.rpm
+rpm -ivh /usr/src/redhat/RPMS/noarch/tetex-jisfont-1-4.noarch.rpm
+rpmbuild --rebuild tetex-jsclasses-040823-1.src.rpm
+rpm -ivh /usr/src/redhat/RPMS/noarch/tetex-jsclasses-040823-1.noarch.rpm
+```
+
+を実行すると新ドキュメントクラスのインストールが終了します。
+（途中で「Is this ok \[y/N\]:」と聞かれるので、y と答えます。）
 
 ### dvipdfmxのインストール（オプション） {#rc384294}
 
-これはソースからコンパイルします。gccのインストールも必要そうです。（まだ）
+#### Acrobat Reader のインストール {#s6268f75}
+
+GNOME端末で
+
+```
+cd /tmp
+wget ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/5.x/linux-508.tar.gz
+mkdir acroread
+cd acroread
+tar zxvf ../linux-508.tar.gz
+su -c './INSTALL'
+```
+
+を実行すると、Acrobat Reader がインストールされます。
+途中で「To accept the terms and conditions of this agreement enter "accept".」などと聞かれるので、「accept」と答えます。
+他の質問にはそのままエンターキーで進みます。
+
+```
+cd /tmp
+mkdir jpnfont5
+cd jpnfont5
+wget ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/5.x/jpnfont.tar.gz
+tar zxvf jpnfont.tar.gz
+cd JPNKIT
+su -c './INSTLANG'
+cd /tmp
+mkdir jpnfont4
+cd jpnfont4
+wget ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/jpnfont.tar.gz
+tar zxvf jpnfont.tar.gz
+cd JPNKIT
+tar xvf LANGJPN.TAR
+cd CIDFont
+su -c 'cp -v HeiseiKakuGo-W5-Acro /usr/local/Acrobat5/Resource/Font/; ln -s -v /usr/local/Acrobat5/bin/acroread /usr/bin/acroread'
+```
+
+で、先程インストールした Acrobat Reader で日本語が表示できるようになります。
+
+Acrobat Reader に実行パスを通すため、GNOME端末で
+
+```
+gedit .bashrc
+```
+
+を実行して .bashrc を開き、最後に
+
+```
+export PATH="$PATH:/usr/local/Acrobat5/bin"
+```
+
+を付け加えます。
+
+（Acrobat Reader のインストールは [http://www.geocities.co.jp/SiliconValley-Cupertino/9940/acrobat/](http://www.geocities.co.jp/SiliconValley-Cupertino/9940/acrobat/) を参考にしました。）
+
+#### gccのインストール {#n98250e4}
+
+スーパーユーザで
+
+```
+yum install 'gcc*'
+```
+
+を実行して、gccをインストールします。
+
+#### dvipdfmxのインストール {#x1e5ecb5}
+
+GNOME端末で
+
+```
+cd /tmp
+wget http://project.ktug.or.kr/dvipdfmx/snapshot/current/dvipdfmx-20040411.tar.gz
+tar zxvf dvipdfmx-20040411.tar.gz
+cd dvipdfmx-20040411
+./configure --prefix=/usr && make && su -c 'make install'
+```
+
+を実行すると、dvipdfmxがインストールされます。
+
+```
+cd /usr/share/texmf/dvipdfm
+su -c ' ln -s -v /usr/local/Acrobat5/Resource/Font . && mktexlsr'
+```
+
+を実行すると、日本語を含むPDFファイルが作れるようになります。
+
+（dvipdfmxのインストールは [http://t-munu.phys.s.u-tokyo.ac.jp/aso/linux/Fedora.html#DVI%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89PDF%E3%82%92%E4%BD%9C%E3%82%8B%E3%80%82](http://t-munu.phys.s.u-tokyo.ac.jp/aso/linux/Fedora.html#DVI%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89PDF%E3%82%92%E4%BD%9C%E3%82%8B%E3%80%82) を参考にしました。）
+
+#### インストールの確認 {#d7aa5162}
+
+GNOME端末で
+
+```
+platex test
+dvipdfmx test
+```
+
+を実行すると、test.pdf というファイルが出来上がります。
+ここで
+
+```
+acroread test.pdf &
+```
+
+を実行すると、確認することができます。
 
 ### Emacsの日本語入力を使いやすくするための設定（オプション） {#x94b5e29}
 
-tamagoとcannaを使うようにしてみます。（まだ）
+GNOME端末で
+
+```
+cd /tmp
+wget ftp://ftp.m17n.org/pub/tamago/tamago-4.0.6.tar.gz
+wget http://cgi18.plala.or.jp/nyy/canna/canna-20011204.diff.gz
+tar zxvf tamago-4.0.6.tar.gz
+cd tamago-4.0.6
+zcat ../canna-20011204.diff.gz | patch -p1
+./configure --prefix=/usr
+make
+su -c 'make install'
+```
+
+を実行すれば、tamagoのインストールと、tamagoでcannaを使うためのパッチが当たります。
+途中でいろいろ聞かれましたが、全て黙ってEnterキーを押しました。
+
+次に、.emacs をエディタで開き、
+
+```
+;; settings for egg-canna
+(setq default-input-method "japanese-egg-canna")
+(setq canna-hostname "localhost")
+```
+
+の3行を付け加えます。
+
+これだけでは、変換しようとしたときに「egg Japanese backend: サーバと接続できませんでした」と表示されて変換できないので、GNOME端末で
+
+```
+su -
+```
+
+コマンドでスーパーユーザになり、エディタで /etc/hosts.canna を開き、先頭に
+
+```
+localhost
+```
+
+という行を付け加え、/etc/rc.d/init.d/canna をエディタで開き、
+
+```
+        initlog -c "$SERVER -syslog -u bin"
+```
+
+の行を
+
+```
+        initlog -c "$SERVER -syslog -u bin -inet"
+```
+
+に置き換え、GNOME端末で
+
+```
+service canna restart
+```
+
+を実行します。
+
+これで、Emacsを使っているときに Ctrl + \ キーで日本語入力を切り替えられるようになったはずです。
+
+（tamago、cannaの設定は [http://www.ne.jp/asahi/diver/hrk/openbsd/s-emacs.html](http://www.ne.jp/asahi/diver/hrk/openbsd/s-emacs.html)、
+サーバと接続できないエラーへの対処は [http://hp.vector.co.jp/authors/VA023018/setting.htm](http://hp.vector.co.jp/authors/VA023018/setting.htm) を参考にしました。）
 
 ### AUCTeXのインストール（オプション） {#d924e221}
 
