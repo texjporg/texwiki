@@ -30,7 +30,7 @@ Windows 用のフロントエンドは GSview 4.6，X11 用のフロントエン
 - [Ghostscript 8.14 + GSview 4.6 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html)
     (堀田さん＠愛教大)
 
-- [松本隆太郎](http://tsk-www.ss.titech.ac.jp/~ryutaroh/)さん:
+- [松本隆太郎](http://www.rmatsumoto.org/tex-ps-pdf/)さん:
     綺麗で小さなPostScript及びPDFをTeXから作る / hyperrefと日本語 / 画像を含むPSファイルを小さくする
 
 - [東北大物性理論研](http://www.cmpt.phys.tohoku.ac.jp/Busseiriron/r410/) (EPS, tgif などの話題あり)
@@ -54,7 +54,7 @@ Windows 用のフロントエンドは GSview 4.6，X11 用のフロントエン
     (日本語PDFを生成するPerlモジュール PDFJ がある。
     JIS X 4051にほぼ準拠した日本語組版ルールを組み込んであるとのこと)
 
-- [ps2eps](http://www.ipv6.tm.uka.de/~bless/ps2eps)
+- [ps2eps](http://www.telematik.informatik.uni-karlsruhe.de/~bless/ps2eps.html.en)
     (WindowsのPSプリンタドライバで作ったEPSはclipオプションを付けても外側を侵蝕することがあります。
     これを試してみてください)
 
