@@ -30,7 +30,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://sourceforge.net/projects/sixpack">Sixpack</a></td><td>perl perl-Tk</td><td>文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。</td></tr>
 <tr><td><a href="http://refdb.sourceforge.net/">RefDB</a></td><td>UNIX/MacOS X/Windows</td><td>SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a></td><td> </td><td>.bibファイルの管理ソフト。<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/">BibTool</a>のGUIラッパーとして<a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/">qbibman</a>がある</td></tr>
-<tr><td><a href="http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm">TeXBibMaker(Excel2000マクロ)</a></td><td>Excel2000が動くパソコン</td><td>文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート</td></tr>
+<tr><td><a href="http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm">TeXBibMaker</a></td><td>Excel2000が動くパソコン</td><td>文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート</td></tr>
 <tr><td><a href="http://members3.jcom.home.ne.jp/refwin/">Ref for Windows</a></td><td> Windows</td><td>フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．<a href="http://members3.jcom.home.ne.jp/refwin/html/latex.htm">LaTeXへのサポート</a></td></tr>
 </tbody>
 </table>
@@ -54,7 +54,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/tkbibtex/">tkbibtex</a></td><td>tcl/tk </td><td>.bibファイル作成編集プログラム。日本語表示OKだが、atokxでは入力できない。</td></tr>
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
 <tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
-<tr><td><a href="http://www.h7.dion.ne.jp/~yochian/macro.htm">BibFile Editor</a></td><td>Windows95が動くコンピュータ</td><td>簡易エディタ。</td></tr>
+<tr><td><a href="http://www.h7.dion.ne.jp/~yochian/macro.htm">BibFile Editor</a></td><td>Windows95</td><td>簡易エディタ。</td></tr>
 </tbody>
 </table>
 
