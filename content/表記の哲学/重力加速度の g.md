@@ -7,6 +7,8 @@ pukiwiki: "表記の哲学/重力加速度の g"
 
 # 表記の哲学/重力加速度の g
 
+<div style="text-align:right"><a href="https://okumuralab.org/~okumura/texfaq/qa/15260.html">qa:15260</a>, <a href="https://okumuralab.org/~okumura/texfaq/qa/15267.html">qa:15267</a>.</div>
+
 <strong>重力加速度の g は，斜体のようですが，字形についてはどうなのでしょうか？</strong>
 
 - 横長楕円を 2 つくっつけたような g ([![](</attach/表記の哲学/重力加速度の g/gTxfontsMathItalic.png>)](</attach/表記の哲学/重力加速度の g/gTxfontsMathItalic.png>)) と，
