@@ -34,10 +34,11 @@ TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作っ�
 
 TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の力持ち」としてそれぞれ TeX，pTeX が働いていると言うにとどめておき，詳しい説明は省略します。 
 
-LaTeX2e，pLaTeX2e の入門書
+## LaTeX2e，pLaTeX2e の入門書 {#l062c239}
+
 とりあえず次の本を挙げておきます。 
 
-- Lamport著，阿瀬はる美訳 『[文書処理システムLaTeX2e](http://www.mmjp.or.jp/pearsoned/washo/prog/wa_pro17-j.html)』 （[ピアソン・エデュケーション](http://www.mmjp.or.jp/pearsoned/)，1999） ［LaTeX2e の原典です］
+- Lamport著，阿瀬はる美訳 『[文書処理システムLaTeX2e](http://www.pearsoned.co.jp/washo/prog/wa_pro17-j.html)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999） ［LaTeX2e の原典です］
 - 奥村晴彦 『[［改訂第3版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』 （[技術評論社](http://www.gihyo.co.jp/)，2004年） ［Windows，Mac OS Xのバイナリ，UNIX系OS用のソースを収めたCD-ROMが付いています］
 
 これ以外にもたくさん良書が出ていますので，書店でお選びください。 
@@ -58,12 +59,12 @@ Linux についてはディストリビューションによって差がある�
 
 ## 使い方 {#hf6bc116}
 
-- 最初の例
-- 簡単な数式 (1)
-- 簡単な数式 (2)
-- レポート
-- HTML と LaTeX の比較
-- 複雑な数式
+- [最初の例](</TeX入門/最初の例/>)
+- [簡単な数式 (1)](</TeX入門/簡単な数式(1)/>)
+- [簡単な数式 (2)](</TeX入門/簡単な数式(2)/>)
+- [レポート](</TeX入門/レポート/>)
+- [HTML と LaTeX の比較](</TeX入門/HTMLとLaTeXの比較/>)
+- [複雑な数式](</TeX入門/複雑な数式/>)
 - 図
 
 以下，工事中。
