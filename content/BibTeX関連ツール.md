@@ -58,6 +58,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
 <tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
 <tr><td><a href="http://www.h7.dion.ne.jp/~yochian/macro.htm">BibFile Editor</a></td><td>Windows95</td><td>簡易エディタ。</td></tr>
+<tr><td><a href="http://www.hj-gym.dk/~hj/writer2latex/">Writer2BibTeX</a></td><td>Java, OpenOffice.org</td><td>Writer文書から文献情報を抜き出し、BibTeX形式で保存するOpenOffice.orgのマクロ</td></tr>
 </tbody>
 </table>
 
