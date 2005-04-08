@@ -166,3 +166,28 @@ Win 版などで動作確認してください。
     [qa:32659](https://okumuralab.org/~okumura/texfaq/qa/32659.html) のように updmap スクリプトを修正しても構いません。
     →\[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
     (tetex-2.0.2-0vl14) で修正されました。
+
+- dvipdfmx で EPS を取り込むときに、
+    日本語フォントがビットマップで埋め込まれてしまいます。
+    dvipdfmx.cfg の gs を呼び出す引数に -dNOKANJI を付け加えた上で、
+    [Ghostscript 7.07](</Ghostscript 7.07/#i37976e7>) のように
+    埋め込まない欧文フォント名も列挙しておくのがよいでしょう。
+    以下の patch 〜 EOF をペーストして実行するのが簡単。
+
+```
+patch -p0 <<EOF
+--- /usr/share/texmf/dvipdfm/config/dvipdfmx.cfg.orig   2004-07-24 09:07:51.000000000 +0900
++++ /usr/share/texmf/dvipdfm/config/dvipdfmx.cfg        2005-04-09 02:11:57.000000000 +0900
+@@ -15,8 +15,8 @@
+ % D "/usr/local/bin/pstill -c -o %o %i"
+ 
+ % The following line works with GhostScript
+-% UNIX/Linux (borrowed from W32TeX by Akira Kakuto)
+-D "gs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o %i -c quit"
++% UNIX/Linux (borrowed from W32TeX by Akira Kakuto + from TeX Wiki by Haruhiko Okumura)
++D "gs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -dNOKANJI -c '.setpdfwrite << /NeverEmbed [/Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique /Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique /Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic /Symbol /ZapfDingbats /Ryumin-Light /GothicBBB-Medium] >> setdistillerparams' -f %i -c quit"
+ % Win32 (borrowed from W32TeX by Akira Kakuto)
+ % D "gswin32c -q -dNOPAUSE -dBATCH -sPAPERSIZE=a4 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o %i -c quit"
+ % The following line works on compressed or uncompressed postscript with GhostScript
+EOF
+```
