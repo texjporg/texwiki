@@ -160,6 +160,16 @@ Win 版などで動作確認してください。
     dvipdfmx と組み合わせると、商用フォントがなくても、
     囲み付き文字や「はしご高 (&#x9ad9;)」などを含んだ PDF を作れます。
 
+ただし、OTF + dvipdfmx がうまく動きません。
+しばらくすれば修正されるでしょうが、
+待てない場合は次のように小文字ファイル名にすれば直ります。
+
+```
+# cd /usr/share/texmf/dvipdfm/config/otf/
+# mv noFont-udvips.map nofont-udvips.map
+# updmap-otf
+```
+
 - dvipdfmx で大きな括弧など一部のフォントが欠落してしまうことがあります。
     [ソースからのMake](/Make/#content_1_4) にある通り、
     \usepackage{type1cm} とするのがよいようです。
