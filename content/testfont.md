@@ -59,7 +59,9 @@ pzdr
 
 - \[動機\] pdf ではフォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォントが充てられるので，その表示を確認したいことがある．
     - dvi や ps では『美文書...』と同じフォントで見えるが（それすら環境依存か<span style="color:#F00;"><em>?</em></span>），pdf だと異なることがある（フォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォント（pzdr (Zapf Dingbats) に対して AdobePiStd）が充てられるため）．
-    - pdf に，Zapf Dingbats フォントを埋め込むには，<span style="color:#F00;"><em>???</em></span> ファイルの <span style="color:#F00;"><em>???</em></span> あたりに <span style="color:#F00;"><em>???</em></span> と書き込んで，普通に dvipdfm コマンドを掛ければよい．<strong>御存知の方，誰か書き込んでください！</strong>
+    - pdf に，Zapf Dingbats フォントを埋め込むには，dvipdfm.cfg ファイルの下の方に f embase14.map と書き込んで（% f embase14.map とすでに書いてあれば % を外して），普通に dvipdfm コマンドを掛ければよい（こうしておくと Adobe の Times ，Helvetica ，Courier も埋め込まれます）．
+        <!-- ''御存知の方，誰か書き込んでください！'' -->
+
 - 記号の番号が分かれば，たとえば (cmr10 で<span style="color:#F00;"><em>?</em></span>) \[ を出力したければ，
 
     ```
