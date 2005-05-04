@@ -99,7 +99,7 @@ mv gdevlips-2.4.0/* src/
 cat src/gdevlips.mak >>src/contrib.mak
 ```
 
-Makefile のたとえば383〜384行目に次のような変更を加えます。
+Makefile のたとえば383～384行目に次のような変更を加えます。
 
 ```
 DEVICE_DEVS17=$(DD)stcolor.dev
@@ -204,7 +204,7 @@ ps2pdf は gs で PDF を作るシェルスクリプトです。
 対処法はいくつかあります。
 
 一つは，できた PDF からフォントを外す中丸さん作の
-[replacecjkfonts, cjkps2pdf](http://www.on.cs.keio.ac.jp/~maru/replacecjkfonts/)
+[replacecjkfonts, cjkps2pdf](http://www.eaflux.com/replacecjkfonts/)
 を使うことです。
 このフィルタを通せば，埋め込まれた和田研フォントが外され，単に Ryumin-Light，GothicBBB-Medium
 への参照となるので，Acrobat Reader できれいに表示・印刷できます。
