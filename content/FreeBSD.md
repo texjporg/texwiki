@@ -9,6 +9,10 @@ pukiwiki: "FreeBSD"
 
 ## FreeBSD {#r05903ba}
 
+<strong>現在Ports CollectionのteTeX関連はteTeX 3.0ベースのものに置き換わっています．</strong>
+
+<strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
+
 日本語TeX関連は[Ports Collection](http://www.freebsd.org/ports/)に収められています．
 
 ### TeX関連のPort {#y07bcd98}
