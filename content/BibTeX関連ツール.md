@@ -58,6 +58,8 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/">lookbibtex</a> </td><td> </td><td>.bibファイル内の検索と置換 </td></tr>
 <tr><td><a href="http://sourceforge.net/projects/bibcursed/">bibcursed</a></td><td>ncurses</td><td>.bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK</td></tr>
 <tr><td><a href="http://www.h7.dion.ne.jp/~yochian/macro.htm">BibFile Editor</a></td><td>Windows95</td><td>簡易エディタ。</td></tr>
+<tr><td><a href="http://www.math.utah.edu/pub/bibclean/">bibclean</a></td><td>unix</td><td>.bibファイルの文法チェックや整形を行うプログラム。日本語可。</td></tr>
+<tr><td><a href="http://ebib.sourceforge.net/">Ebib</a></td><td>emacs</td><td>emacs用のBibTeXデータベースマネージャ</td></tr>
 </tbody>
 </table>
 
@@ -87,6 +89,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 <tr><td><a href="http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/refer-tools/">refer-tools</a> </td><td>perl</td><td>refer形式をBibTeX形式に変換</td></tr>
 <tr><td> <a href="http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib">r2bib</a> </td><td> </td><td> referからBibTeXに変換するツールだが、<a href="http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html">EndNoteに対応した</a>。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。 </td></tr>
 <tr><td><a href="http://www.hj-gym.dk/~hj/writer2latex/">Writer2BibTeX</a></td><td>Java, OpenOffice.org</td><td>Writer文書から文献情報を抜き出し、BibTeX形式で保存するOpenOffice.orgのマクロ</td></tr>
+<tr><td><a href="http://www.ecst.csuchico.edu/~jacobsd/bib/archives/mathsci2bibtex">mathsci2bibtex</a></td><td>perl</td><td>MathSciからBibTeXへの変換</td></tr>
 </tbody>
 </table>
 
@@ -122,25 +125,21 @@ BibTeX形式に変換するWebアプリが公開されている
 
 <br>
 
-## 未整理 {#w1b8079d}
+## その他 {#w326cd17}
 
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td> bibcard </td><td> </td><td> </td></tr>
-<tr><td> bibclean </td><td> </td><td> </td></tr>
-<tr><td> bibgene </td><td> </td><td> </td></tr>
-<tr><td> biblos075.zip </td><td> </td><td> </td></tr>
-<tr><td> bibtool </td><td> </td><td> </td></tr>
-<tr><td> bibtools </td><td> </td><td> </td></tr>
-<tr><td> bibview-2.0 </td><td> </td><td> </td></tr>
-<tr><td> bibview </td><td> </td><td>日本語が通らない </td></tr>
-<tr><td> btOOL </td><td> </td><td> </td></tr>
-<tr><td> ebib </td><td> </td><td> </td></tr>
-<tr><td> findbib </td><td> </td><td> </td></tr>
-<tr><td> fixbbl </td><td> </td><td> </td></tr>
-<tr><td> hyperbibtex </td><td> </td><td> </td></tr>
-<tr><td> mathsci2bibtex </td><td> </td><td> </td></tr>
-<tr><td> noTeX.bst </td><td> </td><td> </td></tr>
+<tr><td> findbib </td><td>UNIX, lynx </td><td>決められたキーで引用しておくと、WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム </td></tr>
+<tr><td>Biblos</td><td> Windows95/NT </td><td> bibファイルを公開するためのcgi </td></tr>
+<tr><td><a href="http://www.gerg.ca/software/btOOL/">Text-BibTeX</a></td><td>perl</td><td>BibTeXを扱うためのperlモジュール。<a href="http://www.gerg.ca/software/btOOL/">btOOL</a>で公開されている。</td></tr>
 </tbody>
 </table>
+
+<br>
+
+## 関連リンク {#j1aaae63}
+
+- [Bibliographic Conversion Tools](http://www.ecst.csuchico.edu/~jacobsd/bib/tools/converters.html)
+
+<br>
