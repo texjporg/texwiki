@@ -69,6 +69,12 @@ dvips -Ppdf -E testeq -o testeq.eps
 
 ## Illustratorに配置1 {#q2427dd4}
 
+<span style="color:red;">追記</span>
+
+Illustrator CSの環境設定で「リンクされたEPSに低解像度の表示用画像（プレビュー）を使用」のチェックを外してリンク配置すれば，EPSでも問題なく文字が表示されました。
+PDFでもリンク配置なら問題ありません。
+Mac OS Xのプレビューを使えばPDFを範囲指定してクロップできます。
+
 <table>
 <tbody>
 <tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えないEPS画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustratorから保存したプレビュー付きEPS画像"></td></tr>
