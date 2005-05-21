@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
+- \[050521\]
+    fmtutil --byfmt のように「ハイフン」を追加しておきました。
+
 - \[041020\]
     ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの Hyphenation](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
@@ -75,7 +78,7 @@ pLaTeX に german（旧正書法）, ngerman（新正書法）, french, greek, r
     コマンドプロンプトで
 
     ```
-    fmtutil -byfmt platex
+    fmtutil --byfmt platex
     ```
 
     と打ち込めば終わり（ファイルサイズ：Orig_platex.fmt=661KB, 新platex.fmt=919KB）
@@ -89,7 +92,7 @@ pLaTeX に german（旧正書法）, ngerman（新正書法）, french, greek, r
     コマンドプロンプトで
 
     ```
-    fmtutil -byfmt latex
+    fmtutil --byfmt latex
     ```
 
     と打ち込めば終わり（ファイルサイズ：Orig_latex.fmt=741KB, 新latex.fmt=852KB）
