@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
 
+- \[050528\]
+    UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
+
 - \[050527\]
     「Babel による多言語構築ガイド 第3版」（栗山さんによる）もご覧ください。[qa:36022](https://okumuralab.org/~okumura/texfaq/qa/36022.html)
 
