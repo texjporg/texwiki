@@ -127,9 +127,15 @@ ps2pdf -dNOKANJI hoge.ps
 
 と、"-dNOKANJI" オプションを付けるのがポイントです。
 
+あるいは、Vine extras の ps2jpdf パッケージをインストールしておけば、
+ps2jpdf コマンドがオプションなしで同様の作業をしてくれます。
+更に、日本語しおりの文字化け対策も含んでいるので、こちらのほうが便利でしょう。
+(apt でインストールできますが、
+/etc/apt/sources.list を少し編集しておく必要があります。)
+
 なお、ghostscript のフロントエンドとしては、
 ggv が採用されました。
-以前の gv は VinePlus にあります。
+以前の gv は VinePlus にあります。apt でインストールできます。
 
 - PDF 作成の dvipdfmx が Vine本体に収録されました。
     日本語のしおりの作り方が変更になりました。
@@ -143,9 +149,8 @@ bookmarkstype=toc]{hyperref}
 ```
 
 のように書いておきます。（３行目がポイントです。）
-Linux 版 Adobe Reader では日本語のしおりは化けるので、
-Win 版などで動作確認してください。
-なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。
+Linux 版 Acrobat Reader 5.0 までは日本語のしおりは化けるので、
+Adobe Reader 7.0 か Win 版などで動作確認してください。 <!-- なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。 -->
 
 - tetex-extra パッケージはインストール CD には収録されていません。
     TX fonts, PX fonts 等も含まれているので、
@@ -161,14 +166,7 @@ Win 版などで動作確認してください。
     囲み付き文字や「はしご高 (&#x9ad9;)」などを含んだ PDF を作れます。
 
 ただし、OTF + dvipdfmx がうまく動きません。
-しばらくすれば修正されるでしょうが、
-待てない場合は次のように小文字ファイル名にすれば直ります。
-
-```
-# cd /usr/share/texmf/dvipdfm/config/otf/
-# mv noFont-udvips.map nofont-udvips.map
-# updmap-otf
-```
+→ texmacro-otf-1.2.6-0vl2 で修正されました。 <!-- しばらくすれば修正されるでしょうが、 --> <!-- 待てない場合は次のように小文字ファイル名にすれば直ります。 --> <!--  # cd /usr/share/texmf/dvipdfm/config/otf/ --> <!--  # mv noFont-udvips.map nofont-udvips.map --> <!--  # updmap-otf -->
 
 - dvipdfmx で大きな括弧など一部のフォントが欠落してしまうことがあります。
     [ソースからのMake](/Make/#content_1_4) にある通り、
