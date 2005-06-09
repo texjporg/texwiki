@@ -20,6 +20,11 @@ Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://vinelinux.
 \[[vine-users:070537\]](http://search.luky.org/vine-users.7/msg00534.html)
 
 upgradeしたあと、dvipsで日本語が化けてしまうようになりました。調べてみると、updmap.cfgに、texmf/dvips/config/extmap/kanjifonts.mapが書かれていないためのようでした。mapファイル名を追記してupdmapしたところ、dvipsが正しく動作するようになりました。
+→そんなはずはありません。Vine 3.1 の updmap にはパッチが当ててあって、
+texmf/dvips/config/extmap/ 以下のすべての map ファイルを読み込むように
+なっています。（あまりにも場当たり的な手法なので、将来廃止します。）
+mapファイル名を追記せずにupdmapしても直ったと思います。
+$TEXMF が変なところを指してるときに updmap を実行したなんてことはないでしょうか。
 
 ### インストール {#c9fbb999}
 
