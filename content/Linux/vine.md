@@ -62,6 +62,7 @@ $ sudo apt-get install task-tetex
 <tr><td> texmacro-otf </td><td> tetex で使うマクロパッケージ (齋藤修三郎氏による「OpenType Font用VF」)</td><td>○</td></tr>
 <tr><td> tgif2tex </td><td> tgif の図中の文字列を TeX で処理する</td><td>○</td></tr>
 <tr><td> python-bibtex </td><td> Python extension to parse BibTeX files.</td><td>○</td></tr>
+<tr><td> ps2jpdf </td><td> 日本語しおりの文字化け対策 + ps2pdf -dNOKANJI </td><td>下の方参照</td></tr>
 </tbody>
 </table>
 
