@@ -45,7 +45,7 @@ PostScript は業界標準のページ記述言語です。
     の EPS-draw，EPS-conv，EPS-merg などは便利そうです
 
 - [Dia](http://www.gnome.org/projects/dia/) の [日本語化](http://dengaku.org/yasu/dia/)
-- [ps2eps](http://www.telematik.informatik.uni-karlsruhe.de/~bless/ps2eps.html.en)
+- [ps2eps](http://www.tm.uka.de/~bless/ps2eps.html.en)
     (WindowsのPSプリンタドライバで作ったEPSはclipオプションを付けても外側を侵蝕することがあります。
     これを試してみてください)
 
