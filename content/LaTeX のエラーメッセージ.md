@@ -414,6 +414,13 @@ default タイプの索引を定義する必要があることに注意してく
 を用いてエンコーディング  <em>encoding</em> の宣言を行ってください
 （充分に新しい pLaTeX では，さらに \KanjiEncodingPair の設定も適宜行うことになるでしょう）．
 
+#### ! LaTeX Error: LaTeX2e command \somecs in LaTeX 2.09 document. {#k47034d7}
+
+（\documentstyle を用いた）LaTeX 2.09 形式の文書を LaTeX2e（の LaTeX 2.09
+互換モード）で処理するときに，その文書内に LaTeX2e 専用のコマンド \somecs
+が現れた場合のエラーメッセージです．<br>
+→文書自身を LaTeX2e 形式に直しましょう．
+
 #### ! LaTeX Error: \LoadClass in package file. {#nf7528a2}
 
 パッケージ（.sty）ファイル内で \LoadClass が用いられている場合に現れることがあるエラーメッセージのひとつです
