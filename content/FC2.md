@@ -349,9 +349,9 @@ GNOME端末で
 
 ```
 cd /tmp
-wget http://project.ktug.or.kr/dvipdfmx/snapshot/current/dvipdfmx-20040411.tar.gz
-tar zxvf dvipdfmx-20040411.tar.gz
-cd dvipdfmx-20040411
+wget http://project.ktug.or.kr/dvipdfmx/snapshot/current/dvipdfmx-20050627.tar.gz
+tar zxvf dvipdfmx-20050627.tar.gz
+cd dvipdfmx-20050627
 ./configure --prefix=/usr && make && su -c 'make install'
 ```
 
