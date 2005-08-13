@@ -81,7 +81,6 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td> <a href="http://www-lab.imr.tohoku.ac.jp/~t-nissie/computer/software/isi2bibtex/">isi2bibtex.rb</a> </td><td>Ruby</td><td>ISI Web of Science の検索結果をBibTeX書式に変換。要<a href="http://www.halostatue.ca/ruby/Text__Format.html">Text::Format for Ruby</a>。 </td></tr>
 <tr><td> <a href="http://www-lab.imr.tohoku.ac.jp/~t-nissie/computer/software/isi/index-j.html">isi.rb</a> </td><td>Ruby</td><td>ISI Web of Science の検索結果（タグつきのテキストファイル）をBibTeX書式に変換。旧名isi2bibtex.rb。ライブラリとしても機能し、ある特定の形式に変換するプログラムを書くときにも便利。要<a href="http://www.halostatue.ca/ruby/Text__Format.html">Text::Format for Ruby</a>。 </td></tr>
 <tr><td> ams2bib </td><td>Unixなど </td><td>AmSTeX文献をBibTeX形式に変換 </td></tr>
 <tr><td><a href="http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html">medlinebib</a></td><td>UNIX?</td><td>MEDLINE形式データのインポート</td></tr>
