@@ -26,7 +26,7 @@ HTML と LaTeX には次のような対応関係があります。
 <table>
 <tbody>
 <tr><td><strong>HTML</strong>                  </td><td><strong>LaTeX</strong></td></tr>
-<tr><td rowspan="2">&lt;html&gt;                    </td><td>\documentclass{jarticle}</td></tr>
+<tr><td rowspan="2">&lt;html&gt;あるいは&lt;!DOCTYPE...&gt;                    </td><td>\documentclass{jarticle}</td></tr>
 <tr><td>または \documentclass{jsarticle} など</td></tr>
 <tr><td>&lt;head&gt;                    </td><td>% プリアンブル開始</td></tr>
 <tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td></td></tr>
