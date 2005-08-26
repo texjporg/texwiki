@@ -12,9 +12,26 @@ pukiwiki: "URMSBJ"
 
 ## Uniform Requirements for Manuscripts Submitted to Biomedical Journals {#xe7b281e}
 
-医学系のトップジャーナルが採用している共通の投稿規定（Uniform Requirements for Manuscripts Submitted to Biomedical Journals）に合わせた論文をTeXで書くTipsを集めましょう。
+医学系のトップジャーナルが採用している共通の投稿規定（Uniform Requirements for Manuscripts Submitted to Biomedical Journals: 生物医学雑誌投稿に関する統一規定）に合わせた論文をTeXで書くTipsを集めましょう。
 
 ***
+
+### Uniform Requirements for Manuscripts Submitted to Biomedical Journals とは {#occb286d}
+
+生物医学の分野では、「[生物医学雑誌投稿に関する統一規定 (Uniform Requirements for Manuscripts Submitted to Biomedical Journals）](http://www.icmje.org/icmje.pdf)」が[国際医学雑誌編集者委員会（International Committee of Medical Journal Editors）](http://www.icmje.org/)により作成されており、現在500誌以上の雑誌がこの規定に従っています。これは、1979年に発表され、最初に会議を開催した都市の名をとってバンクーバースタイルと呼ばれ、2004年10月版が最新版です。
+
+古い版の日本語訳は[ここ](http://www.m-pharma.co.jp/info/ia/ia_urm.html)にあります。
+
+### プリアンプルの例 {#yb81b0fc}
+
+```
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{times}
+\usepackage{doublespace}                            % 原稿全体をダブルスペースにします。
+\renewcommand{\listfigurename}{Legends of Figures}
+```
 
 ### タイトルページの作成 {#h7ddae99}
 
@@ -26,13 +43,9 @@ pukiwiki: "URMSBJ"
 <!-- - 別刷の依頼先の著者名と住所 -->
 <!-- -  -->
 
-### ダブルスペース {#v4c4550b}
-
-ダブルスペースにするには\usepackage{doublespace}をプリアンプルに書きます。
-
 ### 文献スタイル {#n0cb9c0e}
 
-幸いにもURMSBJ用のbstファイル（[vancouver.bst](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/vancouver/vancouver.bst)）があります。これを使って
+幸いにもURMSBJ用のbstファイル（[vancouver.bst](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/vancouver/vancouver.bst) \[[詳細](http://www.ctan.org/info?id=vancouver)\]）がCTANにあります。これを使って
 
 ```
 \bibliographystyle{vancouver}
