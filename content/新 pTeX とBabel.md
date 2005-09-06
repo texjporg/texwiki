@@ -7,7 +7,10 @@ pukiwiki: "新 pTeX とBabel"
 
 # 新 pTeX とBabel
 
-## 新 pTeX と Babel（LaTeX/pLaTeX への多言語用ハイフネーションの組み込み方） {#u0b9622c}
+## 新 pTeX と Babel（Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
+
+- \[050906\]
+    W32TeX の8月12日版以降(ptetex3-20050811 以降)では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
 
 - \[050528\]
     UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
@@ -33,132 +36,85 @@ pukiwiki: "新 pTeX とBabel"
 - \[040925\]
     新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
 
-以下では LaTeX/pLaTeX フォーマットファイルに追加のハイフネーションパタンを組み込む方法を具体例で記します。
+以下では LaTeX/pLaTeX システムで Babel パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
 ***
 
 システムの具体例<br>
-角藤版 TeX 一式（2004.09.24.付け）<br>
-LaTeX に greek, russian を追加<br>
-pLaTeX に german（旧正書法）, ngerman（新正書法）, french, greek, russian を追加
+
+角藤版 TeX 一式（2005.09.06.付け）<br>
+
+LaTeX/pLaTeX とも，最初から，english, usenglishmax, basque,<br>
+bulgarian, coptic, welsh, czech, slovak, german, ngerman,<br>
+danish, spanish, catalan, estonian, finnish, french, greek,<br>
+monogreek, ancientgreek, croatian, hungarian, interlingua,<br>
+ibycus, indonesian, icelandic, italian, latin, mongolian,<br>
+dutch, norsk, polish, portuguese, pinyin, romanian, russian,<br>
+slovene, uppersorbian, serbian, swedish, turkish, ukenglish,<br>
+ukrainian のハイフネーションパタンが組み込まれています。
 
 ***
 
-なお，実際に Babel でロシア語を使用するには，さらに，キリルアルファベット関連フォント・フォントエンコーディングファイル・インプットエンコーディングファイルもインストールする必要があります。同様に，ギリシア語の場合はギリシアアルファベット関連ファイルを追加インストールします。これらの追加パッケージは texmf-local/ 以下に入れることにします。
-
-### pLaTeX に german, ngerman, french, greek, russian を組み込む {#r08eeedc}
-
-- 
-    texmf/ptex/platex/config/hyphen.cfg を Orig_hyphen.cfg のようにリネームする
-
-- 
-    texmf/tex/generic/config/language.dat を開き greek, russian がある行頭の % 記号を取り去り，上書き保存する
-
-- 
-    texmf/tex/generic/hyphen/ruhyphen/ruhyphen.tex を開き
-
-```
-\def\Encoding{t2a}
-%\def\Encoding{ucy}
-%\def\Encoding{lcy}
-%\def\Encoding{ot2}
-%\def\Encoding{koi}
-```
-
-とある箇所を
-
-```
-%\def\Encoding{t2a}
-%\def\Encoding{ucy}
-%\def\Encoding{lcy}
-\def\Encoding{ot2}
-%\def\Encoding{koi}
-```
-
-と書き換え，上書き保存する
-
-- 
-    念のため，texmf/web2c/ptex/platex.fmt を Orig_platex.fmt のようにリネームしておく
-
-- 
-    コマンドプロンプトで
-
-    ```
-    fmtutil --byfmt platex
-    ```
-
-    と打ち込めば終わり（ファイルサイズ：Orig_platex.fmt=661KB, 新platex.fmt=919KB）
-
-### LaTeX に greek, russian を組み込む（german, ngerman, french はデフォルトで組み込み済み） {#q8ded0e1}
-
-- 
-    念のため，texmf/web2c/tex/latex.fmt を Orig_latex.fmt のようにリネームしておく
-
-- 
-    コマンドプロンプトで
-
-    ```
-    fmtutil --byfmt latex
-    ```
-
-    と打ち込めば終わり（ファイルサイズ：Orig_latex.fmt=741KB, 新latex.fmt=852KB）
-
-### キリルアルファベット（ロシア語）用フォントエンコーディングファイル・インプットエンコーディングファイルのダウンロードとインストール {#vff90c54}
-
-- 
-    CTAN から macros/latex/required/cyrillic.tar.gz (または cyrillic.zip) をダウンロードし，texmf-local/tex/latex/cyrillic/ 以下に展開する
-
-- 
-    コマンドプロンプトで（texmf-local/tex/latex/cyrillic/ 上で）
-
-    ```
-    latex cyrlatex.ins
-    ```
-
-    と打ち込めば必要となるファイル群が自動生成される
+実際に行う作業は，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけです。これらの追加パッケージは texmf-local/ 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
 - 
-    CTAN から fonts/cyrillic/lh.tar.gz (または lh.zip) をダウンロードし，texmf-local/fonts/source/cyrillic/lh/ 以下に展開する
+    CTAN から fonts/cyrillic/lh.zip をダウンロードし，lh/texmf/ を texmf-local/ と読み替える以外は元のツリー構造を保ったまま texmf-local/ 以下に展開する。
 
 - 
-    texmf-local/fonts/source/cyrillic/lh/tex/setter.tex を開き \MakeFileHeadsfalse とある箇所の false 部分を true と書き換え，上書き保存する
+    texmf-local/source/lh/tex/setter.tex を開き \MakeFileHeadsfalse とある箇所の false 部分を true と書き換え，上書き保存する。
 
 - 
-    texmf-local/fonts/source/cyrillic/lh/tex/wrk/ フォルダを作成する
+    texmf-local/source/lh/tex/wrk/ フォルダを作成する。
 
 - 
-    コマンドプロンプトで（texmf-local/fonts/source/cyrillic/lh/tex/ 上で）
+    コマンドプロンプトで（texmf-local/source/lh/tex/ 上で）
 
     ```
     tex 99allenc
     ```
 
-    と打ち込めば必要となるファイル群が wrk/ 内に自動生成される
+    と打ち込めば必要となるファイル群が wrk/ 内に自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを全て，texmf-local/fonts/source/lh/ ディレクトリ内に移動する。
 
 ### ギリシアアルファベットフォント関連ファイルのダウンロードとインストール {#ud937b30}
 
 - 
-    CTAN から fonts/greek/cb.tar.gz (または cb.zip) をダウンロードし，texmf-local/fonts/source/greek/cb/ 以下に展開する<br>
-    （注意：70MB 以上あります。type1 フォントを必要としない場合は cb/ 下の drivers と mf だけダウンロードすれば OK）
+    CTAN から fonts/greek/cbfonts.zip をダウンロードし，適当な作業ディレクトリに展開する。
+
+- 
+    展開してできた cbfonts/ ディレクトリを開き，その中にある dvips/, encodings/, mf/, tfm/, type1/ の各ディレクトリを，それぞれ cbfonts/ とリネームしてから，<br>
+    texmf-local/fonts/map/dvips/<br>
+    texmf-local/fonts/enc/<br>
+    texmf-local/fonts/source/<br>
+    texmf-local/fonts/tfm/<br>
+    texmf-local/fonts/type1/<br>
+    内に移動する（存在しないディレクトリは予め作っておく）。
 
 ### DVIOUT のカスタマイズ {#r9f015cc}
 
 - 
-    texmf-local/fonts/ 以下のファイルも参照されるように，DVIOUT の Option--Setup Parameters--Font, TEXROOT 欄に ;c:\usr\local\share\texmf-local\fonts を追加記述し，Save, OK する
+    texmf-local/fonts/ 以下のファイルも参照されるように，DVIOUT の Option--Setup Parameters--Font, TEXROOT 欄に ;c:\usr\local\share\texmf-local\fonts を追加記述し，Save, OK する。
+
+### type1ec.sty のインストール {#sea65834}
+
+- 
+    CTAN から fonts/ps-type1/cm-super/type1ec.sty をダウンロードし，<br>
+    texmf-local/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
 
 ### タイプセットのテスト {#mafcbf19}
 
 - 
-    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『\[改訂3版\]美文書』付録J340ページと同じになります）
+    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『\[改訂3版\]美文書』付録J340ページと同じになります）。
 
 ***
 
 ```
 \documentclass[b5paper]{article}
+\usepackage[10pt]{type1ec}% <--- New!!
 \usepackage[OT2,T1]{fontenc}
-\usepackage[polutonikogreek,russian,english,french,german]{babel}
+\usepackage[greek,russian,english,french,german]{babel}
+\languageattribute{greek}{polutoniko}
 \pagestyle{empty}
 \begin{document}
 \selectlanguage{english}
@@ -187,7 +143,7 @@ wurde durch dasselbe, und ohne dasselbe wurde auch nicht
 eines, das geworden ist. In ihm war Leben, und das Leben
 war das Licht der Menschen. Und das Licht scheint in der
 Finsternis, und die Finsternis hat es nicht erfa"st.
-\selectlanguage{polutonikogreek}
+\selectlanguage{greek}
 \section{KATA IWANNHN}
 >En >arq~h| ~>hn <o l'ogos, ka`i <o l'ogos ~>hn pr`os t`on
 je'on, ka`i je`os ~>hn <o l'ogos. o~<utos ~>hn >en >arq~h|
@@ -208,31 +164,21 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ***
 
-ここから先は Type1 フォントを使うための設定です。不必要であれば無視してください
+ここから先は Type1 フォントを使うための設定です。不必要であれば無視してください。
 
-### cm-super パッケージ（巨大！ 約65MB）のダウンロードとインストール {#a4477ec1}
+### cm-super パッケージ（巨大！ 約64.1MB）のダウンロードとインストール {#a4477ec1}
 
 - 
     （cm-super には LH（キリルアルファベット）や EC（ラテンアルファベット）の Type1 が含まれています）<br>
-    CTAN の fonts/ps-type1/cm-super.tar.gz (または cm-super.zip) をダウンロードし，texmf-local/fonts/type1/cm-super/ 以下に展開する
-
-### cb の Type1 フォントのダウンロードとインストール {#kcaa5534}
+    CTAN の fonts/ps-type1/cm-super.zip をダウンロードし，元のツリー構造を保ったまま，texmf-local/tex/latex/cm-super/ 以下に展開する。先の type1ec.sty は上書きして良い。
 
 - 
-    CTAN の fonts/greek/cb/type1.tar.gz (または type1.zip) をダウンロードし，その「中身」を texmf-local/fonts/type1/greek/cb/ 以下に展開する<br>
-    （先の工程において cb.tar.gz 等を丸ごとダウンロードしてきた場合には，展開して得られる type1 フォルダを cb とリネームして texmf-local/fonts/type1/greek/ 内に移動する）
-
-### ギリシア語用 map ファイルのダウンロードとインストール {#ve37546c}
-
-- 
-    （cm-super 用の map ファイルはデフォルトで存在しています）<br>
-    CTAN の fonts/greek/cb/dvips.tar.gz (または dvips.zip) をダウンロードし，その「中身」である cbgreek.map を texmf-local/fonts/map/dvips/cbgreek/ 以下にコピーする<br>
-    （先の工程において cb.tar.gz 等を丸ごとダウンロードしてきた場合には，展開して得られる dvips フォルダを cbgreek とリネームして texmf/fonts/map/dvips/ 内に移動する）
+    texmf-local/tex/latex/cm-super/ ディレクトリを開き，その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，ディレクトリごと texmf-local/fonts/type1/ 以下に移動する（それ以外のファイルは，さしあたって，不必要）。
 
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください（存在しないディレクトリは予め作っておく）。
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
@@ -256,17 +202,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     updmap
     ```
 
-    と打ち込む
-
-- 
-    pdftex.map には既に cm-super 関連の記述があるので，pdflatex を走らせた場合は
-
-```
-`ecrm0500' already exists, duplicates ignored
-```
-
-といったウォーニングが出ます。苦になるのであれば，重複部分を削除してください。
-最も新しい pdftex-w32.tar.gz を使った場合には、この重複はおこりません。
+    と打ち込む。
 
 ### PDF 作成テスト {#mca7623b}
 
@@ -278,7 +214,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     dvipdfm(x) johannes
     ```
 
-    とすることで Type1 の埋め込まれた PDF が作成されます
+    とすることで Type1 の埋め込まれた PDF が作成されます。
 
 ### もっと本格的に・・・ {#z684b1d0}
 
