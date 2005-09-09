@@ -43,6 +43,11 @@ pukiwiki: "URMSBJ"
 <!-- - 別刷の依頼先の著者名と住所 -->
 <!-- -  -->
 
+#### Todo {#jd39c775}
+
+- 総単語数（抄録、謝辞、図表キャプション、文献リストは除く）を自動的にカウントして、タイトルページに入れる
+- 図と表の数を自動的にタイトルページに入れる
+
 ### 文献スタイル {#n0cb9c0e}
 
 幸いにもURMSBJ用のbstファイル（[vancouver.bst](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/vancouver/vancouver.bst) \[[詳細](http://www.ctan.org/info?id=vancouver)\]）がCTANにあります。これを使って
@@ -53,5 +58,9 @@ pukiwiki: "URMSBJ"
 ```
 
 とすればOKです。
+
+### その他 {#b7405687}
+
+doublespaceスタイルを使うと、backgrndやpdfdraftcopyのようにcolorを使う場合にエラーになる。詳細と解決策 [TeX FAQ 37934](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/37934.html)
 
 ### コメント {#y6aa6ec3}
