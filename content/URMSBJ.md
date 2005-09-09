@@ -23,7 +23,7 @@ pukiwiki: "URMSBJ"
 ### プリアンプルの例 {#yb81b0fc}
 
 ```
-\documentclass[a4paper]{article}
+\documentclass[a4paper,titlepage]{article}
 \usepackage{graphicx}
 \usepackage{amsfonts}
 \usepackage{times}
@@ -32,6 +32,8 @@ pukiwiki: "URMSBJ"
 ```
 
 ### タイトルページの作成 {#h7ddae99}
+
+タイトルページはtitlepage環境の中に書きます。articleにtitlepageオプションをつけると、titlepage環境やabstract環境は自動的に改ページされます。ただし、ページ番号はふられません。
 
 <!-- URMSBJでは、タイトルページの要素として、 -->
 <!-- - 論文のタイトル -->
