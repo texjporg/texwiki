@@ -25,7 +25,6 @@ pukiwiki: "URMSBJ"
 ```
 \documentclass[a4paper,titlepage]{article}
 \usepackage{graphicx}
-\usepackage{amsfonts}
 \usepackage{times}
 \usepackage{doublespace}                            % 原稿全体をダブルスペースにします。
 \renewcommand{\listfigurename}{Legends of Figures}
@@ -52,11 +51,43 @@ pukiwiki: "URMSBJ"
 
 ### ページ番号を右上に {#de322a65}
 
-pageno.styを使う
+最新版のURMSBJではページ番号の位置指定はなくなったが、ページ番号の位置を簡単に変更したい場合は、pageno.styを使う。例えば右上なら下記のようにする。
 
 ```
 \usepackage[outsidehead]{pageno}
 ```
+
+### 四方余白を1インチに {#ae6567ae}
+
+最新版のURMSBJでは「十分な余白」に変更されたが、簡単に四方余白を1インチにする場合は、fullpage.styを使う。
+
+```
+\usepackage{fullpage}
+```
+
+オプションなしで読み込むだけでOK。
+
+### 略語を簡単に {#n64448be}
+
+略語は初出の時にフルスペルでかかなくてはいけない。これを自動的にしてくれるacromake.styがある。
+
+```
+\acromake{ANSA}{{\tt ANSA}}{another nasty stupid acronym}
+```
+
+と書いておくと、
+
+```
+\ANSA is a new approach to the use of \ANSA, where \ANSA is ...
+```
+
+は
+
+```
+another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where  ANSA is ...
+```
+
+となる。自分がよく使う略語の定義ファイルを作成しておき、\input{}で読み込めば、略語の展開を気にすることなく、本文に集中できる。
 
 ### 文献スタイル {#n0cb9c0e}
 
