@@ -43,10 +43,20 @@ pukiwiki: "URMSBJ"
 <!-- - 別刷の依頼先の著者名と住所 -->
 <!-- -  -->
 
+タイトルページに図の数や表の数を入れるにはlastpage.styを使う。表の数は
+最後の\begin{table}...\end{table}の間に、\label{lasttable}を入れ、\ref{lasttable}で参照する。図の数は最後の\begin{figure}...\end{figure}の間に、\label{lastfig}を入れ、\ref{lastfig}で参照する。
+
 #### Todo {#jd39c775}
 
 - 総単語数（抄録、謝辞、図表キャプション、文献リストは除く）を自動的にカウントして、タイトルページに入れる
-- 図と表の数を自動的にタイトルページに入れる
+
+### ページ番号を右上に {#de322a65}
+
+pageno.styを使う
+
+```
+\usepackage[outsidehead]{pageno}
+```
 
 ### 文献スタイル {#n0cb9c0e}
 
