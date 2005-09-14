@@ -45,7 +45,7 @@ LIPS のB列出力については \[[qa:19792\]](http://oku.edu.mie-u.ac.jp/~oku
 
 CTAN ミラー，たとえば [Ring Server](http://www.ring.gr.jp/)
 の [support/ghostscript/gnu/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/gnu/)
-から入手できます。
+から入手できます。[sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) のほうが見つかるかも．要チェック．
 
 - ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
 - gnu-gs-fonts-std-6.0.tar.gz
