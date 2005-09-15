@@ -13,11 +13,11 @@ pukiwiki: "MathTime"
 
 ### MathTime とは？ {#v8d5765f}
 
-[MathTime](http://www.YandY.com/mathtime.htm)
+MathTime
 （\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。
-[Y&amp;Y Inc.](http://www.YandY.com/)
-からオンライン購入できます。
-MathTime Complete (MathTime 1.1 + MathTime Plus) が225ドルです。
+Y&amp;Y Inc.から以前はオンライン購入できました。
+
+\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません。[Personal TeX Inc.](http://www.pctex.com/)から後継のMathTime Professinalが販売されています。
 
 \[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
 MathTimeの後継MathTime Professionalが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
@@ -26,7 +26,7 @@ MathTimeの後継MathTime Professionalが [http://www.pctex.com/](http://www.pct
 \[2003年追記\] ↓現在Y&amp;Yは持ち直しています。
 CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出ています。
 
-\[2002-10-18 追記\] [Y&amp;Y Inc.](http://www.YandY.com/)
+\[2002-10-18 追記\] Y&amp;Y Inc.
 は技術者が退社してしまったようで，今後が心配です。
 
 ```
@@ -60,6 +60,8 @@ Times ベースの数式フォントとしては，ほかに
 で組みなおそうとすると数式が行長を超えたりページ数が増えたりすることがあります。
 
 ### オンライン購入とインストール {#ff4fc874}
+
+\[2005-09-16追記\] Y&amp;Yから購入した製品に関する記述です。ファイルの展開方法・インストールするディレクトリ等は、適宜読み替えて下さい。
 
 オンライン購入してみました。
 Linux 上の Netscape 6.1J を使いました。
@@ -103,7 +105,24 @@ mkdir -p /usr/local/share/texmf/fonts/type1/yandy/mathplus/
 mv *.pfb /usr/local/share/texmf/fonts/type1/yandy/mathplus/
 ```
 
-これで teTeX ベースのシステムなら完了です。
+これで teTeX 2ベースのシステムなら完了です。
+
+teTeX 3ベースのシステムでは、MathTimeではなく互換のフォント（plusのないサブセット）が使用されます。
+MathTimeを使用するためには、次のコマンドを実行します。
+
+```
+updmap --disable mt-belleek.map
+updmap --enable Map=mt-yy.map
+updmap --enable Map=mt-plus.map
+```
+
+なお、デフォルトでは、Times-Romanなどは互換フォントが埋め込まれます。印刷時に本物のTimes-Romanなどを使用するので互換フォントを埋め込まないように設定するためには、次のコマンドを実行します。
+
+```
+updmap --setoption dvipdfmDownloadBase14 false
+```
+
+これでteTeX3ベースのシステムなら完了です。
 
 teTeX ベースのシステムでないなら，他の設定もしなければなりません。
 まずはスタイルファイルです。
@@ -131,7 +150,9 @@ latex mathtime.ins
 /usr/local/share/texmf/fonts/vf/yandy/mathplus
 ```
 
-次のような mt-yy.map を作ります。
+#### dvips {#o060901a}
+
+dvips用に、次のような mt-yy.map を作ります。
 
 ```
 mtex MTEX <mtex.pfb
@@ -224,6 +245,10 @@ rmtmih     rmtmih.pfb     0      1
 rmtmub     rmtmub.pfb     0      1
 rmtmuh     rmtmuh.pfb     0      1
 ```
+
+#### dvipdfmx {#vb3eac95}
+
+dvipdfmxでは、TFM名に一致するPFBを検索しますので、mapファイルは不要です。
 
 ### 使い方 {#afcc2c31}
 
