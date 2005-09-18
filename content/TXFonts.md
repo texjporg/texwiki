@@ -281,8 +281,8 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 
 TX フォントの数式のバランスが気になる方のために，Times 系の商品フォントをあげておきます。
 
-- [Y&amp;Y Inc.](http://www.YandY.com/)
-    - [MathTime](http://www.YandY.com/mathtime.htm)
+- Y&amp;Y Inc. (廃業。→[TUG内のサポートページ](http://www.tug.org/yandy/)）
+    - MathTime
         (MathTime 1.1 + MathTime Plus = MathTime Complete: オンライン $225)
 
 - [MicroPress](http://www.micropress-inc.com/) --
