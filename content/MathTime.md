@@ -17,7 +17,7 @@ MathTime
 （\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。
 Y&amp;Y Inc.から以前はオンライン購入できました。
 
-\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません。[Personal TeX Inc.](http://www.pctex.com/)から後継のMathTime Professinalが販売されています。
+\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。[Personal TeX Inc.](http://www.pctex.com/)から後継のMathTime Professinalが販売されています。
 
 \[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
 MathTimeの後継MathTime Professionalが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
@@ -28,25 +28,6 @@ CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出て�
 
 \[2002-10-18 追記\] Y&amp;Y Inc.
 は技術者が退社してしまったようで，今後が心配です。
-
-```
-From: ljw1004@cus.cam.ac.uk (Lucian Wischik)
-Subject: YandY, we miss you so!
-Newsgroups: comp.text.tex
-Date: 30 Sep 2002 12:04:56 GMT
-Organization: University of Cambridge, England
-
-As mentioned here, YandY seem to have lost their technical support person.
-Following an earlier thread, I've had a few people asking me for copies of
-the updates that Y&Y sent me towards the end. Therefore I've put these
-updates on a web page. (But I'm hoping that Louis Vosloo from YandY tech
-support will email me, tell me that the updates are on their own company
-servers, and ask me to remove my copies...)
-http://www.wischik.com/lu/programmer/latex-stuff.html
-
---
-Lucian Wischik, Queens' College, Cambridge CB3 9ET. www.wischik.com/lu
-```
 
 Times ベースの数式フォントとしては，ほかに
 [MicroPress](http://www.micropress-inc.com/)
