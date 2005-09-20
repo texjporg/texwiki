@@ -43,14 +43,12 @@ LIPS のB列出力については \[[qa:19792\]](http://oku.edu.mie-u.ac.jp/~oku
 
 ### ダウンロード {#k0bb1098}
 
-CTAN ミラー，たとえば [Ring Server](http://www.ring.gr.jp/)
-の [support/ghostscript/gnu/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/gnu/)
-から入手できます。[sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) のほうが見つかるかも．要チェック．
+たとえば [CTAN:/support/ghostscript/](https://mirror.ctan.org//support/ghostscript/) や[sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061)  から入手できます。
 
-- ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
-- gnu-gs-fonts-std-6.0.tar.gz
-- gnu-gs-fonts-other-6.0.tar.gz
-- jpegsrc.v6b.tar.gz
+- ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz ([sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) をたどる)
+- gnu-gs-fonts-std-6.0.tar.gz [CTAN:support/ghostscript/fonts/ghostscript-fonts-std-6.0.tar.gz](https://mirror.ctan.org/support/ghostscript/fonts/ghostscript-fonts-std-6.0.tar.gz)
+- gnu-gs-fonts-other-6.0.tar.gz [CTAN:support/ghostscript/fonts/ghostscript-fonts-other-6.0.tar.gz](https://mirror.ctan.org/support/ghostscript/fonts/ghostscript-fonts-other-6.0.tar.gz)
+- jpegsrc.v6b.tar.gz [CTAN:support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz](https://mirror.ctan.org/support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz)
 
 次のものの Windows 版 (シンボリックリンクを含まないもの) は
 [Ring Server](http://www.ring.gr.jp/)
