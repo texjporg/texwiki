@@ -26,9 +26,18 @@ pukiwiki: "URMSBJ"
 \documentclass[a4paper,titlepage]{article}
 \usepackage{graphicx}
 \usepackage{times}
-\usepackage{doublespace}                            % 原稿全体をダブルスペースにします。
+\usepackage[doublespacing]{setspace}                   % 原稿全体をダブルスペースにします。
 \renewcommand{\listfigurename}{Legends of Figures}
 ```
+
+### ダブルスペース {#j474cf50}
+
+簡単にダブルスペース化するには、doublespace.styまたはsetspace.styを使う。特別な理由がない限り、setspace.styを使った方が無難。
+
+- doublespaceの最新版は1986年であり、一方、setspaceの方は2000年である
+- doublespaceスタイルを使うと、backgrndやpdfdraftcopyのようにcolorを使う場合にエラーになる。詳細と解決策 [TeX FAQ 37934](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/37934.html)
+
+部分的にシングルスペースや任意のスペーシングをしたい場合のコマンド・環境がsetspace.styに用意されているので、詳細はsetspace.styの中をのぞく。
 
 ### タイトルページの作成 {#h7ddae99}
 
@@ -49,7 +58,13 @@ pukiwiki: "URMSBJ"
 
 - 総単語数（抄録、謝辞、図表キャプション、文献リストは除く）を自動的にカウントして、タイトルページに入れる
 
-### ページ番号を右上に {#de322a65}
+### ページ番号 {#z8ab941f}
+
+<!-- Abstractからページ番号を振りたい場合は、\begin{abstract}...\end{abstract}のあとに、 [#dfa3a50d] -->
+<!-- \addtocounter{page}{1} -->
+<!-- を追加する。 -->
+
+#### ページ番号を右上に {#a0c50ac9}
 
 最新版のURMSBJではページ番号の位置指定はなくなったが、ページ番号の位置を簡単に変更したい場合は、pageno.styを使う。例えば右上なら下記のようにする。
 
@@ -59,13 +74,19 @@ pukiwiki: "URMSBJ"
 
 ### 四方余白を1インチに {#ae6567ae}
 
-最新版のURMSBJでは「十分な余白」に変更されたが、簡単に四方余白を1インチにする場合は、fullpage.styを使う。
+最新版のURMSBJでは「十分な余白」に変更されたが、四方余白を1インチと指定されている場合は、fullpage.styで簡単に四方余白を1インチにできる。
 
 ```
 \usepackage{fullpage}
 ```
 
-オプションなしで読み込むだけでOK。
+オプションなしで読み込むだけでOK。もし、\usepackage\[outsidehead\]{pageno}と併用して本文と右肩のページ番号が重なる場合は、\usepackage\[outsidehead\]{pageno}をはずして、単に
+
+```
+\usepackage[myheadings]{fullpage}
+```
+
+とする。fullpageのその他のオプションは、plain, empty, headings。
 
 ### 略語を簡単に {#n64448be}
 
@@ -101,7 +122,5 @@ another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where 
 とすればOKです。
 
 ### その他 {#b7405687}
-
-doublespaceスタイルを使うと、backgrndやpdfdraftcopyのようにcolorを使う場合にエラーになる。詳細と解決策 [TeX FAQ 37934](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/37934.html)
 
 ### コメント {#y6aa6ec3}
