@@ -16,7 +16,7 @@ pukiwiki: "BibTeX関連ツール"
 <table>
 <tbody>
 <tr><td> 名前 </td><td> 動作条件 </td><td> 説明 </td></tr>
-<tr><td> <a href="http://www.imamod.ru/~vab/bibtexmng/">BibTexMng</a> </td><td>Windows2000/XP</td><td>BibTeX編集ソフト </td></tr>
+<tr><td> <a href="http://www.imamod.ru/~vab/bibtexmng/">BibTexMng</a> </td><td>Windows2000/XP</td><td>BibTeX編集ソフト 最新版:0.5 (2005/09/26) </td></tr>
 <tr><td> <a href="http://www.tug.org/tex-archive/biblio/bibtex/utils/JavaBib/">JavaBib</a> </td><td>Java </td><td>BibTeXファイル編集ソフト </td></tr>
 <tr><td> <a href="http://jabref.sourceforge.net">JabRef</a> </td><td>Java </td><td>BibTeXファイル編集ソフト（旧称 <a href="http://csb.stanford.edu/nbatada/JBibtexManager/">JBibtexManager</a>）<a href="http://bibkeeper.sourceforge.net">bibkeeper</a>もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる</td></tr>
 <tr><td> <a href="http://bibdesk.sourceforge.net/">BibDesk</a> </td><td> MacOSX </td><td> BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます </td></tr>
