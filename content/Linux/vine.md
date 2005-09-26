@@ -208,3 +208,11 @@ patch -p0 <<EOF
  % The following line works on compressed or uncompressed postscript with GhostScript
 EOF
 ```
+
+この修正をすると、dvipdfmx が EPS を埋め込む時に
+次のようなメッセージを出すようになりますが、それで正常です。
+
+```
+[1][2*** unembeddable CIDFont: /Ryumin-Light
+*** unembeddable CIDFont: /GothicBBB-Medium
+```
