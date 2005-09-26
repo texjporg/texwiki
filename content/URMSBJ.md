@@ -26,8 +26,16 @@ pukiwiki: "URMSBJ"
 \documentclass[a4paper,titlepage]{article}
 \usepackage{graphicx}
 \usepackage{times}
-\usepackage[doublespacing]{setspace}                   % 原稿全体をダブルスペースにします。
+\usepackage[doublespacing]{setspace}
 \renewcommand{\listfigurename}{Legends of Figures}
+\usepackage[noheads,tablesfirst]{endfloat}
+\AtBeginDelayedFloats{\renewcommand{\baselinestretch}{2}}
+\makeatletter
+\renewcommand{\@makecaption}[2]{%
+  \vskip\abovecaptionskip
+  \hbox to \hsize{\hfil #1\hfil}%
+  \vskip\belowcaptionskip}
+\makeatother
 ```
 
 ### ダブルスペース {#j474cf50}
@@ -87,6 +95,51 @@ pukiwiki: "URMSBJ"
 ```
 
 とする。fullpageのその他のオプションは、plain, empty, headings。
+
+### 図表 {#gb594e5c}
+
+URMSBJでは、図表は1つずつ独立したページで用意して、本文の後につけなければならない。また、図はキャプションなしで用意し、図の裏に図番号などのラベルを貼る。
+
+いまのところの妥協案は下記の通り。
+
+自分や共著者へのプレビュー用に通常通りfigure環境やtable環境を使い、投稿時に
+
+```
+\usepackage[noheads,tablesfirst]{endfloat}
+```
+
+とする。すると、図の挿入箇所に
+
+```
+[Figure 1 about here]
+```
+
+などと挿入され、図表は本文の後に回される。デフォルトでは図が表よりも先にくるので、tablesfirstというオプションを入れる。
+
+#### 図版の説明文リストをダブルスペースに {#o3fe6c26}
+
+endfloatを使っている場合、下記をプリアンプルに足す。
+
+```
+\AtBeginDelayedFloats{\renewcommand{\baselinestretch}{2}}
+```
+
+#### キャプションなしの図を出力する {#pc2b2ad4}
+
+@makecaptionを再定義する。
+
+```
+\renewcommand{\@makecaption}[2]{%
+  \vskip\abovecaptionskip
+  \hbox to \hsize{\hfil #1\hfil}%
+  \vskip\belowcaptionskip}
+```
+
+図をキャプションなしにして、さらにページいっぱいに拡大する方法はいまのところ不明（誰か加筆してください）。List of Figuresの方はちゃんとキャプションがリストされているはず。
+
+#### Todo {#a08dd516}
+
+- 図の裏に貼るラベルを自動出力
 
 ### 略語を簡単に {#n64448be}
 
