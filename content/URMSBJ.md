@@ -148,9 +148,22 @@ endfloatを使っている場合、下記をプリアンプルに足す。
 
 - 図の裏に貼るラベルを自動出力
 
-### SI単位 {#f7517a12}
+### 度量衡単位 {#f7517a12}
 
-SI単位を正しく表記するためのSIunits.styが存在するが、platexでコンパイルできない（latexならOK）ので注意が必要。
+SI単位を用いる。これをサポートするスタイルファイルとして、SIunits.styとsistyle.styがあり、両者は趣が異なる。Slunitsの方はフルスペルを書いてそれを大文字小文字を間違わずに正しく記号化するためのもの（例えば、mHz Mhz mhz MHzを区別してくれる）。SIstyleの方は入力を簡略化するための支援マクロである。残念ながら、SIunits.styはplatexでコンパイルできない（latexならOK）。
+
+<strong>(例)</strong> SIstyleの使用例
+
+<table>
+<tbody>
+<tr><td> \SI{-1.234e^3}{N.m} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle1.png" alt=""></td></tr>
+<tr><td> \ang{32;46;23.373} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle2.png" alt=""></td></tr>
+<tr><td> \SI{5}{\micro s} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle3.png" alt=""></td></tr>
+<tr><td> \SI{60}{\degC} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle4.png" alt=""></td></tr>
+</tbody>
+</table>
+
+もちろん本文中にも\degCなどマクロは使用できる。
 
 ### 略語を簡単に {#n64448be}
 
