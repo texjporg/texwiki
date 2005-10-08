@@ -9,7 +9,7 @@ pukiwiki: "科研費マクロLaTeX2e化"
 
 ## 科研費マクロLaTeX2e化 {#w2188abf}
 
-すでに [科研費マクロ](http://www.yukawa.kyoto-u.ac.jp/contents/researcher/kakenhi.html)
+すでに [科研費マクロ](http://www.asl.ee.meisei-u.ac.jp/kaken.j.html)
 は LaTeX2e でも処理できるようになっていますが，実際は LaTeX 2.09 互換モードに LaTeX2e
 対応パッチが当ててあります。
 これを LaTeX2e らしく \documentclass を使うように書き直してみます。
