@@ -25,6 +25,9 @@ TeX で無指定で使われるフォントは，本文は Computer Modern Roman
 TrueType 版の Computer Modern フォントの一つである BaKoMa フォントは，たとえば [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) で入手できます。 
 pfb 形式のフォントは TeX に標準で入っています。 cmr10.pfb，cmmi10.pfb などを検索してください。 
 
+最近ではLatin ModernというComputer Modernを8ビット化したもののOpenType版がいいかもしれません。
+[CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) で入手できます。
+
 ## 数式をEPSにする {#hf9c85f7}
 
 複雑な数式は EPS などの形式でインポートします。 
