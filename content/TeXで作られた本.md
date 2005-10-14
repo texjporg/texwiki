@@ -77,6 +77,8 @@ TeXで作った本を出している出版社：
 - 宮腰忠. [『高校数学＋α：基礎と論理の物語 』](http://www.h6.dion.ne.jp/~hsbook_a/). 2004年9月24日発売. 共立出版．ISBN4-320-01768-4. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
     <!-- http://www.kyoritsu-pub.co.jp/shinkan/shin0409_08.html -->
 
+- 米村明芳・杉山義明.[『数IIICの完全攻略』](http://www.gensu.co.jp/book_print.cgi?isbn=4-7687-0501-4). 2005年10月11日発売. 現代数学社. ISBN4-7687-0501-4. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html)）
+
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
 ```
