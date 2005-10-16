@@ -116,3 +116,4 @@ ulimit -t 10 -f 1024
 
 - Windows環境で動かしているかたがいれば設置法を教えてください --  2005-01-22 (土) 22:53:11
 - [qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html)を参考に。 --  2005-05-11 (水) 22:52:05
+    <!-- -fsdafsdafasd - - fdsa &new{2005-10-17 (月) 16:05:41}; -->
