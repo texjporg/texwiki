@@ -26,3 +26,12 @@ pukiwiki: "XyMTeX"
 および
 [PukiWiki XyMTeX プラグイン](http://tec-tech.org/index.php?PukiWiki%2FPlugin%2Fxymtex.inc.php)
 を挙げて置きます。
+
+XyMTeXは改良に改良を重ね、（試していませんが）[マイトトキシン](http://en.wikipedia.org/wiki/Image:Mitotoxin.jpg)のような複雑な化合物でもTeXやパッケージの仕様などの制限さえなければ理論的に描画可能なレベルまでになりました。
+
+現時点で描画の難しい構造として、いす型構造式において、環の融合やATOMLIST指定が不可であること、任意の平面構造より立体的に突出した構造（楔形のことではない。これは4.01で実装済み）を描く際にpicture環境などによるレイアウト指定が必要になることを挙げます。たとえば次のフグ毒テトロドトキシン
+
+<img src="http://upload.wikimedia.org/wikipedia/en/2/2f/Tetrodotoxin.png" alt="テトロドトキシンの構造式">
+
+をXyMTeXで描画する際には、おそらく一からpicture環境などで描画する必要があります。（いす型構造式においてATOMLISTとしてNを指定しなければならないのでchair命令が使えない。）
+これらを描画する際には相変わらずChemDraw, ISIS/DrawなどのWYSIWYGソフトが必要になるかもしれません。
