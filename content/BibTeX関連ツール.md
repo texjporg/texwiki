@@ -90,6 +90,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 <tr><td> <a href="http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib">r2bib</a> </td><td> </td><td> referからBibTeXに変換するツールだが、<a href="http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html">EndNoteに対応した</a>。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。 </td></tr>
 <tr><td><a href="http://www.hj-gym.dk/~hj/writer2latex/">Writer2BibTeX</a></td><td>Java, OpenOffice.org</td><td>Writer文書から文献情報を抜き出し、BibTeX形式で保存するOpenOffice.orgのマクロ</td></tr>
 <tr><td><a href="http://www.ecst.csuchico.edu/~jacobsd/bib/archives/mathsci2bibtex">mathsci2bibtex</a></td><td>perl</td><td>MathSciからBibTeXへの変換</td></tr>
+<tr><td><a href="http://marc.herbert.free.fr/refdb/">stdinRIS2bib.pl ris2bib.pl</a></td><td>perl</td><td>RIS形式をBibTeX形式へ変換する。<a href="http://www.ecst.csuchico.edu/~jacobsd/bib/archives/ris2bib">ris2bib</a>が正常に動作しない最近の環境でもOK。キーは自分でつける必要あり。出力されたbibファイルは、bibcleanに通した方がよいかも。ris2bib.plはstdinRIS2bib.plから内部的に呼び出されるので同一ディレクトリにおいておくこと。<br>【使い方】$ cat risファイル ｜ stdinRISbib.pl &gt; bibファイル </td></tr>
 </tbody>
 </table>
 
