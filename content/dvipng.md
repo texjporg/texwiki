@@ -13,6 +13,8 @@ dvipng は dvi ファイルから png 形式の画像を生成するコマンド
 preview-latex プロジェクトの成果物として公開されています。
 
 - [http://preview-latex.sourceforge.net/](http://preview-latex.sourceforge.net/)
+- [http://sourceforge.net/projects/dvipng/](http://sourceforge.net/projects/dvipng/)
+- [http://dvipng.sourceforge.net/](http://dvipng.sourceforge.net/)
 
 mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。
 
