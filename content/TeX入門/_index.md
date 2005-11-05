@@ -30,7 +30,7 @@ TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作っ�
 
 > ［参考］ TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX もあります。これらは現在は千葉大の櫻井貴文さんが [TeXfamily](ftp://ftp.math.s.chiba-u.ac.jp/tex/) としてメンテナンスしておられます。
 
-1994年に LaTeX の新版 LaTeX2ε（ツー・イー）， 1995年にはアスキーから日本語版 pLaTeX2ε が出ました。以下ではこれらに基づいて説明します。 LaTeX2ε は半角文字だけで書くときは LaTeX2e と書くことになっていますので，以下では LaTeX2e，pLaTeX2e と書きます。 
+1994年に LaTeX の新版 LaTeX2ε（ツー・イー）， 1995年にはアスキーから日本語版 pLaTeX2ε が出ました。 これにともなって、それ以前の古い LaTeX を特に LaTeX2.09 と呼ぶことになりました。以下では現行の LaTeX2ε と pLaTeX2ε に基づいて説明します。 LaTeX2ε は半角文字だけで書くときは LaTeX2e と書くことになっていますので，以下では LaTeX2e，pLaTeX2e と書きます。 
 
 TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の力持ち」としてそれぞれ TeX，pTeX が働いていると言うにとどめておき，詳しい説明は省略します。 
 
@@ -42,6 +42,18 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 - 奥村晴彦 『[［改訂第3版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』 （[技術評論社](http://www.gihyo.co.jp/)，2004年） ［Windows，Mac OS Xのバイナリ，UNIX系OS用のソースを収めたCD-ROMが付いています］
 
 これ以外にもたくさん良書が出ています([TeXの本](</TeXの本/>))ので，書店でお選びください。 
+
+### LaTeX のバージョンについて - 入門書を読む際に - {#h22f32a6}
+
+LaTeX には大きく分けて二つの異なるバージョンがあります。
+一昔前の LaTeX2.09 と、現行の LaTeX2e です。
+（日本語化されたものでは pLaTeX2.09 と pLaTeX2e です。）
+LaTeX2.09 と LaTeX2e は別物と考えてよいくらいです。
+
+図書館や書店には今でも LaTeX2.09 時代の解説書が並んでいたり、LaTeX 形式で論文を受け付ける学会などの中には未だに LaTeX2.09 を採用しているところがあったりするので注意が必要です。
+
+文書ソースを \documentstyle で始めるのが LaTeX2.09、\documentclass で始めるのが LaTeX2e です。
+LaTeX2.09 用の古い原稿を LaTeX2e で処理すると自動的に LaTeX2.09 の互換モードで処理されるので、エラーなどが出ないことも多くあります。
 
 ## インストールのしかた {#i326adb5}
 
