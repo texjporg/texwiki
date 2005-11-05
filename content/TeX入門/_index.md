@@ -63,6 +63,8 @@ LaTeX2.09 用の古い原稿を LaTeX2e で処理すると自動的に LaTeX2.09
 
 インストール不要でTeXが使えるページ
 [TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/tex/)
+および
+[サーバーサイドpLaTeX2εビューアー](http://nowsmartsoft.or.tv/texview/mytex.cgi)
 もあります。
 
 ## 使い方 {#hf6bc116}
