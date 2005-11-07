@@ -9,7 +9,7 @@ pukiwiki: "Mathptmx"
 
 ## Mathptmx {#a95ec0b1}
 
-Mathptmx は，本文・数式とも，フォントを Computer Modern から Times にかえるパッケージです。このパッケージを利用すると，\jmath，\amalg，\coprod が使えなくなるという欠点があります。下のようにすると，この3種類の文字（演算子）が出力できます。このソースは，TXFonts を参考にして書きました。
+Mathptmx は，本文・数式とも，フォントを Computer Modern から Times にかえるパッケージです。このパッケージを利用すると，\jmath，\amalg，\coprod が出力できなくなってしまいます。下のようにすると，この3種類の文字（演算子）だけ Computer Modern で，ほかは Times で出力することができます。このソースは，TXFonts を参考にして書きました。
 
 ```
 \documentclass{jsarticle}
