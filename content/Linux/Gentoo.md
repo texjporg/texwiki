@@ -23,7 +23,7 @@ LINGUAS='ja'
 # emerge ptex dvipdfmx ghostscript acroread prosper psutils
 ```
 
-以前は、xdvikをptexと別々にemergeしないといけませんでしたが、現在ではptexに含まれています。Ghostscriptは、EPS ghostscript 7.07を入れます。8.15や8.16では、cjkのパッチが当てられないようです。
+以前は、xdvikをptexと別々にemergeしないといけませんでしたが、現在ではptexに含まれています。Ghostscriptは、EPS ghostscript 7.07を入れます。8.15や8.16では、cjkのパッチがデフォルトで当たらないようです。
 
 次に、dvipdfmxでちゃんと日本語が通るようにします。
 
@@ -39,3 +39,7 @@ LINGUAS='ja'
 ```
 
 といった有名なエラーが出ます。
+
+***
+
+- すでにある程度の環境が整っているマシンでためした結果ですが，ptetex のコンパイルは正常に終了します． --  2005-11-10 (木) 21:55:12
