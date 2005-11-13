@@ -23,7 +23,7 @@ LINGUAS='ja'
 # emerge ptex dvipdfmx ghostscript acroread prosper psutils
 ```
 
-以前は、xdvikをptexと別々にemergeしないといけませんでしたが、現在ではptexに含まれています。Ghostscriptは、EPS ghostscript 7.07を入れます。8.15や8.16では、cjkのパッチがデフォルトで当たらないようです。
+以前は、xdvikをptexと別々にemergeしないといけませんでしたが、現在ではptexに含まれています。Ghostscriptは、ESP ghostscript 7.07を入れます。8.15や8.16では、cjkのパッチがデフォルトで当たらないようです。
 
 次に、dvipdfmxでちゃんと日本語が通るようにします。
 
