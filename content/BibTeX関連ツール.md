@@ -22,7 +22,7 @@ pukiwiki: "BibTeX関連ツール"
 <tr><td> <a href="http://bibdesk.sourceforge.net/">BibDesk</a> </td><td> MacOSX </td><td> BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます </td></tr>
 <tr><td><a href="http://homepage.mac.com/tukanobu/sonota/yamako2.html">やまこ２号</a></td><td> MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4</td><td> 文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる</td></tr>
 <tr><td> <a href="http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame">bibdb</a> </td><td>DOS/Windows </td><td>日本語が扱えない</td></tr>
-<tr><td><a href="http://www.surf.nuqe.nagoya-u.ac.jp/ichimiya/documents/HyperBibDB/help.html">HyperBibDB</a></td><td>CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X</td><td>BibTeXの参考文献データベースを編集するためのプログラム</td></tr>
+<tr><td><a href="http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/HyperBibDB/help.html">HyperBibDB</a></td><td>CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X</td><td>BibTeXの参考文献データベースを編集するためのプログラム</td></tr>
 <tr><td><a href="http://gbib.seul.org/">gBib</a></td><td>libstdc++ library, GTK+ &gt;= 1.2 and Gnome &gt;= 1.0</td><td>日本語OKなBibTeX文献管理ソフト</td></tr>
 <tr><td><a href="http://www.iui.se/staff/jonasb/bibedit/">BibEdit</a></td><td>Windows</td><td>.bibファイル作成・管理</td></tr>
 <tr><td><a href="http://allbib.sourceforge.net/">allbib</a></td><td>perl gtk</td><td>.bibファイル編集・管理ソフト</td></tr>
