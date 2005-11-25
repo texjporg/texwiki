@@ -198,6 +198,47 @@ another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where 
 
 とすればOKです。
 
+このvancuver.bstは、論文タイトルをbibファイルにかかれているとおりに出力します。
+
+#### 論文タイトルを文頭以外小文字に {#x1a58ed1}
+
+Lacetなどに投稿する際には文頭以外は小文字にした方がよいでしょう。
+自動的に論文タイトルの文頭以外を小文字にするには、vancouver.bstの546行目付近の
+
+```
+FUNCTION {format.title}
+{ title
+%%duplicate$ empty$ 'skip$
+%%  { "t" change.case$ }
+%%if$
+  "title" bibinfo.check
+}
+```
+
+この部分の%を削除します。
+
+#### 著者名のファーストネームをイニシャルに {#n367e118}
+
+vancouver.bstでは、例えば、bibファイルの中に Donald E. Knuth と書かれていれば、
+Knuth DonaldEと出力してしまいます。bibファイルの中を D. E. Knuthと代えれば、
+Knuth DE と本来の出力をします。vancouver.bstを編集して、Donald E. KnuthでもD. E. Knuthでも Knuth DEと出力するようにしましょう。vancouver.bstの467行目
+
+```
+"{vv~}{ll}{ ff{}}{ jj}"
+```
+
+を
+
+```
+"{vv~}{ll}{ f{}}{ jj}"
+```
+
+と編集します。
+
+```
+
+```
+
 ### その他 {#b7405687}
 
 ### コメント {#y6aa6ec3}
