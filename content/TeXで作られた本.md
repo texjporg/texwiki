@@ -54,6 +54,8 @@ TeXで作った本を出している出版社：
 - 宮岡伯人『[「語」とはなにか：エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』(三省堂, 2002年)
 - 亀田隆，高村正樹『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
 - 力武健次『インターネットコミュニティ－国際ネットワーク最前線－』（オーム社，1994年）
+- 坂梨隆三，小木曽智信，酒井わか奈，村上謙 編『[好色伝受―本文・総索引・研究](http://www.bookmailclub.com/bmc/reader/search/?.command=detail&book_id=1553)』（笠間書院，2000年）
+    <!-- ^ちょっと毛色が違うものなので追加 -->
 
 青磁書房から出ている次の本がみなTeXとのこと：
 
