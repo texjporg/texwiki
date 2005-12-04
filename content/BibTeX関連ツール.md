@@ -22,6 +22,7 @@ pukiwiki: "BibTeX関連ツール"
 | [やまこ２号](http://homepage.mac.com/tukanobu/sonota/yamako2.html) |  MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4 |  文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる |
 |  [bibdb](http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame)  | DOS/Windows  | 日本語が扱えない |
 | [HyperBibDB](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/HyperBibDB/help.html) | CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X | BibTeXの参考文献データベースを編集するためのプログラム |
+| [BibCompanion](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/BibCompanion/) | MacOS X | BibTeXの参考文献データベースを編集するためのプログラム。HyperBibDBの後継。 |
 | [gBib](http://gbib.seul.org/) | libstdc++ library, GTK+ >= 1.2 and Gnome >= 1.0 | 日本語OKなBibTeX文献管理ソフト |
 | [BibEdit](http://www.iui.se/staff/jonasb/bibedit/) | Windows | .bibファイル作成・管理 |
 | [allbib](http://allbib.sourceforge.net/) | perl gtk | .bibファイル編集・管理ソフト |
