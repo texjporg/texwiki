@@ -40,13 +40,9 @@ TeX/LaTeX で投稿すれば，PostScript や PDF にも自動変換してくれ
 
 ### まず登録する {#i9e851ff}
 
-[ヘルプ](http://xxx.yukawa.kyoto-u.ac.jp/help/)
-に挙げてある一連のアドレスうち一つ（たとえば [cond-mat@xxx.lanl.gov](mailto:cond-mat@xxx.lanl.gov)）
-にタイトルが register のメールを出します。本文は不要です。
-すぐにパスワードなどを書いた返事が来ますので，
-そこに書いてある指示にしたがって
-[登録のページ](http://xxx.lanl.gov/register)
-で登録をすませます。
+[Register](http://arxiv.org/edit-user/) のページに行き，必要事項を記入します。
+入力したメールアドレスにメールが来ますので，
+そこに書いてあるページに行き，登録を完了させます。
 
 ### 原稿を TeX で書く {#g4702048}
 
