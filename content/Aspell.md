@@ -185,8 +185,50 @@ WinShellなら設定なしで（PATHの設定も不要）、ツールバーの�
 
 も追加します。
 
+emacsでは単純なスペルチェック以外にも、Aspellを使って、途中まで入力した単語の後半を補完してくれるスペル補完機能があります。
+
+```
+M-x ispell-complete-word
+```
+
+入力したスペルを途中に含む単語を補完入力する場合には、
+
+```
+M-x ispell-complete-word-interior-frag
+```
+
+とします。
+
 <!-- ispell.lから呼び出せるそうです。いろいろ検索してみましょう。例として、[[ドイツ語LaTeX文書のスペルチェック方法:http://www.pocus.jp/d-latex/aspell-latex-de.html]]のページを挙げます。 -->
 
 ### Aspell の使い方（xyzzy編） {#awsxy466}
 
 <strong>[xyzzyの解説](/xyzzy/)</strong>をご覧ください。英語以外の言語もスペルチェックできます。
+
+### ユーザ辞書の作成 {#ve0ff963}
+
+ユーザ辞書には2種類あります。~/.aspell.lang.pwsは標準辞書にはない単語を追加する辞書で、~/.aspell.lang.prepl は特定のミススペルに対して修正置換対象を指定する辞書です。
+
+.aspell.lang.pwsはテキストファイルです。1行目には、
+
+```
+personal_ws-1.1 lang num [encoding]
+```
+
+と書きます。langは英語ならen、numは単語数ですが単なる目安です。0でOKです。2行目からは、登録単語を書きます。1単語1行です。
+
+日本人の人名などを人名辞典から引っ張ってきて片っ端から入れるのも良いでしょう。
+
+.aspell.lang.preplもテキストファイルです。1行目には
+
+```
+personal_repl-1.1 lang num [encoding]
+```
+
+と書きます。langとnumは上と同じです。2行目からは修正対象と修正語をペアで書きます。
+
+```
+misspelled_word correction
+```
+
+ここで設定された修正語は、スペルチェックの際に第一候補として表示されます。
