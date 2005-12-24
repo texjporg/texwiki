@@ -98,6 +98,6 @@ PDFファイル内のフォントとの対応だけです。
 
 ## サンプル {#f920d8cd}
 
-1. UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。
-1. 縦書き
+1. [UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
+1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)
 1. SIP準備中
