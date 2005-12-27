@@ -152,6 +152,8 @@ eps ファイル自身や bb ファイルから“バウンディングボック
 > この場合には，サポートしていない形式の画像ファイルを取り込もうとしても
 > “Unknown graphics extension: ...”のエラーは生じないでこのエラーが生じることがあります．
 
+> また，(少なくともWindows XPにおいては)\includegraphicsの表記で画像ファイル名の拡張子(.jpg/.pngなど)の表記を大文字(.JPG/.PNGなど)にした場合，“定義されていない拡張子”扱いになり(？)，「.bb」ファイルが存在してもこのエラーが発生します。 <!-- graphics/graphicx パッケージにおいては，拡張子の大文字・小文字は区別します． --> <!-- OS 側で .PNG と .png が同一視されていようと，.png に対する処理のみ --> <!-- 定義されていて .PNG に対する処理が未定義なら，原則として .png と --> <!-- 小文字表記しなければなりません（ほかの拡張子に関しても同様です）． --> <!-- ただし，\Gin@getbase の定義に次のように手を入れれば， --> <!-- 拡張子部分の大文字表記も可能になります． --> <!-- \def\Gin@getbase#1{% --> <!--   \edef\Gin@tempa{% --> <!--     \def\noexpand\@tempa####1#1\space{% --> <!--       \def\noexpand\Gin@base{####1}}}% --> <!--   \IfFileExists{\filename@area\filename@base#1}% --> <!--     {\Gin@tempa --> <!--      \expandafter\@tempa\@filef@und --> <!--      \edef\@tempa{% --> <!--         \lowercase{\edef\noexpand\Gin@ext{#1}}}% --> <!--      \@tempa}{}}% --> <!-- もっとも，雑誌等への投稿時のようなことを考えると，画像ファイル名の --> <!-- 拡張子部分はファイル自身および \includegraphics の引数のどちらにおいても --> <!-- 小文字表記で統一しておくのが無難でしょう． -->
+
 #### ! LaTeX Error: Cannot determine size of graphic in <em>filename</em> (no size specified). {#d6559755}
 
 画像自身の“バウンディングボックス情報”は用いずに
