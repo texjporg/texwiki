@@ -58,7 +58,7 @@ LIPS のB列出力については \[[qa:19792\]](http://oku.edu.mie-u.ac.jp/~oku
 [ここ](http://oku.edu.mie-u.ac.jp/mirror/gs-cjk/)
 から入手できます。
 
-- adobe-cmaps-200204.tar.gz
+- adobe-cmaps-200204.tar.gz -> adobe-cmaps-200406.tar.gz でないと，otf パッケージの使用などで文字欠けが発生する．
 - acro5-cmaps-2001.tar.gz
 
 ### インストール {#r6c67752}
@@ -167,7 +167,7 @@ tar xvzf acro5-cmaps-2001.tar.gz
 ```
 
 [New Ghostscript font release](http://www.ghostscript.com/article/44.html)，しかし
-[URWフォントのバグ](http://oku.edu.mie-u.ac.jp/~okumura/texfaq//~okumura/texfaq/urwbug.html)
+URWフォントのバグ
 
 gdevlips-2.4.0 のパッチ等の情報が
 [竹野さんのページ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/LBP/lbp.html)
