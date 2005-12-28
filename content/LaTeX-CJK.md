@@ -9,13 +9,6 @@ pukiwiki: "LaTeX-CJK"
 
 (a place holder --- not yet completed)
 
-以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
-配下のファイルが必要です。サンプルはインストールして使用することも可能なように
-アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
-(フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
-dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
-改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
-
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
 日本語を処理できる TeX としては、
@@ -25,11 +18,11 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
 
 ここでは、コンパイラ等には手を加えず、
 マクロで日中韓文字を処理する CJK LaTeX を紹介します。
+漢字等がビットマップになることにさえ我慢できれば(?)、
+周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、
 UTF8 等を用いて中国韓国文字も処理できます。
-漢字等がビットマップになることにさえ我慢すれば(?)、
-周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
-海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 --> <!-- 縦書もできるのですか？＞cjk -->
+海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 -->
 
 CJKパッケージはinputencパッケージなどと同じく、8bitの立った文字のカテゴリー
 コードを変更して、多バイト文字のTeXソースを標準的な8bit版のLaTeXでコンパイル
@@ -113,6 +106,13 @@ PDFファイル内のフォントとの対応だけです。
 
 ## サンプル {#f920d8cd}
 
+以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
+配下のファイルが必要です。サンプルはインストールして使用することも可能なように
+アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
+(フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
+dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
+改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
+
 1. [UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
 1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)
-1. SIP準備中
+1. [Supplementary Ideographic Planeの使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルからPDFファイルを作るには、最新版のdvipdfmxと商用フォントが必要です。[作成済みPDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf)も置いておきます。
