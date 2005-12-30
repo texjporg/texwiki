@@ -22,7 +22,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、
 UTF8 等を用いて中国韓国文字も処理できます。
-海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 -->
+海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 --> <!-- CJK は主に台湾で使われています。 -->
 
 CJKパッケージはinputencパッケージなどと同じく、8bitの立った文字のカテゴリー
 コードを変更して、多バイト文字のTeXソースを標準的な8bit版のLaTeXでコンパイル
@@ -102,17 +102,83 @@ CJKパッケージを使って、まともなPDFを作成するにはVTeX(商用
 選択肢がありませんので、ここではdvipdfmxについてのみ扱います。
 設定する必要があるのはDVIファイル内のTFMと
 PDFファイル内のフォントとの対応だけです。
-この対応はcid-x.mapに書きます。(Details will be added later.)
 
-## サンプル {#f920d8cd}
+> 背景を説明しておくと、DVIファイルには文字の形に関する情報は
+> 何も入っていません。大きさと位置、そして、それがどのTFMに由来するか
+> の情報だけしか入っていません。DVIドライバーの仕事はその大きさと位置に
+> フォントから取得した文字の形に関する情報を当てはめていくことにあります。
+> 従って、TFMとフォントとの対応が必要になってくる訳です。
+> この対応が与えられていない場合、大抵のDVIドライバーはビットマップフォントを
+> 生成して、それを利用しようとします。
+> 現在のpTeXの場合、ここでビットマップフォントの生成に失敗してエラーで
+> 止まってしまうので、誰でもインストールの失敗に気がつきます。
+> ところが、CJKパッケージをフルインストールしているとデフォルトの
+> フォントに対してはビットマップフォントの生成に成功してしまうため、
+> インストールの失敗に気がつかずに、使い続けてしまうケースが多いようです。
+> 以下のサンプルではいずれも新たなフォント(TFM)を定義して使っていますので、
+> 実フォントの対応についても方法を例示しています。
 
-以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
-配下のファイルが必要です。サンプルはインストールして使用することも可能なように
-アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
-(フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
-dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
-改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
+dvipdfmxでTFMとPDFファイル内のフォントとの対応を指定するファイル(map file)は
+多数ありますが、その大部分はdvipdfmと共有なので、dvipdfmでも理解できる
+8-bitフォントしか扱えません。そこで、この対応はdvipdfmx専用のマップファイルである
+cid-x.mapに書きます。(Details will be added later.)
+
+#### 実在しないOpenType(CFF, CID-keyed)フォントの場合 {#ef120abe}
+
+dvipdfmxは以下のフォントを「知って」います。
+
+<table>
+<tbody>
+<tr><td>言語</td><td>文字集合</td><td>フォント名</td></tr>
+<tr><td rowspan="3">繁体中文</td><td rowspan="3">Adobe-CNS1</td><td>MHei-Medium-Acro</td></tr>
+<tr><td>MSung-Light-Acro</td></tr>
+<tr><td>AdobeMingStd-Light-Acro</td></tr>
+<tr><td rowspan="2">簡化字中文</td><td rowspan="2">Adobe-GB1</td><td>STSong-Light-Acro</td></tr>
+<tr><td>AdobeSongStd-Light-Acro</td></tr>
+<tr><td rowspan="6">日本語</td><td rowspan="6">Adobe-Japan1</td><td>HeiseiMin-W3-Acro</td></tr>
+<tr><td>HeiseiKakuGo-W5-Acro</td></tr>
+<tr><td>Ryumin-Light</td></tr>
+<tr><td>GothicBBB-Medium</td></tr>
+<tr><td>KozMinPro-Regular-Acro</td></tr>
+<tr><td>KozGoPro-Medium-Acro</td></tr>
+<tr><td rowspan="3">朝鮮語</td><td rowspan="3">Adobe-Korea1</td><td>HYGoThic-Medium-Acro</td></tr>
+<tr><td>HYSMyeongJo-Medium-Acro</td></tr>
+<tr><td>AdobeMyungjoStd-Medium-Acro</td></tr>
+</tbody>
+</table>
+
+<!-- 「知って」いるフォントのうち，中韓の Adobe... のフォントは，Adobe が付かない部分だけでは ? -->
+
+#### 実在するOpenType(CFF, CID-keyed)フォントの場合 {#zc736617}
+
+#### TrueTypeフォントによるOpenType(CFF, CID-keyed)偽装 {#odc3338f}
+
+#### TrueTypeフォントの場合 {#q2b385eb}
+
+> ```
+> -wオプション
+> ```
+>
+> TrueTypeフォントを縦書きフォントとして使う時に使います。
+
+> ```
+> -pオプション
+> ```
+>
+> UnicodeのBMP (Basic Multilingual Plane)に入っていないコードポイントを持つ文字に
+> アクセスするために使用します。
+>
+> ## サンプル {#f920d8cd}
+>
+> 以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
+> 配下のファイルが必要です。サンプルはインストールして使用することも可能なように
+> アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
+> (フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
+> dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
+> 改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
 
 1. [UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
 1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)
 1. [Supplementary Ideographic Planeの使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルからPDFファイルを作るには、最新版のdvipdfmxと商用フォントが必要です。[作成済みPDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf)も置いておきます。
+
+他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
