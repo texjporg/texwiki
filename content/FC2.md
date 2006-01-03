@@ -256,7 +256,7 @@ ggv test.ps
 
 ### 新ドキュメントクラスのインストール（オプション） {#t1f89e20}
 
-松浦さんのホームページ（[http://my.reset.jp/~t-matsuu/install-memo/fc/](http://my.reset.jp/~t-matsuu/install-memo/fc/)）から tetex-jisfont-1-4.src.rpm と tetex-jsclasses-040927-1.src.rpm をダウンロードさせてもらいます。
+松浦さんのホームページ（[http://homepage2.nifty.com/t-matsuu/install-memo/fc/](http://homepage2.nifty.com/t-matsuu/install-memo/fc/)）から tetex-jisfont-1-4.src.rpm と tetex-jsclasses-040927-1.src.rpm をダウンロードさせてもらいます。
 
 GNOME端末で
 
