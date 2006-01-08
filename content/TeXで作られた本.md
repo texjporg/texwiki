@@ -24,7 +24,7 @@ TeXで作った本を出している出版社：
 > [九天社](http://www.9-ten.co.jp/)，
 > [共立出版](http://www.kyoritsu-pub.co.jp/)，
 > [コロナ社](http://www.coronasha.co.jp/)，
-> [三省堂](http://www.sanseido-publ.co.jp/)，
+> [三省堂](http://www.sanseido-publ.co.jp/)（本の一覧は[ここ](#SanseidoBooks)），
 > [シュプリンガー・フェアラーク東京](http://www.springer-tokyo.co.jp/)，
 > [数理工学社](http://www.sjk.co.jp/c/w.exe?y=www.saiensu.co.jp/company.htm) （サイエンス社子会社），
 > [駿台文庫](http://www.sundaibunko.jp/)，
@@ -40,10 +40,7 @@ TeXで作った本を出している出版社：
 
 - 旺文社『全国大学入試問題正解 数学』
 - 旺文社の高校数学教科書『数学基礎』（長岡亮介・森正武 編），教科書傍用問題集『数学Aワークブック』『数学Aナチュラル』『数学Iシステム演習』
-- 宮岡伯人編『北の言語：類型と歴史』（三省堂，1992年）…… 言語学の本
 - 友田晶子編『スーパーで買えるワインの本』（マガジンハウス，1997年）…… 東京書籍印刷（株）では他にもこういったグラフィカルな本を TeX で製作されている
-- 『[世界のことば100語辞典](http://www.sanseido.co.jp/publ/dicts/sekainokotoba100.html)』ヨーロッパ編 ISBN4-385-15199-7，アジア編 ISBN4-385-15198-9（三省堂，1999年）
-- [言語学大辞典 別巻 世界文字辞典](http://www.sanseido.co.jp/publ/dicts/gengogaku.html#6)（三省堂，2001年）
 - 古賀勝郎『日本語―ヒンディー語辞典』（1996年），『ヒンディー語―日本語辞典』（近刊？）
 - 『パスポート独和辞典』（白水社，編集責任 細谷行輝）…… 東京書籍印刷（株）で組版。Computer Modern 使用
 - アラン・ソーカル，ジャン・ブリクモン著，田崎晴明，大野克嗣，堀茂樹訳『[「知」の欺瞞―ポストモダン思想における科学の濫用](http://www.gakushuin.ac.jp/~881791/fn/)』（岩波書店，2000年）
@@ -51,12 +48,31 @@ TeXで作った本を出している出版社：
 - ローレンス・レッシグ著，山形浩生，柏木亮二訳『CODE―インターネットの合法・違法・プライバシー』（翔泳社，2001年）……縦組，Computer Modern，以下の2冊も
 - ローレンス・レッシグ著，山形浩生訳『コモンズ』（翔泳社，2002年）
 - ローレンス・レッシグ著，山形浩生，守岡桜訳『Free Culture』（翔泳社，2004年）
-- 宮岡伯人『[「語」とはなにか：エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』(三省堂, 2002年)
 - 亀田隆，高村正樹『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』（Z会出版，2000年）
 - 力武健次『インターネットコミュニティ－国際ネットワーク最前線－』（オーム社，1994年）
 - 坂梨隆三，小木曽智信，酒井わか奈，村上謙 編『[好色伝受―本文・総索引・研究](http://www.bookmailclub.com/bmc/reader/search/?.command=detail&book_id=1553)』（笠間書院，2000年）
 - [フリー教材開発コミュニティー エフテキスト](http://www.ftext.org/)……TeXで作成された数学の教科書。クリエイティブ・コモンズライセンスでオンライン配布されている
     <!-- ^ちょっと毛色が違うものなので追加 -->
+
+<a id="SanseidoBooks"></a>
+
+三省堂から出ている本で，TeXで組まれているもの：
+
+- 宮岡伯人編『北の言語：類型と歴史』（1992.06.20，ISBN4-385-35424-3）
+- 大島正二[『〈辞書〉の発明―中国言語学史入門』](http://www.sanseido-publ.co.jp/publ/jisyo_hatumei.html)（1997.12.15，ISBN4-385-35817-6）
+- 東京外国語大学語学研究所編[『世界の言語ガイドブック 1 ヨーロッパ・アメリカ地域』](http://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html)（1998.03.10，ISBN4-385-35813-3）
+- 東京外国語大学語学研究所編[『世界の言語ガイドブック 2 アジア・アフリカ地域』](http://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html)（1998.03.10，ISBN4-385-35815-X）
+- 風間喜代三[『ラテン語とギリシア語』](http://www.sanseido-publ.co.jp/publ/latin_greek.html)（1998.03.20，ISBN4-385-35833-8）
+- G. A. クリモフ，石田修一訳[『新しい言語類型学』](http://www.sanseido-publ.co.jp/publ/klimov.html)（1999.04.25，ISBN4-385-35915-6）
+- 石井米雄・千野栄一編[『世界のことば100語辞典 アジア編』](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba100.html)（1999.06.30，ISBN4-385-15198-9）
+- 千野栄一・石井米雄編[『世界のことば100語辞典 ヨーロッパ編』](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba100.html)（1999.06.30，ISBN4-385-15199-7）
+- 河野六郎・千野栄一・西田龍雄編著[『言語学大辞典 別巻 世界文字辞典』](http://www.sanseido-publ.co.jp/publ/dicts/gengogaku.html#6)（2001.07.10，ISBN4-385-15177-6）（[qa:1331](https://okumuralab.org/~okumura/texfaq/qa/1331.html)）
+- 宮岡伯人[『「語」とはなにか―エスキモー語から日本語をみる』](http://www.sanseido-publ.co.jp/publ/gotowananika.html)（2002.07.15，ISBN4-385-36092-8）
+- 大角翠編著[『少数言語をめぐる10の旅』](http://www.sanseido-publ.co.jp/publ/syosugengo.html)（2003.03.15，ISBN4-385-36145-2）
+- G. K. プラム・W. A. ラデュサー，土田滋・福井玲・中川裕訳[『世界音声記号辞典』](http://www.sanseido-publ.co.jp/publ/dicts/sekai_onseikigo.html)（2003.05.12，ISBN4-385-10756-4）
+- 渡邉時夫監修，酒井英樹・塩川春彦・浦野研編[『英語が使える日本人の育成―MERRIER Approachのすすめ』](http://www.sanseido-publ.co.jp/publ/eigo_kukaeru_j_ikusei.html)（2003.05.30，ISBN4-385-36155-X）
+- 石井米雄・千野栄一編[『世界のことば・出会いの表現辞典』](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba_deai_hyogen.html)（2004.06.10，ISBN4-385-15178-4）（[qa:29696](https://okumuralab.org/~okumura/texfaq/qa/29696.html)，[qa:29724](https://okumuralab.org/~okumura/texfaq/qa/29724.html)）
+- 風間喜代三[『ラテン語・その形と心』](http://www.sanseido-publ.co.jp/publ/latin_kokoro.html)（2005.12.20，ISBN4-385-36252-1）
 
 青磁書房から出ている次の本がみなTeXとのこと：
 
