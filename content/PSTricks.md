@@ -215,3 +215,5 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 ```
 
 のような Makefile を作れば，make を実行することでまともな BoundingBox を持った (表した) fig.pdf, fig.bb, fig.eps を得ることができるように思います．\[<strong>追記</strong>: <em>しかし，これでも少し小さめに BoundingBox が測られるように思います．GSView の \[File\] -> \[PS to EPS\] で変換したときくらいの BoundingBox を持った矩形を切り出したいのですが，手作業をいれずにできる方法を誰かご存じないでしょうか？</em>\]
+
+強引に，でもよければ，ghostscript を用いて BoundingBox を得て，それを eps ファイルに入れ込むシェルスクリプトを [ここ](http://www.misojiro.t.u-tokyo.ac.jp/suribt/#tips_boundingbox) に載せましたので，どうぞ．
