@@ -265,6 +265,7 @@ TrueTypeフォントをCIDフォントとして、埋め込む事ができます
 \[CMap名\]に指定されたCMapファイルの文字集合がAdobeの標準文字集合と異なっていても、
 TTFフォント名の後ろに"/AJ14"等と、付けてやれば、Adobe-Japan1のsupplement 4を
 偽装できます。
+TrueTypeフォントを埋め込まずに使用する場合、原則として、この方法を使って下さい。
 
 #### TrueTypeフォントの場合 {#q2b385eb}
 
@@ -340,7 +341,26 @@ dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみる�
 改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
 
 1. [UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
+    - これまでに判明している問題点:
+        - 各ページ、最下段を除いて、意味不明な箇所がある。視点を変えて、少し距離をおいて眺める必要があるかも知れない。
 1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)JISX0213をShift JISで使うために必要な設定も一式入っています。
-1. [Supplementary Ideographic Planeの使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルからPDFファイルを作るには、最新版のdvipdfmxと商用フォントが必要です。[作成済みPDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf)も置いておきます。
+    - これまでに判明している問題点:
+        - 同梱されたtfmファイルは全角文字以外に使えない。
+        - 横書きフォントを縦書きに使う場合のfdxファイルが無いため、CJKvert.styを使った縦書きでは、句読点の位置がおかしい。(縦書きフォントを使う場合は問題ないと思います。)
+1. [Supplementary Ideographic Planeの使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルからPDFファイルを作るのには、
+    最新版にパッチを当てたdvipdfmxが必要です。更に商用フォントも使いました。
+    そこで、[作成済みPDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf)も置いておきます。
+    - これまでに判明している問題点:
+        - 現時点では、dvipdfmxにパッチ[qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html)を当てなくてはならない。
+        - c70usong.fdに二つのフォントが定義されている。これはc70usong.fdとc70usong2.fd
+            の二つのファイルに分けないと、SIPの文字を文書の最初に使えない。
+        - 商用フォントを使う設定になっている。これは、cid-x.mapを書き換えて、[HAN NOM FONTs](http://www.viethoc.org/article.php?sid=98&mode=threaded&order=0&thold=0)を使う設定に直した方がいい。(それにしても、Han NomのデザインはSimSunに似ている。)
+        - 手持ちの材料で、適当にでっちあげたサンプルの文書には、その後、簡単な
+            Web検索しただけで、明らかな誤り２箇所と、幾多の要改善箇所が見つかっている。
+
+1. CJKutf8.styについては[Cardo](http://scholarsfonts.net/)1.01がリリースされてから
+    考えます。文例と、当該言語のハイフネーションパターンを提供して頂けると助かります。
+    <!-- SMPも使ってみたい。 -->
 
 他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
+もちろん、新たなサンプルの提供と、(全体の)文章の修正も歓迎します。
