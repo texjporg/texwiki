@@ -14,7 +14,7 @@ pukiwiki: "PSTricks"
 PSTricks は TeX，LaTeX 文書ファイルの中で PostScript
 の命令を直接使って簡単に表現力豊かな描画ができる便利なパッケージ（スタイルファイル）です。
 ただし，dvi ファイルに \special で PostScript
-の命令を埋め込むので，
+の命令を埋め込むので，<strong>dvi ドライバとしては dvips(k) を使います</strong>．
 PostScript プリンタ（あるいは Ghostscript など）の利用が前提になります。
 METAFONT や [MetaPost](/MetaPost/)
 ほど洗練されていないかもしれませんが，
