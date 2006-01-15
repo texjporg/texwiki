@@ -481,23 +481,14 @@ rpm -ivh auctex-emacs-11.53-1.fedora.noarch.rpm
 (setq TeX-file-extensions '("tex" "sty" "cls" "ltx" "texi" "texinfo" "dtx"))
 (setq kinsoku-limit 10)
 (setq LaTeX-indent-level 4)
-(setq TeX-view-style
+(setq TeX-output-view-style
      '(
-       ("." "pxdvi %d")
+       ("^dvi$" "." "pxdvi %d")
        ))
 ```
 
 を追加します。
 
-理由は分かりませんが、AUCTeXがプレビューにxdviを呼び出してしまいます。
-とりあえず、スーパーユーザになって
-
-```
-mv /usr/bin/xdvi /usr/bin/xdvi.org
-ln -s /usr/bin/pxdvi /usr/bin/xdvi
-```
-
-を実行すれば、xdviコマンドでも日本語を含むdviファイルを見られるようになります。
-（TeX-view-style が無視されているようです。）
-
 これでAUCTeXが使えるようになります。
+
+現在のAUCTeXでは、TeX-view-styleではなくTeX-output-view-styleを使うことで、DVIやPDFなどのViewerを個別に登録できるようにしています。
