@@ -26,7 +26,9 @@ pukiwiki: "Ghostscript 7.07"
 ドライバに戻しました。
 その後エプソンコーワのドライバも改訂されたように思いますが，未確認です。
 
-Mac OS X（＋X11）でもまったく同様にインストールできます。
+Mac OS X（＋X11）でもまったく同様にインストールできます
+（Mac OS X 10.4 では ./configure --without-gimp-print
+で Makefile の XLIBS=Xt Xext X11 は XLIBS=Xt SM ICE Xext X11 に直しました）。
 
 安宅さんの
 [Install GNU GhostScript 7.07 and dvipdfmx](http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)
