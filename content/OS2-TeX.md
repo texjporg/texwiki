@@ -58,3 +58,7 @@ Release 3 ではOS/2の XFree86 で使える ghostscript 8.50 , gv 3.6.1 を
 
 - 私のweb page: [http://www2s.biglobe.ne.jp/~vtgf3mpr/](http://www2s.biglobe.ne.jp/~vtgf3mpr/)
 - hobbesの web page: [http://hobbes.nmsu.edu/](http://hobbes.nmsu.edu/)
+
+### OS/2環境で日本語PDF/PSを閲覧・印刷するためなどの情報 {#e8e60ca6}
+
+- [OS2Wiki](http://wiki.fdiary.net/OS2Wiki/?TeXPostScriptPDF)を見てください
