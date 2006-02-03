@@ -15,18 +15,18 @@ pukiwiki: "TeX入手法"
 
 Windows については インストール(Windows) のページをご覧ください。
 
-Macintosh 用は，内山さんの
+Macintosh については，内山さんの
 [MacpTeXとその周辺](http://macptex.appi.keio.ac.jp/~uchiyama/macptex.html)
 をご覧ください。
 MacpTeX は [Ring サーバ群の /pub/mac/TeX/](http://www.ring.gr.jp/pub/mac/TeX/)
 でもミラーされています。
 
-Mac OS X については上記のほか桐木さんの
-[pTeX package for MacOSX](http://www.r.dendai.ac.jp/kiriki/tex/)
+Mac OS X 用のパッケージについては，桐木さんの
+[pTeX package for MacOSX](http://math.kyokyo-u.ac.jp/~kiriki/ptex/)
 に詳しい情報や掲示板があります。
-Mac OS X は中身は UNIX ですので，私の
+Mac OS X は中身は UNIX ですので，
 [UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール](/Make/)
-もまったくそのままで大丈夫でした。
+の方法でもインストールできます。
 
 LinuxについてはUedaさんのWikiがこのTeX Wikiにマージされましたので，ディストリビューションごとの項目をご覧ください。
 ソースからコンパイルする方法は私の
