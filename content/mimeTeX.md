@@ -36,7 +36,7 @@ PukiWiki から使うには
 
 ### texvc用 {#v1c9afd6}
 
-藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/archives/2004/12/pukiwiki_texvc.html)
+藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/?p=6)
 
 ### TeXプラグイン {#a3fcbcf8}
 
