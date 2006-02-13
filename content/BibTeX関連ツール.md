@@ -101,6 +101,10 @@ BibTeX形式に変換するWebアプリが公開されている
 
 - [wos2bib](http://iacweb.ethz.ch/staff/maeder/wos2bib.php)
 
+#### [CiteULike](http://jp.citeulike.org/) {#e360efa9}
+
+- [export](http://jp.citeulike.org/export.adp)
+
 ## BibTeXファイルを他の形式に変換するツール（エクスポート） {#ubc94a7f}
 
 |  名前  |  動作条件  |  説明  |
