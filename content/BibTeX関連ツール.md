@@ -87,6 +87,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 | [stdinRIS2bib.pl ris2bib.pl](http://marc.herbert.free.fr/refdb/) | perl | RIS形式をBibTeX形式へ変換する。[ris2bib](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/ris2bib)が正常に動作しない最近の環境でもOK。キーは自分でつける必要あり。出力されたbibファイルは、bibcleanに通した方がよいかも。ris2bib.plはstdinRIS2bib.plから内部的に呼び出されるので同一ディレクトリにおいておくこと。<br>【使い方】$ cat risファイル ｜ stdinRISbib.pl > bibファイル <br> T1やABをそれぞれtitleやabstractにするには、ris2bib.plにそれらの定義を追加する必要がある。 |
 | [Bibutils](http://www.scripps.edu/~cdputnam/software/bibutils/) | なし | さまざまな形式の文献データをXML経由でBib形式に変換する。含まれるコマンドは、bib2xml, copac2xml, end2xml, isi2xml, med2xml, modsclean, ris2xml, xml2bib, xml2end, xml2risがあり、UNIX(SunOS, IRIX)版、Linux版、OSX版、Windows版などが用意されている。<br>【利用例】$ ris2xml risファイル｜xml2bib > bibファイル |
 | [mab2bib](http://texcatalogue.sarovar.org/entries/mab2bib.html) |  Python  |   Simple Python scripts to convert MAB bibliography files into BibTeX and UTF-8 encoded text files into ASCII with LaTeX codes  |
+| [ama2bib](http://tex.dante.jp/typo/index.php?ama2bib) |  Perl  |  [Amazon Web Service](http://www.amazon.co.jp/exec/obidos/subst/associates/join/webservices.html/249-1233918-9751503)の検索結果をBibTeX形式に変換するスクリプト |
 
 ### Web上で提供されているBibTeX変換サービス {#o3a13db0}
 
