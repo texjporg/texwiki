@@ -48,3 +48,4 @@ LINGUAS='ja'
 - 返事おくれました。ebuildjpを更新したら普通にインストールされました。 --  2006-01-10 (火) 22:06:47
 - ebuildjpでjsclassesを入れようとすると、[http://oku.edu.mie-u.ac.jp/%7Eokumura/jsclasses/jsclasses-051026.zipを取りに行ったときに403エラーで止まってしまいます](<http://oku.edu.mie-u.ac.jp/%7Eokumura/jsclasses/jsclasses-051026.zipを取りに行ったときに403エラーで止まってしまいます>)。一時的な問題でしょうか。 --  2006-01-18 (水) 08:36:13
 - すみません、数時間経って再びemerge したところ無事導入できました。お騒がせしてすみません。 --  2006-01-18 (水) 10:21:53
+- ln ではだめで、 texmf.cnf を修正しないと dvipdfmx でコケてしまうのはうちだけ? --  2006-02-17 (金) 01:00:42
