@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[060313\]
+    Babel を使わずに済む方法 -- 「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました（[qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html)）。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん（[qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)）に、ハイフネーションも含めた本格的な出力には稲垣さん（[qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)）にサンプルを作っていただきました。ありがとうございます。--- 栗山
+
 - \[050906\]
     W32TeX の8月12日版以降(ptetex3-20050811 以降)では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
 
