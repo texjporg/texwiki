@@ -234,3 +234,5 @@ misspelled_word correction
 ここで設定された修正語は、スペルチェックの際に第一候補として表示されます。
 
 ### コメント {#aspb14cm}
+
+- 日本語Aspellのじしょうをさがします。Linkください。 -- Mathieu Jobin 2006-03-29 (水) 15:17:11
