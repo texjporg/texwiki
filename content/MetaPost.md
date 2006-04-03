@@ -11,18 +11,20 @@ pukiwiki: "MetaPost"
 
 ### はじめに {#q0dc30bf}
 
-この文章は角藤さんの
+「この文章は角藤さんの
 [MetaPost の紹介](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
-という文章に触発されて書いたものです。角藤さんに感謝いたします。
+という文章に触発されて書いたものです。角藤さんに感謝いたします。」
 
-日本語版については
+↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
+
+MetaPostの日本語版については
 [松山さん](http://village.infoweb.ne.jp/~fwhw5892/jweb/jmpost.htm)
 → [hideyukiさん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
 が開発されています。
 
 ### MetaPost とは {#e4617397}
 
-MetaPostはJohn Hobbyが作ったMETAFONT類似のソフトで，
+MetaPostはJohn Hobbyが作った[METAFONT](/METAFONT/)類似のソフトで，
 METAFONTがgf形式のフォントを出力するのに対して，
 MetaPostはPostScript（EPS）形式のファイルを出力します。
 1995年からAT&amp;Tライセンス不要のフリーソフトになりました。
@@ -30,6 +32,10 @@ MetaPostはPostScript（EPS）形式のファイルを出力します。
 [MetaPost](http://cm.bell-labs.com/who/hobby/MetaPost.html)
 ページをご覧ください。
 web2c配布にもMetaPostのマニュアルが入っています。
+
+### MetaPostプログラミング入門 {#p3fbc416}
+
+#### 簡単な線画の作成 {#t3a63dd6}
 
 まず簡単なMetaPostプログラムを作ってみましょう。
 
@@ -88,6 +94,8 @@ fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
 
 としてみてください。
 
+#### 図に文字を挿入する {#j8ce9e55}
+
 文字を入れることもできます。たとえば
 
 ```
@@ -132,6 +140,8 @@ defaultfont := "rptmr";
 > などのように書いておきます。
 > 別の手として，cmr10.pfb などを CMR10 という名前で /Resource/Font
 > ディレクトリにコピーしておいてもいいでしょう。
+
+#### 作成した図をTeX文章に取り込む {#ee4db6cc}
 
 TeX/LaTeX の文書の中に組み込んで使う場合は，
 逆に prologues:=1; は指定しません。
@@ -185,6 +195,8 @@ dvips -E test -o test.eps
 本物のEPSファイルになり，
 TeX以外のアプリケーションに取り込むこともできます。
 
+#### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
+
 上のような方法ではカーニングやリガチャは入りませんし，
 数式を含ませることもできません。
 ちゃんと組まれた文や数式を含ませるには，次のように label
@@ -229,6 +241,36 @@ end.
 
 と書いておくだけで、自動的に latex を使ってくれます。
 
+#### PSfragの利用 {#gd4ef62a}
+
+日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
+さきほどの例で（prologues:=1; を指定しておき）
+
+```
+\documentclass{jsarticle}
+\usepackage[dvips]{graphicx,psfrag}
+\begin{document}
+……
+\begin{center}
+\psfrag{Red Ball}{赤いボール}
+\includegraphics{test.1}
+\end{center}
+……
+\end{document}
+```
+
+のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。
+ただし，日本語としてセンタリングされるわけではありませんので，
+一般に位置がずれます。
+
+#### その他の注意点 {#ddd5a5aa}
+
+Unix 版（web2c 版）では曲線 ..
+でつなぐ場合の最大長はデフォルトでは 2000 点です。
+W32TeX の場合は 10000 点です。設定できる最大数は 300000 です。
+
+### 例 {#nda680a6}
+
 もうちょっと数学のテスト問題に使えそうな例をあげておきます。
 
 ```
@@ -252,30 +294,6 @@ endfig;
 end.
 ```
 
-Unix 版（web2c 版）では曲線 ..
-でつなぐ場合の最大長はデフォルトでは 2000 点です。
-W32TeX の場合は 10000 点です。設定できる最大数は 300000 です。
-
-日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
-さきほどの例で（prologues:=1; を指定しておき）
-
-```
-\documentclass{jsarticle}
-\usepackage[dvips]{graphicx,psfrag}
-\begin{document}
-……
-\begin{center}
-\psfrag{Red Ball}{赤いボール}
-\includegraphics{test.1}
-\end{center}
-……
-\end{document}
-```
-
-のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。
-ただし，日本語としてセンタリングされるわけではありませんので，
-一般に位置がずれます。
-
 もっとたくさんの例が
 [Metapost : exemples](http://www.math.jussieu.fr/~zoonek/LaTeX/Metapost/metapost.html)
 というページにあります。
@@ -284,3 +302,7 @@ W32TeX の場合は 10000 点です。設定できる最大数は 300000 です�
 
 MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/contour.html)
 を作ってみました。
+
+###  {#o3813278}
+
+MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MePoTeX](http://homepage2.nifty.com/domae/metapost/mepotex.html)というものもあります。
