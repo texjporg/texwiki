@@ -7,6 +7,8 @@ pukiwiki: "Linux/Gentoo"
 
 # Linux/Gentoo
 
+## 日本語TeX環境の構築 {#da9a03a1}
+
 Gentoo Linuxに日本語TeX環境を構築するためメモです。とりあえずあまりいじらずに、日本語が通って、日本語が閲覧できることを目標にしています。
 
 以下、適当に日本語環境が整っているものとします。インストールするものは、ptex、dvipdfmx、CJK対応のGhostscript、日本語版Adobe Readerです。
@@ -39,6 +41,64 @@ LINGUAS='ja'
 ```
 
 といった有名なエラーが出ます。
+
+## jsclasses（新日本語ドキュメントクラス）のインストール {#ta33e375}
+
+ebuildjp内のdev-tex/jsclassesにあります。（ebuildjpの設定は、下の「【参考】ebuildJPを使う」を参照して下さい。）
+
+基本的に、
+
+```
+# emerge jsclasses
+```
+
+をするだけでよいのですが、現在ftp.ascii.co.jpのサーバへの接続ができないようで、jis.tar.gzが取得できません。仕方なく、他のミラーサイトから取ってきます。たとえば、Ringサーバーなど。
+
+```
+http://www.ring.gr.jp/pub/text/TeX/ascii-ptex/jvf/jis.tar.gz
+```
+
+jis.tar.gzをダウンロードし、/usr/portage/distfilesへ置きます。その後に、# emerge jsclassesを実行してください。 
+
+## 【参考】ebuildJPを使う {#gc792193}
+
+/etc/make.confに以下を追加します。
+
+```
+PORTDIR_OVERLAY_JP="/usr/local/portagejp"
+PORTDIR_OVERLAY="/usr/local/portagejp /usr/local/myportage"
+FEATURES="digest"
+```
+
+/usr/local/myportageは、僕の個人的なebuildを格納しているところです。
+gentoolkit-devをemergeします。
+
+```
+# emerge gentoolkit-dev
+```
+
+/etc/gensync/ebuildjp.syncsourceを作成して、以下を書き込む。
+
+```
+id="ebuildjp"
+description="GentooJP ebuild project source"
+rsync="rsync://ebuild.gentoo.gr.jp/gentoojp-portage"
+overlay="/usr/local/portagejp"
+```
+
+gensyncを実行してツリーの取得します。
+
+```
+# gensync ebuildjp
+```
+
+以上で、準備は終わりです。あとは、いつもどおり、
+
+```
+# emerge hogehoge
+```
+
+とすれば、hogehogeのパッケージがemergeできます。 
 
 ***
 
