@@ -129,6 +129,7 @@ BibTeX形式に変換するWebアプリが公開されている
 |  findbib  | UNIX, lynx  | 決められたキーで引用しておくと、WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム  |
 | Biblos |  Windows95/NT  |  bibファイルを公開するためのcgi  |
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール。[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている。 |
+| [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeX クローン。文献スタイルファイルは独自型式のものを用いる。 |
 
 <br>
 
