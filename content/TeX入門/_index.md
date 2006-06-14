@@ -38,7 +38,7 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 
 とりあえず次の本を挙げておきます。 
 
-- Lamport著，阿瀬はる美訳 『[文書処理システムLaTeX2e](http://www.pearsoned.co.jp/washo/prog/wa_pro17-j.html)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年） ［LaTeX2e の原典です］
+- Lamport著，阿瀬はる美訳 『[文書処理システムLaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年） ［LaTeX2e の原典です］
 - 奥村晴彦 『[［改訂第3版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』 （[技術評論社](http://www.gihyo.co.jp/)，2004年） ［Windows，Mac OS Xのバイナリ，UNIX系OS用のソースを収めたCD-ROMが付いています］
 
 これ以外にもたくさん良書が出ています([TeXの本](</TeXの本/>))ので，書店でお選びください。 
