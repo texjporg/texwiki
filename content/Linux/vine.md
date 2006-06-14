@@ -7,11 +7,11 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
-## VineLinux3.1 {#c910db28}
+## VineLinux 3.2 {#c910db28}
 
-VineLinux3.1がリリースされました。おそらく、日本語TeXを使う上では
+VineLinux 3.2 がリリースされました。おそらく、日本語TeXを使う上では
 最もよく調整されたものになっているはず。
-なお Vine3.0 からは 3.1 にアップグレードすることが勧められています。
+なお Vine 3.0/3.1 からは 3.2 にアップグレードすることが勧められています。
 
 Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://vinelinux.org/errata/3x/20050301-2.html)
 \[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
@@ -33,7 +33,7 @@ Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://vinelinux.
 $ sudo apt-get install task-tetex
 ```
 
-これで、jvf tetex tetex-extra xdvik (Vine3.1 では xdvik-search も) dvipdfmx tetex-macros がインストールされる。
+これで、jvf tetex tetex-extra xdvik (Vine 3.1/3.2 では xdvik-search も) dvipdfmx tetex-macros がインストールされる。
 
 その他、必要に応じて下記をインストールする。
 
@@ -72,18 +72,20 @@ apt-get 自動実行スクリプト
 
 Vine3.0 のインストール直後の状態では
 jsarticle，jsbookが古いのでdvipdfmxと組み合わせたとき不具合が起こる
-(update すれば直る、Vine3.1 でも大丈夫)
+(update すれば直る、Vine3.1/3.2 でも大丈夫)
 [qa:32161](https://okumuralab.org/~okumura/texfaq/qa/32161.html)，
 [qa:32163](https://okumuralab.org/~okumura/texfaq/qa/32163.html)，
 [qa:32167](https://okumuralab.org/~okumura/texfaq/qa/32167.html)。
 
 ## xdvi関連の設定 {#j0808b38}
 
-Vine3.0/3.1 では、xdviがType1 フォントを使えるようになったので、もう pk フォントは必要なくなりました。また、src-special に対応になりました。 xdvi とエディタの間で、対応する部分に相互にジャンプができるようになりました。 
+Vine3.0/3.1/3.2 では、xdviがType1 フォントを使えるようになったので、もう pk フォントは必要なくなりました。
+また、src-special に対応になりました。 xdvi とエディタの間で、対応する部分に相互にジャンプができるようになりました。 
 
 ### src-special {#q8a76901}
 
-platexコマンドにに-src-specialsオプションを付けてコンパイルするとsrc-specialが埋め込まれたdviができあがります。
+相互ジャンプをしたいなら、
+platexコマンドに -src-specials オプションを付けてコンパイルします。
 
 #### emacsの設定 {#dd48a0a7}
 
@@ -99,7 +101,8 @@ $HOME/.emacs.el の設定は、/etc/skel/.emacs.el に標準的なものが書�
      tex-command "platex -src-specials"
 ```
 
-に書き換えておくと便利でしょう。(Vine3.0/3.1 共通)
+に書き換えておくと便利でしょう。(Vine3.0/3.1/3.2 共通)
+emacs の YaTeX 上で TeX のコンパイルをするには、C-c t j です。
 
 標準的な設定とは以下のことです。
 
@@ -114,7 +117,7 @@ $HOME/.emacs.el の設定は、/etc/skel/.emacs.el に標準的なものが書�
              (define-key YaTeX-mode-map "\C-c\C-j" 'xdvi-jump-to-line)))
 ```
 
-Vine3.1 ではこの source special の設定を xdvik-search パッケージのファイルにも
+Vine3.1/3.2 ではこの source special の設定を xdvik-search パッケージのファイルにも
 書いておきましたので、個人の設定は消しても構いません。
 （XEmacs でも設定なしで使えるようになりました。）
 また Vine3.0 からupgrade した人は、
