@@ -200,6 +200,12 @@ gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -dNOPAUSE -dBATCH -dSAFER
 
 別解として，dvipsに -x 3000 のようなオプションを与えれば3倍に拡大されます。 
 
+\[2006-07-03追記\] 次のようにすれば、十分大きいサイズで式を作る必要もなく、&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
+
+```
+gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop testeq.eps
+```
+
 ## 他の方法 {#b00fa762}
 
 ### Equation Magic（Lite） {#e1e0d1fe}
