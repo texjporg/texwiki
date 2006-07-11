@@ -114,4 +114,4 @@ gensyncを実行してツリーの取得します。
 - 「\[gentoojp-users:01784\] xdviの文字化け」の件ですね．パッケージャーのusataさんが，メーリングリストにてコメントをしておられます（\[gentoojp-users:01785\]参照）．原因はXがモジュラー化されたからのようです．しばらくの間は混乱がありそうですね．（モジュラー化されたXへの移行手引き [http://www.gentoo.org/proj/ja/desktop/x/x11/modular-x-howto.xml](http://www.gentoo.org/proj/ja/desktop/x/x11/modular-x-howto.xml) 参照．）  -- munepi 2006-07-06 (木) 23:24:37
 - お返事ありがとうございます。メーリングリストのほうも確認しました。気長に待っておくことにします。 -- 1152205770 2006-07-07 (金) 02:09:30
 - とりあえず回避策としては，/etc/portage/package.mask に >=x11-base/xorg-x11-6.9 を書いておけばよいですね．（おまけで，>=app-text/ghostscript-eps-7.07 も追加しておくとよいかもしれません．grepでebuildを調べただけですが，8.15でもcjkのパッチが当たっていないようです．もしかして，コミットされた！？） -- munepi 2006-07-07 (金) 02:44:22
-- 解決したようです．（\[gentoojp-users:01790\]，\[gentoojp-users:01805\]参照．） -- munepi 2006-07-12 (水) 01:12:59
+- 解決したようです．（\[[gentoojp-users:01790\]](http://ml.gentoo.gr.jp/users/200607.month/1790.html)，\[[gentoojp-users:01805\]](http://ml.gentoo.gr.jp/users/200607.month/1805.html)参照．） -- munepi 2006-07-12 (水) 01:12:59
