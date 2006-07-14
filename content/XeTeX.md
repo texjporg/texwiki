@@ -14,7 +14,7 @@ pukiwiki: "XeTeX"
 ### XeTeXとは {#v9b12e60}
 
 [The XeTeX typesetting system](http://scripts.sil.org/xetex)
-はutf-8ベースのTeX。
+はutf-8ベースのTeX。 <!-- 入力ファイルはutf-8ベースだが、内部動作はUCS16ベース。 --> <!-- これを知らないと、BMP以外の文字をアクティブにしたりする時にハマルことになる。 -->
 「ズィーTeX」と読む。
 Mac OS X上で開発され，システムが認識するOpenTypeフォントをそのまま使える。
 Linux版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では、
@@ -25,9 +25,11 @@ Linux版もある。W32 版は Linux 版を移植したものである。 Linux 
 (.dvi ファイルを拡張したもの) を出力する。.xdv ファイルをドライバによって
 pdf に変換する。 xdv2pdf は Mac 専用のドライバであって、他では利用できない。
 Linux と W32 では、汎用の xdvipdfmx というドライバを用いる。これは
-dvipdfmx を XeTeX 用に拡張したものである。従って Linux と W32 では、
+dvipdfmx を XeTeX 用に拡張したものである。
+パッケージに同梱されている、graphics.cfgとcolor.cfgはxdv2pdf用の設定が
+なされている。従って Linux と W32 では、
 graphics パッケージや color パッケージなどを使用するとき、必ず dvipdfm
-オプションを付加しておくのを忘れてはいけない。
+オプションを付加しておくのを忘れてはいけない。 <!-- それか、自分でgraphics.cfgとcolor.cfgを編集し、xetex.defの代りに --> <!-- dvipdfm.defを読み込むようにしておく。 -->
 
 ### Macでのインストール {#x46670ed}
 
@@ -119,12 +121,15 @@ fc-list | nkf -s >namelist.sj とすると、直接 shift-JIS のファイルに
 \documentclass{article}
 \begin{document}
 Hello, \TeX!
-\font\foo="ヒラギノ丸ゴ Pro W4"
+\font\foo="ヒラギノ丸ゴ Pro W4:-palt"
 \foo 日本語
 \end{document}
 ```
 
 これで xelatex test とすると，test.pdf ができる。
+日本語OpenTypeフォントを使用する場合、デフォルトで詰め組になってしまうので、
+ベタ組をするためには、Proportional Alternative (palt)フィーチャーを
+無効にしておく。
 
 日本語のルールに則って行分割をするには次のようにする。
 
