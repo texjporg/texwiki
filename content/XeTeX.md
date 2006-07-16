@@ -84,7 +84,7 @@ TopDir/share/texmf/fonts/conf に移動し、(つまりカレントディレク�
 ```
 
 として入れてありますから、このままで良い場合は編集する必要はありません。
-ディレクトリの名前が違う場合には変更する必要があります。
+ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows2000 だと c:/winnt/fonts となりますが，Windows2000 も最近はメジャーでは --> <!-- なく WindowsXP の方が一般的でしょうか。 -->
 Windows のシステムフォントディレクトリの他に、購入したフォントのディレクトリがあれば、
 以下の例のように追加することができます:
 
@@ -108,10 +108,26 @@ Windows のシステムフォントディレクトリの他に、購入したフ
 ことがありますから、気長に他の仕事をしていて下さい。
 
 以上でインストールが終了します。使用可能フォント名は、通常のものが使えます。
-名前を見たい場合は、 fc-list >namelist.txt とすると、 namelist.txt に記録
-されます。ただし utf8 で記録されますから、もし shift-JIS で見たかったら
-nkf -s namelist.txt >namelist.sj とすれば良いでしょう。あるいは最初に
-fc-list | nkf -s >namelist.sj とすると、直接 shift-JIS のファイルになります。
+名前を見たい場合は、
+
+```
+   fc-list >namelist.txt
+```
+
+とすると、 namelist.txt に記録されます。
+ただし utf8 で記録されますから、もし shift-JIS で見たかったら
+
+```
+   nkf -s namelist.txt >namelist.sj
+```
+
+とすれば良いでしょう。あるいは最初に
+
+```
+   fc-list | nkf -s >namelist.sj
+```
+
+とすると、直接 shift-JIS のファイルになります。
 
 ### 実行例 {#n6a9a656}
 
@@ -151,3 +167,7 @@ Hello, \TeX!
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) (本家)
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+
+### コメント {#d0504266}
+
+- 使用環境は Windows2000(SP4) です。ヒラギノは持っていないので「小塚明朝 Pro Acro R:-palt」で試したのですが「! Font \foo="フォント名は文字化けPro Acro R:-palt" not loadable: installed font not found.」と言われて失敗しました。代わりに「Kozuka Mincho Pro Acro:-pait」で成功しました。「MS P明朝」「みかちゃん_o」では成功。fc-list での namelist.txt で得られるフォント名一覧でフォント名には二番目の要素を使えば良いのかもしれません。 -- tony 2006-07-17 (月) 15:32:30
