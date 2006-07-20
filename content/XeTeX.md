@@ -29,7 +29,10 @@ dvipdfmx を XeTeX 用に拡張したものである。
 パッケージに同梱されている、graphics.cfgとcolor.cfgはxdv2pdf用の設定が
 なされている。従って Linux と W32 では、
 graphics パッケージや color パッケージなどを使用するとき、必ず dvipdfm
-オプションを付加しておくのを忘れてはいけない。 <!-- それか、自分でgraphics.cfgとcolor.cfgを編集し、xetex.defの代りに --> <!-- dvipdfm.defを読み込むようにしておく。 -->
+オプションを付加しておくのを忘れてはいけない。ただし、Jonathan Kew さんに
+より、Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており、
+最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると、
+デフォルトのままで xetex.def を使えるようになっている。
 
 ### Macでのインストール {#x46670ed}
 
