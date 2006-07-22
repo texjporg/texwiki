@@ -32,7 +32,7 @@ graphics パッケージや color パッケージなどを使用するとき、�
 オプションを付加しておくのを忘れてはいけない。ただし、Jonathan Kew さんに
 より、Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており、
 最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると、
-デフォルトのままで xetex.def を使えるようになっている。 <!-- rev. 310ではgraphics関連のspecialはほぼ実装されているようだが、colorは未サポート --> <!-- ごめんなさい、これはXeTeX rev. 310の問題ではなく、xdvipdfmx rev. 62の問題でした。 -->
+デフォルトのままで xetex.def を使えるようになっている。
 
 ### Macでのインストール {#x46670ed}
 
