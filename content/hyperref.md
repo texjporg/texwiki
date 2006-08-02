@@ -52,7 +52,7 @@ hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じ�
 <tr><td>breaklinks</td><td>allow links to break over lines</td><td>true/<strong>false</strong></td></tr>
 <tr><td>citebordercolor</td><td>color of border around cites</td><td>RGB値 <strong>0 1 0</strong></td></tr>
 <tr><td>citecolor</td><td>color of citation links</td><td><strong>green</strong></td></tr>
-<tr><td>colorlinks</td><td>color links</td><td>true/<strong>false</strong>/true ただし、tex4htとdviwindoのデフォルトはtrue</td></tr>
+<tr><td>colorlinks</td><td>color links</td><td>true/<strong>false</strong> ただし、tex4htまたはdviwindoを指定した際のデフォルトはtrue</td></tr>
 <tr><td>debug</td><td>provide details of anchors defined</td><td>true/<strong>false</strong></td></tr>
 <tr><td>draft</td><td>do not do any hyper linking</td><td>true/<strong>false</strong></td></tr>
 <tr><td>dvipdf</td><td>use dvipdf backend</td><td style="text-align:center"> -</td></tr>
@@ -146,9 +146,9 @@ hyperref.styを読み込むことによって下記のコマンドが使用可�
 
 pdf文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができる。
 
-### hyperrefを読み込む順番 {#z442922c}
+### 他のパッケージとの互換性 {#z442922c}
 
-他のパッケージを同時使用する際には、読み込む順番に気をつけなればならないものもある。
+他のパッケージとhyperrefを同時使用する際には、ちょっとした工夫が必要だったり、読み込む順番に気をつけなればならないものもある。
 
 #### algorithm {#o8dbc2be}
 
@@ -299,51 +299,84 @@ support by using option "hyperfootnotes=false".
 
 ```
 
-IEEEtran.cls
-------------
+```
+
+#### IEEEtran.cls {#w0526a31}
+
+```
   version >= V1.6b (because of \@makecaption, see ChangeLog)
 
-index
------
+```
+
+#### index {#i8981e97}
+
+```
   version >= 1995/09/28 v4.1 (because of \addcontentsline redefinition)
 
-lastpage
---------
-  Compatible.
+```
 
-linguex
--------
+#### lastpage {#d840dc39}
+
+Compatible.
+
+```
+
+```
+
+#### linguex {#o8f74e36}
+
+```
   \usepackage{hyperref}
   \usepackage{linguex}
 
-ltabptch
---------
+```
+
+#### ltabptch {#u5dadd27}
+
+```
   \usepackage{longtable}
   \usepackage{ltabptch}
   \usepackage{hyperref}
 
-minitoc-hyper
--------------
-  This package is obsolete, use the uptodate original
-  package minitoc instead.
+```
 
-multind
--------
+#### minitoc-hyper {#v6aa949d}
+
+This package is obsolete, use the uptodate original
+package minitoc instead.
+
+```
+
+```
+
+#### multind {#s3bce4df}
+
+```
   \usepackage{multind}
   \usepackage{hyperref}
 
-natbib
-------
+```
+
+#### natbib {#i112ee0c}
+
+```
   \usepackage{natbib}
   \usepackage{hyperref}
 
-nomencl
--------
+```
+
+#### nomencl {#s2a437f3}
+
 Example for introducing links for the page numbers:
+
+```
 \renewcommand*{\pagedeclaration}[1]{\unskip, \hyperpage{#1}}
 
-prettyref
----------
+```
+
+#### prettyref {#n537f78a}
+
+```
 %%% example for prettyref %%%
 \documentclass{article}
 \usepackage{prettyref}
@@ -362,73 +395,127 @@ prettyref
 \end{document}
 %%% example for prettyref %%%
 
-ntheorem
---------
-  ntheorem-hyper.sty is an old patched version of ntheorem.sty.
-  Newer versions of ntheorem know the option hyperref:
+```
+
+#### ntheorem {#dc514872}
+
+ntheorem-hyper.sty is an old patched version of ntheorem.sty.
+Newer versions of ntheorem know the option hyperref:
+
+```
     \usepackage{hyperref}
     \usepackage[hyperref]{ntheorem}
-  But there are still unsolved problems (options thref, ...).
+```
 
-setspace
---------
+But there are still unsolved problems (options thref, ...).
+
+```
+
+```
+
+#### setspace {#n2cbb7c1}
+
+```
   \usepackage{setspace}
   \usepackage{hyperref}
 
-sidecap
--------
-  Before 2002/05/24 v1.5h:
+```
+
+#### sidecap {#l728be5c}
+
+Before 2002/05/24 v1.5h:
+
+```
     \usepackage{nameref}
     \usepackage{hyperref}
     \usepackage{sidecap}
 
-subfigure
----------
-  1995/03/06 v2.0:
+```
+
+#### subfigure {#pc68b165}
+
+1995/03/06 v2.0:
+
+```
     \usepackage{subfigure}
     \usepackage{hyperref}
     % hypertexnames is set to false.
-  v2.1:
+```
+
+v2.1:
+
+```
     \usepackage{nameref}
     \usepackage{subfigure}
     \usepackage{hyperref}
-    or
+```
+
+or
+
+```
     \usepackage{hyperref}
     \usepackage{subfigure}
-  v2.1.2:
-    please update
-  v2.1.3:
+```
+
+v2.1.2: 
+please update
+
+v2.1.3:
+
+```
     \usepackage{hyperref}
     \usepackage{subfigure}
     or vice versa?
 
-titleref
---------
+```
+
+#### titleref {#i6c782d6}
+
+```
   \usepackage{nameref}
   \usepackage{titleref}% without usetoc
   \usepackage{hyperref}
 
-titlesec
---------
-  "nameref" supports titlesec, but hyperref does not
-  (unsolved is the anchor setting, missing with unnumbered
-  section, perhaps problems with page breaks with numbered ones).
+```
 
-varioref
---------
+#### titlesec {#yf2b34b9}
+
+"nameref" supports titlesec, but hyperref does not
+(unsolved is the anchor setting, missing with unnumbered
+section, perhaps problems with page breaks with numbered ones).
+
+```
+
+```
+
+#### varioref {#s5f6c173}
+
+```
   \usepackage{nameref}
   \usepackage{varioref}
   \usepackage{hyperref}
-  Some babel versions (eg. 2005/05/21 v3.8g) contain a patch for
-  varioref that breaks the hyperref support for varioref.
-  Thus with babel v3.8g varioref cannot be used with hyperref.
+```
 
-verse
------
-  Version 2005/08/22 v2.22 contains support for hyperref.
+Some babel versions (eg. 2005/05/21 v3.8g) contain a patch for
+varioref that breaks the hyperref support for varioref.
+Thus with babel v3.8g varioref cannot be used with hyperref.
 
-  For older versions see example from
-  de.comp.text.tex (2005/08/11, slightly modified):
+```
+
+```
+
+#### verse {#p86d2aed}
+
+Version 2005/08/22 v2.22 contains support for hyperref.
+
+```
+
+```
+
+For older versions see example from 
+de.comp.text.tex (2005/08/11, slightly modified):
+
+```
 
   \documentclass{article}
 
@@ -471,8 +558,11 @@ verse
 
   \end{document}
 
-vietnam
--------
+```
+
+#### vietnam {#o7d0377c}
+
+```
   % pd1enc.def should be loaded before package dblaccnt:
   \usepackage[PD1,OT1]{fontenc}
   \usepackage{vietnam}
