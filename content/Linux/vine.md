@@ -63,6 +63,7 @@ $ sudo apt-get install task-tetex
 <tr><td> tgif2tex </td><td> tgif の図中の文字列を TeX で処理する</td><td>○</td></tr>
 <tr><td> python-bibtex </td><td> Python extension to parse BibTeX files.</td><td>○</td></tr>
 <tr><td> ps2jpdf </td><td> 日本語しおりの文字化け対策 + ps2pdf -dNOKANJI </td><td>下の方参照</td></tr>
+<tr><td> xpdfopen </td><td> Adobe Readerにファイルを開く/閉じるコマンドを送信 </td><td></td></tr>
 </tbody>
 </table>
 
@@ -219,3 +220,23 @@ EOF
 [1][2*** unembeddable CIDFont: /Ryumin-Light
 *** unembeddable CIDFont: /GothicBBB-Medium
 ```
+
+- AdobeReader 7（rpm 版）をインストールする前に、
+    VinePlus の openldap を入れておくと、
+    acroread 立ち上げ時のエラー表示がなくなります。
+    またバージョンによって微妙にうまく動かないことがあります。
+    - AdobeReader_jpn-7.0.0 〜 7.0.1 は印刷時に２枚目以降が文字化けすることがあります。
+        \[スピードを優先して最適化\] のチェックをはずすと回避できるようです。
+    - AdobeReader_jpn-7.0.5 〜 7.0.8 は、プルダウンメニューがちらつきます。
+        避ける方法はなさそうなので、7.0.1 を使うしかないでしょう。
+
+- xpdfopen パッケージを入れておくと、pdfopen/pdfclose コマンドで
+    AdobeReader の閲覧ファイルを制御できるようになります。
+    gs/xdvi などと異なり、閲覧中のファイルを更新しても AdobeReader は再読み込みしてくれませんが、
+
+    ```
+    pdfclose --file hoge.pdf; make hoge.pdf; pdfopen --file hoge.pdf
+    ```
+
+    とすれば更新ファイルを読み込んでくれます。
+    （先頭ページにジャンプしてしまうのが惜しいところです。）
