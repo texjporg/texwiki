@@ -80,19 +80,21 @@ pukiwiki: "TeX installers for Windows"
 - <strong>URL</strong>：[http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
 - <strong>作者（パッケージャー）</strong>：黒木 裕介さん
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
-- <strong>ライセンス</strong>：GNU！？
+- <strong>ライセンス</strong>：ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り．パッケージングスクリプトはパッケージャーの思想による．
 - <strong>インストールする対象</strong>：ptetex そのもの，
     様々なクラスファイル・マクロや関連ツールなど．
     （パッケージャーが増えて，パッケージが増えれば，どんどん広がる．）
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：自動
+- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない．Cygwin の Netinstaller が何を書き込むのかは存じ上げない)
 - <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex
     （本当はパッチ集だけど･･･）が，Cygwin でもそのまま使える．
     W32TeX を Cygwin で使えるようにする作業などを考える必要がない．
     all in one と言ってよい．
     パッケージャーが増えてパッケージが増えれば，もっと面白くなる！
+    豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
+    どれだけ簡単になることか，計り知れない．
     追加パッケージ作成はテキストベースなので簡単にできる
     （参考：[TeX マクロをバイナリ配布するには](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/package.html)）．
 
@@ -114,7 +116,7 @@ pukiwiki: "TeX installers for Windows"
 - <strong>ユーザーインターフェース</strong>：GUI
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
 - <strong>環境変数・レジストリ</strong>：（今のところ，）手動．
-- <strong>長所</strong>：あらかじめたくさんの追加パッケージが用意されている（と思う）．
+- <strong>長所</strong>：[Meadow](http://www.meadowy.org/) や [Cygwin](http://www.cygwin.com/) で見慣れたユーザーインターフェース．
     パッケージャーが増えて MyTeX 用のパッケージ置き場の選択肢が増えれば，
     もっと面白くなる！
     豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
@@ -130,6 +132,8 @@ pukiwiki: "TeX installers for Windows"
     TeX や Windows に関して，全くの無知の方にとっては使えないインストーラーなので，
     初心者にとってやや難しいインストーラーとなっています．
 
-- <strong>備考</strong>：「何でもかんでも GUI にして，ブラックボックスにしない」という精神が，この MyTeX Netinstaller の仕様にも影響しています．
+- <strong>備考</strong>：「何でもかんでも GUI にしない，ブラックボックスにしない」という精神が，MyTeX の仕様にも影響しています．
 
 ***
+
+- 私なりにまとめてみました．追加・修正など，どんどんお願い致します． -- munepi 2006-08-04 (金) 12:14:04
