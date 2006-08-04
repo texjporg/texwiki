@@ -82,14 +82,13 @@ pukiwiki: "TeX installers for Windows"
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
 - <strong>ライセンス</strong>：ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り．パッケージングスクリプトはパッケージャーの思想による．
 - <strong>インストールする対象</strong>：ptetex そのもの，
-    様々なクラスファイル・マクロや関連ツールなど．
+    様々なクラスファイル・マクロや関連ツール[^1]など．
     （パッケージャーが増えて，パッケージが増えれば，どんどん広がる．）
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない．Cygwin の Netinstaller が何を書き込むのかは存じ上げない)
-- <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex
-    （本当はパッチ集だけど･･･）が，Cygwin でもそのまま使える．
+- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない (良い意味で，できない)[^2]．)
+- <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex が，Cygwin でもそのまま使える．
     W32TeX を Cygwin で使えるようにする作業などを考える必要がない．
     all in one と言ってよい．
     パッケージャーが増えてパッケージが増えれば，もっと面白くなる！
@@ -137,3 +136,6 @@ pukiwiki: "TeX installers for Windows"
 ***
 
 - 私なりにまとめてみました．追加・修正など，どんどんお願い致します． -- munepi 2006-08-04 (金) 12:14:04
+
+[^1]: 日中韓対応 Ghostscript, ps2jpdf, xdvi-jp
+[^2]: ほぼ無いと思うが，Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる
