@@ -12,7 +12,7 @@ pukiwiki: "TeX installers for Windows"
 インストーラーは，多種多様なものがあってよいですし，ユーザーの好みやレベルに合ったものを選べばよいでしょう．インストーラーを選ぶときの参考にして下さい．
 
 いろいろとあげていますが，今の時点では，
-「TeX インストーラー3」が，最も多くのユーザーにとって，
+「TeX インストーラ3」が，最も多くのユーザーにとって，
 無難でかつ単純なインストーラーではないでしょうか？
 
 ## texinst {#v558e4b5}
@@ -42,7 +42,7 @@ pukiwiki: "TeX installers for Windows"
     （好みの問題ですが，）それくらいならば，
     texinst の方で初めからインストールした方がよいかもしれません．
 
-## TeXインストーラー3（kakuto3.exe） {#w0d7240a}
+## TeXインストーラ3（kakuto3.exe） {#w0d7240a}
 
 - <strong>URL</strong>：[http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/index.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/index.html)
 - <strong>作者</strong>：阿部 紀行さん
