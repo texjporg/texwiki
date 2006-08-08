@@ -77,21 +77,25 @@ pukiwiki: "TeX installers for Windows"
 
 ## ptetex for Cygwin {#l3e305ae}
 
+<!-- ↑こんな名前でしたっけ？ -->
 - <strong>URL</strong>：[http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
-- <strong>作者（パッケージャー）</strong>：黒木 裕介さん
+- <strong>作者（パッケージ製作者）</strong>：黒木 裕介さん
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
-- <strong>ライセンス</strong>：ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り．パッケージングスクリプトはパッケージャーの思想による．
-- <strong>インストールする対象</strong>：ptetex そのもの，
-    様々なクラスファイル・マクロや関連ツール[^1]など．
-    （パッケージャーが増えて，パッケージが増えれば，どんどん広がる．）
+- <strong>ライセンス</strong>：ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り．パッケージングスクリプトはパッケージ製作者の思想による．
+    <!-- インストーラのライセンスを書くのなら GPL でよい気がします。 -->
+
+- <strong>インストールする対象</strong>：ptetex そのもの
+    （pTeX 本体や様々なクラスファイル・マクロ）に加え，
+    関連ツール（日中韓対応 Ghostscript, ps2jpdf）なども．
+    （パッケージ製作者が増えて，パッケージが増えれば，どんどん広がる．）
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない (良い意味で，できない)[^2]．)
+- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない (良い意味で，できない)[^1]．)
 - <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex が，Cygwin でもそのまま使える．
     W32TeX を Cygwin で使えるようにする作業などを考える必要がない．
     all in one と言ってよい．
-    パッケージャーが増えてパッケージが増えれば，もっと面白くなる！
+    パッケージ製作者が増えてパッケージが増えれば，もっと面白くなる！
     豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
     どれだけ簡単になることか，計り知れない．
     追加パッケージ作成はテキストベースなので簡単にできる
@@ -137,5 +141,4 @@ pukiwiki: "TeX installers for Windows"
 
 - 私なりにまとめてみました．追加・修正など，どんどんお願い致します． -- munepi 2006-08-04 (金) 12:14:04
 
-[^1]: 日中韓対応 Ghostscript, ps2jpdf, xdvi-jp
-[^2]: ほぼ無いと思うが，Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる
+[^1]: ほぼ無いと思うが，Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる
