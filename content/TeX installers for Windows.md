@@ -75,14 +75,16 @@ pukiwiki: "TeX installers for Windows"
 - <strong>備考</strong>：TeX インストーラ 3 ローカル特化バージョンも別途公開されています．
     その他，多数の TeX 関連ツールおよび解説をされています．
 
-## ptetex for Cygwin {#l3e305ae}
+## Cygwin で日本語 TeX {#l3e305ae}
 
 <!-- ↑こんな名前でしたっけ？ -->
+<!-- / 「ptetex for Cygwin」と書いていただきましたが，サイトのタイトルの -->
+<!-- / ほうにさせていただきました． -->
 - <strong>URL</strong>：[http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
 - <strong>作者（パッケージ製作者）</strong>：黒木 裕介さん
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
 - <strong>ライセンス</strong>：ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り．パッケージングスクリプトはパッケージ製作者の思想による．
-    <!-- インストーラのライセンスを書くのなら GPL でよい気がします。 -->
+    インストーラのライセンスは，GPL.
 
 - <strong>インストールする対象</strong>：ptetex そのもの
     （pTeX 本体や様々なクラスファイル・マクロ）に加え，
@@ -91,7 +93,7 @@ pukiwiki: "TeX installers for Windows"
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしない (良い意味で，できない)[^1]．)
+- <strong>環境変数・レジストリ</strong>：自動 (パッケージャは，レジストリに関する設定はしなくてよい[^1]．)
 - <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex が，Cygwin でもそのまま使える．
     W32TeX を Cygwin で使えるようにする作業などを考える必要がない．
     all in one と言ってよい．
@@ -137,8 +139,16 @@ pukiwiki: "TeX installers for Windows"
 
 - <strong>備考</strong>：「何でもかんでも GUI にしない，ブラックボックスにしない」という精神が，MyTeX の仕様にも影響しています．
 
+## Cygwin-JE {#t8ab1da9}
+
+- tetex-2 ですが，Cygwin の Netinstaller でインストールできる，日本語化 TeX です．
+    <!-- 詳しい方に後をお譲りします． -->
+
+- <strong>URL</strong>: [http://sourceforge.jp/projects/cygwin-je/](http://sourceforge.jp/projects/cygwin-je/)
+- Cygwinのsetup.exeに、[http://cygwin-je.sourceforge.jp/cygwin_je/](http://cygwin-je.sourceforge.jp/cygwin_je/) を追加すると日本語化された各種パッケージがインストールできる。その中にtetex-2, gs, xdviなどが含まれている。
+
 ***
 
 - 私なりにまとめてみました．追加・修正など，どんどんお願い致します． -- munepi 2006-08-04 (金) 12:14:04
 
-[^1]: ほぼ無いと思うが，Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる
+[^1]: もっと言うと，しない方が良いと思う．Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる．
