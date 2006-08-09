@@ -141,11 +141,19 @@ pukiwiki: "TeX installers for Windows"
 
 ## Cygwin-JE {#t8ab1da9}
 
-- tetex-2 ですが，Cygwin の Netinstaller でインストールできる，日本語化 TeX です．
-    <!-- 詳しい方に後をお譲りします． -->
+<!-- 詳しい方に後をお譲りします． -->
 
-- <strong>URL</strong>: [http://sourceforge.jp/projects/cygwin-je/](http://sourceforge.jp/projects/cygwin-je/)
-- Cygwinのsetup.exeに、[http://cygwin-je.sourceforge.jp/cygwin_je/](http://cygwin-je.sourceforge.jp/cygwin_je/) を追加すると日本語化された各種パッケージがインストールできる。その中にtetex-2, gs, xdviなどが含まれている。
+- <strong>URL</strong>：[http://sourceforge.jp/projects/cygwin-je/](http://sourceforge.jp/projects/cygwin-je/)
+- <strong>作者（パッケージ製作者）</strong>：Rue. SATOH さん
+- <strong>初心者オススメ度</strong>：★☆☆☆☆
+- <strong>ライセンス</strong>：インストーラのライセンスは，GPL.
+- <strong>インストールする対象</strong>：tetex-2 + 日本語化．ほかにも Ghostscript, xdvi など各種ツール．
+- <strong>ユーザーインターフェース</strong>：GUI (Cygwin Netinstaller)
+- <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：tetex-2 ということで，少々古め．開発が止まっている可能性あり．ソーススクリプトがないパッケージがある (たとえば Ghostscript)．
+- <strong>備考</strong>：Cygwinのsetup.exeに、[http://cygwin-je.sourceforge.jp/cygwin_je/](http://cygwin-je.sourceforge.jp/cygwin_je/) を追加すると日本語化された各種パッケージがインストールできる。その中にtetex-2, gs, xdviなどが含まれている。
 
 ***
 
