@@ -94,8 +94,14 @@ pukiwiki: "TeX installers for Windows"
 
 ## Cygwin で日本語 TeX {#l3e305ae}
 
+<!-- インストーラは後述の通り，Cygwin Netinstaller そのもの． -->
+<!-- 「Cygwin で日本語 TeX」はプロジェクト名くらいの位置付け． -->
 - <strong>URL</strong>：[http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
 - <strong>作者（パッケージ製作者）</strong>：黒木 裕介さん
+    <!-- 長所の項で「パッケージ製作者が増えて」と書かれているので， -->
+    <!-- 「作者」の次に「（パッケージ製作者）」と書いておくのがよいかわからない． -->
+    <!-- 「作者」というよりかは「プロジェクトマネージャ」くらいの位置付けか． -->
+
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
 - <strong>ライセンス</strong>：
     <!-- ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り． -->
