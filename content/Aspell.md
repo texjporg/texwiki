@@ -47,7 +47,7 @@ replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 
 #### Linuxの場合 {#w22db8c3}
 
-Linuxでは通常最初からaspellがインストールされています。aspellが吐いていなければ、例えば、VineLinuxだとすると
+Linuxでは通常最初からaspellがインストールされています。aspellが入っていなければ、例えば、VineLinuxだとすると
 
 ```
 # apt-get install aspell
