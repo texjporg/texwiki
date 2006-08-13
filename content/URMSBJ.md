@@ -242,3 +242,5 @@ Knuth DE と本来の出力をします。vancouver.bstを編集して、Donald 
 ### その他 {#b7405687}
 
 ### コメント {#y6aa6ec3}
+
+- ご存知の方もいらっしゃると思いますが、角籐版Web2c7.5.5のSIunits.styだと\minuteと\hourを書き換えればとりあえずplatexで使えるようです。 -- kazu 2006-08-14 (月) 14:15:28
