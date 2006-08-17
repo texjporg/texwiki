@@ -165,6 +165,7 @@ pukiwiki: "TeX installers for Windows"
     現段階では GUI のインストーラーだとしても，
     TeX や Windows に関して，全くの無知の方にとっては使えないインストーラーなので，
     初心者にとってやや難しいインストーラーとなっています．
+    <!-- どうして環境変数を自動設定してくれないのでしょうか？ -->
 
 - <strong>備考</strong>：「何でもかんでも GUI にしない，ブラックボックスにしない」という精神が，MyTeX の仕様にも影響しています．
 
@@ -191,7 +192,7 @@ pukiwiki: "TeX installers for Windows"
 - <strong>備考</strong>：Cygwin の setup.exe に
     [http://cygwin-je.sourceforge.jp/cygwin_je/](http://cygwin-je.sourceforge.jp/cygwin_je/) を追加すると，
     日本語化された各種パッケージがインストールできる．
-    その中に tetex-2gs，xdvi などが含まれている．
+    その中に teTeX-2.0, Ghostscript，xdvi などが含まれている．
 
 ***
 
