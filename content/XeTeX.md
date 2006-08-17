@@ -9,35 +9,40 @@ pukiwiki: "XeTeX"
 
 ## XeTeX {#a81f78a6}
 
-これはスタブです。書き直してください。
-
-### XeTeXとは {#v9b12e60}
+### XeTeX とは {#v9b12e60}
 
 [The XeTeX typesetting system](http://scripts.sil.org/xetex)
-はutf-8ベースのTeX。 <!-- 入力ファイルはutf-8ベースだが、内部動作はUCS16ベース。 --> <!-- これを知らないと、BMP以外の文字をアクティブにしたりする時にハマルことになる。 -->
+は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UCS16 ベース。 --> <!-- これを知らないと，BMP 以外の文字をアクティブにしたりする時にハマルことになる。 -->
 「ズィーTeX」と読む。
-Mac OS X上で開発され，システムが認識するOpenTypeフォントをそのまま使える。
-Linux版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では、
-使えるフォントは OS が認識しているものと言うより、FontConfig が認識して
-いるものと言ったほうが正確である。デフォルトではタイプセット時に、パイプ
-によって出力がドライバに送られ、最終出力は pdf となる。オプション --no-pdf
+Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。
+Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
+使えるフォントは OS が認識しているものと言うより，FontConfig が認識して
+いるものと言ったほうが正確である。デフォルトではタイプセット時に，パイプ
+によって出力がドライバに送られ，最終出力は pdf となる。オプション --no-pdf
 によってこれを 2 段階に分けることもできる。この場合は .xdv ファイル
-(.dvi ファイルを拡張したもの) を出力する。.xdv ファイルをドライバによって
-pdf に変換する。 xdv2pdf は Mac 専用のドライバであって、他では利用できない。
-Linux と W32 では、汎用の xdvipdfmx というドライバを用いる。これは
+（.dvi ファイルを拡張したもの）を出力する。.xdv ファイルをドライバによって
+pdf に変換する。 xdv2pdf は Mac 専用のドライバであって，他では利用できない。
+xdv2pdf は Mac OS X を有効利用するドライバだが，仮想フォントを読むことが
+できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
+Mac OS X であっても xdvipdfmx を使うことになる。直接 pdf を出力する場合には
+xelatex --output-driver='xdvipdfmx -q -E' foo
+のようにすると，デフォルトのドライバを変更して xdvipdfmx
+を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
+ものにしか xdvipdfmx は含まれていない。
+Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。これは
 dvipdfmx を XeTeX 用に拡張したものである。
-パッケージに同梱されている、graphics.cfgとcolor.cfgはxdv2pdf用の設定が
-なされている。従って Linux と W32 では、
-graphics パッケージや color パッケージなどを使用するとき、必ず dvipdfm
-オプションを付加しておくのを忘れてはいけない。ただし、Jonathan Kew さんに
-より、Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており、
-最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると、
+パッケージに同梱されている，graphics.cfg と color.cfg は xdv2pdf 用の設定が
+なされている。従って Linux と W32 では，
+graphics パッケージや color パッケージなどを使用するとき，必ず dvipdfm
+オプションを付加しておくのを忘れてはいけない。ただし，Jonathan Kew さんに
+より，Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており，
+最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると，
 デフォルトのままで xetex.def を使えるようになっている。
 
-### Macでのインストール {#x46670ed}
+### Mac でのインストール {#x46670ed}
 
 [ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
-をインストールしたMac OS X 10.4.xでインストールしてみた。
+をインストールした Mac OS X 10.4.x でインストールしてみた。
 本家から XeTeX_099b.dmg をダウンロードし，ダブルクリックして現れる XeTeX.pkg
 をダブルクリックして先に進んでいくとエラーになる。
 インチキだが
@@ -71,24 +76,24 @@ fmtutil --byfmt xelatex
 
 cf.[qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
-最新の web2c-7.5.5-w32.tar.gz を入手して、TeX のインストール
+最新の web2c-7.5.5-w32.tar.gz を入手して，TeX のインストール
 トップディレクトリで展開して下さい。この中に xetex をサポートする
 fmtutil.cnf と texmf.cnf が入っています。
 
 xetex-w32.tar.bz2 を TeX のインストールトップディレクトリで展開して下さい。
 
-TopDir/share/texmf/fonts/conf に移動し、(つまりカレントディレクトリとし)
-そこにある fonts.conf というファイルを編集します。編集するのは
-"Find fonts in these directories" というセクションだけです。
-そこにはデフォルトで、 Windows のシステムフォントディレクトリだけが
+TopDir/share/texmf/fonts/conf に移動し，（つまりカレントディレクトリとし）
+そこにある fonts.conf というファイルを編集します。
+編集するのは “Find fonts in these directories” というセクションだけです。
+そこにはデフォルトで， Windows のシステムフォントディレクトリだけが
 
 ```
     <dir>c:/windows/fonts</dir>
 ```
 
-として入れてありますから、このままで良い場合は編集する必要はありません。
-ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows2000 だと c:/winnt/fonts となりますが，Windows2000 も最近はメジャーでは --> <!-- なく WindowsXP の方が一般的でしょうか。 -->
-Windows のシステムフォントディレクトリの他に、購入したフォントのディレクトリがあれば、
+として入れてありますから，このままで良い場合は編集する必要はありません。
+ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows 2000 だと c:/winnt/fonts となりますが，Windows 2000 も最近はメジャーでは --> <!-- なく Windows XP の方が一般的でしょうか。 -->
+Windows のシステムフォントディレクトリの他に，購入したフォントのディレクトリがあれば，
 以下の例のように追加することができます:
 
 ```
@@ -105,20 +110,20 @@ Windows のシステムフォントディレクトリの他に、購入したフ
 ```
 
 なるコマンドを実行して下さい。これはフォントディレクトリにある各ファイル
-をスキャンして、キャッシュファイルを作成するコマンドです。キャッシュ
-ファイルは、TopDir/share/texmf/fonts/cache に作成されます。
-大きいフォントファイルが大量にあると、このコマンドは終了までに数分かかる
-ことがありますから、気長に他の仕事をしていて下さい。
+をスキャンして，キャッシュファイルを作成するコマンドです。キャッシュ
+ファイルは，TopDir/share/texmf/fonts/cache に作成されます。
+大きいフォントファイルが大量にあると，このコマンドは終了までに数分かかる
+ことがありますから，気長に他の仕事をしていて下さい。
 
-以上でインストールが終了します。使用可能フォント名は、通常のものが使えます。
-名前を見たい場合は、
+以上でインストールが終了します。使用可能フォント名は，通常のものが使えます。
+名前を見たい場合は，
 
 ```
    fc-list >namelist.txt
 ```
 
-とすると、 namelist.txt に記録されます。
-ただし utf8 で記録されますから、もし shift-JIS で見たかったら
+とすると， namelist.txt に記録されます。
+ただし UTF-8 で記録されますから，もし Shift_JIS で見たかったら
 
 ```
    nkf -s namelist.txt >namelist.sj
@@ -130,11 +135,11 @@ Windows のシステムフォントディレクトリの他に、購入したフ
    fc-list | nkf -s >namelist.sj
 ```
 
-とすると、直接 shift-JIS のファイルになります。
+とすると，直接 Shift_JIS のファイルになります。
 
 ### 実行例 {#n6a9a656}
 
-簡単なサンプルtest.texをUTF-8で書く：
+簡単なサンプル test.tex を UTF-8 で書く：
 
 ```
 \documentclass{article}
@@ -146,8 +151,8 @@ Hello, \TeX!
 ```
 
 これで xelatex test とすると，test.pdf ができる。
-日本語OpenTypeフォントを使用する場合、デフォルトで詰め組になってしまうので、
-ベタ組をするためには、Proportional Alternative (palt)フィーチャーを
+日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので，
+ベタ組をするためには，Proportional Alternative (palt) フィーチャーを
 無効にしておく。
 
 日本語のルールに則って行分割をするには次のようにする。
@@ -164,13 +169,14 @@ Hello, \TeX!
 \XeTeXlinebreaklocale ""
 ```
 
-ただしXeTeXは日本語の組版ルールをよく知っているわけではないので，現状ではまともではない。
+ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，現状ではまともではない。
 
 ### 参考サイト {#m6b448cf}
 
-- [The XeTeX typesetting system](http://scripts.sil.org/xetex) (本家)
+- [The XeTeX typesetting system](http://scripts.sil.org/xetex)（本家）
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 
 ### コメント {#d0504266}
 
 - 使用環境は Windows2000(SP4) です。ヒラギノは持っていないので「小塚明朝 Pro Acro R:-palt」で試したのですが「! Font \foo="フォント名は文字化けPro Acro R:-palt" not loadable: installed font not found.」と言われて失敗しました。代わりに「Kozuka Mincho Pro Acro:-pait」で成功しました。「MS P明朝」「みかちゃん_o」では成功。fc-list での namelist.txt で得られるフォント名一覧でフォント名には二番目の要素を使えば良いのかもしれません。 -- tony 2006-07-17 (月) 15:32:30
+- 最新のものでは、 \[フォントファイル名\] という指定も可能になっています: 例: \font\f="\[KozMinPro-Regular.otf\]:mapping=tex-text,color=FF0000" -- kakuto 2006-08-18 (金) 10:53:19
