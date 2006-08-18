@@ -35,7 +35,7 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
 を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
 ものにしか xdvipdfmx は含まれていない。
-パッケージに同梱されている，graphics.cfg と color.cfg は xdv2pdf 用の設定が
+パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず dvipdfm
 オプションを付加しておくのを忘れてはいけない。ただし，Jonathan Kew さんに
@@ -74,7 +74,7 @@ fmtutil --byfmt xetex
 fmtutil --byfmt xelatex
 ```
 
-最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので、もっとスムーズに
+最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので，もっとスムーズに
 インストールできるのではないかと思われる。
 
 ### Windows でのインストール {#j287e7c2}
