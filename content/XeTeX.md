@@ -18,15 +18,15 @@ Mac OS X 上で開発され，システムが認識する OpenType フォント�
 Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
 使えるフォントは OS が認識しているものと言うより，FontConfig が認識して
 いるものと言ったほうが正確である。
-なお、バージョン 0.995 以降では (ただし 0.995 でも xetex は svn revision
-344 以降、xdvipdfmx は svn revision 74 以降)、
+なお，バージョン 0.995 以降では（ただし 0.995 でも xetex は svn revision
+344 以降，xdvipdfmx は svn revision 74 以降），
 
 ```
 [FontFileName:FaceIndex]:features
 ```
 
-なるフォントの指定法も可能になり、FontConfig とは無関係に、 Kpathsearch
-が見つけることができるところにある、 "Uninstalled fonts" を native fonts
+なるフォントの指定法も可能になり，FontConfig とは無関係に， Kpathsearch
+が見つけることができるところにある “Uninstalled fonts” を native fonts
 として使用することもできるようになっている。例えば
 
 ```
@@ -39,7 +39,7 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 \font\x="MS PMincho:mapping=tex-text,color=0000FF" at 12pt
 ```
 
-と同じように振舞う。前者のほうが FontConfig に関係しないので、早く処理
+と同じように振舞う。前者のほうが FontConfig に関係しないので，早く処理
 できるかもしれない。 FaceIndex は不要の場合は省略できる。
 デフォルトではタイプセット時に，パイプ
 によって出力がドライバに送られ，最終出力は pdf となる。オプション --no-pdf
