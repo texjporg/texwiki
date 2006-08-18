@@ -22,15 +22,19 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 によってこれを 2 段階に分けることもできる。この場合は .xdv ファイル
 （.dvi ファイルを拡張したもの）を出力する。.xdv ファイルをドライバによって
 pdf に変換する。 xdv2pdf は Mac 専用のドライバであって，他では利用できない。
+Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。これは
+dvipdfmx を XeTeX 用に拡張したものである。
 xdv2pdf は Mac OS X を有効利用するドライバだが，仮想フォントを読むことが
 できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
 Mac OS X であっても xdvipdfmx を使うことになる。直接 pdf を出力する場合には
+
+```
 xelatex --output-driver='xdvipdfmx -q -E' foo
+```
+
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
 を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
 ものにしか xdvipdfmx は含まれていない。
-Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。これは
-dvipdfmx を XeTeX 用に拡張したものである。
 パッケージに同梱されている，graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず dvipdfm
@@ -70,11 +74,14 @@ fmtutil --byfmt xetex
 fmtutil --byfmt xelatex
 ```
 
+最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので、もっとスムーズに
+インストールできるのではないかと思われる。
+
 ### Windows でのインストール {#j287e7c2}
 
 <!-- XeTeX for W32 のインストール方法 -->
 
-cf.[qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
+cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
 最新の web2c-7.5.5-w32.tar.gz を入手して，TeX のインストール
 トップディレクトリで展開して下さい。この中に xetex をサポートする
@@ -94,7 +101,7 @@ TopDir/share/texmf/fonts/conf に移動し，（つまりカレントディレ�
 として入れてありますから，このままで良い場合は編集する必要はありません。
 ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows 2000 だと c:/winnt/fonts となりますが，Windows 2000 も最近はメジャーでは --> <!-- なく Windows XP の方が一般的でしょうか。 -->
 Windows のシステムフォントディレクトリの他に，購入したフォントのディレクトリがあれば，
-以下の例のように追加することができます:
+以下の例のように追加することができます：
 
 ```
     <dir>c:/windows/fonts</dir>
@@ -173,7 +180,7 @@ Hello, \TeX!
 
 ### 参考サイト {#m6b448cf}
 
-- [The XeTeX typesetting system](http://scripts.sil.org/xetex)（本家）
+- [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 
 ### コメント {#d0504266}
