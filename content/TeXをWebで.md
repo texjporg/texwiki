@@ -117,3 +117,5 @@ ulimit -t 10 -f 1024
 - Windows環境で動かしているかたがいれば設置法を教えてください --  2005-01-22 (土) 22:53:11
 - [qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html)を参考に。 --  2005-05-11 (水) 22:52:05
     <!-- -fsdafsdafasd - - fdsa &new{2005-10-17 (月) 16:05:41}; -->
+
+- Vine Linux 3.2の/usr/share/texmf/web2c/texmf.cnf でも 「openin_any = a」でした。 -- 1156162091 2006-08-21 (月) 21:08:11
