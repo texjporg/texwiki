@@ -41,6 +41,7 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 
 と同じように振舞う。前者のほうが FontConfig に関係しないので，早く処理
 できるかもしれない。 FaceIndex は不要の場合は省略できる。
+
 デフォルトではタイプセット時に，パイプ
 によって出力がドライバに送られ，最終出力は pdf となる。オプション --no-pdf
 によってこれを 2 段階に分けることもできる。この場合は .xdv ファイル
@@ -50,7 +51,9 @@ Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。�
 dvipdfmx を XeTeX 用に拡張したものである。
 xdv2pdf は Mac OS X を有効利用するドライバだが，仮想フォントを読むことが
 できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
-Mac OS X であっても xdvipdfmx を使うことになる。直接 pdf を出力する場合には
+Mac OS X であっても xdvipdfmx を使うことになる。
+また、上記の "Uninstalled fonts" を使う機能も、ドライバに xdvipdfmx を使う
+場合だけ有効である。直接 pdf を出力する場合には
 
 ```
 xelatex --output-driver='xdvipdfmx -q -E' foo
