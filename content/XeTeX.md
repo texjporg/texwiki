@@ -12,7 +12,7 @@ pukiwiki: "XeTeX"
 ### XeTeX とは {#v9b12e60}
 
 [The XeTeX typesetting system](http://scripts.sil.org/xetex)
-は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UCS16 ベース。 --> <!-- これを知らないと，BMP 以外の文字をアクティブにしたりする時にハマルことになる。 -->
+は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース。 --> <!-- これを知らないと，BMP 以外の文字をアクティブにしたりする時にハマルことになる。 -->
 「ズィーTeX」と読む。
 Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。
 Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
@@ -70,6 +70,13 @@ graphics パッケージや color パッケージなどを使用するとき，�
 より，Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており，
 最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると，
 デフォルトのままで xetex.def を使えるようになっている。
+
+しおり等の PDF 文字列に関しては、オリジナルの dvipdfmx では 適切な CMap
+を指定することで Big Endian UTF-16 with BOM に変換するようになっていた。
+xdvipdfmx でもこの機能はそのまま使えるが、UTF-8 で入力する XeTeX においては
+単に UTF-8 を Big Endian UTF-16 with BOM に変換するだけでよいので、より簡単
+な実装が可能である。実際にこの機能が実装されていて、特別に何もしないでも
+日本語しおり等を作ることができる。
 
 ### Mac でのインストール {#x46670ed}
 
