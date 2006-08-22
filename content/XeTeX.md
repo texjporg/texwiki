@@ -42,18 +42,19 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 と同じように振舞う。前者のほうが FontConfig に関係しないので，早く処理
 できるかもしれない。 FaceIndex は不要の場合は省略できる。
 
-デフォルトではタイプセット時に，パイプ
-によって出力がドライバに送られ，最終出力は pdf となる。オプション --no-pdf
-によってこれを 2 段階に分けることもできる。この場合は .xdv ファイル
+デフォルトではタイプセット時に，パイプによって出力がドライバに送られ，
+最終出力は PDF となる。
+オプション “--no-pdf” によってこれを 2 段階に分けることもできる。
+この場合は .xdv ファイル
 （.dvi ファイルを拡張したもの）を出力する。.xdv ファイルをドライバによって
-pdf に変換する。 xdv2pdf は Mac 専用のドライバであって，他では利用できない。
+PDF に変換する。 xdv2pdf は Mac 専用のドライバであって，他では利用できない。
 Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。これは
 dvipdfmx を XeTeX 用に拡張したものである。
 xdv2pdf は Mac OS X を有効利用するドライバだが，仮想フォントを読むことが
 できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
 Mac OS X であっても xdvipdfmx を使うことになる。
-また、上記の "Uninstalled fonts" を使う機能も、ドライバに xdvipdfmx を使う
-場合だけ有効である。直接 pdf を出力する場合には
+また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う
+場合だけ有効である。直接 PDF を出力する場合には
 
 ```
 xelatex --output-driver='xdvipdfmx -q -E' foo
@@ -64,7 +65,7 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 ものにしか xdvipdfmx は含まれていない。
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
-graphics パッケージや color パッケージなどを使用するとき，必ず dvipdfm
+graphics パッケージや color パッケージなどを使用するとき，必ず \[dvipdfm\]
 オプションを付加しておくのを忘れてはいけない。ただし，Jonathan Kew さんに
 より，Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており，
 最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると，
@@ -93,16 +94,16 @@ ln -s ../texmf-var/fonts/map/dvips/updmap dvips
 ```
 
 /usr/local/teTeX/share/texmf-dist/tex/generic/config/language.dat
-の The following languages are disabled by default.
-と書いてあるところ以降を %! でコメントアウトし
+の “The following languages are disabled by default.” と
+書いてあるところ以降を “%!” でコメントアウトし
 
 ```
 fmtutil --byfmt xetex
 fmtutil --byfmt xelatex
 ```
 
-最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので，もっとスムーズに
-インストールできるのではないかと思われる。
+最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので，
+もっとスムーズにインストールできるのではないかと思われる。
 
 ### Windows でのインストール {#j287e7c2}
 
@@ -126,7 +127,7 @@ TopDir/share/texmf/fonts/conf に移動し，（つまりカレントディレ�
 ```
 
 として入れてありますから，このままで良い場合は編集する必要はありません。
-ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows 2000 だと c:/winnt/fonts となりますが，Windows 2000 も最近はメジャーでは --> <!-- なく Windows XP の方が一般的でしょうか。 -->
+ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows 2000 だと c:/winnt/fonts となりますが， --> <!-- Windows 2000 も最近はメジャーではなく Windows XP の方が一般的でしょうか。 -->
 Windows のシステムフォントディレクトリの他に，購入したフォントのディレクトリがあれば，
 以下の例のように追加することができます：
 
@@ -143,9 +144,9 @@ Windows のシステムフォントディレクトリの他に，購入したフ
     fc-cache -v -f
 ```
 
-なるコマンドを実行して下さい。これはフォントディレクトリにある各ファイル
-をスキャンして，キャッシュファイルを作成するコマンドです。キャッシュ
-ファイルは，TopDir/share/texmf/fonts/cache に作成されます。
+なるコマンドを実行して下さい。これはフォントディレクトリにある各ファイルを
+スキャンして，キャッシュファイルを作成するコマンドです。
+キャッシュファイルは，TopDir/share/texmf/fonts/cache に作成されます。
 大きいフォントファイルが大量にあると，このコマンドは終了までに数分かかる
 ことがありますから，気長に他の仕事をしていて下さい。
 
@@ -178,7 +179,7 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 ```
 \documentclass{article}
 \begin{document}
-Hello, \TeX!
+Hello, \TeX !
 \font\foo="ヒラギノ丸ゴ Pro W4:-palt"
 \foo 日本語
 \end{document}
@@ -203,7 +204,8 @@ Hello, \TeX!
 \XeTeXlinebreaklocale ""
 ```
 
-ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，現状ではまともではない。
+ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
+現状ではまともではない。
 
 ### 参考サイト {#m6b448cf}
 
