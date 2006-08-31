@@ -51,25 +51,51 @@ NFSS1 のコマンド \new@fontshape の引数を調べている最中に，
 #### ! Corrupted NFSS tables. {#fd9ea825}
 
 何らかの理由でフォントの代替に失敗した場合に現れるエラーメッセージ（のひとつ）です．
-NFSS 関係のマクロの引数を書き間違えたくらいではこのエラーにお目にかかることはまずないでしょう．
-例えば，次のような記述を行うとこのエラーが生じます．
+例えば，次のような記述をオリジナルの LaTeX で処理するとこのエラーが生じます
+（pLaTeX で処理した場合には，\begin{document} のところで別のエラーが生じます）．
 
 ```
 \documentclass{article}
+\DeclareFontEncoding{LXX}{}{}
+%%%\DeclareFontSubstitution{LXX}{cmr}{m}{n}%%% (*)
+\DeclareFontFamily{LXX}{cmr}{}
+\DeclareFontShape{LXX}{cmr}{m}{n}{<-> cmr10}{}
+
+\DeclareFontEncoding{LXY}{}{}
+\DeclareFontSubstitution{LXY}{cmr}{bx}{n}
+\DeclareFontFamily{LXY}{cmr}{}
+\DeclareFontShape{LXY}{cmr}{bx}{n}{<-> cmb10}{}
+
 \begin{document}
-\makeatletter
-\@namedef{D@OT1}{%
-  \def\default@family{cmr}%
-  \def\default@series{mc}%
-  \def\default@shape{n}}%
-\makeatother
-{\fontseries{mc}\selectfont a}
+\fontencoding{LXY}\selectfont%%% ここで \default@series などが変更される．
+zzz \textbf{bold?}
+
+\fontencoding{LXX}\selectfont
+%%% (*) に相当する設定を欠いている（\D@LXX が未定義である）ため，
+%%% ここでは \default@series は LXX 用のものに変更されない．
+zzz
+\textbf{bold?}%%% ここで，フォントの属性の代替に失敗．
 \end{document}
 ```
 
-→ このエラーが生じた場合には…
-LaTeX システム自体を構成するファイルのどれかが壊れている，
-という可能性を疑った方がよいでしょう．
+<!-- 以前挙げていた例: -->
+<!-- \documentclass{article} -->
+<!-- \begin{document} -->
+<!-- \makeatletter -->
+<!-- \@namedef{D@OT1}{% -->
+<!--   \def\default@family{cmr}% -->
+<!--   \def\default@series{mc}% -->
+<!--   \def\default@shape{n}}% -->
+<!-- \makeatother -->
+<!-- {\fontseries{mc}\selectfont a} -->
+<!-- \end{document} -->
+<!-- // 新しい例も，（結局，代替処理を行う時点での \default@series などが -->
+<!-- // おかしくなっている，という点では）前の例と本質的には同じ． -->
+
+→ このエラーが生じた場合には，とりあえず“フォントの代替”
+（デフォルトの属性の設定）に関する部分をチェックするとよいでしょう．
+特に，\DeclareFontSubstitution（あるいは \DeclareKanjiiSubstitution）
+の指定忘れには注意が必要です．
 
 #### ! Infinite tan !. {#p2599222}
 
