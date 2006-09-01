@@ -33,32 +33,38 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">1981</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
 <tr><td style="text-align:center">1982</td><td style="text-align:center">1</td><td>Spivakが数学会議(?)においてAMS-TeXを発表。</td><td></td></tr>
 <tr><td></td><td></td><td>Spivakの「TeXを楽しむ」第0版が発表される。</td><td></td></tr>
-<tr><td></td><td style="text-align:center">9</td><td>Knuthがその後のdviドライバの基礎となるdvitypeをリリース。</td><td></td></tr>
-<tr><td style="text-align:center">1983</td><td style="text-align:center">12</td><td>LamportがLaTeXのマニュアル「いちばんはやくわかるLaTeX」を執筆。</td><td></td></tr>
-<tr><td style="text-align:center">1984</td><td></td><td>TeXの仕様書とも言うべき、Knuthの「TeXbook」がAddison-Wesley社から発刊。</td><td></td></tr>
-<tr><td></td><td style="text-align:center">9</td><td>LamportがLaTeX 2.06aをリリース</td><td></td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:center">9</td><td>Knuthがその後のdviドライバの基礎となるdvitypeをリリース。</td><td></td></tr>
+<tr><td style="text-align:center">1983</td><td>12</td><td>LamportがLaTeXのマニュアル「いちばんはやくわかるLaTeX」を執筆。</td><td></td></tr>
+<tr><td style="text-align:center">1984</td><td style="text-align:center"></td><td>TeXの仕様書とも言うべき、Knuthの「TeXbook」がAddison-Wesley社から発刊。</td><td></td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">9</td><td>LamportがLaTeX 2.06aをリリース</td><td></td></tr>
 <tr><td style="text-align:center">1985</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
 <tr><td style="text-align:center">1986</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
 <tr><td style="text-align:center">1987</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
 <tr><td style="text-align:center">1988</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1989</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1990</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1991</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1992</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
+<tr><td style="text-align:center">1989</td><td>10</td><td style="text-align:center"></td><td>邦訳『TeX ブック』初版が出版される。</td></tr>
+<tr><td style="text-align:center">1990</td><td style="text-align:center"></td><td style="text-align:center"></td><td>この頃より，商用パソコン通信ホスト NIFTY-Serve の幾つかのフォーラムにおいて TeX に関する情報交換を目的とした会議室が開設される。</td></tr>
+<tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td>邦訳『文書処理システム LaTeX』が出版される。</td></tr>
+<tr><td style="text-align:center">1991</td><td>12</td><td style="text-align:center"></td><td>奥村晴彦『LaTeX 美文書作成入門』が出版される。</td></tr>
+<tr><td style="text-align:center">1992</td><td style="text-align:right">8</td><td style="text-align:center"></td><td>邦訳『改訂新版 TeXブック』が出版される。</td></tr>
 <tr><td style="text-align:center">1993</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1994</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1995</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1996</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1997</td><td style="text-align:left">9</td><td></td><td>奥村晴彦『LaTeX2e 美文書作成入門』が出版される。</td></tr>
-<tr><td style="text-align:center">1998</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">1999</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">2000</td><td style="text-align:left">11</td><td></td><td>奥村晴彦『[改訂版]LaTeX2e 美文書作成入門』が出版される。</td></tr>
+<tr><td style="text-align:center">1994</td><td>12</td><td style="text-align:center"></td><td>奥村晴彦『LaTeX 入門』が出版される。</td></tr>
+<tr><td style="text-align:center">1995</td><td>11</td><td style="text-align:center"></td><td>アスキーが pTeX バージョン2 と pLaTeX2e を公開する。</td></tr>
+<tr><td style="text-align:center">1996</td><td>11</td><td style="text-align:center"></td><td>中野賢『日本語 LaTeX2e ブック』が出版される。</td></tr>
+<tr><td style="text-align:center">1997</td><td style="text-align:right">9</td><td style="text-align:center"></td><td>奥村晴彦『LaTeX2e 美文書作成入門』が出版される。</td></tr>
+<tr><td style="text-align:center">1998</td><td style="text-align:right">8</td><td style="text-align:center"></td><td>NIFTY-Serve にて TeX フォーラム(FTEX) が開設される。</td></tr>
+<tr><td style="text-align:center">1999</td><td>10</td><td style="text-align:center"></td><td>邦訳『文書処理システム LaTeX2e』が出版される。</td></tr>
+<tr><td style="text-align:center">2000</td><td>11</td><td style="text-align:center"></td><td>奥村晴彦『[改訂版]LaTeX2e 美文書作成入門』が出版される。</td></tr>
 <tr><td style="text-align:center">2001</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
 <tr><td style="text-align:center">2002</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">2003</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr>
-<tr><td style="text-align:center">2004</td><td style="text-align:center">2</td><td></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/">『[改訂第3版]LaTeX2e美文書作成入門』</a>が出版される。</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:left">12</td><td></td><td>@nifty FDTP &amp; FTEX 公式 Web ページが閉鎖</td></tr>
-<tr><td style="text-align:center">2005</td><td style="text-align:center">2</td><td></td><td>@nifty DTPと印刷フォーラム（FDTP) が終了</td></tr>
+<tr><td style="text-align:center">2003</td><td style="text-align:right">7</td><td style="text-align:center"></td><td>@nifty TeX フォーラム(FTEX)が DTP と印刷フォーラム(FDTP) と統合される。</td></tr>
+<tr><td style="text-align:center">2004</td><td style="text-align:right">2</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/">『[改訂第3版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 </tbody></table>
 
 <!-- 上はいきなり現在ですが、とりあえず日本の列のスペースを確保するために入れました -->
+
+<table><tbody>
+<tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>@nifty FDTP &amp; FTEX 公式 Web ページが閉鎖</td></tr>
+<tr><td style="text-align:center">2005</td><td style="text-align:right">2</td><td style="text-align:center"></td><td>@nifty DTPと印刷フォーラム（FDTP) が終了</td></tr>
+</tbody></table>
+
+### コメントなど {#x6df72ef}
