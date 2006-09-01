@@ -962,6 +962,8 @@ graphicx パッケージのオプション指定を変更するか，
 
 文字通り，\usepackage を \documentclass よりも前で用いた場合に現れるエラーメッセージです．<br>
 → \usepackage を \documentclass コマンドと \begin{document} の間の部分に移動してください．
+何らかのパッケージを \documentclass より先に読み込まざるを得ない場合には，
+\RequirePackage を使えば読み込めます．
 
 #### ! LaTeX Error: Variable name ended by end of line.. {#m10ee5a0}
 
