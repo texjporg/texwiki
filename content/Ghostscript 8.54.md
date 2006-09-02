@@ -70,6 +70,11 @@ tar xvzf ..../ghostscript-fonts-std-8.11.tar.gz
 composefont pop
 ```
 
-以上でPSファイルの表示はできるようになりましたが，ps2pdfはうまく使えません。
+以上でPSファイルの表示はできるようになりました。
+ps2pdfもうまくいきます。
+
+### 参考サイト {#cb8dfaab}
+
+- [Ghostscript のインストール（Mac OS X 10.4 Tiger）](http://www.interq.or.jp/mars/cherry/mac/gs-tiger.html)
 
 ***
