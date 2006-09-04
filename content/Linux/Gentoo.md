@@ -116,3 +116,4 @@ gensyncを実行してツリーの取得します。
 - とりあえず回避策としては，/etc/portage/package.mask に >=x11-base/xorg-x11-6.9 を書いておけばよいですね．（おまけで，>=app-text/ghostscript-eps-7.07 も追加しておくとよいかもしれません．grepでebuildを調べただけですが，8.15でもcjkのパッチが当たっていないようです．もしかして，コミットされた！？） -- munepi 2006-07-07 (金) 02:44:22
 - 解決したようです．（\[[gentoojp-users:01790\]](http://ml.gentoo.gr.jp/users/200607.month/1790.html)，\[[gentoojp-users:01805\]](http://ml.gentoo.gr.jp/users/200607.month/1805.html)参照．） -- munepi 2006-07-12 (水) 01:12:59
 - 最新版 ghostscript-esp 8.15 では、emerge 中に digest-ghostscript-esp-7.07.1-r8::gs7.07.1-cjk.diff.bz2 となっているので、問題なく日本語が通ります。 -- 1155954101 2006-08-19 (土) 11:21:41
+- まだ、>=app-text/ghostscript-eps-7.07 の方が無難かもしれません。 -- 1157394119 2006-09-05 (火) 03:21:59
