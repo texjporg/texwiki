@@ -7,7 +7,7 @@ pukiwiki: "Ghostscript 8.54"
 
 # Ghostscript 8.54
 
-## GPL Ghostscript 8.54 {#xff4aa84}
+## GNU GPL Ghostscript 8.54 for UNIX or Unix-like OS {#xff4aa84}
 
 以下は空のページの代わりにとりあえず入れただけの stub です。
 書き換えてください。
@@ -99,19 +99,19 @@ sudo ln -s "/Library/Fonts/华文楷体.ttf" /usr/local/share/ghostscript/fonts/
 sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
 ```
 
-ただし，シェルでは日本語文字や中国語文字を直接扱えないようなので，以下の(1)〜(4)のいずれかの方法を使う．
+ただし，ターミナルでは日本語文字や中国語文字を直接扱えないようなので，以下の (1)&ndash;(4) のいずれかの方法を使う。
 
-(1) アプリケーションのユーティリティに含まれているターミナルを起動し，ターミナル→ウィンドウ設定で，
-「非ASCII文字をエスケープする」にチェックをいれておきます．これにより，ファイルをターミナルに
-ドラッグアンドドロップすると，そのファイルのフルパスがターミナルに入力されます．
+(1) アプリケーションのユーティリティに含まれているターミナルを起動し，ターミナル → ウィンドウ設定で，
+「非ASCII文字をエスケープする」にチェックを入れておきます。これにより，ファイルをターミナルに
+ドラッグアンドドロップすると，そのファイルのフルパスがターミナルに入力されます。
 
 ```
  sudo ln -s ここでヒラギノ明朝 Pro W3.otfをドラッグアンドドロップ /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
 ```
 
-これを上記の全てのフォントについて行う．
+これを上記の全てのフォントについて行う。
 
-(2) 上記の内容のシェルスクリプトを作って実行する．
+(2) 上記の内容のシェルスクリプトを作って実行する。
 
 (3)
 
@@ -124,7 +124,7 @@ sudo ln -s "$(grep -l HiraMaruPro-W4 /System/Library/Fonts/*.otf)" /usr/local/sh
 sudo ln -s "$(grep -l HiraKakuStd-W8 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
 ```
 
-のように grep を使う．
+のように grep を使う。
 
 (4)
 
@@ -154,17 +154,17 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 /HeiseiKakuGo-W5      /GothicBBB-Medium ;
 /STSong-Light         /LiSongPro-Light  ;
 /STHeiti-Regular      /LiHeiPro-Medium  ;
-/MSung-Light          /LiSongPro-Light  ;
-/MHei-Medium          /LiHeiPro-Medium  ;
+/MSung-Light          << /FileType /TrueType   /CSI [(CNS1) 5]   /Path (TrueType/LiSongPro.ttf)  >> ;
+/MHei-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]   /Path (TrueType/LiHeiPro.ttf)   >> ;
 
 %%% TrueType fonts in Mac OS X 10.4 %%%
-/LiSongPro-Light      << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/LiSongPro.ttf)  >> ;
-/LiHeiPro-Medium      << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/LiHeiPro.ttf)   >> ;
-/STSong-Regular       << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/STSong.ttf)     >> ;
-%/STHeiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/STHeiti.ttf)    >> ;
-/STHeiti-Light        << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/STXihei.ttf)    >> ;
-/STKaiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/STKaiti.ttf)    >> ;
-/STFangsong-Regular   << /FileType /TrueType   /CSI [(GB1) 5]   /Path (TrueType/STFangsong.ttf) >> ;
+/LiSongPro-Light      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/LiSongPro.ttf)  >> ;
+/LiHeiPro-Medium      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/LiHeiPro.ttf)   >> ;
+/STSong-Regular       << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STSong.ttf)     >> ;
+%/STHeiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STHeiti.ttf)    >> ;
+/STHeiti-Light        << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STXihei.ttf)    >> ;
+/STKaiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STKaiti.ttf)    >> ;
+/STFangsong-Regular   << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STFangsong.ttf) >> ;
 
 %%% OpenType fonts in Adobe Reader 7.0 %%%
 %/Ryumin-Light         /KozMinProVI-Regular    ;
@@ -186,7 +186,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 
 中国語簡体字 TrueType フォントの PostScript 名が合っているか不明。
 
-## GPL Ghostscript 8.54 for Windows {#w33eec77}
+## GNU GPL Ghostscript 8.54 for Windows {#w33eec77}
 
 以下，取り敢えずメモ書き。編集意欲のある方は是非代わりに編集して下さい。
 
@@ -194,7 +194,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 
 [Ring Server](http://www.ring.gr.jp/) からインストールプログラムを入手する。
 
-- [GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
+- [GNU GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
 - [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
 - GSview 4.8: [http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/) の中の gsv48w32.exe
 
@@ -205,7 +205,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 - setupgs.exe を実行する。
     - デフォルトのインストール先は “C:\gs”
     - UNIX 系 OS での Ghostscript のディレクトリ構造 (/usr/share/ghostscript) に似せたいのならば，
-        インストール先を決める項目である Install to directory の欄を “C:\gs” から “C:\usr\local\share\gs” に変える。
+        インストール先を決める項目である Install to directory の欄の内容を “C:\gs” から “C:\usr\local\share\gs” に変える。
 
 - \[Use Windows TrueType fonts for Chinese, Japanese and Korean\] にチェックを入れる。
 
