@@ -234,7 +234,9 @@ gs\gs8.54\Resource\CMap\ に入っている。主なものを挙げる。
 - UniJIS-UTF16-H
 - UniJIS-UTF16-V
 - Adobe-Japan1-6
-- [Adobe-Japan1-5-V](http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz) （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。）
+    <!-- -[[Adobe-Japan1-5-V:http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz]] （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。） -->
+    <!-- Adobe-Japan1-5-Vは不要です．Identity-Vを使って下さい．(uchiyama) -->
+
 - Identity-H
 - Identity-V
 - UniGB-UTF16-H
