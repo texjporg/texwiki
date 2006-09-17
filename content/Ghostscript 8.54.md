@@ -203,7 +203,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 %/HYGoThic-Medium      /HYGoThic-Medium-Acro    ;
 ```
 
-中国語簡体字 TrueType フォントの PostScript 名が合っているか不明。
+中国語 TrueType フォントの PostScript 名が合っているか不明。
 
 ## GNU GPL Ghostscript 8.54 for Windows {#w33eec77}
 
@@ -272,7 +272,7 @@ gs\gs8.54\Resource\CMap\ に入っている。主なものを挙げる。
 
 上記の CMap は $TEXMFLOCAL/fonts/cmap/ にもコピーしておくとよい。
 
-### CID fonts {#i4c98952}
+### CID-keyed fonts {#i4c98952}
 
 CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 
