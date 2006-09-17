@@ -27,10 +27,10 @@ pukiwiki: "Ghostscript 8.54"
 以下にインストールしてみます。
 
 ```
-cd /usr/local/src
-tar xvjf ...../ghostscript-8.54-gpl.tar.bz2
-cd ghostscript-8.54-gpl
-./configure --prefix=/usr/local/teTeX
+$ cd /usr/local/src
+$ tar xvjf ...../ghostscript-8.54-gpl.tar.bz2
+$ cd ghostscript-8.54-gpl
+$ ./configure --prefix=/usr/local/teTeX
 ```
 
 これで make，make install
@@ -47,8 +47,8 @@ cd ghostscript-8.54-gpl
 欧文フォントをインストールします：
 
 ```
-cd /usr/local/teTeX/share/ghostscript
-tar xvzf ..../ghostscript-fonts-std-8.11.tar.gz 
+$ cd /usr/local/teTeX/share/ghostscript
+$ tar xvzf ..../ghostscript-fonts-std-8.11.tar.gz 
 ```
 
 和文については，[Ghostscript 7.07](</Ghostscript 7.07/>) では CIDFnmap で設定しましたが，8 シリーズでは cidfmap
@@ -84,19 +84,19 @@ ps2pdfもうまくいきます。
 ### フォントのシンボリックリンク {#j6c4153b}
 
 ```
-sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W3.otf" /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
-sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W6.otf" /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
-sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W3.otf" /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
-sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W6.otf" /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
-sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Std W8.otf" /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
-sudo ln -s "/System/Library/Fonts/ヒラギノ丸ゴ Pro W4.otf" /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
-sudo ln -s "/System/Library/Fonts/儷黑 Pro.ttf" /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
-sudo ln -s "/System/Library/Fonts/华文黑体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
-sudo ln -s "/System/Library/Fonts/华文细黑.ttf" /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
-sudo ln -s "/Library/Fonts/儷宋 Pro.ttf" /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
-sudo ln -s "/Library/Fonts/华文宋体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
-sudo ln -s "/Library/Fonts/华文楷体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
-sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W3.otf" /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W6.otf" /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W3.otf" /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W6.otf" /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Std W8.otf" /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ丸ゴ Pro W4.otf" /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
+$ sudo ln -s "/System/Library/Fonts/华文黑体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
+$ sudo ln -s "/System/Library/Fonts/华文细黑.ttf" /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
+$ sudo ln -s "/System/Library/Fonts/儷黑 Pro.ttf" /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
+$ sudo ln -s "/Library/Fonts/华文宋体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
+$ sudo ln -s "/Library/Fonts/华文楷体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
+$ sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
+$ sudo ln -s "/Library/Fonts/儷宋 Pro.ttf" /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
 ```
 
 ただし，ターミナルでは日本語文字や中国語文字を直接扱えないようなので，以下の (1)&ndash;(4) のいずれかの方法を使う。
@@ -106,7 +106,7 @@ sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/
 ドラッグアンドドロップすると，そのファイルのフルパスがターミナルに入力されます。
 
 ```
- sudo ln -s ここでヒラギノ明朝 Pro W3.otfをドラッグアンドドロップ /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
+$ sudo ln -s ここでヒラギノ明朝 Pro W3.otfをドラッグアンドドロップ /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
 ```
 
 これを上記の全てのフォントについて行う。
@@ -116,12 +116,12 @@ sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/
 (3)
 
 ```
-sudo ln -s "$(grep -l HiraMinPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
-sudo ln -s "$(grep -l HiraMinPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
-sudo ln -s "$(grep -l HiraKakuPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
-sudo ln -s "$(grep -l HiraKakuPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
-sudo ln -s "$(grep -l HiraMaruPro-W4 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
-sudo ln -s "$(grep -l HiraKakuStd-W8 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
+$ sudo ln -s "$(grep -l HiraMinPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
+$ sudo ln -s "$(grep -l HiraMinPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
+$ sudo ln -s "$(grep -l HiraKakuPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
+$ sudo ln -s "$(grep -l HiraKakuPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
+$ sudo ln -s "$(grep -l HiraMaruPro-W4 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
+$ sudo ln -s "$(grep -l HiraKakuStd-W8 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
 ```
 
 のように grep を使う。
@@ -129,12 +129,12 @@ sudo ln -s "$(grep -l HiraKakuStd-W8 /System/Library/Fonts/*.otf)" /usr/local/sh
 (4)
 
 ```
-sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
-sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
-sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
-sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
-sudo ln -s /System/Library/Fonts/????????????????????????\ Std\ W8.otf /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
-sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W4.otf /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
+$ sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/fonts/HiraMinPro-W3.otf
+$ sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/fonts/HiraMinPro-W6.otf
+$ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/fonts/HiraKakuPro-W3.otf
+$ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/fonts/HiraKakuPro-W6.otf
+$ sudo ln -s /System/Library/Fonts/????????????????????????\ Std\ W8.otf /usr/local/share/ghostscript/fonts/HiraKakuStd-W8.otf
+$ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W4.otf /usr/local/share/ghostscript/fonts/HiraMaruPro-W4.otf
 ```
 
 のようにワイルドカード “?” を使う。
@@ -144,7 +144,9 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 ### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 {#h0f0fbe0}
 
 ```
+%%% Aliases %%%
 /Ryumin-Light         /HiraMinPro-W3    ;
+/Ryumin-Medium        /HiraMinPro-W3    ;
 /GothicBBB-Medium     /HiraKakuPro-W3   ;
 /FutoMinA101-Bold     /HiraMinPro-W6    ;
 /FutoGoB101-Bold      /HiraKakuPro-W6   ;
@@ -152,29 +154,46 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 /MidashiGo-MB31       /HiraKakuStd-W8   ;
 /HeiseiMin-W3         /Ryumin-Light     ;
 /HeiseiKakuGo-W5      /GothicBBB-Medium ;
-/STSong-Light         /LiSongPro-Light  ;
-/STHeiti-Regular      /LiHeiPro-Medium  ;
-/MSung-Light          << /FileType /TrueType   /CSI [(CNS1) 5]   /Path (TrueType/LiSongPro.ttf)  >> ;
-/MHei-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]   /Path (TrueType/LiHeiPro.ttf)   >> ;
+/STSong-Light         /STSong           ;
+/STSong-Regular       /STSong           ;
+/STHeiti-Regular      /STHeiti          ;
+/STHeiti-Light        /STXihei          ;
+/STKaiti-Regular      /STKaiti          ;
+/STFangsong-Regular   /STFangsong       ;
+/STFangsong-Light     /STFangsong       ;
+/MSung-Light          /LiSongPro        ;
+/MSung-Medium         /LiSongPro        ;
+/MHei-Medium          /LiHeiPro         ;
+/MKai-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/STKaiti.ttf)         >> ;
+/HYSMyeongJo-Medium   /Batang           ;
+/HYGoThic-Medium      /Gulim            ;
+/HYRGoThic-Medium     /Gulim            ;
 
-%%% TrueType fonts in Mac OS X 10.4 %%%
-/LiSongPro-Light      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/LiSongPro.ttf)  >> ;
-/LiHeiPro-Medium      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/LiHeiPro.ttf)   >> ;
-/STSong-Regular       << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STSong.ttf)     >> ;
-%/STHeiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STHeiti.ttf)    >> ;
-/STHeiti-Light        << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STXihei.ttf)    >> ;
-/STKaiti-Regular      << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STKaiti.ttf)    >> ;
-/STFangsong-Regular   << /FileType /TrueType   /CSI [(GB1) 5]    /Path (TrueType/STFangsong.ttf) >> ;
+%%% TrueType fonts in Mac OS X %%%
+/STSong               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STSong.ttf)          >> ;
+/STHeiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STHeiti.ttf)         >> ;
+/STXihei              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STXihei.ttf)         >> ;
+/STKaiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STKaiti.ttf)         >> ;
+/STFangsong           << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STFangsong.ttf)      >> ;
+/LiSongPro            << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiSongPro.ttf)       >> ;
+/LiHeiPro             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiHeiPro.ttf)        >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0 %%%
+%%% TrueType fonts in Microsoft Office 2004 for Mac %%%
+/Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Batang.ttf)   >> ;
+/Gulim                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Gulim.ttf)    >> ;
+/SimSun               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (~/Library/Fonts/SimSun.ttf)   >> ;
+/PMingLiU             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (~/Library/Fonts/PMingLiU.ttf) >> ;
+
+%%% OpenType fonts in Adobe Reader 7.0                                  %%%
+%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html %%%
 %/Ryumin-Light         /KozMinProVI-Regular    ;
 %/GothicBBB-Medium     /KozGoPro-Medium        ;
 %/STSong-Light         /AdobeSongStd-Light     ;
 %/MSung-Light          /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium   /AdobeMyungjoStd-Medium ;
 
-%%% CID fonts in Acrobat Reader 4.0                           %%%
-%%% cf. ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
+%%% CID-keyed fonts in Acrobat Reader 4.0                     %%%
+%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
 %/Ryumin-Light         /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium     /HeiseiKakuGo-W5-Acro    ;
 %/STSong-Light         /STSong-Light-Acro       ;
@@ -196,7 +215,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 
 - [GNU GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
 - [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
-- GSview 4.8: [http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/) の中の gsv48w32.exe
+- GSview 4.8: [http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/) の中の [gsv48w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv48w32.exe)
 
 ### インストール {#a4d9c6ea}
 
@@ -285,7 +304,9 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 ### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
 
 ```
+%%% Aliases %%%
 /Ryumin-Light         /MS-Mincho          ;
+/Ryumin-Medium        /MS-Mincho          ;
 /GothicBBB-Medium     /MS-Gothic          ;
 /FutoMinA101-Bold     /HGMinchoB          ;
 /FutoGoB101-Bold      /HGGothicE          ;
@@ -295,23 +316,43 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 /HeiseiMin-W3         /Ryumin-Light       ;
 /HeiseiKakuGo-W5      /GothicBBB-Medium   ;
 /STSong-Light         /NSimSun            ;
+/STSong-Regular       /NSimSun            ;
 /STHeiti-Regular      /SimHei             ;
+/STHeiti-Light        /SimHei             ;
+/STKaiti-Regular      /NSimSun            ;
+/STFangsong-Regular   /NSimSun            ;
+/STFangsong-Light     /NSimSun            ;
 /MSung-Light          /MingLiU            ;
+/MSung-Medium         /MingLiU            ;
 /MHei-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
+/MKai-Medium          /MingLiU            ;
 /HYSMyeongJo-Medium   /BatangChe          ;
 /HYGoThic-Medium      /DotumChe           ;
+/HYRGoThic-Medium     /GulimChe           ;
 
-%%% TrueType fonts in Windows XP %%%
-%%% cf. C:\WINDOWS\Fonts\        %%%
+%%% monospaced TrueType fonts in Windows XP %%%
+%%% See C:\WINDOWS\Fonts\                   %%%
 /MS-Mincho            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 0 >> ;
 /MS-Gothic            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 0 >> ;
 /NSimSun              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 1 >> ;
-/SimHei               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
 /MingLiU              << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliu.ttc)    /SubfontID 0 >> ;
 /BatangChe            << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 1 >> ;
 /DotumChe             << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 3 >> ;
 /GulimChe             << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 1 >> ;
 /GungsuhChe           << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 3 >> ;
+
+%%% proportional TrueType fonts in Windows XP %%%
+%%% See C:\WINDOWS\Fonts\                     %%%
+/MS-PMincho           << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 1 >> ;
+/MS-PGothic           << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 1 >> ;
+/MS-UI-Gothic         << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 2 >> ;
+/SimSun               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 0 >> ;
+/SimHei               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
+/PMingLiU             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliu.ttc)    /SubfontID 1 >> ;
+/Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 0 >> ;
+/Dotum                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 2 >> ;
+/Gulim                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 0 >> ;
+/Gungsuh              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 2 >> ;
 
 %%% TrueType fonts in Microsoft Office Professional Edition 2003 %%%
 /HGMinchoB            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRMB.TTC)      /SubfontID 0 >> ;
@@ -320,16 +361,17 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 /HGSoeiKakugothicUB   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSGU.TTC)     /SubfontID 0 >> ;
 /HGMaruGothicMPRO     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSMP.TTF)                  >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0                       %%%
-%%% cf. C:\Program Files\Adobe\Acrobat 7.0\Resource\CIDFont\ %%%
+%%% OpenType fonts in Adobe Reader 7.0                                  %%%
+%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html %%%
+%%%     C:\Program Files\Adobe\Acrobat 7.0\Resource\CIDFont\            %%%
 %/Ryumin-Light         /KozMinProVI-Regular    ;
 %/GothicBBB-Medium     /KozGoPro-Medium        ;
 %/STSong-Light         /AdobeSongStd-Light     ;
 %/MSung-Light          /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium   /AdobeMyungjoStd-Medium ;
 
-%%% CID fonts in Acrobat Reader 4.0                           %%%
-%%% cf. ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
+%%% CID-keyed fonts in Acrobat Reader 4.0                     %%%
+%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
 %/Ryumin-Light         /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium     /HeiseiKakuGo-W5-Acro    ;
 %/STSong-Light         /STSong-Light-Acro       ;
@@ -339,12 +381,12 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 %/HYGoThic-Medium      /HYGoThic-Medium-Acro    ;
 
 %%% Hiragino TrueType fonts %%%
-%/HiraMinPro-W2        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirmn2.ttc)   /SubfontID 1 >> ;
-%/HiraMinPro-W3        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirmn3.ttc)   /SubfontID 1 >> ;
-%/HiraMinPro-W6        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirmn6.ttc)   /SubfontID 1 >> ;
-%/HiraKakuPro-W3       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirkg3.ttc)   /SubfontID 1 >> ;
-%/HiraKakuPro-W6       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirkg6.ttc)   /SubfontID 1 >> ;
-%/HiraKakuStd-W8       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/usr/local/share/gs/fonts/TrueType/DShirkg8.ttc)   /SubfontID 1 >> ;
+%/HiraMinPro-W2        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn2.ttc)           /SubfontID 1 >> ;
+%/HiraMinPro-W3        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn3.ttc)           /SubfontID 1 >> ;
+%/HiraMinPro-W6        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn6.ttc)           /SubfontID 1 >> ;
+%/HiraKakuPro-W3       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg3.ttc)           /SubfontID 1 >> ;
+%/HiraKakuPro-W6       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg6.ttc)           /SubfontID 1 >> ;
+%/HiraKakuStd-W8       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg8.ttc)           /SubfontID 1 >> ;
 ```
 
 ***
