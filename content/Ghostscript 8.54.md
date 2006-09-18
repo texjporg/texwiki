@@ -144,56 +144,60 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 ### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 {#h0f0fbe0}
 
 ```
-%%% Aliases %%%
-/Ryumin-Light         /HiraMinPro-W3    ;
-/Ryumin-Medium        /HiraMinPro-W3    ;
-/GothicBBB-Medium     /HiraKakuPro-W3   ;
-/FutoMinA101-Bold     /HiraMinPro-W6    ;
-/FutoGoB101-Bold      /HiraKakuPro-W6   ;
-/Jun101-Light         /HiraMaruPro-W4   ;
-/MidashiGo-MB31       /HiraKakuStd-W8   ;
-/HeiseiMin-W3         /Ryumin-Light     ;
-/HeiseiKakuGo-W5      /GothicBBB-Medium ;
-/STSong-Light         /STSong           ;
-/STSong-Regular       /STSong           ;
-/STHeiti-Regular      /STHeiti          ;
-/STHeiti-Light        /STXihei          ;
-/STKaiti-Regular      /STKaiti          ;
-/STFangsong-Regular   /STFangsong       ;
-/STFangsong-Light     /STFangsong       ;
-/MSung-Light          /LiSongPro        ;
-/MSung-Medium         /LiSongPro        ;
-/MHei-Medium          /LiHeiPro         ;
-/MKai-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/STKaiti.ttf)         >> ;
-/HYSMyeongJo-Medium   /Batang           ;
-/HYGoThic-Medium      /Gulim            ;
-/HYRGoThic-Medium     /Gulim            ;
+%%% aliases
+/Ryumin-Light         /HiraMinPro-W3      ;
+/Ryumin-Medium        /HiraMinPro-W3      ;
+/GothicBBB-Medium     /HiraKakuPro-W3     ;
+/FutoMinA101-Bold     /HiraMinPro-W6      ;
+/FutoGoB101-Bold      /HiraKakuPro-W6     ;
+/Jun101-Light         /HiraMaruPro-W4     ;
+/MidashiGo-MB31       /HiraKakuStd-W8     ;
+/HeiseiMin-W3         /Ryumin-Light       ;
+/HeiseiKakuGo-W5      /GothicBBB-Medium   ;
+/STSong-Light         /STSong             ;
+/STSong-Regular       /STSong             ;
+/STHeiti-Regular      /STHeiti            ;
+/STHeiti-Light        /STXihei            ;
+/STKaiti-Regular      /STKaiti            ;
+/STFangsong-Regular   /STFangsong         ;
+/STFangsong-Light     /STFangsong         ;
+/MSung-Light          /LiSongPro          ;
+/MSung-Medium         /LiSongPro          ;
+/MHei-Medium          /LiHeiPro           ;
+/MKai-Medium          /STKaiti-Adobe-CNS1 ;
+/HYSMyeongJo-Medium   /Batang             ;
+/HYGoThic-Medium      /Baekmuk-Dotum      ;
+/HYKHeadLine-Bold     /Baekmuk-Headline   ;
+/HYKHeadLine-Medium   /Baekmuk-Headline   ;
+/HYRGoThic-Medium     /Gulim              ;
+%/HYGungSo-Bold        /                   ;
 
-%%% TrueType fonts in Mac OS X %%%
-/STSong               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STSong.ttf)          >> ;
-/STHeiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STHeiti.ttf)         >> ;
-/STXihei              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STXihei.ttf)         >> ;
-/STKaiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STKaiti.ttf)         >> ;
-/STFangsong           << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STFangsong.ttf)      >> ;
-/LiSongPro            << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiSongPro.ttf)       >> ;
-/LiHeiPro             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiHeiPro.ttf)        >> ;
+%%% TrueType fonts in Mac OS X
+/STSong               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STSong.ttf)     >> ;
+/STHeiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STHeiti.ttf)    >> ;
+/STXihei              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STXihei.ttf)    >> ;
+/STKaiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STKaiti.ttf)    >> ;
+/STKaiti-Adobe-CNS1   << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/STKaiti.ttf)    >> ;
+/STFangsong           << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STFangsong.ttf) >> ;
+/LiSongPro            << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiSongPro.ttf)  >> ;
+/LiHeiPro             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiHeiPro.ttf)   >> ;
 
-%%% TrueType fonts in Microsoft Office 2004 for Mac %%%
-/Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Batang.ttf)   >> ;
-/Gulim                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Gulim.ttf)    >> ;
+%%% TrueType fonts in Microsoft Office 2004 for Mac
 /SimSun               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (~/Library/Fonts/SimSun.ttf)   >> ;
 /PMingLiU             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (~/Library/Fonts/PMingLiU.ttf) >> ;
+/Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Batang.ttf)   >> ;
+/Gulim                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Gulim.ttf)    >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0                                  %%%
-%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html %%%
+%%% OpenType fonts in Adobe Reader 7.0
+%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
 %/Ryumin-Light         /KozMinProVI-Regular    ;
 %/GothicBBB-Medium     /KozGoPro-Medium        ;
 %/STSong-Light         /AdobeSongStd-Light     ;
 %/MSung-Light          /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium   /AdobeMyungjoStd-Medium ;
 
-%%% CID-keyed fonts in Acrobat Reader 4.0                     %%%
-%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
+%%% CID-keyed fonts in Acrobat Reader 4.0
+%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 %/Ryumin-Light         /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium     /HeiseiKakuGo-W5-Acro    ;
 %/STSong-Light         /STSong-Light-Acro       ;
@@ -201,6 +205,20 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 %/MHei-Medium          /MHei-Medium-Acro        ;
 %/HYSMyeongJo-Medium   /HYSMyeongJo-Medium-Acro ;
 %/HYGoThic-Medium      /HYGoThic-Medium-Acro    ;
+
+%%% Arphic TrueType fonts
+%%% See http://www.ring.gr.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
+/BousungEG-Light-GB   << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/gbsn00lp.ttf) >> ;
+/GBZenKai-Medium      << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/gkai00mp.ttf) >> ;
+/ShanHeiSun-Light     << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/bsmi00lp.ttf) >> ;
+/ZenKai-Medium        << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/bkai00mp.ttf) >> ;
+
+%%% Baekmuk TrueType fonts
+%%% See http://kldp.net/projects/baekmuk/
+/Baekmuk-Batang       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/batang.ttf) >> ;
+/Baekmuk-Dotum        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/dotum.ttf)  >> ;
+/Baekmuk-Headline     << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/hline.ttf)  >> ;
+/Baekmuk-Gulim        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/gulim.ttf)  >> ;
 ```
 
 中国語 TrueType フォントの PostScript 名が合っているか不明。
@@ -274,7 +292,7 @@ gs\gs8.54\Resource\CMap\ に入っている。主なものを挙げる。
 
 ### CID-keyed fonts {#i4c98952}
 
-CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
+CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーまたは移動しておく。
 
 ### gs\gs8.54\lib\cidfmap の記述方法 {#e2200e36}
 
@@ -304,7 +322,7 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 ### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
 
 ```
-%%% Aliases %%%
+%%% aliases
 /Ryumin-Light         /MS-Mincho          ;
 /Ryumin-Medium        /MS-Mincho          ;
 /GothicBBB-Medium     /MS-Gothic          ;
@@ -319,19 +337,22 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 /STSong-Regular       /NSimSun            ;
 /STHeiti-Regular      /SimHei             ;
 /STHeiti-Light        /SimHei             ;
-/STKaiti-Regular      /NSimSun            ;
+/STKaiti-Regular      /GBZenKai-Medium    ;
 /STFangsong-Regular   /NSimSun            ;
 /STFangsong-Light     /NSimSun            ;
 /MSung-Light          /MingLiU            ;
 /MSung-Medium         /MingLiU            ;
-/MHei-Medium          << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
-/MKai-Medium          /MingLiU            ;
+/MHei-Medium          /SimHei-Adobe-CNS1  ;
+/MKai-Medium          /ZenKai-Medium      ;
 /HYSMyeongJo-Medium   /BatangChe          ;
 /HYGoThic-Medium      /DotumChe           ;
+/HYKHeadLine-Bold     /Baekmuk-Headline   ;
+/HYKHeadLine-Medium   /Baekmuk-Headline   ;
 /HYRGoThic-Medium     /GulimChe           ;
+/HYGungSo-Bold        /GungsuhChe         ;
 
-%%% monospaced TrueType fonts in Windows XP %%%
-%%% See C:\WINDOWS\Fonts\                   %%%
+%%% monospaced TrueType fonts in Windows XP
+%%% See C:\WINDOWS\Fonts\
 /MS-Mincho            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 0 >> ;
 /MS-Gothic            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 0 >> ;
 /NSimSun              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 1 >> ;
@@ -341,37 +362,38 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 /GulimChe             << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 1 >> ;
 /GungsuhChe           << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 3 >> ;
 
-%%% proportional TrueType fonts in Windows XP %%%
-%%% See C:\WINDOWS\Fonts\                     %%%
+%%% proportional TrueType fonts in Windows XP
+%%% See C:\WINDOWS\Fonts\
 /MS-PMincho           << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 1 >> ;
 /MS-PGothic           << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 1 >> ;
 /MS-UI-Gothic         << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 2 >> ;
 /SimSun               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 0 >> ;
 /SimHei               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
+/SimHei-Adobe-CNS1    << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
 /PMingLiU             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliu.ttc)    /SubfontID 1 >> ;
 /Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 0 >> ;
 /Dotum                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 2 >> ;
 /Gulim                << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 0 >> ;
 /Gungsuh              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 2 >> ;
 
-%%% TrueType fonts in Microsoft Office Professional Edition 2003 %%%
+%%% TrueType fonts in Microsoft Office Professional Edition 2003
 /HGMinchoB            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRMB.TTC)      /SubfontID 0 >> ;
 /HGMinchoE            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRME.TTC)      /SubfontID 0 >> ;
 /HGGothicE            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRGE.TTC)      /SubfontID 0 >> ;
 /HGSoeiKakugothicUB   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSGU.TTC)     /SubfontID 0 >> ;
 /HGMaruGothicMPRO     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSMP.TTF)                  >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0                                  %%%
+%%% OpenType fonts in Adobe Reader 7.0
 %%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html %%%
-%%%     C:\Program Files\Adobe\Acrobat 7.0\Resource\CIDFont\            %%%
+%%%     C:\Program Files\Adobe\Acrobat 7.0\Resource\CIDFont\
 %/Ryumin-Light         /KozMinProVI-Regular    ;
 %/GothicBBB-Medium     /KozGoPro-Medium        ;
 %/STSong-Light         /AdobeSongStd-Light     ;
 %/MSung-Light          /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium   /AdobeMyungjoStd-Medium ;
 
-%%% CID-keyed fonts in Acrobat Reader 4.0                     %%%
-%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/ %%%
+%%% CID-keyed fonts in Acrobat Reader 4.0
+%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 %/Ryumin-Light         /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium     /HeiseiKakuGo-W5-Acro    ;
 %/STSong-Light         /STSong-Light-Acro       ;
@@ -380,13 +402,27 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーしておく。
 %/HYSMyeongJo-Medium   /HYSMyeongJo-Medium-Acro ;
 %/HYGoThic-Medium      /HYGoThic-Medium-Acro    ;
 
-%%% Hiragino TrueType fonts %%%
-%/HiraMinPro-W2        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn2.ttc)           /SubfontID 1 >> ;
-%/HiraMinPro-W3        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn3.ttc)           /SubfontID 1 >> ;
-%/HiraMinPro-W6        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn6.ttc)           /SubfontID 1 >> ;
-%/HiraKakuPro-W3       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg3.ttc)           /SubfontID 1 >> ;
-%/HiraKakuPro-W6       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg6.ttc)           /SubfontID 1 >> ;
-%/HiraKakuStd-W8       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg8.ttc)           /SubfontID 1 >> ;
+%%% Arphic TrueType fonts
+%%% See http://www.ring.gr.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
+/BousungEG-Light-GB   << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/gbsn00lp.ttf) >> ;
+/GBZenKai-Medium      << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/gkai00mp.ttf) >> ;
+/ShanHeiSun-Light     << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/bsmi00lp.ttf) >> ;
+/ZenKai-Medium        << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/bkai00mp.ttf) >> ;
+
+%%% Baekmuk TrueType fonts
+%%% See http://kldp.net/projects/baekmuk/
+/Baekmuk-Batang       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/batang.ttf) >> ;
+/Baekmuk-Dotum        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/dotum.ttf)  >> ;
+/Baekmuk-Headline     << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/hline.ttf)  >> ;
+/Baekmuk-Gulim        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/gulim.ttf)  >> ;
+
+%%% Hiragino TrueType fonts
+%/HiraMinPro-W2        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn2.ttc)   /SubfontID 1 >> ;
+%/HiraMinPro-W3        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn3.ttc)   /SubfontID 1 >> ;
+%/HiraMinPro-W6        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn6.ttc)   /SubfontID 1 >> ;
+%/HiraKakuPro-W3       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg3.ttc)   /SubfontID 1 >> ;
+%/HiraKakuPro-W6       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg6.ttc)   /SubfontID 1 >> ;
+%/HiraKakuStd-W8       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg8.ttc)   /SubfontID 1 >> ;
 ```
 
 ***
