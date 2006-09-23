@@ -7,6 +7,8 @@ pukiwiki: "Ghostscript 8.54"
 
 # Ghostscript 8.54
 
+<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
+
 ## GNU GPL Ghostscript 8.54 for UNIX or Unix-like OS {#xff4aa84}
 
 以下は空のページの代わりにとりあえず入れただけの stub です。
@@ -141,17 +143,18 @@ $ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W4.otf /usr/lo
 
 $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボリックリンクを作っておくとよい。
 
-### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 {#h0f0fbe0}
+### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 <a id="cidfmap-MacOSX"></a> {#h0f0fbe0}
 
 ```
 %%% aliases
 /Ryumin-Light         /HiraMinPro-W3      ;
 /Ryumin-Medium        /HiraMinPro-W3      ;
-/GothicBBB-Medium     /HiraKakuPro-W3     ;
 /FutoMinA101-Bold     /HiraMinPro-W6      ;
+/MidashiMin-MA31      /HiraMinPro-W6      ;
+/GothicBBB-Medium     /HiraKakuPro-W3     ;
 /FutoGoB101-Bold      /HiraKakuPro-W6     ;
-/Jun101-Light         /HiraMaruPro-W4     ;
 /MidashiGo-MB31       /HiraKakuStd-W8     ;
+/Jun101-Light         /HiraMaruPro-W4     ;
 /HeiseiMin-W3         /Ryumin-Light       ;
 /HeiseiKakuGo-W5      /GothicBBB-Medium   ;
 /STSong-Light         /STSong             ;
@@ -170,9 +173,11 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 /HYKHeadLine-Bold     /Baekmuk-Headline   ;
 /HYKHeadLine-Medium   /Baekmuk-Headline   ;
 /HYRGoThic-Medium     /Gulim              ;
-%/HYGungSo-Bold        /                   ;
+/HYGungSo-Bold        /UnGungseo          ;
 
 %%% TrueType fonts in Mac OS X
+%%% See /System/Library/Fonts/
+%%%     /Library/Fonts/
 /STSong               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STSong.ttf)     >> ;
 /STHeiti              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STHeiti.ttf)    >> ;
 /STXihei              << /FileType /TrueType   /CSI [(GB1) 5]      /Path (TrueType/STXihei.ttf)    >> ;
@@ -183,6 +188,7 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 /LiHeiPro             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (TrueType/LiHeiPro.ttf)   >> ;
 
 %%% TrueType fonts in Microsoft Office 2004 for Mac
+%%% See ~/Library/Fonts/
 /SimSun               << /FileType /TrueType   /CSI [(GB1) 5]      /Path (~/Library/Fonts/SimSun.ttf)   >> ;
 /PMingLiU             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (~/Library/Fonts/PMingLiU.ttf) >> ;
 /Batang               << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (~/Library/Fonts/Batang.ttf)   >> ;
@@ -219,9 +225,19 @@ $TEXMFLOCAL/fonts/opentype/ や $TEXMFLOCAL/fonts/truetype/ からもシンボ�
 /Baekmuk-Dotum        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/dotum.ttf)  >> ;
 /Baekmuk-Headline     << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/hline.ttf)  >> ;
 /Baekmuk-Gulim        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/gulim.ttf)  >> ;
-```
 
-中国語 TrueType フォントの PostScript 名が合っているか不明。
+%%% Un-fonts
+%%% See http://kldp.net/projects/unfonts/
+/UnBatang             << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnBatang.ttf)      >> ;
+/UnBatang-Bold        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnBatangBold.ttf)  >> ;
+/UnDotum              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnDotum.ttf)       >> ;
+/UnDotum-Bold         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnDotumBold.ttf)   >> ;
+/UnGraphic            << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGraphic.ttf)     >> ;
+/UnGraphic-Bold       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGraphicBold.ttf) >> ;
+/UnGungseo            << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGungseo.ttf)     >> ;
+/UnPilgi              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnPilgi.ttf)       >> ;
+/UnPilgi-Bold         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnPilgiBold.ttf)   >> ;
+```
 
 ## GNU GPL Ghostscript 8.54 for Windows {#w33eec77}
 
@@ -270,23 +286,23 @@ gs\gs8.54\Resource\CMap\ に入っている。主なものを挙げる。
 - V
 - UniJIS-UTF16-H
 - UniJIS-UTF16-V
+- UniGB-UTF16-H
+- UniGB-UTF16-V
+- UniCNS-UTF16-H
+- UniCNS-UTF16-V
+- UniKS-UTF16-H
+- UniKS-UTF16-V
 - Adobe-Japan1-6
     <!-- -[[Adobe-Japan1-5-V:http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz]] （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。） -->
     <!-- Adobe-Japan1-5-Vは不要です．Identity-Vを使って下さい．(uchiyama) -->
 
-- Identity-H
-- Identity-V
-- UniGB-UTF16-H
-- UniGB-UTF16-V
 - Adobe-GB1-4
 - Adobe-GB1-5
-- UniCNS-UTF16-H
-- UniCNS-UTF16-V
 - Adobe-CNS1-4
 - Adobe-CNS1-5
-- UniKS-UTF16-H
-- UniKS-UTF16-V
 - Adobe-Korea1-2
+- Identity-H
+- Identity-V
 
 上記の CMap は $TEXMFLOCAL/fonts/cmap/ にもコピーしておくとよい。
 
@@ -319,18 +335,18 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーまたは移動し�
 >> ;
 ```
 
-### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
+### gs\gs8.54\lib\cidfmap の記述例 <a id="cidfmap-Windows"></a> {#m115a63f}
 
 ```
 %%% aliases
 /Ryumin-Light         /MS-Mincho          ;
 /Ryumin-Medium        /MS-Mincho          ;
-/GothicBBB-Medium     /MS-Gothic          ;
 /FutoMinA101-Bold     /HGMinchoB          ;
-/FutoGoB101-Bold      /HGGothicE          ;
-/Jun101-Light         /HGMaruGothicMPRO   ;
 /MidashiMin-MA31      /HGMinchoE          ;
+/GothicBBB-Medium     /MS-Gothic          ;
+/FutoGoB101-Bold      /HGGothicE          ;
 /MidashiGo-MB31       /HGSoeiKakugothicUB ;
+/Jun101-Light         /HGMaruGothicMPRO   ;
 /HeiseiMin-W3         /Ryumin-Light       ;
 /HeiseiKakuGo-W5      /GothicBBB-Medium   ;
 /STSong-Light         /NSimSun            ;
@@ -416,15 +432,36 @@ CID フォントは gs\gs8.54\Resource\CIDFont\ にコピーまたは移動し�
 /Baekmuk-Headline     << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/hline.ttf)  >> ;
 /Baekmuk-Gulim        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/baekmuk-ttf-2.2/ttf/gulim.ttf)  >> ;
 
+%%% Un-fonts
+%%% See http://kldp.net/projects/unfonts/
+/UnBatang             << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnBatang.ttf)      >> ;
+/UnBatang-Bold        << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnBatangBold.ttf)  >> ;
+/UnDotum              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnDotum.ttf)       >> ;
+/UnDotum-Bold         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnDotumBold.ttf)   >> ;
+/UnGraphic            << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGraphic.ttf)     >> ;
+/UnGraphic-Bold       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGraphicBold.ttf) >> ;
+/UnGungseo            << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnGungseo.ttf)     >> ;
+/UnPilgi              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnPilgi.ttf)       >> ;
+/UnPilgi-Bold         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (TrueType/un-fonts/UnPilgiBold.ttf)   >> ;
+
 %%% Hiragino TrueType fonts
-%/HiraMinPro-W2        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn2.ttc)   /SubfontID 1 >> ;
-%/HiraMinPro-W3        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn3.ttc)   /SubfontID 1 >> ;
-%/HiraMinPro-W6        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn6.ttc)   /SubfontID 1 >> ;
-%/HiraKakuPro-W3       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg3.ttc)   /SubfontID 1 >> ;
-%/HiraKakuPro-W6       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg6.ttc)   /SubfontID 1 >> ;
-%/HiraKakuStd-W8       << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg8.ttc)   /SubfontID 1 >> ;
+%%% See http://www.screen.co.jp/ga_product/sento/products/pr_TrueType.html
+%/HiraMinPro-W2                 /HiraginoMin-W2-90ms-RKSJ-H  ;
+%/HiraMinPro-W3                 /HiraginoMin-W3-90ms-RKSJ-H  ;
+%/HiraMinPro-W6                 /HiraginoMin-W6-90ms-RKSJ-H  ;
+%/HiraKakuPro-W3                /HiraginoKaku-W3-90ms-RKSJ-H ;
+%/HiraKakuPro-W6                /HiraginoKaku-W6-90ms-RKSJ-H ;
+%/HiraKakuStd-W8                /HiraginoKaku-W8-90ms-RKSJ-H ;
+/HiraginoMin-W2-90ms-RKSJ-H    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn2.ttc)   /SubfontID 1 >> ;
+/HiraginoMin-W3-90ms-RKSJ-H    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn3.ttc)   /SubfontID 1 >> ;
+/HiraginoMin-W6-90ms-RKSJ-H    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirmn6.ttc)   /SubfontID 1 >> ;
+/HiraginoKaku-W3-90ms-RKSJ-H   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg3.ttc)   /SubfontID 1 >> ;
+/HiraginoKaku-W6-90ms-RKSJ-H   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg6.ttc)   /SubfontID 1 >> ;
+/HiraginoKaku-W8-90ms-RKSJ-H   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (TrueType/DShirkg8.ttc)   /SubfontID 1 >> ;
 ```
 
 ***
 
 ## Comments {#a6eac88c}
+
+<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
