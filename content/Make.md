@@ -60,6 +60,14 @@ make font
 <!-- (cd ../ptetex-cmap-2005????; make)  （もう不要） -->
 
 /usr/local/teTeX/bin にパスを通します。
+
+フォントについての設定は updmap（個人ごと）または updmap-sys（システム全体）で行います。
+例えば dvips はデフォルトでは基本35書体を埋め込みませんが，埋め込むようにするには次のようにします。
+
+```
+updmap-sys --setoption dvipsDownloadBase35 true
+```
+
 Macではさらに次のようにしてヒラギノを埋め込むようにできます。
 
 <!-- (2006年4月以降の ptetex3) -->
@@ -73,7 +81,7 @@ updmap-sys --setoption kanjiEmbed hiragino
 <!-- updmap-sys - -nomkmap - -disable otf-noEmbeddedFont.map -->
 <!-- updmap-sys - -enable KanjiMap otf-hiraginox.map -->
 
-和文フォントを埋め込まないようにするには次のようにします。
+逆に和文フォントを埋め込まないようにするには次のようにします。
 
 ```
 updmap-sys --setoption kanjiEmbed noEmbed
