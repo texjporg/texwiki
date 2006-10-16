@@ -9,6 +9,9 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel（Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[061017\]
+    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました（[qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html)）。teTeX-3（ptetex3）版は少しオプションが異なります（[qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html)）。--- 栗山
+
 - \[060313\]
     Babel を使わずに済む方法 -- 「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました（[qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html)）。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん（[qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)）に、ハイフネーションも含めた本格的な出力には稲垣さん（[qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)）にサンプルを作っていただきました。ありがとうございます。--- 栗山
 
