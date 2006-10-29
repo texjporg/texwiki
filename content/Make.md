@@ -27,7 +27,7 @@ teTeX はUNIX類似OS用の TeX ディストリビューションです。
 <!-- //と書いておきます。 -->
 <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は 2005/ 6/27 以降は不要になりました。 -->
 
-/usr/local/src/tetex-src-3.0 と /usr/local/teTeX と ~/.texmf-var と ~/.texmf-conf と ~/texmf
+/var/tmp/ptetex3/tetex-src-3.0 と /usr/local/teTeX と ~/.texmf-var と ~/.texmf-conf と ~/texmf
 がすでにある場合は消すか名前を変えておきます。
 
 適当なディレクトリを作り，その中に
@@ -50,6 +50,8 @@ cp my_option.sample ../my_option (オプションを変更したいなら)
 
 オプションを変更したいならこのmy_optionというファイルを適宜編集します。
 
+あらかじめ~/.texmf-varや~/.texmf-configは消すかリネームし，~/texmfはリネームしておきます。
+
 ```
 make
 make otf (オプション)
@@ -57,7 +59,11 @@ make babel (オプション)
 make font
 ```
 
-<!-- (cd ../ptetex-cmap-2005????; make)  （もう不要） -->
+Macではmake fontで（ターミナルをUTF-8にしておくと）何回かヒラギノ何とかと聞いてきますので，それについてはyと答えます。
+
+```
+make install (必要に応じてsuしたりsudoを付けたりします)
+```
 
 /usr/local/teTeX/bin にパスを通します。
 
