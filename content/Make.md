@@ -50,7 +50,7 @@ cp my_option.sample ../my_option (オプションを変更したいなら)
 
 オプションを変更したいならこのmy_optionというファイルを適宜編集します。
 
-あらかじめ~/.texmf-varや~/.texmf-configは消すかリネームし，~/texmfはリネームしておきます。
+<!-- あらかじめ~/.texmf-varや~/.texmf-configは消すかリネームし，~/texmfはリネームしておきます。 -->
 
 ```
 make
