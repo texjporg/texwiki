@@ -118,8 +118,8 @@ pukiwiki: "TeX installers for Windows"
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：自動
-    （パッケージ製作者は，レジストリに関する設定はしなくてよい[^1]．）
+- <strong>環境変数・レジストリ</strong>：環境変数は自動で設定される．レジストリは汚さない方針
+    [^1]．
 
 - <strong>長所</strong>：日本の Linux/UNIX の定番 TeX ディストリビューション ptetex が，
     Cygwin でもそのまま使える．
@@ -195,4 +195,4 @@ pukiwiki: "TeX installers for Windows"
 
 ***
 
-[^1]: もっと言うと，しない方が良いと思う．Cygwin の Netinstaller が自動で書き込むものがあるならば，書き込まれる．
+[^1]: postinstall スクリプトで，regtool コマンドあたりを使うと，設定できるらしい．Cygwin 本家からインストールされるパッケージの中には，レジストリの書き込みを行うものがあるかもしれない．
