@@ -9,32 +9,42 @@ pukiwiki: "Linux/Gentoo"
 
 ## 日本語TeX環境の構築 {#da9a03a1}
 
-Gentoo Linuxに日本語TeX環境を構築するためメモです。とりあえずあまりいじらずに、日本語が通って、日本語が閲覧できることを目標にしています。
+Gentoo Linux に日本語 TeX 環境を構築するためメモです。
+とりあえずあまりいじらずに、日本語が通って、
+日本語が閲覧できることを目標にしています。
 
-以下、適当に日本語環境が整っているものとします。インストールするものは、ptex、dvipdfmx、CJK対応のGhostscript、日本語版Adobe Readerです。
+以下、適当に日本語環境が整っているものとします。
+インストールするものは、ptex、dvipdfmx、CJK対応の Ghostscript、
+日本語版 Adobe Reader です。
 
-まず、Adobe Readerの日本語版がインストールされるように、/etc/make.confに
+まず、Adobe Reader の日本語版がインストールされるように、/etc/make.conf に
 
 ```
 LINGUAS='ja'
 ```
 
-を書き込みます。(大抵、日本語デスクトップ環境を構築するときに書き込んでいる設定です。) 一気にemergeします。(prosperとpsutilsはおまけです。)
+を書き込みます。
+(大抵、日本語デスクトップ環境を構築するときに書き込んでいる設定です。) 
+一気にemergeします。（prosper と psutils はおまけです。)
 
 ```
 # emerge ptex dvipdfmx ghostscript acroread prosper psutils yatex
 ```
 
-以前は、xdvikをptexと別々にemergeしないといけませんでしたが、現在ではptexに含まれています。Ghostscriptは、ESP ghostscript 7.07を入れます。8.15や8.16では、cjkのパッチがデフォルトで当たらないようです。
+以前は、xdvik を ptex と別々に emerge しないといけませんでしたが、
+現在では ptex に含まれています。
+Ghostscript は、ESP ghostscript 7.07 を入れます。
+8.15 や 8.16 では、cjk のパッチがデフォルトで当たらないようです。
 
-次に、dvipdfmxでちゃんと日本語が通るようにします。
+次に、dvipdfmx でちゃんと日本語が通るようにします。
 
 ```
 # ln -s /usr/share/ghostscript/Resource /usr/share/texmf/dvipdfm/
 # mktexlsr
 ```
 
-を実行します。これをやらないで、日本語を含んだdviを$ dvipdfmx hogehoge.dviとすると、
+を実行します。
+これをやらないで、日本語を含んだdviを $ dvipdfmx hogehoge.dvi とすると、
 
 ```
 ** ERROR ** Could not find encoding file "H".
@@ -44,7 +54,7 @@ LINGUAS='ja'
 
 ## jsclasses（新日本語ドキュメントクラス）のインストール {#ta33e375}
 
-ebuildjp内のdev-tex/jsclassesにあります。（ebuildjpの設定は、下の「【参考】ebuildJPを使う」を参照して下さい。）
+ebuildjp 内の dev-tex/jsclasses にあります。（ebuildjp の設定は、下の「【参考】ebuildJP を使う」を参照して下さい。）
 
 基本的に、
 
@@ -58,7 +68,38 @@ ebuildjp内のdev-tex/jsclassesにあります。（ebuildjpの設定は、下�
 http://www.ring.gr.jp/pub/text/TeX/ascii-ptex/jvf/jis.tar.gz
 ```
 
-jis.tar.gzをダウンロードし、/usr/portage/distfilesへ置きます。その後に、# emerge jsclassesを実行してください。 
+jis.tar.gzをダウンロードし、/usr/portage/distfiles へ置きます。その後に、# emerge jsclassesを実行してください。 
+
+## emacs &lt;-> xdvi との相互ジャンプ {#q302e62f}
+
+/usr/share/texmf/xdvi/XDvi に
+
+```
+XDvi*editor: emacsclient --no-wait +%l %f
+```
+
+を追加します。（.Xdefaults や .Xresources に書いても構わないのでしょうけど。）
+/usr/share/emacs/site-lisp/xdvik を作成して、
+この中に以下の [xdvi-search.el](http://xdvi.sourceforge.net/xdvi-search.el) をダウンロードした上で、入れてください。
+（Vine Linux 3.2 xdvik version 22.40y1 j1.21 などから拝借しても構いません。）
+xdvi-search.el が入手困難な場合は、Google のキャッシュ [xdvi-search.el](http://72.14.235.104/search?q=cache:JvdfmLEki24J:xdvi.sourceforge.net/xdvi-search.el+xdvi-search.el&hl=ja&ct=clnk&cd=1&inlang=ja) から引っ張ってきてください。 <!-- xdvi のバージョンによって、xdvi-search.el が若干異なるようです。 --> <!-- なぜかわかりませんが、最近 http://xdvi.sourceforge.net/ に接続ができません。 --> <!-- できれば、wiki 上に xdvi-search.el のスクリプトを置いていただけると有り難いです。 -->
+
+次に、.emacs に以下のように書き込みます。
+
+```
+;;; TeX src-special のための設定
+(server-start) ; emacsclient 起動のために必要
+(require 'xdvi-search) ; emacs から xdvi へのジャンプのために必要
+(custom-set-variables
+ '(server-switch-hook (quote (raise-frame)))) ; 窓を上に
+(custom-set-faces)
+(add-hook 'yatex-mode-hook
+           '(lambda ()
+              (define-key YaTeX-mode-map "\C-c\C-j" 'xdvi-jump-to-line)))
+```
+
+以上で、emacs &lt;-> xdvi で互いにジャンプし合います。
+もちろん、コンパイルするときに -src を付け忘れないでください。
 
 ## 【参考】ebuildJPを使う {#gc792193}
 
@@ -117,3 +158,4 @@ gensyncを実行してツリーの取得します。
 - 解決したようです．（\[[gentoojp-users:01790\]](http://ml.gentoo.gr.jp/users/200607.month/1790.html)，\[[gentoojp-users:01805\]](http://ml.gentoo.gr.jp/users/200607.month/1805.html)参照．） -- munepi 2006-07-12 (水) 01:12:59
 - 最新版 ghostscript-esp 8.15 では、emerge 中に digest-ghostscript-esp-7.07.1-r8::gs7.07.1-cjk.diff.bz2 となっているので、問題なく日本語が通ります。 -- 1155954101 2006-08-19 (土) 11:21:41
 - まだ、>=app-text/ghostscript-eps-7.07 の方が無難かもしれません。 -- 1157394119 2006-09-05 (火) 03:21:59
+- 遅くなりましたが、『emacs &lt;-> xdvi との相互ジャンプ』を書きました。 -- munepi 2006-11-06 (月) 01:40:17
