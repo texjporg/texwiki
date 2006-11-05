@@ -84,6 +84,7 @@ pukiwiki: "ArchiveQandA"
 
 - 二段組にしたときに最終ページの左右カラムを揃える
     - [blance.sty](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/balance.html)，[CTAN:macros/latex/contrib/preprint/](https://mirror.ctan.org/macros/latex/contrib/preprint/)内 ([qa:32276](https://okumuralab.org/~okumura/texfaq/qa/32276.html)...)
+- [TeXが苦手とする処理](</TeXが苦手とする処理/>)（下線，飾り枠など）
 
 ### コメント {#adc20c89}
 
