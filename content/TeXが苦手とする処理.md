@@ -25,7 +25,7 @@ pukiwiki: "TeXが苦手とする処理"
 対処法は，大別すると次の 2 通りになります．
 
 - 丸数字などの字形をもったフォントを利用:
-    - ZapfDingbats フォント （“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
+    - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{172}”，“\Pisymbol{pzd}{"AC}” （= まる1）など）
     - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” など）
 - 丸の中身と丸を合成:
@@ -64,21 +64,17 @@ TeX は「お絵描き」ソフトではない以上，そのような飾り枠�
 それゆえ，凝った枠が要る場合には画像にするなり
 pstricks などの「描画用」パッケージを用いるなりするのが簡単でしょう．
 
-<!-- // 下のほうで言及していますが． -->
-<!-- // 言い回しがお気に召さなければ， -->
-<!-- // （Wiki なんですから）適宜変更なさってください． -->
-
 #### ひとつのページに収まる枠 {#zac9bf00}
 
 枠の途中でのページ分割の必要がなければ，
 比較的単純な形状の枠については ascmac パッケージが提供する
 itembox 環境といったものが存在します（さらに，枠の四隅の形状を変更した例が
 [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）．
-また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe)は
+また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は
 「飾り文字を並べて作成した枠（ページ分割は不可）」
 を作成するマクロを提供しています
 （niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
-Type1 版を CTAN/fonts/niceframe から入手しておくとよいでしょう）．
+Type1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）．
 
 #### 複数ページにわたる枠(1)［枠自体を分割する場合］ {#b3d25e0d}
 
@@ -111,4 +107,4 @@ framed パッケージが提供する framed 環境，shaded 環境
 枠は必須でなくとも「20文字×20行」のような体裁を要求されることがあります。
 
 - [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
-- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) (LaTeX 2.09用)
+- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09用）
