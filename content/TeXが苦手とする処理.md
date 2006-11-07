@@ -46,6 +46,7 @@ pukiwiki: "TeXが苦手とする処理"
 かつ比較的完成度の高いものを挙げます．
 
 - [jumoline パッケージ](http://www.para.tutics.tut.ac.jp/~nakasima/latex/):
+    中島 浩氏．
     下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline) ，上線 (\\<strong>O</strong>verline)を提供
 
 - [udline パッケージ](http://homepage2.nifty.com/domae/tex.html):
