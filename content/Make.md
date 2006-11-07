@@ -33,18 +33,13 @@ teTeX はUNIX類似OS用の TeX ディストリビューションです。
 適当なディレクトリを作り，その中に
 [tetex-src-3.0.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
 [tetex-texmf-3.0po.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
-[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-2006????.tar.gz (最新の日付のもの), <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% (←もう不要) -->
+[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz (最新の日付のもの), <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% (←もう不要) -->
 をダウンロードし，その中で次のようにします（ターミナルでコマンドを打ち込みます）。
 （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。）
 
 ```
-tar xzvf ptetex3-2006????.tar.gz
-```
-
-<!-- tar xzvf ptetex-cmap-2005????.tar.gz （もう不要） -->
-
-```
-cd ptetex3-2006????
+tar xzvf ptetex3-20YYMMDD.tar.gz
+cd ptetex3-20YYMMDD
 cp my_option.sample ../my_option (オプションを変更したいなら)
 ```
 
@@ -57,9 +52,19 @@ make
 make otf (オプション)
 make babel (オプション)
 make font
+make test
 ```
 
 Macではmake fontで（ターミナルをUTF-8にしておくと）何回かヒラギノ何とかと聞いてきますので，それについてはyと答えます。
+面倒なら、make fontyとすると、すべての質問にyesと答えたことになります。
+
+make testで簡単な動作テストをします。ここまで root 権限は必要ありません。
+Macではmake testの前にX11を立ち上げておきます
+（あるいはmy_optionでxdviを使わない設定にします）。
+UTF + ps2pdfでエラーが出ても、大きな問題はないので、気にしないでおきます。
+（my_optionでps2pdfをテストしないようにもできます。）
+
+動作確認がすんだら、いよいよシステムにインストールしましょう。
 
 ```
 make install (必要に応じてsuしたりsudoを付けたりします)
@@ -67,14 +72,14 @@ make install (必要に応じてsuしたりsudoを付けたりします)
 
 /usr/local/teTeX/bin にパスを通します。
 
-フォントについての設定は updmap（個人ごと）または updmap-sys（システム全体）で行います。
-例えば dvips はデフォルトでは基本35書体を埋め込みませんが，埋め込むようにするには次のようにします。
+フォントについての設定は updmap（個人ごと）または updmap-sys（システム全体、root 権限が必要）で行います。
+例えば dvips はデフォルトでは基本35書体（欧文）を埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
 updmap-sys --setoption dvipsDownloadBase35 true
 ```
 
-Macではさらに次のようにしてヒラギノを埋め込むようにできます。
+Macではさらに次のようにしてヒラギノ（和文）を埋め込むようにできます。
 
 <!-- (2006年4月以降の ptetex3) -->
 
@@ -88,13 +93,11 @@ updmap-sys --setoption kanjiEmbed hiragino
 <!-- updmap-sys - -enable KanjiMap otf-hiraginox.map -->
 
 逆に和文フォントを埋め込まないようにするには次のようにします。
+（これがディフォルトです。）
 
 ```
 updmap-sys --setoption kanjiEmbed noEmbed
 ```
-
-make testでテストできます。
-Macではmake testの前にX11を立ち上げておきます（あるいはmy_optionでxdviを使わない設定にします）。
 
 xdviはsrc specialsに対応しています。
 Emacsで使う場合は，[YaTeX](/YaTeX/)の設定はREADMEに書いてあります。
