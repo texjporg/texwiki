@@ -49,7 +49,7 @@ pukiwiki: "TeXが苦手とする処理"
     下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline) ，上線 (\\<strong>O</strong>verline)を提供
 
 - [udline パッケージ](http://homepage2.nifty.com/domae/tex.html):
-    実線，破線，点線，波線などによる下線，打ち消し線，上線を提供
+    みなも氏．実線，破線，点線，波線などによる下線，打ち消し線，上線を提供
 
 - [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html):
     吉永徹美氏．実線，波線による下線，打ち消し線，上線を提供（縦組み対応）
