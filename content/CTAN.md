@@ -7,11 +7,13 @@ pukiwiki: "CTAN"
 
 # CTAN
 
+<!--       1         2         3         4         5         6         7 -->
+<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
 <!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
 
 ## CTAN とは？ {#c8b76129}
 
-CTAN (Comprehensive TeX Archive Network) は
+CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は
 TeX 関連のソフトやスタイルファイルを集めたサイトです。
 
 米国のサイトは [http://www.ctan.org/](http://www.ctan.org/) ですが，日本語で検索できるミラーサイト
@@ -23,7 +25,7 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
 犬の絵が見えますので，ここをクリックすれば検索の画面になります。
 
 上からたどっていくには
-[Ring の CTAN トップ](http://www.ring.gr.jp/pub/text/CTAN/)
+[Ring Server の CTAN トップ](https://mirror.ctan.org/./)
 から始めればいいでしょう。
 
 【ご注意】： [Ring Server](http://www.ring.gr.jp/)
@@ -32,8 +34,12 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
 一つ選んでブックマーク（お気に入り）に入れておくと便利です。
 CTAN 以外にもたくさんのフリーソフトをミラーしています。
 以下のような DNS による負荷分散も実験的に行われています。
+（[Ring Server](http://www.ring.gr.jp/) の
+「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの
+「TENBIN，DNS BALANCEって何ですか？
+また、RingServerでの負荷分散はどのように行っているのですか？」の項目参照。）
 
-- [http://www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
+- [http://www.ring.gr.jp/pub/text/CTAN/](https://mirror.ctan.org/./)
     （代表 URL ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
 
 - [http://www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)
@@ -58,3 +64,5 @@ Ring Server 以外の国内のミラー（一部）：
 - [IIJ](ftp://ftp.iij.ad.jp/pub/TeX/CTAN/)
 
 <!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
+<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
+<!--       1         2         3         4         5         6         7 -->
