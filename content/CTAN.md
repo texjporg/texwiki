@@ -28,7 +28,7 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
 [Ring Server の CTAN トップ](https://mirror.ctan.org/./)
 から始めればいいでしょう。
 
-【ご注意】： [Ring Server](http://www.ring.gr.jp/)
+【注意】： [Ring Server](http://www.ring.gr.jp/)
 は複数のファイルサーバの集合体です。
 下の方に一覧がありますので，ご自分のところからネットワーク的に近いサーバを
 一つ選んでブックマーク（お気に入り）に入れておくと便利です。
