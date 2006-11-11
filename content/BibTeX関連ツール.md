@@ -136,5 +136,6 @@ BibTeX形式に変換するWebアプリが公開されている
 ## 関連リンク {#j1aaae63}
 
 - [Bibliographic Conversion Tools](http://www.ecst.csuchico.edu/~jacobsd/bib/tools/converters.html)
+- [http://www.ccrnp.ncifcrf.gov/~toms/latex.html](http://www.ccrnp.ncifcrf.gov/~toms/latex.html) なども参考になるかも．
 
 <br>
