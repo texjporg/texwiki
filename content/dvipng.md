@@ -11,6 +11,8 @@ pukiwiki: "dvipng"
 
 dvipng は dvi ファイルから png 形式の画像を生成するコマンドです。
 preview-latex プロジェクトの成果物として公開されています。
+Version 1.9 から サブフォントに対応しているので、サブフォント機構
+を使って作成した dvi の場合には日本語も png 化できます。
 
 - [http://preview-latex.sourceforge.net/](http://preview-latex.sourceforge.net/)
 - [http://sourceforge.net/projects/dvipng/](http://sourceforge.net/projects/dvipng/)
