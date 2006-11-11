@@ -306,3 +306,90 @@ MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u
 ###  {#o3813278}
 
 MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MePoTeX](http://homepage2.nifty.com/domae/metapost/mepotex.html)というものもあります。
+
+### 最新バージョンで追加された機能のいくつか {#ze022f07}
+
+0.970 (beta) 以降で追加された新機能のいくつかを述べます。
+
+```
+(1) filenametemplate
+filenametemplate "%j-%3c.mps";
+beginfig(1);
+... ...
+endfig;
+```
+
+のようにすると、出力ファイル名は $(jobname)-001.mps のようになります。
+
+```
+(2) cmyk color model:
+beginfig(1);
+draw fullcircle
+withcmykcolor (1,0,0,0);
+endfig;
+```
+
+```
+(3) greyscale color model
+beginfig(1);
+faded := 0.5;
+draw fullcircle withgreyscale faded;
+endfig;
+```
+
+```
+(4) 標準 eps:
+```
+
+独立した eps を出力する機能が強化されています。 prologues := 2;
+でフォントマップファイルに従ってフォント定義を完全に行います。
+0.970 (beta) では一部不具合がありますが、svn では訂正されています。
+prologues := 3; では dvips のように type1 フォントのサブセットを
+ダウンロードします。
+
+```
+(5) font map:
+```
+
+デフォルトマップファイルは mpost.map ですが、ソース中で設定
+することもできます:
+
+```
+fontmapfile "+foo.map";
+```
+
+とすると、重複を無視して foo.map の内容を追加します。
+
+```
+ 
+fontmapfile "=foo.map";
+```
+
+とすると、重複を置き換えて foo.map を追加します。
+
+```
+fontmapfile "-foo.map";
+     
+```
+
+とすると、foo.map 内の記述とマッチするエントリを全て削除します。
+
+ファイルではなくて、具体的記述によって指定する方法もあります:
+
+```
+fontmapline "+foo bar <baz.pfb";
+```
+
+とすると、重複を無視して この内容を追加します。
+
+```
+fontmapline "=foo bar <baz.pfb";
+```
+
+とすると、重複を置き換えてこの内容を追加します。
+
+```
+fontmapline "-foo bar <baz.pfb";
+```
+
+とすると、この内容と一致するものを削除します。
