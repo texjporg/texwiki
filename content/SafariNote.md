@@ -17,7 +17,7 @@ pukiwiki: "SafariNote"
 
 PukiWikiはEUC-JP決め打ちで作られているため面倒そうです。
 
-[http://pukiwiki.sourceforge.jp/dev/index.php?PukiWiki%2F1.4%2FUTF-8%B2%BD](http://pukiwiki.sourceforge.jp/dev/index.php?PukiWiki%2F1.4%2FUTF-8%B2%BD)
+[pukiwiki.dev:PukiWiki/1.4/UTF-8化](https://pukiwiki.sourceforge.io/dev/?PukiWiki%2F1.4%2FUTF-8%E5%8C%96)
 
 そうですか... [http://pukiwiki.org/](http://pukiwiki.org/) が UTF-8 なので、最初から UTF-8 に対応しているのかと思いましたが、一筋縄ではいかないようですね。難しいですね。
 
