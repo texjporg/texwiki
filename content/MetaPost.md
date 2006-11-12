@@ -303,7 +303,7 @@ end.
 MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/contour.html)
 を作ってみました。
 
-###  {#o3813278}
+### 関連アプリケーション {#o3813278}
 
 MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MePoTeX](http://homepage2.nifty.com/domae/metapost/mepotex.html)というものもあります。
 
@@ -338,6 +338,10 @@ endfig;
 ```
 
 ```
+注: withgrayscale なる綴りは使えないので注意すること。
+```
+
+```
 (4) 標準 eps:
 ```
 
@@ -345,7 +349,21 @@ endfig;
 でフォントマップファイルに従ってフォント定義を完全に行います。
 0.970 (beta) では一部不具合がありますが、svn では訂正されています。
 prologues := 3; では dvips のように type1 フォントのサブセットを
-ダウンロードします。
+ダウンロードします。たとえば上に出てきた例で
+
+```
+prologues:=3;
+defaultscale := 1.5;
+beginfig(1);
+u=100;
+fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
+label("Red Ball", (u,u));
+endfig;
+end.
+```
+
+としておくと、必要な cm フォントがダウンロードされるので、通常のプリンタ
+で印刷できる eps ができます。
 
 ```
 (5) font map:
