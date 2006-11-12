@@ -19,19 +19,20 @@ pukiwiki: "TeXが苦手とする処理"
 
 ### 丸数字 {#s7930698}
 
-まず，丸数字の類は（従来の EUC-JP, Shift_JIS などを用いて記述する限り）
+まず，丸数字（e.g. &#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の
+類は（従来の EUC-JP, Shift_JIS などを用いて記述する限り）
 「環境依存」文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))．
 
 対処法は，大別すると次の 2 通りになります．
 
 - 丸数字などの字形をもったフォントを利用:
     - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
-    - pifont パッケージ（“\ding{172}”，“\Pisymbol{pzd}{"AC}” （= まる1）など）
-    - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” など）
+    - pifont パッケージ（“\ding{172}”，“\Pisymbol{pzd}{"AC}” など）
+    - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
 - 丸の中身と丸を合成:
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
-        同種のものがあちこちで定義されています (See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html))）
+        同種のものがあちこちで定義されています \[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
