@@ -21,7 +21,7 @@ pukiwiki: "Ghostscript 7.07"
 以下は [GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)，
 [GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)
 をとりあえず書き直したものです。
-[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/gs706.html)
+[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)
 ではエプソンコーワのドライバを使いましたが，バグがあるようなので，ここでは大森さんの gdevlips
 ドライバに戻しました。
 その後エプソンコーワのドライバも改訂されたように思いますが，未確認です。
@@ -33,7 +33,7 @@ Mac OS X（＋X11）でもまったく同様にインストールできます
 安宅さんの
 [Install GNU GhostScript 7.07 and dvipdfmx](http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)
 というページが役に立ちます。
-LIPS のB列出力については \[[qa:19792\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/19792.html)
+LIPS のB列出力については &#x5b;[qa:19792](https://okumuralab.org/~okumura/texfaq/qa/19792.html)&#x5d;
 をご覧ください。
 
 [ESP Ghostscript](http://www.cups.org/ghostscript.php)
@@ -349,7 +349,7 @@ checkpc -f
 ### その他 {#ld9cdeca}
 
 B列（B5判など）の出力については TeX の掲示板の
-[17129](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/17129.html)
+[qa:17129](https://okumuralab.org/~okumura/texfaq/qa/17129.html)
 以下に話題が出ています。
 GhostscriptのB列はJISではなくISOなのでサイズが微妙に違います。
 たとえばJISのB4は /jisb4 と定義されています（gs_statd.ps）。
