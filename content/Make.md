@@ -123,7 +123,7 @@ Emacsで使う場合は，[YaTeX](/YaTeX/)の設定はREADMEに書いてあり�
 
 一世代前の teTeX-2.0.2（Web2C 7.4.5），pTeX-3.1.5 を Linux
 や FreeBSD や Solaris や Mac OS X（gcc 2.x
-または [3.x](http://oku.edu.mie-u.ac.jp/~okumura/linux/gcc.html)）にソースからインストールした記録です。
+または [3.x](https://okumuralab.org/~okumura/linux/?GCC)）にソースからインストールした記録です。
 
 多くの Linux ディストリビューションにはすでに日本語対応の TeX ツール群が含まれています（コマンド名は pxdvi
 や pdvips など p が頭に付く場合があります）のでソースからインストールする必要はありません。
@@ -138,7 +138,7 @@ Emacsで使う場合は，[YaTeX](/YaTeX/)の設定はREADMEに書いてあり�
 > タイムスタンプが3月1日以降であることをご確認ください。
 
 > Ghostscript のインストールも必須です。
-> これについては [GNU Ghostscript 7.07 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Ghostscript%207.07)
+> これについては [GNU Ghostscript 7.07 on Linux](</Ghostscript 7.07/>)
 > をご覧ください。
 
 > FreeBSD では make を gmake としてください。
@@ -147,7 +147,7 @@ Emacsで使う場合は，[YaTeX](/YaTeX/)の設定はREADMEに書いてあり�
 > Mac OS X の make は GNU Make ですのでそのまま使えます。
 
 > Vine Linux 3.0でmakeするための注意は
-> \[[qa:30713\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/30713.html)
+> &#x5b;[qa:30713](https://okumuralab.org/~okumura/texfaq/qa/30713.html)&#x5d;
 > をご覧ください。
 
 他に参考すべきサイト：
@@ -526,7 +526,7 @@ f dvipdfm.map
 最後の x を忘れないように！
 
 この dvipdfmx ではいくつかの CMap ファイルが必須です。
-[GNU Ghostscript 7.07 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)
+[GNU Ghostscript 7.07 on Linux](</Ghostscript 7.07/>)
 のページを参考にして Ghostscript をインストールされたかたは /usr/local/share/ghostscript/Resource
 の下にたくさんの CMap ファイルがありますので，これを
 /usr/local/teTeX/share/texmf/dvipdfm
@@ -638,7 +638,7 @@ jun101-l-v    V kozgostd-light.otf
 > をエディタで開き，dvipdfmx_SOURCES に filter.c concat.c を追加，dvipdfmx_OBJECTS に filter.o concat.o
 > を追加します。
 
-> 古い epsbox.sty 対応のパッチを野田さんが作ってくださいました \[[qa:23745\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/23745.html)。
+> 古い epsbox.sty 対応のパッチを野田さんが作ってくださいました &#x5b;[qa:23745](https://okumuralab.org/~okumura/texfaq/qa/23745.html)&#x5d;。
 > これは dvipdfmx-20031207 で取り込まれました (Thanks: 土村さん)。
 
 ### xdvi {#a7bdcae8}
@@ -651,7 +651,7 @@ jun101-l-v    V kozgostd-light.otf
 > を使えばエディタやプレビューアを別途用意する必要もなくなります。
 
 > Plamo 3.3 でのコンパイルについては →
-> \[[qa:22697\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/22697.html)，\[[qa:22702\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/22702.html)。
+> &#x5b;[qa:22697](https://okumuralab.org/~okumura/texfaq/qa/22697.html)&#x5d;，&#x5b;[qa:22702](https://okumuralab.org/~okumura/texfaq/qa/22702.html)&#x5d;。
 
 土村さんの
 [xdvi 日本語化・機能拡張パッチ](http://www.nn.iij4u.or.jp/~tutimura/tex/xdvi.html)
@@ -744,7 +744,7 @@ Expert モード（右側のメニューがないモード）のオン／オフ�
 [The Xdvik Homepage](http://xdvi.sourceforge.net/)
 の [Inverse Search with Xdvi(k)](http://xdvi.sourceforge.net/inverse-search.html)
 をご覧ください。
-AUCTeX で使う方法は私の [AUCTeX](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/auctex.html) のページにも書いておきました。
+AUCTeX で使う方法は [AUCTeX](/AUCTeX/) のページにも書いておきました。
 
 ### udvips {#p7a85c4c}
 
@@ -782,7 +782,7 @@ cp -p udvips /usr/local/teTeX/bin/
 
 角藤さんが
 [hideyukiさん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
-のソースへのパッチを作ってくださいました \[[qa:17471\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/17471.html)。
+のソースへのパッチを作ってくださいました &#x5b;[qa:17471](https://okumuralab.org/~okumura/texfaq/qa/17471.html)&#x5d;。
 このパッチを当てて少し修正したものを念のため
 [jmpost-0.04a.tar.gz](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/jmpost-0.04a.tar.gz)
 として置いておきます。
@@ -857,7 +857,7 @@ TEXINPUTS = .;$TEXMF/{tex,ptex}/{generic,}//
 
 のようにしておきます。
 
-また，掲示板の [6863](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/6863.html)
+また，[qa:6863](https://okumuralab.org/~okumura/texfaq/qa/6863.html)
 にあるように，鈴木秀幸さんのご指摘に従って
 /usr/local/teTeX/share/texmf/tex/latex/graphics/dvips.def
 を以下のように修正すると特殊な場合に文字のずれがなくなるようです（しかしこれだと xdvi
