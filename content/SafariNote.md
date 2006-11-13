@@ -9,25 +9,25 @@ pukiwiki: "SafariNote"
 
 [FrontPage](/)
 
-> Safariで編集すると ? が ? に化けます
+> Safari で編集すると ? が ? に化けます
 
-文字コードを utf8 にすると、Safari で半角の＼￥～等が文字化けしなくなります。
+文字コードを utf8 にすると，Safari で半角の＼￥&#xff5e;等が文字化けしなくなります。
 
-- cf. [http://www.sodan.ecc.u-tokyo.ac.jp/BTS/guest.cgi?project=FAQ&action=view_report&id=52](http://www.sodan.ecc.u-tokyo.ac.jp/BTS/guest.cgi?project=FAQ&action=view_report&id=52)
+- See [http://www.sodan.ecc.u-tokyo.ac.jp/BTS/guest.cgi?project=FAQ&action=view_report&id=52](http://www.sodan.ecc.u-tokyo.ac.jp/BTS/guest.cgi?project=FAQ&action=view_report&id=52)
 
-PukiWikiはEUC-JP決め打ちで作られているため面倒そうです。
+PukiWiki は EUC-JP 決め打ちで作られているため面倒そうです。
 
 [pukiwiki.dev:PukiWiki/1.4/UTF-8化](https://pukiwiki.sourceforge.io/dev/?PukiWiki%2F1.4%2FUTF-8%E5%8C%96)
 
-そうですか... [http://pukiwiki.org/](http://pukiwiki.org/) が UTF-8 なので、最初から UTF-8 に対応しているのかと思いましたが、一筋縄ではいかないようですね。難しいですね。
+そうですか…… [http://pukiwiki.org/](http://pukiwiki.org/) が UTF-8 なので，最初から UTF-8 に対応しているのかと思いましたが，一筋縄ではいかないようですね。難しいですね。
 
-それと，utf-8対応でないブラウザのことを考えると気が重い……
+それと，UTF-8 対応でないブラウザのことを考えると気が重い……
 
-ずいぶん昔から問題になっていることだと思いますが，いつまで待ってもAppleでは直してくれそうにありませんね。
+ずいぶん昔から問題になっていることだと思いますが，いつまで待っても Apple では直してくれそうにありませんね。
 
-A5→5Cというマッピングも必要なようですね。
+A5 → 5C というマッピングも必要なようですね。
 
-utf-8が読めない環境ってどれくらいありますか？
+UTF-8 が読めない環境ってどれくらいありますか？
 
 簡単にできそうならやってみたいと思います。いま情報収集中。
 
@@ -39,7 +39,7 @@ utf-8が読めない環境ってどれくらいありますか？
 
 - Safari でのテスト ~ \ -- [奥村](http://oku.edu.mie-u.ac.jp/~okumura/) 2004-09-06 (月) 21:42:46
 
-ただしSafariでは¥でなく\を使ってください。
+ただし Safari では “&yen;” でなく “\” を使ってください。
 
 - IEではどうなるかな -- [奥村](http://oku.edu.mie-u.ac.jp/~okumura/) 2004-09-06 (月) 22:32:31
 - MacのIEでは普通に#commentからは書けますが編集すると化け化けになります ;\_; -- [奥村](http://oku.edu.mie-u.ac.jp/~okumura/) 2004-09-06 (月) 22:33:56
