@@ -92,7 +92,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">1999</td><td>10</td><td style="text-align:center"></td><td>邦訳『文書処理システム LaTeX2e』が出版される。</td></tr>
 <tr><td style="text-align:center">2000</td><td>11</td><td style="text-align:center"></td><td>奥村晴彦『[改訂版]LaTeX2e 美文書作成入門』が出版される。</td></tr>
 <tr><td style="text-align:center">2001</td><td style="text-align:right">4</td><td style="text-align:center"></td><td>gs-cjk projectよりgs6.50-cjk-M1-R1がリリースされる．</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:right">5</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/">TeX Q &amp; A 掲示板</a> が開設される。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">5</td><td style="text-align:center"></td><td><a href="https://okumuralab.org/~okumura/texfaq/qa/index.html">TeX Q &amp; A 掲示板</a> が開設される。</td></tr>
 <tr><td style="text-align:center">2002</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>アスキー pTeX のバージョンが 3.0 になりました。</td></tr>
 <tr><td style="text-align:center">2003</td><td style="text-align:right">7</td><td style="text-align:center"></td><td>@nifty TeX フォーラム(FTEX)が DTP と印刷フォーラム(FDTP) と統合される。</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">8</td><td>MusiXTeXの作者Daniel Taupin氏がアルプス登山中の事故で逝去．</td><td></td></tr>
@@ -102,7 +102,7 @@ pukiwiki: "TeXの歴史"
 <!-- 上はいきなり現在ですが、とりあえず日本の列のスペースを確保するために入れました -->
 
 <table><tbody>
-<tr><td style="text-align:center"></td><td style="text-align:right">9</td><td style="text-align:center"></td><td>日本語 TeX 情報が <a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/">TeX Wiki</a> に移行する。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">9</td><td style="text-align:center"></td><td>日本語 TeX 情報が <a href="/">TeX Wiki</a> に移行する。</td></tr>
 <tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>@nifty FDTP &amp; FTEX 公式 Web ページが閉鎖した。</td></tr>
 <tr><td style="text-align:center">2005</td><td style="text-align:right">2</td><td style="text-align:center"></td><td>@nifty DTPと印刷フォーラム（FDTP) が終了した。</td></tr>
 <tr><td style="text-align:center">2006</td><td style="text-align:right">5</td><td>Thomas Esser氏が teTeX 新規リリースの停止を表明しました。</td><td></td></tr>
