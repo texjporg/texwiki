@@ -43,7 +43,7 @@ pukiwiki: "URMSBJ"
 簡単にダブルスペース化するには、doublespace.styまたはsetspace.styを使う。特別な理由がない限り、setspace.styを使った方が無難。
 
 - doublespaceの最新版は1986年であり、一方、setspaceの方は2000年である
-- doublespaceスタイルを使うと、backgrndやpdfdraftcopyのようにcolorを使う場合にエラーになる。詳細と解決策 [TeX FAQ 37934](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/37934.html)
+- doublespace スタイルを使うと、backgrnd や pdfdraftcopy のように color を使う場合にエラーになる。詳細と解決策 [qa:37934](https://okumuralab.org/~okumura/texfaq/qa/37934.html)
 
 部分的にシングルスペースや任意のスペーシングをしたい場合のコマンド・環境がsetspace.styに用意されているので、詳細はsetspace.styの中をのぞく。
 
@@ -189,7 +189,12 @@ another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where 
 
 ### 文献スタイル {#n0cb9c0e}
 
-URMSBJの文献スタイルの例は、[ここ](http://www.nlm.nih.gov/bsd/uniform_requirements.html)にあります。これは、Vancouverスタイルと呼ばれるもので、幸いにも（[vancouver.bst](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/vancouver/vancouver.bst) \[[詳細](http://www.ctan.org/info?id=vancouver)\]）がCTANにあります。これを使って
+URMSBJ の文献スタイルの例は、
+[ここ](http://www.nlm.nih.gov/bsd/uniform_requirements.html)にあります。
+これは、Vancouver スタイルと呼ばれるもので、幸いにも
+[vancouver.bst](https://mirror.ctan.org/biblio/bibtex/contrib/vancouver/vancouver.bst)
+［[詳細](http://www.ctan.org/info?id=vancouver)］が CTAN にあります。
+これを使って
 
 ```
 \bibliographystyle{vancouver}
