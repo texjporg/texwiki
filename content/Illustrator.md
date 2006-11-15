@@ -52,6 +52,4 @@ fixill <old.eps >new.eps
 
 ### トラブル {#id16611b}
 
-Illustrator CS でCMフォントの数式が変になる
-\[[qa:27936\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/27936.html)
-のスレッド（未解決）。
+Illustrator CS でCMフォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
