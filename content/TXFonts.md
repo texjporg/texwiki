@@ -223,8 +223,7 @@ amssymb を読み込む必要はありません。
 
 とします。なお，g だけ 9 のように見えるものにするには，g の代わりに \varg
 と書くか，あるいは本田さんが
-[TeX Q&amp;A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/)
-の [248](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/248.html)
+[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) の [qa:248](https://okumuralab.org/~okumura/texfaq/qa/248.html)
 で書いてくださっている方法を使います。
 
 PostScript プリンタによってはうまく動作しないものがあるようです。
@@ -243,15 +242,13 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 で表示され，見栄えがやや異なることがあります。
 たとえば $A$ の傾きがかなり違うので，$\hat{A}$ のハットがおかしな位置に付きます。
 
-★ [TeX Q&amp;A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/)
-の [869](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/869.html)（藤花さん）
+★ [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) の [qa:869](https://okumuralab.org/~okumura/texfaq/qa/869.html) （藤花さん）
 によれば，\usepackage{amsmath,txfonts}
 だけでは \checkmark などごく一部の記号が出ないようです。
 \usepackage{amsmath,amssymb,txfonts}
 とするか，あるいは \checkmark を定義する必要があるようです。
 
-★ [TeX Q&amp;A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/)
-の [1440](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/1440.html)（本田さん）
+★ [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) の [qa:1440](https://okumuralab.org/~okumura/texfaq/qa/1440.html) （本田さん）
 による $\to$ だけ txfonts でなく CM に戻す方法：
 
 ```
@@ -260,8 +257,7 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 \let\to\cmrightarrow
 ```
 
-★ [TeX Q&amp;A](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/)
-の [2669](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/2669.html)（角藤さん）
+★ [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) の [qa:2669](https://okumuralab.org/~okumura/texfaq/qa/2669.html) （角藤さん）
 による $\ell$ だけ txfonts ではなく CM に戻す方法：
 
 ```
