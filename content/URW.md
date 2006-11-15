@@ -16,7 +16,7 @@ Acrobat Reader 5.x/6.x and Ghostscript's latest URW Palladio fonts
 - もし texmf 以下にある uplbi8a.pfb のサイズが 51285 ではなく 131673
     になっていたら，URW フォント全体を CTAN の fonts/urw/base35/pfb にあるものと置き換えてください。
     特に Windows の場合は，角藤さんが配布されている 2004-07-23
-    以降の t1fonts.tar.gz を上書きインストールするのが簡単です \[[qa:30444\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/30444.html)。
+    以降の t1fonts.tar.gz を上書きインストールするのが簡単です &#x5b;[qa:30444](https://okumuralab.org/~okumura/texfaq/qa/30444.html)&#x5d;。
 
 - もし Ghostscript の fonts ディレクトリにある p052024l.pfb のサイズが 51285 ではなく 131673
     になっていたら，上記の CTAN にあるフォント（あるいは角藤さんの新しい t1fonts.tar.gz
