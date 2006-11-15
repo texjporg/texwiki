@@ -31,7 +31,7 @@ pukiwiki: "新 pTeX とBabel"
     ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの Hyphenation](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
 - \[040929\]
-    ギリシア数字の出力に関して greek.ldf にバグがあります。\[[qa:31769\]](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/31769.html)
+    ギリシア数字の出力に関して greek.ldf にバグがあります。&#x5b;[qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html)&#x5d;
 
 - \[040929\]
     russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
