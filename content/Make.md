@@ -31,8 +31,8 @@ teTeX はUNIX類似OS用の TeX ディストリビューションです。
 がすでにある場合は消すか名前を変えておきます。
 
 適当なディレクトリを作り，その中に
-[tetex-src-3.0.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
-[tetex-texmf-3.0po.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
+[tetex-src-3.0.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
+[tetex-texmf-3.0po.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
 [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz (最新の日付のもの), <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% (←もう不要) -->
 をダウンロードし，その中で次のようにします（ターミナルでコマンドを打ち込みます）。
 （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。）
@@ -168,8 +168,8 @@ X Window System を使わない（標準状態の Mac OS X など）なら --wit
 
 用意するもの：
 
-- [http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/2.0/distrib/tetex-texmf-2.0.2.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/2.0/distrib/tetex-texmf-2.0.2.tar.gz)
-- [http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/2.0/distrib/tetex-src-2.0.2.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/systems/unix/teTeX/2.0/distrib/tetex-src-2.0.2.tar.gz)
+- [CTAN:systems/unix/teTeX/2.0/distrib/tetex-texmf-2.0.2.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/2.0/distrib/tetex-texmf-2.0.2.tar.gz)
+- [CTAN:systems/unix/teTeX/2.0/distrib/tetex-src-2.0.2.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/2.0/distrib/tetex-src-2.0.2.tar.gz)
 
 ```
 mkdir -p /usr/local/teTeX/share/texmf
@@ -234,7 +234,7 @@ Mac OS X なら上の代わりに pdflatex hello
 
 ### pTeX，pLaTeX2e のインストール {#g69f2dc9}
 
-※以下ではRingサーバのミラー [http://www.ring.gr.jp/pub/text/TeX/ascii-ptex](http://www.ring.gr.jp/pub/text/TeX/ascii-ptex)
+※以下ではRingサーバのミラー [http://www.ring.gr.jp/pub/text/TeX/ascii-ptex/](http://www.ring.gr.jp/pub/text/TeX/ascii-ptex/)
 をご紹介していますが，オリジナルの配布元は [ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/](ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/)
 です。
 
@@ -658,7 +658,7 @@ jun101-l-v    V kozgostd-light.otf
 のページから xdvik-22.40y1 のパッチをいただいてきます。
 また，土村さんのパッチの元になった最新の xdvik を CTAN
 ミラー，たとえば
-[Ring サーバの /pub/text/CTAN/dviware/xdvik/](http://www.ring.gr.jp/pub/text/CTAN/dviware/xdvik/)
+[Ring Server の CTAN:dviware/xdvik/](https://mirror.ctan.org/dviware/xdvik/)
 からいただいてきて作業します：
 
 ```
@@ -880,7 +880,7 @@ grestore matrix currentmatrix itransform moveto}}
 ptex-texmf-2.2 は、正式に新LaTeXに対応していますから、必ずこの作業を
 して下さい。
 
-適当な近場，たとえば Ring サーバの /pub/text/CTAN/macros/latex/base
+適当な近場，例えば Ring Server の [CTAN:macros/latex/base/](https://mirror.ctan.org/macros/latex/base/)
 をディレクトリごといただいてきて，その中で作業します。
 
 ```
