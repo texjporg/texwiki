@@ -15,7 +15,7 @@ TIPAのフォントにはIPAの記号のほか、アメリカの音声学、イ�
 
 福井先生のサイトの[tipaディレクトリ](http://www.l.u-tokyo.ac.jp/~fkr/tipa/)
 から最新版がダウンロードできます (執筆時点での最新版はtipa-1.3です)。
-[CTANのfonts/tipa/](http://www.ring.gr.jp/pub/text/CTAN/fonts/tipa/)でもミラーされています。
+[CTAN:fonts/tipa/](https://mirror.ctan.org/fonts/tipa/) でもミラーされています。
 
 ### インストール {#j6ff5f64}
 
