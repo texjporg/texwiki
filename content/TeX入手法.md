@@ -38,20 +38,20 @@ LinuxについてはUedaさんのWikiがこのTeX Wikiにマージされまし�
 > 中には日本語化が不完全なものもあるという噂ですが，少なくとも
 > [Vine](http://vinelinux.org/)，[MLD6/7](http://www.mlb.co.jp/)
 > は問題なく動きます。
-> Plamo Linux 3.3 もOKとのことです [(qa:22638)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/22638.html)。
+> Plamo Linux 3.3 もOKとのことです ([qa:22638](https://okumuralab.org/~okumura/texfaq/qa/22638.html))。
 > [Red Hat](http://www.redhat.co.jp/)
-> の 9 は何もしなくても動くそうです ([(qa:18068)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/18068.html) [(qa:18074)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/18074.html),
+> の 9 は何もしなくても動くそうです（[qa:18068](https://okumuralab.org/~okumura/texfaq/qa/18068.html), [qa:18074](https://okumuralab.org/~okumura/texfaq/qa/18074.html),
 > Paul さんの
-> [（たぶん）15分でできる！RedHat Linux 9で日本語TeX環境の構築](http://www1.quolia.com/paulueno/))。
+> [（たぶん）15分でできる！RedHat Linux 9で日本語TeX環境の構築](http://www1.quolia.com/paulueno/)）。
 > より新しいバージョンの RPM は [土村さん](http://www.nn.iij4u.or.jp/~tutimura/) が公開されています。
-> SuSE は若干手直しを要するそうです [(qa:18732)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/18732.html)。
+> SuSE は若干手直しを要するそうです ([qa:18732](https://okumuralab.org/~okumura/texfaq/qa/18732.html))。
 > [suse-cjk](http://www.suse.de/~mfabian/suse-cjk/suse-cjk.html)
 > に pTeX や CJK-LaTeX の解説があります。
-> Turbo は xdvi は日本語化されていないけれども PS は作れるようです [(qa:23081)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/23081.html)。
+> Turbo は xdvi は日本語化されていないけれども PS は作れるようです ([qa:23081](https://okumuralab.org/~okumura/texfaq/qa/23081.html))。
 > Turbo 10 については
 > [TurboLinux 10 Tips](http://www.komoto.org/etc/tl10.html)
 > によれば少々いじるだけで日本語が使えるようです。
-> Fedora などについては [掲示板](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) を検索してください。
+> Fedora などについては [掲示板](https://okumuralab.org/~okumura/texfaq/qa/index.html) を検索してください。
 
 Solaris は NSUG CD-ROM にバイナリが含まれています。
 
