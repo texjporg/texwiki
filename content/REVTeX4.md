@@ -58,7 +58,7 @@ mktexlsr  (または texhash)
 ```
 
 natbib は
-[CTAN/macros/latex/contrib/supported/natbib](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/supported/natbib)
+[CTAN:/macros/latex/contrib/natbib/](https://mirror.ctan.org//macros/latex/contrib/natbib/)
 にあります。
 最新版は \[2000/07/24 7.0a (PWD)\] です。
 ディレクトリごと持ってきて、その中で次のようにします。
