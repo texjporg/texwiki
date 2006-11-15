@@ -176,7 +176,7 @@ WinShellなら設定なしで（PATHの設定も不要）、ツールバーの�
 
 を足す必要がありますが、aspellが標準で入っているシステムでは通常不要です。
 
-日本語混じりのTeX文書のスペルをチェックしたい場合には、[TeX FAQ 3898](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/3898.html)にある通り、
+日本語混じりの TeX 文書のスペルをチェックしたい場合には、[qa:3898](https://okumuralab.org/~okumura/texfaq/qa/3898.html) にある通り、
 
 ```
 (eval-after-load "ispell"
