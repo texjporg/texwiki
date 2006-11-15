@@ -32,7 +32,7 @@ CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出て�
 Times ベースの数式フォントとしては，ほかに
 [MicroPress](http://www.micropress-inc.com/)
 の [TM Math](http://www.micropress-inc.com/fonts/tmmath/tmmain.htm)
-($150.00 + 送料 $20.00) や，フリーのものでは [TX フォント](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/txfonts.html)
+($150.00 + 送料 $20.00) や，フリーのものでは TXFonts
 や，LaTeX の PSNFSS パッケージに含まれている mathptmx などがあります。
 
 - [数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)
@@ -109,7 +109,7 @@ teTeX ベースのシステムでないなら，他の設定もしなければ�
 まずはスタイルファイルです。
 いずれかの ZIP ファイルを展開してできる psnfss ディレクトリに LaTeX2e
 用の材料が収められています（[CTAN](/CTAN/) の
-[macros/latex/contrib/psnfssx/mathtime/](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/psnfssx/mathtime/)
+[macros/latex/contrib/psnfssx/mathtime/](https://mirror.ctan.org/macros/latex/contrib/psnfssx/mathtime/)
 にも同じものが入っています）。
 ここで次のようにします。
 
