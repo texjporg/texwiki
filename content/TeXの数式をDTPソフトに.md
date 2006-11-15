@@ -115,7 +115,7 @@ times，mathpazo，txfonts，pxfonts等を使った場合は，dvipsに基本35�
 （この項については内山さんからご教示をいただきました。） 
 
 Macでも，TeXからはUNIXやWindowsと同じType 1（PFB）フォントが使えますが，一般のアプリケーションからは使えません。 
-[CTAN](http://www.ring.gr.jp/pub/text/CTAN/) の fonts/cm/ps-type1/bluesky/ にある cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使いください（フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。 
+[CTAN](/CTAN/) の [fonts/cm/ps-type1/bluesky/](https://mirror.ctan.org/fonts/cm/ps-type1/bluesky/) にある cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使いください（フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。 
 
 インストールの場所は，Adobe製品だけから使うなら /Library/Application Support/Adobe/Fonts/Reqrd/Base/ ですが，Mac OS XではMxdviも同じフォントを使うことを考えれば，次の場所のいずれかに入れるのがいいかもしれません。
 Mac OS Xでは次の順にフォントを探してくれます（→ [Mac OS X: Font Locations and Their Purposes](http://docs.info.apple.com/article.html?artnum=106417)）。 
