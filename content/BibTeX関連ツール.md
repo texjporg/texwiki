@@ -29,7 +29,7 @@ pukiwiki: "BibTeX関連ツール"
 | [Pybliographer](http://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り |
 | [Sixpack](http://sourceforge.net/projects/sixpack) | perl perl-Tk | 文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。 |
 | [RefDB](http://refdb.sourceforge.net/) | UNIX/MacOS X/Windows | SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる |
-| [BibTool](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/) |   | .bibファイルの管理ソフト。[BibTool](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/bibtool/)のGUIラッパーとして[qbibman](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/qbibman/)がある |
+| [BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |   | .bib ファイルの管理ソフト。[BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) の GUI ラッパーとして [qbibman](https://mirror.ctan.org/biblio/bibtex/utils/qbibman/) がある |
 | [TeXBibMaker](http://www.econ.kobe-u.ac.jp/~koba/econ/tools/tbm.htm) | Excel2000が動くパソコン | 文献や論文の管理をExcel2000で行うためのExcelマクロ．EconLit+WinSPIRSのデータをTeX形式にコンバート |
 | [Ref for Windows](http://members3.jcom.home.ne.jp/refwin/) |  Windows | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXへのサポート](http://members3.jcom.home.ne.jp/refwin/html/latex.htm) |
 |  [scbib](http://namazu.org/~satoru/scbib/)  |  [Gauche](http://www.shiro.dreamhost.com/scheme/gauche/)（Schemeインタプリタ） |  Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能  |
@@ -50,9 +50,9 @@ pukiwiki: "BibTeX関連ツール"
 |  bibextract  | UNIX | bibファイルから検索条件に合致したエントリを抽出  |
 |  bibsort  | UNIX  | .bibファイルの中の文献データをsortするプログラム。emacsのBiBTeXモードのM-x bibtex-sort-bufferよりの断然速い  |
 | [BiBTeX 文献リスト作成支援マクロ](http://hide.maruo.co.jp/lib/macro/biblist102.html) | 秀丸 | Hidemaruで編集するときに便利なマクロ及び強調表示の定義ファイル |
-| [xbibfile](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/xbibfile/)  | gtk+ | .bibファイルの作成・検索などを対話的に行うGUIプログラム。日本語が通らない。  |
-| [tkbibtex](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/tkbibtex/) | tcl/tk  | .bibファイル作成編集プログラム。日本語表示OKだが、atokxでは入力できない。 |
-| [lookbibtex](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/lookbibtex/)  |   | .bibファイル内の検索と置換  |
+| [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | gtk+ | .bib ファイルの作成・検索などを対話的に行う GUI プログラム。日本語が通らない。 |
+| [tkbibtex](https://mirror.ctan.org/biblio/bibtex/utils/tkbibtex/) | tcl/tk | .bib ファイル作成編集プログラム。日本語表示 OK だが、atokx では入力できない。 |
+| [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
 | [bibcursed](http://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK |
 | [BibFile Editor](http://www.h7.dion.ne.jp/~yochian/macro.htm) | Windows95 | 簡易エディタ。 |
 | [bibclean](http://www.math.utah.edu/pub/bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム。日本語可。 |
@@ -79,8 +79,8 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 |  ams2bib  | Unixなど  | AmSTeX文献をBibTeX形式に変換  |
 | [medlinebib](http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html) | UNIX? | MEDLINE形式データのインポート |
 | [ichu2bibtex.pl](http://shakan2.tm.nagasaki-u.ac.jp/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
-| [rfc2bib](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/rfc2bib/) | awk  | rfc-index.txtをBibTeX形式に変換  |
-| [refer-tools](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/utils/refer-tools/)  | perl | refer形式をBibTeX形式に変換 |
+| [rfc2bib](https://mirror.ctan.org/biblio/bibtex/utils/rfc2bib/) | awk | rfc-index.txt を BibTeX 形式に変換 |
+| [refer-tools](https://mirror.ctan.org/biblio/bibtex/utils/refer-tools/) | perl | refer 形式を BibTeX 形式に変換 |
 |  [r2bib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib)  |   |  referからBibTeXに変換するツールだが、[EndNoteに対応した](http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html)。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。  |
 | [Writer2BibTeX](http://www.hj-gym.dk/~hj/writer2latex/) | Java, OpenOffice.org | Writer文書から文献情報を抜き出し、BibTeX形式で保存するOpenOffice.orgのマクロ |
 | [mathsci2bibtex](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/mathsci2bibtex) | perl | MathSciからBibTeXへの変換 |
