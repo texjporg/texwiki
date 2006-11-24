@@ -17,6 +17,8 @@ TeXなら簡単にきれいな数式ができます。
 
 このページはまだ作り始めたばかりです。ご要望をお寄せください。 
 
+\[追記\] 今ならLatin ModernフォントのOpenType版があります。
+
 ## 簡単な数式なら…… {#td464375}
 
 TeX で無指定で使われるフォントは，本文は Computer Modern Roman 10pt (cmr10)，数式は Computer Modern Math Italic 10pt (cmmi10) です。
@@ -206,6 +208,8 @@ gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -dNOPAUSE -dBATCH -dSAFER
 gswin32c -q -sDEVICE=epswrite -sOutputFile=testeq2.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop testeq.eps
 ```
 
+端が欠ける場合は -dEPSCrop を外せばいいようです。
+
 ## 他の方法 {#b00fa762}
 
 ### Equation Magic（Lite） {#e1e0d1fe}
@@ -225,6 +229,10 @@ WordやPowerPointにWindowsのOLE機能を使って数式を貼り込むもの�
 ## リンク {#qed253c5}
 
 - [Computer ModernフォントのOpenType版](http://www.appliedsymbols.com/cm/) (商品)
+
+\[追記\] 今ならLatin ModernフォントのOpenType版があります。
+
+[CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/)
 
 ## オマケ {#u03ab148}
 
