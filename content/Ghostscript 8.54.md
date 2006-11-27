@@ -467,7 +467,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 - [GNU GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
 - [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
-- GSview 4.8: [http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/) の中の [gsv48w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv48w32.exe)
+- GSview 4.8: [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) の中の [gsv48w32.exe](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv48w32.exe)
 
 ### インストール {#a4d9c6ea}
 
@@ -556,12 +556,12 @@ OpenType フォーマットの CID-keyed フォントファイル
 PostScript 名に変えて（例えば “ヒラギノ明朝 Pro W3.otf” → “HiraMinPro-W3”）
 gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
 
-### TrueType データフォント {#h311bbbd}
+### TrueType outline fonts {#h311bbbd}
 
 拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType
-フォーマットの TrueType データ（2次 B-スプライン曲線データ）フォントファイルは
-gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs8.54\lib\cidfmap 記述時に
-gs\fonts\ までのパスを省略できます。
+フォーマットの TrueType outline （2次 B-スプライン曲線アウトライン）フォント
+ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs8.54\lib\cidfmap
+記述時に gs\fonts\ までのパスを省略できます。
 
 ### gs\gs8.54\lib\cidfmap の記述方法 {#e2200e36}
 
@@ -749,7 +749,7 @@ composefont pop
 /Gulim                         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 0 >> ;
 /Gungsuh                       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 2 >> ;
 
-%%% TrueType fonts in Microsoft Office Professional Edition 2003
+%%% TrueType fonts in Microsoft Office 2003
 /HGMinchoB                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRMB.TTC)      /SubfontID 0 >> ;
 /HGMinchoE                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRME.TTC)      /SubfontID 0 >> ;
 /HGSoeiPresenceEB              << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRPRE.TTC)     /SubfontID 0 >> ;
@@ -758,6 +758,9 @@ composefont pop
 /HGSoeiKakugothicUB            << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSGU.TTC)     /SubfontID 0 >> ;
 /HGMaruGothicMPRO              << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSMP.TTF)                  >> ;
 /HGSoeiKakupoptai              << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRPP1.TTC)     /SubfontID 0 >> ;
+/HGKyokashotai                 << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRKK.TTC)      /SubfontID 0 >> ;
+/HGSeikaishotaiPRO             << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRSKP.TTF)                  >> ;
+/HGGyoshotai                   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRGY.TTC)      /SubfontID 0 >> ;
 
 %%% Arphic TrueType fonts
 %%% See ftp://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
