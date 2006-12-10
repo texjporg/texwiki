@@ -16,7 +16,50 @@ AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した 
 アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。
 角藤さんの W32TeX を初めとする多くの TeX システムには最初から含まれていますが，
 [http://www.ams.org/tex/amslatex.html](http://www.ams.org/tex/amslatex.html) や
-[CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することができます。
+[CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
+
+### amsmath {#h5d7d27f}
+
+amsmath は数式に関する各種のコマンド・環境を定義したパッケージです。
+使用するにはプリアンブルに
+
+```
+\usepackage{amsmath}
+```
+
+と書きます（下記の amsart, amsbook, amsproc のいずれかのクラスファイルを使用する場合は自動的に読み込まれるのでこの記述は不要です）。
+基本的なマニュアルは [amsldoc.pdf](https://mirror.ctan.org/macros/latex/required/amslatex/math/amsldoc.pdf)
+（$TEXMF/doc/latex/amslatex/math/amsldoc.pdf）です。
+
+### amscls {#r3f5ce5e}
+
+#### クラスファイル {#j6f14098}
+
+アメリカ数学会の組版ルールに従った文書を作るためのクラスファイルとして，
+amsart（論文用），amsbook（書籍用），amsproc（プロシーディングス用）が用意されています。
+使用するには
+
+```
+\documentclass{amsart}
+```
+
+などと書きます。
+基本的なマニュアルは [instr-l.pdf](https://mirror.ctan.org/macros/latex/required/amslatex/classes/instr-l.pdf)
+（$TEXMF/doc/latex/amslatex/classes/instr-l.pdf）です。
+
+#### amsthm {#dedf34bf}
+
+定理型の環境を作成するためのパッケージです。
+上記のクラスファイルを使う場合は自動的に読み込まれますが，
+jarticle など上記以外のクラスファイルを使う場合も
+
+```
+\usepackage{amsthm}
+```
+
+と書くことで明示的に読み込むことができます。
+基本的なマニュアルは [amsthdoc.pdf](https://mirror.ctan.org/macros/latex/required/amslatex/classes/amsthdoc.pdf)
+（$TEXMF/doc/latex/amslatex/classes/amsthdoc.pdf）です。
 
 ### バグ {#f1f7b248}
 
