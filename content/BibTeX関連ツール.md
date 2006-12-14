@@ -17,7 +17,7 @@ pukiwiki: "BibTeX関連ツール"
 |---|---|---|
 |  [BibTexMng](http://www.imamod.ru/~vab/bibtexmng/)  | Windows2000/XP | BibTeX編集ソフト 最新版:0.5 (2005/09/26)  |
 |  [JavaBib](http://www.tug.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
-|  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://csb.stanford.edu/nbatada/JBibtexManager/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる |
+|  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://csb.stanford.edu/nbatada/JBibtexManager/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  |  MacOSX  |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 | [やまこ２号](http://homepage.mac.com/tukanobu/sonota/yamako2.html) |  MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4 |  文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる |
 |  [bibdb](http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame)  | DOS/Windows  | 日本語が扱えない |
@@ -93,6 +93,14 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 
 BibTeX形式に変換するWebアプリが公開されている
 
+#### [Google Scholar](http://scholar.google.com/) {#ydd7d667}
+
+- [BibTeX文献情報のWeb検索と取得](http://keijisaito.info/arc/BibTeX/get_bib.htm#getgoo)
+
+#### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
+
+- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/l2a.htm#op_bt)
+
 #### PubMed {#h4890ebf}
 
 - [TeXMed - a BibTeX interface for PubMed](http://www.sbg.bio.ic.ac.uk/~mueller/TeXMed/)
@@ -119,6 +127,7 @@ BibTeX形式に変換するWebアプリが公開されている
 | [bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/) | UNIX/Windows | .bibファイルをHTMLに変換。abstract, url, ps, pdfなどを勝手にリンク付けしてくれる。[pubabstract.perl](http://www.reitter-it-media.de/software/pubabstract.perl)と組み合わせると、1文献1ファイルのHTMLも用意してくれる。日本語はOKだがjbibtexと日本語用bstファイルを使用する必要あり。[使用例1](http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5)。VinePlusに収録されいてるので、VineLinuxユーザはapt-getでインストール可能。。  |
 | [Bib2HTML](http://galland.stephane.free.fr/arakhne.org/bib2html/) | perl |  Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaffの[bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/)とほぼ同名であるため注意。 |
 | [bib2xhtml](http://www.spinellis.gr/sw/textproc/bib2xhtml/) | perl | .bibファイルをXHTML1.0に変換 |
+| [Jab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm#jbib_export) | Java | JabRefからhtmlへエクスポート |
 
 <br>
 
