@@ -413,3 +413,5 @@ fontmapline "-foo bar <baz.pfb";
 ```
 
 とすると、この内容と一致するものを削除します。
+
+なお、新しい MetaPost では pool ファイル は無くなっています。
