@@ -34,38 +34,11 @@ pukiwiki: "TeX installers for Windows"
 
 <!-- TeX の初心者であって，計算機の初心者じゃないこともありますよね? -->
 
-## texinst {#v558e4b5}
-
-- <strong>URL</strong>：[http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)
-- <strong>作者</strong>：角藤 亮さん
-- <strong>初心者オススメ度</strong>：★★★☆☆
-- <strong>ライセンス</strong>：フリーウェア
-- <strong>インストールする対象</strong>：W32TeX バイナリ
-- <strong>ユーザーインターフェース</strong>：CUI（コマンドプロンプト）
-- <strong>ネット・ローカルインストール</strong>：ローカルのみ
-- <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
-- <strong>長所</strong>：最もシンプルなインストーラー．
-    自作のバッチファイル update.bat などを自分用に用意すれば，
-    他の処理とも連携できます．
-
-- <strong>短所</strong>：Windows の GUI しか触ったことのない人や，
-    初心者には厳しいかもしれません．
-    しかしながら，もっとも TeX システムというものを，
-    TDS から見せてくれるところがよい．
-    初心者の方も勉強だと思って，
-    これを用いて TeX 環境を構築されるのが一番いいです．
-
-- <strong>備考</strong>：w32tex.msi という GUI インストーラーも用意されています．
-    こちらは環境変数 PATH が自動で設定されます．
-    しかしながら，「アプリケーションの追加・削除」に登録されるので，
-    （好みの問題ですが，）それくらいならば，
-    texinst の方で初めからインストールした方がよいかもしれません．
-
 ## TeXインストーラ3（kakuto3.exe） {#w0d7240a}
 
 - <strong>URL</strong>：[http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/index.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/index.html)
 - <strong>作者</strong>：阿部 紀行さん
-- <strong>初心者オススメ度</strong>：★★★★★
+- <strong>初心者オススメ度</strong>：<span style="color:#ff9933;">★★★★★</span>
 - <strong>ライセンス</strong>：ソースは公開されている．
     個人での使用における使用・改変に制限なし．
     ただし，再配布を行う場合に許可が必要．
@@ -93,6 +66,64 @@ pukiwiki: "TeX installers for Windows"
 
 - <strong>備考</strong>：TeX インストーラ 3 ローカル特化バージョンも別途公開されています．
     その他，多数の TeX 関連ツールおよび解説をされています．
+
+## texinst {#v558e4b5}
+
+- <strong>URL</strong>：[http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)
+- <strong>作者</strong>：角藤 亮さん
+- <strong>初心者オススメ度</strong>：★★★☆☆
+- <strong>ライセンス</strong>：フリーウェア
+- <strong>インストールする対象</strong>：W32TeX バイナリ
+- <strong>ユーザーインターフェース</strong>：CUI（コマンドプロンプト）
+- <strong>ネット・ローカルインストール</strong>：ローカルのみ
+- <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
+- <strong>長所</strong>：最もシンプルなインストーラー．
+    自作のバッチファイル update.bat などを自分用に用意すれば，
+    他の処理とも連携できます．
+
+- <strong>短所</strong>：Windows の GUI しか触ったことのない人や，
+    初心者には厳しいかもしれません．
+    しかしながら，もっとも TeX システムというものを，
+    TDS から見せてくれるところがよい．
+    初心者の方も勉強だと思って，
+    これを用いて TeX 環境を構築されるのが一番いいです．
+
+- <strong>備考</strong>：w32tex.msi という GUI インストーラーも用意されています．
+    こちらは環境変数 PATH が自動で設定されます．
+    しかしながら，「アプリケーションの追加・削除」に登録されるので，
+    （好みの問題ですが，）それくらいならば，
+    texinst の方で初めからインストールした方がよいかもしれません．
+
+## MyTeX Netinstaller（setup(-ja).exe） {#d5f5ce48}
+
+- <strong>URL</strong>：[http://www.math.s.chiba-u.ac.jp/~myamamoto/mytex/mytex.html](http://www.math.s.chiba-u.ac.jp/~myamamoto/mytex/mytex.html)
+- <strong>作者</strong>：山本 宗宏さん
+- <strong>初心者オススメ度</strong>：★★☆☆☆
+- <strong>ライセンス</strong>：GPL
+- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout，Ghostscript，
+    様々なクラスファイル・マクロ，関連ツール，TeX 関連のドキュメントなど．
+    （パッケージャーが増えて，パッケージが増えれば，どんどん広がる．）
+
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
+- <strong>環境変数・レジストリ</strong>：（今のところ，）手動．
+- <strong>長所</strong>：[Meadow](http://www.meadowy.org/) や [Cygwin](http://www.cygwin.com/) で見慣れたユーザーインターフェース．
+    パッケージャーが増えて MyTeX 用のパッケージ置き場の選択肢が増えれば，
+    もっと面白くなる！
+    豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
+    どれだけ簡単になることか，計り知れません．
+    追加パッケージの作成が，GNU Make と UNIX シェルというテキストベースなので，
+    比較的簡単にパッケージ作成ができ，パッケージに関する様々な情報を付加することや，
+    パッケージどうしの依存関係も対処することができる．またバージョン管理もできる．
+    特に，Windows でなくても，Linux や UNIX，Cygwin などからでも
+    開発からパッケージ作成までできる．
+
+- <strong>短所</strong>：（開発者以外の）パッケージャーが基本的に必要です．
+    現段階では GUI のインストーラーだとしても，
+    TeX や Windows に関して，全くの無知の方にとっては使えないインストーラーなので，
+    初心者にとってやや難しいインストーラーとなっています．
+
+- <strong>備考</strong>：「何でもかんでも GUI にしない，ブラックボックスにしない」という精神が，MyTeX の仕様にも影響しています．
 
 ## Cygwin で日本語 TeX {#l3e305ae}
 
@@ -138,37 +169,6 @@ pukiwiki: "TeX installers for Windows"
 
 - <strong>備考</strong>：黒木さんのドキュメントは，非常に丁寧に書かれていますので，
     一読されるとよいです．
-
-## MyTeX Netinstaller（setup(-ja).exe） {#d5f5ce48}
-
-- <strong>URL</strong>：[http://www.math.s.chiba-u.ac.jp/~myamamoto/mytex/mytex.html](http://www.math.s.chiba-u.ac.jp/~myamamoto/mytex/mytex.html)
-- <strong>作者</strong>：山本 宗宏さん
-- <strong>初心者オススメ度</strong>：★★☆☆☆
-- <strong>ライセンス</strong>：GPL
-- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout，Ghostscript，
-    様々なクラスファイル・マクロ，関連ツール，TeX 関連のドキュメントなど．
-    （パッケージャーが増えて，パッケージが増えれば，どんどん広がる．）
-
-- <strong>ユーザーインターフェース</strong>：GUI
-- <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
-- <strong>環境変数・レジストリ</strong>：（今のところ，）手動．
-- <strong>長所</strong>：[Meadow](http://www.meadowy.org/) や [Cygwin](http://www.cygwin.com/) で見慣れたユーザーインターフェース．
-    パッケージャーが増えて MyTeX 用のパッケージ置き場の選択肢が増えれば，
-    もっと面白くなる！
-    豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
-    どれだけ簡単になることか，計り知れません．
-    追加パッケージの作成が，GNU Make と UNIX シェルというテキストベースなので，
-    比較的簡単にパッケージ作成ができ，パッケージに関する様々な情報を付加することや，
-    パッケージどうしの依存関係も対処することができる．またバージョン管理もできる．
-    特に，Windows でなくても，Linux や UNIX，Cygwin などからでも
-    開発からパッケージ作成までできる．
-
-- <strong>短所</strong>：（開発者以外の）パッケージャーが基本的に必要です．
-    現段階では GUI のインストーラーだとしても，
-    TeX や Windows に関して，全くの無知の方にとっては使えないインストーラーなので，
-    初心者にとってやや難しいインストーラーとなっています．
-
-- <strong>備考</strong>：「何でもかんでも GUI にしない，ブラックボックスにしない」という精神が，MyTeX の仕様にも影響しています．
 
 ## Cygwin JE {#t8ab1da9}
 
