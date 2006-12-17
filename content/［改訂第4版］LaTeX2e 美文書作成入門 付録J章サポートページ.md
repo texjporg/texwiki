@@ -21,11 +21,13 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p.359 註10 ラテンアルファベットによる対応づけによる入力（ASCII翻字入力）ではinputenc指定は不要です。
 
-- p.365 註28 「ギリシア文字の直接入力はサポートされていません」---Babel本体では未サポートですが，オプションで iso-8859-7.def が配布されています（CTAN/fonts/greek/package-babel）。現代ギリシア語については\usepackage\[iso-8859-7\]{inputenc}で直接入力ができます（古典語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
+- p.360 下から13-10行目「ギユメ」→「ギュメ」（稲垣）---「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
-- p.368 表J.9 Babelオリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがありますので，これらの文字を使用する場合は必ずteubner.styを使って下さい。teubner.styの使用法，出力例についてはそのうちまとめてみたいと思っています。
+- p.365 註28 「ギリシア文字の直接入力はサポートされていません」---Babel本体では未サポートですが，オプションで iso-8859-7.def が配布されています（CTAN/fonts/greek/package-babel/encodings/）。現代ギリシア語については\usepackage\[iso-8859-7\]{inputenc}で直接入力ができます（古典語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
 
-- p.369 上段 インストールディレクトリは c:\usr\local\share\texmf\\... と記してありますが，現在（TDS 1.1）ではユーザによる追加ファイルは texmf-local 以下ないし $HOME/texmf 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf 以下でも結構です。
+- p.368 表J.9 Babelオリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけteubner.styを使って下さい。teubner.styの使用法，出力例についてはそのうちまとめてみたいと思っています。
+
+- p.369 上段 インストールディレクトリは c:\usr\local\share\texmf\\... と記してありますが，現在（TDS 1.1）ユーザによる追加ファイルは texmf-local 以下ないし $HOME/texmf 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf 以下でも結構です。
 
 - p.369 下段 「日本語環境（pTeX）で使用する場合はこれをOT2用に改変し，フォーマットファイルを作り直す必要が」---ptetex3ではすでにOT2用の設定になっています。従って改変不要です。
 
@@ -33,7 +35,11 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p.374 「ギリシア語...は...直接入力を行うことはできません」---上記p.365 註28 errata を参照下さい。
 
-- p.385 mongolian（モンゴル語） \begin{LRtatepar}{3.8cm}...\end{LRtatepar}の指定を使うには武蔵工大・井上先生作成の [LRtate.sty](http://www.ns.musashi-tech.ac.jp/%7einoue/Pages/TeX/LRtate.sty) が必要です。p.388にもURLが挙げてあります。
+- p.382 上から8行目\end{bebtext}→\end{hebtext}（稲垣）
+
+- p.385 mongolian（モンゴル語） \begin{LRtatepar}{6cm}...\end{LRtatepar}の指定を使うには武蔵工大・井上先生作成の [LRtate.sty](http://www.ns.musashi-tech.ac.jp/%7einoue/Pages/TeX/LRtate.sty) が必要です。p.388にもURLが挙げてあります。
+
+- p.385 ctib（チベット語） dbumedTeXのバージョンが上がっています。[トップページ](http://www.aliadne.net/field/tibet/)を参照下さい。
 
 - p.389 GT書体 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html)ではGT書体を使うためのパッケージ [gtftex.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/gtftex.lzh) が提供されています。
 
