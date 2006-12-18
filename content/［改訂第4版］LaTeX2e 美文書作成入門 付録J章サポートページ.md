@@ -45,10 +45,14 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p.385 ctib（チベット語） dbumedTeXのバージョンが上がっています。[トップページ](http://www.aliadne.net/field/tibet/)を参照下さい。
 
-- p.389 GT書体 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html)ではGT書体を使うためのパッケージ [gtftex.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/gtftex.lzh) が提供されています。
+- p.389 GT書体  多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ [gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および [gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html)でもGT書体を使うためのパッケージ [gtftex.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/gtftex.lzh) が提供されています。
+
+- p.389 『今昔文字鏡』  こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で [mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Windows版），
+    [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （PC-UNIX版）が提供されています。
 
 ## コメント {#l1a73338}
 
 - とりあえず付録J章のerrataを作ってみました。ご意見等ありましたらよろしくお願いします。 -- 栗山 2006-12-18 (月) 01:03:02
 - 項目追加，細かい修正を行いました。 -- 栗山 2006-12-18 (月) 15:33:11
 - すみません，また修正となりました。 -- 栗山 2006-12-18 (月) 16:13:58
+- 堀田先生のページにリンクを貼っていただき，ありがとうございます。『今昔文字鏡』についても同様の記述を追加しました。 -- 栗山 2006-12-18 (月) 23:59:05
