@@ -101,10 +101,12 @@ BibTeX形式に変換するWebアプリが公開されている
 
 - [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/l2a.htm#op_bt)
 
-#### PubMed {#h4890ebf}
+#### [PubMed](http://pubmed.gov) {#h4890ebf}
 
 - [TeXMed - a BibTeX interface for PubMed](http://www.sbg.bio.ic.ac.uk/~mueller/TeXMed/)
 - [An alternative interface to the PubMed medical literature database](http://www.pmbrowser.info/)
+- [PM2BibTex](http://misshie.jp/pm2bibtex/)
+    PubMed IDをBibTexエントリーに変換するWebツール．BioRubyの機能をそのまま使いました．FireFoxのQuick Serch機能と[組み合わせると](http://misshie.jp/iowa/index.php?pm2bibtex)それなりに便利に使えるのではないでしょうか．
 
 #### [Web of Science](http://wos.consortium.ch/) {#w19853cd}
 
