@@ -47,16 +47,16 @@ pst-eucl や uml があります。
 日本語も使えますし，
 曲線のパス長も METAFONT や MetaPost より長くても大丈夫のようです。
 
-PSTricks はプリンストン大の [Timothy van Zandt](http://www.princeton.edu/~tvz/) が作り，
+PSTricks は [Timothy Van Zandt](http://faculty.insead.edu/vanzandt/) (開発当時プリンストン大, 現フランス・INSEAD) が作り，
 フランスの Denis Girou によって育てられ，
-Sebastian Rahtz も加わって，
+[Sebastian Rahtz](http://users.ox.ac.uk/~rahtz/) も加わって，
 1997年春に PSTricks 97 として集大成されました。
 その後も修正作業は続いています。
 PSTricks 2004 は Herbert Voss と Rolf Niepraschk がメンテナンスを行い、
 PSTricks 2005 及び PSTricks 2006 は Herbert Voss が管理しています。
 LPPL ライセンスにより配布されているため、著者の Zandt 以外の人間が
 変更を加えた場合は、 <strong>PSTricks</strong> とは異なる名前に
-改めなければならないはずですが、 Girou, Rahts, Voss には、著者本人から、
+改めなければならないはずですが、 Girou, Rahtz, Voss には、著者本人から、
 例外として、自由な変更の許可が出ているようです。
 
 <!-- Girou による -->
@@ -243,7 +243,7 @@ TeX から見た場合は、幅、高さ、深さ、いずれも 0 のボック�
 \end{pspicture}
 ```
 
-これで、幅 |X-x| 、高さ |Y-y| 、深さ 0 のボックスが描画用に確保されます。
+これで、幅 |X &minus; x| 、高さ |Y &minus; y| 、深さ 0 のボックスが描画用に確保されます。
 x, X, y, Y は整数でなくても構いません。単位を省略すると現在の unit が補われます。
 この環境内には、 TeX はタイプセットしませんから、好きなように
 グラフィック・オブジェクトを配置できます。 shift オプションを使うと、
@@ -253,7 +253,7 @@ x, X, y, Y は整数でなくても構いません。単位を省略すると現
 \end{pspicture}
 ```
 
-高さは r+|Y-y| に、深さは -r になります。
+高さは r + |Y &minus; y| に、深さは &minus;r になります。
 
 描画用に領域を確保したからと言って、その範囲にしか描画できない訳では
 ありません。ところが、グラフをプロットする時など、これでは、
@@ -395,13 +395,12 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 TeX のマクロ・テクニックや、 tx@NodeDic の内部構造に関する PostScript の知識が
 必要になって来るため、ここでは、点 A を x 座標と偏角で与え、
 点 B は x 座標が A と同じ、 y 座標が O と同じ点として、定義しています。
-点 H は、座標軸を {{< katex >}}\angle\mathrm{BOA}{{< /katex >}} 回転した状態で、
+点 H は、座標軸を &ang;BOA 回転した状態で、
 x 座標が B と同じ、 y 座標が O と同じ点として、定義しています。
 もし、点の座標をすべて具体的に与えるならば、回転や拡大・縮小によって、
 座標系が変化する度に、同じ点でもその座標を計算し直さなければなりません。
 点に名前をつけておけば、座標系が変わっても、何時でも同じ名前で参照できます。
-いかがでしょうか？
-もっと複雑な作図をするのであれば、 pst-eucl を使用した方が良いでしょう。
+いかがでしょうか？ もっと複雑な作図をするのであれば、 pst-eucl を使用した方が良いでしょう。
 
 #### 逆ポーランド式記法 {#lb61b314}
 
@@ -448,7 +447,7 @@ x 2 exp x sub 2 x x 1 add mul exp mul
 ```
 
 と書き表される事になります。
-これを<strong>逆ポーランド式記法 (Reverse Polish Notation)</strong>と呼びます。
+これを<strong>逆ポーランド式記法 (Reverse Polish Notation)</strong> と呼びます。
 逆ポーランド式記法で表記された数式は、後入先出の1次元記憶領域さえあれば、
 容易に処理できるため、計算機の実装には良く使われます。
 実際、これが、 PostScript が理解できる、計算式の表記法です。
@@ -672,9 +671,9 @@ x 成分と y 成分は | で区切ります。
 小さければ、これで、すべての零点が、洩れも重複もなく、求まります。
 {{< katex >}}n{{< /katex >}} が大きい時は、この場合、正確な値 {{< katex >}}-\cos\frac{(2k-1)\pi}{n}{{< /katex >}}
 が分かっている訳ですから、それを第一近似として与えてやれば良いでしょう。
-さて、 {{< katex >}}C_{k}{{< /katex >}} を y 軸方向に 1 平行移動した点を {{< katex >}}C'_{k}{{< /katex >}}
+さて、 {{< katex >}}C_{k}{{< /katex >}} を y 軸方向に 1 平行移動した点を {{< katex >}}C^{\prime}_{k}{{< /katex >}}
 と名付けます。原点を中心として半径 1 の円を描き、その円と直線
-{{< katex >}}C_{k}C'_{k}{{< /katex >}} の交点を {{< katex >}}D_{k}{{< /katex >}}, {{< katex >}}E_{k}{{< /katex >}} と名付けます。
+{{< katex >}}C_{k}C^{\prime}_{k}{{< /katex >}} の交点を {{< katex >}}D_{k}{{< /katex >}}, {{< katex >}}E_{k}{{< /katex >}} と名付けます。
 
 #### 例(2) {#ye01953c}
 
@@ -795,3 +794,25 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 のような Makefile を作れば，make を実行することでまともな BoundingBox を持った (表した) fig.pdf, fig.bb, fig.eps を得ることができるように思います．\[<strong>追記</strong>: <em>しかし，これでも少し小さめに BoundingBox が測られるように思います．GSView の \[File\] -> \[PS to EPS\] で変換したときくらいの BoundingBox を持った矩形を切り出したいのですが，手作業をいれずにできる方法を誰かご存じないでしょうか？</em>\]
 
 強引に，でもよければ，ghostscript を用いて BoundingBox を得て，それを eps ファイルに入れ込むシェルスクリプトを [ここ](http://www.misojiro.t.u-tokyo.ac.jp/suribt/#tips_boundingbox) に載せましたので，どうぞ．
+
+### 実際に<em>使える</em>画像ファイルを作るには (別解2) {#r5c8eeee}
+
+[epstool](http://www.cs.wisc.edu/~ghost/gsview/epstool.htm) を使うと，
+よい BoundingBox を得ることができます．
+PSTricks で描く図だけを別ファイル foo.tex に保存して，
+
+```
+$ (p)latex foo
+$ (p)dvips(k) -E foo
+$ epstool --copy --bbox foo.ps foo.eps
+```
+
+などとします．さらに
+
+```
+$ epstopdf foo.eps foo.pdf
+$ ebb foo.pdf
+```
+
+としておけば，pdflatex, dvipdfmx, dvips などいろいろなドライバで共通に使える画像
+セットになります．
