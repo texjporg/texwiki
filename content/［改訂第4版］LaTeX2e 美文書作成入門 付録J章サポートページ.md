@@ -28,7 +28,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 369 上段 インストールディレクトリは C:\usr\local\share\texmf\\... と記してありますが，現在 (TDS 1.1) ユーザによる追加ファイルは $TEXMFLOCAL// (&asymp; texmf-local//) 以下ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf// 以下でも結構です。
 
-- p. 369 中段 LH フォントのインストール――現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と [lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf”を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
+- p. 369 中段 LH フォントのインストール――現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と [lhfnt35f-source.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
 - p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」―― [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 
