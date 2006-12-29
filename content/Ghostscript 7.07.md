@@ -53,8 +53,8 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 - jpegsrc.v6b.tar.gz [CTAN:support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz](https://mirror.ctan.org/support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz)
 
 次のものの Windows 版 （シンボリックリンクを含まないもの）は
-[Ring Server](http://www.ring.gr.jp/)
-の [/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+[Ring Server](http://www.dnsbalance.ring.gr.jp/)
+の [/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 から入手できます。オリジナルは [gs-cjk](ftp://ftp.gyve.org/pub/gs-cjk/)
 にあります。 Unix 系 OS の場合は
 [ここ](http://oku.edu.mie-u.ac.jp/mirror/gs-cjk/)
