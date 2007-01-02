@@ -48,6 +48,8 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 377 註62 図J.4がありませんが，横の「CJK 字体」図のことです。
 
+- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを CTAN directory [http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html) に掲載しました。（稲垣）
+
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
 - p. 385 mongolian （モンゴル語）――\begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには武蔵工大・井上先生作成の [LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URL が挙げてあります。
