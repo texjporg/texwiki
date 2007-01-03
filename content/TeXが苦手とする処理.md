@@ -28,7 +28,7 @@ pukiwiki: "TeXが苦手とする処理"
 - 丸数字などの字形をもったフォントを利用:
     - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
-        - 【注意】 “"” は 16 進数の識別子で，“'” にすれば 8 進数，何も付けなければ 10 進数でも書けます。例えば "AC = '254 = 172 です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+        - 【注意】 “"” は 16 進表記の識別子で，“'” にすれば 8 進表記，何も付けなければ 10 進表記でも書けます。例えば "AC = '254 = 172 です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
     - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
 - 丸の中身と丸を合成:
     - \textcircled マクロ（LaTeX 自身が提供）
@@ -112,3 +112,4 @@ framed パッケージが提供する framed 環境，shaded 環境
 
 - [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09用）
+- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
