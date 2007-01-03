@@ -47,10 +47,13 @@ kakenhi.cls というファイルは kkhgrp.mac の先頭に次のものを加�
 これで min10 などの代わりに jis フォントが使われるようになります。
 
 ```
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% -*- mode: LaTeX; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*- 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% kakenhi.cls
 %%% based on kkhgrp.mac
-% use jis and jisg
+
+%%% use jis and jisg
 \DeclareFontShape{JY1}{mc}{m}{n}{<-> s * jis}{}
 \DeclareFontShape{JY1}{gt}{m}{n}{<-> s * jisg}{}
 \def\@setfontsize#1#2#3{%
@@ -68,19 +71,19 @@ kakenhi.cls というファイルは kkhgrp.mac の先頭に次のものを加�
 \renewcommand{\normalsize}{\@setfontsize\normalsize\@xiipt\@xivpt}
 \normalsize
 
-% from latex209.def
-% LaTeX 2.09の命令をたくさん使った場合は \input latex209.def してください。
-% 以下は latex209.def から最小限の内容をコピーしたものです。
+%%% from latex209.def
+%%% LaTeX 2.09 の命令をたくさん使った場合は \input latex209.def して下さい。
+%%% 以下は latex209.def から最小限の内容をコピーしたものです。
 \newdimen\@maxsep
 \newdimen\@dblmaxsep
 \def\@magscale#1{ scaled \magstep#1 }
 \let\gtfam\gtfamily
 \let\rm\rmfamily
 \let\bf\bfseries
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ```
 
-上の方は新ドキュメントクラスから取ったものですが，そのままだと一部表示がおかしくなるので，¥kanjiskip のマイナス部分を少し増やしました。
+上の方は新ドキュメントクラスから取ったものですが，そのままだと一部表示がおかしくなるので，\kanjiskip のマイナス部分を少し増やしました。
 
 kakenhi.cls はもう1か所だけ修正が必要です。
 
@@ -107,7 +110,7 @@ kakenhi.cls はもう1か所だけ修正が必要です。
 フォントになるはずです。
 
 もっとブラッシュアップしたいところがありますが，とりあえずこれだけで
-¥usepackage{okumacro}
+\usepackage{okumacro}
 のようにして LaTeX2e 用のパッケージが問題なく読み込めるようになります。
 
 ***
