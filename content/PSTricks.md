@@ -316,44 +316,106 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 
 #### \pscustom {#ld3ac648}
 
-\pscustom を用いて、複数のグラフィック・オブジェクトを一つに連結できます。
-これが特に有用なのは、塗りつぶしと、クリッピング・パスの設定です。 <!-- 塗りつぶしと liftpen の解説が必要 -->
+\pscustom を用いて、複数のグラフィック・オブジェクトを一体として扱えます。
+これが特に有用なのは、塗りつぶしと、クリッピング・パスの設定ですが、
+その前に、 PostScript では、曲線(直線を含む)を描くなど、パスを構成する時、
+「現在の位置」 (current point) をパスに沿って移動させる事に注意します。
+そこで、二つのパスを併せて、新たに一つのパスにするには、初めのパスの
+終点を次のパスがどのように扱うかを考えなければなりません。
+それを指定するのが、 liftpen オプションです。
+デフォルトの liftpen=0 では、初めのパスの終点が、次のパスの始点として
+扱われます。一方、 liftpen=1 では、初めのパスの終点から次のパスの明示された
+始点まで、線分が引かれ、その点が、始点になります。
+\psarc のように、この違いに影響を受けないオブジェクトもありますが、
+\pscurve のように、影響を受けるオブジェクトもあります。
+関数をプロットして領域を塗りつぶす時などに、 plotstyle=curve
+にしている時など、気をつける必要があります。
+\psline も linearc の値が 0 でなければ、影響を受けます。
 
 ```
-\documentclass{article}
-\usepackage[x11names]{pstricks}
+\documentclass{minimal}
+\usepackage{pst-plot}
+\psset{unit=0.4,linewidth=4pt}
+\parindent=0pt
 \begin{document}
-\psset{unit=0.6,linestyle=none}
-\noindent\begin{pspicture}(-4,-4)(4,4)
-\begin{psclip}{\pscircle(-2,0){3}\pscircle(2,0){3}}
-\psframe[fillstyle=vlines,hatchcolor=CadetBlue3](-4,-4)(4,4)
-\end{psclip}
-\end{pspicture}
-\hfill\begin{pspicture}(-4,-4)(4,4)
-\begin{psclip}{\pscustom{\pscircle(-2,0){3}\pscircle(2,0){3}}}
-\psframe[fillstyle=vlines,hatchcolor=DarkSeaGreen1](-4,-4)(4,4)
-\end{psclip}
-\end{pspicture}
+\begin{pspicture*}(-20,-6)(18,6)
+\psset{plotstyle=curve}
+\rput(-17,-5){\pscustom{\psline(0,0)\psplot[liftpen=0]{0}{10}{11 1 x add div 1 sub}}}
+\rput(-5,-5){\pscustom{\psline(0,0)\psplot[liftpen=1]{0}{10}{11 1 x add div 1 sub}}}
+\rput(7,-5){\pscustom{\psline(0,0)\psplot[liftpen=2]{0}{10}{11 1 x add div 1 sub}}}
+\end{pspicture*}
 
-\vfill
-\noindent\begin{pspicture}(-4,-4)(4,4)
-\begin{psclip}{\psarc(0,0){2}{0}{360}\psarcn(0,0){4}{360}{0}}
-\psframe[fillstyle=vlines,hatchcolor=CadetBlue3](-4,-4)(4,4)
-\end{psclip}
-\end{pspicture}
-\hfill\begin{pspicture}(-4,-4)(4,4)
-\begin{psclip}{
-  \pscustom{\psarc(0,0){2}{0}{360}\closepath\psarcn(0,0){4}{360}{0}\closepath}}
-\psframe[fillstyle=vlines,hatchcolor=DarkSeaGreen1](-4,-4)(4,4)
-\end{psclip}
-\end{pspicture}
+\begin{pspicture*}(-20,-1)(18,7)
+\psset{linearc=1}
+\rput(-12,0){\pscustom{\psline(0,0)\psline[liftpen=0](-5,5)(5,5)}}
+\rput(0,0){\pscustom{\psline(0,0)\psline[liftpen=1](-5,5)(5,5)}}
+\rput(12,0){\pscustom{\psline(0,0)\psline[liftpen=2](-5,5)(5,5)}}
+\end{pspicture*}
 \end{document}
 ```
 
-上左側の図では、二つの円を別個のクリッピング・パスとして指定しているので、
-その共通部分しか見えません。一方、上右側では、二つの円が連結されて、
-一つのクリッピング・パスになっているので、その和集合の内部が描画されます。
-下図も同様です。同心円の向きを互い違いに設定している事にご注意下さい。
+いずれも、右端の例では、 liftpen=2 としていますが、これは、二つのパスを
+連結するのではなく、異なる連結成分として扱う事を意味します。
+
+複数の連結成分からなるパスを、一体として扱う事の効果を見るため、
+廻る向きを逆にとった二つの円を、
+
+- 個別に塗りつぶす、
+- 単一の図形として塗りつぶす、
+- 個別にクリッピングパスに設定する、
+- 単一の図形としてクリッピングパスに設定する、
+    場合を比較してみて下さい。描画の順序が分かりやすいように、線幅を太くしてあります。
+
+```
+\documentclass{minimal}
+\usepackage{pstricks}
+\def\circles#1{%
+  \psarc(0,-#1){4.5}{0}{360}
+  \psarcn[liftpen=2](0,#1){2.5}{360}{0}}
+\psset{unit=0.3,linewidth=4pt,linecolor=black!30,%
+  fillstyle=vlines,hatchcolor=[RGB]{127,255,191}}
+\parindent=0pt
+\begin{document}
+\begin{pspicture*}(-18,-9)(18,7)
+\rput(-12,0){\circles{4}}
+\rput(0,-2){\circles{2}}
+\rput(12,-4){\circles{0}}
+\end{pspicture*}
+
+\begin{pspicture*}(-18,-9)(18,7)
+\rput(-12,0){\pscustom{\circles{4}}}
+\rput(0,-2){\pscustom{\circles{2}}}
+\rput(12,-4){\pscustom{\circles{0}}}
+\end{pspicture*}
+```
+
+```
+\psset{fillstyle=none}
+\begin{pspicture*}(-18,-9)(18,7)
+\rput(-12,0){\begin{psclip}{\circles{4}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\rput(0,-2){\begin{psclip}{\circles{2}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\rput(12,-4){\begin{psclip}{\circles{0}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\end{pspicture*}
+
+\begin{pspicture*}(-18,-9)(18,7)
+\rput(-12,0){\begin{psclip}{\pscustom{\circles{4}}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\rput(0,-2){\begin{psclip}{\pscustom{\circles{2}}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\rput(12,-4){\begin{psclip}{\pscustom{\circles{0}}}
+\psframe[fillstyle=vlines](-5,-9)(5,7)
+\end{psclip}}
+\end{pspicture*}
+\end{document}
+```
 
 #### ノード {#e1584503}
 
@@ -585,7 +647,7 @@ x 成分と y 成分は | で区切ります。
 以下はごく簡単な例です。
 
 ```
-\documentclass[svgnames]{article}
+\documentclass[svgnames]{minimal}
 \usepackage{multido,pst-slpe,pst-eucl}
 \pagestyle{empty}
 \parindent=0pt
@@ -601,26 +663,18 @@ x 成分と y 成分は | で区切ります。
 \pstTranslation{S_1}{S_2}{B_0}[C_0]
 \pstTranslation{O}{S_0}{C_0}[D_0]
 \multido{\ia=0+1,\ib=1+1}{4}{
-  \pstRotation[RotAngle=120]{X_0}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
+\pstRotation[RotAngle=120]{X_0}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
 \multido{\ia=0+1,\ib=5+1}{10}{
-  \pstRotation[RotAngle=120]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
-\begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){16}
-  \pspolygon(D_7)(C_7)(D_6)(C_6)(D_5)(C_5)
-  \pspolygon(A_5)(A_6)(A_7)}}
+\pstRotation[RotAngle=120]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
 \multido{\ia=0+1,\ib=1+1,\ic=2+1,\id=30+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
-\end{psclip}
-\begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){16}
-  \pspolygon(D_12)(C_12)(D_11)(C_11)(D_10)(C_10)
-  \pspolygon(A_10)(A_11)(A_12)}}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \multido{\ia=5+1,\ib=6+1,\ic=7+1,\id=150+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
-\end{psclip}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){16}
-  \pspolygon(D_2)(C_2)(D_1)(C_1)(D_0)(C_0)
-  \pspolygon(A_0)(A_1)(A_2)}}
+\pspolygon(D_2)(C_2)(D_1)(C_1)(D_0)(C_0)
+\pspolygon(A_0)(A_1)(A_2)}}
 \multido{\ia=10+1,\ib=11+1,\ic=12+1,\id=270+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \end{psclip}}
 \end{pspicture}\hfill
 \psset{unit=0.75}
@@ -632,26 +686,18 @@ x 成分と y 成分は | で区切ります。
 \pstTranslation{S_1}{S_2}{B_0}[C_0]
 \pstTranslation{O}{S_0}{C_0}[D_0]
 \multido{\ia=0+1,\ib=1+1}{4}{%
-  \pstRotation[RotAngle=120]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
+\pstRotation[RotAngle=120]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
 \multido{\ia=0+1,\ib=5+1}{10}{%
-  \pstRotation[RotAngle=40]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
-\begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){20}
-  \pspolygon(D_7)(C_7)(D_6)(C_6)(D_5)(C_5)
-  \pspolygon(A_5)(A_6)(A_7)}}
+\pstRotation[RotAngle=40]{O}{A_\ia,B_\ia,C_\ia,D_\ia}[A_\ib,B_\ib,C_\ib,D_\ib]}
 \multido{\ia=0+1,\ib=1+1,\ic=2+1,\id=30+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
-\end{psclip}
-\begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){20}
-  \pspolygon(D_12)(C_12)(D_11)(C_11)(D_10)(C_10)
-  \pspolygon(A_10)(A_11)(A_12)}}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \multido{\ia=5+1,\ib=6+1,\ic=7+1,\id=70+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
-\end{psclip}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \begin{psclip}{\pscustom[fillstyle=none]{\pscircle(0,0){20}
-  \pspolygon(D_2)(C_2)(D_1)(C_1)(D_0)(C_0)
-  \pspolygon(A_0)(A_1)(A_2)}}
+\pspolygon(D_2)(C_2)(D_1)(C_1)(D_0)(C_0)
+\pspolygon(A_0)(A_1)(A_2)}}
 \multido{\ia=10+1,\ib=11+1,\ic=12+1,\id=110+120}{3}{
-  \pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
+\pspolygon[slopeangle=\id](A_\ic)(B_\ic)(C_\ib)(D_\ia)(C_\ia)(B_\ib)}
 \end{psclip}}
 \end{pspicture}
 \end{document}
