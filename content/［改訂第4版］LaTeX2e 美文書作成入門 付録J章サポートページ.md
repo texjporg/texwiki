@@ -7,7 +7,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著[『［改訂第4版］LaTeX2e（ラテック・ツー・イー）美文書作成入門』](http://www.gihyo.co.jp/books/syoseki.php/4-7741-2984-4)（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 4-7741-2984-4](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4774129844)）のうち，「付録J章」のサポートページになります。
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著[『［改訂第4版］ LaTeX2e （ラテック・ツー・イー）美文書作成入門』](http://www.gihyo.co.jp/books/syoseki.php/4-7741-2984-4)（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 4-7741-2984-4](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4774129844)）のうち，「付録J章」のサポートページになります。
 本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://www.ceres.dti.ne.jp/~i-yasuda/)，栗山雅俊にあります。内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
 
@@ -71,3 +71,4 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - LHフォントのヴァージョンアップに伴う記述変更を追加しました。 -- 栗山 2006-12-28 (木) 22:03:59
 - すみません，また追加です（CBのmapファイル）。 -- 栗山 2006-12-28 (木) 22:53:11
 - LHフォントのリンクを追加しました。稲垣さん，mapファイルについて追記ありがとうございます。また，記述の訂正，リンク作成を行っていただいた方に御礼申し上げます。 -- 栗山 2006-12-29 (金) 00:52:58
+- 稲垣さん，CTAN Directory 拝見しました。素晴らしいです。 -- 栗山 2007-01-05 (金) 02:09:09
