@@ -58,8 +58,8 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 389 GT書体――多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ [gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および [gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ [gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
-- p. 389 『今昔文字鏡』 ――こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で [mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Windows 版），
-    [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （PC-UNIX 版）が提供されています。
+- p. 389 『今昔文字鏡』 ――こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で [mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
+    [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （UNIX/Unix-like OS 版）が提供されています。
 
 ## コメント {#l1a73338}
 
