@@ -44,7 +44,7 @@ pukiwiki: "TeX installers for Windows"
     ただし，再配布を行う場合に許可が必要．
 
 - <strong>インストールする対象</strong>：W32TeX バイナリ，dviout，Ghostscript，GS View
-    （dll プラグインの追加方式により，jsclasses，xypic，ispell）
+    （dll プラグインおよび Ruby スクリプトの追加方式により，jsclasses，xypic，ispell）
 
 - <strong>ユーザーインターフェース</strong>：GUI
 - <strong>ネット・ローカルインストール</strong>：ネットインストーラー．
@@ -93,6 +93,20 @@ pukiwiki: "TeX installers for Windows"
     しかしながら，「アプリケーションの追加・削除」に登録されるので，
     （好みの問題ですが，）それくらいならば，
     texinst の方で初めからインストールした方がよいかもしれません．
+
+## TeX 環境インストーラ {#k886a93e}
+
+- <strong>URL</strong>：[http://www.c.csce.kyushu-u.ac.jp/kb/wiki/index.php?TeX%2FWindows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/index.php?TeX%2FWindows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
+- <strong>作者</strong>：三輪 英樹さん
+- <strong>初心者オススメ度</strong>：★★☆☆☆
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：W32TeX バイナリの標準インストールまでのパッケージ，Ghostscript，dviout，emf2eps
+- <strong>ユーザーインターフェース</strong>：ダブルクリック後，CUI + dviout 設定は dviout の GUI
+- <strong>ネット・ローカルインストール</strong>：ローカルのみ．
+- <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH），手動（dviout の設定）
+- <strong>長所</strong>：
+- <strong>短所</strong>：CUI 画面でインストール作業メッセージが出るところに違和感を覚える人もあるかも．
+- <strong>備考</strong>：dviout の初期化設定も，強制的にやらせるようです．
 
 ## MyTeX Netinstaller（setup(-ja).exe） {#d5f5ce48}
 
