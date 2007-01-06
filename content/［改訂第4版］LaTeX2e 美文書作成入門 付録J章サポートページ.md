@@ -13,13 +13,17 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 ## Errata {#kdcdc574}
 
-- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントを [http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip](http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip) においておきます）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては[新 pTeX とBabel](</新 pTeX とBabel/#a4477ec1>) を参照下さい。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
+- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip](http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip) に置いておきますのでご活用ください。本 Type1 フォントのインストール，生成方法は[ここ](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては[新 pTeX とBabel](</新 pTeX とBabel/#a4477ec1>) をご参照下さい。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
 
 - p. 357 註9 「ラテンアルファベットによる対応づけ (transliteration)」は p. 363 では「ASCII 翻字入力」という表現になっていますが（表記のゆれ），意味は同じです。
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）――「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
+
+- p. 364 表J.5 ［ ］内に示したフォントエンコーディング名に関して、複数のエンコーディングに属するものを優先順位を付けて表示していますが、特に OT2 と表示したテキスト命令は T2A, T2B, T2C, T2D フォントエンコーディング指定時にも使用できます。（安田）
+
+- p. 365 「ロシア語におけるいくつかの補足」数式モードにおけるキリル文字の利用について、amsmath.sty (AMS-LaTeX)、mathtext.sty を使った例を[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)にしました。（安田）
 
 - p. 365 註28 「ギリシア文字の直接入力はサポートされていません」―― Babel 本体では未サポートですが，オプションで [iso-8859-7.def](https://mirror.ctan.org/fonts/greek/package-babel/encodings/) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic・古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
@@ -73,3 +77,4 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - LHフォントのリンクを追加しました。稲垣さん，mapファイルについて追記ありがとうございます。また，記述の訂正，リンク作成を行っていただいた方に御礼申し上げます。 -- 栗山 2006-12-29 (金) 00:52:58
 - 稲垣さん，CTAN Directory 拝見しました。素晴らしいです。 -- 栗山 2007-01-05 (金) 02:09:09
 - 使用した LH キリル Type1 フォント (T2D, OT2) アーカイブへのリンクを追加しました。 -- 安田 2007-01-07 (日) 03:17:29
+- 数式モードでのキリル文字使用例へのリンク、表J.5 フォントエンコーディング表記補足を追加しました。 -- 安田 2007-01-07 (日) 17:07:28
