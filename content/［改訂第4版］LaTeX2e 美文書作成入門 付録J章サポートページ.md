@@ -13,7 +13,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 ## Errata {#kdcdc574}
 
-- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては[新 pTeX とBabel](</新 pTeX とBabel/#a4477ec1>) を参照下さい。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
+- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントを [http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip](http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip) においておきます）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては[新 pTeX とBabel](</新 pTeX とBabel/#a4477ec1>) を参照下さい。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
 
 - p. 357 註9 「ラテンアルファベットによる対応づけ (transliteration)」は p. 363 では「ASCII 翻字入力」という表現になっていますが（表記のゆれ），意味は同じです。
 
@@ -72,3 +72,4 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - すみません，また追加です（CBのmapファイル）。 -- 栗山 2006-12-28 (木) 22:53:11
 - LHフォントのリンクを追加しました。稲垣さん，mapファイルについて追記ありがとうございます。また，記述の訂正，リンク作成を行っていただいた方に御礼申し上げます。 -- 栗山 2006-12-29 (金) 00:52:58
 - 稲垣さん，CTAN Directory 拝見しました。素晴らしいです。 -- 栗山 2007-01-05 (金) 02:09:09
+- 使用した LH キリル Type1 フォント (T2D, OT2) アーカイブへのリンクを追加しました。 -- 安田 2007-01-07 (日) 03:17:29
