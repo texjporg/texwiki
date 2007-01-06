@@ -32,13 +32,13 @@ TeX は「テック」または「テフ」と読みます。
 TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作った組版（くみはん）システムです。
 LaTeX は [Leslie Lamport](http://lamport.org/) が TeX の上に構築した文書処理システムです。
 いずれもフリーソフトであり，
-Windows，Macintosh，UNIX （Linux や \*BSD，Mac OS X も含む）など，ほとんどのコンピュータで使えます。
+Microsoft Windows，Mac OS，UNIX （Linux や \*BSD，Mac OS X も含む）など，ほとんどのコンピュータで使えます。
 
 日本では TeX，LaTeX を[（株）アスキー](http://www.ascii.co.jp/)が日本語化した [pTeX，pLaTeX](http://www.ascii.co.jp/pb/ptex/) がよく使われています。
 pTeX，pLaTeX の頭の p （ピー）は publishing （出版）の意味で，
 アスキーでは pTeX，pLaTeX およびこれらに基づく編集支援システム [EWB](http://www2.ascii.co.jp/EWB/) を（ソースコードの形で）無償配布し，自社の本の製作に利用しています。
 
-> ［参考］ TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX もあります。
+> 【参考】 TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX もあります。
 > これらは現在は千葉大の櫻井貴文さんが [TeXfamily](ftp://ftp.math.s.chiba-u.ac.jp/tex/) としてメンテナンスしていらっしゃいます。
 
 1994年に LaTeX の新版 LaTeX 2ε （ツー・イー），
@@ -54,8 +54,8 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 
 とりあえず次の本を挙げておきます。
 
-- L. Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 4-89471-139-7](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4894711397)）……LaTeX2e の原典です。
-- 奥村晴彦 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』 （[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 4-7741-2984-4](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4774129844)） ……Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が付いています。
+- L. Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e の原典です。
+- 奥村晴彦 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』 （[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)） ……Microsoft Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が付いています。
 
 これ以外にもたくさん良書が出ています（[TeXの本](</TeXの本/>)）ので，書店でお選びください。
 
@@ -76,10 +76,10 @@ LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に LaTeX 2.
 
 パソコン初心者にはこれが一番難しいところです。
 この TeX Wiki に OS ごとのインストール法が詳しく書かれていますのでご参照ください。
-特に Windows についてはインストール(Windows) をご覧ください。
+特に Microsoft Windows についてはインストール(Windows) をご覧ください。
 
 インストール不要で TeX が使えるページ
-「TeX を使ってみよう（[EUC-JP 版](http://oku.edu.mie-u.ac.jp/~okumura/tex/)/[UTF-8 版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)）」（お薦めです），または
+「TeX を使ってみよう（[EUC-JP 版](http://oku.edu.mie-u.ac.jp/~okumura/tex/)／[UTF-8 版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)）」（お薦めです），または
 「[サーバーサイド pLaTeX 2ε ビューアー](http://nowsmartsoft.or.tv/texview/mytex.cgi)」（アクセスすると IP アドレスが晒されるので注意すること）もあります。
 
 ## 使い方 {#hf6bc116}
