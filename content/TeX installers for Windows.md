@@ -44,7 +44,7 @@ pukiwiki: "TeX installers for Windows"
     ただし，再配布を行う場合に許可が必要．
 
 - <strong>インストールする対象</strong>：W32TeX バイナリ，dviout，Ghostscript，GS View
-    （dll プラグインおよび Ruby スクリプトの追加方式により，jsclasses，xypic，ispell）
+    （dll プラグインおよび Ruby スクリプトの追加方式により，jsclasses，xypic，ispell，WinShell）
 
 - <strong>ユーザーインターフェース</strong>：GUI
 - <strong>ネット・ローカルインストール</strong>：ネットインストーラー．
@@ -144,24 +144,22 @@ pukiwiki: "TeX installers for Windows"
 <!-- インストーラは後述の通り，Cygwin Netinstaller そのもの． -->
 <!-- 「Cygwin で日本語 TeX」はプロジェクト名くらいの位置付け． -->
 - <strong>URL</strong>：[http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
-- <strong>作者（パッケージ製作者）</strong>：黒木 裕介さん
-    <!-- 長所の項で「パッケージ製作者が増えて」と書かれているので， -->
-    <!-- 「作者」の次に「（パッケージ製作者）」と書いておくのがよいかわからない． -->
+- <strong>作者（パッケージ制作者）</strong>：黒木 裕介さん
+    <!-- 長所の項で「パッケージ制作者が増えて」と書かれているので， -->
+    <!-- 「作者」の次に「（パッケージ制作者）」と書いておくのがよいかわからない． -->
     <!-- 「作者」というよりかは「プロジェクトマネージャ」くらいの位置付けか． -->
 
 - <strong>初心者オススメ度</strong>：★☆☆☆☆
-- <strong>ライセンス</strong>：
-    <!-- ファイル・ソースについては ptetex の LICENSE ファイルに記述してある通り． -->
-    パッケージングスクリプトはパッケージ製作者の思想による．
+- <strong>ライセンス</strong>：インストーラは Cygwin Netinstaller をそのまま使っているので GPL.
+    <!-- (バイナリ自体も，cygwin1.dll へのリンクが入っているので GPL と定義されるのかもしれません．要調査) -->
+    パッケージングスクリプトなど ptetex ソースからの追加分は修正済 BSD
+    (ただし，「パッケージ制作者が増えて」の分に関しては，各制作者に依る).
     <!-- ↑黒木氏はスクリプトのライセンスをどうされてるのでしょうか。 -->
-    <!-- / (Modified) BSD にします．自サイトにはまだ書いていないので，書くのを -->
-    <!-- / 控えていました．そのうち書きます． -->
-    インストーラは Cygwin Netinstaller をそのまま使っているので GPL.
 
-- <strong>インストールする対象</strong>：ptetex そのもの
+- <strong>インストールする対象</strong>：ptetex をコンパイルしたバイナリ
     （pTeX 本体や様々なクラスファイル・マクロ・プレビューアの xdvi）に加え，
     関連ツール（日中韓対応 Ghostscript, ps2jpdf）や追加のマクロなども．
-    （パッケージ製作者が増えて，パッケージが増えれば，どんどん広がる．）
+    （パッケージ制作者が増えて，パッケージが増えれば，どんどん広がる．）
 
 - <strong>ユーザーインターフェース</strong>：GUI（Cygwin Netinstaller）
 - <strong>ネット・ローカルインストール</strong>：ネットにもローカルにも対応．
@@ -172,7 +170,7 @@ pukiwiki: "TeX installers for Windows"
     Cygwin でもそのまま使える．
     W32TeX を Cygwin で使えるようにする作業などを考える必要がない．
     all in one と言ってよい．
-    パッケージ製作者が増えてパッケージが増えれば，もっと面白くなる！
+    パッケージ制作者が増えてパッケージが増えれば，もっと面白くなる！
     豊富な [CTAN](http://www.ctan.org/) のパッケージのインストールが，
     どれだけ簡単になることか，計り知れない．
     追加パッケージ作成はテキストベースなので簡単にできる
@@ -211,4 +209,4 @@ pukiwiki: "TeX installers for Windows"
 
 ***
 
-[^1]: postinstall スクリプトで，regtool コマンドあたりを使うと，設定できるらしい．Cygwin 本家からインストールされるパッケージの中には，レジストリの書き込みを行うものがあるかもしれない．
+[^1]: postinstall スクリプトで，regtool コマンドあたりを使うと，設定できるらしい．Cygwin 本家からインストールされるパッケージの中には，レジストリの書き込みを行うものがある．
