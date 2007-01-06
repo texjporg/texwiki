@@ -54,8 +54,8 @@ TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の�
 
 とりあえず次の本を挙げておきます。
 
-- Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年） ［LaTeX2e の原典です］
-- 奥村晴彦 『[［改訂第3版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』 （[技術評論社](http://www.gihyo.co.jp/)，2004年） ［Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が付いています］
+- L. Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 4-89471-139-7](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4894711397)）……LaTeX2e の原典です。
+- 奥村晴彦 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』 （[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 4-7741-2984-4](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/4774129844)） ……Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が付いています。
 
 これ以外にもたくさん良書が出ています（[TeXの本](</TeXの本/>)）ので，書店でお選びください。
 
