@@ -175,6 +175,61 @@ keyval (pst-key) を使用するパッケージが混在していると、
 xcolor もできるだけ新しいバージョンをインストールしてください。
 現在の PSTricks に対応しているのは、 2005 年 10 月 15 日の xcolor v2.06 以降です。
 
+ps4pdf のような、古いパッケージを利用するために、 PSTricks 関連の
+パッケージを古いバージョンで固める場合、次のような違いに注意して下さい。
+
+- pst-text.pro に、松田一朗さんと角藤亮さんによる日本語用パッチをあてる。
+    パッチの当て方が分からない場合は、テキストエディタで開き、53行目からの
+
+    ```
+      String length
+      { String CharCount 1 getinterval ShowChar
+        /CharCount CharCount 1 add def
+    ```
+
+を
+
+```
+  /CharSize 1 def
+  currentfont /FontType get 0 eq
+  { currentfont /FMapType get dup 2 eq exch dup 5 eq exch 9 eq or or
+    { /CharSize 2 def} if
+  } if
+  String length CharSize idiv
+  { String CharCount CharSize getinterval ShowChar
+    /CharCount CharCount CharSize add def
+```
+
+に直す。
+
+- LaTeX で 2004年5月21日より古いバージョンで色を利用する場合、 pstricks
+    ではなく、 pstcol を読み込む。 color を直接ロードしてはいけない事は、
+    新しいバージョンと同じ。(以下の例のうち、 xcolor による色の指定はそのままでは
+    コンパイルできない。)
+
+- \pspicture コマンドの shift オプションは使用できないので、数字のみを書く。
+
+    ```
+    \begin{pspicture}[0](x,y)(X,Y)
+    ```
+
+とすれば、確保された領域の下端がベースラインに、
+
+```
+\begin{pspicture}[1](x,y)(X,Y)
+```
+
+とすれば、上端がベースラインになる。 shift オプションとは単位も、正負も異なる。
+
+なお、 LaTeX で使用しているパッケージのバージョンを調べるには、
+ソースファイルの先頭に
+
+```
+\listfiles
+```
+
+と1行付け加え、 log ファイルの最後の方にある、パッケージリストを見ます。
+
 最後に，システムによっては mktexlsr コマンドの実行が必要です。
 
 基本的な使い方は，LaTeX2e ならプリアンブルで
@@ -428,7 +483,54 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 テキスト中の要素に名前をつけるノード定義のうち、描画を伴う物は、
 そのための枠を描くスペースが挿入されるため、文章の組が変化します。
 それが、望ましくない時は、 boxsep=false にして下さい。
+テキスト中にノードを配置した場合、当然、その正確な位置は
+TeX によるタイプセットの影響を受けます。 <!-- どなたか、絵心のある方、 \Darma をどうにかして下さい。 -->
 
+```
+\documentclass[dvipsnames]{minimal}
+\usepackage{shapepar,multido,pst-node}
+\psset{boxsep=false,dotscale=1.5 2.5}
+\def\Darma#1{
+  \pnode{Darma#1}
+  \pscurve[linewidth=4\pslinewidth](0.05,0.7)(0.1,0.6)(0.3,0.7)(0.4,0.7)(0.55,0.55)
+  \pscurve[linewidth=4\pslinewidth](-0.05,0.7)(-0.1,0.6)(-0.3,0.7)(-0.4,0.7)(-0.55,0.55)
+  \pscircle(-0.3,0.35){0.25}\pscircle(0.3,0.35){0.25}
+  \psdots(-0.25,0.25)(0.25,0.25)
+  \multido{\ra=-0.9+0.12,\rb=0+-0.04}{8}{\parabola(\ra,\rb)(0,0.1)}
+  \pscustom[fillstyle=solid,fillcolor=red,linestyle=none]{
+    \psarc(0,0){1}{0}{360}
+    \psarcn[liftpen=2](0,0.15){0.7}{180}{0}
+    \psarcn(0,1.8){2}{285}{255}}
+  {\psset{linecolor=YellowOrange,linewidth=4\pslinewidth}
+  \multido{\r=0.6+-0.4}{2}{%
+    \psellipticarc{cc-cc}(0,0)(\r,1){200}{260}%
+    \psellipticarcn{cc-cc}(0,0)(\r,1){340}{280}}}
+  }
+\font\f="Kozuka Mincho Pro"
+\begin{document}
+\XeTeXlinebreaklocale "ja"
+\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
+\f
+\begin{center}
+\shapepar{\CDlabshape}{%
+  \multido{\i=1+1}{7}{%
+  \ovalnode[linecolor=Orange]{darma\i}{\ifodd\i 達磨\else 達摩\fi}%
+  サンガ轉ンダ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ 一二三四五六七八九十 }}
+```
+
+```
+\vskip2cm
+\begin{pspicture}(-8,-1)(8,1)
+\multido{\i=1+1,\I=-7+2}{7}{\rput{-90}(\I,0){\Darma\i}}
+\rput(7,0){\Darma 8}
+\end{pspicture}
+\psset{linecolor=Orange,border=0.8\pslinewidth,arrowsize=3pt 4}
+\multido{\i=1+1}{7}{\nccurve[nodesepB=1,angleB=90]{->}{darma\i}{Darma\i}}
+\end{center}
+\end{document}
+```
+
+点に名前をつけるメリットを理解して頂くため、
 具体例として、まず。次の直角三角形の図を見て下さい。
 
 ```
