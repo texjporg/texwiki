@@ -50,6 +50,23 @@ WindowsならCygwinを使うか，あるいは [ActiveState](http://www.activest
 fixill <old.eps >new.eps
 ```
 
+最終的にPDFで出力するならば、Adobe Illustrator Artwork (拡張子.ai)のままでもOK。
+AI形式は実質的にPDFなので、PDF形式の図の挿入と同様に処理できる。
+Ghostscriptが呼び出されないので処理も高速。
+
+例(hoge.aiを挿入):
+
+```
+\documentclass{article}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{mediabb}
+\begin{document}
+\includegraphics{hoge.ai}
+\end{document}
+```
+
+Adobe Illustrator CS (11.0.0)で作られたファイルで確認。
+
 ### トラブル {#id16611b}
 
 Illustrator CS でCMフォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
