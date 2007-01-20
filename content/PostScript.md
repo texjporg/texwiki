@@ -21,10 +21,9 @@ PostScript は業界標準のページ記述言語です。
     [Ghostscript](http://sourceforge.net/projects/ghostscript/) (SourceForge)
 
 - [ghostscript.com](http://www.ghostscript.com/)
-- [Ghostscript 8.51 + GSview 4.7 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html) /
+- [Ghostscript 8.54 + GSview 4.8 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/index.html) /
     [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/index.html)
     （堀田さん＠愛知教育大・数学）
-    <!-- ↑ 2005/04/20 -->
 
 - [gs-cjk プロジェクト](http://www.gyve.org/gs-cjk/)
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html) (旧 JAIST コンテンツのミラー)
@@ -50,6 +49,7 @@ PostScript は業界標準のページ記述言語です。
     これを試してみてください)
 
 - [pstoedit](http://www.pstoedit.net/)
+- [仮想EPSプリンタの作成方法](http://keijisaito.info/arc/TeX/v_eps_printer.htm)Windows(2000/XP)において、Excelのグラフ等をEPS化する仮想EPSプリンタの作り方
 
 ### PDF作成 {#w9442957}
 
