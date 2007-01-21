@@ -70,3 +70,8 @@ Adobe Illustrator CS (11.0.0)で作られたファイルで確認。
 ### トラブル {#id16611b}
 
 Illustrator CS でCMフォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
+
+### そのほか {#a59267c4}
+
+ご参考情報
+「Illustratorの図をTeXに」- [http://tex.dante.jp/typo/index.php?plugin=related&page=Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB](http://tex.dante.jp/typo/index.php?plugin=related&page=Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
