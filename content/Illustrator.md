@@ -9,13 +9,14 @@ pukiwiki: "Illustrator"
 
 ## Adobe Illustrator {#w6d2965c}
 
-Illustrator関連の話題を書き込んでください。
+Illustrator 関連の話題を書き込んでください。
 
-### Illustratorの図をTeXに {#sa00c636}
+### Illustrator の図を TeX に {#sa00c636}
 
-IllustratorでEPS保存したものをLaTeXに挿入する例：
+Illustrator で EPS 保存したものを LaTeX に挿入する例：
 
 ```
+%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
 \documentclass{...}
 \usepackage[dvips]{graphicx}
 \begin{document}
@@ -25,38 +26,39 @@ IllustratorでEPS保存したものをLaTeXに挿入する例：
 \end{document}
 ```
 
-Illustratorで保存時の注意：
+Illustrator で保存時の注意：
 
 - プレビューを付けない（なるべく）
-- サムネイルを付けない（Illustrator 7〜10のバグのため不正なEPSになることがある）
+- サムネイルを付けない（Illustrator 7&ndash;10のバグのため不正な EPS になることがある）
 - フォントを埋め込む
 
-不正なEPSは，
+不正な EPS は，
 [Tomas Rokicki](http://tomas.rokicki.com/)
 の [Illustrator 7.0/8.0/9.0 BeginData Bug](http://tomas.rokicki.com/illbug/)
-から fixill.pl をいただいてきて直す。
+から “fixill.pl” を頂いてきて直す。
 次のようにして使う。
 
 ```
-fixill.pl <old.eps >new.eps
+$ fixill.pl <old.eps >new.eps
 ```
 
-fixill.pl はPerlスクリプトであり，実行にはPerlが必要。
-WindowsならCygwinを使うか，あるいは [ActiveState](http://www.activestate.com/)
-からActivePerlをダウンロードしてインストールすればいいであろう。
-角藤さんの dvipsk-w32.tar.gz には fixill.pl と fixill.exe が含まれる。
+“fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
+Microsoft Windows なら Cygwin を使うか，あるいは [ActiveState](http://www.activestate.com/)
+から ActivePerl をダウンロードしてインストールすればいいであろう。
+角藤さんの “dvipsk-w32.tar.gz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
-fixill <old.eps >new.eps
+>fixill.exe <old.eps >new.eps
 ```
 
-最終的にPDFで出力するならば、Adobe Illustrator Artwork (拡張子.ai)のままでもOK。
-AI形式は実質的にPDFなので、PDF形式の図の挿入と同様に処理できる。
-Ghostscriptが呼び出されないので処理も高速。
+最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。
+AI 形式は実質的に PDF なので，PDF 形式の図の挿入と同様に処理できる。
+Ghostscript が呼び出されないので処理も高速。
 
-例(hoge.aiを挿入):
+例（hoge.ai を挿入）：
 
 ```
+%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
 \documentclass{article}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{mediabb}
@@ -65,13 +67,13 @@ Ghostscriptが呼び出されないので処理も高速。
 \end{document}
 ```
 
-Adobe Illustrator CS (11.0.0)で作られたファイルで確認。
+Adobe Illustrator CS (11.0.0) で作られたファイルで確認。
 
 ### トラブル {#id16611b}
 
-Illustrator CS でCMフォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
+Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
 
-### そのほか {#a59267c4}
+### その他 {#a59267c4}
 
-ご参考情報
-「Illustratorの図をTeXに」- [http://tex.dante.jp/typo/index.php?plugin=related&page=Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB](http://tex.dante.jp/typo/index.php?plugin=related&page=Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
+- 【参考情報】
+    [Th&oacute;rTeXTypography:Illustratorの図をTeXに](http://tex.dante.jp/typo/?Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
