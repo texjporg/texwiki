@@ -293,7 +293,7 @@ PSTricks のコマンド自身のオプションを指定するには、
 <tr><td><strong>pst-func</strong></td><td>特殊関数定義</td></tr>
 <tr><td><strong>pst-geo</strong></td><td>地理データ</td></tr>
 <tr><td><strong>pst-gr3d</strong></td><td>3次元格子</td></tr>
-<tr><td><strong>pst-IIID</strong></td><td>3次元空間での曲面のレンダリング</td></tr>
+<tr><td><strong>pst-IIID</strong></td><td>3次元空間での曲面のレンダリング, <a href="http://www.math.ubc.ca/~cass/graphics/text/www/index.html">Bill Casselman</a>の14章を参照</td></tr>
 <tr><td><strong>pst-jtree</strong></td><td>言語学、樹形図</td></tr>
 <tr><td><strong>pst-labo</strong></td><td>化学実験器具</td></tr>
 <tr><td><strong>pst-lens</strong></td><td>部分拡大図</td></tr>
@@ -390,7 +390,7 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 ```
 \documentclass{minimal}
 \usepackage{pst-plot}
-\psset{unit=0.4,linewidth=4pt}
+\psset{unit=0.4,linewidth=4pt,arrows=-c}
 \parindent=0pt
 \begin{document}
 \begin{pspicture*}(-20,-6)(18,6)
@@ -411,6 +411,7 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 
 いずれも、右端の例では、 liftpen=2 としていますが、これは、二つのパスを
 連結するのではなく、異なる連結成分として扱う事を意味します。
+パスの始点を矢印などで修飾すると、 liftpen=1 は liftpen=2 と同じに振舞います。
 
 複数の連結成分からなるパスを、一体として扱う事の効果を見るため、
 廻る向きを逆にとった二つの円を、
@@ -506,11 +507,7 @@ TeX によるタイプセットの影響を受けます。 <!-- どなたか、�
     \psellipticarc{cc-cc}(0,0)(\r,1){200}{260}%
     \psellipticarcn{cc-cc}(0,0)(\r,1){340}{280}}}
   }
-\font\f="Kozuka Mincho Pro"
 \begin{document}
-\XeTeXlinebreaklocale "ja"
-\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
-\f
 \begin{center}
 \shapepar{\CDlabshape}{%
   \multido{\i=1+1}{7}{%
@@ -865,13 +862,159 @@ PostScript は PDF や SVG と言った、静的なページ記述言語とは�
 pst-text パッケージの pstextpath は、 PostScript 言語のテキスト描画ルーティンを
 再実装して実現されていますし、既に見たように、 pst-eucl パッケージは
 Newton-Raphson 法により、方程式の実数解の近似値を計算してくれます。
+
 ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。
 
-<!-- 少なくとも、数値積分による、常微分方程式の解曲線の描画例を挙げる必要あり -->
-<!-- どなたか、見栄えのする積分曲線を持った常微分方程式の例を挙げて下さいませんか？ -->
-<!-- 作図は私でやってみます。 -->
+三体問題に於ける、 Lagrange の正三角形解をプロットしてみます。
+質量 {{< katex >}}m_1{{< /katex >}}, {{< katex >}}m_2{{< /katex >}} , {{< katex >}}m_3{{< /katex >}} の質点 {{< katex >}}P_1{{< /katex >}}, {{< katex >}}P_2{{< /katex >}} , {{< katex >}}P_3{{< /katex >}} の重心を原点にとると、
+#mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|)
+#mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0})
+なので、簡単のために {{< katex >}}m_1+m_2+m_3=1{{< /katex >}} 、更に、質点
+{{< katex >}}P_1{{< /katex >}}, {{< katex >}}P_2{{< /katex >}} , {{< katex >}}P_3{{< /katex >}} は反時計廻りに
+配置されていると仮定し、まず、これを pst-eucl で作図してみます。
 
-ともかく、書きかけ。
+```
+\documentclass[dvipsnames]{minimal}
+\usepackage{pst-plot,pst-eucl}
+\def\mass#1{\ifcase#1\or0.7\or0.2\or0.1\else\fi}
+\begin{document}
+\begin{pspicture}(-7,-7)(7,7)
+\psaxes[labels=none,ticks=none]{->}(0,0)(-7,-7)(7,7)
+\pstGeonode[PosAngle=225]{O}
+\psset{PointSymbol=none,PointName=none}
+\pstGeonode(3;-20){A}(3;100){B}(3;220){C}
+\pstHomO[HomCoef=\mass{1}]{O}{A}
+\pstHomO[HomCoef=\mass{2}]{O}{B}
+\pstHomO[HomCoef=\mass{3}]{O}{C}
+\pstCGravABC{A'}{B'}{C'}{G}
+\psset{linestyle=dashed,linewidth=0.5pt,arrows=o-o}
+\pstTranslation[DistCoef=3,PointName=default,PosAngle={0,0,-30}]{G}{O}{A,B,C}[P_1,P_2,P_3]
+{\psset{DistCoef=\mass{1}}
+  \pstTranslation{P_2}{P_1}{P_2}[P_21]\pstTranslation{P_3}{P_1}{P_3}[P_31]}
+{\psset{DistCoef=\mass{2}}
+  \pstTranslation{P_3}{P_2}{P_3}[P_32]\pstTranslation{P_1}{P_2}{P_1}[P_12]}
+{\psset{DistCoef=\mass{3}}
+  \pstTranslation{P_1}{P_3}{P_1}[P_13]\pstTranslation{P_2}{P_3}{P_2}[P_23]}
+\pstLineAB{P_1}{P_2}
+\pstLineAB{P_2}{P_3}
+\pstLineAB{P_3}{P_1}
+\psset{linestyle=solid,linewidth=2pt,linecolor=red,arrows=o->}
+\pstLineAB{P_1}{P_12}\pstLineAB{P_1}{P_13}
+\pstLineAB{P_2}{P_23}\pstLineAB{P_2}{P_21}
+\pstLineAB{P_3}{P_31}\pstLineAB{P_3}{P_32}
+\end{pspicture}
+\end{document}
+```
+
+ここで、赤で描かれた矢印は、質点にかかる『力』ではなく、『加速度』に
+比例した大きさになっています。
+この図の設定と同じ初期値を用いて、いよいよ、軌道をプロットしてみます。
+まず、記号 {{< katex >}}P_1{{< /katex >}}, {{< katex >}}P_2{{< /katex >}} , {{< katex >}}P_3{{< /katex >}} で各々の質点の
+位置ベクトルも表す事にすると、
+#mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&amp;-\sqrt{3}m_3\\\\\sqrt{3}m_3&amp;(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1)
+#mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&amp;\sqrt{3}m_2\\\\-\sqrt{3}m_2&amp;(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1)
+となり、質点 {{< katex >}}P_1{{< /katex >}} の運動方程式は、整理すると、
+#mimetex(\frac{d^{2}}{dt^{2}}P_1=-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{|P_1|^{2}}P_1)
+になります。高校生にも解ける(？)単純な方程式ですから、数値積分などしなくても、
+プロットはできますが、ここでは、あえて、 PostScript に数値積分を計算させてみます。
+そこで、従属変数のスタックには、順に {{< katex >}}x{{< /katex >}}, {{< katex >}}y{{< /katex >}}, {{< katex >}}\frac{dx}{dt}{{< /katex >}}, {{< katex >}}\frac{dy}{dt}{{< /katex >}} を積む事にします。
+従属変数のスタックは PostScript 言語の記法では y (array) として、
+algebraic な記法では y\[index\] として、アクセスするので、対応表を作ると、
+
+<table>
+<tbody>
+<tr><td>スタック</td><td>変数</td><td>微係数</td></tr>
+<tr><td>y[0]</td><td><code>x</code></td><td><code>x&#x27;</code></td></tr>
+<tr><td>y[1]</td><td><code>y</code></td><td><code>y&#x27;</code></td></tr>
+<tr><td>y[2]</td><td><code>x&#x27;</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x</code></td></tr>
+<tr><td>y[3]</td><td><code>y&#x27;</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y</code></td></tr>
+</tbody>
+</table>
+
+したがって、基本的にはマクロ
+
+```
+\def\f{\mass{2}^2+\mass{2}*\mass{3}+\mass{3}^2}
+\psset{algebraic}
+\psplotDiffEqn{t}{T}{境界値}{y[2]|y[3]|-(\f)^1.5*y[0]/(y[0]^2+y[1]^2)^1.5|-(\f)^1.5*y[1]/(y[0]^2+y[1]^2)^1.5}
+```
+
+で、区間 {{< katex >}}(t,T){{< /katex >}} の数値積分がプロットされる事になります。
+algebraic は algebraic=true と同じ意味です。このマクロの最後の引数は、微係数のスタックです。
+このままでは、独立変数が横軸 (abscissa) 、従属変数の最初のスタックが縦軸 (ordinate)
+にプロットされてしまうので、オプションで、横軸と縦軸を指定します。
+その際に、最も一般的な plotfuncx や plotfuncy を使うと、 algebraic 記法は
+現状では使えないようです。
+
+```
+\documentclass[dvipsnames]{minimal}
+\usepackage{pstricks-add,infix-RPN}
+\def\mass#1{\ifcase#1\or0.7\or0.2\or0.1\else\fi}
+\def\f{\mass{2}^2+\mass{2}*\mass{3}+\mass{3}^2}\infixtoRPN{\f}\edef\F{\RPN}
+\infixtoRPN{((\mass{3}-\mass{1})*(\mass{3}-\mass{2})-3*\mass{1}*\mass{2})/(2*(\f))}\edef\XX{\RPN}
+\infixtoRPN{sqrt(3)*\mass{3}/(2*(\f))}\edef\YY{\RPN}
+\infixtoRPN{((\mass{2}-\mass{1})*(\mass{2}-\mass{3})-3*\mass{1}*\mass{3})/(2*(\f))}\edef\XXX{\RPN}
+\infixtoRPN{0-sqrt(3)*\mass{2}/(2*(\f))}\edef\YYY{\RPN}
+\def\xzero{\mass{1}*cos(-20)+\mass{2}*cos(100)+\mass{3}*cos(220)}
+\def\yzero{\mass{1}*sin(-20)+\mass{2}*sin(100)+\mass{3}*sin(220)}
+\infixtoRPN{3*(cos(-20)-(\xzero))}\edef\Xzero{\RPN}
+\infixtoRPN{3*(sin(-20)-(\yzero))}\edef\Yzero{\RPN}
+\infixtoRPN{3*(cos(100)-(\xzero))}\edef\XXzero{\RPN}
+\infixtoRPN{3*(sin(100)-(\yzero))}\edef\YYzero{\RPN}
+\infixtoRPN{3*(cos(220)-(\xzero))}\edef\XXXzero{\RPN}
+\infixtoRPN{3*(sin(220)-(\yzero))}\edef\YYYzero{\RPN}
+\def\boundaryC{\Xzero\space \Yzero\space -0.04 0.1}
+\def\EqGrav{y[2]|y[3]|-(\f)^1.5*y[0]/(y[0]^2+y[1]^2)^1.5|-(\f)^1.5*y[1]/(y[0]^2+y[1]^2)^1.5}
+\psset{algebraic,method=varrkiv,varsteptol=0.001,plotstyle=curve}
+\begin{document}
+\begin{pspicture}(-7,-7)(7,7)
+\psaxes[labels=none,ticks=none]{->}(0,0)(-7,-7)(7,7)
+\pspolygon[linestyle=dashed]%
+  (!\Xzero\space\Yzero)(!\XXzero\space\YYzero)(!\XXXzero\space\YYYzero)
+\psplotDiffEqn[whichabs=0,whichord=1,linecolor=red]{0}{50}{\boundaryC}{\EqGrav}
+\psplotDiffEqn[%
+  plotfuncx=y dup 0 get \XX\space mul exch 1 get \YY\space mul sub,%
+  plotfuncy=dup 0 get \YY\space mul exch 1 get \XX\space mul add,%
+  linecolor=green]{0}{50}{\boundaryC}{\EqGrav}
+\psplotDiffEqn[%
+  plotfuncx=y dup 0 get \XXX\space mul exch 1 get \YYY\space mul sub,%
+  plotfuncy=dup 0 get \YYY\space mul exch 1 get \XXX\space mul add,%
+  linecolor=blue]{0}{50}{\boundaryC}{\EqGrav}
+\end{pspicture}
+\end{document}
+```
+
+３つの楕円軌道(の一部)がプロットされる事を確かめて下さい。
+
+以前から、 PostScript に通じた人々の間では、
+[同じような試み](http://www.aihara.co.jp/~taiji/tex/index-j.html)も行われて
+いましたが、 TeX マクロが整備され、特別な知識を持たなくても、
+このようなことができるようになった意義は大きいと思います。
+
+最後に山田 泰司さんが取り上げているのと同じ、 Duffing 方程式の解曲線を
+プロットしてみます。
+
+```
+\documentclass[dvipsnames]{minimal}
+\usepackage{pstricks-add}
+\begin{document}
+\psset{algebraic=true,plotstyle=curve,linewidth=0.5pt,yunit=0.5,plotpoints=1000}
+\begin{pspicture}(-4,-8)(4,8)
+\psaxes[labels=none,ticks=none]{|-|}(0,0)(-4,-8)(4,8)
+\psplotDiffEqn[method=rk4,whichabs=0,whichord=1]{0}{99}%
+  {3.5 0}{y[1]|-0.05*y[1]-y[0]^3+7.5*cos(x)}
+\uput[-90](4,0){$4$}\uput[-90](-4,0){$-4$}
+\uput[180](0,8){$8$}\uput[180](0,-8){$-8$}
+\uput[90](4,0){$x$}\uput[0](0,8){$x'$}
+\end{pspicture}
+\end{document}
+```
+
+psplot の実装はおろか、 PostScript の知識が全く無くても、容易に書ける事が
+わかります。ただし、ここでは、刻み幅をプロット区間の 1/1000 に固定して
+いますので、このプロットはあまり正確な物ではありません。
+このような場合は、 method=varrkiv として、 adaptive な数値積分を行った方が
+よいでしょう。 <!-- いくらかでも、ましでしょう。 -->
 
 ### 実際に<em>使える</em>画像ファイルを作るには {#d57cdc19}
 
