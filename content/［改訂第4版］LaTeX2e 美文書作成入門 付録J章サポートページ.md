@@ -28,11 +28,11 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - p. 365 註28 「ギリシア文字の直接入力はサポートされていません」 &mdash; Babel 本体では未サポートですが，オプションで [iso-8859-7.def](https://mirror.ctan.org/fonts/greek/package-babel/encodings/) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic・古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
 
-- p. 368 表J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ [teubner.sty](https://mirror.ctan.org/macros/latex/contrib/teubner.zip) を使って下さい。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
+- p. 368 表J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ[teubner.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/teubner.zip) を使って下さい。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
 
 - p. 369 上段 インストールディレクトリは C:\usr\local\share\texmf\\... と記してありますが，現在 (TDS 1.1) ユーザによる追加ファイルは $TEXMFLOCAL// (&asymp; texmf-local//) 以下ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf// 以下でも結構です。
 
-- p. 369 中段 LH フォントのインストール &mdash; 現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と [lhfnt35f-source.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
+- p. 369 中段 LH フォントのインストール &mdash; 現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
 - p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」 &mdash; [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 
@@ -46,23 +46,23 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 372 T1 フォントエンコーディング &mdash; 本文12.2節（p. 188 以下）にも詳しく記述されていますので参照下さい。
 
-- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (\usepackage{lmodern}) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策―試案―を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)におきました。稲垣）
+- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策――試案――を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
 
 - p. 374 「ギリシア語...は...直接入力を行うことはできません」 &mdash; 上記 p. 365 註28 errata を参照下さい。
 
 - p. 377 註62 図J.4がありませんが，横の「CJK 字体」図のことです。
 
-- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを CTAN directory [http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html) に掲載しました。（稲垣）
+- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に掲載しました。（稲垣）
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
-- p. 385 mongolian （モンゴル語） &mdash; \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには武蔵工大・井上先生作成の [LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URL が挙げてあります。
+- p. 385 mongolian （モンゴル語） &mdash; \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには武蔵工大・井上先生作成の[LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URL が挙げてあります。
 
 - p. 385 ctib （チベット語） &mdash; dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/field/tibet/)を参照下さい。
 
-- p. 389 GT書体 &mdash; 多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ [gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および [gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ [gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
+- p. 389 GT書体 &mdash; 多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ[gtftex.lzh](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
-- p. 389 『今昔文字鏡』 &mdash; こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で [mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
+- p. 389 『今昔文字鏡』 &mdash; こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で[mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
     [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （UNIX/Unix-like OS 版）が提供されています。
 
 ## コメント {#l1a73338}
