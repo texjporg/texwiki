@@ -48,7 +48,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 372 T1 フォントエンコーディング &mdash; 本文12.2節（p. 188 以下）にも詳しく記述されていますので参照下さい。
 
-- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策――試案――を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
+- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策---試案---を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
 
 - p. 374 「ギリシア語...は...直接入力を行うことはできません」 &mdash; 上記 p. 365 註28 errata を参照下さい。
 
