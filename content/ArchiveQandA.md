@@ -74,7 +74,17 @@ pukiwiki: "ArchiveQandA"
     - \jobname ([qa:32943](https://okumuralab.org/~okumura/texfaq/qa/32943.html), [qa:17412](https://okumuralab.org/~okumura/texfaq/qa/17412.html), [qa:11872](https://okumuralab.org/~okumura/texfaq/qa/11872.html)).
 - 余白に行番号
     - [CTAN:macros/latex/contrib/lineno/](https://mirror.ctan.org/macros/latex/contrib/lineno/) ([qa:33113](https://okumuralab.org/~okumura/texfaq/qa/33113.html), ...)
-- 紙面の外側に通し番号
+- 通しノンブルを振る・最後のページ番号を取得する
+    - 通しノンブルを振る (印刷所持込用?) ([qa:9645](https://okumuralab.org/~okumura/texfaq/qa/9645.html), [qa:9677](https://okumuralab.org/~okumura/texfaq/qa/9677.html), [qa:10561](https://okumuralab.org/~okumura/texfaq/qa/10561.html)).
+    - 章ごとのページ／章の総ページ数 ([qa:45859](https://okumuralab.org/~okumura/texfaq/qa/45859.html), [qa:45860](https://okumuralab.org/~okumura/texfaq/qa/45860.html), [qa:45870](https://okumuralab.org/~okumura/texfaq/qa/45870.html)).
+    - lastpage.sty と hyperref.sty は競合する ([qa:46490](https://okumuralab.org/~okumura/texfaq/qa/46490.html))
+        <!-- ([[qa:46483]], [[qa:46486]], [[qa:46488]], [[qa:46489]], [[qa:46490]],  -->
+        <!-- [[qa:46494]], [[qa:46495]], [[qa:46502]], [[qa:46508]], [[qa:46510]]). -->
+        <!-- // その件は，hyperref，lastpage の両パッケージが競合しているというよりも -->
+        <!-- // むしろ，“hyperref 自身が lastpage と共存できるように細工しているがゆえに， -->
+        <!-- // lastpage の内部処理に手を入れるようなユーザ自身によるカスタマイズが -->
+        <!-- // hyperref 使用時にはうまくいかない”という話のようです． -->
+
 - \label{}, \ref{} を目に見えるように張る
     - [CTAN:macros/latex/required/tools/showkeys.dtx](https://mirror.ctan.org/macros/latex/required/tools/showkeys.dtx) ([qa:19427](https://okumuralab.org/~okumura/texfaq/qa/19427.html), ...)
 - ハイフネーションの禁止
