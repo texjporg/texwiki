@@ -29,6 +29,7 @@ TeXで作った本を出している出版社：
 > [数理工学社](http://www.sjk.co.jp/c/w.exe?y=www.saiensu.co.jp/company.htm) （サイエンス社子会社），
 > [駿台文庫](http://www.sundaibunko.jp/)，
 > [Z会出版](http://www.zkai.co.jp/books/)，
+> [日本評論社](http://www.nippyo.co.jp/)，
 > [培風館](http://www.baifukan.co.jp/)，
 > [白水社](http://www.hakusuisha.co.jp/)，
 > [平凡社](http://www.heibonsha.co.jp/)，
