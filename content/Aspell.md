@@ -133,13 +133,11 @@ $ aspell -c -t --tex-check-commets TeXソースファイル
 
 とします。これでfooというコマンドがTeXコマンドリストから削除されて通常の文書として透けるチェックの対象となります。もちろん、リストからの削除はこの場限りです。
 
-追加するtex-commandは、aspellの設定ファイル/etc/aspell.confにあらかじめ書いておくことも可能。
+追加するtex-commandは、aspellの設定ファイル/etc/aspell.confや~/.aspell.confにあらかじめ書いておくことも可能。
 
 ```
-tex-command
-    (list) TeX commands 
-tex-check-comments
-    (boolean) check TeX comments
+add-tex-command citep p, citet p
+tex-check-comments true
 ```
 
 <!-- 詳しい使い方は -->
