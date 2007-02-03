@@ -28,12 +28,12 @@ pukiwiki: "TeXが苦手とする処理"
 - 丸数字などの字形をもったフォントを利用:
     - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
-        - 【注意】 “"” は 16 進表記の識別子で，“'” にすれば 8 進表記，何も付けなければ 10 進表記でも書けます。例えば "AC = '254 = 172 です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，何も付けなければ十進表記でも書けます。例えば "AC = '254 = 172 です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
     - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
 - 丸の中身と丸を合成:
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
-        同種のものがあちこちで定義されています \[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
+        同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
@@ -79,6 +79,116 @@ itembox 環境といったものが存在します（さらに，枠の四隅の
 を作成するマクロを提供しています
 （niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
 Type1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。
+
+<!-- // 枠の四隅を四分円にする例（PSTricks 使用）: -->
+<!-- // 枠線上に見出し文字列を乗せるにはもう少し細工が必要です． -->
+<!-- // また，（2007-02-04 の時点では）dvipdfm(x) を用いる場合には -->
+<!-- // このサンプルは利用できません．dvipdfmx などの PostScript を解さない -->
+<!-- // dviware を用いる場合，枠の四隅にはフォント lcircle10 に収められている -->
+<!-- // 文字を利用するなり，tpic specials を用いるなりしてください（pict2e -->
+<!-- // パッケージで拡張した picture 環境でもよいかもしれません）． -->
+<!-- \documentclass{jarticle} -->
+<!-- \usepackage{pstricks,pstcol} -->
+<!--  -->
+<!-- \usepackage{keyval} -->
+<!-- %%% keyval パッケージは graphicx パッケージの中でも読み込まれているので， -->
+<!-- %%% graphicx パッケージ使用時には keyval パッケージを明示的に -->
+<!-- %%% 読み込む必要はありません． -->
+<!--  -->
+<!-- \makeatletter -->
+<!-- \define@key{SCREEN}{bgcolor}{\def\@SCREEN@bgcolor{#1}} -->
+<!-- \define@key{SCREEN}{linestyle}{\edef\@SCREEN@linestyle{#1}} -->
+<!-- \define@key{SCREEN}{linewidth}{\edef\@SCREEN@linewidth{#1}} -->
+<!-- \define@key{SCREEN}{linecolor}{\edef\@SCREEN@linecolor{#1}} -->
+<!-- \define@key{SCREEN}{radius}{\edef\@SCREEN@radius{#1}} -->
+<!-- \define@key{SCREEN}{dashlength}{\edef\@SCREEN@dashlength{#1}} -->
+<!-- \define@key{SCREEN}{dashgap}{\edef\@SCREEN@dashgap{#1}} -->
+<!-- \define@key{SCREEN}{framesep}{\edef\@SCREEN@framesep{#1}} -->
+<!-- \@ifundefined{scb@x}{\newbox\scb@x}\relax -->
+<!-- \def\SCREEN{\@testopt\@SCREEN{}} -->
+<!-- \def\@SCREEN[#1]{% -->
+<!--    \if@noskipsec \leavevmode \fi -->
+<!--    \ifhmode \par \fi -->
+<!--    \medskip -->
+<!--    \noindent -->
+<!--    \let\@SCREEN@bgcolor\@empty -->
+<!--    \let\@SCREEN@linestyle\@empty -->
+<!--    \def\@SCREEN@linewidth{\fboxrule}% -->
+<!--    \let\@SCREEN@linecolor\@empty -->
+<!--    \let\@SCREEN@radius\@empty -->
+<!--    \def\@SCREEN@dashlength{10pt}% -->
+<!--    \def\@SCREEN@dashgap{3pt}% -->
+<!--    \def\@SCREEN@framesep{\fboxsep}% -->
+<!--    \setkeys{SCREEN}{#1}% -->
+<!--    \@tempdima\@SCREEN@linewidth\relax -->
+<!--    \ifdim\@tempdima<\z@ \@tempdima.4\p@ \fi -->
+<!--    \edef\@SCREEN@setting{linewidth=\the\@tempdima}% -->
+<!--    \ifx\@SCREEN@bgcolor\@empty\else -->
+<!--       \edef\@SCREEN@setting{\@SCREEN@setting,% -->
+<!--          fillstyle=solid,fillcolor=\@SCREEN@bgcolor}% -->
+<!--    \fi -->
+<!--    \ifx\@SCREEN@linestyle\@empty\else -->
+<!--       \def\@tempa{dashed}% -->
+<!--       \edef\@SCREEN@setting{\@SCREEN@setting,% -->
+<!--          linestyle=\@SCREEN@linestyle -->
+<!--          \ifx\@SCREEN@linestyle\@tempa -->
+<!--             ,dash=\@SCREEN@dashlength\space\@SCREEN@dashgap -->
+<!--          \fi}% -->
+<!--    \fi -->
+<!--    \ifx\@SCREEN@linecolor\@empty\else -->
+<!--       \edef\@SCREEN@setting{\@SCREEN@setting,linecolor=\@SCREEN@linecolor}% -->
+<!--    \fi -->
+<!--    \ifx\@SCREEN@radius\@empty\else -->
+<!--       \edef\@SCREEN@setting{\@SCREEN@setting,% -->
+<!--          linearc=\@SCREEN@radius,cornersize=absolute}% -->
+<!--    \fi -->
+<!--    \@tempdimb\@SCREEN@framesep\relax -->
+<!--    \ifdim\@tempdimb<\z@ \@tempdimb\fboxsep \fi -->
+<!--    \edef\@SCREEN@setting{\@SCREEN@setting,framesep=\the\@tempdimb}% -->
+<!--    \edef\@SCREEN@setting{[\@SCREEN@setting]}% -->
+<!--    \advance\@tempdimb\@tempdima -->
+<!--    \@tempdima\linewidth \advance\@tempdima-\tw@\@tempdimb -->
+<!--    \setbox\scb@x\color@vbox -->
+<!--        \normalcolor -->
+<!--        \vtop\bgroup -->
+<!--          \hsize\@tempdima -->
+<!--          \@parboxrestore} -->
+<!-- \def\endSCREEN{% -->
+<!--          \ifvmode \vskip-\lastskip \fi -->
+<!--       \egroup -->
+<!--    \color@endbox -->
+<!--    \expandafter\psframebox\@SCREEN@setting{\box\scb@x}% -->
+<!--    \par -->
+<!--    \medskip} -->
+<!-- \makeatother -->
+<!--  -->
+<!-- \begin{document} -->
+<!-- \def\TEXT{% -->
+<!--    これは，意味のないサンプルテキストです． -->
+<!--    これは，意味のないサンプルテキストです． -->
+<!--    これは，意味のないサンプルテキストです． -->
+<!--    これは，意味のないサンプルテキストです． -->
+<!--    これは，意味のないサンプルテキストです．} -->
+<!--  -->
+<!-- \begin{SCREEN} -->
+<!--   \TEXT -->
+<!-- \end{SCREEN} -->
+<!--  -->
+<!-- \begin{SCREEN}[bgcolor=lightgray,linecolor=blue,framesep=1zw] -->
+<!--   \TEXT -->
+<!-- \end{SCREEN} -->
+<!--  -->
+<!-- \begin{SCREEN}[bgcolor=lightgray,linewidth=1pt,radius=3mm] -->
+<!--   \TEXT -->
+<!-- \end{SCREEN} -->
+<!--  -->
+<!-- \begin{itemize} -->
+<!-- \item -->
+<!-- \begin{SCREEN}[linestyle=dashed,dashlength=5mm,dashgap=2mm,radius=5mm] -->
+<!--   \TEXT -->
+<!-- \end{SCREEN} -->
+<!-- \end{itemize} -->
+<!-- \end{document} -->
 
 #### 複数ページにわたる枠 (1) ［枠自体を分割する場合］ {#b3d25e0d}
 
