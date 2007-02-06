@@ -193,6 +193,16 @@ $\\^a$ のように数式中では使えないコマンド \somecs を数式中�
 → 今の例で言えば $\\^a$ を $\hat{a}$ に変更する，という具合に
 \somecs を数式用のコマンドで書き換えてください．
 
+#### LaTeX Warning: Empty \`thebibliography' environment .... {#me2a3f28}
+
+文字通り，thebibliography 環境の中身がない（\bibitem あるいは \item を
+1 回も用いていない）場合に現れる警告メッセージです．<br>
+→thebibliography 環境内には少なくとも 1 個の文献項目を書き込んでください．
+BibTeX を使用している場合には，基本的には<strong>文書を完成させてから</strong>
+BibTeX を用いて bbl ファイルを作成してください
+（BibTeX 併用時の参考文献リストの作成手順については，然るべき参考書あるいは
+[qa:39022](https://okumuralab.org/~okumura/texfaq/qa/39022.html) を参照してください）．
+
 #### LaTeX Warning: File \`<em>filename</em>&#39; already exists on the system.<br> Not generating it from this source. {#r01d28c3}
 
 filecontents(\*) 環境を用いてファイル <em>filename</em> を生成しようとした際に，
