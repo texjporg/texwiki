@@ -7,6 +7,8 @@ pukiwiki: "TeXが苦手とする処理"
 
 # TeXが苦手とする処理
 
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+
 [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では提供されず，
 ときとして TeX 自身は不得手とする処理について挙げます。
 既製品があるものについては既製品も紹介していますが，
@@ -34,6 +36,33 @@ pukiwiki: "TeXが苦手とする処理"
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
         同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
+
+### 機種依存文字（環境依存文字） {#p625d750}
+
+<!-- 取り敢えず，ひとまとめ。どなたか補足をお願いします。 -->
+<!-- （このコメントは次回編集時に消すつもりです。） -->
+
+<table>
+<thead>
+<tr><th colspan="10" rowspan="2" style="text-align:center">Shift_JIS, ISO-2022-JP, EUC-JP に<br>おける主な機種依存文字</th><th colspan="4" style="text-align:center">代替処置の例</th></tr>
+<tr><th colspan="2" style="text-align:center">テキストベース</th><th colspan="2" style="text-align:center">(p)LaTeX の命令</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">①</td><td style="text-align:center">②</td><td style="text-align:center">③</td><td style="text-align:center">④</td><td style="text-align:center">⑤</td><td style="text-align:center">⑥</td><td style="text-align:center">⑦</td><td style="text-align:center">⑧</td><td style="text-align:center">⑨</td><td style="text-align:center">⑩</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:center">\ding{"AC}</td><td rowspan="13" style="text-align:center">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><td style="text-align:center">⑪</td><td style="text-align:center">⑫</td><td style="text-align:center">⑬</td><td style="text-align:center">⑭</td><td style="text-align:center">⑮</td><td style="text-align:center">⑯</td><td style="text-align:center">⑰</td><td style="text-align:center">⑱</td><td style="text-align:center">⑲</td><td style="text-align:center">⑳</td><td style="text-align:center">(11)</td><td style="text-align:center">(20)</td><td style="text-align:center">\ajMaru{11}</td></tr>
+<tr><td style="text-align:center">Ⅰ</td><td style="text-align:center">Ⅱ</td><td style="text-align:center">Ⅲ</td><td style="text-align:center">Ⅳ</td><td style="text-align:center">Ⅴ</td><td style="text-align:center">Ⅵ</td><td style="text-align:center">Ⅶ</td><td style="text-align:center">Ⅷ</td><td style="text-align:center">Ⅸ</td><td style="text-align:center">Ⅹ</td><td style="text-align:center">VII</td><td style="text-align:center">IX</td><td style="text-align:center">\ajRoman{1}</td></tr>
+<tr><td style="text-align:center">㍉</td><td style="text-align:center">㌔</td><td style="text-align:center">㌢</td><td style="text-align:center">㍍</td><td style="text-align:center">㌘</td><td style="text-align:center">㌧</td><td style="text-align:center">㌃</td><td style="text-align:center">㌶</td><td style="text-align:center">㍑</td><td style="text-align:center">㍗</td><td style="text-align:center">ミリ</td><td style="text-align:center">キロ</td><td style="text-align:center">\ajLig{ミリ}</td></tr>
+<tr><td style="text-align:center">㌍</td><td style="text-align:center">㌦</td><td style="text-align:center">㌣</td><td style="text-align:center">㌫</td><td style="text-align:center">㍊</td><td style="text-align:center">㌻</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">カロリー</td><td style="text-align:center">ドル</td><td style="text-align:center">\ajLig{カロリー}</td></tr>
+<tr><td style="text-align:center">㎜</td><td style="text-align:center">㎝</td><td style="text-align:center">㎞</td><td style="text-align:center">㎎</td><td style="text-align:center">㎏</td><td style="text-align:center">㏄</td><td style="text-align:center">㎡</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">mm</td><td style="text-align:center">m^2</td><td style="text-align:center">m$^2$</td></tr>
+<tr><td style="text-align:center">№</td><td style="text-align:center">㏍</td><td style="text-align:center">℡</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">No.</td><td style="text-align:center">Tel</td><td style="text-align:center">T\textsc{el}</td></tr>
+<tr><td style="text-align:center">㊤</td><td style="text-align:center">㊥</td><td style="text-align:center">㊦</td><td style="text-align:center">㊧</td><td style="text-align:center">㊨</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">（上）</td><td style="text-align:center">（中）</td><td style="text-align:center">\ajLig{○上}</td></tr>
+<tr><td style="text-align:center">㈱</td><td style="text-align:center">㈲</td><td style="text-align:center">㈹</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">（株）</td><td style="text-align:center">（代）</td><td style="text-align:center">\ajLig{(株)}</td></tr>
+<tr><td style="text-align:center">㍾</td><td style="text-align:center">㍽</td><td style="text-align:center">㍼</td><td style="text-align:center">㍻</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">昭和</td><td style="text-align:center">平成</td><td style="text-align:center">\ajLig{平成}</td></tr>
+<tr><td style="text-align:center">∮</td><td style="text-align:center">∟</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">&int;</td><td style="text-align:center">&ang;</td><td style="text-align:center">$\oint$</td></tr>
+<tr><td style="text-align:center">⊿</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">&Delta;</td><td style="text-align:center"></td><td style="text-align:center">$\mathnormal{\Delta}$</td></tr>
+<tr><td style="text-align:center">ⅰ</td><td style="text-align:center">ⅱ</td><td style="text-align:center">ⅲ</td><td style="text-align:center">ⅳ</td><td style="text-align:center">ⅴ</td><td style="text-align:center">ⅵ</td><td style="text-align:center">ⅶ</td><td style="text-align:center">ⅷ</td><td style="text-align:center">ⅸ</td><td style="text-align:center">ⅹ</td><td style="text-align:center">vii</td><td style="text-align:center">ix</td><td style="text-align:center">\ajroman{1}</td></tr>
+</tbody>
+</table>
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
@@ -223,3 +252,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 - [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09用）
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
+
+## Comments {#ada1c094}
+
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
