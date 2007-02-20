@@ -11,175 +11,129 @@ pukiwiki: "javascripts for Adobe Illustrator CS"
 
 ## はじめに {#ae063b79}
 
-Adobe Illustrator では、javascriptで処理を自動化できます。
+Adobe Illustrator は、javascriptで処理を自動化できます。
 
-アウトライン化した数式をリンク配置させるスクリプトを示します。
-方法自体は[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)と同じです。
-現状では、日本語は通りません。エラーの処理も最低限です。改良していただけると幸いです。
+Illustratorで入力したテキストを読み込み、
+バッチファイルを呼び出してTeX処理、及びEPSファイルの作成を行い、
+出来上がったEPSをアクティブなドキュメントのアクティブなレイヤーに
+配置するjavascriptを示します。
 
-以下のスクリプトは、Adobe Illustrator CS (ver.11.0.0)で動作確認しています。
-他のバージョンではエラーがでるかもしれません。
-また、このスクリプトを使用することによって生じた問題について責任を取ることは不可能ですので、ご利用は自己責任で。
+Illustrator CS windows版 (Windows XP SP2) で動作を確認していますが、
+Illustratorのjavascriptはバージョン毎の互換性が悪いらしく、
+またその実行環境に影響を受けることさえあるらしいので、
+動かなければ適当に直してください。
 
-## 概要 {#we9c341f}
+Illustrator上でのjavascriptに関するマニュアルは、インストールCD中にあります(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)。
 
-半角英数のファイル名で保存されたファイル(hoge.ai)をAdobe Illustratorで開き、
-"First.js"を実行する。
+### 参考ページ {#o88510e0}
 
-- そのファイルが存在するディレクトリに"EqsInhoge"というサブディレクトリが作成される。
-- EqsInhogeに"eq.tex"が作られ、エディタで開かれる。
-- 数式を編集して保存する。
+[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)
 
-"Rewrite.js"を実行する。
+[Illustrator CS自動化作戦](http://www.openspc2.org/book/IllustratorCS/)
 
-- EqsInhogeに"eq_outline_1168709197154.eps"のようなEPSファイルができる。末尾の数字は作成時刻。
-- アクティブなドキュメントのアクティブなレイヤーに、アウトライン化された数式がリンク配置される。
+## 埋め込み配置 {#l35eb979}
 
-## First.js {#g4b6c5cc}
+### TeX.js {#w6b53952}
 
-以下のスクリプトを"&amp;Fitst.js"というファイル名で保存。
+C:\temp\というフォルダを作ります。別の場所が良い方は適宜読み替えてください。
 
-保存先は"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト"が便利です。
+"C:\temp\\"に、次の"tex2eps.bat"を保存します。スクリプト中で呼び出して使うことになります。
 
 ```
-//TeX関係の初期設定
-docclass = "article";	//ドキュメントクラス
-fontsize = "12";	//フォントサイズ
-initialeq = "\\ket{0}_\\mathrm{photon}\\!\\ket{0}_\\mathrm{atom}";
-//eps画像保存用フォルダ作成 アクティブなドキュメントのあるdirのsub dirに
-//EqsInファイル名というフォルダを作る
-folderRef = activeDocument.path;
-str = activeDocument.name;
-chr_f = str.split(".");
-filename = chr_f[0];
-if(folderRef=="/c")
+C:
+cd C:\temp\
+latex eq
+dvips -Ppdf -E eq -o eq.eps
+gswin32c -q -sDEVICE=epswrite -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps
+```
+
+"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト"に、
+次の"&amp;TeX.js"を保存します。
+
+```
+sel = activeDocument.selection;
+txtRange = sel[0].textRange; 
+script = txtRange.contents;
+
+fileRef = new File ("/C/temp/eq.tex");
+openflag = fileRef.open ("w","","");
+if (openflag) fileRef.writeln(""+script+"");
+fileRef.close();
+
+batObj = new File("/C/temp/tex2eps.bat");
+batObj.execute();
+
+flag = confirm("描画しますか？");
+
+if (flag == true) 
 {
-alert("アクティブなドキュメントを半角英数の名前で保存してください。")
+	filepath = "/C/temp/outline.eps";
+	fileObj = new File(filepath);
+	activeDocument.activeLayer.groupItems.createFromFile(fileObj);
 }
-else
-{
-	dir = folderRef.toString();
-	saveDir = ""+dir+"/EqsIn"+filename+"/";
-	chr_d = saveDir.split("/");
-	saveDrive = chr_d[1]+":";
-	savefolder = saveDir.slice(2,-1)+"/";
-	eqsFolder = new Folder( saveDir ) ;
-	
-	if( eqsFolder.exists )
-	{
- 	//editor.batを実行
-	fileObj = new File(""+saveDir+"editor.bat");
-	fileObj.execute();
-	}
-	else
-	{
-	eqsFolder.create();
-	//eq.texを書き出す
-	  fileRef = new File (""+saveDir+"eq.tex");
-	  flag = fileRef.open ("w","","");
-		if (flag)
-		{
-		fileRef.writeln("\\documentclass["+fontsize+"pt]{"+docclass+"}");
- 		fileRef.writeln("\\pagestyle{empty}");
- 		fileRef.writeln("\\usepackage{braket}");
-		fileRef.writeln("\\usepackage{amsmath,amssymb,bm}");
-		fileRef.writeln("\\begin{document}");
-		fileRef.writeln("\\[");
-		fileRef.writeln(""+initialeq+"");
-		fileRef.writeln("\\]");
-		fileRef.writeln("\\end{document}");
+```
+
+保存したら、Illustratorを起動してください。\[ファイル\]→\[スクリプト\]とたどれば"TeX"があるはずです。
+
+テキストツールを使うなどして、次の内容のテキストオブジェクトを作成します。
+
+```
+\documentclass[12pt]{article}
+\pagestyle{empty}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{equation*}
+A = \begin{pmatrix}
+a_{11} & \ldots & a_{1n} \\
+\vdots & \ddots & \vdots \\
+a_{m1} & \ldots & a_{mn}
+\end{pmatrix}
+\end{equation*}
+\end{document}
+```
+
+テキストオブジェクトを選択した状態で、\[ファイル\]→\[スクリプト\]→\[TeX\]を選択し、cmd.exeが終了した後、"描画しますか?"という確認メッセージに「はい」と答えることで数式が埋め込み配置されます。Windowsなら、\[Alt+F\]→\[R\]→\[T\]でスクリプトを実行することも可能です。
+
+### Ini.js {#u080dc63}
+
+パッケージ等を毎回書くのは面倒ですので、カスタマイズ可能な初期設定ファイルを作っておき、これを雛形としてテキストオブジェクトを編集できるようにしておきます。
+
+"C:\temp\\"に、次の"eq.ini"を保存します。
+
+```
+\documentclass[12pt]{article}
+\pagestyle{empty}
+\usepackage{amsmath,amssymb,bm}
+\begin{document}
+
+\end{document}
+```
+
+"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト"に、
+次の"&amp;Ini.js"を保存します。
+
+```
+LF = String.fromCharCode(10); //  改行コード
+CR = String.fromCharCode(13); //  改行コード
+array = new Array();
+joinedTxt = "";
+fileRef = new File("/C/temp/eq.ini");
+flag = fileRef.open ("r","","");
+if (flag){
+	textObj = activeDocument.textFrames.add();
+	txt = fileRef.read();
+	array = txt.split(LF);
+	for(i=0;i<array.length;i++){
+		joinedTxt = joinedTxt + array[i];
+		if( i != array.length-1 ) joinedTxt = joinedTxt + CR;
 		}
-	  fileRef.close()
-	//editor.batを記述
-	fileRef = new File (""+saveDir+"editor.bat");
-	fileRef.open ("w","","");
-	fileRef.writeln("cd EqsIn"+filename+"");
-	fileRef.writeln("start eq.tex");
-	fileRef.writeln("exit");
+	textObj.contents = joinedTxt;
 	fileRef.close();
-	//editor.batを実行
-	fileObj = new File(""+saveDir+"editor.bat");
-	fileObj.execute();
-        }
-}
-
-```
-
-## Rewrite.js {#w935a51a}
-
-以下のスクリプトを"&amp;Rewrite.js"というファイル名で保存。
-
-保存先は"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト"が便利です。
-
-```
-//TeX関係の初期設定
-gs = "gswin32c";	//アウトラインを作成	
-TeX = "latex";		//TeX処理
-dvi = "dvips";		//dvi変換
-folderRef = activeDocument.path;
-str = activeDocument.name;
-chr_f = str.split(".");
-filename = chr_f[0];
-if(folderRef=="/c")
-{
-alert("アクティブなドキュメントを半角英数の名前で保存してください。")
-}
-else
-{
-	dir = folderRef.toString();
-	saveDir = ""+dir+"/EqsIn"+filename+"/";
-	chr_d = saveDir.split("/");
-	saveDrive = chr_d[1]+":";
-	savefolder = saveDir.slice(2,-1)+"/";
-	eqsFolder = new Folder( saveDir ) ;
-	if( !eqsFolder.exists )
-	{
-	alert("First.jsを先に実行してください");
-	}
-	else
-	{
-	time = new Date().getTime();
-	//tex2eps_outline.batを記述
-	fileRef = new File (""+saveDir+"tex2eps_outline.bat");
-	fileRef.open ("w","","");
-	fileRef.writeln(""+saveDrive+"");
-	fileRef.writeln("cd EqsIn"+filename+"");
-	fileRef.writeln(""+TeX+" eq");
-	fileRef.writeln(""+dvi+" -Ppdf -E eq -o eq.eps");
-	fileRef.writeln(""+gs+" -q -sDEVICE=epswrite -sOutputFile=eq_outline_"+time+".eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps");
-	fileRef.close();
-	//tex2eps_outline.batを実行
-	fileObj = new File(""+saveDir+"tex2eps_outline.bat");
-	fileObj.execute();
-	//TeX処理とEPS書き出しの時間がまちまちなので...
-	flag = confirm("描画しますか？");
-	if (flag == true) 
-	{
-	//リンク画像としてアクティブなドキュメントの
-	//アクティブなレイヤーに貼り付ける。
-	placedImg = activeDocument.activeLayer.placedItems.add() ;
-	inputFile = ""+saveDir+"eq_outline_"+time+".eps";
-	placedImg.file = new File( inputFile );
-	placedImg.name = "+time+";
-	placedImg.position = [ 400, 400] ;
-	placedImg.selected = true ;
-	}
-	}
 }
 ```
 
-## 使い方 {#jc24064d}
+保存した後Illustratorを起動すれば、\[ファイル\]→\[スクリプト\]に\[Ini\]が追加されているはずです。数式を書き込みたい文書を編集しているときに、このスクリプトを呼び出せば、"eq.ini"内の文書が書き込まれたテキストオブジェクトが作成できます。こちらもWindowsなら、\[Alt+F\]→\[R\]→\[I\]で実行可能です。
 
-1. 半角英数のファイル名で保存されたファイル(hoge.ai)をダブルクリックなどで開く。
-    (Illustratorのメニュー\[ファイル\]→\[開く\]で開くとスクリプトがエラー終了します。)
+***
 
-1. \[ファイル\]→\[スクリプト\]から"&amp;Fitst.js"を実行。エディタで"eq.tex"が開かれます。
-1. 適当に編集した後、\[ファイル\]→\[スクリプト\]から"&amp;Rewrite.js"を実行すれば、対応する数式がリンク配置されます。
-1. 続けて別の数式をリンク配置したい場合は、"eq.tex"を編集して保存し、\[ファイル\]→\[スクリプト\]から"&amp;Rewrite.js"を実行するだけです。
-
-## Tips {#if054c37}
-
-- 既にサブディレクトリ"EqsInhoge"が存在する場合に"Fitst.js"を実行すると、サブディレクトリ中の"eq.tex"が直前に編集された状態で開かれます。
-- スクリプトの保存先を"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト"にしてあり、スクリプトのファイル名を"&amp;Fitst.js"、"&amp;Rewrite.js"にしてある場合、\[Alt+F\]+\[R\]+\[F\]で"&amp;First.js"、\[Alt+F\]+\[R\]+\[R\]で"&amp;Rewrite.js"が実行されます。
-- 「Illustratorのメニュー\[ファイル\]→\[開く\]で開くとスクリプトがエラー終了」は、突き詰めると文字コードの問題です。半角英数のフォルダ名しか使わないのであれば容易に直せるのですが…。改良していただけると幸いです。
-- エディタを常に最前面に表示するようにしておくと、細かい数式を大量に配置するときに便利です。
+- リンク配置を行うスクリプトを改良したものです。問題があったためお勧めできませんが、必要であればこのページのバックアップを参照してください。 -- 書いた人 2007-02-21 (水) 00:14:23
