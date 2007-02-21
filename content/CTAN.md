@@ -7,9 +7,7 @@ pukiwiki: "CTAN"
 
 # CTAN
 
-<!--       1         2         3         4         5         6         7 -->
-<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
-<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
 ## CTAN とは？ {#c8b76129}
 
@@ -35,8 +33,8 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
 CTAN 以外にもたくさんのフリーソフトをミラーしています。
 以下のような DNS による負荷分散も実験的に行われています。
 （[Ring Server](http://www.ring.gr.jp/) の
-「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの
-「TENBIN，DNS BALANCEって何ですか？
+「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」の
+ページの「TENBIN，DNS BALANCEって何ですか？
 また、RingServerでの負荷分散はどのように行っているのですか？」の項目参照。）
 
 - [http://www.ring.gr.jp/pub/text/CTAN/](https://mirror.ctan.org/./)
@@ -48,7 +46,8 @@ CTAN 以外にもたくさんのフリーソフトをミラーしています。
     近傍のサーバへ誘導）
 
 - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)
-    （空いているサーバ優先…… [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
+    （空いているサーバ優先……
+    [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
     による動的な負荷分散を行う）
 
 オリジナルの CTAN サイトは次の三つです。
@@ -59,10 +58,9 @@ CTAN 以外にもたくさんのフリーソフトをミラーしています。
 
 Ring Server 以外の国内のミラー（一部）：
 
+- [理化学研究所](http://ftp.riken.go.jp/pub/tex-archive/)
+- [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+- [IIJ](http://ftp.iij.ad.jp/pub/TeX/CTAN/)
 - [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)
-- [理化学研究所](ftp://ftp.riken.go.jp/pub/tex-archive/)
-- [IIJ](ftp://ftp.iij.ad.jp/pub/TeX/CTAN/)
 
-<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
-<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
-<!--       1         2         3         4         5         6         7 -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
