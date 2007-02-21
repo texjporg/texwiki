@@ -38,6 +38,15 @@ NFSS に関することについては，NFSS に関する解説を含む文献
 
 ***
 
+<strong>全般的な注意</strong>：
+
+日本語を含む文書を作成する場合，和文文字の空白（いわゆる全角空白）は
+<strong>「文法上無視される空白」ではない通常の文字である</strong>ことに注意してください．
+
+特に，ソースファイルのインデント（字下げ）を和文文字の空白で行うのは有害です．
+
+***
+
 #### LaTeX Font Warning: \*\*\* NFSS release 1 command \somecs found<br> \*\*\* Update by using release 2 command \DeclareFontShape.<br> \*\*\* Recovery is probably possible .... {#w12358e7}
 
 NFSS1 のコマンド \somecs を用いた場合に現れるメッセージです．<br>
