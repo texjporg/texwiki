@@ -58,7 +58,7 @@ CTAN 以外にもたくさんのフリーソフトをミラーしています。
 
 Ring Server 以外の国内のミラー（一部）：
 
-- [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/) （ftp による接続）
+- [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/) （FTP による接続）
 - [理化学研究所](http://ftp.riken.go.jp/tex-archive/)
 - [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
 - [IIJ](http://ftp.iij.ad.jp/pub/TeX/CTAN/)
