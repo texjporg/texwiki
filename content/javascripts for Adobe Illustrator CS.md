@@ -78,8 +78,8 @@ folderObj = new Folder(saveDir) ;
 if (!folderObj.exists && link) folderObj.create();
 selectObj = app.selection;
 selectLnt = selectObj.length;
-if (app.selection.length == 0) alert("1つ以上のテキストオブジェクトを選択してください");
-	
+
+ctr = 0;
 for (i=0;i<selectLnt;i++)
 {	
 	if(link)
@@ -94,6 +94,7 @@ for (i=0;i<selectLnt;i++)
 	if (selectObj[i].textRange == undefined) editflag = false;
 	else
 	{
+		ctr += 1;
 		equation = selectObj[i].textRange.contents;
 		x = selectObj[i].left;
 		y = selectObj[i].top;
@@ -119,6 +120,7 @@ for (i=0;i<selectLnt;i++)
 	
 	if (exeflag && confirm("描画しますか？")) ImportImg(""+saveDir+""+numOfFiles+".eps",""+AI+"outline.eps",x+w/2,y+dy,d,link);
 }
+if (ctr == 0) alert("1つ以上のテキストオブジェクトを選択してください");
 	
 function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString)
 {
@@ -236,11 +238,11 @@ link = true;	//true→リンク配置 false→埋め込み配置
 に書き換えてください。
 埋め込み配置と同じ要領で操作すれば所望の数式がリンク配置されます。
 なお、リンクはC:\AI\Link\ のサブディレクトリを参照しています。
+リンク先のドキュメント名ごとに分類される仕様ですが、
+ドキュメント名は半角英数のみで構成したほうが無難です。
 
 リンクウィンドウ中の詳細メニューから\[画像を埋め込み\]を選択することで、
 リンク画像をドキュメント中に埋め込み配置することも可能です。
 ただし、このようにして埋め込んだ場合は、前述のように一部のフォントが置換される場合があります。埋め込まれた画像中のフォントは\[文字\]→\[アウトラインを作成\]でパスに変換できます。
 
 リンク配置や埋め込み配置に関する詳細は、[Illustrator のリンク配置と埋め込み配置の違い](http://support.adobe.co.jp/faq/qadoc/AJ25.nsf/041584e8dbf36c09492569690008402c/0d1c8a5d4ac9e53549256e3600074edc?OpenDocument) をご参照ください。
-
-***
