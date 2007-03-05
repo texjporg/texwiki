@@ -7,22 +7,25 @@ pukiwiki: "新 pTeX とBabel"
 
 # 新 pTeX とBabel
 
-## 新 pTeX と Babel（Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
+## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
+
+- \[070306\]
+    latin.ldf のバグ --- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
 
 - \[061017\]
-    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました（[qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html)）。teTeX-3（ptetex3）版は少しオプションが異なります（[qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html)）。--- 栗山
+    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。--- 栗山
 
 - \[060313\]
-    Babel を使わずに済む方法 -- 「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました（[qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html)）。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん（[qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)）に、ハイフネーションも含めた本格的な出力には稲垣さん（[qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)）にサンプルを作っていただきました。ありがとうございます。--- 栗山
+    Babel を使わずに済む方法 -- 「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。--- 栗山
 
 - \[050906\]
-    W32TeX の8月12日版以降(ptetex3-20050811 以降)では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
+    W32TeX の8月12日版以降（ptetex3-20050811 以降）では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
 
 - \[050528\]
     UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
 
 - \[050527\]
-    「Babel による多言語構築ガイド 第3版」（栗山さんによる）もご覧ください。[qa:36022](https://okumuralab.org/~okumura/texfaq/qa/36022.html)
+    「[Babel による多言語構築ガイド 第3版](https://okumuralab.org/~okumura/texfaq/qa/36022.html)」（栗山さんによる）もご覧ください。
 
 - \[050521\]
     fmtutil --byfmt のように「ハイフン」を追加しておきました。
@@ -31,13 +34,13 @@ pukiwiki: "新 pTeX とBabel"
     ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの Hyphenation](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
 - \[040929\]
-    ギリシア数字の出力に関して greek.ldf にバグがあります。&#x5b;[qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html)&#x5d;
+    ギリシア数字の出力に関して greek.ldf にバグがあります ([qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html))。
 
 - \[040929\]
     russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
 
 - \[040927\]
-    map ファイルも texmf-local/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，texmf/ メインツリーには基本的に手を加えないでよいこととなります。
+    map ファイルも $TEXMFLOCAL/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，{$TEXMFMAIN,$TEXMFDIST}/ メインツリーには基本的に手を加えないでよいこととなります。
 
 - \[040925\]
     新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
@@ -48,7 +51,7 @@ pukiwiki: "新 pTeX とBabel"
 
 システムの具体例<br>
 
-角藤版 TeX 一式（2005.09.06.付け）<br>
+角藤版 TeX 一式（2005/09/06 付け）<br>
 
 LaTeX/pLaTeX とも，最初から，english, usenglishmax, basque,<br>
 bulgarian, coptic, welsh, czech, slovak, german, ngerman,<br>
@@ -61,63 +64,64 @@ ukrainian のハイフネーションパタンが組み込まれています。
 
 ***
 
-実際に行う作業は，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけです。これらの追加パッケージは texmf-local/ 以下に入れることにします。
+実際に行う作業は，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけです。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
 - 
-    CTAN から fonts/cyrillic/lh.zip をダウンロードし，lh/texmf/ を texmf-local/ と読み替える以外は元のツリー構造を保ったまま texmf-local/ 以下に展開する。
+    CTAN:fonts/cyrillic/ から lh.zip をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
 
 - 
-    texmf-local/source/lh/tex/setter.tex を開き \MakeFileHeadsfalse とある箇所の false 部分を true と書き換え，上書き保存する。
+    $TEXMFLOCAL/source/lh/tex/setter.tex を開き “\MakeFileHeadsfalse” とある箇所の “false” 部分を “true” と書き換え，上書き保存する。
 
 - 
-    texmf-local/source/lh/tex/wrk/ フォルダを作成する。
+    $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
 
 - 
-    コマンドプロンプトで（texmf-local/source/lh/tex/ 上で）
+    コマンドプロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
-    tex 99allenc
+    tex 99allenc.tex
     ```
 
-    と打ち込めば必要となるファイル群が wrk/ 内に自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを全て，texmf-local/fonts/source/lh/ ディレクトリ内に移動する。
+    と打ち込めば必要となるファイル群が wrk/ 内に自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを全て $TEXMFLOCAL/fonts/source/lh/ ディレクトリ内に移動する。
 
 ### ギリシアアルファベットフォント関連ファイルのダウンロードとインストール {#ud937b30}
 
 - 
-    CTAN から fonts/greek/cbfonts.zip をダウンロードし，適当な作業ディレクトリに展開する。
+    [CTAN:fonts/greek/](https://mirror.ctan.org/fonts/greek/) から[cbfonts.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/greek/cbfonts.zip) をダウンロードし，適当な作業ディレクトリに展開する。
 
 - 
     展開してできた cbfonts/ ディレクトリを開き，その中にある dvips/, encodings/, mf/, tfm/, type1/ の各ディレクトリを，それぞれ cbfonts/ とリネームしてから，<br>
-    texmf-local/fonts/map/dvips/<br>
-    texmf-local/fonts/enc/<br>
-    texmf-local/fonts/source/<br>
-    texmf-local/fonts/tfm/<br>
-    texmf-local/fonts/type1/<br>
+    $TEXMFLOCAL/fonts/map/dvips/<br>
+    $TEXMFLOCAL/fonts/enc/<br>
+    $TEXMFLOCAL/fonts/source/<br>
+    $TEXMFLOCAL/fonts/tfm/<br>
+    $TEXMFLOCAL/fonts/type1/<br>
     内に移動する（存在しないディレクトリは予め作っておく）。
 
-### DVIOUT のカスタマイズ {#r9f015cc}
+### Dviout for Windows のカスタマイズ {#r9f015cc}
 
 - 
-    texmf-local/fonts/ 以下のファイルも参照されるように，DVIOUT の Option--Setup Parameters--Font, TEXROOT 欄に ;c:\usr\local\share\texmf-local\fonts を追加記述し，Save, OK する。
+    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］→［Setup Parameters...］→［Font］→ TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］→［OK］する。
 
 ### type1ec.sty のインストール {#sea65834}
 
 - 
-    CTAN から fonts/ps-type1/cm-super/type1ec.sty をダウンロードし，<br>
-    texmf-local/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
+    [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty) をダウンロードし，<br>
+    $TEXMFLOCAL/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
 
 ### タイプセットのテスト {#mafcbf19}
 
 - 
-    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『\[改訂3版\]美文書』付録J340ページと同じになります）。
+    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『[［改訂第3版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』付録J 340ページと同じになります）。
 
 ***
 
 ```
+%%% -*- mode: yatex -*-
 \documentclass[b5paper]{article}
-\usepackage[10pt]{type1ec}% <--- New!!
+\usepackage[10pt]{type1ec} % <-- New!
 \usepackage[OT2,T1]{fontenc}
 \usepackage[greek,russian,english,french,german]{babel}
 \languageattribute{greek}{polutoniko}
@@ -170,29 +174,29 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ***
 
-ここから先は Type1 フォントを使うための設定です。不必要であれば無視してください。
+ここから先は Type 1 フォントを使うための設定です。不必要であれば無視してください。
 
-### cm-super パッケージ（巨大！ 約64.1MB）のダウンロードとインストール {#a4477ec1}
-
-- 
-    （cm-super には LH（キリルアルファベット）や EC（ラテンアルファベット）の Type1 が含まれています）<br>
-    CTAN の fonts/ps-type1/cm-super.zip をダウンロードし，元のツリー構造を保ったまま，texmf-local/tex/latex/cm-super/ 以下に展開する。先の type1ec.sty は上書きして良い。
+### cm-super パッケージ（巨大！ 約 64.1 MiB）のダウンロードとインストール {#a4477ec1}
 
 - 
-    texmf-local/tex/latex/cm-super/ ディレクトリを開き，その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，ディレクトリごと texmf-local/fonts/type1/ 以下に移動する（それ以外のファイルは，さしあたって，不必要）。
+    （cm-super には LH （キリルアルファベット）や EC （ラテンアルファベット）の Type 1 が含まれています）<br>
+    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) から[cm-super.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) をダウンロードし，元のツリー構造を保ったまま，$TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。先の type1ec.sty は上書きして良い。
+
+- 
+    $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する（それ以外のファイルは，さしあたって不必要）。
 
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は texmf-local/fonts/type1/wn-cyrillic/ 以下に \*.map は texmf-local/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください（存在しないディレクトリは予め作っておく）。
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type 1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は $TEXMFLOCAL/fonts/type1/wn-cyrillic/ 以下に \*.map は $TEXMFLOCAL/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください（存在しないディレクトリは予め作っておく）。
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
 - 
-    texmf/web2c/updmap.cfg に（必要に応じて）
+    $TEXMF/web2c/updmap.cfg に（必要に応じて）
 
     ```
-    Map cbgreek.map
+    MixedMap cbgreek.map
     Map cm-super-t1.map
     Map cm-super-ts1.map
     Map cm-super-t2a.map
@@ -216,12 +220,12 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     以上で，先のタイプセット用ファイル（名前を仮に johannes.tex とします）に
 
     ```
-    (p)latex johannes
-    dvipdfm(x) johannes
+    (p)latex johannes.tex
+    dvipdfm(x) johannes.dvi
     ```
 
-    とすることで Type1 の埋め込まれた PDF が作成されます。
+    とすることで Type 1 の埋め込まれた PDF が作成されます。
 
-### もっと本格的に・・・ {#z684b1d0}
+### もっと本格的に…… {#z684b1d0}
 
-世界の言語あるいは文字をどこまで表現できるかについては，[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/index.html) のページを参照してください
+世界の言語あるいは文字をどこまで表現できるかについては，[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/) のページを参照してください。
