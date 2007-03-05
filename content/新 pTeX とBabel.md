@@ -10,7 +10,7 @@ pukiwiki: "新 pTeX とBabel"
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
 - \[070306\]
-    latin.ldf のバグ --- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
+    latin.ldf のバグ --- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに "\languageattribute{latin}{withprosodicmarks}" を指定するだけで，従来通りデフォルトで韻律記号が使えます（"\ProsodicMarksOn" -- "\ProsodicMarksOff" で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
 
 - \[061017\]
     updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。--- 栗山
@@ -103,7 +103,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
 ### Dviout for Windows のカスタマイズ {#r9f015cc}
 
 - 
-    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］→［Setup Parameters...］→［Font］→ TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］→［OK］する。
+    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］->［Setup Parameters...］->［Font］-> TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］->［OK］する。
 
 ### type1ec.sty のインストール {#sea65834}
 
@@ -226,6 +226,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     とすることで Type 1 の埋め込まれた PDF が作成されます。
 
-### もっと本格的に…… {#z684b1d0}
+### もっと本格的に...... {#z684b1d0}
 
 世界の言語あるいは文字をどこまで表現できるかについては，[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/) のページを参照してください。
