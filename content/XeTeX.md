@@ -229,7 +229,7 @@ Hello, \TeX !
 これで xelatex test とすると，test.pdf ができる。
 日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので，
 ベタ組をするためには，Proportional Alternative (palt) フィーチャーを
-無効にしている。
+無効にしている。 <!-- 0.996 以降では、詰め組はデフォルトではなくなりました。 -->
 ただしこれでは
 
 ```
@@ -255,6 +255,41 @@ Hello, \TeX !
 ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
 現状ではまともではない。
 しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。
+
+<!-- どなたか、修正加筆して頂くと嬉しいです。 -->
+
+そもそも TeX で改行が可能な位置は、(数式と kern を無視して)単純化すると、
+glue, penalty, discretionary break です。ハイフンは日本語に関係しないので、無視します。
+文章中のどのような箇所に glue と penalty が現れるかというと、
+
+1. ユーザーが直に書き込んだ場所、
+1. マクロの展開の結果書き込まれる場所、
+1. それ以外、
+
+がありますが、ここでは、3. が問題となります。
+
+- 古典的な 8 bit 版の TeX では、空白文字の箇所に TFM から読みとられた量の glue が自動的に挿入されます。
+- pTeX では、更に、和字と和字の間に TFM (JFM) から読みとられた量の glue、または、 \kanjiskip が、和字とそれ以外の間に \xkanjiskip が自動的に挿入されます。また、禁則文字の前後には penalty が自動的に挿入されます。
+    更に詳しいことや、カスタマイズの方法については、[pTeX でのJIS X4051 の実装](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)を御覧下さい。
+
+- XeTeX では、空白文字の箇所に加え、 \XeTeXlinebreaklocale が有効なロケールになっていれば、ユニコードの改行規則に基づいた改行可能箇所を内蔵の ICU ライブラリが捜し出し、 \XeTeXlinebreakpenalty と \XeTeXlinebreakskip が自動的に挿入されます。
+    例えば、
+
+    ```
+    \XeTeXlinebreaklocale "th"
+    \XeTeXlinebreakpenalty 0
+    ```
+
+    とすれば、タイ語で書かれたテキストを ICU ライブラリに内蔵された辞書を用いて、単語に分割し、その区切り目に、 0 のペナルティを挿入します。一方、上にも紹介されている
+
+    ```
+    \XeTeXlinebreaklocale "ja"
+    \XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
+    ```
+
+    は、和字と和字の間や和字とそれ以外の間に、少量の伸び縮みを許した幅 0 の空白 (glue) を挿入することを指示します。この際、行頭禁則文字の直前と、行末禁則文字の直後は、ユニコードの改行規則では改行可能であると認識されないので、このような場所には何も挿入されません。
+
+このようにして、各言語毎の規則で設定された改行可能箇所から、その段落の最も適切な改行箇所を見つけ出すのは、 TeX の役割です。 <!-- 0.997 以降では、更に、 \XeTeXinterchartokenstate が正の値になっていれば、 \XeTeXcharclass の概念が有効になり、 \XeTeXcharclass が A の文字と \XeTeXcharclass が B の文字との間にはトークンレジスタ --> <!-- \XeTeXinterchartoks A B --> <!-- が自動的に挿入されます。このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。 --> <!-- \XeTeXcharclass は 0〜255 の任意の数ですが、 255 だけは特別な意味を持ち、行末。行頭、 hbox を表します。 FMT ファイルで、\XeTeXcharclass の値は --> <!-- - - 分かち書きされる通常の文字は 0 --> <!-- - - 漢字と仮名は 1 --> <!-- - - 開き括弧は 2 --> <!-- - - 閉じ括弧と句読点は 3 --> <!-- に初期化され、 --> <!--  \gdef\xtxHanGlue{\hskip0pt plus 0.1em\relax} % between ideographs --> <!--  \gdef\xtxHanSpace{\hskip0.2em plus 0.2em minus 0.1em\relax} % before/after runs of CJK --> <!--   --> <!--  \global\XeTeXinterchartoks 0 1 = {\xtxHanSpace} --> <!--  \global\XeTeXinterchartoks 1 0 = {\xtxHanSpace} --> <!--  \global\XeTeXinterchartoks 1 1 = {\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 1 2 = {\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 1 3 = {\nobreak\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 2 1 = {\nobreak\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 3 1 = {\xtxHanGlue} --> <!-- 等と、トークンレジスタも設定されていますが、これらは自由に再設定できます。 --> <!--  --> <!-- 一例として、行末禁則文字の \XeTeXcharclass を 4 に設定するには、 --> <!--  \@for\Kinsoku:={`＃,`￥,`＄,`＆}\do{\XeTeXcharclass\Kinsoku=4} --> <!-- とします。 \XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。 --> <!--  --> <!-- \XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。 -->
 
 ### 参考サイト {#m6b448cf}
 
