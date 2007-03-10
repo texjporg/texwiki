@@ -79,13 +79,19 @@ pukiwiki: "ArchiveQandA"
 - 通しノンブルを振る・最後のページ番号を取得する
     - 通しノンブルを振る (印刷所持込用?) ([qa:9645](https://okumuralab.org/~okumura/texfaq/qa/9645.html), [qa:9677](https://okumuralab.org/~okumura/texfaq/qa/9677.html), [qa:10561](https://okumuralab.org/~okumura/texfaq/qa/10561.html)).
     - 章ごとのページ／章の総ページ数 ([qa:45859](https://okumuralab.org/~okumura/texfaq/qa/45859.html), [qa:45860](https://okumuralab.org/~okumura/texfaq/qa/45860.html), [qa:45870](https://okumuralab.org/~okumura/texfaq/qa/45870.html)).
-    - lastpage.sty と hyperref.sty は競合する ([qa:46490](https://okumuralab.org/~okumura/texfaq/qa/46490.html))
+    - lastpage.sty のカスタマイズは hyperref.sty と共存しにくい ([qa:46490](https://okumuralab.org/~okumura/texfaq/qa/46490.html))
         <!-- ([[qa:46483]], [[qa:46486]], [[qa:46488]], [[qa:46489]], [[qa:46490]],  -->
         <!-- [[qa:46494]], [[qa:46495]], [[qa:46502]], [[qa:46508]], [[qa:46510]]). -->
+        <!-- //// 原題: hyperref.sty と lastpage.sty は競合する -->
         <!-- // その件は，hyperref，lastpage の両パッケージが競合しているというよりも -->
         <!-- // むしろ，“hyperref 自身が lastpage と共存できるように細工しているがゆえに， -->
         <!-- // lastpage の内部処理に手を入れるようなユーザ自身によるカスタマイズが -->
         <!-- // hyperref 使用時にはうまくいかない”という話のようです． -->
+        <!-- //// 詳しい解説をありがとうございます．内容は理解しているつもりでしたが， -->
+        <!-- //// 正しく 1 行紹介するのがむずかしいのと， -->
+        <!-- //// トラブルに陥った人が後から検索するのにどういうタイトルがいいか， -->
+        <!-- //// という兼ね合いがうまくなかったでしょうか．ちょっと変えてみました． -->
+        <!-- //// 細かいことを気にすると，断定形で書きにくくなるのがくせものです・・・． -->
 
 - \label{}, \ref{} を目に見えるように張る
     - [CTAN:macros/latex/required/tools/showkeys.dtx](https://mirror.ctan.org/macros/latex/required/tools/showkeys.dtx) ([qa:19427](https://okumuralab.org/~okumura/texfaq/qa/19427.html), ...)
@@ -97,6 +103,11 @@ pukiwiki: "ArchiveQandA"
 - 二段組にしたときに最終ページの左右カラムを揃える
     - [blance.sty](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/balance.html)，[CTAN:macros/latex/contrib/preprint/](https://mirror.ctan.org/macros/latex/contrib/preprint/)内 ([qa:32276](https://okumuralab.org/~okumura/texfaq/qa/32276.html)...)
 - [TeXが苦手とする処理](</TeXが苦手とする処理/>)（下線，飾り枠など）
+- 行列の転置の書き方
+    - [qa:2476](https://okumuralab.org/~okumura/texfaq/qa/2476.html)からのスレッド：[qa:2478](https://okumuralab.org/~okumura/texfaq/qa/2478.html), [qa:2479](https://okumuralab.org/~okumura/texfaq/qa/2479.html), [qa:2480](https://okumuralab.org/~okumura/texfaq/qa/2480.html), [qa:2490](https://okumuralab.org/~okumura/texfaq/qa/2490.html), [qa:2496](https://okumuralab.org/~okumura/texfaq/qa/2496.html), [qa:2498](https://okumuralab.org/~okumura/texfaq/qa/2498.html), [qa:2502](https://okumuralab.org/~okumura/texfaq/qa/2502.html), [qa:2503](https://okumuralab.org/~okumura/texfaq/qa/2503.html), [qa:2568](https://okumuralab.org/~okumura/texfaq/qa/2568.html), [qa:2569](https://okumuralab.org/~okumura/texfaq/qa/2569.html), [qa:2571](https://okumuralab.org/~okumura/texfaq/qa/2571.html), [qa:2572](https://okumuralab.org/~okumura/texfaq/qa/2572.html), [qa:2573](https://okumuralab.org/~okumura/texfaq/qa/2573.html), [qa:2579](https://okumuralab.org/~okumura/texfaq/qa/2579.html), [qa:2583](https://okumuralab.org/~okumura/texfaq/qa/2583.html), [qa:2584](https://okumuralab.org/~okumura/texfaq/qa/2584.html), [qa:2585](https://okumuralab.org/~okumura/texfaq/qa/2585.html)
+    - 上のスレッドで出てきたマクロの使い方の例：[qa:12045](https://okumuralab.org/~okumura/texfaq/qa/12045.html)
+    - 大型演算子以外に使う \sideset：[qa:2511](https://okumuralab.org/~okumura/texfaq/qa/2511.html)
+    - [qa:43655](https://okumuralab.org/~okumura/texfaq/qa/43655.html) に対する回答：[qa:43656](https://okumuralab.org/~okumura/texfaq/qa/43656.html), [qa:43657](https://okumuralab.org/~okumura/texfaq/qa/43657.html), [qa:43658](https://okumuralab.org/~okumura/texfaq/qa/43658.html), [qa:43667](https://okumuralab.org/~okumura/texfaq/qa/43667.html), [qa:43668](https://okumuralab.org/~okumura/texfaq/qa/43668.html)
 
 ### コメント {#adc20c89}
 
