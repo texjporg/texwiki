@@ -308,7 +308,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 </tbody>
 </table>
 
-<!-- 「逸」の旧字体は U+FA67 （二点之繞 + 兔）である。 -->
+<!-- 「逸」の旧字体は U+FA67 （二点之繞 + 兔）です。 -->
 
 <table>
 <tbody>
@@ -358,7 +358,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x210a;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">g</td><td style="text-align:left">\textit{g}, $g$, \ajLig{g}</td></tr>
 <tr><td style="text-align:center">&#x3396;</td><td style="text-align:center">&#x3397;</td><td style="text-align:center">&#x3398;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">ml</td><td style="text-align:center">dl</td><td style="text-align:left">m$\ell$, \ajLig{ml}</td></tr>
 <tr><td style="text-align:center">&#x2113;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">l</td><td style="text-align:left">$\ell$, \ajLig{l}</td></tr>
-<tr><td style="text-align:center">&#x33b3;</td><td style="text-align:center">&#x33b1;</td><td style="text-align:center">&#x33b0;</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">ms</td><td style="text-align:center">ns</td><td style="text-align:left">\ajLig{ms}</td></tr>
+<tr><td style="text-align:center">&#x33b3;</td><td style="text-align:center">&#x33b1;</td><td style="text-align:center">&#x33b0;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">ms</td><td style="text-align:center">ns</td><td style="text-align:left">\ajLig{ms}</td></tr>
 <tr><td style="text-align:center">&#x33b2;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&mu;s</td><td style="text-align:left">\textmu s, \Pisymbol{psy}{"6D}s, $\mu$s, \ajLig{micros}</td></tr>
 <tr><td style="text-align:center">&#x2109;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&deg;F</td><td style="text-align:left">\textdegree F, {}$^\circ$F</td></tr>
 <tr><td style="text-align:center">&#x33d4;</td><td style="text-align:center">&#x33cb;</td><td style="text-align:center">&#x3390;</td><td style="text-align:center">&#x3385;</td><td style="text-align:center">&#x3386;</td><td style="text-align:center">&#x3387;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">mb</td><td style="text-align:center">HP</td><td style="text-align:left">\ajLig{HP}</td></tr>
