@@ -100,7 +100,7 @@ BibTeX形式に変換するWebアプリが公開されている
 
 #### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
 
-- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/cs_amazon.htm#op_bt)
+- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/cs_amazon_ecs.htm#op_bt)
 
 #### [PubMed](http://pubmed.gov) {#h4890ebf}
 
