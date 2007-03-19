@@ -570,3 +570,6 @@ de.comp.text.tex (2005/08/11, slightly modified):
 ```
 
 ***
+
+- \usepackage\[dvipdfm,bookmarkstype=toc=true,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false\]{hyperref} -- kd 2007-03-20 (火) 15:21:01
+- 修士論文のpdf作成等の際には，ぜひともhyperrefをご利用してpdfファイルを作って下さい．（例えば上記例をプリアンブル部に書けばよいと思います．目次から本文のページ等へジャンプ可能だと読み手が楽です．） -- kd 2007-03-20 (火) 15:27:11
