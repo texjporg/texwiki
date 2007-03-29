@@ -96,7 +96,7 @@ BibTeX形式の出力があるWebアプリが公開されている
 
 #### [Google Scholar](http://scholar.google.com/) {#ydd7d667}
 
-- [BibTeX文献情報のWeb検索と取得](http://keijisaito.info/arc/BibTeX/get_bib.htm#getgoo)
+- [BibTeX文献情報のWeb検索](http://keijisaito.info/arc/BibTeX/get_bib.htm#getgoo)
 
 #### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
 
