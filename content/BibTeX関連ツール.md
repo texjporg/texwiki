@@ -90,9 +90,9 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 | [mab2bib](http://texcatalogue.sarovar.org/entries/mab2bib.html) |  Python  |   Simple Python scripts to convert MAB bibliography files into BibTeX and UTF-8 encoded text files into ASCII with LaTeX codes  |
 | [ama2bib](http://tex.dante.jp/typo/index.php?ama2bib) |  Perl  |  [Amazon Web Service](http://www.amazon.co.jp/exec/obidos/subst/associates/join/webservices.html/249-1233918-9751503)の検索結果をBibTeX形式に変換するスクリプト |
 
-### Web上で提供されているBibTeX変換サービス {#o3a13db0}
+### Web上で提供されているBibTeX出力サービス {#o3a13db0}
 
-BibTeX形式に変換するWebアプリが公開されている
+BibTeX形式の出力があるWebアプリが公開されている
 
 #### [Google Scholar](http://scholar.google.com/) {#ydd7d667}
 
@@ -100,7 +100,7 @@ BibTeX形式に変換するWebアプリが公開されている
 
 #### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
 
-- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/cs_amazon_ecs.htm#op_bt)
+- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/l2a_amazon_ecs.htm#bibtex)
 
 #### [PubMed](http://pubmed.gov) {#h4890ebf}
 
@@ -116,6 +116,10 @@ BibTeX形式に変換するWebアプリが公開されている
 #### [CiteULike](http://jp.citeulike.org/) {#e360efa9}
 
 - [export](http://jp.citeulike.org/export.adp)
+
+#### その他のBibTeXデータベースと検索プラグイン {#ja2d2df0}
+
+- [ブラウザからの論文検索](http://keijisaito.info/arc/search/cs_thesis.htm)にあるデータベースのうち\[BibTeX文献情報含む\]と書かれているものは、BibTeXの出力があります。また、このページからWebブラウザに検索プラグインを導入することもできます。
 
 ## BibTeXファイルを他の形式に変換するツール（エクスポート） {#ubc94a7f}
 
