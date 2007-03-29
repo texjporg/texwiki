@@ -9,7 +9,7 @@ pukiwiki: "BibTeX関連ツール"
 
 <strong>BibTeX関連ツールの目次</strong>
 
-***
+<!-- - --  -->
 
 ## BibTeX用の文献管理ソフト {#w7ec403f}
 
