@@ -7,8 +7,7 @@ pukiwiki: "Ghostscript 8.54"
 
 # Ghostscript 8.54
 
-<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
-<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
 以下は空のページの代わりにとりあえず入れただけの stub です。
 書き換えてください。
@@ -22,7 +21,9 @@ pukiwiki: "Ghostscript 8.54"
 ### ダウンロード {#g31ae747}
 
 [CTAN:support/ghostscript/GPL/gs854/](https://mirror.ctan.org/support/ghostscript/GPL/gs854/)
-などから ghostscript-8.54-gpl.tar.bz2 と ghostscript-fonts-std-8.11.tar.gz を入手します。
+などから[ghostscript-8.54-gpl.tar.bz2](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-8.54-gpl.tar.bz2)
+と[ghostscript-fonts-std-8.11.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-fonts-std-8.11.tar.gz)
+を入手します。
 
 ### インストール {#u4ad1919}
 
@@ -73,8 +74,8 @@ $ tar xvzf ..../ghostscript-fonts-std-8.11.tar.gz
 composefont pop
 ```
 
-以上でPSファイルの表示はできるようになりました。
-ps2pdfもうまくいきます。
+以上で PostScript ファイルの表示はできるようになりました。
+ps2pdf もうまくいきます。
 
 ### 参考サイト {#cb8dfaab}
 
@@ -256,16 +257,18 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /UnPilgi                       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgi.ttf)       >> ;
 /UnPilgi-Bold                  << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgiBold.ttf)   >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0
-%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
-%%%     "/Library/Application Support/Adobe/PDFL/7.0/Fonts/"
+%%% OpenType fonts with PostScript outlines in Adobe Reader/Acrobat 8.0/7.0
+%%% See ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0.8/misc/
+%%%     ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0/misc/
+%%%     http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
+%%%     "/Library/Application Support/Adobe/PDFL/?.0/Fonts/"
 %/Ryumin-Light                  /KozMinProVI-Regular    ;
 %/GothicBBB-Medium              /KozGoPro-Medium        ;
 %/STSong-Light                  /AdobeSongStd-Light     ;
 %/MSung-Light                   /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium            /AdobeMyungjoStd-Medium ;
 
-%%% CID-keyed fonts in Acrobat Reader 4.0
+%%% CID-keyed fonts in Adobe Acrobat Reader 4.0
 %%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 %/Ryumin-Light                  /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium              /HeiseiKakuGo-W5-Acro    ;
@@ -347,7 +350,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %%% See http://dicey.org/vlgothic/
 /VL-Gothic-Regular             << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/VL-Gothic-Regular.ttf)       >> ;
 
-%%% RICOH LX TrueType fonts in Vine Linux CR
+%%% RICOH LX TrueType fonts in Vine Linux 3.2 CR
 %%% See http://www.n-brain.co.jp/vine/
 /LX-Mincho                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmincho.ttc)   /SubfontID 0 >> ;
 /LX-Gothic                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothic.ttc)   /SubfontID 0 >> ;
@@ -355,7 +358,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /LX-MaruGothic                 << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmgoth.ttc)    /SubfontID 0 >> ;
 /LX-POP                        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxpop.ttc)      /SubfontID 0 >> ;
 
-%%% DynaComware DynaFont series in Vine Linux CR
+%%% DynaComware DynaFont series in Vine Linux 3.2 CR
 %%% See http://www.n-brain.co.jp/vine/
 /DFMincho-UB                   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfminc.ttc)     /SubfontID 0 >> ;
 /DFKaisho-SB                   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfkai7.ttc)     /SubfontID 0 >> ;
@@ -437,8 +440,10 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /UnPilgi                       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgi.ttf)       >> ;
 /UnPilgi-Bold                  << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgiBold.ttf)   >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0
-%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
+%%% OpenType fonts with PostScript outlines in Adobe Reader 7.0
+%%% See ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0.8/misc/
+%%%     ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0/misc/
+%%%     http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
 %%%     /usr/local/Adobe/Acrobat7.0/Resource/CIDFont/
 %/Ryumin-Light                  /KozMinProVI-Regular    ;
 %/GothicBBB-Medium              /KozGoPro-Medium        ;
@@ -446,7 +451,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/MSung-Light                   /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium            /AdobeMyungjoStd-Medium ;
 
-%%% CID-keyed fonts in Acrobat Reader 4.0
+%%% CID-keyed fonts in Adobe Acrobat Reader 4.0
 %%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 %/Ryumin-Light                  /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium              /HeiseiKakuGo-W5-Acro    ;
@@ -457,7 +462,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/HYGoThic-Medium               /HYGoThic-Medium-Acro    ;
 ```
 
-## GNU GPL Ghostscript 8.54 for Windows {#w33eec77}
+## GNU GPL Ghostscript 8.54 for Microsoft Windows {#w33eec77}
 
 以下，取り敢えずメモ書き。編集意欲のある方は是非代わりに編集して下さい。
 
@@ -467,14 +472,14 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 - [GNU GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
 - [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
-- GSview 4.8: [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) の中の [gsv48w32.exe](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv48w32.exe)
+- GSview 4.8: [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) の中の[gsv48w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv48w32.exe)
 
 ### インストール {#a4d9c6ea}
 
 旧ヴァージョンの Ghostscript がすでにインストールしてあるのならば，
 先にアンインストールしておきます。
 
-- 絶対パスに ASCII 以外の文字（日本語など）を使っていないディレクトリに
+- 絶対パスに US-ASCII 以外の文字（日本語など）を使っていないディレクトリに
     gs854w32full-gpl.zip を展開します。
 
 - setupgs.exe を実行します。
@@ -486,16 +491,16 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 - \[Use Windows TrueType fonts for Chinese, Japanese and Korean\] に
     チェックを入れます。
 
-ユーザーアカウントの名前に例えば「佐藤太郎」のように
-ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
+ユーザーアカウントの名前に例えば「山田太郎」のように
+US-ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
 インストールに失敗することがあります。これは環境変数
-TEMP に “C:\Documents and Settings\佐藤太郎\Local Settings\Temp” のように
-ASCII 以外の文字が使われてしまうことが原因です。
+TEMP に “C:\Documents and Settings\山田太郎\Local Settings\Temp” のように
+US-ASCII 以外の文字が使われてしまうことが原因です。
 環境変数 TEMP はデフォルトでは "%USERPROFILE%\Local Settings\Temp"
 (= "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
 設定されているので，この環境変数 TEMP を（例えば
 UNIX 系 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
-ASCII 文字だけで設定します。
+US-ASCII 文字だけで設定します。
 
 ### 環境変数 Path の設定 {#g074d14f}
 
@@ -528,7 +533,7 @@ gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみま�
 - UniKS-UTF16-H
 - UniKS-UTF16-V
 - Adobe-Japan1-6
-    <!-- -[[Adobe-Japan1-5-V:http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz]] （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。） -->
+    <!-- -&ref(http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz,Adobe-Japan1-5-V); （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。） -->
     <!-- Adobe-Japan1-5-Vは不要です．Identity-Vを使って下さい．(uchiyama) -->
 
 - Adobe-Japan1-UCS2
@@ -575,7 +580,7 @@ gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
 <<
 /FileType /TrueType
 /CSI [(Japan1) 6]
-/Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)
+/Path (C:/WINDOWS/Fonts/msmincho.ttc)
 /SubfontID 0
 >> ;
 
@@ -583,7 +588,7 @@ gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
 <<
 /FileType /TrueType
 /CSI [(Japan1) 6]
-/Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)
+/Path (C:/WINDOWS/Fonts/msgothic.ttc)
 /SubfontID 0
 >> ;
 ```
@@ -667,7 +672,7 @@ composefont pop
 
 ### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
 
-#### For Windows <a id="cidfmap-Windows"></a> {#xba7681e}
+#### For Microsoft Windows <a id="cidfmap-Windows"></a> {#xba7681e}
 
 ```
 %!
@@ -695,9 +700,10 @@ composefont pop
 /STSong-Regular                /NSimSun                    ;
 /STHeiti-Regular               /SimHei                     ;
 /STHeiti-Light                 /SimHei                     ;
-/STKaiti-Regular               /GBZenKai-Medium            ;
-/STFangsong-Regular            /NSimSun                    ;
-/STFangsong-Light              /NSimSun                    ;
+/STKaiti-Regular               /KaiTi                      ;
+%/STKaiti-Regular               /GBZenKai-Medium            ;
+/STFangsong-Regular            /FangSong                   ;
+/STFangsong-Light              /FangSong                   ;
 /AdobeSongStd-Light            /STSong-Light               ;
 /AdobeSongStd-Light-Acro       /AdobeSongStd-Light         ;
 /STSongStd-Light-Acro          /AdobeSongStd-Light         ;
@@ -706,7 +712,8 @@ composefont pop
 /MSung-Light                   /MingLiU                    ;
 /MSung-Medium                  /MingLiU                    ;
 /MHei-Medium                   /SimHei-Adobe-CNS1          ;
-/MKai-Medium                   /ZenKai-Medium              ;
+/MKai-Medium                   /DFKaiShu-SB-Estd-BF        ;
+%/MKai-Medium                   /ZenKai-Medium              ;
 /AdobeMingStd-Light            /MSung-Light                ;
 /AdobeMingStd-Light-Acro       /AdobeMingStd-Light         ;
 /MSungStd-Light-Acro           /AdobeMingStd-Light         ;
@@ -724,10 +731,10 @@ composefont pop
 /HYSMyeongJoStd-Medium         /HYSMyeongJoStd-Medium-Acro ;
 /HYSMyeongJo-Medium-Acro       /AdobeMyungjoStd-Medium     ;
 
-%%% monospaced TrueType fonts in Windows XP
+%%% monospaced TrueType fonts in Windows Vista/XP
 %%% See C:\WINDOWS\Fonts\
-/MS-Mincho                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 0 >> ;
-/MS-Gothic                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 0 >> ;
+/MS-Mincho                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/msmincho.ttc)   /SubfontID 0 >> ;
+/MS-Gothic                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/msgothic.ttc)   /SubfontID 0 >> ;
 /NSimSun                       << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 1 >> ;
 /MingLiU                       << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliu.ttc)    /SubfontID 0 >> ;
 /BatangChe                     << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 1 >> ;
@@ -735,11 +742,11 @@ composefont pop
 /GulimChe                      << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 1 >> ;
 /GungsuhChe                    << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 3 >> ;
 
-%%% proportional TrueType fonts in Windows XP
+%%% proportional TrueType outline fonts in Windows Vista/XP
 %%% See C:\WINDOWS\Fonts\
-/MS-PMincho                    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSMINCHO.TTC)   /SubfontID 1 >> ;
-/MS-PGothic                    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 1 >> ;
-/MS-UI-Gothic                  << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/MSGOTHIC.TTC)   /SubfontID 2 >> ;
+/MS-PMincho                    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/msmincho.ttc)   /SubfontID 1 >> ;
+/MS-PGothic                    << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/msgothic.ttc)   /SubfontID 1 >> ;
+/MS-UIGothic                   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/msgothic.ttc)   /SubfontID 2 >> ;
 /SimSun                        << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsun.ttc)     /SubfontID 0 >> ;
 /SimHei                        << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
 /SimHei-Adobe-CNS1             << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/simhei.ttf)                  >> ;
@@ -748,6 +755,30 @@ composefont pop
 /Dotum                         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 2 >> ;
 /Gulim                         << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/gulim.ttc)      /SubfontID 0 >> ;
 /Gungsuh                       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/batang.ttc)     /SubfontID 2 >> ;
+
+%%% monospaced TrueType outline fonts in Windows Vista
+%%% See C:\WINDOWS\Fonts\
+/SimSun-ExtB                   << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simsunb.ttf)                 >> ;
+/KaiTi                         << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simkai.ttf)                  >> ;
+/FangSong                      << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/simfang.ttf)                 >> ;
+/DFKaiShu-SB-Estd-BF           << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/kaiu.ttf)                    >> ;
+
+%%% proportional TrueType outline fonts in Windows Vista
+%%% See C:\WINDOWS\Fonts\
+/Meiryo                        << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/meiryo.ttc)     /SubfontID 0 >> ;
+/Meiryo-Italic                 << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/meiryo.ttc)     /SubfontID 1 >> ;
+/Meiryo-Bold                   << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/meiryob.ttc)    /SubfontID 0 >> ;
+/Meiryo-BoldItalic             << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/meiryob.ttc)    /SubfontID 1 >> ;
+/MicrosoftYaHei                << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/msyh.ttf)                    >> ;
+/MicrosoftYaHeiBold            << /FileType /TrueType   /CSI [(GB1) 5]      /Path (C:/WINDOWS/Fonts/msyhbd.ttf)                  >> ;
+/MicrosoftJhengHeiRegular      << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/msjh.ttf)                    >> ;
+/MicrosoftJhengHeiBold         << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/msjhbd.ttf)                  >> ;
+/Ming-Lt-HKSCS-UNI-H           << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliu.ttc)    /SubfontID 2 >> ;
+/MingLiU-ExtB                  << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliub.ttc)   /SubfontID 0 >> ;
+/PMingLiU-ExtB                 << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliub.ttc)   /SubfontID 1 >> ;
+/Ming-Lt-HKSCS-ExtB            << /FileType /TrueType   /CSI [(CNS1) 5]     /Path (C:/WINDOWS/Fonts/mingliub.ttc)   /SubfontID 2 >> ;
+/MalgunGothicRegular           << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/malgun.ttf)                  >> ;
+/MalgunGothicBold              << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (C:/WINDOWS/Fonts/malgunbd.ttf)                >> ;
 
 %%% TrueType fonts in Microsoft Office 2003
 /HGMinchoB                     << /FileType /TrueType   /CSI [(Japan1) 6]   /Path (C:/WINDOWS/Fonts/HGRMB.TTC)      /SubfontID 0 >> ;
@@ -790,16 +821,18 @@ composefont pop
 /UnPilgi                       << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgi.ttf)       >> ;
 /UnPilgi-Bold                  << /FileType /TrueType   /CSI [(Korea1) 2]   /Path (./TrueType/un-fonts/UnPilgiBold.ttf)   >> ;
 
-%%% OpenType fonts in Adobe Reader 7.0
-%%% See http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
-%%%     "C:\Program Files\Adobe\Acrobat 7.0\Resource\CIDFont\"
+%%% OpenType fonts with PostScript outlines in Adobe Reader/Acrobat 8.0/7.0
+%%% See ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0.8/misc/
+%%%     ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0/misc/
+%%%     http://www.adobe.com/jp/products/acrobat/acrrasianfontpack.html
+%%%     "C:\Program Files\Adobe\Acrobat ?.0\Resource\CIDFont\"
 %/Ryumin-Light                  /KozMinProVI-Regular    ;
 %/GothicBBB-Medium              /KozGoPro-Medium        ;
 %/STSong-Light                  /AdobeSongStd-Light     ;
 %/MSung-Light                   /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium            /AdobeMyungjoStd-Medium ;
 
-%%% CID-keyed fonts in Acrobat Reader 4.0
+%%% CID-keyed fonts in Adobe Acrobat Reader 4.0
 %%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 %/Ryumin-Light                  /HeiseiMin-W3-Acro       ;
 %/GothicBBB-Medium              /HeiseiKakuGo-W5-Acro    ;
@@ -857,12 +890,12 @@ gs\gs8.54\lib\kconfig.ps の記述内容によって設定されます。
 標準ではオプション “-sDEVICE=pdfwrite” や ps2pdf によって
 PDF を作成する場合，CJK フォントは全て埋め込まれます。CJK フォントを
 埋め込まないように制御するには “/NeverEmbed” を使います。
-例えば “test.ps” という PostScript ファイルを PDF に
+例えば “foo.ps” という PostScript ファイルを PDF に
 変換する場合に，/MS-Mincho （ＭＳ 明朝）と /MS-Gothic （ＭＳ ゴシック）とを
 埋め込まないようにするためには次のようにコマンドを入力します。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=test.pdf -c ".setpdfwrite <</NeverEmbed [/MS-Mincho /MS-Gothic]>> setdistillerparams" -f test.ps
+>gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=foo.pdf -c ".setpdfwrite <</NeverEmbed [/MS-Mincho /MS-Gothic]>> setdistillerparams" -f foo.ps
 ```
 
 ここで “/NeverEmbed” で指定するフォント名は PostScript ファイル内に
@@ -873,7 +906,7 @@ PDF を作成する場合，CJK フォントは全て埋め込まれます。CJK
 記述しておいて，次のようにコマンドを入力する方法もあります。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=test.pdf -c .setpdfwrite -f neverembed.ps -f test.ps
+>gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=foo.pdf -c .setpdfwrite -f neverembed.ps -f foo.ps
 ```
 
 lib/neverembed.ps には，例えば次のように記述しておきます。
@@ -971,7 +1004,7 @@ $TEXMF/dvipdfm/config/dvipdfmx.cfg の記述内容の18行目
 D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f %i -c quit"
 ```
 
-を次のように変えます。
+に次のように “-f neverembed.ps ” を挿入します。
 
 ```
 D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f neverembed.ps -f %i -c quit"
@@ -985,23 +1018,24 @@ PDF への欧文フォントの埋め込み制御が行えましたが，Ghostsc
 そこで，lib/gs_pdfwr.ps の記述内容を書き換えることで
 PDF への欧文フォントの埋め込み制御を行います。
 
-デフォルトでは Adobe の欧文基本14書体である
+デフォルトでは PostScript Level 1 での基本14書体である
 Times ファミリ，Helvetica ファミリ，Courier ファミリ，Symbol，ZapfDingbats が
 埋め込まれません。しかし TeX ファイルから作った Times ファミリや
-Helvetica ファミリを埋め込んでいない PDF を Windows の Adobe Reader や
-Adobe Acrobat で表示すると，Times ファミリや Helvetica ファミリでの文字の一部
-（&#x14d; (\\={o}), &#x111; (\dj) など）が正確に表示されません。また Mac OS X を
-除く UNIX 系 OS での Adobe Reader で Times-Italic や Times-BoldItalic を
-埋め込んでいない PDF を表示すると，Times-Italic や Times-BoldItalic の部分が
-Italic 体ではなく Oblique 体（Slanted 体，斜体）になってしまいます。
-（Xpdf で表示すると Adobe の欧文基本14書体は埋め込まれていなくても正確に
-表示されます。しかし Xpdf の場合は非埋め込みの中国語フォント・韓國語フォントが
-表示されず，非埋め込みの日本語フォントに使われる書体にも不満がある方が
-多いとのこと。）そこで Times ファミリと Helvetica ファミリは
-埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを埋め込まないように
-すると，ほとんどの環境で Adobe の欧文基本14書体が正確に表示されます。
-このような設定にするには，lib/gs_pdfwr.ps の記述内容の27&ndash;34行目のうち
-31&ndash;32行目を次のようにコメントアウトして下さい。
+Helvetica ファミリを埋め込んでいない PDF を Microsoft Windows の
+Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファミリでの
+文字の一部（&#x14d; \[\\={o}\], &#x111; \[\dj\] など）が正確に表示されません。
+また Mac OS X を除く UNIX 系 OS での Adobe Reader で Times-Italic や
+Times-BoldItalic を埋め込んでいない PDF を表示すると，Times-Italic や
+Times-BoldItalic の部分が Italic 体ではなく Oblique 体（Slanted 体，斜体）に
+なってしまいます。（Xpdf で表示すると PostScript Level 1 での基本14書体は
+埋め込まれていなくても正確に表示されます。しかし Xpdf の場合は非埋め込みの
+中国語フォント・韓國語フォントが表示されず，非埋め込みの日本語フォントに
+使われる書体にも不満がある方が多いとのこと。）そこで Times ファミリと
+Helvetica ファミリは埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを
+埋め込まないようにすると，ほとんどの環境で PostScript Level 1 での基本14書体が
+正確に表示されます。このような設定にするには，lib/gs_pdfwr.ps の
+記述内容の27&ndash;34行目のうち31&ndash;32行目を次のように
+コメントアウトして下さい。
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -1018,5 +1052,4 @@ Italic 体ではなく Oblique 体（Slanted 体，斜体）になってしま�
 
 ## Comments {#a6eac88c}
 
-<!-- - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
-<!-- 34567890123456789012345678901234567890123456789012345678901234567890123456789 -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
