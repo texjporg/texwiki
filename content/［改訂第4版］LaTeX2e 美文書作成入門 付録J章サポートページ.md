@@ -8,7 +8,8 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e （ラテック・ツー・イー）美文書作成入門](http://www.gihyo.co.jp/books/syoseki.php/4-7741-2984-4)』（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:Booksources/9784774129846)）のうち，「付録J章」のサポートページになります。
-本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://www.ceres.dti.ne.jp/~i-yasuda/)，栗山雅俊にあります。内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
+本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://www.ceres.dti.ne.jp/~i-yasuda/)，[栗山雅俊](http://ethics.let.hokudai.ac.jp/~gpae/plus2/?Staff/Kuriyama)にあります。
+内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
 
 ## Errata {#kdcdc574}
@@ -67,7 +68,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - p. 389 GT書体---多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ[gtftex.lzh](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
 - p. 389 『今昔文字鏡』---こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で[mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
-    [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （UNIX/Unix-like OS 版）が提供されています。
+    [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （UNIX, Unix-like OS 版）が提供されています。
 
 ## コメント {#l1a73338}
 
