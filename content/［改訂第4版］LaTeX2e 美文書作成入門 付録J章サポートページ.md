@@ -19,9 +19,9 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「次期 pTeX-Unicode」―― ttk さんによる [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。土村さんのご尽力により，既に [ptetex3](http://tutimura.ath.cx/ptetex/?FrontPage) で試用可能です（なお，[こちら](http://tutimura.ath.cx/ptetex/?UTF-8%C2%D0%B1%FE%284%29#m605b29c)もご覧下さい）。
+- p. 359 註12 「次期 pTeX-Unicode」--- ttk さんによる [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。土村さんのご尽力により，既に [ptetex3](http://tutimura.ath.cx/ptetex/?FrontPage) で試用可能です（なお，[こちら](http://tutimura.ath.cx/ptetex/?UTF-8%C2%D0%B1%FE%284%29#m605b29c)もご覧下さい）。
 
-- p. 360 下から13&ndash;10行目「ギユメ」 → 「ギュメ」（稲垣）――「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
+- p. 360 下から13&ndash;10行目「ギユメ」 → 「ギュメ」（稲垣）---「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
 - p. 364 表J.5 ［ ］内に示したフォントエンコーディング名に関して，複数のエンコーディングに属するものを優先順位を付けて表示していますが，特に OT2 と表示したテキスト命令は原則 T2A/T2B/T2C/T2D フォントエンコーディング指定時にも使用できる場合があります（\cyrizh，\cyrfita，\cyryat の3字母を除く）。（安田）
 
@@ -29,30 +29,30 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 365 「ロシア語におけるいくつかの補足」数式モードにおけるキリル文字の利用について、amsmath.sty (AMS-LaTeX)、mathtext.sty を使った例を[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)にしました。（安田）
 
-- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」―― Babel 本体では未サポートですが，オプションで [iso-8859-7.def](https://mirror.ctan.org/fonts/greek/package-babel/encodings/) が配布されています。
+- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」--- Babel 本体では未サポートですが，オプションで [iso-8859-7.def](https://mirror.ctan.org/fonts/greek/package-babel/encodings/) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic・古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
 
 - p. 368 表J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ[teubner.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/teubner.zip) を使って下さい。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
 
 - p. 369 上段 インストールディレクトリは C:\usr\local\share\texmf\\... と記してありますが，現在 (TDS 1.1) ユーザによる追加ファイルは $TEXMFLOCAL// (&asymp; texmf-local//) 以下ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf// 以下でも結構です。
 
-- p. 369 中段 LH フォントのインストール――現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
+- p. 369 中段 LH フォントのインストール---現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで解凍します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
-- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」―― [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
+- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」--- [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 
 - p. 370 language.dat 場所は $TEXMF/tex/generic/config/ にあります。オリジナルは書き替えずに $TEXMFLOCAL// (&asymp; texmf-local//) ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下にコピーして使った方がよいと思います。
 
-- p. 371 「fmtutil --byfmt platex」―― [ptetex3](http://tutimura.ath.cx/ptetex/) では “--byfmt platex-euc”（または “--byfmt platex-sjis”）と指定します。
+- p. 371 「fmtutil --byfmt platex」--- [ptetex3](http://tutimura.ath.cx/ptetex/) では “--byfmt platex-euc”（または “--byfmt platex-sjis”）と指定します。
 
-- p. 372 updmap コマンド―― map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録D.5節（p. 315 以下）にあります。（稲垣）
+- p. 372 updmap コマンド--- map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録D.5節（p. 315 以下）にあります。（稲垣）
 
-- p. 372 誤： cbfonts.map，正： cbgreek.map ―― map ファイルのみ未だ古い名前でした。
+- p. 372 誤： cbfonts.map，正： cbgreek.map --- map ファイルのみ未だ古い名前でした。
 
-- p. 372 T1 フォントエンコーディング――本文12.2節（p. 188 以下）にも詳しく記述されていますので参照下さい。
+- p. 372 T1 フォントエンコーディング---本文12.2節（p. 188 以下）にも詳しく記述されていますので参照下さい。
 
-- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 ――試案―― を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
+- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧下さい。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 ---試案--- を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
 
-- p. 374 「ギリシア語……は……直接入力を行うことはできません」――上記 p. 365 註28 errata を参照下さい。
+- p. 374 「ギリシア語......は......直接入力を行うことはできません」---上記 p. 365 註28 errata を参照下さい。
 
 - p. 377 註62 図J.4がありませんが，横の「CJK 字体」図のことです。
 
@@ -60,13 +60,13 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
-- p. 385 mongolian （モンゴル語）―― \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには武蔵工大・井上先生作成の[LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URL が挙げてあります。
+- p. 385 mongolian （モンゴル語）--- \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには武蔵工大・井上先生作成の[LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URL が挙げてあります。
 
-- p. 385 ctib （チベット語）―― dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/field/tibet/)を参照下さい。
+- p. 385 ctib （チベット語）--- dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/field/tibet/)を参照下さい。
 
-- p. 389 GT書体――多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ[gtftex.lzh](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
+- p. 389 GT書体---多書体 TeX の開発者である[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/gt/gtfonts2.tgz) が公開されています。 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/web2c75.html) でもGT書体を使うためのパッケージ[gtftex.lzh](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
-- p. 389 『今昔文字鏡』――こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で[mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
+- p. 389 『今昔文字鏡』---こちらも[堀田先生のページ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)で[mjfonts2.lzh](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
     [mjfonts2.tgz](http://auemath.aichi-edu.ac.jp/~khotta/ghost/moj/mjfonts2.tgz) （UNIX/Unix-like OS 版）が提供されています。
 
 ## コメント {#l1a73338}
@@ -88,3 +88,4 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 - 「{OT2, T2A, T2B, T2C} ∈ X2」と書いてある上記の中の箇所は変な気がいたしますが，「OT2 ∪ T2A ∪ T2B ∪ T2C ⊂ X2」と言う意味でしょうか？ -- kd 2007-01-29 (月) 18:07:37
 - kd さん、そのとおりです。訂正しました！ -- 安田 2007-01-29 (月) 20:19:12
 - upTeXについての記述を付加しました。 -- 栗山 2007-04-10 (火) 21:02:48
+- 全角記号はテキストブラウザ等で文字化けを起こす場合があるので半角に置き換えました(特にダッシュ（EM DASH）は要注意)。これはUnicodeの変換テーブルが機種やアプリによって異なるためと思われます-- 栗山 2007-04-21 (土) 02:45:33
