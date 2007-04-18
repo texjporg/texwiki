@@ -9,6 +9,8 @@ pukiwiki: "PSTricks"
 
 ## PSTricks {#c2b5878d}
 
+<!-- mimetex を使っている行をコメントアウトしました。復帰させました。 -->
+
 \[FIXME\] 以下の内容はかなり古いので，どなたか改訂お願いします。 <!-- 気に入らなかったら、再改訂して下さい。 --> <!-- 例があまり良くないのは分かっています。 -->
 
 <!-- 質問です。 -->
@@ -635,10 +637,12 @@ $
 ```
 
 そこで、二変数の関数
+
 #mimetex(f\_{\mathrm{add}}\[x,y\]=x+y)
 #mimetex(f\_{\mathrm{exp}}\[x,y\]=x^{y})
 #mimetex(f\_{\mathrm{mul}}\[x,y\]=xy)
 #mimetex(f\_{\mathrm{sub}}\[x,y\]=x-y)
+
 を定義してやると、この計算式は
 #mimetex(f\_{\mathrm{mul}}\[f\_{\mathrm{sub}}\[f\_{\mathrm{exp}}\[x,2\],x\],f\_{\mathrm{exp}}\[2,f\_{\mathrm{mul}}\[x,f\_{\mathrm{add}}\[x,1\]\]\]\])
 と、計算の優先順位を示す ( ) を使わずに、表されます。ここで、更に、関数を
@@ -874,7 +878,8 @@ Newton-Raphson 法により、方程式の実数解の近似値を計算して�
 ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。
 
 三体問題に於ける、 Lagrange の正三角形解をプロットしてみます。
-質量 {{< katex >}}m_1{{< /katex >}}, {{< katex >}}m_2{{< /katex >}} , {{< katex >}}m_3{{< /katex >}} の質点 {{< katex >}}P_1{{< /katex >}}, {{< katex >}}P_2{{< /katex >}} , {{< katex >}}P_3{{< /katex >}} の重心を原点にとると、
+質量 {{< katex >}}m_1{{< /katex >}}, {{< katex >}}m_2{{< /katex >}} , {{< katex >}}m_3{{< /katex >}} の質点 {{< katex >}}P_1{{< /katex >}}, 
+{{< katex >}}P_2{{< /katex >}} , {{< katex >}}P_3{{< /katex >}} の重心を原点にとると、
 #mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|)
 #mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0})
 なので、簡単のために {{< katex >}}m_1+m_2+m_3=1{{< /katex >}} 、更に、質点
@@ -932,10 +937,10 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 <table>
 <tbody>
 <tr><td>スタック</td><td>変数</td><td>微係数</td></tr>
-<tr><td>y[0]</td><td><code>x</code></td><td><code>x&#x27;</code></td></tr>
-<tr><td>y[1]</td><td><code>y</code></td><td><code>y&#x27;</code></td></tr>
-<tr><td>y[2]</td><td><code>x&#x27;</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x</code></td></tr>
-<tr><td>y[3]</td><td><code>y&#x27;</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y</code></td></tr>
+<tr><td>y[0]</td><td><code>x</code></td><td><code>x^\prime</code></td></tr>
+<tr><td>y[1]</td><td><code>y</code></td><td><code>y^\prime</code></td></tr>
+<tr><td>y[2]</td><td><code>x^\prime</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x</code></td></tr>
+<tr><td>y[3]</td><td><code>y^\prime</code></td><td><code>-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y</code></td></tr>
 </tbody>
 </table>
 
