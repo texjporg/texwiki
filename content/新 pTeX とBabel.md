@@ -9,14 +9,17 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[070426\]
+    [キリルアルファベットの追加](#p1435221)――安田さんの Type 1 パッケージへのリンクを追加しました --- 栗山
+
 - \[070306\]
-    latin.ldf のバグ --- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに "\languageattribute{latin}{withprosodicmarks}" を指定するだけで，従来通りデフォルトで韻律記号が使えます（"\ProsodicMarksOn" -- "\ProsodicMarksOff" で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
+    latin.ldf のバグ――以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
 
 - \[061017\]
     updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。--- 栗山
 
 - \[060313\]
-    Babel を使わずに済む方法 -- 「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。--- 栗山
+    Babel を使わずに済む方法――「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。--- 栗山
 
 - \[050906\]
     W32TeX の8月12日版以降（ptetex3-20050811 以降）では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
@@ -103,7 +106,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
 ### Dviout for Windows のカスタマイズ {#r9f015cc}
 
 - 
-    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］->［Setup Parameters...］->［Font］-> TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］->［OK］する。
+    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］→［Setup Parameters...］→［Font］→ TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］→［OK］する。
 
 ### type1ec.sty のインストール {#sea65834}
 
@@ -114,7 +117,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
 ### タイプセットのテスト {#mafcbf19}
 
 - 
-    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『[［改訂第3版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』付録J 340ページと同じになります）。
+    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『[［改訂第3版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』付録J 340ページないし『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録J 357ページとほぼ同じになると思います）。
 
 ***
 
@@ -179,7 +182,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### cm-super パッケージ（巨大！ 約 64.1 MiB）のダウンロードとインストール {#a4477ec1}
 
 - 
-    （cm-super には LH （キリルアルファベット）や EC （ラテンアルファベット）の Type 1 が含まれています）<br>
+    （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の Type 1 が含まれています）<br>
     [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) から[cm-super.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) をダウンロードし，元のツリー構造を保ったまま，$TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。先の type1ec.sty は上書きして良い。
 
 - 
@@ -188,7 +191,19 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### キリルアルファベットの追加 {#p1435221}
 
 - 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される wn\* フォントに関しては，残念ながら cm-super に Type 1 が用意されていません。先に挙げた例でテストする場合は，さらに，[ここのページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html) にある bibunj-cyrillic.map, wnr10.pfb, wnbx12.pfb をダウンロードし，\*.pfb は $TEXMFLOCAL/fonts/type1/wn-cyrillic/ 以下に \*.map は $TEXMFLOCAL/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください（存在しないディレクトリは予め作っておく）。
+    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される
+    wn\* フォントに関しては，残念ながら cm-super に Type 1 が用意されていません。
+    先に挙げた例でテストする場合は，
+    さらに，「[『［改訂第3版］ LaTeX2e 美文書作成入門』付録J章サポートページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html)」に
+    ある[bibunj-cyrillic.map](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/bibunj-cyrillic.map),
+    [wnr10.pfb](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/wnr10.pfb),
+    [wnbx12.pfb](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/wnbx12.pfb)
+    をダウンロードし，\*.pfb は $TEXMFLOCAL/fonts/type1/wn-cyrillic/ 以下に \*.map
+    は $TEXMFLOCAL/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
+    （存在しないディレクトリは予め作っておく）。
+
+- 
+    なお，現在は[安田さん](http://www.ceres.dti.ne.jp/~i-yasuda/)作成の [LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)（全サイズ版と 10 pt 版あり）がありますので，キリル文字を本格的に使われる方はこちらをご利用下さい（[ダウンロードサイト](http://www.ceres.dti.ne.jp/~i-yasuda/dl/dl.html)）。
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
@@ -226,6 +241,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     とすることで Type 1 の埋め込まれた PDF が作成されます。
 
-### もっと本格的に...... {#z684b1d0}
+### もっと本格的に…… {#z684b1d0}
 
-世界の言語あるいは文字をどこまで表現できるかについては，[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/) のページを参照してください。
+世界の言語あるいは文字をどこまで表現できるかについては，稲垣徹さんのウェブサイト「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を参照してください。
