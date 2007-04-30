@@ -7,7 +7,7 @@ pukiwiki: "BibTeX関連ツール"
 
 # BibTeX関連ツール
 
-<strong>BibTeX関連ツールの目次</strong>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'BibTeX関連ツールの目次\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
 
 <!-- - --  -->
 
@@ -62,10 +62,10 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 
 ```
 (setq bibtex-user-optional-fields
- '(("annote" "Personal annotation (ignored)")
- ("yomi" "Yomigana")
- ("location" "where it is (ignored)")
- ("memo" "Memorundum (ignored)")
+ \\\\\\\\\\\\\\\'((\\\\\\\\\\\\\\\"annote\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Personal annotation (ignored)\\\\\\\\\\\\\\\")
+ (\\\\\\\\\\\\\\\"yomi\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Yomigana\\\\\\\\\\\\\\\")
+ (\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"where it is (ignored)\\\\\\\\\\\\\\\")
+ (\\\\\\\\\\\\\\\"memo\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Memorundum (ignored)\\\\\\\\\\\\\\\")
 ))
 ```
 
@@ -100,7 +100,7 @@ BibTeX形式の出力があるWebアプリが公開されている
 
 #### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
 
-- [Lead2AmazonでのAmazon検索：BibTeX](http://keijisaito.info/arc/search/l2a_amazon_ecs.htm#bibtex)
+- [Lead2Amazonでの世界のAmazon検索：BibTeX](http://keijisaito.info/arc/search/jp_amazon_ecs.htm#bibtex)
 
 #### [PubMed](http://pubmed.gov) {#h4890ebf}
 
