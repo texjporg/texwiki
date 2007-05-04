@@ -9,43 +9,46 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
-- \[070426\]
-    [キリルアルファベットの追加](#p1435221)――安田さんの Type 1 パッケージへのリンクを追加しました --- 栗山
+- \[2007/05/05\]
+    updmap に関する補記 &amp; 一部のブラウザで文字化けが発生するため，全角記号（EM DASH や矢印，引用符など）を半角文字に置き換えました。Unicode 化に伴う新たな文字化けの発生は，頭が痛いです... -- 栗山
 
-- \[070306\]
-    latin.ldf のバグ――以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。--- 栗山
+- \[2007/04/26\]
+    [キリルアルファベットの追加](#p1435221) -- 安田さんの Type 1 パッケージへのリンクを追加しました -- 栗山
 
-- \[061017\]
-    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。--- 栗山
+- \[2007/03/06\]
+    latin.ldf のバグ -- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。-- 栗山
 
-- \[060313\]
-    Babel を使わずに済む方法――「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。--- 栗山
+- \[2006/10/17\]
+    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。-- 栗山
 
-- \[050906\]
+- \[2006/03/13\]
+    Babel を使わずに済む方法 --「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。-- 栗山
+
+- \[2005/09/06\]
     W32TeX の8月12日版以降（ptetex3-20050811 以降）では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
 
-- \[050528\]
+- \[2005/05/28\]
     UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
 
-- \[050527\]
+- \[2005/05/27\]
     「[Babel による多言語構築ガイド 第3版](https://okumuralab.org/~okumura/texfaq/qa/36022.html)」（栗山さんによる）もご覧ください。
 
-- \[050521\]
+- \[2005/05/21\]
     fmtutil --byfmt のように「ハイフン」を追加しておきました。
 
-- \[041020\]
+- \[2004/10/20\]
     ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの Hyphenation](http://www2.tba.t-com.ne.jp/ing/ctan.html) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
-- \[040929\]
+- \[2004/09/29\]
     ギリシア数字の出力に関して greek.ldf にバグがあります ([qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html))。
 
-- \[040929\]
+- \[2004/09/29\]
     russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
 
-- \[040927\]
+- \[2004/09/27\]
     map ファイルも $TEXMFLOCAL/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，{$TEXMFMAIN,$TEXMFDIST}/ メインツリーには基本的に手を加えないでよいこととなります。
 
-- \[040925\]
+- \[2004/09/25\]
     新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
 
 以下では LaTeX/pLaTeX システムで Babel パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
@@ -106,7 +109,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
 ### Dviout for Windows のカスタマイズ {#r9f015cc}
 
 - 
-    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の ［Option］→［Setup Parameters...］→［Font］→ TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，［Save］→［OK］する。
+    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の \[Option\] -> \[Setup Parameters...\] -> \[Font\] -> TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，\[Save\] -> \[OK\] する。
 
 ### type1ec.sty のインストール {#sea65834}
 
@@ -208,7 +211,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
 - 
-    $TEXMF/web2c/updmap.cfg に（必要に応じて）
+    $TEXMF/web2c/updmap.cfg （ptetex3 では $TEXMFCONFIG/web2c/updmap.cfg）に，必要に応じて
 
     ```
     MixedMap cbgreek.map
@@ -218,7 +221,9 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     Map cm-super-t2b.map
     Map cm-super-t2c.map
     Map cm-super-x2.map
-    Map bibunj-cyrillic.map
+    Map cyrillic-ot2.map      % 安田さんのパッケージ
+    Map cyrillic-t2d.map      % 安田さんのパッケージ
+    #Map bibunj-cyrillic.map  % 永田さんのサポートページ
     ```
 
     と記述し，コマンドプロンプトにて
@@ -241,6 +246,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     とすることで Type 1 の埋め込まれた PDF が作成されます。
 
-### もっと本格的に…… {#z684b1d0}
+### もっと本格的に... {#z684b1d0}
 
 世界の言語あるいは文字をどこまで表現できるかについては，稲垣徹さんのウェブサイト「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を参照してください。
