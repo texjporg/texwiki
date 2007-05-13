@@ -206,6 +206,7 @@ Workaround:
 
   \makeatletter
   \let\saved@bibitem\@bibitem
+  \let\saved@lbibitem\@lbibitem 
   \makeatother
 
   \usepackage{bibentry}
@@ -216,8 +217,16 @@ Workaround:
   \begingroup
     \makeatletter
     \let\@bibitem\saved@bibitem
+    \let\@lbibitem\saved@lbibitem
     \nobibliography{database}
   \endgroup
+```
+
+<!-- alpha.bst あたりを使用した場合には，\@lbibitem について \@bibitem と -->
+<!-- 同様の衝突回避措置が必要．なお，natbib パッケージを併用しても構わない -->
+<!-- 場合には，natbib パッケージを用いてもよい． -->
+
+```
 
 ```
 
