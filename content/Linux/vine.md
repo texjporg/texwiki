@@ -18,9 +18,10 @@ pukiwiki: "Linux/vine"
 日本語 TeX 環境として，現在入手しうる限りで最良のもののひとつであると思われます。
 なお配布版の[インストール報告](http://tutimura.ath.cx/ptetex/?FrontPage%23h6346efc)もあるようです。
 
-<!-- AdobeReader_jpn-7.0.8-1 のメニューがちらつかなくなったんですけど、 -->
-<!-- ハードウェアを変えたせいか、4.1 にしたせいか分かりません。 -->
-<!-- あなたの環境ではどうですか。 -->
+Vine 3.x の時には AdobeReader_jpn-7.0.8-1 のメニューがちらついていましたが、
+4.0/4.1 になってもう大丈夫になりました。
+
+小さな不具合が見つかっています。[qa:47964](https://okumuralab.org/~okumura/texfaq/qa/47964.html)，[qa:47986](https://okumuralab.org/~okumura/texfaq/qa/47986.html)
 
 ## Vine Linux 3.2 {#c910db28}
 
