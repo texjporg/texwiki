@@ -9,11 +9,14 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[2007/05/21\]
+    [キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール](#ka19a2ab) -- LH フォントのリンク先を新版 (3.5f) に合わせて直しました（すっかり忘れていた...）。-- 栗山
+
 - \[2007/05/05\]
-    updmap に関する補記 &amp; 一部のブラウザで文字化けが発生するため，全角記号（EM DASH や矢印，引用符など）を半角文字に置き換えました。Unicode 化に伴う新たな文字化けの発生は，頭が痛いです... -- 栗山
+    updmap に関する補記 &amp; 一部のブラウザで文字化けが発生するため，全角記号（em dash や矢印，引用符など）を半角文字に置き換えました。 -- 栗山
 
 - \[2007/04/26\]
-    [キリルアルファベットの追加](#p1435221) -- 安田さんの Type 1 パッケージへのリンクを追加しました -- 栗山
+    [キリルアルファベットの追加](#p1435221) -- 安田さんの Type 1 パッケージへのリンクを追加しました。 -- 栗山
 
 - \[2007/03/06\]
     latin.ldf のバグ -- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。-- 栗山
@@ -75,7 +78,12 @@ ukrainian のハイフネーションパタンが組み込まれています。
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
 - 
-    CTAN:fonts/cyrillic/ から lh.zip をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
+    [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
+    から[lhfnt35f-gen-mf.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip)
+    と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip)
+    をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
+
+#### 以下は Windows 環境のみ必要 {#l0bb2df6}
 
 - 
     $TEXMFLOCAL/source/lh/tex/setter.tex を開き “\MakeFileHeadsfalse” とある箇所の “false” 部分を “true” と書き換え，上書き保存する。
@@ -221,15 +229,21 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     Map cm-super-t2b.map
     Map cm-super-t2c.map
     Map cm-super-x2.map
-    Map cyrillic-ot2.map      % 安田さんのパッケージ
-    Map cyrillic-t2d.map      % 安田さんのパッケージ
-    #Map bibunj-cyrillic.map  % 永田さんのサポートページ
+    #Map cyrillic-ot2.map      % 安田さんのパッケージ
+    #Map cyrillic-t2d.map      % 安田さんのパッケージ
+    #Map bibunj-cyrillic.map   % 永田さんのサポートページ
     ```
 
     と記述し，コマンドプロンプトにて
 
     ```
     updmap
+    ```
+
+    ないしMac，UNIX環境でシステム全体を更新する場合は
+
+    ```
+    updmap-sys
     ```
 
     と打ち込む。
