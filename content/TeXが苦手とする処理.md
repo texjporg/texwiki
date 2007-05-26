@@ -50,7 +50,7 @@ pukiwiki: "TeXが苦手とする処理"
 和文テキストを取り扱うことを念頭に置いたもので，
 かつ比較的完成度の高いものを挙げます。
 
-- [jumoline パッケージ](http://www.para.tutics.tut.ac.jp/~nakasima/latex/):
+- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/):
     中島 浩氏。
     下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline) ，上線 (\\<strong>O</strong>verline)を提供
 
