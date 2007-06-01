@@ -22,16 +22,21 @@ pukiwiki: "TeXが苦手とする処理"
 ### 丸数字 {#s7930698}
 
 まず，丸数字（e.g. &#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の
-類は（従来の EUC-JP, Shift_JIS などの文字符号化方式を用いて記述する限り）
+類は（従来の Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り）
 「環境依存」文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
 
-対処法は，大別すると次の 2 通りになります。
+対処法は，大別すると次の2通りになります。
 
 - 丸数字などの字形をもったフォントを利用:
     - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
-        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，何も付けなければ十進表記でも書けます。例えば "AC = '254 = 172 です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
-    - [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
+        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，何も付けなければ十進表記でも書けます。例えば
+
+> "AC = '254 = 172
+
+です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+
+- [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
 - 丸の中身と丸を合成:
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
@@ -50,14 +55,14 @@ pukiwiki: "TeXが苦手とする処理"
 和文テキストを取り扱うことを念頭に置いたもので，
 かつ比較的完成度の高いものを挙げます。
 
-- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/):
+- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)：
     中島 浩氏。
-    下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline) ，上線 (\\<strong>O</strong>verline)を提供
+    下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
 
-- [udline パッケージ](http://homepage2.nifty.com/domae/tex.html):
+- [udline パッケージ](http://homepage2.nifty.com/domae/tex.html)：
     みなも氏。実線，破線，点線，波線などによる下線，打ち消し線，上線を提供
 
-- [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html):
+- [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)：
     吉永徹美氏。実線，波線による下線，打ち消し線，上線を提供（縦組み対応）
 
 なお，欧文のみでよければ，
@@ -225,7 +230,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 枠は必須でなくとも「20文字&times;20行」のような体裁を要求されることがあります。
 
 - [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
-- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09用）
+- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
 
 ### 環境依存文字（フォント依存文字，謂ゆる機種依存文字） {#p625d750}
@@ -248,14 +253,14 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x330d;</td><td style="text-align:center">&#x3326;</td><td style="text-align:center">&#x3323;</td><td style="text-align:center">&#x332b;</td><td style="text-align:center">&#x334a;</td><td style="text-align:center">&#x333b;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">ドル</td><td style="text-align:center">ページ</td><td style="text-align:left">\ajLig{ドル}</td></tr>
 <tr><td style="text-align:center">&#x339c;</td><td style="text-align:center">&#x339d;</td><td style="text-align:center">&#x339e;</td><td style="text-align:center">&#x338e;</td><td style="text-align:center">&#x338f;</td><td style="text-align:center">&#x33c4;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">mm</td><td style="text-align:center">kg</td><td style="text-align:left">\ajLig{mm}</td></tr>
 <tr><td style="text-align:center">&#x33a1;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">m^2</td><td style="text-align:left">m$^2$, m\texttwosuperior, \ajLig{m2}</td></tr>
-<tr><td style="text-align:center">&#x301d;</td><td style="text-align:center">&#x301f;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">「</td><td style="text-align:center">」</td><td style="text-align:left">\UTF{310D}, \UTF{310F}</td></tr>
+<tr><td style="text-align:center">&#x301d;</td><td style="text-align:center">&#x301f;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">「</td><td style="text-align:center">」</td><td style="text-align:left">\UTF{301D}, \UTF{301F}</td></tr>
 <tr><td style="text-align:center">&#x2116;</td><td style="text-align:center">&#x33cd;</td><td style="text-align:center">&#x2121;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">No.</td><td style="text-align:center">Tel</td><td style="text-align:left">\textsc{Tel}</td></tr>
 <tr><td style="text-align:center">&#x32a4;</td><td style="text-align:center">&#x32a5;</td><td style="text-align:center">&#x32a6;</td><td style="text-align:center">&#x32a7;</td><td style="text-align:center">&#x32a8;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">（上）</td><td style="text-align:center">（中）</td><td style="text-align:left">\○上, \ajLig{○上}</td></tr>
 <tr><td style="text-align:center">&#x3231;</td><td style="text-align:center">&#x3232;</td><td style="text-align:center">&#x3239;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">（株）</td><td style="text-align:center">（代）</td><td style="text-align:left">\（株）, \ajLig{(株)}</td></tr>
 <tr><td style="text-align:center">&#x337e;</td><td style="text-align:center">&#x337d;</td><td style="text-align:center">&#x337c;</td><td style="text-align:center">&#x337b;</td><td colspan="6" style="text-align:center"></td><td style="text-align:center">昭和</td><td style="text-align:center">平成</td><td style="text-align:left">\ajLig{平成}</td></tr>
 <tr><td style="text-align:center">&#x222e;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&int;</td><td style="text-align:left">$\oint$</td></tr>
 <tr><td style="text-align:center">&#x221f;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&ang;</td><td style="text-align:left">\UTF{221F}</td></tr>
-<tr><td style="text-align:center">&#x22bf;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&Delta;</td><td style="text-align:left">$\mathnormal{\Delta}$</td></tr>
+<tr><td style="text-align:center">&#x22bf;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&Delta;</td><td style="text-align:left">$\mathnormal{\Delta}$, $\varDelta$</td></tr>
 <tr><td style="text-align:center">&#x2170;</td><td style="text-align:center">&#x2171;</td><td style="text-align:center">&#x2172;</td><td style="text-align:center">&#x2173;</td><td style="text-align:center">&#x2174;</td><td style="text-align:center">&#x2175;</td><td style="text-align:center">&#x2176;</td><td style="text-align:center">&#x2177;</td><td style="text-align:center">&#x2178;</td><td style="text-align:center">&#x2179;</td><td style="text-align:center">vii</td><td style="text-align:center">ix</td><td style="text-align:left">\ajroman{7}</td></tr>
 </tbody>
 </table>
@@ -339,30 +344,30 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x2474;</td><td style="text-align:center">&#x2475;</td><td style="text-align:center">&#x2476;</td><td style="text-align:center">&#x2477;</td><td style="text-align:center">&#x2478;</td><td style="text-align:center">&#x2479;</td><td style="text-align:center">&#x247a;</td><td style="text-align:center">&#x247b;</td><td style="text-align:center">&#x247c;</td><td style="text-align:center">&#x247d;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ajKakko{1}</td></tr>
 <tr><td style="text-align:center">&#x247e;</td><td style="text-align:center">&#x247f;</td><td style="text-align:center">&#x2480;</td><td style="text-align:center">&#x2481;</td><td style="text-align:center">&#x2482;</td><td style="text-align:center">&#x2483;</td><td style="text-align:center">&#x2484;</td><td style="text-align:center">&#x2485;</td><td style="text-align:center">&#x2486;</td><td style="text-align:center">&#x2487;</td><td style="text-align:center">(11)</td><td style="text-align:center">(20)</td><td style="text-align:left">\ajKakko{11}</td></tr>
 <tr><td style="text-align:center">&#x2776;</td><td style="text-align:center">&#x2777;</td><td style="text-align:center">&#x2778;</td><td style="text-align:center">&#x2779;</td><td style="text-align:center">&#x277a;</td><td style="text-align:center">&#x277b;</td><td style="text-align:center">&#x277c;</td><td style="text-align:center">&#x277d;</td><td style="text-align:center">&#x277e;</td><td style="text-align:center"></td><td style="text-align:center">(1)</td><td style="text-align:center">(9)</td><td style="text-align:left">\ding{"B6}, \ding{"CA}, \ajKuroMaru{1}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">0.</td><td style="text-align:left">\ajPeriod{0}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="3" style="text-align:center">&#xf860;0.</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">0.</td><td style="text-align:left">\ajPeriod{0}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x2488;</td><td style="text-align:center">&#x2489;</td><td style="text-align:center">&#x248a;</td><td style="text-align:center">&#x248b;</td><td style="text-align:center">&#x248c;</td><td style="text-align:center">&#x248d;</td><td style="text-align:center">&#x248e;</td><td style="text-align:center">&#x248f;</td><td style="text-align:center">&#x2490;</td><td style="text-align:center"></td><td style="text-align:center">1.</td><td style="text-align:center">9.</td><td style="text-align:left">\ajPeriod{1}</td><td rowspan="2" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#x216a;</td><td style="text-align:center">&#x216b;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">XI</td><td style="text-align:center">XII</td><td style="text-align:left">\ajRoman{11}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">XIII</td><td style="text-align:left">\ajRoman{13}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">XIV</td><td style="text-align:left">\ajRoman{14}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">XV</td><td style="text-align:left">\ajRoman{15}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="5" style="text-align:center">&#xf862;XIII</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">XIII</td><td style="text-align:left">\ajRoman{13}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="4" style="text-align:center">&#xf861;XIV</td><td colspan="6" style="text-align:center"></td><td colspan="2" style="text-align:center">XIV</td><td style="text-align:left">\ajRoman{14}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="3" style="text-align:center">&#xf860;XV</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">XV</td><td style="text-align:left">\ajRoman{15}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x217a;</td><td style="text-align:center">&#x217b;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">xi</td><td style="text-align:center">xii</td><td style="text-align:left">\ajroman{11}</td><td style="text-align:left">\UTF{}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">xiii</td><td style="text-align:left">\ajroman{13}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">xiv</td><td style="text-align:left">\ajroman{14}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">xv</td><td style="text-align:left">\ajroman{15}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="5" style="text-align:center">&#xf862;xiii</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">xiii</td><td style="text-align:left">\ajroman{13}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="4" style="text-align:center">&#xf861;xiv</td><td colspan="6" style="text-align:center"></td><td colspan="2" style="text-align:center">xiv</td><td style="text-align:left">\ajroman{14}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="3" style="text-align:center">&#xf860;xv</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">xv</td><td style="text-align:left">\ajroman{15}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x249c;</td><td style="text-align:center">&#x249d;</td><td style="text-align:center">&#x249e;</td><td style="text-align:center">&#x249f;</td><td style="text-align:center">&#x24a0;</td><td style="text-align:center">&#x24a1;</td><td style="text-align:center">&#x24a2;</td><td style="text-align:center">&#x24a3;</td><td style="text-align:center">&#x24a4;</td><td style="text-align:center">&#x24a5;</td><td style="text-align:center">(a)</td><td style="text-align:center">(j)</td><td style="text-align:left">\ajKakkoalph{10}, \（j）</td><td rowspan="13" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#x24a6;</td><td style="text-align:center">&#x24a7;</td><td style="text-align:center">&#x24a8;</td><td style="text-align:center">&#x24a9;</td><td style="text-align:center">&#x24aa;</td><td style="text-align:center">&#x24ab;</td><td style="text-align:center">&#x24ac;</td><td style="text-align:center">&#x24ad;</td><td style="text-align:center">&#x24ae;</td><td style="text-align:center">&#x24af;</td><td style="text-align:center">(k)</td><td style="text-align:center">(t)</td><td style="text-align:left">\ajKakkoalph{20}, \（t）</td></tr>
 <tr><td style="text-align:center">&#x24b0;</td><td style="text-align:center">&#x24b1;</td><td style="text-align:center">&#x24b2;</td><td style="text-align:center">&#x24b3;</td><td style="text-align:center">&#x24b4;</td><td style="text-align:center">&#x24b5;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">(u)</td><td style="text-align:center">(z)</td><td style="text-align:left">\ajKakkoalph{26}, \（z）</td></tr>
 <tr><td style="text-align:center">&#x339f;</td><td style="text-align:center">&#x33a0;</td><td style="text-align:center">&#x33a2;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">mm^2</td><td style="text-align:center">cm^2</td><td style="text-align:left">mm$^2$, mm\texttwosuperior, \ajLig{mm2}</td></tr>
 <tr><td style="text-align:center">&#x33a4;</td><td style="text-align:center">&#x33a5;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">cm^3</td><td style="text-align:center">m^3</td><td style="text-align:left">m$^3$, m\textthreesuperior, \ajLig{m3}</td></tr>
 <tr><td style="text-align:center">&#x217f;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">m</td><td style="text-align:left">\ajLig{m}</td></tr>
-<tr><td style="text-align:center">&#x210a;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">g</td><td style="text-align:left">\textit{g}, $g$, \ajLig{g}</td></tr>
+<tr><td style="text-align:center">&#x210a;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">g</td><td style="text-align:left">\ajLig{g}</td></tr>
 <tr><td style="text-align:center">&#x3396;</td><td style="text-align:center">&#x3397;</td><td style="text-align:center">&#x3398;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">ml</td><td style="text-align:center">dl</td><td style="text-align:left">m$\ell$, \ajLig{ml}</td></tr>
 <tr><td style="text-align:center">&#x2113;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">l</td><td style="text-align:left">$\ell$, \ajLig{l}</td></tr>
 <tr><td style="text-align:center">&#x33b3;</td><td style="text-align:center">&#x33b1;</td><td style="text-align:center">&#x33b0;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">ms</td><td style="text-align:center">ns</td><td style="text-align:left">\ajLig{ms}</td></tr>
 <tr><td style="text-align:center">&#x33b2;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&mu;s</td><td style="text-align:left">\textmu s, \Pisymbol{psy}{"6D}s, $\mu$s, \ajLig{micros}</td></tr>
 <tr><td style="text-align:center">&#x2109;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&deg;F</td><td style="text-align:left">\textdegree F, {}$^\circ$F</td></tr>
 <tr><td style="text-align:center">&#x33d4;</td><td style="text-align:center">&#x33cb;</td><td style="text-align:center">&#x3390;</td><td style="text-align:center">&#x3385;</td><td style="text-align:center">&#x3386;</td><td style="text-align:center">&#x3387;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">mb</td><td style="text-align:center">HP</td><td style="text-align:left">\ajLig{HP}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">TB</td><td style="text-align:left">\ajLig{TB}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="3" style="text-align:center">&#xf860;TB</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">TB</td><td style="text-align:left">\ajLig{TB}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x213b;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">FAX</td><td style="text-align:left">\ajLig{FAX}</td><td rowspan="19" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#x2664;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center"></td><td style="text-align:left">\ajvarSpade</td></tr>
 <tr><td style="text-align:center">&#x2667;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center"></td><td style="text-align:left">\ajvarClub</td></tr>
@@ -382,7 +387,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x21c6;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center"></td><td style="text-align:left">$\leftrightarrows$</td></tr>
 <tr><td style="text-align:center">&#x21c4;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center"></td><td style="text-align:left">$\rightleftarrows$</td></tr>
 <tr><td style="text-align:center">&#x21c5;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&uarr;&darr;</td><td style="text-align:left">$\mathord{\uparrow\downarrow}$, \Pisymbol{psy}{"AD}\Pisymbol{psy}{"AF}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&darr;&uarr;</td><td style="text-align:left">$\mathord{\downarrow\uparrow}$, \Pisymbol{psy}{"AF}\Pisymbol{psy}{"AD}, \CID{8312}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="3" style="text-align:center">&#xf860;&darr;&uarr;</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">&darr;&uarr;</td><td style="text-align:left">$\mathord{\downarrow\uparrow}$, \Pisymbol{psy}{"AF}\Pisymbol{psy}{"AD}, \CID{8312}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x21e8;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&rarr;</td><td style="text-align:left">\ajRightWArrow</td><td rowspan="11" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#x21e6;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&larr;</td><td style="text-align:left">\ajLeftWArrow</td></tr>
 <tr><td style="text-align:center">&#x21e7;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">&uarr;</td><td style="text-align:left">\ajUpWArrow</td></tr>
@@ -394,14 +399,14 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x3230;</td><td style="text-align:center">&#x322a;</td><td style="text-align:center">&#x322b;</td><td style="text-align:center">&#x322c;</td><td style="text-align:center">&#x322d;</td><td style="text-align:center">&#x322e;</td><td style="text-align:center">&#x322f;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">（日）</td><td style="text-align:center">（土）</td><td style="text-align:left">\（土）, \ajKakkoYobi{7}</td></tr>
 <tr><td style="text-align:center">&#x3240;</td><td style="text-align:center">&#x3237;</td><td style="text-align:center">&#x3242;</td><td style="text-align:center">&#x3243;</td><td style="text-align:center">&#x323a;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">（祝）</td><td style="text-align:center">（呼）</td><td style="text-align:left">\（祝）, \ajLig{(祝)}</td></tr>
 <tr><td style="text-align:center">&#x323e;</td><td style="text-align:center">&#x3234;</td><td style="text-align:center">&#x323b;</td><td style="text-align:center">&#x3236;</td><td style="text-align:center">&#x3233;</td><td style="text-align:center">&#x3235;</td><td style="text-align:center">&#x323c;</td><td style="text-align:center">&#x323d;</td><td style="text-align:center">&#x323f;</td><td style="text-align:center">&#x3238;</td><td style="text-align:center">（資）</td><td style="text-align:center">（財）</td><td style="text-align:left">\（財）, \ajLig{(財)}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">（大）</td><td style="text-align:left">\○大, \ajLig{○大}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">（小）</td><td style="text-align:left">\○小, \ajLig{○小}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">（控）</td><td style="text-align:left">\○控, \ajLig{○控}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="2" style="text-align:center">大&#x20dd;</td><td colspan="8" style="text-align:center"></td><td colspan="2" style="text-align:center">（大）</td><td style="text-align:left">\○大, \ajLig{○大}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="2" style="text-align:center">小&#x20dd;</td><td colspan="8" style="text-align:center"></td><td colspan="2" style="text-align:center">（小）</td><td style="text-align:left">\○小, \ajLig{○小}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="2" style="text-align:center">控&#x20dd;</td><td colspan="8" style="text-align:center"></td><td colspan="2" style="text-align:center">（控）</td><td style="text-align:left">\○控, \ajLig{○控}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x32a9;</td><td style="text-align:center">&#x3296;</td><td style="text-align:center">&#x329d;</td><td style="text-align:center">&#x3298;</td><td style="text-align:center">&#x329e;</td><td style="text-align:center">&#x3299;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">（印）</td><td style="text-align:center">（秘）</td><td style="text-align:left">\○印, \ajLig{○印}</td><td rowspan="3" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#x3316;</td><td style="text-align:center">&#x3305;</td><td style="text-align:center">&#x3333;</td><td style="text-align:center">&#x334e;</td><td style="text-align:center">&#x3315;</td><td style="text-align:center">&#x3339;</td><td style="text-align:center">&#x3342;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">インチ</td><td style="text-align:center">ヘルツ</td><td style="text-align:left">\ajLig{インチ}</td></tr>
 <tr><td style="text-align:center">&#x3300;</td><td style="text-align:center">&#x331e;</td><td style="text-align:center">&#x332a;</td><td style="text-align:center">&#x3331;</td><td style="text-align:center">&#x3347;</td><td style="text-align:center">&#x337f;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">コーポ</td><td style="text-align:center">ビル</td><td style="text-align:left">\ajLig{コーポ}</td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">有限会社</td><td style="text-align:left">\ajLig{有限会社}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center"></td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">財団法人</td><td style="text-align:left">\ajLig{財団法人}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="5" style="text-align:center">&#xf862;有限会社</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">有限会社</td><td style="text-align:left">\ajLig{有限会社}</td><td style="text-align:left"></td></tr>
+<tr><td colspan="5" style="text-align:center">&#xf862;財団法人</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">財団法人</td><td style="text-align:left">\ajLig{財団法人}</td><td style="text-align:left"></td></tr>
 <tr><td style="text-align:center">&#x3094;</td><td style="text-align:center">&#x30f7;</td><td style="text-align:center">&#x30f8;</td><td style="text-align:center">&#x30f9;</td><td style="text-align:center">&#x30fa;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">う゛</td><td style="text-align:center">ワ゛</td><td style="text-align:left">\゛う, \ajLig{う゛}</td><td rowspan="3" style="text-align:left">\UTF{}</td></tr>
 <tr><td style="text-align:center">&#xfe33;</td><td style="text-align:center">&#xfe31;</td><td style="text-align:center">&#xfe30;</td><td style="text-align:center">&#xfe35;</td><td style="text-align:center">&#xfe36;</td><td style="text-align:center">&#xfe39;</td><td style="text-align:center">&#xfe3a;</td><td style="text-align:center">&#xfe37;</td><td style="text-align:center">&#xfe38;</td><td style="text-align:center"></td><td style="text-align:center">&#xff5c;</td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE31}</td></tr>
 <tr><td style="text-align:center">&#xfe3f;</td><td style="text-align:center">&#xfe40;</td><td style="text-align:center">&#xfe3d;</td><td style="text-align:center">&#xfe3e;</td><td style="text-align:center">&#xfe41;</td><td style="text-align:center">&#xfe42;</td><td style="text-align:center">&#xfe43;</td><td style="text-align:center">&#xfe44;</td><td style="text-align:center">&#xfe3b;</td><td style="text-align:center">&#xfe3c;</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE41}</td></tr>
