@@ -31,7 +31,7 @@ XyMTeXは改良に改良を重ね、（試していませんが）マイトト�
 
 現時点で描画の難しい構造として、いす型構造式において、環の融合やATOMLIST指定が不可であること、任意の平面構造より立体的に突出した構造（楔形のことではない。これは4.01で実装済み）を描く際にpicture環境などによるレイアウト指定が必要になることを挙げます。たとえば次のフグ毒テトロドトキシン
 
-<img src="http://upload.wikimedia.org/wikipedia/en/2/2f/Tetrodotoxin.png" alt="テトロドトキシンの構造式">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tetrodotoxin-2D-skeletal.png/200px-Tetrodotoxin-2D-skeletal.png" alt="テトロドトキシンの構造式" style="display:block;margin-inline:auto;margin-right:auto">
 
 をXyMTeXで描画する際には、おそらく一からpicture環境などで描画する必要があります。（いす型構造式においてATOMLISTとしてNを指定しなければならないのでchair命令が使えない。）
 これらを描画する際には相変わらずChemDraw, ISIS/DrawなどのWYSIWYGソフトが必要になるかもしれません。
