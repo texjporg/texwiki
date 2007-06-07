@@ -17,8 +17,8 @@ pukiwiki: "XyMTeX"
 いない現状を見ますと、数学・物理での状況とは大きく異なっているようです。
 
 実際に化学雑誌の場合では極限られた物となりますが TeX による原稿でも受理可能な
-雑誌等への投稿の折には、藤田さん（京都工繊大・工芸学部）の
-[XyM（キュム）TeX](http://imt.chem.kit.ac.jp/fujita/fujitas3/xymtex/index.html)
+雑誌等への投稿の折には、藤田 眞作さん＠湘南情報数理化学研究所の
+[XyM（キュム）TeX](http://homepage3.nifty.com/xymtex/fujitas/rd/texlatex.html#xymtex)
 が参考になることでしょう。
 
 なお、簡単な参照ページとして
