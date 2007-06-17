@@ -62,6 +62,7 @@ Ghostscript が呼び出されないので処理も高速。
 \documentclass{article}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{mediabb}
+\DeclareGraphicsRule{.ai}{pdf}{*}{}
 \begin{document}
 \includegraphics{hoge.ai}
 \end{document}
