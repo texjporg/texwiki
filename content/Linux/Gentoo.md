@@ -159,3 +159,4 @@ gensyncを実行してツリーの取得します。
 - 最新版 ghostscript-esp 8.15 では、emerge 中に digest-ghostscript-esp-7.07.1-r8::gs7.07.1-cjk.diff.bz2 となっているので、問題なく日本語が通ります。 -- 1155954101 2006-08-19 (土) 11:21:41
 - まだ、>=app-text/ghostscript-eps-7.07 の方が無難かもしれません。 -- 1157394119 2006-09-05 (火) 03:21:59
 - 遅くなりましたが、『emacs &lt;-> xdvi との相互ジャンプ』を書きました。 -- munepi 2006-11-06 (月) 01:40:17
+- 自分だけかもしれないですけど、/usr/share/texmf/fonts/map/dvipdfm/cid-x.mapを/usr/share/texmf/dvipdfm/config/にコピーしてupdmapを実行してやらないと、dvipdfmxを使ったときに怒られました。 -- いも 2007-06-21 (木) 14:07:02
