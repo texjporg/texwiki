@@ -7,6 +7,11 @@ pukiwiki: "Linux/Gentoo"
 
 # Linux/Gentoo
 
+\[FIXME\] 以下の内容は少し古いですので、ご注意下さい。
+[ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) 
+をインストールされるのが良いです。
+ptetex3 の ebuild もそのうち準備しようと思っています。 <!-- もう ptetex3 の ebuild を書いておられる方はいますでしょうか？ -->
+
 ## 日本語TeX環境の構築 {#da9a03a1}
 
 Gentoo Linux に日本語 TeX 環境を構築するためメモです。
