@@ -35,7 +35,8 @@ TeXで作った本を出している出版社：
 > [平凡社](http://www.heibonsha.co.jp/)，
 > [マガジンハウス](http://www.magazine.co.jp/)，
 > [丸善](http://pub.maruzen.co.jp/)，
-> [森北出版](http://www.morikita.co.jp/)
+> [森北出版](http://www.morikita.co.jp/)，
+> [オーム社](http://www.ohmsha.co.jp/)
 
 意外な本（コンピュータ書や大学レベル以上の理系の本はたくさんのものがTeXで組まれていますが，それ以外のもの）：
 
