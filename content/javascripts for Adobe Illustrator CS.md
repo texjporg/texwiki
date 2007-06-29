@@ -9,6 +9,8 @@ pukiwiki: "javascripts for Adobe Illustrator CS"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/javascripts.html -->
 
+pLaTeX(--kanji=utf8オプション) とdvipsk，gs7.07 で数式混じりの和文も処理できる改訂版 [illustratorTeX.lzh(6kb)](http://scientificlifehack.googlepages.com/illustratorTeX.lzh) と[その紹介](http://leftformula.blogspot.com/2007/06/illustrator-latex-javascript.html)を書きましたのでよろしければどうぞ．配置した数式の再編集も比較的楽に行えるように改善してあります．
+
 ## はじめに {#ae063b79}
 
 Illustrator CS のドキュメント中に、楽にLaTeX の数式を配置するためのスクリプトです。
@@ -36,20 +38,18 @@ C:\AI\というフォルダを作ります。別の場所が良い方は適宜�
 テキストドキュメントに次のように記述して、"outline.bat" という名前で"C:\AI\\" に保存します。
 
 ```
-c:
-cd c:\AI\
+cd /d c:\AI\
 latex eq
-dvips -Ppdf -E eq -o eq.eps
+dvips -Pdl -E eq -o eq.eps
 gswin32c -q -sDEVICE=epswrite -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps
 ```
 
 テキストドキュメントに次のように記述して、"bat.ini" という名前で"C:\AI\\" に保存します(埋め込み配置のみでよいならば不要)。
 
 ```
-c:
-cd c:\AI\
+cd /d c:\AI\
 latex eq
-dvips -Ppdf -E eq -o Link\<r>.eps
+dvips -Pdl -E eq -o Link\<r>.eps
 ```
 
 テキストドキュメントに次のように記述して、"eq.ini" という名前で"C:\AI\\" に保存します。これは一例に過ぎません。"&lt;r>" の部分をスクリプトで置き換えて使いますので、その他の部分は適当に編集してください。
@@ -73,7 +73,7 @@ AI = "/C/AI/";
 	
 chr_f = app.activeDocument.name.split(".");
 docName = escape(chr_f[0]).replace(/%/g,"");
-saveDir = ""+AI+"Link/"+docName+"/";
+saveDir = AI+"Link/"+docName+"/";
 folderObj = new Folder(saveDir) ;
 if (!folderObj.exists && link) folderObj.create();
 selectObj = app.selection;
@@ -111,14 +111,14 @@ for (i=0;i<selectLnt;i++)
 			dy = -h/2;
 			selectObj[i].remove();
 		}
-		editflag = ReplaceTextDoc(""+AI+"/eq.ini",""+AI+"eq.tex","<r>",equation);
+		editflag = ReplaceTextDoc(AI+"/eq.ini",AI+"eq.tex","<r>",equation);
 	}
 		
-	if (link && editflag && ReplaceTextDoc(""+AI+"bat.ini",""+AI+"nooutline.bat","<r>",""+docName+"\\"+numOfFiles+"")) exeflag = Exe(""+AI+"nooutline.bat");
-	else if (!link && editflag) exeflag = Exe(""+AI+"outline.bat");
+	if (link && editflag && ReplaceTextDoc(AI+"bat.ini",AI+"nooutline.bat","<r>",docName+"\\"+numOfFiles)) exeflag = Exe(AI+"nooutline.bat");
+	else if (!link && editflag) exeflag = Exe(AI+"outline.bat");
 	else exeflag = false;
 	
-	if (exeflag && confirm("描画しますか？")) ImportImg(""+saveDir+""+numOfFiles+".eps",""+AI+"outline.eps",x+w/2,y+dy,d,link);
+	if (exeflag && confirm("描画しますか？")) ImportImg(saveDir+numOfFiles+".eps",AI+"outline.eps",x+w/2,y+dy,d,link);
 }
 if (ctr == 0) alert("1つ以上のテキストオブジェクトを選択してください");
 	
@@ -128,7 +128,7 @@ function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString)
 	rflag = readFileObj.open ("r");
 	if (!rflag)
 	{
-		alert(""+readfilepath+"を読めません");
+		alert(readfilepath+"を読めません");
 		return false;
 	}
 	readtext = readFileObj.read();
@@ -139,7 +139,7 @@ function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString)
 	wflag = writeFileObj.open ("w");
 	if (!wflag)
 	{
-		alert(""+writefilepath+"に書き込めません");
+		alert(writefilepath+"に書き込めません");
 		return false;
 	}
 	writeFileObj.writeln(replacedtext);
@@ -152,7 +152,7 @@ function Exe(filepath)
 	fileObj = new File(filepath);
 	if (!fileObj.exists)
 	{
-		alert(""+filepath+"が見つかりません");
+		alert(filepath+"が見つかりません");
 		return false;
 	}
 	fileObj.execute();
@@ -166,7 +166,7 @@ function ImportImg(linkfilepath,embedfilepath,x,y,d,flag)
 		fileObj = new File (linkfilepath);
 		if (!fileObj.exists)
 		{
-			alert(""+linkfilepath+"が見つかりません。")
+			alert(linkfilepath+"が見つかりません。")
 			return false;
 		}
 		array = new Array();
@@ -181,7 +181,7 @@ function ImportImg(linkfilepath,embedfilepath,x,y,d,flag)
 		fileObj = new File (embedfilepath);
 		if (!fileObj.exists)
 		{
-			alert(""+embedfilepath+"が見つかりません。")
+			alert(embedfilepath+"が見つかりません。")
 			return false;
 		}
 		placedImg = app.activeDocument.activeLayer.groupItems.createFromFile(fileObj);
