@@ -9,6 +9,7 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[2007/07/06\] 「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
 - \[2007/05/21\]
     [キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール](#ka19a2ab) -- LH フォントのリンク先を新版 (3.5f) に合わせて直しました（すっかり忘れていた...）。-- 栗山
 
@@ -56,24 +57,18 @@ pukiwiki: "新 pTeX とBabel"
 
 以下では LaTeX/pLaTeX システムで Babel パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
-***
+### 推奨環境 {#z22ea698}
 
-システムの具体例<br>
+#### Microsoft Windows {#q1adb5c8}
 
-角藤版 TeX 一式（2005/09/06 付け）<br>
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) では [TeX Live](http://www.tug.org/texlive/) 所収のハイフネーションファイル（43種類）が同梱されています。8ビットコード対応済み ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法はこちら）。
 
-LaTeX/pLaTeX とも，最初から，english, usenglishmax, basque,<br>
-bulgarian, coptic, welsh, czech, slovak, german, ngerman,<br>
-danish, spanish, catalan, estonian, finnish, french, greek,<br>
-monogreek, ancientgreek, croatian, hungarian, interlingua,<br>
-ibycus, indonesian, icelandic, italian, latin, mongolian,<br>
-dutch, norsk, polish, portuguese, pinyin, romanian, russian,<br>
-slovene, uppersorbian, serbian, swedish, turkish, ukenglish,<br>
-ukrainian のハイフネーションパタンが組み込まれています。
+#### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
 
-***
+[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) では teTeX 3 所収の
+ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。個々のディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
 
-実際に行う作業は，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけです。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
+W32TeX，ptetex3 では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけで全ての環境が整います。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
@@ -83,7 +78,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
     と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip)
     をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
 
-#### 以下は Windows 環境のみ必要 {#l0bb2df6}
+#### 以下は Windows 環境のみ必要（Cygwin を除く） {#l0bb2df6}
 
 - 
     $TEXMFLOCAL/source/lh/tex/setter.tex を開き “\MakeFileHeadsfalse” とある箇所の “false” 部分を “true” と書き換え，上書き保存する。
@@ -95,7 +90,7 @@ ukrainian のハイフネーションパタンが組み込まれています。
     コマンドプロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
-    tex 99allenc.tex
+    >tex 99allenc.tex
     ```
 
     と打ち込めば必要となるファイル群が wrk/ 内に自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを全て $TEXMFLOCAL/fonts/source/lh/ ディレクトリ内に移動する。
@@ -240,7 +235,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     updmap
     ```
 
-    ないしMac，UNIX環境でシステム全体を更新する場合は
+    ないし UNIX, Unix-like OS, Mac OS 環境でシステム全体を更新する場合は
 
     ```
     updmap-sys
