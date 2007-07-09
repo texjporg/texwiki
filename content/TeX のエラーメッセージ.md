@@ -392,6 +392,8 @@ dvi ファイルに送り出そうとした場合に現れるエラーメッセ�
 （カレント・ディレクトリあるいはファイル texmf.cnf の
 TEXINPUTS.platex などで指定されるディレクトリ）にあるかどうかをチェックしてください．
 
+> ファイル texmf.cnf における TEXINPUTS などの書式は，ファイル texmf.cnf 自身に書いてあります．
+
 #### ! I can't go on meeting you like this. {#e8826183}
 
 『TeX ブック』によれば，
