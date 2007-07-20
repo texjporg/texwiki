@@ -157,3 +157,7 @@ Han The Thanhの学位論文
 Micro-typographic extensions to the \TeX\ typesetting system
 ([TUGBoat, Volume 21 (2000), No. 4](http://www.pragma-ade.com/pdftex/thesis.pdf), pp. 317--434) <!-- ([[TUGBoat, Volume 21 (2000), No. 4:http://www.pragma-pod.nl/pdftex/thesis.pdf]], pp. 317- -434) -->
 もたいへんきれいです。
+
+## Comments {#mlcomeiz}
+
+- Han The Thanhの学位論文を少し見てみましたが 少し Type 3 フォントも使われているようです．全て Type 1 フォントを実現できなかったのかなと思いました． -- kd 2007-07-21 (土) 02:13:11
