@@ -12,7 +12,7 @@ pukiwiki: "XeTeX"
 ### XeTeX とは {#v9b12e60}
 
 [The XeTeX typesetting system](http://scripts.sil.org/xetex)
-は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース。 --> <!-- これを知らないと，BMP 以外の文字をアクティブにしたりする時にハマルことになる。 -->
+は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース。 -->
 「ズィーTeX」と読む。
 Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。
 Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
@@ -92,6 +92,7 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
 を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
 ものにしか xdvipdfmx は含まれていない。
+2007 年 7 月 12 日にリリースされた 0.997 以降では、 Mac OS X 用のデフォルトのドライバも xdvipdfmx になった。
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず \[dvipdfm\]
@@ -221,22 +222,19 @@ nkf によって 2 バイト仮名に変換されたりするからです。漢�
 \documentclass{article}
 \begin{document}
 Hello, \TeX !
-\font\foo="ヒラギノ丸ゴ Pro W4:-palt"
+\font\foo="ヒラギノ丸ゴ Pro W4"
 \foo 日本語
 \end{document}
 ```
 
-これで xelatex test とすると，test.pdf ができる。
-日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので，
-ベタ組をするためには，Proportional Alternative (palt) フィーチャーを
-無効にしている。 <!-- 0.996 以降では、詰め組はデフォルトではなくなりました。 -->
+これで xelatex test とすると，test.pdf ができる。 <!-- 日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので， --> <!-- ベタ組をするためには，Proportional Alternative (palt) フィーチャーを --> <!-- 無効にしている。 --> <!-- 0.996 以降では、詰め組はデフォルトではなくなりました。 -->
 ただしこれでは
 
 ```
 ，「
 ```
 
-のような約物の連続で間延びして，逆に使い物にならない。 <!-- これはフォント自身がそのようにデザインされているのだから、XeTeXの責任ではない。 --> <!-- \font\foo="ヒラギノ丸ゴ Pro W4:-palt" --> <!-- \font\bar="ヒラギノ丸ゴ Pro W4:+palt" --> <!-- \catcode`「\active --> <!-- \catcode`」\active --> <!-- \ifcase0 --> <!-- %%% 詰め組 (これをやると、フォントが切替えられてしまうので、前後で改行できなくなる) --> <!-- \def「{{\bar\char`「}} --> <!-- \def」{{\bar\char`」}} --> <!-- \or --> <!-- %%% 半角文字に置換 --> <!-- \def「{｢} --> <!-- \def」{｣} --> <!-- \or --> <!-- %%% CID番号で指定 (これをやると、禁則対象文字かどうか判らないので前後で改行できなくなる) --> <!-- \def「{\XeTeXglyph12070} --> <!-- \def」{\XeTeXglyph12071} --> <!-- \fi --> <!-- いや，pTeXで必ず詰めているわけではなく，「，」の次に「「」が来るようなときに限って詰めているわけです。こういう2文字の連鎖を見ることのできない現状のXeTeXでは日本語をまともに組むことはできず，それならばむしろpTeXで難しいプロポーショナル組にXeTeXを使うほうがデモとしてはおもしろいわけです。 --> <!-- 了解致しました。真面目にマクロを組めば、連鎖を見ることができない訳ではないでしょうが。 --> <!-- それよりも、どなたか、多言語処理について、書いて頂いた方が良いのではないでしょうか？ --> <!-- 現状のXeTeXでも、アラビア文字や、ヘブル文字は勝手に右から左にタイプセットするし、 --> <!-- タイ語は(辞書が組み込まれていて)単語の切れ目を見付けて改行してくれるし、 --> <!-- インド系の、テキスト文字列の順序(発音順と同じ)と文字を書いていく順序の異なる文字は勝手に並び替えを行い、適切にリガチャーも処理してくれるし、なかなかおもしろいですよ。 --> <!-- ありがとうございます。まさにそうですね。 --> <!-- 通常の日本語、英文混合文書でも、指定フォントの1バイト欧文部分を --> <!-- 自然に利用できるので、ソースを若干気をつけて作る (行末が日本語の場合、 --> <!-- 継続文字 % をつける等) と、考えようによってはバランスのよいものに --> <!-- なると思います。 (fontspec package の例) : --> <!-- \setromanfont[Mapping=tex-text,BoldFont={Kozuka Mincho Pro B}]{Kozuka Mincho Pro R} -->
+のような約物の連続で間延びして，逆に使い物にならない。 <!-- 以下のコメントは 0.997 がリリースされた今では時代遅れ。 --> <!-- これはフォント自身がそのようにデザインされているのだから、XeTeXの責任ではない。 --> <!-- \font\foo="ヒラギノ丸ゴ Pro W4:-palt" --> <!-- \font\bar="ヒラギノ丸ゴ Pro W4:+palt" --> <!-- \catcode`「\active --> <!-- \catcode`」\active --> <!-- \ifcase0 --> <!-- %%% 詰め組 (これをやると、フォントが切替えられてしまうので、前後で改行できなくなる) --> <!-- \def「{{\bar\char`「}} --> <!-- \def」{{\bar\char`」}} --> <!-- \or --> <!-- %%% 半角文字に置換 --> <!-- \def「{｢} --> <!-- \def」{｣} --> <!-- \or --> <!-- %%% CID番号で指定 (これをやると、禁則対象文字かどうか判らないので前後で改行できなくなる) --> <!-- \def「{\XeTeXglyph12070} --> <!-- \def」{\XeTeXglyph12071} --> <!-- \fi --> <!-- いや，pTeXで必ず詰めているわけではなく，「，」の次に「「」が来るようなときに限って詰めているわけです。こういう2文字の連鎖を見ることのできない現状のXeTeXでは日本語をまともに組むことはできず，それならばむしろpTeXで難しいプロポーショナル組にXeTeXを使うほうがデモとしてはおもしろいわけです。 --> <!-- 了解致しました。真面目にマクロを組めば、連鎖を見ることができない訳ではないでしょうが。 --> <!-- それよりも、どなたか、多言語処理について、書いて頂いた方が良いのではないでしょうか？ --> <!-- 現状のXeTeXでも、アラビア文字や、ヘブル文字は勝手に右から左にタイプセットするし、 --> <!-- タイ語は(辞書が組み込まれていて)単語の切れ目を見付けて改行してくれるし、 --> <!-- インド系の、テキスト文字列の順序(発音順と同じ)と文字を書いていく順序の異なる文字は勝手に並び替えを行い、適切にリガチャーも処理してくれるし、なかなかおもしろいですよ。 --> <!-- ありがとうございます。まさにそうですね。 --> <!-- 通常の日本語、英文混合文書でも、指定フォントの1バイト欧文部分を --> <!-- 自然に利用できるので、ソースを若干気をつけて作る (行末が日本語の場合、 --> <!-- 継続文字 % をつける等) と、考えようによってはバランスのよいものに --> <!-- なると思います。 (fontspec package の例) : --> <!-- \setromanfont[Mapping=tex-text,BoldFont={Kozuka Mincho Pro B}]{Kozuka Mincho Pro R} -->
 
 日本語のルールに則って行分割をするには次のようにする。
 
@@ -289,7 +287,58 @@ glue, penalty, discretionary break です。ハイフンは日本語に関係し
 
     は、和字と和字の間や和字とそれ以外の間に、少量の伸び縮みを許した幅 0 の空白 (glue) を挿入することを指示します。この際、行頭禁則文字の直前と、行末禁則文字の直後は、ユニコードの改行規則では改行可能であると認識されないので、このような場所には何も挿入されません。
 
-このようにして、各言語毎の規則で設定された改行可能箇所から、その段落の最も適切な改行箇所を見つけ出すのは、 TeX の役割です。 <!-- 0.997 以降では、更に、 \XeTeXinterchartokenstate が正の値になっていれば、 \XeTeXcharclass の概念が有効になり、 \XeTeXcharclass が A の文字と \XeTeXcharclass が B の文字との間にはトークンレジスタ --> <!-- \XeTeXinterchartoks A B --> <!-- が自動的に挿入されます。このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。 --> <!-- \XeTeXcharclass は 0 - - 255 の任意の整数ですが、 255 だけは特別な意味を持ち、行末。行頭、 hbox を表します。 FMT ファイルで、\XeTeXcharclass の値は --> <!-- - - 分かち書きされる通常の文字は 0 --> <!-- - - 漢字と仮名は 1 --> <!-- - - 開き括弧は 2 --> <!-- - - 閉じ括弧と句読点は 3 --> <!-- - - 結合文字は 256 (無効な値、 \XeTeXinterchartoks の挿入を不可能にするため。) --> <!-- に初期化されます。これらの文字の分類は、 --> <!-- [[Line Breaking Properties:http://www.unicode.org/reports/tr14/]] --> <!-- に基づいて行われますが、 0 以外の値が設定されるのは、 --> <!-- [[East Asian Width:http://www.unicode.org/reports/tr11/]] --> <!-- の定義で、 Full Width, Half Width, Wide のいずれかの属性を与えられた --> <!-- 文字に限られます。更に、 --> <!--  \gdef\xtxHanGlue{\hskip0pt plus 0.1em\relax} % between ideographs --> <!--  \gdef\xtxHanSpace{\hskip0.2em plus 0.2em minus 0.1em\relax} % before/after runs of CJK --> <!--   --> <!--  \global\XeTeXinterchartoks 0 1 = {\xtxHanSpace} --> <!--  \global\XeTeXinterchartoks 1 0 = {\xtxHanSpace} --> <!--  \global\XeTeXinterchartoks 1 1 = {\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 1 2 = {\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 1 3 = {\nobreak\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 2 1 = {\nobreak\xtxHanGlue} --> <!--  \global\XeTeXinterchartoks 3 1 = {\xtxHanGlue} --> <!-- 等と、トークンレジスタも設定されていますが、これらは自由に再設定できます。 --> <!--  --> <!-- 一例として、行末禁則文字の \XeTeXcharclass を 4 に設定するには、 --> <!--  \@for\Kinsoku:={`＃,`￥,`＄,`＆}\do{\XeTeXcharclass\Kinsoku=4} --> <!-- とします。 \XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。 --> <!-- \XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。 -->
+このようにして、各言語毎の規則で設定された改行可能箇所から、その段落の最も適切な改行箇所を見つけ出すのは、 TeX の役割です。
+0.997 以降では、更に、 \XeTeXinterchartokenstate が正の値になっていれば、 \XeTeXcharclass の概念が有効になり、 \XeTeXcharclass が A の文字と \XeTeXcharclass が B の文字との間にはトークンレジスタ
+
+```
+\XeTeXinterchartoks A B
+```
+
+が自動的に挿入されます。このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。
+\XeTeXcharclass は 0 -- 255 の任意の整数ですが、 255 だけは特別な意味を持ち、文字列の境界を表します。例えば、行末。行頭、インラインの数式、 hbox などです。 FMT ファイルで、\XeTeXcharclass の値は
+
+- 分かち書きされる通常の文字は 0
+    - 漢字と仮名は 1
+    - 開き括弧は 2
+    - 閉じ括弧と句読点は 3
+    - 結合文字は 256 (無効な値、 \XeTeXinterchartoks の挿入を不可能にするため。)
+        に初期化されます。これらの文字の分類は、
+        [Line Breaking Properties](http://www.unicode.org/reports/tr14/)
+        に基づいて行われますが、 0 以外の値が設定されるのは、
+        [East Asian Width](http://www.unicode.org/reports/tr11/)
+        の定義で、 Full Width, Half Width, Wide のいずれかの属性を与えられた
+        文字に限られます。更に、
+
+        ```
+        \gdef\xtxHanGlue{\hskip0pt plus 0.1em\relax} % between ideographs
+        \gdef\xtxHanSpace{\hskip0.2em plus 0.2em minus 0.1em\relax} % before/after runs of CJK
+
+        \global\XeTeXinterchartoks 0 1 = {\xtxHanSpace}
+        \global\XeTeXinterchartoks 1 0 = {\xtxHanSpace}
+        \global\XeTeXinterchartoks 1 1 = {\xtxHanGlue}
+        \global\XeTeXinterchartoks 1 2 = {\xtxHanGlue}
+        \global\XeTeXinterchartoks 1 3 = {\nobreak\xtxHanGlue}
+        \global\XeTeXinterchartoks 2 1 = {\nobreak\xtxHanGlue}
+        \global\XeTeXinterchartoks 3 1 = {\xtxHanGlue}
+        ```
+
+        等と、トークンレジスタも設定されていますが、これらは自由に再設定できます。
+        pTeX に於ける \inhibitglue に相当する処理が必要ならば、 \relax を使えばよいでしょう。 (ただし、通常の文字とクラス 255 の文字との間に 0 ではないグルーが挿入されていない前提です。)
+
+一例として、行末禁則文字の \XeTeXcharclass を 4 に設定するには、
+
+```
+\@for\Kinsoku:={`＃,`￥,`＄,`＆}\do{\XeTeXcharclass\Kinsoku=4}
+```
+
+とします。 \XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。
+\XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。
+なお、このメカニズムにより、文字間にトークンを挿入すると、内蔵の ICU ライブラリによる解析の対象は個別の文字になってしまうので、 \XeTeXlinebreaklocale の設定は無意味になります。
+同様に、 OpenType フォントの持つ、コンテクスト依存の文字置換や、リガチャーを使用する際にも、 \XeTeXinterchartokenstate=0 としなければなりません。
+
+```
+{\XeTeXinterchartokenstate=0\fontspec[Script=Kana,RawFeature=+dlig]{Kozuka Mincho Pro-VI}ミリバール}
+```
 
 ### 参考サイト {#m6b448cf}
 
