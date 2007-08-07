@@ -92,7 +92,7 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
 を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
 ものにしか xdvipdfmx は含まれていない。
-2007 年 7 月 12 日にリリースされた 0.997 以降では、 Mac OS X 用のデフォルトのドライバも xdvipdfmx になった。
+svn revision 506 以降では、 Mac OS X 用のデフォルトのドライバも xdvipdfmx になった。
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず \[dvipdfm\]
@@ -214,45 +214,269 @@ nkf によって 2 バイト仮名に変換されたりするからです。漢�
 使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。
 通常はアルファベットの名前のほうが入力も簡単でしょう。
 
-### 実行例 {#n6a9a656}
+### 入力用エンコーディング {#dd951bae}
 
-簡単なサンプル test.tex を UTF-8 で書く：
+XeTeX はデフォルトではファイルを UTF8 として読み込みますが、
+
+```
+\XeTeXinputencoding (エンコーディング名)
+```
+
+の指定により、ファイルのそれ以降の部分をそのエンコーディングで読み込みます。グルーピングの影響は受けません。特に重要なのは
+
+```
+\XeTeXinputencoding "bytes"
+```
+
+で、これにより、 XeTeX はファイルを 1 バイトずつ、文字コードの解釈を行わずに読み込むようになるので、 8 ビットのハイフネーションパターンや、 inputenc, CJK 等の 8 ビットの TeX を前提としたマクロも (原理的には) 使用できるようになります。
+
+エンコーディングの解釈には、 ICU ライブラリが使われるので、 iconv の規則とは異なり、
+
+```
+\XeTeXinputencoding "SJIS"
+```
+
+と
+
+```
+\XeTeXinputencoding "CP932"
+```
+
+はどちらも 0x5c を円記号では無くバックスラッシュとして、解釈してくれるようです。
+
+### TECKit {#k7b5869f}
+
+XeTeX には単純だけれども結構強力な入力フィルタ TECKit が内蔵されており、ソースコード中のある文字列を別の文字列に変換してから、 TeX に処理させることができます。
+使用するフィルタはフォント毎に指定します。
+
+- 歴史的な事情から TeX では、ある種のキーボードでの直接入力が困難な文字、例えば、“は\`\`、”は''、—は---、と言った具合に tfm ファイルのリガチャーとして、 ASCII 転写で入力できるようになっています。このような表記を含む既存の tex ファイルのコンパイルを可能にするためには、フォントの指定に修飾詞 mapping=tex-text を付け加えます。(fontspec パッケージを使用するならば、オプション Mapping=tex-text を付け加えます。)
+- arabxetex は TECKit のフィルタを用いて、 arabTeX 互換の ASCII 転写入力を可能にするパッケージです。これにより、例えば、単一のソースから、母音を表示せずにタイプセットした物と、表示してタイプセットした物、更にはローマ字転写の出力を得ることができます。
+
+### xu-hyphen {#tac4c2fa}
+
+XeTeX は一部の言語 (ギリシャ語、コプト語など) のハイフネーション処理には始めから、ユニコードのフォントエンコーディングを用いたパターンファイルを使用しますが、他の多くの言語用には、古典的な 8 ビットの TeX を前提としたハイフネーションパターンをそのまま利用します。 xu-hyphen はそのために必要なラッパーのコレクションです。
+
+### スマート・フォント {#ne48456f}
+
+和文や欧文などの『単純』な表記システムのタイプセットでは、グリフを組方向のメトリックに従い平行移動しながら配置することで、ほぼ、事が足ります。
+しかし、もちろん、これだけでは、和文の縦組での約物、囲み文字や字間空き、欧文の詰め、合字やアクセント記号の位置調整など、処理しきれない事項もあります。
+伝統的な TeX では、これらの処理の多くは tfm に実装されてきました。
+しかしながら、世界には、それほど『単純』ではない表記システムもあります。
+
+- アラビア文字やシリア文字など、続け書きをする文字では、単語内の位置によって、同じ文字でもまったく異なる形態をとります。セム系の表記システムでは母音は通常表示しませんが、もし、表示するならば、欧文のアクセントのように位置調整がかかせません。
+- インド・東南アシア系の文字では、同一音節内の子音の発音順と表記順が必ずしも一致しません。タイ文字とラオス文字を除き、コンピュータで扱う文字列は発音順なので、タイプセットの際には並べ替えが必要になります。これらの子音が一次元的に並べられるのでは無いことも問題です。更に、これらの表記システムでは、従属母音は実際には子音がデフォルトに持っている母音の変音記号であり、欧文のアクセントのように位置調整がかかせません。ユニコードでは、インド・東南アシア系の文字の従属母音を独立した文字として扱うため、子音字との複雑な並べ替え (時には一つの母音が複数の要素に分裂して子音字を挟み込む) が必要になります。
+    こう言った『複雑』な表記システムを取り扱う際には、伝統的な TeX では、外部プログラムをプリプロセッサとして使ったり、複雑なマクロで処理してきました。
+
+TeX 以外のシステムでも、このような『単純』な平行移動しながらの配置では済まない文字組を行う必要は当然あります。それには処理に必要な情報をフォントに実装した、スマート・フォント技術が使われることが多くなってきています。
+
+XeTeX は tfm には依らずにタイプセットを行うために、様々なスマート・フォント技術をサポートしています。スマート・フォント技術では、同じ文字でも使用されるコンテクストによって、異なる扱いが必要になるため、 XeTeX では従来の TeX とは異なり、一つ一つの文字を個別に処理するのでは無く、文字列ブロック毎にまとめて処理するアプローチがとられています。次のソースを XeLaTeX でコンパイルして見てください。
 
 ```
 \documentclass{article}
+\usepackage[cm-default]{fontspec}
+\TeXXeTstate=1
 \begin{document}
-Hello, \TeX !
-\font\foo="ヒラギノ丸ゴ Pro W4"
-\foo 日本語
+\beginR
+A quick brown fox jumps over the lazy dog.
 \end{document}
 ```
 
-これで xelatex test とすると，test.pdf ができる。 <!-- 日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので， --> <!-- ベタ組をするためには，Proportional Alternative (palt) フィーチャーを --> <!-- 無効にしている。 --> <!-- 0.996 以降では、詰め組はデフォルトではなくなりました。 -->
-ただしこれでは
+\beginR は eTeX のプリミティブで文字を右から左方向に組んでいきます。結果は
 
 ```
-，「
+.god yzal eht revo spmuj xof nworb kciuq A
 ```
 
-のような約物の連続で間延びして，逆に使い物にならない。 <!-- 以下のコメントは 0.997 がリリースされた今では時代遅れ。 --> <!-- これはフォント自身がそのようにデザインされているのだから、XeTeXの責任ではない。 --> <!-- \font\foo="ヒラギノ丸ゴ Pro W4:-palt" --> <!-- \font\bar="ヒラギノ丸ゴ Pro W4:+palt" --> <!-- \catcode`「\active --> <!-- \catcode`」\active --> <!-- \ifcase0 --> <!-- %%% 詰め組 (これをやると、フォントが切替えられてしまうので、前後で改行できなくなる) --> <!-- \def「{{\bar\char`「}} --> <!-- \def」{{\bar\char`」}} --> <!-- \or --> <!-- %%% 半角文字に置換 --> <!-- \def「{｢} --> <!-- \def」{｣} --> <!-- \or --> <!-- %%% CID番号で指定 (これをやると、禁則対象文字かどうか判らないので前後で改行できなくなる) --> <!-- \def「{\XeTeXglyph12070} --> <!-- \def」{\XeTeXglyph12071} --> <!-- \fi --> <!-- いや，pTeXで必ず詰めているわけではなく，「，」の次に「「」が来るようなときに限って詰めているわけです。こういう2文字の連鎖を見ることのできない現状のXeTeXでは日本語をまともに組むことはできず，それならばむしろpTeXで難しいプロポーショナル組にXeTeXを使うほうがデモとしてはおもしろいわけです。 --> <!-- 了解致しました。真面目にマクロを組めば、連鎖を見ることができない訳ではないでしょうが。 --> <!-- それよりも、どなたか、多言語処理について、書いて頂いた方が良いのではないでしょうか？ --> <!-- 現状のXeTeXでも、アラビア文字や、ヘブル文字は勝手に右から左にタイプセットするし、 --> <!-- タイ語は(辞書が組み込まれていて)単語の切れ目を見付けて改行してくれるし、 --> <!-- インド系の、テキスト文字列の順序(発音順と同じ)と文字を書いていく順序の異なる文字は勝手に並び替えを行い、適切にリガチャーも処理してくれるし、なかなかおもしろいですよ。 --> <!-- ありがとうございます。まさにそうですね。 --> <!-- 通常の日本語、英文混合文書でも、指定フォントの1バイト欧文部分を --> <!-- 自然に利用できるので、ソースを若干気をつけて作る (行末が日本語の場合、 --> <!-- 継続文字 % をつける等) と、考えようによってはバランスのよいものに --> <!-- なると思います。 (fontspec package の例) : --> <!-- \setromanfont[Mapping=tex-text,BoldFont={Kozuka Mincho Pro B}]{Kozuka Mincho Pro R} -->
-
-日本語のルールに則って行分割をするには次のようにする。
+となるはずです。この文書では tfm ベースの Computer Modern フォントが使用されています。ここで、
 
 ```
-\XeTeXlinebreaklocale "ja_JP"
-\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
-\XeTeXlinebreakpenalty=0
+\usepackage[cm-default]{fontspec}
 ```
 
-元に戻すには次のようにする。
+の行を
 
 ```
-\XeTeXlinebreaklocale ""
+\usepackage{fontspec}
 ```
 
-ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
-現状ではまともではない。
-しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。
+にすると、デフォルトのフォントが Latin Modern OpenType になります。それをコンパイルすると、結果は
+
+```
+dog. lazy the over jumps fox brown quick A
+```
+
+となるはずです。つまり、 XeTeX は空白文字で区切られた単語を一塊のブロックとしてタイプセットしているわけです。
+
+#### AAT (Apple Advanced Typography) フォント {#gab9966e}
+
+わしゃ知らん
+
+#### OpenType フォント {#e81236d3}
+
+OpenType フォントはフォントファイルの以下のテーブルにスマート・フォント機能を実装しています。
+
+<table>
+<tbody>
+<tr><td>BASE</td><td>ベースラインの設定用データ。現在 XeTeX ではアクセスできない。</td></tr>
+<tr><td>GDEF</td><td>以下のテーブルのスマート・フォント機能の実装を簡単にするためのグリフ分類用データ。ユーザーが明示的にアクセスする必要はない。</td></tr>
+<tr><td>GPOS</td><td>組み版方向への単純なグリフメトリックだけでは実現できない、状況に応じた。位置調整用のデータ。</td></tr>
+<tr><td>GSUB</td><td>状況に応じた。グリフ置換用のデータ。</td></tr>
+<tr><td>JSTF</td><td>行頭、行末をそろえる際の(フォントのデザインに応じた)微調整用のデータ。現在 XeTeX ではアクセスできない。</td></tr>
+</tbody>
+</table>
+
+OpenType フォントの各テーブルは文字種と言語ごとにアクセスできます。
+
+スマート・フォント技術としての OpenType の特徴はユニコード規格で定められている、文字種に共通の表記上の規則、例えば、アラビア文字やシリア文字のコンテキストによる字形、インド・東南アジア系文字の並べ変え等は、レンダラが知識として持っていることを仮定し、フォントには、そのフォントのデザイン固有のデータのみを格納するとの立場がとられていることです。
+
+- Adobe-Japan-1 のフィーチャ
+    Adobe-Japan-1 は cyrl (キリル文字)、 grek (ギリシャ文字)、 hani (漢字)、 kana (かな)、 latn (ラテン文字) の 5 種類の文字種をサポートします。文字種の違いによる、振舞の違いは無いので、どの文字種を指定しても結果は同じです。言語はデフォルトの言語のみのサポートなので、指定しても無意味です。以下のフィーチャの中には同時に使用することを想定していない物もあります。
+    詳しくは[Mac OS Xの文字コード問題に関するメモ](http://d.hatena.ne.jp/NAOI/)を御覧下さい。
+    - GPOS フィーチャ
+        - halt
+            句読点が半角幅で組まれるようにします。
+        - kern
+            欧文のカーニングを有効にします。かな等も微妙に詰まります。
+        - palt
+            プロポーショナル幅の詰め組を実現します。
+        - vhal
+            縦組で halt と互換な機能を提供します。
+        - vkrn
+            縦組で kern と互換な機能を提供します。
+        - vpal
+            縦組で palt と互換な機能を提供します。
+    - GSUB フィーチャ
+        - aalt
+            全ての字形切替えへのアクセスを提供します。
+        - afrc
+            スラッシュで区切られた数字を分数に変換します。
+        - ccmp
+            親字に変音記号を合成します。
+        - dlig
+            選択的に有効化される合字を使用します。
+        - dnom
+            数字を分母用のサイズに変換します。
+        - expt
+            公的な規格の例示字形には合致しないものの、伝統的に印刷字形として使われてきた漢字字形を選択します。
+        - frac
+            スラッシュで区切られた数字を分数に変換します。
+        - fwid
+            英数字を全角幅にします。
+        - hkna
+            横書に最適化されたデザインのかなを使用します。
+        - hojo
+            JISX-0213 (2000) または JISX-0213 (2004) の字形をJISX-0212 (1990) の字形に切替えます。
+        - hwid
+            半角幅の文字を選択します。
+        - ital
+            欧文用文字をイタリック体にします。
+        - jp04
+            国語審議会の常用漢字表外字印刷標準字形に関する答申に基づいて行われた JISX-0213 (2004) の例示字形変更を実現します。
+        - jp78
+            JISX-0208 (1990) の字形をJISX-0208 (1978) の字形に切替えます。
+        - jp83
+            JISX-0208 (1990) の字形をJISX-0208 (1983) の字形に切替えます。
+        - liga
+            デフォルトで使用することが望ましい合字を有効化します。多くの本来は ccmp にすべき合成処理が何故かここに置かれているようです。
+        - nalt
+            囲み文字に変換します。
+        - nlck
+            国語審議会の常用漢字表外字印刷標準字形に関する答申に基づく字形に変更します。
+        - numr
+            数字を分子用のサイズに変換します。
+        - pkna
+            未登録のタグですが、詰め組に最適化されたデザインのかなに切替えるようです。
+        - pwid
+            英数字を可変幅にします。
+        - qwid
+            四分角幅の數字を選択します。
+        - ruby
+            ルビ用に最適化されたデザインのかなを使用します。
+        - sinf
+            数字を主に科学技術で使われる下付き添字に変換します。
+        - sups
+            数字を主に合印に使われる上付き添字に変換します。
+        - trad
+            新字体の漢字を旧字体に変換します。
+        - twid
+            三分角幅の數字を選択します。
+        - vert
+            句読点や括弧類を縦書にふさわしいような字形に切替えます。
+        - vkna
+            縦書に最適化されたデザインのかなを使用します。
+        - vrt2
+            欧文用文字等を縦書にふさわしいように予め回転した字形に切替えます。
+        - zero
+            0 にスラッシュをつけて O, o と区別できるようにします。
+
+いろいろ実験してみましょう。
+
+```
+\documentclass{article}
+\usepackage{graphicx,geometry,fontspec}
+\geometry{margin=1in}
+\def\showfeature#1#2{\mbox{\XeTeXinterchartokenstate=0#2\hspace{0.5em}\rotatebox[origin=tl]{-90}{\addfontfeature{RawFeature=vertical:}#2}\hspace{0.5em}{\addfontfeature{RawFeature={#1}}\rotatebox[origin=br]{-90}{\addfontfeature{RawFeature=vertical:}#2}#2}}}
+\parindent=0pt
+\begin{document}
+\fontspec[Script=Kana]{Kozuka Mincho Pro-VI}
+\showfeature{+dlig,+afrc}{1dl=1/10リットル}\hfill
+\showfeature{+afrc}{1/2=1/3+1/6}\hfill
+\showfeature{+frac}{1/2=1/3+1/6}\hfill
+\showfeature{+trad=0}{闘鶏}\hfill
+\showfeature{+trad=1}{闘鶏}\hfill
+%%横書/縦書用のフィーチャーを組み版方向と一致させずに適用するとおかしな事になる。
+\showfeature{+palt}{一月一日}\hfill
+\showfeature{+vpal}{一月一日}\\[20pt]
+{\obeylines\XeTeXinterchartokenstate=0\addfontfeature{RawFeature=+ccmp}%
+ピㇼカ　チカㇷ゚ポ！　 カムイ　チカㇷ゚ポ！
+ケケ　ヘタㇰ,　アタㇱ　ワ　トアン　チカㇷ゚ポ
+カムイ　チカㇷ゚ポ　ツ゚カン　ワ　アンクㇽ,　ホㇱキウㇰクㇽ
+ソンノ　ラメトㇰ　シノ　チパパ　ネ　ルヱ　タパン}\\[20pt]
+\count255=0
+\loop\ifnum\count255<23{\addfontfeature{RawFeature={+aalt=\the\count255}}辺}\advance\count255by1\repeat\\[20pt]
+\count255=0
+\loop\ifnum\count255<7{\addfontfeature{RawFeature={+nalt=\the\count255}}イロハ }\advance\count255by1\repeat
+\end{document}
+```
+
+#### Graphite フォント {#k7cb7575}
+
+Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力なスマート・フォント技術で、レンダラにユニコード規格などの事前の知識を要求すること無く、すべてをフォントに実装されたデータに基づき、処理されます。このような、スマート・フォント技術が新たに開発されたのは、ユニコードには収録されていない文字や、縦令収録されていても、少数言語のタイプセットにはユニコードの規格に採用されている公式言語の規則とは異なる処理を必要とする文字があるからです。
+
+```
+\font\d="Doulos SIL/GR:1041=0:" at 40pt
+\d
+Ştiaţi că…?
+\hfill
+\font\d="Doulos SIL/GR:1041=1:" at 40pt
+\d
+Ştiaţi că…?
+
+%%同じ事を OpenType でやってみる
+\vskip40pt
+\font\d="Doulos SIL/ICU:script=latn:language=dflt:" at 40pt
+\d
+Ştiaţi că…?
+\hfill
+\font\d="Doulos SIL/ICU:script=latn:language=ROM :" at 40pt
+\d
+Ştiaţi că…?
+
+%%次は OpenType では実装されていない例。
+\vskip40pt
+\font\d="Doulos SIL/GR:1027=0:" at 40pt
+\d
+Монгол хэл
+\hfill
+\font\d="Doulos SIL/GR:1027=1:" at 40pt
+\d
+Монгол хэл
+\bye
+```
+
+Graphite フォントの中にはビルマ文字の[Padauk Font](http://scripts.sil.org/Padauk)のように、ビルマ語、カレン語、モン語の文字の並べ変えや位置調整のみならず、改行規則まで実装したフォントもあります。 <!-- -Graphite フォントの作り方 --> <!-- Graphite フォントは GDL 言語で書かれたソースコードを Graphite コンパイラでコンパイルして TrueType または OpenType フォントにテーブルとして、埋め込むことで作成します。フォントに予め搭載されていたデータはまったく変更されませんが、フォントファイルは改変されるので、商用フォントの場合、ライセンスを確認してから行ってください。 -->
+
+### 改行アルゴリズムの比較 {#yeeccfb4}
 
 <!-- どなたか、修正加筆して頂くと嬉しいです。 -->
 
@@ -268,6 +492,7 @@ glue, penalty, discretionary break です。ハイフンは日本語に関係し
 
 - 古典的な 8 bit 版の TeX では、空白文字の箇所に TFM から読みとられた量の glue が自動的に挿入されます。
 - pTeX では、更に、和字と和字の間に TFM (JFM) から読みとられた量の glue、または、 \kanjiskip が、和字とそれ以外の間に \xkanjiskip が自動的に挿入されます。また、禁則文字の前後には penalty が自動的に挿入されます。
+    このグルーの挿入はマクロ展開後に行われます。
     更に詳しいことや、カスタマイズの方法については、[pTeX でのJIS X4051 の実装](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)を御覧下さい。
 
 - XeTeX では、空白文字の箇所に加え、 \XeTeXlinebreaklocale が有効なロケールになっていれば、ユニコードの改行規則に基づいた改行可能箇所を内蔵の ICU ライブラリが捜し出し、 \XeTeXlinebreakpenalty と \XeTeXlinebreakskip が自動的に挿入されます。
@@ -295,6 +520,7 @@ glue, penalty, discretionary break です。ハイフンは日本語に関係し
 ```
 
 が自動的に挿入されます。このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。
+このグルーの挿入はマクロ展開前に行われます。
 \XeTeXcharclass は 0 -- 255 の任意の整数ですが、 255 だけは特別な意味を持ち、文字列の境界を表します。例えば、行末。行頭、インラインの数式、 hbox などです。 FMT ファイルで、\XeTeXcharclass の値は
 
 - 分かち書きされる通常の文字は 0
@@ -339,6 +565,108 @@ glue, penalty, discretionary break です。ハイフンは日本語に関係し
 ```
 {\XeTeXinterchartokenstate=0\fontspec[Script=Kana,RawFeature=+dlig]{Kozuka Mincho Pro-VI}ミリバール}
 ```
+
+### fontspec パッケージ {#z2a31516}
+
+fontspec は NFSS のフォントファミリーの定義を容易に行うためのマクロパッケージです。
+
+```
+\fontspec[オプション]{フォント名}
+```
+
+は現在使用中のフォントファミリーを変更します。
+
+```
+\setmainfont[オプション]{フォント名}
+```
+
+は \rmdefault を変更します。
+
+```
+\newfontfamily\myfontfamily[オプション]{フォント名}
+```
+
+は新しいフォントファミリー \myfontfamily を定義します。
+
+```
+\documentclass{article}
+\usepackage{graphicx,geometry,fontspec}
+\geometry{margin=1in}
+\parindent=0pt
+\pagestyle{empty}
+\begin{document}
+\fontspec{Lido STF}
+\textit{\textbf{A}} quick brown \textbf{fox} jumps over the lazy \textit{dog.}
+\end{document}
+```
+
+をコンパイルして、埋め込まれたフォントを見てみると、
+
+```
+>pdffonts test.pdf
+name                                 type         emb sub uni object ID
+------------------------------------ ------------ --- --- --- ---------
+ABHBIS+LidoSTF-BoldItalic-Identity-H CID Type 0C  yes yes yes      5  0
+WGMDOS+LidoSTF-Identity-H            CID Type 0C  yes yes yes      7  0
+XSCVIF+LidoSTF-Bold-Identity-H       CID Type 0C  yes yes yes      9  0
+ZUDXAP+LidoSTF-Italic-Identity-H     CID Type 0C  yes yes yes     11  0
+```
+
+とファミリー内での、シリーズやシェイプの変更も正しく処理されていることが分かります。しかし、もし、
+
+```
+\fontspec{[LidoSTF.otf]}
+```
+
+とファイル名でフォントを指定したのでは、ファミリー内のすべてのフォントは LidoSTF.otf になってしまいます。このような場合はオプションで、
+
+```
+\fontspec[BoldFont={[LidoSTFBold.otf]},ItalicFont={[LidoSTFItalic.otf]},BoldItalicFont={[LidoSTFBoldItalic.otf]}]{[LidoSTF.otf]}
+```
+
+と自分でフォントを指定しなければなりません。
+
+非欧文フォントでは、残念ながら、縦令フォント名を使用して font-config にフォントを探させても、誤ったフォントを選んでしまうことが多いので、自分でファミリーを構成するフォントを指定した方が安全です。
+
+### 実行例 {#n6a9a656}
+
+簡単なサンプル test.tex を UTF-8 で書く：
+
+```
+\documentclass{article}
+\begin{document}
+Hello, \TeX !
+\font\foo="ヒラギノ丸ゴ Pro W4"
+\foo 日本語
+\end{document}
+```
+
+これで xelatex test とすると，test.pdf ができる。 <!-- 日本語 OpenType フォントを使用する場合，デフォルトで詰め組になってしまうので， --> <!-- ベタ組をするためには，Proportional Alternative (palt) フィーチャーを --> <!-- 無効にしている。 --> <!-- 0.996 以降では、詰め組はデフォルトではなくなりました。 -->
+ただしこれでは
+
+```
+，「
+```
+
+のような約物の連続で間延びして，逆に使い物にならない。 <!-- 以下のコメントは 0.997 がリリースされた今では時代遅れ。 --> <!-- これはフォント自身がそのようにデザインされているのだから、XeTeXの責任ではない。 --> <!-- \font\foo="ヒラギノ丸ゴ Pro W4:-palt" --> <!-- \font\bar="ヒラギノ丸ゴ Pro W4:+palt" --> <!-- \catcode`「\active --> <!-- \catcode`」\active --> <!-- \ifcase0 --> <!-- %%% 詰め組 (これをやると、フォントが切替えられてしまうので、前後で改行できなくなる) --> <!-- \def「{{\bar\char`「}} --> <!-- \def」{{\bar\char`」}} --> <!-- \or --> <!-- %%% 半角文字に置換 --> <!-- \def「{｢} --> <!-- \def」{｣} --> <!-- \or --> <!-- %%% CID番号で指定 (これをやると、禁則対象文字かどうか判らないので前後で改行できなくなる) --> <!-- \def「{\XeTeXglyph12070} --> <!-- \def」{\XeTeXglyph12071} --> <!-- \fi --> <!-- いや，pTeXで必ず詰めているわけではなく，「，」の次に「「」が来るようなときに限って詰めているわけです。こういう2文字の連鎖を見ることのできない現状のXeTeXでは日本語をまともに組むことはできず，それならばむしろpTeXで難しいプロポーショナル組にXeTeXを使うほうがデモとしてはおもしろいわけです。 --> <!-- 了解致しました。真面目にマクロを組めば、連鎖を見ることができない訳ではないでしょうが。 --> <!-- それよりも、どなたか、多言語処理について、書いて頂いた方が良いのではないでしょうか？ --> <!-- 現状のXeTeXでも、アラビア文字や、ヘブル文字は勝手に右から左にタイプセットするし、 --> <!-- タイ語は(辞書が組み込まれていて)単語の切れ目を見付けて改行してくれるし、 --> <!-- インド系の、テキスト文字列の順序(発音順と同じ)と文字を書いていく順序の異なる文字は勝手に並び替えを行い、適切にリガチャーも処理してくれるし、なかなかおもしろいですよ。 --> <!-- ありがとうございます。まさにそうですね。 --> <!-- 通常の日本語、英文混合文書でも、指定フォントの1バイト欧文部分を --> <!-- 自然に利用できるので、ソースを若干気をつけて作る (行末が日本語の場合、 --> <!-- 継続文字 % をつける等) と、考えようによってはバランスのよいものに --> <!-- なると思います。 (fontspec package の例) : --> <!-- \setromanfont[Mapping=tex-text,BoldFont={Kozuka Mincho Pro B}]{Kozuka Mincho Pro R} -->
+
+日本語のルールに則って行分割をするには次のようにする。
+
+```
+\XeTeXlinebreaklocale "ja_JP"
+\XeTeXlinebreakskip=0em plus 0.1em minus 0.01em
+\XeTeXlinebreakpenalty=0
+```
+
+元に戻すには次のようにする。
+
+```
+\XeTeXlinebreaklocale ""
+```
+
+ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
+現状ではまともではない。
+しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。
 
 ### 参考サイト {#m6b448cf}
 
