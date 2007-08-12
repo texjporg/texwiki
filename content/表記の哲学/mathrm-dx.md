@@ -22,7 +22,6 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 - $\Delta$ ({{< katex >}}\Delta{{< /katex >}}) か $\mathnormal{\Delta}$ ($\varDelta$) ({{< katex >}}\mathit{\Delta}{{< /katex >}}) か？（$\Delta$ 記号は右下が鈍角になるべきだ）
     <!-- この項目の括弧書きは要りますか？ 斜体のデルタの字形の問題にすぎないようですが？ -->
     <!-- というよりは，以前の記事を確認しないとどんなことが話題になっていたか存じていないのです． -->
-    <!-- $\varDelta$の画像が表示されていませんが？ -->
 
 - ベクトルは bold italic か bold upright か？
 
