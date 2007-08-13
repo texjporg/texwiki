@@ -18,14 +18,15 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 ## 対立項 {#x8b1c3a7}
 
-- $dx$ ({{< katex >}}dx{{< /katex >}}) か $\mathrm{d}x$ ({{< katex >}}\mathrm{d}x{{< /katex >}}) か？
+- $dx$ ({{< katex >}}dx{{< /katex >}}) か $\mathrm{d}x$ ($\operatorname{d}x$) ({{< katex >}}\operatorname{d}x{{< /katex >}}) か？
 - $\Delta$ ({{< katex >}}\Delta{{< /katex >}}) か $\mathnormal{\Delta}$ ($\varDelta$) ({{< katex >}}\mathit{\Delta}{{< /katex >}}) か？（$\Delta$ 記号は右下が鈍角になるべきだ）
     <!-- この項目の括弧書きは要りますか？ 斜体のデルタの字形の問題にすぎないようですが？ -->
     <!-- というよりは，以前の記事を確認しないとどんなことが話題になっていたか存じていないのです． -->
+    <!-- $\Delta$ と $\mathit{\Delta}$ の画像がどちらも $\mathit{\Delta}$ に見えますが？ -->
 
 - ベクトルは bold italic か bold upright か？
 
-## ISO / JIS 派 {#s00d4318}
+## ISO/JIS 派 {#s00d4318}
 
 - [JIS Z 8201-1981](http://www.webstore.jsa.or.jp/webstore/Com/FlowControl.jsp?lang=jp&bunsyoId=JIS+Z+8201%3A1981&dantaiCd=JIS&status=1&pageNo=0)
 - [ISO 31-00 1992](http://www.webstore.jsa.or.jp/webstore/Com/FlowControl.jsp?lang=jp&bunsyoId=ISO+31-0%3A1992&dantaiCd=ISO&status=1&pageNo=0) /
@@ -64,7 +65,7 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 ### 立体のギリシア文字の書き方 {#ie50e6b7}
 
 - $\textrm{\Pisymbol{psy}{"70}}, \textrm{\Pisymbol{psy}{"64}}$: 対応表は奥村さんの美文書 p. 233 など
-- t(p)xfonts 限定で "\piup", "\deltaup", ･･･ というギリシャ文字直立体の命令がある
+- txfonts/pxfonts 限定で "\piup", "\deltaup", ･･･ というギリシャ文字直立体の命令がある
 - 以下の \slantbox を用いて，\slantbox{-14.0362}{$\mu$} とする <em>註: PS に依存する</em>
 
 ***
