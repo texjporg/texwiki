@@ -28,7 +28,7 @@ pukiwiki: "TeXが苦手とする処理"
 対処法は，大別すると次の2通りになります。
 
 - 丸数字などの字形をもったフォントを利用:
-    - ZapfDingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
+    - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
         - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，何も付けなければ十進表記でも書けます。例えば
 
@@ -233,11 +233,11 @@ framed パッケージが提供する framed 環境，shaded 環境
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
 
-### 環境依存文字（フォント依存文字，謂ゆる機種依存文字） {#p625d750}
+### 環境依存文字（謂ゆる機種依存文字） {#p625d750}
 
 #### どの環境でも気を付けるべき環境依存文字 {#y42d0186}
 
-- 【注】 Mac，Windows 以外の環境では，
+- 【注】 Mac OS，Microsoft Windows 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
@@ -246,7 +246,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/UTF/ums package の命令</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:center">&#x2460;</td><td style="text-align:center">&#x2461;</td><td style="text-align:center">&#x2462;</td><td style="text-align:center">&#x2463;</td><td style="text-align:center">&#x2464;</td><td style="text-align:center">&#x2465;</td><td style="text-align:center">&#x2466;</td><td style="text-align:center">&#x2467;</td><td style="text-align:center">&#x2468;</td><td style="text-align:center">&#x2469;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ding{"AC}, \ding{"C0}, \ajMaru{1}</td><td rowspan="16" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><td style="text-align:center">&#x2460;</td><td style="text-align:center">&#x2461;</td><td style="text-align:center">&#x2462;</td><td style="text-align:center">&#x2463;</td><td style="text-align:center">&#x2464;</td><td style="text-align:center">&#x2465;</td><td style="text-align:center">&#x2466;</td><td style="text-align:center">&#x2467;</td><td style="text-align:center">&#x2468;</td><td style="text-align:center">&#x2469;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ding{"AC}, \ding{"C0}, \ajMaru{1}</td><td rowspan="18" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
 <tr><td style="text-align:center">&#x246a;</td><td style="text-align:center">&#x246b;</td><td style="text-align:center">&#x246c;</td><td style="text-align:center">&#x246d;</td><td style="text-align:center">&#x246e;</td><td style="text-align:center">&#x246f;</td><td style="text-align:center">&#x2470;</td><td style="text-align:center">&#x2471;</td><td style="text-align:center">&#x2472;</td><td style="text-align:center">&#x2473;</td><td style="text-align:center">(11)</td><td style="text-align:center">(20)</td><td style="text-align:left">\ajMaru{11}</td></tr>
 <tr><td style="text-align:center">&#x2160;</td><td style="text-align:center">&#x2161;</td><td style="text-align:center">&#x2162;</td><td style="text-align:center">&#x2163;</td><td style="text-align:center">&#x2164;</td><td style="text-align:center">&#x2165;</td><td style="text-align:center">&#x2166;</td><td style="text-align:center">&#x2167;</td><td style="text-align:center">&#x2168;</td><td style="text-align:center">&#x2169;</td><td style="text-align:center">VII</td><td style="text-align:center">IX</td><td style="text-align:left">\ajRoman{7}</td></tr>
 <tr><td style="text-align:center">&#x3349;</td><td style="text-align:center">&#x3314;</td><td style="text-align:center">&#x3322;</td><td style="text-align:center">&#x334d;</td><td style="text-align:center">&#x3318;</td><td style="text-align:center">&#x3327;</td><td style="text-align:center">&#x3303;</td><td style="text-align:center">&#x3336;</td><td style="text-align:center">&#x3351;</td><td style="text-align:center">&#x3357;</td><td style="text-align:center">ミリ</td><td style="text-align:center">キロ</td><td style="text-align:left">\ajLig{ミリ}</td></tr>
@@ -254,7 +254,9 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x339c;</td><td style="text-align:center">&#x339d;</td><td style="text-align:center">&#x339e;</td><td style="text-align:center">&#x338e;</td><td style="text-align:center">&#x338f;</td><td style="text-align:center">&#x33c4;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">mm</td><td style="text-align:center">kg</td><td style="text-align:left">\ajLig{mm}</td></tr>
 <tr><td style="text-align:center">&#x33a1;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">m^2</td><td style="text-align:left">m$^2$, m\texttwosuperior, \ajLig{m2}</td></tr>
 <tr><td style="text-align:center">&#x301d;</td><td style="text-align:center">&#x301f;</td><td colspan="8" style="text-align:center"></td><td style="text-align:center">「</td><td style="text-align:center">」</td><td style="text-align:left">\UTF{301D}, \UTF{301F}</td></tr>
-<tr><td style="text-align:center">&#x2116;</td><td style="text-align:center">&#x33cd;</td><td style="text-align:center">&#x2121;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">No.</td><td style="text-align:center">Tel</td><td style="text-align:left">\textsc{Tel}</td></tr>
+<tr><td style="text-align:center">&#x2116;</td><td colspan="9" style="text-align:center"></td><td style="text-align:center">No.</td><td style="text-align:center">No</td><td style="text-align:left">\textnumero, \ajLig{No.}, \ajLig{No}</td></tr>
+<tr><td style="text-align:center">&#x33cd;</td><td colspan="9" style="text-align:center"></td><td style="text-align:center">K.K.</td><td style="text-align:center">KK</td><td style="text-align:left">\ajLig{K.K.}, \ajLig{KK}, \ajLig{KK.}</td></tr>
+<tr><td style="text-align:center">&#x2121;</td><td colspan="9" style="text-align:center"></td><td style="text-align:center">TEL</td><td style="text-align:center">Tel</td><td style="text-align:left">\textsc{Tel}, \ajLig{TEL}, \ajLig{Tel}, \ajLig{tel}</td></tr>
 <tr><td style="text-align:center">&#x32a4;</td><td style="text-align:center">&#x32a5;</td><td style="text-align:center">&#x32a6;</td><td style="text-align:center">&#x32a7;</td><td style="text-align:center">&#x32a8;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">（上）</td><td style="text-align:center">（中）</td><td style="text-align:left">\○上, \ajLig{○上}</td></tr>
 <tr><td style="text-align:center">&#x3231;</td><td style="text-align:center">&#x3232;</td><td style="text-align:center">&#x3239;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center">（株）</td><td style="text-align:center">（代）</td><td style="text-align:left">\（株）, \ajLig{(株)}</td></tr>
 <tr><td style="text-align:center">&#x337e;</td><td style="text-align:center">&#x337d;</td><td style="text-align:center">&#x337c;</td><td style="text-align:center">&#x337b;</td><td colspan="6" style="text-align:center"></td><td style="text-align:center">昭和</td><td style="text-align:center">平成</td><td style="text-align:left">\ajLig{平成}</td></tr>
@@ -265,13 +267,13 @@ framed パッケージが提供する framed 環境，shaded 環境
 </tbody>
 </table>
 
-#### Windows 環境で特に気を付けるべき環境依存文字 {#h9bb4c4e}
+#### Microsoft Windows 環境で特に気を付けるべき環境依存文字 {#h9bb4c4e}
 
 <!-- Windows-31J …… Microsoft による Shift_JIS の拡張。 -->
 <!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 <!-- x-CP51932 …… Microsoft による EUC-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 
-- 【注】 Windows 以外の環境では，
+- 【注】 Microsoft Windows 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
@@ -280,13 +282,14 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/UTF/ums package の命令</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:center">&sum;</td><td style="text-align:center">&Sigma;</td><td style="text-align:left">$\sum$, \Pisymbol{psy}{"E5}</td><td rowspan="7" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><td style="text-align:center">&sum;</td><td style="text-align:center">&Sigma;</td><td style="text-align:left">$\sum$, \Pisymbol{psy}{"E5}</td><td rowspan="8" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
 <tr><td style="text-align:center">&#xffe4;</td><td style="text-align:center">&#x7c;</td><td style="text-align:left">\textbrokenbar</td></tr>
 <tr><td style="text-align:center">&#xff07;</td><td style="text-align:center">'</td><td style="text-align:left">\UTF{FF07}</td></tr>
 <tr><td style="text-align:center">&#xff02;</td><td style="text-align:center">"</td><td style="text-align:left">\UTF{FF02}</td></tr>
 <tr><td style="text-align:center">&#x9ad9;</td><td style="text-align:center">高</td><td style="text-align:left">\ajHashigoTaka</td></tr>
 <tr><td style="text-align:center">&#xfa11;</td><td style="text-align:center">崎</td><td style="text-align:left">\ajTatsuSaki</td></tr>
-<tr><td style="text-align:center">&#x6ff5;</td><td style="text-align:center">濱<br>浜</td><td style="text-align:left">\ajMayuHama</td></tr>
+<tr><td rowspan="2" style="text-align:center">&#x6ff5;</td><td style="text-align:center">濱</td><td rowspan="2" style="text-align:left">\ajMayuHama</td></tr>
+<tr><td style="text-align:center">浜</td></tr>
 </tbody>
 </table>
 
@@ -298,7 +301,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th colspan="5" style="text-align:center">テキスト</th><th style="text-align:center">OTF<br>UTF<br>ums</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</td><td rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x6a6b;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">横</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="12" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><td rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</td><td rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x6a6b;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">横</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="14" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
 <tr><td style="text-align:center">&#xfa26;</td><td style="text-align:center">&#xfa22;</td><td style="text-align:center">&#x7dd6;</td><td style="text-align:center">&#xfa16;</td><td style="text-align:center">&#x589e;</td><td style="text-align:center">都</td><td style="text-align:center">諸</td><td style="text-align:center">緒</td><td style="text-align:center">猪</td><td style="text-align:center">増</td></tr>
 <tr><td style="text-align:center">&#x5fb7;</td><td style="text-align:center">&#xf929;</td><td style="text-align:center">&#x90de;</td><td style="text-align:center">&#x5bec;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">徳</td><td style="text-align:center">朗</td><td style="text-align:center">郎</td><td style="text-align:center">寛</td><td style="text-align:center">薫</td></tr>
 <tr><td style="text-align:center">&#x8cf4;</td><td style="text-align:center">&#x7028;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">頼</td><td style="text-align:center">瀬</td><td colspan="3" style="text-align:center"></td></tr>
@@ -306,8 +309,10 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x654e;</td><td style="text-align:center">&#xfa1e;</td><td style="text-align:center">&#x9592;</td><td style="text-align:center">&#xfa17;</td><td style="text-align:center">&#x9115;</td><td style="text-align:center">教</td><td style="text-align:center">羽</td><td style="text-align:center">間</td><td style="text-align:center">益</td><td style="text-align:center">郷</td></tr>
 <tr><td style="text-align:center">&#xfa2c;</td><td style="text-align:center">&#xfa2a;</td><td style="text-align:center">&#xfa2b;</td><td style="text-align:center">&#xfa10;</td><td style="text-align:center">&#x6085;</td><td style="text-align:center">館</td><td style="text-align:center">飯</td><td style="text-align:center">飼</td><td style="text-align:center">塚</td><td style="text-align:center">悦</td></tr>
 <tr><td style="text-align:center">&#xf9dc;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">隆</td><td colspan="4" style="text-align:center"></td></tr>
-<tr><td rowspan="3" style="text-align:center">異<br>体<br>字</td><td style="text-align:center">古<br>字</td><td style="text-align:center">&#x51ec;</td><td style="text-align:center">&#xfa18;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">風</td><td style="text-align:center">禮<br>礼</td><td colspan="3" style="text-align:center"></td></tr>
-<tr><td rowspan="2" style="text-align:center">俗<br>字</td><td style="text-align:center">&#x9ad9;</td><td style="text-align:center">&#xfa11;</td><td style="text-align:center">&#x6ff5;</td><td style="text-align:center">&#x663b;</td><td style="text-align:center">&#xfa2d;</td><td style="text-align:center">高</td><td style="text-align:center">崎</td><td style="text-align:center">濱<br>浜</td><td style="text-align:center">&#x6602;</td><td style="text-align:center">鶴</td></tr>
+<tr><td rowspan="5" style="text-align:center">異<br>体<br>字</td><td rowspan="2" style="text-align:center">古<br>字</td><td rowspan="2" style="text-align:center">&#x51ec;</td><td rowspan="2" style="text-align:center">&#xfa18;</td><td colspan="3" rowspan="2" style="text-align:center"></td><td rowspan="2" style="text-align:center">風</td><td style="text-align:center">禮</td><td colspan="3" rowspan="2" style="text-align:center"></td></tr>
+<tr><td style="text-align:center">礼</td></tr>
+<tr><td rowspan="3" style="text-align:center">俗<br>字</td><td rowspan="2" style="text-align:center">&#x9ad9;</td><td rowspan="2" style="text-align:center">&#xfa11;</td><td rowspan="2" style="text-align:center">&#x6ff5;</td><td rowspan="2" style="text-align:center">&#x663b;</td><td rowspan="2" style="text-align:center">&#xfa2d;</td><td rowspan="2" style="text-align:center">高</td><td rowspan="2" style="text-align:center">崎</td><td style="text-align:center">濱</td><td rowspan="2" style="text-align:center">&#x6602;</td><td rowspan="2" style="text-align:center">鶴</td></tr>
+<tr><td style="text-align:center">浜</td></tr>
 <tr><td style="text-align:center">&#x6120;</td><td style="text-align:center">&#xfa14;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">慍</td><td style="text-align:center">欅</td><td colspan="3" style="text-align:center"></td></tr>
 <tr><td colspan="2" style="text-align:center">異体字</td><td style="text-align:center">&#xfa25;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">逸</td><td colspan="4" style="text-align:center"></td></tr>
 </tbody>
@@ -326,11 +331,11 @@ framed パッケージが提供する framed 環境，shaded 環境
     いう）種類分けについては文献によって解釈が異なるので，
     ある文献による種類分けと上の表の種類分けとが一致しないことがあります。
 
-#### Mac 環境で特に気を付けるべき環境依存文字 {#w0cac168}
+#### Mac OS 環境で特に気を付けるべき環境依存文字 {#w0cac168}
 
 <!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 
-- 【注】 Mac 以外の環境では，
+- 【注】 Mac OS 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
@@ -339,9 +344,10 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="3" style="text-align:center">LaTeX や OTF/UTF package の命令</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:center">&copy;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">(c)</td><td style="text-align:left">\copyright, \Pisymbol{psy}{"D3}, \Pisymbol{psy}{"E3}</td><td rowspan="5" style="text-align:left">\UTF{}</td><td rowspan="71" style="text-align:left">\CID{}</td></tr>
+<tr><td style="text-align:center">&copy;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">(c)</td><td style="text-align:left">\copyright, \Pisymbol{psy}{"D3}, \Pisymbol{psy}{"E3}</td><td rowspan="2" style="text-align:left">\UTF{}</td><td rowspan="2" style="text-align:left">\CID{}</td></tr>
 <tr><td style="text-align:center">&trade;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">TM</td><td style="text-align:left">\texttrademark, \Pisymbol{psy}{"D4}, \Pisymbol{psy}{"E4}, \ajLig{tm}</td></tr>
-<tr><td style="text-align:center">&#x2474;</td><td style="text-align:center">&#x2475;</td><td style="text-align:center">&#x2476;</td><td style="text-align:center">&#x2477;</td><td style="text-align:center">&#x2478;</td><td style="text-align:center">&#x2479;</td><td style="text-align:center">&#x247a;</td><td style="text-align:center">&#x247b;</td><td style="text-align:center">&#x247c;</td><td style="text-align:center">&#x247d;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ajKakko{1}</td></tr>
+<tr><td colspan="2" style="text-align:center">&hellip;&#xf87f;</td><td colspan="8" style="text-align:center"> </td><td colspan="2" style="text-align:center">...</td><td style="text-align:left"></td><td style="text-align:left"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:center">&#x2474;</td><td style="text-align:center">&#x2475;</td><td style="text-align:center">&#x2476;</td><td style="text-align:center">&#x2477;</td><td style="text-align:center">&#x2478;</td><td style="text-align:center">&#x2479;</td><td style="text-align:center">&#x247a;</td><td style="text-align:center">&#x247b;</td><td style="text-align:center">&#x247c;</td><td style="text-align:center">&#x247d;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ajKakko{1}</td><td rowspan="3" style="text-align:left">\UTF{}</td><td rowspan="71" style="text-align:center">\CID{}</td></tr>
 <tr><td style="text-align:center">&#x247e;</td><td style="text-align:center">&#x247f;</td><td style="text-align:center">&#x2480;</td><td style="text-align:center">&#x2481;</td><td style="text-align:center">&#x2482;</td><td style="text-align:center">&#x2483;</td><td style="text-align:center">&#x2484;</td><td style="text-align:center">&#x2485;</td><td style="text-align:center">&#x2486;</td><td style="text-align:center">&#x2487;</td><td style="text-align:center">(11)</td><td style="text-align:center">(20)</td><td style="text-align:left">\ajKakko{11}</td></tr>
 <tr><td style="text-align:center">&#x2776;</td><td style="text-align:center">&#x2777;</td><td style="text-align:center">&#x2778;</td><td style="text-align:center">&#x2779;</td><td style="text-align:center">&#x277a;</td><td style="text-align:center">&#x277b;</td><td style="text-align:center">&#x277c;</td><td style="text-align:center">&#x277d;</td><td style="text-align:center">&#x277e;</td><td style="text-align:center"></td><td style="text-align:center">(1)</td><td style="text-align:center">(9)</td><td style="text-align:left">\ding{"B6}, \ding{"CA}, \ajKuroMaru{1}</td></tr>
 <tr><td colspan="3" style="text-align:center">&#xf860;0.</td><td colspan="7" style="text-align:center"></td><td colspan="2" style="text-align:center">0.</td><td style="text-align:left">\ajPeriod{0}</td><td style="text-align:left"></td></tr>
@@ -407,9 +413,11 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><td style="text-align:center">&#x3300;</td><td style="text-align:center">&#x331e;</td><td style="text-align:center">&#x332a;</td><td style="text-align:center">&#x3331;</td><td style="text-align:center">&#x3347;</td><td style="text-align:center">&#x337f;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">コーポ</td><td style="text-align:center">ビル</td><td style="text-align:left">\ajLig{コーポ}</td></tr>
 <tr><td colspan="5" style="text-align:center">&#xf862;有限会社</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">有限会社</td><td style="text-align:left">\ajLig{有限会社}</td><td style="text-align:left"></td></tr>
 <tr><td colspan="5" style="text-align:center">&#xf862;財団法人</td><td colspan="5" style="text-align:center"></td><td colspan="2" style="text-align:center">財団法人</td><td style="text-align:left">\ajLig{財団法人}</td><td style="text-align:left"></td></tr>
-<tr><td style="text-align:center">&#x3094;</td><td style="text-align:center">&#x30f7;</td><td style="text-align:center">&#x30f8;</td><td style="text-align:center">&#x30f9;</td><td style="text-align:center">&#x30fa;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">う゛</td><td style="text-align:center">ワ゛</td><td style="text-align:left">\゛う, \ajLig{う゛}</td><td rowspan="3" style="text-align:left">\UTF{}</td></tr>
-<tr><td style="text-align:center">&#xfe33;</td><td style="text-align:center">&#xfe31;</td><td style="text-align:center">&#xfe30;</td><td style="text-align:center">&#xfe35;</td><td style="text-align:center">&#xfe36;</td><td style="text-align:center">&#xfe39;</td><td style="text-align:center">&#xfe3a;</td><td style="text-align:center">&#xfe37;</td><td style="text-align:center">&#xfe38;</td><td style="text-align:center"></td><td style="text-align:center">&#xff5c;</td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE31}</td></tr>
-<tr><td style="text-align:center">&#xfe3f;</td><td style="text-align:center">&#xfe40;</td><td style="text-align:center">&#xfe3d;</td><td style="text-align:center">&#xfe3e;</td><td style="text-align:center">&#xfe41;</td><td style="text-align:center">&#xfe42;</td><td style="text-align:center">&#xfe43;</td><td style="text-align:center">&#xfe44;</td><td style="text-align:center">&#xfe3b;</td><td style="text-align:center">&#xfe3c;</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE41}</td></tr>
+<tr><td style="text-align:center">&#x3094;</td><td style="text-align:center">&#x30f7;</td><td style="text-align:center">&#x30f8;</td><td style="text-align:center">&#x30f9;</td><td style="text-align:center">&#x30fa;</td><td colspan="5" style="text-align:center"></td><td style="text-align:center">う゛</td><td style="text-align:center">ワ゛</td><td style="text-align:left">\゛う, \ajLig{う゛}</td><td style="text-align:left">\UTF{}</td></tr>
+<tr><td style="text-align:center">&#xfe11;</td><td style="text-align:center">&#xfe12;</td><td style="text-align:center">&#xfe19;</td><td colspan="7" style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\CID{7887}, \CID{7888}, \CID{7897}</td><td style="text-align:left"></td></tr>
+<tr><td style="text-align:center">&#xfe33;</td><td style="text-align:center">&#xfe31;</td><td style="text-align:center">&#xfe32;</td><td style="text-align:center">&#xfe30;</td><td colspan="6" style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE33}</td><td rowspan="3" style="text-align:left">\UTF{}</td></tr>
+<tr><td style="text-align:center">&#xfe35;</td><td style="text-align:center">&#xfe36;</td><td style="text-align:center">&#xfe39;</td><td style="text-align:center">&#xfe3a;</td><td style="text-align:center">&#xfe47;</td><td style="text-align:center">&#xfe48;</td><td style="text-align:center">&#xfe37;</td><td style="text-align:center">&#xfe38;</td><td style="text-align:center">&#xfe3f;</td><td style="text-align:center">&#xfe40;</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE35}</td></tr>
+<tr><td style="text-align:center">&#xfe3d;</td><td style="text-align:center">&#xfe3e;</td><td style="text-align:center">&#xfe41;</td><td style="text-align:center">&#xfe42;</td><td style="text-align:center">&#xfe43;</td><td style="text-align:center">&#xfe44;</td><td style="text-align:center">&#xfe3b;</td><td style="text-align:center">&#xfe3c;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE3D}</td></tr>
 </tbody>
 </table>
 
