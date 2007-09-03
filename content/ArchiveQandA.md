@@ -108,6 +108,80 @@ pukiwiki: "ArchiveQandA"
     - 上のスレッドで出てきたマクロの使い方の例：[qa:12045](https://okumuralab.org/~okumura/texfaq/qa/12045.html)
     - 大型演算子以外に使う \sideset：[qa:2511](https://okumuralab.org/~okumura/texfaq/qa/2511.html)
     - [qa:43655](https://okumuralab.org/~okumura/texfaq/qa/43655.html) に対する回答：[qa:43656](https://okumuralab.org/~okumura/texfaq/qa/43656.html), [qa:43657](https://okumuralab.org/~okumura/texfaq/qa/43657.html), [qa:43658](https://okumuralab.org/~okumura/texfaq/qa/43658.html), [qa:43667](https://okumuralab.org/~okumura/texfaq/qa/43667.html), [qa:43668](https://okumuralab.org/~okumura/texfaq/qa/43668.html)
+- 「アンバランスな括弧」[qa:44132](https://okumuralab.org/~okumura/texfaq/qa/44132.html)，[qa:49364](https://okumuralab.org/~okumura/texfaq/qa/49364.html)（およびそれらの元質問）
+    <!-- // もっとも，「仕事なのでやむをえない」というのでもなければ，適宜 -->
+    <!-- // 斜線を用いて書き直すのが妥当．下記のサンプル文書を検討のこと． -->
+    <!-- \documentclass{article} -->
+    <!-- \usepackage{amsmath} -->
+    <!--  -->
+    <!-- \makeatletter -->
+    <!-- \def\addshiftedparentheses{\addshifteddelimiters()} -->
+    <!-- \def\addshiftedbraces{\addshifteddelimiters\{\}} -->
+    <!-- \def\addshiftedbrackets{\addshifteddelimiters[]} -->
+    <!-- \def\addshifteddelimiters#1#2#3{% -->
+    <!--    \@ifnextchar^% -->
+    <!--       {\@addshifteddelimiters@u{{#1}{#2}{#3}}}% -->
+    <!--       {\@addshifteddelimiters@n{{#1}{#2}{#3}}}} -->
+    <!-- \def\@addshifteddelimiters@u#1^#2{% -->
+    <!--    \@ifnextchar_% -->
+    <!--       {\@addshifteddelimiters@ul{#1{#2}}}% -->
+    <!--       {\@@addshifteddelimiters{#1{#2}{}}}} -->
+    <!-- \def\@addshifteddelimiters@ul#1_#2{\@@addshifteddelimiters{#1{#2}}} -->
+    <!-- \def\@addshifteddelimiters@n#1{% -->
+    <!--    \@ifnextchar_% -->
+    <!--       {\@addshifteddelimiters@l{#1}}% -->
+    <!--       {\@@addshifteddelimiters{#1{}{}}}} -->
+    <!-- \def\@addshifteddelimiters@l#1_#2{% -->
+    <!--    \@ifnextchar^% -->
+    <!--       {\@addshifteddelimiters@lu{#1}{#2}}% -->
+    <!--       {\@@addshifteddelimiters{#1{}{#2}}}} -->
+    <!-- \def\@addshifteddelimiters@lu#1#2^#3{\@@addshifteddelimiters{#1{#3}{#2}}} -->
+    <!-- \def\@@addshifteddelimiters{\mathpalette\@@@addshifteddelimiters} -->
+    <!-- \def\@@@addshifteddelimiters#1#2{\@@@@addshifteddelimiters#1#2} -->
+    <!-- \def\@@@@addshifteddelimiters#1#2#3#4#5#6{% -->
+    <!--   \mathinner{% -->
+    <!--      \setbox\z@\hbox{% -->
+    <!--         \m@th -->
+    <!--         $% -->
+    <!--         \setbox\z@\hbox{$#1#4$}% -->
+    <!--         \dimen@\ht\z@ -->
+    <!--         \setbox\z@\hbox{$\vcenter{\box\z@}$}% -->
+    <!--         \advance\dimen@-\ht\z@ -->
+    <!--         \left#2 \box\z@ \right#3% -->
+    <!--         \expandafter$\expandafter}\expandafter\dimen@\the\dimen@\relax -->
+    <!--      \def\@tempa{#5}\def\@tempb{#6}% -->
+    <!--      \ifx\@tempa\@empty -->
+    <!--         \ifx\@tempb\@empty \let\@tempa\@empty -->
+    <!--         \else              \def\@tempa{_{#6}}% -->
+    <!--         \fi -->
+    <!--      \else -->
+    <!--         \ifx\@tempb\@empty \def\@tempa{^{#5}}% -->
+    <!--         \else              \def\@tempa{_{#6}^{#5}}% -->
+    <!--         \fi -->
+    <!--      \fi -->
+    <!--      \raise\dimen@\box\z@\@tempa}} -->
+    <!-- \makeatother -->
+    <!--  -->
+    <!-- \begin{document} -->
+    <!-- Though it is possible to produce a formula like -->
+    <!-- \[ -->
+    <!--     1 -->
+    <!--   + \addshiftedparentheses{\frac{x}{x - \dfrac{1}{2}}} -->
+    <!--   + \addshiftedparentheses{\frac{x - \dfrac{1}{2}}{x}}, -->
+    <!-- \] -->
+    <!-- it would be better to choose ``traditional'' expressions such as -->
+    <!-- \[ -->
+    <!--     1 -->
+    <!--   + \left( \frac{x}{x - 1/2} \right) -->
+    <!--   + \left( \frac{x - 1/2}{x} \right), -->
+    <!-- \] -->
+    <!-- or -->
+    <!-- \[ -->
+    <!--     1 -->
+    <!--   + \left( \frac{x}{x - \frac{1}{2}} \right) -->
+    <!--   + \left( \frac{x - \frac{1}{2}}{x} \right). -->
+    <!-- \] -->
+    <!-- \end{document} -->
 
 ### コメント {#adc20c89}
 
