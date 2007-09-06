@@ -67,8 +67,7 @@ pukiwiki: "ArchiveQandA"
         ```
 
         となります。
-
-- [TeX と「TeX 以外」](</TeX と「TeX 以外」/>)
+        <!-- -[[TeX と「TeX 以外」]] -->
 
 ### Tips {#de167df2}
 
@@ -102,7 +101,7 @@ pukiwiki: "ArchiveQandA"
 
 - 二段組にしたときに最終ページの左右カラムを揃える
     - [blance.sty](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/balance.html)，[CTAN:macros/latex/contrib/preprint/](https://mirror.ctan.org/macros/latex/contrib/preprint/)内 ([qa:32276](https://okumuralab.org/~okumura/texfaq/qa/32276.html)...)
-- [TeXが苦手とする処理](</TeXが苦手とする処理/>)（下線，飾り枠など）
+- [TeXが苦手とする処理](</TeXが苦手とする処理/>)<del>（下線，飾り枠など）</del>
 - 行列の転置の書き方
     - [qa:2476](https://okumuralab.org/~okumura/texfaq/qa/2476.html)からのスレッド：[qa:2478](https://okumuralab.org/~okumura/texfaq/qa/2478.html), [qa:2479](https://okumuralab.org/~okumura/texfaq/qa/2479.html), [qa:2480](https://okumuralab.org/~okumura/texfaq/qa/2480.html), [qa:2490](https://okumuralab.org/~okumura/texfaq/qa/2490.html), [qa:2496](https://okumuralab.org/~okumura/texfaq/qa/2496.html), [qa:2498](https://okumuralab.org/~okumura/texfaq/qa/2498.html), [qa:2502](https://okumuralab.org/~okumura/texfaq/qa/2502.html), [qa:2503](https://okumuralab.org/~okumura/texfaq/qa/2503.html), [qa:2568](https://okumuralab.org/~okumura/texfaq/qa/2568.html), [qa:2569](https://okumuralab.org/~okumura/texfaq/qa/2569.html), [qa:2571](https://okumuralab.org/~okumura/texfaq/qa/2571.html), [qa:2572](https://okumuralab.org/~okumura/texfaq/qa/2572.html), [qa:2573](https://okumuralab.org/~okumura/texfaq/qa/2573.html), [qa:2579](https://okumuralab.org/~okumura/texfaq/qa/2579.html), [qa:2583](https://okumuralab.org/~okumura/texfaq/qa/2583.html), [qa:2584](https://okumuralab.org/~okumura/texfaq/qa/2584.html), [qa:2585](https://okumuralab.org/~okumura/texfaq/qa/2585.html)
     - 上のスレッドで出てきたマクロの使い方の例：[qa:12045](https://okumuralab.org/~okumura/texfaq/qa/12045.html)
