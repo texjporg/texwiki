@@ -32,6 +32,8 @@ Illustrator にさせている仕事は
 
 Illustrator CS windows 版 (Windows XP SP2) で動作を確認していますが、Illustrator のjavascript はバージョン毎の互換性が悪いらしく、またその実行環境に影響を受けることさえあるらしいので、動かなければ適当に直してください。
 
+> Illustrator CS3 windows 版 (Windows XP SP2) でもそのままで動くようです．
+
 Illustrator 上でのjavascript に関するマニュアルはインストールCD中にあります(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)。
 
 <!-- **参考ページ [#o88510e0] -->
