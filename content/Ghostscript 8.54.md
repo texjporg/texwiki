@@ -239,12 +239,10 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %%% See http://dicey.org/vlgothic/
 /VL-Gothic-Regular            << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/VL-Gothic-Regular.ttf) >> ;
 
-%%% IPA Fonts in GRASS
-%%% See http://www.grass-japan.org/FOSS4G/readme-grass-i18n-ipafonts.eucjp.htm
-%%%     http://mix-mplus-ipa.sourceforge.jp/
-%%%     http://sourceforge.jp/projects/opfc/files/#13897
-/IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/grass5/fonts/ipam.ttf) >> ;
-/IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/grass5/fonts/ipag.ttf) >> ;
+%%% IPA Fonts
+%%% See http://www.ipa.go.jp/about/press/20071001-2.html
+/IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/opt/share/fonts/truetype/ipafont/ipam.ttf) >> ;
+/IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/opt/share/fonts/truetype/ipafont/ipag.ttf) >> ;
 
 %%% O'Reilly CID-keyed fonts including Wadalab Fonts
 %%% See ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/samples/
