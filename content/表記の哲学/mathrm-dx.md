@@ -64,9 +64,17 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 ### 立体のギリシア文字の書き方 {#ie50e6b7}
 
-- $\textrm{\Pisymbol{psy}{"70}}, \textrm{\Pisymbol{psy}{"64}}$: 対応表は奥村さんの美文書 p. 233 など
-- txfonts/pxfonts 限定で "\piup", "\deltaup", ･･･ というギリシャ文字直立体の命令がある
-- 以下の \slantbox を用いて，\slantbox{-14.0362}{$\mu$} とする <em>註: PS に依存する</em>
+- Symbol フォント（と pifont パッケージ）を使って $\textrm{\Pisymbol{psy}{"70}}$，$\textrm{\Pisymbol{psy}{"6D}}$，$\textrm{\Pisymbol{psy}{"64}}$ とする。
+    対応表は奥村さんの LaTeX2e 美文書作成入門 付録 記号一覧 Symbolフォント などを参照。
+
+- txfonts/pxfonts パッケージ限定で $\piup$，$\muup$，$\deltaup$，… というギリシア小文字直立体の命令がある。
+- fourier パッケージの書体を使って $textrm{\usefont{FML}{futm}{m}{it} \symbol{"19}}$，$textrm{\usefont{FML}{futm}{m}{it} \symbol{"16}}$，$textrm{\usefont{FML}{futm}{m}{it} \symbol{"E}}$，… とする。
+- CB fonts を使って $\textrm{\usefont{LGR}{cmr}{m}{n} p}$，$\textrm{\usefont{LGR}{cmr}{m}{n} m}$，$\textrm{\usefont{LGR}{cmr}{m}{n} d}$，… とする
+    （See [TeXWiki:新 pTeX と Babel #ギリシアアルファベットフォント関連ファイルのダウンロードとインストール](</新 pTeX とBabel/#ud937b30>)）。
+
+- mathpazo/mathptmx パッケージ限定で $\upDelta$，$\upOmega$，$\upGamma$，… というギリシア大文字直立体の命令がある。
+- 以下の \slantbox を用いて，\slantbox{-14.0362}{$\mu$} とする
+    （<em>註： PostScript に依存する</em>）。
 
 ***
 
