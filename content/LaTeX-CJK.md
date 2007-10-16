@@ -21,7 +21,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
 漢字等がビットマップになることにさえ我慢できれば(?)、
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。 --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。 --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
-UTF8 等を用いて中国韓国文字も処理できます。
+UTF-8 等を用いて中国韓國文字も処理できます。
 海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 --> <!-- CJK は主に台湾で使われています。 -->
 
 CJKパッケージはinputencパッケージなどと同じく、
@@ -40,19 +40,19 @@ pLaTeXでは使用できません。基本的な使い方は
 
 <!-- 要説明 CJKutf8.sty -->
 
-です。エンコーディングにはBig5, CNS11643, GB2312, EUC-JP, Shift-JIS, EUC-KR, 
-UTF8などさまざまなものが使えます。以下は代表的なものです。
+です。エンコーディングには EUC-JP, Shift_JIS, GB2312, Big5, x-EUC-TW (CNS 11643), EUC-KR, 
+UTF-8 などさまざまなものが使えます。以下は代表的なものです。
 
 <table>
 <tbody>
-<tr><td>名前</td><td>ユーザーコード</td><td>TFMエンコーディング</td></tr>
+<tr><td>名前</td><td>ユーザーコード</td><td>TFM エンコーディング</td></tr>
 <tr><td>Big5</td><td>Bg5</td><td>c00</td></tr>
 <tr><td>GB2312</td><td>GB</td><td>c10</td></tr>
 <tr><td>EUC-JP</td><td>JIS</td><td>c40</td></tr>
-<tr><td>Shift JIS</td><td>SJIS</td><td>c40</td></tr>
-<tr><td>JISX0212(EUC)</td><td>JIS2</td><td>c50</td></tr>
+<tr><td>Shift_JIS</td><td>SJIS</td><td>c40</td></tr>
+<tr><td>JIS X 0212 (EUC-JP)</td><td>JIS2</td><td>c50</td></tr>
 <tr><td>EUC-KR</td><td>KS</td><td>c60</td></tr>
-<tr><td>UTF8</td><td>UTF8</td><td>c70</td></tr>
+<tr><td>UTF-8</td><td>UTF8</td><td>c70</td></tr>
 </tbody>
 </table>
 
@@ -62,7 +62,7 @@ TFMエンコーディングはfdファイルの作成に必要です。
 様々なエンコーディングが混じっていても、問題なくコンパイルできます。
 しかし、編集の手間を考えると、複数のエンコーディングを用いて
 原稿を用意する時は別ファイルにしておいて、\inputするのが良いでしょう。
-特に、Big5とShift JISは２バイト目に'\\', '{', '}'と言ったLaTeXにとって
+特に、Big5とShift_JISは２バイト目に'\\', '{', '}'と言ったLaTeXにとって
 特別な意味を持つ文字が使われることがあるので、プリプロセッサーを
 かける必要があるため、別ファイルにするメリットが大きいです。
 
@@ -81,14 +81,14 @@ TFMエンコーディングはfdファイルの作成に必要です。
 実際にTeXがアクセスするフォントは
 NFSSに従い "(TFMエンコーディング)(ファミリー名).fd" で
 指定します。つまり、様々なエンコーディングに対して、ファミリーは共通に
-songであっても、UTF8の文書はc70song.fdで指定されたcyberbXX.tfmが、
+songであっても、UTF-8の文書はc70song.fdで指定されたcyberbXX.tfmが、
 EUC-JPの文書はc40song.fdで指定されたjsso12XX.tfmが、等々のフォントが使われます。
 
 ### 拡張パッケージ {#xec38b47}
 
 CJKパッケージの配布には、様々な拡張とそのサンプルが同梱されています。
 そのうち、最も重要と思われる、CJKutf8について、説明します。
-中国語と、日本語(そして、いくらかは朝鮮語も)は禁則対象の文字の前後を除き、
+中国語と、日本語(そして、いくらかは韓國語［朝鮮語］も)は禁則対象の文字の前後を除き、
 どこでも改行できると言う、他の言語にはなかなか見出しがたい、
 特徴的な組版規則を持っています。CJKパッケージでは TeX上にそのような
 規則を実現するための実装がなされているため、CJK環境内で、それ以外の言語を
@@ -138,11 +138,11 @@ LaTeX2eとLaTeX2.09の大きな違いは、NFSS2の採用です。
 
 > \usepackage\[UTF8\]{inputenc}
 
-しかし、このように、プリアンブルに書いたからと言って、すべてのUTF8で
+しかし、このように、プリアンブルに書いたからと言って、すべてのUTF-8で
 エンコードされた文字がソースコード中で使える訳ではありません。
 実はinputencパッケージのUTF8オプションは、本文が始まるまでにプリアンブルで
 ロードされたすべてのフォントエンコーディングを走査し、各エンコーディングXXX
-に対し、xxxenc.dfuを読み込み、そこで定義された、UTF8文字の再定義のみを
+に対し、xxxenc.dfuを読み込み、そこで定義された、UTF-8文字の再定義のみを
 有効にするだけです。それ以外の文字を使用しようとすると、処理不可能のエラーがでます。
 
 現在、標準的に配布されているdfuファイルは、
@@ -161,23 +161,23 @@ LaTeX2eとLaTeX2.09の大きな違いは、NFSS2の採用です。
 
 です。utf8enc.dfuはこれらの内容を一覧にしたファイルです。
 これらに対応するフォントエンコーディングで記述できる言語に関しては、
-ソースファイルにUTF8を使っても、それ以外のエンコーディングを使った時と
+ソースファイルにUTF-8を使っても、それ以外のエンコーディングを使った時と
 全く同じに、ハイフネーション、カーニング、リガチャーは処理され、
 同じ仕上りにタイプセットされます。
 
 何もパッケージを追加しない、LaTeX標準での、ユニコードサポートに関する、
 現在の状況をまとめると、
 
-- LaTeXはUTF8エンコーディングによる、ソースコードの表記を
+- LaTeXはUTF-8エンコーディングによる、ソースコードの表記を
     (BMPに限らず)完全にサポートしている。
 
 - 次の条件を満たす言語のタイプセットに関しては、ソースコードに
-    UTF8エンコーディングを使う限り、当該言語を記述するのに適切な
+    UTF-8エンコーディングを使う限り、当該言語を記述するのに適切な
     フォントエンコーディングとdfuファイルを
     用意すれば、原則的に可能である。
     - 行は一定の水平方向に並べられる文字(glyphaeme)で構成され、
         行は、上から下に向かい、垂直に並べられる。
-    - 各行には十分なだけな数の、可変な幅を持つ空白(またはそれに類する文字)
+    - 各行には充分なだけな数の、可変な幅を持つ空白(またはそれに類する文字)
         が含まれ、それらの空白(またはそれに類する文字)の箇所で、
         改行が可能である。
 
@@ -195,7 +195,7 @@ LaTeX2eとLaTeX2.09の大きな違いは、NFSS2の採用です。
 >
 > \begin{document}<br>
 > \begin{CJK}{UTF8}{}<br>
-> UTF8で何か文章を書く。babel等でハイフネーションの言語を指定すれば、正しく組版される。<br>
+> UTF-8で何か文章を書く。babel等でハイフネーションの言語を指定すれば、正しく組版される。<br>
 > \end{CJK}<br>
 > \end{document}
 
@@ -230,7 +230,7 @@ TeXのソースコードのエンコーディングで決まりますが、
 (以下のサンプルに同梱のTFMファイルは事実そのようにして作ったもので、
 これを使って、アルファベットの類をタイプセットすると悲惨な結果を招きます。)
 自分で作ったTFMファイルを使うにはfdファイルを書く必要もあります。
-例えば、EUC-JP/Shift-JISで書かれた原稿を処理するためにfooをステムに持つ
+例えば、EUC-JP/Shift_JIS で書かれた原稿を処理するためにfooをステムに持つ
 TFMファイルを作って、TeXファイルではbarと言うファミリー名で
 ユニコードのcmapを持ったbaz.ttfフォントのデザインを使いたいならば、
 
@@ -252,17 +252,17 @@ LaTeXが見つけられるようにしてやれば、無事にLaTeXのコンパ�
 >
 > \begin{document}<br>
 > \begin{CJK}{JIS}{bar}<br>
-> ここに EUC で日本語の文章を書きます。<br>
+> ここに EUC-JP で日本語の文章を書きます。<br>
 > \end{CJK}<br>
 > \begin{CJK}{SJIS}{bar}<br>
-> ここに Shift JIS で日本語の文章を書きます。%<br>
+> ここに Shift_JIS で日本語の文章を書きます。%<br>
 > しかし、もしかすると、このブロックだけ%<br>
 > プリプロセッサーを通さないと \LaTeX{} のコンパイルが通らないかも%<br>
 > 知れません。<br>
 > \end{CJK}<br>
 > \end{document}
 
-Shift JISとBig5の原稿を処理するにはプリプロセッサーsjisconv, bg5convも
+Shift_JISとBig5の原稿を処理するにはプリプロセッサーsjisconv, bg5convも
 インストールしなければなりません。
 
 ### DVIドライバー {#u7a0009a}
@@ -303,22 +303,31 @@ cid-x.mapに書きます。(Details will be added later.)
 dvipdfmxは以下のフォントを「知って」います。
 
 <table>
+<thead>
+<tr><th style="text-align:center">言語</th><th>文字集合</th><th>フォント名</th></tr>
+</thead>
 <tbody>
-<tr><td>言語</td><td>文字集合</td><td>フォント名</td></tr>
-<tr><td rowspan="3">繁体中文</td><td rowspan="3">Adobe-CNS1</td><td>MHei-Medium-Acro</td></tr>
-<tr><td>MSung-Light-Acro</td></tr>
-<tr><td>AdobeMingStd-Light-Acro</td></tr>
-<tr><td rowspan="2">簡化字中文</td><td rowspan="2">Adobe-GB1</td><td>STSong-Light-Acro</td></tr>
-<tr><td>AdobeSongStd-Light-Acro</td></tr>
-<tr><td rowspan="6">日本語</td><td rowspan="6">Adobe-Japan1</td><td>HeiseiMin-W3-Acro</td></tr>
-<tr><td>HeiseiKakuGo-W5-Acro</td></tr>
-<tr><td>Ryumin-Light</td></tr>
+<tr><td rowspan="8" style="text-align:center">日本語</td><td rowspan="4">Adobe-Japan1</td><td>Ryumin-Light</td></tr>
 <tr><td>GothicBBB-Medium</td></tr>
-<tr><td>KozMinPro-Regular-Acro</td></tr>
+<tr><td>HeiseiMin-W3</td></tr>
+<tr><td>HeiseiKakuGo-W5</td></tr>
+<tr><td rowspan="2">Adobe-Japan1-2</td><td>HeiseiMin-W3-Acro</td></tr>
+<tr><td>HeiseiKakuGo-W5-Acro</td></tr>
+<tr><td rowspan="2">Adobe-Japan1-4</td><td>KozMinPro-Regular-Acro</td></tr>
 <tr><td>KozGoPro-Medium-Acro</td></tr>
-<tr><td rowspan="3">朝鮮語</td><td rowspan="3">Adobe-Korea1</td><td>HYGoThic-Medium-Acro</td></tr>
-<tr><td>HYSMyeongJo-Medium-Acro</td></tr>
-<tr><td>AdobeMyungjoStd-Medium-Acro</td></tr>
+<tr><td rowspan="3" style="text-align:center">簡体中文<br>（簡化字中文）</td><td>Adobe-GB1</td><td>STSong-Light</td></tr>
+<tr><td>Adobe-GB1-2</td><td>STSong-Light-Acro</td></tr>
+<tr><td>Adobe-GB1-4</td><td>AdobeSongStd-Light-Acro</td></tr>
+<tr><td rowspan="5" style="text-align:center">繁體中文<br>（正體中文）</td><td rowspan="2">Adobe-CNS1</td><td>MSung-Light</td></tr>
+<tr><td>MHei-Medium</td></tr>
+<tr><td rowspan="2">Adobe-CNS1-0</td><td>MSung-Light-Acro</td></tr>
+<tr><td>MHei-Medium-Acro</td></tr>
+<tr><td>Adobe-CNS1-4</td><td>AdobeMingStd-Light-Acro</td></tr>
+<tr><td rowspan="5" style="text-align:center">韓國語<br>（朝鮮語）</td><td rowspan="2">Adobe-Korea1</td><td>HYSMyeongJo-Medium</td></tr>
+<tr><td>HYGoThic-Medium</td></tr>
+<tr><td rowspan="2">Adobe-Korea1-0</td><td>HYSMyeongJo-Medium-Acro</td></tr>
+<tr><td>HYGoThic-Medium-Acro</td></tr>
+<tr><td>Adobe-Korea1-2</td><td>AdobeMyungjoStd-Medium-Acro</td></tr>
 </tbody>
 </table>
 
@@ -344,12 +353,12 @@ Adobe-Japan1のグリフに標準的に対応させます。
 
 > jsso12@SJIS@ RKSJ-H HeiseiMin-W3-Acro
 
-これも単純ですが、jsso12XX.tfmのエンコーディングを集めてShift-JISに復元し、
+これも単純ですが、jsso12XX.tfmのエンコーディングを集めてShift_JISに復元し、
 Adobe-Japan1のグリフに標準的に対応させます。
 
 > jsso12@SJIS@ 90ms-RKSJ-H HeiseiMin-W3-Acro
 
-これもShift-JISを経由しますが、 MS Windows標準文字セットの対応を使用します。
+これもShift_JISを経由しますが、 MS Windows標準文字セットの対応を使用します。
 一部、上とは微妙に違う字形が使われます。
 
 > jsso12@SJIS@ 78-RKSJ-H HeiseiMin-W3-Acro
@@ -450,17 +459,17 @@ cmapテーブルを使用して、TTFフォントにアクセスするには、c
 
 ## サンプル {#f920d8cd}
 
-以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
+以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_7.0/texinput/](https://mirror.ctan.org/languages/japanese/CJK/4_7.0/texinput/)
 配下のファイルが必要です。サンプルはインストールして使用することも可能なように
 アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
 (フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
 dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
 改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
 
-1. [UTF8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
+1. [UTF-8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
     - これまでに判明している問題点:
         - 各ページ、最下段を除いて、意味不明な箇所がある。視点を変えて、少し距離をおいて眺める必要があるかも知れない。
-1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)JISX0213をShift JISで使うために必要な設定も一式入っています。
+1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)JISX0213をShift_JISで使うために必要な設定も一式入っています。
     - これまでに判明している問題点:
         - 同梱されたtfmファイルは全角文字以外に使えない。
         - 横書きフォントを縦書きに使う場合のfdxファイルが無いため、CJKvert.styを使った縦書きでは、句読点の位置がおかしい。(縦書きフォントを使う場合は問題ないと思います。)
