@@ -31,7 +31,7 @@ pukiwiki: "Ghostscript 8.54"
 
 ```
 $ cd /usr/local/src
-$ sudo tar -xvjf .../ghostscript-8.54-gpl.tar.bz2
+$ sudo tar xvjf .../ghostscript-8.54-gpl.tar.bz2
 $ cd ghostscript-8.54-gpl
 $ sudo ./configure --prefix=/usr/local/teTeX
 ```
@@ -57,7 +57,7 @@ $ sudo make install
 
 ```
 $ cd /usr/local/teTeX/share/ghostscript
-$ sudo tar -xvzf .../ghostscript-fonts-std-8.11.tar.gz 
+$ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz 
 ```
 
 和文については，[Ghostscript 7.07](</Ghostscript 7.07/>) では CIDFnmap で設定しましたが，
@@ -241,8 +241,9 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 %%% IPA Fonts
 %%% See http://www.ipa.go.jp/about/press/20071001-2.html
-/IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/opt/share/fonts/truetype/ipafont/ipam.ttf) >> ;
-/IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/opt/share/fonts/truetype/ipafont/ipag.ttf) >> ;
+%%%     http://ossipedia.ipa.go.jp/ipafont/
+/IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipam.ttf) >> ;
+/IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipag.ttf) >> ;
 
 %%% O'Reilly CID-keyed fonts including Wadalab Fonts
 %%% See ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/samples/
@@ -664,7 +665,7 @@ gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみま�
 - Identity-H
 - Identity-V
 
-上記の CMap は $TEXMFLOCAL/fonts/cmap// にもコピーしておくと良いでしょう。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
+上記の CMap は $TEXMFLOCAL/fonts/cmap// 以下にもコピーしておくと良いでしょう。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
 
 ### CID-keyed fonts {#i4c98952}
 
@@ -1029,7 +1030,7 @@ PDF を作成する場合，CJK フォントは全て埋め込まれます。CJK
 ```
 
 ここで “/NeverEmbed” で指定するフォント名は PostScript ファイル内に
-記述されているフォント名ではなく，実際に埋め込むフォント名でなければ
+記述されているフォント名ではなく，<strong>実際に埋め込むフォント名</strong>でなければ
 効果がありません。
 
 また，lib/neverembed.ps に非埋め込み制御を行うフォント名をあらかじめ
