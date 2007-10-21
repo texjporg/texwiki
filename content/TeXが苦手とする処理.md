@@ -237,7 +237,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 
 #### どの環境でも気を付けるべき環境依存文字 {#y42d0186}
 
-- 【注】 Mac OS，Microsoft Windows 以外の環境では，
+- 【注意】 Mac OS，Microsoft Windows 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
@@ -273,7 +273,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 <!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 <!-- x-CP51932 …… Microsoft による EUC-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 
-- 【注】 Microsoft Windows 以外の環境では，
+- 【注意】 Microsoft Windows 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
@@ -301,14 +301,14 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th colspan="5" style="text-align:center">テキスト</th><th style="text-align:center">OTF<br>UTF<br>ums</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</td><td rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x6a6b;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">横</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="14" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
-<tr><td style="text-align:center">&#xfa26;</td><td style="text-align:center">&#xfa22;</td><td style="text-align:center">&#x7dd6;</td><td style="text-align:center">&#xfa16;</td><td style="text-align:center">&#x589e;</td><td style="text-align:center">都</td><td style="text-align:center">諸</td><td style="text-align:center">緒</td><td style="text-align:center">猪</td><td style="text-align:center">増</td></tr>
-<tr><td style="text-align:center">&#x5fb7;</td><td style="text-align:center">&#xf929;</td><td style="text-align:center">&#x90de;</td><td style="text-align:center">&#x5bec;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">徳</td><td style="text-align:center">朗</td><td style="text-align:center">郎</td><td style="text-align:center">寛</td><td style="text-align:center">薫</td></tr>
-<tr><td style="text-align:center">&#x8cf4;</td><td style="text-align:center">&#x7028;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">頼</td><td style="text-align:center">瀬</td><td colspan="3" style="text-align:center"></td></tr>
+<tr><td rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</td><td rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">薫</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="14" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><td style="text-align:center">&#xfa26;</td><td style="text-align:center">&#xfa22;</td><td style="text-align:center">&#x7dd6;</td><td style="text-align:center">&#xfa16;</td><td style="text-align:center">&#x6a6b;</td><td style="text-align:center">都</td><td style="text-align:center">諸</td><td style="text-align:center">緒</td><td style="text-align:center">猪</td><td style="text-align:center">横</td></tr>
+<tr><td style="text-align:center">&#x7da0;</td><td style="text-align:center">&#x589e;</td><td style="text-align:center">&#x5fb7;</td><td style="text-align:center">&#xf929;</td><td style="text-align:center">&#x90de;</td><td style="text-align:center">緑</td><td style="text-align:center">増</td><td style="text-align:center">徳</td><td style="text-align:center">朗</td><td style="text-align:center">郎</td></tr>
+<tr><td style="text-align:center">&#x8cf4;</td><td style="text-align:center">&#x7028;</td><td style="text-align:center">&#x5bec;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center">頼</td><td style="text-align:center">瀬</td><td style="text-align:center">寛</td><td colspan="2" style="text-align:center"></td></tr>
 <tr><td colspan="2" rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9751;</td><td style="text-align:center">&#xfa12;</td><td style="text-align:center">&#x6df8;</td><td style="text-align:center">&#xfa1d;</td><td style="text-align:center">&#xfa1c;</td><td style="text-align:center">青</td><td style="text-align:center">晴</td><td style="text-align:center">清</td><td style="text-align:center">精</td><td style="text-align:center">靖</td></tr>
 <tr><td style="text-align:center">&#x654e;</td><td style="text-align:center">&#xfa1e;</td><td style="text-align:center">&#x9592;</td><td style="text-align:center">&#xfa17;</td><td style="text-align:center">&#x9115;</td><td style="text-align:center">教</td><td style="text-align:center">羽</td><td style="text-align:center">間</td><td style="text-align:center">益</td><td style="text-align:center">郷</td></tr>
 <tr><td style="text-align:center">&#xfa2c;</td><td style="text-align:center">&#xfa2a;</td><td style="text-align:center">&#xfa2b;</td><td style="text-align:center">&#xfa10;</td><td style="text-align:center">&#x6085;</td><td style="text-align:center">館</td><td style="text-align:center">飯</td><td style="text-align:center">飼</td><td style="text-align:center">塚</td><td style="text-align:center">悦</td></tr>
-<tr><td style="text-align:center">&#xf9dc;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">隆</td><td colspan="4" style="text-align:center"></td></tr>
+<tr><td style="text-align:center">&#x7501;</td><td style="text-align:center">&#xf9dc;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">瓶</td><td style="text-align:center">隆</td><td colspan="3" style="text-align:center"></td></tr>
 <tr><td rowspan="5" style="text-align:center">異<br>体<br>字</td><td rowspan="2" style="text-align:center">古<br>字</td><td rowspan="2" style="text-align:center">&#x51ec;</td><td rowspan="2" style="text-align:center">&#xfa18;</td><td colspan="3" rowspan="2" style="text-align:center"></td><td rowspan="2" style="text-align:center">風</td><td style="text-align:center">禮</td><td colspan="3" rowspan="2" style="text-align:center"></td></tr>
 <tr><td style="text-align:center">礼</td></tr>
 <tr><td rowspan="3" style="text-align:center">俗<br>字</td><td rowspan="2" style="text-align:center">&#x9ad9;</td><td rowspan="2" style="text-align:center">&#xfa11;</td><td rowspan="2" style="text-align:center">&#x6ff5;</td><td rowspan="2" style="text-align:center">&#x663b;</td><td rowspan="2" style="text-align:center">&#xfa2d;</td><td rowspan="2" style="text-align:center">高</td><td rowspan="2" style="text-align:center">崎</td><td style="text-align:center">濱</td><td rowspan="2" style="text-align:center">&#x6602;</td><td rowspan="2" style="text-align:center">鶴</td></tr>
@@ -327,15 +327,15 @@ framed パッケージが提供する framed 環境，shaded 環境
 </tbody>
 </table>
 
-- 【注】異体字の（本字，古字，同字［別体字，或体］，俗字［略字や誤字を含む］と
-    いう）種類分けについては文献によって解釈が異なるので，
+- 【注意】異体字の（本字，古字，同字［別体字，或体］，俗字［略字や誤字を含む］
+    という）種類分けについては文献によって解釈が異なるので，
     ある文献による種類分けと上の表の種類分けとが一致しないことがあります。
 
 #### Mac OS 環境で特に気を付けるべき環境依存文字 {#w0cac168}
 
 <!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 
-- 【注】 Mac OS 以外の環境では，
+- 【注意】 Mac OS 以外の環境では，
     次の表内の環境依存文字を正しく表示できない可能性があります。
 
 <table>
