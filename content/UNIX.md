@@ -11,7 +11,7 @@ pukiwiki: "UNIX"
 
 Solaris は NSUG CD-ROM にバイナリが含まれています。
 
-UNIX 上で dviout に相当するソフトは xdvi です。（Red Hat Linux、Fedora Core では pxdvi です。）
+UNIX 上で dviout に相当するソフトは xdvi です（Red Hat Enterprise Linux、Fedora では pxdvi です。）。
 日本語版についての詳細は [山賀さん](http://www.yama-ga.com/) の
 [xdvi 日本語化・機能拡張パッチのページ](http://www.yama-ga.com/xdvi-j/)
 および土村さんの
