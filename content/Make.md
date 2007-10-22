@@ -898,9 +898,3 @@ cd /usr/local/teTeX/share/texmf/ptex/platex/base/
 iniptex platex.ltx
 mv platex.fmt /usr/local/teTeX/share/texmf/web2c/
 ```
-
-### これから {#k5e73b7d}
-
-teTeX 3 がリリースされています。このページも更新する予定ですが、しばらくお待ちください。
-メーリングリストのアーカイブ:
-[tetex-pretest](http://www.mail-archive.com/tetex-pretest%40dbs.uni-hannover.de/)
