@@ -13,10 +13,14 @@ pukiwiki: "dvips"
 
 ### dvips の用紙サイズ指定 {#b1d8723b}
 
-標準では A4 サイズになり，<del>BoundingBox や </del>PaperSize
+標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize
 には正しい用紙サイズが出力されますが，PostScript の用紙設定コマンド a4 は出力されません。
 a4 コマンドを含む PostScript ファイルはプリンタ依存になってしまうからです。
-しかし，これを無設定の Acrobat Distiller で処理すると，用紙がレターサイズになってしまいます。
+しかし，これを無設定の Acrobat Distiller で処理すると，用紙がレターサイズになってしまいます。(注意: 最も新しい config.ps では、デフォルトの用紙設定コマンド
+a4 が出力されます。a4 が解釈できないプリンタの場合は無視され、解釈される
+場合だけ使用されるように書かれています。 最新の W32TeX における dvips ではこの
+config.ps が採用されています。したがって、デフォルト用紙サイズを使って
+ps を作成する場合、以下に書かれているようにする必要はありません。)
 レターサイズになっても Acrobat や Acrobat Reader
 での印刷に支障はありませんが，気になるなら Distiller
 のジョブオプションの設定で A4 をデフォルトにするか，あるいは dvips
@@ -73,13 +77,13 @@ papersize=用紙の幅,用紙の高さ
 ここで dvi ファイル内で papersize
 を与えた場合，それが210mm×297mmに±1/4インチ(dvips 5.96 以降では 5bp. なお、
 ptetex3 の dvips は 実質的に 5.96 になっており、5bp になっているはず.)の誤差で一致するなら a4size が選ばれます。
-これは <del>BoundingBox を210mm×297mmにし，</del>PaperSize: a4
+これは &#x25;&#x25;BoundingBox を210mm×297mmにし，&#x25;&#x25;PaperSize: a4
 というコメントを出力しますが，Distiller で PDF
 に変換する際にはジョブオプションのデフォルトページサイズになります。
 
 また，257mm×364mmに±1/4インチ(dvips 5.96 以降では 5bp. なお、
 ptetex3 の dvips は 実質的に 5.96 になっており、5bp になっているはず.)の誤差で一致するなら b4
-が選ばれますが，これは %%BoundingBox を257mm×364mmにし，頭の部分で
+が選ばれますが，これは &#x25;&#x25;BoundingBox を257mm×364mmにし，頭の部分で
 
 ```
 %%DocumentPaperSizes: B4
