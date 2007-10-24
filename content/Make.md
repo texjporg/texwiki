@@ -13,20 +13,15 @@ pukiwiki: "Make"
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
-teTeX はUNIX類似OS用の TeX ディストリビューションです。
+teTeX は UNIX類似OS用の TeX ディストリビューションです。
 [ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
 は teTeX と pTeX 一式を簡単にインストールするための土村さん作のツールです。
-[ptetex Wikiの全動作報告](http://tutimura.ath.cx/ptetex/?%C1%B4%C6%B0%BA%EE%CA%F3%B9%F0) に多数の例が挙がっているので参考になさるとよいでしょう。
+[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) の [全動作報告](http://tutimura.ath.cx/ptetex/?%C1%B4%C6%B0%BA%EE%CA%F3%B9%F0) に多数の例が挙がっているので参考になさるとよいでしょう。
 ここでは2005年2月に出た新しい teTeX-3.0 とそれをベースにした pTeX
 を，ptetex3 を使ってインストールしてみます。
 
-<!-- 2005年10月以降、md5, gmd5sum 等は自動判定で使い分けるようになりました。GNU sed ももう不要です。 -->
-<!-- //Mac OS Xの場合は，あらかじめ -->
-<!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] -->
-<!-- //に含まれるmd5sumコマンドをインストールしておくか、my_option というファイルを作って -->
-<!-- // MD5CHECK=md5check -->
-<!-- //と書いておきます。 -->
-<!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は 2005/ 6/27 以降は不要になりました。 -->
+まず、あらかじめ C 言語のコンパイラや X Window 用ソフトの開発環境等をインストールしておきます。
+また、(必須ではありませんが) ghostscript の日本語対応がなされているものをインストールしておくとよいでしょう。海外の Linux ディストリビューションでは、標準の ghostscript では日本語対応が乏しいケースもあるようです。 <!-- 2005年10月以降、md5, gmd5sum 等は自動判定で使い分けるようになりました。GNU sed ももう不要です。 --> <!-- //Mac OS Xの場合は，あらかじめ --> <!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] --> <!-- //に含まれるmd5sumコマンドをインストールしておくか、my_option というファイルを作って --> <!-- // MD5CHECK=md5check --> <!-- //と書いておきます。 --> <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は 2005/ 6/27 以降は不要になりました。 -->
 
 /var/tmp/ptetex3/tetex-src-3.0 と /usr/local/teTeX と ~/.texmf-var と ~/.texmf-conf と ~/texmf
 がすでにある場合は消すか名前を変えておきます。
@@ -35,8 +30,7 @@ teTeX はUNIX類似OS用の TeX ディストリビューションです。
 [tetex-src-3.0.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
 [tetex-texmf-3.0po.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
 [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz (最新の日付のもの), <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% (←もう不要) -->
-をダウンロードし，その中で次のようにします（ターミナルでコマンドを打ち込みます）。
-（ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。）
+をダウンロードし，その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
 ```
 tar xzvf ptetex3-20YYMMDD.tar.gz
@@ -45,22 +39,38 @@ cp my_option.sample ../my_option (オプションを変更したいなら)
 ```
 
 オプションを変更したいならこのmy_optionというファイルを適宜編集します。
-
-<!-- あらかじめ~/.texmf-varや~/.texmf-configは消すかリネームし，~/texmfはリネームしておきます。 -->
+そして、以下を実行します。
 
 ```
 make
+```
+
+あるいは、otf, bable 対応を含めるなら、
+
+```
+make all3
+```
+
+あるいは、個別に実行するなら、
+
+```
+make all0
 make otf (オプション)
 make babel (オプション)
 make font
 make test
 ```
 
-Macではmake fontで（ターミナルをUTF-8にしておくと）何回かヒラギノ何とかと聞いてきますので，それについてはyと答えます。
-面倒なら、make fontyとすると、すべての質問にyesと答えたことになります。
+Macでは "make font" で <!-- （ターミナルをUTF-8にしておくと） // たぶんしておかなくても -->
+何回かヒラギノ何とかと聞いてきますので，それについてはyと答えます。
+面倒なら、"make fonty" とすると、すべての質問に yes と答えたことになります。
+"make (all3)" では "make fonty" も含めて実行しますので、気にしなくて大丈夫です。
+（make の引数については、
+[ptetex make のターゲット](http://tutimura.ath.cx/ptetex/?make%A4%CE%A5%BF%A1%BC%A5%B2%A5%C3%A5%C8)
+が参考になります。）
 
-make testで簡単な動作テストをします。ここまで root 権限は必要ありません。
-Macではmake testの前にX11を立ち上げておきます
+"make (all3)" あるいは "make test" で簡単な動作テストをします。ここまで root 権限は必要ありません。
+Macでは "make test" の前にX11を立ち上げておきます
 （あるいはmy_optionでxdviを使わない設定にします）。
 UTF + ps2pdfでエラーが出ても、大きな問題はないので、気にしないでおきます。
 （my_optionでps2pdfをテストしないようにもできます。）
