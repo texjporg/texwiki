@@ -13,7 +13,7 @@ pukiwiki: "Make"
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
-teTeX は UNIX類似OS用の TeX ディストリビューションです。
+teTeX は UNIX もしくは UNIX 互換 OS 用の TeX ディストリビューションです。
 [ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
 は teTeX と pTeX 一式を簡単にインストールするための土村さん作のツールです。
 [ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) の [全動作報告](http://tutimura.ath.cx/ptetex/?%C1%B4%C6%B0%BA%EE%CA%F3%B9%F0) に多数の例が挙がっているので参考になさるとよいでしょう。
