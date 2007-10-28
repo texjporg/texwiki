@@ -50,8 +50,9 @@ $ sudo make install
 > pfbtopfa printafm ps2ascii ps2epsi ps2pdf ps2pdf12 ps2pdf13
 > ps2pdf14 ps2pdfwr ps2ps pv.sh unix-lpr.sh wftopfa
 
-また，/usr/local/teTeX/share/ghostscript/8.54/ の下にたくさんのものが入ります。
-/usr/local/teTeX/man/man1/ と /usr/local/teTeX/man/de/man1/ の中にもマニュアル類が入ります。
+また，/usr/local/teTeX/share/ghostscript/8.54/ の下に
+たくさんのものが入ります。/usr/local/teTeX/man/man1/ と
+/usr/local/teTeX/man/de/man1/ の中にもマニュアル類が入ります。
 
 欧文フォントをインストールします：
 
@@ -71,7 +72,7 @@ $ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz
 ```
 
 あとは /usr/local/teTeX/share/ghostscript/8.54/Resource/CIDFont/ の
-中から /System/Library/Font/ の中のヒラギノに “HiraMinPro-W3” のような名前で
+中から /Library/Fonts/ の中のヒラギノに “HiraMinPro-W3” のような名前で
 シンボリックリンクを作っておきます。
 さらに，/usr/local/teTeX/share/ghostscript/8.54/Resource/Font/ の中に
 例えば “HiraMinPro-W3-H” という名前で次のようなファイルを作っておきます：
@@ -97,15 +98,21 @@ ps2pdf もうまく行えます。
 ### フォントのシンボリックリンク {#j6c4153b}
 
 ```
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 Pro W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Pro W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ Std W8.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
-$ sudo ln -s "/System/Library/Fonts/ヒラギノ丸ゴ Pro W4.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 ProN W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 ProN W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ ProN W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+$ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ ProN W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s "/System/Library/Fonts/华文黑体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
 $ sudo ln -s "/System/Library/Fonts/华文细黑.ttf" /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
 $ sudo ln -s "/System/Library/Fonts/儷黑 Pro.ttf" /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
+$ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ StdN W8.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+$ sudo ln -s "/Library/Fonts/ヒラギノ丸ゴ ProN W4.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+$ sudo ln -s "/Library/Fonts/ヒラギノ明朝 Pro W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+$ sudo ln -s "/Library/Fonts/ヒラギノ明朝 Pro W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+$ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Pro W3.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+$ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Pro W6.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+$ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Std W8.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+$ sudo ln -s "/Library/Fonts/ヒラギノ丸ゴ Pro W4.otf" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s "/Library/Fonts/华文宋体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
 $ sudo ln -s "/Library/Fonts/华文楷体.ttf" /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
 $ sudo ln -s "/Library/Fonts/华文仿宋.ttf" /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
@@ -115,9 +122,11 @@ $ sudo ln -s "/Library/Fonts/儷宋 Pro.ttf" /usr/local/share/ghostscript/fonts/
 ただし，ターミナルでは日本語文字や中国語文字を直接扱えないようなので，
 以下の 1.&ndash;4. のいずれかの方法を使います。
 
-1. アプリケーションのユーティリティに含まれているターミナルを起動し，ターミナル → ウィンドウ設定で，
-    「非ASCII文字をエスケープする」にチェックを入れておきます。これにより，ファイルをターミナルに
-    ドラッグアンドドロップすると，そのファイルのフルパスがターミナルに入力されます。
+1. アプリケーションのユーティリティに含まれているターミナルを起動し，
+    ［ターミナル］ → ［ウインドウ設定］ → 「エミュレーション」 の
+    「非 ASCII 文字をエスケープする」にチェックを入れておきます。
+    これにより，ファイルをターミナルにドラッグアンドドロップすると，
+    そのファイルのフルパスがターミナルに入力されます。
 
     ```
     $ sudo ln -s 【ここで "ヒラギノ明朝 Pro W3.otf" をドラッグアンドドロップ】 /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
@@ -129,15 +138,21 @@ $ sudo ln -s "/Library/Fonts/儷宋 Pro.ttf" /usr/local/share/ghostscript/fonts/
 1. &nbsp;
 
     ```
-    $ sudo ln -s "$(grep -l HiraMinPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
-    $ sudo ln -s "$(grep -l HiraMinPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
-    $ sudo ln -s "$(grep -l HiraKakuPro-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
-    $ sudo ln -s "$(grep -l HiraKakuPro-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
-    $ sudo ln -s "$(grep -l HiraKakuStd-W8 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
-    $ sudo ln -s "$(grep -l HiraMaruPro-W4 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+    $ sudo ln -s "$(grep -l HiraMinProN-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+    $ sudo ln -s "$(grep -l HiraMinProN-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+    $ sudo ln -s "$(grep -l HiraKakuProN-W3 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+    $ sudo ln -s "$(grep -l HiraKakuProN-W6 /System/Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
     $ sudo ln -s "$(grep -l 'STHeiti.*Regular' /System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
     $ sudo ln -s "$(grep -l STXihei /System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
     $ sudo ln -s "$(grep -l LiHeiPro /System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
+    $ sudo ln -s "$(grep -l HiraKakuStdN-W8 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+    $ sudo ln -s "$(grep -l HiraMaruProN-W4 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+    $ sudo ln -s "$(grep -l HiraMinPro-W3 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+    $ sudo ln -s "$(grep -l HiraMinPro-W6 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+    $ sudo ln -s "$(grep -l HiraKakuPro-W3 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+    $ sudo ln -s "$(grep -l HiraKakuPro-W6 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+    $ sudo ln -s "$(grep -l HiraKakuStd-W8 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+    $ sudo ln -s "$(grep -l HiraMaruPro-W4 /Library/Fonts/*.otf)" /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
     $ sudo ln -s "$(grep -l STSong /Library/System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
     $ sudo ln -s "$(grep -l STKaiti /Library/System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
     $ sudo ln -s "$(grep -l STFangsong /Library/System/Library/Fonts/*.ttf)" /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
@@ -149,12 +164,18 @@ $ sudo ln -s "/Library/Fonts/儷宋 Pro.ttf" /usr/local/share/ghostscript/fonts/
 1. &nbsp;
 
     ```
-    $ sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
-    $ sudo ln -s /System/Library/Fonts/?????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
-    $ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
-    $ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
-    $ sudo ln -s /System/Library/Fonts/????????????????????????\ Std\ W8.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
-    $ sudo ln -s /System/Library/Fonts/????????????????????????\ Pro\ W4.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+    $ sudo ln -s /System/Library/Fonts/?????????????????????\ ProN\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+    $ sudo ln -s /System/Library/Fonts/?????????????????????\ ProN\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+    $ sudo ln -s /System/Library/Fonts/????????????????????????\ ProN\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+    $ sudo ln -s /System/Library/Fonts/????????????????????????\ ProN\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
+    $ sudo ln -s /Library/Fonts/????????????????????????\ StdN\ W8.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+    $ sudo ln -s /Library/Fonts/????????????????????????\ ProN\ W4.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+    $ sudo ln -s /Library/Fonts/?????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+    $ sudo ln -s /Library/Fonts/?????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+    $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W3.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+    $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W6.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+    $ sudo ln -s /Library/Fonts/????????????????????????\ Std\ W8.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+    $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W4.otf /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
     ```
 
     のようにワイルドカード “?” を使います。
