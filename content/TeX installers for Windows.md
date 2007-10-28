@@ -114,6 +114,11 @@ TeX インストーラを色々な視点から比較してみます。
     （好みの問題ですが，）それくらいならば
     texinst の方で初めからインストールした方がよいかもしれません。
 
+<!-- なぜ，いったん削除されたのか不明． -->
+<!-- texinst756.exe が提供されなくなったわけでもなく，また， -->
+<!-- 角藤氏ご自身がもはやここでの掲載をお望みではなくなったというわけでも -->
+<!-- なさそうですが？ -->
+
 ## TeX 環境インストーラ {#k886a93e}
 
 - <strong>URL</strong>: [http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
