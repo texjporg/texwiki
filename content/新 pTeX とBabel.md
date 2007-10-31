@@ -9,6 +9,7 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
+- \[2007/11/1\] [推奨環境](#z22ea698) に [『［改訂第4版］ LaTeX2e 美文書作成入門』付録CD-ROM ](#oe0dfa58)の項を追加しました。--栗山
 - \[2007/7/12\] 最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
 - \[2007/07/06\] 「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
 - \[2007/05/21\]
@@ -69,7 +70,12 @@ pukiwiki: "新 pTeX とBabel"
 [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) では teTeX 3 所収の
 ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。個々のディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
 
-W32TeX，ptetex3 では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけで全ての環境が整います。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
+#### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録CD-ROM {#oe0dfa58}
+
+『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録CD-ROMには上記 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) が収録されています（インストール方法は同書付録G，付録I参照）。
+
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) ，[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) 
+では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけで全ての環境が整います。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
