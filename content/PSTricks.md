@@ -379,6 +379,62 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 \end{document}
 ```
 
+#### 半透明画像 {#bf1b2f64}
+
+PostScript 言語には色の透明度の概念はありませんが、 PDF 1.4 にはあります。そこで、 Ghostscript では PostScript 言語を独自に拡張して、色の透明度を指定できるようになっています。このような、言語拡張を使用している PS/EPS ファイルは、 Ghostscript 以外のソフトでは正しく取り扱えませんが、 Ghostscript で、印刷、表示、更には、 PDF 変換を行うことで、利用できます。
+
+まずは PSTricks とは本質的に無関係なところで、直に透明度を指定してみた例です。
+
+```
+\documentclass{article}
+\usepackage{infix-RPN,pst-IIID}
+\parindent=0pt
+\begin{document}
+\infixtoRPN{3*cos(60*(x^2+y^2))*0.75^(x^2+y^2)}
+\psset{eye=0 0 10 0, rotateAxis={1,0.8,1.2},rotateAngle=-100}
+\psset{unit=0.6,fillcolor=[cmyk]{0.45,1,1,0},plotpoints=200}
+\begin{pspicture*}(-5,-2)(5,3)
+\psPlot[linestyle=none,showLines=false](-4.1,4.1)(-4.1,4.1){\RPN}
+\end{pspicture*}\hfill
+\begin{pspicture*}(-5,-2)(5,3)
+\pscustom{\code{0.3 .setopacityalpha}
+ \psPlot[linestyle=none,showLines=false](-4.1,4.1)(-4.1,4.1){\RPN}}
+\end{pspicture*}
+\end{document}
+```
+
+<img src="http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/73/transparency0.jpg" alt="">
+
+次に、 PSTricks で、半透明画像を生成するには、 fillstyle に solid または shape を指定し、 opacity, shapealpha を設定します。 fillstyle=solid の時は opacity のみが、 fillstyle=shape の時は shapealpha のみが影響します。 fillstyle=shape の時は blendmode を指定することもできます。 blendmode=0 と blendmode=1 の時は、  fillstyle=solid と同じ、色空間での線形補間になります。 blendmode=2 の時は、光の加算、 blendmode=3 の時は、顔料の加算が結果となります。
+
+```
+\documentclass{article}
+\usepackage{multido,pstricks}
+\parindent=0pt
+\begin{document}
+\psset{fillcolor=cyan,fillstyle=shape}
+\begin{pspicture*}(-5,0)(5,9.5)
+\multido{\n=1+1}{9}{\psline[linewidth=5mm,linecolor=magenta!\n0](-5,\n)(5,\n)}
+\psset{linestyle=none,linewidth=0.1pt}
+\rput[b](-3.5,0){\Large Normal\vphantom{y}}
+\psset{blendmode=1}
+\psframe[shapealpha=0.2](-5,0)(-4,9.5)
+\psframe[shapealpha=0.5](-4,0)(-3,9.5)
+\psframe[shapealpha=0.8](-3,0)(-2,9.5)
+\rput[b](0,0){\Large Screen\vphantom{y}}
+\psset{blendmode=2}
+\psframe[shapealpha=0.2](-1.5,0)(-0.5,9.5)
+\psframe[shapealpha=0.5](-0.5,0)(0.5,9.5)
+\psframe[shapealpha=0.8](0.5,0)(1.5,9.5)
+\rput[b](3.5,0){\Large Multiply}
+\psset{blendmode=3}
+\psframe[shapealpha=0.2](2,0)(3,9.5)
+\psframe[shapealpha=0.5](3,0)(4,9.5)
+\psframe[shapealpha=0.8](4,0)(5,9.5)
+\end{pspicture*}
+\end{document}
+```
+
 #### \pscustom {#ld3ac648}
 
 \pscustom を用いて、複数のグラフィック・オブジェクトを一体として扱えます。
@@ -610,7 +666,7 @@ x 座標が B と同じ、 y 座標が O と同じ点として、定義してい
 
 適当な計算式
 #mimetex((x^{2}-x)2^{x(x+1)})
-を例にします。この式は加法、減法、乗法、冪乗と言った、二項演算を
+を例にします。この式は加法、減法、乗法、冪と言った、二項演算を
 繰り返す事で、計算できますが、その手順を樹形図で表す事ができます。
 
 ```
