@@ -157,10 +157,10 @@ SI単位を用いる。これをサポートするスタイルファイルとし
 
 <table>
 <tbody>
-<tr><td> \SI{-1.234e^3}{N.m} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle1.png" alt=""></td></tr>
-<tr><td> \ang{32;46;23.373} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle2.png" alt=""></td></tr>
-<tr><td> \SI{5}{\micro s} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle3.png" alt=""></td></tr>
-<tr><td> \SI{60}{\degC} </td><td><img src="http://shakan2.tm.nagasaki-u.ac.jp/~umusus/texwiki-images/sistyle4.png" alt=""></td></tr>
+<tr><td> \SI{-1.234e^3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
+<tr><td> \ang{32;46;23.373} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle2.png" alt=""></td></tr>
+<tr><td> \SI{5}{\micro s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
+<tr><td> \SI{60}{\degC} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle4.png" alt=""></td></tr>
 </tbody>
 </table>
 
