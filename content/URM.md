@@ -190,9 +190,9 @@ another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where 
 
 ### 文献スタイル {#n0cb9c0e}
 
-URMSBJ の文献スタイルの例は、
+URMの文献スタイルの例は、
 [ここ](http://www.nlm.nih.gov/bsd/uniform_requirements.html)にあります。
-これは、Vancouver スタイルと呼ばれるもので、幸いにも
+これは、[Vancouverスタイル](http://en.wikipedia.org/wiki/Vancouver_system)と呼ばれるもので、幸いにも
 [vancouver.bst](https://mirror.ctan.org/biblio/bibtex/contrib/vancouver/vancouver.bst)
 ［[詳細](http://www.ctan.org/info?id=vancouver)］が CTAN にあります。
 これを使って
