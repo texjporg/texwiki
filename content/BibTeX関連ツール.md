@@ -98,9 +98,10 @@ BibTeX形式の出力があるWebアプリが公開されている
 
 - [BibTeX文献情報のWeb検索](http://keijisaito.info/arc/BibTeX/get_bib.htm#getgoo)
 
-#### [Lead2Amazon](http://keijisaito.info/lead2amazon/j/) {#x7babcbd}
+#### [Lead2Amazon](http://lead.to/amazon/jp/) {#x7babcbd}
 
-- [Lead2Amazonでの世界のAmazon検索：BibTeX](http://keijisaito.info/arc/search/jp_amazon_ecs.htm#bibtex)
+- [Amazonのカスタマイズ検索（Lead2Amazon）](http://lead.to/amazon/jp/search/base.htm)
+- [Lead2Amazonの出力：BibTeX文献情報](http://lead.to/amazon/jp/search/output.htm#bibtex)
 
 #### [PubMed](http://pubmed.gov) {#h4890ebf}
 
