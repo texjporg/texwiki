@@ -96,11 +96,11 @@ BibTeX形式の出力があるWebアプリが公開されている
 
 #### [Google Scholar](http://scholar.google.com/) {#ydd7d667}
 
-- [BibTeX文献情報のWeb検索](http://keijisaito.info/arc/BibTeX/get_bib.htm#getgoo)
+- [BibTeX文献情報のWeb検索](http://keijisaito.info/arc/bibtex/get_bib.htm#getgoo)
 
 #### [Lead2Amazon](http://lead.to/amazon/jp/) {#x7babcbd}
 
-- [Amazonのカスタマイズ検索（Lead2Amazon）](http://lead.to/amazon/jp/search/base.htm)
+- [Amazonのカスタマイズ検索（Lead2Amazon）](http://lead.to/amazon/jp/search/use.htm)
 - [Lead2Amazonの出力：BibTeX文献情報](http://lead.to/amazon/jp/search/output.htm#bibtex)
 
 #### [PubMed](http://pubmed.gov) {#h4890ebf}
