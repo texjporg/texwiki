@@ -13,6 +13,7 @@ pukiwiki: "新 pTeX とBabel"
 
 ### 更新履歴 {#sa5b8545}
 
+- \[2007/11/15\] [推奨環境](#z22ea698)にVine版，Mac OS X版の記述を追加しました。--栗山
 - \[2007/11/1\] [推奨環境](#z22ea698) に [『［改訂第4版］ LaTeX2e 美文書作成入門』付録CD-ROM ](#oe0dfa58)の項を追加しました。--栗山
 - \[2007/7/12\] 最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
 - \[2007/07/06\] 「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
@@ -69,14 +70,16 @@ pukiwiki: "新 pTeX とBabel"
 
 #### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
 
-[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) では teTeX 3 所収の
-ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。個々のディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
+[ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) では teTeX-3.0 所収の
+ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。
+[Vine Linux 4.1](http://vinelinux.org/whatsnew.html#news/20070222) では ptetex3 の Babel 対応版がデフォルトでインストールされます。
+他の UNIX(-like OS) ディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
 
-#### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録CD-ROM {#oe0dfa58}
+#### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM {#oe0dfa58}
 
-『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録CD-ROMには上記 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) が収録されています（インストール方法は同書付録G，付録I参照）。
+『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録 CD-ROM には上記 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と [ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) が収録されています（インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも Babel 対応版です（同書付録H参照）。
 
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) ，[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/) 
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) ，[ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) 
 では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけで全ての環境が整います。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
@@ -111,12 +114,14 @@ pukiwiki: "新 pTeX とBabel"
 
 - 
     展開してできた cbfonts/ ディレクトリを開き，その中にある dvips/, encodings/, mf/, tfm/, type1/ の各ディレクトリを，それぞれ cbfonts/ とリネームしてから，<br>
-    $TEXMFLOCAL/fonts/map/dvips/<br>
-    $TEXMFLOCAL/fonts/enc/<br>
-    $TEXMFLOCAL/fonts/source/<br>
-    $TEXMFLOCAL/fonts/tfm/<br>
-    $TEXMFLOCAL/fonts/type1/<br>
-    内に移動する（存在しないディレクトリは予め作っておく）。
+
+> $TEXMFLOCAL/fonts/map/dvips/<br>
+> $TEXMFLOCAL/fonts/enc/<br>
+> $TEXMFLOCAL/fonts/source/<br>
+> $TEXMFLOCAL/fonts/tfm/<br>
+> $TEXMFLOCAL/fonts/type1/<br>
+
+内に移動する（存在しないディレクトリは予め作っておく）。
 
 ### Dviout for Windows のカスタマイズ {#r9f015cc}
 
@@ -126,8 +131,7 @@ pukiwiki: "新 pTeX とBabel"
 ### type1ec.sty のインストール {#sea65834}
 
 - 
-    [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty) をダウンロードし，<br>
-    $TEXMFLOCAL/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
+    [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty) をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
 
 ### タイプセットのテスト {#mafcbf19}
 
@@ -264,6 +268,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     とすることで Type 1 の埋め込まれた PDF が作成されます。
 
-### もっと本格的に... {#z684b1d0}
+### もっと本格的に…… {#z684b1d0}
 
 世界の言語あるいは文字をどこまで表現できるかについては，稲垣徹さんのウェブサイト「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を参照してください。
