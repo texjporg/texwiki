@@ -72,7 +72,7 @@ pukiwiki: "新 pTeX とBabel"
 
 [ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) では teTeX-3.0 所収の
 ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。
-[Vine Linux 4.1](http://vinelinux.org/whatsnew.html#news/20070222) では ptetex3 の Babel 対応版がデフォルトでインストールされます。
+[Vine Linux 4.x](http://vinelinux.org/) では ptetex3 の Babel 対応版がデフォルトでインストールされます。
 他の UNIX(-like OS) ディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
 
 #### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM {#oe0dfa58}
