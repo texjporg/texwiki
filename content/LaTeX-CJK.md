@@ -7,7 +7,7 @@ pukiwiki: "LaTeX-CJK"
 
 # LaTeX-CJK
 
-(a place holder --- not yet completed)
+(a place holder&mdash;not yet completed)
 
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
@@ -18,19 +18,19 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
 
 ここでは、コンパイラ等には手を加えず、
 マクロで日中韓文字を処理する CJK LaTeX を紹介します。
-漢字等がビットマップになることにさえ我慢できれば(?)、
+漢字等がビットマップになることにさえ我慢できれば（？）、
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。 --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。 --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
 UTF-8 等を用いて中国韓國文字も処理できます。
 海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。 <!-- CJK LaTeX に詳しくない者が書き加えました。間違ってたらすいません。 --> <!-- CJK は主に台湾で使われています。 -->
 
-CJKパッケージはinputencパッケージなどと同じく、
-8bit目(最上位bit)の立った文字のカテゴリー
-コードを変更して、多バイト文字のTeXソースを標準的な8bit版のLaTeXでコンパイル
-可能にするマクロ集です。当然、8bit目(最上位bit)の立った文字が
+CJK パッケージは inputenc パッケージなどと同じく、
+8bit目（最上位bit）の立った文字のカテゴリー
+コードを変更して、多バイト文字の TeX ソースを標準的な8bit版の LaTeX でコンパイル
+可能にするマクロ集です。当然、8bit目（最上位bit）の立った文字が
 マクロとして処理される前に
 多バイト文字として、コンパイラに解釈されてしまう拡張が施された
-pLaTeXでは使用できません。基本的な使い方は
+pLaTeX では使用できません。基本的な使い方は
 
 > \usepackage{CJK}
 > ...<br>
@@ -40,12 +40,14 @@ pLaTeXでは使用できません。基本的な使い方は
 
 <!-- 要説明 CJKutf8.sty -->
 
-です。エンコーディングには EUC-JP, Shift_JIS, GB2312, Big5, x-EUC-TW (CNS 11643), EUC-KR, 
-UTF-8 などさまざまなものが使えます。以下は代表的なものです。
+です。エンコーディングには UTF-8, EUC-JP, Shift_JIS, GB2312, Big5, EUC-KR, x-EUC-TW (CNS 11643)
+などさまざまなものが使えます。以下は代表的なものです。
 
 <table>
+<thead>
+<tr><th style="text-align:center">名前</th><th style="text-align:center">ユーザーコード</th><th style="text-align:center">TFM エンコーディング</th></tr>
+</thead>
 <tbody>
-<tr><td>名前</td><td>ユーザーコード</td><td>TFM エンコーディング</td></tr>
 <tr><td>Big5</td><td>Bg5</td><td>c00</td></tr>
 <tr><td>GB2312</td><td>GB</td><td>c10</td></tr>
 <tr><td>EUC-JP</td><td>JIS</td><td>c40</td></tr>
@@ -56,62 +58,64 @@ UTF-8 などさまざまなものが使えます。以下は代表的なもの�
 </tbody>
 </table>
 
-ユーザーコードはTeXのソースコードのencodingに書き込む文字列、
-TFMエンコーディングはfdファイルの作成に必要です。
-この説明から見当がつくと思いますが、TeXのソースコードに
+ユーザーコードは TeX のソースコードの encoding に書き込む文字列、
+TFM エンコーディングは fd ファイルの作成に必要です。
+この説明から見当がつくと思いますが、TeX のソースコードに
 様々なエンコーディングが混じっていても、問題なくコンパイルできます。
 しかし、編集の手間を考えると、複数のエンコーディングを用いて
-原稿を用意する時は別ファイルにしておいて、\inputするのが良いでしょう。
-特に、Big5とShift_JISは２バイト目に'\\', '{', '}'と言ったLaTeXにとって
+原稿を用意する時は別ファイルにしておいて、\input するのが良いでしょう。
+特に、Big5 と Shift_JIS は2バイト目に “\”, “{”, “}” と言った LaTeX にとって
 特別な意味を持つ文字が使われることがあるので、プリプロセッサーを
 かける必要があるため、別ファイルにするメリットが大きいです。
 
-> \begin{CJK}{JIS}{}
-> \input{euc-jp-text1}%<br>
-> \CJKenc{Bg5}%<br>
-> \ifx\VTeXversion\undefined%<br>
-> \immediate\write18{bg5conv &lt; big5-text.raw > big5-text.tex}%<br>
-> \fi\input{big5-text}%<br>
-> \input{euc-jp-text2}<br>
-> \end{CJK}
+```
+\begin{CJK}{JIS}{}
+\input{euc-jp-text1}%
+\CJKenc{Bg5}%
+\ifx\VTeXversion\undefined%
+\immediate\write18{bg5conv < big5-text.raw > big5-text.tex}%
+\fi\input{big5-text}%
+\input{euc-jp-text2}
+\end{CJK}
+```
 
 一方、ファミリーはフォントの指定です。
-ここを空白にしておくと、デフォルトのsong(宋體)が使われます。
-デフォルトを変更するには\CJKfamilyや\CJKencfamilyを使います。
-実際にTeXがアクセスするフォントは
-NFSSに従い "(TFMエンコーディング)(ファミリー名).fd" で
+ここを空白にしておくと、デフォルトの song （宋體）が使われます。
+デフォルトを変更するには \CJKfamily や \CJKencfamily を使います。
+実際に TeX がアクセスするフォントは
+NFSS に従い "(TFM エンコーディング)(ファミリー名).fd" で
 指定します。つまり、様々なエンコーディングに対して、ファミリーは共通に
-songであっても、UTF-8の文書はc70song.fdで指定されたcyberbXX.tfmが、
-EUC-JPの文書はc40song.fdで指定されたjsso12XX.tfmが、等々のフォントが使われます。
+song であっても、UTF-8 の文書は c70song.fd で指定された cyberbXX.tfm が、
+EUC-JP の文書は c40song.fd で指定された jsso12XX.tfm が、等々のフォントが使われます。
 
 ### 拡張パッケージ {#xec38b47}
 
-CJKパッケージの配布には、様々な拡張とそのサンプルが同梱されています。
-そのうち、最も重要と思われる、CJKutf8について、説明します。
-中国語と、日本語(そして、いくらかは韓國語［朝鮮語］も)は禁則対象の文字の前後を除き、
+CJK パッケージの配布には、様々な拡張とそのサンプルが同梱されています。
+そのうち、最も重要と思われる CJKutf8 について説明します。
+中国語と日本語（そして、いくらかは韓國語［&#xd55c;&#xad6d;&#xc5b4;］も）は禁則対象の文字の前後を除き、
 どこでも改行できると言う、他の言語にはなかなか見出しがたい、
-特徴的な組版規則を持っています。CJKパッケージでは TeX上にそのような
-規則を実現するための実装がなされているため、CJK環境内で、それ以外の言語を
+特徴的な組版規則を持っています。CJK パッケージでは TeX 上にそのような
+規則を実現するための実装がなされているため、CJK 環境内で、それ以外の言語を
 使用すると、望ましからぬ組版処理が行われてしまいます。
-丁度、pTeXでも、全角の英数字を使って、英文を書いたのでは、正しいハイフネーションが
+丁度、pTeX でも、全角の英数字を使って、英文を書いたのでは、正しいハイフネーションが
 行われないのと同じ事です。
-そこで、CJKと他の言語を併用するには、他の言語の部分をCJK環境の
-外部に書かなければなりません。更に、TeXのハイフネーションや、
+そこで CJK と他の言語を併用するには、他の言語の部分を CJK 環境の
+外部に書かなければなりません。更に、TeX のハイフネーションや
 カーニング、リガチャーはフォントエンコーディングに依存しているため、
-正しいフォントエンコーディングがCJK環境外部ではロードされるように
+正しいフォントエンコーディングが CJK 環境外部ではロードされるように
 しなければなりません。
-そのような問題を解決してくれるのが、CJKutf8パッケージです。
-仕組みを説明するために、まず、inputencパッケージについて解説します。
+そのような問題を解決してくれるのが、CJKutf8 パッケージです。
+仕組みを説明するために、まず、inputenc パッケージについて解説します。
 
-#### inputencパッケージ {#wd55a638}
+#### inputenc パッケージ {#wd55a638}
 
-LaTeX2eとLaTeX2.09の大きな違いは、NFSS2の採用です。
+LaTeX2e と LaTeX2.09 の大きな違いは、NFSS2 の採用です。
 それに伴い、使用するフォントエンコーディングは、その他のフォントの属性とは独立に
 ユーザーが指定するものとなりました。同時に、ソースファイルの記述に使う
 エンコーディングも、ユーザーが指定するものとなりました。
-その結果、LaTeX2eの作法に則った最小のTeXソースは
-(実際にはfontencのオプション指定はbabel等の他のパッケージを用いて、
-間接に行う方が便利でしょうけれども、)
+その結果、LaTeX2e の作法に則った最小の TeX ソースは
+（実際には fontenc のオプション指定は babel 等の他のパッケージを用いて、
+間接に行う方が便利でしょうけれども、）
 
 > \documentclass{...}
 > \usepackage\[...\]{fontenc}<br>
@@ -120,194 +124,200 @@ LaTeX2eとLaTeX2.09の大きな違いは、NFSS2の採用です。
 > ...<br>
 > \end{document}
 
-となります。過去 (LaTeX2.09) との互換性から、もし、fontencを指定しなければ、
-テキストではOT1が使用され、もし、inputencを指定しなければ、
+となります。過去 (LaTeX2.09) との互換性から、もし fontenc を指定しなければ、
+テキストでは OT1 が使用され、もし inputenc を指定しなければ、
 ソースファイルのエンコーディングは、フォントエンコーディングと同じものが、
 使用されます。もし、それが自分の用途に適うものであったとしても、これらの
-パッケージをロードしない事が、LaTeX2eの作法に則ったソースの書き方とは
+パッケージをロードしない事が、LaTeX2e の作法に則ったソースの書き方とは
 言えないでしょう。
 
-ところで、inputenc.styが実際に行っている事は、8bit目(最上位bit)の立った文字を
+ところで、inputenc.sty が実際に行っている事は、8bit目（最上位bit）の立った文字を
 アクティブにし、ソースコード中でこれらの文字を使用しようとするとエラーを
-発効するだけに過ぎません。もし、8bit目(最上位bit)の立った文字を
+発効するだけに過ぎません。もし、8bit目（最上位bit）の立った文字を
 ソースコード中で使用したいのならば、アクティブにされた文字をマクロとして
 再定義して、適切なフォントエンコーディング中の、適切な文字コードに
-対応させてやる必要があります。inputencに与える、オプションは、そう言った
+対応させてやる必要があります。inputenc に与える、オプションは、そう言った
 再定義の記載されたファイルです。
-2004年2月9日以降のLaTeX2eでは、inputencパッケージはUTF8オプションが使用可能です。
+2004年2月9日以降の LaTeX2e では、inputenc パッケージは UTF8 オプションが使用可能です。
 
-> \usepackage\[UTF8\]{inputenc}
+```
+\usepackage[UTF8]{inputenc}
+```
 
-しかし、このように、プリアンブルに書いたからと言って、すべてのUTF-8で
+しかし、このように、プリアンブルに書いたからと言って、すべての UTF-8 で
 エンコードされた文字がソースコード中で使える訳ではありません。
-実はinputencパッケージのUTF8オプションは、本文が始まるまでにプリアンブルで
-ロードされたすべてのフォントエンコーディングを走査し、各エンコーディングXXX
-に対し、xxxenc.dfuを読み込み、そこで定義された、UTF-8文字の再定義のみを
+実は inputenc パッケージの UTF8 オプションは、本文が始まるまでにプリアンブルで
+ロードされたすべてのフォントエンコーディングを走査し、各エンコーディング XXX
+に対し、XXXenc.dfu を読み込み、そこで定義された UTF-8 文字の再定義のみを
 有効にするだけです。それ以外の文字を使用しようとすると、処理不可能のエラーがでます。
 
-現在、標準的に配布されているdfuファイルは、
+現在、標準的に配布されている dfu ファイルは
 
 > lcyenc.dfu
-> ly1enc.dfu
-> omsenc.dfu
-> ot1enc.dfu
-> ot2enc.dfu
-> t1enc.dfu
-> t2aenc.dfu
-> t2benc.dfu
-> t2cenc.dfu
-> ts1enc.dfu
+> ly1enc.dfu<br>
+> omsenc.dfu<br>
+> ot1enc.dfu<br>
+> ot2enc.dfu<br>
+> t1enc.dfu<br>
+> t2aenc.dfu<br>
+> t2benc.dfu<br>
+> t2cenc.dfu<br>
+> ts1enc.dfu<br>
 > x2enc.dfu
 
-です。utf8enc.dfuはこれらの内容を一覧にしたファイルです。
+です。utf8enc.dfu はこれらの内容を一覧にしたファイルです。
 これらに対応するフォントエンコーディングで記述できる言語に関しては、
-ソースファイルにUTF-8を使っても、それ以外のエンコーディングを使った時と
-全く同じに、ハイフネーション、カーニング、リガチャーは処理され、
+ソースファイルに UTF-8 を使っても、それ以外のエンコーディングを使った時と
+全く同じにハイフネーション、カーニング、リガチャーは処理され、
 同じ仕上りにタイプセットされます。
 
-何もパッケージを追加しない、LaTeX標準での、ユニコードサポートに関する、
+何もパッケージを追加しない LaTeX 標準での、ユニコードサポートに関する
 現在の状況をまとめると、
 
-- LaTeXはUTF-8エンコーディングによる、ソースコードの表記を
-    (BMPに限らず)完全にサポートしている。
+- LaTeX は UTF-8 エンコーディングによる、ソースコードの表記を
+    （BMP に限らず）完全にサポートしている。
 
 - 次の条件を満たす言語のタイプセットに関しては、ソースコードに
-    UTF-8エンコーディングを使う限り、当該言語を記述するのに適切な
-    フォントエンコーディングとdfuファイルを
+    UTF-8 エンコーディングを使う限り、当該言語を記述するのに適切な
+    フォントエンコーディングと dfu ファイルを
     用意すれば、原則的に可能である。
-    - 行は一定の水平方向に並べられる文字(glyphaeme)で構成され、
+    - 行は一定の水平方向に並べられる文字 (glyphaeme) で構成され、
         行は、上から下に向かい、垂直に並べられる。
-    - 各行には充分なだけな数の、可変な幅を持つ空白(またはそれに類する文字)
-        が含まれ、それらの空白(またはそれに類する文字)の箇所で、
+    - 各行には充分なだけな数の可変な幅を持つ空白（またはそれに類する文字）
+        が含まれ、それらの空白（またはそれに類する文字）の箇所で
         改行が可能である。
 
-#### CJKutf8パッケージ {#r2eca9d6}
+#### CJKutf8 パッケージ {#r2eca9d6}
 
 このパッケージは内部的には複雑な事をやっていますが、提供する機能は単純です。
-要するに、裏で、inputencパッケージを読み込み、CJK環境では
-まず、inputencで処理を試み、処理できない文字が
-出て来たら、CJK環境として処理を試みる。ただそれだけです。
+要するに、裏で inputenc パッケージを読み込み、CJK 環境では
+まず inputenc で処理を試み、処理できない文字が
+出て来たら、CJK 環境として処理を試みる。ただそれだけです。
 
-> \documentclass{article}
-> \usepackage\[T1\]{CJKutf8}%%フォントエンコーディングをオプションで指定しても良い。<br>
->
-> <br>
->
-> \begin{document}<br>
-> \begin{CJK}{UTF8}{}<br>
-> UTF-8で何か文章を書く。babel等でハイフネーションの言語を指定すれば、正しく組版される。<br>
-> \end{CJK}<br>
-> \end{document}
+```
+\documentclass{article}
+\usepackage[T1]{CJKutf8} % フォントエンコーディングをオプションで指定しても良い。
+
+\begin{document}
+\begin{CJK}{UTF8}{}
+UTF-8で何か文章を書く。babel等でハイフネーションの言語を指定すれば、正しく組版される。
+\end{CJK}
+\end{document}
+```
 
 ## インストール {#fb6c9457}
 
 ### TeX {#a7fe5a5f}
 
-まず、LaTeXが動作する環境が必要です。その他に
+まず、LaTeX が動作する環境が必要です。その他に
 [CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
-配下のマクロファイルと、更にはTFMファイル(フォントメトリック)がいります。
-CJKにデフォルトで附属するフォントの設定はdvipsやpdflatexでの使用も
-可能なようになっているので、dvipdfmxで使うには最適なものではありません。
+配下のマクロファイルと、更には TFM ファイル（フォントメトリック）がいります。
+CJK にデフォルトで附属するフォントの設定は dvips や pdflatex での使用も
+可能なようになっているので、dvipdfmx で使うには最適なものではありません。
 ここではカスタムなフォント定義を行なう方法を説明します。
-さて、pTeXやOmegaのように独自の拡張を施していないTeXが使用するTFMには、
+さて、pTeX や Omega のように独自の拡張を施していない TeX が使用する TFM には、
 ファイル一つにつき、一応、最大256の文字グリフに関する情報しか収納できません。
-もちろん、これでは、漢字などは扱えないので、CJKでは本来一つのフォントを
+もちろん、これでは、漢字などは扱えないので、CJK では本来一つのフォントを
 裏側では複数のサブフォントに分割して取り扱っています。
 何やら恐ろしげですが、実際は
-TFMファイルはTTFフォントがあれば、ttf2tfmで簡単に作成できます。
+TFM ファイルは TTF フォントがあれば、ttf2tfm で簡単に作成できます。
 
-> ttf2tfm \[TTF名\] \[TFM名ステム\]@\[SFD名\]@
+> ttf2tfm \[TTF名\] \[TFM 名ステム\]@\[SFD 名\]@
 
-TTCファイルならば、-fオプションでどのフェイスを使用するのか指定もできます。
-ここで、\[TFM名ステム\]とは、前節でのcyberbXX.tfmならばcyberb、
-jsso12XX.tfmならばjsso12のことです。
-そして、\[SFD名\]がサブフォントへの分割方法を決めるものです。
-どのSFDを使うかは、TTFフォントの持つcmapのエンコーディングと
-TeXのソースコードのエンコーディングで決まりますが、
-最近のTTFフォントならば、'U'で始まる\[SFD名\]を使えば良いでしょう。
-もし、全角文字しか使わないのであれば、既存のTFMファイルを名前を変えて
+TTC ファイルならば、-f オプションでどのフェイスを使用するのか指定もできます。
+ここで、\[TFM 名ステム\]とは、前節での cyberbXX.tfm ならば cyberb、
+jsso12XX.tfm ならば jsso12 のことです。
+そして、\[SFD 名\]がサブフォントへの分割方法を決めるものです。
+どの SFD を使うかは、TTF フォントの持つ CMap のエンコーディングと
+TeX のソースコードのエンコーディングで決まりますが、
+最近の TTF フォントならば、“U” で始まる\[SFD 名\]を使えば良いでしょう。
+もし、全角文字しか使わないのであれば、既存の TFM ファイルを名前を変えて
 コピーすることでもしのげます。
-(以下のサンプルに同梱のTFMファイルは事実そのようにして作ったもので、
-これを使って、アルファベットの類をタイプセットすると悲惨な結果を招きます。)
-自分で作ったTFMファイルを使うにはfdファイルを書く必要もあります。
-例えば、EUC-JP/Shift_JIS で書かれた原稿を処理するためにfooをステムに持つ
-TFMファイルを作って、TeXファイルではbarと言うファミリー名で
-ユニコードのcmapを持ったbaz.ttfフォントのデザインを使いたいならば、
+（以下のサンプルに同梱の TFM ファイルは事実そのようにして作ったもので、
+これを使って、アルファベットの類をタイプセットすると悲惨な結果を招きます。）
+自分で作った TFM ファイルを使うには fd ファイルを書く必要もあります。
+例えば、EUC-JP/Shift_JIS で書かれた原稿を処理するために foo をステムに持つ
+TFM ファイルを作って、TeX ファイルでは bar と言うファミリー名で
+ユニコードの CMap を持った baz.ttf フォントのデザインを使いたいならば、
 
-> ttf2tfm baz foo@UJIS@
+```
+ttf2tfm baz foo@UJIS@
+```
 
-で、まず、foo01.tfm--foo35.tfmを作ります。それから、
-c40bar.fdを作らなければなりませんが、その最低限の内容は
+で、まず、foo01.tfm&ndash;foo35.tfm を作ります。それから
+c40bar.fd を作らなければなりませんが、その最低限の内容は
 
-> \DeclareFontFamily{C40}{bar}{}
-> \DeclareFontShape{C40}{bar}{m}{n}{&lt;-> CJK \* foo}{}
+```
+\DeclareFontFamily{C40}{bar}{}
+\DeclareFontShape{C40}{bar}{m}{n}{<-> CJK * foo}{}
+```
 
 です。テキストエディタででも作って下さい。こうしてできたファイルを
-LaTeXが見つけられるようにしてやれば、無事にLaTeXのコンパイルは通る筈です。
+LaTeX が見つけられるようにしてやれば、無事に LaTeX のコンパイルは通る筈です。
 
-> \documentclasss{article}
-> \usepackage{CJK}<br>
->
-> <br>
->
-> \begin{document}<br>
-> \begin{CJK}{JIS}{bar}<br>
-> ここに EUC-JP で日本語の文章を書きます。<br>
-> \end{CJK}<br>
-> \begin{CJK}{SJIS}{bar}<br>
-> ここに Shift_JIS で日本語の文章を書きます。%<br>
-> しかし、もしかすると、このブロックだけ%<br>
-> プリプロセッサーを通さないと \LaTeX{} のコンパイルが通らないかも%<br>
-> 知れません。<br>
-> \end{CJK}<br>
-> \end{document}
+```
+\documentclasss{article}
+\usepackage{CJK}
 
-Shift_JISとBig5の原稿を処理するにはプリプロセッサーsjisconv, bg5convも
+\begin{document}
+\begin{CJK}{JIS}{bar}
+ここにEUC-JPで日本語の文章を書きます。
+\end{CJK}
+\begin{CJK}{SJIS}{bar}
+ここにShift_JISで日本語の文章を書きます。%
+しかし、もしかすると、このブロックだけ%
+プリプロセッサーを通さないと%
+\LaTeX のコンパイルが通らないかも知れません。
+\end{CJK}
+\end{document}
+```
+
+Shift_JIS と Big5 の原稿を処理するにはプリプロセッサー sjisconv, bg5conv も
 インストールしなければなりません。
 
-### DVIドライバー {#u7a0009a}
+### DVI ドライバー {#u7a0009a}
 
-近い将来pdflatexでも正式にCJKパッケージがサポートされる模様ですが、現時点で
-CJKパッケージを使って、まともなPDFを作成するにはVTeX(商用)とdvipdfmxだけしか
-選択肢がありませんので、ここではdvipdfmxについてのみ扱います。
+近い将来 pdflatex でも正式に CJK パッケージがサポートされる模様ですが、現時点で
+CJK パッケージを使って、まともな PDF を作成するには VTeX （商用）と dvipdfmx だけしか
+選択肢がありませんので、ここでは dvipdfmx についてのみ扱います。
 
-> ここで、dvipsや現在一般に流布しているpdflatexの生成するPDFがまともでないと
-> 言う意味はこれらのDVIドライバーではTFMの分割に従って、PDFが使用する
-> 実フォントも分割したフォント(Type1, PK)にしなければならないからです。
+> ここで、dvips や現在一般に流布している pdflatex の生成する PDF がまともでないと
+> 言う意味はこれらの DVI ドライバーでは TFM の分割に従って、PDF が使用する
+> 実フォントも分割したフォント (Type 1, PK) にしなければならないからです。
 
-設定する必要があるのはDVIファイル内のTFMと
-PDFファイル内のフォントとの対応だけです。
+設定する必要があるのは DVI ファイル内の TFM と
+PDF ファイル内のフォントとの対応だけです。
 
-> 背景を説明しておくと、DVIファイルには文字の形に関する情報は
-> 何も入っていません。大きさと位置、そして、それがどのTFMに由来するか
-> の情報だけしか入っていません。DVIドライバーの仕事はその大きさと位置に
+> 背景を説明しておくと、DVI ファイルには文字の形に関する情報は
+> 何も入っていません。大きさと位置、そして、それがどの TFM に由来するか
+> の情報だけしか入っていません。DVI ドライバーの仕事はその大きさと位置に
 > フォントから取得した文字の形に関する情報を当てはめていくことにあります。
-> 従って、TFMとフォントとの対応が必要になってくる訳です。
-> この対応が与えられていない場合、大抵のDVIドライバーはビットマップフォントを
+> 従って、TFM とフォントとの対応が必要になってくる訳です。
+> この対応が与えられていない場合、大抵の DVI ドライバーはビットマップフォントを
 > 生成して、それを利用しようとします。
-> 現在のpTeXの場合、ここでビットマップフォントの生成に失敗してエラーで
+> 現在の pTeX の場合、ここでビットマップフォントの生成に失敗してエラーで
 > 止まってしまうので、誰でもインストールの失敗に気がつきます。
-> ところが、CJKパッケージをフルインストールしているとデフォルトの
+> ところが CJK パッケージをフルインストールしているとデフォルトの
 > フォントに対してはビットマップフォントの生成に成功してしまうため、
 > インストールの失敗に気がつかずに、使い続けてしまうケースが多いようです。
-> 以下のサンプルではいずれも新たなフォント(TFM)を定義して使っていますので、
+> 以下のサンプルではいずれも新たなフォント (TFM) を定義して使っていますので、
 > 実フォントの対応についても方法を例示しています。
 
-dvipdfmxでTFMとPDFファイル内のフォントとの対応を指定するファイル(map file)は
-多数ありますが、その大部分はdvipdfmと共有なので、dvipdfmでも理解できる
-8-bitフォントしか扱えません。そこで、この対応はdvipdfmx専用のマップファイルである
-cid-x.mapに書きます。(Details will be added later.)
+dvipdfmx で TFM と PDF ファイル内のフォントとの対応を指定するファイル (map file) は
+多数ありますが、その大部分は dvipdfm と共有なので、dvipdfm でも理解できる
+8-bit フォントしか扱えません。そこで、この対応は dvipdfmx 専用のマップファイルである
+cid-x.map に書きます。(Details will be added later.)
 
-#### 実在しないOpenType(CFF, CID-keyed)フォントの場合 {#ef120abe}
+#### 実在しない OpenType (CFF, CID-keyed) フォントの場合 {#ef120abe}
 
-dvipdfmxは以下のフォントを「知って」います。
+dvipdfmx は以下のフォントを「知って」います。
 
 <table>
 <thead>
-<tr><th style="text-align:center">言語</th><th>文字集合</th><th>フォント名</th></tr>
+<tr><th style="text-align:center">言語</th><th style="text-align:center">文字集合</th><th style="text-align:center">フォント名</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="8" style="text-align:center">日本語</td><td rowspan="4">Adobe-Japan1</td><td>Ryumin-Light</td></tr>
+<tr><th rowspan="8" style="text-align:center">日本語</th><td rowspan="4">Adobe-Japan1</td><td>Ryumin-Light</td></tr>
 <tr><td>GothicBBB-Medium</td></tr>
 <tr><td>HeiseiMin-W3</td></tr>
 <tr><td>HeiseiKakuGo-W5</td></tr>
@@ -315,15 +325,15 @@ dvipdfmxは以下のフォントを「知って」います。
 <tr><td>HeiseiKakuGo-W5-Acro</td></tr>
 <tr><td rowspan="2">Adobe-Japan1-4</td><td>KozMinPro-Regular-Acro</td></tr>
 <tr><td>KozGoPro-Medium-Acro</td></tr>
-<tr><td rowspan="3" style="text-align:center">簡体中文<br>（簡化字中文）</td><td>Adobe-GB1</td><td>STSong-Light</td></tr>
+<tr><th rowspan="3" style="text-align:center">簡体中文<br>（簡化字中文）</th><td>Adobe-GB1</td><td>STSong-Light</td></tr>
 <tr><td>Adobe-GB1-2</td><td>STSong-Light-Acro</td></tr>
 <tr><td>Adobe-GB1-4</td><td>AdobeSongStd-Light-Acro</td></tr>
-<tr><td rowspan="5" style="text-align:center">繁體中文<br>（正體中文）</td><td rowspan="2">Adobe-CNS1</td><td>MSung-Light</td></tr>
+<tr><th rowspan="5" style="text-align:center">繁體中文<br>（正體中文）</th><td rowspan="2">Adobe-CNS1</td><td>MSung-Light</td></tr>
 <tr><td>MHei-Medium</td></tr>
 <tr><td rowspan="2">Adobe-CNS1-0</td><td>MSung-Light-Acro</td></tr>
 <tr><td>MHei-Medium-Acro</td></tr>
 <tr><td>Adobe-CNS1-4</td><td>AdobeMingStd-Light-Acro</td></tr>
-<tr><td rowspan="5" style="text-align:center">韓國語<br>（朝鮮語）</td><td rowspan="2">Adobe-Korea1</td><td>HYSMyeongJo-Medium</td></tr>
+<tr><th rowspan="5" style="text-align:center">韓國語<br>（&#xd55c;&#xad6d;&#xc5b4;）</th><td rowspan="2">Adobe-Korea1</td><td>HYSMyeongJo-Medium</td></tr>
 <tr><td>HYGoThic-Medium</td></tr>
 <tr><td rowspan="2">Adobe-Korea1-0</td><td>HYSMyeongJo-Medium-Acro</td></tr>
 <tr><td>HYGoThic-Medium-Acro</td></tr>
@@ -335,78 +345,87 @@ dvipdfmxは以下のフォントを「知って」います。
 <!-- 2003年11月25日以降のバージョンでは、これで正しい筈です。 -->
 <!-- // (/home/cvsroot -> ) /usr/local/src/tetex-src-3.0/texk/dvipdfmx/src/cid_basefont.h を見て確認しました (m__m) -->
 
-そこで、これらのフォント名をcid-x.mapのエントリー
+そこで、これらのフォント名を cid-x.map のエントリー
 
-> \[TFM名ステム\]@\[SFD名\]@ \[CMap名\] \[フォントファイル名\]
+> \[TFM 名ステム\]@\[SFD 名\]@ \[CMap 名\] \[フォントファイル名\]
 
-で指定すると、それらのフォントがdvipdfmxの検索パスに存在しなくても、
-フォントが埋め込まれていないPDFファイルができあがります。
-ただし、\[CMap名\]はSFDを適用した結果のエンコーディングから
-上の表の文字集合に記されたCIDの並び順への対応表です。
-\[SFD名\]には普通TFMを作成する時にttf2tfmの引数として指定したのと
+で指定すると、それらのフォントが dvipdfmx の検索パスに存在しなくても、
+フォントが埋め込まれていない PDF ファイルができあがります。
+ただし、\[CMap 名\]は SFD を適用した結果のエンコーディングから
+上の表の文字集合に記された CID の並び順への対応表です。
+\[SFD 名\]には普通 TFM を作成する時に ttf2tfm の引数として指定したのと
 同じものを使います。しかし、次のようなこともできます。
 
-> jsso12@UJIS@ UniJIS-UCS2-H HeiseiMin-W3-Acro
+```
+jsso12@UJIS@ UniJIS-UCS2-H HeiseiMin-W3-Acro
+```
 
-これは単純にjsso12XX.tfmのエンコーディングを集めてユニコードに復元し、
-Adobe-Japan1のグリフに標準的に対応させます。
+これは単純に jsso12XX.tfm のエンコーディングを集めてユニコードに復元し、
+Adobe-Japan1 のグリフに標準的に対応させます。
 
-> jsso12@SJIS@ RKSJ-H HeiseiMin-W3-Acro
+```
+jsso12@SJIS@ RKSJ-H HeiseiMin-W3-Acro
+```
 
-これも単純ですが、jsso12XX.tfmのエンコーディングを集めてShift_JISに復元し、
-Adobe-Japan1のグリフに標準的に対応させます。
+これも単純ですが、jsso12XX.tfm のエンコーディングを集めて Shift_JIS に復元し、
+Adobe-Japan1 のグリフに標準的に対応させます。
 
-> jsso12@SJIS@ 90ms-RKSJ-H HeiseiMin-W3-Acro
+```
+jsso12@SJIS@ 90ms-RKSJ-H HeiseiMin-W3-Acro
+```
 
-これもShift_JISを経由しますが、 MS Windows標準文字セットの対応を使用します。
+これも Shift_JIS を経由しますが、 Windows-31J （Microsoft Windows 標準日本語文字セット）の対応を使用します。
 一部、上とは微妙に違う字形が使われます。
 
-> jsso12@SJIS@ 78-RKSJ-H HeiseiMin-W3-Acro
+```
+jsso12@SJIS@ 78-RKSJ-H HeiseiMin-W3-Acro
+```
 
-これは表外漢字の新字体、旧字体が入れ替わったりしている、
-1978版JISでの例示字形が使われます。
+これは表外漢字の新字体、旧字体が入れ替わったりしている
+JIS C 6226-1978 (JIS X 0208:1978) での例示字形が使われます。
 
-フォントを埋め込んでいないPDFでは表示、印刷環境により、異なる代替フォントが
+フォントを埋め込んでいない PDF では表示、印刷環境により、異なる代替フォントが
 使われることがあります。
 
-#### 実在するOpenType(CFF, CID-keyed)フォントの場合 {#zc736617}
+#### 実在する OpenType (CFF, CID-keyed) フォントの場合 {#zc736617}
 
-上と殆ど同じですが、\[フォントファイル名\]にはdvipdfmxの検索パスに存在する
+上と殆ど同じですが、\[フォントファイル名\]には dvipdfmx の検索パスに存在する
 フォントを指定しなければなりません。
 デフォルトではフォントが埋め込まれますが、\[フォントファイル名\]の先頭に
-'!'を付けると、埋め込まれなくなります。また、\[フォントファイル名\]の後に
-",Bold"、",Italic"、または",BoldItalic"を付けた場合もフォントは埋め込まれません。
-これらは、フォントをPDFヴューアーが機械的に、太らせたり、ひしゃげさせたりして、
+“!” を付けると、埋め込まれなくなります。
+また、\[フォントファイル名\]の後に “,Bold”、“,Italic”、または “,BoldItalic” を
+付けた場合もフォントは埋め込まれません。
+これらは、フォントを PDF ヴューアーが機械的に太らせたり、ひしゃげさせたりして、
 表示することを指示します。
 
-#### TrueTypeフォントによるOpenType(CFF, CID-keyed)偽装 {#odc3338f}
+#### TrueType フォントによる OpenType (CFF, CID-keyed) 偽装 {#odc3338f}
 
-TTFフォントでは、内部的なグリフの並び順に何の決まりもありません。
+TTF フォントでは、内部的なグリフの並び順に何の決まりもありません。
 従って、フォントファイル内のグリフにアクセスするにはフォントファイルが持つ、
-cmapテーブルが使われますが、\[CMap名\]に指定されたCMapファイルの文字集合が
-Adobeの標準文字集合の時は、標準的なユニコードからの対応により、
-TrueTypeフォントをCIDフォントとして、埋め込む事ができます。
-但し、ユニコードの割り振られていないグリフなどは、元々TTFフォントには
-存在しない場合が多いですし、たとえ存在しても、アクセスできません。
-\[CMap名\]に指定されたCMapファイルの文字集合がAdobeの標準文字集合と異なっていても、
-TTFフォント名の後ろに"/AJ14"等と、付けてやれば、Adobe-Japan1のsupplement 4を
+CMap テーブルが使われますが、\[CMap 名\]に指定された CMap ファイルの文字集合が
+Adobe の標準文字集合の時は、標準的なユニコードからの対応により、
+TrueType フォントを CID フォントとして、埋め込む事ができます。
+但し、ユニコードの割り振られていないグリフなどは元々 TTF フォントには
+存在しない場合が多いですし、たとえ存在してもアクセスできません。
+\[CMap 名\]に指定された CMap ファイルの文字集合が Adobe の標準文字集合と異なっていても、
+TTF フォント名の後ろに “/AJ14” 等と付けてやれば、Adobe-Japan1 の supplement 4 を
 偽装できます。
-TrueTypeフォントを埋め込まずに使用する場合、原則として、この方法を使って下さい。
+TrueType フォントを埋め込まずに使用する場合、原則として、この方法を使って下さい。
 
-#### TrueTypeフォントの場合 {#q2b385eb}
+#### TrueType フォントの場合 {#q2b385eb}
 
-cmapテーブルを使用して、TTFフォントにアクセスするには、cid-x.mapのエントリー
+CMap テーブルを使用して TTF フォントにアクセスするには、cid-x.map のエントリー
 
-> \[TFM名ステム\]@\[SFD名\]@ unicode \[フォントファイル名\] \[オプション\]
+> \[TFM 名ステム\]@\[SFD 名\]@ unicode \[フォントファイル名\] \[オプション\]
 
-を使います。ここでSFDはTFMのエンコーディングをユニコードに対応させる、
-'U'で始まるものでなければなりません。
+を使います。ここで SFD は TFM のエンコーディングをユニコードに対応させる、
+“U” で始まるものでなければなりません。
 
 > ```
 > -w オプション
 > ```
 >
-> TrueTypeフォントを縦書きフォントとして使う時に使います。
+> TrueType フォントを縦書きフォントとして使う時に使います。
 >
 > ```
 > -w 0
@@ -424,68 +443,68 @@ cmapテーブルを使用して、TTFフォントにアクセスするには、c
 > -p オプション
 > ```
 >
-> UnicodeのBMP (Basic Multilingual Plane)に入っていないコードポイントを持つ文字に
+> Unicode の BMP (Basic Multilingual Plane) に入っていないコードポイントを持つ文字に
 > アクセスするために使用します。
 >
 > ```
 > -p 0
 > ```
 >
-> BMPの文字にアクセスします。（デフォルト）<br>
-> つまり、0x0000--0xffffのコードポイントに同じコードポイントを持つ文字を対応させます。
+> BMP の文字にアクセスします。（デフォルト）<br>
+> つまり、0x0000&ndash;0xFFFF のコードポイントに同じコードポイントを持つ文字を対応させます。
 >
 > ```
 > -p 1
 > ```
 >
-> SMP (Supplementary Multilingual Plane)の文字にアクセスします。
-> TeXで必要なのは、主に、古代文字です。<br>
-> 0x0000--0xffffのコードポイントに0x10000平行移動した
-> 0x10000--0x1ffffのコードポイントを持つ文字を対応させます。
+> SMP (Supplementary Multilingual Plane) の文字にアクセスします。
+> TeX で必要なのは、主に、古代文字です。<br>
+> 0x0000&ndash;0xFFFF のコードポイントに 0x10000 平行移動した
+> 0x10000&ndash;0x1FFFF のコードポイントを持つ文字を対応させます。
 >
 > ```
 > -p 2
 > ```
 >
-> SIP (Supplementary Ideographic Plane)の文字にアクセスします。
-> これはBMPに収まり切れなかった漢字です。
-> 0x0000--0xffffのコードポイントに0x20000平行移動した
-> 0x20000--0x2ffffのコードポイントを持つ文字を対応させます。
+> SIP (Supplementary Ideographic Plane) の文字にアクセスします。
+> これは BMP に収まり切れなかった漢字です。
+> 0x0000&ndash;0xFFFF のコードポイントに 0x20000 平行移動した
+> 0x20000&ndash;0x2FFFF のコードポイントを持つ文字を対応させます。
 
-何等かの事情でTTFフォントのグリフに、cmapを経由せず、
+何等かの事情で TTF フォントのグリフに、CMap を経由せず、
 その並び順で直接アクセスするには、
-文字集合として、Adobe-Identityを持つCMapファイルを使用します。
-しかし、このCMapファイルの名前は"Identity-H"または"Identity-V"であってはいけません。
+文字集合として、Adobe-Identity を持つ CMap ファイルを使用します。
+しかし、この CMap ファイルの名前は “Identity-H” または “Identity-V” であってはいけません。
 
 ## サンプル {#f920d8cd}
 
-以下のサンプルをコンパイルするには[CTAN:languages/japanese/CJK/4_7.0/texinput/](https://mirror.ctan.org/languages/japanese/CJK/4_7.0/texinput/)
+以下のサンプルをコンパイルするには [CTAN:languages/japanese/CJK/4_7.0/texinput/](https://mirror.ctan.org/languages/japanese/CJK/4_7.0/texinput/)
 配下のファイルが必要です。サンプルはインストールして使用することも可能なように
 アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
-(フォルダー)を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
-dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみるにはcid-x.mapに
-改名、インストールして使用する場合はその内容をシステムのcid-x.mapに追加します。
+（フォルダー）を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
+dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるには cid-x.map に
+改名、インストールして使用する場合はその内容をシステムの cid-x.map に追加します。
 
-1. [UTF-8で書かれたTeXファイルでCJKの各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
+1. [UTF-8 で書かれた TeX ファイルで CJK の各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
     - これまでに判明している問題点:
-        - 各ページ、最下段を除いて、意味不明な箇所がある。視点を変えて、少し距離をおいて眺める必要があるかも知れない。
-1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2)JISX0213をShift_JISで使うために必要な設定も一式入っています。
+        - 各ページ、最下段を除いて意味不明な箇所がある。視点を変えて、少し距離をおいて眺める必要があるかも知れない。
+1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2) JIS X 0213 を Shift_JIS で使うために必要な設定も一式入っています。
     - これまでに判明している問題点:
-        - 同梱されたtfmファイルは全角文字以外に使えない。
-        - 横書きフォントを縦書きに使う場合のfdxファイルが無いため、CJKvert.styを使った縦書きでは、句読点の位置がおかしい。(縦書きフォントを使う場合は問題ないと思います。)
-1. [Supplementary Ideographic Planeの使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルからPDFファイルを作るのには、
-    最新版にパッチを当てたdvipdfmxが必要です。更に商用フォントも使いました。
-    そこで、[作成済みPDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf)も置いておきます。
+        - 同梱された TFM ファイルは全角文字以外に使えない。
+        - 横書きフォントを縦書きに使う場合の fdx ファイルが無いため、CJKvert.sty を使った縦書きでは句読点の位置がおかしい（縦書きフォントを使う場合は問題ないと思います）。
+1. [Supplementary Ideographic Plane の使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルから PDF ファイルを作るのには、
+    最新版にパッチを当てた dvipdfmx が必要です。更に商用フォントも使いました。
+    そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
-        - 現時点では、dvipdfmxにパッチ[qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html)を当てなくてはならない。
-        - c70usong.fdに二つのフォントが定義されている。これはc70usong.fdとc70usong2.fd
-            の二つのファイルに分けないと、SIPの文字を文書の最初に使えない。
-        - 商用フォントを使う設定になっている。これは、cid-x.mapを書き換えて、[HAN NOM FONTs](http://www.viethoc.org/article.php?sid=98&mode=threaded&order=0&thold=0)を使う設定に直した方がいい。(それにしても、Han NomのデザインはSimSunに似ている。)
+        - 現時点では、dvipdfmx にパッチ ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html)) を当てなくてはならない。（cvs 版 Fri Jan 19 10:57:22 2007 UTC で修正されています。）
+        - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
+            の二つのファイルに分けないと、SIP の文字を文書の最初に使えない。
+        - 商用フォントを使う設定になっている。これは、cid-x.map を書き換えて、[HAN NOM FONTs](http://www.viethoc.org/article.php?sid=98&mode=threaded&order=0&thold=0) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
         - 手持ちの材料で、適当にでっちあげたサンプルの文書には、その後、簡単な
-            Web検索しただけで、明らかな誤り２箇所と、幾多の要改善箇所が見つかっている。
-        - 現在の最新版である。CJK 4.6.0では、プリアンブルに、このサンプルにあるような、
-            コードを加えないと、BMP以外の文字は扱えないが、ユニコードをフルサポートした、
-            開発版のCJKパッケージとは、このコードは衝突してしまう。
+            Web 検索しただけで、明らかな誤り2箇所と、幾多の要改善箇所が見つかっている。
+        - 現在の最新版である。CJK 4.6.0 では、プリアンブルにこのサンプルにあるような
+            コードを加えないと BMP 以外の文字は扱えないが、ユニコードをフルサポートした
+            開発版の CJK パッケージとはこのコードは衝突してしまう。
             <!-- +CJKutf8.styについては[[Cardo:http://scholarsfonts.net/]]1.01がリリースされてから -->
             <!-- 考えます。文例と、当該言語のハイフネーションパターンを提供して頂けると助かります。 -->
             <!-- SMPも使ってみたい。 -->
@@ -495,4 +514,4 @@ dvipdfm/config/cid-x.map-add.\*を、インストールせずに試してみる�
             <!-- を併用すれば、TFMを作成できます。あとは、ここの説明を応用すれば、使えるはずです。 -->
 
 他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
-もちろん、新たなサンプルの提供と、(全体の)文章の修正も歓迎します。
+もちろん、新たなサンプルの提供と、（全体の）文章の修正も歓迎します。
