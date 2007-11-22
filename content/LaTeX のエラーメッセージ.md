@@ -105,7 +105,7 @@ zzz
 
 → このエラーが生じた場合には，とりあえず“フォントの代替”
 （デフォルトの属性の設定）に関する部分をチェックするとよいでしょう．
-特に，\DeclareFontSubstitution（あるいは \DeclareKanjiiSubstitution）
+特に，\DeclareFontSubstitution（あるいは \DeclareKanjiSubstitution）
 の指定忘れには注意が必要です．
 
 #### ! Infinite tan !. {#p2599222}
