@@ -9,35 +9,40 @@ pukiwiki: "TeXが苦手とする処理"
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では提供されず，
-ときとして TeX 自身は不得手とする処理について挙げます。
+[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では
+提供されず，ときとして TeX 自身は不得手とする処理について挙げます。
 既製品があるものについては既製品も紹介していますが，
 それらを用いた場合の出力結果に不満がある場合には，
 ユーザ自身で対処することになります。
 
 ここに挙げる処理を行うのが単なる「書き手の趣味」である場合には，
-無理をせずに書き手自身の腕で無難にできる範囲の処理で済ませる（か，
-画像にしてしまう）ほうが賢明である場合もあることでしょう。
+無理をせずに書き手自身の腕で無難にできる範囲の
+処理で済ませる（か，画像にしてしまう）方が賢明である場合もあることでしょう。
 
 ### 丸附き数字 {#s7930698}
 
-まず，丸附き数字（e.g. &#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の
-類は（従来の Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り）
+まず，丸附き数字（e.g.
+&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は（従来の
+Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り）
 「環境依存」文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
 
 対処法は，大別すると次の2通りになります。
 
-- 丸附き数字などの字形をもったフォントを利用:
+1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
-        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，何も付けなければ十進表記でも書けます。例えば
+        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，
+            何も付けなければ十進表記でも書けます。例えば
 
 > "AC = '254 = 172
 
-です。こういったコードは [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+です。こういったコードは
+[testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
 
-- [otf パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
-- 丸の中身と丸を合成:
+- [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
+    &#x2460; {U+2460}］など）
+
+1. 丸の中身と丸を合成：
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
         同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
@@ -45,29 +50,27 @@ pukiwiki: "TeXが苦手とする処理"
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
 まず，[qa:32045](https://okumuralab.org/~okumura/texfaq/qa/32045.html) でコメントされている現実があることを認識してください。
-そのうえで既製品にあたると，
-[大石氏のサイト](http://www17.plala.or.jp/ohishi-masaru/)に
+その上で既製品に
+あたると，[大石氏のサイト](http://www17.plala.or.jp/ohishi-masaru/)に
 下線類を作成するマクロについての比較を行った文書
 「[下線に関するマクロ比較](http://www17.plala.or.jp/ohishi-masaru/tex/library/underline.pdf)」
 （ただし，未完成）があり，その中でいくつかの既製品が紹介されています。
 現在 <!-- （特定のコミュニティのメンバーでなくとも） --> <!-- おそらく@niftyを指していると思いますが，TeXに関するフォーラムは無くなったので --> <!-- 言及しなくとも良いでしょう。 - - tony 2006/11/06 --> <!-- // いまどきはむしろ mixi のようなところが問題になるのでは？ --> <!-- mixi には今のところ @nifty にあったようなライブラリのような機能はありませんし， --> <!-- サイトの成り立ちを考えると今後も設置されるとは思えないです。- - tony 2006/11/06 -->
-入手可能なもののうち，
-和文テキストを取り扱うことを念頭に置いたもので，
+入手可能なもののうち，和文テキストを取り扱うことを念頭に置いたもので，
 かつ比較的完成度の高いものを挙げます。
 
-- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)：
-    中島 浩氏。
+- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)： 中島 浩氏。
     下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
 
-- [udline パッケージ](http://homepage2.nifty.com/domae/tex.html)：
-    みなも氏。実線，破線，点線，波線などによる下線，打ち消し線，上線を提供
+- [udline パッケージ](http://homepage2.nifty.com/domae/tex.html)： みなも氏。
+    実線・破線・点線・波線などによる下線・打ち消し線・上線を提供
 
-- [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)：
-    吉永徹美氏。実線，波線による下線，打ち消し線，上線を提供（縦組み対応）
+- [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)： 吉永徹美氏。
+    実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
 
-なお，欧文のみでよければ，
-[ulem パッケージ](https://mirror.ctan.org/macros/latex/contrib/misc/ulem.sty) が下線，二重下線，
-打ち消し線，波線などを提供しています。
+なお，欧文のみで
+よければ，[ulem パッケージ](https://mirror.ctan.org/macros/latex/contrib/misc/ulem.sty)が
+下線・二重下線・打ち消し線・波線などを提供しています。
 
 ### 飾り枠（ときとしてページ分割可能なもの） {#t43fb31c}
 
@@ -77,21 +80,20 @@ pstricks などの「描画用」パッケージを用いるなりするのが�
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
-枠の途中でのページ分割の必要がなければ，
-比較的単純な形状の枠については ascmac パッケージが提供する
-itembox 環境といったものが存在します（さらに，枠の四隅の形状を変更した例が
-[qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）。
+枠の途中でのページ分割の必要がなければ，比較的単純な形状の枠については
+ascmac パッケージが提供する itembox 環境といったものが存在します
+（さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）。
 また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は
-「飾り文字を並べて作成した枠（ページ分割は不可）」
-を作成するマクロを提供しています
+「飾り文字を並べて作成した枠（ページ分割は不可）」を
+作成するマクロを提供しています
 （niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
-Type1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。
+Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。
 
-<!-- // 枠の四隅を四分円にする例（PSTricks 使用）: -->
+<!-- // 枠の四隅を四分円にする例（PSTricks 使用）： -->
 <!-- // 枠線上に見出し文字列を乗せるにはもう少し細工が必要です。 -->
 <!-- // また，（2007/02/04 の時点では）dvipdfm(x) を用いる場合には -->
 <!-- // このサンプルは利用できません。dvipdfmx などの PostScript を解さない -->
-<!-- // dviware を用いる場合，枠の四隅にはフォント lcircle10 に収められている -->
+<!-- // DVIware を用いる場合，枠の四隅にはフォント lcircle10 に収められている -->
 <!-- // 文字を利用するなり，tpic specials を用いるなりしてください（pict2e -->
 <!-- // パッケージで拡張した picture 環境でもよいかもしれません）。 -->
 <!--  -->
@@ -203,10 +205,10 @@ Type1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) �
 
 「テキストに枠をつけたものを分割する」という形でのページ分割の必要がある場合，
 長方形の枠については
-[eclbkbox パッケージ](http://mechanics.civil.tohoku.ac.jp/~bear/bear-collections/style-files/eclbkbox.lzh)
-が提供する breakbox 環境が利用できます。
+[eclbkbox パッケージ](http://mechanics.civil.tohoku.ac.jp/~bear/bear-collections/style-files/eclbkbox.lzh)が
+提供する breakbox 環境が利用できます。
 なお，ページ分割可能な枠の四隅を四分円にしたり
-斜めに切り落とした（八角形状の）枠にしたものは，
+斜めに切り落とした（八角形状の）枠にしたものは
 （著名な）既製品では提供されていないようですので，
 ユーザ自身で作成することになります。
 要は，eclbkbox パッケージによる breakbox 環境などの処理をふまえつつ
@@ -220,14 +222,15 @@ Type1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) �
 
 #### 複数ページにわたる枠 (2) ［複数の枠を作成する場合］ {#s982eb3b}
 
-「枠をつけるテキストが複数ページにまたがる場合，
-個々のページに収まる部分ごとに枠をつける」という処理を行うには，
-framed パッケージが提供する framed 環境，shaded 環境
-（あるいは shaded 環境の定義に準じてカスタマイズしたもの）が使えます。 <!-- framed 環境と breakbox 環境との違いは， --> <!-- 例えば枠が 3 ページ以上にわたる場合の出力が次のようになる， --> <!-- という点にあります。 --> <!-- framed 環境: --> <!--    \fbox{最初の断片}, \fbox{2 番目の断片},..., \fbox{最後の断片} --> <!-- breakbox 環境: --> <!--    最初の断片の上部と左右のみ罫線で囲んだもの， --> <!--    2 番目の断片の左右にのみ罫線がついたもの， --> <!--    ...， --> <!--    最後の断片の下部と左右のみ罫線で囲んだもの -->
+「枠をつけるテキストが複数ページにまたがる場合，個々のページに収まる部分ごとに
+枠をつける」という処理を行うには，framed パッケージが
+提供する framed 環境，shaded 環境
+（あるいは shaded 環境の定義に準じてカスタマイズしたもの）が使えます。 <!-- framed 環境と breakbox 環境との違いは， --> <!-- 例えば枠が3ページ以上にわたる場合の出力が次のようになる， --> <!-- という点にあります。 --> <!-- framed 環境: --> <!--    \fbox{最初の断片}, \fbox{2番目の断片},..., \fbox{最後の断片} --> <!-- breakbox 環境: --> <!--    最初の断片の上部と左右のみ罫線で囲んだもの， --> <!--    2番目の断片の左右にのみ罫線がついたもの， --> <!--    ...， --> <!--    最後の断片の下部と左右のみ罫線で囲んだもの -->
 
 ### 原稿用紙 {#i5d966d4}
 
-枠は必須でなくとも「20文字&times;20行」のような体裁を要求されることがあります。
+枠は必須でなくとも
+「20文字&times;20行」のような体裁を要求されることがあります。
 
 - [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
@@ -301,20 +304,25 @@ framed パッケージが提供する framed 環境，shaded 環境
 <tr><th colspan="5" style="text-align:center">テキスト</th><th style="text-align:center">OTF<br>UTF<br>ums</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</td><td rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">薫</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="14" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
+<tr><th rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</th><th rowspan="4" style="text-align:center">旧<br>字<br>体</th><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">薫</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="19" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
 <tr><td style="text-align:center">&#xfa26;</td><td style="text-align:center">&#xfa22;</td><td style="text-align:center">&#x7dd6;</td><td style="text-align:center">&#xfa16;</td><td style="text-align:center">&#x6a6b;</td><td style="text-align:center">都</td><td style="text-align:center">諸</td><td style="text-align:center">緒</td><td style="text-align:center">猪</td><td style="text-align:center">横</td></tr>
 <tr><td style="text-align:center">&#x7da0;</td><td style="text-align:center">&#x589e;</td><td style="text-align:center">&#x5fb7;</td><td style="text-align:center">&#xf929;</td><td style="text-align:center">&#x90de;</td><td style="text-align:center">緑</td><td style="text-align:center">増</td><td style="text-align:center">徳</td><td style="text-align:center">朗</td><td style="text-align:center">郎</td></tr>
 <tr><td style="text-align:center">&#x8cf4;</td><td style="text-align:center">&#x7028;</td><td style="text-align:center">&#x5bec;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center">頼</td><td style="text-align:center">瀬</td><td style="text-align:center">寛</td><td colspan="2" style="text-align:center"></td></tr>
-<tr><td colspan="2" rowspan="4" style="text-align:center">旧<br>字<br>体</td><td style="text-align:center">&#x9751;</td><td style="text-align:center">&#xfa12;</td><td style="text-align:center">&#x6df8;</td><td style="text-align:center">&#xfa1d;</td><td style="text-align:center">&#xfa1c;</td><td style="text-align:center">青</td><td style="text-align:center">晴</td><td style="text-align:center">清</td><td style="text-align:center">精</td><td style="text-align:center">靖</td></tr>
+<tr><th colspan="2" rowspan="4" style="text-align:center">旧字体</th><td style="text-align:center">&#x9751;</td><td style="text-align:center">&#xfa12;</td><td style="text-align:center">&#x6df8;</td><td style="text-align:center">&#xfa1d;</td><td style="text-align:center">&#xfa1c;</td><td style="text-align:center">青</td><td style="text-align:center">晴</td><td style="text-align:center">清</td><td style="text-align:center">精</td><td style="text-align:center">靖</td></tr>
 <tr><td style="text-align:center">&#x654e;</td><td style="text-align:center">&#xfa1e;</td><td style="text-align:center">&#x9592;</td><td style="text-align:center">&#xfa17;</td><td style="text-align:center">&#x9115;</td><td style="text-align:center">教</td><td style="text-align:center">羽</td><td style="text-align:center">間</td><td style="text-align:center">益</td><td style="text-align:center">郷</td></tr>
-<tr><td style="text-align:center">&#xfa2c;</td><td style="text-align:center">&#xfa2a;</td><td style="text-align:center">&#xfa2b;</td><td style="text-align:center">&#xfa10;</td><td style="text-align:center">&#x6085;</td><td style="text-align:center">館</td><td style="text-align:center">飯</td><td style="text-align:center">飼</td><td style="text-align:center">塚</td><td style="text-align:center">悦</td></tr>
-<tr><td style="text-align:center">&#x7501;</td><td style="text-align:center">&#xf9dc;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">瓶</td><td style="text-align:center">隆</td><td colspan="3" style="text-align:center"></td></tr>
-<tr><td rowspan="5" style="text-align:center">異<br>体<br>字</td><td rowspan="2" style="text-align:center">古<br>字</td><td rowspan="2" style="text-align:center">&#x51ec;</td><td rowspan="2" style="text-align:center">&#xfa18;</td><td colspan="3" rowspan="2" style="text-align:center"></td><td rowspan="2" style="text-align:center">風</td><td style="text-align:center">禮</td><td colspan="3" rowspan="2" style="text-align:center"></td></tr>
-<tr><td style="text-align:center">礼</td></tr>
-<tr><td rowspan="3" style="text-align:center">俗<br>字</td><td rowspan="2" style="text-align:center">&#x9ad9;</td><td rowspan="2" style="text-align:center">&#xfa11;</td><td rowspan="2" style="text-align:center">&#x6ff5;</td><td rowspan="2" style="text-align:center">&#x663b;</td><td rowspan="2" style="text-align:center">&#xfa2d;</td><td rowspan="2" style="text-align:center">高</td><td rowspan="2" style="text-align:center">崎</td><td style="text-align:center">濱</td><td rowspan="2" style="text-align:center">&#x6602;</td><td rowspan="2" style="text-align:center">鶴</td></tr>
-<tr><td style="text-align:center">浜</td></tr>
-<tr><td style="text-align:center">&#x6120;</td><td style="text-align:center">&#xfa14;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">慍</td><td style="text-align:center">欅</td><td colspan="3" style="text-align:center"></td></tr>
-<tr><td colspan="2" style="text-align:center">異体字</td><td style="text-align:center">&#xfa25;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">逸</td><td colspan="4" style="text-align:center"></td></tr>
+<tr><td style="text-align:center">&#xfa2c;</td><td style="text-align:center">&#xfa2a;</td><td style="text-align:center">&#xfa2b;</td><td style="text-align:center">&#xfa10;</td><td style="text-align:center">&#x7501;</td><td style="text-align:center">館</td><td style="text-align:center">飯</td><td style="text-align:center">飼</td><td style="text-align:center">塚</td><td style="text-align:center">瓶</td></tr>
+<tr><td style="text-align:center">&#xf9dc;</td><td style="text-align:center">&#x6085;</td><td colspan="3" style="text-align:center"></td><td style="text-align:center">隆</td><td style="text-align:center">悦</td><td colspan="3" style="text-align:center"></td></tr>
+<tr><th rowspan="10" style="text-align:center">異<br>体<br>字</th><th style="text-align:center">本字</th><td style="text-align:center">&#x88f5;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">裴</td><td colspan="4" style="text-align:center"></td></tr>
+<tr><th rowspan="2" style="text-align:center">古字</th><td rowspan="2" style="text-align:center">&#x51ec;</td><td rowspan="2" style="text-align:center">&#xfa18;</td><td rowspan="2" style="text-align:center">&#x52db;</td><td rowspan="2" style="text-align:center">&#x8d12;</td><td rowspan="2" style="text-align:center"></td><td rowspan="2" style="text-align:center">風</td><td style="text-align:center">禮</td><td style="text-align:center">勳</td><td rowspan="2" style="text-align:center">賢</td><td rowspan="2" style="text-align:center"></td></tr>
+<tr><td style="text-align:center">礼</td><td style="text-align:center">勲</td></tr>
+<tr><th rowspan="3" style="text-align:center">同字</th><td rowspan="2" style="text-align:center">&#x5db9;</td><td rowspan="2" style="text-align:center">&#x96af;</td><td rowspan="2" style="text-align:center">&#x5586;</td><td rowspan="2" style="text-align:center">&#x66fa;</td><td rowspan="2" style="text-align:center">&#xfa15;</td><td style="text-align:center">島</td><td style="text-align:center">島</td><td rowspan="2" style="text-align:center">哲</td><td rowspan="2" style="text-align:center">曹</td><td style="text-align:center">煕</td></tr>
+<tr><td style="text-align:center">嶋</td><td style="text-align:center">陦</td><td style="text-align:center">熙</td></tr>
+<tr><td style="text-align:center">&#x6998;</td><td style="text-align:center">&#x5d53;</td><td style="text-align:center">&#x710f;</td><td style="text-align:center">&#x6198;</td><td style="text-align:center"></td><td style="text-align:center">矩</td><td style="text-align:center">嵒</td><td style="text-align:center">亟</td><td style="text-align:center">憙</td><td style="text-align:center"></td></tr>
+<tr><th rowspan="4" style="text-align:center">俗字</th><td style="text-align:center">&#x9ad9;</td><td style="text-align:center">&#x66fb;</td><td style="text-align:center">&#x519d;</td><td style="text-align:center">&#xfa11;</td><td style="text-align:center">&#x6852;</td><td style="text-align:center">高</td><td style="text-align:center">昇</td><td style="text-align:center">宜</td><td style="text-align:center">崎</td><td style="text-align:center">桑</td></tr>
+<tr><td rowspan="2" style="text-align:center">&#x6801;</td><td rowspan="2" style="text-align:center">&#x6ff5;</td><td rowspan="2" style="text-align:center">&#x663b;</td><td rowspan="2" style="text-align:center">&#xfa2d;</td><td rowspan="2" style="text-align:center">&#xfa1f;</td><td rowspan="2" style="text-align:center">柳</td><td style="text-align:center">濱</td><td rowspan="2" style="text-align:center">昂</td><td rowspan="2" style="text-align:center">鶴</td><td style="text-align:center">臘</td></tr>
+<tr><td style="text-align:center">浜</td><td style="text-align:center">臈</td></tr>
+<tr><td style="text-align:center">&#x514a;</td><td style="text-align:center">&#xfa14;</td><td style="text-align:center">&#x6120;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center">兌</td><td style="text-align:center">欅</td><td style="text-align:center">慍</td><td colspan="2" style="text-align:center"></td></tr>
+<tr><th colspan="2" style="text-align:center">異体字</th><td style="text-align:center">&#xfa25;</td><td colspan="4" style="text-align:center"></td><td style="text-align:center">逸</td><td colspan="4" style="text-align:center"></td></tr>
 </tbody>
 </table>
 
@@ -322,7 +330,7 @@ framed パッケージが提供する framed 環境，shaded 環境
 
 <table>
 <tbody>
-<tr><td colspan="2">表外漢字</td><td>&#x5f34;</td><td>&#x5f45;</td><td>&#x9127;</td><td>&#x73c9;</td><td>&#x71c1;</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><th colspan="2">表外漢字</th><td>&#x4e28;</td><td>&#x9127;</td><td>&#x5f34;</td><td>&#x5f45;</td><td>&#x71c1;</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td colspan="12">他，多数</td></tr>
 </tbody>
 </table>
