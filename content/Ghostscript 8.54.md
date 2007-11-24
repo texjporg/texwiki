@@ -647,7 +647,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 - [GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
     - [GPL Ghostscript 8.61](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
-        （CJK ［中国語・日本語・韓國語］への対応が不充分）
+        （8.54 と同じように、CJK ［中国語・日本語・韓國語］への対応が不充分）
 
 - [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
 - GSview 4.9: [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
