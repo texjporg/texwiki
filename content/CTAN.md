@@ -78,12 +78,12 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
 #### HTTP/FTP {#f5f248f4}
 
 - [理化学研究所](http://www.riken.jp/)
-    - [http://ftp.riken.go.jp/tex-archive/](http://ftp.riken.go.jp/tex-archive/)
+    - [http://ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
 
-- [KDDI 研究所](http://www.kddlabs.co.jp/)
-    - [http://ftp.kddilabs.jp/pub/ctan/](http://ftp.kddilabs.jp/pub/ctan/)
-    - [http://ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-    - [http://ftp.kddilabs.jp/ctan/](http://ftp.kddilabs.jp/ctan/)
+- [KDDI 研究所](http://www.kddilabs.jp/)
+    - [http://ftp.ne.jp/pub/ctan/](http://ftp.ne.jp/pub/ctan/)
+    - [http://ftp.ne.jp/CTAN/](http://ftp.ne.jp/CTAN/)
+    - [http://ftp.ne.jp/ctan/](http://ftp.ne.jp/ctan/)
 
 - [山形大学](http://www.yamagata-u.ac.jp/index-j.html)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
