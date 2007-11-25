@@ -97,7 +97,7 @@ PDF を範囲指定してクロップできます。
 
 <table>
 <tbody>
-<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー付き EPS 画像"></td></tr>
+<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
 <tr><td>Illustrator 10.0.3 に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustrator から保存した EPS。</td></tr>
 </tbody>
 </table>
@@ -110,7 +110,7 @@ EPS を作るところまでは上と同じです。
 
 別の方法も後で書きますが，簡単かつ確実な方法は，「配置」ダイアログボックスの
 「リンク」チェックボックスをオンにすることです。dvips の出力する EPS には
-プレビュー画像が付いていませんので，配置してもただの箱に見えます。
+プレビュー画像が附いていませんので，配置してもただの箱に見えます。
 これでも PostScript デバイス（PS プリンタや Distiller \[Adobe PDF\]）に
 出力すれば，きれいに出ます。また，Illustrator から EPS で保存しても大丈夫です
 （保存時に「配置した画像を含む」チェックボックスをオンにします）。 
@@ -139,7 +139,7 @@ EPS にプレビューを付けておけば，
 times，mathpazo，txfonts，pxfonts 等のパッケージを使った場合は，dvips に
 PostScript Level 2 での基本35書体をダウンロードするオプションを付け
 （“-Ppdf” の代わりに teTeX なら“-Pdownload35”，W32TeX なら “-Pdl”），
-さらに Ghostscript 付属の Type 1 (PFB) フォントをやはり Illustrator から
+さらに Ghostscript 附属の Type 1 (PFB) フォントをやはり Illustrator から
 見える場所にコピーしておけばいいのではないかと思います（テストしていません）。
 
 ↑訂正1： txfonts の場合は config.ps に “p +txr2.map” という行を書くのでした
@@ -160,18 +160,26 @@ cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使い�
 （フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
 
 インストールの場所は，Adobe 製品だけから使うなら
-"/Library/Application Support/Adobe/Fonts/" 以下ですが，Mac OS X では
+/Library/"Application Support"/Adobe/Fonts/ 以下ですが，Mac OS X では
 Mxdvi も同じフォントを使うことを考えれば，次の場所のいずれかに
 入れるのがいいかもしれません。Mac OS X では次の順にフォントを探してくれます
 （→ 「[Mac OS X 10: フォントの保存場所とその目的](http://docs.info.apple.com/jarticle.html?artnum=106417)」）。
 
-1. "/Library/Application Support/" 以下（特定のアプリケーション用）
-    - "/Library/Application Support/Adobe/Fonts/" 以下（Adobe アプリケーション用）
-1. &#x7e;/Library/Fonts// (= /Users/$USER/Library/Fonts//) 以下（User ドメイン用。自分だけで使うなら）
+1. /Library/"Application Support"// 以下（特定のアプリケーション用）
+    - /Library/"Application Support"/Adobe/Fonts// 以下
+        （Adobe アプリケーション用）
+    - &#x7e;/Library/"Application Support"/Adobe/Fonts//
+        (= /Users/$USER/Library/"Application Support"/Adobe/Fonts//) 以下
+        （Adobe アプリケーションの User ドメイン用）
+
+1. &#x7e;/Library/Fonts// (= /Users/$USER/Library/Fonts//) 以下
+    （User ドメイン用。自分だけで使うなら）
+
 1. /Library/Fonts// 以下（Local ドメイン用。ローカルユーザ全員で使うなら）
 1. /Network/Library/Fonts// 以下（Network ドメイン用）
-1. /System/Library/Fonts/ （System ドメイン用。通常はここはいじらない）
-1. "/System Folder/Fonts/" （Classic ドメイン用。Classic 環境用だが Mac OS X でも使える）
+1. /System/Library/Fonts/ （System ドメイン用。通常はここにはさわらない）
+1. /"System Folder"/Fonts/
+    （Classic ドメイン用。Classic 環境用だが Mac OS X 10.4 \[PowerPC\] でも使える）
 
 私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，
 その中にまとめて入れました（Mac OS X 10.2 以降で可能）。
@@ -242,7 +250,8 @@ $ eps2eps testeq.eps testeq2.eps
 オプションも含んでいます）。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
+     >gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
+More? -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です
@@ -277,7 +286,8 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 なく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
+     >gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
+More? -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
 ```
 
 端が欠ける場合は “-dEPSCrop” を外せばいいようです。
