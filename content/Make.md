@@ -7,118 +7,131 @@ pukiwiki: "Make"
 
 # Make
 
-## UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール {#f27134a5}
+## UNIX 互換 OS での teTeX，pTeX，pLaTeX2e のインストール {#f27134a5}
 
-今は次のptetexを使う方法がお薦めです。下のほうに長々と書いてあることを読むと混乱しますので，読まないでください。
+今は次の ptetex3 を使う方法がお薦めです。
+下のほうに長々と書いてあることを読むと混乱しますので，読まないでください。
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
-teTeX は UNIX もしくは UNIX 互換 OS 用の TeX ディストリビューションです。
-[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
-は teTeX と pTeX 一式を簡単にインストールするための土村さん作のツールです。
-[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) の [全動作報告](http://tutimura.ath.cx/ptetex/?%C1%B4%C6%B0%BA%EE%CA%F3%B9%F0) に多数の例が挙がっているので参考になさるとよいでしょう。
-ここでは2005年2月に出た新しい teTeX-3.0 とそれをベースにした pTeX
-を，ptetex3 を使ってインストールしてみます。
+[teTeX](http://www.tug.org/tetex/) は
+UNIX もしくは UNIX 互換 OS 用の TeX ディストリビューション
+です。[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) は
+teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単に
+インストールするための土村さん作のツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に
+多数の例が挙がっているので，参考になさるとよいでしょう。
+ここでは2005年2月に出た新しい teTeX-3.0 と
+それをベースにした pTeX を，ptetex3 を使ってインストールしてみます。
 
-まず、あらかじめ C 言語のコンパイラや X Window 用ソフトの開発環境等をインストールしておきます。
-また、(必須ではありませんが) ghostscript の日本語対応がなされているものをインストールしておくとよいでしょう。海外の Linux ディストリビューションでは、標準の ghostscript では日本語対応が乏しいケースもあるようです。 <!-- 2005年10月以降、md5, gmd5sum 等は自動判定で使い分けるようになりました。GNU sed ももう不要です。 --> <!-- //Mac OS Xの場合は，あらかじめ --> <!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] --> <!-- //に含まれるmd5sumコマンドをインストールしておくか、my_option というファイルを作って --> <!-- // MD5CHECK=md5check --> <!-- //と書いておきます。 --> <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は 2005/ 6/27 以降は不要になりました。 -->
+まず，あらかじめ C 言語のコンパイラや X Window 用ソフトの開発環境等を
+インストールしておきます。また，（必須ではありませんが） [Ghostscript](/Ghostscript/) の
+日本語対応がなされているものをインストールしておくとよいでしょう。
+海外の Linux ディストリビューションに含まれている標準の Ghostscript では
+日本語対応が乏しいケースもあるようです。 <!-- 2005年10月以降，md5, gmd5sum 等は自動判定で使い分けるようになりました。 --> <!-- GNU sed ももう不要です。 --> <!-- //Mac OS X の場合は，あらかじめ --> <!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] に含まれる --> <!-- //md5sum コマンドをインストールしておくか，my_option というファイルを作って --> <!-- // MD5CHECK=md5check --> <!-- //と書いておきます。 --> <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は --> <!-- //2005/6/27 以降は不要になりました。 -->
 
-/var/tmp/ptetex3/tetex-src-3.0 と /usr/local/teTeX と ~/.texmf-var と ~/.texmf-conf と ~/texmf
-がすでにある場合は消すか名前を変えておきます。
+/var/tmp/ptetex3/tetex-src-3.0/ と /usr/local/teTeX/ と ~/texmf/
+と ~/.texmf-conf/ と ~/.texmf-var/ とがすでにある場合には，
+消すか名前を変えておきます。
 
 適当なディレクトリを作り，その中に
-[tetex-src-3.0.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
-[tetex-texmf-3.0po.tar.gz](https://mirror.ctan.org/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
-[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz (最新の日付のもの), <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% (←もう不要) -->
-をダウンロードし，その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
+[tetex-src-3.0.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
+[tetex-texmf-3.0po.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
+[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz （最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
+をダウンロードし，
+その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
 ```
-tar xzvf ptetex3-20YYMMDD.tar.gz
-cd ptetex3-20YYMMDD
-cp my_option.sample ../my_option (オプションを変更したいなら)
+$ tar xvzf ptetex3-20YYMMDD.tar.gz
+$ cd ptetex3-20YYMMDD
+$ cp my_option.sample ../my_option （オプションを変更したいのなら）
 ```
 
-オプションを変更したいならこのmy_optionというファイルを適宜編集します。
-そして、以下を実行します。
+オプションを変更したいのなら，この my_option というファイルを適宜編集します。
+そして，以下を実行します。
 
 ```
-make
+$ make
 ```
 
-あるいは、otf, bable 対応を含めるなら、
+あるいは，otf，bable 対応を含めるなら
 
 ```
-make all3
+$ make all3
 ```
 
-あるいは、個別に実行するなら、
+あるいは，個別に実行するなら
 
 ```
-make all0
-make otf (オプション)
-make babel (オプション)
-make font
-make test
+$ make all0
+$ make otf （オプション）
+$ make babel （オプション）
+$ make font
+$ make test
 ```
 
-Macでは "make font" で <!-- （ターミナルをUTF-8にしておくと） // たぶんしておかなくても -->
-何回かヒラギノ何とかと聞いてきますので，それについてはyと答えます。
-面倒なら、"make fonty" とすると、すべての質問に yes と答えたことになります。
-"make (all3)" では "make fonty" も含めて実行しますので、気にしなくて大丈夫です。
-（make の引数については、
-[ptetex make のターゲット](http://tutimura.ath.cx/ptetex/?make%A4%CE%A5%BF%A1%BC%A5%B2%A5%C3%A5%C8)
-が参考になります。）
+Mac OS X では “make font” で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
+何回かヒラギノ何とかと聞いてきますので，それについては “y” と答えます。
+面倒なら “make fonty” とすると，すべての質問に yes と答えたことに
+なります。“make (all3)” では “make fonty” も含めて実行しますので，
+気にしなくて大丈夫です（make の引数に
+ついては，[ptetexWiki:make のターゲット](http://tutimura.ath.cx/ptetex/?make%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88)
+が参考になります）。
 
-"make (all3)" あるいは "make test" で簡単な動作テストをします。ここまで root 権限は必要ありません。
-Macでは "make test" の前にX11を立ち上げておきます
-（あるいはmy_optionでxdviを使わない設定にします）。
-UTF + ps2pdfでエラーが出ても、大きな問題はないので、気にしないでおきます。
-（my_optionでps2pdfをテストしないようにもできます。）
+“make (all3)” あるいは “make test” で簡単な動作テストをします。
+ここまで root 権限は必要ありません。Mac OS X では “make test” の前に
+X11 を立ち上げておきます
+（あるいは my_option で xdvi を使わない設定にします）。UTF + ps2pdf で
+エラーが出ても大きな問題はないので，気にしないでおきます
+（my_option で ps2pdf をテストしないようにもできます）。
 
-動作確認がすんだら、いよいよシステムにインストールしましょう。
-
-```
-make install (必要に応じてsuしたりsudoを付けたりします)
-```
-
-/usr/local/teTeX/bin にパスを通します。
-
-フォントについての設定は updmap（個人ごと）または updmap-sys（システム全体、root 権限が必要）で行います。
-例えば dvips はデフォルトでは基本35書体（欧文）を埋め込みませんが，埋め込むようにするには次のようにします。
+動作確認が終わったら，いよいよシステムにインストールしましょう。
 
 ```
-updmap-sys --setoption dvipsDownloadBase35 true
+$ make install （必要に応じて su したり sudo を付けたりします）
 ```
 
-Macではさらに次のようにしてヒラギノ（和文）を埋め込むようにできます。
+/usr/local/teTeX/bin/ にパスを通します。
 
-<!-- (2006年4月以降の ptetex3) -->
-
-```
-updmap-sys --setoption kanjiEmbed hiragino
-
-```
-
-<!-- (2006年3月以前) -->
-<!-- updmap-sys - -nomkmap - -disable otf-noEmbeddedFont.map -->
-<!-- updmap-sys - -enable KanjiMap otf-hiraginox.map -->
-
-逆に和文フォントを埋め込まないようにするには次のようにします。
-（これがディフォルトです。）
+フォントについての設定は updmap （個人ごと）
+または updmap-sys （システム全体，root 権限が必要）で行います。例えば
+[dvips](/dvips/) はデフォルトでは PostScript Level 2 での（欧文用）基本35書体を
+埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
-updmap-sys --setoption kanjiEmbed noEmbed
+# updmap-sys --setoption dvipsDownloadBase35 true
 ```
 
-xdviはsrc specialsに対応しています。
-Emacsで使う場合は，[YaTeX](/YaTeX/)の設定はREADMEに書いてあります。
-[AUCTeX](/AUCTeX/)でも使えます。
-/usr/local/teTeX/share/texmf/xdvi/XDvi
-でemacsclientを呼び出すようにしてありますが，Carbon Emacsなら
-/Applications/Emacs.app/Contents/MacOS/bin/emacsclient にしておきます（他の場所でも設定可）。
+Mac OS X ではさらに次のようにして
+（和文用の）[ヒラギノ](http://www.screen.co.jp/ga_product/sento/)を
+埋め込むようにできます。
 
-<!-- 途中でエラーが出ますが，/usr/local/teTeX/share/texmf/fonts/opentype/ -->
-<!-- に STSongStd-Light-Acro.otf，MSungStd-Light-Acro.otf，HYSMyeongJoStd-Medium-Acro.otf -->
+<!-- （2006年4月以降の ptetex3） -->
+
+```
+$ sudo updmap-sys --setoption kanjiEmbed hiragino
+
+```
+
+<!-- （2006年3月以前） -->
+<!-- $ sudo updmap-sys - -nomkmap - -disable otf-noEmbeddedFont.map -->
+<!-- $ sudo updmap-sys - -enable KanjiMap otf-hiraginox.map -->
+
+逆に和文用フォントを埋め込まないようにするには次のようにします
+（これがディフォルトです）。
+
+```
+# updmap-sys --setoption kanjiEmbed noEmbed
+```
+
+xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
+場合には，[YaTeX](/YaTeX/) の設定は README に書いてあります。[AUCTeX](/AUCTeX/) でも
+使えます。/usr/local/teTeX/share/texmf/xdvi/XDvi で emacsclient を
+呼び出すようにしてありますが，Carbon Emacs なら
+/Applications/Emacs.app/Contents/MacOS/bin/emacsclient にしておきます
+（他の場所でも設定可）。
+
+<!-- 途中でエラーが出ますが，/usr/local/teTeX/share/texmf/fonts/opentype/ に -->
+<!-- STSongStd-Light-Acro.otf，MSungStd-Light-Acro.otf，HYSMyeongJoStd-Medium-Acro.otf -->
 <!-- のシンボリックリンクを張っておけば通ります。 -->
 
 ***
