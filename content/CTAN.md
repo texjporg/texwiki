@@ -42,7 +42,7 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
         （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [http://www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)
         （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/radix/) の機能を利用して
+        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html) の機能を利用して
         近傍のサーバへ誘導）
     - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)
         （空いているサーバ優先……
@@ -54,7 +54,7 @@ TeX 関連のソフトやスタイルファイルを集めたサイトです。
         （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [ftp://ftp.t.ring.gr.jp/pub/text/CTAN/](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/)
         （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/radix/) の機能を利用して
+        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html) の機能を利用して
         近傍のサーバへ誘導）
     - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)
         （空いているサーバ優先……
