@@ -16,32 +16,30 @@ pukiwiki: "CTAN"
 CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は
 TeX 関連のソフトやスタイルファイルを集めたサイトです。
 
-米国のサイトは [http://www.ctan.org/](http://www.ctan.org/) ですが，日本語で検索できるミラーサイト
-[Ring Server](https://mirror.ctan.org/../../../)
-をお勧めします（Ring Server のトップページが英語表記になるようでしたら，
+米国のサイトは [http://www.ctan.org/](http://www.ctan.org/) ですが，
+日本語で検索できるミラーサイト [Ring Server](https://mirror.ctan.org/../../../) をお勧めします
+（Ring Server のトップページが英語表記になるようでしたら，
 ［日本語］というボタンを押してください）。
 
 この Ring Server のページを少し下にスクロールすると右に「検索」と書いた
 犬の絵が見えますので，ここをクリックすれば検索の画面になります。
 
-上からたどっていくには
-[Ring Server の /pub/text/CTAN/](https://mirror.ctan.org/./)
-から始めればいいでしょう。
+上からたどっていくには [Ring Server の /pub/text/CTAN/](https://mirror.ctan.org/./) から
+始めればいいでしょう。
 
-【注意】： [Ring Server](https://mirror.ctan.org/../../../)
-は複数のファイルサーバの集合体です。
+【注意】 [Ring Server](https://mirror.ctan.org/../../../) は複数のファイルサーバの集合体です。
 下の方に一覧がありますので，ご自分のところからネットワーク的に近いサーバを
-一つ選んでブックマーク（お気に入り）に入れておくと便利です。
-CTAN 以外にもたくさんのフリーソフトをミラーしています。
-以下のような DNS による負荷分散も実験的に行われています。
+一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN 以外にも
+たくさんのフリーソフトをミラーしています。
+以下のような DNS による負荷分散も実験的に行われています
 （[Ring Server](https://mirror.ctan.org/../../../) の
 「[利用者の皆様の声 &amp; FAQ](https://mirror.ctan.org/../../../ring/uvoice.html)」の
 ページの「TENBIN，DNS BALANCEって何ですか？
-また、RingServerでの負荷分散はどのように行っているのですか？」の項目参照。）
+また、RingServerでの負荷分散はどのように行っているのですか？」の項目参照）。
 
 - HTTP
     - [http://www.ring.gr.jp/pub/text/CTAN/](https://mirror.ctan.org/./)
-        （代表 URL ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+        （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [http://www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)
         （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
         及び [RADIX](http://www.toyama.net/~ikuo/radix/) の機能を利用して
@@ -53,7 +51,7 @@ CTAN 以外にもたくさんのフリーソフトをミラーしています。
 
 - FTP
     - [ftp://ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)
-        （代表 URL ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+        （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [ftp://ftp.t.ring.gr.jp/pub/text/CTAN/](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/)
         （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
         及び [RADIX](http://www.toyama.net/~ikuo/radix/) の機能を利用して
@@ -83,10 +81,9 @@ CTAN 以外にもたくさんのフリーソフトをミラーしています。
     - [http://ftp.riken.go.jp/tex-archive/](http://ftp.riken.go.jp/tex-archive/)
 
 - [KDDI 研究所](http://www.kddlabs.co.jp/)
+    - [http://ftp.kddilabs.jp/pub/ctan/](http://ftp.kddilabs.jp/pub/ctan/)
     - [http://ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
     - [http://ftp.kddilabs.jp/ctan/](http://ftp.kddilabs.jp/ctan/)
-    - [http://ftp.kddilabs.jp/pub/ctan/](http://ftp.kddilabs.jp/pub/ctan/)
-    - [http://ftp.kddilabs.jp/21/ctan/](http://ftp.kddilabs.jp/21/ctan/)
 
 - [山形大学](http://www.yamagata-u.ac.jp/index-j.html)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
