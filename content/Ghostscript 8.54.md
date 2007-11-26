@@ -45,10 +45,10 @@ $ sudo make install
 
 すると，次のものが /usr/local/teTeX/bin/ に入ります。
 
-> bdftops dumphint dvipdf eps2eps fixmswrd.pl font2c gs gsbj gsdj
-> gsdj500 gslj gslp gsnd lprsetup.sh pdf2dsc pdf2ps pdfopt pf2afm
-> pfbtopfa printafm ps2ascii ps2epsi ps2pdf ps2pdf12 ps2pdf13
-> ps2pdf14 ps2pdfwr ps2ps pv.sh unix-lpr.sh wftopfa
+> bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj, gsdj,
+> gsdj500, gslj, gslp, gsnd, lprsetup.sh, pdf2dsc, pdf2ps, pdfopt, pf2afm,
+> pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
+> ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
 
 また，/usr/local/teTeX/share/ghostscript/8.54/ の下に
 たくさんのものが入ります。/usr/local/teTeX/man/man1/ と
@@ -548,7 +548,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 %%% TrueType outline fonts in Microsoft Office 2004 for Mac
 %%% See http://www.microsoft.com/japan/mac/products/office2004/default.mspx
-%%%     "/Applications/Microsoft Office 2004/Office/Fonts/"
+%%%     /Applications/"Microsoft Office 2004"/Office/Fonts/
 /MS-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/Applications/Microsoft Office 2004/Office/Fonts/MS Mincho.ttf)  >> ;
 /MS-PMincho                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/Applications/Microsoft Office 2004/Office/Fonts/MS PMincho.ttf) >> ;
 /MS-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/Applications/Microsoft Office 2004/Office/Fonts/MS Gothic.ttf)  >> ;
@@ -645,19 +645,36 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 [Ring Server](http://www.ring.gr.jp/) からインストールプログラムを入手します。
 
-- [GPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
-    - [GPL Ghostscript 8.61](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
-        （8.54 と同じように、CJK ［中国語・日本語・韓國語］への対応が不充分）
+- Ghostscript のインストーラ（次のうち，1つをインストールすれば良い）
+    - GPL Ghostscript 8.54:
 
-- [AFPL Ghostscript 8.54](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
-- GSview 4.9: [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
-    - [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w64.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
-        （x86_64/x64 \[AMD64, Intel 64\] 対応版）
-        <!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
-        <!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
-        <!-- x86-64 （AMD64 の旧称，AMD64 と Intel 64 の総称としても使われる） -->
-        <!-- EM64T （Intel 64 の旧称） -->
-        <!-- IA-32e （EM64T の旧称） -->
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full-gpl.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
+
+- GPL Ghostscript 8.61:
+
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs861w32full-gpl.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
+
+- GPL Ghostscript 8.54 と同じように，CJK ［中国語・日本語・韓國語］への対応が不充分
+    - AFPL Ghostscript 8.54:
+
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
+
+- GPL Ghostscript 8.54 と機能は同じ
+- Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
+    - GSview 4.9:
+
+> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
+
+- x64 \[AMD64, Intel 64\] 対応版：
+
+> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w64.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
+
+<!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
+<!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
+<!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
+<!-- x86-64 （AMD64 の旧称。AMD64 と Intel 64 の総称としても使われる） -->
+<!-- EM64T （Intel 64 の旧称） -->
+<!-- IA-32e （EM64T の旧称） -->
 
 ### インストール {#a4d9c6ea}
 
@@ -834,7 +851,7 @@ composefont pop
 - HiraMinStdN-W2-{UniJIS-UTF16,Identity}-{H,V}
 
 > 【注意】ここで，例えば “STSong-Light-{UniGB-UTF16,Identity}-{H,V}” と
-> いうのは次の4ファイルのことを指します。
+> いうのは次の4つのファイルのことを指します。
 >
 > - STSong-Light-UniGB-UTF16-H
 > - STSong-Light-UniGB-UTF16-V
