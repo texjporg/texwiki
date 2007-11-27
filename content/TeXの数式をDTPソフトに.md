@@ -41,6 +41,15 @@ TrueType 形式の Computer Modern フォントの一つである BaKoMa フォ�
 
 複雑な数式は EPS などの形式でインポートします。 
 
+### お手軽なツールを使う方法 (Windows) {#oe0e5138}
+
+Windows 環境の場合，TeX の数式をクリック一つで EPS 形式の画像に変換する
+ツール [TeX2img](http://island.geocities.jp/loveinequality/) があります。
+コマンドラインを使いたくない人は，このツールで EPS ファイルを
+生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
+
+### コマンドラインを使う方法 {#ma3ea888}
+
 例えば次の数式を作ってみましょう。 
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
@@ -250,8 +259,7 @@ $ eps2eps testeq.eps testeq2.eps
 オプションも含んでいます）。
 
 ```
-     >gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
-More? -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
+>gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です
@@ -286,8 +294,7 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 なく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
 
 ```
-     >gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
-More? -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
+ >gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
 ```
 
 端が欠ける場合は “-dEPSCrop” を外せばいいようです。
