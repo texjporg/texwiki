@@ -102,8 +102,8 @@ make install （必要に応じて su したり sudo を付けたりします）
 updmap-sys --setoption dvipsDownloadBase35 true
 ```
 
-Mac OS X ではさらに次のようにして
-（和文用の）[ヒラギノ](http://www.screen.co.jp/ga_product/sento/)を
+Mac OS X ではさらに次のようにして dvipdfmx で
+（和文用の）[ヒラギノ](http://www.screen.co.jp/ga_product/sento/)を <!-- Mac のヒラギノと、商品のヒラギノは同一である保証はあるのでしょうか。 --> <!-- そうでないなら↑このリンクは不適切のような気がします。 --> <!-- // 「SCREEN｜ヒラギノと Mac OS X のバージョン相関表 (Mac OS X 10.5)」 --> <!-- // http://www.screen.co.jp/ga_product/sento/support/otf_ver2.html --> <!-- // に --> <!-- // 「ヒラギノOpenTypeには、Mac OS X バンドル版（6書体）と --> <!-- // 弊社製品版（ヒラギノ専用仮名書体を含め全54書体）がありますが、 --> <!-- // フォント名とバージョンが同じなら両者の仕様は同一です。」 --> <!-- // とあるので，同一だと思います。 -->
 埋め込むようにできます。
 
 <!-- （2006年4月以降の ptetex3） -->
