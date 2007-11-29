@@ -54,7 +54,7 @@ cp my_option.sample ../my_option （オプションを変更したいのなら�
 make
 ```
 
-あるいは，OTF, Bable 対応を含めるなら，
+あるいは，OTF，Bable 対応を含めるなら，
 
 ```
 make all3
@@ -99,29 +99,29 @@ make install （必要に応じて su したり sudo を付けたりします）
 埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
-updmap-sys --setoption dvipsDownloadBase35 true
+updmap --setoption dvipsDownloadBase35 true
 ```
 
 Mac OS X ではさらに次のようにして dvipdfmx で
-（和文用の）[ヒラギノ](http://www.screen.co.jp/ga_product/sento/)を <!-- Mac のヒラギノと、商品のヒラギノは同一である保証はあるのでしょうか。 --> <!-- そうでないなら↑このリンクは不適切のような気がします。 --> <!-- // 「SCREEN｜ヒラギノと Mac OS X のバージョン相関表 (Mac OS X 10.5)」 --> <!-- // http://www.screen.co.jp/ga_product/sento/support/otf_ver2.html --> <!-- // に --> <!-- // 「ヒラギノ OpenType には、Mac OS X バンドル版（6書体）と --> <!-- // 弊社製品版（ヒラギノ専用仮名書体を含め全54書体）がありますが、 --> <!-- // フォント名とバージョンが同じなら両者の仕様は同一です。」 --> <!-- // とあるので，同一だと思います。 --> <!-- // // 6書体と54書体の違いがあるので、「OS X のヒラギノ」と --> <!-- // // 「商品のヒラギノ」は概念としては別物だという気がします。 --> <!-- // // つまり、ここで SCREEN にリンクを張るのには違和感を覚えます。 --> <!-- // // Apple のページならよいと思います。例えば以下ではどうでしょう。 --> <!-- // // http://www.apple.com/jp/pro/design/typography/01/index2.html -->
+（和文用の）[ヒラギノ](http://www.screen.co.jp/ga_product/sento/)を <!-- Mac のヒラギノと、商品のヒラギノは同一である保証はあるのでしょうか。 --> <!-- そうでないなら↑このリンクは不適切のような気がします。 --> <!-- // 「SCREEN｜ヒラギノと Mac OS X のバージョン相関表 (Mac OS X 10.5)」 --> <!-- // http://www.screen.co.jp/ga_product/sento/support/otf_ver2.html --> <!-- // に --> <!-- // 「ヒラギノ OpenType には、Mac OS X バンドル版（6書体）と --> <!-- // 弊社製品版（ヒラギノ専用仮名書体を含め全54書体）がありますが、 --> <!-- // フォント名とバージョンが同じなら両者の仕様は同一です。」 --> <!-- // とあるので，同一だと思います。 --> <!-- // // 6書体と54書体の違いがあるので、「OS X のヒラギノ」と --> <!-- // // 「商品のヒラギノ」は概念としては別物だという気がします。 --> <!-- // // つまり、ここで SCREEN にリンクを張るのには違和感を覚えます。 --> <!-- // // Apple のページならよいと思います。例えば以下ではどうでしょう。 --> <!-- // // http://www.apple.com/jp/pro/design/typography/01/index2.html --> <!-- // // // いいですね。先頭のウェブサイトから始める方が良いと思うので， --> <!-- // // // http://www.apple.com/jp/pro/design/typography/01/ --> <!-- // // // でどうですか？ -->
 埋め込むようにできます。
 
 <!-- （2006年4月以降の ptetex3） -->
 
 ```
-updmap-sys --setoption kanjiEmbed hiragino
+updmap --setoption kanjiEmbed hiragino
 
 ```
 
 <!-- （2006年3月以前） -->
-<!-- updmap-sys - -nomkmap - -disable otf-noEmbeddedFont.map -->
-<!-- updmap-sys - -enable KanjiMap otf-hiraginox.map -->
+<!-- updmap - -nomkmap - -disable otf-noEmbeddedFont.map -->
+<!-- updmap - -enable KanjiMap otf-hiraginox.map -->
 
 逆に和文フォントを埋め込まないようにするには次のようにします
 （これがディフォルトです）。
 
 ```
-updmap-sys --setoption kanjiEmbed noEmbed
+updmap --setoption kanjiEmbed noEmbed
 ```
 
 xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
