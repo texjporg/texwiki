@@ -42,32 +42,32 @@ X Window System 用ソフトウェアの開発環境等をインストールし�
 その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
 ```
-tar xvzf ptetex3-20YYMMDD.tar.gz
-cd ptetex3-20YYMMDD
-cp my_option.sample ../my_option （オプションを変更したいのなら）
+$ tar xvzf ptetex3-20YYMMDD.tar.gz
+$ cd ptetex3-20YYMMDD
+$ cp my_option.sample ../my_option （オプションを変更したいのなら）
 ```
 
 オプションを変更したいのなら，この my_option というファイルを適宜編集します。
 そして，以下を実行します。
 
 ```
-make
+$ make
 ```
 
 あるいは，OTF，Bable 対応を含めるなら，
 
 ```
-make all3
+$ make all3
 ```
 
 あるいは，個別に実行するなら，
 
 ```
-make all0
-make otf   （オプション）
-make babel （オプション）
-make font
-make test
+$ make all0
+$ make otf   （オプション）
+$ make babel （オプション）
+$ make font
+$ make test
 ```
 
 Mac OS X では "make font" で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
@@ -88,7 +88,7 @@ X11 を立ち上げておきます
 動作確認が終わったら，いよいよシステムにインストールしましょう。
 
 ```
-make install （必要に応じて su したり sudo を付けたりします）
+$ make install （必要に応じて su したり sudo を付けたりします）
 ```
 
 /usr/local/teTeX/bin にパスを通します。
@@ -99,7 +99,7 @@ make install （必要に応じて su したり sudo を付けたりします）
 埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
-updmap --setoption dvipsDownloadBase35 true
+$ updmap --setoption dvipsDownloadBase35 true
 ```
 
 Mac OS X ではさらに次のようにして dvipdfmx で
@@ -109,19 +109,19 @@ Mac OS X ではさらに次のようにして dvipdfmx で
 <!-- （2006年4月以降の ptetex3） -->
 
 ```
-updmap --setoption kanjiEmbed hiragino
+$ updmap --setoption kanjiEmbed hiragino
 
 ```
 
 <!-- （2006年3月以前） -->
-<!-- updmap - -nomkmap - -disable otf-noEmbeddedFont.map -->
-<!-- updmap - -enable KanjiMap otf-hiraginox.map -->
+<!-- $ updmap - -nomkmap - -disable otf-noEmbeddedFont.map -->
+<!-- $ updmap - -enable KanjiMap otf-hiraginox.map -->
 
 逆に和文フォントを埋め込まないようにするには次のようにします
 （これがディフォルトです）。
 
 ```
-updmap --setoption kanjiEmbed noEmbed
+$ updmap --setoption kanjiEmbed noEmbed
 ```
 
 xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
