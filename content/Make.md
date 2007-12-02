@@ -42,32 +42,40 @@ X Window System 用ソフトウェアの開発環境等をインストールし�
 その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
 ```
-$ tar xvzf ptetex3-20YYMMDD.tar.gz
-$ cd ptetex3-20YYMMDD
-$ cp my_option.sample ../my_option （オプションを変更したいのなら）
+tar xvzf ptetex3-20YYMMDD.tar.gz
+cd ptetex3-20YYMMDD
+cp my_option.sample ../my_option （オプションを変更したいのなら）
 ```
+
+<!-- shell プロンプトの $ は，わざと書いてないのだと思います． -->
+<!-- 初心者が "$" も含めて入力するという事故を防ぐため， -->
+<!-- このページは奥村さんが「敢えて」書かないスタイルで統一されたものと思います． -->
+<!-- 私もこれに賛成です。ちなみに，shell プロンプトには， -->
+<!-- ユーザの $ と root の # という使い分けの習慣があることもお忘れなく． -->
+<!-- // さらに (ba)sh と (t)csh では -->
+<!-- // User のプロンプトが $ と % のように違います。 -->
 
 オプションを変更したいのなら，この my_option というファイルを適宜編集します。
 そして，以下を実行します。
 
 ```
-$ make
+make
 ```
 
 あるいは，OTF，Bable 対応を含めるなら，
 
 ```
-$ make all3
+make all3
 ```
 
 あるいは，個別に実行するなら，
 
 ```
-$ make all0
-$ make otf   （オプション）
-$ make babel （オプション）
-$ make font
-$ make test
+make all0
+make otf   （オプション）
+make babel （オプション）
+make font
+make test
 ```
 
 Mac OS X では "make font" で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
@@ -88,7 +96,7 @@ X11 を立ち上げておきます
 動作確認が終わったら，いよいよシステムにインストールしましょう。
 
 ```
-$ make install （必要に応じて su したり sudo を付けたりします）
+make install （必要に応じて su したり sudo を付けたりします）
 ```
 
 /usr/local/teTeX/bin にパスを通します。
@@ -99,23 +107,23 @@ $ make install （必要に応じて su したり sudo を付けたりします�
 埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
-$ updmap --setoption dvipsDownloadBase35 true
+updmap --setoption dvipsDownloadBase35 true
 ```
 
 さらに Mac OS X では，次のように
 して[システムに搭載されている（和文用の）ヒラギノ基本6書体](http://www.apple.com/jp/pro/design/typography/01/)を
-dvipdfmx で埋め込むようにできます。 <!-- Mac のヒラギノと、商品のヒラギノは同一である保証はあるのでしょうか。 --> <!-- そうでないなら↑このリンクは不適切のような気がします。 --> <!-- // 「SCREEN｜ヒラギノと Mac OS X のバージョン相関表 (Mac OS X 10.5)」 --> <!-- // http://www.screen.co.jp/ga_product/sento/support/otf_ver2.html --> <!-- // に --> <!-- // 「ヒラギノ OpenType には、Mac OS X バンドル版（6書体）と --> <!-- // 弊社製品版（ヒラギノ専用仮名書体を含め全54書体）がありますが、 --> <!-- // フォント名とバージョンが同じなら両者の仕様は同一です。」 --> <!-- // とあるので，同一だと思います。 --> <!-- // // 6書体と54書体の違いがあるので、「OS X のヒラギノ」と --> <!-- // // 「商品のヒラギノ」は概念としては別物だという気がします。 --> <!-- // // つまり、ここで SCREEN にリンクを張るのには違和感を覚えます。 --> <!-- // // Apple のページならよいと思います。例えば以下ではどうでしょう。 --> <!-- // // http://www.apple.com/jp/pro/design/typography/01/index2.html --> <!-- // // // いいですね。先頭のウェブサイトから始める方が良いと思うので， --> <!-- // // // http://www.apple.com/jp/pro/design/typography/01/ --> <!-- // // // でどうですか？ --> <!-- // 商品のヒラギノを買えば，Mac OS X に限らず Cygwin でも --> <!-- // 同じ updmap の設定でヒラギノを埋め込めます。 --> <!-- // そのため Apple のウェブサイトに限定する必要は無く， --> <!-- // 大日本スクリーン製造へのリンクの方が良いと考えます。 --> <!-- // // むしろ，販売元の大日本スクリーン製造ではなく製作元の字游工房 --> <!-- // // http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001 --> <!-- // // にリンクを貼るべきではないですか？ --> <!-- // // // ptetex3 の対応しているのは、おそらく OS X のヒラギノのみでしょう。 --> <!-- // // // Cygwin では OTF に対する処理が 7font-search.sh にありませんので、 --> <!-- // // // 商品のヒラギノが Mac と同じ手順で使えるとは思えません。本当に使えてますか？ --> <!-- // // // // 現在 Windows が手元に無く， --> <!-- // // // // そもそも Windows 用のヒラギノフォントを持っていないので --> <!-- // // // // 確認はできませんが，手動でヒラギノのフォントファイルを --> <!-- // // // // $TEXMFLOCAL/fonts/opentype/ --> <!-- // // // // (= /usr/local/teTeX/share/texmf-local/fonts/opentype/ --> <!-- // // // //  = C:\cygwin\usr\local\teTeX\share\texmf-local\fonts\opentype\) --> <!-- // // // // 以下のディレクトリに --> <!-- // // // // 「PostScript名 + “.otf”」というファイル名で --> <!-- // // // // コピーするかシンボリックリンクを貼っておけば， --> <!-- // // // //  $ updmap - -setoption kanjiEmbed hiragino --> <!-- // // // // の実行によって少なくとも dvipdfmx では使えるのではないですか？ --> <!-- Cygwin では下準備が自動化されていないということですね。 --> <!-- Mac なら下準備も自動化されているので、わざわざここで言及してあるのでしょう。 --> <!-- この段落の先頭には「Mac OS X ではさらに次のようにして..」とあるのにもご注目。 --> <!-- そもそも商品の54書体を買ったところで、バンドルと等価な6書体しか使えません。 --> <!-- 大日本スクリーンへのリンクは、54書体が使えるという誤解を生みそうです。 --> <!-- // 色々な案が出てきているので，その複合案として書き換えてみました。 --> <!-- // 大日本スクリーン製造へのリンクは --> <!-- // 基本6書体パックへのリンクとしてみました。 -->
+dvipdfmx で埋め込むようにできます。 <!-- Mac のヒラギノと、商品のヒラギノは同一である保証はあるのでしょうか。 --> <!-- そうでないなら↑このリンクは不適切のような気がします。 --> <!-- // 「SCREEN｜ヒラギノと Mac OS X のバージョン相関表 (Mac OS X 10.5)」 --> <!-- // http://www.screen.co.jp/ga_product/sento/support/otf_ver2.html --> <!-- // に --> <!-- // 「ヒラギノ OpenType には、Mac OS X バンドル版（6書体）と --> <!-- // 弊社製品版（ヒラギノ専用仮名書体を含め全54書体）がありますが、 --> <!-- // フォント名とバージョンが同じなら両者の仕様は同一です。」 --> <!-- // とあるので，同一だと思います。 --> <!-- // // 6書体と54書体の違いがあるので、「OS X のヒラギノ」と --> <!-- // // 「商品のヒラギノ」は概念としては別物だという気がします。 --> <!-- // // つまり、ここで SCREEN にリンクを張るのには違和感を覚えます。 --> <!-- // // Apple のページならよいと思います。例えば以下ではどうでしょう。 --> <!-- // // http://www.apple.com/jp/pro/design/typography/01/index2.html --> <!-- // // // いいですね。先頭のウェブサイトから始める方が良いと思うので， --> <!-- // // // http://www.apple.com/jp/pro/design/typography/01/ --> <!-- // // // でどうですか？ --> <!-- // 商品のヒラギノを買えば，Mac OS X に限らず Cygwin でも --> <!-- // 同じ updmap の設定でヒラギノを埋め込めます。 --> <!-- // そのため Apple のウェブサイトに限定する必要は無く， --> <!-- // 大日本スクリーン製造へのリンクの方が良いと考えます。 --> <!-- // // むしろ，販売元の大日本スクリーン製造ではなく製作元の字游工房 --> <!-- // // http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001 --> <!-- // // にリンクを貼るべきではないですか？ --> <!-- // // // ptetex3 の対応しているのは、おそらく OS X のヒラギノのみでしょう。 --> <!-- // // // Cygwin では OTF に対する処理が 7font-search.sh にありませんので、 --> <!-- // // // 商品のヒラギノが Mac と同じ手順で使えるとは思えません。本当に使えてますか？ --> <!-- // // // // 現在 Windows が手元に無く， --> <!-- // // // // そもそも Windows 用のヒラギノフォントを持っていないので --> <!-- // // // // 確認はできませんが，手動でヒラギノのフォントファイルを --> <!-- // // // // $TEXMFLOCAL/fonts/opentype/ --> <!-- // // // // (= /usr/local/teTeX/share/texmf-local/fonts/opentype/ --> <!-- // // // //  = C:\cygwin\usr\local\teTeX\share\texmf-local\fonts\opentype\) --> <!-- // // // // 以下のディレクトリに --> <!-- // // // // 「PostScript名 + “.otf”」というファイル名で --> <!-- // // // // コピーするかシンボリックリンクを貼っておけば， --> <!-- // // // //  updmap - -setoption kanjiEmbed hiragino --> <!-- // // // // の実行によって少なくとも dvipdfmx では使えるのではないですか？ --> <!-- Cygwin では下準備が自動化されていないということですね。 --> <!-- Mac なら下準備も自動化されているので、わざわざここで言及してあるのでしょう。 --> <!-- この段落の先頭には「Mac OS X ではさらに次のようにして..」とあるのにもご注目。 --> <!-- そもそも商品の54書体を買ったところで、バンドルと等価な6書体しか使えません。 --> <!-- 大日本スクリーンへのリンクは、54書体が使えるという誤解を生みそうです。 --> <!-- // 色々な案が出てきているので，その複合案として書き換えてみました。 --> <!-- // 大日本スクリーン製造へのリンクは --> <!-- // 基本6書体パックへのリンクとしてみました。 --> <!-- // // Cygwin に限らず Linux などでも同様にしてヒラギノが使えるのでは？ -->
 
 <!-- （2006年4月以降の ptetex3） -->
 
 ```
-$ updmap --setoption kanjiEmbed hiragino
+updmap --setoption kanjiEmbed hiragino
 
 ```
 
 <!-- （2006年3月以前） -->
-<!-- $ updmap - -nomkmap - -disable otf-noEmbeddedFont.map -->
-<!-- $ updmap - -enable KanjiMap otf-hiraginox.map -->
+<!-- updmap - -nomkmap - -disable otf-noEmbeddedFont.map -->
+<!-- updmap - -enable KanjiMap otf-hiraginox.map -->
 
 Cygwin
 でも[ヒラギノ基本6書体](http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot00V8)の
@@ -126,7 +134,7 @@ Cygwin
 （これがディフォルトです）。
 
 ```
-$ updmap --setoption kanjiEmbed noEmbed
+updmap --setoption kanjiEmbed noEmbed
 ```
 
 xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
