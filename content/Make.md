@@ -10,7 +10,7 @@ pukiwiki: "Make"
 ## UNIX 互換 OS での teTeX，pTeX，pLaTeX2e のインストール {#f27134a5}
 
 今は次の ptetex3 を使う方法がお薦めです。
-下のほうに長々と書いてあることを読むと混乱しますので，読まないでください。
+下の方に長々と書いてあることを読むと混乱しますので，読まないでください。
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
@@ -19,14 +19,14 @@ UNIX （互換） OS 用の TeX ディストリビューション
 です。[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) は
 teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単に
 インストールするための土村さん作のツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に
-多数の例が挙がっているので，参考になさるとよいでしょう。
+多数の例が挙がっているので，参考になさると良いでしょう。
 ここでは2005年2月に出た新しい teTeX-3.0 と
 それをベースにした pTeX を，ptetex3 を使ってインストールしてみます。
 
 まず，あらかじめ C/C++ のコンパイラや
-X Window System 用ソフトウェアの開発環境等をインストールしておきます。
+X Window System 用ソフトウェアの開発環境などをインストールしておきます。
 また，（必須ではありませんし，かなりの手間がかかりますが） [Ghostscript](/Ghostscript/) の
-日本語対応がなされているものをインストールしてもよいでしょう。
+日本語対応がなされているものをインストールしても良いでしょう。
 海外の Linux ディストリビューションに附属する Ghostscript では
 日本語対応が乏しいケースもあるようです。 <!-- 2005年10月以降，md5, gmd5sum 等は自動判定で使い分けるようになりました。 --> <!-- GNU sed ももう不要です。 --> <!-- //Mac OS X の場合は，あらかじめ --> <!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] に含まれる --> <!-- //md5sum コマンドをインストールしておくか，my_option というファイルを作って --> <!-- // MD5CHECK=md5check --> <!-- //と書いておきます。 --> <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は --> <!-- //2005/6/27 以降は不要になりました。 -->
 
@@ -78,7 +78,7 @@ make font
 make test
 ```
 
-Mac OS X では "make font" で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
+とします。Mac OS X では "make font" で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
 何回かヒラギノ何とかと聞いてきますので，それについては "y" と答えます。
 面倒なら "make fonty" とすると，すべての質問に yes と答えたことに
 なります。"make (all3)" では "make fonty" も含めて実行しますので，
@@ -100,6 +100,15 @@ make install （必要に応じて su したり sudo を付けたりします）
 ```
 
 /usr/local/teTeX/bin にパスを通します。
+
+xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
+場合には，[YaTeX](/YaTeX/) の設定は README に書いてあります。[AUCTeX](/AUCTeX/) でも
+使えます。/usr/local/teTeX/share/texmf/xdvi/XDvi で emacsclient を
+呼び出すようにしてありますが，Carbon Emacs なら
+/Applications/Emacs.app/Contents/MacOS/bin/emacsclient にしておきます
+（他の場所でも設定可）。
+
+#### updmap(-sys) の設定 {#n2be1436}
 
 フォントについての設定は updmap （各ユーザごと）
 または updmap-sys （システム全体，root 権限が必要）で行います。例えば
@@ -144,21 +153,16 @@ Cygwin
 updmap --setoption kanjiEmbed noEmbed
 ```
 
-xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
-場合には，[YaTeX](/YaTeX/) の設定は README に書いてあります。[AUCTeX](/AUCTeX/) でも
-使えます。/usr/local/teTeX/share/texmf/xdvi/XDvi で emacsclient を
-呼び出すようにしてありますが，Carbon Emacs なら
-/Applications/Emacs.app/Contents/MacOS/bin/emacsclient にしておきます
-（他の場所でも設定可）。
-
 <!-- 途中でエラーが出ますが，/usr/local/teTeX/share/texmf/fonts/opentype/ に -->
 <!-- STSongStd-Light-Acro.otf，MSungStd-Light-Acro.otf，HYSMyeongJoStd-Medium-Acro.otf -->
 <!-- へのシンボリックリンクを張っておけば通ります。 -->
 
 ***
 
+## 以前の teTeX や ptetex などに関する情報 {#je88611e}
+
 以下は古い情報です。ptetex3 が内部で行っていることを理解するため以外には
-必要ないと思います。
+必要ありません。
 
 ### News {#i9c0909b}
 
