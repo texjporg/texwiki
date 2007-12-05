@@ -62,13 +62,13 @@ cp my_option.sample ../my_option （オプションを変更したいのなら�
 make
 ```
 
-あるいは，OTF，Bable 対応を含めるなら，
+あるいは [OTF](/OTF/)，[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
 
 ```
 make all3
 ```
 
-あるいは，個別に実行するなら，
+と，あるいは個別に実行するのなら
 
 ```
 make all0
@@ -146,12 +146,61 @@ Cygwin
 フォントファイルを $TEXMFLOCAL/fonts/opentype/ 以下のディレクトリに
 配置しておけば，同様にして埋め込めます。
 
-逆に和文フォントを埋め込まないようにするには次のようにします
-（これがディフォルトです）。
+また，
+
+- [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)
+    - ipam.ttf
+    - ipag.ttf
+- [小塚書体](http://www.adobe.com/type/browser/C/C_japanese.html)
+    - KozMinPro-Regular-Acro.otf
+    - KozMinStd-Bold.otf
+    - KozGoStd-Regular.otf
+    - KozGoStd-Bold.otf
+    - KozGoStd-Heavy.otf
+- [モリサワフォント](http://www.morisawa.co.jp/font/)
+    - A-OTF-RyuminPro-Light.otf
+    - A-OTF-FutoMinA101Pro-Bold.otf
+    - A-OTF-GothicBBBPro-Medium.otf
+    - A-OTF-FutoGoB101Pro-Bold.otf
+    - A-OTF-Jun101Pro-Light.otf
+
+のフォントファイルを $TEXMFLOCAL/fonts/opentype/ 以下のディレクトリに
+配置しておけば，
+
+```
+updmap --setoption kanjiEmbed ipa
+```
+
+で IPAフォントを，
+
+```
+updmap --setoption kanjiEmbed kozuka
+```
+
+で小塚書体を，
+
+```
+updmap --setoption kanjiEmbed morisawa
+```
+
+でモリサワフォントを埋め込むようにできます。
+
+逆に和文フォントを埋め込まないようにするには，次のようにします
+（これがデフォルトです）。
 
 ```
 updmap --setoption kanjiEmbed noEmbed
 ```
+
+また OTF パッケージで中国語フォントや韓國語フォントを
+埋め込まないようにするには，次のようにします（これもデフォルトです）。
+
+```
+updmap --setoption kanjiEmbed cktx
+```
+
+[ptetexWiki:フォントの集中管理](http://tutimura.ath.cx/ptetex/?%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%AE%E9%9B%86%E4%B8%AD%E7%AE%A1%E7%90%86) に ptetex3 での updmap(-sys) コマンドの
+動作やオプションについて詳しく説明されています。
 
 <!-- 途中でエラーが出ますが，/usr/local/teTeX/share/texmf/fonts/opentype/ に -->
 <!-- STSongStd-Light-Acro.otf，MSungStd-Light-Acro.otf，HYSMyeongJoStd-Medium-Acro.otf -->
