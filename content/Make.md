@@ -62,7 +62,7 @@ cp my_option.sample ../my_option （オプションを変更したいのなら�
 make
 ```
 
-あるいは [OTF](/OTF/)，[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
+あるいは [OTF](/OTF/) （安定版），[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
 
 ```
 make all3
@@ -151,7 +151,7 @@ Cygwin
 - [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)
     - ipam.ttf
     - ipag.ttf
-- [小塚書体](http://www.adobe.com/type/browser/C/C_japanese.html)
+- [小塚書体](http://store1.adobe.com/cfusion/store/html/?event=searchFonts&cat=classification&code=japanese)
     - KozMinPro-Regular-Acro.otf
     - KozMinStd-Bold.otf
     - KozGoStd-Regular.otf
