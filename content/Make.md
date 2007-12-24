@@ -35,8 +35,8 @@ X Window System 用ソフトウェアの開発環境などをインストール�
 消すか名前を変えておきます。
 
 適当なディレクトリを作り，その中に
-[tetex-src-3.0.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
-[tetex-texmf-3.0po.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
+[tetex-src-3.0.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
+[tetex-texmf-3.0po.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
 [ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz （最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
 をダウンロードし，
 その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
@@ -192,7 +192,7 @@ updmap --setoption kanjiEmbed morisawa
 updmap --setoption kanjiEmbed noEmbed
 ```
 
-また OTF パッケージで中国語フォントや韓國語フォントを
+また [OTF パッケージ](/OTF/)で中国語フォントや韓國語フォントを
 埋め込まないようにするには，次のようにします（これもデフォルトです）。
 
 ```
@@ -210,7 +210,7 @@ updmap --setoption kanjiEmbed cktx
 
 ## 以前の teTeX や ptetex などに関する情報 {#je88611e}
 
-以下は古い情報です。ptetex3 が内部で行っていることを理解するため以外には
+以下は古い情報です。ptetex が内部で行っていることを理解するため以外には
 必要ありません。
 
 ### News {#i9c0909b}
