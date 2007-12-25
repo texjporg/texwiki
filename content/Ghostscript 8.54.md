@@ -9,7 +9,7 @@ pukiwiki: "Ghostscript 8.54"
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-以下，取り敢えずメモ書き。編集意欲のある方は是非代わりに編集して下さい。
+編集意欲のある方は是非代わりに編集してください。
 
 ## GPL Ghostscript 8.54 for UNIX or Unix-like OS {#xff4aa84}
 
@@ -20,8 +20,8 @@ pukiwiki: "Ghostscript 8.54"
 #### ダウンロード {#g31ae747}
 
 [CTAN:support/ghostscript/GPL/gs854/](https://mirror.ctan.org/support/ghostscript/GPL/gs854/)
-などから[ghostscript-8.54-gpl.tar.bz2](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-8.54-gpl.tar.bz2)
-と[ghostscript-fonts-std-8.11.tar.gz](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-fonts-std-8.11.tar.gz)
+などから[ghostscript-8.54-gpl.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-8.54-gpl.tar.bz2)
+と[ghostscript-fonts-std-8.11.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/GPL/gs854/ghostscript-fonts-std-8.11.tar.gz)
 を入手します。
 
 #### インストール {#u4ad1919}
@@ -39,7 +39,7 @@ $ sudo ./configure --prefix=/usr/local/teTeX
 これで
 
 ```
-$ sudo make
+$ make
 $ sudo make install
 ```
 
@@ -54,7 +54,7 @@ $ sudo make install
 たくさんのものが入ります。/usr/local/teTeX/man/man1/ と
 /usr/local/teTeX/man/de/man1/ の中にもマニュアル類が入ります。
 
-欧文フォントをインストールします：
+欧文用フォントをインストールします：
 
 ```
 $ cd /usr/local/teTeX/share/ghostscript
@@ -67,8 +67,10 @@ $ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz
 に記述します。
 
 ```
-/Ryumin-Light      /HiraMinProN-W3  ;
-/GothicBBB-Medium  /HiraKakuProN-W6 ;
+/Ryumin-Light      /HiraMinProN-W3   ;
+/GothicBBB-Medium  /HiraKakuProN-W3  ;
+/HeiseiMin-W3      /Ryumin-Light     ;
+/HeiseiKakuGo-W5   /GothicBBB-Medium ;
 ```
 
 あとは /usr/local/teTeX/share/ghostscript/8.54/Resource/CIDFont/ の
@@ -98,13 +100,13 @@ ps2pdf もうまく行えます。
 ### フォントのシンボリックリンク {#j6c4153b}
 
 ```
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
@@ -112,21 +114,21 @@ $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
 $ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギ゙ノ角ゴ Std W8.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギ゙ノ角ゴ Std W8.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s /Library/Fonts/华文宋体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
@@ -236,7 +238,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 {#h0f0fbe0}
 
-#### <a id="cidfmap-Unix-likeOS">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
+#### <a id="cidfmap-unix">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
 
 ***
 
@@ -253,7 +255,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /GothicBBB-Medium             /Sazanami-Gothic-Regular     ;
 %/FutoGoB101-Bold              /                            ;
 %/MidashiGo-MB31               /                            ;
-/Jun101-Light                 /Wadalab-HosoMaruGothic      ;
+/Jun101-Light                 /WadaLabMaruGo20044          ;
 /HeiseiMin-W3                 /Ryumin-Light                ;
 /HeiseiKakuGo-W5              /GothicBBB-Medium            ;
 %/HiraMinStdN-W2               /                            ;
@@ -342,6 +344,11 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/HYGungSo-Bold                /MunhwaGungSeoHeulim-Bold       ;
 %/HYGungSo-Bold                /MunhwaScriptFreestyleStd-Light ;
 %/HYGungSo-Bold                /MunhwaGungSeoHeulim-Light      ;
+
+%%% Wadalab Maru Gothic (JIS X 0213)
+%%% See http://members11.tsukaeru.net/rare/font/
+/WadaLabMaruGo20044           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20044.ttf) >> ;
+/WadaLabMaruGo20004           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20004.ttf) >> ;
 
 %%% Wadalab Fonts (TrueType outline fonts)
 %%% See http://www.wht.mmtr.or.jp/~hirotsu/font/wadaken.html
@@ -452,27 +459,28 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/MHei-Medium                  /MHei-Medium-Acro        ;
 %/HYSMyeongJo-Medium           /HYSMyeongJo-Medium-Acro ;
 %/HYGoThic-Medium              /HYGoThic-Medium-Acro    ;
-
-%%% RICOH LX TrueType fonts in Vine Linux 3.2 CR
-%%% See http://vinelinux.org/whatsnew.html#news/20060123
-/LX-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmincho.ttc)  /SubfontID 0 >> ;
-/LX-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothic.ttc)  /SubfontID 0 >> ;
-/LX-Gothic-UB                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothub.ttc)  /SubfontID 0 >> ;
-/LX-MaruGothic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmgoth.ttc)   /SubfontID 0 >> ;
-/LX-POP                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxpop.ttc)     /SubfontID 0 >> ;
-
-%%% DynaComware DynaFont series in Vine Linux 3.2 CR
-%%% See http://vinelinux.org/whatsnew.html#news/20060123
-/DFMincho-UB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfminc.ttc)   /SubfontID 0 >> ;
-/DFKaisho-SB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfkai7.ttc)   /SubfontID 0 >> ;
-/DFBrushRD-W7                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfbrr7.ttc)   /SubfontID 0 >> ;
-/DFPOPStencil-W7              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfpost7.ttc)  /SubfontID 0 >> ;
-/DFFreeRyuyou-Lt              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dffry2.ttc)   /SubfontID 0 >> ;
 ```
+
+<!--  -->
+<!-- %%% RICOH LX TrueType fonts in Vine Linux 3.2 CR -->
+<!-- %%% See http://vinelinux.org/whatsnew.html#news/20060123 -->
+<!-- /LX-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmincho.ttc)  /SubfontID 0 >> ; -->
+<!-- /LX-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothic.ttc)  /SubfontID 0 >> ; -->
+<!-- /LX-Gothic-UB                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothub.ttc)  /SubfontID 0 >> ; -->
+<!-- /LX-MaruGothic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmgoth.ttc)   /SubfontID 0 >> ; -->
+<!-- /LX-POP                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxpop.ttc)     /SubfontID 0 >> ; -->
+<!--  -->
+<!-- %%% DynaComware DynaFont series in Vine Linux 3.2 CR -->
+<!-- %%% See http://vinelinux.org/whatsnew.html#news/20060123 -->
+<!-- /DFMincho-UB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfminc.ttc)   /SubfontID 0 >> ; -->
+<!-- /DFKaisho-SB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfkai7.ttc)   /SubfontID 0 >> ; -->
+<!-- /DFBrushRD-W7                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfbrr7.ttc)   /SubfontID 0 >> ; -->
+<!-- /DFPOPStencil-W7              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfpost7.ttc)  /SubfontID 0 >> ; -->
+<!-- /DFFreeRyuyou-Lt              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dffry2.ttc)   /SubfontID 0 >> ; -->
 
 ***
 
-#### <a id="cidfmap-MacOSX">For Mac OS X</a> {#eb079434}
+#### <a id="cidfmap-macosx">For Mac OS X</a> {#eb079434}
 
 ***
 
@@ -648,26 +656,26 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 - Ghostscript のインストーラ（次のうち，1つをインストールすれば良い）
     - GPL Ghostscript 8.54:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full-gpl.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
 
 - GPL Ghostscript 8.61:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs861w32full-gpl.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs861w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
 
-- GPL Ghostscript 8.54 と同じように，CJK ［中国語・日本語・韓國語］への対応が不充分
+- GPL Ghostscript 8.54 と同じく，CJK ［中国語・日本語・韓國語］への対応が不充分
     - AFPL Ghostscript 8.54:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full.zip](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
 
 - GPL Ghostscript 8.54 と機能は同じ
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
     - GSview 4.9:
 
-> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
+> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
 
-- x64 \[AMD64, Intel 64\] 対応版：
+- x64 \[AMD64, Intel 64\] プロセッサ専用バイナリのインストーラ：
 
-> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w64.exe](http://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
+> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w64.exe](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
 
 <!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
 <!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
@@ -731,6 +739,8 @@ gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみま�
 - V
 - UniJIS-UTF16-H
 - UniJIS-UTF16-V
+- UniJIS2004-UTF16-H
+- UniJIS2004-UTF16-V
 - UniGB-UTF16-H
 - UniGB-UTF16-V
 - UniCNS-UTF16-H
@@ -798,7 +808,7 @@ gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
 >> ;
 ```
 
-### <a id="OTF">OTF パッケージ用の設定</a> {#ycff2f04}
+### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
 [OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，udvips を通して）
 変換した PostScript ファイルを（ps2pdf を使うなどして）
@@ -862,7 +872,7 @@ composefont pop
 
 ### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
 
-#### <a id="cidfmap-Windows">For Microsoft Windows</a> {#xba7681e}
+#### <a id="cidfmap-windows">For Microsoft Windows</a> {#xba7681e}
 
 ***
 
@@ -1039,22 +1049,23 @@ composefont pop
 %/MHei-Medium                  /MHei-Medium-Acro        ;
 %/HYSMyeongJo-Medium           /HYSMyeongJo-Medium-Acro ;
 %/HYGoThic-Medium              /HYGoThic-Medium-Acro    ;
-
-%%% Hiragino TrueType fonts
-%%% See http://www.screen.co.jp/ga_product/sento/products/pr_TrueType.html
-%/HiraMinProN-W2               /HiraginoMin-W2-90ms-RKSJ-H  ;
-%/HiraMinProN-W3               /HiraginoMin-W3-90ms-RKSJ-H  ;
-%/HiraMinProN-W6               /HiraginoMin-W6-90ms-RKSJ-H  ;
-%/HiraKakuProN-W3              /HiraginoKaku-W3-90ms-RKSJ-H ;
-%/HiraKakuProN-W6              /HiraginoKaku-W6-90ms-RKSJ-H ;
-%/HiraKakuStdN-W8              /HiraginoKaku-W8-90ms-RKSJ-H ;
-/HiraginoMin-W2-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn2.ttc)  /SubfontID 1 >> ;
-/HiraginoMin-W3-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn3.ttc)  /SubfontID 1 >> ;
-/HiraginoMin-W6-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn6.ttc)  /SubfontID 1 >> ;
-/HiraginoKaku-W3-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg3.ttc)  /SubfontID 1 >> ;
-/HiraginoKaku-W6-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg6.ttc)  /SubfontID 1 >> ;
-/HiraginoKaku-W8-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg8.ttc)  /SubfontID 1 >> ;
 ```
+
+<!--  -->
+<!-- %%% Hiragino TrueType fonts -->
+<!-- %%% See http://www.screen.co.jp/ga_product/sento/products/pr_TrueType.html -->
+<!-- %/HiraMinProN-W2               /HiraginoMin-W2-90ms-RKSJ-H  ; -->
+<!-- %/HiraMinProN-W3               /HiraginoMin-W3-90ms-RKSJ-H  ; -->
+<!-- %/HiraMinProN-W6               /HiraginoMin-W6-90ms-RKSJ-H  ; -->
+<!-- %/HiraKakuProN-W3              /HiraginoKaku-W3-90ms-RKSJ-H ; -->
+<!-- %/HiraKakuProN-W6              /HiraginoKaku-W6-90ms-RKSJ-H ; -->
+<!-- %/HiraKakuStdN-W8              /HiraginoKaku-W8-90ms-RKSJ-H ; -->
+<!-- /HiraginoMin-W2-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn2.ttc)  /SubfontID 1 >> ; -->
+<!-- /HiraginoMin-W3-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn3.ttc)  /SubfontID 1 >> ; -->
+<!-- /HiraginoMin-W6-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn6.ttc)  /SubfontID 1 >> ; -->
+<!-- /HiraginoKaku-W3-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg3.ttc)  /SubfontID 1 >> ; -->
+<!-- /HiraginoKaku-W6-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg6.ttc)  /SubfontID 1 >> ; -->
+<!-- /HiraginoKaku-W8-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg8.ttc)  /SubfontID 1 >> ; -->
 
 ***
 
@@ -1088,7 +1099,7 @@ gs\gs8.54\lib\kconfig.ps の記述内容によって設定されます。
 
 ***
 
-このファイルは Shift_JIS で保存して下さい。
+このファイルは Shift_JIS で保存してください。
 
 ### PDF への CJK フォントの非埋め込み制御 {#zd1cf8d8}
 
@@ -1231,13 +1242,13 @@ D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dComp
 D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f neverembed.ps -f %i -c quit"
 ```
 
-### PDF への欧文フォントの埋め込み制御 {#y3b70de6}
+### PDF への欧文用フォントの埋め込み制御 {#y3b70de6}
 
 Ghostscript 7.07 では “/NeverEmbed”，“/AlwaysEmbed” を使って
-PDF への欧文フォントの埋め込み制御が行えましたが，Ghostscript 8.54 では
-欧文フォントに対し “/NeverEmbed”，“/AlwaysEmbed” がうまく働きません。
+PDF への欧文用フォントの埋め込み制御が行えましたが，Ghostscript 8.54 では
+欧文用フォントに対し “/NeverEmbed”，“/AlwaysEmbed” がうまく働きません。
 そこで，lib/gs_pdfwr.ps の記述内容を書き換えることで
-PDF への欧文フォントの埋め込み制御を行います。
+PDF への欧文用フォントの埋め込み制御を行います。
 
 デフォルトでは PostScript Level 1 での基本14書体である
 Times ファミリ，Helvetica ファミリ，Courier ファミリ，Symbol，ZapfDingbats が
@@ -1253,7 +1264,7 @@ Times-BoldItalic だけを埋め込み，Times-Roman，Times-Bold，Helvetica
 ファミリ，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，ほとんどの環境で PostScript Level 1 での基本14書体が
 正確に表示されます。このような設定にするには，lib/gs_pdfwr.ps の
-記述内容の27&ndash;34行目のうち32行目を次のように変更して下さい。
+記述内容の27&ndash;34行目のうち32行目を次のように変更してください。
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -1276,7 +1287,7 @@ Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファ
 埋め込まないようにすると，Microsoft Windows を含めたほとんどの環境で
 PostScript Level 1 での基本14書体が正確に表示されます。
 このような設定にするには，lib/gs_pdfwr.ps の記述内容の27&ndash;34行目の
-うち31&ndash;32行目を次のようにコメントアウトして下さい。
+うち31&ndash;32行目を次のようにコメントアウトしてください。
 
 ```
 /.a2112 [2 1 1 2] readonly def
