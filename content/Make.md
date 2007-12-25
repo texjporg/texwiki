@@ -18,9 +18,9 @@ pukiwiki: "Make"
 UNIX （互換） OS 用の TeX ディストリビューション
 です。[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) は
 teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単に
-インストールするための土村さん作のツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に
-多数の例が挙がっているので，参考になさると良いでしょう。
-ここでは2005年2月に出た新しい teTeX-3.0 と
+インストールするための[土村さん](http://www.nn.iij4u.or.jp/~tutimura/)作の
+ツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に多数の例が挙がっているので，
+参考になさると良いでしょう。ここでは2005年2月に出た最新の teTeX-3.0 と
 それをベースにした pTeX を，ptetex3 を使ってインストールしてみます。
 
 まず，あらかじめ C/C++ のコンパイラや
@@ -151,7 +151,7 @@ Cygwin
 - [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)
     - ipam.ttf
     - ipag.ttf
-- [小塚書体](http://store1.adobe.com/cfusion/store/html/?event=searchFonts&cat=classification&code=japanese)
+- [小塚書体](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)
     - KozMinPro-Regular-Acro.otf
     - KozMinStd-Bold.otf
     - KozGoStd-Regular.otf
