@@ -126,7 +126,7 @@ $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギ゙ノ角ゴ Std W8.otf" \
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
 > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
