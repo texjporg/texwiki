@@ -771,6 +771,9 @@ $$\halign{#\cr} のような記述を行った場合）に現れるエラーメ�
 \newcommand，\renewcommand を用いる場合にも，\newcommand，\renewcommand
 の第 1 引数は（再）定義するコマンドになることに注意してください
 （\newcommand{somecs}{...} ではなく，\newcommand{\somecs}{...} になります）．
+なお，アクティブ文字を定義する際には，
+「個々の文字のカテゴリーコードはその文字を<strong>最初に</strong>読み取った時点に決定され，
+その後では原則として変更されない」という点に注意してください． <!-- 例えば，「コロンをアクティブにしたうえでそれを定義する」マクロを --> <!--  \def\activatecolon{% --> <!--     \catcode`\:=\active --> <!--     \def:{...}} --> <!-- のように定義しても，これは意図通りには処理されません． --> <!-- 実際，\activatecolon の定義の際にはコロンのカテゴリーコードは --> <!-- 12 のままなので，\activatecolon の置換テキスト中のコロン --> <!-- （\def の直後のコロン）は“通常のコロン”のままです． --> <!-- そして，\activatecolon を使用したときにも，\def の直後のコロンは --> <!-- \catcode`\:=\active の''影響を受けない'' --> <!-- （\activatecolon の定義の際に''読み取られた状態のまま''で用いられる）ので， --> <!-- このエラーが生じます（\activatecolon の定義中の \catcode`\:=\active --> <!-- という記述は，\activatecolon --> <!-- を用いた''後''で読み取られるコロンをアクティブにするための記述です）． --> <!-- 正しくは，\activatecolon の定義の際にもコロンをアクティブにしておいて --> <!--  \begingroup --> <!--  \catcode`\:=\active --> <!--  \gdef\activatecolon{% --> <!--     \catcode`\:=\active --> <!--     \def:{...}} --> <!--  \endgroup --> <!-- のように定義することになります． -->
 
 #### ! Missing \cr inserted. {#q5bb7504}
 
