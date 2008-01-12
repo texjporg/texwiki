@@ -417,28 +417,3 @@ fontmapline "-foo bar <baz.pfb";
 とすると、この内容と一致するものを削除します。
 
 なお、新しい MetaPost では pool ファイル は無くなっています。
-
-W32TeX には最新のバージョンが入っています:
-
-(1) MetaPost 1.002 (Web2C 7.5.6)
-
-```
-   --- コマンド名 mpost
-```
-
-(2) jMetaPost 1.002-0.04 (sjis) (Web2C 7.5.6)
-
-```
-   --- コマンド名 jmpost
-```
-
-(3) upjMetaPost 1.002-0.04-u0.20 (utf8,uptex) (Web2C 7.5.6)
-
-```
-   --- コマンド名 upjmpost
-```
-
-(2) は、松山さん、鈴木さんによる日本語 MetaPost、
-(3) は ttk さんによる、(2) の拡張です。なお、(2), (3) は
-土村さんの PTEXENC に対応しているので、 --kanji=encoding に
-より、encoding を変更できます。
