@@ -20,7 +20,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/) さんによる [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](/Make/#saac55c2) で試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
+- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](/Make/#saac55c2) で試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）—「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
@@ -30,7 +30,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 364 「ロシア語におけるいくつかの補足」—数式モードにおけるキリル文字の利用について，amsmath.sty (AMS-LaTeX)，mathtext.sty を使った例を<del>[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)</del>にしました。（安田）
 
-- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」— Babel 本体では未サポートですが，オプションで[iso-8859-7.def](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/greek/package-babel/encodings/iso-8859-7.def) が配布されています。
+- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」— Babel 本体では未サポートですが，オプションで[iso-8859-7.def](http://www.ring.gr.jp/pub/text/CTAN/fonts/greek/package-babel/encodings/iso-8859-7.def) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic，古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
 
 - p. 368 表 J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ[teubner.sty](ftp://ftp.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/teubner.zip) を使ってください。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
