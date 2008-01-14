@@ -10,77 +10,89 @@ pukiwiki: "TeX入門"
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX 入門&quot;">
 
-<div style="text-align:right"><strong>TeX</strong> /tek/ ［名］ 〔コンピュータ〕テフ，テック</div>
+<div style="text-align:right"><strong>TeX</strong> /t&eacute;k/ ［名］ 〔コンピュータ〕 テフ，テック</div>
 
-<div style="text-align:right">《テキストベースの組み版システム；</div>
+<div style="text-align:right">《テキストベースの組み版システム；数式の処理を得意とする》。</div>
 
-<div style="text-align:right">数式の処理を得意とする》．</div>
-
-<div style="text-align:right">――『ジーニアス英和大辞典』</div>
+<div style="text-align:right">—『ジーニアス英和大辞典』（大修館書店，2001年）</div>
 
 ## TeX，LaTeX とは？ {#nef9fd41}
 
 TeX および LaTeX の正式なロゴはこのページのタイトルのようなデザインですが，
 テキストで書くときはそれぞれ TeX，LaTeX のように書くことになっています。
 
-TeX は「テック」または「テフ」と読みます。
+TeX は「テフ」 (\[tex\]) または「テック」と読みます。
 どちらかというと大学系の人は「テフ」派が多いようです。
-英語圏では \[tek\] \[tekh\] または誤読ですが \[teks\]，
-ドイツ語圏では「テヒ」とも読むようです。
+英語圏では \[tek\]，\[tekh\] または誤読ですが \[teks\]，
+ドイツ語圏では「テヒ」 (\[t&#x25b;&ccedil;\]) とも読むようです。
 同様に LaTeX は「ラテック」「ラテフ」などと読みます。
 
-TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作った組版（くみはん）システムです。
-LaTeX は [Leslie Lamport](http://lamport.org/) が TeX の上に構築した文書処理システムです。
-いずれもフリーソフトであり，
-Microsoft Windows，Mac OS，UNIX （Linux や \*BSD，Mac OS X も含む）など，ほとんどのコンピュータで使えます。
+TeX は [Donald E. Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作った
+組版（くみはん）システムです。LaTeX は [Leslie Lamport](http://lamport.org/)
+が TeX の上に構築した文書処理システムです。いずれもフリーソフトで
+あり，Microsoft Windows，Mac OS，UNIX （Mac OS X や Solaris など），UNIX 互換
+OS （Linux や BSD など）など，ほとんどのコンピュータで使えます。
 
-日本では TeX，LaTeX を[（株）アスキー](http://www.ascii.co.jp/)が日本語化した [pTeX，pLaTeX](http://www.ascii.co.jp/pb/ptex/) がよく使われています。
-pTeX，pLaTeX の頭の p （ピー）は publishing （出版）の意味で，
-アスキーでは pTeX，pLaTeX およびこれらに基づく編集支援システム [EWB](http://www2.ascii.co.jp/EWB/) を（ソースコードの形で）無償配布し，自社の本の製作に利用しています。
+日本では TeX，LaTeX を[（株）アスキー](http://www.ascii.co.jp/)が
+日本語化した [pTeX，pLaTeX](http://www.ascii.co.jp/pb/ptex/) がよく
+使われています。pTeX，pLaTeX の頭の p （ピー）は <strong>p</strong>ublishing （出版）の
+意味で，アスキーでは pTeX，pLaTeX およびこれらに基づく
+編集支援システム [EWB](http://www2.ascii.co.jp/EWB/) を
+（ソースコードの形で）無償配布し，自社の本の製作に利用しています。
 
-> 【参考】 TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX もあります。
-> これらは現在は千葉大の櫻井貴文さんが [TeXfamily](ftp://ftp.math.s.chiba-u.ac.jp/tex/) としてメンテナンスしていらっしゃいます。
+> 【参考】 TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX も
+> あります。これらは現在は千葉大の櫻井貴文さんが
+> [TeXfamily](ftp://ftp.math.s.chiba-u.ac.jp/tex/) として
+> メンテナンスしていらっしゃいます。
 
-1994年に LaTeX の新版 LaTeX 2ε （ツー・イー），
-1995年にはアスキーから日本語版 pLaTeX 2ε が出ました。
-これにともなって，それ以前の古い LaTeX を特に LaTeX 2.09 と呼ぶことになりました。
-以下では現行の LaTeX 2ε と pLaTeX 2ε に基づいて説明します。
-LaTeX 2ε は半角文字だけで書くときは LaTeX2e と書くことになっていますので，
+1994年に LaTeX の新版 LaTeX 2ε （ツー・イー），1995年には
+アスキーから日本語版 pLaTeX 2ε が出ました。これにともなって，
+それ以前の古い LaTeX を特に LaTeX 2.09 と呼ぶことになりました。
+以下では現行の LaTeX 2ε と pLaTeX 2ε に基づいて説明します。LaTeX 2ε は
+ASCII 文字だけで書くときは LaTeX2e と書くことになっていますので，
 以下では LaTeX2e，pLaTeX2e と書きます。
 
-TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の力持ち」としてそれぞれ TeX，pTeX が働いていると言うにとどめておき，詳しい説明は省略します。
+TeX，pTeX については，ここでは LaTeX2e，pLaTeX2e の「縁の下の力持ち」として
+それぞれ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省略します。
 
 ## LaTeX2e，pLaTeX2e の入門書 {#l062c239}
 
 とりあえず次の本を挙げておきます。
 
-- L. Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e の原典です。
-- 奥村晴彦 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』 （[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)） ……Microsoft Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が付いています。
+- Leslie Lamport 著，阿瀬はる美訳 『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』 （[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e の原典です。
+- 奥村晴彦 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』 （[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)） ……Microsoft Windows，Mac OS X のバイナリ，UNIX 系 OS 用のソースを収めた CD-ROM が附いています。
 
-これ以外にもたくさん良書が出ています（[TeXの本](</TeXの本/>)）ので，書店でお選びください。
+これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
 
-### LaTeX のバージョンについて ――入門書を読む際に―― {#h22f32a6}
+### LaTeX のバージョンについて —入門書を読む際に— {#h22f32a6}
 
 LaTeX には大きく分けて二つの異なるバージョンがあります。
-一昔前の LaTeX 2.09 と，現行の LaTeX2e です。
-（日本語化されたものでは pLaTeX 2.09 と pLaTeX2e です。）
-LaTeX 2.09 と LaTeX2e は別物と考えてよいくらいです。
+一昔前の LaTeX 2.09 と，現行の LaTeX2e です
+（日本語化されたものでは pLaTeX 2.09 と pLaTeX2e です）。LaTeX 2.09 と
+LaTeX2e は別物と考えて良いくらいです。
 
-図書館や書店には今でも LaTeX 2.09 時代の解説書が並んでいたり，LaTeX 形式で論文を受け付ける学会などの中には未だに LaTeX 2.09 を採用しているところがあったりするので注意が必要です。
+図書館や書店には今でも LaTeX 2.09 時代の
+解説書が並んでいたり，LaTeX 形式で論文を受け付ける学会などの中には
+未だに LaTeX 2.09 を採用しているところがあったりするので注意が必要です。
 
-文書ソースを \documentstyle で始めるのが LaTeX 2.09，\documentclass で始めるのが LaTeX2e です。
-LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に LaTeX 2.09 の互換モードで処理されるので，
+文書ソースを \documentstyle で始めるのが LaTeX 2.09，\documentclass で
+始めるのが LaTeX2e です。LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると
+自動的に LaTeX 2.09 の互換モードで処理されるので，
 エラーなどが出ないことも多くあります。
 
 ## インストールのしかた {#i326adb5}
 
 パソコン初心者にはこれが一番難しいところです。
-この TeX Wiki に OS ごとのインストール法が詳しく書かれていますのでご参照ください。
-特に Microsoft Windows についてはインストール(Windows) をご覧ください。
+この TeX Wiki に OS ごとのインストール法が詳しく書かれていますので
+ご参照ください。特に Microsoft Windows については
+TeXWiki:インストール (Windows) をご覧ください。
 
 インストール不要で TeX が使えるページ
-「TeX を使ってみよう（[EUC-JP 版](http://oku.edu.mie-u.ac.jp/~okumura/tex/)／[UTF-8 版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)）」（お薦めです），または
-「[サーバーサイド pLaTeX 2ε ビューアー](http://nowsmartsoft.or.tv/texview/mytex.cgi)」（アクセスすると IP アドレスが晒されるので注意すること）もあります。
+「TeX を使ってみよう
+（[EUC-JP 版](http://oku.edu.mie-u.ac.jp/~okumura/tex/)／[UTF-8 版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)）」
+（お薦めです），または
+「[サーバーサイド pLaTeX 2ε ビューアー](http://nowsmartsoft.or.tv/texview/mytex.cgi)」
+（アクセスすると IP アドレスが晒されるので注意すること）もあります。
 
 ## 使い方 {#hf6bc116}
 
@@ -94,7 +106,5 @@ LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に LaTeX 2.
 - 図
 - [文献引用](</文献引用/>)
 - [マクロの作成](</TeX入門/マクロの作成/>)
-    <!-- - [[宜しくない見本>awdea]] -->
-    <!-- 間違えて書き込まれた可能性が大きいので…… -->
 
 以下，工事中。
