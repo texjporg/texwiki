@@ -45,19 +45,28 @@ TeX のメインメモリ領域に sparse registers として作成される。
 
 #### tracing の改良と内部状態の取得 {#v3ec6be0}
 
-\tracingcommands などの動作が改良され，より大きな値を指定することでより詳細な TeX の内部動作を確認できるようになった。これに関連して，\tracingifs, \tracinggroups といった条件判断文とかグループの開始・終了状況を表示するプリミティブも追加されている。
+\tracingcommands などの動作が改良され，より大きな値を指定することで
+より詳細な TeX の内部動作を確認できるようになった。
+これに関連して \tracingifs，\tracinggroups といった条件判断文とか
+グループの開始・終了状況を表示するプリミティブも追加されている。
 
-また，TeX ソース内部でも「現在いるもっとも内側の条件判断文の深さや種類」やグループについてのそれらなどを \currentifbranch, \currentiflevel, \currentgrouptype, \currentgrouplevel で調べることができる。
+また，TeX ソース内部でも「現在いるもっとも内側の条件判断文の深さや種類」や
+グループについてのそれらなどを
+\currentifbranch，\currentiflevel，\currentgrouptype，\currentgrouplevel で
+調べることができる。
 
 #### 拡張された条件判断文 {#i43dce13}
 
-- \ifdefined, \ifcsname ... \endcsname という「（引数が）定義されているか」を調べるプリミティブが追加された。
-- \unless という，真理値を反転させるプリミティブが追加された．
+- \ifdefined, \ifcsname,..., \endcsname という
+    「（引数が）定義されているか」を調べるプリミティブが追加された。
+
+- \unless という，真理値を反転させるプリミティブが追加された。
 
 #### 「式」の表現 {#o4b25094}
 
-\numexpr, \dimexpr, \glueexpr, \muexpr という4つのプリミティブが追加され，それらによって整数値/長さ量/グルーを結果とする式を扱うことができる。
-例えば，e-TeXのマニュアルには，次のような例が載っている。
+\numexpr，\dimexpr，\glueexpr，\muexpr という4つのプリミティブが追加され，
+それらによって整数値・長さ量・グルーを結果とする式を扱うことができる。
+例えば，e-TeX のマニュアルには次のような例が載っている。
 
 ```
 \ifdim\dimexpr (2pt-5pt)*\numexpr 3-3*13/5\relax + 34pt/2<\wd20
@@ -71,7 +80,9 @@ TeX では，例えば
 \left( ... \right)
 ```
 
-で括弧の大きさが中身に応じて自動調整されるのだったが，これでは「区切り記号が3個以上のときに，全部の記号の大きさを自動調整」させるときには面倒なマクロを組まなければならなかった。
+で括弧の大きさが中身に応じて自動調整されるのだったが，これでは
+「区切り記号が3個以上のときに，全部の記号の大きさを自動調整」させるときには
+面倒なマクロを組まなければならなかった。
 
 一方，e-TeX で追加された \middle プリミティブを用いると，そのようなものも
 
@@ -90,7 +101,7 @@ TeX では，例えば
 
 ### 参考サイト {#y961b75c}
 
-- [e-TeX reference site](https://mirror.ctan.org/systems/e-tex/v2/)
+- [e-TeX V2 reference site](https://mirror.ctan.org/systems/e-tex/v2/)
     ([CTAN](/CTAN/)@[Ring server](https://mirror.ctan.org/../../../))
 
 - マニュアルは
@@ -99,6 +110,5 @@ TeX では，例えば
 
 ### コメント {#a61ff5c1}
 
-何はともあれ、作ってみました。-- ttk 2008-01-12 (土) 05:04:58
-
+- 何はともあれ、作ってみました。-- ttk 2008-01-12 (土) 05:04:58
 - 「プリミティブの拡張」のところを加筆してみました． -- 北川 2008-01-14 (月) 09:24:57
