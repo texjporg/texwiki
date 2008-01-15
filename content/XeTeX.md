@@ -281,7 +281,7 @@ A quick brown fox jumps over the lazy dog.
 \end{document}
 ```
 
-\beginR は eTeX のプリミティブで文字を右から左方向に組んでいきます。結果は
+\beginR は [e-TeX](/e-TeX/) のプリミティブで文字を右から左方向に組んでいきます。結果は
 
 ```
 .god yzal eht revo spmuj xof nworb kciuq A
