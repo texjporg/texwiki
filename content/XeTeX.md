@@ -148,7 +148,7 @@ fmtutil --byfmt xelatex
 
 cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
-最新の web2c-7.5.5-w32.tar.gz を入手して，TeX のインストール
+最新の web2c-7.5.6-w32.tar.bz2 を入手して，TeX のインストール
 トップディレクトリで展開して下さい。この中に xetex をサポートする
 fmtutil.cnf と texmf.cnf が入っています。
 
