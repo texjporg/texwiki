@@ -17,8 +17,8 @@ pukiwiki: "Make"
 [teTeX](http://www.tug.org/tetex/) は
 UNIX （互換） OS 用の TeX ディストリビューション
 です。[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) は
-teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単に
-インストールするための[土村さん](http://www.nn.iij4u.or.jp/~tutimura/)作の
+teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単にインストール
+するための[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)作の
 ツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に多数の例が挙がっているので，
 参考になさると良いでしょう。ここでは2005年2月に出た最新の teTeX-3.0 と
 それをベースにした pTeX を，ptetex3 を使ってインストールしてみます。
@@ -146,11 +146,18 @@ Cygwin
 フォントファイルを $TEXMFLOCAL/fonts/opentype/ 以下のディレクトリに
 配置しておけば，同様にして埋め込めます。
 
-また，
+また [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)の
+フォントファイル (ipam.ttf, ipag.ttf) を
+$TEXMFLOCAL/fonts/truetype/ 以下のディレクトリに配置しておけば，
 
-- [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)
-    - ipam.ttf
-    - ipag.ttf
+```
+updmap --setoption kanjiEmbed ipa
+```
+
+で IPAフォントを埋め込むようにできます。
+
+同様に
+
 - [小塚書体](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)
     - KozMinPro-Regular-Acro.otf
     - KozMinStd-Bold.otf
@@ -166,12 +173,6 @@ Cygwin
 
 のフォントファイルを $TEXMFLOCAL/fonts/opentype/ 以下のディレクトリに
 配置しておけば，
-
-```
-updmap --setoption kanjiEmbed ipa
-```
-
-で IPAフォントを，
 
 ```
 updmap --setoption kanjiEmbed kozuka
