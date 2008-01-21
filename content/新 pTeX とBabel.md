@@ -154,7 +154,8 @@ Babel 対応版です（同書付録H参照）。
 
 ### dviout for Windows のカスタマイズ {#r9f015cc}
 
-- $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，dviout for Windows の
+- $TEXMFLOCAL/fonts/ 以下のファイルも
+    参照されるように，[dviout for Windows](/dviout/) の
     \[Option\] → \[Setup Parameters...\] → \[Font\] → TEXROOT: 欄に
     例えば “;C:\usr\local\W32TeX\share\texmf-local\fonts” を
     追加記述し，\[Save\] → \[OK\] する。
@@ -264,11 +265,11 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     は $TEXMFLOCAL/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
     （存在しないディレクトリは予め作っておく）。
 
-- なお，現在は[安田功さん](http://www.ceres.dti.ne.jp/~i-yasuda/)作成の
+- なお，現在は[安田功さん](http://yasuda.homeip.net/)作成の
     [LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)（全サイズ版と 10 pt 版あり）
     がありますので，キリル文字を本格的に使われる方はこちらをご利用ください
     （ダウンロードは
-    「[ダウンロード・サービス #LH T2D/OT2 Type1 フォント](http://www.ceres.dti.ne.jp/~i-yasuda/dl/dl.html#i)」
+    「[ダウンロード・サービス #LH T2D/OT2 Type1 フォント](http://yasuda.homeip.net/dl/dl.html#i)」
     から）。
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
@@ -324,6 +325,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### 参考サイト {#af834ac1}
 
 - [Babel のマニュアル（英語）](http://www.ring.gr.jp/pub/text/CTAN/languages/babel/babel.pdf)
-    ([CTAN](/CTAN/))
+    &#x5b;[CTAN](/CTAN/)\]
 
 - [pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)
