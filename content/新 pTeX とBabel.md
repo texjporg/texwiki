@@ -9,14 +9,22 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
-以下では LaTeX/pLaTeX システムで Babel パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
+以下では LaTeX/pLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
 ### 更新履歴 {#sa5b8545}
 
-- \[2007/11/15\] [推奨環境](#z22ea698)にVine版，Mac OS X版の記述を追加しました。--栗山
-- \[2007/11/1\] [推奨環境](#z22ea698) に [『［改訂第4版］ LaTeX2e 美文書作成入門』付録CD-ROM ](#oe0dfa58)の項を追加しました。--栗山
-- \[2007/7/12\] 最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
-- \[2007/07/06\] 「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
+- \[2007/11/15\]
+    [推奨環境](#z22ea698)に Vine 版，Mac OS X 版の記述を追加しました。-- 栗山
+
+- \[2007/11/1\]
+    [推奨環境](#z22ea698)に[『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM](#oe0dfa58) の項を追加しました。-- 栗山
+
+- \[2007/7/12\]
+    最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
+
+- \[2007/07/06\]
+    「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
+
 - \[2007/05/21\]
     [キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール](#ka19a2ab) -- LH フォントのリンク先を新版 (3.5f) に合わせて直しました（すっかり忘れていた...）。-- 栗山
 
@@ -66,77 +74,106 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) では [TeX Live](http://www.tug.org/texlive/) 所収のハイフネーションファイル（43種類）が同梱されています。8ビットコード対応済み ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法はこちら）。
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) では
+[TeX Live](http://www.tug.org/texlive/) 所収の
+ハイフネーションファイル（43種類）が同梱されています。8ビットコード対応済み
+([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
+日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
+TeXWiki:インストール (Windows) を参照）。
 
 #### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
 
-[ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) では teTeX-3.0 所収の
-ハイフネーションファイル（33種類）が同梱されています。“make babel” で日本語環境向けの処理が全自動で行われます（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) もご覧下さい）。
-[Vine Linux 4.x](http://vinelinux.org/) では ptetex3 の Babel 対応版がデフォルトでインストールされます。
-他の UNIX(-like OS) ディストリビューション同梱のものや配布バイナリを使用する場合は手作業で調整する必要があります（[こちら](http://www2.tba.t-com.ne.jp/ing/babel.html)を参照）。Cygwin については[こちら](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)をご覧下さい。
+[ptetex3](/Make/#saac55c2) では [teTeX](http://www.tug.org/tetex/)-3.0 所収の
+ハイフネーションファイル（33種類）が同梱されています。“make babel” で
+日本語環境向けの処理が全自動で行われます
+（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) も
+ご覧ください）。[Vine Linux](http://vinelinux.org/) 4.x では
+ptetex3 の Babel 対応版がデフォルトでインストールされます。他の
+UNIX 互換 OS ディストリビューション同梱のものや配布バイナリを使用する場合には
+手作業で調整する必要があります
+（「[日本語LaTeXによる多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
+を参照）。Cygwin については
+「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)」
+をご覧ください。
 
 #### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM {#oe0dfa58}
 
-『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録 CD-ROM には上記 [W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と [ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) が収録されています（インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも Babel 対応版です（同書付録H参照）。
+『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
+付録 CD-ROM には上記
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と
+[ptetex3](/Make/#saac55c2) が収録されています
+（インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも
+Babel 対応版です（同書付録H参照）。
 
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) ，[ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) 
-では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット関連ファイルをインストールすることだけで全ての環境が整います。これらの追加パッケージは $TEXMFLOCAL/ (&asymp;texmf-local/) 以下に入れることにします。
+[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)，[ptetex3](/Make/#saac55c2)
+では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット
+関連ファイルをインストールすることだけで全ての環境が整います。これらの
+追加パッケージは $TEXMFLOCAL/ (&asymp; texmf-local/) 以下に入れることにします。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
-- 
-    [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
-    から[lhfnt35f-gen-mf.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip)
-    と[lhfnt35f-source.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip)
-    をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
+- [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
+    から[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip)
+    と[lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip)
+    をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は
+    元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
 
-#### 以下は Windows 環境のみ必要（Cygwin を除く） {#l0bb2df6}
+#### 以下は Microsoft Windows 環境のみ必要（Cygwin を除く） {#l0bb2df6}
 
-- 
-    $TEXMFLOCAL/source/lh/tex/setter.tex を開き “\MakeFileHeadsfalse” とある箇所の “false” 部分を “true” と書き換え，上書き保存する。
+- $TEXMFLOCAL/source/lh/tex/setter.tex を開き “\MakeFileHeadsfalse” とある
+    箇所の “false” 部分を “true” と書き換え，上書き保存する。
 
-- 
-    $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
-
-- 
-    コマンドプロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
+- $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
+- コマンドプロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
     >tex 99allenc.tex
     ```
 
-    と打ち込めば必要となるファイル群が wrk/ 内に自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを全て $TEXMFLOCAL/fonts/source/lh/ ディレクトリ内に移動する。
+    と打ち込めば必要となるファイル群が wrk/ 内に
+    自動生成されるので，wrk/ ディレクトリ内にある \*.mf ファイルを
+    全て $TEXMFLOCAL/fonts/source/lh/ ディレクトリ内に移動する。
 
 ### ギリシアアルファベットフォント関連ファイルのダウンロードとインストール {#ud937b30}
 
-- 
-    [CTAN:fonts/greek/](https://mirror.ctan.org/fonts/greek/) から[cbfonts.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/greek/cbfonts.zip) をダウンロードし，適当な作業ディレクトリに展開する。
+- [CTAN:fonts/greek/](https://mirror.ctan.org/fonts/greek/)
+    から[cbfonts.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/greek/cbfonts.zip) を
+    ダウンロードし，適当な作業ディレクトリに展開する。
 
-- 
-    展開してできた cbfonts/ ディレクトリを開き，その中にある dvips/, encodings/, mf/, tfm/, type1/ の各ディレクトリを，それぞれ cbfonts/ とリネームしてから，<br>
+- 展開してできた cbfonts/ ディレクトリを開き，
+    その中にある dvips/，encodings/，mf/，tfm/，type1/ の各ディレクトリを
+    それぞれ cbfonts/ とリネームしてから
 
 > $TEXMFLOCAL/fonts/map/dvips/<br>
 > $TEXMFLOCAL/fonts/enc/<br>
 > $TEXMFLOCAL/fonts/source/<br>
 > $TEXMFLOCAL/fonts/tfm/<br>
-> $TEXMFLOCAL/fonts/type1/<br>
+> $TEXMFLOCAL/fonts/type1/
 
 内に移動する（存在しないディレクトリは予め作っておく）。
 
-### Dviout for Windows のカスタマイズ {#r9f015cc}
+### dviout for Windows のカスタマイズ {#r9f015cc}
 
-- 
-    $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，Dviout for Windows の \[Option\] -> \[Setup Parameters...\] -> \[Font\] -> TEXROOT: 欄に例えば “;c:\usr\local\share\texmf-local\fonts” を追加記述し，\[Save\] -> \[OK\] する。
+- $TEXMFLOCAL/fonts/ 以下のファイルも参照されるように，dviout for Windows の
+    \[Option\] → \[Setup Parameters...\] → \[Font\] → TEXROOT: 欄に
+    例えば “;C:\usr\local\W32TeX\share\texmf-local\fonts” を
+    追加記述し，\[Save\] → \[OK\] する。
 
 ### type1ec.sty のインストール {#sea65834}
 
-- 
-    [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty) をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する（存在しないディレクトリは予め作っておく）。
+- [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/)
+    から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty)
+    をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する
+    （存在しないディレクトリは予め作っておく）。
 
 ### タイプセットのテスト {#mafcbf19}
 
-- 
-    以下のファイルをタイプセットしてみてください。latex, platex のいずれでも OK となっているはずです（出力結果は『[［改訂第3版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』付録J 340ページないし『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』付録J 357ページとほぼ同じになると思います）。
+- 以下のファイルをタイプセットしてみてください。latex，platex の
+    いずれでも OK となっているはずです（出力結果は
+    『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
+    付録J 357ページないし
+    『[［改訂第3版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』
+    付録J 340ページとほぼ同じになると思います）。
 
 ***
 
@@ -196,38 +233,48 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ***
 
-ここから先は Type 1 フォントを使うための設定です。不必要であれば無視してください。
+ここから先は Type 1 フォントを使うための設定です。
+不必要であれば無視してください。
 
 ### cm-super パッケージ（巨大！ 約 64.1 MiB）のダウンロードとインストール {#a4477ec1}
 
-- 
-    （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の Type 1 が含まれています）<br>
-    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) から[cm-super.zip](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) をダウンロードし，元のツリー構造を保ったまま，$TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。先の type1ec.sty は上書きして良い。
+- （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の
+    Type 1 フォントが含まれています）<br>
+    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/)
+    から[cm-super.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) を
+    ダウンロードし，
+    元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。
+    先の type1ec.sty は上書きして良い。
 
-- 
-    $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する（それ以外のファイルは，さしあたって不必要）。
+- $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，
+    その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，
+    ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する
+    （それ以外のファイルは，さしあたって不必要）。
 
 ### キリルアルファベットの追加 {#p1435221}
 
-- 
-    キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される
-    wn\* フォントに関しては，残念ながら cm-super に Type 1 が用意されていません。
-    先に挙げた例でテストする場合は，
-    さらに，「[『［改訂第3版］ LaTeX2e 美文書作成入門』付録J章サポートページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html)」に
-    ある[bibunj-cyrillic.map](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/bibunj-cyrillic.map),
+- キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される
+    wn\* フォントに関しては，残念ながら cm-super に Type 1 フォントが
+    用意されていません。先に挙げた例でテストする場合には，さらに
+    「[『［改訂第3版］ LaTeX2e 美文書作成入門』付録J章サポートページ](http://www.lg.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html)」
+    にある[bibunj-cyrillic.map](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/bibunj-cyrillic.map),
     [wnr10.pfb](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/wnr10.pfb),
     [wnbx12.pfb](http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/wnbx12.pfb)
-    をダウンロードし，\*.pfb は $TEXMFLOCAL/fonts/type1/wn-cyrillic/ 以下に \*.map
+    をダウンロードし，\*.pfb は $TEXMFLOCAL/fonts/type1/wn-cyrillic/ 以下に，\*.map
     は $TEXMFLOCAL/fonts/map/dvips/wn-cyrillic/ 以下にコピーしてください
     （存在しないディレクトリは予め作っておく）。
 
-- 
-    なお，現在は[安田さん](http://www.ceres.dti.ne.jp/~i-yasuda/)作成の [LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)（全サイズ版と 10 pt 版あり）がありますので，キリル文字を本格的に使われる方はこちらをご利用下さい（[ダウンロードサイト](http://www.ceres.dti.ne.jp/~i-yasuda/dl/dl.html)）。
+- なお，現在は[安田功さん](http://www.ceres.dti.ne.jp/~i-yasuda/)作成の
+    [LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)（全サイズ版と 10 pt 版あり）
+    がありますので，キリル文字を本格的に使われる方はこちらをご利用ください
+    （ダウンロードは
+    「[ダウンロード・サービス #LH T2D/OT2 Type1 フォント](http://www.ceres.dti.ne.jp/~i-yasuda/dl/dl.html#i)」
+    から）。
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
-- 
-    $TEXMF/web2c/updmap.cfg （ptetex3 では $TEXMFCONFIG/web2c/updmap.cfg）に，必要に応じて
+- $TEXMF/web2c/updmap.cfg （ptetex3 では $TEXMFCONFIG/web2c/updmap.cfg）に，
+    必要に応じて
 
     ```
     MixedMap cbgreek.map
@@ -237,9 +284,9 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     Map cm-super-t2b.map
     Map cm-super-t2c.map
     Map cm-super-x2.map
-    #Map cyrillic-ot2.map      % 安田さんのパッケージ
-    #Map cyrillic-t2d.map      % 安田さんのパッケージ
-    #Map bibunj-cyrillic.map   % 永田さんのサポートページ
+    #Map cyrillic-ot2.map      % 安田功さんのパッケージ
+    #Map cyrillic-t2d.map      % 安田功さんのパッケージ
+    #Map bibunj-cyrillic.map   % 永田善久さんのサポートページ
     ```
 
     と記述し，コマンドプロンプトにて
@@ -248,7 +295,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     updmap
     ```
 
-    ないし UNIX, Unix-like OS, Mac OS 環境でシステム全体を更新する場合は
+    ないし UNIX 互換 OS，Mac OS 環境でシステム全体を更新する場合は
 
     ```
     updmap-sys
@@ -258,16 +305,25 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ### PDF 作成テスト {#mca7623b}
 
-- 
-    以上で，先のタイプセット用ファイル（名前を仮に johannes.tex とします）に
+- 以上で，先のタイプセット用ファイル（名前を仮に johannes.tex とします）に
 
     ```
     (p)latex johannes.tex
     dvipdfm(x) johannes.dvi
     ```
 
-    とすることで Type 1 の埋め込まれた PDF が作成されます。
+    とすることで PostScript フォントの埋め込まれた PDF が作成されます。
 
 ### もっと本格的に…… {#z684b1d0}
 
-世界の言語あるいは文字をどこまで表現できるかについては，稲垣徹さんのウェブサイト「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を参照してください。
+世界の言語あるいは文字をどこまで表現できるかについては，
+稲垣徹さんのウェブサイト
+「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を
+参照してください。
+
+### 参考サイト {#af834ac1}
+
+- [Babel のマニュアル（英語）](http://www.ring.gr.jp/pub/text/CTAN/languages/babel/babel.pdf)
+    ([CTAN](/CTAN/))
+
+- [pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)
