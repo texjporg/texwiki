@@ -8,7 +8,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://www.gihyo.co.jp/books/syoseki.php/4-7741-2984-4)』（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
-本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://www.ceres.dti.ne.jp/~i-yasuda/)，[栗山雅俊](http://ethics.let.hokudai.ac.jp/~gpae/plus2/?Staff/Kuriyama)にあります。
+本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://ethics.let.hokudai.ac.jp/~gpae/plus2/?Staff/Kuriyama)にあります。
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
 
@@ -20,7 +20,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](/Make/#saac55c2) で試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
+- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](/Make/#saac55c2) へのパッチとして試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）—「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
@@ -43,7 +43,8 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 370 language.dat 場所は $TEXMF/tex/generic/config/ にあります。オリジナルは書き替えずに $TEXMFLOCAL// (&asymp; texmf-local//) ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下にコピーして使った方がよいと思います。
 
-- p. 371 「fmtutil --byfmt platex」— [ptetex3](/Make/#saac55c2) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します。
+<!-- - p. 371 「fmtutil - -byfmt platex」— [[ptetex3>Make#saac55c2]] では “- -byfmt // platex-euc” （または “- -byfmt platex-sjis”）と指定します。 -->
+<!-- ptetex3-20070508 で platex-euc, platex-sjis は廃止されました。 -->
 
 - p. 372 「updmap コマンド」— map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録 D.5 節（p. 315 以下）にあります。（稲垣）
 
@@ -65,7 +66,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。<del>[トップページ](http://www.aliadne.net/field/tibet/)</del>をご参照ください。
 
-- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田さんのウェブサイト](http://www.geocities.jp/koh_hotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/) でもGT書体を使うためのパッケージ[gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
+- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田耕作さんのウェブサイト](http://www.geocities.jp/koh_hotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/) でもGT書体を使うためのパッケージ[gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
 - p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」—こちらも[堀田さんのウェブサイト](http://www.geocities.jp/koh_hotta/ghost/package.html)で[mjfonts2.lzh](http://www.geocities.jp/koh_hotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
     [mjfonts2.tgz](http://www.geocities.jp/koh_hotta/ghost/moj/mjfonts2.tgz) （UNIX, Unix-like OS 版）が提供されています。
