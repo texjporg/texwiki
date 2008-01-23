@@ -65,10 +65,10 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。<del>[トップページ](http://www.aliadne.net/field/tibet/)</del>をご参照ください。
 
-- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田耕作さんのウェブサイト](http://www.geocities.jp/koh_hotta/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.geocities.jp/koh_hotta/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/) でもGT書体を使うためのパッケージ[gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
+- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田耕作さんのウェブサイト](http://www.khotta.org/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.khotta.org/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.khotta.org/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/) でもGT書体を使うためのパッケージ[gtftex.lzh](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.lzh) が提供されています。
 
-- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」—こちらも[堀田さんのウェブサイト](http://www.geocities.jp/koh_hotta/ghost/package.html)で[mjfonts2.lzh](http://www.geocities.jp/koh_hotta/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
-    [mjfonts2.tgz](http://www.geocities.jp/koh_hotta/ghost/moj/mjfonts2.tgz) （UNIX, Unix-like OS 版）が提供されています。
+- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」—こちらも[堀田さんのウェブサイト](http://www.khotta.org/ghost/package.html)で[mjfonts2.lzh](http://www.khotta.org/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
+    [mjfonts2.tgz](http://www.khotta.org/ghost/moj/mjfonts2.tgz) （UNIX, Unix-like OS 版）が提供されています。
 
 ## コメント {#l1a73338}
 
