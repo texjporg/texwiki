@@ -28,7 +28,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 364, p. 369 本書で言及しているキリル文字フォントエンコーディング OT2/T2A/T2B/T2C/T2D/X2 は，キリル文字に限定すれば，(OT2 ∪ T2A ∪ T2B ∪ T2C) ⊂ X2 の関係にあります。X2 を使えば OT2 にないキリル文字をほとんどカバーできます。T2D には X2 にはない教会スラヴ語文字・古スラヴ語文字が含まれています。X2 の使い方については，稲垣さんのサイト（「CTAN Directory &mdash; “[Russian / Cyrillic Language](http://www2.tba.t-com.ne.jp/ing/ctan/russian.html)”」など）に解説があります。（安田）
 
-- p. 364 「ロシア語におけるいくつかの補足」—数式モードにおけるキリル文字の利用について，amsmath.sty (AMS-LaTeX)，mathtext.sty を使った例を<del>[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)</del>にしました。（安田）
+- p. 364 「ロシア語におけるいくつかの補足」—数式モードにおけるキリル文字の利用について，amsmath.sty (AMS-LaTeX)，mathtext.sty を使った例を[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)にしました。（安田）
 
 - p. 365 註28 「ギリシア文字の直接入力はサポートされていません」— Babel 本体では未サポートですが，オプションで[iso-8859-7.def](http://www.ring.gr.jp/pub/text/CTAN/fonts/greek/package-babel/encodings/iso-8859-7.def) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic，古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
@@ -43,8 +43,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 370 language.dat 場所は $TEXMF/tex/generic/config/ にあります。オリジナルは書き替えずに $TEXMFLOCAL// (&asymp; texmf-local//) ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下にコピーして使った方がよいと思います。
 
-<!-- - p. 371 「fmtutil - -byfmt platex」— [[ptetex3>Make#saac55c2]] では “- -byfmt // platex-euc” （または “- -byfmt platex-sjis”）と指定します。 -->
-<!-- ptetex3-20070508 で platex-euc, platex-sjis は廃止されました。 -->
+- p. 371 「fmtutil --byfmt platex」— 20070508版より前の [ptetex3](/Make/#saac55c2) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します（ptetex3-20070508 で platex-euc, platex-sjis は廃止されました）。
 
 - p. 372 「updmap コマンド」— map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録 D.5 節（p. 315 以下）にあります。（稲垣）
 
