@@ -9,83 +9,127 @@ pukiwiki: "TIPA"
 
 ## TIPA {#z57e2958}
 
-[TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)は東大の[福井玲](http://www.l.u-tokyo.ac.jp/~fkr/)先生が作られたIPA (International Phonetic Alphabet、国際音標文字、いわゆる発音記号フォント) です。TIPAのTはTeXまたはTokyo (東大?) を意味するとのことです。同じ福井先生が製作に携わったTSIPAをベースに、大幅に機能およびフォントデザインを改良したものです。
+[TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm) は
+東京大学の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた
+IPA （<strong>I</strong>nternational <strong>P</strong>honetic
+<strong>A</strong>lphabet，国際音声記号，謂ゆる発音記号）の
 
-TIPAのフォントにはIPAの記号のほか、アメリカの音声学、インド・ヨーロッパ言語、東アジアの言語学などで使用される音声記号が含まれています。これらはComputer Modernをベースに設計されており、Roman、Slanted、Bold Extended、Sans Serif、Typewriter体など豊富な種類が使用できます (Italic体はありません)。また、TimesおよびHelveticaにデザインを近づけたバージョンも含まれています。
+フォントです。TIPA の T は TeX または Tokyo （東京大学？）を
+意味するとのことです。同じ福井さんが製作に携わった TSIPA をベースに，
+大幅に機能およびフォントデザインを改良したものです。
 
-福井先生のサイトの[tipaディレクトリ](http://www.l.u-tokyo.ac.jp/~fkr/tipa/)
-から最新版がダウンロードできます (執筆時点での最新版はtipa-1.3です)。
-[CTAN:fonts/tipa/](https://mirror.ctan.org/fonts/tipa/) でもミラーされています。
+TIPA のフォントには IPA の記号のほか，
+アメリカの音声学，インド・ヨーロッパ言語，東アジアの言語学などで
+使用される音声記号が含まれています。これらは Computer Modern をベースに
+設計されており，Roman，Slanted，Bold Extended，Sans Serif，Typewriter 体など
+豊富な種類が使用できます（Italic 体はありません）。また，Times
+及び Helvetica にデザインを近付けたフォント xipa も含まれています。
+
+福井さんのウェブサイトの
+[tipa/ ディレクトリ](http://www.l.u-tokyo.ac.jp/~fkr/tipa/)から
+最新版がダウンロードできます（執筆時点での最新版は
+tipa-1.3 です）。[CTAN:fonts/tipa/](https://mirror.ctan.org/fonts/tipa/) でもミラーされています。
 
 ### インストール {#j6ff5f64}
 
-makeが使える環境であれば、Makefileの先頭のPREFIXの定義を適宜変更し
+make が使える環境であれば，Makefile の先頭の PREFIX の定義を適宜変更し
 
 ```
-make install
+$ make install
 ```
 
 を実行します。
 
-手動でインストールする場合は、展開されたファイル群を以下の場所に移動します (下記/usr/local/share/texmfの部分はお使いの環境に応じて読み替えて下さい)。
+手動でインストールする場合には，展開されたファイル群を以下の場所に移動します
+（下記 $TEXMFLOCAL の部分はお使いの環境に応じて読み替えてください）。
 
-- styディレクトリの中身を/usr/local/share/texmf/tex/latex/tipaに入れる。
-- mfディレクトリの中身を/usr/local/share/texmf/fonts/source/fkr/tipaに入れる。
-- tfmディレクトリの中身を/usr/local/share/texmf/fonts/tfm/fkr/tipaに入れる。
-- type1ディレクトリの中身を/usr/local/share/texmf/fonts/type1/fkr/tipaに入れる。
-- dvipsディレクトリの中身を/usr/local/share/texmf/dvips/configに入れる (※)。
+- sty/ ディレクトリの中身を $TEXMFLOCAL/tex/latex/tipa/ に入れる。
+- mf/ ディレクトリの中身を $TEXMFLOCAL/fonts/source/tipa/ に入れる。
+- tfm/ ディレクトリの中身を $TEXMFLOCAL/fonts/tfm/tipa/ に入れる。
+- type1/ ディレクトリの中身を $TEXMFLOCAL/fonts/type1/tipa/ に入れる。
+- dvips/ ディレクトリの中身を $TEXMFLOCAL/fonts/map/dvips/tipa/ に
+    入れる。[^1]
 
-> (※) TDS 1.1では/usr/local/share/texmf/fonts/map/dvips/fkr/tipaになります。
+- doc/ ディレクトリの中身を $TEXMFLOCAL/doc/tipa/ に入れる。
 
-移動したら、必要に応じてmktexlsr、updmap --enable Map tipa.mapなどを実行します。
+移動したら，必要に応じて
 
-その後TIPAの配布に含まれるdocディレクトリ内にある、tipaman.texをコンパイルします。インストールに成功していれば、生成されたtipaman.dviの全ページが正常に表示されます。
+```
+mktexlsr
+```
+
+や
+
+```
+updmap --enable Map tipa.map
+```
+
+などを実行します。
+
+その後 TIPA の配布に含まれる doc/ ディレクトリ内にある tipaman.tex を
+コンパイルしてみます。インストールに成功していれば，
+生成された tipaman.dvi の全ページが正常に表示されます。
 
 ### 使い方 {#o25babb1}
 
-\usepackageコマンドでtipa.styを読み込めば、TIPAの機能を使用できるようになります。
+\usepackage コマンドで tipa.sty を読み込めば，TIPA の機能を
+使用できるようになります。
 
 ```
+%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
 \documentclass{jsarticle}
+%\documentclass{jarticle}
 \usepackage{tipa}
 \begin{document}
-:
+...
 \end{document}
 ```
 
-特殊な記号を使用する場合は、\usepackage{tipa}の後に続けて\usepackage{xipa}を指定します。
+特殊な記号を使用する場合には，tipa.sty の後に続けて tipx.sty を指定します。
 
 ```
+%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
 \documentclass{jsarticle}
-\usepackage{tipa}
-\usepackage{xipa}
+%\documentclass{jarticle}
+\usepackage{tipa,tipx}
 \begin{document}
-:
+...
 \end{document}
 ```
 
-音声記号は、
+音声記号の入力方法には次のものがあります。英語の “explanation” の発音を
+表す記号 \[&#x2cc;&#x25b;kspl&#x259;&#x2c8;ne&#x26a;&#x283;&#x259;n\] を
+例として挙げています。
 
-- 通常のテキスト内でマクロ名を指定する
-- マクロの引数や環境内でショートカット文字を使用する
+1. 命令型マクロ \textipa の引数内でショートカット文字を使用する。
 
-のいずれかの方法で入力できます。たとえば英語の「explanation」の発音を表す記号
+    ```
+    \textipa{[""Ekspl@"neIS@n]}
+    ```
 
-> \[ˌɛkspləˈneɪʃən\]
+1. 宣言型マクロ \tipaencoding と共にショートカット文字を使用する。
 
-は
+    ```
+    {\tipaencoding [""Ekspl@"neIS@n]}
+    ```
 
-```
-[\textsecstress\textepsilon kspl\textschwa
-\textprimstress ne\textsci\textesh\textschwa n]
-```
+1. IPA 環境内でショートカット文字を使用する。
 
-または
+    ```
+    \begin{IPA}
+      [""Ekspl@"neIS@n]
+    \end{IPA}
+    ```
 
-```
-\textipa{[""Ekspl@"neIS@n]}
-```
+1. 通常のテキスト内でマクロ名を指定する。
 
-と入力します。
+    ```
+    [\textsecstress\textepsilon kspl\textschwa
+    \textprimstress ne\textsci\textesh\textschwa n]
+    ```
 
-使用できるコマンド、フォントの詳細はtipaman.texをご参照下さい ([TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)のページでは、tipaman.texをコンパイルした文書のPDF版 (TIPAマニュアル) を見ることもできます)。
+使用できるコマンド，フォントの
+詳細は[tipaman.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/tipa/tipaman.pdf)
+をご参照ください。
+
+[^1]: 旧い [TDS](https://mirror.ctan.org/tds/) では $TEXMFLOCAL/dvips/config/ でした。
