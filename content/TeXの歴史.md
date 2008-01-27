@@ -105,7 +105,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center"></td><td style="text-align:right">9</td><td style="text-align:center"></td><td>日本語 TeX 情報が <a href="/">TeX Wiki</a> に移行する。</td></tr>
 <tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>@nifty FDTP &amp; FTEX 公式 Web ページが閉鎖した。</td></tr>
 <tr><td style="text-align:center">2005</td><td style="text-align:right">2</td><td style="text-align:center"></td><td>@nifty DTPと印刷フォーラム（FDTP) が終了した。</td></tr>
-<tr><td style="text-align:center">2006</td><td style="text-align:right">5</td><td>Thomas Esser氏が teTeX 新規リリースの停止を表明しました。</td><td></td></tr>
+<tr><td style="text-align:center">2006</td><td style="text-align:right">5</td><td>Thomas Esser氏が teTeX 新規リリースの停止を表明。</td><td></td></tr>
 <tr><td style="text-align:center">2007</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun4/">『[改訂第4版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/tex/">TeX フォーラム</a> が開設される。</td></tr>
 </tbody></table>
