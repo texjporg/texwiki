@@ -137,7 +137,7 @@ Date: 5 Nov 2002 11:11:53 -0800
     の The Book of Tea など。
 
 - [Bodhisattvamaarga in "Sik.saasamuccaya](http://homepages.comnet.co.nz/~r-mahoney/ma_thesis/ma_thesis.html)
-- The Memoir Class (CTAN:macros/latex/contrib/supported/memoir/) のドキュメント
+- The Memoir Class ([CTAN:macros/latex/contrib/memoir/](https://mirror.ctan.org/macros/latex/contrib/memoir/)) のドキュメント
 - [Beyond Words--Life Cast](http://www.beyondword.com/books/lc.html)
     （[サンプルページ](http://www.bluesky.com/mask/mask.gif)）
 
