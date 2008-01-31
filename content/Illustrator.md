@@ -9,7 +9,8 @@ pukiwiki: "Illustrator"
 
 ## Adobe Illustrator {#w6d2965c}
 
-Illustrator 関連の話題を書き込んでください。
+[Adobe Illustrator](http://www.adobe.com/jp/products/illustrator/) 関連の
+話題を書き込んでください。
 
 ### Illustrator の図を TeX に {#sa00c636}
 
