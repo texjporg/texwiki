@@ -94,7 +94,7 @@ aspell --lang=en -c -t 調べたいtexファイル
 例えば、コメント文もスペルチェックして欲しいときには、
 
 ```
-$ aspell -c -t --tex-check-commets TeXソースファイル
+$ aspell -c -t --tex-check-comments TeXソースファイル
 ```
 
 とします。
