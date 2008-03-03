@@ -651,31 +651,23 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ### 配布先 {#gc8a2a19}
 
-[Ring Server](http://www.dnsbalance.ring.gr.jp/) からインストールプログラムを入手します。
+[Ring Server](http://www.dnsbalance.ring.gr.jp/)
+からインストールプログラムを入手します。
 
 - Ghostscript のインストーラ
-    - GPL Ghostscript 8.63:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs863w32full-gpl.zip](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs863w32full-gpl.zip)
-
-- [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と
-    比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
+- [GPL Ghostscript 8.63](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs863w32full-gpl.zip)
+    - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
-    - GSview 4.9:
-
-> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w32.exe](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
-
-- x64 \[AMD64, Intel 64\] プロセッサ専用バイナリのインストーラ：
-
-> [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/)[gsv49w64.exe](ftp://ftp.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
-
-<!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
-<!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
-<!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
-<!-- x86-64 （AMD64 の旧称。AMD64 と Intel 64 の総称としても使われる） -->
-<!-- EM64T （Intel 64 の旧称） -->
-<!-- IA-32e （EM64T の旧称） -->
+    - [GSview 4.9 (32bit版)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
+    - [GSview 4.9 (64bit版)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
+        <!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
+        <!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
+        <!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
+        <!-- x86-64 （AMD64 の旧称。AMD64 と Intel 64 の総称としても使われる） -->
+        <!-- EM64T （Intel 64 の旧称） -->
+        <!-- IA-32e （EM64T の旧称） -->
 
 ### インストール {#a4d9c6ea}
 
