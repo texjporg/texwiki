@@ -651,12 +651,12 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ### 配布先 {#gc8a2a19}
 
-[Ring Server](http://www.ring.gr.jp/) からインストールプログラムを入手します。
+[Ring Server](http://www.dnsbalance.ring.gr.jp/) からインストールプログラムを入手します。
 
 - Ghostscript のインストーラ
-    - GPL Ghostscript 8.62:
+    - GPL Ghostscript 8.63:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs862w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs862w32full-gpl.zip)
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs863w32full-gpl.zip](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs863w32full-gpl.zip)
 
 - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と
     比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
