@@ -7,11 +7,11 @@ pukiwiki: "Ghostscript 8.54"
 
 # Ghostscript 8.54
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
 
 編集意欲のある方は是非代わりに編集してください。
 
-## GPL Ghostscript 8.54 for UNIX or Unix-like OS {#xff4aa84}
+## GPL Ghostscript 8.xx for UNIX or Unix-like OS {#xff4aa84}
 
 ### はじめに {#p921c1f2}
 
@@ -95,19 +95,19 @@ ps2pdf もうまく行えます。
 
 #### 参考サイト {#cb8dfaab}
 
-- [Ghostscript のインストール（Mac OS X 10.4 Tiger）](http://www.interq.or.jp/mars/cherry/mac/gs-tiger.html)
+- [Ghostscript のインストール（Mac OS X 10.4 Tiger）](http://www.cymric.jp/old/mac/gs-tiger.html)
 
 ### フォントのシンボリックリンク {#j6c4153b}
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W6
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
 $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
@@ -115,21 +115,21 @@ $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
 $ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStdN-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruProN-W4
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStd-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s /Library/Fonts/华文宋体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
 $ sudo ln -s /Library/Fonts/华文楷体.ttf \
@@ -150,23 +150,23 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
     そのファイルのフルパスがターミナルに入力されます。
 
     ```
-    $ sudo ln -s 【ここで "ヒラギノ明朝 ProN W3.otf" をドラッグアンドドロップ】 /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+    $ sudo ln -s 【ここで "ヒラギノ明朝 ProN W3.otf" をドラッグアンドドロップ】 /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
     ```
 
     これを上記の全てのフォントについて行います。
 
 1. 上記の内容のシェルスクリプトを作って実行します。
-1. &nbsp;
+1. <br>
 
     ```
     $ sudo ln -s "`grep -l HiraMinProN-W3 /System/Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W3
     $ sudo ln -s "`grep -l HiraMinProN-W6 /System/Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W6
     $ sudo ln -s "`grep -l HiraKakuProN-W3 /System/Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W3
     $ sudo ln -s "`grep -l HiraKakuProN-W6 /System/Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W6
     $ sudo ln -s "`grep -l 'STHeiti.*Regular' /System/Library/Fonts/*.ttf`" \
     > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
     $ sudo ln -s "`grep -l STXihei /System/Library/Fonts/*.ttf`" \
@@ -174,21 +174,21 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
     $ sudo ln -s "`grep -l LiHeiPro /System/Library/Fonts/*.ttf`" \
     > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
     $ sudo ln -s "`grep -l HiraKakuStdN-W8 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStdN-W8
     $ sudo ln -s "`grep -l HiraMaruProN-W4 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruProN-W4
     $ sudo ln -s "`grep -l HiraMinPro-W3 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
     $ sudo ln -s "`grep -l HiraMinPro-W6 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W6
     $ sudo ln -s "`grep -l HiraKakuPro-W3 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W3
     $ sudo ln -s "`grep -l HiraKakuPro-W6 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W6
     $ sudo ln -s "`grep -l HiraKakuStd-W8 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStd-W8
     $ sudo ln -s "`grep -l HiraMaruPro-W4 /Library/Fonts/*.otf`" \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruPro-W4
     $ sudo ln -s "`grep -l STSong /Library/System/Library/Fonts/*.ttf`" \
     > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
     $ sudo ln -s "`grep -l STKaiti /Library/System/Library/Fonts/*.ttf`" \
@@ -201,33 +201,33 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
 
     のように grep を使います。
 
-1. &nbsp;
+1. <br>
 
     ```
     $ sudo ln -s /System/Library/Fonts/?????????????????????\ ProN\ W3.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W3
     $ sudo ln -s /System/Library/Fonts/?????????????????????\ ProN\ W6.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinProN-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W6
     $ sudo ln -s /System/Library/Fonts/????????????????????????\ ProN\ W3.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W3
     $ sudo ln -s /System/Library/Fonts/????????????????????????\ ProN\ W6.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuProN-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W6
     $ sudo ln -s /Library/Fonts/????????????????????????\ StdN\ W8.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStdN-W8
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStdN-W8
     $ sudo ln -s /Library/Fonts/????????????????????????\ ProN\ W4.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruProN-W4
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruProN-W4
     $ sudo ln -s /Library/Fonts/?????????????????????\ Pro\ W3.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
     $ sudo ln -s /Library/Fonts/?????????????????????\ Pro\ W6.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMinPro-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W6
     $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W3.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W3
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W3
     $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W6.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuPro-W6
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W6
     $ sudo ln -s /Library/Fonts/????????????????????????\ Std\ W8.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraKakuStd-W8
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStd-W8
     $ sudo ln -s /Library/Fonts/????????????????????????\ Pro\ W4.otf \
-    > /usr/local/share/ghostscript/8.54/Resource/CIDFont/HiraMaruPro-W4
+    > /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruPro-W4
     ```
 
     のようにワイルドカード “?” を使います。
@@ -236,7 +236,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 シンボリックリンクを作っておくと良いでしょう
 （こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
 
-### /usr/local/share/ghostscript/8.54/lib/cidfmap の記述例 {#h0f0fbe0}
+### /usr/local/share/ghostscript/8.??/lib/cidfmap の記述例 {#h0f0fbe0}
 
 #### <a id="cidfmap-unix">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
 
@@ -647,27 +647,20 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ***
 
-## GPL Ghostscript 8.54 for Microsoft Windows {#w33eec77}
+## GPL Ghostscript 8.xx for Microsoft Windows {#w33eec77}
 
-### 入手先 {#gc8a2a19}
+### 配布先 {#gc8a2a19}
 
 [Ring Server](http://www.ring.gr.jp/) からインストールプログラムを入手します。
 
-- Ghostscript のインストーラ（次のうち，1つをインストールすれば良い）
-    - GPL Ghostscript 8.54:
+- Ghostscript のインストーラ
+    - GPL Ghostscript 8.62:
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full-gpl.zip)
+> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs862w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs862w32full-gpl.zip)
 
-- GPL Ghostscript 8.61:
+- [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と
+    比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs861w32full-gpl.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs861w32full-gpl.zip)
-
-- GPL Ghostscript 8.54 と同じく，CJK ［中国語・日本語・韓國語］への対応が不充分
-    - AFPL Ghostscript 8.54:
-
-> [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](https://mirror.ctan.org/../TeX/ptex-win32/gs/)[gs854w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs854w32full.zip)
-
-- GPL Ghostscript 8.54 と機能は同じ
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
     - GSview 4.9:
 
@@ -690,7 +683,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 先にアンインストールしておきます。
 
 - 絶対パスに ASCII 以外の文字（日本語など）を使っていないディレクトリに
-    gs854w32full-gpl.zip を展開します。
+    gs8??w32full-gpl.zip を展開します。
 
 - setupgs.exe を実行します。
     - デフォルトのインストール先は “C:\gs”
@@ -708,35 +701,48 @@ ASCII 以外の文字（日本語など）を使っていると，Ghostscript �
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。環境変数 TEMP のデフォルトは
 Windows Vista の場合では %USERPROFILE%\AppData\Local\Temp
-(= C:\Users\\%USERNAME%\AppData\Local\Temp) と，
+(&cong; C:\Users\\%USERNAME%\AppData\Local\Temp) と，
 Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
-(= "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
+(&cong; "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
 設定されているので，この環境変数 TEMP を（例えば
 UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
 ASCII 文字だけで設定します。
 
 ### 環境変数 Path の設定 {#g074d14f}
 
-Ghostscript 8.54 を C:\gs\ にインストールしたのなら
+Ghostscript 8.?? を C:\gs\ にインストールしたのなら
 
 ```
-;C:\gs\gs8.54\bin;C:\gs\gs8.54\lib
+;C:\gs\gs8.??\bin;C:\gs\gs8.??\lib
 ```
 
 を，C:\usr\local\share\gs\ にインストールしたのなら
 
 ```
-;C:\usr\local\share\gs\gs8.54\bin;C:\usr\local\share\gs\gs8.54\lib
+;C:\usr\local\share\gs\gs8.??\bin;C:\usr\local\share\gs\gs8.??\lib
 ```
 
 を環境変数 Path に追加します。
 
 ### CMap {#k55ee82d}
 
-gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみます。
+gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみます。
 
 - H
 - V
+    <!-- -JISX0213-2004-H -->
+    <!-- ［[[ttk (TANAKA, Takuji) さん:http://homepage3.nifty.com/ttk/comp/tex/]]の -->
+    <!-- ウェブサイト -->
+    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://homepage3.nifty.com/ttk/comp/tex/jisx0213.html]]」に -->
+    <!-- ある&ref(http://homepage3.nifty.com/ttk/comp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
+    <!-- 中から入手できる。］ -->
+    <!-- -JISX0213-2004-V -->
+    <!-- ［[[ttk (TANAKA, Takuji) さん:http://homepage3.nifty.com/ttk/comp/tex/]]の -->
+    <!-- ウェブサイト -->
+    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://homepage3.nifty.com/ttk/comp/tex/jisx0213.html]]」に -->
+    <!-- ある&ref(http://homepage3.nifty.com/ttk/comp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
+    <!-- 中から入手できる。］ -->
+
 - UniJIS-UTF16-H
 - UniJIS-UTF16-V
 - UniJIS2004-UTF16-H
@@ -748,8 +754,8 @@ gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみま�
 - UniKS-UTF16-H
 - UniKS-UTF16-V
 - Adobe-Japan1-6
-    <!-- -&ref(http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz,Adobe-Japan1-5-V); （← これだけは gs\gs8.54\Resource\CMap\ に入っていない。） -->
-    <!-- Adobe-Japan1-5-Vは不要です．Identity-Vを使って下さい．(uchiyama) -->
+    <!-- -&ref(http://macptex.appi.keio.ac.jp/~uchiyama/Adobe-Japan1-5-V.gz,Adobe-Japan1-5-V); （← これだけは gs\gs?.??\Resource\CMap\ に入っていない。） -->
+    <!-- Adobe-Japan1-5-V は不要です。Identity-V を使ってください。(uchiyama) -->
 
 - Adobe-Japan1-UCS2
 - Adobe-GB1-4
@@ -769,21 +775,21 @@ gs\gs8.54\Resource\CMap\ に入っています。主なものを挙げてみま�
 
 CID-keyed フォントファイルはファイル名を拡張子無しの PostScript 名に変えて
 （例えば “HEMIW3.CID” → “HeiseiMin-W3”）
-gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
+gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 OpenType フォーマットの CID-keyed フォントファイル（拡張子が “.otf” の
 OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて
 （例えば “ヒラギノ明朝 ProN W3.otf” → “HiraMinProN-W3”）
-gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
+gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 ### TrueType outline fonts {#h311bbbd}
 
 拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType
 フォーマットの TrueType outline （2次 B-スプライン曲線アウトライン）フォント
-ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs8.54\lib\cidfmap
+ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs8.??\lib\cidfmap
 記述時に gs\fonts\ までのパスを省略できます。
 
-### gs\gs8.54\lib\cidfmap の記述方法 {#e2200e36}
+### gs\gs8.??\lib\cidfmap の記述方法 {#e2200e36}
 
 ```
 /Ryumin-Light      /MS-Mincho        ;
@@ -812,7 +818,7 @@ gs\gs8.54\Resource\CIDFont\ にコピーしておきます。
 
 [OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，udvips を通して）
 変換した PostScript ファイルを（ps2pdf を使うなどして）
-Ghostscript 8.54 で PDF に変換する場合には，gs\gs8.54\Resource\Font\ に
+Ghostscript 8.?? で PDF に変換する場合には，gs\gs8.??\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -861,7 +867,7 @@ composefont pop
 - HiraMinStdN-W2-{UniJIS-UTF16,Identity}-{H,V}
 
 > 【注意】ここで，例えば “STSong-Light-{UniGB-UTF16,Identity}-{H,V}” と
-> いうのは次の4つのファイルのことを指します。
+> いうのは次の<strong>複数の</strong>ファイルのことを指します。
 >
 > - STSong-Light-UniGB-UTF16-H
 > - STSong-Light-UniGB-UTF16-V
@@ -870,7 +876,7 @@ composefont pop
 
 [TeXWiki:OTF #udvips 用の map ファイル](/OTF/#map-udvips) も参照。
 
-### gs\gs8.54\lib\cidfmap の記述例 {#m115a63f}
+### gs\gs8.??\lib\cidfmap の記述例 {#m115a63f}
 
 #### <a id="cidfmap-windows">For Microsoft Windows</a> {#xba7681e}
 
@@ -988,7 +994,7 @@ composefont pop
 
 %%% TrueType outline fonts in StarSuite 8
 %%% See http://jp.sun.com/products/software/starsuite/
-%%%     http://pack.google.com/intl/ja/pack_installer.html?hl=ja&gl=jp&ci_so=on
+%%%     http://pack.google.com/intl/ja/pack_installer.html?gl=jp&ci_apps=None&ci_so=on
 /HG-MinchoL-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-MinchoL-Sun.ttc)  /SubfontID 0 >> ;
 /HG-GothicB-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-GothicB-Sun.ttc)  /SubfontID 0 >> ;
 
@@ -1075,9 +1081,9 @@ composefont pop
 Win32API ドライバを使って表示します。ただしオプション “-dNOWINKANJI” が
 同時に指定されている場合には，オプション “-dWINKANJI” は
 無効化されます。Win32API ドライバで使うフォントの割り当ては
-gs\gs8.54\lib\kconfig.ps の記述内容によって設定されます。
+gs\gs?.??\lib\kconfig.ps の記述内容によって設定されます。
 
-#### gs\gs8.54\kanji\kconfig.ps の記述例 {#d6cfe346}
+#### gs\gs?.??\kanji\kconfig.ps の記述例 {#d6cfe346}
 
 ***
 
@@ -1107,13 +1113,13 @@ gs\gs8.54\lib\kconfig.ps の記述内容によって設定されます。
 PDF を作成する場合，CJK フォントは全て埋め込まれます。CJK フォントを
 埋め込まないように制御するには “/NeverEmbed” を使います。
 例えば “foo.ps” という PostScript ファイルを PDF に
-変換する場合に，/MS-Mincho （ＭＳ 明朝）と /MS-Gothic （ＭＳ ゴシック）とを
-埋め込まないようにするためには次のようにコマンドを入力します。
+変換する場合に，/MS-Mincho （ＭＳ 明朝）を埋め込まないようにするためには
+次のようにコマンドを入力します。
 
 ```
      >gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
 More? -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=foo.pdf ^
-More? -c ".setpdfwrite <</NeverEmbed [/MS-Mincho /MS-Gothic]>> setdistillerparams" ^
+More? -c ".setpdfwrite <</NeverEmbed [/MS-Mincho]>> setdistillerparams" ^
 More? -f foo.ps
 ```
 
@@ -1145,7 +1151,8 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 %/Helvetica /Helvetica-Oblique /Helvetica-Bold /Helvetica-BoldOblique
 %/Courier /Courier-Oblique /Courier-Bold /Courier-BoldOblique
 %/Symbol /ZapfDingbats
-/Ryumin-Light /GothicBBB-Medium /HeiseiMin-W3 /HeiseiKakuGo-W5
+/Ryumin-Light /HeiseiMin-W3
+%/GothicBBB-Medium /HeiseiKakuGo-W5
 /STSong-Light
 %/STHeiti-Regular
 /MSung-Light
@@ -1161,7 +1168,8 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 /STSongStd-Light-Acro /MSungStd-Light-Acro /HYSMyeongJoStd-Medium-Acro
 /HeiseiMin-W3-Acro /HeiseiKakuGo-W5-Acro
 /STSong-Light-Acro /MSung-Light-Acro /HYSMyeongJo-Medium-Acro
-/MS-Mincho /MS-Gothic /HGGothicM
+/MS-Mincho
+%/MS-Gothic /HGGothicM
 /NSimSun /MingLiU /BatangChe
 ]
 /AlwaysEmbed [
@@ -1177,7 +1185,7 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 ***
 
 この lib/neverembed.ps への設定を ps2pdf でも有効に
-するためには，gs\gs8.54\lib\ps2pdfxx.bat の記述内容の26行目
+するためには，gs\gs?.??\lib\ps2pdfxx.bat の記述内容の26行目
 
 ```
 echo -c .setpdfwrite -f %1 >>_.at2
@@ -1202,7 +1210,7 @@ echo -c .setpdfwrite -f neverembed.ps -f %1 >>_.at2
 ```
 
 のようにコメントアウトを解除します。
-（UNIX や UNIX 互換 OS では，ghostscript/8.54/lib/ps2pdfwr の記述内容の40行目
+（UNIX や UNIX 互換 OS では，ghostscript/?.??/lib/ps2pdfwr の記述内容の40行目
 
 ```
 $GS_EXECUTABLE $OPTIONS -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
@@ -1281,7 +1289,7 @@ Times-BoldItalic だけを埋め込み，Times-Roman，Times-Bold，Helvetica
 また TeX ファイルから作った Times ファミリや
 Helvetica ファミリを埋め込んでいない PDF を Microsoft Windows の
 Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファミリでの
-文字の一部（\\={o} \[&#x14d;\]，\dj \[&#x111;\]，$\hbar$ など）が
+文字の一部（\\={o} \[&#x14d;\]，\b{b} \[&#x1e07;\]，\dj \[&#x111;\]，$\hbar$ など）が
 正確に表示されません。そこで Times ファミリと Helvetica ファミリは
 埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，Microsoft Windows を含めたほとんどの環境で
@@ -1302,4 +1310,4 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 
 ## Comments {#a6eac88c}
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
