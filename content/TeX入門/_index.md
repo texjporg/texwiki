@@ -29,7 +29,7 @@ TeX は「テフ」 (\[tex\]) または「テック」と読みます。
 同様に LaTeX は「ラテック」「ラテフ」などと読みます。
 
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が
-作った組版（くみはん）システムです。LaTeX は
+作った組版（くみはん）システムです。現在のバージョン番号は3.1415926です。LaTeX は
 [Leslie Lamport](http://lamport.org/) が TeX の上に構築した
 文書処理システムです。いずれもフリーウェアで
 あり，Microsoft Windows，Mac OS，UNIX （Mac OS X や Solaris など），UNIX 互換
