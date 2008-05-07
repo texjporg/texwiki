@@ -18,7 +18,7 @@ METAFONT 言語で書かれたソースファイルをコンパイルすると�
 METAFONTについて勉強したい方は、以下の書籍をご覧下さい。
 
 - Knuth
-    [『METAFONTブック』](http://www.ascii.co.jp/books/books/detail/4-7561-0194-1.shtml)
+    [『METAFONTブック』](http://ascii.asciimw.jp/books/books/detail/4-7561-0194-1.shtml)
     鷺谷好輝訳（アスキー，1994年，6932円，ISBN4-7561-0194-1）
     ……METAFONT の原典です。
     原著のソースファイル：[CTAN:systems/knuth/mf/mfbook.tex](https://mirror.ctan.org/systems/knuth/mf/mfbook.tex)
