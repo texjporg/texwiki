@@ -9,6 +9,8 @@ pukiwiki: "LaTeX-CJK"
 
 (a place holder&mdash;not yet completed)
 
+(Could someone please translate this page into English?)
+
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
 日本語を処理できる TeX としては、
