@@ -11,7 +11,7 @@ pukiwiki: "TeXをWebで"
 
 ### はじめに {#vd570d76}
 
-[TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/tex/)
+TeX を使ってみよう ([EUC-JP版](http://oku.edu.mie-u.ac.jp/~okumura/tex/) / [UTF-8版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/))
 のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します。
 ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです。
 
