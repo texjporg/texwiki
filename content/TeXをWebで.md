@@ -121,4 +121,4 @@ ulimit -t 10 -f 1024
 - Vine Linux 3.2の/usr/share/texmf/web2c/texmf.cnf でも 「openin_any = a」でした。 -- 1156162091 2006-08-21 (月) 21:08:11
 - UTF-8 版のコマンドが、platex-euc になっているらしく、処理結果が文字化けします。正しくは platex-utf8 と思います。UTF-8 版を、以下に作りました。（ [http://www.aozora.jp/tools/tex/](http://www.aozora.jp/tools/tex/) ） -- ゼファー生 2008-06-16 (月) 19:15:22
 - あれあれ，いつこんなことになったんでしょう。速攻で直しました。m(\_\_)m -- 奥村 2008-06-16 (月) 19:47:05
-- 修正ありがとうございます。ついでに青空文庫テキストを張り付ければ、PDF化できるような「てふてふ君（特別版）」（ [http://www.aozora.jp/tools/txt2pdf](http://www.aozora.jp/tools/txt2pdf) ）を作りました。 -- ゼファー生 2008-06-23 (月) 12:41:00
+- 修正ありがとうございます。ついでに青空文庫テキスト zip ファイルの URL を張り付ければ、自動的に PDF化までできるような「てふてふ君」（ [http://www.aozora.jp/tools/tex/](http://www.aozora.jp/tools/tex/) ）を作りました。 -- ゼファー生 2008-06-23 (月) 12:41:00
