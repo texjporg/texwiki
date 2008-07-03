@@ -29,6 +29,7 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 - [qa:17730](https://okumuralab.org/~okumura/texfaq/qa/17730.html)
 - [http://hooktail.org/computer/index.php?dvipng](http://hooktail.org/computer/index.php?dvipng)
+- [qa:51671](https://okumuralab.org/~okumura/texfaq/qa/51671.html)からの議論で、dvi2dviを通してサブフォント化した日本語dviファイルが変換できるようになりました
 
 ### その他 {#i8306226}
 
