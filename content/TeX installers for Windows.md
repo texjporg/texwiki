@@ -238,6 +238,25 @@ TeX インストーラを色々な視点から比較してみます。
     日本語化された各種パッケージがインストールできる。
     その中に teTeX-2.0，Ghostscript，xdvi などが含まれている。
 
+## LabTeX Installer (LabTeXInst.exe) {#o135f7b5}
+
+- <strong>URL</strong>: [http://labsoft.web.fc2.com/index.html](http://labsoft.web.fc2.com/index.html)
+- <strong>作者</strong>： 斎藤 卓也さん
+- <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
+- <strong>ライセンス</strong>： 個人での使用における使用に制限なし。
+    ただし，再配布は同梱の様々なソフトウェアのライセンスを守るように。
+
+- <strong>インストールする対象</strong>： W32TeX バイナリ，jsclasses，Ghostscript，GSview, DVIOUT
+- <strong>ユーザーインターフェース</strong>： GUI
+- <strong>ネット・ローカルインストール</strong>： ローカルインストーラ。
+- <strong>環境変数・レジストリ</strong>： 自動（環境変数 PATH）
+- <strong>長所</strong>： LabEditor用のTeXインストーラです。LabEditorでの使用を想定していますが、汎用TeXインストーラとしても使えます。
+    ローカルインストーラなので、ネットワークにつないでいる必要もなく、またネットワークからダウンロードが失敗してインストールできないということもありません。GhostscriptやDVIOUT等のインストールは解説付きで本来のインストーラを操作させるタイプですので、ブラックボックス化されておらず、自分が何をやっているのか良く分かります。Windows Vistaにも対応しています。
+
+- <strong>短所</strong>：LabEditorで使用したときに問題が生じないようにインストールが固定化されているため、カスタマイズはほとんどできません。
+
 ***
+
+- LabTeX Installerを追加しました。 -- つちのこ 2008-07-04 (金) 17:19:32
 
 [^1]: postinstall スクリプトで regtool コマンドあたりを使うと，設定できるらしい。Cygwin 本家からインストールされるパッケージの中には，レジストリの書き込みを行うものがある。
