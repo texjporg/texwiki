@@ -70,5 +70,5 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html)（奥村さん@滋賀県立大）
 - Adobe Systems 著，桑沢清志 訳
-    『[PostScript リファレンスマニュアル 第3版](http://www.ascii.co.jp/books/books/detail/4-7561-3822-5.shtml)』
+    『[PostScript リファレンスマニュアル 第3版](http://ascii.asciimw.jp/books/books/detail/4-7561-3822-5.shtml)』
     （アスキー，2001年，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
