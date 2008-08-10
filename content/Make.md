@@ -15,8 +15,8 @@ pukiwiki: "Make"
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
 [teTeX](http://www.tug.org/tetex/) は
-UNIX （互換） OS 用の TeX ディストリビューション
-です。[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) は
+UNIX（互換）OS 用の TeX ディストリビューション
+です。[ptetex](http://tutimura.ath.cx/~nob/tex/ptetex.html) は
 teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単にインストール
 するための[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)作の
 ツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に多数の例が挙がっているので，
@@ -25,7 +25,7 @@ teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単にインスト
 
 まず，あらかじめ C/C++ のコンパイラや
 X Window System 用ソフトウェアの開発環境などをインストールしておきます。
-また，（必須ではありませんし，かなりの手間がかかりますが） [Ghostscript](/Ghostscript/) の
+また，（必須ではありませんし，かなりの手間がかかりますが）[Ghostscript](/Ghostscript/) の
 日本語対応がなされているものをインストールしても良いでしょう。
 海外の Linux ディストリビューションに附属する Ghostscript では
 日本語対応が乏しいケースもあるようです。 <!-- 2005年10月以降，md5, gmd5sum 等は自動判定で使い分けるようになりました。 --> <!-- GNU sed ももう不要です。 --> <!-- //Mac OS X の場合は，あらかじめ --> <!-- //[[GNU coreutils:http://www.ring.gr.jp/pub/GNU/coreutils/]] に含まれる --> <!-- //md5sum コマンドをインストールしておくか，my_option というファイルを作って --> <!-- // MD5CHECK=md5check --> <!-- //と書いておきます。 --> <!-- //[[GNU sed:http://www.ring.gr.jp/pub/GNU/sed/]] は --> <!-- //2005/6/27 以降は不要になりました。 -->
@@ -37,7 +37,7 @@ X Window System 用ソフトウェアの開発環境などをインストール�
 適当なディレクトリを作り，その中に
 [tetex-src-3.0.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
 [tetex-texmf-3.0po.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
-[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz （最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
+[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz（最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
 をダウンロードし，
 その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
@@ -62,7 +62,7 @@ cp my_option.sample ../my_option （オプションを変更したいのなら�
 make
 ```
 
-あるいは [OTF](/OTF/) （安定版），[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
+あるいは [OTF](/OTF/)（安定版），[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
 
 ```
 make all3
@@ -78,16 +78,16 @@ make font
 make test
 ```
 
-とします。Mac OS X では "make font" で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
-何回かヒラギノ何とかと聞いてきますので，それについては "y" と答えます。
-面倒なら "make fonty" とすると，すべての質問に yes と答えたことに
-なります。"make (all3)" では "make fonty" も含めて実行しますので，
+とします。Mac OS X では “make font” で <!-- （ターミナルを UTF-8 にしておくと） // たぶんしておかなくても -->
+何回かヒラギノ何とかと聞いてきますので，それについては “y” と答えます。
+面倒なら “make fonty” とすると，すべての質問に yes と答えたことに
+なります。“make” や “make all3” では “make fonty” も含めて実行しますので，
 気にしなくて大丈夫です（make の引数に
 ついては，[ptetexWiki:make のターゲット](http://tutimura.ath.cx/ptetex/?make%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88)
 が参考になります）。
 
-"make (all3)" あるいは "make test" で簡単な動作テストをします。
-ここまで root 権限は必要ありません。Mac OS X では "make test" の前に
+“make” や “make all3”，あるいは “make test” で簡単な動作テストをします。
+ここまで root 権限は必要ありません。Mac OS X では “make test” の前に
 X11 を立ち上げておきます
 （あるいは my_option で xdvi を使わない設定にします）。UTF + ps2pdf で
 エラーが出ても大きな問題はないので，気にしないでおきます
@@ -110,8 +110,8 @@ xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
 
 #### updmap(-sys) の設定 {#n2be1436}
 
-フォントについての設定は updmap （各ユーザごと）
-または updmap-sys （システム全体，root 権限が必要）で行います。例えば
+フォントについての設定は updmap（各ユーザごと）
+または updmap-sys（システム全体，root 権限が必要）で行います。例えば
 [dvips](/dvips/) はデフォルトでは PostScript Level 2 での（欧文用）基本35書体を
 埋め込みませんが，埋め込むようにするには次のようにします。
 
@@ -146,7 +146,7 @@ Cygwin
 フォントファイルを $TEXMFLOCAL/fonts/opentype/ 以下のディレクトリに
 配置しておけば，同様にして埋め込めます。
 
-また [IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)の
+また [IPAフォント](http://ossipedia.ipa.go.jp/ipafont/)の
 フォントファイル (ipam.ttf, ipag.ttf) を
 $TEXMFLOCAL/fonts/truetype/ 以下のディレクトリに配置しておけば，
 
@@ -230,7 +230,7 @@ updmap --setoption kanjiEmbed cktx
 詳しくはこの TeX Wiki の各ディストリビューションについての記述をご覧ください。
 
 > 土村さんが
-> [ptetex -- teTeX 用日本語パッチ集](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
+> 「[ptetex&ndash;teTeX 用日本語パッチ集](http://tutimura.ath.cx/~nob/tex/ptetex.html)」
 > を作ってくださいました。
 > これを使えばもっと簡単にインストールできます。
 
