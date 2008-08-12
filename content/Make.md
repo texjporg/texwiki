@@ -17,7 +17,7 @@ pukiwiki: "Make"
 [teTeX](http://www.tug.org/tetex/) は
 UNIX（互換）OS 用の TeX ディストリビューション
 です。[ptetex](http://tutimura.ath.cx/~nob/tex/ptetex.html) は
-teTeX と [pTeX](http://www.ascii.co.jp/pb/ptex/) 一式を簡単にインストール
+teTeX と [pTeX](http://ascii.asciimw.jp/pb/ptex/) 一式を簡単にインストール
 するための[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)作の
 ツールです。[ptetexWiki:全動作報告](http://tutimura.ath.cx/ptetex/?%E5%85%A8%E5%8B%95%E4%BD%9C%E5%A0%B1%E5%91%8A) に多数の例が挙がっているので，
 参考になさると良いでしょう。ここでは2005年2月に出た最新の teTeX-3.0 と
