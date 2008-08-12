@@ -82,9 +82,8 @@ make test
 何回かヒラギノ何とかと聞いてきますので，それについては “y” と答えます。
 面倒なら “make fonty” とすると，すべての質問に yes と答えたことに
 なります。“make” や “make all3” では “make fonty” も含めて実行しますので，
-気にしなくて大丈夫です（make の引数に
-ついては，[ptetexWiki:make のターゲット](http://tutimura.ath.cx/ptetex/?make%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88)
-が参考になります）。
+気にしなくて大丈夫です
+（make の引数については，[ptetexWiki:makeのターゲット](http://tutimura.ath.cx/ptetex/?make%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88) が参考になります）。
 
 “make” や “make all3”，あるいは “make test” で簡単な動作テストをします。
 ここまで root 権限は必要ありません。Mac OS X では “make test” の前に
@@ -112,7 +111,7 @@ xdvi は src specials に対応しています。[Emacs](/Emacs/) で使う
 
 フォントについての設定は updmap（各ユーザごと）
 または updmap-sys（システム全体，root 権限が必要）で行います。例えば
-[dvips](/dvips/) はデフォルトでは PostScript Level 2 での（欧文用）基本35書体を
+[dvips](/dvips/) はデフォルトでは [PostScript](/PostScript/) Level 2 での（欧文用）基本35書体を
 埋め込みませんが，埋め込むようにするには次のようにします。
 
 ```
