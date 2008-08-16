@@ -41,9 +41,9 @@ TrueType 形式の Computer Modern フォントの一つである BaKoMa フォ�
 
 複雑な数式は EPS などの形式でインポートします。 
 
-### お手軽なツールを使う方法 (Windows) {#oe0e5138}
+### お手軽なツールを使う方法 (Windows / Mac) {#oe0e5138}
 
-Windows 環境の場合，TeX の数式をクリック一つで EPS 形式の画像に変換する
+Windows および Mac 環境の場合，TeX の数式をクリック一つで EPS 形式の画像に変換する
 ツール [TeX2img](http://island.geocities.jp/loveinequality/) があります。
 コマンドラインを使いたくない人は，このツールで EPS ファイルを
 生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
