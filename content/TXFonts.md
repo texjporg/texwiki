@@ -18,6 +18,7 @@ improve the spacing of $S$ with subscripts.
 
 ### News {#b42eab94}
 
+- \[2008-03-26\] small capsがAdobe Reader 8でうまく表示できない問題のfix (Young Ryu)
 - \[2004-02-13\] varg オプションを付けた場合に使われる [txmi1.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi1.zip)
     のほうも角藤さんが作ってくださいました
 
