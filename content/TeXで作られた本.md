@@ -91,6 +91,8 @@ TeX で組まれていますが，それ以外のもの）：
 - 渡邉時夫監修，酒井英樹・塩川春彦・浦野研編『[英語が使える日本人の育成—MERRIER Approach のすすめ](http://www.sanseido-publ.co.jp/publ/eigo_kukaeru_j_ikusei.html)』（2003.05.30，ISBN 4-385-36155-X）
 - 石井米雄・千野栄一編『[世界のことば・出会いの表現辞典](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba_deai_hyogen.html)』（2004.06.10，ISBN 4-385-15178-4） ([qa:29696](https://okumuralab.org/~okumura/texfaq/qa/29696.html), [qa:29724](https://okumuralab.org/~okumura/texfaq/qa/29724.html))
 - 風間喜代三『[ラテン語・その形と心](http://www.sanseido-publ.co.jp/publ/latin_kokoro.html)』（2005.12.20，ISBN 4-385-36252-1）
+- 石井米雄編『[世界のことば・辞書の辞典 ヨーロッパ編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36391-2）
+- 石井米雄編『[世界のことば・辞書の辞典 アジア編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36392-9
 
 青磁書房から出ている次の本がみな TeX 組みとのこと：
 
