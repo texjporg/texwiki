@@ -119,7 +119,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 宮腰忠. 『[高校数学 + α：なっとくの線形代数](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2007年7月11日発売. 共立出版．ISBN978-4-320-01840-2.
 - 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=4-7687-0501-4)』. 2005年10月11日発売. 現代数学社. ISBN 4-7687-0501-4. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
-- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www12.ocn.ne.jp/~kindai)
+- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www.kindaibungeisha.com/)
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
