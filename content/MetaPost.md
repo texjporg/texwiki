@@ -414,11 +414,11 @@ fontmapline "-foo bar <baz.pfb";
 
 なお、新しい MetaPost では pool ファイル は無くなっています。
 
-最も新しいもの (2008/10/15 現在 1.091) は、WEB ではなくて
+最も新しいもの (2008/10/22 現在 1.100) は、WEB ではなくて
 完全に CWEB で書き換えられました。さらに makempx, newer, mpto,
 dvitomp, dmp で実現されていた .mpx ファイル作成機能は
 MetaPost に内蔵されたので、これらの外部プログラムは不要になり
 ました。外部プログラムではないので、処理はより高速です。
-W32TeX では、MetaPost 1.091, jMetaPost 1.091-0.04,
-upjMetaPost 1.091-0.04-u0.23 をテスト用に配布しています(10/11以降)。
+W32TeX では、MetaPost 1.100, jMetaPost 1.100-0.04,
+upjMetaPost 1.100-0.04-u0.24 をテスト用に配布しています(10/23以降)。
 テストをお願いいたします。(--ak)
