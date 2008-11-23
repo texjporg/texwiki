@@ -120,7 +120,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=4-7687-0501-4)』. 2005年10月11日発売. 現代数学社. ISBN 4-7687-0501-4. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www.kindaibungeisha.com/)
-- 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa52278](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52278.html))
+- 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa52278](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52278.html),[qu52280](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52280.html))
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
