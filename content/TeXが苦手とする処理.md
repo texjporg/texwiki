@@ -39,8 +39,10 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 です。こういったコードは
 [testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
 
-- [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
-    &#x2460; {U+2460}］など）
+- go.sty パッケージの囲碁用フォント [CTAN:fonts/go/](https://mirror.ctan.org/fonts/go/) (
+    ただし「39」が「29」と表示されるバグあり →[修正を行ったもの](http://tony.cocolog-nifty.com/misc/2006/02/_gosty_5257.html)）
+    - [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
+        &#x2460; {U+2460}］など）
 
 1. 丸の中身と丸を合成：
     - \textcircled マクロ（LaTeX 自身が提供）
@@ -232,7 +234,9 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 枠は必須でなくとも
 「20文字&times;20行」のような体裁を要求されることがあります。
 
-- [http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html](http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html)
+- [http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html](http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html)
+    <!-- - http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html // URL切れ -->
+
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
 
