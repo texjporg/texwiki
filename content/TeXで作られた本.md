@@ -121,6 +121,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www.kindaibungeisha.com/)
 - 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
+- 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー．[ISBN4 7561-1667-1 C3055](http://ascii.jp/)
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
