@@ -122,6 +122,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www.kindaibungeisha.com/)
 - 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
 - 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー．[ISBN4 7561-1667-1 C3055](http://ascii.jp/)
+- 吉田武『オイラーの贈り物』．2001年11月発売．筑摩書房．ISBN4 480-08675-7 C0141
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
