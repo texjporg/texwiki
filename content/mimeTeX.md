@@ -30,7 +30,11 @@ PukiWiki から使うには
 
 インライン数式にも対応したようです。{{< katex >}}\sqrt{x^2+y^2}=z^2{{< /katex >}} のような具合に。
 
-## 他にもWeb上で数式を表示するための各種方法 {#v9c19ee5}
+## Web上で数式を表示するための各種方法 {#v9c19ee5}
+
+### [mimeTeX](http://www.forkosh.com/mimetex.html) {#w7d4afa0}
+
+上記の説明です。
 
 ### mathTeX {#he6333d4}
 
