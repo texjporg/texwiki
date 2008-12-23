@@ -30,6 +30,12 @@ PukiWiki から使うには
 
 インライン数式にも対応したようです。{{< katex >}}\sqrt{x^2+y^2}=z^2{{< /katex >}} のような具合に。
 
+## 他にもWeb上で数式を表示するための各種方法 {#v9c19ee5}
+
+### mathTeX {#he6333d4}
+
+> [http://www.forkosh.com/mathtex.html](http://www.forkosh.com/mathtex.html)
+
 ### imgTeX {#za7a547f}
 
 中丸さん: [imgTeX](http://www.eaflux.com/imgtex/), [インタラクティヴに](http://www.eaflux.com/imgtex/interactive.html),  [PukiWikiプラグイン](http://www.eaflux.com/imgtex/sources/imgtex_inc_php.txt). cf.) [qa:33461](https://okumuralab.org/~okumura/texfaq/qa/33461.html), [qa:33504](https://okumuralab.org/~okumura/texfaq/qa/33504.html), [qa:33899](https://okumuralab.org/~okumura/texfaq/qa/33899.html)
@@ -37,3 +43,7 @@ PukiWiki から使うには
 ### texvc用 {#v1c9afd6}
 
 藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/?p=6)
+
+### MathML {#ndc0f583}
+
+> [http://washitake.com/MathML/](http://washitake.com/MathML/)
