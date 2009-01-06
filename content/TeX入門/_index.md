@@ -35,8 +35,9 @@ OS（Linux OS，BSD 系 OS，[OpenSolaris](http://jp.opensolaris.org/)
 など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)，Mac OS
 など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
-日本では TeX，LaTeX を[株式会社アスキー](http://www.ascii.co.jp/)（現
-[株式会社アスキー・メディアワークス](http://asciimw.jp/)）が日本語化した
+日本では TeX，LaTeX を株式会社アスキー
+（現：[株式会社アスキー・メディアワークス](http://asciimw.jp/)）
+が日本語化した
 [pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 がよく使われています。pTeX，pLaTeX の頭の
 p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキーでは pTeX，pLaTeX
