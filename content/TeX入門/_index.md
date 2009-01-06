@@ -29,7 +29,7 @@ TeX は「テフ」(\[tex\])
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。現在のバージョン番号は 3.1415926 です。LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
-の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX（[Mac OS X](http://www.apple.com/jp/macosx/)
+の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX&reg;（[Mac OS X](http://www.apple.com/jp/macosx/)
 や [Solaris](http://jp.sun.com/software/solaris/) など），UNIX 互換
 OS（Linux OS，BSD 系 OS，[OpenSolaris](http://jp.opensolaris.org/)
 など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)，Mac OS
