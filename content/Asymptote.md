@@ -52,17 +52,25 @@ asy または asy -f pdf で起動する。help と入力すれば詳しいマ�
 
 ### 日本語対応 {#q20b2da8}
 
-asy -f pdf -tex ptex のように起動すれば，一応日本語が使える（Ghostscript が日本語を扱えるなら）。
-
-platex も含めて，ちゃんと判断してくれるようにするには，次のように settings.cc を書き換える。
+/.asy/config.asy を次のようにすれば日本語が通るようである（要日本語対応Ghostscript）。
 
 ```
-969c969
-< 			      "TeX engine (\"latex|pdflatex|tex|pdftex|none\")",
----
-> 			      "TeX engine (\"latex|pdflatex|tex|pdftex|ptex|platex|none\")",
-1175c1175
-<   return texengine == "latex" || texengine == "pdflatex";
----
->   return texengine == "latex" || texengine == "pdflatex" || texengine == "platex";
+import settings;
+tex="latex";
+texcommand="platex";
+texdvicommand="platex";
 ```
+
+ほかに，日本語対応dvipsのコマンドが別名の場合は
+
+```
+dvips="dvipsk";
+```
+
+または
+
+```
+dvips="pdvips";
+```
+
+としないといけないだろう。
