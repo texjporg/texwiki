@@ -36,7 +36,7 @@ make install
 
 標準ではgv（あるいはGSview）を使ったPostScriptプレビューになる。
 これはMacでも（gvをインストールしておけば）可能だが，X11を立ち上げておかないといけない。
-より簡単には ~/.asy/config.asy に
+より簡単には asy -f pdf で起動するか，あるいは ~/.asy/config.asy に
 
 ```
 import settings;
@@ -48,4 +48,21 @@ Leopardのプレビュー機能は，再読み込みにやや難があるが，�
 
 ### 使い方 {#mfe06d22}
 
-asy で起動する。help と入力すれば詳しいマニュアルが現れる。
+asy または asy -f pdf で起動する。help と入力すれば詳しいマニュアルが現れる。
+
+### 日本語対応 {#q20b2da8}
+
+asy -f pdf -tex ptex のように起動すれば，一応日本語が使える（Ghostscript が日本語を扱えるなら）。
+
+platex も含めて，ちゃんと判断してくれるようにするには，次のように settings.cc を書き換える。
+
+```
+969c969
+< 			      "TeX engine (\"latex|pdflatex|tex|pdftex|none\")",
+---
+> 			      "TeX engine (\"latex|pdflatex|tex|pdftex|ptex|platex|none\")",
+1175c1175
+<   return texengine == "latex" || texengine == "pdflatex";
+---
+>   return texengine == "latex" || texengine == "pdflatex" || texengine == "platex";
+```
