@@ -74,3 +74,22 @@ dvips="pdvips";
 ```
 
 としないといけないだろう。
+
+### 例1 {#x0dd2813}
+
+日本語を使った例。jsarticle相当の日本語フォントの設定をするために [minijs.sty](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/minijs.sty) を読み込んでいる。
+
+```
+usepackage("minijs");
+import graph;
+real dnorm(real x) { return exp(-x^2/2)/sqrt(2*pi); }
+size(12cm,8cm,IgnoreAspect);
+draw(graph(dnorm,-4,4,operator ..));
+label("標準正規分布の密度関数 $y=\frac{1}{\sqrt{2\pi}}e^{x^2\!/2}$",(0,0.45),S);
+xaxis("$x$",BottomTop,LeftTicks); 
+yaxis("$y$",LeftRight,RightTicks); 
+```
+
+出力
+[dnorm-asy.pdf](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.pdf), 
+[dnorm-asy.png](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png)
