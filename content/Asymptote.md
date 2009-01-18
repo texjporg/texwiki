@@ -61,7 +61,7 @@ texcommand="platex";
 texdvicommand="platex";
 ```
 
-ほかに，日本語対応dvipsのコマンドが別名の場合は
+platex のデフォルトがUTF-8になっていない場合は "platex-utf8" または "platex -kanji=utf8" などとしなければならない。また，日本語対応dvipsのコマンドが別名の場合は
 
 ```
 dvips="dvipsk";
@@ -85,7 +85,7 @@ import graph;
 real dnorm(real x) { return exp(-x^2/2)/sqrt(2*pi); }
 size(12cm,8cm,IgnoreAspect);
 draw(graph(dnorm,-4,4,operator ..));
-label("標準正規分布の密度関数 $y=\frac{1}{\sqrt{2\pi}}e^{x^2\!/2}$",(0,0.45),S);
+label("標準正規分布の密度関数 $y=\frac{1}{\sqrt{2\pi}}e^{-x^2\!/2}$",(0,0.45),S);
 xaxis("$x$",BottomTop,LeftTicks); 
 yaxis("$y$",LeftRight,RightTicks); 
 ```
