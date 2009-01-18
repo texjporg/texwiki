@@ -13,15 +13,15 @@ pukiwiki: "TeXで作られた本"
 
 TeX で作った本を出している出版社：
 
-> [アスキー](http://www.ascii.co.jp/)，
-> [インプレス](http://home.impress.co.jp/)，
-> [技術評論社](http://www.gihyo.co.jp/)（以上はコンピュータ書），
+> アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)），
+> [インプレス](http://www.impressjapan.jp/)，
+> [技術評論社](http://gihyo.jp/)（以上はコンピュータ書），
 > [朝倉書店](http://www.asakura.co.jp/)，
 > [岩波書店](http://www.iwanami.co.jp/)， 
 > 内田老鶴圃，
 > [旺文社](http://www.obunsha.co.jp/)，
 > [学術図書出版社](http://www.gakujutsu.co.jp/)，
-> [九天社](http://www.9-ten.co.jp/)，
+> [九天社](http://www.9-ten.com/)，
 > [共立出版](http://www.kyoritsu-pub.co.jp/)，
 > [コロナ社](http://www.coronasha.co.jp/)，
 > [三省堂](http://www.sanseido-publ.co.jp/)（本の一覧は[ここ](#SanseidoBooks)），
