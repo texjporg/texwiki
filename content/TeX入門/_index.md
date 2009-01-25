@@ -38,7 +38,7 @@ OS（Linux OS，BSD 系 OS，[OpenSolaris](http://jp.opensolaris.org/)
 日本では TeX，LaTeX
 を株式会社アスキー（現：[株式会社アスキー・メディアワークス](http://asciimw.jp/)）が日本語化した
 [pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
-がよく使われています。pTeX，pLaTeX の頭の
+がよく使われています。pTeX，pLaTeX の頭文字の
 p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキーでは pTeX，pLaTeX
 およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
