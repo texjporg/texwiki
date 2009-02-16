@@ -93,3 +93,7 @@ yaxis("$y$",LeftRight,RightTicks);
 出力
 [dnorm-asy.pdf](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.pdf), 
 [dnorm-asy.png](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png)
+
+### 関連リンク {#xbb02c40}
+
+- [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
