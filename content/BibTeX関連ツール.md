@@ -78,7 +78,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 |  [isi](http://isi-rb.rubyforge.org/)  | Ruby | [ISI Web of Science](http://portal.isiknowledge.com) の検索結果（タグつきのテキストファイル）をBibTeX書式に変換。旧名isi.rbまたはisi2bibtex.rb。ライブラリとしても機能し、ある特定の形式に変換するプログラムを書くときにも便利。 |
 |  ams2bib  | Unixなど  | AmSTeX文献をBibTeX形式に変換  |
 | [medlinebib](http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html) | UNIX? | MEDLINE形式データのインポート |
-| [ichu2bibtex.pl](http://shakan2.tm.nagasaki-u.ac.jp/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
+| [ichu2bibtex.pl](http://www2.hyo-med.ac.jp/~tanimura/Downloads/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
 | [rfc2bib](https://mirror.ctan.org/biblio/bibtex/utils/rfc2bib/) | awk | rfc-index.txt を BibTeX 形式に変換 |
 | [refer-tools](https://mirror.ctan.org/biblio/bibtex/utils/refer-tools/) | perl | refer 形式を BibTeX 形式に変換 |
 |  [r2bib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib)  |   |  referからBibTeXに変換するツールだが、[EndNoteに対応した](http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html)。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。  |
