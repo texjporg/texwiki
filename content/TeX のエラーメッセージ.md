@@ -635,7 +635,7 @@ pTeX では，縦組みボックスの中身を横組みモードの箇所で（
 
 #### ! Invalid code (<em>code</em>), should be in the range 0..<em>max code</em>. {#caa08d30}
 
-ある文字に対して \catcode，\mathcode，\lccode，\lccode，\sfcode
+ある文字に対して \catcode，\mathcode，\lccode，\uccode，\sfcode
 などを設定する場合に，不適切な値を指定したときに現れるエラーメッセージです．<br>
 → エラーメッセージに現れている範囲（0 以上 <em>max code</em> 以下）の範囲の値を指定してください．
 
