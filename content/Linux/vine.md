@@ -7,16 +7,22 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
-## Vine Linux 4.1 {#oae2fbd9}
+## Vine Linux 4.2 {#oae2fbd9}
 
-[Vine Linux 4.1](http://vinelinux.org/whatsnew.html#news/20070222) がリリースされました。
-おそらく，日本語 TeX を使う上では最もよく調整されたものになっているはず。
-なお Vine Linux 4.0 からは 4.1 にアップグレードすることが勧められています。
+[Vine Linux 4.2](http://vinelinux.org/whatsnew.html#20071225) がリリースされました。
+おそらく，日本語 TeX を使う上では最もよく調整されたものになっているはずです。
+なお Vine Linux 4.0 および 4.1 からは 4.2 にアップグレードすることが勧められています。
 
 ご存じの方も多いと思いますが，Vine Linux 4.0 から[土村さん](http://www.nn.iij4u.or.jp/~tutimura/)の
 [ptetex3](http://tutimura.ath.cx/ptetex/?FrontPage) が採用されています（配布版とわずかに異なるようです）。
 日本語 TeX 環境として，現在入手しうる限りで最良のもののひとつであると思われます。
 なお配布版の[インストール報告](http://tutimura.ath.cx/ptetex/?FrontPage%23h6346efc)もあるようです。
+
+Vine Linux 4.2 で [Adobe Reader 8.1.4](http://get.adobe.com/jp/reader/) を利用するためには，
+libstdc++34 に含まれる libstdc++.so.6 が必要です．
+詳しくは，[Vine Linux ユーザーフォーラム](http://groups.google.co.jp/group/vine-users-forum) 内の
+[Adobe Reader 8.1.1 の Vine Linux 4.2 へのインストール - Vine Linux Tips &amp; Tricks](http://groups.google.co.jp/group/vine-linux-tips-tricks/browse_thread/thread/79c8dbee7a2f6050/441432e146aa0959) 
+を参照して下さい．
 
 Vine 3.x の時には AdobeReader_jpn-7.0.8-1 のメニューがちらついていましたが、
 4.0/4.1 になってもう大丈夫になりました。
