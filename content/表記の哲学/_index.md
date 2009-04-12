@@ -23,3 +23,6 @@ pukiwiki: "表記の哲学"
 - ISO に従うと，変数（と変関数）のシンボルだけをイタリック体（立体ではなくて）とするということのようです．
     - 例として $f(x)$ の $f$や$x$がイタリック体というわけです．
     - 物理定数は数学的には変数扱い（イタリック体）とのことです．（例：$c=299792458$）
+
+- BibTexデータの人名で，Jr か Jr. か？
+    - 試しに BIBTEXing (Oren Patashnik, CTAN:biblio/bibtex/contrib/doc/btxdoc.pdf) を調べてみると，例の中では Jr でした．
