@@ -25,4 +25,6 @@ pukiwiki: "表記の哲学"
     - 物理定数は数学的には変数扱い（イタリック体）とのことです．（例：$c=299792458$）
 
 - BibTexデータの人名で，Jr か Jr. か？
+    - どちらも間違いではないです．
     - 試しに BIBTEXing (Oren Patashnik, CTAN:biblio/bibtex/contrib/doc/btxdoc.pdf) を調べてみると，例の中では Jr でした．
+    - 自分でbstファイルを書き置換を行うようにすれば，最終出力をどちらかに統一できそう．
