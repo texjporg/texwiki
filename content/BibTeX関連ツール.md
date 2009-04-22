@@ -75,7 +75,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-|  [isi](http://isi-rb.rubyforge.org/)  | Ruby | [ISI Web of Science](http://portal.isiknowledge.com) の検索結果（タグつきのテキストファイル）をBibTeX書式に変換。旧名isi.rbまたはisi2bibtex.rb。ライブラリとしても機能し、ある特定の形式に変換するプログラムを書くときにも便利。 |
+|  [isi](http://www-lab.imr.tohoku.ac.jp/~t-nissie/computer/software/isi/index-j.html)  | Ruby | [ISI Web of Science](http://www.isiknowledge.com) の検索結果（タグつきのテキストファイル）をBibTeX書式に変換。旧名isi.rbまたはisi2bibtex.rb。ライブラリとしても機能し、ある特定の形式に変換するプログラムを書くときにも便利。 |
 |  ams2bib  | Unixなど  | AmSTeX文献をBibTeX形式に変換  |
 | [medlinebib](http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html) | UNIX? | MEDLINE形式データのインポート |
 | [ichu2bibtex.pl](http://www2.hyo-med.ac.jp/~tanimura/Downloads/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
