@@ -75,6 +75,28 @@ dvips="pdvips";
 
 としないといけないだろう。
 
+### 日本語対応（Windows） {#f6f53eb8}
+
+私の簡単なテストでは texdvicommand="platex --kanji=utf8"; のように
+オプションを含めることはできませんでした。ただし Windows 用バイナリです。
+全体がコマンド名と見なされるようです。しかし shift jis でも問題なく
+通るようです。危ない "表" なども大丈夫でした。テストした config.asy は
+
+```
+import settings;
+tex="latex";
+texpath="c:/w32tex/bin";
+texcommand="platex";
+texdvicommand="platex";
+dvips="dvipsk";
+dvipsOptions="-Ppdf";
+psviewer="c:/ghostgum/gsview/gsview32.exe";
+```
+
+(kakuto 本文にコメントを書いてすみません。適当に移動してください。)
+
+(どうもありがとうございます。Windowsでのテストをさぼっていました。すみません -- okumura)
+
 ### 例1 {#x0dd2813}
 
 日本語を使った例。jsarticle相当の日本語フォントの設定をするために [minijs.sty](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/minijs.sty) を読み込んでいる。
