@@ -61,7 +61,7 @@ texcommand="platex";
 texdvicommand="platex";
 ```
 
-platex のデフォルトがUTF-8になっていない場合は "platex-utf8" または "platex -kanji=utf8" などとしなければならない。また，日本語対応dvipsのコマンドが別名の場合は
+platex のデフォルトがUTF-8になっていない場合は "platex-utf8" とする。こういうコマンドがなければエイリアスかバッチファイルで作る。"platex -kanji=utf8" のようにはできないようだ。また，日本語対応dvipsのコマンドが別名の場合は
 
 ```
 dvips="dvipsk";
