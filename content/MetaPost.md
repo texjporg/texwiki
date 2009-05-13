@@ -413,6 +413,8 @@ fontmapline "-foo bar <baz.pfb";
 とすると、この内容と一致するものを削除します。
 
 なお、新しい MetaPost では pool ファイル は無くなっています。
+(MetaPost だけでなくて、全ての TeX エンジン、METAFONT でも
+pool ファイルは無くなっています。)
 
 最も新しいもの (2009/04/22 現在 beta 1.200) は、WEB ではなくて
 完全に CWEB で書き換えられました。さらに makempx, newer, mpto,
