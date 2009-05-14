@@ -151,17 +151,13 @@ AMS-LaTeXを利用することを前提として，ディスプレイ数式の�
 4+5=9.
 \end{gathered}
 \end{equation}
-\item もしくは\texttt{aligned} (or \texttt{split})環境を併用して記述します\footnote{\label{fn2}特定位置における横方向位置合わせを行う場合．}．
+\item もしくは\texttt{aligned} (or \texttt{split})環境を併用して記述します\footnote{\label{fn2}特定位置における横方向位置合わせを行う場合．ソース例の中の第1行と第2行には``\texttt{\&=}"と記述していますので，``$=$"の位置における横方向位置合わせを行っています．}．
 \begin{equation}
 \begin{aligned}
 0+1+2&=3,\\
 4+11&=15+0.
 \end{aligned}
 \end{equation}
-\begin{itemize}
-\item
-ここで上記のソースの中の第1行と第2行には``\verb|&=|"と記述していますので，``$=$"の位置における横方向位置合わせを行っています．（また下記の説明の\texttt{align}環境についても同様です）．
-\end{itemize}
 \end{itemize}
 \end{itemize}
 \item
@@ -186,3 +182,5 @@ AMS-LaTeXを利用することを前提として，ディスプレイ数式の�
 \end{itemize}
 \end{document}
 ```
+
+## コメント {#mlcomeiz}
