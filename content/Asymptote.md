@@ -16,7 +16,7 @@ pukiwiki: "Asymptote"
 
 ### インストール {#a2be7136}
 
-本家に各種バイナリがある。
+本家や[CTAN/graphics/asymptote/](http://tug.ctan.org/tex-archive/graphics/asymptote/)に各種バイナリがある。
 
 ソースからコンパイルするのも簡単。
 Mac OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。
