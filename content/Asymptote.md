@@ -94,9 +94,8 @@ psviewer="c:/ghostgum/gsview/gsview32.exe";
 ```
 
 うまくいったのは、偶然うまくゆく例を使ったためで、一般には 0x5c を含む
-文字はだめです。 W32TeX の platex は sjis がデフォルトなので、近いうちに
-platex --kanji=utf8 ... と同じ役割をする platex-utf8.exe を入れるように
-します。 Asymptote で日本語を使うには utf8 を使ってください。
+文字はだめです。 W32TeX の platex は sjis がデフォルトですが、
+platex --kanji=utf8 ... と同じ役割をする platex-utf8.exe がありますので、Asymptote で日本語を使うには UTF-8 を使ってください:
 
 ```
 
@@ -104,7 +103,14 @@ texcommand="platex-utf8";
 texdvicommand="platex-utf8";
 ```
 
-(kakuto 本文にコメントを書いてすみません。適当に移動してください。)
+おそらく、 EUC でも ok でしょう。 EUC を使う場合は次のようにしておきます:
+
+```
+texcommand="platex-euc";
+texdvicommand="platex-euc";
+```
+
+(本文にコメントを書いてすみません。適当に移動してください。 kakuto)
 
 (どうもありがとうございます。Windowsでのテストをさぼっていました。すみません -- okumura)
 
