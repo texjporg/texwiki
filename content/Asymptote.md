@@ -93,9 +93,12 @@ dvipsOptions="-Ppdf";
 psviewer="c:/ghostgum/gsview/gsview32.exe";
 ```
 
-うまくいったのは、偶然うまくゆく例を使ったためで、一般には 0x5c を含む
-文字はだめです。 W32TeX の platex は sjis がデフォルトですが、
-platex --kanji=utf8 ... と同じ役割をする platex-utf8.exe がありますので、Asymptote で日本語を使うには UTF-8 を使ってください:
+うまくいったのは、偶然うまくゆく例を使ったためで、一般には Shift_JIS
+エンコーディングの場合、0x5c を含む文字はだめです。 W32TeX の
+platex は Shift_JIS がデフォルトなので、texcommand="platex"; などと
+することはできません。 platex --kanji=utf8 ... と同じ役割をする
+コマンド platex-utf8.exe を使って以下のように設定し、
+Asymptote で日本語を使うには UTF-8 を使ってください:
 
 ```
 
