@@ -431,4 +431,4 @@ jMetaPost, upjMetaPost では svg 出力に関してはオリジナルと
 
 ### 参考サイト {#sa284452}
 
-- [Supelec-Foundry MetaPost](http://foundry.supelec.fr/projects/metapost/) （本家）
+- [Supelec-Foundry MetaPost](http://foundry.supelec.fr/gf/project/metapost/) （本家）
