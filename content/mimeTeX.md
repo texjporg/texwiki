@@ -48,6 +48,10 @@ PukiWiki から使うには
 
 藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/?p=6)
 
+### jsMath {#o7441380}
+
+> [http://www.math.union.edu/~dpvc/jsMath/](http://www.math.union.edu/~dpvc/jsMath/)
+
 ### MathML {#ndc0f583}
 
 > [http://washitake.com/MathML/](http://washitake.com/MathML/)
