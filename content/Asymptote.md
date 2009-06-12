@@ -113,6 +113,9 @@ texcommand="platex-euc";
 texdvicommand="platex-euc";
 ```
 
+最新のものでは、texdvicommand なる変数は無くなっているかも知れません。
+その場合は、単に関連する行を削除するだけで ok です。
+
 (本文にコメントを書いてすみません。適当に移動してください。 kakuto)
 
 (どうもありがとうございます。Windowsでのテストをさぼっていました。すみません -- okumura)
