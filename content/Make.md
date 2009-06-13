@@ -62,7 +62,7 @@ cp my_option.sample ../my_option （オプションを変更したいのなら�
 make
 ```
 
-あるいは [OTF](/OTF/)（安定版），[Bable](</新 pTeX とBabel/>) 対応を含めるのなら
+あるいは [OTF](/OTF/)（安定版），[Babel](</新 pTeX とBabel/>) 対応を含めるのなら
 
 ```
 make all3
