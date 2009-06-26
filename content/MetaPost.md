@@ -416,14 +416,14 @@ fontmapline "-foo bar <baz.pfb";
 (MetaPost だけでなくて、全ての TeX エンジン、METAFONT でも
 pool ファイルは無くなっています。)
 
-最近のもの (1.203) は、WEB ではなくて
+最近のもの (1.204) は、WEB ではなくて
 完全に CWEB で書き換えられました。さらに makempx, newer, mpto,
 dvitomp, dmp で実現されていた .mpx ファイル作成機能は
 MetaPost に内蔵されたので、これらの外部プログラムは不要になり
 ました。外部プログラムではないので、処理はより高速です。
-W32TeX では、MetaPost 1.203, jMetaPost 1.203-0.04,
-upjMetaPost 1.203-0.04-u0.27 を配布しています。
-1.203 では svg の出力もサポートされています。ただし、
+W32TeX では、MetaPost 1.204, jMetaPost 1.204-0.04,
+upjMetaPost 1.204-0.04-u0.27 を配布しています。
+1.204 では svg の出力もサポートされています。ただし、
 jMetaPost, upjMetaPost では svg 出力に関してはオリジナルと
 同じであって、日本語については考慮していません。
 なお、現在の MetaPost は主要部がライブラリ化(mplib)されており、LuaTeX
