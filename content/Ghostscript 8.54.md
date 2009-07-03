@@ -259,12 +259,12 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /HeiseiMin-W3                 /Ryumin-Light                ;
 /HeiseiKakuGo-W5              /GothicBBB-Medium            ;
 %/HiraMinStdN-W2               /                            ;
-/KozMinProVI-Regular          /Ryumin-Light                ;
-/KozMinPro-Regular            /KozMinProVI-Regular         ;
+/KozMinPr6N-Regular           /Ryumin-Light                ;
+/KozMinPro-Regular            /KozMinPr6N-Regular          ;
 /KozMinPro-Regular-Acro       /KozMinPro-Regular           ;
 /HeiseiMin-W3-Acro            /KozMinPro-Regular-Acro      ;
-/KozGoProVI-Medium            /GothicBBB-Medium            ;
-/KozGoPro-Medium              /KozGoProVI-Medium           ;
+/KozGoPr6N-Medium             /GothicBBB-Medium            ;
+/KozGoPro-Medium              /KozGoPr6N-Medium            ;
 /KozGoPro-Medium-Acro         /KozGoPro-Medium             ;
 /HeiseiKakuGo-W5-Acro         /KozGoPro-Medium-Acro        ;
 /STSong-Light                 /BousungEG-Light-GB          ;
@@ -498,12 +498,12 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /HeiseiMin-W3                 /Ryumin-Light                ;
 /HeiseiKakuGo-W5              /GothicBBB-Medium            ;
 /HiraMinStdN-W2               /MS-Mincho                   ;
-/KozMinProVI-Regular          /Ryumin-Light                ;
-/KozMinPro-Regular            /KozMinProVI-Regular         ;
+/KozMinPr6N-Regular           /Ryumin-Light                ;
+/KozMinPro-Regular            /KozMinPr6N-Regular          ;
 /KozMinPro-Regular-Acro       /KozMinPro-Regular           ;
 /HeiseiMin-W3-Acro            /KozMinPro-Regular-Acro      ;
-/KozGoProVI-Medium            /GothicBBB-Medium            ;
-/KozGoPro-Medium              /KozGoProVI-Medium           ;
+/KozGoPr6N-Medium             /GothicBBB-Medium            ;
+/KozGoPro-Medium              /KozGoPr6N-Medium            ;
 /KozGoPro-Medium-Acro         /KozGoPro-Medium             ;
 /HeiseiKakuGo-W5-Acro         /KozGoPro-Medium-Acro        ;
 /STSong-Light                 /STSong                      ;
@@ -626,8 +626,8 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %%%     ftp://ftp.adobe.com/pub/adobe/reader/mac/8.x/8.1/misc/
 %%%     ftp://ftp.adobe.com/pub/adobe/reader/unix/7x/7.0.8/misc/
 %%%     /Library/"Application Support"/Adobe/PDFL/?.0/Fonts/
-%/Ryumin-Light                 /KozMinProVI-Regular    ;
-%/GothicBBB-Medium             /KozGoProVI-Medium      ;
+%/Ryumin-Light                 /KozMinPr6N-Regular     ;
+%/GothicBBB-Medium             /KozGoPr6N-Medium       ;
 %/GothicBBB-Medium             /KozGoPro-Medium        ;
 %/STSong-Light                 /AdobeSongStd-Light     ;
 %/STHeiti-Regular              /AdobeHeitiStd-Regular  ;
@@ -750,10 +750,12 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
     <!-- Adobe-Japan1-5-V は不要です。Identity-V を使ってください。(uchiyama) -->
 
 - Adobe-Japan1-UCS2
-- Adobe-GB1-4
+    <!-- -Adobe-GB1-4 -->
+
 - Adobe-GB1-5
 - Adobe-GB1-UCS2
-- Adobe-CNS1-4
+    <!-- -Adobe-CNS1-4 -->
+
 - Adobe-CNS1-5
 - Adobe-CNS1-UCS2
 - Adobe-Korea1-2
@@ -834,6 +836,7 @@ composefont pop
 - FutoGoB101-Bold-Identity-{H,V}
 - Jun101-Light-Identity-{H,V}
 - MidashiGo-MB31-{H,V}
+- MidashiGo-MB31-{EUC,Identity}-{H,V}
 - STSong-Light-{UniGB-UTF16,Identity}-{H,V}
 - STHeiti-Regular-{UniGB-UTF16,Identity}-{H,V}
 - MSung-Light-{UniCNS-UTF16,Identity}-{H,V}
