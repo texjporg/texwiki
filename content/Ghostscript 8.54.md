@@ -835,8 +835,10 @@ composefont pop
 - FutoMinA101-Bold-Identity-{H,V}
 - FutoGoB101-Bold-Identity-{H,V}
 - Jun101-Light-Identity-{H,V}
+- MidashiMin-MA31-{H,V}
+- MidashiMin-MA31-{EUC,UniJIS-UTF16,Identity}-{H,V}
 - MidashiGo-MB31-{H,V}
-- MidashiGo-MB31-{EUC,Identity}-{H,V}
+- MidashiGo-MB31-{EUC,UniJIS-UTF16,Identity}-{H,V}
 - STSong-Light-{UniGB-UTF16,Identity}-{H,V}
 - STHeiti-Regular-{UniGB-UTF16,Identity}-{H,V}
 - MSung-Light-{UniCNS-UTF16,Identity}-{H,V}
