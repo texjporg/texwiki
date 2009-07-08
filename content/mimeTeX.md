@@ -52,6 +52,25 @@ PukiWiki から使うには
 
 > [http://www.math.union.edu/~dpvc/jsMath/](http://www.math.union.edu/~dpvc/jsMath/)
 
+varGammaも利用可とする方法
+
+jsMath.js の mathchardef テーブル内に追加
+
+```
+   varGamma:     [0,1,0x00],
+   varDelta:     [0,1,0x01],
+   varTheta:     [0,1,0x02],
+   varLambda:    [0,1,0x03],
+   varXi:        [0,1,0x04],
+   varPi:        [0,1,0x05],
+   varSigma:     [0,1,0x06],
+   varUpsilon:   [0,1,0x07],
+   varPhi:       [0,1,0x08],
+   varPsi:       [0,1,0x09],
+   varOmega:     [0,1,0x0A],
+
+```
+
 ### MathML {#ndc0f583}
 
 > [http://washitake.com/MathML/](http://washitake.com/MathML/)
