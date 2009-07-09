@@ -894,12 +894,12 @@ composefont pop
 /HeiseiMin-W3                 /Ryumin-Light                ;
 /HeiseiKakuGo-W5              /GothicBBB-Medium            ;
 /HiraMinStdN-W2               /MS-Mincho                   ;
-/KozMinProVI-Regular          /Ryumin-Light                ;
-/KozMinPro-Regular            /KozMinProVI-Regular         ;
+/KozMinPr6N-Regular           /Ryumin-Light                ;
+/KozMinPro-Regular            /KozMinPr6N-Regular          ;
 /KozMinPro-Regular-Acro       /KozMinPro-Regular           ;
 /HeiseiMin-W3-Acro            /KozMinPro-Regular-Acro      ;
-/KozGoProVI-Medium            /GothicBBB-Medium            ;
-/KozGoPro-Medium              /KozGoProVI-Medium           ;
+/KozGoPr6N-Medium             /GothicBBB-Medium            ;
+/KozGoPro-Medium              /KozGoPr6N-Medium            ;
 /KozGoPro-Medium-Acro         /KozGoPro-Medium             ;
 /HeiseiKakuGo-W5-Acro         /KozGoPro-Medium-Acro        ;
 /STSong-Light                 /NSimSun                     ;
