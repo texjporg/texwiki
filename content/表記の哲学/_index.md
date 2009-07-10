@@ -26,6 +26,7 @@ pukiwiki: "表記の哲学"
     - これに対して数学的な定数と既定な関数の例は，$\sin \uppi$。
 
 - 単位名は立体で表記
+    - 変数・変関数には属さない
     - 例として “&micro;m” は次のようにして表す。
         - \textmu s（TS1 encoding
             \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] を使用）
