@@ -26,12 +26,14 @@ pukiwiki: "表記の哲学"
     - これに対して数学的な定数と既定な関数の例は，$\sin \uppi$。
 
 - 単位名は立体で表記
-    - 変数・変関数には属さない
+    - 変数・変関数には属さないのでイタリック体対象外
     - 例として “&micro;m” は次のようにして表す。
+        <!-- イタリック体に見える例は “&mu;m” -->
         - \textmu s（TS1 encoding
             \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] を使用）
         - \Pisymbol{psy}{"6D}s（pifont.sty パッケージを使用）
         - {\usefont{U}{psy}{m}{n} \symbol{"6D}}s
+
 - BibTeX データの人名で，“Jr” か “Jr.” か？
     - どちらも間違いではない。
     - 試しに BibTeXing (Oren Patashnik,
