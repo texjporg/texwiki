@@ -421,10 +421,10 @@ pool ファイルは無くなっています。)
 dvitomp, dmp で実現されていた .mpx ファイル作成機能は
 MetaPost に内蔵されたので、これらの外部プログラムは不要になり
 ました。外部プログラムではないので、処理はより高速です。
-W32TeX では、MetaPost 1.205, jMetaPost 1.205-0.04,
-upjMetaPost 1.205-0.04-u0.27 を配布しています。
+W32TeX では、MetaPost 1.205, pMetaPost 1.205-0.04,
+upMetaPost 1.205-0.04-u0.27 を配布しています。
 1.205 では svg の出力もサポートされています。ただし、
-jMetaPost, upjMetaPost では svg 出力に関してはオリジナルと
+pMetaPost, upMetaPost では svg 出力に関してはオリジナルと
 同じであって、日本語については考慮していません。
 なお、現在の MetaPost は主要部がライブラリ化(mplib)されており、LuaTeX
 にはこのライブラリがリンクされています。
