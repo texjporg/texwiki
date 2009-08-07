@@ -52,10 +52,7 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 - gnu-gs-fonts-other-6.0.tar.gz [ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-other-6.0.tar.gz](ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-other-6.0.tar.gz)
 - jpegsrc.v6b.tar.gz [CTAN:support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz](https://mirror.ctan.org/support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz)
 
-次のものの Windows 版 （シンボリックリンクを含まないもの）は
-[Ring Server](http://www.dnsbalance.ring.gr.jp/)
-の [/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-から入手できます。オリジナルは [gs-cjk](ftp://ftp.gyve.org/pub/gs-cjk/)
+次のものは [gs-cjk](ftp://ftp.gyve.org/pub/gs-cjk/)
 にあります。 Unix 系 OS の場合は
 [ここ](http://oku.edu.mie-u.ac.jp/mirror/gs-cjk/)
 から入手できます。
