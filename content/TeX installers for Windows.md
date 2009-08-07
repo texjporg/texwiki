@@ -22,7 +22,7 @@ pukiwiki: "TeX installers for Windows"
 <!-- -''備考''： -->
 
 このページでは，Windows 向け（主に
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)）の
+[W32TeX](http://w32tex.org/index-ja.html)）の
 TeX インストーラを色々な視点から比較してみます。
 
 インストーラは多種多様なものがあってよいですし，
@@ -93,9 +93,9 @@ TeX インストーラを色々な視点から比較してみます。
 
 ## texinst {#v558e4b5}
 
-- <strong>URL</strong>: [http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)
+- <strong>URL</strong>: [http://w32tex.org/index-ja.html](http://w32tex.org/index-ja.html)
 - <strong>作者</strong>： 角藤 亮さん
-- <strong>初心者オススメ度</strong>： ★★★☆☆
+- <strong>初心者オススメ度</strong>： ★★★★☆
 - <strong>ライセンス</strong>： フリーウェア
 - <strong>インストールする対象</strong>： W32TeX バイナリ
 - <strong>ユーザーインターフェース</strong>： CUI （コマンドプロンプト）
