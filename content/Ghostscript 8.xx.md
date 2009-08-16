@@ -658,14 +658,14 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
 - Adobe-Japan1-UCS2
 - Adobe-GB1-5
 - Adobe-GB1-UCS2
-- Adobe-CNS1-5
+- Adobe-CNS1-6
 - Adobe-CNS1-UCS2
 - Adobe-Korea1-2
 - Adobe-Korea1-UCS2
 - Identity-H
 - Identity-V
 
-上記の CMap は $TEXMFLOCAL/fonts/cmap// 以下にもコピーしておくと良いでしょう。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
+上記の CMap は $TEXMFLOCAL/fonts/cmap// 以下にもあります。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
 
 ### CID-keyed fonts {#i4c98952}
 
