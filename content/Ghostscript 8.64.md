@@ -7,11 +7,13 @@ pukiwiki: "Ghostscript 8.64"
 
 # Ghostscript 8.64
 
-## Ghostscript 8.64 {#j9d94de5}
+- [Ghostscript](/Ghostscript/) > Ghostscript 8.xx > Ghostscript 8.64
 
-とりあえず Ghostscript 8.70 との違いだけを説明します。
+とりあえず Ghostscript 8.54 との違いだけを説明します。
 
-このヴァージョンの初期設定ファイルは ghostscript/8.64/Resource/Init に移っています。これはデフォルトではバイナリにコンパイルされるので configure 時に --disable-compile-inits を付けておかないと後で困ります。
+## 初期設定ファイル {#j9d94de5}
+
+初期設定ファイルが ghostscript/8.64/Resource/Init に移りました。これはデフォルトではバイナリにコンパイルされるので configure 時に --disable-compile-inits を付けておかないと後で困ります。
 
 Mac OS X 10.5では次のようにしてconfigureしました：
 
