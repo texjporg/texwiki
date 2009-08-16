@@ -7,9 +7,11 @@ pukiwiki: "Ghostscript 8.xx"
 
 # Ghostscript 8.xx
 
-- [Ghostscript](/Ghostscript/) > Ghostscript 8.xx
+> [Ghostscript](/Ghostscript/) > Ghostscript 8.xx
 
-Ghostscript 8-系共通項目です。各マイナーバージョン特有の話題については以下
+## Ghostscript 8 {#f2728a95}
+
+Ghostscript 8-系共通項目です。いくつかのマイナーバージョンについては、固有の話題が
 
 - Ghostscript 8.15
 - Ghostscript 8.50
@@ -17,7 +19,9 @@ Ghostscript 8-系共通項目です。各マイナーバージョン特有の話
 - Ghostscript 8.64
 - Ghostscript 8.70
 
-## Contents {#ed40e45a}
+などにあります。
+
+### table of contents {#p1c753f1}
 
 #CONTENTS
 
