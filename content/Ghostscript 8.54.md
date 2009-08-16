@@ -656,7 +656,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 - Ghostscript のインストーラ
 
-- [GPL Ghostscript 8.63](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs863w32full-gpl.zip)
+- [GPL Ghostscript 8.70](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs870w32full-gpl.zip)
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
@@ -750,12 +750,8 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
     <!-- Adobe-Japan1-5-V は不要です。Identity-V を使ってください。(uchiyama) -->
 
 - Adobe-Japan1-UCS2
-    <!-- -Adobe-GB1-4 -->
-
 - Adobe-GB1-5
 - Adobe-GB1-UCS2
-    <!-- -Adobe-CNS1-4 -->
-
 - Adobe-CNS1-5
 - Adobe-CNS1-UCS2
 - Adobe-Korea1-2
@@ -845,6 +841,24 @@ composefont pop
 - MHei-Medium-{UniCNS-UTF16,Identity}-{H,V}
 - HYSMyeongJo-Medium-{UniKS-UTF16,Identity}-{H,V}
 - HYGoThic-Medium-{UniKS-UTF16,Identity}-{H,V}
+- RyuminPr6N-Light-Identity-{H,V}
+- RyuminPr6N-Light-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- GothicBBBPr6N-Medium-Identity-{H,V}
+- GothicBBBPr6N-Medium-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- FutoMinA101Pr6N-Bold-Identity-{H,V}
+- FutoMinA101Pr6N-Bold-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- FutoGoB101Pr6N-Bold-Identity-{H,V}
+- FutoGoB101Pr6N-Bold-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- Jun101Pr6N-Light-Identity-{H,V}
+- Jun101Pr6N-Light-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- MidashiMinPr6N-MA31-{H,V}
+- MidashiMinPr6N-MA31-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- MidashiGoPr6N-MB31-{H,V}
+- MidashiGoPr6N-MB31-{EUC,UniJIS-UTF16,Identity}-{H,V}
+- AdobeHeitiStd-Regular-{Identity,UniGB-UTF16}-{H,V}
+- AdobeMingStd-Light-{Identity,UniCNS-UTF16}-{H,V}
+- AdobeMyungjoStd-Medium-{Identity,UniKS-UTF16}-{H,V}
+- AdobeSongStd-Light-{Identity,UniGB-UTF16}-{H,V}
 - HiraMinProN-W3-{H,V}
 - HiraMinProN-W3-{UniJIS-UTF16,Identity}-{H,V}
 - HiraMinPro-W3-Identity-{H,V}
