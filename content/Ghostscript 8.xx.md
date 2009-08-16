@@ -7,13 +7,137 @@ pukiwiki: "Ghostscript 8.xx"
 
 # Ghostscript 8.xx
 
+- [Ghostscript](/Ghostscript/) > Ghostscript 8.xx
+
 Ghostscript 8-系共通項目です。各マイナーバージョン特有の話題については以下
 
+- Ghostscript 8.15
+- Ghostscript 8.50
 - Ghostscript 8.54
 - Ghostscript 8.64
 - Ghostscript 8.70
 
+## Contents {#ed40e45a}
+
+#CONTENTS
+
 ## GPL Ghostscript 8.xx for UNIX or Unix-like OS {#xff4aa84}
+
+### ダウンロード {#g31ae747}
+
+[CTAN:support/ghostscript/GPL/](https://mirror.ctan.org/support/ghostscript/GPL/)gs8??/
+などから ghostscript-8.??-gpl.tar.bz2 と ghostscript-fonts-std-8.11.tar.gz を入手します。
+
+### インストール {#u4ad1919}
+
+/usr/local/teTeX/ 以下にインストールする場合です。
+
+```
+$ cd /usr/local/src
+$ sudo tar xvjf .../ghostscript-8.??-gpl.tar.bz2
+$ cd ghostscript-8.??-gpl
+$ sudo ./configure --prefix=/usr/local/teTeX
+$ make
+$ sudo make install
+```
+
+すると，次のものが /usr/local/teTeX/bin/ に入ります。
+
+> bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj, gsdj,
+> gsdj500, gslj, gslp, gsnd, lprsetup.sh, pdf2dsc, pdf2ps, pdfopt, pf2afm,
+> pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
+> ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
+
+また，/usr/local/teTeX/share/ghostscript/8.??/ の下に
+たくさんのものが入ります。/usr/local/teTeX/man/man1/ と
+/usr/local/teTeX/man/de/man1/ の中にもマニュアル類が入ります。
+
+欧文用フォントをインストールします：
+
+```
+$ cd /usr/local/teTeX/share/ghostscript
+$ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz 
+
+```
+
+和文については，cidfmap（上の設定では /usr/local/teTeX/share/ghostscript/8.??/lib/cidfmap）に記述します。ヒラギノを利用するなら
+
+```
+/Ryumin-Light      /HiraMinProN-W3   ;
+/GothicBBB-Medium  /HiraKakuProN-W3  ;
+/HeiseiMin-W3      /Ryumin-Light     ;
+/HeiseiKakuGo-W5   /GothicBBB-Medium ;
+```
+
+あとは /usr/local/teTeX/share/ghostscript/8.??/Resource/CIDFont/ の
+中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
+名前でシンボリックリンクを作っておきます。例えば MacOS X なら
+
+```
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W3
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W6
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W3
+$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W6
+$ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
+> /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
+$ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
+> /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
+$ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
+> /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStdN-W8
+$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruProN-W4
+$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
+$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W6
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W3
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W6
+$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStd-W8
+$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
+> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruPro-W4
+$ sudo ln -s /Library/Fonts/华文宋体.ttf \
+> /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
+$ sudo ln -s /Library/Fonts/华文楷体.ttf \
+> /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
+$ sudo ln -s /Library/Fonts/华文仿宋.ttf \
+> /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
+$ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
+> /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
+```
+
+さらに，/usr/local/teTeX/share/ghostscript/8.??/Resource/Font/ の中に
+例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
+
+```
+
+```
+
+***
+
+```
+/HiraMinProN-W3-H
+/H /CMap findresource
+[/HiraMinProN-W3 /CIDFont findresource]
+composefont pop
+```
+
+***
+
+以上で PostScript ファイルの表示ができるようになりました。
+ps2pdf もうまく行えます。
+
+$TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
+シンボリックリンクを作っておくと良いでしょう
+（こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
 
 ### /usr/local/share/ghostscript/8.??/lib/cidfmap の記述例 {#h0f0fbe0}
 
@@ -435,7 +559,7 @@ Ghostscript 8-系共通項目です。各マイナーバージョン特有の話
 
 - Ghostscript のインストーラ
 
-- [GPL Ghostscript 8.??](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs870w??full-gpl.zip (?? は望みのバージョン) をダウンロード
+- [GPL Ghostscript 8.??](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs8??w32full-gpl.zip (?? は望みのバージョン) をダウンロード
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
@@ -450,8 +574,7 @@ Ghostscript 8-系共通項目です。各マイナーバージョン特有の話
 
 ### インストール {#a4d9c6ea}
 
-旧ヴァージョンの Ghostscript がすでにインストールしてあるのならば，
-先にアンインストールしておきます。
+旧版の Ghostscript がすでにインストールしてあるのならば，先にアンインストールしておきます。
 
 - 絶対パスに ASCII 以外の文字（日本語など）を使っていないディレクトリに
     gs8??w32full-gpl.zip を展開します。
@@ -1097,3 +1220,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。
   /Symbol /ZapfDingbats
 ] readonly def
 ```
+
+## Comment {#z51688d5}
+
+#COMMENT
