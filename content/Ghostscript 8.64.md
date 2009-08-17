@@ -13,7 +13,7 @@ pukiwiki: "Ghostscript 8.64"
 
 ## 初期設定ファイル {#j9d94de5}
 
-初期設定ファイルが ghostscript/8.64/Resource/Init に移りました。これはデフォルトではバイナリにコンパイルされるので configure 時に --disable-compile-inits を付けておかないと後で困ります。
+日本語環境を構築するうえで編集することの多い、cidfmap, gs_res.ps などの初期設定ファイルが ghostscript/8.64/Resource/Init に移りました。これはデフォルトではバイナリにコンパイルされるので configure 時に --disable-compile-inits を付けておかないと後で困ります。
 
 Mac OS X 10.5では次のようにしてconfigureしました：
 
