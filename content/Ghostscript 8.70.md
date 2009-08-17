@@ -8,17 +8,11 @@ pukiwiki: "Ghostscript 8.70"
 # Ghostscript 8.70
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
-<!-- 8.54のページからまるまるコピペした方の意図がよく分かりませんが、 -->
-<!-- 8.54のインストール記は8.54のページに在れば十分なので除去しました。 -->
-<!-- それから、8系共通の覚書等は8系共通のページに分離し、ここは8.70特有の内容に絞るべきでは。 -->
-<!-- マイナーバージョン弄るだけで内容がそのままならマイナーバージョンごとに -->
-<!-- 別ページにしても読みにくくなるだけであまり益が無いのではないかと。 -->
+- [Ghostscript](/Ghostscript/) > Ghostscript 8.xx > Ghostscript 8.70
 
-Ghostscript 8.xxとの差分を中心に記します。 <!-- だけではなんなので win 版のインストーラへのリンクだけでも残しておきます。 -->
+## Ghostscript 8.70 {#q0a31a77}
 
-## GPL Ghostscript 8.70 for Microsoft Windows {#w33eec77}
-
-### 配布先 {#gc8a2a19}
+### GPL Ghostscript 8.70 for Microsoft Windows {#w33eec77}
 
 [Ring Server](http://www.dnsbalance.ring.gr.jp/)
 からインストールプログラムを入手します。
@@ -27,7 +21,7 @@ Ghostscript 8.xxとの差分を中心に記します。 <!-- だけではなん�
 
 - [GPL Ghostscript 8.70](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs870w32full-gpl.zip)
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
-        - 2009年8月18日以前の角藤先生によるgs 8.70では、-WINKANJI オプションを用いない場合の日本語表示に問題があります（[qa:53554](https://okumuralab.org/~okumura/texfaq/qa/53554.html), [qa:53555](https://okumuralab.org/~okumura/texfaq/qa/53555.html)）。
+        - 2009年8月18日以前の角藤先生によるgs 8.70では、-dWINKANJI オプションを用いない場合の日本語表示に問題があります（[qa:53554](https://okumuralab.org/~okumura/texfaq/qa/53554.html), [qa:53555](https://okumuralab.org/~okumura/texfaq/qa/53555.html)）。
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
     - [GSview 4.9 (32bit版)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
