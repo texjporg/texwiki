@@ -173,6 +173,10 @@ Date: 5 Nov 2002 11:11:53 -0800
     の [Online tutorials for LaTeX](http://www.tug.org.in/tutorials.html)
     の Introduction など
 
+### TeXを用いて本を作る {#od016a40}
+
+[本を作る際の決め事](</本を作る際の決め事/>)
+
 ### 補遺 {#r05dc086}
 
 Knuth の [3:16 Bible Texts Illuminated](http://www-cs-faculty.stanford.edu/~knuth/316.html)
