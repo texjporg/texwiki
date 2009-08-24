@@ -28,10 +28,11 @@ pukiwiki: "表記の哲学"
 
 - 単位名は立体で表記
     - 変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
-    - 例として “1 &micro;m” は次のようにして表す。
+    - 例として “1 &micro;m” （“1 &mu;m”。環境によってどちらかが立体に見えるはず）は次のようにして表す。
         <!-- イタリック体に見える例は “1 &mu;m” -->
-        - 1\\,\textmu m（\usepackage{upgreek} を使用．TS1 encoding
-            \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] を使用）
+        - 1\\,\textmu m（TS1 encoding
+            \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] 加えて\usepackage{lmodern} を使用）
+        - 1\\,$\upmu$m （\usepackage{upgreek} を使用）
         - 1\\,\Pisymbol{psy}{"6D}m（pifont.sty パッケージを使用）
         - 1\\,{\usefont{U}{psy}{m}{n} \symbol{"6D}}m
 
