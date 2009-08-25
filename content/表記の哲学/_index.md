@@ -27,7 +27,7 @@ pukiwiki: "表記の哲学"
 
 - 単位名は立体で表記
     - 変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
-    - 例として “1 &micro;m” （“1 &mu;m”。環境によってどちらかが立体に見えるはず）は次のようにして表す。
+    - 例として “1 &micro;m” （“1 &mu;m”。環境によってどちらかは立体に見えるはず）は次のようにして表す。
         <!-- イタリック体に見える例は “1 &mu;m” -->
         - 1\\,\textmu m（TS1 encoding
             \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] 加えて\usepackage{lmodern} を使用）
