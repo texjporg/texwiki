@@ -41,3 +41,21 @@ pukiwiki: "表記の哲学"
         [CTAN:biblio/bibtex/contrib/doc/btxdoc.pdf](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/doc/btxdoc.pdf))
         を調べてみると，例の中では “Jr” となっている。
     - 自分で .bst ファイルを書いて置換を行うようにすれば，最終出力をどちらかに統一できそう。
+
+### 日本語表記 {#p670ef1d}
+
+日本語表記の伝統は．．．
+
+#### 強調 {#qa4a098e}
+
+bold or gothic体？ （もしくはbold gothic体？）
+
+- 伝統では強調はゴシック体？
+- 下線を使いたがる人もいる
+
+#### 数値範囲 {#zd86c11e}
+
+「○○○--○○○」とするか「○○○〜○○○」か？
+
+- 伝統では後者？
+    <!-- 日本語テキスト中では「○○○～○○○」で問題ない（en-dash でつなぐのは英語式）． -->
