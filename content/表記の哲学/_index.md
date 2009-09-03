@@ -48,10 +48,12 @@ pukiwiki: "表記の哲学"
 
 #### 強調 {#qa4a098e}
 
-bold or gothic体？ （もしくはbold gothic体？）
+bold もしくは gothic体？ （もしくはbold gothic体？）
 
 - 伝統では強調はゴシック体？
 - 下線を使いたがる人もいる
+- イタリック体も見られる（英語では強調表示の基本）
+- 勘案するとボールド \bfseries (\textbf) が妥当でしょうか？
 
 #### 数値範囲 {#zd86c11e}
 
