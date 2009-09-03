@@ -7,6 +7,32 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
+## Vine Linux 5.0 {#vac9e97f}
+
+[Vine Linux 5.0](http://vinelinux.org/whatsnew.html#20090824) がリリースされました。
+
+オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。
+
+- [日本語 TeX 利用ガイド - Vine Linux](http://vinelinux.org/manuals/tex-guide.html)
+
+現時点 (2009/09/04) では、第 1 章 日本語 TeX 環境の構築のところで、TeX 関連パッケージの説明を一通り書けていますが、第 2 章 カスタマイズ および 第 3 章 TeX 関連パッケージの紹介 のところは、骨抜きです。
+
+### Emacs 上での TeX コーディング {#w960fd23}
+
+5.0 から Vine Linux のデフォルト設定として vine-default という仕組みを搭載しました。詳細は以下のドキュメントを参照してください。
+
+- [Emacs 利用ガイド - Vine Linux](http://vinelinux.org/manuals/emacs-guide.html)
+
+現在，やてふ（YaTeX）をデフォルトとして対応しています。AUCTeX は未対応ですが、要望があればパッケージングする予定です。
+
+### Adobe Reader のインストール {#d5b65e06}
+
+install-assist-AdobeReader_jpn パッケージをインストールしますと、自動的に rpm を Adobe 社サイトから取得して，その rpm をインストールをする補助をします。
+
+```
+$ sudo apt-get install install-assist-AdobeReader_jpn
+```
+
 ## Vine Linux 4.2 {#oae2fbd9}
 
 [Vine Linux 4.2](http://vinelinux.org/whatsnew.html#20071225) がリリースされました。
