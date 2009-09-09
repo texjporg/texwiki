@@ -61,10 +61,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>URL</strong>: [http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/)
 - <strong>作者</strong>： 阿部 紀行さん
 - <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
-- <strong>ライセンス</strong>： ソースは公開されている。
-    個人での使用における使用・改変に制限なし。
-    ただし，再配布を行う場合に許可が必要。
-
+- <strong>ライセンス</strong>： 修正BSD（2009/9/10, バージョン0.75から）
 - <strong>インストールする対象</strong>： W32TeX バイナリ，dviout，Ghostscript，GSview
     （DLL プラグインおよび Ruby スクリプトの追加方式により，jsclasses，xypic，ispell，WinShell）
 
