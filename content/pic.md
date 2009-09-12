@@ -13,11 +13,13 @@ picとは，A Graphics Language for Typesetting
 
 ・[http://www.cs.bell-labs.com/10thEdMan/pic.pdf](http://www.cs.bell-labs.com/10thEdMan/pic.pdf)  by Brian W. Kernighan
 
-・[http://www.math.uiuc.edu/~west/gpic.html](http://www.math.uiuc.edu/~west/gpic.html)  by  Douglas B. West
-
 ### dpic {#n4789561}
 
+・[http://www.ece.uwaterloo.ca/~aplevich/dpic](http://www.ece.uwaterloo.ca/~aplevich/dpic)
+
 ### gpic {#re376f4f}
+
+・[http://www.math.uiuc.edu/~west/gpic.html](http://www.math.uiuc.edu/~west/gpic.html)  by  Douglas B. West
 
 ## xy-pic {#b9215e15}
 
