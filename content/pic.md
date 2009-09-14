@@ -30,6 +30,37 @@ picとは，A Graphics Language for Typesetting
 - [http://www.ms.u-tokyo.ac.jp/~abenori/tex/index.html#xy-pic](http://www.ms.u-tokyo.ac.jp/~abenori/tex/index.html#xy-pic)
 - [http://akagi.ms.u-tokyo.ac.jp/ftp-j.html](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html) （日本語での解説，より詳しい解説）
 
+### 例 {#xd92553b}
+
+ノード近傍の重なり（接触）が多少見苦しい
+
+```
+\documentclass{article} 
+\usepackage{amsmath}
+\usepackage[all]{xy}
+\begin{document}
+\xygraph{
+ {     {\alpha}*+!D{\quad}="1"
+   [r] {\bullet}*+!D{\text{Tokyo}}*+!U{\quad}="t"
+   [d] {\bullet}*+!U{{\oalign{{Hachioji}\crcr{Tachikawa}}}} ="h"
+     "1" : "t"
+     "h" : "t"
+     :_*+{\varDelta \tau_1} 
+   [rr] {\bullet}*+!D{\text{Nagoya}}*+!U{t_1}
+     :_*+{\varDelta \tau_2} 
+   [rru] {\bullet}*+!D{\text{Kyoto}}*+!U{t_2} 
+     :_*+{\varDelta \tau_3} 
+   [rrd] {\bullet}*+!D{\text{Osaka}}*+!U{t_3} 
+     :_*+{\varDelta \tau_4} 
+   [rr] {\bullet}*+!D{\text{Kobe}}*+!U{\quad} ="k"
+   [d] {\bullet}*+!U{\text{Sanda}} ="s"
+     "s" : "k"
+     "k" :  
+   [r] {\beta}*+!D{\quad}
+}
+\end{document}
+```
+
 ## ketpic {#d0d77e0e}
 
 - [http://ketpic.com/](http://ketpic.com/)
