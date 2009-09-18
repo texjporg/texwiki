@@ -18,6 +18,11 @@ AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した 
 [http://www.ams.org/tex/amslatex.html](http://www.ams.org/tex/amslatex.html) や
 [CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
 
+ドキュメント等
+
+- Short Math Guide for LaTeX|ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
+- [http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf)
+
 ### amsmath {#h5d7d27f}
 
 amsmath は数式に関する各種のコマンド・環境を定義したパッケージです。
