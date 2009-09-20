@@ -161,7 +161,7 @@ TeX インストーラを色々な視点から比較してみます。
 
 <!-- インストーラは後述の通り，Cygwin Netinstaller そのもの。 -->
 <!-- 「Cygwin で日本語 TeX」はプロジェクト名くらいの位置付け。 -->
-- <strong>URL</strong>: [http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)
+- <strong>URL</strong>: [http://ptetexwin.sourceforge.jp/](http://ptetexwin.sourceforge.jp/)
 - <strong>作者（パッケージ制作者）</strong>： 黒木 裕介さん
     <!-- 長所の項で「パッケージ制作者が増えて」と書かれているので， -->
     <!-- 「作者」の次に「（パッケージ制作者）」と書いておくのがよいかわからない。 -->
@@ -191,7 +191,7 @@ TeX インストーラを色々な視点から比較してみます。
     もっと面白くなる！ 豊富な [CTAN](/CTAN/) のパッケージのインストールが
     どれだけ簡単になることか，計り知れない。
     追加パッケージ作成はテキストベースなので簡単にできる（参考：
-    [Cygwin で 日本語 TeX &mdash; TeX マクロをバイナリ配布するには](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/package.html)）。
+    [Cygwin で 日本語 TeX &mdash; TeX マクロをバイナリ配布するには](http://ptetexwin.sourceforge.jp/package.html)）。
 
 - <strong>短所</strong>： そもそも UNIX 系 OS に馴染みがない人には無縁の世界。Windows しか
     触ったことのない初心者には，かなり高い敷居がある。
