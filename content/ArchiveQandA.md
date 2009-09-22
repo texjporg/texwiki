@@ -11,6 +11,26 @@ pukiwiki: "ArchiveQandA"
 
 <!-- *目次 [#c74dbb77] -->
 
+### ヘルプドキュメントの探し方 {#bdcc8e5a}
+
+([qa:53707](https://okumuralab.org/~okumura/texfaq/qa/53707.html), [qa:53708](https://okumuralab.org/~okumura/texfaq/qa/53708.html) など)
+
+- 検索サイトで，パッケージ名やコマンド名で検索する
+- マクロやパッケージ関わることであれば，[CTAN](/CTAN/) ([CTAN search](http://www.ctan.org/search.html)) でパッケージ名をキーに探す
+- W32TeX であればコマンドプロンプトから texdocc -l -s &lt;パッケージ名> と打つ<br>
+    (例) texdocc -l -s hyperref
+
+- ptetex であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
+    (例) texdoc -l -s hyperref
+
+- [texdoctk](http://www.ctan.org/tex-archive/help/Catalogue/entries/texdoctk.html) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあることも．
+
+> Fedora 10で使ってみるとテキスト検索はまともに入力もできないのですが、
+> マウスクリックでカテゴリやキーワードから文書を選択して表示できるので、
+> 「調べたいことが書いてある文書の名前（パッケージ名）がわからない」ときに便利かもしれません。
+
+- dviout や WinShell など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
+
 ### WinShellのエラーメッセージ {#l91d86a6}
 
 - 文字が90&deg;回転して表示される（[qa:22602](https://okumuralab.org/~okumura/texfaq/qa/22602.html), [qa:32720](https://okumuralab.org/~okumura/texfaq/qa/32720.html)など）
