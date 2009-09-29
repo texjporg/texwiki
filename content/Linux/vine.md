@@ -23,7 +23,7 @@ pukiwiki: "Linux/vine"
 
 - [Emacs 利用ガイド - Vine Linux](http://vinelinux.org/manuals/emacs-guide.html)
 
-現在，やてふ（YaTeX）をデフォルトとして対応しています。AUCTeX は未対応ですが、要望があればパッケージングする予定です。
+現在，やてふ（YaTeX）をデフォルトとして、AUCTeX も対応しています。
 
 ### Adobe Reader のインストール {#d5b65e06}
 
