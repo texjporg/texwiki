@@ -22,15 +22,31 @@ pukiwiki: "Asymptote"
 Mac OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。
 Asymptoteソースを展開したディレクトリに
 [gc-7.1.tar.gz](http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc-7.1.tar.gz)
-を展開せずに置き，（新しいlibreadlineが/usr/local/libにあるなら）
+を展開せずに置き，
 
 ```
-LIBS='-L/usr/local/lib ' ./configure
+./configure
 make
 make install
 ```
 
-でできる。
+でできる（libreadlineが/usr/local/libにあるなら./configure後Makefileの LFLAGS = の後に -L/usr/local/lib を追加する）。
+
+Mac OS X 10.6 (Snow Leopard) では次のようなエラーになる。
+
+```
+In file included from mach_dep.c:163:
+/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined
+```
+
+このときは gc-7.1 の中で ucontext.h をインクルードしているファイルが二つあるのを sys/ucontext.h をインクルードするように書き換えてからその（gc-7.1 の）中で
+
+```
+./configure --disable-shared
+make
+```
+
+し，一つ上に上がって make し直せばよい。
 
 ### Mac OS X でのプレビュー {#dc357da5}
 
