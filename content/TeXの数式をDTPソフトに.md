@@ -317,8 +317,9 @@ Windows に “mv” で始まる名前の TrueType フォントが9個インス
 ### OLETeX {#bf856a64}
 
 Microsoft Office Word/PowerPoint に Microsoft Windows の OLE 機能を使って
-数式を貼り込むものとして，OLETeX があります。
-これについては 市川さん，坂井さん の解説をご覧ください。 
+数式を貼り込むものとして，小倉信彦さんによるシェアウェア OLETeX があります。
+これについては [市川健一郎さん](http://www.geocities.co.jp/SiliconValley/7231/oletex.htm) の解説をご覧ください。 
+本来はインプレス版向けのソフトウェアですが，[坂井芳行さん](http://www2.odn.ne.jp/~ciw95550/oletex.html) が角藤さんの pTeX で動作させるための方法を解説されています。ただし，最近の版ではさらに手を加える必要があるかもしれません。
 
 ## リンク {#qed253c5}
 
