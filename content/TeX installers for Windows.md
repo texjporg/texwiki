@@ -63,7 +63,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
 - <strong>ライセンス</strong>： 修正BSD（2009/9/10, バージョン0.75から）
 - <strong>インストールする対象</strong>： W32TeX バイナリ，dviout，Ghostscript，GSview
-    （DLL プラグインおよび Ruby スクリプトの追加方式により，jsclasses，xypic，ispell，WinShell）
+    （DLL プラグインおよび Ruby スクリプトの追加方式により，xypic，ispell，WinShell）
 
 - <strong>ユーザーインターフェース</strong>： GUI
 - <strong>ネット・ローカルインストール</strong>： ネットインストーラ。
