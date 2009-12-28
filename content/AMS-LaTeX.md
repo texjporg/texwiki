@@ -21,6 +21,7 @@ AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した 
 ドキュメント等
 
 - Short Math Guide for LaTeX (short-math-guide.pdf from [ftp@ams.org](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)[http@chiba-u.ac.jp](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf))
+    - 「Short Math Guide for LaTeX」を読んで ([http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf)](<http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf)>)
 
 ### amsmath {#h5d7d27f}
 
