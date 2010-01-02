@@ -365,7 +365,7 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 \noindent\begin{pspicture}(-4,-6)(4,6)
 \psaxes[linewidth=1.2pt,labels=none,ticks=none]{->}(0,0)(-4,-6)(4,6)
 \psplot[linecolor=red]{-4}{4}{0.4*x^4-2*x^2+x}
-\uput[240](4,0){$x$}\uput[210](0,6){$y$}\uput[135]{$\mathrm{O}$}
+\uput[240](4,0){$x$}\uput[210](0,6){$y$}\uput[135](0,0){$\mathrm{O}$}
 \end{pspicture}
 \hfill\begin{pspicture*}(-4,-6)(4,6)
 \psaxes[linewidth=1.2pt,labels=none,ticks=none]{->}(0,0)(-4,-6)(4,6)
