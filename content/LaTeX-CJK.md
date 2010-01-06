@@ -495,10 +495,10 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
         - 同梱された TFM ファイルは全角文字以外に使えない。
         - 横書きフォントを縦書きに使う場合の fdx ファイルが無いため、CJKvert.sty を使った縦書きでは句読点の位置がおかしい（縦書きフォントを使う場合は問題ないと思います）。
 1. [Supplementary Ideographic Plane の使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルから PDF ファイルを作るのには、
-    最新版にパッチを当てた dvipdfmx が必要です。更に商用フォントも使いました。
+    比較的新しい dvipdfmx (20070409 以降) が必要です。更に商用フォントも使いました。
     そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
-        - 現時点では、dvipdfmx にパッチ ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html)) を当てなくてはならない。（cvs 版 Fri Jan 19 10:57:22 2007 UTC で修正されています。）
+        - 旧い dvipdfmx には不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（cvs 版 Fri Jan 19 10:57:22 2007 UTC, リリース版 dvipdfmx-20070409 で修正されています。）
         - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
             の二つのファイルに分けないと、SIP の文字を文書の最初に使えない。
         - 商用フォントを使う設定になっている。これは、cid-x.map を書き換えて、[HAN NOM FONTs](http://www.viethoc.org/article.php?sid=98&mode=threaded&order=0&thold=0) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
