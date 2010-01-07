@@ -11,7 +11,7 @@ pukiwiki: "TeX入手法"
 
 \[TODO\] OSごとのページができたのでこれはそちらに吸収させてもいいですね。-- 奥村
 
-- Windows
+- Microsoft Windows
     - 手動でインストール
     - インストーラ
 - [ソースから（UNIX&reg; 互換 OS）](/Make/)
