@@ -138,6 +138,31 @@ hyperref.styを読み込むことによって下記のコマンドが使用可�
 | \hyperlink{name}{text} |   |
 | \hypertarget{name}{text} |   |
 
+### url/nolinkurl {#h026c44c}
+
+url及びnolinkurl とは hyperref.styを読み込むことによって使用可能なコマンドの一つ
+
+#### pdfファイル作成 {#ib05c931}
+
+タイプセットでpdfファイルを作成し，
+Adobe Reader で開くと（その御節介機能により），
+url文字列にはhyper link機能が付与されます．（下記例ではnolinkurとtextttの両方に）
+
+```
+\documentclass{book}
+\usepackage[dvipdfm,
+ bookmarkstype=toc=true,
+ linktocpage=true,
+ bookmarks=true
+ ]{hyperref}
+\begin{document}
+\tableofcontents
+ \chapter{Test}
+ \nolinkurl{http://www.apple.com}  \\
+ \texttt{http://www.apple.com}
+\end{document}
+```
+
 ### Adobe Readerを操作するボタン {#bfd00112}
 
 ```
