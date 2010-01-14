@@ -29,11 +29,12 @@ pukiwiki: "表記の哲学"
     - 変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
     - 例として “1 &micro;m” （“1 &mu;m”。環境によってどちらかは立体に見えるはず）は次のようにして表す。
         <!-- イタリック体に見える例は “1 &mu;m” -->
-        - 1\\,\textmu m（TS1 encoding
-            \[“\usepackage\[T1\]{fontenc} \usepackage{textcomp}”\] 加えて\usepackage{lmodern} を使用）
+        - 1\\,\textmu m（TS1 encoding:
+            \usepackage\[T1\]{fontenc}  と \usepackage{textcomp}，さらに加えて\usepackage{lmodern} を使用．）
         - 1\\,$\upmu$m （\usepackage{upgreek} を使用）
         - 1\\,\Pisymbol{psy}{"6D}m（pifont.sty パッケージを使用）
-        - 1\\,{\usefont{U}{psy}{m}{n} \symbol{"6D}}m
+        - 1\\,{\usefont{U}{psy}{m}{n} \symbol{"6D}}m （多少見映えが良くない？）
+        - いずれも\textmuを定義して使うと良さそう．例：\DeclareRobustCommand\*\textmu{\leavevmode{\usefont{U}{psy}{m}{n} \symbol{"6D}}}
 
 - BibTeX データの人名で，“Jr” か “Jr.” か？
     - どちらも間違いではない。
