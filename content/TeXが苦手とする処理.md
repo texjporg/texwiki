@@ -433,6 +433,14 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 </tbody>
 </table>
 
+## 苦手とする数式 {#u35e5d4c}
+
+### 文字の上線 {#ab3fec88}
+
+- 例 $\sqrt{5} \overline{D}$：  少し長過ぎる上線．平方根にくっついてしまう
+- 例 $\sqrt{5} \bar{D}$： 少し短すぎる上線
+- 工夫の情報：[widebar -- 綺麗な上線](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/widebar.html)
+
 ## Comments {#ada1c094}
 
 - 少なくとも丸数字の1-99くらいまでは、pkフォントがあると重宝すると思うのですが、そういうものはMFソースの形で公開れていないものでしょうか？ -- 通りすがり 2007-09-04 (火) 03:01:40
