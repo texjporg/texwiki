@@ -441,6 +441,20 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 - 例 $\sqrt{5} \bar{D}$： 少し短すぎる上線
 - 工夫の情報：[widebar -- 綺麗な上線](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/widebar.html)
 
+### ボールド体 {#a45a0ccb}
+
+#### $\bm{\phi}$ {#t82cb506}
+
+使われるフォントをボールド体と見てくれない人が多くて困る．
+
+```
+\documentclass[10pt]{article}
+\usepackage{bm} 
+\begin{document}
+$\bm{\phi}=\left(\phi_1,\,\phi_2\right)$
+\end{document}
+```
+
 ## Comments {#ada1c094}
 
 - 少なくとも丸数字の1-99くらいまでは、pkフォントがあると重宝すると思うのですが、そういうものはMFソースの形で公開れていないものでしょうか？ -- 通りすがり 2007-09-04 (火) 03:01:40
