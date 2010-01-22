@@ -168,7 +168,7 @@ SI単位を用いる。これをサポートするスタイルファイルとし
 
 ### 略語を簡単に {#n64448be}
 
-略語は初出の時にフルスペルでかかなくてはいけない。これを自動的にしてくれるacromake.styがある。
+略語は初出の時にフルスペルでかかなくてはいけない。これを自動的に行ってくれるacromake.styがある。
 
 ```
 \acromake{ANSA}{{\tt ANSA}}{another nasty stupid acronym}
