@@ -455,6 +455,22 @@ $\bm{\phi}=\left(\phi_1,\,\phi_2\right)$
 \end{document}
 ```
 
+### 単位 {#p7453c09}
+
+普通は下記例のように書く必要があり苦しい．
+
+```
+1\,\textmu /s$^2$
+```
+
+本当(?)は下記例のように書けるようになるのが理想かも．
+
+```
+1\unit{\mu / s^2}
+```
+
+> sistyle パッケージを用いると，大体そのような形で記述可能． <!-- 単純なものでよければ，次のサンプル程度のマクロを自作してもいい． --> <!-- \documentclass{jarticle} --> <!-- \makeatletter --> <!-- \def\unitprespace{\,} --> <!-- \DeclareRobustCommand*\unit{\@ifstar{\@unit\relax}{\@unit\unitprespace}} --> <!-- \def\@unit#1{% --> <!--    \ifmmode\else --> <!--       \ifvmode \leavevmode \fi --> <!--       \unskip --> <!--    \fi --> <!--    #1% --> <!--    \ifmmode \expandafter\@math@unit --> <!--    \else    \expandafter\@text@unit --> <!--    \fi} --> <!-- \def\@text@unit{\@@unit\f@size} --> <!-- \def\@math@unit#1{% --> <!--     \mathchoice{\@@unit\tf@size{#1}}{\@@unit\tf@size{#1}}% --> <!--                {\@@unit\sf@size{#1}}{\@@unit\ssf@size{#1}}} --> <!-- \def\@@unit#1#2{% --> <!--    \hbox{\fontsize#1\f@baselineskip\upshape --> <!--       \expandafter\let\csname unit \endcsname\mbox --> <!--       \def\@tempa{\mu}% --> <!--       \ifx\@@micro\@tempa\else \let\mu\@@micro \fi --> <!--       \@tfor\@tempa:=% --> <!--          {\@@b\b}{\@@c\c}{\@@d\d}{\@@t\t}{\@@H\H}% --> <!--          {\'\acute}{\'\grave}{\.\dot}{\"\ddot}{\^\hat}% --> <!--          {\v\check}{\u\breve}{\~\tilde}{\=\bar}% --> <!--          {\r\mathring}%%% 実際には，おそらく，この場合のみ処理するだけでも充分 --> <!--          {\b\b@in@unit}{\c\c@in@unit}{\d\d@in@unit}{\t\t@in@unit}{\H\H@in@unit}% --> <!--          \do{\expandafter\let\@tempa}% --> <!--       \medmuskip=2mu --> <!--       \edef\@tempa{\f@series}\edef\@tempa{\expandafter\@car\@tempa\@empty\@nil}% --> <!--       \if \@tempa b\relax \mathversion{bold}\fi --> <!--       $\mathrm{#2}$}} --> <!-- \def\b@in@unit#1{\hbox{\@@b{#1}}} --> <!-- \def\c@in@unit#1{\hbox{\@@c{#1}}} --> <!-- \def\d@in@unit#1{\hbox{\@@d{#1}}} --> <!-- \def\t@in@unit#1{\hbox{\@@t{#1}}} --> <!-- \def\H@in@unit#1{\hbox{\@@H{#1}}} --> <!-- \DeclareRobustCommand*\micro{\@@micro} --> <!-- \AtBeginDocument{% --> <!--    \@ifundefined{textmu}% --> <!--       {\@ifundefined{muup}% --> <!--          {\def\@@micro{\mu}}% --> <!--          {\def\@@micro{\muup}}}% --> <!--       {\def\@@micro{\mbox{\textmu}}}} --> <!-- \makeatother --> <!--  --> <!-- \usepackage{txfonts}%%% \muup を提供 --> <!--  --> <!-- \begin{document} --> <!-- 10 \unit{m \cdot s^{-1}} and 12\unit{\micro g/l} --> <!--  --> <!-- $v = 10 \unit{m/s}$ and $c = 12\unit{\mu g/l}$ --> <!-- $X = \sup_{v \geq 10\unit{m/s}} f(v)$ --> <!--  --> <!-- 10\,[\unit*{m/s}]%%% このような場合には \unit* とする． --> <!-- \end{document} -->
+
 ## Comments {#ada1c094}
 
 - 少なくとも丸数字の1-99くらいまでは、pkフォントがあると重宝すると思うのですが、そういうものはMFソースの形で公開れていないものでしょうか？ -- 通りすがり 2007-09-04 (火) 03:01:40
