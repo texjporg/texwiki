@@ -26,7 +26,7 @@ pukiwiki: "TeXが苦手とする処理"
 Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り）
 「環境依存」文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
 
-対処法は，大別すると次の2通りになります。
+対処法は，大別すると次の3通りになります。
 
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
@@ -48,6 +48,8 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
         同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
+
+1. [XeTeX](/XeTeX/), LuaTeXなど、Unicode化されたTeX族を利用する。ただし、技術力のある方以外には、まだまだしきいが高いものです。
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
