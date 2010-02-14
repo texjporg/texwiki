@@ -156,7 +156,9 @@ AMS-LaTeXを利用することを前提として，ディスプレイ数式の�
 4+5=9.
 \end{gathered}
 \end{equation}
-\item もしくは\texttt{aligned} (or \texttt{split})環境を併用して記述します\footnote{\label{fn2}特定位置における横方向位置合わせを行う場合．ソース例の中の第1行と第2行には``\texttt{\&=}"と記述していますので，``$=$"の位置における横方向位置合わせを行っています．}．
+\item もしくは\texttt{aligned}環境を併用します
+\footnote{\label{fn2}特定位置における横方向位置合わせを行う場合．ソース例の中の第1行と第2行には``\texttt{\&=}"と記述していますので，``$=$"の位置における横方向位置合わせを行っています．}．
+（１つの数式を2行以上に亘って記述する場合は代わりに\texttt{split}環境でも良い．）
 \begin{equation}
 \begin{aligned}
 0+1+2&=3,\\
