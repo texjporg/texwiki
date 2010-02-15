@@ -20,7 +20,7 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
     [SourceForge.net: Ghostscript](http://sourceforge.net/projects/ghostscript/)
 
 - [Ghostscript, Ghostview and GSview](http://pages.cs.wisc.edu/~ghost/) (wisc.edu)
-- [Ghostscript 8.63 + GSview 4.9 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
+- [Ghostscript 8.71 + GSview 4.9 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
     [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/)（堀田さん@愛知教育大・数学）
 
 - [gs-cjk プロジェクト](http://www.gyve.org/gs-cjk/)
