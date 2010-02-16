@@ -20,6 +20,14 @@ pukiwiki: "表記の哲学"
     - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s）。
     - 数学的な定数と既定な関数（立体のまま）の例は，$\sin \uppi$。
 
+- 行列変数
+    - 大文字かつイタリック体（ISOに従うと）
+    - ボールド体とはしない流儀の例
+        - [http://physics.nist.gov/cuu/pdf/sp811.pd](http://physics.nist.gov/cuu/pdf/sp811.pd)
+    - さらにボールド体とする流儀の例
+        - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
+    - 日本でボールド体が普及していない原因は？
+
 - 行列転置操作の ${}^{t} A$ や $A^{T}$（イタリック体で良いかどうか？）
     - t/T は “<strong>t</strong>ranspose” の略．そもそも変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
         - 従って ${}^{\mathrm{t}} A$ や$A^{\mathrm{T}}$ のように立てて書く（べきという流儀がある）。
@@ -36,6 +44,11 @@ pukiwiki: "表記の哲学"
         - 1\\,\Pisymbol{psy}{"6D}m（pifont.sty パッケージを使用）
         - 1\\,{\usefont{U}{psy}{m}{n} \symbol{"6D}}m （多少見映えが良くない？）
         - いずれも\textmuを定義して使うと良さそう．例：\DeclareRobustCommand\*\textmu{\leavevmode{\usefont{U}{psy}{m}{n} \symbol{"6D}}}
+
+- 多数桁数値の3桁毎区切り
+    - 見易くするために「\\,」を挿入し3桁毎区切りが許される．(ISO)
+    - 英語流では，299,792,458 （数式モード内では $299{,}792{,}458$）
+        - 参考情報wikipedia: [http://ja.wikipedia.org/wiki/小数点](<http://ja.wikipedia.org/wiki/小数点>)
 
 - BibTeX データの人名で，“Jr” か “Jr.” か？
     - どちらも間違いではない。
