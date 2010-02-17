@@ -12,13 +12,17 @@ pukiwiki: "AMS-LaTeX"
 [AMS-LaTeX](http://www.ams.org/tex/amslatex.html) は
 [アメリカ数学会](http://www.ams.org/)（American Mathematical Society）
 によって開発されたパッケージおよびクラスファイルです。
-AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した amsmath と
+AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した amsmath と，
 アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。
-角藤さんの W32TeX を初めとする多くの TeX システムには最初から含まれていますが，
-[http://www.ams.org/tex/amslatex.html](http://www.ams.org/tex/amslatex.html) や
-[CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
+
+- 角藤さんの W32TeX を初めとする多くの TeX システムには最初から含まれていますが，
+    [http://www.ams.org/tex/amslatex.html](http://www.ams.org/tex/amslatex.html) や
+    [CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
 
 ドキュメント等
+
+- User’s Guide for the amsmath Package  [amsldoc.pdf](https://mirror.ctan.org/macros/latex/required/amslatex/math/amsldoc.pdf)
+    （$TEXMF/doc/latex/amslatex/math/amsldoc.pdf）（amsmathの基本的マニュアル）
 
 - Short Math Guide for LaTeX (short-math-guide.pdf from [ftp@ams.org](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)[http@chiba-u.ac.jp](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf))
     - [「Short Math Guide for LaTeX」を読んで](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf)（青山耕治さん）
