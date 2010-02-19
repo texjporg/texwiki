@@ -22,9 +22,9 @@ pukiwiki: "表記の哲学"
 
 - 行列変数
     - 大文字かつイタリック体（ISOに従うと）
-    - ボールド体とはしない流儀の例
+    - ＋ボールド体とはしない流儀の例
         - [http://physics.nist.gov/cuu/pdf/sp811.pd](http://physics.nist.gov/cuu/pdf/sp811.pd)
-    - さらにボールド体とする流儀の例
+    - ＋ボールド体とする流儀の例（これは古い？）
         - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
     - 日本でボールド体が普及していない原因は？
 
@@ -81,7 +81,7 @@ bold もしくは gothic体？ （もしくはbold gothic体？）
     - 日本語テキスト中では「○○○〜○○○」で問題ない（en-dash でつなぐのは英語式）．逆に，欧米人は，〜をみると $\sim$ の意味 (大体，オーダーは等しく) にしか取らない．
 
 - ～ と 〜 は字形が違う．前者が正しいと思うが，どうか？？
-    - 前者は危険(?)なMicrosoft文字のはず？
+    - 前者は危険(?)なMicrosoftコード文字(cp932)のはず？
 
 #### 章名・節名 {#cdd3210f}
 
