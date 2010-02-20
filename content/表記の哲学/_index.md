@@ -30,7 +30,7 @@ pukiwiki: "表記の哲学"
 - 行列変数
     - 大文字かつイタリック体（ISOに従うと）
     - ＋ボールド体とはしない流儀の例
-        - [http://physics.nist.gov/cuu/pdf/sp811.pd](http://physics.nist.gov/cuu/pdf/sp811.pd)
+        - [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
     - ＋ボールド体とする流儀の例（これは古い？）
         - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
     - 日本でボールド体が普及していない原因は？
