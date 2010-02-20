@@ -19,6 +19,13 @@ pukiwiki: "表記の哲学"
     - 例として $f\_{i} (x)$ の $f$、$i$ や $x$ がイタリック体。
     - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s）。
     - 数学的な定数と既定な関数（立体のまま）の例は，$\sin \uppi$。
+    - 変数もしくはquantitiesのシンボルはイタリック体とするので(ISO)，下付添え字にも適用．
+        - The NIST Guide for the Use of the International System of Units (SI) ([http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf) ) 内の例：
+        - L_P   (level of a power quantity)
+        - \kappa_T  (isothermal compressibility)
+        - C_p  (specific heat at constant pressure)
+        - \sigma\_\varOmega  (standard error of solid angle)
+        - \omega_z  (angular velocity around z-axis)
 
 - 行列変数
     - 大文字かつイタリック体（ISOに従うと）
