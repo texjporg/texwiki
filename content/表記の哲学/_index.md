@@ -33,7 +33,7 @@ pukiwiki: "表記の哲学"
         - [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
     - ＋ボールド体とする流儀の例（これは古い？）
         - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
-    - 日本でボールド体が普及していない原因は？
+            <!-- - - 日本でボールド体が普及していない原因は？ -->
 
 - 行列転置操作の ${}^{t} A$ や $A^{T}$（イタリック体で良いかどうか？）
     - t/T は “<strong>t</strong>ranspose” の略．そもそも変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
