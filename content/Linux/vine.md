@@ -7,9 +7,9 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
-## Vine Linux 5.0 {#vac9e97f}
+## Vine Linux 5.1 {#vac9e97f}
 
-[Vine Linux 5.0](http://vinelinux.org/whatsnew.html#20090824) がリリースされました。
+[Vine Linux 5.1 (Cheval Blanc)](http://vinelinux.org/whatsnew.html#20100226) がリリースされました。
 
 オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。
 
