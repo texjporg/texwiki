@@ -7,9 +7,9 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
-## Vine Linux 5.1 {#vac9e97f}
+## Vine Linux 5 {#vac9e97f}
 
-[Vine Linux 5.1 (Cheval Blanc)](http://vinelinux.org/whatsnew.html#20100226) がリリースされました。
+[Vine Linux 5.2 (Palmer)](http://vinelinux.org/news/20101130.html) がリリースされました。
 
 オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。
 
@@ -24,6 +24,14 @@ pukiwiki: "Linux/vine"
 - [Emacs 利用ガイド - Vine Linux](http://vinelinux.org/manuals/emacs-guide.html)
 
 現在，やてふ（YaTeX）をデフォルトとして、AUCTeX も対応しています。
+
+### TeXworks のインストール {#se74e564}
+
+Vine Linux 5 で TeXworks が使えるようになりました。
+
+```
+$ sudo apt-get install texworks
+```
 
 ### Adobe Reader のインストール {#d5b65e06}
 
