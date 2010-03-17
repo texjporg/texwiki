@@ -75,6 +75,21 @@ Adobe Illustrator CS (11.0.0) で作られたファイルで確認。
 
 Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
 
+### 各バージョン {#u178a7b2}
+
+- Illustrator v.10   2001年  (MacOSX では PowerPCバイナリ)
+- Illustrator CS   (v.11)   2003年  (OpenTypeにほぼ対応)
+- Illustrator CS2 (v.12)   2005年
+- Illustrator CS3 (v.13)   2007年
+- Illustrator CS4 (v.14)   2008年
+- Illustrator CS5 (v.15)   計画中  (64ビット化，MacOSX では Cocoa 化の可能性）
+
+情報等
+
+- [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
+- [Illustrator CS4までの実用的な新機能講座](http://www.incunabula.co.jp/book/Illustcs4_newfun/)
+- [Illustrator CS4の主要な新機能](http://www.dtp-transit.jp/adobe/illustrator/post_656.html)
+
 ### その他 {#a59267c4}
 
 - 【参考情報】
