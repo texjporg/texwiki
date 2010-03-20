@@ -12,6 +12,8 @@ pukiwiki: "Illustrator"
 [Adobe Illustrator](http://www.adobe.com/jp/products/illustrator/) 関連の
 話題を書き込んでください。
 
+<strong>目次</strong>
+
 ### Illustrator の図を TeX に {#sa00c636}
 
 Illustrator で EPS 保存したものを LaTeX に挿入する例：
