@@ -27,11 +27,8 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 - [POSTSCRIPT &amp; GHOSTSCRIPT Resources](http://www.geocities.com/SiliconValley/5682/postscript.html)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
-- [GNU Ghostscript 7.05 のインストール方法](http://www.klavis.info/gnugs.html) /
-    [Ghostscript と GSview のインストール](http://www.klavis.info/gsinst.html)（大友さん）
-
 - [Piece de l'Ensemble](http://pop-club.hp.infoseek.co.jp/)（安宅さん &amp;
-    荒川さん）Ghostscript 7.06 や dvipdfmx のインストール情報，AUC TeX，X-Symbol 等々
+    荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUC TeX，X-Symbol 等々
 
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html)（旧 JAIST コンテンツのミラー）
 - [Gutenprint / Gimp-Print](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
@@ -50,7 +47,7 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
     2000/XP において，Excel のグラフなどを EPS 化する仮想 EPS プリンタの作り方）
 
 - [WMF2EPS](http://www.wmf2eps.de.vu/)（シェアウェア。Windows の PS プリンタドライバで簡単に EPS を作るツール。プレビューも付けられる）
-- [Dia](http://www.gnome.org/projects/dia/) の[日本語化](http://dengaku.org/yasu/dia/)
+- [Dia](http://live.gnome.org/Dia) の[日本語化](http://yasundial.org/old/dia/)
 
 ### PDF 作成 {#w9442957}
 
