@@ -11,22 +11,27 @@ pukiwiki: "OTF"
 
 ## OTF パッケージ {#l22413ec}
 
-[齋藤修三郎さん](http://psitau.at.infoseek.co.jp/)の
-[Open Type Font 用 VF](http://psitau.at.infoseek.co.jp/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（開発版を利用した場合。安定版を利用した場合は Adobe-Japan1-5 相当のフォントあたり最大20,317文字。）の
-和文 OpenType フォントを使うためのパッケージです。以前の
-[UTF パッケージ](http://psitau.at.infoseek.co.jp/utf.html)は明朝体と
-ゴシック体だけでしたが，OTF パッケージは5書体以上を扱うことができます。
-また，和文フォントのメトリックが改訂されました。
-従来のものは min10.tfm のしがらみを引きずった長方形でしたが，OTF では
-正方形（高さ : 深さ = 88 : 12）に直されました。
+### OTF パッケージとは {#h230c839}
 
-なお，OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
-（CID 番号に完全対応している DVIware
-で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
-使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
+[齋藤修三郎さん](http://psitau.at.infoseek.co.jp/)の
+[Open Type Font 用 VF](http://psitau.at.infoseek.co.jp/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（開発版を利用した場合）の
+和文 OpenType フォントを使うためのパッケージです。
 
 ここでは OTF パッケージを Microsoft Windows，UNIX （Mac OS X，Solaris
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。 <!-- Mac OS については↓ --> <!-- http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
+
+- 安定版を利用した場合は Adobe-Japan1-5 相当のフォントあたり最大20,317文字となります。
+- 以前の[UTF パッケージ](http://psitau.at.infoseek.co.jp/utf.html)は明朝体と
+    ゴシック体だけでしたが，OTF パッケージは5書体以上を扱うことができます。
+
+- また，和文フォントのメトリックが改訂されました。
+    従来のものは min10.tfm のしがらみを引きずった長方形でしたが，OTF では
+    正方形（高さ : 深さ = 88 : 12）に直されました。
+
+- なお，OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
+    （CID 番号に完全対応している DVIware
+    で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
+    使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
 
 ### Microsoft Windows でのインストール {#t967d888}
 
