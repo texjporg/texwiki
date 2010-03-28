@@ -184,7 +184,7 @@ otf-cjgr-v  Identity-V      GothicBBB-Medium
 これで hoge.pdf が Adobe Reader/Acrobat で開き，
 ちゃんと表示されたと思います。
 
-Adobe Reader/Acrobat 9.3.1 [^1]をお使いの方が多くなりましたので，最新の
+Adobe Reader/Acrobat 9.3.2 [^1]をお使いの方が多くなりましたので，最新の
 Adobe-Japan1-6 の文字を表示させて見ましょう。OTF パッケージは
 開発版を使用します。
 
@@ -256,7 +256,7 @@ Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
 #### Microsoft Windows NT 6.x系 (Vista・7) の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat 9.3.0 の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成し，$TEXMF/fonts/map/dvipdfm/base/cid-x.map に次のように書きます（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat 9.3.2 の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成し，$TEXMF/fonts/map/dvipdfm/base/cid-x.map に次のように書きます（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
 ```
 rml         H               KozMinPr6N-Regular.otf
@@ -521,7 +521,7 @@ hmgothr-v   "@A-OTF 見出ゴMB31 Pr6N MB31"
 ***
 
 ただし dviout for Windows は Windows API で文字を描いているので，Unicode の
-使える Microsoft Windows 7, Vista, XP, 2000 などでしか使えないと思います。
+使える Microsoft Windows 7, Vista, XP x64 Edition, XP, 2000 などでしか使えないと思います。
 また CID 番号を直接指定しても，Unicode に
 変換できるもの以外は “The OS returns the error code 0” という警告を出して
 化けてしまいます ([qa:17849](https://okumuralab.org/~okumura/texfaq/qa/17849.html))。
@@ -2595,4 +2595,4 @@ Adobe-GB1，Adobe-CNS1，Adobe-Korea1 の CID 番号に対応していません�
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-[^1]: 9.2.0以降は「Windows 7」に対応済みですが，これまでの過去のVer. には脆弱性がありますので，9.3.1の利用を推奨いたします。
+[^1]: 9.2.0以降は「Windows 7」に対応済みですが，これまでの過去のVer. には脆弱性がありますので，9.3.2の利用を推奨いたします。
