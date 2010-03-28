@@ -35,23 +35,23 @@ pukiwiki: "OTF"
 
 ### Microsoft Windows でのインストール {#t967d888}
 
-[角藤さん](http://www.fsci.fuk.kindai.ac.jp/kakuto/)の
+角藤さんの
 [W32TeX](http://w32tex.org/index-ja.html) に
-含まれている[otfdevel.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfdevel.tar.bz2)をダウンロードし、otfdevel.tar.bz2 を otf.tar.bz2 にリネームします（安定版なら[otf.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otf.tar.bz2)
+含まれている[otfdevel.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfdevel.tar.bz2)をダウンロードします（安定版なら[otf.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otf.tar.bz2)
 をダウンロードします）。これを例えば C:\temp\ に入れます。
 コマンド プロンプト（MS-DOS プロンプト）で次のように打ち込みます。
 
 ```
 >CD \usr\local
->tar xvjf C:/temp/otf.tar.bz2
+>tar xvjf C:/temp/otfdevel.tar.bz2
 ```
 
-角藤さんの簡易インストーラー (texinst2009.zip) は <!-- 2009/10/18 Web2C-2009 ベースが最新 -->
+角藤さんの簡易インストーラー (texinst2010.zip) は <!-- 2009/10/18 Web2C-2009 ベースが最新 -->
 OTF パッケージの展開にも対応していますので，次のようにしても良いでしょう。
 
 ```
 >CD \usr\local
->texinst2009 C:/temp
+>texinst2010 C:/temp
 ```
 
 dvipdfm(x) 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfm// です。
