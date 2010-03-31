@@ -57,6 +57,7 @@ pukiwiki: "BibTeX関連ツール"
 | [BibFile Editor](http://www.h7.dion.ne.jp/~yochian/macro.htm) | Windows95 | 簡易エディタ。 |
 | [bibclean](http://www.math.utah.edu/pub/bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム。日本語可。 |
 | [Ebib](http://ebib.sourceforge.net/) | emacs | emacs用のBibTeXデータベースマネージャ。ver.0.25からxemacsにも対応。複数のbibファイルを同時に操作できる。 |
+| [KBibTeX](http://www.unix-ag.uni-kl.de/~fischer/kbibtex/) | KDE | KDE 用の BibTeX エディタ。 |
 
 emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、.emacsファイルに、
 
