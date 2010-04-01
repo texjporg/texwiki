@@ -23,12 +23,12 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 - [Ghostscript 8.71 + GSview 4.9 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
     [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/)（堀田さん@愛知教育大・数学）
 
-- [gs-cjk プロジェクト](http://www.gyve.org/gs-cjk/)
-- [POSTSCRIPT &amp; GHOSTSCRIPT Resources](http://www.geocities.com/SiliconValley/5682/postscript.html)
+- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
+- [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
 - [Piece de l'Ensemble](http://pop-club.hp.infoseek.co.jp/)（安宅さん &amp;
-    荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUC TeX，X-Symbol 等々
+    荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUCTeX，X-Symbol 等々
 
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html)（旧 JAIST コンテンツのミラー）
 - [Gutenprint / Gimp-Print](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
