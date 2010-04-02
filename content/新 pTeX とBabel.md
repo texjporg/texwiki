@@ -74,7 +74,7 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) では
+[W32TeX](http://w32tex.org/index-ja.html) では
 [TeX Live](http://www.tug.org/texlive/) 所収の
 ハイフネーションファイル（43種類）が同梱されています。8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
