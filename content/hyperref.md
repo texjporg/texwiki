@@ -7,6 +7,8 @@ pukiwiki: "hyperref"
 
 # hyperref
 
+目次
+
 ## hyperref {#s8bca501}
 
 hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じハイパーリンク 機能を加えるためのマクロです。
@@ -602,6 +604,16 @@ de.comp.text.tex (2005/08/11, slightly modified):
   \usepackage{vietnam}
   \usepackage{hyperref}
 ```
+
+### 他のパッケージとの重複関係 {#ca4547b3}
+
+#### urlパッケージ {#u1bf19c1}
+
+hyperrefパッケージと同じ(?) \urlコマンドを提供する．
+
+#### beamerクラス {#z7cec6eb}
+
+hyperrefパッケージをデフォルトで読み込む．
 
 ***
 
