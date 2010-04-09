@@ -754,9 +754,8 @@ jun101-l-v    V kozgostd-light.otf
 
 ### xdvi {#a7bdcae8}
 
-> Mac OS X では内山さんの [CocoaなpTeX用プレビュアMxdvi](http://macptex.appi.keio.ac.jp/~uchiyama/macosx/mxdvi.html) のほうが簡単です。
-> Mac OS X + X11 で xdvi をインストールする方法は内山さんの
-> [Mac OS XにTeXをインストールしよう](http://macptex.appi.keio.ac.jp/~uchiyama/macosx/)
+> Mac OS X では小磯さんの [PictPrinter](http://www.math.sci.osaka-u.ac.jp/~koiso/JTeX.html) のほうがおすすめです。
+> Mac OS X + X11 で xdvi をインストールする方法は [TeXのインストール - PukiWiki](http://www.imlab.sie.dendai.ac.jp/~odate/pukiwiki/index.php?TeX%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
 > に詳しく載っています。
 > あるいは統合環境の [TeXShop](/TeXShop/)
 > を使えばエディタやプレビューアを別途用意する必要もなくなります。
