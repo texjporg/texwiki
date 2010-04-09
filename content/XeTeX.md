@@ -672,6 +672,7 @@ Hello, \TeX !
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+- [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 
 ### コメント {#d0504266}
 
