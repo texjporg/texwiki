@@ -145,7 +145,9 @@ hyperref.styを読み込むことによって下記のコマンドが使用可�
 url及びnolinkurl とは hyperref.styを読み込むことによって使用可能なコマンドの一つ
 
 - url文字列を指定フォントへ変更する
+- tildeを上手に処理してくれる
 - 改行処理が必要な場合にurl文字列を上手に途中で分割する
+- hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定dvips/dvipdfm/pdftex等に依存するおそれがある）
 
 #### pdfファイル作成 {#ib05c931}
 
