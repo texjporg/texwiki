@@ -54,7 +54,7 @@ openin_any = p
 parse_first_line = f
 ```
 
-Vine Linux 3.1 の teTeX では openin_any = a となっているので注意が必要です。
+さらに，shell_escape_commands = ... の形で例外的に呼び出せるコマンドを列挙している場合がありますので，これも精査あるいは削除します。
 
 #### テスト1 {#p4f76648}
 
@@ -80,6 +80,8 @@ Vine Linux 3.1 の teTeX では openin_any = a となっているので注意が
 \write18{touch hoge}
 \end{document}
 ```
+
+参考リンク：[Are Text-Only Data Formats Safe?](http://cseweb.ucsd.edu/~hovav/papers/csr10.html)
 
 ### スクリプトの準備 {#bf97e60c}
 
