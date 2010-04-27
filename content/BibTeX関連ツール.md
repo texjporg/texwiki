@@ -15,9 +15,9 @@ pukiwiki: "BibTeX関連ツール"
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-|  [BibTexMng](http://www.latexsoft.com/bibtexmng.htm)  | Windows 2000/XP 以降 | シェアウェア。BibTeX 編集ソフト 最新版:0.6 (2009/05/10)  |
-|  [JavaBib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
 |  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://csb.stanford.edu/nbatada/JBibtexManager/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
+|  [JavaBib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
+|  [BibTexMng](http://www.latexsoft.com/bibtexmng.htm)  | Windows 2000/XP 以降 | シェアウェア。BibTeX 編集ソフト 最新版:0.6 (2009/05/10)  |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | Mac OS X 10.5 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 | [やまこ２号](http://homepage.mac.com/tukanobu/sonota/yamako2.html) |  MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4 |  文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる |
 |  [bibdb](http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame)  | DOS/Windows  | 日本語が扱えない |
@@ -43,7 +43,7 @@ pukiwiki: "BibTeX関連ツール"
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 | bibtex.el  |  emacs  |  文献の効率的入力を支援 |
-| [reftex.el](http://remote.science.uva.nl/~dominik/Tools/reftex/)  |  emacs  |  LaTeX文書とbibファイルの連携機能を提供 |
+| [reftex.el](http://www.gnu.org/software/auctex/reftex.html)  |  emacs  |  LaTeX文書とbibファイルの連携機能を提供 |
 |  bibfind  | perl | bibファイルの中を検索  |
 |  bibindex  | UNIX | bibファイルをbixファイルに変換。bixファイルの中を検索  |
 |  bible  | windows | bibファイル作成  |
