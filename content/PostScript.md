@@ -47,6 +47,24 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 - [仮想 EPS プリンタの作成方法](http://keijisaito.info/arc/TeX/v_eps_printer.htm)（Windows
     2000/XP において，Excel のグラフなどを EPS 化する仮想 EPS プリンタの作り方）
 
+- [EpsWriter](http://torasenriwohashiru.seesaa.net/) (Tanaka さん)
+    (PowerPoint の表示中のスライドを EPS ファイルに出力するアドイン)
+
+- [Metafile to EPS Converter](http://wiki.lyx.org/Windows/MetafileToEPSConverter)
+    (EMF/WMF → EPS)
+
+- [emf2eps](http://www29.atwiki.jp/t-sadakata/)
+    (貞方 毅 (Tsuyoshi Sadakata) さん)
+    (EMF → EPS)
+
+- [EMF2EPS](http://www.vector.co.jp/soft/win95/art/se170946.html)
+    (大上 茂雄 さん)
+    (EMF → EPS)
+
+- [EMFtoEPS](http://www.projectory.de/emftoeps/)
+    (Dirk Struve)
+    (EMF → EPS)
+
 - [WMF2EPS](http://www.wmf2eps.de.vu/)（シェアウェア。Windows の PS プリンタドライバで簡単に EPS を作るツール。プレビューも付けられる）
 - [Dia](http://live.gnome.org/Dia) の[日本語化](http://yasundial.org/old/dia/)
 
