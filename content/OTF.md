@@ -37,13 +37,13 @@ pukiwiki: "OTF"
 
 角藤さんの
 [W32TeX](http://w32tex.org/index-ja.html) に
-含まれている[otfdevel.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfdevel.tar.bz2)をダウンロードします（安定版なら[otf.tar.bz2](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otf.tar.bz2)
+含まれている[otfbeta.tar.bz2](http://w32tex.org/current/otfbeta.tar.bz2) もしくは [otfdevel.tar.bz2](http://w32tex.org/current/otfdevel.tar.bz2) をダウンロードします（安定版なら [otf.tar.bz2](http://w32tex.org/current/otf.tar.bz2)
 をダウンロードします）。これを例えば C:\temp\ に入れます。
 コマンド プロンプト（MS-DOS プロンプト）で次のように打ち込みます。
 
 ```
 >CD \usr\local
->tar xvjf C:/temp/otfdevel.tar.bz2
+>tar xvjf C:/temp/otfbeta.tar.bz2
 ```
 
 角藤さんの簡易インストーラー (texinst2010.zip) は <!-- 2009/10/18 Web2C-2009 ベースが最新 -->
