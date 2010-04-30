@@ -66,7 +66,7 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
     (EMF → EPS)
 
 - [WMF2EPS](http://www.wmf2eps.de.vu/)（シェアウェア。Windows の PS プリンタドライバで簡単に EPS を作るツール。プレビューも付けられる）
-- [Dia](http://live.gnome.org/Dia) の[日本語化](http://yasundial.org/old/dia/)
+- [Dia](http://live.gnome.org/Dia) ([Dia for Windows/Linux/Mac OS X](http://dia-installer.de/download.html))
 
 ### PDF 作成 {#w9442957}
 
