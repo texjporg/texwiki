@@ -7,7 +7,7 @@ pukiwiki: "BibTeX関連ツール"
 
 # BibTeX関連ツール
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'BibTeX関連ツールの目次\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
+<strong>BibTeX関連ツールの目次</strong>
 
 <!-- - --  -->
 
@@ -63,10 +63,10 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 
 ```
 (setq bibtex-user-optional-fields
- \\\\\\\\\\\\\\\'((\\\\\\\\\\\\\\\"annote\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Personal annotation (ignored)\\\\\\\\\\\\\\\")
- (\\\\\\\\\\\\\\\"yomi\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Yomigana\\\\\\\\\\\\\\\")
- (\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"where it is (ignored)\\\\\\\\\\\\\\\")
- (\\\\\\\\\\\\\\\"memo\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"Memorundum (ignored)\\\\\\\\\\\\\\\")
+ '(("annote" "Personal annotation (ignored)")
+ ("yomi" "Yomigana")
+ ("location" "where it is (ignored)")
+ ("memo" "Memorundum (ignored)")
 ))
 ```
 
