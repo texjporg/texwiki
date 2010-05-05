@@ -103,7 +103,7 @@ tex="latex";
 texpath="c:/w32tex/bin";
 texcommand="platex";
 texdvicommand="platex";
-dvips="dvipsk";
+dvips="dvips";
 dvipsOptions="-Ppdf";
 psviewer="c:/ghostgum/gsview/gsview32.exe";
 ```
