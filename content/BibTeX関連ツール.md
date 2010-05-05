@@ -23,7 +23,7 @@ pukiwiki: "BibTeX関連ツール"
 |  [KBib](http://users.tpg.com.au/thachly/kbib/) |  KDE  | KDE 用の BibTeX エディタ。 |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ。 |
 | [Pybliographer](http://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り |
-| [Javascript BibTeX Editorb:http](http://sourceforge.net/projects/jsbibeditor/) | JavaScript | JavaScript で書かれた BibTeX エディタ |
+| [Javascript BibTeX Editor](http://sourceforge.net/projects/jsbibeditor/) | JavaScript | JavaScript で書かれた BibTeX エディタ |
 | [BibCompanion](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/BibCompanion/) | Mac OS X 10.4 以降 | BibTeXの参考文献データベースを編集するためのプログラム。HyperBibDBの後継。 |
 | [HyperBibDB](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/HyperBibDB/help.html) | CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X | BibTeXの参考文献データベースを編集するためのプログラム |
 | [やまこ２号](http://homepage.mac.com/tukanobu/sonota/yamako2.html) |  MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4 |  文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる |
