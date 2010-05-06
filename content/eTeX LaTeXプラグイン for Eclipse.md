@@ -14,7 +14,7 @@ pukiwiki: "eTeX LaTeXプラグイン for Eclipse"
 
 ### 使用方法 {#q8077511}
 
-[eTex LaTeXプラグイン for Eclipse](http://etex.sourceforge.net/)
+[ecleTeX](http://sourceforge.net/projects/etex/files/)
 でプラグインをダウンロード
 
 インストール方法詳細はこちら
@@ -26,7 +26,7 @@ pukiwiki: "eTeX LaTeXプラグイン for Eclipse"
 Eclipseのインストールは完了。
 
 Eclipseインストール後、
-[eTex LaTeXプラグイン for Eclipse](http://etex.sourceforge.net/)
+[ecleTeX](http://sourceforge.net/projects/etex/files/)
 をダウンロードし、それを
 [Eclipse](http://www.eclipse.org/)ディレクトリの中にあるpluginsディレクトリにコピーする。
 
@@ -38,8 +38,8 @@ Eclipseインストール後、
 
 ## 参考サイト {#xdebb40e}
 
-- [LaTeX plug-in for Eclipse](http://etex.sourceforge.net/) - Eclispe wiki
-- [■【LaTeX】eTeX 【EclipseでLaTeXを使う！】■@ソフトウェア in 2ちゃんねる](http://pc5.2ch.net/test/read.cgi/software/1082131007/)
+- [LaTeX plug-in for Eclipse](http://www.eclipsewiki.net/eclipse/?TeX) - Eclispe wiki
+- [■【LaTeX】eTeX 【EclipseでLaTeXを使う！】■@ソフトウェア in 2ちゃんねる\[Internet Archive\]](http://web.archive.org/web/20050429085211/http://pc5.2ch.net/test/read.cgi/software/1082131007/)
 - [Eclipse](http://www.eclipse.org/) - オープンソースIDE Eclipse
 
 ## コメント {#wd0520c9}
