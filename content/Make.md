@@ -451,8 +451,7 @@ gv hello.ps       # プレビューのテスト
 lpr hello.ps      # 印刷のテスト
 ```
 
-角藤さん配布の Win32 バイナリ（dvipsk
-が日本語版）と違って，上のようにして作った日本語対応バイナリ名は dvips です。
+角藤さん配布の Win32 バイナリ ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html)) と同じく，上のようにして作った日本語対応バイナリ名は dvips です。
 
 他のフォントの場合も同様です。
 たとえば [TIPA](/TIPA/) と [cm-super](/cm-super/)
