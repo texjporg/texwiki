@@ -46,7 +46,7 @@ $ fixill.pl <old.eps >new.eps
 ```
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
-Microsoft Windows なら Cygwin を使うか，あるいは [ActiveState](http://www.activestate.com/)
+Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使うか，あるいは [ActiveState](http://www.activestate.com/)
 から ActivePerl をダウンロードしてインストールすればいいであろう。
 角藤さんの “dvipsk-w32.tar.gz” には “fixill.pl” と “fixill.exe” が含まれる。
 
@@ -96,5 +96,4 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 - 【参考情報】
 
-[Thortex Typography:Illustratorの図をTeXに](http://mytexpert.sourceforge.jp/index.php?cmd=read&page=%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB&word=illustrator)
-　（[Th&oacute;rTeXTypography:Illustratorの図をTeXに](http://tex.dante.jp/typo/?Illustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB) こちらはリンク切れ？）
+[チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
