@@ -263,7 +263,7 @@ $ eps2eps testeq.eps testeq2.eps
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です
-（Windows なら dvips の代わりに dvipsk を使います）。
+(Windows でも dvips を使います ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html)))。
 できた testeq2.eps の &#x25;&#x25;BoundingBox: 行がなぜか変なので，
 元の testeq.eps の &#x25;&#x25;BoundingBox: 行と置き換えます。
 これで testeq2.eps はフォントを含まないアウトラインだけの
