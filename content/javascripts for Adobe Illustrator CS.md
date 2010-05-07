@@ -13,8 +13,8 @@ pukiwiki: "javascripts for Adobe Illustrator CS"
 
 [TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．
 フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．
-Illustrator CS のほかに，LaTeX とdvips, Ghostscript が必要です．
-和文も処理したい場合は，(--kanji=utf8 オプションが指定可能な)pLaTeX とdvipsk, GNU Ghostscript 7.07 が
+Illustrator CS のほかに，LaTeX と dvips, Ghostscript が必要です．
+和文も処理したい場合は，(--kanji=utf8 オプションが指定可能な)pLaTeX とdvips, GNU Ghostscript 7.07 が
 使える環境を用意してください．以下の内容はすべて和文も処理することを前提にしたものです．
 欧文のみの場合は，Ghostscript の別バージョンでも問題ないはずです．
 
@@ -76,7 +76,7 @@ eq.tex -> eq.dvi -> eq.eps -> outline.eps という処理を行うバッチフ�
 ```
 cd /d C:\AI\
 platex --kanji=utf8 eq
-dvipsk -Pdl -E eq -o eq.eps
+dvips -Pdl -E eq -o eq.eps
 gswin32c -q -sDEVICE=epswrite -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
 ```
 
