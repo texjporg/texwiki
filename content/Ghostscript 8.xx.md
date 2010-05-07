@@ -712,7 +712,7 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，udvips を通して）
+[OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，dvips を通して）
 変換した PostScript ファイルを（ps2pdf を使うなどして）
 Ghostscript 8.?? で PDF に変換する場合には，gs\gs8.??\Resource\Font\ に
 
@@ -791,7 +791,7 @@ composefont pop
 > - STSong-Light-Identity-H
 > - STSong-Light-Identity-V
 
-[TeXWiki:OTF #udvips 用の map ファイル](/OTF/#map-udvips) も参照。
+[TeXWiki:OTF #dvips 用の map ファイル](/OTF/#k1eb9f9c) も参照。
 
 ### gs\gs8.??\lib\cidfmap の記述例 {#m115a63f}
 
