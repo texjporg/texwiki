@@ -30,7 +30,7 @@ Ghostscript 8-系共通項目です。いくつかのマイナーバージョン
 ### ダウンロード {#g31ae747}
 
 [CTAN:support/ghostscript/GPL/](https://mirror.ctan.org/support/ghostscript/GPL/)gs8??/
-などから ghostscript-8.??-gpl.tar.bz2 と ghostscript-fonts-std-8.11.tar.gz を入手します。
+などから ghostscript-8.??.tar.bz2 と ghostscript-fonts-std-8.11.tar.gz を入手します。
 
 ### インストール {#u4ad1919}
 
@@ -38,8 +38,8 @@ Ghostscript 8-系共通項目です。いくつかのマイナーバージョン
 
 ```
 $ cd /usr/local/src
-$ sudo tar xvjf .../ghostscript-8.??-gpl.tar.bz2
-$ cd ghostscript-8.??-gpl
+$ sudo tar xvjf .../ghostscript-8.??.tar.bz2
+$ cd ghostscript-8.??
 $ sudo ./configure --prefix=/usr/local/teTeX
 $ make
 $ sudo make install
@@ -253,7 +253,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/HYGungSo-Bold                /MunhwaGungSeoHeulim-Light      ;
 
 %%% Wadalab Maru Gothic (JIS X 0213)
-%%% See http://members11.tsukaeru.net/rare/font/
+%%% See http://sourceforge.jp/projects/jis2004/wiki/FrontPage
 /WadaLabMaruGo20044           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20044.ttf) >> ;
 /WadaLabMaruGo20004           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20004.ttf) >> ;
 
@@ -273,8 +273,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /GBZenKai-Medium              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (/usr/share/fonts/truetype/arphic/gkai00mp.ttf) >> ;
 
 %%% CJK-Unifonts
-%%% See http://www.cjkunifonts.info/
-%%%     http://www.freedesktop.org/wiki/Software_2fCJKUnifonts
+%%% See http://www.freedesktop.org/wiki/Software/CJKUnifonts
 /ShanHeiSun-Uni               << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/truetype/arphic/uming.ttf) >> ;
 /ShanHeiSun-Uni-Adobe-GB1     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (/usr/share/fonts/truetype/arphic/uming.ttf) >> ;
 /ZenKai-Uni                   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/truetype/arphic/ukai.ttf)  >> ;
@@ -482,8 +481,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /GBZenKai-Medium              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/arphic/gkai00mp.ttf) >> ;
 
 %%% CJK-Unifonts
-%%% See http://www.cjkunifonts.info/
-%%%     http://www.freedesktop.org/wiki/Software_2fCJKUnifonts
+%%% See http://www.freedesktop.org/wiki/Software/CJKUnifonts
 /ShanHeiSun-Uni               << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/ttf-arphic-uming/uming.ttf) >> ;
 /ShanHeiSun-Uni-Adobe-GB1     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/ttf-arphic-uming/uming.ttf) >> ;
 /ZenKai-Uni                   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/ttf-arphic-ukai/ukai.ttf)   >> ;
@@ -558,17 +556,17 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ### 配布先 {#gc8a2a19}
 
-[Ring Server](http://www.dnsbalance.ring.gr.jp/)
+[W32TeX](http://w32tex.org/index-ja.html)
 からインストールプログラムを入手します。
 
 - Ghostscript のインストーラ
 
-- [GPL Ghostscript 8.??](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs8??w32full-gpl.zip (?? は望みのバージョン) をダウンロード
+- [GPL Ghostscript 8.??](http://w32tex.org/gs/) gs ディレクトリ内の gs8??w32full-gpl.zip (?? は望みのバージョン) をダウンロード
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
-    - [GSview 4.9 (32bit版)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w32.exe)
-    - [GSview 4.9 (64bit版)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/gsv49w64.exe)
+    - [GSview 4.9 (32bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv49w32.exe)
+    - [GSview 4.9 (64bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv49w64.exe)
         <!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
         <!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
         <!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
@@ -937,8 +935,7 @@ composefont pop
 /GBZenKai-Medium              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/arphic/gkai00mp.ttf) >> ;
 
 %%% CJK-Unifonts
-%%% See http://www.cjkunifonts.info/
-%%%     http://www.freedesktop.org/wiki/Software_2fCJKUnifonts
+%%% See http://www.freedesktop.org/wiki/Software/CJKUnifonts
 /ShanHeiSun-Uni               << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/ttf-arphic-uming/uming.ttf) >> ;
 /ShanHeiSun-Uni-Adobe-GB1     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/ttf-arphic-uming/uming.ttf) >> ;
 /ZenKai-Uni                   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/ttf-arphic-ukai/ukai.ttf)   >> ;
