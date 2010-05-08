@@ -40,7 +40,7 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 はまだ試していません。
 [小川弘和さん](http://www2.kumagaku.ac.jp/teacher/herogw/)
 のページ，
-[Mac OS X でレーザープリンターを使うスレ](http://pc.2ch.net/test/read.cgi/mac/1037063324/)
+[Mac OS X でレーザープリンターを使うスレ (過去ログ)](http://mimizun.com/log/2ch/mac/1037063324)
 が参考になるようです。
 
 ### ダウンロード {#k0bb1098}
