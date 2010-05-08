@@ -35,7 +35,7 @@ pukiwiki: "BibTeX関連ツール"
 |  [BibORB](http://biborb.glymn.net/doku.php)  |  Webサーバ, PHP (>=4.0.3), PHP XSLT, PHP Pear  |  Webベースの文献管理システム、Web上でbibファイルの編集・インポート・エキスポートができ、電子ジャーナルと連携できる。 |
 |  [JavaBib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
 |  [WibTeX](http://www.wibtex.de/) |  Windows  | Windows 用 BibTeX エディタ。 |
-|  [BibTexMng](https://mirror.ctan.org/help/Catalogue/entries/bibtexmng.html)  | Windows XP/Vista 以降 | シェアウェア。BibTeX 編集ソフト 最新版:6.0 (2009/05/10)  |
+|  [BibTexMng](http://www.latexsoft.com/bibtexmng.htm)  | Windows XP/Vista 以降 | シェアウェア。BibTeX 編集ソフト 最新版:6.0 (2009/05/10)  |
 |  [BibDB](http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame)  | DOS/Windows  | 日本語が扱えない |
 
 <br>
