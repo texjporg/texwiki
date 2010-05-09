@@ -1161,7 +1161,7 @@ open(ARGV[0],"r").each_line{|line|;if line =~ /%%BoundingBox/; print line; break
 ```
 IMGSRCS = fig.tex
 TEX    = platex
-DVIPS  = dvipsk
+DVIPS  = dvips
 PS2EPS = ps2epsi.bat
 PS2PDF = epstopdf -d --nogs
 BB     = ./bb
@@ -1194,7 +1194,7 @@ PSTricks で描く図だけを別ファイル foo.tex に保存して，
 
 ```
 $ (p)latex foo
-$ (p)dvips(k) -E foo
+$ (p)dvips -E foo
 $ epstool --copy --bbox foo.ps foo.eps
 ```
 
@@ -1209,6 +1209,12 @@ $ ebb foo.pdf
 セットになります．
 
 [Herbert Voss 2006-10-10 の文書](http://www.perce.de/LaTeX/misc/PST2PDF) でも epstopdf を使っているみたいです． <!-- 上に例で挙げた Chebyshev 多項式の零点の図のように、ソースにサイズを --> <!-- 書き込んでしまうのでは、解答になりませんか？ --> <!-- // pspicture 環境の (x,y)(X,Y) でですか? --> <!-- // その指定では，その枠内ぴったりに図を描くようにがんばらないといけませんよね？ --> <!-- // アルファベットの `O' 1 文字だけを描いた図でもそれをやろうとすると， --> <!-- // 文字の太さとかを考えないと，きちんと BoundingBox の中にぴったり収めることは --> <!-- // 神技に近いです．BoundingBox は，図を描くときに手で指定するのではなく， --> <!-- // できあがった図から事後処理で補正できる方が reasonable だと思います． -->
+
+### LaTeXDraw {#r4f44c9b}
+
+[LaTeXDraw](http://latexdraw.sourceforge.net/) は GNU GPL ライセンスのフリーの PSTricks コードジェネレータ もしくは PSTricks エディタです。
+
+[LaTeXDraw](http://latexdraw.sourceforge.net/) は Java で書かれており、さまざまな OS で動作します。
 
 ## コメント {#j6e07b43}
 
