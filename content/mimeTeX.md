@@ -11,8 +11,11 @@ pukiwiki: "mimeTeX"
 は LaTeX のサブセットで書かれた数式をインライングラフィック化するソフトです。
 
 PukiWiki から使うには
-[ \[io\] wiki](http://www.sato.kuis.kyoto-u.ac.jp/~key/pukiwiki/?PukiWiki%2Fkey%a4%ce%b3%c8%c4%a5%2Fmimetex)
-で公開されているプラグインを使います。例えば
+[自作プラグイン/mimetex.inc.php - PukiWiki-official](http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/mimetex.inc.php)
+で公開されているプラグインを使います。
+(mimetex.inc.php のオリジナルは [ \[io\] wiki \[Internet Archive\]](http://web.archive.org/web/20041014104405/130.54.22.201/~key/pukiwiki/?PukiWiki/key%A4%CE%B3%C8%C4%A5/mimetex) です。)
+
+例えば
 
 ```
  #mimetex(\sqrt{x^2+y^2}=z^2)
