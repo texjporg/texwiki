@@ -135,7 +135,7 @@ BibTeX形式の出力があるWebアプリが公開されている
 | [bunkenhtml](http://www.media.osaka-cu.ac.jp/~k-abe/bunkenhtml/) | perl | BibTeXのデータベースから業績リストをHTMLで作成するプログラム。[使用例1](http://narayama.aist-nara.ac.jp/~y-takata/research/)、[使用例2](http://www.forest.eis.ynu.ac.jp/~mori/ja/pub.html)  |
 | [bib2html](http://www.litech.org/~wkiri/bib2html/) | Unix | .bibファイルをHTMLに変換 |
 | [bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/) | UNIX/Windows | .bibファイルをHTMLに変換。abstract, url, ps, pdfなどを勝手にリンク付けしてくれる。[pubabstract.perl](http://www.reitter-it-media.de/software/pubabstract.perl)と組み合わせると、1文献1ファイルのHTMLも用意してくれる。日本語はOKだがjbibtexと日本語用bstファイルを使用する必要あり。[使用例1](http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5)。VinePlusに収録されいてるので、VineLinuxユーザはapt-getでインストール可能。。  |
-| [Bib2HTML](http://galland.stephane.free.fr/arakhne.org/bib2html/) | perl |  Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaffの[bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/)とほぼ同名であるため注意。 |
+| [Bib2ML (aka. Bib2HTML)](http://www.arakhne.org/bib2ml/) | perl |  Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム。Kiri Wagstaff の [bib2html](http://www.litech.org/~wkiri/bib2html/) とほぼ同名であるため注意。 |
 | [bib2xhtml](http://www.spinellis.gr/sw/textproc/bib2xhtml/) | perl | .bibファイルをXHTML1.0に変換 |
 | [Jab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm#jbib_export) | Java | JabRefからhtmlへエクスポート |
 
