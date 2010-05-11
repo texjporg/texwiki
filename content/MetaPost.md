@@ -12,26 +12,30 @@ pukiwiki: "MetaPost"
 ### はじめに {#q0dc30bf}
 
 「この文章は角藤さんの
-[MetaPost の紹介](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
+[MetaPost の紹介 (リンク切れ)](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
 という文章に触発されて書いたものです。角藤さんに感謝いたします。」
 
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
 MetaPostの日本語版については
-[松山さん](http://village.infoweb.ne.jp/~fwhw5892/jweb/jmpost.htm)
-→ [hideyukiさん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
+[松山道夫さん](http://www.matsuand.com/)
+→ [鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
 が開発されています。
 
 ### MetaPost とは {#e4617397}
 
-MetaPostはJohn Hobbyが作った[METAFONT](/METAFONT/)類似のソフトで，
-METAFONTがgf形式のフォントを出力するのに対して，
-MetaPostはPostScript（EPS）形式のファイルを出力します。
-1995年からAT&amp;Tライセンス不要のフリーソフトになりました。
-詳しくは作者Hobby自身による
+MetaPost は John Hobby が作った [METAFONT](/METAFONT/) 類似のソフトで，
+METAFONT が gf 形式のフォントを出力するのに対して，
+MetaPost は PostScript（EPS）形式のファイルを出力します。
+
+1995年から AT&amp;T ライセンス不要のフリーソフトになりました。
+
+詳しくは作者 Hobby 自身による
 [MetaPost](http://cm.bell-labs.com/who/hobby/MetaPost.html)
 ページをご覧ください。
-web2c配布にもMetaPostのマニュアルが入っています。
+web2c 配布にも MetaPost のマニュアルが入っています。
+
+[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語というのもあります。
 
 ### MetaPostプログラミング入門 {#p3fbc416}
 
