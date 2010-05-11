@@ -16,6 +16,7 @@ pukiwiki: "BibTeX関連ツール"
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 |  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://jbibtexmanager.sourceforge.net/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
+| [BibTeX Online Editor](http://truben.no/latex/bibtex/) |  Web ブラウザ  | オンラインの BibTeX エディタ |
 | [Ref for Windows](http://members3.jcom.home.ne.jp/refwin/) |  Windows | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXへのサポート](http://members3.jcom.home.ne.jp/refwin/html/latex.htm) |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | Mac OS X 10.5 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 |  [KBibTeX](http://www.unix-ag.uni-kl.de/~fischer/kbibtex/) |  KDE 3/4  | KDE 用の BibTeX エディタ。 |
