@@ -93,7 +93,7 @@ UNIX 互換 OS ディストリビューション同梱のものや配布バイ�
 手作業で調整する必要があります
 （「[日本語 LaTeX による多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
 を参照）。Cygwin については
-「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/tex/)」
+「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
 をご覧ください。
 
 #### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM {#oe0dfa58}
