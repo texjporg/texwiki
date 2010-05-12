@@ -12,7 +12,14 @@ pukiwiki: "Asymptote"
 ### はじめに {#w5cb2317}
 
 [Asymptote](http://asymptote.sourceforge.net/)
-はMetaPostを発展させたベクトルグラフィック記述言語。
+は [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述言語。
+
+### 発音 {#te374add}
+
+最初見たときにどう発音すればいいかよく分からなかったので，
+[Pronunciation of asymptote - how to pronounce asymptote correctly.](http://www.howjsay.com/index.php?word=asymptote)
+(注意：音が出ます)
+で確認したところ「あすぃむとーとぅ」みたいな感じで発音するみたいです。
 
 ### インストール {#a2be7136}
 
