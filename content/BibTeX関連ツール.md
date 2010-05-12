@@ -86,7 +86,7 @@ emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献
 | [refer-tools](https://mirror.ctan.org/biblio/bibtex/utils/refer-tools/) | perl | refer 形式を BibTeX 形式に変換 |
 |  [r2bib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib)  |   |  referからBibTeXに変換するツールだが、[EndNoteに対応した](http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html)。8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい。  |
 | [Writer2BibTeX](http://writer2latex.sourceforge.net/) | Java, OpenOffice.org | Writer文書から文献情報を抜き出し、BibTeX形式で保存するOpenOffice.orgのマクロ |
-| [mathsci2bibtex](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/mathsci2bibtex) | perl | MathSciからBibTeXへの変換 |
+| [mathsci2bibtex](https://mirror.ctan.org/help/Catalogue/entries/mathsci2bibtex.html) | perl | MathSciからBibTeXへの変換 |
 | [mathscinet](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/mathscinet) |   | MathSciNetからBibTeX形式に変換。 |
 | [stdinRIS2bib.pl ris2bib.pl](http://marc.herbert.free.fr/refdb/) | perl | RIS形式をBibTeX形式へ変換する。[ris2bib](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/ris2bib)が正常に動作しない最近の環境でもOK。キーは自分でつける必要あり。出力されたbibファイルは、bibcleanに通した方がよいかも。ris2bib.plはstdinRIS2bib.plから内部的に呼び出されるので同一ディレクトリにおいておくこと。<br>【使い方】$ cat risファイル ｜ stdinRISbib.pl > bibファイル <br> T1やABをそれぞれtitleやabstractにするには、ris2bib.plにそれらの定義を追加する必要がある。 |
 | [Bibutils](http://www.scripps.edu/~cdputnam/software/bibutils/) | なし | さまざまな形式の文献データをXML経由でBib形式に変換する。含まれるコマンドは、bib2xml, copac2xml, end2xml, isi2xml, med2xml, modsclean, ris2xml, xml2bib, xml2end, xml2risがあり、UNIX(SunOS, IRIX)版、Linux版、OSX版、Windows版などが用意されている。<br>【利用例】$ ris2xml risファイル｜xml2bib > bibファイル |
