@@ -1043,7 +1043,7 @@ PDF 閲覧の際には
 [Adobe Reader](http://www.adobe.com/jp/products/reader/) が必要です。
 
 さて，中国語や韓國語
-などは[utf8toutf](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/utils/utf8toutf.zip)
+などは[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
 と [otfcjk](http://psitau.at.infoseek.co.jp/experiment.html) を併用すると
 便利です。まずはそれぞれダウンロードしておきましょう。
 
