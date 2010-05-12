@@ -12,7 +12,7 @@ pukiwiki: "MetaPost"
 ### はじめに {#q0dc30bf}
 
 「この文章は角藤さんの
-[MetaPost の紹介 (リンク切れ)](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
+[MetaPost の紹介 (PDF) \[Internet Archive\]](http://web.archive.org/web/20030318073200/http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
 という文章に触発されて書いたものです。角藤さんに感謝いたします。」
 
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
@@ -35,7 +35,7 @@ MetaPost は PostScript（EPS）形式のファイルを出力します。
 ページをご覧ください。
 web2c 配布にも MetaPost のマニュアルが入っています。
 
-[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語というのもあります。
+[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。
 
 ### MetaPostプログラミング入門 {#p3fbc416}
 
