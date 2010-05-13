@@ -11,7 +11,7 @@ pukiwiki: "TeXをWebで"
 
 ### はじめに {#vd570d76}
 
-TeX を使ってみよう ([EUC-JP版](http://oku.edu.mie-u.ac.jp/~okumura/tex/) / [UTF-8版](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/))
+[TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します。
 ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです。
 
@@ -90,8 +90,8 @@ parse_first_line = f
 
 この中に次の二つのファイルを置きます。
 
-- [index.php](http://oku.edu.mie-u.ac.jp/~okumura/tex/index.php.txt)
-- [do.php](http://oku.edu.mie-u.ac.jp/~okumura/tex/do.php.txt)
+- [index.php](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/index_php.txt)
+- [do.php](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/do_php.txt)
 
 また，空のファイル count.txt と空のディレクトリ work
 を作ります。
@@ -125,3 +125,6 @@ ulimit -t 10 -f 1024
 - あれあれ，いつこんなことになったんでしょう。速攻で直しました。m(\_\_)m -- 奥村 2008-06-16 (月) 19:47:05
 - 修正ありがとうございます。奥村先生のサイトを多いに参考にして、青空文庫テキスト zip ファイルの URL を張り付ければ、自動的に PDF化までできるような「てふてふ君」（ [http://www.aozora.jp/tools/tex/](http://www.aozora.jp/tools/tex/) ）を作りました。 -- ゼファー生 2008-06-23 (月) 12:41:00
 - こんなサイトができているようです。P-Lab （[http://www.acl-inc.co.jp/p-lab/](http://www.acl-inc.co.jp/p-lab/)） -- 川嶋 2008-09-11 (木) 10:39:45
+- index.php, do.php共に404 Not Foundになってしまいます。 -- 1273799701 2010-05-14 (金) 10:15:01
+- index.php, do.php共に404 Not Foundになってしまいます。 -- 1273804519 2010-05-14 (金) 11:35:19
+- すいませんでした。直ったでしょうか -- okumura 2010-05-14 (金) 12:15:37
