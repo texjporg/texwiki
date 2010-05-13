@@ -240,7 +240,7 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 
 #### outline-tree 2 {#xyott2kl}
 
-上の xyzzy の画像（すみません，まだバージョン1の画像です）で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
+上の xyzzy の画像（すみません，画像がリンク切れになっていたので，他に画像がないか検索すると，たまたま [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) の画像を見つけてそれに変えてしまいました。もし LaTeX と outline-tree2 のコラボレーション画像を見つけた方がおられましたら追加していただけるとありがたいです。）で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
 そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
 
 現在は outline-tree のバージョンが2になっています。
