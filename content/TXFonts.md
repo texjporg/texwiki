@@ -63,7 +63,7 @@ Computer Modern Roman/Italic と TX フォントの出力例です（PNG画像�
 TX フォントの作者
 [Young U. Ryu](http://www.utdallas.edu/~ryoung/)
 さんは Palatino ベースの
-[PX Fonts](http://www.utdallas.edu/~ryoung/pxfonts/)
+[PX Fonts](https://mirror.ctan.org/fonts/pxfonts/)
 も作っておられます。
 
 ### 補足 {#ma713e1b}
@@ -104,7 +104,7 @@ TX フォントのバージョンを上げたなら
 ### インストール（Macintosh） {#w5aece91}
 
 内山さんが
-[TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
+[TXFONTSをMacpTeXで利用するための情報 \[Internet Archive\]](http://web.archive.org/web/20070822165215/http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
 という完璧な解説を書いてくださっています。
 ぜひそちらをご覧ください。
 
@@ -121,9 +121,6 @@ TX フォントのバージョンを上げたなら
 
 - 本家CTANサーバ:
     [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
-
-- 作者 Young Ryu さん自身によるページ:
-    [TX Fonts](http://www.utdallas.edu/~ryoung/txfonts/)
 
 ドキュメントを読んでインストールします。
 最近の teTeX ベースのシステムなら次のように行います
