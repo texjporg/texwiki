@@ -115,9 +115,9 @@ Windows 標準のキーボードショートカットが使えるようになり
 この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
 使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
 要望を完全にはかなえてくれません。そのような方は，
-拙作の[pavail.l](http://www.klavis.info/pavail.l) というマクロをお使いください。
+大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。
 
-インストールは，[pavail.l](http://www.klavis.info/pavail.l) を
+インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
 ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
 初期設定ファイルで，
 
@@ -134,7 +134,7 @@ Windows 標準のキーボードショートカットが使えるようになり
 
 これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
 同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
-ものですが，次のところが元祖で私が後発になると思います。
+ものですが，次のところが元祖で私(大友さん)が後発になると思います。
 
 - [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
 
@@ -222,7 +222,9 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。詳細は
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
 をご覧ください。[KaTeX （花鳥）](#xykb6f8d)や [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) （アウトラインツリー表示マクロ。
-LaTeX 正規表現アウトライン機能があるらしい）あたりを入れておけば便利でしょう。[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) や [bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode) や [RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあるそうです。
+LaTeX 正規表現アウトライン機能があるらしい）あたりを入れておけば便利でしょう。[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，
+[bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
+[RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあるそうです。
 
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。
 Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。
