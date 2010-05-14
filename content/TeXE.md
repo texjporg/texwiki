@@ -21,3 +21,38 @@ TeXE は 簡易 TeX 専用エディタです。
 - onig.dll を用いた正規表現検索/置換機能
 
 です。
+
+公式サイトは
+[ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/top.html)
+です。
+
+[TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) に TeX の色分け機能と補完機能を追加したような感じのエディタです。
+
+### インストール/アンインストール {#pdbc335f}
+
+- インストール
+
+    ```
+     ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です。
+     <注意事項>
+     ・onig.dll は TeXE.exe と同じ階層においてください。(別途用意する場合)
+     ・.dat 等は TeXE.ini で場所を指定すれば移動、追加できます。
+    ```
+
+- アンインストール
+
+    ```
+     設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです。
+    ```
+
+### 設定 {#jf6b3b60}
+
+\[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります。
+
+開始すると自動設定してくれますが，
+\[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になってしまうので
+
+- jbibtex.exe → pbibtex.exe
+- dvipdfm.exe → dvipdfmx.exe
+
+に変更します。
