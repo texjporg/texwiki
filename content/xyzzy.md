@@ -54,7 +54,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 > 参照のこと。）
 
 とうとうオープンソースになりました！
-（MIT ライセンス［[原文](http://www.opensource.org/licenses/mit-license.html)，[日本語訳](http://www.opensource.gr.jp/licenses/mit-license.html)］。
+（MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
 短いライセンスなので読んでください。）興味のある方は
 是非いじってみてください。xyzzy の英語版もそのうちできるかもしれませんね。
 
