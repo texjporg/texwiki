@@ -19,7 +19,7 @@ pukiwiki: "Asymptote"
 最初見たときにどう発音すればいいかよく分からなかったので，
 [Pronunciation of asymptote - how to pronounce asymptote correctly.](http://www.howjsay.com/index.php?word=asymptote)
 (注意：音が出ます)
-で確認したところ「あすぃむとーとぅ」みたいな感じで発音するみたいです。
+で確認したところ「アスィムトートゥ」みたいな感じで発音するみたいです。
 
 ### インストール {#a2be7136}
 
