@@ -150,6 +150,7 @@ BibTeX形式の出力があるWebアプリが公開されている
 | Biblos |  Windows95/NT  |  bibファイルを公開するためのcgi  |
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール。[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている。 |
 | [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeX クローン。文献スタイルファイルは独自型式のものを用いる。 |
+| [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeX互換の文献管理ソフト |
 
 <br>
 
