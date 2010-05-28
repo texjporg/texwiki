@@ -56,7 +56,7 @@ TeX インストーラを色々な視点から比較してみます。
 話は別ですが，今のところそのようなものは存在しません（構築するだけなら，
 下記のインストーラのうちの適当なものを使ってどうにかなるようですが）． <!-- 間違ったことは言っていませんが，どうせ「初心者の味方」に叩かれるでしょう． -->
 
-## TeX インストーラ 3 (kakuto3.exe) {#w0d7240a}
+## TeX インストーラ 3 (abtexinst.exe) {#w0d7240a}
 
 - <strong>URL</strong>: [http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html)
 - <strong>作者</strong>： 阿部 紀行さん
