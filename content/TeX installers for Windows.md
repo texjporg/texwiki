@@ -58,7 +58,7 @@ TeX インストーラを色々な視点から比較してみます。
 
 ## TeX インストーラ 3 (kakuto3.exe) {#w0d7240a}
 
-- <strong>URL</strong>: [http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/)
+- <strong>URL</strong>: [http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html)
 - <strong>作者</strong>： 阿部 紀行さん
 - <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
 - <strong>ライセンス</strong>： 修正BSD（2009/9/10, バージョン0.75から）
