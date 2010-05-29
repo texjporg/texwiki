@@ -33,11 +33,13 @@ Asymptoteソースを展開したディレクトリに
 
 ```
 ./configure
+# 非標準なところにlibreadlineがある場合は次のように指定
+# LDFLAGS="-L/usr/local/lib" CPPFLAGS="-I/usr/local/include" ./configure
 make
 make install
 ```
 
-でできる（libreadlineが/usr/local/libにあるなら./configure後Makefileの LFLAGS = の後に -L/usr/local/lib を追加する）。
+でできる。
 
 Mac OS X 10.6 (Snow Leopard) では次のようなエラーになる。
 
