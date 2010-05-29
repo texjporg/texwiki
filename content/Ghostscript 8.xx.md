@@ -18,6 +18,7 @@ Ghostscript 8-系共通項目です。いくつかのマイナーバージョン
 - Ghostscript 8.54
 - Ghostscript 8.64
 - Ghostscript 8.70
+- Ghostscript 8.71
 
 などにあります。
 
