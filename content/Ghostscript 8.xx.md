@@ -40,10 +40,13 @@ Ghostscript 8-系共通項目です。いくつかのマイナーバージョン
 $ cd /usr/local/src
 $ sudo tar xvjf .../ghostscript-8.??.tar.bz2
 $ cd ghostscript-8.??
-$ sudo ./configure --prefix=/usr/local/teTeX
+$ sudo ./configure --disable-compile-inits --prefix=/usr/local/teTeX
 $ make
 $ sudo make install
 ```
+
+このように最近のものは --disable-compile-inits を付けないと cidfmap を参照しないようです。
+ほかにオプションとしては --without-x とか --disable-cups とかで不要なものを外せます。
 
 すると，次のものが /usr/local/teTeX/bin/ に入ります。
 
@@ -64,7 +67,7 @@ $ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz
 
 ```
 
-和文については，cidfmap（上の設定では /usr/local/teTeX/share/ghostscript/8.??/lib/cidfmap）に記述します。ヒラギノを利用するなら
+和文については，cidfmap（上の設定では /usr/local/teTeX/share/ghostscript/8.??/lib/cidfmap，新しいバージョンでは .../8.??/Resource/Init/cidfmap）に記述します。ヒラギノを利用するなら
 
 ```
 /Ryumin-Light      /HiraMinProN-W3   ;
@@ -142,6 +145,8 @@ ps2pdf もうまく行えます。
 $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 シンボリックリンクを作っておくと良いでしょう
 （こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
+
+フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
 
 ### /usr/local/share/ghostscript/8.??/lib/cidfmap の記述例 {#h0f0fbe0}
 
