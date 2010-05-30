@@ -31,6 +31,6 @@ WZ 6.0.45 から，「LaTeX」ファイルの編集に対応しました。
 
 WZ EDITOR 6 の LaTeX に関する機能は次のページが参考になります。
 
-- [WZsoft > WZエディタ > 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
-- [WZsoft > WZエディタ > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
-- [WZsoft > WZエディタ > WZ6オンラインヘルプ > LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
+- [WZsoft &gt; WZエディタ &gt; 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
+- [WZsoft &gt; WZエディタ &gt; チュートリアル &gt; 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
+- [WZsoft &gt; WZエディタ &gt; WZ6オンラインヘルプ &gt; LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
