@@ -31,18 +31,18 @@ Ring Server
 - HTTP
     - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html)
-        の機能を利用して近傍のサーバへ誘導）
+        <!-- - -[[www.t.ring.gr.jp/pub/text/CTAN/:http://www.t.ring.gr.jp/pub/text/CTAN/]]（近いサーバ優先……[[TENBIN:http://www.tenbin.org/]] -->
+        <!-- 及び [[RADIX:http://www.toyama.net/~ikuo/tools/radix.html]] -->
+        <!-- の機能を利用して近傍のサーバへ誘導） -->
     - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
 
 - Anonymous FTP
     - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [ftp.t.ring.gr.jp/pub/text/CTAN/](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html)
-        の機能を利用して近傍のサーバへ誘導）
+        <!-- - -[[ftp.t.ring.gr.jp/pub/text/CTAN/:ftp://ftp.t.ring.gr.jp/pub/text/CTAN/]]（近いサーバ優先……[[TENBIN:http://www.tenbin.org/]] -->
+        <!-- 及び [[RADIX:http://www.toyama.net/~ikuo/tools/radix.html]] -->
+        <!-- の機能を利用して近傍のサーバへ誘導） -->
     - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
 
