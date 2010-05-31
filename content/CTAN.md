@@ -7,113 +7,135 @@ pukiwiki: "CTAN"
 
 # CTAN
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
 
-## CTAN {#f9e5c80c}
+## CTAN {#CTAN}
 
-### CTAN とは？ {#c8b76129}
+### CTAN とは？ {#what}
 
 CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は
-TeX 関連のソフトやスタイルファイルを集めたサイトです。
+TeX 関連のファイルやソフトウェアを集めたウェブサイトです。
 
-米国のサイトは [http://www.ctan.org/](http://www.ctan.org/) ですが，
-日本語で検索できるミラーサイト [Ring Server](https://mirror.ctan.org/../../../) をお勧めします
-（Ring Server のトップページが英語表記になるようでしたら，
-［日本語］というボタンを押してください）。
+### Ring Server によるミラーリング {#RingServer}
 
-この Ring Server のページを少し下にスクロールすると右に「検索」と書いた
-犬の絵が見えますので，ここをクリックすれば検索の画面になります。
+アメリカのウェブサイトは [www.ctan.org](http://www.ctan.org/)
+ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
+での CTAN のミラーリングの利用をお勧めします（Ring Server
+のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください）。この
+Ring Server
+のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，ここをクリックすれば検索の画面になります。
 
-上からたどっていくには [Ring Server の /pub/text/CTAN/](https://mirror.ctan.org/./) から
-始めればいいでしょう。
-
-【注意】 [Ring Server](https://mirror.ctan.org/../../../) は複数のファイルサーバの集合体です。
-下の方に一覧がありますので，ご自分のところからネットワーク的に近いサーバを
-一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN 以外にも
-たくさんのフリーソフトをミラーしています。
-以下のような DNS による負荷分散も実験的に行われています
-（[Ring Server](https://mirror.ctan.org/../../../) の
-「[利用者の皆様の声 &amp; FAQ](https://mirror.ctan.org/../../../ring/uvoice.html)」の
-ページの「TENBIN，DNS BALANCEって何ですか？
-また、RingServerでの負荷分散はどのように行っているのですか？」の項目参照）。
+上位のディレクトリから辿っていく場合には，[Ring Server の /pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
+から始めるのが良いでしょう。
 
 - HTTP
-    - [http://www.ring.gr.jp/pub/text/CTAN/](https://mirror.ctan.org/./)
-        （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [http://www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)
-        （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html) の機能を利用して
-        近傍のサーバへ誘導）
-    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)
-        （空いているサーバ優先……
-        [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
+    - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)（代表
+        URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+    - [www.t.ring.gr.jp/pub/text/CTAN/](http://www.t.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[TENBIN](http://www.tenbin.org/)
+        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html)
+        の機能を利用して近傍のサーバへ誘導）
+    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
 
-- FTP
-    - [ftp://ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)
-        （代表 URI ……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [ftp://ftp.t.ring.gr.jp/pub/text/CTAN/](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/)
-        （近いサーバ優先…… [TENBIN](http://www.tenbin.org/)
-        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html) の機能を利用して
-        近傍のサーバへ誘導）
-    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)
-        （空いているサーバ優先……
-        [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
+- Anonymous FTP
+    - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
+        URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+    - [ftp.t.ring.gr.jp/pub/text/CTAN/](ftp://ftp.t.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[TENBIN](http://www.tenbin.org/)
+        及び [RADIX](http://www.toyama.net/~ikuo/tools/radix.html)
+        の機能を利用して近傍のサーバへ誘導）
+    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
 
-オリジナルの CTAN サイトは次の三つです。
+【注意】Ring Server
+は複数のファイルサーバの集合体です。ホームページの中ほどにサーバの一覧がありますので，ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN
+以外にもたくさんのフリーウェアをミラーしています。以下のような
+DNS による負荷分散も実験的に行われています（Ring Server
+の「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの「TENBIN，DNS
+BALANCE って何ですか？ また、RingServer
+での負荷分散はどのように行っているのですか？」の項目を参照）。
 
-- HTTP
-    - U.S.A. （米国）： [http://www.ctan.org/](http://www.ctan.org/)
-    - U.K. （イギリス）： [http://www.tex.ac.uk/](http://www.tex.ac.uk/)
-    - BRD （ドイツ）： [http://www.dante.de/](http://www.dante.de/)
+### mirror.ctan.org {#mirror-sites}
 
-- FTP
-    - U.S.A. （米国）： [ftp://ftp.ctan.org/tex-archive/](ftp://ftp.ctan.org/tex-archive/)
-    - U.K. （イギリス）： [ftp://ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
-    - BRD （ドイツ）： [ftp://ftp.dante.de/pub/tex/](ftp://ftp.dante.de/pub/tex/)
+CTAN の世界的なミラーリングとして次の URI があります。
 
-### Ring Server 以外の国内での CTAN のミラーサイト（一部） {#e36ace99}
+- [http://mirror.ctan.org/](http://mirror.ctan.org/)
+- [http://www.ctan.org/get/](http://www.ctan.org/get/)
 
-#### HTTP/FTP {#f5f248f4}
-
-- [理化学研究所](http://www.riken.jp/)
-    - [http://ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
-
-- [KDDI 研究所](http://www.kddilabs.jp/)
-    - [http://ftp.ne.jp/pub/ctan/](http://ftp.ne.jp/pub/ctan/)
-    - [http://ftp.ne.jp/CTAN/](http://ftp.ne.jp/CTAN/)
-    - [http://ftp.ne.jp/ctan/](http://ftp.ne.jp/ctan/)
-
-- [山形大学](http://www.yamagata-u.ac.jp/index-j.html)
-    - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-
-- [奈良先端科学技術大学院大学](http://www.naist.jp/)
-    - [http://ftp.naist.jp/pub/TeX/CTAN/](http://ftp.naist.jp/pub/TeX/CTAN/)
-    - [http://ftp.aist-nara.ac.jp/pub/TeX/CTAN/](http://ftp.aist-nara.ac.jp/pub/TeX/CTAN/)
-    - [http://ftp.nara.wide.ad.jp/pub/TeX/CTAN/](http://ftp.nara.wide.ad.jp/pub/TeX/CTAN/)
+接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです。[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites)
+や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています。この接続先候補に含まれる日本国内でのサイトには次のものがあります。
 
 - [北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
-    - [http://ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
+    - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
+        (HTTP, anonymous FTP)
 
-#### FTP のみ {#x06154f1}
+- [KDDI 研究所](http://www.kddilabs.jp/)
+    - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
+        (HTTP, anonymous FTP)
+        <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
+        <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+
+- [理化学研究所](http://www.riken.jp/)
+    - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
+        (HTTP, anonymous FTP)
+        <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
 - [会津大学](http://www.u-aizu.ac.jp/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)
+    - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
+        <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
-- [名古屋大学 工学部 電気電子・情報工学科 情報工学コース ICE (Information &amp; Computer Engineering)](http://www.ice.nuie.nagoya-u.ac.jp/)
-    - [ftp://ftp.ice.nuie.nagoya-u.ac.jp/pub/CTAN/](ftp://ftp.ice.nuie.nagoya-u.ac.jp/pub/CTAN/)
+- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
+    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+        (HTTP, anonymous FTP)
+        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
+
+### オリジナルの CTAN {#original}
+
+オリジナルの CTAN サイトは次のとおりです。
+
+- HTTP
+    - U.S.A.（アメリカ）：[www.ctan.org](http://www.ctan.org/)
+        <!-- tug.ctan.org = www.ctan.org -->
+    - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
+    - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
+- Anonymous FTP
+    - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
+        <!-- www.ctan.org = tug.ctan.org -->
+    - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
+    - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
+        <!-- www.dante.de = ftp.dante.de -->
+
+また，[ftp.ctan.org](http://ftp.ctan.org/) は
+[www.ctan.org](http://www.ctan.org/) (=
+[tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
+のみ），[www.dante.de](http://www.dante.de/) (=
+[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります。
+
+### その他の日本国内での CTAN のミラーサイト（一部） {#others}
+
+#### HTTP, Anonymous FTP {#HTTP-FTP}
+
+- [奈良先端科学技術大学院大学](http://www.naist.jp/)
+    - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
+        <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
+    - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
+
+#### FTP のみ {#FTP-only}
+
+- [名古屋大学](http://www.nagoya-u.ac.jp/) [工学部](http://www.engg.nagoya-u.ac.jp/) [電気電子・情報工学科（情報工学コース）](http://www.nuie.nagoya-u.ac.jp/)[ICE (Information &amp; Computer Engineering)](http://www.ice.nuie.nagoya-u.ac.jp/)
     - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/)
+        <!-- ftp.ice.nuie.nagoya-u.ac.jp = ftp.nuie.nagoya-u.ac.jp -->
 
-- [北海道大学 理学部 地球科学科 FTP (green)](http://www.ep.sci.hokudai.ac.jp/~epftp/)
+- [北海道大学](http://www.hokudai.ac.jp/) [理学部](http://www.sci.hokudai.ac.jp/) [地球科学科](http://www.sci.hokudai.ac.jp/grp/epub/ep-web/)
+    [FTP (green)](http://www.ep.sci.hokudai.ac.jp/~epftp/)
     - [ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/](ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/)
-    - [ftp://ftp.ep.sci.hokudai.ac.jp/pub/CTAN/](ftp://ftp.ep.sci.hokudai.ac.jp/pub/CTAN/)
+        <!-- ftp.ep.sci.hokudai.ac.jp = green.ep.sci.hokudai.ac.jp -->
 
-- [筑波大学大学院 システム情報工学研究科 コンピュータネットワーク研究室 FTP サービス](http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html)
+- [筑波大学](http://www.tsukuba.ac.jp/) [大学院システム情報工学研究科](http://www.sie.tsukuba.ac.jp/) [コンピュータネットワーク研究室](http://www.netlab.cs.tsukuba.ac.jp/)
+    [FTP サービス](http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html)
     - [ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/](ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/)
 
 ***
 
-## Comments {#t2502d63}
+## Comments {#comments}
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
