@@ -25,6 +25,8 @@ Microsoft Windows 用エディタの良いところを組み合わせたエデ�
 
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)
 
+<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
+
 Emacs ライクなテキストエディタということで，上級者向けとの印象があります。
 ですが，マウスで使う分にはメニューバーやツールバーやタブバーがありますし，
 多くのテキストエディタでできるような設定はダイアログボックスから
@@ -40,8 +42,6 @@ Emacs に挫折した方でも大丈夫です。
 コピーには割り当てられません。従って，マウスで選択さえしていなければ，KaTeX で
 頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。）
 
-<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="xyzzy の画面">
-
 レジストリは変更しませんので，
 少しでも興味のある方は試してみてはいかがでしょうか？
 
@@ -56,7 +56,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 とうとうオープンソースになりました！
 （MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
 短いライセンスなので読んでください。）興味のある方は
-是非いじってみてください。xyzzy の英語版もそのうちできるかもしれませんね。
+是非いじってみてください。[英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)，[multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads) もあります。
 
 ## ダウンロードとインストール {#xy9167cb}
 
@@ -71,7 +71,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 xyzzy のファイルをダウンロードします。
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
 USB メモリで使用する方は，
-[xyzzyをちょこちょこ改造](http://blog.2310.net/archives/618)
+[xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 からダウンロードして，解凍後，本体のものと置き換えてください。
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。
@@ -224,7 +224,7 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 をご覧ください。[KaTeX （花鳥）](#xykb6f8d)や [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) （アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい）あたりを入れておけば便利でしょう。[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，
 [bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
-[RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあるそうです。
+[RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあります。
 
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。
 Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。
@@ -240,7 +240,9 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 
 #### outline-tree 2 {#xyott2kl}
 
-上の xyzzy の画像（すみません，画像がリンク切れになっていたので，他に画像がないか検索すると，たまたま [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) の画像を見つけてそれに変えてしまいました。もし LaTeX と outline-tree2 のコラボレーション画像を見つけた方がおられましたら追加していただけるとありがたいです。）で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
+<img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="outline-tree2 を使った xyzzy の画面">
+
+上の xyzzy の画像で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
 そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
 
 現在は outline-tree のバージョンが2になっています。
@@ -2076,8 +2078,8 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に書きま�
 （私の環境で表示できた an から ha までの文字しか変換できません。その他の文字については，すみませんが ASCII アルファベットで書いてください。
 もちろん改良スクリプト随時大募集です。） スクリプトの実行には Perl が必要になりますので，忘れずにインストールしてください。
 
-- G2TeX ([g2tex.pl](http://www.klavis.info/g2tex.pl))
-- V2TeX ([v2tex.pl](http://www.klavis.info/v2tex.pl))
+- G2TeX ([g2tex.pl](http://web.archive.org/web/20060824005927/http://www.klavis.info/g2tex.pl))
+- V2TeX ([v2tex.pl](http://web.archive.org/web/20060824010156/http://www.klavis.info/v2tex.pl))
 
 g2tex.pl や v2tex.pl をダウンロードし，PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
