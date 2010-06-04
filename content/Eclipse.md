@@ -29,11 +29,11 @@ Windows の場合 [Pleiades All in One](http://mergedoc.sourceforge.jp/) を使�
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
-- [eclipse-SDK-3.5.2-win32.zip](http://download.eclipse.org/eclipse/downloads/) (本体)
+- [Eclipse の最新リリース版](http://download.eclipse.org/eclipse/downloads/) (本体)
 
 を解凍し、
 
-- [pleiades_1.3.1.zip](http://mergedoc.sourceforge.jp/) (Eclipse 本体とプラグインの日本語化)
+- [Pleiades 本体の最新版](http://mergedoc.sourceforge.jp/) (Eclipse 本体とプラグインの日本語化)
 
 を Eclipse のルートフォルダに解凍して eclipse.ini の最終行に
 
@@ -48,3 +48,6 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - [TeXlipse](/TeXlipse/)
 - [BlueNoteTex](http://bluenotetex.sourceforge.net/index-ja.html)
 - ecleTeX (旧名：eTeX)
+- [LatEc](http://www.itu.dk/people/jborella/)
+- [LaPsE](http://sf.net/projects/eclipse-latex)
+- [LaTexEditor](http://sf.net/projects/latexeditor/)
