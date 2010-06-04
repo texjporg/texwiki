@@ -10,12 +10,19 @@ pukiwiki: "xyzzy"
 ## xyzzy とは {#xya184ab}
 
 xyzzy は柔軟なカスタマイズを可能にした，
-多機能なテキストエディタ，Common-LISP インタプリタです。[Emacs](/Emacs/) という
+多機能なテキストエディタ，Common-LISP インタプリタです。
+
+[Emacs](/Emacs/) という
 テキストエディタを知っている方には，Emacs と多くの
 Microsoft Windows 用エディタの良いところを組み合わせたエディタである，と
 表現したほうがわかりやすいかもしれません。
-国産で，フリーウェアです。TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d) や tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) が
-ありますし，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) もあります。多言語についても
+
+国産で，フリーソフトウェアです。
+
+TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d) や tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) が
+ありますし，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) もあります。
+
+多言語についても
 フランス語やドイツ語などの ラテンアルファベット系言語，ロシア語などの
 キリルアルファベット系言語，ギリシア語，中国語（&#x6c49;&#x8bed;［漢語］，
 中文），韓國語（&#xd55c;&#xad6d;&#xc5b4;）などの文字の表示・混在編集などに
@@ -28,14 +35,18 @@ Microsoft Windows 用エディタの良いところを組み合わせたエデ�
 <img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
 
 Emacs ライクなテキストエディタということで，上級者向けとの印象があります。
+
 ですが，マウスで使う分にはメニューバーやツールバーやタブバーがありますし，
 多くのテキストエディタでできるような設定はダイアログボックスから
-マウスでできます。従って，「テキストエディタって何？」という方や
+マウスでできます。
+
+従って，「テキストエディタって何？」という方や
 Emacs に挫折した方でも大丈夫です。
 
 キーボードショートカット（キーバインド）も特殊ですが，
 標準添付の Gates.l など，Windows 標準のキーボードショートカットにするための
 マクロもあります。
+
 また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとの
 キーボードショートカット上の共存も可能です。（例えば，C-c はマウスによる
 選択［セレクション］時にはコピーになりますが，選択をしていない場合は
@@ -56,7 +67,9 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 とうとうオープンソースになりました！
 （MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
 短いライセンスなので読んでください。）興味のある方は
-是非いじってみてください。[英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)，[multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads) もあります。
+是非いじってみてください。
+
+[英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)，[multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads) もあります。
 
 ## ダウンロードとインストール {#xy9167cb}
 
@@ -69,12 +82,16 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 [基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
 から
 xyzzy のファイルをダウンロードします。
+
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
+
 USB メモリで使用する方は，
 [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 からダウンロードして，解凍後，本体のものと置き換えてください。
+
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。
+
 「環境変数」というものがよくわからない方や環境変数を設定できない方の
 場合には，xyzzy\usr\\%USERNAME%\w??\xyzzy.ini （w??\ は
 OS によって wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ となります）に，例えば
@@ -85,14 +102,18 @@ homeDir=C:/usr/local/share/xyzzy/usr/UserName/wxp
 ```
 
 のように末尾に追記しておきます（後述するマクロを使うためにも，
-この作業は是非やっておいてください）。ショートカットは
+この作業は是非やっておいてください）。
+
+ショートカットは
 xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう。
+
 そうしないと，既にファイルを xyzzy で開いているときにショートカットに
 ドラッグ &amp; ドロップすると，xyzzy が二重に起動してしまうのです。
 
 ## xyzzy の基本的な使い方 {#xycb6f8d}
 
 最初に起動したときにはあまりの地味さに驚くことでしょう。でも大丈夫です。
+
 メニューより ［表示］ → ［ツールバー］ と選び，
 ［標準］ と ［バッファ］ にチェックを入れることで，標準のツールバーと
 ファイル名（正確にはバッファ名）の書かれたタブが表示されるようになります。
@@ -111,10 +132,14 @@ xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう
 
 また先述したように標準では Emacs 風のキーボードショートカットに
 なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
-Windows 標準のキーボードショートカットが使えるようになります。しかしながら，
+Windows 標準のキーボードショートカットが使えるようになります。
+
+しかしながら，
 この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
 使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
-要望を完全にはかなえてくれません。そのような方は，
+要望を完全にはかなえてくれません。
+
+そのような方は，
 大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。
 
 インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
@@ -125,7 +150,9 @@ Windows 標準のキーボードショートカットが使えるようになり
 (load-library "pavail")
 ```
 
-と記述するだけです。これで，xyzzy を快適に使うことができるように
+と記述するだけです。
+
+これで，xyzzy を快適に使うことができるように
 なるかもしれません（私が使っている分には，不具合は今のところありません）。
 
 なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
@@ -134,7 +161,7 @@ Windows 標準のキーボードショートカットが使えるようになり
 
 これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
 同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
-ものですが，次のところが元祖で私(大友さん)が後発になると思います。
+ものですが，次のところが元祖で pavail.l が後発になると思います。
 
 - [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
 
@@ -219,14 +246,21 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
-有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。詳細は
+有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。
+
+詳細は
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
-をご覧ください。[KaTeX （花鳥）](#xykb6f8d)や [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) （アウトラインツリー表示マクロ。
-LaTeX 正規表現アウトライン機能があるらしい）あたりを入れておけば便利でしょう。[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，
+をご覧ください。
+
+[KaTeX (花鳥)](#xykb6f8d) や [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
+LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。
+
+[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，
 [bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
 [RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあります。
 
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。
+
 Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。
 
 a キーを押し，次の項目以降で示すカッコ内の URI を入力して Enter を押します。
@@ -950,7 +984,7 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 
 あとは Utf82TeX を PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
-実行ファイルディレクトリ C:\usr\local\W32TeX\bin\ など）にコピーします。
+実行ファイルディレクトリ C:\w32tex\bin など）にコピーします。
 ついでに TeX 実行ファイルのインストール先であれば
 そのディレクトリ内にある perlexec.exe を utf82tex.exe などに
 コピーしておきます。（こうしておくとコマンド実行時に便利ですので。）
@@ -1053,7 +1087,7 @@ PDF 閲覧の際には
 
 utf8toutf.zip を展開（解凍）し，w32bin/ ディレクトリ内の utf8toutf.exe を
 PATH の通ったディレクトリ（例えば TeX のインストールディレクトリ内にある
-実行ファイルディレクトリ C:\usr\local\W32TeX\bin\ など）にコピーしておきます。
+実行ファイルディレクトリ C:\w32tex\bin など）にコピーしておきます。
 
 otfcjk.zip も展開後，mkttftrad.pl を xyzzy などで開き，先頭の行にある
 
@@ -2083,7 +2117,7 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に書きま�
 
 g2tex.pl や v2tex.pl をダウンロードし，PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
-実行ファイルディレクトリ C:\usr\local\W32TeX\bin\ など）にコピーします。
+実行ファイルディレクトリ C:\w32tex\bin など）にコピーします。
 ついでに TeX 実行ファイルのインストール先であれば
 そのディレクトリ内にある perlexec.exe を g2tex.exe や v2tex.exe に
 コピーしておきます。（こうしておくとコマンド実行時に便利ですので。）
