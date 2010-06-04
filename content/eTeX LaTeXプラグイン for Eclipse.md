@@ -39,7 +39,7 @@ Eclipseインストール後、
 ## 参考サイト {#xdebb40e}
 
 - [LaTeX plug-in for Eclipse](http://www.eclipsewiki.net/eclipse/?TeX) - Eclispe wiki
-- [■【LaTeX】eTeX 【EclipseでLaTeXを使う！】■@ソフトウェア in 2ちゃんねる\[Internet Archive\]](http://web.archive.org/web/20050429085211/http://pc5.2ch.net/test/read.cgi/software/1082131007/)
+- [■【LaTeX】eTeX 【EclipseでLaTeXを使う！】■@ソフトウェア in 2ちゃんねる (過去ログ)](http://mimizun.com/log/2ch/software/pc5.2ch.net/software/dat/1082131007.dat)
 - [Eclipse](http://www.eclipse.org/) - オープンソースIDE Eclipse
 
 ## コメント {#wd0520c9}
