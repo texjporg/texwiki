@@ -51,3 +51,9 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - [LatEc](http://www.itu.dk/people/jborella/)
 - [LaPsE](http://sf.net/projects/eclipse-latex)
 - [LaTexEditor](http://sf.net/projects/latexeditor/)
+
+### 関連リンク {#o908ecbb}
+
+- Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
+- Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
+- Eclipse Wiki - [http://eclipsewiki.net/eclipse/](http://eclipsewiki.net/eclipse/)
