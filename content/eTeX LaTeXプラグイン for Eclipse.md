@@ -9,7 +9,7 @@ pukiwiki: "eTeX LaTeXプラグイン for Eclipse"
 
 ## TeX プラグイン {#vda6bd93}
 
-オープンソースIDE(統合開発環境) [Eclipse](http://www.eclipse.org/)でTeX文書ファイルを編集でき、
+オープンソース IDE (統合開発環境) [Eclipse](/Eclipse/) で TeX 文書ファイルを編集でき、
 コンパイルできるプラグイン。
 
 ### 使用方法 {#q8077511}
@@ -20,20 +20,23 @@ pukiwiki: "eTeX LaTeXプラグイン for Eclipse"
 インストール方法詳細はこちら
 [Eclipse TeXプラグイン](http://eclipsewiki.net/eclipse/?TeX)
 
-これを動かすにはTeXのインストールの他に[Eclipse](http://www.eclipse.org/)を
-インストールする必要があります。[Eclipse](http://www.eclipse.org/)を
-ダウンロードしEclipseをインストールしたいディレクトリに展開することで
-Eclipseのインストールは完了。
+これを動かすには TeX のインストールの他に [Eclipse](/Eclipse/) を
+インストールする必要があります。
 
-Eclipseインストール後、
+Eclipse を
+ダウンロードし Eclipse をインストールしたいディレクトリに展開することで
+Eclipse のインストールは完了。
+
+Eclipse インストール後、
 [ecleTeX](http://sourceforge.net/projects/etex/files/)
 をダウンロードし、それを
-[Eclipse](http://www.eclipse.org/)ディレクトリの中にあるpluginsディレクトリにコピーする。
+Eclipse ディレクトリの中にある plugins ディレクトリにコピーする。
 
-それから[Eclipse](http://www.eclipse.org/)を再起動するとプラグインのインストールは完了。
-後はLaTeXのパスを設定することで[Eclipse](http://www.eclipse.org/)上でTeXを使えるようになる。
+それから Eclipse を再起動するとプラグインのインストールは完了。
 
-\[新規\] - \[プロジェクト\] - \[TeXプロジェクト\]を選択して初めてTeX文書を
+後は LaTeX のパスを設定することで Eclipse 上で TeX を使えるようになる。
+
+\[新規\] - \[プロジェクト\] - \[TeXプロジェクト\]を選択して初めて TeX 文書を
 作成する準備が整う。
 
 ## 参考サイト {#xdebb40e}
