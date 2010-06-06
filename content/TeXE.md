@@ -28,7 +28,7 @@ TeXE は 簡易 TeX 専用エディタです。
 [ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/top.html)
 です。
 
-[TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) に TeX の色分け機能と補完機能を追加したような感じのエディタです。
+TeraPad に TeX の色分け機能と補完機能を追加したような感じのエディタです。
 
 ### インストール/アンインストール {#pdbc335f}
 
