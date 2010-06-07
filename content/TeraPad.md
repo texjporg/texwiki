@@ -21,7 +21,7 @@ TeraPad は国産のシンプルなテキストエディタです。
     (hiratake55 さん)
 
 - [Terapadで作るLaTeX統合環境](http://zatugakuou.hp.infoseek.co.jp/LaTeXIntegratedEnvironmentOnTerapad.html)
-    (綾小路 龍之介 さん) ライセンスは GFDL。
+    (綾小路 龍之介 さん) ライセンスは GNU Free Documentation License。
 
 ### TeraPad で 表の作成 {#p12e5284}
 
