@@ -26,7 +26,7 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
-### 秀丸エディタ用 TeX マクロ {#m32041fb}
+### 秀丸エディタ用マクロ {#m32041fb}
 
 - [祝鳥 (のりてふ)](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/fortex.html)
 - [RaTeX0e](http://uca-works.com/hidemaru_macro/RaTeX0e.html)/[cRaTeX0e](http://uca-works.com/hidemaru_macro/cRaTeX0e.html)
@@ -36,3 +36,4 @@ pukiwiki: "秀丸エディタ"
 - [LaTeX Compile HIDEMARU Macro (LaTeXコンパイル用秀丸マクロ)](http://hide.maruo.co.jp/lib/macro/lcm11.html)
 - [TeX Module Control with HIDEMARU Macro](http://www.ceres.dti.ne.jp/~sugiura/hidemaru/macros/tex_mc/index.html)
 - [飛鳥 (ひちょう) HiTeX](http://www.yatex.org/HiTeX/)
+- [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
