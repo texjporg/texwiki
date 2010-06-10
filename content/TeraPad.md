@@ -323,6 +323,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - [Terapadで作るLaTeX統合環境](http://zatugakuou.hp.infoseek.co.jp/LaTeXIntegratedEnvironmentOnTerapad.html)
     (綾小路 龍之介 さん) ライセンスは GNU Free Documentation License。
 
+- [Eee PC 901 にも TeX 環境](http://ngc1952.net/archives/category/tex)
+
 ### TeraPad で 表の作成 {#p12e5284}
 
 - [USBメモリ活用講座【付録・Excel/Calcの表のtabular形式への変換法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/tp2tbl.shtml)
