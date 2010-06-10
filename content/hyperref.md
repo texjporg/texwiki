@@ -620,6 +620,22 @@ hyperrefパッケージと同じ(?) \urlコマンドを提供する．
 
 hyperrefパッケージをデフォルトで読み込む．
 
+### pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
+
+```
+\usepackage[dvipdfmx]{hyperref}
+```
+
+の前に以下を入力
+
+```
+\usepackage{atbegshi}
+\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+```
+
+\usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまう。
+
 ***
 
 - \usepackage\[dvipdfm,bookmarkstype=toc=true,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false\]{hyperref} -- kd 2007-03-20 (火) 15:21:01
