@@ -13,7 +13,9 @@ pukiwiki: "TeraPad"
 
 TeraPad は国産でフリーのシンプルなテキストエディタです。
 
-LaTeX 環境を簡単に作ることができます。
+テキストエディタとして必要十分な機能があり，非常にバランスのよいエディタです。
+
+LaTeX 環境も簡単に作ることができます。
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
