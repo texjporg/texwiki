@@ -21,6 +21,81 @@ LaTeX 環境も簡単に作ることができます。
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
+✍ terapad.tex - TeraPad
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
+ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)
+
+══════════════════════════════════════════════════
+
+```
+\documentclass[12pt]{jsarticle}
+```
+
+```
+\usepackage{atbegshi}
+\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+\usepackage[dvipdfmx]{hyperref}
+\hypersetup{pdftitle={TeraPad について}}
+```
+
+```
+\begin{document}
+\section{TeraPad について}
+TeraPad はシンプルなテキストエディタです。主な機能は下記の通りです。
+\begin{itemize}
+\item
+ 行番号, 桁ルーラー表示
+\item
+ 画面分割
+\item
+ D\&D 編集
+\item
+ IME の再変換に対応
+\item
+ 元に戻す, やり直し (64～10000回の範囲で設定可能)
+\item
+ HTML, Perl, Ruby, C/C\verb-++-, VB, Delphi などの各種編集モード
+\item
+ 引用行のカラー表示 (「\textgreater」「＞」など任意の引用符を設定可能)
+\item
+ URL, メールアドレスのカラー表示と関連付けされたソフトの起動
+\item
+ 外部プログラムの起動 (コマンドラインへファイルパスを渡せる)
+\item
+ DDE 通信による WWW ブラウザでのプレビュー機能
+\item
+ TAB, 全角空白, 改行, [EOF] マークの表示
+\item
+ 矩形選択
+\item
+ 禁則処理
+\item
+ 標準入力の取り込み
+\item
+ TAB, 空白インデント編集 (矩形選択時も可能)
+\item
+ 文字コードの自動認識 (認識したコードで保存可能)
+\item
+ 排他制御
+\item
+ 検索, 置換機能
+\item
+ オートインデント (Shiftで切替可能)
+\item
+ テキストの印刷 (コマンドラインパラメータ「/p」で印刷可能)
+\item
+ 印刷プレビュー
+\end{itemize}
+\end{document}
+```
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+
 ### TeraPad で LaTeX (TeX -> PDF) {#m56b7465}
 
 <em>※注意</em>
