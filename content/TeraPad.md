@@ -420,3 +420,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 ### TeraPad の背景の色を黒にして文字の色を白にする {#ve550d2a}
 
 - [TeraPadを黒背景で使う。](http://njmkktkg.blogspot.com/2009/09/terapad.html)
+
+### TeraPad のポータブル化 {#vcc9c530}
+
+- [USBメモリ活用講座【基礎編・TeraPadのポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/misc/terapad.shtml)
