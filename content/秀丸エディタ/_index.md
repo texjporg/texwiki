@@ -28,7 +28,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 秀丸エディタ用マクロ {#m32041fb}
 
-- [祝鳥 (のりてふ)](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/fortex.html)
+- [祝鳥 (のりてふ)](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/fortex.html)/[LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
     (阿部 紀行 (あべのり) さん)
 
 - [RaTeX0e](http://uca-works.com/hidemaru_macro/RaTeX0e.html)/[cRaTeX0e](http://uca-works.com/hidemaru_macro/cRaTeX0e.html)
@@ -38,7 +38,11 @@ pukiwiki: "秀丸エディタ"
     (谷内 稜 さん)
 
 - [秀丸エディタで LaTeX (hidemacro-070502.tar.gz)](http://www.cymric.jp/old/tex/hidemaru.html)
+    (Maxima 普及委員会)
+
 - [秀丸で簡単コンパイル](http://outsider.imawamukashi.com/TeX/hidemacro.html)
+    (Outsider's Website)
+
 - [トリビュート](http://www.vector.co.jp/soft/win95/writing/se259789.html)/[LaTeX2e 用強調表示定義ファイル](http://homepage2.nifty.com/masema/software/LaTeX_hilight.html)
     (ませま さん)
 
