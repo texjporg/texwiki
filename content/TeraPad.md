@@ -134,7 +134,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 <table>
 <tbody>
-<tr><td>%n &amp; %b.pdf &amp; exit　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>%n &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -154,11 +154,11 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 </tbody>
 </table>
 
-☐ 非選択時は使用不可(H)　　　 ☑ メインメニューに表示(M)
+☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐ 起動時に実行(T)　　　　　　　　☑ ポップアップメニューに表示(P)
+☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐ 終了まで待機する(L)
+☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -200,7 +200,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K platex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -208,7 +208,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp; %b.dvi &amp; exit　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>%n &amp;&amp; %b.dvi &amp; exit 　 　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -228,11 +228,11 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 </tbody>
 </table>
 
-☐ 非選択時は使用不可(H)　　　 ☑ メインメニューに表示(M)
+☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐ 起動時に実行(T)　　　　　　　　☑ ポップアップメニューに表示(P)
+☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐ 終了まで待機する(L)
+☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -274,7 +274,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K platex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -282,7 +282,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp; dvipdfmx %b.dvi &amp; %b.pdf &amp; exit　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>%n &amp;&amp; dvipdfmx %b.dvi &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -302,11 +302,11 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 </tbody>
 </table>
 
-☐ 非選択時は使用不可(H)　　　 ☑ メインメニューに表示(M)
+☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐ 起動時に実行(T)　　　　　　　　☑ ポップアップメニューに表示(P)
+☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐ 終了まで待機する(L)
+☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -354,7 +354,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K platex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -362,7 +362,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp; dvips -Ppdf -z -f %b.dvi &#x7c; bkmk2uni &gt; %b.ps &amp; ps2pdf.bat %b.ps &amp; %b.pdf &amp; exit</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>%n &amp;&amp; dvips -Ppdf -z -f %b.dvi &#x7c; bkmk2uni &gt; %b.ps &amp;&amp; ps2pdf.bat %b.ps &amp;&amp; %b.pdf &amp; exit</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -382,11 +382,11 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 </tbody>
 </table>
 
-☐ 非選択時は使用不可(H)　　　 ☑ メインメニューに表示(M)
+☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐ 起動時に実行(T)　　　　　　　　☑ ポップアップメニューに表示(P)
+☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐ 終了まで待機する(L)
+☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -404,6 +404,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ### TeraPad で LaTeX の環境を構築するのに参考にしたサイト {#n06fef85}
 
+- [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
+- [コマンドプロンプトを使う](http://wiki.livedoor.jp/niloufar/d/%A5%B3%A5%DE%A5%F3%A5%C9%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8%A4%F2%BB%C8%A4%A6)
 - [TeraPad から LaTeX のコンパイルをする方法](http://d.hatena.ne.jp/hiratake55/20090710)
     (hiratake55 さん)
 
