@@ -21,17 +21,15 @@ LaTeX 環境も簡単に作ることができます。
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 
-▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 <img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="" width="20" height="20">
 
-terapad.tex - TeraPad
+<span style="color:Black;background-color:#BBBBFF;">terapad.tex - TeraPad</span>
 
-▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+<div style="clear:both"></div>
 
-ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)
-
-══════════════════════════════════════════════════
+<span style="color:Black;background-color:Silver;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
 
 ```
 \documentclass[12pt]{jsarticle}
@@ -96,7 +94,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 \end{document}
 ```
 
-▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 ### TeraPad で LaTeX (TeX -> PDF) {#m56b7465}
 
@@ -110,9 +108,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -164,7 +160,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-　　　　　　　　　　　　　　　　　　　　　　　\[　　　　OK　　　　\]　\[　　キャンセル　　\]
+　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
@@ -184,9 +180,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -238,7 +232,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-　　　　　　　　　　　　　　　　　　　　　　　\[　　　　OK　　　　\]　\[　　キャンセル　　\]
+　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
@@ -258,9 +252,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -312,7 +304,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-　　　　　　　　　　　　　　　　　　　　　　　\[　　　　OK　　　　\]　\[　　キャンセル　　\]
+　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
@@ -338,9 +330,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -392,7 +382,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-　　　　　　　　　　　　　　　　　　　　　　　\[　　　　OK　　　　\]　\[　　キャンセル　　\]
+　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
