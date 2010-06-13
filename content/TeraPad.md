@@ -419,3 +419,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 - [USBメモリ活用講座【基礎編・TeraPadのポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/misc/terapad.shtml)
 - [C言語開発/TeX組版環境のポータブル化とUSBウィルス対策について (PDF)](http://info.numazu-ct.ac.jp/comm01/include/netcommons_file.php?path=/announcement/1/ipe2009p223takahashi.pdf)
+
+### TeraPad 用ツール {#s85f97e6}
+
+- [TeraPad Tools](http://www5f.biglobe.ne.jp/~t-susumu/library/tptools.html)
+- [TpBkGen](http://sites.google.com/site/yosibe1003/terapadtool/tpbkgen)
+    日付･時刻毎に別々のバックアップファイルを作成
