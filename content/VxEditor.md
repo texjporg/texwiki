@@ -21,7 +21,7 @@ LaTeX 環境を簡単に作ることができます。
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
-\[追加(A)...\] をクリックし，ツールのプロパティに以下の値を入力し，\[OK\] を押す。
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
 ***
 
@@ -41,7 +41,7 @@ LaTeX 環境を簡単に作ることができます。
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d $DIRPATH &amp;&amp; eplatex $FILEPATH &amp;&amp; dvipdfmx $NAMEONLY.dvi &amp;&amp; $NAMEONLY.pdf &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > ※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると
 
