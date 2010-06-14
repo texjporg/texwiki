@@ -113,8 +113,8 @@ Babel 対応版です（同書付録H参照）。
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
 - [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
-    から[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip)
-    と[lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip)
+    から[lhfnt35g-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-gen-mf.zip)
+    と[lhfnt35g-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-source.zip)
     をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は
     元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
 
