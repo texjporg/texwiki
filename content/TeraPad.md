@@ -124,7 +124,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 <table>
 <tbody>
-<tr><td>cmd /K pdflatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -132,7 +132,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 <table>
 <tbody>
-<tr><td>%n &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>/k pdflatex %n &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -196,7 +196,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -204,7 +204,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp;&amp; %b.dvi &amp; exit 　 　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>/k eplatex %n &amp;&amp; %b.dvi &amp; exit 　 　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -268,7 +268,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -276,7 +276,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp;&amp; dvipdfmx %b.dvi &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>/k eplatex %n &amp;&amp; dvipdfmx %b.dvi &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
@@ -346,7 +346,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>cmd /K eplatex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
+<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
 </tbody>
 </table>
 
@@ -354,7 +354,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <table>
 <tbody>
-<tr><td>%n &amp;&amp; dvips -Ppdf -z -f %b.dvi &#x7c; bkmk2uni &gt; %b.ps &amp;&amp; ps2pdf.bat %b.ps &amp;&amp; %b.pdf &amp; exit</td><td style="background-color:#EEE">　&gt;　</td></tr>
+<tr><td>/k eplatex %n &amp;&amp; dvips -Ppdf -z -f %b.dvi &#x7c; bkmk2uni &gt; %b.ps &amp;&amp; ps2pdf.bat %b.ps &amp;&amp; %b.pdf &amp; exit</td><td style="background-color:#EEE">　&gt;　</td></tr>
 </tbody>
 </table>
 
