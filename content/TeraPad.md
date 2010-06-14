@@ -15,17 +15,17 @@ TeraPad は国産でフリーのシンプルなテキストエディタです。
 
 テキストエディタとして必要十分な機能があり，非常にバランスのよいエディタです。
 
-LaTeX 環境も簡単に作ることができます。
+LaTeX 環境を簡単に作ることができます。
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
-- [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
+- [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 <img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="" width="20" height="20">
 
-<span style="color:Black;background-color:#BBBBFF;">terapad.tex - TeraPad</span>
+terapad.tex - TeraPad
 
 <div style="clear:both"></div>
 
