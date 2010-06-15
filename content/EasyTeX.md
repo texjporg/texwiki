@@ -1,0 +1,260 @@
+---
+title: "EasyTeX"
+url: "/EasyTeX/"
+date: 2010-06-15T08:07:06Z
+pukiwiki: "EasyTeX"
+---
+
+# EasyTeX
+
+## EasyTeX {#et3357}
+
+### EasyTeX とは {#eta184ab}
+
+EasyTeX は TeX の入力とコマンドの実行を簡単にするためのソフトです。
+
+公式サイトは次のところにあります。
+
+- [中川仁のホームページ &mdash; TeX を使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
+
+<img src="http://www.2009-s1-34.com/index.php?plugin=attach&amp;refer=LaTeX%A4%C8%A4%AB&amp;openfile=05.jpg" alt="EasyTeX の画面">
+
+LaTeX コマンドをマウスで選び，クリックすることで
+自動的にコマンドが挿入される補完機能を持っています。
+
+また，国産ソフトなので，
+メニューも日本語で親しみやすいですし，ヘルプには LaTeX の解説まで
+ついています。
+
+さらには，レジストリ (ソフトや OS に関する情報の
+データベース) への書き込みを行いませんので，
+システムを不安定にさせる要素の1つである「レジストリの肥大化」を
+心配せずにすみます。
+
+[Aspell](/Aspell/) などのスペルチェッカも起動可能です。
+
+バージョンが新しくなり，登録されてないコマンドのメニューを新たに作ることが
+できるようになりました。ショートカットのカスタマイズも可能です。
+
+また，以前ショートカットの面での不備を指摘しましたが，
+最新版ではそのような不備もなくなりました。
+
+シンプルな統合環境をお求めの方にはお勧めのソフトです。
+
+### ダウンロードとインストール {#bf9167cb}
+
+「[EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)」
+からダウンロードできます。
+
+zip ファイルの場合はファイルを適当な場所に展開 (解凍) するだけで
+インストールは終了です。
+
+exe ファイル (インストール機能付き) の場合はインストーラーの指示に従ってインストールします。
+
+インストール終了後，EasyTeX.exe を実行してください。
+
+### 設定 {#etcb6f8d}
+
+初めて起動したときは， 「TeX環境設定」 というウィンドウが表示されます。
+
+このウィンドウで，初期設定をします。
+
+なお，この設定は ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ で後から設定を
+やり直すことができます。
+
+ここでは，eplatex.exe  (epLaTeX の実行ファイル) が C:\w32tex\bin にあると仮定します。
+
+なお， \[TeX環境を自動設定する\] は使わずに，手動で設定を行います。
+
+***
+
+<strong>\[TeXExe\]</strong><span style="color:Black;background-color:#EEEEEE;">\[TeXOption\]\[Spell\]\[PS/PDF\]</span>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
+
+***
+
+<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]</span><strong>\[TeXOption\]</strong><span style="color:Black;background-color:#EEEEEE;">\[Spell\]\[PS/PDF\]</span>
+
+> 言語
+
+> <span style="color:#3333CC;">◎</span>日本語　　　　　　　　　　　☐検索したTeXラベルをソートする
+
+> ◯英語
+
+> TeXコンパイラ　　　　　　　　☐source special
+
+> pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span>
+
+> <span style="color:White;background-color:#2266EE;">epLaTeX　　　　　 </span>　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する
+
+> jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
+
+epLaTeX を選択
+
+***
+
+<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]</span><strong>\[Spell\]</strong><span style="color:Black;background-color:#EEEEEE;">\[PS/PDF\]</span>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe
+
+> 起動オプション --lang=en -t -c
+
+スペルチェッカーを使わない人は何も入力しなくてもOK
+
+***
+
+<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]\[Spell\]</span><strong>\[PS/PDF\]</strong>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe
+
+> PDF Readerを開くタイミング　　300　　⧫
+
+***
+
+<strong>設定が完了したら，\[Iniファイルに保存\] を押して \[OK\] を押します。</strong>
+
+[LaTeXとか - PukiWiki](http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB) も参考になるかもしれません。
+
+<!-- 現在の EasyTeX は DVI -> PDF 変換機能や PDF ファイル閲覧機能があるので -->
+<!-- ここはコメントアウトしときます -->
+
+<!-- ついでに，［オプション］ → ［ツールの設定］ で -->
+<!-- Program0 を dvipdfmx に，Program1 を「PDF 閲覧」に設定しておきます。 -->
+
+<!-- :DVI → PDF| -->
+<!-- :タイトル|DVI → PDF -->
+<!-- :プログラム|dvipdfmx.exe -->
+<!-- :実行時引数|%n.dvi -->
+
+<!-- - --  -->
+
+<!-- :PDF 閲覧| -->
+<!-- :タイトル|PDF 閲覧 -->
+<!-- :プログラム|cmd.exe /C START （Windows 95, 98, Me では -->
+<!-- cmd.exe を command.com に置き換えるとうまくいくかも。） -->
+<!-- :実行時引数|%n.pdf -->
+
+<!-- あとは ［登録］ボタンを押し，[OK] をクリックします。 -->
+
+<!-- こうすることでメニューバーの ［ツール］ より，[DVI → PDF] を選べば -->
+<!-- dvipdfmx で DVI ファイルが PDF ファイルに変換され，［PDF 閲覧］ を選べば -->
+<!-- PDF ファイルが（関連付けに従って Adobe Reader などが起動し，） -->
+<!-- PDF を閲覧できるようになります。 -->
+
+### 使い方 {#etu162c1}
+
+簡単な TeX ソースを作り，コンパイル，プレビューまで行いましょう。
+
+まず，［ﾌｧｲﾙ(F)］ → ［新規作成(N)］ と選んでいきます。
+
+新規ファイルのウィンドウが開きます。
+
+次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］ と選んでいきます。
+
+出てきたダイアログで，
+
+文書ｸﾗｽ
+: 小論文(jarticle)
+
+用紙ｻｲｽﾞ
+: A4j
+
+文字ｻｲｽﾞ
+: 12ポイント
+
+サイズを12ポイントにしたのは，この大きさのほうが見やすいためです。
+
+［ﾀｲﾄﾙ］ と ［著者］ を適当に書きます。
+
+［使用する］ の部分には使用する
+スタイルファイルを指定します（\usepackage コマンドで指定するものです）。
+
+一通り終わったら \[OK\] を押します。
+
+一気に沢山のコマンドが書き加えられているのが分かりますね。
+
+こうした補完は ［TeXﾃｷｽﾄ(T)］ と ［TeX数式(M)］ に多く入っています。
+
+色々と試してみましょう。
+
+一通り書き終わったら ［ｺﾝﾊﾟｲﾙ(C)］ をクリックします。
+
+うまくいけば，epLaTeX によって DVI ファイルが生成されます。
+
+そして \[DVI(D)\] をクリックすると，DVI ファイルがプレビューできます。
+
+［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で PDFファイルのページサイズの設定ウィンドウが表示されます。
+
+ページサイズを指定し，\[OK\] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます。
+
+あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば
+良いでしょう。
+
+ちなみに，
+［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換2(R)］は dvipdfmx ではなく [dvips](/dvips/) + [Ghostscript](/Ghostscript/) で，処理を行います。
+
+忘れがちな機能として，
+ある範囲を一括コメントイン・コメントアウトする機能があります。
+
+範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で
+コメントイン・アウトできますので，活用してみてください。
+
+### EasyTeX と dviout との連携 (source special) {#etsa7019}
+
+EasyTeX の実行ファイルである EasyTeX.exe が
+例えば C:\w32tex\easytex にある場合には，[dviout for Windows](/dviout/) の
+\[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
+
+```
+`easytex easytex +%d %s``C:\w32tex\easytex
+```
+
+と書き込んで \[Save\] → \[OK\] してください。
+
+dviout でマウスカーソルが矢印になっているときに画面の一部を
+ダブルクリックすると，EasyTeX が前面に出て，該当個所に飛ぶはずです。
+
+逆に，EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます。
+
+出てきたウィンドウで \[TeXOption\] タブの \[source special\] にチェックを入れます。
+
+［Iniファイルに保存］ → ［OK］ の順にクリックします。
+
+EasyTeX を再起動します。
+
+EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しながら
+\[DVI\] ボタンを押してプレビューしたときに，DVI ファイルの該当領域に
+ジャンプするはずです。
+
+> 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
+> 他人に渡す文書（投稿論文の TeX ソースの類）の最終版」を作成する際には
+> 用いないでください。実際，source specials を用いるか否かによって
+> 体裁あるいは「タイプセットの可否」が変わる例が知られています
+> （[qa:8914](https://okumuralab.org/~okumura/texfaq/qa/8914.html)，[qa:14224](https://okumuralab.org/~okumura/texfaq/qa/14224.html) 参照）。
+
+### EasyTeX 用マクロ {#j92ac132}
+
+- [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
+    (谷内 稜 さん)
+
+- [TeXエディタ](http://www2s.biglobe.ne.jp/~Taiju/leaf/tjsoft17_texeditor.htm)
+    (H. Shinozaki さん)
+
+- [漢文エディタ](http://www2s.biglobe.ne.jp/~Taiju/leaf/tjsoft05_kanbun.htm)
+    (H. Shinozaki さん)
+
+### Comments {#etacm8ab}
+
+- 修正等は自由にしていただいて構いません。ちょっとしたコメント・質問等はここにどうぞ。 -- これを書いた人 2005-11-09 (水) 14:54:34
+- easyTeXをインストールしましたが、コンパイルできません・・・TEX実行ﾌｧｲﾙのパスが駄目だそうです。どうしたらよいでしょうか？？ -- ﾆｬｵ 2006-07-20 (木) 21:40:08
+- 「初期設定」は，終わっているのでしょうか？ 詳しいことが分かりませんので「設定を見直してみてください」ぐらいしかアドバイス出来ません。もちろん TeX そのもののインストールは終わっているんですよね。 -- tony 2006-07-21 (金) 08:39:55
+- EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． -- textex 2006-07-29 (土) 01:45:13
+- [質問のしかた](</質問のしかた/>)をよく読んで，続きは[TeX Q &amp; A 掲示板](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) で・・・ -- tony 2006-07-29 (土) 04:13:51
+- インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． -- textex 2006-08-03 (木) 20:01:49
