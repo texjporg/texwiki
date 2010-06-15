@@ -17,6 +17,134 @@ LaTeX 環境を簡単に作ることができます。
 
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
 
+### VxEditor で LaTeX (TeX -> PDF) {#jef6ef8d}
+
+<em>※注意</em>
+
+> <em>欧文専用です。日本語は使えません。</em>
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します。
+
+***
+
+<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+
+> 設定
+
+> タイトル(T):
+
+> TeX -> PDF
+
+> 実行ファイル(P):
+
+> cmd
+
+> 作業フォルダ(F):
+
+> コマンドラインパラメータ(C):
+
+> /k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
+
+> <span style="color:#441177;">　　それらを実行することができます．</span>
+
+<span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+
+> 表示
+
+> ☑ツールを有効にする(E)
+
+> ☑メインメニューに表示する(M)
+
+> ☑ポップアップメニューに表示する(P)
+
+> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+
+> ☐ツールバーに表示する(T)
+
+> アイコン(I):
+
+> 起動
+
+> ☐実行時にテキストを保存する(S)
+
+> ショートカット(H):　Ctrl + Alt + H
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + H を押す
+- メニューの \[ツール(T)\] → \[TeX -> PDF\]
+- エディタ画面を右クリック → \[TeX -> PDF\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます。
+
+### VxEditor で LaTeX (TeX -> DVI) {#v2edf4e6}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します。
+
+***
+
+<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+
+> 設定
+
+> タイトル(T):
+
+> TeX -> DVI
+
+> 実行ファイル(P):
+
+> cmd
+
+> 作業フォルダ(F):
+
+> コマンドラインパラメータ(C):
+
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
+
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
+
+> <span style="color:#441177;">　　それらを実行することができます．</span>
+
+<span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+
+> 表示
+
+> ☑ツールを有効にする(E)
+
+> ☑メインメニューに表示する(M)
+
+> ☑ポップアップメニューに表示する(P)
+
+> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+
+> ☐ツールバーに表示する(T)
+
+> アイコン(I):
+
+> 起動
+
+> ☐実行時にテキストを保存する(S)
+
+> ショートカット(H):　Ctrl + Alt + J
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + J を押す
+- メニューの \[ツール(T)\] → \[TeX -> DVI\]
+- エディタ画面を右クリック → \[TeX -> DVI\]
+
+TeX ファイルがコンパイルされ DVI ファイルが表示されます。
+
 ### VxEditor で LaTeX (TeX -> DVI -> PDF) {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
@@ -76,5 +204,67 @@ LaTeX 環境を簡単に作ることができます。
 - Ctrl + Alt + K を押す
 - メニューの \[ツール(T)\] → \[TeX -> DVI -> PDF\]
 - エディタ画面を右クリック → \[TeX -> DVI -> PDF\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます。
+
+### VxEditor で LaTeX (TeX -> DVI -> PS -> PDF) {#v9c2efca}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します。
+
+***
+
+<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+
+> 設定
+
+> タイトル(T):
+
+> TeX -> DVI -> PS -> PDF
+
+> 実行ファイル(P):
+
+> cmd
+
+> 作業フォルダ(F):
+
+> コマンドラインパラメータ(C):
+
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
+
+> <span style="color:#441177;">　　それらを実行することができます．</span>
+
+<span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+
+> 表示
+
+> ☑ツールを有効にする(E)
+
+> ☑メインメニューに表示する(M)
+
+> ☑ポップアップメニューに表示する(P)
+
+> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+
+> ☐ツールバーに表示する(T)
+
+> アイコン(I):
+
+> 起動
+
+> ☐実行時にテキストを保存する(S)
+
+> ショートカット(H):　Ctrl + Alt + L
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + L を押す
+- メニューの \[ツール(T)\] → \[TeX -> DVI -> PS -> PDF\]
+- エディタ画面を右クリック → \[TeX -> DVI -> PS -> PDF\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます。
