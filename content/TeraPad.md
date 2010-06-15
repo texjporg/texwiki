@@ -13,7 +13,7 @@ pukiwiki: "TeraPad"
 
 TeraPad は国産でフリーのシンプルなテキストエディタです。
 
-テキストエディタとして必要十分な機能があり，非常にバランスのよいエディタです。
+テキストエディタとして必要十分な機能があり，使いやすく，バランスのよいエディタです。
 
 LaTeX 環境を簡単に作ることができます。
 
@@ -29,7 +29,7 @@ terapad.tex - TeraPad
 
 <div style="clear:both"></div>
 
-<span style="color:Black;background-color:Silver;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
+<span style="color:Black;background-color:#DDDDDD;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
 
 ```
 \documentclass[12pt]{jsarticle}
@@ -104,59 +104,35 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
-\[追加(I)...\] をクリックして以下の値を入力し，\[OK\] を押す。
+\[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
-
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-名前\["-"は区切り線\](N):
+> 名前\["-"は区切り線\](N):
 
-<table>
-<tbody>
-<tr><td>TeX -&gt; PDF　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> TeX -> PDF
 
-実行ファイル(E):
+> 実行ファイル(E):
 
-<table>
-<tbody>
-<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> cmd
 
-コマンドラインパラメータ(C):
+> コマンドラインパラメータ(C):
 
-<table>
-<tbody>
-<tr><td>/k pdflatex %n &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
-</tbody>
-</table>
+> /k cd /d "%d" &amp;&amp; pdflatex "%n" &amp;&amp; "%b.pdf" &amp; exit
 
-作業フォルダ(D):
+> 作業フォルダ(D):
 
-<table>
-<tbody>
-<tr><td>%d　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> ファイルの上書き保存(S):　　　　 キー(K):
 
-ファイルの上書き保存(S):　　　　　キー(K):
+> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + H
 
-<table>
-<tbody>
-<tr><td style="background-color:#EEE">上書き保存しない　　　　　　　▼</td><td>Ctrl + Alt + H　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
+> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-☐終了まで待機する(L)
+> ☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -176,59 +152,35 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
-\[追加(I)...\] をクリックして以下の値を入力し，\[OK\] を押す。
+\[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
-
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-名前\["-"は区切り線\](N):
+> 名前\["-"は区切り線\](N):
 
-<table>
-<tbody>
-<tr><td>TeX -&gt; DVI　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> TeX -> DVI
 
-実行ファイル(E):
+> 実行ファイル(E):
 
-<table>
-<tbody>
-<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> cmd
 
-コマンドラインパラメータ(C):
+> コマンドラインパラメータ(C):
 
-<table>
-<tbody>
-<tr><td>/k eplatex %n &amp;&amp; %b.dvi &amp; exit 　 　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
-</tbody>
-</table>
+> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; "%b.dvi" &amp; exit
 
-作業フォルダ(D):
+> 作業フォルダ(D):
 
-<table>
-<tbody>
-<tr><td>%d　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> ファイルの上書き保存(S):　　　　 キー(K):
 
-ファイルの上書き保存(S):　　　　　キー(K):
+> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + J
 
-<table>
-<tbody>
-<tr><td style="background-color:#EEE">上書き保存しない　　　　　　　▼</td><td>Ctrl + Alt + J　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
+> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-☐終了まで待機する(L)
+> ☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -248,59 +200,35 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
-\[追加(I)...\] をクリックして以下の値を入力し，\[OK\] を押す。
+\[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
-
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-名前\["-"は区切り線\](N):
+> 名前\["-"は区切り線\](N):
 
-<table>
-<tbody>
-<tr><td>TeX -&gt; DVI -&gt; PDF　　　 　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> TeX -> DVI -> PDF
 
-実行ファイル(E):
+> 実行ファイル(E):
 
-<table>
-<tbody>
-<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> cmd
 
-コマンドラインパラメータ(C):
+> コマンドラインパラメータ(C):
 
-<table>
-<tbody>
-<tr><td>/k eplatex %n &amp;&amp; dvipdfmx %b.dvi &amp;&amp; %b.pdf &amp; exit　 　　　　　　　　</td><td style="background-color:#EEE">　&gt;　</td></tr>
-</tbody>
-</table>
+> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
 
-作業フォルダ(D):
+> 作業フォルダ(D):
 
-<table>
-<tbody>
-<tr><td>%d　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> ファイルの上書き保存(S):　　　　 キー(K):
 
-ファイルの上書き保存(S):　　　　　キー(K):
+> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + K
 
-<table>
-<tbody>
-<tr><td style="background-color:#EEE">上書き保存しない　　　　　　　▼</td><td>Ctrl + Alt + K　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
+> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-☐終了まで待機する(L)
+> ☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
@@ -326,59 +254,35 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
-\[追加(I)...\] をクリックして以下の値を入力し，\[OK\] を押す。
+\[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
-<span style="color:Black;background-color:Silver;">ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☒</span>
-
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-名前\["-"は区切り線\](N):
+> 名前\["-"は区切り線\](N):
 
-<table>
-<tbody>
-<tr><td>TeX -&gt; DVI -&gt; PS -&gt; PDF　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> TeX -> DVI -> PS -> PDF
 
-実行ファイル(E):
+> 実行ファイル(E):
 
-<table>
-<tbody>
-<tr><td>cmd　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> cmd
 
-コマンドラインパラメータ(C):
+> コマンドラインパラメータ(C):
 
-<table>
-<tbody>
-<tr><td>/k eplatex %n &amp;&amp; dvips -Ppdf -z -f %b.dvi &#x7c; bkmk2uni &gt; %b.ps &amp;&amp; ps2pdf.bat %b.ps &amp;&amp; %b.pdf &amp; exit</td><td style="background-color:#EEE">　&gt;　</td></tr>
-</tbody>
-</table>
+> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
 
-作業フォルダ(D):
+> 作業フォルダ(D):
 
-<table>
-<tbody>
-<tr><td>%d　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td><td style="background-color:#EEE">　...　</td></tr>
-</tbody>
-</table>
+> ファイルの上書き保存(S):　　　　 キー(K):
 
-ファイルの上書き保存(S):　　　　　キー(K):
+> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + L
 
-<table>
-<tbody>
-<tr><td style="background-color:#EEE">上書き保存しない　　　　　　　▼</td><td>Ctrl + Alt + L　　　　　　　　　　　　</td></tr>
-</tbody>
-</table>
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
 
-☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
+> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
 
-☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-☐終了まで待機する(L)
+> ☐終了まで待機する(L)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
