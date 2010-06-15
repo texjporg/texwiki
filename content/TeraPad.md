@@ -29,7 +29,7 @@ terapad.tex - TeraPad
 
 <div style="clear:both"></div>
 
-<span style="color:Black;background-color:#DDDDDD;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
+<span style="color:Black;background-color:#CCDDFF;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
 
 ```
 \documentclass[12pt]{jsarticle}
