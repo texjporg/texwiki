@@ -13,6 +13,8 @@ pukiwiki: "VxEditor"
 
 VxEditor は軽快に動作する国産でフリーのテキストエディタです。
 
+TeraPad と同様に使いやすいエディタです。
+
 LaTeX 環境を簡単に作ることができます。
 
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
@@ -231,7 +233,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
