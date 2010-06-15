@@ -13,7 +13,7 @@ pukiwiki: "TeraPad"
 
 TeraPad は国産でフリーのシンプルなテキストエディタです。
 
-テキストエディタとして必要十分な機能があり，使いやすく，バランスのよいエディタです。
+テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです。
 
 LaTeX 環境を簡単に作ることができます。
 
@@ -53,11 +53,11 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 \item
  画面分割
 \item
- D\&D 編集
+ D \& D 編集
 \item
  IME の再変換に対応
 \item
- 元に戻す, やり直し (64～10000回の範囲で設定可能)
+ 元に戻す, やり直し (64 ～ 10000 回の範囲で設定可能)
 \item
  HTML, Perl, Ruby, C/C\verb-++-, VB, Delphi などの各種編集モード
 \item
@@ -85,7 +85,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 \item
  検索, 置換機能
 \item
- オートインデント (Shiftで切替可能)
+ オートインデント (Shift で切替可能)
 \item
  テキストの印刷 (コマンドラインパラメータ「/p」で印刷可能)
 \item
@@ -270,7 +270,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
+> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
 
 > 作業フォルダ(D):
 
