@@ -25,7 +25,7 @@ LaTeX 環境を簡単に作ることができます。
 
 ***
 
-<strong>\[ツール\]</strong>\[オプション\]\[自動実行\]\[文書タイプ\]
+<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
 
 > 設定
 
@@ -43,11 +43,11 @@ LaTeX 環境を簡単に作ることができます。
 
 > /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
-> ※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
-> それらを実行することができます．
+> <span style="color:#441177;">　　それらを実行することができます．</span>
 
-\[ツール\]<strong>\[オプション\]</strong>\[自動実行\]\[文書タイプ\]
+<span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
 
 > 表示
 
@@ -57,7 +57,7 @@ LaTeX 環境を簡単に作ることができます。
 
 > ☑ポップアップメニューに表示する(P)
 
-> ツールのグループ番号(N):　　\[グループ１　　　　　　▼\]
+> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
 
 > ☐ツールバーに表示する(T)
 
@@ -70,3 +70,11 @@ LaTeX 環境を簡単に作ることができます。
 > ショートカット(H):　Ctrl + Alt + K
 
 ***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + K を押す
+- メニューの \[ツール(T)\] → \[TeX -> DVI -> PDF\]
+- エディタ画面を右クリック → \[TeX -> DVI -> PDF\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます。
