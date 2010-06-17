@@ -47,7 +47,7 @@ LaTeX 環境を簡単に作ることができます。
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; pdflatex -etex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
@@ -109,7 +109,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex -etex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
@@ -171,7 +171,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex -etex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
@@ -233,7 +233,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; eplatex -etex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
