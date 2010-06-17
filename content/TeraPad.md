@@ -37,8 +37,11 @@ terapad.tex - TeraPad
 
 ```
 \usepackage{atbegshi}
-\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
-\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+\ifnum 42146=\euc"A4A2
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
 \usepackage[dvipdfmx]{hyperref}
 \hypersetup{pdftitle={TeraPad について}}
 ```
@@ -120,7 +123,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; pdflatex "%n" &amp;&amp; "%b.pdf" &amp; exit
+> /k cd /d "%d" &amp;&amp; pdflatex -etex "%n" &amp;&amp; "%b.pdf" &amp; exit
 
 > 作業フォルダ(D):
 
@@ -168,7 +171,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; "%b.dvi" &amp; exit
+> /k cd /d "%d" &amp;&amp; eplatex -etex "%n" &amp;&amp; "%b.dvi" &amp; exit
 
 > 作業フォルダ(D):
 
@@ -216,7 +219,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
+> /k cd /d "%d" &amp;&amp; eplatex -etex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
 
 > 作業フォルダ(D):
 
@@ -270,7 +273,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
+> /k cd /d "%d" &amp;&amp; eplatex -etex "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
 
 > 作業フォルダ(D):
 
