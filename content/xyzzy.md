@@ -79,7 +79,8 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 手動で行う場合は，次のようにします。
 
 まず，「[やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)」 や
-[基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+[基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) や
+[xyzzy.src](http://github.com/southly/xyzzy.src/downloads)
 から
 xyzzy のファイルをダウンロードします。
 
