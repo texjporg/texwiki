@@ -13,7 +13,7 @@ pukiwiki: "WZ EDITOR"
 
 WZ EDITOR は 国産の Windows 用テキストエディタです。 (シェアウェア)
 
-公式サイトは [WZエディタ6](http://www.wzsoft.jp/wz6/) です。
+公式サイトは [WZソフトウェア - WZエディタ / WZモバイル](http://www.wzsoft.jp/) です。
 
 <img src="http://www.wzsoft.jp/wz6/rc27.png" alt="WZ EDITOR 6 の画面">
 
@@ -56,3 +56,4 @@ WZ EDITOR 6 の LaTeX に関する機能は次のページが参考になりま�
 以下の TeX 用マクロが使用できます。
 
 - [白鳥 (はくちょう) HackTeX](http://www.yatex.org/HackTeX/) (竹中 浩 さん) 野鳥系マクロ。ライセンスは GPL。
+- [TeXenv &amp; TeXdde](http://miko.org/~naruto/WZ/TeXenv/WZ_TeX.html) (NaruTo さん)
