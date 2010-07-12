@@ -25,7 +25,9 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
-- [PS_View](http://psview.sourceforge.net/) PostScript and PDF previewer based on the Ghostscript engine.
+- [PS_View](http://psview.sourceforge.net/)
+    環境変数 GS_DLL に Ghostscript の dll ファイル (C:\gs\gs8.71\bin\gsdll32.dll) を設定して，PATH に ps_view のディレクトリを設定すれば，psv.exe から ps ファイルが開けます．
+
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
 - [Piece de l'Ensemble](http://pop-club.hp.infoseek.co.jp/)（安宅さん &amp;
