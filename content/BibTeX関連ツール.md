@@ -122,6 +122,10 @@ BibTeX形式の出力があるWebアプリが公開されている
 
 - [export](http://jp.citeulike.org/export.adp)
 
+#### [Makino Takaki's Page (.ja)](http://www.snowelm.com/~t/index.ja.html) {#ded39e28}
+
+- [平文から BiBTeX エントリを自動生成](http://www.snowelm.com/~t/doc/tips/makebib.ja.html)
+
 #### その他のBibTeXデータベースと検索プラグイン {#ja2d2df0}
 
 - [ブラウザからの論文検索](http://keijisaito.info/arc/search/cs_thesis.htm)にあるデータベースのうち\[BibTeX文献情報含む\]と書かれているものは、BibTeXの出力があります。また、このページからWebブラウザに検索プラグインを導入することもできます。
