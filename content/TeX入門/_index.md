@@ -66,9 +66,10 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
     訳『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』（[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
     の原典です。
 
-- [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第4版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』（[技術評論社](http://www.gihyo.co.jp/)，2007年，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）……Microsoft
-    Windows，Mac OS X 用のバイナリファイルや
-    UNIX，UNIX 互換 OS 用のソースコードを収めた CD-ROM が附いています。
+- [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの最新の
+    [W32TeX](http://w32tex.org/) と
+    WinShell，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
+    CD-ROM が附いています。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
 
