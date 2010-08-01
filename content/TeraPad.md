@@ -15,7 +15,7 @@ TeraPad は国産でフリーのシンプルなテキストエディタです。
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです。
 
-LaTeX 環境を簡単に作ることができます。
+VxEditor と同様に，LaTeX 環境を簡単に作ることができます。
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
 - [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
@@ -123,7 +123,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "%d" &amp;&amp; pdfelatex "%n" &amp;&amp; "%b.pdf" &amp; exit
+> /k cd /d "%d" &amp;&amp; pdflatex "%n" &amp;&amp; "%b.pdf" &amp; exit
 
 > 作業フォルダ(D):
 
