@@ -47,7 +47,7 @@ LaTeX 環境を簡単に作ることができます。
 
 > コマンドラインパラメータ(C):
 
-> /k cd /d "$DIRPATH" &amp;&amp; pdfelatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> /k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
 
