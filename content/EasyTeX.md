@@ -11,35 +11,33 @@ pukiwiki: "EasyTeX"
 
 ### EasyTeX とは {#eta184ab}
 
-EasyTeX は TeX の入力とコマンドの実行を簡単にするためのソフトです。
+EasyTeX は TeX の入力とコマンドの実行を簡単にするためのソフトです．
 
-公式サイトは次のところにあります。
+公式サイトは次のところにあります．
 
 - [中川仁のホームページ &mdash; TeX を使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
 
 <img src="http://www.2009-s1-34.com/index.php?plugin=attach&amp;refer=LaTeX%A4%C8%A4%AB&amp;openfile=05.jpg" alt="EasyTeX の画面">
 
 LaTeX コマンドをマウスで選び，クリックすることで
-自動的にコマンドが挿入される補完機能を持っています。
+自動的にコマンドが挿入される補完機能を持っています．
 
-また，国産ソフトなので，
+国産ソフトなので，
 メニューも日本語で親しみやすいですし，ヘルプには LaTeX の解説まで
 ついています。
 
-さらには，レジストリ (ソフトや OS に関する情報の
-データベース) への書き込みを行いませんので，
-システムを不安定にさせる要素の1つである「レジストリの肥大化」を
-心配せずにすみます。
+レジストリ (ソフトや OS に関する情報の
+データベース) への書き込みを行いません．
 
 [Aspell](/Aspell/) などのスペルチェッカも起動可能です。
 
 バージョンが新しくなり，登録されてないコマンドのメニューを新たに作ることが
-できるようになりました。ショートカットのカスタマイズも可能です。
+できるようになりました．ショートカットのカスタマイズも可能です．
 
 また，以前ショートカットの面での不備を指摘しましたが，
-最新版ではそのような不備もなくなりました。
+最新版ではそのような不備もなくなりました．
 
-シンプルな統合環境をお求めの方にはお勧めのソフトです。
+シンプルな統合環境をお求めの方にはお勧めのソフトです．
 
 ### ダウンロードとインストール {#bf9167cb}
 
@@ -160,14 +158,20 @@ epLaTeX を選択
 
 「文書ｸﾗｽの設定」ダイアログで，
 
-文書ｸﾗｽ
-: 小論文 (jarticle)
+***
 
-用紙ｻｲｽﾞ
-: A4j
+> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ
 
-文字ｻｲｽﾞ
-: 12ポイント
+> <span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span>
+
+> 報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span>
+
+> 欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+
+> 欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
+>
+> ***
+>
 
 サイズを12ポイントにしたのは，この大きさのほうが見やすいためです。
 
