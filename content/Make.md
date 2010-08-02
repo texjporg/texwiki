@@ -266,8 +266,8 @@ updmap --setoption kanjiEmbed cktx
 - [teTeX-2.0 パッケージングメモ](http://www.nn.iij4u.or.jp/~tutimura/tex/tetex2.html)
     (土村さん)
 
-- [Mac OS XにTeXをインストールしよう](http://web.archive.org/web/20070509141819/http://macptex.appi.keio.ac.jp/~uchiyama/macosx/)
-    (内山さん (Internet Archive))
+- [Mac OS XにTeXをインストールしよう](http://macptex.appi.keio.ac.jp/~uchiyama/macosx/)
+    (内山さん)
 
 ### teTeX のインストール {#p46b71c8}
 
