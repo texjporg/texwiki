@@ -16,6 +16,7 @@ pukiwiki: "秀丸エディタ"
 
 - [秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
+- [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
 - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
 
 ### 秀丸エディタフリー制度 {#faebc82e}
