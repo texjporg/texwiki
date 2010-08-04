@@ -169,7 +169,19 @@ epLaTeX を選択
 > 欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
 > 欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
->
+
+> 使用する
+
+> ☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb <span style="color:#555555;background-color:#EEEEEE;">▲</span>
+
+> ☐タイトルを付けない　　　　　　epic,eepic
+
+> graphicx　 　 　 　 　 　 　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+
+> ﾀｲﾄﾙ
+
+> 著者
+
 > ***
 >
 
