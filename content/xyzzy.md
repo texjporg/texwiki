@@ -7,6 +7,8 @@ pukiwiki: "xyzzy"
 
 # xyzzy
 
+## xyzzy {#ea58addb}
+
 ## xyzzy とは {#xya184ab}
 
 xyzzy は柔軟なカスタマイズを可能にした，
@@ -177,10 +179,10 @@ C:\usr\local\share\xyzzy\xyzzycli.exe^s-g %d "%s"
 
 と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
 
-さてコンパイルですが，platex に src オプションを付けて実行します。すなわち，
+さてコンパイルですが，eplatex に src オプションを付けて実行します。すなわち，
 
 ```
-platex -src
+eplatex -src
 ```
 
 を実行するようにします。
@@ -188,7 +190,7 @@ platex -src
 後述する [KaTeX](#xykb6f8d) を使っているのであれば，~/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -src")
+(setq elisp::tex-command "eplatex -src")
 ```
 
 と書いておきます。
@@ -440,10 +442,10 @@ KaTeX 用の設定ですが，お勧めの設定とあわせ，~/.xyzzy に
 (push '("\\.\\(tex\\|aux\\|toc\\|lof\\|lot\\|idx\\|ind\\|glo\\|gls\\|bbl\\|sty\\|cls\\|clo\\|dtx\\|fdd?\\|ltx\\|dfu\\|ldf\\|4ht\\)$" . elisp::katex-mode) *auto-mode-alist*)
 ;;; オートロード
 (autoload 'elisp::katex-mode "katex" t)
- ;; タイプセットを pTeX で
- (setq elisp::tex-command "platex")
- ;; dviout に PATH を通しておらず，C:\dviout\dviout をプレビューに使いたい場合
- (setq elisp::dvi2-command "c:\\dviout\\dviout")
+ ;; タイプセットを e-pTeX で
+ (setq elisp::tex-command "eplatex")
+ ;; dviout に PATH を通しておらず，C:\w32tex\dviout\dviout をプレビューに使いたい場合
+ (setq elisp::dvi2-command "c:\\w32tex\\dviout\\dviout")
  ;; M-RET を有効に
  (set-extended-key-translate-table exkey-M-return #\M-RET)
  ;; ツールバー表示
