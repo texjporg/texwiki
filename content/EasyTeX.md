@@ -68,29 +68,13 @@ exe ファイル (インストール機能付き) の場合はインストーラ
 
 <strong>\[TeXExe\]</strong><span style="color:Black;background-color:#EEEEEE;">\[TeXOption\]\[Spell\]\[PS/PDF\]</span>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br><span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
 
 ***
 
 <span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]</span><strong>\[TeXOption\]</strong><span style="color:Black;background-color:#EEEEEE;">\[Spell\]\[PS/PDF\]</span>
 
-> 言語
-
-> <span style="color:#3333CC;">◎</span>日本語　　　　　　　　　　　☐検索したTeXラベルをソートする
-
-> ◯英語
-
-> TeXコンパイラ　　　　　　　　☐source special
-
-> pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span>
-
-> <span style="color:White;background-color:#2266EE;">epLaTeX　　　　　 </span>　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する
-
-> jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
+> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br><span style="color:#3333CC;">◎</span>日本語<br>◯英語<br>　　　　　　　　　　　　　　　　 ☐source special<br>TeXコンパイラ<br>pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br><span style="color:White;background-color:#2266EE;">epLaTeX　　　　　 </span>　　　　　 ☐ｺﾝﾊﾟｲﾙ画面を表示する<br>jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br><span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
 
 epLaTeX を選択
 
@@ -98,9 +82,7 @@ epLaTeX を選択
 
 <span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]</span><strong>\[Spell\]</strong><span style="color:Black;background-color:#EEEEEE;">\[PS/PDF\]</span>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe
-
-> 起動オプション --lang=en -t -c
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe<br>　　起動オプション --lang=en -t -c
 
 スペルチェッカーを使わない人は何も入力しなくてもOK
 
@@ -108,11 +90,7 @@ epLaTeX を選択
 
 <span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]\[Spell\]</span><strong>\[PS/PDF\]</strong>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe
-
-> PDF Readerを開くタイミング　　300　　⧫
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe<br><span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe<br>　PDF Readerを開くタイミング　　300　　⧫
 
 ***
 
@@ -160,28 +138,12 @@ epLaTeX を選択
 
 ***
 
-> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ
+> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ<br><span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span><br>欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> <span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span>
+> 使用する<br>　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>　　☐タイトルを付けない　　　　　　epic,eepic<br>　　　　　　　　　　　　　　　　　　　　　graphicx　　　　　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> 報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span>
-
-> 欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
-
-> 欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
-
-> 使用する
-
-> ☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb <span style="color:#555555;background-color:#EEEEEE;">▲</span>
-
-> ☐タイトルを付けない　　　　　　epic,eepic
-
-> graphicx　 　 　 　 　 　 　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
-
-> ﾀｲﾄﾙ
-
-> 著者
-
+> ﾀｲﾄﾙ<br>　<br>　著者<br>
+>
 > ***
 >
 
