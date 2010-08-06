@@ -9,7 +9,7 @@ pukiwiki: "TeraPad"
 
 ## TeraPad {#g9e6153d}
 
-### TeraPad とは {#wda2a461}
+## TeraPad とは {#wda2a461}
 
 TeraPad は国産でフリーのシンプルなテキストエディタです。
 
@@ -21,7 +21,7 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます。
 - [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
 <img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="" width="20" height="20">
 
@@ -97,9 +97,9 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 \end{document}
 ```
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
-### TeraPad で LaTeX (TeX -> PDF) {#m56b7465}
+## TeraPad で LaTeX (TeX -> PDF) {#m56b7465}
 
 <em>※注意</em>
 
@@ -109,39 +109,22 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 \[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+> 名前\["-"は区切り線\](N):<br>TeX -> PDF
 
-> 名前\["-"は区切り線\](N):
+> 実行ファイル(E):<br>cmd
 
-> TeX -> PDF
+> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; pdflatex "%n" &amp;&amp; "%b.pdf" &amp; exit
 
-> 実行ファイル(E):
+> 作業フォルダ(D):<br>
 
-> cmd
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + H
 
-> コマンドラインパラメータ(C):
-
-> /k cd /d "%d" &amp;&amp; pdflatex "%n" &amp;&amp; "%b.pdf" &amp; exit
-
-> 作業フォルダ(D):
-
-> ファイルの上書き保存(S):　　　　 キー(K):
-
-> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + H
-
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
-
-> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-> ☐終了まで待機する(L)
-
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
+>
+> ***
+>
 
 次のうちのどれかを実行
 
@@ -151,45 +134,28 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます。
 
-### TeraPad で LaTeX (TeX -> DVI) {#m290fc57}
+## TeraPad で LaTeX (TeX -> DVI) {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
 \[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+> 名前\["-"は区切り線\](N):<br>TeX -> DVI
 
-> 名前\["-"は区切り線\](N):
+> 実行ファイル(E):<br>cmd
 
-> TeX -> DVI
+> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; "%b.dvi" &amp; exit
 
-> 実行ファイル(E):
+> 作業フォルダ(D):<br>
 
-> cmd
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + J
 
-> コマンドラインパラメータ(C):
-
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; "%b.dvi" &amp; exit
-
-> 作業フォルダ(D):
-
-> ファイルの上書き保存(S):　　　　 キー(K):
-
-> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + J
-
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
-
-> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-> ☐終了まで待機する(L)
-
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
+>
+> ***
+>
 
 次のうちのどれかを実行
 
@@ -199,45 +165,28 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ DVI ファイルが表示されます。
 
-### TeraPad で LaTeX (TeX -> DVI -> PDF) {#g1f54992}
+## TeraPad で LaTeX (TeX -> DVI -> PDF) {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
 \[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+> 名前\["-"は区切り線\](N):<br>TeX -> DVI -> PDF
 
-> 名前\["-"は区切り線\](N):
+> 実行ファイル(E):<br>cmd
 
-> TeX -> DVI -> PDF
+> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
 
-> 実行ファイル(E):
+> 作業フォルダ(D):<br>
 
-> cmd
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + K
 
-> コマンドラインパラメータ(C):
-
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
-
-> 作業フォルダ(D):
-
-> ファイルの上書き保存(S):　　　　 キー(K):
-
-> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + K
-
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
-
-> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-> ☐終了まで待機する(L)
-
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
+>
+> ***
+>
 
 次のうちのどれかを実行
 
@@ -253,45 +202,28 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 1. Ctrl + Alt + K を押すと PDF ファイルが作成され，表示されます。
 1. PDF ビューアを閉じて，もう一度 Ctrl + Alt + K を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます。しおりを作成するためには2回コンパイルが必要です。
 
-### TeraPad で LaTeX (TeX -> DVI -> PS -> PDF) {#h42e3045}
+## TeraPad で LaTeX (TeX -> DVI -> PS -> PDF) {#h42e3045}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
 \[追加(I)...\] をクリックして，「ツールの編集」ウィンドウで以下の値を入力し，\[OK\] を押します。
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***
 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+> 名前\["-"は区切り線\](N):<br>TeX -> DVI -> PS -> PDF
 
-> 名前\["-"は区切り線\](N):
+> 実行ファイル(E):<br>cmd
 
-> TeX -> DVI -> PS -> PDF
+> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
 
-> 実行ファイル(E):
+> 作業フォルダ(D):<br>
 
-> cmd
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + L
 
-> コマンドラインパラメータ(C):
-
-> /k cd /d "%d" &amp;&amp; eplatex "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
-
-> 作業フォルダ(D):
-
-> ファイルの上書き保存(S):　　　　 キー(K):
-
-> <span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + L
-
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)
-
-> ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)
-
-> ☐終了まで待機する(L)
-
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
+>
+> ***
+>
 
 次のうちのどれかを実行
 
@@ -301,7 +233,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます。
 
-### TeraPad で LaTeX の環境を構築するのに参考にしたサイト {#n06fef85}
+## TeraPad で LaTeX の環境を構築するのに参考にしたサイト {#n06fef85}
 
 - [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
 - [コマンドプロンプトを使う](http://wiki.livedoor.jp/niloufar/d/%A5%B3%A5%DE%A5%F3%A5%C9%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8%A4%F2%BB%C8%A4%A6)
@@ -313,21 +245,21 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 - [Eee PC 901 にも TeX 環境](http://ngc1952.net/archives/category/tex)
 
-### TeraPad で 表の作成 {#p12e5284}
+## TeraPad で 表の作成 {#p12e5284}
 
 - [USBメモリ活用講座【付録・Excel/Calcの表のtabular形式への変換法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/tp2tbl.shtml)
 - [簡単な表の作成方法　－TeraPadを用いて－](http://homepage2.nifty.com/nandemoarchive/latex/kowaza_01.htm)
 
-### TeraPad の背景の色を黒にして文字の色を白にする {#ve550d2a}
+## TeraPad の背景の色を黒にして文字の色を白にする {#ve550d2a}
 
 - [TeraPadを黒背景で使う。](http://njmkktkg.blogspot.com/2009/09/terapad.html)
 
-### TeraPad のポータブル化 {#vcc9c530}
+## TeraPad のポータブル化 {#vcc9c530}
 
 - [USBメモリ活用講座【基礎編・TeraPadのポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/misc/terapad.shtml)
 - [C言語開発/TeX組版環境のポータブル化とUSBウィルス対策について (PDF)](http://info.numazu-ct.ac.jp/comm01/include/netcommons_file.php?path=/announcement/1/ipe2009p223takahashi.pdf)
 
-### TeraPad 用ツール {#s85f97e6}
+## TeraPad 用ツール {#s85f97e6}
 
 - [TeraPad Tools](http://www5f.biglobe.ne.jp/~t-susumu/library/tptools.html)
 - [TpBkGen](http://sites.google.com/site/yosibe1003/terapadtool/tpbkgen)
