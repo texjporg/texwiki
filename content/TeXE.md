@@ -34,26 +34,26 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 - インストール
 
-    ```
-     ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です。
-     <注意事項>
-     ・onig.dll は TeXE.exe と同じ階層においてください。(別途用意する場合)
-     ・.dat 等は TeXE.ini で場所を指定すれば移動、追加できます。
-    ```
+> ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です。
+
+> 注意事項>
+
+> ・onig.dll は TeXE.exe と同じ階層においてください。(別途用意する場合)
+
+> ・.dat 等は TeXE.ini で場所を指定すれば移動、追加できます。
 
 - アンインストール
 
-    ```
-     設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです。
-    ```
+> 設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです。
 
 ### 設定 {#jf6b3b60}
 
 \[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります。
 
 開始すると自動設定してくれますが，
-\[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になってしまうので
+\[TeX\] が platex.exe， \[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
 
+- platex.exe → eplatex.exe
 - jbibtex.exe → pbibtex.exe
 - dvipdfm.exe → dvipdfmx.exe
 
