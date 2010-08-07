@@ -138,9 +138,9 @@ epLaTeX を選択
 
 ***
 
-> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ<br><span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span><br>欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
+> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ<br><span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span><br>欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> 使用する<br>　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>　　☐タイトルを付けない　　　　　　epic,eepic<br>　　　　　　　　　　　　　　　　　　　　　graphicx　　　　　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+> 使用する<br>　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>　　☐タイトルを付けない　　　　　　epic,eepic<br>	　	　	　	　	　　　　　　　　　　　　　　　graphicx　	　	　	　	　	　	　	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
 > ﾀｲﾄﾙ<br>　<br>　著者<br>
 >
