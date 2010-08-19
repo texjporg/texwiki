@@ -23,8 +23,7 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます。
 
 ***
 
-<img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="" width="20" height="20">
-
+[<img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="TeraPad" width="20" height="20">](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
 terapad.tex - TeraPad
 
 <div style="clear:both"></div>
