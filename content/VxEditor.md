@@ -9,17 +9,15 @@ pukiwiki: "VxEditor"
 
 ## VxEditor {#v81da523}
 
-### VxEditor とは {#ub092d33}
+## VxEditor とは {#ub092d33}
 
 VxEditor は軽快に動作する国産でフリーのテキストエディタです。
 
-TeraPad と同様に使いやすいエディタです。
-
-LaTeX 環境を簡単に作ることができます。
+TeraPad と同様に，LaTeX 環境を簡単に作ることができます。
 
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
 
-### VxEditor で LaTeX (TeX -> PDF) {#jef6ef8d}
+## VxEditor で LaTeX (TeX -> PDF) {#jef6ef8d}
 
 <em>※注意</em>
 
@@ -35,33 +33,21 @@ LaTeX 環境を簡単に作ることができます。
 
 > 設定
 
-> タイトル(T):
+> タイトル(T):<br>TeX -> PDF
 
-> TeX -> PDF
+> 実行ファイル(P):<br>cmd
 
-> 実行ファイル(P):
+> 作業フォルダ(F):<br>
 
-> cmd
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
-> 作業フォルダ(F):
-
-> コマンドラインパラメータ(C):
-
-> /k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
-
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
-
-> <span style="color:#441177;">　　それらを実行することができます．</span>
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
 
 > 表示
 
-> ☑ツールを有効にする(E)
-
-> ☑メインメニューに表示する(M)
-
-> ☑ポップアップメニューに表示する(P)
+> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
 
 > ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
 
@@ -85,7 +71,7 @@ LaTeX 環境を簡単に作ることができます。
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます。
 
-### VxEditor で LaTeX (TeX -> DVI) {#v2edf4e6}
+## VxEditor で LaTeX (TeX -> DVI) {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -97,33 +83,21 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):
+> タイトル(T):<br>TeX -> DVI
 
-> TeX -> DVI
+> 実行ファイル(P):<br>cmd
 
-> 実行ファイル(P):
+> 作業フォルダ(F):<br>
 
-> cmd
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
 
-> 作業フォルダ(F):
-
-> コマンドラインパラメータ(C):
-
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
-
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
-
-> <span style="color:#441177;">　　それらを実行することができます．</span>
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
 
 > 表示
 
-> ☑ツールを有効にする(E)
-
-> ☑メインメニューに表示する(M)
-
-> ☑ポップアップメニューに表示する(P)
+> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
 
 > ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
 
@@ -147,7 +121,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ DVI ファイルが表示されます。
 
-### VxEditor で LaTeX (TeX -> DVI -> PDF) {#fcfb987f}
+## VxEditor で LaTeX (TeX -> DVI -> PDF) {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -159,33 +133,21 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):
+> タイトル(T):<br>TeX -> DVI -> PDF
 
-> TeX -> DVI -> PDF
+> 実行ファイル(P):<br>cmd
 
-> 実行ファイル(P):
+> 作業フォルダ(F):<br>
 
-> cmd
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
-> 作業フォルダ(F):
-
-> コマンドラインパラメータ(C):
-
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
-
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
-
-> <span style="color:#441177;">　　それらを実行することができます．</span>
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
 
 > 表示
 
-> ☑ツールを有効にする(E)
-
-> ☑メインメニューに表示する(M)
-
-> ☑ポップアップメニューに表示する(P)
+> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
 
 > ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
 
@@ -209,7 +171,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます。
 
-### VxEditor で LaTeX (TeX -> DVI -> PS -> PDF) {#v9c2efca}
+## VxEditor で LaTeX (TeX -> DVI -> PS -> PDF) {#v9c2efca}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -221,33 +183,21 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):
+> タイトル(T):<br>TeX -> DVI -> PS -> PDF
 
-> TeX -> DVI -> PS -> PDF
+> 実行ファイル(P):<br>cmd
 
-> 実行ファイル(P):
+> 作業フォルダ(F):<br>
 
-> cmd
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
-> 作業フォルダ(F):
-
-> コマンドラインパラメータ(C):
-
-> /k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
-
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span>
-
-> <span style="color:#441177;">　　それらを実行することができます．</span>
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
 
 > 表示
 
-> ☑ツールを有効にする(E)
-
-> ☑メインメニューに表示する(M)
-
-> ☑ポップアップメニューに表示する(P)
+> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
 
 > ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
 
