@@ -74,7 +74,7 @@ exe ファイル (インストール機能付き) の場合はインストーラ
 
 <span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]</span><strong>\[TeXOption\]</strong><span style="color:Black;background-color:#EEEEEE;">\[Spell\]\[PS/PDF\]</span>
 
-> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br><span style="color:#3333CC;">◎</span>日本語<br>◯英語<br>　　　　　　　　　　　　　　　　 ☐source special<br>TeXコンパイラ<br>pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br><span style="color:White;background-color:#2266EE;">epLaTeX　　　　　 </span>　　　　　 ☐ｺﾝﾊﾟｲﾙ画面を表示する<br>jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br><span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
+> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br><span style="color:#3333CC;">◎</span>日本語<br>◯英語<br>　　　　　　　　　　　　　　　　 ☐source special<br>TeXコンパイラ<br>pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br><span style="color:White;background-color:#1188FF;">epLaTeX　　　　　 </span>　　　　　 ☐ｺﾝﾊﾟｲﾙ画面を表示する<br>jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br><span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
 
 epLaTeX を選択
 
@@ -138,7 +138,7 @@ epLaTeX を選択
 
 ***
 
-> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ<br><span style="color:White;background-color:#2266EE;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#2266EE;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#2266EE;">12ポイント</span><br>欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　文字ｻｲｽﾞ<br><span style="color:White;background-color:#1188FF;">小論文 (jarticle)　　　　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>報告書 (jreport)　　　　　　　　　　　 <span style="color:White;background-color:#1188FF;">A4j　 </span>　 　　　 　　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>欧文小論文 (article)　　　　　　　　　A5　　　　　　　　　　　　　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (amsart)　　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
 > 使用する<br>　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>　　☐タイトルを付けない　　　　　　epic,eepic<br>	　	　	　	　	　　　　　　　　　　　　　　　graphicx　	　	　	　	　	　	　	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
