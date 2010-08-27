@@ -25,14 +25,13 @@ WZ EDITOR は 国産の Windows 用テキストエディタです。 (シェア�
 ## WZ EDITOR 6 {#k023a395}
 
 - [WZ EDITOR 6](http://www.wzsoft.jp/wz6/)
+    - [WZ6 更新履歴](http://www.wzsoft.jp/wz6/verup/)
 
 <strong>WZ EDITOR 6の販売は、8月31日で終了させていただきます。</strong><br>
 
 <strong>テクニカルサポートとマイナーアップデートは、継続いたします。</strong><br>
 
 <img src="http://www.wzsoft.jp/wz6/rc27.png" alt="WZ EDITOR 6 の画面">
-
-「WZ EDITOR 6」
 
 対応 OS
 
