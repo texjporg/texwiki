@@ -13,6 +13,8 @@ pukiwiki: "Eclipse"
 
 Eclipse は Java で書かれた IDE (統合開発環境) です。
 
+- [Eclipse.org home](http://www.eclipse.org/)
+
 ### Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です。
