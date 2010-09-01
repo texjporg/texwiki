@@ -11,14 +11,17 @@ pukiwiki: "TeraPad"
 
 ## TeraPad とは {#wda2a461}
 
-TeraPad は国産でフリーのシンプルなテキストエディタです．
+TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産でフリーのシンプルなテキストエディタです．
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです．
 
 VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
+現在，Version 1.00 のベータ版が公開されています．
+
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
+        - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
     - [TeraPad ベータ版](http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
@@ -30,7 +33,7 @@ terapad.tex - TeraPad
 
 <div style="clear:both"></div>
 
-<span style="color:Black;background-color:#CCDDFF;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
+<span style="color:Black;background-color:#DAE0FE;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
 
 ```
 \documentclass[12pt]{jsarticle}
@@ -197,7 +200,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-- 簡単なテスト
+### 簡単なテスト {#t51caf81}
 
 1. 「TeraPad とは」 に書かれている手書きスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
 1. Ctrl + Alt + K を押すと PDF ファイルが作成され，表示されます．
