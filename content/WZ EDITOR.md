@@ -23,6 +23,7 @@ WZ EDITOR は Windows XP, Vista, 7 で動作する国産の統合テキストエ
 ## WZ EDITOR 7 {#xeb01ab7}
 
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
+    - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
 
 WZ EDITOR 7 は、LaTeX ファイルの編集に標準機能で対応しています。
 
@@ -47,11 +48,12 @@ WZ EDITOR 7 は、LaTeX ファイルの編集に標準機能で対応してい�
 ## WZ EDITOR 6 {#k023a395}
 
 - [WZ EDITOR 6](http://www.wzsoft.jp/wz6/)
-    - [WZ6 更新履歴](http://www.wzsoft.jp/wz6/verup/)
+    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴](http://www.wzsoft.jp/wz6/list.htm)
+    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴の詳細](http://www.wzsoft.jp/wz6/verup.htm)
 
-<strong>WZ EDITOR 6 の販売は、2010年8月31日で終了しました。</strong><br>
+<strong>2010年8月31日に、WZ EDITOR 6 の販売を終了しました。</strong><br>
 
-<strong>テクニカルサポートとマイナーアップデートは、継続します。</strong><br>
+<strong>WZ6 のテクニカルサポートとマイナーアップデートは、継続します。</strong><br>
 
 <img src="http://www.wzsoft.jp/wz6/rc27.png" alt="WZ EDITOR 6 の画面">
 
@@ -61,9 +63,10 @@ WZ 6.0.45 から，「LaTeX」ファイルの編集に標準機能で対応し�
 
 WZ EDITOR 6 の LaTeX に関する機能は次のページが参考になります。
 
-- [WZsoft &gt; WZエディタ &gt; 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
-- [WZsoft &gt; WZエディタ &gt; チュートリアル &gt; 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
-- [WZsoft &gt; WZエディタ &gt; WZ6オンラインヘルプ &gt; LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
+- [WZsoft > WZエディタ > 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
+- [WZsoft > WZエディタ > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
+- [WZsoft > WZ エディタ 6 > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wz6/wza_002.htm#latex)
+- [WZsoft > WZエディタ > WZ6オンラインヘルプ > LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
 
 対応 OS
 
