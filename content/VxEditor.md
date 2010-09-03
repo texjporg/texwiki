@@ -39,7 +39,7 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 > 作業フォルダ(F):<br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; pdflatex "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; pdflatex -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -91,7 +91,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 作業フォルダ(F):<br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -143,7 +143,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > 作業フォルダ(F):<br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -195,7 +195,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 作業フォルダ(F):<br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
