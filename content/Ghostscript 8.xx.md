@@ -7,11 +7,11 @@ pukiwiki: "Ghostscript 8.xx"
 
 # Ghostscript 8.xx
 
-> [Ghostscript](/Ghostscript/) > Ghostscript 8.xx
+> [Ghostscript](/Ghostscript/) > Ghostscript 8.xx・9.00
 
-## Ghostscript 8 {#f2728a95}
+## Ghostscript 8-系・9-系 {#f2728a95}
 
-Ghostscript 8-系共通項目です。いくつかのマイナーバージョンについては、固有の話題が
+Ghostscript 8-系・9-系共通項目です。いくつかのマイナーバージョンについては、固有の話題が
 
 - Ghostscript 8.15
 - Ghostscript 8.50
@@ -19,6 +19,7 @@ Ghostscript 8-系共通項目です。いくつかのマイナーバージョン
 - Ghostscript 8.64
 - Ghostscript 8.70
 - Ghostscript 8.71
+- Ghostscript 9.00
 
 などにあります。
 
@@ -669,7 +670,7 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
 - Identity-H
 - Identity-V
 
-上記の CMap は $TEXMFLOCAL/fonts/cmap// 以下にもあります。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
+上記の CMap は $TEXMFMAIN/fonts/cmap// 以下にもあります。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
 
 ### CID-keyed fonts {#i4c98952}
 
