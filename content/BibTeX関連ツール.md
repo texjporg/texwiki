@@ -21,7 +21,7 @@ pukiwiki: "BibTeX関連ツール"
 | [Ref for Windows](http://members3.jcom.home.ne.jp/refwin/) |  Windows | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXへのサポート](http://members3.jcom.home.ne.jp/refwin/html/latex.htm) |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | Mac OS X 10.5 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 |  [KBibTeX](http://www.unix-ag.uni-kl.de/~fischer/kbibtex/) |  KDE 3/4  | KDE 用の BibTeX エディタ。 |
-|  [Tellico](http://www.periapsis.org/tellico/)  |  KDE >= 4, Qt >= 4, libxml2, libxslt1 >= 1.0.19  |  KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。日本語不可。 |
+|  [Tellico](http://tellico-project.org/)  |  KDE >= 4, Qt >= 4, libxml2, libxslt1 >= 1.0.19  |  KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。日本語不可。 |
 |  [KBib](http://users.tpg.com.au/thachly/kbib/) |  KDE  | KDE 用の BibTeX エディタ。 |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ。 |
 | [Pybliographer](http://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り |
@@ -33,7 +33,7 @@ pukiwiki: "BibTeX関連ツール"
 | [Sixpack](http://sourceforge.net/projects/sixpack) | perl perl-Tk | 文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。 |
 | [RefDB](http://refdb.sourceforge.net/) | UNIX/MacOS X/Windows | SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる |
 | [BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |   | .bib ファイルの管理ソフト。[BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) の GUI ラッパーとして [qbibman](https://mirror.ctan.org/biblio/bibtex/utils/qbibman/) がある |
-|  [scbib](http://namazu.org/~satoru/scbib/)  |  [Gauche](http://www.shiro.dreamhost.com/scheme/gauche/)（Schemeインタプリタ） |  Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能  |
+|  [scbib](http://0xcc.net/scbib/)  |  [Gauche](http://practical-scheme.net/gauche/index-j.html)（Schemeインタプリタ） |  Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能  |
 |  [BibORB](http://biborb.glymn.net/doku.php)  |  Webサーバ, PHP (>=4.0.3), PHP XSLT, PHP Pear  |  Webベースの文献管理システム、Web上でbibファイルの編集・インポート・エキスポートができ、電子ジャーナルと連携できる。 |
 |  [JavaBib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
 |  [WibTeX](http://www.wibtex.de/) |  Windows  | Windows 用 BibTeX エディタ。 |
@@ -59,7 +59,7 @@ pukiwiki: "BibTeX関連ツール"
 | [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
 | [bibcursed](http://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK |
 | [BibFile Editor](http://www.h7.dion.ne.jp/~yochian/macro.htm) | Windows95 | 簡易エディタ。 |
-| [bibclean](http://www.math.utah.edu/pub/bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム。日本語可。 |
+| [bibclean](http://ftp.math.utah.edu/pub//bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム。日本語可。 |
 | [Ebib](http://ebib.sourceforge.net/) | emacs | emacs用のBibTeXデータベースマネージャ。ver.0.25からxemacsにも対応。複数のbibファイルを同時に操作できる。 |
 
 emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、.emacsファイルに、
