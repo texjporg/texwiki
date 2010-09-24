@@ -121,3 +121,7 @@ setpageparams } stopped end } { true } ifelse { statusdict /setpage known
 また，dvips に -t a4 というオプションを与えれば，強制的に a4
 という設定が選ばれ，上記の b4 の場合と同様，PDF
 に変換した際に正しく A4 サイズになります。
+
+### dvips の日本語フォント指定 {#i633a67d}
+
+- [QA: dvips で日本語フォントを指定するには](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=539)
