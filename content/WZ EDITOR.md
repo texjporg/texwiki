@@ -13,19 +13,21 @@ pukiwiki: "WZ EDITOR"
 
 WZ EDITOR は Windows XP, Vista, 7 で動作する国産の統合テキストエディタです。 (シェアウェア)
 
-- [WZソフトウェア - WZエディタ / WZモバイル](http://www.wzsoft.jp/)
+- [WZソフトウェア](http://www.wzsoft.jp/)
     公式サイト
 
-<strong>2010年9月1日 WZ EDITOR 7 プレビュー1.0 を公開しました。</strong><br>
+<strong>2010年9月1日 WZ EDITOR 7 プレビュー版 を公開しました。</strong><br>
 
-<strong>WZ EDITOR 7 オンライン版の先行販売開始は、2010年10月下旬に予定しています。</strong><br>
+<strong>WZ EDITOR 7 オンライン版の販売開始は、2010年10月下旬に予定しています。</strong><br>
+
+<strong>WZ EDITOR 7 パッケージ版の販売開始は、2010年11月下旬に予定しています。</strong><br>
 
 ## WZ EDITOR 7 {#xeb01ab7}
 
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
     - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
 
-WZ EDITOR 7 は、LaTeX ファイルの編集に標準機能で対応しています。
+WZ7 は、LaTeX ファイルの編集に標準機能で対応しています。
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 論文](http://www.wzsoft.jp/wz7/help_006.htm)
