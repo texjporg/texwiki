@@ -14,10 +14,10 @@ pukiwiki: "秀丸エディタ"
 
 秀丸エディタ は，Windows 95, 98, Me, NT4.0, 2000, XP, Vista, 7 上で動作する国産のテキストエディタです。 (シェアウェア)
 
-- [秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
-- [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
-- [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
+    - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
+        - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
+        - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
 
 ### 秀丸エディタフリー制度 {#faebc82e}
 
