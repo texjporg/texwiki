@@ -11,9 +11,9 @@ pukiwiki: "EasyTeX"
 
 ## EasyTeX とは {#eta184ab}
 
-EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する TeX 統合環境です．
+EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産の TeX 統合環境です．
 
-TeX の入力とコマンドの実行が簡単にできるようになります．
+TeX の入力とコマンドの実行が簡単にできます．
 
 公式サイトは次のところにあります．
 
@@ -23,71 +23,114 @@ TeX の入力とコマンドの実行が簡単にできるようになります�
 
 LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
 
-国産ソフトなので，メニューも日本語で親しみやすいですし，ヘルプには LaTeX の解説も付属しています．
-
-レジストリ (ソフトや OS に関する情報のデータベース) への書き込みを行いません．
+国産ソフトなので，メニューも最初から日本語で親しみやすく，ヘルプには LaTeX の解説も付属しています．
 
 [Aspell](/Aspell/) などのスペルチェッカも起動可能です。
 
 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
 
-シンプルな統合環境をお求めの方にはお勧めのソフトです．
+シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
-## ダウンロードとインストール {#bf9167cb}
+## ダウンロード {#bf9167cb}
 
-「[EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)」からダウンロードできます．
+### EasyTeX の入手先 {#qe994380}
+
+- [EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
+
+### インストール {#sfc300c2}
 
 zip ファイルの場合はファイルを適当な場所に展開 (解凍) するだけでインストールは終了です．
 
-exe ファイル (インストール機能付き) の場合はインストーラーの指示に従ってインストールします．
+exe ファイル (インストーラー機能付き) の場合はインストーラーの指示に従ってインストールします．
 
-インストール終了後，EasyTeX.exe を実行してください．
+### アンインストール {#l7ffd31d}
+
+zip ファイル版は，レジストリ[^1]への書き込みを行いません．アンインストールするときはフォルダごと削除してください．
+
+exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロールパネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
 
 ## 設定 {#etcb6f8d}
 
+インストール終了後，EasyTeX.exe を実行してください．
+
 初めて起動したときは， 「TeX環境設定」 というウィンドウが表示されます．
+
+***
+
+TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CA3311;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span><br>
+<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span><br>
+>
+> 　<br>
+> 　<br>
+> 　<br>
+
+<span style="color:Black;background-color:#EEEEEE;">\[　　TeX環境を自動設定する　　\]</span><br>
+
+<span style="color:Black;background-color:#EEEEEE;">\[ Iniファイルに保存 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　<strong><span style="color:#119933;">✓</span></strong>OK　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
 
 このウィンドウで，初期設定をします．
 
-なお，この設定は ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ で後から設定をやり直すことができます．
+なお，この設定はメニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] で，後から設定をやり直すことができます．
 
 ここでは，eplatex.exe (epLaTeX の実行ファイル) が C:\w32tex\bin にあると仮定します．
 
-なお，\[TeX環境を自動設定する\] は使わずに，手動で設定を行います．
+\[　　TeX環境を自動設定する　　\] は使わずに，手動で設定を行います．
 
 ***
 
-<strong>\[TeXExe\]</strong><span style="color:Black;background-color:#EEEEEE;">\[TeXOption\]\[Spell\]\[PS/PDF\]</span>
+<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br><span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
 
 ***
 
-<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]</span><strong>\[TeXOption\]</strong><span style="color:Black;background-color:#EEEEEE;">\[Spell\]\[PS/PDF\]</span>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span>
 
-> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br><span style="color:#3333CC;">◎</span>日本語<br>◯英語<br>　　　　　　　　　　　　　　　　 ☐source special<br>TeXコンパイラ<br>pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br><span style="color:White;background-color:#1188FF;">epLaTeX　　　　　 </span>　　　　　 ☐ｺﾝﾊﾟｲﾙ画面を表示する<br>jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br><span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
+> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br>
+> <span style="color:#3333CC;">◎</span>日本語<br>
+>
+> ◯英語<br>
+> 　　　　　　　　　　　　　　　　 ☐source special<br>
+> TeXコンパイラ<br>
+> pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+> <span style="color:White;background-color:#1188FF;">epLaTeX　　　 　 　</span>　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
+>
+> jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
 
 epLaTeX を選択
 
 ***
 
-<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]</span><strong>\[Spell\]</strong><span style="color:Black;background-color:#EEEEEE;">\[PS/PDF\]</span>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe<br>　　起動オプション --lang=en -t -c
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe<br>
+>
+> 　　起動オプション --lang=en -t -c
 
 スペルチェッカーを使わない人は何も入力しなくても OK
 
 ***
 
-<span style="color:Black;background-color:#EEEEEE;">\[TeXExe\]\[TeXOption\]\[Spell\]</span><strong>\[PS/PDF\]</strong>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe<br><span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe<br>　PDF Readerを開くタイミング　　300　　⧫
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe<br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe<br>
+>
+> 　PDF Readerを開くタイミング　　300　　⧫
 
 ***
 
-<strong>設定が完了したら，\[Iniファイルに保存\] を押して \[OK\] を押します．</strong>
-
-[LaTeXとか - PukiWiki](http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB) も参考になるかもしれません．
+<strong>設定が完了したら，\[ Iniファイルに保存 \] を押して \[　<span style="color:#119933;">✓</span>OK　\] を押します．</strong>
 
 <!-- 現在の EasyTeX は DVI -> PDF 変換機能や PDF ファイル閲覧機能があるので -->
 <!-- ここはコメントアウトしときます -->
@@ -125,27 +168,40 @@ epLaTeX を選択
 
 次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］と選んでいきます．
 
-「文書ｸﾗｽの設定」ダイアログで，
+「文書ｸﾗｽの設定」ダイアログで，次のように指定します．
 
 ***
 
-> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br><span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　　　　　　 <span style="color:White;background-color:#1188FF;">A4j　　</span>　　 　　　 　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　　　　　 　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
+> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
+> 小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+> <span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>
+>
+> 報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　　　　　 　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+> 欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> 使用する<br>　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>　　☐タイトルを付けない　　　　　　epic,eepic<br>	　	　	　	　	　　　　　　　　　　　　　　　graphicx　	　	　	　	　	　	　	　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+> 使用する<br>
+> 　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+> 　　☐タイトルを付けない　　　　　　epic,eepic<br>
+> 　 　 　 　 　　　　　　　　　　　　　　　graphicx　	　 　	　 　	　	　 　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> ﾀｲﾄﾙ<br>　<br>　著者<br>
+> ﾀｲﾄﾙ<br>
+> 　<br>
+> 　著者<br>
+> 　
 >
 > ***
 >
 
-文字ｻｲｽﾞを12ポイントにしたのは，この大きさのほうが見やすいためです．
+文字ｻｲｽﾞはデフォルトで 12ポイントが選択されていると思います．
+
+jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt，43pt を指定することができます．([pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/) を参照．)
 
 ［ﾀｲﾄﾙ］ と ［著者］ を適当に書きます．
 
 ［使用する］ の部分には使用する
 スタイルファイルを指定します（\usepackage コマンドで指定するものです）．
 
-一通り終わったら \[OK\] を押します．
+一通り終わったら \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] を押します．
 
 一気に沢山のコマンドが書き加えられているのが分かりますね．
 
@@ -161,7 +217,7 @@ epLaTeX を選択
 
 ［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で PDFファイルのページサイズの設定ウィンドウが表示されます．
 
-ページサイズを指定し，\[OK\] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
+ページサイズを指定し，\[　<strong><span style="color:#119933;">✓</span></strong>OK　\] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
 
 あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば
 良いでしょう．
@@ -191,7 +247,7 @@ dviout でマウスカーソルが矢印になっているときに画面の一�
 
 出てきたウィンドウで \[TeXOption\] タブの \[source special\] にチェックを入れます．
 
-［Iniファイルに保存］ → ［OK］ の順にクリックします．
+\[ Iniファイルに保存 \] → \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] の順にクリックします．
 
 EasyTeX を再起動します．
 
@@ -215,6 +271,10 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 - [漢文エディタ](http://www2s.biglobe.ne.jp/~Taiju/leaf/tjsoft05_kanbun.htm)
     (H. Shinozaki さん)
 
+## 関連リンク {#p8488be5}
+
+- [LaTeXとか - PukiWiki](http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB)
+
 ## Comments {#etacm8ab}
 
 - 修正等は自由にしていただいて構いません。ちょっとしたコメント・質問等はここにどうぞ。 -- これを書いた人 2005-11-09 (水) 14:54:34
@@ -223,3 +283,5 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 - EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． -- textex 2006-07-29 (土) 01:45:13
 - [質問のしかた](</質問のしかた/>)をよく読んで，続きは[TeX Q &amp; A 掲示板](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) で・・・ -- tony 2006-07-29 (土) 04:13:51
 - インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． -- textex 2006-08-03 (木) 20:01:49
+
+[^1]: ソフトや OS に関する情報のデータベース
