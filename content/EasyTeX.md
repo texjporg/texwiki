@@ -25,7 +25,7 @@ LaTeX コマンドをマウスで選び，クリックすることで，自動�
 
 国産ソフトなので，メニューも最初から日本語で親しみやすく，ヘルプには LaTeX の解説も付属しています．
 
-[Aspell](/Aspell/) などのスペルチェッカも起動可能です。
+[Aspell](/Aspell/) などのスペルチェッカも起動可能です．
 
 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
 
@@ -57,7 +57,8 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CA3311;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span><br>
+<span style="color:Black;background-color:#ACDEFE;"> TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span><br>
@@ -106,7 +107,7 @@ TeX環境設定　　　　　　　　　　　　　　　　　　　　　�
 > jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 > <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
 
-epLaTeX を選択
+epLaTeX を選択します．
 
 ***
 
@@ -116,7 +117,7 @@ epLaTeX を選択
 >
 > 　　起動オプション --lang=en -t -c
 
-スペルチェッカーを使わない人は何も入力しなくても OK
+スペルチェッカーを使わない人は何も入力しなくても OK です．
 
 ***
 
@@ -168,7 +169,7 @@ epLaTeX を選択
 
 次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］と選んでいきます．
 
-「文書ｸﾗｽの設定」ダイアログで，次のように指定します．
+「文書ｸﾗｽの設定」ダイアログで，jsarticle を指定します．
 
 ***
 
@@ -219,8 +220,7 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ページサイズを指定し，\[　<strong><span style="color:#119933;">✓</span></strong>OK　\] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
 
-あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば
-良いでしょう．
+あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．
 
 ちなみに，
 ［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換2(R)］は dvipdfmx ではなく [dvips](/dvips/) + [Ghostscript](/Ghostscript/) で，処理を行います．
