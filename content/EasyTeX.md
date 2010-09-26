@@ -11,7 +11,7 @@ pukiwiki: "EasyTeX"
 
 ## EasyTeX とは {#eta184ab}
 
-EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産の TeX 統合環境です．
+EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産でフリーの TeX 統合環境です．
 
 TeX の入力とコマンドの実行が簡単にできます．
 
@@ -25,7 +25,7 @@ LaTeX コマンドをマウスで選び，クリックすることで，自動�
 
 国産ソフトなので，メニューも最初から日本語で親しみやすく，ヘルプには LaTeX の解説も付属しています．
 
-[Aspell](/Aspell/) などのスペルチェッカも起動可能です．
+[Aspell](/Aspell/) などのスペルチェッカーも起動可能です．
 
 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
 
@@ -53,7 +53,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 インストール終了後，EasyTeX.exe を実行してください．
 
-初めて起動したときは， 「TeX環境設定」 というウィンドウが表示されます．
+初回起動時は， 「TeX環境設定」 が表示されます．
 
 ***
 
@@ -75,9 +75,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-このウィンドウで，初期設定をします．
-
-なお，この設定はメニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] で，後から設定をやり直すことができます．
+これから EasyTeX の初期設定をします．
 
 ここでは，eplatex.exe (epLaTeX の実行ファイル) が C:\w32tex\bin にあると仮定します．
 
@@ -133,6 +131,8 @@ epLaTeX を選択します．
 
 <strong>設定が完了したら，\[ Iniファイルに保存 \] を押して \[　<span style="color:#119933;">✓</span>OK　\] を押します．</strong>
 
+この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
+
 <!-- 現在の EasyTeX は DVI -> PDF 変換機能や PDF ファイル閲覧機能があるので -->
 <!-- ここはコメントアウトしときます -->
 
@@ -169,29 +169,29 @@ epLaTeX を選択します．
 
 次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］と選んでいきます．
 
-「文書ｸﾗｽの設定」ダイアログで，jsarticle を指定します．
+「文書ｸﾗｽの設定」 で，jsarticle を指定します．
 
 ***
 
-> 文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
-> 小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-> <span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>
->
-> 報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　　　　　 　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
-> 欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
+<span style="color:Black;background-color:#ACDEFE;"> 文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
-> 使用する<br>
-> 　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-> 　　☐タイトルを付けない　　　　　　epic,eepic<br>
-> 　 　 　 　 　　　　　　　　　　　　　　　graphicx　	　 　	　 　	　	　 　	<span style="color:#555555;background-color:#EEEEEE;">▼</span>
+　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
+　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　<span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>
+　　報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　　　　　 　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-> ﾀｲﾄﾙ<br>
-> 　<br>
-> 　著者<br>
-> 　
->
-> ***
->
+　　　　　　　　　　　　　　　　　　　　　　　　使用する<br>
+　　　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　　　☐タイトルを付けない　　　　　　epic,eepic<br>
+　 　 　 　 　 　 　　　　　　　　　　　　 　 　graphicx　 　 　 　 　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　　ﾀｲﾄﾙ<br>
+　<br>
+　　　著者<br>
+　<br>
+　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　<strong><span style="color:#119933;">✓</span></strong>OK　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span>
+
+***
 
 文字ｻｲｽﾞはデフォルトで 12ポイントが選択されていると思います．
 
