@@ -66,7 +66,16 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 短いライセンスなので読んでください。）興味のある方は
 是非いじってみてください。
 
-[英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)，[multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads) もあります。
+公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。
+
+- [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
+- [基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+- [multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads)
+- [xyzzy+](http://xyzzy.codeplex.com/)
+- [xyzzy.src (for-gcc branch)](http://github.com/bulb/xyzzy.src)
+- [xyzzy.src (nanri-master branch)](http://github.com/southly/xyzzy.src/tree/nanri-master)
+- [xyzzy.src (putenv-optional-value branch)](http://github.com/miyamuko/xyzzy.src/tree/putenv-optional-value)
+- [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
 
