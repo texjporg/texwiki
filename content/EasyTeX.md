@@ -21,13 +21,14 @@ TeX の入力とコマンドの実行が簡単にできます．
 
 <img src="http://www.2009-s1-34.com/index.php?plugin=attach&amp;refer=LaTeX%A4%C8%A4%AB&amp;openfile=05.jpg" alt="EasyTeX の画面">
 
-LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
+### 特徴 {#c007c9f5}
 
-国産ソフトなので，メニューも最初から日本語で親しみやすく，ヘルプには LaTeX の解説も付属しています．
-
-[Aspell](/Aspell/) などのスペルチェッカーも起動可能です．
-
-登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
+- TeX の命令を色付けして表示できます．
+- LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
+- ヘルプには LaTeX の解説が付属しています．
+- [Aspell](/Aspell/) などのスペルチェッカーが起動可能です．
+- 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
+- IME および ATOK による再変換をサポートしています．
 
 シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
@@ -57,7 +58,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"> TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
@@ -173,7 +174,7 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"> 文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
 　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
@@ -216,9 +217,25 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 そして \[DVI(D)\] をクリックすると，DVI ファイルがプレビューできます．
 
-［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で PDFファイルのページサイズの設定ウィンドウが表示されます．
+［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で 「PDFファイルのページサイズの設定」 が表示されます．
 
-ページサイズを指定し，\[　<strong><span style="color:#119933;">✓</span></strong>OK　\] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
+***
+
+<span style="color:Black;background-color:#ACDEFE;">PDFファイルのページサイズの設定　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+
+　　　　　　　ページサイズ<br>
+　　　　　　　a3　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　</span>　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✓</span></strong>OK　　 \]</span><br>
+　　　　　　　a5<br>
+　　　　　　　a6<br>
+　　　　　　　b3　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span><br>
+　　　　　　　b4　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　<br>
+　　　　　　　☐landscape<br>
+
+***
+
+ページサイズを指定し，\[ 　　<strong><span style="color:#119933;">✓</span></strong>OK　　 \] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
 
 あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．
 
@@ -231,12 +248,11 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe が
-例えば C:\w32tex\easytex にある場合には，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex323\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\w32tex\easytex
+`easytex easytex +%d %s``C:\w32tex\editor\easytex323\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
