@@ -78,9 +78,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 これから EasyTeX の初期設定をします．
 
-ここでは，eplatex.exe (epLaTeX の実行ファイル) が C:\w32tex\bin にあると仮定します．
-
 \[　　TeX環境を自動設定する　　\] は使わずに，手動で設定を行います．
+
+### TeXExe {#o3f9cb28}
 
 ***
 
@@ -89,6 +89,16 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br>
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
+
+***
+
+TeX実行ファイルのパスを指定します．
+
+ここでは，eplatex.exe (epLaTeX の実行ファイル) が C:\w32tex\bin に存在すると仮定しています．
+
+DVIドライバは dviout.exe のフルパスを指定します．
+
+### TeXOption {#d7b2d9ae}
 
 ***
 
@@ -106,7 +116,11 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 > jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 > <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
 
+***
+
 epLaTeX を選択します．
+
+### Spell {#z664fb17}
 
 ***
 
@@ -116,7 +130,13 @@ epLaTeX を選択します．
 >
 > 　　起動オプション --lang=en -t -c
 
+***
+
+aspell.exe のフルパスと起動オプションを指定します．
+
 スペルチェッカーを使わない人は何も入力しなくても OK です．
+
+### PS/PDF {#ubd35880}
 
 ***
 
@@ -130,7 +150,13 @@ epLaTeX を選択します．
 
 ***
 
-<strong>設定が完了したら，\[ Iniファイルに保存 \] を押して \[　<span style="color:#119933;">✓</span>OK　\] を押します．</strong>
+gsview32.exe と AcroRd32.exe のフルパスを指定します．
+
+PDF Readerを開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
+
+### 設定の保存 {#lf745908}
+
+<strong>設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[　<span style="color:#119933;">✓</span>OK　\] をクリックします．</strong>
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
 
@@ -203,7 +229,7 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 ［使用する］ の部分には使用する
 スタイルファイルを指定します（\usepackage コマンドで指定するものです）．
 
-一通り終わったら \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] を押します．
+一通り終わったら \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] をクリックします．
 
 一気に沢山のコマンドが書き加えられているのが分かりますね．
 
@@ -239,10 +265,9 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．
 
-ちなみに，
 ［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換2(R)］は dvipdfmx ではなく [dvips](/dvips/) + [Ghostscript](/Ghostscript/) で，処理を行います．
 
-忘れがちな機能として，ある範囲を一括コメントイン・コメントアウトする機能があります．
+ある範囲を一括コメントイン・コメントアウトする便利な機能もあります．
 
 範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で，コメントイン・アウトできますので，活用してみてください．
 
