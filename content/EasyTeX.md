@@ -52,6 +52,8 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ## 設定 {#etcb6f8d}
 
+### TeX環境設定 {#e3c37dfc}
+
 インストール終了後，EasyTeX.exe を実行してください．
 
 初回起動時は， 「TeX環境設定」 が表示されます．
@@ -84,6 +86,8 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br>
@@ -101,6 +105,8 @@ DVIドライバは dviout.exe のフルパスを指定します．
 ### TeXOption {#d7b2d9ae}
 
 ***
+
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span>
 
@@ -124,6 +130,8 @@ epLaTeX を選択します．
 
 ***
 
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe<br>
@@ -139,6 +147,8 @@ aspell.exe のフルパスと起動オプションを指定します．
 ### PS/PDF {#ubd35880}
 
 ***
+
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong>
 
@@ -190,11 +200,11 @@ PDF Readerを開くタイミングはお好みで設定してください．こ�
 
 簡単な TeX ソースを作り，コンパイル，プレビューまで行いましょう．
 
-まず，［ﾌｧｲﾙ(F)］ → ［新規作成(N)］ と選んでいきます．
+まず，［ﾌｧｲﾙ(F)］ → ［新規作成(N)］ をクリックします．
 
 新規ファイルのウィンドウが開きます．
 
-次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］と選んでいきます．
+次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］ をクリックします．
 
 「文書ｸﾗｽの設定」 で，jsarticle を指定します．
 
@@ -315,6 +325,7 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 ## 関連リンク {#p8488be5}
 
 - [LaTeXとか - PukiWiki](http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB)
+- [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 
 ## Comments {#etacm8ab}
 
