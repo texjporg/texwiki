@@ -29,8 +29,8 @@ TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。現在のバージョン番号は 3.1415926 です。LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
 の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX&reg;（[Mac OS X](http://www.apple.com/jp/macosx/)
-や [Solaris](http://jp.sun.com/software/solaris/) など），UNIX 互換
-OS（Linux OS，BSD 系 OS，[OpenSolaris](http://jp.opensolaris.org/)
+や [Solaris](http://www.oracle.com/us/products/servers-storage/solaris/) など），UNIX 互換
+OS（Linux OS，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
 など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)，Mac OS
 など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
@@ -63,12 +63,12 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 まずは次の本を挙げておきます。
 
 - [Leslie Lamport](http://lamport.org/) 著，[阿瀬はる美](http://www.harumi.jp/)
-    訳『[文書処理システム LaTeX2e](http://www.pearsoned.co.jp/hed/search/onlinecatalog.html?id=87)』（[ピアソン・エデュケーション](http://www.pearsoned.co.jp/)，1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
+    訳『[文書処理システム LaTeX2e](http://www.amazon.co.jp/%E6%96%87%E6%9B%B8%E5%87%A6%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0LATEX2%CE%B5-%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%BC-%E3%83%A9%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88/dp/4894711397)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
     の原典です。
 
 - [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの最新の
     [W32TeX](http://w32tex.org/) と
-    WinShell，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
+    [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
     CD-ROM が附いています。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
