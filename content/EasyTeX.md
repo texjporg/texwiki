@@ -68,7 +68,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
@@ -82,7 +82,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 <span style="color:Black;background-color:#EEEEEE;">\[　　TeX環境を自動設定する　　\]</span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ Iniファイルに保存 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　<strong><span style="color:#119933;">✓</span></strong>OK　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+<span style="color:Black;background-color:#EEEEEE;">\[ Iniファイルに保存 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
 
 ***
 
@@ -94,7 +94,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
@@ -114,7 +114,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span>
 
@@ -140,7 +140,7 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span>
 
@@ -158,7 +158,7 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong>
 
@@ -176,7 +176,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 ### 設定の保存 {#lf745908}
 
-<strong>設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[　<span style="color:#119933;">✓</span>OK　\] をクリックします．</strong>
+<strong>設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．</strong>
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
 
@@ -236,7 +236,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 　<br>
 　　　著者<br>
 　<br>
-　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　<strong><span style="color:#119933;">✓</span></strong>OK　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span>
+　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>
 
 ***
 
@@ -249,7 +249,7 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 ［使用する］ の部分には使用する
 スタイルファイルを指定します（\usepackage コマンドで指定するものです）．
 
-一通り終わったら \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] をクリックします．
+一通り終わったら \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．
 
 一気に沢山のコマンドが書き加えられているのが分かりますね．
 
@@ -271,17 +271,17 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 　　　　　　　ページサイズ<br>
 　　　　　　　a3　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　</span>　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✓</span></strong>OK　　 \]</span><br>
+　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　</span>　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span><br>
 　　　　　　　a5<br>
 　　　　　　　a6<br>
-　　　　　　　b3　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✗</span></strong>キャンセル\]</span><br>
+　　　　　　　b3　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
 　　　　　　　b4　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 　<br>
 　　　　　　　☐landscape<br>
 
 ***
 
-ページサイズを指定し，\[ 　　<strong><span style="color:#119933;">✓</span></strong>OK　　 \] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
+ページサイズを指定し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．
 
 あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．
 
@@ -308,7 +308,7 @@ dviout でマウスカーソルが矢印になっているときに画面の一�
 
 出てきたウィンドウで \[TeXOption\] タブの \[source special\] にチェックを入れます．
 
-\[ Iniファイルに保存 \] → \[　<strong><span style="color:#119933;">✓</span></strong>OK　\] の順にクリックします．
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
 
 EasyTeX を再起動します．
 
