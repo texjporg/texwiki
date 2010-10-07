@@ -11,11 +11,13 @@ pukiwiki: "VxEditor"
 
 ## VxEditor とは {#ub092d33}
 
-VxEditor は軽快に動作する国産でフリーのテキストエディタです．
+VxEditor は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で軽快に動作する国産でフリーのテキストエディタです．
 
 TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
+    - [ニュース](http://dr-x.jimdo.com/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/)
+- [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
 
 ## VxEditor で LaTeX (TeX -> PDF) {#jef6ef8d}
 
