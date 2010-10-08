@@ -84,7 +84,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 - Illustrator CS2 (v.12)   2005年
 - Illustrator CS3 (v.13)   2007年
 - Illustrator CS4 (v.14)   2008年
-- Illustrator CS5 (v.15)   計画中  (64ビット化，MacOSX では Cocoa 化の可能性）
+- Illustrator CS5 (v.15)   2010年  (64ビット化は見送り，MacOSX では Cocoa 化の可能性）
 
 情報等
 
