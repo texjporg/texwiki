@@ -88,11 +88,16 @@ zip ファイルでインストールした場合は，展開したディレク�
 
 ***
 
-Choose Language<br>
+<span style="color:Black;background-color:#ACDEFE;">WinShell　　　　　　　　　　　　　　　　</span><br>
+
+　 Choose Language<br>
 
 <br>
 
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese　　　　　　　　　▼\]</span>　← Japanese (日本語) で \[OK\]
+　　<span style="color:Black;background-color:#EEEEEE;">\[Japanese　　　　　　　　　▼\]</span>　← Japanese (日本語) で \[ 　　　OK　　　 \]<br>
+<br><br>
+
+　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　　OK　　　 \]</span>
 
 ***
 
