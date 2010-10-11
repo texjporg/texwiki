@@ -1231,4 +1231,6 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 
 ## Comment {#z51688d5}
 
+- 「PDF への欧文用フォントの埋め込み制御」で書き換えすべきファイルが、gs9.00、8.70では"Resource/Init/gs_pdfwr.ps"に移動しています。 -- 13th-note 2010-10-12 (火) 15:51:13
+
 #COMMENT
