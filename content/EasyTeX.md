@@ -52,15 +52,15 @@ exe ファイル版 (インストーラー機能付き) の場合はインスト
 
 #### zip ファイル {#r2a5838b}
 
-zip ファイル版は，レジストリ[^1]への書き込みを行いません．アンインストールするときはフォルダごと削除してください．
+zip ファイル版は，レジストリを使用しません．アンインストールするときはフォルダごと削除してください．
 
 #### exe ファイル {#z3b6deb0}
 
 exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロールパネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
 
-## 設定 {#etcb6f8d}
+## TeX環境設定 {#e3c37dfc}
 
-### TeX環境設定 {#e3c37dfc}
+### 初回起動時 {#x003cff0}
 
 インストール終了後，EasyTeX.exe を実行してください．
 
@@ -68,7 +68,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
@@ -94,7 +94,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 <strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
 
@@ -114,7 +114,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span>
 
@@ -140,7 +140,7 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span>
 
@@ -158,7 +158,7 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong>
 
@@ -174,9 +174,9 @@ GhostView (gsview32.exe) と PDF Reader (AcroRd32.exe) のフルパスを指定�
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
-### 設定の保存 {#lf745908}
+### TeX環境設定の保存 {#lf745908}
 
-<strong>設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．</strong>
+<strong>TeX環境設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．</strong>
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
 
@@ -220,7 +220,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
 　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
@@ -267,7 +267,7 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">PDFファイルのページサイズの設定　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <strong><span style="color:White;">✕</span></strong> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;">PDFファイルのページサイズの設定　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
 　　　　　　　ページサイズ<br>
 　　　　　　　a3　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
@@ -345,5 +345,3 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 - EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． -- textex 2006-07-29 (土) 01:45:13
 - [質問のしかた](</質問のしかた/>)をよく読んで，続きは[TeX Q &amp; A 掲示板](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) で・・・ -- tony 2006-07-29 (土) 04:13:51
 - インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． -- textex 2006-08-03 (木) 20:01:49
-
-[^1]: ソフトや OS に関する情報のデータベース
