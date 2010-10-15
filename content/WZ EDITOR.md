@@ -27,12 +27,15 @@ WZ EDITOR は Windows XP, Vista, 7 で動作する国産の統合テキストエ
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
     - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
 
-WZ7 は、LaTeX ファイルの編集に標準機能で対応しています。
+WZ7 は、TeX ファイルの編集に標準機能で対応しています。
+
+「TeX専用メニュー」の仕様は、「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
-- [WZsoft > WZ エディタ 7 > オンラインヘルプ > 論文](http://www.wzsoft.jp/wz7/help_006.htm)
-
-「LaTeX専用メニュー」の仕様は、「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
+- [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
+- [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
+- [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
+- [WZsoft > WZ エディタ 7 > オンラインヘルプ > プログラム](http://www.wzsoft.jp/wz7/help_007.htm)
 
 対応OS
 
@@ -45,7 +48,7 @@ WZ7 は、LaTeX ファイルの編集に標準機能で対応しています。
 > - Windows NT4, 2000での動作は、サポート対象外となります。
 
 > WZ EDITOR 7 オンライン版「2010年10月下旬」販売開始予定<br>
-> WZ EDITOR 7 パッケージ版「2010年11月下旬」販売開始予定
+> WZ EDITOR 7 パッケージ版「2010年11月下旬」販売開始予定<br>
 
 ## WZ EDITOR 6 {#k023a395}
 
