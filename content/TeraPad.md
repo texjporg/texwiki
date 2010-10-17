@@ -17,12 +17,14 @@ TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産で
 
 VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
-現在，Version 1.00 のベータ版が公開されています．
+TeraPad Version 1.00 正式版が公開されています．任意の DLL 読み込みの脆弱性問題修正版です．
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
         - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
-    - [TeraPad ベータ版](http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html)
+        - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
+            <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
+
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
 
