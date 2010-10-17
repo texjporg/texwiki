@@ -33,14 +33,17 @@ WZ7 は，TeX ファイルの編集に標準機能で対応しています。
 
 「TeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
 
+WZ7 の TeX に関する機能は以下のページを参照してください。
+
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
 - [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
+- [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力](http://www.wzsoft.jp/wz7/wza.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > プログラム](http://www.wzsoft.jp/wz7/help_007.htm)
 
-対応OS
+### 対応 OS {#r7bfdbf1}
 
 - Windows 7 32bit / 64bit 日本語版
 - Windows Vista 32bit 日本語版
@@ -69,14 +72,14 @@ WZ 6.0.45 から，「LaTeX」ファイルの編集に標準機能で対応し�
 
 「LaTeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考に作られたそうです。
 
-WZ EDITOR 6 の LaTeX に関する機能は次のページが参考になります。
+WZ6 の LaTeX に関する機能は以下のページが参考になります。
 
 - [WZsoft > WZエディタ > 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
 - [WZsoft > WZエディタ > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
 - [WZsoft > WZ エディタ 6 > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wz6/wza_002.htm#latex)
 - [WZsoft > WZエディタ > WZ6オンラインヘルプ > LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
 
-対応 OS
+### 対応 OS {#q16657ec}
 
 - Windows XP(32bit) 日本語版
 - Windows Vista(32bit) 日本語版
