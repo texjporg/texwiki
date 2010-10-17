@@ -27,9 +27,11 @@ WZ EDITOR は Windows 7 (32bit/64bit), Vista (32bit), XP (32bit) で動作する
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
     - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
 
-WZ7 は、TeX ファイルの編集に標準機能で対応しています。
+<img src="http://www.wzsoft.jp/wz7/7wz019.png" alt="WZ EDITOR 7 の画面">
 
-「TeX専用メニュー」の仕様は、「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
+WZ7 は，TeX ファイルの編集に標準機能で対応しています。
+
+「TeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
