@@ -24,8 +24,8 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
         - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
-        - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
-            <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
+    - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
+        <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
 
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
