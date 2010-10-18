@@ -11,7 +11,7 @@ pukiwiki: "WZ EDITOR"
 
 ## WZ EDITOR とは {#v4dc34d1}
 
-WZ EDITOR は Windows 7 (32bit/64bit), Vista (32bit), XP (32bit) で動作する国産のテキストエディタです。 (シェアウェア)
+WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディタです。 (シェアウェア)
 
 - [WZソフトウェア](http://www.wzsoft.jp/)
     公式サイト
@@ -49,9 +49,9 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 - Windows Vista 32bit 日本語版
 - Windows XP 32bit 日本語版
 
-> - Windows 7 64bit 日本語版は、32bit互換モードでの動作となります。
+> - Windows 7 64bit 日本語版は，32bit 互換モードでの動作となります。
 > - Windows 95, 98, Me, NT3 には対応しておりません。
-> - Windows NT4, 2000での動作は、サポート対象外となります。
+> - Windows NT4, 2000 での動作は，サポート対象外となります。
 
 > WZ EDITOR 7 オンライン版「2010年10月下旬」販売開始予定<br>
 > WZ EDITOR 7 パッケージ版「2010年11月下旬」販売開始予定<br>
@@ -70,9 +70,9 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 
 WZ 6.0.45 から，「LaTeX」ファイルの編集に標準機能で対応しました。
 
-「LaTeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考に作られたそうです。
+「LaTeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
 
-WZ6 の LaTeX に関する機能は以下のページが参考になります。
+WZ6 の LaTeX に関する機能は以下のページを参照してください。
 
 - [WZsoft > WZエディタ > 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
 - [WZsoft > WZエディタ > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
@@ -81,15 +81,13 @@ WZ6 の LaTeX に関する機能は以下のページが参考になります。
 
 ### 対応 OS {#q16657ec}
 
-- Windows XP(32bit) 日本語版
-- Windows Vista(32bit) 日本語版
-- Windows 7(32bit/64bit) 日本語版
+- Windows XP 32bit 日本語版
+- Windows Vista 32bit 日本語版
+- Windows 7 32bit/64bit 日本語版
 
-※「Windows 7 64bit 日本語版」は、32bit互換モードでの動作となります。
-
-: &nbsp;
-
-<span style="color:Black;background-color:#6F89E6;">　</span><span style="color:Black;background-color:#E3E8FB;">※Windows 95,98,Meには対応しておりません。<br><span style="color:Black;background-color:#6F89E6;">　</span>※Windows NT,2000での動作はサポート対象外となります。</span>
+> - Windows 7 64bit 日本語版は，32bit 互換モードでの動作となります。
+> - Windows 95, 98, Me には対応しておりません。
+> - Windows NT, 2000 での動作はサポート対象外となります。
 
 ## WZ EDITOR 4, 5 {#ma420665}
 
