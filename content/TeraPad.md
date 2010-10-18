@@ -17,7 +17,9 @@ TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産で
 
 VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
-TeraPad Version 1.00 正式版が公開されています．任意の DLL 読み込みの脆弱性問題修正版です．
+2010年10月18日に TeraPad Ver.1.00 正式版が公開されました．
+
+[任意の DLL 読み込みの脆弱性問題](http://jvn.jp/cert/JVNVU707943/)修正版です．
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
@@ -30,12 +32,10 @@ TeraPad Version 1.00 正式版が公開されています．任意の DLL 読み
 
 ***
 
-[<img src="http://www5f.biglobe.ne.jp/~t-susumu/image/tpadicon.gif" alt="terapad (terapad) on Twitter" width="20" height="20">](http://twitter.com/terapad)
-terapad.tex - TeraPad
+[<img src="http://a0.twimg.com/profile_images/1147080548/tpad_bigger.gif" alt="TeraPad (terapad) on Twitter" width="30" height="30">](http://twitter.com/terapad)
+<span style="color:Black;background-color:#ACDEFE;">terapad.tex - TeraPad　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
-<div style="clear:both"></div>
-
-<span style="color:Black;background-color:#DAE0FE;">ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)</span>
+<span style="color:Black;background-color:#DAE0FE;">　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　</span>
 
 ```
 \documentclass[12pt]{jsarticle}
