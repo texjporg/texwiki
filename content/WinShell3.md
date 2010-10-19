@@ -574,6 +574,11 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 それぞれの \label へのリンクが追加されます。それぞれのラベルへのリンクを
 ダブルクリックすることで，そこにジャンプすることができます。
 
+### dviout プレビュー時にできる邪魔なファイルをスッキリさせる {#ja9ea261}
+
+- [リンク: Windowsでdvioutプレビュー時にできる邪魔なファイルをスッキリさせる。](http://d.hatena.ne.jp/okmount/20101004)
+- [WindowsでLaTeXを使うときの.pbmファイルを削除する方法](http://nlab.ee.tokushima-u.ac.jp/nlab/haruna/memo/pbm.html)
+
 ## WinShell とdviout と の連携機能 (Source special) {#l22a7019}
 
 メニューバーより ［オプション］ → ［TeX関連プログラム設定］ と選び，右の
