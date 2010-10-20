@@ -36,8 +36,10 @@ WZ7 は，TeX ファイルの編集に標準機能で対応しています。
 WZ7 の TeX に関する機能は以下のページを参照してください。
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
-- [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
-- [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力](http://www.wzsoft.jp/wz7/wza.htm)
+    - [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
+- [WZsoft > WZ エディタ 7 > チュートリアル > リサーチ入力とIME](http://www.wzsoft.jp/wz7/wza.htm)
+- [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力](http://www.wzsoft.jp/wz7/wza_002.htm)
+    - [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力 # TeXコマンドの補完入力](http://www.wzsoft.jp/wz7/wza_002.htm#tex)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
