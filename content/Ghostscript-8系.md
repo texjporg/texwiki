@@ -1239,5 +1239,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 ## Comment {#z51688d5}
 
 - 「PDF への欧文用フォントの埋め込み制御」で書き換えすべきファイルが、gs9.00、8.70では"Resource/Init/gs_pdfwr.ps"に移動しています。 -- 13th-note 2010-10-12 (火) 15:51:13
+- 「PDFへの欧文用フォントの埋め込み制御」でgs_pdfwr.psについて/.standardfontsを書き換えずに，"/.distillersettings mark"の下の"/default mark"の下の設定(8.71だと104～130行目，最後の空行も含む)をコピーして/NeverEmbedの行を変更したpsfontsembedという新しい設定を作り，dvipdfmx -D "ps2pdf -dPDFSETTINGS=/psfontsembed %i %o"としても良いようです． -- stamura 2010-10-21 (木) 12:00:51
+- 先ほどは上記のように書きましたが，その後調べてみると/AlwaysEmbed, /NeverEmbedがうまく働かない問題は"[http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html](http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html)"で解決されているようです．ただし，gs_pdfwr.psのdefaultでは/NeverEmbedが基本14フォントが指定されているので/AlwaysEmbedは効かず，基本14フォントから埋め込みたいフォントを除いたリストを/NeverEmbedに指定するということになりますが． -- stamura 2010-10-21 (木) 13:41:39
 
 #COMMENT
