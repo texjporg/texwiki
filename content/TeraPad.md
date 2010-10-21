@@ -28,7 +28,7 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
         <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
 
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
-- [Vector - TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
+- [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
 
 ***
 
@@ -268,5 +268,6 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 ## TeraPad 用ツール {#s85f97e6}
 
 - [TeraPad Tools](http://www5f.biglobe.ne.jp/~t-susumu/library/tptools.html)
+- [Vector：ダウンロード Windows &gt; 文書作成 &gt; テキストエディタ &gt; TeraPad](http://www.vector.co.jp/vpack/filearea/win/writing/edit/terapad/)
 - [TpBkGen](http://sites.google.com/site/yosibe1003/terapadtool/tpbkgen)
     日付･時刻毎に別々のバックアップファイルを作成
