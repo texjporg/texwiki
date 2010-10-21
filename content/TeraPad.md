@@ -19,7 +19,7 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
 2010年10月18日に TeraPad Ver.1.00 正式版が公開されました．
 
-[任意の DLL 読み込みの脆弱性問題](http://jvn.jp/cert/JVNVU707943/)修正版です．
+[TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/)の修正版です．最新版へアップデートしてください．
 
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
@@ -206,7 +206,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
 1. Ctrl + Alt + K を押すと PDF ファイルが作成され，表示されます．
-1. PDF ビューアを閉じて，もう一度 Ctrl + Alt + K を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．しおりを作成するためには2回コンパイルが必要です．
+1. PDF ビューアを閉じて，もう一度 Ctrl + Alt + K を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
 ## TeraPad で LaTeX (TeX -> DVI -> PS -> PDF) {#h42e3045}
 
