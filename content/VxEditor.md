@@ -35,13 +35,13 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 > 設定
 
-> タイトル(T):<br>TeX -> PDF
+> タイトル(T):<br><ins>TeX -> PDF</ins>
 
-> 実行ファイル(P):<br>cmd
+> 実行ファイル(P):<br><ins>cmd</ins>
 
-> 作業フォルダ(F):<br>
+> 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; pdflatex -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; pdflatex -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -63,7 +63,7 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 > ☐実行時にテキストを保存する(S)
 
-> ショートカット(H):　Ctrl + Alt + H
+> ショートカット(H):　<ins>Ctrl + Alt + H</ins>
 
 ***
 
@@ -87,13 +87,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br>TeX -> DVI
+> タイトル(T):<br><ins>TeX -> DVI</ins>
 
-> 実行ファイル(P):<br>cmd
+> 実行ファイル(P):<br><ins>cmd</ins>
 
-> 作業フォルダ(F):<br>
+> 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -115,7 +115,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > ☐実行時にテキストを保存する(S)
 
-> ショートカット(H):　Ctrl + Alt + J
+> ショートカット(H):　<ins>Ctrl + Alt + J</ins>
 
 ***
 
@@ -139,13 +139,13 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br>TeX -> DVI -> PDF
+> タイトル(T):<br><ins>TeX -> DVI -> PDF</ins>
 
-> 実行ファイル(P):<br>cmd
+> 実行ファイル(P):<br><ins>cmd</ins>
 
-> 作業フォルダ(F):<br>
+> 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -167,7 +167,7 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > ☐実行時にテキストを保存する(S)
 
-> ショートカット(H):　Ctrl + Alt + K
+> ショートカット(H):　<ins>Ctrl + Alt + K</ins>
 
 ***
 
@@ -191,13 +191,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br>TeX -> DVI -> PS -> PDF
+> タイトル(T):<br><ins>TeX -> DVI -> PS -> PDF</ins>
 
-> 実行ファイル(P):<br>cmd
+> 実行ファイル(P):<br><ins>cmd</ins>
 
-> 作業フォルダ(F):<br>
+> 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -219,7 +219,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > ☐実行時にテキストを保存する(S)
 
-> ショートカット(H):　Ctrl + Alt + L
+> ショートカット(H):　<ins>Ctrl + Alt + L</ins>
 
 ***
 
