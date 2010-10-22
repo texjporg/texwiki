@@ -117,15 +117,15 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ***
 
-> 名前\["-"は区切り線\](N):<br>TeX -> PDF
+> 名前\["-"は区切り線\](N):<br><ins>TeX -> PDF</ins>
 
-> 実行ファイル(E):<br>cmd
+> 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; pdflatex -interaction=nonstopmode "%n" &amp;&amp; "%b.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; pdflatex -interaction=nonstopmode "%n" &amp;&amp; "%b.pdf" &amp; exit</ins>
 
-> 作業フォルダ(D):<br>
+> 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + H
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -148,15 +148,15 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-> 名前\["-"は区切り線\](N):<br>TeX -> DVI
+> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI</ins>
 
-> 実行ファイル(E):<br>cmd
+> 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; "%b.dvi" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; "%b.dvi" &amp; exit</ins>
 
-> 作業フォルダ(D):<br>
+> 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + J
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -179,15 +179,15 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 ***
 
-> 名前\["-"は区切り線\](N):<br>TeX -> DVI -> PDF
+> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI -> PDF</ins>
 
-> 実行ファイル(E):<br>cmd
+> 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit</ins>
 
-> 作業フォルダ(D):<br>
+> 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + K
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -216,15 +216,15 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-> 名前\["-"は区切り線\](N):<br>TeX -> DVI -> PS -> PDF
+> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI -> PS -> PDF</ins>
 
-> 実行ファイル(E):<br>cmd
+> 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit
+> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit</ins>
 
-> 作業フォルダ(D):<br>
+> 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　Ctrl + Alt + L
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
