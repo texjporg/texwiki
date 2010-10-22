@@ -70,7 +70,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 <span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
-<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
+<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span><br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span><br>
 >
@@ -96,11 +96,11 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 <span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
-<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span>
+<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span><br>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> C:\w32tex\bin<br>
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> <ins>C:\w32tex\bin</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> C:\w32tex\dviout\dviout.exe
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> <ins>C:\w32tex\dviout\dviout.exe</ins><br>
 
 ***
 
@@ -116,7 +116,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 
 <span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span><br>
 
 > 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br>
 > <span style="color:#3333CC;">◎</span>日本語<br>
@@ -142,11 +142,11 @@ epLaTeX を選択します．
 
 <span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span><br>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> C:\Program Files\aspell\bin\aspell.exe<br>
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> <ins>C:\Program Files\aspell\bin\aspell.exe</ins><br>
 >
-> 　　起動オプション --lang=en -t -c
+> 　　起動オプション <ins>--lang=en -t -c</ins>
 
 ***
 
@@ -160,13 +160,13 @@ epLaTeX を選択します．
 
 <span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong>
+<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong><br>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> C:\Program Files\Ghostgum\gsview\gsview32.exe<br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe<br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　300　　⧫
+> 　PDF Readerを開くタイミング　　<ins>300</ins>
 
 ***
 
