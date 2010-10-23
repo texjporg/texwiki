@@ -109,7 +109,9 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2006</td><td style="text-align:right">5</td><td>Thomas Esser氏が teTeX 新規リリースの停止を表明。</td><td></td></tr>
 <tr><td style="text-align:center">2007</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun4/">『[改訂第4版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/tex/">TeX フォーラム</a> が開設される。</td></tr>
-<tr><td style="text-align:center">2009</td><td style="text-align:right">8</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf09/">TeX ユーザの集い</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2009</td><td style="text-align:right">8</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf09/">TeX ユーザの集い 2009</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2010</td><td style="text-align:right">7</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun5/">『[改訂第5版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
+<tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf10/">TeX ユーザの集い 2010</a> が開催される。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
