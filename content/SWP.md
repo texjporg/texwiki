@@ -7,7 +7,7 @@ pukiwiki: "SWP"
 
 # SWP
 
-## Scientific WorkPlace {#u14e70e6}
+## [Scientific WorkPlace](http://www.mackichan.com/) {#u14e70e6}
 
 \[FIXME\] かなり古い内容です。
 
