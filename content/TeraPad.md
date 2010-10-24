@@ -7,7 +7,7 @@ pukiwiki: "TeraPad"
 
 # TeraPad
 
-## TeraPad {#g9e6153d}
+## [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) {#g9e6153d}
 
 ## TeraPad とは {#wda2a461}
 
