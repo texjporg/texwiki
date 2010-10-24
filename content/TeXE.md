@@ -7,7 +7,7 @@ pukiwiki: "TeXE"
 
 # TeXE
 
-## TeXE {#d1c324af}
+## [TeXE](http://www5.ocn.ne.jp/~fact/) {#d1c324af}
 
 ### TeXE とは {#b019eb8f}
 
