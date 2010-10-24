@@ -8,7 +8,7 @@ pukiwiki: "秀丸エディタ"
 
 # 秀丸エディタ
 
-## 秀丸エディタ {#z8c2c3a5}
+## [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) {#z8c2c3a5}
 
 ### 秀丸エディタ とは {#w73ea51b}
 
