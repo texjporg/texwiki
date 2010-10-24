@@ -7,7 +7,7 @@ pukiwiki: "Eclipse"
 
 # Eclipse
 
-## Eclipse {#t7934744}
+## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
 ### Eclipse とは {#r72c2682}
 
