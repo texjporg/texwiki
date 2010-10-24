@@ -7,7 +7,7 @@ pukiwiki: "xyzzy"
 
 # xyzzy
 
-## xyzzy {#ea58addb}
+## [xyzzy](http://www.jsdlab.co.jp/~kamei/) {#ea58addb}
 
 ## xyzzy とは {#xya184ab}
 
