@@ -7,7 +7,7 @@ pukiwiki: "VxEditor"
 
 # VxEditor
 
-## VxEditor {#v81da523}
+## [VxEditor](http://dr-x.jimdo.com/) {#v81da523}
 
 ## VxEditor とは {#ub092d33}
 
