@@ -7,7 +7,7 @@ pukiwiki: "eTeX LaTeXプラグイン for Eclipse"
 
 # eTeX LaTeXプラグイン for Eclipse
 
-## ecleTeX {#vda6bd93}
+## [ecleTeX](http://sourceforge.net/projects/etex/) {#vda6bd93}
 
 ### ecleTeX とは {#kb37b99f}
 
