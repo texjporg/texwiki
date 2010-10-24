@@ -7,7 +7,7 @@ pukiwiki: "EasyTeX"
 
 # EasyTeX
 
-## EasyTeX {#et3357}
+## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) {#et3357}
 
 ## EasyTeX とは {#eta184ab}
 
