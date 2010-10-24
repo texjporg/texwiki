@@ -7,7 +7,7 @@ pukiwiki: "WZ EDITOR"
 
 # WZ EDITOR
 
-## WZ EDITOR {#d893b76c}
+## [WZ EDITOR](http://www.wzsoft.jp/) {#d893b76c}
 
 ## WZ EDITOR とは {#v4dc34d1}
 
@@ -22,7 +22,7 @@ WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディ
 
 <strong>WZ EDITOR 7 パッケージ版の販売開始は、2010年11月下旬に予定しています。</strong><br>
 
-## WZ EDITOR 7 {#xeb01ab7}
+## [WZ EDITOR 7](http://www.wzsoft.jp/wz7/) {#xeb01ab7}
 
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
     - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
@@ -58,15 +58,16 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 > WZ EDITOR 7 オンライン版「2010年10月下旬」販売開始予定<br>
 > WZ EDITOR 7 パッケージ版「2010年11月下旬」販売開始予定<br>
 
-## WZ EDITOR 6 {#k023a395}
-
-- [WZ EDITOR 6](http://www.wzsoft.jp/wz6/)
-    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴](http://www.wzsoft.jp/wz6/list.htm)
-    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴の詳細](http://www.wzsoft.jp/wz6/verup.htm)
+## [WZ EDITOR 6](http://www.wzsoft.jp/wz6/) {#k023a395}
 
 <strong>2010年8月31日に、WZ EDITOR 6 の販売を終了しました。</strong><br>
 
 <strong>WZ6 のテクニカルサポートとマイナーアップデートは、継続します。</strong><br>
+
+- [WZ EDITOR 6](http://www.wzsoft.jp/wz6/)
+    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴](http://www.wzsoft.jp/wz6/list.htm)
+    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴の詳細](http://www.wzsoft.jp/wz6/verup.htm)
+    - [WZsoft > WZ エディタ 6 > ユーザサポート](http://www.wzsoft.jp/wz6/supprt.htm)
 
 <img src="http://www.wzsoft.jp/wz6/rc27.png" alt="WZ EDITOR 6 の画面">
 
@@ -93,11 +94,15 @@ WZ6 の LaTeX に関する機能は以下のページを参照してください
 
 ## WZ EDITOR 4, 5 {#ma420665}
 
+[<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
+
 以下の TeX 用マクロが使用できます。
 
 - [p白鳥 (ぱくちょう) pHackTeX](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm) (水谷 亘 さん) 野鳥系マクロ。ライセンスは GPL。
 
 ## WZ EDITOR 1, 2, 3 {#vb048c09}
+
+[<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
 
 以下の TeX 用マクロが使用できます。
 
