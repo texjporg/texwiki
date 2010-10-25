@@ -24,18 +24,17 @@ VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
         - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
+    - [TeraPad ベータ版](http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html)
     - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
-        <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
-
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
 
 ***
 
 [<img src="http://a0.twimg.com/profile_images/1147080548/tpad_bigger.gif" alt="TeraPad (terapad) on Twitter" width="30" height="30">](http://twitter.com/terapad)
-<span style="color:Black;background-color:#ACDEFE;">terapad.tex - TeraPad　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>terapad.tex - TeraPad　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-<span style="color:Black;background-color:#DAE0FE;">　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　</span>
+<span style="color:Black;background-color:#DAE0FE;"><ins>　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　</ins></span>
 
 ```
 \documentclass[12pt]{jsarticle}
