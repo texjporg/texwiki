@@ -13,11 +13,10 @@ pukiwiki: "EasyTeX"
 
 EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産でフリーの TeX 統合環境です．
 
-TeX の入力とコマンドの実行が簡単にできます．
+TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
-公式サイトは次のところにあります．
-
-- [中川仁のホームページ &mdash; TeX を使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
+- [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
+    - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
 
 <img src="http://www.2009-s1-34.com/index.php?plugin=attach&amp;refer=LaTeX%A4%C8%A4%AB&amp;openfile=05.jpg" alt="EasyTeX の画面">
 
@@ -32,29 +31,29 @@ TeX の入力とコマンドの実行が簡単にできます．
 
 シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
-## ダウンロード {#bf9167cb}
+## [ダウンロード](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#bf9167cb}
 
 ### EasyTeX の入手先 {#qe994380}
 
 - [EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
 
-### インストール {#sfc300c2}
+## インストール {#sfc300c2}
 
-#### zip ファイル {#d9b1ceee}
+### zip ファイル {#d9b1ceee}
 
 zip ファイル版の場合はファイルを適当な場所に展開 (解凍) するだけでインストールは終了です．
 
-#### exe ファイル {#fac37d0f}
+### exe ファイル {#fac37d0f}
 
 exe ファイル版 (インストーラー機能付き) の場合はインストーラーの指示に従ってインストールします．
 
-### アンインストール {#l7ffd31d}
+## アンインストール {#l7ffd31d}
 
-#### zip ファイル {#r2a5838b}
+### zip ファイル {#r2a5838b}
 
 zip ファイル版は，レジストリを使用しません．アンインストールするときはフォルダごと削除してください．
 
-#### exe ファイル {#z3b6deb0}
+### exe ファイル {#z3b6deb0}
 
 exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロールパネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
 
@@ -106,7 +105,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 TeX 実行ファイルのパスを指定します．
 
-eplatex.exe (epLaTeX の実行ファイル) が存在するディレクトリ (フォルダ) のフルパスを指定します．ここでは C:\w32tex\bin に設定しました．
+eplatex.exe (epLaTeX の実行ファイル) が存在するフォルダのフルパスを指定します．ここでは C:\w32tex\bin に設定しました．
 
 DVI ドライバは dviout.exe のフルパスを指定します．
 
@@ -210,9 +209,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 簡単な TeX ソースを作り，コンパイル，プレビューまで行いましょう．
 
-まず，［ﾌｧｲﾙ(F)］ → ［新規作成(N)］ をクリックします．
-
-新規ファイルのウィンドウが開きます．
+まず，EasyTeX を起動します．
 
 次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］ をクリックします．
 
