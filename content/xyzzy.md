@@ -36,7 +36,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。
 
-ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/) などのエディタを使うことをおすすめします。
+ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/)[^1] などのエディタを使うことをおすすめします。
 
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。
 
@@ -58,19 +58,24 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 > 参照のこと。）
 
 とうとうオープンソースになりました！
-（MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
-短いライセンスなので読んでください。）興味のある方は
-是非いじってみてください。
+(MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
+短いライセンスなので読んでみてください。)
 
-公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。
+公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
 - [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
 - [基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+    - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads)
+    - [コミットログ](http://bitbucket.org/mumurik/xyzzy/changesets)
 - [xyzzy+](http://xyzzy.codeplex.com/)
+    - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
 - [xyzzy.src (for-gcc ブランチ)](http://github.com/bulb/xyzzy.src)
+    - [コミットログ](http://github.com/bulb/xyzzy.src/commits/for-gcc)
 - [xyzzy.src (nanri-master ブランチ)](http://github.com/southly/xyzzy.src/tree/nanri-master)
+    - [コミットログ](http://github.com/southly/xyzzy.src/commits/nanri-master)
 - [xyzzy.src (deleted-window-p ブランチ)](http://github.com/miyamuko/xyzzy.src/tree/deleted-window-p)
+    - [コミットログ](http://github.com/miyamuko/xyzzy.src/commits/deleted-window-p)
 - [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
@@ -88,7 +93,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 
 USB メモリで使用する方は，
 [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
-からダウンロードして，解凍後，本体のものと置き換えてください。
+からダウンロードして，展開後，本体のものと置き換えてください。
 
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。
@@ -165,6 +170,8 @@ Windows 標準のキーボードショートカットが使えるようになり
 ものですが，次のところが元祖で pavail.l が後発になると思います。
 
 - [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
+
+xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
 
 ## xyzzy と dviout の連携機能 (Source special) {#xysssdaf}
 
@@ -2240,3 +2247,5 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
 - [xyzzy上のスペルチェッカー作成](http://keijisaito.info/arc/spell/spell_check.htm)にaspellの設定説明と片手でできるテンキー用スペルチェックのファイルがあります。 -- 1154736330 2006-08-05 (土) 09:05:30
 - 動的補完のコードに問題点があったので、修正しました。 -- act 2007-02-20 (火) 22:49:36
 - 「KaTeX で TeX の命令をラクラク入力」のセクションに "pbibtex.exe" 関連の記述を追加しました。 -- 1257567430 2009-11-07 (土) 13:17:10
+
+[^1]: Vim は操作方法に関する学習コストが高いので時間をかけて少しずつ習得していくのがいいと思います。
