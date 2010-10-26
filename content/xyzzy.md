@@ -20,8 +20,7 @@ xyzzy は柔軟なカスタマイズを可能にした，
 
 国産で，フリーソフトウェアです。
 
-TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d) や tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) が
-ありますし，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) もあります。
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
 
 多言語についても
 フランス語やドイツ語などの ラテンアルファベット系言語，ロシア語などの
@@ -29,18 +28,15 @@ TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d) や tex/latex/bibtex 編集支�
 中文），韓國語（&#xd55c;&#xad6d;&#xc5b4;）などの文字の表示・混在編集などに
 対応しています（Unicode のすべての言語に対応しているわけではありません）。
 
-公式ウェブサイトは次のところです。
-
-- [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)
+- [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
 
 <img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
 
-Emacs ライクなテキストエディタというと，デフォルトの状態では使い物にならず，設定しないと (設定しても) 使う気にならない上級者向けとの印象があります。
+Emacs ライクなテキストエディタというと，デフォルトの状態では使いにくく，カスタマイズが必要な上級者向けとの印象があります。
 
-ですが，xyzzy はデフォルトの状態でも (Emacs に比べれば) 使いやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。
+ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。
 
-ただし，「テキストエディタって何？」という方や
-Emacs のエディタに関する考え方に共感できず，挫折した方は xyzzy でも同様に挫折する可能性が高いと思われますので，TeraPad や [サクラエディタ](</サクラエディタ/>) をおすすめします。
+ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/) などのエディタを使うことをおすすめします。
 
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。
 
@@ -84,13 +80,11 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 
 手動で行う場合は，次のようにします。
 
-まず，「[やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)」 や
-[基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) や
-[xyzzy.src](http://github.com/southly/xyzzy.src/downloads)
-から
-xyzzy のファイルをダウンロードします。
+まず，[基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
 
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
+
+派生版のバイナリを試してみたい方は，[xyzzy.src](http://github.com/southly/xyzzy.src/downloads) からダウンロードして上書きします。
 
 USB メモリで使用する方は，
 [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
@@ -232,7 +226,7 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 	 (dvi-file (file-namestring dvi-dirfile))
 	 (dir (directory-namestring dvi-dirfile))
 	 (tmp-file (make-temp-file-name)))
-    (call-process (concat "c:\\dviout\\dviout.exe -1 " dvi-file " \"\# "
+    (call-process (concat "c:\\w32tex\\dviout\\dviout.exe -1 " dvi-file " \"\# "
 			  (format nil "~D" (current-line-number)) " " tex-file "\"") :output tmp-file
 		  :exec-directory dir :wait t)
     (delete-file tmp-file))
@@ -259,10 +253,9 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
 をご覧ください。
 
-[KaTeX (花鳥)](#xykb6f8d) や [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
+[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。
 
-[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，
 [bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
 [RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあります。
 
@@ -276,6 +269,27 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 あとはサイトを選んで Enter で決定し，インストールしたいマクロを選び，i キーでインストールします。
 
 終了は q です。
+
+### kyotex-mode で TeX {#l8728f40}
+
+#### kyotex-mode のインストール {#mbb49d11}
+
+- [kyotex-modeのインストール](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/install.html) を参照。
+
+#### 基本設定 {#h53e96ff}
+
+- [kyotex-modeの設定変更方法](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/setting.html) を参照。
+
+TeX(T):
+: eplatex<br>
+
+BiBTeX(B):
+: pbibtex<br>
+
+DVI->PDF(P):
+: dvipdfmx<br>
+
+に変更します。
 
 ### outline-tree でアウトライン表示 {#xyob6f8d}
 
@@ -422,8 +436,8 @@ KaTeX （花鳥）は便利なキーボードショートカットを多数有�
 環境の入力を素早く，なおかつ楽にしてくれるマクロです。[YaTeX](/YaTeX/) の
 xyzzy 版と言った方がわかりやすいかもしれません。
 
-[雄猫のがらくた置き場 (xyzzy)](http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
-([http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
+[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20071224180317/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
+([http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
 から KaTeX と Emacs Lisp 移植キットを選んでそれぞれダウンロードすればいいでしょう。
 
 [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
@@ -626,8 +640,8 @@ KaHTML についての記述は
 そんなときは parentag をお試しください。閉じ括弧を書くと，対応する開き括弧にジャンプします。
 
 netinstaller を用いる場合は
-[雄猫のがらくた置き場 (xyzzy)](http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
-([http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
+[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20071224180317/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
+([http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
 より，parentag をインストールします。その上で，たとえば次のように記述します。
 
 ```
@@ -1091,7 +1105,7 @@ PDF 閲覧の際には
 
 さて，中国語や韓國語
 などは[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
-と [otfcjk](http://psitau.at.infoseek.co.jp/experiment.html) を併用すると
+と [otfcjk](http://psitau.kitunebi.com/experiment.html) を併用すると
 便利です。まずはそれぞれダウンロードしておきましょう。
 
 utf8toutf.zip を展開（解凍）し，w32bin/ ディレクトリ内の utf8toutf.exe を
