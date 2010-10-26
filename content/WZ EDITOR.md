@@ -51,12 +51,10 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 - Windows Vista 32bit 日本語版
 - Windows XP 32bit 日本語版
 
-> - Windows 7 64bit 日本語版は，32bit 互換モードでの動作となります。
-> - Windows 95, 98, Me, NT3 には対応しておりません。
-> - Windows NT4, 2000 での動作は，サポート対象外となります。
-
-> WZ EDITOR 7 オンライン版「2010年10月下旬」販売開始予定<br>
-> WZ EDITOR 7 パッケージ版「2010年11月下旬」販売開始予定<br>
+> - Windows 7 64bit 日本語版は，32bit 互換モードで動作します。
+> - Windows 95, 98, Me, NT3 には対応していません。
+> - Windows NT4, 2000 での動作は，サポート対象外です。
+> - [Windows Vista 64bit 日本語版には正式対応していません。](http://www.wzsoft.jp/wz7/answer.htm)
 
 ## [WZ EDITOR 6](http://www.wzsoft.jp/wz6/) {#k023a395}
 
@@ -88,9 +86,9 @@ WZ6 の LaTeX に関する機能は以下のページを参照してください
 - Windows Vista 32bit 日本語版
 - Windows 7 32bit/64bit 日本語版
 
-> - Windows 7 64bit 日本語版は，32bit 互換モードでの動作となります。
-> - Windows 95, 98, Me には対応しておりません。
-> - Windows NT, 2000 での動作はサポート対象外となります。
+> - Windows 7 64bit 日本語版は，32bit 互換モードで動作します。
+> - Windows 95, 98, Me には対応していません。
+> - Windows NT, 2000 での動作はサポート対象外です。
 
 ## WZ EDITOR 4, 5 {#ma420665}
 
