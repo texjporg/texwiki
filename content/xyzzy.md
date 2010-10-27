@@ -23,10 +23,14 @@ xyzzy は柔軟なカスタマイズを可能にした，
 xyzzy のマクロには，tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
 
 多言語についても
-フランス語やドイツ語などの ラテンアルファベット系言語，ロシア語などの
-キリルアルファベット系言語，ギリシア語，中国語（&#x6c49;&#x8bed;［漢語］，
-中文），韓國語（&#xd55c;&#xad6d;&#xc5b4;）などの文字の表示・混在編集などに
-対応しています（Unicode のすべての言語に対応しているわけではありません）。
+
+- フランス語やドイツ語などのラテンアルファベット系言語
+- ロシア語などのキリルアルファベット系言語
+- ギリシア語
+- 中国語 (&#x6c49;&#x8bed;［漢語］，中文)
+- 韓國語 (&#xd55c;&#xad6d;&#xc5b4;)
+
+などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。
 
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
 
@@ -298,6 +302,14 @@ DVI->PDF(P):
 
 に変更します。
 
+#### コンパイルコマンド {#pf143517}
+
+- [コンパイルコマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/compile.html) を参照。
+
+#### 補完コマンド {#w15b8b4d}
+
+- [補完コマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/completion.html) を参照。
+
 ### outline-tree でアウトライン表示 {#xyob6f8d}
 
 #### outline-tree 2 {#xyott2kl}
@@ -489,7 +501,9 @@ KaTeX 用の設定ですが，お勧めの設定とあわせ，~/.xyzzy に
 
 などと記入しておきます。「自動改行なし」や jsarticle 関連，ツールバーの表示あたりはお好みです。
 
-<em>なお，2009/07/20 をもって "jbibtex.exe" は "pbibtex.exe" に変更されています。</em>後者を使うためには .xyzzy に次のように記述しておく必要があります。
+<em>2009/07/20 に W32TeX の "jbibtex.exe" は "pbibtex.exe" に変更されました。</em>
+
+pbibtex を使うためには .xyzzy に次のように記述しておく必要があります。
 
 ```
 ;; pbibtex を使う
@@ -585,7 +599,7 @@ Optional second argument CHAR is for non-interactive call from menu."
 ```
 
 ```
-(defvar dvips-command "dvips -Ppdf")
+(defvar dvips-command "dvips -Ppdf ")
 (defun KaTeX-dvi2ps ()
 (interactive)
 (KaTeX-save-buffers)
