@@ -9,6 +9,8 @@ pukiwiki: "TeraPad"
 
 ## [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) {#g9e6153d}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## TeraPad とは {#wda2a461}
 
 TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産でフリーのシンプルなテキストエディタです．
