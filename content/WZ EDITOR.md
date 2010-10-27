@@ -9,6 +9,8 @@ pukiwiki: "WZ EDITOR"
 
 ## [WZ EDITOR](http://www.wzsoft.jp/) {#d893b76c}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## WZ EDITOR とは {#v4dc34d1}
 
 WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディタです。 (シェアウェア)
@@ -16,9 +18,7 @@ WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディ
 - [WZソフトウェア](http://www.wzsoft.jp/)
     公式サイト
 
-<strong>2010年9月1日 WZ EDITOR 7 プレビュー版 を公開しました。</strong><br>
-
-<strong>WZ EDITOR 7 オンライン版の販売開始は、2010年10月下旬に予定しています。</strong><br>
+<strong>2010年10月28日 WZ EDITOR 7 オンライン版の販売を開始しました。</strong><br>
 
 <strong>WZ EDITOR 7 パッケージ版の販売開始は、2010年11月下旬に予定しています。</strong><br>
 
@@ -26,6 +26,7 @@ WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディ
 
 - [WZ EDITOR 7](http://www.wzsoft.jp/wz7/)
     - [WZsoft > WZ エディタ 7 > リスト > WZ7 更新リスト](http://www.wzsoft.jp/wz7/verup.htm)
+    - [WZsoft > WZ エディタ 7 > プレビュー版 リスト > WZ7 プレビュー版 更新リスト](http://www.wzsoft.jp/wz7/veruppv.htm)
 
 <img src="http://www.wzsoft.jp/wz7/7wz019.png" alt="WZ EDITOR 7 の画面">
 
@@ -39,7 +40,7 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
     - [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
 - [WZsoft > WZ エディタ 7 > チュートリアル > リサーチ入力とIME](http://www.wzsoft.jp/wz7/wza.htm)
 - [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力](http://www.wzsoft.jp/wz7/wza_002.htm)
-    - [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力 # TeXコマンドの補完入力](http://www.wzsoft.jp/wz7/wza_002.htm#tex)
+- [WZsoft > WZ エディタ 7 > チュートリアル > TeXリサーチ入力](http://www.wzsoft.jp/wz7/wza_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
@@ -54,7 +55,7 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 > - Windows 7 64bit 日本語版は，32bit 互換モードで動作します。
 > - Windows 95, 98, Me, NT3 には対応していません。
 > - Windows NT4, 2000 での動作は，サポート対象外です。
-> - [Windows Vista 64bit 日本語版には正式対応していません。](http://www.wzsoft.jp/wz7/answer.htm)
+> - Windows Vista 64bit 日本語版には正式対応していません。
 
 ## [WZ EDITOR 6](http://www.wzsoft.jp/wz6/) {#k023a395}
 
