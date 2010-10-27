@@ -9,6 +9,8 @@ pukiwiki: "xyzzy"
 
 ## [xyzzy](http://www.jsdlab.co.jp/~kamei/) {#ea58addb}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## xyzzy とは {#xya184ab}
 
 xyzzy は柔軟なカスタマイズを可能にした，
