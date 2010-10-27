@@ -10,6 +10,8 @@ pukiwiki: "秀丸エディタ"
 
 ## [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) {#z8c2c3a5}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ### 秀丸エディタ とは {#w73ea51b}
 
 秀丸エディタ は，Windows 95, 98, Me, NT4.0, 2000, XP, Vista, 7 上で動作する国産のテキストエディタです。 (シェアウェア)
