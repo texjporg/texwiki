@@ -9,6 +9,8 @@ pukiwiki: "VxEditor"
 
 ## [VxEditor](http://dr-x.jimdo.com/) {#v81da523}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## VxEditor とは {#ub092d33}
 
 VxEditor は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で軽快に動作する国産でフリーのテキストエディタです．
