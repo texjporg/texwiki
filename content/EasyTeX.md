@@ -9,6 +9,8 @@ pukiwiki: "EasyTeX"
 
 ## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) {#et3357}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## EasyTeX とは {#eta184ab}
 
 EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産でフリーの TeX 統合環境です．
