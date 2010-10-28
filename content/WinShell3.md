@@ -9,13 +9,26 @@ pukiwiki: "WinShell3"
 
 ## [WinShell 3](http://www.winshell.org/) {#cf393be7}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## WinShell とは {#wa3184ab5}
 
 [WinShell](https://mirror.ctan.org/help/Catalogue/entries/winshell.html) は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です。
 
 TeX の入力とコマンドの実行を簡単にするためのソフトウェアです。
 
-WinShell には，テキストエディタ，構文の強調表示，プロジェクト管理，スペルチェック，表の作成ウィザード，BibTeX サポート，Unicode サポート，ユーザー定義オプションなどの機能があります。
+WinShell には
+
+- テキストエディタ
+- 構文の強調表示
+- プロジェクト管理
+- スペルチェック
+- 表の作成ウィザード
+- BibTeX サポート
+- Unicode サポート
+- ユーザー定義オプション
+
+などの機能があります。
 
 最新の安定版以降のVer. では、Windows NT 5.x系（2000・XP・XP x64 Edition <!-- NT5.1 は32bit版・NT5.2は64bit版のためこのように記載しました// -->
 ）・NT 6.x系（Vista・7）のみサポートしています。
