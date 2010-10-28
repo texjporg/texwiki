@@ -491,7 +491,9 @@ dvipdfmx.exe （さらに「コマンドライン」も「"%s.dvi"」のよう�
 
 ### ユーザ指定プログラム {#q408fd2f}
 
-欧文の文書を作成する方は、\[PDFLaTeX\]の項目はデフォルトの pdflatex のままで、［オプション］ → ［ユーザー指定プログラム］ でTool 1 を dvipdfmx に設定しておくと、欧文は pdflatex, 和文は dvipdfmx と使いわけができます。ただし、Tool 1のdvipdfmxで作成した和文PDFをツールバーのPDFViewボタンで閲覧する場合、［オプション］ → ［主なTeXプログラムの設定］のPDFViewの項目で「PDFLaTeXを先に実行」のチェックを外しておかないとAdobe Readerがアプリケーションエラーを起こして文書が表示されません。
+欧文の文書を作成する方は、\[PDFLaTeX\]の項目はデフォルトの pdflatex のままで、［オプション］ → ［ユーザー指定プログラム］ でTool 1 を dvipdfmx に設定しておくと、欧文は pdflatex, 和文は dvipdfmx と使いわけができます。
+
+ただし、Tool 1のdvipdfmxで作成した和文PDFをツールバーのPDFViewボタンで閲覧する場合、［オプション］ → ［主なTeXプログラムの設定］のPDFViewの項目で「PDFLaTeXを先に実行」のチェックを外しておかないとAdobe Readerがアプリケーションエラーを起こして文書が表示されません。
 
 <!-- ついでに，［オプション］ → ［ユーザー指定プログラム］ で -->
 <!-- Tool 1 を dvipdfmx に設定しておきます。 -->
