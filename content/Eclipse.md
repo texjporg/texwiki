@@ -9,19 +9,26 @@ pukiwiki: "Eclipse"
 
 ## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ### Eclipse とは {#r72c2682}
 
 Eclipse は Java で書かれた IDE (統合開発環境) です。
 
 - [Eclipse.org home](http://www.eclipse.org/)
+- [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
 ### Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です。
 
-- [http://www.oracle.com/technetwork/java/javase/downloads/](http://www.oracle.com/technetwork/java/javase/downloads/)
+- [Java SE Downloads - Sun Developer Network (SDN)](http://www.oracle.com/technetwork/java/javase/downloads/)
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします。
+
+- [Java Portable](http://sf.net/projects/portableapps/files/Java%20Portable/)
+
+もあります。
 
 ### Eclipse のインストール {#r143ba66}
 
