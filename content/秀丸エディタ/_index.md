@@ -20,6 +20,7 @@ pukiwiki: "秀丸エディタ"
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
         - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
         - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
+- [窓の杜 - 秀丸エディタ](http://www.forest.impress.co.jp/lib/offc/document/txteditor/hidemaru.html)
 
 ### 秀丸エディタフリー制度 {#faebc82e}
 
