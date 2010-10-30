@@ -671,6 +671,35 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 > <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
 
+### Runtime Error! {#o5faaed5}
+
+WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し，LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
+
+ShiftJIS (Shift_JIS) では発生しませんでした．
+
+- [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) 参照
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;">Microsoft Visual C++ Runtime Library　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
+
+<span style="font-size:35px"><strong>×</strong></span>Runtime Error!<br>
+
+<br>
+
+Program: C:\\...\WinShell\WinShell.exe<br>
+
+<br>
+
+<br>
+
+This application has requested the Runtime to terminate it in an<br>
+unusual way.<br>
+Please contact the application's support team for more<br>
+information.
+
+***
+
 ### 括弧の強調表示時の文字化け {#xfe3d30d}
 
 過去に報告された日本語の不具合はおおむね直っていますが，
