@@ -675,10 +675,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し，LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
 
-ShiftJIS (Shift_JIS) では発生しませんでした．
-
-- [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) 参照
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;">Microsoft Visual C++ Runtime Library　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
@@ -687,7 +683,7 @@ ShiftJIS (Shift_JIS) では発生しませんでした．
 
 <br>
 
-Program: C:\\...\WinShell\WinShell.exe<br>
+Program: C:\Program Files\WinShell\WinShell.exe<br>
 
 <br>
 
@@ -699,6 +695,12 @@ Please contact the application's support team for more<br>
 information.
 
 ***
+
+ShiftJIS (Shift_JIS) では発生しませんでした．
+
+UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) から旧バージョンをダウンロードしてください．
+
+[Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
 ### 括弧の強調表示時の文字化け {#xfe3d30d}
 
