@@ -41,16 +41,20 @@ WinShell には
 > ［必要があれば，TeXWiki:インストール(Windows) を
 > 参照してください］。 <!-- また，最初から WinShell を使うのではなく， --> <!-- コマンドライン操作を一通りふまえておいてから --> <!-- WinShell の類の統合環境を用いるべきです。 -->
 
-公式ページは次のところです。
-
-- [WinShell - LaTeX User Front End](http://www.winshell.org/)
+- [WinShell - LaTeX User Front End](http://www.winshell.org/) 公式サイト
     <!-- The latest release is WinShell 3.3 File version: 3.3.1.12 - upload: 2010-08-21  -->
-
-WinShell 3.x が出ましたので，それについてはこちらで解説します。
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-（[改訂版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)，[改訂第3版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)）
+([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXworks](/TeXworks/) になりました。
+
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
+『LaTeX2e 美文書作成入門』
+([改訂第4版](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)) の WinShell 3.x についてはこちらで解説します。
+
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
+『LaTeX2e 美文書作成入門』
+([改訂版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)，[改訂第3版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/))
 の WinShell は 2.2 など
 古いバージョンのものですので，[TeXWiki:WinShell#WinShell 2](/WinShell/#gda3cdb6) をご覧ください。
 
@@ -66,7 +70,7 @@ WinShell 3.x が出ましたので，それについてはこちらで解説し�
 
 ### Self-installing exe file {#o6616ae5}
 
-[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません) にある
+[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)，もしくは [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン) にある
 WinShell インストーラ（“WinShell3??.exe” といった名前のもの）をダウンロードし，実行すると
 インストールできます。インストーラの質問には
 \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください。
@@ -594,6 +598,39 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 - [リンク: Windowsでdvioutプレビュー時にできる邪魔なファイルをスッキリさせる。](http://d.hatena.ne.jp/okmount/20101004)
 - [WindowsでLaTeXを使うときの.pbmファイルを削除する方法](http://nlab.ee.tokushima-u.ac.jp/nlab/haruna/memo/pbm.html)
 
+## Sumatra PDF との連携 (forward and inverse search) {#o54574a6}
+
+LaTeX コマンドのコマンドラインに -synctex=1 を追加し，PDFView を [Sumatra PDF](http://william.famille-blum.org/software/sumatra/) に変更します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;">オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
+
+<span style="color:Black;background-color:#EEEEEE;">\[ 一般　\]</span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</span><br>
+
+<br>
+
+　　プログラム名　　<ins>PDFView</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
+　　コマンドライン 　<ins>-reuse-instance -inverse-search "\\"C:\Program Files\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins><br>
+　　　　　　　　　　　　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
+　　実行キー:　　　　引数:<br>
+　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+
+***
+
 ## WinShell とdviout と の連携機能 (Source special) {#l22a7019}
 
 メニューバーより ［オプション］ → ［TeX関連プログラム設定］ と選び，右の
@@ -664,13 +701,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 ## 不具合 {#j9720464}
 
-### 赤い小さなゴミのようなものが表示される {#bf59f9a2}
-
-''WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
-カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.1.12 でも同様の症状が発生します。''
-
-> <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
-
 ### Runtime Error! {#o5faaed5}
 
 WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し，LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
@@ -702,24 +732,36 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 
 [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
+どうしても最新版を使いたい方は，\[主なTeXプログラムの設定\] を \[ユーザ指定プログラム\] の方へ設定し，\[ユーザ指定プログラム\] の方を使用すると Runtime Error! にならずにコンパイルすることができます．
+
+\[主なTeXプログラムの設定\] の方を使用すると，当然 Runtime Error! になります．
+
+### 赤い小さなゴミのようなものが表示される {#bf59f9a2}
+
+''WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
+カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.1.12 でも同様の症状が発生します。''
+
+> <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
+
 ### 括弧の強調表示時の文字化け {#xfe3d30d}
 
-過去に報告された日本語の不具合はおおむね直っていますが，
-括弧の強調表示時の文字化け現象は解決していませんでした。
-［オプション］ → ［WinShellの外観］ → ［ユーザー設定］ でツールバーに
-登録する際にコンボボックスのリストの日本語が表示されません。この操作をする
-際には ［オプション］ → ［言語］ から言語を “English” にしておきましょう。
+過去に報告された日本語の不具合はおおむね直っていますが，括弧の強調表示時の文字化け現象は解決していませんでした。
 
-括弧の強調表示時（例えば
+［オプション］ → ［WinShellの外観］ → ［ユーザー設定］ でツールバーに登録する際にコンボボックスのリストの日本語が表示されません。
+
+この操作をする際には ［オプション］ → ［言語］ から言語を “English” にしておきましょう。
+
+括弧の強調表示時に，日本語が文字化けする不具合があります。
+
+例えば
 
 ```
 \chapter{日本語文字
 ```
 
-と入力してから “}” を付けると，括弧が緑色に表示される）に
-日本語が文字化けする不具合があります。
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
 
-ある文字を{}の中で使用すると、文字化けする事があります。
+ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
 
 関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
 
