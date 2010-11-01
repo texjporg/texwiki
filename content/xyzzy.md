@@ -80,8 +80,6 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
     - [コミットログ](http://github.com/bulb/xyzzy.src/commits/for-gcc)
 - [xyzzy.src (nanri-master ブランチ)](http://github.com/southly/xyzzy.src/tree/nanri-master)
     - [コミットログ](http://github.com/southly/xyzzy.src/commits/nanri-master)
-- [xyzzy.src (deleted-window-p ブランチ)](http://github.com/miyamuko/xyzzy.src/tree/deleted-window-p)
-    - [コミットログ](http://github.com/miyamuko/xyzzy.src/commits/deleted-window-p)
 - [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
