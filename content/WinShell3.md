@@ -13,9 +13,9 @@ pukiwiki: "WinShell3"
 
 ## WinShell とは {#wa3184ab5}
 
-[WinShell](https://mirror.ctan.org/help/Catalogue/entries/winshell.html) は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です。
+[WinShell](https://mirror.ctan.org/help/Catalogue/entries/winshell.html) は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です．
 
-TeX の入力とコマンドの実行を簡単にするためのソフトウェアです。
+TeX の入力とコマンドの実行を簡単にするためのソフトウェアです．
 
 WinShell には
 
@@ -28,35 +28,35 @@ WinShell には
 - Unicode サポート
 - ユーザー定義オプション
 
-などの機能があります。
+などの機能があります．
 
-最新の安定版以降のVer. では、Windows NT 5.x系（2000・XP・XP x64 Edition <!-- NT5.1 は32bit版・NT5.2は64bit版のためこのように記載しました// -->
-）・NT 6.x系（Vista・7）のみサポートしています。
-64ビットOSではWOW64による32ビット互換アプリとして動作します。
+最新の安定版以降の Ver. では、Windows NT 5.x 系（2000・XP・XP x64 Edition <!-- NT5.1 は 32bit版・NT5.2 は 64bit版のためこのように記載しました// -->
+）・NT 6.x系（Vista・7）のみサポートしています．
+64 ビットOSでは WOW64 による 32 ビット互換アプリとして動作します．
 
-[Wine](http://www.winehq.org/) を使えば Linux 上でも動作します。
+[Wine](http://www.winehq.org/) を使えば Linux 上でも動作します．
 
-> 【注意】<strong>WinShell は TeX そのものなどではありません</strong>。TeX 自身
+> 【注意】<strong>WinShell は TeX そのものなどではありません</strong>．TeX 自身
 > および関連ソフトウェアをあらかじめインストールしておく必要があります
 > ［必要があれば，TeXWiki:インストール(Windows) を
-> 参照してください］。 <!-- また，最初から WinShell を使うのではなく， --> <!-- コマンドライン操作を一通りふまえておいてから --> <!-- WinShell の類の統合環境を用いるべきです。 -->
+> 参照してください］． <!-- また，最初から WinShell を使うのではなく， --> <!-- コマンドライン操作を一通りふまえておいてから --> <!-- WinShell の類の統合環境を用いるべきです． -->
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/) 公式サイト
     <!-- The latest release is WinShell 3.3 File version: 3.3.1.12 - upload: 2010-08-21  -->
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXworks](/TeXworks/) になりました。
+([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXworks](/TeXworks/) になりました．
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第4版](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)) の WinShell 3.x についてはこちらで解説します。
+([改訂第4版](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)) の WinShell 3.x についてはこちらで解説します．
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
 ([改訂版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)，[改訂第3版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/))
 の WinShell は 2.2 など
-古いバージョンのものですので，[TeXWiki:WinShell#WinShell 2](/WinShell/#gda3cdb6) をご覧ください。
+古いバージョンのものですので，[TeXWiki:WinShell#WinShell 2](/WinShell/#gda3cdb6) をご覧ください．
 
 [![WinShell 3 の新しい画面](http://www.winshell.org/modules/ws_screenshots/images/main_small.png)](http://www.winshell.org/modules/ws_screenshots/images/main.png)
 [![Linux で動作する WinShell 3](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell_small.png)](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell.png)
@@ -64,33 +64,35 @@ WinShell には
 ## ダウンロードとインストール {#bf3167cb}
 
 [WinShell - LaTeX User Front End](http://www.winshell.org/) のほか，[CTAN](/CTAN/) からも
-ダウンロードできます。
+ダウンロードできます．
 
-ダウンロードするファイルは，Self-installing exe file と Zip archive の2種類があります。好きな方を選んでダウンロードしてください。
+ダウンロードするファイルは，Self-installing exe file と Zip archive の2種類があります．好きな方を選んでダウンロードしてください．
 
 ### Self-installing exe file {#o6616ae5}
 
-[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)，もしくは [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン) にある
-WinShell インストーラ（“WinShell3??.exe” といった名前のもの）をダウンロードし，実行すると
-インストールできます。インストーラの質問には
-\[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください。
-使用許諾書ではもちろん “accept” （受諾）する項目を
-選んでください。WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を
-押してください。このあといったん WinShell を閉じます。
+[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)，もしくは [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン) にある WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．
+
+インストーラの質問には \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください．
+
+使用許諾書ではもちろん “accept” (受諾) する項目を選んでください．
+
+WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押してください．
+
+このあといったん WinShell を閉じます．
 
 ### Zip archive {#e5dfb289}
 
 [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません) にある
 WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
-インストール完了です。
+インストール完了です．
 
 ### 日本語化ファイル {#i83c37b0}
 
 - [WinShell 日本語化ファイル](http://nnnnn.me/downloads.php?cat_id=1)
 
-WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください。
+WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．
 
-ダウンロードしたファイルは WinShell の Translations フォルダに置いてください。
+ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．
 
 ## 設定 {#h3ab6f8d}
 
@@ -179,42 +181,27 @@ zip ファイルでインストールした場合は，展開したディレク�
 WinShell 3.3 の場合：
 : &nbsp;
 
-初回起動時に言語選択が Japanese ならば, デフォルトで 3.2 設定項目が設定
-されるはずです。但しフォントは確認の上ご自分の用途に応じたものを選んで
-ください。
+初回起動時に言語選択が Japanese ならば, デフォルトで 3.2 設定項目が設定されるはずです。但しフォントは確認の上ご自分の用途に応じたものを選んでください。
 
 WinShell 3.2 の場合：
 : &nbsp;
 
 起動したら，［オプション］ → ［フォント］ で次のように設定してください。
-「文書」を選択し，『フォント』の項目で「ＭＳ ゴシック」など
-お好みの日本語フォントを選択します。さらに『スクリプト』を「日本語」にし，
-『エンコーディング』で「ShiftJIS」 (Shift_JIS) を
-選択します<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] を
-クリックしてください。
+「文書」を選択し，『フォント』の項目で「ＭＳ ゴシック」などお好みの日本語フォントを選択します。さらに『スクリプト』を「日本語」にし，『エンコーディング』で「ShiftJIS」 (Shift_JIS) を選択します<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] をクリックしてください。
 
 Winshell 3.1 の場合：
 : &nbsp;
 
 起動したら，［オプション］ → ［フォント］ で，次のように設定してください。
-「文書」を選択し，『フォント名』の項目で「ＭＳ ゴシック」など
-お好みの日本語フォントを選択します。さらに『スクリプト』を「日本語」にし，
-『エンコーディング』で「DBCS」 (double-byte character set) を
-選択します<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] を
-クリックしてください。
+「文書」を選択し，『フォント名』の項目で「ＭＳ ゴシック」などお好みの日本語フォントを選択します。さらに『スクリプト』を「日本語」にし，『エンコーディング』で「DBCS」 (double-byte character set) を選択します<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] をクリックしてください。
 
 Winshell 3.0 の場合：
 : &nbsp;
 
 起動したら，［オプション］ → ［フォント］ で ［変更］ボタンをクリックします。
-そして，『フォント名』の項目で「ＭＳ ゴシック」などお好みの日本語フォントを
-選択します。さらに，『書体の種類』を「日本語」に
-します<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] を
-クリックすると表示フォントが変更されます。
+そして，『フォント名』の項目で「ＭＳ ゴシック」などお好みの日本語フォントを選択します。さらに，『書体の種類』を「日本語」にします<em>（よく忘れるので，この作業を絶対に忘れないこと！）</em>。\[OK\] をクリックすると表示フォントが変更されます。
 
-> いずれの場合においても，フォント名として「@ＭＳ ゴシック」のような “@” が
-> 先頭に附いた名称のものを選択するとテキストエディタ部の和文文字が
-> 横倒しに表示されてしまいますので，そのような設定は避けましょう。
+> いずれの場合においても，フォント名として「@ＭＳ ゴシック」のような “@” が先頭に附いた名称のものを選択するとテキストエディタ部の和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう。
 
 ### 主なTeXプログラムの設定 {#v03241d0}
 
@@ -255,7 +242,7 @@ Cドライブでない場合には “C:” という部分を書き換えてく
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-kanji=sjis -synctex=1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
+　　コマンドライン 　<ins>-kanji=sjis -synctex=-1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -600,7 +587,7 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 
 ## Sumatra PDF との連携 (forward and inverse search) {#o54574a6}
 
-LaTeX コマンドのコマンドラインに -synctex=1 を追加し，PDFView を [Sumatra PDF](http://william.famille-blum.org/software/sumatra/) に変更します．
+LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [Sumatra PDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
 
 ***
 
