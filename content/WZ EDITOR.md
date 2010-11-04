@@ -45,6 +45,7 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > プログラム](http://www.wzsoft.jp/wz7/help_007.htm)
+- [WZsoft > WZ エディタ 7 > FAQ > TeX](http://www.wzsoft.jp/wz7/faq_008.htm)
 
 ### 対応 OS {#r7bfdbf1}
 
