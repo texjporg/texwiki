@@ -46,7 +46,7 @@ WinShell には
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXworks](/TeXworks/) になりました．
+([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXWiki:TeXworks](/TeXworks/) になりました．
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
@@ -70,7 +70,11 @@ WinShell には
 
 ### Self-installing exe file {#o6616ae5}
 
-[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)，もしくは [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン) にある WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．
+- [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)
+- [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
+- [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン)
+
+上記のサイトから WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．
 
 インストーラの質問には \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください．
 
@@ -82,13 +86,15 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 
 ### Zip archive {#e5dfb289}
 
-[WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)，もしくは [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません) にある
-WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
+- [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)
+- [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
+
+上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
 ### 日本語化ファイル {#i83c37b0}
 
-- [WinShell 日本語化ファイル](http://nnnnn.me/downloads.php?cat_id=1)
+- [<del>WinShell 日本語化ファイル</del>](http://nnnnn.me/downloads.php?cat_id=1)
 
 WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．
 
@@ -223,6 +229,8 @@ Cドライブでない場合には “C:” という部分を書き換えてく
 
 #### LaTeX {#j415cdd8}
 
+eplatex.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\eplatex.exe)
+
 ***
 
 <span style="color:Black;background-color:#ACDEFE;">オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
@@ -252,16 +260,13 @@ Cドライブでない場合には “C:” という部分を書き換えてく
 
 ***
 
-\[LaTeX\]
-: &nbsp;
-
-eplatex.exe （うまくいかなければフルパスで指定してください。例えば C:\w32tex\bin\eplatex.exe）
-
 #### BibTeX {#x2fc6cd6}
 
-***
-
 <em>2009/7/20 に W32TeXの "jbibtex.exe" は "pbibtex.exe" に変更されました．それ以前の W32TeX をインストールされている方は，BibTeX の設定の部分を "jbibtex.exe" にしてください． ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
+
+pbibtex.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\pbibtex.exe)
+
+***
 
 <span style="color:Black;background-color:#ACDEFE;">オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
 
@@ -290,12 +295,9 @@ eplatex.exe （うまくいかなければフルパスで指定してくださ�
 
 ***
 
-\[BibTeX\]
-: &nbsp;
-
-pbibtex.exe （うまくいかなければフルパスで指定してください。例えば C:\w32tex\bin\pbibtex.exe）。<em>2009/7/20 に W32TeX の "jbibtex.exe" は "pbibtex.exe" に変更されました。それ以前の W32TeX をインストールされている方は， \[BibTeX\] の設定の部分を "jbibtex.exe" にしてください。 ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
-
 #### DVIView {#gc5e030c}
+
+C:\w32tex\dviout\dviout.exe (\[参照(B)...\] で dviout.exe を検索)
 
 ***
 
@@ -326,16 +328,13 @@ pbibtex.exe （うまくいかなければフルパスで指定してくださ�
 
 ***
 
-\[DVIView\]
-: &nbsp;
-
-C:\w32tex\dviout\dviout.exe （自動的に入るはず）
-
 #### DVI -> PS {#m386c533}
 
-***
-
 <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました．それ以前の W32TeX をインストールされている方は，DVI -> PS の設定の部分を "dvipsk.exe" にしてください． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
+
+dvips.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\dvips.exe)
+
+***
 
 <span style="color:Black;background-color:#ACDEFE;">オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</span> </span><br>
 
@@ -364,13 +363,9 @@ C:\w32tex\dviout\dviout.exe （自動的に入るはず）
 
 ***
 
-\[DVI -> PS\]
-: &nbsp;
-
-dvips.exe （うまくいかなければフルパスで指定してください。例えば C:\w32tex\bin\dvips.exe）。
-<em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました。それ以前の W32TeX をインストールされている方は， \[DVI -> PS\] の設定の部分を "dvipsk.exe" にしてください。 ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
-
 #### GSView {#gb236799}
+
+"C:\Program Files\Ghostgum\gsview\gsview32.exe" (\[参照(B)...\] で gsview32.exe を検索)
 
 ***
 
@@ -401,12 +396,9 @@ dvips.exe （うまくいかなければフルパスで指定してください�
 
 ***
 
-\[GSView\]
-: &nbsp;
-
-［参照］ボタンで gsview32.exe などを指定する。分からない場合は検索すること。
-
 #### PDFLaTeX {#f08ac8c2}
+
+dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 
 ***
 
@@ -437,12 +429,9 @@ dvips.exe （うまくいかなければフルパスで指定してください�
 
 ***
 
-\[PDFLaTeX\]
-: &nbsp;
-
-dvipdfmx.exe （さらに「コマンドライン」も「"%s.dvi"」のように変更しておく。）
-
 #### PDFView {#gffc0a36}
+
+「[Adobe Reader](http://www.adobe.com/jp/products/reader/)」 の場合，"C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索)
 
 ***
 
@@ -472,13 +461,6 @@ dvipdfmx.exe （さらに「コマンドライン」も「"%s.dvi"」のよう�
 　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
 
 ***
-
-\[PDFView\]
-: &nbsp;
-
-［参照］ボタンで AcroRd32.exe
-（「[Adobe Reader](http://www.adobe.com/jp/products/reader/) の場合」）または Acrobat.exe (「Adobe Acrobat」の場合)を
-指定する。分からない場合は検索すること。
 
 ### ユーザ指定プログラム {#q408fd2f}
 
@@ -618,7 +600,7 @@ LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView
 
 ***
 
-## WinShell とdviout と の連携機能 (Source special) {#l22a7019}
+## WinShell とdviout との連携機能 (Source special) {#l22a7019}
 
 メニューバーより ［オプション］ → ［TeX関連プログラム設定］ と選び，右の
 「プログラム」のリストより \[LaTeX\] を選びます。そして，「コマンドライン」を
