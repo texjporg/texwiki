@@ -69,9 +69,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span><br>
+　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span><br>
 >
@@ -95,9 +95,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</span><br>
+　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> <ins>C:\w32tex\bin</ins><br>
 >
@@ -115,21 +115,17 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]</span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ Spell \]\[ PS/PDF \]</span><br>
-
-> 言語　　　　　　　　　　　　　 ☐検索したTeXラベルをソートする<br>
-> <span style="color:#3333CC;">◎</span>日本語<br>
->
-> ◯英語<br>
-> 　　　　　　　　　　　　　　　　 ☐source special<br>
-> TeXコンパイラ<br>
-> pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-> <span style="color:White;background-color:#1188FF;">epLaTeX　　　 　 　</span>　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
->
-> jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
-> <span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]</ins></span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Spell \]\[ PS/PDF \]</ins></span><br>
+　　　　　　言語<br>
+　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
+　　　　　　◯英語<br>
+　　　　　TeXコンパイラ　　　　　　 　 　☐source special<br>
+　　　　　pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　　　　<span style="color:White;background-color:#1188FF;">epLaTeX　　　 　 　</span>　　 　 　 　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
+　　　　　jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
@@ -141,13 +137,13 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]</span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;">\[ PS/PDF \]</span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]</ins></span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ PS/PDF \]</ins></span><br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> <ins>C:\Program Files\aspell\bin\aspell.exe</ins><br>
 >
-> 　　起動オプション <ins>--lang=en -t -c</ins>
+> 　　起動オプション <ins>--lang=en -t -c</ins><br>
 
 ***
 
@@ -159,15 +155,15 @@ epLaTeX を選択します．
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ TeXExe \]\[ TeXOption \]\[ Spell \]</span><strong>\[ PS/PDF \]</strong><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　<ins>300</ins>
+> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
 
 ***
 
@@ -219,7 +215,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
 　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
 　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
@@ -266,15 +262,15 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">PDFファイルのページサイズの設定　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　PDFファイルのページサイズの設定　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-　　　　　　　ページサイズ<br>
-　　　　　　　a3　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　</span>　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span><br>
+　　　　　　　　　ページサイズ<br>
+　　　　　　　指定しない　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　　　　　　a3　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span><br>
+　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　　　</span><br>
 　　　　　　　a5<br>
-　　　　　　　a6<br>
-　　　　　　　b3　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
-　　　　　　　b4　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　　　　　　a6　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
+　　　　　　　b3　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 　<br>
 　　　　　　　☐landscape<br>
 
@@ -292,11 +288,11 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex323\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex3231\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\w32tex\editor\easytex323\EasyTeX.exe
+`easytex easytex +%d %s``C:\w32tex\editor\easytex3231\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
