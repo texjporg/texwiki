@@ -57,6 +57,7 @@ pukiwiki: "秀丸エディタ"
 - [LaTeX Compile HIDEMARU Macro (LaTeXコンパイル用秀丸マクロ)](http://hide.maruo.co.jp/lib/macro/lcm11.html)
     (岩里 さん)
 
+- [TeX用改行コード挿入マクロ](http://hide.maruo.co.jp/lib/macro/il-fc093.html) (haze さん)
 - [TeX Module Control with HIDEMARU Macro](http://www.ceres.dti.ne.jp/~sugiura/hidemaru/macros/tex_mc/index.html)
     (杉浦 方紀 さん)
 
