@@ -46,17 +46,14 @@ WinShell には
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXWiki:TeXworks](/TeXworks/) になりました．
-
+([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [TeXWiki:TeXworks](/TeXworks/) になりました．<br>
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第4版](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)) の WinShell 3.x についてはこちらで解説します．
-
+([改訂第4版](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)) の WinShell 3.x についてはこちらで解説します．<br>
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
 ([改訂版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)，[改訂第3版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/))
-の WinShell は 2.2 など
-古いバージョンのものですので，[TeXWiki:WinShell#WinShell 2](/WinShell/#gda3cdb6) をご覧ください．
+の WinShell は 2.2 など，古いバージョンのものですので，[TeXWiki:WinShell#WinShell 2](/WinShell/#gda3cdb6) をご覧ください．
 
 [![WinShell 3 の新しい画面](http://www.winshell.org/modules/ws_screenshots/images/main_small.png)](http://www.winshell.org/modules/ws_screenshots/images/main.png)
 [![Linux で動作する WinShell 3](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell_small.png)](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell.png)
@@ -64,8 +61,7 @@ WinShell には
 ## ダウンロードとインストール {#bf3167cb}
 
 [WinShell - LaTeX User Front End](http://www.winshell.org/) のほか，[CTAN](/CTAN/) からも
-ダウンロードできます．
-
+ダウンロードできます．<br>
 ダウンロードするファイルは，Self-installing exe file と Zip archive の2種類があります．好きな方を選んでダウンロードしてください．
 
 ### Self-installing exe file {#o6616ae5}
@@ -74,14 +70,10 @@ WinShell には
 - [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
 - [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) (旧バージョン)
 
-上記のサイトから WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．
-
-インストーラの質問には \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください．
-
-使用許諾書ではもちろん “accept” (受諾) する項目を選んでください．
-
-WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押してください．
-
+上記のサイトから WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．<br>
+インストーラの質問には \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください．<br>
+使用許諾書ではもちろん “accept” (受諾) する項目を選んでください．<br>
+WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押してください．<br>
 このあといったん WinShell を閉じます．
 
 ### Zip archive {#e5dfb289}
@@ -92,13 +84,13 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-### 日本語化ファイル {#i83c37b0}
+### <del>日本語化ファイル</del> {#i83c37b0}
 
 - [<del>WinShell 日本語化ファイル</del>](http://nnnnn.me/downloads.php?cat_id=1)
 
-WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．
+<del>WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．</del><br>
 
-ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．
+<del>ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．</del>
 
 ## 設定 {#h3ab6f8d}
 
