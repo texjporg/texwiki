@@ -423,7 +423,7 @@ dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 
 #### PDFView {#gffc0a36}
 
-「[Adobe Reader](http://www.adobe.com/jp/products/reader/)」 の場合，"C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索)
+「[Adobe Reader](http://www.adobe.com/jp/products/reader/)」 の場合，"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索)
 
 ***
 
@@ -438,7 +438,7 @@ dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe"</ins><br>
+　　exeファイル名 　<ins>"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
