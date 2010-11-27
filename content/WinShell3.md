@@ -423,9 +423,10 @@ dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 
 #### PDFView {#gffc0a36}
 
-「[Adobe Reader](http://www.adobe.com/jp/products/reader/) 10」 の場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．それ以前のバージョンの場合，の場合，"C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) します（x.xは任意の数字）．
+「[Adobe Reader](http://www.adobe.com/jp/products/reader/) X」 の場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．<br>
+Adobe Reader 9 以前のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) とします（x.xは任意の数字）．
 
-■ Adobe Reader Xを使用する場合
+■ Adobe Reader X を使用する場合
 
 ***
 
@@ -456,7 +457,7 @@ dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 
 ***
 
-■ Adobe Reader 9以前のバージョンを使用する場合
+■ Adobe Reader 9 以前のバージョンを使用する場合
 
 ***
 
@@ -683,9 +684,9 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 <span style="color:Black;background-color:#ACDEFE;">WinShellの更新　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ <strong><span style="color:White;">✕</span></strong> \]</span> </span><br>
 
-　使用中のバージョン: 　　　　3.3.1.12<br>
+　使用中のバージョン: 　　　　3.3.2.0<br>
 　最新のリリースバージョン:　3.3.1.12 　 　 　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
-　最新のベータバージョン:　　none　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
+　最新のベータバージョン:　　3.3.2.2　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
 　<span style="color:Black;background-color:#E8E8E8;">\[　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</span><br>
 　残り時間:<br>
 　転送状況:<br>
