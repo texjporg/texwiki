@@ -35,7 +35,7 @@ pukiwiki: "秀丸エディタ"
 
 - [祝鳥 (のりてふ)](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/fortex.html)
     (阿部 紀行 (あべのり) さん)
-
+    - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
 - [RaTeX0e](http://uca-works.com/hidemaru_macro/RaTeX0e.html), [cRaTeX0e](http://uca-works.com/hidemaru_macro/cRaTeX0e.html)
     (福中 公輔 さん)
 
