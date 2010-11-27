@@ -161,13 +161,15 @@ epLaTeX を選択します．
 
 > <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 >
 > 　PDF Readerを開くタイミング　　<ins>300</ins><br>
 
 ***
 
-GhostView (gsview32.exe) と PDF Reader (AcroRd32.exe) のフルパスを指定します．
+GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe) のフルパスを指定します．
+
+Adobe Reader X を使用して PDF ファイルを表示したい方は，ツールの設定 の Adobe Reader X を参照して設定してください．
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
@@ -177,31 +179,157 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
 
-<!-- 現在の EasyTeX は DVI -> PDF 変換機能や PDF ファイル閲覧機能があるので -->
-<!-- ここはコメントアウトしときます -->
+## ツールの設定 {#h04c9433}
 
-<!-- ついでに，［オプション］ → ［ツールの設定］ で -->
-<!-- Program0 を dvipdfmx に，Program1 を「PDF 閲覧」に設定しておきます。 -->
+メニューの オプション(O) → ﾂｰﾙの設定(O) からツールの設定をします．
 
-<!-- :DVI → PDF| -->
-<!-- :タイトル|DVI → PDF -->
-<!-- :プログラム|dvipdfmx.exe -->
-<!-- :実行時引数|%n.dvi -->
+設定を反映させるため，［ 　登録　 ］ボタンを押し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．
 
-<!-- - --  -->
+設定したツールはメニューの ﾂｰﾙ(A) から選択できます．
 
-<!-- :PDF 閲覧| -->
-<!-- :タイトル|PDF 閲覧 -->
-<!-- :プログラム|cmd.exe /C START （Windows 95, 98, Me では -->
-<!-- cmd.exe を command.com に置き換えるとうまくいくかも。） -->
-<!-- :実行時引数|%n.pdf -->
+### dvipdfmx {#l0d22111}
 
-<!-- あとは ［登録］ボタンを押し，[OK] をクリックします。 -->
+dvipdfmx を使用して PDF ファイルを作成．
 
-<!-- こうすることでメニューバーの ［ツール］ より，[DVI → PDF] を選べば -->
-<!-- dvipdfmx で DVI ファイルが PDF ファイルに変換され，［PDF 閲覧］ を選べば -->
-<!-- PDF ファイルが（関連付けに従って Adobe Reader などが起動し，） -->
-<!-- PDF を閲覧できるようになります。 -->
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの設定　</ins></span><br>
+
+<span style="color:White;background-color:#1188FF;">program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+
+program1<br>
+program2<br>
+program3<br>
+program4<br>
+program5<br>
+program6<br>
+program7<br>
+program8<br>
+program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+タイトル<br>
+　　　<ins>dvipdfmx</ins><br>
+プログラム<br>
+　　　<ins>dvipdfmx.exe</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+実行時引数<br>
+　　　<ins>"%n.dvi"</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### Adobe Reader X {#m3a434b8}
+
+Adobe Reader X を使用して PDF ファイルを表示．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの設定　</ins></span><br>
+
+program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+<span style="color:White;background-color:#1188FF;">program1　</span><br>
+
+program2<br>
+program3<br>
+program4<br>
+program5<br>
+program6<br>
+program7<br>
+program8<br>
+program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+タイトル<br>
+　　　<ins>Adobe Reader X</ins><br>
+プログラム<br>
+　　　<ins>"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+実行時引数<br>
+　　　<ins>"%n.pdf"</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pbibtex {#cb466707}
+
+pbibtex を使用．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの設定　</ins></span><br>
+
+program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+program1<br>
+<span style="color:White;background-color:#1188FF;">program2　</span><br>
+
+program3<br>
+program4<br>
+program5<br>
+program6<br>
+program7<br>
+program8<br>
+program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+タイトル<br>
+　　　<ins>pbibtex</ins><br>
+プログラム<br>
+　　　<ins>pbibtex.exe</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+実行時引数<br>
+　　　<ins>-kanji=sjis "%n"</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### mendex {#j08f6352}
+
+mendex を使用．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの設定　</ins></span><br>
+
+program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+program1<br>
+program2<br>
+<span style="color:White;background-color:#1188FF;">program3　</span><br>
+
+program4<br>
+program5<br>
+program6<br>
+program7<br>
+program8<br>
+program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+タイトル<br>
+　　　<ins>mendex</ins><br>
+プログラム<br>
+　　　<ins>mendex.exe</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+実行時引数<br>
+　　　<ins>-S "%n.idx"</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
 
 ## 使い方 {#etu162c1}
 
