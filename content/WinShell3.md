@@ -425,8 +425,8 @@ dvipdfmx.exe (さらに「コマンドライン」も「"%s.dvi"」に変更．)
 
 #### PDFView {#gffc0a36}
 
-「[Adobe Reader](http://www.adobe.com/jp/products/reader/) X」 の場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．<br>
-Adobe Reader 9 以前のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) とします（x.xは任意の数字）．
+- [Adobe Reader X](http://www.adobe.com/jp/products/reader/) の場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．
+- [Adobe Reader 9 以前のバージョン](http://get.adobe.com/jp/reader/otherversions/) の場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) とします (x.xは任意の数字) ．
 
 ■ Adobe Reader X を使用する場合
 
