@@ -18,9 +18,9 @@ WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディ
 - [WZソフトウェア](http://www.wzsoft.jp/)
     公式サイト
 
-<strong>2010年10月28日 WZ EDITOR 7 オンライン版の販売を開始しました。</strong><br>
+<strong>2010年11月29日 WZ EDITOR 7 パッケージ版の販売を開始しました。</strong><br>
 
-<strong>WZ EDITOR 7 パッケージ版の販売開始は、2010年11月下旬に予定しています。</strong><br>
+<strong>2010年10月28日 WZ EDITOR 7 オンライン版の販売を開始しました。</strong><br>
 
 ## [WZ EDITOR 7](http://www.wzsoft.jp/wz7/) {#xeb01ab7}
 
