@@ -15,6 +15,8 @@ pukiwiki: "FreeBSD"
 
 日本語TeX関連は[Ports Collection](http://www.freebsd.org/ports/)に収められています．
 
+TeX Live については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/) を参照してください．
+
 ### TeX関連のPort {#y07bcd98}
 
 歴史的事情により，
