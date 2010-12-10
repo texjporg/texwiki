@@ -19,7 +19,7 @@ TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産で
 
 VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
-2010年11月20日に TeraPad Ver.1.04 が公開されました．<br>
+2010年12月10日に TeraPad Ver.1.05 が公開されました．<br>
 TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
 最新版へアップデートしてください．
 
@@ -68,7 +68,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 \item
   元に戻す, やり直し (64 ～ 10000 回の範囲で設定可能)
 \item
-  HTML, Perl, Ruby, C/C\verb-++-, VB, Delphi などの各種編集モード
+  HTML, Perl, PHP, CSS, Ruby, C/C\verb-++-, VB, Delphi などの各種編集モード
 \item
   引用行のカラー表示 (「\textgreater」「＞」など任意の引用符を設定可能)
 \item
