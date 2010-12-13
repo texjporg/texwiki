@@ -70,16 +70,16 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
 - [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
-- [基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
-    - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads)
     - [コミットログ](http://bitbucket.org/mumurik/xyzzy/changesets)
+- [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+    - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
     - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
-- [xyzzy.src (for-gcc ブランチ)](http://github.com/bulb/xyzzy.src)
-    - [コミットログ](http://github.com/bulb/xyzzy.src/commits/for-gcc)
-- [xyzzy.src (nanri-master ブランチ)](http://github.com/southly/xyzzy.src/tree/nanri-master)
-    - [コミットログ](http://github.com/southly/xyzzy.src/commits/nanri-master)
+- [xyzzy.src (for-gcc ブランチ)](https://github.com/bulb/xyzzy.src)
+    - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
+- [xyzzy.src (nanri-master ブランチ)](https://github.com/southly/xyzzy.src/tree/nanri-master)
+    - [コミットログ](https://github.com/southly/xyzzy.src/commits/nanri-master)
 - [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
@@ -89,11 +89,9 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 
 手動で行う場合は，次のようにします。
 
-まず，[基本設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
+まず，[設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
 
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
-
-派生版のバイナリを試してみたい方は，[xyzzy.src](http://github.com/southly/xyzzy.src/downloads) からダウンロードして上書きします。
 
 USB メモリで使用する方は，
 [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
