@@ -21,8 +21,7 @@ pukiwiki: "TeX installers for Windows"
 <!-- -''短所''： -->
 <!-- -''備考''： -->
 
-このページでは，Windows 向け（主に
-[W32TeX](http://w32tex.org/index-ja.html)）の
+このページでは，Windows 向け（主に [W32TeX](http://w32tex.org/)）の
 TeX インストーラを色々な視点から比較してみます。
 
 インストーラは多種多様なものがあってよいですし，
@@ -58,28 +57,18 @@ TeX インストーラを色々な視点から比較してみます。
 
 ## TeX インストーラ 3 (abtexinst.exe) {#w0d7240a}
 
-- <strong>URL</strong>: [http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html)
-- <strong>作者</strong>： 阿部 紀行さん
-- <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
-- <strong>ライセンス</strong>： 修正BSD（2009/9/10, バージョン0.75から）
-- <strong>インストールする対象</strong>： W32TeX バイナリ，dviout，Ghostscript，GSview
-    （DLL プラグインおよび Ruby スクリプトの追加方式により，xypic，ispell，WinShell）
-
-- <strong>ユーザーインターフェース</strong>： GUI
-- <strong>ネット・ローカルインストール</strong>： ネットインストーラ。
-    ローカルにも対応しています。
-
-- <strong>環境変数・レジストリ</strong>： 自動（環境変数 PATH，レジストリ）
-- <strong>長所</strong>： 『モットーは「誰にでもインストール出来る TeX」』の通りのインストーラ。
-    単にサーバーからのダウンロードなので，インストーラ用のパッケージャーが不要。
-    おそらく最も汎用性がある，
-    多くの Windows の TeX を使う人をカバーするインストーラ。
-    専用プラグインは Ruby により，比較的簡単に作成できる。
-
-- <strong>短所</strong>： dviout の初期設定で，Resolution （解像度）が 600 dpi 以上でない
-    （好みの問題ですが……）。ファイルのバージョン管理には，それなりの工夫が必要。
-    このインストーラの長所はそのまま最大の短所でもあります。
-    実際、TeX を用いるための「レディネス」を欠いたユーザですらインストールしてしまえるという弊害があります。
+- <strong>ウェブサイト</strong>：[www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html)
+- <strong>作者</strong>：[阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)さん
+- <strong>初心者オススメ度</strong>：★★★★★
+- <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
+- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout for Windows，Ghostscript，GSview（DLL プラグインおよび Ruby スクリプトの追加方式により xypic，ispell，WinShell）
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネット・ローカルインストール</strong>：ネットインストーラ。ローカルにも対応しています。
+- <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
+- <strong>長所</strong>：『モットーは「誰にでもインストール出来る TeX」』の通りのインストーラ。単にサーバーからのダウンロードなので，インストーラ用のパッケージャーが不要。おそらく最も汎用性がある，多くの Windows の TeX を使う人をカバーするインストーラ。専用プラグインは Ruby により，比較的簡単に作成できる。
+- <strong>短所</strong>：dviout の初期設定で，Resolution（解像度）が 600 dpi
+    以上でない（好みの問題ですが……）。ファイルのバージョン管理には，それなりの工夫が必要。このインストーラの長所はそのまま最大の短所でもあります。実際、TeX
+    を用いるための「レディネス」を欠いたユーザですらインストールしてしまえるという弊害があります。
     <!-- 追加マクロパッケージや関連ツールをインストーラーに対応させたい場合に， -->
     <!-- 専用のプラグイン dll を Visual C++ を起動して， -->
     <!-- ビルドしないといけないので，それなりに知識と経験がないと， -->
@@ -88,26 +77,26 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>備考</strong>： TeX インストーラ 3 ローカル特化バージョンも別途公開されています。
     その他，多数の TeX 関連ツールおよび解説をされています。
 
+- <strong>参考</strong>：TeXWiki:AbTeXInstaller
+
 ## texinst {#v558e4b5}
 
-- <strong>URL</strong>: [http://w32tex.org/index-ja.html](http://w32tex.org/index-ja.html)
-- <strong>作者</strong>： 角藤 亮さん
-- <strong>初心者オススメ度</strong>： ★★★★☆
-- <strong>ライセンス</strong>： フリーウェア
-- <strong>インストールする対象</strong>： W32TeX バイナリ
-- <strong>ユーザーインターフェース</strong>： CUI （コマンドプロンプト）
-- <strong>ネット・ローカルインストール</strong>： ローカルのみ
-- <strong>環境変数・レジストリ</strong>： 手動（環境変数 PATH）
-- <strong>長所</strong>： 最もシンプルなインストーラ。
-    自作のバッチファイル update.bat などを自分用に用意すれば，
-    他の処理とも連携できます。
+- <strong>ウェブサイト</strong>：[w32tex.org](http://w32tex.org/)
+- <strong>作者</strong>：角藤 亮さん
+- <strong>初心者オススメ度</strong>：★★★★☆
+- <strong>ライセンス</strong>：フリーウェア
+- <strong>インストールする対象</strong>：W32TeX バイナリ
+- <strong>ユーザーインターフェース</strong>：CUI（コマンドプロンプト）
+- <strong>ネット・ローカルインストール</strong>：ローカルのみ
+- <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
+- <strong>長所</strong>：最もシンプルなインストーラ。自作のバッチファイル
+    update.bat などを自分用に用意すれば，他の処理とも連携できます。
 
-- <strong>短所</strong>： Windows の GUI しか触ったことのない人や，
-    初心者には厳しいかもしれません。
-    しかしながら，最も TeX システムというものを
-    TDS (<strong>T</strong>eX <strong>D</strong>irectory <strong>S</strong>tructure) から見せてくれるところがよい。
-    初心者の方も勉強だと思って，
-    これを用いて TeX 環境を構築されるのが一番良いでしょう。
+- <strong>短所</strong>：Microsoft Windows の GUI
+    しか触ったことのない人や，初心者には厳しいかもしれません。しかしながら，最も TeX システムというものを [TDS](https://mirror.ctan.org/help/Catalogue/entries/tds.html) (<strong>T</strong>eX <strong>D</strong>irectory <strong>S</strong>tructure) から見せてくれるところがよい。初心者の方も勉強だと思って，これを用いて
+    TeX 環境を構築されるのが一番良いでしょう。
+
+- <strong>参考</strong>：TeXWiki:インストール(Windows)
 
 ## TeX 環境インストーラ {#k886a93e}
 
