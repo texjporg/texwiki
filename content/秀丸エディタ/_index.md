@@ -38,7 +38,7 @@ pukiwiki: "秀丸エディタ"
     - [履歴](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
-- [RaTeX0e](http://uca-works.com/hidemaru_macro/RaTeX0e.html), [cRaTeX0e](http://uca-works.com/hidemaru_macro/cRaTeX0e.html)
+- [RaTeX0e](http://uca-works.com/program/ratex.html)
     (福中 公輔 さん)
 
 - [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
