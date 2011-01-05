@@ -61,7 +61,7 @@ pdvips: Font rml not found, characters will be left blank.
 
     でした。見つからない場合は、配布者に相談してください。
 
-- mapファイルの編集
+- mapファイルの編集<br>
     mapファイルが見つかったら、rmlにフォントを割り振ります。具体的には
 
     ```
@@ -79,7 +79,7 @@ pdvips: Font rml not found, characters will be left blank.
 
 pdvipsの設定が完了したにも関わらず、まだ日本語がうまく表示されない場合は、ghostscriptや、ファイルではなく閲覧用のアプリケーションの設定が必要です。もし、pdvipsの設定がうまくいっていれば、少なくとも日本語が出る位置には他の文字が出ているはずです。そうでない方は、もう一度pdvipsの確認をしたほうがいいと思います。ちなみに、gnuplotのterminal をpostscript eps enhancedにしている方で、日本語表示にトラブルを抱えている方にとって、この文章は解決のヒントになるかもしれません。具体的な解決方法は以下です。
 
-- 表示問題の特定
+- 表示問題の特定<br>
     まず、問題がghost scriptなのかを判別するために、適当な日本語を含んだ（漢字が入っていても、いなくても問題ない）ファイルを用意して、オプションをつけてコンパイルします。
 
     ```
@@ -109,7 +109,7 @@ pdvipsの設定が完了したにも関わらず、まだ日本語がうまく�
     　/usr/share/ghostscript/8.71/Resource /Font
     というディレクトリすらない状況でした。
 
-- cidfmapを探す。
+- cidfmapを探す。<br>
     問題の特定ができた場合で、かつ上記のエラーが出ている場合は、cidfmapを編集する必要があります。cidfmapは通常ghostscriptのlibディレクトリにあるようですが、見当たらない場合はこれを探さなければなりません。QAの事例では
 
     ```
@@ -137,11 +137,20 @@ pdvipsの設定が完了したにも関わらず、まだ日本語がうまく�
     /etc/ghostscript/8.71
     ```
 
-    にありました。この辺は、環境に依って結構ことなるようです。
+    にありました。この辺は、環境に依って結構異なるようです。
 
-- cidfmapを編集する
-    ファイルを見つけたら、ファイルの編集に移ります。まず、お手元に適当なTureTypeのフォントが無い方は、これを用意しましょう。
-    - fontを用意する
+- cidfmapの作成<br>
+    cidfmapが見当たらない場合、作成することもできます。作成は
+
+    ```
+    gs -q -dBATCH -sFONTDIR=/usr/local/share/ghostscript/fonts/ -sCIDFMAP=/usr/local/share/ghostscript/8.71/lib/cidfmap mkcidfm.ps
+    ```
+
+    のようなコマンドで行います。sFONTFIRはフォントの格納されているディレクトリ、-sCIDFMAPにはcidfmapを作成するディレクトリを指定します。
+
+- cidfmapを編集する<br>
+    ファイルを見つけたら、ファイルの編集に移ります。まず、お手元に適当なTureTypeのフォントが無い方は、これを用意しましょう。cidfmapの編集は [http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Ghostscript%208.15](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Ghostscript%208.15) により詳細なものが出ているので、そちらも確認してください。
+    - fontを用意する<br>
         例えば次の東京電気大学のページから持ってくるといいと思います。
 
         ```
@@ -166,14 +175,18 @@ pdvipsの設定が完了したにも関わらず、まだ日本語がうまく�
 
         ```
         /Ryumin-Light << /FileType /TrueType /Path (/usr/share/fonts/sazanami-20040629/sazanami-mincho.ttf) /SubfontID 0 /CSI [(Japan1) 2]>> ;
+        /GothicBBB-Medium << /FileType /TrueType /Path (/usr/share/fonts/sazanami-20040629/sazanami-gothic.ttf) /SubfontID 0 /CSI [(Japan1) 2] >> ;
         ```
 
-        　/GothicBBB-Medium &lt;&lt; /FileType /TrueType /Path (/usr/share/fonts/sazanami-20040629/sazanami-gothic.ttf) /SubfontID 0 /CSI \[(Japan1) 2\] >> ;
         といった文言を加えます。（）の中身は、用意したフォントを指定して下さい。これで対処は終了です。
 
-- 確認
+- 確認<br>
     設定後、psファイルを閲覧し、日本語が出ていれば成功です。ps2pdfなどを使って、psからpdfを作成している場合は、もう一度ps2pdfを使用してコンパイルをしてから確認してください。
 
 ### 謝辞 {#m585375b}
 
 この文章を書くに当たって、kakuto先生とkuroky +先生には多大な情報を提供して頂きました。誠に有難うございました。
+
+### 参考 {#m585375c}
+
+- [http://d.hatena.ne.jp/meitetujikokuhyou/20100420/1271777716](http://d.hatena.ne.jp/meitetujikokuhyou/20100420/1271777716)
