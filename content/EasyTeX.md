@@ -161,15 +161,13 @@ epLaTeX を選択します．
 
 > <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
 >
 > 　PDF Readerを開くタイミング　　<ins>300</ins><br>
 
 ***
 
-GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe) のフルパスを指定します．
-
-Adobe Reader X を使用して PDF ファイルを表示したい方は，ツールの設定 の Adobe Reader X を参照して設定してください．
+GhostView (gsview32.exe) と PDF Reader (AcroRd32.exe) のフルパスを指定します．
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
@@ -416,11 +414,11 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex3231\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex3232\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\w32tex\editor\easytex3231\EasyTeX.exe
+`easytex easytex +%d %s``C:\w32tex\editor\easytex3232\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
