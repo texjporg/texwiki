@@ -70,8 +70,8 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
 - [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
-- [multiframe 版 xyzzy](http://bitbucket.org/mumurik/xyzzy/downloads)
-    - [コミットログ](http://bitbucket.org/mumurik/xyzzy/changesets)
+- [multiframe 版 xyzzy](https://bitbucket.org/mumurik/xyzzy/downloads)
+    - [コミットログ](https://bitbucket.org/mumurik/xyzzy/changesets)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
