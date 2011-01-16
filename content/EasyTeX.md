@@ -13,7 +13,7 @@ pukiwiki: "EasyTeX"
 
 ## EasyTeX とは {#eta184ab}
 
-EasyTeX は Windows 98, 2000, XP, Vista, 7 上で動作する国産でフリーの TeX 統合環境です．
+EasyTeX は Windows 7, Vista, XP, 2000, 98 上で動作する国産でフリーの TeX 統合環境です．
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
