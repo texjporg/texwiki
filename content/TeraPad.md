@@ -13,7 +13,7 @@ pukiwiki: "TeraPad"
 
 ## TeraPad とは {#wda2a461}
 
-TeraPad は Windows 95, 98, Me, NT4, 2000, XP, Vista, 7 で動作する国産でフリーのシンプルなテキストエディタです．
+TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産でフリーのシンプルなテキストエディタです．
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです．
 
