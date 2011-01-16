@@ -14,7 +14,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 秀丸エディタ とは {#w73ea51b}
 
-秀丸エディタ は，Windows 95, 98, Me, NT4.0, 2000, XP, Vista, 7 上で動作する国産のテキストエディタです。 (シェアウェア)
+秀丸エディタ は，Windows 7, Vista, XP, 2000, NT4.0, Me, 98, 95 上で動作する国産のテキストエディタです。 (シェアウェア)
 
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
