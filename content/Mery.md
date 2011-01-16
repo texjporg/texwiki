@@ -13,7 +13,7 @@ pukiwiki: "Mery"
 
 ### Mery とは {#acb30ba1}
 
-Mery は Windows XP, Vista, 7 で動作する国産でフリーのシンプルなテキストエディタです．
+Mery は Windows 7, Vista, XP で動作する国産でフリーのシンプルなテキストエディタです．
 
 Mery は TeX の色分け，アウトライン解析，辞書ファイルによる入力補完に対応しています．
 
