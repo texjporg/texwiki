@@ -13,34 +13,38 @@ pukiwiki: "Eclipse"
 
 ### Eclipse とは {#r72c2682}
 
-Eclipse は Java で書かれた IDE (統合開発環境) です。
+Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
 - [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
+### 動作環境 {#aae7926e}
+
+[Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
+
 ### Java のインストール {#ca668ec2}
 
-Eclipse は Java アプリケーションなので Java のランタイムが必要です。
+Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
 - [Java SE Downloads - Sun Developer Network (SDN)](http://www.oracle.com/technetwork/java/javase/downloads/)
 
-から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします。
+から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
 
 - [Java Portable](http://sf.net/projects/portableapps/files/Java%20Portable/)
 
-もあります。
+もあります．
 
 ### Eclipse のインストール {#r143ba66}
 
 [Eclipse Wiki](http://eclipsewiki.net/eclipse/) を参照。
 
-Windows の場合 [Pleiades All in One](http://mergedoc.sourceforge.jp/) を使えば、すぐに日本語化された Eclipse が使えます。
+Windows の場合 [Pleiades All in One](http://mergedoc.sourceforge.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
 - [Eclipse の最新リリース版](http://download.eclipse.org/eclipse/downloads/) (本体)
 
-を解凍し、
+を解凍し，
 
 - [Pleiades 本体の最新版](http://mergedoc.sourceforge.jp/) (Eclipse 本体とプラグインの日本語化)
 
@@ -50,7 +54,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 -javaagent:plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar
 ```
 
-を追加します。
+を追加します．
 
 ### Eclipse で TeX {#i62a454e}
 
