@@ -715,7 +715,7 @@ jun101-l-v    V kozgostd-light.otf
 > [ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16.tar.Z](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16.tar.Z)
 > を /usr/local/share/ghostscript/Resource
 > で展開しておき，齋藤修三郎さんの
-> [UTF16用VF](http://psitau.tripod.co.jp/utf.html)
+> [UTF16用VF](http://psitau.kitunebi.com/utf.html)
 > から utf パッケージをダウンロードして展開します。
 >
 > ```
