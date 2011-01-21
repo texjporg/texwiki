@@ -48,7 +48,7 @@ $ fixill.pl <old.eps >new.eps
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
 Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使うか，あるいは [ActiveState](http://www.activestate.com/)
 から ActivePerl をダウンロードしてインストールすればいいであろう。
-角藤さんの “dvipsk-w32.tar.gz” には “fixill.pl” と “fixill.exe” が含まれる。
+角藤さんの “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
 >fixill.exe <old.eps >new.eps
@@ -79,12 +79,12 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### 各バージョン {#u178a7b2}
 
-- Illustrator v.10   2001年  (MacOSX では PowerPCバイナリ)
-- Illustrator CS   (v.11)   2003年  (OpenTypeにほぼ対応)
-- Illustrator CS2 (v.12)   2005年
-- Illustrator CS3 (v.13)   2007年
-- Illustrator CS4 (v.14)   2008年
 - Illustrator CS5 (v.15)   2010年  (64ビット化は見送り，MacOSX では Cocoa 化の可能性）
+- Illustrator CS4 (v.14)   2008年
+- Illustrator CS3 (v.13)   2007年
+- Illustrator CS2 (v.12)   2005年
+- Illustrator CS   (v.11)   2003年  (OpenTypeにほぼ対応)
+- Illustrator v.10   2001年  (MacOSX では PowerPCバイナリ)
 
 情報等
 
@@ -94,6 +94,9 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### その他 {#a59267c4}
 
-- 【参考情報】
+- [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
+    Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
 
-[チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
+【参考情報】
+
+- [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
