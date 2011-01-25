@@ -212,8 +212,8 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 ### TeX {#a7fe5a5f}
 
 まず、LaTeX が動作する環境が必要です。その他に
-[CTAN:languages/japanese/CJK/4_6.0/texinput](https://mirror.ctan.org/languages/japanese/CJK/4_6.0/texinput)
-配下のマクロファイルと、更には TFM ファイル（フォントメトリック）がいります。
+[CTAN:languages/japanese/CJK/](https://mirror.ctan.org/languages/japanese/CJK/) 
+にある配下のマクロファイル（cjk4.x.x/という名前のディレクトリ。zipやtarballで圧縮されている場合もあり）と、更には TFM ファイル（フォントメトリック）がいります。
 CJK にデフォルトで附属するフォントの設定は dvips や pdflatex での使用も
 可能なようになっているので、dvipdfmx で使うには最適なものではありません。
 ここではカスタムなフォント定義を行なう方法を説明します。
@@ -480,7 +480,7 @@ CMap テーブルを使用して TTF フォントにアクセスするには、c
 
 ## サンプル {#f920d8cd}
 
-以下のサンプルをコンパイルするには [CTAN:languages/japanese/CJK/4_7.0/texinput/](https://mirror.ctan.org/languages/japanese/CJK/4_7.0/texinput/)
+以下のサンプルをコンパイルするには [CTAN:languages/japanese/CJK/](https://mirror.ctan.org/languages/japanese/CJK/)
 配下のファイルが必要です。サンプルはインストールして使用することも可能なように
 アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
 （フォルダー）を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
