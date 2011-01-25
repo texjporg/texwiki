@@ -215,8 +215,8 @@ Cドライブでない場合には “C:” という部分を書き換えてく
 
 なお DVIView，GSView，PDFView は自動的に適切な設定になっているはずです．<br>
 参照ボタンを押して直接指定する必要はないでしょう．<br>
-ただし，今のところ PDFView の exeファイル名に Adobe Reader X の AcroRd32.exe を指定しても PDF ファイルが表示できません．<br>
-Adobe Reader X を使用する場合は通常の記述とは異なる設定をする必要があります．
+ただし，WinShell 3.3.2.3 よりも前のバージョンの場合は PDFView の exeファイル名に Adobe Reader X の AcroRd32.exe を指定しても PDF ファイルが表示できません．<br>
+WinShell 3.3.2.3 よりも前のバージョンで，Adobe Reader X を使用する場合は通常の記述とは異なる設定をする必要があります．
 
 <em>注意 x64 環境でも TeX 環境用(gs が 32bit dll等) の GSView は必ず x86 用をインストールして下さい。</em>
 
@@ -425,10 +425,42 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 #### PDFView {#gffc0a36}
 
-- [Adobe Reader X](http://www.adobe.com/jp/products/reader/) の場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．
+- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" とし，コマンドラインを "%s.pdf" とします．
+- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．
 - [Adobe Reader 9 以前のバージョン](http://get.adobe.com/jp/reader/otherversions/) の場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) とします (x.x は任意の数字) ．
 
-■ Adobe Reader X を使用する場合
+■ Adobe Reader X，WinShell 3.3.2.3 以降のバージョンを使用する場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　プログラム名　　<ins>PDFView</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
+　　exeファイル名 　<ins>"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
+　　コマンドライン 　<ins>"%s.pdf"</ins><br>
+　　　　　　　　　　　　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
+　　実行キー:　　　　引数:<br>
+　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+
+***
+
+■ Adobe Reader X，WinShell 3.3.2.3 よりも前のバージョンを使用する場合
 
 ***
 
@@ -688,7 +720,7 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 　使用中のバージョン: 　　　　3.3.2.0<br>
 　最新のリリースバージョン:　3.3.1.12 　 　 　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
-　最新のベータバージョン:　　3.3.2.2　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
+　最新のベータバージョン:　　3.3.2.3　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
 　<span style="color:Black;background-color:#E8E8E8;">\[　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</span><br>
 　残り時間:<br>
 　転送状況:<br>
