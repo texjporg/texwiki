@@ -84,13 +84,12 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-### <del>日本語化ファイル</del> {#i83c37b0}
+### 日本語化ファイル {#i83c37b0}
 
-- [<del>WinShell 日本語化ファイル</del>](http://nnnnn.me/downloads.php?cat_id=1)
+- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
 
-<del>WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．</del><br>
-
-<del>ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．</del>
+WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
+ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．
 
 ## 設定 {#h3ab6f8d}
 
