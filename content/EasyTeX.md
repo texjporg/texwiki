@@ -94,9 +94,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 ***
 
-これから EasyTeX の初期設定をします．
+これから EasyTeX の初期設定を手動で行います．
 
-\[　　TeX環境を自動設定する　　\] は使わずに，手動で設定を行います．
+\[　　TeX環境を自動設定する　　\] は，時間がかかってしまうかもしれないので，使用しないでください．
 
 ### TeXExe {#o3f9cb28}
 
@@ -178,6 +178,8 @@ GhostView (gsview32.exe) と PDF Reader (AcroRd32.exe) のフルパスを指定�
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
+EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．
+
 PDF Reader は Adobe Reader X の他に Sumatra PDF 1.2, Foxit J-Reader 4.2, PDF-XChange Viewer 2.5 などに対応しています．
 
 ### TeX環境設定の保存 {#lf745908}
@@ -194,25 +196,26 @@ PDF Reader は Adobe Reader X の他に Sumatra PDF 1.2, Foxit J-Reader 4.2, PDF
 
 設定したツールはメニューの ﾂｰﾙ(A) から選択できます．
 
-### eplatex {#x38829e5}
+### pdfepLaTeX {#x38829e5}
 
-eplatex を使用して DVI ファイルを作成．
+eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>eplatex</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX</ins><br>
 　 program1<br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
-　 program4　　　　　　　 <ins>eplatex.exe</ins><br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
 　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>-kanji=sjis -interaction=nonstopmode "%n.tex"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvipdfmx "%n.dvi" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
@@ -221,25 +224,26 @@ eplatex を使用して DVI ファイルを作成．
 
 ***
 
-### dvipdfmx {#l0d22111}
+### pdfepLaTeX2 {#l0d22111}
 
-dvipdfmx を使用して PDF ファイルを作成．
+eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>dvipdfmx</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX2</ins><br>
 　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
-　 program4　　　　　　　 <ins>dvipdfmx.exe</ins><br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
 　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>"%n.dvi"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
@@ -248,25 +252,26 @@ dvipdfmx を使用して PDF ファイルを作成．
 
 ***
 
-### Adobe Reader X {#m3a434b8}
+### pdfLaTeX {#m3a434b8}
 
-Adobe Reader X を使用して PDF ファイルを表示．
+pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>Adobe Reader X</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeX</ins><br>
 　 program1<br>
 　<span style="color:White;background-color:#1188FF;"> program2　</span><br>
 　 program3　　　　　プログラム<br>
-　 program4　　　　　　　 <ins>"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins><br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
 　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>"%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; pdflatex "%n.tex" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
@@ -275,16 +280,16 @@ Adobe Reader X を使用して PDF ファイルを表示．
 
 ***
 
-### pbibtex {#cb466707}
+### pBibTeX {#cb466707}
 
-pbibtex を使用して参考文献を作成．
+pbibtex を使用して参考文献を作成します．
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pbibtex</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pBibTeX</ins><br>
 　 program1<br>
 　 program2<br>
 　<span style="color:White;background-color:#1188FF;"> program3　</span>　　　　プログラム<br>
@@ -302,16 +307,16 @@ pbibtex を使用して参考文献を作成．
 
 ***
 
-### mendex {#j08f6352}
+### Mendex {#j08f6352}
 
-mendex を使用して索引を作成．
+mendex を使用して索引を作成します．
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>mendex</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>Mendex</ins><br>
 　 program1<br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -337,29 +342,35 @@ mendex を使用して索引を作成．
 
 次に，［TeXﾃｷｽﾄ(T)］ → ［文書ｸﾗｽ(D)］ をクリックします．
 
-「文書ｸﾗｽの設定」 で，jsarticle を指定します．
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　文書ｸﾗｽの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
 　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
-　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　11ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　<span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　<span style="color:White;background-color:#1188FF;">12ポイント</span><br>
-　　報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　　　　　 　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　10ポイント<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　<span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　11ポイント<br>
+　　報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　 <span style="color:White;background-color:#1188FF;">12ポイント</span><span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 　　欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;">▼</span>
 
-　　　　　　　　　　　　　　　　　　　　　　　　使用する<br>
+　　　　　　　　　　　　　　　　　　　　　　　　使用するﾊﾟｯｹｰｼﾞ<br>
 　　　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
 　　　　☐タイトルを付けない　　　　　　epic,eepic<br>
 　 　 　 　 　 　 　　　　　　　　　　　　 　 　graphicx　 　 　 　 　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+
+<br>
+
 　　　ﾀｲﾄﾙ<br>
-　<br>
+　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　著者<br>
-　<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>
+　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
 
 ***
+
+「文書ｸﾗｽの設定」 で，jsarticle を指定します．
 
 文字ｻｲｽﾞはデフォルトで 12ポイントが選択されていると思います．
 
@@ -367,8 +378,8 @@ jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt
 
 ［ﾀｲﾄﾙ］ と ［著者］ を適当に書きます．
 
-［使用する］ の部分には使用する
-スタイルファイルを指定します（\usepackage コマンドで指定するものです）．
+［使用するﾊﾟｯｹｰｼﾞ］ の部分には使用するスタイルファイルを指定します (\usepackage コマンドで指定するものです)．<br>
+Shift + 左クリックで複数のパッケージを選択することが可能です．
 
 一通り終わったら \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．
 
