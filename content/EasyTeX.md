@@ -196,6 +196,35 @@ PDF Reader は Adobe Reader X の他に Sumatra PDF 1.2, Foxit J-Reader 4.2, PDF
 
 設定したツールはメニューの ﾂｰﾙ(A) から選択できます．
 
+### pdfLaTeX {#m3a434b8}
+
+pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
+pdflatex は日本語には対応していません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeX</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; pdflatex "%n.tex" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
 ### pdfepLaTeX {#x38829e5}
 
 eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
@@ -206,8 +235,8 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX</ins><br>
-　 program1<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
 　 program4　　　　　　　 <ins>cmd.exe</ins><br>
@@ -235,34 +264,6 @@ eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 
 　　　　　　　　　　　　タイトル<br>
 　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX2</ins><br>
-　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
-　 program2<br>
-　 program3　　　　　プログラム<br>
-　 program4　　　　　　　 <ins>cmd.exe</ins><br>
-　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
-　 program6<br>
-　 program7<br>
-　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
-
-<br>
-
-　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
-　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
-
-***
-
-### pdfLaTeX {#m3a434b8}
-
-pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
-
-　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeX</ins><br>
 　 program1<br>
 　<span style="color:White;background-color:#1188FF;"> program2　</span><br>
 　 program3　　　　　プログラム<br>
@@ -271,7 +272,7 @@ pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; pdflatex "%n.tex" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
