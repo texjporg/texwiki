@@ -17,7 +17,7 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです．
 
-VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
+VxEditor, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
 2011年1月7日に TeraPad Ver.1.06 が公開されました．<br>
 TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
