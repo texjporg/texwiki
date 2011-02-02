@@ -15,7 +15,7 @@ pukiwiki: "VxEditor"
 
 VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作する国産でフリーのテキストエディタです．
 
-TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
+TeraPad, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
     - [ニュース](http://dr-x.jimdo.com/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/)
