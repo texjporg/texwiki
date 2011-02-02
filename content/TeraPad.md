@@ -106,7 +106,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ***
 
-## TeraPad で LaTeX (TeX -> PDF) {#m56b7465}
+## pdfLaTeX {#m56b7465}
 
 <em>※注意</em>
 
@@ -120,15 +120,15 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>TeX -> PDF</ins>
+> 名前\["-"は区切り線\](N):<br><ins>pdfLaTeX</ins>
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; pdflatex -interaction=nonstopmode "%n" &amp;&amp; "%b.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -138,12 +138,12 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 次のうちのどれかを実行
 
 - Ctrl + Alt + H を押す
-- メニューの \[ツール(T)\] → \[TeX -> PDF\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[TeX -> PDF\]
+- メニューの \[ツール(T)\] → \[pdfLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## TeraPad で LaTeX (TeX -> DVI) {#m290fc57}
+## pdfepLaTeX {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -153,15 +153,15 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI</ins>
+> 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX</ins>
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; "%b.dvi" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -171,12 +171,18 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[TeX -> DVI\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX\]
 
-TeX ファイルがコンパイルされ DVI ファイルが表示されます．
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## TeraPad で LaTeX (TeX -> DVI -> PDF) {#g1f54992}
+### 簡単なテスト {#t51caf81}
+
+1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
+1. Ctrl + Alt + K を押すと PDF ファイルが作成され，表示されます．
+1. もう一度 Ctrl + Alt + K を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
+
+## pdfepLaTeX2 {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -186,15 +192,15 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI -> PDF</ins>
+> 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX2</ins>
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; "%b.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -204,18 +210,12 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI -> PDF\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[TeX -> DVI -> PDF\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX2\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### 簡単なテスト {#t51caf81}
-
-1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
-1. Ctrl + Alt + K を押すと PDF ファイルが作成され，表示されます．
-1. PDF ビューアを閉じて，もう一度 Ctrl + Alt + K を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
-
-## TeraPad で LaTeX (TeX -> DVI -> PS -> PDF) {#h42e3045}
+## pBibTeX {#h42e3045}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -225,15 +225,15 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>TeX -> DVI -> PS -> PDF</ins>
+> 名前\["-"は区切り線\](N):<br><ins>pBibTeX</ins>
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "%d" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "%n" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; "%b.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=sjis "%b"</ins>
 
 > 作業フォルダ(D):<br><br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存しない　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
 
 > ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
 >
@@ -243,10 +243,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + L を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI -> PS -> PDF\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[TeX -> DVI -> PS -> PDF\]
-
-TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+- メニューの \[ツール(T)\] → \[pBibTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pBibTeX\]
 
 ## 参考サイト {#n06fef85}
 
@@ -255,7 +253,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - [TeraPad から LaTeX のコンパイルをする方法](http://d.hatena.ne.jp/hiratake55/20090710)
     (hiratake55 さん)
 
-- [Terapadで作るLaTeX統合環境](http://zatugakuou.hp.infoseek.co.jp/LaTeXIntegratedEnvironmentOnTerapad.html)
+- [Terapadで作るLaTeX統合環境](http://za.toypark.in/html/2003/12-06.html)
     (綾小路 龍之介 さん) ライセンスは GNU Free Documentation License．
 
 - [Eee PC 901 にも TeX 環境](http://ngc1952.net/archives/category/tex)
