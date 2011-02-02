@@ -22,7 +22,7 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
     - [dr-x (vxeditor) on Twitter](http://twitter.com/vxeditor)
 - [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
 
-## VxEditor で LaTeX (TeX -> PDF) {#jef6ef8d}
+## pdfLaTeX {#jef6ef8d}
 
 <em>※注意</em>
 
@@ -38,13 +38,13 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 > 設定
 
-> タイトル(T):<br><ins>TeX -> PDF</ins>
+> タイトル(T):<br><ins>pdfLaTeX</ins>
 
 > 実行ファイル(P):<br><ins>cmd</ins>
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; pdflatex -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -73,12 +73,12 @@ TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 次のうちのどれかを実行
 
 - Ctrl + Alt + H を押す
-- メニューの \[ツール(T)\] → \[TeX -> PDF\]
-- エディタ画面を右クリック → \[TeX -> PDF\]
+- メニューの \[ツール(T)\] → \[pdfLaTeX\]
+- エディタ画面を右クリック → \[pdfLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## VxEditor で LaTeX (TeX -> DVI) {#v2edf4e6}
+## pdfepLaTeX {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -90,13 +90,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br><ins>TeX -> DVI</ins>
+> タイトル(T):<br><ins>pdfepLaTeX</ins>
 
 > 実行ファイル(P):<br><ins>cmd</ins>
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; "$NAMEONLY.dvi" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -125,12 +125,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI\]
-- エディタ画面を右クリック → \[TeX -> DVI\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX\]
+- エディタ画面を右クリック → \[pdfepLaTeX\]
 
-TeX ファイルがコンパイルされ DVI ファイルが表示されます．
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## VxEditor で LaTeX (TeX -> DVI -> PDF) {#fcfb987f}
+## pdfepLaTeX2 {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -142,13 +142,13 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br><ins>TeX -> DVI -> PDF</ins>
+> タイトル(T):<br><ins>pdfepLaTeX2</ins>
 
 > 実行ファイル(P):<br><ins>cmd</ins>
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -177,12 +177,12 @@ TeX ファイルがコンパイルされ DVI ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI -> PDF\]
-- エディタ画面を右クリック → \[TeX -> DVI -> PDF\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX2\]
+- エディタ画面を右クリック → \[pdfepLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## VxEditor で LaTeX (TeX -> DVI -> PS -> PDF) {#v9c2efca}
+## pBibTeX {#v9c2efca}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -194,13 +194,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 設定
 
-> タイトル(T):<br><ins>TeX -> DVI -> PS -> PDF</ins>
+> タイトル(T):<br><ins>pBibTeX</ins>
 
 > 実行ファイル(P):<br><ins>cmd</ins>
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/k cd /d "$DIRPATH" &amp;&amp; eplatex -kanji=sjis -interaction=nonstopmode "$FILENAME" &amp;&amp; [dvips](/dvips/) -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; "$NAMEONLY.pdf" &amp; exit</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pbibtex -kanji=sjis "$NAMEONLY"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -229,7 +229,5 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + L を押す
-- メニューの \[ツール(T)\] → \[TeX -> DVI -> PS -> PDF\]
-- エディタ画面を右クリック → \[TeX -> DVI -> PS -> PDF\]
-
-TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+- メニューの \[ツール(T)\] → \[pBibTeX\]
+- エディタ画面を右クリック → \[pBibTeX\]
