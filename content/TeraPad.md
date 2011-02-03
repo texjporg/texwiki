@@ -246,6 +246,37 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pBibTeX\]
 
+## Mendex {#z894a071}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+> 名前\["-"は区切り線\](N):<br><ins>Mendex</ins>
+
+> 実行ファイル(E):<br><ins>cmd</ins>
+
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; mendex -S "%b"</ins>
+
+> 作業フォルダ(D):<br><br>
+
+> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + M</ins>
+
+> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
+>
+> ***
+>
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + M を押す
+- メニューの \[ツール(T)\] → \[Mendex\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[Mendex\]
+
 ## 参考サイト {#n06fef85}
 
 - [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
