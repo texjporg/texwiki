@@ -7,18 +7,22 @@ pukiwiki: "hyperref"
 
 # hyperref
 
-目次
-
-## hyperref {#s8bca501}
+## [hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) {#s8bca501}
 
 hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じハイパーリンク 機能を加えるためのマクロです。
+
+<strong>目次</strong>
+
+### 更新履歴 {#e8ca0037}
+
+[ChangeLog](https://mirror.ctan.org/macros/latex/contrib/hyperref/ChangeLog) を参照。
 
 ### 指定可能なオプション {#za8c61cb}
 
 プリアンプルに\usepackage\[オプション\]{hyperref}として、オプションを指定する。例えば、下記のようにする
 
 ```
-\usepackage[dvipdfm,bookmarks=true,bookmarksnumbered=true,%
+\usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
  pdftitle={LaTeX研修課程},%
  pdfsubject={hyperref入門・演習},%
  pdfauthor={ななしのごんべぇ},%
@@ -59,6 +63,7 @@ hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じ�
 <tr><td>draft</td><td>do not do any hyper linking</td><td>true/<strong>false</strong></td></tr>
 <tr><td>dvipdf</td><td>use dvipdf backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvipdfm</td><td>use dvipdfm backend</td><td style="text-align:center"> -</td></tr>
+<tr><td>dvipdfmx</td><td>use dvipdfmx backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvips</td><td>use dvips backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvipsone</td><td>use dvipsone backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dviwindo</td><td>use dviwindo backend</td><td style="text-align:center"> -</td></tr>
@@ -121,6 +126,7 @@ hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じ�
 <tr><td>urlcolor</td><td>color of URL links</td><td><strong>magenta</strong></td></tr>
 <tr><td>verbose</td><td>be chatty</td><td>true/<strong>false</strong></td></tr>
 <tr><td>vtex</td><td>use VTEX backend</td><td style="text-align:center"> -</td></tr>
+<tr><td>xetex</td><td>use XeTeX backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>pdfescapeform</td><td>エスケープ処理の有効化</td><td>true/<strong>false</strong></td></tr>
 <tr><td>pdfborderstyle</td><td> </td><td>/S/U</td></tr>
 </tbody>
@@ -147,7 +153,7 @@ url及びnolinkurl とは hyperref.styを読み込むことによって使用可
 - url文字列を指定フォントへ変更する
 - tildeを上手に処理してくれる
 - 改行処理が必要な場合にurl文字列を上手に途中で分割する
-- hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定dvips/dvipdfm/pdftex等に依存するおそれがある）
+- hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定dvips/dvipdfm/dvipdfmx/pdftex等に依存するおそれがある）
 
 #### pdfファイル作成 {#ib05c931}
 
@@ -157,7 +163,7 @@ url文字列にはhyper link機能が付与されます．（下記例ではnoli
 
 ```
 \documentclass{book}
-\usepackage[dvipdfm,
+\usepackage[dvipdfmx,
  bookmarkstype=toc=true,
  linktocpage=true,
  bookmarks=true
