@@ -231,3 +231,53 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - Ctrl + Alt + L を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[pBibTeX\]
+
+## Mendex {#sfdae9af}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+
+> 設定
+
+> タイトル(T):<br><ins>Mendex</ins>
+
+> 実行ファイル(P):<br><ins>cmd</ins>
+
+> 作業フォルダ(F):<br><br>
+
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -S "$NAMEONLY"</ins>
+
+> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
+>
+> ***
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+
+> 表示
+
+> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+
+> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+
+> ☐ツールバーに表示する(T)
+
+> アイコン(I):
+
+> 起動
+
+> ☑実行時にテキストを保存する(S)
+
+> ショートカット(H):　<ins>Ctrl + Alt + M</ins>
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + M を押す
+- メニューの \[ツール(T)\] → \[Mendex\]
+- エディタ画面を右クリック → \[Mendex\]
