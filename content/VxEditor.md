@@ -15,14 +15,16 @@ pukiwiki: "VxEditor"
 
 VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作する国産でフリーのテキストエディタです．
 
-TeraPad, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
-
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
     - [ニュース](http://dr-x.jimdo.com/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/)
     - [dr-x (vxeditor) on Twitter](http://twitter.com/vxeditor)
 - [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
 
-## pdfLaTeX {#jef6ef8d}
+## ツールの設定 {#t542b96a}
+
+ツールの設定をすると TeraPad, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
+
+### pdfLaTeX {#jef6ef8d}
 
 <em>※注意</em>
 
@@ -78,7 +80,7 @@ TeraPad, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作る�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## pdfepLaTeX {#v2edf4e6}
+### pdfepLaTeX {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -130,7 +132,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## pdfepLaTeX2 {#fcfb987f}
+### pdfepLaTeX2 {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -182,7 +184,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## pBibTeX {#v9c2efca}
+### pBibTeX {#v9c2efca}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -232,7 +234,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[pBibTeX\]
 
-## Mendex {#sfdae9af}
+### Mendex {#sfdae9af}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
