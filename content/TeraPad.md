@@ -9,7 +9,11 @@ pukiwiki: "TeraPad"
 
 ## [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) {#g9e6153d}
 
+<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs1312.snc4/174760_127662703966894_2323052_n.jpg" alt="" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+<div style="clear:both"></div>
 
 ## TeraPad とは {#wda2a461}
 
@@ -17,9 +21,7 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです．
 
-VxEditor, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
-
-2011年1月7日に TeraPad Ver.1.06 が公開されました．<br>
+2011年2月7日に TeraPad Ver.1.07 が公開されました．<br>
 TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
 最新版へアップデートしてください．
 
@@ -34,7 +36,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　</ins></span>[<img src="http://a0.twimg.com/profile_images/1147080548/tpad_bigger.gif" alt="TeraPad (terapad) on Twitter" width="28" height="28">](http://twitter.com/terapad)<span style="color:Black;background-color:#ACDEFE;"><ins>　terapad.tex - TeraPad　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#9CCEDE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　</ins></span>[<img src="http://a0.twimg.com/profile_images/1147080548/tpad_bigger.gif" alt="TeraPad (terapad) on Twitter" width="28" height="28">](http://twitter.com/terapad)<span style="color:Black;background-color:#ACCEFE;"><ins>　terapad.tex - TeraPad　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CBEEE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CBEEE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　　</ins></span><br>
 
@@ -106,7 +108,11 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ***
 
-## pdfLaTeX {#m56b7465}
+## ツールの設定 {#w029960e}
+
+ツールの設定をすると VxEditor, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
+
+### pdfLaTeX {#m56b7465}
 
 <em>※注意</em>
 
@@ -118,7 +124,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 > 名前\["-"は区切り線\](N):<br><ins>pdfLaTeX</ins>
 
@@ -143,7 +149,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## pdfepLaTeX {#m290fc57}
+### pdfepLaTeX {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -151,7 +157,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 > 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX</ins>
 
@@ -176,13 +182,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### 簡単なテスト {#t51caf81}
+#### 簡単なテスト {#t51caf81}
 
 1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
 1. Ctrl + Alt + J を押すと PDF ファイルが作成され，表示されます．
 1. もう一度 Ctrl + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
-## pdfepLaTeX2 {#g1f54992}
+### pdfepLaTeX2 {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -190,7 +196,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 > 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX2</ins>
 
@@ -215,7 +221,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-## pBibTeX {#h42e3045}
+### pBibTeX {#h42e3045}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -223,7 +229,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 > 名前\["-"は区切り線\](N):<br><ins>pBibTeX</ins>
 
@@ -246,7 +252,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pBibTeX\]
 
-## Mendex {#z894a071}
+### Mendex {#z894a071}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -254,7 +260,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 > 名前\["-"は区切り線\](N):<br><ins>Mendex</ins>
 
