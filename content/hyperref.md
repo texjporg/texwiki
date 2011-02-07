@@ -7,15 +7,15 @@ pukiwiki: "hyperref"
 
 # hyperref
 
-## [hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) {#s8bca501}
+## [hyperref](http://www.tug.org/applications/hyperref/) {#s8bca501}
 
-hyperref パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じハイパーリンク 機能を加えるためのマクロです。
+[hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じハイパーリンク 機能を加えるためのマクロです。
 
 <strong>目次</strong>
 
 ### 更新履歴 {#e8ca0037}
 
-[ChangeLog](https://mirror.ctan.org/macros/latex/contrib/hyperref/ChangeLog) を参照。
+[ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog) を参照。
 
 ### 指定可能なオプション {#za8c61cb}
 
@@ -641,6 +641,237 @@ hyperrefパッケージをデフォルトで読み込む．
 ```
 
 \usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまう。
+
+### しおりの色とフォントスタイルの変更 {#xafa8ac2}
+
+以下にサンプルコードを示します。hyperref 6.81z で確認しました。<br>
+hyperref のバージョンによって中身の構造が異なるので，その場合は適宜修正して使ってください。<br>
+この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります。<br>
+
+#### pdftex の場合 {#ec16a11d}
+
+```
+\documentclass{article}
+\usepackage[pdftex]{hyperref}
+%******************************************************
+% Change bookmarks color and font style [pdftex only]
+% (override a part of hpdftex.def)
+% PDF-1.4 (Acrobat 5.x) or later is valid
+% /C array [R G B]
+% /F integer
+%******************************************************
+\makeatletter
+\newcount\bookmarksFontStyleInteger
+\def\bookmarksColorArray{1 0 0}
+\def\Hy@OutlineName#1#2#3#4{%
+  \pdfoutline
+    attr{%
+      /C [\bookmarksColorArray]%
+      /F \the\bookmarksFontStyleInteger%
+    }%
+  goto name{#2}count#3{#4}%
+}
+\makeatother
+%*************************************************************
+% Bookmarks Font Style
+% (0 -> Plain; 1 -> Italic; 2 -> Bold; 3 -> Bold and Italic)
+%*************************************************************
+\bookmarksFontStyleInteger2
+%******************
+% Bookmarks Color
+% {R G B}
+%******************
+\renewcommand{\bookmarksColorArray}{0 0.5 1.0}
+\begin{document}
+\section{abc}
+abc
+\end{document}
+```
+
+#### dvipdfm/dvipdfmx/xetex の場合 {#d3c17ccb}
+
+```
+\documentclass{article}
+%\usepackage[dvipdfm]{hyperref}
+\usepackage[dvipdfmx]{hyperref}
+%\usepackage[xetex]{hyperref}
+%**********************************************************************
+% Change bookmarks color and font style [dvipdfm/dvipdfmx/xetex only]
+% (override a part of hdvipdfm.def/hxetex.def)
+% PDF-1.4 (Acrobat 5.x) or later is valid
+% /C array [R G B]
+% /F integer
+%**********************************************************************
+\makeatletter
+\newcount\bookmarksFontStyleInteger
+\def\bookmarksColorArray{1 0 0}
+\def\ReadBookmarks{%
+  \pdf@ifdraftmode{}{%
+    \begingroup
+      \def\do##1{%
+ \ifnum\catcode`##1=\active
+   \@makeother##1%
+ \else
+   \ifnum\catcode`##1=6 %
+     \@makeother##1%
+   \fi
+ \fi
+      }%
+      \dospecials
+      \Hy@safe@activestrue
+      \escapechar=`\\%
+      \def\@@BOOKMARK[##1][##2]##3##4##5{%
+ \calc@bm@number{##5}%
+      }%
+      \InputIfFileExists{\jobname.out}{}{}%
+      \ifx\WriteBookmarks\relax
+ \global\let\WriteBookmarks\relax
+      \fi
+      \def\@@BOOKMARK[##1][##2]##3##4##5{%
+ \def\Hy@temp{##4}%
+ \Hy@pstringdef\Hy@pstringName{\HyperDestNameFilter{##3}}%
+ \@pdfm@mark{%
+   outline \ifHy@DvipdfmxOutlineOpen
+	     [%
+	     \ifnum##21>\z@
+	     \else
+	       -%
+	     \fi
+	     ] %
+	   \fi
+	   ##1<<%
+     /C [\bookmarksColorArray]%
+     /F \the\bookmarksFontStyleInteger%
+     /Title(\expandafter\strip@prefix\meaning\Hy@temp)%
+     /A<<%
+       /S/GoTo%
+       /D(\Hy@pstringName)%
+     >>%
+   >>%
+ }%
+      }%
+      \begingroup
+ \def\WriteBookmarks{0}%
+ \InputIfFileExists{\jobname.out}{}{}%
+      \endgroup
+      %{\escapechar\m@ne\InputIfFileExists{\jobname.out}{}{}}%
+    \endgroup
+  }%
+  \ifx\WriteBookmarks\relax
+  \else
+    \if@filesw
+      \newwrite\@outlinefile
+      \Hy@OutlineRerunCheck
+      \immediate\openout\@outlinefile=\jobname.out\relax
+      \ifHy@typexml
+ \immediate\write\@outlinefile{<relaxxml>\relax}%
+      \fi
+    \fi
+  \fi
+}
+\makeatother
+%*************************************************************
+% Bookmarks Font Style
+% (0 -> Plain; 1 -> Italic; 2 -> Bold; 3 -> Bold and Italic)
+%*************************************************************
+\bookmarksFontStyleInteger2
+%******************
+% Bookmarks Color
+% {R G B}
+%******************
+\renewcommand{\bookmarksColorArray}{0 0.5 1.0}
+\begin{document}
+\section{abc}
+abc
+\end{document}
+```
+
+#### dvips/dvipsone の場合 {#q60cb78c}
+
+```
+\documentclass{article}
+\usepackage[dvips]{hyperref}
+%\usepackage[dvipsone]{hyperref}
+%**************************************************************
+% Change bookmarks color and font style [dvips/dvipsone only]
+% (override a part of pdfmark.def)
+% PDF-1.4 (Acrobat 5.x) or later is valid
+% /C array [R G B]
+% /F integer
+%**************************************************************
+\makeatletter
+\newcount\bookmarksFontStyleInteger
+\def\bookmarksColorArray{1 0 0}
+\def\ReadBookmarks{%
+  \pdf@ifdraftmode{}{%
+    \begingroup
+      \def\do##1{%
+ \ifnum\catcode`##1=\active
+   \@makeother##1%
+ \else
+   \ifnum\catcode`##1=6 %
+     \@makeother##1%
+   \fi
+ \fi
+      }%
+      \dospecials
+      \Hy@safe@activestrue
+      \escapechar=`\\%
+      \def\@@BOOKMARK[##1][##2]##3##4##5{%
+ \calc@bm@number{##5}%
+      }%
+      \InputIfFileExists{\jobname.out}{}{}%
+      \ifx\WriteBookmarks\relax
+ \global\let\WriteBookmarks\relax
+      \fi
+      \def\@@BOOKMARK[##1][##2]##3##4##5{%
+ \def\Hy@temp{##4}%
+ \pdfmark{%
+   pdfmark=/OUT,%
+   Raw={%
+     /Count ##2\check@bm@number{##3}%
+     /Dest (##3)%
+     /C [\bookmarksColorArray]%
+     /F \the\bookmarksFontStyleInteger%
+     /Title (\expandafter\strip@prefix\meaning\Hy@temp)%
+   }%
+ }%
+      }%
+      \begingroup
+ \def\WriteBookmarks{0}%
+ \InputIfFileExists{\jobname.out}{}{}%
+      \endgroup
+      %{\escapechar\m@ne\InputIfFileExists{\jobname.out}{}{}}%
+    \endgroup
+  }%
+  \ifx\WriteBookmarks\relax
+  \else
+    \if@filesw
+      \newwrite\@outlinefile
+      \Hy@OutlineRerunCheck
+      \immediate\openout\@outlinefile=\jobname.out\relax
+      \ifHy@typexml
+ \immediate\write\@outlinefile{<relaxxml>\relax}%
+      \fi
+    \fi
+  \fi
+}
+\makeatother
+%*************************************************************
+% Bookmarks Font Style
+% (0 -> Plain; 1 -> Italic; 2 -> Bold; 3 -> Bold and Italic)
+%*************************************************************
+\bookmarksFontStyleInteger2
+%******************
+% Bookmarks Color
+% {R G B}
+%******************
+\renewcommand{\bookmarksColorArray}{0 0.5 1.0}
+\begin{document}
+\section{abc}
+abc
+\end{document}
+```
 
 ***
 
