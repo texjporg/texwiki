@@ -184,6 +184,15 @@ url文字列にはhyper link機能が付与されます．（下記例ではnoli
 
 pdf文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができる。
 
+#### \Acrobatmenu の例 {#p427ac0e}
+
+```
+\Acrobatmenu{Close}{Close}
+\Acrobatmenu{Quit}{Quit}
+\Acrobatmenu{Find}{Find}
+\Acrobatmenu{FindSearch}{Advanced Search}
+```
+
 ### 他のパッケージとの互換性 {#z442922c}
 
 他のパッケージとhyperrefを同時使用する際には、ちょっとした工夫が必要だったり、読み込む順番に気をつけなればならないものもある。
@@ -645,7 +654,8 @@ hyperrefパッケージをデフォルトで読み込む．
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
 以下にサンプルコードを示します。hyperref 6.81z で確認しました。<br>
-hyperref のバージョンによって中身の構造が異なるので，その場合は適宜修正して使ってください。<br>
+hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります。<br>
+その場合は，変更できないと思われるので，適宜修正して使ってください。<br>
 この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります。<br>
 
 #### pdftex の場合 {#ec16a11d}
