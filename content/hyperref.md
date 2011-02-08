@@ -176,26 +176,33 @@ url文字列にはhyper link機能が付与されます．（下記例ではnoli
 \end{document}
 ```
 
-### Adobe Readerを操作するボタン {#bfd00112}
+### Adobe Reader を操作するボタン {#bfd00112}
 
 ```
 \Acrobatmenu{menuoption}{text}
 ```
 
-pdf文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができる。
+PDF 文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができます。<br>
+最新の Adobe Reader では，セキュリティ上の制限により，過去のバージョンのものとは挙動が異なるものもあります。
 
 #### \Acrobatmenu の例 {#p427ac0e}
 
 ```
+\Acrobatmenu{SaveAs}{Save As}
 \Acrobatmenu{Close}{Close}
-\Acrobatmenu{Quit}{Quit}
+\Acrobatmenu{GeneralInfo}{Properties}
+\Acrobatmenu{Print}{Print}
+\Acrobatmenu{Quit}{Exit}
 \Acrobatmenu{Find}{Find}
 \Acrobatmenu{FindSearch}{Advanced Search}
+\Acrobatmenu{GeneralPrefs}{Preferences}
 \Acrobatmenu{FirstPage}{First Page}
 \Acrobatmenu{PrevPage}{Previous Page}
 \Acrobatmenu{NextPage}{Next Page}
 \Acrobatmenu{LastPage}{Last Page}
 \Acrobatmenu{GoToPage}{Go To Page}
+\Acrobatmenu{GoBack}{Previous View}
+\Acrobatmenu{GoForward}{Next View}
 \Acrobatmenu{FullScreen}{Full Screen Mode}
 ```
 
