@@ -191,6 +191,12 @@ pdf文書の中に「次のページへ」や「先頭のページへ」など�
 \Acrobatmenu{Quit}{Quit}
 \Acrobatmenu{Find}{Find}
 \Acrobatmenu{FindSearch}{Advanced Search}
+\Acrobatmenu{FirstPage}{First Page}
+\Acrobatmenu{PrevPage}{Previous Page}
+\Acrobatmenu{NextPage}{Next Page}
+\Acrobatmenu{LastPage}{Last Page}
+\Acrobatmenu{GoToPage}{Go To Page}
+\Acrobatmenu{FullScreen}{Full Screen Mode}
 ```
 
 ### 他のパッケージとの互換性 {#z442922c}
