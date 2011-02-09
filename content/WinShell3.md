@@ -202,6 +202,39 @@ Winshell 3.0 の場合：
 
 > いずれの場合においても，フォント名として「@ＭＳ ゴシック」のような “@” が先頭に附いた名称のものを選択するとテキストエディタ部の和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう。
 
+### 構文の強調表示 {#q1b1fd50}
+
+文字化けを防止するため，対応する括弧の強調表示のチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　☑ 構文の強調表示(S)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　☐ 対応する括弧の強調表示(M)<br>
+
+<br>
+
+<br>
+
+<br>
+
+***
+
 ### 主なTeXプログラムの設定 {#v03241d0}
 
 次に，［オプション］ → ［TeX関連プログラム設定］ で
@@ -795,6 +828,37 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
 
 ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
+
+これを回避するには，対応する括弧の強調表示のチェックをはずしてください．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　☑ 構文の強調表示(S)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　☐ 対応する括弧の強調表示(M)<br>
+
+<br>
+
+<br>
+
+<br>
+
+***
 
 関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
 
