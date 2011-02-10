@@ -42,13 +42,13 @@ Mathabx フォントの出力例を次に示します。
 
 ### インストール {#q2fbcaf5}
 
-[CTAN](https://mirror.ctan.org/fonts/mathabx/) から MetaFont 形式のフォント本体 (source ディレクトリ下) とマクロ (texinputs ディレクトリ下) を取ってきて、[README](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/README) にしたがって適切なディレクトリに収めてください。実際の利用時に mf ファイルから TFM (\*.tfm) が生成され, mathabx が利用可能となります. Type1 フォントを埋め込んだ PS ファイルを作成する場合などには、愛知教育大数学教室の堀田先生が構築された <strong>mathabx-type1</strong> を、[CTAN](https://mirror.ctan.org/fonts/ps-type1/mathabx/) において map ファイルと Type1 フォントファイル (\*.pfb) の download をしてから、[README](http://mirror.ctan.org/fonts/ps-type1/mathabx/README) を参考にして適切なディレクトリに収め, 必要に応じて mktexlsr や updmap を実行してください.
+[CTAN](https://mirror.ctan.org/fonts/mathabx/) から MetaFont 形式のフォント本体 (source ディレクトリ下) とマクロ (texinputs ディレクトリ下) を取ってきて、[README](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/README) にしたがって適切なディレクトリに収めてください。実際の利用時に mf ファイルから TFM (\*.tfm) が生成され, mathabx が利用可能となります. Type1 フォントを埋め込んだ PS ファイルを作成する場合などには, [CTAN](https://mirror.ctan.org/fonts/ps-type1/mathabx/) (<strong>mathabx-type1</strong> パッケージ) にある map ファイルと Type1 フォント (\*.pfb) も取ってきて, [README](http://mirror.ctan.org/fonts/ps-type1/mathabx/README) を参考にして適切なディレクトリに収め, 必要に応じて mktexlsr や updmap を実行してください.
 
 また, mathabx は <strong>TeX Live</strong> にも収録されており, たとえば Debian(deb) や Fedora(rpm) などでは texlive-fonts-extra パッケージをインストールすることで mathabx が利用可能になります.
 
 ### その他 Web 上にある情報 {#qad506aa}
 
-愛知教育大数学教室の堀田先生が、利用に必要な mathabx パッケージの配布および mathabx の利用方法についての詳細な解説をしておられますので、以下のページを参考になさってください。
+愛知教育大数学教室の堀田先生が、利用に必要な mathabx パッケージの配布 (上記 CTAN 収録の mathabx-type1 パッケージも堀田先生によるものです) および mathabx の利用方法についての詳細な解説をしておられますので、以下のページを参考になさってください。
 
 - (メインサイト) [http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html](http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html)
 - (ミラー) [http://www.geocities.jp/koh_hotta/ghost/mathabx.html](http://www.geocities.jp/koh_hotta/ghost/mathabx.html)
