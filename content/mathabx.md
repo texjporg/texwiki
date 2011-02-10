@@ -50,8 +50,8 @@ Mathabx フォントの出力例を次に示します。
 
 愛知教育大数学教室の堀田先生が、利用に必要な mathabx パッケージの配布 (上記 CTAN 収録の mathabx-type1 パッケージも堀田先生によるものです) および mathabx の利用方法についての詳細な解説をしておられますので、以下のページを参考になさってください。
 
-- (メインサイト) [http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html](http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html)
-- (ミラー) [http://www.khotta.org/ghost/mathabx.html](http://www.khotta.org/ghost/mathabx.html)
+- (メインサイト) [http://www.khotta.org/ghost/mathabx.html](http://www.khotta.org/ghost/mathabx.html)
+- (ミラー) [http://khotta.digiweb.jp/ghost/mathabx.html](http://khotta.digiweb.jp/ghost/mathabx.html)
 
 ## コメント {#z9f27a38}
 
