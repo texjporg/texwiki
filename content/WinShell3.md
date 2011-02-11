@@ -7,6 +7,8 @@ pukiwiki: "WinShell3"
 
 # WinShell3
 
+[WinShell](/WinShell/) > WinShell 3
+
 ## [WinShell 3](http://www.winshell.org/) {#cf393be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
