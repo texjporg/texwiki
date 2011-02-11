@@ -173,7 +173,7 @@ zip ファイルでインストールした場合は，展開したディレク�
 <br>
 
 　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ShiftJIS　　　　　▼\]</span><br>
+　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ShiftJIS　　　　　　▼\]</span><br>
 　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
 　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
 
@@ -771,26 +771,52 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 ### Runtime Error! {#o5faaed5}
 
-WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し，LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
+WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]</ins></span><strong>\[ フォント \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+
+<br>
+
+　　　　フォント:　　　　　　　　　　　　　　　　　　　　　サイズ:　　　　スクリプト:<br>
+　　　　<span style="color:Black;background-color:White;">\[　　MS UI Gothic　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　　▼\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
+　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　　　　▼\]</span><br>
+　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
+　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
+
+***
+
+LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　Microsoft Visual C++ Runtime Library　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="font-size:35px"><strong>×</strong></span>Runtime Error!<br>
+<span style="font-size:35px"><strong>×</strong></span> Runtime Error!<br>
 
 <br>
 
-Program: C:\Program Files\WinShell\WinShell.exe<br>
+　　　　Program: C:\Program Files\WinShell\WinShell.exe<br>
 
 <br>
 
 <br>
 
-This application has requested the Runtime to terminate it in an<br>
-unusual way.<br>
-Please contact the application's support team for more<br>
-information.
+　　　　This application has requested the Runtime to terminate it in an<br>
+　　　　unusual way.<br>
+　　　　Please contact the application's support team for more<br>
+　　　　information.
 
 ***
 
@@ -800,14 +826,26 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 
 [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
-どうしても最新版を使いたい方は，\[主なTeXプログラムの設定\] を \[ユーザ指定プログラム\] の方へ設定し，\[ユーザ指定プログラム\] の方を使用すると Runtime Error! にならずにコンパイルすることができます．
+どうしても最新版で UTF-8 を使いたい方は，\[主なTeXプログラムの設定\] のプログラムの exeファイル名をすべて削除して， \[ユーザ指定プログラム\] の方へプログラムを設定し，\[ユーザ指定プログラム\] の方を使用すると Runtime Error! にならずにコンパイルすることができます．
 
-\[主なTeXプログラムの設定\] の方を使用すると，当然 Runtime Error! になります．
+間違って \[主なTeXプログラムの設定\] の方を使用しても，警告メッセージが表示されるだけになり，Runtime Error! を回避できます．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　　　　　　実行(.exe)ファイルがありません。<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span><br>
+　　　　　　　オプションの指定を確認してください。<br>
+
+<br>
+
+***
 
 ### 赤い小さなゴミのようなものが表示される {#bf59f9a2}
 
-''WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
-カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.1.12 でも同様の症状が発生します。''
+WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
+カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.1.12 でも同様の症状が発生します。
 
 > <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
 
