@@ -22,7 +22,7 @@ xyzzy は柔軟なカスタマイズを可能にした，
 
 国産で，フリーソフトウェアです。
 
-xyzzy のマクロには，tex/latex/bibtex 編集支援モードの [kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，TeX 用マクロ [KaTeX （花鳥）](#xykb6f8d)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](#xykb6f8d)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
 
 多言語についても
 
@@ -267,7 +267,7 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
 をご覧ください。
 
-[kyotex-mode](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/)，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
+kyotex-mode，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。
 
 [bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
@@ -283,35 +283,6 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 あとはサイトを選んで Enter で決定し，インストールしたいマクロを選び，i キーでインストールします。
 
 終了は q です。
-
-### kyotex-mode で TeX {#l8728f40}
-
-#### kyotex-mode のインストール {#mbb49d11}
-
-- [kyotex-modeのインストール](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/install.html) を参照。
-
-#### 基本設定 {#h53e96ff}
-
-- [kyotex-modeの設定変更方法](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/setting.html) を参照。
-
-TeX(T):
-: eplatex<br>
-
-BiBTeX(B):
-: pbibtex<br>
-
-DVI->PDF(P):
-: dvipdfmx<br>
-
-に変更します。
-
-#### コンパイルコマンド {#pf143517}
-
-- [コンパイルコマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/compile.html) を参照。
-
-#### 補完コマンド {#w15b8b4d}
-
-- [補完コマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/completion.html) を参照。
 
 ### outline-tree でアウトライン表示 {#xyob6f8d}
 
