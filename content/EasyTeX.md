@@ -7,7 +7,7 @@ pukiwiki: "EasyTeX"
 
 # EasyTeX
 
-## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) {#et3357}
+## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#et3357}
 
 <img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111214022.png" alt="" style="float:right">
 
@@ -188,13 +188,39 @@ PDF Reader は Adobe Reader X の他に Sumatra PDF 1.2, Foxit J-Reader 4.2, PDF
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．
 
+## エディタ設定 {#b0958860}
+
+EasyTeX はエディタの設定をすることが可能です．
+
+設定は，\[ｵﾌﾟｼｮﾝ(O)\] → \[ｴﾃﾞｨﾀ設定(E)\] から変更することができます．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ｴﾃﾞｨﾀ設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ TeX命令 \]\[ ｺﾒﾝﾄ \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　フォントの選択　\]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><span style="color:White;background-color:#000099;"> Aaあぁアァ亜宇 </span><span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><br>
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[背景色の変更(B) \]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
 ## ツールの設定 {#h04c9433}
 
-メニューの オプション(O) → ﾂｰﾙの設定(O) からツールの設定をします．
+メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[ﾂｰﾙの設定(O)\] からツールの設定をします．
 
 設定を反映させるには，［ 　登録　 ］ボタンを押し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．
 
-設定したツールはメニューの ﾂｰﾙ(A) から選択できます．
+設定したツールはメニューの \[ﾂｰﾙ(A)\] から選択できます．
 
 ### pdfLaTeX {#m3a434b8}
 
