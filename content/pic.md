@@ -27,7 +27,7 @@ picとは，A Graphics Language for Typesetting
 - [http://www.math.columbia.edu/~lauda/xy/](http://www.math.columbia.edu/~lauda/xy/)
 - [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
 - [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
-- [http://www.ms.u-tokyo.ac.jp/~abenori/tex/index.html#xy-pic](http://www.ms.u-tokyo.ac.jp/~abenori/tex/index.html#xy-pic)
+- [http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
 - [http://akagi.ms.u-tokyo.ac.jp/ftp-j.html](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html) （日本語での解説，より詳しい解説）
 
 ### 例 {#xd92553b}
