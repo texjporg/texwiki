@@ -57,8 +57,8 @@ TeX インストーラを色々な視点から比較してみます。
 
 ## TeX インストーラ 3 (abtexinst.exe) {#w0d7240a}
 
-- <strong>ウェブサイト</strong>：[www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html](http://www.ms.u-tokyo.ac.jp/~abenori/mycreate/abtexinst.html)
-- <strong>作者</strong>：[阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)さん
+- <strong>ウェブサイト</strong>：[www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
+- <strong>作者</strong>：[阿部 紀行](http://www.math.sci.hokudai.ac.jp/~abenori/)さん
 - <strong>初心者オススメ度</strong>：★★★★★
 - <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
 - <strong>インストールする対象</strong>：W32TeX バイナリ，dviout for Windows，Ghostscript，GSview（DLL プラグインおよび Ruby スクリプトの追加方式により xypic，ispell，WinShell）
