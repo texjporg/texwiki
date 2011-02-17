@@ -847,8 +847,7 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 <br>
 
 　　　　　　　実行(.exe)ファイルがありません。<br>
-　　　　<span style="font-size:35px"><strong>!</strong></span><br>
-　　　　　　　オプションの指定を確認してください。<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span>　　オプションの指定を確認してください。<br>
 
 <br>
 
@@ -1168,6 +1167,26 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 　　+ F10　　　　　　 %&lt;p>\[s, p, c\]&lt;.xxx, .%ex>;%l<br>
 
 ***
+
+### Adobe Reader X で PDF ファイルが表示できない {#z65ee470}
+
+WinShell 3.3.2.3 よりも前のバージョンの場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　　Cannot start AcrobatReader or open the document.<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span>　　Please check on the exe file and cmd line of the PDFView<br>
+　　　　　　　options.<br>
+
+<br>
+
+***
+
+これを回避するには PDFView を参照してください．
 
 ### 赤い小さなゴミのようなものが表示される {#bf59f9a2}
 
