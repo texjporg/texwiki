@@ -252,7 +252,7 @@ Cドライブでない場合には “C:” という部分を書き換えてく
 
 なお DVIView，GSView，PDFView は自動的に適切な設定になっているはずです．<br>
 参照ボタンを押して直接指定する必要はないでしょう．<br>
-ただし，WinShell 3.3.2.3 よりも前のバージョンの場合は Adobe Reader X に対応していないため，PDFView の exeファイル名に Adobe Reader X を指定しても PDF ファイルが表示できません．<br>
+ただし，WinShell 3.3.2.3 よりも前のバージョンの場合は Adobe Reader X に対応していないため，PDFView の exeファイル名に Adobe Reader X を指定しても PDF ファイルが表示できません(なお、Adobe Acrobat X を指定した PDF ファイルの表示は可能です)．<br>
 WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Reader X を呼び出すことで使用が可能になります．
 
 <em>注意 x64 環境でも TeX 環境用(gs が 32bit dll等) の GSView は必ず x86 用をインストールして下さい。</em>
@@ -395,7 +395,7 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 #### GSView {#gb236799}
 
-"C:\Program Files\Ghostgum\gsview\gsview32.exe" (\[参照(B)...\] で gsview32.exe を検索)
+"C:\Program Files\Ghostgum\gsview\gsview32.exe" (64bit版Windows の場合は "C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe") (\[参照(B)...\] で gsview32.exe を検索)
 
 ***
 
@@ -462,9 +462,9 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 #### PDFView {#gffc0a36}
 
-- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" とし，コマンドラインを "%s.pdf" とします．
-- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" とします．
-- [Adobe Reader 9 以前のバージョン](http://get.adobe.com/jp/reader/otherversions/) の場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (\[参照(B)...\] で AcroRd32.exe を検索) とします (x.x は任意の数字) ．
+- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe") とし，コマンドラインを "%s.pdf" とします．
+- [Adobe Reader X](http://www.adobe.com/jp/products/reader/)，WinShell 3.3.2.3 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" (64bit版Windowsの場合は /c start "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf")とします．
+- [Adobe Reader 9 以前のバージョン](http://get.adobe.com/jp/reader/otherversions/) の場合，exeファイル名を "C:\Program Files\Adobe\Reader x.x\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader x.x\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします (x.x は任意の数字) ．
 
 PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．
 
