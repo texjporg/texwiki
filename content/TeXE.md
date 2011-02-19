@@ -7,11 +7,11 @@ pukiwiki: "TeXE"
 
 # TeXE
 
-## [TeXE](http://www5.ocn.ne.jp/~fact/) {#d1c324af}
+## [TeXE](http://www5.ocn.ne.jp/~fact/download.html) {#d1c324af}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### TeXE とは {#b019eb8f}
+## TeXE とは {#b019eb8f}
 
 TeXE は 簡易 TeX 専用エディタです．
 
@@ -26,27 +26,25 @@ TeXE は 簡易 TeX 専用エディタです．
 
 です．
 
-公式サイトは
-[ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/top.html)
-です。
-
 TeraPad に TeX の色分け機能と補完機能を追加したような感じのエディタです．
 
-### インストール {#pdbc335f}
+- [ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/)
+    - [Top](http://www5.ocn.ne.jp/~fact/top.html)
+    - [Download](http://www5.ocn.ne.jp/~fact/download.html)
 
-> ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です．
+## インストール {#pdbc335f}
 
-> 注意事項>
+ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です．
 
-> ・onig.dll は TeXE.exe と同じ階層においてください．(別途用意する場合)
+- 注意事項
+    - onig.dll は TeXE.exe と同じ階層においてください．(別途用意する場合)
+    - .dat 等は TeXE.ini で場所を指定すれば移動，追加できます．
 
-> ・.dat 等は TeXE.ini で場所を指定すれば移動，追加できます．
+## アンインストール {#n704d221}
 
-### アンインストール {#n704d221}
+設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです．
 
-> 設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです．
-
-### 設定 {#jf6b3b60}
+## 設定 {#jf6b3b60}
 
 \[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります．
 
@@ -88,7 +86,7 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -kanji=sjis "%F"
+: -kanji=sjis -synctex=-1 -src-specials "%F"
 
 - MakeIndex
 
@@ -140,13 +138,13 @@ Macro
 
 ***
 
-### 使い方 {#l6407046}
+## 使い方 {#l6407046}
 
 \[ツール(T)\]-\[TeX自動処理(A)\] で TeX ファイルをコンパイルして表示してくれます．
 
-### 不具合 {#b8d5d357}
+## 不具合 {#b8d5d357}
 
-#### PDF ファイルが開けない {#r3adc450}
+### PDF ファイルが開けない {#r3adc450}
 
 \[ツール\]-\[PDFプレビュー\] で「PDFが開けませんでした」といったエラーダイアログが出ます．
 
@@ -161,6 +159,17 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 - 追加/変更
 
 表示名
+: Sumatra PDF
+
+コマンド
+: C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf"
+
+パス
+: <br>
+
+- 追加/変更
+
+表示名
 : Adobe Reader
 
 コマンド
@@ -169,11 +178,37 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 パス
 : <br>
 
-を \[適用\] することで \[ツール(T)\]-\[Adobe Reader\] から表示することが可能になります．
+を \[適用\] することで \[ツール(T)\]-\[Sumatra PDF\] もしくは \[ツール(T)\]-\[Adobe Reader\] から PDF ファイルを表示することが可能になります．
 
 ショートカットキーを割り当てることも可能です．
 
-DVI ファイルを表示する必要がない方は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に
+DVI ファイルを表示する必要がない場合は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に Sumatra PDF もしくは Adobe Reader を設定して PDF ファイルを表示できます．
+
+Adobe Reader の場合は手動で閉じる必要があるので，Sumatra PDF がおすすめです．
+
+#### Sumatra PDF の場合 {#j65e2eb0}
+
+- Dvi Viewer
+
+フルパス
+: C:\Program Files\SumatraPDF\SumatraPDF.exe
+
+引数
+: -reuse-instance "%X.pdf"
+
+DDE
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
+
+Service
+: SUMATRA
+
+Topic
+: control
+
+Macro
+: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
+
+#### Adobe Reader の場合 {#ke2a1b29}
 
 - Dvi Viewer
 
@@ -194,5 +229,3 @@ Topic
 
 Macro
 : \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
-
-と設定することで DVI ファイルの代わりに PDF ファイルを表示することが可能です．
