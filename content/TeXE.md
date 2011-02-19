@@ -50,6 +50,16 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 \[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります．
 
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　環境オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　編集/表示 \]\[　　ファイル \]\[　　メニュー \]\[　　色設定 \]\[　　入力支援 \]</ins></span><strong>\[　　TeX \]</strong><br>
+　　　簡易自動設定　　　　　　　　　　　　　　　　　　<span style="color:Red;">自動設定機能が正常に機能しない場合は下を手動で設定してください。</span><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[　　開始　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　　　▼\]</span><br>
+
+***
+
 開始すると自動設定してくれますが，
 \[TeX\] が platex.exe， \[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
 
@@ -60,11 +70,6 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 に変更します．
 
 ***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　環境オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　編集/表示 \]\[　　ファイル \]\[　　メニュー \]\[　　色設定 \]\[　　入力支援 \]</ins></span><strong>\[　　TeX \]</strong><br>
-　　　簡易自動設定　　　　　　　　　　　　　　　　　　<span style="color:Red;">自動設定機能が正常に機能しない場合は下を手動で設定してください。</span><br>
 
 - 「自動処理(A)」での処理
 
@@ -110,7 +115,7 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 : -1 "%D"
 
 DDE
-: ☑DDEを使用する
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
 
 Service
 : dviout
@@ -119,7 +124,7 @@ Topic
 : dviout
 
 Macro
-: \[WinNormal\]\[FileOpen(%D)\]
+: \[WinNormal\]\[FileOpen("%D")\]
 
 - Dvi to Pdf
 
@@ -147,7 +152,28 @@ Macro
 
 PDF ファイルはきちんと作成されていますが，プレビューができません．
 
-この場合，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に
+この場合，\[表示\]-\[環境オプション\]-\[メニュー\] で
+
+- 外部ツール
+
+\[追加\]
+
+- 追加/変更
+
+表示名
+: Adobe Reader
+
+コマンド
+: AcroRd32.exe "%X.pdf"
+
+パス
+: C:\Program Files\Adobe\Reader 10.0\Reader
+
+を \[適用\] することで \[ツール(T)\]-\[Adobe Reader\] から表示することが可能になります．
+
+ショートカットキーを割り当てることも可能です．
+
+もしくは，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に
 
 - Dvi Viewer
 
@@ -158,6 +184,15 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 : "%X.pdf"
 
 DDE
-: ☐DDEを使用する ← DDEを使用するのチェックをはずす
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
 
-と設定することで DVI ファイルの代わりに PDF ファイルを表示することが可能になります．
+Service
+: acroviewR10
+
+Topic
+: control
+
+Macro
+: \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
+
+と設定することで DVI ファイルの代わりに PDF ファイルを表示することも可能です．
