@@ -164,16 +164,16 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 : Adobe Reader
 
 コマンド
-: AcroRd32.exe "%X.pdf"
+: C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe "%X.pdf"
 
 パス
-: C:\Program Files\Adobe\Reader 10.0\Reader
+: <br>
 
 を \[適用\] することで \[ツール(T)\]-\[Adobe Reader\] から表示することが可能になります．
 
 ショートカットキーを割り当てることも可能です．
 
-もしくは，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に
+DVI ファイルを表示する必要がない方は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に
 
 - Dvi Viewer
 
@@ -195,4 +195,4 @@ Topic
 Macro
 : \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
 
-と設定することで DVI ファイルの代わりに PDF ファイルを表示することも可能です．
+と設定することで DVI ファイルの代わりに PDF ファイルを表示することが可能です．
