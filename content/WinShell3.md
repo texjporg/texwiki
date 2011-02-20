@@ -957,12 +957,7 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 どうしても最新版で UTF-8 を使いたい方は，まず \[主なTeXプログラムの設定\] のプログラムの
 
 - LaTeX
-- BibTeX
-- DVIView
-- DVI -> PS
-- GSView
 - PDFLaTeX
-- PDFView
 
 の exeファイル名の値をすべて削除してください． 
 
@@ -980,6 +975,17 @@ UTF-8 を使用したい方は，[LaTeX Install/WinShell - PukiWiki](http://igpr
 <br>
 
 ***
+
+それから
+
+- BibTeX
+- DVIView
+- DVI -> PS
+- GSView
+- PDFView
+
+の LaTeXを先に実行と PDFLaTeXを先に実行のチェックをすべてはずします．
+これらのプログラムは LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます．
 
 次に \[ユーザ指定プログラム\] へプログラムを設定します．<br>
 \[ユーザ指定プログラム\] を使用すると Runtime Error! にならずにコンパイルすることができます．<br>
