@@ -106,7 +106,7 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 : C:\w32tex\dviout\dviout.exe
 
 引数
-: -1 "%D"
+: -1 "%D" # "%l" "%F"
 
 DDE
 : ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
@@ -118,7 +118,7 @@ Topic
 : dviout
 
 Macro
-: \[WinNormal\]\[FileOpen("%D")\]
+: \[PageOpen(# %l %F)\]\[WinNormal\]\[FileOpen(%D)\]
 
 - Dvi to Pdf
 
