@@ -13,7 +13,7 @@ pukiwiki: "TeXE"
 
 ## TeXE とは {#b019eb8f}
 
-TeXE は，国産でフリーの簡易 TeX 専用エディタです．
+TeXE は，Windows で動作する国産でフリーの簡易 TeX 専用エディタです．
 
 主な特徴は以下の通りです．
 
@@ -204,7 +204,7 @@ Topic
 Macro
 : \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
 
-#### Adobe Reader の場合 {#ke2a1b29}
+#### Adobe Reader X の場合 {#ke2a1b29}
 
 - Dvi Viewer
 
@@ -219,6 +219,28 @@ DDE
 
 Service
 : acroviewR10
+
+Topic
+: control
+
+Macro
+: \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
+
+#### Adobe Reader 9 の場合 {#sac264af}
+
+- Dvi Viewer
+
+フルパス
+: C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe
+
+引数
+: "%X.pdf"
+
+DDE
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
+
+Service
+: acroview
 
 Topic
 : control
