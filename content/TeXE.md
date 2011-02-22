@@ -65,6 +65,33 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 引数や Macro を入力する欄で，右クリックをするとパラメータの説明が表示されます．
 
+引数のパラメータ<br>
+
+- "%F"(ファイル名，フルパス)
+- "%D"(DVIファイル名，フルパス)
+- "%X"(拡張子なしファイル名，フルパス)
+- "%f"(ファイル名のみ)
+- "%x"(拡張子なしファイル名のみ)
+- "%p"(開いているファイルのディレクトリ部分のみ)
+- "%e"(TeXEの実行ディレクトリ)
+- "%%"(% パーセント)
+- "%c"(, カンマ)
+- "%s"(選択中のテキスト)
+- "%l"(カーソル位置の行番号)
+
+Macroのパラメータ<br>
+
+- "%F"(ファイル名，フルパス)
+- "%D"(DVIファイル名，フルパス)
+- "%X"(拡張子なしファイル名，フルパス)
+- "%f"(ファイル名のみ)
+- "%x"(拡張子なしファイル名のみ)
+- "%p"(開いているファイルのディレクトリ部分のみ)
+- "%%"(% パーセント)
+- "%c"(, カンマ)
+- "%n"(改行)
+- "%l"(カーソル位置の行番号)
+
 ***
 
 - 「自動処理(A)」での処理
@@ -84,7 +111,7 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -kanji=sjis -synctex=-1 -src-specials "%F"
+: -kanji=sjis -synctex=-1 -interaction=nonstopmode -src-specials "%F"
 
 - MakeIndex
 
@@ -180,11 +207,32 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 
 ショートカットキーを割り当てることも可能です．
 
-DVI ファイルを表示する必要がない場合は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に Sumatra PDF もしくは Adobe Reader を設定して PDF ファイルを表示できます．
+コマンドやパスを入力する欄で，右クリックをするとパラメータの説明が表示されます．
 
-Adobe Reader の場合は手動で閉じる必要があるので，Sumatra PDF がおすすめです．
+コマンドのパラメータ<br>
 
-#### Sumatra PDF の場合 {#j65e2eb0}
+- "%F"(ファイル名，フルパス)
+- "%D"(DVIファイル名，フルパス)
+- "%X"(拡張子なしファイル名，フルパス)
+- "%f"(ファイル名のみ)
+- "%x"(拡張子なしファイル名のみ)
+- "%p"(開いているファイルのディレクトリ部分のみ)
+- "%e"(TeXEの実行ディレクトリ)
+- "%%"(% パーセント)
+- "%c"(, カンマ)
+- "%n"(改行)
+- "%s"(選択中のテキスト)
+- "%l"(カーソル位置の行番号)
+
+パスのパラメータ<br>
+
+- "%p"(開いているファイルのディレクトリ部分のみ)
+- "%e"(TeXEの実行ディレクトリ)
+- "%%"(% パーセント)
+- "%c"(, カンマ)
+- "%n"(改行)
+
+DVI ファイルを表示する必要がない場合は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に Sumatra PDF を設定して PDF ファイルを表示できます．
 
 - Dvi Viewer
 
@@ -205,47 +253,3 @@ Topic
 
 Macro
 : \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
-
-#### Adobe Reader X の場合 {#ke2a1b29}
-
-- Dvi Viewer
-
-フルパス
-: C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe
-
-引数
-: "%X.pdf"
-
-DDE
-: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
-
-Service
-: acroviewR10
-
-Topic
-: control
-
-Macro
-: \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
-
-#### Adobe Reader 9 の場合 {#sac264af}
-
-- Dvi Viewer
-
-フルパス
-: C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe
-
-引数
-: "%X.pdf"
-
-DDE
-: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
-
-Service
-: acroview
-
-Topic
-: control
-
-Macro
-: \[DocOpen("%X.pdf")\]\[FileOpen("%X.pdf")\]
