@@ -20,13 +20,12 @@ Ghostscript 8-系の共通項目です。当ページの対象としては, 大�
 
 いくつかのマイナーバージョンについては、旧版からの大きな変更点などの固有の話題が
 
-- Ghostscript 8.15
-- Ghostscript 8.50
-- Ghostscript 8.54
-- Ghostscript 8.64
-- Ghostscript 8.70
 - Ghostscript 8.71
-- Ghostscript 9.00
+- Ghostscript 8.70
+- Ghostscript 8.64
+- Ghostscript 8.54
+- Ghostscript 8.50
+- Ghostscript 8.15
 
 などにあります。新たにインストール記や変更点の検証が個別のバージョンのページで行われることも望ましいでしょう。(以下の文章は基本的に8.54で検証されたものです. バージョンが 8.xx や 8.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
 
