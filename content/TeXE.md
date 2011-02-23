@@ -42,6 +42,8 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 ## 設定 {#jf6b3b60}
 
+### 簡易自動設定 {#r526ef0b}
+
 \[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります．
 
 ***
@@ -92,20 +94,38 @@ Macroのパラメータ<br>
 - "%n"(改行)
 - "%l"(カーソル位置の行番号)
 
-***
-
-- 「自動処理(A)」での処理
+### 「自動処理(A)」での処理 {#j2fe5493}
 
 > ☑MakeIndex<br>
 > ☑BibTeX<br>
 > ☑DVI to PDF<br>
 
-- 処理後
+#### 処理後 {#jc642b5a}
 
 > ☑DVIを表示<br>
 > ☐PDFを表示<br>
 
-- TeX
+### 処理オプション {#p9e23bd1}
+
+> ☐BATを作成し処理する[^1]<br>
+> ☐出力をメッセージパネルへ[^2]<br>
+> ☐処理前に古い処理を削除する[^3]<br>
+
+> <span style="color:#888888;background-color:White;">☑削除前にバックアップを作成</span><br>
+
+### PDFプレビュー(P) {#x40a9b88}
+
+> ☐Dvi to Pdf処理後PDF表示<br>
+
+### 不要なファイルの削除 {#u7968d10}
+
+> ☐閉じる前に不要なファイルを削除する[^4]
+>
+> 拡張子
+> : .toc|.idx|.bbl|.log|.lof|.ind|.blg|.aux|.aux.bbl|.aux.blg|.lot|.ilg
+>
+
+### TeX {#obbe32e3}
 
 フルパス
 : C:\w32tex\bin\eplatex.exe
@@ -113,7 +133,7 @@ Macroのパラメータ<br>
 引数
 : -kanji=sjis -synctex=-1 -interaction=nonstopmode -src-specials "%F"
 
-- MakeIndex
+### MakeIndex {#g6c29d8e}
 
 フルパス
 : C:\w32tex\bin\mendex.exe
@@ -121,7 +141,7 @@ Macroのパラメータ<br>
 引数
 : -S "%X.idx"
 
-- BibTeX
+### BibTeX {#j33abf74}
 
 フルパス
 : C:\w32tex\bin\pbibtex.exe
@@ -129,7 +149,9 @@ Macroのパラメータ<br>
 引数
 : -kanji=sjis "%X"
 
-- Dvi Viewer
+### Dvi Viewer {#n4f1bf86}
+
+#### dviout {#n0a40e5f}
 
 フルパス
 : C:\w32tex\dviout\dviout.exe
@@ -149,7 +171,31 @@ Topic
 Macro
 : \[PageOpen(# %l %F)\]\[WinNormal\]\[FileOpen(%D)\]
 
-- Dvi to Pdf
+#### Sumatra PDF {#ff11f3ec}
+
+DVI ファイルを表示する必要がない場合は，Dvi Viewer に Sumatra PDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
+
+- Dvi Viewer
+
+フルパス
+: C:\Program Files\SumatraPDF\SumatraPDF.exe
+
+引数
+: -reuse-instance "%X.pdf"
+
+DDE
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
+
+Service
+: SUMATRA
+
+Topic
+: control
+
+Macro
+: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
+
+### Dvi to Pdf {#w081339b}
 
 フルパス
 : C:\w32tex\bin\dvipdfmx.exe
@@ -232,24 +278,7 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 - "%c"(, カンマ)
 - "%n"(改行)
 
-DVI ファイルを表示する必要がない場合は，\[表示\]-\[環境オプション\]-\[TeX\] の Dvi Viewer に Sumatra PDF を設定して PDF ファイルを表示できます．
-
-- Dvi Viewer
-
-フルパス
-: C:\Program Files\SumatraPDF\SumatraPDF.exe
-
-引数
-: -reuse-instance "%X.pdf"
-
-DDE
-: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
-
-Service
-: SUMATRA
-
-Topic
-: control
-
-Macro
-: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
+[^1]: TeX等の終了監視を行わなくなり、動作が軽くなります。DDEは使用できません。
+[^2]: DOSプロンプトのウィンドウが表示されなくなり、出力がメッセージパネルに表示されます。
+[^3]: DVIとPDFファイルが対象
+[^4]: TeXメニュー使用時のみ
