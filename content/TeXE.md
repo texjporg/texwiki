@@ -131,7 +131,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -kanji=sjis -synctex=-1 -interaction=nonstopmode -src-specials "%F"
+: -kanji=sjis -synctex=-1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
