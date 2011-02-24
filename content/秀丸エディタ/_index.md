@@ -39,6 +39,52 @@ pukiwiki: "秀丸エディタ"
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
     - (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して保存し，Adobe Reader X のメニューの \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] のチェックをはずすと [TeXnicCenter](/TeXnicCenter/)[#Adobe Reader X](/TeXnicCenter/#c94760c4) と同様に Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります．
+    - 秀丸エディタ Version 8.02 を起動して，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
+
+***
+
+エラー<br>
+
+<br>
+
+× 秀丸エディタのプロセスで保護違反が発生しました。秀丸エディタは<br>
+異常終了します。
+
+秀丸エディタの異常終了についての詳細情報は、秀丸エディタをイン<br>
+ストールしたフォルダ (またはマイドキュメント) にあるdump.txtフ<br>
+ァイルに出力されています。
+
+Program Filesに出力されている場合は、エクスプローラで「互換性フ<br>
+ァイル」をクリックすると表示されます。
+
+***
+
+エラー<br>
+
+<br>
+
+！ プログラムが終了する前に、最後に１回だけ保存を試みることができ<br>
+ます。
+
+既にメモリが破壊されている場合、保存処理そのものが失敗するか、<br>
+壊れた内容を出力するかもしれません。
+
+もし保存する場合は、必ず別名で保存してください。<br>
+(旧タイプのダイアログを使うので拡張子まで入力する必要がありま<br>
+す)
+
+***
+
+ファイルの保存<br>
+
+<br>
+
+ファイル名(N):　<ins>(必ず別名で保存してください).txt</ins>　　　\[　　　　OK　　　　\]<br>
+フォルダ:　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ｷｬﾝｾﾙ\] \[削除(E)\]<br>
+　ファイル(F):　　　　　　フォルダ(D):
+
+***
+
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
     (福中 公輔 さん)
 
