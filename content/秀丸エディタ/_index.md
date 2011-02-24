@@ -38,6 +38,7 @@ pukiwiki: "秀丸エディタ"
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
+    - (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して保存し，Adobe Reader X のメニューの \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] のチェックをはずすと [TeXnicCenter](/TeXnicCenter/)[#Adobe Reader X](/TeXnicCenter/#c94760c4) と同様に Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります．
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
     (福中 公輔 さん)
 
