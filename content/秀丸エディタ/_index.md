@@ -20,6 +20,9 @@ pukiwiki: "秀丸エディタ"
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
         - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
         - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
+- [秀丸エディタ マクロ言語ヘルプ目次（Ver8.02対応版）](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
+    - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
+    - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
 - [窓の杜 - 秀丸エディタ](http://www.forest.impress.co.jp/lib/offc/document/txteditor/hidemaru.html)
 
 ### 秀丸エディタフリー制度 {#faebc82e}
@@ -38,6 +41,7 @@ pukiwiki: "秀丸エディタ"
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
+    - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
 
 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に
 
@@ -46,6 +50,8 @@ Adobe系とのDDE接続に失敗．
 ```
 
 のエラーメッセージが表示され，PDF ファイルが表示されません．
+
+Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました．
 
 (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)．
 
