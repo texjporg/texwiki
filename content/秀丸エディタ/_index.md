@@ -38,8 +38,88 @@ pukiwiki: "秀丸エディタ"
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
-    - (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して保存し，Adobe Reader X のメニューの \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] のチェックをはずすと [TeXnicCenter](/TeXnicCenter/)[#Adobe Reader X](/TeXnicCenter/#c94760c4) と同様に Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります．
-    - 秀丸エディタ Version 8.02 を起動して，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
+
+祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に
+
+```
+Adobe系とのDDE接続に失敗．
+```
+
+のエラーメッセージが表示され，PDF ファイルが表示されません．
+
+(祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)．
+
+```
+DDEOpen:
+        run "\"" + $path + "\"";
+        if(!result){
+                message $path + "\nの実行に失敗．";
+                return 1;
+        }
+        sleep 600;
+        ddeinitiate "acroviewR10","Control";
+        if(!result){
+                message "Adobe系とのDDE接続に失敗．";
+                return 2;
+        }
+...
+```
+
+```
+DDEClose:
+        $$file = $Parent + ".pdf";
+        if(existfile($$file)){
+                ddeinitiate "acroviewR10","control";
+...
+```
+
+sleep を使いたくない場合は DDE で開くのはあきらめて Init: のところで
+
+```
+Init:
+...
+        if(#optype == 0){
+                if(#close)call DDEClose;
+                else call DDEOpen;
+...
+```
+
+と記述されているところを
+
+```
+Init:
+...
+        if(#optype == 0){
+                if(#close)call DDEClose;
+                else call DirectOpen;
+...
+```
+
+と変更して，開くときはシェルから直接起動して，閉じるときは DDE 通信をするという手もあります．
+
+Adobe Reader X には保護モード (\[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] でオン・オフが可能) があります．
+
+```
+
+```
+
+上記の方法で開く場合，保護モードがオフとオンの状態で，挙動が異なります (コンパイルしてファイルを表示する際にウィンドウがアクティブに表示される or されない)．
+
+保護モードがオンの場合にファイルを開いたときにアクティブなウィンドウにするには以下のように閉じるときにいったん終了させるという方法があります．
+
+```
+DDEClose:
+        $$file = $Parent + ".pdf";
+        if(existfile($$file)){
+                ddeinitiate "acroviewR10","control";
+                if(result){
+                        ddeexecute "[DocOpen(\"" + $$file + "\")]";
+                        ddeexecute "[DocClose(\"" + $$file + "\")]";
+                        ddeexecute "[AppExit()]";
+...
+```
+
+秀丸エディタ Version 8.02 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
 ***
 
@@ -84,6 +164,8 @@ Program Filesに出力されている場合は、エクスプローラで「互�
 　ファイル(F):　　　　　　フォルダ(D):
 
 ***
+
+TeX ファイルを編集しているときは補完候補が表示されます．
 
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
     (福中 公輔 さん)
