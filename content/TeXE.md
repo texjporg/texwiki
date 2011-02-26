@@ -193,7 +193,7 @@ Topic
 : control
 
 Macro
-: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0)\]
+: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]
 
 ### Dvi to Pdf {#w081339b}
 
