@@ -798,6 +798,8 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 
 LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [Sumatra PDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
 
+inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
+
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
