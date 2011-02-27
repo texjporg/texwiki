@@ -225,7 +225,7 @@ EasyTeX はエディタの設定をすることが可能です．
 ### pdfLaTeX {#m3a434b8}
 
 pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
+実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 pdflatex は日本語には対応していません．<br>
 
 ***
@@ -254,7 +254,7 @@ pdflatex は日本語には対応していません．<br>
 ### pdfepLaTeX {#x38829e5}
 
 eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
+実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
 
@@ -282,7 +282,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 ### pdfepLaTeX2 {#l0d22111}
 
 eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に pdfclose で PDF ファイルを閉じるので，手動で閉じる必要はありません．<br>
+実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
 
