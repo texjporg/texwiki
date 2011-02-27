@@ -242,7 +242,7 @@ pdflatex は日本語には対応していません．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; pdflatex "%n.tex" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; pdflatex "%n.tex" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
@@ -270,7 +270,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvipdfmx "%n.dvi" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvipdfmx "%n.dvi" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
@@ -298,7 +298,7 @@ eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdfopen --file="%n.pdf" &amp;&amp; pdfclose --file="%n.pdf" &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; eplatex -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file="%n.pdf"</ins><br>
 
 <br>
 
