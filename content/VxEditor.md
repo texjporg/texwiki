@@ -46,7 +46,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -98,7 +98,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
@@ -150,7 +150,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 作業フォルダ(F):<br><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pdfopen --file="$NAMEONLY.pdf" &amp;&amp; pdfclose --file="$NAMEONLY.pdf" &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" &#x7c; bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
 
 > <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
 >
