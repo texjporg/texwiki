@@ -122,24 +122,61 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 \[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
 
+#### cmd の場合 {#xf0ea728}
+
 ***
 
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>pdfLaTeX</ins>
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfLaTeX</ins>
 
-> 実行ファイル(E):<br><ins>cmd</ins>
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
-> 作業フォルダ(D):<br><br>
+　　　 作業フォルダ(D):<br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
+<br>
 
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
->
-> ***
->
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#d4bff0d2}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfLaTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; pdflatex "%n";if($?){pdfopen --file="%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + H</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 次のうちのどれかを実行
 
@@ -155,24 +192,61 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 \[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
 
+#### cmd の場合 {#q70367f0}
+
 ***
 
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX</ins>
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfepLaTeX</ins>
 
-> 実行ファイル(E):<br><ins>cmd</ins>
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
-> 作業フォルダ(D):<br><br>
+　　　 作業フォルダ(D):<br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
+<br>
 
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
->
-> ***
->
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#v07dc464}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfepLaTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex -kanji=sjis "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + J</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 次のうちのどれかを実行
 
@@ -194,24 +268,61 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 \[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
 
+#### cmd の場合 {#i301c321}
+
 ***
 
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>pdfepLaTeX2</ins>
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfepLaTeX2</ins>
 
-> 実行ファイル(E):<br><ins>cmd</ins>
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
-> 作業フォルダ(D):<br><br>
+　　　 作業フォルダ(D):<br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
+<br>
 
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
->
-> ***
->
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#l185cbd0}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfepLaTeX2</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex -kanji=sjis "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + K</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 次のうちのどれかを実行
 
@@ -227,24 +338,61 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 \[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
 
+#### cmd の場合 {#t22fd540}
+
 ***
 
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>pBibTeX</ins>
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pBibTeX</ins>
 
-> 実行ファイル(E):<br><ins>cmd</ins>
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=sjis "%b"</ins>
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=sjis "%b"</ins>
 
-> 作業フォルダ(D):<br><br>
+　　　 作業フォルダ(D):<br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+<br>
 
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
->
-> ***
->
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#z401ef69}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pBibTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex -kanji=sjis "%b"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 次のうちのどれかを実行
 
@@ -258,24 +406,61 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 \[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
 
+#### cmd の場合 {#qcd58ada}
+
 ***
 
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> 名前\["-"は区切り線\](N):<br><ins>Mendex</ins>
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>Mendex</ins>
 
-> 実行ファイル(E):<br><ins>cmd</ins>
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; mendex -S "%b"</ins>
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -S "%b"</ins>
 
-> 作業フォルダ(D):<br><br>
+　　　 作業フォルダ(D):<br>
 
-> ファイルの上書き保存(S):　　　　 キー(K):<br><span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + M</ins>
+<br>
 
-> ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>☐終了まで待機する(L)
->
-> ***
->
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + M</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#xb8cd138}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>Mendex</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -S "%b"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + M</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 次のうちのどれかを実行
 
