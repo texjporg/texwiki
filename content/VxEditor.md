@@ -36,7 +36,9 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 ***
 
-<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 設定
 
@@ -52,7 +54,9 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 >
 > ***
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+>
+> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 表示
 
@@ -88,7 +92,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 設定
 
@@ -104,7 +110,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 >
 > ***
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+>
+> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 表示
 
@@ -140,7 +148,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 設定
 
@@ -156,7 +166,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 >
 > ***
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+>
+> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 表示
 
@@ -192,7 +204,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 設定
 
@@ -208,7 +222,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 >
 > ***
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+>
+> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 表示
 
@@ -242,7 +258,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;">\[オプション\]\[自動実行\]\[文書タイプ\]</span>
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 設定
 
@@ -258,7 +276,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 >
 > ***
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[ツール\]</span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;">\[自動実行\]\[文書タイプ\]</span>
+> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+>
+> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
 > 表示
 
