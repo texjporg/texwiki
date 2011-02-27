@@ -583,7 +583,7 @@ make install
 
 ### dvipdfmx（旧 dvipdfm 日本語版）のインストール {#b872d2da}
 
-[dvipdfm \[Internet Archive\]](http://web.archive.org/web/20080512040759/gaspra.kettering.edu/dvipdfm/index.html)
+[dvipdfm](http://gaspra.kettering.edu/dvipdfm/)
 を平田さんが日本語化されました。
 [平田さんのサイト \[Internet Archive\]](http://web.archive.org/web/20020609175541/http://www.nn.iij4u.or.jp/~tutimura/hirata/)
 
