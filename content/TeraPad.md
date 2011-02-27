@@ -130,7 +130,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
@@ -163,7 +163,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
@@ -202,7 +202,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 > 実行ファイル(E):<br><ins>cmd</ins>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; pdfopen --file="%b.pdf" &amp;&amp; pdfclose --file="%b.pdf" &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" &#x7c; bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+> コマンドラインパラメータ(C):<br><ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 > 作業フォルダ(D):<br><br>
 
