@@ -358,7 +358,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + N</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -386,7 +386,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + N</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -396,7 +396,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + L を押す
+- Ctrl + Alt + N を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pBibTeX\]
 
