@@ -296,13 +296,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + L</ins><br>
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + N</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + L を押す
+- Ctrl + Alt + N を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[pBibTeX\]
 
