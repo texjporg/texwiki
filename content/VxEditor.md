@@ -40,39 +40,53 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
-> 設定
+　　　　設定
 
-> タイトル(T):<br><ins>pdfLaTeX</ins>
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfLaTeX</ins><br>
 
-> 実行ファイル(P):<br><ins>cmd</ins>
+<br>
 
-> 作業フォルダ(F):<br><br>
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+<br>
 
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
->
-> ***
->
-> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
->
-> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+　　　　　作業フォルダ(F):<br>
 
-> 表示
+<br>
 
-> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
 
-> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+<br>
 
-> ☐ツールバーに表示する(T)
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
 
-> アイコン(I):
+***
 
-> 起動
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> ☑実行時にテキストを保存する(S)
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
-> ショートカット(H):　<ins>Ctrl + Alt + H</ins>
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + H</ins><br>
 
 ***
 
@@ -96,39 +110,53 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
-> 設定
+　　　　設定
 
-> タイトル(T):<br><ins>pdfepLaTeX</ins>
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfepLaTeX</ins><br>
 
-> 実行ファイル(P):<br><ins>cmd</ins>
+<br>
 
-> 作業フォルダ(F):<br><br>
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+<br>
 
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
->
-> ***
->
-> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
->
-> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+　　　　　作業フォルダ(F):<br>
 
-> 表示
+<br>
 
-> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
 
-> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+<br>
 
-> ☐ツールバーに表示する(T)
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
 
-> アイコン(I):
+***
 
-> 起動
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> ☑実行時にテキストを保存する(S)
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
-> ショートカット(H):　<ins>Ctrl + Alt + J</ins>
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + J</ins><br>
 
 ***
 
@@ -152,39 +180,53 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
-> 設定
+　　　　設定
 
-> タイトル(T):<br><ins>pdfepLaTeX2</ins>
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfepLaTeX2</ins><br>
 
-> 実行ファイル(P):<br><ins>cmd</ins>
+<br>
 
-> 作業フォルダ(F):<br><br>
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins>
+<br>
 
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
->
-> ***
->
-> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
->
-> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+　　　　　作業フォルダ(F):<br>
 
-> 表示
+<br>
 
-> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
 
-> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+<br>
 
-> ☐ツールバーに表示する(T)
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
 
-> アイコン(I):
+***
 
-> 起動
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> ☑実行時にテキストを保存する(S)
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
-> ショートカット(H):　<ins>Ctrl + Alt + K</ins>
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + K</ins><br>
 
 ***
 
@@ -208,39 +250,53 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
-> 設定
+　　　　設定
 
-> タイトル(T):<br><ins>pBibTeX</ins>
+　　　　　タイトル(T):<br>
+　　　　　<ins>pBibTeX</ins><br>
 
-> 実行ファイル(P):<br><ins>cmd</ins>
+<br>
 
-> 作業フォルダ(F):<br><br>
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; pbibtex -kanji=sjis "$NAMEONLY"</ins>
+<br>
 
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
->
-> ***
->
-> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
->
-> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+　　　　　作業フォルダ(F):<br>
 
-> 表示
+<br>
 
-> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; pbibtex -kanji=sjis "$NAMEONLY"</ins><br>
 
-> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+<br>
 
-> ☐ツールバーに表示する(T)
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
 
-> アイコン(I):
+***
 
-> 起動
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> ☑実行時にテキストを保存する(S)
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
-> ショートカット(H):　<ins>Ctrl + Alt + L</ins>
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + L</ins><br>
 
 ***
 
@@ -262,39 +318,53 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
 
-> 設定
+　　　　設定
 
-> タイトル(T):<br><ins>Mendex</ins>
+　　　　　タイトル(T):<br>
+　　　　　<ins>Mendex</ins><br>
 
-> 実行ファイル(P):<br><ins>cmd</ins>
+<br>
 
-> 作業フォルダ(F):<br><br>
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
 
-> コマンドラインパラメータ(C):<br><ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -S "$NAMEONLY"</ins>
+<br>
 
-> <span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br><span style="color:#441177;">　　それらを実行することができます．</span>
->
-> ***
->
-> <span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
->
-> 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+　　　　　作業フォルダ(F):<br>
 
-> 表示
+<br>
 
-> ☑ツールを有効にする(E)<br>☑メインメニューに表示する(M)<br>☑ポップアップメニューに表示する(P)
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -S "$NAMEONLY"</ins><br>
 
-> ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span>
+<br>
 
-> ☐ツールバーに表示する(T)
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
 
-> アイコン(I):
+***
 
-> 起動
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
-> ☑実行時にテキストを保存する(S)
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
 
-> ショートカット(H):　<ins>Ctrl + Alt + M</ins>
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + M</ins><br>
 
 ***
 
