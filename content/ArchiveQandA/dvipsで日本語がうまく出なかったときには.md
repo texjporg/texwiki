@@ -24,7 +24,7 @@ pukiwiki: "ArchiveQandA/dvipsで日本語がうまく出なかったときには
 QAで実際に問題が生じた環境は以下のものでした。
 
 - OS   : Fedor13.i686
-- tex  : plaetx
+- tex  : platex
     - Version 3.141592-p3.1.10 (euc) (Web2C 7.5.6)) &lt; yumを用いてtexliveよりインストール
 - dvips:pdvips
     - p1.7a Copyright 2005 ASCII Corp.([www-ptex@ascii.co.jp](mailto:www-ptex@ascii.co.jp))
