@@ -131,7 +131,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -kanji=sjis -synctex=-1 -src-specials "%F"
+: -synctex=-1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
@@ -139,7 +139,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\mendex.exe
 
 引数
-: -S "%X.idx"
+: "%X.idx"
 
 ### BibTeX {#j33abf74}
 
@@ -147,7 +147,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\pbibtex.exe
 
 引数
-: -kanji=sjis "%X"
+: "%X"
 
 ### Dvi Viewer {#n4f1bf86}
 
