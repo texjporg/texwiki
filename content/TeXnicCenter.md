@@ -360,7 +360,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\eplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-kanji=sjis -src-specials -src -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-src-specials -src -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 
@@ -368,7 +368,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=sjis "%bm"</ins><br>
+<ins>"%bm"</ins><br>
 
 MakeIndex<br>
 
@@ -376,7 +376,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-S "%bm"</ins><br>
+<ins>"%bm"</ins><br>
 
 ***
 
@@ -397,7 +397,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\eplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-kanji=sjis -synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -405,7 +405,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=sjis "%bm"</ins><br>
+<ins>"%bm"</ins><br>
 
 MakeIndex<br>
 
@@ -413,7 +413,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-S "%bm"</ins><br>
+<ins>"%bm"</ins><br>
 
 ***
 
