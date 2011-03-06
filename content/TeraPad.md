@@ -205,7 +205,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -233,7 +233,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex -kanji=sjis "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -281,7 +281,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex -kanji=sjis "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -309,7 +309,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex -kanji=sjis "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -351,7 +351,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=sjis "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -379,7 +379,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex -kanji=sjis "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -419,7 +419,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -S "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; mendex "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -447,7 +447,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -S "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
