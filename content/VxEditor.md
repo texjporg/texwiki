@@ -238,6 +238,146 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
+### pdfeupLaTeX {#z539757a}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfeupLaTeX</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; updvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + U</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + U を押す
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
+- エディタ画面を右クリック → \[pdfeupLaTeX\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+### pdfeupLaTeX2 {#h1563ac2}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfeupLaTeX2</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + I</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + I を押す
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
+- エディタ画面を右クリック → \[pdfeupLaTeX2\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
 ### pBibTeX {#v9c2efca}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
@@ -296,15 +436,83 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + N</ins><br>
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + L</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + N を押す
+- Ctrl + Alt + L を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[pBibTeX\]
+
+### upBibTeX {#y2def110}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>upBibTeX</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; upbibtex "$NAMEONLY"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + O</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + O を押す
+- メニューの \[ツール(T)\] → \[upBibTeX\]
+- エディタ画面を右クリック → \[upBibTeX\]
 
 ### Mendex {#sfdae9af}
 
