@@ -332,6 +332,146 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
+### pdfepuLaTeX {#w969cf5c}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#z095ad6b}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; updvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + U</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#p6a3e1f4}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){updvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + U</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + U を押す
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+### pdfeupLaTeX2 {#b29609f2}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#k7839715}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX2</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + I</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#b555c069}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX2</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + I</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + I を押す
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
 ### pBibTeX {#h42e3045}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
@@ -358,7 +498,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + N</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -386,7 +526,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + N</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + L</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -396,9 +536,77 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + N を押す
+- Ctrl + Alt + L を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pBibTeX\]
+
+### upBibTeX {#tc3ac5c3}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#xa63a06b}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>upBibTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; upbibtex "%b"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#wda28ead}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>upBibTeX</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){upbibtex "%b"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + O を押す
+- メニューの \[ツール(T)\] → \[upBibTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[upBibTeX\]
 
 ### Mendex {#z894a071}
 
