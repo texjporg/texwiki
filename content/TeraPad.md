@@ -687,6 +687,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
     (綾小路 龍之介 さん) ライセンスは GNU Free Documentation License．
 
 - [Eee PC 901 にも TeX 環境](http://ngc1952.net/archives/category/tex)
+- [2011.3.8 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20110308)
 
 ## TeraPad で 表の作成 {#p12e5284}
 
