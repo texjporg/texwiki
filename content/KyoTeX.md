@@ -25,7 +25,7 @@ kyotex-mode は [xyzzy](/xyzzy/) 用の TeX/LaTeX/BibTeX 編集支援モード�
 
 - [kyotex-modeのインストール](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/install.html) を参照．
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [Cygwin](http://www.cygwin.com/) の bash から
+環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](http://www.mingw.org/) Shell (MSYS) や [Cygwin](http://www.cygwin.com/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
@@ -34,13 +34,13 @@ $ touch .xyzzy
 
 で作成可能です．
 
-Cygwin がインストールされていない場合は，環境変数 XYZZYHOME で設定されているフォルダで，テキスト ドキュメントを新規作成し，メモ帳で
+MinGW や Cygwin がインストールされていない場合は，環境変数 XYZZYHOME で設定されているフォルダで，テキスト ドキュメントを新規作成し，メモ帳で
 
 ```
 ".xyzzy"
 ```
 
-という名前で保存すれば作成可能です．
+のようにダブルクォーテーションを付けて保存すれば作成可能です．
 
 ### 基本設定 {#mab284ce}
 
