@@ -26,7 +26,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-- [Java SE Downloads - Sun Developer Network (SDN)](http://www.oracle.com/technetwork/java/javase/downloads/)
+- [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
 
