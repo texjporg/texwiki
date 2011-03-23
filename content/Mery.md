@@ -26,7 +26,7 @@ Mery は TeX の色分け，アウトライン解析，辞書ファイルによ�
 
 ## マクロ {#oa5f5cea}
 
-マクロを使って TeX ファイルをコンパイルすることが可能です．
+[サクラエディタ](</サクラエディタ/>) と同様に，マクロを使って TeX ファイルのコンパイルができます．
 
 ### pdfepLaTeX.js {#h14da8ca}
 
@@ -34,9 +34,10 @@ Mery は TeX の色分け，アウトライン解析，辞書ファイルによ�
 function main()
 {
   var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var f = document.Name;
-  var b = document.Name.replace(/\..+$/, "");
+  var b = fso.GetBaseName(f);
   var cmd = "cmd /c cd /d " + ["\"", c, "\""].join("") + " && echo exit | pdfdde & eplatex " + ["\"", f, "\""].join("") + " && dvipdfmx " + ["\"", b, ".dvi", "\""].join("") + " && pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
 
   document.Save();
