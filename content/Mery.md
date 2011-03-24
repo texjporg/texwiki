@@ -9,7 +9,11 @@ pukiwiki: "Mery"
 
 ## [Mery](http://www.haijin-boys.com/island/wiki/) {#l6f5ffa3}
 
+<img src="http://www.haijin-boys.com/island/wiki/images/logo.png" alt="Mery" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+<div style="clear:both"></div>
 
 ## Mery とは {#acb30ba1}
 
@@ -28,7 +32,11 @@ Mery は TeX の色分け，アウトライン解析，辞書ファイルによ�
 
 [サクラエディタ](</サクラエディタ/>) と同様に，マクロを使って TeX ファイルのコンパイルができます．
 
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\]
+
 ### pdfepLaTeX.js {#h14da8ca}
+
+***
 
 ```
 function main()
@@ -38,7 +46,12 @@ function main()
   var c = document.Path;
   var f = document.Name;
   var b = fso.GetBaseName(f);
-  var cmd = "cmd /c cd /d " + ["\"", c, "\""].join("") + " && echo exit | pdfdde & eplatex " + ["\"", f, "\""].join("") + " && dvipdfmx " + ["\"", b, ".dvi", "\""].join("") + " && pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "eplatex" + " " + ["\"", f, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
+  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
   document.Save();
   shell.Run(cmd, 1, true);
@@ -46,6 +59,30 @@ function main()
 
 main();
 ```
+
+***
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+J</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX.js　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
 
 ## 入力補完 {#p98d874e}
 
