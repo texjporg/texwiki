@@ -298,13 +298,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + U</ins><br>
+　　　　　 ショートカット(H):　<ins>Shift + Alt + J</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + U を押す
+- Shift + Alt + J を押す
 - メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
 - エディタ画面を右クリック → \[pdfeupLaTeX\]
 
@@ -368,13 +368,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + I</ins><br>
+　　　　　 ショートカット(H):　<ins>Shift + Alt + K</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + I を押す
+- Shift + Alt + K を押す
 - メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
 - エディタ画面を右クリック → \[pdfeupLaTeX2\]
 
@@ -506,13 +506,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + O</ins><br>
+　　　　　 ショートカット(H):　<ins>Shift + Alt + L</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + O を押す
+- Shift + Alt + L を押す
 - メニューの \[ツール(T)\] → \[upBibTeX\]
 - エディタ画面を右クリック → \[upBibTeX\]
 
