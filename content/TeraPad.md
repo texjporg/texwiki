@@ -358,7 +358,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + U</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + J</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -386,7 +386,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + U</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + J</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -396,7 +396,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + U を押す
+- Shift + Alt + J を押す
 - メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX\]
 
@@ -428,7 +428,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + I</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + K</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -456,7 +456,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + I</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + K</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -466,7 +466,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + I を押す
+- Shift + Alt + K を押す
 - メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2\]
 
@@ -566,7 +566,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + L</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -594,7 +594,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + L</ins>
 
 　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
 　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
@@ -604,7 +604,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + O を押す
+- Shift + Alt + L を押す
 - メニューの \[ツール(T)\] → \[upBibTeX\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[upBibTeX\]
 
