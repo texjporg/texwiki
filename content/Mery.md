@@ -19,7 +19,13 @@ pukiwiki: "Mery"
 
 Mery は Windows 7, Vista, XP で動作する国産でフリーのシンプルなテキストエディタです．
 
-Mery は TeX の色分け，アウトライン解析，辞書ファイルによる入力補完に対応しています．
+Mery は
+
+- TeX の色分け
+- 辞書ファイルによる入力補完
+- アウトライン解析
+
+に対応しています．
 
 - [Mery - Mery's Factory](http://www.haijin-boys.com/island/wiki/)
     - [更新履歴](http://www.haijin-boys.com/island/wiki/index.php?title=Mery%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)
@@ -105,3 +111,30 @@ section
 - \s を入力した後で Ctrl+Space を入力すると \section
 
 が補完されます．
+
+## アウトライン {#c4b6fe35}
+
+Mery にはアウトラインのプラグインが標準添付されています．
+
+TeX の 部・章・節・小節・小々節 にジャンプできるようにカスタマイズします．
+
+\[ツール(T)\]-\[プラグイン(P)\]-\[プラグインの設定(C)...\]
+
+プラグイン
+: Outline
+
+の \[プロパティ(P)\]
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>プロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+位置(<ins>P</ins>)：　<span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　▼\]</span><br>
+タイプ(<ins>T</ins>)： <span style="color:Black;background-color:#EEEEEE;">\[カスタム　　　　　　　▼\]</span><br>
+レベル<ins>1</ins>： <ins>\\\part</ins>　　　　　　　　　　　　　　　　　　　　☑正規表現(R)<br>
+レベル<ins>2</ins>： <ins>\\\chapter</ins>　　　　　　　　　　　　　　　　　　☑正規表現(E)<br>
+レベル<ins>3</ins>： <ins>\\\section</ins>　　　　　　　　　　　　　　　　　　☑正規表現(G)<br>
+レベル<ins>4</ins>： <ins>\\\subsection</ins>　　　　　　　　　　　　　　　　☑正規表現(U)<br>
+レベル<ins>5</ins>： <ins>\\\subsubsection</ins>　　　　　　　　　　　　　　☑正規表現(L)<br>
+
+***
