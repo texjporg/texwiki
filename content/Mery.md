@@ -311,6 +311,171 @@ main();
 
 ***
 
+### pBibTeX.js {#qbbeae1b}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var bibtex = "pbibtex" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + bibtex;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pBibTeX.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+N</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfLaTeX.js<br>
+　　　pdfepLaTeX.js<br>
+　　　pdfepLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+### upBibTeX.js {#v9f70ec9}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + bibtex;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で upBibTeX.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+N</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfLaTeX.js<br>
+　　　pdfepLaTeX.js<br>
+　　　pdfepLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pBibTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">upBibTeX.js　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+### Mendex.js {#ff7fca42}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var makeindex = "mendex" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + makeindex;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で Mendex.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+M</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfLaTeX.js<br>
+　　　pdfepLaTeX.js<br>
+　　　pdfepLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pBibTeX.js<br>
+　　　upBibTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">Mendex.js　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
 ## 入力補完 {#p98d874e}
 
 Mery には TeX の入力補完機能があります．
