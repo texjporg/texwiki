@@ -38,6 +38,8 @@ Mery は
 
 [サクラエディタ](</サクラエディタ/>) と同様に，マクロを使って TeX ファイルのコンパイルができます．
 
+マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
+
 ### pdfLaTeX.js {#u17bbe76}
 
 ***
@@ -78,7 +80,7 @@ main();
 <br>
 
 　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+H</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
 
 <br>
 
@@ -142,6 +144,61 @@ main();
 
 ***
 
+### pdfepLaTeX2.js {#gd894185}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "eplatex" + " " + ["\"", f, "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeX2.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+K</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfLaTeX.js<br>
+　　　pdfepLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX2.js 　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
 ### pdfeupLaTeX.js {#hdc45060}
 
 ***
@@ -190,7 +247,65 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeX.js<br>
 　　　pdfepLaTeX.js<br>
+　　　pdfepLaTeX2.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX.js　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+### pdfeupLaTeX2.js {#r820202a}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "euplatex" + " " + ["\"", f, "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+K</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfLaTeX.js<br>
+　　　pdfepLaTeX.js<br>
+　　　pdfepLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
