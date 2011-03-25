@@ -88,13 +88,13 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + H</ins><br>
+　　　　　 ショートカット(H):　<ins>Shift + Alt + H</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + H を押す
+- Shift + Alt + H を押す
 - メニューの \[ツール(T)\] → \[pdfLaTeX\]
 - エディタ画面を右クリック → \[pdfLaTeX\]
 
@@ -438,13 +438,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Ctrl + Alt + L</ins><br>
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + N</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Ctrl + Alt + L を押す
+- Ctrl + Alt + N を押す
 - メニューの \[ツール(T)\] → \[pBibTeX\]
 - エディタ画面を右クリック → \[pBibTeX\]
 
@@ -506,13 +506,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 　　　　　 ☑実行時にテキストを保存する(S)<br>
 
-　　　　　 ショートカット(H):　<ins>Shift + Alt + L</ins><br>
+　　　　　 ショートカット(H):　<ins>Shift + Alt + N</ins><br>
 
 ***
 
 次のうちのどれかを実行
 
-- Shift + Alt + L を押す
+- Shift + Alt + N を押す
 - メニューの \[ツール(T)\] → \[upBibTeX\]
 - エディタ画面を右クリック → \[upBibTeX\]
 
