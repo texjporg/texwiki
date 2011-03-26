@@ -585,7 +585,7 @@ make install
 
 [dvipdfm](http://gaspra.kettering.edu/dvipdfm/)
 を平田さんが日本語化されました。
-[平田さんのサイト \[Internet Archive\]](http://web.archive.org/web/20020609175541/http://www.nn.iij4u.or.jp/~tutimura/hirata/)
+[平田さんのサイト \[Internet Archive\]](http://replay.waybackmachine.org/20050618080951/http://www.nn.iij4u.or.jp/~tutimura/hirata/)
 
 CJK 版の開発は [The DVIPDFMx Project](http://project.ktug.or.kr/dvipdfmx/) に引き継がれました。
 このページから最新のソースをいただいてきて次のようにインストールします。
@@ -740,7 +740,7 @@ jun101-l-v    V kozgostd-light.otf
 [otf パッケージ](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?OTF) については別ページにしました。
 
 > Ignoring stream with with multiple segments というエラーが出たら
-> [dvipdfm の日本語化 (Internet Archive)](http://web.archive.org/web/20020609175541/http://www.nn.iij4u.or.jp/~tutimura/hirata/)
+> [dvipdfm の日本語化 \[Internet Archive\]](http://replay.waybackmachine.org/20050618080951/http://www.nn.iij4u.or.jp/~tutimura/hirata/)
 > のページにある patch-concat-stream.diff をあててください。
 > Makefile.in だけエラーが出ますので，パッチを当てた後で Makefile.in
 > をエディタで開き，dvipdfmx_SOURCES に filter.c concat.c を追加，dvipdfmx_OBJECTS に filter.o concat.o
