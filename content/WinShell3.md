@@ -795,9 +795,9 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 - [リンク: Windowsでdvioutプレビュー時にできる邪魔なファイルをスッキリさせる。](http://d.hatena.ne.jp/okmount/20101004)
 - [WindowsでLaTeXを使うときの.pbmファイルを削除する方法](http://nlab.ee.tokushima-u.ac.jp/nlab/haruna/memo/pbm.html)
 
-## Sumatra PDF との連携 (forward and inverse search) {#o54574a6}
+## SumatraPDF との連携 (forward and inverse search) {#o54574a6}
 
-LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [Sumatra PDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
+LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
@@ -1218,7 +1218,7 @@ UTF-8 を使用したい方は，[WinShell 旧バージョン](http://palmer.wel
 
 <br>
 
-　　プログラム名　　<ins>Sumatra PDF</ins><br>
+　　プログラム名　　<ins>SumatraPDF</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
@@ -1260,7 +1260,7 @@ UTF-8 を使用したい方は，[WinShell 旧バージョン](http://palmer.wel
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　☑ DOS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvipdfmx<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Adobe Reader<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Sumatra PDF<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　SumatraPDF<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 9　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
 　　コマンドライン 　<ins>"%s.ps"</ins><br>
@@ -1291,7 +1291,7 @@ UTF-8 を使用したい方は，[WinShell 旧バージョン](http://palmer.wel
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　☑ DOS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvipdfmx<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Adobe Reader<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Sumatra PDF<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　SumatraPDF<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ps2pdf<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 10　　　　　　　　　　　　　　</span><br>
 　　コマンドライン 　<ins>-U "%s.idx"</ins><br>
