@@ -180,7 +180,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．
 
-PDF Reader は Adobe Reader X の他に Sumatra PDF 1.2, Foxit J-Reader 4.2, PDF-XChange Viewer 2.5 などに対応しています．
+PDF Reader は Adobe Reader X の他に SumatraPDF 1.2, Foxit J-Reader 4.2, PDF-XChange Viewer 2.5 などに対応しています．
 
 ### TeX環境設定の保存 {#lf745908}
 
