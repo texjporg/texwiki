@@ -104,7 +104,7 @@ TX フォントのバージョンを上げたなら
 ### インストール（Macintosh） {#w5aece91}
 
 内山さんが
-[TXFONTSをMacpTeXで利用するための情報 \[Internet Archive\]](http://web.archive.org/web/20070822165215/http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
+[TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
 という完璧な解説を書いてくださっています。
 ぜひそちらをご覧ください。
 
