@@ -171,9 +171,9 @@ Topic
 Macro
 : \[PageOpen(# %l %F)\]\[WinNormal\]\[FileOpen(%D)\]
 
-#### Sumatra PDF {#ff11f3ec}
+#### SumatraPDF {#ff11f3ec}
 
-DVI ファイルを表示する必要がない場合は，Dvi Viewer に Sumatra PDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
+DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
 
 - Dvi Viewer
 
@@ -230,7 +230,7 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 - 追加/変更
 
 表示名
-: Sumatra PDF
+: SumatraPDF
 
 コマンド
 : C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf"
@@ -249,7 +249,7 @@ PDF ファイルはきちんと作成されていますが，プレビューが�
 パス
 : <br>
 
-を \[適用\] することで \[ツール(T)\]-\[Sumatra PDF\] もしくは \[ツール(T)\]-\[Adobe Reader\] から PDF ファイルを表示することが可能になります．
+を \[適用\] することで \[ツール(T)\]-\[SumatraPDF\] もしくは \[ツール(T)\]-\[Adobe Reader\] から PDF ファイルを表示することが可能になります．
 
 ショートカットキーを割り当てることも可能です．
 
