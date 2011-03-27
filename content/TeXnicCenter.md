@@ -37,7 +37,7 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 - TeX のコマンドを色分けできます．
 - TeX のコマンドを補完してくれます．
 - 折りたたみが可能です．
-- Sumatra PDF を使用すれば，SyncTeX による forward and inverse search も可能です．
+- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
 ## ダウンロードとインストール {#rf294e94}
 
@@ -241,7 +241,7 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-[TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが Sumatra PDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)<br>
+[TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)<br>
 
 <span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
@@ -662,7 +662,7 @@ LaTeX => PS => PDF<br>
 LuaLaTeX => PDF<br>
 XeLaTeX => PDF<br>
 
-#### Sumatra PDF {#pdc24230}
+#### SumatraPDF {#pdc24230}
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
