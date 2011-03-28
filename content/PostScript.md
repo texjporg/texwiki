@@ -25,8 +25,38 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
-- [PS_View](http://psview.sourceforge.net/)
-    環境変数 GS_DLL に Ghostscript の dll ファイル (C:\gs\gs9.01\bin\gsdll32.dll) を設定して，PATH に ps_view のディレクトリを設定すれば，psv.exe から ps ファイルが開けます．
+- [PS_View](http://psview.sourceforge.net/) Ghostscript を使って PS/PDF ファイルを表示するプレビューア
+    - 起動するには，psv.wx.lua の gsargs の dllloc
+
+```
+local gsargs = {
+  args= {},      -- arguments to ghostscript (wihout paths)
+  dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
+```
+
+> を Ghostscript の dll ファイル (C:\gs\gs9.01\bin\gsdll32.dll) に修正します．
+
+> ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
+
+```
+local gsargs = {
+  args= {},      -- arguments to ghostscript (wihout paths)
+  dllloc= "C:/gs/gs9.01/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+```
+
+- 日本語を表示するには，psv.wx.lua の PSV_DftGsPars
+
+```
+local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
+```
+
+> を
+
+```
+local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
+```
+
+> に修正します．
 
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
