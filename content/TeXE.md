@@ -157,7 +157,7 @@ Macroのパラメータ<br>
 : C:\w32tex\dviout\dviout.exe
 
 引数
-: -1 "%D" "# %l "%F""
+: -1 "%D" "# %l %F"
 
 DDE
 : ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
@@ -193,7 +193,7 @@ Topic
 : control
 
 Macro
-: \[Open("%X.pdf",0,1,1)\]\[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]
+: \[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]\[Open("%X.pdf",0,1,1)\]
 
 ### Dvi to Pdf {#w081339b}
 
