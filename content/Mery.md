@@ -502,7 +502,17 @@ section
 
 Mery にはアウトラインのプラグインが標準添付されています．
 
-TeX の 部・章・節・小節・小々節 にジャンプできるようにカスタマイズします．
+LaTeX の
+
+- 部 (\part)
+- 章 (\chapter)
+- 節 (\section)
+- 小節 (\subsection)
+- 小々節 (\subsubsection)
+- 段落 (\paragraph)
+- 小段落 (\subparagraph)
+
+にジャンプできるようにカスタマイズします．
 
 \[ツール(T)\]-\[プラグイン(P)\]-\[プラグインの設定(C)...\]
 
@@ -522,5 +532,7 @@ TeX の 部・章・節・小節・小々節 にジャンプできるように�
 レベル<ins>3</ins>： <ins>\\\section</ins>　　　　　　　　　　　　　　　　　　☑正規表現(G)<br>
 レベル<ins>4</ins>： <ins>\\\subsection</ins>　　　　　　　　　　　　　　　　☑正規表現(U)<br>
 レベル<ins>5</ins>： <ins>\\\subsubsection</ins>　　　　　　　　　　　　　　☑正規表現(L)<br>
+レベル<ins>6</ins>： <ins>\\\paragraph</ins>　　　　　　　　　　　　　　　　☑正規表現(A)<br>
+レベル<ins>7</ins>： <ins>\\\subparagraph</ins>　　　　　　　　　　　　　　☑正規表現(R)<br>
 
 ***
