@@ -128,7 +128,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　　　　　言語<br>
 　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
 　　　　　　◯英語<br>
-　　　　　TeXコンパイラ　　　　　　 　 　☐source special<br>
+　　　　　TeXコンパイラ　　　　　　 　 　☑source special<br>
 　　　　　 pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
 　　　　　<span style="color:White;background-color:#1188FF;"> epLaTeX　　　 　 　</span>　　　 　 　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
 　　　　　 jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
@@ -139,6 +139,8 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 TeX コンパイラを指定します．
 
 epLaTeX を選択します．
+
+source special にチェックを入れます．
 
 ### Spell {#z664fb17}
 
