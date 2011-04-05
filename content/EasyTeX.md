@@ -162,6 +162,40 @@ source special にチェックを入れます．
 
 ### PS/PDF {#ubd35880}
 
+■ SumatraPDF の場合 (32bit Windows)
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+
+***
+
+■ SumatraPDF の場合 (64bit Windows)
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+
+***
+
+■ Adobe Reader X の場合 (32bit Windows)
+
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
@@ -176,13 +210,29 @@ source special にチェックを入れます．
 
 ***
 
-GhostView (gsview32.exe) と PDF Reader (AcroRd32.exe) のフルパスを指定します．
+■ Adobe Reader X の場合 (64bit Windows)
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+
+***
+
+GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe や AcroRd32.exe) のフルパスを指定します．
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
 EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．
 
-PDF Reader は Adobe Reader X の他に SumatraPDF 1.2, Foxit J-Reader 4.2, PDF-XChange Viewer 2.5 などに対応しています．
+PDF Reader は SumatraPDF, Adobe Reader, Foxit Reader, PDF-XChange Viewer に対応しています．
 
 ### TeX環境設定の保存 {#lf745908}
 
@@ -224,7 +274,7 @@ EasyTeX はエディタの設定をすることが可能です．
 
 設定したツールはメニューの \[ﾂｰﾙ(A)\] から選択できます．
 
-### pdfLaTeX {#m3a434b8}
+### pdfLaTeXA {#m3a434b8}
 
 pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
@@ -235,7 +285,7 @@ pdflatex は日本語には対応していません．<br>
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeX</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeXA</ins><br>
 　 program1<br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -253,7 +303,7 @@ pdflatex は日本語には対応していません．<br>
 
 ***
 
-### pdfepLaTeX {#x38829e5}
+### pdfepLaTeXA {#x38829e5}
 
 eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
@@ -263,7 +313,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeXA</ins><br>
 　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -281,7 +331,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 
 ***
 
-### pdfepLaTeX2 {#l0d22111}
+### pdfepLaTeX2A {#l0d22111}
 
 eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
@@ -291,7 +341,7 @@ eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX2</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX2A</ins><br>
 　 program1<br>
 　<span style="color:White;background-color:#1188FF;"> program2　</span><br>
 　 program3　　　　　プログラム<br>
