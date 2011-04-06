@@ -188,10 +188,10 @@ C:\usr\local\share\xyzzy\xyzzycli.exe^s-g %d "%s"
 
 と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
 
-さてコンパイルですが，eplatex に src オプションを付けて実行します。すなわち，
+さてコンパイルですが，eplatex に -src-specials オプションを付けて実行します。すなわち，
 
 ```
-eplatex -src
+eplatex -src-specials
 ```
 
 を実行するようにします。
@@ -199,7 +199,7 @@ eplatex -src
 後述する [KaTeX](#xykb6f8d) を使っているのであれば，~/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "eplatex -src")
+(setq elisp::tex-command "eplatex -src-specials")
 ```
 
 と書いておきます。
