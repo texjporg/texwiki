@@ -360,7 +360,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\eplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-src-specials -src -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-src-specials -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 
