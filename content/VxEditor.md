@@ -26,7 +26,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 ツールの設定をすると TeraPad, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
-### pdfLaTeX {#jef6ef8d}
+### pdfLaTeXA {#jef6ef8d}
 
 <em>※注意</em>
 
@@ -45,7 +45,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfLaTeX</ins><br>
+　　　　　<ins>pdfLaTeXA</ins><br>
 
 <br>
 
@@ -95,12 +95,12 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 次のうちのどれかを実行
 
 - Shift + Alt + H を押す
-- メニューの \[ツール(T)\] → \[pdfLaTeX\]
-- エディタ画面を右クリック → \[pdfLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
+- エディタ画面を右クリック → \[pdfLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeX {#v2edf4e6}
+### pdfepLaTeXA {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -115,7 +115,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfepLaTeX</ins><br>
+　　　　　<ins>pdfepLaTeXA</ins><br>
 
 <br>
 
@@ -165,12 +165,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX\]
-- エディタ画面を右クリック → \[pdfepLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeXA\]
+- エディタ画面を右クリック → \[pdfepLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeX2 {#fcfb987f}
+### pdfepLaTeX2A {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -185,7 +185,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfepLaTeX2</ins><br>
+　　　　　<ins>pdfepLaTeX2A</ins><br>
 
 <br>
 
@@ -235,12 +235,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX2\]
-- エディタ画面を右クリック → \[pdfepLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX2A\]
+- エディタ画面を右クリック → \[pdfepLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX {#z539757a}
+### pdfeupLaTeXA {#z539757a}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -255,7 +255,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX</ins><br>
+　　　　　<ins>pdfeupLaTeXA</ins><br>
 
 <br>
 
@@ -305,12 +305,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
-- エディタ画面を右クリック → \[pdfeupLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeXA\]
+- エディタ画面を右クリック → \[pdfeupLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2 {#h1563ac2}
+### pdfeupLaTeX2A {#h1563ac2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -325,7 +325,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX2</ins><br>
+　　　　　<ins>pdfeupLaTeX2A</ins><br>
 
 <br>
 
@@ -375,8 +375,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
-- エディタ画面を右クリック → \[pdfeupLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2A\]
+- エディタ画面を右クリック → \[pdfeupLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
