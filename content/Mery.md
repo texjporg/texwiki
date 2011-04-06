@@ -54,7 +54,7 @@ function main()
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", f, "\""].join("");
-  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
@@ -106,7 +106,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "eplatex" + " " + ["\"", f, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
-  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -160,7 +160,7 @@ function main()
   var latex = "eplatex" + " " + ["\"", f, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -214,7 +214,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "euplatex" + " " + ["\"", f, "\""].join("");
   var dvipdfm = "updvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
-  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -270,7 +270,7 @@ function main()
   var latex = "euplatex" + " " + ["\"", f, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file=" + ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
