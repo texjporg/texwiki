@@ -59,7 +59,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -129,7 +129,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -199,7 +199,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -269,7 +269,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; updvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; updvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -339,7 +339,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file="$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
