@@ -135,7 +135,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -163,7 +163,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; pdflatex "%n";if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; pdflatex "%n";if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -205,7 +205,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -233,7 +233,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -281,7 +281,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -309,7 +309,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -351,7 +351,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; updvipdfmx "%b.dvi" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; updvipdfmx "%b.dvi" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -379,7 +379,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){updvipdfmx "%b.dvi"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){updvipdfmx "%b.dvi"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -421,7 +421,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file="%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -449,7 +449,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file="%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
