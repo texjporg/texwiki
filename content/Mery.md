@@ -40,7 +40,7 @@ Mery は
 
 マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
 
-### pdfLaTeX.js {#u17bbe76}
+### pdfLaTeXA.js {#u17bbe76}
 
 ***
 
@@ -67,7 +67,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeX.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeXA.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -85,13 +85,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfLaTeX.js 　　　　　　　　　　　　　　　</span><br>
+　　　<span style="color:White;background-color:#1188FF;">pdfLaTeXA.js 　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfepLaTeX.js {#h14da8ca}
+### pdfepLaTeXA.js {#h14da8ca}
 
 ***
 
@@ -119,7 +119,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeX.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeXA.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -137,14 +137,14 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX.js　　　　　　　　　　　　　　</span><br>
+　　　pdfLaTeXA.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeXA.js　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfepLaTeX2.js {#gd894185}
+### pdfepLaTeX2A.js {#gd894185}
 
 ***
 
@@ -173,7 +173,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeX2.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeX2A.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -191,15 +191,15 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX2.js 　　　　　　　　　　　　　</span><br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX2A.js 　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfeupLaTeX.js {#hdc45060}
+### pdfeupLaTeXA.js {#hdc45060}
 
 ***
 
@@ -227,7 +227,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeXA.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -245,16 +245,16 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　pdfepLaTeX2.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX.js　　　　　　　　　　　　　</span><br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　pdfepLaTeX2A.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeXA.js　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfeupLaTeX2.js {#r820202a}
+### pdfeupLaTeX2A.js {#r820202a}
 
 ***
 
@@ -283,7 +283,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2A.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -301,11 +301,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　pdfepLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2.js　　　　　　　　　　　　　</span><br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　pdfepLaTeX2A.js<br>
+　　　pdfeupLaTeXA.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2A.js　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -354,11 +354,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　pdfepLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　pdfepLaTeX2A.js<br>
+　　　pdfeupLaTeXA.js<br>
+　　　pdfeupLaTeX2A.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -408,11 +408,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　pdfepLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　pdfepLaTeX2A.js<br>
+　　　pdfeupLaTeXA.js<br>
+　　　pdfeupLaTeX2A.js<br>
 　　　pBibTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">upBibTeX.js　　　　　　　　　　　　　　　　</span><br>
 
@@ -463,11 +463,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeX.js<br>
-　　　pdfepLaTeX.js<br>
-　　　pdfepLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeXA.js<br>
+　　　pdfepLaTeXA.js<br>
+　　　pdfepLaTeX2A.js<br>
+　　　pdfeupLaTeXA.js<br>
+　　　pdfeupLaTeX2A.js<br>
 　　　pBibTeX.js<br>
 　　　upBibTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">Mendex.js　　　　　　　　　　　　　　　　　</span><br>
