@@ -112,7 +112,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ツールの設定をすると VxEditor, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
-### pdfLaTeX {#m56b7465}
+### pdfLaTeXA {#m56b7465}
 
 <em>※注意</em>
 
@@ -129,7 +129,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfLaTeX</ins>
+　　　 <ins>pdfLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
@@ -157,7 +157,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfLaTeX</ins>
+　　　 <ins>pdfLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
@@ -181,12 +181,12 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 次のうちのどれかを実行
 
 - Shift + Alt + H を押す
-- メニューの \[ツール(T)\] → \[pdfLaTeX\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeX {#m290fc57}
+### pdfepLaTeXA {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -199,7 +199,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX</ins>
+　　　 <ins>pdfepLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
@@ -227,7 +227,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX</ins>
+　　　 <ins>pdfepLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
@@ -251,8 +251,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -262,7 +262,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 1. Ctrl + Alt + J を押すと PDF ファイルが作成され，表示されます．
 1. もう一度 Ctrl + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
-### pdfepLaTeX2 {#g1f54992}
+### pdfepLaTeX2A {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -275,7 +275,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX2</ins>
+　　　 <ins>pdfepLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
@@ -303,7 +303,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX2</ins>
+　　　 <ins>pdfepLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
@@ -327,12 +327,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX2\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfepLaTeX2A\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepuLaTeX {#w969cf5c}
+### pdfepuLaTeXA {#w969cf5c}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -345,7 +345,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX</ins>
+　　　 <ins>pdfeupLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
@@ -373,7 +373,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX</ins>
+　　　 <ins>pdfeupLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
@@ -397,12 +397,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2 {#b29609f2}
+### pdfeupLaTeX2A {#b29609f2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -415,7 +415,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2</ins>
+　　　 <ins>pdfeupLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
@@ -443,7 +443,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2</ins>
+　　　 <ins>pdfeupLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
@@ -467,8 +467,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2A\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
