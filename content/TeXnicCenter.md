@@ -35,7 +35,7 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 ### 特徴 {#c8ac578a}
 
 - TeX のコマンドを色分けできます．
-- TeX のコマンドを補完してくれます．
+- TeX のコマンドを補完してくれます．(Ctrl + Space)
 - 折りたたみが可能です．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
@@ -49,7 +49,17 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 
 バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．[^1]
 
-Encoding は ANSI[^2], UTF-8, UTF-8 with BOM, UTF-16, UTF-16 Big Endian, UTF-32, UTF-32 Big Endian に対応しています．
+Encoding は
+
+- ANSI (日本語版 Windows では Shift_JIS)
+- UTF-8
+- UTF-8 with BOM
+- UTF-16
+- UTF-16 Big Endian
+- UTF-32
+- UTF-32 Big Endian
+
+に対応しています．
 
 [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
 から TXCSetup_2Alpha3.exe をダウンロードします．
@@ -828,6 +838,7 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 
 ## 関連リンク {#r73017f2}
 
+- [工大院生の学生メモ : Texniccenter](http://blog.livedoor.jp/gastttt3678/archives/2846954.html)
 - [LaTeX Community &bull; View topic - Adobe Reader 10 and viewing error](http://www.latex-community.org/forum/viewtopic.php?f=31&t=10857)
 - [LaTeX Community &bull; View topic - Texniccenter + Adobe Reader 9 Problem](http://www.latex-community.org/forum/viewtopic.php?f=35&t=8586)
 - [TexnicCenter and Adobe Reader 10 / X](http://www.agmonim.com/2010/12/texniccenter-and-adobe-reader-10-x/)
@@ -835,4 +846,3 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 - [DDE Message of Acrobat and Adobe Reader](http://acrobat-dde.nnn2.com/)
 
 [^1]: ただし，日本語入力中は文字が小さく表示されてしまい，あまり快適ではありません．普段は英語で書いて，たまに日本語を使うという人向きかもしれません．
-[^2]: Shift_JIS が使えます．
