@@ -19,24 +19,44 @@ pukiwiki: "hyperref"
 
 ### 指定可能なオプション {#za8c61cb}
 
-プリアンプルに\usepackage\[オプション\]{hyperref}として、オプションを指定する。例えば、下記のようにする
+プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
+
+例えば，下記のようにします．
 
 ```
-\usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
+\usepackage[dvipdfmx,%
+ bookmarks=true,%
+ bookmarksnumbered=true,%
+ colorlinks=true,%
  pdftitle={LaTeX研修課程},%
- pdfsubject={hyperref入門・演習},%
  pdfauthor={ななしのごんべぇ},%
- pdfkeywords={TeX; dvipdfmx; hyperref; color;},%
- colorlinks=true]{hyperref}
+ pdfsubject={hyperref入門・演習},%
+ pdfkeywords={TeX; dvipdfmx; hyperref; color;}]{hyperref}
 ```
 
-または、
+または， \hypersetup{オプション} を使用して
 
 ```
-\hypersetup{オプション}
+\usepackage[dvipdfmx]{hyperref}
+\hypersetup{%
+ bookmarks=true,%
+ bookmarksnumbered=true,%
+ colorlinks=true,%
+ pdftitle={LaTeX研修課程},%
+ pdfauthor={ななしのごんべぇ},%
+ pdfsubject={hyperref入門・演習},%
+ pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
 ```
 
-とすることも可能。
+とすることも可能です．
+
+eplatex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
+
+```
+\usepackage{atbegshi}
+\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+```
 
 <table>
 <thead>
