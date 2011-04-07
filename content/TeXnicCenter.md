@@ -407,7 +407,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\eplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -443,7 +443,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -479,7 +479,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -515,7 +515,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\xelatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
