@@ -70,7 +70,7 @@ WinShell には
 
 - [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)
 - [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
-- [WinShell 旧バージョン](http://palmer.wellesley.edu/protext/protext-1.3/)
+- [WinShell 3.1 (旧バージョン)](http://stanag4172.m13.coreserver.jp/blog/archives/154)
     <!-- -[[LaTeX Install/WinShell - PukiWiki:http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell]] (旧バージョン) -->
 
 上記のサイトから WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．<br>
@@ -1021,7 +1021,7 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイ
 
 ShiftJIS (Shift_JIS) では発生しませんでした．
 
-UTF-8 を使用したい方は，[WinShell 旧バージョン](http://palmer.wellesley.edu/protext/protext-1.3/) をダウンロードしてください．
+UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stanag4172.m13.coreserver.jp/blog/archives/154) をダウンロードしてください．
 
 [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
