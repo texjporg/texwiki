@@ -92,7 +92,7 @@ WZ6 の LaTeX に関する機能は以下のページを参照してください
 > - Windows 95, 98, Me には対応していません。
 > - Windows NT, 2000 での動作はサポート対象外です。
 
-## WZ EDITOR 4, 5 {#ma420665}
+## WZ EDITOR 5, 4 {#ma420665}
 
 [<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
 
@@ -100,7 +100,7 @@ WZ6 の LaTeX に関する機能は以下のページを参照してください
 
 - [p白鳥 (ぱくちょう) pHackTeX](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm) (水谷 亘 さん) 野鳥系マクロ。ライセンスは GPL。
 
-## WZ EDITOR 1, 2, 3 {#vb048c09}
+## WZ EDITOR 3, 2, 1 {#vb048c09}
 
 [<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
 
