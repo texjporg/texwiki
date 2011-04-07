@@ -506,11 +506,11 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\w32tex\editor\easytex3233\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3233\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\w32tex\editor\easytex3233\EasyTeX.exe
+`easytex easytex +%d %s``C:\easytex3233\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
