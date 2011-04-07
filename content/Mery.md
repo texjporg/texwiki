@@ -536,3 +536,21 @@ LaTeX の
 レベル<ins>7</ins>： <ins>\\\subparagraph</ins>　　　　　　　　　　　　　　☑正規表現(R)<br>
 
 ***
+
+## コマンドライン引数 {#uf77c708}
+
+- 「/l 行番号 ファイル名」でそのファイルの指定行で開く。
+- 「/fd」でファイルから検索ダイアログ表示。
+- 「/ti」でタスクトレイアイコンで起動（スタートアップとかにショートカット作るため）
+
+## SumatraPDF との連携 (inverse search) {#ra6f502f}
+
+```
+C:\Mery\Mery.exe /l %l "%f"
+```
+
+## dviout との連携 (inverse search) {#fee7abf9}
+
+```
+C:\Mery\Mery.exe^s /l %d "%s"
+```
