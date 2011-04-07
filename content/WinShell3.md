@@ -290,7 +290,7 @@ eplatex.exe (うまくいかなければフルパスで指定してください�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-synctex=-1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
+　　コマンドライン 　<ins>-synctex=1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -829,6 +829,10 @@ English にしておかないと，文字が大部分表示されないことが
 において WinShell 附属のマニュアルを日本語訳して公開しています。
 （← これは 3.0 附属のものです。現行のバージョンとは多少違いがあります）
 
+### 補完機能 {#k8741d37}
+
+Ctrl + Space でキーワードの補完ができます．
+
 ### コメントイン・コメントアウト機能 {#wsunk293}
 
 範囲選択後 ［編集］ → ［注釈による無効化/無効化の解除］ （言語が English なら
@@ -861,7 +865,7 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 
 ## SumatraPDF との連携 (forward and inverse search) {#o54574a6}
 
-LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
+LaTeX コマンドのコマンドラインに -synctex=1 もしくは -synctex=-1 を追加し，PDFView を [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
@@ -1079,7 +1083,7 @@ UTF-8 を使用したい方は，[WinShell 旧バージョン](http://palmer.wel
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-kanji=utf8 -synctex=-1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
+　　コマンドライン 　<ins>-kanji=utf8 -synctex=1 -src-specials -interaction=nonstopmode "%s.tex"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
