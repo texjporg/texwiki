@@ -131,7 +131,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -synctex=-1 -src-specials "%F"
+: -synctex=1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
