@@ -108,7 +108,7 @@ OS によって wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ となります）に，
 
 ```
 [init]
-homeDir=C:/usr/local/share/xyzzy/usr/UserName/wxp
+homeDir=C:/xyzzy/usr/UserName/wxp
 ```
 
 のように末尾に追記しておきます（後述するマクロを使うためにも，
@@ -183,7 +183,7 @@ xyzzy 標準のキーバインドと Windows キーバインドの切り替え�
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-C:\usr\local\share\xyzzy\xyzzycli.exe^s-g %d "%s"
+C:\xyzzy\xyzzycli.exe^s-g %d "%s"
 ```
 
 と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
@@ -205,7 +205,7 @@ eplatex -src-specials
 と書いておきます。
 
 dviout for Windows でマウスカーソルが矢印になっているときに画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。
-（上の記述は xyzzycli.exe が C:/usr/local/share/xyzzy/ にあると仮定しています。なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。）
+（上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。）
 
 逆に，xyzzy から dviout for Windows の該当箇所にジャンプすることも可能です。
 例えば，KaTeX をお使いなら [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/121) を参考に次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます。
@@ -603,7 +603,7 @@ Aspell そのものは適切に日本語・アルファベット混じり文を�
 download から aspell_l.lzh をダウンロードします
 （NetInstaller からはダウンロードできない）。
 展開（解凍）し，xyzzy のインストールフォルダの site-lisp\ フォルダの
-中（例えば C:/usr/local/share/xyzzy/site-lisp/）にコピーします。
+中（例えば C:/xyzzy/site-lisp/）にコピーします。
 
 &#x7e;/.xyzzy などの初期設定ファイルに次のように記述します
 （ここでは，Aspell をインストーラからデフォルトの設定でインストールしたときの設定を書きます）。
