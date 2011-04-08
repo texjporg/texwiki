@@ -913,8 +913,8 @@ inverse search の時に他のエディタが起動してしまう場合は suma
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-C:\Program Files\WinShell\WinShell.exe^s-c "%s" -l %d
-(64bitOSの場合は、C:\Program Files (x86)\WinShell\WinShell.exe^s-c "%s" -l %d)
+C:\Program Files\WinShell\WinShell.exe^s -c "%s" -l %d
+(64bitOSの場合は、C:\Program Files (x86)\WinShell\WinShell.exe^s -c "%s" -l %d)
 ```
 
 と書き込んで \[Save\] → \[OK\] の順にクリックしてください。
