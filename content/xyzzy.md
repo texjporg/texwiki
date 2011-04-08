@@ -150,9 +150,9 @@ Windows 標準のキーボードショートカットが使えるようになり
 要望を完全にはかなえてくれません。
 
 そのような方は，
-大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。
+大友さん作の[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。
 
-インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
+インストールは，[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) を
 ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
 初期設定ファイルで，
 
@@ -177,13 +177,19 @@ Windows 標準のキーボードショートカットが使えるようになり
 
 xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
 
+## SumatraPDF との連携 (inverse search) {#s1d4a0f1}
+
+```
+C:\xyzzy\xyzzycli.exe -g %l "%f"
+```
+
 ## xyzzy と dviout の連携機能 (Source special) {#xysssdaf}
 
 [dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-C:\xyzzy\xyzzycli.exe^s-g %d "%s"
+C:\xyzzy\xyzzycli.exe^s -g %d "%s"
 ```
 
 と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
@@ -815,7 +821,7 @@ Alt + x とした上で “exec-utf82tex” と入力し，Enterキーを押し�
 
 の行をコメントアウトしている場合は上記のエンコーディング変換は不要です。）
 
-あとは pLaTeX あるいは LaTeX にかけるだけです。（「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は [TeXWiki:新 pTeX と Babel](</新 pTeX とBabel/>)
+あとは e-pLaTeX あるいは LaTeX にかけるだけです。（「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は [TeXWiki:新 pTeX と Babel](</新 pTeX とBabel/>)
 を是非ご覧ください。）
 
 ### Unicode で多言語 TeX 文書を作ってみる（中国語・韓國語編） {#xyutfasd}
@@ -902,7 +908,7 @@ rem copy mlotf.sty test\
 rem copy tfm\* test\
 rem copy vf\* test\
 rem cd test
-rem platex test1.tex
+rem eplatex test1.tex
 rem dvipdfmx test1.dvi
 rem start test1.pdf
 ```
@@ -1702,17 +1708,17 @@ xyzzy から実行したい方は次を ~/.xyzzy などの初期設定ファイ�
 （ちなみに Utf82TeX も併用したい場合には
 先に Utf82TeX で処理しておくのがコツです）。
 
-あとはいつものように platex などで処理し，PDF 文書で確認しましょう。
+あとはいつものように eplatex などで処理し，PDF 文書で確認しましょう。
 
 ```
-platex cjkintro-sjis.tex
+eplatex cjkintro-sjis.tex
 dvipdfmx cjkintro-sjis.dvi
 ```
 
 または，
 
 ```
-platex cjkintro-sjis.tex
+eplatex cjkintro-sjis.tex
 dvips cjkintro-sjis.dvi
 ps2pdf cjkintro-sjis.ps
 ```
@@ -1884,8 +1890,8 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に書きま�
 （私の環境で表示できた an から ha までの文字しか変換できません。その他の文字については，すみませんが ASCII アルファベットで書いてください。
 もちろん改良スクリプト随時大募集です。） スクリプトの実行には Perl が必要になりますので，忘れずにインストールしてください。
 
-- G2TeX ([g2tex.pl](http://web.archive.org/web/20060824005927/http://www.klavis.info/g2tex.pl))
-- V2TeX ([v2tex.pl](http://web.archive.org/web/20060824010156/http://www.klavis.info/v2tex.pl))
+- G2TeX ([g2tex.pl](http://replay.waybackmachine.org/20060824005927/http://www.klavis.info/g2tex.pl))
+- V2TeX ([v2tex.pl](http://replay.waybackmachine.org/20060824010156/http://www.klavis.info/v2tex.pl))
 
 g2tex.pl や v2tex.pl をダウンロードし，PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
@@ -1931,7 +1937,7 @@ xyzzy から実行したい方は次を ~/.xyzzy などの初期設定ファイ�
 あとはこれを Shift_JIS エンコーディングで保存し，
 
 ```
-platex gtest-o.tex
+eplatex gtest-o.tex
 ```
 
 を実行します。DVI ファイルをプレビューしてみて，うまくいっているかどうかを
