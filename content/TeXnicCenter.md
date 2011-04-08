@@ -407,7 +407,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\eplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -443,7 +443,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -479,7 +479,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -515,7 +515,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\xelatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
@@ -835,6 +835,18 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 \[Build\]-\[View Output\] で PDF ファイルが表示されます．
 
 \[Build\]-\[Build and View Output\] でビルドと表示ができます．
+
+## SumatraPDF との連携 (inverse search) {#yfd68060}
+
+```
+C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe /ddecmd "[goto('%f', '%l')]"
+```
+
+## dviout との連携 (inverse search) {#r45cf8d1}
+
+```
+C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
+```
 
 ## 関連リンク {#r73017f2}
 
