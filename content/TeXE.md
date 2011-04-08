@@ -21,6 +21,7 @@ TeXE は，Windows で動作する国産でフリーの簡易 TeX 専用エデ�
 - 予約語の色指定
 - 文字コード変換機能
 - onig.dll を用いた正規表現検索/置換機能
+- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能
 
 TeraPad に TeX の色分け機能と補完機能を追加したような感じのエディタです．
 
@@ -133,7 +134,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\eplatex.exe
 
 引数
-: -synctex=1 -src-specials "%F"
+: -synctex=-1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
