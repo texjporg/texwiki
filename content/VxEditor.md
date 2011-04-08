@@ -583,3 +583,15 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - Ctrl + Alt + M を押す
 - メニューの \[ツール(T)\] → \[Mendex\]
 - エディタ画面を右クリック → \[Mendex\]
+
+## SumatraPDF との連携 (inverse search) {#a69fbb89}
+
+```
+C:\VxEditor\VxEditor.exe /j%l "%f"
+```
+
+## dviout との連携 (inverse search) {#ld52941a}
+
+```
+C:\VxEditor\VxEditor.exe^s /j%d "%s"
+```
