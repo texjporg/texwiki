@@ -27,6 +27,8 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 - [ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/)
     - [Top](http://www5.ocn.ne.jp/~fact/top.html)
     - [Download](http://www5.ocn.ne.jp/~fact/download.html)
+        - [更新履歴](http://www5.ocn.ne.jp/~fact/download/history.txt)
+        - [簡易ヘルプテキスト](http://www5.ocn.ne.jp/~fact/download/help.txt)
 
 ## インストール {#pdbc335f}
 
@@ -213,15 +215,27 @@ Macro
 
 \[ツール(T)\]-\[TeX自動処理(A)\] で TeX ファイルをコンパイルして表示してくれます．
 
+## SumatraPDF との連携 (inverse search) {#u9ba0f1e}
+
+```
+C:\texe022i\TeXE.exe /j%l "%f"
+```
+
+## dviout との連携 (inverse search) {#u0ce365d}
+
+```
+C:\texe022i\TeXE.exe^s /j%d "%s"
+```
+
 ## 不具合 {#b8d5d357}
 
-### PDF ファイルが開けない {#r3adc450}
+### 環境 (設定？) によって PDF ファイルが開けないことがある {#r3adc450}
 
-\[ツール\]-\[PDFプレビュー\] で「PDFが開けませんでした」といったエラーメッセージが表示されます．
+\[ツール\]-\[PDFプレビュー\] で「PDFが開けませんでした」といったエラーメッセージが表示される場合があります．
 
-PDF ファイルはきちんと作成されていますが，プレビューができません．
+このとき PDF ファイルはきちんと作成されていますが，プレビューができません．
 
-この場合，\[表示\]-\[環境オプション\]-\[メニュー\] で
+この場合，一度 ini ファイルを削除してから設定をやり直すかもしくは \[表示\]-\[環境オプション\]-\[メニュー\] で
 
 - 外部ツール
 
