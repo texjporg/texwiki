@@ -676,6 +676,18 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[Mendex\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[Mendex\]
 
+## SumatraPDF との連携 (inverse search) {#kdd43a4c}
+
+```
+C:\tpad108\TeraPad.exe /jl=%l "%f"
+```
+
+## dviout との連携 (inverse search) {#u00a74a2}
+
+```
+C:\tpad108\TeraPad.exe^s /jl=%d "%s"
+```
+
 ## 参考サイト {#n06fef85}
 
 - [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
