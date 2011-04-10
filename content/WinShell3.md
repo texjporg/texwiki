@@ -44,7 +44,8 @@ WinShell には
 > 参照してください］． <!-- また，最初から WinShell を使うのではなく， --> <!-- コマンドライン操作を一通りふまえておいてから --> <!-- WinShell の類の統合環境を用いるべきです． -->
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/) 公式サイト
-    <!-- The latest release is WinShell 3.3 File version: 3.3.1.12 - upload: 2010-08-21  -->
+
+2011-04-10 WinShell 3.3.2.4 - upload date: 2011-04-10
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
@@ -956,9 +957,9 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　WinShellの更新　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
 
-　使用中のバージョン: 　　　　3.3.2.0<br>
-　最新のリリースバージョン:　3.3.1.12 　 　 　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
-　最新のベータバージョン:　　3.3.2.3　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 更新を適応 \]</span><br>
+　使用中のバージョン: 　　　　3.3.2.3<br>
+　最新のリリースバージョン:　3.3.2.4　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 更新を適応 \]</span><br>
+　最新のベータバージョン:　　none　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 更新を適応 \]</span><br>
 　<span style="color:Black;background-color:#E8E8E8;">\[　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</span><br>
 　残り時間:<br>
 　転送状況:<br>
@@ -970,7 +971,7 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 ### Runtime Error! {#o5faaed5}
 
-WinShell 3.3.1.12 で，エンコーディングを UTF-8 に変更し
+WinShell 3.3.2.4 で，エンコーディングを UTF-8 に変更し
 
 ***
 
