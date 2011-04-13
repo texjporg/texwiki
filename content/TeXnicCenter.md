@@ -856,5 +856,6 @@ C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d'
 - [TexnicCenter and Adobe Reader 10 / X](http://www.agmonim.com/2010/12/texniccenter-and-adobe-reader-10-x/)
 - [Alphan Ulusoy&#039;s Blog &rsaquo; Using Adobe Acrobat Reader with TeXnicCenter](http://blog.alphanulusoy.com/?p=10)
 - [DDE Message of Acrobat and Adobe Reader](http://acrobat-dde.nnn2.com/)
+- [FW: Open "View PDF (pdflatex)" at last cursor position / forward search](http://www.mail-archive.com/lyx-devel@lists.lyx.org/msg157991.html)
 
 [^1]: ただし，日本語入力中は文字が小さく表示されてしまい，あまり快適ではありません．普段は英語で書いて，たまに日本語を使うという人向きかもしれません．
