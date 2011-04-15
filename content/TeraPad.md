@@ -110,7 +110,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ## ツールの設定 {#w029960e}
 
-ツールの設定をすると VxEditor, [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
+ツールの設定をすると VxEditor, Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
 ### pdfLaTeXA {#m56b7465}
 
