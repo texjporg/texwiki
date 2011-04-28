@@ -631,6 +631,10 @@ C:\inkscape\share\extensions\textext_ja.py の 109 行目あたりの windows.se
 
 C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を # Exec pdfeplatex: tex -> dvi -> pdf に修正します．
 
+textext の Text に入力された日本語は UTF-8 で保存されます．
+
+最新版の W32TeX はデフォルトでは [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するので文字コードを指定したり変換したりする必要はありません．
+
 ***
 
 ```
