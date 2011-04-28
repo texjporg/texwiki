@@ -633,9 +633,16 @@ textext の Text に入力された日本語は UTF-8 で保存されます．
 
 最新版の W32TeX はデフォルトでは [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するので文字コードを指定したり変換したりする必要はありません．
 
-ただし，日本語① などの文字列の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
+ただし，日本語① などの文字列 (このばあいは eplatex ではなく euplatex で処理しないと ① が表示されません) の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
 
-C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を # Exec pdfeplatex: tex -> dvi -> pdf または # Exec pdfeuplatex: tex -> dvi -> pdf に修正します．
+C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を
+
+- # Exec pdfeplatex: tex -> dvi -> pdf
+- # Exec pdfeuplatex: tex -> dvi -> pdf
+- # Exec pdfeplatex2: tex -> dvi -> eps -> pdf
+- # Exec pdfeuplatex2: tex -> dvi -> eps -> pdf
+
+のどれかに修正します．
 
 ***
 
@@ -659,6 +666,32 @@ C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pd
 
 ***
 
+または
+
+***
+
+```
+       # Exec pdfeplatex2: tex -> dvi -> eps -> pdf
+       out = exec_command(['eplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+       out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
+       out = exec_command(['epstopdf', self.tmp('eps')])
+```
+
+***
+
+または
+
+***
+
+```
+       # Exec pdfeuplatex2: tex -> dvi -> eps -> pdf
+       out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+       out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
+       out = exec_command(['epstopdf', self.tmp('eps')])
+```
+
+***
+
 C:\inkscape\share\extensions\textext_ja.py の 1153 行目あたりの # Exec pstoedit: pdf -> svg の項目を # Exec Ghostscript (epswrite) and pstoedit: pdf -> eps -> svg に修正します．
 
 ***
@@ -668,7 +701,7 @@ C:\inkscape\share\extensions\textext_ja.py の 1153 行目あたりの # Exec ps
         exec_command(['gswin32c', '-dSAFER', '-q', '-dBATCH', '-dNOPAUSE',
                       '-sDEVICE=epswrite', '-dEPSCrop', '-r9600',
                       '-sOutputFile='+self.tmp('eps'), self.tmp('pdf')])
-        exec_command(['pstoedit', '-f', 'plot-svg',
+        exec_command(['pstoedit', '-ndt', '-f', 'plot-svg',
                       self.tmp('eps'), self.tmp('svg')]
                      + pstoeditOpts)
 ```
@@ -773,6 +806,15 @@ $ pdf2svg tmp.pdf tmp.svg
 ```
 
 とすることで FONTCONFIG_PATH が正しく設定され，日本語の PDF も SVG に変換可能になります．
+
+ただし，変換できない場合もあります．
+
+```
+>pdf2svg tmp2.pdf tmp2.svg
+Error: Missing or invalid Encoding entry in Type 0 font
+Error: Unknown font tag 'R10'
+Error (238): No font in show/space
+```
 
 ### [svg2latex](https://gitorious.org/svg2latex/svg2latex) {#x3c0d408}
 
