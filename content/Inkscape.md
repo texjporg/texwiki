@@ -580,7 +580,7 @@ C:\inkscape\tmp\tmp?????? は OSError の例外が発生し，
 
 #### textext で日本語を使う {#q35ff2bf}
 
-pdflatex では，日本語を使えないので，eplatex + dvipdfmx で日本語を使える Tex Text Japanese を作成します．
+pdflatex では，日本語を使えないので，eplatex + dvipdfmx もしくは euplatex + updvipdfmx で日本語を使える Tex Text Japanese を作成します．
 
 ***
 
@@ -629,18 +629,32 @@ C:\inkscape\share\extensions\textext_ja.py の 109 行目あたりの windows.se
 
 ***
 
-C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を # Exec pdfeplatex: tex -> dvi -> pdf に修正します．
-
 textext の Text に入力された日本語は UTF-8 で保存されます．
 
 最新版の W32TeX はデフォルトでは [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するので文字コードを指定したり変換したりする必要はありません．
+
+ただし，日本語① などの文字列の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
+
+C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を # Exec pdfeplatex: tex -> dvi -> pdf または # Exec pdfeuplatex: tex -> dvi -> pdf に修正します．
 
 ***
 
 ```
        # Exec pdfeplatex: tex -> dvi -> pdf
-       out = exec_command(['eplatex', latex_opts, self.tmp('tex')])
+       out = exec_command(['eplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
        out = exec_command(['dvipdfmx', self.tmp('dvi')])
+```
+
+***
+
+または
+
+***
+
+```
+       # Exec pdfeuplatex: tex -> dvi -> pdf
+       out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+       out = exec_command(['updvipdfmx', self.tmp('dvi')])
 ```
 
 ***
