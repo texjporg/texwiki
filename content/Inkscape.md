@@ -157,6 +157,7 @@ Inkscape にデフォルトで含まれている LaTeX と連携するための�
     - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
     - [http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html)
 - [Inkscape で LaTeX の数式を入力する](http://www.empitsu.com/wp/?p=24)
+- [Inkscape で LaTeX の数式を入力する（続編）](http://www.empitsu.com/wp/?p=85)
 - [Windows版の Inkscape で LaTeX の数式を入力する](http://d.hatena.ne.jp/hiroki777/20080221)
 
 ***
