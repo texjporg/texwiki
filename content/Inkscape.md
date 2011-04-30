@@ -581,7 +581,7 @@ C:\inkscape\tmp\tmp?????? は OSError の例外が発生し，
 
 #### textext で日本語を使う {#q35ff2bf}
 
-pdflatex では，日本語を使えないので，eplatex + dvipdfmx もしくは euplatex + updvipdfmx で日本語を使える Tex Text Japanese を作成します．
+pdflatex では，日本語を使えないので日本語を使える Tex Text Japanese を作成します．
 
 ***
 
