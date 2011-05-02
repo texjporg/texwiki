@@ -752,7 +752,7 @@ jun101-l-v    V kozgostd-light.otf
 ### xdvi {#a7bdcae8}
 
 > Mac OS X では [Skim](http://skim-app.sourceforge.net/) のほうがおすすめです。
-> Mac OS X + X11 で xdvi をインストールする方法は [TeXのインストール - PukiWiki](http://www.imlab.sie.dendai.ac.jp/~odate/pukiwiki/index.php?TeX%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
+> Mac OS X + X11 で xdvi をインストールする方法は [TeXのインストール - PukiWiki \[Internet Archive\]](http://replay.web.archive.org/20090101090412/http://www.imlab.sie.dendai.ac.jp/~odate/pukiwiki/index.php?TeX%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
 > に詳しく載っています。
 > あるいは統合環境の [TeXShop](/TeXShop/)
 > を使えばエディタやプレビューアを別途用意する必要もなくなります。
