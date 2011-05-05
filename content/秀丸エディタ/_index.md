@@ -34,7 +34,7 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
-## 秀丸エディタ用マクロ {#m32041fb}
+## マクロ {#m32041fb}
 
 - [祝鳥 (のりてふ)](http://www.math.sci.hokudai.ac.jp/~abenori/soft/fortex.html)
     (阿部 紀行 (あべのり) さん)
