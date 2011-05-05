@@ -688,6 +688,12 @@ C:\tpad108\TeraPad.exe /jl=%l "%f"
 C:\tpad108\TeraPad.exe^s /jl=%d "%s"
 ```
 
+## スクリプト {#d597deba}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
 ## 参考サイト {#n06fef85}
 
 - [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
