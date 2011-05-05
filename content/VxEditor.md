@@ -595,3 +595,9 @@ C:\VxEditor\VxEditor.exe /j%l "%f"
 ```
 C:\VxEditor\VxEditor.exe^s /j%d "%s"
 ```
+
+## スクリプト {#xc599345}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
