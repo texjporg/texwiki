@@ -554,3 +554,9 @@ C:\Mery\Mery.exe /l %l "%f"
 ```
 C:\Mery\Mery.exe^s /l %d "%s"
 ```
+
+## スクリプト {#jd5ec718}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
