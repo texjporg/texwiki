@@ -12,7 +12,7 @@ pukiwiki: "秀丸エディタ"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### 秀丸エディタ とは {#w73ea51b}
+## 秀丸エディタ とは {#w73ea51b}
 
 秀丸エディタ は，Windows 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95 上で動作する国産のテキストエディタです。 (シェアウェア)
 
@@ -20,12 +20,12 @@ pukiwiki: "秀丸エディタ"
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
         - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
         - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
-- [秀丸エディタ マクロ言語ヘルプ目次（Ver8.02対応版）](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
+- [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
     - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
     - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
 - [窓の杜 - 秀丸エディタ](http://www.forest.impress.co.jp/lib/offc/document/txteditor/hidemaru.html)
 
-### 秀丸エディタフリー制度 {#faebc82e}
+## 秀丸エディタフリー制度 {#faebc82e}
 
 秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります。
 
@@ -34,7 +34,7 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
-### 秀丸エディタ用マクロ {#m32041fb}
+## 秀丸エディタ用マクロ {#m32041fb}
 
 - [祝鳥 (のりてふ)](http://www.math.sci.hokudai.ac.jp/~abenori/soft/fortex.html)
     (阿部 紀行 (あべのり) さん)
@@ -42,6 +42,7 @@ pukiwiki: "秀丸エディタ"
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
     - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
+    - [TeX---小技集（祝鳥関連）](http://imi.kyushu-u.ac.jp/~ssaito/jpn/tex/tips/nori.html)
 
 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に
 
@@ -125,7 +126,7 @@ DDEClose:
 ...
 ```
 
-秀丸エディタ Version 8.03 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
+秀丸エディタ Version 8.04 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
 ***
 
@@ -206,3 +207,9 @@ TeX ファイルを編集しているときは補完候補が表示されます�
 
 - [飛鳥 (ひちょう) HiTeX](http://www.yatex.org/HiTeX/)
     (安田 晴行 さん)
+
+## スクリプト {#w87ef5ac}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
