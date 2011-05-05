@@ -1436,6 +1436,7 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [Vim](/Vim/)，
 [xyzzy](/xyzzy/)，
 [jEdit](http://www.jedit.org/)，
+[FooEditor](http://sourceforge.jp/projects/fooeditor/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>)，
 Mery，
