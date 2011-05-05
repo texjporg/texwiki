@@ -717,6 +717,12 @@ Word をいちいち起動するのでスペック面で劣るパソコンでは
 
 WinAPI も呼び出せます（コモンダイアログを使うときには NetInstaller より雑記帖の commdlg を使うと便利）。頑張って作れば，相当良い LaTeX 環境を実現できそうです。
 
+## スクリプト {#ha3f5417}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
 ## Unicode で多言語 TeX 文書 {#zf0dbbe2}
 
 ### Unicode で多言語 TeX 文書を作ってみる（ヨーロッパ言語・ロシア語・ギリシア語編） {#xyutff8d}
