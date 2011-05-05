@@ -22,7 +22,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
     - [dr-x (vxeditor) on Twitter](http://twitter.com/vxeditor)
 - [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
 
-## ツールの設定 {#t542b96a}
+## ツール {#t542b96a}
 
 ツールの設定をすると TeraPad, Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
