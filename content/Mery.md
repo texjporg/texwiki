@@ -476,6 +476,12 @@ main();
 
 ***
 
+## スクリプト {#jd5ec718}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
 ## 入力補完 {#p98d874e}
 
 Mery には TeX の入力補完機能があります．
@@ -555,8 +561,7 @@ C:\Mery\Mery.exe /l %l "%f"
 C:\Mery\Mery.exe^s /l %d "%s"
 ```
 
-## スクリプト {#jd5ec718}
+## 関連リンク {#p472f070}
 
-- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
-    - HappyInput (TeX 入力支援スクリプト)
-    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+- [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
+- [TeXをWindowsで使う(まとめ)](http://blog.kassyi.com/2011/05/texwindows.html)
