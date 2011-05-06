@@ -476,6 +476,10 @@ main();
 
 ***
 
+### その他マクロ {#n2ac0dc8}
+
+- [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
+
 ## スクリプト {#jd5ec718}
 
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
