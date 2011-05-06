@@ -676,6 +676,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[Mendex\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[Mendex\]
 
+## スクリプト {#d597deba}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyInput (TeX 入力支援スクリプト)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
 ## SumatraPDF との連携 (inverse search) {#kdd43a4c}
 
 ```
@@ -687,12 +693,6 @@ C:\tpad108\TeraPad.exe /jl=%l "%f"
 ```
 C:\tpad108\TeraPad.exe^s /jl=%d "%s"
 ```
-
-## スクリプト {#d597deba}
-
-- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
-    - HappyInput (TeX 入力支援スクリプト)
-    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
 
 ## 参考サイト {#n06fef85}
 
