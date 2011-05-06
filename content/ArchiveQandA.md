@@ -87,6 +87,21 @@ pukiwiki: "ArchiveQandA"
         ```
 
         となります。
+
+- 複数ページのPDFファイルの任意のページを取り込む
+    - [PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
+
+        ```
+        \includegraphics[page=3,width=5cm]{sample.pdf}
+        ```
+
+        とソース中に記述し、コンパイル時に
+
+        ```
+        --shell-escape-commands=extractbb
+        ```
+
+        オプションを付けて実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
         <!-- -[[TeX と「TeX 以外」]] -->
 
 ### Tips {#de167df2}
