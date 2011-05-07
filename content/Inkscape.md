@@ -342,6 +342,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 - [仮想化された日々:textext を含む記事](http://blog.livedoor.jp/les_paul_sp/search?q=textext)
 - [textext を含む記事:たなぴのブログ](http://blog.livedoor.jp/tanapy/search?q=textext)
 - [うぶつん&#12288;&#65374;退化する脳みそのための備忘録&#65374;: inkscape](http://ubutun.blogspot.com/search/label/inkscape)
+- [inkscapeで数式](http://ac206223.ppp.asahi-net.or.jp/adiary/memo/adiary.cgi/hirosugu/inkscape%a4%c7%bf%f4%bc%b0)
 - [Inkscape に textextを導入](http://d.hatena.ne.jp/m_katsurai/20100908/1283915982)
 - [Fixing textext on Inkscape 0.48](http://laconsigna.wordpress.com/2010/11/13/fixing-textext-on-inkscape-0-48/)
 - [XeLaTex](http://d.hatena.ne.jp/yambi/20110405/1302005022)
