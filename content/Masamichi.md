@@ -22,7 +22,8 @@ Windows で使える，機能的で，軽い TeX 用のエディタがあまり�
     - [更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)
 - [Masamichi Editor](http://www.tam.ne.jp/hiraba/programs/Masamichi/)
 
-[![Masamichi](http://www.tam.ne.jp/hiraba/programs/presen0.png)](http://www.tam.ne.jp/hiraba/programs/texmode.png) <!-- [[&ref(http://www.tam.ne.jp/hiraba/programs/Hyo.png,around,nolink,表計算モード);>http://www.tam.ne.jp/hiraba/programs/hyomode.png]] -->
+[![Masamichi](http://www.tam.ne.jp/hiraba/programs/presen0.png)](http://www.tam.ne.jp/hiraba/programs/texmode.png)
+[<img src="http://www.tam.ne.jp/hiraba/programs/Hyo.png" alt="表計算モード" width="250" height="217">](http://www.tam.ne.jp/hiraba/programs/hyomode.png)
 
 ### 設定 {#wa3f6cb4}
 
