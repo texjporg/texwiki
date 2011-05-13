@@ -11,6 +11,12 @@ pukiwiki: "dvips"
 
 \[未完\]
 
+### dvips {#wd6b3c4e}
+
+- [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
+    - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
+- [Dvips(k)](http://www.tug.org/dvips/)
+
 ### dvips の用紙サイズ指定 {#b1d8723b}
 
 標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize
