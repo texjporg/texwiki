@@ -74,13 +74,15 @@ jsMath.js の mathchardef テーブル内に追加
 
 ```
 
-### MathML {#ndc0f583}
-
-> [http://washitake.com/MathML/](http://washitake.com/MathML/)
-
 ### MathJax {#o195bffa}
 
 > [http://www.mathjax.org/](http://www.mathjax.org/)
+
+> [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
+
+### MathML {#ndc0f583}
+
+> [http://washitake.com/MathML/](http://washitake.com/MathML/)
 
 ### tex.inc.php {#qfd69102}
 
