@@ -114,7 +114,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 TeX 実行ファイルのパスを指定します．
 
-eplatex.exe (epLaTeX の実行ファイル) が存在するフォルダのフルパスを指定します．ここでは C:\w32tex\bin に設定しました．
+platex.exe (pLaTeX の実行ファイル) が存在するフォルダのフルパスを指定します．ここでは C:\w32tex\bin に設定しました．
 
 DVI ドライバは dviout.exe のフルパスを指定します．
 
@@ -129,8 +129,8 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
 　　　　　　◯英語<br>
 　　　　　TeXコンパイラ　　　　　　 　 　☑source special<br>
-　　　　　 pLaTeX　　　　　　 <span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　　　　<span style="color:White;background-color:#1188FF;"> epLaTeX　　　 　 　</span>　　　 　 　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
+　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
+　　　　　 epLaTeX　　　 　 　　　　 　 　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
 　　　　　 jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
 
@@ -138,7 +138,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 
 TeX コンパイラを指定します．
 
-epLaTeX を選択します．
+pLaTeX を選択します．
 
 source special にチェックを入れます．
 
@@ -303,9 +303,9 @@ pdflatex は日本語には対応していません．<br>
 
 ***
 
-### pdfepLaTeXA {#x38829e5}
+### pdfpLaTeXA {#x38829e5}
 
-eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
@@ -313,7 +313,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeXA</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeXA</ins><br>
 　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -322,7 +322,7 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; eplatex -no-guess-input-enc -kanji=sjis "%n.tex" &amp;&amp; dvipdfmx "%n.dvi" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis "%n.tex" &amp;&amp; dvipdfmx "%n.dvi" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -331,9 +331,9 @@ eplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 
 ***
 
-### pdfepLaTeX2A {#l0d22111}
+### pdfpLaTeX2A {#l0d22111}
 
-eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
@@ -341,7 +341,7 @@ eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfepLaTeX2A</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
 　 program1<br>
 　<span style="color:White;background-color:#1188FF;"> program2　</span><br>
 　 program3　　　　　プログラム<br>
@@ -350,7 +350,7 @@ eplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; eplatex -no-guess-input-enc -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis "%n.tex" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -472,7 +472,7 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 <strong>Version 3.167 以降では，編集中のファイルは自動的に保存されます．</strong>
 
-うまくいけば，epLaTeX によって DVI ファイルが生成されます．
+うまくいけば，pLaTeX によって DVI ファイルが生成されます．
 
 そして \[DVI(D)\] をクリックすると，DVI ファイルがプレビューできます．
 
