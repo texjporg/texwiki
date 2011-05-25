@@ -356,6 +356,41 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 Profiles
 
 LaTeX => DVI<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+
+(La)TeX-Compiler<br>
+
+Path to the (La)TeX<br>
+<ins>C:\w32tex\bin\platex.exe</ins><br>
+
+Command line arguments to pass to the compiler:<br>
+<ins>-src-specials -interaction=nonstopmode "%Wm"</ins><br>
+
+BibTeX<br>
+
+Path to BibTeX<br>
+<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>"%bm"</ins><br>
+
+MakeIndex<br>
+
+Path to MakeIndex<br>
+<ins>C:\w32tex\bin\mendex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>"%bm"</ins><br>
+
+***
+
+Profiles
+
 LaTeX => PS<br>
 
 ***
@@ -367,10 +402,10 @@ LaTeX => PS<br>
 (La)TeX-Compiler<br>
 
 Path to the (La)TeX<br>
-<ins>C:\w32tex\bin\eplatex.exe</ins><br>
+<ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-src-specials -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 
@@ -404,7 +439,7 @@ LaTeX => PS => PDF<br>
 (La)TeX-Compiler<br>
 
 Path to the (La)TeX<br>
-<ins>C:\w32tex\bin\eplatex.exe</ins><br>
+<ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
