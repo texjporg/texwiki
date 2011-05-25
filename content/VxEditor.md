@@ -100,7 +100,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeXA {#v2edf4e6}
+### pdfpLaTeXA {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -115,7 +115,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfepLaTeXA</ins><br>
+　　　　　<ins>pdfpLaTeXA</ins><br>
 
 <br>
 
@@ -129,7 +129,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex "$FILENAME" &amp;&amp; dvipdfmx "$NAMEONLY.dvi" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -165,12 +165,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeXA\]
-- エディタ画面を右クリック → \[pdfepLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeXA\]
+- エディタ画面を右クリック → \[pdfpLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeX2A {#fcfb987f}
+### pdfpLaTeX2A {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -185,7 +185,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfepLaTeX2A</ins><br>
+　　　　　<ins>pdfpLaTeX2A</ins><br>
 
 <br>
 
@@ -199,7 +199,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; eplatex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex "$FILENAME" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -235,8 +235,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX2A\]
-- エディタ画面を右クリック → \[pdfepLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX2A\]
+- エディタ画面を右クリック → \[pdfpLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
