@@ -91,7 +91,7 @@ main();
 
 ***
 
-### pdfepLaTeXA.js {#h14da8ca}
+### pdfpLaTeXA.js {#h14da8ca}
 
 ***
 
@@ -104,7 +104,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "eplatex" + " " + ["\"", f, "\""].join("");
+  var latex = "platex" + " " + ["\"", f, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
@@ -119,7 +119,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeXA.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -138,13 +138,13 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeXA.js　　　　　　　　　　　　　　</span><br>
+　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeXA.js　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfepLaTeX2A.js {#gd894185}
+### pdfpLaTeX2A.js {#gd894185}
 
 ***
 
@@ -157,7 +157,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "eplatex" + " " + ["\"", f, "\""].join("");
+  var latex = "platex" + " " + ["\"", f, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
@@ -173,7 +173,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfepLaTeX2A.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeX2A.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -192,8 +192,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfepLaTeX2A.js 　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeXA.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A.js 　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -246,8 +246,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　pdfepLaTeX2A.js<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeXA.js　　　　　　　　　　　　</span><br>
 
 <br>
@@ -302,8 +302,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　pdfepLaTeX2A.js<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2A.js　　　　　　　　　　　　</span><br>
 
@@ -355,8 +355,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　pdfepLaTeX2A.js<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
@@ -409,8 +409,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　pdfepLaTeX2A.js<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
 　　　pBibTeX.js<br>
@@ -464,8 +464,8 @@ main();
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfLaTeXA.js<br>
-　　　pdfepLaTeXA.js<br>
-　　　pdfepLaTeX2A.js<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
 　　　pBibTeX.js<br>
