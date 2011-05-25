@@ -47,7 +47,7 @@ MinGW や Cygwin がインストールされていない場合は，環境変数
 - [kyotex-modeの設定変更方法](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/setting.html) を参照．
 
 TeX(T):
-: eplatex
+: platex
 
 BiBTeX(B):
 : pbibtex
