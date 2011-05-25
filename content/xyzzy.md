@@ -194,10 +194,10 @@ C:\xyzzy\xyzzycli.exe^s -g %d "%s"
 
 と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
 
-さてコンパイルですが，eplatex に -src-specials オプションを付けて実行します。すなわち，
+さてコンパイルですが，platex に -src-specials オプションを付けて実行します。すなわち，
 
 ```
-eplatex -src-specials
+platex -src-specials
 ```
 
 を実行するようにします。
@@ -205,7 +205,7 @@ eplatex -src-specials
 後述する [KaTeX](#xykb6f8d) を使っているのであれば，~/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "eplatex -src-specials")
+(setq elisp::tex-command "platex -src-specials")
 ```
 
 と書いておきます。
@@ -914,7 +914,7 @@ rem copy mlotf.sty test\
 rem copy tfm\* test\
 rem copy vf\* test\
 rem cd test
-rem eplatex test1.tex
+rem platex test1.tex
 rem dvipdfmx test1.dvi
 rem start test1.pdf
 ```
@@ -1714,17 +1714,17 @@ xyzzy から実行したい方は次を ~/.xyzzy などの初期設定ファイ�
 （ちなみに Utf82TeX も併用したい場合には
 先に Utf82TeX で処理しておくのがコツです）。
 
-あとはいつものように eplatex などで処理し，PDF 文書で確認しましょう。
+あとはいつものように platex などで処理し，PDF 文書で確認しましょう。
 
 ```
-eplatex cjkintro-sjis.tex
+platex cjkintro-sjis.tex
 dvipdfmx cjkintro-sjis.dvi
 ```
 
 または，
 
 ```
-eplatex cjkintro-sjis.tex
+platex cjkintro-sjis.tex
 dvips cjkintro-sjis.dvi
 ps2pdf cjkintro-sjis.ps
 ```
@@ -1943,7 +1943,7 @@ xyzzy から実行したい方は次を ~/.xyzzy などの初期設定ファイ�
 あとはこれを Shift_JIS エンコーディングで保存し，
 
 ```
-eplatex gtest-o.tex
+platex gtest-o.tex
 ```
 
 を実行します。DVI ファイルをプレビューしてみて，うまくいっているかどうかを
