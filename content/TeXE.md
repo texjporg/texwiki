@@ -59,10 +59,8 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 ***
 
-開始すると自動設定してくれますが，
-\[TeX\] が platex.exe， \[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
+開始すると自動設定してくれますが，\[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
 
-- platex.exe → eplatex.exe
 - jbibtex.exe → pbibtex.exe
 - dvipdfm.exe → dvipdfmx.exe
 
@@ -131,7 +129,7 @@ Macroのパラメータ<br>
 ### TeX {#obbe32e3}
 
 フルパス
-: C:\w32tex\bin\eplatex.exe
+: C:\w32tex\bin\platex.exe
 
 引数
 : -synctex=-1 -src-specials "%F"
