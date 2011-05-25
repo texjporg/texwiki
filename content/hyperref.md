@@ -50,7 +50,7 @@ pukiwiki: "hyperref"
 
 とすることも可能です．
 
-eplatex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
+platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
 
 ```
 \usepackage{atbegshi}
