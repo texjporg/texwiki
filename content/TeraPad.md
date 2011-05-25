@@ -186,7 +186,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepLaTeXA {#m290fc57}
+### pdfpLaTeXA {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -199,13 +199,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeXA</ins>
+　　　 <ins>pdfpLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex "%n" &amp;&amp; dvipdfmx "%b.dvi" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -227,13 +227,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeXA</ins>
+　　　 <ins>pdfpLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex "%n";if($?){dvipdfmx "%b.dvi"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -251,8 +251,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -262,7 +262,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 1. Ctrl + Alt + J を押すと PDF ファイルが作成され，表示されます．
 1. もう一度 Ctrl + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
-### pdfepLaTeX2A {#g1f54992}
+### pdfpLaTeX2A {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -275,13 +275,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX2A</ins>
+　　　 <ins>pdfpLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; eplatex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex "%n" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -303,13 +303,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfepLaTeX2A</ins>
+　　　 <ins>pdfpLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; eplatex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex "%n";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -327,8 +327,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfepLaTeX2A\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfepLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX2A\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeX2A\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
