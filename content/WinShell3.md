@@ -270,7 +270,7 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 #### LaTeX {#j415cdd8}
 
-eplatex.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\eplatex.exe)
+platex.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\platex.exe)
 
 ***
 
@@ -285,7 +285,7 @@ eplatex.exe (うまくいかなければフルパスで指定してください�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">LaTeX　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>eplatex.exe</ins><br>
+　　exeファイル名 　<ins>platex.exe</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　☑ DOS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
@@ -638,17 +638,17 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ### ユーザ指定プログラム {#q408fd2f}
 
-#### pdfepLaTeX {#f117c474}
+#### pdfpLaTeX {#f117c474}
 
-欧文の文書を作成する方は，\[PDFLaTeX\] の項目はデフォルトの pdflatex のままで，［オプション］ → ［ユーザー指定プログラム］ で Tool 1 の プログラム名を pdfepLaTeX，exeファイル名を dvipdfmx.exe に設定しておくと、欧文は pdflatex, 和文は eplatex + dvipdfmx と使いわけができます．
+欧文の文書を作成する方は，\[PDFLaTeX\] の項目はデフォルトの pdflatex のままで，［オプション］ → ［ユーザー指定プログラム］ で Tool 1 の プログラム名を pdfpLaTeX，exeファイル名を dvipdfmx.exe に設定しておくと、欧文は pdflatex, 和文は platex + dvipdfmx と使いわけができます．
 
-ただし，Tool 1 の pdfepLaTeX で作成した和文 PDF をツールバーの PDFView ボタンで閲覧する場合，［オプション］ → ［主なTeXプログラムの設定］の PDFView の項目で「PDFLaTeXを先に実行」のチェックを外しておかないと Adobe Reader がアプリケーションエラーを起こして文書が表示されません．
+ただし，Tool 1 の pdfpLaTeX で作成した和文 PDF をツールバーの PDFView ボタンで閲覧する場合，［オプション］ → ［主なTeXプログラムの設定］の PDFView の項目で「PDFLaTeXを先に実行」のチェックを外しておかないと Adobe Reader がアプリケーションエラーを起こして文書が表示されません．
 
 ［オプション］ → ［ユーザー指定プログラム］ で
-Tool 1 を pdfepLaTeX に設定します。
+Tool 1 を pdfpLaTeX に設定します。
 
 プログラム名
-: pdfepLaTeX
+: pdfpLaTeX
 
 exeファイル名
 : dvipdfmx.exe
@@ -669,7 +669,7 @@ exeファイル名
 
 <br>
 
-　　プログラム名　　<ins>pdfepLaTeX</ins><br>
+　　プログラム名　　<ins>pdfpLaTeX</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 1　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 2<br>
@@ -694,13 +694,13 @@ exeファイル名
 
 ***
 
-#### pdfepLaTeX2 {#o1b22e62}
+#### pdfpLaTeX2 {#o1b22e62}
 
 ［オプション］ → ［ユーザー指定プログラム］ で
-Tool 2 を pdfepLaTeX2 に設定します。
+Tool 2 を pdfpLaTeX2 に設定します。
 
 プログラム名
-: pdfepLaTeX2
+: pdfpLaTeX2
 
 exeファイル名
 : ps2pdf.bat
@@ -719,9 +719,9 @@ exeファイル名
 
 <br>
 
-　　プログラム名　　<ins>pdfepLaTeX2</ins><br>
+　　プログラム名　　<ins>pdfpLaTeX2</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfepLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfpLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 2　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 3<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 4<br>
@@ -771,8 +771,8 @@ exeファイル名
 
 　　プログラム名　　<ins>Mendex</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfepLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfepLaTeX2<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfpLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pdfpLaTeX2<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 3　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 4<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 5<br>
@@ -794,7 +794,7 @@ exeファイル名
 
 ***
 
-追加した pdfepLaTeX，pdfepLaTeX2，Mendex は ［オプション］ → ［表示］ → ［ユーザ設定］ で
+追加した pdfpLaTeX，pdfpLaTeX2，Mendex は ［オプション］ → ［表示］ → ［ユーザ設定］ で
 ツールバーに登録できます。ただしメニューバーの言語を
 English にしておかないと，文字が大部分表示されないことがあるかもしれません。
 
@@ -1070,14 +1070,14 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 <br>
 
-　　プログラム名　　<ins>epLaTeX</ins><br>
+　　プログラム名　　<ins>pLaTeX</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 1　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 2<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 3<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 4<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 5<br>
-　　exeファイル名 　<ins>eplatex.exe</ins><br>
+　　exeファイル名 　<ins>platex.exe</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　☑ DOS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 6<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 7<br>
@@ -1103,7 +1103,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>pBibTeX</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 2　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 3<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 4<br>
@@ -1134,7 +1134,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>dviout</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 3　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 4<br>
@@ -1165,7 +1165,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>dvips</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 4　　　　　　　　　　　　　　</span><br>
@@ -1196,7 +1196,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>GSview</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
@@ -1227,7 +1227,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>dvipdfmx</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
@@ -1258,7 +1258,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>Adobe Reader</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
@@ -1289,7 +1289,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>SumatraPDF</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
@@ -1320,7 +1320,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>ps2pdf</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
@@ -1351,7 +1351,7 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 　　プログラム名　　<ins>Mendex</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザ指定プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　epLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pBibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dvips<br>
