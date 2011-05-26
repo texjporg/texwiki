@@ -549,7 +549,7 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
-- [LaTeXとか - PukiWiki](http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB)
+    <!-- -[[LaTeXとか - PukiWiki:http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB]] -->
 
 ## Comments {#etacm8ab}
 
