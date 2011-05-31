@@ -54,7 +54,7 @@ openin_any = p
 parse_first_line = f
 ```
 
-さらに，shell_escape_commands = ... の形で例外的に呼び出せるコマンドを列挙している場合がありますので，これも精査あるいは削除します。
+さらに，shell_escape_commands = ... の形で例外的に呼び出せるコマンドを列挙している場合がありますので，これも精査あるいは削除します。(shell_escape = f の場合は shell_escape_commannds = に列挙してあるコマンドも実行しません。)
 
 #### テスト1 {#p4f76648}
 
