@@ -9,6 +9,8 @@ pukiwiki: "Masamichi"
 
 ## [『雅理』 Masamichi エディタ](http://www.tam.ne.jp/hiraba/programs/) {#re9385b5}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ### Masamichi とは {#hfca40e4}
 
 Masamichi は Windows で動作する国産でフリーの TeX 用エディタです．
