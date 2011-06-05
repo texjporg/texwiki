@@ -70,6 +70,8 @@ WinShell には
 ### Self-installing exe file {#o6616ae5}
 
 - [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)
+    - [リリース版](http://www.winshell.org/modules/ws_download/#release)
+    - [ベータ版](http://www.winshell.org/modules/ws_download/#beta)
 - [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
 - [WinShell 3.1 (旧バージョン)](http://stanag4172.m13.coreserver.jp/blog/archives/154)
     <!-- -[[LaTeX Install/WinShell - PukiWiki:http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell]] (旧バージョン) -->
@@ -83,6 +85,8 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 ### Zip archive {#e5dfb289}
 
 - [WinShell - Download WinShell](http://www.winshell.org/modules/ws_download/) (最新版)
+    - [リリース版](http://www.winshell.org/modules/ws_download/#release)
+    - [ベータ版](http://www.winshell.org/modules/ws_download/#beta)
 - [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
 
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
