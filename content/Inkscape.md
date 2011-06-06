@@ -347,7 +347,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 - [Fixing textext on Inkscape 0.48](http://laconsigna.wordpress.com/2010/11/13/fixing-textext-on-inkscape-0-48/)
 - [XeLaTex](http://d.hatena.ne.jp/yambi/20110405/1302005022)
 - [InkscapeでLatex数式](http://d.hatena.ne.jp/HRM-7/20100710/1278752062)
-- [Inkspace - PukiWiki](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?Inkspace)
+- [Inkscape - PukiWiki](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?Inkscape)
 - [Mac/OS X/X11/Inkscape - PukiWiki](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?Mac%2FOS%20X%2FX11%2FInkscape)
 - [MacのInkscapeでTeXを使う](http://d.hatena.ne.jp/colourful/20081219/p1)
 - [QA: 電子回路図の挿入](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=582&parent=3140&mode=3)
