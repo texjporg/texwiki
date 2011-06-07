@@ -132,7 +132,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\platex.exe
 
 引数
-: -synctex=-1 -src-specials "%F"
+: -guess-input-enc -synctex=-1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
