@@ -369,7 +369,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-src-specials -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-guess-input-enc -src-specials -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 
@@ -405,7 +405,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-interaction=nonstopmode "%Wm"</ins><br>
+<ins>-guess-input-enc -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 
@@ -442,7 +442,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-guess-input-enc -synctex=-1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 
