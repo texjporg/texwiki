@@ -148,11 +148,11 @@ fmtutil --byfmt xelatex
 
 cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
-最新の web2c-2010-w32.tar.bz2 を入手して，TeX のインストール
+最新の web2c-w32.tar.xz を入手して，TeX のインストール
 トップディレクトリで展開して下さい。この中に xetex をサポートする
 fmtutil.cnf と texmf.cnf が入っています。
 
-xetex-w32.tar.bz2 を TeX のインストールトップディレクトリで展開して下さい。
+xetex-w32.tar.xz を TeX のインストールトップディレクトリで展開して下さい。
 
 TopDir/share/texmf/fonts/conf に移動し，（つまりカレントディレクトリとし）
 そこにある fonts.conf というファイルを編集します。
