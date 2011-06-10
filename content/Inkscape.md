@@ -46,6 +46,9 @@ Windows, Linux, Mac OS X, Unix で動作します．
 - [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
 - [窓の杜 - Inkscape](http://www.forest.impress.co.jp/lib/pic/piccam/paint/inkscape.html)
+- [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
+- [Mac用ドローイングソフトInkscapeを日本語化する](http://idita.blog11.fc2.com/blog-entry-469.html)
+- [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
 
 ## PDF+LaTeX/EPS+LaTeX/PS+LaTeX {#d6b72996}
 
