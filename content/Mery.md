@@ -104,7 +104,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex" + " " + ["\"", f, "\""].join("");
+  var latex = "platex -guess-input-enc" + " " + ["\"", f, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
@@ -157,7 +157,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex" + " " + ["\"", f, "\""].join("");
+  var latex = "platex -guess-input-enc" + " " + ["\"", f, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
@@ -212,7 +212,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex" + " " + ["\"", f, "\""].join("");
+  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", f, "\""].join("");
   var dvipdfm = "updvipdfmx" + " " + ["\"", b, ".dvi", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
@@ -267,8 +267,8 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex" + " " + ["\"", f, "\""].join("");
-  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", f, "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
@@ -378,7 +378,7 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(f);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
+  var bibtex = "upbibtex -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
   document.Save();
