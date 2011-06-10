@@ -21,7 +21,7 @@ pukiwiki: "hyperref"
 
 プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
 
-例えば，下記のようにします．
+platex + dvipdfmx の場合は，下記のようにします．
 
 ```
 \usepackage[dvipdfmx,%
@@ -50,6 +50,17 @@ pukiwiki: "hyperref"
 
 とすることも可能です．
 
+\usepackage で dvipdfmx を指定してうまくいかない場合は
+
+- hyperref を最新のもの (6.75e 以降のバージョン) にアップデートする
+- \usepackage でオプションを dvipdfmx ではなく dvipdfm を指定する
+
+のどちらかを試してみてください．
+
+platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．
+
+hyperref は pTeX の縦書きモードには対応していないようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
+
 platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
 
 ```
@@ -57,6 +68,12 @@ platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\
 \ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
 \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
 ```
+
+uplatex + updvipdfmx では必要ありません．
+
+platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して bkmk2uni または convbkmk を使用します．
+
+uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
 
 <table>
 <thead>
