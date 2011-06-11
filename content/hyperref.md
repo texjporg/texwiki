@@ -59,17 +59,20 @@ platex + dvipdfmx の場合は，下記のようにします．
 
 platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．
 
-hyperref は pTeX の縦書きモードには対応していないようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
+hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
 platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
 
 ```
 \usepackage{atbegshi}
-\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
-\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+\ifnum 42146=\euc"A4A2
+  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
 ```
 
-uplatex + updvipdfmx では必要ありません．
+uplatex + updvipdfmx, xelatex では必要ありません．
 
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して bkmk2uni または convbkmk を使用します．
 
@@ -695,18 +698,21 @@ hyperrefパッケージをデフォルトで読み込む．
 
 ```
 \usepackage{atbegshi}
-\ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
-\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+\ifnum 42146=\euc"A4A2
+  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
 ```
 
-\usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまう。
+\usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまいます．
 
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
-以下にサンプルコードを示します。hyperref 6.81z で確認しました。<br>
-hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります。<br>
-その場合は，変更できないと思われるので，適宜修正して使ってください。<br>
-この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります。<br>
+以下にサンプルコードを示します。hyperref 6.81z で確認しました．<br>
+hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります．<br>
+その場合は，変更できないと思われるので，適宜修正して使ってください．<br>
+この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります．<br>
 
 #### pdftex の場合 {#ec16a11d}
 
