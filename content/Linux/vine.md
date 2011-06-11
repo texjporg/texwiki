@@ -208,12 +208,21 @@ ggv が採用されました。
     その代わりにプリアンプルに
 
 ```
+\usepackage{atbegshi}
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
+bookmarkstype=toc]{hyperref}
+```
+
+古いバージョンの場合は
+
+```
 \usepackage[dvipdfm,bookmarks=true,bookmarksnumbered=true,%
 bookmarkstype=toc]{hyperref}
 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
 ```
 
-のように書いておきます。（3行目がポイントです。）
+のように書いておきます。(\special{pdf:tounicode EUC-UCS2} がポイントです。)
 Linux 版 Acrobat Reader 5.0 までは日本語のしおりは化けるので，
 Adobe Reader 7.0 か Microsoft Windows 版などで動作確認してください。 <!-- なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。 -->
 
