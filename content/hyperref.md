@@ -74,7 +74,7 @@ platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\
 
 uplatex + updvipdfmx, xelatex では必要ありません．
 
-platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して bkmk2uni または convbkmk を使用します．
+platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
 uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
 
@@ -103,7 +103,7 @@ uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止す�
 <tr><td>draft</td><td>do not do any hyper linking</td><td>true/<strong>false</strong></td></tr>
 <tr><td>dvipdf</td><td>use dvipdf backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvipdfm</td><td>use dvipdfm backend</td><td style="text-align:center"> -</td></tr>
-<tr><td>dvipdfmx</td><td>use dvipdfmx backend</td><td style="text-align:center"> -</td></tr>
+<tr><td>dvipdfmx</td><td>use dvipdfmx backend (6.75e 以降)</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvips</td><td>use dvips backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dvipsone</td><td>use dvipsone backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>dviwindo</td><td>use dviwindo backend</td><td style="text-align:center"> -</td></tr>
