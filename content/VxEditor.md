@@ -380,6 +380,146 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
+### LuaLaTeXA {#m4ea741f}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>LuaLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; lualatex "$FILENAME" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Shift + Alt + U</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Shift + Alt + U を押す
+- メニューの \[ツール(T)\] → \[LuaLaTeXA\]
+- エディタ画面を右クリック → \[LuaLaTeXA\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+### XeLaTeXA {#o8a87f15}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>XeLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; xelatex "$FILENAME" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Shift + Alt + I</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Shift + Alt + I を押す
+- メニューの \[ツール(T)\] → \[XeLaTeXA\]
+- エディタ画面を右クリック → \[XeLaTeXA\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
 ### pBibTeX {#v9c2efca}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
