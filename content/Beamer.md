@@ -53,7 +53,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
 
-### [ukern - xcolor: LaTeX color extensions](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
+### [xcolor](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
 - [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
 
@@ -90,6 +90,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer, geometry package のアップデートで不具合](http://d.hatena.ne.jp/triadsou/20100303/1267607085)
 - [LaTeX Beamer 入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/)
 - [Windows XP に LaTeX beamer をいれる](http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html)
+- [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
