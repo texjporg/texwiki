@@ -472,6 +472,146 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
+### LuaLaTeXA {#qf42e8ee}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#g9fbb354}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>LuaLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; lualatex "%n" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + U</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#m064f668}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>LuaLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; lualatex "%n";if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + U</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Shift + Alt + U を押す
+- メニューの \[ツール(T)\] → \[LuaLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[LuaLaTeXA\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+### XeLaTeXA {#h71b9f3f}
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#je4f0b18}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>XeLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; xelatex "%n" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + I</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#nd955694}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>XeLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; xelatex "%n";if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Shift + Alt + I</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Shift + Alt + I を押す
+- メニューの \[ツール(T)\] → \[XeLaTeXA\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[XeLaTeXA\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
 ### pBibTeX {#h42e3045}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
