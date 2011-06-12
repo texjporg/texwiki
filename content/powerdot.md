@@ -8,3 +8,27 @@ pukiwiki: "powerdot"
 # powerdot
 
 ## powerdot {#v0ce3213}
+
+### powerdot {#f0f3637a}
+
+- [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
+- [powerdot -- a LaTeX presentation class](http://homepages.inf.ed.ac.uk/s0675112/powerdot_intro/powerdot.html) \[天野さん\]
+- [Powerdot.clsのマニュアルを日本語訳したもの](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5#p17)
+
+### xkeyval {#wfe7cd15}
+
+- W32TeX に含まれています．
+- [CTAN:help/Catalogue/entries/xkeyval.html](https://mirror.ctan.org/help/Catalogue/entries/xkeyval.html)
+
+### [PSTricks](/PSTricks/) {#b0a3b701}
+
+- W32TeX に含まれています．
+- [CTAN:help/Catalogue/entries/pstricks.html](https://mirror.ctan.org/help/Catalogue/entries/pstricks.html)
+
+### [xcolor](http://www.ukern.de/tex/xcolor.html) {#d003f983}
+
+- [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
+
+### enumitem {#b2e07284}
+
+- [CTAN:help/Catalogue/entries/enumitem.html](https://mirror.ctan.org/help/Catalogue/entries/enumitem.html)
