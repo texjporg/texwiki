@@ -9,7 +9,7 @@ pukiwiki: "hyperref"
 
 ## [hyperref](http://www.tug.org/applications/hyperref/) {#s8bca501}
 
-[hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）にHTMLと同じハイパーリンク 機能を加えるためのマクロです。
+[hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです。
 
 <strong>目次</strong>
 
@@ -37,9 +37,8 @@ platex + dvipdfmx の場合は，下記のようにします．
 または， \hypersetup{オプション} を使用して
 
 ```
-\usepackage[dvipdfmx]{hyperref}
+\usepackage[dvips]{hyperref}
 \hypersetup{%
- bookmarks=true,%
  bookmarksnumbered=true,%
  colorlinks=true,%
  pdftitle={LaTeX研修課程},%
@@ -49,6 +48,10 @@ platex + dvipdfmx の場合は，下記のようにします．
 ```
 
 とすることも可能です．
+
+しおりを作成する場合は2回コンパイルが必要です．
+
+v6.75e で dvipdfmx が指定できるようになりました．
 
 \usepackage で dvipdfmx を指定してエラーが発生する場合は
 
@@ -72,11 +75,11 @@ platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\
 \fi
 ```
 
-uplatex + updvipdfmx, xelatex では必要ありません．
+(e)uplatex + updvipdfmx, xelatex では必要ありません．
 
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
-uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
+(e)uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
 
 <table>
 <thead>
@@ -193,7 +196,7 @@ url及びnolinkurl とは hyperref.styを読み込むことによって使用可
 - url文字列を指定フォントへ変更する
 - tildeを上手に処理してくれる
 - 改行処理が必要な場合にurl文字列を上手に途中で分割する
-- hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定dvips/dvipdfm/dvipdfmx/pdftex等に依存するおそれがある）
+- hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定 pdftex/dvipdfm/dvipdfmx/xetex/dvips 等に依存するおそれがある）
 
 #### pdfファイル作成 {#ib05c931}
 
