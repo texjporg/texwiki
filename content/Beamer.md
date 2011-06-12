@@ -18,6 +18,7 @@ pukiwiki: "Beamer"
 - [#56 Run latest beamer error in ubuntu 10.04](https://bitbucket.org/rivanvx/beamer/issue/56/run-latest-beamer-error-in-ubuntu-1004)
 - [beamer コンパイル中のエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=462)
 - [Beamer 3.10 にアップグレードした](http://d.hatena.ne.jp/triadsou/20101110/1289357503)
+- [https://bitbucket.org/rivanvx/beamer/wiki/Home#!development](https://bitbucket.org/rivanvx/beamer/wiki/Home#!development)
 
 Beamer 公式サイトからファイルをダウンロードして使用すると以下のようなエラーが発生します．
 
@@ -38,15 +39,17 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
     - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
     - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
-        - [https://bitbucket.org/rivanvx/beamer/get/tip.zip](https://bitbucket.org/rivanvx/beamer/get/tip.zip)
-        - [https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz](https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz)
-        - [https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2](https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2)
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
+
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
 ### [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/) {#o6f8726a}
 
 <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
+- e-TeX 拡張が必要 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
 
@@ -61,6 +64,8 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 ### [LaTeX beamerposter](http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php) {#pabd14ab}
 
 - [CTAN:help/Catalogue/entries/beamerposter.html](https://mirror.ctan.org/help/Catalogue/entries/beamerposter.html)
+- [Beamer ポスター入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/poster.html)
+- [LaTeXでポスターを作る](http://d.hatena.ne.jp/hkhn/comment?date=20110303)
 
 ### [wiki2beamer](http://wiki2beamer.sourceforge.net/) {#q47a5bc8}
 
