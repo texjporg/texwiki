@@ -48,6 +48,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
+- [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
 
 ### [ukern - xcolor: LaTeX color extensions](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
