@@ -76,7 +76,7 @@ pukiwiki: "新 pTeX とBabel"
 
 [W32TeX](http://w32tex.org/index-ja.html) では
 [TeX Live](http://www.tug.org/texlive/) 所収の
-ハイフネーションファイル（43種類）が同梱されています。8ビットコード対応済み
+ハイフネーションファイル（75種類）が同梱されています。8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
 TeXWiki:インストール (Windows) を参照）。
