@@ -169,7 +169,7 @@ updmap --add arabtex.map
 ヘブライ語は Babel の hebrew オプションを用いる方法があります。
 TeX--XeT 機能を用いるため従来の pTeX では処理できませんでしたが，
 pTeX と [e-TeX](/e-TeX/) の統合版の登場により処理可能になりました。
-参考： [qa:50566](https://okumuralab.org/~okumura/texfaq/qa/50566.html),  [qa:50568](https://okumuralab.org/~okumura/texfaq/qa/50568.html), [qa:50589](https://okumuralab.org/~okumura/texfaq/qa/50589.html), [qa:55967](https://okumuralab.org/~okumura/texfaq/qa/55967.html), [qa:55969](https://okumuralab.org/~okumura/texfaq/qa/55969.html)
+参考： [qa:50566](https://okumuralab.org/~okumura/texfaq/qa/50566.html),  [qa:50568](https://okumuralab.org/~okumura/texfaq/qa/50568.html), [qa:50589](https://okumuralab.org/~okumura/texfaq/qa/50589.html), [qa:55967](https://okumuralab.org/~okumura/texfaq/qa/55967.html) <!-- , [[qa:55969]], [[qa:55970]] ← これらはドイツ語なので削っておきます。 -->
 
 ## 中央アジアの諸言語 {#arsktowi}
 
