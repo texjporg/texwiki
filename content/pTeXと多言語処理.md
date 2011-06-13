@@ -1438,7 +1438,7 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [jEdit](http://www.jedit.org/)，
 [FooEditor](http://sourceforge.jp/projects/fooeditor/)，
 [Notepad++](/Notepad++/)，
-[サクラエディタ](</サクラエディタ/>)，
+[サクラエディタ](</サクラエディタ/>) UNICODE 版，
 Mery，
 [真魚［まな］](http://mana.ikuto.com/)，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
