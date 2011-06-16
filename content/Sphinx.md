@@ -37,3 +37,4 @@ pukiwiki: "Sphinx"
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
 - [SphinxとTeXとPDFと日本語](http://d.hatena.ne.jp/s_yano/20100921/1285048025)
 - [sphinx math](http://ggutter.blogspot.com/2009/12/sphinx-math.html)
+- [Sphinx - laclefwiki](http://saekiyoshiyasu.org/wiki/Sphinx)
