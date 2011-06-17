@@ -13,7 +13,7 @@ pukiwiki: "powerdot"
 
 - [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
 - [powerdot -- a LaTeX presentation class](http://homepages.inf.ed.ac.uk/s0675112/powerdot_intro/powerdot.html) \[天野さん\]
-- [Powerdot.clsのマニュアルを日本語訳したもの](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5#p17)
+- [Powerdot.clsのマニュアルを日本語訳したもの](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)
 
 ### xkeyval {#wfe7cd15}
 
