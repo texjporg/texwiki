@@ -11,6 +11,8 @@ pukiwiki: "新 pTeX とBabel"
 
 以下では LaTeX/pLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
+なお、「新 pTeX」とはバージョン3.1.4以降のpTeXを指します。
+
 ### 更新履歴 {#sa5b8545}
 
 - \[2007/11/15\]
