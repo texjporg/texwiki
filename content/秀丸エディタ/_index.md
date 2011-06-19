@@ -245,6 +245,8 @@ TeX ファイルを編集しているときは補完候補が表示されます�
 
 ## スクリプト {#w87ef5ac}
 
+### Happy {#q96fb99f}
+
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
