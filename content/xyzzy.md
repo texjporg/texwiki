@@ -32,6 +32,8 @@ xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode
 - 中国語 (&#x6c49;&#x8bed;［漢語］，中文)
 - 韓國語 (&#xd55c;&#xad6d;&#xc5b4;)
 
+<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,xyzzy の画面) -->
+
 などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。
 
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
@@ -293,7 +295,7 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 
 <img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="outline-tree2 を使った xyzzy の画面">
 
-上の xyzzy の画像で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
+[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
 そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
 
 現在は outline-tree のバージョンが2になっています。
@@ -379,7 +381,7 @@ Ctrl + Enter またはメニューバーより ［Outline-Tree］ → ［アウ�
 
 以下はバージョン1に相当する古い情報です。
 
-上の xyzzy の画像で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
+[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
 そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
 
 - Masatoshi's xyzzy extend lisps
@@ -533,7 +535,7 @@ insert というフォルダを新たに作り，textemplate.tex という雛形
 
 ### 動的補完でらくらく入力 {#xydb6f8d}
 
-上の xyzzy の画像で，\text と入力した後に小さなメニューを出している様子が気にかかった方もいらっしゃるでしょう。
+[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，\text と入力した後に小さなメニューを出している様子が気にかかった方もいらっしゃるでしょう。
 これは，動的補完 (Dabbrev) という xyzzy 標準の機能を利用しているのです。
 
 特に何かインストールする必要はありません。texkey というファイル
@@ -718,6 +720,8 @@ Word をいちいち起動するのでスペック面で劣るパソコンでは
 WinAPI も呼び出せます（コモンダイアログを使うときには NetInstaller より雑記帖の commdlg を使うと便利）。頑張って作れば，相当良い LaTeX 環境を実現できそうです。
 
 ## スクリプト {#ha3f5417}
+
+### Happy {#ra9f73ad}
 
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
