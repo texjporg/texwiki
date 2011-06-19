@@ -874,7 +874,7 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 
 ## SumatraPDF との連携 (forward and inverse search) {#o54574a6}
 
-LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) または [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) に変更します．
+LaTeX コマンドのコマンドラインに -synctex=-1 を追加し，PDFView を [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) に変更します．
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
