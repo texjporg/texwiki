@@ -36,6 +36,8 @@ pukiwiki: "秀丸エディタ"
 
 ## マクロ {#m32041fb}
 
+### 祝鳥 (のりてふ) {#mdf32e5b}
+
 - [祝鳥 (のりてふ)](http://www.math.sci.hokudai.ac.jp/~abenori/soft/fortex.html)
     (阿部 紀行 (あべのり) さん)
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
@@ -44,6 +46,10 @@ pukiwiki: "秀丸エディタ"
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
     - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
     - [TeX---小技集（祝鳥関連）](http://imi.kyushu-u.ac.jp/~ssaito/jpn/tex/tips/nori.html)
+- [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
+    (阿部 紀行 (あべのり) さん)
+
+#### Adobe Reader X の DDE に対応させる {#g620bb9d}
 
 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に
 
@@ -52,6 +58,10 @@ Adobe系とのDDE接続に失敗．
 ```
 
 のエラーメッセージが表示され，PDF ファイルが表示されません．
+
+DDE接続を使わなくてもよい場合は \[マクロ(M)\]-\[祝鳥(1)\]-\[プログラム設定(O)\]-\[Adobe Readerの設定\]-\[操作タイプ\]-\[直接起動\] を指定してください．
+
+祝鳥は SumatraPDF にも対応しているので Adobe Reader の代わりに SumatraPDF を使っても OK です．
 
 Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました．
 
@@ -127,84 +137,108 @@ DDEClose:
 ...
 ```
 
+#### 保護違反 {#m28c9ec8}
+
 秀丸エディタ Version 8.04 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
 ***
 
-エラー<br>
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>エラー</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <br>
 
-× 秀丸エディタのプロセスで保護違反が発生しました。秀丸エディタは<br>
-異常終了します。
+　　× 秀丸エディタのプロセスで保護違反が発生しました。秀丸エディタは<br>
+　　異常終了します。
 
-秀丸エディタの異常終了についての詳細情報は、秀丸エディタをイン<br>
-ストールしたフォルダ (またはマイドキュメント) にあるdump.txtフ<br>
-ァイルに出力されています。
+　　秀丸エディタの異常終了についての詳細情報は、秀丸エディタをイン<br>
+　　ストールしたフォルダ (またはマイドキュメント) にあるdump.txtフ<br>
+　　ァイルに出力されています。
 
-Program Filesに出力されている場合は、エクスプローラで「互換性フ<br>
-ァイル」をクリックすると表示されます。
+　　Program Filesに出力されている場合は、エクスプローラで「互換性フ<br>
+　　ァイル」をクリックすると表示されます。
 
 ***
 
-エラー<br>
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>エラー</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <br>
 
-！ プログラムが終了する前に、最後に１回だけ保存を試みることができ<br>
-ます。
+<br>
 
-既にメモリが破壊されている場合、保存処理そのものが失敗するか、<br>
-壊れた内容を出力するかもしれません。
+　　！ プログラムが終了する前に、最後に１回だけ保存を試みることができ<br>
+　　ます。
 
-もし保存する場合は、必ず別名で保存してください。<br>
-(旧タイプのダイアログを使うので拡張子まで入力する必要がありま<br>
-す)
+　　既にメモリが破壊されている場合、保存処理そのものが失敗するか、<br>
+　　壊れた内容を出力するかもしれません。
+
+　　もし保存する場合は、必ず別名で保存してください。<br>
+　　(旧タイプのダイアログを使うので拡張子まで入力する必要がありま<br>
+　　す)
 
 ***
 
-ファイルの保存<br>
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>ファイルの保存</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <br>
 
-ファイル名(N):　<ins>(必ず別名で保存してください).txt</ins>　　　\[　　　　OK　　　　\]<br>
-フォルダ:　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ｷｬﾝｾﾙ\] \[削除(E)\]<br>
-　ファイル(F):　　　　　　フォルダ(D):
+　　ファイル名(N):　<span style="color:White;background-color:#1188FF;"><ins>(必ず別名で保存してください).txt</ins></span>　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span><br>
+　　フォルダ:　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ｷｬﾝｾﾙ\]</span> <span style="color:Black;background-color:#EEEEEE;">\[削除(E)\]</span><br>
+　　　ファイル(F):　　　　　　フォルダ(D):
 
 ***
 
 TeX ファイルを編集しているときは補完候補が表示されます．
 
+### RaTeX0e {#s1e27527}
+
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
     (福中 公輔 さん)
+
+### AutoHotKey スクリプト {#va7fd93d}
 
 - [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
     (谷内 稜 さん)
 
-- [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
-    (阿部 紀行 (あべのり) さん)
+### 秀丸エディタで LaTeX {#ubdba7fd}
 
 - [秀丸エディタで LaTeX (hidemacro-070502.tar.gz)](http://www.cymric.jp/old/tex/hidemaru.html)
     (Maxima 普及委員会)
 
+### 秀丸で簡単コンパイル {#m6700653}
+
 - [秀丸で簡単コンパイル](http://outsider.imawamukashi.com/TeX/hidemacro.html)
     (Outsider's Website)
+
+### トリビュート {#qac4762a}
 
 - [トリビュート](http://www.vector.co.jp/soft/win95/writing/se259789.html), [LaTeX2e 用強調表示定義ファイル](http://homepage2.nifty.com/masema/software/LaTeX_hilight.html)
     (ませま さん)
 
+### LaTeX Compile HIDEMARU Macro {#w6e15581}
+
 - [LaTeX Compile HIDEMARU Macro (LaTeXコンパイル用秀丸マクロ)](http://hide.maruo.co.jp/lib/macro/lcm11.html)
     (岩里 さん)
 
+### TeX用改行コード挿入マクロ {#ndf01264}
+
 - [TeX用改行コード挿入マクロ](http://hide.maruo.co.jp/lib/macro/il-fc093.html) (haze さん)
+
+### TeX Module Control with HIDEMARU Macro {#rff2c60d}
+
 - [TeX Module Control with HIDEMARU Macro](http://www.ceres.dti.ne.jp/~sugiura/hidemaru/macros/tex_mc/index.html)
     (杉浦 方紀 さん)
+
+### LaTeX コンパイル支援マクロ {#ob9080ba}
 
 - [LaTeX コンパイル支援マクロ](http://www.seman.cs.uec.ac.jp/~inuzuka/hidemac.html)
     (犬塚 敦史 さん)
 
+### TeXMAC, Gui-Shell {#ld68541f}
+
 - [TeXMAC](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html), [Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
     (乙部 厳己 さん)
+
+### 飛鳥 (ひちょう) HiTeX {#y3147877}
 
 - [飛鳥 (ひちょう) HiTeX](http://www.yatex.org/HiTeX/)
     (安田 晴行 さん)
