@@ -601,6 +601,8 @@ main();
 
 ## スクリプト {#jd5ec718}
 
+### Happy {#dad3b2d6}
+
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
