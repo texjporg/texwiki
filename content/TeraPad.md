@@ -332,7 +332,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfepuLaTeXA {#w969cf5c}
+### pdfeupLaTeXA {#w969cf5c}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -817,6 +817,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - エディタ画面を右クリック → \[ツール(S)\] → \[Mendex\]
 
 ## スクリプト {#d597deba}
+
+### Happy {#mf4ce610}
 
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
