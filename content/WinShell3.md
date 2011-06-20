@@ -834,7 +834,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ### 日本語のマニュアル {#uf5a572b}
 
-「[いろんな文書の翻訳 #WinShell のマニュアル](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5#p12)」
+「[いろんな文書の翻訳 #WinShell のマニュアル](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)」
 において WinShell 附属のマニュアルを日本語訳して公開しています。
 （← これは 3.0 附属のものです。現行のバージョンとは多少違いがあります）
 
