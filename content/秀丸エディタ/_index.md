@@ -206,7 +206,7 @@ TeX ファイルを編集しているときは補完候補が表示されます�
 
 ### 秀丸で簡単コンパイル {#m6700653}
 
-- [秀丸で簡単コンパイル](http://outsider.imawamukashi.com/TeX/hidemacro.html)
+- [秀丸で簡単コンパイル](http://imawamukashi.web.fc2.com/TeX/hidemacro.html)
     (Outsider's Website)
 
 ### トリビュート {#qac4762a}
