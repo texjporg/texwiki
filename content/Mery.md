@@ -595,9 +595,10 @@ main();
 
 ***
 
-### その他マクロ {#n2ac0dc8}
+### MeryからTeXのコンパイル＆PDF生成ができるようにする (LaTeXMacro.js + makepdf.ps1) {#n2ac0dc8}
 
 - [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
+- [TeXをWindowsで使う(まとめ)](http://blog.kassyi.com/2011/05/texwindows.html)
 
 ## スクリプト {#jd5ec718}
 
@@ -685,8 +686,3 @@ C:\Mery\Mery.exe /l %l "%f"
 ```
 C:\Mery\Mery.exe^s /l %d "%s"
 ```
-
-## 関連リンク {#p472f070}
-
-- [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
-- [TeXをWindowsで使う(まとめ)](http://blog.kassyi.com/2011/05/texwindows.html)
