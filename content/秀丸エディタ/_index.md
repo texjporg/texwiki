@@ -61,7 +61,90 @@ Adobe系とのDDE接続に失敗．
 
 DDE接続を使わなくてもよい場合は \[マクロ(M)\]-\[祝鳥(1)\]-\[プログラム設定(O)\]-\[Adobe Readerの設定\]-\[操作タイプ\]-\[直接起動\] を指定してください．
 
-祝鳥は SumatraPDF にも対応しているので Adobe Reader の代わりに SumatraPDF を使っても OK です．
+***
+
+　　begin型(B)<br>
+　　section型(S)<br>
+　　large型(L)<br>
+　　maketitle型(M)<br>
+　　accent型(A)<br>
+　　ギリシャ文字補完(J)<br>
+　　タイプセット(T)<br>
+　　\end{???}補完(E)<br>
+　　対応するものへの移動(G)<br>
+　　コメント操作(C)<br>
+　　補完(H)<br>
+　　イメージ補完(;)<br>
+　　お手伝いさん(U)<br>
+　　ispellでスペルチェック(P)<br>
+　　BibTeXデータベース検索(\[)<br>
+　　マニュアルを開く(I)<br>
+<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
+
+***
+
+　　TeX→DVIの設定<br>
+　　DVI→PDFの設定<br>
+　　DVI→PSの設定<br>
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　Adobe Readerの設定　　　　　　　　　　　　　　　</span><br>
+
+　　SumatraPDFの設定<br>
+　　GSViewの設定<br>
+　　各種プログラム及びメニューの設定...<br>
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+　　Adobe Readerのパス...：現在はC:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe<br>
+<span style="color:Black;background-color:#DAEAFF;">　　操作タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+　　ウィンドウサイズ<br>
+
+***
+
+<span style="color:Black;background-color:#DAEAFF;">　　直接起動　　　　　　　　　　　　　　　　</span><br>
+
+　　★ DDE<br>
+　　OLE (Adobe Acrobatのみ)<br>
+
+***
+
+祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
+
+***
+
+　　TeX→DVIの設定<br>
+　　DVI→PDFの設定<br>
+　　DVI→PSの設定<br>
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+　　Adobe Readerの設定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　SumatraPDFの設定　　　　　　　　　　　　　　　</span><br>
+
+　　GSViewの設定<br>
+　　各種プログラム及びメニューの設定...<br>
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+　　SumatraPDFのパス...：現在はC:\Program Files\SumatraPDF\SumatraPDF.exe<br>
+　　操作タイプ<br>
+　　ウィンドウサイズ<br>
+<span style="color:Black;background-color:#DAEAFF;">　　SyncTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+　　★ 使用しない<br>
+　　利用する<br>
+<span style="color:Black;background-color:#DAEAFF;">　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　</span><br>
+
+***
 
 Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました．
 
