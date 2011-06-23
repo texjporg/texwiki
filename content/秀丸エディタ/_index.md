@@ -224,6 +224,14 @@ DDEClose:
 
 秀丸エディタ Version 8.04 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
+dump.txt が，秀丸エディタをインストールしたフォルダまたはマイドキュメントにない場合は
+
+```
+%USERPROFILE%\AppData\Local\VirtualStore\Program Files\Hidemaru\dump.txt
+```
+
+にあるかもしれません．
+
 ***
 
 <span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>エラー</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
