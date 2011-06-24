@@ -21,7 +21,7 @@ EasyTeX は Windows 7, Vista, XP, 2000, 98 上で動作する国産でフリー�
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
-2011年3月16日に EasyTeX Verson 3.233 が公開されました．
+2011年6月23日に EasyTeX Verson 3.234 が公開されました．
 
 - [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
     - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
@@ -130,15 +130,17 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　　　　　◯英語<br>
 　　　　　TeXコンパイラ　　　　　　 　 　☑source special<br>
 　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　　　　 epLaTeX　　　 　 　　　　 　 　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
-　　　　　 jPlain　　　　　　　　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
+　　　　　 jPlain　　　　　　　　　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
+　　　　　 latexcompile　 　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
-TeX コンパイラを指定します．
+TeX コンパイラとオプションを設定します．
 
-pLaTeX を選択します．
+言語は日本語を選択します．
+
+TeX コンパイラは pLaTeX を選択します．
 
 source special にチェックを入れます．
 
@@ -506,11 +508,11 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3233\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3234\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\easytex3233\EasyTeX.exe
+`easytex easytex +%d %s``C:\easytex3234\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
@@ -549,7 +551,6 @@ EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しなが
 
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
-    <!-- -[[LaTeXとか - PukiWiki:http://www.2009-s1-34.com/index.php?LaTeX%A4%C8%A4%AB]] -->
 
 ## Comments {#etacm8ab}
 
