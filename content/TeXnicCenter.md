@@ -871,13 +871,21 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 
 \[Build\]-\[Build and View Output\] でビルドと表示ができます．
 
-## SumatraPDF との連携 (inverse search) {#yfd68060}
+## SumatraPDF との連携 (forward and inverse search) {#yfd68060}
+
+forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．
+
+inverse search は Executable path に追加する代わりに SumatraPDF に以下の設定を追加しても OK です．
 
 ```
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe /ddecmd "[goto('%f', '%l')]"
 ```
 
-## dviout との連携 (inverse search) {#r45cf8d1}
+## dviout との連携 (forward and inverse search) {#r45cf8d1}
+
+forward search は DVI Viewer の [dviout](/TeXnicCenter/#hc739c1c) の項を参考に設定してください．
+
+inverse search は dviout に以下の設定を追加すれば OK です．
 
 ```
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
