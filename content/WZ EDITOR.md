@@ -38,14 +38,17 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
     - [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
-- [WZsoft > WZ エディタ 7 > チュートリアル > リサーチ入力とIME](http://www.wzsoft.jp/wz7/wza.htm)
+- [WZsoft > WZ エディタ 7 > チュートリアル > リサーチ入力/IME](http://www.wzsoft.jp/wz7/wza.htm)
+- [WZsoft > WZ エディタ 7 > チュートリアル > リサーチ入力](http://www.wzsoft.jp/wz7/a_rsime.htm)
+- [WZsoft > WZ エディタ 7 > チュートリアル > TeX](http://www.wzsoft.jp/wz7/a_tex.htm)
 - [WZsoft > WZ エディタ 7 > チュートリアル > WZ-リサーチ入力](http://www.wzsoft.jp/wz7/wza_002.htm)
 - [WZsoft > WZ エディタ 7 > チュートリアル > TeXリサーチ入力](http://www.wzsoft.jp/wz7/wza_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > 基本操作](http://www.wzsoft.jp/wz7/help_002.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > IME/入力](http://www.wzsoft.jp/wz7/help_003.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > TeX](http://www.wzsoft.jp/wz7/help_006.htm)
 - [WZsoft > WZ エディタ 7 > オンラインヘルプ > プログラム](http://www.wzsoft.jp/wz7/help_007.htm)
-- [WZsoft > WZ エディタ 7 > FAQ > TeX](http://www.wzsoft.jp/wz7/faq_008.htm)
+- [WZsoft > WZ エディタ 7 > FAQ > はじめに](http://www.wzsoft.jp/wz7/faq.htm)
+- [WZsoft > WZ エディタ 7 > FAQ > TeX](http://www.wzsoft.jp/wz7/texfaq.htm)
 
 ### 対応 OS {#r7bfdbf1}
 
