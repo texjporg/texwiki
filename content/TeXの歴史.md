@@ -76,13 +76,13 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">1991</td><td>10</td><td style="text-align:center"></td><td>片山紀生 氏により，Ghostscript ver. 2.3用日本語化パッケージがリリースされる．</td></tr>
 <tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>奥村晴彦『LaTeX 美文書作成入門』が出版される。</td></tr>
 <tr><td style="text-align:center">1992</td><td style="text-align:right">5</td><td style="text-align:center"></td><td>片山紀生 氏により，Ghostscript ver. 2.4用日本語化パッケージがリリースされる．</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:right">6</td><td style="text-align:center"></td><td>松下電機産業の宮部義幸，垣内隆志，楠見雄規 氏により，jdvi2kps 3.0 がリリースされる．</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">6</td><td style="text-align:center"></td><td>松下電器産業の宮部義幸，垣内隆志，楠見雄規 氏により，jdvi2kps 3.0 がリリースされる．</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">8</td><td style="text-align:center"></td><td>邦訳『改訂新版 TeXブック』が出版される。</td></tr>
 <tr><td style="text-align:center">1993</td><td style="text-align:right">9</td><td style="text-align:center"></td><td>xdvi patch level 17に対するパッチをまとめた miyu-patch for xdvi PL17 が すぎうら しげき氏によってリリースされる。</td></tr>
 <tr><td style="text-align:center"></td><td>11</td><td style="text-align:center"></td><td>SeeTeX-2.19に対する日本語化パッチSeeTeX-2.19Jが籠谷裕人 氏によってリリースされる，</td></tr>
 <tr><td style="text-align:center"></td><td>12</td><td>LaTeX2e が公開される。</td><td></td></tr>
 <tr><td style="text-align:center">1994</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>片山紀生 氏により，Ghostscript ver. 2.6.1用日本語化パッケージがリリースされる．</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:right">3</td><td style="text-align:center"></td><td>松下電機産業の宮部義幸，垣内隆志，楠見雄規 氏により，jdvi2kps 4.0 がリリースされる．</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">3</td><td style="text-align:center"></td><td>松下電器産業の宮部義幸，垣内隆志，楠見雄規 氏により，jdvi2kps 4.0 がリリースされる．</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">8</td><td style="text-align:center"></td><td>北川勝浩 氏によりdvips日本語PostScriptキット (dvips jkit-1.0)がリリースされる．NTT JTeX用．</td></tr>
 <tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>奥村晴彦『LaTeX 入門』が出版される。</td></tr>
 <tr><td style="text-align:center">1995</td><td>11</td><td style="text-align:center"></td><td>アスキーが pTeX バージョン2 と pLaTeX2e を公開する。</td></tr>
