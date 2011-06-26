@@ -132,7 +132,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\platex.exe
 
 引数
-: -guess-input-enc -synctex=-1 -src-specials "%F"
+: -guess-input-enc -synctex=1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
@@ -172,11 +172,31 @@ Topic
 Macro
 : \[PageOpen(# %l %F)\]\[WinNormal\]\[FileOpen("%D")\]
 
+#### TeXworks {#red004a1}
+
+DVI ファイルを表示する必要がない場合は，Dvi Viewer に TeXworks を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
+
+フルパス
+: C:\w32tex\share\texworks\TeXworks.exe
+
+引数
+: "%X.pdf"
+
+DDE
+: ☐DDEを使用する
+
+Service
+: &nbsp;
+
+Topic
+: &nbsp;
+
+Macro
+: &nbsp;
+
 #### SumatraPDF {#ff11f3ec}
 
 DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
-
-- Dvi Viewer
 
 フルパス
 : C:\Program Files\SumatraPDF\SumatraPDF.exe
@@ -195,6 +215,8 @@ Topic
 
 Macro
 : \[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]\[Open("%X.pdf",0,1,1)\]
+
+<!-- :Macro|■ 2011/05/11 以降の W32TeX (synctex ファイルに記述されているソースファイル名が dirname/./basename.tex) の場合&br;[ForwardSearch("%X.pdf","%p\.\%f",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br;■ 2011/05/10 以前の W32TeX (synctex ファイルに記述されているソースファイル名が basename.tex) の場合&br;[ForwardSearch("%X.pdf","%F",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br; -->
 
 ### Dvi to Pdf {#w081339b}
 
