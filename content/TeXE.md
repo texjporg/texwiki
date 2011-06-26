@@ -176,6 +176,8 @@ Macro
 
 DVI ファイルを表示する必要がない場合は，Dvi Viewer に TeXworks を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
 
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
 フルパス
 : C:\w32tex\share\texworks\TeXworks.exe
 
@@ -216,7 +218,7 @@ Topic
 Macro
 : \[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]\[Open("%X.pdf",0,1,1)\]
 
-<!-- :Macro|■ 2011/05/11 以降の W32TeX (synctex ファイルに記述されているソースファイル名が dirname/./basename.tex) の場合&br;[ForwardSearch("%X.pdf","%p\.\%f",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br;■ 2011/05/10 以前の W32TeX (synctex ファイルに記述されているソースファイル名が basename.tex) の場合&br;[ForwardSearch("%X.pdf","%F",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br; -->
+<!-- :Macro|■ synctex ファイルに記述されているソースファイル名が dirname/./basename.tex の場合&br;[ForwardSearch("%X.pdf","%p\.\%f",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br;■ synctex ファイルに記述されているソースファイル名がフルパスまたは basename.tex の場合&br;[ForwardSearch("%X.pdf","%F",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br; -->
 
 ### Dvi to Pdf {#w081339b}
 
@@ -261,6 +263,19 @@ C:\texe022i\TeXE.exe^s /j%d "%s"
 - 外部ツール
 
 \[追加\]
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
+- 追加/変更
+
+表示名
+: TeXworks
+
+コマンド
+: C:\w32tex\share\texworks\TeXworks.exe "%X.pdf"
+
+パス
+: <br>
 
 - 追加/変更
 
