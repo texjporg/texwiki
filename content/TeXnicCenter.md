@@ -707,6 +707,47 @@ LaTeX => PS => PDF<br>
 LuaLaTeX => PDF<br>
 XeLaTeX => PDF<br>
 
+#### TeXworks {#ef4e474a}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\w32tex\share\texworks\TeXworks.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>"%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>"%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+***
+
 #### SumatraPDF {#pdc24230}
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
