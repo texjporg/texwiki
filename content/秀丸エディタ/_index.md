@@ -115,6 +115,8 @@ DDE接続を使わなくてもよい場合は \[マクロ(M)\]-\[祝鳥(1)\]-\[�
 
 祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
 
+2011/05/11 以降の W32TeX の場合は SyncTeX の仕様変更により SumatraPDF での forward search ができなくなっているので，forward search で渡す TeX ファイル名を synctex ファイルに記述されているファイル名 (例えば C:/TeX/./example.tex など．コンパイルするときに TeX ファイルをフルパス (C:\TeX\example.tex) で指定したばあいは C:/TeX/example.tex) になるように修正すれば大丈夫です．
+
 ***
 
 　　TeX→DVIの設定<br>
