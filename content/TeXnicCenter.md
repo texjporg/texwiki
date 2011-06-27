@@ -752,30 +752,6 @@ Close document before running (La)TeX<br>
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
-<!-- ■ 2011/05/11 以降の W32TeX (synctex ファイルに記述されているソースファイル名が dirname/./basename.tex) の場合 -->
-<!-- - --  -->
-<!-- &color(Black,#ACDEFE){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){%%%[ 　''&color(White){✕};''　 ]%%%}; %%%};&br; -->
-<!-- &color(Black,#EEEEEE){%%%[ (La)TeX　　　][ Postprocessor ]%%%};''[ Viewer　　　]''&br; -->
-<!-- Executable path&br; -->
-<!-- &br; -->
-<!-- %%%C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe\" /ddecmd \"[goto('%f', //'%l')]\""%%%&br; -->
-<!-- &br; -->
-<!-- View project's output&br; -->
-<!-- ◯ Command line argument　　&color(#3333CC){◎}; DDE command&br; -->
-<!-- Command %%%[Open("%bm.pdf",0,1,1)]%%%&br; -->
-<!-- Server: %%%SUMATRA%%%　　Topic: %%%control%%%&br; -->
-<!-- &br; -->
-<!-- Forward search&br; -->
-<!-- ◯ Command line argument　　&color(#3333CC){◎}; DDE command&br; -->
-<!-- Command %%%[ForwardSearch("%bm.pdf","%Dm/./%nc",%l,0,0,1)]%%%&br; -->
-<!-- Server: %%%SUMATRA%%%　　Topic: %%%control%%%&br; -->
-<!-- &br; -->
-<!-- Close document before running (La)TeX&br; -->
-<!-- ◯ Command line argument　◯ DDE command　　&color(#3333CC){◎}; Do not close&br; -->
-<!-- - --  -->
-<!--  -->
-<!-- ■ 2011/05/10 以前の W32TeX (synctex ファイルに記述されているソースファイル名が basename.tex) の場合 -->
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
