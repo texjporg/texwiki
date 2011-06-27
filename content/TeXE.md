@@ -218,8 +218,6 @@ Topic
 Macro
 : \[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]\[Open("%X.pdf",0,1,1)\]
 
-<!-- :Macro|■ synctex ファイルに記述されているソースファイル名が dirname/./basename.tex の場合&br;[ForwardSearch("%X.pdf","%p\.\%f",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br;■ synctex ファイルに記述されているソースファイル名がフルパスまたは basename.tex の場合&br;[ForwardSearch("%X.pdf","%F",%l,0,0,1)][Open("%X.pdf",0,1,1)]&br; -->
-
 ### Dvi to Pdf {#w081339b}
 
 フルパス
