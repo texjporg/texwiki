@@ -707,7 +707,7 @@ LaTeX => PS => PDF<br>
 LuaLaTeX => PDF<br>
 XeLaTeX => PDF<br>
 
-#### TeXworks {#ef4e474a}
+#### [TeXworks](/TeXworks/) {#ef4e474a}
 
 [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
 
