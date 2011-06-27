@@ -700,12 +700,14 @@ hyperrefパッケージをデフォルトで読み込む．
 の前に以下を入力
 
 ```
+\ifx\kanjiskip\undefined\else
+\ifx\ucs\undefined
 \usepackage{atbegshi}
 \ifnum 42146=\euc"A4A2
   \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
 \else
   \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-\fi
+\fi\fi\fi
 ```
 
 \usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまいます．
