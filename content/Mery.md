@@ -33,6 +33,7 @@ Mery は
     - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
 - [窓の杜 - Mery](http://www.forest.impress.co.jp/lib/offc/document/txteditor/mery.html)
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
+- [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
 
 ## マクロ {#oa5f5cea}
 
