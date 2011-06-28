@@ -914,9 +914,13 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 
 ## SumatraPDF との連携 (forward and inverse search) {#yfd68060}
 
+```
+Command line arguments to pass to the compiler: に -synctex=1 を追加します．
+```
+
 forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．
 
-inverse search は Executable path に追加する代わりに SumatraPDF に以下の設定を追加しても OK です．
+inverse search は Executable path に追加する代わりに SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の設定を追加しても OK です．
 
 ```
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe /ddecmd "[goto('%f', '%l')]"
@@ -924,9 +928,13 @@ C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe /ddecmd "[goto('%f', '%l')]
 
 ## dviout との連携 (forward and inverse search) {#r45cf8d1}
 
+```
+Command line arguments to pass to the compiler: に -src-specials を追加します．
+```
+
 forward search は DVI Viewer の [dviout](/TeXnicCenter/#hc739c1c) の項を参考に設定してください．
 
-inverse search は dviout に以下の設定を追加すれば OK です．
+inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に以下の設定を追加すれば OK です．
 
 ```
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
