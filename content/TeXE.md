@@ -236,13 +236,29 @@ Macro
 
 \[ツール(T)\]-\[TeX自動処理(A)\] で TeX ファイルをコンパイルして表示してくれます．
 
-## SumatraPDF との連携 (inverse search) {#u9ba0f1e}
+## SumatraPDF との連携 (forward and inverse search) {#u9ba0f1e}
+
+```
+TeX の引数に -synctex=1 を追加します．
+```
+
+forward search は Dvi Viewer の SumatraPDF を参照してください．
+
+inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
 C:\texe022i\TeXE.exe /j%l "%f"
 ```
 
-## dviout との連携 (inverse search) {#u0ce365d}
+## dviout との連携 (forward and inverse search) {#u0ce365d}
+
+```
+TeX の引数に -src-specials を追加します．
+```
+
+forward search は Dvi Viewer の dviout を参照してください．
+
+inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
 ```
 C:\texe022i\TeXE.exe^s /j%d "%s"
