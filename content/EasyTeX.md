@@ -21,7 +21,7 @@ EasyTeX は Windows 7, Vista, XP, 2000, 98 上で動作する国産でフリー�
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
-2011年6月23日に EasyTeX Verson 3.234 が公開されました．
+2011年6月27日に EasyTeX Verson 3.235 が公開されました．
 
 - [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
     - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
@@ -508,11 +508,11 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 ## EasyTeX と dviout との連携 (source special) {#etsa7019}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3234\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3235\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\easytex3234\EasyTeX.exe
+`easytex easytex +%d %s``C:\easytex3235\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
