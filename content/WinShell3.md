@@ -912,7 +912,7 @@ LaTeX コマンドのコマンドラインに -synctex=1 を追加し，PDFView 
 
 WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても自動的に実行してくれます．
 
-ただし，2011/05/11 以降の W32TeX の場合は SumatraPDF による forward search は工夫しなければできません．
+ただし，2011/05/11 以降の W32TeX の場合は SumatraPDF による forward search は工夫しなければできません．(ヒント → [Vim-LaTeX#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d))
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
