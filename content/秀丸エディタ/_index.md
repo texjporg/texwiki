@@ -113,41 +113,6 @@ DDE接続を使わなくてもよい場合は \[マクロ(M)\]-\[祝鳥(1)\]-\[�
 
 ***
 
-祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
-
-2011/05/11 以降の W32TeX の場合は SyncTeX の仕様変更により SumatraPDF での forward search ができなくなっているので，forward search で渡す TeX ファイル名を synctex ファイルに記述されているファイル名 (例えば C:/TeX/./example.tex など．コンパイルするときに TeX ファイルをフルパス (C:\TeX\example.tex) で指定したばあいは C:/TeX/example.tex) になるように修正すれば大丈夫です．
-
-***
-
-　　TeX→DVIの設定<br>
-　　DVI→PDFの設定<br>
-　　DVI→PSの設定<br>
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-　　Adobe Readerの設定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　SumatraPDFの設定　　　　　　　　　　　　　　　</span><br>
-
-　　GSViewの設定<br>
-　　各種プログラム及びメニューの設定...<br>
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-　　SumatraPDFのパス...：現在はC:\Program Files\SumatraPDF\SumatraPDF.exe<br>
-　　操作タイプ<br>
-　　ウィンドウサイズ<br>
-<span style="color:Black;background-color:#DAEAFF;">　　SyncTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
-　　★ 使用しない<br>
-　　利用する<br>
-<span style="color:Black;background-color:#DAEAFF;">　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　</span><br>
-
-***
-
 Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました．
 
 (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)．
@@ -221,6 +186,141 @@ DDEClose:
                         ddeexecute "[AppExit()]";
 ...
 ```
+
+#### 2011/05/11 以降の W32TeX で SumatraPDF の forward search に対応させる {#q78f9338}
+
+祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
+
+2011/05/11 以降の W32TeX の場合は synctex ファイルに記述されているファイル名がそれまでのものと異なっており，SumatraPDF での forward search ができなくなっているので (祝鳥をインストールしたフォルダ)\fortex\sub\package\sumatra\preview.mac を修正します．
+
+修正前
+
+```
+ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + basename + "\"," + str(lineno) + "," + str(column) + ")]";
+```
+
+修正後
+
+```
+ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(lineno) + "," + str(column) + ")]";
+```
+
+***
+
+　　begin型(B)<br>
+　　section型(S)<br>
+　　large型(L)<br>
+　　maketitle型(M)<br>
+　　accent型(A)<br>
+　　ギリシャ文字補完(J)<br>
+　　タイプセット(T)<br>
+　　\end{???}補完(E)<br>
+　　対応するものへの移動(G)<br>
+　　コメント操作(C)<br>
+　　補完(H)<br>
+　　イメージ補完(;)<br>
+　　お手伝いさん(U)<br>
+　　ispellでスペルチェック(P)<br>
+　　BibTeXデータベース検索(\[)<br>
+　　マニュアルを開く(I)<br>
+<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
+
+***
+
+　　TeX→DVIの設定<br>
+　　DVI→PDFの設定<br>
+　　DVI→PSの設定<br>
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+　　Adobe Readerの設定<br>
+　　SumatraPDFの設定<br>
+　　GSViewの設定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　各種プログラム及びメニューの設定...　　　　　　　　</span><br>
+
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>メニューの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　タイトル　　　PDFに変換して表示<br>
+...<br>
+　　プレビュー<br>
+　　SumatraPDF<br>
+
+***
+
+<span style="color:Black;background-color:#DAEAFF;">　　TeX→DVIの設定　　　　　　　　　　　　　　　　　　</span><br>
+
+　　DVI→PDFの設定<br>
+　　DVI→PSの設定<br>
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+　　Adobe Readerの設定<br>
+　　SumatraPDFの設定<br>
+　　GSViewの設定<br>
+　　各種プログラム及びメニューの設定...<br>
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+　　動作<br>
+　　フォーマットファイルの指定<br>
+　　追加するオプション...：現在は (無し)<br>
+　　-jobnameでファイル名を指定<br>
+　　漢字コードの指定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　ソースとの同期　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+　　複数コンパイルの推定<br>
+　　コンパイルの最大繰り返し数...：現在は10回<br>
+　　BibTeXの設定<br>
+　　MakeIndexの設定<br>
+
+***
+
+　　★ 使わない<br>
+　　常にsource specialsを使う<br>
+　　draftオプション指定時のみsource specialsを使う<br>
+<span style="color:Black;background-color:#DAEAFF;">　　常にSyncTeXを使う　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+　　draftオプション指定時のみSyncTeXを使う<br>
+
+***
+
+　　TeX→DVIの設定<br>
+　　DVI→PDFの設定<br>
+　　DVI→PSの設定<br>
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+　　Adobe Readerの設定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　SumatraPDFの設定　　　　　　　　　　　　　　　</span><br>
+
+　　GSViewの設定<br>
+　　各種プログラム及びメニューの設定...<br>
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+　　SumatraPDFのパス...：現在はC:\Program Files\SumatraPDF\SumatraPDF.exe<br>
+　　操作タイプ<br>
+　　ウィンドウサイズ<br>
+<span style="color:Black;background-color:#DAEAFF;">　　SyncTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+　　★ 使用しない<br>
+　　利用する<br>
+<span style="color:Black;background-color:#DAEAFF;">　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　</span><br>
+
+***
 
 #### 保護違反 {#m28c9ec8}
 
