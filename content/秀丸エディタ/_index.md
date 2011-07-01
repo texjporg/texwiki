@@ -187,11 +187,11 @@ DDEClose:
 ...
 ```
 
-#### 2011/05/11 以降の W32TeX で SumatraPDF の forward search に対応させる {#q78f9338}
+#### SumatraPDF との連携 (forward and inverse search) {#q78f9338}
 
 祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
 
-2011/05/11 以降の W32TeX の場合は synctex ファイルに記述されているファイル名がそれまでのものと異なっており，SumatraPDF での forward search ができなくなっているので (祝鳥をインストールしたフォルダ)\fortex\sub\package\sumatra\preview.mac を修正します．
+SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は (祝鳥をインストールしたフォルダ)\fortex\sub\package\sumatra\preview.mac を修正します．
 
 修正前
 
