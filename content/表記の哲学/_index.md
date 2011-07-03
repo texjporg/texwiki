@@ -92,11 +92,11 @@ bold もしくは gothic体？ （もしくはbold gothic体？）
 - 日本の伝統は前者（wave dash）
     - 日本語テキスト中では日本の伝統に従う「○○○〜○○○」が良いだろう．ただし，欧米人は日本の伝統を知らないので，〜をみると“similar to”の意味 (大体，オーダーは等しく) にしか取らない．
     - 全て半角を用いて「○○○〜○○○」を書き表す場合，TeXでは $\sim$（これは半角文字）を使用（\\-- を定義例: \def\\--{$\sim$} ）
-        - TeX では、$\sim$ を wave dash と freestanding tilde (= “similar to”) の両方を表すのに用いられる．
+        - TeX では、$\sim$ は wave dash と freestanding tilde (= “similar to”) の両方を表すのに用いられる．
             <!-- とを異なる文字としては区別しない扱い。 -->
     - もしも全て全角を用いて「○○○〜○○○」を書き表したい場合は，〜(U+301C、wave dash)．
         - 〜(U+301C、wave dash) は，～(U+FF5E、fullwidth tilde) とは異なる文字である。両者は字形がほとんど同じであったり違ったりすることがある (フォントに依存)
-        - いわゆる波ダッシュ問題．前者は初期の Unicode 規格書の U+301C（波ダッシュ）の説明に由来し，後者は Microsoft のコード変換 (cp932)に由来する．
+        - これは、いわゆる波ダッシュ問題．前者は初期の Unicode 規格書の U+301C（波ダッシュ）の説明に由来し，後者は Microsoft のコード変換 (cp932)に由来する．Microsoft Vista以降では前者を正しく表示可能のはず．
         - UTF-8 対応 pTeX (ptexenc ライブラリを使用) では，両者とも JIS X 0208 の 1区33点 として処理される．
         - Adobe の CMap の主要なもの (UniJIS-UTF16-H など) では，両者とも CID665 として処理される．
             <!-- （なおU+FF5EはUnicode 規格書では全角チルダとされる） -->
@@ -110,4 +110,4 @@ bold もしくは gothic体？ （もしくはbold gothic体？）
 #### 英語・略語等の提示 {#ra06ceb1}
 
 - 人によって各種の流儀が見られる．例：国際連合（United Nations: UN）．
-    - なお英語では“United Nations (UN)”となる。
+    - なお英語では“United Nations (UN)”という具合になる。
