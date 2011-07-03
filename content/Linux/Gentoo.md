@@ -146,6 +146,12 @@ gensyncを実行してツリーの取得します。
 
 とすれば、hogehogeのパッケージがemergeできます。 
 
+## 関連リンク {#ld62f64f}
+
+- [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)\]
+- [texlive2010 on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/10026283.html)
+- [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
+
 ***
 
 - すでにある程度の環境が整っているマシンでためした結果ですが，ptetex のコンパイルは正常に終了します． --  2005-11-10 (木) 21:55:12
