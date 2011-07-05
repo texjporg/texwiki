@@ -595,7 +595,7 @@ insert というフォルダを新たに作り，textemplate.tex という雛形
 TeX 文書を編集しているときにも，Word みたくスペルミスをチェックしてくれるソフトがあると便利です。
 そんな無料のスペルチェックソフトとして知られているのが Ispell，そして Ispell の機能をさらに拡張した Aspell です。
 
-xyzzy からは[角藤亮さんの移植した Ispell](http://w32tex.org/w32/) を呼び出すことはおそらくできません。亀井哲弥さんの移植した Ispell ([ispell-win32.lzh](http://www.jsdlab.co.jp/~kamei/ispell-win32.lzh)) は呼び出せますが，TeX の命令を無視する機能はないようです。
+xyzzy からは[角藤亮さんの移植した Ispell](ftp://ftp.kddilabs.jp/TeX/ptex-win32/w32/) を呼び出すことはおそらくできません。亀井哲弥さんの移植した Ispell ([ispell-win32.lzh](http://www.jsdlab.co.jp/~kamei/ispell-win32.lzh)) は呼び出せますが，TeX の命令を無視する機能はないようです。
 というわけで，TeX ファイルをスペルチェックするのであれば，Aspell および xyzzy からそれを呼び出す aspell.l を使うことをお勧めします。
 
 Aspell そのものは適切に日本語・アルファベット混じり文を無視してくれるというわけではありませんが，xyzzy から aspell.l 経由で使う場合には（筆者の確認した限りでは）日本語アルファベット混じり文（「これはtstです」のような文も含む）を完全に無視してくれます。
