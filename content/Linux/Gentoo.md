@@ -7,12 +7,26 @@ pukiwiki: "Linux/Gentoo"
 
 # Linux/Gentoo
 
+## [Gentoo](http://www.gentoo.org/) {#j8a08e75}
+
+## [Gentoo Linux](http://www.gentoo.org/) {#gdebd34f}
+
+## [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/) {#c18610d8}
+
+## TeX Live {#ld62f64f}
+
+- [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)
+- [texlive2010 on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/10026283.html)
+- [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
+- [GentooにTeX環境をインストールしてみた その2](http://d.hatena.ne.jp/jouzima/20101204/1291456449)
+- [GentooにTeX環境をインストールしてみた その3](http://d.hatena.ne.jp/jouzima/20101225/1293298575)
+
+## 日本語TeX環境の構築 {#da9a03a1}
+
 \[FIXME\] 以下の内容は少し古いですので、ご注意下さい。
 [ptetex3](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html) 
 をインストールされるのが良いです。
 ptetex3 の ebuild もそのうち準備しようと思っています。 <!-- もう ptetex3 の ebuild を書いておられる方はいますでしょうか？ -->
-
-## 日本語TeX環境の構築 {#da9a03a1}
 
 Gentoo Linux に日本語 TeX 環境を構築するためメモです。
 とりあえずあまりいじらずに、日本語が通って、
@@ -145,12 +159,6 @@ gensyncを実行してツリーの取得します。
 ```
 
 とすれば、hogehogeのパッケージがemergeできます。 
-
-## 関連リンク {#ld62f64f}
-
-- [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)\]
-- [texlive2010 on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/10026283.html)
-- [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
 
 ***
 
