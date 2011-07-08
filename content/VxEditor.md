@@ -26,80 +26,6 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 ツールの設定をすると TeraPad, Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
 
-### pdfLaTeXA {#jef6ef8d}
-
-<em>※注意</em>
-
-> <em>欧文専用です．日本語は使えません．</em>
-
-メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
-
-\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
-
-***
-
-<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
-
-　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
-
-　　　　設定
-
-　　　　　タイトル(T):<br>
-　　　　　<ins>pdfLaTeXA</ins><br>
-
-<br>
-
-　　　　　実行ファイル(P):<br>
-　　　　　<ins>cmd</ins><br>
-
-<br>
-
-　　　　　作業フォルダ(F):<br>
-
-<br>
-
-　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
-
-<br>
-
-　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
-　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
-
-***
-
-<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
-
-　　　　表示
-
-　　　　　 ☑ツールを有効にする(E)<br>
-　　　　　 ☑メインメニューに表示する(M)<br>
-　　　　　 ☑ポップアップメニューに表示する(P)<br>
-
-　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
-
-　　　　　 ☐ツールバーに表示する(T)<br>
-
-　　　　　　 アイコン(I):<br>
-
-　　　　起動
-
-　　　　　 ☑実行時にテキストを保存する(S)<br>
-
-　　　　　 ショートカット(H):　<ins>Shift + Alt + H</ins><br>
-
-***
-
-次のうちのどれかを実行
-
-- Shift + Alt + H を押す
-- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
-- エディタ画面を右クリック → \[pdfLaTeXA\]
-
-TeX ファイルがコンパイルされ PDF ファイルが表示されます．
-
 ### pdfpLaTeXA {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
@@ -377,6 +303,80 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - Shift + Alt + K を押す
 - メニューの \[ツール(T)\] → \[pdfeupLaTeX2A\]
 - エディタ画面を右クリック → \[pdfeupLaTeX2A\]
+
+TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+### pdfLaTeXA {#jef6ef8d}
+
+<em>※注意</em>
+
+> <em>欧文専用です．日本語は使えません．</em>
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$FILENAME" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Shift + Alt + H</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Shift + Alt + H を押す
+- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
+- エディタ画面を右クリック → \[pdfLaTeXA\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
