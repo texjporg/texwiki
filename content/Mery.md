@@ -41,57 +41,6 @@ Mery は
 
 マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
 
-### pdfLaTeXA.js {#u17bbe76}
-
-***
-
-```
-function main()
-{
-  var shell = new ActiveXObject("WScript.Shell");
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = document.Path;
-  var f = document.Name;
-  var b = fso.GetBaseName(f);
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var pdflatex = "pdflatex" + " " + ["\"", f, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
-
-  document.Save();
-  shell.Run(cmd, 1, true);
-}
-
-main();
-```
-
-***
-
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeXA.js を選択します．
-
-\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
-
-***
-
-<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
-
-<br>
-
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
-
-<br>
-
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfLaTeXA.js 　　　　　　　　　　　　　　</span><br>
-
-<br>
-
-***
-
 ### pdfpLaTeXA.js {#h14da8ca}
 
 ***
@@ -138,7 +87,6 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeXA.js　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -192,7 +140,6 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A.js 　　　　　　　　　　　　</span><br>
 
@@ -246,7 +193,6 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeXA.js　　　　　　　　　　　　</span><br>
@@ -302,11 +248,65 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2A.js　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+### pdfLaTeXA.js {#u17bbe76}
+
+***
+
+```
+function main()
+{
+  var shell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(f);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var pdflatex = "pdflatex" + " " + ["\"", f, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+
+  document.Save();
+  shell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeXA.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfpLaTeXA.js<br>
+　　　pdfpLaTeX2A.js<br>
+　　　pdfeupLaTeXA.js<br>
+　　　pdfeupLaTeX2A.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfLaTeXA.js 　　　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -357,11 +357,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
+　　　pdfLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">LuaLaTeXA.js　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -413,11 +413,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
+　　　pdfLaTeXA.js<br>
 　　　LuaLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">XeLaTeXA.js　　　　　　　　　　　　　　</span><br>
 
@@ -468,11 +468,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
+　　　pdfLaTeXA.js<br>
 　　　LuaLaTeXA.js<br>
 　　　XeLaTeXA.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
@@ -524,11 +524,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
+　　　pdfLaTeXA.js<br>
 　　　LuaLaTeXA.js<br>
 　　　XeLaTeXA.js<br>
 　　　pBibTeX.js<br>
@@ -581,11 +581,11 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfLaTeXA.js<br>
 　　　pdfpLaTeXA.js<br>
 　　　pdfpLaTeX2A.js<br>
 　　　pdfeupLaTeXA.js<br>
 　　　pdfeupLaTeX2A.js<br>
+　　　pdfLaTeXA.js<br>
 　　　LuaLaTeXA.js<br>
 　　　XeLaTeXA.js<br>
 　　　pBibTeX.js<br>
