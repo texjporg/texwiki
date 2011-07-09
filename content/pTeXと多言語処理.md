@@ -1444,7 +1444,8 @@ Mery，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [AkelPad](http://akelpad.sourceforge.net/)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
-[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)
+[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)，
+[Yudit](http://www.yudit.org/)
 などが，シェアウェアと
 して [秀丸エディタ](</秀丸エディタ/>) ([学生などは無料で利用できます](http://hide.maruo.co.jp/support/hidemarufree.html))，
 WZ EDITOR，
