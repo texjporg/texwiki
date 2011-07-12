@@ -9,20 +9,27 @@ pukiwiki: "Eclipse"
 
 ## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/3/34/Eclipse-logo.png" alt="Eclipse" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### Eclipse とは {#r72c2682}
+<div style="clear:both"></div>
+
+## Eclipse とは {#r72c2682}
 
 Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
+    - [eclipse project downloads](http://download.eclipse.org/eclipse/downloads/)
+    - [Eclipse SDK 4.x Stream downloads](http://download.eclipse.org/e4/sdk/)
+    - [eclipse e4 project downloads](http://download.eclipse.org/e4/downloads/)
 - [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
-### 動作環境 {#aae7926e}
+## 動作環境 {#aae7926e}
 
 [Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
 
-### Java のインストール {#ca668ec2}
+## Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
@@ -34,7 +41,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 もあります．
 
-### Eclipse のインストール {#r143ba66}
+## Eclipse のインストール {#r143ba66}
 
 [Eclipse Wiki](http://eclipsewiki.net/eclipse/) を参照。
 
@@ -56,7 +63,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 を追加します．
 
-### Eclipse で TeX {#i62a454e}
+## Eclipse で TeX {#i62a454e}
 
 - [TeXlipse](/TeXlipse/)
 - [sTeXIDE](http://code.google.com/p/stexide/)
@@ -66,7 +73,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - [LaPsE](http://sf.net/projects/eclipse-latex)
 - [LaTexEditor](http://sf.net/projects/latexeditor/)
 
-### 関連リンク {#o908ecbb}
+## 関連リンク {#o908ecbb}
 
 - Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
 - Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
