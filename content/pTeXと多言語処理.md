@@ -488,7 +488,7 @@ foo.pdfを開くとタイ語と日本語が共存しているはずです。
 韓國語（&#xd55c;&#xad6d;&#xc5b4;）
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
 KoreanTeX （pLaTeX2e に対応している
-のは[kTeX 1.2.2 ［Internet Archive のウェブアーカイブ］](http://replay.waybackmachine.org/20001017012754/http://www.tooyoo.l.u-tokyo.ac.jp/TeX/KoreanTeX/ktex-122.zip)）
+のは[kTeX 1.2.2 ［Internet Archive のウェブアーカイブ］](http://web.archive.org/web/20001017012754/http://www.tooyoo.l.u-tokyo.ac.jp/TeX/KoreanTeX/ktex-122.zip)）
 がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，
 後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
