@@ -37,7 +37,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
 
-- [Java Portable](http://sf.net/projects/portableapps/files/Java%20Portable/)
+- [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
 
 もあります．
 
