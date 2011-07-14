@@ -426,7 +426,7 @@ TeX ファイルを編集しているときは補完候補が表示されます�
 - [LaTeX コンパイル支援マクロ](http://www.seman.cs.uec.ac.jp/~inuzuka/hidemac.html)
     (犬塚 敦史 さん)
 
-### TeXMAC, Gui-Shell {#ld68541f}
+### TeXMAC, Gui-Shell (製品) {#ld68541f}
 
 - [TeXMAC](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html), [Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
     (乙部 厳己 さん)
