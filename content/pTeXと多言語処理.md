@@ -1437,6 +1437,7 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [xyzzy](/xyzzy/)，
 [jEdit](http://www.jedit.org/)，
 [FooEditor](http://sourceforge.jp/projects/fooeditor/)，
+[oedit](http://www.hi-ho.ne.jp/a_ogawa/oedit/)/[otbedit](http://www.hi-ho.ne.jp/a_ogawa/otbedit/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 Mery，
@@ -1448,8 +1449,9 @@ Mery，
 [Yudit](http://www.yudit.org/)
 などが，シェアウェアと
 して [秀丸エディタ](</秀丸エディタ/>) ([学生などは無料で利用できます](http://hide.maruo.co.jp/support/hidemarufree.html))，
-WZ EDITOR，
 [EmEditor Professional](http://jp.emeditor.com/)
+などが，製品として
+WZ EDITOR
 などがあります。
 ただ，xyzzy はタイ語などには
 対応していません。NTEmacs は充分すぎるほどの多言語対応能力を持ち，ビルドの更新頻度が Meadow よりも活発です。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
