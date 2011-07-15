@@ -14,6 +14,9 @@ pukiwiki: "Asymptote"
 [Asymptote](http://asymptote.sourceforge.net/)
 は [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述言語。
 
+- [Asymptote](http://asymptote.sourceforge.net/)
+- [Asymptote project on SourceForge](http://sourceforge.net/projects/asymptote/)
+
 ### 発音 {#te374add}
 
 最初見たときにどう発音すればいいかよく分からなかったので，
