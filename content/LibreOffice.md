@@ -7,7 +7,7 @@ pukiwiki: "LibreOffice"
 
 # LibreOffice
 
-## LibreOffice {#s11aabea}
+## LibreOffice/OpenOffice.org {#s11aabea}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -19,28 +19,50 @@ LibreOffice はフリーのオフィススイートです．
     - [The Document Foundation Wiki](http://wiki.documentfoundation.org/)
     - [LibreOffice Help](http://help.libreoffice.org/)
     - [The Document Foundation Blog](http://blog.documentfoundation.org/)
+- [git](http://cgit.freedesktop.org/libreoffice)
+    - [build](http://cgit.freedesktop.org/libreoffice/build/)
+        - [log](http://cgit.freedesktop.org/libreoffice/build/log/)
 - [Home &raquo; LibreOffice](http://www.libreoffice.org/)
 - [ホーム &raquo; LibreOffice](http://ja.libreoffice.org/)
 - [LibreOffice Portable](http://portableapps.com/apps/office/libreoffice_portable)
     - [Index of /libreoffice/portable](http://download.documentfoundation.org/libreoffice/portable/)
 - [LibreOffice repositories](http://cgit.freedesktop.org/libreoffice)
 
-## LibreOffice Writer {#z088446c}
+## OpenOffice.org とは {#q7dc6482}
+
+OpenOffice.org はフリーのオフィススイートです．
+
+- [Apache OpenOffice.org](http://incubator.apache.org/openofficeorg/)
+    - [OpenOffice.org Incubation Status](http://incubator.apache.org/projects/openofficeorg.html)
+    - [OpenOfficeProposal](http://wiki.apache.org/incubator/OpenOfficeProposal)
+    - [Apache OpenOffice.org Community](https://cwiki.apache.org/OOOUSERS/wiki-home.html)
+- [OpenOffice.org](http://www.openoffice.org/)
+    - [licenses](http://about.openoffice.org/#licenses)
+    - [hg](http://hg.services.openoffice.org/)
+- [OpenOffice.org 日本語プロジェクト](http://ja.openoffice.org/)
+- [OpenOffice.org 日本ユーザー会](http://oooug.jp/)
+- [OpenOffice.org 独自ビルドプロジェクト](http://sourceforge.jp/projects/waooo/wiki/FrontPage)
+- [OxygenOffice Professional](http://sourceforge.net/projects/ooop/files/)
+- [OpenOffice.org Portable](http://portableapps.com/apps/office/openoffice_portable)
+    - [OpenOffice.org Portable Localized](http://portableapps.com/apps/office/openoffice_portable/localization)
+- [NeoOffice](http://www.neooffice.org/)
+
+## LibreOffice/OpenOffice.org Writer {#z088446c}
 
 - [Writer2LaTeX](http://writer2latex.sourceforge.net/)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
-## LibreOffice Calc {#te4274fb}
+## LibreOffice/OpenOffice.org Calc {#te4274fb}
 
 - [Calc2LaTeX](http://calc2latex.sourceforge.net/indexj.html)
     - [USBメモリ活用講座【付録・Calc2LaTeX使用法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/c2ltx.shtml)
 
-## LibreOffice Impress {#ha3da53a}
+## LibreOffice/OpenOffice.org Impress {#ha3da53a}
 
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
-## LibreOffice Draw {#t359ffe0}
+## LibreOffice/OpenOffice.org Draw {#t359ffe0}
 
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 
