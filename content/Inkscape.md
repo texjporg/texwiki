@@ -42,6 +42,7 @@ Windows, Linux, Mac OS X, Unix で動作します．
     - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
         - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
     - [Tools](http://wiki.inkscape.org/wiki/index.php/Tools)
+    - [Extension repository](http://wiki.inkscape.org/wiki/index.php/ExtensionsRepository)
 - WikiPedia.ja:Inkscape
 - [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
@@ -123,11 +124,12 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
     - <span style="color:Red;"><strong>コメントアウトは # (シャープ) を使用します．</strong></span>
     - <span style="color:Red;"><strong>Python で Windows の PATH を文字列で表す場合は raw 文字列 (r'...') を使用すると便利です．</strong></span>
 
-### [Latex 数式 (eqtexsvg.py)](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py) {#w6edd3aa}
+### [EqTeXSvg (Latex 数式)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
-Inkscape にデフォルトで含まれている LaTeX と連携するためのエクステンション．
+LaTeX と連携するためのエクステンション．<br>
+[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く，うまく動作しない可能性があるため，公式サイトから最新版をダウンロード，インストールすることをおすすめします．
 
-- 環境変数 PATH に latex, dvips, pstoedit が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
+- 環境変数 PATH に latex, dvips, pstoedit, dvisvgm が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
     - pstoedit に PATH が通っていればコマンドプロンプトから
 
         ```
@@ -196,16 +198,13 @@ Inkscape にデフォルトで含まれている LaTeX と連携するための�
 
 ***
 
-デフォルトの状態の dvips のオプションでは数式がうまく表示されないので C:\inkscape\share\extensions\eqtexsvg.py の dvips コマンドのオプションを修正します．
+[EqTeXSvg](http://www.julienvitard.eu/en/eqtexsvg_en.html) から eqtexsvg.zip をダウンロードします．
 
-```
-        #os.system('dvips -q -f -E -D 600 -y 5000 -o "%s" "%s"' % (ps_file, dvi_file))
-        os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file))
-```
+eqtexsvg.zip を展開し，eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
 
 ***
 
-Latex 数式は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
+EqTeXSvg (Latex 数式) は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
 
 ```
 C:\inkscape>.\python\python.exe
@@ -218,18 +217,24 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 とすることで確認できます．
 
-もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば
+もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して
 
 ```
-    def effect(self):
+class Equation:
+    """Current LaTeX Equation"""
 
-        #base_dir = tempfile.mkdtemp("", "inkscape-");
-        base_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
+    def __init__(self, param={}):
+
+    ...
+
+        try: 
+            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
+            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
 ```
 
-などとしてスペースの含まないディレクトリ (C:\inkscape\tmp) を作成して base_dir を修正してください．<br>
+などとして C:\inkscape\share\extensions\eqtexsvg.py の self.temp_dir を修正してください．<br>
 この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
-処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
+処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます． <!-- - --  --> <!-- デフォルトの状態の dvips のオプションでは数式がうまく表示されないので C:\inkscape\share\extensions\eqtexsvg.py の dvips コマンドのオプションを修正します． --> <!--         #os.system('dvips -q -f -E -D 600 -y 5000 -o "%s" "%s"' % (ps_file, dvi_file)) --> <!--         os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file)) --> <!-- - --  --> <!-- Latex 数式は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは --> <!-- C:\inkscape>.\python\python.exe --> <!-- Python 2.6.5 (r265:79096, Mar 19 2010, 21:48:26) [MSC v.1500 32 bit (Intel)] on --> <!-- win32 --> <!-- Type "help", "copyright", "credits" or "license" for more information. --> <!-- >>> import tempfile --> <!-- >>> tempfile.gettempdir() --> <!-- とすることで確認できます． --> <!--  --> <!-- もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して --> <!--     def effect(self): --> <!--  --> <!--         #base_dir = tempfile.mkdtemp("", "inkscape-"); --> <!--         base_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp') --> <!-- などとして C:\inkscape\share\extensions\eqtexsvg.py の base_dir を修正してください．~ --> <!-- この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．~ --> <!-- 処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます． -->
 
 ***
 
