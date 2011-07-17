@@ -66,7 +66,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
     訳『[文書処理システム LaTeX2e](http://www.pej-hed.jp/washo/103.html)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
     の原典です。
 
-- [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの最新の
+- [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
     [W32TeX](http://w32tex.org/) と
     [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
     CD-ROM が附いています。
