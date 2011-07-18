@@ -21,7 +21,7 @@ EasyTeX は Windows 7, Vista, XP, 2000, 98 上で動作する国産でフリー�
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
-2011年6月27日に EasyTeX Verson 3.235 が公開されました．
+2011年7月15日に EasyTeX Verson 3.240 が公開されました．
 
 - [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
     - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
@@ -37,6 +37,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 - [Aspell](/Aspell/) などのスペルチェッカーが起動可能です．
 - 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
 - IME および ATOK による再変換をサポートしています．
+- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
 シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
@@ -127,8 +128,8 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]</ins></span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Spell \]\[ PS/PDF \]</ins></span><br>
 　　　　　　言語<br>
 　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
-　　　　　　◯英語<br>
-　　　　　TeXコンパイラ　　　　　　 　 　☑source special<br>
+　　　　　　◯英語　　　　　　　　　　　　 ☑source special<br>
+　　　　　TeXコンパイラ　　　　　　 　 　☑SyncTeX　　　<ins>1</ins><br>
 　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
 　　　　　 jPlain　　　　　　　　　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
 　　　　　 latexcompile　 　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
@@ -143,6 +144,8 @@ TeX コンパイラとオプションを設定します．
 TeX コンパイラは pLaTeX を選択します．
 
 source special にチェックを入れます．
+
+SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に変更します．
 
 ### Spell {#z664fb17}
 
@@ -506,29 +509,71 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で，コメントイン・アウトできますので，活用してみてください．
 
-## EasyTeX と dviout との連携 (source special) {#etsa7019}
+## SumatraPDF との連携 (forward and inverse search) {#mcca4bad}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3235\EasyTeX.exe である場合，[dviout for Windows](/dviout/) の
-\[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
+
+出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に変更します．
+
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
+
+LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Pdfﾌﾟﾚﾋﾞｭｰ(f)\] で PDF ファイルの該当領域を検索します．
+
+PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．
+
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3240\EasyTeX.exe である場合
+
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
 
 ```
-`easytex easytex +%d %s``C:\easytex3235\EasyTeX.exe
+"C:\easytex3240\EasyTeX.exe" /j%l "%f"
+```
+
+と書き込んで \[OK\] をクリックしてください．
+
+SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所に飛ぶはずです．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　指定行への移動　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　　行番号 または 行番号，桁番号 ？<br>
+
+<br>
+
+<br>
+
+　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## dviout との連携 (forward and inverse search) {#etsa7019}
+
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
+
+出てきたウィンドウで \[TeXOption\] タブの source special にチェックを入れます．
+
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
+
+LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Dviﾌﾟﾚﾋﾞｭｰ(B)\] で DVI ファイルの該当領域にジャンプします．
+
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3240\EasyTeX.exe である場合
+
+[dviout for Windows](/dviout/) の \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
+
+```
+`easytex easytex +%d %s``"C:\easytex3240\EasyTeX.exe"
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
 
-dviout でマウスカーソルが矢印になっているときに画面の一部をダブルクリックすると，EasyTeX が前面に出て，該当個所に飛ぶはずです．
+dviout でマウスカーソルが矢印になっているときに画面をダブルクリックすると，EasyTeX が前面に出て，該当個所に飛ぶはずです．
 
-次に，EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
+Version 3.240 以降は以下の形式でも OK です．
 
-出てきたウィンドウで \[TeXOption\] タブの \[source special\] にチェックを入れます．
-
-\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
-
-EasyTeX を再起動します．
-
-EasyTeX でコンパイルし，LaTeX ソースのある領域を選択しながら \[DVI\] ボタンを押してプレビューしたときに，DVI ファイルの該当領域に
-ジャンプするはずです．
+```
+"C:\easytex3240\EasyTeX.exe"^s /j%d "%s"
+```
 
 > 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
 > 他人に渡す文書（投稿論文の TeX ソースの類）の最終版」を作成する際には
