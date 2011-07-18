@@ -185,7 +185,7 @@ xyzzy 標準のキーバインドと Windows キーバインドの切り替え�
 C:\xyzzy\xyzzycli.exe -g %l "%f"
 ```
 
-## xyzzy と dviout の連携機能 (Source special) {#xysssdaf}
+## dviout との連携 (forward and inverse search) {#xysssdaf}
 
 [dviout for Windows](/dviout/) の
 \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
