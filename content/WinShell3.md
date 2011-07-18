@@ -974,7 +974,7 @@ inverse search の時に他のエディタが起動してしまう場合は suma
 
 ***
 
-## WinShell とdviout との連携機能 (Source special) {#l22a7019}
+## dviout との連携 (forward and inverse search) {#l22a7019}
 
 メニューバーより ［オプション］ → ［TeX関連プログラム設定］ と選び，右の
 「プログラム」のリストより \[LaTeX\] を選びます。そして，「コマンドライン」を
