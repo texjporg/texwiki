@@ -165,7 +165,7 @@ LaTeX と連携するためのエクステンション．<br>
             os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file))
     ```
 
-- デフォルトで含まれている eqtexsvg.py (Latex 数式) は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
+- デフォルトで含まれている eqtexsvg.py は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
 
     ```
     C:\inkscape>.\python\python.exe
@@ -689,24 +689,15 @@ C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pd
 
 のどれかに修正します．
 
-***
-
-```
-       # Exec pdfplatex: tex -> dvi -> pdf
-       out = exec_command(['platex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
-       out = exec_command(['dvipdfmx', self.tmp('dvi')])
-```
-
-***
-
-または
+pdfcrop, epstopdf の実行には Perl が必要です．
 
 ***
 
 ```
-       # Exec pdfeuplatex: tex -> dvi -> pdf
-       out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
-       out = exec_command(['updvipdfmx', self.tmp('dvi')])
+        # Exec pdfplatex: tex -> dvi -> pdf
+        out = exec_command(['platex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+        out = exec_command(['dvipdfmx', self.tmp('dvi')])
+        out = exec_command(['pdfcrop', '--clip', self.tmp('pdf').replace('\\', '/'), self.tmp('pdf').replace('\\', '/')])
 ```
 
 ***
@@ -716,10 +707,10 @@ C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pd
 ***
 
 ```
-       # Exec pdfplatex2: tex -> dvi -> eps -> pdf
-       out = exec_command(['platex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
-       out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
-       out = exec_command(['epstopdf', self.tmp('eps')])
+        # Exec pdfeuplatex: tex -> dvi -> pdf
+        out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+        out = exec_command(['updvipdfmx', self.tmp('dvi')])
+        out = exec_command(['pdfcrop', '--clip', self.tmp('pdf').replace('\\', '/'), self.tmp('pdf').replace('\\', '/')])
 ```
 
 ***
@@ -729,10 +720,23 @@ C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pd
 ***
 
 ```
-       # Exec pdfeuplatex2: tex -> dvi -> eps -> pdf
-       out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
-       out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
-       out = exec_command(['epstopdf', self.tmp('eps')])
+        # Exec pdfplatex2: tex -> dvi -> eps -> pdf
+        out = exec_command(['platex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+        out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
+        out = exec_command(['epstopdf', self.tmp('eps')])
+```
+
+***
+
+または
+
+***
+
+```
+        # Exec pdfeuplatex2: tex -> dvi -> eps -> pdf
+        out = exec_command(['euplatex', '-no-guess-input-enc', '-kanji=utf8', latex_opts, self.tmp('tex')])
+        out = exec_command(['dvips', '-Ppdf', '-E', '-o', self.tmp('eps'), self.tmp('dvi')])
+        out = exec_command(['epstopdf', self.tmp('eps')])
 ```
 
 ***
