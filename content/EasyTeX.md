@@ -526,12 +526,12 @@ EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex
 SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
 
 ```
-"C:\easytex3240\EasyTeX.exe" /j%l "%f"
+C:\easytex3240\EasyTeX.exe /j%l "%f"
 ```
 
 と書き込んで \[OK\] をクリックしてください．
 
-SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所に飛ぶはずです．
+SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所にジャンプします．
 
 ***
 
@@ -562,17 +562,17 @@ EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex
 [dviout for Windows](/dviout/) の \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``"C:\easytex3240\EasyTeX.exe"
+`easytex easytex +%d %s``C:\easytex3240\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
 
-dviout でマウスカーソルが矢印になっているときに画面をダブルクリックすると，EasyTeX が前面に出て，該当個所に飛ぶはずです．
+dviout の画面をダブルクリックすると，EasyTeX が前面に出て，該当個所にジャンプします．
 
 Version 3.240 以降は以下の形式でも OK です．
 
 ```
-"C:\easytex3240\EasyTeX.exe"^s /j%d "%s"
+C:\easytex3240\EasyTeX.exe^s /j%d "%s"
 ```
 
 > 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
