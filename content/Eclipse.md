@@ -33,6 +33,8 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
+### Windows, Linux, Solaris {#h067ff28}
+
 - [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
@@ -40,6 +42,10 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 - [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
 
 もあります．
+
+### Mac OS X Lion (10.7) {#y4154449}
+
+- [Java for OS X Lion](http://support.apple.com/kb/DL1421)
 
 ## Eclipse のインストール {#r143ba66}
 
