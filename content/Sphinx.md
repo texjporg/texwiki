@@ -39,3 +39,4 @@ pukiwiki: "Sphinx"
 - [sphinx math](http://ggutter.blogspot.com/2009/12/sphinx-math.html)
 - [Sphinx - laclefwiki](http://saekiyoshiyasu.org/wiki/Sphinx)
 - [Sphinxでドキュメント生成 - 図を描く、TeX経由でPDF（Windowsでの始め方）（続）](http://d.hatena.ne.jp/torutk/20110618/p1)
+- [SphinxでXeLaTeXを使って日本語使ったPDFを出力する](http://hideaki-t.blogspot.com/2011/07/sphinxxelatexpdf.html)
