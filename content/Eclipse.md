@@ -43,7 +43,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 もあります．
 
-### Mac OS X Lion (10.7) {#y4154449}
+### OS X Lion (OS X 10.7) {#y4154449}
 
 - [Java for OS X Lion](http://support.apple.com/kb/DL1421)
 
