@@ -659,6 +659,8 @@ v1.6 で forward search ができない場合は v1.7 以降にアップグレ�
 
 派生版として
 
+- [PDFlite](http://www.pdflite.com/)
+- [XhmikosR's builds home/sumatrapdf/](http://xhmikosr.1f0.de/index.php?folder=c3VtYXRyYXBkZg==)
 - 最適化ビルド版の [SumatraPDF x86/x64 Optimized Builds](http://guti.isgreat.org/static.php?page=SumatraPDFOpt)
 - [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
 - TeX ユーザのための [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) → 本家にマージされました．
