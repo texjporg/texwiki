@@ -64,7 +64,7 @@ platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば日本語の文字化けを防止できます．
+platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
 
 ```
 \usepackage{atbegshi}
