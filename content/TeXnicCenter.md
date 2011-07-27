@@ -24,11 +24,11 @@ TeXnicCenter は Windows 7, Vista, XP で動作する
 TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
-    <!-- The latest version is Version 2.0 Alpha 3 : May 30 2010 -->
     - [TeXnicCenter News](http://www.texniccenter.org/news)
+- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
     - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
-    - [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
-    - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
+- [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
+- [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
 [![TeXnicCenter 2.0 Alpha バージョンの画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
 
@@ -608,6 +608,122 @@ LaTeX => DVI => PDF<br>
 
 Executable:　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
 Arguments　　　　　 <ins>"%bm.dvi"</ins><br>
+Input<br>
+Output<br>
+
+***
+
+Profiles
+
+LaTeX => PS<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
+
+<span style="color:White;background-color:#1188FF;">DviPs　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+Executable:　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
+Arguments　　　　　 <ins>"%Bm.dvi"</ins><br>
+Input<br>
+Output<br>
+
+***
+
+Profiles
+
+LaTeX => PS => PDF<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
+
+<span style="color:White;background-color:#1188FF;">DviPs (PDF)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+Ghostscript (ps2pdf)<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+Executable:　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
+Arguments　　　　　 <ins>-P pdf "%Bm.dvi"</ins><br>
+Input<br>
+Output<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
+
+DviPs (PDF)<br>
+<span style="color:White;background-color:#1188FF;">Ghostscript (ps2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+Executable:　　　　　<ins>C:\gs\gs9.02\bin\gswin32c.exe</ins><br>
+Arguments　　　　　 <ins>-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"</ins><br>
 Input<br>
 Output<br>
 
