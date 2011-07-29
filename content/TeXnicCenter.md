@@ -364,7 +364,8 @@ LaTeX => DVI<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
@@ -372,7 +373,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-guess-input-enc -src-specials -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
@@ -380,7 +381,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
@@ -400,7 +401,8 @@ LaTeX => PS<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
@@ -408,7 +410,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-guess-input-enc -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
@@ -416,7 +418,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
@@ -437,7 +439,8 @@ LaTeX => PS => PDF<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
@@ -445,7 +448,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
@@ -453,7 +456,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
@@ -473,7 +476,8 @@ LaTeX => PDF<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
 
@@ -481,7 +485,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
@@ -489,7 +493,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
@@ -509,7 +513,8 @@ LuaLaTeX => PDF<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\lualatex.exe</ins><br>
 
@@ -517,7 +522,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
@@ -525,7 +530,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
@@ -545,7 +550,8 @@ XeLaTeX => PDF<br>
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
-
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\xelatex.exe</ins><br>
 
@@ -553,7 +559,7 @@ Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
-
+☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
@@ -561,7 +567,7 @@ Command line arguments to pass to<br>
 <ins>"%bm"</ins><br>
 
 MakeIndex<br>
-
+☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
