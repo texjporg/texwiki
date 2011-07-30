@@ -477,7 +477,20 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var bibtex = "pbibtex" + " " + ["\"", b, "\""].join("");
+  var bibtex = "pbibtex";
+  var encoding = document.Encoding;
+  if (encoding == meEncodingAutomatic) {
+    bibtex = "pbibtex";
+  } else if (encoding == meEncodingJIS) {
+    bibtex = "pbibtex -kanji=jis";
+  } else if (encoding == meEncodingEUC) {
+    bibtex = "pbibtex -kanji=euc";
+  } else if (encoding == meEncodingSJIS) {
+    bibtex = "pbibtex -kanji=sjis";
+  } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
+    bibtex = "pbibtex -kanji=utf8";
+  }
+  bibtex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
   var button = wshShell.Popup(cmd, 0, "pBibTeX", 1);
@@ -594,7 +607,20 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var makeindex = "mendex" + " " + ["\"", b, "\""].join("");
+  var makeindex = "mendex";
+  var encoding = document.Encoding;
+  if (encoding == meEncodingAutomatic) {
+    makeindex = "mendex";
+  } else if (encoding == meEncodingJIS) {
+    makeindex = "mendex -J";
+  } else if (encoding == meEncodingEUC) {
+    makeindex = "mendex -E";
+  } else if (encoding == meEncodingSJIS) {
+    makeindex = "mendex -S";
+  } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
+    makeindex = "mendex -U";
+  }
+  makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
 
   var button = wshShell.Popup(cmd, 0, "Mendex", 1);
