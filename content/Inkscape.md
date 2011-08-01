@@ -678,7 +678,7 @@ textext の Text に入力された日本語は UTF-8 で保存されます．
 
 最新版の W32TeX はデフォルトでは [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するので文字コードを指定したり変換したりする必要はありません．
 
-ただし，日本語① などの文字列 (このばあいは platex ではなく euplatex で処理しないと ① が表示されません) の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
+ただし，日本語① などの文字列 (この場合は platex ではなく euplatex で処理しないと ① が表示されません) の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
 
 C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を
 
