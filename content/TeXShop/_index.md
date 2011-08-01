@@ -29,18 +29,11 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
-<!-- 次のページを御覧下さい．~ -->
-<!--  -->
-<!-- -[[TeX/Mac OS X - PukiWiki:http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FMac%20OS%20X]] -->
-<!-- -[[Macで簡単TeX導入 – TeXShop:http://blog.cyclogy.com/2010/12/20/texshop/]] -->
-<!-- -[[TeXShopインストール for Mac:http://chihirosato.net/2011/01/24/texshop-install-mac/]] -->
-<!-- -[[MacTeX 2010 で日本語:http://www.clas.kitasato-u.ac.jp/~fujiwara/MacTeX/MacTeX2010.html]] -->
-
-### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
+### &#x7e;/Library/TeXShop/bin/ptex2pdf-utf8 {#v264f812}
 
 ***
 
-- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
+- &#x7e;/Library/TeXShop/bin/ptex2pdf-utf8
 
 ***
 
@@ -63,11 +56,11 @@ dvipdfmx $JOBNAME
 
 ***
 
-### &#x7e;/Library/TeXShop/bin/eplatex2pdf-utf8 {#c6b7a84a}
+### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
 
 ***
 
-- &#x7e;/Library/TeXShop/bin/eplatex2pdf-utf8
+- &#x7e;/Library/TeXShop/bin/platex2pdf-utf8
 
 ***
 
@@ -160,12 +153,12 @@ dvipdfmx $JOBNAME
 
 <br>
 
-　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
-　　　　　Tex　デフォルト　　　　　　　　　　　　　　　　　　　　　　　　　　Tex　デフォルト<br>
-　　　　　<ins>pdftex --file-line-error --shell-escape --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins><br>
-　　　　　Latex　デフォルト　　　　　　　　　　　　　　　　　　　　　　　　　Latex　デフォルト<br>
-　　　　　<ins>pdflatex --file-line-error --shell-escape --synctex=1</ins>　　　　<ins>&#x7e;/Library/TeXShop/bin/eplatex2pdf-utf8</ins><br>
-　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　　　　　　　　　　☐ PostScript ファイルを保存<br>
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　デフォルト　　　　　　　　　　　　　　　　　　Tex　デフォルト<br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/ptex2pdf-utf8</ins><br>
+　　　　　Latex　デフォルト　　　　　　　　　　　　　　　　　Latex　デフォルト<br>
+　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
 
@@ -191,12 +184,21 @@ dvipdfmx $JOBNAME
 
 ***
 
+## MacTeX-2010 の場合の設定 {#g331c92b}
+
+次のページを御覧下さい．<br>
+
+- [TeX/Mac OS X - PukiWiki](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FMac%20OS%20X)
+- [Macで簡単TeX導入 – TeXShop](http://blog.cyclogy.com/2010/12/20/texshop/)
+- [TeXShopインストール for Mac](http://chihirosato.net/2011/01/24/texshop-install-mac/)
+- [MacTeX 2010 で日本語](http://www.clas.kitasato-u.ac.jp/~fujiwara/MacTeX/MacTeX2010.html)
+
 ## 小川版 (Drag &amp; Drop UpTeX) の場合の設定 {#h991fc27}
 
 次のページを御覧下さい．<br>
 
 - [TeXで日本語文書作成](http://ballrw.web.fc2.com/ball/tex.html)
-    <!-- -[[LaTeX2eの設定: TeX>http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingmacosx.html]] -->
+    <!-- -[[LaTeX2eの設定: MacOS X:http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingmacosx.html]] -->
     <!-- -[[教授でもできるMacOSXへのX11とLaTeX、Ghostviewのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xtexgsgv.html]] -->
     <!-- - -[[4．TeXShopのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_texshop.html]] -->
 
