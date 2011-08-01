@@ -53,20 +53,20 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex -guess-input-enc -jobname=";
+  var latex = "platex -guess-input-enc";
   var encoding = document.Encoding;
   if (encoding == meEncodingAutomatic) {
-    latex = "platex -guess-input-enc -jobname=";
+    latex = "platex -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=jis";
   } else if (encoding == meEncodingEUC) {
-    latex = "platex -no-guess-input-enc -kanji=euc -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
-    latex = "platex -no-guess-input-enc -kanji=sjis -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=sjis";
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
-    latex = "platex -no-guess-input-enc -kanji=utf8 -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "echo exit | pdfdde";
@@ -120,20 +120,20 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex -guess-input-enc -jobname=";
+  var latex = "platex -guess-input-enc";
   var encoding = document.Encoding;
   if (encoding == meEncodingAutomatic) {
-    latex = "platex -guess-input-enc -jobname=";
+    latex = "platex -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=jis";
   } else if (encoding == meEncodingEUC) {
-    latex = "platex -no-guess-input-enc -kanji=euc -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
-    latex = "platex -no-guess-input-enc -kanji=sjis -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=sjis";
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
-    latex = "platex -no-guess-input-enc -kanji=utf8 -jobname=";
+    latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
