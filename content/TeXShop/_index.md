@@ -29,11 +29,11 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
-### &#x7e;/Library/TeXShop/bin/ptex2pdf-utf8 {#v264f812}
+### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
 ***
 
-- &#x7e;/Library/TeXShop/bin/ptex2pdf-utf8
+- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
 
 ***
 
@@ -155,7 +155,7 @@ dvipdfmx $JOBNAME
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　デフォルト　　　　　　　　　　　　　　　　　　Tex　デフォルト<br>
-　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/ptex2pdf-utf8</ins><br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins><br>
 　　　　　Latex　デフォルト　　　　　　　　　　　　　　　　　Latex　デフォルト<br>
 　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
