@@ -53,7 +53,21 @@ Linuxでは通常最初からaspellがインストールされています。asp
 # apt-get install aspell
 ```
 
-でインストールが完了します。もちろん、英語辞書も一緒です。いずれにしても、Windowsのような難しいことを考える必要はありません。
+でインストールが完了します。Ubuntuの場合だと、
+
+```
+$ sudo apt-get install aspell aspell-en
+```
+
+です。
+
+#### MacOSXの場合 {#g5b60c70}
+
+MacPortsを使えば簡単にインストールできます。
+
+```
+$ sudo port intall aspell aspell-dict-en
+```
 
 ### Aspell の使い方（コマンドプロンプト編） {#aspus466}
 
