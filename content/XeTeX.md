@@ -170,19 +170,19 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 
 ```
     <dir>c:/windows/fonts</dir>
-    <dir>c:/usr/local/share/texmf/fonts/opentype/dnscreen/hiragino</dir>
-    <dir>c:/usr/local/share/texmf/fonts/opentype/adobe/kozuka</dir>
-    <dir>c:/usr/local/share/texmf/fonts/opentype/adobe/others</dir>
+    <dir>c:/usr/local/share/texmf/fonts/opentype</dir>
+    <dir>c:/usr/local/share/texmf/fonts/truetype</dir>
 ```
 
 コンソール上で
 
 ```
-    fc-cache -v -f
+    fc-cache -v
 ```
 
 なるコマンドを実行して下さい。これはフォントディレクトリにある各ファイルを
-スキャンして，キャッシュファイルを作成するコマンドです。
+スキャンして，キャッシュファイルを作成するコマンドです。サブディレクトリ
+は自動的にサーチされます。
 キャッシュファイルは，TopDir/share/texmf/fonts/cache に作成されます。
 大きいフォントファイルが大量にあると，このコマンドは終了までに数分かかる
 ことがありますから，気長に他の仕事をしていて下さい。
@@ -251,10 +251,6 @@ XeTeX には単純だけれども結構強力な入力フィルタ TECKit が内
 
 - 歴史的な事情から TeX では、ある種のキーボードでの直接入力が困難な文字、例えば、“は\`\`、”は''、—は---、と言った具合に tfm ファイルのリガチャーとして、 ASCII 転写で入力できるようになっています。このような表記を含む既存の tex ファイルのコンパイルを可能にするためには、フォントの指定に修飾詞 mapping=tex-text を付け加えます。(fontspec パッケージを使用するならば、オプション Mapping=tex-text を付け加えます。)
 - arabxetex は TECKit のフィルタを用いて、 arabTeX 互換の ASCII 転写入力を可能にするパッケージです。これにより、例えば、単一のソースから、母音を表示せずにタイプセットした物と、表示してタイプセットした物、更にはローマ字転写の出力を得ることができます。
-
-### xu-hyphen {#tac4c2fa}
-
-XeTeX は一部の言語 (ギリシャ語、コプト語など) のハイフネーション処理には始めから、ユニコードのフォントエンコーディングを用いたパターンファイルを使用しますが、他の多くの言語用には、古典的な 8 ビットの TeX を前提としたハイフネーションパターンをそのまま利用します。 xu-hyphen はそのために必要なラッパーのコレクションです。
 
 ### スマート・フォント {#ne48456f}
 
@@ -673,6 +669,7 @@ Hello, \TeX !
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/) (ZR (八登 崇之) さん)
+- [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
 
