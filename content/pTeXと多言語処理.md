@@ -1415,7 +1415,7 @@ fmtutil --byfmt platex
 なお，pTeX 本体の Unicode (UTF-8) 対応に
 ついては[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)による
 試みがあります。すでに [ptetex3](/Make/#saac55c2) と
-[W32TeX](http://w32tex.org/) で
+[W32TeX](/W32TeX/) で
 利用可能になっています（現在は和文とラテン文字のみの対応）。また
 [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
 [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
