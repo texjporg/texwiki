@@ -11,7 +11,7 @@ pukiwiki: "インストール(Windows)"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## [W32TeX](http://w32tex.org/) {#yd4deb73}
+## [W32TeX](/W32TeX/) {#yd4deb73}
 
 ### [ChangeLog](http://w32tex.org/ChangeLog) {#vd90580b}
 
@@ -80,7 +80,7 @@ pukiwiki: "インストール(Windows)"
 [Microsoft Windows](http://www.microsoft.com/japan/windows/)
 32ビットプロセッサ (IA-32)
 環境（Windows NT 系［7，Vista，XP，2000，NT 4.0，NT 3.x］，Windows Me, 98，95）に移植された
-[W32TeX](http://w32tex.org/) をインストールする方法のあらましです。
+[W32TeX](/W32TeX/) をインストールする方法のあらましです。
 
 角藤さんの pTeX 関連バイナリは Microsoft Windows の
 [Windows PowerShell](http://www.microsoft.com/powershell)
