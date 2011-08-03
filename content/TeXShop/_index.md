@@ -22,7 +22,8 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 詳しくは次のページを御覧下さい．<br>
 
 - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
-- [Lion専用の新バージョン TeXShop-64 がリリースされました！](http://twitter.com/doraTeX/status/93699401658269697)
+- [Lion 用 TeXShop 3.02 がリリースされました！](http://twitter.com/#!/doraTeX/status/98562818227445760)
+- [Lion専用の新バージョン TeXShop-64 がリリースされました！](http://twitter.com/#!/doraTeX/status/93699401658269697)
 - MacWiki:TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
