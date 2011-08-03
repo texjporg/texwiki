@@ -296,7 +296,7 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタ，あるいはそれがない場合はタイ語をその他の文字コードで編集できるエディタと [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/) ([NTEmacs](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/)) が確実に使えます。また，[タイ語メモ超](http://www.vector.co.jp/soft/win31/writing/se008691.html)というソフトでも少なくとも後述するSWATHで処理可能なタイ語文書を作成できます。
+まず，タイ語をTIS-620という文字コードで記述できるエディタ，あるいはそれがない場合はタイ語をその他の文字コードで編集できるエディタと [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/)) が確実に使えます。また，[タイ語メモ超](http://www.vector.co.jp/soft/win31/writing/se008691.html)というソフトでも少なくとも後述するSWATHで処理可能なタイ語文書を作成できます。
 
 [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
 
@@ -392,7 +392,7 @@ C:\w32tex\bin\ など PATH の通ったところにコピーします
 
 では，実際にタイ語文書を作りましょう。
 
-Unicodeでタイ語文書を記述可能なエディタ ([Emacs](/Emacs/) ([NTEmacs](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/)) など) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。これをthaiutf8.txtとします。コマンドプロンプトで次を実行し，TIS-620という文字コードに変換します。
+Unicodeでタイ語文書を記述可能なエディタ ([Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/)) など) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。これをthaiutf8.txtとします。コマンドプロンプトで次を実行し，TIS-620という文字コードに変換します。
 
 ```
 iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
@@ -1432,7 +1432,7 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
 元々附属しているメモ帳 (Notepad) の他に
 フリーウェアとして
-[Emacs](/Emacs/) ([NTEmacs](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，
+[Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，
 [Vim](/Vim/)，
 [xyzzy](/xyzzy/)，
 [jEdit](http://www.jedit.org/)，
@@ -1454,7 +1454,7 @@ Mery，
 WZ EDITOR
 などがあります。
 ただ，xyzzy はタイ語などには
-対応していません。NTEmacs は充分すぎるほどの多言語対応能力を持ち，ビルドの更新頻度が Meadow よりも活発です。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
+対応していません。emacs for gnupack は充分すぎるほどの多言語対応能力を持ち，ビルドの更新頻度が Meadow よりも活発です。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
 GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，Mac OS X では
 Carbon Emacs，[Cocoa Emacs/Mac Emacs](http://www.muskmelon.jp/macosx/)，[MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
