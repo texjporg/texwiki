@@ -92,44 +92,45 @@ dvipdfmx $JOBNAME
 
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
-　　　<ins><span style="color:Black;background-color:#9FCFFB;">\[　<strong>書類</strong>　\]</span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>書類</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
 
 <br>
 
 　　　　<strong>フォント</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>背景色</strong><br>
-　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins>　設定...　</ins>)</span><br>
+　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　設定...　\]</ins></span><br>
 
 <br>
 
 　　　　<strong>ソースウインドウの位置</strong>　　　　　　　　　　　　　　　<strong>エディタ</strong><br>
 　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 閉じたときの位置を保存　　　　　　　　　　　　　　　　　　　　タブ幅 <ins>4</ins>　　　文字<br>
 　　　　◯ いつも同じ位置で開く　　　　　　　　　　　　　　　 　 <span style="color:Black;background-color:#9FCFFB;">☑</span> ソースのカラー表示<br>
-　　　　　　　<span style="color:Gray;background-color:#EEEEEE;">(<ins>　　　　現在の位置に設定　　　　</ins>)</span>　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 括弧の対応チェック<br>
+　　　　　　　<span style="color:Gray;background-color:#EEEEEE;"><ins>\[　　　　現在の位置に設定　　　　\]</ins></span>　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 括弧の対応チェック<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">☑</span> スペルチェック<br>
 　　　　<strong>起動時に</strong>　　　　　　　　　　　　　　　　　　　　　　　　　 ☐ キーバインド<br>
 　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 新しいファイルを作成する　　　　　　　　　　　　　☐ BibDesk オートコンプリート<br>
 　　　　　☐ 外部エディタでソースを編集　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 選択時にカーソルを移動<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">☑</span> 行番号<br>
 　　　　<strong>コマンド補完キー</strong>　　　　　　　　　　　　　　　　　　　　 ☐ Arabic, Hebrew, Persian<br>
-　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー<br>
-　　　　　◯ Tab キー　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　<ins><span style="color:Black;background-color:#FAFAFA;"> Unicode (UTF-8)　　　　　　</span><span style="color:Black;background-color:#9FCFFB;">\[ ◆ \]</span></ins><br>
-　　　　<strong>検索パネル (TeXShop再起動後)</strong><br>
-　　　　　◯ Apple 標準　　　　　　　　　　　　　　　　　　　　　<strong>括弧の対応チェック対象と強調色</strong><br>
-　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> OgreKit 検索パネル　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> { }　<span style="color:Black;background-color:#9FCFFB;">☑</span> \[ \]　<span style="color:Black;background-color:#9FCFFB;">☑</span> ( )　☐ &lt; ><br>
+　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー　　　　　　　　　　　　　　　　　　　　　☐ オートセーブ (再起動後有効)<br>
+　　　　　◯ Tab キー<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
+　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span><br>
+　　　　　◯ Apple 標準検索パネル<br>
+　　　　　◯ Apple 標準検索バー　　　　　　　　　　　　　　 <strong>括弧の対応チェック対象と強調色</strong><br>
+　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> OgreKit 検索パネル　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> { }　<span style="color:Black;background-color:#9FCFFB;">☑</span> \[ \]　<span style="color:Black;background-color:#9FCFFB;">☑</span> ( )　☐ &lt; ><br>
 
 <br>
 
-　　　　<strong>不可視文字の表示</strong>　　　　　　　　　　　　　　　　　　<strong>括弧の対応チェックの詳細</strong><br>
-　　　　　☐ 半角スペース　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 囲まれる部分を強調<br>
-　　　　　☐ 全角スペース　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　　☐ 移動中も黄色くポップアップ<br>
-　　　　　☐ 改行　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 対応する括弧を点滅<br>
-　　　　　☐ タブ　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　　☐ 孤立括弧を音で警告<br>
-　　　　　☐ ファイルを開いた直後から表示　　　　　　　　　　☐ 孤立括弧を背景色で警告<br>
+　　　　<strong>不可視文字の表示</strong>　　　　　　　　　　　　　　　　　 <strong>括弧の対応チェックの詳細</strong><br>
+　　　　　☐ 半角スペース　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 囲まれる部分を強調<br>
+　　　　　☐ 全角スペース　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　☐ 移動中も黄色くポップアップ<br>
+　　　　　☐ 改行　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 対応する括弧を点滅<br>
+　　　　　☐ タブ　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">◎</span>　　　　　◯　　　　　　　　　　☐ 孤立括弧を音で警告<br>
+　　　　　☐ ファイルを開いた直後から表示　　　　　　　　　☐ 孤立括弧を背景色で警告<br>
 
 <br>
 
-　　<ins><span style="color:Black;background-color:#FAFAFA;"> 設定プロファイル　　</span><span style="color:Black;background-color:#9FCFFB;">\[ ▼ \]</span></ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins> 　キャンセル　 </ins>)</span>　<span style="color:Black;background-color:#9FCFFB;">(<ins> 　　OK　　 </ins>)</span><br>
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 　　　　TeXShop 標準<br>
 　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span><br>
 　　　　pTeX (EUC)
@@ -142,7 +143,7 @@ dvipdfmx $JOBNAME
 
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
-　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:Black;background-color:#9FCFFB;">\[　<strong>内部設定</strong>　\]</span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
 
 <br>
 
@@ -181,7 +182,7 @@ dvipdfmx $JOBNAME
 
 <br>
 
-　　<ins><span style="color:Black;background-color:#FAFAFA;"> 設定プロファイル　　</span><span style="color:Black;background-color:#9FCFFB;">\[ ▼ \]</span></ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins> 　キャンセル　 </ins>)</span>　<span style="color:Black;background-color:#9FCFFB;">(<ins> 　　OK　　 </ins>)</span><br>
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 
 ***
 
@@ -199,9 +200,18 @@ dvipdfmx $JOBNAME
 次のページを御覧下さい．<br>
 
 - [TeXで日本語文書作成](http://ballrw.web.fc2.com/ball/tex.html)
-    <!-- -[[LaTeX2eの設定: MacOS X:http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingmacosx.html]] -->
-    <!-- -[[教授でもできるMacOSXへのX11とLaTeX、Ghostviewのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xtexgsgv.html]] -->
-    <!-- - -[[4．TeXShopのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_texshop.html]] -->
+- [TeX設定メモ](http://twilog.org/himappy/date-110804)
+    - TeXShop 環境設定
+        - [書類](http://gyazo.com/fea5a3a32ac70f1bebbf8a340e4cb57a)
+        - [プレビュー](http://gyazo.com/614c187d02b45d3e954181efcc37d373)
+        - [コンソール](http://gyazo.com/8037aa18f22a4bc33a785d153d66093d)
+        - [タイプセット](http://gyazo.com/d5e96f8c0bfef7e2f8a10d42faf46a2c)
+        - [内部設定](http://gyazo.com/7064f593f697cbc649f689d32c734179)
+        - [コピー](http://gyazo.com/a05e587ce7f635b5ea7210b436f9e2a5)
+        - [詳細](http://gyazo.com/04e4581f780b44e8f0f7a38a806415ac)
+            <!-- -[[LaTeX2eの設定: MacOS X:http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingmacosx.html]] -->
+            <!-- -[[教授でもできるMacOSXへのX11とLaTeX、Ghostviewのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xtexgsgv.html]] -->
+            <!-- - -[[4．TeXShopのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_texshop.html]] -->
 
 ## MacPorts (pTeX) の場合の設定 {#s81bdf6c}
 
