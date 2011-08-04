@@ -826,6 +826,8 @@ WZ EDITOR をご覧ください．
 
 ## [TeX Live](</TeX Live/>) {#ia336ed2}
 
+## [MiKTeX](http://miktex.org/) {#x2459fb9}
+
 ## Cygwin での ptetex のインストール {#h7017721}
 
 Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
