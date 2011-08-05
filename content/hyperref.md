@@ -17,6 +17,16 @@ pukiwiki: "hyperref"
 
 [ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog) を参照。
 
+### 注意点 {#he2b8021}
+
+#### ["--"が hyperref で正しく扱われてないっぽくて，しおりが変になる](http://twitter.com/#!/t_teruya/status/99411185539100672) {#d46c2828}
+
+以下のように \texorpdfstring を使って pdfstring の方を8進数表記で書くことで回避可能です．
+
+```
+\section{\texorpdfstring{a--b}{a\055\055b}}
+```
+
 ### 指定可能なオプション {#za8c61cb}
 
 プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
