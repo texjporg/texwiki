@@ -31,6 +31,8 @@ pukiwiki: "hyperref"
 
 プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
 
+#### しおり（bookmark）つきのpdf文書作成 {#fe7cad10}
+
 platex + dvipdfmx の場合は，下記のようにします．
 
 ```
@@ -74,7 +76,7 @@ platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
+(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
 
 ```
 \usepackage{atbegshi}
@@ -90,6 +92,8 @@ platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
 (e)uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
+
+#### オプション一覧表 {#re898c38}
 
 <table>
 <thead>
