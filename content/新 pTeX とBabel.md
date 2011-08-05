@@ -76,8 +76,8 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[W32TeX](http://w32tex.org/index-ja.html) では
-[TeX Live](http://www.tug.org/texlive/) 所収の
+[W32TeX](/W32TeX/) では
+[TeX Live](</TeX Live/>) 所収の
 ハイフネーションファイル（75種類）が同梱されています。8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
@@ -102,12 +102,12 @@ UNIX 互換 OS ディストリビューション同梱のものや配布バイ�
 
 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
 付録 CD-ROM には上記
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/) と
+[W32TeX](/W32TeX/) と
 [ptetex3](/Make/#saac55c2) が収録されています
 （インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも
 Babel 対応版です（同書付録H参照）。
 
-[W32TeX](http://www.fsci.fuk.kindai.ac.jp/kakuto/win32-ptex/)，[ptetex3](/Make/#saac55c2)
+[W32TeX](/W32TeX/)，[ptetex3](/Make/#saac55c2)
 では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット
 関連ファイルをインストールすることだけで全ての環境が整います。これらの
 追加パッケージは $TEXMFLOCAL/ (&asymp; texmf-local/) 以下に入れることにします。
@@ -159,7 +159,7 @@ Babel 対応版です（同書付録H参照）。
 - $TEXMFLOCAL/fonts/ 以下のファイルも
     参照されるように，[dviout for Windows](/dviout/) の
     \[Option\] → \[Setup Parameters...\] → \[Font\] → TEXROOT: 欄に
-    例えば “;C:\usr\local\W32TeX\share\texmf-local\fonts” を
+    例えば “;C:\w32tex\share\texmf-local\fonts” を
     追加記述し，\[Save\] → \[OK\] する。
 
 ### type1ec.sty のインストール {#sea65834}
