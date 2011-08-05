@@ -536,7 +536,7 @@ IDE を使いたい方は，[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) もお
 ここでは [Ghostscript 7.07](</Ghostscript 7.07/>)
 ([gs707w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip)) を
 使ってみます（Ghostscript にはバージョン 8 系列もありますが，
-日本語の扱いに難点が残っていますので，初めて扱う方には 7.07 をお薦めします）。このファイルを
+日本語の扱い (縦書き等) に難点が残っていますので，気になる方には 7.07 をお薦めします）。このファイルを
 展開して中にある “setupgs.exe” を実行すればインストールできます。
 デフォルトでは C:\gs\ に入ります（ご自分でドキュメントを読んで
 トラブルを解決するつもりの人以外は，安易に変えないで
