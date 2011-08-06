@@ -13,13 +13,15 @@ pukiwiki: "Linux/vine"
 
 TeX システムが ptetex から ptexlive に変更になりました．
 
+- [日本語 TeX 利用ガイド](http://vinelinux.org/docs/vine6/tex-guide/vine-tex-guide.html)
+
 ## Vine Linux 5 {#vac9e97f}
 
 [Vine Linux 5.2 (Palmer)](http://vinelinux.org/news/20101130.html) がリリースされました。
 
 オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。
 
-- [日本語 TeX 利用ガイド - Vine Linux](http://vinelinux.org/manuals/tex-guide.html)
+- [日本語 TeX 利用ガイド - Vine Linux](http://vinelinux.org/docs/vine5/manuals/tex-guide.html)
 
 現時点 (2009/09/04) では、第 1 章 日本語 TeX 環境の構築のところで、TeX 関連パッケージの説明を一通り書けていますが、第 2 章 カスタマイズ および 第 3 章 TeX 関連パッケージの紹介 のところは、骨抜きです。
 
@@ -27,7 +29,7 @@ TeX システムが ptetex から ptexlive に変更になりました．
 
 5.0 から Vine Linux のデフォルト設定として vine-default という仕組みを搭載しました。詳細は以下のドキュメントを参照してください。
 
-- [Emacs 利用ガイド - Vine Linux](http://vinelinux.org/manuals/emacs-guide.html)
+- [Emacs 利用ガイド - Vine Linux](http://vinelinux.org/docs/vine5/manuals/tex-guide.html)
 
 現在，やてふ（YaTeX）をデフォルトとして、AUCTeX も対応しています。
 
