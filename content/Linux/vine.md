@@ -7,6 +7,12 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
+## Vine Linux 6 {#sf8daebc}
+
+[Vine Linux 6](http://vinelinux.org/news/20110806.html) がリリースされました．
+
+TeX システムが ptetex から ptexlive に変更になりました．
+
 ## Vine Linux 5 {#vac9e97f}
 
 [Vine Linux 5.2 (Palmer)](http://vinelinux.org/news/20101130.html) がリリースされました。
