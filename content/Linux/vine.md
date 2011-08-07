@@ -7,6 +7,8 @@ pukiwiki: "Linux/vine"
 
 # Linux/vine
 
+## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
+
 ## Vine Linux 6 {#sf8daebc}
 
 [Vine Linux 6](http://vinelinux.org/news/20110806.html) がリリースされました．
@@ -51,7 +53,7 @@ $ sudo apt-get install install-assist-AdobeReader_jpn
 
 ## Vine Linux 4.2 {#oae2fbd9}
 
-[Vine Linux 4.2](http://vinelinux.org/whatsnew.html#20071225) がリリースされました。
+[Vine Linux 4.2](http://vinelinux.org/news/20071225.html) がリリースされました。
 おそらく，日本語 TeX を使う上では最もよく調整されたものになっているはずです。
 なお Vine Linux 4.0 および 4.1 からは 4.2 にアップグレードすることが勧められています。
 
@@ -73,12 +75,12 @@ Vine 3.x の時には AdobeReader_jpn-7.0.8-1 のメニューがちらついて�
 
 ## Vine Linux 3.2 {#c910db28}
 
-Vine Linux 3.2 がリリースされました。
+[Vine Linux 3.2](http://vinelinux.org/news/20050918.html) がリリースされました。
 おそらく，日本語 TeX を使う上では最もよく調整されたものになっているはず。
 なお Vine Linux 3.0/3.1 からは 3.2 にアップグレードすることが勧められています。
 
-Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://vinelinux.org/errata/3x/20050301-2.html)
-\[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
+Errata \[[ 2005,03,01 \] xdvik にセキュリティホール](http://www-snap.vinelinux.org/errata/3x/20050301-2.html)
+\[[ 2005,02,16 \] tetex にセキュリティホール](http://www-snap.vinelinux.org/errata/3x/20050216-1.html)
 が出ていますので “apt-get upgrade” するのがよいでしょう。
 ただし，小さなデグレが報告されています。
 \[[vine-users:070537\]](http://search.luky.org/vine-users.7/msg00534.html)
@@ -254,7 +256,7 @@ Adobe Reader 7.0 か Microsoft Windows 版などで動作確認してくださ�
     [TeXWiki:Make#teTeX のインストール](/Make/#content_1_4) にある通り，
     \usepackage{type1cm} とするのがよいようです。
     [qa:32659](https://okumuralab.org/~okumura/texfaq/qa/32659.html) のように updmap スクリプトを修正しても構いません。
-    →\[[ 2005,02,16 \] tetex にセキュリティホール](http://vinelinux.org/errata/3x/20050216-1.html)
+    →\[[ 2005,02,16 \] tetex にセキュリティホール](http://www-snap.vinelinux.org/errata/3x/20050216-1.html)
     (tetex-2.0.2-0vl14) で修正されました。
 
 - dvipdfmx で EPS を取り込むときに，
