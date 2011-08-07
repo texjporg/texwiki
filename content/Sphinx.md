@@ -19,8 +19,6 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
-- [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
-
 ### [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/) {#yb1fc56f}
 
 ### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
@@ -41,8 +39,9 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 - [LaTeX のビルド手順](http://code.google.com/p/python-doc-ja/wiki/LaTeXBuild)
 
-## その他リンク {#wb4c36d7}
+## Sphinx → LaTeX → PDF {#wb4c36d7}
 
+- [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
 - [日本語 Sphinx ドキュメントの PDF 化(TeX 経由)のサンプル](https://github.com/shino/sphinx_to_pdf_via_tex_jp/)
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
 - [SphinxとTeXとPDFと日本語](http://d.hatena.ne.jp/s_yano/20100921/1285048025)
@@ -50,3 +49,4 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 - [Sphinx - laclefwiki](http://saekiyoshiyasu.org/wiki/Sphinx)
 - [Sphinxでドキュメント生成 - 図を描く、TeX経由でPDF（Windowsでの始め方）（続）](http://d.hatena.ne.jp/torutk/20110618/p1)
 - [SphinxでXeLaTeXを使って日本語使ったPDFを出力する](http://hideaki-t.blogspot.com/2011/07/sphinxxelatexpdf.html)
+- [Sphinxで日本語PDFを出力する](http://d.hatena.ne.jp/yusukei2/20110604/1307145621), [Sphinxで日本語PDFを出力する その２？](http://d.hatena.ne.jp/yusukei2/20110806/1312605553)
