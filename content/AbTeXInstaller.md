@@ -110,16 +110,16 @@ pTeX（角藤さんのサイトでいう「フルインストール」の内容�
 　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　101KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
 　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☑gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣<br>
-　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　3.8MB　　　　　GSview<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　995KB　　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　53.6MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB　　 　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　　∣<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
+　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
+　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　3.8MB　　　　　　∣<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　995KB　　　　　GSview<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　53.6MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　∣<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
 　　　　 ∣☑otfdevel.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.5MB<br>
