@@ -18,7 +18,7 @@ pukiwiki: "REVTeX4"
 
 今までの REVTeX 3 は LaTeX 2.09 ベースだったので、LaTeX2e
 ベースの新版が待望されていましたが、2001年8月3日、遅れに遅れて
-[REVTeX 4](http://authors.aps.org/revtex4/)
+[REVTeX 4](https://authors.aps.org/revtex4/)
 がやっと正式公開されました。
 
 ### インストール {#jaaef53a}
