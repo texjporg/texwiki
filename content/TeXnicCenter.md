@@ -728,7 +728,7 @@ DviPs (PDF)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\gs\gs9.02\bin\gswin32c.exe</ins><br>
+Executable:　　　　　<ins>C:\gs\gs9.04\bin\gswin32c.exe</ins><br>
 Arguments　　　　　 <ins>-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"</ins><br>
 Input<br>
 Output<br>
