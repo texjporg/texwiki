@@ -41,7 +41,7 @@ local gsargs = {
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.02/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/gs/gs9.04/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 - 日本語を表示するには，psv.wx.lua の PSV_DftGsPars
