@@ -692,14 +692,14 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.02\bin\gsdll32.dll) に修正します．
+を Ghostscript の dll ファイル (C:\gs\gs9.04\bin\gsdll32.dll) に修正します．
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.02/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/gs/gs9.04/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 日本語を表示するには，psv.wx.lua の PSV_DftGsPars
