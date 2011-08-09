@@ -64,7 +64,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
     荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUCTeX，X-Symbol 等々
 
 - 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html)（旧 JAIST コンテンツのミラー）
-- [Gutenprint / Gimp-Print](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
+- [Gutenprint (formerly called Gimp-Print)](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
 
 ### EPS 作成 {#lceaa8b7}
 
