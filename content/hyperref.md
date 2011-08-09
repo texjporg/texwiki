@@ -964,3 +964,4 @@ abc
 - \usepackage\[dvipdfm,bookmarkstype=toc=true,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false\]{hyperref} -- kd 2007-03-20 (火) 15:21:01
 - 修士論文のpdf作成等の際には，ぜひともhyperrefをご利用してpdfファイルを作って下さい．（例えば上記例をプリアンブル部に書けばよいと思います．目次から本文のページ等へジャンプ可能だと読み手が楽です．） -- kd 2007-03-20 (火) 15:27:11
 - 逆に「書籍の原稿」といった、「最終的な組版を書き手自身がやるのではない」文書の場合には、hyperref パッケージをはじめとする、お行儀の悪い（＝LaTeX の内部処理をあちこち書き換える）パッケージは決して使用しないでください。 -- 1296893894 2011-02-05 (土) 17:18:14
+- texlive2011ではsetpagesize=falseを指定しないと版面が紙の右下側にずれる現象がおこりました。私の環境特有かもしれませんが一応報告を -- yayugu 2011-08-09 (火) 22:11:52
