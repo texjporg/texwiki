@@ -815,14 +815,14 @@ WZ EDITOR をご覧ください．
 [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>
 をご覧ください．
 
-### Emacs + tex-mode {#z9deda13}
+### Emacs + tex-mode or org-mode {#z9deda13}
 
-[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>
+[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + Org<br>
 をご覧ください．
 
-### Vim + Vim-LaTeX {#s7ce6347}
+### Vim + プラグイン {#s7ce6347}
 
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/) をご覧ください．
+[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)<br> をご覧ください．
 
 ## [TeX Live](</TeX Live/>) {#ia336ed2}
 
