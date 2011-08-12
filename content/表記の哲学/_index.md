@@ -17,7 +17,7 @@ pukiwiki: "表記の哲学"
 - 数学的な変数（と変関数）のシンボルをイタリック体とする．
     - ISOに従うと（立体(upright)ではなくて）イタリック体とするのはこれらだけとのようです。
     - 例として $f\_{i} (x)$ の $f$、$i$ や $x$ がイタリック体。
-    - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s$）。
+    - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s）。
     - 数学的な定数と既定な関数（立体のまま）の例は，$\sin \uppi$。
     - 変数もしくはquantitiesのシンボルはイタリック体とするので(ISO)，下付添え字にも適用．
         - The NIST Guide for the Use of the International System of Units (SI) ([http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf) ) 内の例：
@@ -34,6 +34,9 @@ pukiwiki: "表記の哲学"
     - ＋ボールド体とする流儀の例（これは古い？米国ではボールド体が普及？）
         - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
             <!-- - - 日本でボールド体が普及していない原因は？ -->
+
+- 単位行列 $I$ （イタリック体で良いかどうか？）
+    - 変数ではないので，イタリック体対象外で立体のままか？（ISOに従うと）
 
 - 行列転置操作の ${}^{t} A$ や $A^{T}$（イタリック体で良いかどうか？）
     - t/T は “<strong>t</strong>ranspose” の略．そもそも変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
@@ -53,9 +56,13 @@ pukiwiki: "表記の哲学"
         - いずれも\textmuを定義して使うと良さそう．例：\DeclareRobustCommand\*\textmu{\leavevmode{\usefont{U}{psy}{m}{n} \symbol{"6D}}}
 
 - 物理量と単位
-    - 物理量 = 数 × 単位　（例：$c = 299{,}792{,}458$\\,m/s$）　（SI に従うと）
+    - 物理量 = 数 × 単位　（例：$c$=299,792,458\\,m/s）　（SI に従うと）
         - 無次元量（cycle や radian など）を考えると単純ではない
         - 例として，ω=2 π rad/s  ⇔ f=1 Hz = 1 cycle/s
+
+- Sans-serif typeface
+    - SI次元表記法で使う（例：$\textsf{L}$）
+    - テンソル変数に使う（例：$\mathsfslbf{A}$）
 
 - 多数桁数値の3桁毎区切り
     - 見易くするために「\\,」を挿入し3桁毎区切りが許される。すなわち，299\\,792\\,458．(ISO流)
@@ -111,6 +118,7 @@ bold もしくは gothic体？ （もしくはbold gothic体？）
         - これは、いわゆる波ダッシュ問題．前者は初期の Unicode 規格書の U+301C（波ダッシュ）の説明に由来し，後者は Microsoft のコード変換 (cp932)に由来する．Microsoft Vista以降では前者を正しく表示可能のはず．
         - UTF-8 対応 pTeX (ptexenc ライブラリを使用) では，両者とも JIS X 0208 の 1区33点 として処理される．
         - Adobe の CMap の主要なもの (UniJIS-UTF16-H など) では，両者とも CID665 として処理される．
+        - Adobe Acrobat Reader 文書内の波ダッシュ（の文字）を選択しコピーすると、全角チルダがコピーされることがあり、環境依存もあるかもしれない。
             <!-- （なおU+FF5EはUnicode 規格書では全角チルダとされる） -->
 
 #### 数値・単位 {#z74ce697}
