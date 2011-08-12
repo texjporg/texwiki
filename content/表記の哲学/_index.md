@@ -17,7 +17,7 @@ pukiwiki: "表記の哲学"
 - 数学的な変数（と変関数）のシンボルをイタリック体とする．
     - ISOに従うと（立体(upright)ではなくて）イタリック体とするのはこれらだけとのようです。
     - 例として $f\_{i} (x)$ の $f$、$i$ や $x$ がイタリック体。
-    - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s）。
+    - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s$）。
     - 数学的な定数と既定な関数（立体のまま）の例は，$\sin \uppi$。
     - 変数もしくはquantitiesのシンボルはイタリック体とするので(ISO)，下付添え字にも適用．
         - The NIST Guide for the Use of the International System of Units (SI) ([http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf) ) 内の例：
@@ -31,7 +31,7 @@ pukiwiki: "表記の哲学"
     - 大文字かつイタリック体（ISOに従うと）
     - ＋ボールド体とはしない流儀の例
         - [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
-    - ＋ボールド体とする流儀の例（これは古い？）
+    - ＋ボールド体とする流儀の例（これは古い？米国ではボールド体が普及？）
         - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
             <!-- - - 日本でボールド体が普及していない原因は？ -->
 
@@ -51,6 +51,11 @@ pukiwiki: "表記の哲学"
         - 1\\,\Pisymbol{psy}{"6D}m（pifont.sty パッケージを使用）
         - 1\\,{\usefont{U}{psy}{m}{n} \symbol{"6D}}m （多少見映えが良くない？）
         - いずれも\textmuを定義して使うと良さそう．例：\DeclareRobustCommand\*\textmu{\leavevmode{\usefont{U}{psy}{m}{n} \symbol{"6D}}}
+
+- 物理量と単位
+    - 物理量 = 数 × 単位　（例：$c = 299{,}792{,}458$\\,m/s$）　（SI に従うと）
+        - 無次元量（cycle や radian など）を考えると単純ではない
+        - 例として，ω=2 π rad/s  ⇔ f=1 Hz = 1 cycle/s
 
 - 多数桁数値の3桁毎区切り
     - 見易くするために「\\,」を挿入し3桁毎区切りが許される。すなわち，299\\,792\\,458．(ISO流)
