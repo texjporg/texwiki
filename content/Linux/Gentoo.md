@@ -13,8 +13,13 @@ pukiwiki: "Linux/Gentoo"
 
 ## [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/) {#c18610d8}
 
-## TeX Live {#ld62f64f}
+## [TeX Live](</TeX Live/>) {#ld62f64f}
 
+```
+# emerge texlive dvipdfmx
+```
+
+- [Suzuki Lab wiki - GentooLinux#LaTeX](http://www.os.cis.iwate-u.ac.jp/wikky/wikky.cgi?GentooLinux#t15)
 - [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)
 - [texlive2010 on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/10026283.html)
 - [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
