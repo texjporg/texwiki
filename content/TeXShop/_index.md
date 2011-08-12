@@ -111,7 +111,7 @@ dvipdfmx $JOBNAME
 　　　　　☐ 外部エディタでソースを編集　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 選択時にカーソルを移動<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">☑</span> 行番号<br>
 　　　　<strong>コマンド補完キー</strong>　　　　　　　　　　　　　　　　　　　　 ☐ Arabic, Hebrew, Persian<br>
-　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー　　　　　　　　　　　　　　　　　　　　　☐ オートセーブ (再起動後有効)<br>
+　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> オートセーブ (再起動後有効)<br>
 　　　　　◯ Tab キー<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
 　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span><br>
