@@ -30,60 +30,6 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
-### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
-
-***
-
-- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
-
-***
-
-```
-#!/bin/sh
-# iNoue Koich! (modified by S. Zenitani)
-
-export PATH=$PATH:/usr/texbin:/usr/local/bin
-
-COMMAND=${0##*/}
-PTEX=${COMMAND%2pdf-*}
-ENCODE=${COMMAND#*-}
-JOBNAME=${1##*/}
-JOBNAME=${JOBNAME%.*}
-
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
-dvipdfmx $JOBNAME
-
-```
-
-***
-
-### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
-
-***
-
-- &#x7e;/Library/TeXShop/bin/platex2pdf-utf8
-
-***
-
-```
-#!/bin/sh
-# iNoue Koich! (modified by S. Zenitani)
-
-export PATH=$PATH:/usr/texbin:/usr/local/bin
-
-COMMAND=${0##*/}
-PTEX=${COMMAND%2pdf-*}
-ENCODE=${COMMAND#*-}
-JOBNAME=${1##*/}
-JOBNAME=${JOBNAME%.*}
-
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
-dvipdfmx $JOBNAME
-
-```
-
-***
-
 ### TeXShop 環境設定 {#d2699f04}
 
 #### 書類 {#n0747af1}
@@ -139,6 +85,8 @@ dvipdfmx $JOBNAME
 
 #### 内部設定 {#ubede387}
 
+■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使用する場合
+
 ***
 
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
@@ -157,9 +105,9 @@ dvipdfmx $JOBNAME
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins> または  <ins>simpdftex eptex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error -synctex=1"</ins><br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>simpdftex eptex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error -synctex=1"</ins><br>
 　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins> または <ins>simpdftex platex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error -synctex=1"</ins><br>
+　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>simpdftex platex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error -synctex=1"</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
@@ -186,45 +134,120 @@ dvipdfmx $JOBNAME
 
 ***
 
-## MacTeX-2010 の場合の設定 {#g331c92b}
+■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a) を使用する場合
 
-次のページを御覧下さい．<br>
+***
 
-- [TeX/Mac OS X - PukiWiki](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FMac%20OS%20X)
-- [Macで簡単TeX導入 – TeXShop](http://blog.cyclogy.com/2010/12/20/texshop/)
-- [TeXShopインストール for Mac](http://chihirosato.net/2011/01/24/texshop-install-mac/)
-- [MacTeX 2010 で日本語](http://www.clas.kitasato-u.ac.jp/~fujiwara/MacTeX/MacTeX2010.html)
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>パス設定</strong><br>
+　　　　(pdf)TeX (デフォルト:/usr/texbin)<br>
+　　　　<ins>/usr/texbin</ins><br>
+　　　　Distiller (Ghostscript) (デフォルト:/usr/local/bin)<br>
+　　　　<ins>/usr/local/bin</ins><br>
+
+<br>
+
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins><br>
+　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
+
+<br>
+
+　　　　<strong>検索用コマンド</strong><br>
+　　　　kpsetool (デフォルト:kpsetool -w -n latex tex)<br>
+　　　　　<ins>kpsewhich -w -n latex tex</ins><br>
+
+<br>
+
+　　　　<strong>BibTeX エンジン</strong><br>
+　　　　デフォルト:bibtex<br>
+　　　　　<ins>pbibtex</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
+### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
+
+***
+
+- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
+
+### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
+
+***
+
+- &#x7e;/Library/TeXShop/bin/platex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
 
 ## 小川版 (Drag &amp; Drop UpTeX) の場合の設定 {#h991fc27}
 
 次のページを御覧下さい．<br>
 
-- [TeXで日本語文書作成](http://ballrw.web.fc2.com/ball/tex.html)
-- [TeX設定メモ](http://twilog.org/himappy/date-110804)
-    - TeXShop 環境設定
-        - [書類](http://gyazo.com/fea5a3a32ac70f1bebbf8a340e4cb57a)
-        - [プレビュー](http://gyazo.com/614c187d02b45d3e954181efcc37d373)
-        - [コンソール](http://gyazo.com/8037aa18f22a4bc33a785d153d66093d)
-        - [タイプセット](http://gyazo.com/d5e96f8c0bfef7e2f8a10d42faf46a2c)
-        - [内部設定](http://gyazo.com/7064f593f697cbc649f689d32c734179)
-        - [コピー](http://gyazo.com/a05e587ce7f635b5ea7210b436f9e2a5)
-        - [詳細](http://gyazo.com/04e4581f780b44e8f0f7a38a806415ac)
-            <!-- -[[LaTeX2eの設定: MacOS X:http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingmacosx.html]] -->
-            <!-- -[[教授でもできるMacOSXへのX11とLaTeX、Ghostviewのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xtexgsgv.html]] -->
-            <!-- - -[[4．TeXShopのインストレーション:http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_texshop.html]] -->
+- [Mac - TeX Wiki#小川版](/Mac/#tea5dffe)
 
 ## MacPorts (pTeX) の場合の設定 {#s81bdf6c}
 
 次のページを御覧下さい．<br>
 
-- [Beginning OS X](http://osx.miko.org/)
-    - [Lion](http://osx.miko.org/index.php/Beginning_OS_X_Lion/%E3%82%A2%E3%83%97%E3%83%AA%E5%B0%8E%E5%85%A5%E7%B7%A8#TeXShop)
-    - [10.6](http://osx.miko.org/index.php/Beginning_OS_X_10.6/%E3%82%A2%E3%83%97%E3%83%AA%E5%B0%8E%E5%85%A5%E7%B7%A8#TeXShop)
-    - [10.5](http://osx.miko.org/index.php/Beginning_OS_X_10.5/%E3%82%A2%E3%83%97%E3%83%AA%E5%B0%8E%E5%85%A5%E7%B7%A8#TeXShop)
-- [LaTeX 環境の構築](http://d.hatena.ne.jp/hkob/20110705#1309879461)
-- [Mac研究環境/TeX編](http://www.rmss.is.uec.ac.jp/pukiwiki/index.php?Mac%B8%A6%B5%E6%B4%C4%B6%AD%2FTeX%CA%D4)
-- [MacのTex環境設定「pTeX」「TeXShop」「LaTeXiT」](http://p-toyama-wan.blogspot.com/2011/01/mactexptextexshoplatexit.html)
-- [MacBook Air (snow leopard)でTeX環境を整えるときのまとめ](http://blog.livedoor.jp/umtoto/archives/65351784.html)
+- [Mac - TeX Wiki#MacPorts (pTeX)](/Mac/#hcfd86af)
 
 ## [Make](/Make/) の場合の設定 {#n9cdd334}
 
