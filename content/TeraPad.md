@@ -41,7 +41,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　　</ins></span><br>
 
 ```
-\documentclass[12pt]{jsarticle}
+\documentclass[12pt,papersize]{jsarticle}
 ```
 
 ```
@@ -51,7 +51,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 \else
   \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
 \fi
-\usepackage[dvipdfmx]{hyperref}
+\usepackage[dvipdfmx,setpagesize=false]{hyperref}
 \hypersetup{pdftitle={TeraPad について}}
 ```
 
