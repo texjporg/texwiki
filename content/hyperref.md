@@ -19,6 +19,24 @@ pukiwiki: "hyperref"
 
 ### 注意点 {#he2b8021}
 
+#### hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
+
+- [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
+
+以下の方法のうちのどれかを使用することで回避可能です．
+
+- クラスオプションに papersize を指定する
+
+    ```
+    \documentclass[papersize]{jsarticle}
+    ```
+
+- hyperref のオプションに setpagesize=false を指定する
+
+    ```
+    \usepackage[dvipdfmx,setpagesize=false]{hyperref}
+    ```
+
 #### ["--"が hyperref で正しく扱われてないっぽくて，しおりが変になる](http://twitter.com/#!/t_teruya/status/99411185539100672) {#d46c2828}
 
 以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
@@ -40,6 +58,7 @@ platex + dvipdfmx の場合は，下記のようにします．
  bookmarks=true,%
  bookmarksnumbered=true,%
  colorlinks=true,%
+ setpagesize=false,%
  pdftitle={LaTeX研修課程},%
  pdfauthor={ななしのごんべぇ},%
  pdfsubject={hyperref入門・演習},%
@@ -53,6 +72,7 @@ platex + dvipdfmx の場合は，下記のようにします．
 \hypersetup{%
  bookmarksnumbered=true,%
  colorlinks=true,%
+ setpagesize=false,%
  pdftitle={LaTeX研修課程},%
  pdfauthor={ななしのごんべぇ},%
  pdfsubject={hyperref入門・演習},%
