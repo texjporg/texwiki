@@ -7,6 +7,8 @@ pukiwiki: "METAFONT"
 
 # METAFONT
 
+## METAFONT {#a97c3921}
+
 METAFONTは、主に TeX で使用するためのフォントを作成するプログラムです。[TeX](</TeX入門/#nef9fd41>) と同じく Knuth によって作られました。TeX の標準フォントである Computer Modern は、METAFONT プログラム言語で設計されています。現在のバージョン番号は 2.718281 です。
 
 METAFONT 言語で書かれたソースファイルをコンパイルすると、TeX で利用する形式のフォントメトリックファイル (tfm) と、出力装置にあわせたビットマップのグリフファイル (gf) が生成されます。
@@ -22,3 +24,9 @@ METAFONTについて勉強したい方は、以下の書籍をご覧下さい。
     鷺谷好輝訳（アスキー，1994年，6932円，ISBN4-7561-0194-1）
     ……METAFONT の原典です。
     原著のソースファイル：[CTAN:systems/knuth/mf/mfbook.tex](https://mirror.ctan.org/systems/knuth/mf/mfbook.tex)
+
+### 関連リンク {#af77cd68}
+
+- [TeXで外字を使う, JIS 補助漢字 METAFONT など](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/program.html) (安岡孝一さん)
+- [メタ紋帳プロジェクト](http://homepage3.nifty.com/tenteba/metamon.htm) と [TeX 関連リンク集](http://homepage3.nifty.com/tenteba/tex.htm) (てんてばさん)
+- [日本語版 WEB/MetaPost \[Internet Archive\]](http://replay.web.archive.org/20100516051121/http://matsuand.com/) (松山道夫さん)
