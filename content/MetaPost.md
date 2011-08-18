@@ -435,8 +435,11 @@ pool ファイルは無くなっています。) 1.501 から mem ファイル�
 <!-- そいうところまで更新していただくと情報が欠落していっているように思います。 -->
 <!-- 単純に(気づいた時点での)新しいバージョン番号だけにします。 -->
 
-現在の MetaPost のバージョンは 1.503 (beta) です。(正式リリース版は 1.212)。
+現在の MetaPost のバージョンは 1.504 です。
 
 ### 参考サイト {#sa284452}
 
 - [Supelec-Foundry MetaPost](http://foundry.supelec.fr/gf/project/metapost/) （本家）
+- [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
+- [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
+- [TeX&amp;MetaPostであそぼう](http://homepage2.nifty.com/domae/)(みなもさんによるMePoTeX 配布など)
