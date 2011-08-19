@@ -20,7 +20,7 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
     [SourceForge.net: Ghostscript](http://sourceforge.net/projects/ghostscript/)
 
 - [Ghostscript, Ghostview and GSview](http://pages.cs.wisc.edu/~ghost/) (wisc.edu)
-- [Ghostscript 9.02 + GSview 4.9 の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
+- [Ghostscript + GSview の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
     [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/)（堀田さん@愛知教育大・数学）
 
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
@@ -34,7 +34,7 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-> を Ghostscript の dll ファイル (C:\gs\gs9.02\bin\gsdll32.dll) に修正します．
+> を Ghostscript の dll ファイル (C:\gs\gs9.04\bin\gsdll32.dll) に修正します．
 
 > ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
@@ -102,6 +102,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ### PDF 作成 {#w9442957}
 
+- [convbkmk.rb](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) dvips で，日本語のしおりの文字化けを防止するスクリプト
 - [松本隆太郎](http://www.rmatsumoto.org/tex-ps-pdf/)さん：
     綺麗で小さな PostScript 及び PDF を TeX から作る /
     hyperref と日本語 / 画像を含む PS ファイルを小さくする
