@@ -376,6 +376,8 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 - [textext 開発サイト](https://bitbucket.org/pv/textext/)
     - [コミットログ](https://bitbucket.org/pv/textext/changesets)
     - [https://bitbucket.org/pv/textext/issue/55/textext-using-inkscape048](https://bitbucket.org/pv/textext/issue/55/textext-using-inkscape048)
+    - [https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape](https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape)
+- [Inkscape Portable with Textext (MikTex, pstoedit, gs)](http://portableapps.com/node/28897)
 - [textext, pdf2svg on Windows](http://hil.t.u-tokyo.ac.jp/~t-nakano/textext_pdf2svg.html)
 - [ぼやっきんぐ   &raquo; Inkscape](http://www.empitsu.com/wp/?cat=8)
 - [ＯＺのＸＸ使い: textextの検索結果](http://kozimathewizard.blogspot.com/search?q=textext)
