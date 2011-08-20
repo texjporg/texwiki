@@ -9,9 +9,13 @@ pukiwiki: "Linux/Gentoo"
 
 ## [Gentoo](http://www.gentoo.org/) {#j8a08e75}
 
-## [Gentoo Linux](http://www.gentoo.org/) {#gdebd34f}
+## 公式サイト {#gdebd34f}
 
-## [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/) {#c18610d8}
+- [Gentoo Linux](http://www.gentoo.org/)
+
+## Gentoo Linux Users Group Japan {#c18610d8}
+
+- [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/)
 
 ## [TeX Live](</TeX Live/>) {#ld62f64f}
 
@@ -22,8 +26,8 @@ pukiwiki: "Linux/Gentoo"
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
 - [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 - [Suzuki Lab wiki - GentooLinux#LaTeX](http://www.os.cis.iwate-u.ac.jp/wikky/wikky.cgi?GentooLinux#t15)
-- [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)
 - [texlive-2011 on Gentoo Linux (x86)](http://blogs.yahoo.co.jp/igproj_fusion/13118467.html)
+- [Gentoo's texlive の現況](http://blogs.yahoo.co.jp/igproj_fusion/12433264.html)
 - [texlive2010 on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/10026283.html)
 - [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
 - [GentooにTeX環境をインストールしてみた その2](http://d.hatena.ne.jp/jouzima/20101204/1291456449)
