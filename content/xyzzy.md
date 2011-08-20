@@ -22,7 +22,7 @@ xyzzy は柔軟なカスタマイズを可能にした，
 
 国産で，フリーソフトウェアです。
 
-xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](#xykb6f8d)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
 
 多言語についても
 
