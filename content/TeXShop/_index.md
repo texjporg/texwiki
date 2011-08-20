@@ -300,12 +300,16 @@ PDF 以外の形式なら貼り付けられますが、（ベクトル形式の�
 Keynote は PDF で貼り付けられます．
 しかも，文字以外の部分は透明になるので，Keynote の背景色や背景画像が適用されます．
 
+## 使い方 {#i4c3aa46}
+
+### タイプセット {#b06dc45a}
+
+#### [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/) {#q2990ba4}
+
+### [TeXShopは画像ファイルhoge.\*をDrag&amp;Dropだけで\includegraphics\[\]{hoge.\*}してくれる](http://twitter.com/#!/ysykimura/status/105009020062015488) {#qa99ad06}
+
+### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
+
 ## ツール {#kffeddd2}
 
-- [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/)
-
-## TeXShop の engine ファイル {#q2990ba4}
-
-- [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/)
-
-## [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
+### [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/) {#db2483a1}
