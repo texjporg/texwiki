@@ -53,7 +53,12 @@ Vim を起動し
 
 で，$HOME の場所を確認します．
 
-パッケージを展開し，$HOME/vimfiles/ (Unix, Linux では $HOME/.vim/) に
+パッケージを展開し
+
+- $HOME/.vim/ (UNIX, Linux)
+- $HOME/vimfiles/ (Windows)
+
+に
 
 - autoload/
 - colors/
@@ -80,6 +85,19 @@ syntax on
 
 ## 使い方 {#w8da234e}
 
+### コンパイル・プレビュー {#x0397616}
+
+- コンパイルは \l
+- プレビューは \v
+
 ### 補完 {#v9176e7e}
 
 補完は基本的には &lt;Tab> とオムニ補完 &lt;Ctrl-X>&lt;Ctrl-O> を使用します．
+
+```
+\be<TAB> で \begin{
+\begin{i<TAB> で \begin{itemize}
+\i<TAB> で \item などの候補が表示されます
+\i<Ctrl-X><Ctrl-O> でオムニ補完による \item の補完が行われます
+\item の入力が終わって <Tab> を入力すると \end{itemize} が補完されます
+```
