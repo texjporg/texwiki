@@ -822,7 +822,7 @@ WZ EDITOR をご覧ください．
 
 ### Vim + プラグイン {#s7ce6347}
 
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)<br> をご覧ください．
+[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
 
 ## [TeX Live](</TeX Live/>) {#ia336ed2}
 
