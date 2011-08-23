@@ -87,7 +87,7 @@ pukiwiki: "インストール(Windows)"
 やコマンド プロンプト（Windows Me, 98，95 では
 MS-DOSプロンプト）で使うものですが，マウスによるドラッグ &amp; ドロップに対応させることもできます。
 
-また，[TeXworks](/TeXworks/)，EasyTeX，[WinShell](/WinShell/)，[Texmaker](/Texmaker/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE，[LyX](/LyX/) などと併用すれば
+また，[TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などと併用すれば
 Windows 風の操作も可能です。
 
 ここ以外に次のウェブサイトに解説があります：
@@ -488,7 +488,7 @@ C:\work>platex -jobname=予定 予定.tex
 
 として -jobname= で指定してコンパイルをすれば OK です．
 
-こういったコマンドの打ち込み操作が苦手な方に対して，[TeXworks](/TeXworks/)，EasyTeX，[WinShell](/WinShell/)，[Texmaker](/Texmaker/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE，[LyX](/LyX/)
+こういったコマンドの打ち込み操作が苦手な方に対して，[TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE
 などの [TeX 専用エディタ](</TeX用エディタ/>)が
 WWW 上に無償で公開されています。
 
@@ -750,6 +750,14 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 [TeXworks](/TeXworks/) もご覧ください．
 
+### Texmaker {#q8c6a4e6}
+
+[Texmaker](/Texmaker/) をご覧ください．
+
+### LyX {#s7fa0837}
+
+[LyX](/LyX/) をご覧ください．
+
 ### EasyTeX {#i87678c7}
 
 EasyTeX をご覧ください．
@@ -757,10 +765,6 @@ EasyTeX をご覧ください．
 ### WinShell {#l040a9c6}
 
 [WinShell](/WinShell/)，WinShell3 をご覧ください．
-
-### Texmaker {#q8c6a4e6}
-
-[Texmaker](/Texmaker/) をご覧ください．
 
 ### TeXnicCenter {#kf5b1543}
 
@@ -773,10 +777,6 @@ Masamichi をご覧ください．
 ### TeXE {#g0454558}
 
 TeXE をご覧ください．
-
-### LyX {#s7fa0837}
-
-[LyX](/LyX/) をご覧ください．
 
 ### TeraPad + ツール {#a652512f}
 
