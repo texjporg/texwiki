@@ -100,4 +100,5 @@ syntax on
 \i<TAB> で \item などの候補が表示されます
 \i<Ctrl-X><Ctrl-O> でオムニ補完による \item の補完が行われます
 \item の入力が終わって <Tab> を入力すると \end{itemize} が補完されます
+カーソルは \end{itemize} の後に自動的に移動します
 ```
