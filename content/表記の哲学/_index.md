@@ -29,10 +29,9 @@ pukiwiki: "表記の哲学"
 
 - 行列変数
     - 大文字かつイタリック体（ISOに従うと）
-    - ＋ボールド体とはしない流儀の例
-        - [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
-    - ＋ボールド体とする流儀の例（これは古い？米国ではボールド体が普及？）
-        - [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
+        - 例 [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
+    - ボールド体とする流儀の例（米国では行列変数・ベクトル変数に，立体かつボールド体表記が多用される模様）
+        - 例 [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
             <!-- - - 日本でボールド体が普及していない原因は？ -->
 
 - 単位行列 $I$ （イタリック体で良いかどうか？）
@@ -56,9 +55,9 @@ pukiwiki: "表記の哲学"
         - いずれも\textmuを定義して使うと良さそう．例：\DeclareRobustCommand\*\textmu{\leavevmode{\usefont{U}{psy}{m}{n} \symbol{"6D}}}
 
 - 物理量と単位
-    - 物理量 = 数 × 単位　（例：$c$=299,792,458\\,m/s）　（SI に従うと）
-        - 無次元量（cycle や radian など）を考えると単純ではない
-        - 例として，ω=2 π rad/s  ⇔ f=1 Hz = 1 cycle/s
+    - 物理量［イタリック体］ = 数［立体］× 単位［立体］　（例：$c$=299,792,458\\,m/s）　（SI に従うと）
+        - 物理量［イタリック体］÷ 単位［立体］= 数［立体］　（例：$c$ / (m/s) = 299,792,458）　（SI に従うと）
+        - 無次元量（cycle や radian など）を考えると単純ではない　例として，ω=2 π rad/s  ⇔ f=1 Hz = 1 cycle/s　（慣習上、変数記号を使い分けている）
 
 - Sans-serif typeface
     - SI次元表記法で使う（例：$\textsf{L}$）
@@ -79,7 +78,8 @@ pukiwiki: "表記の哲学"
 - 日付表記
     - ISO 8601 に従えば、年月日の表記は「YYYY-MM-DD」（区切りはハイフン）（例：「2000-12-31」）
         - 中国ではこれを普通に使用する
-        - 区切りについては、世界的には（日本も）「/（スラッシュ）」を普通に使用する国が多い
+        - 区切りについては、世界的には（日本も）「/（スラッシュ）」を使用する国が多い
+        - 他に，区切りに「.（ピリオド）」を使用する例も見られる
         - 年月日の並べ順については、中国の他に日本などが，年月日の順（上記方式）を普通に使用する（日本の例：「2000/12/31」）　（中国、日本、韓国、ハンガリー、スエーデン、フィンランド、デンマークなど）
     - 参考情報wikipedia: [http://ja.wikipedia.org/wiki/ISO_8601](http://ja.wikipedia.org/wiki/ISO_8601)，wikipedia: [http://ja.wikipedia.org/wiki/日付](<http://ja.wikipedia.org/wiki/日付>)
 
