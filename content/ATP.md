@@ -87,18 +87,69 @@ syntax on
 
 ### コンパイル・プレビュー {#x0397616}
 
-- コンパイルは \l
-- プレビューは \v
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
+> <tr><td>Compile</td><td>\l</td><td>コンパイル</td></tr>
+> <tr><td>View Output</td><td>\v</td><td>プレビュー</td></tr>
+> </tbody>
+> </table>
+>
 
 ### 補完 {#v9176e7e}
 
-補完は基本的には &lt;Tab> とオムニ補完 &lt;Ctrl-X>&lt;Ctrl-O> を使用します．
+#### 基本的な補完 {#m1120519}
+
+基本的な補完は &lt;TAB> とオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を使用します．
 
 ```
 \be<TAB> で \begin{
 \begin{i<TAB> で \begin{itemize}
 \i<TAB> で \item などの候補が表示されます
-\i<Ctrl-X><Ctrl-O> でオムニ補完による \item の補完が行われます
-\item の入力が終わって <Tab> を入力すると \end{itemize} が補完されます
+\i<CTRL-X><CTRL-O> でオムニ補完による \item の補完が行われます
+\item の入力が終わって <TAB> を入力すると \end{itemize} が補完されます
 カーソルは \end{itemize} の後に自動的に移動します
+```
+
+#### ENVIRONMENT IMAPS {#odbdb26f}
+
+\]I を素早く入力すると \begin{itemize}\item\end{itemize} を補完します．
+
+```
+]I
+\begin{itemize}
+	\item
+\end{itemize}
+```
+
+\]i を素早く入力すると \item を補完します．
+
+```
+]i
+\item
+```
+
+#### FONT COMMANDS {#l4bb69da}
+
+##rm を素早く入力すると \textrm{} を補完します．
+
+```
+##rm
+\textrm{}
+```
+
+数式モード中で ##rm を素早く入力すると \mathrm{} を補完します．
+
+```
+$##rm
+$\mathrm{}
+```
+
+#### GREEK LETTERS {#ufe42a77}
+
+数式モード中で #a を素早く入力すると \alpha を補完します．
+
+```
+$#a
+$\alpha
 ```
