@@ -56,7 +56,7 @@ Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使う
 
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。
 AI 形式は実質的に PDF なので，PDF 形式の図の挿入と同様に処理できる。
-Ghostscript が呼び出されないので処理も高速。
+Ghostscript が呼び出されないので処理も高速。なお Adobe Illustrator Artwork （拡張子 “.ai”）、同 PDf （拡張子 “.pdf”）ファイルは，EPS 仕様と互換な bounding box 情報を内部に持っているので、通常は mediabb.sty の助けは不要。
 
 例（hoge.ai を挿入）：
 
@@ -79,6 +79,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### 各バージョン {#u178a7b2}
 
+- Illustrator CS5.1 (v.15.1)   2011年
 - Illustrator CS5 (v.15)   2010年  (64ビット化は見送り，MacOSX では Cocoa 化の可能性）
 - Illustrator CS4 (v.14)   2008年
 - Illustrator CS3 (v.13)   2007年
