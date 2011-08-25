@@ -30,6 +30,62 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
+MacTeX-2011 に [Additional Tools for MacTeX/TeXLive 2011](http://www2.kumagaku.ac.jp/teacher/herogw/) を追加します．
+
+### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
+
+***
+
+- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
+
+### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
+
+***
+
+- &#x7e;/Library/TeXShop/bin/platex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
+
 ### TeXShop 環境設定 {#d2699f04}
 
 #### 書類 {#n0747af1}
@@ -183,57 +239,59 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ***
 
-### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
+#### 詳細 {#ae4b4710}
 
 ***
 
-- &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
-***
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>詳細</strong>　<span style="color:#555555;">\]</span></span></ins><br>
 
-```
-#!/bin/sh
-# iNoue Koich! (modified by S. Zenitani)
+<br>
 
-export PATH=$PATH:/usr/texbin:/usr/local/bin
+<br>
 
-COMMAND=${0##*/}
-PTEX=${COMMAND%2pdf-*}
-ENCODE=${COMMAND#*-}
-JOBNAME=${1##*/}
-JOBNAME=${JOBNAME%.*}
+　　　　　　　　　　　<strong>パーソナルスクリプト</strong><br>
+　　　　　　　　　　　　TeXプログラム<br>
+　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+　　　　　　　　　　　　LaTeXプログラム<br>
+　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
-dvipdfmx $JOBNAME
+<br>
 
-```
+　　　　　　　　　　　<strong>Distiller</strong>　　　　　　　　　　　　　　　　　　　<strong>pTeX 拡張機能</strong><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Ghostscript<br>
+　　　　　　　　　　　　◯ Apple Distiller　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> utf パッケージ対応<br>
 
-***
+<br>
 
-### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
+　　　　　　　　　　　<strong>保存時の処理 (日本語濁点問題の対処)</strong><br>
 
-***
+<br>
 
-- &#x7e;/Library/TeXShop/bin/platex2pdf-utf8
+　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> UTF-8-MAC を UTF-8 に自動変換<br>
 
-***
+<br>
 
-```
-#!/bin/sh
-# iNoue Koich! (modified by S. Zenitani)
+<br>
 
-export PATH=$PATH:/usr/texbin:/usr/local/bin
+<br>
 
-COMMAND=${0##*/}
-PTEX=${COMMAND%2pdf-*}
-ENCODE=${COMMAND#*-}
-JOBNAME=${1##*/}
-JOBNAME=${JOBNAME%.*}
+<br>
 
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
-dvipdfmx $JOBNAME
+<br>
 
-```
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 
 ***
 
