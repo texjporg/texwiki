@@ -15,6 +15,8 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 
 - [Org-Mode: Your Life in Plain Text](http://orgmode.org/)
 - [org-mode.git](http://orgmode.org/w/?p=org-mode.git)
+    - [org-beamer.el --- Beamer-specific LaTeX export for org-mode](http://orgmode.org/w/?p=org-mode.git;a=blob;f=lisp/org-beamer.el)
+    - [org-latex.el --- LaTeX exporter for org-mode](http://orgmode.org/w/?p=org-mode.git;a=blob;f=lisp/org-latex.el)
 
 ## LaTeX Export {#k6bbb6c5}
 
@@ -31,7 +33,7 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 - [Org-Mode の機能、組み込み LaTeX — その2](http://www.kitetu.net/old/notes/0004.html)
 - [Org-Mode の組み込み LaTeX 和訳部分](http://www.kitetu.net/info-renais/emacs/manual/org-mode/tr_embedded-latex.html)
 
-## [Beamer](/Beamer/) in org-mode {#k112eb83}
+## [Beamer](/Beamer/) Export {#k112eb83}
 
 - [Writing Beamer presentations in org-mode](http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html)
 - [Emacs org-modeを使ってみる: (15) Beamerにエクスポート](http://d.hatena.ne.jp/tamura70/20100218/org)
