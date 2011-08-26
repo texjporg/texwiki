@@ -21,6 +21,8 @@ pukiwiki: "Microsoft Office"
 
 - [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
 - [TeXからWordへの乗り換えを試みた](http://d.hatena.ne.jp/moccos_info/20110801/p1)
+- [私がTeXを使い続ける理由](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
+- [なぜ，我々はWordの絵がどっか言ってしまうと文句を言い募るだろうか？](http://d.hatena.ne.jp/smectic_g/20100223/1266934286)
 - [僕が TeX を使うのを辞めた3つの理由](http://d.hatena.ne.jp/ufcpp/20100216/1266337507)
 - [僕が TeX を使うのを辞めた 10 の理由](http://d.hatena.ne.jp/ufcpp/20100219/1266594885)
 - [僕が TeX を使うのを辞めた30の理由](http://d.hatena.ne.jp/ufcpp/20100220/1266661449)
