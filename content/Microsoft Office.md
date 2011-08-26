@@ -7,4 +7,25 @@ pukiwiki: "Microsoft Office"
 
 # Microsoft Office
 
-## Microsoft Office {#f4dcc3e1}
+## [Microsoft Office](http://office.microsoft.com/) {#f4dcc3e1}
+
+- [Microsoft Office - Office.com](http://office.microsoft.com/)
+- [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
+- WikiPedia.ja:Microsoft Office
+
+## アドイン {#w6cd2e21}
+
+[プレゼンツール - TeX Wiki](</プレゼンツール/>) を参照．
+
+## TeX との比較 {#k678548a}
+
+- [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
+- [TeXからWordへの乗り換えを試みた](http://d.hatena.ne.jp/moccos_info/20110801/p1)
+- [僕が TeX を使うのを辞めた3つの理由](http://d.hatena.ne.jp/ufcpp/20100216/1266337507)
+- [僕が TeX を使うのを辞めた 10 の理由](http://d.hatena.ne.jp/ufcpp/20100219/1266594885)
+- [僕が TeX を使うのを辞めた30の理由](http://d.hatena.ne.jp/ufcpp/20100220/1266661449)
+- [まえがき (Office 関連)](http://ufcpp.net/study/office/wordintro.html)
+- [まえがき (Word 2007、Word 2010)](http://ufcpp.net/study/office/word2007.html)
+- [まえがき (数式入力)](http://ufcpp.net/study/office/wordmath.html)
+- [最近、MS Equation Editor にどっぷり](http://ufcpp.wordpress.com/2010/02/16/%E6%9C%80%E8%BF%91%E3%80%81ms-equation-editor-%E3%81%AB%E3%81%A9%E3%81%A3%E3%81%B7%E3%82%8A/)
+- [10 の理由に増やしてみた](http://ufcpp.wordpress.com/2010/02/19/10-%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AB%E5%A2%97%E3%82%84%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
