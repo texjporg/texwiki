@@ -110,9 +110,9 @@ syntax on
 カーソルは \end{itemize} の後に自動的に移動します
 ```
 
-#### オムニ補完 {#i3ad1ad9}
+#### [オムニ補完](https://sites.google.com/site/vimdocja/usr_24-html#24.3) {#i3ad1ad9}
 
-ATP では，オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．
+オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．
 
 ```
 \be<CTRL-X><CTRL-O> で  \begin{
