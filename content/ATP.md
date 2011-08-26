@@ -100,15 +100,27 @@ syntax on
 
 #### 基本的な補完 {#m1120519}
 
-基本的な補完は &lt;TAB> とオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を使用します．
+基本的な補完は &lt;TAB> を使用します．
 
 ```
 \be<TAB> で \begin{
 \begin{i<TAB> で \begin{itemize}
 \i<TAB> で \item などの候補が表示されます
-\i<CTRL-X><CTRL-O> でオムニ補完による \item の補完が行われます
 \item の入力が終わって <TAB> を入力すると \end{itemize} が補完されます
 カーソルは \end{itemize} の後に自動的に移動します
+```
+
+#### オムニ補完 {#i3ad1ad9}
+
+ATP では，オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．
+
+```
+\be<CTRL-X><CTRL-O> で  \begin{
+\begin{i<CTRL-X><CTRL-O> で \begin{itemize}
+\i<CTRL-X><CTRL-O> で \item の補完が行われます
+\en<CTRL-X><CTRL-O> で \end{
+\end{i<CTRL-X><CTRL-O> で \end{itemize}
+ただし \end{itemize} は自動インデントされないようなので \end{itemize} を補完する場合は <TAB> を使用しましょう
 ```
 
 #### ENVIRONMENT IMAPS {#odbdb26f}
