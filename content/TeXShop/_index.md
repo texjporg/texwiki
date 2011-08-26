@@ -19,7 +19,8 @@ pukiwiki: "TeXShop"
 ## TeXShop とは {#q728ac5b}
 
 TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
-詳しくは次のページを御覧下さい．<br>
+[TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
+TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
 - [Lion 用 TeXShop 3.02 がリリースされました！](http://twitter.com/#!/doraTeX/status/98562818227445760)
