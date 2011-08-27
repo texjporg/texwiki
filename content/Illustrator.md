@@ -16,6 +16,8 @@ pukiwiki: "Illustrator"
 
 ### Illustrator の図を TeX に {#sa00c636}
 
+#### EPS 形式ファイル {#h86d212a}
+
 Illustrator で EPS 保存したものを LaTeX に挿入する例：
 
 ```
@@ -54,9 +56,11 @@ Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使う
 >fixill.exe <old.eps >new.eps
 ```
 
-最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。
-AI 形式は実質的に PDF なので，PDF 形式の図の挿入と同様に処理できる。
-Ghostscript が呼び出されないので処理も高速。なお Adobe Illustrator Artwork （拡張子 “.ai”）、同 PDf （拡張子 “.pdf”）ファイルは，EPS 仕様と互換な bounding box 情報を内部に持っているので、通常は mediabb.sty の助けは不要。
+#### ai/PDF 形式ファイル {#l3862bb1}
+
+最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。<br>
+なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報が内部に書き込まれているので、通常は mediabb.sty 等の助けは不要。<br>
+従って、図の挿入は EPS ファイルの場合と同様に処理される（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。 <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
@@ -64,7 +68,7 @@ Ghostscript が呼び出されないので処理も高速。なお Adobe Illustr
 %%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
 \documentclass{article}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{mediabb}
+\usepackage{mediabb} % 通常は不要
 \DeclareGraphicsRule{.ai}{pdf}{*}{}
 \begin{document}
 \includegraphics{hoge.ai}
@@ -92,6 +96,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 - [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
 - [Illustrator CS4までの実用的な新機能講座](http://www.incunabula.co.jp/book/Illustcs4_newfun/)
 - [Illustrator CS4の主要な新機能](http://www.dtp-transit.jp/adobe/illustrator/post_656.html)
+- [Illustrator CS5の新機能／差異](http://www.dtp-transit.jp/adobe/illustrator/post_1090.html)
 
 ### その他 {#a59267c4}
 
