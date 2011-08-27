@@ -66,7 +66,12 @@ OpenOffice.org はフリーのオフィススイートです．
 
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 
+## LibreOffice/OpenOffice.org Math {#p45a32d8}
+
+- [LaTeXを使わずきれいな数式をフリーソフトで書く方法](http://genpi215.blog33.fc2.com/blog-entry-712.html)
+
 ## 関連リンク {#x6de2338}
 
+- [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・OpenOffice.org / LibreOffice のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
 - [memo: Windows で OOoLatex を使う / Ubuntu で OOoLatex を使う](http://www.ms.osakafu-u.ac.jp/~horita/?c=memo2)
