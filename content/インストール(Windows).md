@@ -656,31 +656,11 @@ Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思いま�
 
 ## SumatraPDF のインストール {#sbe939df}
 
-[SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) は SyncTeX に対応した PDF ビューアです．
-
-PDF ファイルの自動更新機能もあり，Adobe Reader よりも TeX の PDF ファイルビューアに向いています．
-
-プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．
-
-v1.6 から PostScript ファイルの表示にも対応しました．([Ghostscript](/Ghostscript/) が必要です．)
-
-v1.6 で forward search ができない場合は v1.7 以降にアップグレードしてください．
-
-テスト用のプレリリースビルド版も利用できます．→ [SumatraPDF pre-release builds](http://blog.kowalczyk.info/software/sumatrapdf/prerelease.html)
-
-派生版として
-
-- [PDFlite](http://www.pdflite.com/)
-- [XhmikosR's builds home/sumatrapdf/](http://xhmikosr.1f0.de/index.php?folder=c3VtYXRyYXBkZg==)
-- 最適化ビルド版の [SumatraPDF x86/x64 Optimized Builds](http://guti.isgreat.org/static.php?page=SumatraPDFOpt)
-- [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
-- TeX ユーザのための [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) → 本家にマージされました．
-
-もあります．
+[SumatraPDF - TeX Wiki](/SumatraPDF/) をご覧ください．
 
 ## dviout for Windows のインストール {#fe50aa67}
 
-[dviout - TeX Wiki](/dviout/) をご覧ください。
+[dviout - TeX Wiki](/dviout/) をご覧ください．
 
 ## GSview のインストール（オプション） {#xd771752}
 
