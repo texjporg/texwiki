@@ -87,6 +87,8 @@ syntax on
 
 ### コンパイル・プレビュー {#x0397616}
 
+ATP 10.3 は Windows ではうまく動作しません．
+
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
