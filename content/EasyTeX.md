@@ -509,7 +509,9 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で，コメントイン・アウトできますので，活用してみてください．
 
-## SumatraPDF との連携 (forward and inverse search) {#mcca4bad}
+## SumatraPDF との連携 {#mcca4bad}
+
+### forward search {#o6a70e4f}
 
 EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
 
@@ -520,6 +522,8 @@ EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境
 LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Pdfﾌﾟﾚﾋﾞｭｰ(f)\] で PDF ファイルの該当領域を検索します．
 
 PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．
+
+### inverse search {#a57927f9}
 
 EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3241\EasyTeX.exe である場合
 
@@ -547,7 +551,9 @@ SumatraPDF の画面をダブルクリックすると，以下のような「指
 
 ***
 
-## dviout との連携 (forward and inverse search) {#etsa7019}
+## dviout との連携 {#etsa7019}
+
+### forward search {#t49147bf}
 
 EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
 
@@ -556,6 +562,8 @@ EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境
 \[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
 
 LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Dviﾌﾟﾚﾋﾞｭｰ(B)\] で DVI ファイルの該当領域にジャンプします．
+
+### inverse search {#o80a79a1}
 
 EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3241\EasyTeX.exe である場合
 
@@ -594,6 +602,8 @@ C:\easytex3241\EasyTeX.exe^s /j%d "%s"
 
 ## 関連リンク {#p8488be5}
 
+- [EasyTeXでCtrl-aが利かない](http://twitter.com/#!/chiguri/status/108072137952215040)
+    - EasyTeX では「すべて選択」は Ctrl+Alt+A に割り当てられているようです
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 
