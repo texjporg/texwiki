@@ -808,7 +808,7 @@ WZ EDITOR をご覧ください．
 
 ### Emacs + tex-mode or org-mode {#z9deda13}
 
-[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
+[Emacs](/Emacs/)[#tex-mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
 をご覧ください．
 
 ### Vim + プラグイン {#s7ce6347}
