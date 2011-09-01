@@ -87,7 +87,12 @@ syntax on
 
 ### コンパイル・プレビュー {#x0397616}
 
-ATP 10.3 は Windows ではうまく動作しません．
+ATP 10.3 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
+コンパイル・プレビューは OMake や latexmk を使ってください．<br>
+簡単すぎて身長が伸びるかも．[^1]<br>
+
+- [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
+- [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 
 > <table>
 > <tbody>
@@ -167,3 +172,5 @@ $\mathrm{}
 $#a
 $\alpha
 ```
+
+[^1]: <span style="color:White;background-color:White;">※ただしイケメンに限る</span>
