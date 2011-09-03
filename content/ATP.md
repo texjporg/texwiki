@@ -33,10 +33,7 @@ GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する�
     - [コミットログ](http://atp-vim.svn.sourceforge.net/viewvc/atp-vim/trunk/?view=log)
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
 
-## ダウンロード/インストール {#n5f1b86f}
-
-- [安定版](http://sourceforge.net/projects/atp-vim/files/releases/)
-- [開発版](http://sourceforge.net/projects/atp-vim/files/snapshots/)
+## ATP の動作に必要なもの {#g428a1c8}
 
 ATP の動作には
 
@@ -44,6 +41,16 @@ ATP の動作には
 - [psutil](http://code.google.com/p/psutil/)
 
 が必要です．
+
+Python と psutil がインストールされていない場合はこれらをインストールしておいてください．
+
+## ダウンロード/インストール {#n5f1b86f}
+
+- [Automatic LaTex Plugin for Vim -  Browse Files at SourceForge.net](http://sourceforge.net/projects/atp-vim/files/)
+    - [安定版](http://sourceforge.net/projects/atp-vim/files/releases/)
+    - [開発版](http://sourceforge.net/projects/atp-vim/files/snapshots/)
+
+からパッケージをダウンロードします．
 
 Vim を起動し
 
@@ -87,6 +94,26 @@ syntax on
 
 ### コンパイル・プレビュー {#x0397616}
 
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
+> <tr><td>pdfLaTeX</td><td>\l</td><td>:TEX</td><td>pdfLaTeX</td></tr>
+> <tr><td>Bibtex</td><td>\b</td><td>:Bibtex</td><td>BibTeX</td></tr>
+> <tr><td>View Output</td><td>\v</td><td>:ViewOutput</td><td>プレビュー</td></tr>
+> </tbody>
+> </table>
+>
+
+\l, \b, \v は素早く入力する必要があります．
+
+***
+
+<span style="color:Black;background-color:#4E03C7;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png" alt="welcome home : vim online" width="28" height="28">](http://www.vim.org/)<span style="color:Black;background-color:#4E03C7;"><ins>　<span style="color:White;"><strong>vim.tex - GVIM1</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#3E03B7;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#3E03B7;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 ツール(T)　 シンタックス(S)　 バッファ(B)　 ウィンドウ(W)　 LaTeX　 ヘルプ(H)　　　</ins></span><br>
+
+***
+
 ATP 10.3 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
 コンパイル・プレビューは OMake や latexmk を使ってください．<br>
 簡単すぎて身長が伸びるかも．[^1]<br>
@@ -94,32 +121,42 @@ ATP 10.3 のコンパイル・プレビューは Windows ではうまく動作�
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 
+### 補完 {#v9176e7e}
+
+#### Tab 補完 {#m1120519}
+
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
-> <tr><td>Compile</td><td>\l</td><td>コンパイル</td></tr>
-> <tr><td>View Output</td><td>\v</td><td>プレビュー</td></tr>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
+> <tr><td>&lt;Tab&gt;</td><td>Tab 補完</td></tr>
 > </tbody>
 > </table>
 >
 
-### 補完 {#v9176e7e}
-
-#### 基本的な補完 {#m1120519}
-
-基本的な補完は &lt;TAB> を使用します．
+ATP では基本的に補完は &lt;Tab> を使用します．<br>
+&#x3c;Tab> を入力する代わりに &lt;CTRL-I> を使用することもできます．<br>
+&#x3c;Tab> 自身を入力したい場合は &lt;CTRL-V>&lt;Tab> を入力します．<br>
 
 ```
-\be<TAB> で \begin{
-\begin{i<TAB> で \begin{itemize}
-\i<TAB> で \item などの候補が表示されます
-\item の入力が終わって <TAB> を入力すると \end{itemize} が補完されます
+\be<Tab> で \begin{
+\begin{i<Tab> で \begin{itemize}
+\i<Tab> で \item などの補完候補が表示されます
+補完候補のリストは <CTRL-N>, <CTRL-P> で移動できます
+\item の入力が終わって <Tab> を入力すると \end{itemize} が補完されます
 カーソルは \end{itemize} の後に自動的に移動します
 ```
 
 #### [オムニ補完](https://sites.google.com/site/vimdocja/usr_24-html#24.3) {#i3ad1ad9}
 
-オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
+> <tr><td>&lt;CTRL-X&gt;&lt;CTRL-O&gt;</td><td>オムニ補完</td></tr>
+> </tbody>
+> </table>
+>
+
+オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．<br>
 
 ```
 \be<CTRL-X><CTRL-O> で  \begin{
@@ -127,49 +164,90 @@ ATP 10.3 のコンパイル・プレビューは Windows ではうまく動作�
 \i<CTRL-X><CTRL-O> で \item の補完が行われます
 \en<CTRL-X><CTRL-O> で \end{
 \end{i<CTRL-X><CTRL-O> で \end{itemize}
-ただし \end{itemize} は自動インデントされないようなので \end{itemize} を補完する場合は <TAB> を使用しましょう
 ```
+
+ただし \end{itemize} は自動インデントされないようなので \end{itemize} を補完する場合は &lt;Tab> を使用しましょう．<br>
 
 #### ENVIRONMENT IMAPS {#odbdb26f}
 
-\]I を素早く入力すると \begin{itemize}\item\end{itemize} を補完します．
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">補完</th></tr>
+> <tr><td>]I</td><td>\begin{itemize}<br>\item<br>\end{itemize}<br></td></tr>
+> <tr><td>]i</td><td>\item</td></tr>
+> </tbody>
+> </table>
+>
+
+\]I を素早く入力すると \begin{itemize}\item\end{itemize} を補完します．<br>
 
 ```
 ]I
+```
+
+```
 \begin{itemize}
 	\item
 \end{itemize}
 ```
 
-\]i を素早く入力すると \item を補完します．
+\]i を素早く入力すると \item を補完します．<br>
 
 ```
 ]i
+```
+
+```
 \item
 ```
 
 #### FONT COMMANDS {#l4bb69da}
 
-##rm を素早く入力すると \textrm{} を補完します．
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">補完</th><th style="color:#FFF;background-color:#40C;text-align:center">補完 (数式モード)</th></tr>
+> <tr><td>##rm</td><td>\textrm{}</td><td>\mathrm{}</td></tr>
+> </tbody>
+> </table>
+>
+
+##rm を素早く入力すると \textrm{} を補完します．<br>
 
 ```
 ##rm
+```
+
+```
 \textrm{}
 ```
 
-数式モード中で ##rm を素早く入力すると \mathrm{} を補完します．
+数式モード中で ##rm を素早く入力すると \mathrm{} を補完します．<br>
 
 ```
 $##rm
+```
+
+```
 $\mathrm{}
 ```
 
 #### GREEK LETTERS {#ufe42a77}
 
-数式モード中で #a を素早く入力すると \alpha を補完します．
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">補完 (数式モード)</th></tr>
+> <tr><td>#a</td><td>\alpha</td></tr>
+> </tbody>
+> </table>
+>
+
+数式モード中で #a を素早く入力すると \alpha を補完します．<br>
 
 ```
 $#a
+```
+
+```
 $\alpha
 ```
 
