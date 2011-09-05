@@ -23,11 +23,18 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
-- [Lion 用 TeXShop 3.02 がリリースされました！](http://twitter.com/#!/doraTeX/status/98562818227445760)
-- [Lion専用の新バージョン TeXShop-64 がリリースされました！](http://twitter.com/#!/doraTeX/status/93699401658269697)
 - MacWiki:TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
+
+### リリース情報 {#td599942}
+
+- [TeXShop for Lion の実験的新バージョン3.05，3.06がリリースされました。](http://twitter.com/#!/doraTeX/status/110489378907889665)
+- [3.05は，Lionの「バージョン」機能に関わる改善です。3.04までは，タイプセットのたびに新しい「バージョン」が保存されましたが，それでは，こまめにタイプセットしていると「すべてのバージョンをブラウズ」したときにあまりに大量のバージョンが存在して面倒でした。（続く）](http://twitter.com/#!/doraTeX/status/110491486633738241)
+- [そこで，3.05では，明示的にCommand+Sしたときにのみ「バージョン」が保存されるようになりました。3.06では，それに加え，OgreKit検索パネルが改善され，TeXShop同等のカラーリングや補完機能が使えるようになりました。（続く）](http://twitter.com/#!/doraTeX/status/110491608440520704)
+- [また，全置換直後に文字色が真っ黒になる現象を修正したり，Spaces使用時にCommand+Fでスペースの遷移が起こらないようにしたりしました。あと，BibTeXの設定でオプションを許容するように変更したり，その他いくつかのバグ修正がなされています。](http://twitter.com/#!/doraTeX/status/110492227951792128)
+    <!-- -[[Lion 用 TeXShop 3.02 がリリースされました！:http://twitter.com/#!/doraTeX/status/98562818227445760]] -->
+    <!-- -[[Lion専用の新バージョン TeXShop-64 がリリースされました！:http://twitter.com/#!/doraTeX/status/93699401658269697]] -->
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
