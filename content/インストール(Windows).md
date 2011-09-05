@@ -136,7 +136,7 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 #### アーカイブ {#b9d7db68}
 
-過去のバージョンが欲しい場合は，兼宗さんが以下で提供してくださっています:
+過去のバージョンが欲しい場合は，[兼宗さん](http://twitter.com/kanemune)が以下で提供してくださっています:
 
 - [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
 
