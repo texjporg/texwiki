@@ -91,6 +91,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [LaTeX Beamer 入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/)
 - [Windows XP に LaTeX beamer をいれる](http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html)
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
+- [LaTeX の beamer の block 環境内で align を使うと上下の余白が大きすぎる問題は block 環境内で \abovedisplayskip = 0pt \belowdisplayskip = 0pt とすれば解決する. プリアンブルでは効かないので注意.](http://twitter.com/#!/optanaka/status/110574902322540545)
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
