@@ -1539,13 +1539,13 @@ forward search は PDF ファイル ビューアーの [TeXlipse#SumatraPDF](/Te
 
 ### inverse search {#lcd98656}
 
-inverse search は invtexlipse.bat を作成します．
+inverse search は C:\eclipse\invtexlipse.bat を作成します．
 
 texlipse.jar の PATH は自分の環境に合わせて修正してください．
 
 ***
 
-- invtexlipse.bat
+- C:\eclipse\invtexlipse.bat
 
 ***
 
@@ -1556,10 +1556,10 @@ java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.4.2\texlipse.jar"
 
 ***
 
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で invtexlipse.bat を指定し，
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で C:\eclipse\invtexlipse.bat を指定し，
 
 ```
-invtexlipse.bat "%f" %l
+C:\eclipse\invtexlipse.bat "%f" %l
 ```
 
 とします．
@@ -1572,13 +1572,13 @@ forward search は DVI ファイル ビューアーの [TeXlipse#dviout](/TeXlip
 
 ### inverse search {#na9d6648}
 
-inverse search は invtexlipse.bat を作成します．
+inverse search は C:\eclipse\invtexlipse.bat を作成します．
 
 texlipse.jar の PATH は自分の環境に合わせて修正してください．
 
 ***
 
-- invtexlipse.bat
+- C:\eclipse\invtexlipse.bat
 
 ***
 
@@ -1589,10 +1589,10 @@ java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.4.2\texlipse.jar"
 
 ***
 
-dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] で invtexlipse.bat を指定し，
+dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] で C:\eclipse\invtexlipse.bat を指定し，
 
 ```
-invtexlipse.bat^s "%s" %d
+C:\eclipse\invtexlipse.bat^s "%s" %d
 ```
 
 とします．
