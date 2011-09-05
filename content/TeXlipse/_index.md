@@ -33,6 +33,8 @@ pukiwiki: "TeXlipse"
 
 2011-08-07 TeXlipse Version 1.4.2 がリリースされました．64-bit Windows に対応しました．
 
+### スクリーンショット {#j94c34b3}
+
 [![This picture shows the BibTeX completion in action. The cursor disappeared from the screenshot,but you can see the "shadow" of it,as one of the curly braces is highlighted on the line where the error is.](http://texlipse.sourceforge.net/screenshots/bibref-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/bibref-screen.png)
 　 [![This picture shows navigation from build errors to source file. Latex reports all kinds of warnings and errors,and not all of them contain a line number. However,there usually is also a valid error message with line number information.](http://texlipse.sourceforge.net/screenshots/freport-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/freport-screen.png)
 
@@ -42,6 +44,7 @@ pukiwiki: "TeXlipse"
 - 折りたたみ
 - 自動ビルド
 - 自動補完
+- スペル・チェッカー
 - SyncTeX による forward and inverse search (SumatraPDF)
 - Source Special による forward and inverse search (dviout)
 
@@ -242,7 +245,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
@@ -259,7 +262,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
@@ -276,7 +279,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
@@ -293,7 +296,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
@@ -310,7 +313,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -327,7 +330,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
@@ -344,7 +347,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
@@ -361,7 +364,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
@@ -378,7 +381,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -399,7 +402,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
@@ -416,7 +419,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
@@ -433,7 +436,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
@@ -450,7 +453,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
@@ -467,7 +470,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -484,7 +487,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
@@ -501,7 +504,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
@@ -518,7 +521,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
@@ -535,7 +538,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -556,7 +559,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
@@ -573,7 +576,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
@@ -590,7 +593,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
@@ -607,7 +610,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
@@ -624,7 +627,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -641,7 +644,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
@@ -658,7 +661,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
@@ -675,7 +678,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
@@ -692,7 +695,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -713,7 +716,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
@@ -730,7 +733,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
@@ -747,7 +750,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
@@ -764,7 +767,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
@@ -781,7 +784,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -798,7 +801,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
@@ -815,7 +818,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
@@ -832,7 +835,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
@@ -849,7 +852,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Edit builder program</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
@@ -948,7 +951,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">新規ビューアー構成の追加</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
@@ -988,7 +991,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 ■ SumatraPDF v1.7.3952 以上 または 2011/05/11 よりも前の W32TeX の場合<br>
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Modify existing viewer configuration</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
@@ -1014,7 +1017,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 ■ SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合<br>
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Modify existing viewer configuration</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
@@ -1054,7 +1057,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 ■ Adobe Reader X の場合<br>
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Modify existing viewer configuration</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
@@ -1080,7 +1083,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 ■ Adobe Reader 9 の場合<br>
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Modify existing viewer configuration</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
@@ -1121,7 +1124,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">Modify existing viewer configuration</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>gv</ins><br>
@@ -1162,7 +1165,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">新規ビューアー構成の追加</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
@@ -1221,6 +1224,98 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
+
+## スペル・チェッカー設定 {#m717370b}
+
+スペル・チェッカーの設定をします．
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ウィンドウ(W)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　設定(P)　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </span><br>
+
+　　…<br>
+　　◢　一般<br>
+　　　　…<br>
+　　　　◢　エディター<br>
+　　　　　　◢　テキスト・エディター<br>
+　　　　　　　　…<br>
+　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　スペル　</span><br>
+　　　　　　　　…<br>
+　　　　…<br>
+　　…<br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#373EAE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+
+<strong>スペル</strong><br>
+
+☑ スペル・チェックを使用可能にする(E)<br>
+
+<br>
+
+　　使用するエンジンのスペルを選択(U): <span style="color:Black;background-color:#EEEEEE;">\[Latex　　　　　　　　　▼\]</span><br>
+
+***
+
+[dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
+
+辞書ファイルを展開します．
+
+展開した辞書ファイルが格納されているディレクトリを C:\eclipse\en.dict などとして設定します．
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ウィンドウ(W)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　設定(P)　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </span><br>
+
+　　…<br>
+　　◢　Texlipse<br>
+　　　　▷　BibTeX エディター<br>
+　　　　▷　エディター<br>
+　　　　▷<span style="color:Black;background-color:#DAEAFF;">　スペル・チェッカー　</span><br>
+　　　　　　ドキュメント・テンプレート<br>
+　　　　▷　ビューアー設定<br>
+　　　　▷　ビルダー設定<br>
+　　…<br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;">\[ <span style="color:White;"><strong>◛</strong></span> \]</span><span style="color:Black;background-color:#373EAE;">\[ <span style="color:White;"><strong>▭</strong></span> \]</span><span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+
+<strong>スペル・チェッカー</strong><br>
+
+スペル・チェッカー設定<br>
+
+<br>
+
+　Build in spell checker<br>
+
+<br>
+
+☑ Use build in spell checker<br>
+☑ Ignore comments<br>
+☑ 大/小文字混合ワードを無視<br>
+
+<br>
+
+Directory for main dictionaries:　　　<ins>C:\eclipse\en.dict</ins><br>
+Directory for user dictionaries:　　　<ins>C:\eclipse\en.dict</ins><br>
+
+***
+
+設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
+
+TeX ファイルを開いている場合は，いったん閉じて開き直すとスペル・チェッカーが有効になりスペルミスしていると思われる単語に赤い下線が表示されます．
+
+TeX ファイル編集中に改行すると Parsing が行われ，間違った単語を入力している場合，赤い下線が表示されます．
 
 ## コンソールビュー {#jf9b1095}
 
@@ -1302,7 +1397,7 @@ dviout や makeidx パッケージが作成するテンポラリーファイル�
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;">リポジトリーの追加</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
+<span style="color:Black;background-color:#473EBE;">　　 <span style="color:White;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </span><br>
 
 名前(N):　　　　　<ins>Vrapper Update Site</ins><br>
 ロケーション(L): <ins>&#x68;ttp://vrapper.sourceforge.net/update-site/stable</ins>
@@ -1602,6 +1697,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
 - [TeX - EclipseWiki](http://www.eclipsewiki.net/eclipse/?TeX)
 - [改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/)
+- [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [Eclipse Color Theme](https://github.com/eclipse-color-theme/eclipse-color-theme)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
