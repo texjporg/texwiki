@@ -48,41 +48,6 @@ pukiwiki: "TeXlipse"
 - SyncTeX による forward and inverse search (SumatraPDF)
 - Source Special による forward and inverse search (dviout)
 
-## インストール {#u4a48677}
-
-[Eclipse](/Eclipse/) を起動します．
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span>　</span><br>
-
-***
-
-「インストール」ウィンドウの \[追加(A)...\]
-で
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-名前(N):　　　　　<ins>TeXlipse Update Site</ins><br>
-ロケーション(L): <ins>&#x68;ttp://texlipse.sourceforge.net</ins>
-
-***
-
-を入力して \[OK\] をクリックします．
-
-TeXlipse にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
-
-Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
-から直接ダウンロードして展開 (解凍) します．
-
-展開したファイルの中に plugins フォルダがあります．
-
-この plugins フォルダを Eclipse フォルダに上書きコピーします．
-
-[改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/) というのもあります．
-
 ## 注意点 {#f6b7dd5c}
 
 ### TeXlipse が文法的に正しい TeX ファイルをパースできずにエラーになる {#t27e1af4}
@@ -129,6 +94,41 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 この問題の解決策が，TeXlipse の [FAQ](http://texlipse.sourceforge.net/faq.php) にあります．
 
 [ここ](http://texlipse.sourceforge.net/ddeclient64bit.zip) から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします．
+
+## インストール {#u4a48677}
+
+[Eclipse](/Eclipse/) を起動します．
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span>　</span><br>
+
+***
+
+「インストール」ウィンドウの \[追加(A)...\]
+で
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+名前(N):　　　　　<ins>TeXlipse Update Site</ins><br>
+ロケーション(L): <ins>&#x68;ttp://texlipse.sourceforge.net</ins>
+
+***
+
+を入力して \[OK\] をクリックします．
+
+TeXlipse にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
+
+Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
+から直接ダウンロードして展開 (解凍) します．
+
+展開したファイルの中に plugins フォルダがあります．
+
+この plugins フォルダを Eclipse フォルダに上書きコピーします．
+
+[改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/) というのもあります．
 
 ## LaTeX ファイルのデフォルト・エンコードの設定 {#e388e178}
 
