@@ -7,6 +7,8 @@ pukiwiki: "mimeTeX"
 
 # mimeTeX
 
+## mimeTeX {#oc02e052}
+
 [mimeTeX](http://www.forkosh.com/mimetex.html)
 は LaTeX のサブセットで書かれた数式をインライングラフィック化するソフトです。
 
@@ -38,6 +40,11 @@ PukiWiki から使うには
 ### [mimeTeX](http://www.forkosh.com/mimetex.html) {#w7d4afa0}
 
 上記の説明です。
+
+### MathJax {#o195bffa}
+
+- [http://www.mathjax.org/](http://www.mathjax.org/)
+- [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
 
 ### mathTeX {#he6333d4}
 
@@ -74,12 +81,6 @@ jsMath.js の mathchardef テーブル内に追加
 
 ```
 
-### MathJax {#o195bffa}
-
-> [http://www.mathjax.org/](http://www.mathjax.org/)
-
-> [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
-
 ### MathML {#ndc0f583}
 
 > [http://washitake.com/MathML/](http://washitake.com/MathML/)
@@ -89,3 +90,14 @@ jsMath.js の mathchardef テーブル内に追加
 > [http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php](http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php)
 
 > [http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php](http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php)
+
+### phpTeX {#nd0cba4b}
+
+- [phptex](http://phptex.sourceforge.net/)
+- [phpTeX](http://sourceforge.net/projects/phptex/)
+
+### phptex.inc {#ca665441}
+
+- [このサイトの数式](http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php)
+- [MathJaxはIE8だと超重いのはIEだからいいとして，最新のSafariだと微妙におかしい。私のサイトの数式の仕組み→http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php](http://twitter.com/#!/h_okumura/status/111044373650739201)
+- [LaTeX数式のweb表示方法（奥村晴彦先生方式）](http://www.makisima.org/v3/2011/09/06/web-latex-okumura/)
