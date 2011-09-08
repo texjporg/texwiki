@@ -36,6 +36,8 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
+Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
+
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
     - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
     - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
