@@ -36,7 +36,7 @@ Ring Server
         <!-- の機能を利用して近傍のサーバへ誘導） -->
     - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
-
+    - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/)
 - Anonymous FTP
     - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
@@ -45,6 +45,7 @@ Ring Server
         <!-- の機能を利用して近傍のサーバへ誘導） -->
     - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
+    - [ftp.core.ring.gr.jp/pub/text/CTAN/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/)
 
 【注意】Ring Server
 は複数のファイルサーバの集合体です。ホームページの中ほどにサーバの一覧がありますので，ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN
@@ -61,10 +62,11 @@ CTAN の世界的なミラーリングとして次の URI があります。
 - [http://mirror.ctan.org/](http://mirror.ctan.org/)
 - [http://www.ctan.org/get/](http://www.ctan.org/get/)
 
-接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです。[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites)
-や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています。この接続先候補に含まれる日本国内でのサイトには次のものがあります。
+接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです。
 
-- [北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
+[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています。この接続先候補に含まれる日本国内でのサイトには次のものがあります。
+
+- [北陸先端科学技術大学院大学 \[JAIST\]](http://www.jaist.ac.jp/)
     - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTP, anonymous FTP)
 
@@ -114,7 +116,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 #### HTTP, Anonymous FTP {#HTTP-FTP}
 
-- [奈良先端科学技術大学院大学](http://www.naist.jp/)
+- [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/)
     - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
         <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
     - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
