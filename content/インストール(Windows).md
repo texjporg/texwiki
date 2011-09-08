@@ -47,8 +47,8 @@ pukiwiki: "インストール(Windows)"
     <span style="color:Red;"><strong>\[W32TeX の 仕様変更\]</strong></span><br>
     <span style="color:Red;"><strong>jbibtex.exe は pbibtex.exe に変更されました。</strong></span><br>
     <span style="color:Red;"><strong>upjbibtex.exe は upbibtex.exe に変更されました。</strong></span><br>
-    <span style="color:Red;"><strong>jmpost.exe は pmpost.exe に変更されました。</strong></span><br>
-    <span style="color:Red;"><strong>upjmpost.exe は upmpost.exe に変更されました。</strong></span><br>
+    <span style="color:Red;"><strong>jmpost.exe は pmpost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2010/08/14 に pmpost.exe は pmetapost.exe に変更されました。</strong></span><br>
+    <span style="color:Red;"><strong>upjmpost.exe は upmpost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2010/08/14 に upmpost.exe は upmetapost.exe に変更されました。</strong></span><br>
 
 - \[2007/08/01\]
     7月31日付の W32TeX
@@ -654,11 +654,11 @@ Ryumin-Light，GothicBBB-Medium という名前に置き換えればいいわけ
 2003年9月5日以降の角藤さんが配布なさっている
 Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思います。
 
-## SumatraPDF のインストール {#sbe939df}
+## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
 [SumatraPDF - TeX Wiki](/SumatraPDF/) をご覧ください．
 
-## dviout for Windows のインストール {#fe50aa67}
+## [dviout](/dviout/) for Windows のインストール {#fe50aa67}
 
 [dviout - TeX Wiki](/dviout/) をご覧ください．
 
@@ -709,7 +709,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ## [TeX 用エディタ](</TeX用エディタ/>)のインストール（オプション） {#e8efca0f}
 
-### TeXworks {#sca389c7}
+### [TeXworks](/TeXworks/) {#sca389c7}
 
 W32TeX にはデフォルトでエディタとして [TeXworks](/TeXworks/) (by Jonathan Kew &amp; Stefan Löffler) が含まれています．<br>
 コマンド プロンプトで texworks とすると，立ち上がります．<br>
@@ -741,11 +741,11 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 [TeXworks](/TeXworks/) もご覧ください．
 
-### Texmaker {#q8c6a4e6}
+### [Texmaker](/Texmaker/) {#q8c6a4e6}
 
 [Texmaker](/Texmaker/) をご覧ください．
 
-### LyX {#s7fa0837}
+### [LyX](/LyX/) {#s7fa0837}
 
 [LyX](/LyX/) をご覧ください．
 
@@ -753,11 +753,11 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 EasyTeX をご覧ください．
 
-### WinShell {#l040a9c6}
+### [WinShell](/WinShell/) {#l040a9c6}
 
 [WinShell](/WinShell/)，WinShell3 をご覧ください．
 
-### TeXnicCenter {#kf5b1543}
+### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
 
 [TeXnicCenter](/TeXnicCenter/) をご覧ください．
 
@@ -781,15 +781,15 @@ VxEditor#ツール をご覧ください．
 
 Mery#マクロ をご覧ください．
 
-### サクラエディタ + マクロ {#l46875d6}
+### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
 
 [サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
 
-### Notepad++ + プラグイン {#k51d20b3}
+### [Notepad++](/Notepad++/) + プラグイン {#k51d20b3}
 
 [Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
 
-### 秀丸エディタ (シェアウェア) + マクロ {#o8e43f26}
+### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
 
 [秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
 
@@ -797,21 +797,21 @@ Mery#マクロ をご覧ください．
 
 WZ EDITOR をご覧ください．
 
-### Eclipse + TeXlipse {#ra6693bf}
+### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
 
 [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
 
-### xyzzy + tex-mode {#s2425f0a}
+### [xyzzy](/xyzzy/) + tex-mode {#s2425f0a}
 
 [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>
 をご覧ください．
 
-### Emacs + tex-mode or org-mode {#z9deda13}
+### [Emacs](/Emacs/) + tex-mode or org-mode {#z9deda13}
 
 [Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
 をご覧ください．
 
-### Vim + プラグイン {#s7ce6347}
+### [Vim](/Vim/) + プラグイン {#s7ce6347}
 
 [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
 
