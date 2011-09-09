@@ -92,7 +92,7 @@ Windows 風の操作も可能です。
 
 ここ以外に次のウェブサイトに解説があります：
 
-- [TeX インストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/)（[トニイさん](http://www.nsknet.or.jp/~tony/)）
+- [TeX インストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
 
 なお，Microsoft Windows 用 pTeX
 のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。
