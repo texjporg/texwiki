@@ -57,6 +57,7 @@ Windows, Linux, Mac OS X, Unix で動作します．
 - [Release notes/0.48#New LaTeX export for PDF/EPS/PS - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
 - [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html), [http://az.ctan.org/pkg/svg-inkscape](http://az.ctan.org/pkg/svg-inkscape)
 - [http://sites.google.com/site/richardhenwood/inkscapelatexextension](http://sites.google.com/site/richardhenwood/inkscapelatexextension)
+- [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 
 Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定することが可能になりました．
 
@@ -68,7 +69,7 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 　 ☐　テキストをパスに変換<br>
 　 ☑　PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
 　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　90<br>
+　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
 　 ☑　エクスポート領域は描画全体<br>
 　 ☐　エクスポート領域はページ<br>
 　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
@@ -81,7 +82,7 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 　 ☐　テキストをパスに変換<br>
 　 ☑　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
 　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　90<br>
+　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
 　 ☑　エクスポート領域は描画全体<br>
 　 ☐　エクスポート領域はページ<br>
 　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
@@ -94,7 +95,7 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 　 ☐　テキストをパスに変換<br>
 　 ☑　PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
 　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　90<br>
+　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
 　 ☑　エクスポート領域は描画全体<br>
 　 ☐　エクスポート領域はページ<br>
 　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
