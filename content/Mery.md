@@ -748,13 +748,75 @@ LaTeX の
 - 「/fd」でファイルから検索ダイアログ表示。
 - 「/ti」でタスクトレイアイコンで起動（スタートアップとかにショートカット作るため）
 
-## SumatraPDF との連携 (inverse search) {#ra6f502f}
+## SumatraPDF との連携 {#ra6f502f}
+
+### forward search {#t56d91ba}
+
+#### fwdsumatrapdf.js {#a81d6b86}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var texFile = ["\"", f, "\""].join("");
+  var pdfFile = ["\"", b, ".pdf", "\""].join("");
+  var line = document.selection.GetActivePointY(mePosLogical);
+  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe" + " " + pdfFile + " " + texFile + " " + line;
+  var cmd = "cmd /c " + cd + " && " + fwdsumatrapdf;
+
+  wshShell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### inverse search {#d4cfb140}
 
 ```
 C:\Mery\Mery.exe /l %l "%f"
 ```
 
-## dviout との連携 (inverse search) {#fee7abf9}
+## dviout との連携 {#fee7abf9}
+
+### forward search {#x84b65ee}
+
+#### dviout.js {#q13fb76b}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var texFile = ["\"", f, "\""].join("");
+  var dviFile = ["\"", b, ".dvi", "\""].join("");
+  var line = document.selection.GetActivePointY(mePosLogical);
+  var dviout = "C:/w32tex/dviout/dviout.exe -1" + " " + dviFile + " # " + line + " " + texFile ;
+  var cmd = "cmd /c " + cd + " && " + dviout;
+
+  wshShell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### inverse search {#b5409d96}
 
 ```
 C:\Mery\Mery.exe^s /l %d "%s"
