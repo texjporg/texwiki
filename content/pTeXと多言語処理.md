@@ -494,7 +494,7 @@ KoreanTeX （pLaTeX2e に対応している
 後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
 多書体 TeX の
-開発者である[堀田耕作さん](http://www.geocities.jp/koh_hotta/ghost/)の
+開発者である[堀田耕作さん](http://www.khotta.org/ghost/)の
 [KoreanTeX への解説ページ 1](http://blogs.yahoo.co.jp/koh_hotta/44928272.html)
 および
 [KoreanTeX への解説ページ 2](http://blogs.yahoo.co.jp/koh_hotta/45883465.html)
