@@ -31,8 +31,9 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. [CJK パッケージ](/LaTeX-CJK/)
 1. [Unicode パッケージ](https://mirror.ctan.org/macros/latex/contrib/unicode/)
 1. 前二者の併用によるアプローチ
-1. [Omega](http://omega.enstb.org/)
+1. Aleph/[Omega](http://omega.enstb.org/)
 1. [XeTeX](/XeTeX/)
+1. [LuaTeX](/LuaTeX/)
 
 によるアプローチなどが考えられます。3. については FreeBSD
 上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)が，4. の
