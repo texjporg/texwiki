@@ -17,7 +17,7 @@ The NTS (<strong>N</strong>ew <strong>T</strong>ypesetting <strong>S</strong>yst
 TeX の少々不便なところを補うような実用性の高い拡張となっている。
 近年，ConTeXt や LaTeX における hyperref package など
 e-TeX の拡張モードを要求するマクロ類が増加しつつある。
-また pdfTeX，Aleph （Omega と e-TeX のマージ），[XeTeX](/XeTeX/)，LuaTeX といった
+また pdfTeX，Aleph （Omega と e-TeX のマージ），[XeTeX](/XeTeX/)，[LuaTeX](/LuaTeX/) といった
 主だった TeX の拡張版においても e-TeX の拡張機能は取り入れられており，
 事実上の新標準とも呼ぶべき重要な拡張と言える。
 
