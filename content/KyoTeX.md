@@ -42,9 +42,46 @@ MinGW や Cygwin がインストールされていない場合は，環境変数
 
 のようにダブルクォーテーションを付けて保存すれば作成可能です．
 
+kyotex-mode を以下のように配置します．
+
+***
+
+```
+C:.
+└─xyzzy
+    ├─site-lisp
+    │   └─kyotex
+    │       ├─kyotex.l
+    │       └─bibtex-template.l
+    └─etc
+        ├─KyoTeX
+        └─BiBTeX
+```
+
+***
+
+.xyzzy に以下の記述を追加します．
+
+***
+
+```
+;;
+;; KyoTeX
+;;
+(push (merge-pathnames "site-lisp/kyotex" (si:system-root)) *load-path*)
+(load-library "kyotex")
+(push '("\\.tex$" . kyotex-mode) *auto-mode-alist*)
+(push '("\\.bbl$" . kyotex-mode) *auto-mode-alist*)
+(push '("\\.bib$" . bibtex-mode) *auto-mode-alist*)
+```
+
+***
+
 ### 基本設定 {#mab284ce}
 
 - [kyotex-modeの設定変更方法](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/setting.html) を参照．
+
+メニューの \[kyotex(Y)\]-\[基本設定\]-\[コンパイラの設定(D)\] で
 
 TeX(T):
 : platex
@@ -61,7 +98,7 @@ MakeIndex(M):
 MakeIndex Option:
 : @@
 
-に設定します．
+に設定して \[設定の保存(S)\] をクリックします．
 
 ### コンパイルコマンド {#kbf0ab3d}
 
