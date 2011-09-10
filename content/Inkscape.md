@@ -584,12 +584,15 @@ RuntimeError: Command pdflatex ...
 
 C:\inkscape\share\extensions\textext.py の 1014 行目あたりを修正します．
 
+pdfcrop の実行には Perl が必要です．
+
 ***
 
 ```
         # Exec pdflatex: tex -> pdf
         #out = exec_command(['pdflatex', self.tmp('tex')] + latex_opts)
         out = exec_command(['pdflatex', latex_opts, self.tmp('tex')])
+        out = exec_command(['pdfcrop', '--clip', self.tmp('pdf').replace('\\', '/'), self.tmp('pdf').replace('\\', '/')])
 ```
 
 ***
