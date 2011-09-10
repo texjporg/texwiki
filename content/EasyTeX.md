@@ -37,7 +37,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 - [Aspell](/Aspell/) などのスペルチェッカーが起動可能です．
 - 登録されてないコマンドのメニューを新たに作ることができ，ショートカットのカスタマイズも可能です．
 - IME および ATOK による再変換をサポートしています．
-- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
+- [SumatraPDF](/SumatraPDF/) を使用すれば，SyncTeX による forward and inverse search も可能です．
 
 シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
@@ -167,7 +167,7 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 
 ### PS/PDF {#ubd35880}
 
-■ SumatraPDF の場合 (32bit Windows)
+■ [SumatraPDF](/SumatraPDF/) の場合 (32bit Windows)
 
 ***
 
@@ -183,7 +183,7 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 
 ***
 
-■ SumatraPDF の場合 (64bit Windows)
+■ [SumatraPDF](/SumatraPDF/) の場合 (64bit Windows)
 
 ***
 
@@ -237,7 +237,7 @@ PDF Reader を開くタイミングはお好みで設定してください．こ
 
 EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．
 
-PDF Reader は SumatraPDF, Adobe Reader, Foxit Reader, PDF-XChange Viewer に対応しています．
+PDF Reader は [SumatraPDF](/SumatraPDF/), Adobe Reader, Foxit Reader, PDF-XChange Viewer に対応しています．
 
 ### TeX環境設定の保存 {#lf745908}
 
@@ -509,7 +509,7 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で，コメントイン・アウトできますので，活用してみてください．
 
-## SumatraPDF との連携 {#mcca4bad}
+## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
 
 ### forward search {#o6a70e4f}
 
@@ -551,7 +551,7 @@ SumatraPDF の画面をダブルクリックすると，以下のような「指
 
 ***
 
-## dviout との連携 {#etsa7019}
+## [dviout](/dviout/) との連携 {#etsa7019}
 
 ### forward search {#t49147bf}
 
