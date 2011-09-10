@@ -59,7 +59,7 @@ Windows, Linux, Mac OS X, Unix で動作します．
 
 Windows 版 Inkscape 0.48.2 を起動するとメニューのフォントが 0.48.1 とは異なっていました．
 
-inkscape の etc/pango/pango.aliases の
+inkscape の etc\pango\pango.aliases の
 
 ```
 sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,latha,mangal,raavi"
