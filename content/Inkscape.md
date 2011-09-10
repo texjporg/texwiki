@@ -21,6 +21,8 @@ Inkscape は，オープンソースのベクターグラフィックエディ�
 
 Windows, Linux, Mac OS X, Unix で動作します．
 
+2011-09-06 Inkscape 0.48.2 がリリースされました．
+
 <table>
 <tbody>
 <tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
@@ -51,6 +53,26 @@ Windows, Linux, Mac OS X, Unix で動作します．
 - [Mac用ドローイングソフトInkscapeを日本語化する](http://idita.blog11.fc2.com/blog-entry-469.html)
 - [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
 
+## 不具合 {#tedcde5e}
+
+### Windows 版 Inkscape 0.48.2 のメニューのフォントがおかしい {#i6aee1d9}
+
+Windows 版 Inkscape 0.48.2 を起動するとメニューのフォントが 0.48.1 とは異なっていました．
+
+inkscape の etc/pango/pango.aliases の
+
+```
+sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,latha,mangal,raavi"
+```
+
+を
+
+```
+sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,latha,mangal,raavi"
+```
+
+に修正して Inkscape を再起動すると解決しました．
+
 ## PDF+LaTeX/EPS+LaTeX/PS+LaTeX {#d6b72996}
 
 - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
@@ -65,52 +87,52 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 
 <span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Portable Document Format</strong></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　Restrict to PDF version: <ins> PDF 1.5　　　　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
-　 ☐　テキストをパスに変換<br>
-　 ☑　PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
-　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
-　 ☑　エクスポート領域は描画全体<br>
-　 ☐　エクスポート領域はページ<br>
-　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
+　PDF バージョン制限 <ins> PDF 1.5　　　　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成　☑<br>
+　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
+　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
 <span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　Restrict to PS level: <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
-　 ☐　テキストをパスに変換<br>
-　 ☑　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
-　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
-　 ☑　エクスポート領域は描画全体<br>
-　 ☐　エクスポート領域はページ<br>
-　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
+　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成　☑<br>
+　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
+　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
 <span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>PostScript</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　Restrict to PS level: <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
-　 ☐　テキストをパスに変換<br>
-　 ☑　PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
-　 ☑　フィルタエフェクトをラスタライズ<br>
-　Resolutiion for rasterization (dpi):　　　　　　　　　　　　　　600<br>
-　 ☑　エクスポート領域は描画全体<br>
-　 ☐　エクスポート領域はページ<br>
-　Limit export to the object with ID: <ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
+　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成　　 ☑<br>
+　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
+　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
 コマンドラインから PDF+LaTeX, EPS+LaTeX, PS+LaTeX で出力することも可能です．
 
-- [http://inkscape.modevia.com/inkscape-man.html](http://inkscape.modevia.com/inkscape-man.html)
+<!-- -http://inkscape.modevia.com/inkscape-man.html -->
 
-    ```
-    inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
-    inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
-    inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
-    ```
+```
+inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
+inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
+inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
+```
 
 ## Inkscape で TeX 数式 {#f9da7d32}
 
@@ -204,11 +226,11 @@ LaTeX と連携するためのエクステンション．<br>
 
 　Latex 数式: <ins>\\\[\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\\]</ins><br>
 　追加パッケージ(カンマで区切る):<br>
-　☐　Debug information<br>
+　Debug information　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 
 <br>
 
-　☐　ライブプレビュー<br>
+　ライブプレビュー　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 
 ***
 
@@ -222,11 +244,9 @@ LaTeX と連携するためのエクステンション．<br>
 
 ***
 
-- [http://inkscape.modevia.com/win32/?M=D](http://inkscape.modevia.com/win32/?M=D)
+- [http://inkscape.org/download/](http://inkscape.org/download/)
 
-から Inkscape のナイトリービルド版をダウンロードして展開します．
-
-ここでは inkscape_r10146-201104082205.7z をダウンロードして展開しました．
+から Inkscape のリリース版をダウンロードして展開します．
 
 展開したフォルダを C:\inkscape と仮定します．別のフォルダに展開した場合は読み替えてください．
 
@@ -406,11 +426,9 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 
 ***
 
-- [http://inkscape.modevia.com/win32/?M=D](http://inkscape.modevia.com/win32/?M=D)
+- [http://inkscape.org/download/](http://inkscape.org/download/)
 
-から Inkscape のナイトリービルド版をダウンロードして展開します．
-
-ここでは inkscape_r10146-201104082205.7z をダウンロードして展開しました．
+から Inkscape のリリース版をダウンロードして展開します．
 
 展開したフォルダを C:\inkscape と仮定します．別のフォルダに展開した場合は読み替えてください．
 
