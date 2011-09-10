@@ -78,12 +78,12 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
     - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
-- [xyzzy.src (for-gcc ブランチ)](https://github.com/bulb/xyzzy.src)
+- [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
     - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
     - [ChangeLog](https://github.com/bulb/xyzzy.src/blob/for-gcc/ChangeLog.txt)
-- [xyzzy.src (nanri-master ブランチ)](https://github.com/southly/xyzzy.src/tree/nanri-master)
-    - [コミットログ](https://github.com/southly/xyzzy.src/commits/nanri-master)
-    - [ChangeLog](https://github.com/southly/xyzzy.src/blame/nanri-master/ChangeLog.txt)
+- [xyzzy.src (bowbow99-master)](https://github.com/bowbow99/xyzzy.src/tree/bowbow99-master)
+    - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/bowbow99-master)
+    - [ChangeLog](https://github.com/bowbow99/xyzzy.src/blob/bowbow99-master/ChangeLog.txt)
 - [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
