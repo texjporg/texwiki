@@ -19,6 +19,11 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
+- [Sphinxをはじめよう](http://sphinx-users.jp/gettingstarted/)
+    - [Windowsへのインストール](http://sphinx-users.jp/gettingstarted/install_windows.html)
+    - [Windowsへのインストール(スタンドアロンインストール)](http://sphinx-users.jp/gettingstarted/install_windows_standalone.html)
+    - [Mac OS X, Linuxへのインストール](http://sphinx-users.jp/gettingstarted/install_unix.html)
+
 ### [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/) {#yb1fc56f}
 
 ### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
