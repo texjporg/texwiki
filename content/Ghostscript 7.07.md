@@ -9,14 +9,13 @@ pukiwiki: "Ghostscript 7.07"
 
 ## GNU Ghostscript 7.07 {#u1488af6}
 
-特に UNIX 互換 OS でのインストール法をまとめましたが，バイナリで用意されている Windows
-でも役に立つことがあるかもしれません。
+<!-- 特に UNIX 互換 OS でのインストール法をまとめましたが，バイナリで用意されている Windows でも役に立つことがあるかもしれません。 -->
 
-### News {#qc5125cb}
+## News {#qc5125cb}
 
 - \[040723\] URW フォントのバグ
 
-### はじめに {#he9c7727}
+## はじめに {#he9c7727}
 
 以下は [GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)，
 [GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)
@@ -43,7 +42,7 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 [Mac OS X でレーザープリンターを使うスレ (過去ログ)](http://mimizun.com/log/2ch/mac/1037063324)
 が参考になるようです。
 
-### ダウンロード {#k0bb1098}
+## ダウンロード {#k0bb1098}
 
 たとえば [CTAN:support/ghostscript/](https://mirror.ctan.org/support/ghostscript/) や [sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) から入手できます。
 
@@ -60,7 +59,118 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 - adobe-cmaps-200204.tar.gz -> adobe-cmaps-200406.tar.gz でないと，otf パッケージの使用などで文字欠けが発生する。
 - acro5-cmaps-2001.tar.gz
 
-### インストール {#r6c67752}
+## インストール {#r6c67752}
+
+### Windows {#y7d058ad}
+
+[Ghostscript 7.07](</Ghostscript 7.07/>) ([gs707w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip)) に関する説明をします．<br>
+Ghostscript にはバージョン 8 系列もありますが，日本語の縦書き等に難点が残っていますので，気になる場合は 7.07 を使用してください。<br>
+縦書きをしない場合は脆弱性が存在するので最新の Ghostscript にすることをお勧めします．<br>
+gs707w32full.zip を展開して中にある “setupgs.exe” を実行すればインストールできます。<br>
+デフォルトでは C:\gs\ に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。<br>
+C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
+
+環境変数 TEMP に全角文字が含まれていると失敗するかもしれません
+（Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x)でユーザ名に2バイト文字を使っている場合など）。
+この場合は，例えば C:\tmp\ というフォルダ（ディレクトリ）を作っておき，
+［コントロールパネル］ → ［システム］ → ［詳細］ → ［環境変数］ で
+環境変数 TEMP を “C:\tmp” に設定してからインストールを行います。
+私は TEMP も TMP もこのように設定しています。
+
+環境変数 GS_LIB については，2003年7月13日以降の Ghostscript 7.07 では
+一切不要です。むしろ不完全な GS_LIB を設定するとトラブルの元ですので，
+削除しておいてください。
+
+動作チェックと
+して ［スタート］ → ［プログラム］ → ［Ghostscript］ → ［Ghostscript
+7.07］ で Ghostscript を起動し，
+その窓にマイコンピュータから C:\gs\gs7.07\examples\tiger.ps を
+ドラッグ &amp; ドロップして虎の絵が表示できれば OK です。
+
+dviout for Windows との連携をチェックするには，dviout をインストールした
+フォルダ（例えば C:\dviout\）の GRAPHIC\PS\ フォルダに上の tiger.ps と，
+同じフォルダにある golfer.ps とをコピーしておきます。これでその場所にある
+pssample.dvi をダブルクリックして絵入りの文書が表示できれば OK です。
+
+dvipdfmx や dvipdfm で PDF を作る際には，C:\gs\gs7.07\bin\ にパスを通して
+おきます。上のほうで環境変数 Path に “C:\w32tex\bin” を加えましたが，
+さらにその後に “;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” を追加します。結局
+Path は “C:\w32tex\bin;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” となります。
+
+2003年9月5日以降の角藤さんの Ghostscript 7.07 配布では，和文フォントを
+埋め込まない設定にできます。設定は，dvipdfmx.cfg の “D” で始まる行を
+次のように書き直します（本当は1行です）。
+
+```
+D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0
+-sDEVICE=pdfwrite -dCompatibilityLevel=1.3
+-dAutoFilterGrayImages=false -dAutoFilterColorImages=false
+-dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode
+-dUseFlateCompression=true -sOutputFile=%o -c '.setpdfwrite <<
+/NeverEmbed [/Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique
+/Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique
+/Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic
+/Symbol /ZapfDingbats
+/Ryumin-Light /GothicBBB-Medium /MS-Mincho /MS-Gothic]
+>> setdistillerparams' -f %i -c quit"
+```
+
+#### 【参考】 Ghostscript による PDF 作成 {#zce2e51d}
+
+次の作業は Ghostscript 7.07 単独で日本語の PDF を作る場合，
+および dvipdfmx や dvipdfm で処理する EPS ファイルに
+日本語が含まれている場合に必要です。EPS ファイルに日本語が含まれていない
+（あるいは日本語がアウトライン化されている）ならば，dvipdfmx や dvipdfm で
+処理する本文にいくら日本語が使われていても，以下の作業は特に不要です。
+
+[Ring Server](http://www.ring.gr.jp/) の
+[/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+から[adobe-cmaps-200204.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/adobe-cmaps-200204.zip)
+と[acro5-cmaps-2001.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/acro5-cmaps-2001.zip)
+をダウンロードします。
+
+C:\gs\gs7.07\Resource\ というフォルダ（ディレクトリ）を作り，
+この二つのファイルをその中で展開します。
+もし C:\gs\gs7.07\Resource\ 以外のフォルダに
+展開するなら，C:\gs\gs7.07\lib\gs_res.ps の248&ndash;249行を
+編集する必要があります。
+
+次は和文フォントを使えるようにします。
+ここでは Microsoft Windows の「ＭＳ 明朝」，「ＭＳ ゴシック」を
+使ってみます。C:\gs\gs7.07\lib\CIDFnmap の最後に次のように書き込みます。
+
+***
+
+```
+/Ryumin-Light      /MS-Mincho        ;
+/GothicBBB-Medium  /MS-Gothic        ;
+/HeiseiMin-W3      /Ryumin-Light     ;
+/HeiseiKakuGo-W5   /GothicBBB-Medium ;
+
+/MS-Mincho         (msmincho.ttc) 1  ;
+/MS-Gothic         (msgothic.ttc) 1  ;
+```
+
+***
+
+これで日本語が表示できます。
+
+C:\gs\gs7.07\lib\ も Path に含めておけば，ps2pdf コマンドで
+PostScript ファイルを PDF ファイルに変換できます。
+ただし『無効なフォント「MS-Mincho」が文書から削除されました。』と出て，
+すべてゴシック体で表示されてしまいます。
+これを防ぐには，MS-Mincho，MS-Gothic を文書から削除して
+Ryumin-Light，GothicBBB-Medium という名前に置き換えればいいわけです。
+これを自動化するスクリプト
+[replacecjkfonts, cjkps2pdf](http://www.eaflux.com/replacecjkfonts/)
+を[中丸幸治さん](http://www.eaflux.com/)が作られています。
+これを使えば PDF のサイズも小さくなりますし，Adobe Reader が
+適当なフォントできれいに表示してくれます。
+
+2003年9月5日以降の角藤さんが配布なさっている
+Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思います。
+
+### Linux, Mac OS X {#od0594e8}
 
 以下では Vine Linux 2.6r1 や Mac OS X
 でインストールを行いました。
@@ -172,7 +282,7 @@ gdevlips-2.4.0 のパッチ等の情報が
 [竹野さんのページ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/LBP/lbp.html)
 にあります。
 
-### 和文フォントの設定（和田研フォント編） {#i37976e7}
+## 和文フォントの設定（和田研フォント編） {#i37976e7}
 
 次は和文フォントを使えるようにします。
 [東風明朝 CID/OpenType 化キット](http://khdd.net/Kochi-CID/)
@@ -245,7 +355,7 @@ Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 “pstopdf” というコマンドも用意されています。
 しかし日本語はフォントが埋め込まれていないといけないようです。
 
-### 和文フォントの設定（sazanami フォント編） {#l9833aef}
+## 和文フォントの設定（sazanami フォント編） {#l9833aef}
 
 狩野さんが
 [書体関係 Wiki](http://wiki.fdiary.net/font/)
@@ -273,7 +383,7 @@ Ghostscript には
 
 これで表示も PDF 化も大丈夫だと思います。
 
-### 和文フォントの設定（IPA フォント編） {#n1c45670}
+## 和文フォントの設定（IPA フォント編） {#n1c45670}
 
 [GRASS-Japan](http://www.grass-japan.org/FOSS4G/)
 で開発された情報処理推進機構 (IPA) の TrueType フォント5書体が
@@ -289,7 +399,7 @@ GRASS と独立に配布することはできませんが，Ghostscript で流�
 /IPAGothic                 (ipag.ttf) ;
 ```
 
-### 和文フォントの設定（その他） {#k11d6c69}
+## 和文フォントの設定（その他） {#k11d6c69}
 
 これ以外にも，和文 TrueType フォントがあれば /usr/local/share/ghostscript/fonts/
 に入れて，/usr/local/share/ghostscript/7.07/lib/CIDFnmap
@@ -317,7 +427,7 @@ TrueType フォントは PDF 化がうまくいかない場合が多いのです
 があります。
 この中では Microsoft だけ「Windows 以外での使用は認めません」と答えています。
 
-### システム設定 {#r4365fa6}
+## システム設定 {#r4365fa6}
 
 /etc/printcap はたとえば次のようにしておきます。
 
@@ -350,7 +460,7 @@ $ checkpc -f
 
 これで lpr hoge.ps と打ち込めば hoge.ps が印刷できます。
 
-### その他 {#ld9cdeca}
+## その他 {#ld9cdeca}
 
 B列（B5判など）の出力については TeX の掲示板の
 [qa:17129](https://okumuralab.org/~okumura/texfaq/qa/17129.html)
