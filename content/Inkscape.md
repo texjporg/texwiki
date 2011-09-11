@@ -141,6 +141,8 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 
 - [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
 - [Inkscapeでtex数式を使う(数式はアウトラインに)](http://www.my-chicken-heart.com/2007/09/inkscapetex.html)
+- [Latexの数式をsvgに](http://blog.livedoor.jp/les_paul_sp/archives/317234.html)
+- [TeX, EPS, Inkscape for Win](http://researchmap.jp/jo8ju0xue-10163/#_10163)
 
 ## エクステンション {#s696e33c}
 
@@ -479,6 +481,8 @@ Inkscape を起動して \[エクステンション(N)\]-\[Tex Text\] を実行�
 
 ***
 
+<span style="color:Black;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
 　　　　　　　　　Inkscapeは、実行したスクリプトから追加データを受け取りまし<br>
 　　　　　　　　　た。スクリプトはエラーを返しませんでしたが、実行結果が意図し<br>
 　　　　　　　　　ないものになっていることを示唆している可能性があります。<br>
@@ -519,6 +523,8 @@ Inkscape を起動して \[エクステンション(N)\]-\[Tex Text\] を実行�
 
 ***
 
+<span style="color:Black;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
 　　　　　　　　　Inkscapeは、実行したスクリプトから追加データを受け取りまし<br>
 　　　　　　　　　た。スクリプトはエラーを返しませんでしたが、実行結果が意図し<br>
 　　　　　　　　　ないものになっていることを示唆している可能性があります。<br>
@@ -548,7 +554,7 @@ C:\inkscape\share\extensions\textext.py の 741 行目あたりの os.abspath, o
 
 Inkscape を起動して \[エクステンション(N)\]-\[Tex Text\] を実行します．<br>
 Text に \begin{document} ～ \end{document} に入れる文章を入力します．<br>
-ここでは Scale factor を 100 にして Text に Inkscape と入力しました．<br>
+ここでは Scale factor を 100 にして Text に Happy Inkscaping と入力しました．<br>
 
 <span style="color:Black;background-color:#72C304;"><ins>　　<span style="color:White;"><strong>TeX Text</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#62B304;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#62B304;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
@@ -556,7 +562,7 @@ Text に \begin{document} ～ \end{document} に入れる文章を入力しま�
 　　Scale factor:　　100.00<br>
 LaTeX page width: 10cm<br>
 　　 Converter:　　　Pstoedit<br>
-　　　　　　　　　　　　Inkscape<br>
+　　　　　　　　　　　　Happy Inkscaping<br>
 
 <br>
 
