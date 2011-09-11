@@ -19,6 +19,7 @@ pukiwiki: "表記の哲学"
     - 例として $f\_{i} (x)$ の $f$、$i$ や $x$ がイタリック体。
     - 物理定数は数学的には変数扱い（イタリック体）とのこと（例：$c = 299{,}792{,}458$\\,m/s）。
     - 数学的な定数と既定な関数（立体のまま）の例は，$\sin \uppi$。
+        - 定義例（ジータ関数、ガンマ関数）： \let\zetaf\upzeta \let\Gammaf\Gamma
     - 変数もしくはquantitiesのシンボルはイタリック体とするので(ISO)，下付添え字にも適用．
         - The NIST Guide for the Use of the International System of Units (SI) ([http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf) ) 内の例：
         - L_P   (level of a power quantity)
@@ -40,7 +41,7 @@ pukiwiki: "表記の哲学"
 - 行列転置操作の ${}^{t} A$ や $A^{T}$（イタリック体で良いかどうか？）
     - t/T は “<strong>t</strong>ranspose” の略．そもそも変数・変関数には属さないのでイタリック体対象外で立体のまま（ISOに従うと）
         - 従って ${}^{\mathrm{t}} A$ や$A^{\mathrm{T}}$ のように立てて書く（べきという流儀がある）。
-        - 念を入れると $A^{\operatorname{T}}$かも．
+        - 念を入れると $A^{\operatorname{T}}$かも。（定義例：\def\transpose{{\operatorname{T}}}）
         - \top を使う人もいる。
 
 - 単位名は立体で表記
