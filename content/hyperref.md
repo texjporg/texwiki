@@ -19,9 +19,10 @@ pukiwiki: "hyperref"
 
 ### 注意点 {#he2b8021}
 
-#### hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
+#### jsclasses と hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
 
 - [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
+- [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
 
 以下の方法のうちのどれかを使用することで回避可能です．
 
