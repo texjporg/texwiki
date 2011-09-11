@@ -25,17 +25,19 @@ Windows, Linux, Mac OS X, Unix で動作します．
 
 <table>
 <tbody>
-<tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
-<tr><td>SVG, PDF</td><td>SVG, PDF, EPS, PS, ODG</td></tr>
+<tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>インポート可能な形式</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
+<tr><td>SVG, PDF, AI (Adobe Illustrator)</td><td>EPS, PS</td><td>SVG, PDF, EPS, PS, ODG</td></tr>
 </tbody>
 </table>
 
-外部プログラムとして
+[PostScriptやEPSをインポートするには、Ghostscriptをインストールする必要があり、ps2pdfがPATH上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
 
-- Windows なら [pstoedit](http://pstoedit.sourceforge.net/)
-- UNIX なら [pstoedit](http://pstoedit.sourceforge.net/) と （Skencil に含まれている） skconvert.py
-
-を使用することで EPS, PS の入力も可能です．
+<!-- 外部プログラムとして -->
+<!--  -->
+<!-- -Windows なら [[pstoedit:http://pstoedit.sourceforge.net/]] -->
+<!-- -UNIX なら [[pstoedit:http://pstoedit.sourceforge.net/]] と （[[Skencil>WikiPedia.ja:Skencil]] に含まれている） skconvert.py -->
+<!--  -->
+<!-- を使用することで EPS, PS の入力も可能です． -->
 
 - [Inkscape 公式サイト](http://inkscape.org/)
 - [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
@@ -43,6 +45,7 @@ Windows, Linux, Mac OS X, Unix で動作します．
 - [Inkscape Wiki](http://wiki.inkscape.org)
     - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
         - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
+        - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
     - [Tools](http://wiki.inkscape.org/wiki/index.php/Tools)
     - [Extension repository](http://wiki.inkscape.org/wiki/index.php/ExtensionsRepository)
 - WikiPedia.ja:Inkscape
@@ -150,7 +153,7 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ### [EqTeXSvg (Latex 数式)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．<br>
-[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く，うまく動作しない可能性があるため，[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版をダウンロード，インストールすることをおすすめします．
+[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，修正しないと正しく動作しないので，[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)の最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
 
 - 環境変数 PATH に latex, dvisvgm, dvips, pstoedit が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
     - pstoedit に PATH が通っていればコマンドプロンプトから
@@ -181,14 +184,14 @@ LaTeX と連携するためのエクステンション．<br>
 
         として Inkscape を起動してみてください．
 
-- デフォルトで含まれている eqtexsvg.py を使用する場合，デフォルトの状態の dvips のオプションでは数式がうまく表示されないので eqtexsvg.py の dvips コマンドのオプションを修正します．
+- デフォルトで含まれている eqtexsvg.py (2010-04-04) を使用すると，数式がうまく表示されなかったので eqtexsvg.py の dvips コマンドのオプションを以下のように修正すると表示されました．最新版 (2011-05-17) では修正しなくても表示されました．<br>
 
     ```
             #os.system('dvips -q -f -E -D 600 -y 5000 -o "%s" "%s"' % (ps_file, dvi_file))
             os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file))
     ```
 
-- デフォルトで含まれている eqtexsvg.py は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
+- eqtexsvg.py は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
 
     ```
     C:\inkscape>.\python\python.exe
@@ -200,18 +203,37 @@ LaTeX と連携するためのエクステンション．<br>
     ```
 
     とすることで確認できます．<br>
-    もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して
+    もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成します．<br>
 
-    ```
-        def effect(self):
+最新版の eqtexsvg.py (2011-05-17)  を使用する場合は<br>
 
-            #base_dir = tempfile.mkdtemp("", "inkscape-");
-            base_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
-    ```
+```
+class Equation:
+    """Current LaTeX Equation"""
 
-    などとして eqtexsvg.py の base_dir を修正してください．<br>
-    この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
-    処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
+    def __init__(self, param={}):
+```
+
+```
+    ...
+ 
+        try: 
+            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
+            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
+```
+
+デフォルトで含まれている eqtexsvg.py (2010-04-04) を使用する場合は<br>
+
+```
+    def effect(self):
+
+        #base_dir = tempfile.mkdtemp("", "inkscape-");
+        base_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
+```
+
+などとして eqtexsvg.py の self.temp_dir や base_dir を修正します．<br>
+この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
+処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
 
 - InkscapeをLaTeXと一緒に使う
     - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
@@ -230,7 +252,7 @@ LaTeX と連携するためのエクステンション．<br>
 
 <br>
 
-　ライブプレビュー　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
+　ライブプレビュー　　　　　　　　　　　　　　　　　　　　　　　　☑<br>
 
 ***
 
@@ -391,7 +413,9 @@ class Equation:
 
 ### [textext](http://pav.iki.fi/software/textext/) {#b9881c0b}
 
-LaTeX 形式の数式を Inkscape に含めることが可能なエクステンション．再編集も可能．
+LaTeX 形式の数式を Inkscape に含めることが可能なエクステンション．<br>
+再編集も可能です．<br>
+意図した場所に出力されないかもしれませんがどこかに存在するのでがんばって探し当ててください．<br>
 
 - [textext 公式サイト](http://pav.iki.fi/software/textext/)
 - [textext 開発サイト](https://bitbucket.org/pv/textext/)
