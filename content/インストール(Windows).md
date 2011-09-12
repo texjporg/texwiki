@@ -75,12 +75,11 @@ pukiwiki: "インストール(Windows)"
 
 ### 初めに {#o1513552}
 
-以下は，アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)）が開発した
-[pTeX](http://ascii.asciimw.jp/pb/ptex/) を角藤亮さんが
-[Microsoft Windows](http://www.microsoft.com/japan/windows/)
-32ビットプロセッサ (IA-32)
-環境（Windows NT 系［7，Vista，XP，2000，NT 4.0，NT 3.x］，Windows Me, 98，95）に移植された
-[W32TeX](/W32TeX/) をインストールする方法のあらましです。
+[W32TeX](/W32TeX/) は Windows 用の TeX ディストリビューションです。
+
+[W32TeX](/W32TeX/) の pTeX は，アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)）が開発した [pTeX](http://ascii.asciimw.jp/pb/ptex/) を角藤亮さんが [Microsoft Windows](http://www.microsoft.com/japan/windows/) 32ビットプロセッサ (IA-32) 環境（Windows NT 系［7，Vista，XP，2000，NT 4.0，NT 3.x］，Windows Me, 98，95）に移植したものです。
+
+以下は，[W32TeX](/W32TeX/) をインストールする方法のあらましです。
 
 角藤さんの pTeX 関連バイナリは Microsoft Windows の
 [Windows PowerShell](http://www.microsoft.com/powershell)
@@ -133,7 +132,7 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 過去のバージョンが欲しい場合は，[兼宗さん](http://twitter.com/kanemune)が以下で提供してくださっています:
 
-- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
+- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/) ← 404 Not Found
 
 ### 標準インストールで必要なもの {#s4df79fc}
 
@@ -541,8 +540,9 @@ Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新
 
 フォントを埋め込みたい場合は Use Windows TrueType fonts for Chinese, Japanese and Korean のチェックを on にしてインストールします．
 
-- [ftp://ftp.kddilabs.jp/TeX/ptex-win32/gs/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
+- [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
 - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 
 ## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
