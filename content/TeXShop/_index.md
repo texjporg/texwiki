@@ -378,4 +378,8 @@ Keynote は PDF で貼り付けられます．
 
 ## ツール {#kffeddd2}
 
+### [Flashmode](http://web.me.com/gerhardt/Flashmode/) {#ye507bc3}
+
+Live preview for TeXShop
+
 ### [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/) {#db2483a1}
