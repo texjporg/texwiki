@@ -84,22 +84,17 @@ pukiwiki: "インストール(Windows)"
 
 角藤さんの pTeX 関連バイナリは Microsoft Windows の
 [Windows PowerShell](http://www.microsoft.com/powershell)
-やコマンド プロンプト（Windows Me, 98，95 では
-MS-DOSプロンプト）で使うものですが，マウスによるドラッグ &amp; ドロップに対応させることもできます。
+やコマンド プロンプト[^1]で使うものですが，マウスによるドラッグ &amp; ドロップに対応させることもできます。
 
-また，[TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などと併用すれば
-Windows 風の操作も可能です。
+Microsoft Windows 用 pTeX のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。
 
-ここ以外に次のウェブサイトに解説があります：
+「TeX インストーラ 3」については AbTeXInstaller - TeX Wiki をご参照ください。
+
+コマンド プロンプトでの作業が苦手な方は [TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などの [TeX 専用エディタ](</TeX用エディタ/>) と併用すれば Windows 風の操作が可能です。
+
+TeX Wiki 以外に次のウェブサイトに解説があります：
 
 - [TeX インストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
-
-なお，Microsoft Windows 用 pTeX
-のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。
-
-「TeX インストーラ 3」については
-AbTeXInstaller - TeX Wiki
-をご参照ください。
 
 また，Microsoft Windows 用インストーラーをまとめた
 TeX installers for Windows - TeX Wiki
@@ -155,7 +150,7 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 - [texinst2011.zip](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/texinst2011.zip)（簡易インストーラ）
 - [unzip.exe](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/unzip.exe)（ZIP 展開ツール）
-    - ZIP 形式の展開に対応したソフトウェア[^1]を用いてもかまいません。Windows
+    - ZIP 形式の展開に対応したソフトウェア[^2]を用いてもかまいません。Windows
         7/Vista/XP は ZIP 形式の展開に標準で対応しています。
 
 - [web2c-lib.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/web2c-lib.tar.xz)（必須）
@@ -164,18 +159,21 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 - [mftools.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/mftools.tar.xz)（必須）
 - [ptex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/ptex-w32.tar.xz)（必須）
 - [platex.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/platex.tar.xz)（必須）
-- [manual.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/manual.tar.xz)（マニュアル類……質問する前に読みましょう）
-- [ltxpkgs.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/ltxpkgs.tar.xz)（[LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html)2e の基本パッケージ集）
-- [vf-a2bk.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/vf-a2bk.tar.xz)（[pTeX](https://mirror.ctan.org/help/Catalogue/entries/ptex.html) 用 virtual fonts）
-- [makeindex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/makeindex-w32.tar.xz)（索引作成ツール）
-- [txpx-pazofonts.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/txpx-pazofonts.tar.xz)（TX/[PX](https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html)/[Pazo](https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html) フォント）
-- [t1fonts.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/t1fonts.tar.xz)（Type 1 フォント）
-- [dvipdfm-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/dvipdfm-w32.tar.xz)（DVI → PDF 変換ツール）
-- [dvipsk-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/dvipsk-w32.tar.xz)（DVI → [PostScript](/PostScript/) 変換ツール）
-- [pdftex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/pdftex-w32.tar.xz)
+- [pdftex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/pdftex-w32.tar.xz)（必須）（TeX → PDF 変換ツール）
     ([pdfTeX](https://mirror.ctan.org/help/Catalogue/entries/pdftex.html))
 
+- [dvipdfm-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/dvipdfm-w32.tar.xz)（DVI → PDF 変換ツール）
+- [dvipsk-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/dvipsk-w32.tar.xz)（DVI → [PostScript](/PostScript/) 変換ツール）
+- [ltxpkgs.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/ltxpkgs.tar.xz)（[LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html)2e の基本パッケージ集）
+- [luatex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/luatex-w32.tar.xz)（TeX → PDF 変換ツール） ([LuaTeX](/LuaTeX/))
+- [makeindex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/makeindex-w32.tar.xz)（索引作成ツール）
+- [manual.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/manual.tar.xz)（マニュアル類……質問する前に読みましょう）
 - [oldinputs.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/oldinputs.tar.xz)（古い LaTeX のマクロ）
+- [t1fonts.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/t1fonts.tar.xz)（Type 1 フォント）
+- [timesnew.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/timesnew.tar.xz)（TimesNewRoman, Arial を使用するためのパッケージ）
+- [txpx-pazofonts.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/txpx-pazofonts.tar.xz)（TX/[PX](https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html)/[Pazo](https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html) フォント）
+- [vf-a2bk.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/vf-a2bk.tar.xz)（[pTeX](https://mirror.ctan.org/help/Catalogue/entries/ptex.html) 用 virtual fonts）
+- [xindy-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/xindy-w32.tar.xz)（Index プロセッサ）
 
 W32TeX のウェブサイトの標準インストールには NTT JTeX
 ([jtex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/jtex-w32.tar.xz))
@@ -194,7 +192,8 @@ W32TeX のウェブサイトの標準インストールには NTT JTeX
 [txtutil.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/txtutil.tar.xz),
 [tiff2png-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/tiff2png-w32.tar.xz))
 や[内部 Unicode 版 pTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-([uptex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/uptex-w32.tar.xz))
+([uptex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/uptex-w32.tar.xz)), [XeTeX](/XeTeX/)
+([xetex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/xetex-w32.tar.xz))
 も入れておくと便利かもしれません。
 
 ダウンロードツールをお使いの場合には，サーバに迷惑をかけないようにするために同時接続数を1にしてください。
@@ -230,7 +229,7 @@ Microsoft Windows
 
 以下では TeX のインストールをコマンドで行う方法を説明します。TeX
 をインストールするトップフォルダは C:\w32tex\\
-としています[^2]ので，<strong>別のフォルダ（ディレクトリ）にインストールする場合には “C:\w32tex\” の部分を読み替えてください</strong>。
+としています[^3]ので，<strong>別のフォルダ（ディレクトリ）にインストールする場合には “C:\w32tex\” の部分を読み替えてください</strong>。
 
 1. まず，ハードディスクに適当なフォルダを作り，適当な名前（例えば temp）を
     付けます。すでに temp というフォルダがあれば別の名前にします。
@@ -247,12 +246,10 @@ Microsoft Windows
     インストールされているなら，いったん消すか名前を変え，
     新しいシステムは w32tex という名前のフォルダに入れることをお勧めします。
 
-1. コマンド プロンプト（Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x) の場合）
-    または MS-DOSプロンプト（Windows Me, 98, 95 の場合）を開きます。
-    コマンド プロンプト（MS-DOSプロンプト）は［スタート］ボタンの
-    ［プログラム］の中，あるいはさらに［アクセサリ］の中にあります。
+1. コマンド プロンプトを開きます。
+    コマンド プロンプトは［スタート］-［すべてのプログラム］-［アクセサリ］の中にあります。
 
-1. コマンド プロンプト（MS-DOSプロンプト）に次のように
+1. コマンド プロンプトに次のように
     打ち込んで，C:\w32tex\ フォルダの中に texinst2011.zip を展開します。
     なお，これはダウンロードしたファイル群がCドライブの temp というフォルダに
     入っている場合です。
@@ -263,7 +260,7 @@ Microsoft Windows
     C:\w32tex>C:\temp\unzip C:\temp\texinst2011.zip
     ```
 
-1. コマンド プロンプト（MS-DOSプロンプト）に次のように打ち込みます。
+1. コマンド プロンプトに次のように打ち込みます。
     なお，これはダウンロードしたファイル群がCドライブの temp というフォルダに
     入っている場合です。
 
@@ -272,14 +269,12 @@ Microsoft Windows
     ```
 
     沢山のメッセージが出てきますが，メッセージが完全に止まるまで
-    閉じたり再起動したりしないでください。Windows Me, 98, 95 の場合は，途中で
+    閉じたり再起動したりしないでください。
 
-    ```
-    TAR.EXE: Could not change access and modification times of ...:
-    Permission denied
-    ```
-
-    というメッセージが出るかもしれませんが，気にしないでかまいません。
+<!-- Windows Me, 98, 95 の場合は，途中で -->
+<!-- TAR.EXE: Could not change access and modification times of ...: -->
+<!-- Permission denied -->
+<!-- というメッセージが出るかもしれませんが，気にしないでかまいません。 -->
 
 #### $TEXMF, $TEXMFMAIN, $TEXMFLOCAL {#s503cb80}
 
@@ -301,8 +296,7 @@ $TEXMFMAIN と $TEXMFLOCAL のどちらか，もしくは両方のことを指�
 
 Microsoft Windows の種類によって方法が違います。
 
-#### Windows NT系 {#zd15832c}
-
+<!-- ***Windows NT系 [#zd15832c] -->
 - Windows 7 では
     ［スタート］ → ［コントロール パネル］ → ［システムとセキュリティ］ → ［システム］ → ［システムの詳細設定］ → ［環境変数］
 
@@ -333,50 +327,43 @@ Microsoft Windows の種類によって方法が違います。
 なお，自分だけではなくユーザ全員に TeX を使わせたい場合は，
 管理者権限でシステム環境変数に上記のことを登録します。
 
-#### Windows Me {#k8c23036}
+<!-- ***Windows Me [#k8c23036] -->
+<!-- -Windows Me では， -->
+<!-- ［スタート］ → ［ファイル名を指定して実行］ で “msconfig” と入力し， -->
+<!-- 上と同様に，Path に “;C:\w32tex\bin” を付け加えてください。 -->
 
-- Windows Me では，
-    ［スタート］ → ［ファイル名を指定して実行］ で “msconfig” と入力し，
-    上と同様に，Path に “;C:\w32tex\bin” を付け加えてください。
+<!-- ***Windows 98, 95 [#n2afa237] -->
+<!-- -Windows 98, 95 では C:\AUTOEXEC.BAT をメモ帳などで開きます。もしその中に -->
+<!-- SET TEXMF=... -->
+<!-- SET TEXMFCNF=... -->
+<!-- SET TEXMFMAIN=... -->
+<!-- といった古い TeX で使っていた環境変数の設定があれば，それらを消します。 -->
+<!-- また，Path に古い TeX へのパス（“C:\ptex\bin” とか）があったら消してください。 -->
+<!-- これらを消した上で，AUTOEXEC.BAT の最後に次の行がない場合は追加します。 -->
+<!-- SET Path=C:\w32tex\bin;"%Path%" -->
+<!-- これでいったん再起動してください。 -->
 
-#### Windows 98, 95 {#n2afa237}
+<!-- //NTバージョンの違いと、2000(NT5,0)まではMSサポート対象外OSのため故Commentoutしました。 -->
+<!-- //でも，過去に古い TeX を使っていた方は，もしかすると AUTOEXEC.BAT にも古い記述が残っていて，悪さをするかもしれません。 -->
+<!-- 環境変数の設定に AUTOEXEC.BAT を使わない Windows Me, NT系(7, Vista, XP, XP x64 Edition) で -->
+<!-- AUTOEXEC.BAT -->
+<!-- に “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった設定があれば， -->
+<!-- 消してください。 -->
+<!-- また，Path に古い TeX へのパスが入っていたらそれも消してください。これは -->
+<!-- 重要なことで，うまく動かないというご質問の大半は環境変数の問題のようです。 -->
 
-- Windows 98, 95 では C:\AUTOEXEC.BAT をメモ帳などで開きます。もしその中に
+<!-- > -->
+<!-- ちなみに，Windows 98, 95 では "%Path%" のようにダブルクオートを付けないと -->
+<!-- 空白を含むパスがうまく扱われず，Windows 2000, XP,XP x64 Edition では -->
+<!-- 逆にダブルクオートを付けると機能しないそうです（そもそも %Path% は不要）。 -->
 
-    ```
-    SET TEXMF=...
-    SET TEXMFCNF=...
-    SET TEXMFMAIN=...
-    ```
-
-    といった古い TeX で使っていた環境変数の設定があれば，それらを消します。
-    また，Path に古い TeX へのパス（“C:\ptex\bin” とか）があったら消してください。
-    これらを消した上で，AUTOEXEC.BAT の最後に次の行がない場合は追加します。
-
-    ```
-    SET Path=C:\w32tex\bin;"%Path%"
-    ```
-
-    これでいったん再起動してください。
-
-環境変数の設定に AUTOEXEC.BAT を使わない Windows Me, NT系(7, Vista, XP, XP x64 Edition)//NTバージョンの違いと、2000(NT5,0)まではMSサポート対象外OSのため故Commentoutしました。//でも，過去に古い TeX を使っていた方は，もしかすると AUTOEXEC.BAT にも古い記述が残っていて，悪さをするかもしれません。AUTOEXEC.BAT
-に “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった設定があれば，
-消してください。
-また，Path に古い TeX へのパスが入っていたらそれも消してください。これは
-重要なことで，うまく動かないというご質問の大半は環境変数の問題のようです。
-
-> ちなみに，Windows 98, 95 では "%Path%" のようにダブルクオートを付けないと
-> 空白を含むパスがうまく扱われず，Windows 2000, XP,XP x64 Edition では
-> 逆にダブルクオートを付けると機能しないそうです（そもそも %Path% は不要）。
-
-（「[Windows95/98/Me/NT/2000/XP における日本語TeX のインストールのチェック](http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html)」より
-引用： 「[角藤氏のパッケージでWeb2C 7.3.7 またはそれ以降の場合](http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html#0-5)は、
-これら3つの環境変数を全て未定義にすれば、正しい場所にあるものが使われます。」）
+<!-- （「[[Windows95/98/Me/NT/2000/XP における日本語TeX のインストールのチェック:http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html]]」より -->
+<!-- 引用： 「[[角藤氏のパッケージでWeb2C 7.3.7 またはそれ以降の場合:http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html#0-5]]は、 -->
+<!-- これら3つの環境変数を全て未定義にすれば、正しい場所にあるものが使われます。」） -->
 
 ### ここまでのテスト {#bfc3538f}
 
-Adobe
-[Reader](http://www.adobe.com/jp/products/reader/)/[Acrobat](http://www.adobe.com/jp/products/acrobat/)
+[Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
 やその他の PDF ビューアをお持ちの方は，ここまでのインストールで
 TeX を使うことができます。Adobe Reader
 は「[Adobe &mdash; Adobe Reader のダウンロード](http://get.adobe.com/jp/reader/)」から無償でダウンロードできます。
@@ -384,7 +371,7 @@ TeX を使うことができます。Adobe Reader
 例えばCドライブの C:\work\ というフォルダ（ディレクトリ）で
 作業することにしましょう。このフォルダはあらかじめ作っておいてください。
 
-コマンド プロンプト（MS-DOSプロンプト）を開き，
+コマンド プロンプトを開き，
 次のように打ち込んで上の作業用フォルダに移動します。
 
 ```
@@ -392,7 +379,7 @@ TeX を使うことができます。Adobe Reader
 >cd \work
 ```
 
-ここでコマンド プロンプト（MS-DOSプロンプト）に次のように打ち込みます。
+ここでコマンド プロンプトに次のように打ち込みます。
 
 ```
 C:\work>notepad test.tex
@@ -403,7 +390,7 @@ C:\work>notepad test.tex
 メモ帳でなくても他のテキストエディタでもかまいません。
 
 上記の方法でメモ帳が立ち上がらなければ，
-［スタート］ → ［プログラム］ → ［アクセサリ］ あたりにあるはずですので，
+［スタート］ → ［すべてのプログラム］ → ［アクセサリ］ あたりにあるはずですので，
 マウスで起動してください。ただしメモ帳をマウスで起動した場合には，
 これを「test.tex」という名前で保存しようとしても，
 たぶんメモ帳が勝手に「test.tex.txt」といった名前に変えてしまいます。
@@ -435,7 +422,7 @@ C:\work>notepad test.tex
 メモ帳で ［ファイル］ → ［上書き保存］ します。
 メモ帳を閉じる必要はありません。
 
-さきほどのコマンド プロンプト（MS-DOSプロンプト）に次のように打ち込みます。
+さきほどのコマンド プロンプトに次のように打ち込みます。
 
 ```
 C:\work>platex test.tex
@@ -450,7 +437,7 @@ C:\work>
 
 というプロンプトが戻ってくれば成功です。
 
-続いて，同じコマンド プロンプト（MS-DOSプロンプト）に次のように打ち込みます。
+続いて，同じコマンド プロンプトに次のように打ち込みます。
 
 ```
 C:\work>dvipdfmx test.dvi
@@ -464,14 +451,21 @@ C:\work>
 
 というプロンプトが戻ってくれば成功です。
 
-続いて，コマンド プロンプト（MS-DOSプロンプト）に次のように打ち込みます
-（Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x)では “start” を省略してもかまいません）。
+続いて，コマンド プロンプトに次のように打ち込みます
 
 ```
 C:\work>start test.pdf
 ```
 
-これで Adobe Reader が立ち上がり，上で書き込んだものが綺麗に現れれば OK です。
+PDF ファイルが Adobe Reader に関連づけされていれば Adobe Reader が立ち上がります。上で書き込んだものが Adobe Reader で綺麗に表示されていれば OK です。
+
+Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x) では“start” を省略して
+
+```
+C:\work>test.pdf
+```
+
+としてもかまいません。
 
 さらに作業を続ける場合には，Adobe Reader やメモ帳はそのまま立ち上げておくと
 便利です。
@@ -504,7 +498,7 @@ WWW 上に無償で公開されています。
 
 また [Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，[Vim](/Vim/)，[xyzzy](/xyzzy/)，[jEdit](http://www.jedit.org/)，Mery，[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)，[サクラエディタ](</サクラエディタ/>)，[gedit](http://projects.gnome.org/gedit/)，[Geany](http://www.geany.org/)，[秀丸エディタ](</秀丸エディタ/>) (シェアウェア)，[EmEditor Professional](http://jp.emeditor.com/) (シェアウェア)，WZ EDITOR (製品) などの
 TeX 対応テキストエディタは
-ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），Shift_JIS（シフト JIS）[^3]，UTF-8
+ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），Shift_JIS（シフト JIS）[^4]，UTF-8
 などの様々な文字コードに対応しているので，
 標準のテキストエディタとしてメモ帳 (Notepad) を使っている方にはこの機会に他のテキストエディタへの乗り換えをお薦めします
 （ただし Emacs \[emacs for gnupack，Meadow\]，Vim，xyzzy は初期設定ではショートカットキーなどの操作性が
@@ -528,7 +522,7 @@ IDE を使いたい方は，[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) もお
 
 もしファイル名のデータベース $TEXMF/ls-R
 （例えば C:\w32tex\share\texmf\ls-R）が
-存在するのなら，mktexlsr コマンドでデータベースを更新しないと，
+存在するのなら，mktexlsr コマンド[^5]でデータベースを更新しないと，
 新しくインストールしたファイルが認識されません。しかしこれは忘れやすいので，
 初心者のかたは mktexlsr コマンドを打ち込まないほうがいいでしょう。
 
@@ -545,114 +539,10 @@ Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新
 もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
 必ず削除しておきます（方法は上で説明した TeX の場合と同じです）。
 
-### Ghostscript 7.07 {#y7d058ad}
+フォントを埋め込みたい場合は Use Windows TrueType fonts for Chinese, Japanese and Korean のチェックを on にしてインストールします．
 
-[Ghostscript 7.07](</Ghostscript 7.07/>) ([gs707w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip)) に関する説明をします．<br>
-Ghostscript にはバージョン 8 系列もありますが，日本語の縦書き等に難点が残っていますので，気になる場合は 7.07 を使用してください。<br>
-縦書きをしない場合は脆弱性が存在するので最新の Ghostscript にすることをお勧めします．<br>
-gs707w32full.zip を展開して中にある “setupgs.exe” を実行すればインストールできます。<br>
-デフォルトでは C:\gs\ に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。<br>
-C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
-
-環境変数 TEMP に全角文字が含まれていると失敗するかもしれません
-（Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x)でユーザ名に2バイト文字を使っている場合など）。
-この場合は，例えば C:\tmp\ というフォルダ（ディレクトリ）を作っておき，
-［コントロールパネル］ → ［システム］ → ［詳細］ → ［環境変数］ で
-環境変数 TEMP を “C:\tmp” に設定してからインストールを行います。
-私は TEMP も TMP もこのように設定しています。
-
-環境変数 GS_LIB については，2003年7月13日以降の Ghostscript 7.07 では
-一切不要です。むしろ不完全な GS_LIB を設定するとトラブルの元ですので，
-削除しておいてください。
-
-動作チェックと
-して ［スタート］ → ［プログラム］ → ［Ghostscript］ → ［Ghostscript
-7.07］ で Ghostscript を起動し，
-その窓にマイコンピュータから C:\gs\gs7.07\examples\tiger.ps を
-ドラッグ &amp; ドロップして虎の絵が表示できれば OK です。
-
-dviout for Windows との連携をチェックするには，dviout をインストールした
-フォルダ（例えば C:\dviout\）の GRAPHIC\PS\ フォルダに上の tiger.ps と，
-同じフォルダにある golfer.ps とをコピーしておきます。これでその場所にある
-pssample.dvi をダブルクリックして絵入りの文書が表示できれば OK です。
-
-dvipdfmx や dvipdfm で PDF を作る際には，C:\gs\gs7.07\bin\ にパスを通して
-おきます。上のほうで環境変数 Path に “C:\w32tex\bin” を加えましたが，
-さらにその後に “;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” を追加します。結局
-Path は “C:\w32tex\bin;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” となります。
-
-2003年9月5日以降の角藤さんの Ghostscript 7.07 配布では，和文フォントを
-埋め込まない設定にできます。設定は，dvipdfmx.cfg の “D” で始まる行を
-次のように書き直します（本当は1行です）。
-
-```
-D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0
--sDEVICE=pdfwrite -dCompatibilityLevel=1.3
--dAutoFilterGrayImages=false -dAutoFilterColorImages=false
--dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode
--dUseFlateCompression=true -sOutputFile=%o -c '.setpdfwrite <<
-/NeverEmbed [/Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique
-/Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique
-/Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic
-/Symbol /ZapfDingbats
-/Ryumin-Light /GothicBBB-Medium /MS-Mincho /MS-Gothic]
->> setdistillerparams' -f %i -c quit"
-```
-
-### 【参考】 Ghostscript による PDF 作成 {#zce2e51d}
-
-次の作業は Ghostscript 7.07 単独で日本語の PDF を作る場合，
-および dvipdfmx や dvipdfm で処理する EPS ファイルに
-日本語が含まれている場合に必要です。EPS ファイルに日本語が含まれていない
-（あるいは日本語がアウトライン化されている）ならば，dvipdfmx や dvipdfm で
-処理する本文にいくら日本語が使われていても，以下の作業は特に不要です。
-
-[Ring Server](http://www.ring.gr.jp/) の
-[/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-から[adobe-cmaps-200204.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/adobe-cmaps-200204.zip)
-と[acro5-cmaps-2001.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/acro5-cmaps-2001.zip)
-をダウンロードします。
-
-C:\gs\gs7.07\Resource\ というフォルダ（ディレクトリ）を作り，
-この二つのファイルをその中で展開します。
-もし C:\gs\gs7.07\Resource\ 以外のフォルダに
-展開するなら，C:\gs\gs7.07\lib\gs_res.ps の248&ndash;249行を
-編集する必要があります。
-
-次は和文フォントを使えるようにします。
-ここでは Microsoft Windows の「ＭＳ 明朝」，「ＭＳ ゴシック」を
-使ってみます。C:\gs\gs7.07\lib\CIDFnmap の最後に次のように書き込みます。
-
-***
-
-```
-/Ryumin-Light      /MS-Mincho        ;
-/GothicBBB-Medium  /MS-Gothic        ;
-/HeiseiMin-W3      /Ryumin-Light     ;
-/HeiseiKakuGo-W5   /GothicBBB-Medium ;
-
-/MS-Mincho         (msmincho.ttc) 1  ;
-/MS-Gothic         (msgothic.ttc) 1  ;
-```
-
-***
-
-これで日本語が表示できます。
-
-C:\gs\gs7.07\lib\ も Path に含めておけば，ps2pdf コマンドで
-PostScript ファイルを PDF ファイルに変換できます。
-ただし『無効なフォント「MS-Mincho」が文書から削除されました。』と出て，
-すべてゴシック体で表示されてしまいます。
-これを防ぐには，MS-Mincho，MS-Gothic を文書から削除して
-Ryumin-Light，GothicBBB-Medium という名前に置き換えればいいわけです。
-これを自動化するスクリプト
-[replacecjkfonts, cjkps2pdf](http://www.eaflux.com/replacecjkfonts/)
-を[中丸幸治さん](http://www.eaflux.com/)が作られています。
-これを使えば PDF のサイズも小さくなりますし，Acrobat Reader が
-適当なフォントできれいに表示してくれます。
-
-2003年9月5日以降の角藤さんが配布なさっている
-Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思います。
+- [ftp://ftp.kddilabs.jp/TeX/ptex-win32/gs/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 
 ## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
@@ -833,6 +723,8 @@ Cygwin のパッケージインストール
 「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
 へ。
 
-[^1]: 例えば [7-Zip](http://sevenzip.sourceforge.jp/)，[7-Zip Portable](http://portableapps.com/apps/utilities/7-zip_portable)，[Explzh](http://www.ponsoftware.com/)，[LhaForge](http://claybird.sakura.ne.jp/garage/lhaforge/)，[LhaOpen](http://lhaopen.tsuru.syuriken.jp/)，[Lhaz](http://www.chitora.jp/lhaz.html)，[Lhaplus](http://hoehoe.com/)，[epo](http://www.softgate.jp/ja/portal/software.html)，[PeaZip](http://peazip.sourceforge.net/)，[ALZip](http://www.altools.jp/product/alzip.aspx)（[アドウェア](http://www.altools.jp/ETC/NEWS.aspx?mid=231&vidx=47)），[WinRAR](http://www.diana.dti.ne.jp/~winrar/)（シェアウェア）など。
-[^2]: C:\w32tex の場合、フロントエンドのプログラムが自動で見つけてくれるチャンスが増えます。
-[^3]: 類似する文字コードとして [Windows-31J](http://msdn.microsoft.com/goglobal/cc305152.aspx) があります。この Windows-31J と Shift_JIS は Microsoft Windows 上ではしばしば混同されます。また，Windows-31J は日本語 Microsoft Windows の「メモ帳」では “ANSI” と表示されます。
+[^1]: Windows Me, 98，95 では，コマンド プロンプトではなく MS-DOSプロンプト を使用します。
+[^2]: 例えば [7-Zip](http://sevenzip.sourceforge.jp/)，[7-Zip Portable](http://portableapps.com/apps/utilities/7-zip_portable)，[Explzh](http://www.ponsoftware.com/)，[LhaForge](http://claybird.sakura.ne.jp/garage/lhaforge/)，[LhaOpen](http://lhaopen.tsuru.syuriken.jp/)，[Lhaz](http://www.chitora.jp/lhaz.html)，[Lhaplus](http://hoehoe.com/)，[epo](http://www.softgate.jp/ja/portal/software.html)，[PeaZip](http://peazip.sourceforge.net/)，[ALZip](http://www.altools.jp/product/alzip.aspx)（[アドウェア](http://www.altools.jp/ETC/NEWS.aspx?mid=231&vidx=47)），[WinRAR](http://www.diana.dti.ne.jp/~winrar/)（シェアウェア）など。
+[^3]: C:\w32tex の場合、フロントエンドのプログラムが自動で見つけてくれるチャンスが増えます。
+[^4]: 類似する文字コードとして [Windows-31J](http://msdn.microsoft.com/goglobal/cc305152.aspx) があります。この Windows-31J と Shift_JIS は Microsoft Windows 上ではしばしば混同されます。また，Windows-31J は日本語 Microsoft Windows の「メモ帳」では “ANSI” と表示されます。
+[^5]: または texhash コマンド
