@@ -77,29 +77,56 @@ pukiwiki: "インストール(Windows)"
 
 [W32TeX](/W32TeX/) は Windows 用の TeX ディストリビューションです。
 
-[W32TeX](/W32TeX/) の pTeX は，アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)）が開発した [pTeX](http://ascii.asciimw.jp/pb/ptex/) を角藤亮さんが [Microsoft Windows](http://www.microsoft.com/japan/windows/) 32ビットプロセッサ (IA-32) 環境（Windows NT 系［7，Vista，XP，2000，NT 4.0，NT 3.x］，Windows Me, 98，95）に移植したものです。
+[W32TeX](/W32TeX/) の pTeX は，アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)）が開発した [pTeX](http://ascii.asciimw.jp/pb/ptex/) を角藤 亮さんが [Microsoft Windows](http://www.microsoft.com/japan/windows/) 32ビットプロセッサ (IA-32) 環境（Windows NT 系［7，Vista，XP，2000，NT 4.0，NT 3.x］，Windows Me, 98，95）に移植したものです。
 
 以下は，[W32TeX](/W32TeX/) をインストールする方法のあらましです。
 
-角藤さんの pTeX 関連バイナリは Microsoft Windows の
+[W32TeX](/W32TeX/) は Microsoft Windows の
 [Windows PowerShell](http://www.microsoft.com/powershell)
 やコマンド プロンプト[^1]で使うものですが，マウスによるドラッグ &amp; ドロップに対応させることもできます。
 
-Microsoft Windows 用 pTeX のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。
+[W32TeX](/W32TeX/) のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。
 
 「TeX インストーラ 3」については AbTeXInstaller - TeX Wiki をご参照ください。
-
-コマンド プロンプトでの作業が苦手な方は [TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などの [TeX 専用エディタ](</TeX用エディタ/>) と併用すれば Windows 風の操作が可能です。
-
-TeX Wiki 以外に次のウェブサイトに解説があります：
-
-- [TeX インストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
 
 また，Microsoft Windows 用インストーラーをまとめた
 TeX installers for Windows - TeX Wiki
 のページも参考になるでしょう。
 
+コマンド プロンプトでの作業が苦手な方は [TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などの [TeX 専用エディタ](</TeX用エディタ/>) と併用すれば Windows 風の操作が可能です。
+
 【注意】「TeX インストーラ 3」は確かに手軽なインストーラですが，<strong>「これでしかインストールできない」ようであれば，TeX に手を出す前に「昔はパソコン入門でやっていたようなこと」（ユーザ環境のカスタマイズ，コマンドライン上での作業など）を学んでおいた方が良いでしょう</strong>。
+
+### TeX Wiki 以外の解説サイト {#tcc46c04}
+
+TeX Wiki 以外にも Windows 用の TeX のインストールに関する解説サイトがあります。
+
+- [TeX「超」入門](http://www.nsknet.or.jp/~tony/TeX/texindex.html) /
+    [TeX Q and A](http://www.nsknet.or.jp/~tony/TeX/faq/) /
+    [TeXインストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) 
+    ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
+
+- [Oshima Laboratory Home Page (JP)](http://akagi.ms.u-tokyo.ac.jp/index-j.html) (大島研究室＠東京大)
+    - [Windows95/98/Me/NT/2000/XP における dviout のインストール](http://akagi.ms.u-tokyo.ac.jp/tex_dvioutw.html)
+    - [Windows95/98/Me/NT/2000/XP における TeX システムのインストール](http://akagi.ms.u-tokyo.ac.jp/texinst98.html)
+    - [Windows95/98/Me/NT/2000/XP における日本語 TeX のインストールのチェック](http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html)
+- [Ghostscript + GSview の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
+    [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/)（堀田耕作さん
+    @ 愛知教育大・数学）
+    ［TeX，Ghostscript，GSview， mathabx，gnuplot，象形文字フォントについて］
+    - [さあ、始めよう pLaTeX2e Blog](http://blogs.yahoo.co.jp/koh_hotta/folder/8260.html)
+- [乙部厳己個人ページ](http://argent.shinshu-u.ac.jp/otobe/)（乙部厳己さん
+    @ 信州大）
+
+- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
+    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
+
+- [Window 版 LaTeX のインストール](http://mailsrv.nara-edu.ac.jp/~asait/latex/tex.htm) (浅井さん)
+- [あべのりページ](http://www.math.sci.hokudai.ac.jp/~abenori/) ([阿部紀行さん](http://d.hatena.ne.jp/abenori/) ([twitter](http://twitter.com/abenori)))
+    「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
+    <!-- ↑一次配布元などではないので、このあたりが妥当 -->
+    <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
+    - AbTeXInstaller - TeX Wiki
 
 ### ダウンロードサイト {#y2ec963e}
 
@@ -304,9 +331,8 @@ Microsoft Windows の種類によって方法が違います。
 
 - Windows XP では
     ［スタート］ → ［コントロール パネル］ → ［パフォーマンスとメンテナンス］ → ［システム］ → ［詳細設定］ → ［環境変数］
-
-- Windows 2000, NT 4.0, NT 3.x では
-    ［スタート］ → ［設定］ → ［コントロールパネル］ → ［システム］ → ［詳細］ → ［環境変数］
+    <!-- -Windows 2000, NT 4.0, NT 3.x では -->
+    <!-- ［スタート］ → ［設定］ → ［コントロールパネル］ → ［システム］ → ［詳細］ → ［環境変数］ -->
 
 とたどってください。もしシステム環境変数またはユーザー環境変数と
 して “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といったものが登録されているなら，
@@ -539,6 +565,15 @@ Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新
 必ず削除しておきます（方法は上で説明した TeX の場合と同じです）。
 
 フォントを埋め込みたい場合は Use Windows TrueType fonts for Chinese, Japanese and Korean のチェックを on にしてインストールします．
+
+環境変数 PATH に Ghostscript の PATH を追加します．
+
+PATH の値は Ghostscript のバージョンによって変わるので，使用しているバージョンに合わせて値を変えてください．
+
+> | 変数名 | 変数値 |
+> |---|---|
+> | Path | C:\gs\gs9.04\bin;C:\gs\gs9.04\lib |
+>
 
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
 - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
