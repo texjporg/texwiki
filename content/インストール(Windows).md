@@ -694,6 +694,21 @@ Masamichi をご覧ください．
 
 TeXE をご覧ください．
 
+### Scientific WorkPlace (製品) {#p0ac379c}
+
+Scientific WorkPlace をご覧ください．
+
+### [InftyEditor](http://www.inftyproject.org/jp/software.html) (製品) {#w2b15f27}
+
+[InftyEditorの概要](http://www.sciaccess.net/jp/InftyEditor/) をご覧下さい．
+
+なお
+
+- [InftyEditor 学生版](http://www.inftyproject.org/jp/software.html)
+- [InftyEditor 英語版](http://www.inftyproject.org/en/software.html)
+
+はフリー (無料) です．
+
 ### TeraPad + ツール {#a652512f}
 
 TeraPad#ツール をご覧ください．
