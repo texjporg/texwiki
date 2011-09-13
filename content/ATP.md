@@ -75,7 +75,10 @@ Vim を起動し
 
 を配置します．
 
-vimrc に以下の記述を追加します．
+- $HOME/.vimrc (UNIX, Linux)
+- $HOME/\_vimrc (Windows)
+
+に以下の記述を追加します．
 
 ***
 
