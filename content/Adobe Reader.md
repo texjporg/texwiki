@@ -11,7 +11,12 @@ pukiwiki: "Adobe Reader"
 
 ## ダウンロード {#ne09e93f}
 
-- [http://get.adobe.com/jp/reader/](http://get.adobe.com/jp/reader/)
+- [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
+    - [http://get.adobe.com/jp/reader/](http://get.adobe.com/jp/reader/) (最新版)
+    - [http://get.adobe.com/jp/reader/otherversions/](http://get.adobe.com/jp/reader/otherversions/) (以前のバージョン)
+- [http://www.adobe.com/support/downloads/new.jsp](http://www.adobe.com/support/downloads/new.jsp)
+    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
+    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh)
 - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
 - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
 - [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
