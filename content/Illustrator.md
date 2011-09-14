@@ -102,6 +102,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 - [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
     Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
+    - [ファイルダウンロード](http://www.ritsumei.ac.jp/se/~morimoto/files.html)
 
 【参考情報】
 
