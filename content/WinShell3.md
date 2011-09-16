@@ -95,6 +95,7 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 ### 日本語化ファイル {#i83c37b0}
 
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
+    - [http://webcache.googleusercontent.com/search?q=cache:http://redmine.nnnnn.me/projects/winshell/files](http://webcache.googleusercontent.com/search?q=cache:http://redmine.nnnnn.me/projects/winshell/files) (Google キャッシュ)
 
 WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
 ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．
