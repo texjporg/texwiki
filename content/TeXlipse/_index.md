@@ -128,8 +128,6 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 この plugins フォルダを Eclipse フォルダに上書きコピーします．
 
-[改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/) というのもあります．
-
 ## LaTeX ファイルのデフォルト・エンコードの設定 {#e388e178}
 
 ***
