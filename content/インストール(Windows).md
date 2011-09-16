@@ -634,7 +634,9 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ## [TeX 用エディタ](</TeX用エディタ/>)のインストール（オプション） {#e8efca0f}
 
-### [TeXworks](/TeXworks/) {#sca389c7}
+### オープンソース・フリーウェア {#e2433aac}
+
+#### [TeXworks](/TeXworks/) {#sca389c7}
 
 W32TeX にはデフォルトでエディタとして [TeXworks](/TeXworks/) (by Jonathan Kew &amp; Stefan Löffler) が含まれています．<br>
 コマンド プロンプトで texworks とすると，立ち上がります．<br>
@@ -666,39 +668,79 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 [TeXworks](/TeXworks/) もご覧ください．
 
-### [Texmaker](/Texmaker/) {#q8c6a4e6}
+#### [Texmaker](/Texmaker/) {#q8c6a4e6}
 
 [Texmaker](/Texmaker/) をご覧ください．
 
-### [LyX](/LyX/) {#s7fa0837}
+#### [LyX](/LyX/) {#s7fa0837}
 
 [LyX](/LyX/) をご覧ください．
 
-### EasyTeX {#i87678c7}
+#### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
+
+[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
+
+#### EasyTeX {#i87678c7}
 
 EasyTeX をご覧ください．
 
-### [WinShell](/WinShell/) {#l040a9c6}
+#### [WinShell](/WinShell/) {#l040a9c6}
 
 [WinShell](/WinShell/)，WinShell3 をご覧ください．
 
-### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
+#### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
 
 [TeXnicCenter](/TeXnicCenter/) をご覧ください．
 
-### Masamichi {#d70fc64e}
+#### Masamichi {#d70fc64e}
 
 Masamichi をご覧ください．
 
-### TeXE {#g0454558}
+#### TeXE {#g0454558}
 
 TeXE をご覧ください．
 
-### Scientific WorkPlace (製品) {#p0ac379c}
+#### TeraPad + ツール {#a652512f}
+
+TeraPad#ツール をご覧ください．
+
+#### VxEditor + ツール {#eaa0beaf}
+
+VxEditor#ツール をご覧ください．
+
+#### Mery + マクロ {#oab02ae1}
+
+Mery#マクロ をご覧ください．
+
+#### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
+
+[サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
+
+#### [Notepad++](/Notepad++/) + プラグイン {#k51d20b3}
+
+[Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
+
+#### [xyzzy](/xyzzy/) + tex-mode {#s2425f0a}
+
+[xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>
+をご覧ください．
+
+#### [Emacs](/Emacs/) + tex-mode or org-mode {#z9deda13}
+
+[Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
+をご覧ください．
+
+#### [Vim](/Vim/) + プラグイン {#s7ce6347}
+
+[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
+
+### シェアウェア・製品 {#jc4ae1f8}
+
+#### Scientific WorkPlace (製品) {#p0ac379c}
 
 Scientific WorkPlace をご覧ください．
 
-### [InftyEditor](http://www.inftyproject.org/jp/software.html) (製品) {#w2b15f27}
+#### [InftyEditor](http://www.inftyproject.org/jp/software.html) (製品) {#w2b15f27}
 
 [InftyEditorの概要](http://www.sciaccess.net/jp/InftyEditor/) をご覧下さい．
 
@@ -709,51 +751,13 @@ Scientific WorkPlace をご覧ください．
 
 はフリー (無料) です．
 
-### TeraPad + ツール {#a652512f}
-
-TeraPad#ツール をご覧ください．
-
-### VxEditor + ツール {#eaa0beaf}
-
-VxEditor#ツール をご覧ください．
-
-### Mery + マクロ {#oab02ae1}
-
-Mery#マクロ をご覧ください．
-
-### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
-
-[サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
-
-### [Notepad++](/Notepad++/) + プラグイン {#k51d20b3}
-
-[Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
-
-### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
+#### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
 
 [秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
 
-### WZ EDITOR (製品) {#cbee1e14}
+#### WZ EDITOR (製品) {#cbee1e14}
 
 WZ EDITOR をご覧ください．
-
-### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
-
-[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
-
-### [xyzzy](/xyzzy/) + tex-mode {#s2425f0a}
-
-[xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>
-をご覧ください．
-
-### [Emacs](/Emacs/) + tex-mode or org-mode {#z9deda13}
-
-[Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
-をご覧ください．
-
-### [Vim](/Vim/) + プラグイン {#s7ce6347}
-
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
 
 ## [TeX Live](</TeX Live/>) {#ia336ed2}
 
