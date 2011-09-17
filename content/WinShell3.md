@@ -73,8 +73,8 @@ WinShell には
     - [リリース版](http://www.winshell.org/modules/ws_download/#release)
     - [ベータ版](http://www.winshell.org/modules/ws_download/#beta)
 - [CTAN:systems/win32/winshell/](https://mirror.ctan.org/systems/win32/winshell/) (最新版とは限りません)
-- [WinShell 3.1 (旧バージョン)](http://stanag4172.m13.coreserver.jp/blog/archives/154)
-    <!-- -[[LaTeX Install/WinShell - PukiWiki:http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell]] (旧バージョン) -->
+- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
+- [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) WinShell 3.1 (旧バージョン)
 
 上記のサイトから WinShell インストーラ (“WinShell3??.exe” といった名前のもの) をダウンロードし，実行するとインストールできます．<br>
 インストーラの質問には \[Next\] → \[Next\] → \[Next\] → \[Next\] → \[Finish\] と答えてください．<br>
