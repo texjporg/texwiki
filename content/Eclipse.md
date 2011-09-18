@@ -21,7 +21,6 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
     - [eclipse project downloads](http://download.eclipse.org/eclipse/downloads/)
-    - [Eclipse SDK 4.x Stream downloads](http://download.eclipse.org/e4/sdk/)
     - [eclipse e4 project downloads](http://download.eclipse.org/e4/downloads/)
 - [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
