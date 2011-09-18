@@ -11,6 +11,12 @@ pukiwiki: "Beamer"
 
 <strong>目次</strong>
 
+### Beamer とは {#g7e9b20e}
+
+Beamer は プレゼンテーション用の LaTeX クラスです．
+
+2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
+
 ### 不具合 {#d9dfcf20}
 
 - [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
