@@ -9,7 +9,17 @@ pukiwiki: "powerdot"
 
 ## powerdot {#v0ce3213}
 
-### powerdot {#f0f3637a}
+<strong>目次</strong>
+
+```
+
+```
+
+### powerdot とは {#f0f3637a}
+
+powerdot は プレゼンテーション用の LaTeX クラスです．
+
+2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 
 - [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
 - [powerdot -- a LaTeX presentation class](http://homepages.inf.ed.ac.uk/s0675112/powerdot_intro/powerdot.html) \[天野さん\]
