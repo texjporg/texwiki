@@ -1046,7 +1046,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 の優先度を上から二番目にします．
 
-#### Adobe Reader {#qdfce81e}
+#### [Adobe Reader](</Adobe Reader/>) {#qdfce81e}
 
 ***
 
