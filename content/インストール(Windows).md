@@ -634,7 +634,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ## [TeX 用エディタ](</TeX用エディタ/>)のインストール（オプション） {#e8efca0f}
 
-### オープンソース・フリーウェア {#e2433aac}
+### フリーソフトウェア (オープンソースソフトウェア) {#e2433aac}
 
 #### [TeXworks](/TeXworks/) {#sca389c7}
 
@@ -680,37 +680,9 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
 
-#### EasyTeX {#i87678c7}
-
-EasyTeX をご覧ください．
-
-#### [WinShell](/WinShell/) {#l040a9c6}
-
-[WinShell](/WinShell/)，WinShell3 をご覧ください．
-
 #### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
 
 [TeXnicCenter](/TeXnicCenter/) をご覧ください．
-
-#### Masamichi {#d70fc64e}
-
-Masamichi をご覧ください．
-
-#### TeXE {#g0454558}
-
-TeXE をご覧ください．
-
-#### TeraPad + ツール {#a652512f}
-
-TeraPad#ツール をご覧ください．
-
-#### VxEditor + ツール {#eaa0beaf}
-
-VxEditor#ツール をご覧ください．
-
-#### Mery + マクロ {#oab02ae1}
-
-Mery#マクロ をご覧ください．
 
 #### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
 
@@ -734,7 +706,43 @@ Mery#マクロ をご覧ください．
 
 [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
 
-### シェアウェア・製品 {#jc4ae1f8}
+### フリーウェア (無料) {#k0b8f900}
+
+#### EasyTeX {#i87678c7}
+
+EasyTeX をご覧ください．
+
+#### [WinShell](/WinShell/) {#l040a9c6}
+
+[WinShell](/WinShell/)，WinShell3 をご覧ください．
+
+#### Masamichi {#d70fc64e}
+
+Masamichi をご覧ください．
+
+#### TeXE {#g0454558}
+
+TeXE をご覧ください．
+
+#### TeraPad + ツール {#a652512f}
+
+TeraPad#ツール をご覧ください．
+
+#### VxEditor + ツール {#eaa0beaf}
+
+VxEditor#ツール をご覧ください．
+
+#### Mery + マクロ {#oab02ae1}
+
+Mery#マクロ をご覧ください．
+
+### シェアウェア {#yec6bbe1}
+
+#### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
+
+[秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
+
+### 製品 {#jc4ae1f8}
 
 #### Scientific WorkPlace (製品) {#p0ac379c}
 
@@ -749,11 +757,7 @@ Scientific WorkPlace をご覧ください．
 - [InftyEditor 学生版](http://www.inftyproject.org/jp/software.html)
 - [InftyEditor 英語版](http://www.inftyproject.org/en/software.html)
 
-はフリー (無料) です．
-
-#### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
-
-[秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
+はフリーウェア (無料) です．
 
 #### WZ EDITOR (製品) {#cbee1e14}
 
