@@ -24,7 +24,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 ## ツール {#t542b96a}
 
-ツールの設定をすると TeraPad, Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
+ツールの設定をすると TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
 ### pdfpLaTeXA {#v2edf4e6}
 
