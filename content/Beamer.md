@@ -15,8 +15,6 @@ pukiwiki: "Beamer"
 
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
-2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
-
 ### 不具合 {#d9dfcf20}
 
 - [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
@@ -42,8 +40,8 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
-Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
-
+- 2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
+- Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
     - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
     - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
@@ -57,16 +55,20 @@ Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
 ### [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/) {#o6f8726a}
 
 <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
+
+- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - e-TeX 拡張が必要 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
 
 ### [xcolor](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
+- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
 
-### extsizes {#e19a97f8}
+### [extsizes](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/extsizes.html) {#e19a97f8}
 
+- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - [CTAN:help/Catalogue/entries/extsizes.html](https://mirror.ctan.org/help/Catalogue/entries/extsizes.html)
 
 ### [LaTeX beamerposter](http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php) {#pabd14ab}
