@@ -37,11 +37,11 @@ Mery は
 
 ## マクロ {#oa5f5cea}
 
-マクロを使うと TeraPad, VxEditor, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) と同様に，LaTeX 環境を簡単に作ることができます．
+マクロを使うと [サクラエディタ](</サクラエディタ/>) と同様に，LaTeX 環境を簡単に作ることができます．
 
 マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
 
-### pdfpLaTeXA.js {#h14da8ca}
+### pdfpLaTeX.js {#w4e337a9}
 
 ***
 
@@ -53,26 +53,24 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex -guess-input-enc";
+  var latex = "platex -synctex=1 -guess-input-enc";
   var encoding = document.Encoding;
   if (encoding == meEncodingAutomatic) {
-    latex = "platex -guess-input-enc";
+    latex = "platex -synctex=1 -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis";
   } else if (encoding == meEncodingEUC) {
-    latex = "platex -no-guess-input-enc -kanji=euc";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
-    latex = "platex -no-guess-input-enc -kanji=sjis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis";
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
-    latex = "platex -no-guess-input-enc -kanji=utf8";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -84,7 +82,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -102,13 +100,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeXA.js　　　　　　　　　　　　　　</span><br>
+　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfpLaTeX2A.js {#gd894185}
+### pdfpLaTeX2.js {#ia1c6201}
 
 ***
 
@@ -120,27 +118,25 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex -guess-input-enc";
+  var latex = "platex -synctex=1 -guess-input-enc";
   var encoding = document.Encoding;
   if (encoding == meEncodingAutomatic) {
-    latex = "platex -guess-input-enc";
+    latex = "platex -synctex=1 -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis";
   } else if (encoding == meEncodingEUC) {
-    latex = "platex -no-guess-input-enc -kanji=euc";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
-    latex = "platex -no-guess-input-enc -kanji=sjis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis";
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
-    latex = "platex -no-guess-input-enc -kanji=utf8";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX2A", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX2", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -152,7 +148,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeX2A.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfpLaTeX2.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -170,14 +166,14 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A.js 　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX2.js　 　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfeupLaTeXA.js {#hdc45060}
+### pdfeupLaTeX.js {#cca95ce9}
 
 ***
 
@@ -189,13 +185,11 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "euplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -207,7 +201,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -225,15 +219,15 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeXA.js　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfeupLaTeX2A.js {#r820202a}
+### pdfeupLaTeX2.js {#s6641f74}
 
 ***
 
@@ -245,14 +239,12 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "euplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX2A", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX2", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -264,7 +256,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2A.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -282,16 +274,16 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2A.js　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfLaTeXA.js {#u17bbe76}
+### pdfLaTeX.js {#a177f996}
 
 ***
 
@@ -303,12 +295,10 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+  var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + pdflatex;
 
-  var button = wshShell.Popup(cmd, 0, "pdfLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -320,7 +310,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -338,17 +328,17 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfLaTeXA.js 　　　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfLaTeX.js　 　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### LuaLaTeXA.js {#k5350e5c}
+### LuaLaTeX.js {#a56da2a2}
 
 ***
 
@@ -360,12 +350,10 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var pdflatex = "lualatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+  var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + lualatex;
 
-  var button = wshShell.Popup(cmd, 0, "LuaLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "LuaLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -377,7 +365,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で LuaLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で LuaLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -395,18 +383,18 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　pdfLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">LuaLaTeXA.js　　　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">LuaLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### XeLaTeXA.js {#hbb42785}
+### XeLaTeX.js {#x3721d4b}
 
 ***
 
@@ -418,12 +406,10 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var pdflatex = "xelatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "echo exit | pdfdde";
-  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+  var xelatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + xelatex;
 
-  var button = wshShell.Popup(cmd, 0, "XeLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "XeLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -435,7 +421,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で XeLaTeXA.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で XeLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -453,13 +439,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　pdfLaTeXA.js<br>
-　　　LuaLaTeXA.js<br>
-　　　<span style="color:White;background-color:#1188FF;">XeLaTeXA.js　　　　　　　　　　　　　　</span><br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">XeLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -523,13 +509,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　pdfLaTeXA.js<br>
-　　　LuaLaTeXA.js<br>
-　　　XeLaTeXA.js<br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　XeLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -581,13 +567,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　pdfLaTeXA.js<br>
-　　　LuaLaTeXA.js<br>
-　　　XeLaTeXA.js<br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　XeLaTeX.js<br>
 　　　pBibTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">upBibTeX.js　　　　　　　　　　　　　　　　</span><br>
 
@@ -653,13 +639,13 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
-　　　pdfpLaTeXA.js<br>
-　　　pdfpLaTeX2A.js<br>
-　　　pdfeupLaTeXA.js<br>
-　　　pdfeupLaTeX2A.js<br>
-　　　pdfLaTeXA.js<br>
-　　　LuaLaTeXA.js<br>
-　　　XeLaTeXA.js<br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　XeLaTeX.js<br>
 　　　pBibTeX.js<br>
 　　　upBibTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">Mendex.js　　　　　　　　　　　　　　　　　</span><br>
@@ -667,6 +653,68 @@ main();
 <br>
 
 ***
+
+### TeXworks.js {#a5baaf50}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var pdfFile = ["\"", b, ".pdf", "\""].join("");
+  var texworks = "start C:/w32tex/share/texworks/TeXworks.exe" + " " + pdfFile;
+  var cmd = "cmd /c " + cd + " && " + texworks;
+
+  wshShell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で TeXworks.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#AA77FF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+
+<br>
+
+　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+O</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfeupLaTeX.js<br>
+　　　pdfeupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　XeLaTeX.js<br>
+　　　pBibTeX.js<br>
+　　　upBibTeX.js<br>
+　　　Mendex.js<br>
+　　　<span style="color:White;background-color:#1188FF;">TeXworks.js　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+## その他の便利な TeX 用マクロ {#w4fa8cd3}
 
 ### MeryからTeXのコンパイル＆PDF生成ができるようにする (LaTeXMacro.js + makepdf.ps1) {#n2ac0dc8}
 
@@ -748,9 +796,248 @@ LaTeX の
 - 「/fd」でファイルから検索ダイアログ表示。
 - 「/ti」でタスクトレイアイコンで起動（スタートアップとかにショートカット作るため）
 
+## Adobe Reader との連携 {#efc77172}
+
+### pdfpLaTeXA.js {#h14da8ca}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -guess-input-enc";
+  var encoding = document.Encoding;
+  if (encoding == meEncodingAutomatic) {
+    latex = "platex -guess-input-enc";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -no-guess-input-enc -kanji=jis";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -no-guess-input-enc -kanji=euc";
+  } else if (encoding == meEncodingSJIS) {
+    latex = "platex -no-guess-input-enc -kanji=sjis";
+  } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
+    latex = "platex -no-guess-input-enc -kanji=utf8";
+  }
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "pdfpLaTeXA", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfpLaTeX2A.js {#gd894185}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -guess-input-enc";
+  var encoding = document.Encoding;
+  if (encoding == meEncodingAutomatic) {
+    latex = "platex -guess-input-enc";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -no-guess-input-enc -kanji=jis";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -no-guess-input-enc -kanji=euc";
+  } else if (encoding == meEncodingSJIS) {
+    latex = "platex -no-guess-input-enc -kanji=sjis";
+  } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
+    latex = "platex -no-guess-input-enc -kanji=utf8";
+  }
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | bkmk2uni > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX2A", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfeupLaTeXA.js {#hdc45060}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeXA", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfeupLaTeX2A.js {#r820202a}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX2A", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfLaTeXA.js {#u17bbe76}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "pdfLaTeXA", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### LuaLaTeXA.js {#k5350e5c}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "LuaLaTeXA", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### XeLaTeXA.js {#hbb42785}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
+
+  var button = wshShell.Popup(cmd, 0, "XeLaTeXA", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
 ## SumatraPDF との連携 {#ra6f502f}
 
 ### forward search {#t56d91ba}
+
+[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
 #### fwdsumatrapdf.js {#a81d6b86}
 
@@ -786,6 +1073,73 @@ C:\Mery\Mery.exe /l %l "%f"
 ```
 
 ## dviout との連携 {#fee7abf9}
+
+### pLaTeX.js {#jc3b9e8f}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -src-specials -guess-input-enc";
+  var encoding = document.Encoding;
+  if (encoding == meEncodingAutomatic) {
+    latex = "platex -src-specials -guess-input-enc";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=jis";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=euc";
+  } else if (encoding == meEncodingSJIS) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=sjis";
+  } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=utf8";
+  }
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex;
+
+  var button = wshShell.Popup(cmd, 0, "pLaTeX", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### eupLaTeX.js {#i30bcc08}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "euplatex -src-specials -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex;
+
+  var button = wshShell.Popup(cmd, 0, "eupLaTeX", 1);
+  if (button == 1) {
+    document.Save();
+    wshShell.Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
 
 ### forward search {#x84b65ee}
 
