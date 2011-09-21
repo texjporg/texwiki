@@ -44,6 +44,7 @@ pukiwiki: "秀丸エディタ"
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [祝鳥とは - はてなキーワード](http://d.hatena.ne.jp/keyword/%BD%CB%C4%BB)
     - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html)
+    - [tex - 松村俊和のページ：日記](http://be-sp.com/matsut/cat_tex.html)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
     - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
     - [TeX---小技集（祝鳥関連）](http://imi.kyushu-u.ac.jp/~ssaito/jpn/tex/tips/nori.html)
