@@ -26,7 +26,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 
 ツールの設定をすると TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
 
-### pdfpLaTeXA {#v2edf4e6}
+### pdfpLaTeX {#v2edf4e6}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -41,7 +41,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfpLaTeXA</ins><br>
+　　　　　<ins>pdfpLaTeX</ins><br>
 
 <br>
 
@@ -55,7 +55,7 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -91,12 +91,12 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfpLaTeXA\]
-- エディタ画面を右クリック → \[pdfpLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX\]
+- エディタ画面を右クリック → \[pdfpLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfpLaTeX2A {#fcfb987f}
+### pdfpLaTeX2 {#fcfb987f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -111,7 +111,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfpLaTeX2A</ins><br>
+　　　　　<ins>pdfpLaTeX2</ins><br>
 
 <br>
 
@@ -125,7 +125,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -161,12 +161,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfpLaTeX2A\]
-- エディタ画面を右クリック → \[pdfpLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX2\]
+- エディタ画面を右クリック → \[pdfpLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeXA {#z539757a}
+### pdfeupLaTeX {#z539757a}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -181,7 +181,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeXA</ins><br>
+　　　　　<ins>pdfeupLaTeX</ins><br>
 
 <br>
 
@@ -195,7 +195,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -231,12 +231,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeXA\]
-- エディタ画面を右クリック → \[pdfeupLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
+- エディタ画面を右クリック → \[pdfeupLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2A {#h1563ac2}
+### pdfeupLaTeX2 {#h1563ac2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -251,7 +251,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX2A</ins><br>
+　　　　　<ins>pdfeupLaTeX2</ins><br>
 
 <br>
 
@@ -265,7 +265,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -301,12 +301,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2A\]
-- エディタ画面を右クリック → \[pdfeupLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
+- エディタ画面を右クリック → \[pdfeupLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfLaTeXA {#jef6ef8d}
+### pdfLaTeX {#jef6ef8d}
 
 <em>※注意</em>
 
@@ -325,7 +325,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfLaTeXA</ins><br>
+　　　　　<ins>pdfLaTeX</ins><br>
 
 <br>
 
@@ -339,7 +339,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; pdflatex -synctex=1 "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -375,12 +375,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + H を押す
-- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
-- エディタ画面を右クリック → \[pdfLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfLaTeX\]
+- エディタ画面を右クリック → \[pdfLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### LuaLaTeXA {#m4ea741f}
+### LuaLaTeX {#m4ea741f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -395,7 +395,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>LuaLaTeXA</ins><br>
+　　　　　<ins>LuaLaTeX</ins><br>
 
 <br>
 
@@ -409,7 +409,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; lualatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; lualatex -synctex=1 "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -445,12 +445,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + U を押す
-- メニューの \[ツール(T)\] → \[LuaLaTeXA\]
-- エディタ画面を右クリック → \[LuaLaTeXA\]
+- メニューの \[ツール(T)\] → \[LuaLaTeX\]
+- エディタ画面を右クリック → \[LuaLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### XeLaTeXA {#o8a87f15}
+### XeLaTeX {#o8a87f15}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -465,7 +465,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>XeLaTeXA</ins><br>
+　　　　　<ins>XeLaTeX</ins><br>
 
 <br>
 
@@ -479,7 +479,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; xelatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; xelatex -synctex=1 "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -515,8 +515,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + I を押す
-- メニューの \[ツール(T)\] → \[XeLaTeXA\]
-- エディタ画面を右クリック → \[XeLaTeXA\]
+- メニューの \[ツール(T)\] → \[XeLaTeX\]
+- エディタ画面を右クリック → \[XeLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -724,6 +724,76 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[Mendex\]
 - エディタ画面を右クリック → \[Mendex\]
 
+### TeXworks {#r0d38b75}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(A)...\] をクリックし，「ツールのプロパティ」ウィンドウで以下の値を入力し，\[OK\] を押します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>TeXworks</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; start C:\w32tex\share\texworks\TeXworks.exe "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ツール\]</ins></span><strong>\[オプション\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　表示
+
+　　　　　 ☑ツールを有効にする(E)<br>
+　　　　　 ☑メインメニューに表示する(M)<br>
+　　　　　 ☑ポップアップメニューに表示する(P)<br>
+
+　　　　　　 ツールのグループ番号(N):　　<span style="color:Black;background-color:#EEEEEE;">\[グループ１　　　　　　▼\]</span><br>
+
+　　　　　 ☐ツールバーに表示する(T)<br>
+
+　　　　　　 アイコン(I):<br>
+
+　　　　起動
+
+　　　　　 ☑実行時にテキストを保存する(S)<br>
+
+　　　　　 ショートカット(H):　<ins>Ctrl + Alt + O</ins><br>
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + O を押す
+- メニューの \[ツール(T)\] → \[TeXworks\]
+- エディタ画面を右クリック → \[TeXworks\]
+
 ## スクリプト {#xc599345}
 
 ### Happy {#h82187a0}
@@ -731,6 +801,246 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
+## Adobe Reader との連携 {#sc092542}
+
+### pdfpLaTeXA {#p012d18c}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfpLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### pdfpLaTeX2A {#h36e49e9}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfpLaTeX2A</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### pdfeupLaTeXA {#x56aa2c5}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfeupLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### pdfeupLaTeX2A {#fa6daa54}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfeupLaTeX2A</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### pdfLaTeXA {#dbb7593c}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>pdfLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; pdflatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### LuaLaTeXA {#l425f0aa}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>LuaLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; lualatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
+
+### XeLaTeXA {#c6473a8d}
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">ツールのプロパティ</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　<strong>\[ツール\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[オプション\]\[自動実行\]\[文書タイプ\]</ins></span>
+
+　　　　設定
+
+　　　　　タイトル(T):<br>
+　　　　　<ins>XeLaTeXA</ins><br>
+
+<br>
+
+　　　　　実行ファイル(P):<br>
+　　　　　<ins>cmd</ins><br>
+
+<br>
+
+　　　　　作業フォルダ(F):<br>
+
+<br>
+
+　　　　　コマンドラインパラメータ(C):<br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; xelatex "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+
+<br>
+
+　　　　　　<span style="color:#441177;">※ 実行ファイルにキーマクロファイルやスクリプトファイルを指定すると</span><br>
+　　　　　　<span style="color:#441177;">　　それらを実行することができます．</span><br>
+
+***
 
 ## SumatraPDF との連携 (inverse search) {#a69fbb89}
 
