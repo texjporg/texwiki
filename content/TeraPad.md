@@ -95,7 +95,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 
 ツールの設定をすると VxEditor と同様に，LaTeX 環境を簡単に作ることができます．
 
-### pdfpLaTeXA {#m290fc57}
+### pdfpLaTeX {#m290fc57}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -108,13 +108,13 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfpLaTeXA</ins>
+　　　 <ins>pdfpLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -136,13 +136,13 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfpLaTeXA</ins>
+　　　 <ins>pdfpLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -jobname="%b" "%b"};if($?){dvipdfmx "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -160,18 +160,18 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 次のうちのどれかを実行
 
 - Ctrl + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfpLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
 #### 簡単なテスト {#t51caf81}
 
 1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け， terapad.tex という名前で保存します．
-1. Ctrl + Alt + J を押すと PDF ファイルが作成され，表示されます．
-1. もう一度 Ctrl + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成され，表示されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
+1. Ctrl + Alt + J を押すと PDF ファイルが作成されます．
+1. もう一度 Ctrl + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
-### pdfpLaTeX2A {#g1f54992}
+### pdfpLaTeX2 {#g1f54992}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -184,13 +184,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfpLaTeX2A</ins>
+　　　 <ins>pdfpLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -212,13 +212,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfpLaTeX2A</ins>
+　　　 <ins>pdfpLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -jobname="%b" "%b"};if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -236,12 +236,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Ctrl + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfpLaTeX2A\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfpLaTeX2\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfpLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeXA {#w969cf5c}
+### pdfeupLaTeX {#w969cf5c}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -254,13 +254,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeXA</ins>
+　　　 <ins>pdfeupLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -282,13 +282,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeXA</ins>
+　　　 <ins>pdfeupLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -306,12 +306,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2A {#b29609f2}
+### pdfeupLaTeX2 {#b29609f2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -324,13 +324,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2A</ins>
+　　　 <ins>pdfeupLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -352,13 +352,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2A</ins>
+　　　 <ins>pdfeupLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -376,12 +376,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2A\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2A\]
+- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfLaTeXA {#m56b7465}
+### pdfLaTeX {#m56b7465}
 
 <em>※注意</em>
 
@@ -398,13 +398,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfLaTeXA</ins>
+　　　 <ins>pdfLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; pdflatex -synctex=1 "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -426,13 +426,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfLaTeXA</ins>
+　　　 <ins>pdfLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; pdflatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){pdflatex -synctex=1 "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -450,12 +450,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + H を押す
-- メニューの \[ツール(T)\] → \[pdfLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfLaTeXA\]
+- メニューの \[ツール(T)\] → \[pdfLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### LuaLaTeXA {#qf42e8ee}
+### LuaLaTeX {#qf42e8ee}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -468,13 +468,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>LuaLaTeXA</ins>
+　　　 <ins>LuaLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; lualatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; lualatex -synctex=1 "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -496,13 +496,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>LuaLaTeXA</ins>
+　　　 <ins>LuaLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; lualatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){lualatex -synctex=1 "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -520,12 +520,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + U を押す
-- メニューの \[ツール(T)\] → \[LuaLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[LuaLaTeXA\]
+- メニューの \[ツール(T)\] → \[LuaLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[LuaLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### XeLaTeXA {#h71b9f3f}
+### XeLaTeX {#h71b9f3f}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -538,13 +538,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>XeLaTeXA</ins>
+　　　 <ins>XeLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; xelatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; xelatex -synctex=1 "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -566,13 +566,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>XeLaTeXA</ins>
+　　　 <ins>XeLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; xelatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){xelatex -synctex=1 "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -590,8 +590,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + I を押す
-- メニューの \[ツール(T)\] → \[XeLaTeXA\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[XeLaTeXA\]
+- メニューの \[ツール(T)\] → \[XeLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[XeLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -799,6 +799,76 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - メニューの \[ツール(T)\] → \[Mendex\]
 - エディタ画面を右クリック → \[ツール(S)\] → \[Mendex\]
 
+### TeXworks {#k4cd79b6}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+
+メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
+
+\[追加(I)...\] をクリックして，「ツールの編集」で以下の値を入力し，\[OK\] を押します．
+
+#### cmd の場合 {#cf0e929e}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>TeXworks</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; start C:\w32tex\share\texworks\TeXworks.exe "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#ma45fff4}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>TeXworks</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){start C:\w32tex\share\texworks\TeXworks.exe "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>　<ins>Ctrl + Alt + O</ins>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+次のうちのどれかを実行
+
+- Ctrl + Alt + O を押す
+- メニューの \[ツール(T)\] → \[TeXworks\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[TeXworks\]
+
 ## スクリプト {#d597deba}
 
 ### Happy {#mf4ce610}
@@ -806,6 +876,414 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
+## Adobe Reader との連携 {#gd42a4e2}
+
+### pdfpLaTeXA {#dbd7e90b}
+
+#### cmd の場合 {#b2756725}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfpLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#pd27ea7d}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfpLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### pdfpLaTeX2A {#m2f097ca}
+
+#### cmd の場合 {#xc83d946}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfpLaTeX2A</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#g11b580d}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfpLaTeX2A</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### pdfeupLaTeXA {#b3c1e6f0}
+
+#### cmd の場合 {#d8d6005a}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#ead7e722}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### pdfeupLaTeX2A {#k1e6741b}
+
+#### cmd の場合 {#p53490ba}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX2A</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#ua082538}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfeupLaTeX2A</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### pdfLaTeXA {#c03ffc44}
+
+#### cmd の場合 {#lb5f37ba}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; pdflatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#l60b27e5}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>pdfLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; pdflatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### LuaLaTeXA {#v7f75ca1}
+
+#### cmd の場合 {#ke666731}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>LuaLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; lualatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#u5c29a7e}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>LuaLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; lualatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+### XeLaTeXA {#he3358fc}
+
+#### cmd の場合 {#qd1c24d7}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>XeLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>cmd</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; xelatex "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
+
+#### Windows PowerShell の場合 {#h4b222d3}
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
+
+　　　 名前\["-"は区切り線\](N):<br>
+　　　 <ins>XeLaTeXA</ins>
+
+　　　 実行ファイル(E):<br>
+　　　 <ins>PowerShell</ins>
+
+　　　 コマンドラインパラメータ(C):<br>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; xelatex "%b";if($?){pdfopen --file "%b.pdf"}}"</ins>
+
+　　　 作業フォルダ(D):<br>
+
+<br>
+
+　　　 ファイルの上書き保存(S):　　　　 キー(K):<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[上書き保存する　　　　　　　▼\]</span>
+
+　　　 ☐非選択時は使用不可(H)　　　 ☑メインメニューに表示(M)<br>
+　　　 ☐起動時に実行(T)　　　　　　　　☑ポップアップメニューに表示(P)<br>
+　　　 ☐終了まで待機する(L)
+
+***
 
 ## SumatraPDF との連携 (inverse search) {#kdd43a4c}
 
