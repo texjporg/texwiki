@@ -767,7 +767,9 @@ WZ EDITOR をご覧ください．
 
 ## [MiKTeX](http://miktex.org/) {#x2459fb9}
 
-## Cygwin での ptetex のインストール {#h7017721}
+## Cygwin {#sfbd073e}
+
+### Cygwin での ptetex のインストール {#h7017721}
 
 Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
 TeX 環境を作るという手もあります。
