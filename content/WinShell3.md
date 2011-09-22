@@ -162,6 +162,8 @@ zip ファイルでインストールした場合は，展開したディレク�
 
 まずフォントの設定をします。
 
+Shift_JIS ではなく UTF-8 を使いたい場合は 不具合#Runtime Error! を参照してください．
+
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
