@@ -103,50 +103,51 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　W32TeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣　　　 ∣☑tex318w.zip　　　　　　　　　　　　　　無い　　　2.5MB<br>
 　　　　 ∣☑aleph-w32.tar.xz　　　　　　　　　　　無い　　　4.1MB　　　　　　 ∣<br>
-　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　Ghostscript<br>
-　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　13.6MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　429KB　　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
-　　　　 ∣☑dvi2ps-4.2j-w32.tar.xz　　　　　　　　無い　　　451KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
-　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　101KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
-　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
-　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　3.8MB　　　　　　∣<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　995KB　　　　　GSview<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　53.6MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　∣<br>
+　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　20.4MB　　　　Ghostscript<br>
+　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　14.1MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
+　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　429KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
+　　　　 ∣☑dvi2ps-4.2j-w32.tar.xz　　　　　　　　無い　　　451KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　101KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
+　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☑gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣<br>
+　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　GSview<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　988KB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　65.2MB　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　20.0MB　　 　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　∣<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
 　　　　 ∣☑otfdevel.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
-　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.5MB<br>
+　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.6MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
 　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　88KB<br>
-　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.6MB<br>
+　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.5MB<br>
 　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　595KB<br>
-　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　534KB<br>
+　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　536KB<br>
 　　　　 ∣☑t1fonts.tar.xz　　　　　　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑t1utils-w32.tar.xz　　　　　　　　　　無い　　　122KB<br>
+　　　　 ∣☑t1utils-w32.tar.xz　　　　　　　　　　無い　　　119KB<br>
 　　　　 ∣☑tex4htk-w32.tar.xz　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑texinfotools-w32.tar.xz　　　　　　　無い　　　2.4MB<br>
-　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　91KB<br>
+　　　　 ∣☑texinfotools-w32.tar.xz　　　　　　　無い　　　2.5MB<br>
+　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　92KB<br>
 　　　　 ∣☑timesnew.tar.xz　　　　　　　　　　　　無い　　　301KB<br>
 　　　　 ∣☑ttf2pk-w32.tar.xz　　　　　　　　　　　無い　　　273KB<br>
-　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　450KB<br>
+　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　445KB<br>
 　　　　 ∣☑txpx-pazofonts.tar.xz　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑txtutil.tar.xz　　　　　　　　　　　　　　無い　　　3KB<br>
 　　　　 ∣☑ums.tar.xz　　　　　　　　　　　　　　　無い　　　70KB<br>
-　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.6MB<br>
+　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.5MB<br>
 　　　　 ∣☑utf.tar.xz　　　　　　　　　　　　　　　　無い　　　706KB<br>
 　　　　 ∣☑vf-a2bk.tar.xz　　　　　　　　　　　　　無い　　　10KB<br>
 　　　　 ∣☑vf-n2bk.tar.xz　　　　　　　　　　　　　無い　　　13KB<br>
-　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　18.8MB<br>
-　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　15.6MB<br>
-　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　13.1MB<br>
+　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.4MB<br>
+　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　15.5MB<br>
+　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　13.9MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
 
 ***
