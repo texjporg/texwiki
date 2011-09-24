@@ -14,6 +14,8 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
 環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，テスト結果が集まれば，手軽なインストール方法として活用できるかと思います。
 
+### 注意事項 {#bb499d3c}
+
 <span style="color:Red;"><strong>0.81r5 以前のバージョンを使っている方へ</strong></span><br>
 
 <span style="color:Red;"><strong>&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．最新版にアップデートしてください．</strong></span><br>
@@ -21,6 +23,8 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 <span style="color:Red;"><strong>0.81r2 以前のバージョンを使っている方へ</strong></span><br>
 
 <span style="color:Red;"><strong>W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.cnf がない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=590) などのエラーが発生するので，設定ファイル (abtexinst.ini) を削除して最新版にアップデートしてください．</strong></span><br>
+
+### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 の実行方法は，リンク先から "abtexinst_0_81r7.zip" をダウンロードし，これを展開（解凍）します。そして "abtexinst.exe" を実行し，指示に従ってインストールします。
