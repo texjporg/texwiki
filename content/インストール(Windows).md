@@ -724,6 +724,10 @@ Masamichi をご覧ください．
 
 TeXE をご覧ください．
 
+#### Mery + マクロ {#oab02ae1}
+
+Mery#マクロ をご覧ください．
+
 #### TeraPad + ツール {#a652512f}
 
 TeraPad#ツール をご覧ください．
@@ -731,10 +735,6 @@ TeraPad#ツール をご覧ください．
 #### VxEditor + ツール {#eaa0beaf}
 
 VxEditor#ツール をご覧ください．
-
-#### Mery + マクロ {#oab02ae1}
-
-Mery#マクロ をご覧ください．
 
 ### シェアウェア {#yec6bbe1}
 
