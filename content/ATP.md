@@ -89,11 +89,43 @@ Vim を起動し
 filetype plugin on
 filetype indent on
 syntax on
+let g:atp_folding = 1
+let g:atp_fold_environments = 1
 ```
 
 ***
 
 ## 使い方 {#w8da234e}
+
+### 折りたたみ {#dcf34c0d}
+
+デフォルトでは折りたたみは off になっています．
+
+```
+let g:atp_folding = 1
+```
+
+を追加すると折りたたみが on になります．
+
+environments の折りたたみ を on にする場合は
+
+```
+let g:atp_fold_environments = 1
+```
+
+を追加します．
+
+カーソル位置の折りたたみを開く場合は &lt;Space> で代用できます．
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
+> <tr><td>&lt;Space&gt;</td><td>カーソル位置の折りたたみを開いて桁を1つ進める</td></tr>
+> </tbody>
+> </table>
+>
+
+[Vim#使い方#折りたたみ](/Vim/#ff31000b) も参照してください．
 
 ### コンパイル・プレビュー {#x0397616}
 
@@ -117,7 +149,7 @@ syntax on
 
 ***
 
-ATP 10.3 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
+ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
 コンパイル・プレビューは OMake や latexmk を使ってください．<br>
 簡単すぎて身長が伸びるかも．[^1]<br>
 
