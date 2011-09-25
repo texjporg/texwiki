@@ -92,13 +92,14 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-### 日本語化ファイル {#i83c37b0}
-
-- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
-    - [jp_JP.txt](http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt) (Google キャッシュ)
-
-WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
-ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．
+<!-- **日本語化ファイル [#i83c37b0] -->
+<!--  -->
+<!-- -[[WinShell3日本語化:http://redmine.nnnnn.me/projects/winshell/files]] -->
+<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
+<!--  -->
+<!-- [[( ﾟÅﾟ)んー？誰ｄｓｋ？:http://twitter.com/whoami]] さんが WinShell3日本語化ファイルを公開されています．~ -->
+<!-- WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．~ -->
+<!-- ダウンロードしたファイルは WinShell の Translations フォルダに置いてください． -->
 
 ## 設定 {#h3ab6f8d}
 
@@ -1705,3 +1706,727 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 ```
 
 　　正常動作しました
+
+## WinShell3日本語化ファイル {#sd834cff}
+
+WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれを jp_JP.txt というファイル名で保存してください．<br>
+保存するときには，文字コードを Shift_JIS, 改行コードを CRLF で保存してください．<br>
+jp_JP.txt は WinShell の Translations フォルダに置いてください．<br>
+
+***
+
+- jp_JP.txt
+
+***
+
+```
+############################################
+#  WARNING!!
+#  THIS IS NOT AN OFFICIAL TRANSLATION FILE
+############################################
+# 11/12/2010   nnnnn.me: update for WinShell 3.3.2.1
+# 01/20/2010   translated some features for WinShell 3.3.1.4
+#
+# Japanese translation file for WinShell
+#
+#
+# 11/28/2008   Haruhiko Okumura: update for WinShell 3.3
+# 04/28/2007   Haruhiko Okumura: update for WinShell 3.2
+# 05/07/2006   Haruhiko Okumura: update
+# 06/15/2005   Ingo H. de Boer: copied from original WinShell 2.6 DLL, translated by Suzumizaki Kimitaka, am17 and Haruhiko Okumura
+#
+#
+BEGIN_MENU
+#
+# File menu
+#
+ID_FILE_MENU                     == ファイル(&F)
+ID_FILE_NEW                      == 新規
+ID_FILE_NEW_TEXDOC               == &TeX文書\tCtrl+N
+ID_FILE_NEW_BIBTEXDOC            == &BibTeX文書
+ID_FILE_OPEN                     == 開く(&O)...\tCtrl+O
+ID_FILE_CLOSE                    == 閉じる(&C)\tCtrl+W
+ID_FILE_SAVE                     == 保存(&S)\tCtrl+S
+ID_FILE_SAVE_AS                  == 別名で保存(&A)...
+ID_FILE_SAVE_ALL                 == 全保存(&L)
+ID_FILE_PRINT                    == 印刷(&P)...\tCtrl+P
+ID_FILE_PRINT_SETUP              == 印刷設定(&U)...
+ID_FILE_LAST_FILE                == 最近開いたファイル
+ID_FILE_EXIT                     == 終了(&E)
+#
+# Edit menu
+#
+ID_EDIT_MENU                     == 編集(&E)
+ID_EDIT_UNDO                     == 元に戻す(&U)\tCtrl+Z
+ID_EDIT_REDO                     == 再実行(&R)\tCtrl+Y
+ID_EDIT_CUT                      == 切り取り(&T)\tCtrl+X
+ID_EDIT_COPY                     == コピー(&C)\tCtrl+C
+ID_EDIT_PASTE                    == 貼り付け(&P)\tCtrl+V
+ID_EDIT_DELETE                   == 削除(&D)\tDel
+ID_EDIT_SELECT_ALL               == 全選択(&A)\tCtrl+A
+ID_EDIT_COMMENTOUT               == 注釈/注釈の解除(&M)\tCtrl+K
+ID_EDIT_SPLITPARAGRAPH           == 段落の分割(&S)\tCtrl+T
+ID_EDIT_JOINPARAGRAPH            == 段落の統合(&J)\tCtrl+J
+#
+# Search menu
+#
+ID_SEARCH_MENU                   == 検索(&F)
+ID_SEARCH_FIND                   == 検索(&F)...\tCtrl+F
+ID_SEARCH_FINDNEXT               == 次を検索(&N)\tF3
+ID_SEARCH_REPLACE                == 置換(&R)...\tCtrl+H
+ID_SEARCH_FINDFILES              == ファイル群から検索(&I)...\tCtrl+Shift+F
+ID_SEARCH_GOTOLINE               == 指定行へ移動(&G)\tCtrl+G
+#
+# Execute menu
+#
+ID_EXECUTE_MENU                  == 実行(&X)
+ID_EXECUTE_LATEX                 == &LaTeX\tF5
+ID_EXECUTE_BIBTEX                == &BibTeX\tF6
+ID_EXECUTE_DVIVIEW               == &DVI閲覧\tF7
+ID_EXECUTE_DVIPS                 == DVI -> &PS\tF8
+ID_EXECUTE_GSVIEW                == &GSView(PS閲覧)\tF9
+ID_EXECUTE_PDFLATEX              == PD&FLaTeX\tF10
+ID_EXECUTE_PDFVIEW               == PDF閲覧(&V)\tF11
+ID_EXECUTE_SPELLCHECK            == スペルチェック(&S)...\tF12
+ID_EXECUTE_TABLEWIZARD           == 表の作成(&T)...
+#
+# Options menu
+#
+ID_OPTIONS_MENU                  == オプション(&O)
+ID_OPTIONS_GENERAL               == 全般(&G)...
+ID_OPTIONS_PROGCALLS             == TeX関連プログラム設定(&P)...
+ID_OPTIONS_USERPROGS             == ユーザ指定プログラム(&U)...
+ID_OPTIONS_MACROS                == マクロ(&M)...
+ID_OPTIONS_LANGUAGE              == 言語(&L)...
+ID_OPTIONS_FONTS                 == フォント(&F)...
+ID_OPTIONS_SYNTAXHL              == 強調表示(&H)...
+ID_OPTIONS_WRAP                  == 折返しモード(&W)
+ID_OPTIONS_LINENUMBERS           == 行番号(&N)
+ID_OPTIONS_FOLDING               == 折りたたみ
+ID_OPTIONS_AUTOSPELLCHECK        == 自動スペルチェック(&A)
+ID_OPTIONS_VIEW_MENU             == 表示(&V)
+ID_OPTIONS_VIEW_CUSTOMIZE        == ユーザ設定(&C)...
+ID_OPTIONS_VIEW_PROJECTWINDOW    == プロジェクトウィンドウ(&P)
+ID_OPTIONS_VIEW_OUTPUTWINDOW     == 出力ウィンドウ(&O)
+ID_OPTIONS_VIEW_TOOLBAR          == ツールバー(&T)
+ID_OPTIONS_VIEW_STATUSBAR        == ステータスバー(&S)
+ID_OPTIONS_VIEW_ARROWBAR         == 矢印(&W)
+ID_OPTIONS_VIEW_BINARYBAR        == 二項演算子(&B)
+ID_OPTIONS_VIEW_ACCENTSBAR       == アクセント(&A)
+ID_OPTIONS_VIEW_RELATIONSBAR     == 関係子(&R)
+ID_OPTIONS_VIEW_GREEKBAR         == ギリシア文字(&G)
+ID_OPTIONS_VIEW_MISCBAR          == その他(&I)
+ID_OPTIONS_VIEW_MACROSBAR        == マクロ(&M)
+#
+# Project menu
+#
+ID_PROJECT_MENU                  == プロジェクト(&P)
+ID_PROJECT_NEW                   == 新規プロジェクト(&N)...
+ID_PROJECT_LOAD                  == プロジェクトの呼び出し(&O)...
+ID_PROJECT_CLOSE                 == プロジェクトを閉じる(&C)
+ID_PROJECT_SAVE                  == プロジェクトの保存(&S)
+ID_PROJECT_SAVEAS                == 別名でプロジェクトの保存(&A)...
+ID_PROJECT_ADD_MENU              == 追加(&D)
+ID_PROJECT_ADD_MAIN              == 主となるTeX文書(&M)...
+ID_PROJECT_ADD_TEX               == &TeX文書...
+ID_PROJECT_ADD_BIBTEX            == &BibTeX文書...
+#
+# Window menu
+#
+ID_WINDOW_MENU                   == ウィンドウ(&W)
+ID_WINDOW_SPLIT                  == 分割(&P)
+ID_WINDOW_TILE_VERTICAL          == 垂直タイル(&V)
+ID_WINDOW_TILE_HORIZONTAL        == 水平タイル(&H)
+#
+# Help menu
+#
+ID_HELP_MENU                     == ヘルプ(&H)
+ID_HELP_TOPICS                   == ヘルプトピック(&H)...
+ID_HELP_LATEX                    == &LaTeX2eのヘルプ...
+ID_HELP_CHECKFORUPDATES          == アップデートの確認(&C)...
+ID_HELP_INFO                     == WinShellについて(&I)...
+#
+# Output window
+#
+ID_POPUP_OUTPUTW_COPY            == コピー(&C)
+ID_POPUP_OUTPUTW_CLEAR           == クリア(&L)
+ID_POPUP_OUTPUTW_OUTPUT          == 出力
+ID_POPUP_OUTPUTW_LOG             == ログ
+ID_POPUP_OUTPUTW_SEARCHRESULTS   == 検索結果
+ID_POPUP_OUTPUTW_TASKS           == タスク
+#
+# Project window
+#
+ID_POPUP_PROJECTW_ACTIVATE       == アクティブにする(&A)
+ID_POPUP_PROJECTW_REMOVE         == 削除(&D)
+ID_POPUP_PROJECTW_RELOAD         == 再読み込み(&R)
+ID_POPUP_PROJECTW_TOOLTIPS       == ツールチップ(&I)
+ID_POPUP_PROJECTW_SORT           == ソート(&S)
+ID_POPUP_PROJECTW_INSERTREF      == 参照の挿入(&n)
+ID_POPUP_PROJECTW_INSERTCITE     == 引用の挿入(&n)
+ID_POPUP_PROJECTW_SORTBYAUTHOR   == 著者名でソート(&S)
+ID_POPUP_PROJECTW_SHOWALLBIB     == 全て表示(&A)
+#
+# MDI Tab
+#
+ID_POPUP_TAB_WINDOW_SPLIT        == ウィンドウ分割(&W)
+ID_POPUP_TAB_WINDOW_TEXTVIEW     == テキスト表示(&T)
+ID_POPUP_TAB_WINDOW_FRONTENDVIEW == エディタ表示(&F)
+#
+# Toolbar customization
+#
+ID_POPUP_TOOLBAR_DELETE          == 削除(&D)
+ID_POPUP_TOOLBAR_EDIT            == 編集(&E)...
+ID_POPUP_TOOLBAR_IMAGE           == 画像(&I)
+ID_POPUP_TOOLBAR_TEXT            == テキスト(&T)
+ID_POPUP_TOOLBAR_IMAGEANDTEXT    == 画像とテキスト(&A)
+ID_POPUP_TOOLBAR_GROUP           == グループ(&G)
+#
+# Spelling
+#
+ID_POPUP_SPELL_IGNOREALL         == すべて無視(&G)
+ID_POPUP_SPELL_LANGUAGE          == 言語(&L)
+ID_POPUP_SPELL_DIALOG            == スペルチェック(&S)...
+ID_POPUP_SPELL_MORE_SUGGESTIONS  == もっと代案(&M)
+ID_POPUP_SPELL_DICTIONARY_ADD    == 辞書登録(&y)
+ID_POPUP_SPELL_DICTIONARY_EDIT   == 辞書編集(&i)...
+#
+# BibTeX
+#
+ID_POPUP_BIBTEX_NEW_ENTRY        == 新しい項目(&N)\tCtrl+I
+ID_POPUP_BIBTEX_EDIT_STRINGS     == 文字列を編集(&S)...
+ID_POPUP_BIBTEX_EDIT_PREAMBLE    == プリアンブルを編集(&r)...
+ID_POPUP_BIBTEX_EDIT_TYPESFIELDS == 型とフィールドを編集(&y)...
+#
+END_MENU
+
+BEGIN_STRINGTABLE
+#
+# File menu messages
+#
+ID_FILE_NEW_TEXDOC               == TeX文書を新規作成します\n新規TeX文書
+ID_FILE_NEW_BIBTEXDOC            == BibTeX文書を新規作成します\n新規BibTeX文書
+ID_FILE_OPEN                     == 既存の文書を開きます\n開く
+ID_FILE_CLOSE                    == 編集中の文書を閉じます\n閉じる
+ID_FILE_SAVE                     == 編集中の文書を保存します\n保存
+ID_FILE_SAVE_AS                  == 編集中の文書を別名で保存します\n別名で保存
+ID_FILE_SAVE_ALL                 == 編集中のすべての文書を保存\n全保存
+ID_FILE_PRINT                    == 編集中の文書を印刷します\n印刷
+ID_FILE_PRINT_SETUP              == プリンタ・印刷オプションの変更\n印刷設定
+ID_FILE_LAST_FILE                == 過去に開いたファイルを開きます
+ID_FILE_EXIT                     == WinShellを終了します\n終了
+#
+# Edit menu messages
+#
+ID_EDIT_UNDO                     == 最後に行った変更を戻します\n元に戻す
+ID_EDIT_REDO                     == 最後に行った変更を再実行します\n再実行
+ID_EDIT_CUT                      == 選択部分をクリップボードに移動します\n切り取り
+ID_EDIT_COPY                     == 選択部分をクリップボードにコピーします\nコピー
+ID_EDIT_PASTE                    == クリップボードの内容を挿入します\n貼り付け
+ID_EDIT_DELETE                   == 選択部分を削除します\n削除
+ID_EDIT_SELECT_ALL               == 全てを選択します\n全選択
+ID_EDIT_COMMENTOUT               == 選択したテキストを注釈にしたり解除したりします\n注釈化/注釈解除
+ID_EDIT_SPLITPARAGRAPH           == 選択した段落を任意の幅で改行する\n段落の分割
+ID_EDIT_JOINPARAGRAPH            == 選択した行を1つの段落に統合する\n段落の統合
+#
+# Search menu messages
+#
+ID_SEARCH_FIND                   == 指定の文字列を探します\n検索
+ID_SEARCH_FINDNEXT               == 検索を繰り返します\n次を検索
+ID_SEARCH_REPLACE                == 指定された文字列を他の文字列に置き換えます\n置換
+ID_SEARCH_FINDFILES              == ファイル群から指定テキストを検索\nファイル群から検索
+ID_SEARCH_GOTOLINE               == # 行目に移動します\n# 行目に移動
+#
+# Execute menu messages
+#
+ID_EXECUTE_LATEX                 == LaTeXの実行\nLaTeX
+ID_EXECUTE_BIBTEX                == BibTeXの実行\nBibTeX
+ID_EXECUTE_DVIVIEW               == DVI閲覧ソフトを起動\nDVI閲覧
+ID_EXECUTE_DVIPS                 == DVIPSの実行\nDVIPS
+ID_EXECUTE_GSVIEW                == GSViewの実行\nGSView
+ID_EXECUTE_PDFLATEX              == PDFLaTeXの実行\nPDFLaTeX
+ID_EXECUTE_PDFVIEW               == PDFViewの実行\nPDFView
+ID_EXECUTE_SPELLCHECK            == スペルチェッカの実行\nスペルチェッカ
+ID_EXECUTE_TABLEWIZARD           == 表作成ウィザードを実行\n表作成
+#
+# Options menu messages
+#
+ID_OPTIONS_GENERAL               == WinShell全般についてのオプション\nオプション-全般
+ID_OPTIONS_PROGCALLS             == プログラムの呼び出し\nプログラムの呼び出し
+ID_OPTIONS_USERPROGS             == ユーザプログラムを指定\nユーザプログラム指定
+ID_OPTIONS_MACROS                == マクロの設定\nマクロ
+ID_OPTIONS_LANGUAGE              == WinShellユーザインターフェースとスペルチェッカの言語を選ぶ\n言語
+ID_OPTIONS_FONTS                 == 文書とウィンドウのフォントを選ぶ\nフォント
+ID_OPTIONS_SYNTAXHL              == 強調表示をするかどうかを指定します\n強調表示
+ID_OPTIONS_WRAP                  == 行の折返し設定/解除\n折返し
+ID_OPTIONS_LINENUMBERS           == 行番号表示/非表示\n行番号
+ID_OPTIONS_FOLDING               == 折りたたみ設定/解除\n折りたたみ
+ID_OPTIONS_AUTOSPELLCHECK        == 自動スペルチェックのオン/オフ\n自動スペルチェック
+ID_OPTIONS_VIEW_CUSTOMIZE        == ツールバーのカスタマイズ\nカスタマイズ
+ID_OPTIONS_VIEW_PROJECTWINDOW    == プロジェクトウィンドウの表示/非表示\nプロジェクト窓表示/非表示
+ID_OPTIONS_VIEW_OUTPUTWINDOW     == 出力ウィンドウの表示/非表示\n出力窓表示/非表示
+ID_OPTIONS_VIEW_TOOLBAR          == ツールバーの表示/非表示\nツールバー表示/非表示
+ID_OPTIONS_VIEW_STATUSBAR        == ステータスバーの表示/非表示\nステータスバー表示/非表示
+ID_OPTIONS_VIEW_ARROWBAR         == 矢印バーの表示/非表示\n矢印バー表示/非表示
+ID_OPTIONS_VIEW_BINARYBAR        == 二項演算子バーの表示/非表示\n二項演算子バー表示/非表示
+ID_OPTIONS_VIEW_ACCENTSBAR       == アクセントバーの表示/非表示\nアクセントバー表示/非表示
+ID_OPTIONS_VIEW_RELATIONSBAR     == 関係子バーの表示/非表示\n関係子バー表示/非表示
+ID_OPTIONS_VIEW_GREEKBAR         == ギリシア文字バーの表示/非表示\nギリシア文字バー表示/非表示
+ID_OPTIONS_VIEW_MISCBAR          == 「その他の記号」バー表示/非表示\nその他の記号バー表示/非表示
+ID_OPTIONS_VIEW_MACROSBAR        == マクロバーの表示/非表示\nマクロバー表示/非表示
+#
+# Project menu messages
+#
+ID_PROJECT_NEW                   == 新規プロジェクトの作成\n新規プロジェクト
+ID_PROJECT_LOAD                  == プロジェクトの呼び出し\nプロジェクト呼び出し
+ID_PROJECT_CLOSE                 == 編集中のプロジェクトを閉じる\nプロジェクトを閉じる
+ID_PROJECT_SAVE                  == 編集中のプロジェクトを保存\nプロジェクト保存
+ID_PROJECT_SAVEAS                == 編集中のプロジェクトに別名をつけて保存\n別名でプロジェクト保存
+ID_PROJECT_ADD_MAIN              == プロジェクトに主となるTeX文書を加える\n主となるTeX文書
+ID_PROJECT_ADD_TEX               == プロジェクトにTeX文書を追加する\nTeX文書
+ID_PROJECT_ADD_BIBTEX            == プロジェクトにBibTeX文書を追加する\nBibTeX文書
+#
+# Window menu messages
+#
+ID_WINDOW_SPLIT                  == アクティブウィンドウをペインに分割\n分割
+ID_WINDOW_TILE_VERTICAL          == 重ならないタイルとして垂直にウィンドウを並べる\n垂直タイル
+ID_WINDOW_TILE_HORIZONTAL        == 重ならないタイルとして水平にウィンドウを並べる\n水平タイル
+#
+# Help menu messages
+#
+ID_HELP_TOPICS                   == ヘルプトピックを一覧表示\nヘルプトピック一覧
+ID_HELP_LATEX                    == LaTeX2e - ヘルプ
+ID_HELP_CHECKFORUPDATES          == WinShellの新しいバージョンを確認する。\nWinShellの更新
+ID_HELP_INFO                     == プログラムの情報・バージョン・著作権を表示\n情報
+#
+# Project window strings
+#
+ID_PROJECTW_TITLE                == すべてのプロジェクト
+ID_PROJECTW_CURRENTDOC           == 現在の文書
+ID_PROJECTW_FILES                == ファイル
+ID_PROJECTW_TOC                  == 目次
+ID_PROJECTW_FIGURES              == 図
+ID_PROJECTW_TABLES               == 表
+ID_PROJECTW_BIBENTRIES           == 参考文献
+ID_PROJECTW_POPUP_ACTIVATE       == このプロジェクトを編集します\nこのプロジェクトを編集
+ID_PROJECTW_POPUP_RELOAD         == 表目次・図・表・文献の再読み込み\n再読み込み
+ID_PROJECTW_POPUP_REMOVE         == このファイルをプロジェクトから除く\nプロジェクトから削除
+ID_PROJECTW_POPUP_TOOLTIPS       == プロジェクト窓にツールチップを表示\nツールチップ
+ID_PROJECTW_POPUP_SORT           == 項目をアルファベット順にソート\nアルファベット順
+ID_PROJECTW_POPUP_INSERTREF      == 参照を本文に挿入\n参照の挿入
+ID_PROJECTW_POPUP_INSERTCITE     == 引用を本文に挿入\n引用の挿入
+ID_PROJECTW_POPUP_SORTBYAUTHOR   == BibTeX項目を著者名でソートする\n著者名でソート
+ID_PROJECTW_POPUP_SHOWALLBIB     == 全てのBibTeX項目を.bibファイルから表示する\n全て表示
+ID_PROJECTW_BIBTEX_LINEINDOC     == 行 %u
+ID_PROJECTW_NOLOGFILE            == ログファイルが読み出せません。
+#
+# Output window strings
+#
+ID_OUTPUTW_TITLE                 == 出力
+ID_OUTPUTW_OUTPUT                == 出力
+ID_OUTPUTW_LOG                   == ログ
+ID_OUTPUTW_SEARCHRESULTS         == 検索結果
+ID_OUTPUTW_TASKS                 == タスク
+ID_OUTPUTW_BUILDLINE             == プロジェクト構成
+ID_OUTPUTW_INFOLINE              == %s - %i 個のエラー, %i 個の警告, %i 個のオーバーフル, %i 個のアンダーフル
+ID_OUTPUTW_TYPEERROR             == エラー
+ID_OUTPUTW_TYPEWARNING           == 警告
+ID_OUTPUTW_TYPEUNDERFULL         == アンダーフル
+ID_OUTPUTW_TYPEOVERFULL          == オーバーフル
+#
+# Search strings
+#
+ID_SEARCH_SEARCHING_FOR          == '%s'を探しています...
+ID_SEARCH_CANCELED               == 検索を中止しました
+ID_SEARCH_NOTHING_FOUND          == '%s'が見つかりません
+ID_SEARCH_OCCURRENCES            == %d 個が見つかりました
+#
+# Tasks strings
+#
+ID_TASKS_ASSEMBLING              == タスクリストを作成しています...
+ID_TASKS_CANCELED                == 作成中止.
+ID_TASKS_NOTHING_FOUND           == タスクはありません.
+ID_TASKS_OCCURRENCES             == %d 個のタスクがありました.
+#
+# Spelling
+#
+ID_SPELL_IGNOREALL               == このスペルを無視\nすべて無視
+ID_SPELL_DICTIONARY_ADD          == 語を個人辞書に登録\n辞書登録
+ID_SPELL_DICTIONARY_EDIT         == 個人辞書を編集\n辞書編集
+ID_SPELL_DIALOG                  == スペルチェック画面を開く\nスペルチェッカ
+#
+# BibTeX
+#
+ID_POPUP_BIBTEX_NEW_ENTRY        == 新規BibTeX項目を挿入する\n新規
+ID_POPUP_BIBTEX_EDIT_STRINGS     == このBibTeX文書の文字列を編集する\n文字列編集
+ID_POPUP_BIBTEX_EDIT_PREAMBLE    == このBibTeX文書のプリアンブルを編集する\nプリアンブル編集
+ID_POPUP_BIBTEX_EDIT_TYPESFIELDS == BibTeX項目の型とフィールドを編集する\n型/フィールド編集
+ID_POPUP_BIBTEX_SWITCH_FROMTEXT  == テキスト表示からエディタ表示に切り替える\nエディタ表示
+ID_POPUP_BIBTEX_SWITCH_TOTEXT    == エディタ表示からテキスト表示に切り替える.\nテキスト表示
+#
+# Update
+#
+ID_UPDATE_NO_CONNECTION          == サーバへ接続できません!
+ID_UPDATE_RESTART_TO_INSTALL     == インストールを完了するためにWinShellを再起動してください
+ID_UPDATE_CANNOT_SAVE_INFO       == 更新情報を保存できません
+ID_UPDATE_CANNOT_DLOAD_RELEASE   == リリース版をダウンロードできませんでした
+ID_UPDATE_CANNOT_DLOAD_BETA      == ベータ版をダウンロードできませんでした
+#
+# General messages/strings
+#
+ID_IDLE_MESSAGE                  == 操作を受け付けています
+ID_STATUSBAR_MAINDOCUMENT        == 主となるTeX文書:  %s
+ID_STATUSBAR_LINECOLUMN          == 行 %u, 桁 %u
+ID_BAR_MENUBAR                   == メインバー
+ID_BAR_TOOLBAR                   == ツールバー
+ID_BAR_ARROWS                    == 矢印
+ID_BAR_BINARY                    == 二項演算子
+ID_BAR_GREEK                     == ギリシア文字
+ID_BAR_MISC                      == その他
+ID_BAR_MACROS                    == マクロ
+ID_BAR_RELATIONS                 == 関係子
+ID_BAR_ACCENTS                   == アクセント
+ID_MACRO_INSERT                  == マクロ '%s' をカーソル位置に挿入します
+ID_USERTOOL_EXECUTE              == '%s' を実行します
+ID_CUSTOMIZE_STANDARD            == 標準
+ID_CUSTOMIZE_USERPROGS           == ユーザ指定プログラム
+ID_CUSTOMIZE_MACROS              == ユーザ指定マクロ
+ID_MORE_WINDOWS                  == ウィンドウを増やす(&M)...
+ID_MORE_COLORS                   == もっと色(&M)...
+ID_PRINT_TIMEFORMAT              == %y-%m-%d %H:%M:%S
+ID_PRINT_PAGE                    == ページ: %u/%u
+ID_PRINT_TITLE                   == ファイル: %s - 日付: %s
+ID_TAB_CLOSE                     == 閉じる
+ID_TAB_SCROLL_LEFT               == 左スクロール
+ID_TAB_SCROLL_RIGHT              == 右スクロール
+#
+END_STRINGTABLE
+
+BEGIN_DIALOG
+#
+# General
+#
+ID_BUTTON_OK                     == OK
+ID_BUTTON_CANCEL                 == 中止
+ID_BUTTON_CLOSE                  == 閉じる
+ID_BUTTON_EDIT                   == 編集(&E)...
+ID_BUTTON_CHANGE                 == 変更(&C)...
+ID_BUTTON_BROWSE                 == 参照(&B)...
+ID_BUTTON_DEFAULT                == 既定値(&D)
+ID_BUTTON_COLOR                  == 色(&C)...
+ID_BUTTON_ADD                    == 追加(&A)
+ID_BUTTON_ADD_DDD                == 追加(&A)...
+ID_BUTTON_DELETE                 == 削除(&D)
+#
+# MessageBoxes
+#
+ID_UNKNOWN_COMMAND               == '%s' は未知のコマンドです。
+ID_FILE_CHANGED                  == このファイルは他のソフトから変更を受けたようです。\n再読み込みしますか？
+ID_OPTIONS_NOCMDLINE             == コマンドラインが記述されていません。\nオプションの指定を確認してください。
+ID_OPTIONS_NOEXELINE             == 実行(.exe)ファイルがありません。\nオプションの指定を確認してください。
+ID_OPTIONS_GENERALERROR          == エラーがありました。\nオプションの指定を確認してください。
+ID_PROJECT_NOCURRENT             == TeX文書がありません。\nファイルを開いてください。
+ID_PROJECT_NOMAINFILE            == 主となるTeX文書がありません。
+ID_PROJECT_NOFILES               == プロジェクトにファイルがありません。
+ID_PROJECT_NOTLOADED             == プロジェクトが呼び出されていません。
+ID_PROJECT_NOTCREATED            == プロジェクトが作成されませんでした。
+ID_PROJECT_EXISTS                == プロジェクト <%s> はすでにあります。
+ID_PROJECT_NOTOCENTRY            == エントリが見つかりません
+ID_PROJECT_NOBIBFILE             == プロジェクトにbibファイルが設定されていません
+ID_TOOLBAR_CANNOTCREATEIMAGE     == 新しい画像が作成できません
+ID_TOOLBAR_CHOOSEIMAGE           == 画像を選択してください
+ID_TOOLBAR_INSERTTEXT            == 何か文字列を記入してください
+ID_TOOLBAR_CANTPASTEBITMAP       == クリップポードにある画像を貼り付けることができません
+ID_TOOLBAR_WRONGIMAGESIZE        == %d x %d の大きさの画像のみが使用できます
+ID_SPELLCHECK_FINISHED           == スペルチェックが終わりました
+ID_SPELLCHECK_NOMATCH_ENCODING   == 文書と辞書の文字コードが一致しません!\nどちらかの文字コードを変更してください!
+ID_BIBTEX_REQUIREDINFOMISSING    == 要求された情報が見つかりません!
+ID_BIBTEX_UNKNOWNENTRYTYPE       == 未知のBibTeX項目の型 '%s' があります!\n既知の型のリストに加えますか?
+ID_BIBTEX_UNKNOWNENTRYFIELD      == 未知のBibTeX項目のフィールド '%s' があります!\n既知のフィールドのリストに加えますか?
+IDS_BIBTEXBRACEERROR             == BibTeX内に括弧の閉じ忘れまたは不正利用が検出されました\n'%s'
+#
+# Open/close dialogs
+#
+ID_DLG_WINSHELL_FILTER_OPEN      == WinShellファイル (*.wsp;*.tex;*.bib;*.log)|*.wsp;*.tex;*.bib;*.log|プロジェクトファイル (*.wsp)|*.wsp|TeXファイル (*.tex)|*.tex|Bibファイル (*.bib)|*.bib|ログファイル (*.log)|*.log|すべてのファイル (*.*)|*.*|
+ID_DLG_WINSHELL_FILTER_SAVE      == TeXファイル (*.tex)|*.tex|Bibファイル (*.bib)|*.bib|ログファイル (*.log)|*.log|すべてのファイル (*.*)|*.*|
+ID_DLG_WINSHELL_TITLE            == WinShellのファイルを開く
+ID_DLG_MAINTEX_FILTER            == TeXファイル (*.tex)|*.tex|すべてのファイル (*.*)|*.*|
+ID_DLG_MAINTEX_TITLE             == 主となるTeX文書
+ID_DLG_TEX_TITLE                 == TeX文書
+ID_DLG_BIBTEX_FILTER             == BibTeXファイル (*.bib)|*.bib|すべてのファイル (*.*)|*.*|
+ID_DLG_BIBTEX_TITLE              == BibTeX文書
+ID_DLG_PROJECT_FILTER            == プロジェクトファイル (*.wsp)|*.wsp|
+ID_DLG_PROJECT_TITLE_OPEN        == プロジェクトファイルを開く
+ID_DLG_PROJECT_TITLE_NEW         == 新しいプロジェクト
+ID_DLG_PROJECT_TITLE_SAVE        == プロジェクトファイルの保存
+ID_DLG_SAVEAS_TITLE              == 別名で保存...
+ID_DLG_EXE_FILTER                == 実行形式ファイル (*.exe;*.bat)|*.exe;*.bat|すべてのファイル (*.*)|*.*|
+ID_DLG_EXE_TITLE                 == 実行形式ファイル
+#
+# Options: General dialog
+#
+ID_OPT_TITLE                     == オプション
+ID_OPT_GENERAL_TITLE             == 一般
+ID_OPT_GENERAL_BACKUPFILES       == バックアップ(.bak)ファイル作成(&C)
+ID_OPT_GENERAL_AUTOSAVE          == 終了時に自動保存(&S)
+ID_OPT_GENERAL_AUTOERRORJUMP     == エラー行に自動ジャンプ(&J)
+ID_OPT_GENERAL_USEBIBTEXFRONTEND == &BibTeXのエディタ表示を利用する
+ID_OPT_GENERAL_RELOADFILES       == 起動時に開いているファイルを再読込(&R)
+ID_OPT_GENERAL_FILEFORMAT        == ファイル形式
+ID_OPT_GENERAL_FF_WINDOWS        == &Windows
+ID_OPT_GENERAL_FF_UNIX           == &Unix
+ID_OPT_GENERAL_LANGUAGE          == 言語
+ID_OPT_GENERAL_LANGUAGE_SPELL    == スペルチェック:
+#
+# Options: Programm calls/User program dialogs
+#
+ID_OPT_PROGRAMCALLS_TITLE        == 主なTeXプログラムの設定
+ID_OPT_PROGRAMCALLS_GROUP        == プログラム:
+ID_OPT_PROGRAMCALLS_PARAMETER    == 引数:\n%s<.tex><.dvi><.ps><.pdf>
+ID_OPT_USERPROGCALLS_TITLE       == ユーザ指定プログラム
+ID_OPT_USERPROGCALLS_GROUP       == ユーザ指定プログラム:
+ID_OPT_USERPROGCALLS_PARAMETER   == 引数:\n%<p>[s, p, c]<.xxx, .%ex>;%l
+ID_OPT_USERPROGCALLS_CTRLSHIFT   == Ctrl + Shift
+ID_OPT_PROGRAMS_NAME             == プログラム名
+ID_OPT_PROGRAMS_EXEFILE          == exeファイル名
+ID_OPT_PROGRAMS_CMDLINE          == コマンドライン
+ID_OPT_PROGRAMS_DOS              == D&OS
+ID_OPT_PROGRAMS_SUFFIXHINT       == サフィックスも追加してください！
+ID_OPT_PROGRAMS_KEYS             == 実行キー:
+ID_OPT_PROGRAMS_LATEXFIRST       == &LaTeXを先に実行
+ID_OPT_PROGRAMS_PDFLATEXFIRST    == &PDFLaTeXを先に実行
+ID_OPT_PROGRAMS_DVIPSFIRST       == &DVIPSを先に実行
+#
+# Options: Macros dialog
+#
+ID_OPT_MACROS_TITLE              == マクロ
+ID_OPT_MACROS_SHIFT              == Shift +
+ID_OPT_MACROS_NAME               == 名前:
+#
+# Options: Fonts dialog
+#
+ID_OPT_FONTS_TITLE               == フォント
+ID_OPT_FONTS_FONT                == フォント:
+ID_OPT_FONTS_SIZE                == サイズ:
+ID_OPT_FONTS_SCRIPT              == スクリプト:
+ID_OPT_FONTS_ENCODING            == エンコーディング:
+ID_OPT_FONTS_EXAMPLE             == 例:
+ID_OPT_FONTS_SEL_DOCUMENTS       == 文書
+ID_OPT_FONTS_SEL_PRJWINDOW       == プロジェクト窓
+ID_OPT_FONTS_SEL_OUTWINDOW       == 出力窓
+ID_OPT_FONTS_ENCODE_STANDARD     == 標準
+#
+# Options: SyntaxHL dialog
+#
+ID_OPT_SYNTAXHL_TITLE            == 構文の強調表示
+ID_OPT_SYNTAXHL_SYNTAXHL         == 構文の強調表示(&S)
+ID_OPT_SYNTAXHL_MATCHBRACES      == 対応する括弧の強調表示(&M)
+ID_OPT_SYNTAXHL_COLOR_COMMANDS   == \ (La)TeX命令
+ID_OPT_SYNTAXHL_COLOR_BRACES     == 括弧
+ID_OPT_SYNTAXHL_COLOR_BEGINEND   == \begin ... \end
+ID_OPT_SYNTAXHL_COLOR_COMMENT    == % 注釈
+ID_OPT_SYNTAXHL_COLOR_MATHMODE   == $ 数学モード
+ID_OPT_SYNTAXHL_COLOR_NORMALTEXT == 通常の文字
+ID_OPT_SYNTAXHL_COLOR_SELECTTEXT == 選択したテキスト
+ID_OPT_SYNTAXHL_COLOR_CURSOR     == カーソル
+ID_OPT_SYNTAXHL_COLOR_BACKGROUND == 背景
+#
+# Search/Replace dialog
+#
+ID_SEARCHREPLACE_S_TITLE         == 検索
+ID_SEARCHREPLACE_SR_TITLE        == 検索と置換
+ID_SEARCHREPLACE_SIF_TITLE       == ファイル群から検索
+ID_SEARCHREPLACE_SEARCHFOR       == 検索する文字列(&S):
+ID_SEARCHREPLACE_SEARCHIN        == 検索範囲(&I):
+ID_SEARCHREPLACE_REPLACEWITH     == 置換後の文字列(&W):
+ID_SEARCHREPLACE_MATCHWHOLE      == 単語の一致(&M)
+ID_SEARCHREPLACE_MATCHCASE       == 大文字・小文字を区別(&C)
+ID_SEARCHREPLACE_REGEX           == 正規表現(&X)
+ID_SEARCHREPLACE_DIRECTION       == 検索方向
+ID_SEARCHREPLACE_UP              == 上(&U)
+ID_SEARCHREPLACE_DOWN            == 下(&D)
+ID_SEARCHREPLACE_FINDNEXT        == 次を検索(&F)
+ID_SEARCHREPLACE_REPLACEIN       == 置換する範囲
+ID_SEARCHREPLACE_REPLACESEL      == 選択(&L)
+ID_SEARCHREPLACE_REPLACEDOC      == 文書(&M)
+ID_SEARCHREPLACE_REPLACE         == 置換(&R)
+ID_SEARCHREPLACE_REPLACEALL      == すべて置換(&A)
+ID_SEARCHREPLACE_STARTSEARCH     == 検索(&E)
+ID_SEARCHREPLACE_STOPSEARCH      == 停止(&P)
+ID_SEARCHREPLACE_INCLUDESUBDIRS  == サブディレクトリを含める
+ID_SEARCHREPLACE_FILETYPES       == ファイルタイプ(&T):
+ID_SEARCHREPLACE_CURRENT_PRJ     == 現在のプロジェクト
+ID_SEARCHREPLACE_ALL_PRJS        == すべてのプロジェクト
+ID_SEARCHREPLACE_CURRENT_DOC     == 現在の文書
+ID_SEARCHREPLACE_ALL_DOCS        == 開いているすべての文書
+#
+# Go to line dialog
+#
+ID_GOTOLINE_TITLE                == 指定行へ移動
+ID_GOTOLINE_LINE                 == 行:
+#
+# Table Wizard
+#
+ID_TABLEWIZARD_TITLE1            == 表の作成 - 三段階の一
+ID_TABLEWIZARD_TITLE2            == 表の作成 - 三段階の二
+ID_TABLEWIZARD_TITLE3            == 表の作成 - 三段階の三
+ID_TABLEWIZARD_ROWS              == 行数(縦方向):
+ID_TABLEWIZARD_COLUMNS           == 列数(横方向):
+#
+# Spell Checker
+#
+ID_SPELLCHECKER_TITLE            == スペルチェッカ
+ID_SPELLCHECKER_MISSPELLEDWORD   == 間違った単語:
+ID_SPELLCHECKER_REPLACEWIDTH     == 次と置換:
+ID_SPELLCHECKER_RECHECKALL       == すべて再チェック(&C)
+ID_SPELLCHECKER_CHECKWORD        == 単語チェック(&W)
+ID_SPELLCHECKER_SUGGESTIONS      == 提案:
+ID_SPELLCHECKER_REPLACE          == 置換(&R)
+ID_SPELLCHECKER_REPLACEALL       == すべて置換(&L)
+ID_SPELLCHECKER_IGNORE           == 無視(&I)
+ID_SPELLCHECKER_IGNOREALL        == すべて無視(&G)
+ID_SPELLCHECKER_PERSDICT         == 個人用辞書:
+ID_SPELLCHECKER_ADDWORD          == 単語の追加(&A)
+ID_SPELLCHECKER_LANGUAGE         == 言語:
+#
+# Personal dictionary
+#
+ID_PERSDICT_TITLE                == 個人用辞書
+ID_PERSDICT_DICTENTRIES          == 辞書の項目:
+ID_PERSDICT_NEWWORD              == 新しい単語:
+#
+# No dictionary
+#
+ID_NODICT_NODICTIONARY           == スペルチェッカ用辞書がありません!\n\n以下からダウンロードしてください:
+ID_NODICT_INFOINMANUAL           == 詳しくはWinShellマニュアルをご覧ください.
+#
+# Customize Tool Bar / Macro Bar
+#
+ID_CUSTOMIZETB_TITLE             == ツールバー・マクロバーの編集
+ID_CUSTOMIZETB_CATEGORY          == カテゴリ
+ID_CUSTOMIZETB_BUTTONS           == ボタン:
+ID_CUSTOMIZETB_HINT              == カテゴリを選択し、ツールバーにドラッグしてください。ボタンをクリックすると説明があります。
+ID_CUSTOMIZETB_DESCRIPTION       == 説明:
+#
+# Customize Tool Bar / Macro Bar -> Change Button
+#
+ID_CUSTOMIZETB_CB_TITLE          == ボタンの変更
+ID_CUSTOMIZETB_CB_IMAGEONLY      == 画像だけ(&I)
+ID_CUSTOMIZETB_CB_TEXTONLY       == テキストだけ(&T)
+ID_CUSTOMIZETB_CB_IMAGEANDTEXT   == 画像とテキスト(&A)
+ID_CUSTOMIZETB_CB_IMAGES         == アイコン:
+ID_CUSTOMIZETB_CB_NEW            == 新規(&N)...
+ID_CUSTOMIZETB_CB_DESCRIPTION    == 説明:
+ID_CUSTOMIZETB_CB_TEXT           == テキスト:
+#
+# Customize Tool Bar / Macro Bar -> Edit Button
+#
+ID_CUSTOMIZETB_EB_TITLE          == ボタンの変更
+ID_CUSTOMIZETB_EB_IMAGE          == ビルド:
+ID_CUSTOMIZETB_EB_COPY           == コピー(&C)
+ID_CUSTOMIZETB_EB_PASTE          == 貼り付け(&P)
+ID_CUSTOMIZETB_EB_CLEAR          == クリア(&L)
+ID_CUSTOMIZETB_EB_COLORS         == 色:
+ID_CUSTOMIZETB_EB_PREVIEW        == プレビュー:
+ID_CUSTOMIZETB_EB_BACKGROUND     == 背景
+#
+# BibTeX -> Edit Strings, Preamble, Types, Fields
+#
+ID_BIBTEX_EDITSTRINGS_TITLE      == 文字列を編集
+ID_BIBTEX_EDITSTRINGS_ALIAS      == エイリアス
+ID_BIBTEX_EDITSTRINGS_STRING     == 文字列
+ID_BIBTEX_EDITPREAMBLE_TITLE     == プリアンブルを編集
+ID_BIBTEX_EDITTYPESFIELDS_TITLE  == 型とフィールドを編集
+ID_BIBTEX_EDITTYPESFIELDS_TYPE   == 型
+ID_BIBTEX_EDITTYPESFIELDS_FIELD  == フィールド
+ID_BIBTEX_EDITTYPESFIELDS_RFIELD == 必須フィールド
+ID_BIBTEX_EDITTYPESFIELDS_OFIELD == オプションフィールド
+ID_BIBTEX_EDITTYPESFIELDS_ITEXT  == 情報テキスト
+ID_BIBTEX_EDITTYPESFIELDS_NFIELD == 新しいフィールド
+ID_BIBTEX_EDITTYPESFIELDS_NTYPE  == 新しい型
+#
+# Update Dialog
+#
+ID_UPDATE_TITLE                  == WinShellの更新
+ID_UPDATE_VERSION_LOCAL          == 使用中のバージョン:
+ID_UPDATE_VERSION_RELEASE        == 最新のリリースバージョン:
+ID_UPDATE_VERSION_BETA           == 最新のベータバージョン:
+ID_UPDATE_TIME_LEFT              == 残り時間:
+ID_UPDATE_TRANSFER_RATE          == 転送状況:
+ID_UPDATE_UPDATE                 == 更新を適応
+ID_UPDATE_AUTOUPATE              == アップデートを自動的に確認
+#
+END_DIALOG
+
+BEGIN_BIBTEX
+#
+# Generall strings
+#
+ID_ITEM_UNKNOWN_AUTHOR           == 未知の著者
+ID_ITEM_UNKNOWN_TITLE            == 未知のタイトル
+ID_ITEM_UNKNOWN_JOURNAL          == 未知のジャーナル
+ID_LVIEW_AUTHOR_COLUMN           == 著者
+ID_LVIEW_TITLE_COLUMN            == タイトル
+ID_LVIEW_YEAR_COLUMN             == 年
+ID_LVIEW_LABEL_COLUMN            == ラベル
+ID_SVIEW_TITLE_LABEL             == BibTeX項目
+ID_SVIEW_TITLE_INFOTEXT          == BibTeX項目の全情報
+ID_SVIEW_TYPE_LABEL              == 型
+ID_SVIEW_TYPE_INFOTEXT           == BibTeX項目の型を定義
+ID_SVIEW_LABEL_LABEL             == ラベル
+ID_SVIEW_LABEL_INFOTEXT          == 本文での引用のラベル
+ID_SVIEW_REQUIRED_LABEL          == 必須情報
+ID_SVIEW_REQUIRED_INFOTEXT       == この項目型の必須情報です
+ID_SVIEW_OPTIONAL_LABEL          == オプション情報
+ID_SVIEW_OPTIONAL_INFOTEXT       == この項目型のオプション情報です
+ID_SVIEW_NOSELECTION_LABEL       == フィールドが選択されていません
+ID_SVIEW_NOSELECTION_INFOTEXT    == 記述を見るにはフィールドを選択してください
+#
+# Field entries
+#
+ID_FIELD_ADDRESS_INFOTEXT        == 通常, 出版社/所の住所. 大手出版社については, van Leunenによれば, 不要です. 小さな出版社については, 完全な住所を書いておくと便利.
+ID_FIELD_AUTHOR_INFOTEXT         == 著者名．書き方はLaTeX book参照 (複数著者は 'and' で区切る).
+ID_FIELD_BOOKTITLE_INFOTEXT      == 一部分を引用した本の題名. 書き方はLaTeX book参照. 一冊の本については, ここではなくタイトルフィールドを使う.
+ID_FIELD_CHAPTER_INFOTEXT        == 章 (または節など) の番号.
+ID_FIELD_CROSSREF_INFOTEXT       == 相互参照する項目のデータベースキー. このレコードにないフィールドは相互参照される項目から引き継がれる.
+ID_FIELD_EDITION_INFOTEXT        == 本の版. 例: 'Second' (第2版). 序数を使い, 例のように1字目を大文字にする. 標準スタイルは必要に応じて小文字に変換する.
+ID_FIELD_EDITOR_INFOTEXT         == 編者名. 書き方はLaTeX book参照. 著者フィールドが別にあれば，ここにはその論文を含む本または論文集の編者を書く.
+ID_FIELD_HOWPUBLISHED_INFOTEXT   == 出版形態 (非標準な形態の場合に使う).
+ID_FIELD_INSTITUTION_INFOTEXT    == 技報の提供機関. 出版にかかわっているが出版社である必要はない.
+ID_FIELD_ISBN_INFOTEXT           == ISBN: 国際標準図書番号.
+ID_FIELD_ISSN_INFOTEXT           == ISSN: 国際標準逐次刊行物番号. ジャーナルに用いられる.
+ID_FIELD_JOURNAL_INFOTEXT        == 所載ジャーナルまたは雑誌.
+ID_FIELD_MONTH_INFOTEXT          == 出版月 (非出版物なら製作された月).
+ID_FIELD_NOTE_INFOTEXT           == 読者の参考になる雑多な情報.
+ID_FIELD_NUMBER_INFOTEXT         == ジャーナル, 雑誌, 技報, シリーズものの番号(号). 通常, ジャーナルは巻と号を持つ. 技報も刊行機関によって第何号という番号が振られる. シリーズものの本にも番号が付くことがある.
+ID_FIELD_ORGANIZATION_INFOTEXT   == 会議を後援する機関, マニュアルを出版する機関.
+ID_FIELD_PAGES_INFOTEXT          == ページ番号. コンマか2重ハイフン(--)で区切る. 形式としては 42--111 や 7,41,73--97 や 43+ がある (最後の例の '+' は単純な範囲でない場合に使う).
+ID_FIELD_PUBLISHER_INFOTEXT      == 出版社名.
+ID_FIELD_SCHOOL_INFOTEXT         == 論文の書かれた大学など.
+ID_FIELD_SERIES_INFOTEXT         == シリーズ本のシリーズ名. 本1冊を参照する場合, タイトルフィールドが本の題名で, オプションのシリーズフィールドがその本を含むシリーズの名前となる.
+ID_FIELD_TITLE_INFOTEXT          == その作品(論文等)のタイトル. 書き方はLaTeX book参照.
+ID_FIELD_TYPE_INFOTEXT           == 技報の型. 例: 'Research Note' (研究報告).
+ID_FIELD_VOLUME_INFOTEXT         == ジャーナルやシリーズ本の巻.
+ID_FIELD_URL_INFOTEXT            == Web上のリソースのURL. 報告書のダウンロードできるFTPサイトのアドレスもここに書く.
+ID_FIELD_YEAR_INFOTEXT           == 出版年 (非出版物なら製作された年).
+#
+# Type entries
+#
+ID_TYPE_ARTICLE_INFOTEXT         == ジャーナル/雑誌の記事.
+ID_TYPE_BOOK_INFOTEXT            == はっきりした出版社のある本.
+ID_TYPE_BOOKLET_INFOTEXT         == 印刷製本されてはいるが出版社や提供機関のない作品.
+ID_TYPE_INBOOK_INFOTEXT          == 本の一部, 例えば一つの章 (または節など) あるいは一連のページ.
+ID_TYPE_INCOLLECTION_INFOTEXT    == 本の一部でそれ自身の題名を持つもの.
+ID_TYPE_INPROCEEDINGS_INFOTEXT   == 会議のプロシーディングス中のペーパー.
+ID_TYPE_MANUAL_INFOTEXT          == 技術文書.
+ID_TYPE_MASTERTHESIS_INFOTEXT    == 修士論文.
+ID_TYPE_MISC_INFOTEXT            == 他のどれにもあてはまらない型.
+ID_TYPE_PHDTHESIS_INFOTEXT       == 博士論文.
+ID_TYPE_PROCEEDINGS_INFOTEXT     == 会議のプロシーディングス.
+ID_TYPE_TECHREPORT_INFOTEXT      == 大学等の機関から出版される技報. 通常, 第何号という番号が付く.
+ID_TYPE_UNPUBLISHED_INFOTEXT     == 著者と題名がある文書だが公式に出版されていないもの.
+#
+END_BIBTEX
+```
+
+***
