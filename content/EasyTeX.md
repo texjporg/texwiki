@@ -282,7 +282,7 @@ EasyTeX はエディタの設定をすることが可能です．
 ### pdfpLaTeXA {#x38829e5}
 
 platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
 
@@ -298,7 +298,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -310,7 +310,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 ### pdfpLaTeX2A {#l0d22111}
 
 platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
 ***
 
@@ -326,7 +326,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -338,7 +338,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 ### pdfLaTeXA {#m3a434b8}
 
 pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 pdflatex は日本語には対応していません．<br>
 
 ***
@@ -355,7 +355,7 @@ pdflatex は日本語には対応していません．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
