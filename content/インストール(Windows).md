@@ -748,14 +748,14 @@ VxEditor#ツール をご覧ください．
 
 Scientific WorkPlace をご覧ください．
 
-#### [InftyEditor](http://www.inftyproject.org/jp/software.html) (製品) {#w2b15f27}
+#### InftyEditor (製品) {#w2b15f27}
 
-[InftyEditorの概要](http://www.sciaccess.net/jp/InftyEditor/) をご覧下さい．
+InftyEditor をご覧下さい．
 
 なお
 
-- [InftyEditor 学生版](http://www.inftyproject.org/jp/software.html)
-- [InftyEditor 英語版](http://www.inftyproject.org/en/software.html)
+- InftyEditor 学生版
+- InftyEditor 英語版
 
 はフリーウェア (無料) です．
 
