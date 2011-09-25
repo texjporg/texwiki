@@ -744,10 +744,6 @@ VxEditor#ツール をご覧ください．
 
 ### 製品 {#jc4ae1f8}
 
-#### Scientific WorkPlace (製品) {#p0ac379c}
-
-Scientific WorkPlace をご覧ください．
-
 #### InftyEditor (製品) {#w2b15f27}
 
 InftyEditor をご覧下さい．
@@ -758,6 +754,10 @@ InftyEditor をご覧下さい．
 - InftyEditor 英語版
 
 はフリーウェア (無料) です．
+
+#### Scientific WorkPlace (製品) {#p0ac379c}
+
+Scientific WorkPlace をご覧ください．
 
 #### WZ EDITOR (製品) {#cbee1e14}
 
