@@ -150,7 +150,7 @@ dvipdfmx $JOBNAME
 
 #### 内部設定 {#ubede387}
 
-■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使用する場合
+■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a) を使用する場合
 
 ***
 
@@ -170,9 +170,9 @@ dvipdfmx $JOBNAME
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>simpdftex eptex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error"</ins><br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins><br>
 　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>simpdftex platex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error"</ins><br>
+　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
@@ -199,7 +199,7 @@ dvipdfmx $JOBNAME
 
 ***
 
-■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a) を使用する場合
+■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使用する場合
 
 ***
 
@@ -219,9 +219,9 @@ dvipdfmx $JOBNAME
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8</ins><br>
+　　　　　<ins>pdftex --file-line-error --synctex=1</ins>　　　　　　<ins>simpdftex eptex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error"</ins><br>
 　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>&#x7e;/Library/TeXShop/bin/platex2pdf-utf8</ins><br>
+　　　　　<ins>pdflatex --file-line-error --synctex=1</ins>　　　　　<ins>simpdftex platex --mode dvipdfmx --maxpfb --extratexopts "-file-line-error"</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
