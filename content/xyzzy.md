@@ -179,24 +179,35 @@ Windows 標準のキーボードショートカットが使えるようになり
 
 xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
 
-## SumatraPDF との連携 (inverse search) {#s1d4a0f1}
+## SumatraPDF との連携 {#s1d4a0f1}
+
+platex に -synctex=1 オプションを付けて実行します。すなわち，
+
+```
+platex -synctex=1
+```
+
+を実行するようにします。
+
+### forward search {#ra3924a4}
+
+xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。
+
+[KaTeX#SumatraPDF との連携#forward search](/KaTeX/#n9aa887a) を参照．
+
+### inverse search {#n1f72109}
 
 ```
 C:\xyzzy\xyzzycli.exe -g %l "%f"
 ```
 
-## dviout との連携 (forward and inverse search) {#xysssdaf}
+SumatraPDF で画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
+上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
+なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
 
-[dviout for Windows](/dviout/) の
-\[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
+## dviout との連携 {#xysssdaf}
 
-```
-C:\xyzzy\xyzzycli.exe^s -g %d "%s"
-```
-
-と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
-
-さてコンパイルですが，platex に -src-specials オプションを付けて実行します。すなわち，
+platex に -src-specials オプションを付けて実行します。すなわち，
 
 ```
 platex -src-specials
@@ -204,40 +215,20 @@ platex -src-specials
 
 を実行するようにします。
 
-後述する [KaTeX](#xykb6f8d) を使っているのであれば，~/.xyzzy などの初期設定ファイルに，
+### forward search {#qdbdf4aa}
 
-```
-(setq elisp::tex-command "platex -src-specials")
-```
+xyzzy から dviout for Windows の該当箇所にジャンプすることが可能です。
 
-と書いておきます。
+[KaTeX](/KaTeX/) を使用する場合は [KaTeX#dviout との連携#forward search](/KaTeX/#h429b3b5) を参照してください．
 
-dviout for Windows でマウスカーソルが矢印になっているときに画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。
-（上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。）
+KaTeX をお使いでない場合は次のように書きます。
 
-逆に，xyzzy から dviout for Windows の該当箇所にジャンプすることも可能です。
-例えば，KaTeX をお使いなら [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/121) を参考に次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます。
+<!-- ただし，KaTeX をインストールして上のように書いておくことを勧めます。 -->
 
 ***
 
 ```
-(defun katex-dvisrcprv ()
-  (interactive)
-  (let* ((tex-file (get-buffer-file-name))
-         (dvi-file (el::KaTeX-get-preview-file-name)))
-    (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
-                          (format nil "~D" (current-line-number)) " " tex-file "\"")
-                  :exec-directory (directory-namestring tex-file))))
-```
-
-***
-
-KaTeX をお使いでない場合は次のように書きます。ただし，KaTeX をインストールして上のように書いておくことを勧めます。
-
-***
-
-```
-(defun dvisrcprv ()
+(defun dviout-forward-search ()
   (interactive)
   (let* ((tex-dirfile (get-buffer-file-name))
 	 (dvi-dirfile (substitute-string tex-dirfile "\\.tex$" "\\.dvi" :case-fold t))
@@ -254,8 +245,8 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 
 ***
 
-すると，前者の KaTeX用の設定を書いた場合は M-x katex-dvisrcprv （Alt を押しながら x を押し，“katex-dvisrcprv” と入力して Enterキーを押す），後のそれ以外の設定を書いた場合は M-x dvisrcprv とすることで，現在 TeXファイル中でカーソルのある箇所に相当する dviファイルの位置を開いてくれるはずです。
-頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます。
+すると，M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
+頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 > 【注意】この「source specials を用いた連携」は，
 > 「TeX ソースファイルの形で他人に渡す文書（投稿論文の TeX ソースの類）の最終版」
@@ -263,6 +254,21 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 > 実際，source specials を用いるか否かによって体裁あるいは
 > 「タイプセットの可否」が変わる例が知られています
 > （[qa:8914](https://okumuralab.org/~okumura/texfaq/qa/8914.html)，[qa:14224](https://okumuralab.org/~okumura/texfaq/qa/14224.html) 参照）。
+
+### inverse search {#g1e55b81}
+
+[dviout for Windows](/dviout/) の
+\[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
+
+```
+C:\xyzzy\xyzzycli.exe^s -g %d "%s"
+```
+
+と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
+
+dviout for Windows でマウスカーソルが矢印になっているときに画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
+上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
+なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
 
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
