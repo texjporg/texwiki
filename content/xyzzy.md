@@ -197,9 +197,13 @@ xyzzy から SumatraPDF の該当箇所にジャンプすることが可能で�
 
 ### inverse search {#n1f72109}
 
+[SumatraPDF](/SumatraPDF/) の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
+
 ```
 C:\xyzzy\xyzzycli.exe -g %l "%f"
 ```
+
+と書き込んで \[OK\] をクリックしてください。
 
 SumatraPDF で画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
 上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
@@ -231,14 +235,14 @@ KaTeX をお使いでない場合は次のように書きます。
 (defun dviout-forward-search ()
   (interactive)
   (let* ((tex-dirfile (get-buffer-file-name))
-	 (dvi-dirfile (substitute-string tex-dirfile "\\.tex$" "\\.dvi" :case-fold t))
-        (tex-file (file-namestring tex-dirfile))
-	 (dvi-file (file-namestring dvi-dirfile))
-	 (dir (directory-namestring dvi-dirfile))
-	 (tmp-file (make-temp-file-name)))
+         (dvi-dirfile (substitute-string tex-dirfile "\\.tex$" "\\.dvi" :case-fold t))
+         (tex-file (file-namestring tex-dirfile))
+         (dvi-file (file-namestring dvi-dirfile))
+         (dir (directory-namestring dvi-dirfile))
+         (tmp-file (make-temp-file-name)))
     (call-process (concat "c:\\w32tex\\dviout\\dviout.exe -1 " dvi-file " \"\# "
-			  (format nil "~D" (current-line-number)) " " tex-file "\"") :output tmp-file
-		  :exec-directory dir :wait t)
+                    (format nil "~D" (current-line-number)) " " tex-file "\"") :output tmp-file
+                    :exec-directory dir :wait t)
     (delete-file tmp-file))
   )
 ```
@@ -281,8 +285,8 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 kyotex-mode，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。
 
-[bibtex-mode](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#bibtex-mode)，
-[RefTeX for xyzzy](http://f55.aaa.livedoor.jp/~ynomura/xyzzy/index.html#reftex) というものもあります。
+[bibtex-mode \[\[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)，
+[RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex) というものもあります。
 
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。
 
