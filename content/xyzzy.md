@@ -225,9 +225,7 @@ xyzzy から dviout for Windows の該当箇所にジャンプすることが可
 
 [KaTeX](/KaTeX/) を使用する場合は [KaTeX#dviout との連携#forward search](/KaTeX/#h429b3b5) を参照してください．
 
-KaTeX をお使いでない場合は次のように書きます。
-
-<!-- ただし，KaTeX をインストールして上のように書いておくことを勧めます。 -->
+KaTeX をお使いでない場合は次のように書きます。ただし，KaTeX をインストールして上のように書いておくことを勧めます。
 
 ***
 
@@ -1740,10 +1738,10 @@ dvipdfmx cjkintro-sjis.dvi
 ```
 platex cjkintro-sjis.tex
 dvips cjkintro-sjis.dvi
-ps2pdf cjkintro-sjis.ps
+ps2pdf.bat cjkintro-sjis.ps
 ```
 
-のように実行します（Ghostscript 8.54 においては，ps2pdf での変換時に
+のように実行します（Ghostscript 8.54 においては，ps2pdf.bat での変換時に
 フリーズしたと思えるほど非常に時間がかかります）。あとは PDF を開いて
 うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
 フォントのインストールを促されたらインストールしておいてください。
