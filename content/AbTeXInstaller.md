@@ -160,5 +160,6 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### 参考 {#r85dc0a5}
 
+- [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [WindowsにおけるTeX環境の構築](http://www.mclab.ics.ritsumei.ac.jp/~shibata/development.html#tex)
