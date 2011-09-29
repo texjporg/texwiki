@@ -12,7 +12,7 @@ pukiwiki: "PLplot"
 ## PLplot とは {#r3877799}
 
 PLplot は，グラフを作成するためのライブラリです．<br>
-PDF, EPS, PS, LaTeX 形式などに出力可能です．<br>
+PDF, EPS, PS, EPS+LaTeX, SVG 形式などに出力可能です．<br>
 Linux, Mac OS X, Windows で使用できます．<br>
 フリーソフトウェアでライセンスは LGPL です．<br>
 
@@ -121,7 +121,7 @@ Enter device number or keyword: 1
 ./x01c -dev wingcc
 ```
 
-LaTeX + EPS で出力したい場合は pstex を指定するか，コマンドラインから以下のようにすると x01c.eps と x01c.eps_t が出力されます．
+EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定するか，コマンドラインから以下のようにすると x01c.eps と x01c.eps_t が出力されます．
 
 ```
 ./x01c -dev pstex -o x01c.eps
