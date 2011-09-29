@@ -27,19 +27,33 @@ Linux, Mac OS X, Windows で使用できます．<br>
 - [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
 - [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
 
-[Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Windows)](/Texmaker/#e1ab5b1e) を参考にして MinGW, CMake 等をインストールします．
+[Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Windows)](/Texmaker/#e1ab5b1e) を参考にして MinGW, CMake, Qt, zlib, libpng 等をインストールします．
+
+<!-- [[libHaru:http://libharu.org/]] をインストールします．~ -->
+<!-- PLplot で PDF ファイルを作成する場合は libHaru (または Qt) が必要です．~ -->
+<!-- libHaru のビルドには zlib, libpng が必要です．~ -->
+<!--  -->
+<!-- $ curl -R -L -O http://libharu.org/files/libharu-2.3.0-rc1.tar.bz2 -->
+<!-- $ tar jxvf libharu-2.3.0-rc1.tar.bz2 -->
+<!-- $ pushd libharu-2.3.0-rc1 -->
+<!-- $ ./configure - -prefix=/mingw - -with-zlib=/mingw - -with-png=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+PLplot をインストールします．
 
 ```
 $ curl -R -L -o plplot-5.9.8.tar.gz http://sourceforge.net/projects/plplot/files/plplot/5.9.8%20Source/plplot-5.9.8.tar.gz/download
 $ tar zxvf plplot-5.9.8.tar.gz
 $ cd plplot-5.9.8
-$ mkdir build_dir
-$ cd build_dir
-$ cmake -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw .. -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_ada=OFF -DENABLE_tcl=OFF -DPLD_ps=ON -DPLD_pstex=ON -DPLD_xfig=OFF
+$ mkdir build
+$ cd build
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_ada=OFF -DENABLE_tcl=OFF -DPLD_ps=ON -DPLD_pstex=ON
 $ make
 ```
 
-ここで test-drv-info.exe が動作を停止しました (おそらく extqt デバイスのテストでプログラムが落ちた可能性が高い)．
+ここで test-drv-info.exe が動作を停止しました (おそらく extqt デバイスのテストでプログラムが落ちた可能性が高い(と予想))．
 
 ***
 
@@ -92,21 +106,23 @@ Plotting Options:
  < 1> wingcc     Win32 (GCC)
  < 2> ps         PostScript File (monochrome)
  < 3> psc        PostScript File (color)
- < 4> pstex      Combined Postscript/LaTeX files
- < 5> null       Null device
- < 6> mem        User-supplied memory device
- < 7> svg        Scalable Vector Graphics (SVG 1.1)
- < 8> bmpqt      Qt Windows bitmap driver
- < 9> jpgqt      Qt jpg driver
- <10> pngqt      Qt png driver
- <11> ppmqt      Qt ppm driver
- <12> tiffqt     Qt tiff driver
- <13> svgqt      Qt SVG driver
- <14> qtwidget   Qt Widget
- <15> epsqt      Qt EPS driver
- <16> pdfqt      Qt PDF driver
- <17> extqt      External Qt driver
- <18> memqt      Memory Qt driver
+ < 4> xfig       Fig file
+ < 5> pstex      Combined Postscript/LaTeX files
+ < 6> null       Null device
+ < 7> mem        User-supplied memory device
+ < 8> svg        Scalable Vector Graphics (SVG 1.1)
+ < 9> pdf        Portable Document Format PDF
+ <10> bmpqt      Qt Windows bitmap driver
+ <11> jpgqt      Qt jpg driver
+ <12> pngqt      Qt png driver
+ <13> ppmqt      Qt ppm driver
+ <14> tiffqt     Qt tiff driver
+ <15> svgqt      Qt SVG driver
+ <16> qtwidget   Qt Widget
+ <17> epsqt      Qt EPS driver
+ <18> pdfqt      Qt PDF driver
+ <19> extqt      External Qt driver
+ <20> memqt      Memory Qt driver
 ```
 
 ```
@@ -125,6 +141,16 @@ EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定
 
 ```
 ./x01c -dev pstex -o x01c.eps
+```
+
+以下のようにして使用します．
+
+```
+\documentclass{article}
+\usepackage[dvips]{graphicx}
+\begin{document}
+\input{x01c.eps_t}
+\end{document}
 ```
 
 コマンドライン引数の詳細は
