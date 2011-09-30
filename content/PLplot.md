@@ -29,17 +29,7 @@ Linux, Mac OS X, Windows で使用できます．<br>
 
 [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Windows)](/Texmaker/#e1ab5b1e) を参考にして MinGW, CMake, Qt, zlib, libpng 等をインストールします．
 
-<!-- [[libHaru:http://libharu.org/]] をインストールします．~ -->
-<!-- PLplot で PDF ファイルを作成する場合は libHaru (または Qt) が必要です．~ -->
-<!-- libHaru のビルドには zlib, libpng が必要です．~ -->
-<!--  -->
-<!-- $ curl -R -L -O http://libharu.org/files/libharu-2.3.0-rc1.tar.bz2 -->
-<!-- $ tar jxvf libharu-2.3.0-rc1.tar.bz2 -->
-<!-- $ pushd libharu-2.3.0-rc1 -->
-<!-- $ ./configure - -prefix=/mingw - -with-zlib=/mingw - -with-png=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
+PLplot で PDF ファイルを作成する場合は libHaru または Qt が必要です．<br> <!-- [[libHaru:http://libharu.org/]] をインストールします．~ --> <!-- libHaru のビルドには zlib, libpng が必要です．~ --> <!--  --> <!-- $ curl -R -L -O http://libharu.org/files/libharu-2.3.0-rc1.tar.bz2 --> <!-- $ tar jxvf libharu-2.3.0-rc1.tar.bz2 --> <!-- $ pushd libharu-2.3.0-rc1 --> <!-- $ ./configure - -prefix=/mingw - -with-zlib=/mingw - -with-png=/mingw --> <!-- $ make --> <!-- $ make install --> <!-- $ popd -->
 
 PLplot をインストールします．
 
