@@ -19,6 +19,7 @@ TeX システムが ptetex から ptexlive に変更になりました．
     - [TeX 環境 Vine Linux 6](http://trac.vinelinux.org/wiki/TeXEnvironment/Vine6)
 - [日本語 TeX 利用ガイド](http://vinelinux.org/docs/vine6/tex-guide/vine-tex-guide.html)
 - [Vine Linux 6.0 での TeX Live 環境  \[08/12/2011\]](http://www-cc.gakushuin.ac.jp/~20050003/p-latex-main.html#texlive-vinelinux6)
+- [LaTeXから作るPDF の日本語しおり \[Vine 6.0\]](http://log-c.blog.so-net.ne.jp/2011-09-29-2)
 
 ## Vine Linux 5 {#vac9e97f}
 
