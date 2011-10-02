@@ -25,6 +25,11 @@ pukiwiki: "表記の哲学"
         - L_P   (level of a power quantity)
         - \kappa_T  (isothermal compressibility)
         - C_p  (specific heat at constant pressure)
+            <!-- 圧力をいつでも「p」で表すわけではないので，その解釈はむしろこじつけに近いのでは． -->
+            <!-- まあ，「誰もが英語を使っているわけでもないので，『pressure（の類）の頭文字』と -->
+            <!-- 解釈するのもこじつけだ」と言われればそれまでですが． -->
+            <!-- また，「固定する変数を下添字にする記法が用いられることもある」ので， -->
+            <!-- 「圧力を『p』で表している文脈では」定圧比熱を「C_p」と書いても構わないのですが． -->
         - \sigma\_\varOmega  (standard error of solid angle)
         - \omega_z  (angular velocity around z-axis)
 
