@@ -222,7 +222,7 @@ W32TeX がインストールされていれば以下のような表示になっ�
 
 これらを \[編集(E)...\] します．
 
-W32TeX はデフォルトでは [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別します．
+W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．
 
 UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
