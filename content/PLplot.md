@@ -43,7 +43,9 @@ $ make install
 $ popd
 ```
 
-PLplot をインストールします．
+PLplot をインストールします．<br>
+ada と tcl のバインディングを有効にするとビルド時にエラーが発生したので，-DENABLE_ada=OFF -DENABLE_tcl=OFF としました．<br>
+&#x2d;DPLD_pdf=ON を指定すると，リンク時にエラーが発生したので指定しませんでした．<br>
 
 ```
 $ curl -R -L -o plplot-5.9.8.tar.gz http://sourceforge.net/projects/plplot/files/plplot/5.9.8%20Source/plplot-5.9.8.tar.gz/download
