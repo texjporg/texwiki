@@ -11,7 +11,7 @@ pukiwiki: "Make"
 
 [TeX Live](</TeX Live/>) + [TeX Live 2011 への追加日本語パッチ](http://sourceforge.jp/projects/eptex/wiki/TeX_Live_2011) または TeX Live + ptexlive がお薦めです（ただしサイズは巨大です）。<br>
 少し前までは teTeX-3.0 + ptetex3 を使う方法がお薦めでした。<br>
-ずっと下の方に長々と書いてある 以前の teTeX や ptetex などに関する情報 は古い内容です。<br>
+下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。<br>
 
 ### [TeX Live](</TeX Live/>) + [TeX Live 2011 への追加日本語パッチ](http://sourceforge.jp/projects/eptex/wiki/TeX_Live_2011) {#kf3854d9}
 
@@ -25,6 +25,11 @@ pukiwiki: "Make"
 詳しくは
 [ptexlive Wiki](http://tutimura.ath.cx/ptexlive/)
 をご覧ください。
+
+## teTeX や ptetex などに関する情報 {#je88611e}
+
+以下は古い情報です。ptetex が内部で行っていることを理解するため以外には
+必要ありません。
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
@@ -224,11 +229,6 @@ updmap --setoption kanjiEmbed cktx
 <!-- へのシンボリックリンクを張っておけば通ります。 -->
 
 ***
-
-## 以前の teTeX や ptetex などに関する情報 {#je88611e}
-
-以下は古い情報です。ptetex が内部で行っていることを理解するため以外には
-必要ありません。
 
 ### News {#i9c0909b}
 
