@@ -21,7 +21,7 @@ pukiwiki: "インストール(Windows)"
     <span style="color:Red;"><strong>eplatex が無くなりました．<br>platex は ptex ではなくて eptex の上で動くようになりました．</strong></span>
 
 - \[2011/03/21\]<br>
-    <span style="color:Red;"><strong>ptex 関係において [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するようになりました．<br>デフォルトで自動判別します．<br>自動判別せずに手動で直接文字コードを指定する場合は</strong></span>
+    <span style="color:Red;"><strong>ptex 関係において [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別するようになりました．<br>デフォルトで自動判別します．<br>自動判別せずに手動で直接文字コードを指定する場合は</strong></span>
 
     ```
     platex -no-guess-input-enc -kanji=utf8 hoge.tex
