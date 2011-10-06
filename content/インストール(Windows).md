@@ -638,35 +638,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 #### [TeXworks](/TeXworks/) {#sca389c7}
 
-W32TeX にはデフォルトでエディタとして [TeXworks](/TeXworks/) (by Jonathan Kew &amp; Stefan Löffler) が含まれています．<br>
-コマンド プロンプトで texworks とすると，立ち上がります．<br>
-InstallDir/share/texworks の texworks.exe のショートカットを作成すると，通常の GUI アプリケーションのようにマウスで立ち上げることもできます．<br>
-TeXworks は SyncTeX をサポートしています．<br>
-W32TeX に入れてある TeXworks は，Windows XP 以降の Windows で動作します．<br>
-Windows 2000 では動作しません．<br>
-コマンドの補完機能はもちろん装備してあり，その他いろいろ工夫された，優れたエディタです．<br>
-コマンド補完は，一部を入力してタブを押すと候補が表示されます．<br>
-補完対象となるコマンドのリストは
-
-```
-$TEXMF\share\texworks\twdata\completion
-```
-
-の中にテキストファイルで保存されています．<br>
-このファイルを編集して，カスタマイズすることも可能です．<br>
-W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．<br>
-詳細については，ヘルプを見てください．<br>
-SyncTeX をサポートするエンジンは一般に pdftex, xetex, luatex です．<br>
-W32TeX ではこれに加えて、ptex, eptex, uptex, euptex でも SyncTeX をサポートしています．<br>
-オプションで
-
-- -synctex=1 とすると，zlib で圧縮した SyncTeX 用データを出力します．
-- -synctex=-1 のように負の値に設定すると，圧縮しないデータを出力します．
-
-フォントを埋め込んでおく（[PDFの作り方](</PDFの作り方/#rdc781c9>)参照）と，TeXworks の PDF viewer で日本語 PDF も表示できます．<br>
-SyncTeX というのは、PDF viewer と editor の間の synchronization を実現したものです．<br>
-
-[TeXworks](/TeXworks/) もご覧ください．
+[TeXworks](/TeXworks/) をご覧ください．
 
 #### [Texmaker](/Texmaker/) {#q8c6a4e6}
 
@@ -676,13 +648,13 @@ SyncTeX というのは、PDF viewer と editor の間の synchronization を実
 
 [LyX](/LyX/) をご覧ください．
 
-#### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
-
-[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
-
 #### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
 
 [TeXnicCenter](/TeXnicCenter/) をご覧ください．
+
+#### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
+
+[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
 
 #### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
 
