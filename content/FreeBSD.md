@@ -7,15 +7,18 @@ pukiwiki: "FreeBSD"
 
 # FreeBSD
 
-## FreeBSD {#r05903ba}
+## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
 <strong>現在Ports CollectionのteTeX関連はteTeX 3.0ベースのものに置き換わっています．</strong>
 
 <strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
 
-日本語TeX関連は[Ports Collection](http://www.freebsd.org/ports/)に収められています．
-
 [TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/) を参照してください．
+
+日本語 TeX 関連は Ports Collection に収められています．
+
+- [About FreeBSD Ports](http://www.freebsd.org/ports/)
+- [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
 ### TeX関連のPort {#y07bcd98}
 
@@ -94,11 +97,13 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td>yatex</td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs (for Emacs{19,20} and XEmacs{19,20})</td></tr>
-<tr><td>TeXmacs</td><td>editors/texmacs</td><td>A free WYSIWYG scientific text editor.</td></tr>
-<tr><td>auctex</td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
-<tr><td>ja-plain2</td><td>japanese/plain2</td><td>A text converter from plain to any format</td></tr>
+<tr><td>TeXmacs</td><td>editors/texmacs</td><td>A free WYSIWYG scientific text editor</td></tr>
+<tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
+<tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
+<tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
+<tr><td><a href="/YaTeX/">YaTeX</a></td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
 <tr><td>tgif2tex</td><td>print/tgif2tex</td><td>Converting texts in figure by tgif to LaTeX commands</td></tr>
+<tr><td>ja-plain2</td><td>japanese/plain2</td><td>A text converter from plain to any format</td></tr>
 </tbody>
 </table>
 
@@ -137,10 +142,10 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
+<tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
+<tr><td>cjk-lyx</td><td>print/cjk-lyx</td><td>Document processor interfaced with LaTeX, with CJK support</td></tr>
 <tr><td>jadetex</td><td>print/jadetex</td><td>A TeX backend for Jade, for typesetting SGML documents</td></tr>
 <tr><td>ja-jadetex</td><td>japanese/jadetex-ptex</td><td>A pTeX backend for Jade, for typesetting SGML documents</td></tr>
-<tr><td>lyx</td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
-<tr><td>cjk-lyx</td><td>print/cjk-lyx</td><td>Document processor interfaced with LaTeX, with CJK support</td></tr>
 <tr><td>smartdoc</td><td>textproc/smartdoc</td><td>XML utility to create various documents</td></tr>
 </tbody>
 </table>
