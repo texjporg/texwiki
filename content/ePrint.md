@@ -10,7 +10,7 @@ pukiwiki: "ePrint"
 ## TeXとe-Printアーカイブ {#abcf93c0}
 
 山根さんの
-[学術情報のコモンズ](http://black.res.soft.iwate-pu.ac.jp/~s-yamane/diary/2003/0903.html#20030909)
+[学術情報のコモンズ \[Internet Archive\]](http://web.archive.org/web/20030920161233/http://black.res.soft.iwate-pu.ac.jp/~s-yamane/diary/2003/0903.html#20030909)
 に取り上げていただきました。
 
 ### はじめに {#x55fea18}
@@ -25,7 +25,7 @@ Ginspargが2001年にLANLからCornell Universityに移動し，現在ではarXi
 （旧 [http://xxx.yukawa.kyoto-u.ac.jp/](http://xxx.yukawa.kyoto-u.ac.jp/)）でミラーされています。
 
 e-Print archive についての最近の記事では [Physics Today](http://www.physicstoday.org/)
-の [Ginsparg Takes Electronic Preprint Archive to Cornell](http://www.physicstoday.org/pt/vol-54/iss-9/p26.html)
+の [Ginsparg Takes Electronic Preprint Archive to Cornell](http://www.physicstoday.org/journals/doc/PHTOAD-ft/vol_54/iss_9/26_1.shtml) ([オリジナルの Internet Archive](http://web.archive.org/web/20080404070251/http://www.physicstoday.org/pt/vol-54/iss-9/p26.html))
 があります。
 
 e-Print の投稿は TeX/LaTeX が推奨されています。
