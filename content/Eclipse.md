@@ -77,7 +77,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - [TeXlipse](/TeXlipse/)
 - [sTeXIDE](http://code.google.com/p/stexide/)
 - [Blue Note Tex](http://bluenotetex.sourceforge.net/index-ja.html)
-- ecleTeX (旧名：eTeX)
+- [ecleTeX (旧名：eTeX)](http://sourceforge.net/projects/etex/)
 - [LatEc](http://www.itu.dk/people/jborella/)
 - [LaPsE](http://sf.net/projects/eclipse-latex)
 - [LaTexEditor](http://sf.net/projects/latexeditor/)
