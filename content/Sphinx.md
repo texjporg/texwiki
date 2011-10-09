@@ -28,6 +28,8 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
 
+### [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx) {#b274f2a4}
+
 ## Python ドキュメント {#h53fa12f}
 
 ### [Python Japan User's Group](http://www.python.jp/) {#dc4feddc}
