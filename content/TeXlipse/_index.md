@@ -1311,7 +1311,7 @@ Directory for user dictionaries:　　　<ins>C:\eclipse\en.dict</ins><br>
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
-TeX ファイルを開いている場合は，いったん閉じて開き直すとスペル・チェッカーが有効になりスペルミスしていると思われる単語に赤い下線が表示されます．
+TeX ファイルを開いている場合は，いったん閉じて開き直すとスペル・チェッカーが有効になり，スペルミスしていると思われる単語に赤い下線が表示されます．
 
 TeX ファイル編集中に改行すると Parsing が行われ，間違った単語を入力している場合，赤い下線が表示されます．
 
@@ -1700,6 +1700,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
 - [TeXlipse (Windows)](http://utkhii.px.tsukuba.ac.jp/~ywatanabe/pukiwiki/index.php?PC%20%A5%BB%A5%C3%A5%C8%A5%A2%A5%C3%A5%D7#odf46805)
+- [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
 - [Setting up TeXlipse and SumatraPDF](http://halkov.blogspot.com/2011/04/setting-up-texlipse-and-sumatrapdf.html)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [Texlipse と dviout でWISYWIG](http://meki789.blog123.fc2.com/blog-entry-8.html)
