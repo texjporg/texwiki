@@ -318,15 +318,15 @@ dvipdfmx $JOBNAME
 　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 閉じたときの位置を保存　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> スクロールしない<br>
 　　　　◯ いつも同じ位置で開く<br>
 　　　　　　　<span style="color:Gray;background-color:#EEEEEE;"><ins>\[　　　　現在の位置に設定　　　　\]</ins></span>　　　　　　　　<strong>ページレイアウト</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　連続ページ<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　連続ページ　　　　　　　　◆ \]</ins></span><br>
 　　　　<strong>見開きページ</strong><br>
 　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 左からスタート (両面)　　　　　　　　　　　　　　　　<strong>ウィンドウのリサイズ後</strong><br>
-　　　　◯ 右からスタート (片面)　　　　　　　　　　　　　　　　　　ウィンドウに合わせる<br>
+　　　　◯ 右からスタート (片面)　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　ウィンドウに合わせる　　◆ \]</ins></span><br>
 
 <br>
 
 　　　　<strong>マウスモード</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>プレビューウィンドウの倍率</strong><br>
-　　　　　　　文字選択　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<ins>100</ins>　　　設定<br>
+　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　文字選択　　　　　　　　◆ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　<ins>100</ins>　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　　設定　　\]</ins></span><br>
 
 <br>
 
