@@ -304,6 +304,59 @@ dvipdfmx $JOBNAME
 
 ***
 
+#### プレビュー {#m412ee77}
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>プレビュー</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>プレビューウィンドウの位置</strong>　　　　　　　　　　　　　　<strong>ページボタン</strong><br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 閉じたときの位置を保存　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> スクロールしない<br>
+　　　　◯ いつも同じ位置で開く<br>
+　　　　　　　<span style="color:Gray;background-color:#EEEEEE;"><ins>\[　　　　現在の位置に設定　　　　\]</ins></span>　　　　　　　　<strong>ページレイアウト</strong><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　連続ページ<br>
+　　　　<strong>見開きページ</strong><br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 左からスタート (両面)　　　　　　　　　　　　　　　　<strong>ウィンドウのリサイズ後</strong><br>
+　　　　◯ 右からスタート (片面)　　　　　　　　　　　　　　　　　　ウィンドウに合わせる<br>
+
+<br>
+
+　　　　<strong>マウスモード</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>プレビューウィンドウの倍率</strong><br>
+　　　　　　　文字選択　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<ins>100</ins>　　　設定<br>
+
+<br>
+
+　　　　<strong>外部エディタ</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>背景色</strong><br>
+　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> プレビューの自動更新<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
 ## 小川版 (Drag &amp; Drop UpTeX) の場合の設定 {#h991fc27}
 
 次のページを御覧下さい．<br>
@@ -376,6 +429,8 @@ Keynote は PDF で貼り付けられます．
 ### [TeXShopは画像ファイルhoge.\*をDrag&amp;Dropだけで\includegraphics\[\]{hoge.\*}してくれる](http://twitter.com/#!/ysykimura/status/105009020062015488) {#qa99ad06}
 
 ### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
+
+### [TexShop での eps 貼り付け](http://d.hatena.ne.jp/yuka_y/20111011/1318302043) {#b3b3e922}
 
 ## ツール {#kffeddd2}
 
