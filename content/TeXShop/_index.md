@@ -478,6 +478,8 @@ Keynote は PDF で貼り付けられます．
 
 ### タイプセット {#b06dc45a}
 
+タイプセットは ⌘T (Command+T) で行います．
+
 #### [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/) {#q2990ba4}
 
 ### [TeXShopは画像ファイルhoge.\*をDrag&amp;Dropだけで\includegraphics\[\]{hoge.\*}してくれる](http://twitter.com/#!/ysykimura/status/105009020062015488) {#qa99ad06}
