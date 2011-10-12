@@ -30,6 +30,7 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 ### リリース情報 {#td599942}
 
 - \[[OS X TeX\] TS 3.06 crash on Lion](http://email.esm.psu.edu/pipermail/macosx-tex/2011-September/047607.html) (modified TeXShop binary)
+- [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 - [TeXShop for Lion の実験的新バージョン3.05，3.06がリリースされました。](http://twitter.com/#!/doraTeX/status/110489378907889665)
 - [3.05は，Lionの「バージョン」機能に関わる改善です。3.04までは，タイプセットのたびに新しい「バージョン」が保存されましたが，それでは，こまめにタイプセットしていると「すべてのバージョンをブラウズ」したときにあまりに大量のバージョンが存在して面倒でした。（続く）](http://twitter.com/#!/doraTeX/status/110491486633738241)
 - [そこで，3.05では，明示的にCommand+Sしたときにのみ「バージョン」が保存されるようになりました。3.06では，それに加え，OgreKit検索パネルが改善され，TeXShop同等のカラーリングや補完機能が使えるようになりました。（続く）](http://twitter.com/#!/doraTeX/status/110491608440520704)
@@ -145,6 +146,112 @@ dvipdfmx $JOBNAME
 　　　　TeXShop 標準<br>
 　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span><br>
 　　　　pTeX (EUC)
+
+***
+
+#### プレビュー {#m412ee77}
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>プレビュー</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>プレビューウィンドウの位置</strong>　　　　　　　　　　　　　　<strong>ページボタン</strong><br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 閉じたときの位置を保存　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> スクロールしない<br>
+　　　　◯ いつも同じ位置で開く<br>
+　　　　　　　<span style="color:Gray;background-color:#EEEEEE;"><ins>\[　　　　現在の位置に設定　　　　\]</ins></span>　　　　　　　　<strong>ページレイアウト</strong><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　連続ページ　　　　　　　　◆ \]</ins></span><br>
+　　　　<strong>見開きページ</strong><br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 左からスタート (両面)　　　　　　　　　　　　　　　　<strong>ウィンドウのリサイズ後</strong><br>
+　　　　◯ 右からスタート (片面)　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　ウィンドウに合わせる　　◆ \]</ins></span><br>
+
+<br>
+
+　　　　<strong>マウスモード</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>プレビューウィンドウの倍率</strong><br>
+　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　拡大鏡(大)　　　　　　　　◆ \]</ins></span>　　　　　　　　　　　　　　　　　　　　<ins>100</ins>　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　　設定　　\]</ins></span><br>
+
+<br>
+
+　　　　<strong>外部エディタ</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>背景色</strong><br>
+　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> プレビューの自動更新<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
+#### タイプセット {#m64f92b0}
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>タイプセット</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+<br>
+
+　　　　<strong>デフォルトのコマンド</strong>　　　　　　　　　　　　　　　　<strong>タイプセット後の動作</strong><br>
+　　　　◯ TeX　　　　　　　　　　　　　　　　　　　　　　　　　　◯ プレビューを手前に移動<br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> LaTeX　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">◎</span> 編集を続ける<br>
+　　　　◯ ConTeXt<br>
+　　　　◯ 次のコマンドを利用　　　　　　　　　　　　　　　　<strong>ファイル保存時に</strong><br>
+　　　　　　<span style="color:Gray;"><ins>XeLaTeX</ins></span>　　　　　　　　　　　　　　　　　　　　　　　☐ 関連ファイルも保存する<br>
+
+<br>
+
+　　　　<strong>デフォルトのスクリプト</strong>　　　　　　　　　　　　　　　<strong>Sync 方式</strong><br>
+　　　　◯ Pdftex　　　　　　　　　　　　　　　　　　　　　　　　 ◯ Pdf Sync (TeXLive2010以前)<br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　◯ PDFを検索<br>
+　　　　◯ デフォルトのスクリプト　　　　　　　　　　　　　　　◯ 併用<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> SyncTeX (TeXLive2010以降)<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 
 ***
 
@@ -279,59 +386,6 @@ dvipdfmx $JOBNAME
 <br>
 
 　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> UTF-8-MAC を UTF-8 に自動変換<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
-
-***
-
-#### プレビュー {#m412ee77}
-
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>プレビュー</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]\[　<strong>内部設定</strong>　\]\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
-
-<br>
-
-　　　　<strong>プレビューウィンドウの位置</strong>　　　　　　　　　　　　　　<strong>ページボタン</strong><br>
-　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 閉じたときの位置を保存　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> スクロールしない<br>
-　　　　◯ いつも同じ位置で開く<br>
-　　　　　　　<span style="color:Gray;background-color:#EEEEEE;"><ins>\[　　　　現在の位置に設定　　　　\]</ins></span>　　　　　　　　<strong>ページレイアウト</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　連続ページ　　　　　　　　◆ \]</ins></span><br>
-　　　　<strong>見開きページ</strong><br>
-　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> 左からスタート (両面)　　　　　　　　　　　　　　　　<strong>ウィンドウのリサイズ後</strong><br>
-　　　　◯ 右からスタート (片面)　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　ウィンドウに合わせる　　◆ \]</ins></span><br>
-
-<br>
-
-　　　　<strong>マウスモード</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>プレビューウィンドウの倍率</strong><br>
-　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　文字選択　　　　　　　　◆ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　<ins>100</ins>　<span style="color:Black;background-color:#FAFAFA;"><ins>\[　　設定　　\]</ins></span><br>
-
-<br>
-
-　　　　<strong>外部エディタ</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>背景色</strong><br>
-　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> プレビューの自動更新<br>
 
 <br>
 
