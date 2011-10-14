@@ -241,9 +241,9 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 　　　　<strong>デフォルトのスクリプト</strong>　　　　　　　　　　　　　　　<strong>Sync 方式</strong><br>
 　　　　◯ Pdftex　　　　　　　　　　　　　　　　　　　　　　　　 ◯ Pdf Sync (TeXLive2010以前)<br>
-　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　◯ PDFを検索<br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> PDFを検索<br>
 　　　　◯ デフォルトのスクリプト　　　　　　　　　　　　　　　◯ 併用<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> SyncTeX (TeXLive2010以降)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ SyncTeX (TeXLive2010以降)<br>
 
 <br>
 
@@ -273,7 +273,7 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 #### 内部設定 {#ubede387}
 
-■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a) を使用する場合
+■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a), pbibtex を使用する場合
 
 ***
 
@@ -322,7 +322,7 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 ***
 
-■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使用する場合
+■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup), pbibtex を使用する場合
 
 ***
 
@@ -504,3 +504,7 @@ Keynote は PDF で貼り付けられます．<br>
 Live preview for TeXShop
 
 ### [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/) {#db2483a1}
+
+## 関連リンク {#qb1b8010}
+
+- [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
