@@ -44,6 +44,8 @@ MacTeX-2011 に [Additional Tools for MacTeX/TeXLive 2011](http://www2.kumagaku.
 
 ### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
+シェルスクリプトを作成します．
+
 ***
 
 - &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8
@@ -69,7 +71,15 @@ dvipdfmx $JOBNAME
 
 ***
 
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/eptex2pdf-utf8
+```
+
 ### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
+
+シェルスクリプトを作成します．
 
 ***
 
@@ -95,6 +105,12 @@ dvipdfmx $JOBNAME
 ```
 
 ***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
+```
 
 ### TeXShop 環境設定 {#d2699f04}
 
@@ -423,56 +439,26 @@ dvipdfmx $JOBNAME
 
 - [Mac - TeX Wiki#MacPorts (pTeX)](/Mac/#hcfd86af)
 
-## [Make](/Make/) の場合の設定 {#n9cdd334}
-
-ここでは [Make](/Make/)
-などを見てソースからインストールされた方のために，簡単な設定法を書いておきます．
-
-まず [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家) から最新版の TeXShop (texshop.zip) をダウンロードし，展開します．
-中にある TeXShop アイコンをアプリケーションフォルダに入れます．
-よく使うなら，Dock にも入れておきましょう．
-
-起動して，「環境設定」でまず「書類」でフォントを好みのもの（例えば Osaka
-レギュラー等幅），エンコーディングを Japanese (EUC) にします．
-起動時に「新しいファイルを作成する」はチェックを外しました．
-「内部設定」のパス設定（デフォルトは /usr/local/teTeX/bin/powerpc-apple-darwin-current）は /usr/local/teTeX/bin，
-パーソナルスクリプトの TeX 欄を pdfmptex，LaTeX 欄を pdfmplatex にします．
-「タイプセット」でデフォルトのスクリプトをパーソナルスクリプトにしておきます．
-
-井上さんの
-「[pTeXShop 用のコンパイル・PDF 化スクリプト](http://www.ma.ns.musashi-tech.ac.jp/Pages/Macintosh/pdfmtex.html)」
-の「実際のスクリプトは以下の通り」と書いてある部分をコピーし，
-/usr/local/teTeX/bin/pdfmplatex
-とします（実行許可を与えるのを忘れぬように）．
-さらに，同じ内容の pdfmptex
-というファイルも作っておきます（シンボリックリンクまたはハードリンクでもかまいません）．
-
-これで出来上がりです．
-設定前に開いていたファイルは念のためいったん閉じて開き直して下さい．
-
-### 問題点 {#i951d24e}
-
-Emacs で書いて LaTeX 処理し，TeXShop は dvipdfmx とプレビューだけ，といった使い方もできます．
-ただ，下手をすれば，Emacs で開いて保存すると例えば foo.tex が foo.tex~ にリネームされて新たに foo.tex が作られるので，これを追跡している TeXShop で管理している名前も foo.tex~ になってしまい，foo.tex~.dvi を dvipdfmx 処理して foo.tex~.pdf を開こうとしてエラーになってしまいます．
-対策としては，Emacs の側で
-
-```
-(setq backup-by-copying t)
-```
-
-と設定して逃げることができます（Thanks: seto さん）．
-ただし，Emacs が多少重くなるかもしれません．
-
-Mac OS X 10.2 では，埋め込んでいない和文フォントがすべてゴシック体で表示されてしまいます．
-10.3 以降なら大丈夫です．
-
-TeXShop のプレビュー画面から範囲指定してコピーし，他のソフトに貼り付けることができます．
-これで PowerPoint に数式を貼り付けられる……と思ったのですが，残念ながら PowerPoint も Word
-も PDF 形式の貼り付けには対応していないようです（テキストエディットでも対応しているのに）．
-PDF 以外の形式なら貼り付けられますが、（ベクトル形式の画像フォーマットではないため）画像を拡大するとぎざぎざになります．
-
-Keynote は PDF で貼り付けられます．
-しかも，文字以外の部分は透明になるので，Keynote の背景色や背景画像が適用されます．
+<!-- *[[Make]] の場合の設定[#n9cdd334] -->
+<!--  -->
+<!-- ここでは [[Make]] などを見てソースからインストールされた方のために，簡単な設定法を書いておきます．~ -->
+<!--  -->
+<!-- まず [[TeXShop:http://pages.uoregon.edu/koch/texshop/]] (本家) から最新版の TeXShop (texshop.zip) をダウンロードし，展開します．~ -->
+<!-- 中にある TeXShop アイコンをアプリケーションフォルダに入れます．~ -->
+<!-- よく使うなら，Dock にも入れておきましょう．~ -->
+<!--  -->
+<!-- 起動して，「環境設定」でまず「書類」でフォントを好みのもの（例えば Osaka レギュラー等幅），エンコーディングを Japanese (EUC) にします．~ -->
+<!-- 起動時に「新しいファイルを作成する」はチェックを外しました．~ -->
+<!-- 「内部設定」のパス設定（デフォルトは /usr/texbin）は /usr/local/teTeX/bin，パーソナルスクリプトの TeX 欄を pdfmptex，LaTeX 欄を pdfmplatex にします．~ -->
+<!-- 「タイプセット」でデフォルトのスクリプトをパーソナルスクリプトにしておきます．~ -->
+<!--  -->
+<!-- 井上さんの 「[[pTeXShop 用のコンパイル・PDF 化スクリプト:http://www.ma.ns.musashi-tech.ac.jp/Pages/Macintosh/pdfmtex.html]]」 の「実際のスクリプトは以下の通り」と書いてある部分をコピーし， -->
+<!-- /usr/local/teTeX/bin/pdfmplatex -->
+<!-- とします（実行許可を与えるのを忘れぬように）．~ -->
+<!-- さらに，同じ内容の pdfmptex というファイルも作っておきます（シンボリックリンクまたはハードリンクでもかまいません）．~ -->
+<!--  -->
+<!-- これで出来上がりです．~ -->
+<!-- 設定前に開いていたファイルは念のためいったん閉じて開き直して下さい．~ -->
 
 ## 使い方 {#i4c3aa46}
 
@@ -487,6 +473,29 @@ Keynote は PDF で貼り付けられます．
 ### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
 
 ### [TexShop での eps 貼り付け](http://d.hatena.ne.jp/yuka_y/20111011/1318302043) {#b3b3e922}
+
+### 問題点 {#i951d24e}
+
+Emacs で書いて LaTeX 処理し，TeXShop は dvipdfmx とプレビューだけ，といった使い方もできます．<br>
+ただ，下手をすれば，Emacs で開いて保存すると例えば foo.tex が foo.tex~ にリネームされて新たに foo.tex が作られるので，これを追跡している TeXShop で管理している名前も foo.tex~ になってしまい，foo.tex~.dvi を dvipdfmx 処理して foo.tex~.pdf を開こうとしてエラーになってしまいます．<br>
+対策としては，Emacs の側で
+
+```
+(setq backup-by-copying t)
+```
+
+と設定して逃げることができます（Thanks: seto さん）．<br>
+ただし，Emacs が多少重くなるかもしれません．<br>
+
+Mac OS X 10.2 では，埋め込んでいない和文フォントがすべてゴシック体で表示されてしまいます．<br>
+10.3 以降なら大丈夫です．<br>
+
+TeXShop のプレビュー画面から範囲指定してコピーし，他のソフトに貼り付けることができます．<br>
+これで PowerPoint に数式を貼り付けられる……と思ったのですが，残念ながら PowerPoint も Word も PDF 形式の貼り付けには対応していないようです（テキストエディットでも対応しているのに）．<br>
+PDF 以外の形式なら貼り付けられますが、（ベクトル形式の画像フォーマットではないため）画像を拡大するとぎざぎざになります．<br>
+
+Keynote は PDF で貼り付けられます．<br>
+しかも，文字以外の部分は透明になるので，Keynote の背景色や背景画像が適用されます．<br>
 
 ## ツール {#kffeddd2}
 
