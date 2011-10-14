@@ -1114,7 +1114,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ### PS ファイル ビューアー {#d5afa7cc}
 
-#### SumatraPDF {#o2911d51}
+#### [SumatraPDF](/SumatraPDF/) {#o2911d51}
 
 ***
 
