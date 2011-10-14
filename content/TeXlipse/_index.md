@@ -30,6 +30,7 @@ pukiwiki: "TeXlipse"
         - [texlipse plugin](http://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
         - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
         - [texlipse documentation](http://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
+- [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
 
 2011-08-07 TeXlipse Version 1.4.2 がリリースされました．64-bit Windows に対応しました．
 
