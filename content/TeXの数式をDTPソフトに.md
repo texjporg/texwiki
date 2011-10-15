@@ -321,6 +321,16 @@ Microsoft Office Word/PowerPoint に Microsoft Windows の OLE 機能を使っ�
 これについては [市川健一郎さん](http://www.geocities.co.jp/SiliconValley/7231/oletex.htm) の解説をご覧ください。 
 本来はインプレス版向けのソフトウェアですが，[坂井芳行さん](http://www2.odn.ne.jp/~ciw95550/oletex.html) が角藤さんの pTeX で動作させるための方法を解説されています。ただし，最近の版ではさらに手を加える必要があるかもしれません。
 
+### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
+
+[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](http://sourceforge.net/projects/latexee/) です。
+本来は MiKTeX を必要とするソフトウェアですが、MiKTeX の texify.exe の代わりに W32TeX の platex.exe を指定すれば MiKTeX がなくても動作します。
+PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の背景色が透過されず白地のままであるという注意点があります。
+
+### 上記以外の方法 {#m911530d}
+
+[プレゼンツール](</プレゼンツール/>)を参照してください。
+
 ## リンク {#qed253c5}
 
 - Computer Modern フォントの OpenType フォント形式ファイル：
