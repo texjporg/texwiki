@@ -90,6 +90,26 @@ pukiwiki: "表記の哲学"
         - 他に，区切りに「.（ピリオド）」を使用する例も見られる
     - 参考情報wikipedia: [http://ja.wikipedia.org/wiki/ISO_8601](http://ja.wikipedia.org/wiki/ISO_8601)，wikipedia: [http://ja.wikipedia.org/wiki/日付](<http://ja.wikipedia.org/wiki/日付>)
 
+### ギリシア文字の大文字 {#s890dffd}
+
+ギリシア文字の大文字は、伝統的には数学変数であっても，立体で表記される。TeXにおいてもこれがデフォルト（$\Gamma$ などは立体で表記される）。
+
+- ギリシア文字の大文字を、イタリック体表記に切り替える試み。\varGamma 等を定義するパッケージ類（amsmath パッケージ等）を用いたうえで、プリアンブルに下記を記述。
+
+```
+\let\Gammaf\Gamma% Gamma function
+\let\Gamma\varGamma
+\let\Delta\varDelta
+\let\Theta\varTheta
+\let\Lambda\varLambda
+\let\Xi\varXi
+\let\Pi\varPi
+\let\Sigma\varSigma
+\let\Upsilon\varUpsilon
+\let\Phi\varPhi
+\let\Psi\varPsi
+```
+
 ### 日本語表記 {#p670ef1d}
 
 日本語表記の伝統は．．．
