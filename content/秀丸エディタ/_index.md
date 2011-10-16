@@ -411,6 +411,11 @@ TeX ファイルを編集しているときは補完候補が表示されます�
 - [秀丸で簡単コンパイル](http://imawamukashi.web.fc2.com/TeX/hidemacro.html)
     (Outsider's Website)
 
+### 秀丸マクロ for TeX editing {#h3f49b53}
+
+- [秀丸マクロ for TeX editing](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
+    (fuhmi さん)
+
 ### トリビュート {#qac4762a}
 
 - [トリビュート](http://www.vector.co.jp/soft/win95/writing/se259789.html), [LaTeX2e 用強調表示定義ファイル](http://homepage2.nifty.com/masema/software/LaTeX_hilight.html)
