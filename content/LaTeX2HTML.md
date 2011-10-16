@@ -35,3 +35,7 @@ LaTeX2HTML is a convertor written in Perl that converts LaTeX documents to HTML.
 - [LaTeX2HTML - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?LaTeX2HTML)
 - [Latex2HtmlをWindowsで使う](http://tmlaboratory.at-ninja.jp/memo/latex2html_install.html)
 - [latex2html の設定](http://medt00lz.s59.xrea.com/blog/archives/2008/04/latex2html.html)
+
+## 関連リンク {#lddbd39b}
+
+- [latex2htmlの出力をみて驚き。ああ、よく見る古い感じの学術系webページってこれか!!!!!](http://twitter.com/#!/guicho271828/status/125546951159709696)
