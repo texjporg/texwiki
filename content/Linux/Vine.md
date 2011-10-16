@@ -119,7 +119,7 @@ $ sudo apt-get install task-tetex
 |  jadetex  |  TeX macros used by Jade TeX output. | ○ |
 |  latex-xft-fonts  |  xft-compatible LaTeX fonts for math symbols | ○ |
 |  lyx  |  LaTeX 形式でも保存できる簡易ワープロ | ○ |
-|  mathabx  |  TeX 用の新しい数式フォント（[堀田先生](http://auemath.aichi-edu.ac.jp/~khotta/ghost/)の[作成パッケージ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html)／[ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/mathabx.html)） | ○ |
+|  mathabx  |  TeX 用の新しい数式フォント（[堀田先生](http://auemath.aichi-edu.ac.jp/~khotta/ghost/)の[作成パッケージ](http://auemath.aichi-edu.ac.jp/~khotta/ghost/mathabx.html)／[ミラーサイト](http://www.khotta.org/ghost/mathabx.html)） | ○ |
 |  plain2  |  plain-text converter (to LaTeX, ROFF and HTML) | ○ |
 |  task-texmacro-info  |  情報科学工学に関する teTeX マクロをインストールするための仮想パッケージ | ○ |
 |  task-texmacro-phys  |  物理学に関する teTeX マクロをインストールするための仮想パッケージ | ○ |
