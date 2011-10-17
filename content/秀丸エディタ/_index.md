@@ -44,7 +44,8 @@ pukiwiki: "秀丸エディタ"
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
     - [祝鳥とは - はてなキーワード](http://d.hatena.ne.jp/keyword/%BD%CB%C4%BB)
-    - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html)
+    - [秀丸エディタのカスタマイズVZ like + TeX](http://cms.estuarine.jp/?p=171)
+    - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html), [TeX Wiki｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11021964592.html)
     - [tex - 松村俊和のページ：日記](http://be-sp.com/matsut/cat_tex.html)
     - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
     - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
@@ -328,6 +329,7 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 #### 「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 {#b09ef8e6}
 
 - [秀丸エディタで「マクロ」→「TeXコンパイル」→「PDFに変換して表示」（DVIに変換して表示）とすると、「秀丸エディタ は動作を停止しました。問題が発生したため、プログラムが正しく動作しなくなりました。プログラムは閉じられ、解決策がある場合は windows から通知されます。」というメッセージが出てしまう](http://www.maruo.co.jp/hidesoft/2/x30158_.html)
+- [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html)
 
 解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。
 
