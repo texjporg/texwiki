@@ -125,7 +125,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -265,7 +265,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -863,7 +863,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -931,7 +931,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
