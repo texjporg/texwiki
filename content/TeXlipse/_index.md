@@ -333,7 +333,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -490,7 +490,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -647,7 +647,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -804,7 +804,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
