@@ -190,7 +190,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -218,7 +218,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -jobname="%b" "%b"};if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -jobname="%b" "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -330,7 +330,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -358,7 +358,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -952,7 +952,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | bkmk2uni > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -980,7 +980,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -jobname="%b" "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | bkmk2uni > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1068,7 +1068,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1096,7 +1096,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
