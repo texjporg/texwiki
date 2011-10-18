@@ -654,7 +654,7 @@ LaTeX => PS<br>
 <br>
 
 Executable:　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-Arguments　　　　　 <ins>"%Bm.dvi"</ins><br>
+Arguments　　　　　 <ins>-Ppdf -t a4 -o "%Bm.ps" "%Bm.dvi"</ins><br>
 Input<br>
 Output<br>
 
@@ -695,7 +695,7 @@ Ghostscript (ps2pdf)<br>
 <br>
 
 Executable:　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-Arguments　　　　　 <ins>-P pdf "%Bm.dvi"</ins><br>
+Arguments　　　　　 <ins>-Ppdf -t a4 -o "%Bm.ps" "%Bm.dvi"</ins><br>
 Input<br>
 Output<br>
 
