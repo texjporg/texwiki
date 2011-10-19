@@ -15,6 +15,7 @@ pukiwiki: "科研費LaTeX"
 
 ## 関連リンク {#mddd7437}
 
+- [科研費の書類を TeX で書く](http://www.clas.kitasato-u.ac.jp/~fujiwara/kakenhi/kakenhi.html)
 - [科研費LaTeXの破線処理](http://d.hatena.ne.jp/takehikom/20101027/1288124853)
 - [学内チェックに出す文章，科研費TeXのダミー文章を消すのわすれて出してた・・・。怒られるわ・・・。応募する理由が「象は、同じほ乳類とは言え、キリンやカバとは体系が異なり、さらに体重も全く異なるため」って・・・](http://twitter.com/#!/kosugitti/status/118591257080631296)
 - [しかし科研費LaTeXの「象の卵」，作り込みが年々進んでいるのは凄い．MS Wordで科研費の書類を書く人には伝わっていないと思うが……](http://twitter.com/#!/svslab/status/125073807458312192)
