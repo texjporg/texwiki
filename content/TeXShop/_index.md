@@ -371,6 +371,8 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 ***
 
+simpdftex を使用する方法だとエラーが発生してもそのまま dvipdfmx を実行してしまうようです．
+
 #### 詳細 {#ae4b4710}
 
 ***
