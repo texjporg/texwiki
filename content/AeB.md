@@ -11,6 +11,9 @@ pukiwiki: "AeB"
 
 - [The AcroTeX eDucation Bundle](http://www.math.uakron.edu/~dpstory/webeq.html)
     - [History](http://www.math.uakron.edu/~dpstory/webeq.html#history)
+- [Aeb_Pro](http://www.math.uakron.edu/~dpstory/aeb_pro.html)
+- [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
+    - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
 
 [The AcroTeX eDucation Bundle](http://www.math.uakron.edu/~dpstory/webeq.html) を使うと LaTeX で JavaScript を使った PDF ファイルを作成することができます．
 
