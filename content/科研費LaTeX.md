@@ -15,6 +15,8 @@ pukiwiki: "科研費LaTeX"
 
 ## 関連リンク {#mddd7437}
 
+- [やる模  【寺村輝夫】やる王さまのはなし【王さまシリーズ】　1．ぞうのたまごのたまごやき](http://yarumo.blog83.fc2.com/blog-entry-423.html)
+    - [最終話．ぞうのたまごのたまごやき](http://wiki.livedoor.jp/neiker7/d/%BA%C7%BD%AA%CF%C3%A1%A5%A4%BE%A4%A6%A4%CE%A4%BF%A4%DE%A4%B4%A4%CE%A4%BF%A4%DE%A4%B4%A4%E4%A4%AD)
 - [科研費の書類を TeX で書く](http://www.clas.kitasato-u.ac.jp/~fujiwara/kakenhi/kakenhi.html)
 - [科研費LaTeXの破線処理](http://d.hatena.ne.jp/takehikom/20101027/1288124853)
 - [学内チェックに出す文章，科研費TeXのダミー文章を消すのわすれて出してた・・・。怒られるわ・・・。応募する理由が「象は、同じほ乳類とは言え、キリンやカバとは体系が異なり、さらに体重も全く異なるため」って・・・](http://twitter.com/#!/kosugitti/status/118591257080631296)
