@@ -166,7 +166,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX {#z539757a}
+### pdfupLaTeX {#z539757a}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -181,7 +181,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX</ins><br>
+　　　　　<ins>pdfupLaTeX</ins><br>
 
 <br>
 
@@ -195,7 +195,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -231,12 +231,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
-- エディタ画面を右クリック → \[pdfeupLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfupLaTeX\]
+- エディタ画面を右クリック → \[pdfupLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2 {#h1563ac2}
+### pdfupLaTeX2 {#h1563ac2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -251,7 +251,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX2</ins><br>
+　　　　　<ins>pdfupLaTeX2</ins><br>
 
 <br>
 
@@ -265,7 +265,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -301,8 +301,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
-- エディタ画面を右クリック → \[pdfeupLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfupLaTeX2\]
+- エディタ画面を右クリック → \[pdfupLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -872,7 +872,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-### pdfeupLaTeXA {#x56aa2c5}
+### pdfupLaTeXA {#x56aa2c5}
 
 ***
 
@@ -883,7 +883,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeXA</ins><br>
+　　　　　<ins>pdfupLaTeXA</ins><br>
 
 <br>
 
@@ -897,7 +897,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -906,7 +906,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-### pdfeupLaTeX2A {#fa6daa54}
+### pdfupLaTeX2A {#fa6daa54}
 
 ***
 
@@ -917,7 +917,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　　設定
 
 　　　　　タイトル(T):<br>
-　　　　　<ins>pdfeupLaTeX2A</ins><br>
+　　　　　<ins>pdfupLaTeX2A</ins><br>
 
 <br>
 
@@ -931,7 +931,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -u > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
