@@ -17,6 +17,9 @@ pukiwiki: "インストール(Windows)"
 
 ### ニュース {#x8db7c39}
 
+- \[2011/10/22\]<br>
+    <span style="color:Red;"><strong>euplatex が無くなりました．<br>uplatex は uptex ではなくて euptex の上で動くようになりました．</strong></span>
+
 - \[2011/05/25\]<br>
     <span style="color:Red;"><strong>eplatex が無くなりました．<br>platex は ptex ではなくて eptex の上で動くようになりました．</strong></span>
 
@@ -25,7 +28,7 @@ pukiwiki: "インストール(Windows)"
 
     ```
     platex -no-guess-input-enc -kanji=utf8 hoge.tex
-    euplatex -no-guess-input-enc -kanji=utf8 hoge.tex
+    uplatex -no-guess-input-enc -kanji=utf8 hoge.tex
     ```
 
     <span style="color:Red;"><strong>のように指定します．</strong></span><br>
