@@ -241,7 +241,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX {#w969cf5c}
+### pdfupLaTeX {#w969cf5c}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -254,13 +254,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX</ins>
+　　　 <ins>pdfupLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -282,13 +282,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX</ins>
+　　　 <ins>pdfupLaTeX</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -306,12 +306,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + J を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX\]
+- メニューの \[ツール(T)\] → \[pdfupLaTeX\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfupLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
-### pdfeupLaTeX2 {#b29609f2}
+### pdfupLaTeX2 {#b29609f2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
@@ -324,13 +324,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2</ins>
+　　　 <ins>pdfupLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -352,13 +352,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2</ins>
+　　　 <ins>pdfupLaTeX2</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){euplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -376,8 +376,8 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 次のうちのどれかを実行
 
 - Shift + Alt + K を押す
-- メニューの \[ツール(T)\] → \[pdfeupLaTeX2\]
-- エディタ画面を右クリック → \[ツール(S)\] → \[pdfeupLaTeX2\]
+- メニューの \[ツール(T)\] → \[pdfupLaTeX2\]
+- エディタ画面を右クリック → \[ツール(S)\] → \[pdfupLaTeX2\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
@@ -995,7 +995,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-### pdfeupLaTeXA {#b3c1e6f0}
+### pdfupLaTeXA {#b3c1e6f0}
 
 #### cmd の場合 {#d8d6005a}
 
@@ -1004,13 +1004,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeXA</ins>
+　　　 <ins>pdfupLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1032,13 +1032,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeXA</ins>
+　　　 <ins>pdfupLaTeXA</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1053,7 +1053,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 ***
 
-### pdfeupLaTeX2A {#k1e6741b}
+### pdfupLaTeX2A {#k1e6741b}
 
 #### cmd の場合 {#p53490ba}
 
@@ -1062,13 +1062,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2A</ins>
+　　　 <ins>pdfupLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1090,13 +1090,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <span style="color:Black;background-color:#ACCEFE;"><ins>　ツールの編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]</span> </ins></span><br>
 
 　　　 名前\["-"は区切り線\](N):<br>
-　　　 <ins>pdfeupLaTeX2A</ins>
+　　　 <ins>pdfupLaTeX2A</ins>
 
 　　　 実行ファイル(E):<br>
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; euplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){echo exit | pdfdde} &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -u > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
