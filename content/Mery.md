@@ -173,7 +173,7 @@ main();
 
 ***
 
-### pdfeupLaTeX.js {#cca95ce9}
+### pdfupLaTeX.js {#cca95ce9}
 
 ***
 
@@ -185,11 +185,11 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -201,7 +201,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfupLaTeX.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -221,13 +221,13 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX.js　　　　　　　　　　　　　</span><br>
+　　　<span style="color:White;background-color:#1188FF;">pdfupLaTeX.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
 ***
 
-### pdfeupLaTeX2.js {#s6641f74}
+### pdfupLaTeX2.js {#s6641f74}
 
 ***
 
@@ -239,12 +239,12 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX2", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX2", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -256,7 +256,7 @@ main();
 
 ***
 
-\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfeupLaTeX2.js を選択します．
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で pdfupLaTeX2.js を選択します．
 
 \[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
 
@@ -276,8 +276,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　<span style="color:White;background-color:#1188FF;">pdfeupLaTeX2.js　　　　　　　　　　　　　</span><br>
+　　　pdfupLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">pdfupLaTeX2.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -330,8 +330,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfLaTeX.js　 　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -385,8 +385,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">LuaLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
@@ -441,8 +441,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">XeLaTeX.js　　　　　　　　　　　　　　　</span><br>
@@ -511,8 +511,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
 　　　XeLaTeX.js<br>
@@ -569,8 +569,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
 　　　XeLaTeX.js<br>
@@ -641,8 +641,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
 　　　XeLaTeX.js<br>
@@ -700,8 +700,8 @@ main();
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
-　　　pdfeupLaTeX.js<br>
-　　　pdfeupLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
 　　　XeLaTeX.js<br>
@@ -885,7 +885,7 @@ main();
 
 ***
 
-### pdfeupLaTeXA.js {#hdc45060}
+### pdfupLaTeXA.js {#hdc45060}
 
 ***
 
@@ -897,13 +897,13 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeXA", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfupLaTeXA", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -915,7 +915,7 @@ main();
 
 ***
 
-### pdfeupLaTeX2A.js {#r820202a}
+### pdfupLaTeX2A.js {#r820202a}
 
 ***
 
@@ -927,14 +927,14 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfeupLaTeX2A", 1);
+  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX2A", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
@@ -1114,7 +1114,7 @@ main();
 
 ***
 
-### eupLaTeX.js {#i30bcc08}
+### upLaTeX.js {#i30bcc08}
 
 ***
 
@@ -1126,10 +1126,10 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "euplatex -src-specials -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var latex = "uplatex -src-specials -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
 
-  var button = wshShell.Popup(cmd, 0, "eupLaTeX", 1);
+  var button = wshShell.Popup(cmd, 0, "upLaTeX", 1);
   if (button == 1) {
     document.Save();
     wshShell.Run(cmd, 1, true);
