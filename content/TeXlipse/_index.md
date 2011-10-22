@@ -1158,14 +1158,14 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　gv ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>gv</ins><br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>GSview</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-e &#x25;file</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
@@ -1189,7 +1189,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 編集後，
 
-> <span style="color:White;background-color:#1188FF;">　gv (C:\Program Files\Ghostgum\gsview\gsview32.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)　</span><br>
 
 の優先度を上から五番目にします．
 
@@ -1252,12 +1252,13 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　acroread (C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe)<br>
 　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
-　gv (C:\Program Files\Ghostgum\gsview\gsview32.exe)<br>
+　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)<br>
 　dviout (C:\w32tex\dviout\dviout.exe)<br>
 　yap ()<br>
 　xdvi ()<br>
 　itexmac ()<br>
 　kdvi ()<br>
+　gv ()<br>
 　none ()<br>
 
 ***
