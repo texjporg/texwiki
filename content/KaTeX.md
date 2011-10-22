@@ -23,9 +23,9 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
 
-## ChangeLog {#g9333ba6}
+### ChangeLog {#g9333ba6}
 
-### Thu Oct 11 2008 Version 1.67.1.12 {#o70ed34c}
+#### Thu Oct 11 2008 Version 1.67.1.12 {#o70ed34c}
 
 - typeset時にエラーになったら自動で終了する変数（\*typeset-stop-at-error\*）を導入。
 - file-name-all-completionsとfile-name-completionを追加。
@@ -35,30 +35,30 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - typoをいくつか修正。
 - 他いろいろ修正（忘れた）。
 
-### Thu Oct 14 2004 Version 1.67.1.11 {#e24405e3}
+#### Thu Oct 14 2004 Version 1.67.1.11 {#e24405e3}
 
 - KaTeXとkahtmlを同時に起動すると動作がおかしかったのを修正。
 - sample.xyzzyを作成。
 - typoをいくつか修正。
 - kahtmlでファイル読み込みが怪しかったのを修正。
 
-### Fri Jul 23 2004 Version 1.67.1.10 {#b4fbb95e}
+#### Fri Jul 23 2004 Version 1.67.1.10 {#b4fbb95e}
 
 - letの再定義がおかしかったのを修正。
 - typoをいくつか修正。
 - プロセスの状態をきちんと取れていなかったのを修正。
 - fillの挙動が怪しかったのを修正。
 
-### Sun May 30 2004 Version 1.67.1.9 {#ef750829}
+#### Sun May 30 2004 Version 1.67.1.9 {#ef750829}
 
 - kahtml で css ファイルを使っているソースを開けなかったのを修正。
 
-### Sat Nov 01 2003 Version 1.67.1.8 {#de7f33d3}
+#### Sat Nov 01 2003 Version 1.67.1.8 {#de7f33d3}
 
 - 正規表現のキーワード色分けが、出来なくなっていたのを修正。
 - yahtml ならぬ kahtml を作ってみたり(要browserex関係)。
 
-### Wed Sep 18 2003 Version 1.67.1.7 {#fd42f62a}
+#### Wed Sep 18 2003 Version 1.67.1.7 {#fd42f62a}
 
 - dvioutを起動したときに、dos画面が表示されるのを、されないようにした。
 - Toolbarを作ってみた。(詳細はkatexbar.l)
@@ -67,14 +67,14 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - メニューにあったtypoを修正。
 - lprコマンドが使えるようになったかも。
 
-### Wed Jan 22 2003 Version 1.67.1.6 {#bd92f3ce}
+#### Wed Jan 22 2003 Version 1.67.1.6 {#bd92f3ce}
 
 - $ の入力がとっても遅くなるのを避けれるような変数(\*not-use-verbatime\*)を追加。
 - 試しに正規表現のキーワード色分けを入れてみた。\*KaTeX-math-formats\*で設定。
 - KaTeX-indent-line がおかしかったのを修正。
 - preview するときに黒い画面を出さないようにした。
 
-### Sat Sep 08 2001 Version 1.67.1.5 {#s2671e3f}
+#### Sat Sep 08 2001 Version 1.67.1.5 {#s2671e3f}
 
 - \\%でもコメントと認識されるのを修正。
 - 数式記号イメージ補完、ギリシャ文字補完が数式環境中でできなかったのを修正。
@@ -82,13 +82,13 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - mode-specific-indent-command を 'KaTeX-indent-line に設定した。
 - fill がおかしかったのを修正。
 
-### Mon Jul 16 2001 Version 1.67.1.4 {#v586b59c}
+#### Mon Jul 16 2001 Version 1.67.1.4 {#v586b59c}
 
 - auto-fill が時々おかしくなるのを修正。
 - \ref{}の補完入力で、fig:fooとかできなかったのを修正。
 - section型の補完を途中でやめたとき変だったのを修正。
 
-### Thu Jun 21 2001 Version 1.67.1.3 {#ubc814db}
+#### Thu Jun 21 2001 Version 1.67.1.3 {#ubc814db}
 
 - section型でヒストリが効かなかったのを修正。
 - byte-compile できなかったのを修正。
@@ -96,13 +96,13 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - "$"の入力時に黙り込む時間を短くした（つもり）。
 - \ref{}の補完入力がおかしかったのを修正。
 
-### Mon May 07 2001 Version 1.67.1.2 {#ka45c0b6}
+#### Mon May 07 2001 Version 1.67.1.2 {#ka45c0b6}
 
 - ユーザー辞書への保存が変だったのを修正。
 - documentstyle,documentclassで補完できなかったのを修正。
 - auto-fillできなかったのを修正。
 
-### Tue May 01 2001 Version 1.67.1.1 {#o11bdcbe}
+#### Tue May 01 2001 Version 1.67.1.1 {#o11bdcbe}
 
 - メニューを作ってみたりした。
 - エラーした行にときどき飛ばなかったのを修正(したつもり)。
@@ -114,7 +114,7 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - \[prefix\] #\SPC で随時補完できなかったのを修正。
 - そのほか細かいバグ取り(したつもり)。
 
-### Wed Mar 14 2001 Version 1.67.1.0 {#cce2de92}
+#### Wed Mar 14 2001 Version 1.67.1.0 {#cce2de92}
 
 - 名前をKaTeX(花鳥)に変更。正式リリース。
 - ChangeLog(これ)を作った。
@@ -125,7 +125,7 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - ラベルの参照で、他のファイルにあるラベルを参照できなかったのを修正。
 - messageをminibufferに出力するようにした。
 
-### Fri Dec 22 2000 Version 2.2 {#h99d2aad}
+#### Fri Dec 22 2000 Version 2.2 {#h99d2aad}
 
 - insert-charが間違っていたのを修正。
 - scroll-up,scroll-downを追加。
@@ -144,7 +144,7 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - セクション区切りのアウトライン表示が動かなかったのを修正。
 - すでに書いたテキストを括る補完ができなかったのを修正。
 
-### Thu Nov 30 2000 Version 2.1 {#m824b408}
+#### Thu Nov 30 2000 Version 2.1 {#m824b408}
 
 - call-processを間違えて消してしまったのを復活。
 - enumerate環境のitemの補完ができなくなったのを修正。
@@ -152,11 +152,11 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - イタリック補正ができなかったのを修正。
 - YaTeX-typeset-bufferで他のバッファにYaTeXのファイルがあるとき、保存できなかったのを修正。
 
-### Mon Nov 13 2000 Version 2.0 {#sa49e6e4}
+#### Mon Nov 13 2000 Version 2.0 {#sa49e6e4}
 
 - elispパッケージを作って、その中に入れた。
 
-### Thu Nov 02 2000 Version 1.0 {#y0129a3c}
+#### Thu Nov 02 2000 Version 1.0 {#y0129a3c}
 
 - xyzzy ML内にてとりあえず公開。
 
