@@ -97,7 +97,7 @@ platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
+platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
 
 ```
 \usepackage{atbegshi}
@@ -108,11 +108,19 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 \fi
 ```
 
-(e)uplatex + updvipdfmx, xelatex では必要ありません．
+uplatex + updvipdfmx, lualatex, xelatex では必要ありません．
+
+lualatex の場合は，hyperref のオプションに
+
+```
+unicode=true
+```
+
+を追加します．
 
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
-(e)uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
+uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
 
 #### オプション一覧表 {#re898c38}
 
