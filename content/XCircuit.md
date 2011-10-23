@@ -10,12 +10,16 @@ pukiwiki: "XCircuit"
 <!-- TeXに直接関係ないかもしれませんが、役に立つToolということで -->
 <!-- まとめてみました。Hat -->
 
-## XCircuit - フリーの回路図作成ソフト {#g1267ee5}
+## [XCircuit](http://opencircuitdesign.com/xcircuit/) - フリーの回路図作成ソフト {#g1267ee5}
 
-XCircuitは回路図を作成するためのフリーソフトウエアです。
+[XCircuit](http://opencircuitdesign.com/xcircuit/)
+は回路図を作成するためのフリーソフトウエアです。
 特に電気・電子系のレポート作成等に役立ちます。
 
 PostScript形式での出力が可能なためTeXへの挿入も簡単に行えます。
+
+- [XCircuit](http://opencircuitdesign.com/xcircuit/)
+- [日本語解説](http://www.mlb.co.jp/linux/science/xcircuit/)
 
 ### インストール {#l5809210}
 
