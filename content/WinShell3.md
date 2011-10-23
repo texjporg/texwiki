@@ -92,7 +92,10 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-<!-- **日本語化ファイル [#i83c37b0] -->
+### 日本語化ファイル {#i83c37b0}
+
+WinShell3#WinShell3日本語化ファイル を参照．
+
 <!--  -->
 <!-- -[[WinShell3日本語化:http://redmine.nnnnn.me/projects/winshell/files]] -->
 <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
@@ -1272,6 +1275,33 @@ UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stan
 
 ***
 
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　プログラム名　　<ins>PDFView</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
+　　exeファイル名 　<ins>C:\w32tex\share\texworks\TeXworks.exe</ins><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
+　　コマンドライン 　<ins>"%s.pdf"</ins><br>
+　　　　　　　　　　　　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
+　　実行キー:　　　　引数:<br>
+　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+
+***
+
 次に \[ユーザ指定プログラム\] へプログラムを設定します．<br>
 \[ユーザ指定プログラム\] を使用すると Runtime Error! にならずにコンパイルすることができます．<br>
 
@@ -1709,9 +1739,40 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 ## WinShell3日本語化ファイル {#sd834cff}
 
+[WinShell3日本語化 - ニュース - ( ﾟÅﾟ)んーの日本語化などの物置です。](http://redmine.nnnnn.me/projects/winshell/news)から転載
+
+***
+
+サーバが良く落ちています。<br>
+あまり安定化させる気がいまのところないので、ファイルが偶然落とせなかったり、<br>
+長期間サーバが停止していたらごめんなさい。<br>
+
+そして、WinShell3の日本語化ファイルを求める人が一番多いので、一応記しておきます。<br>
+改めて書く必要は特に無いとは思ったのですが、自分の考えは明言しておいたほうが、<br>
+他の人も使いやすいと思った次第です。<br>
+まず、基本的に勝手に転載・利用・二次配布して頂いてかまいません。<br>
+そもそも勝手に未翻訳部分を翻訳して公開してるので、何か主張するつもりは全くありません。<br>
+
+ただし、誤訳等修正するべき項目が見つかった場合の連絡は欲しいので、冒頭の更新履歴は残して欲しいとは身勝手ながら思っております。<br>
+あと内容を修正して配布する場合は更新履歴に追記して配布して下さい。<br>
+もっとも連絡頂けると私も修正が行なえ、助かります。<br>
+
+あと、ついでにWindows上でtexファイル群をshift-jisからutf8に変換するbashスクリプトもアップしました。<br>
+platex,bibtex,mendex,dvipdf,nkfが必要です。そう、最後についでにpdf化してくれます。<br>
+全くもって何がしたかったのか判りませんが、同じような境遇に至った人は好きに使って下さい。<br>
+不具合の報告は歓迎しますが、ファイルが壊れても責任は取れないので自己責任で利用願います。<br>
+
+( ﾟÅﾟ)うｍ
+
+***
+
 WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれを jp_JP.txt というファイル名で保存してください．<br>
 保存するときには，文字コードを Shift_JIS, 改行コードを CRLF で保存してください．<br>
 jp_JP.txt は WinShell の Translations フォルダに置いてください．<br>
+
+***
+
+[WinShell3日本語化 - 添付ファイル - ( ﾟÅﾟ)んーの日本語化などの物置です。](http://redmine.nnnnn.me/projects/winshell/files)の[jp_JP.txt](http://redmine.nnnnn.me/attachments/download/1/jp_JP.txt)から転載
 
 ***
 
