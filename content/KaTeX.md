@@ -569,6 +569,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 ## 関連リンク {#h4cf9c4e}
 
+- [Windows7 で xyyzzy で KaTeX で TeX ライフ。](http://blog.goo.ne.jp/kei_matsuura2007/e/8c5ccbde9291d5410956b1e94e10dfaa)
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
 - [xyzzy + KaTeX - chibacarの色々なメモ](http://d.hatena.ne.jp/chibacar/20080420/1225725981)
 - [Ill communication  .xyzzy](http://lphyl.blog69.fc2.com/blog-entry-180.html)
