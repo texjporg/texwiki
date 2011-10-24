@@ -1737,6 +1737,8 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 　　正常動作しました
 
+### [utf8で編集をしているとWinShellのプロジェクトウインドウの”目次”の表示が文字化けを起こす](http://twitter.com/#!/reo_matsumura/status/128477539445383168) {#lfc11a3b}
+
 ## WinShell3日本語化ファイル {#sd834cff}
 
 [WinShell3日本語化 - ニュース - ( ﾟÅﾟ)んーの日本語化などの物置です。](http://redmine.nnnnn.me/projects/winshell/news)から転載
