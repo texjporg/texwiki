@@ -119,7 +119,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　GSview<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　988KB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　65.2MB　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　92.2MB　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　20.0MB　　 　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
