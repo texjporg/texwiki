@@ -716,6 +716,8 @@ main();
 
 ## その他の便利な TeX 用マクロ {#w4fa8cd3}
 
+### [テキストエディタMery用LaTeXコンパイルマクロ](http://blog.kassyi.com/2011/10/merylatex.html) {#ffd665b4}
+
 ### MeryからTeXのコンパイル＆PDF生成ができるようにする (LaTeXMacro.js + makepdf.ps1) {#n2ac0dc8}
 
 - [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
