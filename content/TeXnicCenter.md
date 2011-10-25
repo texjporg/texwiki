@@ -1108,6 +1108,7 @@ C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d'
 ## 関連リンク {#r73017f2}
 
 - [工大院生の学生メモ : Texniccenter](http://blog.livedoor.jp/gastttt3678/archives/2846954.html)
+- [Newest &#39;texniccenter&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texniccenter)
 - [Configuring TeXnicCenter](http://www.statslab.cam.ac.uk/~eva/texniccenter.html)
 - [LaTeX Community &bull; View topic - Adobe Reader 10 and viewing error](http://www.latex-community.org/forum/viewtopic.php?f=31&t=10857)
 - [LaTeX Community &bull; View topic - Texniccenter + Adobe Reader 9 Problem](http://www.latex-community.org/forum/viewtopic.php?f=35&t=8586)
