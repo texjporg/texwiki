@@ -138,8 +138,8 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 新しいファイルを作成する　　　　　　　　　　　　　☐ BibDesk オートコンプリート<br>
 　　　　　☐ 外部エディタでソースを編集　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> 選択時にカーソルを移動<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#9FCFFB;">☑</span> 行番号<br>
-　　　　<strong>コマンド補完キー</strong>　　　　　　　　　　　　　　　　　　　　 ☐ Arabic, Hebrew, Persian<br>
-　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> オートセーブ (再起動後有効)<br>
+　　　　<strong>コマンド補完キー</strong>　　　　　　　　　　　　　　　　　　　　 ☐ Arabic, Hebrew, Persian<br> <!-- 　　　　　&color(Black,#9FCFFB){◎}; Escape キー　　　　　　　　　　　　　　　　　　　　　&color(Black,#9FCFFB){☑}; オートセーブ (再起動後有効)&br; -->
+　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー<br>
 　　　　　◯ Tab キー<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
 　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span><br>
@@ -475,6 +475,8 @@ simpdftex を使用する方法だとエラーが発生してもそのまま dvi
 ### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
 
 ### [TexShop での eps 貼り付け](http://d.hatena.ne.jp/yuka_y/20111011/1318302043) {#b3b3e922}
+
+### [TexShop の自動更新](http://koda428.blogspot.com/2011/10/texshop_24.html) {#nc5442a6}
 
 ### 問題点 {#i951d24e}
 
