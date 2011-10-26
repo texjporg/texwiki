@@ -515,3 +515,5 @@ Live preview for TeXShop
 - [TeXworks &amp; TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_107.html)
 - [【TeXShopの設定】](http://www.math.meiji.ac.jp/~mk/diary/2011/09/#tex2html15)
 - [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
+- [TeXShopがUTF-8で文字化けするだと・・・](http://twitter.com/#!/kaihua7/status/129175210153881600)
+- [TeXShop2.43は文字化けしないが、TeXShop3.04はする。 なんでだろう？](http://twitter.com/#!/kaihua7/status/129178391151771648)
