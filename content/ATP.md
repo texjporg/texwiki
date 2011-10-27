@@ -204,7 +204,7 @@ ATP では基本的に補完は &lt;Tab> を使用します．<br>
 
 ただし \end{itemize} は自動インデントされないようなので \end{itemize} を補完する場合は &lt;Tab> を使用しましょう．<br>
 
-#### ENVIRONMENT IMAPS {#odbdb26f}
+#### Environment Imaps {#odbdb26f}
 
 > <table>
 > <tbody>
@@ -237,7 +237,7 @@ ATP では基本的に補完は &lt;Tab> を使用します．<br>
 \item
 ```
 
-#### FONT COMMANDS {#l4bb69da}
+#### Font Commands {#l4bb69da}
 
 > <table>
 > <tbody>
@@ -267,7 +267,7 @@ $##rm
 $\mathrm{}
 ```
 
-#### GREEK LETTERS {#ufe42a77}
+#### Greek Letters {#ufe42a77}
 
 > <table>
 > <tbody>
@@ -286,5 +286,10 @@ $#a
 ```
 $\alpha
 ```
+
+## 関連リンク {#xc3bb013}
+
+- [軽く使った感じ、vim-latex より Automatic LaTeX Plugin のほうがよさそうに見えますよー……と書いておこう。だれか拾ってくれるかもしれないし。](http://twitter.com/#!/KainokiKaede/status/129702502739357697)
+- [ATP のドキュメントを読むと幸せになれるかもしれない。ってか日本語リソース少なすぎワロタだから軽くレビューなどすると良いのかも。 ](http://twitter.com/#!/KainokiKaede/status/129713711647703040)
 
 [^1]: <span style="color:White;background-color:White;">※ただしイケメンに限る</span>
