@@ -511,8 +511,10 @@ Live preview for TeXShop
 
 ## 関連リンク {#qb1b8010}
 
-- [TeXworks vs TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_108.html)
-- [TeXworks &amp; TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_107.html)
+- [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
+- [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
+    - [TeXworks vs TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_108.html)
+    - [TeXworks &amp; TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_107.html)
 - [【TeXShopの設定】](http://www.math.meiji.ac.jp/~mk/diary/2011/09/#tex2html15)
 - [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
 - [TeXShopがUTF-8で文字化けするだと・・・](http://twitter.com/#!/kaihua7/status/129175210153881600)
