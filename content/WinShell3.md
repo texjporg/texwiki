@@ -2493,3 +2493,79 @@ END_BIBTEX
 ```
 
 ***
+
+- shiftjis2utf8.sh
+
+***
+
+```
+#!/bin/bash
+# usage
+# $1=project name
+# $2=mainname
+```
+
+```
+# 変数 -sjis-
+SJISDIR="./shiftjis"
+UTFDIR="./utf8"
+DICNAME=$2
+PLATEX="platex"
+BIBTEX="pbibtex"
+MENDEX="mendex"
+DVIPDF="dvipdfmx"
+```
+
+```
+# start
+if [ $1 = -h ]; then
+  echo "usage: dir_name main_file_name" 1>&2
+  echo "path to platex,bibtex8,mendex,dvipdfmx, and some commands are required (nkf)" 1>&2
+  exit 1
+fi
+if [ $# -ne 2 ]; then
+  echo "実行するには2個の引数が必要です。 -h 付けて実行するともしかしたらヒントが得られるかもしれません。" 1>&2
+  exit 1
+fi
+```
+
+```
+echo "checking if ${UTFDIR}/$1 exists..."
+if [ -d ${UTFDIR}/$1 ]; then
+  echo "[OK]" 1>&2
+else
+  echo "[NG]" 1>&2
+  echo "making the directory for main process..." 1>&2
+  mkdir ${UTFDIR}/$1
+fi
+echo "start copying files into ${UTFDIR}..." 1>&2
+cd ${SJISDIR}/$1/
+for f in *.tex *.bib; do nkf -J -w $f > ../.${UTFDIR}/$1/$f; done
+for f in *.bb *.png *.eps; do cp $f ../.${UTFDIR}/$1/$f; done  #*.sty
+if [ -f ${DICNAME}.ist ]; then
+  cp ${DICNAME}.ist ../.${UTFDIR}/$1/${DICNAME}.ist
+fi
+if [ -f ${DICNAME}.dic ]; then
+  cp ${DICNAME}.dic ../.${UTFDIR}/$1/${DICNAME}.dic
+fi
+echo "copy done!" 1>&2
+cd ../.${UTFDIR}/$1
+if [ -f ${DICNAME}.dic ]; then
+  nkf -J -w ${DICNAME}.dic > ${DICNAME}.dic.new && mv ${DICNAME}.dic.new ${DICNAME}.dic
+fi
+echo "start compiling..." 1>&2
+${PLATEX} -no-guess-input-enc -kanji=utf8 $2.tex
+${PLATEX} -no-guess-input-enc -kanji=utf8 $2.tex
+for c in *.bib; do ${BIBTEX} -kanji=utf8 $c; done
+${PLATEX} -no-guess-input-enc -kanji=utf8 $2.tex
+if [ -f ${DICNAME}.idx ]; then
+  ${MENDEX} -U -g -s ${DICNAME}.sty -d ${DICNAME}.dic ${DICNAME}.idx
+fi
+${PLATEX} -no-guess-input-enc -kanji=utf8 $2.tex
+${DVIPDF} $2
+echo " " 1>&2
+echo "Finished!" 1>&2
+exit 0;
+```
+
+***
