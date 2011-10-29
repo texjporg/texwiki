@@ -104,17 +104,12 @@ TeX installers for Windows - TeX Wiki
 
 TeX Wiki 以外にも Windows 用の TeX のインストールに関する解説サイトがあります。
 
-- [TeX「超」入門](http://www.nsknet.or.jp/~tony/TeX/texindex.html) /
-    [TeX Q and A](http://www.nsknet.or.jp/~tony/TeX/faq/) /
-    [TeXインストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) 
-    ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
-
 - [Oshima Laboratory Home Page (JP)](http://akagi.ms.u-tokyo.ac.jp/index-j.html) (大島研究室＠東京大)
     - [Windows95/98/Me/NT/2000/XP における dviout のインストール](http://akagi.ms.u-tokyo.ac.jp/tex_dvioutw.html)
     - [Windows95/98/Me/NT/2000/XP における TeX システムのインストール](http://akagi.ms.u-tokyo.ac.jp/texinst98.html)
     - [Windows95/98/Me/NT/2000/XP における日本語 TeX のインストールのチェック](http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html)
 - [Ghostscript + GSview の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
-    [ミラーサイト](http://www.geocities.jp/koh_hotta/ghost/)（堀田耕作さん
+    [ミラーサイト](http://www.khotta.org/ghost/)（堀田耕作さん
     @ 愛知教育大・数学）
     ［TeX，Ghostscript，GSview， mathabx，gnuplot，象形文字フォントについて］
     - [さあ、始めよう pLaTeX2e Blog](http://blogs.yahoo.co.jp/koh_hotta/folder/8260.html)
@@ -127,9 +122,13 @@ TeX Wiki 以外にも Windows 用の TeX のインストールに関する解説
 - [Window 版 LaTeX のインストール](http://mailsrv.nara-edu.ac.jp/~asait/latex/tex.htm) (浅井さん)
 - [あべのりページ](http://www.math.sci.hokudai.ac.jp/~abenori/) ([阿部紀行さん](http://d.hatena.ne.jp/abenori/) ([twitter](http://twitter.com/abenori)))
     「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
+    - AbTeXInstaller - TeX Wiki
+- [TeX「超」入門](http://www.nsknet.or.jp/~tony/TeX/texindex.html) /
+    [TeX Q and A](http://www.nsknet.or.jp/~tony/TeX/faq/) /
+    [TeXインストールガイド](http://www.nsknet.or.jp/~tony/TeX/install/) 
+    ([トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](http://twitter.com/tony4649)))
     <!-- ↑一次配布元などではないので、このあたりが妥当 -->
     <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
-    - AbTeXInstaller - TeX Wiki
 
 ### ダウンロードサイト {#y2ec963e}
 
