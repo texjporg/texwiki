@@ -523,7 +523,7 @@ C:\work>platex -jobname=予定 予定.tex
 などの [TeX 専用エディタ](</TeX用エディタ/>)が
 WWW 上に無償で公開されています。
 
-また [Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，[Vim](/Vim/)，[xyzzy](/xyzzy/)，[jEdit](http://www.jedit.org/)，Mery，[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)，[サクラエディタ](</サクラエディタ/>)，[gedit](http://projects.gnome.org/gedit/)，[Geany](http://www.geany.org/)，[秀丸エディタ](</秀丸エディタ/>) (シェアウェア)，[EmEditor Professional](http://jp.emeditor.com/) (シェアウェア)，WZ EDITOR (製品) などの
+また [Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，[Vim](/Vim/)，[xyzzy](/xyzzy/)，[jEdit](http://www.jedit.org/)，Mery，[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)，[サクラエディタ](</サクラエディタ/>)，[gedit](/gedit/)，[Geany](http://www.geany.org/)，[秀丸エディタ](</秀丸エディタ/>) (シェアウェア)，[EmEditor Professional](http://jp.emeditor.com/) (シェアウェア)，WZ EDITOR (製品) などの
 TeX 対応テキストエディタは
 ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），Shift_JIS（シフト JIS）[^4]，UTF-8
 などの様々な文字コードに対応しているので，
