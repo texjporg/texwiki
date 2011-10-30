@@ -111,6 +111,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
+- [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
 - [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
 - [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
 - [beamer 3.10について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=566)
