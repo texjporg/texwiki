@@ -35,4 +35,4 @@ hieroglf パッケージとして配布，および hieroglf の利用方法に�
 このページのミラーサイトの URI は次のようになります：
 : &nbsp;
 
-[http://www.geocities.jp/koh_hotta/ghost/hieroglf.html](http://www.geocities.jp/koh_hotta/ghost/hieroglf.html)
+[http://www.khotta.org/ghost/hieroglf.html](http://www.khotta.org/ghost/hieroglf.html)
