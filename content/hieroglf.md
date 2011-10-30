@@ -21,18 +21,18 @@ Peter Wilson 氏は2000年9月頃からパッケージを公開しており，
 その後改良が続けられています。
 
 TeX に
-おける[多書体利用の第一人者](http://auemath.aichi-edu.ac.jp/~khotta/ghost/package.html)でも
-あられる[堀田先生](http://auemath.aichi-edu.ac.jp/~khotta/ghost/)（愛知教育大・数学）
+おける[多書体利用の第一人者](http://www.khotta.org/ghost/package.html)でも
+あられる[堀田先生](http://www.khotta.org/)（愛知教育大・数学）
 が，hieroglyphic の利用ができるパッケージを必要なファイルと共に
 hieroglf パッケージとして配布，および hieroglf の利用方法についての
 詳細な解説をされてみえますので以下のページを参考になさってください。
 
-大学内のメインサイトの URI は次のようです：
+大学内のメインサイトの URL は次のようです：
 : &nbsp;
 
-[http://auemath.aichi-edu.ac.jp/~khotta/ghost/hieroglf.html](http://auemath.aichi-edu.ac.jp/~khotta/ghost/hieroglf.html)
+[http://www.khotta.org/ghost/hieroglf.html](http://www.khotta.org/ghost/hieroglf.html)
 
 このページのミラーサイトの URI は次のようになります：
 : &nbsp;
 
-[http://www.khotta.org/ghost/hieroglf.html](http://www.khotta.org/ghost/hieroglf.html)
+[http://khotta.digiweb.jp/ghost/hieroglf.html](http://khotta.digiweb.jp/ghost/hieroglf.html)
