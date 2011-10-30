@@ -91,6 +91,10 @@ jsMath.js の mathchardef テーブル内に追加
 
 > [http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php](http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php)
 
+### texvc {#te0254cd}
+
+- [texvc](http://www.mediawiki.org/wiki/Texvc)
+
 ### phpTeX {#nd0cba4b}
 
 - [phptex](http://phptex.sourceforge.net/)
