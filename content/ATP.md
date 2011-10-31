@@ -27,6 +27,8 @@ GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する�
 最新版へアップデートしてください．<br>
 詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
 
+GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
+
 - [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)
     - [ATP Requirements](http://atp-vim.sourceforge.net/requirements.shtml)
 - [Automatic LaTex Plugin for Vim at SourceForge](http://sourceforge.net/projects/atp-vim/)
