@@ -569,6 +569,8 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 ## 関連リンク {#h4cf9c4e}
 
+- [【タブレットPC】Windows7でシステムのプロパティ→詳細設定→データ実行防止→重要な～のみ有効にすると設定した。これでpackaged-xyzzyが動くようになった。xyzzy用のlispファイルが散逸しつつあるのが悲しい。YaTeXのxyzzy版のKaTeXは～続く](http://twitter.com/#!/genkuroki/status/130917274499563520), [【タブレットPC】続き。](http://twitter.com/#!/genkuroki/status/130917679149232128)
+- \[\[
 - [Windows7 で xyyzzy で KaTeX で TeX ライフ。](http://blog.goo.ne.jp/kei_matsuura2007/e/8c5ccbde9291d5410956b1e94e10dfaa)
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
 - [xyzzy + KaTeX - chibacarの色々なメモ](http://d.hatena.ne.jp/chibacar/20080420/1225725981)
