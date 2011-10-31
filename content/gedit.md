@@ -22,7 +22,7 @@ gedit は Windows や Mac OS X でも動作します．<br>
 - [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
     - [log](http://git.gnome.org/browse/gedit/log/)
 
-## gedit で TeX {#c01f900c}
+## gedit で LaTeX {#c01f900c}
 
 ### [gedit-latex](http://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
