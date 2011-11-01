@@ -1072,7 +1072,10 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイ
 
 ShiftJIS (Shift_JIS) では発生しませんでした．
 
-UTF-8 を使用したい方は，[WinShell 3.1 (旧バージョン)](http://stanag4172.m13.coreserver.jp/blog/archives/154) をダウンロードしてください．
+UTF-8 を使用したい方は，WinShell 3.1 (旧バージョン) をダウンロードするか [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/), [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) などの UTF-8 で問題の発生しない TeX 用エディタを使用してください．
+
+- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
+- [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) WinShell 3.1 (旧バージョン)
 
 [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
