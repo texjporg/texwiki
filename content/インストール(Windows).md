@@ -715,7 +715,7 @@ VxEditor#ツール をご覧ください．
 
 [秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
 
-#### [Sublime Text 2](http://www.sublimetext.com/2) + [LaTeXTools (LaTeX Plugin for Sublime Text 2)](https://github.com/SublimeText/LaTeXTools) {#o2535359}
+#### [Sublime Text 2](http://www.sublimetext.com/2) (シェアウェア) + [LaTeXTools (LaTeX Plugin for Sublime Text 2)](https://github.com/SublimeText/LaTeXTools) {#o2535359}
 
 ### 製品 {#jc4ae1f8}
 
