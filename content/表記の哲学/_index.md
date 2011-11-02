@@ -70,8 +70,10 @@ pukiwiki: "表記の哲学"
     - テンソル変数に使う（例：$\mathsfslbf{A}$）
 
 - 多数桁数値の3桁毎区切り
-    - 見易くするために「\\,」を挿入し3桁毎区切りが許される。すなわち，299\\,792\\,458．(ISO流)
-        - 区切りに narrow no-break space (U+202F) を使った例：299&#x202f;792&#x202f;458&thinsp;m/s（Safari等の環境では空白が見えないようです）
+    - 見易くするために「\\,」（thin space）を挿入し3桁毎区切りが許される。すなわち，299\\,792\\,458．(ISO流)
+
+- 区切りに &amp;thinsp;  を使った例：299&thinsp;792&thinsp;458&thinsp;m/s
+    - 区切りに narrow no-break space (U+202F) を使った例：299&#x202f;792&#x202f;458&thinsp;m/s（Safari等の環境では空白が見えないようです）
     - 英語流では“,”で区切って，299,792,458 （数式モード内では $299{,}792{,}458$）
         - 参考情報wikipedia: [http://ja.wikipedia.org/wiki/小数点](<http://ja.wikipedia.org/wiki/小数点>)
 
