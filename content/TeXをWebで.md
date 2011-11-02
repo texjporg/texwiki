@@ -114,6 +114,10 @@ do.php の中身は適当に直します（特に teTeX をインストールし
 ulimit -t 10 -f 1024
 ```
 
+### 関連リンク {#cfaeb364}
+
+- [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
+
 ***
 
 - Windows環境で動かしているかたがいれば設置法を教えてください --  2005-01-22 (土) 22:53:11
