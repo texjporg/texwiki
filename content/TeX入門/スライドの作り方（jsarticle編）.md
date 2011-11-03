@@ -28,7 +28,7 @@ jsarticleにslideオプションを付けると簡単にスライドができま
 
 ```
 \documentclass[slide,papersize]{jsarticle}
-\usepackage[dvipdfm]{graphicx,color}
+\usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
 \title{題名}
