@@ -342,9 +342,9 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>simpdftex eptex --mode dvipdfmx</ins><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>simpdftex eptex --mode dvipdfmx --extratexopts "-kanji=utf8"</ins><br>
 　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>simpdftex platex --mode dvipdfmx</ins><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>simpdftex platex --mode dvipdfmx --extratexopts "-kanji=utf8"</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
