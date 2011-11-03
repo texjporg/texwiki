@@ -31,11 +31,13 @@ pukiwiki: "TeXlipse"
         - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
         - [texlipse documentation](http://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
 - [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
+- [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
 
 2011-08-07 TeXlipse Version 1.4.2 がリリースされました．64-bit Windows に対応しました．
 
 ### スクリーンショット {#j94c34b3}
 
+[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br>
 [![This picture shows the BibTeX completion in action. The cursor disappeared from the screenshot,but you can see the "shadow" of it,as one of the curly braces is highlighted on the line where the error is.](http://texlipse.sourceforge.net/screenshots/bibref-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/bibref-screen.png)
 　 [![This picture shows navigation from build errors to source file. Latex reports all kinds of warnings and errors,and not all of them contain a line number. However,there usually is also a valid error message with line number information.](http://texlipse.sourceforge.net/screenshots/freport-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/freport-screen.png)
 
@@ -46,7 +48,7 @@ pukiwiki: "TeXlipse"
 - 自動ビルド
 - 自動補完
 - スペル・チェッカー
-- SyncTeX による forward and inverse search (SumatraPDF)
+- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF)
 - Source Special による forward and inverse search (dviout)
 
 ## 注意点 {#f6b7dd5c}
