@@ -34,9 +34,9 @@ PLplot で PDF ファイルを作成する場合は [libHaru](http://libharu.org
 libHaru のビルドには zlib, libpng が必要です．<br>
 
 ```
-$ curl -R -L -O http://libharu.org/files/libharu-2.3.0-rc1.tar.bz2
-$ tar jxvf libharu-2.3.0-rc1.tar.bz2
-$ pushd libharu-2.3.0-rc1
+$ curl -R -L -O http://libharu.org/files/libhpdf-2.3.0RC2.tar.bz2
+$ tar jxvf libhpdf-2.3.0RC2.tar.bz2
+$ pushd libhpdf-2.3.0RC2
 $ ./configure --prefix=/mingw --with-zlib=/mingw --with-png=/mingw
 $ make
 $ make install
@@ -48,9 +48,9 @@ ada と tcl のバインディングを有効にするとビルド時にエラ�
 &#x2d;DPLD_pdf=ON を指定すると，リンク時にエラーが発生したので指定しませんでした．<br>
 
 ```
-$ curl -R -L -o plplot-5.9.8.tar.gz http://sourceforge.net/projects/plplot/files/plplot/5.9.8%20Source/plplot-5.9.8.tar.gz/download
-$ tar zxvf plplot-5.9.8.tar.gz
-$ cd plplot-5.9.8
+$ curl -R -L -o plplot-5.9.9.tar.gz http://sourceforge.net/projects/plplot/files/plplot/5.9.9%20Source/plplot-5.9.9.tar.gz/download
+$ tar zxvf plplot-5.9.9.tar.gz
+$ cd plplot-5.9.9
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_ada=OFF -DENABLE_tcl=OFF -DPLD_ps=ON -DPLD_pstex=ON
@@ -75,10 +75,10 @@ $ make install
 ```
 
 PLplot でデバイスに出力する場合に wingcc.dll, ps.dll などのドライバ (DLL ファイル) が必要になります．<br>
-/mingw/lib/plplot5.9.8/driversd/ にパスを通します．<br>
+/mingw/lib/plplot5.9.9/driversd/ にパスを通します．<br>
 
 ```
-$ export PATH=/mingw/lib/plplot5.9.8/driversd:$PATH
+$ export PATH=/mingw/lib/plplot5.9.9/driversd:$PATH
 ```
 
 ## アンインストール {#s2821338}
@@ -100,11 +100,11 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 サンプルをビルドしてみます．
 
 ```
-$ cd /mingw/share/plplot5.9.8/examples/
+$ cd /mingw/share/plplot5.9.9/examples/
 $ cd c
 $ make
 $ ./x01c
-PLplot library version: 5.9.8
+PLplot library version: 5.9.9
 
 Plotting Options:
  < 1> wingcc     Win32 (GCC)
