@@ -186,7 +186,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
-  var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
   var button = wshShell.Popup(cmd, 0, "pdfupLaTeX", 1);
@@ -900,7 +900,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
-  var dvipdfm = "updvipdfmx" + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
