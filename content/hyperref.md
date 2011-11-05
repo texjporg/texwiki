@@ -52,7 +52,7 @@ pukiwiki: "hyperref"
 
 #### しおり（bookmark）つきのpdf文書作成 {#fe7cad10}
 
-platex + dvipdfmx の場合は，下記のようにします．
+(u)platex + dvipdfmx の場合は，下記のようにします．
 
 ```
 \usepackage[dvipdfmx,%
@@ -93,11 +93,11 @@ v6.75e で dvipdfmx が指定できるようになりました．
 
 のどちらかを試してみてください．
 
-platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．
+(u)platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
+(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -740,7 +740,7 @@ hyperrefパッケージと同じ(?) \urlコマンドを提供する．
 
 hyperrefパッケージをデフォルトで読み込む．
 
-### pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
+### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
 
 ```
 \usepackage[dvipdfmx]{hyperref}
