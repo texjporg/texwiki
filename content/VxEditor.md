@@ -195,7 +195,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -897,7 +897,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; updvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
