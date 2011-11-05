@@ -100,15 +100,20 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
 
 ```
+\ifx\kanjiskip\undefined\else
 \usepackage{atbegshi}
+\ifx\ucs\undefined
 \ifnum 42146=\euc"A4A2
   \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
 \else
   \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
 \fi
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+\fi\fi
 ```
 
-uplatex + updvipdfmx, lualatex, xelatex では必要ありません．
+lualatex, xelatex では必要ありません．
 
 lualatex の場合は，hyperref のオプションに
 
@@ -745,13 +750,16 @@ hyperrefパッケージをデフォルトで読み込む．
 
 ```
 \ifx\kanjiskip\undefined\else
-\ifx\ucs\undefined
 \usepackage{atbegshi}
+\ifx\ucs\undefined
 \ifnum 42146=\euc"A4A2
   \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
 \else
   \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-\fi\fi\fi
+\fi
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+\fi\fi
 ```
 
 \usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまいます．
