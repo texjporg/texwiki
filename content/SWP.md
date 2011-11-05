@@ -57,6 +57,12 @@ pLaTeX と dviout は乙部さんの本のものが想定されているよう�
 （SWreadme.tex にはJISコードに変換すると書かれています），
 これを通常のシフトJIS対応の platex コマンドで処理し，dviout で表示・印刷するというものです。
 
+### 不具合 {#w74f19d6}
+
+#### Windows 7 SP1 で CPU 使用率が 100% になる {#ebd10526}
+
+- [100% CPU Load | MacKichan Software User Community](http://forum.mackichan.com/node/344)
+
 ### 試用してみて {#kac06ad3}
 
 たいへん快適です（そのうちもっと詳しく書きます）。
