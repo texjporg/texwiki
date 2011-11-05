@@ -260,7 +260,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvipdfmx "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -288,7 +288,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1010,7 +1010,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; updvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b" &amp;&amp; dvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1038,7 +1038,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){updvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; uplatex -no-guess-input-enc -kanji=utf8 "%b";if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
