@@ -513,6 +513,7 @@ Live preview for TeXShop
 
 - [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
+    - [TeXworks vs TeXShop #2](http://www.geocities.jp/flutecore/Weblog/archives/2011/11/entry_111.html)
     - [TeXworks vs TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_108.html)
     - [TeXworks &amp; TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_107.html)
 - [【TeXShopの設定】](http://www.math.meiji.ac.jp/~mk/diary/2011/09/#tex2html15)
