@@ -35,6 +35,12 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
+## 正規表現 {#f7fa3efd}
+
+- [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
+    - [h-tom's Warehouse - 秀丸エディタ macro](http://homepage3.nifty.com/_htom/macro/)
+        - [hmonig.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-18)
+
 ## マクロ {#m32041fb}
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
