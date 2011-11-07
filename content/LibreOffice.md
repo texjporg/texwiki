@@ -23,6 +23,7 @@ LibreOffice はフリーのオフィススイートです．
     - [build](http://cgit.freedesktop.org/libreoffice/build/)
         - [log](http://cgit.freedesktop.org/libreoffice/build/log/)
 - [Home &raquo; LibreOffice](http://www.libreoffice.org/)
+- [LibreOffice Extensions](http://extensions.libreoffice.org/)
 - [ホーム &raquo; LibreOffice](http://ja.libreoffice.org/)
 - [LibreOffice Portable](http://portableapps.com/apps/office/libreoffice_portable)
     - [Index of /libreoffice/portable](http://download.documentfoundation.org/libreoffice/portable/)
@@ -49,6 +50,7 @@ OpenOffice.org はフリーのオフィススイートです．
 
 ## LibreOffice/OpenOffice.org Writer {#z088446c}
 
+- [TexMaths](http://roland65.free.fr/texmaths/)
 - [Writer2LaTeX](http://writer2latex.sourceforge.net/)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
@@ -59,11 +61,13 @@ OpenOffice.org はフリーのオフィススイートです．
 
 ## LibreOffice/OpenOffice.org Impress {#ha3da53a}
 
+- [TexMaths](http://roland65.free.fr/texmaths/)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
 ## LibreOffice/OpenOffice.org Draw {#t359ffe0}
 
+- [TexMaths](http://roland65.free.fr/texmaths/)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 
 ## LibreOffice/OpenOffice.org Math {#p45a32d8}
