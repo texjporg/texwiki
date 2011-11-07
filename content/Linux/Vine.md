@@ -223,16 +223,17 @@ ggv が採用されました。
 
 ```
 \ifx\kanjiskip\undefined\else
-\usepackage{atbegshi}
-\ifx\ucs\undefined
-\ifnum 42146=\euc"A4A2
-  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
-\else
-  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+  \usepackage{atbegshi}
+  \ifx\ucs\undefined
+    \ifnum 42146=\euc"A4A2
+      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+    \else
+      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+    \fi
+  \else
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+  \fi
 \fi
-\else
-  \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
-\fi\fi
 \usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
 bookmarkstype=toc]{hyperref}
 ```
