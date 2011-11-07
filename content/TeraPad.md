@@ -41,15 +41,25 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　　</ins></span><br>
 
 ```
-\documentclass[12pt,papersize]{jsarticle}
-%
-\usepackage{atbegshi}
-\ifnum 42146=\euc"A4A2
-  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\ifx\kanjiskip\undefined
+  \documentclass[12pt,papersize]{ltjsarticle}
+  \usepackage[pdftex,unicode]{hyperref}
 \else
-  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+  \ifx\ucs\undefined
+    \documentclass[12pt,papersize]{jsarticle}
+    \usepackage{atbegshi}
+    \ifnum 42146=\euc"A4A2
+      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+    \else
+      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+    \fi
+  \else
+    \documentclass[12pt,papersize,uplatex]{jsarticle}
+    \usepackage{atbegshi}
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+  \fi
+  \usepackage[dvipdfmx]{hyperref}
 \fi
-\usepackage[dvipdfmx]{hyperref}
 \hypersetup{%
   bookmarksnumbered=true,%
   colorlinks=true,%
@@ -311,6 +321,12 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
+#### 簡単なテスト {#s08ac32b}
+
+1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け，UTF-8N で terapad.tex という名前で保存します．
+1. Shift + Alt + J を押すと PDF ファイルが作成されます．
+1. もう一度 Shift + Alt + J を押すと，今度はしおり付きの PDF ファイルが作成されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
+
 ### pdfupLaTeX2 {#b29609f2}
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
@@ -524,6 +540,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - エディタ画面を右クリック → \[ツール(S)\] → \[LuaLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+#### 簡単なテスト {#e4a85b02}
+
+1. [LuaTeX-ja](/LuaTeX/#nec94db0) をインストールします．
+1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け，UTF-8N で terapad.tex という名前で保存します．
+1. Shift + Alt + U を押すと PDF ファイルが作成されます．
+1. もう一度 Shift + Alt + U を押すと，今度はしおり付きの PDF ファイルが作成されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
 ### XeLaTeX {#h71b9f3f}
 
