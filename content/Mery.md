@@ -35,6 +35,39 @@ Mery は
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
 - [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
 
+## 既定のエンコード {#ccaf57fb}
+
+LaTeX 文書で使用するエンコードを指定します．
+
+- Unicode (UTF-8, BOM無)
+- Unicode (UTF-8, BOM有)
+- 日本語 (シフト JIS)
+- 日本語 (EUC)
+- 日本語 (JIS)
+
+***
+
+<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<strong>\[　基本　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　表示　\]\[　記号　\]\[　関連付け　\]\[　キーボード　\]\[　履歴　\]</ins></span><br>
+
+　　　　折り返し方法(W):　　　　　　　　　　　　　　 ☑行番号を表示(N)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　　▼\]</span>　　　☑ルーラを表示(R)<br>
+　　　　行の表示方法(D):　　　　　　　　　　　　　 ☑ルーラで文字数を指定する(S)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　　 ▼\]</span>　　　☑折り返し線を表示(A)<br>
+　　　　文字数(M):　　　<ins>　　　　　　80\[◆\]</ins>　　　　　☑カーソルのある行に下線を表示(U)<br>
+　　　　引用マーク(Q):　<ins>>　　　　　　　　　</ins>　　　　　☑対応する括弧を強調する(H)<br>
+　　　　タブの桁数(T):　<span style="color:Black;background-color:#EEEEEE;">\[2　　　　　　　▼\]</span>　　　　　☐自動インデントを有効にする(T)<br>
+　　　　行間隔(L):　　　<ins>　　　　　　　0\[◆\]</ins>　　　　　☐タブの代わりに空白を挿入(I)<br>
+　　　　既定のエンコード(E):　　　　　　　　　　　　☐かな漢字変換を起動(P)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[Unicode (UTF-8, BOM無)　　　 ▼\]</span>　　　☑URLをダブルクリックするとそのURLを表示(K)<br>
+　　　　既定の改行コード(C):　　　　　　　　　　　☑カーソル位置とブックマークを保存する(V)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　　▼\]</span>　　　☐ウィンドウ位置を復元(O)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ウィンドウサイズを復元(Z)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
+
+***
+
 ## マクロ {#oa5f5cea}
 
 マクロを使うと [サクラエディタ](</サクラエディタ/>) と同様に，LaTeX 環境を簡単に作ることができます．
