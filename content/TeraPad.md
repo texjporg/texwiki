@@ -77,7 +77,7 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
   \item 画面分割
   \item D \& D 編集
   \item IME の再変換に対応
-  \item 元に戻す, やり直し (64 ～ 10000 回の範囲で設定可能)
+  \item 元に戻す, やり直し
   \item HTML, Perl, PHP, CSS, Ruby, C/C\verb-++-, VB, Delphi などの各種編集モード
   \item 引用行のカラー表示 (「\textgreater」「＞」など任意の引用符を設定可能)
   \item URL, メールアドレスのカラー表示と関連付けされたソフトの起動
@@ -98,6 +98,30 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 %
 \end{document}
 ```
+
+***
+
+## 文字コード {#fbac96c1}
+
+メニューの \[表示(V)\] → \[オプション(O)...\] → \[文字コード\]
+
+UTF-8N (BOM なし), UTF-8, SHIFT-JIS, EUC, JIS の中から作成する LaTeX 文書に合った文字コードを選択します．
+
+***
+
+<span style="color:Black;background-color:#ACCEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　　\]\[　ウィンドウ　\]\[　表示　　\]\[　色　　　\]\[　ルーラー/行番号　\]\[　禁則処理　\]\[　ブラウザ　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　ファイル　\]\[　フォルダ　 \]\[　バックアップ　\]\[　履歴　　\]\[ 　拡張子　 \]</ins></span><strong>\[　文字コード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　その他　\]</ins></span><br>
+　　　　文字コードの設定<br>
+
+　　　　☑文字/改行コードを自動認識する(J)<br>
+　　　　☐再読込は現在の文字コードで行う(R)<br>
+
+<br>
+
+　　　　初期文字コード(C):　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8N　　　　▼\]</span>　　　　初期改行コード(E):　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF　　　　 ▼\]</span><br>
+　　　　保存文字コード(D):　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　▼\]</span>　　　　保存改行コード(L):　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　▼\]</span><br>
 
 ***
 
@@ -298,7 +322,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "%b"};if($?){dvipdfmx "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
