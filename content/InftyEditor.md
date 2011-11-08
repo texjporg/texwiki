@@ -30,3 +30,7 @@ InftyEditor 学生版は，LaTeX ソース編集専用のフリーソフト版�
     - [InftyProject Software](http://www.inftyproject.org/en/software.html)
 
 InftyEditor 英語版はフリーウェアです．日本語入力が出来ないこと以外の機能制限はありません．
+
+### 関連リンク {#i5f3aa5a}
+
+- [0618 黒背景のPowerPoint2007に白文字の数式を表示する方法](http://tanke.blog3.fc2.com/blog-entry-573.html)
