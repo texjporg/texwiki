@@ -22,6 +22,27 @@ VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作す�
     - [dr-x (vxeditor) on Twitter](http://twitter.com/vxeditor)
 - [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
 
+## 文字コード {#t4c94e06}
+
+メニューの \[表示(V)\] → \[共通の設定(O)...\] → \[文字コード\]
+
+UTF-8N (BOM なし), UTF-8, 日本語 SJIS, 日本語 EUC, 日本語 JIS の中から作成する LaTeX 文書に合った文字コードを選択します．
+
+***
+
+<span style="color:Black;background-color:#F51010;"><ins>　<span style="color:White;">共通の設定</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　　表示　　 \]\[ 　　編集　　 \]\[ 　　入力　　 \]\[　ウィンドウ　\]\[ 　　検索　　 \]\[ 　　書式　　 \]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　履歴　　　\]\[ 　　ファイル　　 \]\[ 　　フィルタ　　 \]\[ 　ダイアログ　 \]</ins></span><strong>\[ 　文字コード　 \]</strong><br>
+　　　　文字コードの設定<br>
+
+<br>
+
+　　　　　初期文字コード(C):　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8N　　　　　　 ▼\]</span><br>
+　　　　　初期改行コード(R):　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF　　　　　　　▼\]</span><br>
+
+***
+
 ## ツール {#t542b96a}
 
 ツールの設定をすると TeraPad と同様に，LaTeX 環境を簡単に作ることができます．
@@ -307,10 +328,6 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
 
 ### pdfLaTeX {#jef6ef8d}
-
-<em>※注意</em>
-
-> <em>欧文専用です．日本語は使えません．</em>
 
 メニューの \[ツール(T)\] → \[ツールの設定(T)...\]
 
