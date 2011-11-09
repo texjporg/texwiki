@@ -342,7 +342,8 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 #### 祝鳥 0.85r1 でエラー (保護違反) → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111104) を fortex の sub フォルダに上書き {#m28c9ec8}
 
 [2011-11-04 - にっき♪](http://d.hatena.ne.jp/abenori/20111104) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きすれば保護違反のエラーが発生しなくなります．<br>
-原因は [2011-10-30 - にっき♪](http://d.hatena.ne.jp/abenori/20111030) に書かれている不正なアドレス参照？
+[macrodll 落下地点](http://forum.mobitan.org/hm/?n=2441) によると LISTBOX_GETCOMMONSTR() で落ちるようです．<br>
+原因は [2011-10-30 - にっき♪](http://d.hatena.ne.jp/abenori/20111030) に書かれている不正なアドレス参照？<br>
 
 祝鳥 0.85r1 で秀丸エディタ Version 8.10 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
