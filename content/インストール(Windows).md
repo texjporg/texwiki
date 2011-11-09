@@ -17,6 +17,9 @@ pukiwiki: "インストール(Windows)"
 
 ### ニュース {#x8db7c39}
 
+- \[2011/11/06\]<br>
+    <span style="color:Red;"><strong>updvipdfmx が無くなりました．<br>(e-)upTeX でも dvipdfmx を使うようにしてください．</strong></span>
+
 - \[2011/10/22\]<br>
     <span style="color:Red;"><strong>euplatex が無くなりました．<br>uplatex は uptex ではなくて euptex の上で動くようになりました．</strong></span>
 
