@@ -59,13 +59,13 @@ X Window System 用ソフトウェアの開発環境などをインストール�
 適当なディレクトリを作り，その中に
 [tetex-src-3.0.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-src-3.0.tar.gz),
 [tetex-texmf-3.0po.tar.gz](ftp://ftp.ring.gr.jp/pub/text/CTAN/obsolete/systems/unix/teTeX/3.0/distrib/tetex-texmf-3.0po.tar.gz),
-[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20YYMMDD.tar.gz（最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
+[ptetex3](http://tutimura.ath.cx/~nob/tex/ptetex/ptetex3/)-20090610.tar.gz（最新の日付のもの） <!-- %%[[ptetex-cmap:http://tutimura.ath.cx/~nob/tex/ptetex/ptetex-cmap/]]-2006????.tar.gz%% （←もう不要） -->
 をダウンロードし，
 その中で次のようにします（ターミナルでコマンドを打ち込みます）。 <!-- （ptetex-cmap は 2005年11月11日以降ほぼ不要になりました。） -->
 
 ```
-tar xvzf ptetex3-20YYMMDD.tar.gz
-cd ptetex3-20YYMMDD
+tar xvzf ptetex3-20090610.tar.gz
+cd ptetex3-20090610
 cp my_option.sample ../my_option （オプションを変更したいのなら）
 ```
 
@@ -757,7 +757,7 @@ jun101-l-v    V kozgostd-light.otf
 ### xdvi {#a7bdcae8}
 
 > Mac OS X では [Skim](http://skim-app.sourceforge.net/) のほうがおすすめです。
-> Mac OS X + X11 で xdvi をインストールする方法は [TeXのインストール - PukiWiki \[Internet Archive\]](http://replay.web.archive.org/20090101090412/http://www.imlab.sie.dendai.ac.jp/~odate/pukiwiki/index.php?TeX%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
+> Mac OS X + X11 で xdvi をインストールする方法は [TeXのインストール - PukiWiki \[Internet Archive\]](http://web.archive.org/web/20100612224822/http://www.imlab.sie.dendai.ac.jp/~odate/pukiwiki/index.php?TeX%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
 > に詳しく載っています。
 > あるいは統合環境の [TeXShop](/TeXShop/)
 > を使えばエディタやプレビューアを別途用意する必要もなくなります。
