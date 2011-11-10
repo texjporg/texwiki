@@ -647,6 +647,7 @@ Hello, \TeX !
 - [Ubuntu日本語フォーラム / xelatex で日本語をかく仕方](https://forums.ubuntulinux.jp/viewtopic.php?id=9469)
 - [LaTeX の依存関係実際書くのめんどくさい (.tex, .bib などなど) ので、latexmk + xelatex の道を進んでみよう](http://twitter.com/#!/ikegami__/status/129727452137259008)
 - [~/.latexmkrc に $pdflatex = "xelatex"; と書いて、 % latexmk -pdf -pvc target.tex と書くだけで、バックグラウンド監視 xelatex 完成した、すばらし](http://twitter.com/#!/ikegami__/status/129730814471712768)
+- [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
 
 ### コメント {#d0504266}
 
