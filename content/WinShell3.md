@@ -254,7 +254,7 @@ Winshell 3.0 の場合：
 
 日本語の文章を作成する場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします．
 
-### 主なTeXプログラムの設定 (エンコーディングが ShiftJIS の場合) {#v03241d0}
+## 主なTeXプログラムの設定 (エンコーディングが ShiftJIS の場合) {#v03241d0}
 
 ［オプション］ → ［TeX関連プログラム設定］ で
 「exeファイル名」を次のように設定します．インストールしたドライブが
@@ -267,7 +267,7 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 <em>注意 x64 環境でも TeX 環境用(gs が 32bit dll等) の GSView は必ず x86 用をインストールして下さい。</em>
 
-#### LaTeX {#j415cdd8}
+### LaTeX {#j415cdd8}
 
 platex.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\platex.exe)
 
@@ -300,7 +300,7 @@ platex.exe (うまくいかなければフルパスで指定してください�
 
 ***
 
-#### BibTeX {#x2fc6cd6}
+### BibTeX {#x2fc6cd6}
 
 <em>2009/7/20 に W32TeXの "jbibtex.exe" は "pbibtex.exe" に変更されました．それ以前の W32TeX をインストールされている方は，BibTeX の設定の部分を "jbibtex.exe" にしてください． ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
 
@@ -335,7 +335,7 @@ pbibtex.exe (うまくいかなければフルパスで指定してください�
 
 ***
 
-#### DVIView {#gc5e030c}
+### DVIView {#gc5e030c}
 
 C:\w32tex\dviout\dviout.exe (\[参照(B)...\] で dviout.exe を検索)
 
@@ -368,7 +368,7 @@ C:\w32tex\dviout\dviout.exe (\[参照(B)...\] で dviout.exe を検索)
 
 ***
 
-#### DVI -> PS {#m386c533}
+### DVI -> PS {#m386c533}
 
 <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました．それ以前の W32TeX をインストールされている方は，DVI -> PS の設定の部分を "dvipsk.exe" にしてください． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
 
@@ -403,7 +403,7 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 ***
 
-#### GSView {#gb236799}
+### GSView {#gb236799}
 
 "C:\Program Files\Ghostgum\gsview\gsview32.exe" (64bit版Windows の場合は "C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe") (\[参照(B)...\] で gsview32.exe を検索)
 
@@ -436,7 +436,7 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 ***
 
-#### PDFLaTeX {#f08ac8c2}
+### PDFLaTeX {#f08ac8c2}
 
 - exeファイル名を dvipdfmx.exe に変更します．(うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\dvipdfmx.exe)
 - さらに，コマンドラインも "%s.dvi" に変更します．
@@ -470,7 +470,7 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 ***
 
-#### PDFView {#gffc0a36}
+### PDFView {#gffc0a36}
 
 - [TeXworks](/TeXworks/) の場合，[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．exeファイル名を C:\w32tex\share\texworks\TeXworks.exe (\[参照(B)...\] で TeXworks.exe を検索) とします．
 - [SumatraPDF](/SumatraPDF/) の場合，exeファイル名を "C:\Program Files\SumatraPDF\SumatraPDF.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe") (\[参照(B)...\] で SumatraPDF.exe を検索) とします．
@@ -480,7 +480,7 @@ dvips.exe (うまくいかなければフルパスで指定してください．
 
 PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．
 
-■ TeXworks の場合
+#### TeXworks の場合 {#hc3a2b77}
 
 [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
 
@@ -513,7 +513,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ***
 
-■ SumatraPDF の場合
+#### SumatraPDF の場合 {#r627f09f}
 
 ***
 
@@ -544,7 +544,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ***
 
-■ Adobe Reader X，WinShell 3.3.2.3 以降のバージョンの場合
+#### Adobe Reader X，WinShell 3.3.2.3 以降のバージョンの場合 {#f03db245}
 
 ***
 
@@ -575,7 +575,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ***
 
-■ Adobe Reader X，WinShell 3.3.2.3 よりも前のバージョンの場合
+#### Adobe Reader X，WinShell 3.3.2.3 よりも前のバージョンの場合 {#v7b43812}
 
 ***
 
@@ -606,7 +606,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ***
 
-■ Adobe Reader 9 の場合
+#### Adobe Reader 9 の場合 {#qfb9a940}
 
 ***
 
@@ -637,7 +637,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 
 ***
 
-### ユーザ指定プログラム (エンコーディングが ShiftJIS の場合) {#q408fd2f}
+## ユーザ指定プログラム (エンコーディングが ShiftJIS の場合) {#q408fd2f}
 
 “DOS”のチェック (☑) は，exe ファイルが DOS (コンソール) アプリケーションで，出力先をコンソールではなく WinShell の Output Window に変更することを意味しています．
 
@@ -655,7 +655,7 @@ PDFLaTeXを先に実行 のチェックは外しておいた方が良いでし�
 > チェックを付けてあると，エラーのときに下のログ窓に
 > エラーの状況が出るだけになります。この挙動は逆のような気がします……。
 
-#### pdfpLaTeX {#f117c474}
+### pdfpLaTeX {#f117c474}
 
 欧文の文書を作成する方は，\[PDFLaTeX\] の項目はデフォルトの pdflatex のままで，［オプション］ → ［ユーザー指定プログラム］ で Tool 1 の プログラム名を pdfpLaTeX，exeファイル名を dvipdfmx.exe に設定しておくと、欧文は pdflatex, 和文は platex + dvipdfmx と使いわけができます．
 
@@ -711,7 +711,7 @@ exeファイル名
 
 ***
 
-#### pdfpLaTeX2 {#o1b22e62}
+### pdfpLaTeX2 {#o1b22e62}
 
 ［オプション］ → ［ユーザー指定プログラム］ で
 Tool 2 を pdfpLaTeX2 に設定します。
@@ -761,7 +761,7 @@ exeファイル名
 
 ***
 
-#### Mendex {#z53d4c84}
+### Mendex {#z53d4c84}
 
 ［オプション］ → ［ユーザー指定プログラム］ で
 Tool 3 を Mendex に設定します。
@@ -815,7 +815,7 @@ exeファイル名
 ツールバーに登録できます。ただしメニューバーの言語を
 English にしておかないと，文字が大部分表示されないことがあるかもしれません。
 
-### 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合) {#g728aabc}
+## 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合) {#g728aabc}
 
 最新版の WinShell で UTF-8 を使用する場合は，まず \[主なTeXプログラムの設定\] のプログラムの
 
@@ -850,7 +850,7 @@ English にしておかないと，文字が大部分表示されないことが
 の LaTeXを先に実行と PDFLaTeXを先に実行のチェックをすべてはずします．
 これらのプログラムは LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます．
 
-#### LaTeX {#vb61ae7c}
+### LaTeX {#vb61ae7c}
 
 ***
 
@@ -881,7 +881,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### PDFLaTeX {#aa58f8e6}
+### PDFLaTeX {#aa58f8e6}
 
 ***
 
@@ -912,7 +912,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### BibTeX {#f738702c}
+### BibTeX {#f738702c}
 
 ***
 
@@ -943,7 +943,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### DVIView {#t3155d55}
+### DVIView {#t3155d55}
 
 ***
 
@@ -974,7 +974,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### DVI -> PS {#vc4b836f}
+### DVI -> PS {#vc4b836f}
 
 ***
 
@@ -1005,7 +1005,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### GSView {#c86acf84}
+### GSView {#c86acf84}
 
 ***
 
@@ -1036,7 +1036,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### PDFView {#q59b9a0b}
+### PDFView {#q59b9a0b}
 
 ***
 
@@ -1067,12 +1067,12 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-### ユーザ指定プログラム (エンコーディングが UTF-8 の場合) {#w2dc76e1}
+## ユーザ指定プログラム (エンコーディングが UTF-8 の場合) {#w2dc76e1}
 
 次に \[ユーザ指定プログラム\] へプログラムを設定します．<br>
 \[ユーザ指定プログラム\] を使用すると Runtime Error! にならずにコンパイルすることができます．<br>
 
-#### pLaTeX {#t92da731}
+### pLaTeX {#t92da731}
 
 ***
 
@@ -1107,7 +1107,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### upLaTeX {#dccc6ce8}
+### upLaTeX {#dccc6ce8}
 
 ***
 
@@ -1142,7 +1142,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### dvipdfmx {#lde7d8ef}
+### dvipdfmx {#lde7d8ef}
 
 ***
 
@@ -1177,7 +1177,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### ps2pdf {#i337fee7}
+### ps2pdf {#i337fee7}
 
 ***
 
@@ -1212,7 +1212,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### pdfLaTeX {#h0f0b8cb}
+### pdfLaTeX {#h0f0b8cb}
 
 ***
 
@@ -1247,7 +1247,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### LuaLaTeX {#ecf6765b}
+### LuaLaTeX {#ecf6765b}
 
 ***
 
@@ -1282,7 +1282,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### XeLaTeX {#k56949e4}
+### XeLaTeX {#k56949e4}
 
 ***
 
@@ -1317,7 +1317,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### upBibTeX {#x3ca6d7d}
+### upBibTeX {#x3ca6d7d}
 
 ***
 
@@ -1352,7 +1352,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### Mendex {#f0721163}
+### Mendex {#f0721163}
 
 ***
 
@@ -1387,7 +1387,7 @@ English にしておかないと，文字が大部分表示されないことが
 
 ***
 
-#### Asymptote {#s5ca02c1}
+### Asymptote {#s5ca02c1}
 
 ***
 
