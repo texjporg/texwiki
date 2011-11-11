@@ -61,6 +61,10 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 > - Windows NT4, 2000 での動作は，サポート対象外です。
 > - Windows Vista 64bit 日本語版には正式対応していません。
 
+### 関連リンク {#k3c11ffb}
+
+- [WZ EDITOR 7の備忘録](http://www.sd-dream.com/pasocompass/neta/11110701Wz7Memo.html?cat=WZ+EDITOR+7)
+
 ## [WZ EDITOR 6](http://www.wzsoft.jp/wz6/) {#k023a395}
 
 <strong>2010年8月31日に、WZ EDITOR 6 の販売を終了しました。</strong><br>
