@@ -23,6 +23,7 @@ pukiwiki: "Linux/Gentoo"
 # emerge texlive dvipdfmx
 ```
 
+- [TeX Live - Gentoo Wiki](http://wiki.gentoo.org/wiki/TeX_Live)
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
 - [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 - [Suzuki Lab wiki - GentooLinux#LaTeX](http://www.os.cis.iwate-u.ac.jp/wikky/wikky.cgi?GentooLinux#t15)
