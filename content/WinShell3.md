@@ -94,15 +94,13 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 
 ### 日本語化ファイル {#i83c37b0}
 
-WinShell3#WinShell3日本語化ファイル を参照．
+- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
+    <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
-<!--  -->
-<!-- -[[WinShell3日本語化:http://redmine.nnnnn.me/projects/winshell/files]] -->
-<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
-<!--  -->
-<!-- [[( ﾟÅﾟ)んー？誰ｄｓｋ？:http://twitter.com/whoami]] さんが WinShell3日本語化ファイルを公開されています．~ -->
-<!-- WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．~ -->
-<!-- ダウンロードしたファイルは WinShell の Translations フォルダに置いてください． -->
+[( ﾟÅﾟ)んー？誰ｄｓｋ？](http://twitter.com/whoami) さんが WinShell3日本語化ファイルを公開されています．<br>
+WinShell に付属の日本語化ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
+ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．<br>
+ダウンロードできない場合は WinShell3#WinShell3日本語化ファイル を参照してください．<br>
 
 ## 設定 {#h3ab6f8d}
 
