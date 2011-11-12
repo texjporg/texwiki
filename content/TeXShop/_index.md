@@ -520,4 +520,5 @@ Live preview for TeXShop
 - [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
 - [TeXShopがUTF-8で文字化けするだと・・・](http://twitter.com/#!/kaihua7/status/129175210153881600)
 - [TeXShop2.43は文字化けしないが、TeXShop3.04はする。 なんでだろう？](http://twitter.com/#!/kaihua7/status/129178391151771648)
+- [TeXShop のビューワーには回転機能があることを発見した（今更）](http://twitter.com/#!/timbalero1973/status/135276804876414976)
 - [LaTeX Page](http://new.math.uiuc.edu/math198/latex.html)
