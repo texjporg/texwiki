@@ -213,3 +213,7 @@ Vim の一般的な折りたたみの操作に関しては [Vim-users.jp - Hack 
 ## チュートリアル {#d82a6a51}
 
 - [Interactive Vim tutorial](http://www.openvim.com/tutorial.html)
+
+## 関連リンク {#s80e7f03}
+
+- [宗教戦争を利用して本を売るとはオライリーやるなｗ - あなたはVim派?それともEmacs派?オライリー本を50%offで買って好きなエディタに投票しようキャンペーン](http://twitter.com/#!/tehutehuapple/status/133572695081226240) ← [汚い流石オライリー汚い](http://twitter.com/#!/nameless911/status/133572870382166016)
