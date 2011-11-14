@@ -15,7 +15,7 @@ pukiwiki: "jEdit"
 
 ## jEdit とは {#i62e8149}
 
-jEdit は Java で書かれたエディタです．<br>
+jEdit は Java で書かれたテキストエディタです．<br>
 Windows, OS X, Linux などの Java が動作する環境で動作します．<br>
 jEdit は，オープンソースソフトウェアで，[GPL ライセンス](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)です．<br>
 
@@ -35,7 +35,9 @@ jEdit は，オープンソースソフトウェアで，[GPL ライセンス](h
 
 ### [Console](http://plugins.jedit.org/plugins/?Console) {#n42f5755}
 
-Windows で Console プラグインを使用して日本語を表示する場合は，メニューの \[プラグイン(P)\]-\[プラグイン オプション(O)...\]-\[プラグイン\]-\[Console\]-\[General\] の Character encoding: を windows-31j に変更します．
+- [jEditのConsoleプラグインを便利に使う](http://d.hatena.ne.jp/tanakahisateru/20081215/1229269568)
+
+Windows で Console プラグインを使用して日本語を表示する場合は，メニューの \[プラグイン(P)\]-\[プラグイン オプション(O)...\] の プラグイン -> Console -> General の Character encoding: を windows-31j に変更します．
 
 ### [LaTeXTools](http://plugins.jedit.org/plugins/?LaTeXTools) {#tb5eafb7}
 
