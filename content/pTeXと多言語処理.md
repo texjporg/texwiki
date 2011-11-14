@@ -1436,7 +1436,7 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [Emacs](/Emacs/) ([emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)，[Meadow](http://www.meadowy.org/meadow/))，
 [Vim](/Vim/)，
 [xyzzy](/xyzzy/)，
-[jEdit](http://www.jedit.org/)，
+jEdit，
 [FooEditor](http://sourceforge.jp/projects/fooeditor/)，
 [oedit](http://www.hi-ho.ne.jp/a_ogawa/oedit/)/[otbedit](http://www.hi-ho.ne.jp/a_ogawa/otbedit/)，
 [Notepad++](/Notepad++/)，
