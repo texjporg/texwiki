@@ -99,7 +99,7 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 
 (u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．<br>
 [UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
-W32TeX の場合は、UTF8-UCS2 はインストール済みです。<br>
+W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
 ```
 \ifx\kanjiskip\undefined\else
