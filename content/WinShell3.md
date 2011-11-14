@@ -356,7 +356,7 @@ C:\w32tex\dviout\dviout.exe (\[参照(B)...\] で dviout.exe を検索)
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-1 "%s.dvi" "# %l "%c.tex""</ins><br>
+　　コマンドライン 　<ins>-1 "%s.dvi" "# %l '%c.tex'"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -962,7 +962,7 @@ English にしておかないと，文字が大部分表示されないことが
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-1 "%s.dvi" "# %l "%c.tex""</ins><br>
+　　コマンドライン 　<ins>-1 "%s.dvi" "# %l '%c.tex'"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -1711,7 +1711,7 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 そして，「コマンドライン」を
 
 ```
--1 "%s.dvi" "# %l "%c.tex"" 
+-1 "%s.dvi" "# %l '%c.tex'"
 ```
 
 のように変更しておきます。こうしておくことで，WinShell
