@@ -97,7 +97,9 @@ v6.75e で dvipdfmx が指定できるようになりました．
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．
+(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．<br>
+[UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
+W32TeX の場合は、UTF8-UCS2 はインストール済みです。<br>
 
 ```
 \ifx\kanjiskip\undefined\else
