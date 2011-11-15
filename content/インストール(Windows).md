@@ -18,7 +18,7 @@ pukiwiki: "インストール(Windows)"
 ### ニュース {#x8db7c39}
 
 - \[2011/11/06\]<br>
-    <span style="color:Red;"><strong>updvipdfmx が無くなりました．<br>(e-)upTeX でも dvipdfmx を使うようにしてください．</strong></span>
+    <span style="color:Red;"><strong>updvipdfmx が無くなりました．<br>(e-)upTeX でも dvipdfmx を使うようにしてください．<br>hyperref でしおりを作成する場合は \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}} が必要になりました．<br>詳細は[hyperref#しおり（bookmark）つきのpdf文書作成](/hyperref/#fe7cad10)を参照してください．</strong></span>
 
 - \[2011/10/22\]<br>
     <span style="color:Red;"><strong>euplatex が無くなりました．<br>uplatex は uptex ではなくて euptex の上で動くようになりました．</strong></span>
@@ -536,6 +536,22 @@ ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），S
 IDE を使いたい方は，[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) もおすすめです。
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
+
+***
+
+<div style="text-align:right">☒</div>
+
+<div style="text-align:left">　 ／￣＼</div>
+
+<div style="text-align:left">　|　＾o＾　|</div>
+
+<div style="text-align:left">　 ＼＿／ </div>
+
+<div style="text-align:center"><a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">TeX Wiki 創設者奥村晴彦さんからの<br>新ドキュメントクラスをお使いください</a></div>
+
+<div style="text-align:right">[ <a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">詳細を読む</a> ]</div>
+
+***
 
 ぜひ[奥村晴彦さん](http://oku.edu.mie-u.ac.jp/~okumura/)の[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)も
 入れてください。
