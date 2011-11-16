@@ -761,14 +761,14 @@ Executable path<br>
 
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
-Command <ins>\[PageOpen(# %l '%Wc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
 Server: <ins>dviout</ins>　　　Topic: <ins>dviout</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
-Command <ins>\[PageOpen(# %l '%Wc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
 Server: <ins>dviout</ins>　　　Topic: <ins>dviout</ins><br>
 
 <br>
