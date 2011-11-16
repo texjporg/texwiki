@@ -59,3 +59,4 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 - [Sphinxでドキュメント生成 - 図を描く、TeX経由でPDF（Windowsでの始め方）（続）](http://d.hatena.ne.jp/torutk/20110618/p1)
 - [SphinxでXeLaTeXを使って日本語使ったPDFを出力する](http://hideaki-t.blogspot.com/2011/07/sphinxxelatexpdf.html)
 - [Sphinxで日本語PDFを出力する](http://d.hatena.ne.jp/yusukei2/20110604/1307145621), [Sphinxで日本語PDFを出力する その２？](http://d.hatena.ne.jp/yusukei2/20110806/1312605553)
+- [sphinxのPDF出力ではまった](http://d.hatena.ne.jp/yuitowest/20111114/1321262351)
