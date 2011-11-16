@@ -42,8 +42,15 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 
 ```
 \ifx\kanjiskip\undefined
-  \documentclass[12pt,papersize]{ltjsarticle}
-  \usepackage[pdftex,unicode]{hyperref}
+  \ifx\XeTeXversion\undefined
+    \documentclass[12pt,papersize]{ltjsarticle}
+    \usepackage[pdftex,unicode]{hyperref}
+  \else
+    \documentclass[12pt]{bxjsarticle}
+    \usepackage[xetex,unicode]{hyperref}
+    \usepackage{fontspec}
+    \setmainfont{MS Mincho}
+  \fi
 \else
   \ifx\ucs\undefined
     \documentclass[12pt,papersize]{jsarticle}
@@ -637,6 +644,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 - エディタ画面を右クリック → \[ツール(S)\] → \[XeLaTeX\]
 
 TeX ファイルがコンパイルされ PDF ファイルが表示されます．
+
+#### 簡単なテスト {#rf056171}
+
+1. [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) をインストールします．
+1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け，UTF-8N で terapad.tex という名前で保存します．
+1. Shift + Alt + I を押すと PDF ファイルが作成されます．
+1. もう一度 Shift + Alt + I を押すと，今度はしおり付きの PDF ファイルが作成されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
 
 ### pBibTeX {#h42e3045}
 
