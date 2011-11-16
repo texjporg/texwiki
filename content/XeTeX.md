@@ -78,7 +78,7 @@ graphics パッケージや color パッケージなどを使用するとき，�
 xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する XeTeX においては
 単に UTF-8 を Big Endian UTF-16 with BOM に変換するだけでよいので，
 より簡単な実装が可能である。
-実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。
+実際にこの機能が実装されていて，hyperref パッケージに unicode オプションを指定するだけで日本語しおり等を作ることができる。
 
 ### Mac でのインストール {#x46670ed}
 
@@ -644,6 +644,7 @@ Hello, \TeX !
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
+- [Imported from http://ustunozgur.blogspot.com - Filed under 'XeLaTeX'](http://import-chki.posterous.com/tag/xelatex)
 - [Ubuntu日本語フォーラム / xelatex で日本語をかく仕方](https://forums.ubuntulinux.jp/viewtopic.php?id=9469)
 - [LaTeX の依存関係実際書くのめんどくさい (.tex, .bib などなど) ので、latexmk + xelatex の道を進んでみよう](http://twitter.com/#!/ikegami__/status/129727452137259008)
 - [~/.latexmkrc に $pdflatex = "xelatex"; と書いて、 % latexmk -pdf -pvc target.tex と書くだけで、バックグラウンド監視 xelatex 完成した、すばらし](http://twitter.com/#!/ikegami__/status/129730814471712768)
