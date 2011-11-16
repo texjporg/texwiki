@@ -284,8 +284,8 @@ xyzzy 版と言った方がわかりやすいかもしれません。
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil)</th><th style="color:#FFF;background-color:#22D;text-align:center">補完</th></tr>
-> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b SPC</td><td>C-c b SPC</td><td>begin 型補完</td></tr>
-> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B SPC</td><td>C-c B SPC</td><td>指定領域に対して begin 型補完</td></tr>
+> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b &lt;SPC&gt;</td><td>C-c b &lt;SPC&gt;</td><td>begin 型補完</td></tr>
+> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B &lt;SPC&gt;</td><td>C-c B &lt;SPC&gt;</td><td>指定領域に対して begin 型補完</td></tr>
 > <tr><td>Section type -&gt; リストから選択</td><td>C-c C-s</td><td>C-c s</td><td>section 型補完</td></tr>
 > <tr><td>Section type region -&gt; リストから選択</td><td>C-c S</td><td>C-c S</td><td>指定領域に対して section 型補完</td></tr>
 > <tr><td>Insert end environment</td><td>C-c C-e</td><td>C-c e</td><td>end 補完</td></tr>
