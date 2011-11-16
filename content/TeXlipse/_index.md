@@ -1210,7 +1210,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 &#x25;file # &#x25;line &#x25;texfile</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 &#x25;file "# &#x25;line '&#x25;texfile'"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[PageOpen(# %line '%texfile')\]\[WinNormal\]\[FileOpen("%fullfile")\]</ins><br>
 　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
