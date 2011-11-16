@@ -158,7 +158,7 @@ Macroのパラメータ<br>
 : C:\w32tex\dviout\dviout.exe
 
 引数
-: -1 "%D" "# %l %F"
+: -1 "%D" "# %l '%f'"
 
 DDE
 : ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
@@ -170,7 +170,7 @@ Topic
 : dviout
 
 Macro
-: \[PageOpen(# %l %F)\]\[WinNormal\]\[FileOpen("%D")\]
+: \[PageOpen(# %l '%f')\]\[WinNormal\]\[FileOpen("%D")\]
 
 #### TeXworks {#red004a1}
 
