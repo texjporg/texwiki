@@ -124,7 +124,8 @@ lualatex の場合は，hyperref のオプションに
 unicode=true
 ```
 
-を追加します．
+を追加します．xelatex の場合は、指定しないでも必ず unicode=true になります。
+そうして、warning が出ますが、無視します。
 
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
