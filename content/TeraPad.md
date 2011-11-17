@@ -47,7 +47,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
     \usepackage[pdftex,unicode]{hyperref}
   \else
     \documentclass[12pt]{bxjsarticle}
-    \usepackage[xetex,unicode]{hyperref}
+    \usepackage[xetex]{hyperref}
     \usepackage{fontspec}
     \setmainfont{MS Mincho}
   \fi
