@@ -67,7 +67,7 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 svn revision 506 以降では、 Mac OS X 用のデフォルトのドライバも xdvipdfmx になった。
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
-graphics パッケージや color パッケージなどを使用するとき，必ず \[dvipdfm\]
+graphics パッケージや color パッケージなどを使用するとき，必ず \[xetex\]
 オプションを付加しておくのを忘れてはいけない。ただし，Jonathan Kew さんに
 より，Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており，
 最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると，
@@ -78,9 +78,11 @@ graphics パッケージや color パッケージなどを使用するとき，�
 xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する XeTeX においては
 単に UTF-8 を Big Endian UTF-16 with BOM に変換するだけでよいので，
 より簡単な実装が可能である。
-実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。(文字化けする場合は hyperref パッケージに unicode オプションを指定すると回避できます．)
+実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。
 
 ### Mac でのインストール {#x46670ed}
+
+[MacTeX &amp; TeX Live](/Mac/#f5466652) をインストールすると XeTeX がインストールされます．
 
 [ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
 をインストールした Mac OS X 10.4.x でインストールしてみた。
