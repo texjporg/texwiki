@@ -127,6 +127,9 @@ unicode=true
 を追加します．xelatex の場合は、指定しないでも必ず unicode=true になります。
 そうして、warning が出ますが、無視します。
 
+以前は何も指定しなくても文字化けせずにしおりが作成できていたのですが，W32TeX 2011-11-06 版の hyperref v6.82j で xelatex で unicode オプションを指定しないでタイプセットした場合，out ファイルが変換されずに出力され，これを xelatex で処理するとしおりが文字化けします．この場合，unicode オプションを明示的に指定することで out ファイルが変換され，これを xelatex で処理すると文字化けせずにしおりが作成できます．<br>
+TeX Live 2011 で hyperref v6.82j で同じ内容の TeX ファイルを処理すると out ファイルが変換されていなくても文字化けせずにしおりが表示できるので W32TeX の xelatex (xdvipdfmx) に不具合があるかもしれません．<br>
+
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
 
 uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
