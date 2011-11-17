@@ -32,6 +32,7 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 - [Org-Mode の機能、組み込み LaTeX — その1](http://www.kitetu.net/old/notes/0003.html)
 - [Org-Mode の機能、組み込み LaTeX — その2](http://www.kitetu.net/old/notes/0004.html)
 - [Org-Mode の組み込み LaTeX 和訳部分](http://www.kitetu.net/info-renais/emacs/manual/org-mode/tr_embedded-latex.html)
+- [Jekyll + Org-mod で LaTeX](http://gacha.yukimizake.net/blog/2010/10/22/jekyll-and-org-mod-with-latex.html)
 
 ## [Beamer](/Beamer/) Export {#k112eb83}
 
