@@ -332,13 +332,13 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 
 ***
 
-#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 {#b09ef8e6}
+#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → [どうもFILE_WHICHで落ちている模様．確かに眺めてみると場合によっては落ちそうなので，とりあえずその分を直してみた．](http://d.hatena.ne.jp/abenori/20111118) {#b09ef8e6}
 
 - [秀丸エディタで「マクロ」→「TeXコンパイル」→「PDFに変換して表示」（DVIに変換して表示）とすると、「秀丸エディタ は動作を停止しました。問題が発生したため、プログラムが正しく動作しなくなりました。プログラムは閉じられ、解決策がある場合は windows から通知されます。」というメッセージが出てしまう](http://www.maruo.co.jp/hidesoft/2/x30158_.html)
 - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html)
 - 祝鳥でエラー ([qa:56307](https://okumuralab.org/~okumura/texfaq/qa/56307.html), [qa:56309](https://okumuralab.org/~okumura/texfaq/qa/56309.html), [qa:56310](https://okumuralab.org/~okumura/texfaq/qa/56310.html), [qa:56313](https://okumuralab.org/~okumura/texfaq/qa/56313.html))
 
-解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。
+<!-- 解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。 -->
 
 #### 祝鳥 0.85r1 でエラー (保護違反) → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111104) を fortex の sub フォルダに上書き {#m28c9ec8}
 
