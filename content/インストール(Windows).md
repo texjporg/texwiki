@@ -533,7 +533,11 @@ ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），S
 （ただし Emacs \[emacs for gnupack，Meadow\]，Vim，xyzzy は初期設定ではショートカットキーなどの操作性が
 メモ帳とは異なるので，慣れるまでは大変かもしれません）。
 
-IDE を使いたい方は，[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) もおすすめです。
+[Eclipse](/Eclipse/) を使いたい方は [TeXlipse](/TeXlipse/) がおすすめです。
+
+## [TeX Live](</TeX Live/>) {#ia336ed2}
+
+W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
@@ -770,8 +774,6 @@ Scientific WorkPlace をご覧ください．
 #### WZ EDITOR (製品) {#cbee1e14}
 
 WZ EDITOR をご覧ください．
-
-## [TeX Live](</TeX Live/>) {#ia336ed2}
 
 ## [MiKTeX](http://miktex.org/) {#x2459fb9}
 
