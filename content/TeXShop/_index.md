@@ -40,8 +40,6 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
-MacTeX-2011 に [Additional Tools for MacTeX/TeXLive 2011](http://www2.kumagaku.ac.jp/teacher/herogw/) を追加します．
-
 ### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
 シェルスクリプトを作成します．
