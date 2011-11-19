@@ -121,6 +121,12 @@ lualatex, xelatex では必要ありません．
 lualatex の場合は，hyperref のオプションに
 
 ```
+pdfencoding=auto
+```
+
+または
+
+```
 unicode=true
 ```
 
