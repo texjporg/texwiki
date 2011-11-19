@@ -44,7 +44,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
 \ifx\kanjiskip\undefined
   \ifx\XeTeXversion\undefined
     \documentclass[12pt,papersize]{ltjsarticle}
-    \usepackage[pdftex,unicode]{hyperref}
+    \usepackage[pdftex,pdfencoding=auto]{hyperref}
   \else
     \documentclass[12pt]{bxjsarticle}
     \usepackage[xetex]{hyperref}
