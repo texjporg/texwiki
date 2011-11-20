@@ -94,6 +94,7 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 
 ### 日本語化ファイル {#i83c37b0}
 
+- [WinShell3 日本語言語ファイル](http://nnnnn.co/filemgmt/)
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
     <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
