@@ -146,7 +146,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -880,7 +880,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | bkmk2uni > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
