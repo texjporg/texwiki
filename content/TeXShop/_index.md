@@ -427,6 +427,8 @@ simpdftex を使用する方法だとエラーが発生してもそのまま dvi
 
 ***
 
+TeXShop を再起動します．
+
 ## 小川版 (Drag &amp; Drop UpTeX) の場合の設定 {#h991fc27}
 
 次のページを御覧下さい．<br>
