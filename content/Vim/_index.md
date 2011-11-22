@@ -39,6 +39,7 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [Vim 開発サイト](http://code.google.com/p/vim/)
     - [コミットログ](http://code.google.com/p/vim/source/list)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
+    - [twitter](http://twitter.com/#!/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
     - [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
@@ -103,7 +104,30 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [auctex.vim](http://www.vim.org/scripts/script.php?script_id=162)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
 - [neocomplcache](https://github.com/Shougo/neocomplcache)
-    - [syntaxに基づいてinoremapできたら最高なんだけどなぁ。あとはVisualmodeで\`bfして選択範囲を¥begin{textbf}...¥end{textbf}で囲むとか](http://twitter.com/#!/amone_misya/status/138549298643214336)
+    - バグ → [neocomplcache/autoload/neocomplcache/sources/snippets_complete/tex.snip](https://github.com/Shougo/neocomplcache/blob/f6227b1c53f09aa5cbcf66def0c2f16b674a3d0d/autoload/neocomplcache/sources/snippets_complete/tex.snip)
+
+```
+snippet enumerate
+alias   \begin{enumerate}
+    \begin{enumerate}
+            \item ${1}
+    \end{enume
+```
+
+を
+
+```
+snippet enumerate
+alias   \begin{enumerate}
+    \begin{enumerate}
+            \item ${1}
+    \end{enumerate}
+    ${0}
+```
+
+に修正します．
+
+- [syntaxに基づいてinoremapできたら最高なんだけどなぁ。あとはVisualmodeで\`bfして選択範囲を¥begin{textbf}...¥end{textbf}で囲むとか](http://twitter.com/#!/amone_misya/status/138549298643214336)
     - [どうにも、Neocomplcache+Snippets+ftpluginでLaTeX環境を整えようとすると、Vim-LaTeXよりYaTeXに近いモノのほうが作りやすい気がする。たとえばコロンはギリシャ文字のprefixに割り当てて、セミコロンは数式のprefixに割り当てるとか](http://twitter.com/#!/amone_misya/status/138548488022659072)
     - [もはやVim-LaTeXすら情弱なのか・・・。](http://twitter.com/#!/Alumina_T/status/138545687917899776) ← [詳細は省くけど、あれは様々な面で良くない。](http://twitter.com/#!/amone_misya/status/138546461259481088) ← [なんだ、Vim-LaTeXでも大して情弱でもないのか。](http://twitter.com/#!/Alumina_T/status/138546601294700544)
     - [きのうの朝につぶやいた、VIM-LaTeXをNeocomplcacheとSnippetsで置きかえるツイートをまとめろとの電波を受信したから、HatenaDiaryにまとめた](http://twitter.com/#!/amone_misya/status/138544930976038912)
@@ -127,7 +151,8 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
 - [unite.vimとunite-outlineでlatexファイルの編集が楽になった](http://hinagishi.hateblo.jp/entry/2011/11/18/135701)
-- [Vimで動くLaTeX環境](http://ymatz.net/pukiwiki/index.php?Vim%E3%81%A7%E5%8B%95%E3%81%8FLaTeX%E7%92%B0%E5%A2%83)
+    <!-- -[[Vimで動くLaTeX環境:http://ymatz.net/pukiwiki/index.php?Vim%E3%81%A7%E5%8B%95%E3%81%8FLaTeX%E7%92%B0%E5%A2%83]] -->
+
 - [Vimで保存時に自動的にTeXをコンパイル (適当編)](http://blomott.mobi/rubyneko/entry%2CsCKhEg6WPUiQnldaTG1j9w%2C%2C%2C%2C.html)
 - [ftpluginのtex.vim](http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html)
 - [Vim/TeXShop integration](http://reference-man.blogspot.com/2009/01/vimtexshop-integration.html)
