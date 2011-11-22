@@ -67,3 +67,4 @@ ps2pdf
 - [LaTeXiT の環境設定で"Composition"だったところが、"Typesetting"に変更されているな。日本語ローカライズで自分の判断で「プログラム」に変えていたけど、他のところも含めて再度チェックして修正してもらおう。](http://twitter.com/#!/ryseto/status/138285614528339968)
 - [LaTeXiTの設定ができないとIさんからスカイプで。環境設定のプログラムのところで Change で pdflatex を選んでも反映されないという感じだった。パスを手で入力して環境設定のウインドウを閉じればうまくいった。（自分の所ではChangeからも変更できた。）](http://twitter.com/#!/ryseto/status/138651202740166656)
 - [使っているTeXが Drag &amp; Drop UpTeX みたいだったので、それを入れて確認してみよう。ツイッターのLaTeXiTで検索すると時々うまくいかないと言っている人を見かける。](http://twitter.com/#!/ryseto/status/138652042955730945)
+- [TeXLive 2011 の platex は eptex らしいけど、LaTeXiTで日本語文字をタイプセットしても結果が表示されないみたい。（数式だけならpdflatexを設定した方が高速でトラブルが少ない→ LaTeXiT）](http://twitter.com/#!/ryseto/status/139227526642933761)
