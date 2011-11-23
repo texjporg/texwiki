@@ -127,7 +127,8 @@ alias   \begin{enumerate}
 
 に修正します．
 
-- [VimでLaTeXファイル中の数式を扱ってるとき、\left(と\right)の対応が直感的にわかりにくい。なので改善した。LaTeXのsyntaxファイルはデフォルトで1000行越えてるから、そこには触れずに対処療法的に設定した。](http://twitter.com/#!/amone_misya/status/139236753168015360)
+- [LaTeXの{}の構文を解析するvimscriptを正規表現で書いたら、maxmempatternという見たことのないエラーで落ちた。ヘルプを見たところ、\\(...\\)\*を使いすぎるとそうなるらしい。さてどうするか](http://twitter.com/#!/amone_misya/status/139274043168800768)
+    - [VimでLaTeXファイル中の数式を扱ってるとき、\left(と\right)の対応が直感的にわかりにくい。なので改善した。LaTeXのsyntaxファイルはデフォルトで1000行越えてるから、そこには触れずに対処療法的に設定した。](http://twitter.com/#!/amone_misya/status/139236753168015360)
     - [syntaxに基づいてinoremapできたら最高なんだけどなぁ。あとはVisualmodeで\`bfして選択範囲を¥begin{textbf}...¥end{textbf}で囲むとか](http://twitter.com/#!/amone_misya/status/138549298643214336)
     - [どうにも、Neocomplcache+Snippets+ftpluginでLaTeX環境を整えようとすると、Vim-LaTeXよりYaTeXに近いモノのほうが作りやすい気がする。たとえばコロンはギリシャ文字のprefixに割り当てて、セミコロンは数式のprefixに割り当てるとか](http://twitter.com/#!/amone_misya/status/138548488022659072)
     - [もはやVim-LaTeXすら情弱なのか・・・。](http://twitter.com/#!/Alumina_T/status/138545687917899776) ← [詳細は省くけど、あれは様々な面で良くない。](http://twitter.com/#!/amone_misya/status/138546461259481088) ← [なんだ、Vim-LaTeXでも大して情弱でもないのか。](http://twitter.com/#!/Alumina_T/status/138546601294700544)
