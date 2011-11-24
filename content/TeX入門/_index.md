@@ -67,7 +67,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
     の原典です。
 
 - [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
-    [W32TeX](http://w32tex.org/) と
+    [W32TeX](/W32TeX/) と
     [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
     CD-ROM が附いています。
 
@@ -75,16 +75,16 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 ### LaTeX のバージョンについて —入門書を読む際に— {#h22f32a6}
 
-LaTeX には大きく分けて二つの異なるバージョンがあります。一昔前の
-LaTeX 2.09 と，現行の LaTeX2e です（日本語化されたものでは pLaTeX 2.09 と
-pLaTeX2e です）。LaTeX 2.09 と LaTeX2e は別物と考えて良いくらいです。
+LaTeX には大きく分けて二つの異なるバージョンがあります。現行の LaTeX2e と，一昔前の
+LaTeX 2.09 です（日本語化されたものでは pLaTeX2e と
+pLaTeX 2.09 です）。LaTeX2e と LaTeX 2.09 は別物と考えて良いくらいです。
 
 図書館や書店には今でも LaTeX 2.09 時代の解説書が並んでいたり，LaTeX
 形式で論文を受け付ける学会などの中には未だに
 LaTeX 2.09 を採用しているところがあったりするので注意が必要です。
 
-文書ソースを \documentstyle で始めるのが LaTeX 2.09，\documentclass で始めるのが
-LaTeX2e です。LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に
+文書ソースを \documentclass で始めるのが
+LaTeX2e，\documentstyle で始めるのが LaTeX 2.09 です。LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に
 LaTeX 2.09 の互換モードで処理されるので，エラーなどが出ないことも多くあります。
 
 ## インストールの仕方 {#i326adb5}
