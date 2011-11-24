@@ -1758,6 +1758,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [TeXlipse on Mac - Song of A はてな版](http://d.hatena.ne.jp/cielan/20081128/)
 - [Eclipseのキーバインドをvim風にできるVrapperが素晴らしすぎる件について](http://d.hatena.ne.jp/yuroyoro/20100218/1266477264)
 - [QA: TeXlipse での BibTex の生成ファイルの置き場所について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=521)
+- [windowsのeclipseでtexを使う設定しました。参考サイトはこちら](http://twitter.com/#!/onsen_tanuki/status/139626617550028800), [その次の記事でTeXlipse捨てたのは良い思い出](http://twitter.com/#!/did2memo/status/139673979949551616), [先輩のtexlipse設定参考ページのツイートがそのblog主の東工大院生の人にリツイートされてカオス。その次にその人はtexlipseは使わなくなったとツイートしてさらにカオス。。](http://twitter.com/#!/Reat_hy/status/139677472655548416), [まずかったかな・・・](http://twitter.com/#!/onsen_tanuki/status/139679936087728128)
 - [TeXエディタのTeXlipse+PDF4Eclipseを試してみたけど便利すぎる。保存する度に自動ビルド＆PDFプレビュー表示。subclipse等任意のSCMプラグインでバージョン管理可。エクリプスのショートカットも使える。](http://twitter.com/#!/hidekishima/status/139345542835740672)
 - [UIは他エディタと比べてもいい。いちいちPDF閉じなくていいし、Omakeもいらない。svn:ignoreでゴミファイル区別可。Ctrl+Jでインクリメンタル検索とかCtrl+スペースで補完とかショートカットが同じで作業効率いい。](http://twitter.com/#!/hidekishima/status/139353923361325056)
 - [texlipseでdvipdfmxを呼ぶとEPS取り込みでこける件は，texlipseからbashを呼ぶように設定してbashにdvipdfmxを呼ばせ、さらに環境変数でPATHを与えるという下らない方法で解決した。](http://twitter.com/marurur/status/98084223440789505)
