@@ -28,10 +28,10 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。どちら�
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。現在のバージョン番号は 3.1415926 です。LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
-の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX&reg;（[Mac OS X](http://www.apple.com/jp/macosx/)
+の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX&reg;（[OS X](http://www.apple.com/jp/macosx/)
 や [Solaris](http://www.oracle.com/us/products/servers-storage/solaris/) など），UNIX 互換
 OS（Linux OS，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
-など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)，Mac OS
+など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)
 など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
 日本では TeX，LaTeX
