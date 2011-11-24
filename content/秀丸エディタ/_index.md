@@ -332,17 +332,21 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 
 ***
 
-#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → [どうもFILE_WHICHで落ちている模様．確かに眺めてみると場合によっては落ちそうなので，とりあえずその分を直してみた．](http://d.hatena.ne.jp/abenori/20111118) {#b09ef8e6}
+#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111124) を fortex の sub フォルダに上書き {#b09ef8e6}
 
+[2011-11-24 - にっき♪](http://d.hatena.ne.jp/abenori/20111124) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きします．<br>
+
+- [祝鳥が落ちるとか言うのはどうもFILE_WHICHで正解だった模様．とりあえず直したmacrodll.dllをおいておきますが，他に色々と手を入れているので，その分のチェックが甘い可能性もあります．近いうちに祝鳥がアップデートできればいいなぁ，と．](http://d.hatena.ne.jp/abenori/20111124)
+- [どうもFILE_WHICHで落ちている模様．確かに眺めてみると場合によっては落ちそうなので，とりあえずその分を直してみた．](http://d.hatena.ne.jp/abenori/20111118)
 - [秀丸エディタで「マクロ」→「TeXコンパイル」→「PDFに変換して表示」（DVIに変換して表示）とすると、「秀丸エディタ は動作を停止しました。問題が発生したため、プログラムが正しく動作しなくなりました。プログラムは閉じられ、解決策がある場合は windows から通知されます。」というメッセージが出てしまう](http://www.maruo.co.jp/hidesoft/2/x30158_.html)
 - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html)
 - 祝鳥でエラー ([qa:56307](https://okumuralab.org/~okumura/texfaq/qa/56307.html), [qa:56309](https://okumuralab.org/~okumura/texfaq/qa/56309.html), [qa:56310](https://okumuralab.org/~okumura/texfaq/qa/56310.html), [qa:56313](https://okumuralab.org/~okumura/texfaq/qa/56313.html))
 
 <!-- 解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。 -->
 
-#### 祝鳥 0.85r1 でエラー (保護違反) → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111104) を fortex の sub フォルダに上書き {#m28c9ec8}
+#### 祝鳥 0.85r1 でエラー (保護違反) → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111124) を fortex の sub フォルダに上書き {#m28c9ec8}
 
-[2011-11-04 - にっき♪](http://d.hatena.ne.jp/abenori/20111104) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きすれば保護違反のエラーが発生しなくなります．<br>
+[2011-11-24 - にっき♪](http://d.hatena.ne.jp/abenori/20111124) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きすれば保護違反のエラーが発生しなくなります．<br>
 
 祝鳥 0.85r1 で秀丸エディタ Version 8.10 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
