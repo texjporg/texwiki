@@ -22,6 +22,7 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
 - [Emacs + Org Export + TeXShop](http://skalldan.wordpress.com/2011/07/18/emacs-org-export-texshop/)
+- [org-modeのLatexエクスポートで長いURLが折り返さないのを修正](http://d.hatena.ne.jp/hirono2011/20111124/1322156182)
 - [org-modeでTeX出力のフォーマットを設定する](http://d.hatena.ne.jp/sanryuu/20110413)
 - [Org-mode](http://d.hatena.ne.jp/daharu/20110409/)
 - [日本語文を含む org ファイルを jsarticle クラスの LaTeX にエクスポートして PDF に変換する方法](http://tmishina.cocolog-nifty.com/blog/2010/11/org-jsarticle-l.html)
