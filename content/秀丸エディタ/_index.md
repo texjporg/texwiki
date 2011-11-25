@@ -59,143 +59,117 @@ pukiwiki: "秀丸エディタ"
 - [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
     (阿部 紀行 (あべのり) さん)
 
-#### Adobe Reader X の DDE に対応させる {#g620bb9d}
+2011-11-26 祝鳥 0.86 がリリースされました．
 
-祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に
-
-```
-Adobe系とのDDE接続に失敗．
-```
-
-のエラーメッセージが表示され，PDF ファイルが表示されません．
-
-DDE接続を使わなくてもよい場合は \[マクロ(M)\]-\[祝鳥(1)\]-\[プログラム設定(O)\]-\[Adobe Readerの設定\]-\[操作タイプ\]-\[直接起動\] を指定してください．
-
-***
-
-　　begin型(B)<br>
-　　section型(S)<br>
-　　large型(L)<br>
-　　maketitle型(M)<br>
-　　accent型(A)<br>
-　　ギリシャ文字補完(J)<br>
-　　タイプセット(T)<br>
-　　\end{???}補完(E)<br>
-　　対応するものへの移動(G)<br>
-　　コメント操作(C)<br>
-　　補完(H)<br>
-　　イメージ補完(;)<br>
-　　お手伝いさん(U)<br>
-　　ispellでスペルチェック(P)<br>
-　　BibTeXデータベース検索(\[)<br>
-　　マニュアルを開く(I)<br>
-<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
-
-***
-
-　　TeX→DVIの設定<br>
-　　DVI→PDFの設定<br>
-　　DVI→PSの設定<br>
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　Adobe Readerの設定　　　　　　　　　　　　　　　</span><br>
-
-　　SumatraPDFの設定<br>
-　　GSViewの設定<br>
-　　各種プログラム及びメニューの設定...<br>
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-　　Adobe Readerのパス...：現在はC:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe<br>
-<span style="color:Black;background-color:#DAEAFF;">　　操作タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-　　ウィンドウサイズ<br>
-
-***
-
-<span style="color:Black;background-color:#DAEAFF;">　　直接起動　　　　　　　　　　　　　　　　</span><br>
-
-　　★ DDE<br>
-　　OLE (Adobe Acrobatのみ)<br>
-
-***
-
-Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました．
-
-(祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)．
-
-```
-DDEOpen:
-        run "\"" + $path + "\"";
-        if(!result){
-                message $path + "\nの実行に失敗．";
-                return 1;
-        }
-        sleep 600;
-        ddeinitiate "acroviewR10","Control";
-        if(!result){
-                message "Adobe系とのDDE接続に失敗．";
-                return 2;
-        }
-...
-```
-
-```
-DDEClose:
-        $$file = $Parent + ".pdf";
-        if(existfile($$file)){
-                ddeinitiate "acroviewR10","control";
-...
-```
-
-sleep を使いたくない場合は DDE で開くのはあきらめて Init: のところで
-
-```
-Init:
-...
-        if(#optype == 0){
-                if(#close)call DDEClose;
-                else call DDEOpen;
-...
-```
-
-と記述されているところを
-
-```
-Init:
-...
-        if(#optype == 0){
-                if(#close)call DDEClose;
-                else call DirectOpen;
-...
-```
-
-と変更して，開くときはシェルから直接起動して，閉じるときは DDE 通信をするという手もあります．
-
-Adobe Reader X には保護モード (\[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] でオン・オフが可能) があります．
-
-```
-
-```
-
-上記の方法で開く場合，保護モードがオフとオンの状態で，挙動が異なります (コンパイルしてファイルを表示する際にウィンドウがアクティブに表示される or されない)．
-
-保護モードがオンの場合にファイルを開いたときにアクティブなウィンドウにするには以下のように閉じるときにいったん終了させるという方法があります．
-
-```
-DDEClose:
-        $$file = $Parent + ".pdf";
-        if(existfile($$file)){
-                ddeinitiate "acroviewR10","control";
-                if(result){
-                        ddeexecute "[DocOpen(\"" + $$file + "\")]";
-                        ddeexecute "[DocClose(\"" + $$file + "\")]";
-                        ddeexecute "[AppExit()]";
-...
-```
+<!-- ***Adobe Reader X の DDE に対応させる [#g620bb9d] -->
+<!-- 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に -->
+<!--  -->
+<!-- Adobe系とのDDE接続に失敗． -->
+<!--  -->
+<!-- のエラーメッセージが表示され，PDF ファイルが表示されません． -->
+<!--  -->
+<!-- DDE接続を使わなくてもよい場合は [マクロ(M)]-[祝鳥(1)]-[プログラム設定(O)]-[Adobe Readerの設定]-[操作タイプ]-[直接起動] を指定してください． -->
+<!-- - --  -->
+<!-- 　　begin型(B)&br; -->
+<!-- 　　section型(S)&br; -->
+<!-- 　　large型(L)&br; -->
+<!-- 　　maketitle型(M)&br; -->
+<!-- 　　accent型(A)&br; -->
+<!-- 　　ギリシャ文字補完(J)&br; -->
+<!-- 　　タイプセット(T)&br; -->
+<!-- 　　\end{???}補完(E)&br; -->
+<!-- 　　対応するものへの移動(G)&br; -->
+<!-- 　　コメント操作(C)&br; -->
+<!-- 　　補完(H)&br; -->
+<!-- 　　イメージ補完(;)&br; -->
+<!-- 　　お手伝いさん(U)&br; -->
+<!-- 　　ispellでスペルチェック(P)&br; -->
+<!-- 　　BibTeXデータベース検索([)&br; -->
+<!-- 　　マニュアルを開く(I)&br; -->
+<!-- &color(Black,#DAEAFF){　　プログラム設定(O)　　　　　　　　　　　};&br; -->
+<!-- - --  -->
+<!-- 　　TeX→DVIの設定&br; -->
+<!-- 　　DVI→PDFの設定&br; -->
+<!-- 　　DVI→PSの設定&br; -->
+<!-- 　　PS→PDFの設定&br; -->
+<!-- 　　dvioutの設定&br; -->
+<!-- &color(Black,#DAEAFF){　　Adobe Readerの設定　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　SumatraPDFの設定&br; -->
+<!-- 　　GSViewの設定&br; -->
+<!-- 　　各種プログラム及びメニューの設定...&br; -->
+<!-- 　　TeXに関する全般的な設定&br; -->
+<!-- 　　環境&br; -->
+<!-- 　　初期化他&br; -->
+<!-- - --  -->
+<!-- 　　Adobe Readerのパス...：現在はC:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe&br; -->
+<!-- &color(Black,#DAEAFF){　　操作タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　ウィンドウサイズ&br; -->
+<!-- - --  -->
+<!-- &color(Black,#DAEAFF){　　直接起動　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　★ DDE&br; -->
+<!-- 　　OLE (Adobe Acrobatのみ)&br; -->
+<!-- - --  -->
+<!--  -->
+<!-- Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました． -->
+<!--  -->
+<!-- (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)． -->
+<!--  -->
+<!-- DDEOpen: -->
+<!--         run "\"" + $path + "\""; -->
+<!--         if(!result){ -->
+<!--                 message $path + "\nの実行に失敗．"; -->
+<!--                 return 1; -->
+<!--         } -->
+<!--         sleep 600; -->
+<!--         ddeinitiate "acroviewR10","Control"; -->
+<!--         if(!result){ -->
+<!--                 message "Adobe系とのDDE接続に失敗．"; -->
+<!--                 return 2; -->
+<!--         } -->
+<!-- ... -->
+<!--  -->
+<!-- DDEClose: -->
+<!--         $$file = $Parent + ".pdf"; -->
+<!--         if(existfile($$file)){ -->
+<!--                 ddeinitiate "acroviewR10","control"; -->
+<!-- ... -->
+<!--  -->
+<!-- sleep を使いたくない場合は DDE で開くのはあきらめて Init: のところで -->
+<!--  -->
+<!-- Init: -->
+<!-- ... -->
+<!--         if(#optype == 0){ -->
+<!--                 if(#close)call DDEClose; -->
+<!--                 else call DDEOpen; -->
+<!-- ... -->
+<!--  -->
+<!-- と記述されているところを -->
+<!--  -->
+<!-- Init: -->
+<!-- ... -->
+<!--         if(#optype == 0){ -->
+<!--                 if(#close)call DDEClose; -->
+<!--                 else call DirectOpen; -->
+<!-- ... -->
+<!--  -->
+<!-- と変更して，開くときはシェルから直接起動して，閉じるときは DDE 通信をするという手もあります． -->
+<!--  -->
+<!-- Adobe Reader X には保護モード ([編集(E)]-[環境設定(N)...]-[一般]-[起動時に保護モードを有効にする(M)] でオン・オフが可能) があります． -->
+<!--  -->
+<!-- 上記の方法で開く場合，保護モードがオフとオンの状態で，挙動が異なります (コンパイルしてファイルを表示する際にウィンドウがアクティブに表示される or されない)． -->
+<!--  -->
+<!-- 保護モードがオンの場合にファイルを開いたときにアクティブなウィンドウにするには以下のように閉じるときにいったん終了させるという方法があります． -->
+<!--  -->
+<!-- DDEClose: -->
+<!--         $$file = $Parent + ".pdf"; -->
+<!--         if(existfile($$file)){ -->
+<!--                 ddeinitiate "acroviewR10","control"; -->
+<!--                 if(result){ -->
+<!--                         ddeexecute "[DocOpen(\"" + $$file + "\")]"; -->
+<!--                         ddeexecute "[DocClose(\"" + $$file + "\")]"; -->
+<!--                         ddeexecute "[AppExit()]"; -->
+<!-- ... -->
+<!--  -->
 
 #### SumatraPDF との連携 (forward and inverse search) {#q78f9338}
 
@@ -332,10 +306,11 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 
 ***
 
-#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111124) を fortex の sub フォルダに上書き {#b09ef8e6}
+#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → 祝鳥 0.86 にアップデート {#b09ef8e6}
 
-[2011-11-24 - にっき♪](http://d.hatena.ne.jp/abenori/20111124) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きします．<br>
+祝鳥 0.86 にアップデートしてください．<br>
 
+- [アップデートしてみたよ！](http://d.hatena.ne.jp/abenori/20111125)
 - [祝鳥が落ちるとか言うのはどうもFILE_WHICHで正解だった模様．とりあえず直したmacrodll.dllをおいておきますが，他に色々と手を入れているので，その分のチェックが甘い可能性もあります．近いうちに祝鳥がアップデートできればいいなぁ，と．](http://d.hatena.ne.jp/abenori/20111124)
 - [どうもFILE_WHICHで落ちている模様．確かに眺めてみると場合によっては落ちそうなので，とりあえずその分を直してみた．](http://d.hatena.ne.jp/abenori/20111118)
 - [秀丸エディタで「マクロ」→「TeXコンパイル」→「PDFに変換して表示」（DVIに変換して表示）とすると、「秀丸エディタ は動作を停止しました。問題が発生したため、プログラムが正しく動作しなくなりました。プログラムは閉じられ、解決策がある場合は windows から通知されます。」というメッセージが出てしまう](http://www.maruo.co.jp/hidesoft/2/x30158_.html)
@@ -344,9 +319,9 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 
 <!-- 解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。 -->
 
-#### 祝鳥 0.85r1 でエラー (保護違反) → [macrodll.dll の修正版](http://d.hatena.ne.jp/abenori/20111124) を fortex の sub フォルダに上書き {#m28c9ec8}
+#### 祝鳥 0.85r1 でエラー (保護違反) → 祝鳥 0.86 にアップデート {#m28c9ec8}
 
-[2011-11-24 - にっき♪](http://d.hatena.ne.jp/abenori/20111124) から macrodll.dll をダウンロードして fortex の sub フォルダの macrodll.dll を上書きすれば保護違反のエラーが発生しなくなります．<br>
+祝鳥 0.86 にアップデートしてください．<br>
 
 祝鳥 0.85r1 で秀丸エディタ Version 8.10 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
