@@ -61,6 +61,68 @@ pukiwiki: "秀丸エディタ"
 
 2011-11-26 祝鳥 0.86 がリリースされました．
 
+#### DVI→PSの設定 {#e5e9bbcd}
+
+使うプログラムを dvipsk から dvips に変更してオプションに -Ppdf を追加します．
+
+***
+
+　　begin型(B)<br>
+　　section型(S)<br>
+　　large型(L)<br>
+　　maketitle型(M)<br>
+　　accent型(A)<br>
+　　ギリシャ文字補完(J)<br>
+　　タイプセット(T)<br>
+　　\end{???}補完(E)<br>
+　　対応するものへの移動(G)<br>
+　　コメント操作(C)<br>
+　　補完(H)<br>
+　　イメージ補完(;)<br>
+　　お手伝いさん(U)<br>
+　　ispellでスペルチェック(P)<br>
+　　BibTeXデータベース検索(\[)<br>
+　　マニュアルを開く(I)<br>
+<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
+
+***
+
+　　TeX→DVIの設定<br>
+　　DVI→PDFの設定<br>
+<span style="color:Black;background-color:#DAEAFF;">　　DVI→PSの設定　　　　　　　　　　　　　　　　　　</span><br>
+
+　　PS→PDFの設定<br>
+　　dvioutの設定<br>
+　　Adobe Readerの設定<br>
+　　SumatraPDFの設定<br>
+　　GSViewの設定<br>
+　　各種プログラム及びメニューの設定...<br>
+　　TeXに関する全般的な設定<br>
+　　環境<br>
+　　初期化他<br>
+
+***
+
+<span style="color:Black;background-color:#DAEAFF;">　　使うプログラム　　　　　　　　　　　　　　　　</span><br>
+
+　　紙サイズ<br>
+　　オプション... : 現在は (無し)
+
+***
+
+　　★ dvipsk<br>
+<span style="color:Black;background-color:#DAEAFF;">　　dvips　　　　　　　　　</span><br>
+
+　　その他...<br>
+
+***
+
+　　使うプログラム<br>
+　　紙サイズ<br>
+<span style="color:Black;background-color:#DAEAFF;">　　オプション... : 現在は-Ppdf　　　　　　　　　　</span>
+
+***
+
 <!-- ***Adobe Reader X の DDE に対応させる [#g620bb9d] -->
 <!-- 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に -->
 <!--  -->
@@ -380,6 +442,22 @@ dump.txt が，秀丸エディタをインストールしたフォルダまた�
 ***
 
 TeX ファイルを編集しているときは補完候補が表示されます．
+
+#### HKEY_CURRENT_USER\Console\\%SystemRoot%\_System32_cmd.exe の CodePage の値が 65001 (10 進数) の場合に ps2pdf.bat を実行しても PDF ファイルが作成されない → CodePage の値を 932 (10 進数) に変更する {#a95208cc}
+
+HKEY_CURRENT_USER\Console\\%SystemRoot%\_System32_cmd.exe の CodePage の値が 65001 (10 進数) の場合，祝鳥で ps2pdf 経由で PDF ファイルが作成できません．(コマンド自体は正常終了します．)
+
+CodePage の値が 932 (10 進数) の場合は PDF ファイルが出力されます．
+
+CodePage の値が 65001 (10 進数) の場合，秀丸マクロからコマンドプロンプトを起動すると CodePage が 65001 で起動します．
+
+コマンドプロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されないようです．
+
+```
+gswin32c.exe -sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
+```
+
+のように gswin32c.exe から直接変更するとできるようです．
 
 ### RaTeX0e {#s1e27527}
 
