@@ -222,6 +222,7 @@ uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止す�
 <tr><td>pdfborder</td><td>width of PDF link border</td><td>0 0 1 ただし、colorlinksのデフォルトは 0 0 0</td></tr>
 <tr><td>pdfcenterwindow</td><td>position the document window center of the screen</td><td>true/<strong>false</strong></td></tr>
 <tr><td>pdfcreator</td><td>text for PDF Creator field</td><td><strong>LaTeX with hyperref package</strong></td></tr>
+<tr><td>pdfencoding</td><td>PDFDocEncoding or Unicode</td><td>auto/pdfdoc/unicode</td></tr>
 <tr><td>pdffitwindow</td><td>resize document window to fit document size</td><td>true/<strong>false</strong></td></tr>
 <tr><td>pdfhighlight</td><td>set highlighting of PDF links</td><td><strong>/I</strong> /N /O /P</td></tr>
 <tr><td>pdfkeywords</td><td>text for PDF Keywords field</td><td>空</td></tr>
