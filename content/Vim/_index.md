@@ -104,6 +104,7 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [auctex.vim](http://www.vim.org/scripts/script.php?script_id=162)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
 - [neocomplcache](https://github.com/Shougo/neocomplcache)
+    - [どのようにLaTeXの数式を書けば、見やすくてデバッグのしやすい保守性の高いコードになるのか。みんなどうやってるの？30分ほど試行錯誤したけれど、結局こんなのしか思いつかなかった。誰か詳しい人。。良質なwebページを教えて欲しい。](http://twitter.com/#!/amone_misya/status/139302876789997568) ← [LyX](/LyX/) で OK
     - [LaTeXの{}の構文を解析するvimscriptを正規表現で書いたら、maxmempatternという見たことのないエラーで落ちた。ヘルプを見たところ、\\(...\\)\*を使いすぎるとそうなるらしい。さてどうするか](http://twitter.com/#!/amone_misya/status/139274043168800768)
     - [VimでLaTeXファイル中の数式を扱ってるとき、\left(と\right)の対応が直感的にわかりにくい。なので改善した。LaTeXのsyntaxファイルはデフォルトで1000行越えてるから、そこには触れずに対処療法的に設定した。](http://twitter.com/#!/amone_misya/status/139236753168015360)
     - [syntaxに基づいてinoremapできたら最高なんだけどなぁ。あとはVisualmodeで\`bfして選択範囲を¥begin{textbf}...¥end{textbf}で囲むとか](http://twitter.com/#!/amone_misya/status/138549298643214336)
