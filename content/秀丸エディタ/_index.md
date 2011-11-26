@@ -454,10 +454,10 @@ CodePage の値が 65001 (10 進数) の場合，秀丸マクロからコマン�
 コマンドプロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されないようです．
 
 ```
-gswin32c.exe -sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
+gswin32c.exe -sPAPERSIZE=a4 -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
 ```
 
-のように gswin32c.exe から直接変更するとできるようです．
+のように ps2pdf.bat ではなく gswin32c.exe を実行すると PDF ファイルが作成できるようです．
 
 ### RaTeX0e {#s1e27527}
 
