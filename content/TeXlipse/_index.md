@@ -243,7 +243,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 自動判別, UTF-8, MS932 (Shift_JIS), EUC-JP の場合の編集を記述します．
 
-他の TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．
+[TeX Live](</TeX Live/>) などの TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．
 
 ### <em>注意</em> {#kb057dfa}
 
@@ -1095,7 +1095,8 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 #### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#o62b47a3}
 
-Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．
+Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．<br>
+フォントを埋め込めば日本語も表示可能です．<br>
 
 #### [TeXworks](/TeXworks/) {#e36f125c}
 
