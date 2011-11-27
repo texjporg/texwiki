@@ -145,4 +145,5 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - [TeXがこれだけ遅いと、こんなにストレスフルだということがよく分かった。最悪のパターンだと、makeの手順が全部終わるのに10分かかる。。30倍（汗）](http://twitter.com/#!/shigeyas/status/138163821498994688)
 - [ダメだ。LuaTeXの日本語のフォントメトリック、追い込みが足りない。カタカナとか記号とかの周りが少し間が抜けた感じになるので、読みにくいわ。協力したいところだけど、今は無理なので、諦めてpTeXだな。。その方が早いし。。（ちと残念）](http://twitter.com/#!/shigeyas/status/138769734878502912)
 - [最近開発が活発で、utf-8が通って、dviを経由せずにPDFが作成できるLuaTexの日本語対応版のLuaTex-jaに詳しい人と友達になりたい(定期ポスト)](http://twitter.com/#!/shibukawa/status/138789511441285121)
+- [おお。LuaTeX、linen package使わないようにしたら、素晴らしく早くなった。遅い原因の一つはこれか。。](http://twitter.com/#!/shigeyas/status/140671574155071488)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
