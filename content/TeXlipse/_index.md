@@ -31,9 +31,12 @@ pukiwiki: "TeXlipse"
         - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
         - [texlipse documentation](http://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
 - [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
+- [BibSonomy](http://www.bibsonomy.org/)
+    - [TeXlipseBibSonomyExtension](http://www.bibsonomy.org/help_en/TeXlipseBibSonomyExtension)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
 
-2011-08-07 TeXlipse Version 1.4.2 がリリースされました．64-bit Windows に対応しました．
+2011-11-26 TeXlipse Version 1.5.0 がリリースされました．<br>
+TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 
 ### スクリーンショット {#j94c34b3}
 
@@ -53,7 +56,7 @@ pukiwiki: "TeXlipse"
 
 ## 注意点 {#f6b7dd5c}
 
-### TeXlipse が文法的に正しい TeX ファイルをパースできずにエラーになる {#t27e1af4}
+### TeXlipse が文法的に正しい TeX ファイルをパースできずにエラーになる → コメント %### を使用する {#t27e1af4}
 
 - [TeXlipseがマクロを正しくParseしてくれない問題について](http://did2.blog64.fc2.com/blog-entry-334.html) を参照．
 
@@ -122,7 +125,13 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 を入力して \[OK\] をクリックします．
 
-TeXlipse にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
+- Bibsonomy
+- Pdf4Eclipse
+- TeXlipse
+
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
+
+TeXlipse のインストール後 Eclipse を再起動します．
 
 Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
 から直接ダウンロードして展開 (解凍) します．
@@ -188,6 +197,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 　　…<br>
 　　◢　Texlipse<br>
+　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷　スペル・チェッカー<br>
@@ -213,7 +223,9 @@ W32TeX がインストールされていれば以下のような表示になっ�
 　　PsLatex program　　　()<br>
 　　PdfLatex program　　　(C:\w32tex\bin\pdflatex.exe)<br>
 　　XeLatex program　　　(C:\w32tex\bin\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\w32tex\bin\lualatex.exe)<br>
 　　Bibtex program　　　(C:\w32tex\bin\bibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\w32tex\bin\biber.exe)<br>
 　　Makeindex program　　　(C:\w32tex\bin\makeindex.exe)<br>
 　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
 　　Dvipdf program　　　(C:\w32tex\bin\dvipdfm.exe)<br>
@@ -293,6 +305,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -303,6 +332,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
 
@@ -450,6 +496,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -460,6 +523,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 %input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
 
@@ -607,6 +687,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -617,6 +714,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-kanji=sjis %input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
 
@@ -764,6 +878,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -774,6 +905,23 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-kanji=euc %input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
 
@@ -879,7 +1027,9 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　PsLatex program　　　()<br>
 　　PdfLatex program　　　(C:\w32tex\bin\pdflatex.exe)<br>
 　　XeLatex program　　　(C:\w32tex\bin\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\w32tex\bin\lualatex.exe)<br>
 　　Bibtex program　　　(C:\w32tex\bin\pbibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\w32tex\bin\biber.exe)<br>
 　　Makeindex program　　　(C:\w32tex\bin\mendex.exe)<br>
 　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
 　　Dvipdf program　　　(C:\w32tex\bin\dvipdfmx.exe)<br>
@@ -905,6 +1055,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 　　…<br>
 　　◢　Texlipse<br>
+　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷　スペル・チェッカー<br>
@@ -941,6 +1092,10 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 ***
 
 ### PDF ファイル ビューアー {#r96591c7}
+
+#### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#o62b47a3}
+
+Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．
 
 #### [TeXworks](/TeXworks/) {#e36f125c}
 
@@ -1320,6 +1475,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 　　…<br>
 　　◢　Texlipse<br>
+　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷<span style="color:Black;background-color:#DAEAFF;">　スペル・チェッカー　</span><br>
@@ -1381,6 +1537,7 @@ TeX ファイル編集中に改行すると Parsing が行われ，間違った�
 
 　　…<br>
 　　◢　Texlipse<br>
+　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷　スペル・チェッカー<br>
@@ -1688,7 +1845,7 @@ texlipse.jar の PATH は自分の環境に合わせて修正してください�
 
 ```
 @echo off
-java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.4.2\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
+java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.5.0\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
 ```
 
 ***
@@ -1721,7 +1878,7 @@ texlipse.jar の PATH は自分の環境に合わせて修正してください�
 
 ```
 @echo off
-java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.4.2\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
+java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.5.0\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
 ```
 
 ***
