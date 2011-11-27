@@ -85,9 +85,11 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### Beamer Themes {#r446ce9a}
 
+- [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
 - [http://www.pletscher.org/writings/latex/beamerthemes.php](http://www.pletscher.org/writings/latex/beamerthemes.php)
 - [http://mike.depalatis.net/beamerthemes/](http://mike.depalatis.net/beamerthemes/)
 - [Keynote Like Gradient Theme for LaTeX Beamer (時計じかけの林檎)](http://sites.google.com/site/tokeijikakenoringo/Home/keynote-like-gradient-theme-for-latex-beamer)
+- [LaTeX-beamerのテンプレート](http://d.hatena.ne.jp/ckazu/20090217/1234857766)
 
 ### 関連リンク {#tfca5d80}
 
