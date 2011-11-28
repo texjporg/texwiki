@@ -779,10 +779,14 @@ WZ EDITOR をご覧ください．
 
 ## Cygwin {#sfbd073e}
 
-### Cygwin での ptetex のインストール {#h7017721}
-
 Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
 TeX 環境を作るという手もあります。
+
+### Cygwin での tlptexlive のインストール {#bc8cfcc3}
+
+- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+
+### Cygwin での ptetex のインストール {#h7017721}
 
 Cygwin のパッケージインストール
 (-X オプションをつけてネットインストーラを起動する; 例. \[スタート\]->\[ファイル名を指定して実行\]->"Cygwin の setup.exe へのフルパス" -X) で，
