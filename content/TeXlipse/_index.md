@@ -1103,8 +1103,9 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．<br>
 フォントを埋め込めば日本語も表示可能です．<br>
 プロジェクト・エクスプローラーの PDF ファイルをダブルクリックすると Pdf4Eclipse で開きます．<br>
-編集中の TeX ファイルのタブをクリックして下方にドラッグすると水平分割して表示できます．<br>
-さらに下方にドラッグすると垂直分割して表示できます．<br>
+編集中の TeX ファイルのタブをクリックしたまま下方にドラッグ (移動) すると TeX ファイルと PDF ファイルを水平分割または垂直分割して表示できます．(ドラッグする方向や移動する距離によって水平分割・垂直分割を指定できます．)<br>
+編集中の TeX ファイルの編集画面を右クリック → Forward search (Ctrl+Alt+F) で forward search ができます．<br>
+PDF ファイルの画面をダブルクリックすると inverse search ができます．<br>
 
 #### [TeXworks](/TeXworks/) {#e36f125c}
 
@@ -1616,6 +1617,12 @@ dviout や makeidx パッケージが作成するテンポラリーファイル�
 
 ツールバーの [Vim](/Vim/) アイコンをクリックすると [Vim](/Vim/) 風のキーバインドで編集できます．
 
+### 表示色の変更 {#fcb1af55}
+
+- [Eclipse Color Theme](https://github.com/eclipse-color-theme/eclipse-color-theme)
+
+Eclipse Color Theme で TeXlipse の表示色の変更ができます．
+
 ## 使い方 {#n32f16b3}
 
 ### プロジェクトの作成 {#zbb02360}
@@ -1767,6 +1774,23 @@ LaTeX プロジェクト<br>
 
 ***
 
+### 補完 {#wbb2940d}
+
+Ctrl+Space で補完を行います．<br>
+
+```
+\begin{itemize}
+```
+
+で Enter をタイプすると
+
+```
+  \item 
+\end{itemize}
+```
+
+を自動的に補完してくれます．<br>
+
 ### ビルド {#g3afcb95}
 
 デフォルトでは，ファイルを保存すると自動的にビルドしてくれます．
@@ -1914,7 +1938,6 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [TeX - EclipseWiki](http://www.eclipsewiki.net/eclipse/?TeX)
 - [改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/)
 - [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
-- [Eclipse Color Theme](https://github.com/eclipse-color-theme/eclipse-color-theme)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
 - [TeXlipse (Windows)](http://utkhii.px.tsukuba.ac.jp/~ywatanabe/pukiwiki/index.php?PC%20%A5%BB%A5%C3%A5%C8%A5%A2%A5%C3%A5%D7#odf46805)
@@ -1935,6 +1958,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [windowsのeclipseでtexを使う設定しました。参考サイトはこちら](http://twitter.com/#!/onsen_tanuki/status/139626617550028800), [その次の記事でTeXlipse捨てたのは良い思い出](http://twitter.com/#!/did2memo/status/139673979949551616), [先輩のtexlipse設定参考ページのツイートがそのblog主の東工大院生の人にリツイートされてカオス。その次にその人はtexlipseは使わなくなったとツイートしてさらにカオス。。](http://twitter.com/#!/Reat_hy/status/139677472655548416), [まずかったかな・・・](http://twitter.com/#!/onsen_tanuki/status/139679936087728128)
 - [texlipseでdvipdfmxを呼ぶとEPS取り込みでこける件は，texlipseからbashを呼ぶように設定してbashにdvipdfmxを呼ばせ、さらに環境変数でPATHを与えるという下らない方法で解決した。](http://twitter.com/marurur/status/98084223440789505)
 - [Texlipseのbibtexで、日本語文字列が入ってるとパースに失敗する時は、前後に半角スペースを入れると良い。](http://twitter.com/watanaa/status/24939483535)
+- [やっぱりtexlipseは難しすぎて手に余るなぁ　それほど苦労して導入するメリットが感じられないや](http://twitter.com/#!/mikadukim/status/141298752802656256), [やっぱりEasyTexさん最強](http://twitter.com/#!/mikadukim/status/141298947246391296), [シンプルなものが好き](http://twitter.com/#!/mikadukim/status/141299546746667008)
 - [LaTeX Community &bull; View topic - Texlipse can't find Bibtex](http://www.latex-community.org/forum/viewtopic.php?f=27&t=10481&start=0)
 - [nomencl.sty: TeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/nomencl.html)
 - [TeXlipse | Akihiro SAITO&#039;s Laboratory](http://saito.sc/archives/tag/texlipse)
