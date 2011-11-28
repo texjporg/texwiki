@@ -90,14 +90,16 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 という特別なコメントを入れることでパーサに該当部分を無視するようにできるそうです．
 
-### Windows 7 (64bit) で Adobe Reader で PDF ファイルを表示しようとするとエラーメッセージが表示される → TeXlipse 1.4.2 で 64-bit Windows に対応しました {#p7159fd0}
+## 不具合 {#t2a5d9cf}
+
+### TeXlipse 1.4.1 で Windows 7 (64bit) で Adobe Reader で PDF ファイルを表示しようとするとエラーメッセージが表示される → TeXlipse 1.4.2 で 64-bit Windows に対応しました {#p7159fd0}
 
 <strong>TeXlipse 1.4.2 で 64-bit Windows に対応しました．</strong>
 
 - [SourceForge.net: TeXlipse: Detail: 3050201 - DDEClient 32 on win7 amd64](http://sourceforge.net/tracker/index.php?func=detail&aid=3050201&group_id=133306&atid=726819) → Fixed
 - [Windows7(64bit)のTexlipseで、Ctrl+4でAdobereaderを使ってプレビューすると、PDFを見れるのだが、一緒にエラーメッセージもでてうっとうしい。ddeclient.dllを64bit用のに置き換えると解決した。](http://twitter.com/t_nuimura/statuses/52547307543076864)
 
-この問題の解決策が，TeXlipse の [FAQ](http://texlipse.sourceforge.net/faq.php) にあります．
+この問題の解決策が，TeXlipse の [FAQ \[Internet Archive\]](http://web.archive.org/web/20110713114656/http://texlipse.sourceforge.net/faq.php) にあります．
 
 [ここ](http://texlipse.sourceforge.net/ddeclient64bit.zip) から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします．
 
@@ -1095,6 +1097,8 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 #### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#o62b47a3}
 
+- [TeXエディタのTeXlipse+PDF4Eclipseを試してみたけど便利すぎる。保存する度に自動ビルド＆PDFプレビュー表示。subclipse等任意のSCMプラグインでバージョン管理可。エクリプスのショートカットも使える。](http://twitter.com/#!/hidekishima/status/139345542835740672)
+
 Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．<br>
 フォントを埋め込めば日本語も表示可能です．<br>
 
@@ -1789,7 +1793,15 @@ LaTeX プロジェクト<br>
 
 ***
 
-で，それぞれの出力フォーマット(dvi, ps, pdf) に対応するビューアーが，立ち上がります．
+で，プロジェクトの出力フォーマット(dvi, ps, pdf) に対応する最も優先度の高いビューアーが，立ち上がります．
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　実行(R)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　外部ツール(E)　</span>　</span><br>
+
+***
+
+で，ビューアーを指定して実行することもできます．
 
 ### 出力フォーマットとビルド・コマンドの変更 {#me964c32}
 
@@ -1917,7 +1929,6 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [Eclipseのキーバインドをvim風にできるVrapperが素晴らしすぎる件について](http://d.hatena.ne.jp/yuroyoro/20100218/1266477264)
 - [QA: TeXlipse での BibTex の生成ファイルの置き場所について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=521)
 - [windowsのeclipseでtexを使う設定しました。参考サイトはこちら](http://twitter.com/#!/onsen_tanuki/status/139626617550028800), [その次の記事でTeXlipse捨てたのは良い思い出](http://twitter.com/#!/did2memo/status/139673979949551616), [先輩のtexlipse設定参考ページのツイートがそのblog主の東工大院生の人にリツイートされてカオス。その次にその人はtexlipseは使わなくなったとツイートしてさらにカオス。。](http://twitter.com/#!/Reat_hy/status/139677472655548416), [まずかったかな・・・](http://twitter.com/#!/onsen_tanuki/status/139679936087728128)
-- [TeXエディタのTeXlipse+PDF4Eclipseを試してみたけど便利すぎる。保存する度に自動ビルド＆PDFプレビュー表示。subclipse等任意のSCMプラグインでバージョン管理可。エクリプスのショートカットも使える。](http://twitter.com/#!/hidekishima/status/139345542835740672)
 - [UIは他エディタと比べてもいい。いちいちPDF閉じなくていいし、Omakeもいらない。svn:ignoreでゴミファイル区別可。Ctrl+Jでインクリメンタル検索とかCtrl+スペースで補完とかショートカットが同じで作業効率いい。](http://twitter.com/#!/hidekishima/status/139353923361325056)
 - [texlipseでdvipdfmxを呼ぶとEPS取り込みでこける件は，texlipseからbashを呼ぶように設定してbashにdvipdfmxを呼ばせ、さらに環境変数でPATHを与えるという下らない方法で解決した。](http://twitter.com/marurur/status/98084223440789505)
 - [Texlipseのbibtexで、日本語文字列が入ってるとパースに失敗する時は、前後に半角スペースを入れると良い。](http://twitter.com/watanaa/status/24939483535)
