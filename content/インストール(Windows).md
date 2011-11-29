@@ -712,7 +712,7 @@ jEdit#マクロ<br>
 
 #### [Vim](/Vim/) + プラグイン {#s7ce6347}
 
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br> をご覧ください．
+[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
 
 ### フリーウェア (無料) {#k0b8f900}
 
