@@ -99,11 +99,11 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin (ATP)
+- neocomplcache
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
     - [vim-scripts/LaTeX-Box - GitHub](https://github.com/vim-scripts/LaTeX-Box)
 - [auctex.vim](http://www.vim.org/scripts/script.php?script_id=162)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
-- neocomplcache
 - [tex.vim : Indent file for TeX](http://www.vim.org/scripts/script.php?script_id=218)
     - [vim-scripts/tex.vim--Tanzler - GitHub](https://github.com/vim-scripts/tex.vim--Tanzler)
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
