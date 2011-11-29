@@ -49,6 +49,7 @@ pukiwiki: "秀丸エディタ"
     (阿部 紀行 (あべのり) さん)
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
+    - [64bit版macrodll.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-4)
     - [祝鳥とは - はてなキーワード](http://d.hatena.ne.jp/keyword/%BD%CB%C4%BB)
     - [秀丸エディタのカスタマイズVZ like + TeX](http://cms.estuarine.jp/?p=171)
     - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html), [TeX Wiki｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11021964592.html)
@@ -59,7 +60,8 @@ pukiwiki: "秀丸エディタ"
 - [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
     (阿部 紀行 (あべのり) さん)
 
-2011-11-26 祝鳥 0.86 がリリースされました．
+2011-11-28 64bit版macrodll.dll がリリースされました．<br>
+2011-11-26 祝鳥 0.86 がリリースされました．<br>
 
 #### DVI→PSの設定 {#e5e9bbcd}
 
