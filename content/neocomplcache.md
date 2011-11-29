@@ -27,9 +27,82 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [Vim-users.jp - neocomplcache](http://vim-users.jp/tag/neocomplcache/)
 - [neocomplcacheとは - はてなキーワード](http://d.hatena.ne.jp/keyword/neocomplcache)
 
+## 不具合 {#k8b031e2}
+
+### neocomplcache で単語の一部を補完すると register-. の値がおかしくなる {#d223a02b}
+
+- [#97: 補完時のregister-.の挙動の改善 - Issues - vim-jp/issues - GitHub](https://github.com/vim-jp/issues/issues/97)
+- [さて、neocomplcacheのregister-.問題が深刻なんだがどうするか……。](http://twitter.com/#!/ShougoMatsu/status/141402814554456064)
+- [neocomplcache。cwとかで単語の途中から置換したときにregisterに編集した単語が丸ごと（？）入っちゃってて、.（ドット）で繰り返しをしようとするとまずいことに。ソース追いきれなかったので導入諦めた。スニペットを表示してくれる機能だけ欲しいんだけど](http://twitter.com/#!/rt_sporty/status/141387168475119617)
+- [なんかciwhogeとかしても.で同じことしてくれないんだよなぁ。Vimのバグなのかneocoplcacheのバグなのか。neocomplcacheはrepeat.vimに対応するべきなのか。](http://twitter.com/#!/tyru/status/141054674311725056)
+
+## ダウンロード/インストール {#fb8cc945}
+
+[neocomplcache](https://github.com/Shougo/neocomplcache) から最新版の neocomplcache をダウンロードします．
+
+Vim を起動し
+
+```
+ :echo $HOME
+```
+
+で，$HOME の場所を確認します．
+
+パッケージを展開し
+
+- $HOME/.vim/ (UNIX, Linux)
+- $HOME/vimfiles/ (Windows)
+
+に
+
+- autoload/
+- doc/
+- ftplugin/
+- indent/
+- plugin/
+- syntax/
+- .gitignore
+- README
+
+を配置します．
+
+- $HOME/.vimrc (UNIX, Linux)
+- $HOME/\_vimrc (Windows)
+
+に設定を記述します．
+
+***
+
+```
+""
+"" neocomplcache
+""
+let g:neocomplcache_enable_at_startup = 1
+imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+```
+
+***
+
 ## 補完 {#j0e0bbeb}
 
 ### スニペット補完 {#he9c0c31}
+
+```
+\b
+```
+
+を入力すると補完候補が表示されます．<br>
+補完候補のリストは &lt;CTRL-U>, &lt;CTRL-N>, &lt;CTRL-P> で移動できます．<br>
+\begin{itemize} で &#x3c;CTRL-K> を入力するとスニペット補完を行います．<br>
+\item の入力が完了して &#x3c;CTRL-K> を入力すると ${0} にジャンプします．<br>
+
+```
+\begin{itemize}
+  \item 
+\end{itemize}
+${0}
+```
 
 - [(そもそも${0}とか${1}といった記号はNeocomplcacheのスニペットファイルから呼び出された時にうまくいくように設計されているのだから、今回のような使い方は明らかに想定されてないだろうし、不具合が生じたり、ネコのバージョンアップと共に動かなくなる可能性は極めて高い)](http://twitter.com/#!/amone_misya/status/138035737097543680) ← [ふむ。せっかくなので、ブログか何かにまとめてもらえないでしょうか。そうすれば、私も問題点があったら共有できますので。私もTeX使うので興味があります。](http://twitter.com/#!/ShougoMatsu/status/138455943770931200) ← [はい](http://twitter.com/#!/amone_misya/status/138542564058996736) ← [とりあえず、取り込んでみました。私のスニペットも追加しています。トリガーを変えているのでVim-LaTeXと互換性があるかは微妙ですが、試してもらえると嬉しいです。](http://twitter.com/#!/ShougoMatsu/status/138570039858184194) ← [使ってみました。こっちの方が、わざわざEVMとかEEQみたいな略語を覚えずに済む分良い気がします。](http://twitter.com/#!/amone_misya/status/138599326388723712)
 - [VIM-LaTeXをNeocomplcacheのSnippets補完で再現(1)](http://d.hatena.ne.jp/amone_misya_ap/20111121/1321865189)
