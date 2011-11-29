@@ -81,7 +81,7 @@ Vim を起動し
 - $HOME/.vimrc (UNIX, Linux)
 - $HOME/\_vimrc (Windows)
 
-に以下の記述を追加します．
+に設定を記述します．
 
 ***
 
@@ -191,7 +191,7 @@ ATP では基本的に補完はオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を使用�
 \be<CTRL-X><CTRL-O> で  \begin{
 \begin{i<CTRL-X><CTRL-O> で \begin{itemize}
 \i<CTRL-X><CTRL-O> で \item などの補完候補が表示されます
-補完候補のリストは <CTRL-N>, <CTRL-P> で移動できます
+補完候補のリストは <CTRL-O>, <CTRL-N>, <CTRL-P> で移動できます
 \item の入力が終わって <CTRL-X><CTRL-O> を入力すると \end{itemize} が補完されます
 ```
 
