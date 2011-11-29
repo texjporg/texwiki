@@ -159,30 +159,21 @@ ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作�
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 
-### 補完 {#v9176e7e}
-
-#### Tab 補完 {#m1120519}
+### 移動 {#xdfac89b}
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
-> <tr><td>&lt;Tab&gt;</td><td>Tab 補完</td></tr>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">移動</th></tr>
+> <tr><td>&lt;CTRL-J&gt;</td><td>&lt;CTRL-J&gt;</td><td>次に進む</td></tr>
+> <tr><td>&lt;CTRL-K&gt;</td><td>&lt;CTRL-K&gt;</td><td>前に戻る</td></tr>
 > </tbody>
 > </table>
 >
 
-ATP では基本的に補完は &lt;Tab> を使用します．<br>
-&#x3c;Tab> を入力する代わりに &lt;CTRL-I> を使用することもできます．<br>
-&#x3c;Tab> 自身を入力したい場合は &lt;CTRL-V>&lt;Tab> を入力します．<br>
+&#x3c;CTRL-J>, &#x3c;CTRL-K> を使用すると [Vim-LaTeX](/Vim-LaTeX/) のような place holder の機能が実現できます．<br>
+ただし &lt;++> のように TeX ファイルに place holder を出力しません．
 
-```
-\be<Tab> で \begin{
-\begin{i<Tab> で \begin{itemize}
-\i<Tab> で \item などの補完候補が表示されます
-補完候補のリストは <CTRL-N>, <CTRL-P> で移動できます
-\item の入力が終わって <Tab> を入力すると \end{itemize} が補完されます
-カーソルは \end{itemize} の後に自動的に移動します
-```
+### 補完 {#v9176e7e}
 
 #### [オムニ補完](https://sites.google.com/site/vimdocja/usr_24-html#24.3) {#i3ad1ad9}
 
@@ -194,23 +185,23 @@ ATP では基本的に補完は &lt;Tab> を使用します．<br>
 > </table>
 >
 
-オムニ補完 &lt;CTRL-X>&lt;CTRL-O> も使用できます．<br>
+ATP では基本的に補完はオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を使用します．<br>
 
 ```
 \be<CTRL-X><CTRL-O> で  \begin{
 \begin{i<CTRL-X><CTRL-O> で \begin{itemize}
-\i<CTRL-X><CTRL-O> で \item の補完が行われます
-\en<CTRL-X><CTRL-O> で \end{
-\end{i<CTRL-X><CTRL-O> で \end{itemize}
+\i<CTRL-X><CTRL-O> で \item などの補完候補が表示されます
+補完候補のリストは <CTRL-N>, <CTRL-P> で移動できます
+\item の入力が終わって <CTRL-X><CTRL-O> を入力すると \end{itemize} が補完されます
 ```
-
-ただし \end{itemize} は自動インデントされないようなので \end{itemize} を補完する場合は &lt;Tab> を使用しましょう．<br>
 
 #### Environment Imaps {#odbdb26f}
 
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">補完</th></tr>
+> <tr><td>]b</td><td>\begin{}</td></tr>
+> <tr><td>]e</td><td>\end{}</td></tr>
 > <tr><td>]I</td><td>\begin{itemize}<br>\item<br>\end{itemize}<br></td></tr>
 > <tr><td>]i</td><td>\item</td></tr>
 > </tbody>
@@ -220,23 +211,31 @@ ATP では基本的に補完は &lt;Tab> を使用します．<br>
 \]I を素早く入力すると \begin{itemize}\item\end{itemize} を補完します．<br>
 
 ```
-]I
-```
-
-```
 \begin{itemize}
-	\item
+  \item
 \end{itemize}
 ```
 
 \]i を素早く入力すると \item を補完します．<br>
 
 ```
-]i
+\item
 ```
 
+#### Math Imaps Misc {#e8334d60}
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">補完 (数式モード)</th></tr>
+> <tr><td>#/</td><td>\frac{}{}</td></tr>
+> </tbody>
+> </table>
+>
+
+数式モード中で #/ を素早く入力すると \frac{}{} を補完します．<br>
+
 ```
-\item
+$\frac{}{}
 ```
 
 #### Font Commands {#l4bb69da}
@@ -252,18 +251,10 @@ ATP では基本的に補完は &lt;Tab> を使用します．<br>
 ##rm を素早く入力すると \textrm{} を補完します．<br>
 
 ```
-##rm
-```
-
-```
 \textrm{}
 ```
 
 数式モード中で ##rm を素早く入力すると \mathrm{} を補完します．<br>
-
-```
-$##rm
-```
 
 ```
 $\mathrm{}
@@ -280,10 +271,6 @@ $\mathrm{}
 >
 
 数式モード中で #a を素早く入力すると \alpha を補完します．<br>
-
-```
-$#a
-```
 
 ```
 $\alpha
