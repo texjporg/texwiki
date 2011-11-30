@@ -815,7 +815,9 @@ English にしておかないと，文字が大部分表示されないことが
 
 ## 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合) {#g728aabc}
 
-最新版の WinShell (WinShell 3.3.2.4) で UTF-8 を使用する場合は，まず \[主なTeXプログラムの設定\] のプログラムの
+最新版の WinShell (WinShell 3.3.2.4) で UTF-8 を使用する場合は，Runtime Error! が発生します．
+
+Runtime Error! を回避するには，まず \[主なTeXプログラムの設定\] のプログラムの
 
 - LaTeX
 - PDFLaTeX
