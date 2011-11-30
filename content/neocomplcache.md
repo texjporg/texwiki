@@ -29,12 +29,11 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ## 不具合 {#k8b031e2}
 
-### neocomplcache で単語の一部を補完すると register-. の値がおかしくなる {#d223a02b}
+### neocomplcache で単語の一部を補完すると refresh=always 時に register-. の値がおかしくなる → [Fixed for refresh always problem(experimental)](https://github.com/Shougo/neocomplcache/commit/66985144f271b1d12b43ea70c942575502635511) {#d223a02b}
 
 - [#97: 補完時のregister-.の挙動の改善 - Issues - vim-jp/issues - GitHub](https://github.com/vim-jp/issues/issues/97)
-- [さて、neocomplcacheのregister-.問題が深刻なんだがどうするか……。](http://twitter.com/#!/ShougoMatsu/status/141402814554456064)
-- [neocomplcache。cwとかで単語の途中から置換したときにregisterに編集した単語が丸ごと（？）入っちゃってて、.（ドット）で繰り返しをしようとするとまずいことに。ソース追いきれなかったので導入諦めた。スニペットを表示してくれる機能だけ欲しいんだけど](http://twitter.com/#!/rt_sporty/status/141387168475119617)
-- [なんかciwhogeとかしても.で同じことしてくれないんだよなぁ。Vimのバグなのかneocoplcacheのバグなのか。neocomplcacheはrepeat.vimに対応するべきなのか。](http://twitter.com/#!/tyru/status/141054674311725056)
+- [neocomplcache。cwとかで単語の途中から置換したときにregisterに編集した単語が丸ごと（？）入っちゃってて、.（ドット）で繰り返しをしようとするとまずいことに。ソース追いきれなかったので導入諦めた。スニペットを表示してくれる機能だけ欲しいんだけど](http://twitter.com/#!/rt_sporty/status/141387168475119617) ← [ちなみに、スニペットの表示だけならUnite snippetでOKです。](http://twitter.com/#!/ShougoMatsu/status/141399510181089282), [あ、原因が分かりました。うーん、ちょっと考えさせてください。これは根本的な問題でもあるので対処が難しいですね……。](http://twitter.com/#!/ShougoMatsu/status/141398277961682944), [こんにちは。作者です。その現象については、私も困っているところです。ソースコード自体に問題はないので、追ってもおそらく分かりません。原因はVimだと思います。](http://twitter.com/#!/ShougoMatsu/status/141394661502763008) ← [再現性を確認しました。やはり単純に二つ同じ単語があって、一方の後半などをcwhelloとかするとレジスターが訳分かんないことになりますね。macvim 7.3 353です。Unite snippet助かります！一旦自動補完OFFで使わせていただきます！](http://twitter.com/#!/rt_sporty/status/141534001860059137) ← [先ほどのgithubのIssuesに再現する条件を書き込んでもらえないでしょうか。できれば、再現する最小限の設定もいっしょに。neocomplcache意外の余計なプラグインがない状態のほうが望ましいです。](http://twitter.com/#!/ShougoMatsu/status/141753971353198592) ← [はい、今書いていました。環境も再現できるように細かく書きますので少々お待ちください。](http://twitter.com/#!/rt_sporty/status/141754302518669312) ← [了解しました。こちらの環境で再現できれば、ほぼ直る問題だと思われます。特に.vimrcはできるだけ削ってくれると、他の人も試しやすいのでお願いします。](http://twitter.com/#!/ShougoMatsu/status/141754501022486528) ← [書きました。vimrcはほぼ素の状態なので、再現するかどうかはファイルの内容に依存してるようですね。](http://twitter.com/#!/rt_sporty/status/141764079344812033) ← [原因は分かったので、とりあえず修正しました。試してください。](http://twitter.com/#!/ShougoMatsu/status/141785193945116673) ← [直ってます！ありがとうございます！自動補完ONで使用させていただきます。助かりましたー](http://twitter.com/#!/rt_sporty/status/141804061790965762) ← [とりあえず、本体の問題みたいなので、それが直るまではこのまま行きます。](http://twitter.com/#!/ShougoMatsu/status/141804696544346112)
+- [なんかciwhogeとかしても.で同じことしてくれないんだよなぁ。Vimのバグなのかneocoplcacheのバグなのか。neocomplcacheはrepeat.vimに対応するべきなのか。](http://twitter.com/#!/tyru/status/141054674311725056) ← [私も気になっています。何かneocomplcacheで補完するとレジスタの動作おかしいですよね？](http://twitter.com/#!/ShougoMatsu/status/141393233979772928) ← [おかしいですね。.が使えなくなるのはかなりつらいですね…](http://twitter.com/#!/tyru/status/141530377561976832)
 
 ## ダウンロード/インストール {#fb8cc945}
 
@@ -112,6 +111,8 @@ ${0}
 
 ## 関連リンク {#b3c6dfff}
 
+- [Vim+NeoComplCache使ってたけどNotepad++に戻った](http://d.hatena.ne.jp/carrotsword/20100607/1275931911)
+- [うーんneocomplcacheのCursorHoldの処理削除したらvimのソース開いた時重くなるの直った。](http://twitter.com/#!/tyru/status/141783532728094722) ← [初回時はインクルードファイルをキャッシュするので遅いですね……。](http://twitter.com/#!/ShougoMatsu/status/141792467828736000) ← [なるほど。大きいファイルを開くと特に重く感じるのはそのせいですね・・・](http://twitter.com/#!/tyru/status/141792839213391872)
 - [どのようにLaTeXの数式を書けば、見やすくてデバッグのしやすい保守性の高いコードになるのか。みんなどうやってるの？30分ほど試行錯誤したけれど、結局こんなのしか思いつかなかった。誰か詳しい人。。良質なwebページを教えて欲しい。](http://twitter.com/#!/amone_misya/status/139302876789997568) ← [LyX](/LyX/) で OK
 - [LaTeXの{}の構文を解析するvimscriptを正規表現で書いたら、maxmempatternという見たことのないエラーで落ちた。ヘルプを見たところ、\\(...\\)\*を使いすぎるとそうなるらしい。さてどうするか](http://twitter.com/#!/amone_misya/status/139274043168800768)
 - [VimでLaTeXファイル中の数式を扱ってるとき、\left(と\right)の対応が直感的にわかりにくい。なので改善した。LaTeXのsyntaxファイルはデフォルトで1000行越えてるから、そこには触れずに対処療法的に設定した。](http://twitter.com/#!/amone_misya/status/139236753168015360)
