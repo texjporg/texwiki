@@ -74,9 +74,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<span style="color:White;"><strong>←</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<span style="color:White;"><strong>←</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">Welcome to the Configuration Wizard</span><br>
 
@@ -115,9 +115,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">Distribution directory</span><br>
 
@@ -161,9 +161,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">DVI-Viewer configuration</span><br>
 
@@ -206,9 +206,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">Your TeX-distribution supports the generation of PostScript-files</span><br>
 
@@ -253,9 +253,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 [TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)<br>
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">Your TeX-distribution supports the generation of PDF-files</span><br>
 
@@ -298,9 +298,9 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
+<span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　<span style="color:#1144BB;">Finish</span><br>
 
@@ -359,7 +359,7 @@ LaTeX => DVI<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -396,7 +396,7 @@ LaTeX => PS<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -434,7 +434,7 @@ LaTeX => PS => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -471,7 +471,7 @@ LaTeX => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -508,7 +508,7 @@ LuaLaTeX => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -545,7 +545,7 @@ XeLaTeX => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -584,7 +584,7 @@ LaTeX => DVI => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -625,7 +625,7 @@ LaTeX => PS<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -666,7 +666,7 @@ LaTeX => PS => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -701,7 +701,7 @@ Output<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -747,7 +747,7 @@ LaTeX => DVI<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -788,7 +788,7 @@ LaTeX => PS<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -827,7 +827,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -874,7 +874,7 @@ XeLaTeX => PDF<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -915,7 +915,7 @@ inverse search の時に他のエディタが起動してしまう場合は suma
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -953,7 +953,7 @@ Server を acroviewR10 に変更しただけでは Adobe Reader X の起動時�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeXnicCenter　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　<span style="color:White;"><strong>TeXnicCenter</strong></span>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <span style="font-size:35px"><strong>×</strong></span> \[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]<br>
 
@@ -969,7 +969,7 @@ Adobe Reader X をあらかじめ起動しておけば，このエラーメッ�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -1022,7 +1022,7 @@ Server: <ins>acroviewR10</ins>　　Topic: <ins>control</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
