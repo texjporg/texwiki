@@ -147,3 +147,4 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - [最近開発が活発で、utf-8が通って、dviを経由せずにPDFが作成できるLuaTexの日本語対応版のLuaTex-jaに詳しい人と友達になりたい(定期ポスト)](http://twitter.com/#!/shibukawa/status/138789511441285121)
 - [おお。LuaTeX、linen package使わないようにしたら、素晴らしく早くなった。遅い原因の一つはこれか。。](http://twitter.com/#!/shigeyas/status/140671574155071488)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
+- [Switched to LuaLaTeX](http://the-user.org/post/switched-to-lualatex)
