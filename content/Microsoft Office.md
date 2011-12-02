@@ -35,5 +35,3 @@ pukiwiki: "Microsoft Office"
 - [最近、MS Equation Editor にどっぷり](http://ufcpp.wordpress.com/2010/02/16/%E6%9C%80%E8%BF%91%E3%80%81ms-equation-editor-%E3%81%AB%E3%81%A9%E3%81%A3%E3%81%B7%E3%82%8A/)
 - [10 の理由に増やしてみた](http://ufcpp.wordpress.com/2010/02/19/10-%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AB%E5%A2%97%E3%82%84%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
 - [WordとLaTeX－どちらを使うべきか？](http://www.forte-science.co.jp/news/articles/20090106/wordorlatex.cfm)
-- [latex だと書くのが遅くなるからMSWord使ってたけど、フォントやインデントもめちゃくちゃになってしまってイライラしたのでやっぱりlatex 使うことにしたなど](http://twitter.com/#!/kassyi/status/128289216860930048)
-- [個人的に、TeXは文書をリアルタイムで整形するのがCPUにとってかなりの負荷になる時代のソフトで、Wordとかがサクサク動くこのご時世にとってはオワコンってイメージがある。あくまでも僕の偏見。](http://twitter.com/#!/EH500_Kintarou/status/133126354806910976)
