@@ -104,7 +104,6 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [LaTeX Beamer 入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/)
 - [Windows XP に LaTeX beamer をいれる](http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html)
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
-- [LaTeX の beamer の block 環境内で align を使うと上下の余白が大きすぎる問題は block 環境内で \abovedisplayskip = 0pt \belowdisplayskip = 0pt とすれば解決する. プリアンブルでは効かないので注意.](http://twitter.com/#!/optanaka/status/110574902322540545)
 - [LaTeX+Beamerでtableofcontentsは決してできない](http://blomott.mobi/rubyneko/entry%2CMnZntmATC-OCUhEBedf7yQ%2C%2C%2C%2C.html)
 - [LaTeX + Beamer + Macで\tableofcontents{}ができないときの処方箋](http://blomott.mobi/rubyneko/entry%2CQNT1bI-wQBEF7V6ZF5N8sg%2C%2C%2C%2C.html)
 - [パワポは苦手！理工系のためのプレゼンツールBeamer](http://d.hatena.ne.jp/wkmy/20110829/1314611076)
