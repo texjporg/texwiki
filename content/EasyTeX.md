@@ -602,8 +602,6 @@ C:\easytex3241\EasyTeX.exe^s /j%d "%s"
 
 ## 関連リンク {#p8488be5}
 
-- [EasyTeXでCtrl-aが利かない](http://twitter.com/#!/chiguri/status/108072137952215040)
-    - EasyTeX では「すべて選択」は Ctrl+Alt+A に割り当てられているようです
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 
