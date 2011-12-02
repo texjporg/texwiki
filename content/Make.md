@@ -33,7 +33,6 @@ pukiwiki: "Make"
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
-- [libpngが1.5になってtexがコンパイルできなくなったのでパッチ書いた。texliveは巨大だから敬遠してる。](http://twitter.com/#!/emonkak/status/115754793984720896)
 - [teTeX-3.0](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/tetex.html)
 
 [teTeX](http://www.tug.org/tetex/) は
