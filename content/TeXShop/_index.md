@@ -31,12 +31,6 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 - \[[OS X TeX\] TS 3.06 crash on Lion](http://email.esm.psu.edu/pipermail/macosx-tex/2011-September/047607.html) (modified TeXShop binary)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
-- [TeXShop for Lion の実験的新バージョン3.05，3.06がリリースされました。](http://twitter.com/#!/doraTeX/status/110489378907889665)
-- [3.05は，Lionの「バージョン」機能に関わる改善です。3.04までは，タイプセットのたびに新しい「バージョン」が保存されましたが，それでは，こまめにタイプセットしていると「すべてのバージョンをブラウズ」したときにあまりに大量のバージョンが存在して面倒でした。（続く）](http://twitter.com/#!/doraTeX/status/110491486633738241)
-- [そこで，3.05では，明示的にCommand+Sしたときにのみ「バージョン」が保存されるようになりました。3.06では，それに加え，OgreKit検索パネルが改善され，TeXShop同等のカラーリングや補完機能が使えるようになりました。（続く）](http://twitter.com/#!/doraTeX/status/110491608440520704)
-- [また，全置換直後に文字色が真っ黒になる現象を修正したり，Spaces使用時にCommand+Fでスペースの遷移が起こらないようにしたりしました。あと，BibTeXの設定でオプションを許容するように変更したり，その他いくつかのバグ修正がなされています。](http://twitter.com/#!/doraTeX/status/110492227951792128)
-    <!-- -[[Lion 用 TeXShop 3.02 がリリースされました！:http://twitter.com/#!/doraTeX/status/98562818227445760]] -->
-    <!-- -[[Lion専用の新バージョン TeXShop-64 がリリースされました！:http://twitter.com/#!/doraTeX/status/93699401658269697]] -->
 
 ## MacTeX-2011 の場合の設定 {#hd2204af}
 
@@ -470,8 +464,6 @@ TeXShop を再起動します．
 
 #### [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/) {#q2990ba4}
 
-### [TeXShopは画像ファイルhoge.\*をDrag&amp;Dropだけで\includegraphics\[\]{hoge.\*}してくれる](http://twitter.com/#!/ysykimura/status/105009020062015488) {#qa99ad06}
-
 ### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
 
 ### [TexShop での eps 貼り付け](http://d.hatena.ne.jp/yuka_y/20111011/1318302043) {#b3b3e922}
@@ -518,7 +510,4 @@ Live preview for TeXShop
     - [TeXworks &amp; TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/2011/10/entry_107.html)
 - [【TeXShopの設定】](http://www.math.meiji.ac.jp/~mk/diary/2011/09/#tex2html15)
 - [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
-- [TeXShopがUTF-8で文字化けするだと・・・](http://twitter.com/#!/kaihua7/status/129175210153881600)
-- [TeXShop2.43は文字化けしないが、TeXShop3.04はする。 なんでだろう？](http://twitter.com/#!/kaihua7/status/129178391151771648)
-- [TeXShop のビューワーには回転機能があることを発見した（今更）](http://twitter.com/#!/timbalero1973/status/135276804876414976)
 - [LaTeX Page](http://new.math.uiuc.edu/math198/latex.html)
