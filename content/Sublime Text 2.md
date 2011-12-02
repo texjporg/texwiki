@@ -36,7 +36,4 @@ Sublime Text 2 は Windows, OS X, Linux で動作するテキストエディタ�
 
 ### OS X {#c2e22368}
 
-- [Sublime Text2というエディタが良いらしいという声がウェブ上で散見されたので試してるなう。とりあえずLaTeXToolsを使って日本語LaTeXが通るところまでたどり着いた。これは良いかも。だけどTeXShopに慣れきっているので、移行するかは未定。](http://twitter.com/#!/fuhmi_fevrier/status/135496330779967488)
-- [Sublime Text2にTeXToolsを入れてlatexmk経由でコンパイル＆プレビューできるようになった。TeXShopよりも快適かも。何よりもSublime Text2というテキストエディターが素晴らしい。](http://twitter.com/#!/sukarabe3/status/135096514388299776)
 - [Sublime Text 2でTeXをコンパイルする](http://ototorosama.com/blog/2011/11/sublime-text-2%E3%81%A7tex%E3%82%92%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%81%99%E3%82%8B/)
-    - pdfLaTeX ではなく LuaLaTeX で [LuaTeX-ja](/LuaTeX/#nec94db0) を使えば日本語も使用可能です
