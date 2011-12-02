@@ -276,9 +276,4 @@ $\mathrm{}
 $\alpha
 ```
 
-## 関連リンク {#xc3bb013}
-
-- [軽く使った感じ、vim-latex より Automatic LaTeX Plugin のほうがよさそうに見えますよー……と書いておこう。だれか拾ってくれるかもしれないし。](http://twitter.com/#!/KainokiKaede/status/129702502739357697)
-- [ATP のドキュメントを読むと幸せになれるかもしれない。ってか日本語リソース少なすぎワロタだから軽くレビューなどすると良いのかも。 ](http://twitter.com/#!/KainokiKaede/status/129713711647703040)
-
 [^1]: <span style="color:White;background-color:White;">※ただしイケメンに限る</span>
