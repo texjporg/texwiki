@@ -34,7 +34,6 @@ pukiwiki: "Linux/Gentoo"
 - [GentooにTeX環境をインストールしてみた](http://d.hatena.ne.jp/jouzima/20101118/1290092164)
 - [GentooにTeX環境をインストールしてみた その2](http://d.hatena.ne.jp/jouzima/20101204/1291456449)
 - [GentooにTeX環境をインストールしてみた その3](http://d.hatena.ne.jp/jouzima/20101225/1293298575)
-- [gentooにtex入れて日本語使うのに一番手っ取り早い方法を](http://twitter.com/#!/natsuki_i/status/141764718057627648) ← [USE=cjk emerge texlive ですかね。](http://twitter.com/#!/naota344/status/141769052698853376)
 
 ## 日本語TeX環境の構築 {#da9a03a1}
 
