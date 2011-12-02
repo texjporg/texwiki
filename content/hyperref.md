@@ -38,7 +38,7 @@ pukiwiki: "hyperref"
     \usepackage[dvipdfmx,setpagesize=false]{hyperref}
     ```
 
-#### ["--"が hyperref で正しく扱われてないっぽくて，しおりが変になる](http://twitter.com/#!/t_teruya/status/99411185539100672) {#d46c2828}
+#### "--"が hyperref で正しく扱われてないっぽくて，しおりが変になる {#d46c2828}
 
 以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
 
