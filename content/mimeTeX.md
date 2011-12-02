@@ -103,7 +103,6 @@ jsMath.js の mathchardef テーブル内に追加
 ### phptex.inc {#ca665441}
 
 - [このサイトの数式](http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php)
-- [MathJaxはIE8だと超重いのはIEだからいいとして，最新のSafariだと微妙におかしい。私のサイトの数式の仕組み→http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php](http://twitter.com/#!/h_okumura/status/111044373650739201)
 - [LaTeX数式のweb表示方法（奥村晴彦先生方式）](http://www.makisima.org/v3/2011/09/06/web-latex-okumura/)
 
 ### Suim {#a6b583f5}
