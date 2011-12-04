@@ -160,10 +160,11 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
     - [www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>近いサーバへ誘導</strong>）
     - [www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>空いているサーバへ誘導</strong>）
 
-<!-- ***[[アーカイブ>WikiPedia.ja:アーカイブ]] [#b9d7db68] -->
-<!--  -->
-<!-- 過去のバージョンが欲しい場合は，[[兼宗さん:http://twitter.com/kanemune]]が以下で提供してくださっています: -->
-<!-- -[[eplang.jp/w32tex/archive/:http://eplang.jp/w32tex/archive/]] ← 404 Not Found -->
+#### アーカイブ {#b9d7db68}
+
+過去のバージョンが欲しい場合は，[兼宗さん](http://twitter.com/kanemune)が以下で提供してくださっています:
+
+- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
 
 ### 標準インストールで必要なもの {#s4df79fc}
 
