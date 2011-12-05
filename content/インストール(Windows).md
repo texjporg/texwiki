@@ -540,6 +540,28 @@ ISO-2022-JP（いわゆる「JIS コード」），EUC-JP（日本語 EUC），S
 
 W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
+## [MiKTeX](http://miktex.org/) {#x2459fb9}
+
+## Cygwin {#sfbd073e}
+
+Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
+TeX 環境を作るという手もあります。
+
+### Cygwin での tlptexlive のインストール {#bc8cfcc3}
+
+- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+
+### Cygwin での ptetex のインストール {#h7017721}
+
+Cygwin のパッケージインストール
+(-X オプションをつけてネットインストーラを起動する; 例. \[スタート\]->\[ファイル名を指定して実行\]->"Cygwin の setup.exe へのフルパス" -X) で，
+ダウンロードサイトの URI ( [http://ptetexwin.sourceforge.jp](http://ptetexwin.sourceforge.jp) ) を追加し，
+パッケージを選択するだけで日本語 TeX 環境一式が揃います。
+
+詳細は
+「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
+へ。
+
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
 ***
@@ -552,7 +574,7 @@ W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - Te
 
 <div style="text-align:left">　 ＼＿／ </div>
 
-<div style="text-align:center"><a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">TeX Wiki 創設者奥村晴彦さんからの<br>新ドキュメントクラスをお使いください</a></div>
+<div style="text-align:center"><a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">TeX Wiki 創設者<br>奥村晴彦さんからの<br>新ドキュメントクラスをお使いください</a></div>
 
 <div style="text-align:right">[ <a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">詳細を読む</a> ]</div>
 
@@ -775,28 +797,6 @@ Scientific WorkPlace をご覧ください．
 #### WZ EDITOR (製品) {#cbee1e14}
 
 WZ EDITOR をご覧ください．
-
-## [MiKTeX](http://miktex.org/) {#x2459fb9}
-
-## Cygwin {#sfbd073e}
-
-Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
-TeX 環境を作るという手もあります。
-
-### Cygwin での tlptexlive のインストール {#bc8cfcc3}
-
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
-
-### Cygwin での ptetex のインストール {#h7017721}
-
-Cygwin のパッケージインストール
-(-X オプションをつけてネットインストーラを起動する; 例. \[スタート\]->\[ファイル名を指定して実行\]->"Cygwin の setup.exe へのフルパス" -X) で，
-ダウンロードサイトの URI ( [http://ptetexwin.sourceforge.jp](http://ptetexwin.sourceforge.jp) ) を追加し，
-パッケージを選択するだけで日本語 TeX 環境一式が揃います。
-
-詳細は
-「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
-へ。
 
 [^1]: Windows Me, 98，95 では，コマンド プロンプトではなく MS-DOSプロンプト を使用します。
 [^2]: 例えば [7-Zip](http://sevenzip.sourceforge.jp/)，[7-Zip Portable](http://portableapps.com/apps/utilities/7-zip_portable)，[Explzh](http://www.ponsoftware.com/)，[LhaForge](http://claybird.sakura.ne.jp/garage/lhaforge/)，[LhaOpen](http://lhaopen.tsuru.syuriken.jp/)，[Lhaz](http://www.chitora.jp/lhaz.html)，[Lhaplus](http://hoehoe.com/)，[epo](http://www.softgate.jp/ja/portal/software.html)，[PeaZip](http://peazip.sourceforge.net/)，[ALZip](http://www.altools.jp/product/alzip.aspx)（[アドウェア](http://www.altools.jp/ETC/NEWS.aspx?mid=231&vidx=47)），[WinRAR](http://www.diana.dti.ne.jp/~winrar/)（シェアウェア）など。
