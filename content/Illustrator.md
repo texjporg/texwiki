@@ -59,8 +59,7 @@ Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使う
 #### ai/PDF 形式ファイル {#l3862bb1}
 
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。<br>
-なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報が内部に書き込まれているので、通常は mediabb.sty 等の助けは不要。<br>
-従って、図の挿入は EPS ファイルの場合と同様に処理される（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。 <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
+なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報が内部に書き込まれており（描かれている図形ぴったりの矩形サイズの値）、TeX文書内への図の挿入は EPS ファイルの場合と同様に処理される（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。通常は mediabb.sty 等の助けは不要。<br> <!-- 従って、TeX文書内への図の挿入は EPS ファイルの場合と同様に処理される（[[TeX入門/図表]]も参照のこと）。 --> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
