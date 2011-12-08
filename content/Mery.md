@@ -1070,7 +1070,36 @@ main();
 
 ## SumatraPDF との連携 {#ra6f502f}
 
-### forward search {#t56d91ba}
+### forward and inverse search (SumatraPDF v1.9 以降のバージョンの場合) {#deefc535}
+
+#### SumatraPDF.js {#r19c8de4}
+
+***
+
+```
+function main()
+{
+  var wshShell = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var f = document.Name;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var texFile = ["\"", f, "\""].join("");
+  var pdfFile = ["\"", b, ".pdf", "\""].join("");
+  var line = document.selection.GetActivePointY(mePosLogical);
+  var sumatrapdf = "\"C:/Program Files/SumatraPDF/SumatraPDF.exe\"" + " -reuse-instance " + pdfFile + " -inverse-search \"\\\"" + editor.FullName + "\\\" /l %l \\\"%f\\\"\"" + " -forward-search " + texFile + " " + line;
+  var cmd = "cmd /c " + cd + " && echo " + sumatrapdf + " | cmd";
+
+  wshShell.Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### forward search (SumatraPDF v1.9 よりも前のバージョンの場合) {#t56d91ba}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
@@ -1191,11 +1220,11 @@ function main()
   var f = document.Name;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var texFile = ["\"", f, "\""].join("");
+  var texFile = ["'", f, "'"].join("");
   var dviFile = ["\"", b, ".dvi", "\""].join("");
   var line = document.selection.GetActivePointY(mePosLogical);
-  var dviout = "C:/w32tex/dviout/dviout.exe -1" + " " + dviFile + " # " + line + " " + texFile ;
-  var cmd = "cmd /c " + cd + " && " + dviout;
+  var dviout = "C:/w32tex/dviout/dviout.exe -1" + " " + dviFile + " \"# " + line + " " + texFile + "\"";
+  var cmd = "cmd /c " + cd + " && echo " + dviout + " | cmd";
 
   wshShell.Run(cmd, 1, true);
 }
