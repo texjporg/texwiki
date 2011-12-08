@@ -133,7 +133,9 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ## SumatraPDF との連携 (forward and inverse search) {#tf5a143c}
 
-Vim の場合，Python, Ruby, Perl を使って forward search を実現することが可能です．
+SumatraPDF v1.9.4622 以上の場合はコマンドラインから forward search が可能です．
+
+Vim の場合は Python, Ruby, Perl などを使って forward search を実現することも可能です．
 
 詳しくは，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
 
