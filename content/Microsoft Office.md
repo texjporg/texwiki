@@ -20,6 +20,11 @@ pukiwiki: "Microsoft Office"
 
 [プレゼンツール - TeX Wiki](</プレゼンツール/>) を参照．
 
+## テンプレート {#c9249a2d}
+
+- [黒板風PowerPointテンプレート](http://rcse4.naruto-u.ac.jp/works/modules/blog/details.php?bid=22)
+    - [黒板風スライド](http://yfrog.com/klhymzp)
+
 ## TeX との比較 {#k678548a}
 
 - [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
