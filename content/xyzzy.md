@@ -193,7 +193,7 @@ platex -synctex=1
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。
 
-[KaTeX#SumatraPDF との連携#forward search](/KaTeX/#n9aa887a) を参照．
+[KaTeX#SumatraPDF との連携](/KaTeX/#y959d8e3) を参照．
 
 ### inverse search {#n1f72109}
 
