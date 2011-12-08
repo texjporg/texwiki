@@ -1118,7 +1118,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\share\texworks\TeXworks.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
@@ -1152,13 +1152,39 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-■ SumatraPDF v1.7.3952 以上 または 2011/05/11 よりも前の W32TeX の場合<br>
+■ SumatraPDF v1.9.4622 以上の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance &#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile" -forward-search "&#x25;texfile" &#x25;line</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
+　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+■ SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上 または 2011/05/11 よりも前の W32TeX の場合<br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
 　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
@@ -1184,7 +1210,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance &#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[ForwardSearch("%fullfile","./%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
 　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
@@ -1224,7 +1250,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
 　　　　サーバー： <ins>acroviewR10</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
@@ -1250,7 +1276,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
 　　　　サーバー： <ins>acroview</ins>　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
@@ -1291,7 +1317,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF PS</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance &#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
@@ -1330,7 +1356,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>GSview</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-e &#x25;file</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-e "&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[ShowWindow(1)\]</ins><br>
 　　　　サーバー： <ins>GSview</ins>　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>GSview</ins><br>
@@ -1371,9 +1397,9 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 &#x25;file "# &#x25;line '&#x25;texfile'"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file" "# &#x25;line '&#x25;texfile'"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[PageOpen(# %line '%texfile')\]\[WinNormal\]\[FileOpen("%fullfile")\]</ins><br>
+　　　　コマンド： <ins>\[PageOpen(# %line '%texfile')\]\[WinNormal\]\[FileOpen("%file")\]</ins><br>
 　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
 
 <br>
