@@ -204,7 +204,7 @@ DVI ファイルを表示する必要がない場合は，Dvi Viewer に Sumatra
 : C:\Program Files\SumatraPDF\SumatraPDF.exe
 
 引数
-: -reuse-instance "%X.pdf"
+: -reuse-instance "%X.pdf" -forward-search "%F" %l
 
 DDE
 : ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
@@ -297,7 +297,7 @@ C:\texe022i\TeXE.exe^s /j%d "%s"
 : SumatraPDF
 
 コマンド
-: C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf"
+: C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf" -forward-search "%F" %l
 
 パス
 : <br>
