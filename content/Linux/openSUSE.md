@@ -11,6 +11,7 @@ pukiwiki: "Linux/openSUSE"
 
 - [openSUSE.org](http://www.opensuse.org/)
 - [メインページ - openSUSE](http://ja.opensuse.org/)
+- [OpenSUSE11.4でのtex環境構築](http://d.hatena.ne.jp/hamadasyoutarou/20111213)
 - [Bloody Rose ～ Red456 の openSUSE 導入メモ ～  LaTeX 日本語環境のインストール](http://red456.blog5.fc2.com/blog-entry-174.html)
 
 ## SUSE Linux 9.1でのLaTeX導入備忘録 {#q683ee52}
