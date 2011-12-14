@@ -1361,6 +1361,7 @@ C:\tpad108\TeraPad.exe^s /jl=%d "%s"
 
 - [TeraPad ツールについて](http://www5f.biglobe.ne.jp/~t-susumu/library/tptoolmn.html)
 - [コマンドプロンプトを使う](http://wiki.livedoor.jp/niloufar/d/%A5%B3%A5%DE%A5%F3%A5%C9%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8%A4%F2%BB%C8%A4%A6)
+- [TeraPadでTeX](http://blog.livedoor.jp/k_yon/archives/52353546.html)
 - [TeraPad から LaTeX のコンパイルをする方法](http://d.hatena.ne.jp/hiratake55/20090710)
     (hiratake55 さん)
 
