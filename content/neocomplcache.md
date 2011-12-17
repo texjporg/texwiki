@@ -108,4 +108,5 @@ ${0}
 
 ## 関連リンク {#f5958428}
 
+- [Vimで快適なLaTeX環境を作る (Vim-LaTeXを使わずに)](http://d.hatena.ne.jp/amone_misya_ap/20111217/1324109162)
 - [Vimで動くLaTeX環境](http://ymatz.net/pukiwiki/index.php?Vim%E3%81%A7%E5%8B%95%E3%81%8FLaTeX%E7%92%B0%E5%A2%83)
