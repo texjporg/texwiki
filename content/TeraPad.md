@@ -31,6 +31,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
             <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
     - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
     - [「TeraPad」公式ファンページ | Facebook](http://www.facebook.com/terapad)
+    - [TeraPad - Google+](https://plus.google.com/113360660930016120154/)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
 
