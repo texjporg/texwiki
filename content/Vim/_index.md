@@ -110,6 +110,8 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
 - [unite.vimとunite-outlineでlatexファイルの編集が楽になった](http://hinagishi.hateblo.jp/entry/2011/11/18/135701)
 - [Vimで保存時に自動的にTeXをコンパイル (適当編)](http://blomott.mobi/rubyneko/entry%2CsCKhEg6WPUiQnldaTG1j9w%2C%2C%2C%2C.html)
+- [ファイルの変更を監視してmake](http://d.hatena.ne.jp/hakobe932/20081221/1229874843)
+- [TexのMakefileとvimの設定](http://bkc.g.hatena.ne.jp/hakobe932/20081211/1228975757)
 - [ftpluginのtex.vim](http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html)
 - [Vim/TeXShop integration](http://reference-man.blogspot.com/2009/01/vimtexshop-integration.html)
 - [zencoding-vim](https://github.com/mattn/zencoding-vim)
