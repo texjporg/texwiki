@@ -99,7 +99,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
@@ -164,7 +164,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
@@ -509,7 +509,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     bibtex = "pbibtex -kanji=utf8";
   }
-  bibtex += " " + ["\"", b, "\""].join("");
+  bibtex += " -sjis-terminal " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
   var button = wshShell.Popup(cmd, 0, "pBibTeX", 1);
@@ -639,7 +639,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     makeindex = "mendex -U";
   }
-  makeindex += " " + ["\"", b, "\""].join("");
+  makeindex += " -ST " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
 
   var button = wshShell.Popup(cmd, 0, "Mendex", 1);
@@ -858,7 +858,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
@@ -901,7 +901,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
@@ -1163,7 +1163,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -src-specials -no-guess-input-enc -kanji=utf8";
   }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
 
   var button = wshShell.Popup(cmd, 0, "pLaTeX", 1);
