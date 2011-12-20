@@ -52,8 +52,8 @@ LaTeX 文書で使用するエンコードを指定します．
 　　<strong>\[　基本　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　表示　\]\[　記号　\]\[　関連付け　\]\[　キーボード　\]\[　履歴　\]</ins></span><br>
 
 　　　　折り返し方法(W):　　　　　　　　　　　　　　 ☑行番号を表示(N)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　　▼\]</span>　　　☑ルーラを表示(R)<br>
-　　　　行の表示方法(D):　　　　　　　　　　　　　 ☑ルーラで文字数を指定する(S)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　　▼\]</span>　　 ☑ルーラを表示(R)<br>
+　　　　行の表示方法(D):　　　　　　　　　　　　　　☑ルーラで文字数を指定する(S)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　　 ▼\]</span>　　　☑折り返し線を表示(A)<br>
 　　　　文字数(M):　　　<ins>　　　　　　80\[◆\]</ins>　　　　　☑カーソルのある行に下線を表示(U)<br>
 　　　　引用マーク(Q):　<ins>>　　　　　　　　　</ins>　　　　　☑対応する括弧を強調する(H)<br>
@@ -785,6 +785,8 @@ section
 - \s を入力した後で Ctrl+Space を入力すると \section
 
 が補完されます．
+
+辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます．
 
 ## アウトライン {#c4b6fe35}
 
