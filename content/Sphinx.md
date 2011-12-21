@@ -28,7 +28,11 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
 
-### [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx) {#b274f2a4}
+### 関連リンク {#lc632f60}
+
+- [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
+- [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
+- [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 
 ## Python ドキュメント {#h53fa12f}
 
