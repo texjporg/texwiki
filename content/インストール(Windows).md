@@ -17,6 +17,9 @@ pukiwiki: "インストール(Windows)"
 
 ### ニュース {#x8db7c39}
 
+- \[2011/12/23\]<br>
+    <span style="color:Red;"><strong>pmetapost.exe は元の名前 pmpost.exe に戻されました．<br>upmetapost.exe は元の名前 upmpost.exe に戻されました．</strong></span>
+
 - \[2011/11/06\]<br>
     <span style="color:Red;"><strong>updvipdfmx が無くなりました．<br>(e-)upTeX でも dvipdfmx を使うようにしてください．<br>hyperref でしおりを作成する場合は \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}} が必要になりました．<br>詳細は[hyperref#しおり（bookmark）つきのpdf文書作成](/hyperref/#fe7cad10)を参照してください．</strong></span>
 
