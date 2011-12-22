@@ -121,6 +121,7 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [snippetsEmu - An attempt to emulate TextMate's snippet expansion](http://www.vim.org/scripts/script.php?script_id=1318)
     - [TeXの図や表をsnippetsEmu.vimで簡単に入力出来るようにする](http://vim.g.hatena.ne.jp/y_yanbe/20080926)
 - [texファイルの更新を見て自動でコンパイルしてpdf開く](http://d.hatena.ne.jp/soh335/20111021/1319133018)
+- [texのerrorとかwarningとかの監視](http://d.hatena.ne.jp/soh335/20111223/1324610999)
     - [App::watcher](http://search.cpan.org/search?query=App%3A%3Awatcher)
     - [watchr](https://github.com/mynyml/watchr)
 - [Vim - ConTeXt wiki](http://sandbox.contextgarden.net/Vim)
