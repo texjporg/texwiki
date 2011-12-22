@@ -893,19 +893,63 @@ Error: Couldn't find a font for 'Ryumin Light Identity H'
 some font thing failed
 ```
 
-[Texmaker のかな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる不具合の修正方法](/Texmaker/#e1ab5b1e) を参考に fontconfig をインストールして
+C:\w32tex\share\texmf\fonts\conf\local.conf を編集します．
+
+***
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<!-- local.conf file to configure local font access -->
+<fontconfig>
+
+<!-- 
+  Additional font directory list
+
+  Find fonts in these directories and their subdirectories
+
+  You can add directories if you have additional fonts.
+  Example:
+
+<dir>c:/w32tex/share/texmf/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf/fonts/truetype</dir>
+-->
+
+<match target="pattern">
+  <test qual="any" name="family">
+    <string>Ryumin</string>
+  </test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>MS Mincho</string>
+  </edit>
+</match>
+<match target="pattern">
+  <test qual="any" name="family">
+    <string>GothicBBB</string>
+  </test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>MS Gothic</string>
+  </edit>
+</match>
+
+</fontconfig>
+```
+
+***
+
+環境変数 FONTCONFIG_PATH を適切な場所に設定します．
 
 MinGW Shell (MSYS) の場合は
 
 ```
-$ export FONTCONFIG_PATH=C:/MinGW/etc/fonts
+$ export FONTCONFIG_PATH=C:/w32tex/share/texmf/fonts/conf
 $ pdf2svg tmp.pdf tmp.svg
 ```
 
 コマンドプロンプトの場合は
 
 ```
->set FONTCONFIG_PATH=C:\MinGW\etc\fonts
+>set FONTCONFIG_PATH=C:\w32tex\share\texmf\fonts\conf
 >pdf2svg tmp.pdf tmp.svg
 ```
 
