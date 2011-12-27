@@ -182,7 +182,7 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 - [ChangeLog](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/ChangeLog)（変更履歴）← W32TeX
     は更新が頻繁に行われるので目を通しておいた方が良いです。
 
-- [texinst2011.zip](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/texinst2011.zip)（簡易インストーラ）
+- [texinst2012.zip](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/texinst2012.zip)（簡易インストーラ）
 - [unzip.exe](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/unzip.exe)（ZIP 展開ツール）
     - ZIP 形式の展開に対応したソフトウェア[^2]を用いてもかまいません。Windows
         7/Vista/XP は ZIP 形式の展開に標準で対応しています。
@@ -284,14 +284,14 @@ Microsoft Windows
     コマンド プロンプトは［スタート］-［すべてのプログラム］-［アクセサリ］の中にあります。
 
 1. コマンド プロンプトに次のように
-    打ち込んで，C:\w32tex\ フォルダの中に texinst2011.zip を展開します。
+    打ち込んで，C:\w32tex\ フォルダの中に texinst2012.zip を展開します。
     なお，これはダウンロードしたファイル群がCドライブの temp というフォルダに
     入っている場合です。
 
     ```
     >c:
     >cd \w32tex
-    C:\w32tex>C:\temp\unzip C:\temp\texinst2011.zip
+    C:\w32tex>C:\temp\unzip C:\temp\texinst2012.zip
     ```
 
 1. コマンド プロンプトに次のように打ち込みます。
@@ -299,7 +299,7 @@ Microsoft Windows
     入っている場合です。
 
     ```
-    C:\w32tex>texinst2011 C:/temp
+    C:\w32tex>texinst2012 C:/temp
     ```
 
     沢山のメッセージが出てきますが，メッセージが完全に止まるまで
