@@ -45,8 +45,8 @@ pukiwiki: "インストール(Windows)"
 
 - \[2010/08/14\]<br>
     <span style="color:Red;"><strong>\[W32TeX の 仕様変更\]</strong></span><br>
-    <span style="color:Red;"><strong>pmpost.exe は pmetapost.exe に変更されました。</strong></span><br>
-    <span style="color:Red;"><strong>upmpost.exe は upmetapost.exe に変更されました。</strong></span><br>
+    <span style="color:Red;"><strong>pmpost.exe は pmetapost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2011/12/23 に pmetapost.exe は元の名前 pmpost.exe に戻されました．</strong></span><br>
+    <span style="color:Red;"><strong>upmpost.exe は upmetapost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2011/12/23 に upmetapost.exe は元の名前 upmpost.exe に戻されました．</strong></span><br>
 
 - \[2010/05/06\]<br>
     <span style="color:Red;"><strong>\[W32TeX の 仕様変更\]</strong></span><br>
@@ -56,8 +56,8 @@ pukiwiki: "インストール(Windows)"
     <span style="color:Red;"><strong>\[W32TeX の 仕様変更\]</strong></span><br>
     <span style="color:Red;"><strong>jbibtex.exe は pbibtex.exe に変更されました。</strong></span><br>
     <span style="color:Red;"><strong>upjbibtex.exe は upbibtex.exe に変更されました。</strong></span><br>
-    <span style="color:Red;"><strong>jmpost.exe は pmpost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2010/08/14 に pmpost.exe は pmetapost.exe に変更されました。</strong></span><br>
-    <span style="color:Red;"><strong>upjmpost.exe は upmpost.exe に変更されました。</strong></span> <span style="color:Red;"><strong>→ 2010/08/14 に upmpost.exe は upmetapost.exe に変更されました。</strong></span><br>
+    <span style="color:Red;"><strong>jmpost.exe は pmpost.exe に変更されました。</strong></span><br>
+    <span style="color:Red;"><strong>upjmpost.exe は upmpost.exe に変更されました。</strong></span><br>
 
 - \[2007/08/01\]
     7月31日付の W32TeX
