@@ -79,3 +79,4 @@ OpenOffice.org はフリーのオフィススイートです．
 - [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・OpenOffice.org / LibreOffice のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
 - [memo: Windows で OOoLatex を使う / Ubuntu で OOoLatex を使う](http://www.ms.osakafu-u.ac.jp/~horita/?c=memo2)
+- [「LibreOffice」利用マニュアルを公開しました](http://www.ja-fukuoka.or.jp/blog/archives/2011/12/libreoffice_manual_1112.php)
