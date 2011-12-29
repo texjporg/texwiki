@@ -1358,7 +1358,7 @@ ps2pdf cjkintro-sjis.ps
 「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://www2.tba.t-com.ne.jp/ing/babel.html#gcinst)」
 にもありますが，ここではインストール方法について解説します。
 
-まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty)
+まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](http://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty)
 の3つをダウンロードします。
 
 montex.tgz のファイルを tar + gzip 形式に対応した展開（解凍）ソフトで展開し，
