@@ -70,3 +70,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 - [SphinxでXeLaTeXを使って日本語使ったPDFを出力する](http://hideaki-t.blogspot.com/2011/07/sphinxxelatexpdf.html)
 - [Sphinxで日本語PDFを出力する](http://d.hatena.ne.jp/yusukei2/20110604/1307145621), [Sphinxで日本語PDFを出力する その２？](http://d.hatena.ne.jp/yusukei2/20110806/1312605553)
 - [sphinxのPDF出力ではまった](http://d.hatena.ne.jp/yuitowest/20111114/1321262351)
+
+## Sphinx → HTML → PDF {#w924420a}
+
+- [Sphinxで素早く簡単に綺麗な日本語のPDFを作成する方法](http://dxd8.com/archives/225/)
