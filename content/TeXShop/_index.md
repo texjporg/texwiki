@@ -448,7 +448,7 @@ TeXShop を再起動します．
 <!-- 「内部設定」のパス設定（デフォルトは /usr/texbin）は /usr/local/teTeX/bin，パーソナルスクリプトの TeX 欄を pdfmptex，LaTeX 欄を pdfmplatex にします．~ -->
 <!-- 「タイプセット」でデフォルトのスクリプトをパーソナルスクリプトにしておきます．~ -->
 <!--  -->
-<!-- 井上さんの 「[[pTeXShop 用のコンパイル・PDF 化スクリプト:http://www.ma.ns.musashi-tech.ac.jp/Pages/Macintosh/pdfmtex.html]]」 の「実際のスクリプトは以下の通り」と書いてある部分をコピーし， -->
+<!-- 井上さんの 「[[pTeXShop 用のコンパイル・PDF 化スクリプト:http://www.ma.ns.tcu.ac.jp/Pages/TeX/pdfmtex.html]]」 の「実際のスクリプトは以下の通り」と書いてある部分をコピーし， -->
 <!-- /usr/local/teTeX/bin/pdfmplatex -->
 <!-- とします（実行許可を与えるのを忘れぬように）．~ -->
 <!-- さらに，同じ内容の pdfmptex というファイルも作っておきます（シンボリックリンクまたはハードリンクでもかまいません）．~ -->
