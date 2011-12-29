@@ -63,7 +63,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](http://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
 
-- p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。<del>[トップページ](http://www.aliadne.net/field/tibet/)</del>をご参照ください。
+- p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
 - p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田耕作さんのウェブサイト](http://www.khotta.org/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.khotta.org/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.khotta.org/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](/W32TeX/) でもGT書体を使うためのパッケージ[gtftex.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.zip) が提供されています。
 
