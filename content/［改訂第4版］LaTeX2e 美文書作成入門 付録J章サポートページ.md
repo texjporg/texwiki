@@ -14,7 +14,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 ## Errata {#kdcdc574}
 
-- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip](http://yasuda.homeip.net/archives/lh-misc-type1-all-0612.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては [TeXWiki:新 pTeX と Babel #cm-super](</新 pTeX とBabel/#a4477ec1>) をご参照ください。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
+- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip](http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては [TeXWiki:新 pTeX と Babel #cm-super](</新 pTeX とBabel/#a4477ec1>) をご参照ください。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
 
 - p. 358 註9 「ラテンアルファベットによる対応づけ (transliteration)」は p. 363 では「ASCII 翻字入力」という表現になっていますが（表記の揺れ），意味は同じです。
 
