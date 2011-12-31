@@ -350,15 +350,15 @@ Microsoft Windows の種類によって方法が違います。
 
 とたどってください。もしシステム環境変数またはユーザー環境変数と
 して “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といったものが登録されているなら，
-削除してください。次に，ユーザー環境変数のところを見てください。Path という欄が
+削除してください。次に，ユーザー環境変数のところを見てください。PATH という欄が
 あればそれをクリックして［編集］を押し，変数値の中に古い TeX への
 パス（“;C:\ptex\bin” とか）があったら消してください。そして変数値の
 最後に “;C:\w32tex\bin” がなければ追加し，\[OK\] を
-押します。Path が無ければ［新規］を押し，次のように設定してください。
+押します。PATH が無ければ［新規］を押し，次のように設定してください。
 
 > | 変数名 | 変数値 |
 > |---|---|
-> | Path | C:\w32tex\bin |
+> | PATH | C:\w32tex\bin |
 >
 
 これで \[OK\] を押します。再起動の必要はありません。開いているコマンド プロンプト
@@ -369,7 +369,7 @@ Microsoft Windows の種類によって方法が違います。
 <!-- ***Windows Me [#k8c23036] -->
 <!-- -Windows Me では， -->
 <!-- ［スタート］ → ［ファイル名を指定して実行］ で “msconfig” と入力し， -->
-<!-- 上と同様に，Path に “;C:\w32tex\bin” を付け加えてください。 -->
+<!-- 上と同様に，PATH に “;C:\w32tex\bin” を付け加えてください。 -->
 
 <!-- ***Windows 98, 95 [#n2afa237] -->
 <!-- -Windows 98, 95 では C:\AUTOEXEC.BAT をメモ帳などで開きます。もしその中に -->
@@ -377,9 +377,9 @@ Microsoft Windows の種類によって方法が違います。
 <!-- SET TEXMFCNF=... -->
 <!-- SET TEXMFMAIN=... -->
 <!-- といった古い TeX で使っていた環境変数の設定があれば，それらを消します。 -->
-<!-- また，Path に古い TeX へのパス（“C:\ptex\bin” とか）があったら消してください。 -->
+<!-- また，PATH に古い TeX へのパス（“C:\ptex\bin” とか）があったら消してください。 -->
 <!-- これらを消した上で，AUTOEXEC.BAT の最後に次の行がない場合は追加します。 -->
-<!-- SET Path=C:\w32tex\bin;"%Path%" -->
+<!-- SET PATH=C:\w32tex\bin;"%PATH%" -->
 <!-- これでいったん再起動してください。 -->
 
 <!-- //NTバージョンの違いと、2000(NT5,0)まではMSサポート対象外OSのため故Commentoutしました。 -->
@@ -388,13 +388,13 @@ Microsoft Windows の種類によって方法が違います。
 <!-- AUTOEXEC.BAT -->
 <!-- に “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった設定があれば， -->
 <!-- 消してください。 -->
-<!-- また，Path に古い TeX へのパスが入っていたらそれも消してください。これは -->
+<!-- また，PATH に古い TeX へのパスが入っていたらそれも消してください。これは -->
 <!-- 重要なことで，うまく動かないというご質問の大半は環境変数の問題のようです。 -->
 
 <!-- > -->
-<!-- ちなみに，Windows 98, 95 では "%Path%" のようにダブルクオートを付けないと -->
+<!-- ちなみに，Windows 98, 95 では "%PATH%" のようにダブルクオートを付けないと -->
 <!-- 空白を含むパスがうまく扱われず，Windows 2000, XP,XP x64 Edition では -->
-<!-- 逆にダブルクオートを付けると機能しないそうです（そもそも %Path% は不要）。 -->
+<!-- 逆にダブルクオートを付けると機能しないそうです（そもそも %PATH% は不要）。 -->
 
 <!-- （「[[Windows95/98/Me/NT/2000/XP における日本語TeX のインストールのチェック:http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html]]」より -->
 <!-- 引用： 「[[角藤氏のパッケージでWeb2C 7.3.7 またはそれ以降の場合:http://akagi.ms.u-tokyo.ac.jp/tex_instchk.html#0-5]]は、 -->
@@ -551,6 +551,8 @@ W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - Te
 
 ## [MiKTeX](http://miktex.org/) {#x2459fb9}
 
+- [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
+
 ## Cygwin {#sfbd073e}
 
 Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
@@ -573,21 +575,14 @@ Cygwin のパッケージインストール
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
-***
-
-<div style="text-align:right">☒</div>
-
-<div style="text-align:left">　 ／￣＼</div>
-
-<div style="text-align:left">　|　＾o＾　|</div>
-
-<div style="text-align:left">　 ＼＿／ </div>
-
-<div style="text-align:center"><a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">TeX Wiki 創設者<br>奥村晴彦さんからの<br>新ドキュメントクラスをお使いください</a></div>
-
-<div style="text-align:right">[ <a href="http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/">詳細を読む</a> ]</div>
-
-***
+<!-- - --  -->
+<!-- RIGHT:☒ -->
+<!-- LEFT:　 ／￣＼ -->
+<!-- LEFT:　|　＾o＾　| -->
+<!-- LEFT:　 ＼＿／  -->
+<!-- CENTER:[[TeX Wiki 創設者&br;奥村晴彦さんからの&br;新ドキュメントクラスをお使いください:http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/]] -->
+<!-- RIGHT:[ [[詳細を読む:http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/]] ] -->
+<!-- - --  -->
 
 ぜひ[奥村晴彦さん](http://oku.edu.mie-u.ac.jp/~okumura/)の[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)も
 入れてください。
@@ -628,7 +623,7 @@ PATH の値は Ghostscript のバージョンによって変わるので，使�
 
 > | 変数名 | 変数値 |
 > |---|---|
-> | Path | C:\gs\gs9.04\bin;C:\gs\gs9.04\lib |
+> | PATH | C:\gs\gs9.04\bin;C:\gs\gs9.04\lib |
 >
 
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
