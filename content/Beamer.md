@@ -52,15 +52,12 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
-### [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/) {#o6f8726a}
-
-<!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
+### [TikZ and PGF](/TikZ/) {#o6f8726a}
 
 - 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - e-TeX 拡張が必要 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
-- [TikZを使う](http://blogs.yahoo.co.jp/igproj_fusion/14008346.html)
 
 ### [xcolor](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
