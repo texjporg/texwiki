@@ -165,12 +165,11 @@ ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作�
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">インサートモード</th><th style="color:#FFF;background-color:#40C;text-align:center">移動</th></tr>
 > <tr><td>&lt;CTRL-J&gt;</td><td>&lt;CTRL-J&gt;</td><td>次に進む</td></tr>
-> <tr><td>&lt;CTRL-K&gt;</td><td>&lt;CTRL-K&gt;</td><td>前に戻る</td></tr>
 > </tbody>
 > </table>
 >
 
-&#x3c;CTRL-J>, &#x3c;CTRL-K> を使用すると [Vim-LaTeX](/Vim-LaTeX/) のような place holder の機能が実現できます．<br>
+&#x3c;CTRL-J> を入力すると [Vim-LaTeX](/Vim-LaTeX/) のような place holder の機能が実現できます．<br>
 ただし &lt;++> のように TeX ファイルに place holder を出力しません．
 
 ### 補完 {#v9176e7e}
@@ -185,15 +184,16 @@ ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作�
 > </table>
 >
 
-ATP では基本的に補完はオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を使用します．<br>
+ATP では基本的に補完はオムニ補完 &lt;CTRL-X>&lt;CTRL-O> を入力します．<br>
 
 ```
 \be<CTRL-X><CTRL-O> で  \begin{
 \begin{i<CTRL-X><CTRL-O> で \begin{itemize}
 \i<CTRL-X><CTRL-O> で \item などの補完候補が表示されます
-補完候補のリストは <CTRL-O>, <CTRL-N>, <CTRL-P> で移動できます
-\item の入力が終わって <CTRL-X><CTRL-O> を入力すると \end{itemize} が補完されます
+補完候補のリストは <CTRL-N>, <CTRL-P> で移動できます
 ```
+
+<!-- \item の入力が終わって <CTRL-X><CTRL-O> を入力すると \end{itemize} が補完されます -->
 
 #### Environment Imaps {#odbdb26f}
 
