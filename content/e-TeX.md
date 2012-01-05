@@ -108,6 +108,8 @@ TeX では，例えば
     [W32TeX](http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/) の配布にも
     含まれています (See [qa:50569](https://okumuralab.org/~okumura/texfaq/qa/50569.html))。
 
+- [The e-TeX Short Reference Manual](http://tex.loria.fr/moteurs/etex_ref.html)
+
 ### コメント {#a61ff5c1}
 
 - 何はともあれ、作ってみました。-- ttk 2008-01-12 (土) 05:04:58
