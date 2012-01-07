@@ -9,6 +9,13 @@ pukiwiki: "Adobe Reader"
 
 ## [Adobe Reader](http://www.adobe.com/jp/products/reader.html) {#a3d16439}
 
+## Adobe Reader とは {#t103678c}
+
+Adobe Reader は PDF ファイルを表示・印刷するためのソフトウェアです．
+
+Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
+PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
+
 ## ダウンロード {#ne09e93f}
 
 - [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
