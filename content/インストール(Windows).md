@@ -131,6 +131,7 @@ TeX Wiki 以外にも Windows 用の TeX のインストールに関する解説
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
     [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
 
+- [TeXのインストール](http://www.okomeda.net/?TeX%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) ([今西衞研究室](http://www.okomeda.net/))
 - [Window 版 LaTeX のインストール](http://mailsrv.nara-edu.ac.jp/~asait/latex/tex.htm) (浅井さん)
 - [あべのりページ](http://www.math.sci.hokudai.ac.jp/~abenori/) ([阿部紀行さん](http://d.hatena.ne.jp/abenori/) ([twitter](http://twitter.com/abenori)))
     「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
