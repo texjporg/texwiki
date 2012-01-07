@@ -20,7 +20,7 @@ pukiwiki: "秀丸エディタ"
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
         - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
         - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
-    - [twitter](http://twitter.com/#!/hidemaruinfo)
+    - [twitter](http://twitter.com/hidemaruinfo)
 - [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
     - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
     - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
