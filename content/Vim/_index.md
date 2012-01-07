@@ -39,7 +39,7 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [Vim 開発サイト](http://code.google.com/p/vim/)
     - [コミットログ](http://code.google.com/p/vim/source/list)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
-    - [twitter](http://twitter.com/#!/vim_jp)
+    - [twitter](http://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
     - [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
