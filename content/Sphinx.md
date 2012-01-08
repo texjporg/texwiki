@@ -59,6 +59,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
     - \[[Sphinx-Users 179\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000178.html)
 - [日本語 Sphinx ドキュメントの PDF 化(TeX 経由)のサンプル](https://github.com/shino/sphinx_to_pdf_via_tex_jp/)
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
+- [Sphinx と W32TeX で PDF 出力](http://d.hatena.ne.jp/hokorobi/20120108/1326023180)
 - [Sphinx で 日本語 pdf を出力する(Mac OS X Lion)](http://d.hatena.ne.jp/shiumachi/20120107/1325930802)
 - [(11日目) Sphinx から PDF を生成してみよう (LaTeX 編)](http://d.hatena.ne.jp/tk0miya/20111211)
 - [LatexでPDF出力してみる](http://d.hatena.ne.jp/liz5th/20110928#1317215264)
