@@ -232,6 +232,19 @@ TeX インストーラを色々な視点から比較してみます。
 
 - <strong>短所</strong>：LabEditorで使用したときに問題が生じないようにインストールが固定化されているため、カスタマイズはほとんどできません。
 
+## Visual Installer for W32TeX {#c70efefe}
+
+- <strong>URL</strong>: [http://www.vector.co.jp/soft/win95/writing/se453191.html](http://www.vector.co.jp/soft/win95/writing/se453191.html)
+- <strong>作者</strong>： 安江 正樹さん
+- <strong>初心者オススメ度</strong>：
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：
+- <strong>ユーザーインターフェース</strong>：
+- <strong>ネット・ローカルインストール</strong>：
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：
+
 ***
 
 - LabTeX Installerを追加しました。 -- つちのこ 2008-07-04 (金) 17:19:32
