@@ -604,6 +604,7 @@ C:\easytex3241\EasyTeX.exe^s /j%d "%s"
 
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
+- [easychair というクラスファイルの使い方](http://ameblo.jp/8713-blog/archive1-201201.html)
 
 ## Comments {#etacm8ab}
 
