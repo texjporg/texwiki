@@ -60,6 +60,8 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 - [日本語 Sphinx ドキュメントの PDF 化(TeX 経由)のサンプル](https://github.com/shino/sphinx_to_pdf_via_tex_jp/)
 - [独学Linux : Sphinx を含む記事](http://blog.livedoor.jp/vine_user/search?q=Sphinx)
     - [ゼロからはじめるSphinx《入門編》](http://blog.livedoor.jp/vine_user/archives/51917814.html)
+    - [ゼロからはじめるSphinx《LaTeX編》](http://blog.livedoor.jp/vine_user/archives/51918624.html)
+- [CentOS5(Scientific Linux 6) + texlive2011 + Sphinx1.1でlatex経由のpdf出力](http://room6933.com/blog/2012/01/16/sphinx2pdf/)
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
 - [Sphinx と W32TeX で PDF 出力](http://d.hatena.ne.jp/hokorobi/20120108/1326023180)
 - [Sphinx で 日本語 pdf を出力する(Mac OS X Lion)](http://d.hatena.ne.jp/shiumachi/20120107/1325930802)
