@@ -97,7 +97,7 @@ v6.75e で dvipdfmx が指定できるようになりました．
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-(u)platex + dvipdfmx で，日本語を使用する場合は \usepackage\[dvipdfmx\]{hyperref} の前に以下を追加しておけば，しおりタイトル等の日本語の文字化けを防止できます．<br>
+(u)platex + dvipdfmx で，日本語を使用する場合は プリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
 [UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
 W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
@@ -113,8 +113,12 @@ W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmx�
   \else
     \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
   \fi
+  \usepackage[dvipdfmx]{hyperref}
 \fi
 ```
+
+\usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
+\usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
 lualatex, xelatex では必要ありません．
 
@@ -130,8 +134,9 @@ pdfencoding=auto
 unicode=true
 ```
 
-を追加します．xelatex の場合は、指定してもしないでも文字化けしないしおり
-になります。
+を追加します．
+
+xelatex の場合は、指定してもしないでも文字化けしないしおりになります。
 
 <!-- 以前は何も指定しなくても文字化けせずにしおりが作成できていたのですが， -->
 <!-- W32TeX 2011-11-06 版の hyperref v6.82j で xelatex で unicode オプション -->
@@ -780,12 +785,6 @@ hyperrefパッケージをデフォルトで読み込む．
 ### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
 
 ```
-\usepackage[dvipdfmx]{hyperref}
-```
-
-の前に以下を入力
-
-```
 \ifx\kanjiskip\undefined\else
   \usepackage{atbegshi}
   \ifx\ucs\undefined
@@ -797,10 +796,12 @@ hyperrefパッケージをデフォルトで読み込む．
   \else
     \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
   \fi
+  \usepackage[dvipdfmx]{hyperref}
 \fi
 ```
 
-\usepackage\[dvipdfmx\]{hyperref} の後では PDF のタイトルが文字化けしてしまいます．
+\usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
+\usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
