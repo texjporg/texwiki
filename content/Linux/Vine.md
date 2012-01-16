@@ -233,9 +233,9 @@ ggv が採用されました。
   \else
     \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
   \fi
+  \usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
+  bookmarkstype=toc]{hyperref}
 \fi
-\usepackage[dvipdfmx,bookmarks=true,bookmarksnumbered=true,%
-bookmarkstype=toc]{hyperref}
 ```
 
 古いバージョンの場合は
@@ -248,7 +248,7 @@ bookmarkstype=toc]{hyperref}
 
 のように書いておきます。(\special{pdf:tounicode EUC-UCS2} がポイントです。)
 Linux 版 Acrobat Reader 5.0 までは日本語のしおりは化けるので，
-Adobe Reader 7.0 か Microsoft Windows 版などで動作確認してください。 <!-- なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。 -->
+Adobe Reader 7.0 以降か Microsoft Windows 版などで動作確認してください。 <!-- なお、dvipdfm は dvipdfmx へのシンボリックリンクにしています。 -->
 
 - tetex-extra パッケージはインストール CD には収録されていません。
     TX fonts, PX fonts 等も含まれているので，
