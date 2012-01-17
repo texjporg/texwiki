@@ -13,7 +13,7 @@ pukiwiki: "FreeBSD"
 
 <strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
 
-[TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/) を参照してください．
+[TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/), [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) を参照してください．
 
 日本語 TeX 関連は Ports Collection に収められています．
 
