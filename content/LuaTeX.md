@@ -127,6 +127,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
 - [pdffill, luajalayout, luafontcomp, luamirageat etc.](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
+- [Ubuntu11.10: LuaTeX-jaをインストールしました！](http://blog.livedoor.jp/ti5942/archives/6612853.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
 - [Luatexを使ってMoleCoding](http://molecoding.cocolog-nifty.com/blog/2011/10/luatexmolecodin.html)
 - [LuaTeX - ConTeXt wiki](http://wiki.contextgarden.net/LuaTeX)
