@@ -643,7 +643,7 @@ PATH の値は Ghostscript のバージョンによって変わるので，使�
 ## GSview のインストール（オプション） {#xd771752}
 
 [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) から最新の GSview インストーラ
-（2011年05月30日時点では gsv491w32.exe）をダウンロードし，実行します。 <!-- 2011/05/30 GSview Ver.4.91 公開 --> <!-- 2007/11/19 GSview Ver.4.9 公開 --> <!-- 2006/02/25 GSview Ver.4.8 公開 --> <!-- 2005/03/26 GSview Ver.4.7 公開 -->
+（2012年01月19日時点では gsv50w32.exe）をダウンロードし，実行します。 <!-- 2012/01/19 GSview Ver.5.0 公開 --> <!-- 2011/05/30 GSview Ver.4.91 公開 --> <!-- 2007/11/19 GSview Ver.4.9 公開 --> <!-- 2006/02/25 GSview Ver.4.8 公開 --> <!-- 2005/03/26 GSview Ver.4.7 公開 -->
 
 日本語を表示する
 には，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の
