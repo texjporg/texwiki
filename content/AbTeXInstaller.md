@@ -122,9 +122,9 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　92.2MB　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　20.0MB　　 　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　　　∣☑gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　∣<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　∣<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
 　　　　 ∣☑otfdevel.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.6MB<br>
