@@ -56,7 +56,7 @@ ENCODE=${COMMAND#*-}
 JOBNAME=${1##*/}
 JOBNAME=${JOBNAME%.*}
 
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+eptex -synctex=1 -kanji=$ENCODE -progname=$PTEX $1 && \
 dvipdfmx $JOBNAME
 
 ```
@@ -91,7 +91,7 @@ ENCODE=${COMMAND#*-}
 JOBNAME=${1##*/}
 JOBNAME=${JOBNAME%.*}
 
-eptex -kanji=$ENCODE -progname=$PTEX $1 && \
+eptex -synctex=1 -kanji=$ENCODE -progname=$PTEX $1 && \
 dvipdfmx $JOBNAME
 
 ```
@@ -233,9 +233,9 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 　　　　<strong>デフォルトのスクリプト</strong>　　　　　　　　　　　　　　　<strong>Sync 方式</strong><br>
 　　　　◯ Pdftex　　　　　　　　　　　　　　　　　　　　　　　　 ◯ Pdf Sync (TeXLive2010以前)<br>
-　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> PDFを検索<br>
+　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　◯ PDFを検索<br>
 　　　　◯ デフォルトのスクリプト　　　　　　　　　　　　　　　◯ 併用<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ SyncTeX (TeXLive2010以降)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> SyncTeX (TeXLive2010以降)<br>
 
 <br>
 
@@ -334,9 +334,9 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
 　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>simpdftex eptex --mode dvipdfmx --extratexopts "-kanji=utf8"</ins><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>simpdftex eptex --mode dvipdfmx --extratexopts "-synctex=1 -kanji=utf8"</ins><br>
 　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
-　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>simpdftex platex --mode dvipdfmx --extratexopts "-kanji=utf8"</ins><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>simpdftex platex --mode dvipdfmx --extratexopts "-synctex=1 -kanji=utf8"</ins><br>
 　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
 
 <br>
