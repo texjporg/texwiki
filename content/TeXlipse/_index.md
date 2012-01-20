@@ -51,7 +51,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 - 自動ビルド
 - 自動補完
 - スペル・チェッカー
-- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF)
+- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF, Skim)
 - Source Special による forward and inverse search (dviout)
 
 ## 注意点 {#f6b7dd5c}
@@ -182,7 +182,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 デフォルト・エンコード(E)： で，UTF-8 もしくは日本語のエンコード (MS932, EUC-JP, ISO-2022-JP) を指定し，\[　　　　　更新(U)　　　　　\] をクリックします．
 
-## ビルダー設定 {#j3f79297}
+## ビルダー設定 (Windows) {#j3f79297}
 
 デフォルトでは英語版のビルド・コマンドが設定されています．
 
@@ -1042,6 +1042,199 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
+## ビルダー設定 (OS X) {#vcf0d397}
+
+動作未確認です．
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Latex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/platex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　PdfLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/pdflatex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/xelatex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/lualatex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/pbibtex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/biber</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/mendex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-s %style %input</ins><br>
+　　　Input format： .idx 　　　出力フォーマット： .ind<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/dvips</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
+　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvipdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Ps2pdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/local/bin/ps2pdf</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program (nomencl)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/mendex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input -s nomencl.ist -o %output</ins><br>
+　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
 ## ビューアー設定 (Windows) {#g567cc73}
 
 PDF ファイル，PS ファイル，DVI ファイルを表示するための設定をします．
@@ -1455,6 +1648,8 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
 ## ビューアー設定 (OS X) {#dddd18cb}
+
+動作未確認です．
 
 ### PDF ファイル ビューアー {#x7261881}
 
