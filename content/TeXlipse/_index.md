@@ -1042,7 +1042,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
-## ビューアー設定 {#g567cc73}
+## ビューアー設定 (Windows) {#g567cc73}
 
 PDF ファイル，PS ファイル，DVI ファイルを表示するための設定をします．
 
@@ -1453,6 +1453,209 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 ***
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
+
+## ビューアー設定 (OS X) {#dddd18cb}
+
+### PDF ファイル ビューアー {#x7261881}
+
+#### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#c7007b14}
+
+[Pdf4Eclipse](/TeXlipse/#o62b47a3) を参照．
+
+#### Preview {#uf79405f}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Preview</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/Preview.app" "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### TeXShop {#b3851737}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXShop</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeXShop.app" "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### TeXworks {#wbc4b701}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeXworks.app" "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### Skim {#y5f135de}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Skim</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/Applications/Skim.app/Contents/SharedSupport/displayline</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;line "&#x25;file" "&#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### Adobe Reader {#d960177c}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　acroread ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/Adobe Reader.app" "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
 
 ## スペル・チェッカー設定 {#m717370b}
 
@@ -1888,6 +2091,10 @@ Ctrl+Space で補完を行います．<br>
 
 ***
 
+### TODO 機能 {#e670a37e}
+
+"%TODO +コメント" とした行がタスクリストに登録されます．
+
 ## SumatraPDF との連携 {#jcc1d56b}
 
 ### forward search {#z83d5681}
@@ -1964,6 +2171,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
 - [TeXlipse (Windows)](http://utkhii.px.tsukuba.ac.jp/~ywatanabe/pukiwiki/index.php?PC%20%A5%BB%A5%C3%A5%C8%A5%A2%A5%C3%A5%D7#odf46805)
 - [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
+- [texlipse    \[EveryWare Lab students\]](http://wiki.webdev.ewlab.dico.unimi.it/doku.php?id=texlipse)
 - [Setting up TeXlipse and SumatraPDF](http://halkov.blogspot.com/2011/04/setting-up-texlipse-and-sumatrapdf.html)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [Texlipse と dviout でWISYWIG](http://meki789.blog123.fc2.com/blog-entry-8.html)
