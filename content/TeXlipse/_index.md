@@ -1973,6 +1973,84 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
+#### pxdvi {#iae2458d}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>pxdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-nofork -watchfile 1 "&#x25;file" -sourceposition &#x25;line:"&#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### xdvi {#u2125d3e}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/xdvi</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-nofork -watchfile 1 "&#x25;file" -sourceposition &#x25;line:"&#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
 ## スペル・チェッカー設定 {#m717370b}
 
 スペル・チェッカーの設定をします．
@@ -2163,6 +2241,13 @@ dviout や makeidx パッケージが作成するテンポラリーファイル�
 - [Eclipse Color Theme](https://github.com/eclipse-color-theme/eclipse-color-theme)
 
 Eclipse Color Theme で TeXlipse の表示色の変更ができます．
+
+### 選択したファイルの文字コードをまとめて変換 {#kc62331a}
+
+- [CharsetConv Eclipse Plugin](http://www.powerbeans.co.jp/modules/tinyd2/index.php?id=5)
+
+CharsetConv は選択したファイルの文字コードをまとめて変換する<br>
+Eclipse プラグインです．<br>
 
 ## 使い方 {#n32f16b3}
 
