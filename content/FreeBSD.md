@@ -15,6 +15,9 @@ pukiwiki: "FreeBSD"
 
 [TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/), [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) を参照してください．
 
+- [TeXLive on FreeBSD (portsのインストール編)](http://d.hatena.ne.jp/msll/20120120/1327058483)
+- [tlptexliveリポジトリとfreebsd_texlive](http://d.hatena.ne.jp/msll/20120118/1326888303)
+
 日本語 TeX 関連は Ports Collection に収められています．
 
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
