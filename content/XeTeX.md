@@ -649,6 +649,7 @@ Hello, \TeX !
 - [Imported from http://ustunozgur.blogspot.com - Filed under 'XeLaTeX'](http://import-chki.posterous.com/tag/xelatex)
 - [Ubuntu日本語フォーラム / xelatex で日本語をかく仕方](https://forums.ubuntulinux.jp/viewtopic.php?id=9469)
 - [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
+- [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
 
 ### コメント {#d0504266}
 
