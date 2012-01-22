@@ -65,7 +65,7 @@ TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込
       \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
     \fi
   \else
-    \documentclass[12pt,papersize,uplatex]{jsarticle}
+    \documentclass[uplatex,12pt,papersize]{jsarticle}
     \usepackage{atbegshi}
     \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
   \fi
