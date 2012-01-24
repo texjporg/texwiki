@@ -18,7 +18,7 @@ pukiwiki: "powerdot"
 ### powerdot とは {#f0f3637a}
 
 powerdot は プレゼンテーション用の LaTeX クラスです．<br>
-powerdot は dvipdfmx に対応していないので dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller の組み合わせで使用してください．<br>
+powerdot は dvipdfmx に対応していないので、[PDFを作る](<http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?PDFの作り方#gf004f58>)ためには、 dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller の組み合わせで使用してください．<br>
 しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html) を参照．)<br>
 
 ### [powerdot](http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot) {#nb8d29fc}
