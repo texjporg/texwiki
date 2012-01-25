@@ -29,10 +29,15 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ### リリース情報 {#td599942}
 
+TeXShop (v 3.05 and v 3.06) Experimental Releases 9/5/2011<br>
+TeXShop (v 3.04) Release 8/10/2011<br>
+TeXShop (v 2.43) Release 6/29/2011<br>
+TeXShop (v 1.43) Release 1/22/2006<br>
+
 - \[[OS X TeX\] TS 3.06 crash on Lion](http://email.esm.psu.edu/pipermail/macosx-tex/2011-September/047607.html) (modified TeXShop binary)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 
-## MacTeX-2011 の場合の設定 {#hd2204af}
+## MacTeX-2011 + tlptexlive の場合の設定 {#hd2204af}
 
 ### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
@@ -102,6 +107,76 @@ chmod で実行権限を付加します．
 
 ```
 $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
+```
+
+### &#x7e;/Library/TeXShop/bin/euptex2pdf-utf8 {#dcc357ad}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/euptex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+euptex -synctex=1 -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/euptex2pdf-utf8
+```
+
+### &#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8 {#d8b1bd48}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8
+
+***
+
+```
+#!/bin/sh
+# iNoue Koich! (modified by S. Zenitani)
+
+export PATH=$PATH:/usr/texbin:/usr/local/bin
+
+COMMAND=${0##*/}
+PTEX=${COMMAND%2pdf-*}
+ENCODE=${COMMAND#*-}
+JOBNAME=${1##*/}
+JOBNAME=${JOBNAME%.*}
+
+euptex -synctex=1 -kanji=$ENCODE -progname=$PTEX $1 && \
+dvipdfmx $JOBNAME
+
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 ```
 
 ### TeXShop 環境設定 {#d2699f04}
@@ -314,7 +389,56 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 
 ***
 
-■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup), pbibtex を使用する場合
+■ [&#x7e;/Library/TeXShop/bin/euptex2pdf-utf8](/TeXShop/#dcc357ad), [&#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8](/TeXShop/#d8b1bd48), upbibtex を使用する場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>パス設定</strong><br>
+　　　　(pdf)TeX (デフォルト:/usr/texbin)<br>
+　　　　<ins>/usr/texbin</ins><br>
+　　　　Distiller (Ghostscript) (デフォルト:/usr/local/bin)<br>
+　　　　<ins>/usr/local/bin</ins><br>
+
+<br>
+
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>&#x7e;/Library/TeXShop/bin/euptex2pdf-utf8</ins><br>
+　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
+
+<br>
+
+　　　　<strong>検索用コマンド</strong><br>
+　　　　kpsetool (デフォルト:kpsetool -w -n latex tex)<br>
+　　　　　<ins>kpsewhich -w -n latex tex</ins><br>
+
+<br>
+
+　　　　<strong>BibTeX エンジン</strong><br>
+　　　　デフォルト:bibtex<br>
+　　　　　<ins>upbibtex</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
+■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) (eptex, platex), pbibtex を使用する場合
 
 ***
 
@@ -350,6 +474,57 @@ $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 　　　　<strong>BibTeX エンジン</strong><br>
 　　　　デフォルト:bibtex<br>
 　　　　　<ins>pbibtex</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
+simpdftex を使用する方法だとエラーが発生してもそのまま dvipdfmx を実行してしまうようです．
+
+■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) (euptex, uplatex), upbibtex を使用する場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>パス設定</strong><br>
+　　　　(pdf)TeX (デフォルト:/usr/texbin)<br>
+　　　　<ins>/usr/texbin</ins><br>
+　　　　Distiller (Ghostscript) (デフォルト:/usr/local/bin)<br>
+　　　　<ins>/usr/local/bin</ins><br>
+
+<br>
+
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>simpdftex euptex --mode dvipdfmx --extratexopts "-synctex=1 -kanji=utf8"</ins><br>
+　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>simpdftex uplatex --mode dvipdfmx --extratexopts "-synctex=1 -kanji=utf8"</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
+
+<br>
+
+　　　　<strong>検索用コマンド</strong><br>
+　　　　kpsetool (デフォルト:kpsetool -w -n latex tex)<br>
+　　　　　<ins>kpsewhich -w -n latex tex</ins><br>
+
+<br>
+
+　　　　<strong>BibTeX エンジン</strong><br>
+　　　　デフォルト:bibtex<br>
+　　　　　<ins>upbibtex</ins><br>
 
 <br>
 
