@@ -25,12 +25,22 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
     - [TeXnicCenter News](http://www.texniccenter.org/news)
-- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
-    - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
 - [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
 - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
 [![TeXnicCenter 2.0 Alpha バージョンの画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
+
+### ChangeLog {#y2c9ad23}
+
+- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
+    - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
+
+### リリース情報 {#da101e5c}
+
+2012-01-31 TeXnicCenter 2.0 Alpha 4<br>
+TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
+TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
+バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．<br>
 
 ### 特徴 {#c8ac578a}
 
@@ -39,19 +49,16 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 - 折りたたみが可能です．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
-## ダウンロードとインストール {#rf294e94}
+## ダウンロード {#rf294e94}
 
-2010年5月30日に TeXnicCenter 2.0 Alpha 3 がリリースされました．
+- [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
 
-2.0 Alpha 3 からは，Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．
-
-<em>まだ，アルファバージョンです．アプリケーションがクラッシュしてデータが失われる可能性があります．</em>
-
-バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．[^1]
+## Encoding {#u85685c5}
 
 Encoding は
 
-- ANSI (日本語版 Windows では Shift_JIS)
+<!-- -ANSI (日本語版 Windows では Shift_JIS) -->
+- ANSI
 - UTF-8
 - UTF-8 with BOM
 - UTF-16
@@ -60,11 +67,6 @@ Encoding は
 - UTF-32 Big Endian
 
 に対応しています．
-
-[Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
-から TXCSetup_2Alpha3.exe をダウンロードします．
-
-TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってインストールします．
 
 ## プロファイルの作成 {#n1a2864d}
 
@@ -342,7 +344,8 @@ TXCSetup_2Alpha3.exe を実行し，インストーラの指示に従ってイ�
 
 ## (La)TeX {#n6a4bee4}
 
-英語版のコンパイラが設定されるので日本語版のコンパイラに変更します．
+英語版のコンパイラが設定されるので日本語版のコンパイラに変更します．<br>
+Encoding が UTF-8 の場合を記述します．<br>
 
 ### <em>注意</em> {#gc4456f9}
 
@@ -370,7 +373,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-guess-input-enc -src-specials -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -378,7 +381,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-kanji=utf8 "%bm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -386,7 +389,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-U "%bm"</ins><br>
 
 ***
 
@@ -407,7 +410,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-guess-input-enc -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%Wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -415,7 +418,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-kanji=utf8 "%bm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -423,7 +426,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-U "%bm"</ins><br>
 
 ***
 
@@ -445,7 +448,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -453,7 +456,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-kanji=utf8 "%bm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -461,7 +464,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-U "%bm"</ins><br>
 
 ***
 
@@ -1116,5 +1119,3 @@ C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d'
 - [Alphan Ulusoy&#039;s Blog &rsaquo; Using Adobe Acrobat Reader with TeXnicCenter](http://blog.alphanulusoy.com/?p=10)
 - [DDE Message of Acrobat and Adobe Reader](http://acrobat-dde.nnn2.com/)
 - [FW: Open "View PDF (pdflatex)" at last cursor position / forward search](http://www.mail-archive.com/lyx-devel@lists.lyx.org/msg157991.html)
-
-[^1]: ただし，日本語入力中は文字が小さく表示されてしまい，あまり快適ではありません．普段は英語で書いて，たまに日本語を使うという人向きかもしれません．
