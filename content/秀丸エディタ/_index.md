@@ -60,8 +60,11 @@ pukiwiki: "秀丸エディタ"
 - [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
     (阿部 紀行 (あべのり) さん)
 
-2011-11-28 64bit版macrodll.dll がリリースされました．<br>
+#### リリース情報 {#d9050efd}
+
+2011-11-28 64bit版macrodll.dll Ver.0.86 がリリースされました．<br>
 2011-11-26 祝鳥 0.86 がリリースされました．<br>
+祝鳥 0.86 で Adobe Reader X の DDE に対応しました．<br>
 
 #### DVI→PSの設定 {#e5e9bbcd}
 
@@ -369,6 +372,12 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 <span style="color:Black;background-color:#DAEAFF;">　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　</span><br>
 
 ***
+
+#### 祝鳥 0.85r1 で Adobe Reader X の場合に「Adobe系とのDDE接続に失敗」 と表示される → 祝鳥 0.86 にアップデート {#cfeabbcb}
+
+祝鳥 0.86 にアップデートしてください．<br>
+
+- [「Adobe系とのDDE接続に失敗」が解消できません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=758)
 
 #### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → 祝鳥 0.86 にアップデート {#b09ef8e6}
 
