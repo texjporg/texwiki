@@ -108,3 +108,8 @@ jsMath.js の mathchardef テーブル内に追加
 ### Suim {#a6b583f5}
 
 - [Suim - Web-based Input Method for Mathematics](http://suim.jp/)
+
+### Web Equation {#hee7e302}
+
+- [Web Equation](http://webdemo.visionobjects.com/equation.html?locale=ja_JP)
+- [手書きの数式を自動認識してLaTeXやMathMLにする「Web Equation」](http://gigazine.net/news/20120203-latex-mathml-web-equation/)
