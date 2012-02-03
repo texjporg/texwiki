@@ -241,6 +241,8 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ### cm-super パッケージ（巨大！ 約 64.1 MiB）のダウンロードとインストール {#a4477ec1}
 
+- [cm-super](/cm-super/) にも解説があります。
+
 - （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の
     Type 1 フォントが含まれています）<br>
     [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/)
