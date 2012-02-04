@@ -45,8 +45,6 @@ WinShell には
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/) 公式サイト
 
-2011-04-10 WinShell 3.3.2.4 - upload date: 2011-04-10
-
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
 ([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．<br>
@@ -57,6 +55,12 @@ WinShell には
 『LaTeX2e 美文書作成入門』
 ([改訂版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)，[改訂第3版](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/))
 の WinShell は 2.2 など，古いバージョンのものですので，TeXWiki:WinShell/2 をご覧ください．
+
+### リリース情報 {#kbd54269}
+
+2011-04-10 WinShell 3.3.2.4 - upload date: 2011-04-10
+
+### スクリーンショット {#me69336b}
 
 [![WinShell 3 の新しい画面](http://www.winshell.org/modules/ws_screenshots/images/main_small.png)](http://www.winshell.org/modules/ws_screenshots/images/main.png)
 [![Linux で動作する WinShell 3](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell_small.png)](http://www.winshell.org/modules/ws_screenshots/images/Linux_WinShell.png)
