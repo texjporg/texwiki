@@ -48,26 +48,44 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ### 派生版 {#ka1322d7}
 
+#### Windows {#mcb80f41}
+
 - [KaoriYa (香り屋) 版](http://www.kaoriya.net/software/vim)
     Vim オリジナルに，日本語を扱う上で便利な設定やスクリプトが追加されている
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
-- [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban)
-    UTF-8 化した gvim としてすぐに使用できるオールインワンパッケージを配布
-
-- [MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/)
-    香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
     - [コミットログ](https://github.com/splhack/macvim/commits/master)
 - [vim-win3264](http://code.google.com/p/vim-win3264/)
 - [gVim Portable](http://sf.net/projects/portableapps/files/gVim%20Portable/)
+
+#### Windows, Linux {#o0f5036e}
+
+- [Vim UTF-8 日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban)
+    UTF-8 化した vim/gvim
+
+#### Windows, GNU/Linux, FreeBSD {#q4511794}
+
+- [Cream](http://cream.sf.net/)
+    モーダルな Vim をモードレスに
+
+#### OS X {#gb7dcad0}
+
+- [MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/)
+    香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
+
 - [MacVim](https://github.com/b4winckler/macvim/downloads)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
 - [vim-cocoa](http://code.google.com/p/vim-cocoa/)
     - [コミットログ](https://github.com/jjgod/vim-cocoa/commits/master)
 - [MacOSX Vim](http://sf.net/projects/macosxvim/files/)
+
+#### iOS {#o6e8ea48}
+
+- [Applidium &mdash; Vim](http://applidium.com/en/applications/vim/)
+    - [App Store - Vim](http://itunes.apple.com/jp/app/vim/id492668168?mt=8)
+
+#### Android {#o2329571}
+
 - [Vim for Android](http://ux.getuploader.com/vim/)
-- [Vim on iPhone](http://www.foreveriphone.com/vim-on-iphone/)
-- [Cream](http://cream.sf.net/)
-    モーダルな Vim をモードレスに
 
 ### ヘルプ {#b043417b}
 
