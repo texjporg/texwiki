@@ -9,25 +9,26 @@ pukiwiki: "FreeBSD"
 
 ## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
-<strong>現在Ports CollectionのteTeX関連はteTeX 3.0ベースのものに置き換わっています．</strong>
-
-<strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
+### TeX Live {#w7ff21ac}
 
 [TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/), [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) を参照してください．
 
+- [TeXLive on FreeBSD(ファイル名と格闘編)](http://d.hatena.ne.jp/msll/20120205/1328449084)
 - [TeXLive on FreeBSD (portsのインストール編)](http://d.hatena.ne.jp/msll/20120120/1327058483)
 - [tlptexliveリポジトリとfreebsd_texlive](http://d.hatena.ne.jp/msll/20120118/1326888303)
+
+### TeX関連のPort {#y07bcd98}
+
+<strong>現在Ports CollectionのteTeX関連はteTeX 3.0ベースのものに置き換わっています．</strong>
+
+<strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
 
 日本語 TeX 関連は Ports Collection に収められています．
 
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
-### TeX関連のPort {#y07bcd98}
-
-歴史的事情により，
-teTeXベースのものに完全には置き換わっていません．
-主要なものに関してはteTeXベースのPortが用意されています．
+<!-- 歴史的事情により，teTeXベースのものに完全には置き換わっていません．主要なものに関してはteTeXベースのPortが用意されています． -->
 
 #### teTeX関連のPort {#c779326f}
 
