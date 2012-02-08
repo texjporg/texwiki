@@ -21,11 +21,15 @@ EasyTeX は Windows 7, Vista, XP, 2000, 98 上で動作する国産でフリー�
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
-2011/8/10 に EasyTeX Verson 3.241 が公開されました．
-
 - [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
     - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
         - [EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
+
+### リリース情報 {#nc0d64ca}
+
+2012/2/6 EasyTeX Verson 3.242 が公開されました．
+
+### スクリーンショット {#e7b3eafc}
 
 <img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111220630.png" alt="EasyTeX の画面">
 
@@ -65,7 +69,7 @@ zip ファイル版は，レジストリを使用しません．アンインス�
 
 ### exe ファイル {#z3b6deb0}
 
-exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロールパネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
+exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロール パネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
 
 ## TeX環境設定 {#e3c37dfc}
 
@@ -129,7 +133,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　　　　　言語<br>
 　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
 　　　　　　◯英語　　　　　　　　　　　　 ☑source special<br>
-　　　　　TeXコンパイラ　　　　　　 　 　☑SyncTeX　　　<ins>1</ins><br>
+　　　　　TeXコンパイラ　　　　　　 　 　☑SyncTeX　　　<ins>1 \[◆\]</ins><br>
 　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
 　　　　　 jPlain　　　　　　　　　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
 　　　　　 latexcompile　 　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
@@ -145,9 +149,11 @@ TeX コンパイラは pLaTeX を選択します．
 
 source special にチェックを入れます．
 
-SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に変更します．
+SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)
 
 ### Spell {#z664fb17}
+
+■ 32bit Windows の場合
 
 ***
 
@@ -161,13 +167,29 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 
 ***
 
+■ 64bit Windows の場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]</ins></span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> <ins>C:\Program Files (x86)\aspell\bin\aspell.exe</ins><br>
+>
+> 　　起動オプション <ins>--lang=en -t -c</ins><br>
+
+***
+
 スペルチェッカー (aspell.exe) のフルパスと起動オプションを指定します．
 
 スペルチェッカーを使わない人は何も入力しなくても OK です．
 
 ### PS/PDF {#ubd35880}
 
-■ [SumatraPDF](/SumatraPDF/) の場合 (32bit Windows)
+#### [SumatraPDF](/SumatraPDF/) {#z50c8c10}
+
+■ 32bit Windows の場合
 
 ***
 
@@ -179,11 +201,11 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
 ***
 
-■ [SumatraPDF](/SumatraPDF/) の場合 (64bit Windows)
+■ 64bit Windows の場合
 
 ***
 
@@ -195,11 +217,13 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
 ***
 
-■ Adobe Reader X の場合 (32bit Windows)
+#### [Adobe Reader](</Adobe Reader/>) {#qf4ce918}
+
+■ 32bit Windows の場合
 
 ***
 
@@ -211,11 +235,11 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
 ***
 
-■ Adobe Reader X の場合 (64bit Windows)
+■ 64bit Windows の場合
 
 ***
 
@@ -227,17 +251,17 @@ SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に�
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
 >
-> 　PDF Readerを開くタイミング　　<ins>300</ins><br>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
 ***
 
-GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe や AcroRd32.exe) のフルパスを指定します．
+GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe または AcroRd32.exe) のフルパスを指定します．
 
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．
 
 EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．
 
-PDF Reader は [SumatraPDF](/SumatraPDF/), Adobe Reader, Foxit Reader, PDF-XChange Viewer に対応しています．
+PDF Reader は [SumatraPDF](/SumatraPDF/), [Adobe Reader](</Adobe Reader/>), Foxit Reader, PDF-XChange Viewer に対応しています．
 
 ### TeX環境設定の保存 {#lf745908}
 
@@ -515,7 +539,7 @@ Shift + 左クリックで複数のパッケージを選択することが可能
 
 EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
 
-出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れて右側の値を 0 から 1 または -1 に変更します．
+出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)
 
 \[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
 
@@ -525,12 +549,12 @@ PDF ファイルが存在すれば，EasyTeX の画面をダブルクリック�
 
 ### inverse search {#a57927f9}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3241\EasyTeX.exe である場合
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3242\EasyTeX.exe である場合
 
 SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
 
 ```
-C:\easytex3241\EasyTeX.exe /j%l "%f"
+C:\easytex3242\EasyTeX.exe /j%l "%f"
 ```
 
 と書き込んで \[OK\] をクリックしてください．
@@ -565,12 +589,12 @@ LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟ
 
 ### inverse search {#o80a79a1}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3241\EasyTeX.exe である場合
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3242\EasyTeX.exe である場合
 
 [dviout for Windows](/dviout/) の \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\easytex3241\EasyTeX.exe
+`easytex easytex +%d %s``C:\easytex3242\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
@@ -580,7 +604,7 @@ dviout の画面をダブルクリックすると，EasyTeX が前面に出て�
 Version 3.240 以降は以下の形式でも OK です．
 
 ```
-C:\easytex3241\EasyTeX.exe^s /j%d "%s"
+C:\easytex3242\EasyTeX.exe^s /j%d "%s"
 ```
 
 > 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
