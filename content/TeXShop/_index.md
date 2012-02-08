@@ -37,7 +37,9 @@ TeXShop (v 1.43) Release 1/22/2006<br>
 - \[[OS X TeX\] TS 3.06 crash on Lion](http://email.esm.psu.edu/pipermail/macosx-tex/2011-September/047607.html) (modified TeXShop binary)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 
-## MacTeX-2011 + tlptexlive の場合の設定 {#hd2204af}
+## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
+
+tlptexlive をインストールします．
 
 ### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
