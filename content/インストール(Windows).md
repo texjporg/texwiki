@@ -625,7 +625,7 @@ PATH の値は Ghostscript のバージョンによって変わるので，使�
 
 > | 変数名 | 変数値 |
 > |---|---|
-> | PATH | C:\gs\gs9.04\bin;C:\gs\gs9.04\lib |
+> | PATH | C:\gs\gs9.05\bin;C:\gs\gs9.05\lib |
 >
 
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
@@ -661,14 +661,14 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.04\bin\gsdll32.dll) に修正します．
+を Ghostscript の dll ファイル (C:\gs\gs9.05\bin\gsdll32.dll) に修正します．
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.04/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/gs/gs9.05/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 日本語を表示するには，psv.wx.lua の PSV_DftGsPars
