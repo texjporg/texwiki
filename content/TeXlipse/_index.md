@@ -420,7 +420,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -641,7 +641,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -832,7 +832,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -1023,7 +1023,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.04\lib\ps2pdf.bat</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -1069,7 +1069,7 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 　　Makeindex program　　　(C:\w32tex\bin\mendex.exe)<br>
 　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
 　　Dvipdf program　　　(C:\w32tex\bin\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\gs\gs9.04\lib\ps2pdf.bat)<br>
+　　Ps2pdf program　　　(C:\gs\gs9.05\lib\ps2pdf.bat)<br>
 　　Makeindex program (nomencl)　　　(C:\w32tex\bin\mendex.exe)<br>
 　　Kpsewhich program　　　(C:\w32tex\bin\kpsewhich.exe)<br>
 
@@ -1079,7 +1079,8 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ## ビルダー設定 (OS X) {#vcf0d397}
 
-動作未確認です．
+tlptexlive をインストールします．<br>
+動作未確認です．<br>
 
 ***
 
@@ -1087,10 +1088,25 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+■ platex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/platex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ uplatex の場合<br>
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -1155,10 +1171,25 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 ***
 
+■ pbibtex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/pbibtex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ upbibtex の場合<br>
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -1684,7 +1715,8 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ## ビューアー設定 (OS X) {#dddd18cb}
 
-動作未確認です．
+tlptexlive をインストールします．<br>
+動作未確認です．<br>
 
 ### PDF ファイル ビューアー {#x7261881}
 
