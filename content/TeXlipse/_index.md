@@ -1737,7 +1737,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Preview</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/Preview.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a Preview.app "&#x25;file"</ins><br>
 
 <br>
 
@@ -1776,7 +1776,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXShop</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeX/TeXShop.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a TeXShop.app "&#x25;file"</ins><br>
 
 <br>
 
@@ -1815,7 +1815,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeX/TeXworks.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a TeXworks.app "&#x25;file"</ins><br>
 
 <br>
 
@@ -1893,7 +1893,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/Adobe Reader.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "Adobe Reader.app" "&#x25;file"</ins><br>
 
 <br>
 
@@ -1975,7 +1975,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>PictPrinter</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeX/PictPrinter.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a PictPrinter.app "&#x25;file"</ins><br>
 
 <br>
 
@@ -2014,7 +2014,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mxdvi</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "/Applications/TeX/Mxdvi.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a Mxdvi.app "&#x25;file"</ins><br>
 
 <br>
 
