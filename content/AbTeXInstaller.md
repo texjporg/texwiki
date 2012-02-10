@@ -116,7 +116,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　15.2MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　988KB　　　　GSview<br>
 　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　92.2MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
