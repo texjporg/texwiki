@@ -50,4 +50,6 @@ echo close hoge.pdf | pdfdde
 echo exit | pdfdde
 ```
 
+### [Acrobat および Adobe Reader のコマンドラインオプション](http://kb2.adobe.com/jp/cps/510/510705.html) {#vb210974}
+
 ### [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222) {#fb046c0f}
