@@ -589,9 +589,9 @@ Cygwin のパッケージインストール
 ぜひ[奥村晴彦さん](http://oku.edu.mie-u.ac.jp/~okumura/)の[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)も
 入れてください。
 
-内部 Unicode 版 pTeX
+W32TeX の内部 Unicode 版 pTeX
 （[uptex-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz)）
-には，奥村さんの新ドキュメントクラスが含まれています。
+や TeX Live には，奥村さんの新ドキュメントクラスが含まれています。
 
 手動で入れるのなら，最新のものをダウンロードして展開し，
 フォルダ（ディレクトリ）ごと $TEXMFLOCAL/tex/platex/
@@ -600,11 +600,11 @@ Cygwin のパッケージインストール
 
 もしファイル名のデータベース $TEXMF/ls-R
 （例えば C:\w32tex\share\texmf\ls-R）が
-存在するのなら，mktexlsr コマンド[^5]でデータベースを更新しないと，
+存在するのなら，mktexlsr コマンド (または texhash コマンド) でデータベースを更新しないと，
 新しくインストールしたファイルが認識されません。しかしこれは忘れやすいので，
 初心者のかたは mktexlsr コマンドを打ち込まないほうがいいでしょう。
 
-間違って mktexlsr コマンドを打ち込んでしまった場合は deltexlsr コマンドを打ち込んでください。$TEXMF/ls-R ファイルが削除されます。
+W32TeX を使用していて間違って mktexlsr コマンドを打ち込んでしまった場合は deltexlsr コマンドを打ち込んでください。$TEXMF/ls-R ファイルが削除されます。
 
 ## Ghostscript のインストール {#zd901fa9}
 
@@ -647,6 +647,17 @@ PATH の値は Destination Folder (インストール先のフォルダー) に�
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
 - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+
+## Ruby のインストール {#w18e586b}
+
+convbkmk.rb などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．
+
+- [RubyInstaller for Windows](http://rubyinstaller.org/)
+
+> | 変数名 | 変数値 |
+> |---|---|
+> | PATH | C:\Ruby193\bin |
+>
 
 ## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
@@ -824,4 +835,3 @@ WZ EDITOR をご覧ください．
 [^2]: 例えば [7-Zip](http://sevenzip.sourceforge.jp/)，[7-Zip Portable](http://portableapps.com/apps/utilities/7-zip_portable)，[Explzh](http://www.ponsoftware.com/)，[LhaForge](http://claybird.sakura.ne.jp/garage/lhaforge/)，[LhaOpen](http://lhaopen.tsuru.syuriken.jp/)，[Lhaz](http://www.chitora.jp/lhaz.html)，[Lhaplus](http://hoehoe.com/)，[epo](http://www.softgate.jp/ja/portal/software.html)，[PeaZip](http://peazip.sourceforge.net/)，[ALZip](http://www.altools.jp/product/alzip.aspx)（[アドウェア](http://www.altools.jp/ETC/NEWS.aspx?mid=231&vidx=47)），[WinRAR](http://www.diana.dti.ne.jp/~winrar/)（シェアウェア）など。
 [^3]: C:\w32tex の場合、フロントエンドのプログラムが自動で見つけてくれるチャンスが増えます。
 [^4]: 類似する文字コードとして [Windows-31J](http://msdn.microsoft.com/goglobal/cc305152.aspx) があります。この Windows-31J と Shift_JIS は Microsoft Windows 上ではしばしば混同されます。また，Windows-31J は日本語 Microsoft Windows の「メモ帳」では “ANSI” と表示されます。
-[^5]: または texhash コマンド
