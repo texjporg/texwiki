@@ -1349,13 +1349,13 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 ## SumatraPDF との連携 (inverse search) {#kdd43a4c}
 
 ```
-C:\tpad108\TeraPad.exe /jl=%l "%f"
+C:\tpad\TeraPad.exe /jl=%l "%f"
 ```
 
 ## dviout との連携 (inverse search) {#u00a74a2}
 
 ```
-C:\tpad108\TeraPad.exe^s /jl=%d "%s"
+C:\tpad\TeraPad.exe^s /jl=%d "%s"
 ```
 
 ## 参考サイト {#n06fef85}
