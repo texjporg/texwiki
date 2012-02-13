@@ -16,18 +16,11 @@ pukiwiki: "Ghostscript-8系"
 
 ## Ghostscript 8-系 {#f2728a95}
 
-Ghostscript 8-系の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. メジャーバージョンごとに新たに検証が成されて, 新たなページが書き起こされることは望ましいでしょう。
+Ghostscript 8-系の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
+Ghostscript の仕様が大幅に変更され、このページの情報が適用できない可能性があることを認識しておいてください。<br>
+メジャーバージョンごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
 
-いくつかのマイナーバージョンについては、旧版からの大きな変更点などの固有の話題が
-
-- Ghostscript 8.71
-- Ghostscript 8.70
-- Ghostscript 8.64
-- Ghostscript 8.54
-- Ghostscript 8.50
-- Ghostscript 8.15
-
-などにあります。新たにインストール記や変更点の検証が個別のバージョンのページで行われることも望ましいでしょう。(以下の文章は基本的に8.54で検証されたものです. バージョンが 8.xx や 8.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
+(以下の文章は基本的に8.54で検証されたものです. バージョンが 8.xx や 8.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
 
 ### table of contents {#p1c753f1}
 
@@ -565,21 +558,18 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ***
 
-## GPL Ghostscript 8.xx for Microsoft Windows {#w33eec77}
+## GPL Ghostscript 9.xx for Microsoft Windows {#w33eec77}
 
 ### 配布先 {#gc8a2a19}
 
-[W32TeX](http://w32tex.org/index-ja.html)
-からインストールプログラムを入手します。
-
 - Ghostscript のインストーラ
 
-- [GPL Ghostscript 8.??](http://w32tex.org/gs/) gs ディレクトリ内の gs8??w32full-gpl.zip (?? は望みのバージョン) をダウンロード
+- [GPL Ghostscript 9.xx](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs905w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
-    - [GSview 4.9 (32bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv49w32.exe)
-    - [GSview 4.9 (64bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv49w64.exe)
+    - [GSview 5.0 (32bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv50w32.exe) (32bit版のGhostscriptが必要です。)
+    - [GSview 5.0 (64bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv50w64.exe) (64bit版のGhostscriptが必要です。)
         <!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
         <!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
         <!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
@@ -591,25 +581,23 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 旧版の Ghostscript がすでにインストールしてあるのならば，先にアンインストールしておきます。
 
-- 絶対パスに ASCII 以外の文字（日本語など）を使っていないディレクトリに
-    gs8??w32full-gpl.zip を展開します。
+- gs905w32full-gpl.exe を実行します。
+    - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.05”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.05”
+    - gs9.04 以前と同様の場所にインストールしたい場合は “C:\gs\gs9.05”に変更します。
+        <!-- Ghostscript のためだけに C:\usr\local を作るのはばかげてますし、Cygwin はともかくネイティブの Windows 環境で、UNIX のディレクトリ構造に似せても特に利点がないのでコメントアウトしておきます。 -->
+        <!-- - -UNIX 互換 OS での Ghostscript のディレクトリ構造 -->
+        <!-- (/usr/share/ghostscript/) に似せたいのならば， -->
+        <!-- インストール先を決める項目である ‘Install to directory’ の欄の -->
+        <!-- 内容を “C:\gs” から “C:\usr\local\share\gs” に変えます。 -->
 
-- setupgs.exe を実行します。
-    - デフォルトのインストール先は “C:\gs”
-    - UNIX 互換 OS での Ghostscript のディレクトリ構造
-        (/usr/share/ghostscript/) に似せたいのならば，
-        インストール先を決める項目である ‘Install to directory’ の欄の
-        内容を “C:\gs” から “C:\usr\local\share\gs” に変えます。
-
-- \[Use Windows TrueType fonts for Chinese, Japanese and Korean\] に
-    チェックを入れます。
+- \[Use Windows TrueType fonts for Chinese, Japanese and Korean\] にチェックが入っていなければチェックを入れます。
 
 ユーザーアカウントの名前に例えば「山田太郎」のように
 ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
 インストールに失敗することがあります。これは環境変数
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。環境変数 TEMP のデフォルトは
-Windows Vista の場合では %USERPROFILE%\AppData\Local\Temp
+Windows 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
 (&cong; C:\Users\\%USERNAME%\AppData\Local\Temp) と，
 Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 (&cong; "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
@@ -619,19 +607,25 @@ ASCII 文字だけで設定します。
 
 ### 環境変数 Path の設定 {#g074d14f}
 
-Ghostscript 8.?? を C:\gs\ にインストールしたのなら
+Ghostscript 9.05 を C:\Program Files\gs\gs9.05 にインストールしたのなら
 
 ```
-;C:\gs\gs8.??\bin;C:\gs\gs8.??\lib
+;C:\Program Files\gs\gs9.05\bin;C:\Program Files\gs\gs9.05\lib
 ```
 
-を，C:\usr\local\share\gs\ にインストールしたのなら
+Ghostscript 9.05 を C:\Program Files (x86)\gs\gs9.05 にインストールしたのなら
 
 ```
-;C:\usr\local\share\gs\gs8.??\bin;C:\usr\local\share\gs\gs8.??\lib
+;C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib
 ```
 
-を環境変数 Path に追加します。
+Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
+
+```
+;C:\gs\gs9.05\bin;C:\gs\gs9.05\lib
+```
+
+を環境変数 PATH に追加します。 <!-- C:\usr\local\share\gs\ にインストールしたのなら --> <!-- ;C:\usr\local\share\gs\gs9.??\bin;C:\usr\local\share\gs\gs9.??\lib --> <!-- を環境変数 PATH に追加します。 -->
 
 ### CMap {#k55ee82d}
 
