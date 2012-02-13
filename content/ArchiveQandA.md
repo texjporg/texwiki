@@ -40,7 +40,7 @@ pukiwiki: "ArchiveQandA"
 - DVIWINボタンを押しても“One or more errors occured!　Please check the options!”と言われます（[qa:29850](https://okumuralab.org/~okumura/texfaq/qa/29850.html), [qa:29142](https://okumuralab.org/~okumura/texfaq/qa/29142.html)など）
     - dvioutへのパスを通していない、あるいはDVIWIN設定ダイアログで
         「（インストールディレクトリ）\dviout.exe」
-        具体的には「C:\dviout\dviout.exe」のように正しい場所を指定していないからです。WinShell3のページを参照して、修正しましょう。
+        具体的には「C:\w32tex\dviout\dviout.exe」のように正しい場所を指定していないからです。[WinShell](/WinShell/#xe1b50b7)のページを参照して、修正しましょう。
 
 ### dvioutのエラーメッセージ {#lb61846e}
 
