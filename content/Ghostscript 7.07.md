@@ -88,7 +88,7 @@ C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は
 ドラッグ &amp; ドロップして虎の絵が表示できれば OK です。
 
 dviout for Windows との連携をチェックするには，dviout をインストールした
-フォルダ（例えば C:\dviout\）の GRAPHIC\PS\ フォルダに上の tiger.ps と，
+フォルダ（例えば C:\w32tex\dviout\）の GRAPHIC\PS\ フォルダに上の tiger.ps と，
 同じフォルダにある golfer.ps とをコピーしておきます。これでその場所にある
 pssample.dvi をダブルクリックして絵入りの文書が表示できれば OK です。
 
