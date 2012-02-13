@@ -20,55 +20,63 @@ Ghostscript 8-系の共通項目です。当ページの対象としては, 大�
 Ghostscript の仕様が大幅に変更され、このページの情報が適用できない可能性があることを認識しておいてください。<br>
 メジャーバージョンごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
 
-(以下の文章は基本的に8.54で検証されたものです. バージョンが 8.xx や 8.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
+(バージョンが 9.xx や 9.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
+
+### お知らせ {#de455d8c}
+
+<strong>Ghostscript 8.71 より前の Ver. には[脆弱性](http://japan.cnet.com/news/business/story/0,3800104746,20418937,00.htm)がありますので、最新版に更新してください。</strong>
+
+- [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
+
+Ghostscript 8.71 でエラーが発生するようです．9.01 では発生しないようです．
+
+- [dvipsでeps出力した図とGhostscript 8.71のバグ？](http://d.hatena.ne.jp/SO2_2009/20110221/1298309714)
 
 ### table of contents {#p1c753f1}
 
 #CONTENTS
 
-## GPL Ghostscript 8.xx for UNIX or Unix-like OS {#xff4aa84}
+## GPL Ghostscript 9.xx for UNIX or Unix-like OS {#xff4aa84}
 
 ### ダウンロード {#g31ae747}
 
-[CTAN:support/ghostscript/GPL/](https://mirror.ctan.org/support/ghostscript/GPL/)gs8??/
-などから ghostscript-8.??.tar.bz2 と ghostscript-fonts-std-8.11.tar.gz を入手します。
+- [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
+- [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
+- [http://code.google.com/p/ghostscript/downloads/list](http://code.google.com/p/ghostscript/downloads/list)
+
+などから ghostscript-9.05.tar.bz2 を入手します。
 
 ### インストール {#u4ad1919}
 
-/usr/local/teTeX/ 以下にインストールする場合です。
+/usr/local/ 以下にインストールする場合です。
 
 ```
-$ cd /usr/local/src
-$ sudo tar xvjf .../ghostscript-8.??.tar.bz2
-$ cd ghostscript-8.??
-$ sudo ./configure --disable-compile-inits --prefix=/usr/local/teTeX
+$ tar jxff ghostscript-9.05.tar.bz2
+$ cd ghostscript-9.05
+$ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
 ```
 
-このように最近のものは --disable-compile-inits を付けないと cidfmap を参照しないようです。
-ほかにオプションとしては --without-x とか --disable-cups とかで不要なものを外せます。
+このように最近のものは --disable-compile-inits を付けないと cidfmap を参照しないようです。<br>
+ほかにオプションとしては --without-x とか --disable-cups とかで不要なものを外せます。<br>
 
-すると，次のものが /usr/local/teTeX/bin/ に入ります。
+すると，次のものが /usr/local/bin/ に入ります。
 
 > bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj, gsdj,
 > gsdj500, gslj, gslp, gsnd, lprsetup.sh, pdf2dsc, pdf2ps, pdfopt, pf2afm,
 > pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
 > ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
 
-また，/usr/local/teTeX/share/ghostscript/8.??/ の下に
-たくさんのものが入ります。/usr/local/teTeX/man/man1/ と
-/usr/local/teTeX/man/de/man1/ の中にもマニュアル類が入ります。
-
-欧文用フォントをインストールします：
-
-```
-$ cd /usr/local/teTeX/share/ghostscript
-$ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz 
+また，/usr/local/share/ghostscript/9.05/ の下に
+たくさんのものが入ります。/usr/local/man/man1/ と
+/usr/local/man/de/man1/ の中にもマニュアル類が入ります。
 
 ```
 
-和文については，cidfmap（上の設定では /usr/local/teTeX/share/ghostscript/8.??/lib/cidfmap，新しいバージョンでは .../8.??/Resource/Init/cidfmap）に記述します。ヒラギノを利用するなら
+```
+
+和文については，cidfmap (/usr/local/share/ghostscript/9.05/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
 
 ```
 /Ryumin-Light      /HiraMinProN-W3   ;
@@ -77,19 +85,19 @@ $ sudo tar xvzf .../ghostscript-fonts-std-8.11.tar.gz
 /HeiseiKakuGo-W5   /GothicBBB-Medium ;
 ```
 
-あとは /usr/local/teTeX/share/ghostscript/8.??/Resource/CIDFont/ の
+あとは /usr/local/share/ghostscript/9.05/Resource/CIDFont/ の
 中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
 名前でシンボリックリンクを作っておきます。例えば MacOS X なら
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W3
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMinProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinProN-W6
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMinProN-W6
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W3
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuProN-W6
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
 $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
@@ -97,21 +105,21 @@ $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
 $ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStdN-W8
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuStdN-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruProN-W4
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMaruProN-W4
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W3
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMinPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMinPro-W6
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMinPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W3
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuPro-W6
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraKakuStd-W8
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraKakuStd-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/8.??/Resource/CIDFont/HiraMaruPro-W4
+> /usr/local/share/ghostscript/9.??/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s /Library/Fonts/华文宋体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
 $ sudo ln -s /Library/Fonts/华文楷体.ttf \
@@ -122,7 +130,7 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
 ```
 
-さらに，/usr/local/teTeX/share/ghostscript/8.??/Resource/Font/ の中に
+さらに，/usr/local/share/ghostscript/9.05/Resource/Font/ の中に
 例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
 
 ```
@@ -149,7 +157,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
 
-### /usr/local/share/ghostscript/8.??/lib/cidfmap の記述例 {#h0f0fbe0}
+### /usr/local/share/ghostscript/9.??/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
 
 #### <a id="cidfmap-unix">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
 
@@ -687,10 +695,10 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType
 フォーマットの TrueType outline （2次 B-スプライン曲線アウトライン）フォント
-ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs8.??\lib\cidfmap
+ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs9.??\Resource\Init\cidfmap
 記述時に gs\fonts\ までのパスを省略できます。
 
-### gs\gs8.??\lib\cidfmap の記述方法 {#e2200e36}
+### gs\gs9.??\Resource\Init\cidfmap の記述方法 {#e2200e36}
 
 ```
 /Ryumin-Light      /MS-Mincho        ;
@@ -719,7 +727,7 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 [OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，dvips を通して）
 変換した PostScript ファイルを（ps2pdf を使うなどして）
-Ghostscript 8.?? で PDF に変換する場合には，gs\gs8.??\Resource\Font\ に
+Ghostscript 9.?? で PDF に変換する場合には，gs\gs9.??\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -798,7 +806,7 @@ composefont pop
 
 [TeXWiki:OTF #dvips 用の map ファイル](/OTF/#k1eb9f9c) も参照。
 
-### gs\gs8.??\lib\cidfmap の記述例 {#m115a63f}
+### gs\gs9.??\Resource\Init\cidfmap の記述例 {#m115a63f}
 
 #### <a id="cidfmap-windows">For Microsoft Windows</a> {#xba7681e}
 
@@ -1175,8 +1183,8 @@ D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dComp
 
 Ghostscript 7.07 では “/NeverEmbed”，“/AlwaysEmbed” を使って
 PDF への欧文用フォントの埋め込み制御が行えましたが，Ghostscript 8.54 では
-欧文用フォントに対し “/NeverEmbed”，“/AlwaysEmbed” がうまく働きません。
-そこで，lib/gs_pdfwr.ps の記述内容を書き換えることで
+欧文用フォントに対し “/NeverEmbed”，“/AlwaysEmbed” がうまく働きませんでした。(最新版ではこの問題は解決しています。)<br>
+そこで，“/NeverEmbed”，“/AlwaysEmbed” がうまく働かない場合は [Resource/Init/gs_pdfwr.ps](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/Resource/Init/gs_pdfwr.ps;hb=HEAD) の記述内容を書き換えることで
 PDF への欧文用フォントの埋め込み制御を行います。
 
 デフォルトでは PostScript Level 1 での基本14書体である
@@ -1192,7 +1200,7 @@ Oblique 体（Slanted 体，斜体）で表示されてしまいます。
 Times-BoldItalic だけを埋め込み，Times-Roman，Times-Bold，Helvetica
 ファミリ，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，ほとんどの環境で PostScript Level 1 での基本14書体が
-正確に表示されます。このような設定にするには，lib/gs_pdfwr.ps の
+正確に表示されます。このような設定にするには，Resource/Init/gs_pdfwr.ps の
 記述内容の27&ndash;34行目のうち32行目を次のように変更してください。
 
 ```
@@ -1215,7 +1223,7 @@ Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファ
 埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，Microsoft Windows を含めたほとんどの環境で
 PostScript Level 1 での基本14書体が正確に表示されます。
-このような設定にするには，lib/gs_pdfwr.ps の記述内容の27&ndash;34行目の
+このような設定にするには，Resource/Init/gs_pdfwr.ps の記述内容の27&ndash;34行目の
 うち31&ndash;32行目を次のようにコメントアウトしてください。
 
 ```
