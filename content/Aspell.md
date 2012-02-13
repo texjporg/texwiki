@@ -17,7 +17,7 @@ AspellはIspellに機能を追加した新しいスペルチェッカです。Te
 
 xyzzyから使う場合以外、日本語には完全対応というわけではありません。コマンドラインからの起動・EasyTeXの場合は日本語アルファベット混じり文で誤認識する程度（そこの置換は適切に行われない。それ以外の箇所は問題なく置換可能）、WinShellから使う場合は英語のみの文でないと誤認識がひどい、xyzzyから使う場合は日本語アルファベット混じり文を完全に無視（たとえば「これはtstです」のtstも無視）してくれる、と使い方によって対応状況はまちまちです。（以上から見て分かるように、もっとも使い勝手がいいのはxyzzyから使う場合でしょう。とはいえ、WinShell以外であれば日本語・アルファベット混じり文でもあまりひどくは気にならないと思います。）
 
-上記の通り日本語アルファベット混じり文を完全無視してくれないのが嫌だとか、重いのがいやだとか特に理由がなければぜひAspellをお試しください。WinShell 3も標準で対応しています。
+上記の通り日本語アルファベット混じり文を完全無視してくれないのが嫌だとか、重いのがいやだとか特に理由がなければぜひAspellをお試しください。
 
 ### Aspell のインストール {#aspin466}
 
@@ -50,7 +50,7 @@ replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 Linuxでは通常最初からaspellがインストールされています。aspellが入っていなければ、例えば、VineLinuxだとすると
 
 ```
-# apt-get install aspell
+$ sudo apt-get install aspell
 ```
 
 でインストールが完了します。Ubuntuの場合だと、
@@ -61,9 +61,15 @@ $ sudo apt-get install aspell aspell-en
 
 です。
 
-#### MacOSXの場合 {#g5b60c70}
+#### OS X の場合 {#g5b60c70}
 
-MacPortsを使えば簡単にインストールできます。
+Homebrew を使って簡単にインストールできます。
+
+```
+$ brew install aspell --lang=en
+```
+
+MacPorts を使って簡単にインストールできます。
 
 ```
 $ sudo port intall aspell aspell-dict-en
@@ -158,23 +164,41 @@ tex-check-comments true
 <!-- [[欧文スペルチェッカー GNU Aspell:http://members.jcom.home.ne.jp/advweb/build/others/aspell.html]] -->
 <!-- をご覧ください。 -->
 
-### Aspell の使い方（WinShell編） {#awsus466}
-
-WinShellなら設定なしで（PATHの設定も不要）、ツールバーのスペルチェッカボタンを押すだけでスペルチェックしてくれます。専用のダイアログもあり、使いやすいです。
-
-ただし、日本語アルファベット交じりの文だと、日本語とアルファベットの混じり具合にもよりますが、あまり適切に働かないこともあります。日本語アルファベット混じり文をIgnoreし続け、アルファベットのみの文でのみスペルチェックしていく、というやり方で我慢するしかないようです。EasyTeXなど他のソフトから起動するという手もあります。
-
-また、メニューを英語にしておかないと、ダイアログにメニューが表示されないことにも注意してください。
-
 ### Aspell の使い方（EasyTeX編） {#awset466}
 
-\[オプション\]→\[TeX環境設定\]より、スペルチェッカに「C:\Program Files\aspell\bin\aspell.exe」を、スペルチェッカー起動オプションに「--lang=en -t -c」を指定しておきます。\[Iniファイルに保存\]ボタンをクリックし、\[OK\]をクリックします。
+\[ｵﾌﾟｼｮﾝ(O)\]→\[TeX環境設定(T)\] の Spell タブをクリックします。<br>
+スペルチェッカーに 32bit Windows の場合は「C:\Program Files\aspell\bin\aspell.exe」を 64bit Windows の場合は「C:\Program Files (x86)\aspell\bin\aspell.exe」を指定します。<br>
+起動オプションに「--lang=en -t -c」を指定します。<br>
+\[Iniファイルに保存\]ボタンをクリックし、\[OK\]をクリックします。
 
 ツールバーよりスペルチェックボタンを押せば、Aspellが起動します。使い方はAspellの使い方を参照して下さい。
 
-### Aspell の使い方（Emacs, Meadow編） {#aemcsfoi}
+### Aspell の使い方（WinShell編） {#awsus466}
 
-設定ファイルに
+WinShell は以前は Aspell を使用していましたが，最新版では Hunspell を使用しています。 <!--  --> <!-- WinShellなら設定なしで（PATHの設定も不要）、ツールバーのスペルチェッカボタンを押すだけでスペルチェックしてくれます。専用のダイアログもあり、使いやすいです。 --> <!--  --> <!-- ただし、日本語アルファベット交じりの文だと、日本語とアルファベットの混じり具合にもよりますが、あまり適切に働かないこともあります。日本語アルファベット混じり文をIgnoreし続け、アルファベットのみの文でのみスペルチェックしていく、というやり方で我慢するしかないようです。EasyTeXなど他のソフトから起動するという手もあります。 --> <!--  --> <!-- また、メニューを英語にしておかないと、ダイアログにメニューが表示されないことにも注意してください。 --> <!--  -->
+
+### Aspell の使い方（Notepad++編） {#ydccb206}
+
+Notepad++ には Spell Checker プラグインが収録されています。<br>
+\[プラグイン\]-\[Spell-Checker\]-\[How to use...\] で使い方を参照してください。<br>
+
+### Aspell の使い方（Emacs編） {#aemcsfoi}
+
+Emacs の exec-path に Aspell の PATH を追加します。<br>
+32bit Windows の場合は
+
+```
+(add-to-list 'exec-path "C:/Program Files/Aspell/bin")
+```
+
+64bit Windows の場合は
+
+```
+(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin")
+```
+
+を &#x7e;/.emacs.d/init.el に追加します。<br>
+基本的には &#x7e;/.emacs.d/init.el に
 
 ```
 (setq-default ispell-program-name "aspell") 
