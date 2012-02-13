@@ -44,9 +44,11 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 ### OS X {#q0e0ab59}
 
-#### Java for OS X Lion (OS X 10.7) {#y4154449}
+#### Java for OS X {#y4154449}
 
-- [Java for OS X Lion](http://support.apple.com/kb/DL1421?viewlocale=ja_JP)
+- [Java for Mac OS X 10.7](http://support.apple.com/kb/DL1421?viewlocale=ja_JP)
+- [Java for Mac OS X 10.6](http://support.apple.com/kb/DL1360?viewlocale=ja_JP)
+- [Java (Mac OS X v10.5)](http://support.apple.com/kb/DL1359?viewlocale=ja_JP)
 
 #### OpenJDK {#n03d5e54}
 
