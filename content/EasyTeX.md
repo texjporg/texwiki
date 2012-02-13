@@ -549,12 +549,12 @@ PDF ファイルが存在すれば，EasyTeX の画面をダブルクリック�
 
 ### inverse search {#a57927f9}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3242\EasyTeX.exe である場合
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex\EasyTeX.exe である場合
 
 SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
 
 ```
-C:\easytex3242\EasyTeX.exe /j%l "%f"
+C:\easytex\EasyTeX.exe /j%l "%f"
 ```
 
 と書き込んで \[OK\] をクリックしてください．
@@ -589,12 +589,12 @@ LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟ
 
 ### inverse search {#o80a79a1}
 
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex3242\EasyTeX.exe である場合
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex\EasyTeX.exe である場合
 
 [dviout for Windows](/dviout/) の \[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
 
 ```
-`easytex easytex +%d %s``C:\easytex3242\EasyTeX.exe
+`easytex easytex +%d %s``C:\easytex\EasyTeX.exe
 ```
 
 と書き込んで \[Save\] → \[OK\] してください．
@@ -604,7 +604,7 @@ dviout の画面をダブルクリックすると，EasyTeX が前面に出て�
 Version 3.240 以降は以下の形式でも OK です．
 
 ```
-C:\easytex3242\EasyTeX.exe^s /j%d "%s"
+C:\easytex\EasyTeX.exe^s /j%d "%s"
 ```
 
 > 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
