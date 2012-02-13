@@ -608,7 +608,7 @@ W32TeX を使用していて間違って mktexlsr コマンドを打ち込んで
 
 ## Ghostscript のインストール {#zd901fa9}
 
-Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新版の Ghostscript に更新することをおすすめします．
+<strong>Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新版に更新してください．</strong>
 
 [Ghostscript](/Ghostscript/) は [PostScript](/PostScript/) のインタープリタ（ソフトウェア RIP）です。EPS
 形式の図を使う際や，Type 1 形式のフォントを
