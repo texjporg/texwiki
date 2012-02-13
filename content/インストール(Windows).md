@@ -623,13 +623,6 @@ Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新
 
 PATH の値は Destination Folder (インストール先のフォルダー) によって変わるので，インストール先のフォルダーに合わせて値を変えてください．
 
-- Destination Folder (インストール先のフォルダー) を C:\gs\gs9.05 にした場合
-
-> | 変数名 | 変数値 |
-> |---|---|
-> | PATH | C:\gs\gs9.05\bin;C:\gs\gs9.05\lib |
->
-
 - Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.05 にした場合
 
 > | 変数名 | 変数値 |
@@ -642,6 +635,13 @@ PATH の値は Destination Folder (インストール先のフォルダー) に�
 > | 変数名 | 変数値 |
 > |---|---|
 > | PATH | C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib |
+>
+
+- Destination Folder (インストール先のフォルダー) を C:\gs\gs9.05 にした場合
+
+> | 変数名 | 変数値 |
+> |---|---|
+> | PATH | C:\gs\gs9.05\bin;C:\gs\gs9.05\lib |
 >
 
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
