@@ -108,7 +108,7 @@ pukiwiki: "インストール(Windows)"
 TeX installers for Windows - TeX Wiki
 のページも参考になるでしょう。
 
-コマンド プロンプトでの作業が苦手な方は [TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE などの [TeX 専用エディタ](</TeX用エディタ/>) と併用すれば Windows 風の操作が可能です。
+コマンド プロンプトでの作業が苦手な方は [TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，[TeXnicCenter](/TeXnicCenter/)，EasyTeX，[WinShell](/WinShell/)，Masamichi，TeXE などの [TeX 専用エディタ](</TeX用エディタ/>) と併用すれば Windows 風の操作が可能です。
 
 【注意】「TeX インストーラ 3」は確かに手軽なインストーラですが，<strong>「これでしかインストールできない」ようであれば，TeX に手を出す前に「昔はパソコン入門でやっていたようなこと」（ユーザ環境のカスタマイズ，コマンドライン上での作業など）を学んでおいた方が良いでしょう</strong>。
 
@@ -533,7 +533,7 @@ C:\work>platex -jobname=予定 予定.tex
 
 として -jobname= で指定してコンパイルをすれば OK です．
 
-こういったコマンドの打ち込み操作が苦手な方に対して，[TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，EasyTeX，[WinShell](/WinShell/)，[TeXnicCenter](/TeXnicCenter/)，Masamichi，TeXE
+こういったコマンドの打ち込み操作が苦手な方に対して，[TeXworks](/TeXworks/)，[Texmaker](/Texmaker/)，[LyX](/LyX/)，[TeXnicCenter](/TeXnicCenter/)，EasyTeX，[WinShell](/WinShell/)，Masamichi，TeXE
 などの [TeX 専用エディタ](</TeX用エディタ/>)が
 WWW 上に無償で公開されています。
 
@@ -768,7 +768,7 @@ jEdit#マクロ<br>
 
 #### [Vim](/Vim/) + プラグイン {#s7ce6347}
 
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
+[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
 
 ### フリーウェア (無料) {#k0b8f900}
 
