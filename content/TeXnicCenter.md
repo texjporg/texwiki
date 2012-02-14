@@ -28,8 +28,6 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 - [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
 - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
-[![TeXnicCenter 2.0 Alpha バージョンの画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
-
 ### ChangeLog {#y2c9ad23}
 
 - [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
@@ -41,6 +39,10 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
 TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
 バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．<br>
+
+### スクリーンショット {#defb0bff}
+
+[![TeXnicCenter 2.0 Alpha バージョンの画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
 
 ### 特徴 {#c8ac578a}
 
@@ -226,7 +228,7 @@ Encoding は
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 
 <br>
 
@@ -347,18 +349,10 @@ Encoding は
 英語版のコンパイラが設定されるので日本語版のコンパイラに変更します．<br>
 Encoding が UTF-8 の場合を記述します．<br>
 
-### <em>注意</em> {#gc4456f9}
-
-```
-
-```
-
-- <em>2009/7/20 に W32TeXの "jbibtex.exe" は "pbibtex.exe" に変更されました． ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
-- <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
-
 Profiles
 
 LaTeX => DVI<br>
+■ e-pTeX, pBibTeX の場合
 
 ***
 
@@ -393,9 +387,45 @@ Command line arguments to pass to<br>
 
 ***
 
+■ e-upTeX, upBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+
+(La)TeX-Compiler<br>
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
+Path to the (La)TeX<br>
+<ins>C:\w32tex\bin\uplatex.exe</ins><br>
+
+Command line arguments to pass to the compiler:<br>
+<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%Wm"</ins><br>
+
+BibTeX<br>
+☐ Do not use BibTeX in this profile<br>
+Path to BibTeX<br>
+<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-kanji=utf8 "%bm"</ins><br>
+
+MakeIndex<br>
+☐ Do not use MakeIndex in this profile<br>
+Path to MakeIndex<br>
+<ins>C:\w32tex\bin\mendex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-U "%bm"</ins><br>
+
+***
+
 Profiles
 
 LaTeX => PS<br>
+■ e-pTeX, pBibTeX の場合
 
 ***
 
@@ -430,10 +460,46 @@ Command line arguments to pass to<br>
 
 ***
 
+■ e-upTeX, upBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+
+(La)TeX-Compiler<br>
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
+Path to the (La)TeX<br>
+<ins>C:\w32tex\bin\uplatex.exe</ins><br>
+
+Command line arguments to pass to the compiler:<br>
+<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%Wm"</ins><br>
+
+BibTeX<br>
+☐ Do not use BibTeX in this profile<br>
+Path to BibTeX<br>
+<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-kanji=utf8 "%bm"</ins><br>
+
+MakeIndex<br>
+☐ Do not use MakeIndex in this profile<br>
+Path to MakeIndex<br>
+<ins>C:\w32tex\bin\mendex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-U "%bm"</ins><br>
+
+***
+
 Profiles
 
 LaTeX => DVI => PDF<br>
 LaTeX => PS => PDF<br>
+■ e-pTeX, pBibTeX の場合
 
 ***
 
@@ -454,6 +520,41 @@ BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-kanji=utf8 "%bm"</ins><br>
+
+MakeIndex<br>
+☐ Do not use MakeIndex in this profile<br>
+Path to MakeIndex<br>
+<ins>C:\w32tex\bin\mendex.exe</ins><br>
+
+Command line arguments to pass to<br>
+<ins>-U "%bm"</ins><br>
+
+***
+
+■ e-upTeX, upBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+
+(La)TeX-Compiler<br>
+☑ Run (La)TeX in this profile<br>
+☐ Stop Compilation, if LaTeX-Error occures<br>
+Path to the (La)TeX<br>
+<ins>C:\w32tex\bin\uplatex.exe</ins><br>
+
+Command line arguments to pass to the compiler:<br>
+<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+
+BibTeX<br>
+☐ Do not use BibTeX in this profile<br>
+Path to BibTeX<br>
+<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>-kanji=utf8 "%bm"</ins><br>
