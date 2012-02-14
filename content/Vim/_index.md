@@ -116,11 +116,12 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 ## Vim で LaTeX {#i2be46c6}
 
 - [Vim-LaTeX](/Vim-LaTeX/)
-- Automatic LaTeX Plugin (ATP)
+- Automatic LaTeX Plugin for Vim (ATP)
 - neocomplcache
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
+    - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
     - [vim-scripts/LaTeX-Box - GitHub](https://github.com/vim-scripts/LaTeX-Box)
-- [auctex.vim](http://www.vim.org/scripts/script.php?script_id=162)
+- [auctex.vim](http://www.math.rochester.edu/people/faculty/cmlr/Latex/)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
 - [tex.vim : Indent file for TeX](http://www.vim.org/scripts/script.php?script_id=218)
     - [vim-scripts/tex.vim--Tanzler - GitHub](https://github.com/vim-scripts/tex.vim--Tanzler)
