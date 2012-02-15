@@ -617,7 +617,7 @@ W32TeX を使用していて間違って mktexlsr コマンドを打ち込んで
 もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
 必ず削除しておきます（方法は上で説明した TeX の場合と同じです）。
 
-フォントを埋め込みたい場合は Use Windows TrueType fonts for Chinese, Japanese and Korean のチェックを on にしてインストールします．
+フォントを埋め込みたい場合はインストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] のチェックを on にして \[Finish\] をクリックします．
 
 環境変数 PATH に Ghostscript の PATH を追加します．
 
