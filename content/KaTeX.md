@@ -210,12 +210,16 @@ xyzzy 版と言った方がわかりやすいかもしれません。
 ;; (setq elisp::KaTeX-kanji-code nil) に設定
 (setq elisp::KaTeX-kanji-code nil)
 ;; タイプセットを e-pLaTeX で
-(setq elisp::tex-command "platex -guess-input-enc -synctex=1 -src-specials")
+(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;; タイプセットを e-upLaTeX で
+;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
 ;; 2009/07/20 に W32TeX の jbibtex.exe は pbibtex.exe に変更されました
 ;; pbibtex を使う
-(setq elisp::bibtex-command "pbibtex")
+(setq elisp::bibtex-command "pbibtex -kanji=utf8")
+;; upbibtex を使う
+;(setq elisp::bibtex-command "upbibtex -kanji=utf8")
 ;; mendex を使う
-(setq elisp::makeindex-command "mendex")
+(setq elisp::makeindex-command "mendex -U")
 ;; Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 (setq elisp::dviprint-command-format "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")
 ;; dviout に PATH を通しておらず，C:\w32tex\dviout\dviout をプレビューに使いたい場合
