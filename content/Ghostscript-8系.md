@@ -171,6 +171,8 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 フォーマットの TrueType outline （2次 B-スプライン曲線アウトライン）フォント
 ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs9.??\Resource\Init\cidfmap
 記述時に gs\fonts\ までのパスを省略できます。
+gs905w32full-gpl.exe の場合にはコピーまたは移動する必要はなくて，
+gs\gs9.05\lib\cidfmap 記述時に，C:/WINDOWS/Fonts/ を省略できます。
 
 ### gs\gs9.??\Resource\Init\cidfmap の記述方法 {#e2200e36}
 
