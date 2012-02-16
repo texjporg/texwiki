@@ -14,9 +14,9 @@ pukiwiki: "Ghostscript-8系"
 
 > [Ghostscript](/Ghostscript/) > Ghostscript 8 or later
 
-## Ghostscript 8-系 {#f2728a95}
+## Ghostscript-8系 {#f2728a95}
 
-Ghostscript 8-系の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
+Ghostscript-8系の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
 Ghostscript の仕様が大幅に変更され、このページの情報が適用できない可能性があることを認識しておいてください。<br>
 メジャーバージョンごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
 
@@ -68,7 +68,7 @@ Ghostscript 8.71 でエラーが発生するようです．9.01 では発生し�
         <!-- インストール先を決める項目である ‘Install to directory’ の欄の -->
         <!-- 内容を “C:\gs” から “C:\usr\local\share\gs” に変えます。 -->
 
-- インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れます。
+- インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
 #### インストールに失敗する場合 {#f1997f9f}
 
@@ -87,7 +87,7 @@ Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
 ASCII 文字だけで設定します。
 
-### 環境変数 Path の設定 {#g074d14f}
+### 環境変数 PATH の設定 {#g074d14f}
 
 Ghostscript 9.05 を C:\Program Files\gs\gs9.05 にインストールしたのなら
 
@@ -289,6 +289,11 @@ composefont pop
 
 #### <a id="cidfmap-windows">For Microsoft Windows</a> {#xba7681e}
 
+```
+gs905w32full-gpl.exe の場合は，場所が gs\gs9.05\lib\cidfmap 
+に変更されていることに注意
+```
+
 ***
 
 ```
@@ -489,7 +494,7 @@ composefont pop
 Win32API ドライバを使って表示します。ただしオプション “-dNOWINKANJI” が
 同時に指定されている場合には，オプション “-dWINKANJI” は
 無効化されます。Win32API ドライバで使うフォントの割り当ては
-gs\gs?.??\lib\kconfig.ps の記述内容によって設定されます。
+gs\gs?.??\kanji\kconfig.ps の記述内容によって設定されます。
 
 #### gs\gs?.??\kanji\kconfig.ps の記述例 {#d6cfe346}
 
