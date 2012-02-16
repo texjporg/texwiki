@@ -25,7 +25,6 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
     - [TeXnicCenter News](http://www.texniccenter.org/news)
-- [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
 - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
 ### ChangeLog {#y2c9ad23}
@@ -51,6 +50,10 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 - 折りたたみが可能です．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
+### ドキュメント {#s783d445}
+
+- [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
+
 ## ダウンロード {#rf294e94}
 
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
@@ -75,7 +78,7 @@ Encoding は
 
 メニューの \[Build\] → \[Define Output Profiles...\] で，プロファイルを作成します．
 
-\[Wizard...\] を押します．
+\[Wizard...\] をクリックします．
 
 ***
 
@@ -359,7 +362,7 @@ LaTeX => DVI<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -394,7 +397,7 @@ Command line arguments to pass to<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -432,7 +435,7 @@ LaTeX => PS<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -467,7 +470,7 @@ Command line arguments to pass to<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -506,7 +509,7 @@ LaTeX => PS => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -541,7 +544,7 @@ Command line arguments to pass to<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -578,7 +581,7 @@ LaTeX => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -615,7 +618,7 @@ LuaLaTeX => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -652,7 +655,7 @@ XeLaTeX => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
+<strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
 (La)TeX-Compiler<br>
 ☑ Run (La)TeX in this profile<br>
@@ -691,7 +694,7 @@ LaTeX => DVI => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
 
@@ -732,7 +735,7 @@ LaTeX => PS<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
 
@@ -773,7 +776,7 @@ LaTeX => PS => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
 
@@ -808,7 +811,7 @@ Output<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;">Postprocessors to run after the (La)TeX-compiler</span><br>
 
@@ -854,7 +857,7 @@ LaTeX => DVI<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -867,14 +870,14 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
-Server: <ins>dviout</ins>　　　Topic: <ins>dviout</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
-Server: <ins>dviout</ins>　　　Topic: <ins>dviout</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
 
 <br>
 
@@ -895,7 +898,7 @@ LaTeX => PS<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -934,7 +937,7 @@ Close document before running (La)TeX<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -947,14 +950,14 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[Command("%bm.ps")\]\[ShowWindow(1)\]</ins><br>
-Server: <ins>GSview</ins>　　　Topic: <ins>GSview</ins><br>
+Server: <ins>GSview</ins>　　　　　　　　　Topic: <ins>GSview</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[Command("%bm.ps")\]\[ShowWindow(1)\]</ins><br>
-Server: <ins>GSview</ins>　　　Topic: <ins>GSview</ins><br>
+Server: <ins>GSview</ins>　　　　　　　　　Topic: <ins>GSview</ins><br>
 
 <br>
 
@@ -981,7 +984,7 @@ XeLaTeX => PDF<br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -1022,7 +1025,7 @@ inverse search の時に他のエディタが起動してしまう場合は suma
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -1035,14 +1038,14 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[Open("%bm.pdf",0,1,1)\]</ins><br>
-Server: <ins>SUMATRA</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[ForwardSearch("%bm.pdf","%Wc",%l,0,0,1)\]</ins><br>
-Server: <ins>SUMATRA</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
@@ -1076,7 +1079,7 @@ Adobe Reader X をあらかじめ起動しておけば，このエラーメッ�
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -1107,7 +1110,7 @@ Command <ins>"%bm.pdf"</ins><br>
 Close document before running (La)TeX<br>
 ◯ Command line argument　<span style="color:#3333CC;">◎</span> DDE command　　◯ Do not close<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[DocClose("%bm.pdf")\]\[AppExit()\]</ins><br>
-Server: <ins>acroviewR10</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 
 ***
 
@@ -1129,7 +1132,7 @@ Server: <ins>acroviewR10</ins>　　Topic: <ins>control</ins><br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
 Executable path<br>
 
@@ -1142,21 +1145,21 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
-Server: <ins>acroview</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>acroview</ins>　　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[DocOpen("%bm.pdf")\]\[DocOpen("%bm.pdf")\]</ins><br>
-Server: <ins>acroview</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>acroview</ins>　　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
 ◯ Command line argument　<span style="color:#3333CC;">◎</span> DDE command　　◯ Do not close<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[DocClose("%bm.pdf")\]</ins><br>
-Server: <ins>acroview</ins>　　Topic: <ins>control</ins><br>
+Server: <ins>acroview</ins>　　　　　　　　Topic: <ins>control</ins><br>
 
 ***
 
