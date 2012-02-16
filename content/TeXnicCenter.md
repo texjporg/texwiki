@@ -57,6 +57,7 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 ## ダウンロード {#rf294e94}
 
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
+    - [TeXnicCenter 2.0 Alpha 4](http://sourceforge.net/projects/texniccenter/files/TeXnicCenter%20Alpha/2Alpha4/)
 
 ## Encoding {#u85685c5}
 
@@ -64,7 +65,7 @@ Encoding は
 
 - ANSI
     - 日本語版 Windows では Shift_JIS として保存されます．
-    - TeXnicCenter 2.0 Alpha 4 では TeXnicCenter で開いたときに Shift_JIS のファイルは ANSI ではなく UTF-8 で開かれてしまうので，日本語を使用する場合は UTF-8 で保存してください．→ [ASCII documents default to UTF-8 character encoding instead of ANSI](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594)
+    - TeXnicCenter 2.0 Alpha 4 では TeXnicCenter で開いたときに Shift_JIS のファイルは ANSI ではなく UTF-8 で開かれてしまうので，日本語を使用する場合は \[File\]-\[Save As...\] の Encoding で UTF-8 を指定して保存してください．→ [ASCII documents default to UTF-8 character encoding instead of ANSI](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594)
 - UTF-8
 - UTF-8 with BOM
 - UTF-16
@@ -74,9 +75,12 @@ Encoding は
 
 に対応しています．
 
+Encoding を変更する場合は \[File\]-\[Save As...\] の Encoding で 変更先の Encoding を指定して保存してください．
+
 ## プロファイルの作成 {#n1a2864d}
 
-メニューの \[Build\] → \[Define Output Profiles...\] で，プロファイルを作成します．
+初回起動時に Configuration Wizard が表示されます．<br>
+初回起動時に設定をキャンセルした場合は，メニューの \[Build\] → \[Define Output Profiles...\] で，プロファイルを作成します．<br>
 
 \[Wizard...\] をクリックします．
 
@@ -851,7 +855,7 @@ Profiles
 
 LaTeX => DVI<br>
 
-#### dviout {#hc739c1c}
+#### [dviout](/dviout/) {#hc739c1c}
 
 ***
 
@@ -892,7 +896,7 @@ Profiles
 
 LaTeX => PS<br>
 
-#### SumatraPDF {#oe6c2a37}
+#### [SumatraPDF](/SumatraPDF/) {#oe6c2a37}
 
 ***
 
@@ -1017,7 +1021,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### SumatraPDF {#pdc24230}
+#### [SumatraPDF](/SumatraPDF/) {#pdc24230}
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
@@ -1054,7 +1058,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### Adobe Reader X {#c94760c4}
+#### [Adobe Reader](</Adobe Reader/>) X {#c94760c4}
 
 Adobe Reader X で \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] にチェックがついている場合，
 Server を acroviewR10 に変更しただけでは Adobe Reader X の起動時に下記のエラーメッセージが出力され，PDF ファイルが表示されません．
@@ -1122,7 +1126,7 @@ Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 
 です．
 
-#### Adobe Reader 9 {#dc50e2b3}
+#### [Adobe Reader](</Adobe Reader/>) 9 {#dc50e2b3}
 
 [Alphan Ulusoy&#039;s Blog &rsaquo; Using Adobe Acrobat Reader with TeXnicCenter](http://blog.alphanulusoy.com/?p=10) を参照．
 
