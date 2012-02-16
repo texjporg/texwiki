@@ -59,8 +59,9 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 Encoding は
 
-<!-- -ANSI (日本語版 Windows では Shift_JIS) -->
 - ANSI
+    - 日本語版 Windows では Shift_JIS として保存されます．
+    - TeXnicCenter 2.0 Alpha 4 では TeXnicCenter で開いたときに Shift_JIS のファイルは ANSI ではなく UTF-8 で開かれてしまうので，日本語を使用する場合は UTF-8 で保存してください．→ [ASCII documents default to UTF-8 character encoding instead of ANSI](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594)
 - UTF-8
 - UTF-8 with BOM
 - UTF-16
@@ -255,7 +256,7 @@ Encoding は
 
 ***
 
-[TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)<br>
+<!-- [[TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．:http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc]]&br; -->
 
 <span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
@@ -367,7 +368,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -375,7 +376,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -383,7 +384,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -402,7 +403,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -410,7 +411,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -418,7 +419,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -440,7 +441,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -448,7 +449,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -456,7 +457,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -475,7 +476,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%Wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -483,7 +484,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -491,7 +492,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -514,7 +515,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -522,7 +523,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\pbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -530,7 +531,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -549,7 +550,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -557,7 +558,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%bm"</ins><br>
+<ins>-kanji=utf8 "%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -565,7 +566,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\mendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -586,7 +587,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -594,7 +595,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -602,7 +603,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -623,7 +624,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -631,7 +632,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -639,7 +640,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -660,7 +661,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\xelatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-synctex=1 -interaction=nonstopmode "%pm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -668,7 +669,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -676,7 +677,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>"%bm"</ins><br>
+<ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
