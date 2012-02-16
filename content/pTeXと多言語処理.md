@@ -31,6 +31,7 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. [CJK パッケージ](/LaTeX-CJK/)
 1. [Unicode パッケージ](https://mirror.ctan.org/macros/latex/contrib/unicode/)
 1. 前二者の併用によるアプローチ
+1. upTeX
 1. Aleph/[Omega](http://omega.enstb.org/)
 1. [XeTeX](/XeTeX/)
 1. [LuaTeX](/LuaTeX/)
@@ -594,6 +595,8 @@ dvipdfmx で変換し，PDF の形で出力結果を見ることになります�
 参考に，$TEXMFLOCAL/fonts/map/dvipdfm/base/cid-x.map に
 次のように追記しておきます。
 
+#### $TEXMFLOCAL/fonts/map/dvipdfm/base/cid-x.map への追記 {#u719ef74}
+
 ***
 
 ```
@@ -905,6 +908,126 @@ DVI → PS → PDF の流れで作りたい方は，[Ghostscript](/Ghostscript/)
 次を追加します
 （Ghostscript は 8.51 あたりでも大丈夫かもしれませんが，確認していません）。
 
+#### $TEXMF/fonts/map/dvips/base/psfonts.map への追記 (その1) {#r889375b}
+
+***
+
+```
+rml                  Ryumin-Light-H
+rmlv                 Ryumin-Light-V
+
+gbm              GothicBBB-Medium-H
+gbmv             GothicBBB-Medium-V
+
+%%% OTF package
+hminr-h              Ryumin-Light-H
+hminr-v              Ryumin-Light-V
+otf-ujmr-h           Ryumin-Light-UniJIS-UTF16-H
+otf-ujmr-v           Ryumin-Light-UniJIS-UTF16-V
+otf-cjmr-h           Ryumin-Light-Identity-H
+otf-cjmr-v           Ryumin-Light-Identity-V
+
+hgothr-h         GothicBBB-Medium-H
+hgothr-v         GothicBBB-Medium-V
+otf-ujgr-h       GothicBBB-Medium-UniJIS-UTF16-H
+otf-ujgr-v       GothicBBB-Medium-UniJIS-UTF16-V
+otf-cjgr-h       GothicBBB-Medium-Identity-H
+otf-cjgr-v       GothicBBB-Medium-Identity-V
+
+hminb-h          FutoMinA101-Bold-H
+hminb-v          FutoMinA101-Bold-V
+otf-ujmb-h       FutoMinA101-Bold-UniJIS-UTF16-H
+otf-ujmb-v       FutoMinA101-Bold-UniJIS-UTF16-V
+otf-cjmb-h       FutoMinA101-Bold-Identity-H
+otf-cjmb-v       FutoMinA101-Bold-Identity-V
+
+hgothb-h          FutoGoB101-Bold-H
+hgothb-v          FutoGoB101-Bold-V
+otf-ujgb-h        FutoGoB101-Bold-UniJIS-UTF16-H
+otf-ujgb-v        FutoGoB101-Bold-UniJIS-UTF16-V
+otf-cjgb-h        FutoGoB101-Bold-Identity-H
+otf-cjgb-v        FutoGoB101-Bold-Identity-V
+
+hmgothr-h            Jun101-Light-H
+hmgothr-v            Jun101-Light-V
+otf-ujmgr-h          Jun101-Light-UniJIS-UTF16-H
+otf-ujmgr-v          Jun101-Light-UniJIS-UTF16-V
+otf-cjmgr-h          Jun101-Light-Identity-H
+otf-cjmgr-v          Jun101-Light-Identity-V
+
+hgotheb-h          MidashiGo-MB31-H
+hgotheb-v          MidashiGo-MB31-V
+
+hminl-h            HiraMinStdN-W2-H
+hminl-v            HiraMinStdN-W2-V
+otf-ujml-h         HiraMinStdN-W2-UniJIS-UTF16-H
+otf-ujml-v         HiraMinStdN-W2-UniJIS-UTF16-V
+otf-cjml-h         HiraMinStdN-W2-Identity-H
+otf-cjml-v         HiraMinStdN-W2-Identity-V
+
+otf-ucmr-h           STSong-Light-UniGB-UTF16-H
+otf-ucmr-v           STSong-Light-UniGB-UTF16-V
+otf-ccmr-h           STSong-Light-Identity-H
+otf-ccmr-v           STSong-Light-Identity-V
+
+otf-ucgr-h        STHeiti-Regular-UniGB-UTF16-H
+otf-ucgr-v        STHeiti-Regular-UniGB-UTF16-V
+otf-ccgr-h        STHeiti-Regular-Identity-H
+otf-ccgr-v        STHeiti-Regular-Identity-V
+
+otf-utmr-h            MSung-Light-UniCNS-UTF16-H
+otf-utmr-v            MSung-Light-UniCNS-UTF16-V
+otf-ctmr-h            MSung-Light-Identity-H
+otf-ctmr-v            MSung-Light-Identity-V
+
+otf-utgr-h            MHei-Medium-UniCNS-UTF16-H
+otf-utgr-v            MHei-Medium-UniCNS-UTF16-V
+otf-ctgr-h            MHei-Medium-Identity-H
+otf-ctgr-v            MHei-Medium-Identity-V
+
+otf-ukmr-h     HYSMyeongJo-Medium-UniKS-UTF16-H
+otf-ukmr-v     HYSMyeongJo-Medium-UniKS-UTF16-V
+otf-ckmr-h     HYSMyeongJo-Medium-Identity-H
+otf-ckmr-v     HYSMyeongJo-Medium-Identity-V
+
+otf-ukgr-h        HYGoThic-Medium-UniKS-UTF16-H
+otf-ukgr-v        HYGoThic-Medium-UniKS-UTF16-V
+otf-ckgr-h        HYGoThic-Medium-Identity-H
+otf-ckgr-v        HYGoThic-Medium-Identity-V
+
+hiramin-w3-h       HiraMinProN-W3-Identity-H
+hiramin-w3-v       HiraMinProN-W3-Identity-V
+hiramin-w6-h       HiraMinProN-W6-Identity-H
+hiramin-w6-v       HiraMinProN-W6-Identity-V
+hirakaku-w3-h     HiraKakuProN-W3-Identity-H
+hirakaku-w3-v     HiraKakuProN-W3-Identity-V
+hirakaku-w6-h     HiraKakuProN-W6-Identity-H
+hirakaku-w6-v     HiraKakuProN-W6-Identity-V
+hiramaru-w4-h     HiraMaruProN-W4-Identity-H
+hiramaru-w4-v     HiraMaruProN-W4-Identity-V
+
+%%% UTF package
+hmr                  Ryumin-Light-H
+hmrv                 Ryumin-Light-V
+unijmin-h            Ryumin-Light-UniJIS-UTF16-H
+unijmin-v            Ryumin-Light-UniJIS-UTF16-V
+cidmin-h             Ryumin-Light-Identity-H
+cidmin-v             Ryumin-Light-Identity-V
+
+hkb              GothicBBB-Medium-H
+hkbv             GothicBBB-Medium-V
+unijgoth-h       GothicBBB-Medium-UniJIS-UTF16-H
+unijgoth-v       GothicBBB-Medium-UniJIS-UTF16-V
+cidgoth-h        GothicBBB-Medium-Identity-H
+cidgoth-v        GothicBBB-Medium-Identity-V
+```
+
+***
+
+または
+
+#### $TEXMF/fonts/map/dvips/base/psfonts.map への追記 (その2) {#tfd8aa35}
+
 ***
 
 ```
@@ -1016,7 +1139,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-さらに，gs\gs8.??\lib\cidfmap の末尾に次を追記します。
+さらに，gs\gs9.??\lib\cidfmap の末尾に次を追記します。
+
+#### gs\gs9.??\lib\cidfmap への追記 {#meed555f}
 
 ***
 
@@ -1222,6 +1347,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 %%% TrueType outline fonts in StarSuite 8
 %%% See http://jp.sun.com/products/software/starsuite/
 %%%     http://pack.google.com/intl/ja/pack_installer.html?gl=jp&ci_apps=None&ci_so=on
+%%%     http://pack.google.com/intl/ja/pack_installer.html?hl=ja&gl=jp&ci_apps=None&ci_so=on
 /HG-MinchoL-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-MinchoL-Sun.ttc)  /SubfontID 0 >> ;
 /HG-GothicB-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-GothicB-Sun.ttc)  /SubfontID 0 >> ;
 
@@ -1241,7 +1367,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-なお，gs\gs8.??\Resource\CMap\ に CMap をコピーしていない方は，
+なお，gs\gs9.??\Resource\CMap\ に CMap をコピーしていない方は，
 そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
@@ -1415,7 +1541,7 @@ fmtutil --byfmt platex
 
 なお，pTeX 本体の Unicode (UTF-8) 対応に
 ついては[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)による
-試みがあります。すでに [ptetex3](/Make/#saac55c2) と
+試みがあります。すでに [TeX Live](</TeX Live/>) と
 [W32TeX](/W32TeX/) で
 利用可能になっています（現在は和文とラテン文字のみの対応）。また
 [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
@@ -1428,7 +1554,7 @@ fmtutil --byfmt platex
 このスクリプトを使うためには，もちろん外国語を直接入力するための入力ソフト
 (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
-input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/wrusindex.html)，[タイ語入力](http://www.fan.hi-ho.ne.jp/rkawa/pcthai/winxp/winxp.html) に関するサイトを挙げておきます。
+input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/abeaupricker/) に関するサイトを挙げておきます。
 
 一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
 元々附属しているメモ帳 (Notepad) の他に
@@ -1566,8 +1692,9 @@ utf82tex <utftest8.tex >utftest8-utex.tex
 
 を実行します。すると，utftest8.texを変換した結果をutf8out.texに書き出します。
 
-書き出したutftest8-utf.texはUTF8のままなので，エディタやiconvなどで，Shift_JISなどpTeXの扱える文字コードに直しておきます。
-（土村氏によるpTeXの [UTF-8 対応［非公式］パッチ](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%282%29) を用い，platex-utf8  または platex --kanji=utf8 ［[qa:47792](https://okumuralab.org/~okumura/texfaq/qa/47792.html) 参照］でコンパイルする場合にはこのステップは不要です。 このパッチは最新のptetex3, W32TeXには導入されています。）
+書き出したutftest8-utf.texはUTF8です。
+platex -no-guess-input-enc -kanji=utf8 でコンパイルします。
+（土村氏によるpTeXの [UTF-8 対応［非公式］パッチ](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%282%29) を用いてコンパイルします。(［[qa:47792](https://okumuralab.org/~okumura/texfaq/qa/47792.html) 参照］。) このパッチは最新の TeX Live, W32TeX には導入されています。）
 
 タイ語が入っている場合は-tオプションを，ヴェトナム語やグルジア語などの拡張変換表を用いる場合は-xオプションをつけます。
 
