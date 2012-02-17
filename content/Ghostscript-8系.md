@@ -599,69 +599,70 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 ***
 
 この lib/neverembed.ps への設定を ps2pdf でも有効に
-するためには，gs\gs?.??\lib\ps2pdfxx.bat の記述内容の26行目
+するためには，[gs\gs9.??\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の26行目
 
 ```
-echo -c .setpdfwrite -f %1 >>_.at2
-```
-
-を
-
-```
-REM echo -c .setpdfwrite -f %1 >>_.at2
-```
-
-のようにコメントアウトし，28行目
-
-```
-rem echo -c .setpdfwrite -f neverembed.ps -f %1 >>_.at2
-```
-
-に対して
-
-```
-echo -c .setpdfwrite -f neverembed.ps -f %1 >>_.at2
-```
-
-のようにコメントアウトを解除します。
-（UNIX や UNIX 互換 OS では，ghostscript/?.??/lib/ps2pdfwr の記述内容の40行目
-
-```
-$GS_EXECUTABLE $OPTIONS -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
+echo -c .setpdfwrite -f%1 >>"%TEMP%\_.at"2
 ```
 
 を
 
 ```
-#$GS_EXECUTABLE $OPTIONS -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
+REM echo -c .setpdfwrite -f%1 >>"%TEMP%\_.at"2
 ```
 
-のようにコメントアウトし，44行目
+のようにコメントアウトし
 
 ```
-#$GS_EXECUTABLE $OPTIONS -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f neverembed.ps -f "$infile"
+echo -c .setpdfwrite -f neverembed.ps -f%1 >>"%TEMP%\_.at"2
 ```
 
-に対して
+を追加します。<br>
+（UNIX や UNIX 互換 OS では，[ghostscript/9.??/lib/ps2pdfwr](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfwr;hb=HEAD) の記述内容の45行目
 
 ```
-$GS_EXECUTABLE $OPTIONS -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f neverembed.ps -f "$infile"
+exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
 ```
 
-のようにコメントアウトを解除します。）
+を
+
+```
+#exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
+```
+
+のようにコメントアウトし
+
+```
+exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f neverembed.ps -f "$infile"
+```
+
+を追加します。）
 
 さらに dvipdfmx が PostScript ファイルや EPS ファイルを PDF に変換する場合に
-lib/neverembed.ps への設定を有効にするためには，
-$TEXMF/dvipdfm/config/dvipdfmx.cfg の記述内容の18行目
+lib/neverembed.ps への設定を有効にするためには
+
+[W32TeX](/W32TeX/) の場合は $TEXMF/dvipdfmx/config/dvipdfmx.cfg の記述内容の38行目
 
 ```
-D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f %i -c quit"
+D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f %i -c quit"
 ```
 
 に次のように “-f neverembed.ps ” を挿入します。
 
 ```
-D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f neverembed.ps -f %i -c quit"
+D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f neverembed.ps -f %i -c quit"
+```
+
+[TeX Live](</TeX Live/>) の場合は [dvipdfmx.cfg](http://www.tug.org/svn/texlive/trunk/Master/texmf/dvipdfmx/dvipdfmx.cfg?view=markup) の記述内容の152行目
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に次のように “-f neverembed.ps ” を挿入します。
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' -f neverembed.ps '%i' -c quit"
 ```
 
 ### PDF への欧文用フォントの埋め込み制御 {#y3b70de6}
