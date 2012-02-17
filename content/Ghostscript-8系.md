@@ -167,14 +167,13 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
 
 ### TrueType outline fonts {#h311bbbd}
 
-拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType
-フォーマットの TrueType outline （2次 B-スプライン曲線アウトライン）フォント
-ファイルは gs\fonts\\\ 以下にコピーまたは移動しておくと，gs\gs9.??\Resource\Init\cidfmap
-記述時に gs\fonts\ までのパスを省略できます。
-gs905w32full-gpl.exe の場合にはコピーまたは移動する必要はなくて，
-gs\gs9.05\lib\cidfmap 記述時に，C:/WINDOWS/Fonts/ を省略できます。
+拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，基本的には cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．また，この記述を /Path (msmincho.ttc) のようにパス名を省略して相対パスの形で記述すると，既定の場所に存在するフォント (この場合には msmincho.ttc) が探されます．既定の場所とは，gs\fonts と環境変数 GS_FONTPATH に記述された場所のことです．また，角藤さんがコンパイルした ghostscript (例えば gs905w32full-gpl.exe) の場合には，c:\windows\fonts と c:\winnt\fonts が追加されます．
 
-### gs\gs9.??\Resource\Init\cidfmap の記述方法 {#e2200e36}
+-dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．このようなことに出会った場合には次のことを試してください．
+
+ghostscript 専用のフォント設定をしたいなら，cidfmap で相対パスの形で設定して，gs\fonts にフォントを置きます(あるいはリンクを張っておきます)．面倒なことは考えたくないのならば，c:\windows\fonts にフォントを置いておけばたぶんうまくいきます(うまくいかないのならば，上記に書いたことをよく考えて下さい)．
+
+### gs\gs9.??\Resource\Init\cidfmap の基本的な記述方法 {#e2200e36}
 
 ```
 gs905w32full-gpl.exe の場合は，場所が gs\gs9.05\lib\cidfmap 
