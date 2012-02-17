@@ -47,12 +47,19 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 - TeX のコマンドを色分けできます．
 - TeX のコマンドを補完してくれます．(Ctrl + Space)
-- 折りたたみが可能です．
+- 折りたたみが可能です．→ TeXnicCenter Alpha 4 では折りたたみ機能がうまく動作しないようです．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
 
 ### ドキュメント {#s783d445}
 
 - [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
+
+## 不具合 {#p40a9a4a}
+
+### TeXnicCenter Alpha 4 で折りたたみ機能がうまく動作しない {#w34c78b7}
+
+TeXnicCenter Alpha 4 では折りたたみ機能がうまく動作しないようです．<br>
+TeXnicCenter Alpha 3 では折りたたみ機能が動作していました．<br>
 
 ## ダウンロード {#rf294e94}
 
@@ -1060,8 +1067,8 @@ Close document before running (La)TeX<br>
 
 #### [Adobe Reader](</Adobe Reader/>) X {#c94760c4}
 
-Adobe Reader X で \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] にチェックがついている場合，
-Server を acroviewR10 に変更しただけでは Adobe Reader X の起動時に下記のエラーメッセージが出力され，PDF ファイルが表示されません．
+Adobe Reader X の場合 Server は acroviewR10 に設定します．<br>
+ただし Adobe Reader X で \[編集(E)\]-\[環境設定(N)...\]-\[一般\]-\[起動時に保護モードを有効にする(M)\] にチェックがついている場合，Adobe Reader X の起動時に下記のエラーメッセージが出力され，PDF ファイルが表示されませんでした．<br>
 
 ***
 
@@ -1075,9 +1082,8 @@ Server を acroviewR10 に変更しただけでは Adobe Reader X の起動時�
 
 ***
 
-Adobe Reader X をあらかじめ起動しておけば，このエラーメッセージは表示されなくなり，DDE command が，通常どおり機能します．
-
-下記の設定をすると \[起動時に保護モードを有効にする(M)\] にチェックがついていても Adobe Reader X の起動時の TeXnicCenter のエラーメッセージが表示されなくなり PDF ファイルが表示されるようになりました．
+Adobe Reader X をあらかじめ起動しておけば，このエラーメッセージは表示されなくなり，DDE command が，通常どおり機能します．<br>
+下記の設定に変更すると \[起動時に保護モードを有効にする(M)\] にチェックがついていても Adobe Reader X の起動時の TeXnicCenter のエラーメッセージが表示されなくなり PDF ファイルが表示されるようになりました．<br>
 
 ***
 
@@ -1120,7 +1126,6 @@ Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 
 修正点は
 
-- Server を acroviewR10 に変更する
 - View project's output と Forward search を Command line argument に変更し，Command に PDF ファイル名を指定する
 - Close document before running (La)TeX で DocClose の前に DocOpen して DocClose の後に AppExit() する
 
@@ -1169,11 +1174,21 @@ Server: <ins>acroview</ins>　　　　　　　　Topic: <ins>control</ins><br>
 
 ## 使い方 {#f25094fe}
 
+### プロジェクトの作成 {#td4273eb}
+
 \[File\]-\[New\]-\[Project...\] で新規プロジェクトを作成します．
 
-TeX ファイルを編集します．
+### 補完 {#tcdb30cc}
 
-Output Profile を LaTeX => DVI => PDF に変更します．
+Ctrl + Space で補完ができます．
+
+### プロファイルの変更 {#t5967111}
+
+\[Build\]-\[Select Output Profile...\] またはツールバーからプロファイルを変更できます．
+
+dvipdfm(x) で PDF ファイルを作成する場合は，プロファイルを LaTeX => DVI => PDF に変更します．
+
+### ビルド {#i6bfece2}
 
 \[Build\]-\[Build Output\] をクリックします．
 
@@ -1181,7 +1196,9 @@ Output Profile を LaTeX => DVI => PDF に変更します．
 
 間違った箇所を修正してもう一度ビルドします．
 
-\[Build\]-\[View Output\] で PDF ファイルが表示されます．
+### 表示 {#w010da2b}
+
+\[Build\]-\[View Output\] で対応するプロファイルの出力ファイルが表示されます．
 
 \[Build\]-\[Build and View Output\] でビルドと表示ができます．
 
