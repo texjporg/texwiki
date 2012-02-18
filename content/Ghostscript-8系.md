@@ -156,18 +156,36 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
 
 ### CID-keyed fonts {#i4c98952}
 
+CID-keyed フォントは ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs?.??\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置してください．
+
 CID-keyed フォントファイルはファイル名を拡張子無しの PostScript 名に変えて
 （例えば “HEMIW3.CID” → “HeiseiMin-W3”）
-gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
+gs\gs?.??\Resource\CIDFont\ にコピーしておきます(あるいはリンクを張っておきます)。
 
 OpenType フォーマットの CID-keyed フォントファイル（拡張子が “.otf” の
 OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて
 （例えば “ヒラギノ明朝 ProN W3.otf” → “HiraMinProN-W3”）
-gs\gs?.??\Resource\CIDFont\ にコピーしておきます。
+gs\gs?.??\Resource\CIDFont\ にコピーしておきます(あるいはリンクを張っておきます)。
+
+gs の段階で日本語フォントを上記のように配置したもの(例えば HiraMinProN-W3)に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
+
+```
+/Ryumin-Light    /HiraMinProN-W3 ;
+```
+
+この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．
+
+ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します．フォントファイル名本体だけではなく，CMap-encoding 名(この場合には -H)も含めて考えることに注意してください．また，有名なフォントに対しては既に作成されていることも多いでしょう．
+
+```
+/HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
+```
+
+この場合には，cidfmap には何も記述しません(ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．
 
 ### TrueType outline fonts {#h311bbbd}
 
-拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，基本的には cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．また，この記述を /Path (msmincho.ttc) のようにパス名を省略して相対パスの形で記述すると，既定の場所に存在するフォント (この場合には msmincho.ttc) が探されます．既定の場所とは，gs\fonts と環境変数 GS_FONTPATH に記述された場所のことです．また，角藤さんがコンパイルした ghostscript (例えば gs905w32full-gpl.exe) の場合には，c:\windows\fonts と c:\winnt\fonts が追加されます．
+拡張子が “.ttf”, “.ttc” である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，基本的には cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．また，この記述を /Path (msmincho.ttc) のようにパス名を省略して相対パスの形で記述すると，既定の場所に存在するフォント (この場合には msmincho.ttc) が探されます．既定の場所とは，gs\fonts，環境変数 GS_FONTPATH に記述された場所，および，-sFONTPATH= に指定された場所のことです．また，角藤さんがコンパイルした ghostscript (例えば gs905w32full-gpl.exe) の場合には，c:\windows\fonts と c:\winnt\fonts が追加されます．
 
 -dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．このようなことに出会った場合には次のことを試してください．
 
