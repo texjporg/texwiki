@@ -175,7 +175,7 @@ gs の段階で日本語フォントを上記のように配置したもの(例�
 
 この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．
 
-ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します．フォントファイル名本体だけではなく，CMap-encoding 名(この場合には -H)も含めて考えることに注意してください．また，有名なフォントに対しては既に作成されていることも多いでしょう．
+ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します．フォントファイル名本体だけではなく，CMap-encoding 名(この場合には -H)も含めて考えることに注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
