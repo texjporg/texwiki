@@ -14,11 +14,11 @@ pukiwiki: "Ghostscript-8系"
 
 > [Ghostscript](/Ghostscript/) > Ghostscript 8 or later
 
-## Ghostscript-8系 {#f2728a95}
+## Ghostscript-8以降 {#f2728a95}
 
-Ghostscript-8系の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
-Ghostscript の仕様が大幅に変更され、このページの情報が適用できない可能性があることを認識しておいてください。<br>
-メジャーバージョンごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
+Ghostscript-8以降の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
+Ghostscript の各バージョンによっては (たとえそれがマイナーバージョンの変更であっても) このページの情報が適用できない可能性があることを十分に認識しておいてください。<br>
+バージョンの変更ごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
 
 (バージョンが 9.xx や 9.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
 
@@ -165,23 +165,23 @@ gs\gs?.??\Resource\CIDFont\ にコピーしておきます(あるいはリンク
 OpenType フォーマットの CID-keyed フォントファイル（拡張子が “.otf” の
 OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて
 （例えば “ヒラギノ明朝 ProN W3.otf” → “HiraMinProN-W3”）
-gs\gs?.??\Resource\CIDFont\ にコピーしておきます(あるいはリンクを張っておきます)。
+gs\gs?.??\Resource\CIDFont\ にコピーしておきます (あるいはリンクを張っておきます)。
 
-gs の段階で日本語フォントを上記のように配置したもの(例えば HiraMinProN-W3)に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
+gs の段階で日本語フォントを上記のように配置したもの (例えば HiraMinProN-W3) に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
 
 ```
 /Ryumin-Light    /HiraMinProN-W3 ;
 ```
 
-この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．
+この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．また，この設定をする場合には下記に述べるような Ryumin-Light-H の作成が必要になるかもしれません． 
 
-ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には， gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します． フォントファイル名本体だけではなく，CMapリソース名(この場合には -H)も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
+ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します． フォントファイル名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-この場合には，cidfmap には何も記述しません(ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．なお，この作業は gs の version 等の状況により不要であるかもしれません．
+この場合には，cidfmap には何も記述しません (ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．なお，この作業は gs の version 等の状況により不要であるかもしれません．具体的に言うと，gs9.05 である場合には，HiraMinProN-W3 に対して TrueType font を代替させる場合には HiraMinProN-W3-H の作成は必要はないようです．単独で用いる場合や他の otf フォントに代替させる場合には必要であるようです．
 
 ### TrueType outline fonts {#h311bbbd}
 
