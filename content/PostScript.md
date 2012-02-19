@@ -14,26 +14,15 @@ PostScript は業界標準のページ記述言語です。技術情報は Adobe
 から全て得ることができます。
 なお，[Ghostscript](/Ghostscript/) は PostScript ソフトウェア RIP（インタープリタ） です。
 
-### PostScript, Ghostscript {#h5ddd3dc}
+### PostScript {#h5ddd3dc}
 
-- [Ghostscript Website](http://www.ghostscript.com/) /
-    [SourceForge.net: Ghostscript](http://sourceforge.net/projects/ghostscript/)
-
-- [Ghostscript, Ghostview and GSview](http://pages.cs.wisc.edu/~ghost/) (wisc.edu)
-- [Ghostscript + GSview の日本語版](http://auemath.aichi-edu.ac.jp/~khotta/ghost/) /
-    [ミラーサイト](http://www.khotta.org/ghost/index.html)（堀田さん@愛知教育大・数学）
-
-- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
+- [Adobe PostScript language specifications](http://partners.adobe.com/public/developer/ps/index_specs.html)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
-- [PS_View](http://psview.sourceforge.net/) Ghostscript を使って PS/PDF ファイルを表示するプレビューア
-    - インストール(Windows)#PS_View のインストール (オプション)
-- [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
-- [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
-- [Pi&egrave;ce de l'Ensemble \[Internet Archive\]](http://web.archive.org/web/20090403203845/http://pop-club.hp.infoseek.co.jp/)（安宅さん &amp;
-    荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUCTeX，X-Symbol 等々
-
-- 田中 哲（あきら）さんの [Japanized Ghostscript Information](http://www.matsusaka-u.ac.jp/mirror/akr/nonresearch/free-software/ghostscript/index.ja.html)（旧 JAIST コンテンツのミラー）
 - [Gutenprint (formerly called Gimp-Print)](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
+
+### Ghostscript {#c88bc88f}
+
+[Ghostscript - TeX Wiki](/Ghostscript/) を参照．
 
 ### EPS 作成 {#lceaa8b7}
 
