@@ -38,6 +38,8 @@ Ghostscript 8.71 でエラーが発生するようです．9.01 では発生し�
 
 ## GPL Ghostscript 9.xx for Microsoft Windows {#w33eec77}
 
+Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語強化版が存在します．ここでは主にその角藤版 Ghostscript を対象にします．
+
 ### 配布先 {#gc8a2a19}
 
 - Ghostscript のインストーラ
@@ -57,7 +59,16 @@ Ghostscript 8.71 でエラーが発生するようです．9.01 では発生し�
 
 ### インストール {#a4d9c6ea}
 
-旧版の Ghostscript がすでにインストールしてあるのならば，先にアンインストールしておきます。
+#### 前提条件 {#nd475a19}
+
+安易な「再インストール」なるものはできるだけ避けて下さい．Ghostscript や GSview が既にインストールされている場合にはそれを完全な形でアンインストールします．ここでは GSview がインストールされていた場合を含めて手順を述べます．
+
+- 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダにバックアップを取っておきます．
+- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript，GSview をアンインストールします．旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします．
+- Ghostscript や GSview のフォルダを探し，何か残っていたならばフォルダごと削除します．
+- その後，Ghostscript，GSview の順にインストールします．
+
+#### インストール方法 {#ubf74def}
 
 - gs905w32full-gpl.exe を実行します。
     - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.05”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.05”
@@ -87,7 +98,15 @@ Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
 ASCII 文字だけで設定します。
 
-### 環境変数 PATH の設定 {#g074d14f}
+### 環境変数 {#g074d14f}
+
+#### 環境変数 PATH {#w1241f25}
+
+インストールした Ghostscript に含まれる bin と lib を付け加えておきます．具体的には次のようにします．
+
+```
+
+```
 
 Ghostscript 9.05 を C:\Program Files\gs\gs9.05 にインストールしたのなら
 
@@ -108,6 +127,10 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 ```
 
 を環境変数 PATH に追加します。 <!-- C:\usr\local\share\gs\ にインストールしたのなら --> <!-- ;C:\usr\local\share\gs\gs9.??\bin;C:\usr\local\share\gs\gs9.??\lib --> <!-- を環境変数 PATH に追加します。 -->
+
+#### 環境変数 GS_LIB {#y53bce19}
+
+古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません．これは腕に自信が無い限り削除しておくのがよいでしょう．ただし，後述で述べる日本語フォント等の設定の既定の場所を記述するためにこの GS_LIB を用いる手法もあります．
 
 ### CMap {#k55ee82d}
 
@@ -193,19 +216,18 @@ ps file の段階で HiraMinProN-W3-H が指定されており，これを用い
 
 -dSAFER の問題が起こらないようにして新たにフォントの設定をする場合には，cidfmap では絶対パス指定にしておいて，そのパスを既定の場所に含まれるようにしておくのが無難でしょう．ただし，上記のことを理解すれば相対パス指定でもうまく動作する方法はいくらでも考えられます．なお，上記で書いてきた「フォントを置く」というのは，msmincho.ttc のような実フォントファイルを置くことを指しますが，これはリンクを張ることでも代用できます．
 
-### gs\gs9.??\Resource\Init\cidfmap の基本的な記述方法 {#e2200e36}
+### gs\gs?.??\lib\cidfmap の基本的な記述方法 {#e2200e36}
+
+前半の % Aliases は左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．後半の % Substitutions は TrueType font の設定と考えて下さい(詳しくは gs のドキュメントを読んでください)．実際に記述する場合には先に書かれたものが有効であることに注意してください．
 
 ```
-gs905w32full-gpl.exe の場合は，場所が gs\gs9.05\lib\cidfmap 
-に変更されていることに注意
-```
-
-```
+% Aliases
 /Ryumin-Light      /MS-Mincho        ;
 /GothicBBB-Medium  /MS-Gothic        ;
 /HeiseiMin-W3      /Ryumin-Light     ;
 /HeiseiKakuGo-W5   /GothicBBB-Medium ;
 
+% Substitutions
 /MS-Mincho
 <<
 /FileType /TrueType
@@ -227,7 +249,7 @@ gs905w32full-gpl.exe の場合は，場所が gs\gs9.05\lib\cidfmap
 
 [OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，dvips を通して）
 変換した PostScript ファイルを（ps2pdf を使うなどして）
-Ghostscript 9.?? で PDF に変換する場合には，gs\gs9.??\Resource\Font\ に
+Ghostscript で PDF に変換する場合には，gs\gs?.??\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -306,14 +328,9 @@ composefont pop
 
 [TeXWiki:OTF #dvips 用の map ファイル](/OTF/#k1eb9f9c) も参照。
 
-### gs\gs9.??\Resource\Init\cidfmap の記述例 {#m115a63f}
+### gs\gs?.??\lib\cidfmap の記述例 {#m115a63f}
 
-#### <a id="cidfmap-windows">For Microsoft Windows</a> {#xba7681e}
-
-```
-gs905w32full-gpl.exe の場合は，場所が gs\gs9.05\lib\cidfmap 
-に変更されていることに注意
-```
+これはさまざまなフォントを扱うための設定の example です．
 
 ***
 
