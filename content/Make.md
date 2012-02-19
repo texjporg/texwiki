@@ -33,8 +33,6 @@ pukiwiki: "Make"
 
 ### teTeX-3.0 + ptetex3 {#saac55c2}
 
-- [teTeX-3.0](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/tetex.html)
-
 [teTeX](http://www.tug.org/tetex/) は
 UNIX（互換）OS 用の TeX ディストリビューション
 です。[ptetex](http://tutimura.ath.cx/~nob/tex/ptetex.html) は
@@ -116,7 +114,7 @@ X11 を立ち上げておきます
 動作確認が終わったら，いよいよシステムにインストールしましょう。
 
 ```
-make install （必要に応じて su したり sudo を付けたりします）
+make install （インストール先のディレクトリに書き込み権限がない場合は sudo を付けます）
 ```
 
 /usr/local/teTeX/bin にパスを通します。
