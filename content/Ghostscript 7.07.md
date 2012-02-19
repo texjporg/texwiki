@@ -468,3 +468,9 @@ B列（B5判など）の出力については TeX の掲示板の
 Ghostscript のB列は JIS ではなく ISO なのでサイズが微妙に違います。
 たとえば JIS の B4 は “/jisb4” と定義されています (gs_statd.ps)。
 dvips のサイズ指定については[ここ](/dvips/)参照。
+
+## 関連リンク {#d80c1879}
+
+- [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
+- [Pi&egrave;ce de l'Ensemble \[Internet Archive\]](http://web.archive.org/web/20090403203845/http://pop-club.hp.infoseek.co.jp/)（安宅さん &amp;
+    荒川さん）Ghostscript 7.07 や dvipdfmx のインストール情報，AUCTeX，X-Symbol 等々
