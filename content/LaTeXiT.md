@@ -28,25 +28,22 @@ latex+dvipdf を選択して \[変更...\] を使用せずにプログラムの�
 
 ***
 
-◯ pdflatex　　　◯ xelatex　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> latex+dvipdf<br>
+<span style="color:Gray;background-color:#EEEEEE;">　<span style="color:#DDDDDD;background-color:#EEEEEE;">●</span> <span style="color:#DDDDDD;background-color:#EEEEEE;">●</span> <span style="color:#DDDDDD;background-color:#EEEEEE;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-pdfLaTeX
-: /usr/texbin/pdflatex
+<span style="color:Gray;background-color:#EEEEEE;"><ins>　<strong>一般</strong>　　<strong>テキスト編集</strong>　　<strong>テンプレート</strong>　</ins></span><span style="color:Gray;background-color:#DDDDDD;"><ins><span style="color:#DDDDDD;">\[</span>　<strong>プログラム</strong>　<span style="color:#DDDDDD;">\]</span></ins></span><span style="color:Gray;background-color:#EEEEEE;"><ins>　<strong>ライブラリ</strong>　　<strong>履歴</strong>　　<strong>サービス</strong>　　<strong>詳細</strong>　　<strong>ウェブ</strong>　　　　　　　　　　　　　　　</ins></span><br>
 
-XeLaTeX
-: /usr/texbin/xelatex
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>処理に使用するプログラム</strong><br>
+　　　　　　　　　　　　　　　　　　　　　　　　構成： <span style="color:Black;background-color:#FAFAFA;"><ins>\[ デフォルト　　　　　　　　　　　 ◆ \]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>コマンド</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
+　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> latex+dvipdf<br>
 
-LaTeX
-: /usr/texbin/platex
-
-dvipdf
-: /usr/texbin/dvipdfmx
-
-Ghostscript (gs)
-: /usr/local/bin/gs
-
-ps2pdf
-: /usr/local/bin/ps2pdf
+　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
+　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
+　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins><br>
+　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/local/texlive/2011/bin/x86_64-darwin/dvipdfmx</ins> または <ins>/usr/texbin/dvipdfmx</ins><br>
+　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins><br>
+　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
 
 ***
 
@@ -57,6 +54,7 @@ ps2pdf
 
 ## 関連リンク {#tab9989c}
 
+- [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - MacWiki:LaTeXiT
 - [LaTeXiTでアレする](http://ototorosama.com/blog/2011/11/latexit%E3%81%A7%E3%82%A2%E3%83%AC%E3%81%99%E3%82%8B/)
 - [久し振りの単独記事は、MacOSX LionにTeX環境を入れる話。](http://blog.goo.ne.jp/superspeed1963/e/09803682db0044e5bb3e5f6d5674c95c)
