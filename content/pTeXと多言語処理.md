@@ -1583,7 +1583,7 @@ WZ EDITOR
 ただ，xyzzy はタイ語などには
 対応していません。emacs for gnupack，GNU emacs(x64) は充分すぎるほどの多言語対応能力を持ち，Meadow よりも新しい Emacs をベースにしています。起動の速さを重視する方は AkelPad，メモ帳がおすすめす。Linux などの UNIX 互換 OS では
 GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，Mac OS X では
-Carbon Emacs，[Mac Emacs](http://www.muskmelon.jp/macosx/)，[MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
+[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，Carbon Emacs，[MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
 そこで Microsoft Windows に附属しているワードパッド (WordPad) で
 リッチテキスト形式 (RTF) の多言語文書を
