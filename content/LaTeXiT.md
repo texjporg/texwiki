@@ -18,13 +18,20 @@ LaTeXiT は OS X で動作する数式エディタです．
 - [LaTeXiT](http://www.chachatelier.fr/latexit/)
     <!-- -[[LaTeXiT:http://pierre.chachatelier.fr/latexit]] -->
 
-## 環境設定 (MacTeX-2011 の場合) {#tab3d738}
+## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
 ### プログラム {#xab14b42}
 
 #### コマンド {#a32b734b}
 
-latex+dvipdf を選択して \[変更...\] を使用せずにプログラムのパスを直接入力します．
+\[プログラム\]-\[コマンド\] で latex+dvipdf を選択して \[変更...\] を使用せずにプログラムのパスを直接入力します．<br>
+<strong>MacTeX で配布されている Ghostscript では LaTeXiT で日本語が表示されない場合があるようです．</strong><br>
+
+<strong>日本語が表示されない場合は Ghostscript で日本語の PDF ファイルが作成できるかどうか確認してください．</strong><br>
+
+<strong>日本語の PDF ファイルが作成できない場合は Ghostscript の設定を変更して日本語の PDF ファイルが作成できるようにしてください．</strong><br>
+
+<strong>Ghostscript の設定を変更しても日本語が表示されない場合は[JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)で配布されている Ghostscript に変更してみてください．</strong><br>
 
 ***
 
@@ -40,9 +47,9 @@ latex+dvipdf を選択して \[変更...\] を使用せずにプログラムの�
 　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
 　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins><br>
-　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/local/texlive/2011/bin/x86_64-darwin/dvipdfmx</ins> または <ins>/usr/texbin/dvipdfmx</ins><br>
-　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins><br>
-　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins><br>
+　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
+　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← <strong>日本語が表示されない場合は[JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)で配布されている Ghostscript に変更</strong><br>
+　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← <strong>日本語が表示されない場合は[JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)で配布されている Ghostscript に変更</strong><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
 
 ***
