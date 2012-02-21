@@ -16,11 +16,10 @@ pukiwiki: "Ghostscript-8系"
 
 ## Ghostscript-8以降 {#f2728a95}
 
-Ghostscript-8以降の共通項目です。当ページの対象としては, 大幅な仕様変更がない限りバージョン 9.xx(or later) も含みますが, 最新版での動作等を保証するものではありません. <br>
-Ghostscript の各バージョンによっては (たとえそれがマイナーバージョンの変更であっても) このページの情報が適用できない可能性があることを十分に認識しておいてください。<br>
-バージョンの変更ごとに新たに検証が成されるのはかまいませんが、fork する必要がない場合は [Ghostscript - TeX Wiki](/Ghostscript/) またはこちらに記述していただけるとありがたいです。<br>
-
-(バージョンが 9.xx や 9.?? などとなっているところは, 自分の目的とするバージョンに適宜読み替えてください.)
+- Ghostscript-8以降，つまり，最近の Ghostscript，あるいは現状の Ghostscript に関するページです．バージョン 9.xx(or later) も含みます．
+- このページに書かれていることは，最新版の Ghostscript に対応することを保証するものではありません，はっきり言えば全く保証されません．そして，あなたが使用するバージョンに対応することも全く保証されません．ここに書かれたことは，各記述者がその時点で動作したことについての報告であり，あなたが使用するバージョンでは情報が適用できない可能性があるということを十分に認識しておいてください．
+- バグ報告をここに書いただけではそれが開発側に伝わることはほとんどありません．そのような必要があるならば，開発側への連絡を自ら行ってください．そのようではないこと，つまり一般に知らせた方が有益であると思われる情報はぜひともここ (あるいは必要ならば [Ghostscript - TeX Wiki](/Ghostscript/)) に記述していただけることを希望します．
+- バージョン名が 9.xx や 9.?? というように明示的に "9" が用いられている部分があります．これは，主には初心者がインストールの際に新しいものを選択すべきであることを示唆する目的でそう書かれています．あるいは，バージョン 9 に特化するために書かれている場合もあります．しかし，そのような目的が無い場合もありえるので，必要ならば自分の目的とするバージョンに適宜読み替えてください.
 
 ### お知らせ {#de455d8c}
 
@@ -38,7 +37,7 @@ Ghostscript 8.71 でエラーが発生するようです．9.01 では発生し�
 
 ## GPL Ghostscript 9.xx for Microsoft Windows {#w33eec77}
 
-Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語強化版が存在します．ここでは主にその角藤版 Ghostscript を対象にします．
+Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語強化版バイナリの配布が存在します．ここではそれを角藤版 Ghostscript と呼び，主にその角藤版 Ghostscript を対象にします．
 
 ### 配布先 {#gc8a2a19}
 
@@ -59,7 +58,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 ### インストール {#a4d9c6ea}
 
-#### 前提条件 {#nd475a19}
+#### 前提条件 {#ead68e72}
 
 安易な「再インストール」なるものはできるだけ避けて下さい．Ghostscript や GSview が既にインストールされている場合にはそれを完全な形でアンインストールします．ここでは GSview がインストールされていた場合を含めて手順を述べます．
 
@@ -68,7 +67,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 - Ghostscript や GSview のフォルダを探し，何か残っていたならばフォルダごと削除します．
 - その後，Ghostscript，GSview の順にインストールします．
 
-#### インストール方法 {#ubf74def}
+#### インストール方法 {#b84b5a69}
 
 - gs905w32full-gpl.exe を実行します。
     - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.05”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.05”
@@ -81,7 +80,9 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-#### インストールに失敗する場合 {#f1997f9f}
+\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.05 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです．ただし，日本語等の非 ascii 文字を含むフォルダにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs?.?? というフォルダにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs?.?? というフォルダ構造を仮定していることが多いということは理解しておいてください．
+
+#### インストールに失敗する場合 {#g27d0b0b}
 
 ユーザーアカウントの名前に例えば「山田太郎」のように
 ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
@@ -97,6 +98,11 @@ Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 設定されているので，この環境変数 TEMP を（例えば
 UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
 ASCII 文字だけで設定します。
+
+#### \[参考\] 関連するアプリケーション {#x43bdcce}
+
+- GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．GSview のインストール後 GSview を起動し，\[Options\]->\[Advanced Configure...\] の Ghostscript Options: に -dWINKANJI を付け加えておくのがいいでしょう(日本語の表示がある種安全なものになります．ただし，角藤版 Ghoststscript の場合に限ります)．
+- dviout を併用している場合には，\[Option\]->\[Setup Parameters...\]->\[Graphic\] の Ghostscript の内容を正しく設定しておくことが必要です．
 
 ### 環境変数 {#g074d14f}
 
@@ -131,6 +137,109 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 #### 環境変数 GS_LIB {#y53bce19}
 
 古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません．これは腕に自信が無い限り削除しておくのがよいでしょう．ただし，後述で述べる日本語フォント等の設定の既定の場所を記述するためにこの GS_LIB を用いる手法もあります．
+
+### cidfmap の初期設定 {#ra5fe424}
+
+cidfmap とは日中韓の CID fonts を他の CID fonts や TrueType fonts に代替させることを主な目的とした設定ファイルです．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．この自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行してやればそれがなされます．
+
+```
+gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfmap c:/gs/gs9.05/lib/mkcidfm.ps
+```
+
+パス名部分に関しては各自の環境に合わせて書き直して下さい．また，c:/windows/fonts というのは Windows の システムフォントフォルダのことです．
+
+一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にあるすべての日中韓のフォントが使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダに見つかったものだけです．
+
+コマンドプロンプトがまともに触れないならば，Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．これをコピー・ペーストするだけでも大丈夫でしょう．ただしパス名部分は各自の環境に合わせることが必要になることもあります．
+
+***
+
+```
+%!
+% cidfmap generated automatically by mkcidfm.ps from fonts found in
+%   c:/windows/fonts
+
+% Substitutions
+/MS-Gothic << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msgothic.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/Dotum << /CSI [(Korea1) 3] /Path (c:/windows/fonts/gulim.ttc) /FileType /TrueType /SubfontID 2 >> ;
+/MS-PMincho << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msmincho.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/BatangChe << /CSI [(Korea1) 3] /Path (c:/windows/fonts/batang.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/MS-Mincho-oldttf << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msmincho.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/MingLiU << /CSI [(CNS1) 2] /Path (c:/windows/fonts/mingliu.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/GungsuhChe << /CSI [(Korea1) 3] /Path (c:/windows/fonts/batang.ttc) /FileType /TrueType /SubfontID 3 >> ;
+/ArialUnicodeMS-KR << /CSI [(Korea1) 3] /Path (c:/windows/fonts/arialuni.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/PMingLiU << /CSI [(CNS1) 2] /Path (c:/windows/fonts/mingliu.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/SimSun << /CSI [(GB1) 2] /Path (c:/windows/fonts/simsun.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/ArialUnicodeMS-GB << /CSI [(GB1) 2] /Path (c:/windows/fonts/arialuni.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/MS-UI-Gothic << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msgothic.ttc) /FileType /TrueType /SubfontID 2 >> ;
+/Gulim << /CSI [(Korea1) 3] /Path (c:/windows/fonts/gulim.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/MS-PGothic << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msgothic.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/ArialUnicodeMS-JP << /CSI [(Japan1) 3] /Path (c:/windows/fonts/arialuni.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/GulimChe << /CSI [(Korea1) 3] /Path (c:/windows/fonts/gulim.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/SimHei << /CSI [(GB1) 2] /Path (c:/windows/fonts/simhei.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/SimSun-oldttf << /CSI [(GB1) 2] /Path (c:/windows/fonts/simsun.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/MS-Mincho << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msmincho.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/DotumChe << /CSI [(Korea1) 3] /Path (c:/windows/fonts/gulim.ttc) /FileType /TrueType /SubfontID 3 >> ;
+/NSimSun << /CSI [(GB1) 2] /Path (c:/windows/fonts/simsun.ttc) /FileType /TrueType /SubfontID 1 >> ;
+/ArialUnicodeMS-CNS << /CSI [(CNS1) 2] /Path (c:/windows/fonts/arialuni.ttf) /FileType /TrueType /SubfontID 0 >> ;
+/Gungsuh << /CSI [(Korea1) 3] /Path (c:/windows/fonts/batang.ttc) /FileType /TrueType /SubfontID 2 >> ;
+/Batang << /CSI [(Korea1) 3] /Path (c:/windows/fonts/batang.ttc) /FileType /TrueType /SubfontID 0 >> ;
+
+% Aliases
+/GothicBBB-Medium /MS-Gothic ;
+/STHeiti-Regular /SimHei ;
+/HYGoThic-Medium /Dotum ;
+/STFangsong-Light /SimSun ;
+/HeiseiMin-W3 /MS-Mincho ;
+/HeiseiKakuGo-W5 /MS-Gothic ;
+/AdobeMyungjoStd-Medium /Batang ;
+/AdobeSongStd-Light /SimSun ;
+/MKai-Medium /MingLiU ;
+/AdobeHeitiStd-Regular /SimHei ;
+/AdobeMingStd-Light /MingLiU ;
+/KozMinPr6N-Regular /MS-Mincho ;
+/MSung-Light /MingLiU ;
+/MSung-Medium /MingLiU ;
+/Ryumin-Medium /MS-Mincho ;
+/STKaiti-Regular /SimHei ;
+/MHei-Medium /ArialUnicodeMS-CNS ;
+/Ryumin-Light /MS-Mincho ;
+/STSong-Light /SimSun ;
+/HYSMyeongJo-Medium /Batang ;
+/HYRGoThic-Medium /Gulim ;
+```
+
+***
+
+### cidfmap の基本的な記述方法 {#p7036a99}
+
+cidfmap を書き換える際に必要になることを簡単に述べておきます(詳しくは gs のドキュメントを読んでください)．下に実験用の基本的な例を張り付けておきます．前半の % Aliases は，左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．後半の % Substitutions は TrueType font の設定と考えて下さい．この例では，次の4つのフォント代替の連鎖が作られます(あるいはそう考えることができます)．
+
+```
+Ryumin-Light -> MS-Mincho -> msmincho.ttc
+GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
+HeiseiMin-W3 -> Ryumin-Light -> MS-Mincho -> msmincho.ttc
+HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
+```
+
+一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．このことにも注意を払ってください．
+
+***
+
+```
+% Aliases
+/Ryumin-Light      /MS-Mincho        ;
+/Ryumin-Light      /MS-PMincho        ;
+/GothicBBB-Medium  /MS-Gothic        ;
+/HeiseiMin-W3      /Ryumin-Light     ;
+/HeiseiKakuGo-W5   /GothicBBB-Medium ;
+
+% Substitutions
+/MS-Mincho << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msmincho.ttc) /FileType /TrueType /SubfontID 0 >> ;
+/MS-Gothic << /CSI [(Japan1) 3] /Path (c:/windows/fonts/msgothic.ttc) /FileType /TrueType /SubfontID 0 >> ;
+```
+
+***
 
 ### CMap {#k55ee82d}
 
@@ -217,35 +326,6 @@ ps file の段階で HiraMinProN-W3-H が指定されており，これを用い
 相対パス指定，つまり /Path (msmincho.ttc) のような記述をした場合には，上記の既定の場所からフォントが探されます．ただしこの場合には，GS_FONTPATH と -sFONTPATH= による記述の場所は除かれ，一般の file search path からのみ探されます．
 
 -dSAFER の問題が起こらないようにして新たにフォントの設定をする場合には，cidfmap では絶対パス指定にしておいて，そのパスを既定の場所に含まれるようにしておくのがもっとも正統な方法でしょう．しかし，相対パスを利用することも可能です．例えば，角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます．また，環境変数 GS_LIB に gs\fonts に相当するものを付け加えて，少し古めの形態で使うことも可能でしょう(ただしこれはあまり勧められません)．なお，上記で書いてきた「フォントを置く」というのは，msmincho.ttc のような実フォントファイルを置くことを指しますが，これはリンクを張ることでも代用できます．
-
-### gs\gs?.??\lib\cidfmap の基本的な記述方法 {#e2200e36}
-
-前半の % Aliases は左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．後半の % Substitutions は TrueType font の設定と考えて下さい(詳しくは gs のドキュメントを読んでください)．実際に記述する場合には先に書かれたものが有効であることに注意してください．
-
-```
-% Aliases
-/Ryumin-Light      /MS-Mincho        ;
-/GothicBBB-Medium  /MS-Gothic        ;
-/HeiseiMin-W3      /Ryumin-Light     ;
-/HeiseiKakuGo-W5   /GothicBBB-Medium ;
-
-% Substitutions
-/MS-Mincho
-<<
-/FileType /TrueType
-/CSI [(Japan1) 6]
-/Path (C:/Windows/Fonts/msmincho.ttc)
-/SubfontID 0
->> ;
-
-/MS-Gothic
-<<
-/FileType /TrueType
-/CSI [(Japan1) 6]
-/Path (C:/Windows/Fonts/msgothic.ttc)
-/SubfontID 0
->> ;
-```
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
