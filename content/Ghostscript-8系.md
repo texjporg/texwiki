@@ -27,6 +27,10 @@ pukiwiki: "Ghostscript-8系"
 
 - [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
 
+Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
+
+- [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
+
 Ghostscript 8.71 でエラーが発生するようです．9.01 では発生しないようです．
 
 - [dvipsでeps出力した図とGhostscript 8.71のバグ？](http://d.hatena.ne.jp/SO2_2009/20110221/1298309714)
@@ -148,7 +152,7 @@ gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfma
 
 パス名部分に関しては各自の環境に合わせて書き直して下さい．また，c:/windows/fonts というのは Windows の システムフォントフォルダのことです．
 
-一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にあるすべての日中韓のフォントが使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダに見つかったものだけです．
+一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にある日中韓のフォントがすべて使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダに見つかった TrueType fonts への代替設定がされるだけです．これだけで自由自在になるわけではないことに注意してください．
 
 コマンドプロンプトがまともに触れないならば，Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．これをコピー・ペーストするだけでも大丈夫でしょう．ただしパス名部分は各自の環境に合わせることが必要になることもあります．
 
@@ -222,7 +226,7 @@ HeiseiMin-W3 -> Ryumin-Light -> MS-Mincho -> msmincho.ttc
 HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
 ```
 
-一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．このことにも注意を払ってください．
+ここで，一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．このことにも注意を払ってください．
 
 ***
 
@@ -288,16 +292,11 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
 
 ### CID-keyed fonts {#i4c98952}
 
-CID-keyed フォントは ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs?.??\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置してください．
+CID-keyed font (他の項では単に CID font と呼ばれることもあります) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs?.??\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置してください．
 
-CID-keyed フォントファイルはファイル名を拡張子無しの PostScript 名に変えて
-（例えば “HEMIW3.CID” → “HeiseiMin-W3”）
-gs\gs?.??\Resource\CIDFont\ にコピーしておきます(あるいはリンクを張っておきます)。
+(original の意味での) CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
 
-OpenType フォーマットの CID-keyed フォントファイル（拡張子が “.otf” の
-OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて
-（例えば “ヒラギノ明朝 ProN W3.otf” → “HiraMinProN-W3”）
-gs\gs?.??\Resource\CIDFont\ にコピーしておきます (あるいはリンクを張っておきます)。
+OpenType フォーマットの CID-keyed フォントファイル (拡張子が .otf の OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
 
 gs の段階で日本語フォントを上記のように配置したもの (例えば HiraMinProN-W3) に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
 
@@ -305,7 +304,7 @@ gs の段階で日本語フォントを上記のように配置したもの (例
 /Ryumin-Light    /HiraMinProN-W3 ;
 ```
 
-この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．また，この設定をする場合には下記に述べるような Ryumin-Light-H の作成が必要になるかもしれません． 
+この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．また，この設定をする場合には下記に述べるような Ryumin-Light-H という名前のファイル等の作成が必要になるかもしれません． 
 
 ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します． フォントファイル名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
@@ -313,11 +312,11 @@ ps file の段階で HiraMinProN-W3-H が指定されており，これを用い
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-この場合には，cidfmap には何も記述しません (ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．なお，この作業は gs の version 等の状況により不要であるかもしれません．具体的に言うと，gs9.05 である場合には，HiraMinProN-W3 に対して TrueType font を代替させる場合には HiraMinProN-W3-H の作成は必要はないようです．単独で用いる場合や他の otf フォントに代替させる場合には必要であるようです．
+この場合には，cidfmap には何も記述しません (ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．なお，このファイルの作成は不要である場合もあるようです．これは gs9.05 の場合での結果について述べておきます．上記のように置いた HiraMinProN-W3 を直接使う場合や，cidfmap で HiraMinProN-W3 を他の otf フォントに代替させる場合には必要であるようです．しかし，cidfmap で HiraMinProN-W3 を TrueType font で代替させる場合には HiraMinProN-W3-H というファイルの作成は必要ないようです．
 
 ### TrueType outline fonts {#h311bbbd}
 
-ここでは CID-keyed font を TrueType font に代替させる場合について記述します．
+ここでは cidfmap において，CID font を TrueType font に代替させる場合について記述します．
 
 拡張子が ".ttf", ".ttc" である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．gs のドキュメントによれば，これは絶対パス指定であるべきであるようです．相対パス指定をした場合の挙動は後述します．
 
