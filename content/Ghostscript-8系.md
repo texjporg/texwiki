@@ -320,7 +320,7 @@ ps file の段階で HiraMinProN-W3-H が指定されており，これを用い
 
 拡張子が ".ttf", ".ttc" である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．gs のドキュメントによれば，これは絶対パス指定であるべきであるようです．相対パス指定をした場合の挙動は後述します．
 
--dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．既定の場所とは，gs における一般の file search path に含まれる場所，環境変数 GS_FONTPATH で指定される場所，および，-sFONTPATH= に指定された場所のことです．そして一般の file search path とは，gswin32c --help で表示されるもののうちの Search path: の部分に記述される場所のことです(これはたぶん gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所)．角藤版 Ghostscript (例えば gs905w32full-gpl.exe) の場合には，c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．-dSAFER による問題が起こった場合には，フォントをこれらの既定の場所のどこかに置くようにしてください．あるいは，環境変数 GS_FONTPATH の設定をして新たな既定の場所を作ってください．
+-dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．既定の場所とは，gs における一般の file search path に含まれる場所，環境変数 GS_FONTPATH で指定される場所，および，-sFONTPATH= に指定された場所のことです．そして一般の file search path とは，gswin32c -h で表示されるもののうちの Search path: の部分に記述される場所のことです(これはたぶん gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所)．角藤版 Ghostscript (例えば gs905w32full-gpl.exe) の場合には，c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．-dSAFER による問題が起こった場合には，フォントをこれらの既定の場所のどこかに置くようにしてください．あるいは，環境変数 GS_FONTPATH の設定をして新たな既定の場所を作ってください．
 
 相対パス指定，つまり /Path (msmincho.ttc) のような記述をした場合には，上記の既定の場所からフォントが探されます．ただしこの場合には，GS_FONTPATH と -sFONTPATH= による記述の場所は除かれ，一般の file search path からのみ探されます．
 
