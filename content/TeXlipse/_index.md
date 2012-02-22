@@ -1081,6 +1081,10 @@ UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
 
 tlptexlive をインストールします．<br>
 動作未確認です．<br>
+OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされています．<br>
+設定で \[Browse...\] を使用するとリンク先の eptex に変更されてしまい LaTeX 文書がタイプセットできなくなるので \[Browse...\] は使用せずに直接パスを指定してください．<br>
+
+- texlipse日本語コンパイルできない（mac）→ 解決できました ([qa:56663](https://okumuralab.org/~okumura/texfaq/qa/56663.html), [qa:56664](https://okumuralab.org/~okumura/texfaq/qa/56664.html), [qa:56665](https://okumuralab.org/~okumura/texfaq/qa/56665.html), [qa:56666](https://okumuralab.org/~okumura/texfaq/qa/56666.html))
 
 ***
 
