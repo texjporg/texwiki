@@ -72,8 +72,9 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
 - [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
-- [multiframe 版 xyzzy](https://bitbucket.org/mumurik/xyzzy/downloads)
+- [マルチフレーム版 xyzzy](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
     - [コミットログ](https://bitbucket.org/mumurik/xyzzy/changesets)
+    - [mirror](https://github.com/troter/xyzzy)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
@@ -81,9 +82,9 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 - [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
     - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
     - [ChangeLog](https://github.com/bulb/xyzzy.src/blob/for-gcc/ChangeLog.txt)
-- [xyzzy.src (bowbow99-master)](https://github.com/bowbow99/xyzzy.src/tree/bowbow99-master)
-    - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/bowbow99-master)
-    - [ChangeLog](https://github.com/bowbow99/xyzzy.src/blob/bowbow99-master/ChangeLog.txt)
+- [xyzzy.src (nanri-master)](https://github.com/southly/xyzzy.src/tree/nanri-master)
+    - [コミットログ](https://github.com/southly/xyzzy.src/commits/nanri-master)
+    - [ChangeLog](https://github.com/southly/xyzzy.src/blob/nanri-master/ChangeLog.txt)
 - [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
