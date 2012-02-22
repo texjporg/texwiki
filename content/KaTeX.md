@@ -23,6 +23,8 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
 
+KaTeX は [xyzzyのマルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) からもダウンロードできます．
+
 ### ChangeLog {#g9333ba6}
 
 #### Thu Oct 11 2008 Version 1.67.1.12 {#o70ed34c}
