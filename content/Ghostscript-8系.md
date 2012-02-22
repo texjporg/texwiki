@@ -140,7 +140,7 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 
 #### 環境変数 GS_LIB {#y53bce19}
 
-古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません．これは腕に自信が無い限り削除しておくのがよいでしょう．ただし，後述で述べる日本語フォント等の設定の既定の場所を記述するためにこの GS_LIB を用いる手法もあります．
+古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません．これは腕に自信が無い限り削除しておくのがよいでしょう．ただし，後で述べる日本語フォント等の設定の既定の場所を記述するためにこの GS_LIB を用いる手法もあります．
 
 ### cidfmap の初期設定 {#ra5fe424}
 
@@ -296,23 +296,23 @@ CID-keyed font (他の項では単に CID font と呼ばれることもありま
 
 (original の意味での) CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
 
-OpenType フォーマットの CID-keyed フォントファイル (拡張子が .otf の OpenType フォントファイル）はファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
+OpenType フォーマットの CID-keyed フォントファイル (拡張子が .otf の OpenType フォントファイル，以下 otf font と呼ぶ）はファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
 
-gs の段階で日本語フォントを上記のように配置したもの (例えば HiraMinProN-W3) に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
+gs の段階で日本語フォントを上記のように配置したもの (例えば HeiseiMin-W3) に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
 
 ```
-/Ryumin-Light    /HiraMinProN-W3 ;
+/Ryumin-Light    /HeiseiMin-W3 ;
 ```
 
-この場合には ps file において指定されている Ryumin-Light を HiraMinProN-W3 に代替させていることになります．また，この設定をする場合には下記に述べるような Ryumin-Light-H という名前のファイル等の作成が必要になるかもしれません． 
+この場合には ps file において指定されている Ryumin-Light を HeiseiMin-W3 に代替させていることになります．(original)CID font の場合はこれだけで問題ありませんが，otf font の場合には下記に述べるような形の Ryumin-Light-H という名前のファイルの作成が必要になるかもしれません． 
 
-ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前のファイルを次の内容で作成します． フォントファイル名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
+ps file の段階で指定されている CID-keyed font をフォント代替無しでそのまま用いる場合には，cidfmap には何も記述しません．(original)CID font であるならば，他に何かを行う必要はありません．しかし，otf font の場合にはこれだけだと文字化けが引きおこるので次の作業を行います．例えば ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-この場合には，cidfmap には何も記述しません (ただし，これをさらに他のフォントで代替させる場合等には cidfmap にそれを記述します)．なお，このファイルの作成は不要である場合もあるようです．これは gs9.05 の場合での結果について述べておきます．上記のように置いた HiraMinProN-W3 を直接使う場合や，cidfmap で HiraMinProN-W3 を他の otf フォントに代替させる場合には必要であるようです．しかし，cidfmap で HiraMinProN-W3 を TrueType font で代替させる場合には HiraMinProN-W3-H というファイルの作成は必要ないようです．
+という内容のファイルを gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
 ### TrueType outline fonts {#h311bbbd}
 
