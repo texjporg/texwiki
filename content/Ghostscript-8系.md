@@ -144,7 +144,7 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 
 ### cidfmap の初期設定 {#ra5fe424}
 
-cidfmap とは日中韓の CID fonts を他の CID fonts や TrueType fonts に代替させることを主な目的とした設定ファイルです．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．この自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行してやればそれがなされます．
+cidfmap とは日中韓の CID fonts を他の CID fonts や TrueType fonts に代替させることを主な目的とした設定ファイルです．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行すればそれがなされます．
 
 ```
 gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfmap c:/gs/gs9.05/lib/mkcidfm.ps
