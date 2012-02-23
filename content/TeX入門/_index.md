@@ -94,8 +94,7 @@ OS ごとのインストール法が詳しく書かれていますので，ご�
 Microsoft Windows については
 TeXWiki:インストール(Windows) をご覧ください。
 
-インストール不要で TeX が使えるウェブページ「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」（お薦めです），または「[サーバーサイド pLaTeX 2ε ビューアー](http://nowsmartsoft.or.tv/texview/mytex.cgi)」（アクセスすると
-IP アドレスが晒されるので注意すること）もあります。
+インストール不要で TeX が使えるウェブページ「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」もあります。
 
 ## 使い方 {#hf6bc116}
 
