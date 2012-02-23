@@ -304,15 +304,21 @@ gs の段階で日本語フォントを上記のように配置したもの (例
 /Ryumin-Light    /HeiseiMin-W3 ;
 ```
 
-この場合には ps file において指定されている Ryumin-Light を HeiseiMin-W3 に代替させていることになります．(original)CID font の場合はこれだけで問題ありませんが，otf font の場合には下記に述べるような形の Ryumin-Light-H という名前のファイルの作成が必要になるかもしれません． 
+この場合には ps file において指定されている Ryumin-Light を HeiseiMin-W3 に代替させていることになります．代替をさせない場合には cidfmap には何も記述しません．
 
-ps file の段階で指定されている CID-keyed font をフォント代替無しでそのまま用いる場合には，cidfmap には何も記述しません．(original)CID font であるならば，他に何かを行う必要はありません．しかし，otf font の場合にはこれだけだと文字化けが引きおこるので次の作業を行います．例えば ps file の段階で HiraMinProN-W3-H が指定されており，これを用いる場合には，
+otf font で出力する場合にはこれだけだと文字化け等が引きおこります．このときには ps file で指定されたフォントに関する，フォント名-CMap名の結合を行うためのファイルが必要になります．上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これを HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-という内容のファイルを gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
+という内容のファイルを gs\gs?.??\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．次に，ps file には Ryumin-Light-H が指定されており，これを cidfmap で HiraMinProN-W3 に代替させる (Ryumin-Light-H -> HiraMinProN-W3) 場合には，
+
+```
+/Ryumin-Light-H /H [/Ryumin-Light] composefont pop
+```
+
+という内容のファイルを gs\gs?.??\Resource\Font\ に Ryumin-Light-H という名前で作成する必要があります．どちらにしても，otf font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
 ### TrueType outline fonts {#h311bbbd}
 
