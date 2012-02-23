@@ -29,6 +29,8 @@ Yotuba TeX Editor は Windows (Microsoft .NET Framework 3.5 以上がインス�
 
 \[ツール(T)\]-\[オプション(O)\]-\[TeX\] で設定します．<br>
 
+初期設定は以下のようになります．<br>
+
 TeXプログラム(platex)
 : C:\w32tex\bin\platex.exe
 
@@ -37,6 +39,20 @@ PDFへの変換プログラム(dvipdfm)
 
 画像用プログラム(ebb)
 : C:\w32tex\bin\ebb.exe
+
+目次作成用プログラム(mendex)
+: C:\w32tex\bin\mendex.exe
+
+dvipdfmx, extractbb を使用する場合は以下のように変更します．<br>
+
+TeXプログラム(platex)
+: C:\w32tex\bin\platex.exe
+
+PDFへの変換プログラム(dvipdfm)
+: C:\w32tex\bin\dvipdfmx.exe
+
+画像用プログラム(ebb)
+: C:\w32tex\bin\extractbb.exe
 
 目次作成用プログラム(mendex)
 : C:\w32tex\bin\mendex.exe
