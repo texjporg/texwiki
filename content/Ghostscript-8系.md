@@ -306,7 +306,7 @@ gs の段階で日本語フォントを上記のように配置したもの (例
 
 この場合には ps file において指定されている Ryumin-Light を HeiseiMin-W3 に代替させていることになります．代替をさせない場合には cidfmap には何も記述しません．
 
-otf font で出力する場合にはこれだけだと文字化け等が引きおこります．このときには ps file で指定されたフォントに関する，フォント名-CMap名の結合を行うためのファイルが必要になります．上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これを HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
+otf font で出力する場合にはこれだけだと文字化け等が引きおこるときがあります．その場合には ps file で指定されたフォントに関する，フォント名-CMap名の結合・分解を行うためのファイルが必要になります．上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これを HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
