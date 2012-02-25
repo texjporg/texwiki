@@ -245,6 +245,20 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>長所</strong>：
 - <strong>短所</strong>：
 
+## InftyTeXInstaller {#fcd5b6b1}
+
+- <strong>URL</strong>: [http://www.inftyproject.org/jp/software.html#TeXInstaller](http://www.inftyproject.org/jp/software.html#TeXInstaller)
+- <strong>作者</strong>： Infty Projectさん
+- <strong>初心者オススメ度</strong>：
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：
+- <strong>ユーザーインターフェース</strong>：
+- <strong>ネット・ローカルインストール</strong>：
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：
+- <strong>参考</strong>：[Infty TeX installer](http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html)
+
 ***
 
 - LabTeX Installerを追加しました。 -- つちのこ 2008-07-04 (金) 17:19:32
