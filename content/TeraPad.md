@@ -675,7 +675,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=utf8 -sjis-terminal "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -703,7 +703,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex -kanji=utf8 -sjis-terminal "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -811,7 +811,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; mendex "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -U -ST "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -839,7 +839,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -U -ST "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
