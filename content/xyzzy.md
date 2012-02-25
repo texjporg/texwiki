@@ -75,6 +75,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 - [マルチフレーム版 xyzzy](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
     - [コミットログ](https://bitbucket.org/mumurik/xyzzy/changesets)
     - [mirror](https://github.com/troter/xyzzy)
+    - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
@@ -94,7 +95,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 
 手動で行う場合は，次のようにします。
 
-まず，[設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
+まず，[マルチフレーム版 xyzzy](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
 
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
 
