@@ -9,7 +9,7 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
-## [KaTeX](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) {#f8899a4c}
+## [KaTeX](https://bitbucket.org/mumurik/xyzzy/downloads) {#f8899a4c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -17,7 +17,7 @@ pukiwiki: "KaTeX"
 
 KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
-KaTeX は [xyzzyのマルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) からダウンロードできます．<br>
+KaTeX は [マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) からダウンロードできます．<br>
 KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
 
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
@@ -169,7 +169,7 @@ KaTeX （花鳥）は便利なキーボードショートカットを多数有�
 環境の入力を素早く，なおかつ楽にしてくれるマクロです。[YaTeX](/YaTeX/) の
 xyzzy 版と言った方がわかりやすいかもしれません。
 
-[xyzzyのマルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) から katex.zip を選択してダウンロードしてください．<br>
+[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) から katex.zip を選択してダウンロードしてください．<br>
 Emacs Lisp 移植キットは KaTeX に含まれています．<br>
 
 公式サイトの Web Archive からダウンロードする場合は [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
