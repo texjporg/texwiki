@@ -517,3 +517,8 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
 もちろん、新たなサンプルの提供と、（全体の）文章の修正も歓迎します。
+
+## 関連リンク {#k90787cf}
+
+- [zhmCJK Package](http://www.ctan.org/pkg/zhmcjk)
+- [xeCJK Package](http://www.ctan.org/pkg/xecjk)
