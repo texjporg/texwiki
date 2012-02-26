@@ -65,43 +65,42 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 > 詳細は [2ch Windows 板 「xyzzy Part12」 (2ちゃんねるのログ)](http://www.bookshelf.jp/2ch/win/1103400818.html) の >>217, >>220-222 あたりを
 > 参照のこと。）
 
+### リリース情報 {#m67e4030}
+
+2012-02-26 xyzzy version 0.2.3.3 (マルチフレーム版) がリリースされました<br>
+2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
 とうとうオープンソースになりました！
 (MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
 短いライセンスなので読んでみてください。)
 
+### 派生版 {#k1e2d6da}
+
 公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
-- [英語版 xyzzy](http://xyzzy.s53.xrea.com/english/archive/)
-- [マルチフレーム版 xyzzy](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
-    - [コミットログ](https://bitbucket.org/mumurik/xyzzy/changesets)
-    - [mirror](https://github.com/troter/xyzzy)
+- [英語版](http://xyzzy.s53.xrea.com/english/archive/)
+- [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
+    - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
     - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
     - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
+- [xyzzy.src (bowbow99-master)](https://github.com/bowbow99/xyzzy.src/)
+    - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/)
 - [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
     - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
-    - [ChangeLog](https://github.com/bulb/xyzzy.src/blob/for-gcc/ChangeLog.txt)
-- [xyzzy.src (nanri-master)](https://github.com/southly/xyzzy.src/tree/nanri-master)
-    - [コミットログ](https://github.com/southly/xyzzy.src/commits/nanri-master)
-    - [ChangeLog](https://github.com/southly/xyzzy.src/blob/nanri-master/ChangeLog.txt)
-- [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
 
 ## ダウンロードとインストール {#xy9167cb}
 
-[インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)から
-インストールするのが最も簡単かもしれません。
-
-手動で行う場合は，次のようにします。
-
-まず，[マルチフレーム版 xyzzy](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
+まず，[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
 
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
 
+[インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。
+
 USB メモリで使用する方は，
-[xyzzyをちょこちょこ改造](http://blog.2310.net/archives/category/xyzzy)
-からダウンロードして，展開後，本体のものと置き換えてください。
+[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
+がおすすめです。
 
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。
