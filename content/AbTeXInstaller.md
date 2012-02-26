@@ -160,6 +160,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### 参考 {#r85dc0a5}
 
+- [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
 - [Tex入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
 - [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
 - [TeXのインストール(Windows)](http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXWin20111018.html/)
