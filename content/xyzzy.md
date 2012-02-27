@@ -16,13 +16,10 @@ pukiwiki: "xyzzy"
 xyzzy は柔軟なカスタマイズを可能にした，
 多機能なテキストエディタ，Common-LISP インタプリタです。
 
-[Emacs](/Emacs/) という
-テキストエディタを知っている方には，elisp ではなく，common lisp を使って拡張する Microsoft Windows 専用の環境である，と
-表現したほうがわかりやすいかもしれません。
+[Emacs](/Emacs/) を知っている方には，elisp ではなく，Common Lisp を使って拡張する Microsoft Windows 専用の環境である，と表現したほうがわかりやすいかもしれません。<br>
+国産で，フリーソフトウェアです。<br>
 
-国産で，フリーソフトウェアです。
-
-xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
 
 多言語についても
 
@@ -32,38 +29,17 @@ xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode
 - 中国語 (&#x6c49;&#x8bed;［漢語］，中文)
 - 韓國語 (&#xd55c;&#xad6d;&#xc5b4;)
 
-<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,xyzzy の画面) -->
-
-などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。
+などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。<br>
+Emacs ライクなテキストエディタというと，デフォルトの状態では使いにくく，カスタマイズが必要な上級者向けとの印象があります。<br>
+ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。<br>
+ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
+キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。<br>
+また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
+例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
+従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
+レジストリは変更しませんので，少しでも興味のある方は試してみてはいかがでしょうか？<br>
 
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
-
-<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
-
-Emacs ライクなテキストエディタというと，デフォルトの状態では使いにくく，カスタマイズが必要な上級者向けとの印象があります。
-
-ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。
-
-ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。
-
-キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。
-
-また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとの
-キーボードショートカット上の共存が可能です。（例えば，C-c はマウスによる
-選択［セレクション］時にはコピーになりますが，選択をしていない場合は
-コピーには割り当てられません。従って，マウスで選択さえしていなければ，KaTeX で
-頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。）
-
-レジストリは変更しませんので，
-少しでも興味のある方は試してみてはいかがでしょうか？
-
-Wine でも動くという報告がありますので，Linux ユーザも検討してみる価値はあります。
-
-> （SUSE LINUX 9.2 \[kernel 2.6.8\] wine 20050111 xyzzy 0.2.2.233。
-> 2ch-mode, www-mode, kamail, outline-tree, migemo, netinstaller は動く。
-> browser.dll 関連，filer 関連は一部動作せず。Emacs より軽いという報告もある。
-> 詳細は [2ch Windows 板 「xyzzy Part12」 (2ちゃんねるのログ)](http://www.bookshelf.jp/2ch/win/1103400818.html) の >>217, >>220-222 あたりを
-> 参照のこと。）
 
 ### リリース情報 {#m67e4030}
 
@@ -89,6 +65,13 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
     - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/)
 - [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
     - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
+
+### スクリーンショット {#of7fa0a1}
+
+<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
+<!-- &br; -->
+
+<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
 
 ## ダウンロードとインストール {#xy9167cb}
 
@@ -1364,6 +1347,16 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
 メニューバー・ツールバー等の作成まで含めた xyzzy Lisp の書き方も
 割と詳しくまとめられていますし，
 ここで少し述べた多言語入力法にまで踏み込んで書かれています。
+
+### Linux で xyzzy {#wba8406f}
+
+Wine でも動くという報告がありますので，Linux ユーザも検討してみる価値はあります。
+
+> （SUSE LINUX 9.2 \[kernel 2.6.8\] wine 20050111 xyzzy 0.2.2.233。
+> 2ch-mode, www-mode, kamail, outline-tree, migemo, netinstaller は動く。
+> browser.dll 関連，filer 関連は一部動作せず。Emacs より軽いという報告もある。
+> 詳細は [2ch Windows 板 「xyzzy Part12」 (2ちゃんねるのログ)](http://www.bookshelf.jp/2ch/win/1103400818.html) の >>217, >>220-222 あたりを
+> 参照のこと。）
 
 ## 謝辞 {#xyathxds}
 
