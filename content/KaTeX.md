@@ -602,6 +602,8 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 - [Windows7 で xyyzzy で KaTeX で TeX ライフ。](http://blog.goo.ne.jp/kei_matsuura2007/e/8c5ccbde9291d5410956b1e94e10dfaa)
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
+- [Windows7でLaTeX環境構築（Xyzzy，KaTeX，LaTeXmkなど）](http://ameblo.jp/tex-memo/entry-10476993822.html)
+- [xyzzy - べぇのうぃき.new()](http://dolphing.qee.jp/pukiwiki_new/index.php?xyzzy)
 - [xyzzy + KaTeX - chibacarの色々なメモ](http://d.hatena.ne.jp/chibacar/20080420/1225725981)
 - [Ill communication  .xyzzy](http://lphyl.blog69.fc2.com/blog-entry-180.html)
 - [xyzzy](http://leaf.dyndns.org/lumber/xyzzy.shtml)
