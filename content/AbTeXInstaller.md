@@ -27,7 +27,57 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 ### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-の実行方法は，リンク先から "abtexinst_0_81r7.zip" をダウンロードし，これを展開（解凍）します。そして "abtexinst.exe" を実行し，指示に従ってインストールします。
+の実行方法は，リンク先から "abtexinst_0_81r7.zip" をダウンロードし，これを展開（解凍）します。そして <strong>"abtexinst.exe" を実行してすぐに終了します。</strong><br>
+abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。<br>
+abtexinst.ini をメモ帳で開きます。<br>
+
+abtexinst.ini の \[Reg\] の項目は以下のように表示されていると思います。<br>
+
+```
+[Reg]
+texinst=texinst[0-9]*\.zip
+DVIOUT=tex[0-9]*w\.zip
+GS=gs[0-9]*w32full(-gpl)?\.zip
+GV=gsv[0-9]*w32\.exe
+```
+
+GS=gs\[0-9\]\*w32full(-gpl)?\\.zip では Ghostscript は zip ファイルしか表示されないので \[Reg\] の GS の値を修正します。<br>
+Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。<br>
+
+```
+[Reg]
+texinst=texinst[0-9]*\.zip
+DVIOUT=tex[0-9]*w\.zip
+GS=gs[0-9]*w32full(-gpl)?\.(zip|exe)
+GV=gsv[0-9]*w32\.exe
+```
+
+abtexinst.ini の \[Listup\] の項目は以下のように表示されていると思います。<br>
+
+```
+[Listup]
+luatex=1
+luatex-dev=0
+otf=0
+otfbeta=0
+otfdevel=1
+```
+
+デフォルトでは otfdevel のみインストールされます。<br>
+otf の最新版は otfbeta なので otf と otfbeta をインストールするように \[Listup\] の項目を修正します。<br>
+otf と otfbeta をインストールするには以下のように修正します。<br>
+
+```
+[Listup]
+luatex=1
+luatex-dev=0
+otf=1
+otfbeta=1
+otfdevel=0
+```
+
+abtexinst.ini を上書き保存してメモ帳を終了します。<br>
+abtexinst.exe を実行して指示に従ってインストールします。
 
 ***
 
@@ -107,56 +157,59 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　W32TeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣　　　 ∣☑tex318w.zip　　　　　　　　　　　　　　無い　　　2.5MB<br>
 　　　　 ∣☑aleph-w32.tar.xz　　　　　　　　　　　無い　　　4.1MB　　　　　　 ∣<br>
-　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　20.4MB　　　　Ghostscript<br>
+　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　13.0MB　　　　Ghostscript<br>
 　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　14.1MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
+　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　14.5MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
 　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　429KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
-　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　無い　　　451KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
-　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　101KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
+　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　無い　　　448KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　148KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
 　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　988KB　　　　GSview<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　92.2MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　20.0MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　GSview<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　95.1MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　23.2MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　100KB　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br>
-　　　　 ∣☑otfdevel.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
-　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.6MB<br>
+　　　　 ∣☑otf.tar.xz　　　　　　　　　　　　　 　　無い　　　1.5MB<br>
+　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
+　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
 　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　88KB<br>
 　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.5MB<br>
-　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　595KB<br>
-　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　536KB<br>
-　　　　 ∣☑t1fonts.tar.xz　　　　　　　　　　　　　無い　　　15.1MB<br>
+　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　552KB<br>
+　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　534KB<br>
+　　　　 ∣☑t1fonts.tar.xz　　　　　　　　　　　　　無い　　　22.9MB<br>
 　　　　 ∣☑t1utils-w32.tar.xz　　　　　　　　　　無い　　　119KB<br>
 　　　　 ∣☑tex4htk-w32.tar.xz　　　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑texinfotools-w32.tar.xz　　　　　　　無い　　　2.5MB<br>
-　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　92KB<br>
+　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　85KB<br>
 　　　　 ∣☑timesnew.tar.xz　　　　　　　　　　　　無い　　　301KB<br>
-　　　　 ∣☑ttf2pk-w32.tar.xz　　　　　　　　　　　無い　　　273KB<br>
-　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　445KB<br>
+　　　　 ∣☑ttf2pk-w32.tar.xz　　　　　　　　　　　無い　　　278KB<br>
+　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　447KB<br>
 　　　　 ∣☑txpx-pazofonts.tar.xz　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑txtutil.tar.xz　　　　　　　　　　　　　　無い　　　3KB<br>
 　　　　 ∣☑ums.tar.xz　　　　　　　　　　　　　　　無い　　　70KB<br>
-　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.5MB<br>
+　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.2MB<br>
 　　　　 ∣☑utf.tar.xz　　　　　　　　　　　　　　　　無い　　　706KB<br>
 　　　　 ∣☑vf-a2bk.tar.xz　　　　　　　　　　　　　無い　　　10KB<br>
 　　　　 ∣☑vf-n2bk.tar.xz　　　　　　　　　　　　　無い　　　13KB<br>
-　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.4MB<br>
-　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　15.5MB<br>
-　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　13.9MB<br>
+　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.3MB<br>
+　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　15.7MB<br>
+　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.0MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
 
 ***
 
 【注意】「TeX インストーラ 3」は確かに手軽なインストーラですが，<strong>「これでしかインストールできない」ようであれば，TeX に手を出す前に「昔はパソコン入門でやっていたようなこと」（ユーザ環境のカスタマイズ，コマンドライン上での作業など）を学んでおいた方が良いでしょう</strong>。
+
+【↑】「TeX インストーラ 3」以外のインストーラーのことも時々でいいから思い出してあげてください。
 
 ### 参考 {#r85dc0a5}
 
