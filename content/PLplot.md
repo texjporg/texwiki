@@ -27,7 +27,7 @@ Linux, Mac OS X, Windows で使用できます．<br>
 - [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
 - [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
 
-[Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Windows)](/Texmaker/#e1ab5b1e) を参考にして MinGW, CMake, Qt, zlib, libpng 等をインストールします．
+poppler を参考にして MinGW, CMake, Qt, zlib, libpng 等をインストールします．
 
 PLplot で PDF ファイルを作成する場合は [libHaru](http://libharu.org/) または Qt が必要です．<br>
 [libHaru](http://libharu.org/) をインストールします．<br>
