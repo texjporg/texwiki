@@ -175,7 +175,9 @@ xyzzy 版と言った方がわかりやすいかもしれません。
 公式サイトの Web Archive [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
 ([http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
 から KaTeX を選択してダウンロードできます．<br>
-Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます．<br>
+Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます．
+
+マルチフレーム版を試している方は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードしたものを使ってください。（上記公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください）。
 
 [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
 には画像付きでインストール方法が丁寧に述べられていますので，
