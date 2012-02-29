@@ -17,7 +17,7 @@ The NTS (<strong>N</strong>ew <strong>T</strong>ypesetting <strong>S</strong>yst
 TeX の少々不便なところを補うような実用性の高い拡張となっている。
 近年，ConTeXt や LaTeX における hyperref package など
 e-TeX の拡張モードを要求するマクロ類が増加しつつある。
-また pdfTeX，Aleph （Omega と e-TeX のマージ），[XeTeX](/XeTeX/)，[LuaTeX](/LuaTeX/) といった
+また pdfTeX，Aleph （Omega と e-TeX のマージ），[XeTeX](/XeTeX/)，[LuaTeX](/LuaTeX/), e-pTeX といった
 主だった TeX の拡張版においても e-TeX の拡張機能は取り入れられており，
 事実上の新標準とも呼ぶべき重要な拡張と言える。
 
@@ -109,6 +109,7 @@ TeX では，例えば
     含まれています (See [qa:50569](https://okumuralab.org/~okumura/texfaq/qa/50569.html))。
 
 - [The e-TeX Short Reference Manual](http://tex.loria.fr/moteurs/etex_ref.html)
+- [e-pTeX Wiki](http://sourceforge.jp/projects/eptex/wiki/FrontPage)
 
 ### コメント {#a61ff5c1}
 
