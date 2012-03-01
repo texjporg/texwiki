@@ -144,7 +144,7 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 
 ### cidfmap の初期設定 {#ra5fe424}
 
-cidfmap とは日中韓の CID fonts を他の CID fonts や TrueType fonts に代替させることを主な目的とした設定ファイルです．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行すればそれがなされます．
+日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．これを他の CID font や TrueType font に代替させることを主な目的とした 設定ファイルが cidfmap です．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行すればそれがなされます．
 
 ```
 gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfmap c:/gs/gs9.05/lib/mkcidfm.ps
@@ -152,7 +152,7 @@ gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfma
 
 パス名部分に関しては各自の環境に合わせて書き直して下さい．また，c:/windows/fonts というのは Windows の システムフォントフォルダのことです．
 
-一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にある日中韓のフォントがすべて使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダに見つかった TrueType fonts への代替設定がされるだけです．これだけで自由自在になるわけではないことに注意してください．
+一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にある CJK つまり 日中韓のフォントがすべて使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダに見つかった TrueType fonts への代替設定がされるだけです．これだけで自由自在になるわけではないことに注意してください．
 
 コマンドプロンプトがまともに触れないならば，Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．これをコピー・ペーストするだけでも大丈夫かもしれません(Windows の version による違いもあるので一概には言えませんが)．パス名部分については各自の環境に合わせることが必要になることがあります．
 
@@ -290,23 +290,27 @@ gs\gs?.??\Resource\CMap\ に入っています。主なものを挙げてみま�
 
 上記の CMap は $TEXMFMAIN/fonts/cmap// 以下にもあります。 <!-- $TEXMFLOCAL の一つの選択肢として \usr\local\share\texmf-local があります。 --> <!-- See http://tutimura.ath.cx/ptetex/?%C2%BF%BD%C5TEXMF%A5%C4%A5%EA%A1%BC --> <!-- また，“//” は「それ以下のディレクトリ」という意味です。 -->
 
-### CID-keyed fonts {#i4c98952}
+### CID font {#dc743646}
 
-CID-keyed font (他の項では単に CID font と呼ばれることもあります) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs?.??\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置してください．
+CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs?.??\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
 
-(original の意味での) CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
+CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs?.??\Resource\CIDFont\ に置くかリンクを張っておきます．
 
-OpenType フォーマットの CID-keyed フォントファイル (拡張子が .otf の OpenType フォントファイル，以下 otf font と呼ぶ）はファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs?.??\Resource\CIDFont\ にコピーするかリンクを張っておきます．
-
-gs の段階で日本語フォントを上記のように配置したもの (例えば HeiseiMin-W3) に代替させたい場合には，cidfmap に次のような alias の記述をしておきます．
+この HeiseiMin-W3 を例にとり説明します．gs の段階でこのフォントに代替させる場合，例えば ps file では Ryumin-Light が指定されていてこれを HeiseiMin-W3 に代替させる場合には，cidfmap に次のような alias の記述をしておきます．
 
 ```
 /Ryumin-Light    /HeiseiMin-W3 ;
 ```
 
-この場合には ps file において指定されている Ryumin-Light を HeiseiMin-W3 に代替させていることになります．代替をさせず，ps file に指定されている HeiseiMin-W3 をそのまま用いる場合には cidfmap には何も記述しません．
+代替をさせず，ps file に HeiseiMin-W3 が指定されていてそれをそのまま用いる場合には cidfmap には何も記述しません．
 
-otf font で出力する場合にはこれだけだと文字化け等が引きおこるときがあります．その場合には ps file で指定されたフォントに関する，フォント名-CMap名の結合・分解を行うためのファイルが必要になります．上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これを HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
+### 日本語 OpenType font {#j4509a9f}
+
+ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．
+
+CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs?.??\Resource\CIDFont\ に置くかリンクを張っておきます．
+
+cidfmap における設定は，CID font の場合と同様です．しかし，これだけでは文字化け等が引きおこることがあります．この問題が起こる場合には，ps file で指定されたフォントに関する，フォント名-CMap名の結合・分解を行うためのファイルが必要になります．上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これをそのまま HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
@@ -318,25 +322,23 @@ otf font で出力する場合にはこれだけだと文字化け等が引き�
 /Ryumin-Light-H /H [/Ryumin-Light] composefont pop
 ```
 
-という内容のファイルを gs\gs?.??\Resource\Font\ に Ryumin-Light-H という名前で作成する必要があります．どちらにしても，otf font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
+という内容のファイルを gs\gs?.??\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．なお，有名なフォントに対しては既に作成されていることもあるかもしれません．
 
-### TrueType outline fonts {#h311bbbd}
+### 日本語 TrueType font {#w9594c0a}
 
-ここでは cidfmap において，CID font を TrueType font に代替させる場合について記述します．
+ここでは日本語等 (CJK) の TrueType font を用いる場合について説明します．
 
-拡張子が ".ttf", ".ttc" である，TrueType フォントファイルや OpenType フォーマットの TrueType outline (2次 B-スプライン曲線アウトライン) フォントファイルは，cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます．gs のドキュメントによれば，これは絶対パス指定であるべきであるようです．相対パス指定をした場合の挙動は後述します．
+拡張子が .ttf や .ttc である TrueType font (拡張子が .otf であっても TrueType outline であるならば同様に使えるかもしれない) は，cidfmap での代替を行うことによって使用することができます．この場合，フォントファイルは，cidfmap にある /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます(フォントフィルを置くことは，リンクによっても代用できます)．gs のドキュメントによれば，これは絶対パス指定であるべきであるようです．相対パス指定をした場合の挙動は後述します．
 
--dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．既定の場所とは，gs における一般の file search path に含まれる場所，環境変数 GS_FONTPATH で指定される場所，および，gs の option の -sFONTPATH= に指定された場所のことです(なお，-sFONTPATH= は GS_FONTPATH をオーバーライドするようなので気をつけておいてください)．そして一般の file search path とは，gswin32c -h で表示されるもののうちの Search path: の部分に記述される場所のことです(これはたぶん gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所)．角藤版 Ghostscript の場合には，c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．-dSAFER による問題が起こった場合には，フォントをこの既定の場所のどこかに置くようにしてください．あるいは，環境変数 GS_FONTPATH の設定をして新たな既定の場所を作ってください．
+-dSAFER が用いられた場合には既定の場所にないフォントは探されません．つまり，絶対パス指定がなされていた場合にそれが既定の場所でなかったときには error となります．既定の場所とは，gs における一般の file search path に含まれる場所，環境変数 GS_FONTPATH で指定される場所，および，gs の option の -sFONTPATH= に指定された場所のことです(なお，-sFONTPATH= は GS_FONTPATH をオーバーライドするようなので気をつけておいてください．特に，GSview 使用時に注意)．そして一般の file search path とは，gswin32c -h で表示されるもののうちの Search path: の部分に記述される場所のことです(これはたぶん gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所)．角藤版 Ghostscript の場合には，c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．-dSAFER による問題が起こった場合には，フォントをこの既定の場所のどこかに置くようにしてください．あるいは，環境変数 GS_FONTPATH の設定をして新たな既定の場所を作ってください．
 
 相対パス指定，つまり /Path (msmincho.ttc) のような記述をした場合には，上記の既定の場所からフォントが探されます．ただしこの場合には，GS_FONTPATH や -sFONTPATH= による記述の場所は除かれ，一般の file search path からのみ探されます．
 
--dSAFER の問題が起こらないようにして新たにフォントの設定をする場合には，cidfmap では絶対パス指定にしておいて，そのパスを既定の場所に含まれるようにしておくのがもっとも正統な方法でしょう．しかし，相対パスにしておいた方が簡単かもしれません．相対パス指定にしておくならば，例えば，角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます．また，環境変数 GS_LIB に gs\fonts に相当するものを付け加えて，少し古めの形態で使うことも可能でしょう(ただしこれを行うためには，環境変数 GS_LIB にあらかじめ何を設定すべきかを知っていなければなりません)．なお，上記で書いてきた「フォントを置く」というのは，msmincho.ttc のような実フォントファイルを置くことを指しますが，これはリンクを張ることでも代用できます．
+-dSAFER の問題が起こらないようにして新たにフォントの設定をする場合には，cidfmap では絶対パス指定にしておいて，そのパスを既定の場所に含まれるようにしておくのが正統的な方法でしょう．しかし，相対パスにしておいた方が簡単かもしれません．相対パス指定にしておくならば，例えば，角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます．また，環境変数 GS_LIB に gs\fonts に相当するものを付け加えて，少し古めの形態で使うことも可能でしょう(ただしこれを行うためには，環境変数 GS_LIB にあらかじめ何を設定すべきかを知っていなければなりません)．
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/)を使った pLaTeX2e ソースから（platex，dvips を通して）
-変換した PostScript ファイルを（ps2pdf を使うなどして）
-Ghostscript で PDF に変換する場合には，gs\gs?.??\Resource\Font\ に
+[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．その場合には，以下の形でのファイルの作成が必要となります．すなわち，ps2pdf を使うなどして Ghostscript を用いて pdf file を作成する場合等には，gs\gs?.??\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -414,6 +416,34 @@ composefont pop
 > - STSong-Light-Identity-V
 
 [TeXWiki:OTF #dvips 用の map ファイル](/OTF/#k1eb9f9c) も参照。
+
+### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
+
+角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs?.??\kanji\kconfig.ps の記述内容によって設定されます．
+
+#### gs\gs?.??\kanji\kconfig.ps の記述例 {#d0c50ae3}
+
+***
+
+```
+%% Bitmap fonts
+%%
+/Ryumin-Light      4300000  (ＭＳ 明朝)             win32BMkanji
+%/GothicBBB-Medium  4300200  (HGｺﾞｼｯｸM)              win32BMkanji
+/GothicBBB-Medium  4300200  (ＭＳ ゴシック)         win32BMkanji
+/FutoMinA101-Bold  4300400  (HG明朝B)               win32BMkanji
+/FutoGoB101-Bold   4300600  (HGｺﾞｼｯｸE)              win32BMkanji
+/Jun101-Light      4300800  (HG丸ｺﾞｼｯｸM-PRO)        win32BMkanji
+/MidashiMin-MA31   4301000  (HG明朝E)               win32BMkanji
+/MidashiGo-MB31    4301200  (HG創英角ｺﾞｼｯｸUB)       win32BMkanji
+
+%/HiraMinStdN-W2    4301400  (ヒラギノ明朝 StdN W2)  win32BMkanji
+/HiraMinStdN-W2    4301400  (ＭＳ 明朝)             win32BMkanji
+```
+
+***
+
+このファイルは Shift_JIS で保存してください。
 
 ### gs\gs?.??\lib\cidfmap の記述例 {#m115a63f}
 
@@ -612,38 +642,6 @@ composefont pop
 <!-- /HiraginoKaku-W8-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg8.ttc)  /SubfontID 1 >> ; -->
 
 ***
-
-### オプション “-dWINKANJI” と “-dNOWINKANJI” {#mef5f1fb}
-
-オプション “-dWINKANJI” を指定すると，日本語フォントを
-Win32API ドライバを使って表示します。ただしオプション “-dNOWINKANJI” が
-同時に指定されている場合には，オプション “-dWINKANJI” は
-無効化されます。Win32API ドライバで使うフォントの割り当ては
-gs\gs?.??\kanji\kconfig.ps の記述内容によって設定されます。
-
-#### gs\gs?.??\kanji\kconfig.ps の記述例 {#d6cfe346}
-
-***
-
-```
-%% Bitmap fonts
-%%
-/Ryumin-Light      4300000  (ＭＳ 明朝)             win32BMkanji
-%/GothicBBB-Medium  4300200  (HGｺﾞｼｯｸM)              win32BMkanji
-/GothicBBB-Medium  4300200  (ＭＳ ゴシック)         win32BMkanji
-/FutoMinA101-Bold  4300400  (HG明朝B)               win32BMkanji
-/FutoGoB101-Bold   4300600  (HGｺﾞｼｯｸE)              win32BMkanji
-/Jun101-Light      4300800  (HG丸ｺﾞｼｯｸM-PRO)        win32BMkanji
-/MidashiMin-MA31   4301000  (HG明朝E)               win32BMkanji
-/MidashiGo-MB31    4301200  (HG創英角ｺﾞｼｯｸUB)       win32BMkanji
-
-%/HiraMinStdN-W2    4301400  (ヒラギノ明朝 StdN W2)  win32BMkanji
-/HiraMinStdN-W2    4301400  (ＭＳ 明朝)             win32BMkanji
-```
-
-***
-
-このファイルは Shift_JIS で保存してください。
 
 ### PDF への CJK フォントの非埋め込み制御 {#zd1cf8d8}
 
