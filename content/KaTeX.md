@@ -13,12 +13,40 @@ pukiwiki: "KaTeX"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## KaTeX カスタム版とは {#m8b25abb}
+
+KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX です．<br>
+マルチフレーム版専用の KaTeX カスタム版は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードできます．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
+マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
+
+multiframe 0.2.3.4 RC1 でテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
+C-c C-b i で補完しようとするとオリジナル版とは動作が異なり
+
+```
+katexenv start loading by mumurik
+```
+
+と表示された後
+
+```
+katexenv end loading by mumurik
+```
+
+と表示されて補完されるようです．<br>
+表示されるのは初回の補完時のみで2回目以降は表示されません．<br>
+
+## EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
+
+EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
+マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードできます．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
+マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
+
 ## KaTeX とは {#o741d921}
 
 KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
-<del>KaTeX は [マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads) からダウンロードできます．</del>（左のページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．マルチフレーム版でないxyzzyを使う方は，下のリンクからダウンロードしたものを使ってください．）<br>
-
 KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
 
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
@@ -251,6 +279,9 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
     (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
 ;; dviout で forward search
 (defun dviout-forward-search ()
   (interactive)
@@ -259,6 +290,9 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
     (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
                           (format nil "~D" (current-line-number)) " " tex-file "\"")
                   :exec-directory (directory-namestring tex-file))))
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
 ```
 
 ***
@@ -317,7 +351,7 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -synctex=1")
+(setq elisp::tex-command "platex -synctex=1 -src-specials")
 ```
 
 と書いておきます。
@@ -337,11 +371,14 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
     (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
 ```
 
 ***
 
-すると，M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
+すると，C-c s または M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ### forward search (SumatraPDF v1.9.4622 未満の場合) {#n9aa887a}
@@ -361,11 +398,14 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
     (call-process (concat "C:/w32tex/NDde/Binary/fwdsumatrapdf" " " pdf-file " " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
 ```
 
 ***
 
-すると，M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
+すると，C-c s または M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ### inverse search {#v8e96370}
@@ -377,7 +417,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -src-specials")
+(setq elisp::tex-command "platex -synctex=1 -src-specials")
 ```
 
 と書いておきます。
@@ -397,11 +437,14 @@ KaTeX を使う場合は [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wik
     (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
                           (format nil "~D" (current-line-number)) " " tex-file "\"")
                   :exec-directory (directory-namestring tex-file))))
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
 ```
 
 ***
 
-すると，M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
+すると，C-c d または M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ### inverse search {#o8fecad0}
