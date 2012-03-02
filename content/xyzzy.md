@@ -56,6 +56,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 - [英語版](http://xyzzy.s53.xrea.com/english/archive/)
 - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
     - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
+    - [動かないlispパッケージ一覧](https://bitbucket.org/mumurik/xyzzy/wiki/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84lisp%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7)
     - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
     - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
@@ -76,19 +77,14 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ## ダウンロードとインストール {#xy9167cb}
 
-まず，[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。
-
-圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。
-
-[インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。
-
+まず，[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。<br>
+圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。<br>
+[インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。<br>
 USB メモリで使用する方は，
 [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
-がおすすめです。
-
+がおすすめです。<br>
 あとは自分専用の設定ファイルを作りたければ，
-ホームディレクトリのための環境変数 XYZZYHOME を設定します。
-
+ホームディレクトリのための環境変数 XYZZYHOME を設定します。<br>
 「環境変数」というものがよくわからない方や環境変数を設定できない方の
 場合には，xyzzy\usr\\%USERNAME%\w??\xyzzy.ini （w??\ は
 OS によって wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ となります）に，例えば
@@ -99,46 +95,37 @@ homeDir=C:/xyzzy/usr/UserName/wxp
 ```
 
 のように末尾に追記しておきます（後述するマクロを使うためにも，
-この作業は是非やっておいてください）。
-
+この作業は是非やっておいてください）。<br>
 ショートカットは
-xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう。
-
+xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう。<br>
 そうしないと，既にファイルを xyzzy で開いているときにショートカットに
-ドラッグ &amp; ドロップすると，xyzzy が二重に起動してしまうのです。
+ドラッグ &amp; ドロップすると，xyzzy が二重に起動してしまうのです。<br>
 
 ## xyzzy の基本的な使い方 {#xycb6f8d}
 
-最初に起動したときにはあまりの地味さに驚くことでしょう。でも大丈夫です。
-
+最初に起動したときにはあまりの地味さに驚くことでしょう。でも大丈夫です。<br>
 メニューより ［表示］ → ［ツールバー］ と選び，
 ［標準］ と ［バッファ］ にチェックを入れることで，標準のツールバーと
-ファイル名（正確にはバッファ名）の書かれたタブが表示されるようになります。
-
-試しにファイルを開いてみましょう。［ファイル］ → ［開く］ と選ぶか，
+ファイル名（正確にはバッファ名）の書かれたタブが表示されるようになります。<br>
+試しにファイルを開いてみましょう。<br>
+［ファイル］ → ［開く］ と選ぶか，
 ツールバーの ［開く］ボタンを押すと，
-ファイルを開くためのダイアログが出てきます。
-
+ファイルを開くためのダイアログが出てきます。<br>
 同様に，保存したり検索したり他のエディタに見られるような設定をするときも，
-このようなダイアログが表示され，マウスで操作することができます。（Emacs 使いの
-方は，Ctrl + X, Ctrl + F \[C-x, C-f\] と入力してファイルを開いてみて
-ください。Emacs 風にミニバッファからファイルを入力して開くことができます。）
-
+このようなダイアログが表示され，マウスで操作することができます。<br>
+（Emacs 使いの方は，Ctrl + X, Ctrl + F \[C-x, C-f\] と入力してファイルを開いてみて
+ください。Emacs 風にミニバッファからファイルを入力して開くことができます。）<br>
 このことから，少なくともマウス操作においては，他のエディタを
-お使いの方にとっても違和感はほとんどないのではないかと思われます。
-
+お使いの方にとっても違和感はほとんどないのではないかと思われます。<br>
 また先述したように標準では Emacs 風のキーボードショートカットに
 なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
-Windows 標準のキーボードショートカットが使えるようになります。
-
+Windows 標準のキーボードショートカットが使えるようになります。<br>
 しかしながら，
 この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
 使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
-要望を完全にはかなえてくれません。
-
+要望を完全にはかなえてくれません。<br>
 そのような方は，
-大友さん作の[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。
-
+大友さん作の[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。<br>
 インストールは，[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) を
 ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
 初期設定ファイルで，
@@ -147,18 +134,15 @@ Windows 標準のキーボードショートカットが使えるようになり
 (load-library "pavail")
 ```
 
-と記述するだけです。
-
+と記述するだけです。<br>
 これで，xyzzy を快適に使うことができるように
-なるかもしれません（私が使っている分には，不具合は今のところありません）。
-
+なるかもしれません（私が使っている分には，不具合は今のところありません）。<br>
 なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
 まったく宣伝していません。
-従って，まだ Netinstaller からはインストールできません。
-
+従って，まだ Netinstaller からはインストールできません。<br>
 これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
 同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
-ものですが，次のところが元祖で pavail.l が後発になると思います。
+ものですが，次のところが元祖で pavail.l が後発になると思います。<br>
 
 - [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
 
@@ -528,60 +512,9 @@ insert というフォルダを新たに作り，textemplate.tex という雛形
 
 ### 動的補完でらくらく入力 {#xydb6f8d}
 
-[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，\text と入力した後に小さなメニューを出している様子が気にかかった方もいらっしゃるでしょう。
-これは，動的補完 (Dabbrev) という xyzzy 標準の機能を利用しているのです。
-
-特に何かインストールする必要はありません。texkey というファイル
-（[キーワードファイルのサンプル](http://blechmusik.xrea.jp/resources/xyzzy/katex/texkey)も
-示しておきます）に TeX の命令などをまとめておき，
-これをホームディレクトリ（~/.xyzzy のあるフォルダ）に置きます。~/.xyzzy に
-[XyzzyWiki:質問箱/112](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/112)
-（ご教示くださった方々に感謝）を参考に，
-
-```
-(in-package "elisp")
-(require "katex")
-```
-
-の後ろ（書いていない場合は追加）に
-
-```
-;;; keyword list
-(defvar *my-latex-completion-list* nil)
-(defvar *my-latex-popup-completion-list* :always)
-(defvar *my-latex-keyword-hash-table* nil)
-(defvar *my-latex-keyword-file* "~/texkey")
-
-(defun my-latex-completion ()
-  (interactive)
-  (or *my-latex-completion-list*
-      (setq *my-latex-completion-list* (make-list-from-keyword-table *my-latex-keyword-hash-table*))
-      (return-from my-latex-completion nil))
-  (let ((opoint (point)))
-    ;(when (skip-syntax-spec-backward "w_.")
-    (when (skip-syntax-spec-backward "w_.@")
-      (let ((from (point)))
-        (goto-char opoint)
-        (do-completion from opoint :list *my-latex-completion-list*
-                      nil nil *my-latex-popup-completion-list*)))))
-
-(defun my-latex-load-keyword ()
-  (and *my-latex-keyword-file*
-       (null *my-latex-keyword-hash-table*)
-       (setq *my-latex-keyword-hash-table*
-             (load-keyword-file *my-latex-keyword-file* t))))
-
-(add-hook 'elisp::katex-mode-hook
-         #'(lambda ()
-             (my-latex-load-keyword)
-             (define-key elisp::*KaTeX-mode-map* #\C-. 'my-latex-completion)))
-```
-
-などと記入しておきます。こうしておくと，たとえば \docu などと TeX ソース編集中に書きかけたときに Ctrl + . と入力する (C-.) ことで，\documentclass などのリストが自動的に出てきます。
-矢印キーの上下などで選択し，Enter を押すと補完されます。
-
-2005年11月4日9時くらいまでの記述は paren などの設定との共存ができませんでしたが，上記のとおりの記述であれば大丈夫です。
-前の設定を書いた方は，申し訳ありませんが前の設定を消して上のものに差し替えてください。
+parentag についての記述は
+[KaTeX#動的補完でらくらく入力](/KaTeX/#xydb6f8d)
+に移転することにしました。そちらを是非ご参照いただければと思います。
 
 ### スペルチェックソフト Aspell を xyzzy から使う {#xyaspella}
 
