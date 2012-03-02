@@ -56,6 +56,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 - [英語版](http://xyzzy.s53.xrea.com/english/archive/)
 - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
     - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
+    - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
     - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
