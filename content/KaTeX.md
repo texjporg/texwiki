@@ -190,6 +190,10 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 
 - xyzzy ML内にてとりあえず公開。
 
+### スクリーンショット {#wa93a18b}
+
+<img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="KaTeX">
+
 ## KaTeX で TeX の命令をラクラク入力 {#k658955e}
 
 TeX で命令を書いているときに，そうした命令を書いていくのがおっくうになることがありませんか？<br>
@@ -617,14 +621,14 @@ KaHTML についての記述は
 
 ### parentag {#xyprtags}
 
-基本的な命令のみで TeX 文書を書いている場合はいいのですが，XyMTeX などで命令の入れ子を多用する場合や，TeX のパッケージを作成する場合には，ある括弧がどの括弧に対応しているのかが分かりにくくなり，混乱してしまうことがあります。
-
-そんなときは parentag をお試しください。閉じ括弧を書くと，対応する開き括弧にジャンプします。
+基本的な命令のみで TeX 文書を書いている場合はいいのですが，XyMTeX などで命令の入れ子を多用する場合や，TeX のパッケージを作成する場合には，ある括弧がどの括弧に対応しているのかが分かりにくくなり，混乱してしまうことがあります。<br>
+そんなときは parentag をお試しください。閉じ括弧を書くと，対応する開き括弧にジャンプします。<br>
 
 netinstaller を用いる場合は
 [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
 ([http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
-より，parentag をインストールします。その上で，たとえば次のように記述します。
+より，parentag をインストールします。<br>
+その上で，たとえば次のように記述します。<br>
 
 ```
 ;;; parentag
@@ -667,7 +671,64 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 ))
 ```
 
-のように記述します。これでもう括弧で悩むことはなくなるはずです。
+のように記述します。これでもう括弧で悩むことはなくなるはずです。<br>
+
+## 動的補完でらくらく入力 {#xydb6f8d}
+
+[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，\text と入力した後に小さなメニューを出している様子が気にかかった方もいらっしゃるでしょう。
+これは，動的補完 (Dabbrev) という xyzzy 標準の機能を利用しているのです。
+
+特に何かインストールする必要はありません。texkey というファイル
+（[キーワードファイルのサンプル \[Internet Archive\]](http://web.archive.org/web/20060824011428/http://www.klavis.info/texkey)も
+示しておきます）に TeX の命令などをまとめておき，
+これをホームディレクトリ（~/.xyzzy のあるフォルダ）に置きます。~/.xyzzy に
+[XyzzyWiki:質問箱/112](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/112)
+（ご教示くださった方々に感謝）を参考に，
+
+```
+(in-package "elisp")
+(require "katex")
+```
+
+の後ろ（書いていない場合は追加）に
+
+```
+;;; keyword list
+(defvar *my-latex-completion-list* nil)
+(defvar *my-latex-popup-completion-list* :always)
+(defvar *my-latex-keyword-hash-table* nil)
+(defvar *my-latex-keyword-file* "~/texkey")
+
+(defun my-latex-completion ()
+  (interactive)
+  (or *my-latex-completion-list*
+      (setq *my-latex-completion-list* (make-list-from-keyword-table *my-latex-keyword-hash-table*))
+      (return-from my-latex-completion nil))
+  (let ((opoint (point)))
+    ;(when (skip-syntax-spec-backward "w_.")
+    (when (skip-syntax-spec-backward "w_.@")
+      (let ((from (point)))
+        (goto-char opoint)
+        (do-completion from opoint :list *my-latex-completion-list*
+                      nil nil *my-latex-popup-completion-list*)))))
+
+(defun my-latex-load-keyword ()
+  (and *my-latex-keyword-file*
+       (null *my-latex-keyword-hash-table*)
+       (setq *my-latex-keyword-hash-table*
+             (load-keyword-file *my-latex-keyword-file* t))))
+
+(add-hook 'elisp::katex-mode-hook
+         #'(lambda ()
+             (my-latex-load-keyword)
+             (define-key elisp::*KaTeX-mode-map* #\C-. 'my-latex-completion)))
+```
+
+などと記入しておきます。こうしておくと，たとえば \docu などと TeX ソース編集中に書きかけたときに Ctrl + . と入力する (C-.) ことで，\documentclass などのリストが自動的に出てきます。
+矢印キーの上下などで選択し，Enter を押すと補完されます。
+
+2005年11月4日9時くらいまでの記述は paren などの設定との共存ができませんでしたが，上記のとおりの記述であれば大丈夫です。
+前の設定を書いた方は，申し訳ありませんが前の設定を消して上のものに差し替えてください。
 
 ## 関連リンク {#h4cf9c4e}
 
@@ -681,6 +742,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
     - [『xyzzy への花鳥のインストール』 (PDF)](http://leaf.dyndns.org/lumber/down/xyzzy/install_070203.pdf)
 - [xyzzy + KaTeX - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?xyzzy%20%2B%20KaTeX)
 - [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
+- [質問箱/112 - XyzzyWiki (Dabbrevで、ある開いていないファイルのみを読み込んで補完する方法)](http://xyzzy.s53.xrea.com/wiki/index.php?%BC%C1%CC%E4%C8%A2%2F112)
 - [katex - calyoMEMO](http://www.wikihouse.com/calyo/index.php?katex)
 - [katex-kill-proc](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?33a2536c21b7ead86ca4343ecece4446)
 - [katex-autoload-dir](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?4876687f1858d1f88578004a36293b60)
