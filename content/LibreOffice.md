@@ -76,6 +76,8 @@ OpenOffice.org はフリーのオフィススイートです．
 
 ## 関連リンク {#x6de2338}
 
+- \[[会津若松市\]リブレオフィス導入時に発生した事例](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_prob.htm)
+- \[[会津若松市\]リブレオフィス導入までの経過](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_info_koutei.htm)
 - [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・OpenOffice.org / LibreOffice のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
 - [memo: Windows で OOoLatex を使う / Ubuntu で OOoLatex を使う](http://www.ms.osakafu-u.ac.jp/~horita/?c=memo2)
