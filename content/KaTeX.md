@@ -20,7 +20,7 @@ KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX で�
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
 マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
 
-multiframe 0.2.3.4 RC1 でテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
+multiframe 0.2.3.4 RC2 でテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
 C-c C-b i で補完しようとするとオリジナル版とは動作が異なり
 
 ```
@@ -207,15 +207,12 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 
 マルチフレーム版を試している方は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードしたものを使ってください。（上記公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください）。
 
-[XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
-には画像付きでインストール方法が丁寧に述べられていますので，
-併せてご覧ください。
-
 ## 設定 {#pea65968}
 
 <!-- KaTeX 用の設定ですが，お勧めの設定とあわせ，~/.xyzzy に -->
 
-&#x7e;/.xyzzy などの初期設定ファイルに
+katex.zip または katex.lzh を展開して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
+&#x7e;/.xyzzy などの初期設定ファイルに設定を記述します．<br>
 
 ***
 
@@ -223,55 +220,28 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 ;;
 ;; KaTeX
 ;;
-;; ロードパスに KaTeX のあるディレクトリを追加
 (push (merge-pathnames "site-lisp/katex" (si:system-root)) *load-path*)
-;; elispパッケージを有効にする
 (require "elisp")
-;; 拡張子と関数の関連付け
-;; （拡張子 “.ins”，“.ini” は
-;;   Windows 上で TeX 関連以外のプログラムと関連付けられており，
-;;   拡張子 “.def”，“.cfg” は
-;;   TeX 関連以外のプログラムでもよく使われているので，
-;;   この4つの拡張子は含めていない。）
 (push '("\\.\\(tex\\|aux\\|toc\\|lof\\|lot\\|idx\\|ind\\|glo\\|gls\\|bbl\\|sty\\|cls\\|clo\\|dtx\\|fdd?\\|ltx\\|dfu\\|ldf\\|4ht\\)$" . elisp::katex-mode) *auto-mode-alist*)
-;; オートロード
 (autoload 'elisp::katex-mode "katex" t)
-;; YaTeX のデフォルトが (setq YaTeX-inhibit-prefix-letter t) に変更されたので
-;; KaTeX も (setq elisp::KaTeX-inhibit-prefix-letter t) に設定
 (setq elisp::KaTeX-inhibit-prefix-letter t)
-;; (setq YaTeX-kanji-code nil) に合わせて
-;; (setq elisp::KaTeX-kanji-code nil) に設定
 (setq elisp::KaTeX-kanji-code nil)
-;; タイプセットを e-pLaTeX で
 (setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
-;; タイプセットを e-upLaTeX で
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
-;; 2009/07/20 に W32TeX の jbibtex.exe は pbibtex.exe に変更されました
-;; pbibtex を使う
 (setq elisp::bibtex-command "pbibtex -kanji=utf8")
-;; upbibtex を使う
 ;(setq elisp::bibtex-command "upbibtex -kanji=utf8")
-;; mendex を使う
 (setq elisp::makeindex-command "mendex -U")
-;; Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 (setq elisp::dviprint-command-format "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")
-;; dviout に PATH を通しておらず，C:\w32tex\dviout\dviout をプレビューに使いたい場合
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
-;; M-RET を有効に
 (set-extended-key-translate-table exkey-M-return #\M-RET)
-;; ツールバー表示
 (setq elisp::*KaTeX-use-toolbar* t)
-;; ショートカット
 (defun user::katex-mode ()
   (interactive)
   (elisp::katex-mode))
-;; jsarticle をデフォルトに 
 (setq elisp::KaTeX-default-documentclass "jsarticle")
-;; 自動改行なし
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (auto-fill-mode nil)))
-;; SumatraPDF で forward search
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
@@ -282,7 +252,6 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
-;; dviout で forward search
 (defun dviout-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
@@ -297,7 +266,39 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 
 ***
 
-などと記入しておきます。<br>
+上記の設定では
+
+```
+;; ロードパスに KaTeX のあるディレクトリを追加
+;; elispパッケージを有効にする
+;; 拡張子と関数の関連付け
+;; （拡張子 “.ins”，“.ini” は
+;;   Windows 上で TeX 関連以外のプログラムと関連付けられており，
+;;   拡張子 “.def”，“.cfg” は
+;;   TeX 関連以外のプログラムでもよく使われているので，
+;;   この4つの拡張子は含めていない。）
+;; KaTeX のオートロード
+;; YaTeX のデフォルトが (setq YaTeX-inhibit-prefix-letter t) に変更されたので
+;; KaTeX も (setq elisp::KaTeX-inhibit-prefix-letter t) に設定
+;; (setq YaTeX-kanji-code nil) に合わせて
+;; (setq elisp::KaTeX-kanji-code nil) に設定
+;; タイプセットを e-pLaTeX で
+;; タイプセットを e-upLaTeX で
+;; pbibtex を使う
+;; upbibtex を使う
+;; mendex を使う
+;; Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
+;; C:\w32tex\dviout\dviout をプレビューに使う
+;; M-RET を有効に
+;; ツールバー表示
+;; ショートカット
+;; jsarticle をデフォルトに
+;; 自動改行なし
+;; SumatraPDF で forward search
+;; dviout で forward search
+```
+
+といった設定がされています。<br>
 「自動改行なし」や jsarticle 関連，ツールバーの表示あたりはお好みです。<br>
 
 ## 使い方 {#ycbb077d}
@@ -309,7 +310,7 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil)</th><th style="color:#FFF;background-color:#3C0;text-align:center">機能</th></tr>
 > <tr><td>Process menu -&gt; LaTeX</td><td>C-c C-t j</td><td>C-c t j</td><td>タイプセット</td></tr>
 > <tr><td>Process menu -&gt; BibTeX</td><td>C-c C-t b</td><td>C-c t b</td><td>BibTeX</td></tr>
 > <tr><td>Process menu -&gt; makeindex</td><td>C-c C-t i</td><td>C-c t i</td><td>MakeIndex</td></tr>
@@ -326,15 +327,43 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil)</th><th style="color:#FFF;background-color:#22D;text-align:center">補完</th></tr>
-> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b &lt;SPC&gt;</td><td>C-c b &lt;SPC&gt;</td><td>begin 型補完</td></tr>
-> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B &lt;SPC&gt;</td><td>C-c B &lt;SPC&gt;</td><td>指定領域に対して begin 型補完</td></tr>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil)</th><th style="color:#FFF;background-color:#3C0;text-align:center">補完</th></tr>
+> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b SPC</td><td>C-c b SPC</td><td>begin 型補完</td></tr>
+> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B SPC</td><td>C-c B SPC</td><td>指定領域に対して begin 型補完</td></tr>
 > <tr><td>Section type -&gt; リストから選択</td><td>C-c C-s</td><td>C-c s</td><td>section 型補完</td></tr>
 > <tr><td>Section type region -&gt; リストから選択</td><td>C-c S</td><td>C-c S</td><td>指定領域に対して section 型補完</td></tr>
 > <tr><td>Insert end environment</td><td>C-c C-e</td><td>C-c e</td><td>end 補完</td></tr>
 > </tbody>
 > </table>
 >
+
+### タイプセット方式の変更 {#z61cfd29}
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials RET</td><td>platex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex.bat RET</td><td>pdfplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials RET</td><td>uplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex.bat RET</td><td>pdfuplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET xelatex -synctex=1 RET</td><td>xelatex</td></tr>
+> </tbody>
+> </table>
+>
+
+### タイプセット方式の確認 {#fe934cb0}
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th></tr>
+> <tr><td>M-x describe-variable RET elisp::tex-command RET</td></tr>
+> </tbody>
+> </table>
+>
+
+### その他 {#t6621c20}
 
 使い方は Emacs のマクロ (Elisp) である YaTeX とほぼ同じですので，[TeXWiki:YaTeX](/YaTeX/) も参照してください。
 
@@ -652,6 +681,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 - [xyzzy](http://leaf.dyndns.org/lumber/xyzzy.shtml)
     - [『xyzzy への花鳥のインストール』 (PDF)](http://leaf.dyndns.org/lumber/down/xyzzy/install_070203.pdf)
 - [xyzzy + KaTeX - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?xyzzy%20%2B%20KaTeX)
+- [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
 - [katex - calyoMEMO](http://www.wikihouse.com/calyo/index.php?katex)
 - [katex-kill-proc](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?33a2536c21b7ead86ca4343ecece4446)
 - [katex-autoload-dir](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?4876687f1858d1f88578004a36293b60)
