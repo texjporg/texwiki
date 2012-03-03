@@ -194,6 +194,23 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 
 <img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="KaTeX">
 
+<br>
+
+***
+
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.4@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
+
+...<br>
+<span style="color:White;background-color:Black;">&#x2d;----　<strong>katex.tex</strong>　(かてふ)　\[utf8n:crlf\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+J)latex R)egion B)ibtex mk(I)ndex K)ill-latex P)review S)earch V)iewerr L)pr<br>
+
+***
+
 ## KaTeX で TeX の命令をラクラク入力 {#k658955e}
 
 TeX で命令を書いているときに，そうした命令を書いていくのがおっくうになることがありませんか？<br>
@@ -212,10 +229,37 @@ Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウ�
 
 ## 設定 {#pea65968}
 
-<!-- KaTeX 用の設定ですが，お勧めの設定とあわせ，~/.xyzzy に -->
+環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](http://www.mingw.org/) Shell (MSYS) や [Cygwin](http://www.cygwin.com/) Bash Shell から
+
+```
+$ cd $XYZZYHOME
+$ touch .xyzzy
+```
+
+で作成可能です．
+
+MinGW や Cygwin がインストールされていない場合は，環境変数 XYZZYHOME で設定されているフォルダで，テキスト ドキュメントを新規作成し，メモ帳で
+
+```
+".xyzzy"
+```
+
+のようにダブルクォーテーションを付けて保存すれば作成可能です．
 
 katex.zip または katex.lzh を展開して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
-&#x7e;/.xyzzy などの初期設定ファイルに設定を記述します．<br>
+
+***
+
+```
+C:.
+└─xyzzy
+    └─site-lisp
+        └─katex
+```
+
+***
+
+&#x7e;/.xyzzy ファイルに設定を記述します．<br>
 
 ***
 
@@ -229,11 +273,14 @@ katex.zip または katex.lzh を展開して katex フォルダーをコピー�
 (autoload 'elisp::katex-mode "katex" t)
 (setq elisp::KaTeX-inhibit-prefix-letter t)
 (setq elisp::KaTeX-kanji-code nil)
+(setq elisp::KaTeX-use-AMS-LaTeX t)
+(setq elisp::KaTeX-default-documentclass "jsarticle")
 (setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
-(setq elisp::bibtex-command "pbibtex -kanji=utf8")
-;(setq elisp::bibtex-command "upbibtex -kanji=utf8")
-(setq elisp::makeindex-command "mendex -U")
+(setq elisp::bibtex-command (cond ((string-match "uplatex" elisp::tex-command) "upbibtex -kanji=utf8")
+                                  ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")))
+(setq elisp::makeindex-command (cond ((string-match "uplatex" elisp::tex-command) "mendex -U")
+                                     ((string-match "platex" elisp::tex-command) "mendex -U")))
 (setq elisp::dviprint-command-format "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
 (set-extended-key-translate-table exkey-M-return #\M-RET)
@@ -241,7 +288,6 @@ katex.zip または katex.lzh を展開して katex フォルダーをコピー�
 (defun user::katex-mode ()
   (interactive)
   (elisp::katex-mode))
-(setq elisp::KaTeX-default-documentclass "jsarticle")
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (auto-fill-mode nil)))
@@ -285,17 +331,19 @@ katex.zip または katex.lzh を展開して katex フォルダーをコピー�
 ;; KaTeX も (setq elisp::KaTeX-inhibit-prefix-letter t) に設定
 ;; (setq YaTeX-kanji-code nil) に合わせて
 ;; (setq elisp::KaTeX-kanji-code nil) に設定
+;; AMS-LaTeX を使う
+;; jsarticle をデフォルトに
 ;; タイプセットを e-pLaTeX で
 ;; タイプセットを e-upLaTeX で
-;; pbibtex を使う
-;; upbibtex を使う
-;; mendex を使う
+;; uplatex の場合は upbibtex を使う
+;; platex の場合は pbibtex を使う
+;; uplatex の場合は mendex を使う
+;; platex の場合は mendex を使う
 ;; Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
 ;; M-RET を有効に
 ;; ツールバー表示
 ;; ショートカット
-;; jsarticle をデフォルトに
 ;; 自動改行なし
 ;; SumatraPDF で forward search
 ;; dviout で forward search
@@ -383,7 +431,7 @@ katex.zip または katex.lzh を展開して katex フォルダーをコピー�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -synctex=1 -src-specials")
+(setq elisp::tex-command "platex -synctex=1")
 ```
 
 と書いておきます。
@@ -449,7 +497,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -synctex=1 -src-specials")
+(setq elisp::tex-command "platex -src-specials")
 ```
 
 と書いておきます。
@@ -738,6 +786,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 - [xyzzy - べぇのうぃき.new()](http://dolphing.qee.jp/pukiwiki_new/index.php?xyzzy)
 - [xyzzy + KaTeX - chibacarの色々なメモ](http://d.hatena.ne.jp/chibacar/20080420/1225725981)
 - [Ill communication  .xyzzy](http://lphyl.blog69.fc2.com/blog-entry-180.html)
+- [Texとxyzzy+katexのインストール覚書](http://smallsteps06.blogspot.com/2008/01/texxyzzykatex.html)
 - [xyzzy](http://leaf.dyndns.org/lumber/xyzzy.shtml)
     - [『xyzzy への花鳥のインストール』 (PDF)](http://leaf.dyndns.org/lumber/down/xyzzy/install_070203.pdf)
 - [xyzzy + KaTeX - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?xyzzy%20%2B%20KaTeX)
