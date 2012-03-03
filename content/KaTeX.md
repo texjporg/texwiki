@@ -276,12 +276,22 @@ C:.
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
 (setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;(setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;(setq elisp::tex-command "pdfuplatex.bat")
+;(setq elisp::tex-command "pdflatex -synctex=1")
+;(setq elisp::tex-command "lualatex -synctex=1")
+;(setq elisp::tex-command "xelatex -synctex=1")
 (setq elisp::bibtex-command (cond ((string-match "uplatex" elisp::tex-command) "upbibtex -kanji=utf8")
-                                  ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")))
+                                  ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")
+                                  ((string-match "lualatex\\|xelatex" elisp::tex-command) "biber")
+                                  (t "bibtex")))
 (setq elisp::makeindex-command (cond ((string-match "uplatex" elisp::tex-command) "mendex -U")
-                                     ((string-match "platex" elisp::tex-command) "mendex -U")))
-(setq elisp::dviprint-command-format "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")
+                                     ((string-match "platex" elisp::tex-command) "mendex -U")
+                                     ((string-match "lualatex\\|xelatex" elisp::tex-command) "texindy")
+                                     (t "makeindex")))
+(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & pdfopen --file %s.pdf")
+                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")))
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 (setq elisp::*KaTeX-use-toolbar* t)
@@ -334,12 +344,22 @@ C:.
 ;; AMS-LaTeX を使う
 ;; jsarticle をデフォルトに
 ;; タイプセットを e-pLaTeX で
+;; タイプセットを pdfplatex.bat で
 ;; タイプセットを e-upLaTeX で
+;; タイプセットを pdfuplatex.bat で
+;; タイプセットを pdfLaTeX で
+;; タイプセットを LuaLaTeX で
+;; タイプセットを XeLaTeX で
 ;; uplatex の場合は upbibtex を使う
 ;; platex の場合は pbibtex を使う
+;; lualatex, xelatex の場合は biber を使う
+;; uplatex, platex, lualatex, xelatex 以外の場合は bibtex を使う
 ;; uplatex の場合は mendex を使う
 ;; platex の場合は mendex を使う
-;; Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
+;; lualatex, xelatex の場合は texindy を使う
+;; uplatex, platex, lualatex, xelatex 以外の場合は makeindex を使う
+;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex の場合は Adobe Reader が起動していれば Adobe Reader を終了して pdfopen を使う
+;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
 ;; M-RET を有効に
 ;; ツールバー表示
