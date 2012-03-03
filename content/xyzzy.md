@@ -32,7 +32,7 @@ xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode
 などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。<br>
 Emacs ライクなテキストエディタというと，デフォルトの状態では使いにくく，カスタマイズが必要な上級者向けとの印象があります。<br>
 ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。<br>
-ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
+ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，jEdit，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。<br>
 また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
 例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
@@ -243,28 +243,20 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
-有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。
-
+有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。<br>
 詳細は
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
-をご覧ください。
-
+をご覧ください。<br>
 kyotex-mode，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
-LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。
-
+LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。<br>
 [bibtex-mode \[\[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)，
-[RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex) というものもあります。
-
-簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。
-
-Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。
-
-a キーを押し，次の項目以降で示すカッコ内の URI を入力して Enter を押します。
-そうすることで，xyzzy マクロを配布しているサイトとマクロのリストが登録されます。
-
-あとはサイトを選んで Enter で決定し，インストールしたいマクロを選び，i キーでインストールします。
-
-終了は q です。
+[RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex) というものもあります。<br>
+簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。<br>
+Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。<br>
+a キーを押し，次の項目以降で示すカッコ内の URI を入力して Enter を押します。<br>
+そうすることで，xyzzy マクロを配布しているサイトとマクロのリストが登録されます。<br>
+あとはサイトを選んで Enter で決定し，インストールしたいマクロを選び，i キーでインストールします。<br>
+終了は q です。<br>
 
 ### outline-tree でアウトライン表示 {#xyob6f8d}
 
