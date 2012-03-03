@@ -1284,6 +1284,10 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 > 詳細は [2ch Windows 板 「xyzzy Part12」 (2ちゃんねるのログ)](http://www.bookshelf.jp/2ch/win/1103400818.html) の >>217, >>220-222 あたりを
 > 参照のこと。）
 
+## 関連リンク {#v1d4c456}
+
+- [xyzzy あんてな](http://raido.sakura.ne.jp/southly/a/)
+
 ## 謝辞 {#xyathxds}
 
 本文書を作るにあたり，[2ch](http://www.2ch.net/) の xyzzy 関連スレや
