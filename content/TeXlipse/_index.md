@@ -1086,6 +1086,8 @@ OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされていま
 
 - texlipse日本語コンパイルできない（mac）→ 解決できました ([qa:56663](https://okumuralab.org/~okumura/texfaq/qa/56663.html), [qa:56664](https://okumuralab.org/~okumura/texfaq/qa/56664.html), [qa:56665](https://okumuralab.org/~okumura/texfaq/qa/56665.html), [qa:56666](https://okumuralab.org/~okumura/texfaq/qa/56666.html))
 
+dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に PATH が通っているか確認してください．<br>
+
 ***
 
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Latex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
