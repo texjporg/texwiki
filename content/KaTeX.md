@@ -240,7 +240,7 @@ $ touch .xyzzy
 
 で作成可能です．
 
-MinGW や Cygwin がインストールされていない場合は，環境変数 XYZZYHOME で設定されているフォルダで，テキスト ドキュメントを新規作成し，メモ帳で
+MinGW や Cygwin がインストールされていない場合は，環境変数 XYZZYHOME で設定されているフォルダーで，テキスト ドキュメントを新規作成し，メモ帳で
 
 ```
 ".xyzzy"
@@ -261,7 +261,8 @@ C:.
 
 ***
 
-&#x7e;/.xyzzy ファイルに設定を記述します．<br>
+&#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
+siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
 
 ***
 
@@ -453,7 +454,13 @@ C:.
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -synctex=1")
+(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1")
+```
+
+または
+
+```
+(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ```
 
 と書いておきます。
@@ -519,7 +526,13 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -src-specials")
+(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -src-specials")
+```
+
+または
+
+```
+(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -src-specials")
 ```
 
 と書いておきます。
@@ -751,7 +764,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 特に何かインストールする必要はありません。texkey というファイル
 （[キーワードファイルのサンプル \[Internet Archive\]](http://web.archive.org/web/20060824011428/http://www.klavis.info/texkey)も
 示しておきます）に TeX の命令などをまとめておき，
-これをホームディレクトリ（~/.xyzzy のあるフォルダ）に置きます。~/.xyzzy に
+これをホームディレクトリ（~/.xyzzy のあるフォルダー）に置きます。~/.xyzzy に
 [XyzzyWiki:質問箱/112](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/112)
 （ご教示くださった方々に感謝）を参考に，
 
