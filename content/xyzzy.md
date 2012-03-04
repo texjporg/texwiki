@@ -43,7 +43,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### リリース情報 {#m67e4030}
 
-2012-02-26 xyzzy version 0.2.3.3 (マルチフレーム版) がリリースされました<br>
+2012-03-05 xyzzy version 0.2.3.4 (マルチフレーム版) がリリースされました<br>
 2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
 とうとうオープンソースになりました！
 (MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
