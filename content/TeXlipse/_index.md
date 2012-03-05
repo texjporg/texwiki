@@ -241,15 +241,12 @@ W32TeX がインストールされていれば以下のような表示になっ�
 
 ***
 
-これらを \[編集(E)...\] します．
-
-W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．
-
-UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．
-
-自動判別, UTF-8, MS932 (Shift_JIS), EUC-JP の場合の編集を記述します．
-
-[TeX Live](</TeX Live/>) などの TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．
+これらを \[編集(E)...\] します．<br>
+W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．<br>
+UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．<br>
+自動判別, UTF-8, MS932 (Shift_JIS), EUC-JP の場合の編集を記述します．<br>
+[TeX Live](</TeX Live/>) などの TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
+dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に PATH が通っているか確認してください．<br>
 
 ### <em>注意</em> {#kb057dfa}
 
