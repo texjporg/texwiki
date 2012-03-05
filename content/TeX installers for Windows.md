@@ -100,6 +100,50 @@ TeX インストーラを色々な視点から比較してみます。
 
 - <strong>参考</strong>：TeXWiki:インストール(Windows)
 
+## InftyTeXInstaller {#fcd5b6b1}
+
+- <strong>URL</strong>: [http://www.inftyproject.org/jp/software.html#TeXInstaller](http://www.inftyproject.org/jp/software.html#TeXInstaller)
+- <strong>作者</strong>： Infty Projectさん
+- <strong>初心者オススメ度</strong>：
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネット・ローカルインストール</strong>：
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：
+- <strong>参考</strong>：[Infty TeX installer](http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html)
+
+## Visual Installer for W32TeX {#c70efefe}
+
+- <strong>URL</strong>: [http://www.vector.co.jp/soft/win95/writing/se453191.html](http://www.vector.co.jp/soft/win95/writing/se453191.html)
+- <strong>作者</strong>： 安江 正樹さん
+- <strong>初心者オススメ度</strong>：
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネット・ローカルインストール</strong>：
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：
+
+## LabTeX Installer (LabTeXInst.exe) {#o135f7b5}
+
+- <strong>URL</strong>: [http://labsoft.web.fc2.com/index.html](http://labsoft.web.fc2.com/index.html)
+- <strong>作者</strong>： 斎藤 卓也さん
+- <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
+- <strong>ライセンス</strong>： 個人での使用における使用に制限なし。
+    ただし，再配布は同梱の様々なソフトウェアのライセンスを守るように。
+
+- <strong>インストールする対象</strong>： W32TeX バイナリ，jsclasses，Ghostscript，GSview, DVIOUT
+- <strong>ユーザーインターフェース</strong>： GUI
+- <strong>ネット・ローカルインストール</strong>： ローカルインストーラ。
+- <strong>環境変数・レジストリ</strong>： 自動（環境変数 PATH）
+- <strong>長所</strong>： LabEditor用のTeXインストーラです。LabEditorでの使用を想定していますが、汎用TeXインストーラとしても使えます。
+    ローカルインストーラなので、ネットワークにつないでいる必要もなく、またネットワークからダウンロードが失敗してインストールできないということもありません。GhostscriptやDVIOUT等のインストールは解説付きで本来のインストーラを操作させるタイプですので、ブラックボックス化されておらず、自分が何をやっているのか良く分かります。Windows Vistaにも対応しています。
+
+- <strong>短所</strong>：LabEditorで使用したときに問題が生じないようにインストールが固定化されているため、カスタマイズはほとんどできません。
+
 ## TeX 環境インストーラ {#k886a93e}
 
 - <strong>URL</strong>: [http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
@@ -214,50 +258,6 @@ TeX インストーラを色々な視点から比較してみます。
     [http://cygwin-je.sourceforge.jp/cygwin_je/](http://cygwin-je.sourceforge.jp/cygwin_je/) を追加すると，
     日本語化された各種パッケージがインストールできる。
     その中に teTeX-2.0，Ghostscript，xdvi などが含まれている。
-
-## LabTeX Installer (LabTeXInst.exe) {#o135f7b5}
-
-- <strong>URL</strong>: [http://labsoft.web.fc2.com/index.html](http://labsoft.web.fc2.com/index.html)
-- <strong>作者</strong>： 斎藤 卓也さん
-- <strong>初心者オススメ度</strong>： <span style="color:#ff9933;">★★★★★</span>
-- <strong>ライセンス</strong>： 個人での使用における使用に制限なし。
-    ただし，再配布は同梱の様々なソフトウェアのライセンスを守るように。
-
-- <strong>インストールする対象</strong>： W32TeX バイナリ，jsclasses，Ghostscript，GSview, DVIOUT
-- <strong>ユーザーインターフェース</strong>： GUI
-- <strong>ネット・ローカルインストール</strong>： ローカルインストーラ。
-- <strong>環境変数・レジストリ</strong>： 自動（環境変数 PATH）
-- <strong>長所</strong>： LabEditor用のTeXインストーラです。LabEditorでの使用を想定していますが、汎用TeXインストーラとしても使えます。
-    ローカルインストーラなので、ネットワークにつないでいる必要もなく、またネットワークからダウンロードが失敗してインストールできないということもありません。GhostscriptやDVIOUT等のインストールは解説付きで本来のインストーラを操作させるタイプですので、ブラックボックス化されておらず、自分が何をやっているのか良く分かります。Windows Vistaにも対応しています。
-
-- <strong>短所</strong>：LabEditorで使用したときに問題が生じないようにインストールが固定化されているため、カスタマイズはほとんどできません。
-
-## Visual Installer for W32TeX {#c70efefe}
-
-- <strong>URL</strong>: [http://www.vector.co.jp/soft/win95/writing/se453191.html](http://www.vector.co.jp/soft/win95/writing/se453191.html)
-- <strong>作者</strong>： 安江 正樹さん
-- <strong>初心者オススメ度</strong>：
-- <strong>ライセンス</strong>：
-- <strong>インストールする対象</strong>：
-- <strong>ユーザーインターフェース</strong>：
-- <strong>ネット・ローカルインストール</strong>：
-- <strong>環境変数・レジストリ</strong>：
-- <strong>長所</strong>：
-- <strong>短所</strong>：
-
-## InftyTeXInstaller {#fcd5b6b1}
-
-- <strong>URL</strong>: [http://www.inftyproject.org/jp/software.html#TeXInstaller](http://www.inftyproject.org/jp/software.html#TeXInstaller)
-- <strong>作者</strong>： Infty Projectさん
-- <strong>初心者オススメ度</strong>：
-- <strong>ライセンス</strong>：
-- <strong>インストールする対象</strong>：
-- <strong>ユーザーインターフェース</strong>：
-- <strong>ネット・ローカルインストール</strong>：
-- <strong>環境変数・レジストリ</strong>：
-- <strong>長所</strong>：
-- <strong>短所</strong>：
-- <strong>参考</strong>：[Infty TeX installer](http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html)
 
 ***
 
