@@ -43,7 +43,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### リリース情報 {#m67e4030}
 
-2012-03-05 xyzzy version 0.2.3.4 (マルチフレーム版) がリリースされました<br>
+2012-03-05 xyzzy version 0.2.3.4.1 (マルチフレーム版) がリリースされました<br>
 2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
 とうとうオープンソースになりました！
 (MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
@@ -59,6 +59,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
     - [動かないlispパッケージ一覧](https://bitbucket.org/mumurik/xyzzy/wiki/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84lisp%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7)
     - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
     - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
+    - [outline-treeのマルチフレーム対応](http://d.hatena.ne.jp/DeaR/20120305/p1)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
