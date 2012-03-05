@@ -21,7 +21,7 @@ KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX で�
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
 マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
 
-multiframe 0.2.3.4 でテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
+KaTeX カスタム版をテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
 C-c C-b i で補完しようとするとオリジナル版とは動作が異なり
 
 ```
@@ -41,7 +41,7 @@ katexenv end loading by mumurik
 
 ***
 
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.4@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.4.1@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
 
