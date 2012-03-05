@@ -60,6 +60,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
     - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
     - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
     - [outline-treeのマルチフレーム対応](http://d.hatena.ne.jp/DeaR/20120305/p1)
+    - [名無しさんのための GitHub ３分クッキング](https://gist.github.com/1962125)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
