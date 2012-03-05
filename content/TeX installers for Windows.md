@@ -100,19 +100,19 @@ TeX インストーラを色々な視点から比較してみます。
 
 - <strong>参考</strong>：TeXWiki:インストール(Windows)
 
-## InftyTeXInstaller {#fcd5b6b1}
+## Infty TeX installer {#fcd5b6b1}
 
-- <strong>URL</strong>: [http://www.inftyproject.org/jp/software.html#TeXInstaller](http://www.inftyproject.org/jp/software.html#TeXInstaller)
-- <strong>作者</strong>： Infty Projectさん
+- <strong>URL</strong>: [http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html](http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html)
+- <strong>作者</strong>：藤本 光史さん/InftyProjectさん
 - <strong>初心者オススメ度</strong>：
-- <strong>ライセンス</strong>：
-- <strong>インストールする対象</strong>：
+- <strong>ライセンス</strong>：フリーウェア
+- <strong>インストールする対象</strong>：W32TeX, dviout for Windows, GPL Ghostscript, BaKoMa Fonts, TeXworks
 - <strong>ユーザーインターフェース</strong>：GUI
-- <strong>ネット・ローカルインストール</strong>：
-- <strong>環境変数・レジストリ</strong>：
-- <strong>長所</strong>：
-- <strong>短所</strong>：
-- <strong>参考</strong>：[Infty TeX installer](http://www.fukuoka-edu.ac.jp/~fujimoto/tex.html)
+- <strong>ネット・ローカルインストール</strong>：ローカルのみ
+- <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
+- <strong>長所</strong>：TeX初心者が安心して利用できるよう、安定したバージョンをパッケージングしています。環境変数PATHの設定とTeXworksの設定（PDFへの日本語フォント埋め込み設定、拡張子.tex への関連付け、デスクトップへのショートカット作成）を自動で行います。
+- <strong>短所</strong>：LuaTeX、XeTeX、upTeXはインストールされません。
+- <strong>参考</strong>：[InftyProject](http://www.inftyproject.org/jp/software.html#TeXInstaller)
 
 ## Visual Installer for W32TeX {#c70efefe}
 
