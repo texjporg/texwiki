@@ -301,12 +301,15 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 (setq elisp::*KaTeX-use-toolbar* t)
+
 (defun user::katex-mode ()
   (interactive)
   (elisp::katex-mode))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (auto-fill-mode nil)))
+
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
@@ -314,9 +317,11 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
     (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
+
 (defun dviout-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
@@ -324,6 +329,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
     (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
                           (format nil "~D" (current-line-number)) " " tex-file "\"")
                   :exec-directory (directory-namestring tex-file))))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
@@ -483,6 +489,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
     (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
@@ -510,6 +517,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
     (call-process (concat "C:/w32tex/NDde/Binary/fwdsumatrapdf" " " pdf-file " " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
@@ -555,6 +563,7 @@ KaTeX を使う場合は [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wik
     (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
                           (format nil "~D" (current-line-number)) " " tex-file "\"")
                   :exec-directory (directory-namestring tex-file))))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
