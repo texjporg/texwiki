@@ -113,3 +113,8 @@ jsMath.js の mathchardef テーブル内に追加
 
 - [Web Equation](http://webdemo.visionobjects.com/equation.html?locale=ja_JP)
 - [手書きの数式を自動認識してLaTeXやMathMLにする「Web Equation」](http://gigazine.net/news/20120203-latex-mathml-web-equation/)
+
+### Google Closure Library {#q729594e}
+
+- [Google Closure Library](https://developers.google.com/closure/library/)
+- 数式エディタデモがアーカイブ内 closure/goog/demos/editor/equationeditor.html にあります。
