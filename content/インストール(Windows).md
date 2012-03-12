@@ -156,10 +156,10 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 <!-- [[KDDI研究所:http://www.kddilabs.jp/]] -->
 <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 - [KDDI研究所 (FTP)](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/)
-- [Ring Server (FTP)](http://core.ring.gr.jp/)
+- [Ring Server (FTP)](http://www.ring.gr.jp/)
+    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>近いサーバーへ誘導</strong>）
+    - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>空いているサーバーへ誘導</strong>）
     - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>近いサーバへ誘導</strong>）
-    - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>空いているサーバへ誘導</strong>）
 - [大島研究室](http://akagi.ms.u-tokyo.ac.jp/)（[東京大学](http://www.u-tokyo.ac.jp/) [大学院数理科学研究科](http://www.ms.u-tokyo.ac.jp/)）
     - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
 
@@ -168,10 +168,10 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 <!-- [[KDDI研究所:http://www.kddilabs.jp/]] -->
 - [KDDI研究所 (HTTP)](http://ftp.kddilabs.jp/TeX/ptex-win32/current/)
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
-- [Ring Server (HTTP)](http://core.ring.gr.jp/)
+- [Ring Server (HTTP)](http://www.ring.gr.jp/)
+    - [www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>近いサーバーへ誘導</strong>）
+    - [www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>空いているサーバーへ誘導</strong>）
     - [core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>近いサーバへ誘導</strong>）
-    - [www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)（<strong>空いているサーバへ誘導</strong>）
 
 #### アーカイブ {#b9d7db68}
 
@@ -240,7 +240,7 @@ W32TeX のウェブサイトの標準インストールには NTT JTeX
 ([xetex-w32.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/xetex-w32.tar.xz))
 も入れておくと便利かもしれません。
 
-ダウンロードツールをお使いの場合には，サーバに迷惑をかけないようにするために同時接続数を1にしてください。
+ダウンロードツールをお使いの場合には，サーバーに迷惑をかけないようにするために同時接続数を1にしてください。
 
 ダウンロードしたら，念のため次のことをご確認ください。
 
@@ -566,7 +566,7 @@ TeX 環境を作るという手もあります。
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 
-### Cygwin での ptetex のインストール {#h7017721}
+### Cygwin での ptetex のインストール (obsolete) {#h7017721}
 
 Cygwin のパッケージインストール
 (-X オプションをつけてネットインストーラを起動する; 例. \[スタート\]->\[ファイル名を指定して実行\]->"Cygwin の setup.exe へのフルパス" -X) で，
