@@ -555,6 +555,8 @@ W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - Te
 
 ## [MiKTeX](http://miktex.org/) {#x2459fb9}
 
+W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューションもあります．
+
 - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
 
 ## Cygwin {#sfbd073e}
@@ -566,6 +568,7 @@ TeX 環境を作るという手もあります。
 
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
 
 <!-- **Cygwin での ptetex のインストール (obsolete) [#h7017721] -->
 <!--  -->
