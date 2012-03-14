@@ -562,20 +562,21 @@ W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - Te
 Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
 TeX 環境を作るという手もあります。
 
-### Cygwin での tlptexlive のインストール {#bc8cfcc3}
+### Cygwin での TeX Live &amp; tlptexlive のインストール {#bc8cfcc3}
 
+- \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 
-### Cygwin での ptetex のインストール (obsolete) {#h7017721}
-
-Cygwin のパッケージインストール
-(-X オプションをつけてネットインストーラを起動する; 例. \[スタート\]->\[ファイル名を指定して実行\]->"Cygwin の setup.exe へのフルパス" -X) で，
-ダウンロードサイトの URI ( [http://ptetexwin.sourceforge.jp](http://ptetexwin.sourceforge.jp) ) を追加し，
-パッケージを選択するだけで日本語 TeX 環境一式が揃います。
-
-詳細は
-「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
-へ。
+<!-- **Cygwin での ptetex のインストール (obsolete) [#h7017721] -->
+<!--  -->
+<!-- Cygwin のパッケージインストール -->
+<!-- (-X オプションをつけてネットインストーラを起動する; 例. [スタート]->[ファイル名を指定して実行]->"Cygwin の setup.exe へのフルパス" -X) で， -->
+<!-- ダウンロードサイトの URI ( http://ptetexwin.sourceforge.jp ) を追加し， -->
+<!-- パッケージを選択するだけで日本語 TeX 環境一式が揃います。 -->
+<!--  -->
+<!-- 詳細は -->
+<!-- 「[[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール>http://ptetexwin.sourceforge.jp/]]」 -->
+<!-- へ。 -->
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
