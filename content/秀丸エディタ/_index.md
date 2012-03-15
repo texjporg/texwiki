@@ -521,8 +521,14 @@ gswin32c.exe -sPAPERSIZE=a4 -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOut
 
 ### TeXMAC, Gui-Shell (製品) {#ld68541f}
 
-- [TeXMAC](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html), [Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
-    (乙部 厳己 さん)
+- [TeXMAC, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
+    guishell 1.39.1 Win32版およびguishell 1.39.1 x64版, TeXmac 2.17（秀丸8以降・x64対応）
+    (乙部 厳己 さん @ 信州大)
+
+- [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
+- [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
+- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
+    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
 
 ### 飛鳥 (ひちょう) HiTeX {#y3147877}
 
