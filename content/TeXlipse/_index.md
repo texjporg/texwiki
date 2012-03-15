@@ -252,7 +252,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 - <em>2009/7/20 に W32TeXの "jbibtex.exe" は "pbibtex.exe" に変更されました． ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
 - <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
-- [UTF-8 での mendex のスタイルファイル指定について](https://okumuralab.org/~okumura/texfaq/qa/56690.html) ← [Q&amp;A56690 への回答](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=784)
+- UTF-8 での mendex のスタイルファイル指定について ([qa:56690](https://okumuralab.org/~okumura/texfaq/qa/56690.html), [qa:56691](https://okumuralab.org/~okumura/texfaq/qa/56691.html)) ← [Q&amp;A56690 への回答](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=784)
 
 ### 自動判別 の場合 {#p2e48152}
 
