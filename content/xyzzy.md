@@ -9,6 +9,8 @@ pukiwiki: "xyzzy"
 
 ## [xyzzy](http://www.jsdlab.co.jp/~kamei/) {#ea58addb}
 
+<img src="http://a0.twimg.com/profile_images/1893772384/mumurik765-test.png" alt="xyzzy (マルチフレーム版)" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## xyzzy とは {#xya184ab}
@@ -348,52 +350,43 @@ Ctrl + Enter またはメニューバーより ［Outline-Tree］ → ［アウ�
 
 詳細は，[作者の Flash によるデモ](http://ohkubo.s53.xrea.com/xyzzy/outline-tree/demo/outline-tree2.html)をご覧ください。
 
-#### outline-tree 1 {#xyott1kl}
-
-以下はバージョン1に相当する古い情報です。
-
-[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
-そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
-
-- Masatoshi's xyzzy extend lisps
-    ([http://xyzzy.s53.xrea.com/ni/ni.l](http://xyzzy.s53.xrea.com/ni/ni.l))
-
-から treeviewdll をインストールし，その後
-
-- [雑記帖](http://ohkubo.s53.xrea.com/)
-    ([http://ohkubo.s53.xrea.com/xyzzy/packages.l](http://ohkubo.s53.xrea.com/xyzzy/packages.l))
-
-から outlinetree をインストールします。~/.xyzzy には
-
-```
-(load-library "olt/olt")
-```
-
-と記述します。メニューバーの ［表示］ → ［ツールバー］ → ［Outline］ でアウトライン用ツールバーが起動できる。
-［ツール］ → ［アウトラインツリー設定］ で ［アウトラインタイプ］ の ［動作設定］タブで「LaTeXファイル（簡易）」を選びます。
-あとは，ツールバーの一番左のボタン ［アウトライン作成（更新）］ を押すことで，アウトラインが作成されるようになります。
-
-後述する [KaTeX](#xykb6f8d) をお使いの方は，ホームディレクトリに “.olt” というファイルを作り，次のように記述しておきます。
-このように書いておくと，TeX ファイルの場合にアウトラインを作成すると LaTeX 用のアウトラインになります。
-
-***
-
-```
-;;; -*- mode: Lisp -*-
-(in-package "outline-tree")
-
- ;; For KaTeX
-(when (find-load-path "elisp")
-  (require "elisp")
-  (add-hook 'elisp::katex-mode-hook 'olt-setting-LaTeX-mode)
-  (pushnew '(elisp::katex-mode . olt-setting-LaTeX-mode)
-           *olt-setting-alist* :test 'equal))
-
- ;; このファイルで *olt-setting-alist* に設定した内容を既存のバッファに適用
-(olt-init-setting)
-```
-
-***
+<!-- ***outline-tree 1 [#xyott1kl] -->
+<!--  -->
+<!-- 以下はバージョン1に相当する古い情報です。 -->
+<!--  -->
+<!-- [[上の xyzzy の画像 [Internet Archive]:http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png]]で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。 -->
+<!-- そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。 -->
+<!--  -->
+<!-- -Masatoshi's xyzzy extend lisps -->
+<!-- (&ref(http://xyzzy.s53.xrea.com/ni/ni.l,http://xyzzy.s53.xrea.com/ni/ni.l);) -->
+<!--  -->
+<!-- から treeviewdll をインストールし，その後 -->
+<!-- -[[雑記帖:http://ohkubo.s53.xrea.com/]] -->
+<!-- (&ref(http://ohkubo.s53.xrea.com/xyzzy/packages.l,http://ohkubo.s53.xrea.com/xyzzy/packages.l);) -->
+<!--  -->
+<!-- から outlinetree をインストールします。~/.xyzzy には -->
+<!-- (load-library "olt/olt") -->
+<!-- と記述します。メニューバーの ［表示］ → ［ツールバー］ → ［Outline］ でアウトライン用ツールバーが起動できる。 -->
+<!-- ［ツール］ → ［アウトラインツリー設定］ で ［アウトラインタイプ］ の ［動作設定］タブで「LaTeXファイル（簡易）」を選びます。 -->
+<!-- あとは，ツールバーの一番左のボタン ［アウトライン作成（更新）］ を押すことで，アウトラインが作成されるようになります。 -->
+<!--  -->
+<!-- 後述する [[KaTeX>#xykb6f8d]] をお使いの方は，ホームディレクトリに “.olt” というファイルを作り，次のように記述しておきます。 -->
+<!-- このように書いておくと，TeX ファイルの場合にアウトラインを作成すると LaTeX 用のアウトラインになります。 -->
+<!--  -->
+<!-- - --  -->
+<!-- ;;; -*- mode: Lisp -* -->
+<!-- (in-package "outline-tree") -->
+<!--  -->
+<!--  ;; For KaTeX -->
+<!-- (when (find-load-path "elisp") -->
+<!--   (require "elisp") -->
+<!--   (add-hook 'elisp::katex-mode-hook 'olt-setting-LaTeX-mode) -->
+<!--   (pushnew '(elisp::katex-mode . olt-setting-LaTeX-mode) -->
+<!--            *olt-setting-alist* :test 'equal)) -->
+<!--  -->
+<!--  ;; このファイルで *olt-setting-alist* に設定した内容を既存のバッファに適用 -->
+<!-- (olt-init-setting) -->
+<!-- - --  -->
 
 ### KaTeX で TeX の命令をラクラク入力 {#xykb6f8d}
 
