@@ -11,24 +11,28 @@ pukiwiki: "インストール(Windows)"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## [W32TeX](/W32TeX/) {#yd4deb73}
+## TeX ディストリビューションを選択してインストール {#vb660ba1}
+
+Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
+初心者の方は W32TeX がおすすめです．<br>
+
+### [W32TeX](/W32TeX/) {#yd4deb73}
 
 W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
 
-## [TeX Live](</TeX Live/>) {#ia336ed2}
+### [TeX Live](</TeX Live/>) {#ia336ed2}
 
 W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
-## [MiKTeX](http://miktex.org/) {#x2459fb9}
+### [MiKTeX](http://miktex.org/) {#x2459fb9}
 
 W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューションもあります．
 
 - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
 
-## Cygwin {#sfbd073e}
+### [Cygwin](/Cygwin/) {#sfbd073e}
 
-Microsoft Windows 上で動く UNIX&reg; 互換システム [Cygwin](http://cygwin.com/) に日本語
-TeX 環境を作るという手もあります。
+Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
 
 [Cygwin - TeX Wiki](/Cygwin/)
 
@@ -135,7 +139,8 @@ convbkmk.rb などの Ruby で書かれたスクリプトを実行するには R
 
 ## PS_View のインストール (オプション) {#kcd19930}
 
-[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．
+[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
+TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2011\tlpkg\tlpsv 以下に配置されています．<br>
 
 起動するには，psv.wx.lua の gsargs の dllloc
 
