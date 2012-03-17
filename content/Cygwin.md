@@ -186,26 +186,38 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 ***
 
-## オフラインインストーラー {#lb2cecd8}
+## setup.exe 以外のオフラインインストーラー {#lb2cecd8}
 
 - [pmcyg](http://pmcyg.sourceforge.net/)
     - [オフラインでもCygwinのインストールを行えるようにする「pmcyg」](http://www.moongift.jp/2010/01/pmcyg/)
     - [pmcygを使ってCygwinをクリーンインストール](http://d.hatena.ne.jp/takehikom/20100110/1263073598)
 
-## パッケージ管理 {#re5d2b36}
+## setup.exe 以外のパッケージ管理 {#re5d2b36}
 
 - [apt-cyg](http://code.google.com/p/apt-cyg/)
 - [cyg-apt](http://code.google.com/p/cyg-apt/)
+- [cyg-get](http://code.google.com/p/cyg-get/)
+- [cyg-get](http://www.nabber.org/projects/cyg-get/)
 
 ## Terminal Emulator {#y02da075}
 
+[Best terminal environment for Cygwin/Windows?](http://stackoverflow.com/questions/701895/best-terminal-environment-for-cygwin-windows) を参照．
+
 - [mintty](http://code.google.com/p/mintty/)
 - [cygwin ck terminal emulator](http://www.geocities.jp/meir000/ck/)
-- [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
-- [Poderosa](http://poderosa.sourceforge.net/)
-- [CygTerm](http://www.dd.iij4u.or.jp/~nsym/cygwin/cygterm/)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+    - [FuTTY](http://code.google.com/p/futty/)
+    - [PuTTYcyg](http://code.google.com/p/puttycyg/)
+    - [PuTTYjp](http://hp.vector.co.jp/authors/VA024651/)
+    - [CygwinをPuTTYクローンと一緒に使えば思ったほど悪くない](http://oddwit.com/blog/2011/cygwin-futty)
 - [Tera Term](http://ttssh2.sourceforge.jp/)
+- [Poderosa](http://poderosa.sourceforge.net/)
+- [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
+- [Console](http://sourceforge.net/projects/console/)
+- [CygTerm](http://www.dd.iij4u.or.jp/~nsym/cygwin/cygterm/)
+- [rxvt](http://rxvt.sourceforge.net/)
+    - [ja patched rxvt-20050409-9 on Cygwin](http://vmi.jp/software/cygwin/rxvt.html)
+- [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
 
 ## 関連リンク {#bc8cfcc3}
 
