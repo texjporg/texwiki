@@ -21,6 +21,7 @@ Cygwin の Portable 版である Cygwin Portable もあります．<br>
 - [Cygwin](http://www.cygwin.com/)
 - [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html) アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供
+    - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
 ## 日本語対応の TeX 環境の導入 {#b369bf5c}
 
@@ -43,6 +44,7 @@ Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する�
 ## [TeX Live](</TeX Live/>) {#dead7b03}
 
 Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
+[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．<br>
 
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
 
@@ -184,6 +186,17 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 ***
 
+## オフラインインストーラー {#lb2cecd8}
+
+- [pmcyg](http://pmcyg.sourceforge.net/)
+    - [オフラインでもCygwinのインストールを行えるようにする「pmcyg」](http://www.moongift.jp/2010/01/pmcyg/)
+    - [pmcygを使ってCygwinをクリーンインストール](http://d.hatena.ne.jp/takehikom/20100110/1263073598)
+
+## パッケージ管理 {#re5d2b36}
+
+- [apt-cyg](http://code.google.com/p/apt-cyg/)
+- [cyg-apt](http://code.google.com/p/cyg-apt/)
+
 ## Terminal Emulator {#y02da075}
 
 - [mintty](http://code.google.com/p/mintty/)
@@ -194,14 +207,8 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 - [Tera Term](http://ttssh2.sourceforge.jp/)
 
-## パッケージ管理 {#re5d2b36}
-
-- [apt-cyg](http://code.google.com/p/apt-cyg/)
-- [cyg-apt](http://code.google.com/p/cyg-apt/)
-
 ## 関連リンク {#bc8cfcc3}
 
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
 - [便利コマンドバッチ集 (客先PCでCygwinとか入れられないとか言う環境のために)](http://d.hatena.ne.jp/aya_eiya/20120312/1331572894)
 - [\*shell\* バッファ(cygwin の bash) から日本語ファイルを扱うための設定](http://www.ysnb.net/meadow/meadow-users-jp/2010/msg00001.html)
