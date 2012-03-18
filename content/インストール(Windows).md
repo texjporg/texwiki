@@ -133,7 +133,7 @@ convbkmk.rb などの Ruby で書かれたスクリプトを実行するには R
 [CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) から最新の GSview インストーラ
 （2012年01月19日時点では gsv50w32.exe）をダウンロードし，実行します。 <!-- 2012/01/19 GSview Ver.5.0 公開 --> <!-- 2011/05/30 GSview Ver.4.91 公開 --> <!-- 2007/11/19 GSview Ver.4.9 公開 --> <!-- 2006/02/25 GSview Ver.4.8 公開 --> <!-- 2005/03/26 GSview Ver.4.7 公開 -->
 
-日本語を表示する
+&#x2d;dWINKANJI オプションを使用して日本語を表示する
 には，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の
 内容に “-dWINKANJI” を追加します。
 
@@ -141,8 +141,9 @@ convbkmk.rb などの Ruby で書かれたスクリプトを実行するには R
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
 TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2011\tlpkg\tlpsv 以下に配置されています．<br>
+C:\texlive\2011\bin\win32\psv.exe をダブルクリックすると PS_View が起動します．<br>
 
-起動するには，psv.wx.lua の gsargs の dllloc
+公式サイトで配布されている PS_View を起動するには，psv.wx.lua の gsargs の dllloc
 
 ```
 local gsargs = {
@@ -160,7 +161,7 @@ local gsargs = {
   dllloc= "C:/gs/gs9.05/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-日本語を表示するには，psv.wx.lua の PSV_DftGsPars
+&#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
 
 ```
 local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
