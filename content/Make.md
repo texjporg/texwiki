@@ -9,7 +9,7 @@ pukiwiki: "Make"
 
 ## UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール {#f27134a5}
 
-[TeX Live](</TeX Live/>) + [追加日本語パッチ](</TeX Live/#w858d62f>) がお薦めです。<br> <!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ --> <!-- 下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。~ -->
+[TeX Live](</TeX Live/>) + [tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) または [TeX Live](</TeX Live/>) + [追加日本語パッチ](</TeX Live/#w858d62f>) がお薦めです。<br> <!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ --> <!-- 下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。~ -->
 
 <!-- #contents -->
 
