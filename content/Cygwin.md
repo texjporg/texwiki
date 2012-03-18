@@ -25,31 +25,30 @@ Cygwin の Portable 版である Cygwin Portable やアーカイブ展開のみ�
 
 ## 日本語対応の TeX 環境の導入 {#b369bf5c}
 
-<em>最近の編集方針がわからないのですが，ヘッドラインはあったほうがよいと思いますので，軽く記述してみました．適宜編集の上，適切な場所に配置していただければ幸いです．</em>
-
 Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入するというのは，長らく難しいことの一つでした．<br>
-ここ最近（2012-03-02 \[cygin-apps\]）になって，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，本家から提供されることになりました．<br>
-TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
+ここ最近（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）になって，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，本家から提供されることになりました．<br>
+TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．[以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，本家の texlive パッケージをインストールする方法を説明しています．<br>
 いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
 ちなみに，過去には（続いているものもありますが），Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する手段として，
 
 - teTeX＋野良ビルド
-- Cygwin 日本語化プロジェクト
-- ptetex3野良ビルド
-- Cygwin で日本語プロジェクト
-- ptexlive野良ビルド
-- 美文書作成入門［改訂第 5 版］
-- TeX Live のインストール＋tlptexlive
+- [Cygwin JE](http://sourceforge.jp/projects/cygwin-je/)
+- [ptetex3](http://tutimura.ath.cx/ptetex/)野良ビルド
+- [Cygwin で日本語プロジェクト](http://ptetexwin.sourceforge.jp/)
+- [ptexlive](http://tutimura.ath.cx/ptexlive/)野良ビルド
+- [美文書作成入門［改訂第 5 版］](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)
+- [TeX Live のインストール](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 
 などの選択肢がありました（あります）．
 
 ## [TeX Live](</TeX Live/>) {#dead7b03}
 
 Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
-[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．<br>
 
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
+
+[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
 
 ***
 
