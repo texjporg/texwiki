@@ -16,18 +16,21 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (Unix) ライクな環境です．<br>
-Cygwin の Portable 版である Cygwin Portable もあります．<br>
+Cygwin の Portable 版である Cygwin Portable やアーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
 - [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
-- [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html) アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供
+- [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
 ## 日本語対応の TeX 環境の導入 {#b369bf5c}
 
 <em>最近の編集方針がわからないのですが，ヘッドラインはあったほうがよいと思いますので，軽く記述してみました．適宜編集の上，適切な場所に配置していただければ幸いです．</em>
 
-Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入するというのは，長らく難しいことの一つでした．ここ最近（2012-03-02 \[cygin-apps\]）になって，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，本家から提供されることになりました．TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
+Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入するというのは，長らく難しいことの一つでした．<br>
+ここ最近（2012-03-02 \[cygin-apps\]）になって，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，本家から提供されることになりました．<br>
+TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
+いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
 ちなみに，過去には（続いているものもありますが），Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する手段として，
 
@@ -186,6 +189,10 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 ***
 
+## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
+
+- [Cygwin Ports project](http://sourceware.org/cygwinports/)
+
 ## setup.exe 以外のオフラインインストーラー {#lb2cecd8}
 
 - [pmcyg](http://pmcyg.sourceforge.net/)
@@ -209,6 +216,8 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
     - [FuTTY](http://code.google.com/p/futty/)
     - [PuTTYcyg](http://code.google.com/p/puttycyg/)
     - [PuTTYjp](http://hp.vector.co.jp/authors/VA024651/)
+    - [GDI PuTTY](http://ice.hotmint.com/putty/)
+    - [D2D/DW PuTTY](http://ice.hotmint.com/putty/d2ddw.html)
     - [CygwinをPuTTYクローンと一緒に使えば思ったほど悪くない](http://oddwit.com/blog/2011/cygwin-futty)
 - [Tera Term](http://ttssh2.sourceforge.jp/)
 - [Poderosa](http://poderosa.sourceforge.net/)
@@ -217,10 +226,10 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 - [CygTerm](http://www.dd.iij4u.or.jp/~nsym/cygwin/cygterm/)
 - [rxvt](http://rxvt.sourceforge.net/)
     - [ja patched rxvt-20050409-9 on Cygwin](http://vmi.jp/software/cygwin/rxvt.html)
-- [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
+    - [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
 
 ## 関連リンク {#bc8cfcc3}
 
 - [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
-- [便利コマンドバッチ集 (客先PCでCygwinとか入れられないとか言う環境のために)](http://d.hatena.ne.jp/aya_eiya/20120312/1331572894)
 - [\*shell\* バッファ(cygwin の bash) から日本語ファイルを扱うための設定](http://www.ysnb.net/meadow/meadow-users-jp/2010/msg00001.html)
+- [便利コマンドバッチ集 (客先PCでCygwinとか入れられないとか言う環境のために)](http://d.hatena.ne.jp/aya_eiya/20120312/1331572894)
