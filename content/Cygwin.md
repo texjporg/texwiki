@@ -19,6 +19,7 @@ Cygwin は Microsoft Windows 上で動作する Linux (Unix) ライクな環境�
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
+    - [The Cygwin Project mailing list archives](http://cygwin.com/ml/cygwin/)
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
