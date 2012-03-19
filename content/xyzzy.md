@@ -45,6 +45,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### リリース情報 {#m67e4030}
 
+2012-03-20 xyzzy+ 0.2.2.235+0 (Unicode 版) がリリースされました<br>
 2012-03-12 xyzzy version 0.2.3.5 (マルチフレーム版) がリリースされました<br>
 2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
 とうとうオープンソースになりました！
@@ -81,7 +82,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ## ダウンロードとインストール {#xy9167cb}
 
-まず，[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。<br>
+まず，[xyzzy+](http://xyzzy.codeplex.com/) もしくは [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。<br>
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。<br>
 [インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。<br>
 USB メモリで使用する方は，
