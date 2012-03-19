@@ -16,10 +16,9 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (Unix) ライクな環境です．<br>
-Cygwin の Portable 版である Cygwin Portable やアーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
+アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
-- [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
@@ -44,9 +43,14 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 ## [TeX Live](</TeX Live/>) {#dead7b03}
 
-Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
+### リリース情報 {#z608db6c}
 
+- \[[ANNOUNCEMENT\] Updated: texlive-collection-\*-20120312-1](http://cygwin.com/ml/cygwin/2012-03/msg00391.html)
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
+
+### インストール {#a8514c6c}
+
+Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
 
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
 
@@ -226,9 +230,12 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 - [rxvt](http://rxvt.sourceforge.net/)
     - [ja patched rxvt-20050409-9 on Cygwin](http://vmi.jp/software/cygwin/rxvt.html)
     - [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- [ckw-mod](http://deflis.github.com/ckw-mod/)
+    - [ckw-mod を使う](http://yuu0t.hatenablog.com/entry/2012/01/12/220801)
 
 ## 関連リンク {#bc8cfcc3}
 
+- [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
 - [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
 - [\*shell\* バッファ(cygwin の bash) から日本語ファイルを扱うための設定](http://www.ysnb.net/meadow/meadow-users-jp/2010/msg00001.html)
 - [Windows に Cygwin バージョン 1.7 をインストール](http://kkaneko.com/rinkou/cygwin/cygwin.html)
