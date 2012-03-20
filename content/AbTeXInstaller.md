@@ -64,14 +64,16 @@ otfdevel=1
 ```
 
 デフォルトでは otfdevel のみインストールされます。<br>
-otf の最新版は otfbeta なので otf と otfbeta をインストールするように \[Listup\] の項目を修正します。<br>
-otf と otfbeta をインストールするには以下のように修正します。<br>
+otf の最新版は otfbeta なのでこれををインストールするように \[Listup\] の項目を修正します。<br>
+otfbeta をインストールするには以下のように修正します。<br>
+(3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。
+複数選択すると，最後に展開されたもので上書きされます。)<br>
 
 ```
 [Listup]
 luatex=1
 luatex-dev=0
-otf=1
+otf=0
 otfbeta=1
 otfdevel=0
 ```
@@ -175,8 +177,7 @@ abtexinst.exe を実行して指示に従ってインストールします。
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br>
-　　　　 ∣☑otf.tar.xz　　　　　　　　　　　　　 　　無い　　　1.5MB<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br> <!-- 　　　　 ∣☑otf.tar.xz　　　　　　　　　　　　　 　　無い　　　1.5MB&br; -->
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
