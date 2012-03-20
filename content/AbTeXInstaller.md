@@ -213,6 +213,7 @@ abtexinst.exe を実行して指示に従ってインストールします。
 
 ### 参考 {#r85dc0a5}
 
+- [TeXの再インストール](http://iga3.sblo.jp/article/54514290.html)
 - [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
 - [Tex入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
 - [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
