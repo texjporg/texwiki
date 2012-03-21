@@ -16,18 +16,18 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### 注意事項 {#bb499d3c}
 
-<span style="color:Red;"><strong>0.81r5 以前のバージョンを使っている方へ</strong></span><br>
+#### 0.81r5 以前のバージョンを使っている方へ {#r1b99509}
 
-<span style="color:Red;"><strong>&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．最新版にアップデートしてください．</strong></span><br>
+<span style="color:Red;"><strong>&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．<br>最新版にアップデートしてください．</strong></span><br>
 
-<span style="color:Red;"><strong>0.81r2 以前のバージョンを使っている方へ</strong></span><br>
+#### 0.81r2 以前のバージョンを使っている方へ {#r1e6111a}
 
 <span style="color:Red;"><strong>W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.cnf がない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=590) などのエラーが発生するので，設定ファイル (abtexinst.ini) を削除して最新版にアップデートしてください．</strong></span><br>
 
 ### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-の実行方法は，リンク先から "abtexinst_0_81r7.zip" をダウンロードし，これを展開（解凍）します。そして <strong>"abtexinst.exe" を実行してすぐに終了します。</strong><br>
+の実行方法は，リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして <strong>"abtexinst.exe" を実行してすぐに終了します。</strong><br>
 abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。<br>
 abtexinst.ini をメモ帳で開きます。<br>
 
@@ -52,32 +52,28 @@ GS=gs[0-9]*w32full(-gpl)?\.(zip|exe)
 GV=gsv[0-9]*w32\.exe
 ```
 
-abtexinst.ini の \[Listup\] の項目は以下のように表示されていると思います。<br>
-
-```
-[Listup]
-luatex=1
-luatex-dev=0
-otf=0
-otfbeta=0
-otfdevel=1
-```
-
-デフォルトでは otfdevel のみインストールされます。<br>
-otf の最新版は otfbeta です。<br>
-otfbeta をインストールするように \[Listup\] の項目を修正します。<br>
-otfbeta をインストールするには以下のように修正します。<br>
-(3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。
-複数選択すると，最後に展開されたもので上書きされます。)<br>
-
-```
-[Listup]
-luatex=1
-luatex-dev=0
-otf=0
-otfbeta=1
-otfdevel=0
-```
+<!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ -->
+<!--  -->
+<!-- [Listup] -->
+<!-- luatex=1 -->
+<!-- luatex-dev=0 -->
+<!-- otf=0 -->
+<!-- otfbeta=0 -->
+<!-- otfdevel=1 -->
+<!--  -->
+<!-- デフォルトでは otfdevel のみインストールされます。~ -->
+<!-- otf の最新版は otfbeta です。~ -->
+<!-- otfbeta をインストールするように [Listup] の項目を修正します。~ -->
+<!-- otfbeta をインストールするには以下のように修正します。~ -->
+<!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 -->
+<!-- 複数選択すると，最後に展開されたもので上書きされます。)~ -->
+<!--  -->
+<!-- [Listup] -->
+<!-- luatex=1 -->
+<!-- luatex-dev=0 -->
+<!-- otf=0 -->
+<!-- otfbeta=1 -->
+<!-- otfdevel=0 -->
 
 abtexinst.ini を上書き保存してメモ帳を終了します。<br>
 abtexinst.exe を実行して指示に従ってインストールします。
@@ -117,13 +113,33 @@ abtexinst.exe を実行して指示に従ってインストールします。
 　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/</ins><br>
 　　　　　　☐一覧以外を使う（↓に入力）<br>
 　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
-
-<br>
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otfbeta をインストールする場合は \[高度な設定\] をクリック<br>
 　　　　☐ネットワークを使わない．（ローカルのファイルからインストールします．）<br>
 　　　　☑ダウンロードをキャッシュから読み込まないようにする．<br>
 　　　　　Proxy（HTTPのみ）　空欄ならシステム設定を使います．　　　　　　　　　　Port<br>
 　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　　　　<ins>　　　　　</ins><br>
+
+***
+
+デフォルトでは otfdevel がインストールされます。<br>
+otf パッケージの最新版は otfbeta です。<br>
+3つの otf パッケージの中から自分の用途に合わせて選択してください。<br>
+otf パッケージは複数インストールしてはいけません。<br>
+複数インストールすると，最後に展開されたもので上書きされてしまいます。<br>
+
+***
+
+<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>W32TeXの高度な設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　インストールするファイルを選んでください．<br>
+　　　　◯ otf<br>
+　　　　◯ otfdevel<br>
+　　　　◎ otfbeta<br>
+
+　　　　◎ luatex-w32<br>
+　　　　◯ luatex-dev-w32<br>
 
 ***
 
