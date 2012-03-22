@@ -16,6 +16,11 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### 注意事項 {#bb499d3c}
 
+#### 0.81r7 以前のバージョンを使っている方へ {#sd8d9f1f}
+
+角藤版 Ghostscript の配布パッケージが 9.05 から exe 形式になりました。<br>
+最新版にアップデートしてください。<br>
+
 #### 0.81r5 以前のバージョンを使っている方へ {#r1b99509}
 
 <span style="color:Red;"><strong>&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．<br>最新版にアップデートしてください．</strong></span><br>
@@ -27,56 +32,8 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 ### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-の実行方法は，リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして <strong>"abtexinst.exe" を実行してすぐに終了します。</strong><br>
-abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。<br>
-abtexinst.ini をメモ帳で開きます。<br>
-
-abtexinst.ini の \[Reg\] の項目は以下のように表示されていると思います。<br>
-
-```
-[Reg]
-texinst=texinst[0-9]*\.zip
-DVIOUT=tex[0-9]*w\.zip
-GS=gs[0-9]*w32full(-gpl)?\.zip
-GV=gsv[0-9]*w32\.exe
-```
-
-GS=gs\[0-9\]\*w32full(-gpl)?\\.zip では Ghostscript は zip ファイルしか表示されないので \[Reg\] の GS の値を修正します。<br>
-Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。<br>
-
-```
-[Reg]
-texinst=texinst[0-9]*\.zip
-DVIOUT=tex[0-9]*w\.zip
-GS=gs[0-9]*w32full(-gpl)?\.(zip|exe)
-GV=gsv[0-9]*w32\.exe
-```
-
-<!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ -->
-<!--  -->
-<!-- [Listup] -->
-<!-- luatex=1 -->
-<!-- luatex-dev=0 -->
-<!-- otf=0 -->
-<!-- otfbeta=0 -->
-<!-- otfdevel=1 -->
-<!--  -->
-<!-- デフォルトでは otfdevel のみインストールされます。~ -->
-<!-- otf の最新版は otfbeta です。~ -->
-<!-- otfbeta をインストールするように [Listup] の項目を修正します。~ -->
-<!-- otfbeta をインストールするには以下のように修正します。~ -->
-<!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 -->
-<!-- 複数選択すると，最後に展開されたもので上書きされます。)~ -->
-<!--  -->
-<!-- [Listup] -->
-<!-- luatex=1 -->
-<!-- luatex-dev=0 -->
-<!-- otf=0 -->
-<!-- otfbeta=1 -->
-<!-- otfdevel=0 -->
-
-abtexinst.ini を上書き保存してメモ帳を終了します。<br>
-abtexinst.exe を実行して指示に従ってインストールします。
+の実行方法は，[2012-03-22 - にっき♪](http://d.hatena.ne.jp/abenori/20120322) から TeXインストーラ3 0.82 をダウンロードして展開 (解凍) します。<br>
+展開したフォルダーの "abtexinst.exe" を実行します。<br> <!-- リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして ''"abtexinst.exe" を実行してすぐに終了します。''~ --> <!-- abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。~ --> <!-- abtexinst.ini をメモ帳で開きます。~ --> <!--  --> <!-- abtexinst.ini の [Reg] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip では Ghostscript は zip ファイルしか表示されないので [Reg] の GS の値を修正します。~ --> <!-- Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.(zip|exe) --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=0 --> <!-- otfdevel=1 --> <!--  --> <!-- デフォルトでは otfdevel のみインストールされます。~ --> <!-- otf の最新版は otfbeta です。~ --> <!-- otfbeta をインストールするように [Listup] の項目を修正します。~ --> <!-- otfbeta をインストールするには以下のように修正します。~ --> <!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 --> <!-- 複数選択すると，最後に展開されたもので上書きされます。)~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=1 --> <!-- otfdevel=0 --> <!--  --> <!-- abtexinst.ini を上書き保存してメモ帳を終了します。~ --> <!-- abtexinst.exe を実行して指示に従ってインストールします。 -->
 
 ***
 
@@ -93,6 +50,7 @@ abtexinst.exe を実行して指示に従ってインストールします。
 　　　　・dviout for Windows<br>
 　　　　・Ghostscript<br>
 　　　　・GSview<br>
+　　　　・TeXWorks<br>
 
 ***
 
@@ -114,6 +72,7 @@ abtexinst.exe を実行して指示に従ってインストールします。
 　　　　　　☐一覧以外を使う（↓に入力）<br>
 　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otfbeta をインストールする場合は \[高度な設定\] をクリック<br>
+　　　　☑環境変数PATHに実行ファイルのフォルダを追加する．<br>
 　　　　☐ネットワークを使わない．（ローカルのファイルからインストールします．）<br>
 　　　　☑ダウンロードをキャッシュから読み込まないようにする．<br>
 　　　　　Proxy（HTTPのみ）　空欄ならシステム設定を使います．　　　　　　　　　　Port<br>
@@ -167,6 +126,34 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ***
 
+<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>その他のソフトのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　ダブルクリックで設定画面を開くことができます．<br>
+　　　　ソフト名　　　　　｜説明<br>
+　　　　TeXWorks　　　　TeXWorksの設定<br>
+
+***
+
+デフォルトでは ＭＳ 明朝・ＭＳ ゴシックが埋め込まれます。<br>
+
+***
+
+<span style="color:Black;background-color:#000080;"><ins>　　<span style="color:White;"><strong>TeXWorks設定</strong></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#000070;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#000070;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　TeXWorks 利用時に埋め込むフォントを指定してください．<br>
+
+<br>
+
+　◎ msembed.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
+　◯ hiraembed.map（ヒラギノフォントを用います．）<br>
+　◯ ipaembed.map（IPAex フォントを用います．）<br>
+　◯ kozembed.map（小塚明朝・ゴシック Pro を用います．）<br>
+　◯ koz6embed.map（小塚明朝・ゴシック Pro6N を用います．）<br>
+
+***
+
 <span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>インストールファイルの選択</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 <br>
@@ -194,8 +181,8 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br> <!-- 　　　　 ∣☑otf.tar.xz　　　　　　　　　　　　　 　　無い　　　1.5MB&br; -->
-　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　無い　　　241KB<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br>
+　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　242KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
@@ -235,6 +222,6 @@ otf パッケージは複数インストールしてはいけません。<br>
 - [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
 - [Tex入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
 - [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
-- [TeXのインストール(Windows)](http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXWin20111018.html/)
+- [TeXのインストール(Windows)](http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXwin20111018/)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
     <!-- -[[WindowsにおけるTeX環境の構築:http://www.mclab.ics.ritsumei.ac.jp/~shibata/development.html#tex]] -->
