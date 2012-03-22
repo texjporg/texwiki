@@ -555,7 +555,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
