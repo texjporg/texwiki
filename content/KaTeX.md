@@ -463,6 +463,12 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
+(setq elisp::tex-command "pdfplatex.bat")
+```
+
+または
+
+```
 (setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ```
 
@@ -551,6 +557,13 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 ### forward search {#h429b3b5}
 
 xyzzy から dviout for Windows の該当箇所にジャンプすることが可能です．<br>
+まず，elisp::dvi2-command を dviout のフルパスに指定しておきます．<br>
+複数起動するのを防止する場合は -1 を追加してください．<br>
+
+```
+(setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
+```
+
 KaTeX を使う場合は [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/121) を参考に次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます．<br>
 
 ***
@@ -827,6 +840,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 ## 関連リンク {#h4cf9c4e}
 
+- [xyzzyみたいな](http://nahxnahx.blogspot.jp/2012/03/xyzzy.html)
 - [Windows7 で xyyzzy で KaTeX で TeX ライフ。](http://blog.goo.ne.jp/kei_matsuura2007/e/8c5ccbde9291d5410956b1e94e10dfaa)
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
 - [Windows7でLaTeX環境構築（Xyzzy，KaTeX，LaTeXmkなど）](http://ameblo.jp/tex-memo/entry-10476993822.html)
