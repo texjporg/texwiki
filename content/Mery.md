@@ -91,7 +91,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     latex = "platex -synctex=1 -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -99,7 +99,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
-  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
@@ -156,7 +156,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     latex = "platex -synctex=1 -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis";
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -164,7 +164,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8";
   }
-  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
@@ -501,7 +501,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     bibtex = "pbibtex";
   } else if (encoding == meEncodingJIS) {
-    bibtex = "pbibtex -kanji=jis";
+    bibtex = "pbibtex -kanji=jis  -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     bibtex = "pbibtex -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -509,7 +509,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     bibtex = "pbibtex -kanji=utf8";
   }
-  bibtex += " -sjis-terminal " + ["\"", b, "\""].join("");
+  bibtex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
   var button = wshShell.Popup(cmd, 0, "pBibTeX", 1);
@@ -567,7 +567,7 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var bibtex = "upbibtex -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
   var button = wshShell.Popup(cmd, 0, "upBibTeX", 1);
@@ -631,7 +631,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     makeindex = "mendex";
   } else if (encoding == meEncodingJIS) {
-    makeindex = "mendex -J";
+    makeindex = "mendex -J -ST";
   } else if (encoding == meEncodingEUC) {
     makeindex = "mendex -E";
   } else if (encoding == meEncodingSJIS) {
@@ -639,7 +639,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     makeindex = "mendex -U";
   }
-  makeindex += " -ST " + ["\"", b, "\""].join("");
+  makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
 
   var button = wshShell.Popup(cmd, 0, "Mendex", 1);
@@ -852,7 +852,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     latex = "platex -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis";
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     latex = "platex -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -860,7 +860,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
@@ -895,7 +895,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     latex = "platex -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -no-guess-input-enc -kanji=jis";
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     latex = "platex -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -903,7 +903,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -no-guess-input-enc -kanji=utf8";
   }
-  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
@@ -1157,7 +1157,7 @@ function main()
   if (encoding == meEncodingAutomatic) {
     latex = "platex -src-specials -guess-input-enc";
   } else if (encoding == meEncodingJIS) {
-    latex = "platex -src-specials -no-guess-input-enc -kanji=jis";
+    latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (encoding == meEncodingEUC) {
     latex = "platex -src-specials -no-guess-input-enc -kanji=euc";
   } else if (encoding == meEncodingSJIS) {
@@ -1165,7 +1165,7 @@ function main()
   } else if (encoding == meEncodingUTF8 || encoding == meEncodingUTF8N) {
     latex = "platex -src-specials -no-guess-input-enc -kanji=utf8";
   }
-  latex += " -sjis-terminal " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
 
   var button = wshShell.Popup(cmd, 0, "pLaTeX", 1);
