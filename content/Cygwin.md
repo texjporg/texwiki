@@ -233,6 +233,7 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
     - [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
 - [ckw-mod](http://deflis.github.com/ckw-mod/)
     - [ckw-mod を使う](http://yuu0t.hatenablog.com/entry/2012/01/12/220801)
+- [mlterm](http://mlterm.sourceforge.net/)
 
 ## 関連リンク {#bc8cfcc3}
 
