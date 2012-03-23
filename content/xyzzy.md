@@ -56,6 +56,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
 
+- [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
 - [英語版](http://xyzzy.s53.xrea.com/english/archive/)
 - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
     - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
