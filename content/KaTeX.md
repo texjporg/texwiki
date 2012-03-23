@@ -41,7 +41,7 @@ katexenv end loading by mumurik
 
 ***
 
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.5@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.6@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
 
@@ -281,7 +281,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
-;(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
 (setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
 ;(setq elisp::tex-command "pdfuplatex.bat")
@@ -425,7 +425,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials RET</td><td>platex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -guess-input-enc -synctex=1 -src-specials RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex.bat RET</td><td>pdfplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials RET</td><td>uplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex.bat RET</td><td>pdfuplatex</td></tr>
@@ -469,7 +469,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 または
 
 ```
-(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -synctex=1")
+(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 ```
 
 または
@@ -543,7 +543,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "platex -no-guess-input-enc -kanji=utf8 -src-specials")
+(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -src-specials")
 ```
 
 または
