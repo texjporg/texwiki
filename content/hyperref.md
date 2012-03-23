@@ -19,18 +19,15 @@ pukiwiki: "hyperref"
 
 ### 注意点 {#he2b8021}
 
-#### jsclasses と hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
+#### hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
 
+- [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
 - [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
+- [XeLaTeXでhyperrefを使う](http://d.hatena.ne.jp/tizz/20100429/1272567178)
+- [hyperrefを使うとページサイズがおかしくなる](http://glsharp.blogspot.jp/2010/04/hyperref.html)
 - [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
 
-以下の方法のうちのどれかを使用することで回避可能です．
-
-- クラスオプションに papersize を指定する
-
-    ```
-    \documentclass[papersize]{jsarticle}
-    ```
+以下ように hyperref のオプションに setpagesize=false を指定することで回避可能です．
 
 - hyperref のオプションに setpagesize=false を指定する
 
@@ -38,7 +35,15 @@ pukiwiki: "hyperref"
     \usepackage[dvipdfmx,setpagesize=false]{hyperref}
     ```
 
-#### "--"が hyperref で正しく扱われてないっぽくて，しおりが変になる {#d46c2828}
+jsclasses を使用している場合は以下のようにクラスオプションに papersize を指定しても OK です．
+
+- クラスオプションに papersize を指定する
+
+    ```
+    \documentclass[papersize]{jsarticle}
+    ```
+
+#### "--"が hyperref で正しく扱われず，しおりが変になる {#d46c2828}
 
 以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
 
