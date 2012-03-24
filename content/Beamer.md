@@ -94,6 +94,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer V3.0 を使ってみる](http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html) (dvips利用)
 - [latex-beamer を使ってみる](http://www.pocus.jp/p-latex-main.html#latex-beamer) (dvipdfmx利用)
 - [LaTeX Beamerでプレゼンテーション](http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+Beamer%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3) (dvipdfmx利用)
+- [Windows 7にBemerを入れた時の作業メモ](http://d.hatena.ne.jp/teramonagi/20120324/1332574760)
 - [Beamer 3.10 にアップグレードした](http://d.hatena.ne.jp/triadsou/20101110/1289357503)
 - [LaTeX-Beamer - .R. Wiki](http://locs.bw.nitech.ac.jp/~kobayashi/fswiki/wiki.cgi?page=LaTeX-Beamer)
 - [Windows XPにおけるbeamerのセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-190.html)
