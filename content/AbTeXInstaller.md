@@ -50,7 +50,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　　・dviout for Windows<br>
 　　　　・Ghostscript<br>
 　　　　・GSview<br>
-　　　　・TeXWorks<br>
+　　　　・TeXworks<br>
 
 ***
 
@@ -132,25 +132,25 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 　　　　ダブルクリックで設定画面を開くことができます．<br>
 　　　　ソフト名　　　　　｜説明<br>
-　　　　TeXWorks　　　　TeXWorksの設定<br>
+　　　　TeXworks　　　　　TeXworks の設定<br>
 
 ***
 
-デフォルトでは ＭＳ 明朝・ＭＳ ゴシックが埋め込まれます。<br>
+デフォルトでは W32TeX のデフォルトの指定を使います。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　　<span style="color:White;"><strong>TeXWorks設定</strong></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#000070;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#000070;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#000080;"><ins>　　<span style="color:White;"><strong>TeXworks 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
-　TeXWorks 利用時に埋め込むフォントを指定してください．<br>
-
-<br>
-
-　◎ msembed.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
-　◯ hiraembed.map（ヒラギノフォントを用います．）<br>
-　◯ ipaembed.map（IPAex フォントを用います．）<br>
-　◯ kozembed.map（小塚明朝・ゴシック Pro を用います．）<br>
-　◯ koz6embed.map（小塚明朝・ゴシック Pro6N を用います．）<br>
+　☑ TeXworksのショートカットをデスクトップに作成する<br>
+　TeXworks 利用時に埋め込むフォントを指定してください．<br>
+　　◎ デフォルトの指定を使います．<br>
+　　◯ msembed.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
+　　◯ hiraembed.map（ヒラギノフォントを用います．）<br>
+　　◯ ipaembed.map（IPAex フォントを用います．）<br>
+　　◯ kozembed.map（小塚明朝・ゴシック Pro を用います．）<br>
+　　◯ koz6embed.map（小塚明朝・ゴシック Pro6N を用います．）<br>
+　　◯ noembed.map（埋め込みません．TeXworks でのプレビューは不可．）<br>
 
 ***
 
