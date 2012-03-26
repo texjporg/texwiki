@@ -46,7 +46,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 ### リリース情報 {#m67e4030}
 
 2012-03-26 xyzzy version 0.2.3.6 (マルチフレーム版) がリリースされました<br>
-2012-03-20 xyzzy+ 0.2.2.235+0 (Unicode 版) がリリースされました<br>
+2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版) がリリースされました<br>
 2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
 とうとうオープンソースになりました！
 (MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
@@ -83,7 +83,14 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ## ダウンロードとインストール {#xy9167cb}
 
-まず，[xyzzy+](http://xyzzy.codeplex.com/) もしくは [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home) もしくは [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/) もしくは [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) から xyzzy のファイルをダウンロードします。<br>
+まず，
+
+- [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
+- [xyzzy+](http://xyzzy.codeplex.com/)
+- [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+- [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)
+
+の中から選択して xyzzy のファイルをダウンロードします。<br>
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。<br>
 [インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。<br>
 USB メモリで使用する方は，
@@ -92,7 +99,7 @@ USB メモリで使用する方は，
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。<br>
 「環境変数」というものがよくわからない方や環境変数を設定できない方の
-場合には，xyzzy\usr\\%USERNAME%\w??\xyzzy.ini （w??\ は
+場合には，xyzzy\usr\\%USERNAME%\wxp\xyzzy.ini （wxp\ は
 OS によって wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ となります）に，例えば
 
 ```
