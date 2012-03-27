@@ -61,7 +61,7 @@ TeraPad に TeX の色分け機能と補完機能を追加したような感じ�
 
 開始すると自動設定してくれますが，\[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
 
-- jbibtex.exe → pbibtex.exe
+- jbibtex.exe → pbibtex.exe または upbibtex.exe
 - dvipdfm.exe → dvipdfmx.exe
 
 に変更します．
@@ -128,11 +128,21 @@ Macroのパラメータ<br>
 
 ### TeX {#obbe32e3}
 
+#### platex の場合 {#b4b5e5be}
+
 フルパス
 : C:\w32tex\bin\platex.exe
 
 引数
-: -guess-input-enc -synctex=1 -src-specials "%F"
+: -guess-input-enc -kanji=utf8 -synctex=1 -src-specials -sjis-terminal -jobname="%x" "%F"
+
+#### uplatex の場合 {#g3bbbc46}
+
+フルパス
+: C:\w32tex\bin\uplatex.exe
+
+引数
+: -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials "%F"
 
 ### MakeIndex {#g6c29d8e}
 
@@ -140,12 +150,22 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\mendex.exe
 
 引数
-: "%X.idx"
+: -U -ST "%X.idx"
 
 ### BibTeX {#j33abf74}
 
+#### pbibtex の場合 {#r4493254}
+
 フルパス
 : C:\w32tex\bin\pbibtex.exe
+
+引数
+: -kanji=utf8 -sjis-terminal "%X"
+
+#### upbibtex の場合 {#r4f37080}
+
+フルパス
+: C:\w32tex\bin\upbibtex.exe
 
 引数
 : "%X"
