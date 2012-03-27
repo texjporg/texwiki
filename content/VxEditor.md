@@ -46,7 +46,6 @@ UTF-8N (BOM なし), UTF-8, 日本語 SJIS, 日本語 EUC, 日本語 JIS の中�
 ## ツール {#t542b96a}
 
 ツールの設定をすると TeraPad と同様に，LaTeX 環境を簡単に作ることができます．<br>
-文字コードが UTF-8N, UTF-8 の場合を以下に記述します．<br>
 
 ### pdfpLaTeX {#v2edf4e6}
 
@@ -77,7 +76,7 @@ UTF-8N (BOM なし), UTF-8, 日本語 SJIS, 日本語 EUC, 日本語 JIS の中�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -147,7 +146,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps"</ins><br>
 
 <br>
 
@@ -567,7 +566,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; pbibtex -kanji=utf8 "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; pbibtex -kanji=utf8 -sjis-terminal "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -703,7 +702,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -U "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -U -ST "$NAMEONLY"</ins><br>
 
 <br>
 
@@ -847,7 +846,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvipdfmx "$NAMEONLY" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
@@ -881,7 +880,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$NAMEONLY" "$NAMEONLY" &amp;&amp; dvips -Ppdf -t a4 -z -f "$NAMEONLY.dvi" | convbkmk -g > "$NAMEONLY.ps" &amp;&amp; ps2pdf.bat "$NAMEONLY.ps" &amp;&amp; pdfopen --file "$NAMEONLY.pdf"</ins><br>
 
 <br>
 
