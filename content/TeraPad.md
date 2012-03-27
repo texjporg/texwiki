@@ -139,7 +139,6 @@ UTF-8N (BOM なし), UTF-8, SHIFT-JIS, EUC, JIS の中から作成する LaTeX �
 ## ツール {#w029960e}
 
 ツールの設定をすると VxEditor と同様に，LaTeX 環境を簡単に作ることができます．<br>
-文字コードが UTF-8N, UTF-8 の場合を以下に記述します．<br>
 
 ### pdfpLaTeX {#m290fc57}
 
@@ -160,7 +159,7 @@ UTF-8N (BOM なし), UTF-8, SHIFT-JIS, EUC, JIS の中から作成する LaTeX �
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -188,7 +187,7 @@ UTF-8N (BOM なし), UTF-8, SHIFT-JIS, EUC, JIS の中から作成する LaTeX �
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b"};if($?){dvipdfmx "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b"};if($?){dvipdfmx "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -236,7 +235,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -264,7 +263,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b"};if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -676,7 +675,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=utf8 "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; pbibtex -kanji=utf8 -sjis-terminal "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -704,7 +703,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex -kanji=utf8 "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){pbibtex -kanji=utf8 -sjis-terminal "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -812,7 +811,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -U "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -U -ST "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -840,7 +839,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -U "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -U -ST "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -956,7 +955,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b" &amp;&amp; dvipdfmx "%b" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -984,7 +983,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b";if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b";if($?){dvipdfmx "%b"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1014,7 +1013,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b" &amp;&amp; dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "%b.ps" &amp;&amp; ps2pdf.bat "%b.ps" &amp;&amp; pdfopen --file "%b.pdf"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -1042,7 +1041,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; platex -no-guess-input-enc -kanji=utf8 -jobname="%b" "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){Get-Process -Name AcroRd32 | Select-String AcroRd32 | Out-Null};if($?){echo exit | pdfdde} &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="%b" "%b";if($?){dvips -Ppdf -t a4 -z -f "%b.dvi" | convbkmk -g > "$b.ps"};if($?){ps2pdf.bat "%b.ps"};if($?){pdfopen --file "%b.pdf"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
