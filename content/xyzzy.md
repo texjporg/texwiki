@@ -69,6 +69,8 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
     - [活動履歴](http://sourceforge.jp/users/southly/history)
 - [xyzzy+](http://xyzzy.codeplex.com/)
     - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
+- [xyzzy-022](http://xyzzy-022.github.com/)
+    - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
 - [xyzzy.src (bowbow99-master)](https://github.com/bowbow99/xyzzy.src/)
     - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/)
 - [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
@@ -87,6 +89,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
 - [xyzzy+](http://xyzzy.codeplex.com/)
+- [xyzzy-022](http://xyzzy-022.github.com/)
 - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)
 
