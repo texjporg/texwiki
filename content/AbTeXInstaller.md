@@ -186,6 +186,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
+　　　　 ∣☑pmx.tar.xz　　　　　　　　　　　　　　　無い　　　2.4MB<br>
 　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　88KB<br>
 　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.5MB<br>
 　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　552KB<br>
