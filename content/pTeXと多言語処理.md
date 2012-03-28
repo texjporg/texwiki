@@ -900,7 +900,7 @@ cidgoth-v      Identity-V          ipag.ttf/AJ16
 
 Adobe Reader 附属の CMap
 （どこにあるのか分からない場合には “UniGB-UTF16-H” で検索してみること）は
-例えば "C:\Program Files\Adobe\Reader 8.0\Resource\CMap\\" にあるので，
+例えば "C:\Program Files\Adobe\Reader 10.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
 DVI → PS → PDF の流れで作りたい方は，[Ghostscript](/Ghostscript/) が 8.54 以降で
