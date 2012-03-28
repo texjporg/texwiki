@@ -61,7 +61,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>作者</strong>：[阿部 紀行](http://www.math.sci.hokudai.ac.jp/~abenori/)さん
 - <strong>初心者オススメ度</strong>：★★★★★
 - <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
-- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout for Windows，Ghostscript，GSview（DLL プラグインおよび Ruby スクリプトの追加方式により xypic，ispell，WinShell）
+- <strong>インストールする対象</strong>：W32TeX バイナリ，dviout for Windows，Ghostscript，GSview，TeXworks（DLL プラグインおよび Ruby スクリプトの追加方式により xypic，ispell，WinShell）
 - <strong>ユーザーインターフェース</strong>：GUI
 - <strong>ネット・ローカルインストール</strong>：ネットインストーラ。ローカルにも対応しています。
 - <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
@@ -113,6 +113,19 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>長所</strong>：TeX初心者が安心して利用できるよう、安定したバージョンをパッケージングしています。環境変数PATHの設定とTeXworksの設定（PDFへの日本語フォント埋め込み設定、拡張子.tex への関連付け、デスクトップへのショートカット作成）を自動で行います。
 - <strong>短所</strong>：LuaTeX、XeTeX、upTeXはインストールされません。
 - <strong>参考</strong>：[InftyProject](http://www.inftyproject.org/jp/software.html#TeXInstaller)
+
+## WTeXInst {#e014b4e0}
+
+- <strong>URL</strong>: [http://www2.marukotv.jp/~cil/softland/softland1.htm#WTeXInst](http://www2.marukotv.jp/~cil/softland/softland1.htm#WTeXInst)
+- <strong>作者</strong>： 松原 邦彦さん
+- <strong>初心者オススメ度</strong>：
+- <strong>ライセンス</strong>：
+- <strong>インストールする対象</strong>：W32TeX バイナリ
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネット・ローカルインストール</strong>：
+- <strong>環境変数・レジストリ</strong>：
+- <strong>長所</strong>：
+- <strong>短所</strong>：
 
 ## Visual Installer for W32TeX {#c70efefe}
 
