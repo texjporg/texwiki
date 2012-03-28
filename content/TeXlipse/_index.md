@@ -34,14 +34,14 @@ pukiwiki: "TeXlipse"
     - [TeXlipseBibSonomyExtension](http://www.bibsonomy.org/help_en/TeXlipseBibSonomyExtension)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
 
-### ChangeLog {#e321b2d0}
-
-- [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
-
 ### リリース情報 {#f49b6dcf}
 
 2011-11-26 TeXlipse Version 1.5.0 がリリースされました．<br>
 TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
+
+### ChangeLog {#e321b2d0}
+
+- [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
 
 ### スクリーンショット {#j94c34b3}
 
