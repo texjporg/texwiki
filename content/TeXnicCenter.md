@@ -362,7 +362,6 @@ Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encodi
 ## (La)TeX {#n6a4bee4}
 
 英語版のコンパイラが設定されるので日本語版のコンパイラに変更します．<br>
-Encoding が UTF-8 の場合を記述します．<br>
 
 Profiles
 
@@ -382,7 +381,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
+<ins>-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -455,7 +454,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
+<ins>-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -529,7 +528,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
+<ins>-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
