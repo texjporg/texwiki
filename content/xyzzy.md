@@ -9,14 +9,14 @@ pukiwiki: "xyzzy"
 
 ## [xyzzy](http://www.jsdlab.co.jp/~kamei/) {#ea58addb}
 
-<img src="http://a0.twimg.com/profile_images/1893772384/mumurik765-test.png" alt="xyzzy (マルチフレーム版)" style="float:right">
+<img src="http://xyzzy.s53.xrea.com/wiki/index.php?plugin=ref&amp;page=tips%2Ficon%A4%F2%BD%F1%A4%AD%B4%B9%A4%A8%A4%EB&amp;src=xyzzy_g.png" alt="xyzzy" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## xyzzy とは {#xya184ab}
 
 xyzzy は柔軟なカスタマイズを可能にした，
-多機能なテキストエディタ，Common-LISP インタプリタです。
+多機能なテキストエディタ，Common Lisp インタプリタです。
 
 [Emacs](/Emacs/) を知っている方には，elisp ではなく，Common Lisp を使って拡張する Microsoft Windows 専用の環境である，と表現したほうがわかりやすいかもしれません。<br>
 国産で，フリーソフトウェアです。<br>
@@ -97,7 +97,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。<br>
 [インストーラ](http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy)もあります。<br>
 USB メモリで使用する方は，
-[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
+[マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home), [xyzzyをちょこちょこ改造](http://blog.2310.net/archives/618)
 がおすすめです。<br>
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。<br>
@@ -265,7 +265,7 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 をご覧ください。<br>
 kyotex-mode，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。<br>
-[bibtex-mode \[\[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)，
+[bibtex-mode \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)，
 [RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex) というものもあります。<br>
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。<br>
 Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。<br>
