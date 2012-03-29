@@ -65,7 +65,7 @@ EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版�
 
 KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
-[xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
+[xyzzy-022](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
 マルチフレーム版では動作しません．<br>
 マルチフレーム版では KaTeX カスタム版を使用してください．<br>
 KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
