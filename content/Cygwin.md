@@ -207,8 +207,12 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 - [apt-cyg](http://code.google.com/p/apt-cyg/)
 - [cyg-apt](http://code.google.com/p/cyg-apt/)
+- [CygApt](http://code.google.com/p/maphew/wiki/CygApt)
 - [cyg-get](http://code.google.com/p/cyg-get/)
 - [cyg-get](http://www.nabber.org/projects/cyg-get/)
+- [cyg-pm](http://sourceforge.jp/projects/gnupack/downloads/49574/)
+    - [Cygwinパッケージマネージャの自作中（その１）](http://d.hatena.ne.jp/ksugita0510/20101031/p2)
+    - [Cygwinパッケージマネージャの自作中（その２）](http://d.hatena.ne.jp/ksugita0510/20101106/p1)
 
 ## Terminal Emulator {#y02da075}
 
