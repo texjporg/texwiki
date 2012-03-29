@@ -914,18 +914,14 @@ DVI → PS → PDF の流れで作りたい方は，[Ghostscript](/Ghostscript/)
 （UTF-16 などの他の Unicode エンコーディングは選ばないように注意！）。
 
 さて，TeX ソースに中国語・韓國語を入力するためには
-残念ながら入力ソフト (input method) が必須となります。
-入力ソフトをまだインストールしてない場合は
-「[Windows 系コンピュータで使う中国語・韓国語](http://www2.yamanashi-ken.ac.jp/~yohnishi/pcinfo/windows_tips/international/win-cn-kr.html)」，
-「[Windowsで中国語・韓国語を扱う方法](http://www.rglk.com/regal/mame-chisiki-j.html)」
-を参考にインストールしてください。xyzzy は Global IME による入力に
-対応していますので，Windows 98 などの方は
-Global IME をインストールしておきましょう。
+設定が必要です。
+「[中国語・韓国語を入力したい](http://www.tjf.or.jp/ringo/migaku/post-22.php)」 <!-- ，「[[Windows 系コンピュータで使う中国語・韓国語>http://www2.yamanashi-ken.ac.jp/~yohnishi/pcinfo/windows_tips/international/win-cn-kr.html]]」， --> <!-- 「[[Windowsで中国語・韓国語を扱う方法>http://www.rglk.com/regal/mame-chisiki-j.html]]」 -->
+を参考に設定してください。 <!-- xyzzy は Global IME による入力に --> <!-- 対応していますので，Windows 98 などの方は --> <!-- Global IME をインストールしておきましょう。 -->
 
 xyzzy 側での設定ですが，メニューバーより ［ツール］ → ［共通設定］ より ［フォント］タブを選び，それぞれの言語の文字セットについて，フォントなどを適切に対応付けておきます。
 （どのフォントを使うのか分からない場合は，Internet Explorer より ［ツール］ → ［インターネットオプション］ より，［全般］タブを選び，［フォント］ボタンをクリックして調べます。それぞれの言語セットの ［テキスト形式フォント］ が xyzzy で使うべきフォントです。）
 
-Global IME を用いる Windows 98 などのユーザーは ［ツール］ → ［共通設定］ より ［いろいろ］タブを選び，［Global IMEを使う］ にチェックを入れておきます。
+<!-- Global IME を用いる Windows 98 などのユーザーは ［ツール］ → ［共通設定］ より ［いろいろ］タブを選び，［Global IMEを使う］ にチェックを入れておきます。 -->
 
 otfcjk での書き方は
 [Kino さんの入力例](http://www2.odn.ne.jp/alt-quinon/files/ptex/otfcjk/)の
@@ -1150,9 +1146,7 @@ fmtutil --byfmt platex
 ```
 
 では，実際にソースを記述していきましょう。たとえば次のような感じで書いていきます。
-グルジア文字やヴェトナム語の入力環境を整えてない方は，次を参考にグルジア語やヴェトナム語のキーボードの追加設定を行ってください。
-（まずはグルジア語。[Windows 2000 の場合](http://mlang1.osaka-gaidai.ac.jp/multi/win2k.html)，[Windows XP の場合](http://mlang1.osaka-gaidai.ac.jp/multi/winxp.html)。
-[ヴェトナム語の場合 \[Windows 2000, XP\]](http://www.vinapark.com/basic/input.html#windows)）
+グルジア文字やヴェトナム語の入力環境を整えてない方は，グルジア語やヴェトナム語のキーボードの追加設定を行ってください。
 
 グルジア語の場合，次のようにソースを書いていきます。\usepackage で
 mxedruli を読み込みます。グルジア語は mxedr 環境内に書きます。
@@ -1298,6 +1292,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 ## 関連リンク {#v1d4c456}
 
 - [xyzzy あんてな](http://raido.sakura.ne.jp/southly/a/)
+- [AtoZ](http://www.tokyorus.ac.jp/computer/atoz.htm)
 
 ## 謝辞 {#xyathxds}
 
