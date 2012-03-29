@@ -34,7 +34,8 @@ xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode
 などの文字の表示・混在編集などに対応しています (Unicode のすべての言語に対応しているわけではありません) 。<br>
 Emacs ライクなテキストエディタというと，デフォルトの状態では使いにくく，カスタマイズが必要な上級者向けとの印象があります。<br>
 ですが，xyzzy はデフォルトの状態でも Emacs に比べれば親しみやすく，メニューバーやツールバーやタブバーがありますし，多くのテキストエディタでできるような設定はダイアログボックスからマウスでできます。<br>
-ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われますので，無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，jEdit，[Geany](/Geany/)，[gedit](/gedit/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
+ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われます。<br>
+そういった方は無理をせずに TeraPad，VxEditor，Mery，[サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，jEdit，[Geany](/Geany/)，[gedit](/gedit/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。<br>
 また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
 例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
@@ -45,6 +46,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### リリース情報 {#m67e4030}
 
+2012-03-29 xyzzy version 0.2.2.236 (0.2.2 系列) がリリースされました<br>
 2012-03-26 xyzzy version 0.2.3.6 (マルチフレーム版) がリリースされました<br>
 2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版) がリリースされました<br>
 2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
@@ -54,7 +56,8 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### 派生版 {#k1e2d6da}
 
-公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。興味のある方は，是非参加してみてください。
+公式サイトの xyzzy の更新は止まっていますが，オープンソースなのでいろいろな xyzzy の派生版が作成されています。<br>
+興味のある方は，是非参加してみてください。<br>
 
 - [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
 - [英語版](http://xyzzy.s53.xrea.com/english/archive/)
@@ -71,10 +74,10 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
     - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
 - [xyzzy-022](http://xyzzy-022.github.com/)
     - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
-- [xyzzy.src (bowbow99-master)](https://github.com/bowbow99/xyzzy.src/)
-    - [コミットログ](https://github.com/bowbow99/xyzzy.src/commits/)
-- [xyzzy.src (for-gcc)](https://github.com/bulb/xyzzy.src)
-    - [コミットログ](https://github.com/bulb/xyzzy.src/commits/for-gcc)
+        <!-- -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
+        <!-- - -[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
+        <!-- -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
+        <!-- - -[[コミットログ:https://github.com/bulb/xyzzy.src/commits/for-gcc]] -->
 
 ### スクリーンショット {#of7fa0a1}
 
@@ -87,10 +90,9 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 まず，
 
+- [xyzzy-022](http://xyzzy-022.github.com/)
 - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
 - [xyzzy+](http://xyzzy.codeplex.com/)
-- [xyzzy-022](http://xyzzy-022.github.com/)
-- [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/)
 
 の中から選択して xyzzy のファイルをダウンロードします。<br>
