@@ -1373,10 +1373,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 以上でインストールはようやく終わりです。
 
 さて，TeX ソースに中国語・韓國語を入力するためには
-残念ながら入力ソフト (input method) が必須となります。
-入力ソフトをまだインストールしてない場合は
-「[Windows 系コンピュータで使う中国語・韓国語](http://www2.yamanashi-ken.ac.jp/~yohnishi/pcinfo/windows_tips/international/win-cn-kr.html)」
-を参考にインストールしてください。
+設定が必要です。
+「[中国語・韓国語を入力したい](http://www.tjf.or.jp/ringo/migaku/post-22.php)」
+を参考に設定してください。
 
 otfcjk での書き方は
 [Kino さんの入力例](http://www2.odn.ne.jp/alt-quinon/files/ptex/otfcjk/)の
