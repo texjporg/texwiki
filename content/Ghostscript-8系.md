@@ -50,6 +50,10 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 - [GPL Ghostscript 9.xx](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs905w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
+> - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
+> - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+> - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+
 - Ghostscript を GUI 操作できるソフトウェア GSview のインストーラ
     - [GSview 5.0 (32bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv50w32.exe) (32bit版のGhostscriptが必要です。)
     - [GSview 5.0 (64bit版)](https://mirror.ctan.org/support/ghostscript/ghostgum/gsv50w64.exe) (64bit版のGhostscriptが必要です。)
