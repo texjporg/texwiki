@@ -238,6 +238,7 @@ class Equation:
 処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
 
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
+- [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
 - InkscapeをLaTeXと一緒に使う
     - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
     - [http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html)
