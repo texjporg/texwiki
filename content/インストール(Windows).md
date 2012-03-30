@@ -28,7 +28,8 @@ W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - Te
 
 W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューションもあります．
 
-- [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
+- [MiKTeX Project Page](http://miktex.org/)
+    - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
 
 ### [Cygwin](/Cygwin/) {#sfbd073e}
 
@@ -62,10 +63,12 @@ W32TeX の内部 Unicode 版 pTeX
 もしファイル名のデータベース $TEXMF/ls-R
 （例えば C:\w32tex\share\texmf\ls-R）が
 存在するのなら，mktexlsr コマンド (または texhash コマンド) でデータベースを更新しないと，
-新しくインストールしたファイルが認識されません。しかしこれは忘れやすいので，
+新しくインストールしたファイルが認識されません。<br>
+しかしこれは忘れやすいので，
 初心者のかたは mktexlsr コマンドを打ち込まないほうがいいでしょう。
 
-W32TeX を使用していて間違って mktexlsr コマンドを打ち込んでしまった場合は deltexlsr コマンドを打ち込んでください。$TEXMF/ls-R ファイルが削除されます。
+W32TeX を使用していて間違って mktexlsr コマンドを打ち込んでしまった場合は deltexlsr コマンドを打ち込んでください。<br>
+$TEXMF/ls-R ファイルが削除されます。
 
 ## Ghostscript のインストール {#zd901fa9}
 
@@ -76,49 +79,91 @@ W32TeX を使用していて間違って mktexlsr コマンドを打ち込んで
 [dviout for Windows](/dviout/) で使う際に必要です。
 
 もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
-必ず削除しておきます（方法は上で説明した TeX の場合と同じです）。
+必ず削除しておきます（方法は上で説明した W32TeX の場合と同じです）。
 
-フォントを埋め込みたい場合はインストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] のチェックを on にして \[Finish\] をクリックします．
+インストールの詳細に関しては
 
-環境変数 PATH に Ghostscript の PATH を追加します．
+- Ghostscript-8系#GPL Ghostscript 9.xx for Microsoft Windows
 
-PATH の値は Destination Folder (インストール先のフォルダー) によって変わるので，インストール先のフォルダーに合わせて値を変えてください．
+を参照してください。
 
-- Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.05 にした場合
+<!-- フォントを埋め込みたい場合はインストールウィザードを終了するウィンドウで [Generate cidfmap for Windows CJK TrueType fonts] のチェックを on にして [Finish] をクリックします． -->
+<!--  -->
+<!-- 環境変数 PATH に Ghostscript の PATH を追加します． -->
+<!--  -->
+<!-- PATH の値は Destination Folder (インストール先のフォルダー) によって変わるので，インストール先のフォルダーに合わせて値を変えてください． -->
+<!--  -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.05 にした場合 -->
+<!-- > -->
+<!-- |変数名|変数値|h -->
+<!-- |PATH|C:\Program Files\gs\gs9.05\bin;C:\Program Files\gs\gs9.05\lib| -->
+<!-- < -->
+<!--  -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files (x86)\gs\gs9.05 にした場合 -->
+<!-- > -->
+<!-- |変数名|変数値|h -->
+<!-- |PATH|C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib| -->
+<!-- < -->
+<!--  -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\gs\gs9.05 にした場合 -->
+<!-- > -->
+<!-- |変数名|変数値|h -->
+<!-- |PATH|C:\gs\gs9.05\bin;C:\gs\gs9.05\lib| -->
+<!-- < -->
+<!--  -->
 
-> | 変数名 | 変数値 |
-> |---|---|
-> | PATH | C:\Program Files\gs\gs9.05\bin;C:\Program Files\gs\gs9.05\lib |
->
+## Perl のインストール {#u9e265db}
 
-- Destination Folder (インストール先のフォルダー) を C:\Program Files (x86)\gs\gs9.05 にした場合
+TeX 関連プログラムには Perl で書かれたスクリプトがあります．<br>
+Perl で書かれたスクリプトを実行するには Perl の処理系が必要です．<br>
 
-> | 変数名 | 変数値 |
-> |---|---|
-> | PATH | C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib |
->
+- [Strawberry Perl](http://strawberryperl.com/)
 
-- Destination Folder (インストール先のフォルダー) を C:\gs\gs9.05 にした場合
+perl.exe を C:\strawberry\perl\bin にインストールした場合は
 
-> | 変数名 | 変数値 |
-> |---|---|
-> | PATH | C:\gs\gs9.05\bin;C:\gs\gs9.05\lib |
->
+```
+;C:\strawberry\perl\bin
+```
 
-- [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
-- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+を環境変数 PATH に追加します
+
+## Python のインストール {#cc86c15a}
+
+TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
+Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
+
+- [Python Programming Language &ndash; Official Website](http://www.python.org/)
+
+python.exe を C:\Python27 にインストールした場合は
+
+```
+;C:\Python27
+```
+
+を環境変数 PATH に追加します
+
+python.exe を C:\Python32 にインストールした場合は
+
+```
+;C:\Python32
+```
+
+を環境変数 PATH に追加します
 
 ## Ruby のインストール {#w18e586b}
 
-convbkmk.rb などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．
+TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
+convbkmk.rb などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 
-> | 変数名 | 変数値 |
-> |---|---|
-> | PATH | C:\Ruby193\bin |
->
+ruby.exe を C:\Ruby193\bin にインストールした場合は
+
+```
+;C:\Ruby193\bin
+```
+
+を環境変数 PATH に追加します
 
 ## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
