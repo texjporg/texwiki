@@ -2641,6 +2641,7 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 - [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
+- [TeX覚書](http://ameblo.jp/tex-memo)
 - [TeXlipse (Windows)](http://utkhii.px.tsukuba.ac.jp/~ywatanabe/pukiwiki/index.php?PC%20%A5%BB%A5%C3%A5%C8%A5%A2%A5%C3%A5%D7#odf46805)
 - [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
 - [texlipse    \[EveryWare Lab students\]](http://wiki.webdev.ewlab.dico.unimi.it/doku.php?id=texlipse)
