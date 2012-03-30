@@ -32,8 +32,10 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 ### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-の実行方法は，[abtexinst - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=abtexinst) から TeXインストーラ3 0.82 をダウンロードして展開 (解凍) します。<br>
-展開したフォルダーの "abtexinst.exe" を実行します。<br> <!-- リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして ''"abtexinst.exe" を実行してすぐに終了します。''~ --> <!-- abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。~ --> <!-- abtexinst.ini をメモ帳で開きます。~ --> <!--  --> <!-- abtexinst.ini の [Reg] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip では Ghostscript は zip ファイルしか表示されないので [Reg] の GS の値を修正します。~ --> <!-- Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.(zip|exe) --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=0 --> <!-- otfdevel=1 --> <!--  --> <!-- デフォルトでは otfdevel のみインストールされます。~ --> <!-- otf の最新版は otfbeta です。~ --> <!-- otfbeta をインストールするように [Listup] の項目を修正します。~ --> <!-- otfbeta をインストールするには以下のように修正します。~ --> <!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 --> <!-- 複数選択すると，最後に展開されたもので上書きされます。)~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=1 --> <!-- otfdevel=0 --> <!--  --> <!-- abtexinst.ini を上書き保存してメモ帳を終了します。~ --> <!-- abtexinst.exe を実行して指示に従ってインストールします。 -->
+または
+[abtexinst - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=abtexinst)
+から TeXインストーラ3 0.82 をダウンロードして展開 (解凍) します。<br>
+実行方法は展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br> <!-- リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして ''"abtexinst.exe" を実行してすぐに終了します。''~ --> <!-- abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。~ --> <!-- abtexinst.ini をメモ帳で開きます。~ --> <!--  --> <!-- abtexinst.ini の [Reg] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip では Ghostscript は zip ファイルしか表示されないので [Reg] の GS の値を修正します。~ --> <!-- Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.(zip|exe) --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=0 --> <!-- otfdevel=1 --> <!--  --> <!-- デフォルトでは otfdevel のみインストールされます。~ --> <!-- otf の最新版は otfbeta です。~ --> <!-- otfbeta をインストールするように [Listup] の項目を修正します。~ --> <!-- otfbeta をインストールするには以下のように修正します。~ --> <!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 --> <!-- 複数選択すると，最後に展開されたもので上書きされます。)~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=1 --> <!-- otfdevel=0 --> <!--  --> <!-- abtexinst.ini を上書き保存してメモ帳を終了します。~ --> <!-- abtexinst.exe を実行して指示に従ってインストールします。 -->
 
 ***
 
@@ -71,7 +73,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/</ins><br>
 　　　　　　☐一覧以外を使う（↓に入力）<br>
 　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otfbeta をインストールする場合は \[高度な設定\] をクリック<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otf と luatex のパッケージを変更してインストールする場合は \[高度な設定\] をクリック<br>
 　　　　☑環境変数PATHに実行ファイルのフォルダを追加する．<br>
 　　　　☐ネットワークを使わない．（ローカルのファイルからインストールします．）<br>
 　　　　☑ダウンロードをキャッシュから読み込まないようにする．<br>
@@ -80,7 +82,8 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ***
 
-デフォルトでは otfdevel がインストールされます。<br>
+<!-- デフォルトでは otfbeta がインストールされます。~ -->
+
 otf パッケージの最新版は otfbeta です。<br>
 3つの otf パッケージの中から自分の用途に合わせて選択してください。<br>
 otf パッケージは複数インストールしてはいけません。<br>
