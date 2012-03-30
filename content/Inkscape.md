@@ -17,11 +17,8 @@ pukiwiki: "Inkscape"
 
 ## Inkscape とは {#v6fd1815}
 
-Inkscape は，オープンソースのベクターグラフィックエディタ (SVG エディタ) です．
-
-Windows, Linux, Mac OS X, Unix で動作します．
-
-2011-09-06 Inkscape 0.48.2 がリリースされました．
+Inkscape は，オープンソースのベクターグラフィックエディタ (SVG エディタ) です．<br>
+Windows, Linux, Mac OS X, Unix で動作します．<br>
 
 <table>
 <tbody>
@@ -48,13 +45,10 @@ Windows, Linux, Mac OS X, Unix で動作します．
         - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
     - [Tools](http://wiki.inkscape.org/wiki/index.php/Tools)
     - [Extension repository](http://wiki.inkscape.org/wiki/index.php/ExtensionsRepository)
-- WikiPedia.ja:Inkscape
-- [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
-- MacWiki:Inkscape
-- [窓の杜 - Inkscape](http://www.forest.impress.co.jp/lib/pic/piccam/paint/inkscape.html)
-- [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
-- [Mac用ドローイングソフトInkscapeを日本語化する](http://idita.blog11.fc2.com/blog-entry-469.html)
-- [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
+
+### リリース情報 {#d961699f}
+
+2011-09-06 Inkscape 0.48.2 がリリースされました．
 
 ## 不具合 {#tedcde5e}
 
@@ -136,13 +130,6 @@ inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
 inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
 inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ```
-
-## Inkscape で TeX 数式 {#f9da7d32}
-
-- [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
-- [Inkscapeでtex数式を使う(数式はアウトラインに)](http://www.my-chicken-heart.com/2007/09/inkscapetex.html)
-- [Latexの数式をsvgに](http://blog.livedoor.jp/les_paul_sp/archives/317234.html)
-- [TeX, EPS, Inkscape for Win](http://researchmap.jp/jo8ju0xue-10163/#_10163)
 
 ## エクステンション {#s696e33c}
 
@@ -983,3 +970,20 @@ Svg2tex is a python script that extracts all text from a \*.svg file to a LaTeX 
 
 - [JessyInk](http://code.google.com/p/jessyink/)
 - [Inkscapeでプレゼンテーション](http://d.hatena.ne.jp/yambi/20110405/1301974923)
+
+## Inkscape で TeX 数式 {#f9da7d32}
+
+- [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
+- [Inkscapeでtex数式を使う(数式はアウトラインに)](http://www.my-chicken-heart.com/2007/09/inkscapetex.html)
+- [Latexの数式をsvgに](http://blog.livedoor.jp/les_paul_sp/archives/317234.html)
+- [TeX, EPS, Inkscape for Win](http://researchmap.jp/jo8ju0xue-10163/#_10163)
+
+## 関連リンク {#l46f1d34}
+
+- WikiPedia.ja:Inkscape
+- [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
+- MacWiki:Inkscape
+- [窓の杜 - Inkscape](http://www.forest.impress.co.jp/lib/pic/piccam/paint/inkscape.html)
+- [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
+- [Mac用ドローイングソフトInkscapeを日本語化する](http://idita.blog11.fc2.com/blog-entry-469.html)
+- [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
