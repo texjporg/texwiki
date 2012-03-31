@@ -142,36 +142,94 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ### [EqTeXSvg (Latex 数式)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．<br>
+環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．<br>
 [Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，修正しないと正しく動作しないので，[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)の最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
 
-- 環境変数 PATH に latex, dvisvgm, dvips, pstoedit が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
-    - pstoedit に PATH が通っていればコマンドプロンプトから
+- [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
+- [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
+- InkscapeをLaTeXと一緒に使う
+    - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
+    - [http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html)
+- [Inkscape で LaTeX の数式を入力する](http://www.empitsu.com/wp/?p=24)
+- [Inkscape で LaTeX の数式を入力する（続編）](http://www.empitsu.com/wp/?p=85)
+- [Windows版の Inkscape で LaTeX の数式を入力する](http://d.hatena.ne.jp/hiroki777/20080221)
 
-        ```
-        C:\>pstoedit
-        pstoedit: version 3.50 / DLL interface 108 (build Aug 10 2009 - release build -
-        MS VC++ 1300) : Copyright (C) 1993 - 2009 Wolfgang Glunz
-        No output format specified (-f option) and format could not be deduced from suff
-        ix of output file since no output file name was given
-        Usage: "pstoedit -f format inputfile outputfile" or run "pstoedit -help" to get
-        a complete list available options.
-        ```
+#### インストール {#v77ed75c}
 
-        として表示されます．<br>
-        PATH を通しているのに Latex 数式が表示されない場合は，まずコマンドプロンプトから
+dvisvgm, dvips, latex は [W32TeX](/W32TeX/) または [TeX Live](</TeX Live/>) に含まれています．
 
-        ```
-        C:\>echo %PATH%
-        ```
+***
 
-        として PATH を確認します．<br>
-        latex, dvisvgm, dvips, pstoedit が格納されているディレクトリが PATH に登録されていればコマンドプロンプトから
+- [http://www.pstoedit.net/](http://www.pstoedit.net/)
 
-        ```
-        C:\inkscape>inkscape
-        ```
+から pstoedit をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
 
-        として Inkscape を起動してみてください．
+***
+
+- [http://inkscape.org/download/](http://inkscape.org/download/)
+
+から Inkscape のリリース版をダウンロードして展開します．
+
+展開したフォルダーを C:\inkscape と仮定します．別のフォルダーに展開した場合は読み替えてください．
+
+***
+
+[EqTeXSvg](http://www.julienvitard.eu/en/eqtexsvg_en.html) から eqtexsvg.zip をダウンロードします．
+
+eqtexsvg.zip を展開し，eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
+
+***
+
+EqTeXSvg (Latex 数式) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
+
+```
+C:\inkscape>.\python\python.exe
+Python 2.6.5 (r265:79096, Mar 19 2010, 21:48:26) [MSC v.1500 32 bit (Intel)] on
+win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tempfile
+>>> tempfile.gettempdir()
+```
+
+とすることで確認できます．
+
+もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して
+
+```
+class Equation:
+    """Current LaTeX Equation"""
+
+    def __init__(self, param={}):
+
+    ...
+
+        try: 
+            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
+            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
+```
+
+などとして C:\inkscape\share\extensions\eqtexsvg.py の self.temp_dir を修正してください．<br>
+この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
+処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
+
+#### 使用方法 {#se15d9b2}
+
+- 環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
+
+PATH を通しているのに Latex 数式が表示されない場合は，まずコマンド プロンプトから
+
+```
+C:\>echo %PATH%
+```
+
+として PATH を確認します．<br>
+pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PATH に登録されていればコマンド プロンプトから
+
+```
+C:\inkscape>inkscape
+```
+
+として Inkscape を起動してみてください．
 
 - デフォルトで含まれている eqtexsvg.py (2010-04-04) を使用すると，数式がうまく表示されなかったので eqtexsvg.py の dvips コマンドのオプションを以下のように修正すると表示されました．最新版 (2011-05-17) では修正しなくても表示されました．<br>
 
@@ -180,7 +238,7 @@ LaTeX と連携するためのエクステンション．<br>
             os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file))
     ```
 
-- eqtexsvg.py は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
+- eqtexsvg.py は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
 
     ```
     C:\inkscape>.\python\python.exe
@@ -224,84 +282,17 @@ class Equation:
 この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
 処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
 
-- [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
-- [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
-- InkscapeをLaTeXと一緒に使う
-    - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
-    - [http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html)
-- [Inkscape で LaTeX の数式を入力する](http://www.empitsu.com/wp/?p=24)
-- [Inkscape で LaTeX の数式を入力する（続編）](http://www.empitsu.com/wp/?p=85)
-- [Windows版の Inkscape で LaTeX の数式を入力する](http://d.hatena.ne.jp/hiroki777/20080221)
-
 ***
 
 <span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Latex 数式</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　Latex 数式: <ins>\\\[\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\\]</ins><br>
+　Latex 数式: <ins>\\(\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
 　追加パッケージ(カンマで区切る):<br>
 　Debug information　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 
 <br>
 
 　ライブプレビュー　　　　　　　　　　　　　　　　　　　　　　　　☑<br>
-
-***
-
-#### インストール {#v77ed75c}
-
-***
-
-- [http://www.pstoedit.net/](http://www.pstoedit.net/)
-
-から pstoedit をダウンロード，インストールして pstoedit.exe のフォルダに PATH を通します．
-
-***
-
-- [http://inkscape.org/download/](http://inkscape.org/download/)
-
-から Inkscape のリリース版をダウンロードして展開します．
-
-展開したフォルダを C:\inkscape と仮定します．別のフォルダに展開した場合は読み替えてください．
-
-***
-
-[EqTeXSvg](http://www.julienvitard.eu/en/eqtexsvg_en.html) から eqtexsvg.zip をダウンロードします．
-
-eqtexsvg.zip を展開し，eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
-
-***
-
-EqTeXSvg (Latex 数式) は tempdir に inkscape-?????? フォルダを作成しますが作成される inkscape-?????? フォルダの親ディレクトリは
-
-```
-C:\inkscape>.\python\python.exe
-Python 2.6.5 (r265:79096, Mar 19 2010, 21:48:26) [MSC v.1500 32 bit (Intel)] on
-win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> import tempfile
->>> tempfile.gettempdir()
-```
-
-とすることで確認できます．
-
-もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して
-
-```
-class Equation:
-    """Current LaTeX Equation"""
-
-    def __init__(self, param={}):
-
-    ...
-
-        try: 
-            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
-            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
-```
-
-などとして C:\inkscape\share\extensions\eqtexsvg.py の self.temp_dir を修正してください．<br>
-この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
-処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
 
 ***
 
@@ -438,7 +429,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 
 - [http://www.pstoedit.net/](http://www.pstoedit.net/)
 
-から pstoedit をダウンロード，インストールして pstoedit.exe のフォルダに PATH を通します．
+から pstoedit をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
 
 ***
 
@@ -446,7 +437,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 
 から Inkscape のリリース版をダウンロードして展開します．
 
-展開したフォルダを C:\inkscape と仮定します．別のフォルダに展開した場合は読み替えてください．
+展開したフォルダーを C:\inkscape と仮定します．別のフォルダーに展開した場合は読み替えてください．
 
 ***
 
@@ -617,7 +608,7 @@ pdfcrop の実行には Perl が必要です．
 
 ***
 
-textext は tempdir に tmp?????? フォルダを作成しますが作成される tmp?????? フォルダの親ディレクトリは
+textext は tempdir に tmp?????? フォルダーを作成しますが作成される tmp?????? フォルダーの親ディレクトリは
 
 ```
 C:\inkscape>.\python\python.exe
@@ -935,7 +926,7 @@ $ export FONTCONFIG_PATH=C:/w32tex/share/texmf/fonts/conf
 $ pdf2svg tmp.pdf tmp.svg
 ```
 
-コマンドプロンプトの場合は
+コマンド プロンプトの場合は
 
 ```
 >set FONTCONFIG_PATH=C:\w32tex\share\texmf\fonts\conf
