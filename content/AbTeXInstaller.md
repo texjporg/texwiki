@@ -14,6 +14,10 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
 環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，テスト結果が集まれば，手軽なインストール方法として活用できるかと思います。
 
+### リリース情報 {#f691af94}
+
+2012-03-31 TeXインストーラ3 0.82 がリリースされました
+
 ### 注意事項 {#bb499d3c}
 
 #### 0.81r7 以前のバージョンを使っている方へ {#sd8d9f1f}
@@ -23,17 +27,15 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 #### 0.81r5 以前のバージョンを使っている方へ {#r1b99509}
 
-<span style="color:Red;"><strong>&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．<br>最新版にアップデートしてください．</strong></span><br>
+&#x68;ttp://w32tex.org/current/<br>&#x68;ttp://w32tex.org/gs/<br>&#x68;ttp://w32tex.org/w32/<br>にアクセスできなくなりました．<br>最新版にアップデートしてください．<br>
 
 #### 0.81r2 以前のバージョンを使っている方へ {#r1e6111a}
 
-<span style="color:Red;"><strong>W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.cnf がない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=590) などのエラーが発生するので，設定ファイル (abtexinst.ini) を削除して最新版にアップデートしてください．</strong></span><br>
+W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.cnf がない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=590) などのエラーが発生するので，設定ファイル (abtexinst.ini) を削除して最新版にアップデートしてください．<br>
 
 ### インストール方法 {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-または
-[abtexinst - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=abtexinst)
 から TeXインストーラ3 0.82 をダウンロードして展開 (解凍) します。<br>
 実行方法は展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br> <!-- リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして ''"abtexinst.exe" を実行してすぐに終了します。''~ --> <!-- abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。~ --> <!-- abtexinst.ini をメモ帳で開きます。~ --> <!--  --> <!-- abtexinst.ini の [Reg] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip では Ghostscript は zip ファイルしか表示されないので [Reg] の GS の値を修正します。~ --> <!-- Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.(zip|exe) --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=0 --> <!-- otfdevel=1 --> <!--  --> <!-- デフォルトでは otfdevel のみインストールされます。~ --> <!-- otf の最新版は otfbeta です。~ --> <!-- otfbeta をインストールするように [Listup] の項目を修正します。~ --> <!-- otfbeta をインストールするには以下のように修正します。~ --> <!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 --> <!-- 複数選択すると，最後に展開されたもので上書きされます。)~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=1 --> <!-- otfdevel=0 --> <!--  --> <!-- abtexinst.ini を上書き保存してメモ帳を終了します。~ --> <!-- abtexinst.exe を実行して指示に従ってインストールします。 -->
 
@@ -82,8 +84,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ***
 
-<!-- デフォルトでは otfbeta がインストールされます。~ -->
-
+デフォルトでは otfbeta がインストールされます。<br>
 otf パッケージの最新版は otfbeta です。<br>
 3つの otf パッケージの中から自分の用途に合わせて選択してください。<br>
 otf パッケージは複数インストールしてはいけません。<br>
