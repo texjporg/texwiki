@@ -37,7 +37,7 @@ W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 から TeXインストーラ3 0.82 をダウンロードして展開 (解凍) します。<br>
-実行方法は展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br> <!-- リンク先から "abtexinst_0_81r7.zip" (最新版) をダウンロードし，これを展開（解凍）します。そして ''"abtexinst.exe" を実行してすぐに終了します。''~ --> <!-- abtexinst.exe と同じフォルダーに "abtexinst.ini" が作成されます。~ --> <!-- abtexinst.ini をメモ帳で開きます。~ --> <!--  --> <!-- abtexinst.ini の [Reg] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- GS=gs[0-9]*w32full(-gpl)?\.zip では Ghostscript は zip ファイルしか表示されないので [Reg] の GS の値を修正します。~ --> <!-- Ghostscript 9.05 以降の exe ファイルも表示するには以下のように修正します。~ --> <!--  --> <!-- [Reg] --> <!-- texinst=texinst[0-9]*\.zip --> <!-- DVIOUT=tex[0-9]*w\.zip --> <!-- GS=gs[0-9]*w32full(-gpl)?\.(zip|exe) --> <!-- GV=gsv[0-9]*w32\.exe --> <!--  --> <!-- abtexinst.ini の [Listup] の項目は以下のように表示されていると思います。~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=0 --> <!-- otfdevel=1 --> <!--  --> <!-- デフォルトでは otfdevel のみインストールされます。~ --> <!-- otf の最新版は otfbeta です。~ --> <!-- otfbeta をインストールするように [Listup] の項目を修正します。~ --> <!-- otfbeta をインストールするには以下のように修正します。~ --> <!-- (3つの otf パッケージはどれか一つを選択します。複数選択してはいけません。 --> <!-- 複数選択すると，最後に展開されたもので上書きされます。)~ --> <!--  --> <!-- [Listup] --> <!-- luatex=1 --> <!-- luatex-dev=0 --> <!-- otf=0 --> <!-- otfbeta=1 --> <!-- otfdevel=0 --> <!--  --> <!-- abtexinst.ini を上書き保存してメモ帳を終了します。~ --> <!-- abtexinst.exe を実行して指示に従ってインストールします。 -->
+実行方法は展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br>
 
 ***
 
@@ -223,10 +223,10 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [TeXの再インストール](http://iga3.sblo.jp/article/54514290.html)
 - [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
 - [Tex入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
 - [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
 - [TeXのインストール(Windows)](http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXwin20111018/)
-- [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
     <!-- -[[WindowsにおけるTeX環境の構築:http://www.mclab.ics.ritsumei.ac.jp/~shibata/development.html#tex]] -->
