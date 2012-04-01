@@ -18,7 +18,7 @@ pukiwiki: "Inkscape"
 ## Inkscape とは {#v6fd1815}
 
 Inkscape は，オープンソースのベクターグラフィックエディタ (SVG エディタ) です．<br>
-Windows, Linux, Mac OS X, Unix で動作します．<br>
+Windows, OS X, Linux で動作します．<br>
 
 <table>
 <tbody>
@@ -40,6 +40,7 @@ Windows, Linux, Mac OS X, Unix で動作します．<br>
 - [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
     - [コミットログ](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
 - [Inkscape Wiki](http://wiki.inkscape.org)
+    - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
     - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
         - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
         - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
@@ -48,13 +49,15 @@ Windows, Linux, Mac OS X, Unix で動作します．<br>
 
 ### リリース情報 {#d961699f}
 
-2011-09-06 Inkscape 0.48.2 がリリースされました．
+2012-03-23 Inkscape 0.48.3.1 がリリースされました．
 
 ## 不具合 {#tedcde5e}
 
-### Windows 版 Inkscape 0.48.2 のメニューのフォントがおかしい {#i6aee1d9}
+### Windows 版 Inkscape 0.48.3.1 と 0.48.2 のメニューのフォントがおかしい → etc\pango\pango.aliases の sans の先頭に meiryo, を追加する {#i6aee1d9}
 
-Windows 版 Inkscape 0.48.2 を起動するとメニューのフォントが 0.48.1 とは異なっていました．
+- [Windows 版 Inkscape の メニューフォント設定方法](http://www.ginshali.info/2011/12/windows-inkscape.html)
+
+Windows 版 Inkscape 0.48.3.1 または 0.48.2 を起動するとメニューのフォントが 0.48.1 とは異なっていました．
 
 inkscape の etc\pango\pango.aliases の
 
@@ -143,16 +146,17 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 
 LaTeX と連携するためのエクステンション．<br>
 環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．<br>
-[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，修正しないと正しく動作しないので，[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)の最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
+[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
+[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，古いバージョンの場合は修正しないと正しく動作しません．<br>
 
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
 - [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
-- InkscapeをLaTeXと一緒に使う
-    - [http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
-    - [http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html](http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html)
-- [Inkscape で LaTeX の数式を入力する](http://www.empitsu.com/wp/?p=24)
-- [Inkscape で LaTeX の数式を入力する（続編）](http://www.empitsu.com/wp/?p=85)
-- [Windows版の Inkscape で LaTeX の数式を入力する](http://d.hatena.ne.jp/hiroki777/20080221)
+- [InkscapeをLaTeXと一緒に使う](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
+    <!-- - -http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html -->
+    <!-- - -http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html -->
+    <!-- -[[Inkscape で LaTeX の数式を入力する:http://www.empitsu.com/wp/?p=24]] -->
+    <!-- -[[Inkscape で LaTeX の数式を入力する（続編）:http://www.empitsu.com/wp/?p=85]] -->
+    <!-- -[[Windows版の Inkscape で LaTeX の数式を入力する:http://d.hatena.ne.jp/hiroki777/20080221]] -->
 
 #### インストール {#v77ed75c}
 
