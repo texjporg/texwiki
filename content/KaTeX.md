@@ -9,7 +9,7 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
-## [KaTeX](https://bitbucket.org/mumurik/xyzzy/downloads) {#f8899a4c}
+## [KaTeX](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
