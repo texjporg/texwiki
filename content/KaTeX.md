@@ -16,26 +16,23 @@ pukiwiki: "KaTeX"
 ## KaTeX カスタム版とは {#m8b25abb}
 
 KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX です．<br>
-マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br>
-マルチフレーム版専用の KaTeX カスタム版は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードできます．<br>
+KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
+マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br> <!-- マルチフレーム版専用の KaTeX カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
+マルチフレーム版専用の KaTeX カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
 マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
 
-KaTeX カスタム版をテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．<br>
-C-c C-b i で補完しようとするとオリジナル版とは動作が異なり
-
-```
-katexenv start loading by mumurik
-```
-
-と表示された後
-
-```
-katexenv end loading by mumurik
-```
-
-と表示されて補完されるようです．<br>
-表示されるのは初回の補完時のみで2回目以降は表示されません．<br>
+<!-- 修正されました -->
+<!-- ↓ -->
+<!-- KaTeX カスタム版をテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．~ -->
+<!-- C-c C-b i で補完しようとするとオリジナル版とは動作が異なり -->
+<!-- katexenv start loading by mumurik -->
+<!-- と表示された後 -->
+<!-- katexenv end loading by mumurik -->
+<!-- と表示されて補完されるようです．~ -->
+<!-- 表示されるのは初回の補完時のみで2回目以降は表示されません．~ -->
+<!--  -->
+<!-- [[message-box による printf デバッグの消し忘れ:http://twitter.com/#!/mumurik765/status/186792959121948672]]だそうです．~ -->
 
 ### スクリーンショット？ {#pb339bcf}
 
@@ -57,7 +54,8 @@ J)latex R)egion B)ibtex mk(I)ndex K)ill-latex P)review S)earch V)iewerr L)pr<br>
 ## EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
 
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
-マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードできます．<br>
+EmacsLisp移植キット/emacs.l カスタム版のライセンスは GNU GPL v2 です．<br> <!-- マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
+マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
 マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
 
@@ -73,6 +71,62 @@ KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布さ�
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
 
 <!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
+
+### License {#x302c417}
+
+KaTeX Version 1.67.1.12 では readme.txt, katex.l, emacs.l, paren.l の License は GPL v2 で表記されています．<br>
+KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，katex.l, paren.l の License は GPL v2 で表記されています．<br>
+
+#### readme.txt (KaTeX Version 1.67.1.12) {#hd1c97b7}
+
+```
+■ライセンス
+基本的にGPL v2です。
+詳細は、各ファイルを参照してください。
+```
+
+- katex.l, emacs.l, paren.l
+
+```
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 2.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program; see the file COPYING.  If not, write to the
+;; Software Foundation Inc., 59 Temple Place - Suite 330, Boston, MA
+;; 02111-1307, USA.
+```
+
+#### readme.txt (KaTeX Version 1.67.1.11) {#m379cf23}
+
+```
+■ライセンス
+フリーウェアです。
+```
+
+- katex.l, paren.l
+
+```
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 2.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program; see the file COPYING.  If not, write to the
+;; Software Foundation Inc., 59 Temple Place - Suite 330, Boston, MA
+;; 02111-1307, USA.
+```
 
 ### ChangeLog {#g9333ba6}
 
@@ -229,7 +283,7 @@ KaTeX （花鳥）は便利なキーボードショートカットを多数有�
 から KaTeX を選択してダウンロードできます．<br>
 Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます．
 
-マルチフレーム版を試している方は，[マルチフレーム版の開発サイトのダウンロードページ](https://bitbucket.org/mumurik/xyzzy/downloads)からダウンロードしたものを使ってください。（上記公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください）。<br>
+マルチフレーム版を試している方は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください）。<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ## 設定 {#pea65968}
