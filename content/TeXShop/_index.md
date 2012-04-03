@@ -647,6 +647,8 @@ TeXShop を再起動します．
 
 ### [TexShop の自動更新](http://koda428.blogspot.com/2011/10/texshop_24.html) {#nc5442a6}
 
+### [TeXのソースを分割してTeXShopでタイプセット](http://hiyokoz.blogspot.jp/2012/04/textexshop.html) {#m38e2900}
+
 ### 問題点 {#i951d24e}
 
 Emacs で書いて LaTeX 処理し，TeXShop は dvipdfmx とプレビューだけ，といった使い方もできます．<br>
