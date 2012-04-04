@@ -30,8 +30,6 @@ GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する�
 
 GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
 
-[![Vim で LaTeX ファイルを編集している画面](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim-small.png)](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim.png)
-
 - [Vim 公式サイト](http://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
         - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
@@ -97,6 +95,10 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [ずんWiki - vim](http://www.kawaz.jp/pukiwiki/?vim)
 - [VimWiki](http://vimwiki.net/)
 - [Vim Tips Wiki](http://vim.wikia.com/)
+
+### スクリーンショット {#p2c08dcd}
+
+[![Vim で LaTeX ファイルを編集している画面](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim-small.png)](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim.png)
 
 ## 不具合 {#h94d310c}
 
