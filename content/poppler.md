@@ -24,6 +24,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用され
 2012-03-29 poppler 0.19.2 がリリースされました<br>
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
+- [ttc&lt;->ttf fallback is expected for CJK font list in GlobalParamsWin.cc](http://cgit.freedesktop.org/poppler/poppler/commit/?id=f5b708c3e04ba50756cd9f9530cf82f547443ce9)
 - [per-collection fallback for missing CID-keyed fonts on Win32](http://cgit.freedesktop.org/poppler/poppler/commit/?id=4a38d933d06d189317b1b9028c3fa4ae2a1551af)
 - [CJK improvements](http://cgit.freedesktop.org/poppler/poppler/commit/?id=55d039ada063a9427de6dd59846ce1570ab26e9f)
 - [CJK substitute implementation on WIndows platforms.](http://cgit.freedesktop.org/poppler/poppler/commit/?id=dae29c6c201cd69cbf4f008de865cc19a36f29b3)
