@@ -976,6 +976,7 @@ Svg2tex is a python script that extracts all text from a \*.svg file to a LaTeX 
 ## 関連リンク {#l46f1d34}
 
 - [InkscapeでDesign](http://inkscapedesign.web.fc2.com/)
+- [Inkscaper ～Inkscapeの使い方～](http://logo.dollsent.jp/)
 - WikiPedia.ja:Inkscape
 - [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
