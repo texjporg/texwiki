@@ -62,7 +62,7 @@ Notepad++ は
 
 ### リリース情報 {#d2ceb628}
 
-2012-03-26 Notepad++ v6.0 が公開されました．<br>
+2012-04-09 Notepad++ v6.1 が公開されました．<br>
 2011-03-05 Notepad++ v5.8.7-6 +EUC-JP (UNICODE) 版が公開されました．<br>
 
 ### ChangeLog {#q10cf331}
