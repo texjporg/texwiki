@@ -237,6 +237,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 「20文字&times;20行」のような体裁を要求されることがあります。
 
 - [http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html](http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html)
+- [http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=819](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=819) （上のインストール解説）
     <!-- - http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html // URL切れ -->
 
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
