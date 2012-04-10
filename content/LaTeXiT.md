@@ -58,6 +58,7 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 ## 関連リンク {#tab9989c}
 
+- [Mac OSX LionでLatexitを使う](http://d.hatena.ne.jp/satojkovic/20120408/1333927675)
 - [2012年、Mac(Lion)とTeXと日本語と、あとhomebrew - A Way of Code](http://toggtc.hatenablog.com/entry/2012/02/20/230500)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - MacWiki:LaTeXiT
