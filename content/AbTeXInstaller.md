@@ -182,11 +182,12 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　GSview<br>
 　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　95.1MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　23.2MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB　　　　　　∣<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　354KB　　 　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　242KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
