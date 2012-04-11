@@ -136,6 +136,11 @@ CTAN の世界的なミラーリングとして次の URI があります。
     [FTP サービス](http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html)
     - [ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/](ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/)
 
+### 関連リンク {#wc81d3dd}
+
+- [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
+- [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
+
 ***
 
 ## Comments {#comments}
