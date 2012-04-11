@@ -1216,6 +1216,11 @@ $ ebb foo.pdf
 
 [LaTeXDraw](http://latexdraw.sourceforge.net/) は Java で書かれており、さまざまな OS で動作します。
 
+### 関連リンク {#y60e05bb}
+
+- [PSTricks で図を作成](http://rexpit.blog29.fc2.com/blog-entry-67.html)
+- [PSTricksパッケージ](http://www.cityfujisawa.ne.jp/~huzinami/tex/g-pack2.html)
+
 ## コメント {#j6e07b43}
 
 <!-- 質問です。 -->
