@@ -19,7 +19,7 @@ Yotuba TeX Editor は Windows (Microsoft .NET Framework 3.5 以上がインス�
 
 ### リリース情報 {#b51cad4a}
 
-2012-02-20 Yotuba TeX Editor 1.0 が公開されました．<br>
+2012-02-20 Yotuba TeX Editor 1.0<br>
 
 ### スクリーンショット {#f1e62519}
 
