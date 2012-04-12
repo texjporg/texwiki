@@ -15,12 +15,14 @@ pukiwiki: "VxEditor"
 
 VxEditor は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で軽快に動作する国産でフリーのテキストエディタです．
 
-2011年3月19日に VxEditor Ver 1.0.1 が公開されました．
-
 - [ホーム - DR-X Web Page!](http://dr-x.jimdo.com/)
     - [ニュース](http://dr-x.jimdo.com/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/)
     - [dr-x (vxeditor) on Twitter](http://twitter.com/vxeditor)
 - [Vector - VxEditor](http://www.vector.co.jp/soft/win95/writing/se236058.html)
+
+### リリース情報 {#ufeebac0}
+
+2011年3月19日 VxEditor Ver 1.0.1<br>
 
 ## 文字コード {#t4c94e06}
 
