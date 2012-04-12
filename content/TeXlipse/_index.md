@@ -36,7 +36,9 @@ pukiwiki: "TeXlipse"
 
 ### リリース情報 {#f49b6dcf}
 
-2011-11-26 TeXlipse Version 1.5.0 がリリースされました．<br>
+2012-04-09 Pdf4Eclipse Version 1.1.0<br>
+2012-04-03 BibSonomy Version 2.0.23<br>
+2011-11-26 TeXlipse Version 1.5.0<br>
 TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 
 ### ChangeLog {#e321b2d0}
