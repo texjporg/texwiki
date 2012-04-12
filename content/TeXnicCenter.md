@@ -424,7 +424,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%tm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -497,7 +497,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%tm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -571,7 +571,7 @@ Path to BibTeX<br>
 <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-kanji=utf8 "%tm"</ins><br>
+<ins>"%tm"</ins><br>
 
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
@@ -888,6 +888,45 @@ Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
 Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+***
+
+#### Yap {#u041709f}
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Program Files\MiKTeX 2.9\miktex\bin\yap.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 "%bm.dvi"</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 -s %l"%Wc" "%bm.dvi"</ins><br>
+
+<br>
 
 <br>
 
