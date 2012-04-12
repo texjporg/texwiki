@@ -18,7 +18,7 @@ Microsoft Windows に TeX をインストールする場合，TeX ディスト�
 
 ### [W32TeX](/W32TeX/) {#yd4deb73}
 
-W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
+W32TeX のインストールについては AbTeXInstaller - TeX Wiki または [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
 
 ### [TeX Live](</TeX Live/>) {#ia336ed2}
 
