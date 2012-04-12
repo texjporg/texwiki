@@ -46,10 +46,10 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 ### リリース情報 {#m67e4030}
 
-2012-04-09 xyzzy version 0.2.3.7 (マルチフレーム版) がリリースされました<br>
-2012-03-31 xyzzy version 0.2.2.237 (0.2.2 系列) がリリースされました<br>
-2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版) がリリースされました<br>
-2005-12-07 xyzzy version 0.2.2.235 がリリースされました<br>
+2012-04-09 xyzzy version 0.2.3.7 (マルチフレーム版)<br>
+2012-03-31 xyzzy version 0.2.2.237 (0.2.2 系列)<br>
+2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版)<br>
+2005-12-07 xyzzy version 0.2.2.235<br>
 とうとうオープンソースになりました！
 (MIT ライセンス［[原文](http://opensource.org/licenses/mit-license.php)，[日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license)］。
 短いライセンスなので読んでみてください。)
@@ -60,24 +60,26 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 興味のある方は，是非参加してみてください。<br>
 
 - [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
-- [英語版](http://xyzzy.s53.xrea.com/english/archive/)
-- [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
-    - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
-    - [動かないlispパッケージ一覧](https://bitbucket.org/mumurik/xyzzy/wiki/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84lisp%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7)
-    - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
-    - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
-    - [outline-treeのマルチフレーム対応](http://d.hatena.ne.jp/DeaR/20120305/p1)
-    - [名無しさんのための GitHub ３分クッキング](https://gist.github.com/1962125)
-- [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
-    - [活動履歴](http://sourceforge.jp/users/southly/history)
-- [xyzzy+](http://xyzzy.codeplex.com/)
-    - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
-- [xyzzy-022](http://xyzzy-022.github.com/)
-    - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
-        <!-- -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
-        <!-- - -[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
-        <!-- -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
-        <!-- - -[[コミットログ:https://github.com/bulb/xyzzy.src/commits/for-gcc]] -->
+    - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
+        - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
+        - [動かないlispパッケージ一覧](https://bitbucket.org/mumurik/xyzzy/wiki/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84lisp%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7)
+        - [雑記](https://bitbucket.org/mumurik/xyzzy/wiki/%E9%9B%91%E8%A8%98)
+        - [マルチフレーム版へ移行したどー<br>マルチフレームの感想](http://d.hatena.ne.jp/DeaR/20120224)
+        - [outline-treeのマルチフレーム対応](http://d.hatena.ne.jp/DeaR/20120305/p1)
+        - [名無しさんのための GitHub ３分クッキング](https://gist.github.com/1962125)
+    - [xyzzy+](http://xyzzy.codeplex.com/)
+        - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
+    - [xyzzy-022](http://xyzzy-022.github.com/)
+        - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
+            <!-- - -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
+            <!-- - --[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
+            <!-- - -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
+            <!-- - --[[コミットログ:https://github.com/bulb/xyzzy.src/commits/for-gcc]] -->
+
+- [オリジナル版](http://www.jsdlab.co.jp/~kamei/)
+    - [英語版](http://xyzzy.s53.xrea.com/english/archive/)
+    - [設定済みxyzzy](http://sourceforge.jp/projects/packaged-xyzzy/)
+        - [活動履歴](http://sourceforge.jp/users/southly/history)
 
 ### スクリーンショット {#of7fa0a1}
 
@@ -104,8 +106,8 @@ USB メモリで使用する方は，
 あとは自分専用の設定ファイルを作りたければ，
 ホームディレクトリのための環境変数 XYZZYHOME を設定します。<br>
 「環境変数」というものがよくわからない方や環境変数を設定できない方の
-場合には，xyzzy\usr\\%USERNAME%\wxp\xyzzy.ini （wxp\ は
-OS によって wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ となります）に，例えば
+場合には，xyzzy\usr\\%USERNAME%\wxp\xyzzy.ini[^2]
+に，例えば
 
 ```
 [init]
@@ -1326,3 +1328,4 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 - 「KaTeX で TeX の命令をラクラク入力」のセクションに "pbibtex.exe" 関連の記述を追加しました。 -- 1257567430 2009-11-07 (土) 13:17:10
 
 [^1]: Vim は操作方法に関する学習コストが高いので時間をかけて少しずつ習得していくのがいいと思います。
+[^2]: %USERNAME% ディレクトリ以下に作成される wxp\ は OS によって異なり wxp\\, w2k\\, wnt\\, wme\\, w98\\, w95\ といった名前になります
