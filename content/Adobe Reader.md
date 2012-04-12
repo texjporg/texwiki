@@ -35,6 +35,11 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
 - [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
 
+## ヘルプ {#je3a489e}
+
+- [Adobe Reader X ユーザーガイド](http://help.adobe.com/ja_JP/reader/using/)
+- [Acrobat X Standard ユーザーガイド](http://help.adobe.com/ja_JP/acrobat/standard/using/)
+
 ## Adobe Reader をコマンドラインから操作する方法 {#f9d733e4}
 
 ### PDF ファイルを開く {#id6d0918}
