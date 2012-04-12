@@ -21,9 +21,11 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用され
 
 ### リリース情報 {#ha3b28ab}
 
-2012-03-29 poppler 0.19.2 がリリースされました<br>
+2012-04-12 poppler 0.19.3 がリリースされました<br>
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
+- [Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc](https://bugs.freedesktop.org/show_bug.cgi?id=48046)
+- \[[Bug 48046\] New: ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc - poppler-bugs.lists.freedesktop.org - ArchiveOrange](http://web.archiveorange.com/archive/v/RybTrzJz0TKVhTDfV9z3)
 - [ttc&lt;->ttf fallback is expected for CJK font list in GlobalParamsWin.cc](http://cgit.freedesktop.org/poppler/poppler/commit/?id=f5b708c3e04ba50756cd9f9530cf82f547443ce9)
 - [per-collection fallback for missing CID-keyed fonts on Win32](http://cgit.freedesktop.org/poppler/poppler/commit/?id=4a38d933d06d189317b1b9028c3fa4ae2a1551af)
 - [CJK improvements](http://cgit.freedesktop.org/poppler/poppler/commit/?id=55d039ada063a9427de6dd59846ce1570ab26e9f)
@@ -228,18 +230,6 @@ $ make
 $ make install
 $ popd
 ```
-
-<!-- poppler 0.18.0 でビルドエラー -->
-<!-- $ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only -->
-<!-- $ pushd openjpeg-read-only -->
-<!-- $ mkdir build -->
-<!-- $ pushd build -->
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DOPENJPEG_INSTALL_BIN_DIR=/mingw/bin -DOPENJPEG_INSTALL_INCLUDE_DIR=/mingw/include -DOPENJPEG_INSTALL_LIB_DIR=/mingw/lib -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ cp -p /mingw/lib/libopenjpeg.dll /mingw/bin -->
-<!-- $ popd -->
-<!-- $ popd -->
 
 - [freetype](http://www.freetype.org/) をインストールします．
 
@@ -551,9 +541,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.19.2.tar.gz
-$ tar zxvf poppler-0.19.2.tar.gz
-$ pushd poppler-0.19.2
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.19.3.tar.gz
+$ tar zxvf poppler-0.19.3.tar.gz
+$ pushd poppler-0.19.3
 $ mkdir build
 $ pushd build
 ```
@@ -607,17 +597,6 @@ Building Poppler with support for:
   command line utils:   yes
   test data dir:
 ```
-
-<!-- poppler 0.18.0 と openjpeg 1.99 の場合 -->
-<!-- openjpeg 1.99 のバグを poppler 側で回避 -->
-
-<!-- [[openjpeg.h:http://code.google.com/p/openjpeg/source/browse/trunk/libopenjpeg/openjpeg.h]] が原因でコンパイルエラーが発生するので //[[poppler/JPEG2000Stream.h:http://cgit.freedesktop.org/poppler/poppler/tree/poppler/JPEG2000Stream.h]] を修正してコンパイルエラーを回避します．~ -->
-<!-- #include <openjpeg.h> の前に #include <cstdio> を追加します．~ -->
-<!-- - --  -->
-<!-- #include <cstdio> -->
-<!-- #include <openjpeg.h> -->
-<!-- - --  -->
-<!--  -->
 
 ```
 $ make
