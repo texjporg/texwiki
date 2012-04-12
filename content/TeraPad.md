@@ -21,10 +21,6 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 
 テキストエディタとして必要十分な機能があり，バランスがよく，使いやすいエディタです．
 
-2011年2月17日に TeraPad Ver.1.08 が公開されました．<br>
-TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
-最新版へアップデートしてください．
-
 - [公式サイト - ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
     - [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html)
         - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
@@ -111,6 +107,12 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 ```
 
 ***
+
+### リリース情報 {#gc342619}
+
+2011年2月17日 TeraPad Ver.1.08<br>
+TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
+最新版へアップデートしてください．<br>
 
 ## 文字コード {#fbac96c1}
 
