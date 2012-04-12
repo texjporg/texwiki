@@ -1366,6 +1366,32 @@ Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and
 編集中の TeX ファイルの編集画面を右クリック → Forward search (Ctrl+Alt+F) で forward search ができます．<br>
 PDF ファイルの画面をダブルクリックすると inverse search ができます．<br>
 
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ウィンドウ(W)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　設定(P)　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+
+　　…<br>
+　　　<span style="color:Black;background-color:#DAEAFF;">　Pdf4Eclipse　</span><br>
+　　▷　Texlipse<br>
+　　…<br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　General settings for viewing PDF documents<br>
+　☑ Enable pseudo continuous scrolling(E)<br>
+　　PDF renderer (document must be reopend for change to take effect)<br>
+　　◯ SUN renderer (より速い)<br>
+　　◯ JPedal renderer (higher compatibility)<br>
+　　<span style="color:#3333CC;">◎</span> JPedal renderer for some document types that can not be displayed by SUN renderer, otherwise SUN renderer<br>
+
+***
+
 #### [TeXworks](/TeXworks/) {#e36f125c}
 
 [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
