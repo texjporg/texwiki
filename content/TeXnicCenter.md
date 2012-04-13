@@ -642,7 +642,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\w32tex\bin\bibtex.exe</ins><br>
+<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -650,7 +650,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
+<ins>C:\w32tex\bin\texindy.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -679,7 +679,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\w32tex\bin\bibtex.exe</ins><br>
+<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -687,7 +687,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
+<ins>C:\w32tex\bin\texindy.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
