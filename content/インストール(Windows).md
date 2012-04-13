@@ -24,18 +24,17 @@ W32TeX のインストールについては AbTeXInstaller - TeX Wiki または 
 
 W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
-### [MiKTeX](http://miktex.org/) {#x2459fb9}
+### [MiKTeX](/MiKTeX/) {#x2459fb9}
 
 W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューションもあります．
 
-- [MiKTeX Project Page](http://miktex.org/)
-    - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
+- [MiKTeX - TeX Wiki](/MiKTeX/)
 
 ### [Cygwin](/Cygwin/) {#sfbd073e}
 
 Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
 
-[Cygwin - TeX Wiki](/Cygwin/)
+- [Cygwin - TeX Wiki](/Cygwin/)
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
