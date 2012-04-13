@@ -879,7 +879,7 @@ Executable path<br>
 
 View project's output<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
-Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Command <ins>\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
 Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
 
 <br>
@@ -1246,14 +1246,15 @@ Command line arguments to pass to the compiler: に -synctex=1 を追加しま�
 
 ### forward search {#e049aa23}
 
-forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．
+forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．<br>
 
 ### inverse search {#e38afd39}
 
-inverse search は Executable path に追加する代わりに SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の設定を追加しても OK です．
+forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．<br>
+inverse search は Executable path に追加する代わりに SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の設定を追加しても OK です．<br>
 
 ```
-C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe /ddecmd "[goto('%f', '%l')]"
+"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
 ```
 
 ## dviout との連携 {#r45cf8d1}
@@ -1270,6 +1271,33 @@ inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[sr
 
 ```
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
+```
+
+## Yap との連携 {#v01c3904}
+
+Command line arguments to pass to the compiler: に -src-specials を追加します．
+
+### forward search {#f07fe018}
+
+forward search は DVI Viewer の [Yap](/TeXnicCenter/#u041709f) の項を参考に設定してください．
+
+### inverse search {#p696e2fe}
+
+inverse search は Yap の \[View\]-\[Options...\]-\[Inverse DVI Search\] に設定を追加すれば OK です．
+
+Name:
+: TeXnicCenter
+
+Specify the program you want to use to edit TeX source files:
+: C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe
+
+Specify the program arguments:
+: /ddecmd "\[goto('%f', '%l')\]"
+
+Command line: に以下のように設定されます．
+
+```
+"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
 ```
 
 ## 関連リンク {#r73017f2}
