@@ -11,7 +11,7 @@ pukiwiki: "Linux/Vine"
 
 ## Vine Linux 6 {#sf8daebc}
 
-[Vine Linux 6](http://vinelinux.org/news/20110806.html) がリリースされました．
+[Vine Linux 6 (Haut Brion)](http://vinelinux.org/news/20110806.html) がリリースされました．
 
 TeX システムが ptetex から ptexlive に変更になりました．
 
@@ -21,14 +21,17 @@ TeX システムが ptetex から ptexlive に変更になりました．
 - [Vine Linux 6.0 での TeX Live 環境  \[08/12/2011\]](http://www-cc.gakushuin.ac.jp/~20050003/p-latex-main.html#texlive-vinelinux6)
 - [LaTeXから作るPDF の日本語しおり \[Vine 6.0\]](http://log-c.blog.so-net.ne.jp/2011-09-29-2)
 
-<!-- * Vine Linux 5 [#vac9e97f] -->
-<!--  -->
-<!-- [[Vine Linux 5.2 (Palmer):http://vinelinux.org/news/20101130.html]] がリリースされました。 -->
-<!--  -->
+## Vine Linux 5 {#vac9e97f}
+
+[Vine Linux 5.2 (Palmer)](http://vinelinux.org/news/20101130.html) がリリースされました。
+
 <!-- オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。 -->
-<!--  -->
-<!-- - [[日本語 TeX 利用ガイド - Vine Linux:http://vinelinux.org/docs/vine5/manuals/tex-guide.html]] -->
-<!--  -->
+
+- [TeX 環境](http://trac.vinelinux.org/wiki/TeXEnvironment)
+    - [TeX 環境 Vine Linux 5](http://trac.vinelinux.org/wiki/TeXEnvironment/Vine5)
+- [日本語 TeX 利用ガイド - Vine Linux](http://vinelinux.org/docs/vine5/manuals/tex-guide.html)
+- [Vine Linux 5 の TeX 環境を teTeX 3.0 から TeX Live 2009 への移行手順 - Vine Linux Magazine](http://vinelinux.org/vlmagazine/20110117.html)
+
 <!-- 現時点 (2009/09/04) では、第 1 章 日本語 TeX 環境の構築のところで、TeX 関連パッケージの説明を一通り書けていますが、第 2 章 カスタマイズ および 第 3 章 TeX 関連パッケージの紹介 のところは、骨抜きです。 -->
 <!--  -->
 <!-- ** Emacs 上での TeX コーディング [#w960fd23] -->
