@@ -68,4 +68,5 @@ echo exit | pdfdde
 
 ## 関連リンク {#m8d917f7}
 
+- [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
