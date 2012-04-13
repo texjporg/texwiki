@@ -225,6 +225,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [TeXの再インストール](http://iga3.sblo.jp/article/54514290.html)
 - [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
