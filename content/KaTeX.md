@@ -344,7 +344,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 ;(setq elisp::tex-command "xelatex -synctex=1")
 (setq elisp::bibtex-command (cond ((string-match "uplatex" elisp::tex-command) "upbibtex")
                                   ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")
-                                  ((string-match "lualatex\\|xelatex" elisp::tex-command) "biber")
+                                  ((string-match "lualatex\\|xelatex" elisp::tex-command) "bibtexu")
                                   (t "bibtex")))
 (setq elisp::makeindex-command (cond ((string-match "uplatex" elisp::tex-command) "mendex -U")
                                      ((string-match "platex" elisp::tex-command) "mendex -U")
@@ -418,7 +418,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 ;; タイプセットを XeLaTeX で
 ;; uplatex の場合は upbibtex を使う
 ;; platex の場合は pbibtex を使う
-;; lualatex, xelatex の場合は biber を使う
+;; lualatex, xelatex の場合は bibtexu を使う
 ;; uplatex, platex, lualatex, xelatex 以外の場合は bibtex を使う
 ;; uplatex の場合は mendex を使う
 ;; platex の場合は mendex を使う
