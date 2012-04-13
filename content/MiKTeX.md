@@ -8,3 +8,6 @@ pukiwiki: "MiKTeX"
 # MiKTeX
 
 ## [MiKTeX](http://miktex.org/) {#n766a2b6}
+
+- [MiKTeX Project Page](http://miktex.org/)
+    - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
