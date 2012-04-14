@@ -199,9 +199,9 @@ Notepad++ は
 > <table>
 > <tbody>
 > <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
-> <tr><td>1</td><td>TeX処理 (platex, 自動判別の場合)</td><td>"platex"</td><td>-kanji=utf8 -guess-input-enc -synctex=1 -src-specials -sjis-terminal -jobname="%MTeXnpp_CFName%" "%MTeXnpp_CFName%.tex"</td></tr>
-> <tr><td>1</td><td>TeX処理 (platex, UTF-8 の場合)</td><td>"platex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials -sjis-terminal -jobname="%MTeXnpp_CFName%" "%MTeXnpp_CFName%.tex"</td></tr>
-> <tr><td>1</td><td>TeX処理 (uplatex の場合)</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials "%MTeXnpp_CFName%.tex"</td></tr>
+> <tr><td>1</td><td>TeX処理 (platex, 自動判別の場合)</td><td>"platex"</td><td>-kanji=utf8 -guess-input-enc -synctex=1 -sjis-terminal -jobname="%MTeXnpp_CFName%" "%MTeXnpp_CFName%.tex"</td></tr>
+> <tr><td>1</td><td>TeX処理 (platex, UTF-8 の場合)</td><td>"platex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 -sjis-terminal -jobname="%MTeXnpp_CFName%" "%MTeXnpp_CFName%.tex"</td></tr>
+> <tr><td>1</td><td>TeX処理 (uplatex の場合)</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 "%MTeXnpp_CFName%.tex"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (pbibtex の場合)</td><td>"pbibtex"</td><td>-kanji=utf8 -sjis-terminal "%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (upbibtex の場合)</td><td>"upbibtex"</td><td>"%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -ST "%MTeXnpp_CFName%.idx"</td></tr>
