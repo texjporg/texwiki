@@ -25,14 +25,15 @@ pukiwiki: "TeXlipse"
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
     - [All news](http://texlipse.sourceforge.net/news.php)
     - [FAQ](http://texlipse.sourceforge.net/faq.php)
-- [Summary](http://sourceforge.net/projects/texlipse/)
+- [TeXlipse at SourceForge.net](http://sourceforge.net/projects/texlipse/)
     - [Files](http://sourceforge.net/projects/texlipse/files/)
         - [texlipse plugin](http://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
         - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
         - [texlipse documentation](http://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
+- [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
+    - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
 - [BibSonomy](http://www.bibsonomy.org/)
     - [TeXlipseBibSonomyExtension](http://www.bibsonomy.org/help_en/TeXlipseBibSonomyExtension)
-- [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
 
 ### リリース情報 {#f49b6dcf}
 
@@ -59,7 +60,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 - 自動補完
 - スペル・チェッカー
 - SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF, Skim)
-- Source Special による forward and inverse search (dviout)
+- Source Special による forward and inverse search (dviout, pxdvi)
 
 ## 注意点 {#f6b7dd5c}
 
