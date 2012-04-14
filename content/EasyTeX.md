@@ -132,7 +132,7 @@ DVI ドライバは dviout.exe のフルパスを指定します．
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]</ins></span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Spell \]\[ PS/PDF \]</ins></span><br>
 　　　　　　言語<br>
 　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
-　　　　　　◯英語　　　　　　　　　　　　 ☑source special<br>
+　　　　　　◯英語　　　　　　　　　　　　 ☐source special<br>
 　　　　　TeXコンパイラ　　　　　　 　 　☑SyncTeX　　　<ins>1 \[◆\]</ins><br>
 　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
 　　　　　 jPlain　　　　　　　　　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
@@ -147,9 +147,7 @@ TeX コンパイラとオプションを設定します．
 
 TeX コンパイラは pLaTeX を選択します．
 
-source special にチェックを入れます．
-
-SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)
+SyncTeX にチェックを入れます．
 
 ### Spell {#z664fb17}
 
