@@ -29,18 +29,15 @@ pukiwiki: "ArchiveQandA"
 > マウスクリックでカテゴリやキーワードから文書を選択して表示できるので、
 > 「調べたいことが書いてある文書の名前（パッケージ名）がわからない」ときに便利かもしれません。
 
-- dviout や WinShell など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
+- TeXworks や dviout など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-### WinShellのエラーメッセージ {#l91d86a6}
+### TeXworksのエラーメッセージ {#g1eb4223}
 
-- 文字が90&deg;回転して表示される（[qa:22602](https://okumuralab.org/~okumura/texfaq/qa/22602.html), [qa:32720](https://okumuralab.org/~okumura/texfaq/qa/32720.html)など）
-    - \[Options\]-\[Font\]で設定した表示フォントに「@」のついたフォントを指定していませんか？ @は縦書き用のフォントです。@のない「ＭＳ ゴシック」などに変えましょう。
-        <!-- 気持ち悪いですが，ＭＳは全角英数のようです． -->
+- エラーが発生した場合は，エラーメッセージをよく読んで対処してください。
 
-- DVIWINボタンを押しても“One or more errors occured!　Please check the options!”と言われます（[qa:29850](https://okumuralab.org/~okumura/texfaq/qa/29850.html), [qa:29142](https://okumuralab.org/~okumura/texfaq/qa/29142.html)など）
-    - dvioutへのパスを通していない、あるいはDVIWIN設定ダイアログで
-        「（インストールディレクトリ）\dviout.exe」
-        具体的には「C:\w32tex\dviout\dviout.exe」のように正しい場所を指定していないからです。[WinShell](/WinShell/#xe1b50b7)のページを参照して、修正しましょう。
+<br>
+
+    よく分からない場合は [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか参照してください。
 
 ### dvioutのエラーメッセージ {#lb61846e}
 
