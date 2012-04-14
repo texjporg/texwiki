@@ -268,7 +268,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -460,7 +460,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -474,7 +474,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\uplatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -680,7 +680,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -871,7 +871,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=euc -synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=euc -synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1099,7 +1099,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/platex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1113,7 +1113,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode -src-specials %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -2597,6 +2597,8 @@ Ctrl+Space で補完を行います．<br>
 
 ## SumatraPDF との連携 {#jcc1d56b}
 
+引数に -synctex=1 を追加します．
+
 ### forward search {#z83d5681}
 
 forward search は PDF ファイル ビューアーの [TeXlipse#SumatraPDF](/TeXlipse/#b2e80208) の項を参考に設定してください．
@@ -2629,6 +2631,8 @@ C:\eclipse\invtexlipse.bat "%f" %l
 とします．
 
 ## dviout との連携 {#l2ee2226}
+
+引数に -src-specials を追加します．
 
 ### forward search {#qbd34e23}
 
