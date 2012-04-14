@@ -335,9 +335,9 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
-;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 (setq elisp::tex-command "pdfplatex.bat")
-;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials")
+;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfuplatex.bat")
 ;(setq elisp::tex-command "pdflatex -synctex=1")
 ;(setq elisp::tex-command "lualatex -synctex=1")
@@ -375,18 +375,6 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
-
-(defun dviout-forward-search ()
-  (interactive)
-  (let* ((tex-file (get-buffer-file-name))
-         (dvi-file (el::KaTeX-get-preview-file-name)))
-    (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
-                          (format nil "~D" (current-line-number)) " " tex-file "\"")
-                  :exec-directory (directory-namestring tex-file))))
-
-(add-hook 'elisp::katex-mode-hook
-          #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
 ```
 
 ***
@@ -479,9 +467,9 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -guess-input-enc -synctex=1 -src-specials RET</td><td>platex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -guess-input-enc -synctex=1 RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex.bat RET</td><td>pdfplatex</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -src-specials RET</td><td>uplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 RET</td><td>uplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex.bat RET</td><td>pdfuplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
