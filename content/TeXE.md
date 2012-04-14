@@ -134,7 +134,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\platex.exe
 
 引数
-: -guess-input-enc -kanji=utf8 -synctex=1 -src-specials -sjis-terminal -jobname="%x" "%F"
+: -guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal -jobname="%x" "%F"
 
 #### uplatex の場合 {#g3bbbc46}
 
@@ -142,7 +142,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\uplatex.exe
 
 引数
-: -no-guess-input-enc -kanji=utf8 -synctex=1 -src-specials "%F"
+: -no-guess-input-enc -kanji=utf8 -synctex=1 "%F"
 
 ### MakeIndex {#g6c29d8e}
 
@@ -256,13 +256,15 @@ Macro
 
 \[ツール(T)\]-\[TeX自動処理(A)\] で TeX ファイルをコンパイルして表示してくれます．
 
-## SumatraPDF との連携 (forward and inverse search) {#u9ba0f1e}
+## SumatraPDF との連携 {#u9ba0f1e}
 
-```
 TeX の引数に -synctex=1 を追加します．
-```
+
+### forward search {#yeb65671}
 
 forward search は Dvi Viewer の SumatraPDF を参照してください．
+
+### inverse search {#zac0399b}
 
 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
@@ -270,13 +272,15 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 C:\texe022i\TeXE.exe /j%l "%f"
 ```
 
-## dviout との連携 (forward and inverse search) {#u0ce365d}
+## dviout との連携 {#u0ce365d}
 
-```
 TeX の引数に -src-specials を追加します．
-```
+
+### forward search {#a097e41a}
 
 forward search は Dvi Viewer の dviout を参照してください．
+
+### inverse search {#rb0c5e23}
 
 inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
