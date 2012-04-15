@@ -7,7 +7,7 @@ pukiwiki: "ArchiveQandA"
 
 # ArchiveQandA
 
-ここでは、[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
+ここでは、[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
 
 <!-- *目次 [#c74dbb77] -->
 
@@ -20,14 +20,16 @@ pukiwiki: "ArchiveQandA"
 - W32TeX であればコマンドプロンプトから texdocc -l -s &lt;パッケージ名> と打つ<br>
     (例) texdocc -l -s hyperref
 
-- ptetex であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
+- TeX Live であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
     (例) texdoc -l -s hyperref
-
-- [texdoctk](http://www.ctan.org/tex-archive/help/Catalogue/entries/texdoctk.html) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあることも．
+    - TeX Live には [texdoctk](http://www.ctan.org/tex-archive/help/Catalogue/entries/texdoctk.html) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあります．
 
 > Fedora 10で使ってみるとテキスト検索はまともに入力もできないのですが、
 > マウスクリックでカテゴリやキーワードから文書を選択して表示できるので、
 > 「調べたいことが書いてある文書の名前（パッケージ名）がわからない」ときに便利かもしれません。
+
+- MiKTeX であれば texdoc -l &lt;パッケージ名> と打つ<br>
+    (例) texdoc -l hyperref
 
 - TeXworks や dviout など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
@@ -37,7 +39,7 @@ pukiwiki: "ArchiveQandA"
 
 <br>
 
-    よく分からない場合は [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか参照してください。
+    よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
 
 ### dvioutのエラーメッセージ {#lb61846e}
 
