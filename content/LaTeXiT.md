@@ -43,7 +43,7 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
-　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins><br>
+　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins> または <ins>/usr/texbin/uplatex</ins><br>
 　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
 　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) や [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) で配布されている Ghostscript に変更<br>
 　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) や [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) で配布されている Ghostscript に変更<br>
@@ -51,7 +51,7 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 ***
 
-#### コマンドの引数 (/usr/texbin/platex) {#x1c644d6}
+#### コマンドの引数 (/usr/texbin/platex または /usr/texbin/uplatex) {#x1c644d6}
 
 コマンドの引数
 : -kanji=utf8
