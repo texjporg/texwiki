@@ -106,9 +106,9 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 - [SourceForge.net: TeXlipse: Detail: 3050201 - DDEClient 32 on win7 amd64](http://sourceforge.net/tracker/index.php?func=detail&aid=3050201&group_id=133306&atid=726819) → Fixed
 
-この問題の解決策が，TeXlipse の [FAQ \[Internet Archive\]](http://web.archive.org/web/20110713114656/http://texlipse.sourceforge.net/faq.php) にあります．
-
-[ここ](http://texlipse.sourceforge.net/ddeclient64bit.zip) から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします．
+<!-- この問題の解決策が，TeXlipse の [[FAQ [Internet Archive]:http://web.archive.org/web/20110713114656/http://texlipse.sourceforge.net/faq.php]] にあります． -->
+<!--  -->
+<!-- [[ここ:http://texlipse.sourceforge.net/ddeclient64bit.zip]] から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします． -->
 
 ## インストール {#u4a48677}
 
@@ -558,6 +558,20 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ bibtexu の場合<br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -1197,6 +1211,20 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　　Input format： .bib 　　　出力フォーマット： .aux<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ bibtexu の場合<br>
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/bibtexu</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
