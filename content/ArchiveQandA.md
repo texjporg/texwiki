@@ -17,10 +17,7 @@ pukiwiki: "ArchiveQandA"
 
 - 検索サイトで，パッケージ名やコマンド名で検索する
 - マクロやパッケージ関わることであれば，[CTAN](/CTAN/) ([CTAN search](http://www.ctan.org/search.html)) でパッケージ名をキーに探す
-- W32TeX であればコマンドプロンプトから texdocc -l -s &lt;パッケージ名> と打つ<br>
-    (例) texdocc -l -s hyperref
-
-- TeX Live であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
+- W32TeX または TeX Live であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
     (例) texdoc -l -s hyperref
     - TeX Live には [texdoctk](http://www.ctan.org/tex-archive/help/Catalogue/entries/texdoctk.html) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあります．
 
