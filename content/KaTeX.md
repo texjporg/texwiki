@@ -467,9 +467,9 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET platex -synctex=1 RET</td><td>platex</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex.bat RET</td><td>pdfplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex RET</td><td>pdfplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -synctex=1 RET</td><td>uplatex</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex.bat RET</td><td>pdfuplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex RET</td><td>pdfuplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET xelatex -synctex=1 RET</td><td>xelatex</td></tr>
