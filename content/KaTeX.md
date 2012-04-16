@@ -353,16 +353,12 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & pdfopen --file %s.pdf")
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")))
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
-(set-extended-key-translate-table exkey-M-return #\M-RET)
 (setq elisp::*KaTeX-use-toolbar* t)
+(set-extended-key-translate-table exkey-M-return #\M-RET)
 
 (defun user::katex-mode ()
   (interactive)
   (elisp::katex-mode))
-
-(add-hook 'elisp::katex-mode-hook
-          #'(lambda ()
-              (auto-fill-mode nil)))
 
 (defun sumatrapdf-forward-search ()
   (interactive)
@@ -375,6 +371,10 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
+
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (auto-fill-mode nil)))
 ```
 
 ***
@@ -415,12 +415,11 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 ;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex の場合は Adobe Reader が起動していれば Adobe Reader を終了して pdfopen を使う
 ;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
-;; M-RET を有効に
 ;; ツールバー表示
+;; M-RET を有効に
 ;; ショートカット
-;; 自動改行なし
 ;; SumatraPDF で forward search
-;; dviout で forward search
+;; 自動改行なし
 ```
 
 といった設定がされています。<br>
@@ -467,9 +466,9 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET platex -kanji=utf8 -guess-input-enc -synctex=1 RET</td><td>platex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET platex -synctex=1 RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex.bat RET</td><td>pdfplatex</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 RET</td><td>uplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -synctex=1 RET</td><td>uplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex.bat RET</td><td>pdfuplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
