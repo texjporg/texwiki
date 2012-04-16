@@ -22,6 +22,14 @@ This is pdfTeX, Version 3.1415926-2.3-1.40.12
 **
 ```
 
+また MiKTeX には pdfplatex.exe がありますが，こちらも W32TeX の pdfplatex.bat とは異なるので注意が必要です．
+
+```
+>pdfplatex.exe
+This is pdfTeX, Version 3.1415926-2.3-1.40.12
+**
+```
+
 MiKTeX の dvipdfmx は pTeX で処理された日本語の DVI ファイルで使用するとエラーが発生します．<br>
 
 ```
