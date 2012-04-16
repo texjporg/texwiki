@@ -13,7 +13,7 @@ pukiwiki: "ArchiveQandA"
 
 ### ヘルプドキュメントの探し方 {#bdcc8e5a}
 
-([qa:53707](https://okumuralab.org/~okumura/texfaq/qa/53707.html), [qa:53708](https://okumuralab.org/~okumura/texfaq/qa/53708.html) など)
+([qa:53707](https://okumuralab.org/~okumura/texfaq/qa/53707.html), [qa:53708](https://okumuralab.org/~okumura/texfaq/qa/53708.html), [qa:55521](https://okumuralab.org/~okumura/texfaq/qa/55521.html) など)
 
 - 検索サイトで，パッケージ名やコマンド名で検索する
 - マクロやパッケージ関わることであれば，[CTAN](/CTAN/) ([CTAN search](http://www.ctan.org/search.html)) でパッケージ名をキーに探す
