@@ -2644,7 +2644,9 @@ C:\eclipse\invtexlipse.bat "%f" %l
 
 とします．
 
-## dviout との連携 {#l2ee2226}
+## dviout との連携 (非推奨) {#l2ee2226}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 引数に -src-specials を追加します．
 
