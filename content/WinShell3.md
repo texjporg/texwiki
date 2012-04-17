@@ -1690,7 +1690,9 @@ inverse search の時に他のエディタが起動してしまう場合は suma
 
 ***
 
-## dviout との連携 (forward and inverse search) {#l22a7019}
+## dviout との連携 (forward and inverse search) (非推奨) {#l22a7019}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 メニューバーより ［オプション］ → ［TeX関連プログラム設定］ と選び，右の
 「プログラム」のリストより \[LaTeX\] を選びます。そして，「コマンドライン」を
@@ -1725,12 +1727,6 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 のように変更しておきます。こうしておくことで，WinShell
 から ［DVI閲覧］ボタンを押すことで，WinShell の文書のカーソル位置に相当する
 dviout for Windows への該当領域へとジャンプすることができます。
-
-> 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
-> 他人に渡す文書（投稿論文の TeX ソースの類）の最終版」を作成する際には
-> 用いないでください。実際，source specials を用いるか否かによって
-> 体裁あるいは「タイプセットの可否」が変わる例が知られています
-> （[qa:8914](https://okumuralab.org/~okumura/texfaq/qa/8914.html)，[qa:14224](https://okumuralab.org/~okumura/texfaq/qa/14224.html) 参照）。
 
 ## 「WinShell Update」機能 {#n1ccef71}
 
