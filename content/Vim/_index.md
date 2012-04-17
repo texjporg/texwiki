@@ -179,7 +179,9 @@ C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
-## dviout との連携 (forward and inverse search) {#yb1d17aa}
+## dviout との連携 (forward and inverse search) (非推奨) {#yb1d17aa}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 forward search については [Vim-LaTeX](/Vim-LaTeX/)[dviout との連携#forward search](/Vim-LaTeX/#g7a208c2) を参照してください．
 
@@ -195,7 +197,7 @@ C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
 
 [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
-## xdvi との連携 (forward and inverse search) {#z967afdc}
+## xdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
 
 [Vim-LaTeX](/Vim-LaTeX/)[#xdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
 
