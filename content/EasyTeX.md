@@ -320,6 +320,33 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
 実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
 
+■ bkmk2uni を使用する場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+■ convbkmk を使用する場合
+
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
@@ -502,17 +529,14 @@ pLaTeX のみ実行する場合は［ｺﾝﾊﾟｲﾙ(C)］ をクリックし
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
 
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．<br>
+出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)<br>
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．<br>
+
 ### forward search {#o6a70e4f}
 
-EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
-
-出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)
-
-\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
-
-LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Pdfﾌﾟﾚﾋﾞｭｰ(f)\] で PDF ファイルの該当領域を検索します．
-
-PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．
+LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Pdfﾌﾟﾚﾋﾞｭｰ(f)\] で PDF ファイルの該当領域を検索します．<br>
+PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．<br>
 
 ### inverse search {#a57927f9}
 
@@ -524,9 +548,8 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 C:\easytex\EasyTeX.exe /j%l "%f"
 ```
 
-と書き込んで \[OK\] をクリックしてください．
-
-SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所にジャンプします．
+と書き込んで \[OK\] をクリックしてください．<br>
+SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所にジャンプします．<br>
 
 ***
 
@@ -542,15 +565,15 @@ SumatraPDF の画面をダブルクリックすると，以下のような「指
 
 ***
 
-## [dviout](/dviout/) との連携 {#etsa7019}
+## [dviout](/dviout/) との連携 (非推奨) {#etsa7019}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
+
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．<br>
+出てきたウィンドウで \[TeXOption\] タブの source special にチェックを入れます．<br>
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．<br>
 
 ### forward search {#t49147bf}
-
-EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．
-
-出てきたウィンドウで \[TeXOption\] タブの source special にチェックを入れます．
-
-\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．
 
 LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[ｺﾝﾊﾟｲﾙ・Dviﾌﾟﾚﾋﾞｭｰ(B)\] で DVI ファイルの該当領域にジャンプします．
 
@@ -564,8 +587,7 @@ EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex
 `easytex easytex +%d %s``C:\easytex\EasyTeX.exe
 ```
 
-と書き込んで \[Save\] → \[OK\] してください．
-
+と書き込んで \[Save\] → \[OK\] してください．<br>
 dviout の画面をダブルクリックすると，EasyTeX が前面に出て，該当個所にジャンプします．
 
 Version 3.240 以降は以下の形式でも OK です．
@@ -573,12 +595,6 @@ Version 3.240 以降は以下の形式でも OK です．
 ```
 C:\easytex\EasyTeX.exe^s /j%d "%s"
 ```
-
-> 【注意】この「source specials を用いた連携」は，「TeX ソースファイルの形で
-> 他人に渡す文書（投稿論文の TeX ソースの類）の最終版」を作成する際には
-> 用いないでください．実際，source specials を用いるか否かによって
-> 体裁あるいは「タイプセットの可否」が変わる例が知られています
-> ([qa:8914](https://okumuralab.org/~okumura/texfaq/qa/8914.html)，[qa:14224](https://okumuralab.org/~okumura/texfaq/qa/14224.html) 参照)．
 
 ## EasyTeX 用マクロ {#j92ac132}
 
