@@ -272,7 +272,9 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 C:\texe022i\TeXE.exe /j%l "%f"
 ```
 
-## dviout との連携 {#u0ce365d}
+## dviout との連携 (非推奨) {#u0ce365d}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 TeX の引数に -src-specials を追加します．
 
