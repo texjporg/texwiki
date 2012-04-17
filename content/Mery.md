@@ -1138,7 +1138,9 @@ main();
 C:\Mery\Mery.exe /l %l "%f"
 ```
 
-## dviout との連携 {#fee7abf9}
+## dviout との連携 (非推奨) {#fee7abf9}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 ### pLaTeX.js {#jc3b9e8f}
 
