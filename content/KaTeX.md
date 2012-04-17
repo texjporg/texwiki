@@ -320,6 +320,8 @@ C:.
 
 &#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
+pdfplatex.bat は W32TeX に含まれています．<br>
+TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](/TeXworks/#nb7beec9) を使用してください．<br>
 
 ***
 
@@ -337,8 +339,12 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (setq elisp::KaTeX-default-documentclass "jsarticle")
 ;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 (setq elisp::tex-command "pdfplatex.bat")
+;(setq elisp::tex-command "pdfplatex1.bat")
+;(setq elisp::tex-command "pdfplatex2.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfuplatex.bat")
+;(setq elisp::tex-command "pdfuplatex1.bat")
+;(setq elisp::tex-command "pdfuplatex2.bat")
 ;(setq elisp::tex-command "pdflatex -synctex=1")
 ;(setq elisp::tex-command "lualatex -synctex=1")
 ;(setq elisp::tex-command "xelatex -synctex=1")
@@ -363,9 +369,15 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
-         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf")))
-    (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
-                          (format nil "~D" (current-line-number)))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (line (format nil "~D" (current-line-number)))
+         (cmd (if (file-exist-p "C:/Program Files/SumatraPDF/SumatraPDF.exe")
+                  "\"C:/Program Files/SumatraPDF/SumatraPDF\""
+                "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
+         (args))
+    (setq args (concat " -reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
+    (message (concat cmd args))
+    (call-process (concat cmd args)
                   :exec-directory (directory-namestring tex-file))))
 
 (add-hook 'elisp::katex-mode-hook
@@ -399,8 +411,12 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 ;; jsarticle をデフォルトに
 ;; タイプセットを e-pLaTeX で
 ;; タイプセットを pdfplatex.bat で
+;; タイプセットを pdfplatex1.bat で
+;; タイプセットを pdfplatex2.bat で
 ;; タイプセットを e-upLaTeX で
 ;; タイプセットを pdfuplatex.bat で
+;; タイプセットを pdfuplatex1.bat で
+;; タイプセットを pdfuplatex2.bat で
 ;; タイプセットを pdfLaTeX で
 ;; タイプセットを LuaLaTeX で
 ;; タイプセットを XeLaTeX で
@@ -412,8 +428,8 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 ;; platex の場合は mendex を使う
 ;; lualatex, xelatex の場合は texindy を使う
 ;; uplatex, platex, lualatex, xelatex 以外の場合は makeindex を使う
-;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex の場合は Adobe Reader が起動していれば Adobe Reader を終了して pdfopen を使う
-;; pdfplatex, pdfuplatex, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex の場合は Adobe Reader が起動していれば Adobe Reader を終了して pdfopen を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
 ;; ツールバー表示
 ;; M-RET を有効に
@@ -468,8 +484,10 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET platex -synctex=1 RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex RET</td><td>pdfplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex2 RET</td><td>pdfplatex2</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -synctex=1 RET</td><td>uplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex RET</td><td>pdfuplatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex2 RET</td><td>pdfuplatex2</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET xelatex -synctex=1 RET</td><td>xelatex</td></tr>
@@ -532,9 +550,15 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
-         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf")))
-    (call-process (concat "\"C:/Program Files/SumatraPDF/SumatraPDF\"" " -reuse-instance " pdf-file " -forward-search " tex-file " "
-                          (format nil "~D" (current-line-number)))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (line (format nil "~D" (current-line-number)))
+         (cmd (if (file-exist-p "C:/Program Files/SumatraPDF/SumatraPDF.exe")
+                  "\"C:/Program Files/SumatraPDF/SumatraPDF\""
+                "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
+         (args))
+    (setq args (concat " -reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
+    (message (concat cmd args))
+    (call-process (concat cmd args)
                   :exec-directory (directory-namestring tex-file))))
 
 (add-hook 'elisp::katex-mode-hook
