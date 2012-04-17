@@ -603,7 +603,9 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 
 [xyzzy#SumatraPDF との連携#inverse search](/xyzzy/#n1f72109) を参照．
 
-## dviout との連携 {#u0efc8e1}
+## dviout との連携 (非推奨) {#u0efc8e1}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
