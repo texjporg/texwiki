@@ -1354,7 +1354,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 C:\tpad\TeraPad.exe /jl=%l "%f"
 ```
 
-## dviout との連携 (inverse search) {#u00a74a2}
+## dviout との連携 (inverse search) (非推奨) {#u00a74a2}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 ```
 C:\tpad\TeraPad.exe^s /jl=%d "%s"
