@@ -62,7 +62,7 @@ Notepad++ は
 
 ### リリース情報 {#d2ceb628}
 
-2012-04-09 Notepad++ v6.1<br>
+2012-04-18 Notepad++ v6.1.1<br>
 2011-03-05 Notepad++ v5.8.7-6 +EUC-JP (UNICODE) 版<br>
 
 ### ChangeLog {#q10cf331}
@@ -1001,7 +1001,9 @@ NppExec を使用する場合は以下のように設定します．<br>
 C:\npp\unicode\notepad++.exe "%f" -n%l
 ```
 
-## dviout との連携 {#jcfc6361}
+## dviout との連携 (非推奨) {#jcfc6361}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 ### [NppExec](http://sourceforge.net/projects/npp-plugins/files/NppExec/) {#pbfbc67f}
 
