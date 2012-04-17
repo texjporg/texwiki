@@ -1067,7 +1067,9 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 C:\VxEditor\VxEditor.exe /j%l "%f"
 ```
 
-## dviout との連携 (inverse search) {#ld52941a}
+## dviout との連携 (inverse search) (非推奨) {#ld52941a}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 ```
 C:\VxEditor\VxEditor.exe^s /j%d "%s"
