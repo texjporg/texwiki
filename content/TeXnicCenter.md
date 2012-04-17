@@ -1257,7 +1257,9 @@ inverse search は Executable path に追加する代わりに SumatraPDF の \[
 "C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
 ```
 
-## dviout との連携 {#r45cf8d1}
+## dviout との連携 (非推奨) {#r45cf8d1}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 Command line arguments to pass to the compiler: に -src-specials を追加します．
 
@@ -1273,7 +1275,7 @@ inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[sr
 C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
 ```
 
-## Yap との連携 {#v01c3904}
+## Yap との連携 (非推奨) {#v01c3904}
 
 Command line arguments to pass to the compiler: に -src-specials を追加します．
 
