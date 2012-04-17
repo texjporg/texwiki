@@ -198,7 +198,9 @@ SumatraPDF で画面の一部（本文の文字など）をダブルクリック
 上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
 なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
 
-## dviout との連携 {#xysssdaf}
+## dviout との連携 (非推奨) {#xysssdaf}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
 platex に -src-specials オプションを付けて実行します。すなわち，
 
@@ -238,13 +240,6 @@ KaTeX をお使いでない場合は次のように書きます。ただし，Ka
 
 すると，M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
-
-> 【注意】この「source specials を用いた連携」は，
-> 「TeX ソースファイルの形で他人に渡す文書（投稿論文の TeX ソースの類）の最終版」
-> を作成する際には用いないでください。
-> 実際，source specials を用いるか否かによって体裁あるいは
-> 「タイプセットの可否」が変わる例が知られています
-> （[qa:8914](https://okumuralab.org/~okumura/texfaq/qa/8914.html)，[qa:14224](https://okumuralab.org/~okumura/texfaq/qa/14224.html) 参照）。
 
 ### inverse search {#g1e55b81}
 
