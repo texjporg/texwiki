@@ -81,7 +81,6 @@ LaTeX 文書で使用するエンコードを指定します．
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -103,10 +102,10 @@ function main()
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -146,7 +145,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -169,10 +167,10 @@ function main()
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX2", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -213,7 +211,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -222,10 +219,10 @@ function main()
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -267,7 +264,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -277,10 +273,10 @@ function main()
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
-  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX2", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -323,7 +319,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -331,10 +326,10 @@ function main()
   var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + pdflatex;
 
-  var button = wshShell.Popup(cmd, 0, "pdfLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -378,7 +373,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -386,10 +380,10 @@ function main()
   var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + lualatex;
 
-  var button = wshShell.Popup(cmd, 0, "LuaLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -434,7 +428,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -442,10 +435,10 @@ function main()
   var xelatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + xelatex;
 
-  var button = wshShell.Popup(cmd, 0, "XeLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -491,7 +484,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -512,10 +504,10 @@ function main()
   bibtex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
-  var button = wshShell.Popup(cmd, 0, "pBibTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -562,7 +554,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -570,10 +561,10 @@ function main()
   var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
 
-  var button = wshShell.Popup(cmd, 0, "upBibTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -621,7 +612,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -642,10 +632,10 @@ function main()
   makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
 
-  var button = wshShell.Popup(cmd, 0, "Mendex", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -696,7 +686,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -705,7 +694,7 @@ function main()
   var texworks = "start C:/w32tex/share/texworks/TeXworks.exe" + " " + pdfFile;
   var cmd = "cmd /c " + cd + " && " + texworks;
 
-  wshShell.Run(cmd, 1, true);
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
 main();
@@ -842,7 +831,6 @@ LaTeX の
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -866,10 +854,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeXA", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -885,7 +873,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -910,10 +897,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfpLaTeX2A", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -929,7 +916,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -940,10 +926,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfupLaTeXA", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -959,7 +945,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -971,10 +956,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfupLaTeX2A", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -990,7 +975,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -1000,10 +984,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "pdfLaTeXA", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -1019,7 +1003,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -1029,10 +1012,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "LuaLaTeXA", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -1048,7 +1031,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -1058,10 +1040,10 @@ function main()
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
 
-  var button = wshShell.Popup(cmd, 0, "XeLaTeXA", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -1081,19 +1063,45 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = document.Path;
-  var f = document.Name;
-  var b = fso.GetBaseName(document.Name);
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var texFile = ["\"", f, "\""].join("");
-  var pdfFile = ["\"", b, ".pdf", "\""].join("");
+  var mery = editor.FullName;
+  var currentTeXFile = document.FullName;
+  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
   var line = document.selection.GetActivePointY(mePosLogical);
-  var sumatrapdf = "\"C:/Program Files/SumatraPDF/SumatraPDF.exe\"" + " -reuse-instance " + pdfFile + " -inverse-search \"\\\"" + editor.FullName + "\\\" /l %l \\\"%f\\\"\"" + " -forward-search " + texFile + " " + line;
-  var cmd = "cmd /c " + cd + " && echo " + sumatrapdf + " | cmd";
+  var sumatraPDF = "C:/Program Files/SumatraPDF/SumatraPDF.exe";
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
 
-  wshShell.Run(cmd, 1, true);
+  if (!fso.FileExists(sumatraPDF)) {
+    sumatraPDF = "C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe";
+    if (!fso.FileExists(sumatraPDF)) {
+      sumatraPDF = window.Prompt("Input the path to SumatraPDF.exe.", sumatraPDF);
+      if (!fso.FileExists(sumatraPDF)) {
+        sumatraPDF = "SumatraPDF.exe";
+      }
+    }
+  }
+
+  sumatraPDF = ["\"", sumatraPDF, "\""].join("");
+
+  if (!fso.FileExists(pdfFile)) {
+    var mainTeXFile;
+    mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(pdfFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
+  pdfFile = ["\"", pdfFile, "\""].join("");
+
+  args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search \"\\\"" + mery + "\\\" /l %l \\\"%f\\\"\"" + " -forward-search " + currentTeXFile + " " + line;
+  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
 main();
@@ -1112,7 +1120,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var f = document.Name;
@@ -1124,7 +1131,7 @@ function main()
   var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe" + " " + pdfFile + " " + texFile + " " + line;
   var cmd = "cmd /c " + cd + " && " + fwdsumatrapdf;
 
-  wshShell.Run(cmd, 1, true);
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
 main();
@@ -1149,7 +1156,6 @@ C:\Mery\Mery.exe /l %l "%f"
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -1170,10 +1176,10 @@ function main()
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
 
-  var button = wshShell.Popup(cmd, 0, "pLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -1189,7 +1195,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
@@ -1197,10 +1202,10 @@ function main()
   var latex = "uplatex -src-specials -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
 
-  var button = wshShell.Popup(cmd, 0, "upLaTeX", 1);
-  if (button == 1) {
+  var ok = window.Confirm(cmd);
+  if (ok) {
     document.Save();
-    wshShell.Run(cmd, 1, true);
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
   }
 }
 
@@ -1218,7 +1223,6 @@ main();
 ```
 function main()
 {
-  var wshShell = new ActiveXObject("WScript.Shell");
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var c = document.Path;
   var f = document.Name;
@@ -1230,7 +1234,7 @@ function main()
   var dviout = "C:/w32tex/dviout/dviout.exe -1" + " " + dviFile + " \"# " + line + " " + texFile + "\"";
   var cmd = "cmd /c " + cd + " && echo " + dviout + " | cmd";
 
-  wshShell.Run(cmd, 1, true);
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
 main();
