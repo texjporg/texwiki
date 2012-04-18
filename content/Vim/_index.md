@@ -159,7 +159,9 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [vim-live-latex-preview (LaTeX in (g)Vim with live update-as-you-type PDF preview &laquo; PhilTeX)](http://www.charlietanksley.net/philtex/vim-live-latex-preview/)
 - [Writing LaTeX files with GVim &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/2010/10/07/writing-latex-files-with-gvim/)
 
-## SumatraPDF との連携 (forward and inverse search) {#tf5a143c}
+## SumatraPDF との連携 {#tf5a143c}
+
+### forward search {#j2d22939}
 
 SumatraPDF v1.9.4622 以上の場合はコマンドラインから forward search が可能です．
 
@@ -167,7 +169,9 @@ Vim の場合は Python, Ruby, Perl などを使って forward search を実現�
 
 詳しくは，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
 
-inverse search は
+### inverse search {#b8f7bf28}
+
+inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
 C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
@@ -179,13 +183,17 @@ C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
-## dviout との連携 (forward and inverse search) (非推奨) {#yb1d17aa}
+## dviout との連携 (非推奨) {#yb1d17aa}
 
 [dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
+### forward search {#i0a5c1b0}
+
 forward search については [Vim-LaTeX](/Vim-LaTeX/)[dviout との連携#forward search](/Vim-LaTeX/#g7a208c2) を参照してください．
 
-inverse search は
+### inverse search {#f8dee8e5}
+
+inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
 ```
 C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
