@@ -1077,7 +1077,7 @@ function main()
   if (!fso.FileExists(sumatraPDF)) {
     sumatraPDF = "C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe";
     if (!fso.FileExists(sumatraPDF)) {
-      sumatraPDF = window.Prompt("Input the path to SumatraPDF.exe.", sumatraPDF);
+      sumatraPDF = window.Prompt("Input the path to SumatraPDF.exe.", "SumatraPDF.exe");
       if (!fso.FileExists(sumatraPDF)) {
         sumatraPDF = "SumatraPDF.exe";
       }
@@ -1087,8 +1087,7 @@ function main()
   sumatraPDF = ["\"", sumatraPDF, "\""].join("");
 
   if (!fso.FileExists(pdfFile)) {
-    var mainTeXFile;
-    mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
     if (mainTeXFile != "") {
       pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
     }
@@ -1121,16 +1120,40 @@ main();
 function main()
 {
   var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = document.Path;
-  var f = document.Name;
-  var b = fso.GetBaseName(document.Name);
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var texFile = ["\"", f, "\""].join("");
-  var pdfFile = ["\"", b, ".pdf", "\""].join("");
+  var currentTeXFile = document.FullName;
+  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
   var line = document.selection.GetActivePointY(mePosLogical);
-  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe" + " " + pdfFile + " " + texFile + " " + line;
-  var cmd = "cmd /c " + cd + " && " + fwdsumatrapdf;
+  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe";
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
+```
 
+```
+  if (!fso.FileExists(fwdsumatrapdf)) {
+    fwdsumatrapdf = window.Prompt("Input the path to fwdsumatrapdf.exe.", "fwdsumatrapdf.exe");
+    if (!fso.FileExists(fwdsumatrapdf)) {
+      fwdsumatrapdf = "fwdsumatrapdf.exe";
+    }
+  }
+
+  fwdsumatrapdf = ["\"", fwdsumatrapdf, "\""].join("");
+
+  if (!fso.FileExists(pdfFile)) {
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(pdfFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
+  pdfFile = ["\"", pdfFile, "\""].join("");
+
+  args = fwdsumatrapdf + " " + pdfFile + " " + currentTeXFile + " " + line;
+  cmd = "cmd /c " + cd + " && " + args;
   new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
@@ -1224,16 +1247,38 @@ main();
 function main()
 {
   var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = document.Path;
-  var f = document.Name;
-  var b = fso.GetBaseName(document.Name);
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var texFile = ["'", f, "'"].join("");
-  var dviFile = ["\"", b, ".dvi", "\""].join("");
+  var currentTeXFile = document.FullName;
+  var dviFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".dvi");
   var line = document.selection.GetActivePointY(mePosLogical);
-  var dviout = "C:/w32tex/dviout/dviout.exe -1" + " " + dviFile + " \"# " + line + " " + texFile + "\"";
-  var cmd = "cmd /c " + cd + " && echo " + dviout + " | cmd";
+  var dviout = "C:/w32tex/dviout/dviout.exe"
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
 
+  if (!fso.FileExists(dviout)) {
+    dviout = window.Prompt("Input the path to dviout.exe.", "dviout.exe");
+    if (!fso.FileExists(dviout)) {
+      dviout = "dviout.exe";
+    }
+  }
+
+  dviout = ["\"", dviout, "\""].join("");
+
+  if (!fso.FileExists(dviFile)) {
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", dviFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      dviFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".dvi");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(dviFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["'", fso.GetFileName(currentTeXFile), "'"].join("");
+  dviFile = ["\"", dviFile, "\""].join("");
+
+  args = dviout + " -1 " + dviFile + " \"# " + line + " " + currentTeXFile + "\"";
+  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
   new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
