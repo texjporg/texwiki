@@ -29,4 +29,5 @@ Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC
 
 ## 関連リンク {#j4cca0b1}
 
+- [geany-dark-scheme](http://code.google.com/p/geany-dark-scheme/)
 - [MacにGeanyをインストール](http://code-life.net/?p=951)
