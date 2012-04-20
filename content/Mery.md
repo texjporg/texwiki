@@ -687,13 +687,36 @@ main();
 function main()
 {
   var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = document.Path;
-  var b = fso.GetBaseName(document.Name);
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var pdfFile = ["\"", b, ".pdf", "\""].join("");
-  var texworks = "start C:/w32tex/share/texworks/TeXworks.exe" + " " + pdfFile;
-  var cmd = "cmd /c " + cd + " && " + texworks;
+  var currentTeXFile = document.FullName;
+  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+  var texworks = "C:/w32tex/share/texworks/TeXworks.exe";
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
 
+  if (!fso.FileExists(texworks)) {
+    texworks = window.Prompt("Input the path to TeXworks.exe.", "TeXworks.exe");
+    if (!fso.FileExists(texworks)) {
+      texworks = "TeXworks.exe";
+    }
+  }
+
+  texworks = ["\"", texworks, "\""].join("");
+
+  if (!fso.FileExists(pdfFile)) {
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(pdfFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  pdfFile = ["\"", pdfFile, "\""].join("");
+
+  args = texworks + " " + pdfFile;
+  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
   new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
