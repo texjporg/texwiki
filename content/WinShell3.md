@@ -96,17 +96,209 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-### 日本語言語ファイル {#i83c37b0}
+<!-- **日本語言語ファイル [#i83c37b0] -->
+<!--  -->
+<!-- -[[WinShell3日本語化:http://redmine.nnnnn.me/projects/winshell/files]] -->
+<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
+<!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/viewcat.php?cid=2]] -->
+<!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/index.php/1]] -->
+<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://nnnnn.co/filemgmt/visit.php?lid=1]] (Google キャッシュ) -->
+<!--  -->
+<!-- [[( ﾟÅﾟ)んー:http://twitter.com/whoami]] さんが WinShell3 日本語言語ファイルを公開されています．~ -->
+<!-- WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．~ -->
+<!-- ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．~ -->
 
-- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
-    - [jp_JP.txt](http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt) (Google キャッシュ)
-- [WinShell3 日本語言語ファイル](http://nnnnn.co/filemgmt/viewcat.php?cid=2)
-    <!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/index.php/1]] -->
-    - [jp_JP.txt](http://webcache.googleusercontent.com/search?q=cache%3ahttp://nnnnn.co/filemgmt/visit.php?lid=1) (Google キャッシュ)
+## 不具合 {#j9720464}
 
-[( ﾟÅﾟ)んー](http://twitter.com/whoami) さんが WinShell3 日本語言語ファイルを公開されています．<br>
-WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
-ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．<br>
+### Runtime Error! {#o5faaed5}
+
+WinShell 3.3.2.4 で，エンコーディングを UTF-8 に変更し
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]</ins></span><strong>\[ フォント \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+
+<br>
+
+　　　　フォント:　　　　　　　　　　　　　　　　　　　　　サイズ:　　　　スクリプト:<br>
+　　　　<span style="color:Black;background-color:White;">\[　　MS UI Gothic　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　　▼\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
+　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　　　　▼\]</span><br>
+　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
+　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
+
+***
+
+LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　Microsoft Visual C++ Runtime Library　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="font-size:35px"><strong>×</strong></span> Runtime Error!<br>
+
+<br>
+
+　　　　Program: C:\Program Files\WinShell\WinShell.exe<br>
+
+<br>
+
+<br>
+
+　　　　This application has requested the Runtime to terminate it in an<br>
+　　　　unusual way.<br>
+　　　　Please contact the application's support team for more<br>
+　　　　information.
+
+***
+
+ShiftJIS (Shift_JIS) では発生しませんでした．
+
+UTF-8 を使用したい方は，WinShell 3.1 (旧バージョン) をダウンロードするか [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/), [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/), Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/), jEdit, [Geany](/Geany/), [gedit](/gedit/), [xyzzy](/xyzzy/), [Emacs](/Emacs/), [Vim](/Vim/) などの UTF-8 で問題の発生しないエディタを使用してください．
+
+- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
+- [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) WinShell 3.1 (旧バージョン)
+
+[Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
+
+どうしても WinShell の最新版で UTF-8 を使用したい場合は
+
+- 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合)
+- ユーザ指定プログラム (エンコーディングが UTF-8 の場合)
+
+を参照して設定をしてください．
+
+### Adobe Reader X で PDF ファイルが表示できない {#z65ee470}
+
+WinShell 3.3.2.3 よりも前のバージョンの場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　　Cannot start AcrobatReader or open the document.<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span>　　Please check on the exe file and cmd line of the PDFView<br>
+　　　　　　　options.<br>
+
+<br>
+
+***
+
+WinShell 3.3.2.4 でも状況によってはこの警告メッセージが表示されて PDF ファイルが表示できないことがあります．<br>
+その場合は WinShell を再起動すれば OK です．<br>
+ただし，また同じ警告メッセージが表示され，PDF ファイルが表示できなくなる可能性があります．<br>
+これを回避するには PDFView を参照してください．
+
+### 自動スペルチェックがオンの場合に赤い小さなゴミのようなものが表示される → 自動スペルチェックをオフにする {#bf59f9a2}
+
+WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
+カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.2.4 でも同様の症状が発生します。
+
+> <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
+
+### 括弧の強調表示時の文字化け {#xfe3d30d}
+
+過去に報告された日本語の不具合はおおむね直っていますが，括弧の強調表示時の文字化け現象は解決していませんでした。
+
+［オプション］ → ［WinShellの外観］ → ［ユーザー設定］ でツールバーに登録する際にコンボボックスのリストの日本語が表示されません。
+
+この操作をする際には ［オプション］ → ［言語］ から言語を “English” にしておきましょう。
+
+括弧の強調表示時に，日本語が文字化けする不具合があります。
+
+例えば
+
+```
+\chapter{日本語文字
+```
+
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
+
+ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
+
+これを回避するには，対応する括弧の強調表示のチェックをはずしてください．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　☑ 構文の強調表示(S)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　☐ 対応する括弧の強調表示(M)<br>
+
+<br>
+
+<br>
+
+<br>
+
+***
+
+関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
+
+[http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156)
+
+LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。
+
+プロジェクトの ［目次］ において，\section に日本語を指定した場合に
+文字が表示されない不具合があります。<br>
+(追記：2009/12/21)<br>
+{}の中で使用すると不具合が起こる文字を以下の通りにまとめます。
+
+> ＋ ボ к 閲 顎 宮 鶏 砿 施 旬 須 捜 畜 怒 倍 府 本 養 几 嘴 學 悳 掉 桀 毬 炮 痣 窖 縵 艝 蛔 諚 轆 閔 驅 黠 垬 葈
+
+> マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓
+
+1行目の文字群は2byte目が0x7C( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
+これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
+(追記：2010/01/20)<br>
+また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
+対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
+その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
+
+#### 3.3.0.3 現在 Vista(64ビット版) SP1 + W32TeX {#p7b9c1e0}
+
+```
+ 括弧の強調表示時の文字化け
+```
+
+　　日本語のままで正常動作しました
+
+```
+ ある文字を{}の中で使用すると,文字化け
+```
+
+　　正常動作しました
+
+```
+ プロジェクトの ［目次］ において文字が表示されない
+```
+
+　　正常動作しました
 
 ## 設定 {#h3ab6f8d}
 
@@ -310,6 +502,7 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 #### -jobname を使用しない場合 {#x51ab74f}
 
+- 表.tex, 予定.tex といったファイル名の場合はうまく処理できません．
 - exeファイル名を platex.exe に設定します． (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\platex.exe)
 - さらに，コマンドラインも -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "%s.tex" に変更します．
 
@@ -1831,192 +2024,3 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 　☑アップデートを自動的に確認　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　中止　　 \]</span>
 
 ***
-
-## 不具合 {#j9720464}
-
-### Runtime Error! {#o5faaed5}
-
-WinShell 3.3.2.4 で，エンコーディングを UTF-8 に変更し
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]</ins></span><strong>\[ フォント \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-
-<br>
-
-　　　　フォント:　　　　　　　　　　　　　　　　　　　　　サイズ:　　　　スクリプト:<br>
-　　　　<span style="color:Black;background-color:White;">\[　　MS UI Gothic　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　　▼\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　　　　▼\]</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
-
-***
-
-LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　Microsoft Visual C++ Runtime Library　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-<span style="font-size:35px"><strong>×</strong></span> Runtime Error!<br>
-
-<br>
-
-　　　　Program: C:\Program Files\WinShell\WinShell.exe<br>
-
-<br>
-
-<br>
-
-　　　　This application has requested the Runtime to terminate it in an<br>
-　　　　unusual way.<br>
-　　　　Please contact the application's support team for more<br>
-　　　　information.
-
-***
-
-ShiftJIS (Shift_JIS) では発生しませんでした．
-
-UTF-8 を使用したい方は，WinShell 3.1 (旧バージョン) をダウンロードするか [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/), [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/), Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/) などの UTF-8 で問題の発生しないエディタを使用してください．
-
-- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
-- [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) WinShell 3.1 (旧バージョン)
-
-[Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
-
-どうしても WinShell の最新版で UTF-8 を使用したい場合は
-
-- 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合)
-- ユーザ指定プログラム (エンコーディングが UTF-8 の場合)
-
-を参照して設定をしてください．
-
-### Adobe Reader X で PDF ファイルが表示できない {#z65ee470}
-
-WinShell 3.3.2.3 よりも前のバージョンの場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　　　　　　Cannot start AcrobatReader or open the document.<br>
-　　　　<span style="font-size:35px"><strong>!</strong></span>　　Please check on the exe file and cmd line of the PDFView<br>
-　　　　　　　options.<br>
-
-<br>
-
-***
-
-これを回避するには PDFView を参照してください．
-
-### 赤い小さなゴミのようなものが表示される {#bf59f9a2}
-
-WinShell 3.3.0.3 + 配布されているパッチという環境で、日本語文書を入力して
-カーソル移動などをすると、各文字について、赤い小さなゴミのようなものが表示されます。3.3.1.12 でも同様の症状が発生します。
-
-> <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます。</strong></span>
-
-### 括弧の強調表示時の文字化け {#xfe3d30d}
-
-過去に報告された日本語の不具合はおおむね直っていますが，括弧の強調表示時の文字化け現象は解決していませんでした。
-
-［オプション］ → ［WinShellの外観］ → ［ユーザー設定］ でツールバーに登録する際にコンボボックスのリストの日本語が表示されません。
-
-この操作をする際には ［オプション］ → ［言語］ から言語を “English” にしておきましょう。
-
-括弧の強調表示時に，日本語が文字化けする不具合があります。
-
-例えば
-
-```
-\chapter{日本語文字
-```
-
-と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
-
-ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
-
-これを回避するには，対応する括弧の強調表示のチェックをはずしてください．
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　☑ 構文の強調表示(S)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
-
-<br>
-
-　　　　　　　　　　☐ 対応する括弧の強調表示(M)<br>
-
-<br>
-
-<br>
-
-<br>
-
-***
-
-関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
-
-[http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156)
-
-LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。
-
-プロジェクトの ［目次］ において，\section に日本語を指定した場合に
-文字が表示されない不具合があります。<br>
-(追記：2009/12/21)<br>
-{}の中で使用すると不具合が起こる文字を以下の通りにまとめます。
-
-> ＋ ボ к 閲 顎 宮 鶏 砿 施 旬 須 捜 畜 怒 倍 府 本 養 几 嘴 學 悳 掉 桀 毬 炮 痣 窖 縵 艝 蛔 諚 轆 閔 驅 黠 垬 葈
-
-> マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓
-
-1行目の文字群は2byte目が0x7C( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
-これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
-(追記：2010/01/20)<br>
-また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
-対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
-その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
-
-#### 3.3.0.3 現在 Vista(64ビット版) SP1 + W32TeX {#p7b9c1e0}
-
-```
- 括弧の強調表示時の文字化け
-```
-
-　　日本語のままで正常動作しました
-
-```
- ある文字を{}の中で使用すると,文字化け
-```
-
-　　正常動作しました
-
-```
- プロジェクトの ［目次］ において文字が表示されない
-```
-
-　　正常動作しました
