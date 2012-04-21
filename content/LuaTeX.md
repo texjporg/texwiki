@@ -22,6 +22,8 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX-ja {#nec94db0}
 
+LuaTeX-ja は CTAN に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))
+
 - [LuaTeX-ja（仮称）プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
     - [LuaTeX-ja の使い方](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
@@ -34,19 +36,20 @@ pukiwiki: "LuaTeX"
 
 ### インストール {#p4234337}
 
-W32TeX であれば，展開した luatexja フォルダを
+2012/04/20 以降の W32TeX には luatexja.tar.xz が含まれています．<br>
+W32TeX をフルインストールすると<br>
 
 ```
 C:.
 └─w32tex
     └─share
-        └─texmf-local
+        └─texmf
              └─tex
-                 └─lualatex
-                     └─luatexja
+                 └─luatex
+                     └─luatex-ja
 ```
 
-に配置するだけでインストール完了です．
+にインストールされます．<br>
 
 ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を実行してください．
 
