@@ -16,6 +16,9 @@ Adobe Reader は PDF ファイルを表示・印刷するためのソフトウ�
 Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
 PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
+- [Adobe Reader](http://www.adobe.com/jp/products/reader.html)
+- [アドビ サポート担当 (adobesupportj) on Twitter](http://twitter.com/#!/AdobeSupportJ)
+
 ## ダウンロード {#ne09e93f}
 
 - [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
@@ -35,12 +38,16 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
 - [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
 
+## アンインストール {#j28c578e}
+
+- [Adobe Reader および Acrobat 用の Cleaner Tool について（Windows）](http://kb2.adobe.com/jp/cps/935/cpsid_93506.html) → ([参照](http://twitter.com/#!/AdobeSupportJ/status/192532790707888128))
+
 ## ヘルプ {#je3a489e}
 
 - [Adobe Reader X ユーザーガイド](http://help.adobe.com/ja_JP/reader/using/)
 - [Acrobat X Standard ユーザーガイド](http://help.adobe.com/ja_JP/acrobat/standard/using/)
 
-## Adobe Reader をコマンドラインから操作する方法 {#f9d733e4}
+## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
 ### PDF ファイルを開く {#id6d0918}
 
