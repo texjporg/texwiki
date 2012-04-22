@@ -1032,7 +1032,7 @@ exeファイル名
 : powershell.exe
 
 コマンドライン
-: -Command "&amp; {$s = echo """%s""";$d = echo """%s.dvi""";$p = echo """%s.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"
+: -Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"
 
 右下のチェックをすべてはずします。
 
@@ -1058,7 +1058,7 @@ exeファイル名
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$s = echo """%s""";$d = echo """%s.dvi""";$p = echo """%s.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -1602,7 +1602,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$s = echo """%s""";$d = echo """%s.dvi""";$p = echo """%s.ps""";platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -1672,7 +1672,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$s = echo """%s""";$d = echo """%s.dvi""";$p = echo """%s.ps""";uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -1965,7 +1965,7 @@ LaTeX コマンドのコマンドラインに -synctex=1 を追加し，PDFView 
 
 WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても自動的に実行してくれます．
 
-SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は LaTeX を以下のように修正します．
+SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は PDFLaTeX を以下のように修正します．
 
 ***
 
@@ -1975,24 +1975,24 @@ SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は LaTe
 
 <br>
 
-　　プログラム名　　<ins>LaTeX</ins><br>
+　　プログラム名　　<ins>PDFLaTeX</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">LaTeX　　　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
 　　exeファイル名 　<ins>powershell.exe</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFLaTeX　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-Command "&amp; {platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "$pwd\\%s.tex"}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$t = echo """$pwd\\$r.tex""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $t;if($?){dvipdfmx $s}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
 　　実行キー:　　　　引数:<br>
-　　F5 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　F10　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
 
 ***
 
