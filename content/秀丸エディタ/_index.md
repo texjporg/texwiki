@@ -49,16 +49,6 @@ pukiwiki: "秀丸エディタ"
     (阿部 紀行 (あべのり) さん)
     - [履歴](http://www.math.sci.hokudai.ac.jp/~abenori/soft/readme/fortexhist.txt)
     - [日記(祝鳥)](http://d.hatena.ne.jp/abenori/archive?word=%BD%CB%C4%BB)
-    - [64bit版macrodll.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-4)
-    - [祝鳥とは - はてなキーワード](http://d.hatena.ne.jp/keyword/%BD%CB%C4%BB)
-    - [秀丸エディタのカスタマイズVZ like + TeX](http://cms.estuarine.jp/?p=171)
-    - [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html), [TeX Wiki｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11021964592.html)
-    - [tex - 松村俊和のページ：日記](http://be-sp.com/matsut/cat_tex.html)
-    - [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
-    - [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
-    - [TeX---小技集（祝鳥関連）](http://imi.kyushu-u.ac.jp/~ssaito/jpn/tex/tips/nori.html)
-- [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
-    (阿部 紀行 (あべのり) さん)
 
 #### リリース情報 {#d9050efd}
 
@@ -427,6 +417,19 @@ gswin32c.exe -sPAPERSIZE=a4 -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOut
 ```
 
 のように ps2pdf.bat ではなく gswin32c.exe を実行すると PDF ファイルが作成できるようです．
+
+#### 関連リンク {#v1b5e675}
+
+- [64bit版macrodll.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-4)
+- [祝鳥とは - はてなキーワード](http://d.hatena.ne.jp/keyword/%BD%CB%C4%BB)
+- [秀丸エディタのカスタマイズVZ like + TeX](http://cms.estuarine.jp/?p=171)
+- [祝鳥｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11014017484.html), [TeX Wiki｜学ぶって 楽しい！](http://ameblo.jp/kazuos/entry-11021964592.html)
+- [tex - 松村俊和のページ：日記](http://be-sp.com/matsut/cat_tex.html)
+- [秀丸エディタ ガイド - 5. 祝鳥を使って TeX ファイルを編集](http://varian35558.ojaru.jp/hidemaru.html#5)
+- [秀丸と祝鳥のインストール](http://www.econ.kobe-u.ac.jp/~nomura/computer/hidefortex-inst.html)
+- [macでwin版のTex、秀丸](http://www.maruo.co.jp/hidesoft/2/x29507_.html)
+- [TeX---小技集（祝鳥関連）](http://imi.kyushu-u.ac.jp/~ssaito/jpn/tex/tips/nori.html)
+- [LaTeX強調表示他定義ファイル](http://hide.maruo.co.jp/lib/hilight/fortex.html)
 
 ### TeXmac, Gui-Shell {#ld68541f}
 
