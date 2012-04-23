@@ -62,72 +62,59 @@ pukiwiki: "秀丸エディタ"
 
 #### リリース情報 {#d9050efd}
 
-2011-11-28 64bit版macrodll.dll Ver.0.86 がリリースされました．<br>
-2011-11-26 祝鳥 0.86 がリリースされました．<br>
+2012-04-23 祝鳥 (開発版 20120423)<br>
+2011-11-28 64bit版macrodll.dll Ver.0.86<br>
 祝鳥 0.86 で Adobe Reader X の DDE に対応しました．<br>
 
-#### DVI→PSの設定 {#e5e9bbcd}
-
-使うプログラムを dvipsk から dvips に変更してオプションに -Ppdf を追加します．
-
-***
-
-　　begin型(B)<br>
-　　section型(S)<br>
-　　large型(L)<br>
-　　maketitle型(M)<br>
-　　accent型(A)<br>
-　　ギリシャ文字補完(J)<br>
-　　タイプセット(T)<br>
-　　\end{???}補完(E)<br>
-　　対応するものへの移動(G)<br>
-　　コメント操作(C)<br>
-　　補完(H)<br>
-　　イメージ補完(;)<br>
-　　お手伝いさん(U)<br>
-　　ispellでスペルチェック(P)<br>
-　　BibTeXデータベース検索(\[)<br>
-　　マニュアルを開く(I)<br>
-<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
-
-***
-
-　　TeX→DVIの設定<br>
-　　DVI→PDFの設定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　DVI→PSの設定　　　　　　　　　　　　　　　　　　</span><br>
-
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-　　Adobe Readerの設定<br>
-　　SumatraPDFの設定<br>
-　　GSViewの設定<br>
-　　各種プログラム及びメニューの設定...<br>
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-<span style="color:Black;background-color:#DAEAFF;">　　使うプログラム　　　　　　　　　　　　　　　　</span><br>
-
-　　紙サイズ<br>
-　　オプション... : 現在は (無し)
-
-***
-
-　　★ dvipsk<br>
-<span style="color:Black;background-color:#DAEAFF;">　　dvips　　　　　　　　　</span><br>
-
-　　その他...<br>
-
-***
-
-　　使うプログラム<br>
-　　紙サイズ<br>
-<span style="color:Black;background-color:#DAEAFF;">　　オプション... : 現在は-Ppdf　　　　　　　　　　</span>
-
-***
-
+<!-- ***DVI→PSの設定 [#e5e9bbcd] -->
+<!--  -->
+<!-- 使うプログラムを dvipsk から dvips に変更してオプションに -Ppdf を追加します． -->
+<!--  -->
+<!-- - --  -->
+<!-- 　　begin型(B)&br; -->
+<!-- 　　section型(S)&br; -->
+<!-- 　　large型(L)&br; -->
+<!-- 　　maketitle型(M)&br; -->
+<!-- 　　accent型(A)&br; -->
+<!-- 　　ギリシャ文字補完(J)&br; -->
+<!-- 　　タイプセット(T)&br; -->
+<!-- 　　\end{???}補完(E)&br; -->
+<!-- 　　対応するものへの移動(G)&br; -->
+<!-- 　　コメント操作(C)&br; -->
+<!-- 　　補完(H)&br; -->
+<!-- 　　イメージ補完(;)&br; -->
+<!-- 　　お手伝いさん(U)&br; -->
+<!-- 　　ispellでスペルチェック(P)&br; -->
+<!-- 　　BibTeXデータベース検索([)&br; -->
+<!-- 　　マニュアルを開く(I)&br; -->
+<!-- &color(Black,#DAEAFF){　　プログラム設定(O)　　　　　　　　　　　};&br; -->
+<!-- - --  -->
+<!-- 　　TeX→DVIの設定&br; -->
+<!-- 　　DVI→PDFの設定&br; -->
+<!-- &color(Black,#DAEAFF){　　DVI→PSの設定　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　PS→PDFの設定&br; -->
+<!-- 　　dvioutの設定&br; -->
+<!-- 　　Adobe Readerの設定&br; -->
+<!-- 　　SumatraPDFの設定&br; -->
+<!-- 　　GSViewの設定&br; -->
+<!-- 　　各種プログラム及びメニューの設定...&br; -->
+<!-- 　　TeXに関する全般的な設定&br; -->
+<!-- 　　環境&br; -->
+<!-- 　　初期化他&br; -->
+<!-- - --  -->
+<!-- &color(Black,#DAEAFF){　　使うプログラム　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　紙サイズ&br; -->
+<!-- 　　オプション... : 現在は (無し) -->
+<!-- - --  -->
+<!-- 　　★ dvipsk&br; -->
+<!-- &color(Black,#DAEAFF){　　dvips　　　　　　　　　};&br; -->
+<!-- 　　その他...&br; -->
+<!-- - --  -->
+<!-- 　　使うプログラム&br; -->
+<!-- 　　紙サイズ&br; -->
+<!-- &color(Black,#DAEAFF){　　オプション... : 現在は-Ppdf　　　　　　　　　　}; -->
+<!-- - --  -->
+<!--  -->
 <!-- ***Adobe Reader X の DDE に対応させる [#g620bb9d] -->
 <!-- 祝鳥 0.85r1 は Adobe Reader X で DDE を使用して PDF ファイルを表示する際に -->
 <!--  -->
@@ -242,146 +229,117 @@ pukiwiki: "秀丸エディタ"
 
 祝鳥は SumatraPDF の forward and inverse search にも対応しているので Adobe Reader の代わりに SumatraPDF を使うほうがおすすめです．
 
-SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は (祝鳥をインストールしたフォルダ)\fortex\sub\package\sumatra\preview.mac を修正します．
+<!-- SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は (祝鳥をインストールしたフォルダ)\fortex\sub\package\sumatra\preview.mac を修正します． -->
+<!--  -->
+<!-- 修正前 -->
+<!--  -->
+<!-- ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + basename + "\"," + str(lineno) + "," + str(column) + ")]"; -->
+<!--  -->
+<!-- 修正後 -->
+<!--  -->
+<!-- ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(lineno) + "," + str(column) + ")]"; -->
+<!--  -->
+<!-- - --  -->
+<!-- 　　begin型(B)&br; -->
+<!-- 　　section型(S)&br; -->
+<!-- 　　large型(L)&br; -->
+<!-- 　　maketitle型(M)&br; -->
+<!-- 　　accent型(A)&br; -->
+<!-- 　　ギリシャ文字補完(J)&br; -->
+<!-- 　　タイプセット(T)&br; -->
+<!-- 　　\end{???}補完(E)&br; -->
+<!-- 　　対応するものへの移動(G)&br; -->
+<!-- 　　コメント操作(C)&br; -->
+<!-- 　　補完(H)&br; -->
+<!-- 　　イメージ補完(;)&br; -->
+<!-- 　　お手伝いさん(U)&br; -->
+<!-- 　　ispellでスペルチェック(P)&br; -->
+<!-- 　　BibTeXデータベース検索([)&br; -->
+<!-- 　　マニュアルを開く(I)&br; -->
+<!-- &color(Black,#DAEAFF){　　プログラム設定(O)　　　　　　　　　　　};&br; -->
+<!-- - --  -->
+<!-- 　　TeX→DVIの設定&br; -->
+<!-- 　　DVI→PDFの設定&br; -->
+<!-- 　　DVI→PSの設定&br; -->
+<!-- 　　PS→PDFの設定&br; -->
+<!-- 　　dvioutの設定&br; -->
+<!-- 　　Adobe Readerの設定&br; -->
+<!-- 　　SumatraPDFの設定&br; -->
+<!-- 　　GSViewの設定&br; -->
+<!-- &color(Black,#DAEAFF){　　各種プログラム及びメニューの設定...　　　　　　　　};&br; -->
+<!-- 　　TeXに関する全般的な設定&br; -->
+<!-- 　　環境&br; -->
+<!-- 　　初期化他&br; -->
+<!-- - --  -->
+<!-- &color(Black,#8080FF){%%%　&color(White){''メニューの設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){%%%[ 　''&color(White){✕};''　 ]%%%}; %%%};&br; -->
+<!-- &br; -->
+<!-- 　　タイトル　　　PDFに変換して表示&br; -->
+<!-- ...&br; -->
+<!-- 　　プレビュー&br; -->
+<!-- 　　SumatraPDF&br; -->
+<!-- - --  -->
+<!-- &color(Black,#DAEAFF){　　TeX→DVIの設定　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　DVI→PDFの設定&br; -->
+<!-- 　　DVI→PSの設定&br; -->
+<!-- 　　PS→PDFの設定&br; -->
+<!-- 　　dvioutの設定&br; -->
+<!-- 　　Adobe Readerの設定&br; -->
+<!-- 　　SumatraPDFの設定&br; -->
+<!-- 　　GSViewの設定&br; -->
+<!-- 　　各種プログラム及びメニューの設定...&br; -->
+<!-- 　　TeXに関する全般的な設定&br; -->
+<!-- 　　環境&br; -->
+<!-- 　　初期化他&br; -->
+<!-- - --  -->
+<!-- 　　動作&br; -->
+<!-- 　　フォーマットファイルの指定&br; -->
+<!-- 　　追加するオプション...：現在は (無し)&br; -->
+<!-- 　　-jobnameでファイル名を指定&br; -->
+<!-- 　　漢字コードの指定&br; -->
+<!-- &color(Black,#DAEAFF){　　ソースとの同期　　　　　　　　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　複数コンパイルの推定&br; -->
+<!-- 　　コンパイルの最大繰り返し数...：現在は10回&br; -->
+<!-- 　　BibTeXの設定&br; -->
+<!-- 　　MakeIndexの設定&br; -->
+<!-- - --  -->
+<!-- 　　★ 使わない&br; -->
+<!-- 　　常にsource specialsを使う&br; -->
+<!-- 　　draftオプション指定時のみsource specialsを使う&br; -->
+<!-- &color(Black,#DAEAFF){　　常にSyncTeXを使う　　　　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　draftオプション指定時のみSyncTeXを使う&br; -->
+<!-- - --  -->
+<!-- 　　TeX→DVIの設定&br; -->
+<!-- 　　DVI→PDFの設定&br; -->
+<!-- 　　DVI→PSの設定&br; -->
+<!-- 　　PS→PDFの設定&br; -->
+<!-- 　　dvioutの設定&br; -->
+<!-- 　　Adobe Readerの設定&br; -->
+<!-- &color(Black,#DAEAFF){　　SumatraPDFの設定　　　　　　　　　　　　　　　};&br; -->
+<!-- 　　GSViewの設定&br; -->
+<!-- 　　各種プログラム及びメニューの設定...&br; -->
+<!-- 　　TeXに関する全般的な設定&br; -->
+<!-- 　　環境&br; -->
+<!-- 　　初期化他&br; -->
+<!-- - --  -->
+<!-- 　　SumatraPDFのパス...：現在はC:\Program Files\SumatraPDF\SumatraPDF.exe&br; -->
+<!-- 　　操作タイプ&br; -->
+<!-- 　　ウィンドウサイズ&br; -->
+<!-- &color(Black,#DAEAFF){　　SyncTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　};&br; -->
+<!-- - --  -->
+<!-- 　　★ 使用しない&br; -->
+<!-- 　　利用する&br; -->
+<!-- &color(Black,#DAEAFF){　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　};&br; -->
+<!-- - --  -->
 
-修正前
+#### 祝鳥 0.85r1 で Adobe Reader X の場合に「Adobe系とのDDE接続に失敗」 と表示される → 祝鳥 0.86 以降にアップデート {#cfeabbcb}
 
-```
-ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + basename + "\"," + str(lineno) + "," + str(column) + ")]";
-```
-
-修正後
-
-```
-ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(lineno) + "," + str(column) + ")]";
-```
-
-***
-
-　　begin型(B)<br>
-　　section型(S)<br>
-　　large型(L)<br>
-　　maketitle型(M)<br>
-　　accent型(A)<br>
-　　ギリシャ文字補完(J)<br>
-　　タイプセット(T)<br>
-　　\end{???}補完(E)<br>
-　　対応するものへの移動(G)<br>
-　　コメント操作(C)<br>
-　　補完(H)<br>
-　　イメージ補完(;)<br>
-　　お手伝いさん(U)<br>
-　　ispellでスペルチェック(P)<br>
-　　BibTeXデータベース検索(\[)<br>
-　　マニュアルを開く(I)<br>
-<span style="color:Black;background-color:#DAEAFF;">　　プログラム設定(O)　　　　　　　　　　　</span><br>
-
-***
-
-　　TeX→DVIの設定<br>
-　　DVI→PDFの設定<br>
-　　DVI→PSの設定<br>
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-　　Adobe Readerの設定<br>
-　　SumatraPDFの設定<br>
-　　GSViewの設定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　各種プログラム及びメニューの設定...　　　　　　　　</span><br>
-
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>メニューの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　タイトル　　　PDFに変換して表示<br>
-...<br>
-　　プレビュー<br>
-　　SumatraPDF<br>
-
-***
-
-<span style="color:Black;background-color:#DAEAFF;">　　TeX→DVIの設定　　　　　　　　　　　　　　　　　　</span><br>
-
-　　DVI→PDFの設定<br>
-　　DVI→PSの設定<br>
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-　　Adobe Readerの設定<br>
-　　SumatraPDFの設定<br>
-　　GSViewの設定<br>
-　　各種プログラム及びメニューの設定...<br>
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-　　動作<br>
-　　フォーマットファイルの指定<br>
-　　追加するオプション...：現在は (無し)<br>
-　　-jobnameでファイル名を指定<br>
-　　漢字コードの指定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　ソースとの同期　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-　　複数コンパイルの推定<br>
-　　コンパイルの最大繰り返し数...：現在は10回<br>
-　　BibTeXの設定<br>
-　　MakeIndexの設定<br>
-
-***
-
-　　★ 使わない<br>
-　　常にsource specialsを使う<br>
-　　draftオプション指定時のみsource specialsを使う<br>
-<span style="color:Black;background-color:#DAEAFF;">　　常にSyncTeXを使う　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-　　draftオプション指定時のみSyncTeXを使う<br>
-
-***
-
-　　TeX→DVIの設定<br>
-　　DVI→PDFの設定<br>
-　　DVI→PSの設定<br>
-　　PS→PDFの設定<br>
-　　dvioutの設定<br>
-　　Adobe Readerの設定<br>
-<span style="color:Black;background-color:#DAEAFF;">　　SumatraPDFの設定　　　　　　　　　　　　　　　</span><br>
-
-　　GSViewの設定<br>
-　　各種プログラム及びメニューの設定...<br>
-　　TeXに関する全般的な設定<br>
-　　環境<br>
-　　初期化他<br>
-
-***
-
-　　SumatraPDFのパス...：現在はC:\Program Files\SumatraPDF\SumatraPDF.exe<br>
-　　操作タイプ<br>
-　　ウィンドウサイズ<br>
-<span style="color:Black;background-color:#DAEAFF;">　　SyncTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
-　　★ 使用しない<br>
-　　利用する<br>
-<span style="color:Black;background-color:#DAEAFF;">　　利用する　(プレビュー時に現在位置にジャンプ．DDE利用．)　　　　　　　　　　　</span><br>
-
-***
-
-#### 祝鳥 0.85r1 で Adobe Reader X の場合に「Adobe系とのDDE接続に失敗」 と表示される → 祝鳥 0.86 にアップデート {#cfeabbcb}
-
-祝鳥 0.86 にアップデートしてください．<br>
+祝鳥 0.86 以降にアップデートしてください．<br>
 
 - [「Adobe系とのDDE接続に失敗」が解消できません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=758)
 
-#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → 祝鳥 0.86 にアップデート {#b09ef8e6}
+#### 祝鳥 0.85r1 で「マクロ」→「TeXコンパイル」→「PDFに変換して表示」 で秀丸エディタの動作が停止 → 祝鳥 0.86 以降にアップデート {#b09ef8e6}
 
-祝鳥 0.86 にアップデートしてください．<br>
+祝鳥 0.86 以降にアップデートしてください．<br>
 
 - [アップデートしてみたよ！](http://d.hatena.ne.jp/abenori/20111125)
 - [祝鳥が落ちるとか言うのはどうもFILE_WHICHで正解だった模様．とりあえず直したmacrodll.dllをおいておきますが，他に色々と手を入れているので，その分のチェックが甘い可能性もあります．近いうちに祝鳥がアップデートできればいいなぁ，と．](http://d.hatena.ne.jp/abenori/20111124)
@@ -392,9 +350,9 @@ ddeexecute "[ForwardSearch(\"" + $$1 + "\",\"" + "./" + basename + "\"," + str(l
 
 <!-- 解決法 → 「LATEXはじめの一歩」という本に付属していたCDの中に入っていた「秀丸」と「祝鳥」を、CD経由でインストールしたところ、正常に動作しました。その後、インターネット経由で、「秀丸」のバージョンアップを行いました。 -->
 
-#### 祝鳥 0.85r1 でエラー (保護違反) → 祝鳥 0.86 にアップデート {#m28c9ec8}
+#### 祝鳥 0.85r1 でエラー (保護違反) → 祝鳥 0.86 以降にアップデート {#m28c9ec8}
 
-祝鳥 0.86 にアップデートしてください．<br>
+祝鳥 0.86 以降にアップデートしてください．<br>
 
 祝鳥 0.85r1 で秀丸エディタ Version 8.10 を起動した直後に，メニューの \[マクロ(M)\]-\[TeX補完マクロ(3)\] をクリックしたところ，以下のようなメッセージが表示されました．
 
@@ -470,6 +428,17 @@ gswin32c.exe -sPAPERSIZE=a4 -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOut
 
 のように ps2pdf.bat ではなく gswin32c.exe を実行すると PDF ファイルが作成できるようです．
 
+### TeXmac, Gui-Shell {#ld68541f}
+
+- [TeXmac, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
+    Gui-Shell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
+    (乙部 厳己 さん @ 信州大)
+
+- [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
+- [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
+- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
+    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
+
 ### RaTeX0e {#s1e27527}
 
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
@@ -518,17 +487,6 @@ gswin32c.exe -sPAPERSIZE=a4 -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOut
 
 - [LaTeX コンパイル支援マクロ](http://www.seman.cs.uec.ac.jp/~inuzuka/hidemac.html)
     (犬塚 敦史 さん)
-
-### TeXMAC, Gui-Shell (製品) {#ld68541f}
-
-- [TeXMAC, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
-    guishell 1.39.1 Win32版およびguishell 1.39.1 x64版, TeXmac 2.17（秀丸8以降・x64対応）
-    (乙部 厳己 さん @ 信州大)
-
-- [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
-- [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
-- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
-    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
 
 ### 飛鳥 (ひちょう) HiTeX {#y3147877}
 
