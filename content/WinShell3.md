@@ -465,9 +465,9 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 ### LaTeX {#j415cdd8}
 
-#### -jobname を使用する場合 {#g7ceca06}
+<!-- ***-jobname を使用する場合 [#g7ceca06] -->
 
-- 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
+- &#x2d;jobname を使用すると 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
 - exeファイル名を powershell.exe に設定します．
 - さらに，コマンドラインも -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s}" に変更します．
 
@@ -500,40 +500,35 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 ***
 
-#### -jobname を使用しない場合 {#x51ab74f}
-
-- 表.tex, 予定.tex といったファイル名の場合はうまく処理できません．
-- exeファイル名を platex.exe に設定します． (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\platex.exe)
-- さらに，コマンドラインも -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "%s.tex" に変更します．
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>LaTeX</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">LaTeX　　　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>platex.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "%s.tex"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F5 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
+<!-- ***-jobname を使用しない場合 [#x51ab74f] -->
+<!--  -->
+<!-- -表.tex, 予定.tex といったファイル名の場合はうまく処理できません． -->
+<!-- -exeファイル名を platex.exe に設定します． (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\platex.exe) -->
+<!-- -さらに，コマンドラインも -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "%s.tex" に変更します． -->
+<!--  -->
+<!-- - --  -->
+<!-- &color(Black,#ACDEFE){%%%　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){%%%[ 　''&color(White){✕};''　 ]%%%}; %%%};&br; -->
+<!-- 　&color(Black,#EEEEEE){%%%[ 一般　]%%%};''[ 主なTeXプログラムの設定 ]''&color(Black,#EEEEEE){%%%[ ユーザ指定プログラム ][ マクロ　][ フォント ][ 構文の強調表示 ][ ◀ ][ ▶ ]%%%};&br; -->
+<!-- &br; -->
+<!-- 　　プログラム名　　%%%LaTeX%%%&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(White,#1188FF){LaTeX　　　　　　　　　　　　　};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView&br; -->
+<!-- 　　exeファイル名 　%%%platex.exe%%%&br; -->
+<!-- 　　　　　　　　　　　　&color(Black,#EEEEEE){[　　　　参照(B)...　　　　]};　　&color(#888888,White){☑ DOS};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView&br; -->
+<!-- 　　コマンドライン 　%%%-no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode "%s.tex"%%%&br; -->
+<!-- 　　　　　　　　　　　　　サフィックスも追加してください！&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ LaTeXを先に実行};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ PDFLaTeXを先に実行};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ DVIPSを先に実行};&br; -->
+<!-- 　　実行キー:　　　　引数:&br; -->
+<!-- 　　F5 　　　　　　　　%s<.tex><.dvi><.ps><.pdf>&br; -->
+<!-- - --  -->
 
 ### BibTeX {#x2fc6cd6}
 
@@ -713,7 +708,7 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 ### PDFLaTeX {#f08ac8c2}
 
-#### platex + dvipdfmx の場合 {#t07b93fd}
+<!-- ***platex + dvipdfmx の場合 [#t07b93fd] -->
 
 - exeファイル名を powershell.exe に変更します．
 - さらに，コマンドラインも -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvipdfmx $s}}" に変更します．
@@ -747,39 +742,34 @@ WinShell 3.3.2.3 よりも前のバージョンでは，cmd.exe から Adobe Rea
 
 ***
 
-#### dvipdfmx の場合 {#jcbca9e9}
-
-- exeファイル名を dvipdfmx.exe に変更します．(うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\dvipdfmx.exe)
-- さらに，コマンドラインも "%s.dvi" に変更します．
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFLaTeX</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>dvipdfmx.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFLaTeX　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>"%s.dvi"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F10　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
+<!-- ***dvipdfmx の場合 [#jcbca9e9] -->
+<!--  -->
+<!-- -exeファイル名を dvipdfmx.exe に変更します．(うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\dvipdfmx.exe) -->
+<!-- -さらに，コマンドラインも "%s.dvi" に変更します． -->
+<!--  -->
+<!-- - --  -->
+<!-- &color(Black,#ACDEFE){%%%　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){%%%[ 　''&color(White){✕};''　 ]%%%}; %%%};&br; -->
+<!-- 　&color(Black,#EEEEEE){%%%[ 一般　]%%%};''[ 主なTeXプログラムの設定 ]''&color(Black,#EEEEEE){%%%[ ユーザ指定プログラム ][ マクロ　][ フォント ][ 構文の強調表示 ][ ◀ ][ ▶ ]%%%};&br; -->
+<!-- &br; -->
+<!-- 　　プログラム名　　%%%PDFLaTeX%%%&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView&br; -->
+<!-- 　　exeファイル名 　%%%dvipdfmx.exe%%%&br; -->
+<!-- 　　　　　　　　　　　　&color(Black,#EEEEEE){[　　　　参照(B)...　　　　]};　　&color(#888888,White){☑ DOS};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(White,#1188FF){PDFLaTeX　　　　　　　　　　　};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView&br; -->
+<!-- 　　コマンドライン 　%%%"%s.dvi"%%%&br; -->
+<!-- 　　　　　　　　　　　　　サフィックスも追加してください！&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ LaTeXを先に実行};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ PDFLaTeXを先に実行};&br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐ DVIPSを先に実行};&br; -->
+<!-- 　　実行キー:　　　　引数:&br; -->
+<!-- 　　F10　　　　　　　　%s<.tex><.dvi><.ps><.pdf>&br; -->
+<!-- - --  -->
 
 ### PDFView {#gffc0a36}
 
