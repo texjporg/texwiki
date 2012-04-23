@@ -226,6 +226,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2010年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/)
 - [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [TeXの再インストール](http://iga3.sblo.jp/article/54514290.html)
