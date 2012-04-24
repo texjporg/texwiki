@@ -102,7 +102,10 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ## 不具合 {#h94d310c}
 
-### Ubuntu 11.10 や GNOME 3 で GVim を起動すると入力するまでに時間がかかる → 回避策：gvim -f で起動 → [Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html) {#i39ca67b}
+### Ubuntu 11.10 や GNOME 3 で GVim を起動すると入力するまでに時間がかかる → [Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html) {#i39ca67b}
+
+回避策：gvim -f で起動<br>
+[Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
 
 - [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
     - [version 7.3.344](http://code.google.com/p/vim/source/detail?r=v7-3-344)
