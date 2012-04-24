@@ -22,7 +22,7 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX-ja {#nec94db0}
 
-LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))、TeX Live 2011 で利用可能です。
+LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))、W32TeX, TeX Live 2011 で利用可能です。
 
 - [LuaTeX-ja（仮称）プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
@@ -35,6 +35,8 @@ LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcemen
 - [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
 
 ### インストール {#p4234337}
+
+#### [W32TeX](/W32TeX/) {#a565ecc6}
 
 2012/04/20 以降の W32TeX には luatexja.tar.xz が含まれています．<br>
 W32TeX をフルインストールすると<br>
@@ -53,12 +55,25 @@ C:.
 
 ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を実行してください．
 
+#### [TeX Live](</TeX Live/>) {#v2c7b507}
+
+tlmgr でパッケージをアップデートします．
+
+```
+$ sudo `which tlmgr` update --self --all
+```
+
+LuaTeX-ja は TeX Live のリポジトリに含まれています．
+
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+
 ### 不具合 {#m2b9f4bc}
 
-#### フォントを埋め込まない場合に全角チルダ(～)(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ(〜)(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
+#### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
 
-LuaTeX-ja でフォントを埋め込まない場合に全角チルダ(～)(U+FF5E) を処理すると表示されないようです．<br>
-これは全角チルダの代わりに波ダッシュ(〜)(U+301C)を使うことで回避できます．<br>
+LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
+これは全角チルダの代わりに波ダッシュ「〜」(U+301C)を使うことで回避できます．<br>
 \usepackage{luatexja-fontspec} でフォントを指定して埋め込んでも表示できます．<br>
 
 - [Wikipedia:表記ガイド#波ダッシュ](http://ja.wikipedia.org/wiki/Wikipedia:%E8%A1%A8%E8%A8%98%E3%82%AC%E3%82%A4%E3%83%89#.E6.B3.A2.E3.83.80.E3.83.83.E3.82.B7.E3.83.A5) によると
@@ -132,6 +147,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
     - [biblatex パッケージを使ってみる](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/biblatex/)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
+- [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
 - [Ubuntu11.10: LuaTeX-jaをインストールしました！](http://blog.livedoor.jp/ti5942/archives/6612853.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
 - [Luatexを使ってMoleCoding](http://molecoding.cocolog-nifty.com/blog/2011/10/luatexmolecodin.html)
