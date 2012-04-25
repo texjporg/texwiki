@@ -1103,6 +1103,45 @@ Close document before running (La)TeX<br>
 
 ***
 
+#### Chrome PDF Viewer {#fd20d9e0}
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Windows\System32\cmd.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>/c %LOCALAPPDATA%\Google\Chrome\Application\chrome.exe --new-window "%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>/c %LOCALAPPDATA%\Google\Chrome\Application\chrome.exe --new-window "%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+***
+
 #### [Adobe Reader](</Adobe Reader/>) X {#c94760c4}
 
 Adobe Reader X の場合 Server は acroviewR10 に設定します．<br>
