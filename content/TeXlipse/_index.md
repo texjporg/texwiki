@@ -1556,6 +1556,45 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 の優先度を上から二番目にします．
 
+#### Chrome PDF Viewer {#e47a5b91}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Chrome PDF Viewer</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Windows\System32\cmd.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>/c &#x25;LOCALAPPDATA&#x25;\Google\Chrome\Application\chrome.exe --new-window "&#x25;fullfile"</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+編集後，
+
+> <span style="color:White;background-color:#1188FF;">　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)　</span><br>
+
+の優先度を上から三番目にします．
+
 #### [Adobe Reader](</Adobe Reader/>) {#qdfce81e}
 
 ***
@@ -1620,7 +1659,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 > <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe)　</span><br>
 
-の優先度を上から三番目にします．
+の優先度を上から四番目にします．
 
 ### PS ファイル ビューアー {#d5afa7cc}
 
@@ -1661,7 +1700,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 > <span style="color:White;background-color:#1188FF;">　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
 
-の優先度を上から四番目にします．
+の優先度を上から五番目にします．
 
 #### GSview {#ra380cc3}
 
@@ -1700,7 +1739,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 > <span style="color:White;background-color:#1188FF;">　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)　</span><br>
 
-の優先度を上から五番目にします．
+の優先度を上から六番目にします．
 
 ### DVI ファイル ビューアー {#y075cb2d}
 
@@ -1741,7 +1780,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 > <span style="color:White;background-color:#1188FF;">　dviout (C:\w32tex\dviout\dviout.exe)　</span><br>
 
-の優先度を上から六番目にします．
+の優先度を上から七番目にします．
 
 ### 編集後 {#y59ef935}
 
@@ -1759,6 +1798,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　ビューアー構成 (優先度降順)：<br>
 　TeXworks (C:\w32tex\share\texworks\TeXworks.exe)<br>
 　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
+　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe)<br>
 　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)<br>
