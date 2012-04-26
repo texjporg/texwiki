@@ -52,8 +52,10 @@ pukiwiki: "秀丸エディタ"
 
 #### リリース情報 {#d9050efd}
 
-2012-04-23 祝鳥 (開発版 20120423)<br>
+2012-04-25 祝鳥 (開発版 20120425)<br>
 2011-11-28 64bit版macrodll.dll Ver.0.86<br>
+
+祝鳥 (開発版 20120425) で Adobe Acrobat X の DDE に対応しました．<br>
 祝鳥 0.86 で Adobe Reader X の DDE に対応しました．<br>
 
 <!-- ***DVI→PSの設定 [#e5e9bbcd] -->
@@ -153,66 +155,6 @@ pukiwiki: "秀丸エディタ"
 <!-- 　　★ DDE&br; -->
 <!-- 　　OLE (Adobe Acrobatのみ)&br; -->
 <!-- - --  -->
-<!--  -->
-<!-- Adobe Reader X では ddeinitiate に指定するアプリケーション名が "acroview" から "acroviewR10" に変更になりました． -->
-<!--  -->
-<!-- (祝鳥をインストールしたフォルダ)\fortex\sub\package\adobe\preview.mac の DDEOpen: と DDEClose: の ddeinitiate "acroview","control"; を ddeinitiate "acroviewR10","control"; に変更して DDEOpen: の ddeinitiate の前に sleep 600; を追加すると，Adobe系とのDDE接続に失敗．のエラーメッセージが表示されずに Adobe Reader X でプレビューできるようになります (エラーメッセージが表示される場合は sleep の値を大きくしてみて下さい)． -->
-<!--  -->
-<!-- DDEOpen: -->
-<!--         run "\"" + $path + "\""; -->
-<!--         if(!result){ -->
-<!--                 message $path + "\nの実行に失敗．"; -->
-<!--                 return 1; -->
-<!--         } -->
-<!--         sleep 600; -->
-<!--         ddeinitiate "acroviewR10","Control"; -->
-<!--         if(!result){ -->
-<!--                 message "Adobe系とのDDE接続に失敗．"; -->
-<!--                 return 2; -->
-<!--         } -->
-<!-- ... -->
-<!--  -->
-<!-- DDEClose: -->
-<!--         $$file = $Parent + ".pdf"; -->
-<!--         if(existfile($$file)){ -->
-<!--                 ddeinitiate "acroviewR10","control"; -->
-<!-- ... -->
-<!--  -->
-<!-- sleep を使いたくない場合は DDE で開くのはあきらめて Init: のところで -->
-<!--  -->
-<!-- Init: -->
-<!-- ... -->
-<!--         if(#optype == 0){ -->
-<!--                 if(#close)call DDEClose; -->
-<!--                 else call DDEOpen; -->
-<!-- ... -->
-<!--  -->
-<!-- と記述されているところを -->
-<!--  -->
-<!-- Init: -->
-<!-- ... -->
-<!--         if(#optype == 0){ -->
-<!--                 if(#close)call DDEClose; -->
-<!--                 else call DirectOpen; -->
-<!-- ... -->
-<!--  -->
-<!-- と変更して，開くときはシェルから直接起動して，閉じるときは DDE 通信をするという手もあります． -->
-<!--  -->
-<!-- Adobe Reader X には保護モード ([編集(E)]-[環境設定(N)...]-[一般]-[起動時に保護モードを有効にする(M)] でオン・オフが可能) があります． -->
-<!--  -->
-<!-- 上記の方法で開く場合，保護モードがオフとオンの状態で，挙動が異なります (コンパイルしてファイルを表示する際にウィンドウがアクティブに表示される or されない)． -->
-<!--  -->
-<!-- 保護モードがオンの場合にファイルを開いたときにアクティブなウィンドウにするには以下のように閉じるときにいったん終了させるという方法があります． -->
-<!--  -->
-<!-- DDEClose: -->
-<!--         $$file = $Parent + ".pdf"; -->
-<!--         if(existfile($$file)){ -->
-<!--                 ddeinitiate "acroviewR10","control"; -->
-<!--                 if(result){ -->
-<!--                         ddeexecute "[DocOpen(\"" + $$file + "\")]"; -->
-<!--                         ddeexecute "[DocClose(\"" + $$file + "\")]"; -->
-<!--                         ddeexecute "[AppExit()]"; -->
-<!-- ... -->
 <!--  -->
 
 #### SumatraPDF との連携 (forward and inverse search) {#q78f9338}
