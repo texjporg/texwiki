@@ -141,7 +141,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 
 ### babel {#v6636cbc}
 
-多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 babel を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
+多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](http://www.ctan.org/tex-archive/macros/latex/required/babel) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
 
 #### japanese {#m6094362}
 
@@ -152,7 +152,7 @@ japanese パッケージで提供される japanese.ldf をそのまま使うと
 - \和暦 → \Wareki
 - ファイル中文字列 "japanese" → japanesedash（例。もとの japanese との重複防止のため）
 
-のように置換したものを、たとえば japanededash.ldf のような名前で保存・配置して、
+のように置換したものを、たとえば japanesedash.ldf のような名前で保存・配置して、
 
 ```
   \usepackage[polutonikogreek,english,japanesedash]{babel}
