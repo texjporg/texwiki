@@ -139,12 +139,34 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - CR (\000\015)
 - CRLF (\000\015\000\012)
 
+### babel {#v6636cbc}
+
+多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 babel を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
+
+#### japanese {#m6094362}
+
+japanese パッケージで提供される japanese.ldf をそのまま使うとエラーが出ます。これは、japanese.ldf 中でプリミティブに日本語文字を使用しているためです。該当プリミティブを含めて、
+
+- \if西暦 → \ifSeireki
+- \西暦 → \Seireki
+- \和暦 → \Wareki
+- ファイル中文字列 "japanese" → japanesedash（例。もとの japanese との重複防止のため）
+
+のように置換したものを、たとえば japanededash.ldf のような名前で保存・配置して、
+
+```
+  \usepackage[polutonikogreek,english,japanesedash]{babel}
+```
+
+のように呼び出すと、platex 等で japanese を呼び出したのと同じように日本語環境を使うことができます。
+
 ### 関連リンク {#cdd9fc14}
 
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
 - [pdffill, luajalayout, luafontcomp, luamirageat etc.](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/)
     - [biblatex パッケージを使ってみる](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/biblatex/)
+- [「LuaTeX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=LuaTeX)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
