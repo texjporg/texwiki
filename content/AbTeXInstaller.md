@@ -226,12 +226,12 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
-- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2010年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/)
-- [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
-- [TeXの再インストール](http://iga3.sblo.jp/article/54514290.html)
-- [「TeXインストーラ3」でのインストール手順](http://tasusuweb.appspot.com/tex/install_latex.html)
-- [Tex入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
-- [そうだ， TeX を入れなきゃ](http://www.baldanders.info/spiegel/log2/000547.shtml)
-- [TeXのインストール(Windows)](http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXwin20111018/)
+- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2010年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法](http://did2memo.net/2012/04/27/tex-uninstall/)
+- [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
+    <!-- -[[TeXの再インストール:http://iga3.sblo.jp/article/54514290.html]] -->
+    <!-- -[[「TeXインストーラ3」でのインストール手順:http://tasusuweb.appspot.com/tex/install_latex.html]] -->
+    <!-- -[[Tex入門: TeXの出力環境を作成する。(その1、Windows版):http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html]] -->
+    <!-- -[[そうだ， TeX を入れなきゃ:http://www.baldanders.info/spiegel/log2/000547.shtml]] -->
+    <!-- -[[TeXのインストール(Windows):http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXwin20111018/]] -->
     <!-- -[[WindowsにおけるTeX環境の構築:http://www.mclab.ics.ritsumei.ac.jp/~shibata/development.html#tex]] -->
