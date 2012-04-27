@@ -143,9 +143,11 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 
 多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](http://www.ctan.org/tex-archive/macros/latex/required/babel) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
 
-#### japanese {#m6094362}
+- [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830) を参照．
 
-japanese パッケージで提供される japanese.ldf をそのまま使うとエラーが出ます。これは、japanese.ldf 中でプリミティブに日本語文字を使用しているためです。該当プリミティブを含めて、
+#### [japanese](</TeX Live/#z23227fb>) {#m6094362}
+
+japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese/japanese.ldf?view=markup) をそのまま使うとエラーが出ます。これは、japanese.ldf 中でプリミティブに日本語文字を使用しているためです。該当プリミティブを含めて、
 
 - \if西暦 → \ifSeireki
 - \西暦 → \Seireki
