@@ -172,6 +172,7 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
+- [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [Ubuntu11.10: LuaTeX-jaをインストールしました！](http://blog.livedoor.jp/ti5942/archives/6612853.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
 - [Luatexを使ってMoleCoding](http://molecoding.cocolog-nifty.com/blog/2011/10/luatexmolecodin.html)
