@@ -208,9 +208,9 @@ C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
 
 [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
-## xdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
+## pxdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
 
-[Vim-LaTeX](/Vim-LaTeX/)[#xdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
+[Vim-LaTeX](/Vim-LaTeX/)[#pxdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
 
 ## 使い方 {#j3d4339e}
 
