@@ -690,3 +690,4 @@ Live preview for TeXShop
 - [【TeXShopの設定】](http://www.math.meiji.ac.jp/~mk/diary/2011/09/#tex2html15)
 - [美文書５版のtexlive用のツールの設定とか](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
 - [LaTeX Page](http://new.math.uiuc.edu/math198/latex.html)
+- [ネ申](http://twitter.com/#!/h_okumura/status/196009146590572545)
