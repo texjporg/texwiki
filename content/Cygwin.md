@@ -46,7 +46,9 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 ### リリース情報 {#z608db6c}
 
+- \[[ANNOUNCEMENT\] Updated: texlive-collection-\*-20120312-2, texlive-20110705-2, libkpathsea{6,-devel}-20110705-2, libptexenc{1,-devel}-20110705-2](http://cygwin.com/ml/cygwin/2012-04/msg00696.html)
 - \[[ANNOUNCEMENT\] Updated: texlive-collection-\*-20120312-1](http://cygwin.com/ml/cygwin/2012-03/msg00391.html)
+- \[[ANNOUNCEMENT\] New: Three more texlive-collection-\*-20120202-1 packages](http://cygwin.com/ml/cygwin/2012-03/msg00149.html)
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
 
 ### インストール {#a8514c6c}
