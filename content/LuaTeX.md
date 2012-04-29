@@ -70,6 +70,8 @@ LuaTeX-ja は TeX Live のリポジトリに含まれています．
 
 ### 不具合 {#m2b9f4bc}
 
+[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
+
 #### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
 
 LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
@@ -143,7 +145,10 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 
 多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](http://www.ctan.org/tex-archive/macros/latex/required/babel) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
 
-- [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830) を参照．
+- [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830)
+- [polyglossia が LuaTeX に非対応な理由](http://twitter.com/#!/zr_tex8r/status/196604967115694080)
+
+を参照．
 
 #### [japanese](</TeX Live/#z23227fb>) {#m6094362}
 
