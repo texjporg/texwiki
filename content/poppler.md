@@ -21,7 +21,8 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用され
 
 ### リリース情報 {#ha3b28ab}
 
-2012-04-12 poppler 0.19.3 がリリースされました<br>
+2012-04-26 poppler 0.19.4<br>
+
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
 - [Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc](https://bugs.freedesktop.org/show_bug.cgi?id=48046)
@@ -117,9 +118,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.7.tar.gz
-$ tar zxvf cmake-2.8.7.tar.gz
-$ pushd cmake-2.8.7
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.8.tar.gz
+$ tar zxvf cmake-2.8.8.tar.gz
+$ pushd cmake-2.8.8
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -541,9 +542,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.19.3.tar.gz
-$ tar zxvf poppler-0.19.3.tar.gz
-$ pushd poppler-0.19.3
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.19.4.tar.gz
+$ tar zxvf poppler-0.19.4.tar.gz
+$ pushd poppler-0.19.4
 $ mkdir build
 $ pushd build
 ```
