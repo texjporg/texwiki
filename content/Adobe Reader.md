@@ -78,4 +78,12 @@ echo exit | pdfdde
 - [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
+- [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
+- [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
+- [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
+    - [Acrobat Interapplication Communication](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat10_SDK_HTMLHelp&file=Acro_Interapp_Commun_SectionPage.98.1.html)
+        <!-- -[[Acrobat and PDF Library API Reference:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/]] -->
+        <!-- - -[[AV_Layer:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/package-detail.html]] -->
+        <!-- - --[[AVDoc:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVDoc.html]] -->
+        <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
