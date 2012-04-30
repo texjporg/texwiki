@@ -120,6 +120,4 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [beamerでceo.styを活用したい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=357)
 - [XeLaTeX で Beamer クラスを使用する際の日本語フォントの指定について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=317)
 
-### TeX Q &amp; A {#n18c085c}
-
-- platexではTikZで矢印が出力されない ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
+<!-- **TeX Q & A [#n18c085c] -->
