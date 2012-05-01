@@ -63,6 +63,12 @@ tlmgr でパッケージをアップデートします．
 $ sudo `which tlmgr` update --self --all
 ```
 
+```
+...
+[???/???, ??:??/??:??] auto-install: luatexja [????k]
+...
+```
+
 LuaTeX-ja は TeX Live のリポジトリに含まれています．
 
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
