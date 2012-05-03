@@ -108,9 +108,9 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - [zlib](http://zlib.net/) をインストールします．
 
 ```
-$ curl -R -L -O http://zlib.net/zlib-1.2.6.tar.gz
-$ tar zxvf zlib-1.2.6.tar.gz
-$ pushd zlib-1.2.6
+$ curl -R -L -O http://zlib.net/zlib-1.2.7.tar.gz
+$ tar zxvf zlib-1.2.7.tar.gz
+$ pushd zlib-1.2.7
 $ make -f win32/Makefile.gcc BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib SHARED_MODE=1 install
 $ popd
 ```
