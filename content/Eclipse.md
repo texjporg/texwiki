@@ -34,7 +34,8 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 ### Windows, Linux, Solaris {#h067ff28}
 
-- [Java SE Downloads](http://www.oracle.com/technetwork/jp/java/javase/downloads/)
+- [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
+    - [ミラーサイト](http://www.oracle.com/technetwork/jp/java/javase/downloads/)
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
 
@@ -46,8 +47,14 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 #### Java for OS X {#y4154449}
 
-- [Java - OS X Lion 2012-001](http://support.apple.com/kb/DL1515?viewlocale=ja_JP)
-- [Java - Mac OS X 10.6 アップデート 7](http://support.apple.com/kb/DL1516?viewlocale=ja_JP)
+- [Java - OS X Lion 2012-003](http://support.apple.com/kb/DL1515?viewlocale=ja_JP)
+- [Java - Mac OS X 10.6 アップデート 8](http://support.apple.com/kb/DL1516?viewlocale=ja_JP)
+
+#### Oracle JRE &amp; JDK {#x644af68}
+
+- [Oracle Java 7u6 Mac OS X Port Developer Preview Release &mdash; Java.net](http://jdk7.java.net/macportpreview/)
+- [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
+    - [MacでOracle JDK 7 (Java 7) を試す](http://toggtc.hatenablog.com/entry/2012/04/28/112031)
 
 #### OpenJDK {#n03d5e54}
 
