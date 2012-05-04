@@ -102,6 +102,13 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ## 不具合 {#h94d310c}
 
+### Ubuntu 12.04 の gvim がまともに動かない {#fba97189}
+
+回避策：gvim -f で起動<br>
+
+- [Issue #193: Ubuntu 12.04 の gvim がまともに動かない · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/193)
+- [Bug #987707 “gvim in Precise can't connect to ibus and takes a l...” : Bugs : “vim” package : Ubuntu](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/987707)
+
 ### Ubuntu 11.10 や GNOME 3 で GVim を起動すると入力するまでに時間がかかる → [Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html) {#i39ca67b}
 
 回避策：gvim -f で起動<br>
