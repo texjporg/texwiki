@@ -266,6 +266,19 @@ zathura "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
+#### gv {#qda5d9a3}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+gv --watch "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
 #### Emacs {#b1a60c18}
 
 ***
@@ -275,6 +288,19 @@ zathura "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 emacs "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### acroread {#h5982543}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+acroread "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
@@ -292,7 +318,52 @@ pdfopen -viewer ar9-tab "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
-#### その他の外部ツールの設定 {#a704e342}
+#### pLaTeX (非推奨) {#b13823ac}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+platex -src-specials "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### upLaTeX (非推奨) {#pdc10784}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+uplatex -src-specials "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pxdvi (非推奨) {#vedc0f33}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pxdvi -nofork -watchfile 1 -editor "gedit "%f" +%l" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" -sourceposition $GEDIT_CURRENT_LINE_NUMBER:"$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+#### その他の外部ツールの設定例 {#a704e342}
 
 - [tips/Latex - PukiWiki](http://www-nh.scphys.kyoto-u.ac.jp/~asano/index.php?tips%2FLatex)
 - [gedit外部ツール](http://utisam.blogspot.jp/2011/07/gedit.html)
