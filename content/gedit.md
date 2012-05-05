@@ -207,6 +207,8 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
+#### [gedit外部ツール](http://utisam.blogspot.jp/2011/07/gedit.html) {#t8f05189}
+
 #### [Ubuntuのテキストエディタ（gedit）の「外部ツール」をTeX仕様に](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Ubuntu%A4%CE%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF%A1%CAgedit%A1%CB%A4%CE%A1%D6%B3%B0%C9%F4%A5%C4%A1%BC%A5%EB%A1%D7%A4%F2TeX%BB%C5%CD%CD%A4%CB) {#kd656c78}
 
 #### [geditをカスタマイズする。](http://jiy.blog.shinobi.jp/Entry/93/) {#c982327a}
