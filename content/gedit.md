@@ -41,6 +41,9 @@ gedit は Windows や Mac OS X でも動作します．<br>
 外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．<br>
 \[編集(E)\]-\[設定(E)\]-\[プラグイン\] の 外部ツールにチェックをいれます．<br>
 \[ツール(T)\]-\[外部ツールの管理...\] から外部ツールの設定ができます．<br>
+ツール(T): で \[＋\] をクリックするとツールが追加できます．<br>
+編集(E): の項目にシェルスクリプトを追加します．<br>
+適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
 
 #### pdfpLaTeX {#pcd18d0c}
@@ -56,6 +59,9 @@ dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 ```
 
 ***
+
+保存(S):
+: 編集中のドキュメント
 
 #### pdfpLaTeX2 {#g8ed96d6}
 
@@ -73,6 +79,9 @@ ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
 
 ***
 
+保存(S):
+: 編集中のドキュメント
+
 #### pdfupLaTeX {#x4f1ba2c}
 
 ***
@@ -86,6 +95,9 @@ dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 ```
 
 ***
+
+保存(S):
+: 編集中のドキュメント
 
 #### pdfupLaTeX2 {#k85e2282}
 
@@ -103,6 +115,9 @@ ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
 
 ***
 
+保存(S):
+: 編集中のドキュメント
+
 #### pdfLaTeX {#f6f3d125}
 
 ***
@@ -115,6 +130,9 @@ pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
+
+保存(S):
+: 編集中のドキュメント
 
 #### LuaLaTeX {#dacfdc34}
 
@@ -129,6 +147,9 @@ lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 
 ***
 
+保存(S):
+: 編集中のドキュメント
+
 #### XeLaTeX {#df8a1522}
 
 ***
@@ -141,6 +162,9 @@ xelatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
+
+保存(S):
+: 編集中のドキュメント
 
 #### pBibTeX {#h82edb4a}
 
@@ -155,6 +179,9 @@ pbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 
 ***
 
+保存(S):
+: 編集中のドキュメント
+
 #### upBibTeX {#if36eff6}
 
 ***
@@ -168,6 +195,9 @@ upbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 
 ***
 
+保存(S):
+: 編集中のドキュメント
+
 #### Mendex {#p50c6431}
 
 ***
@@ -180,6 +210,9 @@ mendex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 ```
 
 ***
+
+保存(S):
+: 編集中のドキュメント
 
 #### TeXworks {#b3f685e3}
 
@@ -207,13 +240,65 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
-#### [gedit外部ツール](http://utisam.blogspot.jp/2011/07/gedit.html) {#t8f05189}
+#### Okular {#gaa0fcf1}
 
-#### [Ubuntuのテキストエディタ（gedit）の「外部ツール」をTeX仕様に](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Ubuntu%A4%CE%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF%A1%CAgedit%A1%CB%A4%CE%A1%D6%B3%B0%C9%F4%A5%C4%A1%BC%A5%EB%A1%D7%A4%F2TeX%BB%C5%CD%CD%A4%CB) {#kd656c78}
+***
 
-#### [geditをカスタマイズする。](http://jiy.blog.shinobi.jp/Entry/93/) {#c982327a}
+```
+#!/bin/sh
 
-#### [gedit で tex の呼び出し](http://www.rcai.riken.jp/petadimension/textips.html#texgedit) {#z17ced31}
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_PATH""
+```
+
+***
+
+#### zathura {#db749118}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+zathura "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### Emacs {#b1a60c18}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+emacs "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### pdfopen {#mea51975}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pdfopen -viewer ar9-tab "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### その他の外部ツールの設定 {#a704e342}
+
+- [tips/Latex - PukiWiki](http://www-nh.scphys.kyoto-u.ac.jp/~asano/index.php?tips%2FLatex)
+- [gedit外部ツール](http://utisam.blogspot.jp/2011/07/gedit.html)
+- [Ubuntuのテキストエディタ（gedit）の「外部ツール」をTeX仕様に](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Ubuntu%A4%CE%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF%A1%CAgedit%A1%CB%A4%CE%A1%D6%B3%B0%C9%F4%A5%C4%A1%BC%A5%EB%A1%D7%A4%F2TeX%BB%C5%CD%CD%A4%CB)
+- [geditをカスタマイズする。](http://jiy.blog.shinobi.jp/Entry/93/)
+- [gedit で tex の呼び出し](http://www.rcai.riken.jp/petadimension/textips.html#texgedit)
 
 ## 関連リンク {#v8f6d6f7}
 
