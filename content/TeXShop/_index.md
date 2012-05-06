@@ -26,16 +26,13 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 - MacWiki:TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
+- [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 
 ### リリース情報 {#td599942}
 
-TeXShop (v 3.05 and v 3.06) Experimental Releases 9/5/2011<br>
-TeXShop (v 3.04) Release 8/10/2011<br>
+TeXShop (v 3.07) Release 5/6/2012<br>
 TeXShop (v 2.43) Release 6/29/2011<br>
 TeXShop (v 1.43) Release 1/22/2006<br>
-
-- \[[OS X TeX\] TS 3.06 crash on Lion](http://email.esm.psu.edu/pipermail/macosx-tex/2011-September/047607.html) (modified TeXShop binary)
-- [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
