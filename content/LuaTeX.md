@@ -94,6 +94,8 @@ LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(
 
 LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
 
+- [\mathcode と \omathcode と \Umathcode と](http://d.hatena.ne.jp/zrbabbler/20120509/1336584479)
+
 ### 注意点 {#vbed1356}
 
 W32TeX をお使いの方は，2011/10/23 以降の版に更新して下さい．これより前の版ではエラーが発生する可能性があります．<br>
