@@ -30,7 +30,7 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ### リリース情報 {#td599942}
 
-TeXShop (v 3.07) Release 5/6/2012<br>
+TeXShop (v 3.08) Release 5/9/2012<br>
 TeXShop (v 2.43) Release 6/29/2011<br>
 TeXShop (v 1.43) Release 1/22/2006<br>
 
