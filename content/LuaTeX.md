@@ -90,7 +90,9 @@ LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(
 
 とあるので全角チルダは使用しない方がいいかもしれません．
 
-#### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する {#o2818a24}
+#### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました {#o2818a24}
+
+[LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました
 
 LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
 
