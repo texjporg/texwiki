@@ -94,13 +94,32 @@ LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(
 
 [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました
 
-LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
+LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。
+
+```
+\documentclass{article} 
+\usepackage{bm} 
+\begin{document} 
+$\bm{a}$ 
+\end{document}
+```
+
+```
+! Invalid math code.
+\bm@command ->\mathchar 31458401
+
+l.4 $\bm{a}
+           $
+?
+```
+
+これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
 
 - [\mathcode と \omathcode と \Umathcode と](http://d.hatena.ne.jp/zrbabbler/20120509/1336584479)
 
 ### 注意点 {#vbed1356}
 
-W32TeX をお使いの方は，2011/10/23 以降の版に更新して下さい．これより前の版ではエラーが発生する可能性があります．<br>
+W32TeX をお使いの方は，2012/05/10 以降の版に更新して下さい．これより前の版ではエラーが発生する可能性があります．<br>
 
 現状では e-pTeX と比べると[コンパイルに時間がかかります](http://d.hatena.ne.jp/abenori/20110906)．<br>
 mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
