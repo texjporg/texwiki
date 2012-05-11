@@ -650,6 +650,7 @@ Hello, \TeX !
 - [Ubuntu日本語フォーラム / xelatex で日本語をかく仕方](https://forums.ubuntulinux.jp/viewtopic.php?id=9469)
 - [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
+- [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 
 ### コメント {#d0504266}
 
