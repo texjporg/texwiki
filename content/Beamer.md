@@ -15,7 +15,30 @@ pukiwiki: "Beamer"
 
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
+#### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
+
+- 2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
+- Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
+- [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
+    - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
+    - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
+        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
+
+- [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
+- [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
+
 ### 不具合 {#d9dfcf20}
+
+[Issues](https://bitbucket.org/rivanvx/beamer/issues?status=new&status=open) を参照．
+
+#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる {#pc9c1e18}
+
+- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow)
+- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html))
+
+#### Beamer 公式サイトのファイルを使用するとエラーが発生する {#i1ba3f44}
 
 - [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
 - [#36 Cannot resolve codes around RCS --- we need another software?](https://bitbucket.org/rivanvx/beamer/issue/36/cannot-resolve-codes-around-rcs-we-need)
@@ -37,20 +60,6 @@ l.12 \ProvidesClassRCS
 ```
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
-
-### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
-
-- 2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
-- Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
-- [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
-    - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
-    - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
-
-- [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
-- [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
 ### [TikZ and PGF](/TikZ/) {#o6f8726a}
 
