@@ -36,7 +36,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 #### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる {#pc9c1e18}
 
 - [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow)
-- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html))
+- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
 
 #### Beamer 公式サイトのファイルを使用するとエラーが発生する {#i1ba3f44}
 
