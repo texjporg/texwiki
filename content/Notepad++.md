@@ -81,9 +81,13 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
     - [Notepad++ Portable on SourceForge](http://sourceforge.net/projects/portableapps/files/Notepad%2B%2B%20Portable/Additional%20Versions/)
     - [Notepad++ Portable Source Code](http://sourceforge.net/projects/portableapps/files/Source%20%28Notepad%2B%2B%29/Additional%20Versions/)
 
-## エンコーディング (Encoding) {#d626279b}
+### 日本語言語ファイル {#i35c46e6}
 
-メニューの Encoding (日本語メニューでは“フォーマット(M)”) に ANSI エンコード (EUC-JP 対応版では“ANSI 形式で開く”) が選択されている場合，日本語を入力すると文字化けを起こします．<br>
+- [Japanese Language File for Notepad++ 6.1.2](https://gist.github.com/2664323)
+
+## エンコード (Encoding) {#d626279b}
+
+メニューの Encoding (日本語メニューでは“エンコード(M)” または “フォーマット(M)”) に “ANSI で開く” または “ANSI エンコード” (EUC-JP 対応版では“ANSI 形式で開く”) が選択されている場合，日本語を入力すると文字化けを起こします．<br>
 日本語が使えるエンコーディング (UTF-8, Shift-JIS など) を選択してください．<br>
 
 ## 環境設定 {#ka388f7d}
@@ -99,21 +103,21 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 <span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
 
 　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　　　　　　　　　印刷 - 色・余白　　　　　　　　　　　\]\[　　　　　　　　　　　自動保存/入力補完　　　　　　　　　　　\]\[ 　　　　　　　　　　その他　　　　　　　　　　 \]</ins></span><br>
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　全般設定　　　\]\[　　　エディット画面　　　\]</ins></span><strong>\[　　　　新規作成ドキュメント　　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　ファイルの関連付け　　　\]\[　　　　言語メニュー／タブ設定　　　　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　全般設定　　　\]\[　　　エディット画面　　　\]</ins></span><strong>\[　　　　新規作成ドキュメント　　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　ファイルの関連付け　　　\]\[ 　　　　言語メニュー/タブ設定　　　　 \]</ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　新規ドキュメント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　デフォルトディレクトリ(開く／保存)<br>
+　　　　　　　　　　　　　　　　　　　　新規ドキュメント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　デフォルトディレクトリ(開く/保存)<br>
 　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 <span style="color:#3333CC;">◎</span> 選択されているドキュメントのディレクトリ<br>
 　　　　　　　　<span style="color:#3333CC;">◎</span> WINDOWS　　　◯ MAC　　　　　　　 ◯ UNIX　　　　　　　　　　　◯ 前回使用したディレクトリ<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ◯ <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　<span style="color:#888888;background-color:#EEEEEE;">\[ ... \]</span><br>
 　　　　　　　　　　　　　　　　　　　　エンコード<br>
-　　　　　　　　◯ ANSI　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Recent Files History<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(バイト順マークなし)　　　　　　　　　　　　　　　　　　　　　☑ Don't check at launch time<br>
-　　　　　　　　　　☐Apply to opened ANSI files　　　　　　　　　　　　　　　　　　　　　　　　　Max. number of entries :　　<span style="color:#3333CC;"><ins>15</ins></span><br>
-　　　　　　　　◯ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Display<br>
-　　　　　　　　◯ UCS-2ビッグエンディアン　　　　　　　　　　　　　　　　　　　　　　　☐ In Submenu<br>
-　　　　　　　　◯ UCS-2リトルエンディアン　　　　　　　　　　　　　　　　　　　　　　　　◯ Only File Name<br>
-　　　　　　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> Full File Name Path<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ Customize Maximum Length:　　　<span style="color:White;"><ins>100</ins></span><br>
+　　　　　　　　◯ ANSI　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　開いたファイルの履歴<br>
+　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 起動時にチェックしない<br>
+　　　　　　　　　　☐開いているANSIファイルに適用　　　　　　　　　　　　　　　　　　　　　　　　　　エントリ数の上限: 　　<span style="color:#3333CC;"><ins>15</ins></span><br>
+　　　　　　　　◯ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　表示<br>
+　　　　　　　　◯ UCS-2 Big Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ サブメニュー化する<br>
+　　　　　　　　◯ UCS-2 Little Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ファイル名のみ<br>
+　　　　　　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 完全なファイルパス<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ 文字列の長さを指定:　　　<span style="color:White;"><ins>100</ins></span><br>
 　　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　▼\]</span><br>
 
 <br>
