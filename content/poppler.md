@@ -21,7 +21,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用され
 
 ### リリース情報 {#ha3b28ab}
 
-2012-04-26 poppler 0.19.4<br>
+2012-05-10 poppler 0.20.0<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -420,12 +420,12 @@ $ popd
 - [cairo](http://www.cairographics.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.0.tar.gz
-$ tar zxvf cairo-1.12.0.tar.gz
-$ pushd cairo-1.12.0
+$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.2.tar.xz
+$ tar Jxvf cairo-1.12.2.tar.xz
+$ pushd cairo-1.12.2
 $ ./configure --prefix=/mingw
 
-cairo (version 1.12.0 [release]) will be compiled with:
+cairo (version 1.12.2 [release]) will be compiled with:
 
 The following surface backends:
   Image:         yes (always builtin)
@@ -491,26 +491,19 @@ $ make
 ```
 
 ```
-cairo-missing.h:44:17: error: conflicting types for 'ssize_t'
+cairo-missing.h:45:17: error: conflicting types for 'ssize_t'
 ```
 
-[cairo-1.12.0/util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.0) の 44行目にある typedef SSIZE_T ssize_t; をコメントアウトします．<br>
+[cairo-1.12.2/util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.2) の 45行目にある
+
+```
+typedef SSIZE_T ssize_t;
+```
+
+をコメントアウトします．<br>
 
 ```
 //typedef SSIZE_T ssize_t;
-```
-
-```
-any2ppm.c:123:1: error: conflicting types for '_write'
-```
-
-[cairo-1.12.0/test/any2ppm.c](http://cgit.freedesktop.org/cairo/tree/test/any2ppm.c?id=1.12.0) の 123行目，207行目，218行目，224行目にある \_write を \__write に修正します．<br>
-
-```
-__write (int fd,
-len = __write (fd,
-len = __write (fd,
-len = __write (fd,
 ```
 
 ```
@@ -542,9 +535,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.19.4.tar.gz
-$ tar zxvf poppler-0.19.4.tar.gz
-$ pushd poppler-0.19.4
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.0.tar.gz
+$ tar zxvf poppler-0.20.0.tar.gz
+$ pushd poppler-0.20.0
 $ mkdir build
 $ pushd build
 ```
@@ -640,5 +633,6 @@ C:.
 
 ## 関連リンク {#m3ac74dd}
 
+- [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
