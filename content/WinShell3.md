@@ -163,7 +163,7 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[LaTeX\] でコンパイ
 
 ShiftJIS (Shift_JIS) では発生しませんでした．
 
-UTF-8 を使用したい方は，WinShell 3.1 (旧バージョン) をダウンロードするか [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/), [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/), Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/), jEdit, [Geany](/Geany/), [gedit](/gedit/), [xyzzy](/xyzzy/), [Emacs](/Emacs/), [Vim](/Vim/) などの UTF-8 で問題の発生しないエディタを使用してください．
+UTF-8 を使用したい方は，WinShell 3.1 (旧バージョン) をダウンロードするか [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/), [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/), EasyTeX, Mery, [サクラエディタ](</サクラエディタ/>), [Notepad++](/Notepad++/), jEdit, [Geany](/Geany/), [gedit](/gedit/), [xyzzy](/xyzzy/), [Emacs](/Emacs/), [Vim](/Vim/) などの UTF-8 で問題の発生しないエディタを使用してください．
 
 - [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
 - [LaTeX Install/WinShell - PukiWiki](http://igproj.com/zone3/index.php?LaTeX%20Install/WinShell) WinShell 3.1 (旧バージョン)
