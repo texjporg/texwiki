@@ -634,5 +634,6 @@ C:.
 ## 関連リンク {#m3ac74dd}
 
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
+- [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
