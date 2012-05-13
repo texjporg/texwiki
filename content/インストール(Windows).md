@@ -287,13 +287,13 @@ jEdit#マクロ<br>
 
 ### フリーウェア (無料) {#k0b8f900}
 
-#### [WinShell](/WinShell/) {#l040a9c6}
-
-[WinShell](/WinShell/) をご覧ください．
-
 #### EasyTeX {#i87678c7}
 
 EasyTeX をご覧ください．
+
+#### [WinShell](/WinShell/) {#l040a9c6}
+
+[WinShell](/WinShell/) をご覧ください．
 
 #### Yotuba TeX Editor {#hff91394}
 
