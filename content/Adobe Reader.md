@@ -79,6 +79,7 @@ echo exit | pdfdde
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 - [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
+- [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
 - [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
