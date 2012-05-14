@@ -375,9 +375,9 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
                   "\"C:/Program Files/SumatraPDF/SumatraPDF\""
                 "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
          (args))
-    (setq args (concat " -reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
-    (message (concat cmd args))
-    (call-process (concat cmd args)
+    (setq args (concat "-reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
                   :exec-directory (directory-namestring tex-file))))
 
 (add-hook 'elisp::katex-mode-hook
@@ -556,9 +556,9 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
                   "\"C:/Program Files/SumatraPDF/SumatraPDF\""
                 "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
          (args))
-    (setq args (concat " -reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
-    (message (concat cmd args))
-    (call-process (concat cmd args)
+    (setq args (concat "-reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
                   :exec-directory (directory-namestring tex-file))))
 
 (add-hook 'elisp::katex-mode-hook
