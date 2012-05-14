@@ -78,7 +78,7 @@ exe ファイル版 (インストーラー機能付き) の場合はインスト
 
 ### zip ファイル {#r2a5838b}
 
-zip ファイル版は，レジストリを使用しません．アンインストールするときはフォルダごと削除してください．
+zip ファイル版は，レジストリを使用しません．アンインストールするときはフォルダーごと削除してください．
 
 ### exe ファイル {#z3b6deb0}
 
@@ -129,7 +129,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 ***
 
 TeX 実行ファイルのパスを指定します．<br>
-platex.exe (pLaTeX の実行ファイル) が存在するフォルダのフルパスを指定します．ここでは C:\w32tex\bin に設定しました．<br>
+platex.exe (pLaTeX の実行ファイル) が存在するフォルダーのフルパスを指定します．ここでは C:\w32tex\bin に設定しました．<br>
 DVI ドライバは dviout.exe のフルパスを指定します．<br>
 
 ### TeXOption {#d7b2d9ae}
@@ -332,7 +332,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成します．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
 
 <br>
 
@@ -361,7 +361,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -386,7 +386,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -413,7 +413,7 @@ uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成します．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
 
 <br>
 
@@ -440,7 +440,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -467,7 +467,7 @@ pdflatex を使用して PDF ファイルを作成します．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdflatex "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdflatex -synctex=1 "%n"</ins><br>
 
 <br>
 
@@ -494,7 +494,7 @@ lualatex を使用して PDF ファイルを作成します．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c lualatex "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c lualatex -synctex=1 "%n"</ins><br>
 
 <br>
 
@@ -521,7 +521,7 @@ xelatex を使用して PDF ファイルを作成します．<br>
 　<span style="color:White;background-color:#1188FF;"> program6　</span><br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c xelatex "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c xelatex -synctex=1 "%n"</ins><br>
 
 <br>
 
@@ -790,7 +790,7 @@ uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -818,7 +818,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
