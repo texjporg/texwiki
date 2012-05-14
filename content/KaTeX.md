@@ -9,18 +9,34 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
-## [KaTeX](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
+## [KaTeX](http://www.geocities.jp/mathemabics/storage.html) &amp; [KaTeX カスタム版](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## KaTeX カスタム版とは {#m8b25abb}
+## KaTeX &amp; KaTeX カスタム版とは {#o741d921}
+
+### KaTeX とは {#ja14bd5c}
+
+KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
+GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
+[xyzzy-022](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
+マルチフレーム版では動作しません．<br>
+マルチフレーム版では KaTeX カスタム版を使用してください．<br>
+KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
+
+- [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
+- [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
+
+<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
+
+### KaTeX カスタム版とは {#m8b25abb}
 
 KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX です．<br>
 KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br> <!-- マルチフレーム版専用の KaTeX カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
 マルチフレーム版専用の KaTeX カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
-マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
+マルチフレーム版でないxyzzyを使う方は，[katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) をダウンロードして使ってください．<br>
 
 <!-- 修正されました -->
 <!-- ↓ -->
@@ -34,43 +50,13 @@ KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 <!--  -->
 <!-- [[message-box による printf デバッグの消し忘れ:http://twitter.com/#!/mumurik765/status/186792959121948672]]だそうです．~ -->
 
-### スクリーンショット？ {#pb339bcf}
-
-***
-
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.8@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
-
-...<br>
-<span style="color:White;background-color:Black;">&#x2d;----　<strong>katex.tex</strong>　(かてふ)　\[utf8n:crlf\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<br>
-
-J)latex R)egion B)ibtex mk(I)ndex K)ill-latex P)review S)earch V)iewerr L)pr<br>
-
-***
-
-## EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
+### EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
 
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
 EmacsLisp移植キット/emacs.l カスタム版のライセンスは GNU GPL v2 です．<br> <!-- マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
 マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
-マルチフレーム版でないxyzzyを使う方は，[雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) からダウンロードしたものを使ってください．<br>
-
-## KaTeX とは {#o741d921}
-
-KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
-GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
-[xyzzy-022](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
-マルチフレーム版では動作しません．<br>
-マルチフレーム版では KaTeX カスタム版を使用してください．<br>
-KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
-
-- [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
-
-<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
+マルチフレーム版でないxyzzyを使う方は，[katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) をダウンロードして使ってください．<br>
 
 ### License {#x302c417}
 
@@ -269,6 +255,23 @@ KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，ka
 
 <img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="KaTeX">
 
+### スクリーンショット？ {#pb339bcf}
+
+***
+
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.8@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
+
+...<br>
+<span style="color:White;background-color:Black;">&#x2d;----　<strong>katex.tex</strong>　(かてふ)　\[utf8n:crlf\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+J)latex R)egion B)ibtex mk(I)ndex K)ill-latex P)review S)earch V)iewerr L)pr<br>
+
+***
+
 ## KaTeX で TeX の命令をラクラク入力 {#k658955e}
 
 TeX で命令を書いているときに，そうした命令を書いていくのがおっくうになることがありませんか？<br>
@@ -278,12 +281,14 @@ TeX で命令を書いているときに，そうした命令を書いていく�
 KaTeX （花鳥）は便利なキーボードショートカットを多数有し，LaTeX の命令や環境の入力を素早く，なおかつ楽にしてくれるマクロです。<br>
 [YaTeX](/YaTeX/) の xyzzy 版と言った方がわかりやすいかもしれません。<br>
 
-公式サイトの Web Archive [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html)
-([http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l](http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l))
-から KaTeX を選択してダウンロードできます．<br>
-Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます．
+<!-- 公式サイトの Web Archive [[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] -->
+<!-- (&ref(http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l,http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l);) -->
+<!-- から KaTeX を選択してダウンロードできます．~ -->
+<!-- Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます． -->
 
-マルチフレーム版を試している方は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください）。<br>
+マルチフレーム版以外を使用する場合は [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) を使用します．
+
+マルチフレーム版を試している方は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記のサイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ## 設定 {#pea65968}
@@ -907,6 +912,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 ## 関連リンク {#h4cf9c4e}
 
+- [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
 - [xyzzyみたいな](http://nahxnahx.blogspot.jp/2012/03/xyzzy.html)
 - [Windows7 で xyyzzy で KaTeX で TeX ライフ。](http://blog.goo.ne.jp/kei_matsuura2007/e/8c5ccbde9291d5410956b1e94e10dfaa)
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
