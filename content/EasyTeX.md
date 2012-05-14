@@ -27,7 +27,10 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012/2/6 EasyTeX Verson 3.242<br>
+2012-05-14 EasyTeX Verson 3.30 Unicode<br>
+2012-02-06 EasyTeX Verson 3.242<br>
+
+EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8) に対応しています．
 
 ### スクリーンショット {#e7b3eafc}
 
@@ -35,6 +38,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### 特徴 {#c007c9f5}
 
+- ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8) に対応しています．
 - TeX の命令を色付けして表示できます．
 - LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
 - ヘルプには LaTeX の解説が付属しています．
@@ -127,13 +131,13 @@ DVI ドライバは dviout.exe のフルパスを指定します．<br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]</ins></span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Spell \]\[ PS/PDF \]</ins></span><br>
 　　　　　　言語<br>
-　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐検索したTeXラベルをソートする<br>
-　　　　　　◯英語　　　　　　　　　　　　 ☐source special<br>
-　　　　　TeXコンパイラ　　　　　　 　 　☑SyncTeX　　　<ins>1 \[◆\]</ins><br>
+　　　　　　<span style="color:#3333CC;">◎</span>日本語　　　　　　　　 　 　☐ source special<br>
+　　　　　　◯英語<br>
+　　　　　TeXコンパイラ　　　　　　 　 　☑ SyncTeX　　　<ins>1 \[◆\]</ins><br>
 　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span><br>
-　　　　　 jPlain　　　　　　　　　　　　　　☐ｺﾝﾊﾟｲﾙ画面を表示する<br>
+　　　　　 jPlain　　　　　　　　　　　　　　☐ ｺﾝﾊﾟｲﾙ画面を表示する<br>
 　　　　　 latexcompile　 　 　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのパス\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのフォルダー\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
@@ -256,6 +260,20 @@ PDF Reader は [SumatraPDF](/SumatraPDF/), [Adobe Reader](</Adobe Reader/>), Fox
 
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．<br>
 
+## エンコードの種類 {#s484d028}
+
+EasyTeX Version 3.30 Unicode からエンコードの種類を選択できるようになりました．<br>
+メニューの \[ﾌｧｲﾙ(F)\]-\[エンコードの種類(D)\] から選択できます．<br>
+デフォルトのエンコードは 日本語(Shift-JIS) です．<br>
+
+- 日本語(Shift-JIS)
+- 日本語(EUC)
+- 日本語(JIS)
+- Unicode(UTF-16)
+- Unicode(UTF-16,BigEndian)
+- Unicode(UTF-8)
+- Unicode(UTF-8BOM)
+
 ## エディタ設定 {#b0958860}
 
 EasyTeX はエディタの設定をすることが可能です．<br>
@@ -263,9 +281,9 @@ EasyTeX はエディタの設定をすることが可能です．<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ｴﾃﾞｨﾀ設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ｴﾃﾞｨﾀ設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ TeX命令 \]\[ ｺﾒﾝﾄ \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ ｺﾒﾝﾄ \]\[ TeX環境 \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]</ins></span><br>
 
 　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　フォントの選択　\]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><span style="color:White;background-color:#000099;"> Aaあぁアァ亜宇 </span><span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><br>
@@ -287,17 +305,16 @@ EasyTeX はエディタの設定をすることが可能です．<br>
 設定を反映させるには，［ 　登録　 ］ボタンを押し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．<br>
 設定したツールはメニューの \[ﾂｰﾙ(A)\] から選択できます．<br>
 
-### pdfpLaTeXA {#x38829e5}
+### pdfpLaTeX {#i887cf0c}
 
-platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+platex, dvipdfmx を使用して DVI, PDF ファイルを作成します．<br>
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeXA</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program0　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX</ins><br>
 　 program1<br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -306,7 +323,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
 
 <br>
 
@@ -315,10 +332,9 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 
 ***
 
-### pdfpLaTeX2A {#l0d22111}
+### pdfpLaTeX2 {#y9f8e240}
 
-platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成します．<br>
 
 ■ bkmk2uni を使用する場合
 
@@ -327,7 +343,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2</ins><br>
 　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -336,7 +352,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -352,7 +368,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2</ins><br>
 　<span style="color:White;background-color:#1188FF;"> program1　</span><br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
@@ -361,7 +377,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -no-guess-input-enc -kanji=sjis -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -370,18 +386,16 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 
 ***
 
-### pdfLaTeXA {#m3a434b8}
+### pdfupLaTeX {#ibcc7039}
 
-pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
-pdflatex は日本語には対応していません．<br>
+uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成します．<br>
 
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　タイトル<br>
-　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeXA</ins><br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfupLaTeX</ins><br>
 　 program1<br>
 　<span style="color:White;background-color:#1188FF;"> program2　</span><br>
 　 program3　　　　　プログラム<br>
@@ -390,7 +404,115 @@ pdflatex は日本語には対応していません．<br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfupLaTeX2 {#r8d461bb}
+
+uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfupLaTeX2</ins><br>
+　 program1<br>
+　 program2<br>
+　<span style="color:White;background-color:#1188FF;"> program3　</span>　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfLaTeX {#j820f89e}
+
+pdflatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeX</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　<span style="color:White;background-color:#1188FF;"> program4　</span>　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c pdflatex "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaLaTeX {#m89bd4c6}
+
+lualatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>LuaLaTeX</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program5　</span>　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c lualatex "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### XeLaTeX {#oe45acd6}
+
+xelatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>XeLaTeX</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　<span style="color:White;background-color:#1188FF;"> program6　</span><br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c xelatex "%n"</ins><br>
 
 <br>
 
@@ -411,13 +533,40 @@ pbibtex を使用して参考文献を作成します．
 　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pBibTeX</ins><br>
 　 program1<br>
 　 program2<br>
-　<span style="color:White;background-color:#1188FF;"> program3　</span>　　　　プログラム<br>
+　 program3　　　　　プログラム<br>
 　 program4　　　　　　　 <ins>pbibtex.exe</ins><br>
 　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
 　 program6<br>
-　 program7<br>
+　<span style="color:White;background-color:#1188FF;"> program7　</span><br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>-kanji=sjis "%n"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>-kanji=utf8 "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### upBibTeX {#w1425c53}
+
+upbibtex を使用して参考文献を作成します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program0　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>upBibTeX</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>upbibtex.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　<span style="color:White;background-color:#1188FF;"> program8　</span>　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>"%n"</ins><br>
 
 <br>
 
@@ -439,12 +588,12 @@ mendex を使用して索引を作成します．
 　 program1<br>
 　 program2<br>
 　 program3　　　　　プログラム<br>
-　<span style="color:White;background-color:#1188FF;"> program4　</span>　　　　　　 <ins>mendex.exe</ins><br>
+　 program4　　　　　　　 <ins>mendex.exe</ins><br>
 　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>-S "%n"</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program9　</span><span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>-U "%n"</ins><br>
 
 <br>
 
@@ -503,7 +652,7 @@ DVI ファイルを表示する場合は［ﾌｧｲﾙ(F)］ → ［ｺﾝﾊ�
 pLaTeX のみ実行する場合は［ｺﾝﾊﾟｲﾙ(C)］ をクリックします．<br>
 <strong>Version 3.167 以降では，編集中のファイルは自動的に保存されます．</strong><br>
 
-［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で 「PDFファイルのページサイズの設定」 が表示されます．<br>
+［ﾌｧｲﾙ(F)］ → ［ｺﾝﾊﾟｲﾙ・Pdfﾌﾟﾚﾋﾞｭｰ(f)］(初回のみ) または ［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で 「PDFファイルのページサイズの設定」 が表示されます．<br>
 
 ***
 
@@ -526,6 +675,231 @@ pLaTeX のみ実行する場合は［ｺﾝﾊﾟｲﾙ(C)］ をクリックし
 あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．<br>
 ある範囲を一括コメントイン・コメントアウトする便利な機能もあります．<br>
 範囲指定してからメニューより ［編集(E)］ → ［ｺﾒﾝﾄ/ｺﾒﾝﾄ解除(O)］ で，コメントイン・アウトできますので，活用してみてください．<br>
+
+## [Adobe Reader](</Adobe Reader/>) との連携 {#b6182a61}
+
+### pdfpLaTeXA {#x38829e5}
+
+platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program10 </span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeXA</ins><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfpLaTeX2A {#l0d22111}
+
+platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+■ bkmk2uni を使用する場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program11 </span><br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+■ convbkmk を使用する場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfpLaTeX2A</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program11 </span><br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfupLaTeXA {#v2f580e9}
+
+uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfupLaTeXA</ins><br>
+　 program11<br>
+　<span style="color:White;background-color:#1188FF;"> program12 </span><br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfupLaTeX2A {#o1ee54cf}
+
+uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfupLaTeX2A</ins><br>
+　 program11<br>
+　 program12<br>
+　<span style="color:White;background-color:#1188FF;"> program13　</span>　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfLaTeXA {#m3a434b8}
+
+pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>pdfLaTeXA</ins><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　<span style="color:White;background-color:#1188FF;"> program14　</span>　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaLaTeXA {#q6d516db}
+
+lualatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>LuaLaTeXA</ins><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　<span style="color:White;background-color:#1188FF;"> program15　</span>　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; lualatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### XeLaTeXA {#v05cb9fa}
+
+xelatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
+実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　　ツールの設定　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#9CCEDE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[　 <span style="color:White;"><strong>✕</strong></span> 　\]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;">▲</span>　　　　　<ins>XeLaTeXA</ins><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>cmd.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　<span style="color:White;background-color:#1188FF;"> program16　</span><br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; xelatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
 
