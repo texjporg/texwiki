@@ -24,6 +24,12 @@ Windows で使える，機能的で，軽い TeX 用のエディタがあまり�
     - [更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)
 - [Masamichi Editor](http://www.tam.ne.jp/hiraba/programs/Masamichi/)
 
+#### リリース情報 {#r8be4c06}
+
+2012-05-14 Masamichi 7.3.0.2<br>
+
+#### スクリーンショット {#jf651a64}
+
 <table>
 <tbody>
 <tr><td><a href="http://www.tam.ne.jp/hiraba/programs/texmode.png"><img src="http://www.tam.ne.jp/hiraba/programs/texmode.png" alt="TeX モード" width="355" height="300"></a></td><td><a href="http://www.tam.ne.jp/hiraba/programs/hyomode.png"><img src="http://www.tam.ne.jp/hiraba/programs/hyomode.png" alt="表計算モード" width="308" height="300"></a></td></tr>
