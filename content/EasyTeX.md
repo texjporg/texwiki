@@ -258,7 +258,41 @@ SyncTeX にチェックを入れます．<br>
 
 ***
 
-GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe または AcroRd32.exe) のフルパスを指定します．<br>
+#### Foxit Reader {#dc946e73}
+
+■ 32bit Windows の場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Foxit Software\Foxit Reader\Foxit Reader.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
+
+***
+
+■ 64bit Windows の場合
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Foxit Software\Foxit Reader\Foxit Reader.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
+
+***
+
+GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe または AcroRd32.exe または Foxit Reader.exe) のフルパスを指定します．<br>
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．<br>
 EasyTeX は DVI->PDF変換をしたり，表示したりする場合に Adobe Reader の PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．<br>
 PDF Reader は [SumatraPDF](/SumatraPDF/), [Adobe Reader](</Adobe Reader/>), Foxit Reader, PDF-XChange Viewer に対応しています．<br>
@@ -686,6 +720,44 @@ pLaTeX のみ実行する場合は［ｺﾝﾊﾟｲﾙ(C)］ をクリックし
 範囲指定してからメニューより ［編集(E)］ → ［コメント/コメント解除(O)］ で，コメントイン・アウトできますので，活用してみてください．<br>
 ファイルを分割している場合は \[ｵﾌﾟｼｮﾝ(O)\] → \[親ファイルの指定(P)\] でメインのファイルを指定してください．<br>
 
+## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
+
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．<br>
+出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)<br>
+\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．<br>
+
+### forward search {#o6a70e4f}
+
+LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[コンパイル・Pdfプレビュー(F)\] で PDF ファイルの該当領域を検索します．<br>
+PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．<br>
+
+### inverse search {#a57927f9}
+
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex\EasyTeX.exe である場合
+
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
+
+```
+C:\easytex\EasyTeX.exe /j%l "%f"
+```
+
+と書き込んで \[OK\] をクリックしてください．<br>
+SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所にジャンプします．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　指定行への移動　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+
+　　　行番号 または 行番号，桁番号 ？<br>
+
+<br>
+
+<br>
+
+　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
 ## [Adobe Reader](</Adobe Reader/>) との連携 {#b6182a61}
 
 ### pdfpLaTeXA {#x38829e5}
@@ -908,44 +980,6 @@ xelatex を使用して PDF ファイルを作成した後で pdfopen を使用�
 
 　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
 　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
-
-***
-
-## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
-
-EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．<br>
-出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．(synctex ファイルを圧縮したくない場合は，右側の値を 1 から -1 に変更します．)<br>
-\[ Iniファイルに保存 \] → \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] の順にクリックします．<br>
-
-### forward search {#o6a70e4f}
-
-LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[コンパイル・Pdfプレビュー(F)\] で PDF ファイルの該当領域を検索します．<br>
-PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．<br>
-
-### inverse search {#a57927f9}
-
-EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex\EasyTeX.exe である場合
-
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
-
-```
-C:\easytex\EasyTeX.exe /j%l "%f"
-```
-
-と書き込んで \[OK\] をクリックしてください．<br>
-SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当個所にジャンプします．<br>
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　指定行への移動　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　　行番号 または 行番号，桁番号 ？<br>
-
-<br>
-
-<br>
-
-　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
 
 ***
 
