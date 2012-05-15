@@ -371,6 +371,21 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
   (interactive)
   (elisp::katex-mode))
 
+(defun texworks-preview ()
+  (interactive)
+  (let* ((tex-file (get-buffer-file-name))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (cmd "C:/w32tex/share/texworks/TeXworks")
+         (args))
+    (setq args pdf-file)
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
+                  :exec-directory (directory-namestring tex-file))))
+
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\p) 'texworks-preview)))
+
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
@@ -439,6 +454,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; ツールバー表示
 ;; M-RET を有効に
 ;; ショートカット
+;; TeXworks で preview
 ;; SumatraPDF で forward search
 ;; 自動改行なし
 ```
@@ -521,6 +537,37 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 見た目には何も起こらないように思えますが，実際はきちんと範囲になっていたりするのです。<br>
 そして，リージョンの終点において，先ほどの C-c > や C-c &lt; を実行すればよいのです。<br>
 （よく分からない方は，[Emacs におけるリージョン](http://cns-guide.sfc.keio.ac.jp/2001/7/2/4.html)と仕組みは同じですので，そちらを参照していただければと思います。）
+
+## TeXworks との連携 {#lcdfc160}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
+
+xyzzy から TeXworks で PDF ファイルをプレビューできます．<br>
+KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます．<br>
+
+***
+
+```
+(defun texworks-preview ()
+  (interactive)
+  (let* ((tex-file (get-buffer-file-name))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (cmd "C:/w32tex/share/texworks/TeXworks")
+         (args))
+    (setq args pdf-file)
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
+                  :exec-directory (directory-namestring tex-file))))
+
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\p) 'texworks-preview)))
+```
+
+***
+
+C-c p または M-x texworks-preview （Alt を押しながら x を押し，“texworks-preview” と入力して Enterキーを押す）とすることで，PDF ファイルを開いてくれるはずです．<br>
+頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ## SumatraPDF との連携 {#y959d8e3}
 
