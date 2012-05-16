@@ -7,9 +7,95 @@ pukiwiki: "Make"
 
 # Make
 
-## UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール {#f27134a5}
+## Make {#b0e9d8ed}
 
-[TeX Live](</TeX Live/>) + [tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) または [TeX Live](</TeX Live/>) + [追加日本語パッチ](</TeX Live/#w858d62f>) がお薦めです。<br> <!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ --> <!-- 下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。~ -->
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール {#y9d94e5d}
+
+[TeX Live](</TeX Live/>) + [tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) がお薦めです。<br> <!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ -->
+
+## LaTeX ドキュメントを make で取り扱う {#f5f8b4b0}
+
+ここでは、make を使って LaTeX ドキュメントを処理する方法について簡単に記します。
+
+### Make とは何か？ {#g7efa508}
+
+Make は、複数のファイルで構成されるソースを確実にコンパイル・インストールしたり、コンパイルで生成されたファイル等を削除してコンパイル前の状態に戻したりすることができるツールです。ほとんどの UNIX 系のシステム（Mac OS X を含む）には [GNU Make](http://www.gnu.org/software/make/) がインストールされていると思いますので、以下、GNU Make の使用を前提に書きます。
+
+### LaTeX 文書の処理における複数ファイルの管理 {#r1a92c3a}
+
+LaTeX 文書の処理時、たとえば索引を作成するときなど、作成に関わる中間生成ファイルが多数生成されますが、これらを必要に応じて削除したりするのは、手動で行うと、誤って必要なファイルを削除してしまう、等のトラブルの原因になります。このようなときには、make を使うことで効果的なファイル操作が可能です。
+
+### 実例 {#wff9a2e3}
+
+Make は、コマンド実行時のカレントディレクトリにある Makefile を読み込んで、その記述と引数に応じた処理を行います。以下に、LaTeX 文書の処理に用いた Makefile の実例を示します。
+
+```
+FILENAME  = doc001
+TEX       = $(FILENAME).tex
+IDX       = $(FILENAME).idx
+DVI       = $(FILENAME).dvi
+PDF       = $(FILENAME).pdf
+PDFOUT    = $(FILENAME)_enc.pdf
+
+all:
+        make tex
+        make tex
+        make idx
+        make tex
+        make dvipdf
+        make pw
+distclean:
+        make clean
+        rm $(PDFOUT)
+clean:
+        rm *.aux *.dvi *.idx *.ilg *.ind *.log *.out *.toc *~ $(PDF)
+tex:
+        platex $(TEX)
+idx:
+        mendex $(IDX)
+dvipdf:
+        dvipdfmx $(DVI)
+pw:
+        pdftk $(PDF) output $(PDFOUT) owner_pw foobar
+```
+
+この場合、用意した LaTeX 文書ファイルは doc001.tex という名前です。mendex コマンドで索引を生成するのと、[pdftk](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) でコピー・ペースト・印刷の禁止、パスワードの付与を行うために、 
+
+- LaTeX での処理を2回
+- mendex
+- LaTeX で最終処理
+- dvipdfmx で PDF ファイル生成
+- 生成した PDF ファイルを基に、pdftk でパスワード付与した PDF を生成
+
+という順番での処理を行う必要があります。また、処理終了後、あるいは処理を中断するときには、中間生成ファイルや PDF 等を必要に応じて削除する必要があります。
+
+このようなときに、上のような Makefile を作成しておくと、
+
+```
+$ make
+```
+
+（厳密には make all ですが、make は引数なしで実行されたときに default で引数 "all" と同じ処理をします）と入力するだけで、上述の一連の処理が全て行われます。また、
+
+```
+$ make clean
+```
+
+と入力すると、文書ファイルと最終生成物である PDF ファイル以外の全てのファイルが削除され、
+
+```
+$ make distclean
+```
+
+で、文書ファイル以外の全てのファイル（最終生成物の PDF ファイルを含めて）が削除されます。
+
+Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。
+
+- [Makefileの解説](http://www.am.sanken.osaka-u.ac.jp/~mukaigaw/misc/Makefile.html)
+
+<!-- 下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。~ -->
 
 <!-- #contents -->
 
