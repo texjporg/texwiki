@@ -11,10 +11,6 @@ pukiwiki: "Make"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール {#y9d94e5d}
-
-[TeX Live](</TeX Live/>) + [tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) がお薦めです。<br> <!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ -->
-
 ## LaTeX ドキュメントを make で取り扱う {#f5f8b4b0}
 
 ここでは、make を使って LaTeX ドキュメントを処理する方法について簡単に記します。
@@ -94,6 +90,19 @@ $ make distclean
 Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。
 
 - [Makefileの解説](http://www.am.sanken.osaka-u.ac.jp/~mukaigaw/misc/Makefile.html)
+
+### latexmk {#xe923cf8}
+
+- [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
+
+### OMake {#yf7ac218}
+
+- [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
+
+<!-- *UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール [#y9d94e5d] -->
+<!--  -->
+<!-- [[TeX Live]] + [[tlptexlive:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] がお薦めです。~ -->
+<!-- 少し前までは TeX Live + ptexlive, teTeX-3.0 + ptetex3 を使う方法がお薦めでした。~ -->
 
 <!-- 下の方に長々と書いてある teTeX や ptetex などに関する情報は古い内容です。~ -->
 
