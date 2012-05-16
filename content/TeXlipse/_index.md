@@ -1994,10 +1994,10 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file" "# &#x25;line '&#x25;texfile'"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[PageOpen(# %line '%texfile')\]\[WinNormal\]\[FileOpen("%file")\]</ins><br>
-　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
 
 <br>
 
@@ -2005,8 +2005,8 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 　　トピック： <br>
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
-　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
@@ -2338,7 +2338,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-watchfile 1 "&#x25;file"</ins><br>
 
 <br>
 
@@ -2355,8 +2355,8 @@ tlptexlive をインストールします．<br>
 <br>
 
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
-　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
@@ -2737,7 +2737,7 @@ tlptexlive をインストールします．<br>
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>pxdvi -nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>pxdvi -watchfile 1 "&#x25;file"</ins><br>
 
 <br>
 
@@ -2754,8 +2754,8 @@ tlptexlive をインストールします．<br>
 <br>
 
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
-　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
@@ -3251,7 +3251,36 @@ C:\eclipse\invtexlipse.bat "%f" %l
 
 ### forward search {#qbd34e23}
 
-forward search は DVI ファイル ビューアーの [TeXlipse#dviout](/TeXlipse/#o33347b9) の項を参考に設定してください．
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　dviout (C:\w32tex\dviout\dviout.exe)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file" "# &#x25;line '&#x25;texfile'"</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <ins>\[PageOpen(# %line '%texfile')\]\[WinNormal\]\[FileOpen("%file")\]</ins><br>
+　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 　　トピック： <br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
 
 ### inverse search {#na9d6648}
 
@@ -3279,6 +3308,90 @@ C:\eclipse\invtexlipse.bat^s "%s" %d
 ```
 
 とします．
+
+## pxdvi との連携 (非推奨) {#gd6df302}
+
+引数に -src-specials を追加します．
+
+### forward and inverse search {#ie9c17fd}
+
+#### OS X {#t167e3b8}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi (/usr/texbin/pxdvi)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### Linux {#c2355ad6}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi (/usr/bin/env)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>pxdvi -nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
 
 ## 関連リンク {#g42d5edd}
 
