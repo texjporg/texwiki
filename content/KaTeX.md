@@ -310,7 +310,7 @@ MinGW や Cygwin がインストールされていない場合は，環境変数
 
 のようにダブルクォーテーションを付けて保存すれば作成可能です．
 
-katex.zip または katex.lzh を展開して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
+katex_1_67_1_12.lzh または katext-1.67.1.11_1.0.zip を展開して，フォルダーの名前を katex に変更して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
 
 ***
 
