@@ -36,7 +36,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012-05-15 EasyTeX Verson 3.302 Unicode<br>
+2012-05-17 EasyTeX Verson 3.303 Unicode<br>
 2012-02-06 EasyTeX Verson 3.242<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8、UTF-8BOM) に対応しています．
