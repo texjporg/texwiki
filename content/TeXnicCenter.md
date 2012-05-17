@@ -1170,7 +1170,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### [Adobe Reader](</Adobe Reader/>) X {#c94760c4}
+#### [Adobe Reader](</Adobe Reader/>) {#c94760c4}
 
 <!-- Adobe Reader X の場合 Server は acroviewR10 に設定します．~ -->
 <!-- ただし Adobe Reader X で [編集(E)]-[環境設定(N)...]-[一般]-[起動時に保護モードを有効にする(M)] にチェックがついている場合，Adobe Reader X の起動時に下記のエラーメッセージが出力され，PDF ファイルが表示されませんでした．~ -->
@@ -1184,6 +1184,8 @@ Close document before running (La)TeX<br>
 <!--  -->
 <!-- Adobe Reader X をあらかじめ起動しておけば，このエラーメッセージは表示されなくなり，DDE command が，通常どおり機能します．~ -->
 <!-- 下記の設定に変更すると [起動時に保護モードを有効にする(M)] にチェックがついていても Adobe Reader X の起動時の TeXnicCenter のエラーメッセージが表示されなくなり PDF ファイルが表示されるようになりました．~ -->
+
+■ Adobe Reader X の場合<br>
 
 ***
 
@@ -1233,7 +1235,7 @@ Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 <!--  -->
 <!-- です． -->
 
-#### [Adobe Reader](</Adobe Reader/>) 9 {#dc50e2b3}
+■ Adobe Reader 9 の場合<br>
 
 ***
 
@@ -1342,6 +1344,51 @@ Close document before running (La)TeX<br>
 <span style="color:#3333CC;">◎</span> Command line argument　◯ DDE command　　◯ Do not close<br>
 
 Command <ins>/close "%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+***
+
+#### Foxit Reader {#ga5b98d1}
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Windows\System32\cmd.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>/c echo "C:\Program Files\Foxit Software\Foxit Reader\Foxit Reader.exe" "%bm.pdf" | cmd</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>/c echo "C:\Program Files\Foxit Software\Foxit Reader\Foxit Reader.exe" "%bm.pdf" | cmd</ins><br>
+
+<br>
+
+<br>
+
+Close document before running (La)TeX<br>
+<span style="color:#3333CC;">◎</span> Command line argument　◯ DDE command　　◯ Do not close<br>
+
+Command <ins>/c echo tasklist /fi "IMAGENAME eq Foxit Reader.exe" /nh findstr "Foxit Reader.exe" > null &amp;&amp; taskkill /im "Foxit Reader.exe" | cmd</ins><br>
 
 <br>
 
