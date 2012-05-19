@@ -46,6 +46,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 ### ChangeLog {#e321b2d0}
 
 - [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
+    - [shortlog](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=shortlog)
 
 ### スクリーンショット {#j94c34b3}
 
@@ -139,16 +140,13 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 - Pdf4Eclipse
 - TeXlipse
 
-にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
-
-TeXlipse のインストール後 Eclipse を再起動します．
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．<br>
+TeXlipse のインストール後 Eclipse を再起動します．<br>
 
 Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
-から直接ダウンロードして展開 (解凍) します．
-
-展開したファイルの中に plugins フォルダがあります．
-
-この plugins フォルダを Eclipse フォルダに上書きコピーします．
+から直接ダウンロードして展開 (解凍) します．<br>
+展開したファイルの中に plugins フォルダがあります．<br>
+この plugins フォルダを Eclipse フォルダに上書きコピーします．<br>
 
 ## LaTeX ファイルのデフォルト・エンコードの設定 {#e388e178}
 
@@ -248,15 +246,9 @@ W32TeX がインストールされていれば以下のような表示になっ�
 これらを \[編集(E)...\] します．<br>
 W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．<br>
 UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．<br>
-自動判別, UTF-8, MS932 (Shift_JIS), EUC-JP の場合の編集を記述します．<br>
+自動判別, UTF-8 の場合の編集を記述します．<br>
 [TeX Live](</TeX Live/>) などの TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
 dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に PATH が通っているか確認してください．<br>
-
-### <em>注意</em> {#kb057dfa}
-
-- <em>2009/7/20 に W32TeXの "jbibtex.exe" は "pbibtex.exe" に変更されました． ([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))</em>
-- <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
-- UTF-8 での mendex のスタイルファイル指定について ([qa:56690](https://okumuralab.org/~okumura/texfaq/qa/56690.html), [qa:56691](https://okumuralab.org/~okumura/texfaq/qa/56691.html)) ← [Q&amp;A56690 への回答](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=784)
 
 ### 自動判別 の場合 {#p2e48152}
 
