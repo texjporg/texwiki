@@ -270,7 +270,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -287,7 +287,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -304,7 +304,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -321,7 +321,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -338,7 +338,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -355,7 +355,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
@@ -372,7 +372,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-s %style %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -389,7 +389,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -406,7 +406,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -423,7 +423,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -440,7 +440,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input -s nomencl.ist -o %output</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
@@ -462,7 +462,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -476,7 +476,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\uplatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -493,7 +493,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -510,7 +510,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -527,7 +527,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -545,7 +545,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "%input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -559,7 +559,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -573,7 +573,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -590,7 +590,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
@@ -607,7 +607,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-U -s %style %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -624,7 +624,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -641,7 +641,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -658,7 +658,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -675,389 +675,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-U %input -s nomencl.ist -o %output</ins><br>
-　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-### MS932 (Shift_JIS) の場合 {#k66f6c56}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Latex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　PdfLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=sjis %input</ins><br>
-　　　Input format： .bib 　　　出力フォーマット： .aux<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-S -s %style %input</ins><br>
-　　　Input format： .idx 　　　出力フォーマット： .ind<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvipdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Ps2pdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program (nomencl)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-S %input -s nomencl.ist -o %output</ins><br>
-　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-### EUC-JP の場合 {#nc21b0f9}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Latex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=euc -synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　PdfLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Bibtex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=euc %input</ins><br>
-　　　Input format： .bib 　　　出力フォーマット： .aux<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\biber.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-E -s %style %input</ins><br>
-　　　Input format： .idx 　　　出力フォーマット： .ind<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvipdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Ps2pdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.05\lib\ps2pdf.bat</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
-　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program (nomencl)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-E %input -s nomencl.ist -o %output</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-U "%input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
@@ -1115,7 +733,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/platex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1129,7 +747,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1146,7 +764,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/pdflatex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1163,7 +781,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/xelatex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1180,7 +798,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/lualatex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1198,7 +816,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/pbibtex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1212,7 +830,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1226,7 +844,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/bibtexu</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1243,7 +861,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/biber</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
@@ -1260,7 +878,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/mendex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-s %style %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -1277,7 +895,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/dvips</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -1294,7 +912,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1311,7 +929,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/local/bin/ps2pdf</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1328,7 +946,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/mendex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>&#x25;input -s nomencl.ist -o %output</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
@@ -1352,7 +970,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>platex -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>platex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1366,7 +984,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>uplatex -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>uplatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -1383,7 +1001,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>pdflatex -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>pdflatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1400,7 +1018,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>xelatex -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>xelatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1417,7 +1035,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>lualatex -synctex=1 -interaction=nonstopmode %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>lualatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1435,7 +1053,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>pbibtex &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>pbibtex "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1449,7 +1067,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>upbibtex &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1463,7 +1081,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>bibtexu &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>bibtexu "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -1480,7 +1098,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>biber &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>biber "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
@@ -1497,7 +1115,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex -s %style %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>mendex -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -1514,7 +1132,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>dvips -Ppdf -t a4 -o %output %input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>dvips -Ppdf -t a4 -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -1531,7 +1149,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>dvipdfmx &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>dvipdfmx "&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1548,7 +1166,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>ps2pdf &#x25;input</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>ps2pdf "&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -1565,7 +1183,7 @@ tlptexlive をインストールします．<br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex &#x25;input -s nomencl.ist -o %output</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>mendex "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
