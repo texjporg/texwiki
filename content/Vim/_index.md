@@ -29,6 +29,7 @@ GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する�
 詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
 
 GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
+Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
 
 - [Vim 公式サイト](http://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
@@ -102,10 +103,11 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 
 ## 不具合 {#h94d310c}
 
-### Ubuntu 12.04 の gvim がまともに動かない {#fba97189}
+### Ubuntu 12.04 の gvim がまともに動かない → [Patch 7.3.520 にて修正されました](http://vim-jp.org/blog/2012/05/20/patch_7.3.520.html) {#fba97189}
 
 回避策：gvim -f で起動<br>
 
+- [GTK版GVimが起動時に数十秒待たされる問題が修正されました。](http://vim-jp.org/blog/2012/05/20/patch_7.3.520.html)
 - [Issue #193: Ubuntu 12.04 の gvim がまともに動かない · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/193)
 - [Bug #987707 “gvim in Precise can't connect to ibus and takes a l...” : Bugs : “vim” package : Ubuntu](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/987707)
 
