@@ -30,13 +30,108 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ### リリース情報 {#td599942}
 
-TeXShop (v 3.09) Release 5/19/2012<br>
-TeXShop (v 2.43) Release 6/29/2011<br>
-TeXShop (v 1.43) Release 1/22/2006<br>
+2012-05-19 TeXShop (v 3.09)<br>
+2011-06-29 TeXShop (v 2.43)<br>
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
 tlptexlive をインストールします．
+
+### &#x7e;/Library/TeXShop/bin/pdfeptex {#u46327c0}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/pdfeptex
+
+***
+
+```
+#!/bin/sh
+eptex -synctex=1 "$1" && \
+dvipdfmx "`basename "$1" .tex`" 
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/pdfeptex
+```
+
+### &#x7e;/Library/TeXShop/bin/pdfplatex {#r809076b}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/pdfplatex
+
+***
+
+```
+#!/bin/sh
+platex -synctex=1 "$1" && \
+dvipdfmx "`basename "$1" .tex`"
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/pdfplatex
+```
+
+### &#x7e;/Library/TeXShop/bin/pdfeuptex {#e75e7a51}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/pdfeuptex
+
+***
+
+```
+#!/bin/sh
+euptex -synctex=1 "$1" && \
+dvipdfmx "`basename "$1" .tex`" 
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/pdfeuptex
+```
+
+### &#x7e;/Library/TeXShop/bin/pdfuplatex {#i78a916c}
+
+シェルスクリプトを作成します．
+
+***
+
+- &#x7e;/Library/TeXShop/bin/pdfuplatex
+
+***
+
+```
+#!/bin/sh
+uplatex -synctex=1 "$1" && \
+dvipdfmx "`basename "$1" .tex`"
+```
+
+***
+
+chmod で実行権限を付加します．
+
+```
+$ chmod +x ~/Library/TeXShop/bin/pdfuplatex
+```
 
 ### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
@@ -338,6 +433,104 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 ***
 
 #### 内部設定 {#ubede387}
+
+■ [&#x7e;/Library/TeXShop/bin/pdfeptex](/TeXShop/#u46327c0), [&#x7e;/Library/TeXShop/bin/pdfplatex](/TeXShop/#r809076b), pbibtex を使用する場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>パス設定</strong><br>
+　　　　(pdf)TeX (デフォルト:/usr/texbin)<br>
+　　　　<ins>/usr/texbin</ins><br>
+　　　　Distiller (Ghostscript) (デフォルト:/usr/local/bin)<br>
+　　　　<ins>/usr/local/bin</ins><br>
+
+<br>
+
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>&#x7e;/Library/TeXShop/bin/pdfeptex</ins><br>
+　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/pdfplatex</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
+
+<br>
+
+　　　　<strong>検索用コマンド</strong><br>
+　　　　kpsetool (デフォルト:kpsetool -w -n latex tex)<br>
+　　　　　<ins>kpsewhich -w -n latex tex</ins><br>
+
+<br>
+
+　　　　<strong>BibTeX エンジン</strong><br>
+　　　　デフォルト:bibtex<br>
+　　　　　<ins>pbibtex</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
+
+■ [&#x7e;/Library/TeXShop/bin/pdfeuptex](/TeXShop/#e75e7a51), [&#x7e;/Library/TeXShop/bin/pdfuplatex](/TeXShop/#i78a916c), upbibtex を使用する場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>書類</strong>　\]\[　<strong>プレビュー</strong>　\]\[　<strong>コンソール</strong>　\]\[　<strong>タイプセット</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>内部設定</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>コピー</strong>　\]\[　<strong>詳細</strong>　\]</span></ins><br>
+
+<br>
+
+　　　　<strong>パス設定</strong><br>
+　　　　(pdf)TeX (デフォルト:/usr/texbin)<br>
+　　　　<ins>/usr/texbin</ins><br>
+　　　　Distiller (Ghostscript) (デフォルト:/usr/local/bin)<br>
+　　　　<ins>/usr/local/bin</ins><br>
+
+<br>
+
+　　　　<strong>pdfTeX</strong>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX + dvips + distiller</strong><br>
+　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　Tex　　 <span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdftex -file-line-error -synctex=1</ins>　　　　　　　<ins>&#x7e;/Library/TeXShop/bin/pdfeuptex</ins><br>
+　　　　　Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span>　　　　　　　　　　　　　　　 Latex　<span style="color:Black;background-color:#EEEEEE;">(<ins> デフォルト </ins>)</span><br>
+　　　　　<ins>pdflatex -file-line-error -synctex=1</ins>　　　　　　<ins>&#x7e;/Library/TeXShop/bin/pdfuplatex</ins><br>
+　　　　　☐ Shell Escape を警告　　　　　　　　　　　　　 ☐ PostScript ファイルを保存<br>
+
+<br>
+
+　　　　<strong>検索用コマンド</strong><br>
+　　　　kpsetool (デフォルト:kpsetool -w -n latex tex)<br>
+　　　　　<ins>kpsewhich -w -n latex tex</ins><br>
+
+<br>
+
+　　　　<strong>BibTeX エンジン</strong><br>
+　　　　デフォルト:bibtex<br>
+　　　　　<ins>upbibtex</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
+
+***
 
 ■ [&#x7e;/Library/TeXShop/bin/eptex2pdf-utf8](/TeXShop/#v264f812), [&#x7e;/Library/TeXShop/bin/platex2pdf-utf8](/TeXShop/#c6b7a84a), pbibtex を使用する場合
 
