@@ -139,6 +139,7 @@ GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅
 - [tex.vim : Indent file for TeX](http://www.vim.org/scripts/script.php?script_id=218)
     - [vim-scripts/tex.vim--Tanzler - GitHub](https://github.com/vim-scripts/tex.vim--Tanzler)
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
+- [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
 - [vim 快適な論文執筆環境の整備 -その1-](http://kuni255.blogspot.jp/2011/12/vim-1.html)
 - [vim 快適な論文執筆環境の整備 -その2-](http://kuni255.blogspot.jp/2011/12/vim-2.html)
