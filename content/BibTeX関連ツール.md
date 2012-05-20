@@ -155,8 +155,8 @@ BibTeX形式の出力があるWebアプリが公開されている
 |  findbib  | UNIX, lynx  | 決められたキーで引用しておくと、WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム  |
 | Biblos |  Windows95/NT  |  bibファイルを公開するためのcgi  |
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール。[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている。 |
-| [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeX クローン。文献スタイルファイルは独自型式のものを用いる。 |
-| [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeX互換の文献管理ソフト |
+| [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeXコマンド・クローン。文献スタイルファイルは独自型式のものを用いる。 |
+| [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeXコマンド・クローン。書誌データはYAML形式で書く |
 
 <br>
 
