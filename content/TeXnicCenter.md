@@ -1406,6 +1406,16 @@ Command <ins>/c echo tasklist /fi "IMAGENAME eq Foxit Reader.exe" /nh findstr "F
 
 Ctrl + Space で補完ができます．
 
+ite とタイプして Ctrl + Space をタイプすると
+
+```
+\begin{itemize}
+	\item 
+\end{itemize}
+```
+
+を補完してくれます．
+
 ### プロファイルの変更 {#t5967111}
 
 \[Build\]-\[Select Output Profile...\] またはツールバーからプロファイルを変更できます．
