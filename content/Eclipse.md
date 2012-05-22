@@ -35,7 +35,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 ### Windows, Linux, Solaris {#h067ff28}
 
 - [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
-    - [ミラーサイト](http://www.oracle.com/technetwork/jp/java/javase/downloads/)
+    <!-- - -[[ミラーサイト:http://www.oracle.com/technetwork/jp/java/javase/downloads/]] -->
 
 から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
 
