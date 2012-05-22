@@ -22,7 +22,7 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX-ja {#nec94db0}
 
-LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))、W32TeX, TeX Live 2011 で利用可能です。
+LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))、W32TeX, TeX Live 2012, TeX Live 2011 で利用可能です。
 
 - [LuaTeX-ja（仮称）プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
@@ -57,7 +57,8 @@ ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
-tlmgr でパッケージをアップデートします．
+TeX Live 2012 には luatexja が含まれています．<br>
+TeX Live 2011 で luatexja をインストールする場合は tlmgr でパッケージをアップデートします．<br>
 
 ```
 $ sudo `which tlmgr` update --self --all
