@@ -53,14 +53,24 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 
 ```
 pdfopen --file hoge.pdf
+```
+
+または
+
+```
 echo open hoge.pdf | pdfdde
 ```
 
 ### PDF ファイルを閉じる {#h619779d}
 
 ```
-pdfclose --file hoge.pdf
-echo close hoge.pdf | pdfdde
+pdfopen --file hoge.pdf && pdfclose --file hoge.pdf
+```
+
+または
+
+```
+echo open hoge.pdf | pdfdde && echo close hoge.pdf | pdfdde
 ```
 
 ### Adobe Reader を終了する {#pb5aeda1}
@@ -71,8 +81,16 @@ echo exit | pdfdde
 
 ### 指定したページを表示する {#lc08871d}
 
+3ページ目を表示するには以下のようにします．
+
 ```
 pdfopen --file hoge.pdf && echo goto hoge.pdf 3 | pdfdde
+```
+
+または
+
+```
+echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 ```
 
 ### [Acrobat および Adobe Reader のコマンドラインオプション](http://kb2.adobe.com/jp/cps/510/510705.html) {#vb210974}
