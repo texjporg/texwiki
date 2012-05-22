@@ -1346,7 +1346,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-■ SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上 または 2011/05/11 よりも前の W32TeX の場合<br>
+■ SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
@@ -1355,32 +1355,6 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
-　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
-
-<br>
-
-　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
-　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
-■ SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
-　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[ForwardSearch("%fullfile","./%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
 　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 
 <br>
@@ -1465,7 +1439,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 <br>
 
 　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[DocClose("%fullfile")\]\[AppExit()\]</ins><br>
+　　　　コマンド： <ins>\[AppExit()\]</ins><br>
 　　　　サーバー： <ins>acroviewR10</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
