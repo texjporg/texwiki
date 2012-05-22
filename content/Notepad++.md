@@ -75,7 +75,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### 派生版 {#l02b5ab5}
 
-- [NotePad++本体 Shift-jis,Euc-jpに対応化 動的フォント読み込み対応化 npp-y](http://www.geocities.jp/freesftys/)
+<!-- -[[NotePad++本体 Shift-jis,Euc-jpに対応化 動的フォント読み込み対応化 npp-y:http://www.geocities.jp/freesftys/]] -->
 - [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
     - 公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
     - [Notepad++ EUC-JP 旧バージョン・更新履歴](http://www.geocities.jp/npp_euc_jp/euc_jp_log.html)
