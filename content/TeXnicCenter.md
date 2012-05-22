@@ -19,9 +19,8 @@ pukiwiki: "TeXnicCenter"
 
 TeXnicCenter は Windows 7, Vista, XP で動作する
 [LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html)
-ドキュメントを作成するための，多機能で使いやすい統合環境です．
-
-TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．
+ドキュメントを作成するための，多機能で使いやすい統合環境です．<br>
+TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．<br>
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
     - [TeXnicCenter News](http://www.texniccenter.org/news)
@@ -35,6 +34,7 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 ### リリース情報 {#da101e5c}
 
 2012-01-31 TeXnicCenter 2.0 Alpha 4<br>
+
 TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
 TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
 バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．<br>
@@ -381,7 +381,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\platex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
+<ins>-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -416,7 +416,7 @@ Path to the (La)TeX<br>
 <ins>C:\w32tex\bin\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-no-guess-input-enc -kanji=utf8 -src-specials -interaction=nonstopmode "%wm"</ins><br>
+<ins>-no-guess-input-enc -kanji=utf8 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -878,16 +878,20 @@ Executable path<br>
 <br>
 
 View project's output<br>
-◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
-Command <ins>\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
-Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 "%bm.dvi"</ins><br>
+
+<br>
 
 <br>
 
 Forward search<br>
-◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
-Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
-Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 "%bm.dvi"</ins><br>
+
+<br>
 
 <br>
 
@@ -928,7 +932,7 @@ Command <ins>-1 "%bm.dvi"</ins><br>
 Forward search<br>
 <span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
 
-Command <ins>-1 -s %l"%Wc" "%bm.dvi"</ins><br>
+Command <ins>-1 "%bm.dvi"</ins><br>
 
 <br>
 
@@ -1388,7 +1392,7 @@ Command <ins>/c echo "C:\Program Files\Foxit Software\Foxit Reader\Foxit Reader.
 Close document before running (La)TeX<br>
 <span style="color:#3333CC;">◎</span> Command line argument　◯ DDE command　　◯ Do not close<br>
 
-Command <ins>/c echo tasklist /fi "IMAGENAME eq Foxit Reader.exe" /nh findstr "Foxit Reader.exe" > null &amp;&amp; taskkill /im "Foxit Reader.exe" | cmd</ins><br>
+Command <ins>/c echo tasklist /fi "IMAGENAME eq Foxit Reader.exe" /nh findstr "Foxit Reader.exe" > nul &amp;&amp; taskkill /im "Foxit Reader.exe" | cmd</ins><br>
 
 <br>
 
@@ -1461,7 +1465,42 @@ Command line arguments to pass to the compiler: に -src-specials を追加し�
 
 ### forward search {#scf8c0d8}
 
-forward search は DVI Viewer の [dviout](/TeXnicCenter/#hc739c1c) の項を参考に設定してください．
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\w32tex\dviout\dviout.exe</ins><br>
+
+<br>
+
+View project's output<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
+
+<br>
+
+Forward search<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[PageOpen(# %l '%nc')\]\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+<br>
+
+<br>
+
+***
 
 ### inverse search {#zb03fb4c}
 
@@ -1477,7 +1516,46 @@ Command line arguments to pass to the compiler: に -src-specials を追加し�
 
 ### forward search {#f07fe018}
 
-forward search は DVI Viewer の [Yap](/TeXnicCenter/#u041709f) の項を参考に設定してください．
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Program Files\MiKTeX 2.9\miktex\bin\yap.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 "%bm.dvi"</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>-1 -s %l"%Wc" "%bm.dvi"</ins><br>
+
+<br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+<br>
+
+<br>
+
+***
 
 ### inverse search {#p696e2fe}
 
