@@ -9,6 +9,8 @@ pukiwiki: "LaTeXiT"
 
 ## [LaTeXiT](http://www.chachatelier.fr/latexit/) {#b58323c5}
 
+<img src="http://www.chachatelier.fr/latexit/images/latexit_128.png" alt="LaTeXiT" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## LaTeXiT とは {#j7c51563}
@@ -17,6 +19,12 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 - [LaTeXiT](http://www.chachatelier.fr/latexit/)
     <!-- -[[LaTeXiT:http://pierre.chachatelier.fr/latexit]] -->
+    - [Downloads](http://www.chachatelier.fr/latexit/latexit-downloads.php)
+        - [Beta](http://www.chachatelier.fr/latexit/latexit-beta.php)
+
+### リリース情報 {#sb3b1ab6}
+
+2011-06-13 LaTeXiT 2.4.1<br>
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
