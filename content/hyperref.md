@@ -122,6 +122,24 @@ W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmx�
 \fi
 ```
 
+補助面 (U+10000以上) の文字を使用する場合は [CMap UTF8-UTF16](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) を使用します．
+
+```
+\ifx\kanjiskip\undefined\else
+  \usepackage{atbegshi}
+  \ifx\ucs\undefined
+    \ifnum 42146=\euc"A4A2
+      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+    \else
+      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+    \fi
+  \else
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
+  \fi
+  \usepackage[dvipdfmx]{hyperref}
+\fi
+```
+
 \usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
 \usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
