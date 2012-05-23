@@ -190,6 +190,8 @@ SyncTeX にチェックを入れます．<br>
 
 ### PS/PDF {#ubd35880}
 
+PDF Reader は SumatraPDF がおすすめです．<br>
+
 #### [SumatraPDF](/SumatraPDF/) {#z50c8c10}
 
 ■ 32bit Windows の場合
