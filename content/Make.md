@@ -97,6 +97,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 
 ### OMake {#yf7ac218}
 
+- [Windowsで快適なLaTeX環境を構築する](http://nojima.hatenablog.com/entry/2012/01/12/205857)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
 <!-- *UNIX 互換 OS での TeX，pTeX，pLaTeX2e 等のインストール [#y9d94e5d] -->
