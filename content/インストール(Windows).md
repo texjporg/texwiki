@@ -22,19 +22,21 @@ W32TeX のインストールについては AbTeXInstaller - TeX Wiki または 
 
 ### [TeX Live](</TeX Live/>) {#ia336ed2}
 
+#### Win32 {#xab6bd01}
+
 W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
+
+#### [Cygwin](/Cygwin/) {#sfbd073e}
+
+Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
+
+- [Cygwin - TeX Wiki](/Cygwin/)
 
 ### [MiKTeX](/MiKTeX/) {#x2459fb9}
 
 W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューションもあります．
 
 - [MiKTeX - TeX Wiki](/MiKTeX/)
-
-### [Cygwin](/Cygwin/) {#sfbd073e}
-
-Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
-
-- [Cygwin - TeX Wiki](/Cygwin/)
 
 ## 新ドキュメントクラスのインストール {#k48ecf0f}
 
@@ -229,123 +231,86 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#e2433aac}
 
-#### [TeXworks](/TeXworks/) {#sca389c7}
+[TeXworks](/TeXworks/)
+: [TeXworks](/TeXworks/) をご覧ください．
 
-[TeXworks](/TeXworks/) をご覧ください．
+[Texmaker](/Texmaker/)
+: [Texmaker](/Texmaker/) をご覧ください．
 
-#### [Texmaker](/Texmaker/) {#q8c6a4e6}
+[LyX](/LyX/)
+: [LyX](/LyX/) をご覧ください．
 
-[Texmaker](/Texmaker/) をご覧ください．
+[TeXnicCenter](/TeXnicCenter/)
+: [TeXnicCenter](/TeXnicCenter/) をご覧ください．
 
-#### [LyX](/LyX/) {#s7fa0837}
+[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
+: [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
 
-[LyX](/LyX/) をご覧ください．
+[サクラエディタ](</サクラエディタ/>) + マクロ
+: [サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
 
-#### [TeXnicCenter](/TeXnicCenter/) {#kf5b1543}
+[Notepad++](/Notepad++/) + プラグイン
+: [Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
 
-[TeXnicCenter](/TeXnicCenter/) をご覧ください．
+jEdit + プラグイン + マクロ
+: jEdit#プラグイン<br>jEdit#マクロ<br>をご覧ください．
 
-#### [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) {#ra6693bf}
+[Geany](/Geany/) + GeanyLaTeX
+: [Geany](/Geany/) をご覧ください．
 
-[Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
+[gedit](/gedit/) + gedit-latex + 外部ツール
+: [gedit](/gedit/) をご覧ください．
 
-#### [サクラエディタ](</サクラエディタ/>) + マクロ {#l46875d6}
+[xyzzy](/xyzzy/) + tex-mode
+: [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>をご覧ください．
 
-[サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
+[Emacs](/Emacs/) + tex-mode or org-mode
+: [Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
 
-#### [Notepad++](/Notepad++/) + プラグイン {#k51d20b3}
-
-[Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
-
-#### jEdit + プラグイン + マクロ {#a1d0d5bc}
-
-jEdit#プラグイン<br>
-jEdit#マクロ<br>
-をご覧ください．
-
-#### [Geany](/Geany/) + GeanyLaTeX {#p462603b}
-
-[Geany](/Geany/) をご覧ください．
-
-#### [gedit](/gedit/) + gedit-latex + 外部ツール {#nb50a4dc}
-
-[gedit](/gedit/) をご覧ください．
-
-#### [xyzzy](/xyzzy/) + tex-mode {#s2425f0a}
-
-[xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>
-をご覧ください．
-
-#### [Emacs](/Emacs/) + tex-mode or org-mode {#z9deda13}
-
-[Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>
-をご覧ください．
-
-#### [Vim](/Vim/) + プラグイン {#s7ce6347}
-
-[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
+[Vim](/Vim/) + プラグイン
+: [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
 
 ### フリーウェア (無料) {#k0b8f900}
 
-#### EasyTeX {#i87678c7}
+EasyTeX
+: EasyTeX をご覧ください．
 
-EasyTeX をご覧ください．
+[WinShell](/WinShell/)
+: [WinShell](/WinShell/) をご覧ください．
 
-#### [WinShell](/WinShell/) {#l040a9c6}
+Yotuba TeX Editor
+: Yotuba TeX Editor をご覧ください．
 
-[WinShell](/WinShell/) をご覧ください．
+Masamichi
+: Masamichi をご覧ください．
 
-#### Yotuba TeX Editor {#hff91394}
+TeXE
+: TeXE をご覧ください．
 
-Yotuba TeX Editor をご覧ください．
+Mery + マクロ
+: Mery#マクロ をご覧ください．
 
-#### Masamichi {#d70fc64e}
+TeraPad + ツール
+: TeraPad#ツール をご覧ください．
 
-Masamichi をご覧ください．
-
-#### TeXE {#g0454558}
-
-TeXE をご覧ください．
-
-#### Mery + マクロ {#oab02ae1}
-
-Mery#マクロ をご覧ください．
-
-#### TeraPad + ツール {#a652512f}
-
-TeraPad#ツール をご覧ください．
-
-#### VxEditor + ツール {#eaa0beaf}
-
-VxEditor#ツール をご覧ください．
+VxEditor + ツール
+: VxEditor#ツール をご覧ください．
 
 ### シェアウェア {#yec6bbe1}
 
-#### [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ {#o8e43f26}
+[秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ
+: [秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
 
-[秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
-
-#### Sublime Text 2 (シェアウェア) + LaTeXTools (LaTeX Plugin for Sublime Text 2) {#o2535359}
-
-Sublime Text 2#LaTeXTools (LaTeX Plugin for Sublime Text 2) をご覧ください．
+Sublime Text 2 (シェアウェア) + LaTeXTools (LaTeX Plugin for Sublime Text 2)
+: Sublime Text 2#LaTeXTools (LaTeX Plugin for Sublime Text 2) をご覧ください．
 
 ### 製品 {#jc4ae1f8}
 
-#### InftyEditor (製品) {#w2b15f27}
+InftyEditor (製品)
+: InftyEditor をご覧下さい．<br>InftyEditor 学生版と InftyEditor 英語版はフリーウェア (無料) です．
 
-InftyEditor をご覧下さい．
+Scientific WorkPlace (製品)
+: Scientific WorkPlace をご覧ください．
 
-なお
-
-- InftyEditor 学生版
-- InftyEditor 英語版
-
-はフリーウェア (無料) です．
-
-#### Scientific WorkPlace (製品) {#p0ac379c}
-
-Scientific WorkPlace をご覧ください．
-
-#### WZ EDITOR (製品) {#cbee1e14}
-
-WZ EDITOR をご覧ください．
+WZ EDITOR (製品)
+: WZ EDITOR をご覧ください．
