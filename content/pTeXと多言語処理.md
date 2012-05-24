@@ -1568,6 +1568,7 @@ jEdit，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 Mery，
 [真魚［まな］](http://mana.ikuto.com/)，
+[gPad](http://mfactory.me/)，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [AkelPad](http://akelpad.sourceforge.net/)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
