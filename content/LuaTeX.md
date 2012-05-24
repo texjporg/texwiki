@@ -22,7 +22,8 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX-ja {#nec94db0}
 
-LuaTeX-ja は CTAN に submit され(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))、W32TeX, TeX Live 2012, TeX Live 2011 で利用可能です。
+LuaTeX-ja は CTAN に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
+LuaTeX-ja は W32TeX, TeX Live 2012, TeX Live 2011 で利用可能です。
 
 - [LuaTeX-ja（仮称）プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
@@ -61,7 +62,7 @@ TeX Live 2012 には luatexja が含まれています．<br>
 TeX Live 2011 で luatexja をインストールする場合は tlmgr でパッケージをアップデートします．<br>
 
 ```
-$ sudo `which tlmgr` update --self --all
+$ sudo tlmgr update --self --all
 ```
 
 ```
@@ -93,7 +94,8 @@ LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(
 
 #### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました {#o2818a24}
 
-[LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました
+[LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました．<br>
+LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．<br>
 
 LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。
 
