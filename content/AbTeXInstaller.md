@@ -227,6 +227,8 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [windows7(64bit)にTeXをインストール](http://kagoshima-au.blog.so-net.ne.jp/2012-05-24)
+- [TeX3インストーラが『情報ファイルの発見に失敗』するとき](http://shinobra.com/2012/05/sawanoboly/tex3_install_windows)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2010年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法](http://did2memo.net/2012/04/27/tex-uninstall/)
 - [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
