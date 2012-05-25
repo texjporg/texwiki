@@ -248,13 +248,16 @@ $ popd
 
 - [libxml2](http://xmlsoft.org/) をインストールします．
 
-<!-- $ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.7.8.tar.gz -->
-<!-- $ tar zxvf libxml2-2.7.8.tar.gz -->
+```
+$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz
+$ tar zxvf libxml2-2.8.0.tar.gz
+```
+
+<!-- $ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-git-snapshot.tar.gz -->
+<!-- $ tar zxvf libxml2-git-snapshot.tar.gz -->
 
 ```
-$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-git-snapshot.tar.gz
-$ tar zxvf libxml2-git-snapshot.tar.gz
-$ pushd libxml2-2.7.8
+$ pushd libxml2-2.8.0
 ```
 
 <!-- configure.in を修正します． -->
@@ -408,9 +411,9 @@ msgothic.ttc: "MS Gothic" "Regular"
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/snapshots/pixman-0.25.2.tar.gz
-$ tar zxvf pixman-0.25.2.tar.gz
-$ pushd pixman-0.25.2
+$ curl -R -L -O http://cairographics.org/snapshots/pixman-0.25.6.tar.gz
+$ tar zxvf pixman-0.25.6.tar.gz
+$ pushd pixman-0.25.6
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -514,9 +517,9 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.25.0.tar.bz2
-$ tar jxvf curl-7.25.0.tar.bz2
-$ pushd curl-7.25.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.26.0.tar.bz2
+$ tar jxvf curl-7.26.0.tar.bz2
+$ pushd curl-7.26.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
