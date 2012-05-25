@@ -1545,7 +1545,7 @@ fmtutil --byfmt platex
 利用可能になっています（現在は和文とラテン文字のみの対応）。また
 [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
 [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-（pTeX の内部 Unicode 版）の Ver.1.00 もリリースされました
+（pTeX の内部 Unicode 版）の Ver.1.10 もリリースされました
 （現在は安定版，なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。
 
 ### Unicode のテキストファイルを作るには？ {#j8063098}
@@ -1568,7 +1568,7 @@ jEdit，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 Mery，
 [真魚［まな］](http://mana.ikuto.com/)，
-[gPad](http://mfactory.me/)，
+gPad，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [AkelPad](http://akelpad.sourceforge.net/)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
