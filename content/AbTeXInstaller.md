@@ -173,19 +173,19 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　14.5MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
 　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　429KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
-　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　無い　　　448KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　448KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
 　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　148KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　GSview<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　95.1MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　130MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　23.2MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　5.4MB　　　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　354KB　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　無い　　　206KB　　 　　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　206KB　　 　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣<br>
 　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
@@ -195,6 +195,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
 　　　　 ∣☑pmx.tar.xz　　　　　　　　　　　　　　　無い　　　2.4MB<br>
+　　　　 ∣☑pstricks.tar.xz　　　　　　　　　　　　無い　　　89.2MB<br>
 　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　88KB<br>
 　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.5MB<br>
 　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　552KB<br>
