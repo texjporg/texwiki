@@ -705,7 +705,6 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ## ビルダー設定 (OS X) {#vcf0d397}
 
-tlptexlive をインストールします．<br>
 動作未確認です．<br>
 OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされています．<br>
 設定で \[Browse...\] を使用するとリンク先の eptex に変更されてしまい LaTeX 文書がタイプセットできなくなるので \[Browse...\] は使用せずに直接パスを指定してください．<br>
@@ -948,8 +947,6 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 ***
 
 ## ビルダー設定 (Linux) {#w3b7087c}
-
-tlptexlive をインストールします．<br>
 
 ***
 
@@ -1638,7 +1635,6 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ## ビューアー設定 (OS X) {#dddd18cb}
 
-tlptexlive をインストールします．<br>
 動作未確認です．<br>
 
 ### PDF ファイル ビューアー {#x7261881}
@@ -2027,8 +2023,6 @@ tlptexlive をインストールします．<br>
 ***
 
 ## ビューアー設定 (Linux) {#c2845a3f}
-
-tlptexlive をインストールします．<br>
 
 ### PDF ファイル ビューアー {#x367d3a8}
 
