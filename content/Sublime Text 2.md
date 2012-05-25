@@ -17,10 +17,13 @@ Sublime Text 2 は Windows, OS X, Linux で動作するテキストエディタ�
 
 - [Sublime Text 2](http://www.sublimetext.com/2)
 - [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
+- [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
     - TextMate のバンドルが使用可能
 - [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 
-<!-- **Windows [#m51226c8] -->
+### Windows {#m51226c8}
+
+- [Windows 版の Sublime Text 2 を使う](http://blog.segu.jp/2012/05/windows-sublime-text-2.html)
 
 ### OS X {#d13b8a86}
 
