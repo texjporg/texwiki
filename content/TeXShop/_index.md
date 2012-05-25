@@ -35,8 +35,6 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
-tlptexlive をインストールします．
-
 ### &#x7e;/Library/TeXShop/bin/pdfeptex {#u46327c0}
 
 シェルスクリプトを作成します．
