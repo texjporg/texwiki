@@ -22,9 +22,154 @@ W32TeX のインストールについては AbTeXInstaller - TeX Wiki または 
 
 ### [TeX Live](</TeX Live/>) {#ia336ed2}
 
-#### Win32 {#xab6bd01}
+TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
-W32TeX ではなく TeX Live をインストールしたい方は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
+- [TeX Live - TeX Wiki](</TeX Live/>)
+
+#### TeX Live 2012 (Win32) {#ca517ea6}
+
+***
+
+install-tl.zip を展開します．<br>
+
+***
+
+- install-tl.bat の場合
+
+install-tl.bat をダブルクリックします．<br>
+TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
+
+```
+>install-tl.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+```
+
+とします．<br>
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　<span style="color:White;"><strong>Install-tl</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+<br>
+
+　　　TeX Live 2012 の導入<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　1/5<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　TeX Live 2012 の導入へようこそ。<br>
+　　　&#x68;ttp://tug.org/texlive<br>
+
+<br>
+
+　　　このウィザードが、あなたのインストールのご案内をします。<br>
+
+<br>
+
+　　　設定可能な、高度な導入を行うには、導入ガイドの<br>
+　　　ウェブページをごらんください。<br>
+　　　あるいは install-tl-advanced.bat を使用してください。<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　☐ Change default repository<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　\[　　終了　　\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[　　次へ→　　\]<br>
+
+***
+
+インストールする場合は \[　　次へ→　　\] をクリックします．<br>
+インストールしない場合は \[　　終了　　\] をクリックします．<br>
+
+***
+
+- install-tl-advanced.bat の場合
+
+install-tl-advanced.bat をダブルクリックします．<br>
+TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
+
+```
+>install-tl-advanced.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+```
+
+とします．<br>
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　<span style="color:White;"><strong>Install-tl</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　TeX Live 2012 の導入<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------基本情報-------<br>
+　　選択したスキーム　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　scheme-full　　　　　　　　　　 \[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------追加設定-------<br>
+　　標準コレクション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ 変更 \]<br>
+　　言語コレクション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　85 コレクション（全 85 中） (必要ディスク領域: 3178MB)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
+　　かんたん設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
+　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2012　　　　　　　　　 \[ 変更 \]<br>
+　　TEXMFLOCAL（サイト固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\texmf-local　　　　　　　 \[ 変更 \]<br>
+　　TEXMFSYSVAR（自動生成データ用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\2012\texmf-var　　　　　 \[ 変更 \]<br>
+　　TEXMFSYSCONFIG（ローカル設定用ディレクトリ）　　　　　　　　　　　　　　C:\texlive\2012\texmf-config　　　　　 \[ 変更 \]<br>
+　　TEXMFHOME（ユーザ固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　　　　　~\texmf　　　　　　　　　　　　　\[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------オプション-------<br>
+　　既定用紙寸法　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　A4　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　\write18 を用いて制限リスト中のプログラムを実行することを許可　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　フォーマットファイルをすべて生成　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　font と macro の doc ツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　font と macro のソースツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　レジストリの PATH 設定を調整する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　メニュー短絡キーを追加　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　ファイル関連付けを変更する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規のみ　　　　　　　　　　　　　　\[ 変更 \]<br>
+　　TeXworks フロントエンドを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　\[ TeX Live の導入 \]　　\[ 終了 \]<br>
+
+***
+
+インストールする場合は \[ TeX Live の導入 \] をクリックします．<br>
+インストールしない場合は \[ 終了 \] をクリックします．<br>
+
+#### TeX Live 2011 (Win32) {#pad973ce}
+
+- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
+- [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
+    - [第2回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/765)
+    - [第1回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/739)
+- [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
+- [Windows7でTeX環境を作った](http://barippi.blog.fc2.com/blog-entry-1309.html)
+- [TeXLiveです](http://d.hatena.ne.jp/eggtoothcroc/20120219/p1)
+- [BootcampにWindows 7 (64bit) とTeXLive2011をインストールする.](http://logic.math.kyushu-u.ac.jp/users/ym/weblog/43ed1/BootcampWindows_7_64bit_TeXLive2011.html)
+- [texlive2011をwindows7 64bitにインストール（メモ）](http://hidefumi-h.blog.so-net.ne.jp/2011-11-18)
+- [TeX Live 2011．とりあえず思ったことを書き連ねておく．自分用メモ．](http://d.hatena.ne.jp/abenori/20111031)
+- [TeX Live 2011を家のデスクトップに入れてみた](http://d.hatena.ne.jp/abenori/20111029)
+- [実行してはいけません！　TeXLive2011(Windows)でKozukaフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14245554.html)
+- [TeXLive2011 for Windows のまとめ](http://blogs.yahoo.co.jp/igproj_fusion/14243623.html)
+- [TeXLive2011(Windows)でMSフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14243228.html)
+- [TeXLive2011(Windows)でヒラギノフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14240953.html)
+- [TeXLive2011(Windows)でIPAフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14239904.html)
+- [何も申し上げることはござんせん（texlive2011 on Win）](http://blogs.yahoo.co.jp/igproj_fusion/14226801.html)
+- [texlive-2011 on Windows](http://blogs.yahoo.co.jp/igproj_fusion/13511126.html)
+    <!-- -[[texlive-2010 on Windows (rev.):http://blogs.yahoo.co.jp/igproj_fusion/12693903.html]] -->
+    <!-- -[[texlive-2010 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/11147207.html]] -->
 
 #### [Cygwin](/Cygwin/) {#sfbd073e}
 
@@ -186,8 +331,8 @@ ruby.exe を C:\Ruby193\bin にインストールした場合は
 ## PS_View のインストール (オプション) {#kcd19930}
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
-TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2011\tlpkg\tlpsv 以下に配置されています．<br>
-C:\texlive\2011\bin\win32\psv.exe をダブルクリックすると PS_View が起動します．<br>
+TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2012\tlpkg\tlpsv 以下に配置されています．<br>
+C:\texlive\2012\bin\win32\psv.exe をダブルクリックすると PS_View が起動します．<br>
 
 公式サイトで配布されている PS_View を起動するには，psv.wx.lua の gsargs の dllloc
 
