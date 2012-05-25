@@ -1131,7 +1131,7 @@ main();
 
 ***
 
-### forward search (SumatraPDF v1.9.4622 未満の場合) {#t56d91ba}
+### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#t56d91ba}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
