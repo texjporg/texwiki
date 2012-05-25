@@ -122,7 +122,8 @@ W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmx�
 \fi
 ```
 
-補助面 (U+10000以上) の文字を使用する場合は [CMap UTF8-UTF16](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) を使用します．
+補助面 (U+10000以上) の文字を使用する場合は [CMap UTF8-UTF16](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) を使用します．<br>
+2012/05/25 以降の W32TeX の場合は UTF8-UTF16 はインストール済みです．<br>
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -817,7 +818,7 @@ hyperrefパッケージをデフォルトで読み込む．
       \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
     \fi
   \else
-    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
   \fi
   \usepackage[dvipdfmx]{hyperref}
 \fi
