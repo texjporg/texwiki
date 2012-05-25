@@ -63,7 +63,7 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
   \else
     \documentclass[uplatex,12pt,papersize]{jsarticle}
     \usepackage{atbegshi}
-    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
   \fi
   \usepackage[dvipdfmx]{hyperref}
 \fi
