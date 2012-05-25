@@ -48,6 +48,7 @@ powerdot は dvipdfmx に対応していないので、[PDFを作る](<http://ok
 
 ### listings {#vb8e8e28}
 
+- 2012/05/25 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - powerdot 2011/09/15 v1.4h では必要ありません
 - [CTAN:help/Catalogue/entries/listings.html](https://mirror.ctan.org/help/Catalogue/entries/listings.html)
 
