@@ -104,7 +104,7 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 
 (u)platex + dvipdfmx で，日本語を使用する場合は プリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
 [UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
-W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
+TeX Live 2012, W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -123,7 +123,7 @@ W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmx�
 ```
 
 補助面 (U+10000以上) の文字を使用する場合は [CMap UTF8-UTF16](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) を使用します．<br>
-2012/05/25 以降の W32TeX の場合は UTF8-UTF16 はインストール済みです．<br>
+TeX Live 2012, 2012/05/25 以降の W32TeX の場合は UTF8-UTF16 はインストール済みです．<br>
 
 ```
 \ifx\kanjiskip\undefined\else
