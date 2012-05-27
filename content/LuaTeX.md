@@ -22,14 +22,26 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX-ja {#nec94db0}
 
-LuaTeX-ja は CTAN に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
-LuaTeX-ja は W32TeX, TeX Live 2012, TeX Live 2011 で利用可能です。
+LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
 
-- [LuaTeX-ja（仮称）プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
+- [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
     - [LuaTeX-ja の使い方](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
     - [git.sourceforge.jp Git - luatex-ja/luatexja.git/summary](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git)
+
+### 利用可能な TeX ディストリビューション {#ca58332d}
+
+LuaTeX-ja は
+
+- [TeX Live](</TeX Live/>) 2012, 2011
+    - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
+        - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+- [W32TeX](/W32TeX/) (luatexja.tar.xz)
+- [MiKTeX](/MiKTeX/)
+    - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
+
+で利用可能です．
 
 ### ダウンロード {#xa9091b6}
 
@@ -71,10 +83,19 @@ $ sudo tlmgr update --self --all
 ...
 ```
 
-LuaTeX-ja は TeX Live のリポジトリに含まれています．
+### 注意点 {#vbed1356}
 
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+LuaTeX 開発版のソースを追っかけて自分でコンパイルしている場合，r4433 以降は （内部の lpeg が新しくなった関係で luaotfload パッケージが動かなくなったので）利用できません． そのため，r4432 以前を使用して下さい．<br>
+W32TeX における LuaTeX 開発版 (luatex-dev-w32.tar.xz) では，2012/05/26 <strong>以外</strong>のものであれば大丈夫のようです．<br>
+
+現状では e-pTeX と比べると[コンパイルに時間がかかります](http://d.hatena.ne.jp/abenori/20110906)．<br>
+mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
+
+使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
+jarticle や jsarticle などの pTeX の使用を前提としたものは使用できません．<br>
+
+使用可能な文字コードは UTF-8 です．<br>
+Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 ### 不具合 {#m2b9f4bc}
 
@@ -119,19 +140,6 @@ l.4 $\bm{a}
 これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
 
 - [\mathcode と \omathcode と \Umathcode と](http://d.hatena.ne.jp/zrbabbler/20120509/1336584479)
-
-### 注意点 {#vbed1356}
-
-W32TeX をお使いの方は，2012/05/10 以降の版に更新して下さい．これより前の版ではエラーが発生する可能性があります．<br>
-
-現状では e-pTeX と比べると[コンパイルに時間がかかります](http://d.hatena.ne.jp/abenori/20110906)．<br>
-mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
-
-使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
-jarticle や jsarticle などの pTeX の使用を前提としたものは使用できません．<br>
-
-使用可能な文字コードは UTF-8 です．<br>
-Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 ### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#te382979}
 
