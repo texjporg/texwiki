@@ -14,7 +14,7 @@ pukiwiki: "MiKTeX"
 
 ### 注意事項 {#e87c6af7}
 
-MiKTeX にも platex.exe がありますが，日本語 pTeX ではないので日本語を使う場合は [XeTeX](/XeTeX/) や [LuaTeX](/LuaTeX/) をおすすめします．
+MiKTeX にも platex.exe がありますが，日本語 pTeX ではないので日本語を使う場合は [LuaTeX](/LuaTeX/) や [XeTeX](/XeTeX/) をおすすめします．
 
 ```
 >platex.exe
