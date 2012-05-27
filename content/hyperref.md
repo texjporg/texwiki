@@ -71,12 +71,14 @@ PXjahyper パッケージが使用できない場合は以下のように \texor
  pdfauthor={ななしのごんべぇ},%
  pdfsubject={hyperref入門・演習},%
  pdfkeywords={TeX; dvipdfmx; hyperref; color;}]{hyperref}
+\usepackage{pxjahyper}
 ```
 
 または， \hypersetup{オプション} を使用して
 
 ```
 \usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
 \hypersetup{%
  bookmarksnumbered=true,%
  colorlinks=true,%
@@ -100,9 +102,9 @@ v6.75e で dvipdfmx が指定できるようになりました．
 
 のどちらかを試してみてください．
 
-(u)platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．
-
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
+
+#### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
 
 (u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．<br>
 
@@ -154,7 +156,21 @@ TeX Live 2012, 2012/05/25 以降の W32TeX の場合は UTF8-UTF16 はインス�
 \usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
 \usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
-lualatex, xelatex では必要ありません．
+(u)platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．<br>
+platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．<br>
+uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
+
+```
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+ bookmarksnumbered=true,%
+ colorlinks=true,%
+ setpagesize=false,%
+ pdftitle={LaTeX研修課程},%
+ pdfauthor={ななしのごんべぇ},%
+ pdfsubject={hyperref入門・演習},%
+ pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
+```
 
 lualatex の場合は，hyperref のオプションに
 
@@ -205,21 +221,6 @@ xelatex の場合は、指定してもしないでも文字化けしないしお
 <!-- たしかに xdvipdfmx で変換しないと hyperref を使わずにしおりを作成する場合に -->
 <!-- フィルターを書かなければいけなくなりそうですね． -->
 <!-- 詳細な説明をしていただいてありがとうございます．kakuto さん． -->
-
-platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．<br>
-uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
-
-```
-\usepackage[dvips]{hyperref}
-\hypersetup{%
- bookmarksnumbered=true,%
- colorlinks=true,%
- setpagesize=false,%
- pdftitle={LaTeX研修課程},%
- pdfauthor={ななしのごんべぇ},%
- pdfsubject={hyperref入門・演習},%
- pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
-```
 
 #### オプション一覧表 {#re898c38}
 
@@ -834,37 +835,6 @@ hyperrefパッケージと同じ(?) \urlコマンドを提供する．
 #### beamerクラス {#z7cec6eb}
 
 hyperrefパッケージをデフォルトで読み込む．
-
-### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
-
-(u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．<br>
-
-```
-\usepackage[dvipdfmx]{hyperref}
-\usepackage{pxjahyper}
-```
-
-使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
-PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
-
-```
-\ifx\kanjiskip\undefined\else
-  \usepackage{atbegshi}
-  \ifx\ucs\undefined
-    \ifnum 42146=\euc"A4A2
-      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
-    \else
-      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-    \fi
-  \else
-    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
-  \fi
-  \usepackage[dvipdfmx]{hyperref}
-\fi
-```
-
-\usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
-\usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
