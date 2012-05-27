@@ -74,7 +74,7 @@ W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.
 　　　　<ins>C:\w32tex\\</ins><br>
 　　　　※ 保存先、インストール先には全角文字やスペースの入ったフォルダ名は使用できません．<br>
 　　　　URL<br>
-　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/</ins><br>
+　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/</ins><br> <!-- 　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/%%%&br; -->
 　　　　　　☐一覧以外を使う（↓に入力）<br>
 　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otf と luatex のパッケージを変更してインストールする場合は \[高度な設定\] をクリック<br>
@@ -116,18 +116,18 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 <br>
 
-　　　　dvioutのURL<br>
-　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x66;tp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/</ins></span><br> <!-- 　　　　　　　　☐一覧以外を使う（↓に入力）&br; -->
-　　　　　　　　☑一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/TeX/dviout/current/</ins><br>
-　　　　GhostscriptのURL<br>
-　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/</ins></span><br> <!-- 　　　　　　　　☐一覧以外を使う（↓に入力）&br; -->
-　　　　　　　　☑一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/gs/</ins><br>
-　　　　GSviewのURL<br>
-　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins></span><br> <!-- 　　　　　　　　☐一覧以外を使う（↓に入力）&br; -->
-　　　　　　　　☑一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.kddilabs.jp/CTAN/support/ghostscript/ghostgum/</ins><br>
+　　　　dvioutのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x66;tp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/%%%};&br; -->
+　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/dviout/</ins><br>
+　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
+　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/dviout/current/%%%&br; -->
+　　　　GhostscriptのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x68;ttp://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/%%%};&br; -->
+　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/</ins><br>
+　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
+　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/gs/%%%&br; -->
+　　　　GSviewのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/%%%};&br; -->
+　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins><br>
+　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
+　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/CTAN/support/ghostscript/ghostgum/%%%&br; -->
 　　　　※ 保存先，proxy，portの設定はTeXのものを使います．<br>
 
 ***
