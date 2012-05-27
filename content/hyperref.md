@@ -19,7 +19,7 @@ pukiwiki: "hyperref"
 
 ### 注意点 {#he2b8021}
 
-#### hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
+#### hyperref を使用するとページサイズの値がおかしくなる → hyperref のオプションに setpagesize=false を指定する {#v71488f4}
 
 - [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
 - [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
@@ -43,9 +43,11 @@ jsclasses を使用している場合は以下のようにクラスオプショ�
     \documentclass[papersize]{jsarticle}
     ```
 
-#### "--"が hyperref で正しく扱われず，しおりが変になる {#d46c2828}
+#### "--"が hyperref で正しく扱われず，しおりが変になる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#d46c2828}
 
-以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
+[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すれば文字化けせずに表示できるようになります．([hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照．)
+
+PXjahyper パッケージが使用できない場合は以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
 
 ```
 \section{\texorpdfstring{a--b}{a\055\055b}}
@@ -74,7 +76,7 @@ jsclasses を使用している場合は以下のようにクラスオプショ�
 または， \hypersetup{オプション} を使用して
 
 ```
-\usepackage[dvips]{hyperref}
+\usepackage[dvipdfmx]{hyperref}
 \hypersetup{%
  bookmarksnumbered=true,%
  colorlinks=true,%
@@ -102,7 +104,15 @@ v6.75e で dvipdfmx が指定できるようになりました．
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
-(u)platex + dvipdfmx で，日本語を使用する場合は プリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
+(u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．<br>
+
+```
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+```
+
+使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
+PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
 [UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
 TeX Live 2012, W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
@@ -160,7 +170,15 @@ unicode=true
 
 を追加します．
 
+```
+\usepackage[pdftex,pdfencoding=auto]{hyperref}
+```
+
 xelatex の場合は、指定してもしないでも文字化けしないしおりになります。
+
+```
+\usepackage[xetex]{hyperref}
+```
 
 <!-- 以前は何も指定しなくても文字化けせずにしおりが作成できていたのですが， -->
 <!-- W32TeX 2011-11-06 版の hyperref v6.82j で xelatex で unicode オプション -->
@@ -188,9 +206,20 @@ xelatex の場合は、指定してもしないでも文字化けしないしお
 <!-- フィルターを書かなければいけなくなりそうですね． -->
 <!-- 詳細な説明をしていただいてありがとうございます．kakuto さん． -->
 
-platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．
+platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．<br>
+uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
 
-uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．
+```
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+ bookmarksnumbered=true,%
+ colorlinks=true,%
+ setpagesize=false,%
+ pdftitle={LaTeX研修課程},%
+ pdfauthor={ななしのごんべぇ},%
+ pdfsubject={hyperref入門・演習},%
+ pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
+```
 
 #### オプション一覧表 {#re898c38}
 
@@ -807,6 +836,16 @@ hyperrefパッケージと同じ(?) \urlコマンドを提供する．
 hyperrefパッケージをデフォルトで読み込む．
 
 ### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
+
+(u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．<br>
+
+```
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+```
+
+使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
+PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
 
 ```
 \ifx\kanjiskip\undefined\else
