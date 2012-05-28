@@ -19,7 +19,7 @@ pukiwiki: "hyperref"
 
 ### 注意点 {#he2b8021}
 
-#### hyperref を使用するとページサイズの値がおかしくなる → hyperref のオプションに setpagesize=false を指定する {#v71488f4}
+#### hyperref を使用するとページサイズの値がおかしくなる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#v71488f4}
 
 - [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
 - [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
@@ -27,7 +27,10 @@ pukiwiki: "hyperref"
 - [hyperrefを使うとページサイズがおかしくなる](http://glsharp.blogspot.jp/2010/04/hyperref.html)
 - [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
 
-以下ように hyperref のオプションに setpagesize=false を指定することで回避可能です．
+[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) v0.3 以降を使用するとページサイズを正しい値に修正してくれます．
+([pxjahyper パッケージ](http://d.hatena.ne.jp/zrbabbler/20120528/1338221936) を参照．)
+
+PXjahyper パッケージが使用できない場合は hyperref のオプションに setpagesize=false を指定して回避することも可能です．
 
 - hyperref のオプションに setpagesize=false を指定する
 
@@ -35,7 +38,7 @@ pukiwiki: "hyperref"
     \usepackage[dvipdfmx,setpagesize=false]{hyperref}
     ```
 
-jsclasses を使用している場合は以下のようにクラスオプションに papersize を指定しても OK です．
+jsclasses を使用している場合はクラスオプションに papersize を指定しても OK です．
 
 - クラスオプションに papersize を指定する
 
@@ -45,12 +48,12 @@ jsclasses を使用している場合は以下のようにクラスオプショ�
 
 #### "--"が hyperref で正しく扱われず，しおりが変になる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#d46c2828}
 
-[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すれば文字化けせずに表示できるようになります．([hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照．)
+[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すれば文字化けせずに表示できるようになります．([「PXjahyper」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=PXjahyper) を参照．)
 
-PXjahyper パッケージが使用できない場合は以下のように \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
+PXjahyper パッケージが使用できない場合は \texorpdfstring{texstring}{pdfstring} を使って pdfstring の方を8進数表記で書くことで回避可能です．
 
 ```
-\section{\texorpdfstring{a--b}{a\055\055b}}
+\section{a\texorpdfstring{--}{\055\055}b}
 ```
 
 ### 指定可能なオプション {#za8c61cb}
