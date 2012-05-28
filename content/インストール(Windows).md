@@ -435,6 +435,9 @@ TeXE
 Mery + マクロ
 : Mery#マクロ をご覧ください．
 
+gPad + マクロ
+: gPad#マクロ をご覧ください．
+
 TeraPad + ツール
 : TeraPad#ツール をご覧ください．
 
