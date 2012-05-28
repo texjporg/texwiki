@@ -30,8 +30,8 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ### リリース情報 {#td599942}
 
+2012-05-28 TeXShop (v 2.45)<br>
 2012-05-27 TeXShop (v 3.10)<br>
-2011-06-29 TeXShop (v 2.43)<br>
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
