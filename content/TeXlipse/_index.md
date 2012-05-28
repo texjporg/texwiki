@@ -102,12 +102,32 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 ## 不具合 {#t2a5d9cf}
 
-### TeXlipse 1.4.1 で Windows 7 (64bit) で Adobe Reader で PDF ファイルを表示しようとするとエラーメッセージが表示される → TeXlipse 1.4.2 で 64-bit Windows に対応しました {#p7159fd0}
+[SourceForge.net: TeXlipse: Bugs](http://sourceforge.net/tracker/?group_id=133306&atid=726818) を参照．
 
-<strong>TeXlipse 1.4.2 で 64-bit Windows に対応しました．</strong>
+### TeXlipse 1.5.0 で \bibliography がうまく動作しない {#i3d2f9c0}
 
-- [SourceForge.net: TeXlipse: Detail: 3050201 - DDEClient 32 on win7 amd64](http://sourceforge.net/tracker/index.php?func=detail&aid=3050201&group_id=133306&atid=726819) → Fixed
+- [SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0](http://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818)
 
+### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される → コメント %### を使用する {#i0880f90}
+
+- [SourceForge.net: TeXlipse: Detail: 3498342 - Key XXX is undefined warning](http://sourceforge.net/tracker/index.php?func=detail&aid=3498342&group_id=133306&atid=726818)
+
+\cite{XXX} で Key XXX is undefined という警告が表示される場合は
+
+```
+%###
+\cite{XXX}
+%###
+```
+
+とすることで警告を抑制できます．
+
+<!-- **TeXlipse 1.4.1 で Windows 7 (64bit) で Adobe Reader で PDF ファイルを表示しようとするとエラーメッセージが表示される → TeXlipse 1.4.2 で 64-bit Windows に対応しました [#p7159fd0] -->
+<!--  -->
+<!-- ''TeXlipse 1.4.2 で 64-bit Windows に対応しました．'' -->
+<!--  -->
+<!-- -[[SourceForge.net: TeXlipse: Detail: 3050201 - DDEClient 32 on win7 amd64>http://sourceforge.net/tracker/index.php?func=detail&aid=3050201&group_id=133306&atid=726819]] → Fixed -->
+<!--  -->
 <!-- この問題の解決策が，TeXlipse の [[FAQ [Internet Archive]:http://web.archive.org/web/20110713114656/http://texlipse.sourceforge.net/faq.php]] にあります． -->
 <!--  -->
 <!-- [[ここ:http://texlipse.sourceforge.net/ddeclient64bit.zip]] から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします． -->
