@@ -111,8 +111,12 @@ TeraPad はシンプルなテキストエディタです。主な機能は下記
 ### リリース情報 {#gc342619}
 
 2011年2月17日 TeraPad Ver.1.08<br>
+
 TeraPad Ver.0.93 およびそれ以前には [TeraPad における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN48097065/) が存在します．<br>
 最新版へアップデートしてください．<br>
+
+- [情報処理推進機構：プレス発表：記事：「TeraPad」におけるセキュリティ上の弱点（脆弱性）の注意喚起](http://www.ipa.go.jp/about/press/20101021_2.html)
+- [JVNDB-2010-000045 - JVN iPedia - 脆弱性対策情報データベース (TeraPad における DLL 読み込みに関する脆弱性)](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000045.html)
 
 ## 文字コード {#fbac96c1}
 
