@@ -104,9 +104,9 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 [SourceForge.net: TeXlipse: Bugs](http://sourceforge.net/tracker/?group_id=133306&atid=726818) を参照．
 
-### TeXlipse 1.5.0 で \bibliography がうまく動作しない {#i3d2f9c0}
-
-- [SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0](http://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818)
+<!-- **TeXlipse 1.5.0 で \bibliography がうまく動作しない [#i3d2f9c0] -->
+<!--  -->
+<!-- -[[SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0:http://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818]] -->
 
 ### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される → コメント %### を使用する {#i0880f90}
 
