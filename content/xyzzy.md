@@ -768,7 +768,7 @@ Alt + x とした上で “exec-utf82tex” と入力し，Enterキーを押し�
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
 KoreanTeX
 (pLaTeX2e に対応しているのは
-[kTeX 1.2.2](http://auemath.aichi-edu.ac.jp/~khotta/ghost/ktex/))
+[kTeX 1.2.2](http://www.khotta.org/ghost/ktex/))
 がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，
 後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
