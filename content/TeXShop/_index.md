@@ -35,6 +35,9 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
+--shell-escapeについて
+: セキュリティ上の理由により、TeXShopはバージョン2.45/3.10より、pdfTeX/pdfLaTeXのセッティングから--shell-escapeが除かれています。また、以下のシェルスクリプトの設定においても、--shell-escapeは有効になっていません。コンパイルの際に--shell-escapeが必要な場合は、その都度ターミナルからplatex（など）を実行するか、「パーソナルスクリプト」に--shell-escapeを有効にしたスクリプトを指定しておき、--shell-escapeが必要なときにはその都度「タイプセット」メニューから「パーソナルスクリプト」を指定するとよいでしょう（[pTeX/UpTeX.app + TeXShopでshell-escapeを使う](http://www2.kumagaku.ac.jp/teacher/herogw/shell.html)を参照）。
+
 ### &#x7e;/Library/TeXShop/bin/pdfeptex {#u46327c0}
 
 シェルスクリプトを作成します．
