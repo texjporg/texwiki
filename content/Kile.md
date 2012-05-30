@@ -9,7 +9,7 @@ pukiwiki: "Kile"
 
 ## [Kile](http://kile.sourceforge.net/) {#pab65dd4}
 
-<img src="http://kile.sourceforge.net/images/kile_big.png" alt="Kile" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kile.svg/240px-Kile.svg.png" alt="Kile" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -107,6 +107,21 @@ Command:
 Options:
 : '%target'
 
+### ViewDVI {#jdb2e9e7}
+
+#### pxdvi の場合 {#gf8017cc}
+
+\[New...\] をクリックして pxdvi を入力します．
+
+Select:
+: pxdvi
+
+Command:
+: pxdvi
+
+Options:
+: -watchfile 1 '%target'
+
 ## 使い方 {#ub2acf7c}
 
 ### QuickBuild {#o3d47735}
@@ -144,6 +159,24 @@ Command:
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
+## pxdvi との連携 (非推奨) {#p727cf9d}
+
+### inverse search {#m4747ece}
+
+\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+
+#### ViewDVI {#pdd1bac9}
+
+Select:
+: pxdvi
+
+Command:
+: pxdvi
+
+Options:
+: -watchfile 1 -editor 'kile %f --line %l' '%target'
+
 ## 関連リンク {#o6aee049}
 
+- [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
 - [KileをWindowsで使ってみる](http://d.tnose.net/?p=1654)
