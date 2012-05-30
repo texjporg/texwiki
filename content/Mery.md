@@ -845,6 +845,122 @@ LaTeX の
 - 「/fd」でファイルから検索ダイアログ表示。
 - 「/ti」でタスクトレイアイコンで起動（スタートアップとかにショートカット作るため）
 
+## SumatraPDF との連携 {#ra6f502f}
+
+### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#deefc535}
+
+#### SumatraPDF.js {#r19c8de4}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var mery = editor.FullName;
+  var currentTeXFile = document.FullName;
+  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+  var line = document.selection.GetActivePointY(mePosLogical);
+  var sumatraPDF = "C:/Program Files/SumatraPDF/SumatraPDF.exe";
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
+
+  if (!fso.FileExists(sumatraPDF)) {
+    sumatraPDF = "C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe";
+    if (!fso.FileExists(sumatraPDF)) {
+      sumatraPDF = window.Prompt("Input the path to SumatraPDF.exe.", "SumatraPDF.exe");
+      if (!fso.FileExists(sumatraPDF)) {
+        sumatraPDF = "SumatraPDF.exe";
+      }
+    }
+  }
+
+  sumatraPDF = ["\"", sumatraPDF, "\""].join("");
+
+  if (!fso.FileExists(pdfFile)) {
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(pdfFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
+  pdfFile = ["\"", pdfFile, "\""].join("");
+
+  args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search \"\\\"" + mery + "\\\" /l %l \\\"%f\\\"\"" + " -forward-search " + currentTeXFile + " " + line;
+  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#t56d91ba}
+
+[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+
+#### fwdsumatrapdf.js {#a81d6b86}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var currentTeXFile = document.FullName;
+  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+  var line = document.selection.GetActivePointY(mePosLogical);
+  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe";
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
+```
+
+```
+  if (!fso.FileExists(fwdsumatrapdf)) {
+    fwdsumatrapdf = window.Prompt("Input the path to fwdsumatrapdf.exe.", "fwdsumatrapdf.exe");
+    if (!fso.FileExists(fwdsumatrapdf)) {
+      fwdsumatrapdf = "fwdsumatrapdf.exe";
+    }
+  }
+
+  fwdsumatrapdf = ["\"", fwdsumatrapdf, "\""].join("");
+
+  if (!fso.FileExists(pdfFile)) {
+    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(pdfFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
+  pdfFile = ["\"", pdfFile, "\""].join("");
+
+  args = fwdsumatrapdf + " " + pdfFile + " " + currentTeXFile + " " + line;
+  cmd = "cmd /c " + cd + " && " + args;
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### inverse search {#d4cfb140}
+
+```
+C:\Mery\Mery.exe /l %l "%f"
+```
+
 ## Adobe Reader との連携 {#efc77172}
 
 ### pdfpLaTeXA.js {#h14da8ca}
@@ -1074,122 +1190,6 @@ main();
 ```
 
 ***
-
-## SumatraPDF との連携 {#ra6f502f}
-
-### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#deefc535}
-
-#### SumatraPDF.js {#r19c8de4}
-
-***
-
-```
-function main()
-{
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var mery = editor.FullName;
-  var currentTeXFile = document.FullName;
-  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var line = document.selection.GetActivePointY(mePosLogical);
-  var sumatraPDF = "C:/Program Files/SumatraPDF/SumatraPDF.exe";
-  var mainTeXDir;
-  var cd;
-  var cmd;
-  var args;
-
-  if (!fso.FileExists(sumatraPDF)) {
-    sumatraPDF = "C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe";
-    if (!fso.FileExists(sumatraPDF)) {
-      sumatraPDF = window.Prompt("Input the path to SumatraPDF.exe.", "SumatraPDF.exe");
-      if (!fso.FileExists(sumatraPDF)) {
-        sumatraPDF = "SumatraPDF.exe";
-      }
-    }
-  }
-
-  sumatraPDF = ["\"", sumatraPDF, "\""].join("");
-
-  if (!fso.FileExists(pdfFile)) {
-    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
-    if (mainTeXFile != "") {
-      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-    }
-  }
-
-  mainTeXDir = fso.GetParentFolderName(pdfFile);
-  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
-  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
-  pdfFile = ["\"", pdfFile, "\""].join("");
-
-  args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search \"\\\"" + mery + "\\\" /l %l \\\"%f\\\"\"" + " -forward-search " + currentTeXFile + " " + line;
-  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
-  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
-}
-
-main();
-```
-
-***
-
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#t56d91ba}
-
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
-
-#### fwdsumatrapdf.js {#a81d6b86}
-
-***
-
-```
-function main()
-{
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var currentTeXFile = document.FullName;
-  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var line = document.selection.GetActivePointY(mePosLogical);
-  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe";
-  var mainTeXDir;
-  var cd;
-  var cmd;
-  var args;
-```
-
-```
-  if (!fso.FileExists(fwdsumatrapdf)) {
-    fwdsumatrapdf = window.Prompt("Input the path to fwdsumatrapdf.exe.", "fwdsumatrapdf.exe");
-    if (!fso.FileExists(fwdsumatrapdf)) {
-      fwdsumatrapdf = "fwdsumatrapdf.exe";
-    }
-  }
-
-  fwdsumatrapdf = ["\"", fwdsumatrapdf, "\""].join("");
-
-  if (!fso.FileExists(pdfFile)) {
-    var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
-    if (mainTeXFile != "") {
-      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-    }
-  }
-
-  mainTeXDir = fso.GetParentFolderName(pdfFile);
-  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
-  currentTeXFile = ["\"", currentTeXFile, "\""].join("");
-  pdfFile = ["\"", pdfFile, "\""].join("");
-
-  args = fwdsumatrapdf + " " + pdfFile + " " + currentTeXFile + " " + line;
-  cmd = "cmd /c " + cd + " && " + args;
-  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
-}
-
-main();
-```
-
-***
-
-### inverse search {#d4cfb140}
-
-```
-C:\Mery\Mery.exe /l %l "%f"
-```
 
 ## dviout との連携 (非推奨) {#fee7abf9}
 
