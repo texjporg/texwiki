@@ -737,6 +737,91 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 ### [ConTeXt support package for Notepad++](http://wiki.contextgarden.net/Notepad%2B%2B) {#ee4b4a52}
 
+## SumatraPDF との連携 {#jbc79e5b}
+
+### forward search (SumatraPDF v1.9.4622 以上の場合) {#rd95d13c}
+
+MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
+
+> <table>
+> <tbody>
+> <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
+> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
+> </tbody>
+> </table>
+>
+
+### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#qbc5204b}
+
+NppExec を使用する場合は以下のように設定します．<br>
+
+***
+
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_CONSOLE 0<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE) | cmd<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">SumatraPDF</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+
+***
+
+### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#dfc0b616}
+
+[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
+
+> <table>
+> <tbody>
+> <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
+> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "C:\w32tex\NDde\Binary\fwdsumatrapdf.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
+> </tbody>
+> </table>
+>
+
+NppExec を使用する場合は以下のように設定します．<br>
+
+***
+
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_CONSOLE 0<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; C:\w32tex\NDde\Binary\fwdsumatrapdf.exe "$(NAME_PART).pdf" "$(FILE_NAME)" $(CURRENT_LINE)<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">fwdsumatrapdf</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+
+***
+
+### inverse search {#fe81f375}
+
+```
+C:\npp\unicode\notepad++.exe "%f" -n%l
+```
+
 ## Adobe Reader との連携 {#wbbe918a}
 
 ### [NppExec](http://sourceforge.net/projects/npp-plugins/files/NppExec/) {#l19151dd}
@@ -922,91 +1007,6 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeXA</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
 
 ***
-
-## SumatraPDF との連携 {#jbc79e5b}
-
-### forward search (SumatraPDF v1.9.4622 以上の場合) {#rd95d13c}
-
-MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
-
-> <table>
-> <tbody>
-> <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
-> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
-> </tbody>
-> </table>
->
-
-### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#qbc5204b}
-
-NppExec を使用する場合は以下のように設定します．<br>
-
-***
-
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE) | cmd<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">SumatraPDF</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
-
-***
-
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#dfc0b616}
-
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
-MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
-
-> <table>
-> <tbody>
-> <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
-> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "C:\w32tex\NDde\Binary\fwdsumatrapdf.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
-> </tbody>
-> </table>
->
-
-NppExec を使用する場合は以下のように設定します．<br>
-
-***
-
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; C:\w32tex\NDde\Binary\fwdsumatrapdf.exe "$(NAME_PART).pdf" "$(FILE_NAME)" $(CURRENT_LINE)<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">fwdsumatrapdf</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
-
-***
-
-### inverse search {#fe81f375}
-
-```
-C:\npp\unicode\notepad++.exe "%f" -n%l
-```
 
 ## dviout との連携 (非推奨) {#jcfc6361}
 
