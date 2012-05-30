@@ -52,6 +52,278 @@ main();
 
 ***
 
+ショートカット
+: Ctrl+Alt+J
+
+### pdfpLaTeX2.js {#ledbb00b}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Ctrl+Alt+K
+
+### pdfupLaTeX.js {#d1ed0d34}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+J
+
+### pdfupLaTeX2.js {#vb3b2bff}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+K
+
+### pdfLaTeX.js {#d94b29c5}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + pdflatex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+H
+
+### LuaLaTeX.js {#zfcfa91e}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + lualatex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+U
+
+### XeLaTeX.js {#n5d84d27}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var xelatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + xelatex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+I
+
+### pBibTeX.js {#oabf20f6}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
+  bibtex += " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + bibtex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Ctrl+Alt+N
+
+### upBibTeX.js {#w302791d}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + bibtex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Shift+Alt+N
+
+### Mendex.js {#pa08cf71}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var makeindex = "mendex -U -ST";
+  makeindex += " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + makeindex;
+
+  var ok = window.Confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
+: Ctrl+Alt+M
+
 ### TeXworks.js {#eed78d60}
 
 [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
@@ -99,6 +371,9 @@ main();
 ```
 
 ***
+
+ショートカット
+: Ctrl+Alt+O
 
 ## SumatraPDF との連携 {#vb348fe8}
 
@@ -214,6 +489,325 @@ main();
 
 ```
 C:\gPad\gPad.exe -Y=%l "%f"
+```
+
+## Adobe Reader との連携 {#k7e32b43}
+
+### pdfpLaTeXA.js {#w9c8fc43}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -guess-input-enc -sjis-terminal";
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfpLaTeX2A.js {#f3490b53}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -guess-input-enc -sjis-terminal";
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfupLaTeXA.js {#rf2dcd15}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfupLaTeX2A.js {#r2783faf}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
+  var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### pdfLaTeXA.js {#z77a2cf6}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### LuaLaTeXA.js {#ia6cdb6b}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### XeLaTeXA.js {#u5a50eee}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
+  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+## dviout との連携 (非推奨) {#l2111654}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
+
+### pLaTeX.js {#v84d2d00}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "platex -src-specials -guess-input-enc -sjis-terminal";
+  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### upLaTeX.js {#t089cc80}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var latex = "uplatex -src-specials -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + latex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### forward search {#y2e3abc2}
+
+#### dviout.js {#s01a4ace}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var currentTeXFile = document.FullName;
+  var dviFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".dvi");
+  var line = document.selection.GetActivePointY(ePosLogical);
+  var dviout = "C:/w32tex/dviout/dviout.exe"
+  var mainTeXDir;
+  var cd;
+  var cmd;
+  var args;
+
+  if (!fso.FileExists(dviout)) {
+    dviout = prompt("Input the path to dviout.exe.", "dviout.exe");
+    if (!fso.FileExists(dviout)) {
+      dviout = "dviout.exe";
+    }
+  }
+
+  dviout = ["\"", dviout, "\""].join("");
+
+  if (!fso.FileExists(dviFile)) {
+    var mainTeXFile = prompt("Input the path to main TeX file.", dviFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+    if (mainTeXFile != "") {
+      dviFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".dvi");
+    }
+  }
+
+  mainTeXDir = fso.GetParentFolderName(dviFile);
+  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  currentTeXFile = ["'", fso.GetFileName(currentTeXFile), "'"].join("");
+  dviFile = ["\"", dviFile, "\""].join("");
+
+  args = dviout + " -1 " + dviFile + " \"# " + line + " " + currentTeXFile + "\"";
+  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+}
+
+main();
+```
+
+***
+
+### inverse search {#fa257785}
+
+```
+C:\gPad\gPad.exe^s -Y=%d "%s"
 ```
 
 ## 関連リンク {#j325bf81}
