@@ -93,6 +93,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 
 ### latexmk {#xe923cf8}
 
+- [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 
 ### OMake {#yf7ac218}
