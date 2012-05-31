@@ -812,4 +812,5 @@ C:\gPad\gPad.exe^s -Y=%d "%s"
 
 ## 関連リンク {#j325bf81}
 
+- [gpadにマクロを登録する方法は少しの手間が必要です。](http://edeito.seesaa.net/article/272867028.html)
 - [Gpadという進化した凡庸エディタ](http://web-edit.jimdo.com/%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B%E8%A3%9C%E5%AE%8C%E3%81%8C%E5%87%BA%E6%9D%A5%E3%82%8B%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/gpad%E3%81%A8%E3%81%84%E3%81%86%E9%80%B2%E5%8C%96%E3%81%97%E3%81%9F%E5%87%A1%E5%BA%B8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/)
