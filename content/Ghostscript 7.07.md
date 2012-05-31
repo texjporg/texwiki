@@ -30,7 +30,7 @@ Mac OS X (+ X11) でもまったく同様にインストールできます
 で Makefile の XLIBS=Xt Xext X11 は XLIBS=Xt SM ICE Xext X11 に直しました）。
 
 安宅さんの
-[Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://replay.waybackmachine.org/20090130073812/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)
+[Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090130073812/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)
 というページが役に立ちます。
 LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/texfaq/qa/19792.html)
 をご覧ください。
