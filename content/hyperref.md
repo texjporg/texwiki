@@ -56,6 +56,12 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 \section{a\texorpdfstring{--}{\055\055}b}
 ```
 
+### 不具合 {#p03bc3d7}
+
+#### [hyperref が非 e-TeX で動かない](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) → [Patch to correct non-e-TeX support of hyperref](https://gist.github.com/2843556) {#fbe5149d}
+
+[非 e-TeX で hyperref を使うと……](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) を参照．
+
 ### 指定可能なオプション {#za8c61cb}
 
 プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
