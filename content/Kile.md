@@ -159,7 +159,109 @@ Command:
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
+## Evince との連携 {#f6cbca7e}
+
+### forward search {#ob62a5ad}
+
+fwdevince は [Evince - TeX Wiki#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．
+
+***
+
+- kile2fwdevince
+
+***
+
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import re
+import subprocess
+
+if __name__ == '__main__':
+    m = re.match(r'file:(\S*)#src:(\S*) (\S*)', sys.argv[1])
+    if m:
+        pdf = m.group(1)
+        line = m.group(2)
+        tex = m.group(3)
+        subprocess.call(['fwdevince', pdf, line, tex])
+```
+
+***
+
+```
+$ chmod +x kile2fwdevince
+$ sudo cp -p kile2fwdevince /usr/local/bin
+```
+
+\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+
+#### ForwardPDF {#ace63589}
+
+\[New...\] をクリックして Evince を入力します．
+
+Select:
+: Evince
+
+Command:
+: kile2fwdevince
+
+Options:
+: '%target'
+
+Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
+
 ## pxdvi との連携 (非推奨) {#p727cf9d}
+
+### forward search {#vc1cbc71}
+
+***
+
+- kile2pxdvi
+
+***
+
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import re
+import subprocess
+
+if __name__ == '__main__':
+    m = re.match(r'file:(\S*)#src:(\S*) (\S*)', sys.argv[1])
+    if m:
+        dvi = m.group(1)
+        line = m.group(2)
+        tex = m.group(3)
+        subprocess.call(['pxdvi', '-nofork', '-sourceposition', line + " " + tex, dvi])
+```
+
+***
+
+```
+$ chmod +x kile2pxdvi
+$ sudo cp -p kile2pxdvi /usr/local/bin
+```
+
+\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+
+#### ForwardDVI {#w5d81fff}
+
+\[New...\] をクリックして pxdvi を入力します．
+
+Select:
+: pxdvi
+
+Command:
+: kile2pxdvi
+
+Options:
+: '%target'
+
+Kile のメニューの \[Build\]-\[View\]-\[ForwardDVI\] で forward search ができます．
 
 ### inverse search {#m4747ece}
 
@@ -178,5 +280,6 @@ Options:
 
 ## 関連リンク {#o6aee049}
 
-- [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
+- [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
+    - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
 - [KileをWindowsで使ってみる](http://d.tnose.net/?p=1654)
