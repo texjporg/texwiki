@@ -228,6 +228,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [windows7(64bit)にTeXをインストール](http://kagoshima-au.blog.so-net.ne.jp/2012-05-24)
 - [TeX3インストーラが『情報ファイルの発見に失敗』するとき](http://shinobra.com/2012/05/sawanoboly/tex3_install_windows)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
