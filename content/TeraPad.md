@@ -37,6 +37,8 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 ヘルプ(H)　　　</ins></span><br>
 
+<span style="color:Black;background-color:#DCDCDC;"><ins>　　<strong>▢</strong>　<strong>⊟</strong>　<strong>■</strong>　<strong>｜</strong>　<strong>Д</strong>　<strong>｜</strong>　<strong>✂</strong>　<strong>❏</strong>　<strong>▣</strong>　<strong>｜</strong>　<strong>↶</strong>　<strong>↷</strong>　<strong>｜</strong>　<strong>●</strong>　<strong>↑●</strong>　<strong>●↓</strong>　　　　　　　　　　　　　</ins></span><br>
+
 ```
 \ifx\kanjiskip\undefined
   \ifx\XeTeXversion\undefined
@@ -54,18 +56,11 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 \else
   \ifx\ucs\undefined
     \documentclass[12pt,papersize]{jsarticle}
-    \usepackage{atbegshi}
-    \ifnum 42146=\euc"A4A2
-      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
-    \else
-      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-    \fi
   \else
     \documentclass[uplatex,12pt,papersize]{jsarticle}
-    \usepackage{atbegshi}
-    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
   \fi
   \usepackage[dvipdfmx]{hyperref}
+  \usepackage{pxjahyper}
 \fi
 \hypersetup{%
   bookmarksnumbered=true,%
