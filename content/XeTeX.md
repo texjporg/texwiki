@@ -641,7 +641,8 @@ Hello, \TeX !
 ### 参考サイト {#m6b448cf}
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
-- [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+- [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
+    - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/) (ZR (八登 崇之) さん)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
