@@ -42,8 +42,13 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
 ```
 \ifx\kanjiskip\undefined
   \ifx\XeTeXversion\undefined
-    \documentclass[12pt,papersize]{ltjsarticle}
-    \usepackage[pdftex,pdfencoding=auto]{hyperref}
+    \ifx\directlua\undefined
+      \documentclass[12pt]{article}
+      \usepackage[pdftex]{hyperref}
+    \else
+      \documentclass[12pt,papersize]{ltjsarticle}
+      \usepackage[pdftex,pdfencoding=auto]{hyperref}
+    \fi
   \else
     \documentclass[12pt]{bxjsarticle}
     \usepackage[xetex]{hyperref}
@@ -63,10 +68,10 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
   \usepackage{pxjahyper}
 \fi
 \hypersetup{%
-  bookmarksnumbered=true,%
-  colorlinks=true,%
-  setpagesize=false,%
-  pdftitle={TeraPad について}}
+ bookmarksnumbered=true,%
+ colorlinks=true,%
+ setpagesize=false,%
+ pdftitle={TeraPad について}}
 \pagestyle{empty}
 %
 \begin{document}
