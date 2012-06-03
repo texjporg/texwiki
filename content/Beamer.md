@@ -33,9 +33,10 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 [Issues](https://bitbucket.org/rivanvx/beamer/issues?status=new&status=open) を参照．
 
-#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる {#pc9c1e18}
+#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
-- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow)
+- [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
+- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
 - beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
 
 #### Beamer 公式サイトのファイルを使用するとエラーが発生する {#i1ba3f44}
