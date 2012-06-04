@@ -148,6 +148,32 @@ TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
 インストールする場合は \[ TeX Live の導入 \] をクリックします．<br>
 インストールしない場合は \[ 終了 \] をクリックします．<br>
 
+- texmf.cnf の編集
+
+C:\texlive\2012\texmf\web2c\texmf.cnf を編集します．
+
+shell_escape_commands が以下のように記述されていると思います．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+shell_escape_commands を以下のように編集して保存します．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,\
+repstopdf,epspdf,extractbb,\
+```
+
 #### TeX Live 2011 (Win32) {#pad973ce}
 
 - [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
