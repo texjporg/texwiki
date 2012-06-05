@@ -36,7 +36,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012-05-17 EasyTeX Verson 3.303 Unicode<br>
+2012-06-06 EasyTeX Verson 3.304 Unicode<br>
 2012-02-06 EasyTeX Verson 3.242<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8、UTF-8BOM) に対応しています．
@@ -97,9 +97,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span><br>
 >
 > 　<br>
 > 　<br>
@@ -107,7 +107,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 <span style="color:Black;background-color:#EEEEEE;">\[　　TeX環境を自動設定する　　\]</span><br>
 
-<span style="color:Black;background-color:#EEEEEE;">\[ Iniファイルに保存 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
 
 ***
 
@@ -122,9 +122,9 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 
 　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
 
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのパス\]</span> <ins>C:\w32tex\bin</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span> <ins>C:\w32tex\bin</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　　　　DVIドライバ　　　 \]</span> <ins>C:\w32tex\dviout\dviout.exe</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span> <ins>C:\w32tex\dviout\dviout.exe</ins><br>
 
 ***
 
@@ -336,8 +336,7 @@ Adobe Reader, PDF-XChange Viewer, Foxit Reader を使用する場合は EasyTeX 
 
 ### TeX環境設定の保存 {#lf745908}
 
-<strong>TeX環境設定が完了したら，\[ Iniファイルに保存 \] をクリックして \[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．</strong><br>
-
+TeX環境設定が完了したら，\[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．<br>
 この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．<br>
 
 ## エンコードの種類 {#s484d028}
