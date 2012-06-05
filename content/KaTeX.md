@@ -325,6 +325,7 @@ C:.
 
 &#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
+latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 pdfplatex.bat は W32TeX に含まれています．<br>
 TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](/TeXworks/#nb7beec9) を使用してください．<br>
 
@@ -342,8 +343,15 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
+(setq elisp::tex-command "latexmk -e \"$latex=q/platex\"\" \"\"-kanji=utf8\"\" \"\"-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/pbibtex\"\" \"\"-kanji=utf8/\"\"\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvipdf=q/dvipdfmx\"\" \"\"%O\"\" \"\"-o\"\" \"\"%D\"\" \"\"%S/\"\"\" -norc -gg -pdfdvi")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/platex\"\" \"\"-kanji=utf8\"\" \"\"-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/pbibtex\"\" \"\"-kanji=utf8/\"\"\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvips=q/dvips\"\" \"\"%O\"\" \"\"-z\"\" \"\"-f\"\" \"\"%S\"\" \"\"|\"\" \"\"convbkmk\"\" \"\"-g\"\" \"\">\"\" \"\"%D/\"\"\" -e \"$ps2pdf=q/ps2pdf.bat\"\" \"\"%O\"\" \"\"%S\"\" \"\"%D/\"\"\" -norc -gg -pdfps")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex\"\" \"\"-kanji=utf8\"\" \"\"-no-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvipdf=q/dvipdfmx\"\" \"\"%O\"\" \"\"-o\"\" \"\"%D\"\" \"\"%S/\"\"\" -norc -gg -pdfdvi")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex\"\" \"\"-kanji=utf8\"\" \"\"-no-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvips=q/dvips\"\" \"\"%O\"\" \"\"-z\"\" \"\"-f\"\" \"\"%S\"\" \"\"|\"\" \"\"convbkmk\"\" \"\"-u\"\" \"\">\"\" \"\"%D/\"\"\" -e \"$ps2pdf=q/ps2pdf.bat\"\" \"\"%O\"\" \"\"%S\"\" \"\"%D/\"\"\" -norc -gg -pdfps")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/pdflatex\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/lualatex\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/xelatex\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex")
 ;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
-(setq elisp::tex-command "pdfplatex.bat")
+;(setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "pdfplatex1.bat")
 ;(setq elisp::tex-command "pdfplatex2.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
@@ -429,6 +437,13 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; (setq elisp::KaTeX-kanji-code nil) に設定
 ;; AMS-LaTeX を使う
 ;; jsarticle をデフォルトに
+;; タイプセットを latexmk (pdfplatex) で
+;; タイプセットを latexmk (pdfplatex2) で
+;; タイプセットを latexmk (pdfuplatex) で
+;; タイプセットを latexmk (pdfuplatex2) で
+;; タイプセットを latexmk (pdflatex) で
+;; タイプセットを latexmk (lualatex) で
+;; タイプセットを latexmk (xelatex) で
 ;; タイプセットを e-pLaTeX で
 ;; タイプセットを pdfplatex.bat で
 ;; タイプセットを pdfplatex1.bat で
@@ -477,6 +492,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 > <tr><td>Process menu -&gt; makeindex</td><td>C-c C-t i</td><td>C-c t i</td><td>MakeIndex</td></tr>
 > <tr><td>Process menu -&gt; Preview</td><td>C-c C-t p</td><td>C-c t p</td><td>プレビュー</td></tr>
 > <tr><td></td><td>C-c C-t l</td><td>C-c t l</td><td>LPR (印刷)</td></tr>
+> <tr><td></td><td>C-c '</td><td>C-c '</td><td>エラー行にジャンプ</td></tr>
 > </tbody>
 > </table>
 >
