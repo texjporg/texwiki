@@ -119,6 +119,7 @@ ulimit -t 10 -f 1024
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう](http://www.aozora.jp/tools/uptex/)
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
+- [LaTeXを動的にPDFにするテスト](http://nanase.fam.cx:23867/greatsky/imai/tex/)
 
 ***
 
