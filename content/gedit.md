@@ -72,7 +72,7 @@ dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -Ppdf -t a4 -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
+dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
 convbkmk -g > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
 ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
 ```
@@ -108,7 +108,7 @@ dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -Ppdf -t a4 -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
+dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
 convbkmk -u > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
 ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
 ```
