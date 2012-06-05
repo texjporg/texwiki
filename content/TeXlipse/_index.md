@@ -401,7 +401,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -636,7 +636,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -906,7 +906,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/dvips</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -t a4 -o "%output" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
@@ -1141,7 +1141,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>dvips -Ppdf -t a4 -o "%output" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>dvips -Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
 <br>
