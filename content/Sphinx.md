@@ -80,3 +80,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 ## Sphinx → HTML → PDF {#w924420a}
 
 - [Sphinxで素早く簡単に綺麗な日本語のPDFを作成する方法](http://dxd8.com/archives/225/)
+
+## 関連リンク {#t09e1c4e}
+
+- [omakeもmakeも使わずに、Sphinxドキュメントの継続的ビルド](http://tell-k.hatenablog.com/entry/2012/01/04/022229)
