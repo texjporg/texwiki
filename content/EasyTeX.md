@@ -432,7 +432,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -457,7 +457,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c platex -guess-input-enc -synctex=1 -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -511,7 +511,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成しま�
 　 program6<br>
 　 program7<br>
 　 program8　　　　　実行時引数<br>
-　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
 
 <br>
 
@@ -846,7 +846,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -871,7 +871,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -927,7 +927,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -t a4 -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
