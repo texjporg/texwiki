@@ -212,9 +212,9 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 > <tr><td>1</td><td>BibTeX処理 (pbibtex の場合)</td><td>"pbibtex"</td><td>-kanji=utf8 -sjis-terminal "%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (upbibtex の場合)</td><td>"upbibtex"</td><td>"%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -ST "%MTeXnpp_CFName%.idx"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・bkmk2uni を使用する場合)</td><td>"dvips"</td><td>-Ppdf -t a4 -z -f "%MTeXnpp_CFName%.dvi" &#x7c; bkmk2uni &gt; "%MTeXnpp_CFName%.ps"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・convbkmk を使用する場合)</td><td>"dvips"</td><td>-Ppdf -t a4 -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -t a4 -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・bkmk2uni を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; bkmk2uni &gt; "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・convbkmk を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSからPDFへ変換</td><td>call "C:\gs\gs9.05\lib\ps2pdf.bat"</td><td>"%MTeXnpp_CFName%.ps" "%MTeXnpp_CFName%.pdf"</td></tr>
 > <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
@@ -307,7 +307,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -t a4 -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps"<br>
 
 <br>
 
@@ -393,7 +393,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -t a4 -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps"<br>
 
 <br>
 
@@ -863,7 +863,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -t a4 -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --file "$(NAME_PART).pdf"<br>
 
 <br>
 
@@ -915,7 +915,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -t a4 -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --file "$(NAME_PART).pdf"<br>
 
 <br>
 
