@@ -660,7 +660,7 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 <em>2010/5/6 に W32TeX の "dvipsk.exe" は "dvips.exe" に統合されました．それ以前の W32TeX をインストールされている方は，DVI -> PS の設定の部分を "dvipsk.exe" にしてください． ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))</em>
 
 - exeファイル名を dvips.exe (うまくいかなければフルパスで指定してください．例えば C:\w32tex\bin\dvips.exe)
-- コマンドラインを -Ppdf -t a4 -o "%s.ps" "%s.dvi"
+- コマンドラインを -Ppdf -o "%s.ps" "%s.dvi"
 
 ***
 
@@ -681,7 +681,7 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-Ppdf -t a4 -o "%s.ps" "%s.dvi"</ins><br>
+　　コマンドライン 　<ins>-Ppdf -o "%s.ps" "%s.dvi"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -1164,7 +1164,7 @@ exeファイル名
 : powershell.exe
 
 コマンドライン
-: -Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"
+: -Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -o $p $d};if($?){ps2pdf.bat $p}}"
 
 右下のチェックをすべてはずします。
 
@@ -1190,7 +1190,7 @@ exeファイル名
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -1437,7 +1437,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-Ppdf -t a4 -o "%s.ps" "%s.dvi"</ins><br>
+　　コマンドライン 　<ins>-Ppdf -o "%s.ps" "%s.dvi"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -1765,7 +1765,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvips -Ppdf -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -1835,7 +1835,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s;if($?){dvips -Ppdf -t a4 -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s";$s = echo """$r""";$d = echo """$r.dvi""";$p = echo """$r.ps""";uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s;if($?){dvips -Ppdf -o $p $d};if($?){ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
