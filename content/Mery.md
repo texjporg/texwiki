@@ -9,7 +9,7 @@ pukiwiki: "Mery"
 
 ## [Mery](http://www.haijin-boys.com/island/wiki/) {#l6f5ffa3}
 
-<img src="http://www.haijin-boys.com/island/wiki/images/logo.png" alt="Mery" style="float:right">
+<!-- #ref(http://www.haijin-boys.com/island/wiki/images/logo.png,right,around,nolink,Mery) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -27,9 +27,10 @@ Mery は
 
 に対応しています．
 
-- [Mery - Mery's Factory](http://www.haijin-boys.com/island/wiki/)
-    - [更新履歴](http://www.haijin-boys.com/island/wiki/index.php?title=Mery%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)
-    - [マクロリファレンス](http://www.haijin-boys.com/island/wiki/index.php?title=%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
+- [Haijin Boys Online](http://www.haijin-boys.com/) 公式サイト
+    <!-- -[[Mery - Mery's Factory:http://www.haijin-boys.com/island/wiki/]] -->
+    <!-- - -[[更新履歴:http://www.haijin-boys.com/island/wiki/index.php?title=Mery%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89]] -->
+    <!-- - -[[マクロリファレンス:http://www.haijin-boys.com/island/wiki/index.php?title=%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9]] -->
     - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
 - [窓の杜 - Mery](http://www.forest.impress.co.jp/lib/offc/document/txteditor/mery.html)
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
@@ -163,7 +164,7 @@ function main()
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
-  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
@@ -269,7 +270,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
-  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvips + " && " + ps2pdf;
 
@@ -1030,7 +1031,7 @@ function main()
     latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
-  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
@@ -1089,7 +1090,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
-  var dvips = "dvips -Ppdf -t a4 -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
+  var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
