@@ -873,6 +873,7 @@ Live preview for TeXShop
 
 ## 関連リンク {#qb1b8010}
 
+- [latexme インストール と TeXShop の設定](http://fbncc112358.blogspot.jp/2012/04/latexme-texshop.html)
 - [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
     - [TeXworks vs TeXShop #2](http://www.geocities.jp/flutecore/Weblog/archives/2011/11/entry_111.html)
