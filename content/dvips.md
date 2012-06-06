@@ -16,6 +16,8 @@ pukiwiki: "dvips"
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
 - [Dvips(k)](http://www.tug.org/dvips/)
+- \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
 
 ### dvips の用紙サイズ指定 {#b1d8723b}
 
