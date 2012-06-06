@@ -93,6 +93,60 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 
 ### [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
+- platex を使用する場合
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+$latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1';
+$bibtex = 'pbibtex -kanji=utf8';
+$makeindex = 'mendex -U';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+$ps2pdf = 'ps2pdf.bat %O %S %D';
+```
+
+***
+
+```
+latexmk -gg -pdfdvi hoge.tex
+latexmk -gg -pdfps hoge.tex
+```
+
+- uplatex を使用する場合
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+$latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1';
+$bibtex = 'upbibtex';
+$makeindex = 'mendex -U';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+$ps2pdf = 'ps2pdf.bat %O %S %D';
+```
+
+***
+
+```
+latexmk -gg -pdfdvi hoge.tex
+latexmk -gg -pdfps hoge.tex
+```
+
+- 中間ファイルの削除
+
+```
+latexmk -c
+```
+
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
