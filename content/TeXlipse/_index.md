@@ -1337,7 +1337,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-■ SumatraPDF v1.9.4622 以上の場合<br>
+■ SumatraPDF を前面に表示したい場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
@@ -1363,7 +1363,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-■ SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合<br>
+■ SumatraPDF を前面に表示したくない場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
@@ -1371,7 +1371,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,1)\]\[Open("%fullfile",0,1,1)\]</ins><br>
+　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,0)\]\[Open("%fullfile",0,0,1)\]</ins><br>
 　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 
 <br>
