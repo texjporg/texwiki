@@ -1094,6 +1094,8 @@ Close document before running (La)TeX<br>
 
 inverse search の時に他のエディタが起動してしまう場合は sumatrapdfprefs.dat を削除してください．
 
+■ SumatraPDF を前面に表示したい場合
+
 ***
 
 <span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
@@ -1118,6 +1120,45 @@ Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 Forward search<br>
 ◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
 Command <ins>\[ForwardSearch("%bm.pdf","%Wc",%l,0,0,1)\]</ins><br>
+Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　◯ DDE command　　<span style="color:#3333CC;">◎</span> Do not close<br>
+
+<br>
+
+<br>
+
+***
+
+■ SumatraPDF を前面に表示したくない場合
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+
+<br>
+
+View project's output<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[Open("%bm.pdf",0,0,1)\]</ins><br>
+Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
+
+<br>
+
+Forward search<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[ForwardSearch("%bm.pdf","%Wc",%l,0,0,0)\]</ins><br>
 Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
