@@ -16,7 +16,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### リリース情報 {#f691af94}
 
-2012-05-20 TeXインストーラ3 開発版 20120520<br>
+2012-06-01 TeXインストーラ3 開発版 20120601<br>
 2012-04-09 TeXインストーラ3 0.83<br>
 
 ### 注意事項 {#bb499d3c}
@@ -47,16 +47,16 @@ W32TeX の配布パッケージが tar.xz 形式になりました．<br>[texmf.
 
 <br>
 
-　　　　Windows用TeXの基本的なソフトウェア群である以下をダウンロード&amp;インストールし<br>
-　　　　ます．<br>
+　　　　Windows用TeXの基本的なソフトウェア群である以下をダウンロード&amp;インストール<br>
+　　　　します．　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　Change Language　\]</span><br>
 
 <br>
 
-　　　　・角藤さんによるW32TeX<br>
-　　　　・dviout for Windows<br>
-　　　　・Ghostscript<br>
-　　　　・GSview<br>
-　　　　・TeXworks<br>
+　　　　角藤さんによるW32TeX<br>
+　　　　dviout for Windows<br>
+　　　　Ghostscript<br>
+　　　　GSview<br>
+　　　　TeXworks<br>
 
 ***
 
