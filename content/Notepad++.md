@@ -739,7 +739,7 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 ## SumatraPDF との連携 {#jbc79e5b}
 
-### forward search (SumatraPDF v1.9.4622 以上の場合) {#rd95d13c}
+### forward search (SumatraPDF を前面に表示したい場合) {#rd95d13c}
 
 MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
 
@@ -751,7 +751,7 @@ MTeX for Notepad++ を使用する場合は以下のように設定します．<
 > </table>
 >
 
-### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#qbc5204b}
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#qbc5204b}
 
 NppExec を使用する場合は以下のように設定します．<br>
 
@@ -778,7 +778,7 @@ NppExec を使用する場合は以下のように設定します．<br>
 
 ***
 
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#dfc0b616}
+### forward search (SumatraPDF を前面に表示したくない場合) {#dfc0b616}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
