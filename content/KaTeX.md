@@ -607,7 +607,7 @@ C-c p または M-x texworks-preview （Alt を押しながら x を押し，“
 
 と書いておきます。
 
-### forward search (SumatraPDF v1.9.4622 以上の場合) {#m08e4ed8}
+### forward search (SumatraPDF を前面に表示したい場合) {#m08e4ed8}
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。<br>
 KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます．<br>
@@ -639,7 +639,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 すると，C-c s または M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#n9aa887a}
+### forward search (SumatraPDF を前面に表示したくない場合) {#n9aa887a}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
