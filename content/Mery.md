@@ -848,7 +848,7 @@ LaTeX の
 
 ## SumatraPDF との連携 {#ra6f502f}
 
-### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#deefc535}
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#deefc535}
 
 #### SumatraPDF.js {#r19c8de4}
 
@@ -902,7 +902,7 @@ main();
 
 ***
 
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#t56d91ba}
+### forward search (SumatraPDF を前面に表示したくない場合) {#t56d91ba}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
