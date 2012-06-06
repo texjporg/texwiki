@@ -216,7 +216,7 @@ Topic
 Macro
 : &nbsp;
 
-#### SumatraPDF {#ff11f3ec}
+#### SumatraPDF (SumatraPDF を前面に表示したい場合) {#ff11f3ec}
 
 DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
 
@@ -237,6 +237,28 @@ Topic
 
 Macro
 : \[ForwardSearch("%X.pdf","%F",%l,0,0,1)\]\[Open("%X.pdf",0,1,1)\]
+
+#### SumatraPDF (SumatraPDF を前面に表示したくない場合) {#e7c044c0}
+
+DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
+
+フルパス
+: C:\Program Files\SumatraPDF\SumatraPDF.exe
+
+引数
+: -reuse-instance "%X.pdf"
+
+DDE
+: ☑DDEを使用する
+
+Service
+: SUMATRA
+
+Topic
+: control
+
+Macro
+: \[ForwardSearch("%X.pdf","%F",%l,0,0,0)\]\[Open("%X.pdf",0,0,1)\]
 
 ### Dvi to Pdf {#w081339b}
 
