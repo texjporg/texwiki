@@ -377,7 +377,7 @@ main();
 
 ## SumatraPDF との連携 {#vb348fe8}
 
-### forward and inverse search (SumatraPDF v1.9.4622 以上の場合) {#l2061012}
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#l2061012}
 
 #### SumatraPDF.js {#vcd32599}
 
@@ -431,7 +431,7 @@ main();
 
 ***
 
-### forward search (SumatraPDF v1.9.4622 未満 かつ SumatraPDF v1.7.3952 以上の場合) {#q6af99da}
+### forward search (SumatraPDF を前面に表示したくない場合) {#q6af99da}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
