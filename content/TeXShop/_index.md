@@ -43,7 +43,26 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 また、以下のシェルスクリプトの設定においても、--shell-escapeは有効になっていません。<br>
 コンパイルの際に--shell-escapeが必要な場合は、その都度ターミナルからplatex（など）を実行するか、「パーソナルスクリプト」に--shell-escapeを有効にしたスクリプトを指定しておき、--shell-escapeが必要なときにはその都度「タイプセット」メニューから「パーソナルスクリプト」を指定するとよいでしょう（[pTeX/UpTeX.app + TeXShopでshell-escapeを使う](http://www2.kumagaku.ac.jp/teacher/herogw/shell.html)を参照）。
 
-### &#x7e;/Library/TeXShop/bin/pdfeptex {#u46327c0}
+### シェルスクリプトの作成 {#z1cf4023}
+
+一般的なplatexを使用する際には、環境設定の「内部設定」で「TeX + dvips + distiller」を適切に設定する必要があります。<br>
+シェルスクリプトを使用するか、それともlatexmkを使用するか、simpdftexを使用するか、設定方法は大きく分けて3通りあり、さらにplatex/uplatexのいずれを使用するのか、dvipdfmx/dvipsのいずれを使用するのか、などによって設定は様々になります。
+
+- シェルスクリプトを作成して割り当てる場合は、「Tex/Latex」それぞれに設定するためのシェルスクリプトを作成し、実行権限を割り当ててから「内部設定」で指定します。<br>
+    「pdfeptex/pdfplatex」「pdfeptex2/pdfplatex2」「pdfeuptex/pdfuplatex」「pdfeuptex2/pdfuplatex2」「eptex2pdf-utf8/platex2pdf-utf8」「euptex2pdf-utf8/uplatex2pdf-utf8」の6組の作成方法が以下に示されています。<br>
+    たとえばpdfeptexを作成する場合はターミナルで
+
+    ```
+    $ nano ~/Library/TeXShop/bin/pdfeptex
+    ```
+
+    として下記のシェルスクリプトを記述し、保存してからchmodを実行します。こうして作成したシェルスクリプトを「内部設定」で指定します。
+
+- <strong>latexmk</strong> を使用する場合は、下記を参照して直接記述します。
+- <strong>simpdftex</strong> を使用する場合は、下記を参照して直接記述します。しかしこの方法ではエラーが発生してもそのまま dvipdfmx を実行してしまうようです．
+- 環境設定の「詳細」では「パーソナルスクリプト」が指定できます。通常使うのとは別のスクリプトを指定しておくことができるので、たとえば--shell-escapeを有効にしたスクリプトを準備しておけば、必要に応じてTeXShopからでも--shell-escapeを用いることができます。
+
+#### &#x7e;/Library/TeXShop/bin/pdfeptex {#u46327c0}
 
 シェルスクリプトを作成します．
 
@@ -67,7 +86,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfeptex
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfplatex {#r809076b}
+#### &#x7e;/Library/TeXShop/bin/pdfplatex {#r809076b}
 
 シェルスクリプトを作成します．
 
@@ -91,7 +110,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfplatex
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfeptex2 {#q731839a}
+#### &#x7e;/Library/TeXShop/bin/pdfeptex2 {#q731839a}
 
 シェルスクリプトを作成します．
 
@@ -117,7 +136,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfeptex2
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfplatex2 {#a6588dbd}
+#### &#x7e;/Library/TeXShop/bin/pdfplatex2 {#a6588dbd}
 
 シェルスクリプトを作成します．
 
@@ -143,7 +162,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfplatex2
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfeuptex {#e75e7a51}
+#### &#x7e;/Library/TeXShop/bin/pdfeuptex {#e75e7a51}
 
 シェルスクリプトを作成します．
 
@@ -167,7 +186,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfeuptex
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfuplatex {#i78a916c}
+#### &#x7e;/Library/TeXShop/bin/pdfuplatex {#i78a916c}
 
 シェルスクリプトを作成します．
 
@@ -191,7 +210,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfuplatex
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfeuptex2 {#c671711f}
+#### &#x7e;/Library/TeXShop/bin/pdfeuptex2 {#c671711f}
 
 シェルスクリプトを作成します．
 
@@ -217,7 +236,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfeuptex2
 ```
 
-### &#x7e;/Library/TeXShop/bin/pdfuplatex2 {#p9f6b0c6}
+#### &#x7e;/Library/TeXShop/bin/pdfuplatex2 {#p9f6b0c6}
 
 シェルスクリプトを作成します．
 
@@ -243,7 +262,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/pdfuplatex2
 ```
 
-### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
+#### &#x7e;/Library/TeXShop/bin/eptex2pdf-utf8 {#v264f812}
 
 シェルスクリプトを作成します．
 
@@ -278,7 +297,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/eptex2pdf-utf8
 ```
 
-### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
+#### &#x7e;/Library/TeXShop/bin/platex2pdf-utf8 {#c6b7a84a}
 
 シェルスクリプトを作成します．
 
@@ -313,7 +332,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/platex2pdf-utf8
 ```
 
-### &#x7e;/Library/TeXShop/bin/euptex2pdf-utf8 {#dcc357ad}
+#### &#x7e;/Library/TeXShop/bin/euptex2pdf-utf8 {#dcc357ad}
 
 シェルスクリプトを作成します．
 
@@ -348,7 +367,7 @@ chmod で実行権限を付加します．
 $ chmod +x ~/Library/TeXShop/bin/euptex2pdf-utf8
 ```
 
-### &#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8 {#d8b1bd48}
+#### &#x7e;/Library/TeXShop/bin/uplatex2pdf-utf8 {#d8b1bd48}
 
 シェルスクリプトを作成します．
 
@@ -544,7 +563,9 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 #### 内部設定 {#ubede387}
 
-■ latexmk で eptex, platex, pbibtex, mendex, dvipdfmx を使用する場合
+- <strong>latexmk</strong> を使用する
+
+■ <strong>latexmk</strong> で eptex, platex, pbibtex, mendex, dvipdfmx を使用する場合
 
 ***
 
@@ -593,7 +614,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 ***
 
-■ latexmk で eptex, platex, pbibtex, mendex, dvips, ps2pdf を使用する場合
+■ <strong>latexmk</strong> で eptex, platex, pbibtex, mendex, dvips, ps2pdf を使用する場合
 
 ***
 
@@ -642,7 +663,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 ***
 
-■ latexmk で euptex, uplatex, upbibtex, mendex, dvipdfmx を使用する場合
+■ <strong>latexmk</strong> で euptex, uplatex, upbibtex, mendex, dvipdfmx を使用する場合
 
 ***
 
@@ -691,7 +712,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 ***
 
-■ latexmk で euptex, uplatex, upbibtex, mendex, dvips, ps2pdf を使用する場合
+■ <strong>latexmk</strong> で euptex, uplatex, upbibtex, mendex, dvips, ps2pdf を使用する場合
 
 ***
 
@@ -739,6 +760,8 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 
 ***
+
+- <strong>シェルスクリプト</strong>を使用する
 
 ■ [&#x7e;/Library/TeXShop/bin/pdfeptex](/TeXShop/#u46327c0), [&#x7e;/Library/TeXShop/bin/pdfplatex](/TeXShop/#r809076b), pbibtex を使用する場合
 
@@ -1033,6 +1056,8 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 
 ***
+
+- <strong>simpdftex</strong> を使用する
 
 ■ [simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) (eptex, platex), pbibtex を使用する場合
 
