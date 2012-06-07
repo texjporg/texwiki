@@ -157,6 +157,7 @@ BibTeX形式の出力があるWebアプリが公開されている
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール。[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている。 |
 | [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeXコマンド・クローン。文献スタイルファイルは独自型式のものを用いる。 |
 | [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeXコマンド・クローン。書誌データはYAML形式で書く |
+| [bibtex-spirit](http://home.no/sergiu/bibtex-spirit/) | C++ | BibTeX C++ parser library |
 
 <br>
 
