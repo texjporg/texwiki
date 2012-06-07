@@ -533,7 +533,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 　　　　◯ Pdftex　　　　　　　　　　　　　　　　　　　　　　　　 ◯ Pdf Sync (TeXLive2010以前)<br>
 　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> TeX + DVI　　　　　　　　　　　　　　　　　　　　　　◯ PDFを検索<br>
 　　　　◯ デフォルトのスクリプト　　　　　　　　　　　　　　　◯ 併用<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> SyncTeX (TeXLive2010以降) ← TeX Live 2012 では eptex, euptex で SyncTeX が使用可能です<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> SyncTeX (TeXLive2010以降) ← TeX Live 2012 では ptex, eptex, uptex, euptex で SyncTeX が使用可能です<br>
 
 <br>
 
