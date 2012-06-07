@@ -35,8 +35,10 @@ TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 ## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
+### 注意事項 {#j76804fc}
+
 --shell-escapeについて
-: セキュリティ上の理由により、TeXShopはバージョン2.45/3.10より、pdfTeX/pdfLaTeXのセッティングから--shell-escapeが除かれています。<br>
+: セキュリティ上の理由により、TeXShopはバージョン2.45/3.10より、pdfTeX/pdfLaTeXのセッティングから--shell-escapeが除かれています。（以前の設定を引き継いでいる場合は残ってしまっていますが。）<br>
 
 また、以下のシェルスクリプトの設定においても、--shell-escapeは有効になっていません。<br>
 コンパイルの際に--shell-escapeが必要な場合は、その都度ターミナルからplatex（など）を実行するか、「パーソナルスクリプト」に--shell-escapeを有効にしたスクリプトを指定しておき、--shell-escapeが必要なときにはその都度「タイプセット」メニューから「パーソナルスクリプト」を指定するとよいでしょう（[pTeX/UpTeX.app + TeXShopでshell-escapeを使う](http://www2.kumagaku.ac.jp/teacher/herogw/shell.html)を参照）。
@@ -411,7 +413,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー<br>
 　　　　　◯ Tab キー<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
-　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span><br>
+　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span> ← エンコーディングは Unicode (UTF-8) を選択します<br>
 　　　　　◯ Apple 標準検索パネル<br>
 　　　　　◯ Apple 標準検索バー　　　　　　　　　　　　　　 <strong>括弧の対応チェック対象と強調色</strong><br>
 　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> OgreKit 検索パネル　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> { }　<span style="color:Black;background-color:#9FCFFB;">☑</span> \[ \]　<span style="color:Black;background-color:#9FCFFB;">☑</span> ( )　☐ &lt; ><br>
@@ -429,7 +431,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 　　　　TeXShop 標準<br>
-　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span><br>
+　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span> ← 設定プロファイルから pTeX (ShiftJIS) を選択します<br>
 　　　　pTeX (EUC)
 
 ***
@@ -1230,6 +1232,8 @@ TeXShop を再起動します．
 ### タイプセット {#b06dc45a}
 
 タイプセットは ⌘T (Command+T) で行います．
+
+メニューの「タイプセット」から「pdfTeX」「TeX＋DVI」「パーソナルスクリプト」をその場で切り替えられます。
 
 #### [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/) {#q2990ba4}
 
