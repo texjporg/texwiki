@@ -228,6 +228,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
 - [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [windows7(64bit)にTeXをインストール](http://kagoshima-au.blog.so-net.ne.jp/2012-05-24)
     <!-- -[[TeX3インストーラが『情報ファイルの発見に失敗』するとき:http://shinobra.com/2012/05/sawanoboly/tex3_install_windows]] -->
