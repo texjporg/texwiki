@@ -176,10 +176,11 @@ repstopdf,epspdf,extractbb,\
 
 #### TeX Live 2011 (Win32) {#pad973ce}
 
-- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
 - [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
+    - [第3回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/805)
     - [第2回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/765)
     - [第1回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/739)
+- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
 - [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
 - [Windows7でTeX環境を作った](http://barippi.blog.fc2.com/blog-entry-1309.html)
 - [TeXLiveです](http://d.hatena.ne.jp/eggtoothcroc/20120219/p1)
