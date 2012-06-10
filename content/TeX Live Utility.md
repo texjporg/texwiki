@@ -9,7 +9,13 @@ pukiwiki: "TeX Live Utility"
 
 ## [TeX Live Utility](http://code.google.com/p/mactlmgr/) {#iead361a}
 
-#### [TeX Live Utility - Mac OS X GUI for TeX Live Manager](http://code.google.com/p/mactlmgr/) (and for MacTeX) {#se8c19b9}
+- [TeX Live Utility - Mac OS X GUI for TeX Live Manager](http://code.google.com/p/mactlmgr/) (and for MacTeX)
+
+### リリース情報 {#d0019337}
+
+2012-06-10 TeX Live Utility 1.0
+
+### TeX Live Utility とは {#n3457ddb}
 
 TeXLive のパッケージ管理などができる TeX Live Manager（tlmgr）の OS X ネイティブの GUI ユーティリティ。<br>
 MacTeX をインストールすると、アプリケーションフォルダの TeX フォルダの中にインストールされます。<br>
