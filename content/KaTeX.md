@@ -343,6 +343,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
+;(setq elisp::tex-command "latexmk")
 (setq elisp::tex-command "latexmk -e \"$latex=q/platex\"\" \"\"-kanji=utf8\"\" \"\"-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/pbibtex\"\" \"\"-kanji=utf8/\"\"\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvipdf=q/dvipdfmx\"\" \"\"%O\"\" \"\"-o\"\" \"\"%D\"\" \"\"%S/\"\"\" -norc -gg -pdfdvi")
 ;(setq elisp::tex-command "latexmk -e \"$latex=q/platex\"\" \"\"-kanji=utf8\"\" \"\"-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/pbibtex\"\" \"\"-kanji=utf8/\"\"\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvips=q/dvips\"\" \"\"%O\"\" \"\"-z\"\" \"\"-f\"\" \"\"%S\"\" \"\"|\"\" \"\"convbkmk\"\" \"\"-g\"\" \"\">\"\" \"\"%D/\"\"\" -e \"$ps2pdf=q/ps2pdf.bat\"\" \"\"%O\"\" \"\"%S\"\" \"\"%D/\"\"\" -norc -gg -pdfps")
 ;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex\"\" \"\"-kanji=utf8\"\" \"\"-no-guess-input-enc\"\" \"\"-synctex=1/\"\"\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex\"\" \"\"-U/\"\"\" -e \"$dvipdf=q/dvipdfmx\"\" \"\"%O\"\" \"\"-o\"\" \"\"%D\"\" \"\"%S/\"\"\" -norc -gg -pdfdvi")
@@ -369,8 +370,8 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
                                      ((string-match "platex" elisp::tex-command) "mendex -U")
                                      ((string-match "lualatex\\|xelatex" elisp::tex-command) "texindy")
                                      (t "makeindex")))
-(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & pdfopen --file %s.pdf")
-                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf")))
+(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & pdfopen --file %s.pdf || pdfopen --file %s.pdf")
+                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde & dvipdfmx %s && pdfopen --file %s.pdf || pdfopen --file %s.pdf")))
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
@@ -437,6 +438,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; (setq elisp::KaTeX-kanji-code nil) に設定
 ;; AMS-LaTeX を使う
 ;; jsarticle をデフォルトに
+;; タイプセットを latexmk で
 ;; タイプセットを latexmk (pdfplatex) で
 ;; タイプセットを latexmk (pdfplatex2) で
 ;; タイプセットを latexmk (pdfuplatex) で
@@ -519,6 +521,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET latexmk RET</td><td>latexmk</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET platex -synctex=1 RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex RET</td><td>pdfplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex2 RET</td><td>pdfplatex2</td></tr>
