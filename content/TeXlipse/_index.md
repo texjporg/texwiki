@@ -1364,15 +1364,16 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 ***
 
 ■ SumatraPDF を前面に表示したくない場合<br>
+[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile"</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\NDde\Binary\fwdsumatrapdf.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile" "&#x25;texfile" &#x25;line</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,0)\]\[Open("%fullfile",0,0,1)\]</ins><br>
-　　　　サーバー： <ins>SUMATRA</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
 
 <br>
 
