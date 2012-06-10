@@ -62,6 +62,8 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 [非 e-TeX で hyperref を使うと……](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) を参照．
 
+2012/05/28 の oberdiek バンドルの更新でこの問題が解決されました。詳細については上掲のリンク先を参照してください。
+
 ### 指定可能なオプション {#za8c61cb}
 
 プリアンプルに \usepackage\[オプション\]{hyperref} として、オプションを指定します．
