@@ -85,8 +85,9 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 <!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
 <!-- &br; -->
+<!-- #ref(http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png,nolink,kyotex-mode を使った xyzzy の画面) -->
 
-<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png" alt="kyotex-mode を使った xyzzy の画面">
+<img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_016.png" alt="kyotex-mode を使った xyzzy の画面">
 
 ## ダウンロードとインストール {#xy9167cb}
 
