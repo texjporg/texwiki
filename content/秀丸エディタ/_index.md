@@ -62,6 +62,8 @@ pukiwiki: "秀丸エディタ"
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
     [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
 
+- [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
+
 ### RaTeX0e {#s1e27527}
 
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
