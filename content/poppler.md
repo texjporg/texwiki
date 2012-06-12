@@ -21,7 +21,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用され
 
 ### リリース情報 {#ha3b28ab}
 
-2012-05-10 poppler 0.20.0<br>
+2012-06-10 poppler 0.20.1<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -322,9 +322,9 @@ $ popd
 fontconfig のインストールでエラーが発生する場合は [fontconfig のインストールについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=732) を参照してください．
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.9.0.tar.gz
-$ tar zxvf fontconfig-2.9.0.tar.gz
-$ pushd fontconfig-2.9.0
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.9.91.tar.gz
+$ tar zxvf fontconfig-2.9.91.tar.gz
+$ pushd fontconfig-2.9.91
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -538,9 +538,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.0.tar.gz
-$ tar zxvf poppler-0.20.0.tar.gz
-$ pushd poppler-0.20.0
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.1.tar.gz
+$ tar zxvf poppler-0.20.1.tar.gz
+$ pushd poppler-0.20.1
 $ mkdir build
 $ pushd build
 ```
