@@ -136,6 +136,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
     - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
     - [vim-scripts/LaTeX-Box - GitHub](https://github.com/vim-scripts/LaTeX-Box)
+    - [Latexmkとvim, vim-boxの設定](http://d.hatena.ne.jp/wal-neko/20101119/1290158352)
 - [auctex.vim](http://www.math.rochester.edu/people/faculty/cmlr/Latex/)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
 - [tex.vim : Indent file for TeX](http://www.vim.org/scripts/script.php?script_id=218)
