@@ -21,16 +21,18 @@ LaTeXiT は OS X で動作する数式エディタです．
     <!-- -[[LaTeXiT:http://pierre.chachatelier.fr/latexit]] -->
     - [Downloads](http://www.chachatelier.fr/latexit/latexit-downloads.php)
         - [Beta](http://www.chachatelier.fr/latexit/latexit-beta.php)
+    - [FAQ](http://www.chachatelier.fr/latexit/latexit-faq.php)
 
 ### リリース情報 {#sb3b1ab6}
 
+2012-06-12 LaTeXiT 2.5.0 beta 8<br>
 2011-06-13 LaTeXiT 2.4.1<br>
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
 <strong>MacTeX で配布されている Ghostscript では LaTeXiT で日本語が表示されないようです．</strong><br>
 
-日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) や [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) で配布されている Ghostscript に変更してください．<br>
+日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更してください．<br>
 
 ### プログラム {#xab14b42}
 
@@ -53,8 +55,8 @@ LaTeXiT は OS X で動作する数式エディタです．
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
 　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins> または <ins>/usr/texbin/uplatex</ins><br>
 　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
-　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) や [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) で配布されている Ghostscript に変更<br>
-　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) や [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) で配布されている Ghostscript に変更<br>
+　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更<br>
+　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
 
 ***
@@ -74,3 +76,4 @@ LaTeXiT は OS X で動作する数式エディタです．
 - [久し振りの単独記事は、MacOSX LionにTeX環境を入れる話。](http://blog.goo.ne.jp/superspeed1963/e/09803682db0044e5bb3e5f6d5674c95c)
 - [pTeX.app+LaTeXiT.appで日本語を表示する．](http://d.hatena.ne.jp/beehive62/20100606/1275809660)
 - LaTeXiTでUndefined control sequence.l.1 \documentclass とのエラーメッセージがでる ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
+- [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
