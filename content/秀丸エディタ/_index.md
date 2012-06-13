@@ -51,7 +51,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
-### TeXmac, Gui-Shell {#ld68541f}
+### [TeXmac, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#ld68541f}
 
 - [TeXmac, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
     Gui-Shell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
@@ -59,10 +59,11 @@ pukiwiki: "秀丸エディタ"
 
 - [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
 - [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
+- [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
+- [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
+- [角藤版 pTeX を， TeXMac &amp; 秀丸 から使う方法](http://mixedmoss.com/Oboegaki/TeXMac%20install.htm)
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
     [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
-
-- [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
 
 ### RaTeX0e {#s1e27527}
 
