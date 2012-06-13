@@ -199,6 +199,10 @@ dvipdfmx がうまく動作しない場合は以下の記事を参照してく�
 
 ***
 
+## [W32TeX](/W32TeX/) {#f3b98402}
+
+- [LaTeX とか使う](http://syun2ej.jugem.jp/?eid=3346)
+
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
