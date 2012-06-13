@@ -432,7 +432,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Escape キー<br>
 　　　　　◯ Tab キー<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>エンコーディング</strong><br>
-　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span> ← エンコーディングは Unicode (UTF-8) を選択します<br>
+　　　　<strong>検索パネル (TeXShop再起動後)</strong>　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ Unicode (UTF-8)　　　　　　　 ◆ \]</ins></span> ← エンコーディングは <strong>Unicode (UTF-8) を選択</strong><br>
 　　　　　◯ Apple 標準検索パネル<br>
 　　　　　◯ Apple 標準検索バー　　　　　　　　　　　　　　 <strong>括弧の対応チェック対象と強調色</strong><br>
 　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> OgreKit 検索パネル　　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> { }　<span style="color:Black;background-color:#9FCFFB;">☑</span> \[ \]　<span style="color:Black;background-color:#9FCFFB;">☑</span> ( )　☐ &lt; ><br>
@@ -450,7 +450,7 @@ $ chmod +x ~/Library/TeXShop/bin/uplatex2pdf-utf8
 
 　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 設定プロファイル　　 ▼ \]</ins></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　キャンセル　 \]</ins></span>　<span style="color:Black;background-color:#9FCFFB;"><ins>\[ 　　OK　　 \]</ins></span><br>
 　　　　TeXShop 標準<br>
-　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span> ← 設定プロファイルから pTeX (ShiftJIS) を選択します<br>
+　　<span style="color:White;background-color:#2358FF;">　　pTeX (ShiftJIS)　　　　</span> ← 設定プロファイルから <strong>pTeX (ShiftJIS) を選択</strong><br>
 　　　　pTeX (EUC)
 
 ***
@@ -1303,6 +1303,7 @@ Live preview for TeXShop
 
 ## 関連リンク {#qb1b8010}
 
+- [TeXShop入れてみた](http://milkyway.holy.jp/?p=143)
 - [latexme インストール と TeXShop の設定](http://fbncc112358.blogspot.jp/2012/04/latexme-texshop.html)
 - [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
