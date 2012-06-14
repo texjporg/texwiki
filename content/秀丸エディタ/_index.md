@@ -65,6 +65,74 @@ pukiwiki: "秀丸エディタ"
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
     [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
 
+#### TeXmac {#k11d277b}
+
+***
+
+TeXMAC統合環境(1)<br>
+コンパイル関係(2)<br>
+文書クラス設定(3)<br>
+ちょうてふ(4)<br>
+TeXMAC-R #1(5)<br>
+TeXMAC-R #2(6)<br>
+TeXMAC-R #3(7)<br>
+TeXMAC-R #4(8)<br>
+ﾌｫｰﾏｯﾄﾌｧｲﾙ選択(9)<br>
+見出し検索(0)<br>
+
+***
+
+#### Gui-Shell {#l396e5fa}
+
+***
+
+設定
+
+- 環境変数 PATH に dviout.exe と guishell.exe の存在するフォルダーを追加する (例えば C:\w32tex\dviout;C:\w32tex\guishell-1.39.2-x64)
+- 環境変数 TEXMF に C:\w32tex\share\texmf を設定する
+- 環境変数 TEXMFCNF に C:\w32tex\share\texmf\web2c;C:\w32tex\share\texmf\web2c\eptex を設定する
+- guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で platex.fmt をチェックして 縦組み対応LaTeX2e(platex.fmt) を選択して OK をクリックする
+- guishell.cfg を以下のように設定
+
+    ```
+    index=0
+    FormatFile0=縦組み対応LaTeX2e(platex.fmt)
+    ```
+
+***
+
+Gui-Shellの一般的動作設定<br>
+　　動作ﾓｰﾄﾞの設定<br>
+　　　◎ 日本語ﾓｰﾄﾞ(日本語版のﾌﾟﾛｸﾞﾗﾑを優先します)<br>
+　　　◯ 欧文ﾓｰﾄﾞ(ｵﾘｼﾞﾅﾙ版のﾌﾟﾛｸﾞﾗﾑを優先します)<br>
+　　画面出力設定<br>
+　　☐ Gui-Shellコメントの抑制<br>
+　　<span style="color:#CCCCCC;">☑ 標準エラー出力を表示</span><br>
+　　☑ エラー行に色をつける<br>
+　　環境変数PATHの推定(次回起動時より有効)<br>
+　　☐ Ghostscriptディレクトリの推定を行う<br>
+　　☐ Adobe Acrobatディレクトリの推定を行う<br>
+　　☐ TeX実行プログラムのディレクトリの推定を行う<br>
+　　 MRUリストの数(次回GUI-Shell起動時から有効) <ins>9</ins><br>
+　　☐ 分割ウィンドウを用いる(推奨されない機能)<br>
+　　☐ 終了時メッセージを表示しない<br>
+　　☐ クリッピングせずに画面出力<br>
+　　☐ DDE接続時もTEXEDITを使う<br>
+
+***
+
+ﾌｫｰﾏｯﾄﾌｧｲﾙ登録<br>
+　ｺﾝﾋﾟｭｰﾀ上にあるﾌｫｰﾏｯﾄﾌｧｲﾙ　　　登録済みﾌｫｰﾏｯﾄﾌｧｲﾙ(とその表示順序)<br>
+
+<br>
+
+　 ☐cont-en.fmt　　　　　　　　　　　縦組み対応LaTeX2e(platex.fmt)<br>
+　 ☐eptex.fmt<br>
+　 ☑platex.fmt<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　☑フォーマットファイルバーの表示<br>
+
+***
+
 ### RaTeX0e {#s1e27527}
 
 - [RaTeX0e](http://uca-works.com/program/ratex.html)
