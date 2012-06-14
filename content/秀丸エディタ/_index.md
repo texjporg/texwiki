@@ -35,12 +35,6 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
-## 64bit版macrodll.dll {#pcf2dfaf}
-
-- [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
-    - [h-tom's Warehouse - 秀丸エディタ macro](http://homepage3.nifty.com/_htom/macro/)
-        - [64bit版macrodll.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-4)
-
 ## 正規表現 {#f7fa3efd}
 
 - [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
