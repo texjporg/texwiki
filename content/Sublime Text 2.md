@@ -40,4 +40,5 @@ Sublime Text 2 は Windows, OS X, Linux で動作するテキストエディタ�
 
 ### OS X {#c2e22368}
 
+- [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
 - [Sublime Text 2でTeXをコンパイルする](http://ototorosama.com/blog/2011/11/sublime-text-2%E3%81%A7tex%E3%82%92%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%81%99%E3%82%8B/)
