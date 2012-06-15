@@ -9,6 +9,8 @@ pukiwiki: "Skim"
 
 ## [Skim](http://skim-app.sourceforge.net/) {#icc6746f}
 
+<img src="http://sourceforge.net/apps/mediawiki/skim-app/nfs/project/s/sk/skim-app/7/70/MediaWikiSidebarLogo.png" alt="Skim" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## Skim とは {#mcac8dfe}
