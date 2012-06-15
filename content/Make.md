@@ -154,5 +154,6 @@ latexmk -c
 ### [OMake](http://omake.metaprl.org/) {#yf7ac218}
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
+- [latex-template](https://github.com/nojima/latex-template)
 - [Windowsで快適なLaTeX環境を構築する](http://nojima.hatenablog.com/entry/2012/01/12/205857)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
