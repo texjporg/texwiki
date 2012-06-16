@@ -54,6 +54,7 @@ pukiwiki: "秀丸エディタ"
 - [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
 - [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
 - [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
+- [GuiShell を呼び出し，TeX にコンパイルさせるマクロは？](http://www.maruo.co.jp/hidesoft/2/x31262_.html#31262)
 - [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
 - [角藤版 pTeX を， TeXMac &amp; 秀丸 から使う方法](http://mixedmoss.com/Oboegaki/TeXMac%20install.htm)
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
