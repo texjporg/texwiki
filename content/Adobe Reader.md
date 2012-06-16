@@ -17,7 +17,13 @@ Adobe Reader の Windows 版は PDF ファイルをロックしてしまうの�
 PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
 - [Adobe Reader](http://www.adobe.com/jp/products/reader.html)
+- [Adobe Reader Blog](http://blogs.adobe.com/adobereader/)
 - [アドビ サポート担当 (adobesupportj) on Twitter](http://twitter.com/#!/AdobeSupportJ)
+
+### お知らせ {#xa82989b}
+
+[Adobe Reader 9, Adobe Acrobat 9 のサポートが 2013年6月26日 で終了](http://blogs.adobe.com/adobereader/2012/06/one-year-from-now-adobe-reader-and-acrobat-9-eol.html)する予定です．<br>
+Adobe Reader 9 を使用している方は Adobe Reader X にアップグレードしてください．<br>
 
 ## ダウンロード {#ne09e93f}
 
