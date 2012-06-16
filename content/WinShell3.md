@@ -96,17 +96,17 @@ WinShell が立ち上がり，さらに説明が出ますので，\[OK\] を押�
 上記のサイトから WinShell zip ファイル（“WinShell3??.zip” といった名前のもの）をダウンロードし，展開すると
 インストール完了です．
 
-<!-- **日本語言語ファイル [#i83c37b0] -->
-<!--  -->
-<!-- -[[WinShell3日本語化:http://redmine.nnnnn.me/projects/winshell/files]] -->
-<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
-<!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/viewcat.php?cid=2]] -->
-<!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/index.php/1]] -->
-<!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://nnnnn.co/filemgmt/visit.php?lid=1]] (Google キャッシュ) -->
-<!--  -->
-<!-- [[( ﾟÅﾟ)んー:http://twitter.com/whoami]] さんが WinShell3 日本語言語ファイルを公開されています．~ -->
-<!-- WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．~ -->
-<!-- ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．~ -->
+### 日本語言語ファイル {#i83c37b0}
+
+- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
+    - [jp_JP.txt](http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt) (Google キャッシュ)
+        <!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/viewcat.php?cid=2]] -->
+        <!-- -[[WinShell3 日本語言語ファイル:http://nnnnn.co/filemgmt/index.php/1]] -->
+        <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://nnnnn.co/filemgmt/visit.php?lid=1]] (Google キャッシュ) -->
+
+[( ﾟÅﾟ)んー](http://twitter.com/whoami) さんが WinShell3 日本語言語ファイルを公開されています．<br>
+WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
+ダウンロードしたファイルは WinShell の Translations フォルダに置いてください．<br>
 
 ## 不具合 {#j9720464}
 
