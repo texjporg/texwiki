@@ -117,6 +117,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [パワポは苦手！理工系のためのプレゼンツールBeamer](http://d.hatena.ne.jp/wkmy/20110829/1314611076)
 - [Beamerでプレゼン資料を作る](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
+- [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
