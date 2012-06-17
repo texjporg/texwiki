@@ -48,3 +48,8 @@ dvips: ! invalid char 9578 from font min10
 ```
 
 MiKTeX には [Ghostscript](/Ghostscript/) が含まれていますが日本語がうまく扱えないようです．<br>
+
+### 関連リンク {#x1081277}
+
+- [「はじめてのLaTeX」著者サポート：MiKTeX2.9のインストール](http://supportdoc.net/support-latex/newmik.html)
+- [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
