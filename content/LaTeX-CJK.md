@@ -520,5 +520,6 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 ## 関連リンク {#k90787cf}
 
+- [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [zhmCJK Package](http://www.ctan.org/pkg/zhmcjk)
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
