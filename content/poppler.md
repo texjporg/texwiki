@@ -636,6 +636,8 @@ C:.
 
 ## 関連リンク {#m3ac74dd}
 
+- [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
+- [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
