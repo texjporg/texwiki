@@ -25,8 +25,7 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 ### リリース情報 {#sb3b1ab6}
 
-2012-06-12 LaTeXiT 2.5.0 beta 8<br>
-2011-06-13 LaTeXiT 2.4.1<br>
+2012-06-16 LaTeXiT 2.5.0<br>
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
@@ -75,5 +74,6 @@ LaTeXiT は OS X で動作する数式エディタです．
 - [LaTeXiTでアレする](http://ototorosama.com/blog/2011/11/latexit%E3%81%A7%E3%82%A2%E3%83%AC%E3%81%99%E3%82%8B/)
 - [久し振りの単独記事は、MacOSX LionにTeX環境を入れる話。](http://blog.goo.ne.jp/superspeed1963/e/09803682db0044e5bb3e5f6d5674c95c)
 - [pTeX.app+LaTeXiT.appで日本語を表示する．](http://d.hatena.ne.jp/beehive62/20100606/1275809660)
+- [LaTeXiTの数式で日本語を通す方法](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=52)
 - LaTeXiTでUndefined control sequence.l.1 \documentclass とのエラーメッセージがでる ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
 - [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
