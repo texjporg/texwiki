@@ -126,7 +126,7 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 ```
 
 使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
-PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．<br>
+PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)<br>
 [UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
 TeX Live 2012, W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
