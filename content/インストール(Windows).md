@@ -176,7 +176,7 @@ repstopdf,epspdf,extractbb,\
 
 #### TeX Live 2011 (Win32) {#pad973ce}
 
-- [LaTeX環境の整備](http://blog.livedoor.jp/phys_com/archives/8891185.html)
+- [LaTeX環境の整備 ― TeX Live 2011を用いて](http://blog.livedoor.jp/phys_com/archives/8891185.html)
 - [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
     - [第3回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/805)
     - [第2回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/765)
