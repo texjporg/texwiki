@@ -179,9 +179,9 @@ $ popd
 - [LibTIFF](http://www.remotesensing.org/libtiff/) をインストールします．
 
 ```
-$ curl -R -L -O ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.1.tar.gz
-$ tar zxvf tiff-4.0.1.tar.gz
-$ pushd tiff-4.0.1
+$ curl -R -L -O ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.2.tar.gz
+$ tar zxvf tiff-4.0.2.tar.gz
+$ pushd tiff-4.0.2
 $ ./configure --prefix=/mingw
 $ make
 $ make install
