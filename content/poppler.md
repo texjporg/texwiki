@@ -321,24 +321,35 @@ $ popd
 
 fontconfig のインストールでエラーが発生する場合は [fontconfig のインストールについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=732) を参照してください．
 
+<!-- $ curl -R -L -O http://cgit.freedesktop.org/fontconfig/snapshot/fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177.tar.gz -->
+<!-- $ tar zxvf fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177.tar.gz -->
+<!-- $ pushd fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177 -->
+<!-- $ ./configure - -prefix=/mingw - -enable-libxml2 -->
+
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.9.91.tar.gz
-$ tar zxvf fontconfig-2.9.91.tar.gz
-$ pushd fontconfig-2.9.91
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.9.0.tar.gz
+$ tar zxvf fontconfig-2.9.0.tar.gz
+$ pushd fontconfig-2.9.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 ```
 
-/mingw/bin/fc-cache -s -f -v の実行で多少時間がかかります．
-
-```
-...
- /bin/install -c -m 644 ./fonts.conf /mingw/etc/fonts/fonts.conf
- /mingw/bin/fc-cache -s -f -v
-C:/Windows/fonts: caching, new cache contents: ??? fonts, ? dirs
-...
-```
+<!--  -->
+<!-- src/fcstat.c:190: undefined reference to `scandir' -->
+<!-- src/fcstat.c:215: undefined reference to `lstat' -->
+<!--  -->
+<!-- -[[fontconfig-2.9.91: undefined symbols scandir lstat on MinGW:http://www.spinics.net/lists/font-config/msg04097.html]] -->
+<!--  -->
+<!-- [[fcstat.c:http://cgit.freedesktop.org/fontconfig/tree/src/fcstat.c]] の最新版を取得します． -->
+<!--  -->
+<!-- /mingw/bin/fc-cache -s -f -v の実行で多少時間がかかります． -->
+<!-- ... -->
+<!--  /bin/install -c -m 644 ./fonts.conf /mingw/etc/fonts/fonts.conf -->
+<!--  /mingw/bin/fc-cache -s -f -v -->
+<!-- C:/Windows/fonts: caching, new cache contents: ??? fonts, ? dirs -->
+<!-- ... -->
+<!--  -->
 
 ```
 $ popd
