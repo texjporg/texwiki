@@ -212,6 +212,36 @@ Options:
 
 Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
 
+## PdfViewer との連携 {#p9f6aff5}
+
+### forward search {#iff757fb}
+
+\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+
+#### ForwardPDF {#c86416d5}
+
+\[New...\] をクリックして PdfViewer を入力します．
+
+Select:
+: PdfViewer
+
+Command:
+: pdfviewer
+
+Options:
+: '%target'
+
+Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
+
+### inverse search {#t261af4f}
+
+\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
+
+Editor:
+: kile --line %l "%f"
+
+Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
 ## pxdvi との連携 (非推奨) {#p727cf9d}
 
 ### forward search {#vc1cbc71}
