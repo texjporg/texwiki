@@ -25,7 +25,7 @@ pukiwiki: "XyMTeX"
 参考になることでしょう。
 
 なお，簡単な参照ページとして
-「[LaTeX で化学構造式 &mdash; XyMTeX の紹介](http://www.klavis.info/xym.html)」
+「[LaTeX で化学構造式 &mdash; XyMTeX の紹介（Internet Archive のウェブアーカイブ）](http://web.archive.org/web/20090224162250/http://www.klavis.info/xym.html)」
 および
 「[PukiWiki XyMTeX プラグイン（Internet Archive のウェブアーカイブ）](http://web.archive.org/web/20060113004208/http://tec-tech.org/?PukiWiki/Plugin/xymtex.inc.php)」
 を挙げておきます。
