@@ -60,8 +60,18 @@ ls -n .\hoge.tex | platex
 
 のようにすれば OK です．
 
+コマンド プロンプトでも Tab でファイル名を補完できるので
+
+```
+cmd
+platex hoge.tex
+```
+
+としたほうが簡単かもしれません．
+
 ### 関連リンク {#teb8e64f}
 
+- [基礎知識 (Windows PowerShell)](http://ufcpp.net/study/powershell/basic.html)
 - [Windows PowerShellを便利に使うための10のミニテクニック](http://handasse.blogspot.com/2009/08/powershell10.html)
 - [.tex->.pdfにするのにコマンド2回たたくのが面倒だからまとめる](http://d.hatena.ne.jp/aldente39/20120609/1339213251)
     - [tex2pdf](https://gist.github.com/2899241)
