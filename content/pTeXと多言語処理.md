@@ -37,12 +37,13 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. [LuaTeX](/LuaTeX/)
 
 によるアプローチなどが考えられます。3. については FreeBSD
-上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)が，4. の
+上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)が，5. の
 多言語化については
 [Omega-CJK](http://hep-ph.konkuk.ac.kr/ChoF/)，[OmegaVN](http://forum.vnoss.org/viewtopic.php?id=870)
 などがあります。[OmegaVN](http://forum.vnoss.org/viewtopic.php?id=870) に
 ついてはグェンさん自身のご紹介 ([qa:34272](https://okumuralab.org/~okumura/texfaq/qa/34272.html)) と
 最新版 dvipdfmx 上で使用する場合の注意事項 ([qa:37564](https://okumuralab.org/~okumura/texfaq/qa/37564.html)) も参照ください。
+4. については、CJK 以外の言語では事情は pTeX とほぼ同じです。
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
