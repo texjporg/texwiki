@@ -90,6 +90,7 @@ $ make distclean
 Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。
 
 - [Makefileの解説](http://www.am.sanken.osaka-u.ac.jp/~mukaigaw/misc/Makefile.html)
+- [自分用latex Makefile](https://gist.github.com/1095020)
 
 ### [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
