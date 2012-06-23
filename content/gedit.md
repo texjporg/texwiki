@@ -240,6 +240,19 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
+#### fwdevince {#s41c2ddc}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+fwdevince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" $GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
 #### Okular {#gaa0fcf1}
 
 ***
@@ -249,6 +262,19 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_PATH""
+```
+
+***
+
+#### PdfViewer {#k6ca6cfc}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME""
 ```
 
 ***
