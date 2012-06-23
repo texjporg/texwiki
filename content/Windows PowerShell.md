@@ -15,6 +15,11 @@ Windows PowerShell はコマンドラインシェルまたはオブジェクト�
 
 ### ダウンロード {#o9ec2561}
 
+Windows 7 の場合は標準搭載されています．<br>
+\[スタート\]-\[すべてのプログラム\]-\[アクセサリ\]-\[Windows PowerShell\]-\[Windows PowerShell\] で Windows PowerShell を起動できます．<br>
+
+Windows Vista, XP で Windows PowerShell がインストールされていない場合は以下のページからダウンロードできます．
+
 - [Windows PowerShell でのスクリプティング](http://www.microsoft.com/powershell)
 
 ### Tab 補完 {#b02c3a08}
