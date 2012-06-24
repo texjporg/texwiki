@@ -61,8 +61,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 - 自動ビルド
 - 自動補完
 - スペル・チェッカー
-- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF, Skim)
-- Source Special による forward and inverse search (dviout, pxdvi)
+- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF, Skim, fwdevince, Okular, PdfViewer)
 
 ## 注意点 {#f6b7dd5c}
 
