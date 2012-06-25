@@ -8,3 +8,20 @@ pukiwiki: "Gummi"
 # Gummi
 
 ## [Gummi](http://gummi.midnightcoding.org/) {#k995ae8f}
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Gummi とは {#ja85a774}
+
+Gummi は Windows, Linux で動作する LaTeX エディタです．<br>
+Live preview 機能があります．<br>
+
+- [Gummi](http://gummi.midnightcoding.org/)
+
+### リリース情報 {#m146a8fe}
+
+2012-06-24 Gummi 0.6.4<br>
+
+### ChangeLog {#r24dbedd}
+
+- [ChangeLog](http://svn.midnightcoding.org/gummi/trunk/ChangeLog)
