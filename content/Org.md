@@ -21,6 +21,8 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 ## LaTeX Export {#k6bbb6c5}
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
+- [Org-ModeからメイリオフォントでPDF出力する方法](http://d.hatena.ne.jp/mokimokisan/20120624/1340558857)
+- [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
 - [TeX Live 2011 ユーザが org 文書を pdf に出力するための設定](http://qiita.com/items/da23c80d334139194a4d)
 - [Emacs + Org Export + TeXShop](http://skalldan.wordpress.com/2011/07/18/emacs-org-export-texshop/)
 - [LaTeX形式のレポートをemacs+org-modeだけで書く](http://ik-fib.com/2012/01/latex_emacs_org-mode/)
