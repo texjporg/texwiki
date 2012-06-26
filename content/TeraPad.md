@@ -9,7 +9,7 @@ pukiwiki: "TeraPad"
 
 ## [TeraPad](http://www5f.biglobe.ne.jp/~t-susumu/library/tpad.html) {#g9e6153d}
 
-<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs1312.snc4/174760_127662703966894_2323052_n.jpg" alt="TeraPad" style="float:right">
+<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/188111_127662703966894_8091952_n.jpg" alt="TeraPad" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
