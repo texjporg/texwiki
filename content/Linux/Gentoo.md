@@ -25,6 +25,7 @@ pukiwiki: "Linux/Gentoo"
 
 - [TeX Live - Gentoo Wiki](http://wiki.gentoo.org/wiki/TeX_Live)
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
+- [Gentoo Linux がTeX Liveに関するアップデート。危険度中!](http://blog.livedoor.jp/dvw_j/archives/10083812.html)
 - [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 - [OTFパッケージ on Gentoo](http://d.hatena.ne.jp/fusion2010/20111010/1318233804)
 - [texlive-2011 on Gentoo Linux (x86)](http://blogs.yahoo.co.jp/igproj_fusion/13118467.html)
