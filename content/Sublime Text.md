@@ -15,10 +15,10 @@ pukiwiki: "Sublime Text"
 
 Sublime Text は Windows, OS X, Linux で動作するテキストエディタです． (シェアウェア)
 
-- [Sublime Text 2](http://www.sublimetext.com/)
-- [Sublime Text 2](http://www.sublimetext.com/2)
-- [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
-- [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
+- [Sublime Text](http://www.sublimetext.com/)
+    - [Sublime Text 2](http://www.sublimetext.com/2)
+    - [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
+    - [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
     - TextMate のバンドルが使用可能
 - [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 
