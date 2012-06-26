@@ -477,8 +477,8 @@ VxEditor + ツール
 [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ
 : [秀丸エディタ](</秀丸エディタ/>)[#マクロ](</秀丸エディタ/#m32041fb>) をご覧ください．
 
-Sublime Text 2 (シェアウェア) + LaTeXTools (LaTeX Plugin for Sublime Text 2)
-: Sublime Text 2#LaTeXTools (LaTeX Plugin for Sublime Text 2) をご覧ください．
+Sublime Text (シェアウェア) + LaTeXTools (LaTeX Plugin for Sublime Text 2)
+: Sublime Text#LaTeXTools (LaTeX Plugin for Sublime Text 2) をご覧ください．
 
 ### 製品 {#jc4ae1f8}
 
