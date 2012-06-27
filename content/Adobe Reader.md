@@ -53,6 +53,18 @@ Adobe Reader 9 を使用している方は Adobe Reader X にアップグレー�
 - [Adobe Reader X ユーザーガイド](http://help.adobe.com/ja_JP/reader/using/)
 - [Acrobat X Standard ユーザーガイド](http://help.adobe.com/ja_JP/acrobat/standard/using/)
 
+## 環境設定 {#y6984ba3}
+
+メニューから \[編集(E)\]-\[環境設定(N)...\] をクリックします．
+
+### 一般 {#v855bee3}
+
+分類(G): の一般をクリックしてアプリケーションの起動で「起動時に保護モードを有効にする(M)」をチェックします．
+
+### 文書 {#v957d46d}
+
+分類(G): の文書をクリックして開き方の設定で「文書を再び開くときに前回のビュー設定を復元(R)」をチェックします．
+
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
 ### PDF ファイルを開く {#id6d0918}
@@ -104,6 +116,8 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 ### [Acrobat および Adobe Reader のコマンドラインオプション](http://kb2.adobe.com/jp/cps/510/510705.html) {#vb210974}
 
 ### [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222) {#fb046c0f}
+
+### [pdfopen and pdfclose](http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/) {#tf67f0e7}
 
 ## 関連リンク {#m8d917f7}
 
