@@ -404,6 +404,8 @@ PDF 文書の中に「次のページへ」や「先頭のページへ」など�
 \Acrobatmenu{GoBack}{Previous View}
 \Acrobatmenu{GoForward}{Next View}
 \Acrobatmenu{FullScreen}{Full Screen Mode}
+\Acrobatmenu{ShowHideBookmarks}{Show/Hide Bookmarks}
+\Acrobatmenu{ShowHideThumbnails}{Show/Hide Page Thumbnails}
 ```
 
 ### 他のパッケージとの互換性 {#z442922c}
