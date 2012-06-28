@@ -231,3 +231,4 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - [slnunicode](http://files.luaforge.net/releases/sln/slnunicode)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
 - [Switched to LuaLaTeX](http://the-user.org/post/switched-to-lualatex)
+- [How to get \copyright when mixing T1 fonts and fontspec?](http://tex.stackexchange.com/questions/29895/how-to-get-copyright-when-mixing-t1-fonts-and-fontspec)
