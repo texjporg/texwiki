@@ -74,7 +74,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### 派生版 {#l02b5ab5}
 
-<!-- -[[NotePad++本体 Shift-jis,Euc-jpに対応化 動的フォント読み込み対応化 npp-y:http://www.geocities.jp/freesftys/]] -->
+- [NotePad++ プラグイン](http://www.geocities.jp/freesftys/)
 - [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
     - 公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
     - [Notepad++ EUC-JP 旧バージョン・更新履歴](http://www.geocities.jp/npp_euc_jp/euc_jp_log.html)
@@ -217,8 +217,8 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSからPDFへ変換</td><td>call "C:\gs\gs9.05\lib\ps2pdf.bat"</td><td>"%MTeXnpp_CFName%.ps" "%MTeXnpp_CFName%.pdf"</td></tr>
-> <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
-> <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
+> <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
+> <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSを表示 (SumatraPDF の場合)</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>PSを表示 (GSview の場合)</td><td>%MTeXnpp_start% "gsview32.exe"</td><td>-e "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>PDFを表示 (TeXworks の場合)</td><td>%MTeXnpp_start% "C:\w32tex\share\texworks\TeXworks.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf"</td></tr>
@@ -1068,7 +1068,15 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 
 ### forward search {#y734a684}
 
-MTeX for Notepad++ を使用する場合は [MTeX for Notepad++#コマンド・パス設定](/Notepad++/#a0913685) を参照してください．<br>
+MTeX for Notepad++ を使用する場合は以下のように設定します．<br>
+
+> <table>
+> <tbody>
+> <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
+> <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
+> </tbody>
+> </table>
+>
 
 NppExec を使用する場合は以下のように設定します．<br>
 
