@@ -9,7 +9,9 @@ pukiwiki: "Mery"
 
 ## [Mery](http://www.haijin-boys.com/island/wiki/) {#l6f5ffa3}
 
-<!-- #ref(http://www.haijin-boys.com/island/wiki/images/logo.png,right,around,nolink,Mery) -->
+<img src="http://www.haijin-boys.com/weblog/uploads/330379294ff046ba56137.png" alt="Mery" style="float:right">
+
+<!-- #ref(http://www.haijin-boys.com/wiki/skins/common/images/wiki.png,right,around,nolink,Mery) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -28,7 +30,7 @@ Mery は
 に対応しています．
 
 - [Haijin Boys Online](http://www.haijin-boys.com/) 公式サイト
-    <!-- -[[Mery - Mery's Factory:http://www.haijin-boys.com/island/wiki/]] -->
+- [MeryWiki](http://www.haijin-boys.com/wiki/)
     <!-- - -[[更新履歴:http://www.haijin-boys.com/island/wiki/index.php?title=Mery%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89]] -->
     <!-- - -[[マクロリファレンス:http://www.haijin-boys.com/island/wiki/index.php?title=%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9]] -->
     - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
