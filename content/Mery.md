@@ -7,7 +7,7 @@ pukiwiki: "Mery"
 
 # Mery
 
-## [Mery](http://www.haijin-boys.com/island/wiki/) {#l6f5ffa3}
+## [Mery](http://www.haijin-boys.com/) {#l6f5ffa3}
 
 <img src="http://www.haijin-boys.com/weblog/uploads/330379294ff046ba56137.png" alt="Mery" style="float:right">
 
@@ -30,10 +30,9 @@ Mery は
 に対応しています．
 
 - [Haijin Boys Online](http://www.haijin-boys.com/) 公式サイト
-- [MeryWiki](http://www.haijin-boys.com/wiki/)
-    <!-- - -[[更新履歴:http://www.haijin-boys.com/island/wiki/index.php?title=Mery%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89]] -->
-    <!-- - -[[マクロリファレンス:http://www.haijin-boys.com/island/wiki/index.php?title=%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9]] -->
     - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
+- [MeryWiki](http://www.haijin-boys.com/wiki/)
+    - [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
 - [窓の杜 - Mery](http://www.forest.impress.co.jp/lib/offc/document/txteditor/mery.html)
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
 - [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
