@@ -14,7 +14,7 @@ pukiwiki: "poppler"
 ## poppler とは {#fd295383}
 
 poppler は PDF ファイルを表示するためのライブラリです．<br>
-poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/) などで使用されています．<br>
+poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gummi などで使用されています．<br>
 
 - [poppler](http://poppler.freedesktop.org/)
     - [repository](http://cgit.freedesktop.org/poppler/poppler)
@@ -423,9 +423,9 @@ msgothic.ttc: "MS Gothic" "Regular"
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/snapshots/pixman-0.25.6.tar.gz
-$ tar zxvf pixman-0.25.6.tar.gz
-$ pushd pixman-0.25.6
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.26.2.tar.gz
+$ tar zxvf pixman-0.26.2.tar.gz
+$ pushd pixman-0.26.2
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -654,3 +654,4 @@ C:.
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
+- [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
