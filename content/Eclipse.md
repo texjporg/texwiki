@@ -24,6 +24,10 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
     - [eclipse e4 project downloads](http://download.eclipse.org/e4/downloads/)
 - [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
+### リリース情報 {#q303f311}
+
+2012-06-27 Eclipse 4.2 (Juno)
+
 ## 動作環境 {#aae7926e}
 
 [Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
@@ -53,8 +57,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 #### Oracle JRE &amp; JDK {#x644af68}
 
 - [Oracle Java 7u6 Mac OS X Port Developer Preview Release &mdash; Java.net](http://jdk7.java.net/macportpreview/)
-- [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
-    - [MacでOracle JDK 7 (Java 7) を試す](http://toggtc.hatenablog.com/entry/2012/04/28/112031)
+- [MacでOracle JDK 7 (Java 7) を試す](http://toggtc.hatenablog.com/entry/2012/04/28/112031)
 
 #### OpenJDK {#n03d5e54}
 
@@ -96,4 +99,5 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 - Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
 - Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
+    - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - Eclipse Wiki - [http://eclipsewiki.net/eclipse/](http://eclipsewiki.net/eclipse/)
