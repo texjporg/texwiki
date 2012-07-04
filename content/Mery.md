@@ -122,14 +122,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+J</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+J</ins><br>
 
 <br>
 
@@ -187,14 +187,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+K</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+K</ins><br>
 
 <br>
 
@@ -239,14 +239,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+J</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+J</ins><br>
 
 <br>
 
@@ -293,14 +293,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+K</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+K</ins><br>
 
 <br>
 
@@ -346,14 +346,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
 
 <br>
 
@@ -400,14 +400,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+U</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+U</ins><br>
 
 <br>
 
@@ -455,14 +455,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+I</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+I</ins><br>
 
 <br>
 
@@ -524,14 +524,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+N</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+N</ins><br>
 
 <br>
 
@@ -581,14 +581,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+N</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+N</ins><br>
 
 <br>
 
@@ -652,14 +652,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+M</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+M</ins><br>
 
 <br>
 
@@ -733,14 +733,14 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+O</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+O</ins><br>
 
 <br>
 
