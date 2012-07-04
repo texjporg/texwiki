@@ -41,32 +41,32 @@ Mery は
 
 LaTeX 文書で使用するエンコードを指定します．
 
-- Unicode (UTF-8, BOM無)
-- Unicode (UTF-8, BOM有)
+- Unicode (UTF-8, BOM無し)
+- Unicode (UTF-8, BOM付き)
 - 日本語 (シフト JIS)
 - 日本語 (EUC)
 - 日本語 (JIS)
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<strong>\[　基本　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　表示　\]\[　記号　\]\[　関連付け　\]\[　キーボード　\]\[　履歴　\]</ins></span><br>
+　　<strong>\[ 基本　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 表示　\]\[ 記号　\]\[ キーボード \]\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
-　　　　折り返し方法(W):　　　　　　　　　　　　　　 ☑行番号を表示(N)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　　▼\]</span>　　 ☑ルーラを表示(R)<br>
-　　　　行の表示方法(D):　　　　　　　　　　　　　　☑ルーラで文字数を指定する(S)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　　 ▼\]</span>　　　☑折り返し線を表示(A)<br>
-　　　　文字数(M):　　　<ins>　　　　　　80\[◆\]</ins>　　　　　☑カーソルのある行に下線を表示(U)<br>
-　　　　引用マーク(Q):　<ins>>　　　　　　　　　</ins>　　　　　☑対応する括弧を強調する(H)<br>
-　　　　タブの桁数(T):　<span style="color:Black;background-color:#EEEEEE;">\[2　　　　　　　▼\]</span>　　　　　☐自動インデントを有効にする(T)<br>
-　　　　行間隔(L):　　　<ins>　　　　　　　0\[◆\]</ins>　　　　　☐タブの代わりに空白を挿入(I)<br>
-　　　　既定のエンコード(E):　　　　　　　　　　　　☐かな漢字変換を起動(P)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[Unicode (UTF-8, BOM無)　　　 ▼\]</span>　　　☑URLをダブルクリックするとそのURLを表示(K)<br>
-　　　　既定の改行コード(C):　　　　　　　　　　　☑カーソル位置とブックマークを保存する(V)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　　▼\]</span>　　　☐ウィンドウ位置を復元(O)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ウィンドウサイズを復元(Z)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
+　　　　折り返し方法(<ins>W</ins>):　　　　　　　　　　　　 ☑行番号を表示(N)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　▼\]</span>　 ☑ルーラを表示(R)<br>
+　　　　行の表示方法(<ins>D</ins>):　　　　　　　　　　　　☑ルーラで文字数を指定する(F)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　 ▼\]</span>　　☑折り返し線を表示(A)<br>
+　　　　文字数(<ins>M</ins>):　　　<ins>80　　　　　　　\[◆\]</ins>　　☑カーソルのある行に下線を表示(U)<br>
+　　　　引用マーク(<ins>Q</ins>):　<ins>>　　　　　　　　　　</ins>　　☑対応する括弧を強調する(H)<br>
+　　　　タブの桁数(<ins>T</ins>):　<span style="color:Black;background-color:#EEEEEE;">\[2　　　　　　　　▼\]</span>　　☑自動インデントを有効にする(T)<br>
+　　　　行間隔(<ins>S</ins>):　　　<ins>0　　　　　　　　\[◆\]</ins>　　☐タブの代わりに空白を挿入(I)<br>
+　　　　既定のエンコード(<ins>E</ins>):　　　　　　　　　　☐かな漢字変換を起動(P)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[Unicode (UTF-8, BOM無し)　 ▼\]</span>　　☑URLをダブルクリックで開く(K)<br>
+　　　　既定の改行コード(<ins>L</ins>):　　　　　　　　　 ☑カーソル位置とブックマークを保存する(V)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐ウィンドウ位置とサイズを復元(O)<br>
+　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐トレイアイコンを表示(Y)<br>
 
 ***
 
@@ -124,11 +124,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+J</ins><br>
 
 <br>
@@ -189,11 +189,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+K</ins><br>
 
 <br>
@@ -241,11 +241,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+J</ins><br>
 
 <br>
@@ -295,11 +295,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+K</ins><br>
 
 <br>
@@ -348,11 +348,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+H</ins><br>
 
 <br>
@@ -402,11 +402,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+U</ins><br>
 
 <br>
@@ -457,11 +457,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+I</ins><br>
 
 <br>
@@ -526,11 +526,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+N</ins><br>
 
 <br>
@@ -583,11 +583,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+N</ins><br>
 
 <br>
@@ -654,11 +654,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+M</ins><br>
 
 <br>
@@ -735,11 +735,11 @@ main();
 
 <span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　基本　\]\[　表示　\]\[　記号　\]\[　関連付け　\]</ins></span><strong>\[　キーボード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　履歴　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
 <br>
 
-　　　分類(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　　　追加するショートカットキー(<ins>N</ins>)：<br>
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
 　　　<span style="color:Black;background-color:#EEEEEE;">\[マイ マクロ　　　　　　　　　　　　　　▼\]</span>　　　<ins>Ctrl+Alt+O</ins><br>
 
 <br>
@@ -806,7 +806,7 @@ section
 
 Mery にはアウトラインのプラグインが標準添付されています．
 
-LaTeX の
+LaTeX の見出しの
 
 - 部 (\part)
 - 章 (\chapter)
@@ -818,7 +818,7 @@ LaTeX の
 
 にジャンプできるようにカスタマイズします．
 
-\[ツール(T)\]-\[プラグイン(P)\]-\[プラグインの設定(C)...\]
+\[ツール(T)\]-\[プラグイン(I)\]-\[プラグインの設定(C)...\]
 
 プラグイン
 : Outline
