@@ -806,6 +806,36 @@ section
 
 Mery にはアウトラインのプラグインが標準添付されています．
 
+\[ツール(T)\]-\[プラグイン(I)\]-\[プラグインの設定(C)...\]
+
+プラグイン
+: Outline
+
+の \[プロパティ(P)\] で設定できます．
+
+デフォルトでは
+
+- 開始 (\begin)
+- 終了 (\end)
+
+が設定されています．
+
+***
+
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>アウトライン</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　 バーの位置(<ins>P</ins>)：　　　　　　　　　検索/正規表現　　　　　　　　　　置換<br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\begin</ins><br>
+　 編集モード(<ins>M</ins>)：　　　　　　　　　<ins>2</ins>： <ins>\end</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　　▼\]</span>　 <ins>3</ins>： <ins>...</ins><br>
+　 タイプ(<ins>T</ins>)：　　　　　　　　　　　　<ins>4</ins>： <ins>....</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[カスタム (開始と終了)　▼\]</span>　 <ins>5</ins>： <ins>.....</ins><br>
+　 最大レベル(<ins>A</ins>)　　　　　　　　　 <ins>6</ins>： <ins>......</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[8　　　　　　　　　　　　　　▼\]</span>　<ins>7</ins>： <ins>.......</ins><br>
+　　　　　　　　　　　　　　　　　　　 <ins>8</ins>： <ins>........</ins><br>
+
+***
+
 LaTeX の見出しの
 
 - 部 (\part)
@@ -816,28 +846,21 @@ LaTeX の見出しの
 - 段落 (\paragraph)
 - 小段落 (\subparagraph)
 
-にジャンプできるようにカスタマイズします．
-
-\[ツール(T)\]-\[プラグイン(I)\]-\[プラグインの設定(C)...\]
-
-プラグイン
-: Outline
-
-の \[プロパティ(P)\]
+にジャンプできるようにカスタマイズすることも可能です．
 
 ***
 
-<span style="color:Black;background-color:#6593CF;"><ins>　<span style="color:White;"><strong>プロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>アウトライン</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-位置(<ins>P</ins>)：　<span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　▼\]</span><br>
-タイプ(<ins>T</ins>)： <span style="color:Black;background-color:#EEEEEE;">\[カスタム　　　　　　　▼\]</span><br>
-レベル<ins>1</ins>： <ins>\\\part</ins>　　　　　　　　　　　　　　　　　　　　☑正規表現(R)<br>
-レベル<ins>2</ins>： <ins>\\\chapter</ins>　　　　　　　　　　　　　　　　　　☑正規表現(E)<br>
-レベル<ins>3</ins>： <ins>\\\section</ins>　　　　　　　　　　　　　　　　　　☑正規表現(G)<br>
-レベル<ins>4</ins>： <ins>\\\subsection</ins>　　　　　　　　　　　　　　　　☑正規表現(U)<br>
-レベル<ins>5</ins>： <ins>\\\subsubsection</ins>　　　　　　　　　　　　　　☑正規表現(L)<br>
-レベル<ins>6</ins>： <ins>\\\paragraph</ins>　　　　　　　　　　　　　　　　☑正規表現(A)<br>
-レベル<ins>7</ins>： <ins>\\\subparagraph</ins>　　　　　　　　　　　　　　☑正規表現(R)<br>
+　 バーの位置(<ins>P</ins>)：　　　　　　　　　検索/正規表現　　　　　　　　　　置換<br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\part</ins><br>
+　 編集モード(<ins>M</ins>)：　　　　　　　　　<ins>2</ins>： <ins>\chapter</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　　▼\]</span>　 <ins>3</ins>： <ins>\section</ins><br>
+　 タイプ(<ins>T</ins>)：　　　　　　　　　　　　<ins>4</ins>： <ins>\subsection</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[カスタム 　　　　　　　　　▼\]</span>　 <ins>5</ins>： <ins>\subsubsection</ins><br>
+　 最大レベル(<ins>A</ins>)　　　　　　　　　 <ins>6</ins>： <ins>\paragraph</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[7　　　　　　　　　　　　　　▼\]</span>　<ins>7</ins>： <ins>\subparagraph</ins><br>
+　　　　　　　　　　　　　　　　　　　 <ins>8</ins>： <ins>........</ins><br>
 
 ***
 
