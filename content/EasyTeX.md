@@ -36,7 +36,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012-07-04 EasyTeX Verson 3.305 Unicode<br>
+2012-07-05 EasyTeX Verson 3.306 Unicode<br>
 2012-02-06 EasyTeX Verson 3.242<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8、UTF-8BOM) に対応しています．
@@ -87,8 +87,6 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 ## 不具合 {#n8975b09}
 
 [TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
-
-### EasyTeX Version 3.305 でワードラップをチェックしたとき、ワードラップされた部分の表示が二重になって折り返される前に表示されるという不具合があります。 {#i08a4ddc}
 
 ## TeX環境設定 {#e3c37dfc}
 
