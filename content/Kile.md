@@ -312,4 +312,5 @@ Options:
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
     - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
+- [LinuxでSyncTeXを使う](http://kubuser.blog.fc2.com/blog-entry-26.html)
 - [KileをWindowsで使ってみる](http://d.tnose.net/?p=1654)
