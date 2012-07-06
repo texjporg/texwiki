@@ -35,7 +35,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [Automatic LaTex Plugin for Vim at SourceForge](http://sourceforge.net/projects/atp-vim/)
     - [コミットログ](http://atp-vim.svn.sourceforge.net/viewvc/atp-vim/trunk/?view=log)
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
-- [vim-scripts/AutomaticLaTexPlugin - GitHub](https://github.com/vim-scripts/AutomaticLaTexPlugin)
+- [vim-scripts/AutomaticLaTexPlugin - GitHub](https://github.com/vim-scripts/AutomaticLaTeXPlugin)
 
 ## ATP の動作に必要なもの {#g428a1c8}
 
@@ -154,11 +154,7 @@ let g:atp_fold_environments = 1
 ***
 
 ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
-コンパイル・プレビューは OMake や latexmk を使ってください．<br>
-簡単すぎて身長が伸びるかも．[^1]<br>
-
-- [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
-- [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
+コンパイル・プレビューは [Make - TeX Wiki](/Make/) を参考にして Latexmk や OMake などを使ってください．<br>
 
 ### 移動 {#xdfac89b}
 
@@ -276,5 +272,3 @@ $\mathrm{}
 ```
 $\alpha
 ```
-
-[^1]: <span style="color:White;background-color:White;">※ただしイケメンに限る</span>
