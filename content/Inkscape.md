@@ -51,6 +51,11 @@ Windows, OS X, Linux で動作します．<br>
 
 2012-03-23 Inkscape 0.48.3.1 がリリースされました．
 
+### ダウンロード {#i5a8dfd7}
+
+- [ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
+- [http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
+
 ## 不具合 {#tedcde5e}
 
 ### Windows 版 Inkscape 0.48.3.1 と 0.48.2 のメニューのフォントがおかしい → etc\pango\pango.aliases の sans の先頭に meiryo, を追加する {#i6aee1d9}
