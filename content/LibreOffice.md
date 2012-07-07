@@ -7,7 +7,7 @@ pukiwiki: "LibreOffice"
 
 # LibreOffice
 
-## LibreOffice/OpenOffice.org {#s11aabea}
+## LibreOffice/Apache OpenOffice {#s11aabea}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -29,48 +29,51 @@ LibreOffice はフリーのオフィススイートです．
     - [Index of /libreoffice/portable](http://download.documentfoundation.org/libreoffice/portable/)
 - [LibreOffice repositories](http://cgit.freedesktop.org/libreoffice)
 
-## OpenOffice.org とは {#q7dc6482}
+## Apache OpenOffice (AOO) とは {#q7dc6482}
 
-OpenOffice.org はフリーのオフィススイートです．
+Apache OpenOffice (AOO) はフリーのオフィススイートです．
 
-- [Apache OpenOffice.org](http://incubator.apache.org/openofficeorg/)
+- [Apache OpenOffice](http://www.openoffice.org/)
+    - [licenses](http://about.openoffice.org/#licenses)
+        <!-- - -[[hg:http://hg.services.openoffice.org/]] -->
+
+- [Apache OpenOffice (Incubating)](http://incubator.apache.org/openofficeorg/)
     - [OpenOffice.org Incubation Status](http://incubator.apache.org/projects/openofficeorg.html)
     - [OpenOfficeProposal](http://wiki.apache.org/incubator/OpenOfficeProposal)
-    - [Apache OpenOffice.org Community](https://cwiki.apache.org/OOOUSERS/wiki-home.html)
-- [OpenOffice.org](http://www.openoffice.org/)
-    - [licenses](http://about.openoffice.org/#licenses)
-    - [hg](http://hg.services.openoffice.org/)
-- [OpenOffice.org 日本語プロジェクト](http://ja.openoffice.org/)
+    - [Apache OpenOffice Community](https://cwiki.apache.org/OOOUSERS/wiki-home.html)
+- [Apache OpenOffice 日本語プロジェクト](http://ja.openoffice.org/)
 - [OpenOffice.org 日本ユーザー会](http://oooug.jp/)
+    - [OpenOffice.org 日本ユーザー会 出版物リスト](http://pub.oooug.jp/)
+        - [OpenOffice.orgユーザーのためのLibreOffice移行ガイド](http://pub.oooug.jp/guide/migration/0_0_0/)
 - [OpenOffice.org 独自ビルドプロジェクト](http://sourceforge.jp/projects/waooo/wiki/FrontPage)
 - [OxygenOffice Professional](http://sourceforge.net/projects/ooop/files/)
 - [OpenOffice.org Portable](http://portableapps.com/apps/office/openoffice_portable)
     - [OpenOffice.org Portable Localized](http://portableapps.com/apps/office/openoffice_portable/localization)
 - [NeoOffice](http://www.neooffice.org/)
 
-## LibreOffice/OpenOffice.org Writer {#z088446c}
+## LibreOffice/Apache OpenOffice Writer {#z088446c}
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
 - [Writer2LaTeX](http://writer2latex.sourceforge.net/)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
-## LibreOffice/OpenOffice.org Calc {#te4274fb}
+## LibreOffice/Apache OpenOffice Calc {#te4274fb}
 
 - [Calc2LaTeX](http://calc2latex.sourceforge.net/indexj.html)
     - [USBメモリ活用講座【付録・Calc2LaTeX使用法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/c2ltx.shtml)
 
-## LibreOffice/OpenOffice.org Impress {#ha3da53a}
+## LibreOffice/Apache OpenOffice Impress {#ha3da53a}
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
-## LibreOffice/OpenOffice.org Draw {#t359ffe0}
+## LibreOffice/Apache OpenOffice Draw {#t359ffe0}
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 
-## LibreOffice/OpenOffice.org Math {#p45a32d8}
+## LibreOffice/Apache OpenOffice Math {#p45a32d8}
 
 - [LaTeXを使わずきれいな数式をフリーソフトで書く方法](http://genpi215.blog33.fc2.com/blog-entry-712.html)
 
@@ -79,6 +82,6 @@ OpenOffice.org はフリーのオフィススイートです．
 - \[[会津若松市\]リブレオフィス導入時に発生した事例](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_prob.htm)
 - \[[会津若松市\]リブレオフィス導入までの経過](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_info_koutei.htm)
 - [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
-- [USBメモリ活用講座【基礎編・OpenOffice.org / LibreOffice のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
+- [USBメモリ活用講座【基礎編・LibreOffice/OpenOffice.org のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
 - [memo: Windows で OOoLatex を使う / Ubuntu で OOoLatex を使う](http://www.ms.osakafu-u.ac.jp/~horita/?c=memo2)
 - [「LibreOffice」利用マニュアルを公開しました](http://www.ja-fukuoka.or.jp/blog/archives/2011/12/libreoffice_manual_1112.php)
