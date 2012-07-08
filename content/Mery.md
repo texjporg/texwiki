@@ -89,7 +89,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
@@ -104,9 +104,9 @@ function main()
   } else {
     if (encoding == 5 || encoding == 4) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
+    } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
+    } else if (encoding == meEncodingEUC) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
@@ -164,7 +164,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
@@ -179,9 +179,9 @@ function main()
   } else {
     if (encoding == 5 || encoding == 4) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
+    } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
+    } else if (encoding == meEncodingEUC) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
@@ -514,7 +514,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var bibtex = "pbibtex -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
@@ -529,9 +529,9 @@ function main()
   } else {
     if (encoding == 5 || encoding == 4) {
       bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
+    } else if (encoding == meEncodingShiftJIS) {
       bibtex = "pbibtex -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
+    } else if (encoding == meEncodingEUC) {
       bibtex = "pbibtex -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
       bibtex = "pbibtex -kanji=jis  -sjis-terminal";
@@ -653,7 +653,7 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var makeindex = "mendex -ST";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
@@ -668,9 +668,9 @@ function main()
   } else {
     if (encoding == 5 || encoding == 4) {
       makeindex = "mendex -U -ST";
-    } else if (encoding == 17) {
+    } else if (encoding == meEncodingShiftJIS) {
       makeindex = "mendex -S -ST";
-    } else if (encoding == 15) {
+    } else if (encoding == meEncodingEUC) {
       makeindex = "mendex -E -ST";
     } else if (encoding == 16) {
       makeindex = "mendex -J -ST";
@@ -827,25 +827,13 @@ main();
 
 Mery には TeX の入力補完機能があります．
 
-Mery.exe と同じフォルダ内に ext というフォルダがあります．(存在しない場合は作成してください．)
+Mery.exe と同じフォルダー内に Ext フォルダーがあります．
 
-その中に tex.txt という名前の辞書ファイルを作成します．
+Ext フォルダーの中に tex.txt という名前の辞書ファイルが存在します．
 
-辞書ファイルの内容を例えば
+Ctrl+Space を入力すると辞書ファイルの候補が補完されます．
 
-```
-documentclass
-section
-```
-
-とすると
-
-- \d を入力した後で Ctrl+Space を入力すると \documentclass
-- \s を入力した後で Ctrl+Space を入力すると \section
-
-が補完されます．
-
-辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます．
+<!-- 辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます． -->
 
 ## アウトライン {#c4b6fe35}
 
@@ -1045,27 +1033,27 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingSJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
     } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
     if (encoding == 5 || encoding == 4) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+    } else if (encoding == meEncodingShiftJIS) {
+      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
+    } else if (encoding == meEncodingEUC) {
+      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
@@ -1098,27 +1086,27 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingSJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
     } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
     if (encoding == 5 || encoding == 4) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+    } else if (encoding == meEncodingShiftJIS) {
+      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
+    } else if (encoding == meEncodingEUC) {
+      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
@@ -1299,27 +1287,27 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -src-specials -guess-input-enc -sjis-terminal";
-  var version = Editor.Version;
+  var version = editor.Version;
   var encoding = document.Encoding;
   if (parseInt(version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingSJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
     } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
     if (encoding == 5 || encoding == 4) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == 17) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == 15) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+    } else if (encoding == meEncodingShiftJIS) {
+      latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
+    } else if (encoding == meEncodingEUC) {
+      latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
     } else if (encoding == 16) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+      latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
