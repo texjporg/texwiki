@@ -37,13 +37,13 @@ install-tl.zip を展開します．<br>
 - install-tl.bat の場合
 
 install-tl.bat をダブルクリックします．<br>
-TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
+リポジトリを指定する場合はコマンド プロンプトから
 
 ```
->install-tl.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+>install-tl.bat --repository http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/
 ```
 
-とします．<br>
+とします．<br> <!-- TeX Live 2012 pretest の場合はコマンド プロンプトから~ --> <!-- >install-tl.bat - -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/ --> <!-- とします．~ -->
 
 ***
 
@@ -105,13 +105,13 @@ TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
 - install-tl-advanced.bat の場合
 
 install-tl-advanced.bat をダブルクリックします．<br>
-TeX Live 2012 pretest の場合はコマンド プロンプトから<br>
+リポジトリを指定する場合はコマンド プロンプトから
 
 ```
->install-tl-advanced.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+>install-tl-advanced.bat --repository http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/
 ```
 
-とします．<br>
+とします．<br> <!-- TeX Live 2012 pretest の場合はコマンド プロンプトから~ --> <!-- >install-tl-advanced.bat - -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/ --> <!-- とします．~ -->
 
 ***
 
