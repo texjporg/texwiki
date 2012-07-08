@@ -67,7 +67,8 @@ LaTeX 文書で使用するエンコードを指定します．
 　　　　既定の改行コード(<ins>L</ins>):　　　　　　　　　 ☑カーソル位置とブックマークを保存する(V)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐ウィンドウ位置とサイズを復元(O)<br>
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐トレイアイコンを表示(Y)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐タブの幅を調節する(J)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
 
 ***
 
