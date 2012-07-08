@@ -134,7 +134,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -209,7 +209,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -261,7 +261,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -315,7 +315,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -368,7 +368,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -422,7 +422,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -477,7 +477,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -556,7 +556,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -613,7 +613,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -694,7 +694,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
@@ -775,7 +775,7 @@ main();
 
 ***
 
-<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
 
