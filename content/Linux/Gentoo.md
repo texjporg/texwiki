@@ -24,6 +24,7 @@ pukiwiki: "Linux/Gentoo"
 
 ### TeX Live 2012 {#ba4e8250}
 
+- [TeX Live 2012 on Gentoo Linux (x86 &amp; x86_64)](http://blogs.yahoo.co.jp/igproj_fusion/15771588.html)
 - [TeX Live 2012 の試験的インストール](http://blogs.yahoo.co.jp/igproj_fusion/15758185.html)
 
 ### TeX Live 2011 {#j0aa1b21}
