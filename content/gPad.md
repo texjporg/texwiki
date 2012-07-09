@@ -20,6 +20,17 @@ gPad は Windows 7, Vista, XP, 2000 で動作する国産でフリーの MDI 型
 - [窓の杜 - gPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/gpad.html)
 - [Vector - gPad](http://www.vector.co.jp/soft/winnt/writing/se478089.html)
 
+## 既定の文字コード {#oe5e7d80}
+
+LaTeX 文書で使用する文字コードを指定します．
+
+\[ツール(T)\]-\[書式設定(F)...\] の 全般の既定の文字コード
+
+- Unicode(UTF-8)
+- 日本語(Shift-JIS)
+- 日本語(EUC)
+- 日本語(JIS)
+
 ## マクロ {#w9b67570}
 
 マクロを使うと [サクラエディタ](</サクラエディタ/>), Mery と同様に，LaTeX 環境を簡単に作ることができます．
