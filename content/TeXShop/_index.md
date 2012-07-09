@@ -1295,7 +1295,7 @@ Keynote は PDF で貼り付けられます．<br>
 
 ## ツール {#kffeddd2}
 
-### [Flashmode](http://web.me.com/gerhardt/Flashmode/) {#ye507bc3}
+### [Flashmode](http://www.math.uni-heidelberg.de/studinfo/gerhardt/Flashmode/) {#ye507bc3}
 
 Live preview for TeXShop
 
