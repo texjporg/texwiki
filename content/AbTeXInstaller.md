@@ -16,6 +16,7 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### リリース情報 {#f691af94}
 
+2012-07-10 プラグイン集<br>
 2012-06-01 TeXインストーラ3 開発版 20120601<br>
 2012-04-09 TeXインストーラ3 0.83<br>
 
@@ -228,6 +229,7 @@ otf パッケージは複数インストールしてはいけません。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [「tex インストーラ3」でインストーラを起動するとエラーになってしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1090453970)
 - [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
 - [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [windows7(64bit)にTeXをインストール](http://kagoshima-au.blog.so-net.ne.jp/2012-05-24)
