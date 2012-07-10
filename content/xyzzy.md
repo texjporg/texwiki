@@ -71,6 +71,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
         - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
     - [xyzzy-022](http://xyzzy-022.github.com/)
         - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
+        - [窓の杜 - xyzzy](http://www.forest.impress.co.jp/lib/offc/document/txteditor/xyzzy.html)
             <!-- - -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
             <!-- - --[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
             <!-- - -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
