@@ -855,14 +855,14 @@ Mery にはアウトラインのプラグインが標準添付されています
 <span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>アウトライン</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　 バーの位置(<ins>P</ins>)：　　　　　　　　　検索/正規表現　　　　　　　　　　置換<br>
-　 <span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\begin</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[左 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\begin</ins><br>
 　 編集モード(<ins>M</ins>)：　　　　　　　　　<ins>2</ins>： <ins>\end</ins><br>
-　 <span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　　▼\]</span>　 <ins>3</ins>： <ins>...</ins><br>
-　 タイプ(<ins>T</ins>)：　　　　　　　　　　　　<ins>4</ins>： <ins>....</ins><br>
-　 <span style="color:Black;background-color:#EEEEEE;">\[カスタム (開始と終了)　▼\]</span>　 <ins>5</ins>： <ins>.....</ins><br>
-　 最大レベル(<ins>A</ins>)　　　　　　　　　 <ins>6</ins>： <ins>......</ins><br>
-　 <span style="color:Black;background-color:#EEEEEE;">\[8　　　　　　　　　　　　　　▼\]</span>　<ins>7</ins>： <ins>.......</ins><br>
-　　　　　　　　　　　　　　　　　　　 <ins>8</ins>： <ins>........</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　　▼\]</span>　 <ins>3</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>...</ins></span><br>
+　 タイプ(<ins>T</ins>)：　　　　　　　　　　　　<ins>4</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>....</ins></span><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[カスタム (開始と終了)　▼\]</span>　 <ins>5</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>.....</ins></span><br>
+　 最大レベル(<ins>A</ins>)　　　　　　　　　 <ins>6</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>......</ins></span><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[8　　　　　　　　　　　　　　▼\]</span>　<ins>7</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>.......</ins></span><br>
+　　　　　　　　　　　　　　　　　　　 <ins>8</ins>： <span style="color:Black;background-color:#EEEEEE;"><ins>........</ins></span><br>
 
 ***
 
@@ -883,7 +883,7 @@ LaTeX の見出しの
 <span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>アウトライン</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　 バーの位置(<ins>P</ins>)：　　　　　　　　　検索/正規表現　　　　　　　　　　置換<br>
-　 <span style="color:Black;background-color:#EEEEEE;">\[右 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\part</ins><br>
+　 <span style="color:Black;background-color:#EEEEEE;">\[左 　　　　　　　　　　　　　▼\]</span>　<ins>1</ins>： <ins>\part</ins><br>
 　 編集モード(<ins>M</ins>)：　　　　　　　　　<ins>2</ins>： <ins>\chapter</ins><br>
 　 <span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　　▼\]</span>　 <ins>3</ins>： <ins>\section</ins><br>
 　 タイプ(<ins>T</ins>)：　　　　　　　　　　　　<ins>4</ins>： <ins>\subsection</ins><br>
