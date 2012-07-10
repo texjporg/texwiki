@@ -29,7 +29,6 @@ pukiwiki: "BibTeX関連ツール"
 | [Javascript BibTeX Editor](http://sourceforge.net/projects/jsbibeditor/) | JavaScript | JavaScript で書かれた BibTeX エディタ |
 | [BibCompanion](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/BibCompanion/) | Mac OS X 10.4 以降 | BibTeXの参考文献データベースを編集するためのプログラム。HyperBibDBの後継。 |
 | [HyperBibDB](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/HyperBibDB/help.html) | CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X | BibTeXの参考文献データベースを編集するためのプログラム |
-| [やまこ２号](http://homepage.mac.com/tukanobu/sonota/yamako2.html) |  MacOSX 10.3.4 ファイルメーカーPro 6.0Jv4 |  文献管理ソフト。スキャナでとりこんだ文献そのものも管理できる |
 | [allbib](http://allbib.sourceforge.net/) | perl gtk | .bibファイル編集・管理ソフト |
 | [Sixpack](http://sourceforge.net/projects/sixpack) | perl perl-Tk | 文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。 |
 | [RefDB](http://refdb.sourceforge.net/) | UNIX/MacOS X/Windows | SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる |
