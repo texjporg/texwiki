@@ -24,13 +24,9 @@ W32TeX のインストールについては AbTeXInstaller - TeX Wiki または 
 
 TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
-- [TeX Live - TeX Wiki](</TeX Live/>)
-
 #### TeX Live 2012 (Win32) {#ca517ea6}
 
-***
-
-install-tl.zip を展開します．<br>
+[TeX Live - TeX Wiki#Network Based Installer#ミラーサイト](</TeX Live/#r2315cab>) から install-tl.zip をダウンロードして install-tl.zip を展開します．<br>
 
 ***
 
