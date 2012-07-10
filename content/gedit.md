@@ -24,9 +24,9 @@ gedit は Windows や Mac OS X でも動作します．<br>
 
 ## プラグイン {#c01f900c}
 
-### [gedit-latex](http://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
+### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
-- [gedit-latex](http://live.gnome.org/Gedit/LaTeXPlugin)
+- [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin)
     <!-- - -[[gedit-latex team:http://sourceforge.net/project/memberlist.php?group_id=204144]] -->
 
 - gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．
