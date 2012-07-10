@@ -1260,8 +1260,6 @@ TeXShop を再起動します．
 
 メニューの「タイプセット」から「pdfTeX」「TeX＋DVI」「パーソナルスクリプト」をその場で切り替えられます。
 
-#### [TeXShop の engine ファイル](http://homepage.mac.com/fuhmi/) {#q2990ba4}
-
 ### [TeXShop と外部エディタの連携](http://skalldan.wordpress.com/2011/07/19/texshop-%E3%81%A8%E5%A4%96%E9%83%A8%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%AE%E9%80%A3%E6%90%BA/) {#w825259c}
 
 ### [TexShop での eps 貼り付け](http://d.hatena.ne.jp/yuka_y/20111011/1318302043) {#b3b3e922}
