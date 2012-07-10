@@ -384,7 +384,7 @@ uplatex -src-specials "$GEDIT_CURRENT_DOCUMENT_NAME"
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pxdvi -nofork -watchfile 1 -editor "gedit "%f" +%l" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" -sourceposition $GEDIT_CURRENT_LINE_NUMBER:"$GEDIT_CURRENT_DOCUMENT_NAME"
+pxdvi -nofork -watchfile 1 -editor "gedit "%f" +%l" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" -sourceposition "$GEDIT_CURRENT_LINE_NUMBER $GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
