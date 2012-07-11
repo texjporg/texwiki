@@ -170,6 +170,11 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
+- インストールのやり方などの事例
+
+[TeX Live 2012 on Windows](http://blogs.yahoo.co.jp/igproj_fusion/15776344.html)
+: 2012-07-11
+
 #### TeX Live 2011 (Win32) {#pad973ce}
 
 - [LaTeX環境の整備 ― TeX Live 2011を用いて](http://blog.livedoor.jp/phys_com/archives/8891185.html)
