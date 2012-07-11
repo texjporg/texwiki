@@ -994,6 +994,5 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 - [xyzzy + KaTeX - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?xyzzy%20%2B%20KaTeX)
 - [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
 - [質問箱/112 - XyzzyWiki (Dabbrevで、ある開いていないファイルのみを読み込んで補完する方法)](http://xyzzy.s53.xrea.com/wiki/index.php?%BC%C1%CC%E4%C8%A2%2F112)
-- [katex - calyoMEMO](http://www.wikihouse.com/calyo/index.php?katex)
 - [katex-kill-proc](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?33a2536c21b7ead86ca4343ecece4446)
 - [katex-autoload-dir](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?4876687f1858d1f88578004a36293b60)
