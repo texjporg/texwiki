@@ -39,7 +39,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 2012-07-05 EasyTeX Verson 3.306 Unicode<br>
 2012-02-06 EasyTeX Verson 3.242<br>
 
-EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8、UTF-8BOM) に対応しています．
+EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
 
 ### スクリーンショット {#e7b3eafc}
 
@@ -47,7 +47,7 @@ EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16�
 
 ### 特徴 {#c007c9f5}
 
-- EasyTeX Verson 3.30 以降は，ユニコード (Shit-JIS、EUC、JIS、UTF-16、UTF-16BE、UTF-8、UTF-8BOM) に対応しています．
+- EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
 - TeX の命令を色付けして表示できます．
 - LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
 - ヘルプには LaTeX の解説が付属しています．
