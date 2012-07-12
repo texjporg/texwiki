@@ -102,6 +102,7 @@ smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 ${0}
 ```
 
+- [neocomplcache-snippets-completeをつかう](http://d.hatena.ne.jp/cobodo/20120612/1339517222)
 - [VIM-LaTeXをNeocomplcacheのSnippets補完で再現(1)](http://d.hatena.ne.jp/amone_misya_ap/20111121/1321865189)
 - [VIM-LaTeXをNeocomplcacheのSnippets補完で再現(2)](http://d.hatena.ne.jp/amone_misya_ap/20111121/1321865648)
 - [$HOME/.vim/after/snippets/tex.snipに置くやつ](http://d.hatena.ne.jp/amone_misya_ap/20111121/1321864865)
