@@ -1,0 +1,726 @@
+---
+title: "Texmaker/設定"
+url: "/Texmaker/設定/"
+date: 2012-07-12T19:53:47Z
+bookCollapseSection: true
+pukiwiki: "Texmaker/設定"
+---
+
+# Texmaker/設定
+
+## 設定 {#e3cd1932}
+
+### 設定ファイル {#ke75945d}
+
+> <table>
+> <thead>
+> <tr><th style="text-align:center">環境</th><th style="text-align:center">設定ファイルが保存されるフォルダ</th><th style="text-align:center">ファイル名</th></tr>
+> </thead>
+> <tbody>
+> <tr><td>Portable バージョン</td><td>Texmaker の実行ファイルと同じフォルダ</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>Windows</td><td>%APPDATA%\xm1\</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>UNIX, Linux, OS X</td><td>$HOME/.config/xm1/</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> </tbody>
+> </table>
+>
+
+### 設定のリセット {#qc1461dd}
+
+\[オプション(O)\]-\[設定ファイル\]-\[設定をリセット\]
+
+- [TexmakerによるLaTeX入門　- リケラシー](http://rikeracy.web.fc2.com/tex/)
+    - [Quick Start（簡易テンプレート）のパネルで「その他のオプション」に間違ったコマンドを入力してしまいました。どうやったら消すことができますか？](http://rikeracy.bbs.fc2.com/?act=reply&tid=3669842)
+
+### エディタ {#y67addbe}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[エディタ\]
+
+文字コードのリストからエディタで使用する文字コードを指定できます．<br>
+文字コードが System の場合 日本語版 Windows では Shift_JIS となります．他の OS ではシステムの環境に依存します．<br>
+日本語の文書を作成する場合はスペルチェック辞書のインラインのチェックを外します．<br>
+重要なファイルを作成する場合は 10 分ごとにバックアップをとる にチェックを入れます．<br>
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">エディタ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>ＭＳ ゴシック　　　　　　　　▼</ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">文字コード　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　▼\]</ins></span><span style="color:Black;background-color:#F5F5F5;">　☑ 行番号の表示</span><br>
+
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><ins>C:/texmakerwin32usb/en_US.dic　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　☐ インライン</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">色</span><br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>エディタ</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+>
+> : &nbsp;
+>
+
+>
+> : &nbsp;
+>
+
+>
+> : &nbsp;
+>
+
+> <table>
+> <tbody>
+> <tr><td style="color:#555">Background</td><td>#ffffff</td></tr>
+> <tr><td style="color:#555">Current line</td><td>#ececec</td></tr>
+> <tr><td style="color:#555">Highlighted line</td><td>#ff0000</td></tr>
+> <tr><td style="color:#555">Text</td><td>#000000</td></tr>
+> <tr><td style="color:#555">Comment</td><td>#606060</td></tr>
+> <tr><td style="color:#555">Math</td><td>#008000</td></tr>
+> <tr><td style="color:#555">...</td><td>...</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　　　　　　　　　　　　 ダークテーマ 　　　　　　　　　　　　　　　　 \]</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　　　　　　　　　　デフォルトのテーマ　　　　　　　　　　　　　　　\]</span><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+ファイルの文字コードと設定されている文字コードが異なる場合は，ファイルを開くときに別の文字コードを指定して開くことが可能です．
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　設定されている文字コードでは<br>
+　　ファイルの文字が正しく表示されない可能性があります (UTF-8).<br>
+
+<br>
+
+<br>
+
+　　文字コードを指定:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[Shift_JIS　　　　　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+### コマンド {#cab65285}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+
+W32TeX と MacTeX &amp; TeX Live (OS X) と TeX Live (Linux) の場合の設定を書きます．<br>
+他の TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
+PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+PDFビューアに Adobe Reader ではなく，組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
+PDFビューアに TeXworks を使用する場合は [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
+[LuaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
+[XeTeX](/XeTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を xelatex に変更して使用してください．<br>
+
+#### [W32TeX](/W32TeX/) (自動判別の場合) {#cd578b1e}
+
+W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+#### [W32TeX](/W32TeX/) (UTF-8 の場合) {#q9c95374}
+
+Texmaker のデフォルトの文字コードは UTF-8 です．<br>
+OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
+
+■ e-pTeX, pBibTeX, pMetaPost の場合
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+■ e-upTeX, upBibTeX, upMetaPost の場合
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+#### [MacTeX &amp; TeX Live](/Mac/#f5466652) ([OS X](/Mac/)) {#i89a162a}
+
+動作未確認です．<br>
+
+■ e-pTeX, pBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/pbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+■ e-upTeX, upBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+#### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#x932c6ec}
+
+■ e-pTeX, pBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>advi -watch-file 1 %.dvi</ins> または <ins>evince %.dvi</ins> または <ins>okular --unique %.dvi</ins> または <ins>emacs %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>emacs %.ps</ins> または <ins>xdg-open %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f ptex-ipaex.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+■ e-upTeX, upBibTeX の場合
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>advi -watch-file 1 %.dvi</ins> または <ins>evince %.dvi</ins> または <ins>okular --unique %.dvi</ins> または <ins>emacs %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>emacs %.ps</ins> または <ins>xdg-open %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f ptex-ipaex.map %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+
+　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+
+　　　<strong>ショートカット</strong><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+### クイックビルド {#y84eb800}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[クイックビルド\]
+
+LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
+ユーザー定義でコマンドを指定して実行することもできます．<br>
+
+クイックビルドを実行して複数のビューアが起動してしまう場合は<br>
+
+- DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しないにチェックを入れる
+- ユーザー定義でビューアを起動する手順を除いた処理を作成する
+
+などの方法で対処してください．<br>
+
+***
+
+<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">クイックビルドで使用するコマンド</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span><br>
+
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span> LaTeX + dvipdfm + PDF ファイルを表示</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Asymptote + LaTeX + dvips + PS ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Asymptote + PdfLaTeX + PDF ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ Latexmk + PDF ファイルを表示</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:#888888;background-color:#EEEEEE;"><ins>platex -interaction=nonstopmode %.tex&#x7c;pbibtex %&#x7c;platex -interaction=nonstopmode %.tex&#x7c;platex -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins></span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☐ DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しない</span><br>
+
+<br>
+
+　　　　　<strong>エディタ</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<strong>ショートカット</strong><br>
+
+<br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
