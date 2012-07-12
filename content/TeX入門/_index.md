@@ -41,7 +41,7 @@ OS（Linux OS，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
 p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキーでは pTeX，pLaTeX
 およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
-を（ソースコードの形で）無償配布し，自社の本の製作に利用しています。
+を無償配布し，自社の本の製作に利用しています。
 
 - 【参考】TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX
     もあります。現在これらは千葉大学の[櫻井貴文さん](http://www.math.s.chiba-u.ac.jp/~sakurai/)が
