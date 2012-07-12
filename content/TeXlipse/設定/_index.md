@@ -8,6 +8,47 @@ pukiwiki: "TeXlipse/設定"
 
 # TeXlipse/設定
 
+## LaTeX ファイルのデフォルト・エンコードの設定 {#e388e178}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ウィンドウ(W)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　設定(P)　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+
+　　…<br>
+　　◢　一般<br>
+　　　　　　JStyle<br>
+　　　　　　Web ブラウザー<br>
+　　　　▷　エディター<br>
+　　　　　　キー<br>
+　　　　　<span style="color:Black;background-color:#DAEAFF;">　コンテンツ・タイプ　</span><br>
+　　　　…<br>
+　　…<br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　コンテンツ・タイプ
+
+　各ファイル・タイプに関連づけられたエディターについては、<span style="color:#1188FF;"><ins>'ファイルの関連づけ'</ins></span> を参照してください。<br>
+　コンテンツ・タイプ(C)：<br>
+　　　　JAR コンテンツ<br>
+　　　　Java クラス・ファイル<br>
+　　　　Word ドキュメント<br>
+　　◢　テキスト<br>
+　　　　…<br>
+　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX File　</span><br>
+　　　　…<br>
+　　▷　バイナリー・ファイル<br>
+
+***
+
+デフォルト・エンコード(E)： で，UTF-8 もしくは日本語のエンコード (MS932, EUC-JP, ISO-2022-JP) を指定し，\[　　　　　更新(U)　　　　　\] をクリックします．
+
 ## ビルダー設定 (Windows) {#j3f79297}
 
 デフォルトでは英語版のビルド・コマンドが設定されています．
