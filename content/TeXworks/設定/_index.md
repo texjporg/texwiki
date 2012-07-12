@@ -745,7 +745,7 @@ ps2pdf.bat "%~n1.ps"
 
 ### [MacTeX &amp; TeX Live](/Mac/#f5466652) ([OS X](/Mac/)) {#p614bf13}
 
-[TeXworks#タイプセットの設定#TeX Live (Linux)](/TeXworks/#y48c4d8a) を参照．
+[TeXworks#タイプセットの設定#TeX Live (Linux)](</TeXworks/設定/#y48c4d8a>) を参照．
 
 ### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#y48c4d8a}
 
