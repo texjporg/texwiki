@@ -7,6 +7,10 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 # WinShell/設定/ShiftJIS
 
+[WinShell](/WinShell/) > 設定 > ShiftJIS
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## 主なTeXプログラムの設定 (エンコーディングが ShiftJIS の場合) {#g207ffab}
 
 ### LaTeX {#v667ffa2}
