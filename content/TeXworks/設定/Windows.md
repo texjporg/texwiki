@@ -7,9 +7,17 @@ pukiwiki: "TeXworks/設定/Windows"
 
 # TeXworks/設定/Windows
 
+[TeXworks](/TeXworks/) > [設定](</TeXworks/設定/>) > Windows
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+```
+
+```
+
 ## タイプセットの設定 {#q50d2378}
 
-### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) (Windows) {#kaca20c0}
+### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) {#kaca20c0}
 
 #### 設定前 {#n2341fff}
 
