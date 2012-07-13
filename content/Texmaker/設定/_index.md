@@ -8,6 +8,8 @@ pukiwiki: "Texmaker/設定"
 
 # Texmaker/設定
 
+[Texmaker](/Texmaker/) > 設定
+
 ## 設定 {#e3cd1932}
 
 ### 設定ファイル {#ke75945d}
