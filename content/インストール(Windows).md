@@ -14,7 +14,12 @@ pukiwiki: "インストール(Windows)"
 ## TeX ディストリビューションを選択してインストール {#vb660ba1}
 
 Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
-初心者の方は W32TeX がおすすめです．<br>
+初心者の方は W32TeX または TeX Live がおすすめです．<br>
+
+- 最新のバイナリが必要な場合は W32TeX
+- 最新のパッケージが必要な場合は TeX Live
+
+を選択するといいと思います．
 
 ### [W32TeX](/W32TeX/) {#yd4deb73}
 
@@ -25,6 +30,15 @@ W32TeX のインストールについては AbTeXInstaller - TeX Wiki または 
 TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
 
 #### TeX Live 2012 (Win32) {#ca517ea6}
+
+TeX Live 2012 をデフォルトの設定でインストールすると <strong>PDF ファイルの関連付けが PS_View に変更されます．</strong><br>
+関連付けを Adobe Reader に戻したい場合は以下の作業を行ってください．<br>
+
+1. PDF ファイルを右クリック
+1. プロパティ(R)を選択
+1. プロパティの全般タブのプログラムで \[変更(C)...\] をクリック
+1. ファイルを開くプログラムの選択ウィンドウの推奨されたプログラムで Adobe Reader を選択して \[OK\] をクリック
+1. プロパティで \[OK\] をクリック
 
 [TeX Live - TeX Wiki#Network Based Installer#ミラーサイト](</TeX Live/#r2315cab>) から install-tl.zip をダウンロードして install-tl.zip を展開します．<br>
 
@@ -111,6 +125,23 @@ install-tl-advanced.bat をダブルクリックします．<br>
 
 ***
 
+<span style="color:Black;background-color:#007BBB;"><ins>　　<span style="color:White;"><strong>TeX Live 2012 の導入</strong></span>　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　Best to disable your virus scanner during installation.
+
+<br>
+
+　The installer does not have adminstractive permissions;<br>
+　so can only install for current user.<br>
+
+<br>
+
+　Right-click install-tl-advanced and select "run as administrator"<br>
+　if you want to install for all users.<br>
+　　　\[　　終了　　\]　　　　　　　　　　　　　　　　　　　　　\[ Continue \]<br>
+
+***
+
 <span style="color:Black;background-color:#007BBB;"><ins>　　<span style="color:White;"><strong>Install-tl</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　TeX Live 2012 の導入<br>
@@ -119,7 +150,7 @@ install-tl-advanced.bat をダブルクリックします．<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------追加設定-------<br>
 　　標準コレクション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ 変更 \]<br>
 　　言語コレクション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ 変更 \]<br>
-　　　　　　　　　　　　　　　　　　85 コレクション（全 85 中） (必要ディスク領域: 3178MB)<br>
+　　　　　　　　　　　　　　　　　　85 コレクション（全 85 中） (必要ディスク領域: 3192MB)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
 　　かんたん設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
 　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2012　　　　　　　　　 \[ 変更 \]<br>
@@ -171,6 +202,9 @@ repstopdf,epspdf,extractbb,\
 ```
 
 - インストールのやり方などの事例
+
+[蝶](http://takeittheworld.blog15.fc2.com/blog-entry-822.html)
+: 2012-07-13
 
 [TeX Live 2012 on Windows](http://blogs.yahoo.co.jp/igproj_fusion/15776344.html)
 : 2012-07-11
