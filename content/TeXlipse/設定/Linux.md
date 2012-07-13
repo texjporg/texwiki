@@ -7,6 +7,8 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 # TeXlipse/設定/Linux
 
+[TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > Linux
+
 ## ビルダー設定 (Linux) {#w3b7087c}
 
 ***
@@ -248,7 +250,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 #### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#p67adb24}
 
-[Pdf4Eclipse](/TeXlipse/#o62b47a3) を参照．
+[Pdf4Eclipse](</TeXlipse/設定/Windows/#o62b47a3>) を参照．
 
 #### [TeXworks](/TeXworks/) {#y2f3d401}
 
@@ -593,6 +595,49 @@ pukiwiki: "TeXlipse/設定/Linux"
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+## pxdvi との連携 (非推奨) {#gd6df302}
+
+引数に -src-specials を追加します．
+
+### forward and inverse search {#ie9c17fd}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi (/usr/bin/env)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>pxdvi -nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
