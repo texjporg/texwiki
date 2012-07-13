@@ -741,3 +741,921 @@ ps2pdf.bat "%~n1.ps"
 　　　コンソール出力を表示しない 　　<span style="color:Black;background-color:#EEEEEE;">\[ 表示する　　　　　　　　　　　　　　　▼\]</span><br>
 
 ***
+
+## [SumatraPDF](/SumatraPDF/) との連携 {#b23c23fc}
+
+### pdfpLaTeXS {#pd4ad539}
+
+pdfplatex1S.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfplatex1S.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvipdfmx "%~n1" && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeXS</ins><br>
+　　プログラム: <ins>pdfplatex1S.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfpLaTeX2S {#g68658bc}
+
+pdfplatex2S.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfplatex2S.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -g > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps" && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX2S</ins><br>
+　　プログラム: <ins>pdfplatex2S.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfupLaTeXS {#u9e90942}
+
+pdfuplatex1S.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfuplatex1S.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvipdfmx "%~n1" && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeXS</ins><br>
+　　プログラム: <ins>pdfuplatex1S.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfupLaTeX2S {#t907f818}
+
+pdfuplatex2S.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfuplatex2S.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -u > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps" && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX2S</ins><br>
+　　プログラム: <ins>pdfuplatex2S.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfLaTeXS {#o1cdfc13}
+
+pdflatexS.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdflatexS.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+pdflatex -synctex=1 %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfLaTeXS</ins><br>
+　　プログラム: <ins>pdflatexS.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### LuaLaTeXS {#m4152f1a}
+
+lualatexS.bat を作成します．
+
+***
+
+- C:\w32tex\bin\lualatexS.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+lualatex -synctex=1 %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>LuaLaTeXS</ins><br>
+　　プログラム: <ins>lualatexS.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### XeLaTeXS {#i07eb3dd}
+
+xelatexS.bat を作成します．
+
+***
+
+- C:\w32tex\bin\xelatexS.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+xelatex -synctex=1 %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>XeLaTeXS</ins><br>
+　　プログラム: <ins>xelatexS.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### inverse search {#kfe751af}
+
+TeX コマンドのオプションに -synctex=1 を追加します．
+
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+
+```
+C:\w32tex\share\texworks\TeXworks.exe --position=%l "%f"
+```
+
+&#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
+
+## [Adobe Reader](</Adobe Reader/>) との連携 {#jad25a78}
+
+### pdfpLaTeXA {#e7697990}
+
+pdfplatex1A.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfplatex1A.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+platex -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvipdfmx "%~n1" && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeXA</ins><br>
+　　プログラム: <ins>pdfplatex1A.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfpLaTeX2A {#h1e57c7f}
+
+pdfplatex2A.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfplatex2A.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+platex -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -g > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps" && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX2A</ins><br>
+　　プログラム: <ins>pdfplatex2A.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfupLaTeXA {#p7c5112a}
+
+pdfuplatex1A.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfuplatex1A.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+uplatex -kanji=utf8 -no-guess-input-enc %1 && ^
+dvipdfmx "%~n1" && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeXA</ins><br>
+　　プログラム: <ins>pdfuplatex1A.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfupLaTeX2A {#e6ab4d81}
+
+pdfuplatex2A.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdfuplatex2A.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+uplatex -kanji=utf8 -no-guess-input-enc %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -u > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps" && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX2A</ins><br>
+　　プログラム: <ins>pdfuplatex2A.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pdfLaTeXA {#x2b72c74}
+
+pdflatexA.bat を作成します．
+
+***
+
+- C:\w32tex\bin\pdflatexA.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+pdflatex %1 && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfLaTeXA</ins><br>
+　　プログラム: <ins>pdflatexA.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### LuaLaTeXA {#w51d9af4}
+
+lualatexA.bat を作成します．
+
+***
+
+- C:\w32tex\bin\lualatexA.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+lualatex %1 && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>LuaLaTeXA</ins><br>
+　　プログラム: <ins>lualatexA.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### XeLaTeXA {#rf592c22}
+
+xelatexA.bat を作成します．
+
+***
+
+- C:\w32tex\bin\xelatexA.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+echo exit | ^
+pdfdde & ^
+xelatex %1 && ^
+pdfopen --file "%~n1.pdf"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>XeLaTeXA</ins><br>
+　　プログラム: <ins>xelatexA.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+## [dviout](/dviout/) との連携 (非推奨) {#d2be9fd8}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
+
+[dviout#プレビューの自動更新](/dviout/#t2d3346c) を参照して，dviout の設定を行います．
+
+### dvipLaTeX {#q4767b5e}
+
+dviplatex.bat を作成します．
+
+***
+
+- C:\w32tex\bin\dviplatex.bat
+
+***
+
+```
+@echo off
+setlocal
+set DVIOUT=C:\w32tex\dviout\dviout.exe
+platex -src-specials -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq dviout.exe" /nh | ^
+findstr "dviout.exe" > nul || ^
+echo "%DVIOUT%" -1 "%~n1.dvi" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>dvipLaTeX</ins><br>
+　　プログラム: <ins>dviplatex.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### dviupLaTeX {#e7579615}
+
+[dviout#upTeX で出力された DVI ファイルを dviout で表示する場合の注意点](/dviout/#wadc9abf) を参照して，dviout の設定を行います．
+
+dviuplatex.bat を作成します．
+
+***
+
+- C:\w32tex\bin\dviuplatex.bat
+
+***
+
+```
+@echo off
+setlocal
+set DVIOUT=C:\w32tex\dviout\dviout.exe
+uplatex -src-specials -kanji=utf8 -no-guess-input-enc %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq dviout.exe" /nh | ^
+findstr "dviout.exe" > nul || ^
+echo "%DVIOUT%" -1 "%~n1.dvi" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>dviupLaTeX</ins><br>
+　　プログラム: <ins>dviuplatex.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### inverse search {#k17f3637}
+
+TeX コマンドのオプションに -src-specials を追加します．
+
+dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
+
+```
+C:\w32tex\share\texworks\TeXworks.exe^s --position=%d "%s"
+```
+
+&#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
