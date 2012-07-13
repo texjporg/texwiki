@@ -7,6 +7,10 @@ pukiwiki: "WinShell/設定/UTF-8"
 
 # WinShell/設定/UTF-8
 
+[WinShell](/WinShell/) > 設定 > UTF-8
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合) {#r8274a46}
 
 最新版の WinShell (WinShell 3.3.2.4) で UTF-8 を使用する場合は，[Runtime Error!](/WinShell/#g47585a4) が発生します．
