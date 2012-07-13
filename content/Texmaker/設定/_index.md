@@ -10,6 +10,8 @@ pukiwiki: "Texmaker/設定"
 
 [Texmaker](/Texmaker/) > 設定
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## 設定 {#e3cd1932}
 
 ### 設定ファイル {#ke75945d}
