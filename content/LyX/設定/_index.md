@@ -1466,6 +1466,119 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 
 のように入力して \[表示(V)\]-\[PDF (dvipdfm) を表示(V)\] をすると自動的にしおりを作成してくれます．
 
+## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
+
+変換子に -synctex=1 を追加します．
+
+### forward search {#u9f206c7}
+
+[順検索 (forward search)](</LyX/設定/#ffa7876e>) を参照してください．
+
+### inverse search {#vefda83b}
+
+\[ツール(T)\]-\[設定(P)...\]-\[パス\]-\[LyXサーバーパイプ\] に
+
+```
+\\.\pipe\lyxpipe
+```
+
+を記述して \[適用(A)\]-\[保存(S)\] をクリックして LyX を再起動します．
+
+C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd <!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd を作成します． -->
+
+***
+
+- C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd
+    <!-- -C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd -->
+
+***
+
+```
+@echo off
+setlocal enabledelayedexpansion
+set file=%1
+set row=%2
+REM remove quotes from variables 
+set file=!file:"=!
+set row=!row:"=!
+%comspec% /q /c (@echo LYXCMD:revdvi:server-goto-file-row:%file% %row%)> \\.\pipe\lyxpipe.in&&type \\.\pipe\lyxpipe.out
+endlocal
+```
+
+***
+
+<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0.4\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
+
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+
+```
+"C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd" "%f" %l
+```
+
+<!-- "C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd" "%f" %l -->
+
+を記述します．
+
+## [dviout](/dviout/) との連携 (非推奨) {#i23ae56f}
+
+[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
+
+変換子に -src-specials を追加します．
+
+### forward search {#m689e606}
+
+[順検索 (forward search)](</LyX/設定/#ffa7876e>) を参照してください．
+
+### inverse search {#hfe86760}
+
+\[ツール(T)\]-\[設定(P)...\]-\[パス\]-\[LyXサーバーパイプ\] に
+
+```
+\\.\pipe\lyxpipe
+```
+
+を記述して \[適用(A)\]-\[保存(S)\] をクリックして LyX を再起動します．
+
+C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd を作成します． <!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd を作成します． -->
+
+***
+
+- C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd
+    <!-- -C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd -->
+
+***
+
+```
+@echo off
+setlocal enabledelayedexpansion
+set file=%1
+set row=%2
+REM remove quotes from variables 
+set file=!file:"=!
+set row=!row:"=!
+%comspec% /q /c (@echo LYXCMD:revdvi:server-goto-file-row:%file% %row%)> \\.\pipe\lyxpipe.in&&type \\.\pipe\lyxpipe.out
+endlocal
+```
+
+***
+
+<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0.4\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
+
+dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
+
+```
+C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d
+```
+
+<!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d -->
+
+を記述します．
+
+## [Inkscape](/Inkscape/) との連携 {#r74179c0}
+
+- [LyXとInkscapeを連携させる](http://ec16090p.qlookblog.net/2010/05/21.html)
+- [LyX wiki | Tips / UseInkscapeSVGImages](http://wiki.lyx.org/Tips/UseInkscapeSVGImages)
+
 [^1]: 操作画面 (メニューやダイアログなど) 用言語を選択してください。
 [^2]: どの言語パッケージをLyXが使うべきか選択してください
 [^3]: 言語パッケージを読み込むコマンドを入力してください (既定値：babel) 
