@@ -9,7 +9,9 @@ pukiwiki: "TeXlipse/設定/OS X"
 
 [TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > OS X
 
-## ビルダー設定 (OS X) {#vcf0d397}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## ビルダー設定 {#vcf0d397}
 
 動作未確認です．<br>
 OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされています．<br>
@@ -252,7 +254,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ***
 
-## ビューアー設定 (OS X) {#dddd18cb}
+## ビューアー設定 {#dddd18cb}
 
 動作未確認です．<br>
 
