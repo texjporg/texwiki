@@ -7,9 +7,17 @@ pukiwiki: "TeXworks/設定/Linux"
 
 # TeXworks/設定/Linux
 
+[TeXworks](/TeXworks/) > [設定](</TeXworks/設定/>) > [Linux](/Linux/)
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+```
+
+```
+
 ## タイプセットの設定 {#q50d2378}
 
-### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#y48c4d8a}
+### [TeX Live](</TeX Live/>) {#y48c4d8a}
 
 #### Latexmk1 {#mef164a7}
 
