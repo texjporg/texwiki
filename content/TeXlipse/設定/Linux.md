@@ -9,7 +9,9 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 [TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > Linux
 
-## ビルダー設定 (Linux) {#w3b7087c}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## ビルダー設定 {#w3b7087c}
 
 ***
 
@@ -244,7 +246,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-## ビューアー設定 (Linux) {#c2845a3f}
+## ビューアー設定 {#c2845a3f}
 
 ### PDF ファイル ビューアー {#x367d3a8}
 
