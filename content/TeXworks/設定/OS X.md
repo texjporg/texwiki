@@ -7,8 +7,16 @@ pukiwiki: "TeXworks/設定/OS X"
 
 # TeXworks/設定/OS X
 
+[TeXworks](/TeXworks/) > [設定](</TeXworks/設定/>) > [OS X](/Mac/)
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+```
+
+```
+
 ## タイプセットの設定 {#q50d2378}
 
-### [MacTeX &amp; TeX Live](/Mac/#f5466652) ([OS X](/Mac/)) {#p614bf13}
+### [MacTeX &amp; TeX Live](/Mac/#f5466652) {#p614bf13}
 
-[TeXworks#タイプセットの設定#TeX Live (Linux)](</TeXworks/設定/Linux/#y48c4d8a>) を参照．
+[TeXworks/設定#タイプセットの設定/Linux#TeX Live](</TeXworks/設定/Linux/#y48c4d8a>) を参照．
