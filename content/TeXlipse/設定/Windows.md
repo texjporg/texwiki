@@ -9,7 +9,9 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 [TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > Windows
 
-## ビルダー設定 (Windows) {#j3f79297}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## ビルダー設定 {#j3f79297}
 
 デフォルトでは英語版のビルド・コマンドが設定されています．
 
@@ -523,7 +525,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
-## ビューアー設定 (Windows) {#g567cc73}
+## ビューアー設定 {#g567cc73}
 
 PDF ファイル，PS ファイル，DVI ファイルを表示するための設定をします．
 
