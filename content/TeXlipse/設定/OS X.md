@@ -7,6 +7,8 @@ pukiwiki: "TeXlipse/設定/OS X"
 
 # TeXlipse/設定/OS X
 
+[TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > OS X
+
 ## ビルダー設定 (OS X) {#vcf0d397}
 
 動作未確認です．<br>
@@ -258,7 +260,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 #### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#c7007b14}
 
-[Pdf4Eclipse](/TeXlipse/#o62b47a3) を参照．
+[Pdf4Eclipse](</TeXlipse/設定/Windows/#o62b47a3>) を参照．
 
 #### Preview {#uf79405f}
 
@@ -632,6 +634,49 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+## pxdvi との連携 (非推奨) {#gd6df302}
+
+引数に -src-specials を追加します．
+
+### forward and inverse search {#ie9c17fd}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi (/usr/texbin/pxdvi)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
