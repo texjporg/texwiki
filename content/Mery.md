@@ -146,6 +146,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -221,6 +227,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX2.js　 　　　　　　　　　　　　</span><br>
 
@@ -273,6 +285,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfupLaTeX.js　　　　　　　　　　　　　</span><br>
@@ -327,6 +345,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -380,6 +404,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -434,6 +464,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -489,6 +525,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -568,6 +610,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -625,6 +673,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -706,6 +760,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
@@ -787,6 +847,12 @@ main();
 <br>
 
 　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存<br>
+　　　編集<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
 　　　pdfpLaTeX2.js<br>
 　　　pdfupLaTeX.js<br>
