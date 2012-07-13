@@ -8,6 +8,8 @@ pukiwiki: "LyX/設定"
 
 # LyX/設定
 
+[LyX](/LyX/) > 設定
+
 ## 設定 {#ue19dc3a}
 
 ### 言語 {#j97f863b}
