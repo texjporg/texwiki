@@ -16,8 +16,8 @@ pukiwiki: "インストール(Windows)"
 Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
 初心者の方は W32TeX または TeX Live がおすすめです．<br>
 
-- 最新のバイナリが必要な場合は W32TeX
-- 最新のパッケージが必要な場合は TeX Live
+- 最新のバイナリを使いたい場合は W32TeX
+- 最新のパッケージを使いたい場合は TeX Live
 
 を選択するといいと思います．
 
@@ -31,14 +31,7 @@ TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照し�
 
 #### TeX Live 2012 (Win32) {#ca517ea6}
 
-TeX Live 2012 をデフォルトの設定でインストールすると <strong>PDF ファイルの関連付けが PS_View に変更されます．</strong><br>
-関連付けを Adobe Reader に戻したい場合は以下の作業を行ってください．<br>
-
-1. PDF ファイルを右クリック
-1. プロパティ(R)を選択
-1. プロパティの全般タブのプログラムで \[変更(C)...\] をクリック
-1. ファイルを開くプログラムの選択ウィンドウの推奨されたプログラムで Adobe Reader を選択して \[OK\] をクリック
-1. プロパティで \[OK\] をクリック
+- ダウンロード
 
 [TeX Live - TeX Wiki#Network Based Installer#ミラーサイト](</TeX Live/#r2315cab>) から install-tl.zip をダウンロードして install-tl.zip を展開します．<br>
 
@@ -174,6 +167,21 @@ install-tl-advanced.bat をダブルクリックします．<br>
 
 インストールする場合は \[ TeX Live の導入 \] をクリックします．<br>
 インストールしない場合は \[ 終了 \] をクリックします．<br>
+
+- 関連付けの変更
+
+TeX Live 2012 をデフォルトの設定でインストールすると <strong>PDF ファイルの関連付けが PS_View に変更されます．</strong><br>
+関連付けを Adobe Reader に戻したい場合は以下の作業を行ってください．<br>
+
+1. PDF ファイルを右クリック
+1. プロパティ(R)を選択
+1. プロパティの全般タブのプログラムで \[変更(C)...\] をクリック
+1. ファイルを開くプログラムの選択ウィンドウの推奨されたプログラムで Adobe Reader を選択して \[OK\] をクリック
+1. プロパティで \[OK\] をクリック
+
+- PATH の設定
+
+PATH は自動的に設定されるので手動で設定する必要はありません．
 
 - texmf.cnf の編集
 
