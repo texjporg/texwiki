@@ -1220,6 +1220,7 @@ $ ebb foo.pdf
 
 - [PSTricks で図を作成](http://rexpit.blog29.fc2.com/blog-entry-67.html)
 - [PSTricksパッケージ](http://www.cityfujisawa.ne.jp/~huzinami/tex/g-pack2.html)
+- [PSTricks入門](http://surgery.matrix.jp/comp/tex/PSTricks/pstricks.html)
 
 ## コメント {#j6e07b43}
 
