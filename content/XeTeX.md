@@ -7,7 +7,13 @@ pukiwiki: "XeTeX"
 
 # XeTeX
 
-## XeTeX {#a81f78a6}
+## [XeTeX](http://scripts.sil.org/xetex) {#a81f78a6}
+
+<!-- RIGHT:&size(50){X};&size(30){Ǝ};&size(50){T};&size(30){E};&size(50){X};~ -->
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/XeTeX_Logo.svg/200px-XeTeX_Logo.svg.png" alt="XeTeX" style="float:right">
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ### XeTeX とは {#v9b12e60}
 
@@ -80,7 +86,7 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 より簡単な実装が可能である。
 実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。
 
-### Mac でのインストール {#x46670ed}
+### OS X でのインストール {#x46670ed}
 
 [MacTeX &amp; TeX Live](/Mac/#f5466652) をインストールすると XeTeX がインストールされます．
 
@@ -643,7 +649,10 @@ Hello, \TeX !
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
     - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
-- [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/) (ZR (八登 崇之) さん)
+- \[[XeTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5BXeTeX%5D) (ZR (八登 崇之) さん)
+- [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
+- [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
+- [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
