@@ -19,4 +19,7 @@ pukiwiki: "TeXworks/設定/OS X"
 
 ### [MacTeX &amp; TeX Live](/Mac/#f5466652) {#p614bf13}
 
-[TeXworks/設定#タイプセットの設定/Linux#TeX Live](</TeXworks/設定/Linux/#y48c4d8a>) を参照．
+- [MacTeX 2012 on Mac (snow leopard)](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html)
+- [TeXworks/設定#タイプセットの設定/Linux#TeX Live](</TeXworks/設定/Linux/#y48c4d8a>)
+
+を参照．
