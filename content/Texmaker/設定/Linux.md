@@ -21,7 +21,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 [LuaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 [XeTeX](/XeTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を xelatex に変更して使用してください．<br>
 
-#### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#x932c6ec}
+#### [TeX Live](</TeX Live/>) {#x932c6ec}
 
 ■ e-pTeX, pBibTeX の場合
 
