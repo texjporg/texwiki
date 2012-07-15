@@ -21,7 +21,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gumm
 
 ### リリース情報 {#ha3b28ab}
 
-2012-06-10 poppler 0.20.1<br>
+2012-07-10 poppler 0.20.2<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -550,9 +550,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.1.tar.gz
-$ tar zxvf poppler-0.20.1.tar.gz
-$ pushd poppler-0.20.1
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.2.tar.gz
+$ tar zxvf poppler-0.20.2.tar.gz
+$ pushd poppler-0.20.2
 $ mkdir build
 $ pushd build
 ```
