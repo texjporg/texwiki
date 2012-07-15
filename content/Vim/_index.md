@@ -129,6 +129,183 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 ## Vim で LaTeX {#i2be46c6}
 
+### tex.vim {#y0b061e7}
+
+$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．
+
+#### 32bit Windows の場合 {#ofe0827c}
+
+***
+
+- $HOME/vimfiles/ftplugin/tex.vim
+
+***
+
+```
+function! PdfpLaTeX()
+  if &ft != 'tex'
+    echo "calling PdfpLaTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let currentBaseName = expand("%:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! TeXworks()
+  if &ft != 'tex'
+    echo "calling TeXworks from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/w32tex/share/texworks/TeXworks.exe"'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! SumatraPDF()
+  if &ft != 'tex'
+    echo "calling SumatraPDF from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"'
+  let currentTeXFile = expand("%:t")
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! AdobeReader()
+  if &ft != 'tex'
+    echo "calling Adobe Reader from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe"'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>v TeXworks()
+no <expr> <C-K>s SumatraPDF()
+no <expr> <C-K>a AdobeReader()
+```
+
+***
+
+#### 64bit Windows の場合 {#kf0c55a9}
+
+***
+
+- $HOME/vimfiles/ftplugin/tex.vim
+
+***
+
+```
+function! PdfpLaTeX()
+  if &ft != 'tex'
+    echo "calling PdfpLaTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let currentBaseName = expand("%:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! TeXworks()
+  if &ft != 'tex'
+    echo "calling TeXworks from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/w32tex/share/texworks/TeXworks.exe"'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! SumatraPDF()
+  if &ft != 'tex'
+    echo "calling SumatraPDF from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"'
+  let currentTeXFile = expand("%:t")
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+function! AdobeReader()
+  if &ft != 'tex'
+    echo "calling Adobe Reader from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = '"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe"'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
+
+  exec 'silent! !' execString
+  return ''
+endfunction
+
+no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>v TeXworks()
+no <expr> <C-K>s SumatraPDF()
+no <expr> <C-K>a AdobeReader()
+```
+
+***
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; v</td><td>TeXworks で PDF ファイルを開く</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; s</td><td>SumatraPDF で PDF ファイルを開いて forward search を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; a</td><td>Adobe Reader で PDF ファイルを開く</td></tr>
+> </tbody>
+> </table>
+>
+
+### その他のプラグイン {#g8a1b1b6}
+
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
 - neocomplcache
@@ -179,9 +356,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 SumatraPDF v1.9.4622 以上の場合はコマンドラインから forward search が可能です．
 
-Vim の場合は Python, Ruby, Perl などを使って forward search を実現することも可能です．
-
-詳しくは，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
+詳しくは，[tex.vim](#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
 
 ### inverse search {#b8f7bf28}
 
