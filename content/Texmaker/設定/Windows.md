@@ -37,53 +37,70 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">☐ Use a "build" subdirectory for output files</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
+　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
 
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
 　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+<br>
 
 　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins> または <ins>"C:/Program Files (x86)/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -110,53 +127,70 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">☐ Use a "build" subdirectory for output files</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
+　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
 
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
 　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+<br>
 
 　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins> または <ins>"C:/Program Files (x86)/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -178,53 +212,70 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">☐ Use a "build" subdirectory for output files</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
+　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
 
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
 　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+<br>
 
 　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins> または <ins>"C:/Program Files (x86)/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
