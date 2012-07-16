@@ -21,19 +21,18 @@ pukiwiki: "Linux/Gentoo"
 
 - [TeX Live - Gentoo Wiki](http://wiki.gentoo.org/wiki/TeX_Live)
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
+- [Gentoo Linux がTeX Liveに関するアップデート。危険度中!](http://blog.livedoor.jp/dvw_j/archives/10083812.html)
+- [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 
 ### TeX Live 2012 {#ba4e8250}
 
 - [TeX Live 2012 on Gentoo Linux (x86 &amp; x86_64)](http://blogs.yahoo.co.jp/igproj_fusion/15771588.html)
 - [TeX Live 2012 の試験的インストール](http://blogs.yahoo.co.jp/igproj_fusion/15758185.html)
 
-### TeX Live 2011 {#j0aa1b21}
-
-- [Gentoo Linux がTeX Liveに関するアップデート。危険度中!](http://blog.livedoor.jp/dvw_j/archives/10083812.html)
-- [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
-- [OTFパッケージ on Gentoo](http://d.hatena.ne.jp/fusion2010/20111010/1318233804)
-- [texlive-2011 on Gentoo Linux (x86)](http://blogs.yahoo.co.jp/igproj_fusion/13118467.html)
-
+<!-- **TeX Live 2011 [#j0aa1b21] -->
+<!-- -[[OTFパッケージ on Gentoo:http://d.hatena.ne.jp/fusion2010/20111010/1318233804]] -->
+<!-- -[[texlive-2011 on Gentoo Linux (x86):http://blogs.yahoo.co.jp/igproj_fusion/13118467.html]] -->
+<!--  -->
 <!-- **TeX Live 2010 [#kd7326f9] -->
 <!-- -[[Suzuki Lab wiki - GentooLinux#LaTeX:http://www.os.cis.iwate-u.ac.jp/wikky/wikky.cgi?GentooLinux#t15]] -->
 <!-- -[[Gentoo's texlive の現況:http://blogs.yahoo.co.jp/igproj_fusion/12433264.html]] -->
