@@ -131,7 +131,15 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 ### tex.vim {#y0b061e7}
 
-$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．
+$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
+
+tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
+
+```
+filetype plugin on
+```
+
+を記述しておく必要があります．
 
 #### 32bit Windows の場合 {#ofe0827c}
 
@@ -152,10 +160,45 @@ function! PdfpLaTeX()
 
   let currentDir = getcwd()
   let currentTeXFile = expand("%:t")
-  let currentBaseName = expand("%:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
 
   exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! BibTeX()
+  if &ft != 'tex'
+    echo "calling BibTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! MakeIndex()
+  if &ft != 'tex'
+    echo "calling MakeIndex from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'mendex -U -ST' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -171,6 +214,7 @@ function! TeXworks()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -187,6 +231,7 @@ function! SumatraPDF()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -202,10 +247,13 @@ function! AdobeReader()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
 no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>b BibTeX()
+no <expr> <C-K>i MakeIndex()
 no <expr> <C-K>v TeXworks()
 no <expr> <C-K>s SumatraPDF()
 no <expr> <C-K>a AdobeReader()
@@ -232,10 +280,45 @@ function! PdfpLaTeX()
 
   let currentDir = getcwd()
   let currentTeXFile = expand("%:t")
-  let currentBaseName = expand("%:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
 
   exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! BibTeX()
+  if &ft != 'tex'
+    echo "calling BibTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! MakeIndex()
+  if &ft != 'tex'
+    echo "calling MakeIndex from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd /d ' . currentDir . ' && ' . 'mendex -U -ST' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -251,6 +334,7 @@ function! TeXworks()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -267,6 +351,7 @@ function! SumatraPDF()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
@@ -282,10 +367,13 @@ function! AdobeReader()
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
+  :redraw!
   return ''
 endfunction
 
 no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>b BibTeX()
+no <expr> <C-K>i MakeIndex()
 no <expr> <C-K>v TeXworks()
 no <expr> <C-K>s SumatraPDF()
 no <expr> <C-K>a AdobeReader()
@@ -297,8 +385,146 @@ no <expr> <C-K>a AdobeReader()
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
 > <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>TeXworks で PDF ファイルを開く</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; s</td><td>SumatraPDF で PDF ファイルを開いて forward search を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; a</td><td>Adobe Reader で PDF ファイルを開く</td></tr>
+> </tbody>
+> </table>
+>
+
+#### Linux の場合 {#q23aa2de}
+
+fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
+
+***
+
+- $HOME/.vim/ftplugin/tex.vim
+
+***
+
+```
+function! PdfpLaTeX()
+  if &ft != 'tex'
+    echo "calling PdfpLaTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd ' . currentDir . ' && ' . 'platex -synctex=1' . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! BibTeX()
+  if &ft != 'tex'
+    echo "calling BibTeX from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd ' . currentDir . ' && ' . 'pbibtex' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! MakeIndex()
+  if &ft != 'tex'
+    echo "calling MakeIndex from a non-tex file"
+    return ''
+  end
+
+  :w
+
+  let currentDir = getcwd()
+  let currentBaseName = expand("%:t:r")
+  let execString = 'cd ' . currentDir . ' && ' . 'mendex' . ' ' . currentBaseName
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! TeXworks()
+  if &ft != 'tex'
+    echo "calling TeXworks from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = 'texworks'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' &'
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! FwdEvince()
+  if &ft != 'tex'
+    echo "calling FwdEvince from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = 'fwdevince'
+  let currentTeXFile = expand("%:t")
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' ' . line(".") . ' ' . currentTeXFile . ' &'
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+function! AdobeReader()
+  if &ft != 'tex'
+    echo "calling Adobe Reader from a non-tex file"
+    return ''
+  end
+
+  let currentDir = getcwd()
+  let viewer = 'acroread'
+  let currentPDFFile = expand("%:r") . '.pdf'
+  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' &'
+
+  exec 'silent! !' execString
+  :redraw!
+  return ''
+endfunction
+
+no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>b BibTeX()
+no <expr> <C-K>i MakeIndex()
+no <expr> <C-K>v TeXworks()
+no <expr> <C-K>e FwdEvince()
+no <expr> <C-K>a AdobeReader()
+```
+
+***
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; v</td><td>TeXworks で PDF ファイルを開く</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; e</td><td>Evince で PDF ファイルを開いて forward search を実行</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; a</td><td>Adobe Reader で PDF ファイルを開く</td></tr>
 > </tbody>
 > </table>
@@ -434,6 +660,7 @@ Vim の一般的な折りたたみの操作に関しては [Vim-users.jp - Hack 
 ## 設定に関するリンク {#b7ef8622}
 
 - [SanRin舎 &raquo; vi/Vim](http://sanrinsha.lolipop.jp/blog/2011/04/vi%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF.html)
+- [vim でシェルコマンドを実行した際の Press ENTER or type command to continue を非表示に](http://d.hatena.ne.jp/koyudoon/20120131/1327959087)
 
 ## チュートリアル {#d82a6a51}
 
