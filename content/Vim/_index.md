@@ -141,7 +141,7 @@ filetype plugin on
 
 を記述しておく必要があります．
 
-#### 32bit Windows の場合 {#ofe0827c}
+#### Windows の場合 {#kf0c55a9}
 
 ***
 
@@ -209,7 +209,13 @@ function! TeXworks()
   end
 
   let currentDir = getcwd()
-  let viewer = '"C:/w32tex/share/texworks/TeXworks.exe"'
+  if glob('C:/w32tex/share/texworks/TeXworks.exe') != ''
+    let viewer = '"' . glob('C:/w32tex/share/texworks/TeXworks.exe') . '"'
+  elseif glob('C:/texlive/*/tlpkg/texworks/texworks.exe') != ''
+    let viewer = '"' . glob('C:/texlive/*/tlpkg/texworks/texworks.exe') . '"'
+  else
+    let viewer = 'TeXworks.exe'
+  endif
   let currentPDFFile = expand("%:r") . '.pdf'
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
@@ -225,7 +231,13 @@ function! SumatraPDF()
   end
 
   let currentDir = getcwd()
-  let viewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"'
+  if glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') != ''
+    let viewer = '"' . glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') . '"'
+  elseif glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') != ''
+    let viewer = '"' . glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') . '"'
+  else
+    let viewer = 'SumatraPDF.exe'
+  endif
   let currentTeXFile = expand("%:t")
   let currentPDFFile = expand("%:r") . '.pdf'
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
@@ -242,127 +254,13 @@ function! AdobeReader()
   end
 
   let currentDir = getcwd()
-  let viewer = '"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe"'
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-no <expr> <C-K>f PdfpLaTeX()
-no <expr> <C-K>b BibTeX()
-no <expr> <C-K>i MakeIndex()
-no <expr> <C-K>v TeXworks()
-no <expr> <C-K>s SumatraPDF()
-no <expr> <C-K>a AdobeReader()
-```
-
-***
-
-#### 64bit Windows の場合 {#kf0c55a9}
-
-***
-
-- $HOME/vimfiles/ftplugin/tex.vim
-
-***
-
-```
-function! PdfpLaTeX()
-  if &ft != 'tex'
-    echo "calling PdfpLaTeX from a non-tex file"
-    return ''
-  end
-
-  :w
-
-  let currentDir = getcwd()
-  let currentTeXFile = expand("%:t")
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! BibTeX()
-  if &ft != 'tex'
-    echo "calling BibTeX from a non-tex file"
-    return ''
-  end
-
-  :w
-
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! MakeIndex()
-  if &ft != 'tex'
-    echo "calling MakeIndex from a non-tex file"
-    return ''
-  end
-
-  :w
-
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'mendex -U -ST' . ' ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! TeXworks()
-  if &ft != 'tex'
-    echo "calling TeXworks from a non-tex file"
-    return ''
-  end
-
-  let currentDir = getcwd()
-  let viewer = '"C:/w32tex/share/texworks/TeXworks.exe"'
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! SumatraPDF()
-  if &ft != 'tex'
-    echo "calling SumatraPDF from a non-tex file"
-    return ''
-  end
-
-  let currentDir = getcwd()
-  let viewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"'
-  let currentTeXFile = expand("%:t")
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! AdobeReader()
-  if &ft != 'tex'
-    echo "calling Adobe Reader from a non-tex file"
-    return ''
-  end
-
-  let currentDir = getcwd()
-  let viewer = '"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe"'
+  if glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') != ''
+    let viewer = '"' . glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') . '"'
+  elseif glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') != ''
+    let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') . '"'
+  else
+    let viewer = 'pdfopen --file'
+  endif
   let currentPDFFile = expand("%:r") . '.pdf'
   let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
@@ -618,7 +516,7 @@ C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
 
 ## Evince との連携 (forward and inverse search) {#p78ad52b}
 
-[Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
+[tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
 ## pxdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
 
@@ -661,6 +559,7 @@ Vim の一般的な折りたたみの操作に関しては [Vim-users.jp - Hack 
 
 - [SanRin舎 &raquo; vi/Vim](http://sanrinsha.lolipop.jp/blog/2011/04/vi%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF.html)
 - [vim でシェルコマンドを実行した際の Press ENTER or type command to continue を非表示に](http://d.hatena.ne.jp/koyudoon/20120131/1327959087)
+- [Vimのメモ](http://ogawa.s18.xrea.com/fswiki/wiki.cgi?page=Vim%A4%CE%A5%E1%A5%E2)
 
 ## チュートリアル {#d82a6a51}
 
