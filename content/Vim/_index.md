@@ -131,9 +131,9 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 ### tex.vim {#y0b061e7}
 
-$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
+$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
 
-tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
+tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (Linux) に
 
 ```
 filetype plugin on
@@ -141,15 +141,92 @@ filetype plugin on
 
 を記述しておく必要があります．
 
-#### Windows の場合 {#kf0c55a9}
-
 ***
 
-- $HOME/vimfiles/ftplugin/tex.vim
+- $HOME/vimfiles/ftplugin/tex.vim (Windows の場合)
+- $HOME/.vim/ftplugin/tex.vim (Linux の場合)
 
 ***
 
 ```
+let g:typeset = 'pdfplatex'
+if has('win32') || has('win64')
+  let g:viewer = 'texworks'
+else
+  let g:viewer = 'evince'
+endif
+let g:master = expand("%:t")
+
+com! -nargs=1 Typeset :call SetTypeset(<f-args>)
+com! -nargs=1 Viewer :call SetViewer(<f-args>)
+com! -nargs=1 TeXmaster :call SetTeXmaster(<f-args>)
+
+function! TypesetFile()
+  if &ft != 'tex'
+    echo "calling TeXworks from a non-tex file"
+    return ''
+  end
+
+  if g:typeset == 'pdfplatex'
+    call PdfpLaTeX()
+  endif
+  return ''
+endfunction
+
+function! ViewFile()
+  if &ft != 'tex'
+    echo "calling TeXworks from a non-tex file"
+    return ''
+  end
+
+  if g:viewer == 'texworks'
+    call TeXworks()
+  elseif g:viewer == 'sumatrapdf'
+    call SumatraPDF()
+  elseif g:viewer == 'evince'
+    call Evince()
+  elseif g:viewer == 'fwdevince'
+    call FwdEvince()
+  elseif g:viewer == 'adobereader'
+    call AdobeReader()
+  endif
+  return ''
+endfunction
+
+function! SetViewer(viewer)
+  if has('win32') || has('win64')
+    if a:viewer == 'texworks'
+      let g:viewer = 'texworks'
+    elseif a:viewer == 'sumatrapdf'
+      let g:viewer = 'sumatrapdf'
+    elseif a:viewer == 'adobereader'
+      let g:viewer = 'adobereader'
+    endif
+  else
+    if a:viewer == 'texworks'
+      let g:viewer = 'texworks'
+    elseif a:viewer == 'evince'
+      let g:viewer = 'evince'
+    elseif a:viewer == 'fwdevince'
+      let g:viewer = 'fwdevince'
+    elseif a:viewer == 'adobereader'
+      let g:viewer = 'adobereader'
+    endif
+  endif
+endfunction
+
+function! SetTypeset(type)
+  if a:type == 'pdfplatex'
+    call PdfpLaTeX()
+  endif
+endfunction
+
+function! SetTeXmaster(master)
+  if a:master != ''
+    let g:master = a:master
+  endif
+endfunction
+
 function! PdfpLaTeX()
   if &ft != 'tex'
     echo "calling PdfpLaTeX from a non-tex file"
@@ -158,10 +235,23 @@ function! PdfpLaTeX()
 
   :w
 
-  let currentDir = getcwd()
-  let currentTeXFile = expand("%:t")
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde & platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . currentBaseName . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if has('win32') || has('win64')
+    if g:viewer == 'adobereader'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+      let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+    else
+      let execString = 'cd /d ' . masterDir . ' && ' . 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+    endif
+  else
+    if g:viewer == 'adobereader'
+      let execString = 'cd ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex' . ' ' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+    else
+      let execString = 'cd ' . masterDir . ' && ' . 'platex -synctex=1' . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+    endif
+  endif
 
   exec 'silent! !' execString
   :redraw!
@@ -176,9 +266,14 @@ function! BibTeX()
 
   :w
 
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . currentBaseName
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if has('win32') || has('win64')
+    let execString = 'cd /d ' . masterDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . masterBaseName
+  else
+    let execString = 'cd ' . masterDir . ' && ' . 'pbibtex' . ' ' . masterBaseName
+  endif
 
   exec 'silent! !' execString
   :redraw!
@@ -193,9 +288,14 @@ function! MakeIndex()
 
   :w
 
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd /d ' . currentDir . ' && ' . 'mendex -U -ST' . ' ' . currentBaseName
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if has('win32') || has('win64')
+    let execString = 'cd /d ' . masterDir . ' && ' . 'mendex -U -ST' . ' ' . masterBaseName
+  else
+    let execString = 'cd ' . masterDir . ' && ' . 'mendex' . ' ' . masterBaseName
+  endif
 
   exec 'silent! !' execString
   :redraw!
@@ -208,16 +308,22 @@ function! TeXworks()
     return ''
   end
 
-  let currentDir = getcwd()
-  if glob('C:/w32tex/share/texworks/TeXworks.exe') != ''
-    let viewer = '"' . glob('C:/w32tex/share/texworks/TeXworks.exe') . '"'
-  elseif glob('C:/texlive/*/tlpkg/texworks/texworks.exe') != ''
-    let viewer = '"' . glob('C:/texlive/*/tlpkg/texworks/texworks.exe') . '"'
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  if has('win32') || has('win64')
+    if glob('C:/w32tex/share/texworks/TeXworks.exe') != ''
+      let viewer = '"' . glob('C:/w32tex/share/texworks/TeXworks.exe') . '"'
+    elseif glob('C:/texlive/*/tlpkg/texworks/texworks.exe') != ''
+      let viewer = '"' . glob('C:/texlive/*/tlpkg/texworks/texworks.exe') . '"'
+    else
+      let viewer = 'TeXworks.exe'
+    endif
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
   else
-    let viewer = 'TeXworks.exe'
+    let viewer = 'texworks'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
   endif
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
   :redraw!
@@ -230,142 +336,37 @@ function! SumatraPDF()
     return ''
   end
 
-  let currentDir = getcwd()
-  if glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') != ''
-    let viewer = '"' . glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') . '"'
-  elseif glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') != ''
-    let viewer = '"' . glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') . '"'
-  else
-    let viewer = 'SumatraPDF.exe'
-  endif
+  let masterDir = getcwd()
   let currentTeXFile = expand("%:t")
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' -reuse-instance ' . currentPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! AdobeReader()
-  if &ft != 'tex'
-    echo "calling Adobe Reader from a non-tex file"
-    return ''
-  end
-
-  let currentDir = getcwd()
-  if glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') != ''
-    let viewer = '"' . glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') . '"'
-  elseif glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') != ''
-    let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') . '"'
-  else
-    let viewer = 'pdfopen --file'
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  if has('win32') || has('win64')
+    if glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') != ''
+      let viewer = '"' . glob('C:/Program Files/SumatraPDF/SumatraPDF.exe') . '"'
+    elseif glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') != ''
+      let viewer = '"' . glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') . '"'
+    else
+      let viewer = 'SumatraPDF.exe'
+    endif
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance ' . masterPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
   endif
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd /d ' . currentDir . ' && echo ' . viewer . ' ' . currentPDFFile . ' | cmd'
 
   exec 'silent! !' execString
   :redraw!
   return ''
 endfunction
 
-no <expr> <C-K>f PdfpLaTeX()
-no <expr> <C-K>b BibTeX()
-no <expr> <C-K>i MakeIndex()
-no <expr> <C-K>v TeXworks()
-no <expr> <C-K>s SumatraPDF()
-no <expr> <C-K>a AdobeReader()
-```
-
-***
-
-> <table>
-> <tbody>
-> <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; v</td><td>TeXworks で PDF ファイルを開く</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; s</td><td>SumatraPDF で PDF ファイルを開いて forward search を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; a</td><td>Adobe Reader で PDF ファイルを開く</td></tr>
-> </tbody>
-> </table>
->
-
-#### Linux の場合 {#q23aa2de}
-
-fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
-GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
-
-***
-
-- $HOME/.vim/ftplugin/tex.vim
-
-***
-
-```
-function! PdfpLaTeX()
+function! Evince()
   if &ft != 'tex'
-    echo "calling PdfpLaTeX from a non-tex file"
+    echo "calling FwdEvince from a non-tex file"
     return ''
   end
 
-  :w
-
-  let currentDir = getcwd()
-  let currentTeXFile = expand("%:t")
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd ' . currentDir . ' && ' . 'platex -synctex=1' . ' ' . currentTeXFile . ' && ' . 'dvipdfmx ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! BibTeX()
-  if &ft != 'tex'
-    echo "calling BibTeX from a non-tex file"
-    return ''
-  end
-
-  :w
-
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd ' . currentDir . ' && ' . 'pbibtex' . ' ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! MakeIndex()
-  if &ft != 'tex'
-    echo "calling MakeIndex from a non-tex file"
-    return ''
-  end
-
-  :w
-
-  let currentDir = getcwd()
-  let currentBaseName = expand("%:t:r")
-  let execString = 'cd ' . currentDir . ' && ' . 'mendex' . ' ' . currentBaseName
-
-  exec 'silent! !' execString
-  :redraw!
-  return ''
-endfunction
-
-function! TeXworks()
-  if &ft != 'tex'
-    echo "calling TeXworks from a non-tex file"
-    return ''
-  end
-
-  let currentDir = getcwd()
-  let viewer = 'texworks'
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' &'
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'evince'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
 
   exec 'silent! !' execString
   :redraw!
@@ -378,11 +379,12 @@ function! FwdEvince()
     return ''
   end
 
-  let currentDir = getcwd()
-  let viewer = 'fwdevince'
+  let masterDir = getcwd()
   let currentTeXFile = expand("%:t")
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' ' . line(".") . ' ' . currentTeXFile . ' &'
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'fwdevince'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' ' . line(".") . ' ' . currentTeXFile . ' &'
 
   exec 'silent! !' execString
   :redraw!
@@ -395,25 +397,39 @@ function! AdobeReader()
     return ''
   end
 
-  let currentDir = getcwd()
-  let viewer = 'acroread'
-  let currentPDFFile = expand("%:r") . '.pdf'
-  let execString = 'cd ' . currentDir . ' && ' . viewer . ' ' . currentPDFFile . ' &'
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  if has('win32') || has('win64')
+    if glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') != ''
+      let viewer = '"' . glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') . '"'
+    elseif glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') != ''
+      let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') . '"'
+    else
+      let viewer = 'pdfopen --file'
+    endif
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
+  else
+    let viewer = 'acroread'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+  endif
 
   exec 'silent! !' execString
   :redraw!
   return ''
 endfunction
 
-no <expr> <C-K>f PdfpLaTeX()
+no <expr> <C-K>f TypesetFile()
 no <expr> <C-K>b BibTeX()
 no <expr> <C-K>i MakeIndex()
-no <expr> <C-K>v TeXworks()
-no <expr> <C-K>e FwdEvince()
-no <expr> <C-K>a AdobeReader()
+no <expr> <C-K>v ViewFile()
 ```
 
 ***
+
+#### Windows の場合 {#kf0c55a9}
+
+ビューアはデフォルトでは TeXworks を使用します．<br>
 
 > <table>
 > <tbody>
@@ -421,9 +437,45 @@ no <expr> <C-K>a AdobeReader()
 > <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; v</td><td>TeXworks で PDF ファイルを開く</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; e</td><td>Evince で PDF ファイルを開いて forward search を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; a</td><td>Adobe Reader で PDF ファイルを開く</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
+> </tbody>
+> </table>
+>
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Viewer texworks</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer sumatrapdf</td><td>ビューアを SumatraPDF に変更</td></tr>
+> <tr><td>:Viewer adobereader</td><td>ビューアを Adobe Reader に変更</td></tr>
+> </tbody>
+> </table>
+>
+
+#### Linux の場合 {#q23aa2de}
+
+ビューアはデフォルトでは Evince を使用します．<br>
+fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
+> </tbody>
+> </table>
+>
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Viewer texworks</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer evince</td><td>ビューアを Evince に変更</td></tr>
+> <tr><td>:Viewer fwdevince</td><td>ビューアを fwdevince に変更</td></tr>
+> <tr><td>:Viewer adobereader</td><td>ビューアを Adobe Reader に変更</td></tr>
 > </tbody>
 > </table>
 >
