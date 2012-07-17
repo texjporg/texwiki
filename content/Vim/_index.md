@@ -137,6 +137,7 @@ tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (Linux) �
 
 ```
 filetype plugin on
+let g:tex_flavor='latex'
 ```
 
 を記述しておく必要があります．
@@ -217,7 +218,7 @@ endfunction
 
 function! SetTypeset(type)
   if a:type == 'pdfplatex'
-    call PdfpLaTeX()
+    let g:typeset = 'pdfplatex'
   endif
 endfunction
 
@@ -233,14 +234,14 @@ function! PdfpLaTeX()
     return ''
   end
 
-  :w
+  w
 
   let masterDir = getcwd()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
     if g:viewer == 'adobereader'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im "AcroRd32.exe"'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
     else
       let execString = 'cd /d ' . masterDir . ' && ' . 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
@@ -253,8 +254,8 @@ function! PdfpLaTeX()
     endif
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -264,7 +265,7 @@ function! BibTeX()
     return ''
   end
 
-  :w
+  w
 
   let masterDir = getcwd()
   let masterTeXFile = g:master
@@ -275,8 +276,8 @@ function! BibTeX()
     let execString = 'cd ' . masterDir . ' && ' . 'pbibtex' . ' ' . masterBaseName
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -286,7 +287,7 @@ function! MakeIndex()
     return ''
   end
 
-  :w
+  w
 
   let masterDir = getcwd()
   let masterTeXFile = g:master
@@ -297,8 +298,8 @@ function! MakeIndex()
     let execString = 'cd ' . masterDir . ' && ' . 'mendex' . ' ' . masterBaseName
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -325,8 +326,8 @@ function! TeXworks()
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -351,8 +352,8 @@ function! SumatraPDF()
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance ' . masterPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -368,8 +369,8 @@ function! Evince()
   let viewer = 'evince'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -386,8 +387,8 @@ function! FwdEvince()
   let viewer = 'fwdevince'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' ' . line(".") . ' ' . currentTeXFile . ' &'
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
@@ -414,15 +415,15 @@ function! AdobeReader()
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
   endif
 
-  exec 'silent! !' execString
-  :redraw!
+  execute 'silent! !' execString
+  redraw!
   return ''
 endfunction
 
-no <expr> <C-K>f TypesetFile()
-no <expr> <C-K>b BibTeX()
-no <expr> <C-K>i MakeIndex()
-no <expr> <C-K>v ViewFile()
+noremap <expr> <C-K>f TypesetFile()
+noremap <expr> <C-K>b BibTeX()
+noremap <expr> <C-K>i MakeIndex()
+noremap <expr> <C-K>v ViewFile()
 ```
 
 ***
@@ -445,9 +446,10 @@ no <expr> <C-K>v ViewFile()
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>:Viewer texworks</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer sumatrapdf</td><td>ビューアを SumatraPDF に変更</td></tr>
-> <tr><td>:Viewer adobereader</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
+> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
 > </table>
 >
@@ -472,10 +474,11 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>:Viewer texworks</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer evince</td><td>ビューアを Evince に変更</td></tr>
-> <tr><td>:Viewer fwdevince</td><td>ビューアを fwdevince に変更</td></tr>
-> <tr><td>:Viewer adobereader</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
+> <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
+> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
 > </table>
 >
