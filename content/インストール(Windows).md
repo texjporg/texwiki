@@ -211,14 +211,17 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html)
+: 2012-07-17
+
 [蝶](http://takeittheworld.blog15.fc2.com/blog-entry-822.html)
 : 2012-07-13
 
-[TeX Live 2012 on Windows](http://blogs.yahoo.co.jp/igproj_fusion/15776344.html)
-: 2012-07-11
+<!-- :[[TeX Live 2012 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/15776344.html]] | 2012-07-11 -->
 
 #### TeX Live 2011 (Win32) {#pad973ce}
 
+- [6. TeXlipse の追加・設定 | Eclipse を使おう別館](http://x19290.appspot.com/using-eclipse/main.html#S6)
 - [LaTeX環境の整備 ― TeX Live 2011を用いて](http://blog.livedoor.jp/phys_com/archives/8891185.html)
 - [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
     - [第3回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/805)
