@@ -240,7 +240,7 @@ function! PdfpLaTeX()
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
     if g:viewer == 'adobereader'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im "AcroRd32.exe"'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
     else
       let execString = 'cd /d ' . masterDir . ' && ' . 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
