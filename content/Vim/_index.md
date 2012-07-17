@@ -131,9 +131,9 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 ### tex.vim {#y0b061e7}
 
-$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
+$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
 
-tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (Linux) に
+tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
 
 ```
 filetype plugin on
@@ -145,7 +145,7 @@ let g:tex_flavor='latex'
 ***
 
 - $HOME/vimfiles/ftplugin/tex.vim (Windows の場合)
-- $HOME/.vim/ftplugin/tex.vim (Linux の場合)
+- $HOME/.vim/ftplugin/tex.vim (OS X, Linux の場合)
 
 ***
 
@@ -153,6 +153,8 @@ let g:tex_flavor='latex'
 let g:typeset = 'pdfplatex'
 if has('win32') || has('win64')
   let g:viewer = 'texworks'
+elseif has('macunix')
+  let g:viewer = 'preview'
 else
   let g:viewer = 'evince'
 endif
@@ -184,10 +186,22 @@ function! ViewFile()
     call TeXworks()
   elseif g:viewer == 'sumatrapdf'
     call SumatraPDF()
+  elseif g:viewer == 'preview'
+    call Preview()
+  elseif g:viewer == 'texshop'
+    call TeXShop()
+  elseif g:viewer == 'skim'
+    call Skim()
   elseif g:viewer == 'evince'
     call Evince()
   elseif g:viewer == 'fwdevince'
     call FwdEvince()
+  elseif g:viewer == 'okular'
+    call Okular()
+  elseif g:viewer == 'pdfviewer'
+    call PdfViewer()
+  elseif g:viewer == 'zathura'
+    call Zathura()
   elseif g:viewer == 'adobereader'
     call AdobeReader()
   endif
@@ -202,22 +216,46 @@ function! SetViewer(viewer)
       let g:viewer = 'sumatrapdf'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
+    else
+      let g:viewer = 'texworks'
+    endif
+  elseif has('macunix')
+    if a:viewer == 'preview'
+      let g:viewer = 'preview'
+    elseif a:viewer == 'texshop'
+      let g:viewer = 'texshop'
+    elseif a:viewer == 'texworks'
+      let g:viewer = 'texworks'
+    elseif a:viewer == 'skim'
+      let g:viewer = 'skim'
+    elseif a:viewer == 'adobereader'
+      let g:viewer = 'adobereader'
+    else
+      let g:viewer = 'preview'
     endif
   else
-    if a:viewer == 'texworks'
-      let g:viewer = 'texworks'
-    elseif a:viewer == 'evince'
+    if a:viewer == 'evince'
       let g:viewer = 'evince'
     elseif a:viewer == 'fwdevince'
       let g:viewer = 'fwdevince'
+    elseif a:viewer == 'texworks'
+      let g:viewer = 'texworks'
+    elseif a:viewer == 'okular'
+      let g:viewer = 'okular'
+    elseif a:viewer == 'pdfviewer'
+      let g:viewer = 'pdfviewer'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
+    else
+      let g:viewer = 'evince'
     endif
   endif
 endfunction
 
 function! SetTypeset(type)
   if a:type == 'pdfplatex'
+    let g:typeset = 'pdfplatex'
+  else
     let g:typeset = 'pdfplatex'
   endif
 endfunction
@@ -247,11 +285,7 @@ function! PdfpLaTeX()
       let execString = 'cd /d ' . masterDir . ' && ' . 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
     endif
   else
-    if g:viewer == 'adobereader'
-      let execString = 'cd ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex' . ' ' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
-    else
-      let execString = 'cd ' . masterDir . ' && ' . 'platex -synctex=1' . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
-    endif
+    let execString = 'cd ' . masterDir . ' && ' . 'platex -synctex=1' . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
   endif
 
   execute 'silent! !' execString
@@ -321,6 +355,9 @@ function! TeXworks()
       let viewer = 'TeXworks.exe'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
+  elseif has('macunix')
+    let viewer = 'open -a TeXworks.app'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
   else
     let viewer = 'texworks'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
@@ -357,9 +394,61 @@ function! SumatraPDF()
   return ''
 endfunction
 
+function! Preview()
+  if &ft != 'tex'
+    echo "calling Preview from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'open -a Preview.app'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! TeXShop()
+  if &ft != 'tex'
+    echo "calling TeXShop from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'open -a TeXShop.app'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! Skim()
+  if &ft != 'tex'
+    echo "calling Skim from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . line(".") . ' ' . masterPDFFile . ' ' . currentTeXFile . ' &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
 function! Evince()
   if &ft != 'tex'
-    echo "calling FwdEvince from a non-tex file"
+    echo "calling Evince from a non-tex file"
     return ''
   end
 
@@ -392,6 +481,59 @@ function! FwdEvince()
   return ''
 endfunction
 
+function! Okular()
+  if &ft != 'tex'
+    echo "calling Okular from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let currentTeXFile = expand("%:p")
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'okular'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' --unique "file:' . masterPDFFile . '\#src:' . line(".") . ' ' . currentTeXFile . '" &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! PdfViewer()
+  if &ft != 'tex'
+    echo "calling PdfViewer from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'pdfviewer'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "file:' . masterPDFFile . '\#src:' . line(".") . ' ' . currentTeXFile . '" &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! Zathura()
+  if &ft != 'tex'
+    echo "calling Zathura from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'zathura'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
 function! AdobeReader()
   if &ft != 'tex'
     echo "calling Adobe Reader from a non-tex file"
@@ -410,6 +552,9 @@ function! AdobeReader()
       let viewer = 'pdfopen --file'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
+  elseif has('macunix')
+    let viewer = 'open -a "Adobe Reader.app"'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
   else
     let viewer = 'acroread'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
@@ -454,6 +599,35 @@ noremap <expr> <C-K>v ViewFile()
 > </table>
 >
 
+#### OS X の場合 {#v2d90738}
+
+動作未確認です．<br>
+ビューアはデフォルトでは Preview を使用します．<br>
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
+> </tbody>
+> </table>
+>
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
+> <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
+> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
+> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
+> </tbody>
+> </table>
+>
+
 #### Linux の場合 {#q23aa2de}
 
 ビューアはデフォルトでは Evince を使用します．<br>
@@ -477,6 +651,9 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
+> <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
+> <tr><td>:Viewer pdfviewer &lt;Enter&gt;</td><td>ビューアを PdfViewer に変更</td></tr>
+> <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
