@@ -25,8 +25,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 動作未確認です．<br>
 
-■ e-pTeX, pBibTeX の場合
-
 ***
 
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
@@ -35,123 +33,72 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/pbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">☐ Use a "build" subdirectory for output files</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/pbibtex" &#x25;</ins> または <ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
+　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
 
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
 　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
-
-　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
-
-<div style="clear:both"></div>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+<br>
 
-***
+<br>
 
-■ e-upTeX, upBibTeX の場合
-
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
-
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+<br>
 
 　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
