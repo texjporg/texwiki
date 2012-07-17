@@ -101,3 +101,4 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - Eclipse Wiki - [http://eclipsewiki.net/eclipse/](http://eclipsewiki.net/eclipse/)
+- [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
