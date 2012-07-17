@@ -152,9 +152,9 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><ins>C:/texmakerwin32usb/en_US.dic　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　☐ インライン</span><br>
+<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　☐ インライン</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
+<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">色</span><br>
 
@@ -188,13 +188,9 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 > : &nbsp;
 >
 
->
-> : &nbsp;
->
-
 > <table>
 > <tbody>
-> <tr><td style="color:#555">Background</td><td>#ffffff</td></tr>
+> <tr><td style="color:#555">Background</td><td>#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
 > <tr><td style="color:#555">Current line</td><td>#ececec</td></tr>
 > <tr><td style="color:#555">Highlighted line</td><td>#ff0000</td></tr>
 > <tr><td style="color:#555">Text</td><td>#000000</td></tr>
@@ -205,8 +201,8 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 > </table>
 >
 
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　　　　　　　　　　　　 ダークテーマ 　　　　　　　　　　　　　　　　 \]</span><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　　　　　　　　　　デフォルトのテーマ　　　　　　　　　　　　　　　\]</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　デフォルトのテーマ　　　　\]</span><br>
 
 <div style="clear:both"></div>
 
