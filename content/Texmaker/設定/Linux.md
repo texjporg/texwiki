@@ -23,8 +23,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 #### [TeX Live](</TeX Live/>) {#x932c6ec}
 
-■ e-pTeX, pBibTeX の場合
-
 ***
 
 <span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
@@ -33,123 +31,72 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">☐ Use a "build" subdirectory for output files</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>advi -watch-file 1 %.dvi</ins> または <ins>evince %.dvi</ins> または <ins>okular --unique %.dvi</ins> または <ins>emacs %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>emacs %.ps</ins> または <ins>xdg-open %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f ptex-ipaex.map %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
+　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f ptex-ipaex.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
 
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
 　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
-
-　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
-
-<div style="clear:both"></div>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+<br>
 
-***
+<br>
 
-■ e-upTeX, upBibTeX の場合
-
-***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">DVI ビューア </span><ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>advi -watch-file 1 %.dvi</ins> または <ins>evince %.dvi</ins> または <ins>okular --unique %.dvi</ins> または <ins>emacs %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PS ビューア　</span><ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>emacs %.ps</ins> または <ins>xdg-open %.ps</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f ptex-ipaex.map %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PDF ビューア <span style="color:#3333CC;">◎</span>　組み込みビューア　☑　埋め込み</span><br>
-
-　 　 　 　 　 　 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア　　　　</span><ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+<br>
 
 　　　<strong>ショートカット</strong><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>advi -watch-file 1 %.dvi</ins> または <ins>evince %.dvi</ins> または <ins>okular --unique %.dvi</ins> または <ins>emacs %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>emacs %.ps</ins> または <ins>xdg-open %.ps</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
