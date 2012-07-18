@@ -118,6 +118,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamerでプレゼン資料を作る](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
+- [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
