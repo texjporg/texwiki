@@ -131,7 +131,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 ### tex.vim {#y0b061e7}
 
-$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からコンパイル・プレビューができます．<br>
+$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
 
 tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
 
@@ -150,12 +150,20 @@ let g:tex_flavor='latex'
 ***
 
 ```
-let g:typeset = 'pdfplatex'
 if has('win32') || has('win64')
+  let g:typeset = 'pdfplatex'
+  let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
+  let g:makeindex = 'mendex -U -ST'
   let g:viewer = 'texworks'
 elseif has('macunix')
+  let g:typeset = 'pdfplatex'
+  let g:bibtex = 'pbibtex'
+  let g:makeindex = 'mendex'
   let g:viewer = 'preview'
 else
+  let g:typeset = 'pdfplatex'
+  let g:bibtex = 'pbibtex'
+  let g:makeindex = 'mendex'
   let g:viewer = 'evince'
 endif
 let g:master = expand("%:t")
@@ -171,7 +179,21 @@ function! TypesetFile()
   end
 
   if g:typeset == 'pdfplatex'
-    call PdfpLaTeX()
+    call PdfpLaTeX("pdfplatex")
+  elseif g:typeset == 'pdfplatex2'
+    call PdfpLaTeX("pdfplatex2")
+  elseif g:typeset == 'pdfuplatex'
+    call PdfpLaTeX("pdfuplatex")
+  elseif g:typeset == 'pdfuplatex2'
+    call PdfpLaTeX("pdfuplatex2")
+  elseif g:typeset == 'pdflatex'
+    call PdfLaTeX("pdflatex")
+  elseif g:typeset == 'lualatex'
+    call PdfLaTeX("lualatex")
+  elseif g:typeset == 'xelatex'
+    call PdfLaTeX("xelatex")
+  else
+    call PdfpLaTeX("pdfplatex")
   endif
   return ''
 endfunction
@@ -255,6 +277,18 @@ endfunction
 function! SetTypeset(type)
   if a:type == 'pdfplatex'
     let g:typeset = 'pdfplatex'
+  elseif a:type == 'pdfplatex2'
+    let g:typeset = 'pdfplatex2'
+  elseif a:type == 'pdfuplatex'
+    let g:typeset = 'pdfuplatex'
+  elseif a:type == 'pdfuplatex2'
+    let g:typeset = 'pdfuplatex2'
+  elseif a:type == 'pdflatex'
+    let g:typeset = 'pdflatex'
+  elseif a:type == 'lualatex'
+    let g:typeset = 'lualatex'
+  elseif a:type == 'xelatex'
+    let g:typeset = 'xelatex'
   else
     let g:typeset = 'pdfplatex'
   endif
@@ -266,7 +300,7 @@ function! SetTeXmaster(master)
   endif
 endfunction
 
-function! PdfpLaTeX()
+function! PdfpLaTeX(type)
   if &ft != 'tex'
     echo "calling PdfpLaTeX from a non-tex file"
     return ''
@@ -277,15 +311,127 @@ function! PdfpLaTeX()
   let masterDir = getcwd()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if a:type == 'pdfplatex'
+    if has('win32') || has('win64')
+      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile
+      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
+      let g:makeindex = 'mendex -U -ST'
+      if g:viewer == 'adobereader'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
+      else
+        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+      endif
+    else
+      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
+      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let g:bibtex = 'pbibtex'
+      let g:makeindex = 'mendex'
+      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+    endif
+  elseif a:type == 'pdfplatex2'
+    if has('win32') || has('win64')
+      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile
+      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
+      let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
+      let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
+      let g:makeindex = 'mendex -U -ST'
+      if g:viewer == 'adobereader'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+      else
+        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+      endif
+    else
+      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
+      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
+      let ps2pdf = 'ps2pdf' . ' ' . masterBaseName . '.ps'
+      let g:bibtex = 'pbibtex'
+      let g:makeindex = 'mendex'
+      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+    endif
+  elseif a:type == 'pdfuplatex'
+    if has('win32') || has('win64')
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8' . ' ' . masterTeXFile
+      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let g:bibtex = 'upbibtex'
+      let g:makeindex = 'mendex -U'
+      if g:viewer == 'adobereader'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
+      else
+        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+      endif
+    else
+      let latex = 'uplatex -synctex=1' . ' ' . masterTeXFile
+      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let g:bibtex = 'upbibtex'
+      let g:makeindex = 'mendex'
+      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+    endif
+  elseif a:type == 'pdfuplatex2'
+    if has('win32') || has('win64')
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8' . ' ' . masterTeXFile
+      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
+      let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
+      let g:bibtex = 'upbibtex'
+      let g:makeindex = 'mendex -U'
+      if g:viewer == 'adobereader'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+      else
+        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+      endif
+    else
+      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
+      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
+      let ps2pdf = 'ps2pdf' . ' ' . masterBaseName . '.ps'
+      let g:bibtex = 'upbibtex'
+      let g:makeindex = 'mendex'
+      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
+    endif
+  endif
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! PdfLaTeX(type)
+  if &ft != 'tex'
+    echo "calling PdfLaTeX from a non-tex file"
+    return ''
+  end
+
+  w
+
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if a:type == 'pdflatex'
+    let pdflatex = 'pdflatex -synctex=1' . ' ' . masterTeXFile
+    let g:bibtex = 'bibtex'
+    let g:makeindex = 'makeindex'
+  elseif a:type == 'lualatex'
+    let pdflatex = 'lualatex -synctex=1' . ' ' . masterTeXFile
+    let g:bibtex = 'bibtexu'
+    let g:makeindex = 'texindy'
+  elseif a:type == 'xelatex'
+    let pdflatex = 'xelatex -synctex=1' . ' ' . masterTeXFile
+    let g:bibtex = 'bibtexu'
+    let g:makeindex = 'texindy'
+  endif
+
   if has('win32') || has('win64')
     if g:viewer == 'adobereader'
       let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
-      let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . 'platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+      let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . pdflatex
     else
-      let execString = 'cd /d ' . masterDir . ' && ' . 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+      let execString = 'cd /d ' . masterDir . ' && ' . pdflatex
     endif
   else
-    let execString = 'cd ' . masterDir . ' && ' . 'platex -synctex=1' . ' ' . masterTeXFile . ' && ' . 'dvipdfmx ' . masterBaseName
+    let execString = 'cd ' . masterDir . ' && ' . pdflatex
   endif
 
   execute 'silent! !' execString
@@ -305,9 +451,9 @@ function! BibTeX()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . 'pbibtex -kanji=utf8 -sjis-terminal' . ' ' . masterBaseName
+    let execString = 'cd /d ' . masterDir . ' && ' . g:bibtex . ' ' . masterBaseName
   else
-    let execString = 'cd ' . masterDir . ' && ' . 'pbibtex' . ' ' . masterBaseName
+    let execString = 'cd ' . masterDir . ' && ' . g:bibtex . ' ' . masterBaseName
   endif
 
   execute 'silent! !' execString
@@ -327,9 +473,9 @@ function! MakeIndex()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . 'mendex -U -ST' . ' ' . masterBaseName
+    let execString = 'cd /d ' . masterDir . ' && ' . g:makeindex ' ' . masterBaseName
   else
-    let execString = 'cd ' . masterDir . ' && ' . 'mendex' . ' ' . masterBaseName
+    let execString = 'cd ' . masterDir . ' && ' . g:makeindex . ' ' . masterBaseName
   endif
 
   execute 'silent! !' execString
@@ -575,14 +721,15 @@ noremap <expr> <C-K>v ViewFile()
 
 #### Windows の場合 {#kf0c55a9}
 
+タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは TeXworks を使用します．<br>
 
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
@@ -591,6 +738,13 @@ noremap <expr> <C-K>v ViewFile()
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
+> <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
@@ -602,14 +756,15 @@ noremap <expr> <C-K>v ViewFile()
 #### OS X の場合 {#v2d90738}
 
 動作未確認です．<br>
+タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは Preview を使用します．<br>
 
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
@@ -618,6 +773,13 @@ noremap <expr> <C-K>v ViewFile()
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
+> <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
 > <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
@@ -630,6 +792,7 @@ noremap <expr> <C-K>v ViewFile()
 
 #### Linux の場合 {#q23aa2de}
 
+タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは Evince を使用します．<br>
 fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
 GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
@@ -637,9 +800,9 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>&lt;Ctrl-K&gt; f</td><td>pdfpLaTeX (platex + dvipdfmx) を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>pBibTeX を実行</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>Mendex を実行</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
@@ -648,6 +811,13 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
+> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
+> <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
+> <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
+> <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
