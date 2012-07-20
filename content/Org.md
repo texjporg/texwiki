@@ -21,6 +21,7 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 ## LaTeX Export {#k6bbb6c5}
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
+- [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
 - [Org-Modeで日本語を含むファイルをPDFにエクスポートする方法](http://d.hatena.ne.jp/mokimokisan/20120624/1340558857)
 - [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
