@@ -333,3 +333,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 - [pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)
     （稲垣徹さん）
+
+- [南北館](http://www003.upp.so-net.ne.jp/NAMBOKU/)
+    - [LaTeXの細道・けもの道\[パッケージ編\]](http://www003.upp.so-net.ne.jp/NAMBOKU/latex/latex020.html)
