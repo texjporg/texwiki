@@ -137,3 +137,6 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
         <!-- - -[[AV_Layer:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/package-detail.html]] -->
         <!-- - --[[AVDoc:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVDoc.html]] -->
         <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
+
+- [WineHQ  - Adobe Reader](http://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
+    - [WineHQ  - Adobe Reader 10.x](http://appdb.winehq.org/objectManager.php?sClass=version&iId=22577)
