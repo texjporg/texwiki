@@ -28,6 +28,7 @@ Sublime Text は Windows, OS X, Linux で動作するテキストエディタで
 
 ### OS X {#d13b8a86}
 
+- [Emacs, Vim, Sublime Text 2 徹底比較](http://funatti.hatenablog.com/entry/2012/07/13/155629)
 - [Sublime Text 2というエディタがファビュラスマックス](http://ototorosama.com/blog/2011/11/sublime-text-2%E3%81%A8%E3%81%84%E3%81%86%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%8C%E3%83%95%E3%82%A1%E3%83%93%E3%83%A5%E3%83%A9%E3%82%B9%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9/)
 - [プログラミングエディタ Sublime Text2 を使ってみよう！](http://d.hatena.ne.jp/mizchi/20111021/1319167480)
 - [Sublime Text 2のカスタマイズ](http://ready-study-go.blogspot.com/2011/09/sublime-text-2.html)
