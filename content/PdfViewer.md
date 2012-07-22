@@ -8,3 +8,8 @@ pukiwiki: "PdfViewer"
 # PdfViewer
 
 ## [PdfViewer](http://qt-apps.org/content/show.php?content=149637) {#a48b6ebd}
+
+- [PdfViewer](http://qt-apps.org/content/show.php?content=149637)
+
+PdfViewer は Qt で記述された PDF ビューアです．<br>
+SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
