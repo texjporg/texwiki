@@ -266,6 +266,8 @@ function! SetViewer(viewer)
       let g:viewer = 'okular'
     elseif a:viewer == 'pdfviewer'
       let g:viewer = 'pdfviewer'
+    elseif a:viewer == 'zathura'
+      let g:viewer = 'zathura'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
     else
