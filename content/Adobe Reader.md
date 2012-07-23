@@ -121,8 +121,6 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 
 ## 関連リンク {#m8d917f7}
 
-- [Linux用の日本語版Adobe Readerは脆弱性が放置されてるのね](http://linux.ikoinoba.net/index.php?UID=1336916076)
-- [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 - [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
@@ -137,6 +135,3 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
         <!-- - -[[AV_Layer:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/package-detail.html]] -->
         <!-- - --[[AVDoc:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVDoc.html]] -->
         <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
-
-- [WineHQ  - Adobe Reader](http://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
-    - [WineHQ  - Adobe Reader 10.x](http://appdb.winehq.org/objectManager.php?sClass=version&iId=22577)
