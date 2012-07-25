@@ -503,6 +503,9 @@ EasyTeX
 Yotuba TeX Editor
 : Yotuba TeX Editor をご覧ください．
 
+Visual Windows for TeX
+: Visual Windows for TeX をご覧ください．
+
 Masamichi
 : Masamichi をご覧ください．
 
