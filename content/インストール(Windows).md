@@ -211,6 +211,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+\[[Windows\] TeX Live 2012 インストール](http://d.hatena.ne.jp/hidehara/20120724/1343147231)
+: 2012-07-24
+
 [TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html)
 : 2012-07-17
 
