@@ -49,7 +49,7 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
     - \MARU マクロ（okumacro パッケージが提供するほか，
         同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
 
-1. [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), upTeXなど、Unicode化されたTeX族を利用する。ただし、技術力のある方以外には、まだまだしきいが高いものです。
+1. [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。ただし、技術力のある方以外には、まだまだしきいが高いものです。
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
