@@ -59,8 +59,8 @@ dvipdfmx kumo.dvi
 
 ### 簡単な使い方 {#wd228c3a}
 
-upTeX/upLaTeXは、pTeX/pLaTeXとほぼ同様に使うことができます．
-pTeX/pLaTeXで利用しているコマンド名等は以下のように読み替えてください．
+upTeX, upLaTeXは、pTeX, pLaTeXとほぼ同様に使うことができます．
+pTeX, pLaTeXで利用しているコマンド名等は以下のように読み替えてください．
 
 - コマンド名
 
@@ -106,27 +106,142 @@ pTeX/pLaTeXで利用しているコマンド名等は以下のように読み替
 | JT1  | JT2   | 縦組み |
 
 jsarticle.clsでは、uplatexオプションを追加してください．
-otfパッケージでは、uplatexオプションを追加してください．
+[otfパッケージ](/OTF/)では、uplatexオプションを追加してください．
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
 ### 仕様 {#o544ccd9}
 
 upTeXは、\kcatcode の設定次第で、入力されたUTF-8の文字を内部処理に渡す際にCJKトークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の8bit文字からなるUTF-8の文字列に振り分けて処理します．
-\kcatcode は、Unicodeのblockごとに設定可能です．
+\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です．
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
-upTeXのデフォルトで、U+0080以上の文字は、漢字,かな,CJK記号,ハングル のいずれかに設定されています．
-適切なフォントに切り替えるだけで、CJK混植の文書を作成できます．
+upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記号, ハングル のいずれかに設定されています．
+適切なフォントに切り替えるだけで、CJK混植の文書を作成できます．以下は、入力例です．
+
+```
+\documentclass{ujarticle}
+
+% CJK fontの設定
+\DeclareFontFamily{JY2}{jpnrm}{}
+\DeclareFontFamily{JY2}{schrm}{}
+\DeclareFontFamily{JY2}{tchrm}{}
+\DeclareFontFamily{JY2}{korrm}{}
+\DeclareFontShape{JY2}{jpnrm}{m}{n}{<->s*[0.962216]upjpnrm-h}{}
+\DeclareFontShape{JY2}{schrm}{m}{n}{<->s*[0.962216]upschrm-h}{}
+\DeclareFontShape{JY2}{tchrm}{m}{n}{<->s*[0.962216]uptchrm-h}{}
+\DeclareFontShape{JY2}{korrm}{m}{n}{<->s*[0.962216]upkorrm-h}{}
+\DeclareFontShape{JY2}{jpnrm}{bx}{n}{<->ssub*jpnrm/m/n}{}
+\DeclareFontShape{JY2}{schrm}{bx}{n}{<->ssub*schrm/m/n}{}
+\DeclareFontShape{JY2}{tchrm}{bx}{n}{<->ssub*tchrm/m/n}{}
+\DeclareFontShape{JY2}{korrm}{bx}{n}{<->ssub*korrm/m/n}{}
+\DeclareRobustCommand\jpnrm{\kanjifamily{jpnrm}\selectfont}
+\DeclareRobustCommand\schrm{\kanjifamily{schrm}\selectfont}
+\DeclareRobustCommand\tchrm{\kanjifamily{tchrm}\selectfont}
+\DeclareRobustCommand\korrm{\kanjifamily{korrm}\selectfont}
+
+\begin{document}
+\section{日本語}
+\jpnrm
+すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。
+人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。 
+```
+
+```
+\section{中国語・簡体字 {\schrm 简体中文}}
+{\schrm
+人人生而自由,在尊严和权利上一律平等。
+他们赋有理性和良心,并应以兄弟关系的精神相对待。
+}
+
+\section{中国語・繁体字 {\tchrm 繁體中文}}
+{\tchrm
+人人生而自由，在尊嚴和權利上一律平等。
+他們賦有理性和良心，並應以兄弟關係的精神相對待。
+}
+```
+
+```
+\section{韓国語 {\korrm 한국어}}
+{\korrm
+\xkanjiskip=.1zw plus 1pt minus 1pt
+모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다.
+인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다. 
+}
+
+\end{document}
+```
 
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
 upTeXのデフォルトでは、U+0080以上の文字は欧文としては処理されませんが、\kcatcode を15に設定することで、欧文の8bit文字列として扱うことが出来ます．
-欧文latexのinputencパッケージを利用することで、UTF-8で記述された文書が処理出来ます．
-platexの場合では、ギリシャ文字、キリル文字は必ず和文扱いされますが、
-uplatexの場合は、ギリシャ文字ブロック、キリル文字の\kcatcode を15に設定することで回避できます．
-欧文latexのbabelパッケージも、欧文latexと同様に利用出来ます．
+欧文LaTeXのinputencパッケージを利用することで、UTF-8で記述された文書が処理出来ます．
+pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされますが、
+upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロックの\kcatcode を15に設定することで回避できます．
+欧文LaTeXのbabelパッケージも、欧文LaTeXと同様に利用出来ます．以下は、入力例です．
+
+```
+\documentclass{ujarticle}
+%\usepackage{lmodern}% Latin Modern
+\usepackage[utf8x]{inputenc}
+%\usepackage[10pt]{type1ec}
+\usepackage[T2A,T2B,T2C,T1]{fontenc}
+\usepackage[french,german,czech,russian,greek,japanese]{babel}
+
+\begin{document}
+\kcatcode`ç=15% not cjk character
+\kcatcode`Ŕ=15
+\kcatcode`П=15
+\kcatcode`α=15
+\kcatcode`ἀ=15
+\kcatcode`“=15
+
+\selectlanguage{french}
+\section{フランス語 Français}
+Tous les êtres humains naissent libres et égaux en dignité et en droits.
+Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité.
+
+\selectlanguage{german}
+\section{ドイツ語 Deutsch}
+Alle Menschen sind frei und gleich an Würde und Rechten geboren.
+Sie sind mit Vernunft und Gewissen begabt und sollen einander im Geiste der Brüderlichkeit begegnen.
+```
+
+```
+\selectlanguage{czech}%
+\section{チェコ語 Czech}
+Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv.
+Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství. 
+```
+
+```
+\selectlanguage{russian}
+\section{ロシア語 \fontencoding{T2A}\selectfont{}Русский}
+\fontencoding{T2A}\selectfont
+Все люди рождаются свободными и равными в своем достоинстве и правах.
+Они наделены разумом и совестью и должны поступать в отношении друг друга в духе братства.
+```
+
+```
+\fontencoding{T1}\selectfont
+```
+
+```
+\selectlanguage{greek}
+\section{ギリシア語 Ελληνικά}
+'Ολοι οι άνθρωποι γεννιούνται ελεύθεροι και ίσοι στην αξιοπρέπεια και τα δικαιώματα.
+Είναι προικισμένοι με λογική και συνείδηση, και οφείλουν να συμπεριφέρονται μεταξύ τους με πνεύμα αδελφοσύνης.
+
+\selectlanguage{japanese}
+\section{日本語}
+すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。
+人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。 
+```
+
+```
+\end{document}
+```
 
 ### ヘブライ語 {#f3b6c860}
 
