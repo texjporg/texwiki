@@ -113,7 +113,7 @@ jsarticle.clsでは、uplatexオプションを追加してください．
 ### 仕様 {#o544ccd9}
 
 upTeXは、\kcatcode の設定次第で、入力されたUTF-8の文字を内部処理に渡す際にCJKトークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の8bit文字からなるUTF-8の文字列に振り分けて処理します．
-\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です．
+\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です．以下では基本的な書き方を例示していますが、フォントの設定、\kcatcode の設定、babelの設定などを簡便にするために[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)が利用できます．
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
@@ -151,8 +151,8 @@ upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記�
 ```
 \section{中国語・簡体字 {\schrm 简体中文}}
 {\schrm
-人人生而自由,在尊严和权利上一律平等。
-他们赋有理性和良心,并应以兄弟关系的精神相对待。
+人人生而自由，在尊严和权利上一律平等。
+他们赋有理性和良心，并应以兄弟关系的精神相对待。
 }
 
 \section{中国語・繁体字 {\tchrm 繁體中文}}
@@ -173,12 +173,14 @@ upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記�
 \end{document}
 ```
 
+[pxbabelパッケージ](http://zrbabbler.sp.land.to/pxbase.html#sec-pxbabel)を利用すると、CJK言語間の切り換えが簡便になります。
+
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
 upTeXのデフォルトでは、U+0080以上の文字は欧文としては処理されませんが、\kcatcode を15に設定することで、欧文の8bit文字列として扱うことが出来ます．
 欧文LaTeXのinputencパッケージを利用することで、UTF-8で記述された文書が処理出来ます．
-pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされますが、
-upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロックの\kcatcode を15に設定することで回避できます．
+pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^1]が、
+upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロックの\kcatcode を15に設定することで回避できます．ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください．
 欧文LaTeXのbabelパッケージも、欧文LaTeXと同様に利用出来ます．以下は、入力例です．
 
 ```
@@ -245,9 +247,9 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 
 ### ヘブライ語 {#f3b6c860}
 
-W32TeX, TeX Live 2012に含まれるuplatexコマンドは、[e-TeX](/e-TeX/)拡張を含んだe-upTeXをコンパイラとしているため、TeX-XeT機能が利用できます．
+[W32TeX](/W32TeX/), [TeX Live](</TeX Live/>)に含まれるuplatexコマンドは、[e-TeX](/e-TeX/)拡張を含んだe-upTeXをコンパイラとしているため、TeX-XeT機能が利用できます．
 ヘブライ文字ブロックの\kcatcode を15に設定することで、
-欧文latexと同様、babelパッケージのhebrewオプションが利用出来ます．
+欧文LaTeXと同様、babelパッケージのhebrewオプションが利用出来ます．
 
 ### その他の言語 {#ldca57c5}
 
@@ -257,3 +259,5 @@ upTeX自身の機能としてアラビア文字など複雑な文字をレンダ
 
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
+
+[^1]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です
