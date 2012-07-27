@@ -31,7 +31,7 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. [CJK パッケージ](/LaTeX-CJK/)
 1. [Unicode パッケージ](https://mirror.ctan.org/macros/latex/contrib/unicode/)
 1. 前二者の併用によるアプローチ
-1. upTeX
+1. [upTeX](/upTeX,upLaTeX/)
 1. Aleph/[Omega](http://omega.enstb.org/)
 1. [XeTeX](/XeTeX/)
 1. [LuaTeX](/LuaTeX/)
