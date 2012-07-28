@@ -19,6 +19,10 @@ Visual Windows for Unicode TeX (Windows XP 以降), Visual Windows for xeTeX (Wi
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physjpn/vtexwin.htm) (Japanese page)
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physeng/vtexwin.htm) (English page)
 
+### リリース情報 {#l78e4b17}
+
+2012-07-28 Visual Windows for TeX Ver.2012-1.30
+
 ## 関連リンク {#b77aa044}
 
 - [VisualWindowsforTeX](http://soho9001.blogspot.jp/2012/07/visualwindowsfortex.html)
