@@ -43,7 +43,7 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 などがあります。[OmegaVN](http://forum.vnoss.org/viewtopic.php?id=870) に
 ついてはグェンさん自身のご紹介 ([qa:34272](https://okumuralab.org/~okumura/texfaq/qa/34272.html)) と
 最新版 dvipdfmx 上で使用する場合の注意事項 ([qa:37564](https://okumuralab.org/~okumura/texfaq/qa/37564.html)) も参照ください。
-4. については、CJK 以外の言語では事情は pTeX とほぼ同じです。
+4. については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照ください。
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
