@@ -11,9 +11,16 @@ pukiwiki: "upTeX,upLaTeX"
 
 ## upTeX, upLaTeXとは {#ge195750}
 
-[upTeX, upLaTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)は、pTeX, pLaTeXの内部Unicode版。pTeX, pLaTeXでは、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
-upTeX, upLaTeXでは、漢字/かな/CJK記号/ハングルとしてUnicodeの範囲を扱えるようになっています。
-また、\kcatcode の設定切替えで欧文LaTeXの\inputenc{utf8}やBabelが障害なく利用でき、CJK以外の多言語についてもpLaTeXよりも扱いやすくなっています。
+[upTeX, upLaTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)の内部Unicode[^1]版。pTeX, pLaTeXでは、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
+upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてUnicodeの範囲を扱えるようになっています。
+また、\kcatcode の設定切替えで欧文LaTeXの\inputenc{utf8}やBabelが障害なく利用でき、CJK以外の多言語についてもpLaTeXよりも扱いやすくなっています。特徴をまとめると、
+
+- pTeX, pLaTeX上位互換
+    - 組版品質、縦組み機能、過去の資産活用
+- UTF-8入力、内部Unicodeによりプレーンテキストでの処理能力向上
+    - 日本語字種の拡張
+    - CJK(日中韓)各言語の混植
+    - 欧文TeXのUnicode入力、babelとの親和性向上
 
 ### インストール {#d62d0a5a}
 
@@ -122,7 +129,7 @@ jsarticle.clsでは、uplatexオプションを追加してください。
 ### 仕様 {#o544ccd9}
 
 upTeXは、\kcatcode の設定次第で、入力されたUTF-8の文字を内部処理に渡す際にCJKトークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の8bit文字からなるUTF-8の文字列に振り分けて処理します。
-\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です。以下では基本的な書き方を例示していますが、フォントの設定、\kcatcode の設定、babelの設定などを簡便にするために[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)が利用できます。
+\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です。以下では基本的な書き方を例示していますが、[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)を利用すると、フォント、\kcatcode、babelの設定などを簡便にできます。
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
@@ -188,7 +195,7 @@ upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記�
 
 upTeXのデフォルトでは、U+0080以上の文字は欧文としては処理されませんが、\kcatcode を15に設定することで、欧文の8bit文字列として扱うことが出来ます。
 欧文LaTeXのinputencパッケージを利用することで、UTF-8で記述された文書が処理出来ます。
-pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^1]が、
+pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、
 upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロックの\kcatcode を15に設定することで回避できます。ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。
 欧文LaTeXのbabelパッケージも、欧文LaTeXと同様に利用出来ます。以下は、入力例です。
 
@@ -269,4 +276,5 @@ upTeX自身の機能としてアラビア文字など複雑な文字をレンダ
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 
-[^1]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です
+[^1]: 内部Unicodeになっているのは、CJKの文字。欧文の処理は欧文TeX, pTeXと同様、8bitのままです。
+[^2]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
