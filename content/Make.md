@@ -94,7 +94,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 
 ### [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
-- platex を使用する場合
+- platex を使用する場合 (TeXworks, YaTeX, KaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
 
 ***
 
@@ -118,7 +118,31 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- uplatex を使用する場合
+- platex を使用する場合 (Texmaker, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+$latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode';
+$bibtex = 'pbibtex -kanji=utf8';
+$makeindex = 'mendex -U';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+$ps2pdf = 'ps2pdf.bat %O %S %D';
+```
+
+***
+
+```
+latexmk -gg -pdfdvi hoge.tex
+latexmk -gg -pdfps hoge.tex
+```
+
+- uplatex を使用する場合 (TeXworks, YaTeX, KaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
 
 ***
 
@@ -142,10 +166,40 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
+- uplatex を使用する場合 (Texmaker, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+$latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode';
+$bibtex = 'upbibtex';
+$makeindex = 'mendex -U';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+$ps2pdf = 'ps2pdf.bat %O %S %D';
+```
+
+***
+
+```
+latexmk -gg -pdfdvi hoge.tex
+latexmk -gg -pdfps hoge.tex
+```
+
 - 中間ファイルの削除
 
 ```
 latexmk -c
+```
+
+- 中間ファイルと .dvi, .ps, .pdf の削除
+
+```
+latexmk -C
 ```
 
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
@@ -162,3 +216,5 @@ latexmk -c
 - [OMakeで快適に論文執筆：TeX編](http://leoclock.blogspot.jp/2009/09/omaketex.html)
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
+
+### [Rubber](https://launchpad.net/rubber) {#c944641c}
