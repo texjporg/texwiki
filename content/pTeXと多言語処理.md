@@ -362,7 +362,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 
 で7ビット化したthai.ldfをコピーします。
 
-その後，$TEXMF/fonts/map/dvipdfm/base/cid-x.map に
+その後，$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
 
 ```
 rdbtt dbtt dbtt.pfb
@@ -593,10 +593,10 @@ mktexlsr
 
 dvipdfmx で変換し，PDF の形で出力結果を見ることになります。
 そこで "sample.map(for dvipdfmx)" を
-参考に，$TEXMFLOCAL/fonts/map/dvipdfm/base/cid-x.map に
+参考に，$TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map に
 次のように追記しておきます。
 
-#### $TEXMFLOCAL/fonts/map/dvipdfm/base/cid-x.map への追記 {#u719ef74}
+#### $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map への追記 {#u719ef74}
 
 ***
 
