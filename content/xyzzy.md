@@ -872,7 +872,7 @@ mktexlsr
 
 dvipdfmx で変換し，PDF の形で出力結果を見ることになります。
 そこで "sample.map(for dvipdfmx)" を
-参考に，$TEXMFLOCAL/fonts/map/dvipdfm/base/cid-x.map に
+参考に，$TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map に
 次のように追記しておきます。
 
 - [pTeXと多言語処理](</pTeXと多言語処理/#u719ef74>) を参照。
