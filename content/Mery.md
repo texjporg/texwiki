@@ -102,7 +102,7 @@ function main()
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
@@ -182,7 +182,7 @@ function main()
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
@@ -567,7 +567,7 @@ function main()
       bibtex = "pbibtex -kanji=jis  -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       bibtex = "pbibtex -kanji=sjis -sjis-terminal";
@@ -717,7 +717,7 @@ function main()
       makeindex = "mendex -J -ST";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       makeindex = "mendex -U -ST";
     } else if (encoding == meEncodingShiftJIS) {
       makeindex = "mendex -S -ST";
@@ -1111,7 +1111,7 @@ function main()
       latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
@@ -1163,7 +1163,7 @@ function main()
       latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
@@ -1363,7 +1363,7 @@ function main()
       latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
     }
   } else {
-    if (encoding == 5 || encoding == 4 || encoding == meEncodingUTF8) {
+    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
       latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
     } else if (encoding == meEncodingShiftJIS) {
       latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
