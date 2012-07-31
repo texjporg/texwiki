@@ -29,9 +29,8 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
-<strong>MacTeX で配布されている Ghostscript では LaTeXiT で日本語が表示されないようです．</strong><br>
-
-日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更してください．<br>
+<!-- ''MacTeX で配布されている Ghostscript では LaTeXiT で日本語が表示されないようです．''~ -->
+<!-- 日本語が表示されない場合は [[Ghostscript.app - マスクメロン:http://www.muskmelon.jp/?page_id=75]] で配布されている Ghostscript に変更してください．~ -->
 
 ### プログラム {#xab14b42}
 
