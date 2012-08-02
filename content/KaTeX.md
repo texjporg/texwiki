@@ -979,6 +979,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 ## 関連リンク {#h4cf9c4e}
 
 - [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
+- [katex のキーワードハイライト ($~$) を変更する](http://d.hatena.ne.jp/manthano/20120801/1343829179)
 - [xyzzyとkatex](http://dai-ao.seesaa.net/article/274397892.html)
 - [dviout](http://airhoo.hatenablog.com/entry/2012/05/07/050123)
 - [xyzzyみたいな](http://nahxnahx.blogspot.jp/2012/03/xyzzy.html)
