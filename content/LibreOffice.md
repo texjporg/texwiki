@@ -62,6 +62,7 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 ## LibreOffice/Apache OpenOffice Calc {#te4274fb}
 
 - [Calc2LaTeX](http://calc2latex.sourceforge.net/indexj.html)
+    - [LibreOffice Calcの表をTeX形式で出力](http://hnsn1202.hateblo.jp/entry/2012/08/06/204352)
     - [USBメモリ活用講座【付録・Calc2LaTeX使用法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/c2ltx.shtml)
 
 ## LibreOffice/Apache OpenOffice Impress {#ha3da53a}
