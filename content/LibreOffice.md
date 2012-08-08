@@ -28,6 +28,7 @@ LibreOffice はフリーのオフィススイートです．
 - [LibreOffice Portable](http://portableapps.com/apps/office/libreoffice_portable)
     - [Index of /libreoffice/portable](http://download.documentfoundation.org/libreoffice/portable/)
 - [LibreOffice repositories](http://cgit.freedesktop.org/libreoffice)
+- [窓の杜 - LibreOffice](http://www.forest.impress.co.jp/lib/offc/document/offcsuite/libreoffice.html)
 
 ## Apache OpenOffice (AOO) とは {#q7dc6482}
 
@@ -42,6 +43,7 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
     - [OpenOfficeProposal](http://wiki.apache.org/incubator/OpenOfficeProposal)
     - [Apache OpenOffice Community](https://cwiki.apache.org/OOOUSERS/wiki-home.html)
 - [Apache OpenOffice 日本語プロジェクト](http://ja.openoffice.org/)
+- [窓の杜 - Apache OpenOffice](http://www.forest.impress.co.jp/lib/offc/document/offcsuite/openoffice.html)
 - [OpenOffice.org 日本ユーザー会](http://oooug.jp/)
     - [OpenOffice.org 日本ユーザー会 出版物リスト](http://pub.oooug.jp/)
         - [OpenOffice.orgユーザーのためのLibreOffice移行ガイド](http://pub.oooug.jp/guide/migration/0_0_0/)
