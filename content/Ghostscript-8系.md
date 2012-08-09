@@ -47,7 +47,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 - Ghostscript のインストーラ
 
-- [GPL Ghostscript 9.xx](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs905w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
+- [GPL Ghostscript 9.xx](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs906w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
     - [GNU Ghostscript 7.07](</Ghostscript 7.07/>) と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分
 
 > - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
@@ -77,9 +77,9 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 #### インストール方法 {#b84b5a69}
 
-- gs905w32full-gpl.exe を実行します。
-    - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.05”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.05”
-    - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.05”に変更します。
+- gs906w32full-gpl.exe を実行します。
+    - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.06”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.06”
+    - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.06”に変更します。
         <!-- Ghostscript のためだけに C:\usr\local を作るのはばかげてますし、Cygwin はともかくネイティブの Windows 環境で、UNIX のディレクトリ構造に似せても特に利点がないのでコメントアウトしておきます。 -->
         <!-- - -UNIX 互換 OS での Ghostscript のディレクトリ構造 -->
         <!-- (/usr/share/ghostscript/) に似せたいのならば， -->
@@ -88,7 +88,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.05 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです．ただし Windows 7/Vista では C:\ にファイルをコピー・移動する場合は管理者権限が必要になるので，プログラムをインストールする場合は C:\ にフォルダーを作成してインストールするのがおすすめです．ただし，日本語等の非 ascii 文字を含むフォルダにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs?.?? というフォルダにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs?.?? というフォルダ構造を仮定していることが多いということは理解しておいてください．
+\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.06 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです．ただし Windows 7/Vista では C:\ にファイルをコピー・移動する場合は管理者権限が必要になるので，プログラムをインストールする場合は C:\ にフォルダーを作成してインストールするのがおすすめです．ただし，日本語等の非 ascii 文字を含むフォルダにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs?.?? というフォルダにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs?.?? というフォルダ構造を仮定していることが多いということは理解しておいてください．
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -122,22 +122,22 @@ ASCII 文字だけで設定します。
 
 ```
 
-Ghostscript 9.05 を C:\Program Files\gs\gs9.05 にインストールしたのなら
+Ghostscript 9.06 を C:\Program Files\gs\gs9.06 にインストールしたのなら
 
 ```
-;C:\Program Files\gs\gs9.05\bin;C:\Program Files\gs\gs9.05\lib
+;C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib
 ```
 
-Ghostscript 9.05 を C:\Program Files (x86)\gs\gs9.05 にインストールしたのなら
+Ghostscript 9.06 を C:\Program Files (x86)\gs\gs9.06 にインストールしたのなら
 
 ```
-;C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib
+;C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib
 ```
 
-Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
+Ghostscript 9.06 を C:\gs\gs9.06 にインストールしたのなら
 
 ```
-;C:\gs\gs9.05\bin;C:\gs\gs9.05\lib
+;C:\gs\gs9.06\bin;C:\gs\gs9.06\lib
 ```
 
 を環境変数 PATH に追加します。 <!-- C:\usr\local\share\gs\ にインストールしたのなら --> <!-- ;C:\usr\local\share\gs\gs9.??\bin;C:\usr\local\share\gs\gs9.??\lib --> <!-- を環境変数 PATH に追加します。 -->
@@ -151,7 +151,7 @@ Ghostscript 9.05 を C:\gs\gs9.05 にインストールしたのなら
 日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．これを他の CID font や TrueType font に代替させることを主な目的とした 設定ファイルが cidfmap です．角藤版 Ghoststscript では，gs\gs?.??\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンドプロンプトから実行すればそれがなされます．
 
 ```
-gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.05/lib/cidfmap c:/gs/gs9.05/lib/mkcidfm.ps
+gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.06/lib/cidfmap c:/gs/gs9.06/lib/mkcidfm.ps
 ```
 
 パス名部分に関しては各自の環境に合わせて書き直して下さい．また，c:/windows/fonts というのは Windows の システムフォントフォルダのことです．
@@ -863,15 +863,15 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 - [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
 - [http://code.google.com/p/ghostscript/downloads/list](http://code.google.com/p/ghostscript/downloads/list)
 
-などから ghostscript-9.05.tar.bz2 を入手します。
+などから ghostscript-9.06.tar.bz2 を入手します。
 
 ### インストール {#u4ad1919}
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ tar jxvf ghostscript-9.05.tar.bz2
-$ cd ghostscript-9.05
+$ tar jxvf ghostscript-9.06.tar.bz2
+$ cd ghostscript-9.06
 $ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
@@ -887,7 +887,7 @@ $ sudo make install
 > pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
 > ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
 
-また，/usr/local/share/ghostscript/9.05/ の下に
+また，/usr/local/share/ghostscript/9.06/ の下に
 たくさんのものが入ります。/usr/local/man/man1/ と
 /usr/local/man/de/man1/ の中にもマニュアル類が入ります。
 
@@ -895,7 +895,7 @@ $ sudo make install
 
 ```
 
-和文については，cidfmap (/usr/local/share/ghostscript/9.05/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
+和文については，cidfmap (/usr/local/share/ghostscript/9.06/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
 
 ```
 /Ryumin-Light      /HiraMinProN-W3   ;
@@ -904,7 +904,7 @@ $ sudo make install
 /HeiseiKakuGo-W5   /GothicBBB-Medium ;
 ```
 
-あとは /usr/local/share/ghostscript/9.05/Resource/CIDFont/ の
+あとは /usr/local/share/ghostscript/9.06/Resource/CIDFont/ の
 中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
 名前でシンボリックリンクを作っておきます。例えば MacOS X なら
 
@@ -949,7 +949,7 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
 ```
 
-さらに，/usr/local/share/ghostscript/9.05/Resource/Font/ の中に
+さらに，/usr/local/share/ghostscript/9.06/Resource/Font/ の中に
 例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
 
 ```
