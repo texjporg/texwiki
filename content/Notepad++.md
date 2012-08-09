@@ -216,7 +216,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・convbkmk を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
-> <tr><td>1</td><td>PSからPDFへ変換</td><td>call "C:\gs\gs9.05\lib\ps2pdf.bat"</td><td>"%MTeXnpp_CFName%.ps" "%MTeXnpp_CFName%.pdf"</td></tr>
+> <tr><td>1</td><td>PSからPDFへ変換</td><td>call "C:\gs\gs9.06\lib\ps2pdf.bat"</td><td>"%MTeXnpp_CFName%.ps" "%MTeXnpp_CFName%.pdf"</td></tr>
 > <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSを表示 (SumatraPDF の場合)</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.ps"</td></tr>
