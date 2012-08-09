@@ -316,22 +316,22 @@ $TEXMF/ls-R ファイルが削除されます。
 <!--  -->
 <!-- PATH の値は Destination Folder (インストール先のフォルダー) によって変わるので，インストール先のフォルダーに合わせて値を変えてください． -->
 <!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.05 にした場合 -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.06 にした場合 -->
 <!-- > -->
 <!-- |変数名|変数値|h -->
-<!-- |PATH|C:\Program Files\gs\gs9.05\bin;C:\Program Files\gs\gs9.05\lib| -->
+<!-- |PATH|C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib| -->
 <!-- < -->
 <!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files (x86)\gs\gs9.05 にした場合 -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files (x86)\gs\gs9.06 にした場合 -->
 <!-- > -->
 <!-- |変数名|変数値|h -->
-<!-- |PATH|C:\Program Files (x86)\gs\gs9.05\bin;C:\Program Files (x86)\gs\gs9.05\lib| -->
+<!-- |PATH|C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib| -->
 <!-- < -->
 <!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\gs\gs9.05 にした場合 -->
+<!-- -Destination Folder (インストール先のフォルダー) を C:\gs\gs9.06 にした場合 -->
 <!-- > -->
 <!-- |変数名|変数値|h -->
-<!-- |PATH|C:\gs\gs9.05\bin;C:\gs\gs9.05\lib| -->
+<!-- |PATH|C:\gs\gs9.06\bin;C:\gs\gs9.06\lib| -->
 <!-- < -->
 <!--  -->
 
@@ -419,14 +419,14 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.05\bin\gsdll32.dll) に修正します．
+を Ghostscript の dll ファイル (C:\gs\gs9.06\bin\gsdll32.dll) に修正します．
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.05/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/gs/gs9.06/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
