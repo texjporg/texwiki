@@ -179,17 +179,17 @@ otf パッケージは複数インストールしてはいけません。<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☑gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
-　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　GSview<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　130MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　23.2MB　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　5.4MB　　　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　354KB　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　206KB　　 　　　∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　　　 　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　　　　∣<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☑gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　　　∣<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　130MB　　　　GSview<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　23.2MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　5.4MB　　　　　　∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　354KB　　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　206KB　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　 　　　 ∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　 　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　∣<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　242KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
