@@ -1302,6 +1302,7 @@ Live preview for TeXShop
 ## 関連リンク {#qb1b8010}
 
 - [TeXShop入れてみた](http://milkyway.holy.jp/?p=143)
+- [TeXShop・TeXworksのインストール方法 -Mac OSX Lion-](http://www.monochrome-photo.info/?p=3406)
 - [latexme インストール と TeXShop の設定](http://fbncc112358.blogspot.jp/2012/04/latexme-texshop.html)
 - [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
