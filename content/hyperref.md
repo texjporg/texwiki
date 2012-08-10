@@ -354,6 +354,7 @@ url及びnolinkurl とは hyperref.styを読み込むことによって使用可
 - 改行処理が必要な場合にurl文字列を上手に途中で分割する
 - hyperrefパッケージ（urlパッケージではなく）のurlコマンドは処理が上手ではないらしい．（hyperrefのオプション指定 pdftex/dvipdfm/dvipdfmx/xetex/dvips 等に依存するおそれがある）
 - LaTeX 向け UTF-8 前提 URL エンコード・ツール → [URL encode in LaTeX](http://nox-insomniae.ddo.jp/insomnia/2010/12/url-encode-in-latex.html) を参照．
+- マクロ展開されることを抑止したい場合は \protect\url{url文字列} とする．例えば \caption{} の中で必要．
 
 #### pdfファイル作成 {#ib05c931}
 
