@@ -33,7 +33,9 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)
     - [ATP Requirements](http://atp-vim.sourceforge.net/requirements.shtml)
 - [Automatic LaTex Plugin for Vim at SourceForge](http://sourceforge.net/projects/atp-vim/)
-    - [コミットログ](http://atp-vim.svn.sourceforge.net/viewvc/atp-vim/trunk/?view=log)
+- [SourceForge - atp-vim/atp-vim/summary](http://atp-vim.git.sourceforge.net/git/gitweb.cgi?p=atp-vim/atp-vim)
+    <!-- - -[[コミットログ:http://atp-vim.svn.sourceforge.net/viewvc/atp-vim/trunk/?view=log]] -->
+
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
 - [vim-scripts/AutomaticLaTexPlugin - GitHub](https://github.com/vim-scripts/AutomaticLaTeXPlugin)
 
