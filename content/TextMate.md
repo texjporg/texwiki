@@ -9,6 +9,8 @@ pukiwiki: "TextMate"
 
 ## [TextMate](http://macromates.com/) {#p6e57fff}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## TextMate について {#j770ed33}
 
 TextMate は OS X で動作するテキストエディタです．
@@ -17,12 +19,17 @@ TextMate は OS X で動作するテキストエディタです．
 - [textmate/textmate · GitHub](https://github.com/textmate/textmate)
     - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 
+## Pull Requests {#c84af904}
+
+- [Pull Requests](https://github.com/textmate/textmate/pulls)
+    - [Fix CJK input.](https://github.com/textmate/textmate/pull/115) → [Another CJK fix](https://github.com/textmate/textmate/commit/bf12bdd3f25eebe9324b591d768d5b957d7c20e4)
+
 ## 不具合 {#r6935eb2}
 
-- [Browse Issues](https://github.com/textmate/textmate/issues)
-    - [problem with input japanese](https://github.com/textmate/textmate/issues/44)
+- [Issues](https://github.com/textmate/textmate/issues)
+    - [problem with input japanese](https://github.com/textmate/textmate/issues/44) → Closed
 
-## 日本語入力 {#kf83bc5c}
+## tmplugin {#kf83bc5c}
 
 - [hetima.com](http://hetima.com/) ([twitter](http://twitter.com/hetima))
     - [TextMate stuff - hetima.com](http://hetima.com/textmate/)
