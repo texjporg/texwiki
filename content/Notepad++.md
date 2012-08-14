@@ -1124,6 +1124,7 @@ C:\npp\unicode\notepad++.exe^s "%s" -n%d
 - [DDE Command Line Tools](http://www.robvanderwoude.com/ddecommandline.php)
     - [CMCDDE](http://www.robvanderwoude.com/ddecommandline.php#CMCDDE)
 - [SourceForge.net: Notepad++ Plugins: Topic: con_saveto &lt;file&gt; : &lt;encoding&gt;](http://sourceforge.net/projects/npp-plugins/forums/forum/672146/topic/3914253)
+- [【エディタ】Notepad++のインストール後の設定とか、その辺。](http://osyamonnnnn.dispatch-site.com/wordpress/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/notepad_plusplus/)
 - [Notepad++のNppExecの出力からタグジャンプする設定方法](http://d.hatena.ne.jp/Koonies/20110504/NppExec_TagJump)
 - [The comment style in TEX language](http://sourceforge.net/projects/notepad-plus/forums/forum/331754/topic/4424008)
 - [A about TEX Project manage](http://sourceforge.net/projects/notepad-plus/forums/forum/331753/topic/3965137)
