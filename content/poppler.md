@@ -21,7 +21,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gumm
 
 ### リリース情報 {#ha3b28ab}
 
-2012-07-10 poppler 0.20.2<br>
+2012-08-10 poppler 0.20.3<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -328,9 +328,9 @@ fontconfig のインストールでエラーが発生する場合は [fontconfig
 <!-- $ ./configure - -prefix=/mingw - -enable-libxml2 -->
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.9.0.tar.gz
-$ tar zxvf fontconfig-2.9.0.tar.gz
-$ pushd fontconfig-2.9.0
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.0.tar.gz
+$ tar zxvf fontconfig-2.10.0.tar.gz
+$ pushd fontconfig-2.10.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -529,9 +529,9 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.26.0.tar.bz2
-$ tar jxvf curl-7.26.0.tar.bz2
-$ pushd curl-7.26.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.27.0.tar.bz2
+$ tar jxvf curl-7.27.0.tar.bz2
+$ pushd curl-7.27.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -550,9 +550,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFON
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.2.tar.gz
-$ tar zxvf poppler-0.20.2.tar.gz
-$ pushd poppler-0.20.2
+$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.3.tar.gz
+$ tar zxvf poppler-0.20.3.tar.gz
+$ pushd poppler-0.20.3
 $ mkdir build
 $ pushd build
 ```
