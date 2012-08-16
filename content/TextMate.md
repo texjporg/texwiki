@@ -33,7 +33,8 @@ TextMate は OS X で動作するテキストエディタです．
 
 - [hetima.com](http://hetima.com/) ([twitter](http://twitter.com/hetima))
     - [TextMate stuff - hetima.com](http://hetima.com/textmate/)
-- [TextMate2IMFix](https://github.com/hetima/TextMate2IMFix) TextMate 2 の日本語入力を改善する tmplugin
+- [TextMate2IMFix](https://github.com/hetima/TextMate2IMFix)
+    - TextMate 2 の日本語入力を改善する tmplugin．release 9278 で，日本語入力の問題は修正されました．
     - [Downloads · hetima/TextMate2IMFix · GitHub](https://github.com/hetima/TextMate2IMFix/downloads)
 
 ## TextMate で LaTeX {#s39b8563}
@@ -47,6 +48,7 @@ TextMate は OS X で動作するテキストエディタです．
 - [context.tmbundle](https://github.com/pgundlach)
 - [TextMate ConTeXt Bundle](https://bitbucket.org/bernhard/textmate-context-bundle)
 - [TextMate LaTeX Extension Bundle](http://www.governatori.net/TextMate/)
+- [TextMateでLaTeX](http://d.hatena.ne.jp/eggxile/20091217/1261060064)
 
 ## 関連リンク {#ue5b58cc}
 
@@ -56,4 +58,6 @@ TextMate は OS X で動作するテキストエディタです．
 - [TextMate2がオープンソース化](http://blog.is0.me/archives/155)
 - [Mac OS X向けテキストエディタ「TextMate 2」、オープンソース化される](http://sourceforge.jp/magazine/12/08/10/0423208)
 - [TextMate 2のオープンソース化](http://ystea.org/blog/2012/08/textmate-2%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%8C%96/)
+- [フリーのプログラミング用テキストエディタTextMate2](http://d.hatena.ne.jp/hjym_u/20120815/1345035066)
+- [TextMateがオープンソースになったのでMountain Lionに入れてみた](http://daipresents.com/2012/textmate%E3%81%8C%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7mountain-lion%E3%81%AB%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF/)
 - [My next text editor](http://www.marco.org/2012/08/10/next-text-editor)
