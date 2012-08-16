@@ -14,6 +14,8 @@ pukiwiki: "Linux/openSUSE"
 
 ## TeX Live {#n3c200b7}
 
+- [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+
 ### 12.1 {#vb63b852}
 
 - [openSUSE 12.1 インストール tips (素人の視点から)](http://yukiminamoto.cocolog-nifty.com/blog/2012/05/opensuse-121-ti.html)
