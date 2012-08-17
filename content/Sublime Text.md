@@ -34,6 +34,11 @@ Sublime Text は Windows, OS X, Linux で動作するテキストエディタで
 - [Sublime Text 2のカスタマイズ](http://ready-study-go.blogspot.com/2011/09/sublime-text-2.html)
 - [Soda Theme](https://github.com/buymeasoda/soda-theme)
 
+## Shift_JIS, EUC-JP 対応 {#bc9dcabf}
+
+- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
+    - For editing and saving files encoded in GBK, BIG5, EUC-KR, EUC-JP, Shift_JIS, etc.
+
 ## [LaTeXTools (LaTeX Plugin for Sublime Text 2)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
 
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
