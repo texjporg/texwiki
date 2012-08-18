@@ -652,6 +652,7 @@ C:.
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
+- [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
