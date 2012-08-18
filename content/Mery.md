@@ -70,6 +70,8 @@ LaTeX 文書で使用するエンコードを指定します．
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐タブの幅を調節する(J)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
+　　　　カスタムファイルフィルタ(F):<br>
+　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins><br>
 
 ***
 
