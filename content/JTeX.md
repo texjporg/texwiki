@@ -22,6 +22,8 @@ JTeX は OS X で動作する TeX 総合環境です．
 JTeXEdit は OS X で動作する TeX 用エディタです．<br>
 JTeX に含まれています．<br>
 
+- [MathTime Pro 2 と JTeXEdit](http://west.math.cst.nihon-u.ac.jp/~nisikawa/blog/?p=13)
+
 ### PictPrinter {#s727dea0}
 
 PictPrinter は OS X で動作する DVI プレビューアです．<br>
