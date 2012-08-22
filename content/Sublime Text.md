@@ -34,6 +34,11 @@ Sublime Text は Windows, OS X, Linux で動作するテキストエディタで
 - [Sublime Text 2のカスタマイズ](http://ready-study-go.blogspot.com/2011/09/sublime-text-2.html)
 - [Soda Theme](https://github.com/buymeasoda/soda-theme)
 
+### Linux {#r2805e10}
+
+- [Sublime Text 2のプラグインOpen With Vimを書いてみた](http://d.hatena.ne.jp/itiut/20111229/1325138744)
+    <!-- -[[Sublime Text 2のプラグインOpen With Vimを書いてみた:http://d.hatena.ne.jp/itiu/20111229/1325138744]] -->
+
 ## Shift_JIS, EUC-JP 対応 {#bc9dcabf}
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
