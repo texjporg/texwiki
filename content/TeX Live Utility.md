@@ -17,7 +17,7 @@ pukiwiki: "TeX Live Utility"
 
 ### リリース情報 {#d0019337}
 
-2012-06-30 TeX Live Utility 1.01
+2012-08-20 TeX Live Utility 1.03
 
 ### TeX Live Utility とは {#n3457ddb}
 
