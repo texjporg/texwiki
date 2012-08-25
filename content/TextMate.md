@@ -9,7 +9,11 @@ pukiwiki: "TextMate"
 
 ## [TextMate](http://macromates.com/) {#p6e57fff}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/TextmateIcon.png/240px-TextmateIcon.png" alt="TextMate" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+<br>
 
 ## TextMate について {#j770ed33}
 
@@ -18,6 +22,7 @@ TextMate は OS X で動作するテキストエディタです．
 - [TextMate](http://macromates.com/)
 - [textmate/textmate · GitHub](https://github.com/textmate/textmate)
     - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
+- [trunk/dports/editors/textmate2/Portfile](https://trac.macports.org/browser/trunk/dports/editors/textmate2/Portfile)
 
 ## Pull Requests {#c84af904}
 
