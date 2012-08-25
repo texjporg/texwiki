@@ -211,6 +211,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[組版メモ 2](http://x19290.appspot.com/pbej-tmp/typeset2.html)
+: 2012-08-22
+
 \[[Windows\] TeX Live 2012 インストール](http://d.hatena.ne.jp/hidehara/20120724/1343147231)
 : 2012-07-24
 
