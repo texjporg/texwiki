@@ -68,6 +68,7 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 ## LibreOffice/Apache OpenOffice Impress {#ha3da53a}
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
+    - [Ubuntu11.10 LibreOfficeでTeX文法で数式を書く](http://d.hatena.ne.jp/cmphys/20120126/1327584371)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
 - [OOoLatex](http://ooolatex.sourceforge.net/)
 
