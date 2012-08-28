@@ -37,32 +37,20 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-### Windows, Linux, Solaris {#h067ff28}
+### Java™ Platform, Standard Edition (JRE &amp; JDK) {#x644af68}
 
 - [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
     <!-- - -[[ミラーサイト:http://www.oracle.com/technetwork/jp/java/javase/downloads/]] -->
+    <!-- -[[MacでOracle JDK 7 (Java 7) を試す:http://toggtc.hatenablog.com/entry/2012/04/28/112031]] -->
 
-から JRE (Java でプログラミングをしたい人は JDK) をダウンロードしてインストールします．
+- [http://jdk7.java.net/download.html](http://jdk7.java.net/download.html)
+
+から JRE をダウンロードしてインストールします．<br>
+Java でプログラミングをしたい人は JDK をダウンロードしてインストールします．<br>
 
 - [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
 
 もあります．
-
-### OS X {#q0e0ab59}
-
-#### Java for OS X {#y4154449}
-
-- [Java for OS X 2012-004](http://support.apple.com/kb/DL1515)
-- [Java for Mac OS X 10.6 Update 9](http://support.apple.com/kb/DL1550)
-
-#### Oracle JRE &amp; JDK {#x644af68}
-
-- [Oracle Java 7u6 Mac OS X Port Developer Preview Release &mdash; Java.net](http://jdk7.java.net/macportpreview/)
-- [MacでOracle JDK 7 (Java 7) を試す](http://toggtc.hatenablog.com/entry/2012/04/28/112031)
-
-#### OpenJDK {#n03d5e54}
-
-- [OpenJDK 7 and 8 for OS/X Snow and Lion](http://code.google.com/p/openjdk-osx-build/)
 
 ## Eclipse のインストール {#r143ba66}
 
@@ -103,3 +91,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - Eclipse Wiki - [http://eclipsewiki.net/eclipse/](http://eclipsewiki.net/eclipse/)
 - [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
+- [OpenJDK](http://openjdk.java.net/)
+- [OpenJDK 7 and 8 for OS/X Snow, Lion and Mountain Lion](http://code.google.com/p/openjdk-osx-build/)
+    <!-- -[[Java for OS X 2012-004:http://support.apple.com/kb/DL1515]] -->
+    <!-- -[[Java for Mac OS X 10.6 Update 9:http://support.apple.com/kb/DL1550]] -->
