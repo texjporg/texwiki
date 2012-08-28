@@ -43,7 +43,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
     <!-- - -[[ミラーサイト:http://www.oracle.com/technetwork/jp/java/javase/downloads/]] -->
     <!-- -[[MacでOracle JDK 7 (Java 7) を試す:http://toggtc.hatenablog.com/entry/2012/04/28/112031]] -->
 
-- [http://jdk7.java.net/download.html](http://jdk7.java.net/download.html)
+- [Java Platform, Standard Edition 7 Developer Preview Releases &mdash; Java.net](http://jdk7.java.net/download.html)
 
 から JRE をダウンロードしてインストールします．<br>
 Java でプログラミングをしたい人は JDK をダウンロードしてインストールします．<br>
