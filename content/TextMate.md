@@ -13,16 +13,20 @@ pukiwiki: "TextMate"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-<br>
-
 ## TextMate について {#j770ed33}
 
-TextMate は OS X で動作するテキストエディタです．
+TextMate は OS X で動作するテキストエディタです．<br>
+TextMate 2 はフリーソフトウェアです． (TextMate 1 はシェアウェア)<br>
 
 - [TextMate](http://macromates.com/)
 - [textmate/textmate · GitHub](https://github.com/textmate/textmate)
     - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 - [trunk/dports/editors/textmate2/Portfile](https://trac.macports.org/browser/trunk/dports/editors/textmate2/Portfile)
+
+## TextMate 2 for Snow Leopard {#g205429c}
+
+- [Textmate2 for Snow Leopard](http://macbookblack.blogspot.jp/2012/08/textmate2-for-snow-leopard.html)
+- [Textmate2 for Snow Leopard](http://blog.goo.ne.jp/typer_k20a/e/4053e2f2004f5d1cec8dfd9ed763c29a)
 
 ## Pull Requests {#c84af904}
 
@@ -57,6 +61,8 @@ TextMate は OS X で動作するテキストエディタです．
 
 ## 関連リンク {#ue5b58cc}
 
+- [Let us build a TextMate](http://chajka.from.tv/osx/textmate.html)
+- [TextMate 2をソースからコンパイルしてみる](http://blog.f13.jp/post/29942351173/textmate-2)
 - \[[Mac\] オープンソース化なテキストエディタ「TextMate 2」をビルドした手順メモ](http://tools4hack.santalab.me/howto-oss-textmate-build.html)
 - [TextmateがOSS化されました](http://d.hatena.ne.jp/rochefort/20120810/p1)
 - [TextMateがOSS化した件について](http://takkii.hatenablog.com/entry/2012/08/11/113939)
