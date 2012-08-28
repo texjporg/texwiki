@@ -123,18 +123,21 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 #### FTP のみ {#FTP-only}
 
+- [文教大学湘南キャンパス](http://open.shonan.bunkyo.ac.jp/)
+    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/)
+
 - [名古屋大学](http://www.nagoya-u.ac.jp/) [工学部](http://www.engg.nagoya-u.ac.jp/) [電気電子・情報工学科（情報工学コース）](http://www.nuie.nagoya-u.ac.jp/)[ICE (Information &amp; Computer Engineering)](http://www.ice.nuie.nagoya-u.ac.jp/)
     - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/)
         <!-- ftp.ice.nuie.nagoya-u.ac.jp = ftp.nuie.nagoya-u.ac.jp -->
 
-- [北海道大学](http://www.hokudai.ac.jp/) [理学部](http://www.sci.hokudai.ac.jp/) [地球科学科](http://www.sci.hokudai.ac.jp/grp/epub/ep-web/)
-    [FTP (green)](http://www.ep.sci.hokudai.ac.jp/~epftp/)
-    - [ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/](ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/)
-        <!-- ftp.ep.sci.hokudai.ac.jp = green.ep.sci.hokudai.ac.jp -->
+<!-- -[[北海道大学:http://www.hokudai.ac.jp/]] [[理学部:http://www.sci.hokudai.ac.jp/]] [[地球科学科:http://www.sci.hokudai.ac.jp/grp/epub/ep-web/]] -->
+<!-- [[FTP (green):http://www.ep.sci.hokudai.ac.jp/~epftp/]] -->
+<!-- - -ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/ -->
+<!-- ftp.ep.sci.hokudai.ac.jp = green.ep.sci.hokudai.ac.jp -->
 
-- [筑波大学](http://www.tsukuba.ac.jp/) [大学院システム情報工学研究科](http://www.sie.tsukuba.ac.jp/) [コンピュータネットワーク研究室](http://www.netlab.cs.tsukuba.ac.jp/)
-    [FTP サービス](http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html)
-    - [ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/](ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/)
+<!-- -[[筑波大学:http://www.tsukuba.ac.jp/]] [[大学院システム情報工学研究科:http://www.sie.tsukuba.ac.jp/]] [[コンピュータネットワーク研究室:http://www.netlab.cs.tsukuba.ac.jp/]] -->
+<!-- [[FTP サービス:http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html]] -->
+<!-- - -ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/ -->
 
 ### 関連リンク {#wc81d3dd}
 
