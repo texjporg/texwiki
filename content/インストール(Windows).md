@@ -298,7 +298,7 @@ $TEXMF/ls-R ファイルが削除されます。
 
 ## Ghostscript のインストール {#zd901fa9}
 
-<strong>Ghostscript 8.71 より前の Ver. には脆弱性がありますので，最新版に更新してください．</strong>
+<strong>Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので，最新版に更新してください．</strong>
 
 [Ghostscript](/Ghostscript/) は [PostScript](/PostScript/) のインタープリタ（ソフトウェア RIP）です。EPS
 形式の図を使う際や，Type 1 形式のフォントを
