@@ -23,8 +23,10 @@ pukiwiki: "Ghostscript-8系"
 
 ### お知らせ {#de455d8c}
 
-<strong>Ghostscript 8.71 より前の Ver. には[脆弱性](http://japan.cnet.com/news/business/story/0,3800104746,20418937,00.htm)がありますので、最新版に更新してください。</strong>
+<strong>Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください。</strong>
 
+- [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
+- [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
 - [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
 
 Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
