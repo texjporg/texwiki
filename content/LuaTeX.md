@@ -35,8 +35,7 @@ LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luate
 LuaTeX-ja は
 
 - [TeX Live](</TeX Live/>) 2012, 2011
-    - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
-        - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+    - [TeX Live - TeX Wiki#LuaTeX-ja](</TeX Live/#d5b40bf5>)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/)
     - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
