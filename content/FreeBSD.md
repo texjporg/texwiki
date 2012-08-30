@@ -9,6 +9,9 @@ pukiwiki: "FreeBSD"
 
 ## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
+- [About FreeBSD Ports](http://www.freebsd.org/ports/)
+- [FreshPorts -- The Place For Ports](http://www.freshports.org/)
+
 ### TeX Live {#w7ff21ac}
 
 [TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/), [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) を参照してください．
@@ -19,47 +22,24 @@ pukiwiki: "FreeBSD"
 - [TeXLive on FreeBSD (portsのインストール編)](http://d.hatena.ne.jp/msll/20120120/1327058483)
 - [tlptexliveリポジトリとfreebsd_texlive](http://d.hatena.ne.jp/msll/20120118/1326888303)
 
-### TeX関連のPort {#y07bcd98}
+#### TeX Live 関連 {#p4fe1144}
 
-<strong>現在Ports CollectionのteTeX関連はteTeX 3.0ベースのものに置き換わっています．</strong>
+- [print/texlive-core](http://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
+- [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 
-<strong>この文書の内容は置き換わる前のものなので，多少の食い違いがあるかもしれません．</strong>
-
-日本語 TeX 関連は Ports Collection に収められています．
-
-- [About FreeBSD Ports](http://www.freebsd.org/ports/)
-- [FreshPorts -- The Place For Ports](http://www.freshports.org/)
+### teTeX {#y07bcd98}
 
 <!-- 歴史的事情により，teTeXベースのものに完全には置き換わっていません．主要なものに関してはteTeXベースのPortが用意されています． -->
 
-#### teTeX関連のPort {#c779326f}
+#### teTeX 関連 {#c779326f}
 
-- [print/teTeX-base](http://www.freebsd.org/cgi/cvsweb.cgi/ports/print/teTeX-base/)
-- [japanese/ptex-tetex](http://www.freebsd.org/cgi/cvsweb.cgi/ports/japanese/ptex-tetex/)
-- [japanese/dvipsk](http://www.freebsd.org/cgi/cvsweb.cgi/ports/japanese/dvipsk)
-- [japanese/xdvik](http://www.freebsd.org/cgi/cvsweb.cgi/ports/japanese/xdvik)
-- [japanese/xdvik-vflib](http://www.freebsd.org/cgi/cvsweb.cgi/ports/japanese/xdvik-vflib)
-- [japanese/texfamily](http://www.freebsd.org/cgi/cvsweb.cgi/ports/japanese/texfamily)
+- [print/teTeX-base](http://svnweb.freebsd.org/ports/head/print/teTeX-base/)
+- [japanese/ptex](http://svnweb.freebsd.org/ports/head/japanese/ptex/)
+- [japanese/dvipsk](http://svnweb.freebsd.org/ports/head/japanese/dvipsk/)
+- [japanese/xdvik](http://svnweb.freebsd.org/ports/head/japanese/xdvik/)
+- [japanese/texfamily](http://svnweb.freebsd.org/ports/head/japanese/texfamily/)
 
-\[[FreeBSD-users-jp 80203\]](http://home.jp.freebsd.org/cgi-bin/showmail/FreeBSD-users-jp/80203)によると，
-次のものがteTeX環境と共存できないそうです．
-
-japanese/ptex
-: ASCII pTeX 本体 (バイナリ部分)
-
-japanese/ptex-base
-: ASCII pTeX 本体 (texmf tree 部分)
-
-japanese/dvipsk-vflib
-: dvips 5.78a + jpatch 1.4 (VFlib support)
-
-また，
-次のものが未整備のようです．
-
-- japanese/platex209-\*
-- japanese/dvi\*
-
-### インストール {#e765b64c}
+#### インストール {#e765b64c}
 
 手っ取り早く構築するには，
 
