@@ -23,8 +23,7 @@ Version 1.9 から サブフォントに対応しているので、サブフォ�
     <!-- -http://preview-latex.sourceforge.net/ -->
     <!-- - -http://sourceforge.net/projects/preview-latex/ -->
 
-- \[[texlive\] Index of /trunk/Build/source/texk/dvipng](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/?view=log)
+- [TeX Live - TeX Wiki#dvipng](</TeX Live/#ob19804f>)
 
 mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。
 
