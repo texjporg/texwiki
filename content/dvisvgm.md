@@ -12,5 +12,4 @@ pukiwiki: "dvisvgm"
 dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェアです．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
-- \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
+- [TeX Live - TeX Wiki#dvisvgm](</TeX Live/#s8483053>)
