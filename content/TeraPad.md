@@ -52,10 +52,10 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
   \else
     \documentclass[12pt]{bxjsarticle}
     \usepackage[xetex]{hyperref}
-    \usepackage{zxjatype}
-    \setjamainfont{MS Mincho}
-    \setjasansfont{MS Gothic}
-    \setjamonofont{MS Gothic}
+    \usepackage{xeCJK}
+    \setCJKmainfont{MS Mincho}
+    \setCJKsansfont{MS Gothic}
+    \setCJKmonofont{MS Gothic}
     \usepackage{xltxtra}
   \fi
 \else
@@ -656,7 +656,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 
 #### 簡単なテスト {#rf056171}
 
-1. [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html), [ZXjatype パッケージ](http://zrbabbler.sp.land.to/zxjatype.html) をインストールします．
+1. [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html), [xeCJK パッケージ](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html) をインストールします．
 1. 「TeraPad とは」 に書かれている手打ちスクリーンショットの文書をコピーして TeraPad に貼り付け，UTF-8N で terapad.tex という名前で保存します．
 1. Shift + Alt + I を押すと PDF ファイルが作成されます．
 1. もう一度 Shift + Alt + I を押すと，今度はしおり付きの PDF ファイルが作成されます．[hyperref](/hyperref/) パッケージを使って，しおりを作成するためには2回コンパイルが必要です．
