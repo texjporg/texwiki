@@ -119,9 +119,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.8.tar.gz
-$ tar zxvf cmake-2.8.8.tar.gz
-$ pushd cmake-2.8.8
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.9.tar.gz
+$ tar zxvf cmake-2.8.9.tar.gz
+$ pushd cmake-2.8.9
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -320,29 +320,18 @@ $ popd
 
 - [fontconfig](http://www.fontconfig.org/) をインストールします．
 
-fontconfig のインストールでエラーが発生する場合は [fontconfig のインストールについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=732) を参照してください．
-
-<!-- $ curl -R -L -O http://cgit.freedesktop.org/fontconfig/snapshot/fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177.tar.gz -->
-<!-- $ tar zxvf fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177.tar.gz -->
-<!-- $ pushd fontconfig-2d9ad5434b1d3afa2aa3d8a77af0bce940c69177 -->
-<!-- $ ./configure - -prefix=/mingw - -enable-libxml2 -->
+<!-- fontconfig のインストールでエラーが発生する場合は [[fontconfig のインストールについて:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=732]] を参照してください． -->
+<!--  -->
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.0.tar.gz
-$ tar zxvf fontconfig-2.10.0.tar.gz
-$ pushd fontconfig-2.10.0
-$ ./configure --prefix=/mingw
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.1.tar.gz
+$ tar zxvf fontconfig-2.10.1.tar.gz
+$ pushd fontconfig-2.10.1
+$ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
 ```
 
-<!--  -->
-<!-- src/fcstat.c:190: undefined reference to `scandir' -->
-<!-- src/fcstat.c:215: undefined reference to `lstat' -->
-<!--  -->
-<!-- -[[fontconfig-2.9.91: undefined symbols scandir lstat on MinGW:http://www.spinics.net/lists/font-config/msg04097.html]] -->
-<!--  -->
-<!-- [[fcstat.c:http://cgit.freedesktop.org/fontconfig/tree/src/fcstat.c]] の最新版を取得します． -->
 <!--  -->
 <!-- /mingw/bin/fc-cache -s -f -v の実行で多少時間がかかります． -->
 <!-- ... -->
@@ -371,12 +360,12 @@ fc-list で MS Mincho と MS Gothic がリストに存在するかどうか確�
 
 ```
 $ fc-list | nkf -W8 -s | grep "MS Mincho"
-MS Mincho,ＭＳ 明朝:style=Regular,標準
+C:/Windows/fonts/msmincho.ttc: MS Mincho,ＭＳ 明朝:style=Regular,標準
 ```
 
 ```
 $ fc-list | nkf -W8 -s | grep "MS Gothic"
-MS Gothic,ＭＳ ゴシック:style=Regular,標準
+C:/Windows/fonts/msgothic.ttc: MS Gothic,ＭＳ ゴシック:style=Regular,標準
 ```
 
 C:\MinGW\etc\fonts\local.conf を作成して以下のように編集します．
@@ -419,6 +408,14 @@ msmincho.ttc: "MS Mincho" "Regular"
 $ fc-match GothicBBB-Medium
 msgothic.ttc: "MS Gothic" "Regular"
 ```
+
+上記のように表示されない場合は C:\MinGW\etc\fonts\fonts.conf に
+
+```
+<include>local.conf</include>
+```
+
+を記述してください．
 
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
