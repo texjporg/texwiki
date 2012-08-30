@@ -214,6 +214,8 @@ repstopdf,epspdf,extractbb,\
 [組版メモ 2](http://x19290.appspot.com/pbej-tmp/typeset2.html)
 : 2012-08-22
 
+- [install-tl-guide](https://github.com/x19290/install-tl-guide)
+
 \[[Windows\] TeX Live 2012 インストール](http://d.hatena.ne.jp/hidehara/20120724/1343147231)
 : 2012-07-24
 
@@ -251,7 +253,7 @@ repstopdf,epspdf,extractbb,\
     <!-- -[[texlive-2010 on Windows (rev.):http://blogs.yahoo.co.jp/igproj_fusion/12693903.html]] -->
     <!-- -[[texlive-2010 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/11147207.html]] -->
 
-#### [Cygwin](/Cygwin/) {#sfbd073e}
+#### TeX Live ([Cygwin](/Cygwin/)) {#sfbd073e}
 
 Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
 
