@@ -622,10 +622,14 @@ C:/MinGW/share/poppler
 <!-- libpoppler-14.dll -->
 <!-- ... -->
 
-日本語の PDF ファイルを表示できるようにするため，W32TeX の poppler-data (C:\w32tex\share\texworks\poppler-data) を C:\MinGW\share にコピーして poppler にリネームします．
+日本語の PDF ファイルを表示できるようにするため，poppler-data を適切な場所に配置します．
+
+- W32TeX の場合
+
+W32TeX の poppler-data (C:\w32tex\share\texworks\share\poppler) を C:\MinGW\share にコピーします．
 
 ```
-$ cp -pr /c/w32tex/share/texworks/poppler-data/ /mingw/share/poppler
+$ cp -pr /c/w32tex/share/texworks/share/poppler/ /mingw/share/poppler
 ```
 
 ***
@@ -635,7 +639,33 @@ C:.
 ├─w32tex
 │  └─share
 │      └─texworks
-│          └─poppler-data
+│          └─share
+│              └─poppler
+└─MinGW
+    └─share
+        └─poppler
+```
+
+***
+
+- TeX Live の場合
+
+TeX Live の poppler-data (C:\texlive\2012\tlpkg\texworks\share\poppler) を C:\MinGW\share にコピーします．
+
+```
+$ cp -pr /c/texlive/2012/tlpkg/texworks/share/poppler/ /mingw/share/poppler
+```
+
+***
+
+```
+C:.
+├─texlive
+│  └─2012
+│      └─tlpkg
+│          └─texworks
+│              └─share
+│                  └─poppler
 └─MinGW
     └─share
         └─poppler
@@ -651,5 +681,6 @@ C:.
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
 - [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
+- [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
