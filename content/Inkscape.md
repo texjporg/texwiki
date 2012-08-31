@@ -855,7 +855,7 @@ Error: Unknown font tag 'F1'
 Error (176): No font in show/space
 ```
 
-のエラーが表示される場合は W32TeX の C:\w32tex\share\texworks\poppler-data をコピーして C:\target\share にペーストして poppler にリネームしてください．<br>
+のエラーが表示される場合は W32TeX の C:\w32tex\share\texworks\share\poppler をコピーして C:\target\share にペーストしてください．<br>
 これで poppler-data が正しい位置に配置されます．
 
 ***
@@ -865,7 +865,8 @@ C:.
 ├─w32tex
 │  └─share
 │      └─texworks
-│          └─poppler-data
+│          └─share
+│              └─poppler
 └─target
     └─share
         └─poppler
