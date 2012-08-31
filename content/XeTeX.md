@@ -69,12 +69,13 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
 を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
-ものにしか xdvipdfmx は含まれていない。
-svn revision 506 以降では、 Mac OS X 用のデフォルトのドライバも xdvipdfmx になった。
+ものにしか xdvipdfmx は含まれていない。<br>
+svn [revision 506](http://scripts.sil.org/svn-view/xetex?rev=506&view=rev) 以降では、 OS X 用のデフォルトのドライバも xdvipdfmx になった。<br>
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず \[xetex\]
-オプションを付加しておくのを忘れてはいけない。ただし，Jonathan Kew さんに
+オプションを付加しておくのを忘れてはいけない。<br>
+ただし，Jonathan Kew さんに
 より，Mac と Linux-W32 とでインターフェイスを統一する仕事がなされており，
 最新版の xdvipdfmx と XeTeX を W32 版でテストしてみると，
 デフォルトのままで xetex.def を使えるようになっている。
@@ -88,7 +89,11 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 
 ### OS X でのインストール {#x46670ed}
 
+#### TeX Live {#r40835b3}
+
 [MacTeX &amp; TeX Live](/Mac/#f5466652) をインストールすると XeTeX がインストールされます．
+
+#### teTeX {#dacf7872}
 
 [ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
 をインストールした Mac OS X 10.4.x でインストールしてみた。
@@ -150,8 +155,8 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 
 ```
     <dir>c:/windows/fonts</dir>
-    <dir>c:/usr/local/share/texmf/fonts/opentype</dir>
-    <dir>c:/usr/local/share/texmf/fonts/truetype</dir>
+    <dir>c:/w32tex/share/texmf/fonts/opentype</dir>
+    <dir>c:/w32tex/share/texmf/fonts/truetype</dir>
 ```
 
 コンソール上で
