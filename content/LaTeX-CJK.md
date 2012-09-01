@@ -11,6 +11,14 @@ pukiwiki: "LaTeX-CJK"
 
 (Could someone please translate this page into English?)
 
+## [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
+
+- [ctex-kit](http://code.google.com/p/ctex-kit/)
+    - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
+    - [Changes](http://code.google.com/p/ctex-kit/source/list)
+- [http://www.ctan.org/pkg/xecjk](http://www.ctan.org/pkg/xecjk)
+- [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
+
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
 日本語を処理できる TeX としては、
