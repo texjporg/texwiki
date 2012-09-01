@@ -20,12 +20,20 @@ pukiwiki: "XeTeX"
 [The XeTeX typesetting system](http://scripts.sil.org/xetex)
 は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース。 -->
 「ズィーTeX」と読む。
-Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。
+
+- [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
+- [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
+    - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+- [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
+    - [http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex)
+
+#### 概要 {#n5d8d950}
+
+Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。<br>
 Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
 使えるフォントは OS が認識しているものと言うより，FontConfig が認識して
-いるものと言ったほうが正確である。
-なお，バージョン 0.995 以降では（ただし 0.995 でも xetex は svn revision
-344 以降，xdvipdfmx は svn revision 74 以降），
+いるものと言ったほうが正確である。<br>
+なお，バージョン 0.995 以降[^1]では，
 
 ```
 [FontFileName:FaceIndex]:features
@@ -57,9 +65,9 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 PDF に変換する。 xdv2pdf は Mac 専用のドライバであって，他では利用できない。
 Linux と W32 では，汎用の xdvipdfmx というドライバを用いる。これは
 dvipdfmx を XeTeX 用に拡張したものである。
-xdv2pdf は Mac OS X を有効利用するドライバだが，仮想フォントを読むことが
+xdv2pdf は OS X を有効利用するドライバだが，仮想フォントを読むことが
 できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
-Mac OS X であっても xdvipdfmx を使うことになる。
+OS X であっても xdvipdfmx を使うことになる。
 また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う
 場合だけ有効である。直接 PDF を出力する場合には
 
@@ -68,9 +76,9 @@ xelatex --output-driver='xdvipdfmx -q -E' foo
 ```
 
 のようにすると，デフォルトのドライバを変更して xdvipdfmx
-を使うようにできる。なお Mac OS X 用の XeTeX には最新の 0.995 以降の
+を使うようにできる。なお OS X 用の XeTeX には最新の 0.995 以降の
 ものにしか xdvipdfmx は含まれていない。<br>
-svn [revision 506](http://scripts.sil.org/svn-view/xetex?rev=506&view=rev) 以降では、 OS X 用のデフォルトのドライバも xdvipdfmx になった。<br>
+バージョン 0.997 以降[^2]では、 OS X 用のデフォルトのドライバも xdvipdfmx になった。<br>
 パッケージに同梱されている graphics.cfg と color.cfg は xdv2pdf 用の設定が
 なされている。従って Linux と W32 では，
 graphics パッケージや color パッケージなどを使用するとき，必ず \[xetex\]
@@ -93,41 +101,36 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 
 [MacTeX &amp; TeX Live](/Mac/#f5466652) をインストールすると XeTeX がインストールされます．
 
-#### teTeX {#dacf7872}
-
-[ptetex](http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html)
-をインストールした Mac OS X 10.4.x でインストールしてみた。
-本家から XeTeX_0995.dmg をダウンロードし，ダブルクリックして現れる XeTeX.pkg
-をダブルクリックして先に進んでいくとエラーになる。
-インチキだが
-
-```
-cd /usr/local/teTeX/bin
-ln -s . powerpc-apple-darwin-current
-```
-
-とするとインストーラが動く。
-
-```
-cd /usr/local/teTeX/share
-mv texmf.local texmf-local
-cd texmf-local
-ln -s ../texmf-var/fonts/map/dvips/updmap dvips
-```
-
-/usr/local/teTeX/share/texmf/tex/generic/config/language.dat
-の “The following languages are disabled by default.” と
-書いてあるところ以降にある magyar huhyphn.tex という行を “%! ” でコメントアウトし
-
-```
-fmtutil --byfmt xetex
-fmtutil --byfmt xelatex
-```
-
+<!-- ***teTeX [#dacf7872] -->
+<!-- [[ptetex:http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html]] -->
+<!-- をインストールした Mac OS X 10.4.x でインストールしてみた。 -->
+<!-- 本家から XeTeX_0995.dmg をダウンロードし，ダブルクリックして現れる XeTeX.pkg -->
+<!-- をダブルクリックして先に進んでいくとエラーになる。 -->
+<!-- インチキだが -->
+<!--  -->
+<!-- cd /usr/local/teTeX/bin -->
+<!-- ln -s . powerpc-apple-darwin-current -->
+<!--  -->
+<!-- とするとインストーラが動く。 -->
+<!--  -->
+<!-- cd /usr/local/teTeX/share -->
+<!-- mv texmf.local texmf-local -->
+<!-- cd texmf-local -->
+<!-- ln -s ../texmf-var/fonts/map/dvips/updmap dvips -->
+<!--  -->
+<!-- /usr/local/teTeX/share/texmf/tex/generic/config/language.dat -->
+<!-- の “The following languages are disabled by default.” と -->
+<!-- 書いてあるところ以降にある magyar huhyphn.tex という行を “%! ” でコメントアウトし -->
+<!--  -->
+<!-- fmtutil - -byfmt xetex -->
+<!-- fmtutil - -byfmt xelatex -->
+<!--  -->
 <!-- 最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので， -->
 <!-- もっとスムーズにインストールできるのではないかと思われる。 -->
 
 ### Windows でのインストール {#j287e7c2}
+
+#### W32TeX {#qa9dfa1c}
 
 <!-- XeTeX for W32 のインストール方法 -->
 
@@ -155,8 +158,8 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 
 ```
     <dir>c:/windows/fonts</dir>
-    <dir>c:/w32tex/share/texmf/fonts/opentype</dir>
-    <dir>c:/w32tex/share/texmf/fonts/truetype</dir>
+    <dir>c:/w32tex/share/texmf-local/fonts/opentype</dir>
+    <dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 ```
 
 コンソール上で
@@ -198,6 +201,10 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 nkf によって 2 バイト仮名に変換されたりするからです。漢字フォント名を
 使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。
 通常はアルファベットの名前のほうが入力も簡単でしょう。
+
+#### TeX Live {#j68a945d}
+
+TeX Live をインストールすると XeTeX がインストールされます．
 
 ### 入力用エンコーディング {#dd951bae}
 
@@ -651,9 +658,6 @@ Hello, \TeX !
 
 ### 参考サイト {#m6b448cf}
 
-- [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
-- [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
-    - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - \[[XeTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5BXeTeX%5D) (ZR (八登 崇之) さん)
 - [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
@@ -668,9 +672,14 @@ Hello, \TeX !
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
 - [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
+- [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj)
+- [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146)
 
 ### コメント {#d0504266}
 
 - 使用環境は Windows2000(SP4) です。ヒラギノは持っていないので「小塚明朝 Pro Acro R:-palt」で試したのですが「! Font \foo="フォント名は文字化けPro Acro R:-palt" not loadable: installed font not found.」と言われて失敗しました。代わりに「Kozuka Mincho Pro Acro:-pait」で成功しました。「MS P明朝」「みかちゃん_o」では成功。fc-list での namelist.txt で得られるフォント名一覧でフォント名には二番目の要素を使えば良いのかもしれません。 -- tony 2006-07-17 (月) 15:32:30
 - 最新のものでは、 \[フォントファイル名\] という指定も可能になっています: 例: \font\f="\[KozMinPro-Regular.otf\]:mapping=tex-text,color=FF0000" -- kakuto 2006-08-18 (金) 10:53:19
 - revision 424以降では、BMP以外の、つまり、U+10000以降の文字にも個別に\catcodeや\mathcodeを設定できるようになりました。 -- sm 2007-01-26 (金) 22:35:05
+
+[^1]: ただし 0.995 でも xetex は git [commit bc9cdc1b83c8de0ad695cb03b8af89eb8642d7bc](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex;a=commit;h=bc9cdc1b83c8de0ad695cb03b8af89eb8642d7bc) 以降，xdvipdfmx は git [commit 91c0d241d0d4563eb81dfa0a1b41cbf4a6ceb0f5](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex;a=commit;h=91c0d241d0d4563eb81dfa0a1b41cbf4a6ceb0f5) 以降
+[^2]: git [commit 5310cd6080a8e4694522d17852b472886af7bcfd](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex;a=commit;h=5310cd6080a8e4694522d17852b472886af7bcfd) 以降
