@@ -23,7 +23,8 @@ pukiwiki: "XeTeX"
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
-    - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+- [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
+- [The XeTeX Archives](http://tug.org/pipermail/xetex/) (TUG)
 - [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
     - [http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex)
 
@@ -674,6 +675,8 @@ Hello, \TeX !
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj)
 - [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146)
+- [Writing Japanese with XeTeX](http://kuniyoshi.fastmail.fm/xetex/)
+- [Including Japanese Text](http://www.lewis.soc.hit-u.ac.jp/latex/including-japanese-text)
 
 ### コメント {#d0504266}
 
