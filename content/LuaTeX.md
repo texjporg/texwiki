@@ -19,6 +19,7 @@ pukiwiki: "LuaTeX"
 - [SupelecFoundry > プロジェクト > LuaTeX > Home](http://foundry.supelec.fr/gf/project/luatex/)
     - [Log of /trunk](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2Ftrunk%2F&view=log)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
+- [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
 
 ## LuaTeX-ja {#nec94db0}
 
