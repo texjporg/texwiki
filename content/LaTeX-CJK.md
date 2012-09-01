@@ -11,14 +11,6 @@ pukiwiki: "LaTeX-CJK"
 
 (Could someone please translate this page into English?)
 
-## [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
-
-- [ctex-kit](http://code.google.com/p/ctex-kit/)
-    - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
-    - [Changes](http://code.google.com/p/ctex-kit/source/list)
-- [http://www.ctan.org/pkg/xecjk](http://www.ctan.org/pkg/xecjk)
-- [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
-
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
 日本語を処理できる TeX としては、
@@ -525,9 +517,3 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
 もちろん、新たなサンプルの提供と、（全体の）文章の修正も歓迎します。
-
-## 関連リンク {#k90787cf}
-
-- [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
-- [zhmCJK Package](http://www.ctan.org/pkg/zhmcjk)
-- [xeCJK Package](http://www.ctan.org/pkg/xecjk)
