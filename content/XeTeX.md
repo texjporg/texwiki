@@ -654,8 +654,9 @@ Hello, \TeX !
 ```
 
 ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
-現状ではまともではない。
-しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。
+現状ではまともではない。<br>
+しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。<br>
+現在では [ZXjatype](/xeCJK/#n8276349) を使用して XeLaTeX で pTeX 並の品質の日本語文書組版が可能です．<br>
 
 ### 参考サイト {#m6b448cf}
 
@@ -673,10 +674,6 @@ Hello, \TeX !
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
 - [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
-- [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj)
-- [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146)
-- [Writing Japanese with XeTeX](http://kuniyoshi.fastmail.fm/xetex/)
-- [Including Japanese Text](http://www.lewis.soc.hit-u.ac.jp/latex/including-japanese-text)
 
 ### コメント {#d0504266}
 
