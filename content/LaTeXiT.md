@@ -29,9 +29,6 @@ LaTeXiT は OS X で動作する数式エディタです．
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
-<!-- ''MacTeX で配布されている Ghostscript では LaTeXiT で日本語が表示されないようです．''~ -->
-<!-- 日本語が表示されない場合は [[Ghostscript.app - マスクメロン:http://www.muskmelon.jp/?page_id=75]] で配布されている Ghostscript に変更してください．~ -->
-
 ### プログラム {#xab14b42}
 
 #### コマンド {#a32b734b}
@@ -53,8 +50,8 @@ LaTeXiT は OS X で動作する数式エディタです．
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
 　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins> または <ins>/usr/texbin/uplatex</ins><br>
 　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
-　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更<br>
-　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 日本語が表示されない場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) で配布されている Ghostscript に変更<br>
+　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 最新版の Ghostscript を使用したい場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) または [Richard Koch Home Page](http://pages.uoregon.edu/koch/) で配布されている Ghostscript に変更<br>
+　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 最新版の Ghostscript を使用したい場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) または [Richard Koch Home Page](http://pages.uoregon.edu/koch/) で配布されている Ghostscript に変更<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
 
 ***
