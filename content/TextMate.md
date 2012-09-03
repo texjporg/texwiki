@@ -16,15 +16,21 @@ pukiwiki: "TextMate"
 ## TextMate について {#j770ed33}
 
 TextMate は OS X で動作するテキストエディタです．<br>
-TextMate 2 はフリーソフトウェアです． (TextMate 1 はシェアウェア)<br>
+TextMate 2 はフリーソフトウェアです．<br>
+TextMate 1 はシェアウェアです．<br>
 
 - [TextMate](http://macromates.com/)
 - [textmate/textmate · GitHub](https://github.com/textmate/textmate)
     - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 - [trunk/dports/editors/textmate2/Portfile](https://trac.macports.org/browser/trunk/dports/editors/textmate2/Portfile)
 
+### リリース情報 {#wdfc46c3}
+
+2012-08-09 [TextMate 2 が GPLv3 でオープンソース化](http://blog.macromates.com/2012/textmate-2-at-github/)
+
 ## TextMate 2 for Snow Leopard {#g205429c}
 
+- [https://github.com/stepheneb/textmate/tree/10.6-master](https://github.com/stepheneb/textmate/tree/10.6-master)
 - [Textmate2 for Snow Leopard](http://macbookblack.blogspot.jp/2012/08/textmate2-for-snow-leopard.html)
 - [Textmate2 for Snow Leopard](http://blog.goo.ne.jp/typer_k20a/e/4053e2f2004f5d1cec8dfd9ed763c29a)
 
