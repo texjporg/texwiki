@@ -26,6 +26,7 @@ pukiwiki: "FreeBSD"
 
 - [print/texlive-core](http://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
 - [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
+- [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 
 ### teTeX {#y07bcd98}
 
