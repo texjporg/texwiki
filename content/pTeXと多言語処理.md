@@ -28,22 +28,25 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 
 ちなみに，pTeX でなくても良い場合は，
 
+1. [LuaTeX](/LuaTeX/)
+1. [XeTeX](/XeTeX/)
+1. [upTeX](/upTeX,upLaTeX/)
+1. [xeCJK パッケージ](/xeCJK/)
 1. [CJK パッケージ](/LaTeX-CJK/)
 1. [Unicode パッケージ](https://mirror.ctan.org/macros/latex/contrib/unicode/)
-1. 前二者の併用によるアプローチ
-1. [upTeX](/upTeX,upLaTeX/)
-1. Aleph/[Omega](http://omega.enstb.org/)
-1. [XeTeX](/XeTeX/)
-1. [LuaTeX](/LuaTeX/)
+1. CJK パッケージと Unicode パッケージの併用によるアプローチ
+1. [Aleph](http://wiki.contextgarden.net/Aleph)/[Omega \[Internet Archive\]](http://web.archive.org/web/20110726033308/http://omega.enstb.org/)
 
-によるアプローチなどが考えられます。3. については FreeBSD
-上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)が，5. の
+によるアプローチなどが考えられます。<br>
+upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照ください。<br>
+CJK パッケージと Unicode パッケージの併用によるアプローチ については FreeBSD
+上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)を参照ください。<br>
+Aleph/Omega の
 多言語化については
-[Omega-CJK](http://hep-ph.konkuk.ac.kr/ChoF/)，[OmegaVN](http://forum.vnoss.org/viewtopic.php?id=870)
-などがあります。[OmegaVN](http://forum.vnoss.org/viewtopic.php?id=870) に
+[Omega-CJK \[Internet Archive\]](http://web.archive.org/web/20080605061802/http://hep-ph.konkuk.ac.kr/ChoF/)，[OmegaVN \[Internet Archive\]](http://web.archive.org/web/20071026212901/http://forum.vnoss.org/viewtopic.php?id=870)
+などがあります。OmegaVN に
 ついてはグェンさん自身のご紹介 ([qa:34272](https://okumuralab.org/~okumura/texfaq/qa/34272.html)) と
-最新版 dvipdfmx 上で使用する場合の注意事項 ([qa:37564](https://okumuralab.org/~okumura/texfaq/qa/37564.html)) も参照ください。
-4. については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照ください。
+最新版 dvipdfmx 上で使用する場合の注意事項 ([qa:37564](https://okumuralab.org/~okumura/texfaq/qa/37564.html)) も参照ください。<br>
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
