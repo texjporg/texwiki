@@ -159,6 +159,8 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 
 ```
     <dir>c:/windows/fonts</dir>
+    <dir>c:/w32tex/share/texmf/fonts/opentype</dir>
+    <dir>c:/w32tex/share/texmf/fonts/truetype</dir>
     <dir>c:/w32tex/share/texmf-local/fonts/opentype</dir>
     <dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 ```
