@@ -45,6 +45,7 @@ LuaTeX-ja は
 
 ### ダウンロード {#xa9091b6}
 
+- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz)
 - [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
 
 ### インストール {#p4234337}
@@ -143,7 +144,7 @@ l.4 $\bm{a}
 
 ### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#te382979}
 
-LuaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
+LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
 
 ### [Beamer](/Beamer/) {#w67ac91d}
 
@@ -160,7 +161,7 @@ LuaTeX-ja では luatexja-otf.sty を使用します．<br>
 
 ### [hyperref](/hyperref/) {#v13d851a}
 
-LuaTeX でも [hyperref](/hyperref/) が使用できます．<br>
+LuaLaTeX でも [hyperref](/hyperref/) が使用できます．<br>
 
 #### しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードの作成 {#pf9bb02b}
 
@@ -179,7 +180,7 @@ LuaTeX でも [hyperref](/hyperref/) が使用できます．<br>
 ```
 
 pdfencoding=auto または unicode=true を指定しないとしおりや文書のプロパティのタイトル・作成者・サブタイトル・キーワードの日本語が文字化けします．<br>
-改行は [XeTeX](/XeTeX/) と同様に Unicode の改行コードが 8進数表記で指定できます．<br>
+改行は [XeLaTeX](/XeTeX/) と同様に Unicode の改行コードが 8進数表記で指定できます．<br>
 
 - LF (\000\012)
 - CR (\000\015)
