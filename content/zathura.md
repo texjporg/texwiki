@@ -16,7 +16,17 @@ pukiwiki: "zathura"
 
 zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．<br>
 PDF ファイルや PS ファイルが表示できます．<br>
-ファイルの自動更新機能があります．<br>
+SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
+
+### リリース情報 {#p5c718a4}
+
+2012-08-30 zathura 0.2.1<br>
+
+Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
+
+### ChangeLog {#fdab5877}
+
+- [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git)
 
 ### 派生版 {#oea86148}
 
