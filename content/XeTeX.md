@@ -30,7 +30,7 @@ pukiwiki: "XeTeX"
 
 #### 概要 {#n5d8d950}
 
-Mac OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。<br>
+OS X 上で開発され，システムが認識する OpenType フォントをそのまま使える。<br>
 Linux 版もある。W32 版は Linux 版を移植したものである。 Linux と W32 では，
 使えるフォントは OS が認識しているものと言うより，FontConfig が認識して
 いるものと言ったほうが正確である。<br>
@@ -42,7 +42,8 @@ Linux 版もある。W32 版は Linux 版を移植したものである。 Linux
 
 なるフォントの指定法も可能になり，FontConfig とは無関係に， Kpathsearch
 が見つけることができるところにある “Uninstalled fonts” を native fonts
-として使用することもできるようになっている。例えば
+として使用することもできるようになっている。<br>
+例えば
 
 ```
 \font\x="[msmincho.ttc:1]:mapping=tex-text,color=0000FF" at 12pt
