@@ -258,6 +258,7 @@ dvipdfmx がうまく動作しない場合は以下の記事を参照してく�
 
 ## 関連リンク {#bc8cfcc3}
 
+- [Gow (Gnu On Windows)](https://github.com/bmatzelle/gow/wiki)
 - [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
 - [cygwinでのtexについて](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1384247398)
 - [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
