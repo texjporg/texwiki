@@ -78,10 +78,13 @@ pukiwiki: "新 pTeX とBabel"
 
 [W32TeX](/W32TeX/) では
 [TeX Live](</TeX Live/>) 所収の
-ハイフネーションファイル（75種類）が同梱されています。8ビットコード対応済み
+ハイフネーションファイル（68種類）が同梱されています。8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
 TeXWiki:インストール (Windows) を参照）。
+
+- [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
 #### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
 
