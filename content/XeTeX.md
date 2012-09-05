@@ -668,6 +668,7 @@ Hello, \TeX !
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
+- [世界の言語と文字](http://www2.tba.t-com.ne.jp/ing/language.html)
 - [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
 - [XeLaTeXでレポートかきたい。](http://pushl.hatenablog.com/entry/2012/05/27/000233)
