@@ -14,18 +14,22 @@ pukiwiki: "FreeBSD"
 
 ### TeX Live {#w7ff21ac}
 
-[TeX Live](</TeX Live/>) については [freebsd-texlive](http://code.google.com/p/freebsd-texlive/), [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) を参照してください．
+FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
-- [FreeBSDにplatex導入メモ](http://exth.net/~tgbt/wordpress/2012/06/06/4316/)
-- [TeXLive on FreeBSD (ports編、その後)](http://d.hatena.ne.jp/msll/20120303)
-- [TeXLive on FreeBSD(ファイル名と格闘編)](http://d.hatena.ne.jp/msll/20120205/1328449084)
-- [TeXLive on FreeBSD (portsのインストール編)](http://d.hatena.ne.jp/msll/20120120/1327058483)
-- [tlptexliveリポジトリとfreebsd_texlive](http://d.hatena.ne.jp/msll/20120118/1326888303)
+- ports を使わずに TeX Live の公式パッケージをインストールする
+- ports を使って TeX Live をインストールする
+
+方法があります．
+
+#### tlptexlive {#zbf14d42}
+
+- [tlptexlive on FreeBSD](http://d.hatena.ne.jp/msll/20120906/1346914211)
 
 #### TeX Live 関連 {#p4fe1144}
 
-- [print/texlive-core](http://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
-- [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
+- [freebsd-texlive](http://code.google.com/p/freebsd-texlive/)
+    - [print/texlive-core](http://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
+    - [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 
 ### teTeX {#y07bcd98}
