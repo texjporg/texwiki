@@ -86,7 +86,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a PictPrinter.app %.dvi</ins> または <ins>open -a Mxdvi.app %.dvi</ins> または <ins>open %.dvi</ins><br>
+<ins>open -a PictPrinter.app %.dvi</ins> または <ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
