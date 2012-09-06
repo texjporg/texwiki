@@ -19,29 +19,25 @@ pukiwiki: "TeXShop"
 ## TeXShop とは {#q728ac5b}
 
 TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
+[MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
-TeXShop に関する詳細は次のページを御覧下さい．<br>
 
 - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
-- MacWiki:TeXShop
-- [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
-- [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
-- [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 
 ### リリース情報 {#td599942}
 
 2012-06-06 TeXShop (v 3.11)<br>
 2012-06-06 TeXShop (v 2.47)<br>
 
-## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
-
 ### 注意事項 {#j76804fc}
 
 --shell-escapeについて
 : セキュリティ上の理由により、TeXShopはバージョン2.45/3.10より、pdfTeX/pdfLaTeXのセッティングから--shell-escapeが除かれています。（以前の設定を引き継いでいる場合は残ってしまっていますが。）<br>
 
-また、以下のシェルスクリプトの設定においても、--shell-escapeは有効になっていません。<br>
+また、[MacTeX &amp; TeX Live の場合の設定](/TeXShop/#hd2204af)においても、--shell-escapeは有効にしていません。<br>
 コンパイルの際に--shell-escapeが必要な場合は、その都度ターミナルからplatex（など）を実行するか、「パーソナルスクリプト」に--shell-escapeを有効にしたスクリプトを指定しておき、--shell-escapeが必要なときにはその都度「タイプセット」メニューから「パーソナルスクリプト」を指定するとよいでしょう（[pTeX/UpTeX.app + TeXShopでshell-escapeを使う](http://www2.kumagaku.ac.jp/teacher/herogw/shell.html)を参照）。
+
+## MacTeX &amp; TeX Live の場合の設定 {#hd2204af}
 
 ### シェルスクリプトの作成 {#z1cf4023}
 
@@ -1219,39 +1215,6 @@ simpdftex を使用する方法だとエラーが発生してもそのまま dvi
 
 TeXShop を再起動します．
 
-## 小川版 (Drag &amp; Drop UpTeX) の場合の設定 {#h991fc27}
-
-次のページを御覧下さい．<br>
-
-- [Mac - TeX Wiki#小川版](/Mac/#tea5dffe)
-
-## MacPorts (pTeX) の場合の設定 {#s81bdf6c}
-
-次のページを御覧下さい．<br>
-
-- [Mac - TeX Wiki#MacPorts (pTeX)](/Mac/#hcfd86af)
-
-<!-- *[[Make]] の場合の設定[#n9cdd334] -->
-<!--  -->
-<!-- ここでは [[Make]] などを見てソースからインストールされた方のために，簡単な設定法を書いておきます．~ -->
-<!--  -->
-<!-- まず [[TeXShop:http://pages.uoregon.edu/koch/texshop/]] (本家) から最新版の TeXShop (texshop.zip) をダウンロードし，展開します．~ -->
-<!-- 中にある TeXShop アイコンをアプリケーションフォルダに入れます．~ -->
-<!-- よく使うなら，Dock にも入れておきましょう．~ -->
-<!--  -->
-<!-- 起動して，「環境設定」でまず「書類」でフォントを好みのもの（例えば Osaka レギュラー等幅），エンコーディングを Japanese (EUC) にします．~ -->
-<!-- 起動時に「新しいファイルを作成する」はチェックを外しました．~ -->
-<!-- 「内部設定」のパス設定（デフォルトは /usr/texbin）は /usr/local/teTeX/bin，パーソナルスクリプトの TeX 欄を pdfmptex，LaTeX 欄を pdfmplatex にします．~ -->
-<!-- 「タイプセット」でデフォルトのスクリプトをパーソナルスクリプトにしておきます．~ -->
-<!--  -->
-<!-- 井上さんの 「[[pTeXShop 用のコンパイル・PDF 化スクリプト:http://www.ma.ns.tcu.ac.jp/Pages/TeX/pdfmtex.html]]」 の「実際のスクリプトは以下の通り」と書いてある部分をコピーし， -->
-<!-- /usr/local/teTeX/bin/pdfmplatex -->
-<!-- とします（実行許可を与えるのを忘れぬように）．~ -->
-<!-- さらに，同じ内容の pdfmptex というファイルも作っておきます（シンボリックリンクまたはハードリンクでもかまいません）．~ -->
-<!--  -->
-<!-- これで出来上がりです．~ -->
-<!-- 設定前に開いていたファイルは念のためいったん閉じて開き直して下さい．~ -->
-
 ## 使い方 {#i4c3aa46}
 
 ### タイプセット {#b06dc45a}
@@ -1301,6 +1264,10 @@ Live preview for TeXShop
 
 ## 関連リンク {#qb1b8010}
 
+- MacWiki:TeXShop
+- [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
+- [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
+- [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
 - [TeXShop入れてみた](http://milkyway.holy.jp/?p=143)
 - [TeXShop・TeXworksのインストール方法 -Mac OSX Lion-](http://www.monochrome-photo.info/?p=3406)
 - [latexme インストール と TeXShop の設定](http://fbncc112358.blogspot.jp/2012/04/latexme-texshop.html)
