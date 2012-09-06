@@ -96,7 +96,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+<ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>gv --watch %.pdf</ins> または <ins>emacs %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -220,6 +220,38 @@ texmaker2pdfviewer %.pdf @ #.tex
 
 Editor:
 : texmaker "%f" -line %l
+
+Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## zathura との連携 {#k3c22c37}
+
+### inverse search {#s8c6284b}
+
+***
+
+- texmaker2zathura
+
+***
+
+```
+#!/bin/sh
+zathura -s -x "texmaker "%{input}" -line %{line}" "$1"
+```
+
+***
+
+```
+$ chmod +x texmaker2zathura
+$ sudo cp -p texmaker2zathura /usr/local/bin
+```
+
+PDFビューアに
+
+```
+texmaker2zathura %.pdf
+```
+
+を設定します．
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
