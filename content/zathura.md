@@ -40,3 +40,6 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 ## 関連リンク {#l21c05df}
 
 - [Emacs like key bindings for zathura](https://gist.github.com/3168313)
+- [zathura - a document viewer (Page 1) / Community Contributions / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=115118)
+- [zathura - a PDF viewer (Page 1) / Community Contributions / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=80458)
+    - [SyncTeX kludge](https://bbs.archlinux.org/viewtopic.php?pid=807105#p807105)
