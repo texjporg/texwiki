@@ -502,69 +502,6 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ### DVI ファイル ビューアー {#m381260c}
 
-<!-- ***pxdvi [#iae2458d] -->
-<!--  -->
-<!-- - --  -->
-<!-- &color(Black,#473EBE){　&color(Black,#DEDEEF){　&color(Black,#DAEAFF){[　　　　　新規(W)...　　　　　]};　};　};&br; -->
-<!-- - --  -->
-<!-- &color(Black,#CCCCCC){%%%　&color(#DD0000,#CCCCCC){●}; &color(#DDDDDD,#CCCCCC){●}; &color(#DDDDDD,#CCCCCC){●};　　　　　　　　　　　　　　　　　　　　　''新規ビューアー構成の追加''　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
-<!-- 　　 ビューアーを構成します。&br; -->
-<!-- 　　 ビューアー名：　　　　　　　　　　　　　　　　%%%pxdvi%%%&br; -->
-<!-- 　　 ビューアー・コマンド：　　　　　　　　　　　　 %%%/usr/texbin/pxdvi%%%&br; -->
-<!-- 　　 ビューアー引数：　　　　　　　　　　　　　　 %%%-nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"%%%&br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- 　　 ビューアー入力ファイル・フォーマット：　 &color(Black,#EEEEEE){[dvi　▼]};&br; -->
-<!-- 　　 逆検索サポート：　　　　　　　　　　　　　　&color(Black,#EEEEEE){[ビューアーのコンソールへ "file:行番号" を出力　　▼]};&br; -->
-<!-- 　　 ☑ ビューアーでフォーマット済み検索をサポート&br; -->
-<!-- &br; -->
-<!-- 　　　File ok. -->
-<!-- - --  -->
-
-#### pxdvi {#u2125d3e}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-watchfile 1 "&#x25;file"</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
 #### PictPrinter {#bd7c88b1}
 
 ***
@@ -604,20 +541,44 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ***
 
-#### Mxdvi {#efe9f4b4}
+<!-- ***pxdvi [#iae2458d] -->
+<!--  -->
+<!-- - --  -->
+<!-- &color(Black,#473EBE){　&color(Black,#DEDEEF){　&color(Black,#DAEAFF){[　　　　　新規(W)...　　　　　]};　};　};&br; -->
+<!-- - --  -->
+<!-- &color(Black,#CCCCCC){%%%　&color(#DD0000,#CCCCCC){●}; &color(#DDDDDD,#CCCCCC){●}; &color(#DDDDDD,#CCCCCC){●};　　　　　　　　　　　　　　　　　　　　　''新規ビューアー構成の追加''　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
+<!-- 　　 ビューアーを構成します。&br; -->
+<!-- 　　 ビューアー名：　　　　　　　　　　　　　　　　%%%pxdvi%%%&br; -->
+<!-- 　　 ビューアー・コマンド：　　　　　　　　　　　　 %%%/usr/texbin/pxdvi%%%&br; -->
+<!-- 　　 ビューアー引数：　　　　　　　　　　　　　　 %%%-nofork -watchfile 1 -editor "echo &#x25;f:&#x25;l" "&#x25;file" -sourceposition "&#x25;line &#x25;texfile"%%%&br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- 　　 ビューアー入力ファイル・フォーマット：　 &color(Black,#EEEEEE){[dvi　▼]};&br; -->
+<!-- 　　 逆検索サポート：　　　　　　　　　　　　　　&color(Black,#EEEEEE){[ビューアーのコンソールへ "file:行番号" を出力　　▼]};&br; -->
+<!-- 　　 ☑ ビューアーでフォーマット済み検索をサポート&br; -->
+<!-- &br; -->
+<!-- 　　　File ok. -->
+<!-- - --  -->
+
+#### pxdvi {#u2125d3e}
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　xdvi ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
 
 ***
 
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　<strong>Modify existing viewer configuration</strong>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mxdvi</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a Mxdvi.app "&#x25;file"</ins><br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>xdvi</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/texbin/pxdvi</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-watchfile 1 "&#x25;file"</ins><br>
 
 <br>
 
