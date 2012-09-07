@@ -9,7 +9,7 @@ pukiwiki: "Geany"
 
 ## [Geany](http://www.geany.org/) {#d1003dd0}
 
-<img src="http://www.geany.org/images/geany.png" alt="Geany" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Geany_logo.svg/200px-Geany_logo.svg.png" alt="Geany" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
