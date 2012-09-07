@@ -200,7 +200,7 @@ $ sudo cp -p pdfplatex /usr/local/bin
 
 ***
 
-[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
+[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
 
 ***
 
@@ -368,7 +368,7 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 
 ***
 
-[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
+[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
 
 ***
 
