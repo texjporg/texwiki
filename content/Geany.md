@@ -23,6 +23,28 @@ Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC
 
 ## Geany で LaTeX {#s0f3de16}
 
+### ビルドコマンドの設定 {#aaa2ae74}
+
+Geany はデフォルトで LaTeX のビルドに対応しています．
+
+\[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
+
+#### LaTeX コマンド {#z6996bd9}
+
+LaTeX -> <ins>D</ins>VI
+: platex --file-line-error-style "%f"
+
+LaTeX -> <ins>P</ins>DF
+: platex --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+
+#### コマンドを実行 {#r981dc9c}
+
+V<ins>i</ins>ew PDF File
+: evince "%e.pdf"
+
+<ins>V</ins>iew DVI File
+: pxdvi -watchfile 1 "%e.dvi"
+
 ### [GeanyLaTeX](http://frank.uvena.de/en/Geany/geanylatex/) {#scc8a76c}
 
 - [http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX](http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX)
