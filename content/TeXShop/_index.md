@@ -1263,6 +1263,10 @@ Live preview for TeXShop
 
 ### [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/) {#db2483a1}
 
+## アイコン {#b5e57dde}
+
+- [TeXShop icon "LaTeX"](http://iirojappinen.deviantart.com/art/TeXShop-icon-quot-LaTeX-quot-144216801)
+
 ## 関連リンク {#qb1b8010}
 
 - MacWiki:TeXShop
