@@ -9,16 +9,23 @@ pukiwiki: "pdf2htmlEX"
 
 ## [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) {#t74544cf}
 
-### pdf2htmlEX とは {#h92a9ad3}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## pdf2htmlEX とは {#h92a9ad3}
 
 pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウェアです．
 
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
-    <!-- -[[WangLu's Tech Blog:http://coolwanglu.blogspot.com/]] -->
 
-### インストール {#d5b9a2e9}
+## インストール {#d5b9a2e9}
 
-#### Windows (MinGW) {#r72743bf}
+C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。
+
+- [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
+
+boost依存についても対応していただけるようです。
+
+### Windows (MinGW) {#r72743bf}
 
 poppler をインストールします．<br>
 
@@ -63,46 +70,99 @@ $ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
 $ tar jxvf dlfcn-win32-r19.tar.bz2
 $ pushd dlfcn-win32-r19
 $ ./configure --prefix=/mingw --enable-shared
+$ make
 $ make install
 $ popd
 ```
 
-[FontForge](http://fontforge.org/) をインストールします．<br>
-エラーが発生する場合は修正してビルドします．<br>
+[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
+エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
-$ tar fontforge_full-20120731-b
+$ tar jxvf fontforge_full-20120731-b.tar.bz2
 $ pushd fontforge_full-20120731-b
 $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
 $ tar jxvf freetype-2.4.10.tar.bz2
 $ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
+$ make
 $ make install
 $ popd
 ```
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) の最新版をダウンロードしてインストールします．<br>
-エラーが発生する場合は修正してビルドします．<br>
+エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
 ```
 $ mkdir build
 $ cd build
-$ cmake .. -G "MSYS Makefiles"
-$ ./pdf2htmlEX
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
+$ make
+[  8%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
+[ 16%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
+.obj
+[ 25%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
+bj
+[ 33%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
+.obj
+[ 41%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
+obj
+[ 50%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
+j
+[ 58%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
+bj
+[ 66%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
+.cc.obj
+[ 75%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ff/ff.c.obj
+[ 83%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer.cc.o
+bj
+[ 91%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/FontPreprocessor.cc.obj
+
+[100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Consts.cc.obj
+Linking CXX executable pdf2htmlEX.exe
+[100%] Built target pdf2htmlEX
 ```
 
-#### Linux {#bbc3ecf8}
+```
+$ make install
+[100%] Built target pdf2htmlEX
+Install the project...
+-- Install configuration: ""
+-- Installing: C:/MinGW/bin/pdf2htmlEX.exe
+-- Installing: C:/MinGW/share/pdf2htmlEX/all.css
+-- Installing: C:/MinGW/share/pdf2htmlEX/head.html
+-- Installing: C:/MinGW/share/pdf2htmlEX/neck.html
+-- Installing: C:/MinGW/share/pdf2htmlEX/tail.html
+-- Installing: C:/MinGW/share/man/man1/pdf2htmlEX.1
+```
 
-[Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html) を参照．
+```
+$ pdf2htmlEX
+```
 
-### 関連リンク {#m74160f6}
+### Linux {#bbc3ecf8}
 
+#### Ubuntu {#z45bd221}
+
+- [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
+
+#### Arch Linux {#ae9f73e9}
+
+- [AUR (en) - pdf2htmlex-git](https://aur.archlinux.org/packages.php?ID=62426)
+
+#### Gentoo Linux {#d917d3e1}
+
+- [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
+
+## 関連リンク {#m74160f6}
+
+- [WangLu's Tech Blog](http://coolwanglu.blogspot.com/)
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
 - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
-- [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
+- [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
 - [Boostライブラリのビルド方法](https://sites.google.com/site/boostjp/howtobuild)
 - [dlfcn-win32](http://code.google.com/p/dlfcn-win32/)
