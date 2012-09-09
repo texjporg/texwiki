@@ -18,53 +18,78 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ### インストール {#d5b9a2e9}
 
-<!-- ***Windows [#r72743bf] -->
-<!--  -->
-<!-- [[poppler]] をインストールします．~ -->
-<!--  -->
-<!-- Boost をダウンロードします． -->
-<!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
-<!-- $ tar jxvf boost_1_51_0.tar.bz2 -->
-<!-- $ pushd boost_1_51_0 -->
-<!-- $ cmd -->
-<!-- >bootstrap.bat gcc -->
-<!-- Building Boost.Build engine -->
-<!-- 指定されたバッチ ラベルが見つかりません - Test_Option -->
-<!--  -->
-<!-- Bootstrapping is done. To build, run: -->
-<!--  -->
-<!--     .\b2 -->
-<!--  -->
-<!-- To adjust configuration, edit 'project-config.jam'. -->
-<!-- Further information: -->
-<!--  -->
-<!--     - Command line help: -->
-<!--     .\b2 - -help -->
-<!--  -->
-<!--     - Getting started guide: -->
-<!--     http://boost.org/more/getting_started/windows.html -->
-<!--  -->
-<!--     - Boost.Build documentation: -->
-<!--     http://www.boost.org/boost-build2/doc/html/index.html -->
-<!--  -->
-<!-- >exit -->
-<!-- $ ./b2 install - -prefix=/mingw - -toolset=gcc -->
-<!-- $ popd -->
-<!--  -->
-<!-- [[dlfcn-win32:http://code.google.com/p/dlfcn-win32/]] をインストールします． -->
-<!-- $ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2 -->
-<!-- $ tar jxvf dlfcn-win32-r19.tar.bz2 -->
-<!-- $ pushd dlfcn-win32-r19 -->
-<!-- $ ./configure - -prefix=/mingw - -enable-shared -->
-<!-- $ make install -->
-<!-- $ popd -->
-<!-- FontForge をダウンロードします． -->
-<!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 -->
-<!-- $ tar fontforge_full-20120731-b -->
-<!-- $ pushd fontforge_full-20120731-b -->
-<!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 -->
-<!-- $ tar jxvf freetype-2.4.10.tar.bz2 -->
-<!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 -->
+#### Windows (MinGW) {#r72743bf}
+
+poppler をインストールします．<br>
+
+[Boost](http://www.boost.org/) をインストールします．
+
+```
+$ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2
+$ tar jxvf boost_1_51_0.tar.bz2
+$ pushd boost_1_51_0
+$ cmd
+>bootstrap.bat gcc
+Building Boost.Build engine
+指定されたバッチ ラベルが見つかりません - Test_Option
+
+Bootstrapping is done. To build, run:
+
+    .\b2
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+    - Command line help:
+    .\b2 --help
+
+    - Getting started guide:
+    http://boost.org/more/getting_started/windows.html
+
+    - Boost.Build documentation:
+    http://www.boost.org/boost-build2/doc/html/index.html
+```
+
+```
+>exit
+$ ./b2 --prefix=/mingw toolset=gcc link=static,shared install
+$ popd
+```
+
+dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](http://code.google.com/p/dlfcn-win32/) をインストールします．
+
+```
+$ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
+$ tar jxvf dlfcn-win32-r19.tar.bz2
+$ pushd dlfcn-win32-r19
+$ ./configure --prefix=/mingw --enable-shared
+$ make install
+$ popd
+```
+
+[FontForge](http://fontforge.org/) をインストールします．<br>
+エラーが発生する場合は修正してビルドします．<br>
+
+```
+$ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
+$ tar fontforge_full-20120731-b
+$ pushd fontforge_full-20120731-b
+$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
+$ tar jxvf freetype-2.4.10.tar.bz2
+$ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
+$ make install
+$ popd
+```
+
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) の最新版をダウンロードしてインストールします．<br>
+エラーが発生する場合は修正してビルドします．<br>
+
+```
+$ mkdir build
+$ cd build
+$ cmake .. -G "MSYS Makefiles"
+$ ./pdf2htmlEX
+```
 
 #### Linux {#bbc3ecf8}
 
