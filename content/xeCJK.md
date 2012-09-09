@@ -9,7 +9,8 @@ pukiwiki: "xeCJK"
 
 ## [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
 
-xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．
+xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
+[W32TeX](/W32TeX/) の xetex-w32.tar.xz と [TeX Live](</TeX Live/>) に含まれています．<br>
 
 - [ctex-kit](http://code.google.com/p/ctex-kit/)
     - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
@@ -17,6 +18,11 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
+
+### リリース情報 {#if427aa7}
+
+2012-09-09 W32TeX \[2012/09/09\] の更新で xeCJK 2.4.5 から xeCJK 3.0.8 になりました．<br>
+2012-09-02 xeCJK 3.0.8<br>
 
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
