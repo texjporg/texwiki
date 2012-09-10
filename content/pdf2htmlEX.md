@@ -16,14 +16,21 @@ pukiwiki: "pdf2htmlEX"
 pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウェアです．
 
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
+    - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
+
+## 不具合 {#q60cf17d}
+
+### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる {#x082653d}
+
+pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．<br>
+Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 
 ## インストール {#d5b9a2e9}
 
-C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。
+C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。<br>
+relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになったようです。<br>
 
 - [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
-
-boost依存についても対応していただけるようです。
 
 ### Windows (MinGW) {#r72743bf}
 
@@ -138,7 +145,10 @@ Install the project...
 
 ```
 $ pdf2htmlEX
+pdftohtmlEX version 0.3
 ```
+
+pdf2htmlEX はコードを修正すれば Windows でも動作します．
 
 ### Linux {#bbc3ecf8}
 
