@@ -255,6 +255,7 @@ dvipdfmx がうまく動作しない場合は以下の記事を参照してく�
 - [ckw-mod](http://deflis.github.com/ckw-mod/)
     - [ckw-mod を使う](http://yuu0t.hatenablog.com/entry/2012/01/12/220801)
 - [mlterm](http://mlterm.sourceforge.net/)
+- [evilvte](http://www.calno.com/evilvte/)
 
 ## 関連リンク {#bc8cfcc3}
 
