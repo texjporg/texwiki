@@ -28,7 +28,7 @@ Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 ## インストール {#d5b9a2e9}
 
 C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。<br>
-relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになったようです。<br>
+relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになりました。<br>
 
 - [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
 
