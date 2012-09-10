@@ -28,7 +28,7 @@ Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 ## インストール {#d5b9a2e9}
 
 C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。<br>
-relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになりました。<br>
+master ブランチ， relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになりました。<br>
 
 - [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
 
@@ -36,41 +36,37 @@ relaxedcpp11 ブランチは Boost をインストールしなくてもビルド
 
 poppler をインストールします．<br>
 
-[Boost](http://www.boost.org/) をインストールします．
+<!-- [[Boost:http://www.boost.org/]] をインストールします． -->
+<!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
+<!-- $ tar jxvf boost_1_51_0.tar.bz2 -->
+<!-- $ pushd boost_1_51_0 -->
+<!-- $ cmd -->
+<!-- >bootstrap.bat gcc -->
+<!-- Building Boost.Build engine -->
+<!-- 指定されたバッチ ラベルが見つかりません - Test_Option -->
+<!--  -->
+<!-- Bootstrapping is done. To build, run: -->
+<!--  -->
+<!--     .\b2 -->
+<!--  -->
+<!-- To adjust configuration, edit 'project-config.jam'. -->
+<!-- Further information: -->
+<!--  -->
+<!--     - Command line help: -->
+<!--     .\b2 - -help -->
+<!--  -->
+<!--     - Getting started guide: -->
+<!--     http://boost.org/more/getting_started/windows.html -->
+<!--  -->
+<!--     - Boost.Build documentation: -->
+<!--     http://www.boost.org/boost-build2/doc/html/index.html -->
+<!--  -->
+<!-- >exit -->
+<!-- $ ./b2 - -prefix=/mingw toolset=gcc link=static,shared install -->
+<!-- $ popd -->
 
-```
-$ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2
-$ tar jxvf boost_1_51_0.tar.bz2
-$ pushd boost_1_51_0
-$ cmd
->bootstrap.bat gcc
-Building Boost.Build engine
-指定されたバッチ ラベルが見つかりません - Test_Option
-
-Bootstrapping is done. To build, run:
-
-    .\b2
-
-To adjust configuration, edit 'project-config.jam'.
-Further information:
-
-    - Command line help:
-    .\b2 --help
-
-    - Getting started guide:
-    http://boost.org/more/getting_started/windows.html
-
-    - Boost.Build documentation:
-    http://www.boost.org/boost-build2/doc/html/index.html
-```
-
-```
->exit
-$ ./b2 --prefix=/mingw toolset=gcc link=static,shared install
-$ popd
-```
-
-dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](http://code.google.com/p/dlfcn-win32/) をインストールします．
+dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](http://code.google.com/p/dlfcn-win32/) をインストールします．<br>
+FontForge はこれらの関数を使用しているようです．<br>
 
 ```
 $ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
@@ -97,6 +93,13 @@ $ make install
 $ popd
 ```
 
+<!-- -http://svn.r-project.org/R/trunk/src/main/datetime.c -->
+<!-- -http://svn.r-project.org/R/trunk/src/main/mkdtemp.c -->
+<!-- mkdtemp は MinGW でエラー -->
+<!-- auto p = mkdtemp(buf); -->
+<!-- _mktemp は MinGW でも OK -->
+<!-- auto p = _mktemp(buf); -->
+
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) の最新版をダウンロードしてインストールします．<br>
 エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
@@ -104,28 +107,53 @@ $ popd
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
-$ make
-[  8%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
-[ 16%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
-.obj
-[ 25%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
-bj
-[ 33%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
-.obj
-[ 41%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
-obj
-[ 50%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
-j
-[ 58%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
-bj
-[ 66%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
-.cc.obj
-[ 75%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ff/ff.c.obj
-[ 83%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer.cc.o
-bj
-[ 91%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/FontPreprocessor.cc.obj
+-- The C compiler identification is GNU 4.7.0
+-- The CXX compiler identification is GNU 4.7.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C/MinGW/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.25")
+-- checking for module 'poppler>=0.20.0'
+--   found poppler, version 0.20.0
+Found fontforge.h: C:/MinGW/include/fontforge/fontforge.h
+Found libfontforge.dll.a: C:/MinGW/lib/libfontforge.dll.a
+Looking for libraries of python, which is required by fontforge, if you can link
+ fontforge without python, you may disable this
+-- checking for one of the modules 'python;python-2.7'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/coolwanglu-pdf2htmlEX/build
+```
 
-[100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Consts.cc.obj
+```
+$ make
+[  7%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
+[ 15%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
+.obj
+[ 23%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
+bj
+[ 30%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
+.obj
+[ 38%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
+obj
+[ 46%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
+j
+[ 53%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
+bj
+[ 61%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
+.cc.obj
+[ 69%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ff.c.obj
+[ 76%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer.cc.o
+bj
+[ 84%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/FontPreprocessor.cc.obj
+
+[ 92%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util.cc.obj
+[100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/ArgParser.cc.obj
 Linking CXX executable pdf2htmlEX.exe
 [100%] Built target pdf2htmlEX
 ```
@@ -144,11 +172,13 @@ Install the project...
 ```
 
 ```
-$ pdf2htmlEX
+$ pdf2htmlEX --help
 pdftohtmlEX version 0.3
 ```
 
-pdf2htmlEX はコードを修正すれば Windows でも動作します．
+pdf2htmlEX はコードを適切に修正すれば Windows でも動作します．
+
+<!-- **OS X [#u6860a4e] -->
 
 ### Linux {#bbc3ecf8}
 
@@ -163,6 +193,19 @@ pdf2htmlEX はコードを修正すれば Windows でも動作します．
 #### Gentoo Linux {#d917d3e1}
 
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
+
+#### CentOS {#q04cd947}
+
+CentOS 6.3 でもビルドできるようです．→ [pdf2htmlEXのrelaxedcpp11ブランチがBoostなしでbuildできるようになった。](http://twitter.com/h_okumura/status/245305278906638336)
+
+<!-- ↑あれ，これは私のツイートですね。私はCentOS 6.3でbuildしました。 -->
+<!--  -->
+<!-- ↑うっかり OS X とはやとちりしてしまいました． -->
+<!-- 返信どうもありがとうございました． -->
+
+## 使い方 {#cc3ae41e}
+
+Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 ## 関連リンク {#m74160f6}
 
