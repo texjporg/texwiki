@@ -53,8 +53,8 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
     Vim オリジナルに，日本語を扱う上で便利な設定やスクリプトが追加されている
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
     - [コミットログ](https://github.com/splhack/macvim/commits/master)
-- [vim-win3264](http://code.google.com/p/vim-win3264/)
-- [gVim Portable](http://sf.net/projects/portableapps/files/gVim%20Portable/)
+        <!-- -[[vim-win3264:http://code.google.com/p/vim-win3264/]] -->
+        <!-- -[[gVim Portable:http://sf.net/projects/portableapps/files/gVim%20Portable/]] -->
 
 #### Windows, Linux {#o0f5036e}
 
