@@ -424,6 +424,7 @@ Ctrl+Space で補完を行います．<br>
 - [TeX - EclipseWiki](http://www.eclipsewiki.net/eclipse/?TeX)
 - [6. TeXlipse の追加・設定 | Eclipse を使おう別館](http://x19290.appspot.com/using-eclipse/main.html#S6)
 - [7. TeXlipse の利用(動画) | Eclipse を使おう別館](http://19290.net/using-eclipse-annex/07/toc.html)
+- [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
 - [改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/)
 - [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
