@@ -21,7 +21,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gumm
 
 ### リリース情報 {#ha3b28ab}
 
-2012-08-10 poppler 0.20.3<br>
+2012-09-10 poppler 0.20.4<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -190,12 +190,12 @@ $ popd
 
 - [Little CMS](http://www.littlecms.com/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.3/lcms2-2.3.tar.gz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.4/lcms2-2.4.tar.gz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.3.tar.gz
-$ tar zxvf lcms2-2.3.tar.gz
-$ pushd lcms2-2.3
+$ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.4.tar.gz
+$ tar zxvf lcms2-2.4.tar.gz
+$ pushd lcms2-2.4
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -537,48 +537,64 @@ $ popd
 
 - [poppler](http://poppler.freedesktop.org/) をインストールします．
 
-<!-- - -with-font-configuration=fontconfig で fontconfig にリンクすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります． -->
-
 ```
--DFONT_CONFIGURATION=fontconfig で fontconfig にリンクすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
+configure の場合は --with-font-configuration=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
+CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
 poppler 0.19.2 で -DFONT_CONFIGURATION=win32 でビルドしても日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示できるようになりました．
 ただし -DFONT_CONFIGURATION=win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFONT_CONFIGURATION=fontconfig でビルドして fontconfig を適切に設定することをおすすめします．
 ```
 
 ```
-$ curl -R -L -O http://cgit.freedesktop.org/poppler/poppler/snapshot/poppler-0.20.3.tar.gz
-$ tar zxvf poppler-0.20.3.tar.gz
-$ pushd poppler-0.20.3
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.20.4.tar.gz
+$ tar zxvf poppler-0.20.4.tar.gz
+$ pushd poppler-0.20.4
+```
+
+***
+
+- configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
+
+```
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.2/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.2/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.2/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.2/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl
+```
+
+```
+Building poppler with support for:
+  font configuration: fontconfig
+  splash output:      yes
+  cairo output:       yes
+  qt4 wrapper:        yes
+  glib wrapper:       no
+    introspection:    no
+  cpp wrapper:        yes
+  use gtk-doc:        no
+  use libjpeg:        yes
+  use libpng:         yes
+  use libtiff:        yes
+  use zlib:           yes
+  use libcurl:        yes
+  use libopenjpeg:    yes
+  use cms:            yes
+      with lcms2
+  command line utils: yes
+  test data dir:
+
+  Warning: Using zlib is not totally safe
+```
+
+```
+$ make
+$ make install
+```
+
+***
+
+- CMake で Makefile を作成してインストールする場合
+
+```
 $ mkdir build
 $ pushd build
-```
-
-<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.1/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.1/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.1/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.1/bin" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib -->
-<!--  -->
-<!-- Building poppler with support for: -->
-<!--   font configuration: fontconfig -->
-<!--   splash output:      yes -->
-<!--   cairo output:       yes -->
-<!--   qt4 wrapper:        yes -->
-<!--   glib wrapper:       no -->
-<!--     introspection:    no -->
-<!--   cpp wrapper:        yes -->
-<!--   use gtk-doc:        no -->
-<!--   use libjpeg:        yes -->
-<!--   use libpng:         yes -->
-<!--   use libtiff:        yes -->
-<!--   use zlib:           yes -->
-<!--   use libcurl:        no -->
-<!--   use libopenjpeg:    no -->
-<!--   use cms:            yes -->
-<!--   command line utils: yes -->
-<!--  -->
-<!--   Warning: Using zlib is not totally safe -->
-<!--   Warning: Using libopenjpeg is recommended -->
-<!--  -->
-
-```
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON
 ```
 
@@ -608,6 +624,11 @@ Building Poppler with support for:
 $ make
 $ make install
 $ popd
+```
+
+***
+
+```
 $ popd
 $ strings -a /mingw/bin/libpoppler.dll | grep poppler | head
 ...
@@ -629,7 +650,7 @@ C:/MinGW/share/poppler
 W32TeX の poppler-data (C:\w32tex\share\texworks\share\poppler) を C:\MinGW\share にコピーします．
 
 ```
-$ cp -pr /c/w32tex/share/texworks/share/poppler/ /mingw/share/poppler
+$ cp -pR /c/w32tex/share/texworks/share/poppler/ /mingw/share/poppler
 ```
 
 ***
@@ -653,7 +674,7 @@ C:.
 TeX Live の poppler-data (C:\texlive\2012\tlpkg\texworks\share\poppler) を C:\MinGW\share にコピーします．
 
 ```
-$ cp -pr /c/texlive/2012/tlpkg/texworks/share/poppler/ /mingw/share/poppler
+$ cp -pR /c/texlive/2012/tlpkg/texworks/share/poppler/ /mingw/share/poppler
 ```
 
 ***
