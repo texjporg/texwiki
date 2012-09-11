@@ -34,7 +34,7 @@ master ブランチ， relaxedcpp11 ブランチは Boost をインストール�
 
 ### Windows (MinGW) {#r72743bf}
 
-poppler をインストールします．<br>
+poppler をインストールします．(pdf2htmlEX をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)<br>
 
 <!-- [[Boost:http://www.boost.org/]] をインストールします． -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
@@ -104,6 +104,7 @@ $ popd
 エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
 ```
+$ cd /c/coolwanglu-pdf2htmlEX
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -119,7 +120,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.25")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.20.0
+--   found poppler, version 0.20.4
 Found fontforge.h: C:/MinGW/include/fontforge/fontforge.h
 Found libfontforge.dll.a: C:/MinGW/lib/libfontforge.dll.a
 Looking for libraries of python, which is required by fontforge, if you can link
@@ -212,11 +213,13 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [WangLu's Tech Blog](http://coolwanglu.blogspot.com/)
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
 - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
+- [154 リンク](http://lang-8.com/393787/journals/1669233)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
-- [Boostライブラリのビルド方法](https://sites.google.com/site/boostjp/howtobuild)
+    <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
+
 - [dlfcn-win32](http://code.google.com/p/dlfcn-win32/)
 - [MinGW/dllを呼び出す - Ura5han Wiki](http://ura5han.resourcez.org/wiki/MinGW/dll%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99)
