@@ -25,6 +25,10 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
 Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 
+- [IE9以前におけるスタイルシート制限](http://html555.jp/2012/05/08/ie_selector/)
+- [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
+- [A webpage that uses CSS styles does not render correctly in Internet Explorer](http://support.microsoft.com/kb/262161/en-us)
+
 ### pdf2htmlEX version 0.3 で変換した HTML ファイルを Mozilla Firefox で表示すると Firefox がフリーズする {#ddfa6a70}
 
 変換した HTML ファイルによっては Mozilla Firefox でフリーズする (固まる) 現象が発生します．→ [Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245356097240698881)<br>
@@ -108,14 +112,14 @@ $ popd
 エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
 ```
-$ cd /c/coolwanglu-pdf2htmlEX
+$ cd coolwanglu-pdf2htmlEX
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- The C compiler identification is GNU 4.7.0
 -- The CXX compiler identification is GNU 4.7.0
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
--- Check for working C compiler: C/MinGW/bin/gcc.exe -- works
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working CXX compiler: C:/MinGW/bin/g++.exe
