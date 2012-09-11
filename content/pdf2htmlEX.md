@@ -22,8 +22,12 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる {#x082653d}
 
-pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．<br>
+pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
 Google Chrome や Mozilla Firefox では正しく表示されました．<br>
+
+### pdf2htmlEX version 0.3 で変換した HTML ファイルを Mozilla Firefox で表示すると Firefox がフリーズする {#ddfa6a70}
+
+変換した HTML ファイルによっては Mozilla Firefox でフリーズする (固まる) 現象が発生します．→ [Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245356097240698881)<br>
 
 ## インストール {#d5b9a2e9}
 
@@ -118,7 +122,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.25")
+-- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.26")
 -- checking for module 'poppler>=0.20.0'
 --   found poppler, version 0.20.4
 Found fontforge.h: C:/MinGW/include/fontforge/fontforge.h
@@ -212,8 +216,11 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 - [WangLu's Tech Blog](http://coolwanglu.blogspot.com/)
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
-- [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
-- [154 リンク](http://lang-8.com/393787/journals/1669233)
+- [巫璐赛](http://lang-8.com/393787)
+    - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
+    - [152 デモストレーション](http://lang-8.com/393787/journals/1665803/)
+    - [154 リンク](http://lang-8.com/393787/journals/1669233)
+    - [155 促進する](http://lang-8.com/393787/journals/1670992/)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
