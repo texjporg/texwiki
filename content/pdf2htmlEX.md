@@ -40,9 +40,11 @@ master ブランチ， relaxedcpp11 ブランチは Boost をインストール�
 
 - [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
 
-### Windows (MinGW) {#r72743bf}
+### Windows {#r72743bf}
 
-poppler をインストールします．(pdf2htmlEX をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)<br>
+#### MinGW {#d9c5cb24}
+
+poppler - TeX Wiki を参照して poppler をインストールします．(pdf2htmlEX をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)<br>
 
 <!-- [[Boost:http://www.boost.org/]] をインストールします． -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
@@ -108,11 +110,13 @@ $ popd
 <!-- _mktemp は MinGW でも OK -->
 <!-- auto p = _mktemp(buf); -->
 
-[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) の最新版をダウンロードしてインストールします．<br>
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br>
 エラーが発生する場合はビルドできるように修正してインストールします．<br>
 
 ```
-$ cd coolwanglu-pdf2htmlEX
+$ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
+$ tar zxvf coolwanglu-pdf2htmlEX.tar.gz
+$ cd coolwanglu-pdf2htmlEX*
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -136,7 +140,7 @@ Looking for libraries of python, which is required by fontforge, if you can link
 -- checking for one of the modules 'python;python-2.7'
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/coolwanglu-pdf2htmlEX/build
+-- Build files have been written to: C:/coolwanglu-pdf2htmlEX-???????/build
 ```
 
 ```
