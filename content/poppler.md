@@ -523,6 +523,64 @@ $ make install
 $ popd
 ```
 
+- [OpenSSL](http://www.openssl.org/) をインストールします．
+
+```
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1c.tar.gz
+$ tar zxvf openssl-1.0.1c.tar.gz
+$ pushd openssl-1.0.1c
+$ ./config --prefix=/mingw shared
+$ make
+$ make install
+$ popd
+```
+
+<!-- -[[Libgcrypt:http://directory.fsf.org/wiki/Libgcrypt]] をインストールします． -->
+<!--  -->
+<!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.10.tar.bz2 -->
+<!-- $ tar jxvf libgpg-error-1.10.tar.bz2 -->
+<!-- $ pushd libgpg-error-1.10 -->
+<!-- $ ./config - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+<!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.5.0.tar.bz2 -->
+<!-- $ tar jxvf libgcrypt-1.5.0.tar.bz2 -->
+<!-- $ pushd libgcrypt-1.5.0 -->
+<!-- $ ./config - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+- [libssh2](http://www.libssh2.org/) をインストールします．
+
+```
+$ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.2.tar.gz
+$ tar zxvf libssh2-1.4.2.tar.gz
+$ pushd libssh2-1.4.2
+$ ./configure --prefix=/mingw
+```
+
+```
+  version:          1.4.2
+  Host type:        i686-pc-mingw32
+  Install prefix:   /mingw
+  Compiler:         gcc
+  Compiler flags:    -DLIBSSH2_WIN32
+  Library types:    Shared=yes, Static=yes
+  Crypto library:   openssl: yes (AES-CTR: no) libgcrypt: no
+  Debug build:      no
+  Build examples:   yes
+  Path to sshd:      (only for self-tests)
+  libz compression: yes
+```
+
+```
+$ make
+$ make install
+$ popd
+```
+
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
@@ -530,6 +588,40 @@ $ curl -R -L -O http://curl.haxx.se/download/curl-7.27.0.tar.bz2
 $ tar jxvf curl-7.27.0.tar.bz2
 $ pushd curl-7.27.0
 $ ./configure --prefix=/mingw
+```
+
+```
+  curl version:     7.27.0
+  Host setup:       i686-pc-mingw32
+  Install prefix:   /mingw
+  Compiler:         gcc
+  SSL support:      enabled (OpenSSL)
+  SSH support:      enabled (libSSH2)
+  zlib support:     enabled
+  krb4 support:     no      (--with-krb4*)
+  GSSAPI support:   no      (--with-gssapi)
+  SPNEGO support:   no      (--with-spnego)
+  TLS-SRP support:  enabled
+  resolver:         default (--enable-ares / --enable-threaded-resolver)
+  ipv6 support:     no      (--enable-ipv6)
+  IDN support:      no      (--with-{libidn,winidn})
+  Build libcurl:    Shared=yes, Static=yes
+  Built-in manual:  no      (--enable-manual)
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   enabled (--disable-verbose)
+  SSPI support:     no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     no
+  LDAP support:     enabled (winldap)
+  LDAPS support:    enabled
+  RTSP support:     enabled
+  RTMP support:     no      (--with-librtmp)
+  metalink support: no      (--with-libmetalink)
+  Protocols:        DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS LDAP LDAPS P
+OP3 POP3S RTSP SMTP SMTPS TELNET TFTP
+```
+
+```
 $ make
 $ make install
 $ popd
