@@ -39,8 +39,8 @@ poppler 0.19.2 で font configuration で win32 を選択した場合，日本�
 
 #### MinGW {#x2d1044d}
 
-curl, nkf は W32TeX のものを使用します．<br>
 TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32](http://curl.haxx.se/download.html#Win32) から curl の Windows バイナリをダウンロードして curl.exe に PATH を通してください．<br>
+W32TeX を使用している場合は curl が W32TeX に含まれているのでダウンロードする必要はありません．<br>
 sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれています．<br>
 
 - [MinGW](http://www.mingw.org/) のサイトから [mingw-get-inst の最新版](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) をダウンロードし，フルインストールします．
@@ -247,6 +247,53 @@ $ pushd freetype-2.4.10
 $ ./configure --prefix=/mingw
 $ make
 $ make install
+$ popd
+```
+
+- [nkf](http://sourceforge.jp/projects/nkf/) をインストールします．
+
+```
+$ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
+$ tar zxvf nkf-2.1.2.tar.gz
+$ pushd nkf-2.1.2
+```
+
+Makefile の
+
+```
+prefix = /usr/local
+```
+
+を
+
+```
+prefix = /mingw
+```
+
+に変更します．
+
+```
+$ make
+$ make install
+mkdir /mingw/bin
+mkdir: cannot create directory `/mingw/bin': File exists
+make: [install] Error 1 (ignored)
+mkdir /mingw/man
+mkdir: cannot create directory `/mingw/man': File exists
+make: [install] Error 1 (ignored)
+mkdir /mingw/man/man1
+mkdir: cannot create directory `/mingw/man/man1': File exists
+make: [install] Error 1 (ignored)
+mkdir /mingw/man/ja
+mkdir /mingw/man/ja/man1
+cp -f nkf /mingw/bin/
+cp -f nkf.1 /mingw/man/man1/
+cp -f nkf.1j /mingw/man/ja/man1/nkf.1
+```
+
+エラーが表示されますがインストールされるので気にしないでください．
+
+```
 $ popd
 ```
 
