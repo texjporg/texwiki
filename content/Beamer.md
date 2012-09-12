@@ -120,6 +120,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
+- [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
