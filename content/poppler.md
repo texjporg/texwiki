@@ -47,6 +47,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 <!-- -http://get.qt.nokia.com/qt/source/ から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.1\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します． -->
 - [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.2\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
+    <!-- -http://releases.qt-project.org/qt5.0/ -->
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
 
@@ -836,6 +837,11 @@ C:.
 
 ***
 
+### Linux {#k603e696}
+
+- [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
+- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
+
 ## 関連リンク {#m3ac74dd}
 
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
@@ -843,7 +849,6 @@ C:.
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
-- [Beyond Linux® From Scratch - Poppler](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 - [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
