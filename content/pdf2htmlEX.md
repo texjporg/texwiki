@@ -29,9 +29,10 @@ Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 - [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
 - [A webpage that uses CSS styles does not render correctly in Internet Explorer](http://support.microsoft.com/kb/262161/en-us)
 
-### pdf2htmlEX version 0.3 で変換した HTML ファイルを Mozilla Firefox で表示すると Firefox がフリーズする {#ddfa6a70}
+### pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox がフリーズする {#ddfa6a70}
 
-変換した HTML ファイルによっては Mozilla Firefox でフリーズする (固まる) 現象が発生します．→ [Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245356097240698881)<br>
+変換した HTML ファイルによっては Windows 版の Mozilla Firefox でフリーズする (固まる) 現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
+OS X や Linux の Firefox では問題が発生しないようです．<br>
 
 ## インストール {#d5b9a2e9}
 
@@ -89,7 +90,7 @@ $ popd
 ```
 
 [FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
-エラーが発生する場合はビルドできるように修正してインストールします．<br>
+エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
@@ -111,7 +112,7 @@ $ popd
 <!-- auto p = _mktemp(buf); -->
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br>
-エラーが発生する場合はビルドできるように修正してインストールします．<br>
+エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
 
 ```
 $ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
@@ -232,6 +233,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
+- [「pdf2htmlEX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=pdf2htmlEX)
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
     <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
