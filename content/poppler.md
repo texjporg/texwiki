@@ -35,9 +35,12 @@ poppler 0.19.2 で font configuration で win32 を選択した場合，日本�
 
 ## インストール {#e0d6f40b}
 
-### Windows (MinGW) {#o45a1c30}
+### Windows {#o45a1c30}
+
+#### MinGW {#x2d1044d}
 
 curl, nkf は W32TeX のものを使用します．<br>
+TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32](http://curl.haxx.se/download.html#Win32) から curl の Windows バイナリをダウンロードして curl.exe に PATH を通してください．<br>
 sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれています．<br>
 
 - [MinGW](http://www.mingw.org/) のサイトから [mingw-get-inst の最新版](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) をダウンロードし，フルインストールします．
@@ -632,9 +635,9 @@ $ popd
 ```
 configure の場合は --with-font-configuration=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
 CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
-poppler 0.19.2 で -DFONT_CONFIGURATION=win32 でビルドしても日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示できるようになりました．
-ただし -DFONT_CONFIGURATION=win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．
-GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は -DFONT_CONFIGURATION=fontconfig でビルドして fontconfig を適切に設定することをおすすめします．
+poppler 0.19.2 で --with-font-configuration=win32 または -DFONT_CONFIGURATION=win32 でビルドしても日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示できるようになりました．
+ただし font configuration: win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration: fontconfig でビルドして fontconfig を適切に設定することをおすすめします．
 ```
 
 ```
