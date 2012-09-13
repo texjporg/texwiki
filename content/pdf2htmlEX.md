@@ -24,7 +24,6 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 [commit a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96](https://github.com/coolwanglu/pdf2htmlEX/commit/a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96) で修正されました．<br>
 修正前の pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
-Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 
 - [IE9以前におけるスタイルシート制限](http://html555.jp/2012/05/08/ie_selector/)
 - [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
