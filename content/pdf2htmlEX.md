@@ -20,9 +20,10 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ## 不具合 {#q60cf17d}
 
-### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる {#x082653d}
+### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる → [commit a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96](https://github.com/coolwanglu/pdf2htmlEX/commit/a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96) で修正されました {#x082653d}
 
-pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
+[commit a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96](https://github.com/coolwanglu/pdf2htmlEX/commit/a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96) で修正されました．<br>
+修正前の pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
 Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 
 - [IE9以前におけるスタイルシート制限](http://html555.jp/2012/05/08/ie_selector/)
@@ -31,14 +32,22 @@ Google Chrome や Mozilla Firefox では正しく表示されました．<br>
 
 ### pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox がフリーズする {#ddfa6a70}
 
-変換した HTML ファイルによっては Windows 版の Mozilla Firefox でフリーズする (固まる) 現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
+pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox がフリーズする (固まる) 現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
+Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると動作が非常に遅くなってフリーズする現象が発生します．<br>
 OS X や Linux の Firefox では問題が発生しないようです．<br>
+
+### pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると細い線 (1−x の − (マイナス) など) が表示されない {#t8c12146}
+
+pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
+Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると 1−x の − (マイナス) が表示されていないように見えます．<br>
+コピー &amp; ペーストすると − (マイナス) がきちんとペーストできます．<br>
 
 ## インストール {#d5b9a2e9}
 
-C++11 未対応のコンパイラを使用している場合は relaxedcpp11 ブランチを使ってみてください。<br>
+C++11 未対応のコンパイラを使用している場合は master ブランチ， または relaxedcpp11 ブランチを使ってみてください。<br>
 master ブランチ， relaxedcpp11 ブランチは Boost をインストールしなくてもビルドできるようになりました。<br>
 
+- [pdf2htmlEX at master](https://github.com/coolwanglu/pdf2htmlEX/tree/master)
 - [pdf2htmlEX at relaxedcpp11](https://github.com/coolwanglu/pdf2htmlEX/tree/relaxedcpp11)
 
 ### Windows {#r72743bf}
