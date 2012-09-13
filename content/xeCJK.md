@@ -32,17 +32,18 @@ xeCJK が必要です．<br>
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html)
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
-- [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126) zxjatype \[2012/09/09 v0.6 ZX Japanese typeset\]
+- [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj) → zxjatype v0.6 で対応しました
 - [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146) → zxjatype v0.6 で対応しました
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
+- [% -\*- coding: utf-8 -\*- % Only for XeLaTeX. % need to install tikz-dependency pa - Pastebin.com](http://pastebin.com/2RTcBAA3)
 
 ### リリース情報 {#ecfc94ae}
 
 2012-09-09 ZXjatype 0.6<br>
 
 ZXjatype 0.6 は xeCJK 3.0.8 でも xeCJK 2.4.6 でもどちらでも動作します．<br>
-ZXjatype 0.5 は xeCJK 3.0.8 でエラーが発生します．<br>
+ZXjatype 0.6 よりも前のバージョンでは xeCJK 3.0.8 でエラーが発生します．<br>
 
 ## xeCJK 以外のパッケージ {#k90787cf}
 
