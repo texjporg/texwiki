@@ -32,10 +32,10 @@ xeCJK が必要です．<br>
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html)
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
+- [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
 - [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj) → zxjatype v0.6 で対応しました
 - [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146) → zxjatype v0.6 で対応しました
-- [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
 - [% -\*- coding: utf-8 -\*- % Only for XeLaTeX. % need to install tikz-dependency pa - Pastebin.com](http://pastebin.com/2RTcBAA3)
 
 ### リリース情報 {#ecfc94ae}
