@@ -9,5 +9,21 @@ pukiwiki: "pxdvi"
 
 ## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) {#ca163844}
 
-- [xdvik](http://xdvi.sourceforge.net/) を日本語化したもの
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) から入手できます．
+## pxdvi とは {#s1b173bb}
+
+pxdvi は X Window System 上で動作する DVI プレビューアです．<br>
+pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したものです．<br>
+
+### リリース情報 {#y0777637}
+
+2012-04-01 xdvik 22.85
+
+xdvik 22.85 は TeX Live 2012 に含まれています．
+
+## インストール {#cce5d1ed}
+
+pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
+
+## 関連リンク {#qded2ff9}
+
+- [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
