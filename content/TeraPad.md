@@ -53,9 +53,9 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
     \documentclass[12pt]{bxjsarticle}
     \usepackage[xetex]{hyperref}
     \usepackage{zxjatype}
-    \setCJKmainfont{MS Mincho}
-    \setCJKsansfont{MS Gothic}
-    \setCJKmonofont{MS Gothic}
+    \setjamainfont{MS Mincho}
+    \setjasansfont{MS Gothic}
+    \setjamonofont{MS Gothic}
     \usepackage{xltxtra}
   \fi
 \else
