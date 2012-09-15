@@ -36,7 +36,7 @@ xeCJK が必要です．<br>
 - [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj) → zxjatype v0.6 で対応しました
 - [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146) → zxjatype v0.6 で対応しました
-- [% -\*- coding: utf-8 -\*- % Only for XeLaTeX. % need to install tikz-dependency pa - Pastebin.com](http://pastebin.com/2RTcBAA3)
+- [tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
 
 ### リリース情報 {#ecfc94ae}
 
