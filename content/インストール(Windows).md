@@ -211,6 +211,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[TeX Live 2012をWindows 7 (64bit)環境にインストールしたメモ](http://d.hatena.ne.jp/hyuki/20120915/tex)
+: 2012-09-15
+
 [組版メモ 2](http://x19290.appspot.com/pbej-tmp/typeset2.html)
 : 2012-08-22
 
