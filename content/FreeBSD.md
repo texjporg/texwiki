@@ -32,44 +32,31 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
     - [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 
-### teTeX {#y07bcd98}
-
+<!-- **teTeX [#y07bcd98] -->
+<!--  -->
 <!-- 歴史的事情により，teTeXベースのものに完全には置き換わっていません．主要なものに関してはteTeXベースのPortが用意されています． -->
-
-#### teTeX 関連 {#c779326f}
-
-- [print/teTeX-base](http://svnweb.freebsd.org/ports/head/print/teTeX-base/)
-- [japanese/ptex](http://svnweb.freebsd.org/ports/head/japanese/ptex/)
-- [japanese/dvipsk](http://svnweb.freebsd.org/ports/head/japanese/dvipsk/)
-- [japanese/xdvik](http://svnweb.freebsd.org/ports/head/japanese/xdvik/)
-- [japanese/texfamily](http://svnweb.freebsd.org/ports/head/japanese/texfamily/)
-
-#### インストール {#e765b64c}
-
-手っ取り早く構築するには，
-
-```
-# cd /usr/ports/japanese/teTeX && make && make install
-```
-
-とします．
-japanese/teTeXは日本語TeX関連PortsのMeta-Portsです．
-GhostScriptやフォント関連は基本的に依存関係で自動的に導入されます．
-ただし，
-GhostScriptの日本語環境はjapanese/ghostscript-gnu-jpnfont
-を導入する必要があります．
-
-```
-# cd /usr/ports/japanese/ghostscript-gnu-jpnfont && make && make install
-```
-
-[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/%7eokumura/jsclasses/)はjapanese/platex-jsclassesにあるので，お好みにより
-
-```
-# cd /usr/ports/japanese/platex-jsclasses && make && make install
-```
-
-するといいでしょう．
+<!--  -->
+<!-- ***teTeX 関連 [#c779326f] -->
+<!-- -[[print/teTeX-base:http://svnweb.freebsd.org/ports/head/print/teTeX-base/]] -->
+<!-- -[[japanese/ptex:http://svnweb.freebsd.org/ports/head/japanese/ptex/]] -->
+<!-- -[[japanese/dvipsk:http://svnweb.freebsd.org/ports/head/japanese/dvipsk/]] -->
+<!-- -[[japanese/xdvik:http://svnweb.freebsd.org/ports/head/japanese/xdvik/]] -->
+<!-- -[[japanese/texfamily:http://svnweb.freebsd.org/ports/head/japanese/texfamily/]] -->
+<!--  -->
+<!-- ***インストール [#e765b64c] -->
+<!-- 手っ取り早く構築するには， -->
+<!-- # cd /usr/ports/japanese/teTeX && make && make install -->
+<!-- とします． -->
+<!-- japanese/teTeXは日本語TeX関連PortsのMeta-Portsです． -->
+<!-- GhostScriptやフォント関連は基本的に依存関係で自動的に導入されます． -->
+<!-- ただし， -->
+<!-- GhostScriptの日本語環境はjapanese/ghostscript-gnu-jpnfont -->
+<!-- を導入する必要があります． -->
+<!-- # cd /usr/ports/japanese/ghostscript-gnu-jpnfont && make && make install -->
+<!--  -->
+<!-- [[新ドキュメントクラス:http://oku.edu.mie-u.ac.jp/%7eokumura/jsclasses/]]はjapanese/platex-jsclassesにあるので，お好みにより -->
+<!-- # cd /usr/ports/japanese/platex-jsclasses && make && make install -->
+<!-- するといいでしょう． -->
 
 ### その他関連Ports {#k9078aba}
 
