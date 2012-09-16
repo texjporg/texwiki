@@ -9,9 +9,9 @@ pukiwiki: "Linux/Vine"
 
 ## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
 
-## Vine Linux 6 {#sf8daebc}
+## Vine Linux 6.1 {#sf8daebc}
 
-[Vine Linux 6 (Haut Brion)](http://vinelinux.org/news/20110806.html) がリリースされました．
+2012年7月30日に [Vine Linux 6.1 (Pape Clement)](http://vinelinux.org/news/20120730.html) がリリースされました． <!-- [[Vine Linux 6 (Haut Brion):http://vinelinux.org/news/20110806.html]] がリリースされました． -->
 
 TeX システムが ptetex から ptexlive に変更になりました．
 
@@ -21,9 +21,11 @@ TeX システムが ptetex から ptexlive に変更になりました．
 - [Vine Linux 6.0 での TeX Live 環境  \[08/12/2011\]](http://www-cc.gakushuin.ac.jp/~20050003/p-latex-main.html#texlive-vinelinux6)
 - [LaTeXから作るPDF の日本語しおり \[Vine 6.0\]](http://log-c.blog.so-net.ne.jp/2011-09-29-2)
 
-## Vine Linux 5 {#vac9e97f}
+## Vine Linux 5.2 {#vac9e97f}
 
-[Vine Linux 5.2 (Palmer)](http://vinelinux.org/news/20101130.html) がリリースされました。
+2012年9月3日に [Vine Linux 5.2 の更新パッケージの提供が終了しました](http://vinelinux.org/news/20120903-1.html)<br>
+
+<!-- [[Vine Linux 5.2 (Palmer):http://vinelinux.org/news/20101130.html]] がリリースされました。~ -->
 
 <!-- オンラインドキュメントでは、TeX 関連のドキュメントを少しずつ更新しながら充実させていく予定です。 -->
 
