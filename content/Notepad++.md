@@ -85,7 +85,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### 日本語言語ファイル {#i35c46e6}
 
-- [Japanese Language File for Notepad++ 6.1.2](https://gist.github.com/2664323)
+- [Japanese Language File for Notepad++ 6.1.5](https://gist.github.com/2664323)
 
 ## エンコード (Encoding) {#d626279b}
 
