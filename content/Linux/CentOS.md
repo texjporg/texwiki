@@ -9,6 +9,8 @@ pukiwiki: "Linux/CentOS"
 
 ## [CentOS](http://www.centos.org/) {#n9cb81ae}
 
+## TeX Live {#od75da14}
+
 ### TeX Live 2012 {#e1520aae}
 
 - [CentOS - TeX Live 2012 インストール！](http://www.mk-mode.com/wordpress/2012/09/15002016/)
