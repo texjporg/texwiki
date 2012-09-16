@@ -22,7 +22,8 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 [MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
 
-- [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
+- [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
+    - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
 
 ### リリース情報 {#td599942}
 
