@@ -62,7 +62,7 @@ Notepad++ は
 
 ### リリース情報 {#d2ceb628}
 
-2012-09-11 Notepad++ v6.1.7<br>
+2012-09-16 Notepad++ v6.1.8<br>
 2011-03-05 Notepad++ v5.8.7-6 +EUC-JP (UNICODE) 版<br>
 
 Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
@@ -74,7 +74,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### 派生版 {#l02b5ab5}
 
-- [派生ビルド](http://www.geocities.jp/freesftys/npp/)
+- [Notepad++ 派生ビルド](http://www.geocities.jp/freesftys/npp/)
     - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
 - [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
     - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
