@@ -30,17 +30,17 @@ pdf2htmlEX version 0.4 で修正されました． →
 - [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
 - [A webpage that uses CSS styles does not render correctly in Internet Explorer](http://support.microsoft.com/kb/262161/en-us)
 
-### pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる {#ddfa6a70}
+### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる {#ddfa6a70}
 
-pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
+pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
 Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると Firefox の動作が極端に遅くなります．<br>
 OS X や Linux の Firefox では問題が発生しないようです．<br>
 
-### pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Google Chrome で拡大/縮小が 100% の状態で表示すると細い線 (1−x の − (マイナス) など) が表示されない {#t8c12146}
+### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されない {#t8c12146}
 
-pdf2htmlEX version 0.3 で変換した HTML ファイルを Windows 版の Google Chrome で拡大/縮小が 100% の状態で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
-Windows 版の Google Chrome で拡大/縮小が 100% の状態で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると 1−x の − (マイナス) が表示されていないように見えます．<br>
-拡大/縮小を 110% の状態にすると表示されます．<br>
+pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
+Windows 版の Google Chrome で拡大しない状態で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると 1−x の − (マイナス) が表示されていないように見えます．<br>
+拡大すると表示されます．<br>
 Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](http://twitter.com/coolwanglu/status/246220925454934016)
 
 ## インストール {#d5b9a2e9}
@@ -173,7 +173,7 @@ j
 bj
 [ 61%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
 .cc.obj
-[ 69%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ff.c.obj
+[ 69%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ffw.c.obj
 [ 76%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer.cc.o
 bj
 [ 84%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/FontPreprocessor.cc.obj
@@ -190,10 +190,11 @@ $ make install
 Install the project...
 -- Install configuration: ""
 -- Installing: C:/MinGW/bin/pdf2htmlEX.exe
--- Installing: C:/MinGW/share/pdf2htmlEX/all.css
--- Installing: C:/MinGW/share/pdf2htmlEX/head.html
--- Installing: C:/MinGW/share/pdf2htmlEX/neck.html
--- Installing: C:/MinGW/share/pdf2htmlEX/tail.html
+-- Installing: C:/MinGW/share/pdf2htmlEX/base.css
+-- Installing: C:/MinGW/share/pdf2htmlEX/hide_pages.js
+-- Installing: C:/MinGW/share/pdf2htmlEX/jquery.js
+-- Installing: C:/MinGW/share/pdf2htmlEX/manifest
+-- Installing: C:/MinGW/share/pdf2htmlEX/scroll.js
 -- Installing: C:/MinGW/share/man/man1/pdf2htmlEX.1
 ```
 
