@@ -30,9 +30,11 @@ TextMate 1 はシェアウェアです．<br>
 
 ## TextMate 2 for Snow Leopard {#g205429c}
 
-- [https://github.com/stepheneb/textmate/tree/10.6-master](https://github.com/stepheneb/textmate/tree/10.6-master)
-- [Textmate2 for Snow Leopard](http://macbookblack.blogspot.jp/2012/08/textmate2-for-snow-leopard.html)
-- [Textmate2 for Snow Leopard](http://blog.goo.ne.jp/typer_k20a/e/4053e2f2004f5d1cec8dfd9ed763c29a)
+- [10.6 compatibility branch for current TM2 master](https://github.com/nanoant/textmate)
+    - [Downloads · nanoant/textmate · GitHub](https://github.com/nanoant/textmate/downloads)
+        <!-- -https://github.com/stepheneb/textmate/tree/10.6-master -->
+        <!-- -[[Textmate2 for Snow Leopard:http://macbookblack.blogspot.jp/2012/08/textmate2-for-snow-leopard.html]] -->
+        <!-- -[[Textmate2 for Snow Leopard:http://blog.goo.ne.jp/typer_k20a/e/4053e2f2004f5d1cec8dfd9ed763c29a]] -->
 
 ## Pull Requests {#c84af904}
 
