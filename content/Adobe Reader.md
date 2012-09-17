@@ -25,6 +25,20 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 [Adobe Reader 9, Adobe Acrobat 9 のサポートが 2013年6月26日 で終了](http://blogs.adobe.com/adobereader/2012/06/one-year-from-now-adobe-reader-and-acrobat-9-eol.html)する予定です．<br>
 Adobe Reader 9 を使用している方は Adobe Reader X にアップグレードしてください．<br>
 
+## 不具合 {#r92dd454}
+
+### Windows 版 Adobe Reader X で Google 日本語入力を使用している場合に日本語入力ができない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
+
+- [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
+- [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
+
+### Windows 7 64bit で PDF ファイルののサムネールが表示されない → [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+
+- [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941)
+- [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/)
+- [【解決法】64bit版Windows7でPDFファイルのサムネイルが表示されない！](http://www.midnight2d.com/blog/archives/190)
+- [64bit版 Windows 7 で Adobe PDFのサムネイルを表示する](http://tak-shimiz.lolipop.jp/oyajinote/blog/archives/2011/0521_183928.html)
+
 ## ダウンロード {#ne09e93f}
 
 - [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
@@ -53,17 +67,16 @@ Adobe Reader 9 を使用している方は Adobe Reader X にアップグレー�
 - [Adobe Reader X ユーザーガイド](http://help.adobe.com/ja_JP/reader/using/)
 - [Acrobat X Standard ユーザーガイド](http://help.adobe.com/ja_JP/acrobat/standard/using/)
 
-## 環境設定 {#y6984ba3}
-
-メニューから \[編集(E)\]-\[環境設定(N)...\] をクリックします．
-
-### 一般 {#v855bee3}
-
-分類(G): の一般をクリックしてアプリケーションの起動で「起動時に保護モードを有効にする(M)」をチェックします．
-
-### 文書 {#v957d46d}
-
-分類(G): の文書をクリックして開き方の設定で「文書を再び開くときに前回のビュー設定を復元(R)」をチェックします．
+<!-- *環境設定 [#y6984ba3] -->
+<!-- メニューから [編集(E)]-[環境設定(N)...] をクリックします． -->
+<!--  -->
+<!-- **一般 [#v855bee3] -->
+<!--  -->
+<!-- 分類(G): の一般をクリックしてアプリケーションの起動で「起動時に保護モードを有効にする(M)」をチェックします． -->
+<!--  -->
+<!-- **文書 [#v957d46d] -->
+<!--  -->
+<!-- 分類(G): の文書をクリックして開き方の設定で「文書を再び開くときに前回のビュー設定を復元(R)」をチェックします． -->
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
@@ -122,9 +135,6 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 ## 関連リンク {#m8d917f7}
 
 - Linux/Debian - TeX Wiki#Adobe Reader
-- [【解決法】64bit版Windows7でPDFファイルのサムネイルが表示されない！](http://www.midnight2d.com/blog/archives/190)
-- [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
-- [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 - [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
 - [Acrobat DDE Message 一覧](http://pdf-dde.nnn2.com/?p=43)
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
