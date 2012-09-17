@@ -12,6 +12,7 @@ pukiwiki: "科研費LaTeX"
 - [科研費LaTeX](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/)
     - [科研費LaTeX FAQ](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/faq.html)
     - [科研費マクロ&amp;LaTeX掲示板](http://www.cm.kj.yamagata-u.ac.jp/kakenhibbs/tree.php)
+- [Taku Yamanaka(@taku_ymnk)/「科研費LaTeX」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=taku_ymnk&word=%E7%A7%91%E7%A0%94%E8%B2%BBLaTeX)
 
 ## 関連リンク {#mddd7437}
 
