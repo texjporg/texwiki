@@ -18,6 +18,7 @@ poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gumm
 
 - [poppler](http://poppler.freedesktop.org/)
     - [repository](http://cgit.freedesktop.org/poppler/poppler)
+- [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
 
 ### リリース情報 {#ha3b28ab}
 
