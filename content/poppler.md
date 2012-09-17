@@ -46,7 +46,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - [MinGW](http://www.mingw.org/) のサイトから [mingw-get-inst の最新版](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) をダウンロードし，フルインストールします．
 
 <!-- -http://get.qt.nokia.com/qt/source/ から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.1\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します． -->
-- [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.2\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
+- [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.3\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
     <!-- -http://releases.qt-project.org/qt5.0/ -->
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
@@ -699,7 +699,7 @@ $ pushd poppler-0.20.4
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.2/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.2/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.2/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.2/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl
 ```
 
 ```
