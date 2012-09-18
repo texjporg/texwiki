@@ -32,15 +32,15 @@ Geany はデフォルトで LaTeX のビルドに対応しています．
 #### LaTeX コマンド {#z6996bd9}
 
 LaTeX -> <ins>D</ins>VI
-: platex --file-line-error-style "%f"
+: platex -synctex=1 --file-line-error-style "%f"<br>uplatex -synctex=1 --file-line-error-style "%f"
 
 LaTeX -> <ins>P</ins>DF
-: platex --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"<br>uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"<br>pdflatex -synctex=1 --file-line-error-style "%f"<br>lualatex -synctex=1 --file-line-error-style "%f"<br>xelatex -synctex=1 --file-line-error-style "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
 V<ins>i</ins>ew PDF File
-: evince "%e.pdf"
+: evince "%e.pdf"<br>zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
 
 <ins>V</ins>iew DVI File
 : pxdvi -watchfile 1 "%e.dvi"
