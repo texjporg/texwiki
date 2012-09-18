@@ -108,3 +108,4 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 【参考情報】
 
 - [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
+- [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
