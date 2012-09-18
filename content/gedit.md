@@ -16,7 +16,7 @@ pukiwiki: "gedit"
 ## gedit とは {#s7f61b9d}
 
 gedit は Linux で動作する GNOME 公式のテキストエディタです．<br>
-gedit は Windows や Mac OS X でも動作します．<br>
+gedit は Windows や OS X でも動作します．<br>
 
 - [gedit](http://projects.gnome.org/gedit/)
 - [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
@@ -26,15 +26,17 @@ gedit は Windows や Mac OS X でも動作します．<br>
 
 ### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
+最新版の gedit-latex は gedit 3 で動作します．<br>
+
 - [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin)
     <!-- - -[[gedit-latex team:http://sourceforge.net/project/memberlist.php?group_id=204144]] -->
 
 - gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．
 - [http://git.gnome.org/browse/gedit-latex](http://git.gnome.org/browse/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
-- [Plugin doesn't work with gedit 3](http://sourceforge.net/tracker/index.php?func=detail&aid=3297713&group_id=204144&atid=988428) → 最新版の gedit-latex は gedit 3 で動作します．
 - [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
 - [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
+- [synctex with gedit on Ubuntu 12.04](http://blog.livedoor.jp/shota_soga_/archives/3536366.html)
 
 ### 外部ツール {#qa44ee46}
 
