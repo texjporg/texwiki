@@ -205,6 +205,10 @@ pdftohtmlEX version 0.4
 
 pdf2htmlEX はコードを適切に修正すれば Windows でも動作します．
 
+#### Cygwin {#wf50eda2}
+
+Cygwin では問題なく動作するようです．<br>
+
 ### OS X {#u6860a4e}
 
 - [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
