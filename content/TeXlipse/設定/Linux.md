@@ -457,7 +457,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>zathura</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>zathura "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>zathura -s -x "echo %{input}:%{line}" "&#x25;file"</ins><br>
 
 <br>
 
@@ -474,7 +474,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 <br>
 
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアーのコンソールへ "file:行番号" を出力　　▼\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
