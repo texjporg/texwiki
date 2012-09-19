@@ -18,6 +18,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
+- [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
 
 ### リリース情報 {#if427aa7}
 
@@ -32,6 +33,7 @@ xeCJK が必要です．<br>
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html)
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
+- [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
 - [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj) → zxjatype v0.6 で対応しました
