@@ -734,7 +734,7 @@ $ make install
 
 ***
 
-- CMake で Makefile を作成してインストールする場合
+- CMake で Makefile を作成してインストールする場合<br>CMake で Makefile を作成した場合は poppler.pc などがインストールされないようです
 
 ```
 $ mkdir build
