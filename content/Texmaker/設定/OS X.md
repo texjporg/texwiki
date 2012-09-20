@@ -24,6 +24,10 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 #### [MacTeX &amp; TeX Live](/Mac/#f5466652) {#i89a162a}
 
 動作未確認です．<br>
+Texmaker 3.4.1 では動作するようです．<br>
+
+- [TeXmaker3.4.1でも無事日本語が出力されました](http://www.geocities.jp/flutecore/Weblog/archives/2012/09/entry_133.html)
+- [QA: TeXmakerの設定改善について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=874)
 
 ***
 
