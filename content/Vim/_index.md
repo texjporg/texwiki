@@ -674,7 +674,7 @@ function! Zathura()
   let masterDir = getcwd()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
-  let viewer = 'zathura'
+  let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
 
   execute 'silent! !' execString
