@@ -222,6 +222,12 @@ Cygwin では問題なく動作するようです．<br>
 
 - [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
 
+```
+$ sudo apt-add-repository ppa:coolwanglu/pdf2htmlex
+$ sudo apt-get update
+$ sudo apt-get install pdf2htmlex
+```
+
 #### Arch Linux {#ae9f73e9}
 
 - [AUR (en) - pdf2htmlex-git](https://aur.archlinux.org/packages.php?ID=62426)
