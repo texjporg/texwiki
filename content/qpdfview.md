@@ -13,3 +13,5 @@ pukiwiki: "qpdfview"
 
 qpdfview は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
+[revision 588](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/revision/588) から SyncTeX がサポートされるようになりました．<br>
+[revision 599](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/revision/599) で SyncTeX branch がマージされました．<br>
