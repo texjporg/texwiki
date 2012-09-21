@@ -16,6 +16,7 @@ pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したもので�
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
+- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 
 ### リリース情報 {#y0777637}
 
