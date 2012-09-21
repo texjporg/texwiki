@@ -13,3 +13,10 @@ dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェ�
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
 - [TeX Live - TeX Wiki#dvisvgm](</TeX Live/#s8483053>)
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．
+
+```
+
+$ pdftocairo -svg hoge.pdf
+```
