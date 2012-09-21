@@ -16,6 +16,8 @@ pukiwiki: "pdf2htmlEX"
 pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウェアです．
 
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
+    - [FAQ](https://github.com/coolwanglu/pdf2htmlEX/wiki/FAQ)
+- [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
     - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
 
 ## 不具合 {#q60cf17d}
