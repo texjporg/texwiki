@@ -18,7 +18,7 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
     - [FAQ](https://github.com/coolwanglu/pdf2htmlEX/wiki/FAQ)
 - [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
-    - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
+- [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
 
 ## 不具合 {#q60cf17d}
 
@@ -32,15 +32,19 @@ pdf2htmlEX version 0.4 で修正されました． →
 - [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
 - [A webpage that uses CSS styles does not render correctly in Internet Explorer](http://support.microsoft.com/kb/262161/en-us)
 
-### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる {#ddfa6a70}
+### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる → pdf2htmlEX 開発版で修正されました {#ddfa6a70}
 
-pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
+pdf2htmlEX 開発版で修正されました． →
+(参照：[commit fddff14dc87a192c8efd52949d643bc7760842fc](https://github.com/coolwanglu/pdf2htmlEX/commit/fddff14dc87a192c8efd52949d643bc7760842fc))<br>
+修正前の pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
 Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると Firefox の動作が極端に遅くなります．<br>
 OS X や Linux の Firefox では問題が発生しないようです．<br>
 
-### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されない {#t8c12146}
+### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されない → pdf2htmlEX 開発版で修正されました {#t8c12146}
 
-pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
+pdf2htmlEX 開発版で修正されました． →
+(参照：[cheat.htmlはChromeでもみえるようです](http://twitter.com/coolwanglu/status/249134714722611200))<br>
+修正前の pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
 Windows 版の Google Chrome で拡大しない状態で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると 1−x の − (マイナス) が表示されていないように見えます．<br>
 拡大すると表示されます．<br>
 Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](http://twitter.com/coolwanglu/status/246220925454934016)
