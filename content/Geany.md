@@ -40,7 +40,7 @@ LaTeX -> <ins>P</ins>DF
 #### コマンドを実行 {#r981dc9c}
 
 V<ins>i</ins>ew PDF File
-: evince "%e.pdf"<br>okular --unique "%e.pdf"<br>pdfviewer "%e.pdf"<br>zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
+: evince "%e.pdf"<br>okular --unique "%e.pdf"<br>zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"<br>qpdfview --unique "%e.pdf"<br>pdfviewer "%e.pdf"
 
 <ins>V</ins>iew DVI File
 : pxdvi -watchfile 1 "%e.dvi"
