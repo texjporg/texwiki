@@ -359,7 +359,54 @@ pdfopen -viewer ar9-tab "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
-#### pLaTeX (非推奨) {#b13823ac}
+#### pLaTeX {#df33ffbd}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### upLaTeX {#dc4aae10}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pxdvi {#dc806f31}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pxdvi -watchfile 1 "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi"
+```
+
+***
+
+#### pxdvi との連携 (非推奨) {#c3a76830}
+
+- pLaTeX
 
 ***
 
@@ -375,7 +422,7 @@ platex -src-specials "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### upLaTeX (非推奨) {#pdc10784}
+- upLaTeX
 
 ***
 
@@ -391,7 +438,7 @@ uplatex -src-specials "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### pxdvi (非推奨) {#vedc0f33}
+- pxdvi
 
 ***
 
