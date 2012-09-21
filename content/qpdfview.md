@@ -9,5 +9,7 @@ pukiwiki: "qpdfview"
 
 ## [qpdfview](https://launchpad.net/qpdfview) {#gb497957}
 
+- [qpdfview](https://launchpad.net/qpdfview)
+
 qpdfview は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
