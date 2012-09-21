@@ -14,7 +14,16 @@ pukiwiki: "poppler"
 ## poppler とは {#fd295383}
 
 poppler は PDF ファイルを表示するためのライブラリです．<br>
-poppler は [TeXworks](/TeXworks/), [Texmaker](/Texmaker/), [Kile](/Kile/), Gummi などで使用されています．<br>
+poppler は
+
+<table>
+<tbody>
+<tr><th style="color:#468">エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXworks/">TeXworks</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/Kile/">Kile</a>, Gummi</td></tr>
+<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a>, <a href="/qpdfview/">qpdfview</a>, PdfViewer</td></tr>
+</tbody>
+</table>
+
+などで使用されています．<br>
 
 - [poppler](http://poppler.freedesktop.org/)
     - [repository](http://cgit.freedesktop.org/poppler/poppler)
@@ -302,15 +311,9 @@ $ popd
 - [libxml2](http://xmlsoft.org/) をインストールします．
 
 ```
-$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz
-$ tar zxvf libxml2-2.8.0.tar.gz
-```
-
-<!-- $ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-git-snapshot.tar.gz -->
-<!-- $ tar zxvf libxml2-git-snapshot.tar.gz -->
-
-```
-$ pushd libxml2-2.8.0
+$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz
+$ tar zxvf libxml2-2.9.0.tar.gz
+$ pushd libxml2-2.9.0
 ```
 
 <!-- configure.in を修正します． -->
@@ -464,7 +467,7 @@ msgothic.ttc: "MS Gothic" "Regular"
 上記のように表示されない場合は C:\MinGW\etc\fonts\fonts.conf に
 
 ```
-<include>local.conf</include>
+<include ignore_missing="yes">local.conf</include>
 ```
 
 を記述してください．
@@ -840,8 +843,12 @@ C:.
 
 ### Linux {#k603e696}
 
-- [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
-- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
+- fontconfig
+    - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
+    - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/fontconfig.html)
+- poppler
+    - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
+    - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
 
 ## 関連リンク {#m3ac74dd}
 
