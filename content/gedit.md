@@ -268,19 +268,6 @@ okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$
 
 ***
 
-#### PdfViewer {#k6ca6cfc}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME""
-```
-
-***
-
 #### zathura {#db749118}
 
 ***
@@ -290,6 +277,32 @@ pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 zathura -s -x "gedit "%{input}" +%{line}" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### qpdfview {#ud4fadf3}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+qpdfview --unique ""`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:"$GEDIT_CURRENT_DOCUMENT_NAME":$GEDIT_CURRENT_LINE_NUMBER:0"
+```
+
+***
+
+#### PdfViewer {#k6ca6cfc}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME""
 ```
 
 ***
