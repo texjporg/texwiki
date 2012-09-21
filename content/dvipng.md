@@ -12,9 +12,9 @@ pukiwiki: "dvipng"
 ### dvipngとは？ {#wd523196}
 
 dvipng は dvi ファイルから png 形式の画像を生成するコマンドです。
-[preview-latex プロジェクト](http://www.gnu.org/software/auctex/preview-latex.html)の成果物として公開されています。
+[preview-latex プロジェクト](http://www.gnu.org/software/auctex/preview-latex.html)の成果物として公開されています。<br>
 Version 1.9 から サブフォントに対応しているので、サブフォント機構
-を使って作成した dvi の場合には日本語も png 化できます。
+を使って作成した dvi の場合には日本語も png 化できます。<br>
 
 - [http://www.nongnu.org/dvipng/](http://www.nongnu.org/dvipng/)
     - [http://savannah.nongnu.org/projects/dvipng/](http://savannah.nongnu.org/projects/dvipng/)
@@ -28,6 +28,12 @@ Version 1.9 から サブフォントに対応しているので、サブフォ�
 - [TeX Live - TeX Wiki#dvipng](</TeX Live/#ob19804f>)
 
 mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+
+```
+$ pdftocairo -png hoge.pdf
+```
 
 ### 関連リンク {#d403df71}
 
