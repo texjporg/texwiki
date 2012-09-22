@@ -31,6 +31,7 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
+2012-09-21 poppler 0.21.0<br>
 2012-09-10 poppler 0.20.4<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
@@ -561,7 +562,7 @@ $ make
 cairo-missing.h:45:17: error: conflicting types for 'ssize_t'
 ```
 
-[cairo-1.12.2/util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.2) の 45行目にある
+[cairo-1.12.2/util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.2#n45) の 45行目にある
 
 ```
 typedef SSIZE_T ssize_t;
@@ -693,9 +694,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.20.4.tar.gz
-$ tar zxvf poppler-0.20.4.tar.gz
-$ pushd poppler-0.20.4
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.0.tar.gz
+$ tar zxvf poppler-0.21.0.tar.gz
+$ pushd poppler-0.21.0
 ```
 
 ***
@@ -703,7 +704,7 @@ $ pushd poppler-0.20.4
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --disable-poppler-glib --disable-gtk-test
 ```
 
 ```
