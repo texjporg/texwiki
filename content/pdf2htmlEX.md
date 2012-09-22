@@ -108,7 +108,7 @@ $ popd
 ```
 $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
 $ tar jxvf fontforge_full-20120731-b.tar.bz2
-$ pushd fontforge_full-20120731-b
+$ pushd fontforge-20120731-b
 $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
 $ tar jxvf freetype-2.4.10.tar.bz2
 $ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
@@ -116,6 +116,15 @@ $ make
 $ make install
 $ popd
 ```
+
+<!-- $ curl - -insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master -->
+<!-- $ tar zxvf fontforge-fontforge.tar.gz -->
+<!-- $ pushd fontforge-fontforge* -->
+<!-- $ ./autogen.sh -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
 
 <!-- -http://svn.r-project.org/R/trunk/src/main/datetime.c -->
 <!-- -http://svn.r-project.org/R/trunk/src/main/mkdtemp.c -->
@@ -146,7 +155,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.26")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.20.4
+--   found poppler, version 0.21.0
 -- checking for module 'libfontforge>=2.0.0'
 --   package 'libfontforge>=2.0.0' not found
 Trying to locate fontforge...
