@@ -74,6 +74,15 @@ platex hoge.tex
 
 としたほうが簡単かもしれません．
 
+### パッケージ管理 {#l45cb315}
+
+#### chocolatey {#ofbc7592}
+
+- [chocolatey](http://chocolatey.org/)
+    - [packages](http://chocolatey.org/packages)
+        - [texlive](http://chocolatey.org/packages/texlive)
+    - [wiki](https://github.com/chocolatey/chocolatey/wiki)
+
 ### 関連リンク {#teb8e64f}
 
 - [基礎知識 (Windows PowerShell)](http://ufcpp.net/study/powershell/basic.html)
