@@ -223,6 +223,7 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - [機械学習の勉強とか: LuaTeX](http://choge.blogspot.jp/search/label/LuaTeX)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
+- \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
 - \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
 - [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
