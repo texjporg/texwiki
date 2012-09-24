@@ -102,29 +102,150 @@ $ make install
 $ popd
 ```
 
-[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
-エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
+[gettext](http://www.gnu.org/software/gettext/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
-$ tar jxvf fontforge_full-20120731-b.tar.bz2
-$ pushd fontforge-20120731-b
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
-$ tar jxvf freetype-2.4.10.tar.bz2
-$ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
+$ tar zxvf gettext-0.18.1.1.tar.gz
+$ pushd gettext-0.18.1.1
+$ ./configure --prefix=/mingw
+```
+
+[gettext-runtime/tests/test-lock.c](http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105) を修正します．<br>
+
+```
+//static inline void * gl_thread_self (void)
+static inline pthread_t gl_thread_self (void)
+{
+  //return = (void *) pthread_self ();
+  return pthread_self ();
+}
+```
+
+```
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl - -insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master -->
-<!-- $ tar zxvf fontforge-fontforge.tar.gz -->
-<!-- $ pushd fontforge-fontforge* -->
-<!-- $ ./autogen.sh -->
+[libspiro](http://libspiro.sourceforge.net/) をインストールします．<br>
+
+```
+$ curl -R -L -O http://download.sourceforge.net/libspiro/libspiro_src-20071029.tar.bz2
+$ tar jxvf libspiro_src-20071029.tar.bz2
+$ pushd libspiro-20071029
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
+<!-- [[getopt:http://software.frodo.looijaard.name/getopt/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://software.frodo.looijaard.name/getopt/files/getopt-1.1.5.tar.gz -->
+<!-- $ tar zxvf getopt-1.1.5.tar.gz -->
+<!-- $ pushd getopt-1.1.5 -->
+<!--  -->
+<!-- Makefile の -->
+<!-- prefix=/usr/local -->
+<!-- を -->
+<!-- prefix=/mingw -->
+<!-- に変更します．~ -->
+<!--  -->
+<!-- Makefile に -->
+<!-- LDLIBS=-lintl -->
+<!-- を追加します．~ -->
+<!--  -->
+<!-- Makefile の getopt: を -->
+<!-- getopt: $(objects) -->
+<!-- #       $(CC) $(LDFLAGS) -o $@ $(objects) -->
+<!--         $(CC) $(LDFLAGS) -o $@ $(objects) $(LDLIBS) -->
+<!-- に修正します．~ -->
+<!--  -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+<!-- [[xmlto:http://cyberelk.net/tim/software/xmlto/]] をインストールします．~ -->
+<!-- $ curl - -insecure -R -L -O https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.25.tar.bz2 -->
+<!-- $ tar jxvf xmlto-0.0.25.tar.bz2 -->
+<!-- $ pushd xmlto-0.0.25 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
 <!-- $ make install -->
 <!-- $ popd -->
+
+<!-- [[GIFLIB:http://giflib.sourceforge.net/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://download.sourceforge.net/giflib/giflib-5.0.0.tar.bz2 -->
+<!-- $ tar jxvf giflib-5.0.0.tar.bz2 -->
+<!-- $ pushd giflib-5.0.0 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
+エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
+
+- FontForge 20120731-b をインストールする場合
+
+    ```
+    $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
+    $ tar jxvf fontforge_full-20120731-b.tar.bz2
+    $ pushd fontforge-20120731-b
+    $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
+    $ tar jxvf freetype-2.4.10.tar.bz2
+    $ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
+    $ make
+    $ make install
+    $ popd
+    ```
+
+- FontForge 最新版をインストールする場合
+
+    ```
+    $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
+    $ tar zxvf fontforge-fontforge.tar.gz
+    $ pushd fontforge-fontforge*
+    $ ./autogen.sh
+    $ ./configure --prefix=/mingw
+    ```
+
+    <!-- $ ./configure - -prefix=/mingw - -disable-native-scripting - -disable-python-scripting - -disable-python-extension -->
+
+```
+Summary of optional features:
+
+  real (floating pt) double
+  programs           yes
+  native scripting   no
+  python scripting   no
+  python extension   no
+  freetype debugger  no
+  capslock for alt   no
+  raw points mode    no
+  tile path          no
+  gb12345 encoding   no
+
+Summary of optional dependencies:
+
+  cairo              yes        http://www.cairographics.org/
+  freetype           yes        http://www.freetype.org/
+  giflib             no         http://giflib.sourceforge.net/
+  libjpeg            yes        http://en.wikipedia.org/wiki/Libjpeg
+  libpng             yes        http://www.libpng.org/
+  libtiff            yes        http://en.wikipedia.org/wiki/Libtiff
+  libxml             yes        http://www.xmlsoft.org/
+  libspiro           yes        http://libspiro.sourceforge.net/
+  libunicodenames    yes        https://github.com/chemoelectric/libunicodenames
+
+  X Window System    no
+```
+
+```
+$ make
+$ make install
+$ popd
+```
 
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
@@ -162,8 +283,7 @@ $ popd
 <!-- _mktemp は MinGW でも OK -->
 <!-- auto p = _mktemp(buf); -->
 
-[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br>
-エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ -->
 
 ```
 $ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
@@ -174,24 +294,30 @@ $ cd coolwanglu-pdf2htmlEX*
 src/pdf2htmlEX.cc に
 
 ```
-char *mkdtemp(char *buf){
-  ::GetTempPath(MAX_PATH,buf);
-  strcat(buf,"pdf2htmlEX");
-  ::CreateDirectory(buf,NULL);
-  return buf;
-}
+#include <io.h>
+#define mkdtemp(buf) _mktemp(buf)
 ```
+
+<!-- char *mkdtemp(char *buf){ -->
+<!--   ::GetTempPath(MAX_PATH,buf); -->
+<!--   strcat(buf,"pdf2htmlEX"); -->
+<!--   ::CreateDirectory(buf,NULL); -->
+<!--   return buf; -->
+<!-- } -->
 
 を追加します．
 
 src/util.cc に
 
 ```
-int mkdir(const char *dir,mode_t mode){
-  if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0;
-  return ::CreateDirectory(dir,NULL) ? 0 : 1;
-}
+#include <io.h>
+#define mkdir(path,mode) _mkdir(path)
 ```
+
+<!-- int mkdir(const char *dir,mode_t mode){ -->
+<!--   if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0; -->
+<!--   return ::CreateDirectory(dir,NULL) ? 0 : 1; -->
+<!-- } -->
 
 を追加します．
 
