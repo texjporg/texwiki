@@ -128,6 +128,30 @@ $ make install
 $ popd
 ```
 
+[GLib](http://www.gtk.org/) をインストールします．<br>
+
+```
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.33/glib-2.33.14.tar.xz
+$ tar Jxvf glib-2.33.14.tar.xz
+$ pushd glib-2.33.14
+$ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
+[pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．<br>
+
+```
+$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
+$ tar zxvf pkg-config-0.27.1.tar.gz
+$ pushd pkg-config-0.27.1
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
 [libspiro](http://libspiro.sourceforge.net/) をインストールします．<br>
 
 ```
@@ -178,6 +202,29 @@ $ popd
 <!-- $ curl -R -L -O http://download.sourceforge.net/giflib/giflib-5.0.0.tar.bz2 -->
 <!-- $ tar jxvf giflib-5.0.0.tar.bz2 -->
 <!-- $ pushd giflib-5.0.0 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+<!-- [[Python:http://www.python.org/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz -->
+<!-- $ tar Jxvf Python-2.7.3.tar.xz -->
+<!-- $ pushd Python-2.7.3 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!--  -->
+<!-- Python/import.c を修正します．~ -->
+<!-- //#ifdef MS_WINDOWS   /* since Windows uses different permissions  */ -->
+<!-- #ifdef _WIN32 || MS_WINDOWS   /* since Windows uses different permissions  */ -->
+<!--  -->
+<!-- $ make install -->
+<!-- $ popd -->
+
+<!-- [[LibUnicodeNames:https://github.com/chemoelectric/libunicodenames]] をインストールします．~ -->
+<!-- $ curl - -insecure -R -L -O https://github.com/downloads/chemoelectric/libunicodenames/libunicodenames-1.0.0_beta4.tar.xz -->
+<!-- $ tar Jxvf libunicodenames-1.0.0_beta4.tar.xz -->
+<!-- $ pushd libunicodenames-1.0.0_beta4 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
 <!-- $ make install -->
@@ -352,7 +399,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.26")
+-- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.27.1")
 -- checking for module 'poppler>=0.20.0'
 --   found poppler, version 0.21.0
 -- checking for module 'libfontforge>=2.0.0'
