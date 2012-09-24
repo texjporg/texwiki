@@ -152,6 +152,13 @@ $ make install
 $ popd
 ```
 
+<!-- gtk -->
+<!--  -->
+<!-- make[1]: Entering directory `gtk+-3.6.0/gtk' -->
+<!--   CCLD     gtk-update-icon-cache.exe -->
+<!-- ../libtool: line 9517: ./gtk-update-icon-cache.exe: Bad file number -->
+<!-- このように表示される場合は管理者権限で MinGW Shell (MSYS) を実行してビルドしてください．~ -->
+
 [libspiro](http://libspiro.sourceforge.net/) をインストールします．<br>
 
 ```
