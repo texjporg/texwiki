@@ -188,29 +188,29 @@ $ popd
 
 - FontForge 20120731-b をインストールする場合
 
-    ```
-    $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
-    $ tar jxvf fontforge_full-20120731-b.tar.bz2
-    $ pushd fontforge-20120731-b
-    $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
-    $ tar jxvf freetype-2.4.10.tar.bz2
-    $ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
-    $ make
-    $ make install
-    $ popd
-    ```
+```
+$ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
+$ tar jxvf fontforge_full-20120731-b.tar.bz2
+$ pushd fontforge-20120731-b
+$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
+$ tar jxvf freetype-2.4.10.tar.bz2
+$ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
+$ make
+$ make install
+$ popd
+```
 
 - FontForge 最新版をインストールする場合
 
-    ```
-    $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
-    $ tar zxvf fontforge-fontforge.tar.gz
-    $ pushd fontforge-fontforge*
-    $ ./autogen.sh
-    $ ./configure --prefix=/mingw
-    ```
+```
+$ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
+$ tar zxvf fontforge-fontforge.tar.gz
+$ pushd fontforge-fontforge*
+$ ./autogen.sh
+$ ./configure --prefix=/mingw
+```
 
-    <!-- $ ./configure - -prefix=/mingw - -disable-native-scripting - -disable-python-scripting - -disable-python-extension -->
+<!-- $ ./configure - -prefix=/mingw - -disable-native-scripting - -disable-python-scripting - -disable-python-extension -->
 
 ```
 Summary of optional features:
@@ -293,39 +293,47 @@ $ cd coolwanglu-pdf2htmlEX*
 
 src/pdf2htmlEX.cc に
 
-```
-#include <io.h>
-#define mkdtemp(buf) _mktemp(buf)
-```
+<!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
 
-<!-- char *mkdtemp(char *buf){ -->
-<!--   ::GetTempPath(MAX_PATH,buf); -->
-<!--   strcat(buf,"pdf2htmlEX"); -->
-<!--   ::CreateDirectory(buf,NULL); -->
-<!--   return buf; -->
-<!-- } -->
+```
+#if defined(_WIN32)
+char *mkdtemp(char *buf){
+  srand((unsigned)time(0));
+  int a = (int)((rand() / ((double)RAND_MAX+1.0)) * 1e6);
+  ::GetTempPath(MAX_PATH,buf);
+  sprintf(buf, "%s%s%d", buf, "pdf2htmlEX-", a);
+  ::CreateDirectory(buf,NULL);
+  return buf;
+}
+#endif
+```
 
 を追加します．
 
 src/util.cc に
 
-```
-#include <io.h>
-#define mkdir(path,mode) _mkdir(path)
-```
+<!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
 
-<!-- int mkdir(const char *dir,mode_t mode){ -->
-<!--   if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0; -->
-<!--   return ::CreateDirectory(dir,NULL) ? 0 : 1; -->
-<!-- } -->
+```
+#if defined(_WIN32)
+int mkdir(const char *dir,mode_t mode){
+  if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0;
+  return ::CreateDirectory(dir,NULL) ? 0 : 1;
+}
+#endif
+```
 
 を追加します．
 
 src/ffw.c に
 
+<!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
+
 ```
+#if defined(_WIN32)
 #undef printf
 #undef vfprintf
+#endif
 ```
 
 を追加します．
