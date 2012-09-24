@@ -191,13 +191,62 @@ $ make install
 $ popd
 ```
 
+- [XZ Utils](http://tukaani.org/xz/) をインストールします．
+
+```
+$ curl -R -L -O http://tukaani.org/xz/xz-5.0.4.tar.xz
+$ tar Jxvf xz-5.0.4.tar.xz
+$ pushd xz-5.0.4
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
 - [LibTIFF](http://www.remotesensing.org/libtiff/) をインストールします．
 
 ```
-$ curl -R -L -O ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.2.tar.gz
-$ tar zxvf tiff-4.0.2.tar.gz
-$ pushd tiff-4.0.2
+$ curl -R -L -O http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
+$ tar zxvf tiff-4.0.3.tar.gz
+$ pushd tiff-4.0.3
 $ ./configure --prefix=/mingw
+```
+
+```
+Libtiff is now configured for i686-pc-mingw32
+
+  Installation directory:             /mingw
+  Documentation directory:            ${prefix}/share/doc/tiff-4.0.3
+  C compiler:                         gcc -g -O2 -Wall -W
+  C++ compiler:                       g++ -g -O2
+  Enable runtime linker paths:        no
+  Enable linker symbol versioning:    no
+  Support Microsoft Document Imaging: yes
+  Use win32 IO:                       yes
+
+ Support for internal codecs:
+  CCITT Group 3 & 4 algorithms:       yes
+  Macintosh PackBits algorithm:       yes
+  LZW algorithm:                      yes
+  ThunderScan 4-bit RLE algorithm:    yes
+  NeXT 2-bit RLE algorithm:           yes
+  LogLuv high dynamic range encoding: yes
+
+ Support for external codecs:
+  ZLIB support:                       yes
+  Pixar log-format algorithm:         yes
+  JPEG support:                       yes
+  Old JPEG support:                   yes
+  JPEG 8/12 bit dual mode:            no
+  ISO JBIG support:                   no
+  LZMA2 support:                      yes
+
+  C++ support:                        yes
+
+  OpenGL support:                     no
+```
+
+```
 $ make
 $ make install
 $ popd
