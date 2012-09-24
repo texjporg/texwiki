@@ -126,6 +126,35 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
+[ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
+
+```
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.92.tar.gz
+$ tar zxvf ttfautohint-0.92.tar.gz
+$ pushd ttfautohint-0.92
+$ ./configure --prefix=/mingw
+$ make
+```
+
+```
+../libtool: line 6013: cd: ./lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `./lib'
+```
+
+のエラーが発生する場合は ttfautohint-0.92/frontend/Makefile の中身を
+
+```
+#QT_LIBS = -L'./lib' -L'c:/Qt/4.8.3/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
+QT_LIBS = -L'c:/Qt/4.8.3/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
+```
+
+に修正します．
+
+```
+$ make install
+$ popd
+```
+
 <!-- -http://svn.r-project.org/R/trunk/src/main/datetime.c -->
 <!-- -http://svn.r-project.org/R/trunk/src/main/mkdtemp.c -->
 <!-- mkdtemp は MinGW でエラー -->
@@ -140,6 +169,42 @@ $ popd
 $ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
 $ tar zxvf coolwanglu-pdf2htmlEX.tar.gz
 $ cd coolwanglu-pdf2htmlEX*
+```
+
+src/pdf2htmlEX.cc に
+
+```
+char *mkdtemp(char *buf){
+  ::GetTempPath(MAX_PATH,buf);
+  strcat(buf,"pdf2htmlEX");
+  ::CreateDirectory(buf,NULL);
+  return buf;
+}
+```
+
+を追加します．
+
+src/util.cc に
+
+```
+int mkdir(const char *dir,mode_t mode){
+  if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0;
+  return ::CreateDirectory(dir,NULL) ? 0 : 1;
+}
+```
+
+を追加します．
+
+src/ffw.c に
+
+```
+#undef printf
+#undef vfprintf
+```
+
+を追加します．
+
+```
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -206,10 +271,9 @@ Install the project...
 -- Install configuration: ""
 -- Installing: C:/MinGW/bin/pdf2htmlEX.exe
 -- Installing: C:/MinGW/share/pdf2htmlEX/base.css
--- Installing: C:/MinGW/share/pdf2htmlEX/hide_pages.js
 -- Installing: C:/MinGW/share/pdf2htmlEX/jquery.js
+-- Installing: C:/MinGW/share/pdf2htmlEX/pdf2htmlEX.js
 -- Installing: C:/MinGW/share/pdf2htmlEX/manifest
--- Installing: C:/MinGW/share/pdf2htmlEX/scroll.js
 -- Installing: C:/MinGW/share/man/man1/pdf2htmlEX.1
 ```
 
