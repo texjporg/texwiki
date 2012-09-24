@@ -218,7 +218,7 @@ $ popd
 <!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz -->
 <!-- $ tar Jxvf Python-2.7.3.tar.xz -->
 <!-- $ pushd Python-2.7.3 -->
-<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ ./configure - -prefix=/mingw - -enable-shared - -enable-unicode - -with-cxx-main=g++ - -without-threads - -without-signal-module -->
 <!-- $ make -->
 <!--  -->
 <!-- Python/import.c を修正します．~ -->
