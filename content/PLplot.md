@@ -35,7 +35,7 @@ libHaru のビルドには zlib, libpng が必要です．<br>
 
 ```
 $ curl -R -L -O http://libharu.org/files/libhpdf-2.3.0RC2.tar.bz2
-$ tar jxvf libhpdf-2.3.0RC2.tar.bz2
+$ tar xvf libhpdf-2.3.0RC2.tar.bz2
 $ pushd libhpdf-2.3.0RC2
 $ ./configure --prefix=/mingw --with-zlib=/mingw --with-png=/mingw
 $ make
@@ -48,8 +48,8 @@ ada と tcl のバインディングを有効にするとビルド時にエラ�
 &#x2d;DPLD_pdf=ON を指定すると，リンク時にエラーが発生したので指定しませんでした．<br>
 
 ```
-$ curl -R -L -o plplot-5.9.9.tar.gz http://sourceforge.net/projects/plplot/files/plplot/5.9.9%20Source/plplot-5.9.9.tar.gz/download
-$ tar zxvf plplot-5.9.9.tar.gz
+$ curl -R -L -O http://download.sourceforge.net/plplot/plplot-5.9.9.tar.gz
+$ tar xvf plplot-5.9.9.tar.gz
 $ cd plplot-5.9.9
 $ mkdir build
 $ cd build
