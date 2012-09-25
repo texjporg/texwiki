@@ -84,6 +84,10 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
+- [mingw-and-ndk](https://code.google.com/p/mingw-and-ndk/) のページから [Python](http://www.python.org/) の MinGW バイナリ ([python-mingw.7z](https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z)) をダウンロードしてインストールします．
+
+[7-Zip](http://sevenzip.sourceforge.jp/) で展開して中身のフォルダーを C:\MinGW に上書きします．<br>
+
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
 <!-- ~/.bash_profile に以下の内容を記述します． -->
@@ -731,6 +735,63 @@ $ make
 $ make install
 $ popd
 ```
+
+- [gettext](http://www.gnu.org/software/gettext/) をインストールします．<br>
+
+    ```
+    $ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
+    $ tar zxvf gettext-0.18.1.1.tar.gz
+    $ pushd gettext-0.18.1.1
+    $ ./configure --prefix=/mingw
+    ```
+
+[gettext-runtime/tests/test-lock.c](http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105) を修正します．<br>
+
+```
+//static inline void * gl_thread_self (void)
+static inline pthread_t gl_thread_self (void)
+{
+  //return = (void *) pthread_self ();
+  return pthread_self ();
+}
+```
+
+```
+$ make
+$ make install
+$ popd
+```
+
+- [GLib](http://www.gtk.org/) をインストールします．<br>
+
+    ```
+    $ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
+    $ tar Jxvf glib-2.34.0.tar.xz
+    $ pushd glib-2.34.0
+    $ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
+    $ make
+    $ make install
+    $ popd
+    ```
+
+- [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．<br>
+
+    ```
+    $ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
+    $ tar zxvf pkg-config-0.27.1.tar.gz
+    $ pushd pkg-config-0.27.1
+    $ ./configure --prefix=/mingw
+    $ make
+    $ make install
+    $ popd
+    ```
+
+<!-- gtk -->
+<!--  -->
+<!-- make[1]: Entering directory `gtk+-3.6.0/gtk' -->
+<!--   CCLD     gtk-update-icon-cache.exe -->
+<!-- ../libtool: line 9517: ./gtk-update-icon-cache.exe: Bad file number -->
+<!-- このように表示される場合は管理者権限で MinGW Shell (MSYS) を実行してビルドしてください．~ -->
 
 - [poppler](http://poppler.freedesktop.org/) をインストールします．
 
