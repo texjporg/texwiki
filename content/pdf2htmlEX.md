@@ -215,6 +215,7 @@ $ popd
 <!-- $ popd -->
 
 <!-- [[Python:http://www.python.org/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://mingw-and-ndk.googlecode.com/files/python-2.7.3-windows-x86.7z -->
 <!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz -->
 <!-- $ tar Jxvf Python-2.7.3.tar.xz -->
 <!-- $ pushd Python-2.7.3 -->
