@@ -102,63 +102,6 @@ $ make install
 $ popd
 ```
 
-[gettext](http://www.gnu.org/software/gettext/) をインストールします．<br>
-
-```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
-$ tar zxvf gettext-0.18.1.1.tar.gz
-$ pushd gettext-0.18.1.1
-$ ./configure --prefix=/mingw
-```
-
-[gettext-runtime/tests/test-lock.c](http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105) を修正します．<br>
-
-```
-//static inline void * gl_thread_self (void)
-static inline pthread_t gl_thread_self (void)
-{
-  //return = (void *) pthread_self ();
-  return pthread_self ();
-}
-```
-
-```
-$ make
-$ make install
-$ popd
-```
-
-[GLib](http://www.gtk.org/) をインストールします．<br>
-
-```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
-$ tar Jxvf glib-2.34.0.tar.xz
-$ pushd glib-2.34.0
-$ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-[pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．<br>
-
-```
-$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
-$ tar zxvf pkg-config-0.27.1.tar.gz
-$ pushd pkg-config-0.27.1
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-<!-- gtk -->
-<!--  -->
-<!-- make[1]: Entering directory `gtk+-3.6.0/gtk' -->
-<!--   CCLD     gtk-update-icon-cache.exe -->
-<!-- ../libtool: line 9517: ./gtk-update-icon-cache.exe: Bad file number -->
-<!-- このように表示される場合は管理者権限で MinGW Shell (MSYS) を実行してビルドしてください．~ -->
-
 [libspiro](http://libspiro.sourceforge.net/) をインストールします．<br>
 
 ```
@@ -214,14 +157,6 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-[Python](http://www.python.org/) をインストールします．<br>
-
-```
-$ curl -R -L -O http://mingw-and-ndk.googlecode.com/files/python-2.7.3-windows-x86.7z
-```
-
-[7-Zip](http://sevenzip.sourceforge.jp/) で展開して中身のフォルダーを C:\MinGW に上書きします．<br> <!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz --> <!-- $ tar Jxvf Python-2.7.3.tar.xz --> <!-- $ pushd Python-2.7.3 --> <!-- $ ./configure - -prefix=/mingw - -enable-shared - -enable-unicode - -with-cxx-main=g++ - -without-threads - -without-signal-module --> <!-- $ make --> <!--  --> <!-- Python/import.c を修正します．~ --> <!-- //#ifdef MS_WINDOWS   /* since Windows uses different permissions  */ --> <!-- #ifdef _WIN32 || MS_WINDOWS   /* since Windows uses different permissions  */ --> <!--  --> <!-- $ make install --> <!-- $ popd -->
-
 [LibUnicodeNames](https://github.com/chemoelectric/libunicodenames) をインストールします．<br>
 
 ```
@@ -234,24 +169,7 @@ $ make install
 $ popd
 ```
 
-[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
-エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
-
-- FontForge 20120731-b をインストールする場合
-
-```
-$ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2
-$ tar jxvf fontforge_full-20120731-b.tar.bz2
-$ pushd fontforge-20120731-b
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
-$ tar jxvf freetype-2.4.10.tar.bz2
-$ ./configure --prefix=/mingw --with-freetype-src=freetype-2.4.10
-$ make
-$ make install
-$ popd
-```
-
-- FontForge 最新版をインストールする場合
+[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar jxvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar jxvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
 
 ```
 $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
@@ -260,8 +178,6 @@ $ pushd fontforge-fontforge*
 $ ./autogen.sh
 $ ./configure --prefix=/mingw
 ```
-
-<!-- $ ./configure - -prefix=/mingw - -disable-native-scripting - -disable-python-scripting - -disable-python-extension -->
 
 ```
 Summary of optional features:
