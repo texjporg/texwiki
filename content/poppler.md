@@ -111,7 +111,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 <!-- -[[paco:http://paco.sourceforge.net/]] をインストールします． -->
 <!--  -->
 <!-- $ curl -R -L -O http://sourceforge.net/projects/paco/files/paco/2.0.9/paco-2.0.9.tar.bz2 -->
-<!-- $ tar jxvf paco-2.0.9.tar.bz2 -->
+<!-- $ tar xvf paco-2.0.9.tar.bz2 -->
 <!-- $ pushd paco-2.0.9 -->
 <!-- $ ./configure - -prefix=/mingw - -disable-gpaco -->
 <!-- $ make -->
@@ -129,7 +129,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 ```
 $ curl -R -L -O http://zlib.net/zlib-1.2.7.tar.gz
-$ tar zxvf zlib-1.2.7.tar.gz
+$ tar xvf zlib-1.2.7.tar.gz
 $ pushd zlib-1.2.7
 $ make -f win32/Makefile.gcc BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib SHARED_MODE=1 install
 $ popd
@@ -139,7 +139,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.9.tar.gz
-$ tar zxvf cmake-2.8.9.tar.gz
+$ tar xvf cmake-2.8.9.tar.gz
 $ pushd cmake-2.8.9
 $ mkdir build
 $ pushd build
@@ -164,7 +164,7 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.5.12.tar.xz
-$ tar Jxvf libpng-1.5.12.tar.xz
+$ tar xvf libpng-1.5.12.tar.xz
 $ pushd libpng-1.5.12
 $ ./configure --prefix=/mingw
 $ make
@@ -173,7 +173,7 @@ $ popd
 ```
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng15/1.5.12/libpng-1.5.12.tar.xz -->
-<!-- $ tar Jxvf libpng-1.5.12.tar.xz -->
+<!-- $ tar xvf libpng-1.5.12.tar.xz -->
 <!-- $ pushd libpng-1.5.12 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
@@ -187,7 +187,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://www.ijg.org/files/jpegsrc.v8d.tar.gz
-$ tar zxvf jpegsrc.v8d.tar.gz
+$ tar xvf jpegsrc.v8d.tar.gz
 $ pushd jpeg-8d
 $ ./configure --prefix=/mingw
 $ make
@@ -199,7 +199,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://tukaani.org/xz/xz-5.0.4.tar.xz
-$ tar Jxvf xz-5.0.4.tar.xz
+$ tar xvf xz-5.0.4.tar.xz
 $ pushd xz-5.0.4
 $ ./configure --prefix=/mingw
 $ make
@@ -211,7 +211,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
-$ tar zxvf tiff-4.0.3.tar.gz
+$ tar xvf tiff-4.0.3.tar.gz
 $ pushd tiff-4.0.3
 $ ./configure --prefix=/mingw
 ```
@@ -262,7 +262,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.4.tar.gz
-$ tar zxvf lcms2-2.4.tar.gz
+$ tar xvf lcms2-2.4.tar.gz
 $ pushd lcms2-2.4
 $ ./configure --prefix=/mingw
 $ make
@@ -273,7 +273,7 @@ $ popd
 <!-- -[[FastCGI:http://www.fastcgi.com/]] をインストールします． -->
 <!--  -->
 <!-- $ curl -R -L -O http://www.fastcgi.com/dist/fcgi-2.4.1-SNAP-0910052249.tar.gz -->
-<!-- $ tar zxvf fcgi-2.4.1-SNAP-0910052249.tar.gz -->
+<!-- $ tar xvf fcgi-2.4.1-SNAP-0910052249.tar.gz -->
 <!-- $ pushd fcgi-2.4.1-SNAP-0910052249 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
@@ -288,7 +288,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.0.tar.gz
-$ tar zxvf openjpeg-1.5.0.tar.gz
+$ tar xvf openjpeg-1.5.0.tar.gz
 $ pushd openjpeg-1.5.0
 ```
 
@@ -307,7 +307,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
-$ tar jxvf freetype-2.4.10.tar.bz2
+$ tar xvf freetype-2.4.10.tar.bz2
 $ pushd freetype-2.4.10
 $ ./configure --prefix=/mingw
 $ make
@@ -319,7 +319,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
-$ tar zxvf nkf-2.1.2.tar.gz
+$ tar xvf nkf-2.1.2.tar.gz
 $ pushd nkf-2.1.2
 ```
 
@@ -366,7 +366,7 @@ $ popd
 
 ```
 $ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz
-$ tar zxvf libxml2-2.9.0.tar.gz
+$ tar xvf libxml2-2.9.0.tar.gz
 $ pushd libxml2-2.9.0
 ```
 
@@ -434,7 +434,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.1.tar.gz
-$ tar zxvf fontconfig-2.10.1.tar.gz
+$ tar xvf fontconfig-2.10.1.tar.gz
 $ pushd fontconfig-2.10.1
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
@@ -530,7 +530,7 @@ msgothic.ttc: "MS Gothic" "Regular"
 
 ```
 $ curl -R -L -O http://cairographics.org/releases/pixman-0.26.2.tar.gz
-$ tar zxvf pixman-0.26.2.tar.gz
+$ tar xvf pixman-0.26.2.tar.gz
 $ pushd pixman-0.26.2
 $ ./configure --prefix=/mingw
 $ make
@@ -542,7 +542,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://cairographics.org/releases/cairo-1.12.2.tar.xz
-$ tar Jxvf cairo-1.12.2.tar.xz
+$ tar xvf cairo-1.12.2.tar.xz
 $ pushd cairo-1.12.2
 $ ./configure --prefix=/mingw
 
@@ -636,7 +636,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1c.tar.gz
-$ tar zxvf openssl-1.0.1c.tar.gz
+$ tar xvf openssl-1.0.1c.tar.gz
 $ pushd openssl-1.0.1c
 $ ./config --prefix=/mingw shared
 $ make
@@ -647,14 +647,14 @@ $ popd
 <!-- -[[Libgcrypt:http://directory.fsf.org/wiki/Libgcrypt]] をインストールします． -->
 <!--  -->
 <!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.10.tar.bz2 -->
-<!-- $ tar jxvf libgpg-error-1.10.tar.bz2 -->
+<!-- $ tar xvf libgpg-error-1.10.tar.bz2 -->
 <!-- $ pushd libgpg-error-1.10 -->
 <!-- $ ./config - -prefix=/mingw -->
 <!-- $ make -->
 <!-- $ make install -->
 <!-- $ popd -->
 <!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.5.0.tar.bz2 -->
-<!-- $ tar jxvf libgcrypt-1.5.0.tar.bz2 -->
+<!-- $ tar xvf libgcrypt-1.5.0.tar.bz2 -->
 <!-- $ pushd libgcrypt-1.5.0 -->
 <!-- $ ./config - -prefix=/mingw -->
 <!-- $ make -->
@@ -665,7 +665,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.2.tar.gz
-$ tar zxvf libssh2-1.4.2.tar.gz
+$ tar xvf libssh2-1.4.2.tar.gz
 $ pushd libssh2-1.4.2
 $ ./configure --prefix=/mingw
 ```
@@ -694,7 +694,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://curl.haxx.se/download/curl-7.27.0.tar.bz2
-$ tar jxvf curl-7.27.0.tar.bz2
+$ tar xvf curl-7.27.0.tar.bz2
 $ pushd curl-7.27.0
 $ ./configure --prefix=/mingw
 ```
@@ -740,7 +740,7 @@ $ popd
 
     ```
     $ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
-    $ tar zxvf gettext-0.18.1.1.tar.gz
+    $ tar xvf gettext-0.18.1.1.tar.gz
     $ pushd gettext-0.18.1.1
     $ ./configure --prefix=/mingw
     ```
@@ -766,7 +766,7 @@ $ popd
 
     ```
     $ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
-    $ tar Jxvf glib-2.34.0.tar.xz
+    $ tar xvf glib-2.34.0.tar.xz
     $ pushd glib-2.34.0
     $ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
     $ make
@@ -778,7 +778,7 @@ $ popd
 
     ```
     $ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
-    $ tar zxvf pkg-config-0.27.1.tar.gz
+    $ tar xvf pkg-config-0.27.1.tar.gz
     $ pushd pkg-config-0.27.1
     $ ./configure --prefix=/mingw
     $ make
@@ -805,7 +805,7 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 
 ```
 $ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.0.tar.gz
-$ tar zxvf poppler-0.21.0.tar.gz
+$ tar xvf poppler-0.21.0.tar.gz
 $ pushd poppler-0.21.0
 ```
 
@@ -970,4 +970,5 @@ C:.
 - [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
 - [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
+- [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
