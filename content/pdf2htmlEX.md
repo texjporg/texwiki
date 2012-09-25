@@ -131,9 +131,9 @@ $ popd
 [GLib](http://www.gtk.org/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.33/glib-2.33.14.tar.xz
-$ tar Jxvf glib-2.33.14.tar.xz
-$ pushd glib-2.33.14
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
+$ tar Jxvf glib-2.34.0.tar.xz
+$ pushd glib-2.34.0
 $ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
@@ -214,29 +214,25 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-<!-- [[Python:http://www.python.org/]] をインストールします．~ -->
-<!-- $ curl -R -L -O http://mingw-and-ndk.googlecode.com/files/python-2.7.3-windows-x86.7z -->
-<!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz -->
-<!-- $ tar Jxvf Python-2.7.3.tar.xz -->
-<!-- $ pushd Python-2.7.3 -->
-<!-- $ ./configure - -prefix=/mingw - -enable-shared - -enable-unicode - -with-cxx-main=g++ - -without-threads - -without-signal-module -->
-<!-- $ make -->
-<!--  -->
-<!-- Python/import.c を修正します．~ -->
-<!-- //#ifdef MS_WINDOWS   /* since Windows uses different permissions  */ -->
-<!-- #ifdef _WIN32 || MS_WINDOWS   /* since Windows uses different permissions  */ -->
-<!--  -->
-<!-- $ make install -->
-<!-- $ popd -->
+[Python](http://www.python.org/) をインストールします．<br>
 
-<!-- [[LibUnicodeNames:https://github.com/chemoelectric/libunicodenames]] をインストールします．~ -->
-<!-- $ curl - -insecure -R -L -O https://github.com/downloads/chemoelectric/libunicodenames/libunicodenames-1.0.0_beta4.tar.xz -->
-<!-- $ tar Jxvf libunicodenames-1.0.0_beta4.tar.xz -->
-<!-- $ pushd libunicodenames-1.0.0_beta4 -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
+```
+$ curl -R -L -O http://mingw-and-ndk.googlecode.com/files/python-2.7.3-windows-x86.7z
+```
+
+[7-Zip](http://sevenzip.sourceforge.jp/) で展開して中身のフォルダーを C:\MinGW に上書きします．<br> <!-- $ curl -R -L -O http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz --> <!-- $ tar Jxvf Python-2.7.3.tar.xz --> <!-- $ pushd Python-2.7.3 --> <!-- $ ./configure - -prefix=/mingw - -enable-shared - -enable-unicode - -with-cxx-main=g++ - -without-threads - -without-signal-module --> <!-- $ make --> <!--  --> <!-- Python/import.c を修正します．~ --> <!-- //#ifdef MS_WINDOWS   /* since Windows uses different permissions  */ --> <!-- #ifdef _WIN32 || MS_WINDOWS   /* since Windows uses different permissions  */ --> <!--  --> <!-- $ make install --> <!-- $ popd -->
+
+[LibUnicodeNames](https://github.com/chemoelectric/libunicodenames) をインストールします．<br>
+
+```
+$ curl --insecure -R -L -O https://github.com/downloads/chemoelectric/libunicodenames/libunicodenames-1.0.0_beta4.tar.xz
+$ tar Jxvf libunicodenames-1.0.0_beta4.tar.xz
+$ pushd libunicodenames-1.0.0_beta4
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
 
 [FontForge](https://github.com/fontforge/fontforge) をインストールします．<br>
 エラーが発生する場合はビルドできるように修正してインストールします．→ [2012-09-12 - にっき♪](http://d.hatena.ne.jp/abenori/20120912)<br>
@@ -272,9 +268,9 @@ Summary of optional features:
 
   real (floating pt) double
   programs           yes
-  native scripting   no
-  python scripting   no
-  python extension   no
+  native scripting   yes
+  python scripting   yes
+  python extension   yes
   freetype debugger  no
   capslock for alt   no
   raw points mode    no
@@ -411,14 +407,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- checking for module 'poppler>=0.20.0'
 --   found poppler, version 0.21.0
 -- checking for module 'libfontforge>=2.0.0'
---   package 'libfontforge>=2.0.0' not found
-Trying to locate fontforge...
-Found fontforge.h: C:/MinGW/include/fontforge/fontforge.h
-Found fontforge: C:/MinGW/lib/libfontforge.dll.a
-Found gunicode: C:/MinGW/lib/libgunicode.dll.a
-Looking for libraries of python, which is required by fontforge, if you can link
- fontforge without python, you may disable this
--- checking for one of the modules 'python;python-2.7'
+--   found libfontforge, version 2.0.0
 Found config.h: C:/MinGW/include/fontforge/config.h
 -- Configuring done
 -- Generating done
@@ -482,6 +471,9 @@ Cygwin では問題なく動作するようです．<br>
 - [Build gcc 4.7.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1695)
 - [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
 - [sol-prog/gcc-4.7-binary · GitHub](https://github.com/sol-prog/gcc-4.7-binary)
+- [homebrew/Library/Formula/pdf2htmlex.rb at pdf2htmlex · jamiely/homebrew · GitHub](https://github.com/jamiely/homebrew/blob/pdf2htmlex/Library/Formula/pdf2htmlex.rb)
+- [Pdf2htmlex.rb](https://gist.github.com/3758157)
+- [pdf2htmlex brew formula rough draft](https://gist.github.com/3758431)
 - [#36028 (pdf2htmlEX port) – MacPorts](https://trac.macports.org/ticket/36028)
 
 ### Linux {#bbc3ecf8}
