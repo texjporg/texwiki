@@ -210,6 +210,19 @@ Summary of optional dependencies:
 
 ```
 $ make
+```
+
+エラーが発生する場合は
+
+```
+#if defined(_WIN32)
+#include <windows.h>
+#define srandom srand
+#define random rand
+#endif
+```
+
+```
 $ make install
 $ popd
 ```
