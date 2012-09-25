@@ -62,7 +62,7 @@ poppler - TeX Wiki を参照して poppler をインストールします．(pdf
 
 <!-- [[Boost:http://www.boost.org/]] をインストールします． -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
-<!-- $ tar jxvf boost_1_51_0.tar.bz2 -->
+<!-- $ tar xvf boost_1_51_0.tar.bz2 -->
 <!-- $ pushd boost_1_51_0 -->
 <!-- $ cmd -->
 <!-- >bootstrap.bat gcc -->
@@ -94,7 +94,7 @@ FontForge はこれらの関数を使用しているようです．<br>
 
 ```
 $ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
-$ tar jxvf dlfcn-win32-r19.tar.bz2
+$ tar xvf dlfcn-win32-r19.tar.bz2
 $ pushd dlfcn-win32-r19
 $ ./configure --prefix=/mingw --enable-shared
 $ make
@@ -106,7 +106,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/libspiro/libspiro_src-20071029.tar.bz2
-$ tar jxvf libspiro_src-20071029.tar.bz2
+$ tar xvf libspiro_src-20071029.tar.bz2
 $ pushd libspiro-20071029
 $ ./configure --prefix=/mingw
 $ make
@@ -116,7 +116,7 @@ $ popd
 
 <!-- [[getopt:http://software.frodo.looijaard.name/getopt/]] をインストールします．~ -->
 <!-- $ curl -R -L -O http://software.frodo.looijaard.name/getopt/files/getopt-1.1.5.tar.gz -->
-<!-- $ tar zxvf getopt-1.1.5.tar.gz -->
+<!-- $ tar xvf getopt-1.1.5.tar.gz -->
 <!-- $ pushd getopt-1.1.5 -->
 <!--  -->
 <!-- Makefile の -->
@@ -141,7 +141,7 @@ $ popd
 
 <!-- [[xmlto:http://cyberelk.net/tim/software/xmlto/]] をインストールします．~ -->
 <!-- $ curl - -insecure -R -L -O https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.25.tar.bz2 -->
-<!-- $ tar jxvf xmlto-0.0.25.tar.bz2 -->
+<!-- $ tar xvf xmlto-0.0.25.tar.bz2 -->
 <!-- $ pushd xmlto-0.0.25 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
@@ -150,7 +150,7 @@ $ popd
 
 <!-- [[GIFLIB:http://giflib.sourceforge.net/]] をインストールします．~ -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/giflib/giflib-5.0.0.tar.bz2 -->
-<!-- $ tar jxvf giflib-5.0.0.tar.bz2 -->
+<!-- $ tar xvf giflib-5.0.0.tar.bz2 -->
 <!-- $ pushd giflib-5.0.0 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
@@ -161,7 +161,7 @@ $ popd
 
 ```
 $ curl --insecure -R -L -O https://github.com/downloads/chemoelectric/libunicodenames/libunicodenames-1.0.0_beta4.tar.xz
-$ tar Jxvf libunicodenames-1.0.0_beta4.tar.xz
+$ tar xvf libunicodenames-1.0.0_beta4.tar.xz
 $ pushd libunicodenames-1.0.0_beta4
 $ ./configure --prefix=/mingw
 $ make
@@ -169,11 +169,11 @@ $ make install
 $ popd
 ```
 
-[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar jxvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar jxvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
+[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar xvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar xvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
 
 ```
 $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
-$ tar zxvf fontforge-fontforge.tar.gz
+$ tar xvf fontforge-fontforge.tar.gz
 $ pushd fontforge-fontforge*
 $ ./autogen.sh
 $ ./configure --prefix=/mingw
@@ -222,6 +222,8 @@ $ make
 #endif
 ```
 
+を追加します．
+
 ```
 $ make install
 $ popd
@@ -231,7 +233,7 @@ $ popd
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.92.tar.gz
-$ tar zxvf ttfautohint-0.92.tar.gz
+$ tar xvf ttfautohint-0.92.tar.gz
 $ pushd ttfautohint-0.92
 $ ./configure --prefix=/mingw
 $ make
@@ -267,7 +269,7 @@ $ popd
 
 ```
 $ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
-$ tar zxvf coolwanglu-pdf2htmlEX.tar.gz
+$ tar xvf coolwanglu-pdf2htmlEX.tar.gz
 $ cd coolwanglu-pdf2htmlEX*
 ```
 
