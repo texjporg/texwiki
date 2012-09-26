@@ -321,16 +321,6 @@ $ make install
 $ popd
 ```
 
-<!-- -[[FastCGI:http://www.fastcgi.com/]] をインストールします． -->
-<!--  -->
-<!-- $ curl -R -L -O http://www.fastcgi.com/dist/fcgi-2.4.1-SNAP-0910052249.tar.gz -->
-<!-- $ tar xvf fcgi-2.4.1-SNAP-0910052249.tar.gz -->
-<!-- $ pushd fcgi-2.4.1-SNAP-0910052249 -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-
 - [libopenjpeg](http://www.openjpeg.org/) をインストールします．
 
 ```
