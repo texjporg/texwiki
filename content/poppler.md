@@ -150,6 +150,32 @@ $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libp
 C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
 ```
 
+***
+
+- C:/MinGW/lib/pkgconfig/python.pc
+- C:/MinGW/lib/pkgconfig/python-2.7.pc
+
+を作成して以下の内容を記述します．
+
+***
+
+```
+prefix=/mingw
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=/c/Python27/include
+
+Name: Python
+Description: Python library
+Requires: 
+Version: 2.7
+Libs.private:
+Libs: -L${libdir} -lpython27
+Cflags: -IC:/Python27/include
+```
+
+***
+
 - [zlib](http://zlib.net/) をインストールします．
 
 ```
@@ -307,14 +333,10 @@ $ popd
 
 - [libopenjpeg](http://www.openjpeg.org/) をインストールします．
 
-<!-- $ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only -->
-<!-- $ pushd openjpeg-read-only -->
-<!-- $ ./bootstrap.sh -->
-
 ```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.0.tar.gz
-$ tar xvf openjpeg-1.5.0.tar.gz
-$ pushd openjpeg-1.5.0
+$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
+$ tar xvf openjpeg-1.5.1.tar.gz
+$ pushd openjpeg-1.5.1
 ```
 
 <!-- $ ./configure - -prefix=/mingw - -enable-mj2 - -enable-jpwl - -enable-jpip -->
