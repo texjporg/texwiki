@@ -176,6 +176,17 @@ $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontfor
 $ tar xvf fontforge-fontforge.tar.gz
 $ pushd fontforge-fontforge*
 $ ./autogen.sh
+Preparing the fontforge build system...please wait
+
+Found GNU Autoconf version 2.68
+Found GNU Automake version 1.12.4
+Found GNU Libtool version 2.4
+
+Automatically preparing build ... done
+
+The fontforge build system is now prepared.  To build here, run:
+  ./configure
+  make
 $ ./configure --prefix=/mingw
 ```
 
@@ -212,7 +223,16 @@ Summary of optional dependencies:
 $ make
 ```
 
-エラーが発生する場合は
+```
+noprefs.c:451:2: error: implicit declaration of function 'GetModuleFileNameA' [-
+Werror=implicit-function-declaration]
+noprefs.c:679:5: error: implicit declaration of function 'srandom' [-Werror=impl
+icit-function-declaration]
+noprefs.c:680:5: error: implicit declaration of function 'random' [-Werror=impli
+cit-function-declaration]
+```
+
+のエラーが発生する場合は
 
 ```
 #if defined(_WIN32)
@@ -226,6 +246,20 @@ $ make
 
 ```
 $ make install
+```
+
+make install でエラーになる場合は pyhook/Makefile を
+
+```
+#pyexecdir = ${exec_prefix}\Lib\site-packages
+#pythondir = ${prefix}\Lib\site-packages
+pyexecdir = C:/Python27/Lib/site-packages
+pythondir = C:/Python27/Lib/site-packages
+```
+
+に修正します．
+
+```
 $ popd
 ```
 
