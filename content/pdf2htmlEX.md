@@ -40,13 +40,16 @@ pdf2htmlEX version 0.5 で修正されました． →
 Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると Firefox の動作が極端に遅くなります．<br>
 OS X や Linux の Firefox では問題が発生しないようです．<br>
 
-### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されない → pdf2htmlEX version 0.5 で修正されました {#t8c12146}
+### pdf2htmlEX version 0.5 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする {#t8c12146}
 
-pdf2htmlEX version 0.5 で修正されました． →
-(参照：[cheat.htmlはChromeでもみえるようです](http://twitter.com/coolwanglu/status/249134714722611200))<br>
-修正前の pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Google Chrome で拡大しない状態で表示すると細い線 (1−x の − (マイナス) など) が表示されません．→ [Chromeは細い線が潰れてます](http://twitter.com/tomoBorderless/status/246220536781348865)<br>
-Windows 版の Google Chrome で拡大しない状態で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると 1−x の − (マイナス) が表示されていないように見えます．<br>
-拡大すると表示されます．<br>
+pdf2htmlEX version 0.5 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
+Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf を変換して表示すると
+
+175% → 1−x の − (マイナス) が表示される<br>
+200% → 1−x の − (マイナス) が表示されない<br>
+250% → 1−x の − (マイナス) が表示される<br>
+
+といった現象が発生します．<br>
 Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](http://twitter.com/coolwanglu/status/246220925454934016)
 
 ## インストール {#d5b9a2e9}
@@ -405,6 +408,30 @@ bj
 [100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/ArgParser.cc.obj
 Linking CXX executable pdf2htmlEX.exe
 [100%] Built target pdf2htmlEX
+```
+
+```
+collect2.exe: error: ld returned 1 exit status
+```
+
+のエラーが発生する場合は CMakeFiles/pdf2htmlEX.dir/build.make の
+
+```
+        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG ......
+```
+
+と記述されている行を修正してリンクできるようにしてください．<br>
+以下のように修正するとリンクできるようになりました．<br>
+実際は1行です．<br>
+
+```
+        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
+hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
+xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
+e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
+winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32  -lz -lfreety
+pe -lxml2 -lgioftp -lgutils -lpng15 -lltdl -ljpeg -liconv -lintl -lspiro -lunico
+denames -lgobject-2.0 -ltiff -lgunicode -lpython27
 ```
 
 ```
