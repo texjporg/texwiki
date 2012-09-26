@@ -84,9 +84,10 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
-- [mingw-and-ndk](https://code.google.com/p/mingw-and-ndk/) のページから [Python](http://www.python.org/) の MinGW バイナリ ([python-mingw.7z](https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z)) をダウンロードしてインストールします．
-
-[7-Zip](http://sevenzip.sourceforge.jp/) で展開して中身のフォルダーを C:\MinGW に上書きします．<br>
+- [Python](http://www.python.org/) Python 2.7.3 Windows Installer (32bit 版) をダウンロードしてインストールします．
+    <!-- -[[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします． -->
+    <!--  -->
+    <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
 
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
@@ -124,6 +125,30 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 <!-- basepkg.cc:273:28: error: 'S_ISLNK' was not declared in this scope -->
 <!-- - --  -->
 <!-- lstat は MinGW にはないので無理っぽい -->
+
+- mingw-utils をインストールします．
+
+```
+$ mingw-get install mingw-utils
+```
+
+- MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．
+
+32bit Windows の場合
+
+```
+$ pexports /c/Windows/System32/python27.dll > python27.def
+$ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
+```
+
+64bit Windows の場合
+
+```
+$ pexports /c/Windows/SysWOW64/python27.dll > python27.def
+$ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
+```
 
 - [zlib](http://zlib.net/) をインストールします．
 
@@ -736,14 +761,26 @@ $ make install
 $ popd
 ```
 
-- [gettext](http://www.gnu.org/software/gettext/) をインストールします．<br>
+- [GLib](http://www.gtk.org/) をインストールします．
 
-    ```
-    $ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
-    $ tar xvf gettext-0.18.1.1.tar.gz
-    $ pushd gettext-0.18.1.1
-    $ ./configure --prefix=/mingw
-    ```
+```
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
+$ tar xvf glib-2.34.0.tar.xz
+$ pushd glib-2.34.0
+$ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
+- [gettext](http://www.gnu.org/software/gettext/) をインストールします．
+
+```
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
+$ tar xvf gettext-0.18.1.1.tar.gz
+$ pushd gettext-0.18.1.1
+$ ./configure --prefix=/mingw
+```
 
 [gettext-runtime/tests/test-lock.c](http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105) を修正します．<br>
 
@@ -762,29 +799,17 @@ $ make install
 $ popd
 ```
 
-- [GLib](http://www.gtk.org/) をインストールします．<br>
+- [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．
 
-    ```
-    $ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
-    $ tar xvf glib-2.34.0.tar.xz
-    $ pushd glib-2.34.0
-    $ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
-    $ make
-    $ make install
-    $ popd
-    ```
-
-- [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．<br>
-
-    ```
-    $ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
-    $ tar xvf pkg-config-0.27.1.tar.gz
-    $ pushd pkg-config-0.27.1
-    $ ./configure --prefix=/mingw
-    $ make
-    $ make install
-    $ popd
-    ```
+```
+$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
+$ tar xvf pkg-config-0.27.1.tar.gz
+$ pushd pkg-config-0.27.1
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
 
 <!-- gtk -->
 <!--  -->
@@ -814,7 +839,7 @@ $ pushd poppler-0.21.0
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --disable-poppler-glib --disable-gtk-test
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
@@ -823,7 +848,7 @@ Building poppler with support for:
   splash output:      yes
   cairo output:       yes
   qt4 wrapper:        yes
-  glib wrapper:       no
+  glib wrapper:       yes
     introspection:    no
   cpp wrapper:        yes
   use gtk-doc:        no
@@ -862,7 +887,7 @@ Building Poppler with support for:
   splash output:        yes
   cairo output:         yes
   qt4 wrapper:          yes
-  glib wrapper:         no
+  glib wrapper:         yes
     introspection:      no
   cpp wrapper:          yes
   use gtk-doc:          not supported with this CMake build system
@@ -963,6 +988,8 @@ C:.
 
 ## 関連リンク {#m3ac74dd}
 
+- [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
+- [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
