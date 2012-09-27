@@ -518,7 +518,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 ## 関連リンク {#m74160f6}
 
-- [WangLu's Tech Blog](http://coolwanglu.blogspot.com/)
+- [WangLu's Tech Blog: pdf2htmlEX 的搜索结果:](http://coolwanglu.blogspot.com/search?q=pdf2htmlEX)
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
 - [巫璐赛](http://lang-8.com/393787)
     - [160 面白いこと、日本のプログラマ達](http://lang-8.com/393787/journals/1699609/)
