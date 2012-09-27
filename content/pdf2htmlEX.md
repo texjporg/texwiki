@@ -20,6 +20,32 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 - [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
 - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
 
+## 注意点 {#j715c0ef}
+
+### pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → --auto-hint 1 オプションを指定する {#t8c12146}
+
+pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
+Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf をオプション指定なしで
+
+```
+$ pdf2htmlEX --zoom 2 cheat.pdf
+```
+
+として変換して表示すると
+
+90% → 1−x の − (マイナス) が表示される<br>
+100% → 1−x の − (マイナス) が表示されない<br>
+110% → 1−x の − (マイナス) が表示される<br>
+
+といった現象が発生します．<br>
+オプション指定で --auto-hint 1 を指定すると表示できるようになりました
+
+```
+$ pdf2htmlEX --auto-hint 1 --zoom 2 cheat.pdf
+```
+
+Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](http://twitter.com/coolwanglu/status/246220925454934016)
+
 ## 不具合 {#q60cf17d}
 
 ### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる → pdf2htmlEX version 0.4 で修正されました {#x082653d}
@@ -39,18 +65,6 @@ pdf2htmlEX version 0.5 で修正されました． →
 修正前の pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](http://twitter.com/kobachi_dearu/status/245839318202081280)<br>
 Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると Firefox の動作が極端に遅くなります．<br>
 OS X や Linux の Firefox では問題が発生しないようです．<br>
-
-### pdf2htmlEX version 0.5 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする {#t8c12146}
-
-pdf2htmlEX version 0.5 で変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
-Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf を変換して表示すると
-
-175% → 1−x の − (マイナス) が表示される<br>
-200% → 1−x の − (マイナス) が表示されない<br>
-250% → 1−x の − (マイナス) が表示される<br>
-
-といった現象が発生します．<br>
-Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](http://twitter.com/coolwanglu/status/246220925454934016)
 
 ## インストール {#d5b9a2e9}
 
@@ -344,18 +358,15 @@ int mkdir(const char *dir,mode_t mode){
 
 を追加します．
 
-src/ffw.c に
-
-<!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
-
-```
-#if defined(_WIN32)
-#undef printf
-#undef vfprintf
-#endif
-```
-
-を追加します．
+<!-- src/ffw.c に -->
+<!--  -->
+<!-- // #if defined(_WIN32) && ! defined(_MSC_VER) -->
+<!-- #if defined(_WIN32) -->
+<!-- #undef printf -->
+<!-- #undef vfprintf -->
+<!-- #endif -->
+<!--  -->
+<!-- を追加します． -->
 
 ```
 $ mkdir build
