@@ -428,7 +428,7 @@ collect2.exe: error: ld returned 1 exit status
 のエラーが発生する場合は CMakeFiles/pdf2htmlEX.dir/build.make の
 
 ```
-        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
+	/C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
 hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
 xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
 e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
@@ -440,7 +440,7 @@ winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 実際は1行です．<br>
 
 ```
-        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
+	/C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
 hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
 xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
 e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
@@ -526,6 +526,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
     - [154 リンク](http://lang-8.com/393787/journals/1669233)
     - [152 デモストレーション](http://lang-8.com/393787/journals/1665803/)
     - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
+    - [148 新しい変換ツール： pdf2htmlEX](http://lang-8.com/393787/journals/1658811/)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
