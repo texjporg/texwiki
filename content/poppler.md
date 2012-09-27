@@ -358,25 +358,8 @@ $ popd
 $ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
 $ tar xvf nkf-2.1.2.tar.gz
 $ pushd nkf-2.1.2
-```
-
-Makefile の
-
-```
-prefix = /usr/local
-```
-
-を
-
-```
-prefix = /mingw
-```
-
-に変更します．
-
-```
 $ make
-$ make install
+$ make prefix=/mingw install
 mkdir /mingw/bin
 mkdir: cannot create directory `/mingw/bin': File exists
 make: [install] Error 1 (ignored)
