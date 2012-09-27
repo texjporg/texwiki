@@ -140,6 +140,7 @@ $ mingw-get install mingw-utils
 $ pexports /c/Windows/System32/python27.dll > python27.def
 $ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
 C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
+$ rm python27.def
 ```
 
 64bit Windows の場合
@@ -148,6 +149,7 @@ C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/Sys
 $ pexports /c/Windows/SysWOW64/python27.dll > python27.def
 $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
 C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
+$ rm python27.def
 ```
 
 ***
