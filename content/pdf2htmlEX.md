@@ -25,7 +25,7 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 ### pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → --auto-hint 1 オプションを指定する {#t8c12146}
 
 pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
-Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf をオプション指定なしで
+Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf を --auto-hint 1 オプション指定なしで
 
 ```
 $ pdf2htmlEX --zoom 2 cheat.pdf
@@ -33,9 +33,9 @@ $ pdf2htmlEX --zoom 2 cheat.pdf
 
 として変換して表示すると
 
-90% → 1−x の − (マイナス) が表示される<br>
-100% → 1−x の − (マイナス) が表示されない<br>
-110% → 1−x の − (マイナス) が表示される<br>
+拡大/縮小 90% → 1−x の − (マイナス) が表示される<br>
+拡大/縮小 100% → 1−x の − (マイナス) が表示されない<br>
+拡大/縮小 110% → 1−x の − (マイナス) が表示される<br>
 
 といった現象が発生します．<br>
 オプション指定で --auto-hint 1 を指定すると表示できるようになりました
@@ -428,7 +428,11 @@ collect2.exe: error: ld returned 1 exit status
 のエラーが発生する場合は CMakeFiles/pdf2htmlEX.dir/build.make の
 
 ```
-        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG ......
+        /C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
+hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
+xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
+e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
+winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 ```
 
 と記述されている行を修正してリンクできるようにしてください．<br>
