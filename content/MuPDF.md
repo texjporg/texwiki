@@ -7,7 +7,7 @@ pukiwiki: "MuPDF"
 
 # MuPDF
 
-## [MuPDF](http://mupdf.com/) {#x9985d4a}
+## [MuPDF](http://www.mupdf.com/) {#x9985d4a}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -15,7 +15,7 @@ pukiwiki: "MuPDF"
 
 MuPDF は軽量な PDF/XPS ビューアです．
 
-- [MuPDF](http://mupdf.com/)
+- [MuPDF](http://www.mupdf.com/)
     - [summary](http://git.ghostscript.com/?p=mupdf.git;a=summary)
 
 ## インストール {#m15a5d1f}
@@ -46,7 +46,7 @@ $ make install
 $ popd
 ```
 
-- MuPDF をインストールします．
+- [MuPDF](http://www.mupdf.com/) をインストールします．
 
 ```
 $ curl -R -L -o mupdf.tar.gz "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz"
