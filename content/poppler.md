@@ -974,6 +974,11 @@ C:.
 
 ***
 
+### OS X {#l3620b9b}
+
+- [homebrew / Library / Formula / poppler.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/poppler.rb)
+- [/trunk/dports/graphics/poppler/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/poppler/Portfile)
+
 ### Linux {#k603e696}
 
 - fontconfig
