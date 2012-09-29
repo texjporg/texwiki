@@ -213,21 +213,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng15/1.5.12/libpng-1.5.12.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng15/1.5.13/libpng-1.5.13.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.5.12.tar.xz
-$ tar xvf libpng-1.5.12.tar.xz
-$ pushd libpng-1.5.12
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.5.13.tar.xz
+$ tar xvf libpng-1.5.13.tar.xz
+$ pushd libpng-1.5.13
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng15/1.5.12/libpng-1.5.12.tar.xz -->
-<!-- $ tar xvf libpng-1.5.12.tar.xz -->
-<!-- $ pushd libpng-1.5.12 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng15/1.5.13/libpng-1.5.13.tar.xz -->
+<!-- $ tar xvf libpng-1.5.13.tar.xz -->
+<!-- $ pushd libpng-1.5.13 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
