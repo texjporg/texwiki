@@ -567,6 +567,11 @@ $ curl -R -L -O http://cairographics.org/releases/cairo-1.12.2.tar.xz
 $ tar xvf cairo-1.12.2.tar.xz
 $ pushd cairo-1.12.2
 $ ./configure --prefix=/mingw
+```
+
+<!-- $ qt_CFLAGS="-IC:/Qt/4.8.3/include" qt_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
+
+```
 
 cairo (version 1.12.2 [release]) will be compiled with:
 
@@ -577,10 +582,20 @@ The following surface backends:
   Mime:          yes (always builtin)
   Tee:           no (disabled, use --enable-tee to enable)
   XML:           no (disabled, use --enable-xml to enable)
+```
+
+<!--   XML:           yes -->
+
+```
   Skia:          no (disabled, use --enable-skia to enable)
   Xlib:          no (requires X development libraries)
   Xlib Xrender:  no (requires --enable-xlib)
   Qt:            no (disabled, use --enable-qt to enable)
+```
+
+<!--   Qt:            yes -->
+
+```
   Quartz:        no (requires CoreGraphics framework)
   Quartz-image:  no (disabled, use --enable-quartz-image to enable)
   XCB:           no (requires xcb >= 1.6 xcb-render >= 1.6 http://xcb.freedeskto
