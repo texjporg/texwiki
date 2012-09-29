@@ -1274,6 +1274,7 @@ Live preview for TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
+- [TeXworks、TeXShopの紹介](http://kappa-bioinformatics.blogspot.jp/2012/09/texworks.html)
 - [TeXShop入れてみた](http://milkyway.holy.jp/?p=143)
 - [TeXShop・TeXworksのインストール方法 -Mac OSX Lion-](http://www.monochrome-photo.info/?p=3406)
 - [latexme インストール と TeXShop の設定](http://fbncc112358.blogspot.jp/2012/04/latexme-texshop.html)
