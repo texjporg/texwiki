@@ -13,7 +13,8 @@ pukiwiki: "MuPDF"
 
 ## MuPDF とは {#u255891c}
 
-MuPDF は軽量な PDF/XPS ビューアです．
+MuPDF は軽量な PDF/XPS ビューアです．<br>
+Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 - [MuPDF](http://www.mupdf.com/)
     - [summary](http://git.ghostscript.com/?p=mupdf.git;a=summary)
@@ -96,3 +97,7 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
+
+## 関連リンク {#u27a744e}
+
+- [MuPDF for Windows 9x](http://d.hatena.ne.jp/lukewarm/20110521#p1)
