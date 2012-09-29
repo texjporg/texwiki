@@ -139,6 +139,24 @@ CTAN の世界的なミラーリングとして次の URI があります。
 <!-- [[FTP サービス:http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html]] -->
 <!-- - -ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/ -->
 
+### CTAN内日本語関連収録物 {#p09c9b86}
+
+下記は "[http://mirror.ctan.org/](http://mirror.ctan.org/)" にリンクしているので、ミラーサイトのどこかに飛びます。
+
+- [日本語ディレクトリ](http://mirror.ctan.org/language/japanese/)
+    - [NTT JTeX](http://mirror.ctan.org/language/japanese/jtex/)
+    - [ASCII pTeX](http://mirror.ctan.org/language/japanese/ptex/)
+    - [ASCII pTeXマクロ類](http://mirror.ctan.org/language/japanese/ptex-texmf/)
+    - [Babel用japaneseパッケージ](http://mirror.ctan.org/language/japanese/japanese/)
+    - [japanese-otfパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf/)
+    - [japanese-otf-uptexパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf-uptex/)
+    - [jfontmaps](http://mirror.ctan.org/language/japanese/jfontmaps/)
+
+- [dviwareディレクトリ](http://mirror.ctan.org/dviware/)
+    - [dvips](http://mirror.ctan.org/dviware/dvips/)
+    - [dvipdfmx](http://mirror.ctan.org/dviware/dvipdfmx/)
+    - [dviout](http://mirror.ctan.org/dviware/dviout/)
+
 ### 関連リンク {#wc81d3dd}
 
 - [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
