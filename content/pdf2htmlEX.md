@@ -344,7 +344,7 @@ char *mkdtemp(char *tempbuf){
   srand((unsigned)time(0));
   rand_value = (int)((rand() / ((double)RAND_MAX+1.0)) * 1e6);
   tempbase = strrchr(tempbuf, '/');
-  tempbase++;
+  tempbase = tempbase ? tempbase+1 : tempbuf;
   strcpy(tempbasebuf, tempbase);
   sprintf(&tempbasebuf[strlen(tempbasebuf)-6], "%d", rand_value);
   ::GetTempPath(MAX_PATH, tempbuf);
@@ -492,12 +492,9 @@ Cygwin では問題なく動作するようです．<br>
 
 ### OS X {#u6860a4e}
 
-- [Build gcc 4.7.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1695)
-- [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
-- [sol-prog/gcc-4.7-binary · GitHub](https://github.com/sol-prog/gcc-4.7-binary)
 - [homebrew/Library/Formula/pdf2htmlex.rb at pdf2htmlex · jamiely/homebrew · GitHub](https://github.com/jamiely/homebrew/blob/pdf2htmlex/Library/Formula/pdf2htmlex.rb)
-- [Pdf2htmlex.rb](https://gist.github.com/3758157)
-- [pdf2htmlex brew formula rough draft](https://gist.github.com/3758431)
+    - [Pdf2htmlex.rb](https://gist.github.com/3758157)
+    - [pdf2htmlex brew formula rough draft](https://gist.github.com/3758431)
 - [#36028 (pdf2htmlEX port) – MacPorts](https://trac.macports.org/ticket/36028)
 
 ### Linux {#bbc3ecf8}
@@ -548,6 +545,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
 - [「pdf2htmlEX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=pdf2htmlEX)
+- [これがHTML？と言いたくなるようなPDF変換ソフトウェア「pdf2htmlEX」](http://www.moongift.jp/2012/09/20120926/)
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [Pdf2htmlEX: A PDF to HTML converter | Hacker News](http://news.ycombinator.com/item?id=4528797)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
@@ -557,3 +555,6 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 - [dlfcn-win32](http://code.google.com/p/dlfcn-win32/)
 - [MinGW/dllを呼び出す - Ura5han Wiki](http://ura5han.resourcez.org/wiki/MinGW/dll%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99)
+- [Build gcc 4.7.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1695)
+- [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
+- [sol-prog/gcc-4.7-binary · GitHub](https://github.com/sol-prog/gcc-4.7-binary)
