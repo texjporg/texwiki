@@ -323,7 +323,7 @@ $ make install
 $ popd
 ```
 
-- [libopenjpeg](http://www.openjpeg.org/) をインストールします．
+- [OpenJPEG](http://www.openjpeg.org/) をインストールします．
 
 ```
 $ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
