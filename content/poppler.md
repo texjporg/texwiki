@@ -569,7 +569,7 @@ $ pushd cairo-1.12.2
 $ ./configure --prefix=/mingw
 ```
 
-<!-- $ qt_CFLAGS="-IC:/Qt/4.8.3/include" qt_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
+<!-- $ qt_CFLAGS="-IC:/Qt/4.8.3/include -IC:/Qt/4.8.3/include/QtCore -IC:/Qt/4.8.3/include/QtGui" qt_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -LC:/Qt/4.8.3/lib -lQtGui4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
 
 ```
 
