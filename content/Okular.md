@@ -14,3 +14,14 @@ pukiwiki: "Okular"
 
 Okular は KDE で動作する PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
 SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
+
+## インストール {#xecad964}
+
+### Windows {#h8e4fcbd}
+
+- [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
+
+### Linux {#zf4b2d67}
+
+- [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
+- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html)
