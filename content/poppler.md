@@ -18,7 +18,7 @@ poppler は
 
 <table>
 <tbody>
-<tr><th style="color:#468">エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXworks/">TeXworks</a>, <a href="/Texmaker/">Texmaker</a>/<a href="/TeXstudio/">TeXstudio</a>, <a href="/Kile/">Kile</a>, Gummi</td></tr>
+<tr><th style="color:#468">エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXworks/">TeXworks</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXstudio/">TeXstudio</a>, <a href="/Kile/">Kile</a>, Gummi</td></tr>
 <tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a>, <a href="/qpdfview/">qpdfview</a>, PdfViewer</td></tr>
 </tbody>
 </table>
