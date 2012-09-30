@@ -330,13 +330,27 @@ src/pdf2htmlEX.cc に
 
 ```
 #if defined(_WIN32)
-char *mkdtemp(char *buf){
+#include <errno.h>
+char *mkdtemp(char *tempbuf){
+  int rand_value = 0;
+  char* tempbase = NULL;
+  char tempbasebuf[MAX_PATH] = "";
+
+  if (strcmp(&tempbuf[strlen(tempbuf)-6], "XXXXXX")) {
+    errno = EINVAL;
+    return NULL;
+  }
+
   srand((unsigned)time(0));
-  int a = (int)((rand() / ((double)RAND_MAX+1.0)) * 1e6);
-  ::GetTempPath(MAX_PATH,buf);
-  sprintf(buf, "%s%s%d", buf, "pdf2htmlEX-", a);
-  ::CreateDirectory(buf,NULL);
-  return buf;
+  rand_value = (int)((rand() / ((double)RAND_MAX+1.0)) * 1e6);
+  tempbase = strrchr(tempbuf, '/');
+  tempbase++;
+  strcpy(tempbasebuf, tempbase);
+  sprintf(&tempbasebuf[strlen(tempbasebuf)-6], "%d", rand_value);
+  ::GetTempPath(MAX_PATH, tempbuf);
+  strcat(tempbuf, tempbasebuf);
+  ::CreateDirectory(tempbuf, NULL);
+  return tempbuf;
 }
 #endif
 ```
@@ -349,9 +363,12 @@ src/util.cc に
 
 ```
 #if defined(_WIN32)
-int mkdir(const char *dir,mode_t mode){
-  if(::GetFileAttributes(dir) == FILE_ATTRIBUTE_DIRECTORY)return 0;
-  return ::CreateDirectory(dir,NULL) ? 0 : 1;
+int mkdir(const char *pathname, mode_t mode) {
+  if (::GetFileAttributes(pathname) == FILE_ATTRIBUTE_DIRECTORY) {
+    errno = EEXIST;
+    return -1;
+  }
+  return ::CreateDirectory(pathname, NULL) ? 0 : -1;
 }
 #endif
 ```
@@ -534,6 +551,8 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [Pdf2htmlEX: A PDF to HTML converter | Hacker News](http://news.ycombinator.com/item?id=4528797)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
+- [Man page of MKDTEMP](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man3/mkdtemp.3.html)
+- [Man page of MKDIR](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man2/mkdir.2.html)
     <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
 
 - [dlfcn-win32](http://code.google.com/p/dlfcn-win32/)
