@@ -23,7 +23,7 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 ### お知らせ {#xa82989b}
 
 [Adobe Reader 9, Adobe Acrobat 9 のサポートが 2013年6月26日 で終了](http://blogs.adobe.com/adobereader/2012/06/one-year-from-now-adobe-reader-and-acrobat-9-eol.html)する予定です．<br>
-Adobe Reader 9 を使用している方は Adobe Reader X にアップグレードしてください．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reader X にアップグレードしてください．<br>
 
 ## 不具合 {#r92dd454}
 
