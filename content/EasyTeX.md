@@ -242,7 +242,7 @@ PDF Reader は SumatraPDF がおすすめです．<br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
 >
 > 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
@@ -258,7 +258,7 @@ PDF Reader は SumatraPDF がおすすめです．<br>
 
 > <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
 >
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
 >
 > 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
 
