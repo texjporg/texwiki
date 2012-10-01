@@ -767,6 +767,32 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
+■ Adobe Reader XI の場合<br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins> または <ins>C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
+　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <ins>\[AppExit()\]</ins><br>
+　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
 ■ Adobe Reader X の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
@@ -793,35 +819,9 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-■ Adobe Reader 9 の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins> または <ins>C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
-　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>acroview</ins>　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
-
-<br>
-
-　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[DocClose("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>acroview</ins>　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
 編集後，
 
-> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)　</span><br>
 
 の優先度を上から四番目にします．
 
@@ -922,8 +922,8 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+　　　　コマンド： <ins>\[WinNormal\]\[FileOpen("%file")\]</ins><br>
+　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
 
 <br>
 
@@ -963,7 +963,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　TeXworks (C:\w32tex\share\texworks\TeXworks.exe)<br>
 　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
-　acroread (C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe)<br>
+　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
 　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)<br>
 　dviout (C:\w32tex\dviout\dviout.exe)<br>
