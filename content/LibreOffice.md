@@ -7,7 +7,7 @@ pukiwiki: "LibreOffice"
 
 # LibreOffice
 
-## LibreOffice/Apache OpenOffice {#s11aabea}
+## LibreOffice/Apache OpenOffice/NeoOffice {#s11aabea}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -47,10 +47,11 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 - [OpenOffice.org 日本ユーザー会](http://oooug.jp/)
     - [OpenOffice.org 日本ユーザー会 出版物リスト](http://pub.oooug.jp/)
         - [OpenOffice.orgユーザーのためのLibreOffice移行ガイド](http://pub.oooug.jp/guide/migration/0_0_0/)
-- [OpenOffice.org 独自ビルドプロジェクト](http://sourceforge.jp/projects/waooo/wiki/FrontPage)
-- [OxygenOffice Professional](http://sourceforge.net/projects/ooop/files/)
-- [OpenOffice.org Portable](http://portableapps.com/apps/office/openoffice_portable)
-    - [OpenOffice.org Portable Localized](http://portableapps.com/apps/office/openoffice_portable/localization)
+
+## NeoOffice とは {#x07fc9a1}
+
+NeoOffice は OS X 専用のフリーのオフィススイートです．
+
 - [NeoOffice](http://www.neooffice.org/)
 
 ## LibreOffice/Apache OpenOffice Writer {#z088446c}
