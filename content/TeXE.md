@@ -178,7 +178,7 @@ Macroのパラメータ<br>
 : C:\w32tex\dviout\dviout.exe
 
 引数
-: -1 "%D" "# %l '%f'"
+: -1 "%D"
 
 DDE
 : ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
@@ -190,7 +190,7 @@ Topic
 : dviout
 
 Macro
-: \[PageOpen(# %l '%f')\]\[WinNormal\]\[FileOpen("%D")\]
+: \[WinNormal\]\[FileOpen("%D")\]
 
 #### TeXworks {#red004a1}
 
@@ -302,7 +302,25 @@ TeX の引数に -src-specials を追加します．
 
 ### forward search {#a097e41a}
 
-forward search は Dvi Viewer の dviout を参照してください．
+forward search は
+
+フルパス
+: C:\w32tex\dviout\dviout.exe
+
+引数
+: -1 "%D" "# %l '%f'"
+
+DDE
+: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
+
+Service
+: dviout
+
+Topic
+: dviout
+
+Macro
+: \[PageOpen(# %l '%f')\]\[WinNormal\]\[FileOpen("%D")\]
 
 ### inverse search {#rb0c5e23}
 
@@ -356,7 +374,7 @@ C:\texe022i\TeXE.exe^s /j%d "%s"
 : Adobe Reader
 
 コマンド
-: C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe "%X.pdf"
+: C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe "%X.pdf"
 
 パス
 : <br>
