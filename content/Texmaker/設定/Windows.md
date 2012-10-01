@@ -100,7 +100,7 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -188,7 +188,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
