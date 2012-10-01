@@ -849,6 +849,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
 - [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
+- [LaTeXをquickrunで楽に処理する](http://d.hatena.ne.jp/itchyny/20121001/1349094989)
 - [vim 快適な論文執筆環境の整備 -その1-](http://kuni255.blogspot.jp/2011/12/vim-1.html)
 - [vim 快適な論文執筆環境の整備 -その2-](http://kuni255.blogspot.jp/2011/12/vim-2.html)
 - [vim 快適な論文執筆環境の整備 -その3-](http://kuni255.blogspot.jp/2011/12/vim-3.html)
