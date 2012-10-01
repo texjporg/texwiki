@@ -128,59 +128,48 @@ Gui-Shellの一般的動作設定<br>
 
 ***
 
-### RaTeX0e {#s1e27527}
-
-- [RaTeX0e](http://uca-works.com/program/ratex.html)
-    (福中 公輔 さん)
-
-### AutoHotKey スクリプト {#va7fd93d}
-
-- [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
-    (谷内 稜 さん)
-
-### 秀丸エディタで LaTeX {#ubdba7fd}
-
-- [秀丸エディタで LaTeX (hidemacro-070502.tar.gz)](http://www.cymric.jp/old/tex/hidemaru.html)
-    (Maxima 普及委員会)
-
-### 秀丸で簡単コンパイル {#m6700653}
-
-- [秀丸で簡単コンパイル](http://imawamukashi.web.fc2.com/TeX/hidemacro.html)
-    (Outsider's Website)
-
-### 秀丸マクロ for TeX editing {#h3f49b53}
-
-- [秀丸マクロ for TeX editing](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
-    (fuhmi さん)
-
-### トリビュート {#qac4762a}
-
-- [トリビュート](http://www.vector.co.jp/soft/win95/writing/se259789.html), [LaTeX2e 用強調表示定義ファイル](http://homepage2.nifty.com/masema/software/LaTeX_hilight.html)
-    (ませま さん)
-
-### LaTeX Compile HIDEMARU Macro {#w6e15581}
-
-- [LaTeX Compile HIDEMARU Macro (LaTeXコンパイル用秀丸マクロ)](http://hide.maruo.co.jp/lib/macro/lcm11.html)
-    (岩里 さん)
-
-### TeX用改行コード挿入マクロ {#ndf01264}
-
-- [TeX用改行コード挿入マクロ](http://hide.maruo.co.jp/lib/macro/il-fc093.html) (haze さん)
-
-### TeX Module Control with HIDEMARU Macro {#rff2c60d}
-
-- [TeX Module Control with HIDEMARU Macro](http://www.ceres.dti.ne.jp/~sugiura/hidemaru/macros/tex_mc/index.html)
-    (杉浦 方紀 さん)
-
-### LaTeX コンパイル支援マクロ {#ob9080ba}
-
-- [LaTeX コンパイル支援マクロ](http://www.seman.cs.uec.ac.jp/~inuzuka/hidemac.html)
-    (犬塚 敦史 さん)
-
-### 飛鳥 (ひちょう) HiTeX {#y3147877}
-
-- [飛鳥 (ひちょう) HiTeX](http://www.yatex.org/HiTeX/)
-    (安田 晴行 さん)
+<!-- **RaTeX0e [#s1e27527] -->
+<!-- -[[RaTeX0e:http://uca-works.com/program/ratex.html]] -->
+<!-- (福中 公輔 さん) -->
+<!--  -->
+<!-- **AutoHotKey スクリプト [#va7fd93d] -->
+<!-- -[[AutoHotKey スクリプト:http://ryo-t.com/diary/?p=94]] -->
+<!-- (谷内 稜 さん) -->
+<!--  -->
+<!-- **秀丸エディタで LaTeX [#ubdba7fd] -->
+<!-- -[[秀丸エディタで LaTeX (hidemacro-070502.tar.gz):http://www.cymric.jp/old/tex/hidemaru.html]] -->
+<!-- (Maxima 普及委員会) -->
+<!--  -->
+<!-- **秀丸で簡単コンパイル [#m6700653] -->
+<!-- -[[秀丸で簡単コンパイル:http://imawamukashi.web.fc2.com/TeX/hidemacro.html]] -->
+<!-- (Outsider's Website) -->
+<!--  -->
+<!-- **秀丸マクロ for TeX editing [#h3f49b53] -->
+<!-- -[[秀丸マクロ for TeX editing:http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6]] -->
+<!-- (fuhmi さん) -->
+<!--  -->
+<!-- **トリビュート [#qac4762a] -->
+<!-- -[[トリビュート:http://www.vector.co.jp/soft/win95/writing/se259789.html]], [[LaTeX2e 用強調表示定義ファイル:http://homepage2.nifty.com/masema/software/LaTeX_hilight.html]] -->
+<!-- (ませま さん) -->
+<!--  -->
+<!-- **LaTeX Compile HIDEMARU Macro [#w6e15581] -->
+<!-- -[[LaTeX Compile HIDEMARU Macro (LaTeXコンパイル用秀丸マクロ):http://hide.maruo.co.jp/lib/macro/lcm11.html]] -->
+<!-- (岩里 さん) -->
+<!--  -->
+<!-- **TeX用改行コード挿入マクロ [#ndf01264] -->
+<!-- -[[TeX用改行コード挿入マクロ:http://hide.maruo.co.jp/lib/macro/il-fc093.html]] (haze さん) -->
+<!--  -->
+<!-- **TeX Module Control with HIDEMARU Macro [#rff2c60d] -->
+<!-- -[[TeX Module Control with HIDEMARU Macro:http://www.ceres.dti.ne.jp/~sugiura/hidemaru/macros/tex_mc/index.html]] -->
+<!-- (杉浦 方紀 さん) -->
+<!--  -->
+<!-- **LaTeX コンパイル支援マクロ [#ob9080ba] -->
+<!-- -[[LaTeX コンパイル支援マクロ:http://www.seman.cs.uec.ac.jp/~inuzuka/hidemac.html]] -->
+<!-- (犬塚 敦史 さん) -->
+<!--  -->
+<!-- **飛鳥 (ひちょう) HiTeX [#y3147877] -->
+<!-- -[[飛鳥 (ひちょう) HiTeX:http://www.yatex.org/HiTeX/]] -->
+<!-- (安田 晴行 さん) -->
 
 ## スクリプト {#w87ef5ac}
 
