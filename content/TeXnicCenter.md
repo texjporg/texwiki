@@ -878,20 +878,16 @@ Executable path<br>
 <br>
 
 View project's output<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>-1 "%bm.dvi"</ins><br>
-
-<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
 
 <br>
 
 Forward search<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>-1 "%bm.dvi"</ins><br>
-
-<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[WinNormal\]\[FileOpen("%bm.dvi")\]</ins><br>
+Server: <ins>dviout</ins>　　　　　　　　　　Topic: <ins>dviout</ins><br>
 
 <br>
 
@@ -1217,6 +1213,49 @@ Close document before running (La)TeX<br>
 
 #### [Adobe Reader](</Adobe Reader/>) {#c94760c4}
 
+■ Adobe Reader XI の場合<br>
+
+***
+
+<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
+
+Executable path<br>
+
+<br>
+
+<ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
+
+<br>
+
+View project's output<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>"%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Forward search<br>
+<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
+
+Command <ins>"%bm.pdf"</ins><br>
+
+<br>
+
+<br>
+
+Close document before running (La)TeX<br>
+◯ Command line argument　<span style="color:#3333CC;">◎</span> DDE command　　◯ Do not close<br>
+Command <ins>\[DocOpen("%bm.pdf")\]\[DocClose("%bm.pdf")\]</ins><br>
+Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
+
+<br>
+
+***
+
 <!-- Adobe Reader X の場合 Server は acroviewR10 に設定します．~ -->
 <!-- ただし Adobe Reader X で [編集(E)]-[環境設定(N)...]-[一般]-[起動時に保護モードを有効にする(M)] にチェックがついている場合，Adobe Reader X の起動時に下記のエラーメッセージが出力され，PDF ファイルが表示されませんでした．~ -->
 <!--  -->
@@ -1279,77 +1318,6 @@ Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 <!-- -Close document before running (La)TeX で Server: に acroviewR10, Topic: に control を指定して [DocClose("%bm.pdf")] の前に [DocOpen("%bm.pdf")] を追加する -->
 <!--  -->
 <!-- です． -->
-
-■ Adobe Reader 9 の場合<br>
-
-***
-
-<span style="color:Black;background-color:#2E3436;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
-
-Executable path<br>
-
-<br>
-
-<ins>C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe</ins><br>
-
-<br>
-
-View project's output<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>"%bm.pdf"</ins><br>
-
-<br>
-
-<br>
-
-Forward search<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>"%bm.pdf"</ins><br>
-
-<br>
-
-<br>
-
-Close document before running (La)TeX<br>
-◯ Command line argument　<span style="color:#3333CC;">◎</span> DDE command　　◯ Do not close<br>
-Command <ins>\[DocOpen("%bm.pdf")\]\[DocClose("%bm.pdf")\]</ins><br>
-Server: <ins>acroview</ins>　　　　　　　　Topic: <ins>control</ins><br>
-
-<br>
-
-***
-
-<!-- [[Alphan Ulusoy&#039;s Blog &rsaquo; Using Adobe Acrobat Reader with TeXnicCenter:http://blog.alphanulusoy.com/?p=10]] を参照． -->
-<!--  -->
-<!-- 動作未確認です． -->
-<!--  -->
-<!-- - --  -->
-<!-- &color(Black,#2E3436){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){%%%[ 　''&color(White){✕};''　 ]%%%}; %%%};&br; -->
-<!-- &color(Black,#EEEEEE){%%%[ (La)TeX　　　][ Preprocessor ][ Postprocessor ]%%%};''[ Viewer　　　]''&br; -->
-<!-- Executable path&br; -->
-<!-- &br; -->
-<!-- %%%C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe%%%&br; -->
-<!-- &br; -->
-<!-- View project's output&br; -->
-<!-- ◯ Command line argument　　&color(#3333CC){◎}; DDE command&br; -->
-<!-- Command %%%[DocOpen("%bm.pdf")][DocOpen("%bm.pdf")][FileOpen("%bm.pdf")]%%%&br; -->
-<!-- Server: %%%acroview%%%　　　　　　　　Topic: %%%control%%%&br; -->
-<!-- &br; -->
-<!-- Forward search&br; -->
-<!-- ◯ Command line argument　　&color(#3333CC){◎}; DDE command&br; -->
-<!-- Command %%%[DocOpen("%bm.pdf")][DocOpen("%bm.pdf")][DocOpen("%bm.pdf")]%%%&br; -->
-<!-- Server: %%%acroview%%%　　　　　　　　Topic: %%%control%%%&br; -->
-<!-- &br; -->
-<!-- Close document before running (La)TeX&br; -->
-<!-- ◯ Command line argument　&color(#3333CC){◎}; DDE command　　◯ Do not close&br; -->
-<!-- Command %%%[DocOpen("%bm.pdf")][DocClose("%bm.pdf")]%%%&br; -->
-<!-- Server: %%%acroview%%%　　　　　　　　Topic: %%%control%%%&br; -->
-<!-- &br; -->
-<!-- - --  -->
 
 #### PDF-XChange Viewer {#x915b4c1}
 
