@@ -7,7 +7,7 @@ pukiwiki: "LyX/設定/Windows"
 
 # LyX/設定/Windows
 
-[LyX](/LyX/) > 設定
+[LyX](/LyX/) > [設定](</LyX/設定/>) > Windows
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -180,7 +180,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (plain)　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[LyX　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tex2lyx -e utf8 -f $$i $$o</ins><br>
+変換子(O):　　　<ins>tex2lyx -e UTF8 -f $$i $$o</ins><br>
 追加フラグ(X):<br>
 
 ***
@@ -1598,6 +1598,15 @@ C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d
 <!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d -->
 
 を記述します．
+
+## 関連リンク {#gab21d87}
+
+- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
+- [Windows7でTeX環境を作った](http://barippi.blog.fc2.com/blog-entry-1309.html)
+- [Ｌｙｘ導入](http://coswata.blog20.fc2.com/blog-entry-5409.html)
+- [WindowsにおいてLyX2.0で日本語を扱う](http://d.hatena.ne.jp/femm/20111206/1323165881)
+- [LyX ～数式エディタとして使う～](http://physchem.web.fc2.com/PC/latex/lyx.html)
+- [TeX | どうでもいいメモ（保守中）](http://6esky.wordpress.com/category/tex/)
 
 [^1]: 操作画面 (メニューやダイアログなど) 用言語を選択してください。
 [^2]: どの言語パッケージをLyXが使うべきか選択してください
