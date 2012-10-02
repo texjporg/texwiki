@@ -32,7 +32,7 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
-### Windows 7 64bit で PDF ファイルののサムネールが表示されない → [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+### Windows 7 64bit で PDF ファイルのサムネールが表示されない → [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
 
 - [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941)
 - [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/)
