@@ -7,18 +7,27 @@ pukiwiki: "LyX/設定/OS X"
 
 # LyX/設定/OS X
 
-### OS X {#tab664aa}
+[LyX](/LyX/) > [設定](</LyX/設定/>) > OS X
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## 関連リンク {#tab664aa}
 
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [Mac OS XにTex Lyx導入](http://d.hatena.ne.jp/mosa_siru/20120627/1340818055)
 - [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
 - [LyX &laquo; Konno Log](http://knnlog.wordpress.com/tag/lyx/)
-- [LyX | Konno Log](http://knmac.math.kyushu-u.ac.jp/konno/modules/wpkonno/?tag=lyx)
-- [LyXとgraphicx](http://ysykimura.wordpress.com/2012/07/09/lyx%E3%81%A8graphicx/)
-- [LyXの設定：メモ](http://ysykimura.wordpress.com/2012/03/29/lyx%E3%81%AE%E8%A8%AD%E5%AE%9A%EF%BC%9A%E3%83%A1%E3%83%A2/)
-- [LyX＋α](http://ysykimura.wordpress.com/2011/11/16/lyx%EF%BC%8B%CE%B1/)
-- [LyX (2)](http://ysykimura.wordpress.com/2011/10/22/lyx-2/)
-- [LyX (1)](http://ysykimura.wordpress.com/2011/10/22/lyx/)
+    - [MacTeX で LyX を使う](http://knnlog.wordpress.com/2012/04/01/mactex-%E3%81%A7-lyx-%E3%82%92%E4%BD%BF%E3%81%86/)
+    - [Lion への LyX 導入](http://knnlog.wordpress.com/2011/10/16/lion-%E3%81%B8%E3%81%AE-lyx-%E5%B0%8E%E5%85%A5/)
+    - [LyX インストール](http://knnlog.wordpress.com/2011/02/13/lyx-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/)
+        <!-- -[[LyX | Konno Log:http://knmac.math.kyushu-u.ac.jp/konno/modules/wpkonno/?tag=lyx]] -->
+
+- [TeX | ysykimura](http://ysykimura.wordpress.com/category/tex/)
+    - [LyXとgraphicx](http://ysykimura.wordpress.com/2012/07/09/lyx%E3%81%A8graphicx/)
+    - [LyXの設定：メモ](http://ysykimura.wordpress.com/2012/03/29/lyx%E3%81%AE%E8%A8%AD%E5%AE%9A%EF%BC%9A%E3%83%A1%E3%83%A2/)
+    - [LyX＋α](http://ysykimura.wordpress.com/2011/11/16/lyx%EF%BC%8B%CE%B1/)
+    - [LyX (2)](http://ysykimura.wordpress.com/2011/10/22/lyx-2/)
+    - [LyX (1)](http://ysykimura.wordpress.com/2011/10/22/lyx/)
 - [LyX2 &amp; TeXLive2010/Mac で 日本語PDF表示までしてみた。](http://d.hatena.ne.jp/fu7mu4/20110515/1305422129)
 - [/trunk/dports/aqua/LyX/Portfile](http://trac.macports.org/browser/trunk/dports/aqua/LyX/Portfile)
     <!-- -[[LyX上で、自作のLaTeX Document Classを使える様に設定した。LaTeXのローカル環境（~/Library/texmf以下とか）に自作「.cls」ファイルを置いた後に「texhash」を実行、自作クラス定義用に「.layout」レイアウト・ファイルを作成してLyX側でそれを参照すればOK。:http://twitter.com/Shigerello]] -->
