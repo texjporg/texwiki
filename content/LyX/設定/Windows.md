@@ -877,20 +877,8 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 
 ### 順検索 (forward search) {#ffa7876e}
 
-- Windows の場合
-
-> DVIコマンドは [dviout](/dviout/) を使用します．<br>
-> PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
-
-- OS X の場合
-
-> DVIコマンドは pxdvi を使用します．<br>
-> PDFコマンドは Skim の displayline を使用します．<br>
-
-- Linux の場合
-
-> DVIコマンドは pxdvi を使用します．<br>
-> PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
+DVIコマンドは [dviout](/dviout/) を使用します．<br>
+PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 \[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[一般\]
 
@@ -913,7 +901,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 
 ***
 
-#### Windows の場合 (SumatraPDF を前面に表示したい場合) {#d7bb0d3c}
+#### SumatraPDF を前面に表示したい場合 {#d7bb0d3c}
 
 ■ 32bit Windows の場合
 
@@ -949,7 +937,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 
 ***
 
-#### Windows の場合 (SumatraPDF を前面に表示したくない場合) {#w7121c3e}
+#### SumatraPDF を前面に表示したくない場合 {#w7121c3e}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
@@ -965,50 +953,6 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 順検索<br>
 　DVIコマンド: <ins>"C:\w32tex\dviout\dviout.exe" -1 $$o "# $$n '$$t'"</ins><br>
 　PDFコマンド: <ins>"C:\w32tex\NDde\Binary\fwdsumatrapdf.exe" $$o $$t $$n</ins><br>
-
-***
-
-#### OS X の場合 {#d0572089}
-
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-
-```
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <ins>/usr/texbin/pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
-　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
-
-***
-
-#### Linux の場合 {#l3e420bc}
-
-[Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
-
-***
-
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-
-```
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <ins>pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
-　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
 
 ***
 
