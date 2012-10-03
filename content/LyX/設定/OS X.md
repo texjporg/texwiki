@@ -11,6 +11,32 @@ pukiwiki: "LyX/設定/OS X"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## 設定 {#lcef069b}
+
+### 順検索 (forward search) {#d0572089}
+
+DVIコマンドは pxdvi を使用します．<br>
+PDFコマンドは Skim の displayline を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <ins>/usr/texbin/pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
+
+***
+
 ## 関連リンク {#tab664aa}
 
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
