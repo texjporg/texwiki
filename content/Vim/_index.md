@@ -901,6 +901,10 @@ C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
+## Evince との連携 (forward and inverse search) {#p78ad52b}
+
+[tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
+
 ## dviout との連携 (非推奨) {#yb1d17aa}
 
 [dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
@@ -918,10 +922,6 @@ C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
 ```
 
 です．
-
-## Evince との連携 (forward and inverse search) {#p78ad52b}
-
-[tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
 ## pxdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
 
