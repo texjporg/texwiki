@@ -11,6 +11,32 @@ pukiwiki: "LyX/設定/Linux"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## 設定 {#f3c4bb26}
+
+### 順検索 (forward search) {#l3e420bc}
+
+DVIコマンドは pxdvi を使用します．<br>
+PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <ins>pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
+
+***
+
 ## 関連リンク {#z80015dd}
 
 - [Ubuntu12.04でLyXを入れるときに一緒に入ろうとするTeXパッケージと格闘する](http://barippi.seesaa.net/article/293238931.html)
