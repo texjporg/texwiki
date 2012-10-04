@@ -354,7 +354,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>-Command "&amp; {$p = echo """$pwd\\%s.pdf""";start "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe" -ArgumentList ('--new-window',$p)}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$s = echo %s.pdf;$p = \[System.IO.Path\]::GetFullPath($s);rundll32 shell32,ShellExec_RunDLL "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe" --new-window $p}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
