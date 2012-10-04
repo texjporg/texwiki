@@ -209,6 +209,7 @@ latexmk -C
 ### [OMake](http://omake.metaprl.org/) {#yf7ac218}
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
+- [ぼくのかんがえたさいきょうの小説執筆環境](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
 - [latex-template](https://github.com/nojima/latex-template)
 - \[[OMake\]\[tex\] 複数ファイル](http://ameblo.jp/kaerunyaru/entry-11283143868.html)
 - [Windowsで快適なLaTeX環境を構築する](http://nojima.hatenablog.com/entry/2012/01/12/205857)
