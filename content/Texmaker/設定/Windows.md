@@ -200,7 +200,12 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 #### [TeX Live](</TeX Live/>) {#p3874cc2}
 
-[TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html) を参照． <!-- [[TeX Live 2012 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/15776344.html]] を参照． -->
+- [TeX Live 2012 と日本語](http://torip.whitesnow.jp/?p=1020)
+- [TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html)
+
+を参照．
+
+<!-- [[TeX Live 2012 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/15776344.html]] を参照． -->
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
 
