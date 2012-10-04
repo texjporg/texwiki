@@ -178,3 +178,7 @@ Gui-Shellの一般的動作設定<br>
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
+## 関連リンク {#mec8cd02}
+
+- [秀丸エディタのお勧めの設定](http://tipszone.jp/20121003_hidemaru-config/)
