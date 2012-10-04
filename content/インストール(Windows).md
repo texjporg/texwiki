@@ -211,6 +211,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[TeX Live 2012 と日本語](http://torip.whitesnow.jp/?p=1020)
+: 2012-10-03
+
 [TeX Live 2012をWindows 7 (64bit)環境にインストールしたメモ](http://d.hatena.ne.jp/hyuki/20120915/tex)
 : 2012-09-15
 
