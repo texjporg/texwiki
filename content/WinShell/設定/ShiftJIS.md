@@ -15,6 +15,41 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 ### LaTeX {#v667ffa2}
 
+#### コマンド プロンプトを表示したい場合 (-jobname を使用する場合) {#h6590942}
+
+- &#x2d;jobname を使用すると 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
+- exeファイル名を rundll32.exe に変更します．
+- さらに，コマンドラインも shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s}" に変更します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　プログラム名　　<ins>LaTeX</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">LaTeX　　　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
+　　exeファイル名 　<ins>rundll32.exe</ins><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s}"</ins><br>
+　　　　　　　　　　　　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
+　　実行キー:　　　　引数:<br>
+　　F5 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+
+***
+
 #### Windows PowerShell の場合 (-jobname を使用する場合) {#tdad26dc}
 
 - &#x2d;jobname を使用すると 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
@@ -312,6 +347,40 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 ***
 
 ### PDFLaTeX {#be6ae006}
+
+#### コマンド プロンプトを表示したい場合 {#rad3a657}
+
+- exeファイル名を rundll32.exe に変更します．
+- さらに，コマンドラインも shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s;if($?){dvipdfmx $s}}" に変更します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+　　プログラム名　　<ins>PDFLaTeX</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
+　　exeファイル名 　<ins>rundll32.exe</ins><br>
+　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFLaTeX　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s;if($?){dvipdfmx $s}}"</ins><br>
+　　　　　　　　　　　　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
+　　実行キー:　　　　引数:<br>
+　　F10　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+
+***
 
 #### Windows PowerShell の場合 {#b63425e9}
 
