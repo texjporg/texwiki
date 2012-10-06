@@ -15,10 +15,11 @@ pukiwiki: "pdf2htmlEX"
 
 pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウェアです．
 
+- [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
     - [FAQ](https://github.com/coolwanglu/pdf2htmlEX/wiki/FAQ)
-- [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
 - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
+    - 日本語で送信してよろしいです。
 
 ## 注意点 {#j715c0ef}
 
@@ -53,10 +54,6 @@ Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリ
 pdf2htmlEX version 0.4 で修正されました． →
 (参照：[commit a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96](https://github.com/coolwanglu/pdf2htmlEX/commit/a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96))<br>
 修正前の pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](http://twitter.com/tomoBorderless/status/245510669665984512)<br>
-
-- [IE9以前におけるスタイルシート制限](http://html555.jp/2012/05/08/ie_selector/)
-- [CSS スタイルを使用して、web ページが、Internet Explorer で正常に表示されません。](http://support.microsoft.com/kb/262161/ja)
-- [A webpage that uses CSS styles does not render correctly in Internet Explorer](http://support.microsoft.com/kb/262161/en-us)
 
 ### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる → pdf2htmlEX version 0.5 で修正されました {#ddfa6a70}
 
@@ -536,11 +533,8 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
 - [巫璐赛](http://lang-8.com/393787)
     - [160 面白いこと、日本のプログラマ達](http://lang-8.com/393787/journals/1699609/)
-    - [155 促進する](http://lang-8.com/393787/journals/1670992/)
-    - [154 リンク](http://lang-8.com/393787/journals/1669233)
     - [152 デモストレーション](http://lang-8.com/393787/journals/1665803/)
     - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
-    - [148 新しい変換ツール： pdf2htmlEX](http://lang-8.com/393787/journals/1658811/)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
