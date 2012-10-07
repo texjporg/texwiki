@@ -428,6 +428,7 @@ Ctrl+Space で補完を行います．<br>
 - [改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/)
 - [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
+- [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
 - [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
 - [TeXlipse as a lightweight portable TeX editor](http://blog.keyboardplaying.org/2012/05/26/texlipse-lightweight-portable-tex-editor/)
 - [TeXlipse is again my favorite LaTeX environment](http://joelslinux.blogspot.jp/2012/05/texlipse-is-again-my-favorite-latex.html)
