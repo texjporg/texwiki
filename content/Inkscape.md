@@ -416,6 +416,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
     - [https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape](https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape)
 - [Inkscape Portable with Textext (MikTex, pstoedit, gs)](http://portableapps.com/node/28897)
 - [textext, pdf2svg on Windows](http://hil.t.u-tokyo.ac.jp/~t-nakano/textext_pdf2svg.html)
+- [Inkscape 0.4.8+TexText](http://blog.nhiroki.net/2012/10/04/textext_on_windows)
 - [textext で使う my.sty](http://kreisel.fam.cx/webmaster/clog/2011-11-23-1.html)
 - [ぼやっきんぐ   &raquo; Inkscape](http://www.empitsu.com/wp/?cat=8)
 - [ＯＺのＸＸ使い: textextの検索結果](http://kozimathewizard.blogspot.com/search?q=textext)
