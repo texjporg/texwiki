@@ -489,10 +489,16 @@ Cygwin では問題なく動作するようです．<br>
 
 ### OS X {#u6860a4e}
 
+#### Homebrew {#db279f00}
+
 - [homebrew/Library/Formula/pdf2htmlex.rb at pdf2htmlex · jamiely/homebrew · GitHub](https://github.com/jamiely/homebrew/blob/pdf2htmlex/Library/Formula/pdf2htmlex.rb)
-    - [Pdf2htmlex.rb](https://gist.github.com/3758157)
-    - [pdf2htmlex brew formula rough draft](https://gist.github.com/3758431)
-- [#36028 (pdf2htmlEX port) – MacPorts](https://trac.macports.org/ticket/36028)
+    <!-- - -[[Pdf2htmlex.rb:https://gist.github.com/3758157]] -->
+    <!-- - -[[pdf2htmlex brew formula rough draft:https://gist.github.com/3758431]] -->
+
+#### MacPorts {#ub0beda7}
+
+- [pdf2htmlEX-macport](https://github.com/iapain/pdf2htmlEX-macport)
+    <!-- -[[#36028 (pdf2htmlEX port) – MacPorts:https://trac.macports.org/ticket/36028]] -->
 
 ### Linux {#bbc3ecf8}
 
