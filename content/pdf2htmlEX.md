@@ -171,12 +171,12 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-[LibUnicodeNames](https://github.com/chemoelectric/libunicodenames) をインストールします．<br>
+[LibUnicodeNames](https://github.com/sortsmill/libunicodenames) をインストールします．<br>
 
 ```
-$ curl --insecure -R -L -O https://github.com/downloads/chemoelectric/libunicodenames/libunicodenames-1.0.0_beta4.tar.xz
-$ tar xvf libunicodenames-1.0.0_beta4.tar.xz
-$ pushd libunicodenames-1.0.0_beta4
+$ curl --insecure -R -L -O https://github.com/downloads/sortsmill/libunicodenames/libunicodenames-1.0.0_beta5.tar.xz
+$ tar xvf libunicodenames-1.0.0_beta5.tar.xz
+$ pushd libunicodenames-1.0.0_beta5
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -478,7 +478,7 @@ Install the project...
 
 ```
 $ pdf2htmlEX --help
-pdftohtmlEX version 0.5
+pdftohtmlEX version 0.6
 ```
 
 pdf2htmlEX はコードを適切に修正すれば Windows でも動作します．
@@ -505,8 +505,10 @@ Cygwin では問題なく動作するようです．<br>
 #### Ubuntu {#z45bd221}
 
 - [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
+- [pdf2htmlEX - Convert PDF to HTML without losing format](http://linux.ikoinoba.net/index.php?UID=1349019363)
 
 ```
+$ sudo apt-get install python-software-properties
 $ sudo apt-add-repository ppa:coolwanglu/pdf2htmlex
 $ sudo apt-get update
 $ sudo apt-get install pdf2htmlex
