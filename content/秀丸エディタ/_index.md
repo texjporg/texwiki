@@ -45,10 +45,10 @@ pukiwiki: "秀丸エディタ"
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
-### [TeXmac, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#ld68541f}
+### [TeXmac, guishell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#ld68541f}
 
-- [TeXmac, Gui-Shell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
-    Gui-Shell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
+- [TeXmac, guishell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
+    guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
     (乙部 厳己 さん @ 信州大)
 
 - [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
@@ -77,7 +77,7 @@ TeXMAC-R #4(8)<br>
 
 ***
 
-#### Gui-Shell {#l396e5fa}
+#### guishell {#l396e5fa}
 
 ***
 
