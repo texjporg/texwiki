@@ -121,6 +121,7 @@ ulimit -t 10 -f 1024
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 - [LiveLaTeX](http://nanatomo.com/app/livelatex/)
 - [JaxEdit](http://code.google.com/p/jaxedit/)
+- [Online Latex Editor](http://luikore.github.com/latex/)
 - [writeLaTeX](http://writelatex.com/)
 
 ***
