@@ -7,7 +7,7 @@ pukiwiki: "pdf2htmlEX"
 
 # pdf2htmlEX
 
-## [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) {#t74544cf}
+## [pdf2htmlEX](http://coolwanglu.github.com/pdf2htmlEX/) {#t74544cf}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -19,7 +19,7 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
     - [FAQ](https://github.com/coolwanglu/pdf2htmlEX/wiki/FAQ)
 - [WANG Lu (coolwanglu) - Twitter](http://twitter.com/coolwanglu)
-    - 日本語で送信してよろしいです。
+    - 日本語で返信していただいてもかまいません。
 
 ## 注意点 {#j715c0ef}
 
@@ -228,7 +228,7 @@ Summary of optional dependencies:
   libtiff            yes        http://en.wikipedia.org/wiki/Libtiff
   libxml             yes        http://www.xmlsoft.org/
   libspiro           yes        http://libspiro.sourceforge.net/
-  libunicodenames    yes        https://github.com/chemoelectric/libunicodenames
+  libunicodenames    yes        https://github.com/sortsmill/libunicodenames
 
   X Window System    no
 ```
@@ -328,7 +328,7 @@ src/pdf2htmlEX.cc に
 ```
 #if defined(_WIN32)
 #include <errno.h>
-char *mkdtemp(char *tempbuf){
+char *mkdtemp(char *tempbuf) {
   int rand_value = 0;
   char* tempbase = NULL;
   char tempbasebuf[MAX_PATH] = "";
