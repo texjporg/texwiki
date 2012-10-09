@@ -85,6 +85,9 @@ platex hoge.tex
 
 ### 関連リンク {#teb8e64f}
 
+- [Windows PowerShell](http://technet.microsoft.com/ja-jp/library/bb978526.aspx)
+    - [Windows PowerShell コア](http://technet.microsoft.com/ja-jp/library/bb978525.aspx)
+        - [Windows PowerShell Cmdlet のヘルプ トピック](http://technet.microsoft.com/ja-jp/library/dd347701.aspx)
 - [基礎知識 (Windows PowerShell)](http://ufcpp.net/study/powershell/basic.html)
 - [GUIユーザーのためのPowerShell入門](http://news.mynavi.jp/column/powershell/)
 - [GREP and SED with PowerShell](http://blogs.msdn.com/b/zainnab/archive/2007/07/09/grep-and-sed-with-powershell.aspx)
