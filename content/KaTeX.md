@@ -21,11 +21,10 @@ KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
 [xyzzy-022](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
 マルチフレーム版では動作しません．<br>
-マルチフレーム版では KaTeX カスタム版を使用してください．<br>
-KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．<br>
+マルチフレーム版では KaTeX カスタム版を使用してください．<br> <!-- KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．~ -->
 
 - [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
-- [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
+    <!-- -[[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] (公式サイトの Web Archive) -->
 
 <!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
 
@@ -259,7 +258,7 @@ KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，ka
 
 ***
 
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.11@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.12@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
 
