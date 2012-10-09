@@ -60,6 +60,7 @@ PDFコマンドは Skim の displayline を使用します．<br>
 
 - [音楽家のためのLaTeX](http://www.geocities.jp/flutecore/LaTeX.html)
     - [若松久仁光のブログ - LyX , LaTeX](http://www.geocities.jp/flutecore/Weblog/archives/cat_lyxlatex.html)
+    - [LyX2.0.4でTeXエディタ比較表を作った](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_139.html)
     - [LyX2.0.4　TeXファイルインポート成功](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_138.html)
     - [LyX2.0.4で書きました　音楽家の為のLaTeX](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_137.html)
     - [LyX2.0.4の欠点 つづき](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_135.html)
