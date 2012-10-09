@@ -52,42 +52,5 @@ WZ7 の TeX に関する機能は以下のページを参照してください�
 
 ### 関連リンク {#k3c11ffb}
 
-- [WZ Editor ユーザーズグループ](http://wzeditor.net/)
+- [WZ Editor ユーザーズグループ](http://wzeditor.seesaa.net/)
 - [WZ EDITOR 7の備忘録](http://www.sd-dream.com/pasocompass/neta/11110701Wz7Memo.html?cat=WZ+EDITOR+7)
-
-## [WZ EDITOR 6](http://www.wzsoft.jp/wz6/) {#k023a395}
-
-[<strong>WZ EDITOR 6 のテクニカルサポートは、2011年12月15日にて終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
-
-- [WZ EDITOR 6](http://www.wzsoft.jp/wz6/)
-    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴](http://www.wzsoft.jp/wz6/list.htm)
-    - [WZsoft > WZ エディタ 6 > リスト > 更新履歴の詳細](http://www.wzsoft.jp/wz6/verup.htm)
-    - [WZsoft > WZ エディタ 6 > ユーザサポート](http://www.wzsoft.jp/wz6/supprt.htm)
-
-WZ 6.0.45 から，「LaTeX」ファイルの編集に標準機能で対応しました。
-
-「LaTeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
-
-WZ6 の LaTeX に関する機能は以下のページを参照してください。
-
-- [WZsoft > WZエディタ > 製品概要 # ●論文](http://www.wzsoft.jp/wz6/intro.htm#tex)
-- [WZsoft > WZエディタ > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wza/write.htm#latex)
-- [WZsoft > WZ エディタ 6 > チュートリアル > 文章作成 # LaTeX](http://www.wzsoft.jp/wz6/wza_002.htm#latex)
-- [WZsoft > WZエディタ > WZ6オンラインヘルプ > LaTeXファイルの編集](http://www.wzsoft.jp/wz6/man/h014.htm)
-
-## WZ EDITOR 5, 4 {#ma420665}
-
-[<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
-
-以下の TeX 用マクロが使用できます。
-
-- [p白鳥 (ぱくちょう) pHackTeX](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm) (水谷 亘 さん) 野鳥系マクロ。ライセンスは GPL。
-
-## WZ EDITOR 3, 2, 1 {#vb048c09}
-
-[<strong>WZ EDITOR 5.0 ～ 1.0 のテクニカルサポートは，終了しました。</strong>](http://www.wzsoft.jp/wz6/supprt.htm)
-
-以下の TeX 用マクロが使用できます。
-
-- [白鳥 (はくちょう) HackTeX](http://www.yatex.org/HackTeX/) (竹中 浩 さん) 野鳥系マクロ。ライセンスは GPL。
-- [TeXenv &amp; TeXdde](http://miko.org/~naruto/WZ/TeXenv/WZ_TeX.html) (NaruTo さん)
