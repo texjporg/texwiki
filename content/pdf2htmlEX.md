@@ -23,9 +23,9 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ## 注意点 {#j715c0ef}
 
-### pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → --auto-hint 1 オプションを指定する {#t8c12146}
+### pdf2htmlEX version 0.6 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → --auto-hint 1 オプションを指定する {#t8c12146}
 
-pdf2htmlEX version 0.5 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
+pdf2htmlEX version 0.6 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
 Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf を --auto-hint 1 オプション指定なしで
 
 ```
@@ -177,7 +177,46 @@ $ popd
 $ curl --insecure -R -L -O https://github.com/downloads/sortsmill/libunicodenames/libunicodenames-1.0.0_beta5.tar.xz
 $ tar xvf libunicodenames-1.0.0_beta5.tar.xz
 $ pushd libunicodenames-1.0.0_beta5
+```
+
+<!-- $ curl - -insecure -R -L -o sortsmill-libunicodenames.tar.gz https://github.com/sortsmill/libunicodenames/tarball/master -->
+<!-- $ tar xvf sortsmill-libunicodenames.tar.gz -->
+<!-- $ pushd sortsmill-libunicodenames* -->
+<!-- $ autoreconf - -install -->
+
+```
 $ ./configure --prefix=/mingw
+```
+
+configure でエラーが発生する場合は configure からエラーの原因を取り除きます．
+
+```
+-        if test ! "x$pythonexists" = "xyes"; then
+-          { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+
+-$as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
+-as_fn_error $? "
+-  Could not link test program to Python. Maybe the main Python library has been
+
+-  installed in some non-standard library path. If so, pass it to configure,
+-  via the LDFLAGS environment variable.
+-  Example: ./configure LDFLAGS=\"-L/usr/non-standard-path/python/lib\"
+-  ============================================================================
+-   ERROR!
+-   You probably have to install the development version of the Python package
+-   for your distribution.  The exact name of this package varies among them.
+-  ============================================================================
+-
+-See \`config.log' for more details" "$LINENO" 5; }
+-         PYTHON_VERSION=""
+-       fi
+-
+-       #
+-       # all done!
+-       #
+```
+
+```
 $ make
 $ make install
 $ popd
@@ -409,27 +448,33 @@ Found config.h: C:/MinGW/include/fontforge/config.h
 
 ```
 $ make
-[  7%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
-[ 15%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
+[  6%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
+[ 12%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
 .obj
-[ 23%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
+[ 18%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
 bj
-[ 30%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
+[ 25%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
 .obj
-[ 38%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
+[ 31%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
 obj
-[ 46%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
+[ 37%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
 j
-[ 53%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
+[ 43%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
 bj
-[ 61%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
+[ 50%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/draw.cc.ob
+j
+[ 56%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/link.cc.ob
+j
+[ 62%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
 .cc.obj
-[ 69%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ffw.c.obj
-[ 76%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer.cc.o
-bj
-[ 84%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/FontPreprocessor.cc.obj
+[ 68%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ffw.c.obj
+[ 75%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/SplashBackgroundRendere
+r.cc.obj
+[ 81%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/CairoBackgroundRenderer
+.cc.obj
+[ 87%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Preprocessor.cc.obj
 
-[ 92%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util.cc.obj
+[ 93%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util.cc.obj
 [100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/ArgParser.cc.obj
 Linking CXX executable pdf2htmlEX.exe
 [100%] Built target pdf2htmlEX
@@ -459,8 +504,8 @@ hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
 xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
 e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
 winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32  -lz -lfreety
-pe -lxml2 -lgioftp -lgutils -lpng15 -lltdl -ljpeg -liconv -lintl -lspiro -lunico
-denames -lgobject-2.0 -ltiff -lgunicode -lpython27
+pe -lxml2 -lgioftp -lgutils -lpng15 -lltdl -ljpeg -liconv -lspiro -lunicodenames
+ -lintl -lgobject-2.0 -ltiff -lgunicode -lpython27
 ```
 
 ```
