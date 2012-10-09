@@ -563,9 +563,9 @@ $ popd
 - [cairo](http://www.cairographics.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.2.tar.xz
-$ tar xvf cairo-1.12.2.tar.xz
-$ pushd cairo-1.12.2
+$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.4.tar.xz
+$ tar xvf cairo-1.12.4.tar.xz
+$ pushd cairo-1.12.4
 $ ./configure --prefix=/mingw
 ```
 
@@ -573,7 +573,7 @@ $ ./configure --prefix=/mingw
 
 ```
 
-cairo (version 1.12.2 [release]) will be compiled with:
+cairo (version 1.12.4 [release]) will be compiled with:
 
 The following surface backends:
   Image:         yes (always builtin)
@@ -652,7 +652,7 @@ $ make
 cairo-missing.h:45:17: error: conflicting types for 'ssize_t'
 ```
 
-[cairo-1.12.2/util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.2#n45) の 45行目にある
+[util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.4#n45) の 45行目にある
 
 ```
 typedef SSIZE_T ssize_t;
