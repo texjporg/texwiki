@@ -21,7 +21,7 @@ EasyTeX は
 
 <table>
 <tbody>
-<tr><td style="color:#000;background-color:#ADF"><strong>Version 3.30 Unicode 以降</strong></td><td>Windows 7, Vista, XP</td></tr>
+<tr><td style="color:#000;background-color:#ADF"><strong>Version 3.30 以降</strong></td><td>Windows 7, Vista, XP</td></tr>
 <tr><td style="color:#000;background-color:#ADF"><strong>Version 3.242</strong></td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
 </tbody>
 </table>
@@ -36,8 +36,9 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012-07-05 EasyTeX Verson 3.306 Unicode<br>
-2012-02-06 EasyTeX Verson 3.242<br>
+2012-10-10 EasyTeX Version 3.31<br>
+2012-07-05 EasyTeX Version 3.306<br>
+2012-02-06 EasyTeX Version 3.242<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
 
@@ -364,9 +365,9 @@ EasyTeX はエディタの設定をすることが可能です．<br>
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　ｴﾃﾞｨﾀ設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　ｴﾃﾞｨﾀ設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ ｺﾒﾝﾄ \]\[ TeX環境 \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]</ins></span><br>
+　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ ｺﾒﾝﾄ \]\[ TeX環境 \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]\[ IME制御 \]</ins></span><br>
 
 　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　フォントの選択　\]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><span style="color:White;background-color:#000099;"> Aaあぁアァ亜宇 </span><span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><br>
