@@ -50,9 +50,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 
 ### スクリーンショット {#j94c34b3}
 
-[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br>
-[![This picture shows the BibTeX completion in action. The cursor disappeared from the screenshot,but you can see the "shadow" of it,as one of the curly braces is highlighted on the line where the error is.](http://texlipse.sourceforge.net/screenshots/bibref-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/bibref-screen.png)
-　 [![This picture shows navigation from build errors to source file. Latex reports all kinds of warnings and errors,and not all of them contain a line number. However,there usually is also a valid error message with line number information.](http://texlipse.sourceforge.net/screenshots/freport-screen-thumb.png)](http://texlipse.sourceforge.net/screenshots/freport-screen.png)
+[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br> <!-- [[&ref(http://texlipse.sourceforge.net/screenshots/bibref-screen-thumb.png,around,nolink,This picture shows the BibTeX completion in action. The cursor disappeared from the screenshot, but you can see the "shadow" of it, as one of the curly braces is highlighted on the line where the error is.);>http://texlipse.sourceforge.net/screenshots/bibref-screen.png]] --> <!-- 　 [[&ref(http://texlipse.sourceforge.net/screenshots/freport-screen-thumb.png,around,nolink,This picture shows navigation from build errors to source file. Latex reports all kinds of warnings and errors, and not all of them contain a line number. However, there usually is also a valid error message with line number information.);>http://texlipse.sourceforge.net/screenshots/freport-screen.png]] -->
 
 ### 特徴 {#qe22fab6}
 
@@ -61,7 +59,7 @@ TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
 - 自動ビルド
 - 自動補完
 - スペル・チェッカー
-- SyncTeX による forward and inverse search (Pdf4Eclipse, SumatraPDF, Skim, fwdevince, Okular, PdfViewer)
+- SyncTeX による forward and inverse search
 
 ## 注意点 {#f6b7dd5c}
 
