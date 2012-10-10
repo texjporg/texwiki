@@ -29,17 +29,16 @@ Mac OS X 10.2 では /usr/lib/php.ini を作ってそこに書き込めばいい
 Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;/IfModule>
 の中に書き込めばいいようです。
 
-pTeX（日本語版 TeX）については，日本語化が十分でないディストリビューションもあるようです。
-特に，dvipdfm が日本語化されていないかもしれません。
-ソースからコンパイルする方法は以下のページをご参照ください。
+pTeX（日本語版 TeX）については，pTeX が UTF-8 に対応していないディストリビューションもあるようです。<br>
+ソースからコンパイルする方法は以下のページをご参照ください。<br>
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
 - [LinuxWiki:PHP](https://okumuralab.org/~okumura/linux/?PHP)
-- [UNIX系OSでのteTeX，pTeX，pLaTeX2eのインストール](/Make/)
+- [TeX Live#ビルド](</TeX Live/#tdb9387a>)
 
 ### セキュリティ上の配慮 {#aeb59313}
 
-以下で $TEXMF と書いた部分は /usr/\[local\[/teTeX\*\]/\]share/texmf
+以下で $TEXMF と書いた部分は /usr/\[local\[/texlive\*\]/\]share/texmf
 のような名前のディレクトリを意味します。
 
 TeX の設定ファイル $TEXMF/web2c/texmf.cnf が次のようになっていなかったら書き換えます。
@@ -123,6 +122,7 @@ ulimit -t 10 -f 1024
 - [JaxEdit](http://code.google.com/p/jaxedit/)
 - [Online Latex Editor](http://luikore.github.com/latex/)
 - [writeLaTeX](http://writelatex.com/)
+- [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 
 ***
 
