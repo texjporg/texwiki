@@ -15,9 +15,7 @@ pukiwiki: "TeX入手法"
     - 手動でインストール
     - インストーラ
         - TeX インストーラ 3
-- [ソースから（UNIX&reg; 互換 OS）](/Make/)
-- [Mac OS X](/Mac/)
+- [OS X](/Mac/)
 - [Linux OS](/Linux/)
 - FreeBSD
-- OS/2
 - [TeXの本](</TeXの本/>)
