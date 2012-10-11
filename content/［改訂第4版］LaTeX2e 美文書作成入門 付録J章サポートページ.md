@@ -20,7 +20,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](/Make/#saac55c2) へのパッチとして試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
+- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](http://tutimura.ath.cx/ptetex/) へのパッチとして試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）—「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
@@ -39,11 +39,11 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 369 中段 LH フォントのインストール—現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで展開（解凍）します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
-- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」— [ptetex3](/Make/#saac55c2) ではすでに OT2 用の設定になっています。従って改変不要です。
+- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」— [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 
 - p. 370 language.dat 場所は $TEXMF/tex/generic/config/ にあります。オリジナルは書き替えずに $TEXMFLOCAL// (&asymp; texmf-local//) ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下にコピーして使った方がよいと思います。
 
-- p. 371 「fmtutil --byfmt platex」— 20070508版より前の [ptetex3](/Make/#saac55c2) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します（ptetex3-20070508 で platex-euc, platex-sjis は廃止されました）。
+- p. 371 「fmtutil --byfmt platex」— 20070508版より前の [ptetex3](http://tutimura.ath.cx/ptetex/) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します（ptetex3-20070508 で platex-euc, platex-sjis は廃止されました）。
 
 - p. 372 「updmap コマンド」— map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録 D.5 節（p. 315 以下）にあります。（稲垣）
 
