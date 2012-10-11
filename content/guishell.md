@@ -7,39 +7,17 @@ pukiwiki: "guishell"
 
 # guishell
 
-## [TeXmac, guishell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#h2793999}
+[秀丸エディタ](</秀丸エディタ/>) > guishell, TeXmac
 
-[TeXmac, guishell](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
+## [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#h2793999}
+
+[guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
 guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
 (乙部 厳己 さん @ 信州大)
 
-- [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
-- [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
-- [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
-- [GuiShell を呼び出し，TeX にコンパイルさせるマクロは？](http://www.maruo.co.jp/hidesoft/2/x31262_.html#31262)
-- [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
-- [角藤版 pTeX を， TeXMac &amp; 秀丸 から使う方法](http://mixedmoss.com/Oboegaki/TeXMac%20install.htm)
-- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
-    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大) 
+## 設定 {#feaae349}
 
-#### TeXmac {#k11d277b}
-
-***
-
-TeXMAC統合環境(1)<br>
-コンパイル関係(2)<br>
-文書クラス設定(3)<br>
-ちょうてふ(4)<br>
-TeXMAC-R #1(5)<br>
-TeXMAC-R #2(6)<br>
-TeXMAC-R #3(7)<br>
-TeXMAC-R #4(8)<br>
-ﾌｫｰﾏｯﾄﾌｧｲﾙ選択(9)<br>
-見出し検索(0)<br>
-
-***
-
-#### guishell {#l396e5fa}
+### guishell {#l396e5fa}
 
 ***
 
@@ -47,7 +25,13 @@ TeXMAC-R #4(8)<br>
 
 - 環境変数 PATH に dviout.exe と guishell.exe の存在するフォルダーを追加する (例えば C:\w32tex\dviout;C:\w32tex\guishell-1.39.2-x64)
 - 環境変数 TEXMF に C:\w32tex\share\texmf を設定する
+    <!-- TEXMF をこのようにすると、通常はTeX からアクセスできなくなる trees が生じる -->
+    <!-- と思いますが大丈夫でしょうか? -->
+
 - 環境変数 TEXMFCNF に C:\w32tex\share\texmf\web2c;C:\w32tex\share\texmf\web2c\eptex を設定する
+    <!-- TEXMFCNF の意味が変更されていますが大丈夫でしょうか。 -->
+    <!-- またいろいろな texmf.cnf が読めなくなります。 -->
+
 - guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で platex.fmt をチェックして 縦組み対応LaTeX2e(platex.fmt) を選択して OK をクリックする
 - guishell.cfg を以下のように設定
 
@@ -89,3 +73,31 @@ Gui-Shellの一般的動作設定<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　☑フォーマットファイルバーの表示<br>
 
 ***
+
+### TeXmac {#k11d277b}
+
+***
+
+TeXMAC統合環境(1)<br>
+コンパイル関係(2)<br>
+文書クラス設定(3)<br>
+ちょうてふ(4)<br>
+TeXMAC-R #1(5)<br>
+TeXMAC-R #2(6)<br>
+TeXMAC-R #3(7)<br>
+TeXMAC-R #4(8)<br>
+ﾌｫｰﾏｯﾄﾌｧｲﾙ選択(9)<br>
+見出し検索(0)<br>
+
+***
+
+## 関連リンク {#m2c882b0}
+
+- [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
+- [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
+- [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
+- [GuiShell を呼び出し，TeX にコンパイルさせるマクロは？](http://www.maruo.co.jp/hidesoft/2/x31262_.html#31262)
+- [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
+- [角藤版 pTeX を， TeXMac &amp; 秀丸 から使う方法](http://mixedmoss.com/Oboegaki/TeXMac%20install.htm)
+- [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
+    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大)
