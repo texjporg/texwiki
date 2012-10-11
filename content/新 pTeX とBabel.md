@@ -88,7 +88,7 @@ TeXWiki:インストール (Windows) を参照）。
 
 #### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
 
-[ptetex3](/Make/#saac55c2) では [teTeX](http://www.tug.org/tetex/)-3.0 所収の
+[ptetex3](http://tutimura.ath.cx/ptetex/) では [teTeX](http://www.tug.org/tetex/)-3.0 所収の
 ハイフネーションファイル（33種類）が同梱されています。“make babel” で
 日本語環境向けの処理が全自動で行われます
 （[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) も
@@ -106,11 +106,11 @@ UNIX 互換 OS ディストリビューション同梱のものや配布バイ�
 『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
 付録 CD-ROM には上記
 [W32TeX](/W32TeX/) と
-[ptetex3](/Make/#saac55c2) が収録されています
+[ptetex3](http://tutimura.ath.cx/ptetex/) が収録されています
 （インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも
 Babel 対応版です（同書付録H参照）。
 
-[W32TeX](/W32TeX/)，[ptetex3](/Make/#saac55c2)
+[W32TeX](/W32TeX/)，[ptetex3](http://tutimura.ath.cx/ptetex/)
 では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット
 関連ファイルをインストールすることだけで全ての環境が整います。これらの
 追加パッケージは $TEXMFLOCAL/ (&asymp; texmf-local/) 以下に入れることにします。
