@@ -25,13 +25,7 @@ guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8�
 
 - 環境変数 PATH に dviout.exe と guishell.exe の存在するフォルダーを追加する (例えば C:\w32tex\dviout;C:\w32tex\guishell-1.39.2-x64)
 - 環境変数 TEXMF に C:\w32tex\share\texmf を設定する
-    <!-- TEXMF をこのようにすると、通常はTeX からアクセスできなくなる trees が生じる -->
-    <!-- と思いますが大丈夫でしょうか? -->
-
 - 環境変数 TEXMFCNF に C:\w32tex\share\texmf\web2c;C:\w32tex\share\texmf\web2c\eptex を設定する
-    <!-- TEXMFCNF の意味が変更されていますが大丈夫でしょうか。 -->
-    <!-- またいろいろな texmf.cnf が読めなくなります。 -->
-
 - guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で platex.fmt をチェックして 縦組み対応LaTeX2e(platex.fmt) を選択して OK をクリックする
 - guishell.cfg を以下のように設定
 
