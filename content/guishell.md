@@ -87,6 +87,7 @@ TeXMAC-R #4(8)<br>
 
 ## 関連リンク {#m2c882b0}
 
+- [最新版 guishell の利用方法](http://blogs.yahoo.co.jp/koh_hotta/63204507.html)
 - [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
 - [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
 - [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
