@@ -348,7 +348,7 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 
 ### PDFLaTeX {#be6ae006}
 
-#### コマンド プロンプトを表示したい場合 {#rad3a657}
+#### platex + dvipdfmx の場合 (コマンド プロンプトを表示したい場合) {#rad3a657}
 
 - exeファイル名を rundll32.exe に変更します．
 - さらに，コマンドラインも shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s;if($?){dvipdfmx $s}}" に変更します．
@@ -382,7 +382,7 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 
 ***
 
-#### Windows PowerShell の場合 {#b63425e9}
+#### platex + dvipdfmx の場合 (Windows PowerShell の場合) {#b63425e9}
 
 - exeファイル名を powershell.exe に変更します．
 - さらに，コマンドラインも -Command "&amp; {$s = echo """%s""";platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s;if($?){dvipdfmx $s}}" に変更します．
@@ -416,7 +416,7 @@ platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobn
 
 ***
 
-#### バッチファイルの場合 {#i5ac5d34}
+#### platex + dvipdfmx の場合 (バッチファイルの場合) {#i5ac5d34}
 
 バッチファイルを作成します．
 
