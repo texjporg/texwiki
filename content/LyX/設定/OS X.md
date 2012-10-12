@@ -58,8 +58,12 @@ PDFコマンドは Skim の displayline を使用します．<br>
 - [/trunk/dports/aqua/LyX/Portfile](http://trac.macports.org/browser/trunk/dports/aqua/LyX/Portfile)
     <!-- -[[LyX上で、自作のLaTeX Document Classを使える様に設定した。LaTeXのローカル環境（~/Library/texmf以下とか）に自作「.cls」ファイルを置いた後に「texhash」を実行、自作クラス定義用に「.layout」レイアウト・ファイルを作成してLyX側でそれを参照すればOK。:http://twitter.com/Shigerello]] -->
 
-- [音楽家のためのLaTeX](http://www.geocities.jp/flutecore/LaTeX.html)
-    - [若松久仁光のブログ - LyX , LaTeX](http://www.geocities.jp/flutecore/Weblog/archives/cat_lyxlatex.html)
+- [若松久仁光のホームページ](http://www.geocities.jp/flutecore/)
+    - [音楽家のためのLaTeX](http://www.geocities.jp/flutecore/LaTeX.html)
+    - [Use LyX](http://www.geocities.jp/flutecore/LyX/)
+- [若松久仁光のブログ - LyX , LaTeX](http://www.geocities.jp/flutecore/Weblog/archives/cat_lyxlatex.html)
+    - [MyHomePage更新](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_142.html)
+    - [LyX2.0.4は今お薦めのアプリ](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_141.html)
     - [LyX2.0.4でTeXエディタ比較表を作った](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_139.html)
     - [LyX2.0.4　TeXファイルインポート成功](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_138.html)
     - [LyX2.0.4で書きました　音楽家の為のLaTeX](http://www.geocities.jp/flutecore/Weblog/archives/2012/10/entry_137.html)
