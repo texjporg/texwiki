@@ -219,3 +219,7 @@ latexmk -C
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
 ### [Rubber](https://launchpad.net/rubber) {#c944641c}
+
+### バッチファイル {#n34560fd}
+
+- [2011.12.14 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20111214/), [2011.3.8 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20110308)
