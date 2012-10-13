@@ -27,6 +27,7 @@ TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
 
 ### リリース情報 {#td599942}
 
+2012-10-12 [Experimental TeXShop 3.12](http://email.esm.psu.edu/pipermail/macosx-tex/2012-October/050150.html)<br>
 2012-06-06 TeXShop (v 3.11)<br>
 2012-06-06 TeXShop (v 2.47)<br>
 
@@ -1274,6 +1275,7 @@ Live preview for TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
+- [MacでTeX環境を整える+α](http://forza3.blog66.fc2.com/blog-entry-291.html)
 - [TeXworks、TeXShopの紹介](http://kappa-bioinformatics.blogspot.jp/2012/09/texworks.html)
 - [TeXShop入れてみた](http://milkyway.holy.jp/?p=143)
 - [TeXShop・TeXworksのインストール方法 -Mac OSX Lion-](http://www.monochrome-photo.info/?p=3406)
