@@ -31,8 +31,8 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
+2012-10-10 poppler 0.20.5<br>
 2012-09-21 poppler 0.21.0<br>
-2012-09-10 poppler 0.20.4<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -730,14 +730,14 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.27.0.tar.bz2
-$ tar xvf curl-7.27.0.tar.bz2
-$ pushd curl-7.27.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.28.0.tar.bz2
+$ tar xvf curl-7.28.0.tar.bz2
+$ pushd curl-7.28.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.27.0
+  curl version:     7.28.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
