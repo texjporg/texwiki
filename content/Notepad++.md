@@ -45,7 +45,7 @@ Notepad++ は
     - [Contributors](http://notepad-plus-plus.org/contributors/)
     - [twitter](http://twitter.com/notepad_plus)
     - [facebook](http://www.facebook.com/Notepad.plus.plus)
-- [Notepad++ 開発サイト](http://projects.tuxfamily.org/group.pl?name=notepadplus)
+- [Notepad++ 開発サイト](http://projects.tuxfamily.org/?do=group;name=notepadplus)
     - [Index of /notepadplus/](http://download.tuxfamily.org/notepadplus/)
     - [donho](http://projects.tuxfamily.org/user.pl?name=donho)
         - [twitter](http://twitter.com/ho_don/)
