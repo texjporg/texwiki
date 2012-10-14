@@ -781,7 +781,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 <br>
 
 　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[AppExit()\]</ins><br>
+　　　　コマンド： <ins>\[DocClose("%fullfile")\]</ins><br>
 　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
