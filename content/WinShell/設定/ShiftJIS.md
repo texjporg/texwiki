@@ -15,7 +15,7 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 ### LaTeX {#v667ffa2}
 
-#### コマンド プロンプトを表示したい場合 (-jobname を使用する場合) {#h6590942}
+#### platex の場合 (コマンド プロンプトを表示したい場合) {#h6590942}
 
 - &#x2d;jobname を使用すると 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
 - exeファイル名を rundll32.exe に変更します．
@@ -50,7 +50,7 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 ***
 
-#### Windows PowerShell の場合 (-jobname を使用する場合) {#tdad26dc}
+#### platex の場合 (Windows PowerShell の場合) {#tdad26dc}
 
 - &#x2d;jobname を使用すると 表.tex, 予定.tex といったファイル名の場合でもうまく処理できます．
 - exeファイル名を powershell.exe に設定します．
@@ -85,7 +85,7 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 ***
 
-#### バッチファイルの場合 (-jobname を使用する場合) {#cacf5771}
+#### platex の場合 (バッチファイルの場合) {#cacf5771}
 
 バッチファイルを作成します．
 
