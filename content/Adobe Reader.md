@@ -36,7 +36,7 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 
 ## 不具合 {#r92dd454}
 
-### Windows 版 Adobe Reader X で Google 日本語入力を使用している場合に日本語入力ができない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
+### Windows 版 Adobe Reader XI または Adobe Reader X で Google 日本語入力を使用している場合に日本語入力ができない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
 
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
