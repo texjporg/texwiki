@@ -30,6 +30,10 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 [Adobe Reader 9, Adobe Acrobat 9 のサポートが 2013年6月26日 で終了](http://blogs.adobe.com/adobereader/2012/06/one-year-from-now-adobe-reader-and-acrobat-9-eol.html)する予定です．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reader X にアップグレードしてください．<br>
 
+### リリース情報 {#j256c5cd}
+
+2012-10-15 Adobe Reader XI
+
 ## 不具合 {#r92dd454}
 
 ### Windows 版 Adobe Reader X で Google 日本語入力を使用している場合に日本語入力ができない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
