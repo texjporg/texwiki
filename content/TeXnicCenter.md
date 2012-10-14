@@ -1230,26 +1230,22 @@ Executable path<br>
 <br>
 
 View project's output<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>"%bm.pdf"</ins><br>
-
-<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
+Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
-<span style="color:#3333CC;">◎</span> Command line argument　　◯ DDE command<br>
-
-Command <ins>"%bm.pdf"</ins><br>
-
-<br>
+◯ Command line argument　　<span style="color:#3333CC;">◎</span> DDE command<br>
+Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
+Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
 ◯ Command line argument　<span style="color:#3333CC;">◎</span> DDE command　　◯ Do not close<br>
-Command <ins>\[DocOpen("%bm.pdf")\]\[DocClose("%bm.pdf")\]</ins><br>
+Command <ins>\[DocClose("%bm.pdf")\]</ins><br>
 Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
