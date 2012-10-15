@@ -89,7 +89,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>open -a PictPrinter.app %.dvi</ins> または <ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open %.dvi</ins><br>
+<ins>open -a PictPrinter.app %.dvi</ins> または <ins>"/usr/texbin/pxdvi" -watchfile 1 %.dvi</ins> または <ins>open -a Skim.app %.dvi</ins> または <ins>open %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>"/usr/local/bin/gv" --watch %.ps</ins> または <ins>open %.ps</ins><br>
@@ -101,7 +101,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
+<ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>open -a Skim.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
