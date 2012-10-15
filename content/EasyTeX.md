@@ -265,79 +265,11 @@ PDF Reader は SumatraPDF がおすすめです．<br>
 
 ***
 
-#### PDF-XChange Viewer {#d735d9cc}
-
-■ 32bit Windows の場合
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
->
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Tracker Software\PDF Viewer\PDFXCview.exe</ins><br>
->
-> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
-
-***
-
-■ 64bit Windows の場合
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
->
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Tracker Software\PDF Viewer\PDFXCview.exe</ins><br>
->
-> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
-
-***
-
-#### Foxit Reader {#dc946e73}
-
-■ 32bit Windows の場合
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins><br>
->
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\Foxit Software\Foxit Reader\Foxit Reader.exe</ins><br>
->
-> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
-
-***
-
-■ 64bit Windows の場合
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
->
-> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\Foxit Software\Foxit Reader\Foxit Reader.exe</ins><br>
->
-> 　PDF Readerを開くタイミング　　<ins>300　　\[◆\]</ins><br>
-
-***
-
-GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe または AcroRd32.exe または PDFXCview.exe または Foxit Reader.exe) のフルパスを指定します．<br>
+GhostView (gsview32.exe) と PDF Reader (SumatraPDF.exe または AcroRd32.exe) のフルパスを指定します．<br>
 PDF Reader を開くタイミングはお好みで設定してください．ここでは 300 に設定しました．<br>
-PDF Reader は [SumatraPDF](/SumatraPDF/), [Adobe Reader](</Adobe Reader/>), PDF-XChange Viewer, Foxit Reader に対応しています．<br>
+PDF Reader は [SumatraPDF](/SumatraPDF/), [Adobe Reader](</Adobe Reader/>) に対応しています．<br>
 SumatraPDF を使用する場合は SyncTeX による forward and inverse search が使用できます．<br>
-Adobe Reader, PDF-XChange Viewer, Foxit Reader を使用する場合は EasyTeX は DVI->PDF変換をしたり，表示したりするときに PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．<br>
+Adobe Reader を使用する場合は EasyTeX は DVI->PDF変換をしたり，表示したりするときに PDF ファイルを閉じてくれるので，手動で閉じる必要はありません．<br>
 
 ### TeX環境設定の保存 {#lf745908}
 
