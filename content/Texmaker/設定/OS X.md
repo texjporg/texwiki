@@ -16,7 +16,6 @@ pukiwiki: "Texmaker/設定/OS X"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 MacTeX &amp; TeX Live の場合の設定を書きます．<br>
-他の TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 [LuaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 [XeTeX](/XeTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を xelatex に変更して使用してください．<br>
