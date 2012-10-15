@@ -26,7 +26,7 @@ TeraPad は Windows 7, Vista, XP, 2000, NT4, Me, 98, 95 で動作する国産で
         - [更新履歴](http://www5f.biglobe.ne.jp/~t-susumu/dl/tpad/History.txt)
             <!-- - -[[TeraPad ベータ版:http://www5f.biglobe.ne.jp/~t-susumu/library/tpadbeta.html]] -->
     - [TeraPad (terapad) on Twitter](http://twitter.com/terapad)
-    - [「TeraPad」公式ファンページ | Facebook](http://www.facebook.com/terapad)
+    - [TeraPad | Facebook](http://www.facebook.com/terapad)
     - [TeraPad - Google+](https://plus.google.com/113360660930016120154/)
 - [窓の杜 - TeraPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/terapad.html)
 - [Vector - TeraPad](http://www.vector.co.jp/soft/win95/writing/se104390.html)
