@@ -100,4 +100,5 @@ pukiwiki: "秀丸エディタ"
 
 ## 関連リンク {#mec8cd02}
 
+- [TeXLive 2012でLaTeXのエラー発生時に秀丸エディタを起動する設定](http://d.hatena.ne.jp/hyuki/20121016/tex)
 - [秀丸エディタのお勧めの設定](http://tipszone.jp/20121003_hidemaru-config/)
