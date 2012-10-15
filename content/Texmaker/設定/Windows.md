@@ -16,7 +16,6 @@ pukiwiki: "Texmaker/設定/Windows"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 W32TeX と TeX Live の場合の設定を書きます．<br>
-他の TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 PDFビューアに Adobe Reader ではなく，組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
 PDFビューアに TeXworks を使用する場合は [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
