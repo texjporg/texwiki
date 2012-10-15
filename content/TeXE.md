@@ -150,7 +150,7 @@ Macroのパラメータ<br>
 : C:\w32tex\bin\mendex.exe
 
 引数
-: -U -ST "%X.idx"
+: -U -T "%X.idx"
 
 ### BibTeX {#j33abf74}
 
