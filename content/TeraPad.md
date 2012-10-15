@@ -816,7 +816,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>cmd</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -U -ST "%b"</ins>
+　　　 <ins>/c cd /d "%d" &amp;&amp; mendex -U -T "%b"</ins>
 
 　　　 作業フォルダ(D):<br>
 
@@ -844,7 +844,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 　　　 <ins>PowerShell</ins>
 
 　　　 コマンドラインパラメータ(C):<br>
-　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -U -ST "%b"}}"</ins>
+　　　 <ins>-Command "&amp; {cd "%d";if($?){mendex -U -T "%b"}}"</ins>
 
 　　　 作業フォルダ(D):<br>
 
