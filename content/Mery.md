@@ -707,27 +707,27 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var makeindex = "mendex -ST";
+  var makeindex = "mendex -T";
   var encoding = document.Encoding;
   if (parseInt(editor.Version) < 2) {
     if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      makeindex = "mendex -U -ST";
+      makeindex = "mendex -U -T";
     } else if (encoding == meEncodingSJIS) {
-      makeindex = "mendex -S -ST";
+      makeindex = "mendex -S -T";
     } else if (encoding == meEncodingEUC) {
-      makeindex = "mendex -E -ST";
+      makeindex = "mendex -E -T";
     } else if (encoding == meEncodingJIS) {
-      makeindex = "mendex -J -ST";
+      makeindex = "mendex -J -T";
     }
   } else {
     if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      makeindex = "mendex -U -ST";
+      makeindex = "mendex -U -T";
     } else if (encoding == meEncodingShiftJIS) {
-      makeindex = "mendex -S -ST";
+      makeindex = "mendex -S -T";
     } else if (encoding == meEncodingEUC) {
-      makeindex = "mendex -E -ST";
+      makeindex = "mendex -E -T";
     } else if (encoding == meEncodingJIS) {
-      makeindex = "mendex -J -ST";
+      makeindex = "mendex -J -T";
     }
   }
   makeindex += " " + ["\"", b, "\""].join("");
