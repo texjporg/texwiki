@@ -316,7 +316,7 @@ function main()
   var c = document.Path;
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
-  var makeindex = "mendex -U -ST";
+  var makeindex = "mendex -U -T";
   makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
 
