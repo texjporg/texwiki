@@ -704,7 +704,7 @@ TeX ファイルがコンパイルされ PDF ファイルが表示されます�
 <br>
 
 　　　　　コマンドラインパラメータ(C):<br>
-　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -U -ST "$NAMEONLY"</ins><br>
+　　　　　<ins>/c cd /d "$DIRPATH" &amp;&amp; mendex -U -T "$NAMEONLY"</ins><br>
 
 <br>
 
