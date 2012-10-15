@@ -214,7 +214,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 > <tr><td>1</td><td>TeX処理 (uplatex の場合)</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 "%MTeXnpp_CFName%.tex"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (pbibtex の場合)</td><td>"pbibtex"</td><td>-kanji=utf8 -sjis-terminal "%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (upbibtex の場合)</td><td>"upbibtex"</td><td>"%MTeXnpp_CFName%"</td></tr>
-> <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -ST "%MTeXnpp_CFName%.idx"</td></tr>
+> <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -T "%MTeXnpp_CFName%.idx"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・bkmk2uni を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; bkmk2uni &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・convbkmk を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
@@ -654,7 +654,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; mendex -U -ST "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; mendex -U -T "$(NAME_PART)"<br>
 
 <br>
 
