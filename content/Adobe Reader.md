@@ -148,6 +148,8 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 - [Acrobat DDE Message 一覧](http://pdf-dde.nnn2.com/?p=43)
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
 - [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
+- [Adobe Reader XI](http://days-of-mac.blog.ocn.ne.jp/blog/2012/10/adobe-reader-xi.html)
+- [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
 - [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
