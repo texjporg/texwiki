@@ -150,6 +150,7 @@ echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
 - [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
 - [Adobe Reader XI](http://days-of-mac.blog.ocn.ne.jp/blog/2012/10/adobe-reader-xi.html)
 - [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
+- [黒翼猫/「Adobe Reader」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=BlackWingCat&word=Adobe+Reader)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
 - [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
