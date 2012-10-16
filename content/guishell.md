@@ -23,9 +23,6 @@ guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8�
 
 設定
 
-- 環境変数 PATH に dviout.exe と guishell.exe の存在するフォルダーを追加する (例えば C:\w32tex\dviout;C:\w32tex\guishell-1.39.2-x64)
-- 環境変数 TEXMF に C:\w32tex\share\texmf を設定する
-- 環境変数 TEXMFCNF に C:\w32tex\share\texmf\web2c;C:\w32tex\share\texmf\web2c\eptex を設定する
 - guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で platex.fmt をチェックして 縦組み対応LaTeX2e(platex.fmt) を選択して OK をクリックする
 - guishell.cfg を以下のように設定
 
@@ -87,7 +84,7 @@ TeXMAC-R #4(8)<br>
 
 ## 関連リンク {#m2c882b0}
 
-- [最新版 guishell の利用方法](http://blogs.yahoo.co.jp/koh_hotta/63204507.html)
+- [最新版 guishell の利用方法](http://blogs.yahoo.co.jp/koh_hotta/63204507.html) ← texmf-local側にあるスタイルファイル群にアクセスできなくなるようです．(参照：[TEXMFの設定で反省](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=882))
 - [pLaTeX2e for Windows Another Manual Vol.1 Basic Kit 1999 サポートページ](http://argent.shinshu-u.ac.jp/~otobe/tex/book/1999revise.html)
 - [GUI-SHELLアップデート](http://argent.shinshu-u.ac.jp/~otobe/tex/book/update.html)
 - [guishell が，うまく作動しないため，ご指導願いたい！](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=832)
