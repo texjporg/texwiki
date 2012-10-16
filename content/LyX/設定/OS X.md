@@ -39,6 +39,7 @@ PDFコマンドは Skim の displayline を使用します．<br>
 
 ## 関連リンク {#tab664aa}
 
+- [LyX with Mac Book Pro Retina, JP](http://heloremy.wordpress.com/2012/10/16/lyx-with-mac-book-pro-retina-jp/)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [Mac OS XにTex Lyx導入](http://d.hatena.ne.jp/mosa_siru/20120627/1340818055)
 - [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
