@@ -43,6 +43,7 @@ Sublime Text は Windows, OS X, Linux で動作するテキストエディタで
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
     - For editing and saving files encoded in GBK, BIG5, EUC-KR, EUC-JP, Shift_JIS, etc.
+    - [Sublime Text 2をShift_JISに対応させるプラグインがあると聞いて](http://re-dzine.net/2012/10/sublime-text-2-shift-jis/)
 
 ## [LaTeXTools (LaTeX Plugin for Sublime Text 2)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
 
