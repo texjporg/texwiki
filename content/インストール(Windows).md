@@ -379,10 +379,10 @@ python.exe を C:\Python27 にインストールした場合は
 
 を環境変数 PATH に追加します
 
-python.exe を C:\Python32 にインストールした場合は
+python.exe を C:\Python33 にインストールした場合は
 
 ```
-;C:\Python32
+;C:\Python33
 ```
 
 を環境変数 PATH に追加します
@@ -473,6 +473,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 [Texmaker](/Texmaker/)
 : [Texmaker](/Texmaker/) をご覧ください．
 
+[TeXstudio](/TeXstudio/)
+: [TeXstudio](/TeXstudio/) をご覧ください．
+
 [LyX](/LyX/)
 : [LyX](/LyX/) をご覧ください．
 
@@ -491,6 +494,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 jEdit + プラグイン + マクロ
 : jEdit#プラグイン<br>jEdit#マクロ<br>をご覧ください．
 
+Gummi
+: Gummi をご覧ください．
+
 [Geany](/Geany/) + GeanyLaTeX
 : [Geany](/Geany/) をご覧ください．
 
@@ -501,7 +507,7 @@ jEdit + プラグイン + マクロ
 : [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>をご覧ください．
 
 [Emacs](/Emacs/) + tex-mode or org-mode
-: [Emacs](/Emacs/)[#TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
+: [Emacs](/Emacs/) + [TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
 
 [Vim](/Vim/) + プラグイン
 : [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
@@ -532,11 +538,11 @@ Mery + マクロ
 gPad + マクロ
 : gPad#マクロ をご覧ください．
 
-TeraPad + ツール
-: TeraPad#ツール をご覧ください．
-
 VxEditor + ツール
 : VxEditor#ツール をご覧ください．
+
+TeraPad + ツール
+: TeraPad#ツール をご覧ください．
 
 ### シェアウェア {#yec6bbe1}
 
