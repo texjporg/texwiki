@@ -92,31 +92,31 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 ### PDF ファイルを開く {#id6d0918}
 
 ```
-pdfopen --file hoge.pdf
+pdfopen --rxi --file hoge.pdf
 ```
 
 または
 
 ```
-echo open hoge.pdf | pdfdde
+echo open hoge.pdf | pdfdde --rxi
 ```
 
 ### PDF ファイルを閉じる {#h619779d}
 
 ```
-pdfopen --file hoge.pdf && pdfclose --file hoge.pdf
+pdfopen --rxi --file hoge.pdf && pdfclose --rxi --file hoge.pdf
 ```
 
 または
 
 ```
-echo open hoge.pdf | pdfdde && echo close hoge.pdf | pdfdde
+echo open hoge.pdf | pdfdde --rxi && echo close hoge.pdf | pdfdde --rxi
 ```
 
 ### Adobe Reader を終了する {#pb5aeda1}
 
 ```
-echo exit | pdfdde
+echo exit | pdfdde --rxi
 ```
 
 ### 指定したページを表示する {#lc08871d}
@@ -126,13 +126,13 @@ echo exit | pdfdde
 3ページ目を表示するには以下のようにします．
 
 ```
-pdfopen --file hoge.pdf && echo goto hoge.pdf 3 | pdfdde
+pdfopen --rxi --file hoge.pdf && echo goto hoge.pdf 3 | pdfdde --rxi
 ```
 
 または
 
 ```
-echo open hoge.pdf | pdfdde && echo goto hoge.pdf 3 | pdfdde
+echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 ```
 
 ### [Acrobat および Adobe Reader のコマンドラインオプション](http://kb2.adobe.com/jp/cps/510/510705.html) {#vb210974}
