@@ -28,10 +28,11 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=za
 ### ChangeLog {#fdab5877}
 
 - [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git)
+    - [開発版](http://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop)
 
 ### 派生版 {#oea86148}
 
-zathura を SyncTeX に対応させた zathura-synctex が作成されています．<br>
+zathura を SyncTeX に対応させた zathura-synctex が作成されています． → 本家にマージされました．<br>
 
 - [zathura-synctex](https://github.com/rschatz/zathura-synctex)
 - \[[zathura\] Synctex support](http://lists.pwmt.org/archive/zathura/2011-August/000047.html)
