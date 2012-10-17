@@ -211,6 +211,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[TeXのインストール – TeX Live](http://www.netplan.co.jp/archives/2151)<br>[TeXworksの設定](http://www.netplan.co.jp/archives/2167)
+: 2012-10-17
+
 [TeX Live 2012 と日本語](http://torip.whitesnow.jp/?p=1020)
 : 2012-10-03
 
