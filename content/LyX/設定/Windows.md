@@ -266,7 +266,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde &amp; dvipdfmx -o $$o $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; dvipdfmx -o $$o $$i</ins><br>
 追加フラグ(X):　<br>
 
 ***
@@ -352,7 +352,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde &amp; ps2pdf.bat $$i $$o</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; ps2pdf.bat $$i $$o</ins><br>
 追加フラグ(X):　<br>
 
 ***
@@ -374,7 +374,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pdflatex)　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (pdflatex)　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde &amp; pdflatex -synctex=1 $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; pdflatex -synctex=1 $$i</ins><br>
 追加フラグ(X):　<ins>latex=pdflatex</ins><br>
 
 ***
@@ -396,7 +396,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde &amp; lualatex -synctex=1</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; lualatex -synctex=1</ins><br>
 追加フラグ(X):　<ins>latex=lualatex</ins><br>
 
 ***
@@ -418,7 +418,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (XeTeX)　　　　　　　　　　　　　　　 ▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX)　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde &amp; xelatex -synctex=1 $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; xelatex -synctex=1 $$i</ins><br>
 追加フラグ(X):　<ins>latex=xelatex</ins><br>
 
 ***
