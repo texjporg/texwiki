@@ -31,7 +31,7 @@ Mery は
 
 - [Haijin Boys Online](http://www.haijin-boys.com/) 公式サイト
     - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
-    - [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) TeX Wiki のマクロは Windows XP SP3 では動作しないといった報告があります．Windows 7 SP1 では動作します．
+    - [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) TeX Wiki のマクロは Windows XP SP3 の W32TeX では動作しないといった報告があります．Windows 7 SP1 の W32TeX \[2012/10/15\] では動作します．
     - [Texが色分けされ](http://www.haijin-boys.com/index.php?fuseaction=discussions.replies&discussion_id=4fd8dc286a4a65.60345084)
     - [TEXのtemplate](http://www.haijin-boys.com/index.php?fuseaction=discussions.replies&discussion_id=4a49a6b7d97bb8.45052497)
 - [MeryWiki](http://www.haijin-boys.com/wiki/)
@@ -82,9 +82,11 @@ LaTeX 文書で使用するエンコードを指定します．
 
 マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
 
-TeX Wiki のマクロは Windows 7 SP1 で動作します．
+TeX Wiki のマクロは Windows 7 SP1 の W32TeX \[2012/10/15\] で動作します．
 
-Windows XP SP3 で動作しない場合は [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) に投稿されているマクロを使用してください．
+Windows XP SP3 の W32TeX \[2012/10/15\] で動作しない場合は [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) に投稿されているマクロを使用してください．
+
+TeX Wiki のマクロが長すぎると感じる方は短くして使用してください．
 
 ### pdfpLaTeX.js {#w4e337a9}
 
