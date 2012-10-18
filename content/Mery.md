@@ -86,7 +86,7 @@ TeX Wiki のマクロは Windows 7 SP1 の W32TeX \[2012/10/15\] で動作しま
 
 Windows XP SP3 の W32TeX \[2012/10/15\] で動作しない場合は [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) に投稿されているマクロを使用してください．
 
-TeX Wiki のマクロが長すぎると感じる方は短くして使用してください．
+TeX Wiki のマクロが困難で長すぎると感じる方は分割して短くして使用してください．
 
 ### pdfpLaTeX.js {#w4e337a9}
 
