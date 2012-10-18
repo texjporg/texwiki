@@ -518,8 +518,9 @@ function main()
   var latex = "platex -guess-input-enc -sjis-terminal";
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -549,8 +550,9 @@ function main()
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -578,8 +580,9 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -608,8 +611,9 @@ function main()
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -636,8 +640,9 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -664,8 +669,9 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
 
   var ok = confirm(cmd);
@@ -692,8 +698,9 @@ function main()
   var b = fso.GetBaseName(document.Name);
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
-  var pdfopen = "pdfopen --file" + " " + ["\"", b, ".pdf", "\""].join("");
-  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && echo exit | pdfdde";
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
 
   var ok = confirm(cmd);
