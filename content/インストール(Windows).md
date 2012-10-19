@@ -529,18 +529,6 @@ Visual Windows for TeX
 Masamichi
 : Masamichi をご覧ください．
 
-TeXE
-: TeXE をご覧ください．
-
-gPad + マクロ
-: gPad#マクロ をご覧ください．
-
-VxEditor + ツール
-: VxEditor#ツール をご覧ください．
-
-TeraPad + ツール
-: TeraPad#ツール をご覧ください．
-
 ### シェアウェア {#yec6bbe1}
 
 [秀丸エディタ](</秀丸エディタ/>) (シェアウェア) + マクロ
