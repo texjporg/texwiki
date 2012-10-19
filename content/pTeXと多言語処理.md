@@ -1570,7 +1570,6 @@ jEdit，
 [oedit](http://www.hi-ho.ne.jp/a_ogawa/oedit/)/[otbedit](http://www.hi-ho.ne.jp/a_ogawa/otbedit/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
-Mery，
 [真魚［まな］](http://mana.ikuto.com/)，
 gPad，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
