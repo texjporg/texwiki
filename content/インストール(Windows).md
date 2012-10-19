@@ -532,9 +532,6 @@ Masamichi
 TeXE
 : TeXE をご覧ください．
 
-Mery + マクロ
-: Mery#マクロ をご覧ください．
-
 gPad + マクロ
 : gPad#マクロ をご覧ください．
 
