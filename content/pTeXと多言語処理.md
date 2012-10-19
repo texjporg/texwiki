@@ -1571,7 +1571,6 @@ jEdit，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 [真魚［まな］](http://mana.ikuto.com/)，
-gPad，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [AkelPad](http://akelpad.sourceforge.net/)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
