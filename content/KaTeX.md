@@ -326,7 +326,7 @@ C:.
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
 latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 pdfplatex.bat は W32TeX に含まれています．<br>
-TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](/TeXworks/#nb7beec9) を使用してください．<br>
+TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](</TeXworks/設定/Windows/#nb7beec9>) を使用してください．<br>
 
 ***
 
