@@ -59,6 +59,15 @@ EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF
 
 シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
 
+## 不具合 {#n8975b09}
+
+[TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
+
+### EasyTeX Version 3.311 でツールバーから pdfﾌｧｲﾙ表示 を実行しても PDF ファイルが表示されない {#jc02e549}
+
+EasyTeX Version 3.311 でツールバーから pdfﾌｧｲﾙ表示 を実行しても PDF ファイルが表示されません．<br>
+EasyTeX Version 3.31 では表示されました．<br>
+
 ## [ダウンロード](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#bf9167cb}
 
 ### EasyTeX の入手先 {#qe994380}
@@ -84,10 +93,6 @@ zip ファイル版は，レジストリを使用しません．アンインス�
 ### exe ファイル {#z3b6deb0}
 
 exe ファイル版 (インストーラー機能付き) のアンインストールをするときは \[スタート\]-\[コントロール パネル\]-\[プログラムのアンインストール\] からアンインストールしてください．
-
-## 不具合 {#n8975b09}
-
-[TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
 
 ## TeX環境設定 {#e3c37dfc}
 
@@ -756,8 +761,7 @@ SumatraPDF の画面をダブルクリックすると，以下のような「指
 
 ### pdfpLaTeXA {#x38829e5}
 
-platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -773,7 +777,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -784,8 +788,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfo
 
 ### pdfpLaTeX2A {#l0d22111}
 
-platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ■ bkmk2uni を使用する場合
 
@@ -803,7 +806,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -828,7 +831,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -839,8 +842,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 
 ### pdfupLaTeXA {#v2f580e9}
 
-uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -856,7 +858,7 @@ uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -867,8 +869,7 @@ uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で pdf
 
 ### pdfupLaTeX2A {#o1ee54cf}
 
-uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -884,7 +885,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -895,8 +896,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 
 ### pdfLaTeXA {#m3a434b8}
 
-pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+pdflatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -912,7 +912,7 @@ pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; pdflatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; pdflatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -923,8 +923,7 @@ pdflatex を使用して PDF ファイルを作成した後で pdfopen を使用
 
 ### LuaLaTeXA {#q6d516db}
 
-lualatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+lualatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -940,7 +939,7 @@ lualatex を使用して PDF ファイルを作成した後で pdfopen を使用
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; lualatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; lualatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -951,8 +950,7 @@ lualatex を使用して PDF ファイルを作成した後で pdfopen を使用
 
 ### XeLaTeXA {#v05cb9fa}
 
-xelatex を使用して PDF ファイルを作成した後で pdfopen を使用して PDF ファイルを開きます．<br>
-実行する前に tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde で Adobe Reader を終了するので，手動で PDF ファイルを閉じる必要はありません．<br>
+xelatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
 
 ***
 
@@ -968,7 +966,7 @@ xelatex を使用して PDF ファイルを作成した後で pdfopen を使用�
 　<span style="color:White;background-color:#1188FF;"> program16　</span><br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; echo exit | pdfdde &amp; xelatex "%n" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; xelatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
 
 <br>
 
@@ -1025,11 +1023,13 @@ C:\easytex\EasyTeX.exe^s /j%d "%s"
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 - [easychair というクラスファイルの使い方](http://ameblo.jp/8713-blog/archive1-201201.html)
 
-## Comments {#etacm8ab}
-
-- 修正等は自由にしていただいて構いません。ちょっとしたコメント・質問等はここにどうぞ。 -- これを書いた人 2005-11-09 (水) 14:54:34
-- easyTeXをインストールしましたが、コンパイルできません・・・TEX実行ﾌｧｲﾙのパスが駄目だそうです。どうしたらよいでしょうか？？ -- ﾆｬｵ 2006-07-20 (木) 21:40:08
-- 「初期設定」は，終わっているのでしょうか？ 詳しいことが分かりませんので「設定を見直してみてください」ぐらいしかアドバイス出来ません。もちろん TeX そのもののインストールは終わっているんですよね。 -- tony 2006-07-21 (金) 08:39:55
-- EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． -- textex 2006-07-29 (土) 01:45:13
-- [質問のしかた](</質問のしかた/>)をよく読んで，続きは[TeX Q &amp; A 掲示板](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/) で・・・ -- tony 2006-07-29 (土) 04:13:51
-- インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． -- textex 2006-08-03 (木) 20:01:49
+<!-- *Comments [#etacm8ab] -->
+<!--  -->
+<!-- - 修正等は自由にしていただいて構いません。ちょっとしたコメント・質問等はここにどうぞ。 - - これを書いた人 &new{2005-11-09 (水) 14:54:34}; -->
+<!-- - easyTeXをインストールしましたが、コンパイルできません・・・TEX実行ﾌｧｲﾙのパスが駄目だそうです。どうしたらよいでしょうか？？ - - ﾆｬｵ &new{2006-07-20 (木) 21:40:08}; -->
+<!-- - 「初期設定」は，終わっているのでしょうか？ 詳しいことが分かりませんので「設定を見直してみてください」ぐらいしかアドバイス出来ません。もちろん TeX そのもののインストールは終わっているんですよね。 - - tony &new{2006-07-21 (金) 08:39:55}; -->
+<!-- - EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． - - textex &new{2006-07-29 (土) 01:45:13}; -->
+<!-- - [[質問のしかた]]をよく読んで，続きは[[TeX Q & A 掲示板:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/]] で・・・ - - tony &new{2006-07-29 (土) 04:13:51}; -->
+<!-- - インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． - - textex &new{2006-08-03 (木) 20:01:49}; -->
+<!--  -->
+<!-- #comment -->
