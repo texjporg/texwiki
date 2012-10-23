@@ -113,148 +113,15 @@ KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，ka
 ;; 02111-1307, USA.
 ```
 
-### ChangeLog {#g9333ba6}
+### リリース情報 {#g9333ba6}
 
-#### Thu Oct 11 2008 Version 1.67.1.12 {#o70ed34c}
-
-- typeset時にエラーになったら自動で終了する変数（\*typeset-stop-at-error\*）を導入。
-- file-name-all-completionsとfile-name-completionを追加。
-- file-name-nondirectoryを修正。
-- eval-whenをいくつか追加。
-- help,doc以下をYaTeX1.72と同じにした。
-- typoをいくつか修正。
-- 他いろいろ修正（忘れた）。
-
-#### Thu Oct 14 2004 Version 1.67.1.11 {#e24405e3}
-
-- KaTeXとkahtmlを同時に起動すると動作がおかしかったのを修正。
-- sample.xyzzyを作成。
-- typoをいくつか修正。
-- kahtmlでファイル読み込みが怪しかったのを修正。
-
-#### Fri Jul 23 2004 Version 1.67.1.10 {#b4fbb95e}
-
-- letの再定義がおかしかったのを修正。
-- typoをいくつか修正。
-- プロセスの状態をきちんと取れていなかったのを修正。
-- fillの挙動が怪しかったのを修正。
-
-#### Sun May 30 2004 Version 1.67.1.9 {#ef750829}
-
-- kahtml で css ファイルを使っているソースを開けなかったのを修正。
-
-#### Sat Nov 01 2003 Version 1.67.1.8 {#de7f33d3}
-
-- 正規表現のキーワード色分けが、出来なくなっていたのを修正。
-- yahtml ならぬ kahtml を作ってみたり(要browserex関係)。
-
-#### Wed Sep 18 2003 Version 1.67.1.7 {#fd42f62a}
-
-- dvioutを起動したときに、dos画面が表示されるのを、されないようにした。
-- Toolbarを作ってみた。(詳細はkatexbar.l)
-- 数式モード等でTABを打つとエラーになるのを修正。
-- オンラインヘルプを使えるようにしてみた。(install.txtの５参照)
-- メニューにあったtypoを修正。
-- lprコマンドが使えるようになったかも。
-
-#### Wed Jan 22 2003 Version 1.67.1.6 {#bd92f3ce}
-
-- $ の入力がとっても遅くなるのを避けれるような変数(\*not-use-verbatime\*)を追加。
-- 試しに正規表現のキーワード色分けを入れてみた。\*KaTeX-math-formats\*で設定。
-- KaTeX-indent-line がおかしかったのを修正。
-- preview するときに黒い画面を出さないようにした。
-
-#### Sat Sep 08 2001 Version 1.67.1.5 {#s2671e3f}
-
-- \\%でもコメントと認識されるのを修正。
-- 数式記号イメージ補完、ギリシャ文字補完が数式環境中でできなかったのを修正。
-- LaTeXコマンドの変更が変になっていたのを修正。
-- mode-specific-indent-command を 'KaTeX-indent-line に設定した。
-- fill がおかしかったのを修正。
-
-#### Mon Jul 16 2001 Version 1.67.1.4 {#v586b59c}
-
-- auto-fill が時々おかしくなるのを修正。
-- \ref{}の補完入力で、fig:fooとかできなかったのを修正。
-- section型の補完を途中でやめたとき変だったのを修正。
-
-#### Thu Jun 21 2001 Version 1.67.1.3 {#ubc814db}
-
-- section型でヒストリが効かなかったのを修正。
-- byte-compile できなかったのを修正。
-- メニューを起動時に読み込むようにした。
-- "$"の入力時に黙り込む時間を短くした（つもり）。
-- \ref{}の補完入力がおかしかったのを修正。
-
-#### Mon May 07 2001 Version 1.67.1.2 {#ka45c0b6}
-
-- ユーザー辞書への保存が変だったのを修正。
-- documentstyle,documentclassで補完できなかったのを修正。
-- auto-fillできなかったのを修正。
-
-#### Tue May 01 2001 Version 1.67.1.1 {#o11bdcbe}
-
-- メニューを作ってみたりした。
-- エラーした行にときどき飛ばなかったのを修正(したつもり)。
-- タイプセットしてエラーが出たときの動作を変更。
-- ヒストリを保存するようにした。
-- ユーザー辞書に保存したキーワードが、有効にならなかったのを修正。
-- 数式記号イメージ、ギリシャ文字補完のリストの表示を変更。
-- section型補完のとき、ミニバッファ中で補完が出来なかったのを修正。
-- \[prefix\] #\SPC で随時補完できなかったのを修正。
-- そのほか細かいバグ取り(したつもり)。
-
-#### Wed Mar 14 2001 Version 1.67.1.0 {#cce2de92}
-
-- 名前をKaTeX(花鳥)に変更。正式リリース。
-- ChangeLog(これ)を作った。
-- window-edgesがおかしかったのを修正。
-- auto-fill-modeでfillしたついでにインデントさせるのを忘れていたのを修正。
-- YaTeX-do-completion,YaTeX-sign-alist-defaultのなかで、文字コードが直っていなかったのを修正。
-- YaTeX-insert-braces-regionの引数 beg end の入れ替えをしていなかったのを修正。
-- ラベルの参照で、他のファイルにあるラベルを参照できなかったのを修正。
-- messageをminibufferに出力するようにした。
-
-#### Fri Dec 22 2000 Version 2.2 {#h99d2aad}
-
-- insert-charが間違っていたのを修正。
-- scroll-up,scroll-downを追加。
-- substringの仕様がEmacs Lispと違ったのを修正。
-- window-edgesを追加。
-- YaTeX-math-(forward|backward)が動かなかったのを修正。
-- YaTeX-change-math-imageが動かなかったのを修正。
-- {\large ...}関係が \[prefix\] k で削除できなかったのを修正。
-- math-modeで ;\[TAB\] の時に出てくるメニューのタイトルが２カラム分あるのにメニューは１カラムしかでなかったのを修正
-- math-modeの ;-\[TAB\] で、"-"から始まる補完リストだけを表示できなかったのを修正。
-- math-modeで ; の後に -,--,--> とタイプするとカーソル位置に\mp,\equiv,\longrightarrowとコマンドが表示できなかったのを修正。
-- YaTeX-math-need-imageが動かなかったのを修正。
-- YaTeX-make-sectionで、２つの引数をとる辞書にないコマンドが実行することができなかったのを修正。
-- \[prefix\] 4 g などが使えなかったのを修正。
-- YaTeX-inhibit-prefix-letterが設定できなかったのを修正。
-- セクション区切りのアウトライン表示が動かなかったのを修正。
-- すでに書いたテキストを括る補完ができなかったのを修正。
-
-#### Thu Nov 30 2000 Version 2.1 {#m824b408}
-
-- call-processを間違えて消してしまったのを復活。
-- enumerate環境のitemの補完ができなくなったのを修正。
-- \ref{}が動かなかったのを修正。
-- イタリック補正ができなかったのを修正。
-- YaTeX-typeset-bufferで他のバッファにYaTeXのファイルがあるとき、保存できなかったのを修正。
-
-#### Mon Nov 13 2000 Version 2.0 {#sa49e6e4}
-
-- elispパッケージを作って、その中に入れた。
-
-#### Thu Nov 02 2000 Version 1.0 {#y0129a3c}
-
-- xyzzy ML内にてとりあえず公開。
+2008-10-11 KaTeX Version 1.67.1.12<br>
 
 ### スクリーンショット {#wa93a18b}
 
 <img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="KaTeX">
 
-### スクリーンショット？ {#pb339bcf}
+<br>
 
 ***
 
@@ -369,8 +236,8 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
                                      ((string-match "platex" elisp::tex-command) "mendex -U")
                                      ((string-match "lualatex\\|xelatex" elisp::tex-command) "texindy")
                                      (t "makeindex")))
-(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & pdfopen --rxi --file %s.pdf")
-                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf)))
+(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
+                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
@@ -464,8 +331,8 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; platex の場合は mendex を使う
 ;; lualatex, xelatex の場合は texindy を使う
 ;; uplatex, platex, lualatex, xelatex 以外の場合は makeindex を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex の場合は Adobe Reader が起動していれば Adobe Reader を終了して pdfopen を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば Adobe Reader を終了して dvipdfmx + pdfopen を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex の場合は pdfopen を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば PDF ファイルを閉じて dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
 ;; ツールバー表示
 ;; M-RET を有効に
