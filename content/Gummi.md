@@ -20,7 +20,7 @@ Live preview 機能があります．<br>
 
 ### リリース情報 {#m146a8fe}
 
-2012-06-24 Gummi 0.6.4<br>
+2012-10-20 Gummi 0.6.5<br>
 
 ### ChangeLog {#r24dbedd}
 
