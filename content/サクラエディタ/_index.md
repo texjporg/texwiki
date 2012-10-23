@@ -892,11 +892,9 @@ main();
 - [VSライクなhtml終タグ自動補完 &amp; texの\end補完](http://sakura.qp.land.to/?Macro%2F%C5%EA%B9%C6%2F158)
     (peak さん)
     <!-- (JScript) -->
-
-### LaTeX＋SakuraEditorマクロ {#y54f2100}
-
-- [LaTeX＋SakuraEditorマクロ](http://sidewarehouse.dip.jp/sakura.html)
-    (横倉 勇希 さん)
+    <!-- **LaTeX＋SakuraEditorマクロ [#y54f2100] -->
+    <!-- -[[LaTeX＋SakuraEditorマクロ:http://sidewarehouse.dip.jp/sakura.html]] -->
+    <!-- (横倉 勇希 さん) -->
     <!-- (JScript) -->
     <!-- **サクラエディタ用TeXマクロ [#c3c7d37d] -->
     <!-- -[[サクラエディタ用TeXマクロ:http://kentarodev.up.seesaa.net/files/fileIndex.html]] -->
