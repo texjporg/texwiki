@@ -37,6 +37,7 @@ xeCJK が必要です．<br>
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
 - [名状しがたい zxjatype のようなもの](https://gist.github.com/3685126)
+- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](http://twitter.com/imunolion/status/260648169849896960)
 - [texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。](https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj) → zxjatype v0.6 で対応しました
 - [texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！](https://gist.github.com/3156146) → zxjatype v0.6 で対応しました
 - [tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
