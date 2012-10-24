@@ -24,7 +24,6 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 2012-10-20 W32TeX \[2012/10/20\] の更新で xeCJK 3.0.8 から xeCJK 3.0.9 になりました．<br>
 2012-10-16 xeCJK 3.0.9<br>
-2012-09-09 W32TeX \[2012/09/09\] の更新で xeCJK 2.4.5 から xeCJK 3.0.8 になりました．<br>
 
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
@@ -47,7 +46,7 @@ xeCJK が必要です．<br>
 2012-09-09 ZXjatype 0.6<br>
 
 ZXjatype 0.6 は xeCJK 3.0.9 でも xeCJK 2.4.6 でもどちらでも動作します．<br>
-ZXjatype 0.6 よりも前のバージョンでは xeCJK 3.0.9 でエラーが発生します．<br>
+ZXjatype 0.6 よりも前のバージョンでは expl3 で記述されている xeCJK 3.x 版でエラーが発生します．<br>
 
 ## xeCJK 以外のパッケージ {#k90787cf}
 
