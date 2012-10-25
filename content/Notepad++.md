@@ -738,8 +738,6 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 \[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．
 
-### [ConTeXt support package for Notepad++](http://wiki.contextgarden.net/Notepad%2B%2B) {#ee4b4a52}
-
 ## SumatraPDF との連携 {#jbc79e5b}
 
 ### forward search (SumatraPDF を前面に表示したい場合) {#rd95d13c}
