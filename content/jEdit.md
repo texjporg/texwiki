@@ -40,7 +40,3 @@ jEdit は，オープンソースソフトウェアで，[GPL ライセンス](h
 Windows で Console プラグインを使用して日本語を表示する場合は，メニューの \[プラグイン(P)\]-\[プラグイン オプション(O)...\] の プラグイン -> Console -> General の Character encoding: を windows-31j に変更します．
 
 ### [LaTeXTools](http://plugins.jedit.org/plugins/?LaTeXTools) {#tb5eafb7}
-
-## マクロ {#l6a1dfc4}
-
-### [A LaTeX macro bundle for jEdit](http://jfmagni.free.fr/doc/help.html) {#i0ec621a}
