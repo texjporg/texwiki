@@ -1548,3 +1548,4 @@ cmd
 ## 関連リンク {#n8b7f53c}
 
 - [TeXworksの設定](http://www.netplan.co.jp/archives/2167)
+- [W32TeX をアンインストール → TeX Live 2012 を入れる → TeXworksの設定が面倒 → TeX Live をアンインストール → W32TeX を入れなおす → いとも簡単に TeXworks が動く(ｲﾏｺｺ)](https://twitter.com/kotaq1989/status/261484930230542337)
