@@ -491,8 +491,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 [Notepad++](/Notepad++/) + プラグイン
 : [Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
 
-jEdit + プラグイン + マクロ
-: jEdit#プラグイン<br>jEdit#マクロ<br>をご覧ください．
+jEdit + プラグイン
+: jEdit#プラグイン<br>をご覧ください．
 
 Gummi
 : Gummi をご覧ください．
