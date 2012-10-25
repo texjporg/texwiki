@@ -440,13 +440,11 @@ XeTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更�
 
 ***
 
+#### platex + dvipdfmx の場合 {#j305d328}
+
 文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
 dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
-pdflatex, lualatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
-xelatex を使用する場合は，グラフィックドライバに XeTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
-
-■ platex + dvipdfmx の場合
 
 ***
 
@@ -469,7 +467,11 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-■ uplatex + dvipdfmx の場合
+#### uplatex + dvipdfmx の場合 {#ica39b31}
+
+文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
 
@@ -492,7 +494,11 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-■ pdflatex の場合
+#### pdflatex の場合 {#n5e2e894}
+
+文書クラスで article を選択し，クラスオプションを設定します．<br>
+pdflatex, lualatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
 
@@ -515,7 +521,11 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-■ lualatex の場合
+#### lualatex の場合 {#l1a666c4}
+
+文書クラスで article (Japanese New for LuaTeX) を選択し，クラスオプションを設定します．<br>
+pdflatex, lualatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
 
@@ -538,7 +548,11 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-■ xelatex の場合
+#### xelatex の場合 {#ce0db196}
+
+文書クラスで article (Japanese New by ZR) を選択し，クラスオプションを設定します．<br>
+xelatex を使用する場合は，グラフィックドライバに XeTeX を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
 
