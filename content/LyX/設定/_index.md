@@ -375,6 +375,22 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 ***
 
+#### PDF (ps2pdf) {#s335ea5f}
+
+文字コードが Japanese (non-CJK) (日本語(CJK不使用)) の場合は既定値は DVI です．<br>
+日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．<br>
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+出力形式<br>
+　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+***
+
 #### PDF (LuaTeX) {#g2e3c1cf}
 
 文字コードが ユニコード(XeTeX) (UTF-8) の場合は既定値は PDF (pdflatex) です．<br>
@@ -467,6 +483,33 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 
 ***
 
+#### platex + dvips + ps2pdf の場合 {#v823b899}
+
+文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　文書クラス(C)<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　クラスオプション<br>
+　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+　任意設定(T):　　　 <ins>12pt,papersize</ins><br>
+
+<br>
+
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[Dvips　　　　　▼\]</span><br>
+
+***
+
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
 文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
@@ -491,6 +534,33 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 <br>
 
 グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[DVIPDFMx　▼\]</span><br>
+
+***
+
+#### uplatex + dvips + ps2pdf の場合 {#p803a02d}
+
+文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
+設定を反映させるために \[適用(A)\] をクリックします．<br>
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　文書クラス(C)<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　クラスオプション<br>
+　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+　任意設定(T):　　　 <ins>uplatex,12pt,papersize</ins><br>
+
+<br>
+
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[Dvips　　　　　▼\]</span><br>
 
 ***
 
