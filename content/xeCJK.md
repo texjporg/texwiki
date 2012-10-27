@@ -24,8 +24,8 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### リリース情報 {#if427aa7}
 
+2012-10-27 xeCJK 3.0.10<br>
 2012-10-20 W32TeX \[2012/10/20\] の更新で xeCJK 3.0.8 から xeCJK 3.0.9 になりました．<br>
-2012-10-16 xeCJK 3.0.9<br>
 
 ### 不具合 {#t2600dd9}
 
@@ -62,7 +62,7 @@ xeCJK が必要です．<br>
 
 2012-09-09 ZXjatype 0.6<br>
 
-ZXjatype 0.6 は xeCJK 3.0.9 でも xeCJK 2.4.6 でもどちらでも動作します．<br>
+ZXjatype 0.6 は xeCJK 3.0.10 でも xeCJK 2.4.6 でもどちらでも動作します．<br>
 [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) を使用している場合は XeTeX 3.1415926-2.5-0.9999 でエラーが発生するので ZXjatype 0.6 は使用できません．[xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) ではエラーは発生しません．<br>
 xeCJK 3.0.6 r350 を使用している場合は xeCJK をアップデートしてください．<br>
 ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xeCJK 3.x 版ではエラーが発生します．<br>
