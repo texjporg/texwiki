@@ -21,6 +21,10 @@ Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC
 
 - [Geany](http://www.geany.org/)
 
+### 動作環境 {#ib302119}
+
+Windows, OS X, Linux
+
 ## Geany で LaTeX {#s0f3de16}
 
 ### ビルドコマンドの設定 {#aaa2ae74}
