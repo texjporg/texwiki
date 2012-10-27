@@ -16,7 +16,6 @@ pukiwiki: "jEdit"
 ## jEdit とは {#i62e8149}
 
 jEdit は Java で書かれたテキストエディタです．<br>
-Windows, OS X, Linux などの Java が動作する環境で動作します．<br>
 jEdit は，オープンソースソフトウェアで，[GPL ライセンス](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)です．<br>
 
 - [jEdit](http://www.jedit.org/)
@@ -24,6 +23,10 @@ jEdit は，オープンソースソフトウェアで，[GPL ライセンス](h
 - [FrontPage - jEd​it Wiki](http://www.telejapan.com/af/jedit_wiki/wiki.cgi)
 - [jEditとは - はてなキーワード](http://d.hatena.ne.jp/keyword/jEdit)
     - [「jEdit」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/jEdit)
+
+### 動作環境 {#df224291}
+
+Windows, OS X, Linux などの Java が動作する環境で動作します．<br>
 
 ### 日本語化ファイル {#ia8fa738}
 
