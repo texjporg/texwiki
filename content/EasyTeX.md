@@ -17,22 +17,23 @@ pukiwiki: "EasyTeX"
 
 ## EasyTeX とは {#eta184ab}
 
-EasyTeX は
-
-<table>
-<tbody>
-<tr><td style="color:#000;background-color:#ADF"><strong>Version 3.30 以降</strong></td><td>Windows 7, Vista, XP</td></tr>
-<tr><td style="color:#000;background-color:#ADF"><strong>Version 3.242</strong></td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
-</tbody>
-</table>
-
-で動作する国産でフリーの TeX 統合環境です．
+EasyTeX は国産でフリーの TeX 統合環境です．
 
 TeX の入力とコマンドの実行が簡単にできるソフトウェアです．
 
 - [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html) 公式サイト
     - [TeX入門 &mdash; TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html)
         - [EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
+
+### 動作環境 {#he80243b}
+
+> <table>
+> <tbody>
+> <tr><td style="color:#000;background-color:#ADF"><strong>Version 3.30 以降</strong></td><td>Windows 7, Vista, XP</td></tr>
+> <tr><td style="color:#000;background-color:#ADF"><strong>Version 3.242</strong></td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
+> </tbody>
+> </table>
+>
 
 ### リリース情報 {#nc0d64ca}
 
