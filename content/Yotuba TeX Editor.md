@@ -13,9 +13,13 @@ pukiwiki: "Yotuba TeX Editor"
 
 ## Yotuba TeX Editor とは {#mf365925}
 
-Yotuba TeX Editor は Windows (Microsoft .NET Framework 3.5 以上がインストールされている環境) で動作する国産でフリーの TeX 統合環境です．<br>
+Yotuba TeX Editor は国産でフリーの TeX 統合環境です．<br>
 
 - [Yotuba TeX Editor](http://www.vector.co.jp/soft/winnt/writing/se495703.html) (公式サイト)
+
+### 動作環境 {#d09827e9}
+
+Windows 7 (Microsoft .NET Framework 3.5 がインストールされている環境)
 
 ### リリース情報 {#b51cad4a}
 
