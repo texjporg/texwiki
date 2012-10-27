@@ -17,18 +17,9 @@ pukiwiki: "Notepad++"
 
 ## Notepad++ とは {#ife0659c}
 
-Notepad++ は
+Notepad++ はフリーでオープンソースなテキストエディタです．
 
-<table>
-<tbody>
-<tr><td style="color:#FFF;background-color:#9C1"><strong>UNICODE 版</strong></td><td>Windows 7, Vista, XP, 2000</td></tr>
-<tr><td style="color:#FFF;background-color:#9C1"><strong>ANSI 版</strong></td><td>Windows 7, Vista, XP, 2000, Me, 98</td></tr>
-</tbody>
-</table>
-
-で動作するテキストエディタです．
-
-Notepad++ は，オープンソースソフトウェアで，[GPL ライセンス](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)です．
+Notepad++ のライセンスは [GPL ライセンス](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)です．
 
 Notepad++ は
 
@@ -41,7 +32,6 @@ Notepad++ は
 - [Notepad++ 公式サイト](http://notepad-plus-plus.org/)
     - [Download](http://notepad-plus-plus.org/download/)
     - [News](http://notepad-plus-plus.org/news/)
-    - [Online Help](http://notepad-plus-plus.org/online-help.html)
     - [Contributors](http://notepad-plus-plus.org/contributors/)
     - [twitter](http://twitter.com/notepad_plus)
     - [facebook](http://www.facebook.com/Notepad.plus.plus)
@@ -59,6 +49,10 @@ Notepad++ は
         - [Don HO](http://sourceforge.net/users/donho/)
     - [インタビュー](http://sourceforge.net/blog/potm-201002/)
 - [NpWiki++](http://sourceforge.net/apps/mediawiki/notepad-plus/)
+
+### 動作環境 {#p5d7567d}
+
+Windows 7, Vista, XP, 2000
 
 ### リリース情報 {#d2ceb628}
 
