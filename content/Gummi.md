@@ -13,10 +13,14 @@ pukiwiki: "Gummi"
 
 ## Gummi とは {#ja85a774}
 
-Gummi は Windows, Linux で動作する LaTeX エディタです．<br>
+Gummi は LaTeX エディタです．<br>
 Live preview 機能があります．<br>
 
 - [Gummi](http://gummi.midnightcoding.org/)
+
+### 動作環境 {#c5ce4e5e}
+
+Windows, Linux
 
 ### リリース情報 {#m146a8fe}
 
