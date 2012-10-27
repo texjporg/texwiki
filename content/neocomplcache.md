@@ -17,13 +17,6 @@ pukiwiki: "neocomplcache"
 
 neocomplcache は Vim のプラグインです．
 
-GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
-最新版へアップデートしてください．<br>
-詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
-
-GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
-Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
-
 - [neocomplcache](https://github.com/Shougo/neocomplcache)
 - [Vim-users.jp - neocomplcache](http://vim-users.jp/tag/neocomplcache/)
 - [neocomplcacheとは - はてなキーワード](http://d.hatena.ne.jp/keyword/neocomplcache)
