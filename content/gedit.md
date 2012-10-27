@@ -15,12 +15,15 @@ pukiwiki: "gedit"
 
 ## gedit とは {#s7f61b9d}
 
-gedit は Linux で動作する GNOME 公式のテキストエディタです．<br>
-gedit は Windows や OS X でも動作します．<br>
+gedit は GNOME 公式のテキストエディタです．<br>
 
 - [gedit](http://projects.gnome.org/gedit/)
 - [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
     - [log](http://git.gnome.org/browse/gedit/log/)
+
+### 動作環境 {#kd6ded02}
+
+Windows, OS X, Linux
 
 ## プラグイン {#c01f900c}
 
