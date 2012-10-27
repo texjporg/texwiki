@@ -15,12 +15,16 @@ pukiwiki: "Kile"
 
 ## Kile とは {#v4a214a0}
 
-Kile は KDE で動作する TeX のための統合環境です．
+Kile は TeX の統合環境です．
 
 - [Kile](http://kile.sourceforge.net/)
 - [SourceForge.net: kile](http://sourceforge.net/apps/mediawiki/kile/)
     - [Live Preview](http://sourceforge.net/apps/mediawiki/kile/index.php?title=Live_Preview)
 - [Kile - Overview - KDE Projects](https://projects.kde.org/projects/extragear/office/kile)
+
+### 動作環境 {#fc95c26d}
+
+KDE
 
 ## 設定 {#g12179be}
 
