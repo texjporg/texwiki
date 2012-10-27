@@ -13,9 +13,13 @@ pukiwiki: "JTeX"
 
 ## JTeX とは {#k9dabd6a}
 
-JTeX は OS X で動作する TeX 総合環境です．
+JTeX は TeX 総合環境です．
 
 - [JTeX](http://www.math.sci.osaka-u.ac.jp/~koiso/JTeX.html)
+
+### 動作環境 {#n90ed6bb}
+
+OS X 10.8, 10.7, 10.6, 10.5
 
 ### JTeXEdit {#i6a864d7}
 
