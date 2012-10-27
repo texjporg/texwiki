@@ -24,13 +24,6 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．<br>
 Vim は，チャリティウェアです．[VIM ライセンス](http://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
-GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
-最新版へアップデートしてください．<br>
-詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
-
-GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
-Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
-
 - [Vim 公式サイト](http://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
         - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
@@ -44,6 +37,21 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
     - [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
         <!-- [[Vim team:http://sourceforge.net/project/memberlist.php?group_id=8] -->
         <!-- [[develop:http://sourceforge.net/projects/vim/develop]] -->
+
+### 動作環境 {#w6b94f3c}
+
+[download : vim online](http://www.vim.org/download.php) を参照．
+
+### リリース情報 {#n22b1c9a}
+
+2010-08-15 Vim 7.3<br>
+
+GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
+最新版へアップデートしてください．<br>
+詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
+
+GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
+Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
 
 ### 派生版 {#ka1322d7}
 
