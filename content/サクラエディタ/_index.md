@@ -18,16 +18,7 @@ pukiwiki: "サクラエディタ"
 
 ## サクラエディタ とは {#d45d009a}
 
-サクラエディタは
-
-<table>
-<tbody>
-<tr><td style="color:#FFF;background-color:#F7A"><strong>Version 2 (UNICODE 版)</strong></td><td>Windows 7, Vista, 2003, XP, 2000</td></tr>
-<tr><td style="color:#FFF;background-color:#F7A"><strong>Version 1 (ANSI 版)</strong></td><td>Windows 7, Vista, 2003, XP, 2000, NT4, Me, 98, 95</td></tr>
-</tbody>
-</table>
-
-で動作する国産のフリーでオープンソースなテキストエディタです．
+サクラエディタは国産のフリーでオープンソースなテキストエディタです．
 
 サクラエディタは
 
@@ -62,6 +53,10 @@ pukiwiki: "サクラエディタ"
     - [脳log\[SakuraEditor\]](http://vvvvvv.sakura.ne.jp/ds14050/diary/?category=SakuraEditor)
 - [”なすこじ”のトップページ](http://www.geocities.jp/nasukoji_7/)
     - [ダウンロード](http://www.geocities.jp/nasukoji_7/download/download_sakuraeditor.html)
+
+### 動作環境 {#vfdecfda}
+
+Windows 7, Vista, XP, 2000 日本語版
 
 ### リリース情報 {#qe1b7074}
 
