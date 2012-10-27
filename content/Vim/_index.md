@@ -328,7 +328,7 @@ function! PdfpLaTeX(type)
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
       let g:makeindex = 'mendex -U -ST'
       if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
@@ -348,7 +348,7 @@ function! PdfpLaTeX(type)
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
       let g:makeindex = 'mendex -U -ST'
       if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -368,7 +368,7 @@ function! PdfpLaTeX(type)
       let g:bibtex = 'upbibtex'
       let g:makeindex = 'mendex -U'
       if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
@@ -388,7 +388,7 @@ function! PdfpLaTeX(type)
       let g:bibtex = 'upbibtex'
       let g:makeindex = 'mendex -U'
       if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -435,7 +435,7 @@ function! PdfLaTeX(type)
 
   if has('win32') || has('win64')
     if g:viewer == 'adobereader'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . pdflatex
     else
       let execString = 'cd /d ' . masterDir . ' && ' . pdflatex
