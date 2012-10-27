@@ -13,14 +13,13 @@ pukiwiki: "WZ EDITOR"
 
 ## WZ EDITOR とは {#v4dc34d1}
 
-WZ EDITOR は Windows 7, Vista, XP で動作する国産のテキストエディタです。 (製品)
+WZ EDITOR は国産のテキストエディタです。 (製品)
 
 - [WZソフトウェア](http://www.wzsoft.jp/)
-    公式サイト
 
-<strong>2010年11月29日 WZ EDITOR 7 パッケージ版の販売を開始しました。</strong><br>
+### 動作環境 {#c5feb552}
 
-<strong>2010年10月28日 WZ EDITOR 7 オンライン版の販売を開始しました。</strong><br>
+Windows 7, Vista, XP
 
 ## [WZ EDITOR 7](http://www.wzsoft.jp/wz7/) {#xeb01ab7}
 
