@@ -18,12 +18,22 @@ pukiwiki: "TeXShop"
 
 ## TeXShop とは {#q728ac5b}
 
-TeXShop は [OS X](/Mac/) で動作する TeX 統合環境です．<br>
+TeXShop は TeX 統合環境です．<br>
 [MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
     - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
+
+### 動作環境 {#i28ced5b}
+
+> <table>
+> <tbody>
+> <tr><td>TeXShop (v 3.x)</td><td>OS X 10.8, 10.7</td></tr>
+> <tr><td>TeXShop (v 2.x)</td><td>OS X 10.6, 10.5, 10.4</td></tr>
+> </tbody>
+> </table>
+>
 
 ### リリース情報 {#td599942}
 
