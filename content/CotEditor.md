@@ -15,9 +15,17 @@ pukiwiki: "CotEditor"
 
 ## CotEditor とは {#x19d88d4}
 
-CotEditor は OS X で動作するテキストエディタです．
+CotEditor はテキストエディタです．
 
 - [CotEditor](http://sourceforge.jp/projects/coteditor/)
+
+### 動作環境 {#he679a78}
+
+OS X 10.8, 10.7, 10.6, 10.5, 10.4
+
+### リリース情報 {#ed02eb4b}
+
+2012-02-12 CotEditor 1.3.1<br>
 
 ### ChangeLog {#o0aedc6a}
 
