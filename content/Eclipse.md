@@ -25,13 +25,13 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
+### 動作環境 {#aae7926e}
+
+[Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
+
 ### リリース情報 {#q303f311}
 
 2012-06-27 Eclipse 4.2 (Juno)
-
-## 動作環境 {#aae7926e}
-
-[Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
 
 ## Java のインストール {#ca668ec2}
 
