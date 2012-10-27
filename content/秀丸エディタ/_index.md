@@ -14,7 +14,7 @@ pukiwiki: "秀丸エディタ"
 
 ## 秀丸エディタ とは {#w73ea51b}
 
-秀丸エディタ は，Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95 上で動作する国産のテキストエディタです。 (シェアウェア)
+秀丸エディタ は国産のテキストエディタです。 (シェアウェア)
 
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
@@ -25,6 +25,10 @@ pukiwiki: "秀丸エディタ"
     - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
     - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
 - [窓の杜 - 秀丸エディタ](http://www.forest.impress.co.jp/lib/offc/document/txteditor/hidemaru.html)
+
+### 動作環境 {#d2be5bb8}
+
+Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ## 秀丸エディタフリー制度 {#faebc82e}
 
