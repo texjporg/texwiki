@@ -13,11 +13,22 @@ pukiwiki: "Visual Windows for TeX"
 
 ## Visual Windows for TeX とは {#k33ee4a0}
 
-Visual Windows for TeX は Windows 7, Vista, XP, 2000, 98 で動作する国産でフリーの TeX 統合環境です．<br>
-Visual Windows for Unicode TeX (Windows XP 以降), Visual Windows for xeTeX (Windows XP 以降) も開発中です．<br>
+Visual Windows for TeX は国産でフリーの TeX 統合環境です．<br>
+Visual Windows for Unicode TeX, Visual Windows for xeTeX も開発中です．<br>
 
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physjpn/vtexwin.htm) (Japanese page)
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physeng/vtexwin.htm) (English page)
+
+### 動作環境 {#v13ad962}
+
+> <table>
+> <tbody>
+> <tr><td>Visual Windows for TeX</td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
+> <tr><td>Visual Windows for Unicode TeX</td><td>Windows XP 以降</td></tr>
+> <tr><td>Visual Windows for xeTeX</td><td>Windows XP 以降</td></tr>
+> </tbody>
+> </table>
+>
 
 ### リリース情報 {#l78e4b17}
 
