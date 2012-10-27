@@ -479,17 +479,23 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 [LyX](/LyX/)
 : [LyX](/LyX/) をご覧ください．
 
-[TeXnicCenter](/TeXnicCenter/)
-: [TeXnicCenter](/TeXnicCenter/) をご覧ください．
-
 [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 : [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
 
-[サクラエディタ](</サクラエディタ/>) + マクロ
-: [サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
+[Emacs](/Emacs/) + tex-mode or org-mode
+: [Emacs](/Emacs/) + [TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
+
+[Vim](/Vim/) + プラグイン
+: [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
+
+[xyzzy](/xyzzy/) + tex-mode
+: [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>をご覧ください．
 
 [Notepad++](/Notepad++/) + プラグイン
 : [Notepad++](/Notepad++/)[#プラグイン](/Notepad++/#k2155ff2) をご覧ください．
+
+[サクラエディタ](</サクラエディタ/>) + マクロ
+: [サクラエディタ](</サクラエディタ/>)[#マクロ](</サクラエディタ/#k75075b0>) をご覧ください．
 
 jEdit + プラグイン
 : jEdit#プラグイン<br>をご覧ください．
@@ -497,20 +503,8 @@ jEdit + プラグイン
 Gummi
 : Gummi をご覧ください．
 
-[Geany](/Geany/) + GeanyLaTeX
-: [Geany](/Geany/) をご覧ください．
-
-[gedit](/gedit/) + gedit-latex + 外部ツール
-: [gedit](/gedit/) をご覧ください．
-
-[xyzzy](/xyzzy/) + tex-mode
-: [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>をご覧ください．
-
-[Emacs](/Emacs/) + tex-mode or org-mode
-: [Emacs](/Emacs/) + [TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
-
-[Vim](/Vim/) + プラグイン
-: [Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
+[TeXnicCenter](/TeXnicCenter/)
+: [TeXnicCenter](/TeXnicCenter/) をご覧ください．
 
 ### フリーウェア (無料) {#k0b8f900}
 
