@@ -357,7 +357,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 
 - $TEXMFLOCAL/tex/generic/babel/
 
-にコピーします。thai.ldfはthaiold.ldfなどと名前を変え，コマンドプロンプト（MS-DOSプロンプト）で
+にコピーします。thai.ldfはthaiold.ldfなどと名前を変え，コマンド プロンプトで
 
 ```
 8bt2ptex thaiold.ldf >thai.ldf
