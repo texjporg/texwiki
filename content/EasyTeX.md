@@ -37,7 +37,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### リリース情報 {#nc0d64ca}
 
-2012-10-23 EasyTeX Version 3.311<br>
+2012-10-29 EasyTeX Version 3.312<br>
 2012-07-05 EasyTeX Version 3.306<br>
 2012-02-06 EasyTeX Version 3.242<br>
 
@@ -63,11 +63,6 @@ EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF
 ## 不具合 {#n8975b09}
 
 [TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
-
-### EasyTeX Version 3.311 でツールバーから pdfﾌｧｲﾙ表示 を実行しても PDF ファイルが表示されない {#jc02e549}
-
-EasyTeX Version 3.311 でツールバーから pdfﾌｧｲﾙ表示 を実行しても PDF ファイルが表示されません．<br>
-EasyTeX Version 3.31 では表示されました．<br>
 
 ## [ダウンロード](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#bf9167cb}
 
