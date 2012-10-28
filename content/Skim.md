@@ -15,13 +15,18 @@ pukiwiki: "Skim"
 
 ## Skim とは {#mcac8dfe}
 
-Skim は OS X で動作する SyncTeX に対応した PDF ビューアです．<br>
+Skim は PDF ビューアです．<br>
+SyncTeX に対応しています．<br>
 DVI ファイルも PDF ファイルに変換して表示してくれます<br>
 [dvipdfmx](/dvipdfmx/) が標準的な場所にないときは defaults write -app Skim SKDviConversionCommand -string /path/dvipdfmx で設定します<br>
 
 - [Skim](http://skim-app.sourceforge.net/)
 
-## ChangeLog {#l1a8874a}
+### 動作環境 {#rb90213b}
+
+OS X 10.5 以降
+
+### ChangeLog {#l1a8874a}
 
 - [コミットログ](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/?view=log)
 
