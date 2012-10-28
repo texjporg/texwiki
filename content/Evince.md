@@ -15,12 +15,17 @@ pukiwiki: "Evince"
 
 ## Evince とは {#l8fbb2e6}
 
-Evince は Windows, Linux で動作する PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
-SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
+Evince は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
+SyncTeX に対応しています．<br>
+ファイルの自動更新機能もあります．<br>
 
 - [Evince](http://projects.gnome.org/evince/)
 - [Evince Document Viewer](http://library.gnome.org/users/evince/stable/index.html.en)
     - [Evince Document Viewer › SyncTex » Supported Editors](http://library.gnome.org/users/evince/stable/synctex-editors.html.en)
+
+### 動作環境 {#q9c64542}
+
+Windows, OS X, Linux
 
 ### ChangeLog {#nb7ae766}
 
@@ -145,3 +150,4 @@ Okular にも同様の問題が発生していたようです．
 ## 関連リンク {#n7670496}
 
 - [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836)
+- [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
