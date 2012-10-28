@@ -12,8 +12,13 @@ pukiwiki: "Okular"
 - [Okular](http://okular.kde.org/)
     - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
 
-Okular は KDE で動作する PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
-SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
+Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
+SyncTeX に対応しています．<br>
+ファイルの自動更新機能もあります．<br>
+
+### 動作環境 {#ca9192aa}
+
+KDE
 
 ## インストール {#xecad964}
 
