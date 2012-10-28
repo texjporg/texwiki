@@ -11,12 +11,16 @@ pukiwiki: "pxdvi"
 
 ## pxdvi とは {#s1b173bb}
 
-pxdvi は X Window System 上で動作する DVI プレビューアです．<br>
+pxdvi は DVI プレビューアです．<br>
 pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したものです．<br>
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
+
+### 動作環境 {#y90c90d1}
+
+X Window System
 
 ### リリース情報 {#y0777637}
 
