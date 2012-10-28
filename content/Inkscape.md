@@ -18,7 +18,6 @@ pukiwiki: "Inkscape"
 ## Inkscape とは {#v6fd1815}
 
 Inkscape は，オープンソースのベクターグラフィックエディタ (SVG エディタ) です．<br>
-Windows, OS X, Linux で動作します．<br>
 
 <table>
 <tbody>
@@ -28,13 +27,6 @@ Windows, OS X, Linux で動作します．<br>
 </table>
 
 [PostScriptやEPSをインポートするには、Ghostscriptをインストールする必要があり、ps2pdfがPATH上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
-
-<!-- 外部プログラムとして -->
-<!--  -->
-<!-- -Windows なら [[pstoedit:http://pstoedit.sourceforge.net/]] -->
-<!-- -UNIX なら [[pstoedit:http://pstoedit.sourceforge.net/]] と （[[Skencil>WikiPedia.ja:Skencil]] に含まれている） skconvert.py -->
-<!--  -->
-<!-- を使用することで EPS, PS の入力も可能です． -->
 
 - [Inkscape 公式サイト](http://inkscape.org/)
 - [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
@@ -46,6 +38,10 @@ Windows, OS X, Linux で動作します．<br>
         - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
     - [Tools](http://wiki.inkscape.org/wiki/index.php/Tools)
     - [Extension repository](http://wiki.inkscape.org/wiki/index.php/ExtensionsRepository)
+
+### 動作環境 {#a70b2acc}
+
+Windows, OS X, Linux で動作します．<br>
 
 ### リリース情報 {#d961699f}
 
