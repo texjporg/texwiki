@@ -11,13 +11,19 @@ pukiwiki: "zathura"
 
 ## zathura とは {#s6eb3d04}
 
+zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．<br>
+PDF ファイルや PS ファイルが表示できます．<br>
+SyncTeX に対応しています．<br>
+ファイルの自動更新機能もあります．<br>
+
 - [Home | pwmt.org](http://pwmt.org/)
     - [zathura](http://pwmt.org/projects/zathura/)
 
-zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．<br>
-PDF ファイルや PS ファイルが表示できます．<br>
-zathura Version 0.2.1 から SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
+### 動作環境 {#q9b59e7d}
+
+Linux, BSD
+
+[Known supported distributions](http://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
 
 ### リリース情報 {#p5c718a4}
 
