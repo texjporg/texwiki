@@ -12,9 +12,14 @@ pukiwiki: "PdfViewer"
 ### PdfViewer とは {#f1727432}
 
 PdfViewer は PDF ビューアです．<br>
-SyncTeX に対応しており，ファイルの自動更新機能もあります．<br>
+SyncTeX に対応しています．<br>
+ファイルの自動更新機能もあります．<br>
 
 - [PdfViewer](http://qt-apps.org/content/show.php?content=149637)
+
+### 動作環境 {#o68b101e}
+
+Linux
 
 ### リリース情報 {#h1e696d1}
 
