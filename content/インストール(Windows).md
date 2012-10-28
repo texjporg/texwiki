@@ -171,6 +171,8 @@ install-tl-advanced.bat をダブルクリックします．<br>
 - 関連付けの変更
 
 TeX Live 2012 をデフォルトの設定でインストールすると <strong>PDF ファイルの関連付けが PS_View に変更されます．</strong><br>
+TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2012\tlpkg\tlpsv 以下に配置されています．<br>
+C:\texlive\2012\bin\win32\psv.exe をダブルクリックすると PS_View が起動します．<br>
 関連付けを Adobe Reader に戻したい場合は以下の作業を行ってください．<br>
 
 1. PDF ファイルを右クリック
@@ -274,81 +276,6 @@ W32TeX, TeX Live 以外に MiKTeX といった TeX ディストリビューシ�
 
 - [MiKTeX - TeX Wiki](/MiKTeX/)
 
-## 新ドキュメントクラスのインストール {#k48ecf0f}
-
-<!-- - --  -->
-<!-- RIGHT:☒ -->
-<!-- LEFT:　 ／￣＼ -->
-<!-- LEFT:　|　＾o＾　| -->
-<!-- LEFT:　 ＼＿／  -->
-<!-- CENTER:[[TeX Wiki 創設者&br;奥村晴彦さんからの&br;新ドキュメントクラスをお使いください:http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/]] -->
-<!-- RIGHT:[ [[詳細を読む:http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/]] ] -->
-<!-- - --  -->
-
-ぜひ[奥村晴彦さん](http://oku.edu.mie-u.ac.jp/~okumura/)の[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)も
-入れてください。
-
-W32TeX の内部 Unicode 版 pTeX
-（[uptex-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz)）
-や TeX Live には，奥村さんの新ドキュメントクラスが含まれています。
-
-手動で入れるのなら，最新のものをダウンロードして展開し，
-フォルダ（ディレクトリ）ごと $TEXMFLOCAL/tex/platex/
-（例えば C:\w32tex\share\texmf-local\tex\platex\）
-の中に入れれば完了です。
-
-もしファイル名のデータベース $TEXMF/ls-R
-（例えば C:\w32tex\share\texmf\ls-R）が
-存在するのなら，mktexlsr コマンド (または texhash コマンド) でデータベースを更新しないと，
-新しくインストールしたファイルが認識されません。<br>
-しかしこれは忘れやすいので，
-初心者のかたは mktexlsr コマンドを打ち込まないほうがいいでしょう。
-
-W32TeX を使用していて間違って mktexlsr コマンドを打ち込んでしまった場合は deltexlsr コマンドを打ち込んでください。<br>
-$TEXMF/ls-R ファイルが削除されます。
-
-## Ghostscript のインストール {#zd901fa9}
-
-<strong>Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので，最新版に更新してください．</strong>
-
-[Ghostscript](/Ghostscript/) は [PostScript](/PostScript/) のインタープリタ（ソフトウェア RIP）です。EPS
-形式の図を使う際や，Type 1 形式のフォントを
-[dviout for Windows](/dviout/) で使う際に必要です。
-
-もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
-必ず削除しておきます（方法は上で説明した W32TeX の場合と同じです）。
-
-インストールの詳細に関しては
-
-- Ghostscript-8系#GPL Ghostscript 9.xx for Microsoft Windows
-
-を参照してください。
-
-<!-- フォントを埋め込みたい場合はインストールウィザードを終了するウィンドウで [Generate cidfmap for Windows CJK TrueType fonts] のチェックを on にして [Finish] をクリックします． -->
-<!--  -->
-<!-- 環境変数 PATH に Ghostscript の PATH を追加します． -->
-<!--  -->
-<!-- PATH の値は Destination Folder (インストール先のフォルダー) によって変わるので，インストール先のフォルダーに合わせて値を変えてください． -->
-<!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files\gs\gs9.06 にした場合 -->
-<!-- > -->
-<!-- |変数名|変数値|h -->
-<!-- |PATH|C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib| -->
-<!-- < -->
-<!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\Program Files (x86)\gs\gs9.06 にした場合 -->
-<!-- > -->
-<!-- |変数名|変数値|h -->
-<!-- |PATH|C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib| -->
-<!-- < -->
-<!--  -->
-<!-- -Destination Folder (インストール先のフォルダー) を C:\gs\gs9.06 にした場合 -->
-<!-- > -->
-<!-- |変数名|変数値|h -->
-<!-- |PATH|C:\gs\gs9.06\bin;C:\gs\gs9.06\lib| -->
-<!-- < -->
-<!--  -->
-
 ## Perl のインストール {#u9e265db}
 
 TeX 関連プログラムには Perl で書かれたスクリプトがあります．<br>
@@ -405,57 +332,6 @@ ruby.exe を C:\Ruby193\bin にインストールした場合は
 ## [SumatraPDF](/SumatraPDF/) のインストール {#sbe939df}
 
 [SumatraPDF - TeX Wiki](/SumatraPDF/) をご覧ください．
-
-## [dviout](/dviout/) for Windows のインストール {#fe50aa67}
-
-[dviout - TeX Wiki](/dviout/) をご覧ください．
-
-## GSview のインストール（オプション） {#xd771752}
-
-[CTAN:support/ghostscript/ghostgum/](https://mirror.ctan.org/support/ghostscript/ghostgum/) から最新の GSview インストーラ
-（2012年01月19日時点では gsv50w32.exe）をダウンロードし，実行します。 <!-- 2012/01/19 GSview Ver.5.0 公開 --> <!-- 2011/05/30 GSview Ver.4.91 公開 --> <!-- 2007/11/19 GSview Ver.4.9 公開 --> <!-- 2006/02/25 GSview Ver.4.8 公開 --> <!-- 2005/03/26 GSview Ver.4.7 公開 -->
-
-&#x2d;dWINKANJI オプションを使用して日本語を表示する
-には，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の
-内容に “-dWINKANJI” を追加します。
-
-## PS_View のインストール (オプション) {#kcd19930}
-
-[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
-TeX Live の Windows 版には標準で PS_View が含まれていて C:\texlive\2012\tlpkg\tlpsv 以下に配置されています．<br>
-C:\texlive\2012\bin\win32\psv.exe をダブルクリックすると PS_View が起動します．<br>
-
-公式サイトで配布されている PS_View を起動するには，psv.wx.lua の gsargs の dllloc
-
-```
-local gsargs = {
-  args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
-```
-
-を Ghostscript の dll ファイル (C:\gs\gs9.06\bin\gsdll32.dll) に修正します．
-
-ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
-
-```
-local gsargs = {
-  args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.06/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
-```
-
-&#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
-```
-
-を
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
-```
-
-に修正します．
 
 ## [TeX 用エディタ](</TeX用エディタ/>)のインストール（オプション） {#e8efca0f}
 
