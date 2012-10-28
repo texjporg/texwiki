@@ -25,6 +25,10 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 - [Adobe - ニュースルーム](http://www.adobe.com/jp/aboutadobe/pressroom/)
     - [Adobe - 過去のニュースリリース](http://www.adobe.com/jp/aboutadobe/pressroom/pressreleases/)
 
+### 動作環境 {#v8f82e43}
+
+[必要システム構成](http://www.adobe.com/jp/products/reader/tech-specs.html)を参照．<br>
+
 ### お知らせ {#xa82989b}
 
 [Adobe Reader 9, Adobe Acrobat 9 のサポートが 2013年6月26日 で終了](http://blogs.adobe.com/adobereader/2012/06/one-year-from-now-adobe-reader-and-acrobat-9-eol.html)する予定です．<br>
