@@ -11,9 +11,14 @@ pukiwiki: "qpdfview"
 
 ### qpdfview とは {#o070cb99}
 
-qpdfview は SyncTeX に対応した PDF ビューアです．<br>
+qpdfview は PDF ビューアです．<br>
+SyncTeX に対応しています．<br>
 
 - [qpdfview](https://launchpad.net/qpdfview)
+
+### 動作環境 {#g3b31065}
+
+Linux
 
 ### リリース情報 {#k3e6b6c1}
 
