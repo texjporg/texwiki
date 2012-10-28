@@ -90,7 +90,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.06 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです．ただし Windows 7/Vista では C:\ にファイルをコピー・移動する場合は管理者権限が必要になるので，プログラムをインストールする場合は C:\ にフォルダーを作成してインストールするのがおすすめです．ただし，日本語等の非 ascii 文字を含むフォルダにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs?.?? というフォルダにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs?.?? というフォルダ構造を仮定していることが多いということは理解しておいてください．
+\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.06 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです．ただし Windows 8, 7, Vista では C:\ にファイルをコピー・移動する場合は管理者権限が必要になるので，プログラムをインストールする場合は C:\ にフォルダーを作成してインストールするのがおすすめです．ただし，日本語等の非 ascii 文字を含むフォルダにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs?.?? というフォルダにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs?.?? というフォルダ構造を仮定していることが多いということは理解しておいてください．
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -101,7 +101,7 @@ ASCII 以外の文字（日本語など）を使っていると，Ghostscript �
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。<br>
 環境変数 TEMP のデフォルトは
-Windows 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
+Windows 8, 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
 (&cong; C:\Users\\%USERNAME%\AppData\Local\Temp) と，
 Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 (&cong; "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
@@ -120,29 +120,101 @@ ASCII 文字だけで設定します。
 
 インストールした Ghostscript に含まれる bin と lib を付け加えておきます．具体的には次のようにします．
 
-```
-
-```
-
-Ghostscript 9.06 を C:\Program Files\gs\gs9.06 にインストールしたのなら
-
-```
-;C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib
-```
-
-Ghostscript 9.06 を C:\Program Files (x86)\gs\gs9.06 にインストールしたのなら
-
-```
-;C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib
-```
-
-Ghostscript 9.06 を C:\gs\gs9.06 にインストールしたのなら
+Ghostscript 9.06 を C:\gs\gs9.06 にインストールした場合
 
 ```
 ;C:\gs\gs9.06\bin;C:\gs\gs9.06\lib
 ```
 
-を環境変数 PATH に追加します。 <!-- C:\usr\local\share\gs\ にインストールしたのなら --> <!-- ;C:\usr\local\share\gs\gs9.??\bin;C:\usr\local\share\gs\gs9.??\lib --> <!-- を環境変数 PATH に追加します。 -->
+を環境変数 PATH に追加します。
+
+***
+
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+
+　　Ghostscript のユーザー環境変数(U)<br>
+
+> <table>
+> <tbody>
+> <tr><td>変数</td><td>値</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin;C:\gs\gs9.06\bin;C:\gs\gs9.06\lib</td></tr>
+> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
+
+　　システム環境変数(S)<br>
+...<br>
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
+
+***
+
+Ghostscript 9.06 を C:\Program Files\gs\gs9.06 にインストールした場合
+
+```
+;C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib
+```
+
+を環境変数 PATH に追加します。
+
+***
+
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+
+　　Ghostscript のユーザー環境変数(U)<br>
+
+> <table>
+> <tbody>
+> <tr><td>変数</td><td>値</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin;C:\Program Files\gs\gs9.06\bin;C:\Program Files\gs\gs9.06\lib</td></tr>
+> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
+
+　　システム環境変数(S)<br>
+...<br>
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
+
+***
+
+Ghostscript 9.06 を C:\Program Files (x86)\gs\gs9.06 にインストールした場合
+
+```
+;C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib
+```
+
+を環境変数 PATH に追加します。
+
+***
+
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+
+　　Ghostscript のユーザー環境変数(U)<br>
+
+> <table>
+> <tbody>
+> <tr><td>変数</td><td>値</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib</td></tr>
+> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
+
+　　システム環境変数(S)<br>
+...<br>
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
+
+***
 
 #### 環境変数 GS_LIB {#y53bce19}
 
