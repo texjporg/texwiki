@@ -115,7 +115,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>初心者オススメ度</strong>：★★★★☆
 - <strong>ライセンス</strong>：フリーウェア
 - <strong>インストールする対象</strong>：W32TeX バイナリ
-- <strong>ユーザーインターフェース</strong>：CUI（コマンドプロンプト）
+- <strong>ユーザーインターフェース</strong>：CUI（コマンド プロンプト）
 - <strong>ネット・ローカルインストール</strong>：ローカルのみ
 - <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
 - <strong>長所</strong>：最もシンプルなインストーラ。自作のバッチファイル
@@ -125,7 +125,7 @@ TeX インストーラを色々な視点から比較してみます。
     しか触ったことのない人や，初心者には厳しいかもしれません。しかしながら，最も TeX システムというものを [TDS](https://mirror.ctan.org/help/Catalogue/entries/tds.html) (<strong>T</strong>eX <strong>D</strong>irectory <strong>S</strong>tructure) から見せてくれるところがよい。初心者の方も勉強だと思って，これを用いて
     TeX 環境を構築されるのが一番良いでしょう。
 
-- <strong>参考</strong>：TeXWiki:インストール(Windows)
+- <strong>参考</strong>：[TeXWiki:W32TeX](/W32TeX/)
 
 ## Visual Installer for W32TeX {#c70efefe}
 
@@ -184,22 +184,20 @@ TeX インストーラを色々な視点から比較してみます。
 
 - <strong>短所</strong>：LabEditorで使用したときに問題が生じないようにインストールが固定化されているため、カスタマイズはほとんどできません。
 
-## TeX 環境インストーラ {#k886a93e}
-
-- <strong>URL</strong>: [http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
-- <strong>作者</strong>： 三輪 英樹さん
-- <strong>初心者オススメ度</strong>： ★★☆☆☆
-- <strong>ライセンス</strong>：
-- <strong>インストールする対象</strong>： W32TeX バイナリの標準インストールまでの
-    パッケージ，Ghostscript，dviout，emf2eps
-
-- <strong>ユーザーインターフェース</strong>： ダブルクリック後，CUI + dviout 設定は dviout の GUI
-- <strong>ネット・ローカルインストール</strong>： ローカルのみ。
-- <strong>環境変数・レジストリ</strong>： 自動（環境変数 PATH），手動（dviout の設定）
-- <strong>長所</strong>：
-- <strong>短所</strong>： CUI 画面でインストール作業メッセージが出るところに違和感を覚える人もあるかも。
-- <strong>備考</strong>： dviout の初期化設定も，強制的にやらせるようです。
-
+<!-- * TeX 環境インストーラ [#k886a93e] -->
+<!-- -''URL'': http://www.c.csce.kyushu-u.ac.jp/kb/wiki/?TeX/Windows%BE%E5%A4%C7%A4%CEpLaTeX%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB -->
+<!-- -''作者''： 三輪 英樹さん -->
+<!-- -''初心者オススメ度''： ★★☆☆☆ -->
+<!-- -''ライセンス''： -->
+<!-- -''インストールする対象''： W32TeX バイナリの標準インストールまでの -->
+<!-- パッケージ，Ghostscript，dviout，emf2eps -->
+<!-- -''ユーザーインターフェース''： ダブルクリック後，CUI + dviout 設定は dviout の GUI -->
+<!-- -''ネット・ローカルインストール''： ローカルのみ。 -->
+<!-- -''環境変数・レジストリ''： 自動（環境変数 PATH），手動（dviout の設定） -->
+<!-- -''長所''： -->
+<!-- -''短所''： CUI 画面でインストール作業メッセージが出るところに違和感を覚える人もあるかも。 -->
+<!-- -''備考''： dviout の初期化設定も，強制的にやらせるようです。 -->
+<!--  -->
 <!-- // 2007 年 12 月末日にて供給終了 -->
 <!-- *MyTeX Netinstaller [setup(-ja).exe] [#d5f5ce48] -->
 <!-- -''URL'': http://www.math.s.chiba-u.ac.jp/~myamamoto/mytex/mytex.html -->
