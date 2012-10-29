@@ -68,7 +68,9 @@ OS X 10.6 で動作する TextMate 2 for Snow Leopard もあります．<br>
 
 - [Newest &#39;textmate&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/textmate)
 - [TextMate support for LaTeX (latex.tmbundle)](https://github.com/textmate/latex.tmbundle)
-- [How and Why to use TextMate for LaTeX](http://www.astrobetter.com/how-and-why-to-use-textmate-for-latex/)
+- [Textmate 2 &amp; LaTeX](http://old.nabble.com/Textmate-2---LaTeX-td34611014.html)
+    <!-- -[[How and Why to use TextMate for LaTeX:http://www.astrobetter.com/how-and-why-to-use-textmate-for-latex/]] -->
+
 - [http://www.astrobetter.com/wiki/tiki-index.php?page=TextMate#LaTeX_Bundle](http://www.astrobetter.com/wiki/tiki-index.php?page=TextMate#LaTeX_Bundle)
     <!-- -[[ConTeXt Bundle for TextMate:http://wiki.contextgarden.net/ConTeXt_Bundle_for_TextMate]] -->
 
