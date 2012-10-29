@@ -16,6 +16,10 @@ pukiwiki: "Linux/openSUSE"
 
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
+### openSUSE 12.2 {#i7a9f183}
+
+- [OpenSUSEで lyx から日本語 pdf 出力](http://computermawari.blogspot.jp/2012/10/opensuse-lyx-pdf.html)
+
 ### openSUSE 12.1 {#vb63b852}
 
 - [openSUSE 12.1 インストール tips (素人の視点から)](http://yukiminamoto.cocolog-nifty.com/blog/2012/05/opensuse-121-ti.html)
