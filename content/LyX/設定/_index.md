@@ -726,7 +726,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-(u)platex + dvipdfmx, lualatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
+(u)platex + dvipdfmx, lualatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](https://github.com/zr-tex8r/ZXjatype) をインストールして LaTeXプリアンブルで
 
 ***
 
@@ -745,6 +745,10 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 \else
   \ifxetex
     \usepackage[xetex]{hyperref}
+    \usepackage{zxjatype}
+    \setjamainfont{MS Mincho}
+    \setjasansfont{MS Gothic}
+    \setjamonofont{MS Gothic}
   \else
     \usepackage[dvipdfmx]{hyperref}
     \usepackage{pxjahyper}
