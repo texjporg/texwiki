@@ -15,7 +15,7 @@ pukiwiki: "LaTeXiT"
 
 ## LaTeXiT とは {#j7c51563}
 
-LaTeXiT は OS X で動作する数式エディタです．<br>
+LaTeXiT は数式エディタです．<br>
 [MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
 
 - [LaTeXiT](http://www.chachatelier.fr/latexit/)
@@ -23,6 +23,12 @@ LaTeXiT は OS X で動作する数式エディタです．<br>
     - [Downloads](http://www.chachatelier.fr/latexit/latexit-downloads.php)
         - [Beta](http://www.chachatelier.fr/latexit/latexit-beta.php)
     - [FAQ](http://www.chachatelier.fr/latexit/latexit-faq.php)
+
+### 動作環境 {#e0e2eaf2}
+
+OS X 10.4 以降
+
+[COMPATIBILITY](http://www.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
 
 ### リリース情報 {#sb3b1ab6}
 
