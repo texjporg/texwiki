@@ -343,6 +343,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#e2433aac}
 
+[LyX](/LyX/)
+: [LyX](/LyX/) をご覧ください．
+
 [TeXworks](/TeXworks/)
 : [TeXworks](/TeXworks/) をご覧ください．
 
@@ -351,9 +354,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 [TeXstudio](/TeXstudio/)
 : [TeXstudio](/TeXstudio/) をご覧ください．
-
-[LyX](/LyX/)
-: [LyX](/LyX/) をご覧ください．
 
 [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 : [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/) をご覧ください．
