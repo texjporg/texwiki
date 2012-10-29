@@ -44,9 +44,13 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 
 - [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
 
+### 動作環境 {#q77fe1cc}
+
+xyzzy (0.2.2 系列) は Windows 8, 7, Vista, XP で動作します．<br>
+
 ### リリース情報 {#m67e4030}
 
-2012-09-29 xyzzy version 0.2.2.244 (0.2.2 系列)<br>
+2012-10-29 xyzzy version 0.2.2.245 (0.2.2 系列)<br>
 2012-09-10 xyzzy version 0.2.3.12 (マルチフレーム版)<br>
 2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版)<br>
 2005-12-07 xyzzy version 0.2.2.235<br>
