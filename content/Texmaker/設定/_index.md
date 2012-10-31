@@ -83,19 +83,19 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ Latexmk + PDF ファイルを表示</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ XeLaTeX + PDF ファイルを表示</span><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
 
 <span style="color:#888888;background-color:#EEEEEE;"><ins>platex -interaction=nonstopmode %.tex&#x7c;pbibtex %&#x7c;platex -interaction=nonstopmode %.tex&#x7c;platex -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins></span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しない</span><br>
-
-<br>
 
 　　　　　<strong>エディタ</strong><br>
 
