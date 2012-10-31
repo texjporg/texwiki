@@ -17,8 +17,9 @@ pukiwiki: "Texmaker/設定/OS X"
 
 MacTeX &amp; TeX Live の場合の設定を書きます．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-[LuaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
-[XeTeX](/XeTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を xelatex に変更して使用してください．<br>
+コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
+コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
+[LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 
 #### [MacTeX &amp; TeX Live](/Mac/#f5466652) {#i89a162a}
 
@@ -38,15 +39,23 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/bin/latexmk" -gg -pdfdvi %.tex</ins> または <ins>"/usr/bin/latexmk" -gg -pdfps %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins> または <ins>"/usr/texbin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>"/usr/bin/latexmk" -gg -pdfdvi %.tex</ins><br>または <ins>"/usr/bin/latexmk" -gg -pdfps %.tex</ins><br>または <ins>"/usr/bin/latexmk" -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>"/usr/bin/latexmk" -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong>　　 または <ins>"/usr/bin/latexmk" -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/pbibtex" &#x25;</ins> または <ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
 
@@ -56,11 +65,11 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
 
 <div style="clear:both"></div>
 
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins><br>
 
@@ -70,21 +79,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
 
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>ショートカット</strong><br>
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
 
 ***
 
@@ -113,7 +108,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 ## Skim との連携 {#b05a1a86}
 
-LaTeX コマンド, PdfLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#jbc32d2d}
 
