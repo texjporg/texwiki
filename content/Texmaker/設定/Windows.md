@@ -16,11 +16,12 @@ pukiwiki: "Texmaker/設定/Windows"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 W32TeX と TeX Live の場合の設定を書きます．<br>
-PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-PDFビューアに Adobe Reader ではなく，組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
-PDFビューアに TeXworks を使用する場合は [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
-[LuaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
-[XeTeX](/XeTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を xelatex に変更して使用してください．<br>
+PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+PDF ビューアに 組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
+PDF ビューアに TeXworks を使用する場合は [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
+コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
+コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
+[LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 
 #### [W32TeX](/W32TeX/) (自動判別の場合) {#cd578b1e}
 
@@ -36,15 +37,23 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins> または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
@@ -54,11 +63,11 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 <span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
 
 <div style="clear:both"></div>
 
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins><br>
 
@@ -68,21 +77,7 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
 
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>ショートカット</strong><br>
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
 
 ***
 
@@ -124,15 +119,23 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins> または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins> または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>
+
+　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
@@ -142,11 +145,11 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
 
 <div style="clear:both"></div>
 
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins> または <ins>upmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins><br>
 
@@ -156,21 +159,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
 
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>ショートカット</strong><br>
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
 
 ***
 
@@ -208,7 +197,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
 
-LaTeX コマンド, PdfLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#y08c577b}
 
