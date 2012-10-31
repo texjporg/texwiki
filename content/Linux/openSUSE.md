@@ -14,6 +14,7 @@ pukiwiki: "Linux/openSUSE"
 
 ## TeX Live {#n3c200b7}
 
+- [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
 ### openSUSE 12.2 {#i7a9f183}
