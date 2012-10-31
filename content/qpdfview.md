@@ -13,6 +13,7 @@ pukiwiki: "qpdfview"
 
 qpdfview は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
+ファイルの自動更新機能もあります．<br>
 
 - [qpdfview](https://launchpad.net/qpdfview)
 
@@ -25,3 +26,11 @@ Linux
 2012-10-14 qpdfview 0.3.5
 
 [qpdfview version 0.3.5](https://launchpad.net/qpdfview/+milestone/0.3.5) 以降は SyncTeX に対応しています．<br> <!-- [[revision 588:http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/revision/588]] から SyncTeX がサポートされるようになりました．~ --> <!-- [[revision 599:http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/revision/599]] で SyncTeX branch がマージされました．~ -->
+
+## 設定 {#uc8afff9}
+
+### Auto-refresh {#na403c1a}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+Auto-refresh の項目をチェックすると PDF ファイルを自動的に更新してくれます．
