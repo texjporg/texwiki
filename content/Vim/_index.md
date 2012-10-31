@@ -228,10 +228,12 @@ function! ViewFile()
     call FwdEvince()
   elseif g:viewer == 'okular'
     call Okular()
-  elseif g:viewer == 'pdfviewer'
-    call PdfViewer()
   elseif g:viewer == 'zathura'
     call Zathura()
+  elseif g:viewer == 'qpdfview'
+    call Qpdfview()
+  elseif g:viewer == 'pdfviewer'
+    call PdfViewer()
   elseif g:viewer == 'adobereader'
     call AdobeReader()
   endif
@@ -272,10 +274,12 @@ function! SetViewer(viewer)
       let g:viewer = 'texworks'
     elseif a:viewer == 'okular'
       let g:viewer = 'okular'
-    elseif a:viewer == 'pdfviewer'
-      let g:viewer = 'pdfviewer'
     elseif a:viewer == 'zathura'
       let g:viewer = 'zathura'
+    elseif a:viewer == 'qpdfview'
+      let g:viewer = 'qpdfview'
+    elseif a:viewer == 'pdfviewer'
+      let g:viewer = 'pdfviewer'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
     else
@@ -655,6 +659,41 @@ function! Okular()
   return ''
 endfunction
 
+function! Zathura()
+  if &ft != 'tex'
+    echo "calling Zathura from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! Qpdfview()
+  if &ft != 'tex'
+    echo "calling Qpdfview from a non-tex file"
+    return ''
+  end
+
+  let masterDir = getcwd()
+  let currentTeXFile = expand("%:t")
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  let viewer = 'qpdfview'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' --unique "' . masterPDFFile . '\#src:' . currentTeXFile . ':' . line(".") . ':0' . '" &'
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
 function! PdfViewer()
   if &ft != 'tex'
     echo "calling PdfViewer from a non-tex file"
@@ -667,23 +706,6 @@ function! PdfViewer()
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'pdfviewer'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "file:' . masterPDFFile . '\#src:' . line(".") . ' ' . currentTeXFile . '" &'
-
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
-function! Zathura()
-  if &ft != 'tex'
-    echo "calling Zathura from a non-tex file"
-    return ''
-  end
-
-  let masterDir = getcwd()
-  let masterTeXFile = g:master
-  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
-  let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
 
   execute 'silent! !' execString
   redraw!
@@ -832,8 +854,9 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
-> <tr><td>:Viewer pdfviewer &lt;Enter&gt;</td><td>ビューアを PdfViewer に変更</td></tr>
 > <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
+> <tr><td>:Viewer qpdfview &lt;Enter&gt;</td><td>ビューアを qpdfview に変更</td></tr>
+> <tr><td>:Viewer pdfviewer &lt;Enter&gt;</td><td>ビューアを PdfViewer に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
