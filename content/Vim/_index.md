@@ -727,7 +727,7 @@ function! AdobeReader()
     elseif glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') != ''
       let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') . '"'
     else
-      let viewer = 'pdfopen --file'
+      let viewer = 'pdfopen --rxi --file'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
   elseif has('macunix')
