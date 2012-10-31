@@ -236,7 +236,7 @@ forward search は PDFビューアに
 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
-C:\texmakerwin32usb\texmaker.exe "%f" -line %l
+C:\Texmaker\texmaker.exe "%f" -line %l
 ```
 
 です．
@@ -510,7 +510,7 @@ dviout-forward-search.bat %.dvi @ #.tex
 inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
 ```
-C:\texmakerwin32usb\texmaker.exe^s "%s" -line %d
+C:\Texmaker\texmaker.exe^s "%s" -line %d
 ```
 
 です．
