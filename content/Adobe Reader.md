@@ -152,6 +152,7 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 - [Acrobat DDE Message 一覧](http://pdf-dde.nnn2.com/?p=43)
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
 - [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
+- [DDE通信を使用してPDFファイルを印刷する](http://www.knowledge-base.jp/2010/02/06/pdf-7/)
 - [Adobe Reader XI](http://days-of-mac.blog.ocn.ne.jp/blog/2012/10/adobe-reader-xi.html)
 - [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
 - [Windows 2000 に Adobe Reader XI を入れてみたよ](http://blog.livedoor.jp/blackwingcat/archives/1719451.html)
