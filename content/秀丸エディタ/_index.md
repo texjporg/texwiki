@@ -12,9 +12,9 @@ pukiwiki: "秀丸エディタ"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## 秀丸エディタ とは {#w73ea51b}
+## 秀丸エディタとは {#w73ea51b}
 
-秀丸エディタ は国産のテキストエディタです。 (シェアウェア)
+秀丸エディタは国産のテキストエディタです。 (シェアウェア)
 
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
@@ -32,10 +32,9 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ## 秀丸エディタフリー制度 {#faebc82e}
 
-秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります。
-
+秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります。<br>
 対象は，学生([アカデミックフリー個人](http://hide.maruo.co.jp/support/hmfree1.html)/[アカデミックフリー団体](http://hide.maruo.co.jp/support/hmfree2.html))・[フリーソフトウェア作者](http://hide.maruo.co.jp/support/hmfree3.html)・[ウィンドウズ関係の書籍や雑誌の著者](http://hide.maruo.co.jp/support/hmfree4.html)
-です。
+です。<br>
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
