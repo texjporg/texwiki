@@ -19,7 +19,7 @@ WZ EDITOR は国産のテキストエディタです。 (製品)
 
 ### 動作環境 {#c5feb552}
 
-Windows 7, Vista, XP
+Windows 8, 7, Vista, XP
 
 ## [WZ EDITOR 7](http://www.wzsoft.jp/wz7/) {#xeb01ab7}
 
@@ -29,11 +29,9 @@ Windows 7, Vista, XP
 
 <img src="http://www.wzsoft.jp/wz7/7wz019.png" alt="WZ EDITOR 7 の画面">
 
-WZ7 は，TeX ファイルの編集に標準機能で対応しています。
-
-「TeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。
-
-WZ7 の TeX に関する機能は以下のページを参照してください。
+WZ7 は，TeX ファイルの編集に標準機能で対応しています。<br>
+「TeX専用メニュー」の仕様は，「[ｐ白鳥](http://staff.aist.go.jp/w.mizutani/pHackTeX.htm)」を参考にしています。<br>
+WZ7 の TeX に関する機能は以下のページを参照してください。<br>
 
 - [WZsoft > WZ エディタ 7 > 製品概要](http://www.wzsoft.jp/wz7/intro.htm)
     - [WZsoft > WZ エディタ 7 > 製品概要 # TeX](http://www.wzsoft.jp/wz7/intro.htm#tex)
