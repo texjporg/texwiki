@@ -758,7 +758,7 @@ NppExec を使用する場合は以下のように設定します．<br>
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE) | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (echo "C:\Program Files\SumatraPDF\SumatraPDF" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE)) else (echo "C:\Program Files (x86)\SumatraPDF\SumatraPDF" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE)) | cmd<br>
 
 <br>
 
