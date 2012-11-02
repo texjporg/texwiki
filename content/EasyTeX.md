@@ -118,28 +118,7 @@ exe ファイル版 (インストーラー機能付き) のアンインストー
 ***
 
 これから EasyTeX の初期設定を手動で行います．<br>
-\[　　TeX環境を自動設定する　　\] をクリックすると，EasyTeX Version 3.311 よりも前のバージョンでは応答なしの状態になることがあります．<br>
-EasyTeX Version 3.311 でも手動で設定するよりも時間がかかってしまうかもしれないので，使用しないでください．<br>
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　TeX環境設定 (応答なし)　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
-
-> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span><br>
->
-> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span><br>
->
-> 　<br>
-> 　<br>
-> 　<br>
-
-<span style="color:Black;background-color:#EEEEEE;">\[　　TeX環境を自動設定する　　\]</span><br>
-
-　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
-
-***
+\[　　TeX環境を自動設定する　　\] をクリックすると，手動で設定するよりも時間がかかってしまうかもしれないので，使用しないでください．<br>
 
 ### TeXExe {#o3f9cb28}
 
