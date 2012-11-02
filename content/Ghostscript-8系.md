@@ -130,7 +130,7 @@ Ghostscript 9.06 を C:\gs\gs9.06 にインストールした場合
 
 ***
 
-<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　Ghostscript のユーザー環境変数(U)<br>
 
@@ -162,7 +162,7 @@ Ghostscript 9.06 を C:\Program Files\gs\gs9.06 にインストールした場�
 
 ***
 
-<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　Ghostscript のユーザー環境変数(U)<br>
 
@@ -194,7 +194,7 @@ Ghostscript 9.06 を C:\Program Files (x86)\gs\gs9.06 にインストールし�
 
 ***
 
-<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[　<span style="color:White;">✕</span>　\]<ins></span></ins></span><br>
+<span style="color:Black;background-color:#8CBCFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<strong>環境変数</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　Ghostscript のユーザー環境変数(U)<br>
 
