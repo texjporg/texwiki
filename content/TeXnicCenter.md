@@ -30,18 +30,18 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 
 Windows 7, Vista, XP
 
-### ChangeLog {#y2c9ad23}
-
-- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
-    - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
-
 ### リリース情報 {#da101e5c}
 
-2012-01-31 TeXnicCenter 2.0 Alpha 4<br>
+2012-11-03 [TeXnicCenter 2.0 Beta 1](http://sourceforge.net/projects/texniccenter/files/TeXnicCenter/2%20Beta%201/)<br>
 
 TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
 TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
 バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．<br>
+
+### ChangeLog {#y2c9ad23}
+
+- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
+    - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
 
 ### スクリーンショット {#defb0bff}
 
@@ -51,8 +51,9 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 - TeX のコマンドを色分けできます．
 - TeX のコマンドを補完してくれます．(Ctrl + Space)
-- 折りたたみが可能です．→ TeXnicCenter Alpha 4 では折りたたみ機能がうまく動作しないようです．
+- 折りたたみが可能です．→ TeXnicCenter 2.0 Beta 1, Alpha 4 では折りたたみ機能がうまく動作しないようです．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
+    - [TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)
 
 ### ドキュメント {#s783d445}
 
@@ -60,15 +61,14 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 ## 不具合 {#p40a9a4a}
 
-### TeXnicCenter Alpha 4 で折りたたみ機能がうまく動作しない {#w34c78b7}
+### TeXnicCenter 2.0 Beta 1, 2.0 Alpha 4 で折りたたみ機能がうまく動作しない {#w34c78b7}
 
-TeXnicCenter Alpha 4 では折りたたみ機能がうまく動作しないようです．<br>
-TeXnicCenter Alpha 3 では折りたたみ機能が動作していました．<br>
+TeXnicCenter 2.0 Beta 1, 2.0 Alpha 4 では折りたたみ機能がうまく動作しないようです．<br>
+TeXnicCenter 2.0 Alpha 3 では折りたたみ機能が動作していました．<br>
 
 ## ダウンロード {#rf294e94}
 
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
-    - [TeXnicCenter 2.0 Alpha 4](http://sourceforge.net/projects/texniccenter/files/TeXnicCenter%20Alpha/2Alpha4/)
 
 ## Encoding {#u85685c5}
 
@@ -76,7 +76,8 @@ Encoding は
 
 - ANSI
     - 日本語版 Windows では Shift_JIS として保存されます．
-    - TeXnicCenter 2.0 Alpha 3 では Shift_JIS のファイルは ANSI で開かれていて文字が正しく表示されていましたが，TeXnicCenter 2.0 Alpha 4 では Shift_JIS のファイルは，ファイルを開くときに ANSI ではなく UTF-8 で開かれてしまい，文字が正しく表示されない場合があります．日本語を使用する場合は \[File\]-\[Save As...\] の Encoding で UTF-8 を指定して保存することをおすすめします．→ [ASCII documents default to UTF-8 character encoding instead of ANSI](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594)
+        <!-- - -TeXnicCenter 2.0 Alpha 3 では Shift_JIS のファイルは ANSI で開かれていて文字が正しく表示されていましたが，TeXnicCenter 2.0 Alpha 4 では Shift_JIS のファイルは，ファイルを開くときに ANSI ではなく UTF-8 で開かれてしまい，文字が正しく表示されない場合があります．日本語を使用する場合は [File]-[Save As...] の Encoding で UTF-8 を指定して保存することをおすすめします．→ [[ASCII documents default to UTF-8 character encoding instead of ANSI:http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594]] -->
+
 - UTF-8
 - UTF-8 with BOM
 - UTF-16
@@ -248,6 +249,7 @@ Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encodi
 <br>
 
 　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
 
 <br>
 
@@ -274,8 +276,6 @@ Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encodi
 
 ***
 
-<!-- [[TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．:http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc]]&br; -->
-
 <span style="color:Black;background-color:#2E3436;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"><ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]</ins></span> </span><br>
 
 <span style="color:Black;background-color:#2E3436;"><ins>　<strong>←</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
@@ -295,6 +295,7 @@ Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encodi
 <br>
 
 　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
 
 <br>
 
@@ -370,7 +371,7 @@ Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encodi
 Profiles
 
 LaTeX => DVI<br>
-■ e-pTeX, pBibTeX の場合
+■ pLaTeX, pBibTeX の場合
 
 ***
 
@@ -405,7 +406,7 @@ Command line arguments to pass to<br>
 
 ***
 
-■ e-upTeX, upBibTeX の場合
+■ upLaTeX, upBibTeX の場合
 
 ***
 
@@ -443,7 +444,7 @@ Command line arguments to pass to<br>
 Profiles
 
 LaTeX => PS<br>
-■ e-pTeX, pBibTeX の場合
+■ pLaTeX, pBibTeX の場合
 
 ***
 
@@ -478,7 +479,7 @@ Command line arguments to pass to<br>
 
 ***
 
-■ e-upTeX, upBibTeX の場合
+■ upLaTeX, upBibTeX の場合
 
 ***
 
@@ -517,7 +518,7 @@ Profiles
 
 LaTeX => DVI => PDF<br>
 LaTeX => PS => PDF<br>
-■ e-pTeX, pBibTeX の場合
+■ pLaTeX, pBibTeX の場合
 
 ***
 
@@ -552,7 +553,7 @@ Command line arguments to pass to<br>
 
 ***
 
-■ e-upTeX, upBibTeX の場合
+■ upLaTeX, upBibTeX の場合
 
 ***
 
@@ -967,6 +968,8 @@ Executable path<br>
 
 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 
+<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
+
 <br>
 
 View project's output<br>
@@ -1106,7 +1109,9 @@ Executable path<br>
 
 <br>
 
-<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+
+<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
 
 <br>
 
@@ -1145,7 +1150,9 @@ Executable path<br>
 
 <br>
 
-<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+
+<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
 
 <br>
 
@@ -1231,6 +1238,8 @@ Executable path<br>
 
 <ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
 
+<ins>C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
+
 <br>
 
 View project's output<br>
@@ -1283,6 +1292,8 @@ Executable path<br>
 
 <ins>C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
 
+<ins>C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe</ins><br>
+
 <br>
 
 View project's output<br>
@@ -1329,6 +1340,16 @@ Server: <ins>acroviewR10</ins>　　　　　　Topic: <ins>control</ins><br>
 
 Ctrl + Space で補完ができます．
 
+doc とタイプして Ctrl + Space をタイプすると
+
+```
+\begin{document}
+
+\end{document}
+```
+
+を補完してくれます．
+
 ite とタイプして Ctrl + Space をタイプすると
 
 ```
@@ -1373,7 +1394,7 @@ forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc242
 inverse search は Executable path に追加する代わりに SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の設定を追加しても OK です．<br>
 
 ```
-"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
+"C:\Program Files\TeXnicCenter\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
 ```
 
 ## dviout との連携 (非推奨) {#r45cf8d1}
@@ -1426,7 +1447,7 @@ Close document before running (La)TeX<br>
 inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に以下の設定を追加すれば OK です．
 
 ```
-C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
+C:\Program Files\TeXnicCenter\TeXnicCenter.exe^s /ddecmd "[goto('%s', '%d')]"
 ```
 
 ## Yap との連携 (非推奨) {#v01c3904}
@@ -1446,6 +1467,8 @@ Executable path<br>
 <br>
 
 <ins>C:\Program Files\MiKTeX 2.9\miktex\bin\yap.exe</ins><br>
+
+<ins>C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\yap.exe</ins><br>
 
 <br>
 
@@ -1484,7 +1507,7 @@ Name:
 : TeXnicCenter
 
 Specify the program you want to use to edit TeX source files:
-: C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe
+: C:\Program Files\TeXnicCenter\TeXnicCenter.exe
 
 Specify the program arguments:
 : /ddecmd "\[goto('%f', '%l')\]"
@@ -1492,7 +1515,7 @@ Specify the program arguments:
 Command line: に以下のように設定されます．
 
 ```
-"C:\Program Files\TeXnicCenter Alpha\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
+"C:\Program Files\TeXnicCenter\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
 ```
 
 ## 関連リンク {#r73017f2}
