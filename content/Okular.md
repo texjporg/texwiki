@@ -9,16 +9,23 @@ pukiwiki: "Okular"
 
 ## [Okular](http://okular.kde.org/) {#x3070edc}
 
-- [Okular](http://okular.kde.org/)
-    - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Okular とは {#jde0a0e5}
 
 Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
+- [Okular](http://okular.kde.org/)
+
 ### 動作環境 {#ca9192aa}
 
 KDE
+
+### ChangeLog {#h7a9328d}
+
+- [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
 
 ## インストール {#xecad964}
 
