@@ -45,13 +45,13 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 ### スクリーンショット {#defb0bff}
 
-[![TeXnicCenter 2.0 Alpha バージョンの画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
+[![TeXnicCenter 2.0 の画面](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt-300x226.png)](http://latex.quark007.de/wp-content/uploads/2010/02/unbenannt.png)
 
 ### 特徴 {#c8ac578a}
 
 - TeX のコマンドを色分けできます．
 - TeX のコマンドを補完してくれます．(Ctrl + Space)
-- 折りたたみが可能です．→ TeXnicCenter 2.0 Beta 1, Alpha 4 では折りたたみ機能がうまく動作しないようです．
+- 折りたたみが可能です．→ TeXnicCenter 2.0 Beta 1, 2.0 Alpha 4 では折りたたみ機能がうまく動作しないようです．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
     - [TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)
 
@@ -68,6 +68,7 @@ TeXnicCenter 2.0 Alpha 3 では折りたたみ機能が動作していました�
 
 ## ダウンロード {#rf294e94}
 
+- [Downloads](http://www.texniccenter.org/resources/downloads)
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
 
 ## Encoding {#u85685c5}
