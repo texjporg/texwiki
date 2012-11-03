@@ -108,6 +108,7 @@ W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自
 
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
+コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードセットを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)
 
 ***
 
