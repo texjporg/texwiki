@@ -15,7 +15,6 @@ pukiwiki: "LyX/設定/OS X"
 
 ### 順検索 (forward search) {#d0572089}
 
-DVIコマンドは pxdvi を使用します．<br>
 PDFコマンドは Skim の displayline を使用します．<br>
 
 ***
@@ -32,8 +31,39 @@ PDFコマンドは Skim の displayline を使用します．<br>
 日付書式(D): 　<ins>&#x25;x</ins><br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
-　DVIコマンド: <ins>/usr/texbin/pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　DVIコマンド: <br>
 　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
+
+***
+
+## Skim との連携 {#m16eb5ea}
+
+### forward search {#hc4659c6}
+
+順検索 (forward search) を参照してください．
+
+## pxdvi との連携 (非推奨) {#qa1c9c53}
+
+### forward search {#fac5a68a}
+
+DVIコマンドは pxdvi を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <ins>/usr/texbin/pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　PDFコマンド: <br>
 
 ***
 
