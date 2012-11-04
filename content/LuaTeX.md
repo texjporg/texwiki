@@ -35,11 +35,12 @@ LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luate
 
 LuaTeX-ja は
 
-- [TeX Live](</TeX Live/>) 2012, 2011
+- [TeX Live](</TeX Live/>) (TeX Live 2012 以降)
     - [TeX Live - TeX Wiki#LuaTeX-ja](</TeX Live/#d5b40bf5>)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/)
     - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
+- [MacTeX](/Mac/#f5466652) (MacTeX-2012 以降)
 
 で利用可能です．
 
@@ -72,17 +73,10 @@ ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
 TeX Live 2012 には luatexja が含まれています．<br>
-TeX Live 2011 で luatexja をインストールする場合は tlmgr でパッケージをアップデートします．<br>
 
-```
-$ sudo tlmgr update --self --all
-```
+#### [MacTeX](/Mac/#f5466652) {#p8fa09cd}
 
-```
-...
-[???/???, ??:??/??:??] auto-install: luatexja [????k]
-...
-```
+MacTeX-2012 には luatexja が含まれています．<br>
 
 ### 注意点 {#vbed1356}
 
