@@ -7,7 +7,7 @@ pukiwiki: "Sphinx"
 
 # Sphinx
 
-## Sphinx {#t006e75b}
+## [Sphinx](http://sphinx-doc.org/) {#t006e75b}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -15,7 +15,7 @@ pukiwiki: "Sphinx"
 
 Sphinx は美しいドキュメントを簡単に作成できるツールです．
 
-### [Sphinx home](http://sphinx.pocoo.org/) {#u72d0718}
+### [Sphinx home](http://sphinx-doc.org/) {#u72d0718}
 
 ### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
