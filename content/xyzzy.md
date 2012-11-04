@@ -1298,6 +1298,7 @@ Wine でも動くという報告がありますので，Linux ユーザも検討
 
 - [xyzzy あんてな](http://raido.sakura.ne.jp/southly/a/)
 - [AtoZ](http://www.tokyorus.ac.jp/computer/atoz.htm)
+- [xyzzy でスクラッチから何まで全部の新規バッファを utf8 にする](http://d.hatena.ne.jp/ampll/20100909/1284016499)
 
 ## 謝辞 {#xyathxds}
 
