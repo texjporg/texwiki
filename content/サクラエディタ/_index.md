@@ -40,8 +40,9 @@ pukiwiki: "サクラエディタ"
 - [SakuraEditorMsiInstaller](https://github.com/tohosaku/SakuraEditorMsiInstaller)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
 - [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
-    - [もか@小枝 (moca_skr) on Twitter](http://twitter.com/moca_skr)
-    - [もか@小枝(@moca_skr) - Twilog](http://twilog.org/moca_skr)
+    <!-- - -[[もか@小枝 (moca_skr) on Twitter:http://twitter.com/moca_skr]] -->
+    <!-- - -[[もか@小枝(@moca_skr) - Twilog:http://twilog.org/moca_skr]] -->
+
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/) → [更新停止](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode&tree=r1465)
     - [サイト更新履歴](http://www.geocities.jp/moca_skr/history.html)
     - [サクラの小枝研 - 特殊用本体](http://www.geocities.jp/moca_skr/bin_other.html)
@@ -60,8 +61,8 @@ Windows 7, Vista, XP, 2000 日本語版
 
 ### リリース情報 {#qe1b7074}
 
-2012/05/13 サクラエディタ Ver. 2.0.5.0 (UNICODE 版) パッケージ版，単体配布版<br>
-2012/01/21 サクラエディタ改造版 ver: 0.7 bese Unicode版2.0.4.0 r2012/ext26/ppfont v0.16 (等幅版, プロポーショナル版)<br>
+2012-11-02 サクラエディタ改造版 ver: 0.7 bese Unicode版2.0.5.0 r2457/ext27/ppfont v0.17 (等幅版, プロポーショナル版)<br>
+2012-05-13 サクラエディタ Ver. 2.0.5.0 (UNICODE 版) パッケージ版，単体配布版<br>
 
 ### ChangeLog {#l31b371d}
 
@@ -90,14 +91,14 @@ Windows 7, Vista, XP, 2000 日本語版
 
 - [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp/HLP000109.html)
 
-## 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
+## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
 - [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
     - [help2 / 2.0.5.0](http://sourceforge.net/projects/sakura-editor/files/help2/2.0.5.0/) サクラエディタ Ver 2.0.5.0 ヘルプファイル最終更新日 2012/05/13
     - [Rev 2428 で 外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました](http://sourceforge.net/tracker/index.php?func=detail&aid=3571858&group_id=12488&atid=1013762)
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
-- [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO)
-    - [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまうので旧バージョンを使用してください． → [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)<br>
+- [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
+    - [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまう場合は [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO) (旧バージョン) を使用してください． → [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)<br>
     - [Rev 2427 で C/Migemo1.3で落ちる問題の修正，UTF-8に対応（自動認識。UTF-8優先）がコミットされました](http://sourceforge.net/tracker/index.php?func=detail&aid=3450189&group_id=12488&atid=1013762)
 
 ***
@@ -111,7 +112,7 @@ Windows 7, Vista, XP, 2000 日本語版
 　　 候補決定キー　　☑Enter　　☐Tab　　☑→(R)<br>
 
 　　　外部ヘルプの設定(L)<br>
-
+　　　<ins>.\sakura.chm</ins><br>
 　　　外部HTMLヘルプの設定(P)<br>
 　　　<ins>.\sakura.chm</ins><br>
 　　　☑ビューアを複数起動しない(N)<br>
@@ -142,7 +143,7 @@ UTF-8, SJIS, EUC の中から作成する LaTeX 文書に合わせて選択し�
 <br>
 
 　　　　外部ヘルプの設定(L)<br>
-　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (2)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (2)... \]<br>
 
 <br>
 
@@ -166,7 +167,7 @@ UTF-8, SJIS, EUC の中から作成する LaTeX 文書に合わせて選択し�
 
 ### 正規表現ライブラリ {#j57d8050}
 
-bregonig.dll Ver.3.02 は x64 に対応しています．
+bregonig.dll Ver.3.03 は x64 に対応しています．
 
 - [bregonig.dll](http://homepage3.nifty.com/k-takata/mysoft/bregonig.html)
 - [Downloads · k-takata/bregonig · GitHub](https://github.com/k-takata/bregonig/downloads)
@@ -185,7 +186,7 @@ bregonig.dll を
 bregonig.dll が有効になると，検索／置換／Grep で
 
 ```
-bregonig.dll Ver.3.02 with Onigmo 5.13.2
+bregonig.dll Ver.3.03 with Onigmo 5.13.3
 ```
 
 のように表示されます．
@@ -205,7 +206,7 @@ bregonig.dll Ver.3.02 with Onigmo 5.13.2
 　　　検索／置換／Grep<br>
 　　　☑カーソル位置の文字列をデフォルトの検索文字列にする(C)<br>
 　　　正規表現ライブラリの指定(L)　　　　　<ins>.\bregonig.dll</ins><br>
-　　　bregonig.dll Ver.3.02 with Onigmo 5.13.2<br>
+　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
 
 <br>
 
@@ -230,7 +231,7 @@ bregonig.dll Ver.3.02 with Onigmo 5.13.2
 　　条件(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
 　　☐英大文字と小文字を区別する(C)<br>
-　　☑正規表現(E)　　 bregonig.dll Ver.3.02 with Onigmo 5.13.2　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
+　　☑正規表現(E)　　 bregonig.dll Ver.3.03 with Onigmo 5.13.3　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
 　　☑見つからないときにメッセージを表示(M)<br>
 　　☑検索ダイアログを自動的に閉じる(L)　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
 　　☐先頭（末尾）から再検索する(Z)　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　ヘルプ(H)　　 \]</span><br>
@@ -252,7 +253,7 @@ bregonig.dll Ver.3.02 with Onigmo 5.13.2
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 選択文字(0)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(U)　　　\]</span><br>
 　　☑正規表現(E)　　　　　　　　　　　　　　　　　　　　　 ◯ 選択終点(2)追加　　　　<span style="color:Black;background-color:#EEEEEE;">\[　すべて置換(A)　\]</span><br>
-　　　　bregonig.dll Ver.3.02 with Onigmo 5.13.2<br>
+　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
 　　☐「すべて置換」は置換の繰返し(I)　　　　　　　　　　範囲<br>
 　　☑見つからないときにメッセージを表示(M)　　　　　◯ 選択範囲(S)<br>
 　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　 <span style="color:#3333CC;">◎</span> ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
@@ -274,7 +275,7 @@ bregonig.dll Ver.3.02 with Onigmo 5.13.2
 　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 該当行(L)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　　　　　　　　　　◯ 該当部分(P)　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　検索(F)　　\]</span><br>
 　　☑正規表現(E)<br>
-　　　　bregonig.dll Ver.3.02 with Onigmo 5.13.2　　　　　　　　　　　　　　結果出力形式<br>
+　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3　　　　　　　　　　　　　　結果出力形式<br>
 　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　▼\]</span>　　　　　　　　　　<span style="color:#3333CC;">◎</span> ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
 　　☐フォルダの初期値をカレントフォルダにする(D)　　　　　　　　　　 ◯ ファイル毎（I）　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　ヘルプ(H)　　\]</span><br>
 
@@ -339,7 +340,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[　支援　\]</ins></span><strong>\[　正規表現キーワード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　☑正規表現キーワードを使用する(R)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　bregonig.dll Ver.3.02 with Onigmo 5.13.2<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
 　　　正規表現キーワード(K)<br>
 　　　　∣キーワード　　　　　　　　　　　　　　　　　　∣色指定　　　　　　　　　　　∣　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　先頭(T)　\]</span><br>
 　　　　∣<span style="color:White;background-color:#1188FF;">/\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k 　　　　　　正規表現キーワード1　　　</span>　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　上へ(U)　\]</span><br>
@@ -1442,7 +1443,7 @@ C:\sakura\sakura.exe^s -Y:%d "%s"
 <br>
 
 　　　　外部ヘルプの設定(L)<br>
-　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (2)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (2)... \]<br>
 
 <br>
 
