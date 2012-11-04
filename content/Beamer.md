@@ -21,7 +21,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 - Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
     - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
-    - [ダウンロード](https://bitbucket.org/rivanvx/beamer/downloads)
+        <!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
         <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
         <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
         <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
@@ -33,13 +33,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 [Issues](https://bitbucket.org/rivanvx/beamer/issues?status=new&status=open) を参照．
 
-#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
-
-- [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
-- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
-- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
-
-#### Beamer 公式サイトのファイルを使用するとエラーが発生する {#i1ba3f44}
+#### Beamer 公式サイトのファイルを使用するとエラーが発生する → CTAN からダウンロードする {#i1ba3f44}
 
 - [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
 - [#36 Cannot resolve codes around RCS --- we need another software?](https://bitbucket.org/rivanvx/beamer/issue/36/cannot-resolve-codes-around-rcs-we-need)
@@ -61,6 +55,12 @@ l.12 \ProvidesClassRCS
 ```
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
+
+#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
+
+- [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
+- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
+- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
 
 ### [TikZ and PGF](/TikZ/) {#o6f8726a}
 
