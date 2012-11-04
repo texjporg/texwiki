@@ -34,3 +34,7 @@ chrome://plugins
 #### Chrome PDF Viewer {#wfd819f9}
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
+
+## 関連リンク {#v9c56a2d}
+
+- [Linux Mint - Google Chrome をインストール！](http://www.mk-mode.com/wordpress/2012/11/04002054/)
