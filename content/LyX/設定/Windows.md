@@ -749,7 +749,6 @@ pukiwiki: "LyX/設定/Windows"
 
 ### 順検索 (forward search) {#ffa7876e}
 
-DVIコマンドは [dviout](/dviout/) を使用します．<br>
 PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 \[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[一般\]
@@ -787,7 +786,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 日付書式(D): 　<ins>&#x25;x</ins>[^2]<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^3]<br>
 順検索<br>
-　DVIコマンド: <ins>"C:\w32tex\dviout\dviout.exe" -1 $$o "# $$n '$$t'"</ins><br>
+　DVIコマンド: <br>
 　PDFコマンド: <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance $$o -forward-search $$t $$n</ins><br>
 
 ***
@@ -804,7 +803,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 日付書式(D): 　<ins>&#x25;x</ins><br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
-　DVIコマンド: <ins>"C:\w32tex\dviout\dviout.exe" -1 $$o "# $$n '$$t'"</ins><br>
+　DVIコマンド: <br>
 　PDFコマンド: <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance $$o -forward-search $$t $$n</ins><br>
 
 ***
@@ -823,7 +822,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 日付書式(D): 　<ins>&#x25;x</ins><br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
-　DVIコマンド: <ins>"C:\w32tex\dviout\dviout.exe" -1 $$o "# $$n '$$t'"</ins><br>
+　DVIコマンド: <br>
 　PDFコマンド: <ins>"C:\w32tex\NDde\Binary\fwdsumatrapdf.exe" $$o $$t $$n</ins><br>
 
 ***
@@ -837,7 +836,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ### forward search {#u9f206c7}
 
-[順検索 (forward search)](</LyX/設定/#ffa7876e>) を参照してください．
+[順検索 (forward search)](</LyX/設定/Windows/#ffa7876e>) を参照してください．
 
 ### inverse search {#vefda83b}
 
@@ -888,11 +887,26 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 
 [dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
 
-変換子に -src-specials を追加します．
+変換子に -src-specials を追加します．<br>
 
 ### forward search {#m689e606}
 
-[順検索 (forward search)](</LyX/設定/#ffa7876e>) を参照してください．
+DVIコマンドは [dviout](/dviout/) を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <ins>"C:\w32tex\dviout\dviout.exe" -1 $$o "# $$n '$$t'"</ins><br>
+　PDFコマンド: <br>
+
+***
 
 ### inverse search {#hfe86760}
 
