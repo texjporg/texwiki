@@ -15,7 +15,6 @@ pukiwiki: "LyX/設定/Linux"
 
 ### 順検索 (forward search) {#l3e420bc}
 
-DVIコマンドは pxdvi を使用します．<br>
 PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
 
 ***
@@ -32,8 +31,39 @@ PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用
 日付書式(D): 　<ins>&#x25;x</ins><br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
-　DVIコマンド: <ins>pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　DVIコマンド: <br>
 　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
+
+***
+
+## Evince との連携 {#yfea5c32}
+
+### forward search {#i9ef9b4c}
+
+[順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
+
+## pxdvi との連携 (非推奨) {#rca4729e}
+
+### forward search {#hed232c6}
+
+DVIコマンドは pxdvi を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <ins>pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
+　PDFコマンド: <br>
 
 ***
 
