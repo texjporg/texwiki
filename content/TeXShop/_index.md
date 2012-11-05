@@ -1172,6 +1172,10 @@ simpdftex を使用する方法だとエラーが発生してもそのまま dvi
 
 #### 詳細 {#ae4b4710}
 
+- [XeLaTeXでエラーが出る問題は、TeXShopのutf-Exportの設定項目をオンにしていたからいけなかったようだ。このチェックを外したら問題なくコンパイルされるようになった。](https://twitter.com/tolle_et_lege/status/265589597638119424)
+
+[XeLaTeX](/XeTeX/) を使用する場合は pTeX 拡張機能の utf パッケージ対応のチェックをはずします．
+
 ***
 
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>TeXShop 環境設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
@@ -1192,7 +1196,7 @@ simpdftex を使用する方法だとエラーが発生してもそのまま dvi
 
 　　　　　　　　　　　<strong>Distiller</strong>　　　　　　　　　　　　　　　　　　　<strong>pTeX 拡張機能</strong><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> Ghostscript<br>
-　　　　　　　　　　　　◯ Apple Distiller　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> utf パッケージ対応<br>
+　　　　　　　　　　　　◯ Apple Distiller　　　　　　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> utf パッケージ対応 ← [XeLaTeX](/XeTeX/) を使用する場合はチェックをはずす<br>
 
 <br>
 
