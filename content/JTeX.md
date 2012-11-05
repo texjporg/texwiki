@@ -33,6 +33,7 @@ JTeX に含まれています．<br>
 PictPrinter は OS X で動作する DVI プレビューアです．<br>
 JTeX に含まれています．<br>
 
+- [やっぱりDVIビューアが必要](http://forest.edu.u-toyama.ac.jp/blog/2012/11/dvi.html)
 - [なんとか問題クリアー](http://uenoblog.sblo.jp/article/53993528.html)
 - [Mac Book Pro (Lion) tex環境](http://d.hatena.ne.jp/Askeladd/20111122#1321952954)
 - [PictPrinter+YaTeXでDVIの表示](http://s-manahu.ddo.jp/blog/?p=372)
