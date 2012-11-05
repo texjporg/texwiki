@@ -17,6 +17,8 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [ctex-kit](http://code.google.com/p/ctex-kit/)
     - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
     - [Changes](http://code.google.com/p/ctex-kit/source/list)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
