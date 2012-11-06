@@ -14,7 +14,7 @@ pukiwiki: "インストール(Windows)"
 ## TeX ディストリビューションを選択してインストール {#vb660ba1}
 
 Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
-初心者の方は W32TeX または TeX Live がおすすめです．<br>
+通常は W32TeX または TeX Live がおすすめです．<br>
 
 - 最新のバイナリを使いたい場合は W32TeX
 - 最新のパッケージを使いたい場合は TeX Live
@@ -362,7 +362,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 : [Emacs](/Emacs/) + [TeX Mode](/Emacs/#h04d4173)<br>[Emacs](/Emacs/) + [AUCTeX](/AUCTeX/)<br>[Emacs](/Emacs/) + [YaTeX](/YaTeX/)<br>[Emacs](/Emacs/) + Org<br>をご覧ください．
 
 [Vim](/Vim/) + プラグイン
-: [Vim](/Vim/) + [tex.vim](/Vim/#y0b061e7)<br>[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br>[Vim](/Vim/) + neocomplcache<br> をご覧ください．
+: [Vim](/Vim/) + [tex.vim](/Vim/#y0b061e7) + neocomplcache &amp; neosnippet<br>[Vim](/Vim/) + [Vim-LaTeX](/Vim-LaTeX/)<br>[Vim](/Vim/) + Automatic LaTeX Plugin for Vim (ATP)<br> をご覧ください．
 
 [xyzzy](/xyzzy/) + tex-mode
 : [xyzzy](/xyzzy/) + KyoTeX<br>[xyzzy](/xyzzy/) + [KaTeX](/KaTeX/)<br>をご覧ください．
