@@ -148,7 +148,8 @@ filetype plugin on
 let g:tex_flavor='latex'
 ```
 
-を記述しておく必要があります．
+を記述しておく必要があります．<br>
+補完機能が必要な方は neocomplcache &amp; neosnippet を使用してください．<br>
 
 ***
 
@@ -867,7 +868,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
-- neocomplcache
+- neocomplcache &amp; neosnippet
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
     - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
