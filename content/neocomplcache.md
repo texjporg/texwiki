@@ -29,6 +29,11 @@ neosnippet は Vim のプラグインです．
 - [neosnippet](https://github.com/Shougo/neosnippet)
 - [あるVimmerのブログ: neosnippet](http://vinarian.blogspot.com/search/label/neosnippet)
 
+### お知らせ {#j6e61e42}
+
+- [neocomplcache-snippets-complete は neosnippet になりました](http://vinarian.blogspot.jp/2012/10/neocomplcache-snippets-complete.html)
+- [neocomplcache-snippets-complete の名前が neosnippet に変更されました](http://d.hatena.ne.jp/osyo-manga/20121021/1350749023)
+
 ## 不具合 {#k8b031e2}
 
 ### neocomplcache で単語の一部を補完すると refresh = always のときに register-. の値がおかしくなる → Vim [7.3.561](http://code.google.com/p/vim/source/detail?r=a1de7928a7aba45240c85a2bc8d70adadc49e4dc) で修正されました {#d223a02b}
