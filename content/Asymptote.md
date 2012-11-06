@@ -7,7 +7,7 @@ pukiwiki: "Asymptote"
 
 # Asymptote
 
-## Asymptote {#dd856e20}
+## [Asymptote](http://asymptote.sourceforge.net/) {#dd856e20}
 
 ### はじめに {#w5cb2317}
 
@@ -16,6 +16,9 @@ pukiwiki: "Asymptote"
 
 - [Asymptote](http://asymptote.sourceforge.net/)
 - [Asymptote project on SourceForge](http://sourceforge.net/projects/asymptote/)
+
+<!-- *** ChangeLog [#k13ddf14] -->
+<!-- -[[log:http://asymptote.svn.sourceforge.net/viewvc/asymptote/trunk/asymptote/?view=log]] -->
 
 ### 発音 {#te374add}
 
@@ -168,6 +171,8 @@ yaxis("$y$",LeftRight,RightTicks);
 
 ### 関連リンク {#xbb02c40}
 
+- [Asymptote 問題集](http://d.hatena.ne.jp/denpoya/)
+- [Asymptote - laclefwiki](http://saekiyoshiyasu.org/wiki/Asymptote)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
 - [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
