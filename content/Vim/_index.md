@@ -88,11 +88,13 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 #### iOS {#o6e8ea48}
 
 - [Applidium &mdash; Vim](http://applidium.com/en/applications/vim/)
-    - [App Store - Vim](http://itunes.apple.com/jp/app/vim/id492668168?mt=8)
+    - [Vim - iTunes App Store](https://itunes.apple.com/jp/app/vim/id492668168?mt=8)
 
 #### Android {#o2329571}
 
-- [Vim for Android](http://ux.getuploader.com/vim/)
+- [VimTouch](https://github.com/momodalo/vimtouch)
+    - [Vim Touch - Google Play](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch&hl=ja)
+        <!-- -[[Vim for Android:http://ux.getuploader.com/vim/]] -->
 
 ### ヘルプ {#b043417b}
 
