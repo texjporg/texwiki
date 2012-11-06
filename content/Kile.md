@@ -15,7 +15,8 @@ pukiwiki: "Kile"
 
 ## Kile とは {#v4a214a0}
 
-Kile は TeX の統合環境です．
+Kile は TeX の統合環境です．<br>
+エディタ部分は [Kate](http://kate-editor.org/) を使用しています．<br>
 
 - [Kile](http://kile.sourceforge.net/)
 - [SourceForge.net: kile](http://sourceforge.net/apps/mediawiki/kile/)
