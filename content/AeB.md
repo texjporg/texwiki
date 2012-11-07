@@ -10,7 +10,6 @@ pukiwiki: "AeB"
 ## [The AcroTeX eDucation Bundle (AeB)](http://www.math.uakron.edu/~dpstory/webeq.html) {#laec97db}
 
 - [The AcroTeX eDucation Bundle](http://www.math.uakron.edu/~dpstory/webeq.html)
-    - [History](http://www.math.uakron.edu/~dpstory/webeq.html#history)
 - [Aeb_Pro](http://www.math.uakron.edu/~dpstory/aeb_pro.html)
 - [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
     - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
