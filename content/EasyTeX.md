@@ -26,19 +26,11 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### 動作環境 {#he80243b}
 
-> <table>
-> <tbody>
-> <tr><td style="color:#000;background-color:#ADF"><strong>Version 3.30 以降</strong></td><td>Windows 7, Vista, XP</td></tr>
-> <tr><td style="color:#000;background-color:#ADF"><strong>Version 3.242</strong></td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
-> </tbody>
-> </table>
->
+Windows 7, Vista, XP
 
 ### リリース情報 {#nc0d64ca}
 
 2012-10-29 EasyTeX Version 3.312<br>
-2012-07-05 EasyTeX Version 3.306<br>
-2012-02-06 EasyTeX Version 3.242<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
 
