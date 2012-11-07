@@ -40,7 +40,7 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 
 ### fwdevince {#ie18c015}
 
-fwdevince は Evince で forward search を行うためのツールです．<br>
+fwdevince は Linux の Evince で forward search を行うためのツールです．<br>
 TeX Live 2012, Evince 3.4.0, Python 2.7.3 で動作確認しています．<br>
 
 ***
