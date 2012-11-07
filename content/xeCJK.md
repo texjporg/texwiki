@@ -33,19 +33,10 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### 不具合 {#t2600dd9}
 
-#### [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) でエラーが発生する → xeCJK, l3kernel, l3packages をアップデートする {#f0ab434a}
+#### [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) でエラーが発生する → xeCJK をアップデートする {#f0ab434a}
 
 [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
-
-#### [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用するとエラーが発生する → xeCJK, l3kernel, l3packages をアップデートする {#bf394f82}
-
-- [Ubuntu 12.10 64bit texliveに入っているxeCJKのバージョン？](http://blog.livedoor.jp/ti5942/archives/7561243.html)
-- [Ubuntu 12.10: xeCJK/ZXjatypeを導入したが。。。](http://blog.livedoor.jp/ti5942/archives/7556359.html)
-- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](http://twitter.com/imunolion/status/260648169849896960)
-
-[xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343)  で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+[xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) ではエラーは発生しませんでした．<br>
 
 ### 使い方 {#k3d278aa}
 
@@ -58,7 +49,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 \setCJKmonofont{MS Gothic}
 ```
 
-#### IPAMincho, IPAGhotic の場合 {#uab0d085}
+#### IPAMincho, IPAGothic の場合 {#uab0d085}
 
 ```
 \usepackage{xeCJK}
@@ -89,10 +80,20 @@ ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降が必�
 2012-09-09 ZXjatype 0.6<br>
 
 ZXjatype 0.6 は xeCJK 3.0.10 でも xeCJK 2.4.6 でもどちらでも動作します．<br>
-[xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350), [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) を使用していて XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合は ZXjatype 0.6 は使用できません．<br>
-[xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) ではエラーは発生しませんでした．<br>
-xeCJK 3.0.6 r350, xeCJK 3.0.6 r343 を使用している場合は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+[xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) を使用していて XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合は ZXjatype 0.6 は使用できません．<br>
+xeCJK 3.0.6 r343 を使用している場合は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xeCJK 3.x 版ではエラーが発生します．<br>
+
+### 不具合 {#u54213d7}
+
+#### [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用するとエラーが発生する → xeCJK, l3kernel, l3packages をアップデートする {#bf394f82}
+
+- [Ubuntu 12.10 64bit texliveに入っているxeCJKのバージョン？](http://blog.livedoor.jp/ti5942/archives/7561243.html)
+- [Ubuntu 12.10: xeCJK/ZXjatypeを導入したが。。。](http://blog.livedoor.jp/ti5942/archives/7556359.html)
+- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](http://twitter.com/imunolion/status/260648169849896960)
+
+[xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343)  で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
+気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 
 ### 使い方 {#v46b0c77}
 
@@ -105,7 +106,7 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 \setjamonofont{MS Gothic}
 ```
 
-#### IPAMincho, IPAGhotic の場合 {#j2934d74}
+#### IPAMincho, IPAGothic の場合 {#j2934d74}
 
 ```
 \usepackage{zxjatype}
