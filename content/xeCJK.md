@@ -23,7 +23,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
 - [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
-    - [TeX Wiki xeCJKの中のxeCJK 3.0.6 r350と3.0.7 r351のリンク先間違ってませんか？](http://blog.livedoor.jp/ti5942/archives/7561279.html)
+    - [TeX Wiki xeCJKの中のxeCJK 3.0.6 r350と3.0.7 r351のリンク先間違ってませんか？](http://blog.livedoor.jp/ti5942/archives/7561279.html) → [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（１）](http://blog.livedoor.jp/ti5942/archives/7562068.html)
         - チェックしてみましたがとくに間違っているようには思われません．xeCJK.dtx をクリックして File info の View raw file から xeCJK.dtx をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
 
 ### リリース情報 {#if427aa7}
@@ -33,10 +33,18 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### 不具合 {#t2600dd9}
 
+#### [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) でエラーが発生する → l3kernel, l3packages をアップデートする {#ve3267d4}
+
+- [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（４）テスト](http://blog.livedoor.jp/ti5942/archives/7562221.html)
+
+l3kernel, l3packages が古いバージョンで [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
+気になる方は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+
 #### [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) でエラーが発生する → xeCJK をアップデートする {#f0ab434a}
 
-[xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-[xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) ではエラーは発生しませんでした．<br>
+l3kernel, l3packages が新しいバージョンで [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
+気になる方は xeCJK をアップデートしてください．<br>
+l3kernel, l3packages が新しいバージョンで [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) を使用した場合はエラーは発生しませんでした．<br>
 
 ### 使い方 {#k3d278aa}
 
@@ -62,7 +70,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
 ZXjatype は xeCJK が必要です．<br>
-ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降が必要です．<br>
+ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降, 新しいバージョンの l3kernel, l3packages が必要です．<br>
 
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html)
@@ -88,11 +96,12 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 
 #### [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用するとエラーが発生する → xeCJK, l3kernel, l3packages をアップデートする {#bf394f82}
 
+- [Ubuntu 12.10 の texlive で xeCJK/ZXjatype を使うにはどうすればよいか？](http://blog.livedoor.jp/ti5942/archives/7562299.html)
 - [Ubuntu 12.10 64bit texliveに入っているxeCJKのバージョン？](http://blog.livedoor.jp/ti5942/archives/7561243.html)
 - [Ubuntu 12.10: xeCJK/ZXjatypeを導入したが。。。](http://blog.livedoor.jp/ti5942/archives/7556359.html)
 - [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](http://twitter.com/imunolion/status/260648169849896960)
 
-[xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343)  で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
+l3kernel, l3packages が古いバージョンで [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
 気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 
 ### 使い方 {#v46b0c77}
