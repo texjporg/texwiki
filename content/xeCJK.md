@@ -7,6 +7,8 @@ pukiwiki: "xeCJK"
 
 # xeCJK
 
+## xeCJK/ZXjatype {#x8dfc603}
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
@@ -19,6 +21,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
     - [Changes](http://code.google.com/p/ctex-kit/source/list)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
+- [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
@@ -115,6 +118,22 @@ l3kernel, l3packages が古いバージョンで [xeCJK 3.0.6 r343](http://code.
 \setjamonofont{MS Gothic}
 ```
 
+zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
+
+```
+\IfFileExists{zxjatype.sty}{
+  \usepackage{zxjatype}
+  \setjamainfont{MS Mincho}
+  \setjasansfont{MS Gothic}
+  \setjamonofont{MS Gothic}
+}{
+  \usepackage{xeCJK}
+  \setCJKmainfont{MS Mincho}
+  \setCJKsansfont{MS Gothic}
+  \setCJKmonofont{MS Gothic}
+}
+```
+
 #### IPAMincho, IPAGothic の場合 {#j2934d74}
 
 ```
@@ -124,11 +143,31 @@ l3kernel, l3packages が古いバージョンで [xeCJK 3.0.6 r343](http://code.
 \setjamonofont{IPAGothic}
 ```
 
+zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
+
+```
+\IfFileExists{zxjatype.sty}{
+  \usepackage{zxjatype}
+  \setjamainfont{IPAMincho}
+  \setjasansfont{IPAGothic}
+  \setjamonofont{IPAGothic}
+}{
+  \usepackage{xeCJK}
+  \setCJKmainfont{IPAMincho}
+  \setCJKsansfont{IPAGothic}
+  \setCJKmonofont{IPAGothic}
+}
+```
+
 ## xeCJK 以外のパッケージ {#k90787cf}
 
 - [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [zhmCJK Package](http://www.ctan.org/pkg/zhmcjk)
 - [Writing Japanese with XeTeX](http://kuniyoshi.fastmail.fm/xetex/)
 - [Including Japanese Text](http://www.lewis.soc.hit-u.ac.jp/latex/including-japanese-text)
+
+## 関連リンク {#q4a9591d}
+
+- [How to programmatically detect if a LaTeX package is installed?](http://tex.stackexchange.com/questions/31852/how-to-programmatically-detect-if-a-latex-package-is-installed)
 
 [^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/note.html)を参照
