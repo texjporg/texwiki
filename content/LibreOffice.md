@@ -58,7 +58,6 @@ NeoOffice は OS X 専用のフリーのオフィススイートです．
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
 - [Writer2LaTeX](http://writer2latex.sourceforge.net/)
-- [OOoLatex](http://ooolatex.sourceforge.net/)
 
 ## LibreOffice/Apache OpenOffice Calc {#te4274fb}
 
@@ -72,7 +71,6 @@ NeoOffice は OS X 専用のフリーのオフィススイートです．
     - [LibreOfficeにLatexの数式を埋め込む](http://shunboo.blogspot.jp/2012/10/libreofficelatex.html)
     - [Ubuntu11.10 LibreOfficeでTeX文法で数式を書く](http://d.hatena.ne.jp/cmphys/20120126/1327584371)
 - [ZaneTeX](http://www.empitsu.com/wp/?page_id=28)
-- [OOoLatex](http://ooolatex.sourceforge.net/)
 
 ## LibreOffice/Apache OpenOffice Draw {#t359ffe0}
 
@@ -89,5 +87,4 @@ NeoOffice は OS X 専用のフリーのオフィススイートです．
 - \[[会津若松市\]リブレオフィス導入までの経過](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_info_koutei.htm)
 - [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・LibreOffice/OpenOffice.org のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
-- [memo: Windows で OOoLatex を使う / Ubuntu で OOoLatex を使う](http://www.ms.osakafu-u.ac.jp/~horita/?c=memo2)
 - [「LibreOffice」利用マニュアルを公開しました](http://www.ja-fukuoka.or.jp/blog/archives/2011/12/libreoffice_manual_1112.php)
