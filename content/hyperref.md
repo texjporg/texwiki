@@ -202,7 +202,7 @@ unicode=true
 \usepackage[pdftex,pdfencoding=auto]{hyperref}
 ```
 
-xelatex の場合は、指定してもしないでも文字化けしないしおりになります。
+xelatex の場合は、指定しても指定しなくても文字化けしないしおりになります。
 
 ```
 \usepackage[xetex]{hyperref}
