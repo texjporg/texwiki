@@ -12,7 +12,7 @@ pukiwiki: "xeCJK"
 ## [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
-[W32TeX](/W32TeX/) の xetex-w32.tar.xz と [TeX Live](</TeX Live/>) に含まれています．<br>
+[W32TeX](/W32TeX/) の xetex-w32.tar.xz, [TeX Live](</TeX Live/>), [MiKTeX](/MiKTeX/), [MacTeX](/Mac/#f5466652) に含まれています．<br>
 
 - [ctex-kit](http://code.google.com/p/ctex-kit/)
     - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
