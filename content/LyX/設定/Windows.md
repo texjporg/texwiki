@@ -828,7 +828,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 ***
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
-\[移動(N)\]-\[順検索(F)\] または 右クリック → \[順検索(F)\] で 順検索 (forward search) ができます．<br>
+\[移動(N)\]-\[Forward search\] または 右クリック → \[Forward search\] で 順検索 (forward search) ができます．<br>
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
 
