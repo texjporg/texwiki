@@ -941,7 +941,7 @@ endlocal
 
 ***
 
-<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0.4\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
+<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
 
 dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
