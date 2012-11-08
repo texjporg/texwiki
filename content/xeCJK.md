@@ -168,6 +168,7 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 
 ## 関連リンク {#q4a9591d}
 
+- [Newest &#39;xecjk&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/xecjk)
 - [How to programmatically detect if a LaTeX package is installed?](http://tex.stackexchange.com/questions/31852/how-to-programmatically-detect-if-a-latex-package-is-installed)
 
 [^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/note.html)を参照
