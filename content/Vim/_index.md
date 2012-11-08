@@ -145,10 +145,17 @@ $HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Li
 
 tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
 
+***
+
 ```
+""
+"" tex.vim
+""
 filetype plugin on
 let g:tex_flavor='latex'
 ```
+
+***
 
 を記述しておく必要があります．<br>
 補完機能が必要な方は neocomplcache &amp; neosnippet を使用してください．<br>
