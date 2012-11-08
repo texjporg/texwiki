@@ -19,8 +19,6 @@ neocomplcache は Vim のプラグインです．
 
 - [neocomplcache](https://github.com/Shougo/neocomplcache)
 - [あるVimmerのブログ: neocomplcache](http://vinarian.blogspot.com/search/label/neocomplcache)
-- [Vim-users.jp - neocomplcache](http://vim-users.jp/tag/neocomplcache/)
-- [neocomplcacheとは - はてなキーワード](http://d.hatena.ne.jp/keyword/neocomplcache)
 
 ## neosnippet とは {#l0efe5b6}
 
@@ -108,4 +106,6 @@ smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 ## 関連リンク {#f5958428}
 
 <!-- -[[Vimで快適なLaTeX環境を作る (Vim-LaTeXを使わずに):http://d.hatena.ne.jp/amone_misya_ap/20111217/1324120370]] -->
+- [Vim-users.jp - neocomplcache](http://vim-users.jp/tag/neocomplcache/)
+- [neocomplcacheとは - はてなキーワード](http://d.hatena.ne.jp/keyword/neocomplcache)
 - [Vimで動くLaTeX環境](http://ymatz.net/pukiwiki/index.php?Vim%E3%81%A7%E5%8B%95%E3%81%8FLaTeX%E7%92%B0%E5%A2%83)
