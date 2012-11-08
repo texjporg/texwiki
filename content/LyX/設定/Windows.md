@@ -848,12 +848,12 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 を記述して \[適用(A)\]-\[保存(S)\] をクリックして LyX を再起動します．
 
-C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd <!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd を作成します． -->
+C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd <!-- C:\Program Files\LyX 2.0\bin\lyxeditor.cmd を作成します． -->
 
 ***
 
-- C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd
-    <!-- -C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd -->
+- C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd
+    <!-- -C:\Program Files\LyX 2.0\bin\lyxeditor.cmd -->
 
 ***
 
@@ -871,15 +871,15 @@ endlocal
 
 ***
 
-<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0.4\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
+<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.0\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
 
 SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
-"C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd" "%f" %l
+"C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd" "%f" %l
 ```
 
-<!-- "C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd" "%f" %l -->
+<!-- "C:\Program Files\LyX 2.0\bin\lyxeditor.cmd" "%f" %l -->
 
 を記述します．
 
@@ -918,12 +918,12 @@ DVIコマンドは [dviout](/dviout/) を使用します．<br>
 
 を記述して \[適用(A)\]-\[保存(S)\] をクリックして LyX を再起動します．
 
-C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd を作成します． <!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd を作成します． -->
+C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd を作成します． <!-- C:\Program Files\LyX 2.0\bin\lyxeditor.cmd を作成します． -->
 
 ***
 
-- C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd
-    <!-- -C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd -->
+- C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd
+    <!-- -C:\Program Files\LyX 2.0\bin\lyxeditor.cmd -->
 
 ***
 
@@ -946,10 +946,10 @@ endlocal
 dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
 
 ```
-C:\Users\Lydia\AppData\Local\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d
+C:\Users\Lydia\AppData\Local\LyX 2.0\bin\lyxeditor.cmd^s "%s" %d
 ```
 
-<!-- C:\Program Files\LyX 2.0.4\bin\lyxeditor.cmd^s "%s" %d -->
+<!-- C:\Program Files\LyX 2.0\bin\lyxeditor.cmd^s "%s" %d -->
 
 を記述します．
 
