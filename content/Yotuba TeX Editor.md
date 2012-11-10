@@ -19,7 +19,7 @@ Yotuba TeX Editor は国産でフリーの TeX 統合環境です．<br>
 
 ### 動作環境 {#d09827e9}
 
-Windows 7 (Microsoft .NET Framework 3.5 がインストールされている環境)
+Windows 7 (Microsoft .NET Framework 3.5 SP1 がインストールされている環境)
 
 ### リリース情報 {#b51cad4a}
 
