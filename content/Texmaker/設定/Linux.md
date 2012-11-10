@@ -17,6 +17,7 @@ pukiwiki: "Texmaker/設定/Linux"
 
 TeX Live の場合の設定を書きます．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
 [LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
