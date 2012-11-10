@@ -236,34 +236,6 @@ repstopdf,epspdf,extractbb,\
 [蝶](http://takeittheworld.blog15.fc2.com/blog-entry-822.html)
 : 2012-07-13
 
-<!-- :[[TeX Live 2012 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/15776344.html]] | 2012-07-11 -->
-
-#### TeX Live 2011 (Win32) {#pad973ce}
-
-- [6. TeXlipse の追加・設定 | Eclipse を使おう別館](http://x19290.appspot.com/using-eclipse/main.html#S6)
-- [LaTeX環境の整備 ― TeX Live 2011を用いて](http://blog.livedoor.jp/phys_com/archives/8891185.html)
-- [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
-    - [第3回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/805)
-    - [第2回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/765)
-    - [第1回 Windowsで簡単にLaTeX環境を構築する方法(TeX Live 2011)](http://blog.mochiring.net/archives/739)
-- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
-- [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
-- [Windows7でTeX環境を作った](http://barippi.blog.fc2.com/blog-entry-1309.html)
-- [TeXLiveです](http://d.hatena.ne.jp/eggtoothcroc/20120219/p1)
-- [BootcampにWindows 7 (64bit) とTeXLive2011をインストールする.](http://logic.math.kyushu-u.ac.jp/users/ym/weblog/43ed1/BootcampWindows_7_64bit_TeXLive2011.html)
-- [texlive2011をwindows7 64bitにインストール（メモ）](http://hidefumi-h.blog.so-net.ne.jp/2011-11-18)
-- [TeX Live 2011．とりあえず思ったことを書き連ねておく．自分用メモ．](http://d.hatena.ne.jp/abenori/20111031)
-- [TeX Live 2011を家のデスクトップに入れてみた](http://d.hatena.ne.jp/abenori/20111029)
-- [実行してはいけません！　TeXLive2011(Windows)でKozukaフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14245554.html)
-- [TeXLive2011 for Windows のまとめ](http://blogs.yahoo.co.jp/igproj_fusion/14243623.html)
-- [TeXLive2011(Windows)でMSフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14243228.html)
-- [TeXLive2011(Windows)でヒラギノフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14240953.html)
-- [TeXLive2011(Windows)でIPAフォントを使う](http://blogs.yahoo.co.jp/igproj_fusion/14239904.html)
-- [何も申し上げることはござんせん（texlive2011 on Win）](http://blogs.yahoo.co.jp/igproj_fusion/14226801.html)
-- [texlive-2011 on Windows](http://blogs.yahoo.co.jp/igproj_fusion/13511126.html)
-    <!-- -[[texlive-2010 on Windows (rev.):http://blogs.yahoo.co.jp/igproj_fusion/12693903.html]] -->
-    <!-- -[[texlive-2010 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/11147207.html]] -->
-
 #### TeX Live ([Cygwin](/Cygwin/)) {#sfbd073e}
 
 Microsoft Windows 上で動く Linux (UNIX&reg; 互換システム) ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
