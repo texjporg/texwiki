@@ -18,7 +18,7 @@ pukiwiki: "Skim"
 Skim は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
 DVI ファイルも PDF ファイルに変換して表示してくれます<br>
-[dvipdfmx](/dvipdfmx/) が標準的な場所にないときは defaults write -app Skim SKDviConversionCommand -string /path/dvipdfmx で設定します<br>
+DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．<br>
 
 - [Skim](http://skim-app.sourceforge.net/)
 
