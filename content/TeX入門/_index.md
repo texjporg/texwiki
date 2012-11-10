@@ -28,11 +28,9 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。どちら�
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。現在のバージョン番号は 3.1415926 です。LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
-の上に構築した文書処理システムです。いずれもフリーウェアであり，UNIX&reg;（[OS X](http://www.apple.com/jp/osx/)
-や [Solaris](http://www.oracle.com/us/products/servers-storage/solaris/) など），UNIX 互換
+の上に構築した文書処理システムです。いずれもフリーウェアであり，[Microsoft Windows](http://www.microsoft.com/japan/windows/)，UNIX&reg;（[OS X](http://www.apple.com/jp/osx/)，[Oracle Solaris](http://www.oracle.com/jp/products/servers-storage/solaris/)，[AIX](http://www-06.ibm.com/systems/jp/power/software/aix/) など），UNIX 互換
 OS（Linux OS，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
-など），[Microsoft Windows](http://www.microsoft.com/japan/windows/)
-など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
+など）など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
 日本では TeX，LaTeX
 を株式会社アスキー（現：[株式会社アスキー・メディアワークス](http://asciimw.jp/)）が日本語化した
@@ -43,6 +41,7 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキ
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用しています。
 
+- 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX,upLaTeX](/upTeX,upLaTeX/) が利用できます。
 - 【参考】TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX
     もあります。現在これらは千葉大学の[櫻井貴文さん](http://www.math.s.chiba-u.ac.jp/~sakurai/)が
     [TeXfamily](http://www.math.s.chiba-u.ac.jp/~sakurai/software.html)
@@ -62,13 +61,13 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 まずは次の本を挙げておきます。
 
-- [Leslie Lamport](http://lamport.org/) 著，[阿瀬はる美](http://www.harumi.jp/)
-    訳『[文書処理システム LaTeX2e](http://www.pej-hed.jp/washo/103.html)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
+- [Leslie Lamport](http://lamport.org/) 著，[阿瀬 はる美](http://twitter.com/harumi_ase)
+    訳『[文書処理システム LaTeX2e](http://www.pej-hed.jp/washo/103.html)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，税込価格 &yen;3,150，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
     の原典です。
 
-- [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，本体 &yen;3,180 + 税，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
+- [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，定価 &yen;3,339 (本体 &yen;3,180)，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
     [W32TeX](/W32TeX/) と
-    [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，Mac OS X 用バイナリなどを収めた
+    [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，OS X 用バイナリなどを収めた
     CD-ROM が附いています。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
@@ -80,8 +79,9 @@ LaTeX 2.09 です（日本語化されたものでは pLaTeX2e と
 pLaTeX 2.09 です）。LaTeX2e と LaTeX 2.09 は別物と考えて良いくらいです。
 
 図書館や書店には今でも LaTeX 2.09 時代の解説書が並んでいたり，LaTeX
-形式で論文を受け付ける学会などの中には未だに
-LaTeX 2.09 を採用しているところがあったりするので注意が必要です。
+形式で論文を受け付ける学会などの中にはもしかすると未だに
+LaTeX 2.09 を採用しているところがあったりするかもしれません。<br>
+LaTeX2e と LaTeX 2.09 は異なるものなので注意が必要です。
 
 文書ソースを \documentclass で始めるのが
 LaTeX2e，\documentstyle で始めるのが LaTeX 2.09 です。LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に
