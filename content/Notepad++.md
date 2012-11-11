@@ -56,8 +56,8 @@ Windows 7, Vista, XP, 2000
 
 ### リリース情報 {#d2ceb628}
 
+2012-11-11 Notepad++ v6.2.1<br>
 2012-10-13 Notepad++ 派生ビルド v6.2<br>
-2012-10-09 Notepad++ v6.2<br>
 2011-03-05 Notepad++ v5.8.7-6 +EUC-JP (UNICODE) 版<br>
 
 Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
