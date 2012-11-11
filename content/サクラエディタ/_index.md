@@ -31,8 +31,6 @@ pukiwiki: "サクラエディタ"
 サクラエディタは，現在 zlib/libpng ライセンスに統一するため，ソースコードのライセンス整備中です．詳細は [ライセンス明確化推進計画](http://sakura.qp.land.to/?Develop/Licenses) を参照してください．
 
 - [サクラエディタ - SourceForge](http://sakura-editor.sourceforge.net/)
-    - [Develop](http://sourceforge.net/projects/sakura-editor/develop)
-    - [Members](http://sourceforge.net/project/memberlist.php?group_id=12488)
     - 掲示板\[[一般\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
     - [Sakura Editor / Wiki / Home](http://sourceforge.net/p/sakura-editor/wiki/)
 - [SakuraEditorWiki](http://sakura.qp.land.to/)
@@ -48,9 +46,6 @@ pukiwiki: "サクラエディタ"
     - [サイト更新履歴](http://www.geocities.jp/moca_skr/history.html)
     - [サクラの小枝研 - 特殊用本体](http://www.geocities.jp/moca_skr/bin_other.html)
     - [サクラの小枝研 - 旧コンテンツ](http://www.geocities.jp/moca_skr/old/)
-        - [サクラの小枝研 - 64bit版](http://www.geocities.jp/moca_skr/old/bin_64bit.html)
-        - [サクラの小枝研 - 特殊用本体](http://www.geocities.jp/moca_skr/old/bin_other.html)
-        - [サクラの小枝研 - 実験用本体](http://www.geocities.jp/moca_skr/old/public_test.html)
 - [ds14050](http://vvvvvv.sakura.ne.jp/ds14050/)
     - [脳log\[SakuraEditor\]](http://vvvvvv.sakura.ne.jp/ds14050/diary/?category=SakuraEditor)
 - [”なすこじ”のトップページ](http://www.geocities.jp/nasukoji_7/)
@@ -70,8 +65,8 @@ Windows 7, Vista, XP, 2000 日本語版
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
 - [変更履歴(2011/02/11～)](http://sakura-editor.sourceforge.net/htmlhelp2/HLP_UR015.html)
+- [Sakura Editor / Code / Browse Commits](http://sourceforge.net/p/sakura-editor/code/commit_browser)
 - [コミットログ (ViewVC)](http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/sakura/trunk2/?view=log)
-- [コミットログ (Trac)](http://sourceforge.net/apps/trac/sakura-editor/log/sakura/trunk2)
 
 ### 改造版 {#mc0d532c}
 
@@ -81,12 +76,9 @@ Windows 7, Vista, XP, 2000 日本語版
 
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
 - [サクラエディタ UNICODE/ANSI 版](http://sourceforge.net/projects/sakura-editor/files/)
-- [サクラエディタ Unicode/64bit(x64)版](http://sourceforge.net/apps/trac/sakura-editor/wiki/64bit)
+- [サクラエディタ Unicode/x64](http://sourceforge.net/p/sakura-editor/wiki/64bit/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
 - [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
-    - [プロポーショナル+おまけ](http://mocaskr.web.fc2.com/sakura/bin_other.html#all5)
-    - [プロポーショナル](http://mocaskr.web.fc2.com/sakura/bin_other.html#ppfontsel)
-    - [(その他)コードレビュー兼実験用](http://mocaskr.web.fc2.com/sakura/bin_other.html#etc)
 
 ## コマンドラインオプション {#j41d5a42}
 
@@ -96,11 +88,11 @@ Windows 7, Vista, XP, 2000 日本語版
 
 - [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
     - [help2 / 2.0.5.0](http://sourceforge.net/projects/sakura-editor/files/help2/2.0.5.0/) サクラエディタ Ver 2.0.5.0 ヘルプファイル最終更新日 2012/05/13
-    - [Rev 2428 で 外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました](http://sourceforge.net/tracker/index.php?func=detail&aid=3571858&group_id=12488&atid=1013762)
+    - [Rev 2428 で 外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました](http://sourceforge.net/p/sakura-editor/patchunicode/230/)
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
     - [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまう場合は [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO) (旧バージョン) を使用してください． → [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)<br>
-    - [Rev 2427 で C/Migemo1.3で落ちる問題の修正，UTF-8に対応（自動認識。UTF-8優先）がコミットされました](http://sourceforge.net/tracker/index.php?func=detail&aid=3450189&group_id=12488&atid=1013762)
+    - [Rev 2427 で C/Migemo1.3で落ちる問題の修正，UTF-8に対応（自動認識。UTF-8優先）がコミットされました](http://sourceforge.net/p/sakura-editor/patchunicode/180/)
 
 ***
 
@@ -173,7 +165,6 @@ bregonig.dll Ver.3.03 は x64 に対応しています．
 - [bregonig.dll](http://homepage3.nifty.com/k-takata/mysoft/bregonig.html)
 - [Downloads · k-takata/bregonig · GitHub](https://github.com/k-takata/bregonig/downloads)
     - [twitter](http://twitter.com/k_takata)
-        <!-- -[[bregonig.dll Unicode/x64:http://sourceforge.net/apps/trac/sakura-editor/wiki/64bit]] -->
 
 bregonig.dll を
 
@@ -379,9 +370,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 - [サクラエディタ  ヘルプ目次](http://sakura-editor.sourceforge.net/htmlhelp2/)
     <!-- - -[[ヘルプファイル更新履歴:http://sakura-editor.sourceforge.net/htmlhelp2/HLP_HISTORY.html]] -->
     - [コミットログ (ViewVC)](http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/?view=log)
-    - [コミットログ (Trac)](http://sourceforge.net/apps/trac/sakura-editor/log/help/trunk2)
         <!-- - -[[コミットログ (ViewVC):http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk/?view=log]] -->
-        <!-- - -[[コミットログ (Trac):http://sourceforge.net/apps/trac/sakura-editor/log/help/trunk]] -->
     - [マクロ](http://sakura-editor.sourceforge.net/htmlhelp2/#c927)
         - [マクロ専用関数](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000268.html)
         - [ExpandParameter](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000284.html)
@@ -1468,10 +1457,10 @@ C:\sakura\sakura.exe^s -Y:%d "%s"
 
 Version 2 では，アウトライン解析画面のドッキングが可能になりました．
 
-詳細は SakuraEditorWiki, Tracker: PatchUnicode を参照してください．
+詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
 - [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/DockingOutline)
-- [Tracker: PatchUnicode アウトライン解析画面のドッキング機能追加 - ID: 3011753](http://sf.net/tracker/index.php?func=detail&aid=3011753&group_id=12488&atid=1013762)
+- [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](http://sourceforge.net/p/sakura-editor/patchunicode/116/)
 
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[スクリーン\] でアウトライン解析方法を指定できます．<br>
 
@@ -1510,10 +1499,10 @@ Version 2 では，アウトライン解析画面のドッキングが可能に�
 
 Version 2 では，プラグイン機能が使えるようになりました．
 
-詳細は SakuraEditorWiki, Tracker: PatchUnicode を参照してください．
+詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
 - [プラグイン機能 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk%2F48)
-- [Tracker: PatchUnicode WSHプラグイン - ID: 2889809](http://sourceforge.net/tracker/?func=detail&aid=2889809&group_id=12488&atid=1013762)
+- [Sakura Editor / PatchUnicode / #85 WSHプラグイン](http://sourceforge.net/p/sakura-editor/patchunicode/85/)
 
 ***
 
@@ -1548,10 +1537,10 @@ Version 2 では，プラグイン機能が使えるようになりました．
 
 Version 2 では，タイプ別設定一覧からの関連付けが可能になりました．
 
-詳細は SakuraEditorWiki, Tracker: PatchUnicode を参照してください．
+詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
 - [本体へ関連付けツールを組み込み - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/49)
-- [Tracker: PatchUnicode タイプ別設定一覧からの関連付け - ID: 3127886](http://sourceforge.net/tracker/index.php?func=detail&aid=3127886&group_id=12488&atid=1013762)
+- [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](http://sourceforge.net/p/sakura-editor/patchunicode/148/)
 
 ## 背景画像の表示 {#g21b26e8}
 
