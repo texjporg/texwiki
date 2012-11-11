@@ -31,8 +31,8 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
+2012-11-09 poppler 0.21.1<br>
 2012-10-10 poppler 0.20.5<br>
-2012-09-21 poppler 0.21.0<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -56,7 +56,6 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](http://www.mingw.org/) のサイトから [mingw-get-inst の最新版](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) をダウンロードし，フルインストールします．
 
-<!-- -http://get.qt.nokia.com/qt/source/ から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.1\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します． -->
 - [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.3\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
     <!-- -http://releases.qt-project.org/qt5.0/ -->
 
@@ -191,9 +190,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.9.tar.gz
-$ tar xvf cmake-2.8.9.tar.gz
-$ pushd cmake-2.8.9
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.10.1.tar.gz
+$ tar xvf cmake-2.8.10.1.tar.gz
+$ pushd cmake-2.8.10.1
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -841,9 +840,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.0.tar.gz
-$ tar xvf poppler-0.21.0.tar.gz
-$ pushd poppler-0.21.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.1.tar.gz
+$ tar xvf poppler-0.21.1.tar.gz
+$ pushd poppler-0.21.1
 ```
 
 ***
