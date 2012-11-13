@@ -252,7 +252,7 @@ babel を使用して文書を作成する場合は babel を on にします．
 
 #### [XeTeX](/XeTeX/)/[LuaTeX](/LuaTeX/) で文書を作成する場合 {#n7a3be37}
 
-XeTeX/LuaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (UTF-8) に設定します．
+XeTeX/LuaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
 
 ***
 
@@ -264,7 +264,7 @@ XeTeX/LuaTeX で文書を作成する場合は文字コードを ユニコード
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (UTF-8)　　　　▼\]</span><br>
+　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
 
 <br>
 
