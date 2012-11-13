@@ -15,6 +15,8 @@ pukiwiki: "LyX/設定/Linux"
 
 ### 順検索 (forward search) {#l3e420bc}
 
+#### [Evince](/Evince/) の場合 {#ebd984f2}
+
 PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
 
 ***
@@ -36,9 +38,97 @@ PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用
 
 ***
 
+#### [Okular](/Okular/) の場合 {#s32b3472}
+
+PDFコマンドは [Okular](/Okular/) を使用します．<br>
+PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択します．<br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <br>
+　PDFコマンド: <ins>okular --unique "$$o#src:$$n $$f"</ins><br>
+
+***
+
+#### [qpdfview](/qpdfview/) の場合 {#a6f5bad3}
+
+PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <br>
+　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$t:$$n:0"</ins><br>
+
+***
+
+#### PdfViewer の場合 {#y5f01220}
+
+PDFコマンドは PdfViewer を使用します．<br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <br>
+　PDFコマンド: <ins>pdfviewer "$$o#src:$$n $$t"</ins><br>
+
+***
+
 ## Evince との連携 {#yfea5c32}
 
 ### forward search {#i9ef9b4c}
+
+[順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
+
+## Okular との連携 {#ka27016a}
+
+### forward search {#w6988b67}
+
+[順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
+
+## qpdfview との連携 {#i536202e}
+
+### forward search {#l5055820}
+
+[順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
+
+## PdfViewer との連携 {#sa00c46a}
+
+### forward search {#ff4d5d64}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
