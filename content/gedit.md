@@ -37,9 +37,10 @@ Windows, OS X, Linux
 - gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．
 - [http://git.gnome.org/browse/gedit-latex](http://git.gnome.org/browse/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
+- [Ubuntu 12.10: geditのプラグインを導入](http://blog.livedoor.jp/ti5942/archives/7573141.html)
+- [synctex with gedit on Ubuntu 12.04](http://blog.livedoor.jp/shota_soga_/archives/3536366.html)
 - [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
 - [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
-- [synctex with gedit on Ubuntu 12.04](http://blog.livedoor.jp/shota_soga_/archives/3536366.html)
 
 ### 外部ツール {#qa44ee46}
 
