@@ -24,6 +24,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
 - [xeCJK Package](http://www.ctan.org/pkg/xecjk)
 - [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
+- [xecjk – Support for CJK documents in XeLaTeX](http://ctanhg.scharrer-online.de/pkg/xecjk.html) (Automated Mercurial Repositories of CTAN)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
 - [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
     - [TeX Wiki xeCJKの中のxeCJK 3.0.6 r350と3.0.7 r351のリンク先間違ってませんか？](http://blog.livedoor.jp/ti5942/archives/7561279.html) → [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（１）](http://blog.livedoor.jp/ti5942/archives/7562068.html)
