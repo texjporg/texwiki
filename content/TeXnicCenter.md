@@ -147,6 +147,7 @@ dvipdfm(x) で PDF ファイルを作成する場合は，プロファイルを 
 
 ## 関連リンク {#r73017f2}
 
+- [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その１](http://blog.goo.ne.jp/xmldtp/e/3694c7b9cef534f3555b1bc41a96b5de)
 - [TexnicCenter2.0の日本語使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=794)
 - [工大院生の学生メモ : Texniccenter](http://blog.livedoor.jp/gastttt3678/archives/2846954.html)
 - [Newest &#39;texniccenter&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texniccenter)
