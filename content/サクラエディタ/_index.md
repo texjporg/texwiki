@@ -65,8 +65,8 @@ Windows 7, Vista, XP, 2000 日本語版
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
 - [変更履歴(2011/02/11～)](http://sakura-editor.sourceforge.net/htmlhelp2/HLP_UR015.html)
+- [Code Log](http://sourceforge.net/p/sakura-editor/code/log/)
 - [Sakura Editor / Code / Browse Commits](http://sourceforge.net/p/sakura-editor/code/commit_browser)
-- [コミットログ (ViewVC)](http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/sakura/trunk2/?view=log)
 
 ### 改造版 {#mc0d532c}
 
@@ -356,21 +356,19 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 ## マクロ {#k75075b0}
 
 - [Macro - SakuraEditorWiki](http://sakura.qp.land.to/?Macro)
-- [サクラエディタマクロ](http://www.geocities.jp/maru3128/SakuraMacro/)
-    - [リファレンス目次](http://www.geocities.jp/maru3128/SakuraMacro/reference/)
-        - [S_ExpandParameter](http://www.geocities.jp/maru3128/SakuraMacro/reference/other/S_ExpandParameter.html)
-- [サクラエディタマクロ](http://sakura.qp.land.to/SakuraMacro/)
-    - [リファレンス目次](http://sakura.qp.land.to/SakuraMacro/reference/)
-        - [S_ExpandParameter](http://sakura.qp.land.to/SakuraMacro/reference/other/S_ExpandParameter.html)
-            <!-- -[[サクラエディタ  ヘルプ目次:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000001.html]] -->
-            <!-- - -[[ヘルプファイル更新履歴:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP_HISTORY.html]] -->
-            <!-- - -[[マクロ:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000001.html#c927]] -->
-            <!-- - -[[ExpandParameter:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000284.html]] -->
+    <!-- -[[サクラエディタマクロ:http://www.geocities.jp/maru3128/SakuraMacro/]] -->
+    <!-- - -[[リファレンス目次:http://www.geocities.jp/maru3128/SakuraMacro/reference/]] -->
+    <!-- - --[[S_ExpandParameter:http://www.geocities.jp/maru3128/SakuraMacro/reference/other/S_ExpandParameter.html]] -->
+    <!-- -[[サクラエディタマクロ:http://sakura.qp.land.to/SakuraMacro/]] -->
+    <!-- - -[[リファレンス目次:http://sakura.qp.land.to/SakuraMacro/reference/]] -->
+    <!-- - --[[S_ExpandParameter:http://sakura.qp.land.to/SakuraMacro/reference/other/S_ExpandParameter.html]] -->
+    <!-- -[[サクラエディタ  ヘルプ目次:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000001.html]] -->
+    <!-- - -[[ヘルプファイル更新履歴:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP_HISTORY.html]] -->
+    <!-- - -[[マクロ:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000001.html#c927]] -->
+    <!-- - -[[ExpandParameter:http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/_RESOURCE/HLP000284.html]] -->
 
 - [サクラエディタ  ヘルプ目次](http://sakura-editor.sourceforge.net/htmlhelp2/)
     <!-- - -[[ヘルプファイル更新履歴:http://sakura-editor.sourceforge.net/htmlhelp2/HLP_HISTORY.html]] -->
-    - [コミットログ (ViewVC)](http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk2/?view=log)
-        <!-- - -[[コミットログ (ViewVC):http://sakura-editor.svn.sourceforge.net/viewvc/sakura-editor/help/trunk/?view=log]] -->
     - [マクロ](http://sakura-editor.sourceforge.net/htmlhelp2/#c927)
         - [マクロ専用関数](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000268.html)
         - [ExpandParameter](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000284.html)
