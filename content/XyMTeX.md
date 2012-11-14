@@ -50,3 +50,7 @@ XyMTeX は改良に改良を重ね，（試して
 あります（いす型構造式において ATOMLIST として N を指定しなければならないので
 chair 命令が使えない）。これらを描画する際には相変わらず
 ChemDraw，ISIS/Draw などの WYSIWYG ソフトが必要になるかもしれません。
+
+## 関連リンク {#d1c64818}
+
+- [MacTeX で XyMTeX](http://www.clas.kitasato-u.ac.jp/~fujiwara/MacTeX/xymtex.html)
