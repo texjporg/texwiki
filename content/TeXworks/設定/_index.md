@@ -24,10 +24,10 @@ pukiwiki: "TeXworks/設定"
 
 ## スペルチェックの辞書の設定 {#vd0f0d24}
 
-W32TeX の場合はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
-TeX Live 2012 の場合はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
+W32TeX の TeXworks の場合はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
+TeX Live 2012, MacTeX-2012 の TeXworks の場合はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
 
-Windowes 8, 7, Vista の場合
+### Windowes 8, 7, Vista (TeX Live 2012) の場合 {#ycb12d64}
 
 1. [http://extensions.services.openoffice.org/dictionary](http://extensions.services.openoffice.org/dictionary) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
@@ -37,7 +37,7 @@ Windowes 8, 7, Vista の場合
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
 
-"OS X"(MacTeX2012) の場合
+### "OS X"(MacTeX-2012) の場合 {#d0319cb7}
 
 1. [http://extensions.services.openoffice.org/dictionary](http://extensions.services.openoffice.org/dictionary) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
