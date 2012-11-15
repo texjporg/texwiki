@@ -57,6 +57,7 @@ import dbus
 import argparse
 import os.path
 import time
+import traceback
 
 class FwdEvince:
 
@@ -81,7 +82,7 @@ class FwdEvince:
             time.sleep(0.2)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
-            print_exc()
+            traceback.print_exc()
 
 if __name__ == '__main__':
     evince = FwdEvince()
