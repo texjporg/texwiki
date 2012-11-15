@@ -288,6 +288,7 @@ traceback.print_exc()
 
 に修正します．(最新版の fwdevince は修正済みです)<br>
 import traceback せずに traceback.print_exc() を使用すると NameError が発生します．<br>
+環境によっては DBusException が発生して forward search できない場合があります． → [TeXWikiの「fwdevince」が修正されているので、試してみる](http://blog.livedoor.jp/ti5942/archives/7576936.html)
 
 ***
 
