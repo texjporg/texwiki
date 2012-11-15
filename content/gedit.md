@@ -42,6 +42,24 @@ Windows, OS X, Linux
 - [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
 - [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
 
+### gedit-synctex {#uc9a113c}
+
+- [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
+- [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
+- [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
+
+SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
+
+Forward Search の場合は
+
+```
+TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
+```
+
+と出て forward search できないかもしれません．
+
+Inverse Search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
+
 ### 外部ツール {#qa44ee46}
 
 外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．<br>
@@ -247,6 +265,29 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ***
 
 #### fwdevince {#s41c2ddc}
+
+fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+[Ubuntu 12.10 : gedit 3.6.0 で fwdevinceが。。。うまくいかない](http://blog.livedoor.jp/ti5942/archives/7576301.html)場合があります．<br>
+NameError が発生する場合は fwdevince に
+
+```
+import traceback
+```
+
+を追加して
+
+```
+print_exc()
+```
+
+を
+
+```
+traceback.print_exc()
+```
+
+に修正します．(最新版の fwdevince は修正済みです)<br>
+import traceback せずに traceback.print_exc() を使用すると NameError が発生します．<br>
 
 ***
 
