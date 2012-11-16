@@ -32,10 +32,32 @@ Windows, OS X, Linux
 - [git](http://git.gnome.org/browse/evince/)
     - [log](http://git.gnome.org/browse/evince/log/)
 
+## ダウンロード/インストール {#j395f01d}
+
+### Windows {#f2460848}
+
+- [Evince/Downloads - GNOME Live!](https://live.gnome.org/Evince/Downloads)
+
+### Ubuntu {#lacd43b5}
+
+- [Ubuntu -- パッケージ検索結果 -- evince](http://packages.ubuntu.com/ja/evince)
+
+### Debian {#rf817124}
+
+- [Debian -- パッケージ検索結果 -- evince](http://packages.debian.org/ja/evince)
+
+### Fedora {#jbf882d0}
+
+- [Fedora Package Database -- evince](https://admin.fedoraproject.org/pkgdb/acls/name/evince)
+
+### openSUSE {#rd040fd0}
+
+- [http://software.opensuse.org/package/evince](http://software.opensuse.org/package/evince)
+
 ## forward and inverse search {#ga060086}
 
 [Evince 2.31.5](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_31_5) から SyncTeX による forward and inverse search が可能になりました．<br>
-[Evince 2.91.0](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0) で D-Bus の仕様が変更されました．<br>
+[Evince 2.91.0](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0) で D-Bus の仕様が変更されました． → \[[shell\] Add timestamp parameter to SyncView.](http://git.gnome.org/browse/evince/commit/?id=a2b36d8928c30f93f74869b294e72d2484422646)<br>
 [Evince 3.5.5](http://git.gnome.org/browse/evince/commit/?id=3.5.5) で D-Bus のインターフェースに gdbus-codegen が使用されるようになりました． → [daemon: Use gdbus-codegen for the org.gnome.evince.Daemon interface](http://git.gnome.org/browse/evince/commit/?id=1aac15e8098f1b2197f5bcf2430395ee9843eb43)<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
 
@@ -59,6 +81,12 @@ import argparse
 import os.path
 import time
 import traceback
+import sys
+
+if sys.version_info >= (3, 0, 0):
+    from urllib.parse import quote
+else:
+    from urllib import quote
 
 class FwdEvince:
 
@@ -71,14 +99,14 @@ class FwdEvince:
 
     def run(self):
         args = self.parse_args()
-        pdf = os.path.abspath(args.pdf[0])
+        pdf = os.path.abspath(args.pdf[0]).replace(" ", "%20")
         line = int(args.line[0])
         tex = os.path.join(os.path.dirname(os.path.abspath(args.tex[0])), './', os.path.basename(os.path.abspath(args.tex[0])))
 
         try:
             bus = dbus.SessionBus()
             daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
-            dbus_name = daemon.FindDocument('file://' + pdf, True, dbus_interface='org.gnome.evince.Daemon')
+            dbus_name = daemon.FindDocument('file://' + quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
             window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
             time.sleep(0.2)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
@@ -101,9 +129,55 @@ $ sudo cp -p fwdevince /usr/local/bin
 
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search - Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=1716268)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search \[Archive\]  - Ubuntu Forums](http://ubuntuforums.org/archive/index.php/t-1716268.html)
+- [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
     <!-- -[[latexince:http://code.google.com/p/latexince/]] -->
 
 #### 注意点 {#s90f2b11}
+
+evince_forward_search で
+
+```
+pdf_file = os.path.abspath(sys.argv[1])
+```
+
+を
+
+```
+#pdf_file = os.path.abspath(sys.argv[1])
+pdf_file = os.path.abspath(sys.argv[1]).replace(" ", "%20")
+```
+
+に修正します．<br>
+
+evince_backward_search で
+
+```
+self.uri = uri
+```
+
+を
+
+```
+#self.uri = uri
+self.uri = uri.replace(" ", "%20")
+```
+
+に修正して
+
+```
+    def on_sync_source(self, input_file, source_link):
+        print input_file + ":" + str(source_link[0])
+```
+
+を
+
+```
+    def on_sync_source(self, input_file, source_link):
+        input_file = input_file.replace("%20", " ")
+        print input_file + ":" + str(source_link[0])
+```
+
+に修正します．<br>
 
 TeX Live 2012, 2011 では SyncTeX が出力するファイル名が TeX Live 2010 とは異なっています．<br>
 evince_forward_search で
