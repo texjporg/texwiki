@@ -18,6 +18,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 - [ctex-kit](http://code.google.com/p/ctex-kit/)
     - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
+        - xeCJK.dtx をクリックして File info の View raw file から xeCJK.dtx をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
     - [Changes](http://code.google.com/p/ctex-kit/source/list)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
@@ -27,12 +28,11 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [xecjk – Support for CJK documents in XeLaTeX](http://ctanhg.scharrer-online.de/pkg/xecjk.html) (Automated Mercurial Repositories of CTAN)
 - [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
 - [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
-    - [TeX Wiki xeCJKの中のxeCJK 3.0.6 r350と3.0.7 r351のリンク先間違ってませんか？](http://blog.livedoor.jp/ti5942/archives/7561279.html) → [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（１）](http://blog.livedoor.jp/ti5942/archives/7562068.html)
-        - チェックしてみましたがとくに間違っているようには思われません．xeCJK.dtx をクリックして File info の View raw file から xeCJK.dtx をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
+- [xeCJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/xeCJK)
 
 ### リリース情報 {#if427aa7}
 
-2012-11-13 xeCJK 3.1.0<br>
+2012-11-14 xeCJK 3.1.0<br>
 2012-11-01 W32TeX \[2012/11/01\] の更新で xeCJK 3.0.10 になりました．<br>
 
 ### 不具合 {#t2600dd9}
@@ -80,6 +80,7 @@ ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降, 新�
 - [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html)
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
+- [ZXjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/ZXjatype)
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
     <!-- -[[名状しがたい zxjatype のようなもの:https://gist.github.com/3685126]] -->
     <!-- -[[texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。:https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj]] → zxjatype v0.6 で対応しました -->
