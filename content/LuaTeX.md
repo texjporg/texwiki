@@ -83,7 +83,11 @@ MacTeX-2012 には luatexja が含まれています．<br>
 LuaTeX 開発版のソースを追っかけて自分でコンパイルしている場合，r4433--r4446 は （内部の lpeg が新しくなった関係で luaotfload パッケージが動かなくなったので）利用できません． そのため，r4432 以前か，r4447 以降を使用して下さい．<br>
 W32TeX における LuaTeX 開発版 (luatex-dev-w32.tar.xz) では，2012/05/26 <strong>以外</strong>のものであれば大丈夫のようです．<br>
 
-現状では e-pTeX と比べると[コンパイルに時間がかかります](http://d.hatena.ne.jp/abenori/20110906)．<br>
+現状では pLaTeX と比べるとタイプセットに時間がかかります．<br>
+
+- [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
+- [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
+
 mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
 
 使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
