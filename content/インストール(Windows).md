@@ -213,6 +213,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
+: 2012-11-17
+
 [TeXのインストール – TeX Live](http://www.netplan.co.jp/archives/2151)<br>[TeXworksの設定](http://www.netplan.co.jp/archives/2167)
 : 2012-10-17
 
