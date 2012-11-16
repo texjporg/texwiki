@@ -54,6 +54,11 @@ Windows, OS X, Linux
 
 - [http://software.opensuse.org/package/evince](http://software.opensuse.org/package/evince)
 
+### Beyond Linux From Scratch {#i9f92bae}
+
+- [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
+- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html)
+
 ## forward and inverse search {#ga060086}
 
 [Evince 2.31.5](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_31_5) から SyncTeX による forward and inverse search が可能になりました．<br>
