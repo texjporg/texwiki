@@ -27,13 +27,29 @@ KDE
 
 - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
 
-## インストール {#xecad964}
+## ダウンロード/インストール {#xecad964}
 
 ### Windows {#h8e4fcbd}
 
 - [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
 
-### Linux {#zf4b2d67}
+### Ubuntu {#d3c8be06}
+
+- [Ubuntu -- パッケージ検索結果 -- okular](http://packages.ubuntu.com/ja/okular)
+
+### Debian {#j00dbf39}
+
+- [Debian -- パッケージ検索結果 -- okular](http://packages.debian.org/ja/okular)
+
+### Fedora {#mf21deef}
+
+- [Fedora Package Database -- okular](https://admin.fedoraproject.org/pkgdb/acls/name/okular)
+
+### openSUSE {#w345a41b}
+
+- [http://software.opensuse.org/package/okular](http://software.opensuse.org/package/okular)
+
+### Beyond Linux From Scratch {#zf4b2d67}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html)
