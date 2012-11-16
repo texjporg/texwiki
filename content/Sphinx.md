@@ -58,6 +58,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
     - \[[Sphinx-Users 178\] Re:	日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000177.html)
     - \[[Sphinx-Users 179\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000178.html)
 - [日本語 Sphinx ドキュメントの PDF 化(TeX 経由)のサンプル](https://github.com/shino/sphinx_to_pdf_via_tex_jp/)
+- [Windows8にPDFありのsphinx環境](http://fseek.blogspot.com/2012/11/windows8pdfsphinx.html)
 - [独学Linux : Sphinx を含む記事](http://blog.livedoor.jp/vine_user/search?q=Sphinx)
     - [ゼロからはじめるSphinx《入門編》](http://blog.livedoor.jp/vine_user/archives/51917814.html)
     - [ゼロからはじめるSphinx《LaTeX編》](http://blog.livedoor.jp/vine_user/archives/51918624.html)
