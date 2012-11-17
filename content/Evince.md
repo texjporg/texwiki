@@ -38,6 +38,10 @@ Windows, OS X, Linux
 
 - [Evince/Downloads - GNOME Live!](https://live.gnome.org/Evince/Downloads)
 
+### OS X {#y8d21820}
+
+- [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
+
 ### Ubuntu {#lacd43b5}
 
 - [Ubuntu -- パッケージ検索結果 -- evince](http://packages.ubuntu.com/ja/evince)
@@ -70,6 +74,7 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 
 fwdevince は Linux の Evince で forward search を行うためのツールです．<br>
 TeX Live 2012, Evince 3.4.0, Python 2.7.3 で動作確認しています．<br>
+TeX Live 2012, Evince 3.6.0, Python 2.7.3 でも動作するようです． → [Ubuntu 12.10: fwdevince によるEvince で forward searchうまくいきました。](http://twitter.com/ti5942/status/269820600980213760), [早速ですが、２０１２年１１月１７日掲載のfwdevinceを試してみる](http://blog.livedoor.jp/ti5942/archives/7580234.html)<br>
 
 ***
 
@@ -131,6 +136,8 @@ $ sudo cp -p fwdevince /usr/local/bin
 ```
 
 ### evince_synctex {#bb04e129}
+
+evince_synctex は Linux の Evince で forward and inverse search を行うためのツールです．<br>
 
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search - Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=1716268)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search \[Archive\]  - Ubuntu Forums](http://ubuntuforums.org/archive/index.php/t-1716268.html)
@@ -231,4 +238,3 @@ Okular にも同様の問題が発生していたようです．
 ## 関連リンク {#n7670496}
 
 - [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836)
-- [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
