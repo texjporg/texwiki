@@ -22,6 +22,7 @@ SyncTeX に対応しています．<br>
 - [Evince](http://projects.gnome.org/evince/)
 - [Evince Document Viewer](http://library.gnome.org/users/evince/stable/index.html.en)
     - [Evince Document Viewer › SyncTex » Supported Editors](http://library.gnome.org/users/evince/stable/synctex-editors.html.en)
+- [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
 ### 動作環境 {#q9c64542}
 
@@ -57,6 +58,10 @@ Windows, OS X, Linux
 ### openSUSE {#rd040fd0}
 
 - [http://software.opensuse.org/package/evince](http://software.opensuse.org/package/evince)
+
+### Arch Linux {#eb51c4f9}
+
+- [https://www.archlinux.org/packages/?q=evince](https://www.archlinux.org/packages/?q=evince)
 
 ### Beyond Linux From Scratch {#i9f92bae}
 
