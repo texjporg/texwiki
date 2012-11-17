@@ -32,7 +32,7 @@ Visual Windows for Unicode TeX, Visual Windows for xeTeX も開発中です．<b
 
 ### リリース情報 {#l78e4b17}
 
-2012-07-28 Visual Windows for TeX Ver.2012-1.30
+2012-11-11 Visual Windows for TeX Ver.2012-1.40
 
 ## 関連リンク {#b77aa044}
 
