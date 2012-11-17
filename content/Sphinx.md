@@ -31,6 +31,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 ### 関連リンク {#lc632f60}
 
 - [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
+- [Sphinx &mdash; おっさんウェブ 1.0.0 documentation](http://ossanhoihoi.web.fc2.com/sphinx/sphinx.html)
 - [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
 - [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 
