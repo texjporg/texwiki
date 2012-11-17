@@ -49,6 +49,10 @@ KDE
 
 - [http://software.opensuse.org/package/okular](http://software.opensuse.org/package/okular)
 
+### Arch Linux {#c209770f}
+
+- [https://www.archlinux.org/packages/?q=kdegraphics-okular](https://www.archlinux.org/packages/?q=kdegraphics-okular)
+
 ### Beyond Linux From Scratch {#zf4b2d67}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
