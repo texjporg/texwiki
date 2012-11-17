@@ -22,6 +22,8 @@ LibreOffice はフリーのオフィススイートです．
 - [git](http://cgit.freedesktop.org/libreoffice)
     - [build](http://cgit.freedesktop.org/libreoffice/build/)
         - [log](http://cgit.freedesktop.org/libreoffice/build/log/)
+- [gerrit.libreoffice Code Review](https://gerrit.libreoffice.org/)
+    - [gerrit.libreoffice Code Review - core.git/summary](https://gerrit.libreoffice.org/gitweb?p=core.git)
 - [Home &raquo; LibreOffice](http://www.libreoffice.org/)
 - [LibreOffice Extensions](http://extensions.libreoffice.org/)
 - [ホーム &raquo; LibreOffice](http://ja.libreoffice.org/)
