@@ -266,8 +266,7 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 #### fwdevince {#s41c2ddc}
 
-fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br> <!-- [[Ubuntu 12.10 : gedit 3.6.0 で fwdevinceが。。。うまくいかない:http://blog.livedoor.jp/ti5942/archives/7576301.html]]場合があります．~ --> <!-- NameError が発生する場合は fwdevince に --> <!--  --> <!-- import traceback --> <!--  --> <!-- を追加して --> <!--  --> <!-- print_exc() --> <!--  --> <!-- を --> <!--  --> <!-- traceback.print_exc() --> <!--  --> <!-- に修正します．(最新版の fwdevince は修正済みです)~ --> <!-- import traceback せずに traceback.print_exc() を使用すると NameError が発生します．~ -->
-環境によっては DBusException が発生して forward search できない場合があります． → [TeXWikiの「fwdevince」が修正されているので、試してみる](http://blog.livedoor.jp/ti5942/archives/7576936.html)
+fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
 
 ***
 
