@@ -42,23 +42,26 @@ Windows, OS X, Linux
 - [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
 - [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
 
-### gedit-synctex {#uc9a113c}
+### gedit-synctex-plugin {#uc9a113c}
 
 - [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
+- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
+- [Ubuntu 12.10: gedit(3.6.0)でSyncTeX](http://blog.livedoor.jp/ti5942/archives/7580530.html)
 - [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
 - [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
-Forward Search の場合は
+forward search は gedit で Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
+inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
+
+forward search をメニューまたはショートカットキーから実行する場合は
 
 ```
 TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
 ```
 
 と出て forward search できないかもしれません．
-
-Inverse Search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
 
 ### 外部ツール {#qa44ee46}
 
