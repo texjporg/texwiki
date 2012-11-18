@@ -18,23 +18,26 @@ pukiwiki: "gedit"
 gedit は GNOME 公式のテキストエディタです．<br>
 
 - [gedit](http://projects.gnome.org/gedit/)
-- [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
-    - [log](http://git.gnome.org/browse/gedit/log/)
 
 ### 動作環境 {#kd6ded02}
 
 Windows, OS X, Linux
 
+### ChangeLog {#z39e4e65}
+
+- [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
+    - [log](http://git.gnome.org/browse/gedit/log/)
+
 ## プラグイン {#c01f900c}
 
 ### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
-最新版の gedit-latex は gedit 3 で動作します．<br>
+gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．<br>
 
 - [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin)
     <!-- - -[[gedit-latex team:http://sourceforge.net/project/memberlist.php?group_id=204144]] -->
 
-- gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．
 - [http://git.gnome.org/browse/gedit-latex](http://git.gnome.org/browse/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [Ubuntu 12.10: geditのプラグインを導入](http://blog.livedoor.jp/ti5942/archives/7573141.html)
@@ -42,7 +45,7 @@ Windows, OS X, Linux
 - [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
 - [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
 
-### gedit-synctex-plugin {#uc9a113c}
+### [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin) {#uc9a113c}
 
 - [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
 - [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
@@ -50,7 +53,8 @@ Windows, OS X, Linux
 - [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
 - [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
 
-SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
+SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．<br>
 
 forward search は gedit で Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
