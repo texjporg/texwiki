@@ -56,9 +56,8 @@ Windows 7, Vista, XP, 2000
 
 ### リリース情報 {#d2ceb628}
 
-2012-11-11 Notepad++ v6.2.1<br>
-2012-10-13 Notepad++ 派生ビルド v6.2<br>
-2011-03-05 Notepad++ v5.8.7-6 +EUC-JP (UNICODE) 版<br>
+2012-11-18 Notepad++ v6.2.2<br>
+2012-11-16 Notepad++ 派生ビルド v6.2.1<br>
 
 Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
@@ -128,52 +127,6 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 自動補完 (オートコンプリート) の設定ができます．
 
 メニューから補完を行う場合は \[編集(E)\]-\[オートコンプリート\]-\[関数名補完\] または \[単語補完\] で補完できます．
-
-- [自動補完 (Auto Complete) - Notepad++の使用方法](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/edit/auto-complete.htm)
-
-## 環境設定 (EUC-JP 対応版) {#l563c9f4}
-
-\[設定(T)\]-\[環境設定...\]
-
-### 新規文書／デフォルトフォルダ {#z2f634e9}
-
-日本語が使用可能なエンコード (UTF-8, SJIS, EUC-JP) を指定します．
-
-***
-
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　　　　　　言語メニュー／タブ設定　　　　　　 \]\[　　　　　印刷 - 色・余白　　　　　\]\[ 　　　　　　自動保存／入力補完　　　　　　 \]\[　　　　　　その他　　　　　　\]</ins></span><br>
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　　　　全般設定　　　　　　\]\[　　　　　エディット画面　　　　　\]</ins></span><strong>\[　　　　　新規文書／デフォルトフォルダ　　　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　　　ファイルの関連付け　　　　　\]</ins></span><br>
-
-　　　　　　　　　　　　　　　　　　　　新規文書　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　デフォルトフォルダ(開く/保存)<br>
-　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 <span style="color:#3333CC;">◎</span> 選択文書に従う<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> Windows　　　◯ Mac　　　　　　　 ◯ Unix　　　　　　　　　　　　　◯ 最後に選択したフォルダを記憶する<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ◯ <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　<span style="color:#888888;background-color:#EEEEEE;">\[ ... \]</span><br>
-　　　　　　　　　　　　　　　　　　　　エンコード<br>
-　　　　　　　　◯ ANSI　　　　　◯ SJIS　　　　　　　◯ EUC-JP<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)<br>
-　　　　　　　　　　☐Apply to opened ANSI files<br>
-　　　　　　　　◯ UTF-8<br>
-　　　　　　　　◯ UCS-2 Big Endian<br>
-　　　　　　　　◯ UCS-2 Little Endian<br>
-　　　　　　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　▼\]</span><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　閉じる　　\]</span><br>
-
-***
-
-### 自動保存／入力補完 {#b5c8e5f1}
-
-自動補完 (オートコンプリート) の設定ができます．
-
-メニューから補完を行う場合は \[編集(E)\]-\[自動補完\]-\[関数名補完\] または \[単語補完\] で補完できます．
 
 - [自動補完 (Auto Complete) - Notepad++の使用方法](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/edit/auto-complete.htm)
 
