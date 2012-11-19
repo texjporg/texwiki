@@ -73,6 +73,8 @@ Windows, OS X, Linux
 [Evince 2.31.5](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_31_5) から SyncTeX による forward and inverse search が可能になりました．<br>
 [Evince 2.91.0](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0) で D-Bus の仕様が変更されました． → \[[shell\] Add timestamp parameter to SyncView.](http://git.gnome.org/browse/evince/commit/?id=a2b36d8928c30f93f74869b294e72d2484422646)<br>
 [Evince 3.5.5](http://git.gnome.org/browse/evince/commit/?id=3.5.5) で D-Bus のインターフェースに gdbus-codegen が使用されるようになりました． → [daemon: Use gdbus-codegen for the org.gnome.evince.Daemon interface](http://git.gnome.org/browse/evince/commit/?id=1aac15e8098f1b2197f5bcf2430395ee9843eb43)<br>
+fwdevince, evince_forward_search を使用して forward search ができます．<br>
+evince_backward_search を使用して inverse search ができます．<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
 
 ### fwdevince {#ie18c015}
