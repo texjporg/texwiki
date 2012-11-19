@@ -17,17 +17,14 @@ pukiwiki: "Notepad++"
 
 ## Notepad++ とは {#ife0659c}
 
-Notepad++ はフリーでオープンソースなテキストエディタです．
-
-Notepad++ のライセンスは [GPL ライセンス](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)です．
-
+Notepad++ はテキストエディタです．<br>
 Notepad++ は
 
 - LaTeX キーワードの色分け
 - LaTeX キーワードの補完機能
 - 折りたたみ
 
-があります．
+をサポートしています．
 
 - [Notepad++ 公式サイト](http://notepad-plus-plus.org/)
     - [Download](http://notepad-plus-plus.org/download/)
@@ -52,7 +49,11 @@ Notepad++ は
 
 ### 動作環境 {#p5d7567d}
 
-Windows 7, Vista, XP, 2000
+Windows 8, 7, Vista, XP, 2000
+
+### License {#p3f91661}
+
+Notepad++ のライセンスは [GPL ライセンス](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)です．<br>
 
 ### リリース情報 {#d2ceb628}
 
