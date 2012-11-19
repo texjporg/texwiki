@@ -30,6 +30,8 @@ Windows, OS X, Linux
 
 ## プラグイン {#c01f900c}
 
+[geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3) を参照．<br>
+
 ### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
 gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．<br>
@@ -47,12 +49,6 @@ gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにす
 
 ### [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin) {#uc9a113c}
 
-- [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
-- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
-- [Ubuntu 12.10: gedit(3.6.0)でSyncTeX](http://blog.livedoor.jp/ti5942/archives/7580530.html)
-- [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
-- [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
-
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．<br>
 \[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．<br>
 
@@ -66,6 +62,19 @@ TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
 ```
 
 と出て forward search できないかもしれません．
+
+- [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
+- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
+- [Ubuntu 12.10: gedit(3.6.0)でSyncTeX](http://blog.livedoor.jp/ti5942/archives/7580530.html)
+- [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
+- [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
+
+### Code comment {#q8313fab}
+
+Code comment を使用するとコメントアウト，コメントアウトの解除ができます．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Code comment にチェックをいれます．<br>
+
+- [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
 ### 外部ツール {#qa44ee46}
 
