@@ -23,6 +23,10 @@ SyncTeX に対応しています．<br>
 
 KDE
 
+### License {#qbc60c11}
+
+[GPL](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
+
 ### ChangeLog {#h7a9328d}
 
 - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
