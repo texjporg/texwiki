@@ -16,11 +16,18 @@ pukiwiki: "MuPDF"
 MuPDF は軽量な PDF/XPS ビューアです．<br>
 
 - [MuPDF](http://www.mupdf.com/)
-    - [summary](http://git.ghostscript.com/?p=mupdf.git;a=summary)
 
 ### 動作環境 {#u6c9b420}
 
 Windows, OS X, Linux, Android, iOS で動作します．<br>
+
+### License {#kcee43f7}
+
+[GPLv3](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD)
+
+### ChangeLog {#vbbec018}
+
+- [summary](http://git.ghostscript.com/?p=mupdf.git;a=summary)
 
 ## インストール {#m15a5d1f}
 
