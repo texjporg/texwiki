@@ -20,8 +20,6 @@ pukiwiki: "ATP"
 ## Automatic LaTeX Plugin for Vim (ATP) とは {#x5205d30}
 
 Automatic LaTeX Plugin for Vim (ATP) は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイル，プレビューするためのプラグインです．<br>
-ATP は GPLv3 でリリースされています．<br>
-ATP は Vim 7.3 以上で動作します．<br>
 
 - [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)
     - [ATP Requirements](http://atp-vim.sourceforge.net/requirements.shtml)
@@ -29,6 +27,14 @@ ATP は Vim 7.3 以上で動作します．<br>
 - [Automatic LaTex Plugin for Vim / Wiki / Home](http://sourceforge.net/p/atp-vim/wiki/)
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
 - [vim-scripts/AutomaticLaTexPlugin - GitHub](https://github.com/vim-scripts/AutomaticLaTeXPlugin)
+
+### 動作環境 {#tcbad3a2}
+
+ATP は Vim 7.3 以上で動作します．<br>
+
+### License {#s306eff3}
+
+ATP は GPLv3 でリリースされています．<br>
 
 ### ChangeLog {#rf82eb2b}
 
