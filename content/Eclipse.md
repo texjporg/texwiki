@@ -29,6 +29,10 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 [Target Environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments) を参照．
 
+### License {#aa464649}
+
+EPL
+
 ### リリース情報 {#q303f311}
 
 2012-06-27 Eclipse 4.2 (Juno)
