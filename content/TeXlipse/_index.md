@@ -16,11 +16,9 @@ pukiwiki: "TeXlipse"
 
 ## TeXlipse とは {#m60f5d27}
 
-[TeXlipse](https://mirror.ctan.org/help/Catalogue/entries/texlipse.html) は
+TeXlipse は
 [Eclipse](/Eclipse/) の
 [LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html) 用プラグインです．
-
-フリーのオープンソースソフトウェアで，ライセンスは [Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html) です．
 
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
     - [All news](http://texlipse.sourceforge.net/news.php)
@@ -34,6 +32,11 @@ pukiwiki: "TeXlipse"
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
 - [BibSonomy](http://www.bibsonomy.org/)
     - [TeXlipseBibSonomyExtension](http://www.bibsonomy.org/help_en/TeXlipseBibSonomyExtension)
+- [CTAN:help/Catalogue/entries/texlipse.html](https://mirror.ctan.org/help/Catalogue/entries/texlipse.html)
+
+### License {#y9484ed1}
+
+ライセンスは [Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html) です．
 
 ### リリース情報 {#f49b6dcf}
 
@@ -419,15 +422,18 @@ Ctrl+Space で補完を行います．<br>
 ## 関連リンク {#g42d5edd}
 
 - [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
-- [TeX - EclipseWiki](http://www.eclipsewiki.net/eclipse/?TeX)
+    <!-- -[[TeX - EclipseWiki:http://www.eclipsewiki.net/eclipse/?TeX]] -->
+
 - [6. TeXlipse の追加・設定 | Eclipse を使おう別館](http://x19290.appspot.com/using-eclipse/main.html#S6)
 - [7. TeXlipse の利用(動画) | Eclipse を使おう別館](http://19290.net/using-eclipse-annex/07/toc.html)
 - [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
-- [改造版TeXlipse](http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/)
+    <!-- -[[改造版TeXlipse:http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/]] -->
+
 - [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
-- [ms4py / latexmk.py / wiki / Texlipse – Bitbucket](https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse)
+    <!-- -[[ms4py / latexmk.py / wiki / Texlipse – Bitbucket:https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse]] -->
+
 - [TeXlipse as a lightweight portable TeX editor](http://blog.keyboardplaying.org/2012/05/26/texlipse-lightweight-portable-tex-editor/)
 - [TeXlipse is again my favorite LaTeX environment](http://joelslinux.blogspot.jp/2012/05/texlipse-is-again-my-favorite-latex.html)
 - [【Ubuntu,Windows】TexlipseでB4や用紙を横にする場合のdvipdfmxの設定 --- ただ、設定しなくてもtexの記述で指定できる。](http://ankyo.blog.so-net.ne.jp/2012-05-18)
