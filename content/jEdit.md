@@ -16,17 +16,20 @@ pukiwiki: "jEdit"
 ## jEdit とは {#i62e8149}
 
 jEdit は Java で書かれたテキストエディタです．<br>
-jEdit は，オープンソースソフトウェアで，[GPL ライセンス](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)です．<br>
 
 - [jEdit](http://www.jedit.org/)
-- [jEdit Daily Builds](http://www.tellurianring.com/projects/jedit-daily/)
-- [FrontPage - jEd​it Wiki](http://www.telejapan.com/af/jedit_wiki/wiki.cgi)
-- [jEditとは - はてなキーワード](http://d.hatena.ne.jp/keyword/jEdit)
-    - [「jEdit」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/jEdit)
 
 ### 動作環境 {#df224291}
 
 Windows, OS X, Linux などの Java が動作する環境で動作します．<br>
+
+### License {#s3842d45}
+
+jEdit は，オープンソースソフトウェアで，[GPL ライセンス](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)です．<br>
+
+### ChangeLog {#c3f4924b}
+
+- [CHANGES](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/CHANGES.txt)
 
 ### 日本語化ファイル {#ia8fa738}
 
@@ -43,3 +46,10 @@ Windows, OS X, Linux などの Java が動作する環境で動作します．<b
 Windows で Console プラグインを使用して日本語を表示する場合は，メニューの \[プラグイン(P)\]-\[プラグイン オプション(O)...\] の プラグイン -> Console -> General の Character encoding: を windows-31j に変更します．
 
 ### [LaTeXTools](http://plugins.jedit.org/plugins/?LaTeXTools) {#tb5eafb7}
+
+## 関連リンク {#fc59d215}
+
+- [jEdit Daily Builds](http://www.tellurianring.com/projects/jedit-daily/)
+- [FrontPage - jEd​it Wiki](http://www.telejapan.com/af/jedit_wiki/wiki.cgi)
+- [jEditとは - はてなキーワード](http://d.hatena.ne.jp/keyword/jEdit)
+    - [「jEdit」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/jEdit)
