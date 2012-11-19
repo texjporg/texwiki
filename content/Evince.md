@@ -28,6 +28,10 @@ SyncTeX に対応しています．<br>
 
 Windows, OS X, Linux
 
+### License {#lf30b1e1}
+
+[GPL](http://git.gnome.org/browse/evince/tree/COPYING)
+
 ### ChangeLog {#nb7ae766}
 
 - [git](http://git.gnome.org/browse/evince/)
