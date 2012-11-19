@@ -18,17 +18,14 @@ pukiwiki: "サクラエディタ"
 
 ## サクラエディタ とは {#d45d009a}
 
-サクラエディタは国産のフリーでオープンソースなテキストエディタです．
-
+サクラエディタは国産のテキストエディタです．<br>
 サクラエディタは
 
 - TeX の色分け
-- 単語ファイルによる入力補完
+- TeX の入力補完
 - TeX のアウトライン解析
 
 に対応しています．
-
-サクラエディタは，現在 zlib/libpng ライセンスに統一するため，ソースコードのライセンス整備中です．詳細は [ライセンス明確化推進計画](http://sakura.qp.land.to/?Develop/Licenses) を参照してください．
 
 - [サクラエディタ - SourceForge](http://sakura-editor.sourceforge.net/)
     - 掲示板\[[一般\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
@@ -53,7 +50,12 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 7, Vista, XP, 2000 日本語版
+Windows 8, 7, Vista, XP, 2000 日本語版
+
+### License {#y5064e03}
+
+サクラエディタは，現在 zlib/libpng ライセンスに統一するため，ソースコードのライセンス整備中です．<br>
+詳細は [ライセンス明確化推進計画](http://sakura.qp.land.to/?Develop/Licenses) を参照してください．<br>
 
 ### リリース情報 {#qe1b7074}
 
