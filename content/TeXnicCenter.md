@@ -17,10 +17,7 @@ pukiwiki: "TeXnicCenter"
 
 ## TeXnicCenter とは {#rb91ca3f}
 
-TeXnicCenter は
-[LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html)
-ドキュメントを作成するための，多機能で使いやすい統合環境です．<br>
-TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．<br>
+TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
     - [TeXnicCenter News](http://www.texniccenter.org/news)
@@ -29,6 +26,10 @@ TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU 
 ### 動作環境 {#sa939c6e}
 
 Windows 7, Vista, XP
+
+### License {#haaa8397}
+
+TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．<br>
 
 ### リリース情報 {#da101e5c}
 
