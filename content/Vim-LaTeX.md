@@ -20,7 +20,6 @@ pukiwiki: "Vim-LaTeX"
 ## Vim-LaTeX とは {#q4aed643}
 
 Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイル，プレビューするためのプラグインです．<br>
-Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentation/latex-suite/) ([日本語訳](https://sites.google.com/site/vimdocja/uganda-html)) でリリースされています．<br>
 
 - [VIM-LaTeX](http://vim-latex.sourceforge.net/) (公式サイト)
     - [Manual, LaTeX Reference, Tutorial](http://vim-latex.sourceforge.net/manual.shtml)
@@ -29,6 +28,10 @@ Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentati
     - [Screenshots](http://vim-latex.sourceforge.net/screenshots.shtml)
         <!-- -[[micheljansen/vim-latex · GitHub:https://github.com/micheljansen/vim-latex]] -->
         <!-- -[[gerw/vim-latex-suite · GitHub:https://github.com/gerw/vim-latex-suite]] -->
+
+### License {#v798753a}
+
+Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentation/latex-suite/) ([日本語訳](https://sites.google.com/site/vimdocja/uganda-html)) でリリースされています．<br>
 
 ### ChangeLog {#ye1a925a}
 
