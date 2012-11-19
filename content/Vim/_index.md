@@ -22,7 +22,6 @@ Vim は Bram Moolenaar 氏を中心に開発が行われているエディタで
 Vim は，他の多くのエディタと異なり，「モード」という概念が存在します．<br>
 モードを切り替えることで，一つのキーに対して複数の意味を割り当てることができます．<br>
 ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．<br>
-Vim は，チャリティウェアです．[VIM ライセンス](http://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
 - [Vim 公式サイト](http://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
@@ -41,6 +40,11 @@ Vim は，チャリティウェアです．[VIM ライセンス](http://code.goo
 ### 動作環境 {#w6b94f3c}
 
 [download : vim online](http://www.vim.org/download.php) を参照．
+
+### License {#w85a7064}
+
+Vim は，チャリティウェアです．<br>
+[VIM ライセンス](http://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
 ### リリース情報 {#n22b1c9a}
 
