@@ -23,6 +23,10 @@ gedit は GNOME 公式のテキストエディタです．<br>
 
 Windows, OS X, Linux
 
+### License {#bf49560f}
+
+[GPL](http://git.gnome.org/browse/gedit/tree/COPYING)
+
 ### ChangeLog {#z39e4e65}
 
 - [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
