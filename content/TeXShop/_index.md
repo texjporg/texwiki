@@ -35,6 +35,10 @@ TeXShop は TeX 統合環境です．<br>
 > </table>
 >
 
+### License {#x8f63441}
+
+GPL
+
 ### リリース情報 {#td599942}
 
 2012-10-12 [Experimental TeXShop 3.12](http://email.esm.psu.edu/pipermail/macosx-tex/2012-October/050150.html)<br>
