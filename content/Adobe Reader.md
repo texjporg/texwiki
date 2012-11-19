@@ -93,6 +93,16 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
+Adobe Reader XI, Adobe Acrobat XI を使用する場合は
+
+- W32TeX \[2012/10/15\] 以降
+
+または
+
+- TeX Live [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) 以降
+
+が必要です．
+
 ### PDF ファイルを開く {#id6d0918}
 
 ```
