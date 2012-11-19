@@ -25,6 +25,16 @@ Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC
 
 Windows, OS X, Linux
 
+### License {#q7890579}
+
+[GPL](https://github.com/geany/geany/blob/master/COPYING)
+
+### ChangeLog {#n1e93e0e}
+
+- [ChangeLog](http://www.geany.org/Documentation/ChangeLog)
+- [geany/geany · GitHub](https://github.com/geany/geany)
+    - [commit](https://github.com/geany/geany/commits/)
+
 ## Geany で LaTeX {#s0f3de16}
 
 ### ビルドコマンドの設定 {#aaa2ae74}
