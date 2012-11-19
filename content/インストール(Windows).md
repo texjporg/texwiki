@@ -213,6 +213,9 @@ repstopdf,epspdf,extractbb,\
 
 - インストールのやり方などの事例
 
+[TeX Live 2012 インストールメモ](http://purecpp.blogspot.jp/2012/11/TeX-Live-2012.html)
+: 2012-11-19
+
 [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
 : 2012-11-17
 
