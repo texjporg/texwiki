@@ -33,8 +33,8 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=za
 
 ### ChangeLog {#fdab5877}
 
-- [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git)
-    - [開発版](http://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop)
+- [git.pwmt.org Git - zathura.git/shortlog](http://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
+- [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git) (master)
 
 ### 派生版 {#oea86148}
 
