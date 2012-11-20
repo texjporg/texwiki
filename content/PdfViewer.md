@@ -21,6 +21,10 @@ SyncTeX に対応しています．<br>
 
 Linux
 
+### License {#yabb7341}
+
+GPL
+
 ### リリース情報 {#h1e696d1}
 
 2012-10-01 PdfViewer 0.7<br>
