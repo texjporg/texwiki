@@ -11,7 +11,7 @@ pukiwiki: "qpdfview"
 
 ### qpdfview とは {#o070cb99}
 
-qpdfview は PDF ビューアです．<br>
+qpdfview はタブ切り替え型の PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
@@ -20,6 +20,10 @@ SyncTeX に対応しています．<br>
 ### 動作環境 {#g3b31065}
 
 Linux
+
+### License {#v29be396}
+
+GPL
 
 ### リリース情報 {#k3e6b6c1}
 
@@ -31,6 +35,20 @@ Linux
 
 - [CHANGES](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/CHANGES)
 - [コミットログ](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/changes)
+
+## ダウンロード/インストール {#h3948c41}
+
+### Ubuntu {#c6d3b357}
+
+- [Ubuntu -- パッケージ検索結果 -- qpdfview](http://packages.ubuntu.com/ja/qpdfview)
+
+### Debian {#g4ce84b5}
+
+- [Debian -- パッケージ検索結果 -- qpdfview](http://packages.debian.org/ja/qpdfview)
+
+### Arch Linux {#ua5dc612}
+
+- [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
 
 ## 設定 {#uc8afff9}
 
