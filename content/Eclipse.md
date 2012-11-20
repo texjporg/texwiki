@@ -31,7 +31,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### License {#aa464649}
 
-EPL
+[Eclipse Public License (EPL)](http://www.eclipse.org/org/documents/epl-v10.php)
 
 ### リリース情報 {#q303f311}
 
@@ -57,8 +57,6 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 もあります．
 
 ## Eclipse のインストール {#r143ba66}
-
-[Eclipse Wiki](http://eclipsewiki.net/eclipse/) を参照。
 
 Windows の場合 [Pleiades All in One](http://mergedoc.sourceforge.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
 
@@ -93,9 +91,9 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
 - Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
-- Eclipse Wiki - [http://eclipsewiki.net/eclipse/](http://eclipsewiki.net/eclipse/)
+        <!-- -Eclipse Wiki - http://eclipsewiki.net/eclipse/ -->
+
 - [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
 - [OpenJDK](http://openjdk.java.net/)
-- [OpenJDK 7 and 8 for OS/X Snow, Lion and Mountain Lion](http://code.google.com/p/openjdk-osx-build/)
     <!-- -[[Java for OS X 2012-004:http://support.apple.com/kb/DL1515]] -->
     <!-- -[[Java for Mac OS X 10.6 Update 9:http://support.apple.com/kb/DL1550]] -->
