@@ -25,6 +25,10 @@ Linux, BSD
 
 [Known supported distributions](http://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
 
+### License {#v6901e72}
+
+[zlib/libpng License](http://git.pwmt.org/?p=zathura.git;a=blob;f=LICENSE;hb=HEAD)
+
 ### リリース情報 {#p5c718a4}
 
 2012-08-30 zathura 0.2.1<br>
