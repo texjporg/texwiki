@@ -781,6 +781,7 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 
 ## [Inkscape](/Inkscape/) との連携 {#r74179c0}
 
+- [LyXとInkscapeを連携させる](http://shogo82148.hatenablog.com/entry/20100521/1274429760)
 - [LyXとInkscapeを連携させる](http://ec16090p.qlookblog.net/2010/05/21.html)
 - [LyX wiki | Tips / UseInkscapeSVGImages](http://wiki.lyx.org/Tips/UseInkscapeSVGImages)
 
