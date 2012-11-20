@@ -102,7 +102,16 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 ## 不具合 {#t2a5d9cf}
 
-[SourceForge.net: TeXlipse: Bugs](http://sourceforge.net/tracker/?group_id=133306&atid=726818) を参照．
+- [SourceForge.net: TeXlipse: Bugs](http://sourceforge.net/tracker/?group_id=133306&atid=726818)
+- [Issues · Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse/issues)
+
+を参照．
+
+### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは TeXworks, SumatraPDF, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示する {#c876c383}
+
+- [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) → closed
+
+PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない場合は PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは TeXworks, SumatraPDF, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示することができます．<br>
 
 <!-- **TeXlipse 1.5.0 で \bibliography がうまく動作しない [#i3d2f9c0] -->
 <!--  -->
