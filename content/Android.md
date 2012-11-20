@@ -17,18 +17,25 @@ pukiwiki: "Android"
     - [build](https://github.com/anhoavu/TeXAndroid/tree/master/build)
 - [TeX Live for Android](http://code.google.com/p/texlive-for-android/)
 
+## PDF ビューア {#t5fdeba9}
+
+- [MuPDF](/MuPDF/)
+- [Adobe Reader](</Adobe Reader/>)
+
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
+- [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
+- [Jota Text Editor](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota)
 
 ### フリーウェア (無料) {#pfa162c4}
 
-- [VerbTeX LaTeX Editor](https://market.android.com/details?id=verbosus.verbtex)
+- [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [Portable LaTeX Editor](https://play.google.com/store/apps/details?id=manescu.latex.editor)
 
 ### シェアウェア・製品 {#z7716277}
 
-- [VerbTeX Pro LaTeX (Encryption)](https://market.android.com/details?id=verbosus.verbtexpro)
+- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro)
