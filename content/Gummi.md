@@ -22,6 +22,10 @@ Live preview 機能があります．<br>
 
 Windows, Linux
 
+### License {#id4a8ae8}
+
+[MIT License](http://dev.midnightcoding.org/projects/gummi/repository/entry/trunk/COPYING)
+
 ### リリース情報 {#m146a8fe}
 
 2012-10-20 Gummi 0.6.5<br>
@@ -29,3 +33,4 @@ Windows, Linux
 ### ChangeLog {#r24dbedd}
 
 - [ChangeLog](http://svn.midnightcoding.org/gummi/trunk/ChangeLog)
+- [ChangeLog](http://dev.midnightcoding.org/projects/gummi/repository/entry/trunk/ChangeLog)
