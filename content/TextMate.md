@@ -19,7 +19,6 @@ TextMate はテキストエディタです．<br>
 
 - [TextMate](http://macromates.com/)
 - [textmate/textmate · GitHub](https://github.com/textmate/textmate)
-    - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 - [trunk/dports/editors/textmate2/Portfile](https://trac.macports.org/browser/trunk/dports/editors/textmate2/Portfile)
 
 ### 動作環境 {#v52c157b}
@@ -40,6 +39,10 @@ TextMate 1 はシェアウェアです．<br>
 ### ChangeLog {#mc3d9df2}
 
 - [Commit History · textmate/textmate · GitHub](https://github.com/textmate/textmate/commits/)
+
+## ダウンロード {#h1cc4e60}
+
+- [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 
 ## TextMate 2 for Snow Leopard {#g205429c}
 
