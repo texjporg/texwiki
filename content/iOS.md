@@ -16,6 +16,11 @@ pukiwiki: "iOS"
 - [TeX Live for iPhone](http://gamma-level.com/iphoneos/ports/texlive)
 - [How TeX made it to the iOS App Store - running on DOS, inside an emulator | Hacker News](http://news.ycombinator.com/item?id=4438047)
 
+## PDF ビューア {#cf5b731d}
+
+- [MuPDF](/MuPDF/)
+- [Adobe Reader](</Adobe Reader/>)
+
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
 [iTextEditors](http://brettterpstra.com/ios-text-editors/) を参照．
