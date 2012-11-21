@@ -34,3 +34,7 @@ Windows, Linux
 
 - [ChangeLog](http://svn.midnightcoding.org/gummi/trunk/ChangeLog)
 - [ChangeLog](http://dev.midnightcoding.org/projects/gummi/repository/entry/trunk/ChangeLog)
+
+### スクリーンショット {#e08c4a5a}
+
+[![スクリーンショット](http://dev.midnightcoding.org/attachments/240/gummi-overview.png)](http://dev.midnightcoding.org/projects/gummi/wiki/Screenshots)
