@@ -53,7 +53,7 @@ Windows 8, 7, Vista, XP, 2000
 
 ### License {#p3f91661}
 
-Notepad++ のライセンスは [GPL ライセンス](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)です．<br>
+[GPL](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
 
 ### リリース情報 {#d2ceb628}
 
