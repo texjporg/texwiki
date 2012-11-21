@@ -130,4 +130,12 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 使用できるコマンドやフォントの詳細は[CTAN:fonts/tipa/tipaman.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/tipa/tipaman.pdf)
 をご参照ください。
 
+## 関連リンク {#vd0297b3}
+
+- [コンピューターの部屋 TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
+    @ 東京大学大学院 人文社会系研究科 韓国朝鮮文化研究専攻）
+
+- [LaTeX と TIPA を用いて音声科学／音声学する](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)［[Internet Archive](http://www.archive.org/)
+    によるウェブアーカイブ］（藤野さん）
+
 [^1]: 古い [TDS](https://mirror.ctan.org/help/Catalogue/entries/tds.html) では $TEXMFLOCAL/dvips/config/ でした。
