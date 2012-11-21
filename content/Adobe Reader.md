@@ -57,19 +57,39 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 - [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
     - [http://get.adobe.com/jp/reader/](http://get.adobe.com/jp/reader/) (最新版)
     - [http://get.adobe.com/jp/reader/otherversions/](http://get.adobe.com/jp/reader/otherversions/) (以前のバージョン)
-- [http://www.adobe.com/support/downloads/new.jsp](http://www.adobe.com/support/downloads/new.jsp)
-    - Adobe Reader
-        - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
-        - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh)
-        - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix)
-    - Adobe Acrobat
-        - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
-        - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
-            <!-- - --http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Unix -->
+        <!-- -http://www.adobe.com/support/downloads/new.jsp -->
 
-- [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
-- [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
-- [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
+### Windows {#l93a8183}
+
+- Adobe Reader
+    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
+- Adobe Acrobat
+    - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
+
+### OS X {#e9b65d66}
+
+- Adobe Reader
+    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
+- Adobe Acrobat
+    - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
+
+### Linux {#v6f09b59}
+
+- Adobe Reader
+    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
+        <!-- -Adobe Acrobat -->
+        <!-- - -http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Unix -->
+
+### Android {#k545c7f3}
+
+- [Adobe Reader - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
+
+### iOS {#ac2b971a}
+
+- [Adobe Reader - iTunes - Apple](https://itunes.apple.com/jp/app/adobe-reader/id469337564?mt=8)
 
 ## アンインストール {#j28c578e}
 
@@ -163,6 +183,7 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
 - [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
 - [DDE通信を使用してPDFファイルを印刷する](http://www.knowledge-base.jp/2010/02/06/pdf-7/)
+- [Acrobat XIで保存したPDFファイルはTeXworksで使えない。](http://kilin.clas.kitasato-u.ac.jp/wordpress/?p=18487)
 - [Adobe Reader XI](http://days-of-mac.blog.ocn.ne.jp/blog/2012/10/adobe-reader-xi.html)
 - [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
 - [Windows 2000 に Adobe Reader XI を入れてみたよ](http://blog.livedoor.jp/blackwingcat/archives/1719451.html)
