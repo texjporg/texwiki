@@ -365,17 +365,17 @@ Gummi
 EasyTeX
 : EasyTeX をご覧ください．
 
-[WinShell](/WinShell/)
-: [WinShell](/WinShell/) をご覧ください．
-
-Yotuba TeX Editor
-: Yotuba TeX Editor をご覧ください．
-
 Visual Windows for TeX
 : Visual Windows for TeX をご覧ください．
 
 Masamichi
 : Masamichi をご覧ください．
+
+Yotuba TeX Editor
+: Yotuba TeX Editor をご覧ください．
+
+[WinShell](/WinShell/)
+: [WinShell](/WinShell/) をご覧ください．
 
 ### シェアウェア {#yec6bbe1}
 
