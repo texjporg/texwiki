@@ -123,6 +123,8 @@ ulimit -t 10 -f 1024
 - [Online Latex Editor](http://luikore.github.com/latex/)
 - [writeLaTeX](http://writelatex.com/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
+- [LaTeX Lab](http://code.google.com/p/latex-lab/)
+    - [Google-Docs Base Editor (GDBE)](http://code.google.com/p/gdbe/)
 
 ***
 
