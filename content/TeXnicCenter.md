@@ -21,6 +21,7 @@ TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
     - [TeXnicCenter News](http://www.texniccenter.org/news)
+- [TeXnicCenter | Free Business &amp; Enterprise software downloads at SourceForge.net](http://sourceforge.net/projects/texniccenter/)
 - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
 ### 動作環境 {#sa939c6e}
@@ -29,7 +30,7 @@ Windows 7, Vista, XP
 
 ### License {#haaa8397}
 
-TeXnicCenter は，フリーのオープンソースソフトウェアで，GNU GPL ライセンスでリリースされています．<br>
+[GPL](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/file/tip/COPYING)
 
 ### リリース情報 {#da101e5c}
 
@@ -61,6 +62,8 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 - [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
 
 ## 不具合 {#p40a9a4a}
+
+- [SourceForge.net: TeXnicCenter: Bugs](http://sourceforge.net/tracker/?group_id=36323&atid=416430)
 
 ### TeXnicCenter 2.0 Beta 1 で折りたたみ機能がうまく動作しない {#w34c78b7}
 
