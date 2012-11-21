@@ -55,8 +55,8 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 ## ダウンロード {#ne09e93f}
 
 - [http://www.adobe.com/jp/products/reader.html](http://www.adobe.com/jp/products/reader.html)
-    - [http://get.adobe.com/jp/reader/](http://get.adobe.com/jp/reader/) (最新版)
-    - [http://get.adobe.com/jp/reader/otherversions/](http://get.adobe.com/jp/reader/otherversions/) (以前のバージョン)
+    - [http://get.adobe.com/jp/reader/](http://get.adobe.com/jp/reader/) (最新バージョン)
+    - [http://get.adobe.com/jp/reader/otherversions/](http://get.adobe.com/jp/reader/otherversions/) (最新バージョンおよび旧バージョン)
         <!-- -http://www.adobe.com/support/downloads/new.jsp -->
 
 ### Windows {#l93a8183}
