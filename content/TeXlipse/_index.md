@@ -36,7 +36,7 @@ TeXlipse は
 
 ### License {#y9484ed1}
 
-ライセンスは [Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html) です．
+[Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html)
 
 ### リリース情報 {#f49b6dcf}
 
