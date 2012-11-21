@@ -28,7 +28,7 @@ Windows 7, Vista, XP
 
 ### リリース情報 {#r8be4c06}
 
-2012-10-20 Masamichi 7.3.0.6<br>
+2012-10-20 Masamichi 7.4.0.2<br>
 
 ### スクリーンショット {#jf651a64}
 
