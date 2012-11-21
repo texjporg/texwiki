@@ -23,7 +23,7 @@ Linux
 
 ### License {#v29be396}
 
-GPL
+[GPLv2](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/COPYING)
 
 ### リリース情報 {#k3e6b6c1}
 
