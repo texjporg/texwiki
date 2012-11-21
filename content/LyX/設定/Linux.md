@@ -104,7 +104,7 @@ PDFコマンドは PdfViewer を使用します．<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
-　PDFコマンド: <ins>pdfviewer "$$o#src:$$n $$t"</ins><br>
+　PDFコマンド: <ins>pdfviewer "file:$$o#src:$$n $$t"</ins><br>
 
 ***
 
