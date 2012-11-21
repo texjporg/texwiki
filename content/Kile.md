@@ -27,6 +27,36 @@ Kile は TeX の統合環境です．<br>
 
 KDE
 
+### License {#bd454552}
+
+[GPL](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/COPYING)
+
+## ダウンロード/インストール {#a3a3000b}
+
+### Windows {#dba81ec6}
+
+- [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
+
+### Ubuntu {#b7368c5d}
+
+- [Ubuntu -- パッケージ検索結果 -- kile](http://packages.ubuntu.com/ja/kile)
+
+### Debian {#te2ad223}
+
+- [Debian -- パッケージ検索結果 -- kile](http://packages.debian.org/ja/kile)
+
+### Fedora {#zdfde6e5}
+
+- [Fedora Package Database -- kile](https://admin.fedoraproject.org/pkgdb/acls/name/kile)
+
+### openSUSE {#d4893a59}
+
+- [http://software.opensuse.org/package/kile](http://software.opensuse.org/package/kile)
+
+### Arch Linux {#z65493ff}
+
+- [https://www.archlinux.org/packages/?q=kile](https://www.archlinux.org/packages/?q=kile)
+
 ## 設定 {#g12179be}
 
 \[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
