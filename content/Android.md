@@ -20,6 +20,7 @@ pukiwiki: "Android"
 ## PDF ビューア {#t5fdeba9}
 
 - [MuPDF](/MuPDF/)
+- [Mu++ PDFビューア](https://play.google.com/store/apps/details?id=com.artifex.tml2.mupdf)
 - [Adobe Reader](</Adobe Reader/>)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
