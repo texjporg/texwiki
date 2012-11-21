@@ -25,7 +25,7 @@ Windows, OS X, Linux などの Java が動作する環境で動作します．<b
 
 ### License {#s3842d45}
 
-jEdit は，オープンソースソフトウェアで，[GPL ライセンス](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)です．<br>
+[GPL](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)
 
 ### ChangeLog {#c3f4924b}
 
