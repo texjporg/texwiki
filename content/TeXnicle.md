@@ -22,6 +22,10 @@ TeXnicle は TeX 統合環境です．
 
 OS X 10.8, 10.7, 10.6.8
 
+### License {#s7995e80}
+
+BSD 2-Clause
+
 ### ChangeLog {#s78f6912}
 
 - [Commit History · martinhewitson/TeXnicle · GitHub](https://github.com/martinhewitson/TeXnicle/commits/)
