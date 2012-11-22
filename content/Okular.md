@@ -27,6 +27,10 @@ KDE
 
 [GPL](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
 
+### リリース情報 {#v4dc0489}
+
+[Development News](http://okular.kde.org/news.php) を参照．<br>
+
 ### ChangeLog {#h7a9328d}
 
 - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
