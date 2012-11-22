@@ -43,11 +43,19 @@ Inkscape は，オープンソースのベクターグラフィックエディ�
 
 Windows, OS X, Linux で動作します．<br>
 
+### License {#ibc5e002}
+
+[GPL](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
+
 ### リリース情報 {#d961699f}
 
-2012-03-23 Inkscape 0.48.3.1 がリリースされました．
+2012-03-23 Inkscape 0.48.3.1<br>
 
-### ダウンロード {#i5a8dfd7}
+### ChangeLog {#q8a7ad68}
+
+[Changes](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
+
+## ダウンロード {#i5a8dfd7}
 
 - [ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
 - [http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
