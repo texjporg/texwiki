@@ -32,6 +32,10 @@ Windows, OS X, Linux
 
 [GPL](http://git.gnome.org/browse/evince/tree/COPYING)
 
+### リリース情報 {#m8e1200a}
+
+[http://git.gnome.org/browse/evince/refs/tags](http://git.gnome.org/browse/evince/refs/tags) を参照．<br>
+
 ### ChangeLog {#nb7ae766}
 
 - [git](http://git.gnome.org/browse/evince/)
