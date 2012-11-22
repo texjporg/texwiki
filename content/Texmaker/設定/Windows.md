@@ -25,7 +25,7 @@ PDF ビューアに TeXworks を使用する場合は [TeXworks#組み込みの 
 
 #### [W32TeX](/W32TeX/) (自動判別の場合) {#cd578b1e}
 
-W32TeX はデフォルトでは [ptexenc](</TeX Live/#r2b98f9b>) を用いて自動判別します．
+W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 ***
 
