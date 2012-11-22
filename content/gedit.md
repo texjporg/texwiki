@@ -34,7 +34,10 @@ Windows, OS X, Linux
 
 ## プラグイン {#c01f900c}
 
-[geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3) を参照．<br>
+- [geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
+- [LaTeX入門 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX%E5%85%A5%E9%96%80)
+
+を参照．<br>
 
 ### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
