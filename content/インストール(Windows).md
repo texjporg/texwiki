@@ -389,9 +389,3 @@ Sublime Text (シェアウェア) + LaTeXTools (LaTeX Plugin for Sublime Text 2)
 
 InftyEditor (製品)
 : InftyEditor をご覧下さい．<br>InftyEditor 学生版と InftyEditor 英語版はフリーウェア (無料) です．
-
-Scientific WorkPlace (製品)
-: Scientific WorkPlace をご覧ください．
-
-WZ EDITOR (製品)
-: WZ EDITOR をご覧ください．
