@@ -26,7 +26,13 @@ pukiwiki: "XeTeX"
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [The XeTeX Archives](http://tug.org/pipermail/xetex/) (TUG)
 - [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
-    - [http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex)
+
+#### ChangeLog {#w3545bdb}
+
+- [http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex)
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
 
 #### 概要 {#n5d8d950}
 
