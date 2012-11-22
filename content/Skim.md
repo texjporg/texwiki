@@ -28,11 +28,11 @@ OS X 10.5 以降
 
 ### License {#o9f5d76f}
 
-- [BSD 3-Clause](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/LICENSE?view=markup)
+[BSD 3-Clause](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/LICENSE?view=markup)
 
 ### リリース情報 {#z7f1eead}
 
-2012-08-31 Skim 1.3.22<br>
+[Release Notes](http://skim-app.sourceforge.net/relnotes.html) を参照．<br>
 
 ### ChangeLog {#l1a8874a}
 
