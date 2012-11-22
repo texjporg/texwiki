@@ -12,9 +12,23 @@ pukiwiki: "dvisvgm"
 dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェアです．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
+- [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
 - [TeX Live - TeX Wiki#dvisvgm](</TeX Live/#s8483053>)
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．
+### License {#b1b30f5a}
+
+[GPLv3](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/COPYING)
+
+### ChangeLog {#j5462a82}
+
+- [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
+- [dvisvgm / Code / Browse Commits](http://sourceforge.net/p/dvisvgm/code/commit_browser)
+- \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
+
+### 使い方 {#he5a75c1}
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して dvisvgm を使わずに poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．
 
 ```
 
