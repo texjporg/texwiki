@@ -9,13 +9,18 @@ pukiwiki: "dvips"
 
 ## dvips {#y40d302b}
 
-\[未完\]
+<strong>目次</strong>
 
-### dvips {#wd6b3c4e}
+### dvips とは {#lb7ddcdb}
+
+dvips は DVI ファイルを PS ファイルに変換するソフトウェアです．
 
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
 - [Dvips(k)](http://www.tug.org/dvips/)
+
+### ChangeLog {#o96c7d5c}
+
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
 
