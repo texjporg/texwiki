@@ -67,7 +67,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
 - [変更履歴(2011/02/11～)](http://sakura-editor.sourceforge.net/htmlhelp2/HLP_UR015.html)
-- [Code Log](http://sourceforge.net/p/sakura-editor/code/log/)
+- [log](http://sourceforge.net/p/sakura-editor/code/log/)
 - [Sakura Editor / Code / Browse Commits](http://sourceforge.net/p/sakura-editor/code/commit_browser)
 
 ### 改造版 {#mc0d532c}
