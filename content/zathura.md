@@ -31,7 +31,7 @@ Linux, BSD
 
 ### リリース情報 {#p5c718a4}
 
-2012-08-30 zathura 0.2.1<br>
+[News](http://pwmt.org/news/) を参照．<br>
 
 Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
