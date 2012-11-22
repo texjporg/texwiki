@@ -22,6 +22,20 @@ upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてU
     - CJK(日中韓)各言語の混植
     - 欧文TeXのUnicode入力、babelとの親和性向上
 
+### ChangeLog {#le7df259}
+
+#### upTeX {#na27195e}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/uptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/ChangeLog?view=markup)
+
+#### e-upTeX {#s277beb8}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/euptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
+
 ### インストール {#d62d0a5a}
 
 #### Windows {#sa412321}
