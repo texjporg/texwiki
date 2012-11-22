@@ -32,10 +32,33 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### リリース情報 {#if427aa7}
 
-2012-11-14 xeCJK 3.1.0<br>
 2012-11-01 W32TeX \[2012/11/01\] の更新で xeCJK 3.0.10 になりました．<br>
 
 ### 不具合 {#t2600dd9}
+
+#### xeCJK error: "l3-too-old" → l3kernel, l3packages をアップデートする {#se187b49}
+
+[xeCJK 3.1.0 r368](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=368) 以降で xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! xeCJK error: "l3-too-old"
+!
+! Support package 'xtemplate' too old.
+!
+! Please update an up to date version of the bundles
+!
+! 'l3kernel' and 'l3packages'
+!
+! using your TeX package manager or from CTAN.
+!
+!
+! See the xeCJK documentation for further information.
+!
+! Type <return> to continue.
+!...............................................
+```
 
 #### [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) でエラーが発生する → l3kernel, l3packages をアップデートする {#ve3267d4}
 
