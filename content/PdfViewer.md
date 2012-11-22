@@ -27,4 +27,4 @@ GPL
 
 ### リリース情報 {#h1e696d1}
 
-2012-10-01 PdfViewer 0.7<br>
+[glad's&nbsp;contents](http://qt-apps.org/usermanager/search.php?username=glad&action=contents) を参照．<br>
