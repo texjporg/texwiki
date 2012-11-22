@@ -419,7 +419,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
     - [https://bitbucket.org/pv/textext/issue/55/textext-using-inkscape048](https://bitbucket.org/pv/textext/issue/55/textext-using-inkscape048)
     - [https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape](https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape)
 - [Inkscape Portable with Textext (MikTex, pstoedit, gs)](http://portableapps.com/node/28897)
-- [textext, pdf2svg on Windows](http://hil.t.u-tokyo.ac.jp/~t-nakano/textext_pdf2svg.html)
+- [textext, pdf2svg on Windows](http://tako.nakano.net/textext_pdf2svg.html)
 - [Inkscape 0.4.8+TexText](http://blog.nhiroki.net/2012/10/04/textext_on_windows)
 - [textext で使う my.sty](http://kreisel.fam.cx/webmaster/clog/2011-11-23-1.html)
 - [ぼやっきんぐ   &raquo; Inkscape](http://www.empitsu.com/wp/?cat=8)
@@ -845,7 +845,7 @@ XMLSyntaxError: Document is empty, line 1, column 1
 
 Converter には pstoedit の他に [pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg) もあります．
 
-pdf2svg の Windows バイナリが [textext, pdf2svg on Windows](http://hil.t.u-tokyo.ac.jp/~t-nakano/textext_pdf2svg.html) からダウンロードできます．
+pdf2svg の Windows バイナリが [textext, pdf2svg on Windows](http://tako.nakano.net/textext_pdf2svg.html) からダウンロードできます．
 
 pdf2svg は日本語の PDF も SVG に変換可能ですが poppler-data の配置場所と fontconfig の FONTCONFIG_PATH が正しく設定されていることが必要です．
 
