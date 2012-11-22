@@ -13,10 +13,12 @@ pTeX 上で多言語混在文書を扱う方法を
 まとめたものとして，[稲垣徹さん](http://www2.tba.t-com.ne.jp/ing/)による
 「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
 「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」
-が知られています。ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，
+が知られています。<br>
+ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，
 中文）・韓國語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては
 取り扱っていませんし，個々のパッケージのインストール方法についても一部の
-パッケージについては割愛しています。そこで稲垣さんが取り上げてくださることを
+パッケージについては割愛しています。<br>
+そこで稲垣さんが取り上げてくださることを
 期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
 
 この文書では基本的に Microsoft Windows を想定して書いていますが，UNIX 互換
@@ -494,7 +496,7 @@ foo.pdfを開くとタイ語と日本語が共存しているはずです。
 韓國語（&#xd55c;&#xad6d;&#xc5b4;）
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
 KoreanTeX （pLaTeX2e に対応している
-のは[kTeX 1.2.2 ［Internet Archive のウェブアーカイブ］](http://web.archive.org/web/20001017012754/http://www.tooyoo.l.u-tokyo.ac.jp/TeX/KoreanTeX/ktex-122.zip)）
+のは[kTeX 1.2.2](http://www.khotta.org/ghost/ktex/ktex-122.zip)）
 がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，
 後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
@@ -1561,26 +1563,19 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 
 一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
 元々附属しているメモ帳 (Notepad) の他に
-フリーウェアとして
+オープンソースソフトウェアとして
 [Emacs](/Emacs/) ([emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839)，[GNU emacs(x64)](http://hp.vector.co.jp/authors/VA052357/emacs.html))，
 [Vim](/Vim/)，
 [xyzzy](/xyzzy/)，
 jEdit，
 [FooEditor](http://sourceforge.jp/projects/fooeditor/)，
-[oedit](http://www.hi-ho.ne.jp/a_ogawa/oedit/)/[otbedit](http://www.hi-ho.ne.jp/a_ogawa/otbedit/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 [真魚［まな］](http://mana.ikuto.com/)，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [AkelPad](http://akelpad.sourceforge.net/)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
-[EmEditor Free](http://www.forest.impress.co.jp/lib/offc/document/txteditor/emeditor.html)，
 [Yudit](http://www.yudit.org/)
-などが，シェアウェアと
-して [秀丸エディタ](</秀丸エディタ/>) ([学生などは無料で利用できます](http://hide.maruo.co.jp/support/hidemarufree.html))，
-[EmEditor Professional](http://jp.emeditor.com/)
-などが，製品として
-WZ EDITOR
 などがあります。
 ただ，xyzzy はタイ語などには
 対応していません。emacs for gnupack，GNU emacs(x64) は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
