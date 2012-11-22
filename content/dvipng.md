@@ -29,7 +29,18 @@ Version 1.9 から サブフォントに対応しているので、サブフォ�
 
 mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+### License {#s323d9c3}
+
+[LGPLv3](http://cvs.savannah.gnu.org/viewvc/dvipng/COPYING.LESSER?root=dvipng&view=markup)
+
+### ChangeLog {#b9b69757}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/dvipng](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/?view=log)
+
+### 使い方 {#ic72a209}
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して dvipng を使わずに poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
 
 ```
 $ pdftocairo -png hoge.pdf
