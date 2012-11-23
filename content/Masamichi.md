@@ -17,10 +17,10 @@ Masamichi は国産でフリーの TeX 用エディタです．<br>
 簡単な表計算モードと HTML 作成機能が付いています．<br>
 Windows で使える，機能的で，軽い TeX 用のエディタがあまり無いので，[秀丸エディタ](</秀丸エディタ/>) + [WinShell](/WinShell/) + α を目標に作成されたそうです．<br>
 
-- [Project Masamichi 「雅理」](http://www.tam.ne.jp/hiraba/programs/)
+- [Project Masamichi 「雅理」](http://www.tam.ne.jp/hiraba/programs/) (Japenese Version)
+    - [Masamichi Editor](http://www.tam.ne.jp/hiraba/programs/Masamichi/)
     - [「雅理」 エディタの機能紹介](http://www.tam.ne.jp/hiraba/programs/descrip.html)
-    - [更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)
-- [Masamichi Editor](http://www.tam.ne.jp/hiraba/programs/Masamichi/)
+- [Project Masamichi](http://www.tam.ne.jp/hiraba/programs/eindex.html) (English Version)
 
 ### 動作環境 {#vf2fe6c8}
 
@@ -28,7 +28,11 @@ Windows 7, Vista, XP
 
 ### リリース情報 {#r8be4c06}
 
-2012-10-20 Masamichi 7.4.0.2<br>
+2012-11-23 Masamichi 7.4.0.34<br>
+
+### ChangeLog {#s9b4b0e5}
+
+[更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)
 
 ### スクリーンショット {#jf651a64}
 
