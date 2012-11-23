@@ -21,7 +21,6 @@ pukiwiki: "BibTeX関連ツール"
 |  [KBibTeX](http://home.gna.org/kbibtex/) |  KDE 4  | KDE 用の BibTeX エディタ。 |
 |  [Mendeley](http://www.mendeley.com/)  |  Web ブラウザ, Windows, Mac OS X, Linux  | 文献管理ソフト |
 | [BibTeX Online Editor](http://truben.no/latex/bibtex/) |  Web ブラウザ  | オンラインの BibTeX エディタ |
-| [Ref for Windows](http://members3.jcom.home.ne.jp/refwin/) |  Windows | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://members3.jcom.home.ne.jp/refwin/html/latex.htm)．開発は QRef に移行し，Ref 98，Ref 2000は開発を停止．バグフィックスのみをおこないます． |
 |  [Tellico](http://tellico-project.org/)  |  KDE >= 4, Qt >= 4, libxml2, libxslt1 >= 1.0.19  |  KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。日本語不可。 |
 |  [KBib](http://users.tpg.com.au/thachly/kbib/) |  KDE  | KDE 用の BibTeX エディタ。 |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ。 |
