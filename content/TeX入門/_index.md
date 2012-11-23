@@ -29,8 +29,8 @@ TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。現在のバージョン番号は 3.1415926 です。LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
 の上に構築した文書処理システムです。いずれもフリーウェアであり，[Microsoft Windows](http://www.microsoft.com/japan/windows/)，UNIX&reg;（[OS X](http://www.apple.com/jp/osx/)，[Oracle Solaris](http://www.oracle.com/jp/products/servers-storage/solaris/)，[AIX](http://www-06.ibm.com/systems/jp/power/software/aix/) など），UNIX 互換
-OS（Linux OS，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
-など）など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
+OS（[Linux OS](http://kernel.org/)，BSD 系 OS，[OpenIndiana](http://openindiana.org/)
+など），モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
 日本では TeX，LaTeX
 を株式会社アスキー（現：[株式会社アスキー・メディアワークス](http://asciimw.jp/)）が日本語化した
