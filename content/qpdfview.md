@@ -14,7 +14,7 @@ pukiwiki: "qpdfview"
 qpdfview はタブ切り替え型の PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
-ファイルの自動更新機能 (Auto-refresh) はデフォルでは無効になっているので設定で有効にする必要があります．<br>
+ファイルの自動更新機能 (Auto-refresh) はデフォルトでは無効になっているので設定で有効にする必要があります．<br>
 
 - [qpdfview](https://launchpad.net/qpdfview)
 
