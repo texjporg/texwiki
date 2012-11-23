@@ -38,6 +38,7 @@ ATP は GPLv3 でリリースされています．<br>
 
 ### ChangeLog {#rf82eb2b}
 
+- [log](http://sourceforge.net/p/atp-vim/code/ci/master/log/)
 - [コミットログ](http://sourceforge.net/p/atp-vim/code/commit_browser)
 
 ## ATP の動作に必要なもの {#g428a1c8}
