@@ -381,7 +381,7 @@ Vim-LaTeX では，折りたたみに関しては以下の 2 つの操作を覚�
 
 \ll, \lv, \ls は素早く入力する必要があります．
 
-pxdvi, Active-DVI, dviout, gv, TeXworks, SumatraPDF, Skim, Evince, Okular, zathura, qpdfview, PdfViewer には，ファイルの自動更新機能があります．<br>
+プレビューはファイルの自動更新機能をサポートしているビューアを使用します．<br>
 \ll でコンパイルして \lv でビューアを起動すれば，その後は \lv をもう一度タイプしなくても OK です．<br>
 TeX ファイルを保存して \ll でコンパイルすれば，自動的に再描画してくれます．<br>
 
