@@ -31,18 +31,18 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
-2012-11-09 poppler 0.21.1<br>
+2012-11-22 poppler 0.21.2<br>
 2012-10-10 poppler 0.20.5<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
-- [Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc](https://bugs.freedesktop.org/show_bug.cgi?id=48046)
-- \[[Bug 48046\] New: ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc - poppler-bugs.lists.freedesktop.org - ArchiveOrange](http://web.archiveorange.com/archive/v/RybTrzJz0TKVhTDfV9z3)
-- [ttc&lt;->ttf fallback is expected for CJK font list in GlobalParamsWin.cc](http://cgit.freedesktop.org/poppler/poppler/commit/?id=f5b708c3e04ba50756cd9f9530cf82f547443ce9)
-- [per-collection fallback for missing CID-keyed fonts on Win32](http://cgit.freedesktop.org/poppler/poppler/commit/?id=4a38d933d06d189317b1b9028c3fa4ae2a1551af)
-- [CJK improvements](http://cgit.freedesktop.org/poppler/poppler/commit/?id=55d039ada063a9427de6dd59846ce1570ab26e9f)
-- [CJK substitute implementation on WIndows platforms.](http://cgit.freedesktop.org/poppler/poppler/commit/?id=dae29c6c201cd69cbf4f008de865cc19a36f29b3)
-- [Improve CJK suport in PSOutputDev](http://cgit.freedesktop.org/poppler/poppler/commit/?id=32e47ee03840cc8f21c00497025864d77edb75f5)
+<!-- -[[Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc:https://bugs.freedesktop.org/show_bug.cgi?id=48046]] -->
+<!-- -[[[Bug 48046] New: ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc - poppler-bugs.lists.freedesktop.org - ArchiveOrange:http://web.archiveorange.com/archive/v/RybTrzJz0TKVhTDfV9z3]] -->
+<!-- -[[ttc<->ttf fallback is expected for CJK font list in GlobalParamsWin.cc:http://cgit.freedesktop.org/poppler/poppler/commit/?id=f5b708c3e04ba50756cd9f9530cf82f547443ce9]] -->
+<!-- -[[per-collection fallback for missing CID-keyed fonts on Win32:http://cgit.freedesktop.org/poppler/poppler/commit/?id=4a38d933d06d189317b1b9028c3fa4ae2a1551af]] -->
+<!-- -[[CJK improvements:http://cgit.freedesktop.org/poppler/poppler/commit/?id=55d039ada063a9427de6dd59846ce1570ab26e9f]] -->
+<!-- -[[CJK substitute implementation on WIndows platforms.:http://cgit.freedesktop.org/poppler/poppler/commit/?id=dae29c6c201cd69cbf4f008de865cc19a36f29b3]] -->
+<!-- -[[Improve CJK suport in PSOutputDev:http://cgit.freedesktop.org/poppler/poppler/commit/?id=32e47ee03840cc8f21c00497025864d77edb75f5]] -->
 
 ## インストール {#e0d6f40b}
 
@@ -840,9 +840,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.1.tar.gz
-$ tar xvf poppler-0.21.1.tar.gz
-$ pushd poppler-0.21.1
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.2.tar.gz
+$ tar xvf poppler-0.21.2.tar.gz
+$ pushd poppler-0.21.2
 ```
 
 ***
