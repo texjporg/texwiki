@@ -44,9 +44,9 @@ LIPS のB列出力については [qa:19792](https://okumuralab.org/~okumura/tex
 
 ## ダウンロード {#k0bb1098}
 
-たとえば [CTAN:support/ghostscript/](https://mirror.ctan.org/support/ghostscript/) や [sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) から入手できます。
+たとえば [sourceforge](http://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/) から入手できます。
 
-- ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz （[sourceforge](http://sourceforge.net/project/showfiles.php?group_id=1897&release_id=160061) をたどる）
+- ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
 - gnu-gs-fonts-std-6.0.tar.gz [ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-std-6.0.tar.gz](ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-std-6.0.tar.gz)
 - gnu-gs-fonts-other-6.0.tar.gz [ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-other-6.0.tar.gz](ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/gnu-gs-fonts-other-6.0.tar.gz)
 - jpegsrc.v6b.tar.gz [CTAN:support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz](https://mirror.ctan.org/support/ghostscript/3rdparty/jpegsrc.v6b.tar.gz)
@@ -71,11 +71,10 @@ gs707w32full.zip を展開して中にある “setupgs.exe” を実行すれ�
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 
 環境変数 TEMP に全角文字が含まれていると失敗するかもしれません
-（Windows NT系(7, Vista, XP, 2000, NT 4.0, NT 3.x)でユーザ名に2バイト文字を使っている場合など）。
+（Windows (8, 7, Vista, XP)でユーザ名に2バイト文字を使っている場合など）。
 この場合は，例えば C:\tmp\ というフォルダ（ディレクトリ）を作っておき，
 ［コントロールパネル］ → ［システム］ → ［詳細］ → ［環境変数］ で
 環境変数 TEMP を “C:\tmp” に設定してからインストールを行います。
-私は TEMP も TMP もこのように設定しています。
 
 環境変数 GS_LIB については，2003年7月13日以降の Ghostscript 7.07 では
 一切不要です。むしろ不完全な GS_LIB を設定するとトラブルの元ですので，
@@ -93,9 +92,9 @@ dviout for Windows との連携をチェックするには，dviout をインス
 pssample.dvi をダブルクリックして絵入りの文書が表示できれば OK です。
 
 dvipdfmx や dvipdfm で PDF を作る際には，C:\gs\gs7.07\bin\ にパスを通して
-おきます。上のほうで環境変数 Path に “C:\w32tex\bin” を加えましたが，
+おきます。環境変数 PATH に “C:\w32tex\bin” を加えた場合，
 さらにその後に “;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” を追加します。結局
-Path は “C:\w32tex\bin;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” となります。
+PATH は “C:\w32tex\bin;C:\gs\gs7.07\bin;C:\gs\gs7.07\lib” となります。
 
 2003年9月5日以降の角藤さんの Ghostscript 7.07 配布では，和文フォントを
 埋め込まない設定にできます。設定は，dvipdfmx.cfg の “D” で始まる行を
@@ -170,21 +169,21 @@ Ryumin-Light，GothicBBB-Medium という名前に置き換えればいいわけ
 2003年9月5日以降の角藤さんが配布なさっている
 Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思います。
 
-### Linux, Mac OS X {#od0594e8}
+### Linux, OS X {#od0594e8}
 
-以下では Vine Linux 2.6r1 や Mac OS X
+以下では Linux や OS X
 でインストールを行いました。
 
 ```
 $ cd /usr/local/src
-$ tar xvjf ...../ghostscript-7.07.tar.bz2
+$ tar xvf ...../ghostscript-7.07.tar.bz2
 $ cd ghostscript-7.07
-$ tar xvzf ...../jpegsrc.v6b.tar.gz
-$ mv jpeg-6b jpeg
+$ tar xvf ...../jpegsrc.v8d.tar.gz
+$ mv jpeg-8d jpeg
 $ ./configure
 ```
 
-“tar xvjf” でエラーになるなら
+“tar xvf” でエラーになるなら
 
 ```
 $ bzip2 -dc ...tar.bz2 | tar xvf -
@@ -200,7 +199,7 @@ $ bzip2 -dc ...tar.bz2 | tar xvf -
 のページから gdevlips ドライバを入手し，展開します。
 
 ```
-$ tar xvzf gdevlips-2.4.0.tar.gz
+$ tar xvf gdevlips-2.4.0.tar.gz
 $ mv gdevlips-2.4.0/*.htm doc/
 $ mv gdevlips-2.4.0/* src/
 $ cat src/gdevlips.mak >>src/contrib.mak
@@ -267,12 +266,12 @@ lib/gs_res.ps の249&ndash;250行
 $ make
 $ make install
 $ cd /usr/local/share/ghostscript
-$ tar xvzf gnu-gs-fonts-std-8.11.tar.gz
-$ tar xvzf gnu-gs-fonts-other-6.0.tar.gz
+$ tar xvf gnu-gs-fonts-std-8.11.tar.gz
+$ tar xvf gnu-gs-fonts-other-6.0.tar.gz
 $ mkdir Resource
 $ cd Resource
-$ tar xvzf adobe-cmaps-200204.tar.gz
-$ tar xvzf acro5-cmaps-2001.tar.gz
+$ tar xvf adobe-cmaps-200204.tar.gz
+$ tar xvf acro5-cmaps-2001.tar.gz
 ```
 
 [New Ghostscript font release](http://www.ghostscript.com/article/44.html)，しかし
