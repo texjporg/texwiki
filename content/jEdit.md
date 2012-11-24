@@ -27,13 +27,18 @@ Windows, OS X, Linux などの Java が動作する環境で動作します．<b
 
 [GPL](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)
 
+### リリース情報 {#kca18bf0}
+
+2012-11-22 jEdit 5.0.0<br>
+
+jEdit 5.0.0 で日本語のローカライズに対応しました．<br>
+
 ### ChangeLog {#c3f4924b}
 
 - [CHANGES](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/CHANGES.txt)
 
-### 日本語化ファイル {#ia8fa738}
-
-- [jedit_gui-ja](https://github.com/tanakahisateru/jedit_gui-ja/downloads)
+<!-- **日本語化ファイル [#ia8fa738] -->
+<!-- -[[jedit_gui-ja:https://github.com/tanakahisateru/jedit_gui-ja/downloads]] -->
 
 ## プラグイン {#q2519d03}
 
