@@ -16,28 +16,22 @@ pukiwiki: "BibTeX関連ツール"
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 |  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://jbibtexmanager.sourceforge.net/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
-| [QRef](http://members3.jcom.home.ne.jp/qref/) | Windows 7, Vista, XP, 2000<br>Linux<br>Mac OS X | フリーソフトウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://members3.jcom.home.ne.jp/qref/html/latex.htm) |
+| [QRef](http://members3.jcom.home.ne.jp/qref/) | Windows 7, Vista, XP<br>OS X<br>Linux | フリーソフトウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://members3.jcom.home.ne.jp/qref/html/latex.htm) |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | Mac OS X 10.5 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 |  [KBibTeX](http://home.gna.org/kbibtex/) |  KDE 4  | KDE 用の BibTeX エディタ。 |
 |  [Mendeley](http://www.mendeley.com/)  |  Web ブラウザ, Windows, Mac OS X, Linux  | 文献管理ソフト |
 | [BibTeX Online Editor](http://truben.no/latex/bibtex/) |  Web ブラウザ  | オンラインの BibTeX エディタ |
+| [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) |   | .bib ファイルの管理ソフト。[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
 |  [Tellico](http://tellico-project.org/)  |  KDE >= 4, Qt >= 4, libxml2, libxslt1 >= 1.0.19  |  KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。日本語不可。 |
 |  [KBib](http://users.tpg.com.au/thachly/kbib/) |  KDE  | KDE 用の BibTeX エディタ。 |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ。 |
 | [Pybliographer](http://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール。PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能、著者別HTMLを出力など機能がてんこ盛り |
 | [Javascript BibTeX Editor](http://sourceforge.net/projects/jsbibeditor/) | JavaScript | JavaScript で書かれた BibTeX エディタ |
-| [BibCompanion](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/BibCompanion/) | Mac OS X 10.4 以降 | BibTeXの参考文献データベースを編集するためのプログラム。HyperBibDBの後継。 |
-| [HyperBibDB](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/HyperBibDB/help.html) | CarbonLibが使用できるMacOS 8.6以降のMacOS及びMacOS X | BibTeXの参考文献データベースを編集するためのプログラム |
+| [BibCompanion](http://www.surf.nuqe.nagoya-u.ac.jp/~nakahara/Software/BibCompanion/) | Mac OS X 10.4 以降 | BibTeXの参考文献データベースを編集するためのプログラム。 |
 | [allbib](http://allbib.sourceforge.net/) | perl gtk | .bibファイル編集・管理ソフト |
 | [Sixpack](http://sourceforge.net/projects/sixpack) | perl perl-Tk | 文献・電子ジャーナル管理ソフト。日本語表示OKだが、-guiオプションを付けてGUI版を起動するとフォントの関係で日本語表示が不可。インポート・エキスポートできる形式の種類は豊富。 |
 | [RefDB](http://refdb.sourceforge.net/) | UNIX/MacOS X/Windows | SGML, XML, BibTeX用の文献管理インターフェイス。ネットワーク越しのデータベースを構築できる |
-| [BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |   | .bib ファイルの管理ソフト。[BibTool](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) の GUI ラッパーとして [qbibman](https://mirror.ctan.org/biblio/bibtex/utils/qbibman/) がある |
 |  [scbib](http://0xcc.net/scbib/)  |  [Gauche](http://practical-scheme.net/gauche/index-j.html)（Schemeインタプリタ） |  Schemeベースの文献管理システム，BibTeX形式やHTML形式へエクスポート可能  |
-|  [BibORB](http://biborb.glymn.net/doku.php)  |  Webサーバ, PHP (>=4.0.3), PHP XSLT, PHP Pear  |  Webベースの文献管理システム、Web上でbibファイルの編集・インポート・エキスポートができ、電子ジャーナルと連携できる。 |
-|  [JavaBib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/JavaBib/)  | Java  | BibTeXファイル編集ソフト  |
-|  [WibTeX](http://www.wibtex.de/) |  Windows  | Windows 用 BibTeX エディタ。 |
-|  [BibTexMng](http://www.latexsoft.com/bibtexmng.htm)  | Windows XP/Vista 以降 | シェアウェア。BibTeX 編集ソフト 最新版:6.0 (2009/05/10)  |
-|  [BibDB](http://licensing.mackichan.com/index.html?bibdb/default.htm~mainFrame)  | DOS/Windows  | 日本語が扱えない |
 
 <br>
 
