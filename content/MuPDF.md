@@ -23,7 +23,7 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 ### License {#kcee43f7}
 
-[GPLv3](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD)
+[GPLv3](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/indexlicense.htm)
 
 ### ChangeLog {#vbbec018}
 
