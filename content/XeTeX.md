@@ -109,7 +109,7 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 
 <!-- XeTeX for W32 のインストール方法 -->
 
-W32TeX \[2012/10/26\] から XeTeX は Windows XP 以降が必要になりました．XeTeX は Windows 2000 以前の OS ではサポートされなくなりました．<br>
+W32TeX \[2012/11/24\] 再び XeTeX が Windows 2000 でも動くように書き換えられました．ただしまだテストされていません．<br>
 
 cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
