@@ -18,6 +18,7 @@ pukiwiki: "jEdit"
 jEdit は Java で書かれたテキストエディタです．<br>
 
 - [jEdit](http://www.jedit.org/)
+- [jEdit Daily Builds](http://www.tellurianring.com/projects/jedit-daily/)
 
 ### 動作環境 {#df224291}
 
