@@ -67,6 +67,8 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 ### TeXnicCenter 2.0 Beta 1 で折りたたみ機能がうまく動作しない {#w34c78b7}
 
+- [Code Folding in TeXnicCenter 2 beta 1 (64bit)](http://www.latex-community.org/forum/viewtopic.php?f=31&t=22003)
+
 TeXnicCenter 2.0 Beta 1 では折りたたみ機能がうまく動作しないようです．<br>
 TeXnicCenter 2.0 Alpha 4 でも同様に折りたたみ機能がうまく動作しないようです．<br>
 TeXnicCenter 2.0 Alpha 3 では折りたたみ機能が動作していました．<br>
