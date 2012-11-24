@@ -37,9 +37,6 @@ jEdit 5.0.0 で日本語のローカライズに対応しました．<br>
 
 - [CHANGES](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/CHANGES.txt)
 
-<!-- **日本語化ファイル [#ia8fa738] -->
-<!-- -[[jedit_gui-ja:https://github.com/tanakahisateru/jedit_gui-ja/downloads]] -->
-
 ## プラグイン {#q2519d03}
 
 プラグインのインストールは，メニューの \[プラグイン(P)\]-\[プラグイン マネージャ(M)...\] のインストールタブから行います．
