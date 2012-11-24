@@ -85,4 +85,5 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ## 関連リンク {#t09e1c4e}
 
+- [おれたちが考えた最強の出版システムPython Developers Festa 2012.11](http://www.slideshare.net/k16shikano/our-docsyspyfes201211)
 - [omakeもmakeも使わずに、Sphinxドキュメントの継続的ビルド](http://tell-k.hatenablog.com/entry/2012/01/04/022229)
