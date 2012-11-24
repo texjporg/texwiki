@@ -261,13 +261,13 @@ Perl で書かれたスクリプトを実行するには Perl の処理系が必
 
 - [Strawberry Perl](http://strawberryperl.com/)
 
-perl.exe を C:\strawberry\perl\bin にインストールした場合は
+Strawberry Perl を C:\strawberry にインストールした場合は
 
 ```
-;C:\strawberry\perl\bin
+;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin
 ```
 
-を環境変数 PATH に追加します
+がシステム環境変数 Path に追加されます．
 
 ## Python のインストール {#cc86c15a}
 
