@@ -29,7 +29,7 @@ OS X 10.6 で動作する TextMate 2 for Snow Leopard もあります．<br>
 
 ### License {#u325ac56}
 
-TextMate 2 はフリーソフトウェアでライセンスは GPLv3 です．<br>
+TextMate 2 はフリーソフトウェアでライセンスは [GPLv3](https://github.com/textmate/textmate/blob/master/LICENSE) です．<br>
 TextMate 1 はシェアウェアです．<br>
 
 ### リリース情報 {#wdfc46c3}
