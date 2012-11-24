@@ -29,21 +29,34 @@ LaTeX2HTML は Perl で記述されています．<br>
 - [LaTeX2HTML(japanese for Windows)](http://www.phys.asa.hokkyodai.ac.jp/osamu/latex2html/) (阿部 修さん＠北海道教育大学)
     - [LaTeX2HTML 2008 版](http://www.phys.asa.hokkyodai.ac.jp/osamu/l2h2k8/l2h.html)
 
+## インストール {#s13eba79}
+
+### Windows {#tb4f0a0a}
+
+- [Windows 環境への LaTeX2HTML のインストールと手直し](http://www.kagami.org/diary/2012-02-25-1.html)
+- [Latex2HtmlをWindowsで使う](http://tmlaboratory.at-ninja.jp/memo/latex2html_install.html)
+- [latex2html の設定](http://medt00lz.s59.xrea.com/blog/archives/2008/04/latex2html.html)
+
+### OS X {#u17fe485}
+
+- [若松久仁光のブログ - LaTeX2HTML, eLyXer](http://www.geocities.jp/flutecore/Weblog/archives/cat_latex2htmlelyxer.html)
+- [LaTeX2HTMLのインストール con gusto](http://www.geocities.jp/flutecore/install-latex2html.html)
+- [Homebrew + MacTeXのUTF-8環境でLaTeX2HTMLを動かすメモ](http://d.hatena.ne.jp/amarui/20120327/1332817158)
+
+### Linux {#v5b81e24}
+
+- [latex2html](http://fugenji.org/thomas/diary/index.php?no=r785), [latex2html (2)](http://fugenji.org/thomas/diary/index.php?no=r786), [latex2html（まとめ）](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=814)
+- [2012年のコンピューターノウハウ (Mac, CentOS)](http://www.math.meiji.ac.jp/~mk/knowhow-2012/knowhow-2012.html)
+    - [LaTeX2HTML (LaTeX を WWW 用のデータに変換)](http://www.math.meiji.ac.jp/~mk/knowhow-2012/node65.html)
+
 ## 使い方 {#x9a76c36}
 
 - [Latex2html の備忘録 (日本語マニュアル)](http://homepage3.nifty.com/peterpan/Latex2html/)
 - [latex2htmlの使い方について](http://akita-nct.jp/~yamamoto/comp/latex/latex2html/latex2html.html)
 - [LaTeX2HTML - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?LaTeX2HTML)
-- [Latex2HtmlをWindowsで使う](http://tmlaboratory.at-ninja.jp/memo/latex2html_install.html)
-- [latex2html の設定](http://medt00lz.s59.xrea.com/blog/archives/2008/04/latex2html.html)
 - [latex2html による文書形式の変換](http://www.rcai.riken.jp/petadimension/textips.html#latex2html)
 
 ## 関連リンク {#lddbd39b}
 
 - [latex2html 日本語の使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=748)
-- [latex2html](http://fugenji.org/thomas/diary/index.php?no=r785), [latex2html (2)](http://fugenji.org/thomas/diary/index.php?no=r786), [latex2html（まとめ）](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=814)
-- [Homebrew + MacTeXのUTF-8環境でLaTeX2HTMLを動かすメモ](http://d.hatena.ne.jp/amarui/20120327/1332817158)
-- [若松久仁光のブログ - LaTeX2HTMLでUTF-8を使う 　　文字化けは無し](http://www.geocities.jp/flutecore/Weblog/archives/2012/11/entry_160.html)
-- [LaTeX2HTMLのインストール con gusto](http://www.geocities.jp/flutecore/install-latex2html.html)
 - [やる夫で学ぶディジタル信号処理](http://www.ic.is.tohoku.ac.jp/~swk/lecture/yaruodsp/main.html)
-- [LaTeX2HTML (LaTeX を WWW 用のデータに変換)](http://www.math.meiji.ac.jp/~mk/knowhow-2012/node61.html)
