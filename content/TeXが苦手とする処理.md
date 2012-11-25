@@ -9,7 +9,7 @@ pukiwiki: "TeXが苦手とする処理"
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では
+[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では
 提供されず，ときとして TeX 自身は不得手とする処理について挙げます。
 既製品があるものについては既製品も紹介していますが，
 それらを用いた場合の出力結果に不満がある場合には，
@@ -28,6 +28,7 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 対処法は，大別すると次の3通りになります。
 
+1. [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
@@ -48,8 +49,6 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
         同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
-
-1. [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
