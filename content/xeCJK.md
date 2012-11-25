@@ -19,7 +19,6 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [ctex-kit](http://code.google.com/p/ctex-kit/)
     - [xeCJK](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
         - xeCJK.dtx をクリックして File info の View raw file から xeCJK.dtx をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
-    - [Changes](http://code.google.com/p/ctex-kit/source/list)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
 - [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
@@ -30,15 +29,33 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 - [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
 - [xeCJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/xeCJK)
 
-### リリース情報 {#if427aa7}
+### リリース情報/ChangeLog {#if427aa7}
 
-2012-11-01 W32TeX \[2012/11/01\] の更新で xeCJK 3.0.10 になりました．<br>
+[Changes](http://code.google.com/p/ctex-kit/source/list) を参照．<br>
 
 ### 不具合 {#t2600dd9}
 
+[Issues](http://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
+
+#### xeCJK と xltxtra を使用すると表示がおかしくなる → \usepackage{xltxtra} をコメントアウトする {#d18a4ff7}
+
+```
+\usepackage{xltxtra}
+\usepackage{xeCJK}
+```
+
+としたときに表示がおかしくなる場合は \usepackage{xltxtra} をコメントアウトすれば正常に表示されます．
+
+```
+%\usepackage{xltxtra}
+\usepackage{xeCJK}
+```
+
 #### xeCJK error: "l3-too-old" → l3kernel, l3packages をアップデートする {#se187b49}
 
-[xeCJK 3.1.0 r368](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=368) 以降で xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+- [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（４）テスト](http://blog.livedoor.jp/ti5942/archives/7562221.html)
+
+xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 
 ```
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -59,19 +76,6 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 ! Type <return> to continue.
 !...............................................
 ```
-
-#### [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) でエラーが発生する → l3kernel, l3packages をアップデートする {#ve3267d4}
-
-- [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（４）テスト](http://blog.livedoor.jp/ti5942/archives/7562221.html)
-
-l3kernel, l3packages が古いバージョンで [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-気になる方は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
-
-#### [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) でエラーが発生する → xeCJK をアップデートする {#f0ab434a}
-
-l3kernel, l3packages が新しいバージョンで [xeCJK 3.0.6 r350](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=350) を使用している場合は XeTeX 3.1415926-2.5-0.9999, XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-気になる方は xeCJK をアップデートしてください．<br>
-l3kernel, l3packages が新しいバージョンで [xeCJK 3.0.7 r351](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=351) を使用した場合はエラーは発生しませんでした．<br>
 
 ### 使い方 {#k3d278aa}
 
