@@ -65,25 +65,11 @@ pukiwiki: "LyX/設定"
 
 babel を使用して文書を作成する場合は babel を on にします．
 
-babel に関しては
+W32TeX を使用していて babel の japanese パッケージをインストールしたい場合は
 
-- [日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)
-- [pTeXと多言語処理 - TeX Wiki](</pTeXと多言語処理/>)
-- [新 pTeX とBabel - TeX Wiki](</新 pTeX とBabel/>)
+- [Babel - TeX Wiki](/Babel/)
 
 をご覧下さい．
-
-W32TeX の場合は babel の japanese をインストールする必要があります．<br>
-インストール方法は以下のとおりです．
-
-1. [CTAN:language/japanese/japanese.zip](https://mirror.ctan.org/language/japanese/japanese.zip) から japanese.zip をダウンロードします．
-1. japanese.zip を展開します．
-1. 展開すると japanese.ins というファイルがあるので，japanese.ins を C:\w32tex\bin\platex.exe に Drag &amp; Drop します．
-1. japanese.ins と同じフォルダに japanese.ldf が作成されます．
-1. japanese.ldf をコピーして C:\w32tex\share\texmf\tex\generic\babel にペースト(貼り付け)すればインストール完了です．
-1. もし C:\w32tex\share\texmf\ls-R が存在する場合は C:\w32tex\bin\deltexlsr.exe をダブルクリックして C:\w32tex\share\texmf\ls-R を削除してください．
-
-- [funyarara @ Wiki - インストール](http://www35.atwiki.jp/funyarara/pages/43.html) にも japanese.ldf のインストール・設定方法があります．
 
 babel のオプションを設定する場合は以下の方法があります．
 
