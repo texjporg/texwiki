@@ -227,6 +227,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [情報処理演習 A2,B2](http://www.ike-dyn.ritsumei.ac.jp/~okushima/RainbowMR/johoWeb/)
 - [「tex インストーラ3」でインストーラを起動するとエラーになってしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1090453970)
