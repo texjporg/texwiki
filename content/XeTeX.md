@@ -109,7 +109,7 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 
 <!-- XeTeX for W32 のインストール方法 -->
 
-W32TeX \[2012/10/26\] から XeTeX は Windows XP 以降が必要になりました．XeTeX は Windows 2000 以前の OS ではサポートされなくなりました．<br>
+W32TeX \[2012/11/25\] で XeTeX が再び Windows 2000 でも動くようになりました．<br>
 
 cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
@@ -667,7 +667,7 @@ Hello, \TeX !
 ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
 現状ではまともではない。<br>
 しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。<br>
-現在では [ZXjatype](/xeCJK/#n8276349) を使用して XeLaTeX で pTeX 並の品質の日本語文書組版が可能です．<br>
+現在では横書きに関しては [ZXjatype](/xeCJK/#n8276349) を使用して XeLaTeX で pTeX 並の品質の日本語文書組版が可能です．<br>
 
 ### 参考サイト {#m6b448cf}
 
