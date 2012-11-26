@@ -39,6 +39,10 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 #### xeCJK と xltxtra を使用すると表示がおかしくなる → \usepackage{xltxtra} をコメントアウトする {#d18a4ff7}
 
+- [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works)
+
+xeCJK と xltxtra を使用すると表示がおかしくなる場合があります．
+
 ```
 \usepackage{xltxtra}
 \usepackage{xeCJK}
