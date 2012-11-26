@@ -21,6 +21,7 @@ pukiwiki: "hyperref"
 
 #### hyperref を使用するとページサイズの値がおかしくなる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#v71488f4}
 
+- [いつでも jsarticle と hyperref を使いたい](http://uep.ipe.media.kyoto-u.ac.jp/%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82-jsarticle-%E3%81%A8-hyperref-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84/)
 - [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
 - [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
 - [XeLaTeXでhyperrefを使う](http://d.hatena.ne.jp/tizz/20100429/1272567178)
