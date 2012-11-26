@@ -30,7 +30,7 @@ Windows 7, Vista, XP
 
 ### リリース情報 {#nc0d64ca}
 
-2012-10-29 EasyTeX Version 3.312<br>
+[中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html)を参照．<br>
 
 EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
 
