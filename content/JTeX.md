@@ -27,14 +27,14 @@ OS X 10.8, 10.7, 10.6, 10.5
 
 ### JTeXEdit {#i6a864d7}
 
-JTeXEdit は OS X で動作する TeX 用エディタです．<br>
+JTeXEdit は TeX 用エディタです．<br>
 JTeX に含まれています．<br>
 
 - [MathTime Pro 2 と JTeXEdit](http://west.math.cst.nihon-u.ac.jp/~nisikawa/blog/?p=13)
 
 ### PictPrinter {#s727dea0}
 
-PictPrinter は OS X で動作する DVI プレビューアです．<br>
+PictPrinter は DVI プレビューアです．<br>
 JTeX に含まれています．<br>
 
 - [やっぱりDVIビューアが必要](http://forest.edu.u-toyama.ac.jp/blog/2012/11/dvi.html)
