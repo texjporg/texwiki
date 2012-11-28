@@ -190,9 +190,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.10.1.tar.gz
-$ tar xvf cmake-2.8.10.1.tar.gz
-$ pushd cmake-2.8.10.1
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.10.2.tar.gz
+$ tar xvf cmake-2.8.10.2.tar.gz
+$ pushd cmake-2.8.10.2
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -454,9 +454,9 @@ $ popd
 <!--  -->
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.1.tar.gz
-$ tar xvf fontconfig-2.10.1.tar.gz
-$ pushd fontconfig-2.10.1
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.gz
+$ tar xvf fontconfig-2.10.2.tar.gz
+$ pushd fontconfig-2.10.2
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
@@ -1004,6 +1004,7 @@ C:.
 
 ## 関連リンク {#m3ac74dd}
 
+- [Poppler: Displaying PDF Files with Qt](http://doc.qt.digia.com/qq/qq27-poppler.html)
 - [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
