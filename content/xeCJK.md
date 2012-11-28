@@ -37,9 +37,9 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 [Issues](http://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
 
-#### xeCJK と xltxtra を使用すると表示がおかしくなる → \usepackage{xltxtra} をコメントアウトする {#d18a4ff7}
+#### xeCJK と xltxtra を使用すると表示がおかしくなる → realscripts を修正する {#d18a4ff7}
 
-- [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works)
+[CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
 
 xeCJK と xltxtra を使用すると表示がおかしくなる場合があります．
 
@@ -48,10 +48,18 @@ xeCJK と xltxtra を使用すると表示がおかしくなる場合があり�
 \usepackage{xeCJK}
 ```
 
-としたときに表示がおかしくなる場合は \usepackage{xltxtra} をコメントアウトすれば正常に表示されます．
+としたときに表示がおかしくなる場合は以下のように修正すれば正常に表示されます．
 
 ```
-%\usepackage{xltxtra}
+\usepackage{xltxtra}
+\ExplSyntaxOn
+\cs_set:Nn \dim_max:nn {
+  \dim_eval:n{\dim_compare:nTF {#1>#2} {#1} {#2}}
+}
+\cs_set:Nn \dim_min:nn {
+  \dim_eval:n{\dim_compare:nTF {#2>#1} {#1} {#2}}
+}
+\ExplSyntaxOff
 \usepackage{xeCJK}
 ```
 
