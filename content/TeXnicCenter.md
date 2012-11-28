@@ -53,7 +53,7 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 - TeX のコマンドを色分けできます．
 - TeX のコマンドを補完してくれます．(Ctrl + Space)
-- 折りたたみが可能です．→ TeXnicCenter 2.0 Beta 1 では折りたたみ機能がうまく動作しないようです．
+- 折りたたみが可能です．→ デフォルトでは OFF になっています．\[View\]-\[Fold Margin\] で ON にできます．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
     - [TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)
 
@@ -64,14 +64,6 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 ## 不具合 {#p40a9a4a}
 
 - [SourceForge.net: TeXnicCenter: Bugs](http://sourceforge.net/tracker/?group_id=36323&atid=416430)
-
-### TeXnicCenter 2.0 Beta 1 で折りたたみ機能がうまく動作しない {#w34c78b7}
-
-- [Code Folding in TeXnicCenter 2 beta 1 (64bit)](http://www.latex-community.org/forum/viewtopic.php?f=31&t=22003)
-
-TeXnicCenter 2.0 Beta 1 では折りたたみ機能がうまく動作しないようです．<br>
-TeXnicCenter 2.0 Alpha 4 でも同様に折りたたみ機能がうまく動作しないようです．<br>
-TeXnicCenter 2.0 Alpha 3 では折りたたみ機能が動作していました．<br>
 
 ## ダウンロード {#rf294e94}
 
@@ -150,6 +142,10 @@ dvipdfm(x) で PDF ファイルを作成する場合は，プロファイルを 
 \[Build\]-\[View Output\] で対応するプロファイルの出力ファイルが表示されます．
 
 \[Build\]-\[Build and View Output\] でビルドと表示ができます．
+
+### 折りたたみ {#r2ac1196}
+
+\[View\]-\[Fold Margin\] で折りたたみできます．
 
 ## 関連リンク {#r73017f2}
 
