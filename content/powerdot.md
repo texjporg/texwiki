@@ -54,6 +54,7 @@ powerdot は dvipdfmx に対応していないので、[PDFを作る](<http://ok
 
 ### 関連リンク {#w637da69}
 
+- [177びぼーろく;powerdot その2](http://phys-diary.blogspot.jp/2012/11/177powerdot-2.html)
 - [powerdot -- a LaTeX presentation class](http://homepages.inf.ed.ac.uk/s0675112/powerdot_intro/powerdot.html) \[天野さん\]
     <!-- -[[Powerdot.clsのマニュアルを日本語訳したもの:http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5]] -->
 
