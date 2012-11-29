@@ -7,8 +7,11 @@ pukiwiki: "LuaTeX-ja"
 
 # LuaTeX-ja
 
+[LuaTeX](/LuaTeX/) > LuaTeX-ja
+
 ## LuaTeX-ja {#nec94db0}
 
+LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/) で日本語文書の組版を行うためのパッケージです．<br>
 LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
 
 - [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
@@ -95,41 +98,16 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
 これは全角チルダの代わりに波ダッシュ「〜」(U+301C)を使うことで回避できます．<br>
-\usepackage{luatexja-fontspec} でフォントを指定して埋め込んでも表示できます．<br>
+\usepackage{luatexja-fontspec} でフォントを指定して埋め込むと全角チルダが表示できます．<br>
 
 - [Wikipedia:表記ガイド#波ダッシュ](http://ja.wikipedia.org/wiki/Wikipedia:%E8%A1%A8%E8%A8%98%E3%82%AC%E3%82%A4%E3%83%89#.E6.B3.A2.E3.83.80.E3.83.83.E3.82.B7.E3.83.A5) によると
 
-> 固有名称などでやむを得ず波ダッシュを使用する際には、原則として「〜」(Unicode: U+301C)を用い、全角チルダ「～」(Unicode: U+FF5E)、チルダ「~」(Unicode: U+007E)は使用しないでください。全角チルダ「～」 (Unicode: U+FF5E) は、非Windows環境の場合には表示されないことがあるので使用を推奨しません。また、波ダッシュ「〜」(Unicode: U+301C)もフォントによっては上下逆の波形で表示されることがありますので、必要最小限に用います。
+> 全角チルダ「～」(Unicode: U+FF5E)・チルダ「~」(Unicode: U+007E)は使用しないでください。<br>
+> 波ダッシュ・波ダーシ（「![](http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Wave_Dash.svg/18px-Wave_Dash.svg.png)」など）は原則として用いず、半角(JIS X 0201)にあるハイフンマイナス「-」で代用します。この理由は、波ダッシュ「〜」(Unicode: U+301C)が、コンピュータOSおよびフォントによっては上下逆の波形「![](http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Wave_Dash2.svg/18px-Wave_Dash2.svg.png)」で表示されることがあるからです。<br>
+> 波ダッシュを固有名称などでやむを得ず使用する際には、原則として「〜」(Unicode: U+301C)を必要最小限に用いてください。<br>
+> この場合、波ダッシュ「〜」(Unicode: U+301C)の入力は、Windows環境では、通常のキーボード入力（すなわち「全角チルダ」となってしまう入力）は避けて下さい。<br>
 
 とあるので全角チルダは使用しない方がいいかもしれません．
-
-#### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました {#o2818a24}
-
-[LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました．<br>
-LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．<br>
-
-LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。
-
-```
-\documentclass{article} 
-\usepackage{bm} 
-\begin{document} 
-$\bm{a}$ 
-\end{document}
-```
-
-```
-! Invalid math code.
-\bm@command ->\mathchar 31458401
-
-l.4 $\bm{a}
-           $
-?
-```
-
-これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
-
-- [\mathcode と \omathcode と \Umathcode と](http://d.hatena.ne.jp/zrbabbler/20120509/1336584479)
 
 ### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#te382979}
 
@@ -200,3 +178,11 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 ```
 
 のように呼び出すと、platex 等で japanese を呼び出したのと同じように日本語環境を使うことができます。
+
+## 関連リンク {#sf395095}
+
+- \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
+- \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
+- [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
+- [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
+- [Ubuntu11.10: LuaTeX-jaをインストールしました！](http://blog.livedoor.jp/ti5942/archives/6612853.html)
