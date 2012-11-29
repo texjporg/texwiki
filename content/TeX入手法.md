@@ -12,7 +12,7 @@ pukiwiki: "TeX入手法"
 \[TODO\] OSごとのページができたのでこれはそちらに吸収させてもいいですね。-- 奥村
 
 - Microsoft Windows
-    - 手動でインストール
+    - [手動でインストール](</Microsoft Windows/>)
     - インストーラ
         - TeX インストーラ 3
 - [OS X](/Mac/)
