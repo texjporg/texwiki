@@ -63,7 +63,7 @@ GVim の on-the-spot の実装に問題があるようです．
 
 ## インストール {#sbc289a6}
 
-### [W32TeX](/W32TeX/) (Windows) {#eb85b35a}
+### [W32TeX](/W32TeX/) ([Windows](</Microsoft Windows/>)) {#eb85b35a}
 
 [Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
 
