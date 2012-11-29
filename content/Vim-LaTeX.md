@@ -715,7 +715,7 @@ PythonWin (Python IDE) ではエラーが発生しないようです． → ([Re
 Python 3 で使用する場合は 2to3.py を使用してリファクタリングを行います．
 
 ```
->C:\Python32\python.exe C:\Python32\Tools\Scripts\2to3.py fwdsumatra.py
+>C:\Python33\python.exe C:\Python33\Tools\Scripts\2to3.py fwdsumatra.py
 RefactoringTool: Skipping implicit fixer: buffer
 RefactoringTool: Skipping implicit fixer: idioms
 RefactoringTool: Skipping implicit fixer: set_literal
