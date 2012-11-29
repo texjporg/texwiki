@@ -33,11 +33,9 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 [Changes](http://code.google.com/p/ctex-kit/source/list) を参照．<br>
 
-### 不具合 {#t2600dd9}
+### 注意点 {#w700f957}
 
-[Issues](http://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
-
-#### xeCJK と xltxtra を使用すると表示がおかしくなる → realscripts を修正する {#d18a4ff7}
+#### xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する {#d18a4ff7}
 
 [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
 
@@ -88,6 +86,10 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 ! Type <return> to continue.
 !...............................................
 ```
+
+### 不具合 {#t2600dd9}
+
+[Issues](http://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
 
 ### 使い方 {#k3d278aa}
 
