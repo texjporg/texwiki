@@ -92,7 +92,7 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 PC 初心者にはこれが最も難しいところです。この TeX Wiki に
 OS ごとのインストール法が詳しく書かれていますので，ご参照ください。特に
 Microsoft Windows については
-TeXWiki:インストール(Windows) をご覧ください。
+[TeXWiki:Microsoft Windows](</Microsoft Windows/>) をご覧ください。
 
 インストール不要で TeX が使えるウェブページ「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」もあります。
 
