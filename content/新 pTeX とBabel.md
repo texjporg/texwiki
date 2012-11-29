@@ -81,7 +81,7 @@ pukiwiki: "新 pTeX とBabel"
 ハイフネーションファイル（68種類）が同梱されています。8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
-TeXWiki:インストール (Windows) を参照）。
+[TeXWiki:Microsoft Windows](</Microsoft Windows/>) を参照）。
 
 - [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
