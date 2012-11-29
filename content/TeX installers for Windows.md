@@ -106,7 +106,7 @@ TeX インストーラを色々な視点から比較してみます。
     サイズが大きいのでインストールする場合は空き容量に注意する必要があります。
 
 - <strong>備考</strong>： 詳細な設定ができる install-tl-advanced.bat もあります。
-- <strong>参考</strong>：インストール(Windows) - TeX Wiki
+- <strong>参考</strong>：[Microsoft Windows - TeX Wiki](</Microsoft Windows/>)
 
 ## texinst {#v558e4b5}
 
