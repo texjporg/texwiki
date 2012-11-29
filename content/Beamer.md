@@ -18,7 +18,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 #### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
 - 2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
-- Beamer は [LuaTeX-ja](/LuaTeX/#nec94db0) も使用できます．
+- Beamer は [LuaTeX-ja](/LuaTeX-ja/) も使用できます．
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
     - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
         <!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
