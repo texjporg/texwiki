@@ -107,6 +107,17 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 を参照．
 
+### Eclipse がフリーズする → TeXlipse git HEAD では Eclipse がフリーズする問題は修正されています {#k9639d78}
+
+- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=commit;h=bbf0c9ab337f61a4fc0a3c283fd6823661e3e420)
+- [TeXlipse causes Eclipse UI to freeze](http://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) → Fixed
+
+### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない → TeXlipse git HEAD ではワードラップの問題は修正されています {#k7905270}
+
+- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=commit;h=77f84799c805a5785d3ee1d8cda903e6bb52cfe9)
+- [Word wrap in Juno](http://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
+- [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
+
 ### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは TeXworks, SumatraPDF, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示する {#c876c383}
 
 - [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) → closed
