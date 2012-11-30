@@ -653,7 +653,7 @@ figure，table の両環境や \marginpar を“ページ分割できない”�
 
 ```
 \usepackage[dvips]{graphicx}
-\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
 ```
 
 のような記述を行うと上記のエラーメッセージが現れます．<br>
