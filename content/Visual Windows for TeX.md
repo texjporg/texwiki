@@ -30,14 +30,12 @@ Visual Windows for Unicode TeX, Visual Windows for xeTeX も開発中です．<b
 > </table>
 >
 
-### リリース情報 {#l78e4b17}
-
-2012-11-11 Visual Windows for TeX Ver.2012-1.40
-
-### ChangeLog {#n382f2d5}
+### リリース情報/ChangeLog {#l78e4b17}
 
 - [修正履歴](http://phys.cool.coocan.jp/physjpn/vtexwin.htm#History)
 - [History](http://phys.cool.coocan.jp/physeng/vtexwin.htm#History)
+
+を参照．<br>
 
 ## 関連リンク {#b77aa044}
 
