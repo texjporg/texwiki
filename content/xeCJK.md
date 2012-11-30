@@ -207,7 +207,7 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 }
 ```
 
-## 関連リンク {#q4a9591d}
+### 関連リンク {#q4a9591d}
 
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
