@@ -137,10 +137,10 @@ dviware もかなりありますが，その場合でも“完全互換”であ
 ほかの dviware を指定した場合も同様で，
 
 ```
-\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
 ```
 
-ならば“dvipdfm への指示の仕方”をファイル dvipdfm.def から取得するわけです．
+ならば“dvipdfmx への指示の仕方”をファイル dvipdfmx.def から取得するわけです．
 
 このような仕組みになっているため，graphicx パッケージ（に限らず，
 dviware の機能に頼った処理へのインタフェイスを提供するパッケージ）への
