@@ -26,13 +26,9 @@ Windows で使える，機能的で，軽い TeX 用のエディタがあまり�
 
 Windows 7, Vista, XP
 
-### リリース情報 {#r8be4c06}
+### リリース情報/ChangeLog {#r8be4c06}
 
-2012-11-23 Masamichi 7.4.0.34<br>
-
-### ChangeLog {#s9b4b0e5}
-
-[更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)
+[更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)を参照．<br>
 
 ### スクリーンショット {#jf651a64}
 
