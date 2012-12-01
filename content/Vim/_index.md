@@ -46,9 +46,9 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 Vim は，チャリティウェアです．<br>
 [VIM ライセンス](http://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
-### リリース情報 {#n22b1c9a}
+### リリース情報/ChangeLog {#n22b1c9a}
 
-2010-08-15 Vim 7.3<br>
+[コミットログ](http://code.google.com/p/vim/source/list) を参照．<br>
 
 GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
 最新版へアップデートしてください．<br>
