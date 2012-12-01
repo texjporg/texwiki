@@ -29,12 +29,16 @@ OS X 10.8, 10.7, 10.6, 10.5, 10.4
 
 ### リリース情報 {#ed02eb4b}
 
-2012-02-12 CotEditor 1.3.1<br>
+[git.sourceforge.jp Git - coteditor/CotEditor.git/tags](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=tags)
 
 ### ChangeLog {#o0aedc6a}
 
 - [coteditor/CotEditor.git](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git)
     - [shortlog](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=shortlog)
+
+## ダウンロード {#v461a501}
+
+[http://sourceforge.jp/projects/coteditor/releases/](http://sourceforge.jp/projects/coteditor/releases/)
 
 ## CotEditor で TeX {#acb0f7fd}
 
