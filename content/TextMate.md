@@ -34,7 +34,7 @@ TextMate 1 はシェアウェアです．<br>
 
 ### リリース情報 {#wdfc46c3}
 
-2012-08-09 [TextMate 2 が GPLv3 でオープンソース化](http://blog.macromates.com/2012/textmate-2-at-github/)
+[Tags · textmate/textmate · GitHub](https://github.com/textmate/textmate/tags) を参照．<br>
 
 ### ChangeLog {#mc3d9df2}
 
