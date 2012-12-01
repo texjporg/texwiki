@@ -63,8 +63,8 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 - [KaoriYa (香り屋) 版](http://www.kaoriya.net/software/vim)
     Vim オリジナルに，日本語を扱う上で便利な設定やスクリプトが追加されている
+    - [koron (MURAOKA Taro) · GitHub](https://github.com/koron)
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
-    - [コミットログ](https://github.com/splhack/macvim/commits/master)
         <!-- -[[vim-win3264:http://code.google.com/p/vim-win3264/]] -->
         <!-- -[[gVim Portable:http://sf.net/projects/portableapps/files/gVim%20Portable/]] -->
 
@@ -82,7 +82,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 - [MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
-
+    - [コミットログ](https://github.com/splhack/macvim/commits/master)
 - [MacVim](https://github.com/b4winckler/macvim/downloads)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
 - [vim-cocoa](http://code.google.com/p/vim-cocoa/)
