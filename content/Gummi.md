@@ -38,3 +38,20 @@ Windows, Linux
 ### スクリーンショット {#e08c4a5a}
 
 [![スクリーンショット](http://dev.midnightcoding.org/attachments/240/gummi-overview.png)](http://dev.midnightcoding.org/projects/gummi/wiki/Screenshots)
+
+## 設定 {#w97961c3}
+
+\[<ins>E</ins>dit\]-\[<ins>P</ins>references\]
+
+### Compilation {#i4421388}
+
+#### Typesetter command {#q07cf638}
+
+日本語を使用する場合は TeXLive with XeTeX を選択します．<br>
+
+## 使い方 {#r032afe0}
+
+### Live preview {#y2098a5e}
+
+エディタに文書を記述すると Live preview で PDF ファイルを表示してくれます．<br>
+文書にエラーがあると Live preview されないのでその場合はエラーを修正してください．<br>
