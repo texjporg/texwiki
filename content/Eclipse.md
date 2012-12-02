@@ -20,10 +20,6 @@ pukiwiki: "Eclipse"
 Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
-    - [eclipse project downloads](http://download.eclipse.org/eclipse/downloads/)
-        <!-- - -[[eclipse e4 project downloads:http://download.eclipse.org/e4/downloads/]] -->
-
-- [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
 ### 動作環境 {#aae7926e}
 
@@ -36,6 +32,10 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 ### リリース情報 {#q303f311}
 
 2012-06-27 Eclipse 4.2 (Juno)
+
+### 派生版 {#ea83e439}
+
+- [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
 
 ## Java のインストール {#ca668ec2}
 
