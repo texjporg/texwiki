@@ -86,34 +86,27 @@ pukiwiki: "新 pTeX とBabel"
 - [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
-#### UNIX, Unix-like OS, Mac OS, Cygwin {#y673f46e}
+#### UNIX, Unix-like OS, OS X, Cygwin {#y673f46e}
 
-[ptetex3](http://tutimura.ath.cx/ptetex/) では [teTeX](http://www.tug.org/tetex/)-3.0 所収の
-ハイフネーションファイル（33種類）が同梱されています。“make babel” で
-日本語環境向けの処理が全自動で行われます
-（[ptetex Wiki](http://tutimura.ath.cx/ptetex/?FrontPage) も
-ご覧ください）。[Vine Linux](http://vinelinux.org/) 4.x では
-ptetex3 の Babel 対応版がデフォルトでインストールされます。他の
-UNIX 互換 OS ディストリビューション同梱のものや配布バイナリを使用する場合には
-手作業で調整する必要があります
+TeX Live 2012, MacTeX-2012 では Babel がデフォルトでインストールされます。<br>
+TeX Live 2012, MacTeX-2012 では [TeX Live](</TeX Live/>) 所収の
+ハイフネーションファイル（68種類）が同梱されています。<br>
+UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
+手作業で調整する必要があるかもしれません
 （「[日本語 LaTeX による多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
-を参照）。Cygwin については
-「[Cygwin で 日本語 TeX &mdash; ptetex を簡単インストール](http://ptetexwin.sourceforge.jp/)」
+を参照）。<br>
+Cygwin については
+「[Cygwin - TeX Wiki](/Cygwin/)」
 をご覧ください。
 
-#### 『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM {#oe0dfa58}
+#### 『［改訂第5版］ LaTeX2e 美文書作成入門』付録 DVD-ROM {#oe0dfa58}
 
-『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
-付録 CD-ROM には上記
+『[［改訂第5版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』
+付録 DVD-ROM には上記
 [W32TeX](/W32TeX/) と
-[ptetex3](http://tutimura.ath.cx/ptetex/) が収録されています
-（インストール方法は同書付録G，付録I参照）。Mac OS X 用ユニバーサルバイナリも
-Babel 対応版です（同書付録H参照）。
-
-[W32TeX](/W32TeX/)，[ptetex3](http://tutimura.ath.cx/ptetex/)
-では，キリルアルファベット（ロシア語）関連フォントとギリシアアルファベット
-関連ファイルをインストールすることだけで全ての環境が整います。これらの
-追加パッケージは $TEXMFLOCAL/ (&asymp; texmf-local/) 以下に入れることにします。
+[ptexlive for TeX Live 2009](http://tutimura.ath.cx/ptexlive/) が収録されています。<br>
+付録DVD所収のもの（Mac・Cygwin用）はBabel対応版になっています（インストールは p.345, p.347 参照）。<br>
+詳細は [付録I「LaTeX2eによる多言語処理」サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/multi/) を参照してください。<br>
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
