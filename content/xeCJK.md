@@ -38,7 +38,7 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
 
-xeCJK と xltxtra を使用すると表示がおかしくなる場合があります．
+xltxtra と xeCJK を使用すると表示がおかしくなる場合があります．
 
 ```
 \usepackage{xltxtra}
@@ -134,12 +134,16 @@ ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降, 新�
 
 ### リリース情報 {#ecfc94ae}
 
-2012-09-09 ZXjatype 0.6<br>
+[Tags · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/tags) を参照．<br>
 
 ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) を使用していて XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合は ZXjatype 0.6 は使用できません．<br>
 xeCJK 3.0.6 r343 を使用している場合は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xeCJK 3.x 版ではエラーが発生します．<br>
+
+### ChangeLog {#s6e9d1be}
+
+[>Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
 
 ### 不具合 {#u54213d7}
 
@@ -213,10 +217,6 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
 - [ZXjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/ZXjatype)
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
-    <!-- -[[名状しがたい zxjatype のようなもの:https://gist.github.com/3685126]] -->
-    <!-- -[[texlive2012を入れたら（distributionで更新された）、zxjatype.styが使い物にならなくなった。:https://plus.google.com/u/0/105432768476902391894/posts/hQLEK9BuSrj]] → zxjatype v0.6 で対応しました -->
-    <!-- -[[texlive2012のxeCJK.styに対応するzxjatype.styをでっち上げる！:https://gist.github.com/3156146]] → zxjatype v0.6 で対応しました -->
-
-- [tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
+- [記事一覧 - tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
 
 [^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/note.html)を参照
