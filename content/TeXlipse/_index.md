@@ -44,7 +44,7 @@ TeXlipse は
 2012-04-03 BibSonomy Version 2.0.23<br>
 2011-11-26 TeXlipse Version 1.5.0<br>
 
-TeXlipse Version 1.4.2 から 64-bit Windows に対応しています．<br>
+TeXlipse Version 1.4.2 以降は 64-bit Windows に対応しています．<br>
 
 ### ChangeLog {#e321b2d0}
 
@@ -142,16 +142,6 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 
 とすることで警告を抑制できます．
 
-<!-- **TeXlipse 1.4.1 で Windows 7 (64bit) で Adobe Reader で PDF ファイルを表示しようとするとエラーメッセージが表示される → TeXlipse 1.4.2 で 64-bit Windows に対応しました [#p7159fd0] -->
-<!--  -->
-<!-- ''TeXlipse 1.4.2 で 64-bit Windows に対応しました．'' -->
-<!--  -->
-<!-- -[[SourceForge.net: TeXlipse: Detail: 3050201 - DDEClient 32 on win7 amd64>http://sourceforge.net/tracker/index.php?func=detail&aid=3050201&group_id=133306&atid=726819]] → Fixed -->
-<!--  -->
-<!-- この問題の解決策が，TeXlipse の [[FAQ [Internet Archive]:http://web.archive.org/web/20110713114656/http://texlipse.sourceforge.net/faq.php]] にあります． -->
-<!--  -->
-<!-- [[ここ:http://texlipse.sourceforge.net/ddeclient64bit.zip]] から 64bit 用の ddeclient.dll をダウンロードして，Eclipse の plugins フォルダにある TeXlipse のフォルダの ddeclient.dll を上書きします． -->
-
 ## インストール {#u4a48677}
 
 [Eclipse](/Eclipse/) を起動します．
@@ -185,8 +175,8 @@ TeXlipse のインストール後 Eclipse を再起動します．<br>
 
 Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
 から直接ダウンロードして展開 (解凍) します．<br>
-展開したファイルの中に plugins フォルダがあります．<br>
-この plugins フォルダを Eclipse フォルダに上書きコピーします．<br>
+展開したファイルの中に plugins フォルダーがあります．<br>
+この plugins フォルダーを Eclipse フォルダーに上書きコピーします．<br>
 
 ## 設定 {#j3f79297}
 
@@ -194,250 +184,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 ## 使い方 {#n32f16b3}
 
-### プロジェクトの作成 {#zbb02360}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ファイル(F)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規(N)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　プロジェクト(R)...　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　Texlipse　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　LaTeX プロジェクト　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">\[　　　　　次へ(N) <strong>&gt;</strong>　　　　　\]</span>　</span><br>
-
-または<br>
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ファイル(F)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規(N)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　その他(O)...　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　Texlipse　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　LaTeX プロジェクト　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">\[　　　　　次へ(N) <strong>&gt;</strong>　　　　　\]</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>LaTeX プロジェクト・ウィザード</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-LaTeX プロジェクト<br>
-　LaTeX プロジェクトの作成 (<em>プロジェクト名が空白の場合: × 名前を空白にすることはできません。</em>)
-
-プロジェクト名:　　　　　　　　　　　　　　　　　　　　　　 <ins>sample1</ins><br>
-The two-letter (ISO 639 standard) language code: <ins>en</ins><br>
-
-　ロケーション<br>
-<span style="color:#3333CC;">◎</span> ワークスペース内にプロジェクトを作成(W)<br>
-
-◯ 外部ロケーションにプロジェクトを作成(X)<br>
-　<span style="color:#888888;background-color:White;">ディレクトリー(D):</span><br>
-
-出力フォーマット: <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span>　ビルド・コマンド: <span style="color:Black;background-color:#EEEEEE;">\[latex.exe+dvipdfm.exe　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-<span style="color:#1188FF;">[Setup build tools...](</TeXlipse/設定/#ad4786b7>)</span><br>
-
-テンプレート:　　説明:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　システム・テンプレート<br>
-<span style="color:White;background-color:#1188FF;">Article　　</span><span style="color:#555555;background-color:#EEEEEE;">▲</span>　　 This is a very basic article template.<br>
-
-Article-fin　　　　There is just one section and two subsections.<br>
-Beamer<br>
-Blank<br>
-Prosper<br>
-Seminar　<span style="color:#555555;background-color:#EEEEEE;">▼</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　次へ(N) <strong>&gt;</strong>　　　　　\]</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>LaTeX プロジェクト・ウィザード</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-LaTeX プロジェクト<br>
-　LaTeX プロジェクトの作成
-
-プロジェクト構造:<br>
-　　sample1　　　　　　　　　　　　　　　　 出力ディレクトリー:<br>
-　　　　document.pdf　　　　　　　　　　　プロジェクト出力ファイル:　　　　　　　　 document.pdf<br>
-　　　　document.tex　　　　　　　　　　　ソース・ディレクトリー:<br>
-　　　　tmp　　　　　　　　　　　　　　　　　メイン .tex ファイル:　　　　　　　　　　　 document.tex<br>
-　　　　　　document.aux　　　　　　　　　テンポラリー・ファイル・ディレクトリー:　tmp<br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　完了(F) <strong>&gt;</strong>　　　　　\]</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>LaTeX - sample1/document.tex - Eclipse</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　ファイル(F)　 編集(E)　 ナビゲート(N)　 検索(A)　 プロジェクト(P)　 Latex(L)　 実行(R)　 Latex シンボル　 ウィンドウ(W)　 ヘルプ(H)　　　　　　　　　　　</ins></span><br>
-
-> <span style="color:#BEBEBE;">%%This is a very basic article template.</span><br>
->
-> <span style="color:#BEBEBE;">%%There is just one section and two subsections.</span><br>
->
-> <span style="color:#8000FF;">\documentclass</span><span style="color:#0336DE;">{article}</span><br>
->
-> <br>
->
-> <span style="color:#8000FF;">\begin</span><span style="color:#0336DE;">{document}</span><br>
->
-> <br>
->
-> <br>
->
-> <span style="color:#8000FF;">\section</span><span style="color:#0336DE;">{Title}</span><br>
->
-> <br>
->
-> <span style="color:#8000FF;">\subsection</span><span style="color:#0336DE;">{Subtitle}</span><br>
->
-> <br>
->
-> Plain text.<br>
->
-> <br> 
->
-> <span style="color:#8000FF;">\subsection</span><span style="color:#0336DE;">{Another subtitle}</span><br>
->
-> <br>
->
-> More plain text.<br>
->
-> <br>
->
-> <br>
->
-> <span style="color:#8000FF;">\end</span><span style="color:#0336DE;">{document}</span><br>
-
-***
-
-<!--  -->
-<!-- // default colors -->
-<!-- private static final RGB DEFAULT_DEFAULT_COLOR = new RGB(0, 0, 0); -->
-<!--  -->
-<!-- private static final RGB DEFAULT_STRING_COLOR = new RGB(255, 0, 0); -->
-<!-- private static final RGB DEFAULT_COMMAND_COLOR = new RGB(128, 0, 255); -->
-<!-- private static final RGB DEFAULT_CURLY_BRACKETS_COLOR = new RGB(3, 54, 222); -->
-<!-- private static final RGB DEFAULT_SQUARE_BRACKETS_COLOR = new RGB(243, 129, 37); -->
-<!-- private static final RGB DEFAULT_EQUATION_COLOR = new RGB(190, 100, 100); -->
-<!-- private static final RGB DEFAULT_COMMENT_COLOR = new RGB(190, 190, 190); -->
-<!-- private static final RGB DEFAULT_VERBATIM_COLOR = new RGB(80, 80, 80); -->
-<!-- //private static final RGB DEFAULT_TEX_WHITE_COLOR = new RGB(125, 125, 125); -->
-<!-- private static final RGB DEFAULT_TEX_NUMBER_COLOR = new RGB(255, 100, 0); -->
-<!-- private static final RGB DEFAULT_TEX_SPECIAL_COLOR = new RGB(255, 0, 0); -->
-<!--  -->
-
-プロジェクトは基本的にはワークスペース内で管理することになります．外部からファイルを追加するにはパッケージ・エクスプローラーへドラッグ &amp; ドロップ．または、
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ファイル(F)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　インポート(I)...　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　一般　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　ファイル・システム　</span>　</span><br>
-
-***
-
-### 個々の LaTeX ファイルのエンコードの指定 {#o6aeb25a}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　プロジェクト・エクスプローラーの LaTeX ファイルを右クリック　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　プロパティー(R)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　リソース　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　テキスト・ファイル・エンコード(T)　</span>　</span><br>
-
-***
-
-デフォルトでは，「デフォルト(E) (コンテナーから継承する: MS932)」 となっています．UTF-8 を使用する場合は，その他(O): のリストから UTF-8 を選択します．
-
-### メインのファイルを設定 {#l81d76a8}
-
-メインとしたいファイルを選んだ状態で
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　Latex(L)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　メイン・ファイルとして設定(M)　</span>　</span><br>
-
-***
-
-### 補完 {#wbb2940d}
-
-Ctrl+Space で補完を行います．<br>
-
-```
-\begin{itemize}
-```
-
-で Enter をタイプすると
-
-```
-  \item 
-\end{itemize}
-```
-
-を自動的に補完してくれます．<br>
-
-### ビルド {#g3afcb95}
-
-デフォルトでは，ファイルを保存すると自動的にビルドしてくれます．
-
-これを無効にしたい場合は，
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　プロジェクト(P)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　自動的にビルド(M)　</span>　</span><br>
-
-***
-
-のチェックを外し，
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　プロジェクト(P)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　プロジェクトのビルド(B)　</span>　</span><br>
-
-***
-
-でビルドするようにします．
-
-### プレビュー {#z12a5e5c}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　Latex(L)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　ドキュメントのプレビュー(V)　</span>　</span><br>
-
-***
-
-で，プロジェクトの出力フォーマット(dvi, ps, pdf) に対応する最も優先度の高いビューアーが，立ち上がります．
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　実行(R)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　外部ツール(E)　</span>　</span><br>
-
-***
-
-で，ビューアーを指定して実行することもできます．
-
-### 出力フォーマットとビルド・コマンドの変更 {#me964c32}
-
-出力フォーマットとビルド・コマンドは
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　プロジェクト(P)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　プロパティー(P)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　Latex プロジェクト・プロパティ　</span>　</span><br>
-
-***
-
-から変更することが可能です．
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　Latex プロジェクト・プロパティー<br>
-
-<br>
-
-　　Main TeX File(M): <ins>document.tex</ins><br>
-　　出力ファイル(O): <ins>document.pdf</ins><br>
-　　Directory for Latex temporary files(T): <ins>tmp</ins><br>
-　 ☑Set LaTeX temporary and output files as derived(V)<br>
-
-<br>
-
-　　出力フォーマット: <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span>　ビルド・コマンド: <span style="color:Black;background-color:#EEEEEE;">\[latex.exe+dvipdfm.exe　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　<span style="color:#1188FF;">[Setup build tools...](/TeXlipse/#j3f79297)</span><br>
-　　Makeindex style file:<br>
-　 Language setting is used by the spell checker to determine the dictionary file to use.<br>
-　　The two-letter (ISO 639 standard) language code: <ins>en</ins>
-
-***
-
-### TODO 機能 {#e670a37e}
-
-"%TODO +コメント" とした行がタスクリストに登録されます．
+[TeXlipse/使い方](</TeXlipse/使い方/>) を参照．
 
 ## 関連リンク {#g42d5edd}
 
