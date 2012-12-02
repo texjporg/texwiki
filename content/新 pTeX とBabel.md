@@ -78,7 +78,8 @@ pukiwiki: "新 pTeX とBabel"
 
 [W32TeX](/W32TeX/) では
 [TeX Live](</TeX Live/>) 所収の
-ハイフネーションファイル（68種類）が同梱されています。8ビットコード対応済み
+ハイフネーションファイル（68種類）が同梱されています。<br>
+8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
 [TeXWiki:Microsoft Windows](</Microsoft Windows/>) を参照）。
@@ -102,7 +103,7 @@ Cygwin については
 #### 『［改訂第5版］ LaTeX2e 美文書作成入門』付録 DVD-ROM {#oe0dfa58}
 
 『[［改訂第5版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』
-付録 DVD-ROM には上記
+付録 DVD-ROM には
 [W32TeX](/W32TeX/) と
 [ptexlive for TeX Live 2009](http://tutimura.ath.cx/ptexlive/) が収録されています。<br>
 付録DVD所収のもの（Mac・Cygwin用）はBabel対応版になっています（インストールは p.345, p.347 参照）。<br>
@@ -235,7 +236,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ここから先は Type 1 フォントを使うための設定です。
 不必要であれば無視してください。
 
-### cm-super パッケージ（巨大！ 約 64.1 MiB）のダウンロードとインストール {#a4477ec1}
+### cm-super パッケージのダウンロードとインストール {#a4477ec1}
 
 - [cm-super](/cm-super/) にも解説があります。
 
