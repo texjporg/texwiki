@@ -16,16 +16,10 @@ pukiwiki: "Ispell"
 角藤版 ispell-3.3.02-w32.tar.xz がインストール済みのシステムに，新・旧両正書法対応のドイツ語辞書を追加する方法を説明します。
 
 - 
-    [dic-german.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
+    [dic-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
 
     ```
     ispell-w32/dic/
-    ```
-
-    ディレクトリ以下に，あるいは Meadow 2.00 に付随する ispell-3.2.06-w32.tar.gz を使っている場合は
-
-    ```
-    Meadow/site-lisp/etc/ispell/
     ```
 
     ディレクトリ以下にコピーします。
@@ -46,7 +40,7 @@ pukiwiki: "Ispell"
     ということです。
 
 - 
-    最後に，スペルチェックのテストをしてみます。[test-german.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/test-german.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    最後に，スペルチェックのテストをしてみます。[test-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-german.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
 
     ```
     ispell -d deutsch deutsch.tex <--- 7ビット入力ファイルを旧正書法でチェック
@@ -56,33 +50,33 @@ pukiwiki: "Ispell"
     のように打ち込んでテストします。
 
 - 
-    [7ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/deutsch.png)
+    [7ビット入力ファイルを旧正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/deutsch.png)
 
 - 
-    [7ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/german.png)
+    [7ビット入力ファイルを新正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/german.png)
 
 - 
     Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Deutsch8 Dict (8ビット旧正書法用) あるいは German8 Dict (8ビット新正書法用) 辞書を選択し，deutsch8.tex または german8.tex を開いてスペルチェックをかけてみてください。
 
 - 
-    [8ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/deutsch8.png)
+    [8ビット入力ファイルを旧正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/deutsch8.png)
 
 - 
-    [8ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/german8.png)
+    [8ビット入力ファイルを新正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/german8.png)
 
 #### Vine Linux 4.1 の場合 (2007/04/02) {#h8de4132}
 
 - 
-    [7ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/vine41_deutsch7.png)
+    [7ビット入力ファイルを旧正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/vine41_deutsch7.png)
 
 - 
-    [7ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/vine41_german7.png)
+    [7ビット入力ファイルを新正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/vine41_german7.png)
 
 - 
-    [8ビット入力ファイルを旧正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/vine41_deutsch8.png)
+    [8ビット入力ファイルを旧正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/vine41_deutsch8.png)
 
 - 
-    [8ビット入力ファイルを新正書法でチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/vine41_german8.png)
+    [8ビット入力ファイルを新正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/vine41_german8.png)
 
 「辞書の素」から私が実際に行ったコンパイルの手続きをメモしておきます。
 
@@ -260,22 +254,16 @@ M-x german-mode （トグル）で何が起こるのかは，お楽しみ！(man
 #### Windows の場合 {#w091e4da}
 
 - 
-    [dic-french.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/dic-french.zip) をダウンロード・解凍して得られる francais.hash, francais-tex.hash を
+    [dic-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-french.zip) をダウンロード・解凍して得られる francais.hash, francais-tex.hash を
 
     ```
     ispell-w32/dic/
     ```
 
-    ディレクトリ以下に，あるいは Meadow に付随する ispell-3.2.06-w32.tar.gz を使っている場合は
-
-    ```
-    Meadow/site-lisp/etc/ispell/
-    ```
-
     ディレクトリ以下にコピーします。
 
 - 
-    スペルチェックのテスト。[test-french.zip](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/test-french.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    スペルチェックのテスト。[test-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-french.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
 
     ```
     ispell -d francais francais-tex.tex <--- 7ビット入力ファイルをチェック
@@ -284,10 +272,10 @@ M-x german-mode （トグル）で何が起こるのかは，お楽しみ！(man
     のように打ち込んでテストします。
 
 - 
-    [7ビット入力ファイルをチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/francais-tex.png)
+    [7ビット入力ファイルをチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/francais-tex.png)
 
 - 
     Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Francais Dict 辞書を選択し，fraincais.tex を開いてスペルチェックをかけてみてください。
 
 - 
-    [8ビット入力ファイルをチェックの様子](http://www.lg.fukuoka-u.ac.jp/~ynagata/latex/francais.png)
+    [8ビット入力ファイルをチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/francais.png)
