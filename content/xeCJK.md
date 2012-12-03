@@ -63,6 +63,7 @@ xltxtra と xeCJK を使用すると表示がおかしくなる場合があり�
 #### xeCJK error: "l3-too-old" → l3kernel, l3packages をアップデートする {#se187b49}
 
 - [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（４）テスト](http://blog.livedoor.jp/ti5942/archives/7562221.html)
+- [xeCJK l3-too-old](http://tex.stackexchange.com/questions/79257/xecjk-l3-too-old)
 
 xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
 
