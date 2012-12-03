@@ -217,7 +217,7 @@ upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロッ�
 \documentclass{ujarticle}
 %\usepackage{lmodern}% Latin Modern
 \usepackage[utf8x]{inputenc}
-%\usepackage[10pt]{type1ec}
+%\usepackage{type1ec}
 \usepackage[T2A,T2B,T2C,T1]{fontenc}
 \usepackage[french,german,czech,russian,greek,japanese]{babel}
 
