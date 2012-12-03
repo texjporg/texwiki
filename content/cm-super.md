@@ -14,47 +14,19 @@ pukiwiki: "cm-super"
 [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 
 [cm-super.zip](https://mirror.ctan.org/fonts/ps-type1/cm-super.zip) がダウンロードできます。
 
-### インストール： {#iaa9cbb7}
+### TeX Live {#v13d26d6}
 
-```
-mv pfb /usr/local/teTeX/share/texmf/fonts/type1/public/cm-super
-mv dvips /usr/local/teTeX/share/texmf/dvips/cm-super
-mv dvipdfm/* /usr/local/teTeX/share/texmf/dvipdfm/config/
-# 以下は必要なし。ディスクが溢れる可能性あり :-)
-# mv afm /usr/local/teTeX/share/texmf/fonts/afm/public/cm-super
-# cd /usr/local/teTeX/share/texmf/fonts/afm/public/cm-super/
-# gunzip *.afm.gz
-```
+TeX Live 2012 には標準で含まれています．<br>
 
-dvips で使う場合は /usr/local/teTeX/share/texmf/dvips/config/config.ps に次のように追加しておきます。 
+#### Ubuntu {#h3ad69fe}
 
-```
-p +cm-super-t1.map
-p +cm-super-ts1.map
-p +cm-super-t2a.map
-p +cm-super-t2b.map
-p +cm-super-t2c.map
-p +cm-super-x2.map
-```
+- [Ubuntu -- パッケージ検索結果 -- cm-super](http://packages.ubuntu.com/ja/cm-super)
 
-dvipdfm(x) で使う場合は /usr/local/teTeX/share/texmf/dvipdfm/config/config および dvipdfmx.cfg に次のように追加しておきます。 
+#### Debian {#v3930077}
 
-```
-f cm-super-t1.map
-f cm-super-t2a.map
-f cm-super-t2b.map
-f cm-super-t2c.map
-f cm-super-ts1.map
-f cm-super-x2.map
-```
+- [Debian -- パッケージ検索結果 -- cm-super](http://packages.debian.org/ja/cm-super)
 
-pdfTeX で使う場合は /usr/local/teTeX/share/texmf/pdftex/config/pdftex.cfg に次のように追加しておきます。 
+## 関連リンク {#e74a0814}
 
-```
-map +cm-super-t1.map
-map +cm-super-ts1.map
-map +cm-super-t2a.map
-map +cm-super-t2b.map
-map +cm-super-t2c.map
-map +cm-super-x2.map
-```
+- [Babel な話：type1ec パッケージの 10pt オプションがアレな件](http://d.hatena.ne.jp/zrbabbler/20120906/1346931893)
+- [cm-super - 松浦高志のページ](http://user.ecc.u-tokyo.ac.jp/users/user-12036/wiki.cgi?page=cm-super)
