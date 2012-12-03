@@ -94,7 +94,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 - [thesis-template](https://github.com/ymrl/thesis-template)
     - [修士論文用のテンプレートを作った](http://mkdir.g.hatena.ne.jp/ymrl/20121112/1352743084)
 
-### [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
+## [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
 - platex を使用する場合 (TeXworks, YaTeX, KaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
 
@@ -105,12 +105,21 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 ***
 
 ```
-$latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1';
-$bibtex = 'pbibtex -kanji=utf8';
-$makeindex = 'mendex -U';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
-$ps2pdf = 'ps2pdf.bat %O %S %D';
+if ($^O eq 'MSWin32') {
+  $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1';
+  $bibtex = 'pbibtex -kanji=utf8';
+  $makeindex = 'mendex -U';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+  $ps2pdf = 'ps2pdf.bat %O %S %D';
+} else {
+  $latex = 'platex -synctex=1';
+  $bibtex = 'pbibtex';
+  $makeindex = 'mendex';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+  $ps2pdf = 'ps2pdf %O %S %D';
+}
 ```
 
 ***
@@ -120,7 +129,7 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- platex を使用する場合 (Texmaker, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+- platex を使用する場合 (Texmaker, TeXstudio, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
 
 ***
 
@@ -129,12 +138,21 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
-$latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode';
-$bibtex = 'pbibtex -kanji=utf8';
-$makeindex = 'mendex -U';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
-$ps2pdf = 'ps2pdf.bat %O %S %D';
+if ($^O eq 'MSWin32') {
+  $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode';
+  $bibtex = 'pbibtex -kanji=utf8';
+  $makeindex = 'mendex -U';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+  $ps2pdf = 'ps2pdf.bat %O %S %D';
+} else {
+  $latex = 'platex -synctex=1 -interaction=nonstopmode';
+  $bibtex = 'pbibtex';
+  $makeindex = 'mendex';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+  $ps2pdf = 'ps2pdf %O %S %D';
+}
 ```
 
 ***
@@ -153,12 +171,21 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
-$latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1';
-$bibtex = 'upbibtex';
-$makeindex = 'mendex -U';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
-$ps2pdf = 'ps2pdf.bat %O %S %D';
+if ($^O eq 'MSWin32') {
+  $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1';
+  $bibtex = 'upbibtex';
+  $makeindex = 'mendex -U';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf.bat %O %S %D';
+} else {
+  $latex = 'uplatex -synctex=1';
+  $bibtex = 'upbibtex';
+  $makeindex = 'mendex';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf %O %S %D';
+}
 ```
 
 ***
@@ -168,7 +195,7 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- uplatex を使用する場合 (Texmaker, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+- uplatex を使用する場合 (Texmaker, TeXstudio, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
 
 ***
 
@@ -177,12 +204,21 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
-$latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode';
-$bibtex = 'upbibtex';
-$makeindex = 'mendex -U';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
-$ps2pdf = 'ps2pdf.bat %O %S %D';
+if ($^O eq 'MSWin32') {
+  $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode';
+  $bibtex = 'upbibtex';
+  $makeindex = 'mendex -U';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf.bat %O %S %D';
+} else {
+  $latex = 'uplatex -synctex=1 -interaction=nonstopmode';
+  $bibtex = 'upbibtex';
+  $makeindex = 'mendex';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf %O %S %D';
+}
 ```
 
 ***
@@ -208,7 +244,7 @@ latexmk -C
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 
-### [OMake](http://omake.metaprl.org/) {#yf7ac218}
+## [OMake](http://omake.metaprl.org/) {#yf7ac218}
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
 - [ぼくのかんがえたさいきょうの小説執筆環境](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
@@ -220,8 +256,8 @@ latexmk -C
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
-### [Rubber](https://launchpad.net/rubber) {#c944641c}
+## [Rubber](https://launchpad.net/rubber) {#c944641c}
 
-### バッチファイル {#n34560fd}
+## バッチファイル {#n34560fd}
 
 - [2011.12.14 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20111214/), [2011.3.8 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20110308)
