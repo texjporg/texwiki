@@ -21,9 +21,9 @@ JTeX は TeX 総合環境です．
 
 OS X 10.8, 10.7, 10.6, 10.5
 
-### リリース情報 {#o3362d68}
+### リリース情報/ChangeLog {#o3362d68}
 
-2012-11-27 JTeX61c20
+[JTeX](http://www.math.sci.osaka-u.ac.jp/~koiso/JTeX.html) の最近の変更を参照．<br>
 
 ### JTeXEdit {#i6a864d7}
 
