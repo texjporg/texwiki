@@ -159,7 +159,7 @@ KaTeX （花鳥）は便利なキーボードショートカットを多数有�
 
 ## 設定 {#pea65968}
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](http://www.mingw.org/) Shell (MSYS) や [Cygwin](http://www.cygwin.com/) Bash Shell から
+環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS) や [Cygwin](/Cygwin/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
