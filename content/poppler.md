@@ -31,8 +31,7 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
-2012-11-22 poppler 0.21.2<br>
-2012-10-10 poppler 0.20.5<br>
+[Poppler](http://poppler.freedesktop.org/) を参照．<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
 
@@ -54,7 +53,7 @@ TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32
 W32TeX を使用している場合は curl が W32TeX に含まれているのでダウンロードする必要はありません．<br>
 sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれています．<br>
 
-- [MinGW](http://www.mingw.org/) のサイトから [mingw-get-inst の最新版](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) をダウンロードし，フルインストールします．
+- [MinGW](/MinGW/) をフルインストールします．
 
 - [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.3\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
     <!-- -http://releases.qt-project.org/qt5.0/ -->
@@ -840,9 +839,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.2.tar.gz
-$ tar xvf poppler-0.21.2.tar.gz
-$ pushd poppler-0.21.2
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.21.3.tar.gz
+$ tar xvf poppler-0.21.3.tar.gz
+$ pushd poppler-0.21.3
 ```
 
 ***
@@ -1005,14 +1004,8 @@ C:.
 ## 関連リンク {#m3ac74dd}
 
 - [Poppler: Displaying PDF Files with Qt](http://doc.qt.digia.com/qq/qq27-poppler.html)
-- [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
-- [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
-- [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
-- [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
 - [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
-- [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
-- [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
