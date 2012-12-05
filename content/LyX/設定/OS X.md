@@ -39,11 +39,15 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 ## Skim との連携 {#m16eb5ea}
 
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+
 ### forward search {#hc4659c6}
 
 順検索 (forward search) を参照してください．
 
 ## pxdvi との連携 (非推奨) {#qa1c9c53}
+
+変換子に -src-specials を追加します．<br>
 
 ### forward search {#fac5a68a}
 
