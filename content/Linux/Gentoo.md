@@ -7,7 +7,9 @@ pukiwiki: "Linux/Gentoo"
 
 # Linux/Gentoo
 
-## [Gentoo](http://www.gentoo.org/) {#j8a08e75}
+[Linux](/Linux/) > Gentoo Linux
+
+## [Gentoo Linux](http://www.gentoo.org/) {#j8a08e75}
 
 ## 公式サイト {#gdebd34f}
 
