@@ -110,11 +110,15 @@ PDFコマンドは PdfViewer を使用します．<br>
 
 ## Evince との連携 {#yfea5c32}
 
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+
 ### forward search {#i9ef9b4c}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
 ## Okular との連携 {#ka27016a}
+
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
 
 ### forward search {#w6988b67}
 
@@ -122,17 +126,23 @@ PDFコマンドは PdfViewer を使用します．<br>
 
 ## qpdfview との連携 {#i536202e}
 
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+
 ### forward search {#l5055820}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
 ## PdfViewer との連携 {#sa00c46a}
 
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+
 ### forward search {#ff4d5d64}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
 ## pxdvi との連携 (非推奨) {#rca4729e}
+
+変換子に -src-specials を追加します．<br>
 
 ### forward search {#hed232c6}
 
