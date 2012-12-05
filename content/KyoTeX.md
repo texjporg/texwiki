@@ -29,7 +29,7 @@ kyotex-mode は [xyzzy](/xyzzy/) 用の TeX/LaTeX/BibTeX 編集支援モード�
 
 - [kyotex-modeのインストール](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/install.html) を参照．
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](http://www.mingw.org/) Shell (MSYS) や [Cygwin](http://www.cygwin.com/) Bash Shell から
+環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS) や [Cygwin](/Cygwin/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
