@@ -7,6 +7,8 @@ pukiwiki: "Linux/Vine"
 
 # Linux/Vine
 
+[Linux](/Linux/) > Vine Linux
+
 ## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
 
 ## Vine Linux 6.1 {#sf8daebc}
