@@ -70,13 +70,15 @@ pukiwiki: "ArchiveQandA"
 
 - [PDFの作り方#画像の用意の仕方](</PDFの作り方/#l580b75f>)
 - “Cannot determine size of graphic in filename.xxx (no size specifed)”というエラーが出て画像（JPG, PNGなど）が取り込めない（[qa:29325](https://okumuralab.org/~okumura/texfaq/qa/29325.html), [qa:19304](https://okumuralab.org/~okumura/texfaq/qa/19304.html)など）
-    - その画像に対応する“枠”を記述した .bb ファイル（Bounding Box）がないからです。コマンドプロンプトで画像ファイルのあるディレクトリに移動し
+    - その画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
+        コマンドプロンプトで画像ファイルのあるディレクトリに移動し
 
         ```
-        ebb filename.xxx
+        extractbb filename.xxx
         ```
 
-        を実行します。すると、そのディレクトリに filename.bb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
+        を実行します。すると、filename.xxx と同じディレクトリに filename.xbb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。<br>
+        dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
 
         ```
         bmc -b filename.xxx
