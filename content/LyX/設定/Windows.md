@@ -385,7 +385,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -456,7 +456,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -527,7 +527,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -598,7 +598,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -669,7 +669,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -717,7 +717,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>ps</ins><br>
 短絡キー(U):　　　　　<ins>t</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> または <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -740,7 +740,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>ps</ins><br>
 短絡キー(U):　　　　　<ins>t</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\Ghostgum\gsview\gsview32.exe" -e</ins> または <ins>"C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe" -e</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\Ghostgum\gsview\gsview32.exe" -e</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe" -e</ins> (64bit Windows の場合)<br>
 複写子(P):<br>
 
 ***
@@ -832,7 +832,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
 
-変換子に -synctex=1 を追加します．
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
 
 ### forward search {#u9f206c7}
 
