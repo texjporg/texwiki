@@ -7,6 +7,8 @@ pukiwiki: "Linux/openSUSE"
 
 # Linux/openSUSE
 
+[Linux](/Linux/) > openSUSE
+
 ## [openSUSE](http://www.opensuse.org/) {#nea99a9d}
 
 - [openSUSE.org](http://www.opensuse.org/)
