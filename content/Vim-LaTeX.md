@@ -679,6 +679,7 @@ Python のドキュメントは [Sphinx](/Sphinx/) で作成されています�
 初心者におすすめのプログラミング言語です．<br>
 Python に慣れてきたら Ruby や Perl も使ってみてください．<br>
 動的型付け言語に慣れてきたら F# などの静的型付け言語も使ってみてください．<br>
+高速なプログラムを作成したい場合は C を使ってみてください．<br>
 
 ***
 
@@ -1067,7 +1068,7 @@ let execString = 'silent! !perl '.s:path.'/fwdsumatra.pl "'.mainfnameFull.'.'.s:
 
 ### SumatraPDF を前面に表示したくない場合 {#g49fe34c}
 
-#### fwdsumatrapdf.exe (fwdsumatrapdf.fsx) (F# の場合) {#f2c220aa}
+#### fwdsumatrapdf.exe (fwdsumatrapdf.fsx) (F#, C の場合) {#f2c220aa}
 
 [SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
