@@ -13,7 +13,8 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX とは {#v17b2316}
 
-LuaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．<br>
+LuaTeX は Lua が使える TeX です．<br>
+LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
