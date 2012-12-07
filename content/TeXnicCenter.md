@@ -95,57 +95,7 @@ TeXnicCenter/設定 を参照．
 
 ## 使い方 {#f25094fe}
 
-### プロジェクトの作成 {#td4273eb}
-
-\[File\]-\[New\]-\[Project...\] で新規プロジェクトを作成します．
-
-### 補完 {#tcdb30cc}
-
-Ctrl + Space で補完ができます．
-
-doc とタイプして Ctrl + Space をタイプすると
-
-```
-\begin{document}
-
-\end{document}
-```
-
-を補完してくれます．
-
-ite とタイプして Ctrl + Space をタイプすると
-
-```
-\begin{itemize}
-	\item 
-\end{itemize}
-```
-
-を補完してくれます．
-
-### プロファイルの変更 {#t5967111}
-
-\[Build\]-\[Select Output Profile...\] またはツールバーからプロファイルを変更できます．
-
-dvipdfm(x) で PDF ファイルを作成する場合は，プロファイルを LaTeX => DVI => PDF に変更します．
-
-### ビルド {#i6bfece2}
-
-\[Build\]-\[Build Output\] をクリックします．
-
-エラーが見つかれば，×印が表示され，クリックするとエラー箇所にジャンプします．
-
-間違った箇所を修正してもう一度ビルドします．
-
-### 表示 {#w010da2b}
-
-\[Build\]-\[View Output\] で対応するプロファイルの出力ファイルが表示されます．
-
-\[Build\]-\[Build and View Output\] でビルドと表示ができます．
-
-### 折りたたみ {#r2ac1196}
-
-\[View\]-\[Fold Margin\] で折りたたみできます．
+TeXnicCenter/使い方 を参照．
 
 ## 関連リンク {#r73017f2}
 
