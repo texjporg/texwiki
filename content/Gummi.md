@@ -9,6 +9,8 @@ pukiwiki: "Gummi"
 
 ## [Gummi](http://gummi.midnightcoding.org/) {#k995ae8f}
 
+<img src="http://svn.midnightcoding.org/gummi/trunk/data/icons/gummi.png" alt="Gummi" width="256" height="256" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## Gummi とは {#ja85a774}
@@ -47,6 +49,7 @@ Windows, Linux
 
 #### Typesetter command {#q07cf638}
 
+デフォルトでは TeXLive with PdfTeX になっています．<br>
 日本語を使用する場合は TeXLive with XeTeX を選択します．<br>
 
 ## 使い方 {#r032afe0}
@@ -55,3 +58,7 @@ Windows, Linux
 
 エディタに文書を記述すると Live preview で PDF ファイルを表示してくれます．<br>
 文書にエラーがあると Live preview されないのでその場合はエラーを修正してください．<br>
+
+## 関連リンク {#if3da882}
+
+- [初心者でkmaed's pdffillを使うなら、Gummi！？](http://blog.livedoor.jp/ti5942/archives/7617294.html)
