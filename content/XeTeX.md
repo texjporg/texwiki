@@ -17,9 +17,9 @@ pukiwiki: "XeTeX"
 
 ### XeTeX とは {#v9b12e60}
 
-[The XeTeX typesetting system](http://scripts.sil.org/xetex)
-は UTF-8 ベースの TeX。 <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース。 -->
-「ズィーTeX」と読む。
+XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
+「ズィーTeX」と読みます．<br>
+XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．<br>
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
