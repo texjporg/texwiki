@@ -699,14 +699,14 @@ $ popd
 - [libssh2](http://www.libssh2.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.2.tar.gz
-$ tar xvf libssh2-1.4.2.tar.gz
-$ pushd libssh2-1.4.2
+$ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.3.tar.gz
+$ tar xvf libssh2-1.4.3.tar.gz
+$ pushd libssh2-1.4.3
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  version:          1.4.2
+  version:          1.4.3
   Host type:        i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
