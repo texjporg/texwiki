@@ -823,7 +823,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
-　PDFコマンド: <ins>"C:\w32tex\NDde\Binary\fwdsumatrapdf.exe" $$o $$t $$n</ins><br>
+　PDFコマンド: <ins>fwdsumatrapdf.exe $$o $$t $$n</ins><br>
 
 ***
 
