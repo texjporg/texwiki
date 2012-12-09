@@ -522,7 +522,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
          (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf")))
-    (call-process (concat "C:/w32tex/NDde/Binary/fwdsumatrapdf" " " pdf-file " " tex-file " "
+    (call-process (concat "fwdsumatrapdf" " " pdf-file " " tex-file " "
                           (format nil "~D" (current-line-number)))
                   :exec-directory (directory-namestring tex-file))))
 
