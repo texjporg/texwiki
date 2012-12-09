@@ -227,7 +227,7 @@ forward search は PDFビューアに
 forward search は PDFビューアに
 
 ```
-"C:/w32tex/NDde/Binary/fwdsumatrapdf.exe" %.pdf #.tex @
+fwdsumatrapdf.exe %.pdf #.tex @
 ```
 
 です．
