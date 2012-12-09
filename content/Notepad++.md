@@ -735,7 +735,7 @@ MTeX for Notepad++ を使用する場合は以下のように設定します．<
 > <table>
 > <tbody>
 > <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
-> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "C:\w32tex\NDde\Binary\fwdsumatrapdf.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
+> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% fwdsumatrapdf.exe</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
 > </tbody>
 > </table>
 >
@@ -750,7 +750,7 @@ NppExec を使用する場合は以下のように設定します．<br>
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; C:\w32tex\NDde\Binary\fwdsumatrapdf.exe "$(NAME_PART).pdf" "$(FILE_NAME)" $(CURRENT_LINE)<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; fwdsumatrapdf.exe "$(NAME_PART).pdf" "$(FILE_NAME)" $(CURRENT_LINE)<br>
 
 <br>
 
