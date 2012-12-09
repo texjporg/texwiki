@@ -92,6 +92,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### Beamer Themes {#r446ce9a}
 
+- [kmbeamer](https://github.com/kmaed/kmbeamer)
 - [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
 - [http://www.pletscher.org/writings/latex/beamerthemes.php](http://www.pletscher.org/writings/latex/beamerthemes.php)
 - [http://mike.depalatis.net/beamerthemes/](http://mike.depalatis.net/beamerthemes/)
