@@ -693,7 +693,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\NDde\Binary\fwdsumatrapdf.exe</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\bin\fwdsumatrapdf.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile" "&#x25;texfile" &#x25;line</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
