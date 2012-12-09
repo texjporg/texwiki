@@ -985,7 +985,7 @@ function main()
   var currentTeXFile = Editor.ExpandParameter("$F");
   var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
   var line = Editor.ExpandParameter("$y");
-  var fwdsumatrapdf = "C:/w32tex/NDde/Binary/fwdsumatrapdf.exe";
+  var fwdsumatrapdf = "C:/w32tex/bin/fwdsumatrapdf.exe";
   var mainTeXDir;
   var cd;
   var cmd;
