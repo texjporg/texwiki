@@ -1075,7 +1075,7 @@ let execString = 'silent! !perl '.s:path.'/fwdsumatra.pl "'.mainfnameFull.'.'.s:
 $HOME/vimfiles/ftplugin/latex-suite/compiler.vim の execString の定義を
 
 ```
-let execString = 'silent! !C:/w32tex/NDde/Binary/fwdsumatrapdf.exe '.'"'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
+let execString = 'silent! !fwdsumatrapdf.exe '.'"'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
 ```
 
 に修正します．
