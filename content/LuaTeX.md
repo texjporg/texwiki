@@ -69,6 +69,7 @@ l.4 $\bm{a}
 - [「LuaTeX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=LuaTeX)
 - [機械学習の勉強とか: LuaTeX](http://choge.blogspot.jp/search/label/LuaTeX)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
+- [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
 - [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
 - [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
