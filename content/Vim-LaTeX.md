@@ -231,6 +231,8 @@ set imdisable
 
 ***
 
+set imdisable を設定すると問題が発生する場合は set imdisable を削除してください．<br>
+
 ### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#f59a6b76}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
@@ -792,53 +794,14 @@ if __name__ == "__main__":
 
 ***
 
-現在の Vim-LaTeX は fwdsumatra が作成された時期とは $HOME/vimfiles/ftplugin/latex-suite/compiler.vim の実装が異なっています．
+現在の Vim-LaTeX は fwdsumatra が作成された時期とは $HOME/vimfiles/ftplugin/latex-suite/compiler.vim の実装が異なっています．<br>
+patch コマンドでは fwdsumatra.diff の修正が適用できません．<br>
+そこで $HOME/vimfiles/ftplugin/latex-suite/compiler.vim を手動で修正します．
 
-patch コマンドでは fwdsumatra.diff の修正が適用できないかもしれません．
-
-また，2011/05/11 以降の W32TeX では，出力する synctex ファイルに記述されているソースファイル名が 2011/05/11 よりも前の W32TeX とは異なります．
-
-2011/05/11 以降の W32TeX ではフルパスでない TeX ファイル名 (basename.tex のみ) を引数に与えると
-
-```
-dirname/./basename.tex
-```
-
-のように出力されます．
-
-2011/05/11 よりも前の W32TeX ではフルパスでない TeX ファイル名 (basename.tex のみ) を引数に与えると
-
-```
-basename.tex
-```
-
-のように出力されます．
-
-フルパスの場合はどちらもフルパスで出力されます．
-
-SumatraPDF v1.7.3952 で，dirname/./basename.tex の場合にも対応しました．
-
-```
-
-```
-
-このため，fwdsumatra.diff の修正が適用できたとしても，SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX では SumatraPDF の forward search は動作しません．
-
-そこで fwdsumatra.diff の内容を見て，$HOME/vimfiles/ftplugin/latex-suite/compiler.vim を手動で修正します．
-
-- SumatraPDF v1.7.3952 以上 または 2011/05/11 よりも前の W32TeX の場合は relativeFile を
+- relativeFile を
 
     ```
         let relativeFile = substitute(expand("%:p"), Tex_GetMainFileName(':p:h').'/', '','')
-    ```
-
-    とします．
-
-- SumatraPDF v1.7.3952 未満 かつ 2011/05/11 以降の W32TeX の場合は relativeFile を
-    <!--     let relativeFile = Tex_GetMainFileName(':p:h').'/./'.expand("%:.") -->
-
-    ```
-        let relativeFile = './'.substitute(expand("%:p"), Tex_GetMainFileName(':p:h').'/', '','')
     ```
 
     とします．
@@ -967,7 +930,7 @@ def main(pdf, tex, line)
   data = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,' + $raiseWindow.to_s + ')]'
   data_pointer = FFI::MemoryPointer.from_string(data.to_s)
   # Call !
-  client.start_transaction(Win::Dde::XTYP_EXECUTE, data_pointer, data_pointer.size, Win::Dde::CF_TEXT, "")
+  client.start_transaction(Win::Dde::XTYP_EXECUTE, data_pointer, data_pointer.size, Win::Dde::CF_UNICODETEXT, "")
   client.stop_conversation()
 end
 
@@ -1319,6 +1282,7 @@ pxdvi の inverse search は Ctrl + 左クリックで行います．
 - [Windows×Tex×USB×Vim](http://d.hatena.ne.jp/firepig/20110118)
 - [Sumatra PDF viewerがLaTeX用によさげ](http://d.hatena.ne.jp/Rion778/20091127)
 - [Vim-LaTeXを書き換え](http://hidehiroyokota.wordpress.com/2011/01/26/rewriting-vim-latex-gotoerrorlocation/)
+- [VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html)
 - [Macはじめました。: ターミナルからQuick Lookする方法](http://lastarrow.tumblr.com/post/34790484391/mac-quick-look)
 - [偽Vim使いがLaTeXを使い始めた on Mac](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Mac上のVim-LaTeXでいい感じにPDFへコンパイルする設定](http://anond.hatelabo.jp/20110823180114)
