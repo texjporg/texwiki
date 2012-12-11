@@ -142,7 +142,8 @@ TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF 
 
 ### [MacTeX &amp; TeX Live](/Mac/#f5466652) ([OS X](/Mac/)) {#aecb2dfb}
 
-動作未確認です．
+動作未確認です．<br>
+Mac OS X 10.6 では動作するようです． → -[VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html), [VIMでLaTeX　前回の訂正](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_168.html)
 
 [MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) をインストールします．
 
@@ -619,9 +620,14 @@ SumatraPDF で forward search を使用するには LaTeX コマンドに -synct
 
 $HOME/\_vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照して設定します．
 
-### SumatraPDF を前面に表示したい場合 {#r8a125e8}
+使い方は
 
-#### -forward-search &lt;texfile> &lt;linenumber> オプションを使用する場合 {#aad615d5}
+1. GVim を起動して TeX ファイルを開きます．
+1. :TTarget pdf
+1. \ll でコンパイルして PDF ファイルを作成します．
+1. \ls で SumatraPDF で PDF ファイルをプレビューして forward search を行います．
+
+### SumatraPDF を前面に表示したい場合 {#r8a125e8}
 
 [$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=blob;f=ftplugin/latex-suite/compiler.vim) を修正します．
 
@@ -656,173 +662,11 @@ function! Tex_ForwardSearchLaTeX()
 
 ***
 
-使い方は
+### SumatraPDF を前面に表示したくない場合 {#g49fe34c}
 
-1. GVim を起動して TeX ファイルを開きます．
-1. :TTarget pdf
-1. \ll でコンパイルして PDF ファイルを作成します．
-1. \ls で SumatraPDF で PDF ファイルをプレビューして forward search を行います．
+[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
 
-#### fwdsumatra.py (Python の場合) {#if33a161}
-
-***
-
-<!-- ***初心者の方へ [#wc3116fb] -->
-- 初心者の方へ
-
-***
-
-初心者の方は，[VimとSumatraPDFを使いforward searchの設定をする](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=668) を参照してください．
-
-Vim-LaTeX で SumatraPDF を使った forward search は自分には難しいと判断された方は [SumatraPDF - TeX Wiki](/SumatraPDF/) に記述されているエディタを使って SumatraPDF を使った forward search をしてみてください．<br>
-これからプログラミングを勉強される場合は Python を使ってみてください．<br>
-Python は可読性が高く，便利なライブラリが豊富に存在し，ドキュメントもしっかりしています．<br>
-Python のドキュメントは [Sphinx](/Sphinx/) で作成されています．<br>
-初心者におすすめのプログラミング言語です．<br>
-Python に慣れてきたら Ruby や Perl も使ってみてください．<br>
-動的型付け言語に慣れてきたら F# などの静的型付け言語も使ってみてください．<br>
-高速なプログラムを作成したい場合は C を使ってみてください．<br>
-
-***
-
-[fwdsumatra](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を使用すると SumatraPDF で forward search が使用可能になります．
-
-[Python](http://www.python.org/) と [pywin32 (Python for Windows Extensions)](http://sourceforge.net/projects/pywin32/files/pywin32/) が必要です．
-
-python-2.7.3.msi と pywin32-214.win32-py2.7.exe で動作します．
-
-pywin32 (Python for Windows Extensions) の Build 218, 217, 216, 215 は python.exe で win32ui モジュールと dde モジュールを import するときに
-
-***
-
-```
->>> import win32ui
->>> import dde
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ImportError: This must be an MFC application - try loading win32ui first
-```
-
-***
-
-といったエラーが発生するので Build 214 を使用してください．→ [dde module initialization failing - ID: 3314345](http://sourceforge.net/tracker/?func=detail&aid=3314345&group_id=78018&atid=551954)
-
-PythonWin (Python IDE) ではエラーが発生しないようです． → ([Re: \[python-win32\] can't import dde module after importing win32ui &laquo; python-win32 &laquo; ActiveState List Archives](http://code.activestate.com/lists/python-win32/11729/))
-
-インストール方法は
-
-- python-2.7.3.msi と pywin32-214.win32-py2.7.exe をインストールして C:\Python27 に PATH を通します．
-- vim-fwdsumatra.zip を展開します．
-- $HOME/vimfiles/ftplugin/latex-suite/ に fwdsumatra.py をコピーします．
-
-Python 3 で使用する場合は 2to3.py を使用してリファクタリングを行います．
-
-```
->C:\Python33\python.exe C:\Python33\Tools\Scripts\2to3.py fwdsumatra.py
-RefactoringTool: Skipping implicit fixer: buffer
-RefactoringTool: Skipping implicit fixer: idioms
-RefactoringTool: Skipping implicit fixer: set_literal
-RefactoringTool: Skipping implicit fixer: ws_comma
-RefactoringTool: Refactored fwdsumatra.py
---- fwdsumatra.py       (original)
-+++ fwdsumatra.py       (refactored)
-@@ -19,7 +19,7 @@
- """
-
- def usage():
--    print USAGE_TEXT
-+    print(USAGE_TEXT)
-     sys.exit(-1)
-
- def main(pdf,tex,line):
-RefactoringTool: Files that need to be modified:
-RefactoringTool: fwdsumatra.py
-```
-
-print 文を print 関数に修正します．
-
-***
-
-- $HOME/vimfiles/ftplugin/latex-suite/fwdsumatra.py
-
-***
-
-```
-#!/usr/bin/env python
-
-# Part of Latex-Suite
-#
-# Copyright: Julien Cornebise
-# Date: February 20, 2009
-# Description:
-#   This file calls ForwardSearch DDE function of SumatraPDF
-
-import sys
-import win32ui
-import dde
-
-# Set to 0 to prevent SumatraPDF from raising, to 1 to raise it
-raiseWindow = 1
-
-USAGE_TEXT = """
-Usage: fwdsumatra.py <pdf_file> <source_file> <line_number>
-"""
-
-def usage():
-    print(USAGE_TEXT)
-    sys.exit(-1)
-
-def main(pdf,tex,line):
-    # Convert backslashes to slashes, for Unix-style calling from vimlatex
-    pdf = pdf.replace("/", "\\")
-    # Connect to SumatraPDF
-    server = dde.CreateServer()
-    server.Create("LatexSuite")
-    conversation = dde.CreateConversation(server)
-    conversation.ConnectTo("SUMATRA", "control")
-    # Build the DDE call
-    execString = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,' + str(raiseWindow) + ')]'
-    # Call !
-    conversation.Exec(execString)
-
-if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        usage()
-
-    main(sys.argv[1],sys.argv[2],sys.argv[3])
-```
-
-***
-
-現在の Vim-LaTeX は fwdsumatra が作成された時期とは $HOME/vimfiles/ftplugin/latex-suite/compiler.vim の実装が異なっています．<br>
-patch コマンドでは fwdsumatra.diff の修正が適用できません．<br>
-そこで $HOME/vimfiles/ftplugin/latex-suite/compiler.vim を手動で修正します．
-
-- relativeFile を
-
-    ```
-        let relativeFile = substitute(expand("%:p"), Tex_GetMainFileName(':p:h').'/', '','')
-    ```
-
-    とします．
-
-- fwdsumatra.diff の修正内容では \lv したあと \ls しなければならず，使い勝手が悪いため \ls だけで，プレビュー，検索ができるように call Tex_ViewLaTeX() を追加しました．
-- forward search が機能しない場合は execString の値が適切でないことが考えられます．$HOME/\_vimrc に
-
-    ```
-    let g:Tex_Debug = 1
-    let g:Tex_DebugLog = 'C:\vim73-kaoriya-win32\debug.txt'
-    ```
-
-    を追加してください．
-    $HOME/vimfiles/ftplugin/latex-suite/compiler.vim に
-
-    ```
-    call Tex_Debug("Tex_ForwardSearchLaTeX: execString = ".execString, "comp")
-    ```
-
-    を追加すると C:\vim73-kaoriya-win32\debug.txt が出力され execString の値を調べることができます．(これは既に記述されています．)
-    execString の値が適切な値になるように修正してみてください．
+[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=blob;f=ftplugin/latex-suite/compiler.vim) を修正します．
 
 ***
 
@@ -849,199 +693,12 @@ function! Tex_ForwardSearchLaTeX()
   elseif (has('win32') && (viewer =~? "sumatrapdf"))
 
     let relativeFile = substitute(expand("%:p"), Tex_GetMainFileName(':p:h').'/', '','')
-    let execString = 'silent! !python '.s:path.'/fwdsumatra.py "'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
-    call Tex_ViewLaTeX()
+    let execString = 'silent! !fwdsumatrapdf.exe '.'"'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
 
 ...
 ```
 
 ***
-
-fwdsumatra のライセンスは [WTFPL - Do What The Fuck You Want To Public License](http://sam.zoy.org/wtfpl/)[^1] です．
-
-#### fwdsumatra.rb (Ruby の場合) {#beac476a}
-
-Python + pywin32 の代わりに [RubyInstaller](http://rubyinstaller.org/) + [dde](http://rubygems.org/gems/dde) を使っても OK です．
-
-```
-C:\Ruby193\bin>gem install dde
-Fetching: bundler-1.0.21.gem (100%)
-Fetching: ffi-1.0.9-x86-mingw32.gem (100%)
-Fetching: win-0.3.27.gem (100%)
-Fetching: dde-0.2.11.gem (100%)
-Successfully installed bundler-1.0.21
-Successfully installed ffi-1.0.9-x86-mingw32
-Successfully installed win-0.3.27
-Successfully installed dde-0.2.11
-4 gems installed
-Installing ri documentation for bundler-1.0.21...
-Installing ri documentation for ffi-1.0.9-x86-mingw32...
-Installing ri documentation for win-0.3.27...
-unable to convert "\xE2" to UTF-8 in conversion from ASCII-8BIT to UTF-8 to Wind
-ows-31J for lib/win/dde.rb, skipping
-unable to convert "\xE2" to UTF-8 in conversion from ASCII-8BIT to UTF-8 to Wind
-ows-31J for lib/win/library.rb, skipping
-Installing ri documentation for dde-0.2.11...
-Installing RDoc documentation for bundler-1.0.21...
-Installing RDoc documentation for ffi-1.0.9-x86-mingw32...
-Installing RDoc documentation for win-0.3.27...
-unable to convert "\xE2" to UTF-8 in conversion from ASCII-8BIT to UTF-8 to Wind
-ows-31J for lib/win/dde.rb, skipping
-unable to convert "\xE2" to UTF-8 in conversion from ASCII-8BIT to UTF-8 to Wind
-ows-31J for lib/win/library.rb, skipping
-Installing RDoc documentation for dde-0.2.11...
-```
-
-***
-
-- $HOME/vimfiles/ftplugin/latex-suite/fwdsumatra.rb
-
-***
-
-```
-#!/usr/bin/env ruby
-
-# Part of Latex-Suite
-#
-# Description:
-#   This file calls ForwardSearch DDE function of SumatraPDF
-
-require 'dde'
-
-# Set to 0 to prevent SumatraPDF from raising, to 1 to raise it
-$raiseWindow = 1
-
-USAGE_TEXT = <<-"EOF"
-Usage: fwdsumatra.rb <pdf_file> <source_file> <line_number>
-EOF
-
-def usage()
-  print(USAGE_TEXT)
-  exit(-1)
-end
-
-def main(pdf, tex, line)
-  # Convert backslashes to slashes, for Unix-style calling from vimlatex
-  pdf = pdf.gsub("\\", "/")
-  # Connect to SumatraPDF
-  client = Dde::Client.new(nil, &Proc.new{})
-  client.start_conversation("SUMATRA", "control")
-  # Build the DDE call
-  data = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,' + $raiseWindow.to_s + ')]'
-  data_pointer = FFI::MemoryPointer.from_string(data.to_s)
-  # Call !
-  client.start_transaction(Win::Dde::XTYP_EXECUTE, data_pointer, data_pointer.size, Win::Dde::CF_UNICODETEXT, "")
-  client.stop_conversation()
-end
-
-if $0 == __FILE__
-  if ARGV.length() != 3
-    usage()
-  end
-  main(ARGV[0], ARGV[1], ARGV[2])
-end
-```
-
-***
-
-$HOME/vimfiles/ftplugin/latex-suite/compiler.vim の execString の定義を
-
-```
-let execString = 'silent! !ruby '.s:path.'/fwdsumatra.rb "'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
-```
-
-に修正します．
-
-#### fwdsumatra.pl (Perl の場合) {#o1d76025}
-
-Python + pywin32 の代わりに [Strawberry Perl](http://strawberryperl.com/) + [Win32::DDE](http://www.bribes.org/perl/win32dde.html) (インストール方法は [PPM Repository](http://www.bribes.org/perl/ppmdir.html) を参照) を使っても OK です．
-
-```
-C:\strawberry\perl\bin>ppm install http://www.bribes.org/perl/ppm/Win32-DDE.ppd
-Installing C:\strawberry\perl\site\lib\auto\Win32\DDE\DDE.bs
-Installing C:\strawberry\perl\site\lib\auto\Win32\DDE\DDE.dll
-Installing C:\strawberry\perl\site\lib\auto\Win32\DDE\DDE.exp
-Installing C:\strawberry\perl\site\lib\auto\Win32\DDE\DDE.lib
-Installing C:\strawberry\perl\site\lib\Win32\DDE.pm
-Installing C:\strawberry\perl\site\lib\Win32\DDE\Callback.pm
-Installing C:\strawberry\perl\site\lib\Win32\DDE\Client.pm
-```
-
-***
-
-- $HOME/vimfiles/ftplugin/latex-suite/fwdsumatra.pl
-
-***
-
-```
-#!/usr/bin/env perl
-
-# Part of Latex-Suite
-#
-# Description:
-#   This file calls ForwardSearch DDE function of SumatraPDF
-
-use Win32::DDE::Client;
-
-use strict;
-use warnings;
-
-# Set to 0 to prevent SumatraPDF from raising, to 1 to raise it
-our $raiseWindow = 1;
-
-my $USAGE_TEXT = <<"EOF";
-Usage: fwdsumatra.pl <pdf_file> <source_file> <line_number>
-EOF
-
-sub usage {
-  print($USAGE_TEXT);
-  exit(-1);
-}
-
-sub main {
-  my ($pdf, $tex, $line) = @_;
-  # Convert backslashes to slashes, for Unix-style calling from vimlatex
-  $pdf =~ s/\\/\//g;
-  # Connect to SumatraPDF
-  my $client = new Win32::DDE::Client("SUMATRA", "control");
-  # Build the DDE call
-  my $command = '[ForwardSearch("' . $pdf . '","' . $tex . '",' . $line . ',0,0,' . $raiseWindow . ')]';
-  # Call !
-  $client->Execute($command);
-  $client->Disconnect;
-}
-
-if ($0 eq __FILE__) {
-  if ($#ARGV != 2) {
-    &usage;
-  }
-  &main($ARGV[0], $ARGV[1], $ARGV[2]);
-}
-```
-
-***
-
-$HOME/vimfiles/ftplugin/latex-suite/compiler.vim の execString の定義を
-
-```
-let execString = 'silent! !perl '.s:path.'/fwdsumatra.pl "'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
-```
-
-に修正します．
-
-### SumatraPDF を前面に表示したくない場合 {#g49fe34c}
-
-#### fwdsumatrapdf.exe (fwdsumatrapdf.fsx) (F#, C の場合) {#f2c220aa}
-
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
-
-$HOME/vimfiles/ftplugin/latex-suite/compiler.vim の execString の定義を
-
-```
-let execString = 'silent! !fwdsumatrapdf.exe '.'"'.mainfnameFull.'.'.s:target.'" "'.relativeFile.'" '. line('.')
-```
-
-に修正します．
 
 ## [SumatraPDF](/SumatraPDF/) との連携 (inverse search) {#nefa91ff}
 
@@ -1203,7 +860,7 @@ let g:Tex_ViewRule_dvi = 'C:/w32tex/dviout/dviout.exe -1'
 
 に設定します．
 
-[Vim-LaTeX#SumatraPDF との連携 (forward search)#SumatraPDF v1.9.4622 以上の場合](/Vim-LaTeX/#r8a125e8) を参照して $HOME/vimfiles/ftplugin/latex-suite/compiler.vim を修正します．
+[Vim-LaTeX#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照して $HOME/vimfiles/ftplugin/latex-suite/compiler.vim を修正します．
 
 使い方は
 
@@ -1282,7 +939,6 @@ pxdvi の inverse search は Ctrl + 左クリックで行います．
 - [Windows×Tex×USB×Vim](http://d.hatena.ne.jp/firepig/20110118)
 - [Sumatra PDF viewerがLaTeX用によさげ](http://d.hatena.ne.jp/Rion778/20091127)
 - [Vim-LaTeXを書き換え](http://hidehiroyokota.wordpress.com/2011/01/26/rewriting-vim-latex-gotoerrorlocation/)
-- [VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html)
 - [Macはじめました。: ターミナルからQuick Lookする方法](http://lastarrow.tumblr.com/post/34790484391/mac-quick-look)
 - [偽Vim使いがLaTeXを使い始めた on Mac](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Mac上のVim-LaTeXでいい感じにPDFへコンパイルする設定](http://anond.hatelabo.jp/20110823180114)
@@ -1314,5 +970,3 @@ pxdvi の inverse search は Ctrl + 左クリックで行います．
 - [vimでtexで$aaa$みたいなのの入力をラクにする設定](http://blomott.mobi/rubyneko/entry%2CT3G5eJNLL7aaGFAJadDmAA%2C%2C%2C%2C.html)
 - [VIM-LaTeXを試してみた](http://blomott.mobi/rubyneko/entry%2CmwrzbK9nMSYU9M3Qf8c2kA%2C%2C%2C%2C.html), [VIM-LaTeXを試してみた (2)](http://blomott.mobi/rubyneko/entry%2CQiT80vPzE-sOY7Xz_P8gjQ%2C%2C%2C%2C.html)
 - [memo/vim-LaTex \[Internet Archive\]](http://web.archive.org/web/20050627163954/www.ss.ics.tut.ac.jp/noya/index.php?%5b%5bmemo/vim-LaTex%5d%5d)
-
-[^1]: WikiPedia.ja:WTFPL を参照．
