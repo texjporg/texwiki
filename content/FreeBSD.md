@@ -23,7 +23,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 #### tlptexlive {#zbf14d42}
 
-- [tlptexlive on FreeBSD](http://d.hatena.ne.jp/msll/20120906/1346914211)
+- [「texlive」の検索結果 - msllの日記](http://d.hatena.ne.jp/msll/searchdiary?word=texlive)
 
 #### TeX Live 関連 {#p4fe1144}
 
