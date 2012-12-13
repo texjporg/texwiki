@@ -84,7 +84,7 @@ PSTricks 2005 及び PSTricks 2006 は Herbert Voss が管理しています。
 
 PSTricks は [CTAN:graphics/pstricks/](https://mirror.ctan.org/graphics/pstricks/) ディレクトリにあります。
 
-以下では、 $TEXMFLOCAL は /usr/local/teTeX/share/texmf-local や $HOME/texmf
+以下では、 $TEXMFLOCAL は /usr/share/texmf-local や $HOME/texmf
 更には /usr/local/share/texmf 等に適宜読み替えて下さい。
 パッケージのファイルには通常 \*.tex (TeX マクロ本体)と\*.sty (LaTeX 用ラッパ)
 と\*.pro (PostScriptヘッダ)がありますので、インストールは，
