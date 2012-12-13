@@ -10,16 +10,15 @@ pukiwiki: "REVTeX4"
 ## REVTeX 4 {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
-もう角藤さんの Windows 版 TeX や新しい teTeX 2
+もう角藤さんの W32TeX や新しい TeX Live
 などにはインストール済みですので，改めてインストールする必要はありません。
 インストール法は消して，使い方をもっと詳しくすべきですね。
 
-### はじめに {#i3bdc15f}
+- [REVTeX 4 Home Page](https://authors.aps.org/revtex4/)
 
-今までの REVTeX 3 は LaTeX 2.09 ベースだったので、LaTeX2e
-ベースの新版が待望されていましたが、2001年8月3日、遅れに遅れて
-[REVTeX 4](https://authors.aps.org/revtex4/)
-がやっと正式公開されました。
+### リリース情報 {#i3bdc15f}
+
+2010-08-11 REVTeX 4.1
 
 ### インストール {#jaaef53a}
 
