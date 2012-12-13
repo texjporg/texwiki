@@ -191,33 +191,6 @@ TeX Live をインストールすると XeTeX がインストールされます�
 
 [MacTeX &amp; TeX Live](/Mac/#f5466652) をインストールすると XeTeX がインストールされます．
 
-<!-- ***teTeX [#dacf7872] -->
-<!-- [[ptetex:http://www.nn.iij4u.or.jp/~tutimura/tex/ptetex.html]] -->
-<!-- をインストールした Mac OS X 10.4.x でインストールしてみた。 -->
-<!-- 本家から XeTeX_0995.dmg をダウンロードし，ダブルクリックして現れる XeTeX.pkg -->
-<!-- をダブルクリックして先に進んでいくとエラーになる。 -->
-<!-- インチキだが -->
-<!--  -->
-<!-- cd /usr/local/teTeX/bin -->
-<!-- ln -s . powerpc-apple-darwin-current -->
-<!--  -->
-<!-- とするとインストーラが動く。 -->
-<!--  -->
-<!-- cd /usr/local/teTeX/share -->
-<!-- mv texmf.local texmf-local -->
-<!-- cd texmf-local -->
-<!-- ln -s ../texmf-var/fonts/map/dvips/updmap dvips -->
-<!--  -->
-<!-- /usr/local/teTeX/share/texmf/tex/generic/config/language.dat -->
-<!-- の “The following languages are disabled by default.” と -->
-<!-- 書いてあるところ以降にある magyar huhyphn.tex という行を “%! ” でコメントアウトし -->
-<!--  -->
-<!-- fmtutil - -byfmt xetex -->
-<!-- fmtutil - -byfmt xelatex -->
-<!--  -->
-<!-- 最新の 0.995 (Web2C-7.5.5, Kpse-3.5.5) は TDS 1.1 なので， -->
-<!-- もっとスムーズにインストールできるのではないかと思われる。 -->
-
 ### 入力用エンコーディング {#dd951bae}
 
 XeTeX はデフォルトではファイルを UTF8 として読み込みますが、
