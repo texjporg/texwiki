@@ -44,9 +44,6 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 ### Java™ Platform, Standard Edition (JRE &amp; JDK) {#x644af68}
 
 - [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
-    <!-- - -[[ミラーサイト:http://www.oracle.com/technetwork/jp/java/javase/downloads/]] -->
-    <!-- -[[MacでOracle JDK 7 (Java 7) を試す:http://toggtc.hatenablog.com/entry/2012/04/28/112031]] -->
-
 - [Java Platform, Standard Edition 7 Developer Preview Releases &mdash; Java.net](http://jdk7.java.net/download.html)
 
 から JRE をダウンロードしてインストールします．<br>
@@ -79,12 +76,6 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 ## Eclipse で TeX {#i62a454e}
 
 - [TeXlipse](/TeXlipse/)
-    <!-- -[[sTeXIDE:http://code.google.com/p/stexide/]] -->
-    <!-- -[[Blue Note Tex:http://bluenotetex.sourceforge.net/index-ja.html]] -->
-    <!-- -[[ecleTeX (旧名：eTeX):http://sourceforge.net/projects/etex/]] -->
-    <!-- -[[LatEc:http://www.itu.dk/people/jborella/]] -->
-    <!-- -[[LaPsE:http://sf.net/projects/eclipse-latex]] -->
-    <!-- -[[LaTexEditor:http://sf.net/projects/latexeditor/]] -->
 
 ## 関連リンク {#o908ecbb}
 
@@ -93,5 +84,3 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
 - [OpenJDK](http://openjdk.java.net/)
-    <!-- -[[Java for OS X 2012-004:http://support.apple.com/kb/DL1515]] -->
-    <!-- -[[Java for Mac OS X 10.6 Update 9:http://support.apple.com/kb/DL1550]] -->
