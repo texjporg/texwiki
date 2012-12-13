@@ -128,8 +128,8 @@ defaultfont := "rptmr";
 
 > しかし Ghostscript では次のようにして cmr10 などを出力することができます：
 > GS_LIB という環境変数を CM Type1 フォントのある場所
-> （たとえば /usr/local/teTeX/share/texmf/fonts/type1/bluesky/cm）
-> に設定しておき（あるいはここにある pfb ファイルを /usr/local/share/ghostscript/fonts
+> （たとえば /usr/share/texlive/texmf-dist/fonts/type1/bluesky/cm）
+> に設定しておき（あるいはここにある pfb ファイルを /usr/share/ghostscript/fonts
 > にコピーしておき），Ghostscript のディレクトリの Fontmap
 > ファイルにたとえば
 >
