@@ -77,29 +77,12 @@ TXフォントが出たころは、期待感がたいへん大きかったので
 
 ### インストール（Windows） {#o79bd0d3}
 
-角藤さんの W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.gz，t1fonts.tar.gz）ので，何もする必要はありません。
-dviout で使う場合は Ghostscript もインストールする必要があります。
-
-TX フォントのバージョンを上げたなら
-/usr/local/share/texmf/fonts/pk/modeless/txr/
-の中をすべて消してください。
+角藤さんの W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.xz，t1fonts.tar.xz）ので，何もする必要はありません。<br>
+dviout で使う場合は Ghostscript もインストールする必要があります。<br>
 
 ### インストール（Linux） {#dd6c8b38}
 
-teTeX 2.x には txfonts が含まれていますので，何もする必要はありません。
-
-teTeX 1.x については，Vine など Red Hat 系 Linux 用の RPM を
-[土村さん](http://www.nn.iij4u.or.jp/~tutimura/tex/)
-が配布してくださっています。
-インストール・更新は他の RPM と同じです。
-
-```
-# rpm -Uvh ダウンロードしたRPMファイルの名前
-```
-
-TX フォントのバージョンを上げたなら
-/usr/local/share/texmf/fonts/pk/modeless/txr/
-の中をすべて消してください。
+TeX Live には txfonts が含まれていますので，何もする必要はありません。
 
 ### インストール（Macintosh） {#w5aece91}
 
