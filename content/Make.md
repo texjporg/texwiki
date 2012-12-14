@@ -105,6 +105,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 ***
 
 ```
+#!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1';
   $bibtex = 'pbibtex -kanji=utf8';
@@ -112,6 +113,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
+  $pdf_mode = 3;
 } else {
   $latex = 'platex -synctex=1';
   $bibtex = 'pbibtex';
@@ -119,6 +121,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
+  $pdf_mode = 3;
 }
 ```
 
@@ -138,6 +141,7 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
+#!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode';
   $bibtex = 'pbibtex -kanji=utf8';
@@ -145,6 +149,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
+  $pdf_mode = 3;
 } else {
   $latex = 'platex -synctex=1 -interaction=nonstopmode';
   $bibtex = 'pbibtex';
@@ -152,6 +157,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
+  $pdf_mode = 3;
 }
 ```
 
@@ -171,6 +177,7 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
+#!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1';
   $bibtex = 'upbibtex';
@@ -178,6 +185,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
+  $pdf_mode = 3;
 } else {
   $latex = 'uplatex -synctex=1';
   $bibtex = 'upbibtex';
@@ -185,6 +193,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
+  $pdf_mode = 3;
 }
 ```
 
@@ -204,6 +213,7 @@ latexmk -gg -pdfps hoge.tex
 ***
 
 ```
+#!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode';
   $bibtex = 'upbibtex';
@@ -211,6 +221,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
+  $pdf_mode = 3;
 } else {
   $latex = 'uplatex -synctex=1 -interaction=nonstopmode';
   $bibtex = 'upbibtex';
@@ -218,6 +229,7 @@ if ($^O eq 'MSWin32') {
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
+  $pdf_mode = 3;
 }
 ```
 
