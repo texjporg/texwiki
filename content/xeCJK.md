@@ -34,9 +34,13 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### 注意点 {#w700f957}
 
-#### xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する {#d18a4ff7}
+#### xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する → xeCJK 3.1.1 で対応しました {#d18a4ff7}
 
+xeCJK 3.1.1 で対応しました． → [xeCJK r382](http://code.google.com/p/ctex-kit/source/detail?r=382)<br>
 [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
+
+- [xeCJK 与 xltxtra 在中文标点符号处出错](http://code.google.com/p/ctex-kit/issues/detail?id=100)
+- [XeCJK v3.1.0\* 中文标点问题](http://code.google.com/p/ctex-kit/issues/detail?id=102)
 
 xltxtra と xeCJK を使用すると表示がおかしくなる場合があります．
 
@@ -129,7 +133,7 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
 ZXjatype は xeCJK が必要です．<br>
-ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降, 新しいバージョンの l3kernel, l3packages が必要です．<br>
+ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 
