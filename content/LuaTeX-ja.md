@@ -11,6 +11,10 @@ pukiwiki: "LuaTeX-ja"
 
 ## LuaTeX-ja {#nec94db0}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+### LuaTeX-ja とは {#ha0b38ce}
+
 LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/) で日本語文書の組版を行うためのパッケージです．<br>
 LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
 
