@@ -188,6 +188,7 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 - [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
 - [Windows 2000 に Adobe Reader XI を入れてみたよ](http://blog.livedoor.jp/blackwingcat/archives/1719451.html)
 - [黒翼猫/「Adobe Reader」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=BlackWingCat&word=Adobe+Reader)
+- [スプールが終わるまでAdobeReaderを閉じる処理を待ちたいのですが、50ページ以上とかページ数が多いと、スプールが終わる前にAdobeReaderを閉じてしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421469214)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
 - [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
