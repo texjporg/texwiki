@@ -19,6 +19,52 @@ gedit は GNOME 公式のテキストエディタです．<br>
 
 - [gedit](http://projects.gnome.org/gedit/)
 
+***
+
+<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">ファイル(</ins>F<ins>)</span>　 <span style="color:Black;">編集(</ins>E<ins>)</span>　 <span style="color:Black;">表示(</ins>V<ins>)</span>　 <span style="color:Black;">検索(</ins>S<ins>)</span>　 <span style="color:Black;">ツール(</ins>T<ins>)</span>　 <span style="color:Black;">ドキュメント(</ins>D<ins>)</span>　 <span style="color:Black;">ヘルプ(</ins>H<ins>)</span>　　　　　　　　　　　　　</ins></span><br>
+
+```
+\documentclass[12pt]{article}
+\usepackage{indentfirst}
+\usepackage{a4wide}
+\begin{document}
+\section{What is gedit?}
+gedit is the official text editor of the GNOME desktop environment.
+
+While aiming at simplicity and ease of use, gedit is a powerful general purpose text editor.\par
+Currently it features:
+
+\begin{itemize}
+  \item Full support for internationalized text (UTF-8)
+  \item Configurable syntax highlighting for various languages (C, C++, Java, HTML, XML, Python, Perl and many others)
+  \item Undo/Redo
+  \item Editing files from remote locations
+  \item File reverting
+  \item Print and print preview support
+  \item Clipboard support (cut/copy/paste)
+  \item Search and replace
+  \item Go to specific line
+  \item Auto indentation
+  \item Text wrapping
+  \item Line numbers
+  \item Right margin
+  \item Current line highlighting
+  \item Bracket matching
+  \item Backup files
+  \item Configurable fonts and colors
+  \item A complete online user manual
+\end{itemize}
+
+gedit features also a flexible plugin system which can be used to dynamically add new advanced features to gedit itself. See the plugins page for more info on the existing plugins.
+
+Go to the screenshots page to see gedit in action!
+
+gedit is released under the GNU General Public License (GPL).
+\end{document}
+```
+
+***
+
 ### 動作環境 {#kd6ded02}
 
 Windows, OS X, Linux
@@ -92,6 +138,142 @@ Code comment を使用するとコメントアウト，コメントアウトの�
 編集(E): の項目にシェルスクリプトを追加します．<br>
 適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
+Latexmk は Latexmk Version 4.35 で動作確認しています．<br>
+Latexmk Version 4.24 では
+
+```
+Latexmk: -norc bad option
+```
+
+と表示されタイプセットできません．<br>
+
+#### Latexmk {#a2b5d8d4}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk1 {#id6f3d3f}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk2 {#p2b753e6}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk3 {#t17eb179}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk4 {#p3caf947}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk5 {#q7311d5c}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$pdflatex=q/pdflatex -synctex=1/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk6 {#gd49f6fd}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$pdflatex=q/lualatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk7 {#s2321b30}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$pdflatex=q/xelatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
 
 #### pdfpLaTeX {#pcd18d0c}
 
