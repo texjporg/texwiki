@@ -500,8 +500,8 @@ pxdvi -nofork -watchfile 1 -editor "gedit "%f" +%l" "`basename "$GEDIT_CURRENT_D
 
 #### その他の外部ツールの設定例 {#a704e342}
 
+- [UbuntuにTeX環境 -2-](http://ngc1952.net/archives/1063)
 - [tips/Latex - PukiWiki](http://www-nh.scphys.kyoto-u.ac.jp/~asano/index.php?tips%2FLatex)
-- [gedit外部ツール](http://utisam.blogspot.jp/2011/07/gedit.html)
 - [Ubuntuのテキストエディタ（gedit）の「外部ツール」をTeX仕様に](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Ubuntu%A4%CE%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF%A1%CAgedit%A1%CB%A4%CE%A1%D6%B3%B0%C9%F4%A5%C4%A1%BC%A5%EB%A1%D7%A4%F2TeX%BB%C5%CD%CD%A4%CB)
 - [geditをカスタマイズする。](http://jiy.blog.shinobi.jp/Entry/93/)
 - [gedit で tex の呼び出し](http://www.rcai.riken.jp/petadimension/textips.html#texgedit)
