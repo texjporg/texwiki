@@ -59,8 +59,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 ### リリース情報 {#qe1b7074}
 
-2012-11-25 サクラエディタ改造版 ver: 0.9 bese Unicode版2.0.5.0 r2457/ext27/ppfont v0.17 (等幅版, プロポーショナル版)<br>
-2012-05-13 サクラエディタ Ver. 2.0.5.0 (UNICODE 版) パッケージ版，単体配布版<br>
+[What's New](http://sakura-editor.sourceforge.net/) を参照．<br>
 
 ### ChangeLog {#l31b371d}
 
