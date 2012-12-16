@@ -29,10 +29,11 @@ Windows, OS X, Linux
 
 [GPL](https://github.com/geany/geany/blob/master/COPYING)
 
-### ChangeLog {#n1e93e0e}
+### リリース情報/ChangeLog {#n1e93e0e}
 
 - [ChangeLog](http://www.geany.org/Documentation/ChangeLog)
 - [geany/geany · GitHub](https://github.com/geany/geany)
+    - [tags](https://github.com/geany/geany/tags)
     - [commit](https://github.com/geany/geany/commits/)
 
 ## Geany で LaTeX {#s0f3de16}
