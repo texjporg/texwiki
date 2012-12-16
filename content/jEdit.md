@@ -30,7 +30,7 @@ Windows, OS X, Linux などの Java が動作する環境で動作します．<b
 
 ### リリース情報 {#kca18bf0}
 
-2012-11-22 jEdit 5.0.0<br>
+[http://jedit.svn.sourceforge.net/viewvc/jedit/jEdit/tags/?view=log](http://jedit.svn.sourceforge.net/viewvc/jedit/jEdit/tags/?view=log)
 
 jEdit 5.0.0 で日本語のローカライズに対応しました．<br>
 
