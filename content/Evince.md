@@ -47,6 +47,9 @@ Windows, OS X, Linux
 
 - [Evince/Downloads - GNOME Live!](https://live.gnome.org/Evince/Downloads)
 
+公式サイトの Windows 版の Evince で日本語を表示したい場合はフォントを埋め込む必要があります．<br>
+自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．<br>
+
 ### OS X {#y8d21820}
 
 - [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
