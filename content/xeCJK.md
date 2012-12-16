@@ -136,6 +136,8 @@ ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
+- [http://www.ctan.org/pkg/zxjatype](http://www.ctan.org/pkg/zxjatype)
+- [http://www.ctan.org/tex-archive/language/japanese/zxjatype](http://www.ctan.org/tex-archive/language/japanese/zxjatype)
 
 ### リリース情報 {#ecfc94ae}
 
