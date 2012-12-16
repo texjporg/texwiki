@@ -28,7 +28,6 @@ Notepad++ は
 
 - [Notepad++ 公式サイト](http://notepad-plus-plus.org/)
     - [Download](http://notepad-plus-plus.org/download/)
-    - [News](http://notepad-plus-plus.org/news/)
     - [Contributors](http://notepad-plus-plus.org/contributors/)
     - [twitter](http://twitter.com/notepad_plus)
     - [facebook](http://www.facebook.com/Notepad.plus.plus)
@@ -57,9 +56,9 @@ Windows 8, 7, Vista, XP, 2000
 
 ### リリース情報 {#d2ceb628}
 
-2012-11-18 Notepad++ v6.2.2<br>
-2012-11-16 Notepad++ 派生ビルド v6.2.1<br>
+[News](http://notepad-plus-plus.org/news/) を参照．<br>
 
+Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
 Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### ChangeLog {#q10cf331}
@@ -93,7 +92,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 ### 新規作成ドキュメント {#eb38bb7e}
 
-日本語が使用可能なエンコード (UTF-8, Shift-JIS) を指定します．
+Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
 
 ***
 
@@ -109,7 +108,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 　　　　　　　　　　　　　　　　　　　　エンコード<br>
 　　　　　　　　◯ ANSI　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　開いたファイルの履歴<br>
 　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 起動時にチェックしない<br>
-　　　　　　　　　　☐開いているANSIファイルに適用　　　　　　　　　　　　　　　　　　　　　　　　　　エントリ数の上限: 　　<span style="color:#3333CC;"><ins>15</ins></span><br>
+　　　　　　　　　　☑開いているANSIファイルに適用　　　　　　　　　　　　　　　　　　　　　　　　　　エントリ数の上限: 　　<span style="color:#3333CC;"><ins>15</ins></span><br>
 　　　　　　　　◯ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　表示<br>
 　　　　　　　　◯ UCS-2 Big Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ サブメニュー化する<br>
 　　　　　　　　◯ UCS-2 Little Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ファイル名のみ<br>
