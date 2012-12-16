@@ -82,15 +82,15 @@ Windows, OS X, Linux
 [Evince 2.91.0](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0) で D-Bus の仕様が変更されました． → \[[shell\] Add timestamp parameter to SyncView.](http://git.gnome.org/browse/evince/commit/?id=a2b36d8928c30f93f74869b294e72d2484422646)<br>
 [Evince 3.5.5](http://git.gnome.org/browse/evince/commit/?id=3.5.5) で D-Bus のインターフェースに gdbus-codegen が使用されるようになりました． → [daemon: Use gdbus-codegen for the org.gnome.evince.Daemon interface](http://git.gnome.org/browse/evince/commit/?id=1aac15e8098f1b2197f5bcf2430395ee9843eb43)<br>
 fwdevince, evince_forward_search を使用して forward search ができます．<br>
-evince_backward_search を使用して inverse search ができます．<br>
+invevince, evince_backward_search を使用して inverse search ができます．<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
 
 ### fwdevince {#ie18c015}
 
-fwdevince は Linux の Evince で forward search を行うためのツールです．<br>
+fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
 TeX Live 2012, Evince 3.4.0, Python 2.7.3 で動作確認しています．<br>
 TeX Live 2012, Evince 3.6.0, Python 2.7.3 でも動作するようです． → [Ubuntu 12.10: fwdevince によるEvince で forward searchうまくいきました。](http://twitter.com/ti5942/status/269820600980213760), [早速ですが、２０１２年１１月１７日掲載のfwdevinceを試してみる](http://blog.livedoor.jp/ti5942/archives/7580234.html)<br>
-fwdevince がうまく動作しない場合は evince_forward_search を使用してください．<br>
+fwdevince がうまく動作しない場合は evince_synctex (evince_forward_search &amp; evince_backward_search) を使用してください．<br>
 
 ***
 
@@ -102,20 +102,35 @@ fwdevince がうまく動作しない場合は evince_forward_search を使用�
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Copyright (C) 2010 Jose Aliste
+#               2011 Benjamin Kellermann
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public Licence as published by the Free Software
+# Foundation; either version 2 of the Licence, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more
+# details.
+#
+# You should have received a copy of the GNU General Public Licence along with
+# this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+# Street, Fifth Floor, Boston, MA  02110-1301, USA
+
 import dbus
 import argparse
 import os.path
-import time
 import traceback
 import sys
 
 if sys.version_info >= (3, 0, 0):
-    from urllib.parse import quote
+    from urllib.parse import quote, unquote
 else:
-    from urllib import quote
+    from urllib import quote, unquote
 
-class FwdEvince:
-
+class EvinceForwardSearch:
     def parse_args(self):
         parser = argparse.ArgumentParser(description='Forward search with Evince')
         parser.add_argument('pdf', nargs=1, help='PDF file')
@@ -130,6 +145,7 @@ class FwdEvince:
         tex = os.path.join(os.path.dirname(os.path.abspath(args.tex[0])), './', os.path.basename(os.path.abspath(args.tex[0])))
 
         try:
+            import time
             bus = dbus.SessionBus()
             daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
             dbus_name = daemon.FindDocument('file://' + quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
@@ -139,9 +155,138 @@ class FwdEvince:
         except dbus.DBusException:
             traceback.print_exc()
 
+class EvinceInverseSearch:
+    def parse_args(self):
+        parser = argparse.ArgumentParser(description='Inverse search with Evince')
+        parser.add_argument('pdf', nargs=1, help='PDF file')
+        parser.add_argument('editor', nargs=1, help='Editor command')
+        return parser.parse_args()
+
+    def run(self):
+        import dbus.mainloop.glib
+        import gobject
+        args = self.parse_args()
+        pdf = os.path.abspath(args.pdf[0])
+        editor = args.editor[0]
+        dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+        a = EvinceWindowProxy('file://' + pdf, editor, True)
+        loop = gobject.MainLoop()
+        loop.run()
+
+class EvinceWindowProxy:
+    """A Dbus proxy for an Evince Window."""
+    daemon = None
+    bus = None
+
+    RUNNING = range(2)
+    CLOSED = range(2)
+    EV_DAEMON_PATH = '/org/gnome/evince/Daemon'
+    EV_DAEMON_NAME = 'org.gnome.evince.Daemon'
+    EV_DAEMON_IFACE = 'org.gnome.evince.Daemon'
+
+    EVINCE_PATH = '/org/gnome/evince/Evince'
+    EVINCE_IFACE = 'org.gnome.evince.Application'
+
+    EV_WINDOW_IFACE = 'org.gnome.evince.Window'
+
+    def __init__(self, uri, editor, apawn=False, logger=None):
+        self._log = logger
+        self.uri = uri.replace(" ", "%20")
+        self.editor = editor
+        self.status = self.CLOSED
+        self.source_handler = None
+        self.dbus_name = ''
+        self._handler = None
+        try:
+            if EvinceWindowProxy.bus is None:
+                EvinceWindowProxy.bus = dbus.SessionBus()
+
+            if EvinceWindowProxy.daemon is None:
+                EvinceWindowProxy.daemon = EvinceWindowProxy.bus.get_object(self.EV_DAEMON_NAME,
+                    self.EV_DAEMON_PATH,
+                    follow_name_owner_changes=True)
+            EvinceWindowProxy.bus.add_signal_receiver(self._on_doc_loaded,
+                signal_name='DocumentLoaded',
+                dbus_interface=self.EV_WINDOW_IFACE,
+                sender_keyword='sender')
+            self._get_dbus_name(False)
+        except dbus.DBusException:
+            traceback.print_exc()
+            if self._log:
+                self._log.debug('Could not connect to the Evince Daemon')
+
+    def _on_doc_loaded(self, uri, **keyargs):
+        if uri == self.uri and self._handler is None:
+            self.handle_find_document_reply(keyargs['sender'])
+
+    def _get_dbus_name(self, spawn):
+        EvinceWindowProxy.daemon.FindDocument(self.uri, spawn,
+                     reply_handler=self.handle_find_document_reply,
+                     error_handler=self.handle_find_document_error,
+                     dbus_interface = self.EV_DAEMON_IFACE)
+
+    def handle_find_document_error(self, error):
+        if self._log:
+            self._log.debug('FindDocument DBus call has failed')
+
+    def handle_find_document_reply(self, evince_name):
+        if self._handler is not None:
+            handler = self._handler
+        else:
+            handler = self.handle_get_window_list_reply
+        if evince_name != '':
+            self.dbus_name = evince_name
+            self.status = self.RUNNING
+            self.evince = EvinceWindowProxy.bus.get_object(self.dbus_name, self.EVINCE_PATH)
+            self.evince.GetWindowList(dbus_interface = self.EVINCE_IFACE,
+                          reply_handler = handler,
+                          error_handler = self.handle_get_window_list_error)
+
+    def handle_get_window_list_error (self, e):
+        if self._log:
+            self._log.debug("GetWindowList DBus call has failed")
+
+    def handle_get_window_list_reply (self, window_list):
+        if len(window_list) > 0:
+            window_obj = EvinceWindowProxy.bus.get_object(self.dbus_name, window_list[0])
+            self.window = dbus.Interface(window_obj,self.EV_WINDOW_IFACE)
+            self.window.connect_to_signal("SyncSource", self.on_sync_source)
+        else:
+            #That should never happen. 
+            if self._log:
+                self._log.debug("GetWindowList returned empty list")
+
+    def on_sync_source(self, input_file, source_link, timestamp):
+        import subprocess
+        import re
+        print(input_file + ':' + str(source_link[0]))
+        # This is probably useless
+        input_file = input_file.replace("%20", " ")
+        # This is to deal with source files with non-ascii names
+        # We get url-quoted UTF-8 from dbus; convert to url-quoted ascii
+        # and then unquote. If you don't first convert ot ascii, it fails.
+        # It's a bit magical, but it seems to work
+        input_file = unquote(input_file.encode('ascii'))
+        print(type(input_file), input_file)
+        #cmd = re.sub("%f", input_file, self.editor)
+        cmd = re.sub("%f", input_file.replace('file://', ''), self.editor)
+        cmd = re.sub("%l", str(source_link[0]), cmd)
+        print(cmd)
+        subprocess.call(cmd, shell=True)
+        if self.source_handler is not None:
+            self.source_handler(input_file, source_link, timestamp)
+
 if __name__ == '__main__':
-    evince = FwdEvince()
-    evince.run()
+    cmd = os.path.basename(sys.argv[0])
+    if cmd == 'fwdevince' or cmd == 'evince_forward_search':
+        synctexSearch = EvinceForwardSearch()
+        synctexSearch.run()
+    elif cmd == 'invevince' or cmd == 'evince_inverse_search' or cmd == 'evince_backward_search':
+        synctexSearch = EvinceInverseSearch()
+        synctexSearch.run()
+    else:
+        sys.stderr.write("rename 'fwdevince' or 'invevince'\n")
+        sys.exit(1)
 ```
 
 ***
@@ -149,17 +294,34 @@ if __name__ == '__main__':
 ```
 $ chmod +x fwdevince
 $ sudo cp -p fwdevince /usr/local/bin
+$ sudo ln -s /usr/local/bin/fwdevince /usr/local/bin/invevince
 ```
+
+fwdevince は例えば
+
+```
+$ fwdevince hoge.pdf 30 hoge.tex
+```
+
+のように実行すると Evince が起動して PDF ファイルの対応する行が赤い枠で囲まれて表示されます．
+
+invevince は例えば [TeXworks](/TeXworks/) の場合は
+
+```
+$ evince hoge.pdf &
+$ invevince hoge.pdf "texworks --position=%l %f"
+```
+
+のように実行して Evince 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
 
 ### evince_synctex (evince_forward_search &amp; evince_backward_search) {#bb04e129}
 
 evince_synctex (evince_forward_search &amp; evince_backward_search) は Linux の Evince で forward and inverse search を行うためのツールです．<br>
 
+- [LaTeXTools/evince at master · SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/master/evince)
+- [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search - Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=1716268)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search \[Archive\]  - Ubuntu Forums](http://ubuntuforums.org/archive/index.php/t-1716268.html)
-- [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
-- [LaTeXTools/evince at master · SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/master/evince)
-    <!-- -[[latexince:http://code.google.com/p/latexince/]] -->
 
 #### 注意点 {#s90f2b11}
 
@@ -208,7 +370,7 @@ self.uri = uri.replace(" ", "%20")
 
 に修正します．<br>
 
-TeX Live 2012, 2011 では SyncTeX が出力するファイル名が TeX Live 2010 とは異なっています．<br>
+TeX Live 2011 以降では SyncTeX が出力するファイル名が TeX Live 2010 とは異なっています．<br>
 evince_forward_search で
 
 ```
