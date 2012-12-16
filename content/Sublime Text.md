@@ -26,6 +26,18 @@ Sublime Text はテキストエディタです． (シェアウェア)
 
 Windows, OS X, Linux
 
+## Windows での日本語入力対応 {#cde09531}
+
+- [IMESupport for Sublime Text 2](https://github.com/chikatoike/IMESupport)
+- [「IMESupport」の検索結果一覧 - ゆり日記](http://d.hatena.ne.jp/chikatoike/archive?word=IMESupport)
+- [WindowsのIMEでインライン変換を正しく表示できるようにしてみた](http://qiita.com/items/5ccbe63d36009680e0e6)
+- \[[MAC\]\[WIN\]SUBLIME TEXT のススメと最初にすべき日本語入力環境の改善](http://roguer.info/2012/11/01/6049/)
+
+## メニューの日本語化 {#p0f8c581}
+
+- [【Windowsアプリケーション】Sublime Text 2 メニュー日本語化](http://blog.huwy.org/article/292827228.html)
+    - Mac でも日本語化できるみたいです
+
 ## Shift_JIS, EUC-JP 対応 {#bc9dcabf}
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
