@@ -171,10 +171,10 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-[LibUnicodeNames](https://github.com/sortsmill/libunicodenames) をインストールします．<br>
+[LibUnicodeNames](https://bitbucket.org/sortsmill/libunicodenames) をインストールします．<br>
 
 ```
-$ curl --insecure -R -L -O https://github.com/downloads/sortsmill/libunicodenames/libunicodenames-1.0.0_beta5.tar.xz
+$ curl --insecure -R -L -O https://bitbucket.org/sortsmill/libunicodenames/downloads/libunicodenames-1.0.0_beta5.tar.xz
 $ tar xvf libunicodenames-1.0.0_beta5.tar.xz
 $ pushd libunicodenames-1.0.0_beta5
 ```
@@ -267,7 +267,7 @@ Summary of optional dependencies:
   libtiff            yes        http://en.wikipedia.org/wiki/Libtiff
   libxml             yes        http://www.xmlsoft.org/
   libspiro           yes        http://libspiro.sourceforge.net/
-  libunicodenames    yes        https://github.com/sortsmill/libunicodenames
+  libunicodenames    yes        https://bitbucket.org/sortsmill/libunicodenames
 
   X Window System    no
 ```
@@ -425,8 +425,8 @@ int mkdir(const char *pathname, mode_t mode) {
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
--- The C compiler identification is GNU 4.7.0
--- The CXX compiler identification is GNU 4.7.0
+-- The C compiler identification is GNU 4.7.2
+-- The CXX compiler identification is GNU 4.7.2
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
@@ -437,7 +437,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.27.1")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.21.0
+--   found poppler, version 0.21.4
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 Found config.h: C:/MinGW/include/fontforge/config.h
