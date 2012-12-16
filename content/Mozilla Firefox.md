@@ -8,3 +8,41 @@ pukiwiki: "Mozilla Firefox"
 # Mozilla Firefox
 
 ## [Mozilla Firefox](http://www.mozilla.jp/firefox/) {#q0ddbe38}
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/e/e7/Mozilla_Firefox_3.5_logo_256.png" alt="Mozilla Firefox" style="float:right">
+
+### Mozilla Firefox とは {#if26ee34}
+
+Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
+
+### [pdf.js](http://mozilla.github.com/pdf.js/) {#n3aa2497}
+
+pdf.js は JavaScript で書かれた PDF Viewer です．<br>
+
+- [pdf.js](http://mozilla.github.com/pdf.js/)
+- [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
+
+#### 設定方法 {#u5cf20d8}
+
+Mozilla Firefox のアドレスバーに
+
+```
+about:config
+```
+
+を入力します．<br>
+
+動作保証対象外になります！といった警告が表示されます．<br>
+「細心の注意を払って使用する」をクリックします．<br>
+
+検索(<ins>R</ins>): に
+
+```
+pdfjs
+```
+
+を入力します．<br>
+設定名の pdfjs.disabled をクリックして値を false にします．<br>
+
+メニューのオプションからオプションをクリックします．<br>
+プログラムタブのファイルの種類 (Content Type) の PDF 文書 (PDF) の取り扱い方法のリストから Firefox でプレビュー表示を選択します．<br>
