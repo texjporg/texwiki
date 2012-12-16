@@ -73,9 +73,10 @@ Windows, OS X, Linux
 
 [GPL](http://git.gnome.org/browse/gedit/tree/COPYING)
 
-### ChangeLog {#z39e4e65}
+### リリース情報/ChangeLog {#z39e4e65}
 
 - [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
+    - [refs](http://git.gnome.org/browse/gedit/refs/)
     - [log](http://git.gnome.org/browse/gedit/log/)
 
 ## プラグイン {#c01f900c}
