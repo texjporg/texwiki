@@ -30,11 +30,12 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### リリース情報/ChangeLog {#if427aa7}
 
-[Changes](http://code.google.com/p/ctex-kit/source/list) を参照．<br>
+- [/tags/xeCJK/](http://code.google.com/p/ctex-kit/source/browse/tags/xeCJK/)
+- [Changes](http://code.google.com/p/ctex-kit/source/list)
 
 ### 注意点 {#w700f957}
 
-#### xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する → xeCJK 3.1.1 で対応しました {#d18a4ff7}
+#### xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する → xeCJK 3.1.1 で対応しました {#d18a4ff7}
 
 xeCJK 3.1.1 で対応しました． → [xeCJK r382](http://code.google.com/p/ctex-kit/source/detail?r=382)<br>
 [CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
@@ -42,14 +43,14 @@ xeCJK 3.1.1 で対応しました． → [xeCJK r382](http://code.google.com/p/c
 - [xeCJK 与 xltxtra 在中文标点符号处出错](http://code.google.com/p/ctex-kit/issues/detail?id=100)
 - [XeCJK v3.1.0\* 中文标点问题](http://code.google.com/p/ctex-kit/issues/detail?id=102)
 
-xltxtra と xeCJK を使用すると表示がおかしくなる場合があります．
+xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなります．
 
 ```
 \usepackage{xltxtra}
 \usepackage{xeCJK}
 ```
 
-としたときに表示がおかしくなる場合は以下のように修正すれば正常に表示されます．
+表示がおかしくなる場合は以下のように修正すれば正常に表示されます．
 
 ```
 \usepackage{xltxtra}
@@ -132,6 +133,7 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
+ZXjatype は [TeX Live](</TeX Live/>) に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
