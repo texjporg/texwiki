@@ -50,7 +50,7 @@ xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなり�
 \usepackage{xeCJK}
 ```
 
-表示がおかしくなる場合は以下のように修正すれば正常に表示されます．
+以下のように修正したところ正常に表示されるようになりました．
 
 ```
 \usepackage{xltxtra}
@@ -138,6 +138,8 @@ ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
 - [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/zxjatype](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/?view=log)
 - [http://www.ctan.org/pkg/zxjatype](http://www.ctan.org/pkg/zxjatype)
 - [http://www.ctan.org/tex-archive/language/japanese/zxjatype](http://www.ctan.org/tex-archive/language/japanese/zxjatype)
 
