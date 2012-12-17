@@ -55,7 +55,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.3\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
+- [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.4\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
     <!-- -http://releases.qt-project.org/qt5.0/ -->
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
@@ -324,17 +324,20 @@ $ popd
 - [OpenJPEG](http://www.openjpeg.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
-$ tar xvf openjpeg-1.5.1.tar.gz
-$ pushd openjpeg-1.5.1
+$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz
+$ tar xvf openjpeg-2.0.0.tar.gz
+$ pushd openjpeg-2.0.0
+$ mkdir build
+$ pushd build
 ```
 
-<!-- $ ./configure - -prefix=/mingw - -enable-mj2 - -enable-jpwl - -enable-jpip -->
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
 
 ```
-$ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on
 $ make
 $ make install
+$ popd
 $ popd
 ```
 
@@ -549,9 +552,9 @@ msgothic.ttc: "MS Gothic" "Regular"
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/pixman-0.26.2.tar.gz
-$ tar xvf pixman-0.26.2.tar.gz
-$ pushd pixman-0.26.2
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.28.2.tar.gz
+$ tar xvf pixman-0.28.2.tar.gz
+$ pushd pixman-0.28.2
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -561,17 +564,17 @@ $ popd
 - [cairo](http://www.cairographics.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.6.tar.xz
-$ tar xvf cairo-1.12.6.tar.xz
-$ pushd cairo-1.12.6
+$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.8.tar.xz
+$ tar xvf cairo-1.12.8.tar.xz
+$ pushd cairo-1.12.8
 $ ./configure --prefix=/mingw
 ```
 
-<!-- $ qt_CFLAGS="-IC:/Qt/4.8.3/include -IC:/Qt/4.8.3/include/QtCore -IC:/Qt/4.8.3/include/QtGui" qt_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -LC:/Qt/4.8.3/lib -lQtGui4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
+<!-- $ qt_CFLAGS="-IC:/Qt/4.8.4/include -IC:/Qt/4.8.4/include/QtCore -IC:/Qt/4.8.4/include/QtGui" qt_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -LC:/Qt/4.8.4/lib -lQtGui4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
 
 ```
 
-cairo (version 1.12.6 [release]) will be compiled with:
+cairo (version 1.12.8 [release]) will be compiled with:
 
 The following surface backends:
   Image:         yes (always builtin)
@@ -650,7 +653,7 @@ $ make
 cairo-missing.h:45:17: error: conflicting types for 'ssize_t'
 ```
 
-[util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.6#n45) の 45行目にある
+[util/cairo-missing/cairo-missing.h](http://cgit.freedesktop.org/cairo/tree/util/cairo-missing/cairo-missing.h?id=1.12.8#n45) の 45行目にある
 
 ```
 typedef SSIZE_T ssize_t;
@@ -774,10 +777,10 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.0.tar.xz
-$ tar xvf glib-2.34.0.tar.xz
-$ pushd glib-2.34.0
-$ CFLAGS="-Wall -O2 -march=native" ./configure --prefix=/mingw
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.3.tar.xz
+$ tar xvf glib-2.34.3.tar.xz
+$ pushd glib-2.34.3
+$ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
@@ -849,7 +852,7 @@ $ pushd poppler-0.21.4
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.3/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.3/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.3/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
