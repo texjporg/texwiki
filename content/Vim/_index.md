@@ -175,7 +175,7 @@ let g:tex_flavor='latex'
 if has('win32') || has('win64')
   let g:typeset = 'pdfplatex'
   let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
-  let g:makeindex = 'mendex -U -ST'
+  let g:makeindex = 'mendex -U -T'
   let g:viewer = 'texworks'
 elseif has('macunix')
   let g:typeset = 'pdfplatex'
@@ -344,7 +344,7 @@ function! PdfpLaTeX(type)
       let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile
       let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
-      let g:makeindex = 'mendex -U -ST'
+      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
@@ -364,7 +364,7 @@ function! PdfpLaTeX(type)
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
-      let g:makeindex = 'mendex -U -ST'
+      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
