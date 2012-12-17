@@ -17,6 +17,14 @@ pukiwiki: "hyperref"
 
 [ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog) を参照。
 
+### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
+
+[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する LaTeX パッケージです．<br>
+PXjahyper パッケージは [TeX Live](</TeX Live/>) に含まれています．<br>
+
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/pxjahyper](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/?view=log)
+
 ### 注意点 {#he2b8021}
 
 #### hyperref を使用するとページサイズの値がおかしくなる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#v71488f4}
@@ -29,7 +37,7 @@ pukiwiki: "hyperref"
 - [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
 
 [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) v0.3 以降を使用するとページサイズを正しい値に修正してくれます．
-([pxjahyper パッケージ](http://d.hatena.ne.jp/zrbabbler/20120528/1338221936) を参照．)
+([pxjahyper パッケージ](http://d.hatena.ne.jp/zrbabbler/20120528/1338221936) を参照．)<br>
 
 PXjahyper パッケージが使用できない場合は hyperref のオプションに setpagesize=false を指定して回避することも可能です．
 
