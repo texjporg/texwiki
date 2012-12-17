@@ -101,7 +101,7 @@ parse_first_line = f
 というディレクトリも Apache のプロセスに書き込みができるようにします。
 ただ，今は標準的なフォントは Type 1
 形式で用意されていますので，この必要はほとんどありません。
-[cm-super](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/cm-super.html) もインストールしておけばなおさらです。
+[cm-super](/cm-super/) もインストールしておけばなおさらです。
 もっとも，tfm の生成もありますので，$TEXMF/fonts/tfm/jknappen
 も書き込み可にしておかなければならないでしょう。
 
@@ -118,10 +118,10 @@ ulimit -t 10 -f 1024
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう](http://www.aozora.jp/tools/uptex/)
 - [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
-- [LiveLaTeX](http://nanatomo.com/app/livelatex/)
+- [writeLaTeX](https://www.writelatex.com/)
+- [LiveLaTeX](http://nanatomo.com/livelatex/)
 - [JaxEdit](http://code.google.com/p/jaxedit/)
 - [Online Latex Editor](http://luikore.github.com/latex/)
-- [writeLaTeX](http://writelatex.com/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [LaTeX Lab](http://code.google.com/p/latex-lab/)
     - [Google-Docs Base Editor (GDBE)](http://code.google.com/p/gdbe/)
