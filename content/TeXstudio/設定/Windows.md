@@ -150,7 +150,7 @@ Ghostscript
 : "C:\gs\gs9.06\bin\gswin32c.exe"
 
 Latexmk
-: latexmk -pdf -silent -pdflatex="pdflatex -synctex=1 &#x25;&#x25;O &#x25;&#x25;S" %
+: perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -pdf -silent -pdflatex="pdflatex -synctex=1 &#x25;&#x25;O &#x25;&#x25;S" %
 
 SVN
 : svn.exe
