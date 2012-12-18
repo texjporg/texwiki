@@ -49,6 +49,7 @@ Windows, OS X, Linux
 
 公式サイトの Windows 版の Evince で日本語を表示したい場合はフォントを埋め込む必要があります．<br>
 自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．<br>
+Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ### OS X {#y8d21820}
 
