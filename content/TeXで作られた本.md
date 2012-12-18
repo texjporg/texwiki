@@ -99,7 +99,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 風間喜代三『[ラテン語・その形と心](http://www.sanseido-publ.co.jp/publ/latin_kokoro.html)』（2005.12.20，ISBN 4-385-36252-1）
 - 石井米雄編『[世界のことば・辞書の辞典 ヨーロッパ編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36391-2）
 - 石井米雄編『[世界のことば・辞書の辞典 アジア編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36392-9）
-- 福井玲『[韓国語音韻史の探求](http://www.sanseido-publ.co.jp/publ/gen/gen2lang/koninhis_tank/)』（2001.01.01，ISBN 978-4-385-36604-3）
+- 福井玲『[韓国語音韻史の探求](http://www.sanseido-publ.co.jp/publ/gen/gen2lang/koninhis_tank/)』（2013.01.01，ISBN 978-4-385-36604-3）
 
 青磁書房から出ている次の本がみな TeX 組みとのこと：
 
