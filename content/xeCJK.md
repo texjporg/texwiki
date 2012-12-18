@@ -35,6 +35,29 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### 注意点 {#w700f957}
 
+#### xeCJK error: "conflict-package" → \usepackage{xeCJK} のあとに \usepackage{xltxtra} {#g3111be5}
+
+xeCJK error: "conflict-package" が発生する場合は \usepackage{xeCJK} のあとに \usepackage{xltxtra} を追加します． 
+
+```
+\usepackage{xeCJK}
+\usepackage{xltxtra}
+```
+
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! xeCJK error: "conflict-package"
+!
+! The `xltxtra' package is in conflict with xeCJK.
+! Please do not use it or load it after xeCJK.
+!
+! See the xeCJK documentation for further information.
+!
+! Type <return> to continue.
+!...............................................
+```
+
 #### xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する → xeCJK 3.1.1 で対応しました {#d18a4ff7}
 
 xeCJK 3.1.1 で対応しました． → [xeCJK r382](http://code.google.com/p/ctex-kit/source/detail?r=382)<br>
