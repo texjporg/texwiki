@@ -162,8 +162,7 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 > <tr><td>1</td><td>BibTeX処理 (pbibtex の場合)</td><td>"pbibtex"</td><td>-kanji=utf8 -sjis-terminal "%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>BibTeX処理 (upbibtex の場合)</td><td>"upbibtex"</td><td>"%MTeXnpp_CFName%"</td></tr>
 > <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -T "%MTeXnpp_CFName%.idx"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・bkmk2uni を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; bkmk2uni &gt; "%MTeXnpp_CFName%.ps"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合・convbkmk を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で platex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -g &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換 (TeX処理で uplatex を使用する場合)</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSからPDFへ変換</td><td>call "C:\gs\gs9.06\lib\ps2pdf.bat"</td><td>"%MTeXnpp_CFName%.ps" "%MTeXnpp_CFName%.pdf"</td></tr>
