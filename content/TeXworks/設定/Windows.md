@@ -19,7 +19,7 @@ pukiwiki: "TeXworks/設定/Windows"
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
 latexmk, pdfplatex1.bat, pdfplatex2.bat, pdfuplatex1.bat, pdfuplatex2.bat, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
-latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
+W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](http://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](http://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
 
@@ -112,13 +112,13 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk1</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex" "-synctex=1" "-kanji=utf8" "-guess-input-enc/</ins><br>
+　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex" "-kanji=utf8/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex" "-U/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx" "%O" "-f" "ptex-ipaex.map" "-o" "%D" "%S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -140,36 +140,7 @@ Latexmk で PDF ファイルを作成します．
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
-■ bkmk2uni を使用する場合<br>
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk2</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex" "-synctex=1" "-kanji=utf8" "-guess-input-enc/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex" "-kanji=utf8/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex" "-U/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvips=q/dvips" "%O" "-z" "-f" "%S" "|" "bkmk2uni" ">" "%D/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat" "%O" "%S" "%D/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfps</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-■ convbkmk を使用する場合<br>
+■ W32TeX の場合
 
 ***
 
@@ -189,6 +160,35 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$dvips=q/dvips" "%O" "-z" "-f" "%S" "|" "convbkmk" "-g" ">" "%D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat" "%O" "%S" "%D/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfps</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+■ TeX Live の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk2</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$ps2pdf=q/ps2pdf %O %S %D/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfps</ins><br>
@@ -248,13 +248,13 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk3</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex" "-synctex=1" "-kanji=utf8" "-no-guess-input-enc/</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex" "-U/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx" "%O" "-f" "ptex-ipaex.map" "-o" "%D" "%S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -276,6 +276,8 @@ Latexmk で PDF ファイルを作成します．
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
+■ W32TeX の場合
+
 ***
 
 <span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
@@ -294,6 +296,35 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$dvips=q/dvips" "%O" "-z" "-f" "%S" "|" "convbkmk" "-u" ">" "%D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat" "%O" "%S" "%D/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfps</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+■ TeX Live の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk4</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$ps2pdf=q/ps2pdf %O %S %D/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfps</ins><br>
@@ -378,25 +409,6 @@ dvipdfmx -f ptex-ipaex.map "%~n1"
 
 pdfplatex2.bat を作成して pdfplatex2.bat で PDF ファイルを作成します．
 
-■ bkmk2uni を使用する場合<br>
-
-***
-
-- C:\w32tex\bin\pdfplatex2.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-bkmk2uni > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps"
-```
-
-***
-
-■ convbkmk を使用する場合<br>
 convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
 Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
 
