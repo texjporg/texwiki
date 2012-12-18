@@ -47,9 +47,9 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br> <!-- &color(Black,#F5F5F5){Latexmk　　 };%%%latexmk -gg -pdfdvi %.tex%%%&br;または %%%latexmk -gg -pdfps %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br; --> <!-- 　　　''クイックビルド''　　 または %%%latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex%%%&br; -->
+　　　<strong>クイックビルド</strong>　　 または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br> <!-- &color(Black,#F5F5F5){Latexmk　　 };%%%latexmk -gg -pdfdvi %.tex%%%&br;または %%%latexmk -gg -pdfps %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br; --> <!-- 　　　''クイックビルド''　　 または %%%latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex%%%&br; -->
 
 <div style="clear:both"></div>
 
@@ -130,9 +130,9 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/pdflatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e """$pdflatex=q/lualatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e """$pdflatex=q/xelatex"" ""-synctex=1"" ""-interaction=nonstopmode/""" -norc -gg -xelatex %.tex</ins><br> <!-- &color(Black,#F5F5F5){Latexmk　　 };%%%latexmk -gg -pdfdvi %.tex%%%&br;または %%%latexmk -gg -pdfps %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br; --> <!-- 　　　''クイックビルド''　　 または %%%latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex%%%&br; -->
+　　　<strong>クイックビルド</strong>　　 または <ins>perl C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br> <!-- &color(Black,#F5F5F5){Latexmk　　 };%%%latexmk -gg -pdfdvi %.tex%%%&br;または %%%latexmk -gg -pdfps %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br;または %%%latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex%%%&br; --> <!-- 　　　''クイックビルド''　　 または %%%latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex%%%&br; -->
 
 <div style="clear:both"></div>
 
