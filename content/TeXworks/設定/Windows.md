@@ -83,9 +83,8 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　名前:　　　　<ins>Latexmk1</ins><br>
-　　プログラム: <ins>perl</ins><br>
-　　引数:　　　　<ins>C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
@@ -150,9 +149,8 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　名前:　　　　<ins>Latexmk2</ins><br>
-　　プログラム: <ins>perl</ins><br>
-　　引数:　　　　<ins>C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
@@ -221,9 +219,8 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　名前:　　　　<ins>Latexmk3</ins><br>
-　　プログラム: <ins>perl</ins><br>
-　　引数:　　　　<ins>C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
@@ -288,9 +285,8 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　名前:　　　　<ins>Latexmk4</ins><br>
-　　プログラム: <ins>perl</ins><br>
-　　引数:　　　　<ins>C:/w32tex/share/texmf/scripts/latexmk/latexmk.pl</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
