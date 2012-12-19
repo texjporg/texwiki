@@ -9,10 +9,17 @@ pukiwiki: "PostScript"
 
 ## PostScript {#g9b8f6ae}
 
-PostScript は業界標準のページ記述言語です。技術情報は Adobe の
+PostScript は業界標準のページ記述言語です。<br>
+技術情報は Adobe の
 [Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp)
-から全て得ることができます。
+から全て得ることができます。<br>
 なお，[Ghostscript](/Ghostscript/) は PostScript ソフトウェア RIP（インタープリタ） です。
+
+PostScript については，Adobe から4冊の技術資料が出ており，
+うち3冊はアスキーから邦訳が出ています。他にもたくさんの解説書が出ています。<br>
+CQ 出版社の『PostScript 詳細解説』（1997年）という本には，
+和製の LEGATOSCRIPT という Macintosh 上の PostScript インタープリタのデモ版が
+CD-ROM で附いています。
 
 ### PostScript {#h5ddd3dc}
 
