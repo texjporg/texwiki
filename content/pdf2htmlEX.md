@@ -334,8 +334,8 @@ libtool: link: cannot determine absolute directory name of `./lib'
 のエラーが発生する場合は ttfautohint-0.92/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -L'./lib' -L'c:/Qt/4.8.3/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
-QT_LIBS = -L'c:/Qt/4.8.3/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
+#QT_LIBS = -L'./lib' -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
+QT_LIBS = -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
 ```
 
 に修正します．
