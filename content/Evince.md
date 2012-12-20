@@ -92,9 +92,14 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 ### fwdevince {#ie18c015}
 
 fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
-TeX Live 2012, Evince 3.4.0, Python 2.7.3 で動作確認しています．<br>
+TeX Live 2012, Evince 3.4.0, Python 2.7.3 または Python 3.2.3 で動作確認しています．<br>
 TeX Live 2012, Evince 3.6.0, Python 2.7.3 でも動作するようです． → [Ubuntu 12.10: fwdevince によるEvince で forward searchうまくいきました。](http://twitter.com/ti5942/status/269820600980213760), [早速ですが、２０１２年１１月１７日掲載のfwdevinceを試してみる](http://blog.livedoor.jp/ti5942/archives/7580234.html)<br>
-fwdevince がうまく動作しない場合は evince_synctex (evince_forward_search &amp; evince_backward_search) を使用してください．<br>
+fwdevince がうまく動作しない場合は
+
+- fwdevince をうまく動作するように修正する
+- evince_synctex (evince_forward_search &amp; evince_backward_search) を使用する
+
+などの方法で対処してください．<br>
 
 ***
 
@@ -168,13 +173,13 @@ class EvinceInverseSearch:
 
     def run(self):
         import dbus.mainloop.glib
-        import gobject
+        from gi.repository import GObject
         args = self.parse_args()
         pdf = os.path.abspath(args.pdf[0])
         editor = args.editor[0]
         dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
         a = EvinceWindowProxy('file://' + pdf, editor, True)
-        loop = gobject.MainLoop()
+        loop = GObject.MainLoop()
         loop.run()
 
 class EvinceWindowProxy:
@@ -270,7 +275,8 @@ class EvinceWindowProxy:
         # We get url-quoted UTF-8 from dbus; convert to url-quoted ascii
         # and then unquote. If you don't first convert ot ascii, it fails.
         # It's a bit magical, but it seems to work
-        input_file = unquote(input_file.encode('ascii'))
+        #input_file = unquote(input_file.encode('ascii'))
+        input_file = unquote(input_file)
         print(type(input_file), input_file)
         #cmd = re.sub("%f", input_file, self.editor)
         cmd = re.sub("%f", input_file.replace('file://', ''), self.editor)
