@@ -79,8 +79,7 @@ $ fixill.pl <old.eps >new.eps
 ```
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
-Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) を使うか，あるいは [ActiveState](http://www.activestate.com/)
-から ActivePerl をダウンロードしてインストールすればいいであろう。
+Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
 角藤さんの “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
