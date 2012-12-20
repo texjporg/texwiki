@@ -688,9 +688,8 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 特に欧文・ロシア語・ギリシア語を扱う際には実に美しい出力を得ることができます。
 
 また，Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/)，
-[ActivePerl](http://www.activestate.com/Products/ActivePerl/) を
-インストールしておきましょう。otfcjk のインストールの際にも必要になります。
+[Strawberry Perl](http://strawberryperl.com/)
+をインストールしておきましょう。otfcjk のインストールの際にも必要になります。
 
 まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開（解凍）します。展開したディレクトリ内の utf82tex というファイルをテキストエディタ（もちろんここでは xyzzy）で開きますと，先頭の行に
 
@@ -698,10 +697,10 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 #!/usr/bin/perl
 ```
 
-と書いてありますので，これを環境に合わせて（例えば ActivePerl をデフォルトのままインストールしたなら
+と書いてありますので，これを環境に合わせて（例えば Strawberry Perl をデフォルトのままインストールしたなら
 
 ```
-#!/Perl/bin/perl
+#!/strawberry/perl/bin/perl
 ```
 
 と書く）に直しておきます。
@@ -797,9 +796,8 @@ KoreanTeX
 あらかじめ TeXインストーラ3 などでインストールしておきましょう。
 
 Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/)，
-[ActivePerl](http://www.activestate.com/Products/ActivePerl/) も
-インストールしておきましょう。
+[Strawberry Perl](http://strawberryperl.com/)
+もインストールしておきましょう。
 
 PDF 閲覧の際には
 [Adobe Reader](http://www.adobe.com/jp/products/reader/) が必要です。
@@ -822,11 +820,11 @@ otfcjk.zip も展開後，mkttftrad.pl を xyzzy などで開き，先頭の行�
 を
 
 ```
-#!/Perl/bin/perl
+#!/strawberry/perl/bin/perl
 ```
 
 に変更しておきます。（これは
-[ActivePerl](http://www.activestate.com/Products/ActivePerl/) の
+[Strawberry Perl](http://strawberryperl.com/) の
 デフォルトのインストールフォルダです。違う場合は適切に編集します。）
 
 mkchina というファイルを “mkchina.bat” に名前変更し，次のように修正します。
@@ -899,8 +897,7 @@ Adobe Reader 附属の CMap
 例えば "C:\Program Files\Adobe\Reader 10.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
-DVI → PS → PDF の流れで作りたい方は，[Ghostscript](/Ghostscript/) が 8.54 以降で
-あることを確認し，$TEXMF/fonts/map/dvips/base/psfonts.map に
+DVI → PS → PDF の流れで作りたい方は $TEXMF/fonts/map/dvips/base/psfonts.map に
 次を追加します
 （Ghostscript は 8.51 あたりでも大丈夫かもしれませんが，確認していません）。
 
@@ -1044,8 +1041,7 @@ dvips cjkintro-sjis.dvi
 ps2pdf.bat cjkintro-sjis.ps
 ```
 
-のように実行します（Ghostscript 8.54 においては，ps2pdf.bat での変換時に
-フリーズしたと思えるほど非常に時間がかかります）。あとは PDF を開いて
+のように実行します。あとは PDF を開いて
 うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
 フォントのインストールを促されたらインストールしておいてください。
 
