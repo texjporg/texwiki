@@ -314,7 +314,7 @@ Visual Basic 3ランタイムは自己展開（解凍）形式になっていま
 Meは C:\WINDOWS\system\ だと思う）にコピーします。
 
 以下のスクリプトの実行には
-[Strawberry Perl](http://strawberryperl.com/)，[ActivePerl](http://www.activestate.com/Products/ActivePerl/)
+[Strawberry Perl](http://strawberryperl.com/)
 など，Perl が必要になりますので，忘れずにインストールしてください。[8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
 
 ```
@@ -324,7 +324,7 @@ Meは C:\WINDOWS\system\ だと思う）にコピーします。
 を
 
 ```
-#!/Perl/bin/perl
+#!/strawberry/perl/bin/perl
 ```
 
 など自分の環境に合わせて修正します。そして C:\w32tex\bin\ など platex.exe などのある場所にコピーし，同じ場所にある perlexec.exe を同じ場所にコピーして 8bt2ptex.exe と名前を変更します。（こうすることで，8bt2ptex を実行しやすくなります。）
@@ -517,9 +517,8 @@ KoreanTeX （pLaTeX2e に対応している
 あらかじめ TeXインストーラ3 などでインストールしておきましょう。
 
 Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/)，
-[ActivePerl](http://www.activestate.com/Products/ActivePerl/) も
-インストールしておきましょう。
+[Strawberry Perl](http://strawberryperl.com/)
+もインストールしておきましょう。
 
 PDF 閲覧の際には
 [Adobe Reader](http://www.adobe.com/jp/products/reader/) が必要です。
@@ -542,11 +541,11 @@ otfcjk.zip も展開後，mkttftrad.pl を開き，先頭の行にある
 を
 
 ```
-#!/Perl/bin/perl
+#!/strawberry/perl/bin/perl
 ```
 
 に変更しておきます。（これは
-[ActivePerl](http://www.activestate.com/Products/ActivePerl/) の
+[Strawberry Perl](http://strawberryperl.com/) の
 デフォルトのインストールフォルダです。違う場合は適切に編集します。）
 
 mkchina というファイルを “mkchina.bat” に名前変更し，次のように修正します。
@@ -909,10 +908,8 @@ Adobe Reader 附属の CMap
 例えば "C:\Program Files\Adobe\Reader 10.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
-DVI → PS → PDF の流れで作りたい方は，[Ghostscript](/Ghostscript/) が 8.54 以降で
-あることを確認し，$TEXMF/fonts/map/dvips/base/psfonts.map に
-次を追加します
-（Ghostscript は 8.51 あたりでも大丈夫かもしれませんが，確認していません）。
+DVI → PS → PDF の流れで作りたい方は $TEXMF/fonts/map/dvips/base/psfonts.map に
+次を追加します。
 
 #### $TEXMF/fonts/map/dvips/base/psfonts.map への追記 (その1) {#r889375b}
 
@@ -1145,9 +1142,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-さらに，gs\gs9.??\lib\cidfmap の末尾に次を追記します。
+さらに，gs\gs9.06\lib\cidfmap の末尾に次を追記します。
 
-#### gs\gs9.??\lib\cidfmap への追記 {#meed555f}
+#### gs\gs9.06\lib\cidfmap への追記 {#meed555f}
 
 ***
 
@@ -1350,14 +1347,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /MalgunGothicRegular          << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/malgun.ttf)                 >> ;
 /MalgunGothicBold             << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/malgunbd.ttf)               >> ;
 
-%%% TrueType outline fonts in StarSuite 8
-%%% See http://jp.sun.com/products/software/starsuite/
-%%%     http://pack.google.com/intl/ja/pack_installer.html?gl=jp&ci_apps=None&ci_so=on
-%%%     http://pack.google.com/intl/ja/pack_installer.html?hl=ja&gl=jp&ci_apps=None&ci_so=on
-/HG-MinchoL-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-MinchoL-Sun.ttc)  /SubfontID 0 >> ;
-/HG-GothicB-Sun               << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/HG-GothicB-Sun.ttc)  /SubfontID 0 >> ;
-
-%%% TrueType outline fonts in StarSuite 8 or Microsoft Office 2003
+%%% TrueType outline fonts in Microsoft Office 2003
 /HGMinchoB                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrmb.ttc)   /SubfontID 0 >> ;
 /HGMinchoE                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrme.ttc)   /SubfontID 0 >> ;
 /HGSoeiPresenceEB             << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrpre.ttc)  /SubfontID 0 >> ;
@@ -1373,7 +1363,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-なお，gs\gs9.??\Resource\CMap\ に CMap をコピーしていない方は，
+なお，gs\gs9.06\Resource\CMap\ に CMap をコピーしていない方は，
 そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
@@ -1471,8 +1461,7 @@ dvips cjkintro-sjis.dvi
 ps2pdf cjkintro-sjis.ps
 ```
 
-のように実行します（Ghostscript 8.54 においては，ps2pdf での変換時に
-フリーズしたと思えるほど非常に時間がかかります）。あとは PDF を開いて
+のように実行します。あとは PDF を開いて
 うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
 フォントのインストールを促されたらインストールしておいてください。
 
@@ -1602,7 +1591,7 @@ Microsoft Sans Serif など，タイ語は Tahoma，中国語は SimSun など�
 ### UTF82TeX のインストール・設定 {#iutf82tx}
 
 安田さんのスクリプトの実行には Perl が必要になります。Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/)，[ActivePerl](http://www.activestate.com/Products/ActivePerl/)をインストールしておきましょう。
+[Strawberry Perl](http://strawberryperl.com/) をインストールしておきましょう。
 なお，PC-UNIX環境の方は各ディストリビューション毎にパッケージが用意されている(ないしインストール済みである)場合が多いです。
 
 まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開（解凍）します。展開したディレクトリ内のutf82texというファイルをUnicode対応のテキストエディタで開きますと，先頭の行に
@@ -1611,10 +1600,10 @@ Microsoft Sans Serif など，タイ語は Tahoma，中国語は SimSun など�
 #!/usr/bin/perl -w
 ```
 
-と書いてありますので，これを環境に合わせて（例えばActivePerlをデフォルトのままインストールしたなら
+と書いてありますので，これを環境に合わせて（例えば Strawberry Perl をデフォルトのままインストールしたなら
 
 ```
-#!/Perl/bin/perl -w
+#!/strawberry/perl/bin/perl -w
 ```
 
 と書く）に直しておきます。
