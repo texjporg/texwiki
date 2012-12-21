@@ -36,6 +36,8 @@ TextMate 1 はシェアウェアです．<br>
 
 [Tags · textmate/textmate · GitHub](https://github.com/textmate/textmate/tags) を参照．<br>
 
+release 9278 で，日本語入力の問題は修正されました．<br>
+
 ### ChangeLog {#mc3d9df2}
 
 - [Commit History · textmate/textmate · GitHub](https://github.com/textmate/textmate/commits/)
@@ -62,13 +64,12 @@ TextMate 1 はシェアウェアです．<br>
 - [Issues](https://github.com/textmate/textmate/issues)
     - [problem with input japanese](https://github.com/textmate/textmate/issues/44) → Closed
 
-## tmplugin {#kf83bc5c}
-
-- [hetima.com](http://hetima.com/) ([twitter](http://twitter.com/hetima))
-    - [TextMate stuff - hetima.com](http://hetima.com/textmate/)
-- [TextMate2IMFix](https://github.com/hetima/TextMate2IMFix)
-    - TextMate 2 の日本語入力を改善する tmplugin．release 9278 で，日本語入力の問題は修正されました．
-    - [Downloads · hetima/TextMate2IMFix · GitHub](https://github.com/hetima/TextMate2IMFix/downloads)
+<!-- *tmplugin [#kf83bc5c] -->
+<!-- -[[hetima.com:http://hetima.com/]] ([[twitter:http://twitter.com/hetima]]) -->
+<!-- - -[[TextMate stuff - hetima.com:http://hetima.com/textmate/]] -->
+<!-- -[[TextMate2IMFix:https://github.com/hetima/TextMate2IMFix]] -->
+<!-- - -TextMate 2 の日本語入力を改善する tmplugin．release 9278 で，日本語入力の問題は修正されました． -->
+<!-- - -[[Downloads · hetima/TextMate2IMFix · GitHub:https://github.com/hetima/TextMate2IMFix/downloads]] -->
 
 ## TextMate で LaTeX {#s39b8563}
 
