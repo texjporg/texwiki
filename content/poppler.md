@@ -56,7 +56,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - [MinGW](/MinGW/) をフルインストールします．
 
 - [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.4\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
-    <!-- -http://releases.qt-project.org/qt5.0/ -->
+    <!-- -http://releases.qt-project.org/qt5/5.0.0/ -->
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
 
