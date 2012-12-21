@@ -199,5 +199,8 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
         <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
 
 - [http://www.adobe.com/devnet/acrobat/interapplication_communication.html](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
+- [http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html](http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html)
 - [VOLE - A Neat C++ COM/Automation Driver](http://vole.sourceforge.net/)
 - [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
+- [Acrobat SDK をダウンロードする](http://atamoco.boy.jp/vbcs/windows.app/adobe-pdf/sdk-download.php)
+- [How can one open Adobe Reader with VBScript?](http://stackoverflow.com/questions/3298683/how-can-one-open-adobe-reader-with-vbscript)
