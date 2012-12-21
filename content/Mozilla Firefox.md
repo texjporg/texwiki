@@ -46,3 +46,7 @@ pdfjs
 
 メニューのオプションからオプションをクリックします．<br>
 プログラムタブのファイルの種類 (Content Type) の PDF 文書 (PDF) の取り扱い方法のリストから Firefox でプレビュー表示を選択します．<br>
+
+### 関連リンク {#vb4554e0}
+
+- [Get Firefox URL?](http://stackoverflow.com/questions/430614/get-firefox-url)
