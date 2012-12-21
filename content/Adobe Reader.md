@@ -197,3 +197,7 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
         <!-- - -[[AV_Layer:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/package-detail.html]] -->
         <!-- - --[[AVDoc:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVDoc.html]] -->
         <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
+
+- [http://www.adobe.com/devnet/acrobat/interapplication_communication.html](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
+- [VOLE - A Neat C++ COM/Automation Driver](http://vole.sourceforge.net/)
+- [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
