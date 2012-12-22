@@ -55,8 +55,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\4.8.4\bin (C:\Qt\インストールしたQtのバージョン\bin) に PATH を通します．
-    <!-- -http://releases.qt-project.org/qt5/5.0.0/ -->
+- [http://releases.qt-project.org/qt5/5.0.0/](http://releases.qt-project.org/qt5/5.0.0/) から Qt5 のソースコードを取得して MinGW でビルドまたは [http://releases.qt-project.org/qt4/source/](http://releases.qt-project.org/qt4/source/) から最新版の Qt4 mingw バイナリ をダウンロードしてインストールします．インストール後，C:\Qt\インストールしたQtのバージョン\bin に PATH を通します．
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
 
@@ -343,12 +342,12 @@ $ popd
 
 - [freetype](http://www.freetype.org/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.4.10/freetype-2.4.10.tar.bz2 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.4.11/freetype-2.4.11.tar.bz2 -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2
-$ tar xvf freetype-2.4.10.tar.bz2
-$ pushd freetype-2.4.10
+$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.11.tar.bz2
+$ tar xvf freetype-2.4.11.tar.bz2
+$ pushd freetype-2.4.11
 $ ./configure --prefix=/mingw
 $ make
 $ make install
