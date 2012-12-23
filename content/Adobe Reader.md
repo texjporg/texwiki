@@ -121,7 +121,9 @@ Adobe Reader XI, Adobe Acrobat XI を使用する場合は
 
 - TeX Live [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) 以降
 
-が必要です．
+が必要です．<br>
+
+pdfopen を使用する場合 PDF ファイルは Adobe Reader に関連付けしておく必要があります．<br>
 
 ### PDF ファイルを開く {#id6d0918}
 
@@ -156,11 +158,12 @@ echo exit | pdfdde --rxi
 ### 指定したページを表示する {#lc08871d}
 
 - [DDEを用いてページを指定してPDFを表示する](http://kb2.adobe.com/jp/cps/510/510047.html)
+- [Adobe Readerで指定したファイルの指定したページを開く](http://owlsperspective.blogspot.jp/2008/07/acroview.html)
 
 3ページ目を表示するには以下のようにします．
 
 ```
-pdfopen --rxi --file hoge.pdf && echo goto hoge.pdf 3 | pdfdde --rxi
+pdfopen --rxi --file hoge.pdf --page 3
 ```
 
 または
@@ -209,3 +212,6 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 - [.NET製Winフォーム上にPDFを表示する](http://d.hatena.ne.jp/foohogehoge/20091222/1261454425)
 - [Not able to instantiate PDF browser control from AcroPDF.dll using COM and .NET interop](http://stackoverflow.com/questions/2702164/not-able-to-instantiate-pdf-browser-control-from-acropdf-dll-using-com-and-net)
 - [How can one open Adobe Reader with VBScript?](http://stackoverflow.com/questions/3298683/how-can-one-open-adobe-reader-with-vbscript)
+- [Adobe Reader XIを利用してPDFファイルのページ数を取得するVBAマクロ](http://www.ka-net.org/blog/?p=2337)
+- [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
+- [Acrobatのロックを回避する](http://d.hatena.ne.jp/abenori/20121223)
