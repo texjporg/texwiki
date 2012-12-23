@@ -49,4 +49,5 @@ TeX Live 2012, MacTeX-2012 の TeXworks はスペルチェックの辞書が含�
 
 ## 背景色・文字色の変更 {#g4b457a4}
 
+- [Texworksで背景色と文字の色やキーワードの色を変更するには](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
 - [TeXworksの背景色・文字色を変える](http://d.hatena.ne.jp/tasusu/20111106/1320588877)
