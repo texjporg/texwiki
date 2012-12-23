@@ -17,19 +17,20 @@ pukiwiki: "TeXをWebで"
 
 ### 準備 {#y7017653}
 
-まずサーバが必要です。
-通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します。
-最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます。
+まずサーバが必要です。<br>
+通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します。<br>
+最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます。<br>
 
-通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです。
-これらについては特に手を加える必要はありません。
+通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです。<br>
+これらについては特に手を加える必要はありません。<br>
 
-もし \ が \\\ になるようなら，php.ini で magic_quotes_gpc = Off にしてください。
-Mac OS X 10.2 では /usr/lib/php.ini を作ってそこに書き込めばいいようです。
+もし \ が \\\ になるようなら，php.ini で magic_quotes_gpc = Off にしてください。<br>
 Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;/IfModule>
-の中に書き込めばいいようです。
+の中に書き込めばいいようです。<br>
 
-pTeX（日本語版 TeX）については，pTeX が UTF-8 に対応していないディストリビューションもあるようです。<br>
+Windows でも動作するようです。 → ｢TeXを使ってみよう｣をWindows上で動かせました ([qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html))
+
+pTeX（日本語版 TeX）については，最近の Linux ディストリビューションは TeX Live 2012 になっているので pTeX が UTF-8 に対応しています。<br>
 ソースからコンパイルする方法は以下のページをご参照ください。<br>
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
@@ -116,15 +117,17 @@ ulimit -t 10 -f 1024
 ### 関連リンク {#cfaeb364}
 
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
-- [あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう](http://www.aozora.jp/tools/uptex/)
-- [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 - [writeLaTeX](https://www.writelatex.com/)
-- [LiveLaTeX](http://nanatomo.com/livelatex/)
+    - [「writeLaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=writeLaTeX)
+    - [writeLaTeX を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=writeLaTeX)
 - [JaxEdit](http://code.google.com/p/jaxedit/)
-- [Online Latex Editor](http://luikore.github.com/latex/)
+- [LiveLaTeX](http://nanatomo.com/livelatex/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
+- [Online Latex Editor](http://luikore.github.com/latex/)
 - [LaTeX Lab](http://code.google.com/p/latex-lab/)
     - [Google-Docs Base Editor (GDBE)](http://code.google.com/p/gdbe/)
+- [あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう](http://www.aozora.jp/tools/uptex/)
+- [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 
 ***
 
