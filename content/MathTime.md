@@ -7,20 +7,27 @@ pukiwiki: "MathTime"
 
 # MathTime
 
-## MathTime フォント {#c9d10eae}
+## MathTime Pro フォント {#c9d10eae}
+
+### MathTime Pro Fonts とは？ {#v8d5765f}
+
+MathTime
+（\mathit{MathT\kern-.05em{\i}me}）Pro Fonts は Times ベースの数式用フォントで，商品です。<br>
+[Personal TeX Inc.](http://www.pctex.com/)から MathTime Professional 2 Fonts が販売されています。<br>
+
+## MathTime フォント {#n653d321}
 
 \[FIXME\] 現状を反映していないかもしれません。
 
-### MathTime とは？ {#v8d5765f}
+### MathTime とは？ {#x7ad6244}
 
 MathTime
-（\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。
-Y&amp;Y Inc.から以前はオンライン購入できました。
+（\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。<br>
+以前はY&amp;Y Inc.から MathTime がオンライン購入できました。<br>
 
-\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。[Personal TeX Inc.](http://www.pctex.com/)から後継のMathTime Professinalが販売されています。
+\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
 
 \[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
-MathTimeの後継MathTime Professionalが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
 以下にある他のベンダについても古い情報ですのでご注意ください。
 
 \[2003年追記\] ↓現在Y&amp;Yは持ち直しています。
