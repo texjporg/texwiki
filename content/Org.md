@@ -44,4 +44,5 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 ## [Beamer](/Beamer/) Export {#k112eb83}
 
 - [Writing Beamer presentations in org-mode](http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html)
+- \[[Emacs\]emacs + beamerの設定](http://d.hatena.ne.jp/killingout_n-bita/20121224/1356359190)
 - [Emacs org-modeを使ってみる: (15) Beamerにエクスポート](http://d.hatena.ne.jp/tamura70/20100218/org)
