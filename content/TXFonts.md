@@ -26,16 +26,14 @@ improve the spacing of $S$ with subscripts.
     [qa:25199](https://okumuralab.org/~okumura/texfaq/qa/25199.html)に従って txmi.tfm，txmi.vf
     を修正してみました（[txmi.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi.zip)）。
 
+- \[2001-06-13\] [TX Fonts, PX Fonts \[CPAN patch1\]](http://www.nn.iij4u.or.jp/~tutimura/tex/detail.html) Vine 2.x 用パッケージ (土村さんの rpm が更新されました)
 - \[2001-04-16\] [作者 Young U. Ryu のコメント](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/young.txt)(comp.text.tex)
 - \[2001-03-17\] Mac のかたにご注意：
     texmf:dvips:config 中のテキストファイル（tx8r.enc，txr.map，txr1.map，txr2.map）
     の改行コードを必ず Mac 形式に変換してください（Thanks: 神山さん）
 
 - \[2001-03-01\] txfonts/pxfonts のパッチが出ました。CTAN の fonts/txfonts/tx_patch1.zip，
-    fonts/pxfonts/px_patch1.zip です (西島さん，土村さんの rpm も更新されました)
-
-- \[2001-01-08\] [西島さんの RPM](http://www.plain.co.jp/tex/rpm/index.htm)
-    が CTAN 版 TX フォントに合わせて更新されました
+    fonts/pxfonts/px_patch1.zip です
 
 - \[2001-01-03\] 新たに CTAN に収められたものは多少内容が違うようです（実質同じ？）ので，
     私のところに置いてあるものもパッケージングしなおしました。
@@ -52,7 +50,6 @@ improve the spacing of $S$ with subscripts.
 しかし，Computer Modern フォントはデザインがいまいちで使う気になれないという人も多いと思います。
 
 そんな人には Times を TeX 用に配置し直した TX フォントをお薦めします。
-私の最新刊
 [『［改訂版］LaTeX2e 美文書作成入門』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)も TX フォントを使っています。
 
 Computer Modern Roman/Italic と TX フォントの出力例です（PNG画像）。
@@ -75,23 +72,16 @@ TXフォントが出たころは、期待感がたいへん大きかったので
 でも、それはオープンソースソフトの良いところで、誰でも彼のやり残したところを改善することができますし、mathptmxの良いところを合わせてまったく新しいものを作ることもできます。
 どなたかぜひ挑戦してください。
 
-### インストール（Windows） {#o79bd0d3}
+### インストール（W32TeX） {#o79bd0d3}
 
 角藤さんの W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.xz，t1fonts.tar.xz）ので，何もする必要はありません。<br>
 dviout で使う場合は Ghostscript もインストールする必要があります。<br>
 
-### インストール（Linux） {#dd6c8b38}
+### インストール（TeX Live, MacTeX） {#dd6c8b38}
 
-TeX Live には txfonts が含まれていますので，何もする必要はありません。
+TeX Live, MacTeX には txfonts が含まれていますので，何もする必要はありません。
 
-### インストール（Macintosh） {#w5aece91}
-
-内山さんが
-[TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
-という完璧な解説を書いてくださっています。
-ぜひそちらをご覧ください。
-
-### インストール（その他） {#e7c5f34a}
+### インストール（teTeX） {#e7c5f34a}
 
 次のところからダウンロードします（約 3.5M バイト）。
 
@@ -258,9 +248,9 @@ txr.map では欧文フォントが埋め込まれないので，Times の代わ
 
 TX フォントの数式のバランスが気になる方のために，Times 系の商品フォントをあげておきます。
 
-- Y&amp;Y Inc. (廃業。→[TUG内のサポートページ](http://www.tug.org/yandy/)）
-    - MathTime
-        (MathTime 1.1 + MathTime Plus = MathTime Complete: オンライン $225)
+- [Personal TeX, Inc.](http://www.pctex.com/)
+    - MathTime Pro 2
+        (MTPro2 Complete: オンライン: Price $179, Academic price $129)
 
 - [MicroPress](http://www.micropress-inc.com/) --
     [TM Math](http://www.micropress-inc.com/fonts/tmmath/tmmain.htm)
@@ -275,3 +265,7 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
 - Belleek ([TrueTeX](http://truetex.com/))
     …… MathTime（3フォント）の代替品です。
     MathTime Plus（15フォント）相当のものは含まれていません。
+
+### 関連リンク {#na79627d}
+
+- [TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
