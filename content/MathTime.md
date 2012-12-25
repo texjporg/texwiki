@@ -13,7 +13,7 @@ pukiwiki: "MathTime"
 
 MathTime
 （\mathit{MathT\kern-.05em{\i}me}）Pro Fonts は Times ベースの数式用フォントで，商品です。<br>
-[Personal TeX Inc.](http://www.pctex.com/)から MathTime Professional 2 Fonts が販売されています。<br>
+[Personal TeX Inc.](http://www.pctex.com/)から MathTime Professional 2 Fonts (MTPro2 Complete) が販売されています。<br>
 
 ## MathTime フォント {#n653d321}
 
