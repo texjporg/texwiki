@@ -19,7 +19,7 @@ pukiwiki: "新 pTeX とBabel"
     [推奨環境](#z22ea698)に Vine 版，Mac OS X 版の記述を追加しました。-- 栗山
 
 - \[2007/11/01\]
-    [推奨環境](#z22ea698)に[『［改訂第4版］ LaTeX2e 美文書作成入門』付録 CD-ROM](#oe0dfa58) の項を追加しました。-- 栗山
+    [推奨環境](#z22ea698)に[『［改訂5版］ LaTeX2e 美文書作成入門』付録 DVD-ROM](#oe0dfa58) の項を追加しました。-- 栗山
 
 - \[2007/07/12\]
     最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
