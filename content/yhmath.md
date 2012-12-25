@@ -11,7 +11,7 @@ pukiwiki: "yhmath"
 
 ### 何？ {#rf9b7794}
 
-[Yannis Haralambous](http://omega.enstb.org/yannis/) 作の根号や括弧などのフォントです。
+[Yannis Haralambous](http://www.facebook.com/yannis.haralambous) ([twitter](http://twitter.com/y_haralambous)) 作の根号や括弧などのフォントです。
 通常より大きいものまで用意されています。
 
 yhmathを紹介してくださった本田さんに感謝します。
@@ -30,13 +30,13 @@ yhmathを紹介してくださった本田さんに感謝します。
 - [yhmath.ps](https://mirror.ctan.org/fonts/yhmath/yhmath.ps) (マニュアル)
 - [yhmath.dtx](https://mirror.ctan.org/macros/latex/contrib/yhmath/yhmath.dtx) (適当なフォルダに)
 - [yhmath.ins](https://mirror.ctan.org/macros/latex/contrib/yhmath/yhmath.ins) (上と同じフォルダに)
-- [yhmath.sty](https://mirror.ctan.org/fonts/yhmath/yhmath.sty) (.../texmf/tex/latex/yhmath/ に)
+- [yhmath.sty](https://mirror.ctan.org/fonts/yhmath/yhmath.sty) (.../texmf-dist/tex/latex/yhmath/ に)
 - [yhcmex.pfb](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb)
-    (.../texmf/fonts/type1/public/misc/ に) \[29149バイトです。古いものと混同されないように\]
+    (.../texmf-dist/fonts/type1/public/yhmath/ に) \[29149バイトです。古いものと混同されないように\]
 
-- [yhcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yhcmex10.tfm) (.../texmf/fonts/tfm/public/misc/ に)
-- [yrcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yrcmex10.tfm) (.../texmf/fonts/tfm/public/misc/ に)
-- [yhcmex10.vf](https://mirror.ctan.org/fonts/yhmath/yhcmex10.vf) (.../texmf/fonts/vf/public/misc/ に)
+- [yhcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yhcmex10.tfm) (.../texmf-dist/fonts/tfm/public/yhmath/ に)
+- [yrcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yrcmex10.tfm) (.../texmf-dist/fonts/tfm/public/yhmath/ に)
+- [yhcmex10.vf](https://mirror.ctan.org/fonts/yhmath/yhcmex10.vf) (.../texmf-dist/fonts/vf/public/yhmath/ に)
 
 yhmath.ins のあるフォルダに移動して，yhmath.ins を tex で処理します：
 
@@ -44,17 +44,17 @@ yhmath.ins のあるフォルダに移動して，yhmath.ins を tex で処理�
 tex yhmath.ins
 ```
 
-できた \*.fd を .../texmf/tex/latex/yhmath/ に移します。
+できた \*.fd を .../texmf-dist/tex/latex/yhmath/ に移します。
 
 もし ls-R を作っているなら mktexlsr を実行します。
 
-.../texmf/dvips/config/psfonts.map に次のように書き足します。
+.../texmf/fonts/map/dvips/updmap/psfonts.map と .../texmf/fonts/map/pdftex/updmap/pdftex.map に次のように書き足します。
 
 ```
 yrcmex10 Yhcmex <yhcmex.pfb
 ```
 
-.../texmf/dvips/config/dvipdfm.map に次のように書き足します：
+.../texmf/fonts/map/dvipdfmx/updmap/yhmath.map を作成して次のように書き足します：
 
 ```
 yrcmex10 default yhcmex
@@ -82,3 +82,7 @@ yrcmex10 Yhcmex <yhcmex.pfb
 
 大熊さんがさらにバグと解決法を見つけられました [qa:23593](https://okumuralab.org/~okumura/texfaq/qa/23593.html)。
 これについても Haralambous 氏に連絡しておきました。
+
+### 関連リンク {#l55021be}
+
+- [Macports で導入した pTeX で yhmath フォント](http://knmac.math.kyushu-u.ac.jp/konno/modules/wpkonno/?p=12)
