@@ -30,9 +30,9 @@ OS X 10.4 以降
 
 [COMPATIBILITY](http://www.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
 
-### リリース情報 {#sb3b1ab6}
+### リリース情報/ChangeLog {#sb3b1ab6}
 
-2012-06-16 LaTeXiT 2.5.0<br>
+- [ChangeLog](http://www.chachatelier.fr/latexit/latexit-downloads.php#main)
 
 ## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
 
