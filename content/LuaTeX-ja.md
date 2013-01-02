@@ -87,6 +87,7 @@ W32TeX における LuaTeX 開発版 (luatex-dev-w32.tar.xz) では，2012/05/26
 - [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
 
 mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
+LuaJITTeX を使用すると 1.3 倍ぐらい早くなることがあるようです． → [luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)<br>
 
 使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
 jarticle や jsarticle などの pTeX の使用を前提としたものは使用できません．<br>
