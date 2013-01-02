@@ -29,6 +29,10 @@ LuaTeX に関しては以下のページを参照してください．<br>
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
 
+### 派生版 {#c1116884}
+
+- [LuaJITTeX](http://foundry.supelec.fr/gf/project/luajittex/)
+
 ## 不具合 {#v600e2c1}
 
 ### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました {#o2818a24}
