@@ -136,7 +136,7 @@ fwdsumatrapdf.exe のビルド・実行には [F#](http://research.microsoft.com
 ```
 // vim: ts=4 sw=4 expandtab:
 // >fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
-#r "Microsoft.VisualBasic.dll"
+#r @"Microsoft.VisualBasic.dll"
 
 #light
 
@@ -178,9 +178,9 @@ let timeout = 10000
 
 let Usage args = do
 #if INTERACTIVE
-    let s = "usage: fsi.exe fwdsumatrapdf.fsx pdffile texfile line"
+    let s = "usage: fsi " + fsi.CommandLineArgs.[0] + " pdffile texfile line"
 #else
-    let s = "usage: fwdsumatrapdf.exe pdffile texfile line"
+    let s = "usage: " + (Environment.GetCommandLineArgs ()).[0] + " pdffile texfile line"
 #endif
     if Array.length args = 3 then ()
     else do
@@ -475,7 +475,7 @@ namespace SumatraPDFClient
 
         private static void Usage(string[] args)
         {
-            var s = "usage: fwdsumatrapdf.exe pdffile texfile line";
+            var s = "usage: " + Environment.GetCommandLineArgs()[0] + " pdffile texfile line";
             if (args.Length == 3) {
                 return;
             }
