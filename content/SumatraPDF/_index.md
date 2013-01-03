@@ -574,27 +574,46 @@ namespace SumatraPDFClient
 
 ***
 
-#### C 版 {#qf7ea8bf}
+#### C, C++ 版 {#qf7ea8bf}
 
-C 版も作成してみました．<br>
-F# 版, C# 版がうまく動作しない場合は C 版を使用してください．<br>
+C, C++ 版も作成してみました．<br>
+F# 版, C# 版がうまく動作しない場合は C, C++ 版を使用してください．<br>
 [MinGW](/MinGW/) の GCC でビルドできます．<br>
+
+C の場合
 
 ```
 $ cd /c/w32tex/bin
 $ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -lshlwapi
 ```
 
+C++ の場合
+
+```
+$ cd /c/w32tex/bin
+$ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -lshlwapi
+```
+
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+
+C の場合
 
 ```
 >cd /d c:\w32tex\bin
 >cl fwdsumatrapdf.c user32.lib shlwapi.lib
 ```
 
+C++ の場合
+
+```
+>cd /d c:\w32tex\bin
+>cl fwdsumatrapdf.cpp user32.lib shlwapi.lib
+```
+
 ***
 
 - C:\w32tex\bin\fwdsumatrapdf.c
+- C:\w32tex\bin\fwdsumatrapdf.cpp
 
 ***
 
@@ -603,24 +622,36 @@ Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でも
  *
  * MinGW
  * $ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -lshlwapi
+ * $ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.c user32.lib shlwapi.lib
+ * >cl fwdsumatrapdf.cpp user32.lib shlwapi.lib
  */
 
+#if defined (__cplusplus)
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include <cwchar>
+#include <cerrno>
+#include <clocale>
+using namespace std;
+#else
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <wchar.h>
 #include <errno.h>
 #include <locale.h>
+#endif
 #include <windows.h>
 #include <shlwapi.h>
 #include <ddeml.h>
 
 BOOL CALLBACK GetSumatraHWND(HWND, LPARAM);
-int RunSumatraPDF(const wchar_t*);
-int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
+static int RunSumatraPDF(const wchar_t*);
+static int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
 
 #define FWDSUMATRAPDF_BUF_SIZE 1024
 #define TIMEOUT 10000
@@ -655,7 +686,7 @@ next:
   return TRUE;
 }
 
-int
+static int
 RunSumatraPDF(
     const wchar_t* pdf)
 {
@@ -714,7 +745,7 @@ exn:
   return err;
 }
 
-int
+static int
 DdeExecute(
     const wchar_t* server,
     const wchar_t* topic,
@@ -743,7 +774,7 @@ DdeExecute(
           server,
           CP_WINUNICODE)) == NULL) {
     fputws(L"DdeCreateStringHandleW error\n", stderr);
-    err = DdeGetLastError(idInstance);
+    err = (int)DdeGetLastError(idInstance);
     goto exn;
   }
 
@@ -752,7 +783,7 @@ DdeExecute(
           topic,
           CP_WINUNICODE)) == NULL) {
     fputws(L"DdeCreateStringHandleW error\n", stderr);
-    err = DdeGetLastError(idInstance);
+    err = (int)DdeGetLastError(idInstance);
     goto exn;
   }
 
@@ -762,7 +793,7 @@ DdeExecute(
           hszTopic,
           NULL)) == NULL) {
     fputws(L"DdeConnect error\n", stderr);
-    err = DdeGetLastError(idInstance);
+    err = (int)DdeGetLastError(idInstance);
     goto exn;
   }
 
@@ -775,7 +806,7 @@ DdeExecute(
           CF_UNICODETEXT,
           0)) == NULL) {
     fputws(L"DdeCreateDataHandle error\n", stderr);
-    err = DdeGetLastError(idInstance);
+    err = (int)DdeGetLastError(idInstance);
     goto exn;
   }
 
@@ -789,7 +820,7 @@ DdeExecute(
           TIMEOUT,
           NULL)) == NULL) {
     fputws(L"DdeClientTransaction error\n", stderr);
-    err = DdeGetLastError(idInstance);
+    err = (int)DdeGetLastError(idInstance);
     goto exn;
   }
 
@@ -797,7 +828,7 @@ exn:
   if (hDdeTransactionData) {
     if (DdeFreeDataHandle(
           hDdeTransactionData) == FALSE) {
-      err = DdeGetLastError(idInstance);
+      err = (int)DdeGetLastError(idInstance);
       if (err) {
         fputws(L"DdeFreeDataHandle error\n", stderr);
       }
@@ -807,7 +838,7 @@ exn:
   if (hDdeData) {
     if (DdeFreeDataHandle(
           hDdeData) == FALSE) {
-      err = DdeGetLastError(idInstance);
+      err = (int)DdeGetLastError(idInstance);
       if (err) {
         fputws(L"DdeFreeDataHandle error\n", stderr);
       }
@@ -819,7 +850,7 @@ exn:
           idInstance,
           hszServer) == FALSE) {
       fputws(L"DdeFreeStringHandle error\n", stderr);
-      err = DdeGetLastError(idInstance);
+      err = (int)DdeGetLastError(idInstance);
     }
   }
 
@@ -828,14 +859,14 @@ exn:
           idInstance,
           hszTopic) == FALSE) {
       fputws(L"DdeFreeStringHandle error\n", stderr);
-      err = DdeGetLastError(idInstance);
+      err = (int)DdeGetLastError(idInstance);
     }
   }
 
   if (hConvClient) {
     if (DdeDisconnect(hConvClient) == FALSE) {
       fputws(L"DdeDisconnect error\n", stderr);
-      err = DdeGetLastError(idInstance);
+      err = (int)DdeGetLastError(idInstance);
     }
   }
 
