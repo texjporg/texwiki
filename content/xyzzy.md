@@ -55,7 +55,7 @@ xyzzy+ は Ms-PL です．<br>
 
 ### リリース情報 {#m67e4030}
 
-2012-10-29 xyzzy version 0.2.2.245 (0.2.2 系列)<br>
+2012-12-29 xyzzy version 0.2.2.246 (0.2.2 系列)<br>
 2012-09-10 xyzzy version 0.2.3.12 (マルチフレーム版)<br>
 2012-03-20 xyzzy+ version 0.2.2.235+0 (Unicode 版)<br>
 2005-12-07 xyzzy version 0.2.2.235<br>
