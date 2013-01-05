@@ -149,7 +149,7 @@ open Microsoft.VisualBasic
 
 module Ddeml =
     //exception DdemlError of string
-    type DdemlError(e) = inherit Exception(e)
+    type DdemlError (e) = inherit Exception (e)
     let APPCMD_CLIENTONLY = 0x10u
     let CP_WINUNICODE = 1200
     let CF_UNICODETEXT = 13u
@@ -212,17 +212,17 @@ let DdeExecute server topic command = do
     let mutable hDdeTransactionData = 0n
     try
         Ddeml.DdeInitializeW (&idInstance, 0n, Ddeml.APPCMD_CLIENTONLY, 0u) |> ignore
-        if idInstance = 0u then raise (Ddeml.DdemlError("DdeInitializeW error"))
+        if idInstance = 0u then Ddeml.DdemlError "DdeInitializeW error" |> raise
         hszServer <- Ddeml.DdeCreateStringHandleW (idInstance, server, Ddeml.CP_WINUNICODE)
-        if hszServer = 0n then raise (Ddeml.DdemlError("DdeCreateStringHandleW error"))
+        if hszServer = 0n then Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
         hszTopic <- Ddeml.DdeCreateStringHandleW (idInstance, topic, Ddeml.CP_WINUNICODE)
-        if hszTopic = 0n then raise (Ddeml.DdemlError("DdeCreateStringHandleW error"))
+        if hszTopic = 0n then Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
         hConvClient <- Ddeml.DdeConnect (idInstance, hszServer, hszTopic, 0n)
-        if hConvClient = 0n then raise (Ddeml.DdemlError("DdeConnect error"))
+        if hConvClient = 0n then Ddeml.DdemlError "DdeConnect error" |> raise
         hDdeData <- Ddeml.DdeCreateDataHandle (idInstance, command, uint32 ((String.length command + 1)*sizeof<char>), 0u, 0n, Ddeml.CF_UNICODETEXT, 0u)
-        if hDdeData = 0n then raise (Ddeml.DdemlError("DdeCreateDataHandle error"))
+        if hDdeData = 0n then Ddeml.DdemlError "DdeCreateDataHandle error" |> raise
         hDdeTransactionData <- Ddeml.DdeClientTransaction (hDdeData, uint32 -1, hConvClient, 0n, 0u, Ddeml.XTYP_EXECUTE, uint32 timeout, 0n)
-        if hDdeTransactionData = 0n then raise (Ddeml.DdemlError("DdeClientTransaction error"))
+        if hDdeTransactionData = 0n then Ddeml.DdemlError "DdeClientTransaction error" |> raise
     finally
         if hDdeTransactionData <> 0n then Ddeml.DdeFreeDataHandle (hDdeTransactionData) |> ignore
         if hDdeData <> 0n then Ddeml.DdeFreeDataHandle (hDdeData) |> ignore
@@ -403,7 +403,6 @@ ent' during static linking
 #### C# 版 {#de1b4851}
 
 C# 版も作成してみました．<br>
-F# 版がうまく動作しない場合は C# 版を使用してください．<br>
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
@@ -574,10 +573,176 @@ namespace SumatraPDFClient
 
 ***
 
+#### VB 版 {#hc64ff38}
+
+VB 版も作成してみました．<br>
+コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
+
+```
+>C:
+>cd C:\w32tex\bin
+C:\w32tex\bin>vbc fwdsumatrapdf.vb
+```
+
+***
+
+- C:\w32tex\bin\fwdsumatrapdf.vb
+
+***
+
+```
+' vim: ts=4 sw=4 expandtab:
+' >vbc fwdsumatrapdf.vb
+
+Option Strict On
+Option Explicit On
+
+Imports System
+Imports System.IO
+Imports System.Diagnostics
+Imports System.ComponentModel
+Imports System.Runtime.InteropServices
+Imports Microsoft.VisualBasic
+
+Namespace Ddeml
+    Public Class Ddeml
+        Public Class DdemlError
+            Inherits Exception
+            Public Sub New(e As String)
+                MyBase.New(e)
+            End Sub
+        End Class
+        Public Const APPCMD_CLIENTONLY As UInteger = &H10UI
+        Public Const CP_WINUNICODE As Integer = 1200I
+        Public Const CF_UNICODETEXT As UInteger = 13UI
+        Public Const XCLASS_FLAGS As UInteger = &H4000UI
+        Public Const XTYP_EXECUTE As UInteger = (&H0050UI Or XCLASS_FLAGS)
+        <DllImport("user32.dll", EntryPoint:="DdeInitializeW", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeInitializeW(ByRef pidInst As UInteger, pfnCallback As IntPtr, afCmd As UInteger, ulRes As UInteger) As UInteger
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeUninitialize", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeUninitialize(idInst As UInteger) As Boolean
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeCreateStringHandleW", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeCreateStringHandleW(idInst As UInteger, psz As String, iCodePage As Integer) As IntPtr
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeFreeStringHandle", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeFreeStringHandle(idInst As UInteger, hsz As IntPtr) As Boolean
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeCreateDataHandle", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeCreateDataHandle(idInst As UInteger, pSrc As String, cb As UInteger, cbOff As UInteger, hszItem As IntPtr, wFmt As UInteger, afCmd As UInteger) As IntPtr
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeFreeDataHandle", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeFreeDataHandle(hData As IntPtr) As Boolean
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeConnect", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeConnect(idInst As UInteger , hszServer As IntPtr, hszTopic As IntPtr, pCC As IntPtr) As IntPtr
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeDisconnect", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeDisconnect(hConvList As IntPtr) As Boolean
+        End Function
+        <DllImport("user32.dll", EntryPoint:="DdeClientTransaction", CharSet:=CharSet.Unicode)> _
+        Public Shared Function DdeClientTransaction(pData As IntPtr, cbData As UInteger, hConv As IntPtr, hszItem As IntPtr, wFmt As UInteger, wType As UInteger, dwTimeout As UInteger, pdwResult As IntPtr) As IntPtr
+        End Function
+    End Class
+End Namespace
+
+Namespace SumatraPDFClient
+    Public Class ForwardSearch
+        Private Const timeout As Integer = 10000
+
+        Private Shared Sub Usage(args As String())
+            Dim s = "usage: " & Environment.GetCommandLineArgs()(0) & " pdffile texfile line"
+            If args.Length = 3 Then
+                Return
+            Else
+                Console.Error.WriteLine(s)
+                Environment.Exit(2)
+            End If
+        End Sub
+
+        Private Shared Sub RunSumatraPDF(pdf As String)
+            If Process.GetProcessesByName("SumatraPDF").Length <> 0 Then
+                Return
+            Else
+                Dim ps = New Process()
+                Dim sumatrapdfWin32 = "C:\Program Files\SumatraPDF\SumatraPDF.exe"
+                Dim sumatrapdfWin64 = "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"
+                if File.Exists(sumatrapdfWin32) Then
+                    ps.StartInfo.FileName = sumatrapdfWin32
+                Else If File.Exists(sumatrapdfWin64) Then
+                    ps.StartInfo.FileName = sumatrapdfWin64
+                Else
+                    ps.StartInfo.FileName = Interaction.InputBox("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
+                End If
+                ps.StartInfo.Arguments = "-reuse-instance " & """" & pdf & """"
+                ps.Start()
+                ps.WaitForInputIdle(timeout)
+            End If
+        End Sub
+
+        Private Shared Sub DdeExecute(server As String, topic As String, executeCommand As String)
+            Dim idInstance = 0UI
+            Dim hszServer = IntPtr.Zero
+            Dim hszTopic = IntPtr.Zero
+            Dim hConvClient = IntPtr.Zero
+            Dim hDdeData = IntPtr.Zero
+            Dim hDdeTransactionData = IntPtr.Zero
+            Try
+                Ddeml.Ddeml.DdeInitializeW(idInstance, IntPtr.Zero, Ddeml.Ddeml.APPCMD_CLIENTONLY, 0UI)
+                If idInstance = 0UI Then Throw New Ddeml.Ddeml.DdemlError("DdeInitializeW error")
+                hszServer = Ddeml.Ddeml.DdeCreateStringHandleW(idInstance, server, Ddeml.Ddeml.CP_WINUNICODE)
+                If hszServer = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateStringHandleW error")
+                hszTopic = Ddeml.Ddeml.DdeCreateStringHandleW(idInstance, topic, Ddeml.Ddeml.CP_WINUNICODE)
+                If hszTopic = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateStringHandleW error")
+                hConvClient = Ddeml.Ddeml.DdeConnect(idInstance, hszServer, hszTopic, IntPtr.Zero)
+                If hConvClient = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeConnect error")
+                hDdeData = Ddeml.Ddeml.DdeCreateDataHandle(idInstance, executeCommand, CType((executeCommand.Length + 1)*2, UInteger), 0UI, IntPtr.Zero, Ddeml.Ddeml.CF_UNICODETEXT, 0UI)
+                If hDdeData = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateDataHandle error")
+                hDdeTransactionData = Ddeml.Ddeml.DdeClientTransaction(hDdeData, UInteger.MaxValue, hConvClient, IntPtr.Zero, 0UI, Ddeml.Ddeml.XTYP_EXECUTE, CType(timeout, UInteger), IntPtr.Zero)
+                If hDdeTransactionData = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeClientTransaction error")
+            Finally
+                If hDdeTransactionData <> IntPtr.Zero Then Ddeml.Ddeml.DdeFreeDataHandle(hDdeTransactionData)
+                If hDdeData <> IntPtr.Zero Then Ddeml.Ddeml.DdeFreeDataHandle(hDdeData)
+                If hszServer <> IntPtr.Zero Then Ddeml.Ddeml.DdeFreeStringHandle(idInstance, hszServer)
+                If hszTopic <> IntPtr.Zero Then Ddeml.Ddeml.DdeFreeStringHandle(idInstance, hszTopic)
+                If hConvClient <> IntPtr.Zero Then Ddeml.Ddeml.DdeDisconnect(hConvClient)
+                If idInstance <> 0UI Then Ddeml.Ddeml.DdeUninitialize(idInstance)
+            End Try
+        End Sub
+
+        <STAThread>
+        Public Shared Sub Main(args As String())
+            Usage(args)
+            Dim pdf = args(0)
+            Dim tex = args(1)
+            Dim texLine = args(2)
+            Try
+                Integer.Parse(texLine)
+                RunSumatraPDF(pdf)
+                Dim active = 0I
+                Dim forwardSearch = "[ForwardSearch(""" & pdf & """,""" & tex & """," & texLine & ",0,0," & active.ToString() & ")]"
+                DdeExecute("SUMATRA", "control", forwardSearch)
+            Catch e As Win32Exception
+                Console.Error.WriteLine(e.Message)
+                Environment.Exit(-3)
+            Catch e As InvalidOperationException
+                Console.Error.WriteLine(e.Message)
+                Environment.Exit(-2)
+            Catch e As Exception
+                Console.Error.WriteLine(e.Message)
+                Environment.Exit(-1)
+            End Try
+        End Sub
+    End Class
+End Namespace
+```
+
+***
+
 #### C, C++ 版 {#qf7ea8bf}
 
 C, C++ 版も作成してみました．<br>
-F# 版, C# 版がうまく動作しない場合は C, C++ 版を使用してください．<br>
 [MinGW](/MinGW/) の GCC でビルドできます．<br>
 
 C の場合
