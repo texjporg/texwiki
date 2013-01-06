@@ -74,6 +74,60 @@ C++11 未対応のコンパイラを使用している場合は GCC 4.7.0 以降
 
 poppler - TeX Wiki を参照して poppler をインストールします．(pdf2htmlEX をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)<br>
 
+[Python](http://www.python.org/) 2.7.3 Windows Installer (32bit 版) をダウンロードしてインストールします．<br> <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ --> <!--  --> <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
+
+mingw-utils をインストールします．<br>
+
+```
+$ mingw-get install mingw-utils
+```
+
+MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．<br>
+
+32bit Windows の場合
+
+```
+$ pexports /c/Windows/System32/python27.dll > python27.def
+$ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
+$ rm python27.def
+```
+
+64bit Windows の場合
+
+```
+$ pexports /c/Windows/SysWOW64/python27.dll > python27.def
+$ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
+$ rm python27.def
+```
+
+***
+
+- C:/MinGW/lib/pkgconfig/python.pc
+- C:/MinGW/lib/pkgconfig/python-2.7.pc
+
+を作成して以下の内容を記述します．
+
+***
+
+```
+prefix=/mingw
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=/c/Python27/include
+
+Name: Python
+Description: Python library
+Requires: 
+Version: 2.7
+Libs.private:
+Libs: -L${libdir} -lpython27
+Cflags: -IC:/Python27/include
+```
+
+***
+
 <!-- [[Boost:http://www.boost.org/]] をインストールします． -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
 <!-- $ tar xvf boost_1_51_0.tar.bz2 -->
@@ -319,9 +373,9 @@ $ popd
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.92.tar.gz
-$ tar xvf ttfautohint-0.92.tar.gz
-$ pushd ttfautohint-0.92
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.94.tar.gz
+$ tar xvf ttfautohint-0.94.tar.gz
+$ pushd ttfautohint-0.94
 $ ./configure --prefix=/mingw
 $ make
 ```
@@ -331,7 +385,7 @@ $ make
 libtool: link: cannot determine absolute directory name of `./lib'
 ```
 
-のエラーが発生する場合は ttfautohint-0.92/frontend/Makefile の中身を
+のエラーが発生する場合は ttfautohint-0.94/frontend/Makefile の中身を
 
 ```
 #QT_LIBS = -L'./lib' -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
@@ -437,7 +491,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.27.1")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.21.4
+--   found poppler, version 0.22.0
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 Found config.h: C:/MinGW/include/fontforge/config.h
