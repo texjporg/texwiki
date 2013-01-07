@@ -594,8 +594,10 @@ C:\w32tex\bin>vbc fwdsumatrapdf.vb
 ' vim: ts=4 sw=4 expandtab:
 ' >vbc fwdsumatrapdf.vb
 
-Option Strict On
+Option Compare Binary
 Option Explicit On
+Option Infer On
+Option Strict On
 
 Imports System
 Imports System.IO
@@ -649,7 +651,7 @@ End Namespace
 
 Namespace SumatraPDFClient
     Public Class ForwardSearch
-        Private Const timeout As Integer = 10000
+        Private Const timeout As Integer = 10000I
 
         Private Shared Sub Usage(args As String())
             Dim s = "usage: " & Environment.GetCommandLineArgs()(0) & " pdffile texfile line"
@@ -711,7 +713,7 @@ Namespace SumatraPDFClient
             End Try
         End Sub
 
-        <STAThread>
+        <STAThread> _
         Public Shared Sub Main(args As String())
             Usage(args)
             Dim pdf = args(0)
