@@ -49,7 +49,7 @@ Windows, OS X, Linux で動作します．<br>
 
 ### リリース情報 {#d961699f}
 
-2012-03-23 Inkscape 0.48.3.1<br>
+[最新ニュース](http://inkscape.org/index.php?lang=ja)を参照．<br>
 
 ### ChangeLog {#q8a7ad68}
 
@@ -62,11 +62,11 @@ Windows, OS X, Linux で動作します．<br>
 
 ## 不具合 {#tedcde5e}
 
-### Windows 版 Inkscape 0.48.3.1 と 0.48.2 のメニューのフォントがおかしい → etc\pango\pango.aliases の sans の先頭に meiryo, を追加する {#i6aee1d9}
+### Windows 版 Inkscape 0.48.4 (0.48.2 以降) のメニューのフォントがおかしい → etc\pango\pango.aliases の sans の先頭に meiryo, を追加する {#i6aee1d9}
 
 - [Windows 版 Inkscape の メニューフォント設定方法](http://www.ginshali.info/2011/12/windows-inkscape.html)
 
-Windows 版 Inkscape 0.48.3.1 または 0.48.2 を起動するとメニューのフォントが 0.48.1 とは異なっていました．
+Windows 版 Inkscape 0.48.4 (0.48.2 以降) を起動するとメニューのフォントが 0.48.1 とは異なっていました．
 
 inkscape の etc\pango\pango.aliases の
 
