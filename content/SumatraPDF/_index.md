@@ -144,6 +144,8 @@ fwdsumatrapdf.exe のビルド・実行には [F#](http://research.microsoft.com
 
 #light
 
+module Fwdsumatrapdf
+
 module Ddeml =
     open System
     open System.Runtime.InteropServices
