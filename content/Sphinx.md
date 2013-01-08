@@ -59,6 +59,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
     - \[[Sphinx-Users 176\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000175.html)
     - \[[Sphinx-Users 178\] Re:	日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000177.html)
     - \[[Sphinx-Users 179\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000178.html)
+- [Sphinxを使ってみた](http://d.hatena.ne.jp/neko-gensui/20130107/1357527163)
 - [Sphinx+pLatex+dvipdfxmで美文書作成tips](http://qiita.com/items/5276798613ab0f9a9db9)
 - [日本語 Sphinx ドキュメントの PDF 化(TeX 経由)のサンプル](https://github.com/shino/sphinx_to_pdf_via_tex_jp/)
 - [sphinxのlatex経由pdfの時に jsarticle を使ってみたかった](http://d.hatena.ne.jp/tboffice/20121127/1354030250)
