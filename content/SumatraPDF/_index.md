@@ -119,7 +119,7 @@ forward search するときに SumatraPDF を前面に表示したくない場�
 
 #### F# 版 {#pd9dd173}
 
-fwdsumatrapdf.exe のビルド・実行には [F#](http://research.microsoft.com/fsharp/) が必要です．<br>
+F# 版の fwdsumatrapdf.exe のビルド・実行には [F#](http://fsharp.org/) が必要です．<br>
 
 - fwdsumatrapdf.exe の作成方法
     - [F#](http://fsharp.org/) をインストールします．
