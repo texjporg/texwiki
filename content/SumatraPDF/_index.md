@@ -201,10 +201,14 @@ module SumatraPDFClient =
         else do
             let ps = new Process ()
             try
+                let registryValue = ref "SumatraPDF.exe"
                 let keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe"
-                let rKey = Registry.LocalMachine.OpenSubKey keyPath
-                let sumatrapdfRegistry = rKey.GetValue(String.Empty).ToString()
+                using (Registry.LocalMachine.OpenSubKey keyPath) ( fun rKey ->
+                    registryValue := rKey.GetValue(String.Empty).ToString()
+                )
+                let sumatrapdfRegistry = !registryValue
                 if File.Exists sumatrapdfRegistry then ps.StartInfo.FileName <- sumatrapdfRegistry
+                else raise |> ignore
             with
                 | e -> do
                      let sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe"
@@ -494,6 +498,7 @@ namespace SumatraPDFClient
     using System.IO;
     using System.Diagnostics;
     using System.ComponentModel;
+    using Microsoft.Win32;
     using Microsoft.VisualBasic;
     using Ddeml;
 
@@ -520,16 +525,31 @@ namespace SumatraPDFClient
             }
             else {
                 var ps = new Process();
-                var sumatrapdfWin32 = @"C:\Program Files\SumatraPDF\SumatraPDF.exe";
-                var sumatrapdfWin64 = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
-                if (File.Exists(sumatrapdfWin32)) {
-                    ps.StartInfo.FileName = sumatrapdfWin32;
+                try {
+                    var sumatrapdfRegistry = "SumatraPDF.exe";
+                    var keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
+                    using (var rKey = Registry.LocalMachine.OpenSubKey(keyPath)) {
+                        sumatrapdfRegistry = rKey.GetValue(string.Empty).ToString();
+                    }
+                    if (File.Exists(sumatrapdfRegistry)) {
+                        ps.StartInfo.FileName = sumatrapdfRegistry;
+                    }
+                    else {
+                        throw new Exception();
+                    }
                 }
-                else if (File.Exists(sumatrapdfWin64)) {
-                    ps.StartInfo.FileName = sumatrapdfWin64;
-                }
-                else {
-                    ps.StartInfo.FileName = Interaction.InputBox("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe");
+                catch (Exception) {
+                    var sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe";
+                    var sumatrapdfWin64Default = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
+                    if (File.Exists(sumatrapdfWin32Default)) {
+                        ps.StartInfo.FileName = sumatrapdfWin32Default;
+                    }
+                    else if (File.Exists(sumatrapdfWin64Default)) {
+                        ps.StartInfo.FileName = sumatrapdfWin64Default;
+                    }
+                    else {
+                        ps.StartInfo.FileName = Interaction.InputBox("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe");
+                    }
                 }
                 ps.StartInfo.Arguments = "-reuse-instance " + "\"" + pdf + "\"";
                 ps.Start();
@@ -633,6 +653,7 @@ Imports System.IO
 Imports System.Diagnostics
 Imports System.ComponentModel
 Imports System.Runtime.InteropServices
+Imports Microsoft.Win32
 Imports Microsoft.VisualBasic
 
 Namespace Ddeml
@@ -697,15 +718,28 @@ Namespace SumatraPDFClient
                 Return
             Else
                 Dim ps = New Process()
-                Dim sumatrapdfWin32 = "C:\Program Files\SumatraPDF\SumatraPDF.exe"
-                Dim sumatrapdfWin64 = "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"
-                if File.Exists(sumatrapdfWin32) Then
-                    ps.StartInfo.FileName = sumatrapdfWin32
-                Else If File.Exists(sumatrapdfWin64) Then
-                    ps.StartInfo.FileName = sumatrapdfWin64
-                Else
-                    ps.StartInfo.FileName = Interaction.InputBox("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
-                End If
+                Try
+                    Dim sumatrapdfRegistry = "SumatraPDF.exe"
+                    Dim keyPath = "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe"
+                    Using rKey = Registry.LocalMachine.OpenSubKey(keyPath)
+                        sumatrapdfRegistry = rKey.GetValue(String.Empty).ToString()
+                    End Using
+                    If File.Exists(sumatrapdfRegistry) Then
+                        ps.StartInfo.FileName = sumatrapdfRegistry
+                    Else
+                        Throw New Exception()
+                    End If
+                Catch e As Exception
+                    Dim sumatrapdfWin32Default = "C:\Program Files\SumatraPDF\SumatraPDF.exe"
+                    Dim sumatrapdfWin64Default = "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"
+                    if File.Exists(sumatrapdfWin32Default) Then
+                        ps.StartInfo.FileName = sumatrapdfWin32Default
+                    Else If File.Exists(sumatrapdfWin64Default) Then
+                        ps.StartInfo.FileName = sumatrapdfWin64Default
+                    Else
+                        ps.StartInfo.FileName = Interaction.InputBox("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
+                    End If
+                End Try
                 ps.StartInfo.Arguments = "-reuse-instance " & """" & pdf & """"
                 ps.Start()
                 ps.WaitForInputIdle(timeout)
