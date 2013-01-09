@@ -149,15 +149,17 @@ module Fwdsumatrapdf
 module Ddeml =
     open System
     open System.Runtime.InteropServices
+
     //exception DdemlError of string
     type DdemlError (e) = inherit Exception (e)
+    type DdeCallback = delegate of uint32 * uint32 * nativeint * nativeint * nativeint * nativeint * uint32 * uint32 -> nativeint
     let APPCMD_CLIENTONLY = 0x10u
     let CP_WINUNICODE = 1200
     let CF_UNICODETEXT = 13u
     let XCLASS_FLAGS = 0x4000u
     let XTYP_EXECUTE = (0x0050u ||| XCLASS_FLAGS)
     [<DllImport(@"user32.dll", EntryPoint="DdeInitializeW", CharSet=CharSet.Unicode)>]
-    extern uint32 DdeInitializeW (uint32&, nativeint, uint32, uint32)
+    extern uint32 DdeInitializeW (uint32&, DdeCallback, uint32, uint32)
     [<DllImport(@"user32.dll", EntryPoint="DdeUninitialize", CharSet=CharSet.Unicode)>]
     extern bool DdeUninitialize (uint32)
     [<DllImport(@"user32.dll", EntryPoint="DdeCreateStringHandleW", CharSet=CharSet.Unicode)>]
@@ -193,8 +195,8 @@ module SumatraPDFClient =
 #endif
         if Array.length args = 3 then ()
         else do
-            eprintfn "%s" s
-            exit 2
+            Console.Error.WriteLine s
+            Environment.Exit 2
 
     let RunSumatraPDF pdf = do
         if Process.GetProcessesByName "SumatraPDF" |> Array.length <> 0 then ()
@@ -208,7 +210,7 @@ module SumatraPDFClient =
                 )
                 let sumatrapdfRegistry = !registryValue
                 if File.Exists sumatrapdfRegistry then ps.StartInfo.FileName <- sumatrapdfRegistry
-                else raise |> ignore
+                else new FileNotFoundException "File Not Found." |> raise
             with
                 | e -> do
                      let sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe"
@@ -231,18 +233,18 @@ module SumatraPDFClient =
         let mutable hDdeData = 0n
         let mutable hDdeTransactionData = 0n
         try
-            Ddeml.DdeInitializeW (&idInstance, 0n, Ddeml.APPCMD_CLIENTONLY, 0u) |> ignore
-            if idInstance = 0u then Ddeml.DdemlError "DdeInitializeW error" |> raise
+            Ddeml.DdeInitializeW (&idInstance, new Ddeml.DdeCallback (fun uType uFmt hconv hsz1 hsz2 hdata dwData1 dwData2 -> 0n), Ddeml.APPCMD_CLIENTONLY, 0u) |> ignore
+            if idInstance = 0u then new Ddeml.DdemlError "DdeInitializeW error" |> raise
             hszServer <- Ddeml.DdeCreateStringHandleW (idInstance, server, Ddeml.CP_WINUNICODE)
-            if hszServer = 0n then Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
+            if hszServer = 0n then new Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
             hszTopic <- Ddeml.DdeCreateStringHandleW (idInstance, topic, Ddeml.CP_WINUNICODE)
-            if hszTopic = 0n then Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
+            if hszTopic = 0n then new Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
             hConvClient <- Ddeml.DdeConnect (idInstance, hszServer, hszTopic, 0n)
-            if hConvClient = 0n then Ddeml.DdemlError "DdeConnect error" |> raise
+            if hConvClient = 0n then new Ddeml.DdemlError "DdeConnect error" |> raise
             hDdeData <- Ddeml.DdeCreateDataHandle (idInstance, command, uint32 ((String.length command + 1)*sizeof<char>), 0u, 0n, Ddeml.CF_UNICODETEXT, 0u)
-            if hDdeData = 0n then Ddeml.DdemlError "DdeCreateDataHandle error" |> raise
+            if hDdeData = 0n then new Ddeml.DdemlError "DdeCreateDataHandle error" |> raise
             hDdeTransactionData <- Ddeml.DdeClientTransaction (hDdeData, uint32 -1, hConvClient, 0n, 0u, Ddeml.XTYP_EXECUTE, uint32 timeout, 0n)
-            if hDdeTransactionData = 0n then Ddeml.DdemlError "DdeClientTransaction error" |> raise
+            if hDdeTransactionData = 0n then new Ddeml.DdemlError "DdeClientTransaction error" |> raise
         finally
             if hDdeTransactionData <> 0n then Ddeml.DdeFreeDataHandle (hDdeTransactionData) |> ignore
             if hDdeData <> 0n then Ddeml.DdeFreeDataHandle (hDdeData) |> ignore
@@ -264,18 +266,19 @@ module SumatraPDFClient =
             DdeExecute "SUMATRA" "control" forwardSearch
         with
             | :? Win32Exception as e -> do
-                 eprintfn "%s" e.Message
-                 exit -3
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -3
             | :? InvalidOperationException as e -> do
-                 eprintfn "%s" e.Message
-                 exit -2
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -2
             | e -> do
-                 eprintfn "%s" e.Message
-                 exit -1
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -1
 
 module Main =
     open System
     open SumatraPDFClient
+
 #if INTERACTIVE
     fsi.CommandLineArgs |> Array.toList |> List.tail |> List.toArray |> Main
 #else
@@ -443,6 +446,14 @@ C# 版も作成してみました．<br>
 C:\w32tex\bin>csc /r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
 ```
 
+Mono C# compiler (mcs) でもビルドできます．<br>
+
+```
+>C:
+>cd C:\w32tex\bin
+C:\w32tex\bin>mcs -r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
+```
+
 ***
 
 - C:\w32tex\bin\fwdsumatrapdf.cs
@@ -452,6 +463,7 @@ C:\w32tex\bin>csc /r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
 ```
 // vim: ts=4 sw=4 expandtab:
 // >csc /r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
+// >mcs -r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
 
 namespace Ddeml
 {
@@ -535,7 +547,7 @@ namespace SumatraPDFClient
                         ps.StartInfo.FileName = sumatrapdfRegistry;
                     }
                     else {
-                        throw new Exception();
+                        throw new FileNotFoundException();
                     }
                 }
                 catch (Exception) {
@@ -727,7 +739,7 @@ Namespace SumatraPDFClient
                     If File.Exists(sumatrapdfRegistry) Then
                         ps.StartInfo.FileName = sumatrapdfRegistry
                     Else
-                        Throw New Exception()
+                        Throw New FileNotFoundException()
                     End If
                 Catch e As Exception
                     Dim sumatrapdfWin32Default = "C:\Program Files\SumatraPDF\SumatraPDF.exe"
