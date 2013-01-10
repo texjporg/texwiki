@@ -882,20 +882,19 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
 
     GetWindowTextW(hwnd, windowText, sizeof(windowText));
     if (windowText[0] == L'\0') {
-        goto next;
+        return TRUE;
     }
 
     if ((title = wcsrchr(windowText, L'S')) == nullptr) {
-        goto next;
+        return TRUE;
     }
 
     if (StrCmpW(title, L"SumatraPDF") != 0) {
-        goto next;
+        return TRUE;
     }
 
     existSumatraHWND = TRUE;
 
-next:
     return TRUE;
 }
 
@@ -994,7 +993,7 @@ namespace sumatrapdfclient
                 return DdeGetLastError(idInstance);
             }
 
-            if ((this->hDdeTransactionData = DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
+            if ((this->hDdeTransactionData = DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), this->hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
                 fputws(L"DdeClientTransaction error\n", stderr);
                 return DdeGetLastError(idInstance);
             }
@@ -1020,13 +1019,17 @@ auto static RunSumatraPDF(const T* pdf) -> int
 
     DWORD dwType = 0;
     DWORD sz = 0;
-    if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, nullptr, &sz) != ERROR_SUCCESS) {
-        err = 1;
+    if (subKey != nullptr) {
+        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, nullptr, &sz) != ERROR_SUCCESS) {
+            err = 1;
+        }
     }
 
     T sumatrapdfRegistry[sizeof(T)*FWDSUMATRAPDF_BUF_SIZE] = L"";
-    if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(sumatrapdfRegistry), &sz) != ERROR_SUCCESS) {
-        err = 1;
+    if (subKey != nullptr) {
+        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(sumatrapdfRegistry), &sz) != ERROR_SUCCESS) {
+            err = 1;
+        }
     }
 
     if (subKey != nullptr) {
@@ -1039,9 +1042,13 @@ auto static RunSumatraPDF(const T* pdf) -> int
         if (wcslen(sumatrapdfRegistry) != 0) {
             if (PathFileExistsW(sumatrapdfRegistry)) {
                 sumatrapdf = sumatrapdfRegistry;
+            } else {
+                err = 1;
             }
         }
-    } else {
+    }
+
+    if (err != 0) {
         err = 0;
         const T* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
         const T* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
@@ -1282,7 +1289,7 @@ RunSumatraPDF(const wchar_t* pdf)
 {
     int err = 0;
     HKEY subKey = NULL;
-    const wchar_t* keyPath =L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
+    const wchar_t* keyPath = L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
     DWORD dwType = 0;
     DWORD sz = 0;
     wchar_t sumatrapdfRegistry[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
@@ -1299,12 +1306,16 @@ RunSumatraPDF(const wchar_t* pdf)
         err = 1;
     }
 
-    if (RegQueryValueExW(subKey, NULL, NULL, &dwType, NULL, &sz) != ERROR_SUCCESS) {
-        err = 1;
+    if (subKey != NULL) {
+        if (RegQueryValueExW(subKey, NULL, NULL, &dwType, NULL, &sz) != ERROR_SUCCESS) {
+            err = 1;
+        }
     }
 
-    if (RegQueryValueExW(subKey, NULL, NULL, &dwType, (BYTE*)sumatrapdfRegistry, &sz) != ERROR_SUCCESS) {
-        err = 1;
+    if (subKey != NULL) {
+        if (RegQueryValueExW(subKey, NULL, NULL, &dwType, (BYTE*)sumatrapdfRegistry, &sz) != ERROR_SUCCESS) {
+            err = 1;
+        }
     }
 
     if (subKey != NULL) {
@@ -1316,9 +1327,13 @@ RunSumatraPDF(const wchar_t* pdf)
         if (wcslen(sumatrapdfRegistry) != 0) {
             if (PathFileExistsW(sumatrapdfRegistry)) {
                 sumatrapdf = sumatrapdfRegistry;
+            } else {
+                err = 1;
             }
         }
-    } else {
+    }
+
+    if (err != 0) {
         err = 0;
         if (PathFileExistsW(sumatrapdfWin32Default)) {
             sumatrapdf = (wchar_t*)sumatrapdfWin32Default;
@@ -1586,6 +1601,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 - [Windows Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa383751(v=vs.85).aspx>)
 - [The New Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa384264(v=vs.85).aspx>)
 - [NDde](http://ndde.codeplex.com/)
+- [nsisDDE](http://wiz0u.free.fr/prog/nsisDDE/)
 - [レジストリの値をコマンド プロンプトで取得する](http://ziomatrix18.blog68.fc2.com/blog-entry-477.html)
 - [USBメモリ活用講座【基礎編・PDFビューアのポータブル化－Sumatra PDF】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/pdf/sumatra.shtml)
 - [Windows 7 で W32TeX を導入して日本語 SyncTeX を試してみる](http://skalldan.wordpress.com/2011/11/11/windows-7-%E3%81%A7-w32tex-%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E6%97%A5%E6%9C%AC%E8%AA%9E-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
