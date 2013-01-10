@@ -478,13 +478,14 @@ namespace Ddeml
             {
             }
         }
+        public delegate IntPtr DdeCallback(uint uType, uint uFmt, IntPtr hconv, IntPtr hsz1, IntPtr hsz2, IntPtr hdata, uint dwData1, uint dwData2);
         public const uint APPCMD_CLIENTONLY = 0x10u;
         public const int CP_WINUNICODE = 1200;
         public const uint CF_UNICODETEXT = 13u;
         public const uint XCLASS_FLAGS = 0x4000u;
         public const uint XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
         [DllImport(@"user32.dll", EntryPoint="DdeInitializeW", CharSet=CharSet.Unicode)]
-        public static extern uint DdeInitializeW(ref uint pidInst, IntPtr pfnCallback, uint afCmd, uint ulRes);
+        public static extern uint DdeInitializeW(ref uint pidInst, DdeCallback pfnCallback, uint afCmd, uint ulRes);
         [DllImport(@"user32.dll", EntryPoint="DdeUninitialize", CharSet=CharSet.Unicode)]
         public static extern bool DdeUninitialize(uint idInst);
         [DllImport(@"user32.dll", EntryPoint="DdeCreateStringHandleW", CharSet=CharSet.Unicode)]
@@ -578,7 +579,7 @@ namespace SumatraPDFClient
             var hDdeData = IntPtr.Zero;
             var hDdeTransactionData = IntPtr.Zero;
             try {
-                Ddeml.DdeInitializeW(ref idInstance, IntPtr.Zero, Ddeml.APPCMD_CLIENTONLY, 0u);
+                Ddeml.DdeInitializeW(ref idInstance, (uType, uFmt, hconv, hsz1, hsz2, hdata, dwData1, dwData2) => IntPtr.Zero, Ddeml.APPCMD_CLIENTONLY, 0u);
                 if (idInstance == 0u) throw new Ddeml.DdemlError("DdeInitializeW error");
                 hszServer = Ddeml.DdeCreateStringHandleW(idInstance, server, Ddeml.CP_WINUNICODE);
                 if (hszServer == IntPtr.Zero) throw new Ddeml.DdemlError("DdeCreateStringHandleW error");
@@ -676,13 +677,14 @@ Namespace Ddeml
                 MyBase.New(e)
             End Sub
         End Class
+        Public Delegate Function DdeCallback(uType As UInteger, uFmt As UInteger, hconv As IntPtr, hsz1 As IntPtr, hsz2 As IntPtr, hdata As IntPtr, dwData1 As UInteger, dwData2 As UInteger) As IntPtr
         Public Const APPCMD_CLIENTONLY As UInteger = &H10UI
         Public Const CP_WINUNICODE As Integer = 1200I
         Public Const CF_UNICODETEXT As UInteger = 13UI
         Public Const XCLASS_FLAGS As UInteger = &H4000UI
         Public Const XTYP_EXECUTE As UInteger = (&H0050UI Or XCLASS_FLAGS)
         <DllImport("user32.dll", EntryPoint:="DdeInitializeW", CharSet:=CharSet.Unicode)> _
-        Public Shared Function DdeInitializeW(ByRef pidInst As UInteger, pfnCallback As IntPtr, afCmd As UInteger, ulRes As UInteger) As UInteger
+        Public Shared Function DdeInitializeW(ByRef pidInst As UInteger, pfnCallback As DdeCallback, afCmd As UInteger, ulRes As UInteger) As UInteger
         End Function
         <DllImport("user32.dll", EntryPoint:="DdeUninitialize", CharSet:=CharSet.Unicode)> _
         Public Shared Function DdeUninitialize(idInst As UInteger) As Boolean
@@ -766,7 +768,7 @@ Namespace SumatraPDFClient
             Dim hDdeData = IntPtr.Zero
             Dim hDdeTransactionData = IntPtr.Zero
             Try
-                Ddeml.Ddeml.DdeInitializeW(idInstance, IntPtr.Zero, Ddeml.Ddeml.APPCMD_CLIENTONLY, 0UI)
+                Ddeml.Ddeml.DdeInitializeW(idInstance, Function(uType, uFmt, hconv, hsz1, hsz2, hdata, dwData1, dwData2) IntPtr.Zero, Ddeml.Ddeml.APPCMD_CLIENTONLY, 0UI)
                 If idInstance = 0UI Then Throw New Ddeml.Ddeml.DdemlError("DdeInitializeW error")
                 hszServer = Ddeml.Ddeml.DdeCreateStringHandleW(idInstance, server, Ddeml.Ddeml.CP_WINUNICODE)
                 If hszServer = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateStringHandleW error")
@@ -891,6 +893,7 @@ using namespace std;
 #include <shlwapi.h>
 #include <ddeml.h>
 
+HDDEDATA CALLBACK SumatraDdeCallback(UINT, UINT, HCONV, HSZ, HSZ, HDDEDATA, DWORD, DWORD);
 BOOL CALLBACK GetSumatraHWND(HWND, LPARAM);
 static int RunSumatraPDF(const wchar_t*);
 static int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
@@ -898,6 +901,20 @@ static int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
 #define FWDSUMATRAPDF_BUF_SIZE 1024
 #define TIMEOUT 10000
 static BOOL existSumatraHWND = FALSE;
+
+HDDEDATA CALLBACK
+SumatraDdeCallback(
+    UINT uType,
+    UINT uFmt,
+    HCONV hconv,
+    HSZ hsz1,
+    HSZ hsz2,
+    HDDEDATA hdata,
+    DWORD dwData1,
+    DWORD dwData2)
+{
+  return NULL;
+}
 
 BOOL CALLBACK
 GetSumatraHWND(
@@ -1003,7 +1020,7 @@ DdeExecute(
 
   if (DdeInitializeW(
         &idInstance,
-        NULL,
+        SumatraDdeCallback,
         APPCMD_CLIENTONLY,
         0) != DMLERR_NO_ERROR) {
     fputws(L"DdeInitializeW error\n", stderr);
