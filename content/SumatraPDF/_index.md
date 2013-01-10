@@ -819,6 +819,340 @@ End Namespace
 
 ***
 
+#### C++11 版 {#p11a58d5}
+
+C++11 版も作成してみました．<br>
+[MinGW](/MinGW/) の GCC でビルドできます．<br>
+
+```
+$ cd /c/w32tex/bin
+$ g++ -std=c++11 -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+```
+
+Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+
+```
+>cd /d c:\w32tex\bin
+>cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
+```
+
+***
+
+- C:\w32tex\bin\fwdsumatrapdf.cpp
+
+***
+
+```
+/* vim: ts=4 sw=4 expandtab:
+ *
+ * MinGW
+ * $ g++ -std=c++11 -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ *
+ * Microsoft Visual Studio Express
+ * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
+ */
+
+#include <windows.h>
+#include <shlwapi.h>
+#include <ddeml.h>
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include <cwchar>
+#include <cerrno>
+#include <clocale>
+
+using namespace std;
+
+auto static const FWDSUMATRAPDF_BUF_SIZE = 1024;
+auto static const TIMEOUT = 10000;
+auto static existSumatraHWND = FALSE;
+
+auto CALLBACK SumatraDdeCallback(UINT uType, UINT uFmt, HCONV hconv, HSZ hsz1, HSZ hsz2, HDDEDATA hdata, DWORD dwData1, DWORD dwData2) -> HDDEDATA
+{
+    return nullptr;
+}
+
+auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
+{
+    wchar_t* title = nullptr;
+    wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+
+    UNREFERENCED_PARAMETER(lParam);
+
+    GetWindowTextW(hwnd, windowText, sizeof(windowText));
+    if (windowText[0] == L'\0') {
+        goto next;
+    }
+
+    if ((title = wcsrchr(windowText, L'S')) == nullptr) {
+        goto next;
+    }
+
+    if (StrCmpW(title, L"SumatraPDF") != 0) {
+        goto next;
+    }
+
+    existSumatraHWND = TRUE;
+
+next:
+    return TRUE;
+}
+
+namespace sumatrapdfclient
+{
+    template<typename T>
+    class DdeClient
+    {
+    private:
+        HCONV hConvClient;
+        DWORD idInstance;
+        HSZ hszServer;
+        HSZ hszTopic;
+        HDDEDATA hDdeData;
+        HDDEDATA hDdeTransactionData;
+
+    public:
+        explicit DdeClient()
+        {
+            this->hConvClient = nullptr;
+            this->idInstance = 0;
+            this->hszServer = nullptr;
+            this->hszTopic = nullptr;
+            this->hDdeData = nullptr;
+            this->hDdeTransactionData = nullptr;
+        }
+
+        ~DdeClient()
+        {
+            if (this->hDdeTransactionData != nullptr) {
+                if (DdeFreeDataHandle(this->hDdeTransactionData) == FALSE) {
+                    if (DdeGetLastError(this->idInstance) != 0) {
+                        fputws(L"DdeFreeDataHandle error\n", stderr);
+                    }
+                }
+            }
+
+            if (this->hDdeData != nullptr) {
+                if (DdeFreeDataHandle(this->hDdeData) == FALSE) {
+                    if (DdeGetLastError(this->idInstance) != 0) {
+                        fputws(L"DdeFreeDataHandle error\n", stderr);
+                    }
+                }
+            }
+
+            if (this->hszServer != nullptr) {
+                if (DdeFreeStringHandle(this->idInstance, this->hszServer) == FALSE) {
+                    fputws(L"DdeFreeStringHandle error\n", stderr);
+                }
+            }
+
+            if (this->hszTopic != nullptr) {
+                if (DdeFreeStringHandle(this->idInstance, this->hszTopic) == FALSE) {
+                    fputws(L"DdeFreeStringHandle error\n", stderr);
+                }
+            }
+
+            if (this->hConvClient != nullptr) {
+                if (DdeDisconnect(this->hConvClient) == FALSE) {
+                    fputws(L"DdeDisconnect error\n", stderr);
+                }
+            }
+
+            if (this->idInstance != 0) {
+                if (DdeUninitialize(this->idInstance) == FALSE) {
+                    fputws(L"DdeUninitialize error\n", stderr);
+                }
+            }
+
+        }
+
+        auto execute(const T* server, const T* topic, const T* command) -> int
+        {
+            if (DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
+                fputws(L"DdeInitializeW error\n", stderr);
+                return 4;
+            }
+
+            if ((this->hszServer = DdeCreateStringHandleW(this->idInstance, server, CP_WINUNICODE)) == nullptr) {
+                fputws(L"DdeCreateStringHandleW error\n", stderr);
+                return DdeGetLastError(idInstance);
+            }
+
+            if ((this->hszTopic = DdeCreateStringHandleW(this->idInstance, topic, CP_WINUNICODE)) == nullptr) {
+                fputws(L"DdeCreateStringHandleW error\n", stderr);
+                return DdeGetLastError(idInstance);
+            }
+
+            if ((this->hConvClient = DdeConnect(this->idInstance, this->hszServer, this->hszTopic, nullptr)) == nullptr) {
+                fputws(L"DdeConnect error\n", stderr);
+                return DdeGetLastError(idInstance);
+            }
+
+            if ((this->hDdeData = DdeCreateDataHandle(this->idInstance, reinterpret_cast<BYTE*>(const_cast<T*>(command)), static_cast<DWORD>((wcslen(command) + 1)*sizeof(T)), 0, nullptr, CF_UNICODETEXT, 0)) == nullptr) {
+                fputws(L"DdeCreateDataHandle error\n", stderr);
+                return DdeGetLastError(idInstance);
+            }
+
+            if ((this->hDdeTransactionData = DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
+                fputws(L"DdeClientTransaction error\n", stderr);
+                return DdeGetLastError(idInstance);
+            }
+
+            return 0;
+        }
+
+    };
+}
+
+using namespace sumatrapdfclient;
+
+template<typename T>
+auto static RunSumatraPDF(const T* pdf) -> int
+{
+    auto err = 0;
+
+    HKEY subKey = nullptr;
+    const T* keyPath = L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
+    if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath, 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
+        err = 1;
+    }
+
+    DWORD dwType = 0;
+    DWORD sz = 0;
+    if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, nullptr, &sz) != ERROR_SUCCESS) {
+        err = 1;
+    }
+
+    T sumatrapdfRegistry[sizeof(T)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(sumatrapdfRegistry), &sz) != ERROR_SUCCESS) {
+        err = 1;
+    }
+
+    if (subKey != nullptr) {
+        RegCloseKey(subKey);
+        subKey = nullptr;
+    }
+
+    T* sumatrapdf = const_cast<T*>(L"SumatraPDF.exe");
+    if (err == 0) {
+        if (wcslen(sumatrapdfRegistry) != 0) {
+            if (PathFileExistsW(sumatrapdfRegistry)) {
+                sumatrapdf = sumatrapdfRegistry;
+            }
+        }
+    } else {
+        err = 0;
+        const T* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+        const T* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
+        if (PathFileExistsW(sumatrapdfWin32Default)) {
+            sumatrapdf = const_cast<T*>(sumatrapdfWin32Default);
+        } else if (PathFileExistsW(sumatrapdfWin64Default)) {
+            sumatrapdf = const_cast<T*>(sumatrapdfWin64Default);
+        } else {
+            sumatrapdf = const_cast<T*>(L"SumatraPDF.exe");
+        }
+    }
+
+    auto const reuseInstance = L"-reuse-instance";
+    T sumatrapdfCommandLine[sizeof(T)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wsprintfW(sumatrapdfCommandLine, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
+
+    static HWND hList;
+    EnumWindows(GetSumatraHWND, (LPARAM)hList);
+
+    if (existSumatraHWND == TRUE) {
+        return err;
+    }
+
+    STARTUPINFOW si;
+    PROCESS_INFORMATION pi;
+
+    memset(&si, 0, sizeof(si));
+    memset(&pi, 0, sizeof(pi));
+
+    if (CreateProcessW(nullptr, sumatrapdfCommandLine, nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
+        err = 3;
+        return err;
+    }
+
+    WaitForInputIdle(pi.hProcess, TIMEOUT);
+
+    return err;
+}
+
+template<typename T>
+auto static DdeExecute(const T* server, const T* topic, const T* command) -> int
+{
+    auto dde = DdeClient<T>();
+    return dde.execute(server, topic, command);
+}
+
+#if defined (_MSC_VER)
+auto wmain(int argc, wchar_t** argv) -> int
+#else
+auto main() -> int
+#endif
+{
+    auto err = 0;
+#if !defined (_MSC_VER)
+    auto argc = 0;
+    auto argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+#endif
+
+    if (argc != 4) {
+        fwprintf(stderr, L"usage: %ls pdffile texfile line\n", argv[0]);
+        err = 2;
+        return err;
+    }
+
+    auto const pdf = argv[1];
+    auto const tex = argv[2];
+    auto const line = argv[3];
+
+    if (wcslen(pdf) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", pdf);
+        err = -4;
+        return err;
+    }
+
+    if (wcslen(tex) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", tex);
+        err = -3;
+        return err;
+    }
+
+    if (wcslen(line) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", line);
+        err = -2;
+        return err;
+    }
+
+    if (wcstol(line, nullptr, 0) == 0 || errno == ERANGE) {
+        fwprintf(stderr, L"%ls can't convert to the line number.\n", line);
+        err = -1;
+        return err;
+    }
+
+    if ((err = RunSumatraPDF(pdf)) != 0) {
+        return err;
+    }
+
+    auto active = 0;
+    wchar_t forwardSearch[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wsprintfW(forwardSearch, L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
+      L"[ForwardSearch(\"", pdf, L"\",\"", tex, L"\",", line, L",0,0,", active, L")]");
+
+    if ((err = DdeExecute(L"SUMATRA", L"control", forwardSearch)) != 0) {
+        return err;
+    }
+
+    return err;
+}
+```
+
+***
+
 #### C, C++ 版 {#qf7ea8bf}
 
 C, C++ 版も作成してみました．<br>
@@ -828,14 +1162,14 @@ C の場合
 
 ```
 $ cd /c/w32tex/bin
-$ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -lshlwapi
+$ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 C++ の場合
 
 ```
 $ cd /c/w32tex/bin
-$ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -lshlwapi
+$ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -844,14 +1178,14 @@ C の場合
 
 ```
 >cd /d c:\w32tex\bin
->cl fwdsumatrapdf.c user32.lib shlwapi.lib
+>cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
 ```
 
 C++ の場合
 
 ```
 >cd /d c:\w32tex\bin
->cl fwdsumatrapdf.cpp user32.lib shlwapi.lib
+>cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 ```
 
 ***
@@ -862,17 +1196,20 @@ C++ の場合
 ***
 
 ```
-/* vim: ts=2 sw=2 expandtab:
+/* vim: ts=4 sw=4 expandtab:
  *
  * MinGW
- * $ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -lshlwapi
- * $ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -lshlwapi
+ * $ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
- * >cl fwdsumatrapdf.c user32.lib shlwapi.lib
- * >cl fwdsumatrapdf.cpp user32.lib shlwapi.lib
+ * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
+ * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
  */
 
+#include <windows.h>
+#include <shlwapi.h>
+#include <ddeml.h>
 #if defined (__cplusplus)
 #include <cstdio>
 #include <cstring>
@@ -889,9 +1226,6 @@ using namespace std;
 #include <errno.h>
 #include <locale.h>
 #endif
-#include <windows.h>
-#include <shlwapi.h>
-#include <ddeml.h>
 
 HDDEDATA CALLBACK SumatraDdeCallback(UINT, UINT, HCONV, HSZ, HSZ, HDDEDATA, DWORD, DWORD);
 BOOL CALLBACK GetSumatraHWND(HWND, LPARAM);
@@ -903,323 +1237,288 @@ static int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
 static BOOL existSumatraHWND = FALSE;
 
 HDDEDATA CALLBACK
-SumatraDdeCallback(
-    UINT uType,
-    UINT uFmt,
-    HCONV hconv,
-    HSZ hsz1,
-    HSZ hsz2,
-    HDDEDATA hdata,
-    DWORD dwData1,
-    DWORD dwData2)
+SumatraDdeCallback(UINT uType,
+                   UINT uFmt,
+                   HCONV hconv,
+                   HSZ hsz1,
+                   HSZ hsz2,
+                   HDDEDATA hdata,
+                   DWORD dwData1,
+                   DWORD dwData2)
 {
   return NULL;
 }
 
 BOOL CALLBACK
-GetSumatraHWND(
-    HWND hwnd,
-    LPARAM lParam)
+GetSumatraHWND(HWND hwnd,
+               LPARAM lParam)
 {
-  wchar_t* title = NULL;
-  wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wchar_t* title = NULL;
+    wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
 
-  UNREFERENCED_PARAMETER(lParam);
+    UNREFERENCED_PARAMETER(lParam);
 
-  GetWindowTextW(hwnd, windowText, sizeof(windowText));
-  if (windowText[0] == L'\0') {
-    goto next;
-  }
+    GetWindowTextW(hwnd, windowText, sizeof(windowText));
+    if (windowText[0] == L'\0') {
+        goto next;
+    }
 
-  if ((title = wcsrchr(windowText, L'S')) == NULL) {
-    goto next;
-  }
+    if ((title = wcsrchr(windowText, L'S')) == NULL) {
+        goto next;
+    }
 
-  if (StrCmpW(title, L"SumatraPDF") != 0) {
-    goto next;
-  }
+    if (StrCmpW(title, L"SumatraPDF") != 0) {
+        goto next;
+    }
 
-  existSumatraHWND = TRUE;
+    existSumatraHWND = TRUE;
 
 next:
-  return TRUE;
+    return TRUE;
 }
 
 static int
-RunSumatraPDF(
-    const wchar_t* pdf)
+RunSumatraPDF(const wchar_t* pdf)
 {
-  int err = 0;
-  const wchar_t* sumatrapdfWin32 = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
-  const wchar_t* sumatrapdfWin64 = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
-  wchar_t* sumatrapdf = (wchar_t*)L"SumatraPDF.exe";
-  const wchar_t* reuseInstance = L"-reuse-instance";
-  wchar_t sumatrapdfCommandLine[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
-  static HWND hList;
-  STARTUPINFOW si;
-  PROCESS_INFORMATION pi;
+    int err = 0;
+    HKEY subKey = NULL;
+    const wchar_t* keyPath =L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
+    DWORD dwType = 0;
+    DWORD sz = 0;
+    wchar_t sumatrapdfRegistry[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    const wchar_t* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+    const wchar_t* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
+    wchar_t* sumatrapdf = (wchar_t*)L"SumatraPDF.exe";
+    const wchar_t* reuseInstance = L"-reuse-instance";
+    wchar_t sumatrapdfCommandLine[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    static HWND hList;
+    STARTUPINFOW si;
+    PROCESS_INFORMATION pi;
 
-  memset(&si, 0, sizeof(si));
-  memset(&pi, 0, sizeof(pi));
+    if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath, 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
+        err = 1;
+    }
 
-  if (PathFileExistsW(sumatrapdfWin32)) {
-    sumatrapdf = (wchar_t*)sumatrapdfWin32;
-  } else if (PathFileExistsW(sumatrapdfWin64)) {
-    sumatrapdf = (wchar_t*)sumatrapdfWin64;
-  } else {
-    sumatrapdf = (wchar_t*)L"SumatraPDF.exe";
-  }
+    if (RegQueryValueExW(subKey, NULL, NULL, &dwType, NULL, &sz) != ERROR_SUCCESS) {
+        err = 1;
+    }
 
-  wsprintfW(
-      sumatrapdfCommandLine,
-      L"\"%ls\" %ls \"%ls\"",
-      sumatrapdf, reuseInstance, pdf);
+    if (RegQueryValueExW(subKey, NULL, NULL, &dwType, (BYTE*)sumatrapdfRegistry, &sz) != ERROR_SUCCESS) {
+        err = 1;
+    }
 
-  EnumWindows(GetSumatraHWND, (LPARAM)hList);
+    if (subKey != NULL) {
+        RegCloseKey(subKey);
+        subKey = NULL;
+    }
 
-  if (existSumatraHWND == TRUE) {
-    goto exn;
-  }
+    if (err == 0) {
+        if (wcslen(sumatrapdfRegistry) != 0) {
+            if (PathFileExistsW(sumatrapdfRegistry)) {
+                sumatrapdf = sumatrapdfRegistry;
+            }
+        }
+    } else {
+        err = 0;
+        if (PathFileExistsW(sumatrapdfWin32Default)) {
+            sumatrapdf = (wchar_t*)sumatrapdfWin32Default;
+        } else if (PathFileExistsW(sumatrapdfWin64Default)) {
+            sumatrapdf = (wchar_t*)sumatrapdfWin64Default;
+        } else {
+            sumatrapdf = (wchar_t*)L"SumatraPDF.exe";
+        }
+    }
 
-  if (CreateProcessW(
-        NULL,
-        sumatrapdfCommandLine,
-        NULL,
-        NULL,
-        FALSE,
-        0,
-        NULL,
-        NULL,
-        &si,
-        &pi) == 0) {
-    err = 3;
-    goto exn;
-  }
+    wsprintfW(sumatrapdfCommandLine, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
 
-  WaitForInputIdle(
-      pi.hProcess,
-      TIMEOUT);
+    EnumWindows(GetSumatraHWND, (LPARAM)hList);
+
+    if (existSumatraHWND == TRUE) {
+        goto exn;
+    }
+
+    memset(&si, 0, sizeof(si));
+    memset(&pi, 0, sizeof(pi));
+
+    if (CreateProcessW(NULL, sumatrapdfCommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi) == 0) {
+        err = 3;
+        goto exn;
+    }
+
+    WaitForInputIdle(pi.hProcess, TIMEOUT);
 
 exn:
-  return err;
+    return err;
 }
 
 static int
-DdeExecute(
-    const wchar_t* server,
-    const wchar_t* topic,
-    const wchar_t* command)
+DdeExecute(const wchar_t* server,
+           const wchar_t* topic,
+           const wchar_t* command)
 {
-  int err = 0;
-  HCONV hConvClient = NULL;
-  DWORD idInstance = 0;
-  HSZ hszServer = NULL;
-  HSZ hszTopic = NULL;
-  HDDEDATA hDdeData = NULL;
-  HDDEDATA hDdeTransactionData = NULL;
+    int err = 0;
+    HCONV hConvClient = NULL;
+    DWORD idInstance = 0;
+    HSZ hszServer = NULL;
+    HSZ hszTopic = NULL;
+    HDDEDATA hDdeData = NULL;
+    HDDEDATA hDdeTransactionData = NULL;
 
-  if (DdeInitializeW(
-        &idInstance,
-        SumatraDdeCallback,
-        APPCMD_CLIENTONLY,
-        0) != DMLERR_NO_ERROR) {
-    fputws(L"DdeInitializeW error\n", stderr);
-    err = 4;
-    goto exn;
-  }
+    if (DdeInitializeW(&idInstance, (PFNCALLBACK)SumatraDdeCallback, APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
+        fputws(L"DdeInitializeW error\n", stderr);
+        err = 4;
+        goto exn;
+    }
 
-  if ((hszServer = DdeCreateStringHandleW(
-          idInstance,
-          server,
-          CP_WINUNICODE)) == NULL) {
-    fputws(L"DdeCreateStringHandleW error\n", stderr);
-    err = (int)DdeGetLastError(idInstance);
-    goto exn;
-  }
+    if ((hszServer = DdeCreateStringHandleW(idInstance, server, CP_WINUNICODE)) == NULL) {
+        fputws(L"DdeCreateStringHandleW error\n", stderr);
+        err = (int)DdeGetLastError(idInstance);
+        goto exn;
+    }
 
-  if ((hszTopic = DdeCreateStringHandleW(
-          idInstance,
-          topic,
-          CP_WINUNICODE)) == NULL) {
-    fputws(L"DdeCreateStringHandleW error\n", stderr);
-    err = (int)DdeGetLastError(idInstance);
-    goto exn;
-  }
+    if ((hszTopic = DdeCreateStringHandleW(idInstance, topic, CP_WINUNICODE)) == NULL) {
+        fputws(L"DdeCreateStringHandleW error\n", stderr);
+        err = (int)DdeGetLastError(idInstance);
+        goto exn;
+    }
 
-  if ((hConvClient = DdeConnect(
-          idInstance,
-          hszServer,
-          hszTopic,
-          NULL)) == NULL) {
-    fputws(L"DdeConnect error\n", stderr);
-    err = (int)DdeGetLastError(idInstance);
-    goto exn;
-  }
+    if ((hConvClient = DdeConnect(idInstance, hszServer, hszTopic, NULL)) == NULL) {
+        fputws(L"DdeConnect error\n", stderr);
+        err = (int)DdeGetLastError(idInstance);
+        goto exn;
+    }
 
-  if ((hDdeData = DdeCreateDataHandle(
-          idInstance,
-          (BYTE*)command,
-          (DWORD)(wcslen(command) + 1)*sizeof(wchar_t),
-          0,
-          NULL,
-          CF_UNICODETEXT,
-          0)) == NULL) {
-    fputws(L"DdeCreateDataHandle error\n", stderr);
-    err = (int)DdeGetLastError(idInstance);
-    goto exn;
-  }
+    if ((hDdeData = DdeCreateDataHandle(idInstance, (BYTE*)((wchar_t*)command), (DWORD)((wcslen(command) + 1)*sizeof(wchar_t)), 0, NULL, CF_UNICODETEXT, 0)) == NULL) {
+        fputws(L"DdeCreateDataHandle error\n", stderr);
+        err = (int)DdeGetLastError(idInstance);
+        goto exn;
+    }
 
-  if ((hDdeTransactionData = DdeClientTransaction(
-          (BYTE*)hDdeData,
-          (DWORD)-1,
-          hConvClient,
-          NULL,
-          0,
-          XTYP_EXECUTE,
-          TIMEOUT,
-          NULL)) == NULL) {
-    fputws(L"DdeClientTransaction error\n", stderr);
-    err = (int)DdeGetLastError(idInstance);
-    goto exn;
-  }
+    if ((hDdeTransactionData = DdeClientTransaction((BYTE*)hDdeData, (DWORD)-1, hConvClient, NULL, 0, XTYP_EXECUTE, TIMEOUT, NULL)) == NULL) {
+        fputws(L"DdeClientTransaction error\n", stderr);
+        err = (int)DdeGetLastError(idInstance);
+        goto exn;
+    }
 
 exn:
-  if (hDdeTransactionData) {
-    if (DdeFreeDataHandle(
-          hDdeTransactionData) == FALSE) {
-      err = (int)DdeGetLastError(idInstance);
-      if (err) {
-        fputws(L"DdeFreeDataHandle error\n", stderr);
-      }
+    if (hDdeTransactionData) {
+        if (DdeFreeDataHandle(hDdeTransactionData) == FALSE) {
+            err = (int)DdeGetLastError(idInstance);
+            if (err) {
+                fputws(L"DdeFreeDataHandle error\n", stderr);
+            }
+        }
     }
-  }
 
-  if (hDdeData) {
-    if (DdeFreeDataHandle(
-          hDdeData) == FALSE) {
-      err = (int)DdeGetLastError(idInstance);
-      if (err) {
-        fputws(L"DdeFreeDataHandle error\n", stderr);
-      }
+    if (hDdeData) {
+        if (DdeFreeDataHandle(hDdeData) == FALSE) {
+            err = (int)DdeGetLastError(idInstance);
+            if (err) {
+                fputws(L"DdeFreeDataHandle error\n", stderr);
+            }
+        }
     }
-  }
 
-  if (hszServer) {
-    if (DdeFreeStringHandle(
-          idInstance,
-          hszServer) == FALSE) {
-      fputws(L"DdeFreeStringHandle error\n", stderr);
-      err = (int)DdeGetLastError(idInstance);
+    if (hszServer) {
+        if (DdeFreeStringHandle(idInstance, hszServer) == FALSE) {
+            fputws(L"DdeFreeStringHandle error\n", stderr);
+            err = (int)DdeGetLastError(idInstance);
+        }
     }
-  }
 
-  if (hszTopic) {
-    if (DdeFreeStringHandle(
-          idInstance,
-          hszTopic) == FALSE) {
-      fputws(L"DdeFreeStringHandle error\n", stderr);
-      err = (int)DdeGetLastError(idInstance);
+    if (hszTopic) {
+        if (DdeFreeStringHandle(idInstance, hszTopic) == FALSE) {
+            fputws(L"DdeFreeStringHandle error\n", stderr);
+            err = (int)DdeGetLastError(idInstance);
+        }
     }
-  }
 
-  if (hConvClient) {
-    if (DdeDisconnect(hConvClient) == FALSE) {
-      fputws(L"DdeDisconnect error\n", stderr);
-      err = (int)DdeGetLastError(idInstance);
+    if (hConvClient) {
+        if (DdeDisconnect(hConvClient) == FALSE) {
+            fputws(L"DdeDisconnect error\n", stderr);
+            err = (int)DdeGetLastError(idInstance);
+        }
     }
-  }
 
-  if (idInstance) {
-    if (DdeUninitialize(idInstance) == FALSE) {
-      fputws(L"DdeUninitialize error\n", stderr);
-      err = 5;
+    if (idInstance) {
+        if (DdeUninitialize(idInstance) == FALSE) {
+            fputws(L"DdeUninitialize error\n", stderr);
+            err = 5;
+        }
     }
-  }
 
-  return err;
+    return err;
 }
 
 #if defined (_MSC_VER)
 int
-wmain(
-    int argc,
-    wchar_t** argv)
+wmain(int argc,
+      wchar_t** argv)
 #else
-int APIENTRY
-WinMain(
-    HINSTANCE hInstance,
-    HINSTANCE hPrevInstance,
-    LPSTR lpCmdLine,
-    int nCmdShow)
+int
+main(void)
 #endif
 {
-  int err = 0;
-  wchar_t* pdf = NULL;
-  wchar_t* tex = NULL;
-  wchar_t* line = NULL;
-  int active = 0;
-  wchar_t forwardSearch[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    int err = 0;
+    wchar_t* pdf = NULL;
+    wchar_t* tex = NULL;
+    wchar_t* line = NULL;
+    int active = 0;
+    wchar_t forwardSearch[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
 #if !defined (_MSC_VER)
-  wchar_t** argv;
-  int argc;
+    wchar_t** argv;
+    int argc;
 
-  UNREFERENCED_PARAMETER(hInstance);
-  UNREFERENCED_PARAMETER(hPrevInstance);
-  UNREFERENCED_PARAMETER(lpCmdLine);
-  UNREFERENCED_PARAMETER(nCmdShow);
-
-  argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+    argv = CommandLineToArgvW(GetCommandLineW(), &argc);
 #endif
 
-  if (argc != 4) {
-    fwprintf(stderr, L"usage: %ls pdffile texfile line\n", argv[0]);
-    err = 2;
-    goto exn;
-  }
+    if (argc != 4) {
+        fwprintf(stderr, L"usage: %ls pdffile texfile line\n", argv[0]);
+        err = 2;
+        goto exn;
+    }
 
-  pdf = argv[1];
-  tex = argv[2];
-  line = argv[3];
+    pdf = argv[1];
+    tex = argv[2];
+    line = argv[3];
 
-  if (wcslen(pdf) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
-    fwprintf(stderr, L"%ls is too long.\n", pdf);
-    err = -4;
-    goto exn;
-  }
+    if (wcslen(pdf) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", pdf);
+        err = -4;
+        goto exn;
+    }
 
-  if (wcslen(tex) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
-    fwprintf(stderr, L"%ls is too long.\n", tex);
-    err = -3;
-    goto exn;
-  }
+    if (wcslen(tex) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", tex);
+        err = -3;
+        goto exn;
+    }
 
-  if (wcslen(line) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
-    fwprintf(stderr, L"%ls is too long.\n", line);
-    err = -2;
-    goto exn;
-  }
+    if (wcslen(line) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+        fwprintf(stderr, L"%ls is too long.\n", line);
+        err = -2;
+        goto exn;
+    }
 
-  if (wcstol(line, NULL, 0) == 0 || errno == ERANGE) {
-    fwprintf(stderr, L"%ls can't convert to the line number.\n", line);
-    err = -1;
-    goto exn;
-  }
+    if (wcstol(line, NULL, 0) == 0 || errno == ERANGE) {
+        fwprintf(stderr, L"%ls can't convert to the line number.\n", line);
+        err = -1;
+        goto exn;
+    }
 
-  if ((err = RunSumatraPDF(pdf)) != 0) {
-    goto exn;
-  }
+    if ((err = RunSumatraPDF(pdf)) != 0) {
+        goto exn;
+    }
 
-  wsprintfW(
-      forwardSearch,
-      L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
+    wsprintfW(forwardSearch, L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
       L"[ForwardSearch(\"", pdf, L"\",\"", tex, L"\",", line, L",0,0,", active, L")]");
 
-  if ((err = DdeExecute(L"SUMATRA", L"control", forwardSearch)) != 0) {
-    goto exn;
-  }
+    if ((err = DdeExecute(L"SUMATRA", L"control", forwardSearch)) != 0) {
+        goto exn;
+    }
 
 exn:
-  return err;
+    return err;
 }
 ```
 
