@@ -30,7 +30,7 @@ Windows, Linux
 
 ### リリース情報 {#m146a8fe}
 
-2012-10-20 Gummi 0.6.5<br>
+[ニュース](http://dev.midnightcoding.org/projects/gummi/news) を参照．<br>
 
 ### ChangeLog {#r24dbedd}
 
