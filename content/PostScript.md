@@ -34,6 +34,12 @@ CD-ROM で附いています。
 
 ### EPS 作成 {#lceaa8b7}
 
+- [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>)
+    (EMF/WMF → EPS)
+
+- [emf2eps](http://www29.atwiki.jp/t-sadakata/)
+    (貞方 毅 (Tsuyoshi Sadakata) さん)
+
 - [寺嶋さん](http://hp.vector.co.jp/authors/VA023018/)の
     EPS-draw，EPS-conv，EPS-merg などは便利そうです
 
@@ -47,12 +53,6 @@ CD-ROM で附いています。
 
 - [EpsWriter](http://torasenriwohashiru.seesaa.net/) (Tanaka さん)
     (PowerPoint の表示中のスライドを EPS ファイルに出力するアドイン)
-
-- [Metafile to EPS Converter](http://wiki.lyx.org/Windows/MetafileToEPSConverter)
-    (EMF/WMF → EPS)
-
-- [emf2eps](http://www29.atwiki.jp/t-sadakata/)
-    (貞方 毅 (Tsuyoshi Sadakata) さん)
     (EMF → EPS)
 
 - [EMF2EPS](http://www.vector.co.jp/soft/win95/art/se170946.html)
