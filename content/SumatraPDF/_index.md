@@ -855,6 +855,9 @@ Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でも
 #include <windows.h>
 #include <shlwapi.h>
 #include <ddeml.h>
+#if !defined (_MSC_VER)
+#include <shellapi.h>
+#endif
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
@@ -1217,6 +1220,9 @@ C++ の場合
 #include <windows.h>
 #include <shlwapi.h>
 #include <ddeml.h>
+#if !defined (_MSC_VER)
+#include <shellapi.h>
+#endif
 #if defined (__cplusplus)
 #include <cstdio>
 #include <cstring>
