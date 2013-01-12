@@ -776,7 +776,7 @@ Namespace SumatraPDFClient
                 If hszTopic = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateStringHandleW error")
                 hConvClient = Ddeml.Ddeml.DdeConnect(idInstance, hszServer, hszTopic, IntPtr.Zero)
                 If hConvClient = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeConnect error")
-                hDdeData = Ddeml.Ddeml.DdeCreateDataHandle(idInstance, executeCommand, CType((executeCommand.Length + 1)*2, UInteger), 0UI, IntPtr.Zero, Ddeml.Ddeml.CF_UNICODETEXT, 0UI)
+                hDdeData = Ddeml.Ddeml.DdeCreateDataHandle(idInstance, executeCommand, CType((executeCommand.Length + 1)*Len(Char.MinValue), UInteger), 0UI, IntPtr.Zero, Ddeml.Ddeml.CF_UNICODETEXT, 0UI)
                 If hDdeData = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeCreateDataHandle error")
                 hDdeTransactionData = Ddeml.Ddeml.DdeClientTransaction(hDdeData, UInteger.MaxValue, hConvClient, IntPtr.Zero, 0UI, Ddeml.Ddeml.XTYP_EXECUTE, CType(timeout, UInteger), IntPtr.Zero)
                 If hDdeTransactionData = IntPtr.Zero Then Throw New Ddeml.Ddeml.DdemlError("DdeClientTransaction error")
@@ -871,23 +871,19 @@ auto static const FWDSUMATRAPDF_BUF_SIZE = 1024;
 auto static const TIMEOUT = 10000;
 auto static existSumatraHWND = FALSE;
 
-auto CALLBACK SumatraDdeCallback(UINT uType, UINT uFmt, HCONV hconv, HSZ hsz1, HSZ hsz2, HDDEDATA hdata, DWORD dwData1, DWORD dwData2) -> HDDEDATA
-{
-    return nullptr;
-}
+auto inline SumatraDdeCallback() -> HDDEDATA (CALLBACK *)(UINT uType, UINT uFmt, HCONV hconv, HSZ hsz1, HSZ hsz2, HDDEDATA hdata, DWORD dwData1, DWORD dwData2) { return nullptr; };
 
 auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
 {
-    wchar_t* title = nullptr;
-    wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
-
     UNREFERENCED_PARAMETER(lParam);
 
+    wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
     GetWindowTextW(hwnd, windowText, sizeof(windowText));
     if (windowText[0] == L'\0') {
         return TRUE;
     }
 
+    wchar_t* title = nullptr;
     if ((title = wcsrchr(windowText, L'S')) == nullptr) {
         return TRUE;
     }
@@ -907,20 +903,20 @@ namespace sumatrapdfclient
     class DdeClient
     {
     private:
-        HCONV hConvClient;
         DWORD idInstance;
         HSZ hszServer;
         HSZ hszTopic;
+        HCONV hConvClient;
         HDDEDATA hDdeData;
         HDDEDATA hDdeTransactionData;
 
     public:
         explicit DdeClient()
         {
-            this->hConvClient = nullptr;
             this->idInstance = 0;
             this->hszServer = nullptr;
             this->hszTopic = nullptr;
+            this->hConvClient = nullptr;
             this->hDdeData = nullptr;
             this->hDdeTransactionData = nullptr;
         }
@@ -971,7 +967,7 @@ namespace sumatrapdfclient
 
         auto execute(const T* server, const T* topic, const T* command) -> int
         {
-            if (DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
+            if (DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
                 fputws(L"DdeInitializeW error\n", stderr);
                 return 4;
             }
@@ -1069,7 +1065,7 @@ auto static RunSumatraPDF(const T* pdf) -> int
     wsprintfW(sumatrapdfCommandLine, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
 
     static HWND hList;
-    EnumWindows(GetSumatraHWND, (LPARAM)hList);
+    EnumWindows(reinterpret_cast<WNDENUMPROC>(GetSumatraHWND), reinterpret_cast<LPARAM>(hList));
 
     if (existSumatraHWND == TRUE) {
         return err;
@@ -1352,7 +1348,7 @@ RunSumatraPDF(const wchar_t* pdf)
 
     wsprintfW(sumatrapdfCommandLine, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
 
-    EnumWindows(GetSumatraHWND, (LPARAM)hList);
+    EnumWindows((WNDENUMPROC)GetSumatraHWND, (LPARAM)hList);
 
     if (existSumatraHWND == TRUE) {
         goto exn;
@@ -1378,10 +1374,10 @@ DdeExecute(const wchar_t* server,
            const wchar_t* command)
 {
     int err = 0;
-    HCONV hConvClient = NULL;
     DWORD idInstance = 0;
     HSZ hszServer = NULL;
     HSZ hszTopic = NULL;
+    HCONV hConvClient = NULL;
     HDDEDATA hDdeData = NULL;
     HDDEDATA hDdeTransactionData = NULL;
 
