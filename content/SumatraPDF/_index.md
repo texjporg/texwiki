@@ -826,7 +826,7 @@ C++11 版も作成してみました．<br>
 
 ```
 $ cd /c/w32tex/bin
-$ g++ -std=c++11 -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -846,7 +846,7 @@ Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でも
 /* vim: ts=4 sw=4 expandtab:
  *
  * MinGW
- * $ g++ -std=c++11 -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
@@ -1133,9 +1133,9 @@ auto main() -> int
     auto active = 0;
     basic_ostringstream<wchar_t> woss;
     woss << L"[ForwardSearch(\"" << pdf << L"\",\"" << tex << L"\"," << line << L",0,0," << active << L")]";
-    basic_string<wchar_t> forwardSearch(woss.str());
-    basic_string<wchar_t> server(L"SUMATRA");
-    basic_string<wchar_t> topic(L"control");
+    const basic_string<wchar_t> forwardSearch(woss.str());
+    const basic_string<wchar_t> server(L"SUMATRA");
+    const basic_string<wchar_t> topic(L"control");
 
     if ((err = DdeExecute(server, topic, forwardSearch)) != 0) {
         return err;
@@ -1156,14 +1156,14 @@ C の場合
 
 ```
 $ cd /c/w32tex/bin
-$ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ gcc -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 C++ の場合
 
 ```
 $ cd /c/w32tex/bin
-$ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ g++ -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -1193,8 +1193,8 @@ C++ の場合
 /* vim: ts=4 sw=4 expandtab:
  *
  * MinGW
- * $ gcc -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
- * $ g++ -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ gcc -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ g++ -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
