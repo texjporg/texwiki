@@ -1077,11 +1077,11 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
     memset(&pi, 0, sizeof(pi));
 
     const basic_string<T> reuseInstance(L"-reuse-instance");
-    basic_ostringstream<wchar_t> woss;
-    woss << L"\"" << sumatrapdf << L"\" " << reuseInstance << " \"" << pdf << "\"";
-    basic_string<T> sumatrapdfCommandLine(woss.str());
+    basic_ostringstream<T> oss;
+    oss << L"\"" << sumatrapdf << L"\" " << reuseInstance << L" \"" << pdf << L"\"";
+    basic_string<T> sumatrapdfCommandLine(oss.str());
 
-    if (CreateProcessW(nullptr, const_cast<wchar_t*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
+    if (CreateProcessW(nullptr, const_cast<T*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
         err = 3;
         return err;
     }
@@ -1156,14 +1156,14 @@ C の場合
 
 ```
 $ cd /c/w32tex/bin
-$ gcc -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 C++ の場合
 
 ```
 $ cd /c/w32tex/bin
-$ g++ -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -1193,8 +1193,8 @@ C++ の場合
 /* vim: ts=4 sw=4 expandtab:
  *
  * MinGW
- * $ gcc -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
- * $ g++ -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
@@ -1255,22 +1255,21 @@ GetSumatraHWND(HWND hwnd,
 
     UNREFERENCED_PARAMETER(lParam);
 
-    GetWindowTextW(hwnd, windowText, sizeof(windowText));
+    GetWindowTextW(hwnd, windowText, FWDSUMATRAPDF_BUF_SIZE);
     if (windowText[0] == L'\0') {
-        goto next;
+        return TRUE;
     }
 
     if ((title = wcsrchr(windowText, L'S')) == NULL) {
-        goto next;
+        return TRUE;
     }
 
     if (StrCmpW(title, L"SumatraPDF") != 0) {
-        goto next;
+        return TRUE;
     }
 
     existSumatraHWND = TRUE;
 
-next:
     return TRUE;
 }
 
@@ -1337,7 +1336,7 @@ RunSumatraPDF(const wchar_t* pdf)
     EnumWindows((WNDENUMPROC)GetSumatraHWND, (LPARAM)hList);
 
     if (existSumatraHWND == TRUE) {
-        goto exn;
+        return err;
     }
 
     memset(&si, 0, sizeof(si));
@@ -1347,12 +1346,11 @@ RunSumatraPDF(const wchar_t* pdf)
 
     if (CreateProcessW(NULL, sumatrapdfCommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi) == 0) {
         err = 3;
-        goto exn;
+        return err;
     }
 
     WaitForInputIdle(pi.hProcess, TIMEOUT);
 
-exn:
     return err;
 }
 
@@ -1471,16 +1469,14 @@ main(void)
     int active = 0;
     wchar_t forwardSearch[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
 #if !defined (_MSC_VER)
-    wchar_t** argv;
-    int argc;
-
-    argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+    int argc = 0;
+    wchar_t** argv = CommandLineToArgvW(GetCommandLineW(), &argc);
 #endif
 
     if (argc != 4) {
         fwprintf(stderr, L"usage: %ls pdffile texfile line\n", argv[0]);
         err = 2;
-        goto exn;
+        return err;
     }
 
     pdf = argv[1];
@@ -1490,39 +1486,38 @@ main(void)
     if (wcslen(pdf) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", pdf);
         err = -4;
-        goto exn;
+        return err;
     }
 
     if (wcslen(tex) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", tex);
         err = -3;
-        goto exn;
+        return err;
     }
 
     if (wcslen(line) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", line);
         err = -2;
-        goto exn;
+        return err;
     }
 
     if (wcstol(line, NULL, 0) == 0 || errno == ERANGE) {
         fwprintf(stderr, L"%ls can't convert to the line number.\n", line);
         err = -1;
-        goto exn;
+        return err;
     }
 
     if ((err = RunSumatraPDF(pdf)) != 0) {
-        goto exn;
+        return err;
     }
 
     wsprintfW(forwardSearch, L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
       L"[ForwardSearch(\"", pdf, L"\",\"", tex, L"\",", line, L",0,0,", active, L")]");
 
     if ((err = DdeExecute(L"SUMATRA", L"control", forwardSearch)) != 0) {
-        goto exn;
+        return err;
     }
 
-exn:
     return err;
 }
 ```
