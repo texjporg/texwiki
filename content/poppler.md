@@ -398,9 +398,9 @@ $ popd
 <!--  -->
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.gz
-$ tar xvf fontconfig-2.10.2.tar.gz
-$ pushd fontconfig-2.10.2
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.bz2
+$ tar xvf fontconfig-2.10.91.tar.bz2
+$ pushd fontconfig-2.10.91
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
