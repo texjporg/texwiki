@@ -1013,6 +1013,13 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
 {
     auto err = 0;
 
+    static HWND hList;
+    EnumWindows(reinterpret_cast<WNDENUMPROC>(GetSumatraHWND), reinterpret_cast<LPARAM>(hList));
+
+    if (existSumatraHWND == TRUE) {
+        return err;
+    }
+
     HKEY subKey = nullptr;
     const basic_string<T> keyPath(L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe");
     if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath.c_str(), 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
@@ -1061,13 +1068,6 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
         } else {
             sumatrapdf = L"SumatraPDF.exe";
         }
-    }
-
-    static HWND hList;
-    EnumWindows(reinterpret_cast<WNDENUMPROC>(GetSumatraHWND), reinterpret_cast<LPARAM>(hList));
-
-    if (existSumatraHWND == TRUE) {
-        return err;
     }
 
     STARTUPINFOW si;
@@ -1224,10 +1224,18 @@ using namespace std;
 #include <locale.h>
 #endif
 
+#if defined (__cplusplus)
+#define restrict
+#elif defined (_MSC_VER) && (_MSC_VER >= 1400)
+#define restrict __restrict
+#elif defined (__STDC_VERSION__) && (__STDC_VERSION__ < 199901L)
+#define restrict
+#endif
+
 HDDEDATA CALLBACK SumatraDdeCallback(UINT, UINT, HCONV, HSZ, HSZ, HDDEDATA, DWORD, DWORD);
 BOOL CALLBACK GetSumatraHWND(HWND, LPARAM);
-static int RunSumatraPDF(const wchar_t*);
-static int DdeExecute(const wchar_t*, const wchar_t*, const wchar_t*);
+static int RunSumatraPDF(const wchar_t* restrict);
+static int DdeExecute(const wchar_t* restrict, const wchar_t* restrict, const wchar_t* restrict);
 
 #define FWDSUMATRAPDF_BUF_SIZE 1024
 #define TIMEOUT 10000
@@ -1251,7 +1259,7 @@ GetSumatraHWND(HWND hwnd,
                LPARAM lParam)
 {
     wchar_t* title = NULL;
-    wchar_t windowText[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wchar_t windowText[FWDSUMATRAPDF_BUF_SIZE] = L"";
 
     UNREFERENCED_PARAMETER(lParam);
 
@@ -1274,22 +1282,28 @@ GetSumatraHWND(HWND hwnd,
 }
 
 static int
-RunSumatraPDF(const wchar_t* pdf)
+RunSumatraPDF(const wchar_t* restrict pdf)
 {
     int err = 0;
     HKEY subKey = NULL;
     const wchar_t* keyPath = L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
     DWORD dwType = 0;
     DWORD sz = 0;
-    wchar_t sumatrapdfRegistry[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wchar_t sumatrapdfRegistry[FWDSUMATRAPDF_BUF_SIZE] = L"";
     const wchar_t* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
     const wchar_t* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
     wchar_t* sumatrapdf = (wchar_t*)L"SumatraPDF.exe";
     const wchar_t* reuseInstance = L"-reuse-instance";
-    wchar_t sumatrapdfCommandLine[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wchar_t sumatrapdfCommandLine[FWDSUMATRAPDF_BUF_SIZE] = L"";
     static HWND hList;
     STARTUPINFOW si;
     PROCESS_INFORMATION pi;
+
+    EnumWindows((WNDENUMPROC)GetSumatraHWND, (LPARAM)hList);
+
+    if (existSumatraHWND == TRUE) {
+        return err;
+    }
 
     if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath, 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
         err = 1;
@@ -1333,12 +1347,6 @@ RunSumatraPDF(const wchar_t* pdf)
         }
     }
 
-    EnumWindows((WNDENUMPROC)GetSumatraHWND, (LPARAM)hList);
-
-    if (existSumatraHWND == TRUE) {
-        return err;
-    }
-
     memset(&si, 0, sizeof(si));
     memset(&pi, 0, sizeof(pi));
 
@@ -1355,9 +1363,9 @@ RunSumatraPDF(const wchar_t* pdf)
 }
 
 static int
-DdeExecute(const wchar_t* server,
-           const wchar_t* topic,
-           const wchar_t* command)
+DdeExecute(const wchar_t* restrict server,
+           const wchar_t* restrict topic,
+           const wchar_t* restrict command)
 {
     int err = 0;
     DWORD idInstance = 0;
@@ -1467,7 +1475,7 @@ main(void)
     wchar_t* tex = NULL;
     wchar_t* line = NULL;
     int active = 0;
-    wchar_t forwardSearch[sizeof(wchar_t)*FWDSUMATRAPDF_BUF_SIZE] = L"";
+    wchar_t forwardSearch[FWDSUMATRAPDF_BUF_SIZE] = L"";
 #if !defined (_MSC_VER)
     int argc = 0;
     wchar_t** argv = CommandLineToArgvW(GetCommandLineW(), &argc);
