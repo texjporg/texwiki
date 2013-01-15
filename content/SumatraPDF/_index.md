@@ -891,7 +891,7 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
         return TRUE;
     }
 
-    if (StrCmpW(title, L"SumatraPDF") != 0) {
+    if (wcscmp(title, L"SumatraPDF") != 0) {
         return TRUE;
     }
 
@@ -1280,7 +1280,7 @@ GetSumatraHWND(HWND hwnd,
         return TRUE;
     }
 
-    if (StrCmpW(title, L"SumatraPDF") != 0) {
+    if (wcscmp(title, L"SumatraPDF") != 0) {
         return TRUE;
     }
 
