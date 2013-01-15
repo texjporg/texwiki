@@ -1232,6 +1232,14 @@ using namespace std;
 #define restrict
 #endif
 
+#if defined (_MSC_VER)
+#if (_MSC_VER >= 1400)
+#define snwprintf(buffer, count, format, ...) _snwprintf_s(buffer, count, _TRUNCATE, format, __VA_ARGS__)
+#else
+#define snwprintf _snwprintf
+#endif
+#endif
+
 HDDEDATA CALLBACK SumatraDdeCallback(UINT, UINT, HCONV, HSZ, HSZ, HDDEDATA, DWORD, DWORD);
 BOOL CALLBACK GetSumatraHWND(HWND, LPARAM);
 static int RunSumatraPDF(const wchar_t* restrict);
@@ -1350,7 +1358,7 @@ RunSumatraPDF(const wchar_t* restrict pdf)
     memset(&si, 0, sizeof(si));
     memset(&pi, 0, sizeof(pi));
 
-    wsprintfW(sumatrapdfCommandLine, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
+    snwprintf(sumatrapdfCommandLine, FWDSUMATRAPDF_BUF_SIZE-1, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
 
     if (CreateProcessW(NULL, sumatrapdfCommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi) == 0) {
         err = 3;
@@ -1491,19 +1499,19 @@ main(void)
     tex = argv[2];
     line = argv[3];
 
-    if (wcslen(pdf) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+    if (wcslen(pdf) >= (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", pdf);
         err = -4;
         return err;
     }
 
-    if (wcslen(tex) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+    if (wcslen(tex) >= (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", tex);
         err = -3;
         return err;
     }
 
-    if (wcslen(line) > (FWDSUMATRAPDF_BUF_SIZE/4)) {
+    if (wcslen(line) >= (FWDSUMATRAPDF_BUF_SIZE/4)) {
         fwprintf(stderr, L"%ls is too long.\n", line);
         err = -2;
         return err;
@@ -1519,7 +1527,7 @@ main(void)
         return err;
     }
 
-    wsprintfW(forwardSearch, L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
+    snwprintf(forwardSearch, FWDSUMATRAPDF_BUF_SIZE-1, L"%ls%ls%ls%ls%ls%ls%ls%d%ls",
       L"[ForwardSearch(\"", pdf, L"\",\"", tex, L"\",", line, L",0,0,", active, L")]");
 
     if ((err = DdeExecute(L"SUMATRA", L"control", forwardSearch)) != 0) {
