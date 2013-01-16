@@ -193,37 +193,39 @@ module SumatraPDFClient =
 #else
         let s = "usage: " + (Environment.GetCommandLineArgs ()).[0] + " pdffile texfile line"
 #endif
-        if Array.length args = 3 then ()
-        else do
+        match Array.length args with
+        | 3 -> ()
+        | _ -> do
             Console.Error.WriteLine s
             Environment.Exit 2
 
     let RunSumatraPDF pdf = do
-        if Process.GetProcessesByName "SumatraPDF" |> Array.length <> 0 then ()
-        else do
+        match Process.GetProcessesByName "SumatraPDF" |> Array.length with
+        | 0 -> do
             let ps = new Process ()
             try
                 let registryValue = ref "SumatraPDF.exe"
                 let keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe"
                 using (Registry.LocalMachine.OpenSubKey keyPath) ( fun rKey ->
-                    registryValue := rKey.GetValue(String.Empty).ToString()
+                    registryValue := String.Empty |> rKey.GetValue |> string
                 )
                 let sumatrapdfRegistry = !registryValue
-                if File.Exists sumatrapdfRegistry then ps.StartInfo.FileName <- sumatrapdfRegistry
-                else new FileNotFoundException "File Not Found." |> raise
+                match File.Exists sumatrapdfRegistry with
+                | true  -> ps.StartInfo.FileName <- sumatrapdfRegistry
+                | false -> new FileNotFoundException "File Not Found." |> raise
             with
                 | e -> do
                      let sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe"
                      let sumatrapdfWin64Default = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"
-                     if File.Exists sumatrapdfWin32Default then
-                         ps.StartInfo.FileName <- sumatrapdfWin32Default
-                     elif File.Exists sumatrapdfWin64Default then
-                         ps.StartInfo.FileName <- sumatrapdfWin64Default
-                     else
-                         ps.StartInfo.FileName <- Interaction.InputBox ("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
+                     match (File.Exists sumatrapdfWin32Default, File.Exists sumatrapdfWin64Default) with
+                     | (true, true)   -> ps.StartInfo.FileName <- sumatrapdfWin32Default
+                     | (true, false)  -> ps.StartInfo.FileName <- sumatrapdfWin32Default
+                     | (false, true)  -> ps.StartInfo.FileName <- sumatrapdfWin64Default
+                     | (false, false) -> ps.StartInfo.FileName <- Interaction.InputBox ("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
             ps.StartInfo.Arguments <- "-reuse-instance " + "\"" + pdf + "\""
             ps.Start () |> ignore
             ps.WaitForInputIdle timeout |> ignore
+        | _ -> ()
 
     let DdeExecute server topic command = do
         let mutable idInstance = 0u
