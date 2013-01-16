@@ -64,6 +64,7 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 - Adobe Reader
     - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
+    - [Windows ストア の Windows 用 Adobe Reader アプリ](http://apps.microsoft.com/windows/ja-JP/app/adobe-reader/162a2931-8ee6-4a56-9570-53282525d7a3) (Windows 8, Windows RT)
 - Adobe Acrobat
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
 
@@ -215,3 +216,4 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 - [Adobe Reader XIを利用してPDFファイルのページ数を取得するVBAマクロ](http://www.ka-net.org/blog/?p=2337)
 - [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
 - [Acrobatのロックを回避する](http://d.hatena.ne.jp/abenori/20121223)
+- [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
