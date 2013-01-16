@@ -55,11 +55,11 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 のソースコードを取得して MinGW でビルドまたは最新版の Qt4 mingw バイナリをダウンロードしてインストールします．Qt4 mingw バイナリをインストールした場合は，C:\Qt\インストールしたQtのバージョン\bin に PATH を通します．
+- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 のソースコードを取得して MinGW でビルドまたは [Qt5 の mingwバイナリ](http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/)をダウンロードしてインストールまたは最新版の Qt4 mingw バイナリをダウンロードしてインストールします．mingw バイナリをインストールした場合は，Qt の bin ディレクトリに PATH を通します．
 
-<!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダ (git.exe のあるフォルダ) に PATH を通します． -->
+<!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
 
-- [CMake - Cross Platform Make](http://www.cmake.org/cmake/resources/software.html) から Binary distributions の Windows ZIP File をダウンロードして展開し，bin フォルダ (cmake.exe のあるフォルダ) に PATH を通します．
+- [CMake - Cross Platform Make](http://www.cmake.org/cmake/resources/software.html) から Binary distributions の Windows ZIP File をダウンロードして展開し，bin フォルダー (cmake.exe のあるフォルダー) に PATH を通します．
 
 - [GTK+ Download: Windows (32-bit)](http://www.gtk.org/download/win32.php) から
 
@@ -67,7 +67,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
     - gettext-runtime の Run-time
     - pkg-config の Tool
 
-をダウンロードして，展開後 bin フォルダにある
+をダウンロードして，展開後 bin フォルダーにある
 
 - gspawn-win32-helper.exe
     - gspawn-win32-helper-console.exe
