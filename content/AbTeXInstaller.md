@@ -246,3 +246,5 @@ otf パッケージの最新版は otfbeta です。<br>
     <!-- -[[そうだ， TeX を入れなきゃ:http://www.baldanders.info/spiegel/log2/000547.shtml]] -->
     <!-- -[[TeXのインストール(Windows):http://www.clas.kitasato-u.ac.jp/~fujiwara/installTeXwin20111018/]] -->
     <!-- -[[WindowsにおけるTeX環境の構築:http://www.mclab.ics.ritsumei.ac.jp/~shibata/development.html#tex]] -->
+
+- [TeX入門: TeXの出力環境を作成する。(その1、Windows版)](http://hichon.cocolog-nifty.com/blog/2011/10/tex-tex1windows.html)
