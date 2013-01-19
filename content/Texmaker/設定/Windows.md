@@ -264,8 +264,7 @@ pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode -jobname="%~n1" %1 && ^
 dvipdfmx "%~n1" && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -298,8 +297,7 @@ platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode -jobname="%~n1" %1 
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -330,8 +328,7 @@ pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 uplatex -kanji=utf8 -no-guess-input-enc -interaction=nonstopmode %1 && ^
 dvipdfmx "%~n1" && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -364,8 +361,7 @@ uplatex -kanji=utf8 -no-guess-input-enc -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -395,8 +391,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 pdflatex -interaction=nonstopmode %1 && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -426,8 +421,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 lualatex -interaction=nonstopmode %1 && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
@@ -457,8 +451,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 xelatex -interaction=nonstopmode %1 && ^
-echo "%~n1.pdf" | ^
-cmd
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
 ***
