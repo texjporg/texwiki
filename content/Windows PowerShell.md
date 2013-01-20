@@ -21,7 +21,8 @@ Windows 7 の場合は \[スタート\]-\[すべてのプログラム\]-\[アク
 
 Windows Vista, XP で Windows PowerShell がインストールされていない場合は以下のページからダウンロードできます．
 
-- [Windows PowerShell でのスクリプティング](http://www.microsoft.com/powershell)
+- [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
+- [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
 
 ### Tab 補完 {#b02c3a08}
 
@@ -94,6 +95,7 @@ platex hoge.tex
 - [GREP and SED with PowerShell](http://blogs.msdn.com/b/zainnab/archive/2007/07/09/grep-and-sed-with-powershell.aspx)
 - [Windows PowerShellを便利に使うための10のミニテクニック](http://handasse.blogspot.com/2009/08/powershell10.html)
 - [DOSコマンドをPowershellから使う](http://mtgpowershell.blogspot.jp/2010/12/dospowershell.html)
+- [コマンドが存在するかしないかを判定して, 条件分岐する構文のまとめ](http://qiita.com/items/d63861293fd6bde1b0d8)
 - [.tex->.pdfにするのにコマンド2回たたくのが面倒だからまとめる](http://d.hatena.ne.jp/aldente39/20120609/1339213251)
     - [tex2pdf](https://gist.github.com/2899241)
 - [PowerShellの補完機能について質問いたします。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1189580021)
