@@ -179,9 +179,9 @@ $ popd
 - [libjpeg](http://www.ijg.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.ijg.org/files/jpegsrc.v8d.tar.gz
-$ tar xvf jpegsrc.v8d.tar.gz
-$ pushd jpeg-8d
+$ curl -R -L -O http://www.ijg.org/files/jpegsrc.v9.tar.gz
+$ tar xvf jpegsrc.v9.tar.gz
+$ pushd jpeg-9
 $ ./configure --prefix=/mingw
 $ make
 $ make install
