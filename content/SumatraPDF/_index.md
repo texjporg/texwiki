@@ -1075,8 +1075,15 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
     STARTUPINFOW si;
     PROCESS_INFORMATION pi;
 
-    memset(&si, 0, sizeof(si));
-    memset(&pi, 0, sizeof(pi));
+#if defined (_MSC_VER)
+    SecureZeroMemory(&si, sizeof(si));
+    SecureZeroMemory(&pi, sizeof(pi));
+#else
+    ZeroMemory(&si, sizeof(si));
+    ZeroMemory(&pi, sizeof(pi));
+#endif
+
+    si.cb = sizeof(si);
 
     const basic_string<T> reuseInstance(L"-reuse-instance");
     basic_ostringstream<T> oss;
@@ -1357,8 +1364,15 @@ RunSumatraPDF(const wchar_t* restrict pdf)
         }
     }
 
-    memset(&si, 0, sizeof(si));
-    memset(&pi, 0, sizeof(pi));
+#if defined (_MSC_VER)
+    SecureZeroMemory(&si, sizeof(si));
+    SecureZeroMemory(&pi, sizeof(pi));
+#else
+    ZeroMemory(&si, sizeof(si));
+    ZeroMemory(&pi, sizeof(pi));
+#endif
+
+    si.cb = sizeof(si);
 
     snwprintf(sumatrapdfCommandLine, FWDSUMATRAPDF_BUF_SIZE-1, L"\"%ls\" %ls \"%ls\"", sumatrapdf, reuseInstance, pdf);
 
