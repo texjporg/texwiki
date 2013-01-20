@@ -33,6 +33,7 @@ Linux, BSD
 
 [News](http://pwmt.org/news/) を参照．<br>
 
+Version 0.2.2 で [SyncTeX (forward search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b)しました．<br>
 Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
 ### ChangeLog {#fdab5877}
