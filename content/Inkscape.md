@@ -420,6 +420,8 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
     - [https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape](https://bitbucket.org/pv/textext/issue/59/textext-with-portable-inkscape)
 - [Inkscape Portable with Textext (MikTex, pstoedit, gs)](http://portableapps.com/node/28897)
 - [textext, pdf2svg on Windows](http://tako.nakano.net/textext_pdf2svg.html)
+- [Inkscape 0.48.4 で LaTeX の数式を入れるには](http://rexpit.blog29.fc2.com/blog-entry-97.html)
+- [MacBook AirのInkscapeでLaTeXの数式を扱う](http://blog.izumin.info/2013/01/macbook-airinkscapelatex.html)
 - [Inkscape 0.4.8+TexText](http://blog.nhiroki.net/2012/10/04/textext_on_windows)
 - [textext で使う my.sty](http://kreisel.fam.cx/webmaster/clog/2011-11-23-1.html)
 - [ぼやっきんぐ   &raquo; Inkscape](http://www.empitsu.com/wp/?cat=8)
@@ -995,3 +997,4 @@ Svg2tex is a python script that extracts all text from a \*.svg file to a LaTeX 
 - [窓の杜 - Inkscape](http://www.forest.impress.co.jp/lib/pic/piccam/paint/inkscape.html)
 - [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
 - [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
+- [Beamerscape](https://github.com/jbohren/beamerscape)
