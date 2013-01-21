@@ -7,4 +7,4 @@ pukiwiki: "come 塾"
 
 # come 塾
 
-## [come](http://come.kyusyufumio.org) {#c6f60866}
+[come塾](http://www.kyusyufumio.org)
