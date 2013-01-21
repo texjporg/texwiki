@@ -13,9 +13,7 @@ pukiwiki: "TeXnicle"
 
 ## TeXnicle とは {#k3131c97}
 
-TeXnicle は TeX 統合環境です．MacTeX をインストールしてあることを前提としています．
-
-ウィンドウ中央に TeX ソースを記述すると、ウィンドウ右に pdf ファイルが表示されます。コマンドキー＋クリックで、ソースと pdf の該当箇所を相互に参照できます．Live Update を有効にしておくと、修正があるするたびに自動でコンパイルしてくれます（on/off は設定可能です）．
+TeXnicle は TeX 統合環境です．<br>
 
 - [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html)
 - [martinhewitson/TeXnicle · GitHub](https://github.com/martinhewitson/TeXnicle)
@@ -34,12 +32,13 @@ BSD 2-Clause
 
 ## 設定 {#y1c767e9}
 
+MacTeX がインストールされていることを前提としています．<br>
 デフォルトでは pdflatex を使用することになっているので、日本語 pLaTeX（e-pTeX）で使用する場合は以下のように新たな設定を追加します．
 
 ### platex＋dvipdfmx として設定する方法 {#t9059d8b}
 
 1. 「Preferences」-「Typesetting」の項で Engines タブを選択し、表中の latex を選択して Duplicate します．
-1. コピーした engine ファイルを選択し、Edit します．
+1. コピーした engine ファイル ([latex.engine](https://github.com/martinhewitson/TeXnicle/blob/master/TeXnicle/Engine/EngineScripts/latex.engine)) を選択し、Edit します．
 1. 24行目の ENGINE の行を以下のように修正します．
 
     ```
@@ -89,6 +88,12 @@ BSD 2-Clause
 #### 画面幅で改行 {#tc429033}
 
 「Preferences」-「General」で、Hard wrap とあるのを Soft wrap に設定します．改行幅も設定できます．
+
+## 使い方 {#y814953c}
+
+ウィンドウ中央に TeX ソースを記述すると、ウィンドウ右に pdf ファイルが表示されます。<br>
+コマンドキー＋クリックで、ソースと pdf の該当箇所を相互に参照できます．<br>
+Live Update を有効にしておくと、修正するたびに自動でコンパイルしてくれます（on/off は設定可能です）．<br>
 
 ## 関連リンク {#ba4bf8c9}
 
