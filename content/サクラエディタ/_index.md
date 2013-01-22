@@ -1062,7 +1062,7 @@ function main()
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -1104,7 +1104,7 @@ function main()
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -1134,7 +1134,7 @@ function main()
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -1165,7 +1165,7 @@ function main()
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -1194,7 +1194,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
@@ -1223,7 +1223,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
 
@@ -1252,7 +1252,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
 
