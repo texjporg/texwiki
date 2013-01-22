@@ -17,11 +17,11 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．
 
 UNICODE 版の場合，デフォルトではインストールされていないので \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．
 
-\[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれる場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．
+\[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．
 
-\[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれる場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．
+\[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．
 
-\[プラグイン\]-\[NppExec\]-\[Execute...\] で設定および実行ができます．
+\[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．
 
 コマンドを設定して名前を付けて保存します．
 
@@ -586,7 +586,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvipdfmx "$(NAME_PART)" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvipdfmx "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -612,7 +612,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal -jobname="$(NAME_PART)" "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -638,7 +638,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvipdfmx "$(NAME_PART)" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvipdfmx "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -664,7 +664,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -690,7 +690,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; pdflatex "$(NAME_PART)" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; pdflatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -716,7 +716,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; lualatex "$(NAME_PART)" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; lualatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
@@ -742,7 +742,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; xelatex "$(NAME_PART)" &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; xelatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
