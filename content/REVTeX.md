@@ -7,7 +7,7 @@ pukiwiki: "REVTeX"
 
 # REVTeX
 
-## REVTeX {#cfdc01cb}
+## [REVTeX](http://publish.aps.org/revtex/) {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
 もう角藤さんの W32TeX や新しい TeX Live
@@ -22,7 +22,9 @@ pukiwiki: "REVTeX"
 
 ### インストール {#jaaef53a}
 
-UNIX 系の OS では次のようにインストールします。
+W32TeX, TeX Live には既にインストールされています．<br>
+
+UNIX 系の OS で手動でインストールする場合は次のようにします。
 Windows でも同様です（mv は move または copy とします）。
 インストールディレクトリ /usr/local/texlive/2012/texmf-dist はシステムにより異なります。
 
