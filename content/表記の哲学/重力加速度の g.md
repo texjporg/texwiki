@@ -69,11 +69,15 @@ pukiwiki: "表記の哲学/重力加速度の g"
 </tbody></table>
 
 - (参考) PukiWiki + [mimeTeX](/mimeTeX/) では以下のように表示される．
+    <!-- , g , &#39;&#39;&#39;g&#39;&#39;&#39; , &amp;mimetex(\mathrm{g}); , &amp;mimetex(g); -->
+    <!-- , g , '''g''' , &mimetex(\mathrm{g}); , &mimetex(g);  -->
 
-<table><tbody>
-<tr><td style="text-align:center">g</td><td style="text-align:center">&#39;&#39;&#39;g&#39;&#39;&#39;</td><td style="text-align:center">&amp;mimetex(\mathrm{g});</td><td style="text-align:right">&amp;mimetex(g);</td></tr>
-<tr><td style="text-align:center">g</td><td style="text-align:center"><em>g</em></td><td style="text-align:center"><code>\mathrm{g}</code></td><td style="text-align:center"><code>g</code></td></tr>
-</tbody></table>
+<table>
+<tbody>
+<tr><td>g</td><td>&#39;&#39;&#39;g&#39;&#39;&#39;</td><td>&amp;mimetex(\mathrm{g});</td><td>&amp;mimetex(g);</td></tr>
+<tr><td>g</td><td><em>g</em></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21%5Cmathrm%7Bg%7D.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21g.gif" alt=""></td></tr>
+</tbody>
+</table>
 
 ### 参考文献 {#y99182d5}
 
