@@ -882,6 +882,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
 - neocomplcache &amp; neosnippet
+- [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
     - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
