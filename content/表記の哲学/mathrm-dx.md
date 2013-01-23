@@ -18,8 +18,10 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 
 ## 対立項 {#x8b1c3a7}
 
-- $dx$ ({{< katex >}}dx{{< /katex >}}) か $\mathrm{d}x$ ($\operatorname{d}x$) ({{< katex >}}\operatorname{d}x{{< /katex >}}) か？
-- $\Delta$ ({{< katex >}}\Delta{{< /katex >}}) か $\mathnormal{\Delta}$ ($\varDelta$) ({{< katex >}}\mathit{\Delta}{{< /katex >}}) か？（$\Delta$ 記号は右下が鈍角になるべきだ）
+<!-- -$dx$ (&mimetex(dx);) か $\mathrm{d}x$ ($\operatorname{d}x$) (&mimetex(\operatorname{d}x);) か？ -->
+<!-- -$\Delta$ (&mimetex(\Delta);) か $\mathnormal{\Delta}$ ($\varDelta$) (&mimetex(\mathit{\Delta});) か？（$\Delta$ 記号は右下が鈍角になるべきだ） -->
+- $dx$ (![](http://www.texify.com/img/%5CLARGE%5C%21dx.gif)) か $\mathrm{d}x$ ($\operatorname{d}x$) (![](http://www.texify.com/img/%5CLARGE%5C%21%5Coperatorname%7Bd%7Dx.gif)) か？
+- $\Delta$ (![](http://www.texify.com/img/%5CLARGE%5C%21%5Cmathrm%7B%5CDelta%7D.gif)) か $\mathnormal{\Delta}$ ($\varDelta$) (![](http://www.texify.com/img/%5CLARGE%5C%21%5Cmathit%7B%5CDelta%7D.gif)) か？（$\Delta$ 記号は右下が鈍角になるべきだ）
     <!-- この項目の括弧書きは要りますか？ 斜体のデルタの字形の問題にすぎないようですが？ -->
     <!-- というよりは，以前の記事を確認しないとどんなことが話題になっていたか存じていないのです． -->
     <!-- $\Delta$ と $\mathit{\Delta}$ の画像がどちらも $\mathit{\Delta}$ に見えますが？ -->
@@ -135,16 +137,18 @@ pukiwiki: "表記の哲学/\\mathrm{d}x?"
 - また，定数は立体，変数はイタリックという使い分けについても，数学では何が変数であるかは \`\`文脈依存&#x27;&#x27; ですから，厳格に使い分けると収拾がつかなくなります．
     <span style="color:#003;">\[まあ，自然対数の底のような \`\`常に定数扱い&#x27;&#x27; のもののみ立体表記，というのであれば，多少は納得しますが．\]</span>
     <span style="color:#033;">\[そもそも，数学には \`\`変数&#x27;&#x27; というものはありませんね．（変数のように見えても，とりうる値のうちの任意の 1 個に固定した状態で議論を行います．（そして，必要に応じて個々の値に対する結果を集めるわけです．））\]</span>
+    <!-- -数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x (&mimetex(\int f(x) \mathrm{d}x);) といった表記を用いるのも，それはそれで尊重 -->
 
-- 数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x ({{< katex >}}\int f(x) \mathrm{d}x{{< /katex >}}) といった表記を用いるのも，それはそれで尊重
+- 数学に ISO 的なやり方を持ち込まれるのには閉口しますが，一方で工学系などの文書で \int f(x) \mathrm{d}x (![](http://www.texify.com/img/%5CLARGE%5C%21%5Cint%20f%28x%29%20%5Cmathrm%7Bd%7Dx.gif)) といった表記を用いるのも，それはそれで尊重
 
 ## 具体例 {#l237f2fe}
 
 - Knuth の本をはじめ米国のものは今でも「伝統派」が多い
 - 日本の教科書も岩波数学辞典（版による？）も「伝統派」
 - ISO のお膝元のヨーロッパでは立体派が多いようだ (しかし Elsevier の本は統一されていない)
-- さきごろなくなられた森口繁一先生（東大工学部計数工学科教授）の著書では、初期に書かれたものは、イタリック体でしたが、ISO（JIS) が制定されたころからでしょうか、立体を使われるようになりました。
-    - たとえば、『数値計算工学』(1989年、岩波書店）では、$\frac{\mathrm{d}x}{\mathrm{d}t}$ ({{< katex >}}{{< /katex >}}) とか、$\mathrm{e}^x=1+\frac{x}{1!}+ \cdots$ ({{< katex >}}{{< /katex >}}) とか書かれています。
+- 2002年になくなられた森口繁一先生（東大工学部計数工学科教授）の著書では、初期に書かれたものは、イタリック体でしたが、ISO（JIS) が制定されたころからでしょうか、立体を使われるようになりました。
+    <!-- - -たとえば、『数値計算工学』(1989年、岩波書店）では、$\frac{\mathrm{d}x}{\mathrm{d}t}$ (&mimetex{\frac{\mathrm{d}x}{\mathrm{d}t}};) とか、$\mathrm{e}^x=1+\frac{x}{1!}+ \cdots$ (&mimetex{\mathrm{e}^x=1+\frac{x}{1!}+ \cdots};) とか書かれています。 -->
+    - たとえば、『数値計算工学』(1989年、岩波書店）では、$\frac{\mathrm{d}x}{\mathrm{d}t}$ (![](http://www.texify.com/img/%5CLARGE%5C%21%5Cfrac%7B%5Cmathrm%7Bd%7Dx%7D%7B%5Cmathrm%7Bd%7Dt%7D.gif)) とか、$\mathrm{e}^x=1+\frac{x}{1!}+ \cdots$ (![](http://www.texify.com/img/%5CLARGE%5C%21%5Cmathrm%7Be%7D%5Ex%3D1%2B%5Cfrac%7Bx%7D%7B1%21%7D%2B%20%5Ccdots.gif)) とか書かれています。
 - Phys. Rev.をはじめとする米国の出版物はイタリックになっているようです。
 - 日本物理学会の英文論文誌では，微分の d，exponential の e，虚数の i (j も?)を立体にしています。
 - 応用物理学会や電子情報通信学会の英文誌は，原則的に米国式のイタリックのようです。
