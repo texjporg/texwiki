@@ -94,7 +94,6 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 - [kmbeamer](https://github.com/kmaed/kmbeamer)
 - [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
-- [http://www.pletscher.org/writings/latex/beamerthemes.php](http://www.pletscher.org/writings/latex/beamerthemes.php)
 - [http://mike.depalatis.net/beamerthemes/](http://mike.depalatis.net/beamerthemes/)
 - [Keynote Like Gradient Theme for LaTeX Beamer (時計じかけの林檎)](http://sites.google.com/site/tokeijikakenoringo/Home/keynote-like-gradient-theme-for-latex-beamer)
 - [LaTeX-beamerのテンプレート](http://d.hatena.ne.jp/ckazu/20090217/1234857766)
@@ -102,10 +101,14 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### 関連リンク {#tfca5d80}
 
+- [「Beamer」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Beamer)
+- [Beamer を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=Beamer)
+- [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
 - [Beamer (辻研究室)](http://neurodynamics.jp/etc/beamer)
 - [Beamer V3.0 を使ってみる](http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html) (dvips利用)
 - [latex-beamer を使ってみる](http://www.pocus.jp/p-latex-main.html#latex-beamer) (dvipdfmx利用)
 - [LaTeX Beamerでプレゼンテーション](http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+Beamer%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3) (dvipdfmx利用)
+- [Beamerで2ペインにする](http://koemu.hatenablog.jp/entry/2013/01/23/204309)
 - [Windows 7にBemerを入れた時の作業メモ](http://d.hatena.ne.jp/teramonagi/20120324/1332574760)
 - [Beamer 3.10 にアップグレードした](http://d.hatena.ne.jp/triadsou/20101110/1289357503)
 - [LaTeX-Beamer - .R. Wiki](http://locs.bw.nitech.ac.jp/~kobayashi/fswiki/wiki.cgi?page=LaTeX-Beamer)
@@ -116,7 +119,6 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
 - [LaTeX+Beamerでtableofcontentsは決してできない](http://blomott.mobi/rubyneko/entry%2CMnZntmATC-OCUhEBedf7yQ%2C%2C%2C%2C.html)
 - [LaTeX + Beamer + Macで\tableofcontents{}ができないときの処方箋](http://blomott.mobi/rubyneko/entry%2CQNT1bI-wQBEF7V6ZF5N8sg%2C%2C%2C%2C.html)
-- [パワポは苦手！理工系のためのプレゼンツールBeamer](http://d.hatena.ne.jp/wkmy/20110829/1314611076)
 - [Beamerでプレゼン資料を作る](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
