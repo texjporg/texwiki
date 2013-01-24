@@ -9,6 +9,8 @@ pukiwiki: "TeXnicle"
 
 ## [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html) {#p6c2084c}
 
+<img src="http://www.bobsoft-mac.de/texnicle/files/blocks_image_0_1.png" alt="TeXnicle" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## TeXnicle とは {#k3131c97}
@@ -98,3 +100,4 @@ Live Update を有効にしておくと、修正するたびに自動でコン�
 ## 関連リンク {#ba4bf8c9}
 
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
+- [LaTeX統合エディタ"TeXnicle"で日本語入りBiBTeXを使えるようにする](http://koemu.hatenablog.jp/entry/2013/01/01/195655)
