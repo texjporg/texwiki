@@ -90,7 +90,7 @@ Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
 
 \[設定(T)\]-\[環境設定...\]
 
-### 新規作成ドキュメント {#eb38bb7e}
+### 新規作成/既定ディレクトリ {#eb38bb7e}
 
 Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
 
@@ -153,8 +153,8 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 ## 関連リンク {#d8eabd2e}
 
+- [WindowsでWebコーディング→Notepad++使えば良いとおもうよ！](http://blog.56doc.net/%E9%9B%91%E8%AB%87%E3%83%AD%E3%82%B0/windows%E3%81%A7web%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E2%86%92notepad-)
 - [TeX EditorとしてのNotepad++](http://www-al.nii.ac.jp/~kameda/blog/cmlog/1203230924.htm)
-- [餅と輪 &raquo; Windows環境でLaTeX2εをインストール](http://blog.mochiring.net/archives/550)
 - [GNU Octave, LaTeX, and Notepad++](http://www.tlhiv.org/ma497/software/)
 - [ConTeXt support package for Notepad++](http://wiki.contextgarden.net/Notepad%2B%2B)
 - [LaTeX on Windows with MiKTeX and Notepad++](http://nimal.info/blog/2010/latex-on-windows-with-miktex-and-notepad/)
