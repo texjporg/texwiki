@@ -847,3 +847,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 ```
 C:\npp\unicode\notepad++.exe^s "%s" -n%d
 ```
+
+## 関連リンク {#l148aa58}
+
+- [餅と輪 &raquo; Windows環境でLaTeX2εをインストール](http://blog.mochiring.net/archives/550)
