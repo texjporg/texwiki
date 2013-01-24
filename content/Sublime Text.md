@@ -62,6 +62,11 @@ Windows, OS X, Linux
 
 - [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
 
+## [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) {#je94e188}
+
+- [SublimeOnSaveBuild Sublime Plugin](https://github.com/alexnj/SublimeOnSaveBuild)
+- [Sublime Text 2 でファイル保存時に自動でビルドさせる](http://y-anz-m.blogspot.jp/2012/11/sublime-text-2.html)
+
 ## 関連リンク {#p3fe3a8a}
 
 ### Windows {#m51226c8}
