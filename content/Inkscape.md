@@ -89,6 +89,7 @@ sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,lat
 - [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html), [http://az.ctan.org/pkg/svg-inkscape](http://az.ctan.org/pkg/svg-inkscape)
 - [http://sites.google.com/site/richardhenwood/inkscapelatexextension](http://sites.google.com/site/richardhenwood/inkscapelatexextension)
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
+- [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
 Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定することが可能になりました．
 
