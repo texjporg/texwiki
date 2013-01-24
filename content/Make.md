@@ -259,6 +259,7 @@ latexmk -C
 ## [OMake](http://omake.metaprl.org/) {#yf7ac218}
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
+- [OmakeによるLatexファイルの継続ビルド。べんり。](https://gist.github.com/4602243)
 - [ぼくのかんがえたさいきょうの小説執筆環境](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
 - [latex-template](https://github.com/nojima/latex-template)
 - \[[OMake\]\[tex\] 複数ファイル](http://ameblo.jp/kaerunyaru/entry-11283143868.html)
@@ -269,6 +270,11 @@ latexmk -C
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
 ## [Rubber](https://launchpad.net/rubber) {#c944641c}
+
+## Perl スクリプト {#ce040874}
+
+- [platex して dvipdfmx するスクリプト](http://fjyuu.info/script/platexpdf/)
+    - [platexpdf – github](https://github.com/fjyuu/platexpdf)
 
 ## バッチファイル {#n34560fd}
 
