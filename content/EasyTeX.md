@@ -32,7 +32,7 @@ Windows 7, Vista, XP
 
 [中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html)を参照．<br>
 
-EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
+EasyTeX Verson 3.30 以降は，Unicode (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、日本語 (Shit-JIS、EUC、JIS) に対応しています．
 
 ### スクリーンショット {#e7b3eafc}
 
@@ -40,7 +40,7 @@ EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF
 
 ### 特徴 {#c007c9f5}
 
-- EasyTeX Verson 3.30 以降は，ユニコード (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、Shit-JIS、EUC、JIS に対応しています．
+- EasyTeX Verson 3.30 以降は，Unicode (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、日本語 (Shit-JIS、EUC、JIS) に対応しています．
 - TeX の命令を色付けして表示できます．
 - LaTeX コマンドをマウスで選び，クリックすることで，自動的にコマンドが挿入される補完機能を持っています．
 - ヘルプには LaTeX の解説が付属しています．
@@ -270,7 +270,7 @@ TeX環境設定が完了したら，\[ 　　<span style="color:#119933;">✔</s
 
 ## エンコードの種類 {#s484d028}
 
-EasyTeX Version 3.30 Unicode からエンコードの種類を選択できるようになりました．<br>
+EasyTeX Version 3.30 からエンコードの種類を選択できるようになりました．<br>
 メニューの \[ﾌｧｲﾙ(F)\]-\[エンコードの種類(D)\] から選択できます．<br>
 デフォルトのエンコードは 日本語(Shift-JIS) です．<br>
 
@@ -743,7 +743,7 @@ platex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で Adob
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -772,7 +772,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | bkmk2uni > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -797,7 +797,7 @@ platex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; platex -guess-input-enc -jobname="%n" "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -g > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -824,7 +824,7 @@ uplatex, dvipdfmx を使用して DVI, PDF ファイルを作成した後で Ado
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvipdfmx "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -851,7 +851,7 @@ uplatex, dvips, ps2pdf を使用して DVI, PS, PDF ファイルを作成した�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -878,7 +878,7 @@ pdflatex を使用して PDF ファイルを作成した後で Adobe Reader を�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; pdflatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; pdflatex "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -905,7 +905,7 @@ lualatex を使用して PDF ファイルを作成した後で Adobe Reader を�
 　 program16<br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; lualatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; lualatex "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
@@ -932,7 +932,7 @@ xelatex を使用して PDF ファイルを作成した後で Adobe Reader を�
 　<span style="color:White;background-color:#1188FF;"> program16　</span><br>
 　 program17<br>
 　 program18　　　　　実行時引数<br>
-　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; xelatex "%n" &amp;&amp; pdfopen --rxi --file "%n.pdf"</ins><br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;">▼</span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; xelatex "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
 
 <br>
 
