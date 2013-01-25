@@ -22,6 +22,7 @@ PDF ビューアに TeXworks を使用する場合は [TeXworks#組み込みの 
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
 [LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
+LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex を luajitlatex に変更して使用してください．<br>
 
 #### [W32TeX](/W32TeX/) (自動判別の場合) {#cd578b1e}
 
@@ -37,7 +38,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
@@ -120,7 +121,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
@@ -430,6 +431,36 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 ```
 lualatexA-nonstopmode.bat %
+```
+
+を入力します．
+
+### LuaJITLaTeXA {#z4aadf43}
+
+luajitlatexA-nonstopmode.bat を作成します．
+
+***
+
+- C:\w32tex\bin\luajitlatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+luajitlatex -interaction=nonstopmode %1 && ^
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+luajitlatexA-nonstopmode.bat %
 ```
 
 を入力します．
