@@ -39,6 +39,7 @@ pukiwiki: "Android"
 
 ### フリーウェア (無料) {#pfa162c4}
 
+- [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [Portable LaTeX Editor](https://play.google.com/store/apps/details?id=manescu.latex.editor)
 
