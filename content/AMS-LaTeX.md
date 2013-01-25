@@ -7,16 +7,16 @@ pukiwiki: "AMS-LaTeX"
 
 # AMS-LaTeX
 
-## AMS-LaTeX {#wf4b3974}
+## [AMS-LaTeX](http://www.ams.org/publications/authors/tex/amslatex) {#wf4b3974}
 
-[AMS-LaTeX](http://www.ams.org/tex/amslatex.html) は
+[AMS-LaTeX](http://www.ams.org/publications/authors/tex/amslatex) は
 [アメリカ数学会](http://www.ams.org/)（American Mathematical Society）
 によって開発されたパッケージおよびクラスファイルです。
 AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した amsmath と，
 アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。
 
 - 角藤さんの W32TeX を初めとする多くの TeX システムには最初から含まれていますが，
-    [http://www.ams.org/tex/amslatex.html](http://www.ams.org/tex/amslatex.html) や
+    [http://www.ams.org/publications/authors/tex/amslatex](http://www.ams.org/publications/authors/tex/amslatex) や
     [CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
 
 ドキュメント等
