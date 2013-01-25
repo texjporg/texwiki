@@ -31,7 +31,7 @@ LuaTeX に関しては以下のページを参照してください．<br>
 
 ### 派生版 {#c1116884}
 
-- [LuaJITTeX](http://foundry.supelec.fr/gf/project/luajittex/)
+- LuaJITTeX
 
 ## 不具合 {#v600e2c1}
 
