@@ -426,4 +426,5 @@ Okular にも同様の問題が発生していたようです．
 
 ## 関連リンク {#n7670496}
 
+- [evinceで明朝がゴシックになる](http://d.hatena.ne.jp/mcm57/20130115/1358250271)
 - [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836)
