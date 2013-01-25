@@ -23,29 +23,19 @@ PostScript形式での出力が可能なためTeXへの挿入も簡単に行え�
 
 ### インストール {#l5809210}
 
-基本的にはX Windows System上で動作するので、UNIX系はもちろん、
-Mac OS Xでは付属のX11、WindowsではCygwinなどで動作します。
+基本的にはX Windows System上で動作するので、Linux はもちろん、
+OS Xでは XQuartz (X11)、WindowsではCygwinなどで動作します。
 公式ページからダウンロードして展開します。
 
-通常のソースであれば、
+ソースからインストールする場合は
 
 ```
 $ ./configure
 $ make
-$ make install
+$ sudo make install
 ```
 
-します。
-UNIX系では、
-
-```
-$ sudo su -
-# ./configure
-# make
-# make install
-```
-
-する必要があるかもしれません。
+とします。
 
 ### 使い方 {#r625b25a}
 
