@@ -31,6 +31,7 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 ちなみに，pTeX でなくても良い場合は，
 
 1. [LuaTeX](/LuaTeX/)
+1. LuaJITTeX
 1. [XeTeX](/XeTeX/)
 1. [upTeX](/upTeX,upLaTeX/)
 1. [xeCJK パッケージ](/xeCJK/)
@@ -304,14 +305,9 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタ，あるいはそれがない場合はタイ語をその他の文字コードで編集できるエディタと [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/) が確実に使えます。また，[タイ語メモ超](http://www.vector.co.jp/soft/win31/writing/se008691.html)というソフトでも少なくとも後述するSWATHで処理可能なタイ語文書を作成できます。
+まず，タイ語をTIS-620という文字コードで記述できるエディタ，あるいはそれがない場合はタイ語をその他の文字コードで編集できるエディタと [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
 
 [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
-
-タイ語メモ超をお使いの場合，[Visual Basic 3ランタイム](http://support.microsoft.com/default.aspx?scid=kb;ja;196285)と[Thai Pen Stroke YK](http://www.vector.co.jp/soft/dl/data/writing/se013518.html)などのタイ語TrueTypeフォントが必要です。
-Visual Basic 3ランタイムは自己展開（解凍）形式になっています。ダウンロードしたファイルを
-ダブルクリックして展開し，展開先のVBRun300.DLLを C:\WINNT\system\ （Windows 95, 98,
-Meは C:\WINDOWS\system\ だと思う）にコピーします。
 
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
@@ -905,7 +901,7 @@ cidgoth-v      Identity-V          ipag.ttf/AJ16
 
 Adobe Reader 附属の CMap
 （どこにあるのか分からない場合には “UniGB-UTF16-H” で検索してみること）は
-例えば "C:\Program Files\Adobe\Reader 10.0\Resource\CMap\\" にあるので，
+例えば "C:\Program Files\Adobe\Reader 11.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
 DVI → PS → PDF の流れで作りたい方は $TEXMF/fonts/map/dvips/base/psfonts.map に
@@ -1376,7 +1372,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 otfcjk での書き方は
 [Kino さんの入力例](http://www2.odn.ne.jp/alt-quinon/files/ptex/otfcjk/)の
 WhatsUniCJK-tex.zip などを参考にしてください。
-（Mac OS X を想定した書き方のため，そのままコンパイルはできません。
+（OS X を想定した書き方のため，そのままコンパイルはできません。
 
 ```
 \usepackage[ttf]{mlotf}
@@ -1568,7 +1564,7 @@ jEdit，
 などがあります。
 ただ，xyzzy はタイ語などには
 対応していません。Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
-GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，Mac OS X では
+GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，OS X では
 [Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[Emacs For Mac OS X](http://www.emacsformacosx.com/)，[MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
 そこで Microsoft Windows に附属しているワードパッド (WordPad) で
