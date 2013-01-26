@@ -85,11 +85,26 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
+■ lualatex の場合<br>
 <span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>lualatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ luajitlatex の場合<br>
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>luajitlatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
