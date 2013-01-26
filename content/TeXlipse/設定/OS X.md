@@ -93,10 +93,25 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ***
 
+■ lualatex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/lualatex</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ luajitlatex の場合<br>
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/luajitlatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
