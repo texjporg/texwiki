@@ -216,6 +216,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
 ;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/pdflatex -synctex=1/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf")
 ;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/lualatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/luajitlatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
 ;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/xelatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex")
 ;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 (setq elisp::tex-command "pdfplatex.bat")
@@ -227,14 +228,15 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;(setq elisp::tex-command "pdfuplatex2.bat")
 ;(setq elisp::tex-command "pdflatex -synctex=1")
 ;(setq elisp::tex-command "lualatex -synctex=1")
+;(setq elisp::tex-command "luajitlatex -synctex=1")
 ;(setq elisp::tex-command "xelatex -synctex=1")
 (setq elisp::bibtex-command (cond ((string-match "uplatex" elisp::tex-command) "upbibtex")
                                   ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")
-                                  ((string-match "lualatex\\|xelatex" elisp::tex-command) "bibtexu")
+                                  ((string-match "lualatex\\|luajitlatex\\|xelatex" elisp::tex-command) "bibtexu")
                                   (t "bibtex")))
 (setq elisp::makeindex-command (cond ((string-match "uplatex" elisp::tex-command) "mendex -U")
                                      ((string-match "platex" elisp::tex-command) "mendex -U")
-                                     ((string-match "lualatex\\|xelatex" elisp::tex-command) "texindy")
+                                     ((string-match "lualatex\\|luajitlatex\\|xelatex" elisp::tex-command) "texindy")
                                      (t "makeindex")))
 (setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
@@ -311,6 +313,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; タイプセットを latexmk (pdfuplatex2) で
 ;; タイプセットを latexmk (pdflatex) で
 ;; タイプセットを latexmk (lualatex) で
+;; タイプセットを latexmk (luajitlatex) で
 ;; タイプセットを latexmk (xelatex) で
 ;; タイプセットを e-pLaTeX で
 ;; タイプセットを pdfplatex.bat で
@@ -322,17 +325,18 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; タイプセットを pdfuplatex2.bat で
 ;; タイプセットを pdfLaTeX で
 ;; タイプセットを LuaLaTeX で
+;; タイプセットを LuaJITLaTeX で
 ;; タイプセットを XeLaTeX で
 ;; uplatex の場合は upbibtex を使う
 ;; platex の場合は pbibtex を使う
-;; lualatex, xelatex の場合は bibtexu を使う
-;; uplatex, platex, lualatex, xelatex 以外の場合は bibtex を使う
+;; lualatex, luajitlatex, xelatex の場合は bibtexu を使う
+;; uplatex, platex, lualatex, luajitlatex, xelatex 以外の場合は bibtex を使う
 ;; uplatex の場合は mendex を使う
 ;; platex の場合は mendex を使う
-;; lualatex, xelatex の場合は texindy を使う
-;; uplatex, platex, lualatex, xelatex 以外の場合は makeindex を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex の場合は pdfopen を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, xelatex 以外の場合は Adobe Reader が起動していれば PDF ファイルを閉じて dvipdfmx + pdfopen を使う
+;; lualatex, luajitlatex, xelatex の場合は texindy を使う
+;; uplatex, platex, lualatex, luajitlatex, xelatex 以外の場合は makeindex を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, luajitlatex, xelatex の場合は pdfopen を使う
+;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, luajitlatex, xelatex 以外の場合は Adobe Reader が起動していれば PDF ファイルを閉じて dvipdfmx + pdfopen を使う
 ;; C:\w32tex\dviout\dviout をプレビューに使う
 ;; ツールバー表示
 ;; M-RET を有効に
@@ -396,6 +400,7 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex2 RET</td><td>pdfuplatex2</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET lualatex -synctex=1 RET</td><td>lualatex</td></tr>
+> <tr><td>M-x set-variable RET elisp::tex-command RET luajitlatex -synctex=1 RET</td><td>luajitlatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET xelatex -synctex=1 RET</td><td>xelatex</td></tr>
 > </tbody>
 > </table>
