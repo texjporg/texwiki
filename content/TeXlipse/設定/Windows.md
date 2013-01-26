@@ -70,7 +70,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．<br>
 UTF-8, Shift_JIS, ISO-2022-JP, EUC-JP も使用可能です．<br>
 自動判別, UTF-8 の場合の編集を記述します．<br>
 [TeX Live](</TeX Live/>) などの TeX ディストリビューションを使用される方は，ご自分の環境に合わせて設定してください．<br>
-dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に PATH が通っているか確認してください．<br>
+dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bit 版) に PATH が通っているか確認してください．<br>
 
 ### 自動判別 の場合 {#p2e48152}
 
@@ -131,10 +131,25 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ***
 
+■ lualatex の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ luajitlatex の場合<br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -337,10 +352,25 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 ***
 
+■ lualatex の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
+
+<br>
+
+　　　Program file ok
+
+***
+
+■ luajitlatex の場合<br>
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -647,7 +677,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+TeXworks を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　TeXworks (C:\w32tex\share\texworks\TeXworks.exe)　</span><br>
 
@@ -714,11 +744,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+SumatraPDF を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
 
-の優先度を上から二番目にします．
+の優先度を一番上にします．
 
 #### Chrome PDF Viewer {#e47a5b91}
 
@@ -753,11 +783,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+Chrome PDF Viewer を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)　</span><br>
 
-の優先度を上から三番目にします．
+の優先度を一番上にします．
 
 #### [Adobe Reader](</Adobe Reader/>) {#qdfce81e}
 
@@ -819,11 +849,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+Adobe Reader を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)　</span><br>
 
-の優先度を上から四番目にします．
+の優先度を一番上にします．
 
 ### PS ファイル ビューアー {#d5afa7cc}
 
@@ -860,11 +890,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+SumatraPDF を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
 
-の優先度を上から五番目にします．
+の優先度を一番上にします．
 
 #### GSview {#ra380cc3}
 
@@ -899,11 +929,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+GSview を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)　</span><br>
 
-の優先度を上から六番目にします．
+の優先度を一番上にします．
 
 ### DVI ファイル ビューアー {#y075cb2d}
 
@@ -940,11 +970,11 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-編集後，
+dviout を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　dviout (C:\w32tex\dviout\dviout.exe)　</span><br>
 
-の優先度を上から七番目にします．
+の優先度を一番上にします．
 
 ### 編集後 {#y59ef935}
 
