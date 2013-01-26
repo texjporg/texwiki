@@ -21,6 +21,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
 [LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
+LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex を luajitlatex に変更して使用してください．<br>
 
 #### [TeX Live](</TeX Live/>) {#x932c6ec}
 
@@ -34,7 +35,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
@@ -44,7 +45,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
 
 　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
