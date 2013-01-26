@@ -278,6 +278,49 @@ UNICODE 版の場合，デフォルトではインストールされていない
 
 　　　　　　Name :　<ins>LuaLaTeX</ins><br>
 　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　▼\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
+### LuaJITLaTeX {#r054d32d}
+
+***
+
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; luajitlatex -synctex=1 "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeX</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+
+***
+
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
+　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　▼\]</span><br>
 　　　☑ALT<br>
 
@@ -728,6 +771,32 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaLaTeXA</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+
+***
+
+### LuaJITLaTeXA {#b880cc86}
+
+***
+
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; luajitlatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeXA</span>　　　　　　　　　　　　　　　　▼\]</ins><br>
 
 ***
 
