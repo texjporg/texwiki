@@ -48,7 +48,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
 
 　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
@@ -131,7 +131,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins><br>または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
 
 　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
