@@ -147,27 +147,7 @@ pukiwiki: "LyX/設定/Windows"
 
 #### DVI -> Postscript {#vcfbecff}
 
-■ platex の場合 (Ruby をインストールしていない場合)
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-変換子の定義(N)<br>
-<span style="color:Black;background-color:#DAEAFF;">DVI -> Postscript　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-...<br>
-変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
-<span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-変換子(O):　　　<ins>dvips -Ppdf -z -f $$i | bkmk2uni > $$o</ins><br>
-追加フラグ(X):　<br>
-
-***
-
-■ platex の場合 (Ruby をインストールしている場合)
+■ platex の場合
 
 ***
 
@@ -187,7 +167,7 @@ pukiwiki: "LyX/設定/Windows"
 
 ***
 
-■ uplatex の場合 (Ruby をインストールしている場合)
+■ uplatex の場合
 
 ***
 
