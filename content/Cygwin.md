@@ -58,15 +58,21 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 - \[[ANNOUNCEMENT\] New: Three more texlive-collection-\*-20120202-1 packages](http://cygwin.com/ml/cygwin/2012-03/msg00149.html)
 - \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
 
+### 不具合 {#iffd4e02}
+
+#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
+
+dvipdfmx がうまく動作しない場合は以下の記事を参照して /usr/share/texmf/dvipdfmx/dvipdfmx.cfg を修正してください．<br>
+
+- [dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00366.html)
+    - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
+- [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
+
 ### インストール {#a8514c6c}
 
 Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
 
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
-
-dvipdfmx がうまく動作しない場合は以下の記事を参照してください．<br>
-
-[Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
 
 ***
 
