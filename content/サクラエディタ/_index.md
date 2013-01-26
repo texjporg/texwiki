@@ -374,6 +374,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
         - [マクロ専用関数](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000268.html)
         - [ExpandParameter](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000284.html)
 - [Windows Script Host](http://msdn.microsoft.com/ja-jp/library/cc364455.aspx)
+- [Windows Script Host Laboratory](http://www.roy.hi-ho.ne.jp/mutaguchi/wsh/)
 - [TOY BOX ver.0.2: サクラエディタ](http://toybox-v2.blogspot.com/search/label/%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF)
     - [サクラエディタでよく使うマクロ2つ](http://toybox-v2.blogspot.com/2011/09/2.html)
 
@@ -595,6 +596,35 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + lualatex;
+
+  var button = Editor.MessageBox(cmd, 1);
+  if (button == 1) {
+    Editor.FileSave();
+    Editor.ExecCommand(cmd, 1);
+  }
+}
+
+main();
+```
+
+***
+
+キー割り当て
+: Shift+Alt+Y
+
+### LuaJITLaTeX.js {#w564abd7}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var b = Editor.ExpandParameter("$g");
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + luajitlatex;
 
   var button = Editor.MessageBox(cmd, 1);
   if (button == 1) {
@@ -1226,6 +1256,35 @@ function main()
   var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
+
+  var button = Editor.MessageBox(cmd, 1);
+  if (button == 1) {
+    Editor.FileSave();
+    Editor.ExecCommand(cmd, 1);
+  }
+}
+
+main();
+```
+
+***
+
+### LuaJITLaTeXA.js {#cfc61c8f}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var b = Editor.ExpandParameter("$g");
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex" + " " + ["\"", b, "\""].join("");
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "powershell -Command \"& {$$pdf = \"\"" + pdf + "\"\"; $$pages = (pdfinfo $$pdf | Select-String \"^Pages:\"); $$page = (-split $$pages)[1]; pdfopen --rxi --file $$pdf --page $$page}\"";
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + luajitlatex + " && " + pdfopen;
 
   var button = Editor.MessageBox(cmd, 1);
   if (button == 1) {
