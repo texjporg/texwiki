@@ -121,6 +121,7 @@ let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = 'ps2pdf.bat $*.ps'
 "let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = 'pbibtex -kanji=utf8'
 "let g:Tex_BibtexFlavor = 'upbibtex'
@@ -201,6 +202,7 @@ let g:Tex_CompileRule_pdf = '/usr/texbin/dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = '/usr/local/bin/ps2pdf $*.ps'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/lualatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = '/usr/texbin/luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/xelatex -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = '/usr/texbin/pbibtex'
 "let g:Tex_BibtexFlavor = '/usr/texbin/upbibtex'
@@ -290,6 +292,7 @@ let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 "let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = 'pbibtex'
 "let g:Tex_BibtexFlavor = 'upbibtex'
@@ -928,6 +931,7 @@ pxdvi の inverse search は Ctrl + 左クリックで行います．
     (沼井 裕二 (okmount) さん)
     - [ある Vim 使いの告白: Vim-Latex ユーザだった俺はなぜ Winshell 3.3x + KeyVi に浮気したか](http://d.hatena.ne.jp/okmount/20100927/)
 - [Vim : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_225413.html)
+- [Vim-LaTeX 導入](http://0xffffff.hatenablog.com/entry/2013/01/26/211841)
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Open pdf to the current location in a LaTeX ](http://vim.wikia.com/wiki/Open_pdf_to_the_current_location_in_a_LaTeX_file)
 - [Newest &#39;vim&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/vim)
