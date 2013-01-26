@@ -99,7 +99,7 @@ XeLaTeX
 : xelatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 LuaLaTeX
-: lualatex.exe -synctex=1 -interaction=nonstopmode %.tex
+: lualatex.exe -synctex=1 -interaction=nonstopmode %.tex<br>luajitlatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 DVIビューア
 : dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
