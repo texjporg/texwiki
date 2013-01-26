@@ -255,6 +255,8 @@ pukiwiki: "LyX/設定/Windows"
 
 #### LaTeX (LuaTeX) -> PDF (LuaTeX) {#ud8c1b28}
 
+■ lualatex の場合
+
 ***
 
 <span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
@@ -270,6 +272,26 @@ pukiwiki: "LyX/設定/Windows"
 
 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; lualatex -synctex=1</ins><br>
 追加フラグ(X):　<ins>latex=lualatex</ins><br>
+
+***
+
+■ luajitlatex の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+変換子の定義(N)<br>
+<span style="color:Black;background-color:#DAEAFF;">LaTeX (LuaTeX) -> PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+...<br>
+変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
+<span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; luajitlatex -synctex=1</ins><br>
+追加フラグ(X):　<ins>latex=luajitlatex</ins><br>
 
 ***
 
