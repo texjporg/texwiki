@@ -260,7 +260,23 @@ latexmk -e '$pdflatex=q/lualatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makei
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk7 {#s2321b30}
+#### Latexmk7 {#of7ecadb}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$pdflatex=q/luajitlatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Latexmk8 {#s2321b30}
 
 ***
 
@@ -373,6 +389,22 @@ pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### LuaJITLaTeX {#p2dffd1c}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+luajitlatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
