@@ -236,9 +236,9 @@ babel を使用して文書を作成する場合は babel を on にします．
 
 \[適用(A)\] をクリックします．<br>
 
-#### [XeTeX](/XeTeX/)/[LuaTeX](/LuaTeX/) で文書を作成する場合 {#n7a3be37}
+#### [XeLaTeX](/XeTeX/)/[LuaLaTeX](/LuaTeX/)/LuaJITLaTeX で文書を作成する場合 {#n7a3be37}
 
-XeTeX/LuaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
+XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
 
 ***
 
@@ -380,7 +380,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 #### PDF (LuaTeX) {#g2e3c1cf}
 
 文字コードが ユニコード(XeTeX) (UTF-8) の場合は既定値は PDF (pdflatex) です．<br>
-LuaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．<br>
+LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
 
@@ -396,7 +396,7 @@ LuaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変�
 #### PDF (XeTeX) {#zd1cca72}
 
 文字コードが ユニコード(XeTeX) (UTF-8) の場合は既定値は PDF (pdflatex) です．<br>
-XeTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．<br>
+XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
 
@@ -553,7 +553,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 #### pdflatex の場合 {#n5e2e894}
 
 文書クラスで article を選択し，クラスオプションを設定します．<br>
-pdflatex, lualatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+pdflatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -577,10 +577,10 @@ pdflatex, lualatex を使用する場合は，グラフィックドライバに 
 
 ***
 
-#### lualatex の場合 {#l1a666c4}
+#### lualatex, luajitlatex の場合 {#l1a666c4}
 
 文書クラスで article (Japanese New for LuaTeX) を選択し，クラスオプションを設定します．<br>
-pdflatex, lualatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+lualatex, luajitlatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -712,7 +712,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-(u)platex + dvipdfmx, lualatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](https://github.com/zr-tex8r/ZXjatype) をインストールして LaTeXプリアンブルで
+(u)platex + dvipdfmx, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](https://github.com/zr-tex8r/ZXjatype) をインストールして LaTeXプリアンブルで
 
 ***
 
