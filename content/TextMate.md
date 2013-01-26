@@ -88,6 +88,7 @@ release 9278 で，日本語入力の問題は修正されました．<br>
 
 ## 関連リンク {#ue5b58cc}
 
+- [TextMate2をビルドしてインストールする](http://treeapps.hatenablog.com/entry/2013/01/15/TextMate2%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B)
 - [Let us build a TextMate](http://chajka.from.tv/osx/textmate.html)
 - [TextMate 2をソースからコンパイルしてみる](http://blog.f13.jp/post/29942351173/textmate-2)
 - \[[Mac\] オープンソース化なテキストエディタ「TextMate 2」をビルドした手順メモ](http://tools4hack.santalab.me/howto-oss-textmate-build.html)
