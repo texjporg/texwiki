@@ -212,6 +212,8 @@ function! TypesetFile()
     call PdfLaTeX("pdflatex")
   elseif g:typeset == 'lualatex'
     call PdfLaTeX("lualatex")
+  elseif g:typeset == 'luajitlatex'
+    call PdfLaTeX("luajitlatex")
   elseif g:typeset == 'xelatex'
     call PdfLaTeX("xelatex")
   else
@@ -315,6 +317,8 @@ function! SetTypeset(type)
     let g:typeset = 'pdflatex'
   elseif a:type == 'lualatex'
     let g:typeset = 'lualatex'
+  elseif a:type == 'luajitlatex'
+    let g:typeset = 'luajitlatex'
   elseif a:type == 'xelatex'
     let g:typeset = 'xelatex'
   else
@@ -443,6 +447,10 @@ function! PdfLaTeX(type)
     let g:makeindex = 'makeindex'
   elseif a:type == 'lualatex'
     let pdflatex = 'lualatex -synctex=1' . ' ' . masterTeXFile
+    let g:bibtex = 'bibtexu'
+    let g:makeindex = 'texindy'
+  elseif a:type == 'luajitlatex'
+    let pdflatex = 'luajitlatex -synctex=1' . ' ' . masterTeXFile
     let g:bibtex = 'bibtexu'
     let g:makeindex = 'texindy'
   elseif a:type == 'xelatex'
@@ -790,6 +798,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
@@ -825,6 +834,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
 > <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
@@ -863,6 +873,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
