@@ -1110,6 +1110,63 @@ endlocal
 
 ***
 
+### LuaJITLaTeXS {#y2650097}
+
+luajitlatexS.bat を作成します．
+
+***
+
+- C:\w32tex\bin\luajitlatexS.bat
+
+***
+
+```
+@echo off
+setlocal
+if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
+set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
+) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+luajitlatex -synctex=1 %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+endlocal
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>LuaJITLaTeXS</ins><br>
+　　プログラム: <ins>luajitlatexS.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
 ### XeLaTeXS {#i07eb3dd}
 
 xelatexS.bat を作成します．
@@ -1476,6 +1533,57 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 　　名前:　　　　<ins>LuaLaTeXA</ins><br>
 　　プログラム: <ins>lualatexA.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### LuaJITLaTeXA {#o93f36df}
+
+luajitlatexA.bat を作成します．
+
+***
+
+- C:\w32tex\bin\luajitlatexA.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+luajitlatex %1 && ^
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>LuaJITLaTeXA</ins><br>
+　　プログラム: <ins>luajitlatexA.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
