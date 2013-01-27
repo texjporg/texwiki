@@ -145,7 +145,9 @@ platex gtest-o.tex
 ## 中東の諸言語 {#arablowic}
 
 アラビア語についてはArabTeX上で扱えますし，ヘブライ語はArabTeXによる方法とBabelから用いる方法の2種類があるようです。詳細は，
-[TeX &amp; ArabTeX](http://www.osaka-gaidai.ac.jp/~mes/multi/multi_02.html)あるいは[ArabTeX User's Manualの日本語訳](http://www.kotoito.net/arabtex.html)などをご覧ください。
+[ArabTeX User's Manualの日本語訳](http://www.kotoito.net/arabtex.html),
+[ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364),
+[TeX &amp; ArabTeX \[Internet Archive\]](http://web.archive.org/web/20080420234244/http://www.osaka-gaidai.ac.jp/~mes/multi/multi_02.html) などをご覧ください。
 
 インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
 
@@ -213,7 +215,7 @@ vntex-20030303.zip を展開（解凍）し，次のディレクトリはその�
 - vntex-20030303/dvips/vntex/vnr.map → $TEXMFLOCAL/fonts/map/dvips/misc/
 - vntex-20030303/dvipdfm/config/vnr.map → $TEXMFLOCAL/fonts/map/dvipdfm/base/
 
-dvipdfmx をお使いの場合，$TEXMF/dvipdfm/config/dvipdfmx.cfg に
+dvipdfmx をお使いの場合，$TEXMF/dvipdfmx/config/dvipdfmx.cfg に
 
 ```
 f vnr.map
@@ -305,9 +307,9 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタ，あるいはそれがない場合はタイ語をその他の文字コードで編集できるエディタと [libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
+まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe](http://www1.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
 
-[libiconv + iconv.exe](http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
+[libiconv + iconv.exe](http://www1.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
 
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
@@ -396,13 +398,13 @@ C:\w32tex\bin\ など PATH の通ったところにコピーします
 
 では，実際にタイ語文書を作りましょう。
 
-Unicodeでタイ語文書を記述可能なエディタ ([Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。これをthaiutf8.txtとします。コマンドプロンプトで次を実行し，TIS-620という文字コードに変換します。
+Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。 ([Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。)これをthaiutf8.txtとします。コマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。
 
 ```
 iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 ```
 
-タイ語メモ超を用いる場合は，フォントの設定などを行ってから適当なタイ語文書を作ります。（ソフトキーボードがありますので，input methodのインストールは必ずしも必要ではありません。）作ったら保存します。ここではthaimemo.txtとします。上のようなiconvでの変換作業は不要です。
+TIS-620 の文字コードで編集して保存した場合は上のようなiconvでの変換作業は不要です。
 
 これらの方法などで出来た thaimemo.txt をコマンドプロンプトにて SWATH で
 処理し，単語の切れ目に \wbr という目印を付けます。
@@ -889,7 +891,7 @@ cidgoth-v      Identity-V          ipag.ttf/AJ16
 ***
 
 ここで日本語フォントに
-[IPAフォント](http://www.ipa.go.jp/about/press/20071001-2.html)
+[IPAフォント](http://ossipedia.ipa.go.jp/ipafont/)
 (ipam.ttf, ipag.ttf) を，中国語簡化字フォントに
 [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/)
 (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wqy.sourceforge.net/en/)
@@ -1531,13 +1533,15 @@ fmtutil --byfmt platex
 
 なお，pTeX 本体の Unicode (UTF-8) 対応に
 ついては[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)による
-試みがあります。すでに [TeX Live](</TeX Live/>) と
-[W32TeX](/W32TeX/) で
-利用可能になっています（現在は和文とラテン文字のみの対応）。また
+試みがあります。（現在は和文とラテン文字のみの対応）。また
 [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
 [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-（pTeX の内部 Unicode 版）の Ver.1.10 もリリースされました
-（現在は安定版，なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。
+（pTeX の内部 Unicode 版）の Ver.1.11 もリリースされました
+（現在は安定版，なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
+UTF-8 対応 pTeX と upTeX は
+[TeX Live](</TeX Live/>) と
+[W32TeX](/W32TeX/) で
+利用可能になっています。
 
 ### Unicode のテキストファイルを作るには？ {#j8063098}
 
