@@ -32,9 +32,6 @@ pukiwiki: "Texmaker/設定"
 
 \[オプション(O)\]-\[設定ファイル\]-\[設定をリセット\]
 
-- [TexmakerによるLaTeX入門　- リケラシー](http://rikeracy.web.fc2.com/tex/)
-    - [Quick Start（簡易テンプレート）のパネルで「その他のオプション」に間違ったコマンドを入力してしまいました。どうやったら消すことができますか？](http://rikeracy.bbs.fc2.com/?act=reply&tid=3669842)
-
 ### コマンド {#cab65285}
 
 {{< children >}}
