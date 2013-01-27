@@ -55,11 +55,11 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　LuaJITTeX　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>LuaJITTeX</strong>　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
 
-　　　Happy LuaJITLaTeXing!
+　　 Happy LuaJITLaTeXing!
 
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>
+<span style="color:Black;background-color:#F0F0F0;">　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> </span>
 
 ***
 
