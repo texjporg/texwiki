@@ -1101,7 +1101,7 @@ vntex-20030303.zip を展開（解凍）し，次のディレクトリはその�
 - vntex-20030303/dvips/vntex/vnr.map → $TEXMFLOCAL/fonts/map/dvips/misc/
 - vntex-20030303/dvipdfm/config/vnr.map → $TEXMFLOCAL/fonts/map/dvipdfm/base/
 
-dvipdfmx をお使いの場合，$TEXMF/dvipdfm/config/dvipdfmx.cfg に
+dvipdfmx をお使いの場合，$TEXMF/dvipdfmx/config/dvipdfmx.cfg に
 
 ```
 f vnr.map
