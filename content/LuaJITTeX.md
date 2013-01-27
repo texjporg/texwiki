@@ -9,16 +9,30 @@ pukiwiki: "LuaJITTeX"
 
 ## [LuaJITTeX](http://foundry.supelec.fr/gf/project/luajittex/) {#y53144a3}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## LuaJITTeX とは {#u3c93cbf}
+
 LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を [LuaJIT](http://luajit.org/) に置き換えたものです.<br>
-\[2012/12/30\] 以降の W32TeX に含まれています．<br>
-[LuaTeX-ja](/LuaTeX-ja/) も使用可能です．<br>
 
 - [LuaJITTeX](http://foundry.supelec.fr/gf/project/luajittex/)
+
+## インストール {#e0acc4f5}
+
+\[2012/12/30\] 以降の W32TeX に含まれています．<br>
+W32TeX の LuaJITTeX は [LuaTeX-ja](/LuaTeX-ja/) が使用可能です．<br>
+
+Linux の場合は以下のサイトからバイナリが入手出来ます．<br>
+
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 
 ## 使い方 {#vad7d54e}
 
-LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に Windows API を呼び出すことが可能です．
+LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．<br>
+
+### Windows {#b1c497b6}
+
+LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能です．
 
 ***
 
@@ -64,6 +78,29 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
   ]]
   local msvcrt = ffi.load(ffi.os == "Windows" and "msvcrt")
   msvcrt.printf("%s %s", "Happy", "LuaJITLaTeXing!")
+\end{luacode}
+\end{document}
+```
+
+***
+
+### Linux {#v08e3a2f}
+
+コンソール (標準出力) に出力したい場合は printf を使用します．
+
+***
+
+```
+\documentclass{article}
+\usepackage{luacode}
+\begin{document}
+\begin{luacode}
+  local ffi = require("ffi")
+  ffi.cdef[[
+  int printf(const char* format, ...);
+  ]]
+  local libc = ffi.load(ffi.os == "Linux" and "libc")
+  libc.printf("%s %s", "Happy", "LuaJITLaTeXing!")
 \end{luacode}
 \end{document}
 ```
