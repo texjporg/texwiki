@@ -15,7 +15,7 @@ picとは，A Graphics Language for Typesetting
 
 ### dpic {#n4789561}
 
-- [http://www.ece.uwaterloo.ca/~aplevich/dpic](http://www.ece.uwaterloo.ca/~aplevich/dpic)
+- [https://ece.uwaterloo.ca/~aplevich/dpic/](https://ece.uwaterloo.ca/~aplevich/dpic/)
 
 ### gpic {#re376f4f}
 
