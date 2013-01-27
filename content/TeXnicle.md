@@ -28,9 +28,20 @@ OS X 10.8, 10.7, 10.6.8
 
 BSD 2-Clause
 
-### ChangeLog {#s78f6912}
+### リリース情報/ChangeLog {#s78f6912}
 
+- [TeXnicle Downloads](http://www.bobsoft-mac.de/texnicle/texnicledownload/texnicledownload.html)
 - [Commit History · martinhewitson/TeXnicle · GitHub](https://github.com/martinhewitson/TeXnicle/commits/)
+
+### スクリーンショット {#n2e34e21}
+
+> <table>
+> <tbody>
+> <tr><td><a href="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1000-full.html"><img src="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1000-thumb.jpg" alt="A TeXnicle project with bookmarks"></a></td><td><a href="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1001-full.html"><img src="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1001-thumb.jpg" alt="The TeXnicle main project screen"></a></td><td><a href="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1002-full.html"><img src="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1002-thumb.jpg" alt="The code snippets library"></a></td><td><a href="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1003-full.html"><img src="http://www.bobsoft-mac.de/texnicle/texniclescreenshots/files/page8-1003-thumb.jpg" alt="A stand-alone editor."></a></td></tr>
+> <tr><td style="text-align:center">A TeXnicle project<br>with bookmarks</td><td style="text-align:center">The TeXnicle main<br>project screen</td><td style="text-align:center">The code snippets<br>library</td><td style="text-align:center">A stand-alone editor.</td></tr>
+> </tbody>
+> </table>
+>
 
 ## 設定 {#y1c767e9}
 
