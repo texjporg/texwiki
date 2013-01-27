@@ -36,7 +36,7 @@ pukiwiki: "Illustrator"
 例（hoge.ai を挿入）：
 
 ```
-%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
+%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass{article}
 \usepackage[dvipdfmx]{graphicx}
 \DeclareGraphicsRule{.ai}{pdf}{*}{}
@@ -52,7 +52,7 @@ Adobe Illustrator CS (11.0.0) で作られたファイルで確認。
 Illustrator で EPS 保存したものを LaTeX に挿入する例：
 
 ```
-%%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -*-
+%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass{...}
 \usepackage[dvips]{graphicx}
 \begin{document}
