@@ -858,6 +858,7 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 - [17 KaTeX-mode - Neko’s Business Law](http://d.hatena.ne.jp/momoume/20110103)
 - [\* 小物入れ \*](http://www.ne.jp/asahi/yukinoue/cool/software/)
 - [Windows7でLaTeX環境構築（Xyzzy，KaTeX，LaTeXmkなど）](http://ameblo.jp/tex-memo/entry-10476993822.html)
+- [KaTeXモードとdefaul文字コード](http://magichilli.blogspot.jp/2009/01/katexdefaul.html)
 - [xyzzy - べぇのうぃき.new()](http://dolphing.qee.jp/pukiwiki_new/index.php?xyzzy)
 - [xyzzy + KaTeX - chibacarの色々なメモ](http://d.hatena.ne.jp/chibacar/20080420/1225725981)
 - [Ill communication  .xyzzy](http://lphyl.blog69.fc2.com/blog-entry-180.html)
