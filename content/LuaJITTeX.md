@@ -14,6 +14,7 @@ LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.o
 [LuaTeX-ja](/LuaTeX-ja/) も使用可能です．<br>
 
 - [LuaJITTeX](http://foundry.supelec.fr/gf/project/luajittex/)
+- [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 
 ## 使い方 {#vad7d54e}
 
@@ -45,6 +46,27 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 　　　Happy LuaJITLaTeXing!
 
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>
+
+***
+
+コマンド プロンプト (標準出力) に出力したい場合は printf を使用します．
+
+***
+
+```
+\documentclass{article}
+\usepackage{luacode}
+\begin{document}
+\begin{luacode}
+  local ffi = require("ffi")
+  ffi.cdef[[
+  int printf(const char* format, ...);
+  ]]
+  local msvcrt = ffi.load(ffi.os == "Windows" and "msvcrt")
+  msvcrt.printf("%s %s", "Happy", "LuaJITLaTeXing!")
+\end{luacode}
+\end{document}
+```
 
 ***
 
