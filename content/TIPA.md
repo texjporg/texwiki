@@ -75,7 +75,7 @@ tipaman.dvi の全ページが正常に表示されます。
 tipa.sty を読み込めば，TIPA の機能を使用できるようになります。
 
 ```
-%%% -*- mode: yatex; Coding: iso-2022-jp -*-
+%%% -*- mode: yatex; Coding: utf-8 -*-
 \documentclass{jsarticle}
 %\documentclass{jarticle}
 \usepackage{tipa}
@@ -87,7 +87,7 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 特殊な記号を使用する場合には，tipa.sty の後に続けて tipx.sty を指定します。
 
 ```
-%%% -*- mode: yatex; Coding: iso-2022-jp -*-
+%%% -*- mode: yatex; Coding: utf-8 -*-
 \documentclass{jsarticle}
 %\documentclass{jarticle}
 \usepackage{tipa,tipx}
