@@ -13,3 +13,4 @@ pukiwiki: "ConTeXt"
 
 - [ConTeXt wiki](http://wiki.contextgarden.net/)
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
+- [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
