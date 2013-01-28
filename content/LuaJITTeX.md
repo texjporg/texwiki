@@ -71,14 +71,14 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 \documentclass{article}
 \usepackage{luacode}
 \begin{document}
-\begin{luacode}
+\begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
   int printf(const char* format, ...);
   ]]
   local msvcrt = ffi.load(ffi.os == "Windows" and "msvcrt")
-  msvcrt.printf("%s %s", "Happy", "LuaJITLaTeXing!")
-\end{luacode}
+  msvcrt.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
+\end{luacode*}
 \end{document}
 ```
 
@@ -94,14 +94,14 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 \documentclass{article}
 \usepackage{luacode}
 \begin{document}
-\begin{luacode}
+\begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
   int printf(const char* format, ...);
   ]]
   local libc = ffi.load(ffi.os == "Linux" and "libc")
-  libc.printf("%s %s", "Happy", "LuaJITLaTeXing!")
-\end{luacode}
+  libc.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
+\end{luacode*}
 \end{document}
 ```
 
