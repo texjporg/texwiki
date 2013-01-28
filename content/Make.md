@@ -93,6 +93,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 - [自分用latex Makefile](https://gist.github.com/1095020)
 - [thesis-template](https://github.com/ymrl/thesis-template)
     - [修士論文用のテンプレートを作った](http://mkdir.g.hatena.ne.jp/ymrl/20121112/1352743084)
+- [texマン](http://utata.hatenadiary.jp/entry/2012/11/03/215140)
 
 ## [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
