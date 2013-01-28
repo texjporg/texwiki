@@ -311,6 +311,7 @@ WinShell/使い方 を参照．
 - [WinShellのbibtexでエラーが出た時](http://blog.livedoor.jp/tmako123-programming/archives/22041970.html)
 - [WinShell便利設定](http://dalvatechnique.seesaa.net/article/310165517.html)
 - [レポートの表紙をTeXで書きなおしてみた](http://nryas.hateblo.jp/entry/2012/12/25/005143)
+- [LaTeXインストール・論文作成](http://bin.t.u-tokyo.ac.jp/startup2012/)
 - [LaTexの使い方 初級編](http://www.library.osaka-u.ac.jp/doc/TA_LaTeX1.pdf) (PDF)
 - [WinShellでTeXのコンパイル中にも編集する方法](http://tatsyblog.wordpress.com/2013/01/07/winshell%E3%81%A7tex%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E4%B8%AD%E3%81%AB%E3%82%82%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
 - [キーワード：WinShell | 情報科学屋さんを目指す人のメモ](http://did2memo.net/tag/winshell/)
