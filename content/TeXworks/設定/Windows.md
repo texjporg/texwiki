@@ -706,7 +706,7 @@ ps2pdf.bat "%~n1.ps"
 #### 設定後 {#me50c549}
 
 デフォルトを pdfpLaTeX に変更します．<br>
-「コンソール出力を表示しない」 に 『表示する』 を指定します．<br> <!-- TeXworks Version 0.5 [[r.793:http://code.google.com/p/texworks/source/detail?r=793]] 以降の場合は Hide output panel: に Never を指定します．~ -->
+タイプセットのコンソール出力を確認したい場合は 「コンソール出力を表示しない」 に 『表示する』 を指定します．<br> <!-- TeXworks Version 0.5 [[r.793:http://code.google.com/p/texworks/source/detail?r=793]] 以降の場合は Hide output panel: に Never を指定します．~ -->
 
 ***
 
