@@ -53,6 +53,7 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 ## LibreOffice/Apache OpenOffice Writer {#z088446c}
 
 - [TexMaths](http://roland65.free.fr/texmaths/)
+    - [Ubuntu　　Libreofficeで正確な数式を表現](http://kurumatorajirou.blogspot.jp/2013/01/ubuntulibreoffice.html)
 - [Writer2LaTeX](http://writer2latex.sourceforge.net/)
 
 ## LibreOffice/Apache OpenOffice Calc {#te4274fb}
