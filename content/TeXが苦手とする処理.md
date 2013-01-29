@@ -28,7 +28,7 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 対処法は，大別すると次の3通りになります。
 
-1. [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。
+1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
@@ -79,7 +79,7 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 TeX は「お絵描き」ソフトではない以上，そのような飾り枠の類は苦手とします。
 それゆえ，凝った枠が要る場合には画像にするなり
-pstricks などの「描画用」パッケージを用いるなりするのが簡単でしょう。
+[TikZ](/TikZ/), [PSTricks](/PSTricks/) などの「描画用」パッケージを用いるなりするのが簡単でしょう。
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
