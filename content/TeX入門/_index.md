@@ -42,6 +42,7 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキ
 を無償配布し，自社の本の製作に利用しています。
 
 - 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX,upLaTeX](/upTeX,upLaTeX/) が利用できます。
+- Unicode に完全対応したものには [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX, [XeTeX, XeLaTeX](/XeTeX/) があります。
 - 【参考】TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX
     もあります。現在これらは千葉大学の[櫻井貴文さん](http://www.math.s.chiba-u.ac.jp/~sakurai/)が
     [TeXfamily](http://www.math.s.chiba-u.ac.jp/~sakurai/software.html)
