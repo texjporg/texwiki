@@ -13,7 +13,7 @@ pukiwiki: "LuaTeX-ja"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### LuaTeX-ja とは {#ha0b38ce}
+## LuaTeX-ja とは {#ha0b38ce}
 
 LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/) で日本語文書の組版を行うためのパッケージです．<br>
 LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
@@ -28,7 +28,6 @@ LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luate
 LuaTeX-ja は
 
 - [TeX Live](</TeX Live/>) (TeX Live 2012 以降)
-    - [TeX Live - TeX Wiki#LuaTeX-ja](</TeX Live/#d5b40bf5>)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/)
     - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
@@ -114,13 +113,7 @@ LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(
 
 とあるので全角チルダは使用しない方がいいかもしれません．
 
-### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#te382979}
-
-LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
-
-### [Beamer](/Beamer/) {#w67ac91d}
-
-[Beamer](/Beamer/) で LuaTeX-ja を使ってみたところ特に問題なく使用できています．<br>
+## 他のパッケージとの併用 {#kdbc7cfe}
 
 ### [OTF](/OTF/) {#g94672b9}
 
@@ -130,6 +123,10 @@ LuaTeX-ja では luatexja-otf.sty を使用します．<br>
 ```
 \usepackage{luatexja-otf}
 ```
+
+### [Beamer](/Beamer/) {#w67ac91d}
+
+[Beamer](/Beamer/) で LuaTeX-ja を使ってみたところ特に問題なく使用できています．<br>
 
 ### [hyperref](/hyperref/) {#v13d851a}
 
