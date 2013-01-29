@@ -127,6 +127,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
+- [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=926)
 - [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
 - [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
 - [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
