@@ -19,12 +19,7 @@ pukiwiki: "ArchiveQandA"
 - マクロやパッケージ関わることであれば，[CTAN](/CTAN/) ([CTAN search](http://www.ctan.org/search.html)) でパッケージ名をキーに探す
 - W32TeX または TeX Live であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
     (例) texdoc -l -s hyperref
-    - TeX Live には [texdoctk](http://www.ctan.org/tex-archive/help/Catalogue/entries/texdoctk.html) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあります．
-
-> Fedora 10で使ってみるとテキスト検索はまともに入力もできないのですが、
-> マウスクリックでカテゴリやキーワードから文書を選択して表示できるので、
-> 「調べたいことが書いてある文書の名前（パッケージ名）がわからない」ときに便利かもしれません。
-
+    - TeX Live には [texdoctk](http://www.ctan.org/pkg/texdoctk) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあります．
 - MiKTeX であれば texdoc -l &lt;パッケージ名> と打つ<br>
     (例) texdoc -l hyperref
 
