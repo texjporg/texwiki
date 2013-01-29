@@ -14,7 +14,6 @@ pukiwiki: "LuaTeX"
 ## LuaTeX とは {#v17b2316}
 
 LuaTeX は Lua が使える TeX です．<br>
-LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
@@ -32,6 +31,16 @@ LuaTeX に関しては以下のページを参照してください．<br>
 ### 派生版 {#c1116884}
 
 - LuaJITTeX
+
+## LuaTeX で日本語 {#a0eb47cd}
+
+### [LuaTeX-ja](/LuaTeX-ja/) {#v931ec0a}
+
+LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．<br>
+
+### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#rf46f8fc}
+
+LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
 
 ## 不具合 {#v600e2c1}
 
