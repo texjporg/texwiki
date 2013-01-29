@@ -26,6 +26,16 @@ Linux の場合は以下のサイトからバイナリが入手出来ます．<b
 
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 
+```
+$ wget http://standalone.contextgarden.net/current/bin/luajittex/linux-64/bin/luajittex
+$ chmod +x luajittex
+$ sudo cp luajittex /usr/bin
+$ sudo ln -s /usr/bin/luajittex /usr/bin/luajitlatex
+$ luajitlatex --fmt=lualatex.fmt test.tex
+```
+
+などとすればとりあえず動作するようです．
+
 ## 使い方 {#vad7d54e}
 
 LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．<br>
