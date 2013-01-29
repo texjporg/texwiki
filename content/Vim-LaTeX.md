@@ -930,6 +930,7 @@ pxdvi の inverse search は Ctrl + 左クリックで行います．
 - [俺がVIM-LaTeXについて書くしかない(etc.)](http://d.hatena.ne.jp/okmount/archive?word=*%5bLatex%5d)
     (沼井 裕二 (okmount) さん)
     - [ある Vim 使いの告白: Vim-Latex ユーザだった俺はなぜ Winshell 3.3x + KeyVi に浮気したか](http://d.hatena.ne.jp/okmount/20100927/)
+- [TeXLive 2012＋Vim-LaTeXでてふてふする on Fedora 17](http://masanoriprog.blogspot.jp/2013/01/texlive-2012vim-latex-on-fedora-17.html)
 - [Vim : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_225413.html)
 - [Vim-LaTeX 導入](http://0xffffff.hatenablog.com/entry/2013/01/26/211841)
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
