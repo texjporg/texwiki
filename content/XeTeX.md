@@ -19,7 +19,6 @@ pukiwiki: "XeTeX"
 
 XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
 「ズィーTeX」と読みます．<br>
-XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．<br>
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
@@ -102,6 +101,16 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 単に UTF-8 を Big Endian UTF-16 with BOM に変換するだけでよいので，
 より簡単な実装が可能である。
 実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。
+
+### XeLaTeX で日本語 {#m8e2a0bc}
+
+#### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#t23b4dfc}
+
+XeLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
+
+#### [xeCJK/ZXjatype](/xeCJK/) {#ref20094}
+
+XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．<br>
 
 ### Windows でのインストール {#j287e7c2}
 
