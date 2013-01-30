@@ -147,16 +147,16 @@ EPS にプレビューを付けておけば，
 
 times，mathpazo，txfonts，pxfonts 等のパッケージを使った場合は，dvips に
 PostScript Level 2 での基本35書体をダウンロードするオプションを付け
-（“-Ppdf” の代わりに teTeX なら“-Pdownload35”，W32TeX なら “-Pdl”），
+（“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”），
 さらに Ghostscript 附属の Type 1 (PFB) フォントをやはり Illustrator から
 見える場所にコピーしておけばいいのではないかと思います（テストしていません）。
 
 ↑訂正1： txfonts の場合は config.ps に “p +txr2.map” という行を書くのでした
 （←訂正： W32TeX では “-Pdl” オプションで
-同じことになるのでした。teTeX では “-Pdownload35” です）。 
+同じことになるのでした。TeX Live では “-Pdownload35” です）。 
 
 ↑訂正2： Ghostscript のフォントはすでに W32TeX にも入っていました
-（teTeX 同様）。コピーは不要です。 
+（TeX Live 同様）。コピーは不要です。 
 
 ## Illustrator に配置 3 (Mac OS X) {#z9ef5010}
 
