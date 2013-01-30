@@ -260,6 +260,7 @@ latexmk -C
 ## [OMake](http://omake.metaprl.org/) {#yf7ac218}
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
+- [LaTeXのソースを毎回makeしてる情弱は俺まででいい #OMake](http://st63jun.hatenablog.jp/entry/2013/01/30/002642)
 - [OmakeによるLatexファイルの継続ビルド。べんり。](https://gist.github.com/4602243)
 - [ぼくのかんがえたさいきょうの小説執筆環境](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
 - [latex-template](https://github.com/nojima/latex-template)
