@@ -21,6 +21,7 @@ LuaTeX に関しては以下のページを参照してください．<br>
     - [Log of /trunk](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2Ftrunk%2F&view=log)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
+- [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
 
 ### ChangeLog {#h5bae295}
 
