@@ -18,6 +18,7 @@ SyncTeX に対応しています．<br>
 
 - [Home | pwmt.org](http://pwmt.org/)
     - [zathura](http://pwmt.org/projects/zathura/)
+- [The zathura Archives](http://lists.pwmt.org/archive/zathura/)
 
 ### 動作環境 {#q9b59e7d}
 
