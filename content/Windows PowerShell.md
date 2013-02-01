@@ -102,3 +102,4 @@ platex hoge.tex
 - [PowerShellの補完機能について質問いたします。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1189580021)
 - [PowerTab](http://powertab.codeplex.com/)
 - [PowerTab](https://bitbucket.org/rod/dotfiles/src/tip/WindowsPowerShell/Modules/PowerTab/)
+- [Windows Power Shell、なんとコマンドシェルからcomオブジェクトまで使える!!](http://morimorigameblogg.blogspot.jp/2009/11/windows-power-shellcom.html)
