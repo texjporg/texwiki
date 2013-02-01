@@ -43,6 +43,10 @@ mktexlsr  (または texhash)
 - AMS-LaTeX 2.0 以降
 - natbib \[1999/05/28 7.0 (PWD)\] 以降
 
+参考
+
+- [VineLinux6にrevtex4-1を入れる](http://m.ils.uec.ac.jp/memo/)
+
 ### AMS-LaTeX と natbib のインストール {#f1d3fb76}
 
 AMS-LaTeX と natbib はすでに入っていると思われますが、もしないなら次のようにしてインストールします。
