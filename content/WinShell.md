@@ -52,7 +52,7 @@ Windows 8, 7, Vista, XP, 2000
 
 を参照．<br>
 
-WinShell 3.3.2.5 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
+WinShell 3.3.2.5 以降は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
 WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応しています．<br>
 
 ### スクリーンショット {#l2305277}
@@ -181,7 +181,48 @@ UTF-8 を使用したい方は
 
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
-Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．<br>
+WinShell 3.3.2.5 の場合，Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　　Cannot start AcrobatReader or open the document.<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span>　　1. Please check on the exe file and cmd line of the PDFView<br>
+　　　　　　　options.<br>
+　　　　　　　2. Please set correct Adobe DDE Version in registry key<br>
+　　　　　　　'HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\applicatio<br>
+　　　　　　　n'<br>
+
+<br>
+
+***
+
+この場合レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを
+
+```
+AcroViewR11
+```
+
+に修正します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　文字列の編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　値の名前(N):<br>
+　　 <ins>(既定)</ins><br>
+
+　　値のデータ(V):<br>
+　　 <ins>AcroViewR11</ins><br>
+
+<br>
+
+***
+
+WinShell 3.3.2.5 よりも前のバージョンの場合，Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．<br>
 
 ***
 
@@ -221,13 +262,6 @@ WinShell 3.3.2.4 でも状況によってはこの警告メッセージが表示
 その場合は WinShell を再起動すれば OK です．<br>
 ただし，また同じ警告メッセージが表示され，PDF ファイルが表示できなくなる可能性があります．<br>
 これを回避するには PDFView を参照してください．
-
-### 自動スペルチェックがオンの場合に赤い小さなゴミのようなものが表示される → 自動スペルチェックをオフにする {#y2f85553}
-
-WinShell 3.3.2.4 で，日本語文書を入力して
-カーソル移動などをすると，各文字について，赤い小さなゴミのようなものが表示されます．
-
-> <span style="color:Red;"><strong>「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます．</strong></span>
 
 ### 括弧の強調表示時の文字化け {#n7cba889}
 
@@ -297,6 +331,13 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
 対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
 その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
+
+### WinShell 3.3.2.4 で自動スペルチェックがオンの場合に赤い小さなゴミのようなものが表示される → 自動スペルチェックをオフにする → WinShell 3.3.2.5 で修正されました {#y2f85553}
+
+WinShell 3.3.2.5 で修正されました．
+
+WinShell 3.3.2.4 で，日本語文書を入力してカーソル移動などをすると，各文字について，赤い小さなゴミのようなものが表示されます．<br>
+「オプション(O) → 自動スペルチェック(A)」をオフにすると解消されます．<br>
 
 ## 設定 {#xe1b50b7}
 
