@@ -30,17 +30,22 @@ Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する�
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．[以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，本家の texlive パッケージをインストールする方法を説明しています．<br>
 いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
-ちなみに，過去には（続いているものもありますが），Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する手段として，
+Cygwin 本家の TeX Live パッケージ以外では
 
-- teTeX＋野良ビルド
-- [Cygwin JE](http://sourceforge.jp/projects/cygwin-je/)
-- [ptetex3](http://tutimura.ath.cx/ptetex/)野良ビルド
-- [Cygwin で日本語プロジェクト](http://ptetexwin.sourceforge.jp/)
-- [ptexlive](http://tutimura.ath.cx/ptexlive/)野良ビルド
-- [美文書作成入門［改訂第 5 版］](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)
-- [TeX Live のインストール](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [W32TeX](/W32TeX/)
+- [TeX Live の公式パッケージ](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 
-などの選択肢がありました（あります）．
+の選択肢もあります．
+
+<!-- ちなみに，過去には（続いているものもありますが），Cygwinに（日本語対応の = pTeXの入った）TeXの環境を導入する手段として， -->
+<!-- - teTeX＋野良ビルド -->
+<!-- - [[Cygwin JE>http://sourceforge.jp/projects/cygwin-je/]] -->
+<!-- - [[ptetex3>http://tutimura.ath.cx/ptetex/]]野良ビルド -->
+<!-- - [[Cygwin で日本語プロジェクト>http://ptetexwin.sourceforge.jp/]] -->
+<!-- - [[ptexlive>http://tutimura.ath.cx/ptexlive/]]野良ビルド -->
+<!-- - [[美文書作成入門［改訂第 5 版］>http://oku.edu.mie-u.ac.jp/~okumura/bibun5/]] -->
+
+<!-- などの選択肢がありました． -->
 
 ## [TeX Live](</TeX Live/>) {#dead7b03}
 
@@ -51,12 +56,11 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 - \[[ANNOUNCEMENT\] Updated: texlive-collection-basic-20120628-2 (TEST)](http://cygwin.com/ml/cygwin/2012-08/msg00188.html)
 - \[[ANNOUNCEMENT\] Updated: TeX Live 2012](http://cygwin.com/ml/cygwin/2012-07/msg00311.html)
 
-#### TeX Live 2011 {#n408471a}
-
-- \[[ANNOUNCEMENT\] Updated: texlive-collection-\*-20120312-2, texlive-20110705-2, libkpathsea{6,-devel}-20110705-2, libptexenc{1,-devel}-20110705-2](http://cygwin.com/ml/cygwin/2012-04/msg00696.html)
-- \[[ANNOUNCEMENT\] Updated: texlive-collection-\*-20120312-1](http://cygwin.com/ml/cygwin/2012-03/msg00391.html)
-- \[[ANNOUNCEMENT\] New: Three more texlive-collection-\*-20120202-1 packages](http://cygwin.com/ml/cygwin/2012-03/msg00149.html)
-- \[[ANNOUNCEMENT\] New packages: texlive-20110705-1, texlive-collection-\*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)
+<!-- ***TeX Live 2011 [#n408471a] -->
+<!-- -[[[ANNOUNCEMENT] Updated: texlive-collection-*-20120312-2, texlive-20110705-2, libkpathsea{6,-devel}-20110705-2, libptexenc{1,-devel}-20110705-2:http://cygwin.com/ml/cygwin/2012-04/msg00696.html]] -->
+<!-- -[[[ANNOUNCEMENT] Updated: texlive-collection-*-20120312-1:http://cygwin.com/ml/cygwin/2012-03/msg00391.html]] -->
+<!-- -[[[ANNOUNCEMENT] New: Three more texlive-collection-*-20120202-1 packages:http://cygwin.com/ml/cygwin/2012-03/msg00149.html]] -->
+<!-- -[[[ANNOUNCEMENT] New packages: texlive-20110705-1, texlive-collection-*-20120202-1, libkpathsea{6,-devel}-20110705-1, libptexenc{1,-devel}-20110705-1, asymptote-2.15-1:http://cygwin.com/ml/cygwin/2012-03/msg00120.html]] -->
 
 ### 不具合 {#iffd4e02}
 
