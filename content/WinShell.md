@@ -43,7 +43,7 @@ LaTeX の処理系は別途インストールする必要があります．
 
 ### 動作環境 {#f8ed906d}
 
-Windows 7, Vista, XP, 2000
+Windows 8, 7, Vista, XP, 2000
 
 ### リリース情報/ChangeLog {#yc18b30c}
 
@@ -52,7 +52,7 @@ Windows 7, Vista, XP, 2000
 
 を参照．<br>
 
-WinShell 3.3.2.4 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応していません．<br>
+WinShell 3.3.2.5 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
 WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応しています．<br>
 
 ### スクリーンショット {#l2305277}
@@ -94,7 +94,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ### Runtime Error! {#g47585a4}
 
-WinShell 3.3.2.4 で，エンコーディングを UTF-8 に変更し
+WinShell 3.3.2.5 で，エンコーディングを UTF-8 に変更し
 
 ***
 
