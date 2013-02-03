@@ -311,9 +311,50 @@ WinShell 3.3.2.5 よりも前のバージョンの場合，Adobe Reader XI で P
 
 これを回避するには PDFView を参照してください．
 
-### Adobe Reader X で PDF ファイルが表示できない → WinShell 3.3.2.3 以降にアップデート {#n0b52900}
+### Adobe Reader X で PDF ファイルが表示できない → WinShell 3.3.2.5 以降にアップデートしてレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを AcroViewR10 に修正 {#n0b52900}
 
 WinShell 3.3.2.3 で修正されました．
+
+WinShell 3.3.2.5 の場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　WinShell　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　　Cannot start AcrobatReader or open the document.<br>
+　　　　<span style="font-size:35px"><strong>!</strong></span>　　1. Please check on the exe file and cmd line of the PDFView<br>
+　　　　　　　options.<br>
+　　　　　　　2. Please set correct Adobe DDE Version in registry key<br>
+　　　　　　　'HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\applicatio<br>
+　　　　　　　n'<br>
+
+<br>
+
+***
+
+この場合レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを
+
+```
+AcroViewR10
+```
+
+に修正します．
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　文字列の編集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　値の名前(N):<br>
+　　 <ins>(既定)</ins><br>
+
+　　値のデータ(V):<br>
+　　 <ins>AcroViewR10</ins><br>
+
+<br>
+
+***
 
 WinShell 3.3.2.3 よりも前のバージョンの場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できません．<br>
 
