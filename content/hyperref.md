@@ -1097,6 +1097,7 @@ abc
 ### 関連リンク {#h792e133}
 
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
+- [bst fileでhyperrefを入れる方法](http://warubobo13.hatenablog.jp/entry/2013/02/03/074303)
 
 ***
 
