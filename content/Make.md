@@ -271,8 +271,6 @@ latexmk -C
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
-## [Rubber](https://launchpad.net/rubber) {#c944641c}
-
 ## Perl スクリプト {#ce040874}
 
 - [platex して dvipdfmx するスクリプト](http://fjyuu.info/script/platexpdf/)
