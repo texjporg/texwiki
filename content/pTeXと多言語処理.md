@@ -73,15 +73,15 @@ Aleph/Omega の
 「参考文献」などの見出しまで各国の言語で出力してくれるという
 至れり尽くせりのパッケージです。インストールについては，基本的な言語のみで
 あれば [TwXWiki:新 pTeX と Babel](</新 pTeX とBabel/>) あるいは
-「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://www2.tba.t-com.ne.jp/ing/babel.html#gcinst)」や
-「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」
+「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://www2.tba.t-com.ne.jp/ing/babel.html)」や
+「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
 をご覧ください。
 
 ### 各パッケージによる方法 {#otpckgsd}
 
 文字がラテンアルファベットやキリル文字でない場合，
 各種パッケージを用いることになるかもしれません。欧米の諸言語であれば
-「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」
+「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
 でも取り扱っていますが，ここでは例としてグルジア語について紹介します。
 
 #### グルジア語 {#mxeldrul}
@@ -519,7 +519,7 @@ Perl をインストールしていない方は
 もインストールしておきましょう。
 
 PDF 閲覧の際には
-[Adobe Reader](http://www.adobe.com/jp/products/reader/) が必要です。
+[Adobe Reader](</Adobe Reader/>) が必要です。
 
 さて，中国語や韓國語
 などは[utf8toutf](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/utils/utf8toutf.zip)
@@ -1696,7 +1696,7 @@ platex -no-guess-input-enc -kanji=utf8 でコンパイルします。
 
 - 何かここの記述について間違いなどございましたらコメント欄にお願いします。 -- 書いた人 2005-12-14 (水) 16:33:57
 - 今回の修正事項はレイアウト上の単純ミスの訂正のみです。 -- 書いた人 2005-12-21 (水) 18:34:10
-- 多言語処理についてまとめて下さりありがとうございます（素晴らしいです!）。VnTeXについてですが、CTANでより新しいバージョンが配布されているようです（[VnTeX-3.02](ftp://ftp.ring.gr.jp/pub/text/CTAN/language/vietnamese/vntex/)）。[安田さんの解説](http://www.ceres.dti.ne.jp/~i-yasuda/tex/cjk.html#d)もあります。 -- 栗山雅俊 2005-12-26 (月) 20:58:48
+- 多言語処理についてまとめて下さりありがとうございます（素晴らしいです!）。VnTeXについてですが、CTANでより新しいバージョンが配布されているようです（[VnTeX-3.02](ftp://ftp.ring.gr.jp/pub/text/CTAN/language/vietnamese/vntex/)）。[安田さんの解説](http://yasuda.homeip.net/tex/cjk.html#d)もあります。 -- 栗山雅俊 2005-12-26 (月) 20:58:48
 - ありがとうございます。最新のものについても暇を見て試してみたいと思います。 -- 書いた人 2005-12-27 (火) 08:56:43
 - Utf82TeX をバージョンアップしました。 -- 安田 2005-12-28 (水) 10:49:28
 - ご報告ありがとう御座いました。新しい記述に暇を見つけて直していきたいと思います。 -- 書いた人 2005-12-28 (水) 18:31:31
