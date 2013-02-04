@@ -19,6 +19,10 @@ pukiwiki: "Linux/openSUSE"
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
+### TeX Live 2012 {#y0f6032d}
+
+- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
+
 ### openSUSE 12.2 {#i7a9f183}
 
 - [OpenSUSEで lyx から日本語 pdf 出力](http://computermawari.blogspot.jp/2012/10/opensuse-lyx-pdf.html)
