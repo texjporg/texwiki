@@ -86,6 +86,35 @@ release 9278 で，日本語入力の問題は修正されました．<br>
 - [TextMate LaTeX Extension Bundle](http://www.governatori.net/TextMate/)
 - [TextMateでLaTeX](http://d.hatena.ne.jp/eggxile/20091217/1261060064)
 
+### latexmk {#j8976683}
+
+- [latexmkの自動更新でプレビューも更新させる](http://ototorosama.hatenablog.com/entry/2013/02/04/224728)
+
+```
+$ latexmk -pvc hoge.tex
+```
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+#!/usr/bin/env perl
+$latex = 'platex -synctex=1 -interaction=nonstopmode';
+$bibtex = 'pbibtex';
+$makeindex = 'mendex';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
+$ps2pdf = 'ps2pdf %O %S %D';
+$pdf_mode = 3;
+$pdf_update_method = 4;
+$pdf_update_command = "open -a Preview %S;sleep 0.1;mate";
+```
+
+***
+
 ## 関連リンク {#ue5b58cc}
 
 - [TextMate2をビルドしてインストールする](http://treeapps.hatenablog.com/entry/2013/01/15/TextMate2%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B)
