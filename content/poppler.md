@@ -55,7 +55,8 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 のソースコードを取得して MinGW でビルドまたは [Qt5 の mingwバイナリ](http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/)をダウンロードしてインストールまたは最新版の Qt4 mingw バイナリをダウンロードしてインストールします．mingw バイナリをインストールした場合は，Qt の bin ディレクトリに PATH を通します．
+- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 または Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
+    <!-- - -[[Qt5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
 
 <!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
 
@@ -793,11 +794,9 @@ $ pushd poppler-0.22.0
 
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
-■ Qt5 をソースコードからビルドしてインストールした場合
-
-```
-$ ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
-```
+<!-- ■ Qt5 をソースコードからビルドしてインストールした場合 -->
+<!--  -->
+<!-- $ ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
 ■ Qt4 mingw バイナリをインストールした場合
 
