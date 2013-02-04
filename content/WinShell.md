@@ -157,6 +157,7 @@ UTF-8 を使用したい方は
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
+- 真魚\[まな\]
 - [xyzzy](/xyzzy/)
 - jEdit
 - [Geany](/Geany/)
