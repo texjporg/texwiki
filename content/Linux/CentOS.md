@@ -15,6 +15,7 @@ pukiwiki: "Linux/CentOS"
 
 ### TeX Live 2012 {#e1520aae}
 
+- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [TeX Live 2012をCentOS6にインストール](http://kame-t.hatenablog.jp/entry/2012/11/27/154813), [TeX Live 2012をSELinux Enforcingで動かす](http://kame-t.hatenablog.jp/entry/2012/12/05/141752)
 - [chef-texlive](https://github.com/tk0miya/chef-texlive)
 - [CentOS - TeX Live 2012 インストール！](http://www.mk-mode.com/wordpress/2012/09/15002016/)
