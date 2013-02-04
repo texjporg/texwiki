@@ -19,7 +19,7 @@ pukiwiki: "Mery"
 
 ## Mery とは {#acb30ba1}
 
-Mery は Windows 7, Vista, XP で動作する国産でフリーのシンプルなテキストエディタです．
+Mery はシンプルなテキストエディタです．
 
 Mery は
 
@@ -37,9 +37,13 @@ Mery は
 
 - [MeryWiki](http://www.haijin-boys.com/wiki/)
     - [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
-- [窓の杜 - Mery](http://www.forest.impress.co.jp/lib/offc/document/txteditor/mery.html)
+- [Mery - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/mery/)
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
 - [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
+
+### 動作環境 {#b792ae80}
+
+Windows 7, Vista, XP
 
 ## 既定のエンコード {#ccaf57fb}
 
@@ -72,22 +76,15 @@ LaTeX 文書で使用するエンコードを指定します．
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐タブの幅を調節する(J)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
-　　　　カスタムファイルフィルタ(F):<br>
+　　　　カスタムファイルフィルタ(<ins>F</ins>):<br>
 　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins><br>
 
 ***
 
 ## マクロ {#oa5f5cea}
 
-マクロを使うと [サクラエディタ](</サクラエディタ/>), gPad と同様に，LaTeX 環境を簡単に作ることができます．
-
-マクロは，メニューの \[マクロ(M)\] から選択することで実行できます．
-
-TeX Wiki のマクロは Windows 7 SP1 の W32TeX \[2012/10/15\] で動作します．
-
-Windows XP SP3 の W32TeX \[2012/10/15\] で動作しない場合は [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) に投稿されているマクロを使用してください．
-
-TeX Wiki のマクロが困難で長すぎると感じる方は分割して短くして使用してください．
+マクロを使うと LaTeX 環境を簡単に作ることができます．<br>
+マクロは，メニューの \[マクロ(M)\] から選択または F4 キーで実行できます．<br>
 
 ### pdfpLaTeX.js {#w4e337a9}
 
@@ -102,26 +99,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
@@ -156,11 +141,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　<span style="color:White;background-color:#1188FF;">pdfpLaTeX.js　　　　　　　　　　　　　　　</span><br>
@@ -182,26 +168,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
@@ -237,11 +211,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -295,11 +270,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -355,11 +331,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -414,11 +391,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -470,15 +448,16 @@ main();
 <br>
 
 　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+U</ins><br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+Y</ins><br>
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -487,6 +466,69 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">LuaLaTeX.js　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+***
+
+### LuaJITLaTeX.js {#yfd8173e}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + luajitlatex;
+
+  var ok = window.Confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+\[マクロ(M)\]-\[カスタマイズ(C)...\]-\[新規作成(N)\] で LuaJITLaTeX.js を選択します．
+
+\[ツール(T)\]-\[オプション(O)...\]-\[キーボード\] でショートカットキーを追加して割り当てます．
+
+***
+
+<span style="color:Black;background-color:#5F9EA0;"><ins>　<span style="color:White;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 基本　\]\[ 表示　\]\[ 記号　\]</ins></span><strong>\[ キーボード \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 履歴　\]\[ 整形　\]</ins></span><br>
+
+<br>
+
+　　　カテゴリ(<ins>C</ins>)：　　　　　　　　　　　　　　　　　　新しいキー(<ins>N</ins>)：<br>
+　　　<span style="color:Black;background-color:#EEEEEE;">\[マクロ　　　　　　　　　　　　　　　　　▼\]</span>　　　<ins>Shift+Alt+U</ins><br>
+
+<br>
+
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
+　　　記録/停止<br>
+　　　実行<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　編集<br>
+　　　選択<br>
+　　　これを選択<br>
+　　　マクロのカスタマイズ<br>
+　　　pdfpLaTeX.js<br>
+　　　pdfpLaTeX2.js<br>
+　　　pdfupLaTeX.js<br>
+　　　pdfupLaTeX2.js<br>
+　　　pdfLaTeX.js<br>
+　　　LuaLaTeX.js<br>
+　　　<span style="color:White;background-color:#1188FF;">LuaJITLaTeX.js　　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -535,11 +577,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -548,6 +591,7 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
+　　　LuaJITLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">XeLaTeX.js　　　　　　　　　　　　　　　</span><br>
 
 <br>
@@ -567,26 +611,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var bibtex = "pbibtex -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      bibtex = "pbibtex -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      bibtex = "pbibtex -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      bibtex = "pbibtex -kanji=jis  -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      bibtex = "pbibtex -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      bibtex = "pbibtex -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      bibtex = "pbibtex -kanji=jis  -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    bibtex = "pbibtex -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    bibtex = "pbibtex -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    bibtex = "pbibtex -kanji=jis  -sjis-terminal";
   }
   bibtex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
@@ -620,11 +652,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -633,6 +666,7 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
+　　　LuaJITLaTeX.js<br>
 　　　XeLaTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">pBibTeX.js　　　　　　　　　　　　　　　　</span><br>
 
@@ -683,11 +717,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -696,6 +731,7 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
+　　　LuaJITLaTeX.js<br>
 　　　XeLaTeX.js<br>
 　　　pBibTeX.js<br>
 　　　<span style="color:White;background-color:#1188FF;">upBibTeX.js　　　　　　　　　　　　　　　　</span><br>
@@ -717,26 +753,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var makeindex = "mendex -T";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      makeindex = "mendex -U -T";
-    } else if (encoding == meEncodingSJIS) {
-      makeindex = "mendex -S -T";
-    } else if (encoding == meEncodingEUC) {
-      makeindex = "mendex -E -T";
-    } else if (encoding == meEncodingJIS) {
-      makeindex = "mendex -J -T";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      makeindex = "mendex -U -T";
-    } else if (encoding == meEncodingShiftJIS) {
-      makeindex = "mendex -S -T";
-    } else if (encoding == meEncodingEUC) {
-      makeindex = "mendex -E -T";
-    } else if (encoding == meEncodingJIS) {
-      makeindex = "mendex -J -T";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    makeindex = "mendex -U -T";
+  } else if (encoding == meEncodingShiftJIS) {
+    makeindex = "mendex -S -T";
+  } else if (encoding == meEncodingEUC) {
+    makeindex = "mendex -E -T";
+  } else if (encoding == meEncodingJIS) {
+    makeindex = "mendex -J -T";
   }
   makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
@@ -770,11 +794,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -783,6 +808,7 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
+　　　LuaJITLaTeX.js<br>
 　　　XeLaTeX.js<br>
 　　　pBibTeX.js<br>
 　　　upBibTeX.js<br>
@@ -804,20 +830,7 @@ function main()
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var currentTeXFile = document.FullName;
   var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var texworks = "C:/w32tex/share/texworks/TeXworks.exe";
-  var mainTeXDir;
-  var cd;
-  var cmd;
-  var args;
-
-  if (!fso.FileExists(texworks)) {
-    texworks = window.Prompt("Input the path to TeXworks.exe.", "TeXworks.exe");
-    if (!fso.FileExists(texworks)) {
-      texworks = "TeXworks.exe";
-    }
-  }
-
-  texworks = ["\"", texworks, "\""].join("");
+  var texworks = "texworks";
 
   if (!fso.FileExists(pdfFile)) {
     var mainTeXFile = window.Prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
@@ -826,12 +839,12 @@ function main()
     }
   }
 
-  mainTeXDir = fso.GetParentFolderName(pdfFile);
-  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  var mainTeXDir = fso.GetParentFolderName(pdfFile);
+  var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
   pdfFile = ["\"", pdfFile, "\""].join("");
 
-  args = texworks + " " + pdfFile;
-  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  var args = texworks + " " + pdfFile;
+  var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
   new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
@@ -857,11 +870,12 @@ main();
 
 <br>
 
-　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
+　　　コマンド(<ins>O</ins>)：　　　　　　　　　　　　　　　　　　現在の割り当て：<br>
 　　　記録/停止<br>
 　　　実行<br>
-　　　名前を付けて保存<br>
+　　　名前を付けて保存　　　　　　　　　　　　　　現在のキー(<ins>U</ins>)：<br>
 　　　編集<br>
+　　　選択<br>
 　　　これを選択<br>
 　　　マクロのカスタマイズ<br>
 　　　pdfpLaTeX.js<br>
@@ -870,6 +884,7 @@ main();
 　　　pdfupLaTeX2.js<br>
 　　　pdfLaTeX.js<br>
 　　　LuaLaTeX.js<br>
+　　　LuaJITLaTeX.js<br>
 　　　XeLaTeX.js<br>
 　　　pBibTeX.js<br>
 　　　upBibTeX.js<br>
@@ -880,16 +895,16 @@ main();
 
 ***
 
-## その他の便利な TeX 用マクロ {#w4fa8cd3}
-
-### [Beta, Build: 2.0.9.3936とマクロ](http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment) {#ebdddd03}
-
-### [テキストエディタMery用LaTeXコンパイルマクロ](http://blog.kassyi.com/2011/10/merylatex.html) {#ffd665b4}
-
-### MeryからTeXのコンパイル＆PDF生成ができるようにする (LaTeXMacro.js + makepdf.ps1) {#n2ac0dc8}
-
-- [TexをWindowsで使う](http://blog.kassyi.com/2011/05/texwindows_05.html)
-- [TeXをWindowsで使う(まとめ)](http://blog.kassyi.com/2011/05/texwindows.html)
+<!-- *その他の便利な TeX 用マクロ [#w4fa8cd3] -->
+<!--  -->
+<!-- **[[Beta, Build: 2.0.9.3936とマクロ:http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment]] [#ebdddd03] -->
+<!--  -->
+<!-- **[[テキストエディタMery用LaTeXコンパイルマクロ:http://blog.kassyi.com/2011/10/merylatex.html]] [#ffd665b4] -->
+<!--  -->
+<!-- **MeryからTeXのコンパイル＆PDF生成ができるようにする (LaTeXMacro.js + makepdf.ps1) [#n2ac0dc8] -->
+<!--  -->
+<!-- -[[TexをWindowsで使う:http://blog.kassyi.com/2011/05/texwindows_05.html]] -->
+<!-- -[[TeXをWindowsで使う(まとめ):http://blog.kassyi.com/2011/05/texwindows.html]] -->
 
 ## スクリプト {#jd5ec718}
 
@@ -1113,31 +1128,19 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -1166,32 +1169,20 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -1221,7 +1212,7 @@ function main()
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -1252,7 +1243,7 @@ function main()
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -1281,7 +1272,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
@@ -1310,9 +1301,38 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
+
+  var ok = window.Confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### LuaJITLaTeXA.js {#occ79e7c}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex" + " " + ["\"", b, "\""].join("");
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + luajitlatex + " && " + pdfopen;
 
   var ok = window.Confirm(cmd);
   if (ok) {
@@ -1339,7 +1359,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
 
@@ -1372,26 +1392,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -src-specials -guess-input-enc -sjis-terminal";
   var encoding = document.Encoding;
-  if (parseInt(editor.Version) < 2) {
-    if (encoding == meEncodingUTF8N || encoding == meEncodingUTF8) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingSJIS) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
-  } else {
-    if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-    } else if (encoding == meEncodingShiftJIS) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
-    } else if (encoding == meEncodingEUC) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
-    } else if (encoding == meEncodingJIS) {
-      latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
-    }
+  if (encoding == meEncodingUTF8WithoutSignature || encoding == meEncodingUTF8WithSignature || encoding == meEncodingUTF8) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (encoding == meEncodingShiftJIS) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (encoding == meEncodingEUC) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (encoding == meEncodingJIS) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
