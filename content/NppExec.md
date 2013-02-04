@@ -516,7 +516,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; start C:\w32tex\share\texworks\TeXworks.exe "$(NAME_PART).pdf"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo texworks "$(NAME_PART).pdf" | cmd<br>
 
 <br>
 
