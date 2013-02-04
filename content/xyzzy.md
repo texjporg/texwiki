@@ -42,7 +42,8 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
 レジストリは変更しませんので，少しでも興味のある方は試してみてはいかがでしょうか？<br>
 
-- [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります (公式サイト)
+- [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.com/)
+- [やる気のないぺぇじ](http://www.jsdlab.co.jp/~kamei/) ← ごくまれにやる気がでることがあります
 
 ### 動作環境 {#q77fe1cc}
 
@@ -74,7 +75,7 @@ xyzzy+ は Ms-PL です．<br>
         - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
     - [xyzzy-022](http://xyzzy-022.github.com/)
         - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
-        - [窓の杜 - xyzzy](http://www.forest.impress.co.jp/lib/offc/document/txteditor/xyzzy.html)
+        - [xyzzy - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/xyzzy/)
             <!-- - -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
             <!-- - --[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
             <!-- - -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
