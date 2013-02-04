@@ -791,20 +791,7 @@ function main()
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var currentTeXFile = Editor.ExpandParameter("$F");
   var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var texworks = "C:/w32tex/share/texworks/TeXworks.exe";
-  var mainTeXDir;
-  var cd;
-  var cmd;
-  var args;
-
-  if (!fso.FileExists(texworks)) {
-    texworks = Editor.InputBox("Input the path to TeXworks.exe.", "TeXworks.exe", 255);
-    if (!fso.FileExists(texworks)) {
-      texworks = "TeXworks.exe";
-    }
-  }
-
-  texworks = ["\"", texworks, "\""].join("");
+  var texworks = "texworks";
 
   if (!fso.FileExists(pdfFile)) {
     var mainTeXFile = Editor.InputBox("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"), 255);
@@ -813,12 +800,12 @@ function main()
     }
   }
 
-  mainTeXDir = fso.GetParentFolderName(pdfFile);
-  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  var mainTeXDir = fso.GetParentFolderName(pdfFile);
+  var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
   pdfFile = ["\"", pdfFile, "\""].join("");
 
-  args = texworks + " " + pdfFile;
-  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  var args = texworks + " " + pdfFile;
+  var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
   Editor.ExecCommand(cmd, 1);
 }
 
