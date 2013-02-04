@@ -24,7 +24,7 @@ pukiwiki: "秀丸エディタ"
 - [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
     - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
     - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
-- [窓の杜 - 秀丸エディタ](http://www.forest.impress.co.jp/lib/offc/document/txteditor/hidemaru.html)
+- [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
 
 ### 動作環境 {#d2be5bb8}
 
