@@ -13,12 +13,16 @@ pukiwiki: "gPad"
 
 ## gPad とは {#yc9df0b3}
 
-gPad は Windows 7, Vista, XP, 2000 で動作する国産でフリーの MDI 型テキストエディタです．
+gPad は MDI 型テキストエディタです．
 
 - [mFactory](http://mfactory.me/) 公式サイト
 - [FrontPage&nbsp;|&nbsp;gPad Wiki](http://gpad.mfactory.me/)
-- [窓の杜 - gPad](http://www.forest.impress.co.jp/lib/offc/document/txteditor/gpad.html)
+- [gPad - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/gpad/)
 - [Vector - gPad](http://www.vector.co.jp/soft/winnt/writing/se478089.html)
+
+### 動作環境 {#d9fa4265}
+
+Windows 8, 7, Vista, XP, 2000
 
 ## 既定の文字コード {#oe5e7d80}
 
@@ -33,7 +37,7 @@ LaTeX 文書で使用する文字コードを指定します．
 
 ## マクロ {#w9b67570}
 
-マクロを使うと [サクラエディタ](</サクラエディタ/>) と同様に，LaTeX 環境を簡単に作ることができます．
+マクロを使うと LaTeX 環境を簡単に作ることができます．
 
 ### pdfpLaTeX.js {#b88feabd}
 
@@ -215,6 +219,35 @@ main();
 ***
 
 ショートカット
+: Shift+Alt+Y
+
+### LuaJITLaTeX.js {#f63f5aa7}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
+  var cmd = "cmd /c " + cd + " && " + luajitlatex;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+ショートカット
 : Shift+Alt+U
 
 ### XeLaTeX.js {#n5d84d27}
@@ -347,20 +380,7 @@ function main()
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var currentTeXFile = document.FullName;
   var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var texworks = "C:/w32tex/share/texworks/TeXworks.exe";
-  var mainTeXDir;
-  var cd;
-  var cmd;
-  var args;
-
-  if (!fso.FileExists(texworks)) {
-    texworks = prompt("Input the path to TeXworks.exe.", "TeXworks.exe");
-    if (!fso.FileExists(texworks)) {
-      texworks = "TeXworks.exe";
-    }
-  }
-
-  texworks = ["\"", texworks, "\""].join("");
+  var texworks = "texworks";
 
   if (!fso.FileExists(pdfFile)) {
     var mainTeXFile = prompt("Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
@@ -369,12 +389,12 @@ function main()
     }
   }
 
-  mainTeXDir = fso.GetParentFolderName(pdfFile);
-  cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+  var mainTeXDir = fso.GetParentFolderName(pdfFile);
+  var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
   pdfFile = ["\"", pdfFile, "\""].join("");
 
-  args = texworks + " " + pdfFile;
-  cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+  var args = texworks + " " + pdfFile;
+  var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
   new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
 }
 
@@ -519,7 +539,7 @@ function main()
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -551,7 +571,7 @@ function main()
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -581,7 +601,7 @@ function main()
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvipdfm + " && " + pdfopen;
 
@@ -612,7 +632,7 @@ function main()
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
   var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + latex + " && " + dvips + " && " + ps2pdf + " && " + pdfopen;
 
@@ -641,7 +661,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + pdflatex + " && " + pdfopen;
 
@@ -670,9 +690,38 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + lualatex + " && " + pdfopen;
+
+  var ok = confirm(cmd);
+  if (ok) {
+    document.Save();
+    new ActiveXObject("WScript.Shell").Run(cmd, 1, true);
+  }
+}
+
+main();
+```
+
+***
+
+### LuaJITLaTeXA.js {#x4fb0b25}
+
+***
+
+```
+function main()
+{
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var c = document.Path;
+  var b = fso.GetBaseName(document.Name);
+  var cd = "cd /d " + ["\"", c, "\""].join("");
+  var luajitlatex = "luajitlatex" + " " + ["\"", b, "\""].join("");
+  var pdf = ["\"", b, ".pdf", "\""].join("");
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
+  var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
+  var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + luajitlatex + " && " + pdfopen;
 
   var ok = confirm(cmd);
   if (ok) {
@@ -699,7 +748,7 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
   var pdf = ["\"", b, ".pdf", "\""].join("");
-  var pdfopen = "pdfopen --rxi --file " + pdf;
+  var pdfopen = "powershell -Command \"& {$pdf = \"\"" + pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
   var pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + pdf + " && pdfclose --rxi --file " + pdf;
   var cmd = "cmd /c " + cd + " && " + pdfclose + " & " + xelatex + " && " + pdfopen;
 
