@@ -30,7 +30,7 @@ AkelPad はコンパクトで高速なテキストエディタです．
 ## スクリプト {#fe72e81b}
 
 AkelFiles\Plugs\Scripts フォルダーにスクリプトを配置します．<br>
-\[Options\]-\[Plug-ins...\] の Plugin::Function から Scripts::Main を選択して \[Call\] をクリックします．<br>
+\[オプション(O)\]-\[プラグイン(N)...\] の プラグイン::関数 から Scripts::Main を選択して \[呼び出し\] をクリックします．<br>
 Scripts から実行するスクリプトを選択して \[Exec\] をクリックします．<br>
 
 ### pdfpLaTeX.js {#mfc340cc}
