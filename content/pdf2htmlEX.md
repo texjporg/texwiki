@@ -636,11 +636,8 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 ## 関連リンク {#m74160f6}
 
-- [WangLu's Tech Blog: pdf2htmlEX 的搜索结果:](http://coolwanglu.blogspot.com/search?q=pdf2htmlEX)
 - [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
 - [巫璐赛](http://lang-8.com/393787)
-    - [160 面白いこと、日本のプログラマ達](http://lang-8.com/393787/journals/1699609/)
-    - [152 デモストレーション](http://lang-8.com/393787/journals/1665803/)
     - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
