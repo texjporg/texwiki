@@ -18,17 +18,18 @@ pukiwiki: "秀丸エディタ"
 
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
-        - [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
-        - [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
     - [twitter](http://twitter.com/hidemaruinfo)
-- [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
-    - [DDE関連マクロ](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/180_Dde.html)
-    - [COMの呼び出し](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/230_Com.html)
 - [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
+- [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
 
 ### 動作環境 {#d2be5bb8}
 
 Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
+
+### ChangeLog {#k3ce2677}
+
+- [秀丸エディタ改版履歴](http://hide.maruo.co.jp/software/hidemaruhist.html)
+- [秀丸エディタβバージョン改版履歴](http://hide.maruo.co.jp/software/hidemaruhist_pre.html)
 
 ## 秀丸エディタフリー制度 {#faebc82e}
 
@@ -45,6 +46,8 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
         - [hmonig.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-18)
 
 ## マクロ {#m32041fb}
+
+- [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
