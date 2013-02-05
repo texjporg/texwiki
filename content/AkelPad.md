@@ -17,14 +17,15 @@ AkelPad はコンパクトで高速なテキストエディタです．
 
 - [AkelPad](http://akelpad.sourceforge.net/)
 - [AkelPad | Free Development software downloads at SourceForge.net](http://sourceforge.net/projects/akelpad/)
+- [AkelPad 4 - User's Manual](http://akelpad.cvs.sourceforge.net/viewvc/akelpad/akelpad_4/AkelFiles/Docs/AkelHelp-Eng.htm)
 
 ### 動作環境 {#yf7ac403}
 
-Windows 7, Vista, 2003, XP, 2000, NT 4.0, Me, 98, 95
+[Compatibility](http://akelpad.cvs.sourceforge.net/viewvc/akelpad/akelpad_4/AkelFiles/Docs/AkelHelp-Eng.htm#ch0) を参照．
 
-```
+### License {#r4837243}
 
-```
+[BSD 2-Clause](http://akelpad.cvs.sourceforge.net/viewvc/akelpad/akelpad_4/AkelFiles/Docs/AkelHelp-Eng.htm#ch8)
 
 ## スクリプト {#fe72e81b}
 
@@ -44,11 +45,21 @@ function main()
   var b = fso.GetBaseName(AkelPad.GetEditFile(0));
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
+  var codepage = AkelPad.GetEditCodePage(0);
+  if (codepage == 65001) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (codepage == 932) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if (codepage == 20932) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if (codepage == 50220 || codepage == 50221 || codepage == 50222) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+  }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
 
-  var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 65);
+  var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
   if (ok == 1) {
     AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
     AkelPad.Exec(cmd);
