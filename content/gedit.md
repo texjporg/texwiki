@@ -147,6 +147,7 @@ Latexmk: -norc bad option
 ```
 
 と表示されタイプセットできません．<br>
+Ubuntu 12.10 の TeX Live は Latexmk Version 4.24 ですが -norc オプションを外せば使用出来るようです． → [Ubuntu 12.10:geditの外部ツールにLatexmk5を追加](http://blog.livedoor.jp/ti5942/archives/7722539.html)<br>
 
 #### Latexmk {#a2b5d8d4}
 
