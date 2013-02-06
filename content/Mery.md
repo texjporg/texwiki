@@ -39,6 +39,7 @@ Mery は
     - [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
 - [Mery - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/mery/)
 - [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
+- [Meryのマクロ実験室](http://merysmacro.seesaa.net/)
 - [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
 
 ### 動作環境 {#b792ae80}
