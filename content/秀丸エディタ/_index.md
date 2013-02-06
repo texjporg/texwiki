@@ -96,6 +96,130 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 <!-- -[[飛鳥 (ひちょう) HiTeX:http://www.yatex.org/HiTeX/]] -->
 <!-- (安田 晴行 さん) -->
 
+### pdfpLaTeX.mac {#h4eb5579}
+
+***
+
+```
+call main;
+endmacro;
+
+main:
+  ##fso = createobject("Scripting.FileSystemObject");
+  $$c = callmethod_returnstr(##fso, "GetParentFolderName", filename2);
+  $$b = callmethod_returnstr(##fso, "GetBaseName", filename2);
+  $$cd = "cd /d " + "\"" + $$c + "\"";
+  $$latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
+  if ((charset & 0x3F) == 6) {
+    $$latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if ((charset & 0x3F) == 1) {
+    $$latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if ((charset & 0x3F) == 3) {
+    $$latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if ((charset & 0x3F) == 4) {
+    $$latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
+  }
+  $$latex = $$latex + " " + "-jobname=" + "\"" + $$b + "\"" + " " + "\"" + $$b + "\"";
+  $$dvipdfm = "dvipdfmx" + " " + "\"" + $$b + "\"";
+  $$cmd = "cmd /c " + $$cd + " && " + $$latex + " && " + $$dvipdfm;
+
+  question $$cmd;
+  if (result == yes) {
+    save;
+    ##shell = createobject("WScript.Shell");
+    callmethod ##shell, "Run", $$cmd;
+    releaseobject ##shell;
+  }
+
+  releaseobject ##fso;
+```
+
+***
+
+### TeXworks.mac {#r100b824}
+
+***
+
+```
+call main;
+endmacro;
+
+main:
+  ##fso = createobject("Scripting.FileSystemObject");
+  ##re = createobject("VBScript.RegExp");
+  $$currentTeXFile = filename2;
+  setpropstr ##re, "Pattern", "\.[^.]*$";
+  $$pdfFile = callmethod_returnstr(##re, "Replace", $$currentTeXFile, ".pdf");
+  $$texworks = "texworks";
+
+  if (!existfile($$pdfFile)) {
+    $$mainTeXFile = input("Input the path to main TeX file.", callmethod_returnstr(##re, "Replace", $$pdfFile, ".tex"));
+    if ($$mainTeXFile != "") {
+      $$pdfFile = callmethod_returnstr(##re, "Replace", $$mainTeXFile, ".pdf");
+    }
+  }
+
+  $$mainTeXDir = callmethod_returnstr(##fso, "GetParentFolderName", $$pdfFile);
+  $$cd = "cd /d " + "\"" + $$mainTeXDir + "\"";
+  $$pdfFile = "\"" + $$pdfFile + "\"";
+
+  $$args = $$texworks + " " + $$pdfFile;
+  $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
+  ##shell = createobject("WScript.Shell");
+  callmethod ##shell, "Run", $$cmd;
+
+  releaseobject ##shell;
+  releaseobject ##re;
+  releaseobject ##fso;
+```
+
+***
+
+## Adobe Reader との連携 {#z5e51515}
+
+### pdfpLaTeXA.mac {#q37b5bf9}
+
+***
+
+```
+call main;
+endmacro;
+
+main:
+  ##fso = createobject("Scripting.FileSystemObject");
+  $$c = callmethod_returnstr(##fso, "GetParentFolderName", filename2);
+  $$b = callmethod_returnstr(##fso, "GetBaseName", filename2);
+  $$cd = "cd /d " + "\"" + $$c + "\"";
+  $$latex = "platex -guess-input-enc -sjis-terminal";
+  if ((charset & 0x3F) == 6) {
+    $$latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if ((charset & 0x3F) == 1) {
+    $$latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
+  } else if ((charset & 0x3F) == 3) {
+    $$latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
+  } else if ((charset & 0x3F) == 4) {
+    $$latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
+  }
+  $$latex = $$latex + " " + "-jobname=" + "\"" + $$b + "\"" + " " + "\"" + $$b + "\"";
+  $$dvipdfm = "dvipdfmx" + " " + "\"" + $$b + "\"";
+  $$pdf = "\"" + $$b + ".pdf" + "\"";
+  $$pdfopen = "powershell -Command \"& {$pdf = \"\"" + $$pdf + "\"\"; $pages = (pdfinfo $pdf | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}\"";
+  $$pdfclose = "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file " + $$pdf + " && pdfclose --rxi --file " + $$pdf;
+  $$cmd = "cmd /c " + $$cd + " && " + $$pdfclose + " & " + $$latex + " && " + $$dvipdfm + " && " + $$pdfopen;
+
+  question $$cmd;
+  if (result == yes) {
+    save;
+    ##shell = createobject("WScript.Shell");
+    callmethod ##shell, "Run", $$cmd;
+    releaseobject ##shell;
+  }
+
+  releaseobject ##fso;
+```
+
+***
+
 ## スクリプト {#w87ef5ac}
 
 ### Happy {#q96fb99f}
