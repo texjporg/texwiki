@@ -19,6 +19,7 @@ pukiwiki: "秀丸エディタ"
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
     - [twitter](http://twitter.com/hidemaruinfo)
+- [秀丸エディタヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemaru/html/010_Intro.html)
 - [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
 - [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
 
@@ -174,6 +175,70 @@ main:
 ```
 
 ***
+
+## SumatraPDF との連携 {#r1840cf4}
+
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#k083ca2e}
+
+#### SumatraPDF.mac {#y16d42fd}
+
+***
+
+```
+call main;
+endmacro;
+
+main:
+  ##fso = createobject("Scripting.FileSystemObject");
+  ##re = createobject("VBScript.RegExp");
+  $$hidemaru = hidemarudir + "\\Hidemaru.exe";
+  $$currentTeXFile = filename2;
+  setpropstr ##re, "Pattern", "\.[^.]*$";
+  $$pdfFile = callmethod_returnstr(##re, "Replace", $$currentTeXFile, ".pdf");
+  $$line = str(lineno);
+  $$sumatraPDF = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+
+  if (!existfile($$sumatraPDF)) {
+    $$sumatraPDF = "C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
+    if (!existfile($$sumatraPDF)) {
+      $$sumatraPDF = input("Input the path to SumatraPDF.exe.", "SumatraPDF.exe");
+      if (!existfile($$sumatraPDF)) {
+        $$sumatraPDF = "SumatraPDF.exe";
+      }
+    }
+  }
+
+  $$sumatraPDF = "\"" + $$sumatraPDF + "\"";
+
+  if (!existfile($$pdfFile)) {
+    $$mainTeXFile = input("Input the path to main TeX file.", callmethod_returnstr(##re, "Replace", $$pdfFile, ".tex"));
+    if ($$mainTeXFile != "") {
+      $$pdfFile = callmethod_returnstr(##re, "Replace", $$mainTeXFile, ".pdf");
+    }
+  }
+
+  $$mainTeXDir = callmethod_returnstr(##fso, "GetParentFolderName", $$pdfFile);
+  $$cd = "cd /d " + "\"" + $$mainTeXDir + "\"";
+  $$currentTeXFile = "\"" + $$currentTeXFile + "\"";
+  $$pdfFile = "\"" + $$pdfFile + "\"";
+
+  $$args = $$sumatraPDF + " -reuse-instance " + $$pdfFile + " -inverse-search \"\\\"" + $$hidemaru + "\\\" /m3 /j%l \\\"%f\\\"\"" + " -forward-search " + $$currentTeXFile + " " + $$line;
+  $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
+  ##shell = createobject("WScript.Shell");
+  callmethod ##shell, "Run", $$cmd;
+
+  releaseobject ##shell;
+  releaseobject ##re;
+  releaseobject ##fso;
+```
+
+***
+
+### inverse search {#zd12c371}
+
+```
+"C:\Program Files\Hidemaru\Hidemaru.exe" /m3 /j%l "%f"
+```
 
 ## Adobe Reader との連携 {#z5e51515}
 
