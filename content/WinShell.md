@@ -157,6 +157,7 @@ UTF-8 を使用したい方は
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
+- AkelPad
 - 真魚\[まな\]
 - [xyzzy](/xyzzy/)
 - jEdit
@@ -164,7 +165,7 @@ UTF-8 を使用したい方は
 - [gedit](/gedit/)
 - Gummi
 
-などの UTF-8 で問題の発生しないオープンソースのエディタを使用するかまたは WinShell 3.1 (旧バージョン) をダウンロードしてください．
+などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用するかまたは WinShell 3.1 (旧バージョン) をダウンロードしてください．
 
 - [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
 - [Index of /mounir/anits/latex/winshell](http://wwwesto.ump.ma/mounir/anits/latex/winshell/) WinShell 3.1 (旧バージョン)
