@@ -39,7 +39,7 @@ OS（[Linux OS](http://kernel.org/)，BSD 系 OS，[OpenIndiana](http://openindi
 p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキーでは pTeX，pLaTeX
 およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
-を無償配布し，自社の本の製作に利用しています。
+を無償配布し，自社の本の製作に利用していました。
 
 - 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX,upLaTeX](/upTeX,upLaTeX/) が利用できます。
 - Unicode に完全対応したものには [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX, [XeTeX, XeLaTeX](/XeTeX/) があります。
@@ -93,7 +93,7 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 PC 初心者にはこれが最も難しいところです。この TeX Wiki に
 OS ごとのインストール法が詳しく書かれていますので，ご参照ください。特に
 Microsoft Windows については
-[TeXWiki:Microsoft Windows](</Microsoft Windows/>) をご覧ください。
+[Microsoft Windows - TeX Wiki](</Microsoft Windows/>) をご覧ください。
 
 インストール不要で TeX が使えるウェブページ「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」もあります。
 
