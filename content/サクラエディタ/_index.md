@@ -59,7 +59,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 ### リリース情報 {#qe1b7074}
 
-[What's New](http://sakura-editor.sourceforge.net/) を参照．<br>
+[What's New](http://sakura-editor.sourceforge.net/), [SakuraEditorWiki](http://sakura.qp.land.to/) を参照．<br>
 
 ### ChangeLog {#l31b371d}
 
