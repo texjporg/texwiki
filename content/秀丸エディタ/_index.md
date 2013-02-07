@@ -19,7 +19,8 @@ pukiwiki: "秀丸エディタ"
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
     - [twitter](http://twitter.com/hidemaruinfo)
-- [秀丸エディタヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemaru/html/010_Intro.html)
+- [秀まるおのホームページ(サイトー企画) ヘルプファイルサイト](http://homepage3.nifty.com/kons/hidemaru/helpsite/)
+    - [秀丸エディタヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemaru/)
 - [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
 - [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
 
@@ -48,7 +49,8 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ## マクロ {#m32041fb}
 
-- [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/html/010_Intro.html)
+- [秀まるおのホームページ(サイトー企画) ヘルプファイルサイト](http://homepage3.nifty.com/kons/hidemaru/helpsite/)
+    - [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/)
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
@@ -178,6 +180,8 @@ main:
 
 ## SumatraPDF との連携 {#r1840cf4}
 
+祝鳥は SumatraPDF の forward and inverse search に対応しています．
+
 ### forward and inverse search (SumatraPDF を前面に表示したい場合) {#k083ca2e}
 
 #### SumatraPDF.mac {#y16d42fd}
@@ -236,8 +240,17 @@ main:
 
 ### inverse search {#zd12c371}
 
+- 32bit版 Windows で 32bit版の秀丸エディタを使用する場合
+- 64bit版 Windows で 64bit版の秀丸エディタを使用する場合
+
 ```
 "C:\Program Files\Hidemaru\Hidemaru.exe" /m3 /j%l "%f"
+```
+
+- 64bit版 Windows で 32bit版の秀丸エディタを使用する場合
+
+```
+"C:\Program Files (x86)\Hidemaru\Hidemaru.exe" /m3 /j%l "%f"
 ```
 
 ## Adobe Reader との連携 {#z5e51515}
