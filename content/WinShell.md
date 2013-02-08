@@ -76,8 +76,8 @@ WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応�
 
 - [Download : WinShell](http://www.winshell.org/modules/download/)
     WinShell 最新版
+    <!-- -[[WinShell332Portable （zip）:http://www.htc.nagoya-u.ac.jp/~yamamoto/lecture/11/]] (WinShell 3.3.2.4) -->
 
-- [WinShell332Portable （zip）](http://www.htc.nagoya-u.ac.jp/~yamamoto/lecture/11/) (WinShell 3.3.2.4)
 - [CTAN ミラー](https://mirror.ctan.org/help/Catalogue/entries/winshell.html)
     国内の WinShell ミラーサイト
 
