@@ -115,6 +115,13 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+  } else {
+    $pdf_previewer = 'texworks';
+  }
 } else {
   $latex = 'platex -synctex=1';
   $bibtex = 'pbibtex';
@@ -151,6 +158,13 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+  } else {
+    $pdf_previewer = 'texworks';
+  }
 } else {
   $latex = 'platex -synctex=1 -interaction=nonstopmode';
   $bibtex = 'pbibtex';
@@ -187,6 +201,13 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+  } else {
+    $pdf_previewer = 'texworks';
+  }
 } else {
   $latex = 'uplatex -synctex=1';
   $bibtex = 'upbibtex';
@@ -223,6 +244,13 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+  } else {
+    $pdf_previewer = 'texworks';
+  }
 } else {
   $latex = 'uplatex -synctex=1 -interaction=nonstopmode';
   $bibtex = 'upbibtex';
