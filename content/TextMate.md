@@ -110,7 +110,7 @@ $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
 $ps2pdf = 'ps2pdf %O %S %D';
 $pdf_mode = 3;
 $pdf_update_method = 4;
-$pdf_update_command = "open -a Preview %S;sleep 0.1;mate";
+$pdf_update_command = 'open -a Preview %S;sleep 0.1;mate';
 ```
 
 ***
