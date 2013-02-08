@@ -332,12 +332,9 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 - [TeXworks](/TeXworks/) の場合，[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．exeファイル名を C:\w32tex\share\texworks\TeXworks.exe (\[参照(B)...\] で TeXworks.exe を検索) とします．
 - [SumatraPDF](/SumatraPDF/) の場合，exeファイル名を "C:\Program Files\SumatraPDF\SumatraPDF.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe") (\[参照(B)...\] で SumatraPDF.exe を検索) とします．
 - Chrome PDF Viewer, Windows 8/7/Vista の場合，exeファイル名を powershell.exe とし，コマンドラインを -Command "&amp; {$s = echo %s.pdf;$p = \[System.IO.Path\]::GetFullPath($s);rundll32 shell32,ShellExec_RunDLL "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe" --new-window $p}" とします．
-- [Adobe Reader](</Adobe Reader/>) XI，WinShell 3.3.2.5 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします．
-- [Adobe Reader](</Adobe Reader/>) XI，WinShell 3.3.2.5 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (64bit版Windowsの場合は /c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf") とします．
-- [Adobe Reader](</Adobe Reader/>) X，WinShell 3.3.2.3 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします．
-- [Adobe Reader](</Adobe Reader/>) X，WinShell 3.3.2.3 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" (64bit版Windowsの場合は /c start "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf") とします．
+- [Adobe Reader](</Adobe Reader/>) の場合，exeファイル名を "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします．
 
-SyncTeX を使用して SumatraPDF で forward search を行う場合は PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．<br>
+SyncTeX を使用して SumatraPDF で forward search を行う場合や Adobe Reader を使用する場合は PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．<br>
 Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
 PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
@@ -436,7 +433,7 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 
 ***
 
-#### Adobe Reader XI，WinShell 3.3.2.5 以降のバージョンの場合 {#xdafa678}
+#### Adobe Reader の場合 {#xdafa678}
 
 ***
 
@@ -458,99 +455,6 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
 　　コマンドライン 　<ins>"%s.pdf"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-#### Adobe Reader XI，WinShell 3.3.2.5 よりも前のバージョンの場合 {#vd5193b7}
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>cmd.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>/c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (32bit 版 Windows の場合) <ins>/c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (64bit 版 Windows の場合)<br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-#### Adobe Reader X，WinShell 3.3.2.3 以降のバージョンの場合 {#h749d42d}
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins> (32bit 版 Windows の場合) <ins>"C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe"</ins> (64bit 版 Windows の場合)<br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>"%s.pdf"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-#### Adobe Reader X，WinShell 3.3.2.3 よりも前のバージョンの場合 {#g02437e9}
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>cmd.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>/c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (32bit 版 Windows の場合) <ins>/c start "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (64bit 版 Windows の場合)<br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
