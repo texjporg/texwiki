@@ -115,10 +115,15 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/w32tex/dviout/dviout.exe') {
+    $dvi_previewer = '"C:/w32tex/dviout/dviout.exe" -1';
+  } else {
+    $dvi_previewer = 'start';
+  }
   if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } else {
     $pdf_previewer = 'texworks';
   }
@@ -158,10 +163,15 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/w32tex/dviout/dviout.exe') {
+    $dvi_previewer = '"C:/w32tex/dviout/dviout.exe" -1';
+  } else {
+    $dvi_previewer = 'start';
+  }
   if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } else {
     $pdf_previewer = 'texworks';
   }
@@ -201,10 +211,15 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/w32tex/dviout/dviout.exe') {
+    $dvi_previewer = '"C:/w32tex/dviout/dviout.exe" -1';
+  } else {
+    $dvi_previewer = 'start';
+  }
   if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } else {
     $pdf_previewer = 'texworks';
   }
@@ -244,10 +259,15 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
   $pdf_mode = 3;
+  if (-f 'C:/w32tex/dviout/dviout.exe') {
+    $dvi_previewer = '"C:/w32tex/dviout/dviout.exe" -1';
+  } else {
+    $dvi_previewer = 'start';
+  }
   if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe"';
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
   } else {
     $pdf_previewer = 'texworks';
   }
