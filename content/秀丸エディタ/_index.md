@@ -41,16 +41,36 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
+## 標準のエンコードの種類 {#m676962a}
+
+秀丸エディタの標準のエンコードの種類はデフォルトでは日本語(Shift-JIS)です．<br>
+エンコードの種類を UTF-8 にする場合は Unicode(UTF-8) を選択します．<br>
+
+***
+
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>標準のエンコードの種類</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　　標準のエンコードの種類(D)<br>
+　　　　エンコードの種類(C) :　<span style="color:Black;background-color:#EEEEEE;">\[Unicode(UTF-8)　　　　　　　　　　　　　　▼\]</span><br>
+　　　　改行コード(R) :　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　▼\]</span><br>
+　　　　BOMの有無 :　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　▼\]</span><br>
+　　　標準のエンコードの種類は、自動判定できなかった場合と、新規作成時<br>
+　　　とASCIIのファイルに適用されます。<br>
+
+***
+
 ## 正規表現 {#f7fa3efd}
 
 - [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
     - [h-tom's Warehouse - 秀丸エディタ macro](http://homepage3.nifty.com/_htom/macro/)
-        - [hmonig.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#label-18)
+        - [hmonig.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#N3.2)
 
 ## マクロ {#m32041fb}
 
 - [秀まるおのホームページ(サイトー企画) ヘルプファイルサイト](http://homepage3.nifty.com/kons/hidemaru/helpsite/)
     - [秀丸エディタ マクロ言語ヘルプ目次](http://homepage3.nifty.com/kons/hidemaru/helpsite/hidemac/)
+
+マクロを使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
@@ -140,6 +160,8 @@ main:
 ***
 
 ### TeXworks.mac {#r100b824}
+
+[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．<br>
 
 ***
 
