@@ -1145,7 +1145,7 @@ cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 
 各フリーフォントの入手先は[フォント - TeX Wiki](</フォント/>)を参照してください。なお，入手先は変更される場合があります。また，利用・再配布等にあたっては「使用許諾契約」をご自身で確認されることを強くおすすめいたします（フリーフォントの「使用許諾契約」は随時変更されるため）。
 
-#### Mac OS X 附属のフォント（[ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)など）を使う場合 {#l6a3d188}
+#### OS X 附属のフォント（[ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)など）を使う場合 {#l6a3d188}
 
 ***
 
@@ -1369,7 +1369,7 @@ cidgoth-v      Identity-V          HiraKakuProN-W3.otf
 ***
 
 ただし，[HiraMinStdN-W2.otf](http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8)
-は Mac OS X に附属していません。
+は OS X に附属していません。
 
 $TEXMFLOCAL/fonts/truetype/MS-Mincho.ttf は
 "/Library/Fonts/Microsoft/MS Mincho.ttf" への
