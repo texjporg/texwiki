@@ -600,8 +600,8 @@ hmgothr-v   "@A-OTF 見出ゴMB31 Pr6N MB31"
 > ```
 > $ sudo updmap-sys --setoption kanjiEmbed noEmbed  （埋め込まない）
 > $ sudo updmap-sys --setoption kanjiEmbed hiragino （ヒラギノ書体を埋め込む）
-> $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 > $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
+> $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 > $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
 > $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
 > ```
