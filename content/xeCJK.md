@@ -130,6 +130,15 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 \setCJKmonofont{MS Gothic}
 ```
 
+#### IPAexMincho, IPAexGothic の場合 {#af21d789}
+
+```
+\usepackage{xeCJK}
+\setCJKmainfont{IPAexMincho}
+\setCJKsansfont{IPAexGothic}
+\setCJKmonofont{IPAexGothic}
+```
+
 #### IPAMincho, IPAGothic の場合 {#uab0d085}
 
 ```
@@ -222,6 +231,31 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
   \setCJKmainfont{MS Mincho}
   \setCJKsansfont{MS Gothic}
   \setCJKmonofont{MS Gothic}
+}
+```
+
+#### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
+
+```
+\usepackage{zxjatype}
+\setjamainfont{IPAexMincho}
+\setjasansfont{IPAexGothic}
+\setjamonofont{IPAexGothic}
+```
+
+zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
+
+```
+\IfFileExists{zxjatype.sty}{
+  \usepackage{zxjatype}
+  \setjamainfont{IPAexMincho}
+  \setjasansfont{IPAexGothic}
+  \setjamonofont{IPAexGothic}
+}{
+  \usepackage{xeCJK}
+  \setCJKmainfont{IPAexMincho}
+  \setCJKsansfont{IPAexGothic}
+  \setCJKmonofont{IPAexGothic}
 }
 ```
 
