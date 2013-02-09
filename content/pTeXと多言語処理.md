@@ -606,11 +606,11 @@ dvipdfmx で変換し，PDF の形で出力結果を見ることになります�
 %rml            H                   Ryumin-Light
 %rmlv           V                   Ryumin-Light
 
-rml            H                   ipam.ttf
-rmlv           V                   ipam.ttf
+rml            H                   ipaexm.ttf
+rmlv           V                   ipaexm.ttf
 
-gbm            H                   ipag.ttf
-gbmv           V                   ipag.ttf
+gbm            H                   ipaexg.ttf
+gbmv           V                   ipaexg.ttf
 
 %%% OTF package
 %hminr-h        H                   Ryumin-Light
@@ -625,29 +625,29 @@ gbmv           V                   ipag.ttf
 %otf-cjmr-h     Adobe-Japan1-6      Ryumin-Light
 %otf-cjmr-v     Identity-V          Ryumin-Light
 
-hminr-h        H                   ipam.ttf
-hminr-v        V                   ipam.ttf
-otf-ujmr-h     UniJIS-UTF16-H      ipam.ttf
-otf-ujmr-v     UniJIS-UTF16-V      ipam.ttf
+hminr-h        H                   ipaexm.ttf
+hminr-v        V                   ipaexm.ttf
+otf-ujmr-h     UniJIS-UTF16-H      ipaexm.ttf
+otf-ujmr-v     UniJIS-UTF16-V      ipaexm.ttf
 ```
 
-<!-- %otf-cjmr-h     Identity-H          ipam.ttf/AJ16 -->
+<!-- %otf-cjmr-h     Identity-H          ipaexm.ttf/AJ16 -->
 
 ```
-otf-cjmr-h     Adobe-Japan1-6      ipam.ttf
-otf-cjmr-v     Identity-V          ipam.ttf/AJ16
+otf-cjmr-h     Adobe-Japan1-6      ipaexm.ttf
+otf-cjmr-v     Identity-V          ipaexm.ttf/AJ16
 
-hgothr-h       H                   ipag.ttf
-hgothr-v       V                   ipag.ttf
-otf-ujgr-h     UniJIS-UTF16-H      ipag.ttf
-otf-ujgr-v     UniJIS-UTF16-V      ipag.ttf
+hgothr-h       H                   ipaexg.ttf
+hgothr-v       V                   ipaexg.ttf
+otf-ujgr-h     UniJIS-UTF16-H      ipaexg.ttf
+otf-ujgr-v     UniJIS-UTF16-V      ipaexg.ttf
 ```
 
-<!-- %otf-cjgr-h     Identity-H          ipag.ttf/AJ16 -->
+<!-- %otf-cjgr-h     Identity-H          ipaexg.ttf/AJ16 -->
 
 ```
-otf-cjgr-h     Adobe-Japan1-6      ipag.ttf
-otf-cjgr-v     Identity-V          ipag.ttf/AJ16
+otf-cjgr-h     Adobe-Japan1-6      ipaexg.ttf
+otf-cjgr-v     Identity-V          ipaexg.ttf/AJ16
 
 %hminb-h        H                   Ryumin-Light,Bold
 %hminb-v        V                   Ryumin-Light,Bold
@@ -863,36 +863,36 @@ hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
 %cidmin-h       Adobe-Japan1-6      Ryumin-Light
 %cidmin-v       Identity-V          Ryumin-Light
 
-hmr            H                   ipam.ttf
-hmrv           V                   ipam.ttf
-unijmin-h      UniJIS-UTF16-H      ipam.ttf
-unijmin-v      UniJIS-UTF16-V      ipam.ttf
+hmr            H                   ipaexm.ttf
+hmrv           V                   ipaexm.ttf
+unijmin-h      UniJIS-UTF16-H      ipaexm.ttf
+unijmin-v      UniJIS-UTF16-V      ipaexm.ttf
 ```
 
-<!-- %cidmin-h       Identity-H          ipam.ttf/AJ16 -->
+<!-- %cidmin-h       Identity-H          ipaexm.ttf/AJ16 -->
 
 ```
-cidmin-h       Adobe-Japan1-6      ipam.ttf
-cidmin-v       Identity-V          ipam.ttf/AJ16
+cidmin-h       Adobe-Japan1-6      ipaexm.ttf
+cidmin-v       Identity-V          ipaexm.ttf/AJ16
 
-hkb            H                   ipag.ttf
-hkbv           V                   ipag.ttf
-unijgoth-h     UniJIS-UTF16-H      ipag.ttf
-unijgoth-v     UniJIS-UTF16-V      ipag.ttf
+hkb            H                   ipaexg.ttf
+hkbv           V                   ipaexg.ttf
+unijgoth-h     UniJIS-UTF16-H      ipaexg.ttf
+unijgoth-v     UniJIS-UTF16-V      ipaexg.ttf
 ```
 
-<!-- %cidgoth-h      Identity-H          ipag.ttf/AJ16 -->
+<!-- %cidgoth-h      Identity-H          ipaexg.ttf/AJ16 -->
 
 ```
-cidgoth-h      Adobe-Japan1-6      ipag.ttf
-cidgoth-v      Identity-V          ipag.ttf/AJ16
+cidgoth-h      Adobe-Japan1-6      ipaexg.ttf
+cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 ```
 
 ***
 
 ここで日本語フォントに
-[IPAフォント](http://ossipedia.ipa.go.jp/ipafont/)
-(ipam.ttf, ipag.ttf) を，中国語簡化字フォントに
+[IPAexフォント/IPAフォント](http://ossipedia.ipa.go.jp/ipafont/)
+(ipaexm.ttf, ipaexg.ttf) を，中国語簡化字フォントに
 [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/)
 (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wqy.sourceforge.net/en/)
 (wqy-zenhei.ttf) を，中国語繁體字フォントに
@@ -1149,11 +1149,11 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 ```
 %!
 %%% aliases
-/Ryumin-Light                 /IPAMincho                   ;
-/Ryumin-Medium                /IPAMincho                   ;
+/Ryumin-Light                 /IPAexMincho                 ;
+/Ryumin-Medium                /IPAexMincho                 ;
 /FutoMinA101-Bold             /WadaMin-Bold                ;
 /MidashiMin-MA31              /HGMinchoE                   ;
-/GothicBBB-Medium             /IPAGothic                   ;
+/GothicBBB-Medium             /IPAexGothic                 ;
 /FutoGoB101-Bold              /HGGothicE                   ;
 /MidashiGo-MB31               /HGSoeiKakugothicUB          ;
 /Jun101-Light                 /WadaLabMaruGo20044          ;
@@ -1204,9 +1204,13 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /HYSMyeongJo-Medium-Acro      /HYSMyeongJoStd-Medium-Acro  ;
 /HYGoThic-Medium-Acro         /HYGoThic-Medium             ;
 
+%%% IPAex Fonts
+%%% See http://ossipedia.ipa.go.jp/ipafont/
+/IPAexMincho                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexm.ttf) >> ;
+/IPAexGothic                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexg.ttf) >> ;
+
 %%% IPA Fonts
-%%% See http://www.ipa.go.jp/about/press/20071001-2.html
-%%%     http://ossipedia.ipa.go.jp/ipafont/
+%%% See http://ossipedia.ipa.go.jp/ipafont/
 /IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipam.ttf) >> ;
 /IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipag.ttf) >> ;
 
