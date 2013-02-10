@@ -1293,6 +1293,7 @@ Live preview for TeXShop
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
 - [「TeXShop」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=doraTeX&word=TeXShop)
+- [TeXShop Simulator](https://dl.dropbox.com/u/5807100/TeXShopSimulator/index.html)
 - [texlive-lang-cjk導入時のTeXShopの設定](http://hiyokoz.blogspot.jp/2013/01/texlive-lang-cjktexshop.html)
 - [シェルスクリプトに関して uplatex2pdf-utf8という以下のスクリプトがあります。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1399148908)
 - [MacでTeX環境を整える+α](http://forza3.blog66.fc2.com/blog-entry-291.html)
