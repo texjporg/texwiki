@@ -29,8 +29,8 @@ TeXShop は TeX 統合環境です．<br>
 
 > <table>
 > <tbody>
-> <tr><td>TeXShop (v 3.x)</td><td>OS X 10.8, 10.7</td></tr>
-> <tr><td>TeXShop (v 2.x)</td><td>OS X 10.6, 10.5, 10.4</td></tr>
+> <tr><td>TeXShop (Version 3)</td><td>OS X 10.8, 10.7</td></tr>
+> <tr><td>TeXShop (Version 2)</td><td>OS X 10.6, 10.5, 10.4</td></tr>
 > </tbody>
 > </table>
 >
@@ -39,11 +39,12 @@ TeXShop は TeX 統合環境です．<br>
 
 GPL
 
-### リリース情報 {#td599942}
+### リリース情報/ChangeLog {#td599942}
 
 2012-10-12 [Experimental TeXShop 3.12](http://email.esm.psu.edu/pipermail/macosx-tex/2012-October/050150.html)<br>
-2012-06-06 TeXShop (v 3.11)<br>
-2012-06-06 TeXShop (v 2.47)<br>
+
+- [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
+- [Changes in Version 2](http://pages.uoregon.edu/koch/texshop/changes_2.html)
 
 ### 注意事項 {#j76804fc}
 
