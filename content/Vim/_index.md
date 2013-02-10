@@ -125,22 +125,6 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [Issue #193: Ubuntu 12.04 の gvim がまともに動かない · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/193)
 - [Bug #987707 “gvim in Precise can't connect to ibus and takes a l...” : Bugs : “vim” package : Ubuntu](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/987707)
 
-### Ubuntu 11.10 や GNOME 3 で GVim を起動すると入力するまでに時間がかかる → [Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html) {#i39ca67b}
-
-回避策：gvim -f で起動<br>
-[Patch 7.3.344 にて修正されました](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
-
-- [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
-    - [version 7.3.344](http://code.google.com/p/vim/source/detail?r=v7-3-344)
-    - [version 7.3.315](http://code.google.com/p/vim/source/detail?r=v7-3-315)
-- [#85: gvimの起動が遅い - Issues - vim-jp/issues - GitHub](https://github.com/vim-jp/issues/issues/85)
-- [Bug #877193 in vim (Ubuntu): “gvim freezes when started from a terminal”](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/877193)
-- [Bug #872095 in vim (Ubuntu): “gvim from vim-gnome hang up on start”](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/872095)
-- [Bug #771810 in vim (Ubuntu): “gvim occasionally shows error "Unable to register window with path... Timeout was reached" ”](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/771810)
-- [GNOME3とGVim](http://hackathon.g.hatena.ne.jp/zrail/20110808/1312835084)
-- [Slow response in gvim, gnome3](http://forums.fedoraforum.org/showthread.php?p=1464463)
-- [IBUS-WARNING \*\*: Create input context failed](http://fairladyx.zapto.org/node/15)
-
 ## Vim で LaTeX {#i2be46c6}
 
 ### tex.vim {#y0b061e7}
