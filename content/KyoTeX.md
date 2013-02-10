@@ -19,6 +19,10 @@ kyotex-mode は [xyzzy](/xyzzy/) 用の TeX/LaTeX/BibTeX 編集支援モード�
 
 - [kyotex-mode - xyzzy lisp - 米澤進吾 ホームページ](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) 公式サイト
 
+#### リリース情報/ChangeLog {#nab7bc0f}
+
+- [kyotex-modeのダウンロード](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/download.html) を参照．
+
 #### スクリーンショット {#t052448d}
 
 <!-- #ref(http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png,nolink,kyotex-mode を使った xyzzy の画面) -->
