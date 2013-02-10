@@ -9,22 +9,22 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
-## [KaTeX](http://www.geocities.jp/mathemabics/storage.html) &amp; [KaTeX カスタム版](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
+## [KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) &amp; [KaTeX カスタム版](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## KaTeX &amp; KaTeX カスタム版とは {#o741d921}
+## KaTeX オリジナル版 &amp; KaTeX カスタム版とは {#o741d921}
 
-### KaTeX とは {#ja14bd5c}
+### KaTeX オリジナル版とは {#ja14bd5c}
 
-KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
+KaTeX (花鳥) オリジナル版は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
 [xyzzy-022](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナルの xyzzy 0.2.1.173 以降で動作します．<br>
 マルチフレーム版では動作しません．<br>
 マルチフレーム版では KaTeX カスタム版を使用してください．<br> <!-- KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．~ -->
 
-- [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
-    <!-- -[[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] (公式サイトの Web Archive) -->
+<!-- -[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] -->
+- [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
 
 <!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
 
@@ -34,8 +34,8 @@ KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX で�
 KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br> <!-- マルチフレーム版専用の KaTeX カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
 マルチフレーム版専用の KaTeX カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
-マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
-マルチフレーム版でないxyzzyを使う方は，[katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) をダウンロードして使ってください．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
+マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
 
 <!-- 修正されました -->
 <!-- ↓ -->
@@ -54,8 +54,8 @@ KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
 EmacsLisp移植キット/emacs.l カスタム版のライセンスは GNU GPL v2 です．<br> <!-- マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
 マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
-マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
-マルチフレーム版でないxyzzyを使う方は，[katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) をダウンロードして使ってください．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
+マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
 
 ### License {#x302c417}
 
@@ -151,11 +151,12 @@ KaTeX （花鳥）は便利なキーボードショートカットを多数有�
 <!-- (&ref(http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l,http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l);) -->
 <!-- から KaTeX を選択してダウンロードできます．~ -->
 <!-- Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます． -->
+<!-- マルチフレーム版以外を使用する場合は [[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] を使用します． -->
 
-マルチフレーム版以外を使用する場合は [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html) を使用します．
+マルチフレーム版以外を使用する場合は [KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) を使用します．
 
 マルチフレーム版を試している方は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記のサイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
-マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生します．<br>
+マルチフレーム版では KaTeX オリジナル版を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ## 設定 {#pea65968}
 
@@ -176,7 +177,7 @@ MinGW や Cygwin がインストールされていない場合は，環境変数
 
 のようにダブルクォーテーションを付けて保存すれば作成可能です．
 
-katex_1_67_1_12.lzh または katext-1.67.1.11_1.0.zip を展開して，フォルダーの名前を katex に変更して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
+KaTeX のアーカイブを展開して，フォルダーの名前を katex に変更して katex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
 
 ***
 
@@ -315,11 +316,11 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;; タイプセットを latexmk (lualatex) で
 ;; タイプセットを latexmk (luajitlatex) で
 ;; タイプセットを latexmk (xelatex) で
-;; タイプセットを e-pLaTeX で
+;; タイプセットを pLaTeX で
 ;; タイプセットを pdfplatex.bat で
 ;; タイプセットを pdfplatex1.bat で
 ;; タイプセットを pdfplatex2.bat で
-;; タイプセットを e-upLaTeX で
+;; タイプセットを upLaTeX で
 ;; タイプセットを pdfuplatex.bat で
 ;; タイプセットを pdfuplatex1.bat で
 ;; タイプセットを pdfuplatex2.bat で
@@ -950,7 +951,7 @@ Alt + x とした上で “exec-utf82tex” と入力し，Enterキーを押し�
 
 の行をコメントアウトしている場合は上記のエンコーディング変換は不要です。）
 
-あとは e-pLaTeX あるいは LaTeX にかけるだけです。（「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は [TeXWiki:新 pTeX と Babel](</新 pTeX とBabel/>)
+あとは pLaTeX あるいは LaTeX にかけるだけです。（「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は [TeXWiki:新 pTeX と Babel](</新 pTeX とBabel/>)
 を是非ご覧ください。）
 
 ### Unicode で多言語 TeX 文書を作ってみる（中国語・韓國語編） {#xyutfasd}
@@ -1110,7 +1111,7 @@ xyzzy はなぜかグルジア文字を扱えます。また，正式対応で�
 
 インストール方法について解説します。
 
-xyzzy でグルジア文字を表示できるようにしておきます。無料のフォントとしては，[BPG フォント](http://geocities.ws/bpgfonts/files/)，例えば BPG Courier New は xyzzy で表示できるフォントですので，これをインストールします。
+xyzzy でグルジア文字を表示できるようにしておきます。無料のフォントとしては，BPG フォント，例えば BPG Courier New は xyzzy で表示できるフォントですので，これをインストールします。
 そして，xyzzy のメニューより ［ツール］ → ［共通設定］ の ［フォント］タブにて，「文字セット」を ［グルジア文字］ にし，例えば \[BPG Courier New\] を選んで \[OK\] を押します。これでめでたくグルジア文字が表示できるようになったはずです。
 
 グルジア語を扱う TeX パッケージである
@@ -1329,7 +1330,7 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
 
 ## 関連リンク {#h4cf9c4e}
 
-- [katex 1.67.1.12](http://www.geocities.jp/mathemabics/storage.html)
+<!-- -[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] -->
 - [katex のキーワードハイライト ($~$) を変更する](http://d.hatena.ne.jp/manthano/20120801/1343829179)
 - [xyzzyとkatex](http://dai-ao.seesaa.net/article/274397892.html)
 - [dviout](http://airhoo.hatenablog.com/entry/2012/05/07/050123)
