@@ -94,7 +94,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ### エンコーディングが UTF-8 の場合に Runtime Error! → 別の統合環境・エディタを使用する {#g47585a4}
 
-WinShell 3.3.2.5 で，エンコーディングを UTF-8 に変更し
+WinShell 3.3.2.6 で，エンコーディングを UTF-8 に変更し
 
 ***
 
@@ -165,7 +165,9 @@ UTF-8 を使用したい方は
 - [gedit](/gedit/)
 - Gummi
 
-などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用するかまたは WinShell 3.1 (旧バージョン) をダウンロードしてください．
+などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
+
+WinShell 3.1 (旧バージョン) では UTF-8 でも Runtime Error! が発生しないようです．
 
 - [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
 - [Index of /mounir/anits/latex/winshell](http://wwwesto.ump.ma/mounir/anits/latex/winshell/) WinShell 3.1 (旧バージョン)
@@ -261,7 +263,7 @@ WinShell 3.3.2.5 で修正されました．
 
 #### Adobe Reader XI，WinShell 3.3.2.5 以降のバージョンの場合 {#f8497c44}
 
-WinShell 3.3.2.5 の場合，Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.5 以降の場合，Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
@@ -392,7 +394,7 @@ WinShell 3.3.2.3 で修正されました．
 
 #### Adobe Reader X，WinShell 3.3.2.3 以降のバージョンの場合 {#u1b7f6cd}
 
-WinShell 3.3.2.5 の場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.5 以降の場合，Adobe Reader X で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
