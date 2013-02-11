@@ -517,3 +517,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 他にどのようなサンプルを作れば分かり易いか、アイデアをお寄せ下さい。
 もちろん、新たなサンプルの提供と、（全体の）文章の修正も歓迎します。
+
+## 関連リンク {#nae3b659}
+
+- [「&quot;CJK パッケージ&quot;」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%22CJK+%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%22)
