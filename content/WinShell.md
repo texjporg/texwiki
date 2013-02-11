@@ -306,8 +306,6 @@ AcroViewR11
 
 PDFView を以下のように設定します．
 
-- [Adobe Reader](</Adobe Reader/>) XI，WinShell 3.3.2.5 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします．
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
@@ -356,8 +354,6 @@ WinShell 3.3.2.5 よりも前のバージョンの場合，Adobe Reader XI で P
 ***
 
 これを回避するには PDFView を以下のように設定します．
-
-- [Adobe Reader](</Adobe Reader/>) XI，WinShell 3.3.2.5 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (64bit版Windowsの場合は /c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf") とします．
 
 ***
 
@@ -437,8 +433,6 @@ AcroViewR10
 
 PDFView を以下のように設定します．
 
-- [Adobe Reader](</Adobe Reader/>) X，WinShell 3.3.2.3 以降のバージョンの場合，exeファイル名を "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" (64bit版Windowsの場合は "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe") (\[参照(B)...\] で AcroRd32.exe を検索) とします．
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
@@ -490,8 +484,6 @@ WinShell 3.3.2.4 でも状況によってはこの警告メッセージが表示
 その場合は WinShell を再起動すれば OK です．<br>
 ただし，また同じ警告メッセージが表示され，PDF ファイルが表示できなくなる可能性があります．<br>
 これを回避するには PDFView を以下のように設定します．
-
-- [Adobe Reader](</Adobe Reader/>) X，WinShell 3.3.2.3 よりも前のバージョンの場合，exeファイル名を cmd.exe とし，コマンドラインを /c start "C:\Program Files\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf" (64bit版Windowsの場合は /c start "C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe" "%s.pdf") とします．
 
 ***
 
