@@ -399,7 +399,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 
 ***
 
-#### Mozilla Firefox の場合 {#c7af3cf4}
+#### Mozilla Firefox (pdf.js) の場合 {#c7af3cf4}
 
 ***
 
