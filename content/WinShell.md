@@ -69,9 +69,6 @@ WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応�
 - [CTAN ミラー](https://mirror.ctan.org/help/Catalogue/entries/winshell.html)
     国内の WinShell ミラーサイト
 
-- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
-- [Index of /mounir/anits/latex/winshell](http://wwwesto.ump.ma/mounir/anits/latex/winshell/) WinShell 3.1 (旧バージョン)
-
 ### ポータブル版 {#w8b350cf}
 
 - [Download : WinShell](http://www.winshell.org/modules/download/)
@@ -243,7 +240,7 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 > マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓
 
-1行目の文字群は2byte目が0x7C( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
+1行目の文字群は2byte目が0x7b( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
 これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
 (追記：2010/01/20)<br>
 また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
