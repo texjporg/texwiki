@@ -9,7 +9,7 @@ pukiwiki: "Gummi"
 
 ## [Gummi](http://gummi.midnightcoding.org/) {#k995ae8f}
 
-<img src="http://svn.midnightcoding.org/gummi/trunk/data/icons/gummi.png" alt="Gummi" width="256" height="256" style="float:right">
+<img src="http://dev.midnightcoding.org/projects/gummi/repository/raw/trunk/data/icons/gummi.png" alt="Gummi" width="256" height="256" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
