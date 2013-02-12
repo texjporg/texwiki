@@ -9,6 +9,8 @@ pukiwiki: "LuaTeX"
 
 ## [LuaTeX](http://www.luatex.org/) {#af5563d6}
 
+<img src="http://www.luatex.org/luatex.jpg" alt="LuaTeX" width="200" height="172" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## LuaTeX とは {#v17b2316}
@@ -17,14 +19,15 @@ LuaTeX は Lua が使える TeX です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
-- [SupelecFoundry > プロジェクト > LuaTeX > Home](http://foundry.supelec.fr/gf/project/luatex/)
-    - [Log of /trunk](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2Ftrunk%2F&view=log)
+- [FusionForge: LuaTeX: Project Home](https://foundry.supelec.fr/projects/luatex/)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
 - [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
 
 ### ChangeLog {#h5bae295}
 
+- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
@@ -45,9 +48,9 @@ LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.ht
 
 ## 不具合 {#v600e2c1}
 
-### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました {#o2818a24}
+### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411) で修正されました {#o2818a24}
 
-[LuaTeX rev 4411](http://foundry.supelec.fr/gf/project/luatex/scmsvn/?action=browse&path=%2F&view=rev&revision=4411) で修正されました．<br>
+[LuaTeX rev 4411](https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411) で修正されました．<br>
 LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．<br>
 
 LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。
