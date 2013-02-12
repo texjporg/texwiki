@@ -123,7 +123,7 @@ Cygwin については
     箇所の “false” 部分を “true” と書き換え，上書き保存する。
 
 - $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
-- コマンドプロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
+- コマンド プロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
     >tex 99allenc.tex
@@ -291,7 +291,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     #Map bibunj-cyrillic.map   % 永田善久さんのサポートページ
     ```
 
-    と記述し，コマンドプロンプトにて
+    と記述し，コマンド プロンプトにて
 
     ```
     updmap
