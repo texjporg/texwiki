@@ -41,7 +41,7 @@ replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 
 と聞かれることがあります。「A」と入力してEnterキーを押しておきましょう。
 
-環境変数PATHを必要に応じて設定します。PATHの値はC:\Program Files\Aspell\bin または C:\Program Files (x86)\Aspell\bin です。（ただし、コマンドプロンプトを用いる場合です。EasyTeX などから呼び出す場合はPATHの設定をする必要はありません。）
+環境変数PATHを必要に応じて設定します。PATHの値はC:\Program Files\Aspell\bin または C:\Program Files (x86)\Aspell\bin です。（ただし、コマンド プロンプトを用いる場合です。EasyTeX などから呼び出す場合はPATHの設定をする必要はありません。）
 
 <!-- Windows以外のインストール方法は、[[欧文スペルチェッカー GNU Aspell:http:// members.jcom.home.ne.jp/advweb/build/others/aspell.html]]をご覧ください。 -->
 
@@ -75,7 +75,7 @@ MacPorts を使って簡単にインストールできます。
 $ sudo port intall aspell aspell-dict-en
 ```
 
-### Aspell の使い方（コマンドプロンプト編） {#aspus466}
+### Aspell の使い方（コマンド プロンプト編） {#aspus466}
 
 PATHを通しているならば、
 
