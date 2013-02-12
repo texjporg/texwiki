@@ -36,7 +36,7 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; platex -no-guess-input-enc -kanji=sjis -synctex=1 -jobname $s $s}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; platex -no-guess-input-enc -kanji=sjis -jobname $s $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -67,7 +67,7 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-Command "&amp; {$s = """%s"""; platex -no-guess-input-enc -kanji=sjis -synctex=1 -interaction=nonstopmode -jobname $s $s}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$s = """%s"""; platex -no-guess-input-enc -kanji=sjis -interaction=nonstopmode -jobname $s $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -465,7 +465,7 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 
 ***
 
-#### Chrome PDF Viewer, Windows 8/7/Vista の場合 {#l95907df}
+#### Chrome PDF Viewer の場合 (Windows 8/7/Vista の場合) {#l95907df}
 
 ***
 
