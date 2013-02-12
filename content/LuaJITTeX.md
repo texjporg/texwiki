@@ -7,7 +7,7 @@ pukiwiki: "LuaJITTeX"
 
 # LuaJITTeX
 
-## [LuaJITTeX](http://foundry.supelec.fr/projects/luajittex/) {#y53144a3}
+## [LuaJITTeX](https://foundry.supelec.fr/projects/luajittex/) {#y53144a3}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -15,7 +15,12 @@ pukiwiki: "LuaJITTeX"
 
 LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を [LuaJIT](http://luajit.org/) に置き換えたものです.<br>
 
-- [LuaJITTeX](http://foundry.supelec.fr/projects/luajittex/)
+- [FusionForge: LuaJITTeX: Project Home](https://foundry.supelec.fr/projects/luajittex/)
+
+### ChangeLog {#s3ef1408}
+
+- [FusionForge: LuaJITTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luajittex)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luajittex&view=log)
 
 ## インストール {#e0acc4f5}
 
