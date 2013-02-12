@@ -18,9 +18,11 @@ pukiwiki: "MetaPost"
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
 MetaPostの日本語版については
-[松山道夫さん](http://www.matsuand.com/)
-→ [鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)
-が開発されています。
+
+- [W32TeX](/W32TeX/)
+- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+
+から入手可能です．
 
 ### MetaPost とは {#e4617397}
 
@@ -36,6 +38,13 @@ MetaPost は PostScript（EPS）形式のファイルを出力します。
 web2c 配布にも MetaPost のマニュアルが入っています。
 
 [Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。
+
+- [FusionForge: MetaPost: Project Home](https://foundry.supelec.fr/projects/metapost/) （本家）
+
+#### ChangeLog {#q9da79df}
+
+- [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
 
 ### MetaPostプログラミング入門 {#p3fbc416}
 
@@ -439,7 +448,6 @@ pool ファイルは無くなっています。) 1.501 から mem ファイル�
 
 ### 参考サイト {#sa284452}
 
-- [Supelec-Foundry MetaPost](http://foundry.supelec.fr/gf/project/metapost/) （本家）
 - [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
 - [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
 - [TeX&amp;MetaPostであそぼう](http://homepage2.nifty.com/domae/)(みなもさんによるMePoTeX 配布など)
