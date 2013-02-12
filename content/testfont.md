@@ -37,7 +37,7 @@ Unix あるいは Unix 互換 shell を使っている場合、これを簡単�
 echo pzdr | tex tab
 ```
 
-とすれば一発で tab.dvi ができます。 Windows のコマンドプロンプトでは echo とパイプの仕様が異なるので上のようにできません。Windows のコマンドプロンプトの場合は、
+とすれば一発で tab.dvi ができます。 Windows のコマンド プロンプトでは echo とパイプの仕様が異なるので上のようにできません。Windows のコマンド プロンプトの場合は、
 
 ```
 tex tab
