@@ -430,7 +430,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 
 ***
 
-#### Chrome PDF Viewer, Windows 8/7/Vista の場合 {#g8d4ec3b}
+#### Chrome PDF Viewer の場合 (Windows 8/7/Vista の場合) {#g8d4ec3b}
 
 ***
 
