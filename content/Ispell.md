@@ -40,7 +40,7 @@ pukiwiki: "Ispell"
     ということです。
 
 - 
-    最後に，スペルチェックのテストをしてみます。[test-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-german.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    最後に，スペルチェックのテストをしてみます。[test-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-german.zip) を適当な作業ディレクトリに展開します。そして，コマンド プロンプト上では，例えば，
 
     ```
     ispell -d deutsch deutsch.tex <--- 7ビット入力ファイルを旧正書法でチェック
@@ -263,7 +263,7 @@ M-x german-mode （トグル）で何が起こるのかは，お楽しみ！(man
     ディレクトリ以下にコピーします。
 
 - 
-    スペルチェックのテスト。[test-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-french.zip) を適当な作業ディレクトリに展開します。そして，コマンドプロンプト上では，例えば，
+    スペルチェックのテスト。[test-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/test-french.zip) を適当な作業ディレクトリに展開します。そして，コマンド プロンプト上では，例えば，
 
     ```
     ispell -d francais francais-tex.tex <--- 7ビット入力ファイルをチェック
