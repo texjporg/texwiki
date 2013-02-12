@@ -65,7 +65,7 @@ pukiwiki: "ArchiveQandA"
 
 - “Cannot determine size of graphic in filename.xxx (no size specifed)”というエラーが出て画像（JPG, PNGなど）が取り込めない（[qa:29325](https://okumuralab.org/~okumura/texfaq/qa/29325.html), [qa:19304](https://okumuralab.org/~okumura/texfaq/qa/19304.html)など）
     - その画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
-        コマンドプロンプトで画像ファイルのあるディレクトリに移動し
+        コマンド プロンプトで画像ファイルのあるディレクトリに移動し
 
         ```
         extractbb filename.xxx
