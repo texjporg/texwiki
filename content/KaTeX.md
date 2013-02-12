@@ -1187,7 +1187,7 @@ $TEXMFLOCAL/fonts/map/dvips/misc/ に保存しておいてください。
 
     と追加します。
 
-あとはコマンドプロンプトなどで次のように fmtutil で処理します。
+あとはコマンド プロンプトなどで次のように fmtutil で処理します。
 
 ```
 fmtutil --byfmt latex
@@ -1261,7 +1261,7 @@ g2tex.pl や v2tex.pl をダウンロードし，PATH の通ったディレク�
 そのディレクトリ内にある perlexec.exe を g2tex.exe や v2tex.exe に
 コピーしておきます。（こうしておくとコマンド実行時に便利ですので。）
 
-コマンドプロンプト上で，入力ファイルが gtest.tex，変換後のファイルが gtesto.tex であれば
+コマンド プロンプト上で，入力ファイルが gtest.tex，変換後のファイルが gtesto.tex であれば
 
 ```
 g2tex <gtest.tex >gtest-o.tex
