@@ -161,7 +161,7 @@ platex gtest-o.tex
 
 さらに，安田さんが ArabTeX と Babel を共存させるためのパッチを作ってくださいました。パッチ適用済みのファイルは「[ダウンロード・サービス #ArabTeX 7 ビット化アーカイブ](http://yasuda.homeip.net/dl/dl.html#p)」からダウンロードします。これらは $TEXMFLOCAL/tex/latex/arabtex/ にコピーします。
 
-必要な方はmktexlsrをコマンドプロンプトなどで実行します。
+必要な方はmktexlsrをコマンド プロンプトなどで実行します。
 
 ```
 mktexlsr
@@ -255,7 +255,7 @@ $TEXMFLOCAL/fonts/map/dvips/misc/ に保存しておいてください。
 
     と追加します。
 
-あとはコマンドプロンプトなどで次のように fmtutil で処理します。
+あとはコマンド プロンプトなどで次のように fmtutil で処理します。
 
 ```
 fmtutil --byfmt latex
@@ -406,10 +406,10 @@ iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 
 TIS-620 の文字コードで編集して保存した場合は上のようなiconvでの変換作業は不要です。
 
-これらの方法などで出来た thaimemo.txt をコマンドプロンプトにて SWATH で
+これらの方法などで出来た thaimemo.txt をコマンド プロンプトにて SWATH で
 処理し，単語の切れ目に \wbr という目印を付けます。
 例えば data/ ディレクトリを C:\w32tex\bin\ にコピーしたなら，
-次のようにコマンドプロンプトなどより実行します。
+次のようにコマンド プロンプトなどより実行します。
 
 ```
 swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
