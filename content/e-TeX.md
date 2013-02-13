@@ -115,6 +115,8 @@ TeX では，例えば
     含まれています (See [qa:50569](https://okumuralab.org/~okumura/texfaq/qa/50569.html))。
 
 - [The e-TeX Short Reference Manual](http://tex.loria.fr/moteurs/etex_ref.html)
+- \[[e-TeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5Be-TeX%5D)
+- [「e-TeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=e-TeX)
 - [e-pTeX Wiki](http://sourceforge.jp/projects/eptex/wiki/FrontPage)
 
 ### コメント {#a61ff5c1}
