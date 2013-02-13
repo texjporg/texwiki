@@ -15,7 +15,7 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX とは {#v17b2316}
 
-LuaTeX は Lua が使える TeX です．<br>
+LuaTeX は [Lua](http://www.lua.org/) が使える TeX です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
