@@ -291,5 +291,6 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 - [ZXjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/ZXjatype)
 - [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
 - [記事一覧 - tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
+- 仮名だけ別フォント ([qa:57028](https://okumuralab.org/~okumura/texfaq/qa/57028.html), [qa:57030](https://okumuralab.org/~okumura/texfaq/qa/57030.html), [qa:57031](https://okumuralab.org/~okumura/texfaq/qa/57031.html), [qa:57032](https://okumuralab.org/~okumura/texfaq/qa/57032.html))
 
 [^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/note.html)を参照
