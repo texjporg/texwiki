@@ -11,9 +11,9 @@ pukiwiki: "Microsoft Office"
 
 - [Microsoft Office - Office.com](http://office.microsoft.com/)
 - [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
-- [Microsoft Office 2010 Engineering (日本語訳)](http://blogs.technet.com/b/office2010_jp/)
-- [Office2010J (Twitter)](http://twitter.com/Office2010J)
-- [Microsoft Office(@Office2010J) - Twilog](http://twilog.org/Office2010J)
+- [Office IT 担当者向けブログ](http://blogs.technet.com/b/office_jp/)
+- [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
+- [MSOfficeJP(@MSOfficeJP) - Twilog](http://twilog.org/MSOfficeJP)
 - WikiPedia.ja:Microsoft Office
 
 ## アドイン {#w6cd2e21}
