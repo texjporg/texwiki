@@ -15,6 +15,10 @@ pukiwiki: "Mozilla Firefox"
 
 Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 
+### 派生版 {#qf4f5dc1}
+
+- [Waterfox](http://www.waterfoxproject.org/)
+
 ### [pdf.js](http://mozilla.github.com/pdf.js/) {#n3aa2497}
 
 pdf.js は JavaScript で書かれた PDF Viewer です．<br>
