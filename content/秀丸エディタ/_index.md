@@ -48,6 +48,24 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ***
 
+<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>自動判定の設定　(動作環境)</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　　　自動判定で開くとき<br>
+　　　☑ファイルの内容を解析してエンコードの種類を自動認識する(E)<br>
+　　　　　☑Unicode(UTF-8)<br>
+　　　　　☑日本語(Shift-JIS)<br>
+　　　　　☑日本語(EUC)<br>
+　　　　　☑日本語(JIS)<br>
+　　　　複数のエンコードの種類に適合する場合(M):<br>
+　　　　　　<span style="color:#3333CC;">◎</span>最初に確定したものにする<br>
+　　　　　　◯優先順位に従う（２回読み込みが働くことがあります）<br>
+　　　　　　◯候補の一覧を表示<br>
+　　　☑XML宣言の認識(X)　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　標準のエンコードの種類(D)...　\]</span><br>
+　　　☑HTMLのmetaタグを認識(H)<br>
+　　　☑UnicodeのBOMを認識(B)<br>
+
+***
+
 <span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>標準のエンコードの種類</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　　標準のエンコードの種類(D)<br>
@@ -276,6 +294,8 @@ main:
 ```
 
 ## Adobe Reader との連携 {#z5e51515}
+
+祝鳥は Adobe Reader の DDE, Adobe Acrobat の DDE, OLE に対応しています．
 
 ### pdfpLaTeXA.mac {#q37b5bf9}
 
