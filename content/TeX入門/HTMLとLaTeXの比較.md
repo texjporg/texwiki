@@ -29,9 +29,9 @@ HTML と LaTeX には次のような対応関係があります。
 <table>
 <tbody>
 <tr><td><strong>HTML</strong>                  </td><td><strong>LaTeX</strong></td></tr>
-<tr><td rowspan="2">&lt;html&gt;あるいは&lt;!DOCTYPE...&gt;                    </td><td>\documentclass{jarticle}</td></tr>
-<tr><td>または \documentclass{jsarticle} など</td></tr>
+<tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass{jsarticle}</td></tr>
 <tr><td>&lt;head&gt;                    </td><td>% プリアンブル開始</td></tr>
+<tr><td>&lt;meta charset="UTF-8"&gt;    </td><td></td></tr>
 <tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td></td></tr>
 <tr><td>&lt;link rel="stylesheet"    </td><td>% スタイルシートに対応するものは</td></tr>
 <tr><td>      type="text/css"     </td><td>% ドキュメントクラスとパッケージ</td></tr>
