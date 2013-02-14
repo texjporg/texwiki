@@ -147,7 +147,7 @@ Asymptote
 : asy.exe %m\*.asy
 
 Ghostscript
-: "C:\gs\gs9.06\bin\gswin32c.exe"
+: "C:\gs\gs9.07\bin\gswin32c.exe"
 
 Latexmk
 : latexmk -pdf -silent -pdflatex="pdflatex -synctex=1 &#x25;&#x25;O &#x25;&#x25;S" %
