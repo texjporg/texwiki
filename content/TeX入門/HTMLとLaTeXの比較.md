@@ -32,24 +32,25 @@ HTML と LaTeX には次のような対応関係があります。
 <tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass{jsarticle}</td></tr>
 <tr><td>&lt;head&gt;                    </td><td>% プリアンブル開始</td></tr>
 <tr><td>&lt;meta charset="UTF-8"&gt;    </td><td></td></tr>
-<tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td></td></tr>
+<tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td>\title{題名}</td></tr>
+<tr><td>                          </td><td>\author{著者}</td></tr>
+<tr><td>                          </td><td>\date{日付}</td></tr>
 <tr><td>&lt;link rel="stylesheet"    </td><td>% スタイルシートに対応するものは</td></tr>
 <tr><td>      type="text/css"     </td><td>% ドキュメントクラスとパッケージ</td></tr>
 <tr><td>      href="hoge.css"&gt;    </td><td>\usepackage{txfonts}</td></tr>
 <tr><td>&lt;/head&gt;                   </td><td>% プリアンブル終了</td></tr>
 <tr><td>&lt;body&gt;                    </td><td>\begin{document}</td></tr>
 <tr><td>                          </td><td></td></tr>
-<tr><td>&lt;h1&gt;...&lt;/h1&gt;              </td><td>\title{題名}</td></tr>
-<tr><td>                          </td><td>\author{著者}</td></tr>
-<tr><td>                          </td><td>\date{日付}</td></tr>
 <tr><td>                          </td><td>\maketitle</td></tr>
 <tr><td>                          </td><td></td></tr>
-<tr><td>&lt;h2&gt;...&lt;/h2&gt;              </td><td>\section{節見出し}</td></tr>
+<tr><td>&lt;h1&gt;...&lt;/h1&gt;              </td><td>\section{節見出し}</td></tr>
 <tr><td>                          </td><td></td></tr>
-<tr><td>&lt;h3&gt;...&lt;/h3&gt;              </td><td>\subsection{小節見出し}</td></tr>
+<tr><td>&lt;h2&gt;...&lt;/h2&gt;              </td><td>\subsection{小節見出し}</td></tr>
 <tr><td>                          </td><td></td></tr>
-<tr><td>&lt;p&gt;...                    </td><td>段落の区切りは</td></tr>
-<tr><td>...                       </td><td>空行で表す</td></tr>
+<tr><td>&lt;h3&gt;...&lt;/h3&gt;              </td><td>\subsubsection{小々節見出し}</td></tr>
+<tr><td>                          </td><td></td></tr>
+<tr><td>&lt;p&gt;...                    </td><td>段落の区切りは \par</td></tr>
+<tr><td>...                       </td><td>または空行で表す</td></tr>
 <tr><td>                          </td><td></td></tr>
 <tr><td>&lt;p&gt;...&lt;br&gt;                </td><td>段落の途中の強制改行は \\</td></tr>
 <tr><td>...                       </td><td>(TeXでは強制改行はあまり使わない)</td></tr>
