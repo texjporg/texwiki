@@ -213,7 +213,7 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 
 まず、LaTeX が動作する環境が必要です。その他に
 [CTAN:languages/japanese/CJK/](https://mirror.ctan.org/languages/japanese/CJK/) 
-にある配下のマクロファイル（cjk4.x.x/という名前のディレクトリ。zipやtarballで圧縮されている場合もあり）と、更には TFM ファイル（フォントメトリック）がいります。
+にある配下のマクロファイル（cjk-4.x.x/という名前のディレクトリ。zipやtarballで圧縮されている場合もあり）と、更には TFM ファイル（フォントメトリック）がいります。
 CJK にデフォルトで附属するフォントの設定は dvips や pdflatex での使用も
 可能なようになっているので、dvipdfmx で使うには最適なものではありません。
 ここではカスタムなフォント定義を行なう方法を説明します。
@@ -495,7 +495,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
         - 同梱された TFM ファイルは全角文字以外に使えない。
         - 横書きフォントを縦書きに使う場合の fdx ファイルが無いため、CJKvert.sty を使った縦書きでは句読点の位置がおかしい（縦書きフォントを使う場合は問題ないと思います）。
 1. [Supplementary Ideographic Plane の使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルから PDF ファイルを作るのには、
-    比較的新しい dvipdfmx (20070409 以降) が必要です。更に商用フォントも使いました。
+    dvipdfmx (20070409 以降) が必要です。更に商用フォントも使いました。
     そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
         - 旧い dvipdfmx には不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（cvs 版 Fri Jan 19 10:57:22 2007 UTC, リリース版 dvipdfmx-20070409 で修正されています。）
@@ -504,7 +504,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
         - 商用フォントを使う設定になっている。これは、cid-x.map を書き換えて、[HAN NOM FONTs](http://www.viethoc.org/article.php?sid=98&mode=threaded&order=0&thold=0) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
         - 手持ちの材料で、適当にでっちあげたサンプルの文書には、その後、簡単な
             Web 検索しただけで、明らかな誤り2箇所と、幾多の要改善箇所が見つかっている。
-        - 現在の最新版である。CJK 4.6.0 では、プリアンブルにこのサンプルにあるような
+        - CJK 4.6.0 では、プリアンブルにこのサンプルにあるような
             コードを加えないと BMP 以外の文字は扱えないが、ユニコードをフルサポートした
             開発版の CJK パッケージとはこのコードは衝突してしまう。
             <!-- +CJKutf8.styについては[[Cardo:http://scholarsfonts.net/]]1.01がリリースされてから -->
