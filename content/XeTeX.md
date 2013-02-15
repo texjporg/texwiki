@@ -25,6 +25,7 @@ XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [The XeTeX Archives](http://tug.org/pipermail/xetex/) (TUG)
 - [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
+- [HarfBuzz (حرف‌باز)](http://freedesktop.org/wiki/Software/HarfBuzz) (OpenType レイアウトエンジン)
 
 #### ChangeLog {#w3545bdb}
 
