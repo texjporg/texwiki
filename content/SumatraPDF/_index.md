@@ -62,10 +62,9 @@ v1.6 から PostScript ファイルの表示にも対応しました．([Ghostsc
 ## forward search {#m71d9172}
 
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
-コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行う場合は v1.9 以降にアップグレードしてください．<br>
-DDE で forward search を行う場合は v1.7 以降にアップグレードしてください．<br>
+SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
 
-以下のエディタ・マクロ・プラグインは v1.9 以降の SumatraPDF で forward and inverse search が可能です．
+以下のエディタ・マクロ・プラグインは SumatraPDF v1.9 以降で forward and inverse search が可能です．
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
@@ -93,14 +92,19 @@ DDE で forward search を行う場合は v1.7 以降にアップグレードし
 ■ フリーウェア (無料)
 
 - EasyTeX
-- Visual Windows for TeX
 - [WinShell](/WinShell/)
+- Visual Windows for TeX
+- Mery
+    - SumatraPDF.js
+- gPad
+    - SumatraPDF.js
 
 ■ シェアウェア
 
 - [Inlage](http://www.inlage.com/) (シェアウェア)
 - [WinEdt](http://www.winedt.com/) (シェアウェア)
 - [秀丸エディタ](</秀丸エディタ/>) (シェアウェア)
+    - [SumatraPDF.mac](</秀丸エディタ/#y16d42fd>)
     - 祝鳥 (のりてふ)
 - Sublime Text (シェアウェア)
     - LaTeXTools (LaTeX Plugin for Sublime Text 2)
