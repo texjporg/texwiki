@@ -71,6 +71,8 @@ Windows, OS X, Linux
 
 ## 関連リンク {#p3fe3a8a}
 
+- [SublimeText Vim Emacs プラグイン比較表](https://github.com/chikatoike/SublimeTextWiki/wiki/SublimeText-Vim-Emacs-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E6%AF%94%E8%BC%83%E8%A1%A8)
+
 ### Windows {#m51226c8}
 
 - [Windows 版の Sublime Text 2 を使う](http://blog.segu.jp/2012/05/windows-sublime-text-2.html)
