@@ -616,9 +616,9 @@ $ popd
 - [OpenSSL](http://www.openssl.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1c.tar.gz
-$ tar xvf openssl-1.0.1c.tar.gz
-$ pushd openssl-1.0.1c
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1e.tar.gz
+$ tar xvf openssl-1.0.1e.tar.gz
+$ pushd openssl-1.0.1e
 $ ./config --prefix=/mingw shared
 $ make
 $ make install
