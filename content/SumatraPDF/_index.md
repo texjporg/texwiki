@@ -44,9 +44,12 @@ Windows 8, 7, Vista, XP
 
 [GPLv3](http://code.google.com/p/sumatrapdf/source/browse/trunk/COPYING)
 
-### リリース情報 {#b67b5a28}
+### リリース情報/ChangeLog {#b67b5a28}
 
-[News](http://blog.kowalczyk.info/software/sumatrapdf/news.html) を参照．<br>
+[News](http://blog.kowalczyk.info/software/sumatrapdf/news.html)<br>
+[コミットログ](http://code.google.com/p/sumatrapdf/source/list)<br>
+
+を参照．<br>
 
 v1.9 から コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search ができるようになりました． ([SumatraPDF v1.9.4622](http://code.google.com/p/sumatrapdf/source/detail?r=4622) を参照)<br>
 v1.6 から PostScript ファイルの表示にも対応しました．([Ghostscript](/Ghostscript/) が必要です．)<br>
