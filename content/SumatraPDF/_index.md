@@ -1589,6 +1589,13 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 - [xyzzy](/xyzzy/)
     - [KaTeX](/KaTeX/)
 
+■ フリーウェア (無料)
+
+- Mery
+    - fwdsumatrapdf.js
+- gPad
+    - fwdsumatrapdf.js
+
 ## inverse search {#wfcdbef6}
 
 inverse search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
