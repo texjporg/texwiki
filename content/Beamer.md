@@ -9,7 +9,7 @@ pukiwiki: "Beamer"
 
 ## [Beamer](http://bitbucket.org/rivanvx/beamer/) {#wc0b104e}
 
-<strong>目次</strong>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ### Beamer とは {#g7e9b20e}
 
@@ -55,6 +55,10 @@ l.12 \ProvidesClassRCS
 ```
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
+
+#### dvipdfmx を使用するとナビゲーションバーの機能が動作しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
+
+- [LaTeX: to make the navigation bar work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 
 #### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
