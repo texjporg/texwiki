@@ -22,7 +22,8 @@ Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 ### [pdf.js](http://mozilla.github.com/pdf.js/) {#n3aa2497}
 
 pdf.js は JavaScript で書かれた PDF Viewer です．<br>
-Firefox 19 beta で PDF Viewer が組み込まれました．<br>
+Firefox 15 で PDF Viewer が組み込まれました．<br>
+Firefox 19 で PDF Viewer がデフォルトで有効になりました．<br>
 
 - [pdf.js](http://mozilla.github.com/pdf.js/)
 - [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
