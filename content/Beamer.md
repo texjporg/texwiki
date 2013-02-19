@@ -56,9 +56,10 @@ l.12 \ProvidesClassRCS
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
 
-#### dvipdfmx を使用するとナビゲーションバーの機能が動作しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
+#### dvipdfmx を使用するとナビゲーションシンボルが機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
 
 - [LaTeX: to make the navigation bar work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
+- [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
 
 #### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
