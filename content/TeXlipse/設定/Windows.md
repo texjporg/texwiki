@@ -750,6 +750,45 @@ SumatraPDF を使用する場合は，
 
 の優先度を一番上にします．
 
+#### Mozilla Firefox (pdf.js) {#r5d56a20}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mozilla Firefox</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Mozilla Firefox\firefox.exe</ins> または <ins>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-new-window "&#x25;fullfile"</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+Mozilla Firefox (pdf.js) を使用する場合は，
+
+> <span style="color:White;background-color:#1188FF;">　Mozilla Firefox (C:\Program Files\Mozilla Firefox\firefox.exe)　</span><br>
+
+の優先度を一番上にします．
+
 #### Chrome PDF Viewer {#e47a5b91}
 
 ***
