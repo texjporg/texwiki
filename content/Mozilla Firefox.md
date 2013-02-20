@@ -30,7 +30,9 @@ Firefox 19 で PDF Viewer がデフォルトで有効になりました．<br>
 
 #### 設定方法 {#u5cf20d8}
 
-Mozilla Firefox のアドレスバーに
+Mozilla Firefox 19.0 以降ではデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
+
+Mozilla Firefox 19.0 よりも前のバージョンでは Mozilla Firefox のアドレスバーに
 
 ```
 about:config
