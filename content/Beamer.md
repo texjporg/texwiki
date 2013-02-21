@@ -60,6 +60,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 - [LaTeX: to make the navigation bar work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
+- [Beamer は dvipdfmx をサポートするか否か？ (2)](http://d.hatena.ne.jp/zrbabbler/20130221/1361455788)
 
 #### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
