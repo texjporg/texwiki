@@ -62,7 +62,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
 - [Beamer は dvipdfmx をサポートするか否か？ (2)](http://d.hatena.ne.jp/zrbabbler/20130221/1361455788)
 
-#### Beamer 3.18 で dvipdfm(x) を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
+#### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
 - [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
 - [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
