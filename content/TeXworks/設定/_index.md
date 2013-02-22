@@ -37,6 +37,8 @@ TeX Live 2012, MacTeX-2012 の TeXworks はスペルチェックの辞書が含�
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
 
+上記の設定でうまくいかない場合は [texlive 2012](http://technology.dip.jp/~ray/2013/02/967) の「texworksのスペルチェッカの辞書の設置場所」を参照してください．
+
 ### OS X (MacTeX-2012) の場合 {#d0319cb7}
 
 1. [http://extensions.services.openoffice.org/dictionary](http://extensions.services.openoffice.org/dictionary) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
