@@ -26,6 +26,8 @@ pukiwiki: "Asymptote"
 [Pronunciation of asymptote - how to pronounce asymptote correctly.](http://www.howjsay.com/index.php?word=asymptote)
 (注意：音が出ます)
 で確認したところ「アスィムトートゥ」みたいな感じで発音するみたいです。
+発音記号では\[æ'sim(p)tout\]。
+英単語としての意味は“漸近線”。
 
 ### インストール {#a2be7136}
 
