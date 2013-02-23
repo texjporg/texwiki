@@ -30,7 +30,7 @@ Mery は
 に対応しています．
 
 - [Haijin Boys Online](http://www.haijin-boys.com/) 公式サイト
-    - [kuro (haijinboys) on Twitter](http://twitter.com/haijinboys)
+    - [kuro (haijinboys) on Twitter](https://twitter.com/haijinboys)
         <!-- - -[[Beta, Build: 2.0.9.3936とマクロ:http://www.haijin-boys.com/index.php?fuseaction=weblog.entryInquire&entry_id=50546e5d130fe0.87291176#comment]] -->
         <!-- - -[[Texが色分けされ:http://www.haijin-boys.com/index.php?fuseaction=discussions.replies&discussion_id=4fd8dc286a4a65.60345084]] -->
         <!-- - -[[TEXのtemplate:http://www.haijin-boys.com/index.php?fuseaction=discussions.replies&discussion_id=4a49a6b7d97bb8.45052497]] -->
