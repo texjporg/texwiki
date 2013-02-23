@@ -160,7 +160,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
 
 - [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830)
-- [polyglossia が LuaTeX に非対応な理由（ツイッター）](http://twitter.com/#!/zr_tex8r/status/196604967115694080)
+- [polyglossia が LuaTeX に非対応な理由（ツイッター）](https://twitter.com/zr_tex8r/status/196604967115694080)
 
 を参照．
 
