@@ -135,6 +135,41 @@ TeX で命令を書いているときに，そうした命令を書いていく�
 KaTeX （花鳥）は便利なキーボードショートカットを多数有し，LaTeX の命令や環境の入力を素早く，なおかつ楽にしてくれるマクロです。<br>
 [YaTeX](/YaTeX/) の xyzzy 版と言った方がわかりやすいかもしれません。<br>
 
+xyzzy に標準添付されている winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
+例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
+従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
+
+xyzzy は標準では Emacs 風のキーボードショートカットに
+なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
+Windows 標準のキーボードショートカットが使えるようになります。<br>
+しかしながら，
+この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
+使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
+要望を完全にはかなえてくれません。<br>
+そのような方は，
+大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。<br>
+インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
+ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
+初期設定ファイルで，
+
+```
+(load-library "pavail")
+```
+
+と記述するだけです。<br>
+これで，xyzzy を快適に使うことができるように
+なるかもしれません（私が使っている分には，不具合は今のところありません）。<br>
+なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
+まったく宣伝していません。
+従って，まだ Netinstaller からはインストールできません。<br>
+これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
+同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
+ものですが，次のところが元祖で pavail.l が後発になると思います。<br>
+
+- [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
+
+xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
+
 <!-- 公式サイトの Web Archive [[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] -->
 <!-- (&ref(http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l,http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l);) -->
 <!-- から KaTeX を選択してダウンロードできます．~ -->
@@ -836,6 +871,99 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 2005年11月4日9時くらいまでの記述は paren などの設定との共存ができませんでしたが，上記のとおりの記述であれば大丈夫です。
 前の設定を書いた方は，申し訳ありませんが前の設定を消して上のものに差し替えてください。
 
+## clickable-uri と小物マクロによる便利技 {#xyclickab}
+
+URI をダブルクリックすると自動的に Web ブラウザが起動するマクロですが，
+これを応用するとダブルクリックすることで \includegraphics で指定した
+画像ファイルをダブルクリックで開くことができるようになります。xyzzy で
+Emacs の preview-latex マクロみたいなことはできませんが，
+この機能とその次に述べる，数式環境のみを自動タイプセットする
+小物マクロを併用することで，いくぶんやりやすくなるでしょう。
+
+[雑記帖](http://ohkubo.s53.xrea.com/)
+([http://ohkubo.s53.xrea.com/xyzzy/packages.l](http://ohkubo.s53.xrea.com/xyzzy/packages.l))
+から NetInstaller でインストールしましょう。そして，
+
+```
+(push "\\\\includegraphics\\\[*.*\\\]*{.+}"
+      *clickable-uri-special-regexp-list*)
+(push (cons "^\\\\includegraphics\\\[*.*\\\]*{\\(.+\\)}"
+	    #'(lambda (uri)
+		(when (string-matchp "\\\\includegraphics\\\[*.*\\\]*{\\(.+\\)}" uri)
+		  (goto-char (match-beginning 0))
+		  (set-mark-command)
+		  (goto-char (match-end 0))
+		  (el::KaTeX-typeset-region)
+		  (call-interactively 'el::KaTeX-preview)
+		  )))
+      *clickable-uri-open-command-alist*)
+(clickable-uri-set-regexp)
+```
+
+と記述しておくことで，\includegraphics{test.jpg} などと書かれている部分をダブルクリックすることで，test.jpg を開けるようになります。
+
+なお次のような関数を定義しておけば，“$” や “\\\[” で囲まれた数式環境を Shift + Ctrl + 左クリック することで，自動的にその領域だけタイプセット・プレビューしてくれます。
+タイプセットが終わった後にミニバッファ（下の1行くらいの領域）で2回 Enter を押しておく必要があるでしょう。
+（デフォルトの設定では，dviout に PATH を通しておかないと最初に Enter を押す前に dviout のフルパスを指定する羽目になると思います。）
+
+***
+
+```
+(defun preview-math-env ()
+  (interactive)
+  (save-excursion
+    (if (and (el::KaTeX-in-math-mode-p)
+	     (scan-buffer "\\$\\|begin\\|\\[" :reverse t :regexp t)
+	     (cond ((string= (match-string 0) "$")
+		    (set-mark) ; はじめの“$”でマークセット
+		    (scan-buffer "$" :no-dup t :tail t)) ; 終わりの“$”へポイント移動
+		   ((string= (match-string 0) "\[") ;
+		    (backward-char)
+		    (set-mark) ; はじめの“\[”でマークセット
+		    (scan-buffer "\\\]" :no-dup t :tail t)) ; 終わりの“\]”へポイント移動
+		   )
+	     )
+	(progn (el::KaTeX-typeset-region)
+	  (call-interactively 'el::KaTeX-preview))
+      (message "数式がみつかりません。")
+      )))
+
+(define-key elisp::*KaTeX-mode-map* '(#\S-C-LBtnDown) 'preview-math-env)
+```
+
+***
+
+応用すれば，equation 環境などでも同じことができそうです。
+
+## template-insert で雛形挿入 {#xyki6f8d}
+
+LaTeX のファイルを新たに開いたときに，自動的に雛形となるファイルが挿入されると
+非常に便利でしょう。template-insert はそれを実現するためのマクロです。
+
+[kia's website](http://www.geocities.jp/kiaswebsite/xyzzy/)
+([http://www.geocities.jp/kiaswebsite/xyzzy/packages.txt](http://www.geocities.jp/kiaswebsite/xyzzy/packages.txt))
+を追加し，template-insert を選びます。あとは ~/.xyzzy のあるフォルダに
+insert というフォルダを新たに作り，textemplate.tex という雛形ファイル（例えば
+
+```
+\documentclass{jsarticle}
+%\documentclass{jarticle}
+\begin{document}
+
+\end{document}
+```
+
+とする）を作っておき，~/.xyzzy などに
+
+```
+(require "template-insert")
+(use-package 'template-insert)
+(setq *template-insert-directory* "~/insert/")
+(setq *template-insert-alist* '((elisp::katex-mode . "textemplate.tex")))
+```
+
+と記述します。すると，新たに TeX ソースファイルを作成し，このときに KaTeX を自動読み込みする設定になっていると，雛形ファイル textemplate.tex の内容を自動的に挿入するかどうか聞いてきます。入れたい場合は y と答えます。
+
 ## Unicode で多言語 TeX 文書 {#zf0dbbe2}
 
 ### Unicode で多言語 TeX 文書を作ってみる（ヨーロッパ言語・ロシア語・ギリシア語編） {#xyutff8d}
@@ -1239,8 +1367,8 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に書きま�
 （私の環境で表示できた an から ha までの文字しか変換できません。その他の文字については，すみませんが ASCII アルファベットで書いてください。
 もちろん改良スクリプト随時大募集です。） スクリプトの実行には Perl が必要になりますので，忘れずにインストールしてください。
 
-- G2TeX ([g2tex.pl](http://replay.waybackmachine.org/20060824005927/http://www.klavis.info/g2tex.pl))
-- V2TeX ([v2tex.pl](http://replay.waybackmachine.org/20060824010156/http://www.klavis.info/v2tex.pl))
+- G2TeX ([g2tex.pl](http://web.archive.org/web/20060824005927/http://www.klavis.info/g2tex.pl))
+- V2TeX ([v2tex.pl](http://web.archive.org/web/20060824010156/http://www.klavis.info/v2tex.pl))
 
 g2tex.pl や v2tex.pl をダウンロードし，PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
@@ -1336,6 +1464,7 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
     - [『xyzzy への花鳥のインストール』 (PDF)](http://leaf.dyndns.org/lumber/down/xyzzy/install_070203.pdf)
 - [xyzzy + KaTeX - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?xyzzy%20%2B%20KaTeX)
 - [XyzzyWiki:QuickTour/ext/KaTeX](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX)
+- [XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9)
 - [質問箱/112 - XyzzyWiki (Dabbrevで、ある開いていないファイルのみを読み込んで補完する方法)](http://xyzzy.s53.xrea.com/wiki/index.php?%BC%C1%CC%E4%C8%A2%2F112)
 - [katex-kill-proc](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?33a2536c21b7ead86ca4343ecece4446)
 - [katex-autoload-dir](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?4876687f1858d1f88578004a36293b60)
