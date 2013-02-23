@@ -62,7 +62,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 まずは次の本を挙げておきます。
 
-- [Leslie Lamport](http://lamport.org/) 著，[阿瀬 はる美](http://twitter.com/harumi_ase)
+- [Leslie Lamport](http://lamport.org/) 著，[阿瀬 はる美](https://twitter.com/harumi_ase)
     訳『[文書処理システム LaTeX2e](http://www.pej-hed.jp/washo/103.html)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，税込価格 &yen;3,150，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
     の原典です。
 
