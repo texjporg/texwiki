@@ -65,7 +65,7 @@ release 9278 で，日本語入力の問題は修正されました．<br>
     - [problem with input japanese](https://github.com/textmate/textmate/issues/44) → Closed
 
 <!-- *tmplugin [#kf83bc5c] -->
-<!-- -[[hetima.com:http://hetima.com/]] ([[twitter:http://twitter.com/hetima]]) -->
+<!-- -[[hetima.com:http://hetima.com/]] ([[twitter:https://twitter.com/hetima]]) -->
 <!-- - -[[TextMate stuff - hetima.com:http://hetima.com/textmate/]] -->
 <!-- -[[TextMate2IMFix:https://github.com/hetima/TextMate2IMFix]] -->
 <!-- - -TextMate 2 の日本語入力を改善する tmplugin．release 9278 で，日本語入力の問題は修正されました． -->
