@@ -21,7 +21,7 @@ PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF]
 - [Acrobatヘルプ＆サポート](http://www.adobe.com/jp/support/acrobat/)
 - [Adobe Acrobat Japan | Facebook](http://www.facebook.com/AdobeAcrobatJP)
 - [Adobe Reader Blog](http://blogs.adobe.com/adobereader/)
-- [アドビ サポート担当 (adobesupportj) on Twitter](http://twitter.com/#!/AdobeSupportJ)
+- [アドビ サポート担当 (adobesupportj) on Twitter](https://twitter.com/AdobeSupportJ)
 - [Adobe - ニュースルーム](http://www.adobe.com/jp/aboutadobe/pressroom/)
     - [Adobe - 過去のニュースリリース](http://www.adobe.com/jp/aboutadobe/pressroom/pressreleases/)
 
@@ -94,7 +94,7 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 
 ## アンインストール {#j28c578e}
 
-- [Adobe Reader および Acrobat 用の Cleaner Tool について（Windows）](http://kb2.adobe.com/jp/cps/935/cpsid_93506.html) → ([参照](http://twitter.com/#!/AdobeSupportJ/status/192532790707888128))
+- [Adobe Reader および Acrobat 用の Cleaner Tool について（Windows）](http://kb2.adobe.com/jp/cps/935/cpsid_93506.html) → ([参照](https://twitter.com/AdobeSupportJ/status/192532790707888128))
 
 ## ヘルプ {#je3a489e}
 
