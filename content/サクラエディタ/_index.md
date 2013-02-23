@@ -36,9 +36,6 @@ pukiwiki: "サクラエディタ"
 - [SakuraEditorMsiInstaller](https://github.com/tohosaku/SakuraEditorMsiInstaller)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
 - [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
-    <!-- - -[[もか@小枝 (moca_skr) on Twitter:http://twitter.com/moca_skr]] -->
-    <!-- - -[[もか@小枝(@moca_skr) - Twilog:http://twilog.org/moca_skr]] -->
-
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/) → [更新停止](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode&tree=r1465)
     - [サイト更新履歴](http://www.geocities.jp/moca_skr/history.html)
     - [サクラの小枝研 - 特殊用本体](http://www.geocities.jp/moca_skr/bin_other.html)
@@ -165,7 +162,7 @@ bregonig.dll Ver.3.03 は x64 に対応しています．
 
 - [bregonig.dll](http://homepage3.nifty.com/k-takata/mysoft/bregonig.html)
 - [Downloads · k-takata/bregonig · GitHub](https://github.com/k-takata/bregonig/downloads)
-    - [twitter](http://twitter.com/k_takata)
+    - [twitter](https://twitter.com/k_takata)
 
 bregonig.dll を
 
