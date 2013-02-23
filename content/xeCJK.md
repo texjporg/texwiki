@@ -200,7 +200,7 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 - [Ubuntu 12.10 の texlive で xeCJK/ZXjatype を使うにはどうすればよいか？](http://blog.livedoor.jp/ti5942/archives/7562299.html)
 - [Ubuntu 12.10 64bit texliveに入っているxeCJKのバージョン？](http://blog.livedoor.jp/ti5942/archives/7561243.html)
 - [Ubuntu 12.10: xeCJK/ZXjatypeを導入したが。。。](http://blog.livedoor.jp/ti5942/archives/7556359.html)
-- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](http://twitter.com/imunolion/status/260648169849896960)
+- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](https://twitter.com/imunolion/status/260648169849896960)
 
 l3kernel, l3packages が古いバージョンで [xeCJK 3.0.6 r343](http://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
 気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
