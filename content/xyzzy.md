@@ -21,8 +21,6 @@ xyzzy は柔軟なカスタマイズを可能にした，
 [Emacs](/Emacs/) を知っている方には，elisp ではなく，xyzzy Lisp (Common Lisp) を使って拡張する Microsoft Windows 専用の環境である，と表現したほうがわかりやすいかもしれません。<br>
 国産で，フリーソフトウェアです。<br>
 
-xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
-
 多言語についても
 
 - フランス語やドイツ語などのラテンアルファベット系言語
@@ -37,9 +35,6 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 ただし，「テキストエディタって何？」という方や Emacs で Lisp を使って自分の好きなように拡張することに価値を見いだせず，挫折してしまった方は xyzzy でも同様に挫折する可能性が高いと思われます。<br>
 そういった方は無理をせずに [サクラエディタ](</サクラエディタ/>)，[Notepad++](/Notepad++/)，jEdit，[Geany](/Geany/)，[gedit](/gedit/)，[Vim](/Vim/)[^1] などのテキストエディタ，もしくは [Eclipse](/Eclipse/) などの IDE を使うことをおすすめします。<br>
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。<br>
-また，同じく標準添付の winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
-例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
-従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
 レジストリは変更しませんので，少しでも興味のある方は試してみてはいかがでしょうか？<br>
 
 - [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.com/)
@@ -135,36 +130,6 @@ xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう
 ください。Emacs 風にミニバッファからファイルを入力して開くことができます。）<br>
 このことから，少なくともマウス操作においては，他のエディタを
 お使いの方にとっても違和感はほとんどないのではないかと思われます。<br>
-また先述したように標準では Emacs 風のキーボードショートカットに
-なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
-Windows 標準のキーボードショートカットが使えるようになります。<br>
-しかしながら，
-この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
-使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
-要望を完全にはかなえてくれません。<br>
-そのような方は，
-大友さん作の[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。<br>
-インストールは，[pavail.l](http://replay.waybackmachine.org/20060824010604/http://www.klavis.info/pavail.l) を
-ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
-初期設定ファイルで，
-
-```
-(load-library "pavail")
-```
-
-と記述するだけです。<br>
-これで，xyzzy を快適に使うことができるように
-なるかもしれません（私が使っている分には，不具合は今のところありません）。<br>
-なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
-まったく宣伝していません。
-従って，まだ Netinstaller からはインストールできません。<br>
-これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
-同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
-ものですが，次のところが元祖で pavail.l が後発になると思います。<br>
-
-- [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
-
-xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
 
 ## SumatraPDF との連携 {#s1d4a0f1}
 
@@ -214,7 +179,7 @@ xyzzy から dviout for Windows の該当箇所にジャンプすることが可
 
 [KaTeX](/KaTeX/) を使用する場合は [KaTeX#dviout との連携#forward search](/KaTeX/#h429b3b5) を参照してください．
 
-KaTeX をお使いでない場合は次のように書きます。ただし，KaTeX をインストールして上のように書いておくことを勧めます。
+KaTeX を使用しない場合は次のように書きます。
 
 ***
 
@@ -256,6 +221,7 @@ dviout for Windows でマウスカーソルが矢印になっているときに�
 
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
 有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。<br>
 詳細は
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
@@ -396,121 +362,6 @@ Ctrl + Enter またはメニューバーより ［Outline-Tree］ → ［アウ�
 <!--  ;; このファイルで *olt-setting-alist* に設定した内容を既存のバッファに適用 -->
 <!-- (olt-init-setting) -->
 <!-- - --  -->
-
-### KaTeX で TeX の命令をラクラク入力 {#xykb6f8d}
-
-KaTeX についての記述は
-[KaTeX#KaTeX で TeX の命令をラクラク入力](/KaTeX/#k658955e)
-に移転することにしました。そちらを是非ご参照いただければと思います。
-
-KaHTML についての記述は
-[XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9)
-に移転することにしました。そちらを是非ご参照いただければと思います。
-
-### 対応括弧を見つけてみる {#xyparenl}
-
-parentag についての記述は
-[KaTeX#対応括弧を見つけてみる](/KaTeX/#xyparenl)
-に移転することにしました。そちらを是非ご参照いただければと思います。
-
-### clickable-uri と小物マクロによる便利技 {#xyclickab}
-
-URI をダブルクリックすると自動的に Web ブラウザが起動するマクロですが，
-これを応用するとダブルクリックすることで \includegraphics で指定した
-画像ファイルをダブルクリックで開くことができるようになります。xyzzy で
-Emacs の preview-latex マクロみたいなことはできませんが，
-この機能とその次に述べる，数式環境のみを自動タイプセットする
-小物マクロを併用することで，いくぶんやりやすくなるでしょう。
-
-[雑記帖](http://ohkubo.s53.xrea.com/)
-([http://ohkubo.s53.xrea.com/xyzzy/packages.l](http://ohkubo.s53.xrea.com/xyzzy/packages.l))
-から NetInstaller でインストールしましょう。そして，
-
-```
-(push "\\\\includegraphics\\\[*.*\\\]*{.+}"
-      *clickable-uri-special-regexp-list*)
-(push (cons "^\\\\includegraphics\\\[*.*\\\]*{\\(.+\\)}"
-	    #'(lambda (uri)
-		(when (string-matchp "\\\\includegraphics\\\[*.*\\\]*{\\(.+\\)}" uri)
-		  (goto-char (match-beginning 0))
-		  (set-mark-command)
-		  (goto-char (match-end 0))
-		  (el::KaTeX-typeset-region)
-		  (call-interactively 'el::KaTeX-preview)
-		  )))
-      *clickable-uri-open-command-alist*)
-(clickable-uri-set-regexp)
-```
-
-と記述しておくことで，\includegraphics{test.jpg} などと書かれている部分をダブルクリックすることで，test.jpg を開けるようになります。
-
-なお次のような関数を定義しておけば，“$” や “\\\[” で囲まれた数式環境を Shift + Ctrl + 左クリック することで，自動的にその領域だけタイプセット・プレビューしてくれます。
-タイプセットが終わった後にミニバッファ（下の1行くらいの領域）で2回 Enter を押しておく必要があるでしょう。
-（デフォルトの設定では，dviout に PATH を通しておかないと最初に Enter を押す前に dviout のフルパスを指定する羽目になると思います。）
-
-***
-
-```
-(defun preview-math-env ()
-  (interactive)
-  (save-excursion
-    (if (and (el::KaTeX-in-math-mode-p)
-	     (scan-buffer "\\$\\|begin\\|\\[" :reverse t :regexp t)
-	     (cond ((string= (match-string 0) "$")
-		    (set-mark) ; はじめの“$”でマークセット
-		    (scan-buffer "$" :no-dup t :tail t)) ; 終わりの“$”へポイント移動
-		   ((string= (match-string 0) "\[") ;
-		    (backward-char)
-		    (set-mark) ; はじめの“\[”でマークセット
-		    (scan-buffer "\\\]" :no-dup t :tail t)) ; 終わりの“\]”へポイント移動
-		   )
-	     )
-	(progn (el::KaTeX-typeset-region)
-	  (call-interactively 'el::KaTeX-preview))
-      (message "数式がみつかりません。")
-      )))
-
-(define-key elisp::*KaTeX-mode-map* '(#\S-C-LBtnDown) 'preview-math-env)
-```
-
-***
-
-応用すれば，equation 環境などでも同じことができそうです。
-
-### template-insert で雛形挿入 {#xyki6f8d}
-
-LaTeX のファイルを新たに開いたときに，自動的に雛形となるファイルが挿入されると
-非常に便利でしょう。template-insert はそれを実現するためのマクロです。
-
-[kia's website](http://www.geocities.jp/kiaswebsite/xyzzy/)
-([http://www.geocities.jp/kiaswebsite/xyzzy/packages.txt](http://www.geocities.jp/kiaswebsite/xyzzy/packages.txt))
-を追加し，template-insert を選びます。あとは ~/.xyzzy のあるフォルダに
-insert というフォルダを新たに作り，textemplate.tex という雛形ファイル（例えば
-
-```
-\documentclass{jsarticle}
-%\documentclass{jarticle}
-\begin{document}
-
-\end{document}
-```
-
-とする）を作っておき，~/.xyzzy などに
-
-```
-(require "template-insert")
-(use-package 'template-insert)
-(setq *template-insert-directory* "~/insert/")
-(setq *template-insert-alist* '((elisp::katex-mode . "textemplate.tex")))
-```
-
-と記述します。すると，新たに TeX ソースファイルを作成し，このときに KaTeX を自動読み込みする設定になっていると，雛形ファイル textemplate.tex の内容を自動的に挿入するかどうか聞いてきます。入れたい場合は y と答えます。
-
-### 動的補完でらくらく入力 {#xydb6f8d}
-
-parentag についての記述は
-[KaTeX#動的補完でらくらく入力](/KaTeX/#xydb6f8d)
-に移転することにしました。そちらを是非ご参照いただければと思います。
 
 ### コメントアウト用マクロ {#kb32d525}
 
