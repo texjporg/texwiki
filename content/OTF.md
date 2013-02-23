@@ -15,7 +15,7 @@ pukiwiki: "OTF"
 
 ### OTF パッケージとは {#h230c839}
 
-[LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](http://twitter.com/psi_tau)) の
+[LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（開発版を利用した場合）の
 和文 OpenType フォントを使うためのパッケージです。
 
