@@ -7,7 +7,7 @@ pukiwiki: "xyzzy"
 
 # xyzzy
 
-## [xyzzy](http://www.jsdlab.co.jp/~kamei/) {#ea58addb}
+## [xyzzy](http://xyzzy-022.github.com/) {#ea58addb}
 
 <img src="http://xyzzy.s53.xrea.com/wiki/index.php?plugin=ref&amp;page=tips%2Ficon%A4%F2%BD%F1%A4%AD%B4%B9%A4%A8%A4%EB&amp;src=xyzzy_g.png" alt="xyzzy" style="float:right">
 
