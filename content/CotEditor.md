@@ -35,6 +35,8 @@ OS X 10.8, 10.7, 10.6, 10.5, 10.4
 
 - [coteditor/CotEditor.git](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git)
     - [shortlog](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=shortlog)
+- [1024jp/CotEditor · GitHub](https://github.com/1024jp/CotEditor)
+    - [コミットログ](https://github.com/1024jp/CotEditor/commits/)
 
 ## ダウンロード {#v461a501}
 
