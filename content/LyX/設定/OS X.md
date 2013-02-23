@@ -91,7 +91,7 @@ DVIコマンドは pxdvi を使用します．<br>
     - [LyX (1)](http://ysykimura.wordpress.com/2011/10/22/lyx/)
 - [LyX2 &amp; TeXLive2010/Mac で 日本語PDF表示までしてみた。](http://d.hatena.ne.jp/fu7mu4/20110515/1305422129)
 - [/trunk/dports/aqua/LyX/Portfile](http://trac.macports.org/browser/trunk/dports/aqua/LyX/Portfile)
-    <!-- -[[LyX上で、自作のLaTeX Document Classを使える様に設定した。LaTeXのローカル環境（~/Library/texmf以下とか）に自作「.cls」ファイルを置いた後に「texhash」を実行、自作クラス定義用に「.layout」レイアウト・ファイルを作成してLyX側でそれを参照すればOK。:http://twitter.com/Shigerello]] -->
+    <!-- -[[LyX上で、自作のLaTeX Document Classを使える様に設定した。LaTeXのローカル環境（~/Library/texmf以下とか）に自作「.cls」ファイルを置いた後に「texhash」を実行、自作クラス定義用に「.layout」レイアウト・ファイルを作成してLyX側でそれを参照すればOK。:https://twitter.com/Shigerello]] -->
 
 - [若松久仁光のホームページ](http://www.geocities.jp/flutecore/)
     - [音楽家のためのLaTeX](http://www.geocities.jp/flutecore/LaTeX.html)
