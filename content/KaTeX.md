@@ -37,18 +37,6 @@ KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
 マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
 
-<!-- 修正されました -->
-<!-- ↓ -->
-<!-- KaTeX カスタム版をテストしてみたところ，タイプセットはオリジナル版と変わらず普通に動作するようです．~ -->
-<!-- C-c C-b i で補完しようとするとオリジナル版とは動作が異なり -->
-<!-- katexenv start loading by mumurik -->
-<!-- と表示された後 -->
-<!-- katexenv end loading by mumurik -->
-<!-- と表示されて補完されるようです．~ -->
-<!-- 表示されるのは初回の補完時のみで2回目以降は表示されません．~ -->
-<!--  -->
-<!-- [[message-box による printf デバッグの消し忘れ:http://twitter.com/#!/mumurik765/status/186792959121948672]]だそうです．~ -->
-
 ### EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
 
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
