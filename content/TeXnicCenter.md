@@ -20,7 +20,6 @@ pukiwiki: "TeXnicCenter"
 TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
-    - [TeXnicCenter News](http://www.texniccenter.org/news)
 - [TeXnicCenter | Free Business &amp; Enterprise software downloads at SourceForge.net](http://sourceforge.net/projects/texniccenter/)
 - [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
@@ -34,7 +33,7 @@ Windows 7, Vista, XP
 
 ### リリース情報 {#da101e5c}
 
-2012-11-03 [TeXnicCenter 2.0 Beta 1](http://sourceforge.net/projects/texniccenter/files/TeXnicCenter/2%20Beta%201/)<br>
+[TeXnicCenter News](http://www.texniccenter.org/news) を参照．
 
 TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
 TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
