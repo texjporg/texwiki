@@ -81,59 +81,6 @@ dviout で使う場合は Ghostscript もインストールする必要があり
 
 TeX Live, MacTeX には txfonts が含まれていますので，何もする必要はありません。
 
-### インストール（teTeX） {#e7c5f34a}
-
-次のところからダウンロードします（約 3.5M バイト）。
-
-- [Ringサーバ](http://www.ring.gr.jp/)
-    の
-    [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
-
-- 会津大学のCTANミラー:
-    [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/)
-
-- 本家CTANサーバ:
-    [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
-
-ドキュメントを読んでインストールします。
-最近の teTeX ベースのシステムなら次のように行います
-（Vine 2.x をはじめ多くのシステムでは /usr/local/share/...
-ではなく /usr/share/... です）。
-
-- afm の中身を /usr/local/share/texmf/fonts/afm/txr/ に入れる。
-- pfb の中身を /usr/local/share/texmf/fonts/type1/txr/ に入れる。
-- tfm の中身を /usr/local/share/texmf/fonts/tfm/txr/ に入れる。
-- vf の中身を /usr/local/share/texmf/fonts/vf/txr/ に入れる。
-- input の中身を /usr/local/share/texmf/tex/latex/txr/ に入れる。
-- dvips の中身を /usr/local/share/texmf/dvips/config/ に入れる。
-- /usr/local/share/texmf/dvips/config/config.ps に p +txr.map
-    という行を追加する（Vine 2.x の場合は /usr/share/texmf/config.ps）。
-
-- /usr/local/share/texmf/dvips/config/config.pdf を使う場合は G
-    という行を削除する（Vine 2.x では該当せず）。
-
-- 古い TX フォントを使っていたなら，/usr/local/share/texmf/fonts/pk/modeless/txr/
-    の中をいったん消す（Vine 2.x では /var/lib/texmf/pk/modeless/txr/）。
-
-- /usr/local/share/texmf/ls-R というファイルがある場合は，
-    ここで mktexlsr コマンドを実行する（MakeTeXls-R
-    という名前になっているシステムもある）。
-
-もしこれでうまくいかなければ，
-kpsewhich psfonts.map と打ち込んで psfonts.map
-の在処を調べ，それに txr.map の内容をアペンドしてしまってください。
-
-> psfonts.map を書き換えるのはちょっと強引かもしれません。
-> もとはといえば /usr/bin/mktexpk が悪いのですから，これを
-> [teTeX の mktexpk](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mktexpk)（多少手を加えたかも）と取り替えてください。
-
-texmf ディレクトリで展開するだけでほぼインストールが完了するものも作りました：
-
-- [txfonts-3_1_1b.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/txfonts-3_1_1b.zip) (約 1M バイト)
-- マニュアル [txfontsdocA4.tex](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/txfontsdocA4.tex) (約 39K バイト)
-
-展開後，上の config.ps の編集に進んでください。
-
 ### 使い方 {#w2da6d80}
 
 LaTeX2e を使っている場合は，次のようにして txfonts パッケージを読み込みます。
@@ -267,5 +214,15 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
     MathTime Plus（15フォント）相当のものは含まれていません。
 
 ### 関連リンク {#na79627d}
+
+- [Ringサーバ](http://www.ring.gr.jp/)
+    の
+    [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
+
+- 会津大学のCTANミラー:
+    [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/)
+
+- 本家CTANサーバ:
+    [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
 
 - [TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
