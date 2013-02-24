@@ -11,6 +11,7 @@ pukiwiki: "TeXmacs"
 
 - [Welcome to GNU TeXmacs (FSF GNU project)](http://www.texmacs.org/)
 - [TeXmacs home page (FSF GNU project)](http://www.math.u-psud.fr/~anh/TeXmacs/TeXmacs.html)
+- [CTAN:help/Catalogue/entries/texmacs.html](https://mirror.ctan.org/help/Catalogue/entries/texmacs.html)
 
 ### 動作環境 {#y75432ed}
 
