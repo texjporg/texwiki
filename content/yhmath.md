@@ -21,8 +21,7 @@ yhmathを紹介してくださった本田さんに感謝します。
 
 [yhcmex.pfa](https://mirror.ctan.org/fonts/yhmath/yhcmex.pfa)
 ではなく，これを [t1utils](http://www.lcdf.org/~eddietwo/type/#t1utils)
-[PfaEdit](http://pfaedit.sourceforge.net/oldindex.html)
-（現 [FontForge](http://fontforge.sourceforge.net/)）
+[FontForge](http://fontforge.sourceforge.net/)
 で変換した [yhcmex.pfb](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb) を使う方法を説明します。
 
 ダウンロードするもの：
