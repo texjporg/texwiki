@@ -120,7 +120,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 Version 2 では，デフォルトの文字コードを指定できるようになりました．<br>
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] でデフォルトの文字コードを指定できます．<br>
-UTF-8, SJIS, EUC の中から作成する LaTeX 文書に合わせて選択してください．<br>
+UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選択します．<br>
 
 ***
 
@@ -420,14 +420,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
@@ -461,14 +461,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
@@ -680,14 +680,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var bibtex = "pbibtex -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     bibtex = "pbibtex -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    bibtex = "pbibtex -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     bibtex = "pbibtex -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    bibtex = "pbibtex -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    bibtex = "pbibtex -kanji=jis -sjis-terminal";
   }
   bibtex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + bibtex;
@@ -749,14 +749,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var makeindex = "mendex -T";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    makeindex = "mendex -U -T";
+  } else if (charCode == 0) {
     makeindex = "mendex -S -T";
-  } else if (charCode == 1) {
-    makeindex = "mendex -J -T";
   } else if (charCode == 2) {
     makeindex = "mendex -E -T";
-  } else if (charCode == 4) {
-    makeindex = "mendex -U -T";
+  } else if (charCode == 1) {
+    makeindex = "mendex -J -T";
   }
   makeindex += " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + makeindex;
@@ -1064,14 +1064,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
@@ -1105,14 +1105,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     latex = "platex -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     latex = "platex -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    latex = "platex -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    latex = "platex -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -g > " + ["\"", b, ".ps", "\""].join("");
@@ -1328,14 +1328,14 @@ function main()
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -src-specials -guess-input-enc -sjis-terminal";
   var charCode = Editor.GetCharCode();
-  if (charCode == 0) {
+  if (charCode == 4) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 0) {
     latex = "platex -src-specials -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (charCode == 1) {
-    latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
   } else if (charCode == 2) {
     latex = "platex -src-specials -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (charCode == 4) {
-    latex = "platex -src-specials -no-guess-input-enc -kanji=utf8 -sjis-terminal";
+  } else if (charCode == 1) {
+    latex = "platex -src-specials -no-guess-input-enc -kanji=jis -sjis-terminal";
   }
   latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
   var cmd = "cmd /c " + cd + " && " + latex;
