@@ -20,7 +20,6 @@ pukiwiki: "BibTeX関連ツール"
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | OS X 10.6 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 |  [KBibTeX](http://home.gna.org/kbibtex/) |  KDE 4  | KDE 用の BibTeX エディタ。 |
 |  [Mendeley](http://www.mendeley.com/)  |  Web ブラウザ, Windows, OS X, Linux  | 文献管理ソフト |
-| [BibTeX Online Editor](http://truben.no/latex/bibtex/) |  Web ブラウザ  | オンラインの BibTeX エディタ |
 | [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) |   | .bib ファイルの管理ソフト。[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
 |  [Tellico](http://tellico-project.org/)  |  KDE >= 4, Qt >= 4, libxml2, libxslt1 >= 1.0.19  |  KDE用の蔵書管理ソフト。データファイルは独自の形式だが、bibファイルを含むいろいろな形式をインポートエキスポートできる。 |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ。 |
@@ -111,6 +110,8 @@ BibTeX形式の出力があるWebアプリが公開されている
 #### [Makino Takaki's Page (.ja)](http://www.snowelm.com/~t/index.ja.html) {#ded39e28}
 
 - [平文から BiBTeX エントリを自動生成](http://www.snowelm.com/~t/doc/tips/makebib.ja.html)
+
+#### [BibTeX Online Editor](http://truben.no/latex/bibtex/) {#e090c56d}
 
 #### その他のBibTeXデータベースと検索プラグイン {#ja2d2df0}
 
