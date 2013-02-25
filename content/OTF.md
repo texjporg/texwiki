@@ -64,18 +64,10 @@ Windows PowerShell やコマンド プロンプトで次のように打ち込み
 
 ```
 >cd \w32tex
->tar Jxvf C:/temp/otfbeta.tar.xz
+>tar xvf C:/temp/otfbeta.tar.xz
 ```
 
-角藤さんの簡易インストーラー (texinst2012.zip) は <!-- 2011/12/27 TeX Live 2012/dev ベースが最新 -->
-OTF パッケージの展開にも対応していますので，次のようにしても良いでしょう。
-
-```
->cd \w32tex
->texinst2012 C:/temp
-```
-
-dvipdfm(x) 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
+dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
 とりあえずこれで大丈夫です。
 
