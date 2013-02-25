@@ -1200,10 +1200,10 @@ dvips の -E オプションを使う方法しかないようです。
 後で EPS ファイルを編集する必要があり，面倒です。
 
 そこで PSTtoEPS や dvips の -E オプションを使わずに PSTricks の PDF 変換の
-ためのマクロ pstpdfmx を作りました．目標は dvipdfm(x) を使って PSTricks の
+ためのマクロ pstpdfmx を作りました．目標は dvipdfmx を使って PSTricks の
 図をPDFで取り込み，完全なPDFを作成することです．まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
 ダウンロードしてください (Unix 系 OS 専用です，要 bash/Make/gcc)．
-これを使うとデバイスドライバに dvipdfm(x)を使って PSTricks のある程度のマクロを
+これを使うとデバイスドライバに dvipdfmx を使って PSTricks のある程度のマクロを
 使えるようになります．使い方はmakeするだけです．個別にPDFファイルを作成するには
 
 ```
