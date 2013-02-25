@@ -311,7 +311,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     ```
     (p)latex johannes.tex
-    dvipdfm(x) johannes.dvi
+    dvipdfmx johannes.dvi
     ```
 
     とすることで PostScript フォントの埋め込まれた PDF が作成されます。
