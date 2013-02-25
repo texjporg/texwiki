@@ -163,8 +163,7 @@ PostScript Level 2 での基本35書体をダウンロードするオプショ�
 （この項については内山さんからご教示をいただきました。）
 
 Mac OS でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが
-使えますが，一般のアプリケーションからは使えません。 [CTAN](/CTAN/) の
-[fonts/cm/ps-type1/bluesky/](https://mirror.ctan.org/fonts/cm/ps-type1/bluesky/) にある
+使えますが，一般のアプリケーションからは使えません。
 cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使いください
 （フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
 
@@ -172,7 +171,7 @@ cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使い�
 /Library/"Application Support"/Adobe/Fonts/ 以下ですが，Mac OS X では
 Mxdvi も同じフォントを使うことを考えれば，次の場所のいずれかに
 入れるのがいいかもしれません。Mac OS X では次の順にフォントを探してくれます
-（→ 「[Mac OS X 10: フォントの保存場所とその目的](http://docs.info.apple.com/jarticle.html?artnum=106417)」）。
+（→ 「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
