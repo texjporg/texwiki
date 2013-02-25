@@ -15,4 +15,4 @@ OCHEM は LaTeX のソース中に書いた構造式を、Perl スクリプト�
 
 作者のサイトは、[http://www.2k-software.de/ingo/index.html](http://www.2k-software.de/ingo/index.html) です。トップページはドイツ語ですが OCHEM のページは英語となっており、マニュアルも英語で提供されています。マニュアル中のサンプルを見るだけでも面白いと思います。
 
-問題としては、dvips を使って Postscript に変換することを前提としているのか、dviout や xdvi でうまくプレビューできなかったり、dvipdfm(x) が使えないことです (私の技術不足かもしれませんが)。
+問題としては、dvips を使って Postscript に変換することを前提としているのか、dviout や xdvi でうまくプレビューできなかったり、dvipdfmx が使えないことです (私の技術不足かもしれませんが)。
