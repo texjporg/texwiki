@@ -27,6 +27,13 @@ AkelPad はコンパクトで高速なテキストエディタです．
 
 [BSD 2-Clause](http://akelpad.cvs.sourceforge.net/viewvc/akelpad/akelpad_4/AkelFiles/Docs/AkelHelp-Eng.htm#ch8)
 
+## 設定 {#y9346bd5}
+
+### 既定のコードページ {#da5f19c1}
+
+日本語版 Windows では既定のコードページは 932 (ANSI/OEM - 日本語 Shift-JIS) になっています．<br>
+UTF-8 を既定のコードページにする場合は 65001 (UTF-8) に設定します．<br>
+
 ## スクリプト {#fe72e81b}
 
 AkelFiles\Plugs\Scripts フォルダーにスクリプトを配置します．<br>
