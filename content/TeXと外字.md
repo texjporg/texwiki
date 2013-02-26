@@ -9,13 +9,13 @@ pukiwiki: "TeXと外字"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji.html -->
 
-## OTFパッケージで2万字 {#ve311433}
+## OTFパッケージ(開発版)で23,058グリフ {#ve311433}
 
-[OTFパッケージ](/OTF/) でAdobe-Japan1-5の2万グリフが使えます。ほとんどの文字はこれで大丈夫です。 
+[OTFパッケージ(開発版)](/OTF/) でAdobe-Japan1-6の23,058グリフが使えます。ほとんどの文字はこれで大丈夫です。 
 
 ## Illustratorで外字作成 {#oad7ee64}
 
-Adobe-Japan1-5にもない文字はIllustratorで作ってしまいましょう。 
+Adobe-Japan1-6にもない文字はIllustratorで作ってしまいましょう。 
 
 まず目印に一辺100ポイントの正方形を描いておきます。間違えて消したり動かしたりしないようにロックしておくといいでしょう。 
 
@@ -90,7 +90,7 @@ dvipdfmxを使う場合は，上と同じでもかまいませんが，次のよ
     closepath stroke
     ```
 
-    Adobe-Japan1-5 なフォントなら \CID{16271} でも出ますが，ちょっと細い。
+    Adobe-Japan1-6 なフォントなら \CID{16271} でも出ますが，ちょっと細い。
 
 <br>
 
