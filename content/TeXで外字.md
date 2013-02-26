@@ -90,7 +90,7 @@ dvipdfmxを使う場合は，上と同じでもかまいませんが，次のよ
     closepath stroke
     ```
 
-    Adobe-Japan1-5 なフォントなら \CID{16271} でも出ますが，ちょっと細い。
+    Adobe-Japan1-6 なフォントなら \CID{16271} でも出ますが，ちょっと細い。
 
 <br>
 
