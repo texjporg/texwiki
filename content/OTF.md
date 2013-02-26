@@ -25,15 +25,15 @@ pukiwiki: "OTF"
 - 安定版を利用した場合は Adobe-Japan1-5 相当のフォントあたり最大20,317文字となります。
 - OTF パッケージは5書体以上を扱うことができます。以前の[UTF パッケージ](http://psitau.kitunebi.com/utf.html)は明朝体とゴシック体だけでした。
 - また，和文フォントのメトリックが改訂されました。
-    従来のものは min10.tfm のしがらみを引きずった長方形でしたが，OTF では
-    正方形（高さ : 深さ = 88 : 12）に直されました。
+    OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
+    従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
 - なお，OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
     （CID 番号に完全対応している DVIware
     で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
     使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
 
-- TeX Live 2012 では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/4/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+- TeX Live 2012 以降では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/4/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### ChangeLog {#k32bef0c}
 
@@ -73,7 +73,7 @@ dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// �
 
 #### TeX Live {#da8ed89a}
 
-TeX Live 2012 では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### OS X でのインストール {#h2117028}
 
@@ -82,7 +82,7 @@ MacTeX または TeX Live をインストールすれば OTF パッケージも�
 
 #### MacTeX &amp; TeX Live {#t85f1532}
 
-MacTeX-2012，TeX Live 2012 では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+MacTeX-2012，TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### Solaris，UNIX 互換 OS でのインストール {#aec1d55c}
 
@@ -91,7 +91,7 @@ TeX Live をインストールすれば OTF パッケージもインストール
 
 #### TeX Live {#fa2a3abb}
 
-TeX Live 2012 では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### CMap {#n2a34850}
 
@@ -2521,8 +2521,6 @@ Adobe-GB1，Adobe-CNS1，Adobe-Korea1 の CID 番号に対応していません�
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://www.geocities.co.jp/texuttex/jfontsettings.html) （ut さん）
-
-## Comments {#ib3e810d}
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
