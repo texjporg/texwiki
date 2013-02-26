@@ -13,6 +13,7 @@ pukiwiki: "DTPとTeX"
 
 - [Illustratorの図をTeXに](/Illustrator/)
 - [TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/>)
+- TeXで外字
 - [TeXと外字](</TeXと外字/>)
 - Illustrator上でTeX処理 &amp; 自動配置
 
