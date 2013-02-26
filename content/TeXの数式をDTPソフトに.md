@@ -55,7 +55,7 @@ Windows および Mac 環境の場合，TeX の数式をクリック一つで EP
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
 
 お好きなテキストエディタに次のように打ち込んでください
-（Linux でも Mac OS X でも Microsoft Windows でも何でもかまいません）。 
+（Linux でも OS X でも Microsoft Windows でも何でもかまいません）。 
 
 ***
 
@@ -101,7 +101,7 @@ EPS ファイルができます。ここで “-E” は EPS 形式で保存す�
 Illustrator CS の環境設定で
 「リンクされたEPSに低解像度の表示用画像（プレビュー）を使用」のチェックを
 外してリンク配置すれば，EPS でも問題なく文字が表示されました。PDF でも
-リンク配置なら問題ありません。Mac OS X のプレビューを使えば
+リンク配置なら問題ありません。OS X のプレビューを使えば
 PDF を範囲指定してクロップできます。
 
 <table>
@@ -137,9 +137,9 @@ EPS にプレビューを付けておけば，
 次のようにします。ただし，Illustrator のフォントリストに
 たくさんのフォントが追加されてしまいますのでご注意ください。 
 
-あらかじめ $TEXMF\fonts\type1\ フォルダ
-（例えば C:\usr\local\W32TeX\share\texmf\fonts\type1\）を
-フォルダごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダに
+あらかじめ $TEXMF\fonts\type1\ フォルダー
+（例えば C:\w32tex\share\texmf\fonts\type1\）を
+フォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーに
 コピーまたはリンクしておきます
 （Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。こうすると，TeX で
 使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で
@@ -158,19 +158,19 @@ PostScript Level 2 での基本35書体をダウンロードするオプショ�
 ↑訂正2： Ghostscript のフォントはすでに W32TeX にも入っていました
 （TeX Live 同様）。コピーは不要です。 
 
-## Illustrator に配置 3 (Mac OS X) {#z9ef5010}
+## Illustrator に配置 3 (OS X) {#z9ef5010}
 
 （この項については内山さんからご教示をいただきました。）
 
-Mac OS でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが
+OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが
 使えますが，一般のアプリケーションからは使えません。
-cmps-oztex.hqx または cmps-textures.hqx をインストールしてお使いください
+[http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/](http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください
 （フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
 
 インストールの場所は，Adobe 製品だけから使うなら
-/Library/"Application Support"/Adobe/Fonts/ 以下ですが，Mac OS X では
-Mxdvi も同じフォントを使うことを考えれば，次の場所のいずれかに
-入れるのがいいかもしれません。Mac OS X では次の順にフォントを探してくれます
+/Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では
+PictPrinter も同じフォントを使うことを考えれば，次の場所のいずれかに
+入れるのがいいかもしれません。OS X では次の順にフォントを探してくれます
 （→ 「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
@@ -332,6 +332,7 @@ PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の�
 
 ## リンク {#qed253c5}
 
+- [IllustratorにLaTeXiT!で貼り付けた数式(PDF)をIllustratorで編集する](http://rhythm-waltz.tumblr.com/post/29630360920/illustrator-latexit-pdf-illustrator)
 - Computer Modern フォントの OpenType フォント形式ファイル：
     [CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/)
 
