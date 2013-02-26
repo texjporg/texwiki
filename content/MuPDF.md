@@ -23,7 +23,7 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 ### License {#kcee43f7}
 
-GNU Affero General Public License (AGPL), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
+[GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
 
 ### ChangeLog {#vbbec018}
 
