@@ -95,7 +95,6 @@ make &amp;&amp; make installで導入できます．
 <table>
 <tbody>
 <tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
-<tr><td>cjk-lyx</td><td>print/cjk-lyx</td><td>Document processor interfaced with LaTeX, with CJK support</td></tr>
 <tr><td>jadetex</td><td>print/jadetex</td><td>A TeX backend for Jade, for typesetting SGML documents</td></tr>
 <tr><td>ja-jadetex</td><td>japanese/jadetex-ptex</td><td>A pTeX backend for Jade, for typesetting SGML documents</td></tr>
 <tr><td>smartdoc</td><td>textproc/smartdoc</td><td>XML utility to create various documents</td></tr>
