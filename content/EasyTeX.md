@@ -28,11 +28,12 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 Windows 7, Vista, XP
 
-### リリース情報 {#nc0d64ca}
+### リリース情報/ChangeLog {#nc0d64ca}
 
-[中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html)を参照．<br>
+[中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html)<br>
+[変更点](http://www.juen.ac.jp/math/nakagawa/texguide.html#neweasytex)<br>
 
-EasyTeX Verson 3.30 以降は，Unicode (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、日本語 (Shit-JIS、EUC、JIS) に対応しています．
+を参照．<br>
 
 ### スクリーンショット {#e7b3eafc}
 
