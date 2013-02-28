@@ -7,7 +7,7 @@ pukiwiki: "TeX Live Utility"
 
 # TeX Live Utility
 
-## [TeX Live Utility](http://code.google.com/p/mactlmgr/) {#iead361a}
+## [TeX Live Utility](https://code.google.com/p/mactlmgr/) {#iead361a}
 
 <img src="http://community.sabayon.org/ugc/dev-texlive/texlive-basic/tex-live-utility-icon.png" alt="TeX Live Utility" style="float:right">
 
@@ -21,11 +21,11 @@ TeX Live に随時追加・アップデートされるパッケージなどを�
 デフォルトの紙面サイズも設定できます。<br>
 うまく動作しない場合は、リポジトリ アドレスを別のミラーサイトに変更してみてください。
 
-- [TeX Live Utility - Mac OS X GUI for TeX Live Manager](http://code.google.com/p/mactlmgr/) (and for MacTeX)
+- [TeX Live Utility - Mac OS X GUI for TeX Live Manager](https://code.google.com/p/mactlmgr/) (and for MacTeX)
 
 ### リリース情報/ChangeLog {#d0019337}
 
-- [Changes](http://code.google.com/p/mactlmgr/source/list)
+- [Changes](https://code.google.com/p/mactlmgr/source/list)
 
 ### スクリーンショット {#v6ad40b0}
 
