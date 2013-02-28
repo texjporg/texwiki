@@ -25,51 +25,25 @@ TextMate はテキストエディタです．<br>
 
 OS X 10.8, 10.7
 
-OS X 10.6 で動作する TextMate 2 for Snow Leopard もあります．<br>
-
 ### License {#u325ac56}
 
 TextMate 2 はフリーソフトウェアでライセンスは [GPLv3](https://github.com/textmate/textmate/blob/master/LICENSE) です．<br>
 TextMate 1 はシェアウェアです．<br>
 
-### リリース情報 {#wdfc46c3}
+### リリース情報/ChangeLog {#wdfc46c3}
 
-[Tags · textmate/textmate · GitHub](https://github.com/textmate/textmate/tags) を参照．<br>
+[Tags · textmate/textmate · GitHub](https://github.com/textmate/textmate/tags)<br>
+[Commit History · textmate/textmate · GitHub](https://github.com/textmate/textmate/commits/)<br>
 
-release 9278 で，日本語入力の問題は修正されました．<br>
-
-### ChangeLog {#mc3d9df2}
-
-- [Commit History · textmate/textmate · GitHub](https://github.com/textmate/textmate/commits/)
+を参照．<br>
 
 ## ダウンロード {#h1cc4e60}
 
 - [Downloads · textmate/textmate · GitHub](https://github.com/textmate/textmate/downloads)
 
-## TextMate 2 for Snow Leopard {#g205429c}
-
-- [10.6 compatibility branch for current TM2 master](https://github.com/nanoant/textmate)
-    - [Downloads · nanoant/textmate · GitHub](https://github.com/nanoant/textmate/downloads)
-        <!-- -https://github.com/stepheneb/textmate/tree/10.6-master -->
-        <!-- -[[Textmate2 for Snow Leopard:http://macbookblack.blogspot.jp/2012/08/textmate2-for-snow-leopard.html]] -->
-        <!-- -[[Textmate2 for Snow Leopard:http://blog.goo.ne.jp/typer_k20a/e/4053e2f2004f5d1cec8dfd9ed763c29a]] -->
-
-## Pull Requests {#c84af904}
-
-- [Pull Requests](https://github.com/textmate/textmate/pulls)
-    - [Fix CJK input.](https://github.com/textmate/textmate/pull/115) → [Another CJK fix](https://github.com/textmate/textmate/commit/bf12bdd3f25eebe9324b591d768d5b957d7c20e4)
-
 ## 不具合 {#r6935eb2}
 
 - [Issues](https://github.com/textmate/textmate/issues)
-    - [problem with input japanese](https://github.com/textmate/textmate/issues/44) → Closed
-
-<!-- *tmplugin [#kf83bc5c] -->
-<!-- -[[hetima.com:http://hetima.com/]] ([[twitter:https://twitter.com/hetima]]) -->
-<!-- - -[[TextMate stuff - hetima.com:http://hetima.com/textmate/]] -->
-<!-- -[[TextMate2IMFix:https://github.com/hetima/TextMate2IMFix]] -->
-<!-- - -TextMate 2 の日本語入力を改善する tmplugin．release 9278 で，日本語入力の問題は修正されました． -->
-<!-- - -[[Downloads · hetima/TextMate2IMFix · GitHub:https://github.com/hetima/TextMate2IMFix/downloads]] -->
 
 ## TextMate で LaTeX {#s39b8563}
 
