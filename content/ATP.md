@@ -46,7 +46,7 @@ ATP は GPLv3 でリリースされています．<br>
 ATP の動作には
 
 - [Python](http://www.python.org/)
-- [psutil](http://code.google.com/p/psutil/)
+- [psutil](https://code.google.com/p/psutil/)
 
 が必要です．
 
