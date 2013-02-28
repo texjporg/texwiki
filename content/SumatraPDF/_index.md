@@ -28,10 +28,10 @@ forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> �
     - [News](http://blog.kowalczyk.info/software/sumatrapdf/news.html)
     - [ダウンロード](http://blog.kowalczyk.info/software/sumatrapdf/download-free-pdf-viewer-ja.html)
     - [SumatraPDF pre-release builds](http://blog.kowalczyk.info/software/sumatrapdf/prerelease.html) テスト用のプレリリースビルド版
-- [sumatrapdf - PDF viewer for Windows - Google Project Hosting](http://code.google.com/p/sumatrapdf/)
-    - [コミットログ](http://code.google.com/p/sumatrapdf/source/list)
-    - [Wiki](http://code.google.com/p/sumatrapdf/w/)
-        - [DDEcommands ](http://code.google.com/p/sumatrapdf/wiki/DDEcommands)
+- [sumatrapdf - PDF viewer for Windows - Google Project Hosting](https://code.google.com/p/sumatrapdf/)
+    - [コミットログ](https://code.google.com/p/sumatrapdf/source/list)
+    - [Wiki](https://code.google.com/p/sumatrapdf/w/)
+        - [DDEcommands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
 - [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
     - [forward search fails in texlive 2011](http://forums.fofou.org/sumatrapdf/topic?id=2131346)
     - [Forward search from Vim to sumatrapdf](http://forums.fofou.org/sumatrapdf/topic?id=2353338)
@@ -42,16 +42,16 @@ Windows 8, 7, Vista, XP
 
 ### License {#f48c8095}
 
-[GPLv3](http://code.google.com/p/sumatrapdf/source/browse/trunk/COPYING)
+[GPLv3](https://code.google.com/p/sumatrapdf/source/browse/trunk/COPYING)
 
 ### リリース情報/ChangeLog {#b67b5a28}
 
 [News](http://blog.kowalczyk.info/software/sumatrapdf/news.html)<br>
-[コミットログ](http://code.google.com/p/sumatrapdf/source/list)<br>
+[コミットログ](https://code.google.com/p/sumatrapdf/source/list)<br>
 
 を参照．<br>
 
-v1.9 から コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search ができるようになりました． ([SumatraPDF v1.9.4622](http://code.google.com/p/sumatrapdf/source/detail?r=4622) を参照)<br>
+v1.9 から コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search ができるようになりました． ([SumatraPDF v1.9.4622](https://code.google.com/p/sumatrapdf/source/detail?r=4622) を参照)<br>
 v1.6 から PostScript ファイルの表示にも対応しました．([Ghostscript](/Ghostscript/) が必要です．)<br>
 
 ### 派生版・独自ビルド版 {#i2d3e037}
