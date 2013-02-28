@@ -58,7 +58,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 または Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
     <!-- - -[[Qt5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
 
-<!-- -[[msysgit - Git for Windows:http://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
+<!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
 
 - [CMake - Cross Platform Make](http://www.cmake.org/cmake/resources/software.html) から Binary distributions の Windows ZIP File をダウンロードして展開し，bin フォルダー (cmake.exe のあるフォルダー) に PATH を通します．
 
@@ -83,6 +83,63 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 を C:\MinGW\bin にコピーします．
 
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
+
+- [Python](http://www.python.org/) 2.7.3 Windows Installer (32bit 版) をダウンロードしてインストールします．<br>
+    <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
+    <!--  -->
+    <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
+
+mingw-utils をインストールします．<br>
+
+```
+$ mingw-get install mingw-utils
+```
+
+MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．<br>
+
+32bit Windows の場合
+
+```
+$ pexports /c/Windows/System32/python27.dll > python27.def
+$ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
+$ rm python27.def
+```
+
+64bit Windows の場合
+
+```
+$ pexports /c/Windows/SysWOW64/python27.dll > python27.def
+$ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
+C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
+$ rm python27.def
+```
+
+***
+
+- C:/MinGW/lib/pkgconfig/python.pc
+- C:/MinGW/lib/pkgconfig/python-2.7.pc
+
+を作成して以下の内容を記述します．
+
+***
+
+```
+prefix=/mingw
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=/c/Python27/include
+
+Name: Python
+Description: Python library
+Requires: 
+Version: 2.7
+Libs.private:
+Libs: -L${libdir} -lpython27
+Cflags: -IC:/Python27/include
+```
+
+***
 
 <!-- ~/.bash_profile に以下の内容を記述します． -->
 <!-- if [ -f ~/.bashrc ]; then . ~/.bashrc; fi -->
@@ -267,7 +324,7 @@ $ popd
 - [OpenJPEG](http://www.openjpeg.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz
+$ curl --insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz
 $ tar xvf openjpeg-2.0.0.tar.gz
 $ pushd openjpeg-2.0.0
 $ mkdir build
@@ -395,8 +452,7 @@ $ popd
 
 - [fontconfig](http://www.fontconfig.org/) をインストールします．
 
-<!-- fontconfig のインストールでエラーが発生する場合は [[fontconfig のインストールについて:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=732]] を参照してください． -->
-<!--  -->
+fontconfig 2.10.91 でビルドエラーが発生する場合は [fontconfig on Windows のビルドエラーとその対策](http://blogs.yahoo.co.jp/igproj_fusion/16786546.html) を参照してください．
 
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.bz2
@@ -712,6 +768,18 @@ OP3 POP3S RTSP SMTP SMTPS TELNET TFTP
 ```
 
 ```
+$ make
+$ make install
+$ popd
+```
+
+- [libffi](http://sourceware.org/libffi/) をインストールします．<br>
+
+```
+$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.12.tar.gz
+$ tar xvf libffi-3.0.12.tar.gz
+$ pushd libffi-3.0.12
+$ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
