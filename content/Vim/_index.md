@@ -27,8 +27,8 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
         - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
         - [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/)
-- [Vim 開発サイト](http://code.google.com/p/vim/)
-    - [コミットログ](http://code.google.com/p/vim/source/list)
+- [Vim 開発サイト](https://code.google.com/p/vim/)
+    - [コミットログ](https://code.google.com/p/vim/source/list)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
     - [twitter](https://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
@@ -44,11 +44,11 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 ### License {#w85a7064}
 
 Vim は，チャリティウェアです．<br>
-[VIM ライセンス](http://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
+[VIM ライセンス](https://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
 ### リリース情報/ChangeLog {#n22b1c9a}
 
-[コミットログ](http://code.google.com/p/vim/source/list) を参照．<br>
+[コミットログ](https://code.google.com/p/vim/source/list) を参照．<br>
 
 GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
 最新版へアップデートしてください．<br>
@@ -65,7 +65,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
     Vim オリジナルに，日本語を扱う上で便利な設定やスクリプトが追加されている
     - [koron (MURAOKA Taro) · GitHub](https://github.com/koron)
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
-        <!-- -[[vim-win3264:http://code.google.com/p/vim-win3264/]] -->
+        <!-- -[[vim-win3264:https://code.google.com/p/vim-win3264/]] -->
         <!-- -[[gVim Portable:http://sf.net/projects/portableapps/files/gVim%20Portable/]] -->
 
 #### Windows, Linux {#o0f5036e}
@@ -80,12 +80,12 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 
 #### OS X {#gb7dcad0}
 
-- [MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/)
+- [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
     - [コミットログ](https://github.com/splhack/macvim/commits/master)
 - [MacVim](https://github.com/b4winckler/macvim/downloads)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
-- [vim-cocoa](http://code.google.com/p/vim-cocoa/)
+- [vim-cocoa](https://code.google.com/p/vim-cocoa/)
     - [コミットログ](https://github.com/jjgod/vim-cocoa/commits/master)
 - [MacOSX Vim](http://sf.net/projects/macosxvim/files/)
 
