@@ -34,9 +34,9 @@ neosnippet は Vim のプラグインです．
 
 ## 不具合 {#k8b031e2}
 
-### neocomplcache で単語の一部を補完すると refresh = always のときに register-. の値がおかしくなる → Vim [7.3.561](http://code.google.com/p/vim/source/detail?r=a1de7928a7aba45240c85a2bc8d70adadc49e4dc) で修正されました {#d223a02b}
+### neocomplcache で単語の一部を補完すると refresh = always のときに register-. の値がおかしくなる → Vim [7.3.561](https://code.google.com/p/vim/source/detail?r=a1de7928a7aba45240c85a2bc8d70adadc49e4dc) で修正されました {#d223a02b}
 
-Vim [7.3.561](http://code.google.com/p/vim/source/detail?r=a1de7928a7aba45240c85a2bc8d70adadc49e4dc) で修正されました<br>
+Vim [7.3.561](https://code.google.com/p/vim/source/detail?r=a1de7928a7aba45240c85a2bc8d70adadc49e4dc) で修正されました<br>
 
 - [#97: 補完時のregister-.の挙動の改善 - Issues - vim-jp/issues - GitHub](https://github.com/vim-jp/issues/issues/97)
 - [Fixed for refresh always problem(experimental)](https://github.com/Shougo/neocomplcache/commit/66985144f271b1d12b43ea70c942575502635511)
