@@ -217,10 +217,10 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 ## setup.exe 以外のパッケージ管理 {#re5d2b36}
 
-- [apt-cyg](http://code.google.com/p/apt-cyg/)
-- [cyg-apt](http://code.google.com/p/cyg-apt/)
-- [CygApt](http://code.google.com/p/maphew/wiki/CygApt)
-- [cyg-get](http://code.google.com/p/cyg-get/)
+- [apt-cyg](https://code.google.com/p/apt-cyg/)
+- [cyg-apt](https://code.google.com/p/cyg-apt/)
+- [CygApt](https://code.google.com/p/maphew/wiki/CygApt)
+- [cyg-get](https://code.google.com/p/cyg-get/)
 - [cyg-get](http://www.nabber.org/projects/cyg-get/)
 - [cyg-pm](http://sourceforge.jp/projects/gnupack/downloads/49574/)
     - [Cygwinパッケージマネージャの自作中（その１）](http://d.hatena.ne.jp/ksugita0510/20101031/p2)
@@ -230,11 +230,12 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 [Best terminal environment for Cygwin/Windows?](http://stackoverflow.com/questions/701895/best-terminal-environment-for-cygwin-windows) を参照．
 
-- [mintty](http://code.google.com/p/mintty/)
+- [mintty](https://code.google.com/p/mintty/)
 - [cygwin ck terminal emulator](http://www.geocities.jp/meir000/ck/)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
-    - [FuTTY](http://code.google.com/p/futty/)
-    - [PuTTYcyg](http://code.google.com/p/puttycyg/)
+    - [PuTTY wish cygwin-terminal-window](http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/cygwin-terminal-window.html)
+    - [FuTTY](https://code.google.com/p/futty/)
+    - [PuTTYcyg](https://code.google.com/p/puttycyg/)
     - [PuTTYjp](http://hp.vector.co.jp/authors/VA024651/)
     - [GDI PuTTY](http://ice.hotmint.com/putty/)
     - [D2D/DW PuTTY](http://ice.hotmint.com/putty/d2ddw.html)
