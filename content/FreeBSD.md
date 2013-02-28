@@ -27,9 +27,9 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 #### TeX Live 関連 {#p4fe1144}
 
-- [freebsd-texlive](http://code.google.com/p/freebsd-texlive/)
-    - [print/texlive-core](http://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
-    - [print/texlive-collection-langcjk](http://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
+- [freebsd-texlive](https://code.google.com/p/freebsd-texlive/)
+    - [print/texlive-core](https://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
+    - [print/texlive-collection-langcjk](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 
 ### その他関連Ports {#k9078aba}
