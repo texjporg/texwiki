@@ -42,9 +42,9 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 - [Python 和訳ドキュメント](http://www.python.jp/doc/)
 
-### [python-doc-ja - Pythonドキュメント日本語翻訳プロジェクト](http://code.google.com/p/python-doc-ja/) {#wb6e2415}
+### [python-doc-ja - Pythonドキュメント日本語翻訳プロジェクト](https://code.google.com/p/python-doc-ja/) {#wb6e2415}
 
-- [LaTeX のビルド手順](http://code.google.com/p/python-doc-ja/wiki/LaTeXBuild)
+- [LaTeX のビルド手順](https://code.google.com/p/python-doc-ja/wiki/LaTeXBuild)
 
 ## Sphinx → LaTeX → PDF {#wb4c36d7}
 
