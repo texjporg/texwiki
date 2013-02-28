@@ -46,7 +46,7 @@ Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentati
 
 ### MacVim-KaoriYa で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → 回避策：.gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
-- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](http://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → .gvimrc に set imdisable
+- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → .gvimrc に set imdisable
 
 ### Linux の GVim で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → ソースコードの修正またはコンソール版の Vim を使用する {#g843a69b}
 
@@ -59,7 +59,7 @@ GVim の on-the-spot の実装に問題があるようです．
 
 - [http://www.bookshelf.jp/2ch/unix/1232035011.html#45](http://www.bookshelf.jp/2ch/unix/1232035011.html#45)
 - [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
-- [http://code.google.com/p/vim/source/browse/src/mbyte.c](http://code.google.com/p/vim/source/browse/src/mbyte.c)
+- [https://code.google.com/p/vim/source/browse/src/mbyte.c](https://code.google.com/p/vim/source/browse/src/mbyte.c)
 
 ## インストール {#sbc289a6}
 
@@ -146,7 +146,7 @@ TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF 
 動作未確認です．<br>
 Mac OS X 10.6 では動作するようです． → -[VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html), [VIMでLaTeX　前回の訂正](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_168.html)
 
-[MacVim-KaoriYa](http://code.google.com/p/macvim-kaoriya/) をインストールします．
+[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
 
