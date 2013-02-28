@@ -18,7 +18,7 @@ pukiwiki: "Android"
 - [TeXPortal](https://github.com/anhoavu/TeXPortal/)
     - TeXPortal はインターネットに接続しなくても Android で TeX や LaTeX ドキュメントのコンパイルが可能です．
     - [TeXPortal - The TeX EXperience](https://play.google.com/store/apps/details?id=lah.texportal)
-        <!-- -[[TeX Live for Android:http://code.google.com/p/texlive-for-android/]] -->
+- [TeX Live for Android](https://code.google.com/p/texlive-for-android/)
 
 ## PDF ビューア {#t5fdeba9}
 
