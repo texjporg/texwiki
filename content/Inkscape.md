@@ -974,11 +974,11 @@ svg2latex takes an svg file and produces a file with latex markup and a pdf or e
 
 Svg2tex is a python script that extracts all text from a \*.svg file to a LaTeX picture environment. This way the picture's text is processed directly by LaTeX and can be included into the document.
 
-### [inkscape2tikz](http://code.google.com/p/inkscape2tikz/) {#u5ee2f7d}
+### [inkscape2tikz](https://code.google.com/p/inkscape2tikz/) {#u5ee2f7d}
 
-### [JessyInk](http://code.google.com/p/jessyink/) {#k0206a78}
+### [JessyInk](https://code.google.com/p/jessyink/) {#k0206a78}
 
-- [JessyInk](http://code.google.com/p/jessyink/)
+- [JessyInk](https://code.google.com/p/jessyink/)
 - [Inkscapeでプレゼンテーション](http://d.hatena.ne.jp/yambi/20110405/1301974923)
 
 ## Inkscape で TeX 数式 {#f9da7d32}
