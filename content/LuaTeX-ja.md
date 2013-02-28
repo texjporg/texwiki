@@ -69,11 +69,11 @@ ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
-TeX Live 2012 には luatexja が含まれています．<br>
+TeX Live 2012 以降には luatexja が含まれています．<br>
 
 #### [MacTeX](/Mac/#f5466652) {#p8fa09cd}
 
-MacTeX-2012 には luatexja が含まれています．<br>
+MacTeX-2012 以降には luatexja が含まれています．<br>
 
 ### 注意点 {#vbed1356}
 
