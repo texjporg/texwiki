@@ -20,8 +20,8 @@ pukiwiki: "TeXworks/設定/Windows"
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
 latexmk, pdfplatex1.bat, pdfplatex2.bat, pdfuplatex1.bat, pdfuplatex2.bat, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
-タイプセットの設定については [Common Workflows](http://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
-$synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](http://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
+タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
+$synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
 
 ***
 
@@ -706,7 +706,7 @@ ps2pdf.bat "%~n1.ps"
 #### 設定後 {#me50c549}
 
 デフォルトを pdfpLaTeX に変更します．<br>
-タイプセットのコンソール出力を確認したい場合は 「コンソール出力を表示しない」 に 『表示する』 を指定します．<br> <!-- TeXworks Version 0.5 [[r.793:http://code.google.com/p/texworks/source/detail?r=793]] 以降の場合は Hide output panel: に Never を指定します．~ -->
+タイプセットのコンソール出力を確認したい場合は 「コンソール出力を表示しない」 に 『表示する』 を指定します．<br> <!-- TeXworks Version 0.5 [[r.793:https://code.google.com/p/texworks/source/detail?r=793]] 以降の場合は Hide output panel: に Never を指定します．~ -->
 
 ***
 
