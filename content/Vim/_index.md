@@ -943,7 +943,9 @@ C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
-## Evince との連携 (forward and inverse search) {#p78ad52b}
+## Evince との連携 {#p78ad52b}
+
+### forward and inverse search {#p2367ca6}
 
 [tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
@@ -965,11 +967,16 @@ C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
 
 です．
 
-## pxdvi との連携 (forward and inverse search) (非推奨) {#z967afdc}
+## pxdvi との連携 (非推奨) {#z967afdc}
+
+### forward and inverse search {#d4703dc7}
 
 [Vim-LaTeX](/Vim-LaTeX/)[#pxdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
 
 ## 使い方 {#j3d4339e}
+
+- [MBA-HACK: vim](http://mba-hack.blogspot.jp/search/label/vim)
+    - [Vimの使い方まとめ](http://mba-hack.blogspot.jp/2013/02/vim.html)
 
 ### 折りたたみ {#ff31000b}
 
