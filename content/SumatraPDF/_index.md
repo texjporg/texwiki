@@ -16,7 +16,7 @@ pukiwiki: "SumatraPDF"
 
 ## SumatraPDF とは {#td9ee2f0}
 
-SumatraPDF は PDF ビューアです．<br>
+SumatraPDF は PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR リーダーです．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 [Adobe Reader](</Adobe Reader/>) よりも TeX のプレビューアに向いています．<br>
