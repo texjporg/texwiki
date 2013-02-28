@@ -125,20 +125,21 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [「Beamer」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Beamer)
 - [Beamer を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=Beamer)
 - [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
+- [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
+- [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
+- [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
+- [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
 - [Beamer (辻研究室)](http://neurodynamics.jp/etc/beamer)
 - [Beamerで2ペインにする](http://koemu.hatenablog.jp/entry/2013/01/23/204309)
 - [Windows 7にBemerを入れた時の作業メモ](http://d.hatena.ne.jp/teramonagi/20120324/1332574760)
 - [LaTeX-Beamer - .R. Wiki](http://locs.bw.nitech.ac.jp/~kobayashi/fswiki/wiki.cgi?page=LaTeX-Beamer)
 - [Beamer, geometry package のアップデートで不具合](http://d.hatena.ne.jp/triadsou/20100303/1267607085)
-- [LaTeX Beamer 入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/)
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
 - [LaTeX+Beamerでtableofcontentsは決してできない](http://blomott.mobi/rubyneko/entry%2CMnZntmATC-OCUhEBedf7yQ%2C%2C%2C%2C.html)
 - [LaTeX + Beamer + Macで\tableofcontents{}ができないときの処方箋](http://blomott.mobi/rubyneko/entry%2CQNT1bI-wQBEF7V6ZF5N8sg%2C%2C%2C%2C.html)
 - [Beamerでプレゼン資料を作る](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
-- [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
-- [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
-- [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
+    <!-- -[[LaTeX Beamer 入門:http://www.ms.u-tokyo.ac.jp/~tado/beamer/]] -->
     <!-- -[[Windows XP に LaTeX beamer をいれる:http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html]] -->
     <!-- -[[Windows XPにおけるbeamerのセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-190.html]] -->
     <!-- -[[Beamer V3.0 を使ってみる:http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html]] -->
