@@ -17,17 +17,32 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 #### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
-- 2011/09/19 以降の [W32TeX](/W32TeX/) には標準で含まれています．
-- Beamer は [LuaTeX-ja](/LuaTeX-ja/) も使用できます．
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
-    - [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets)
-        <!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
-        <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
+    <!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
+    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
+    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
+    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
 
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
+
+#### リリース情報/ChangeLog {#y60fd622}
+
+[コミットログ](https://bitbucket.org/rivanvx/beamer/changesets) を参照．
+
+#### 利用可能な TeX ディストリビューション {#k1d828cf}
+
+Beamer は
+
+- [TeX Live](</TeX Live/>)
+- [W32TeX](/W32TeX/) (2011/09/19 以降)
+- [MiKTeX](/MiKTeX/)
+- [MacTeX](/Mac/#f5466652)
+
+で利用可能です．
+
+- LuaLaTeX で Beamer と [LuaTeX-ja](/LuaTeX-ja/) が使用できます．
+- XeLaTeX で Beamer と [xeCJK/ZXjatype](/xeCJK/) が使用できます．
 
 ### 不具合 {#d9dfcf20}
 
@@ -111,17 +126,11 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=Beamer)
 - [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
 - [Beamer (辻研究室)](http://neurodynamics.jp/etc/beamer)
-- [Beamer V3.0 を使ってみる](http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html) (dvips利用)
-- [latex-beamer を使ってみる](http://www.pocus.jp/p-latex-main.html#latex-beamer) (dvipdfmx利用)
-- [LaTeX Beamerでプレゼンテーション](http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+Beamer%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3) (dvipdfmx利用)
 - [Beamerで2ペインにする](http://koemu.hatenablog.jp/entry/2013/01/23/204309)
 - [Windows 7にBemerを入れた時の作業メモ](http://d.hatena.ne.jp/teramonagi/20120324/1332574760)
-- [Beamer 3.10 にアップグレードした](http://d.hatena.ne.jp/triadsou/20101110/1289357503)
 - [LaTeX-Beamer - .R. Wiki](http://locs.bw.nitech.ac.jp/~kobayashi/fswiki/wiki.cgi?page=LaTeX-Beamer)
-- [Windows XPにおけるbeamerのセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-190.html)
 - [Beamer, geometry package のアップデートで不具合](http://d.hatena.ne.jp/triadsou/20100303/1267607085)
 - [LaTeX Beamer 入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/)
-- [Windows XP に LaTeX beamer をいれる](http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html)
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
 - [LaTeX+Beamerでtableofcontentsは決してできない](http://blomott.mobi/rubyneko/entry%2CMnZntmATC-OCUhEBedf7yQ%2C%2C%2C%2C.html)
 - [LaTeX + Beamer + Macで\tableofcontents{}ができないときの処方箋](http://blomott.mobi/rubyneko/entry%2CQNT1bI-wQBEF7V6ZF5N8sg%2C%2C%2C%2C.html)
@@ -130,6 +139,11 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
+    <!-- -[[Windows XP に LaTeX beamer をいれる:http://aaaaushisan.blogspot.com/2011/06/windows-xp-latex-beamer.html]] -->
+    <!-- -[[Windows XPにおけるbeamerのセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-190.html]] -->
+    <!-- -[[Beamer V3.0 を使ってみる:http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html]] -->
+    <!-- -[[latex-beamer を使ってみる:http://www.pocus.jp/p-latex-main.html#latex-beamer]] -->
+    <!-- -[[LaTeX Beamerでプレゼンテーション:http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+Beamer%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3]] -->
 
 ### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
@@ -138,8 +152,6 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
 - [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
 - [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
-- [beamer 3.10について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=566)
-- [beamer コンパイル中のエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=462)
 - [beamerでmovieの上に画像の貼り付け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=399)
 - [beamerでxy-picを使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=360)
 - [beamerでceo.styを活用したい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=357)
