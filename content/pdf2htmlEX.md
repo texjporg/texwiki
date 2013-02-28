@@ -157,11 +157,11 @@ Cflags: -IC:/Python27/include
 <!-- $ ./b2 - -prefix=/mingw toolset=gcc link=static,shared install -->
 <!-- $ popd -->
 
-dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](http://code.google.com/p/dlfcn-win32/) をインストールします．<br>
+dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](https://code.google.com/p/dlfcn-win32/) をインストールします．<br>
 FontForge はこれらの関数を使用しているようです．<br>
 
 ```
-$ curl -R -L -O http://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
+$ curl --insecure -R -L -O https://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
 $ tar xvf dlfcn-win32-r19.tar.bz2
 $ pushd dlfcn-win32-r19
 $ ./configure --prefix=/mingw --enable-shared
@@ -651,7 +651,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [Man page of MKDIR](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man2/mkdir.2.html)
     <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
 
-- [dlfcn-win32](http://code.google.com/p/dlfcn-win32/)
+- [dlfcn-win32](https://code.google.com/p/dlfcn-win32/)
 - [MinGW/dllを呼び出す - Ura5han Wiki](http://ura5han.resourcez.org/wiki/MinGW/dll%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99)
 - [Build gcc 4.7.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1695)
 - [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
