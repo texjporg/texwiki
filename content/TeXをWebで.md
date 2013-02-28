@@ -114,23 +114,34 @@ do.php の中身は適当に直します（特に TeX Live をインストール
 ulimit -t 10 -f 1024
 ```
 
-### 関連リンク {#cfaeb364}
+### オンライン LaTeX エディタ {#u7712307}
+
+#### フリーソフトウェア (オープンソフトウェア) {#g834836b}
+
+- [texlive.js](http://manuels.github.com/texlive.js/website/)
+    - [WebブラウザだけでLaTeXからPDFを生成「texlive.js」](http://www.moongift.jp/2013/01/20130130/)
+- [JaxEdit](http://jaxedit.com/)
+    <!-- -[[LaTeX Lab:https://code.google.com/p/latex-lab/]] -->
+    <!-- - -[[Google-Docs Base Editor (GDBE):https://code.google.com/p/gdbe/]] -->
+
+#### フリーウェア (無料) {#e0fded48}
 
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
+- [SpanDeX](http://spandex.io/)
 - [writeLaTeX](https://www.writelatex.com/)
     - [「writeLaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=writeLaTeX)
     - [writeLaTeX を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=writeLaTeX)
-- [JaxEdit](http://code.google.com/p/jaxedit/)
 - [LiveLaTeX](http://nanatomo.com/livelatex/)
 - [てふてふかれん](http://tex-web.net/)
-- [texlive.js](http://manuels.github.com/texlive.js/website/)
-    - [WebブラウザだけでLaTeXからPDFを生成「texlive.js」](http://www.moongift.jp/2013/01/20130130/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [Online Latex Editor](http://luikore.github.com/latex/)
-- [LaTeX Lab](http://code.google.com/p/latex-lab/)
-    - [Google-Docs Base Editor (GDBE)](http://code.google.com/p/gdbe/)
-- [あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう](http://www.aozora.jp/tools/uptex/)
-- [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
+    <!-- -[[あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう:http://www.aozora.jp/tools/uptex/]] -->
+    <!-- -[[XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）:http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/]] -->
+
+### 関連リンク {#cfaeb364}
+
+- [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
+- [TeX implementations in the Cloud](http://cikitsa.blogspot.co.at/2013/01/tex-implementations-in-cloud.html)
 
 ***
 
