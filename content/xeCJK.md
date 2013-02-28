@@ -35,14 +35,18 @@ xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケー�
 
 ### 注意点 {#w700f957}
 
-#### xeCJK error: "conflict-package" → \usepackage{xeCJK} のあとに \usepackage{xltxtra} {#g3111be5}
+#### xeCJK error: "conflict-package" → \usepackage{xltxtra} を記述しないまたは \usepackage{xeCJK} のあとに \usepackage{xltxtra} を記述 {#g3111be5}
 
-xeCJK error: "conflict-package" が発生する場合は \usepackage{xeCJK} のあとに \usepackage{xltxtra} を追加します． 
+- [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
+
+xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} を記述しないかまたは \usepackage{xeCJK} のあとに \usepackage{xltxtra} を記述します． 
 
 ```
-\usepackage{xeCJK}
 \usepackage{xltxtra}
+\usepackage{xeCJK}
 ```
+
+のように \usepackage{xeCJK} の前に \usepackage{xltxtra} を記述した場合に xeCJK error: "conflict-package" が発生する場合があります．
 
 ```
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
