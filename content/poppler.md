@@ -26,7 +26,6 @@ poppler は
 などで使用されています．<br>
 
 - [poppler](http://poppler.freedesktop.org/)
-    - [repository](http://cgit.freedesktop.org/poppler/poppler)
 - [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
 
 ### リリース情報 {#ha3b28ab}
@@ -34,6 +33,11 @@ poppler は
 [Poppler](http://poppler.freedesktop.org/) を参照．<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
+
+### ChangeLog {#u62118c7}
+
+- [poppler/poppler - The poppler pdf rendering library](http://cgit.freedesktop.org/poppler/poppler)
+    - [log](http://cgit.freedesktop.org/poppler/poppler/log/)
 
 <!-- -[[Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc:https://bugs.freedesktop.org/show_bug.cgi?id=48046]] -->
 <!-- -[[[Bug 48046] New: ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc - poppler-bugs.lists.freedesktop.org - ArchiveOrange:http://web.archiveorange.com/archive/v/RybTrzJz0TKVhTDfV9z3]] -->
