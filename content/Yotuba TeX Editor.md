@@ -23,7 +23,7 @@ Windows 7 (Microsoft .NET Framework 3.5 SP1 がインストールされている
 
 ### リリース情報 {#b51cad4a}
 
-2012-02-20 Yotuba TeX Editor 1.0<br>
+[Yotuba TeX Editorのダウンロード](http://www.vector.co.jp/soft/dl/winnt/writing/se495703.html) を参照．
 
 ### スクリーンショット {#f1e62519}
 
