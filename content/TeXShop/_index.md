@@ -41,8 +41,6 @@ GPL
 
 ### リリース情報/ChangeLog {#td599942}
 
-2012-10-12 [Experimental TeXShop 3.12](http://email.esm.psu.edu/pipermail/macosx-tex/2012-October/050150.html)<br>
-
 - [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
 - [Changes in Version 2](http://pages.uoregon.edu/koch/texshop/changes_2.html)
 
