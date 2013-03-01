@@ -9,6 +9,8 @@ pukiwiki: "pxdvi"
 
 ## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) {#ca163844}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## pxdvi とは {#s1b173bb}
 
 pxdvi は DVI プレビューアです．<br>
@@ -22,9 +24,14 @@ pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したもので�
 
 X Window System
 
-### リリース情報 {#y0777637}
+### リリース情報/ChangeLog {#y0777637}
 
-2012-04-01 xdvik 22.85
+- [SourceForge.net Repository - \[xdvi\] Log of /xdvik/CHANGES](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/CHANGES?view=log)
+
+- \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
+    - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=log)
+    - [ChangeLog.TL](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog.TL?view=log)
 
 xdvik 22.85 は TeX Live 2012 に含まれています．
 
