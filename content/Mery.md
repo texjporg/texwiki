@@ -36,11 +36,8 @@ Mery は
         <!-- - -[[TEXのtemplate:http://www.haijin-boys.com/index.php?fuseaction=discussions.replies&discussion_id=4a49a6b7d97bb8.45052497]] -->
 
 - [MeryWiki](http://www.haijin-boys.com/wiki/)
-    - [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
 - [Mery - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/mery/)
-- [Vector - Mery](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
-- [Meryのマクロ実験室](http://merysmacro.seesaa.net/)
-- [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
+- [Mery - Vector](http://www.vector.co.jp/soft/winnt/writing/se476839.html)
 
 ### 動作環境 {#b792ae80}
 
@@ -48,13 +45,9 @@ Windows 7, Vista, XP
 
 ## 既定のエンコード {#ccaf57fb}
 
-LaTeX 文書で使用するエンコードを指定します．
-
-- Unicode (UTF-8, BOM無し)
-- Unicode (UTF-8, BOM付き)
-- 日本語 (シフト JIS)
-- 日本語 (EUC)
-- 日本語 (JIS)
+LaTeX 文書で使用するエンコードを指定します．<br>
+デフォルトのエンコーディングは UTF-8 (BOM無し) です．<br>
+UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を選択します．<br>
 
 ***
 
@@ -66,12 +59,12 @@ LaTeX 文書で使用するエンコードを指定します．
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　▼\]</span>　 ☑ルーラを表示(R)<br>
 　　　　行の表示方法(<ins>D</ins>):　　　　　　　　　　　　☑ルーラで文字数を指定する(F)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　 ▼\]</span>　　☑折り返し線を表示(A)<br>
-　　　　文字数(<ins>M</ins>):　　　<ins>80　　　　　　　\[◆\]</ins>　　☑カーソルのある行に下線を表示(U)<br>
+　　　　文字数(<ins>M</ins>):　　　<ins>80　　　　　　　\[◆\]</ins>　　☐カーソルのある行に下線を表示(U)<br>
 　　　　引用マーク(<ins>Q</ins>):　<ins>>　　　　　　　　　　</ins>　　☑対応する括弧を強調する(H)<br>
-　　　　タブの桁数(<ins>T</ins>):　<span style="color:Black;background-color:#EEEEEE;">\[2　　　　　　　　▼\]</span>　　☑自動インデントを有効にする(T)<br>
-　　　　行間隔(<ins>S</ins>):　　　<ins>0　　　　　　　　\[◆\]</ins>　　☐タブの代わりに空白を挿入(I)<br>
+　　　　タブの桁数(<ins>T</ins>):　<span style="color:Black;background-color:#EEEEEE;">\[4　　　　　　　　▼\]</span>　　☑自動インデントを有効にする(T)<br>
+　　　　行間隔(<ins>S</ins>):　　　<ins>2　　　　　　　　\[◆\]</ins>　　☐タブの代わりに空白を挿入(I)<br>
 　　　　既定のエンコード(<ins>E</ins>):　　　　　　　　　　☐かな漢字変換を起動(P)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[Unicode (UTF-8, BOM無し)　 ▼\]</span>　　☑URLをダブルクリックで開く(K)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8 (BOM無し)　　　　　　　▼\]</span>　　☑URLをダブルクリックで開く(K)<br>
 　　　　既定の改行コード(<ins>L</ins>):　　　　　　　　　 ☑カーソル位置とブックマークを保存する(V)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐ウィンドウ位置とサイズを復元(O)<br>
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
@@ -86,6 +79,10 @@ LaTeX 文書で使用するエンコードを指定します．
 
 マクロを使うと LaTeX 環境を簡単に作ることができます．<br>
 マクロは，メニューの \[マクロ(M)\] から選択または F4 キーで実行できます．<br>
+
+- [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
+- [Meryのマクロ実験室](http://merysmacro.seesaa.net/)
+- [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
 
 ### pdfpLaTeX.js {#w4e337a9}
 
