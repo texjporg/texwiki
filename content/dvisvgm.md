@@ -19,6 +19,12 @@ dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェ�
 
 [GPLv3](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/COPYING)
 
+### リリース情報 {#t6f93e11}
+
+- [dvisvgm: News](http://dvisvgm.sourceforge.net/News)
+- [dvisvgm / News](http://sourceforge.net/p/dvisvgm/news/)
+- [dvisvgm / Code / tip / NEWS](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/NEWS)
+
 ### ChangeLog {#j5462a82}
 
 - [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
