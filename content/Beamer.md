@@ -124,8 +124,10 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 ### 関連リンク {#tfca5d80}
 
 - [「Beamer」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Beamer)
+- [ZR-TeXnobabbler/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=Beamer)
 - [Beamer を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=Beamer)
 - [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
+- [岩崎 隆盛/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=Beamer)
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
