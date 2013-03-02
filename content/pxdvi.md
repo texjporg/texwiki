@@ -19,6 +19,7 @@ pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したもので�
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
+- [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
 
 ### 動作環境 {#y90c90d1}
 
@@ -38,7 +39,7 @@ xdvik 22.85 は TeX Live 2012 に含まれています．
 ## インストール {#cce5d1ed}
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-TeX Live 2012 で pxdvi をインストールする場合は Ubuntu 12.04 TeX Live 2012 + tlptexlive のインストール を参照してください．<br>
+TeX Live 2012 で pxdvi をインストールする場合は tlptexlive with TeX Live 2012 を参照してください．<br>
 
 ## 関連リンク {#qded2ff9}
 
