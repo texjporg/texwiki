@@ -21,7 +21,6 @@ Kile は TeX の統合環境です．<br>
 - [Kile](http://kile.sourceforge.net/)
 - [SourceForge.net: kile](http://sourceforge.net/apps/mediawiki/kile/)
     - [Live Preview](http://sourceforge.net/apps/mediawiki/kile/index.php?title=Live_Preview)
-- [Kile - Overview - KDE Projects](https://projects.kde.org/projects/extragear/office/kile)
 
 ### 動作環境 {#fc95c26d}
 
@@ -30,6 +29,17 @@ KDE
 ### License {#bd454552}
 
 [GPL](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/COPYING)
+
+### リリース情報 {#qfb7e12c}
+
+[News](http://kile.sourceforge.net/news.php)
+
+### ChangeLog {#k30d45b0}
+
+- [Kile - Overview - KDE Projects](https://projects.kde.org/projects/extragear/office/kile)
+    - [Activity](https://projects.kde.org/projects/extragear/office/kile/activity)
+- [Repository](https://projects.kde.org/projects/extragear/office/kile/repository)
+    - [ChangeLog](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/ChangeLog)
 
 ## ダウンロード/インストール {#a3a3000b}
 
