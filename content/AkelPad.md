@@ -34,6 +34,41 @@ AkelPad はコンパクトで高速なテキストエディタです．
 日本語版 Windows では既定のコードページは 932 (ANSI/OEM - 日本語 Shift-JIS) になっています．<br>
 UTF-8 を既定のコードページにする場合は 65001 (UTF-8) に設定します．<br>
 
+***
+
+<span style="color:Black;background-color:#0055DD;"><ins>　</ins></span>![AkelPad](http://akelpad.sourceforge.net/img/l.gif)<span style="color:Black;background-color:#0055DD;"><ins><span style="color:White;"><strong>設定...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　<strong>\[ 全般　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ レジストリー \]\[ エディター 1 \]\[ エディター 2 \]\[ 詳細設定 \]</ins></span><br>
+　　　　　実行<br>
+　　　　　　　コマンド (%f ファイル, %a akelpad のディレクトリ):<br>
+
+<br>
+
+<br>
+
+　　　　　　　作業ディレクトリ (%d ファイルのディレクトリ):<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　コードページの認識:　　　　　　　　　　　　　　　　　　　　　　　　　バッファー:<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 日本語 (932, UTF-8)　　　　　　　　　　　　　　　　　　　　▼\]</span>　　<ins>1024</ins><br>
+
+<br>
+
+　　　　既定のコードページ:<br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 65001 (UTF-8)　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　フィルター　\]</span><br>
+
+<br>
+
+　　　　既定の改行<br>
+　　　　　 <span style="color:#3333CC;">◎</span> Windows　　　　　　　　　◯ Unix　　　　　　　　　　　◯ Mac<br>
+
+***
+
 ## スクリプト {#fe72e81b}
 
 AkelFiles\Plugs\Scripts フォルダーにスクリプトを配置します．<br>
