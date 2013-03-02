@@ -115,6 +115,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 ### Beamer Themes {#r446ce9a}
 
 - [kmbeamer](https://github.com/kmaed/kmbeamer)
+- [Epyt](https://github.com/zohooo/epyt)
 - [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
 - [http://mike.depalatis.net/beamerthemes/](http://mike.depalatis.net/beamerthemes/)
 - [Keynote Like Gradient Theme for LaTeX Beamer (時計じかけの林檎)](http://sites.google.com/site/tokeijikakenoringo/Home/keynote-like-gradient-theme-for-latex-beamer)
