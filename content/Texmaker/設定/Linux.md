@@ -295,19 +295,3 @@ Editor:
 : texmaker "%f" -line %l
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
-
-## pxdvi との連携 (非推奨) {#v8bf4b70}
-
-LaTeX コマンドのオプションに -src-specials を追加します．
-
-### forward and inverse search {#gd5c34f7}
-
-forward and inverse search は DVIビューアに
-
-```
-pxdvi -nofork -watchfile 1 -editor "texmaker %f -line" %.dvi -sourceposition "@ #.tex"
-```
-
-です．
-
-Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
