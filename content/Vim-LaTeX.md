@@ -651,10 +651,6 @@ function! Tex_ForwardSearchLaTeX()
 
     let execString = 'silent! !start '. viewer.' -s '.line('.').expand('%').' '.mainfnameRoot
 
-  elseif (has('win32') && (viewer =~? "dviout"))
-
-    let execString = 'silent! !start ' . viewer . ' -1 ' . mainfnameRoot . '.dvi' . ' \# '. line('.') . ' ' . expand('%')
-
   elseif (has('win32') && (viewer =~? "sumatrapdf"))
 
     let relativeFile = substitute(expand("%:p"), Tex_GetMainFileName(':p:h').'/', '','')
@@ -789,10 +785,6 @@ function! Tex_ForwardSearchLaTeX()
 <!--  -->
 
 ```
-      elseif viewer =~? "xdvi"
-
-        let execString = 'silent! !'.viewer.' -nofork "'.mainfnameRoot.'.dvi'.'" -sourceposition "'.line('.').' '.expand('%').'"'
-
       else
 
         let execString = 'silent! !'.viewer.' "'.mainfnameRoot.'.'.s:target.'" '.line('.').' "'.expand('%').'"'
@@ -842,85 +834,6 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 ```
 
 とします．
-
-## [dviout](/dviout/) との連携 (非推奨) {#g7a208c2}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-### forward search {#o9fb00be}
-
-dviout で forward search を使用するには LaTeX コマンドに -src-specials を追加して
-
-$HOME/\_vimrc の g:Tex_ViewRule_dvi を
-
-***
-
-```
-let g:Tex_ViewRule_dvi = 'C:/w32tex/dviout/dviout.exe -1'
-```
-
-***
-
-に設定します．
-
-[Vim-LaTeX#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照して $HOME/vimfiles/ftplugin/latex-suite/compiler.vim を修正します．
-
-使い方は
-
-1. GVim を起動して TeX ファイルを開きます．
-1. :TTarget dvi
-1. \ll でコンパイルして DVI ファイルを作成します．
-1. \ls で dviout で DVI ファイルをプレビューして forward search を行います．
-
-### inverse search {#qeb959a7}
-
-```
-C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
-```
-
-dviout の inverse search は ダブルクリックで行います．
-
-## pxdvi との連携 (forward and inverse search) (非推奨) {#e36989d2}
-
-pxdvi で forward and inverse search を使用するには LaTeX コマンドに -src-specials を追加して
-
-$HOME/.vimrc の g:Tex_UseEditorSettingInDVIViewer と g:Tex_ViewRule_dvi を
-
-***
-
-```
-let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_dvi = 'pxdvi -watchfile 1 -editor "vim --servername src-specials -n --remote-silent +\%l \%f"'
-```
-
-***
-
-に設定します．
-
-[Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照して $HOME/.vim/ftplugin/latex-suite/compiler.vim を修正します．
-
-pxdvi の forward search は
-
-1. Vim を起動して TeX ファイルを開きます．
-1. :TTarget dvi
-1. \ll でコンパイルして DVI ファイルを作成します．
-1. \ls で pxdvi で DVI ファイルをプレビューして forward search を行います．
-
-pxdvi で inverse search をする場合は
-
-```
-$ vim --servername src-specials hoge.tex
-```
-
-または
-
-```
-$ gvim --servername src-specials hoge.tex
-```
-
-として起動します．
-
-pxdvi の inverse search は Ctrl + 左クリックで行います．
 
 ## 関連サイト {#fc8d75eb}
 
