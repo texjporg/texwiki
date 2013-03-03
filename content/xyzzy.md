@@ -161,64 +161,6 @@ SumatraPDF で画面の一部（本文の文字など）をダブルクリック
 上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
 なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
 
-## dviout との連携 (非推奨) {#xysssdaf}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-platex に -src-specials オプションを付けて実行します。すなわち，
-
-```
-platex -src-specials
-```
-
-を実行するようにします。
-
-### forward search {#qdbdf4aa}
-
-xyzzy から dviout for Windows の該当箇所にジャンプすることが可能です。
-
-[KaTeX](/KaTeX/) を使用する場合は [KaTeX#dviout との連携#forward search](/KaTeX/#h429b3b5) を参照してください．
-
-KaTeX を使用しない場合は次のように書きます。
-
-***
-
-```
-(defun dviout-forward-search ()
-  (interactive)
-  (let* ((tex-dirfile (get-buffer-file-name))
-         (dvi-dirfile (substitute-string tex-dirfile "\\.tex$" "\\.dvi" :case-fold t))
-         (tex-file (file-namestring tex-dirfile))
-         (dvi-file (file-namestring dvi-dirfile))
-         (dir (directory-namestring dvi-dirfile))
-         (tmp-file (make-temp-file-name)))
-    (call-process (concat "c:\\w32tex\\dviout\\dviout.exe -1 " dvi-file " \"\# "
-                    (format nil "~D" (current-line-number)) " " tex-file "\"") :output tmp-file
-                    :exec-directory dir :wait t)
-    (delete-file tmp-file))
-  )
-```
-
-***
-
-すると，M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
-頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
-
-### inverse search {#g1e55b81}
-
-[dviout for Windows](/dviout/) の
-\[Option\] → \[Setup Parameters...\] → \[Common\] の src: 欄に
-
-```
-C:\xyzzy\xyzzycli.exe^s -g %d "%s"
-```
-
-と書き込んで \[Save\]，\[OK\] の順にクリックしてください。
-
-dviout for Windows でマウスカーソルが矢印になっているときに画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
-上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
-なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
-
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
 xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
