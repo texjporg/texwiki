@@ -31,7 +31,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
-2012-06-27 Eclipse 4.2 (Juno)
+[Release Milestones](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones)
 
 ### 派生版 {#ea83e439}
 
