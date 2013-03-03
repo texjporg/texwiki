@@ -340,23 +340,6 @@ main:
 
 ***
 
-## dviout との連携 (非推奨) {#jf9840e6}
-
-### inverse search {#sb38b6fb}
-
-- 32bit版 Windows で 32bit版の秀丸エディタを使用する場合
-- 64bit版 Windows で 64bit版の秀丸エディタを使用する場合
-
-```
-C:\Program Files\Hidemaru\Hidemaru.exe^s /m3 /j%d "%s"
-```
-
-- 64bit版 Windows で 32bit版の秀丸エディタを使用する場合
-
-```
-C:\Program Files (x86)\Hidemaru\Hidemaru.exe^s /m3 /j%d "%s"
-```
-
 ## スクリプト {#w87ef5ac}
 
 ### Happy {#q96fb99f}
