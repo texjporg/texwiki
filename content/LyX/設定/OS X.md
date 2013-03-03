@@ -45,33 +45,6 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 順検索 (forward search) を参照してください．
 
-## pxdvi との連携 (非推奨) {#qa1c9c53}
-
-変換子に -src-specials を追加します．<br>
-
-### forward search {#fac5a68a}
-
-DVIコマンドは pxdvi を使用します．<br>
-
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-
-```
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <ins>/usr/texbin/pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
-　PDFコマンド: <br>
-
-***
-
 ## 関連リンク {#tab664aa}
 
 - [LyX with Mac Book Pro Retina, JP](http://heloremy.wordpress.com/2012/10/16/lyx-with-mac-book-pro-retina-jp/)
