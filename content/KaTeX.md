@@ -382,13 +382,13 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil) (非推奨)</th><th style="color:#FFF;background-color:#3C0;text-align:center">機能</th></tr>
-> <tr><td>Process menu -&gt; LaTeX</td><td>C-c C-t j</td><td>C-c t j</td><td>タイプセット</td></tr>
-> <tr><td>Process menu -&gt; BibTeX</td><td>C-c C-t b</td><td>C-c t b</td><td>BibTeX</td></tr>
-> <tr><td>Process menu -&gt; makeindex</td><td>C-c C-t i</td><td>C-c t i</td><td>MakeIndex</td></tr>
-> <tr><td>Process menu -&gt; Preview</td><td>C-c C-t p</td><td>C-c t p</td><td>プレビュー</td></tr>
-> <tr><td></td><td>C-c C-t l</td><td>C-c t l</td><td>LPR (印刷)</td></tr>
-> <tr><td></td><td>C-c '</td><td>C-c '</td><td>エラー行にジャンプ</td></tr>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">機能</th></tr>
+> <tr><td>Process menu -&gt; LaTeX</td><td>C-c C-t j</td><td>タイプセット</td></tr>
+> <tr><td>Process menu -&gt; BibTeX</td><td>C-c C-t b</td><td>BibTeX</td></tr>
+> <tr><td>Process menu -&gt; makeindex</td><td>C-c C-t i</td><td>MakeIndex</td></tr>
+> <tr><td>Process menu -&gt; Preview</td><td>C-c C-t p</td><td>プレビュー</td></tr>
+> <tr><td></td><td>C-c C-t l</td><td>LPR (印刷)</td></tr>
+> <tr><td></td><td>C-c '</td><td>エラー行にジャンプ</td></tr>
 > </tbody>
 > </table>
 >
@@ -400,12 +400,12 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter nil) (非推奨)</th><th style="color:#FFF;background-color:#3C0;text-align:center">補完</th></tr>
-> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b SPC</td><td>C-c b SPC</td><td>begin 型補完</td></tr>
-> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B SPC</td><td>C-c B SPC</td><td>指定領域に対して begin 型補完</td></tr>
-> <tr><td>Section type -&gt; リストから選択</td><td>C-c C-s</td><td>C-c s</td><td>section 型補完</td></tr>
-> <tr><td>Section type region -&gt; リストから選択</td><td>C-c S</td><td>C-c S</td><td>指定領域に対して section 型補完</td></tr>
-> <tr><td>Insert end environment</td><td>C-c C-e</td><td>C-c e</td><td>end 補完</td></tr>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [KaTeX(K)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力 (setq elisp::KaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#3C0;text-align:center">補完</th></tr>
+> <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b SPC</td><td>begin 型補完</td></tr>
+> <tr><td>Environment region -&gt; リストから選択</td><td>C-c B SPC</td><td>指定領域に対して begin 型補完</td></tr>
+> <tr><td>Section type -&gt; リストから選択</td><td>C-c C-s</td><td>section 型補完</td></tr>
+> <tr><td>Section type region -&gt; リストから選択</td><td>C-c S</td><td>指定領域に対して section 型補完</td></tr>
+> <tr><td>Insert end environment</td><td>C-c C-e</td><td>end 補完</td></tr>
 > </tbody>
 > </table>
 >
