@@ -76,8 +76,9 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer は dvipdfmx をサポートするか否か？ (3)](http://d.hatena.ne.jp/zrbabbler/20130303/1362319511)
 - [おっ、platex+dvipdfmxで拡大表示ができるようになった！？](http://blog.livedoor.jp/ti5942/archives/7760380.html)
 
-### XeLaTeX でナビゲーションシンボルが機能しない → Beamer 3.17 以降にアップデートする {#s082f108}
+### XeLaTeX でナビゲーションシンボルが機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用するもしくは Beamer 3.17 以降にアップデートする {#s082f108}
 
+- [「XeLaTeX でナビゲーションシンボルが機能しない →bxdpx-beamerパッケージを使う」がいい！？](http://blog.livedoor.jp/ti5942/archives/7765237.html)
 - [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html)
 
 ### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
