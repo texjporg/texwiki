@@ -225,31 +225,3 @@ C:\TeXstudio\texstudio.exe "%f" -line %l
 です．
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
-
-## [dviout](/dviout/) との連携 (非推奨) {#x63946e5}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-LaTeX コマンドのオプションに -src-specials を追加します．
-
-### forward search {#z360ee58}
-
-forward search は DVI Viewer に
-
-```
-dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/[PageOpen(# @ '?c:m.tex')][WinNormal][FileOpen("?am.dvi")]
-```
-
-です．
-
-### inverse search {#l6dc0dd1}
-
-inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
-
-```
-C:\TeXstudio\texstudio.exe^s "%s" -line %d
-```
-
-です．
-
-ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
