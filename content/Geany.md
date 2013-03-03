@@ -20,6 +20,7 @@ Geany は 軽くて高速な IDE としても使用できます．<br>
 Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC-JP/UTF-8 等の文字コードに対応しています．<br>
 
 - [Geany](http://www.geany.org/)
+- [Geany Portable](http://sourceforge.net/projects/geanyportable/files/)
 
 ### 動作環境 {#ib302119}
 
