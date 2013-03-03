@@ -153,7 +153,7 @@ ulimit -t 10 -f 1024
 - UTF-8 版のコマンドが、platex-euc になっているらしく、処理結果が文字化けします。正しくは platex-utf8 と思います。 -- ゼファー生 2008-06-16 (月) 19:15:22
 - あれあれ，いつこんなことになったんでしょう。速攻で直しました。m(\_\_)m -- 奥村 2008-06-16 (月) 19:47:05
 - 修正ありがとうございます。奥村先生のサイトを多いに参考にして、青空文庫テキスト zip ファイルの URL を張り付ければ、自動的に PDF化までできるような「てふてふ君」（ [http://www.aozora.jp/tools/tex/](http://www.aozora.jp/tools/tex/) ）を作りました。 -- ゼファー生 2008-06-23 (月) 12:41:00
-- こんなサイトができているようです。P-Lab （[http://www.acl-inc.co.jp/p-lab/](http://www.acl-inc.co.jp/p-lab/)） -- 川嶋 2008-09-11 (木) 10:39:45
+- こんなサイトができているようです。P-Lab （[http://web.archive.org/web/20081019184258/http://www.acl-inc.co.jp/p-lab/top](http://web.archive.org/web/20081019184258/http://www.acl-inc.co.jp/p-lab/top)） -- 川嶋 2008-09-11 (木) 10:39:45
 - index.php, do.php共に404 Not Foundになってしまいます。 -- 1273799701 2010-05-14 (金) 10:15:01
 - index.php, do.php共に404 Not Foundになってしまいます。 -- 1273804519 2010-05-14 (金) 11:35:19
 - すいませんでした。直ったでしょうか -- okumura 2010-05-14 (金) 12:15:37
