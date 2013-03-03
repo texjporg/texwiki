@@ -11,26 +11,23 @@ pukiwiki: "Beamer"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### Beamer とは {#g7e9b20e}
+## Beamer とは {#g7e9b20e}
 
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
-#### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
+### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
 - [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
-    <!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
-    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
-    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
-    <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
 
-- [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
-- [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
+### リリース情報 {#y60fd622}
 
-#### リリース情報/ChangeLog {#y60fd622}
+[Tag](https://bitbucket.org/rivanvx/beamer/downloads#tag-downloads) を参照．
+
+### ChangeLog {#td463767}
 
 [コミットログ](https://bitbucket.org/rivanvx/beamer/changesets) を参照．
 
-#### 利用可能な TeX ディストリビューション {#k1d828cf}
+### 利用可能な TeX ディストリビューション {#k1d828cf}
 
 Beamer は
 
@@ -44,11 +41,11 @@ Beamer は
 - LuaLaTeX で Beamer と [LuaTeX-ja](/LuaTeX-ja/) が使用できます．
 - XeLaTeX で Beamer と [xeCJK/ZXjatype](/xeCJK/) が使用できます．
 
-### 不具合 {#d9dfcf20}
+## 不具合 {#d9dfcf20}
 
 [Issues](https://bitbucket.org/rivanvx/beamer/issues?status=new&status=open) を参照．
 
-#### Beamer 公式サイトのファイルを使用するとエラーが発生する → CTAN からダウンロードする {#i1ba3f44}
+### Beamer 公式サイトのファイルを使用するとエラーが発生する → CTAN からダウンロードする {#i1ba3f44}
 
 - [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
 - [#36 Cannot resolve codes around RCS --- we need another software?](https://bitbucket.org/rivanvx/beamer/issue/36/cannot-resolve-codes-around-rcs-we-need)
@@ -71,18 +68,38 @@ l.12 \ProvidesClassRCS
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
 
-#### dvipdfmx を使用するとナビゲーションシンボルや \framezoom が機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
+### dvipdfmx でナビゲーションシンボルと \framezoom が機能しない, XeLaTeX で \framezoom が機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
 
 - [LaTeX: to make the navigation symbols (and \framezoom) work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
 - [Beamer は dvipdfmx をサポートするか否か？ (2)](http://d.hatena.ne.jp/zrbabbler/20130221/1361455788)
+- [Beamer は dvipdfmx をサポートするか否か？ (3)](http://d.hatena.ne.jp/zrbabbler/20130303/1362319511)
 - [おっ、platex+dvipdfmxで拡大表示ができるようになった！？](http://blog.livedoor.jp/ti5942/archives/7760380.html)
 
-#### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
+### XeLaTeX でナビゲーションシンボルが機能しない → Beamer 3.17 以降にアップデートする {#s082f108}
+
+- [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html)
+
+### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
 - [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
 - [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
 - beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
+
+## ダウンロード {#o77feabf}
+
+<!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
+<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
+<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
+<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
+- [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
+- [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
+
+### Ubuntu {#x6d699a5}
+
+- [Ubuntu – パッケージ検索結果 -- latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
+
+## Beamer 関連パッケージ {#k4220bf5}
 
 ### [TikZ and PGF](/TikZ/) {#o6f8726a}
 
@@ -122,7 +139,21 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [LaTeX-beamerのテンプレート](http://d.hatena.ne.jp/ckazu/20090217/1234857766)
 - [LATEX resources for Rice students by Daina Chiba](http://ricebeamer.dynaman.net)
 
-### 関連リンク {#tfca5d80}
+## TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
+
+- [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
+- [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=926)
+- [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
+- [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
+- [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
+- [beamerでmovieの上に画像の貼り付け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=399)
+- [beamerでxy-picを使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=360)
+- [beamerでceo.styを活用したい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=357)
+- [XeLaTeX で Beamer クラスを使用する際の日本語フォントの指定について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=317)
+
+<!-- **TeX Q & A [#n18c085c] -->
+
+## 関連リンク {#tfca5d80}
 
 - [「Beamer」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Beamer)
 - [ZR-TeXnobabbler/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=Beamer)
@@ -130,6 +161,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
 - [岩崎 隆盛/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=Beamer)
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
+- [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
@@ -149,17 +181,3 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
     <!-- -[[Beamer V3.0 を使ってみる:http://www-an.acs.i.kyoto-u.ac.jp/~fujiwara/tex/beamer.html]] -->
     <!-- -[[latex-beamer を使ってみる:http://www.pocus.jp/p-latex-main.html#latex-beamer]] -->
     <!-- -[[LaTeX Beamerでプレゼンテーション:http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+Beamer%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3]] -->
-
-### TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
-
-- [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
-- [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=926)
-- [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
-- [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
-- [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
-- [beamerでmovieの上に画像の貼り付け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=399)
-- [beamerでxy-picを使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=360)
-- [beamerでceo.styを活用したい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=357)
-- [XeLaTeX で Beamer クラスを使用する際の日本語フォントの指定について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=317)
-
-<!-- **TeX Q & A [#n18c085c] -->
