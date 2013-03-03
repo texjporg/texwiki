@@ -33,7 +33,6 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
     - [twitter](https://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
-    - [UNIX系GUI版で起動時にハングしたり起動が遅くなったりしていた問題が修正されました。](http://vim-jp.org/2011/10/21/patch_7.3.344.html)
         <!-- [[Vim team:http://sourceforge.net/project/memberlist.php?group_id=8] -->
         <!-- [[develop:http://sourceforge.net/projects/vim/develop]] -->
 
@@ -116,6 +115,8 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 [![Vim で LaTeX ファイルを編集している画面](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim-small.png)](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim.png)
 
 ## 不具合 {#h94d310c}
+
+- [Issues](https://code.google.com/p/vim/issues/list)
 
 ### Ubuntu 12.04 の gvim がまともに動かない → [Patch 7.3.520 にて修正されました](http://vim-jp.org/blog/2012/05/20/patch_7.3.520.html) {#fba97189}
 
