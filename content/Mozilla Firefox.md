@@ -15,6 +15,12 @@ pukiwiki: "Mozilla Firefox"
 
 Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 
+- [Mozilla Firefox](http://www.mozilla.jp/firefox/)
+
+### リリース情報 {#me413eb4}
+
+- [リリースノート](http://www.mozilla.jp/firefox/releases/)
+
 ### 派生版 {#qf4f5dc1}
 
 - [Waterfox](http://www.waterfoxproject.org/)
