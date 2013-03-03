@@ -569,61 +569,6 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 
 [xyzzy#SumatraPDF との連携#inverse search](/xyzzy/#n1f72109) を参照．
 
-## dviout との連携 (非推奨) {#u0efc8e1}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-&#x7e;/.xyzzy などの初期設定ファイルに，
-
-```
-(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -src-specials")
-```
-
-または
-
-```
-(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -src-specials")
-```
-
-と書いておきます。
-
-### forward search {#h429b3b5}
-
-xyzzy から dviout for Windows の該当箇所にジャンプすることが可能です．<br>
-まず，elisp::dvi2-command を dviout のフルパスに指定しておきます．<br>
-複数起動するのを防止する場合は -1 を追加してください．<br>
-
-```
-(setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
-```
-
-KaTeX を使う場合は [XyzzyWiki:質問箱/121](http://xyzzy.s53.xrea.com/wiki/?%BC%C1%CC%E4%C8%A2/121) を参考に次のような文字列を ~/.xyzzy などの初期設定ファイルに書いておきます．<br>
-
-***
-
-```
-(defun dviout-forward-search ()
-  (interactive)
-  (let* ((tex-file (get-buffer-file-name))
-         (dvi-file (el::KaTeX-get-preview-file-name)))
-    (call-process (concat el::dvi2-command " -1 " dvi-file " \"\# "
-                          (format nil "~D" (current-line-number)) " " tex-file "\"")
-                  :exec-directory (directory-namestring tex-file))))
-
-(add-hook 'elisp::katex-mode-hook
-          #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\d) 'dviout-forward-search)))
-```
-
-***
-
-すると，C-c d または M-x dviout-forward-search （Alt を押しながら x を押し，“dviout-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する DVI ファイルの位置を開いてくれるはずです．<br>
-頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
-
-### inverse search {#o8fecad0}
-
-[xyzzy#dviout との連携#inverse search](/xyzzy/#g1e55b81) を参照．
-
 ## コマンドの追加 {#j3178c6b}
 
 さらに，KaTeX からその他のコマンドを実行できるように改造してみましょう。
