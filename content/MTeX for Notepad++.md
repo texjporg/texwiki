@@ -90,25 +90,3 @@ PDFを表示で TeXworks を使用する場合は [TeXworks#組み込みの PDF 
 ```
 C:\npp\unicode\notepad++.exe "%f" -n%l
 ```
-
-## dviout との連携 (非推奨) {#adaf04d1}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-### forward search {#f73db679}
-
-以下のように設定します．<br>
-
-> <table>
-> <tbody>
-> <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
-> <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi" "# %MTeXnpp_Line% '%MTeXnpp_FName%.tex'"</td></tr>
-> </tbody>
-> </table>
->
-
-### inverse search {#q637846a}
-
-```
-C:\npp\unicode\notepad++.exe^s "%s" -n%d
-```
