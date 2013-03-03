@@ -949,30 +949,6 @@ C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
 
 [tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
-## dviout との連携 (非推奨) {#yb1d17aa}
-
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
-
-### forward search {#i0a5c1b0}
-
-forward search については [Vim-LaTeX](/Vim-LaTeX/)[dviout との連携#forward search](/Vim-LaTeX/#g7a208c2) を参照してください．
-
-### inverse search {#f8dee8e5}
-
-inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
-
-```
-C:\vim73-kaoriya-win32\gvim.exe^s -n --remote-silent +%d "%s"
-```
-
-です．
-
-## pxdvi との連携 (非推奨) {#z967afdc}
-
-### forward and inverse search {#d4703dc7}
-
-[Vim-LaTeX](/Vim-LaTeX/)[#pxdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
-
 ## 使い方 {#j3d4339e}
 
 - [MBA-HACK: vim](http://mba-hack.blogspot.jp/search/label/vim)
