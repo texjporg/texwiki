@@ -140,33 +140,6 @@ PDFコマンドは PdfViewer を使用します．<br>
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
-## pxdvi との連携 (非推奨) {#rca4729e}
-
-変換子に -src-specials を追加します．<br>
-
-### forward search {#hed232c6}
-
-DVIコマンドは pxdvi を使用します．<br>
-
-***
-
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-
-```
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <ins>pxdvi -nofork $$o -sourceposition "$$n $$t"</ins><br>
-　PDFコマンド: <br>
-
-***
-
 ## 関連リンク {#z80015dd}
 
 - [Ubuntu12.04でLyXを入れるときに一緒に入ろうとするTeXパッケージと格闘する](http://barippi.seesaa.net/article/293238931.html)
