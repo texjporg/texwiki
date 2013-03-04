@@ -20,6 +20,7 @@ pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したもので�
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
+    - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html)
 
 ### 動作環境 {#y90c90d1}
 
