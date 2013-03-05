@@ -70,9 +70,9 @@ UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐トレイアイコンを表示(Y)<br>
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐タブの幅を調節する(J)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　指定幅<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　指定幅:　　　　<span style="color:#888888;background-color:White;"><ins>0　　　 \[◆\]</ins></span><br>
 　　　　カスタムファイルフィルタ(<ins>F</ins>):　　　　　　☐ウィンドウ位置とサイズを復元(O)<br>
-　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins>　　　　　　指定サイズ<br>
+　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins>　　　　　　指定サイズ:　 <span style="color:#888888;background-color:White;"><ins>0　　　 \[◆\]</ins></span>　x　<span style="color:#888888;background-color:White;"><ins>0　　　 \[◆\]</ins></span><br>
 
 ***
 
