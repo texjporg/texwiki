@@ -58,7 +58,7 @@ UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を
 
 　　　　折り返し方法(<ins>W</ins>):　　　　　　　　　　　　 ☑行番号を表示(N)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[ウィンドウの右端で折り返し　　▼\]</span>　 ☑ルーラを表示(R)<br>
-　　　　行の表示方法(<ins>D</ins>):　　　　　　　　　　　　☑ルーラで文字数を指定する(F)<br>
+　　　　行の表示方法(<ins>D</ins>):　　　　　　　　　　　　☑ルーラで文字数を指定する(G)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　 ▼\]</span>　　☑折り返し線を表示(A)<br>
 　　　　文字数(<ins>M</ins>):　　　<ins>80　　　　　　　\[◆\]</ins>　　☐カーソルのある行に下線を表示(U)<br>
 　　　　引用マーク(<ins>Q</ins>):　<ins>>　　　　　　　　　　</ins>　　☑対応する括弧を強調する(H)<br>
@@ -67,12 +67,12 @@ UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を
 　　　　既定のエンコード(<ins>E</ins>):　　　　　　　　　　☐かな漢字変換を起動(P)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8 (BOM無し)　　　　　　　▼\]</span>　　☑URLをダブルクリックで開く(K)<br>
 　　　　既定の改行コード(<ins>L</ins>):　　　　　　　　　 ☑カーソル位置とブックマークを保存する(V)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐ウィンドウ位置とサイズを復元(O)<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[CR+LF (Windows)　　　　　　　▼\]</span>　　 ☐トレイアイコンを表示(Y)<br>
 　　　　閉じるボタン(<ins>C</ins>):　　　　　　　　　　　　　☑タブを複数行にする(B)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[アクティブなタブの上　　　　　▼\]</span>　　　☐タブの幅を調節する(J)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　☐トレイアイコンを表示(Y)<br>
-　　　　カスタムファイルフィルタ(<ins>F</ins>):<br>
-　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　指定幅<br>
+　　　　カスタムファイルフィルタ(<ins>F</ins>):　　　　　　☐ウィンドウ位置とサイズを復元(O)<br>
+　　　　<ins>\*.txt;\*.htm;\*.html;\*.xml;\*.css;\*.js</ins>　　　　　　指定サイズ<br>
 
 ***
 
