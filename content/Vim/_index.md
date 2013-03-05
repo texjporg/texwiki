@@ -82,7 +82,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
     - [コミットログ](https://github.com/splhack/macvim/commits/master)
-- [MacVim](https://github.com/b4winckler/macvim/downloads)
+- [MacVim](https://code.google.com/p/macvim/)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
 - [vim-cocoa](https://code.google.com/p/vim-cocoa/)
     - [コミットログ](https://github.com/jjgod/vim-cocoa/commits/master)
