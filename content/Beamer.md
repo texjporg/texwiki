@@ -100,6 +100,14 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 - [Ubuntu – パッケージ検索結果 -- latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
 
+### Debian {#h1b8334f}
+
+- [Debian -- パッケージ検索結果 -- latex-beamer](http://packages.debian.org/ja/latex-beamer)
+
+### Arch Linux {#h5c71065}
+
+- [https://aur.archlinux.org/packages/latex-beamer/](https://aur.archlinux.org/packages/latex-beamer/)
+
 ## Beamer 関連パッケージ {#k4220bf5}
 
 ### [TikZ and PGF](/TikZ/) {#o6f8726a}
