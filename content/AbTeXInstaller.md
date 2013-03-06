@@ -9,9 +9,9 @@ pukiwiki: "AbTeXInstaller"
 
 ## [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) {#fa0ee5c0}
 
-「[<strong>TeX インストーラ 3</strong>](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)」は，[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](https://mirror.ctan.org/help/Catalogue/entries/gsview.html)
+「[<strong>TeX インストーラ 3</strong>](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)」は，[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
-環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，テスト結果が集まれば，手軽なインストール方法として活用できるかと思います。
+環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できるかと思います。
 
 ### リリース情報 {#f691af94}
 
