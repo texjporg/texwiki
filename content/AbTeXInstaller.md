@@ -9,8 +9,7 @@ pukiwiki: "AbTeXInstaller"
 
 ## [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) {#fa0ee5c0}
 
-「[<strong>TeX インストーラ 3</strong>](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)」は，[W32TeX](/W32TeX/) (角藤版
-pTeX) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](https://mirror.ctan.org/help/Catalogue/entries/gsview.html)
+「[<strong>TeX インストーラ 3</strong>](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)」は，[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](https://mirror.ctan.org/help/Catalogue/entries/gsview.html)
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
 環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，テスト結果が集まれば，手軽なインストール方法として活用できるかと思います。
 
@@ -22,7 +21,16 @@ pTeX) (角藤さんのサイトでいう「フルインストール」の内容�
 
 ### 注意事項 {#bb499d3c}
 
-0.82r1 以前のバージョンを使っている方は最新版にアップデートしてください．<br>
+GSview が CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
+GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
+GSview をインストールする場合は<br>
+
+> GSviewのURL<br>
+> 　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins></span><br>
+> 　　　　☑一覧以外を使う（↓に入力）<br>
+> 　　　　<ins>&#x68;ttp://pages.cs.wisc.edu/~ghost/gsview/download/</ins>
+
+のように一覧以外を使うにチェックして GSviewのURL を指定してください．<br>
 
 ### インストール方法 {#gbf84ff3}
 
@@ -111,10 +119,10 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/</ins><br>
 　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
 　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/gs/%%%&br; -->
-　　　　GSviewのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/%%%};&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins><br>
-　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
-　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/CTAN/support/ghostscript/ghostgum/%%%&br; -->
+　　　　GSviewのURL<br>
+　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins></span><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/%%%&br; --> <!-- 　　　　　　　　☐一覧以外を使う（↓に入力）&br; -->
+　　　　　　　　☑一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%&br; -->
+　　　　　　　　<ins>&#x68;ttp://pages.cs.wisc.edu/~ghost/gsview/download/</ins><br>
 　　　　※ 保存先，proxy，portの設定はTeXのものを使います．<br>
 
 ***
@@ -154,58 +162,58 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　ダウンロード&amp;インストールするファイルを選んでください．<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　dviout<br>
 　　　W32TeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣　　　 ∣☑tex318w.zip　　　　　　　　　　　　　　無い　　　2.5MB<br>
+　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣　　　 ∣☑tex318w.zip　　　　　　　　　　　　　　無い　　　2.9MB<br>
 　　　　 ∣☑aleph-w32.tar.xz　　　　　　　　　　　無い　　　4.1MB　　　　　　 ∣<br>
-　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　13.0MB　　　　Ghostscript<br>
+　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　14.8MB　　　　Ghostscript<br>
 　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　14.5MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
-　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　429KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
-　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　448KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
-　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　148KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
+　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　15.0MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
+　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　426KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
+　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　447KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　145KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.7MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.4MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
 　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☐gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　987KB　　　　　　∣☑gs907w32full-gpl.exe　　　　　　　　無い　　　10.4MB<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　130MB　　　　　 ∣<br>
-　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 2.9MB　　　　GSview<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☑gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣<br>
+　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　GSview<br>
 　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　 ∣☐gsv46w32.exe　　　　　　　　　　　　無い　　　1.5MB<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　385KB　　　　　∣☐gsv47w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　204KB　　 　　　∣☐gsv48w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.6MB　　 　　　 ∣☐gsv49w32.exe　　　　　　　　　　　　無い　　　1.4MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　99KB　　　　 　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB　　　　　　 ∣<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　993KB<br>
-　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　242KB<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　∣<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB<br>
+　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
+　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
-　　　　 ∣☑pmx.tar.xz　　　　　　　　　　　　　　　無い　　　2.4MB<br>
-　　　　 ∣☑pstricks.tar.xz　　　　　　　　　　　　無い　　　89.2MB<br>
-　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　88KB<br>
-　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.5MB<br>
-　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　552KB<br>
-　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　534KB<br>
+　　　　 ∣☑pmx.tar.xz　　　　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑pstricks.tar.xz　　　　　　　　　　　　無い　　　92.4MB<br>
+　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　85KB<br>
+　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.2MB<br>
+　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　698KB<br>
+　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　538KB<br>
 　　　　 ∣☑t1fonts.tar.xz　　　　　　　　　　　　　無い　　　22.9MB<br>
 　　　　 ∣☑t1utils-w32.tar.xz　　　　　　　　　　無い　　　119KB<br>
-　　　　 ∣☑tex4htk-w32.tar.xz　　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑tex4htk-w32.tar.xz　　　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑texinfotools-w32.tar.xz　　　　　　　無い　　　2.5MB<br>
-　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　85KB<br>
+　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　87KB<br>
 　　　　 ∣☑timesnew.tar.xz　　　　　　　　　　　　無い　　　301KB<br>
-　　　　 ∣☑ttf2pk-w32.tar.xz　　　　　　　　　　　無い　　　278KB<br>
-　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　447KB<br>
+　　　　 ∣☑ttf2pk-w32.tar.xz　　　　　　　　　　　無い　　　470KB<br>
+　　　　 ∣☑ttf2pt1-w32.tar.xz　　　　　　　　　　無い　　　445KB<br>
 　　　　 ∣☑txpx-pazofonts.tar.xz　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑txtutil.tar.xz　　　　　　　　　　　　　　無い　　　3KB<br>
 　　　　 ∣☑ums.tar.xz　　　　　　　　　　　　　　　無い　　　70KB<br>
-　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.2MB<br>
+　　　　 ∣☑uptex-w32.tar.xz　　　　　　　　　　　無い　　　2.1MB<br>
 　　　　 ∣☑utf.tar.xz　　　　　　　　　　　　　　　　無い　　　706KB<br>
 　　　　 ∣☑vf-a2bk.tar.xz　　　　　　　　　　　　　無い　　　10KB<br>
 　　　　 ∣☑vf-n2bk.tar.xz　　　　　　　　　　　　　無い　　　13KB<br>
-　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.3MB<br>
-　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　15.7MB<br>
-　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.0MB<br>
+　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.4MB<br>
+　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
 
 ***
@@ -216,6 +224,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953)
 - [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [情報処理演習 A2,B2](http://www.ike-dyn.ritsumei.ac.jp/~okushima/RainbowMR/johoWeb/)
