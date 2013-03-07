@@ -7,7 +7,7 @@ pukiwiki: "Beamer"
 
 # Beamer
 
-## [Beamer](http://bitbucket.org/rivanvx/beamer/) {#wc0b104e}
+## [Beamer](https://bitbucket.org/rivanvx/beamer/) {#wc0b104e}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -15,9 +15,9 @@ pukiwiki: "Beamer"
 
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
-### [LaTeX Beamer class](http://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
+### [LaTeX Beamer class](https://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
 
-- [Beamer 公式サイト](http://bitbucket.org/rivanvx/beamer/)
+- [Beamer 公式サイト](https://bitbucket.org/rivanvx/beamer/)
 
 ### リリース情報 {#y60fd622}
 
