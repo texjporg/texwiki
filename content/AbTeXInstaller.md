@@ -15,22 +15,14 @@ pukiwiki: "AbTeXInstaller"
 
 ### リリース情報 {#f691af94}
 
-2012-10-31 プラグイン集<br>
-2012-06-01 TeXインストーラ3 開発版 20120601<br>
-2012-04-09 TeXインストーラ3 0.83<br>
+2013-03-07 TeXインストーラ 3 0.84<br>
+2013-03-07 プラグイン集<br>
 
 ### 注意事項 {#bb499d3c}
 
 GSview が CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
-GSview をインストールする場合は<br>
-
-> GSviewのURL<br>
-> 　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins></span><br>
-> 　　　　☑一覧以外を使う（↓に入力）<br>
-> 　　　　<ins>&#x68;ttp://pages.cs.wisc.edu/~ghost/gsview/download/</ins>
-
-のように一覧以外を使うにチェックして GSviewのURL を指定してください．<br>
+GSview をインストールする場合は TeXインストーラ 3 0.84 にアップデートしてください．<br>
 
 ### インストール方法 {#gbf84ff3}
 
@@ -108,9 +100,6 @@ otf パッケージの最新版は otfbeta です。<br>
 <br>
 
 　　　　dviout，Ghostscript，GSviewのインストール設定を行います．<br>
-
-<br>
-
 　　　　dvioutのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x66;tp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/%%%};&br; -->
 　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/dviout/</ins><br>
 　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
@@ -120,9 +109,12 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
 　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/gs/%%%&br; -->
 　　　　GSviewのURL<br>
-　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;"><ins>&#x68;ttp://www.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/</ins></span><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/support/ghostscript/ghostgum/%%%&br; --> <!-- 　　　　　　　　☐一覧以外を使う（↓に入力）&br; -->
-　　　　　　　　☑一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%&br; -->
 　　　　　　　　<ins>&#x68;ttp://pages.cs.wisc.edu/~ghost/gsview/download/</ins><br>
+　　　　　　　　☐一覧以外を使う（↓に入力）<br>
+　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+
+<br>
+
 　　　　※ 保存先，proxy，portの設定はTeXのものを使います．<br>
 
 ***
