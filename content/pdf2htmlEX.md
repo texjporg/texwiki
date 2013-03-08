@@ -489,9 +489,9 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.27.1")
+-- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.22.0
+--   found poppler, version 0.22.1
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 Found config.h: C:/MinGW/include/fontforge/config.h
