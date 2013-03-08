@@ -804,9 +804,9 @@ $ popd
 - [gettext](http://www.gnu.org/software/gettext/) をインストールします．
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.1.1.tar.gz
-$ tar xvf gettext-0.18.1.1.tar.gz
-$ pushd gettext-0.18.1.1
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.2.1.tar.gz
+$ tar xvf gettext-0.18.2.1.tar.gz
+$ pushd gettext-0.18.2.1
 $ ./configure --prefix=/mingw
 ```
 
@@ -830,9 +830,9 @@ $ popd
 - [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．
 
 ```
-$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.27.1.tar.gz
-$ tar xvf pkg-config-0.27.1.tar.gz
-$ pushd pkg-config-0.27.1
+$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
+$ tar xvf pkg-config-0.28.tar.gz
+$ pushd pkg-config-0.28
 $ ./configure --prefix=/mingw
 $ make
 $ make install
