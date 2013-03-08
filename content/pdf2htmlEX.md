@@ -373,9 +373,9 @@ $ popd
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.94.tar.gz
-$ tar xvf ttfautohint-0.94.tar.gz
-$ pushd ttfautohint-0.94
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.95.tar.gz
+$ tar xvf ttfautohint-0.95.tar.gz
+$ pushd ttfautohint-0.95
 $ ./configure --prefix=/mingw
 $ make
 ```
@@ -385,7 +385,7 @@ $ make
 libtool: link: cannot determine absolute directory name of `./lib'
 ```
 
-のエラーが発生する場合は ttfautohint-0.94/frontend/Makefile の中身を
+のエラーが発生する場合は ttfautohint-0.95/frontend/Makefile の中身を
 
 ```
 #QT_LIBS = -L'./lib' -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
