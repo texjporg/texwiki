@@ -810,16 +810,15 @@ $ pushd gettext-0.18.2.1
 $ ./configure --prefix=/mingw
 ```
 
-[gettext-runtime/tests/test-lock.c](http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105) を修正します．<br>
-
-```
-//static inline void * gl_thread_self (void)
-static inline pthread_t gl_thread_self (void)
-{
-  //return = (void *) pthread_self ();
-  return pthread_self ();
-}
-```
+<!--  -->
+<!-- [[gettext-runtime/tests/test-lock.c:http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105]] を修正します．~ -->
+<!-- //static inline void * gl_thread_self (void) -->
+<!-- static inline pthread_t gl_thread_self (void) -->
+<!-- { -->
+<!--   //return = (void *) pthread_self (); -->
+<!--   return pthread_self (); -->
+<!-- } -->
+<!--  -->
 
 ```
 $ make
