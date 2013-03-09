@@ -59,7 +59,8 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt5 または Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
+<!-- -http://qt-project.org/downloads から Qt5 または Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します． -->
+- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
     <!-- - -[[Qt5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
 
 <!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
@@ -780,7 +781,7 @@ $ ./configure --prefix=/mingw
   RTMP support:     no      (--with-librtmp)
   metalink support: no      (--with-libmetalink)
   Protocols:        DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS LDAP LDAPS P
-OP3 POP3S RTSP SMTP SMTPS TELNET TFTP
+OP3 POP3S RTSP SCP SFTP SMTP SMTPS TELNET TFTP
 ```
 
 ```
@@ -877,11 +878,19 @@ $ pushd poppler-0.22.1
 
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
-<!-- ■ Qt5 をソースコードからビルドしてインストールした場合 -->
+<!-- ■ Qt5 mingw バイナリをインストールした場合 -->
 <!--  -->
-<!-- $ ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
+<!-- configure の moc のバージョンチェックの処理の項目をコメントアウトします． -->
+<!--  -->
+<!-- #    if test x"$mocversiongrep" != x"$mocversion"; then -->
+<!--       # no valid moc found -->
+<!-- #      enable_poppler_qt4=no; -->
+<!-- #      MOCQT4="not found" -->
+<!-- #    fi -->
+<!--  -->
+<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/lib -lQt5Core -lQt5Gui -lQt5Network -lQt5WebKit -lQt5Xml -lQt5XmlPatterns" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/bin" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
-■ Qt4 mingw バイナリをインストールした場合
+<!-- ■ Qt4 mingw バイナリをインストールした場合 -->
 
 ```
 $ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
