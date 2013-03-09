@@ -335,10 +335,10 @@ $ mkdir build
 $ pushd build
 ```
 
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
 
 ```
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on
 $ make
 $ make install
 $ popd
@@ -458,10 +458,22 @@ $ popd
 
 fontconfig 2.10.91 でビルドエラーが発生する場合は [fontconfig on Windows のビルドエラーとその対策](http://blogs.yahoo.co.jp/igproj_fusion/16786546.html) を参照してください．
 
+<!-- $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.bz2 -->
+
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.bz2
-$ tar xvf fontconfig-2.10.91.tar.bz2
-$ pushd fontconfig-2.10.91
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.bz2
+```
+
+<!-- $ tar xvf fontconfig-2.10.91.tar.bz2 -->
+
+```
+$ tar xvf fontconfig-2.10.2.tar.bz2
+```
+
+<!-- $ pushd fontconfig-2.10.91 -->
+
+```
+$ pushd fontconfig-2.10.2
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
@@ -484,12 +496,12 @@ fc-match で Ryumin-Light と GothicBBB-Medium を確認します．
 
 ```
 $ fc-match Ryumin-Light
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+mingliu.ttc: "MingLiU" "Regular"
 $ fc-match GothicBBB-Medium
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+mingliu.ttc: "MingLiU" "Regular"
 ```
 
-デフォルトでは日本語のフォントが埋め込まれていない PDF ファイルの明朝体は，すべてゴシック体で表示されてしまいます．<br>
+デフォルトでは日本語のフォントが埋め込まれていない PDF ファイルの明朝体とゴシック体が同じフォントで表示されてしまいます．<br>
 そこで明朝体とゴシック体を適切に表示するため，C:\MinGW\etc\fonts\local.conf を作成して編集します．<br>
 fc-list で MS Mincho と MS Gothic がリストに存在するかどうか確認します．<br>
 
@@ -911,6 +923,11 @@ $ make install
 ```
 $ mkdir build
 $ pushd build
+```
+
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBOPENJPEG=ON -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DENABLE_LIBCURL=ON -->
+
+```
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON
 ```
 
