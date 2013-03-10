@@ -179,6 +179,7 @@ mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
 
 ## 関連リンク {#e987affa}
 
+- [MinGW | Qt Wiki | Qt Project](http://qt-project.org/wiki/MinGW)
 - [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
