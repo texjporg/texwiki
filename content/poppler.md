@@ -888,7 +888,7 @@ $ pushd poppler-0.22.1
 <!-- #      MOCQT4="not found" -->
 <!-- #    fi -->
 <!--  -->
-<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/lib -lQt5Core -lQt5Gui -lQt5Network -lQt5WebKit -lQt5Xml -lQt5XmlPatterns" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/bin" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
+<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/lib -lQt5Concurrent -lQt5Core -lQt5Gui -lQt5Network -lQt5PrintSupport -lQt5Sql -lQt5WebKit -lQt5WebKitWidgets -lQt5Widgets -lQt5Xml" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/bin" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
 <!-- ■ Qt4 mingw バイナリをインストールした場合 -->
 
