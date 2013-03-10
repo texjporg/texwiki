@@ -987,54 +987,13 @@ C:/MinGW/share/poppler
 
 日本語の PDF ファイルを表示できるようにするため，poppler-data を適切な場所に配置します．
 
-- W32TeX の場合
-
-W32TeX の poppler-data (C:\w32tex\share\texworks\share\poppler) を C:\MinGW\share にコピーします．
+poppler-data を C:\MinGW\share にコピーします．
 
 ```
-$ cp -pR /c/w32tex/share/texworks/share/poppler/ /mingw/share/poppler
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-data-0.4.6.tar.gz
+$ tar xvf poppler-data-0.4.6.tar.gz
+$ cp -pR poppler-data-0.4.6 /mingw/share/poppler
 ```
-
-***
-
-```
-C:.
-├─w32tex
-│  └─share
-│      └─texworks
-│          └─share
-│              └─poppler
-└─MinGW
-    └─share
-        └─poppler
-```
-
-***
-
-- TeX Live の場合
-
-TeX Live の poppler-data (C:\texlive\2012\tlpkg\texworks\share\poppler) を C:\MinGW\share にコピーします．
-
-```
-$ cp -pR /c/texlive/2012/tlpkg/texworks/share/poppler/ /mingw/share/poppler
-```
-
-***
-
-```
-C:.
-├─texlive
-│  └─2012
-│      └─tlpkg
-│          └─texworks
-│              └─share
-│                  └─poppler
-└─MinGW
-    └─share
-        └─poppler
-```
-
-***
 
 ### OS X {#l3620b9b}
 
