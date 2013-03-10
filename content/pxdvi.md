@@ -36,12 +36,7 @@ X Window System
     - [ChangeLog.TL](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog.TL?view=log)
 
 - [http://gitorious.org/xdvik-japanese-patch-cleanup](http://gitorious.org/xdvik-japanese-patch-cleanup)
-    - [http://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master](http://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master)
-- [http://gitorious.org/~ttk/xdvik-japanese-patch-cleanup/ttks-xdvik-japan-non-ptex](http://gitorious.org/~ttk/xdvik-japanese-patch-cleanup/ttks-xdvik-japan-non-ptex)
-    - [http://gitorious.org/~ttk/xdvik-japanese-patch-cleanup/ttks-xdvik-japan-non-ptex/commits/master](http://gitorious.org/~ttk/xdvik-japanese-patch-cleanup/ttks-xdvik-japan-non-ptex/commits/master)
-- [http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/](http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/)
-    - [http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/commits/master](http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/commits/master)
-    - [http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/commits/h7k](http://gitorious.org/~h7k/tlptexlive/h7ks-build-tlptexlive/commits/h7k)
+- [http://gitorious.org/tlptexlive](http://gitorious.org/tlptexlive)
 
 xdvik 22.85 は TeX Live 2012 に含まれています．
 
