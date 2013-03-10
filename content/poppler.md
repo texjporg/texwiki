@@ -32,20 +32,14 @@ poppler は
 
 [Poppler](http://poppler.freedesktop.org/) を参照．<br>
 
-poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました<br>
+poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました．<br>
+ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定することをおすすめします．<br>
 
 ### ChangeLog {#u62118c7}
 
 - [poppler/poppler - The poppler pdf rendering library](http://cgit.freedesktop.org/poppler/poppler)
     - [log](http://cgit.freedesktop.org/poppler/poppler/log/)
-
-<!-- -[[Bug 48046 &ndash; ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc:https://bugs.freedesktop.org/show_bug.cgi?id=48046]] -->
-<!-- -[[[Bug 48046] New: ttc&lt;-&gt;ttf fallback is expected for CJK font list in GlobalParamsWin.cc - poppler-bugs.lists.freedesktop.org - ArchiveOrange:http://web.archiveorange.com/archive/v/RybTrzJz0TKVhTDfV9z3]] -->
-<!-- -[[ttc<->ttf fallback is expected for CJK font list in GlobalParamsWin.cc:http://cgit.freedesktop.org/poppler/poppler/commit/?id=f5b708c3e04ba50756cd9f9530cf82f547443ce9]] -->
-<!-- -[[per-collection fallback for missing CID-keyed fonts on Win32:http://cgit.freedesktop.org/poppler/poppler/commit/?id=4a38d933d06d189317b1b9028c3fa4ae2a1551af]] -->
-<!-- -[[CJK improvements:http://cgit.freedesktop.org/poppler/poppler/commit/?id=55d039ada063a9427de6dd59846ce1570ab26e9f]] -->
-<!-- -[[CJK substitute implementation on WIndows platforms.:http://cgit.freedesktop.org/poppler/poppler/commit/?id=dae29c6c201cd69cbf4f008de865cc19a36f29b3]] -->
-<!-- -[[Improve CJK suport in PSOutputDev:http://cgit.freedesktop.org/poppler/poppler/commit/?id=32e47ee03840cc8f21c00497025864d77edb75f5]] -->
 
 ## インストール {#e0d6f40b}
 
