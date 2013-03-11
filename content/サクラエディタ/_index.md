@@ -62,7 +62,6 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
-- [変更履歴(2011/02/11～)](http://sakura-editor.sourceforge.net/htmlhelp2/HLP_UR015.html)
 - [log](http://sourceforge.net/p/sakura-editor/code/log/)
 - [Sakura Editor / Code / Browse Commits](http://sourceforge.net/p/sakura-editor/code/commit_browser)
 
@@ -78,6 +77,17 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
 - [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 
+## 不具合 {#jbc9f4c6}
+
+### サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまう → サクラエディタ Ver. 2.0.6.0 で修正されました {#j51dbfec}
+
+サクラエディタ Ver. 2.0.6.0 で修正されました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
+
+サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュします．<br>
+サクラエディタ Ver. 2.0.5.0 を使用する場合は [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO) (旧バージョン) を使用してください．<br>
+
+- [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)
+
 ## コマンドラインオプション {#j41d5a42}
 
 - [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp/HLP000109.html)
@@ -85,12 +95,9 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
 - [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
-    - [help2 / 2.0.5.0](http://sourceforge.net/projects/sakura-editor/files/help2/2.0.5.0/) サクラエディタ Ver 2.0.5.0 ヘルプファイル最終更新日 2012/05/13
-    - [Rev 2428 で 外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました](http://sourceforge.net/p/sakura-editor/patchunicode/230/)
+    - サクラエディタ Ver 2.0.6.0 で外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました (→ [Sakura Editor / PatchUnicode / #230 外部ヘルプ1でもHTMLヘルプを表示](http://sourceforge.net/p/sakura-editor/patchunicode/230/))
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
-    - [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまう場合は [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO) (旧バージョン) を使用してください． → [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)<br>
-    - [Rev 2427 で C/Migemo1.3で落ちる問題の修正，UTF-8に対応（自動認識。UTF-8優先）がコミットされました](http://sourceforge.net/p/sakura-editor/patchunicode/180/)
 
 ***
 
@@ -157,8 +164,6 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
         - [正規表現キーワード登録数節約例(LaTeXの場合)](http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD%2F%C5%EA%B9%C6#i35f0017)
 
 ### 正規表現ライブラリ {#j57d8050}
-
-bregonig.dll Ver.3.03 は x64 に対応しています．
 
 - [bregonig.dll](http://homepage3.nifty.com/k-takata/mysoft/bregonig.html)
 - [Downloads · k-takata/bregonig · GitHub](https://github.com/k-takata/bregonig/downloads)
@@ -1425,24 +1430,24 @@ Version 2 では，プラグイン機能が使えるようになりました．
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]\[　　支援　　\]\[ 　　マクロ　　 \]</ins></span><strong>\[　　プラグイン　　\]</strong><br>
 
-　プラグイン<br>
-　☑プラグインを有効にする(E)　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　新規プラグインを追加(I)　　\]</span><br>
+　プラグイン　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　ZIPプラグインを導入(Z)　　\]</span><br>
+　☑プラグインを有効にする(E)　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　フォルダを開く(F)　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　新規プラグインを追加(I)　　\]</span><br>
 　∣<ins>　番号　∣　プラグイン名　　　　　　　　　　　　　∣　状態　∣　読込　∣　フォルダ　　　　　　　　　</ins>∣<br>
 　∣　0　　　　　-<br>
 　∣　1　　　　　-<br>
 　∣　2　　　　　-<br>
 　∣　3　　　　　-<br>
 　∣　…　　　　 …<br>
-　∣　17　　　　 -<br>
-　∣　18　　　　 -<br>
-　∣　19　　　　 -<br>
+　∣　37　　　　 -<br>
+　∣　38　　　　 -<br>
+　∣　39　　　　 -<br>
 
 <br>
 
 　　説明<br>
 　　作者<br>
 　　バージョン<br>
-　　<span style="color:#888888;background-color:#EEEEEE;">\[　　　　削除(R)　　　　\]</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[　　　　設定(P)　　　　\]</span><br>
+　　<span style="color:#888888;background-color:#EEEEEE;">\[　　　　削除(R)　　　　\]</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[　　　　設定(P)　　　　\]</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[　　　ReadMe(M)　　　\]</span><br>
 
 ***
 
