@@ -79,7 +79,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 ## 不具合 {#jbc9f4c6}
 
-### サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュしてしまう → サクラエディタ Ver. 2.0.6.0 で修正されました {#j51dbfec}
+### サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュする → サクラエディタ Ver. 2.0.6.0 で修正されました {#j51dbfec}
 
 サクラエディタ Ver. 2.0.6.0 で修正されました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
 
@@ -98,6 +98,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
     - サクラエディタ Ver 2.0.6.0 で外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました (→ [Sakura Editor / PatchUnicode / #230 外部ヘルプ1でもHTMLヘルプを表示](http://sourceforge.net/p/sakura-editor/patchunicode/230/))
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
+    - サクラエディタ Ver. 2.0.6.0 で C/Migemo 1.3 に対応しました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
 
 ***
 
@@ -135,8 +136,8 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \]<br>
-　　　　☐英大文字小文字を同一視する(I)　　　　　☑編集中のファイルから候補を探す(F)<br>
+　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \] <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
+　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
 
 <br>
 
@@ -152,7 +153,7 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 <br>
 
 　　　　デフォルトの文字コード<br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span>　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span>　☐BOM<br>
+　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
 ***
@@ -200,6 +201,7 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 
 　　　検索／置換／Grep<br>
 　　　☑カーソル位置の文字列をデフォルトの検索文字列にする(C)<br>
+　　　☑次・前検索で他のビューでの検索条件変更を引き継ぐ(I)<br>
 　　　正規表現ライブラリの指定(L)　　　　　<ins>.\bregonig.dll</ins><br>
 　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
 
@@ -241,12 +243,9 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 
 　　置換前(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
 　　置換後(P)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins>　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
-
-<br>
-
 　　☐クリップボードから貼り付ける(T)　　　　　　　　　　置換対象　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 選択文字(0)<br>
-　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(U)　　　\]</span><br>
+　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(R)　　　\]</span><br>
 　　☑正規表現(E)　　　　　　　　　　　　　　　　　　　　　 ◯ 選択終点(2)追加　　　　<span style="color:Black;background-color:#EEEEEE;">\[　すべて置換(A)　\]</span><br>
 　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
 　　☐「すべて置換」は置換の繰返し(I)　　　　　　　　　　範囲<br>
@@ -346,11 +345,8 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 　　　　∣　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　追加(A)　\]</span><br>
 　　　正規表現(N)　　<ins>/\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k</ins> 　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　更新(E)　\]</span><br>
 　　　　 色指定(C)　　 <span style="color:Black;background-color:#EEEEEE;">\[正規表現キーワード1　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　削除(D)　\]</span><br>
-
-<br>
-
-　　　\[色指定\]で「URL」を選択するとマッチ文字列が<br>
-　　　クリッカブルになります　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　エクスポート(X)...　\]</span><br>
+　　　\[色指定\]で「URL」を選択するとマッチ文字列が　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　エクスポート(X)...　\]</span><br>
+　　　クリッカブルになります<br>
 
 <br>
 
@@ -405,7 +401,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 　　名前(N)　　<ins>pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　　Id:　<span style="color:Black;background-color:#EEEEEE;">\[0　　　▼\]</span><br>
 　　File　　　　 <ins>pdfpLaTeX.js　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins>　 <span style="color:Black;background-color:#EEEEEE;">\[　設定(A)　\]</span><br>
-　　☑マクロを実行するたびにファイルを読み込みなおす(L)<br>
+　　☑マクロを実行するたびにファイルを読み込みなおす(L)　　　　　キャンセル確認待ち時間　<ins>10</ins><br>
 　　自動実行:　　☐新規／開ファイル後(O)　　　☐タイプ変更後(T)　　　☐ファイル保存前(S)<br>
 
 ***
@@ -1328,16 +1324,11 @@ main();
 
 サクラエディタには単語ファイルによる TeX の入力補完機能があります．
 
-入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] で実行できます．
+入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] または Ctrl+Space で実行できます．
 
-単語ファイルを作成するのが面倒な場合は，編集中のファイルから候補を探すにチェックを入れると単語ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます．
+単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．
 
 - [サクラエディタの便利な機能](http://ryoofuu.fc2web.com/05/)
-
-<!-- 以下のサイトから TeX 用の入力補完データが入手できます． -->
-<!--  -->
-<!-- -[[サクラエディタTEX用入力補完データ:http://f32.aaa.livedoor.jp/~takazo/05/]] (тдκд。 (takazo) さん) -->
-<!-- - -[[サクラエディタTEX用入力補完データ (tex_20060112.txt):http://webcache.googleusercontent.com/search?q=cache%3af32.aaa.livedoor.jp/~takazo/05/tex_20060112.txt]] (Google キャッシュ) -->
 
 ***
 
@@ -1345,8 +1336,8 @@ main();
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \]<br>
-　　　　☐英大文字小文字を同一視する(I)　　　　　☑編集中のファイルから候補を探す(F)<br>
+　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \] <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
+　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
 
 <br>
 
@@ -1362,7 +1353,7 @@ main();
 <br>
 
 　　　　デフォルトの文字コード<br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span>　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span>　☐BOM<br>
+　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
 ***
@@ -1384,7 +1375,7 @@ Version 2 では，アウトライン解析画面のドッキングが可能に�
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<strong>\[　スクリーン　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　カラー　\]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 
@@ -1402,7 +1393,7 @@ Version 2 では，アウトライン解析画面のドッキングが可能に�
 
 　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　その他<br>
 　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　　☐英文ワードラップ(W)<br>
-　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)<br>
+　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)　　☐ぶら下げを隠す(-)<br>
 　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
 　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　　☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
 　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
