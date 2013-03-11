@@ -186,3 +186,4 @@ mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
+- [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
