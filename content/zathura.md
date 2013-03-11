@@ -34,7 +34,7 @@ Linux, BSD
 
 [News](http://pwmt.org/news/) を参照．<br>
 
-Version 0.2.2 で [SyncTeX (forward search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b)しました．<br>
+Version 0.2.2 で [SyncTeX (forward search) の対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b)の実装をはじめました (work in progress)．<br>
 Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
 ### ChangeLog {#fdab5877}
@@ -50,6 +50,20 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 - \[[zathura\] Synctex support](http://lists.pwmt.org/archive/zathura/2011-August/000047.html)
 - \[[zathura\]  Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00042.html)
 - [Re: \[zathura\] Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html)
+
+## ダウンロード/インストール {#w2221884}
+
+### Ubuntu {#cc8ebe01}
+
+- [Ubuntu -- パッケージ検索結果 -- zathura](http://packages.ubuntu.com/ja/zathura)
+
+### Debian {#x8dcc844}
+
+- [Debian -- パッケージ検索結果 -- zathura](http://packages.debian.org/ja/zathura)
+
+### Arch Linux {#h8cd5d50}
+
+- [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
 ## 関連リンク {#l21c05df}
 
