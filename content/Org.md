@@ -21,6 +21,7 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 ## LaTeX Export {#k6bbb6c5}
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
+- [Emacs の Org ファイルを platex と dvipdfmx で PDF 化する設定．](http://qiita.com/items/6eb4d8d799e41ef3f15d)
 - [EmacsのOrg-modeから日本語ファイルをTeX&amp;PDFにする時の問題点](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=903)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
@@ -44,6 +45,6 @@ Org-mode is for keeping notes, maintaining ToDo lists, doing project planning, a
 
 ## [Beamer](/Beamer/) Export {#k112eb83}
 
-- [Writing Beamer presentations in org-mode](http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html)
+- [Writing Beamer presentations in org-mode](http://orgmode.org/worg/exporters/beamer/tutorial.html)
 - \[[Emacs\]emacs + beamerの設定](http://d.hatena.ne.jp/killingout_n-bita/20121224/1356359190)
 - [Emacs org-modeを使ってみる: (15) Beamerにエクスポート](http://d.hatena.ne.jp/tamura70/20100218/org)
