@@ -76,8 +76,6 @@ babel のオプションを設定する場合は以下の方法があります�
 - クラスオプションでグローバルに設定する
 - babel のオプションでローカルに設定する
 
-グローバルに japanese オプションを設定してエラーが発生した場合はローカルに設定してください．→ [#4597 (Tweak to use Japanese on Windows with pLaTeX)](http://www.lyx.org/trac/ticket/4597#c4)
-
 ### LaTeX {#t6075904}
 
 \[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[LaTeX\]
@@ -181,7 +179,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 文字コードは以下の中から選択します．<br>
 LaTeX (pLaTeX) で書き出しするときに出力したい文字コードを選択してください．<br>
 
-- Japanese (non-CJK) (utf8)
+- Japanese (non-CJK) (UTF8)
 - 日本語(CJK不使用) (EUC-JP)
 - 日本語(CJK不使用) (JIS)
 - 日本語(CJK不使用) (SJIS)
@@ -202,7 +200,7 @@ lyx ファイル自体は常に UTF-8 で保存されます．<br>
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (non-CJK) (utf8)　　　▼\]</span><br>
+　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (non-CJK) (UTF8)　　　▼\]</span><br>
 
 <br>
 
@@ -226,7 +224,7 @@ babel を使用して文書を作成する場合は babel を on にします．
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (non-CJK) (utf8)　　　▼\]</span><br>
+　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (non-CJK) (UTF8)　　　▼\]</span><br>
 
 <br>
 
