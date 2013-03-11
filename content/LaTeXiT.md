@@ -34,7 +34,7 @@ OS X 10.4 以降
 
 - [ChangeLog](http://www.chachatelier.fr/latexit/latexit-downloads.php#main)
 
-## 環境設定 (MacTeX &amp; TeX Live の場合) {#tab3d738}
+## 環境設定 {#tab3d738}
 
 ### プログラム {#xab14b42}
 
