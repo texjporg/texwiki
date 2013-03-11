@@ -105,7 +105,7 @@ DVIビューア
 : dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
 
 PSビューア
-: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]<br>dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]<br>dde:///"C:\Program Files\Ghostgum\gsview\gsview32.exe":GSview/GSview/\[Command("?am.ps")\]\[ShowWindow(1)\]<br>dde:///"C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe":GSview/GSview/\[Command("?am.ps")\]\[ShowWindow(1)\]
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]<br>dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
 
 外部PDFビューア
 : "C:\w32tex\share\texworks\TeXworks.exe" "?am.pdf"<br>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @<br>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @<br>dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]<br>dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]<br>"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"<br>"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
