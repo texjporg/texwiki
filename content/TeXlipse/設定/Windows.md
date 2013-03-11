@@ -935,45 +935,6 @@ SumatraPDF を使用する場合は，
 
 の優先度を一番上にします．
 
-#### GSview {#ra380cc3}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>GSview</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Ghostgum\gsview\gsview32.exe</ins> または <ins>C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-e "&#x25;file"</ins><br>
-　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[ShowWindow(1)\]</ins><br>
-　　　　サーバー： <ins>GSview</ins>　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>GSview</ins><br>
-
-<br>
-
-　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 　　トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[ps 　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
-GSview を使用する場合は，
-
-> <span style="color:White;background-color:#1188FF;">　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)　</span><br>
-
-の優先度を一番上にします．
-
 ### DVI ファイル ビューアー {#y075cb2d}
 
 #### [dviout](/dviout/) {#o33347b9}
@@ -1034,7 +995,6 @@ dviout を使用する場合は，
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
 　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
-　GSview (C:\Program Files\Ghostgum\gsview\gsview32.exe)<br>
 　dviout (C:\w32tex\dviout\dviout.exe)<br>
 　yap ()<br>
 　xdvi ()<br>
