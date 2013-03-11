@@ -726,29 +726,6 @@ pukiwiki: "LyX/設定/Windows"
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ GSview の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>Postscript　　　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>ps</ins><br>
-拡張子(X):　　　　　　<ins>ps</ins><br>
-短絡キー(U):　　　　　<ins>t</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\Ghostgum\gsview\gsview32.exe" -e</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe" -e</ins> (64bit Windows の場合)<br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ### 順検索 (forward search) {#ffa7876e}
 
 PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
