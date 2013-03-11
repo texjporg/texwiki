@@ -86,7 +86,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 <ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins> または <ins>"C:/Program Files (x86)/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
@@ -169,7 +169,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 <ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files/Ghostgum/gsview/gsview32.exe" -e %.ps</ins> または <ins>"C:/Program Files (x86)/Ghostgum/gsview/gsview32.exe" -e %.ps</ins><br>
+<ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
