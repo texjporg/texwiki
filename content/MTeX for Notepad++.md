@@ -45,7 +45,6 @@ pukiwiki: "MTeX for Notepad++"
 > <tr><td>1</td><td>DVIを表示(用紙サイズ指定)</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 -y=%MTeXnpp_PSize% "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>DVIを表示</td><td>%MTeXnpp_start% "C:\w32tex\dviout\dviout.exe"</td><td>-1 "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSを表示 (SumatraPDF の場合)</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.ps"</td></tr>
-> <tr><td>1</td><td>PSを表示 (GSview の場合)</td><td>%MTeXnpp_start% "gsview32.exe"</td><td>-e "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>PDFを表示 (TeXworks の場合)</td><td>%MTeXnpp_start% "C:\w32tex\share\texworks\TeXworks.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf"</td></tr>
 > <tr><td>1</td><td>PDFを表示 (SumatraPDF の場合)</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
 > <tr><td>1</td><td>PDFを表示 (Adobe Reader の場合)</td><td>%MTeXnpp_start% "AcroRd32.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf"</td></tr>
