@@ -28,6 +28,10 @@ poppler は
 - [poppler](http://poppler.freedesktop.org/)
 - [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
 
+### License {#i424d155}
+
+[GPLv2](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING), [GPLv3](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING3)
+
 ### リリース情報 {#ha3b28ab}
 
 [Poppler](http://poppler.freedesktop.org/) を参照．<br>
