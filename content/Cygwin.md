@@ -95,7 +95,7 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Setup.exe version 2.769</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Setup.exe version 2.774</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2012</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
@@ -124,14 +124,18 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
       pdftk: PDF manipulation without Acrobat.
       texlive: TeX Live binaries
       texlive-collection-basic: TeX Live basic packages
+      texlive-collection-basic-doc: Documentation for texlive-collection-basic
       texlive-collection-bibtexextra: TeX Live extra BibTeX packages
+      texlive-collection-bibtexextra-doc: Documentation for texlive-collection-bibtexextra
       texlive-collection-binextra: TeX Live additional commands
+      texlive-collection-binextra-doc: Documentation for texlive-collection-binextra
       texlive-collection-context: TeX Live ConTeXt packages
+      texlive-collection-context-doc: Documentation for texlive-collection-context
       texlive-collection-documentation-arabic: TeX Live Arabic documentation
       texlive-collection-documentation-base: TeX Live common documentation files
       texlive-collection-documentation-bulgarian: TeX Live Bulgarian documentation
       texlive-collection-documentation-chinese: TeX Live Chinese documentation
-      texlive-collection-documentation-czechslova: TeX Live Czech and Slovak documentation
+      texlive-collection-documentation-czechslovak: TeX Live Czech and Slovak documentation
       texlive-collection-documentation-dutch: TeX Live Dutch documentation
       texlive-collection-documentation-english: TeX Live English documentation
       texlive-collection-documentation-finnish: TeX Live Finnish documentation
@@ -152,14 +156,20 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
       texlive-collection-documentation-ukrainian: TeX Live Ukrainian documentation
       texlive-collection-documentation-vietnamese: TeX Live Vietnamese documentation
       texlive-collection-fontsextra: TeX Live extra fonts
+      texlive-collection-fontsextra-doc: Documentation for texlive-collection-fontsextra
       texlive-collection-fontsrecommended: TeX Live recommended fonts
+      texlive-collection-fontsrecommended-doc: Documentation for texlive-collection-fontsrecommended
       texlive-collection-fontutils: TeX Live font utilities
+      texlive-collection-fontutils-doc: Documentation for texlive-collection-fontutils
       texlive-collection-formatsextra: TeX Live support for miscellaneous other formats
       texlive-collection-games: TeX live support for typesetting games
       texlive-collection-genericextra: TeX Live extra generic packages
+      texlive-collection-genericextra-doc: Documentation for texlive-collection-genericextra
       texlive-collection-genericrecommended: TeX Live recommended generic packages
+      texlive-collection-genericrecommended-doc: Documentation for texlive-collection-genericrecommended
       texlive-collection-htmlxml: TeX Live HTML/SGML/XML packages
       texlive-collection-humanities: TeX Live packages for law, linguistics, and humanities
+      texlive-collection-humanities-doc: Documentation for texlive-collection-humanities
       texlive-collection-langafrican: TeX Live African language support
       texlive-collection-langarabic: TeX Live Arabic language suppport
       texlive-collection-langcjk: TeX Live Chinese/Japanese/Korean language support
@@ -171,6 +181,7 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
       texlive-collection-langgerman: TeX Live German language support
       texlive-collection-langgreek: TeX Live Greek language support
       texlive-collection-langhebrew: TeX Live Hebrew language support
+      texlive-collection-langhungarian: TeX Live Hungarian language support
       texlive-collection-langindic: TeX Live Indic language support
       texlive-collection-langitalian: TeX Live Italian language support
       texlive-collection-langlithuanian: TeX Live Lithuanian language support
@@ -183,20 +194,32 @@ Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) 
       texlive-collection-langturkmen: TeX Live Turkmen language support
       texlive-collection-langvietnamese: TeX Live Vietnamese language support
       texlive-collection-latex: TeX Live core LaTeX support
+      texlive-collection-latex-doc: Documentation for texlive-collection-latex
       texlive-collection-latexextra: TeX Live extra LaTeX packages
+      texlive-collection-latexextra-doc: Documentation for texlive-collection-latexextra
       texlive-collection-latexrecommended: TeX Live recommended LaTeX packages
+      texlive-collection-latexrecommended-doc: Documentation for texlive-collection-latexrecommended
       texlive-collection-luatex: TeX Live LuaTeX packages
+      texlive-collection-luatex-doc: Documentation for texlive-collection-luatex
       texlive-collection-mathextra: TeX Live extra math typesetting packages
+      texlive-collection-mathextra-doc: Documentation for texlive-collection-mathextra
       texlive-collection-metapost: TeX Live MetaPost packages
+      texlive-collection-metapost-doc: Documentation for texlive-collection-metapost
       texlive-collection-music: TeX Live music typesetting support
+      texlive-collection-music-doc: Documentation for texlive-collection-music
       texlive-collection-omega: TeX Live Omega packages
       texlive-collection-pictures: TeX Live graphics packages
+      texlive-collection-pictures-doc: Documentation for texlive-collection-pictures
       texlive-collection-plainextra: TeX Live extra plain TeX packages
       texlive-collection-pstricks: TeX Live PSTricks packages
+      texlive-collection-pstricks-doc: Documentation for texlive-collection-pstricks
       texlive-collection-publishers: TeX Live support for publishers, standards, conferences, etc.
+      texlive-collection-publishers-doc: Documentation for texlive-collection-publishers
       texlive-collection-science: TeX Live science typesetting packages
+      texlive-collection-science-doc: Documentation for texlive-collection-science
       texlive-collection-texinfo: TeX Live TeXinfo macros
       texlive-collection-xetex: TeX Live XeTeX macros
+      texlive-collection-xetex-doc: Documentation for texlive-collection-xetex
 ```
 
 ***
