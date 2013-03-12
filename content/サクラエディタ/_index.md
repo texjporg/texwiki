@@ -84,7 +84,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 サクラエディタ Ver. 2.0.6.0 で修正されました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
 
 サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュします．<br>
-サクラエディタ Ver. 2.0.5.0 を使用する場合は [cmigemo-1.2-dll.tar.bz2](http://www1.kaoriya.net/#CMIGEMO) (旧バージョン) を使用してください．<br>
+サクラエディタ Ver. 2.0.5.0 を使用している方は Ver. 2.0.6.0 以降にアップデートしてください．<br>
 
 - [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)
 
@@ -354,6 +354,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 ## マクロ {#k75075b0}
 
+- サクラエディタ Ver. 2.0.6.0 で ExpandParameter の機能追加が行われました (→ [Sakura Editor / PatchUnicode / #302 ExpandParameter機能追加等](http://sourceforge.net/p/sakura-editor/patchunicode/302/))
 - [Macro - SakuraEditorWiki](http://sakura.qp.land.to/?Macro)
     <!-- -[[サクラエディタマクロ:http://www.geocities.jp/maru3128/SakuraMacro/]] -->
     <!-- - -[[リファレンス目次:http://www.geocities.jp/maru3128/SakuraMacro/reference/]] -->
@@ -406,7 +407,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 ***
 
-以下のマクロを使用する場合は サクラエディタ Ver. 2.0.3.0 以上が必要です．
+以下のマクロを使用する場合は サクラエディタ Ver. 2.0.6.0 以上が必要です．
 
 ### pdfpLaTeX.js {#y5c91d76}
 
@@ -415,8 +416,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
@@ -456,8 +456,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
@@ -498,8 +497,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
@@ -528,8 +526,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
@@ -559,8 +556,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
@@ -588,8 +584,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
@@ -617,8 +612,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var luajitlatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
@@ -646,8 +640,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
@@ -675,8 +668,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var bibtex = "pbibtex -sjis-terminal";
@@ -715,8 +707,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var bibtex = "upbibtex" + " " + ["\"", b, "\""].join("");
@@ -744,8 +735,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var makeindex = "mendex -T";
@@ -1059,8 +1049,7 @@ C:\sakura\sakura.exe -Y:%l "%f"
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
@@ -1100,8 +1089,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "platex -guess-input-enc -sjis-terminal";
@@ -1142,8 +1130,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
@@ -1172,8 +1159,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var latex = "uplatex -no-guess-input-enc -kanji=utf8" + " " + ["\"", b, "\""].join("");
@@ -1203,8 +1189,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var pdflatex = "pdflatex" + " " + ["\"", b, "\""].join("");
@@ -1232,8 +1217,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var lualatex = "lualatex" + " " + ["\"", b, "\""].join("");
@@ -1261,8 +1245,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var luajitlatex = "luajitlatex" + " " + ["\"", b, "\""].join("");
@@ -1290,8 +1273,7 @@ main();
 ```
 function main()
 {
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(Editor.ExpandParameter("$F"));
+  var c = Editor.ExpandParameter("$e");
   var b = Editor.ExpandParameter("$g");
   var cd = "cd /d " + ["\"", c, "\""].join("");
   var xelatex = "xelatex" + " " + ["\"", b, "\""].join("");
@@ -1322,13 +1304,11 @@ main();
 
 ## 入力補完 {#b1c33ed1}
 
-サクラエディタには単語ファイルによる TeX の入力補完機能があります．
+サクラエディタには TeX の入力補完機能があります．
 
-入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] または Ctrl+Space で実行できます．
-
-単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．
-
-- [サクラエディタの便利な機能](http://ryoofuu.fc2web.com/05/)
+入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] または Ctrl+Space で実行できます．<br>
+単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．<br>
+サクラエディタ Ver. 2.0.6.0 で強調キーワードで補完できるようになりました (→ [Sakura Editor / PatchUnicode / #340 強調キーワードで補完修正](http://sourceforge.net/p/sakura-editor/patchunicode/340/))<br>
 
 ***
 
@@ -1362,14 +1342,13 @@ main();
 
 サクラエディタには TeX のアウトライン解析機能があります．
 
-アウトライン解析は，メニューの \[検索(S)\] → \[アウトライン解析(L)...\] で実行できます．
-
-Version 2 では，アウトライン解析画面のドッキングが可能になりました．
-
-詳細は SakuraEditorWiki, PatchUnicode を参照してください．
+アウトライン解析は，メニューの \[検索(S)\] → \[アウトライン解析(L)...\] で実行できます．<br>
+Version 2 では，アウトライン解析画面のドッキングが可能になりました．<br>
+詳細は SakuraEditorWiki, PatchUnicode を参照してください．<br>
 
 - [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/DockingOutline)
 - [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](http://sourceforge.net/p/sakura-editor/patchunicode/116/)
+- サクラエディタ Ver. 2.0.6.0 で TeX のアウトライン解析の SJIS チェックの修正が行われました (→ [Sakura Editor / PatchUnicode / #257 Texアウトライン解析のSJISチェックの修正](http://sourceforge.net/p/sakura-editor/patchunicode/257/))<br>
 
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[スクリーン\] でアウトライン解析方法を指定できます．<br>
 
