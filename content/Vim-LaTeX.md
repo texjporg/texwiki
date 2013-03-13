@@ -322,8 +322,6 @@ let g:Tex_ViewRule_pdf = 'evince'
 
 [Evince](/Evince/) の forward and inverse search は [Vim-LaTeX#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
-pxdvi の forward and inverse search は [Vim-LaTeX#xdvi との連携 (forward and inverse search)](/Vim-LaTeX/#e36989d2) を参照してください．
-
 ## 使い方 {#v4639f7b}
 
 詳細は [VIM-LaTeX Manual](http://vim-latex.sourceforge.net/manual.shtml) を参照してください．
@@ -837,13 +835,13 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 ## 関連サイト {#fc8d75eb}
 
+- [TeXLive 2012＋Vim-LaTeXでてふてふする on Fedora 17](http://masanoriprog.blogspot.jp/2013/01/texlive-2012vim-latex-on-fedora-17.html)
 - [Vim-LaTeX (LaTeX-Suite) について(etc.)](http://d.hatena.ne.jp/mFumi/archive?word=*%5btex%5d)
     (mFumi さん)
 
 - [俺がVIM-LaTeXについて書くしかない(etc.)](http://d.hatena.ne.jp/okmount/archive?word=*%5bLatex%5d)
     (沼井 裕二 (okmount) さん)
-    - [ある Vim 使いの告白: Vim-Latex ユーザだった俺はなぜ Winshell 3.3x + KeyVi に浮気したか](http://d.hatena.ne.jp/okmount/20100927/)
-- [TeXLive 2012＋Vim-LaTeXでてふてふする on Fedora 17](http://masanoriprog.blogspot.jp/2013/01/texlive-2012vim-latex-on-fedora-17.html)
+
 - [Vim : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_225413.html)
 - [Vim-LaTeX 導入](http://0xffffff.hatenablog.com/entry/2013/01/26/211841)
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
@@ -853,21 +851,16 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 - [Vim-LaTeXの導入](http://gajumaru.ddo.jp/wordpress/?p=359)
 - [vim-latex 操作まとめ](http://blog.livedoor.jp/itym/archives/332261.html)
 - [Windows の VIM-Latex で補完](http://d.hatena.ne.jp/k3k1/20110227/1298775822)
-- [VIM-LaTeXでレポートを書いて思ったこと。](http://d.hatena.ne.jp/toguro2011/20110124/1295866955)
 - [Windows×Tex×USB×Vim](http://d.hatena.ne.jp/firepig/20110118)
 - [Sumatra PDF viewerがLaTeX用によさげ](http://d.hatena.ne.jp/Rion778/20091127)
 - [Vim-LaTeXを書き換え](http://hidehiroyokota.wordpress.com/2011/01/26/rewriting-vim-latex-gotoerrorlocation/)
 - [Macはじめました。: ターミナルからQuick Lookする方法](http://lastarrow.tumblr.com/post/34790484391/mac-quick-look)
 - [偽Vim使いがLaTeXを使い始めた on Mac](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Mac上のVim-LaTeXでいい感じにPDFへコンパイルする設定](http://anond.hatelabo.jp/20110823180114)
-- [Ubuntu 10.04 で Vim-LaTeX 【UTF-8断念】](http://yozorabiyori.blog116.fc2.com/blog-entry-231.html) &amp; [dvipdfmx でのエラー](http://yozorabiyori.blog116.fc2.com/blog-entry-232.html)
-    (ひでたそさん)
-
 - \[[vim-LaTeX\]記事一覧 - c⌒っ_д\_)っ←のや](http://d.hatena.ne.jp/noya/archive?word=%2A%5Bvim-LaTeX%5D)
 - [VIM-LaTeX 良いかも](http://alohakun.blog7.fc2.com/blog-entry-60.html)
     (若槻 俊宏 (あろは) さん)
 
-- [GVimのLatex用プラグイン「LaTeX-Suite」のインストール](http://d.hatena.ne.jp/hisomura/20111023/1319378823)
 - [VIM-LaTeX で jbibtex を使う．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_tex)/[VIM-LaTeX で警告を抑制する．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_warn)/[vimspell を使う．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_spell)
 - [Vim + VIM-LaTeX で TeX](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/index.php?TeX%2FWindows%BE%E5%A4%C7%A4%CETeX%CA%D4%BD%B8%B4%C4%B6%AD#ge0a5c12)
 - ["LaTeX Font Warning" vim-latex](http://ggutter.blogspot.com/2009/05/latex-font-warning-vim-latex.html)
