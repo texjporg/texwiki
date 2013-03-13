@@ -200,7 +200,7 @@ $ sudo cp -p pdfplatex /usr/local/bin
 
 ***
 
-[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
 
 ***
 
@@ -209,13 +209,15 @@ $ sudo cp -p pdfplatex /usr/local/bin
 <br>
 
 　　名前:　　　　<ins>pdfpLaTeX</ins><br>
-　　プログラム:　 <ins>simpdftex</ins><br>
-　　引数:　　　　<ins>platex</ins><br>
-　　　　　　　　　<ins>--mode</ins><br>
-　　　　　　　　　<ins>dvipdfmx</ins><br>
-　　　　　　　　　<ins>--extratexopts</ins><br>
+　　プログラム:　 <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
 　　　　　　　　　<ins>$synctexoption</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
 
 <br>
 
@@ -224,27 +226,7 @@ $ sudo cp -p pdfplatex /usr/local/bin
 
 ***
 
-ただし simpdftex を使用する方法だとエラーが発生してもそのまま dvipdfmx を実行してしまうようです．
-
-[TeX Live](</TeX Live/>) には latexmk も含まれているので latexmk を使用しても OK です．
-
 #### pdfpLaTeX2 {#qcbb3b20}
-
-<!-- tlptexlive をインストールしていない場合は convbkmk.rb を wget します． -->
-<!--  -->
-<!-- $ wget http://homepage3.nifty.com/ttk/comp/tex/convbkmk.rb -->
-<!--  -->
-<!-- chmod で実行権限を付加します． -->
-<!--  -->
-<!-- $ chmod +x convbkmk.rb -->
-<!--  -->
-<!-- /usr/local/bin にコピーします． -->
-<!--  -->
-<!-- $ sudo cp -p convbkmk.rb /usr/local/bin -->
-<!--  -->
-<!-- シンボリックリンクを作成します． -->
-<!--  -->
-<!-- $ sudo ln -s /usr/local/bin/convbkmk.rb /usr/local/bin/convbkmk -->
 
 pdfplatex2 (シェルスクリプト) を作成します．
 
@@ -368,7 +350,7 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 
 ***
 
-[simpdftex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/simpdftex/simpdftex?view=markup) を使って設定しても OK です．
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
 
 ***
 
@@ -377,13 +359,14 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 <br>
 
 　　名前:　　　　<ins>pdfupLaTeX</ins><br>
-　　プログラム:　 <ins>simpdftex</ins><br>
-　　引数:　　　　<ins>uplatex</ins><br>
-　　　　　　　　　<ins>--mode</ins><br>
-　　　　　　　　　<ins>dvipdfmx</ins><br>
-　　　　　　　　　<ins>--extratexopts</ins><br>
+　　プログラム:　 <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
 　　　　　　　　　<ins>$synctexoption</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
 
 <br>
 
@@ -391,8 +374,6 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 　　☑ 実行後、PDFを表示する<br>
 
 ***
-
-ただし simpdftex を使用する方法だとエラーが発生してもそのまま dvipdfmx を実行してしまうようです．
 
 #### pdfupLaTeX2 {#f387d242}
 
