@@ -7,7 +7,7 @@ pukiwiki: "PdfViewer"
 
 # PdfViewer
 
-## [PdfViewer](http://qt-apps.org/content/show.php?content=149637) {#a48b6ebd}
+## [PdfViewer](http://opendesktop.org/content/show.php/PdfViewer+%28app+%2B+library%29?content=149637) {#a48b6ebd}
 
 ### PdfViewer とは {#f1727432}
 
@@ -15,7 +15,7 @@ PdfViewer は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
-- [PdfViewer](http://qt-apps.org/content/show.php?content=149637)
+- [PdfViewer](http://opendesktop.org/content/show.php/PdfViewer+%28app+%2B+library%29?content=149637)
 
 ### 動作環境 {#o68b101e}
 
@@ -27,4 +27,10 @@ GPL
 
 ### リリース情報 {#h1e696d1}
 
-[glad's&nbsp;contents](http://qt-apps.org/usermanager/search.php?username=glad&action=contents) を参照．<br>
+[glad's&nbsp;contents](http://opendesktop.org/usermanager/search.php?username=glad&action=contents) を参照．<br>
+
+### ダウンロード/インストール {#nc36e2d6}
+
+#### Arch Linux {#q1ca3262}
+
+- [https://aur.archlinux.org/packages/pdfviewer/](https://aur.archlinux.org/packages/pdfviewer/)
