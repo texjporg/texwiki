@@ -11,6 +11,13 @@ pukiwiki: "Linux/Vine"
 
 ## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
 
+## Vine Linux とは {#c3c75f2e}
+
+Vine Linux はコンパクトで軽量な日本語 Linux ディストリビューションです．
+
+- [Vine Linux](http://vinelinux.org/)
+- [VineSeed – VineSeed](http://trac.vinelinux.org/wiki/VineSeed)
+
 ## TeX Live {#c1d98d5f}
 
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
