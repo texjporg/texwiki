@@ -9,9 +9,20 @@ pukiwiki: "AbTeXInstaller"
 
 ## [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) {#fa0ee5c0}
 
-「[<strong>TeX インストーラ 3</strong>](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)」は，[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+### TeX インストーラ 3 とは {#wd4d33ba}
+
+「TeX インストーラ 3」は TeX のインストーラーです。<br>
+[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
 環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できるかと思います。
+
+- [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
+
+### 動作環境 {#ge54c4b7}
+
+Windows 8, 7, Vista, XP
 
 ### リリース情報 {#f691af94}
 
@@ -216,7 +227,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ### 参考 {#r85dc0a5}
 
-- [windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953)
+- windows8 で　texインストーラ３ ([qa:57051](https://okumuralab.org/~okumura/texfaq/qa/57051.html), [QA: windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953), [qa:57052](https://okumuralab.org/~okumura/texfaq/qa/57052.html), [qa:57058](https://okumuralab.org/~okumura/texfaq/qa/57058.html))
 - [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [情報処理演習 A2,B2](http://www.ike-dyn.ritsumei.ac.jp/~okushima/RainbowMR/johoWeb/)
