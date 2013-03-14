@@ -82,7 +82,7 @@ UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を
 マクロを使うと LaTeX 環境を簡単に作ることができます．<br>
 マクロは，メニューの \[マクロ(M)\] から選択または F4 キーで実行できます．<br>
 
-- [マクロリファレンス](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
+- [マクロリファレンス - MeryWiki](http://www.haijin-boys.com/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9)
 - [Meryのマクロ実験室](http://merysmacro.seesaa.net/)
 - [まるエミュ for Mery](http://homepage3.nifty.com/kinzoku/editor/)
 
@@ -926,7 +926,12 @@ Ctrl+Space を入力すると辞書ファイルの候補が補完されます．
 
 <!-- 辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます． -->
 
-## アウトライン {#c4b6fe35}
+## プラグイン {#eb7452d5}
+
+- [プラグイン - MeryWiki](http://www.haijin-boys.com/wiki/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
+- [Meryのマクロ実験室](http://merysmacro.seesaa.net/)
+
+### アウトライン {#c4b6fe35}
 
 Mery にはアウトラインのプラグインが標準添付されています．
 
