@@ -21,14 +21,7 @@ Visual Windows for Unicode TeX, Visual Windows for xeTeX も開発中です．<b
 
 ### 動作環境 {#v13ad962}
 
-> <table>
-> <tbody>
-> <tr><td>Visual Windows for TeX</td><td>Windows 7, Vista, XP, 2000, 98</td></tr>
-> <tr><td>Visual Windows for Unicode TeX</td><td>Windows XP 以降</td></tr>
-> <tr><td>Visual Windows for xeTeX</td><td>Windows XP 以降</td></tr>
-> </tbody>
-> </table>
->
+Windows 7, Vista, XP
 
 ### リリース情報/ChangeLog {#l78e4b17}
 
