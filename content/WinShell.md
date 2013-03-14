@@ -64,15 +64,10 @@ WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応�
 ### インストーラー版 {#d795df7b}
 
 - [Download : WinShell](http://www.winshell.org/modules/download/)
-    <!-- -[[CTAN ミラー>CTAN:help/Catalogue/entries/winshell.html]] -->
-    <!-- 国内の WinShell ミラーサイト -->
 
 ### ポータブル版 {#w8b350cf}
 
 - [Download : WinShell](http://www.winshell.org/modules/download/)
-    <!-- -[[WinShell332Portable （zip）:http://www.htc.nagoya-u.ac.jp/~yamamoto/lecture/11/]] (WinShell 3.3.2.4) -->
-    <!-- -[[CTAN ミラー>CTAN:help/Catalogue/entries/winshell.html]] -->
-    <!-- 国内の WinShell ミラーサイト -->
 
 ### 日本語言語ファイル {#z273ed84}
 
@@ -160,14 +155,9 @@ UTF-8 を使用したい方は
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
-WinShell 3.1 (旧バージョン) では UTF-8 でも Runtime Error! が発生しないようです．
-
-- [WinShellでUTF-8](http://stanag4172.m13.coreserver.jp/blog/archives/154) WinShell 3.1 (旧バージョン)
-- [Index of /mounir/anits/latex/winshell](http://wwwesto.ump.ma/mounir/anits/latex/winshell/) WinShell 3.1 (旧バージョン)
-
 [Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
 
-どうしても WinShell の最新版で UTF-8 を使用したい場合は
+どうしても WinShell で UTF-8 を使用したい場合は
 
 - 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合)
 - ユーザ指定プログラム (エンコーディングが UTF-8 の場合)
