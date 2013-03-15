@@ -249,11 +249,11 @@ C:\Texmaker\texmaker.exe "%f" -line %l
 
 ### pdfpLaTeXA {#c1deb4e2}
 
-pdfplatex1A-nonstopmode.bat を作成します．
+pdfplatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatex1A-nonstopmode.bat
+- C:\w32tex\bin\pdfplatexA-nonstopmode.bat
 
 ***
 
@@ -273,7 +273,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-pdfplatex1A-nonstopmode.bat %
+pdfplatexA-nonstopmode.bat %
 ```
 
 を入力します．
@@ -313,11 +313,11 @@ pdfplatex2A-nonstopmode.bat %
 
 ### pdfupLaTeXA {#v915ab85}
 
-pdfuplatex1A-nonstopmode.bat を作成します．
+pdfuplatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex1A-nonstopmode.bat
+- C:\w32tex\bin\pdfuplatexA-nonstopmode.bat
 
 ***
 
@@ -337,7 +337,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-pdfuplatex1A-nonstopmode.bat %
+pdfuplatexA-nonstopmode.bat %
 ```
 
 を入力します．
