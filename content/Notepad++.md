@@ -147,6 +147,20 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 \[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．
 
+## SumatraPDF との連携 {#ted60cbe}
+
+### forward search {#k51d2c1d}
+
+[NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)<br>
+[MTeX for Notepad++#SumatraPDF との連携](</MTeX for Notepad++/#q214c924>)<br>
+を参照してください．
+
+### inverse search {#u3c0d179}
+
+```
+C:\npp\unicode\notepad++.exe "%f" -n%l
+```
+
 ## Linux で Notepad++ {#hd58d1c7}
 
 - WikiPedia.ja:Notepad++
