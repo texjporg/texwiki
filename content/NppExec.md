@@ -612,9 +612,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 
 ### inverse search {#fe81f375}
 
-```
-C:\npp\unicode\notepad++.exe "%f" -n%l
-```
+[Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
 
 ## Adobe Reader との連携 {#wbbe918a}
 
