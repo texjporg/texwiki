@@ -321,6 +321,11 @@ latexmk -C
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
+## Lua スクリプト {#uddc392d}
+
+- [ptex2pdf](http://gitorious.org/tlptexlive/ptex2pdf)
+    - [There and back again &middot; ptex2pdf](http://blog.preining.info/software-projects/ptex2pdf/)
+
 ## Perl スクリプト {#ce040874}
 
 - [platex して dvipdfmx するスクリプト](http://fjyuu.info/script/platexpdf/)
