@@ -215,9 +215,10 @@ C:.
 
 &#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
-latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
+以下の設定では W32TeX, TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 pdfplatex.bat は W32TeX に含まれています．<br>
 TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](</TeXworks/設定/Windows/#nb7beec9>) を使用してください．<br>
+W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
 
@@ -233,17 +234,10 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
-;(setq elisp::tex-command "latexmk")
-;(setq elisp::tex-command "latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-;(setq elisp::tex-command "latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
-;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
-;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/pdflatex -synctex=1/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf")
-;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/lualatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
-;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/luajitlatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
-;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/xelatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex")
+(setq elisp::tex-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1\"")
+;(setq elisp::tex-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
 ;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
-(setq elisp::tex-command "pdfplatex.bat")
+;(setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "pdfplatex1.bat")
 ;(setq elisp::tex-command "pdfplatex2.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
@@ -254,14 +248,25 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ;(setq elisp::tex-command "lualatex -synctex=1")
 ;(setq elisp::tex-command "luajitlatex -synctex=1")
 ;(setq elisp::tex-command "xelatex -synctex=1")
+;(setq elisp::tex-command "latexmk")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq elisp::tex-command "latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/pdflatex -synctex=1/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/lualatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/luajitlatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf")
+;(setq elisp::tex-command "latexmk -e \"$pdflatex=q/xelatex -synctex=1/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex")
 (setq elisp::bibtex-command (cond ((string-match "uplatex" elisp::tex-command) "upbibtex")
                                   ((string-match "platex" elisp::tex-command) "pbibtex -kanji=utf8")
                                   ((string-match "lualatex\\|luajitlatex\\|xelatex" elisp::tex-command) "bibtexu")
-                                  (t "bibtex")))
+                                  ((string-match "pdflatex\\|latex" elisp::tex-command) "bibtex")
+                                  (t "pbibtex -kanji=utf8")))
 (setq elisp::makeindex-command (cond ((string-match "uplatex" elisp::tex-command) "mendex -U")
                                      ((string-match "platex" elisp::tex-command) "mendex -U")
                                      ((string-match "lualatex\\|luajitlatex\\|xelatex" elisp::tex-command) "texindy")
-                                     (t "makeindex")))
+                                     ((string-match "pdflatex\\|latex" elisp::tex-command) "makeindex")
+                                     (t "mendex -U")))
 (setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
 (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
@@ -311,67 +316,6 @@ TeX Live を使用する場合は pdfplatex.bat が含まれていないので T
 ```
 
 ***
-
-上記の設定では
-
-```
-;; ロードパスに KaTeX のあるディレクトリを追加
-;; elispパッケージを有効にする
-;; 拡張子と関数の関連付け
-;; （拡張子 “.ins”，“.ini” は
-;;   Windows 上で TeX 関連以外のプログラムと関連付けられており，
-;;   拡張子 “.def”，“.cfg” は
-;;   TeX 関連以外のプログラムでもよく使われているので，
-;;   この4つの拡張子は含めていない。）
-;; KaTeX のオートロード
-;; YaTeX のデフォルトが (setq YaTeX-inhibit-prefix-letter t) に変更されたので
-;; KaTeX も (setq elisp::KaTeX-inhibit-prefix-letter t) に設定
-;; (setq YaTeX-kanji-code nil) に合わせて
-;; (setq elisp::KaTeX-kanji-code nil) に設定
-;; AMS-LaTeX を使う
-;; jsarticle をデフォルトに
-;; タイプセットを latexmk で
-;; タイプセットを latexmk (pdfplatex) で
-;; タイプセットを latexmk (pdfplatex2) で
-;; タイプセットを latexmk (pdfuplatex) で
-;; タイプセットを latexmk (pdfuplatex2) で
-;; タイプセットを latexmk (pdflatex) で
-;; タイプセットを latexmk (lualatex) で
-;; タイプセットを latexmk (luajitlatex) で
-;; タイプセットを latexmk (xelatex) で
-;; タイプセットを pLaTeX で
-;; タイプセットを pdfplatex.bat で
-;; タイプセットを pdfplatex1.bat で
-;; タイプセットを pdfplatex2.bat で
-;; タイプセットを upLaTeX で
-;; タイプセットを pdfuplatex.bat で
-;; タイプセットを pdfuplatex1.bat で
-;; タイプセットを pdfuplatex2.bat で
-;; タイプセットを pdfLaTeX で
-;; タイプセットを LuaLaTeX で
-;; タイプセットを LuaJITLaTeX で
-;; タイプセットを XeLaTeX で
-;; uplatex の場合は upbibtex を使う
-;; platex の場合は pbibtex を使う
-;; lualatex, luajitlatex, xelatex の場合は bibtexu を使う
-;; uplatex, platex, lualatex, luajitlatex, xelatex 以外の場合は bibtex を使う
-;; uplatex の場合は mendex を使う
-;; platex の場合は mendex を使う
-;; lualatex, luajitlatex, xelatex の場合は texindy を使う
-;; uplatex, platex, lualatex, luajitlatex, xelatex 以外の場合は makeindex を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, luajitlatex, xelatex の場合は pdfopen を使う
-;; pdf(u)platex, pdf(u)platex1, pdf(u)platex2, pdflatex, lualatex, luajitlatex, xelatex 以外の場合は Adobe Reader が起動していれば PDF ファイルを閉じて dvipdfmx + pdfopen を使う
-;; C:\w32tex\dviout\dviout をプレビューに使う
-;; ツールバー表示
-;; M-RET を有効に
-;; ショートカット
-;; TeXworks で preview
-;; SumatraPDF で forward search
-;; 自動改行なし
-```
-
-といった設定がされています。<br>
-「自動改行なし」や jsarticle 関連，ツールバーの表示あたりはお好みです。<br>
 
 ## 使い方 {#ycbb077d}
 
@@ -488,19 +432,13 @@ C-c p または M-x texworks-preview （Alt を押しながら x を押し，“
 &#x7e;/.xyzzy などの初期設定ファイルに，
 
 ```
-(setq elisp::tex-command "pdfplatex.bat")
+(setq elisp::tex-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1\"")
 ```
 
 または
 
 ```
-(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
-```
-
-または
-
-```
-(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
+(setq elisp::tex-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
 ```
 
 と書いておきます。
