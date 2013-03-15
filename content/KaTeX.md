@@ -217,7 +217,7 @@ C:.
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
 以下の設定では W32TeX, TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 pdfplatex.bat は W32TeX に含まれています．<br>
-TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex1.bat](</TeXworks/設定/Windows/#nb7beec9>) を使用してください．<br>
+TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex.bat](</TeXworks/設定/Windows/#nb7beec9>) を使用してください．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
@@ -238,11 +238,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ;(setq elisp::tex-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
 ;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfplatex.bat")
-;(setq elisp::tex-command "pdfplatex1.bat")
 ;(setq elisp::tex-command "pdfplatex2.bat")
 ;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfuplatex.bat")
-;(setq elisp::tex-command "pdfuplatex1.bat")
 ;(setq elisp::tex-command "pdfuplatex2.bat")
 ;(setq elisp::tex-command "pdflatex -synctex=1")
 ;(setq elisp::tex-command "lualatex -synctex=1")
