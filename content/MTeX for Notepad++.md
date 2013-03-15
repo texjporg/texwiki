@@ -86,6 +86,4 @@ PDFを表示で TeXworks を使用する場合は [TeXworks#組み込みの PDF 
 
 ### inverse search {#l6db5687}
 
-```
-C:\npp\unicode\notepad++.exe "%f" -n%l
-```
+[Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
