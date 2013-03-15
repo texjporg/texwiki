@@ -149,6 +149,142 @@ Latexmk: -norc bad option
 と表示されタイプセットできません．<br>
 [Ubuntu 12.10 の latexmk](http://packages.ubuntu.com/ja/latexmk) は Latexmk Version 4.24 ですが -norc オプションを外せば使用出来るようです． → [Ubuntu 12.10:geditの外部ツールにLatexmk5を追加](http://blog.livedoor.jp/ti5942/archives/7722539.html)<br>
 
+#### pdfpLaTeX {#pcd18d0c}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
+dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pdfpLaTeX2 {#g8ed96d6}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
+dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
+convbkmk -g > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
+ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pdfupLaTeX {#x4f1ba2c}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
+dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pdfupLaTeX2 {#k85e2282}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
+dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
+convbkmk -u > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
+ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pdfLaTeX {#f6f3d125}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### LuaLaTeX {#dacfdc34}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### LuaJITLaTeX {#p2dffd1c}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+luajitlatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### XeLaTeX {#df8a1522}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+xelatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
 #### Latexmk {#a2b5d8d4}
 
 ***
@@ -286,142 +422,6 @@ latexmk -e '$pdflatex=q/luajitlatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$ma
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 latexmk -e '$pdflatex=q/xelatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfpLaTeX {#pcd18d0c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfpLaTeX2 {#g8ed96d6}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
-convbkmk -g > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
-ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfupLaTeX {#x4f1ba2c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfupLaTeX2 {#k85e2282}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
-convbkmk -u > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
-ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfLaTeX {#f6f3d125}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### LuaLaTeX {#dacfdc34}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### LuaJITLaTeX {#p2dffd1c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-luajitlatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### XeLaTeX {#df8a1522}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-xelatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
