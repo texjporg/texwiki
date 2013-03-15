@@ -438,6 +438,114 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
+#### Latexmk5 {#e6b3ad69}
+
+タイプセットの方法を設定します．
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk5</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/pdflatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtex/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### Latexmk6 {#l2112a03}
+
+タイプセットの方法を設定します．
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk6</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/lualatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### Latexmk7 {#d293759f}
+
+タイプセットの方法を設定します．
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk7</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/luajitlatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### Latexmk8 {#t2f64324}
+
+タイプセットの方法を設定します．
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk8</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/xelatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-xelatex</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### pBibTeX {#h3cb3469}
 
 タイプセットの方法を設定します．
@@ -567,3 +675,7 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 - [LaTeX - おもこん - Yahoo!ブログ](http://blogs.yahoo.co.jp/jeaou/folder/1202527.html)
 - [VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)
     - おもこんには、VineLinuxでgnuplotとTexworksを連携させる話題があり、Texworksのコンフィギュレーションファイルがその中で解説されています。[VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)から、「VineLinuxのgnuplot…」「pregnuplotを…」を見てください。
+
+## 関連リンク {#k8a54b4f}
+
+- [There and back again &middot; ptex2pdf](http://blog.preining.info/software-projects/ptex2pdf/)
