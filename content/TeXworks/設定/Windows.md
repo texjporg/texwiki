@@ -18,7 +18,7 @@ pukiwiki: "TeXworks/設定/Windows"
 #### 設定前 {#n2341fff}
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-latexmk, pdfplatex1.bat, pdfplatex2.bat, pdfuplatex1.bat, pdfuplatex2.bat, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
+pdfplatex.bat, pdfplatex2.bat, pdfuplatex.bat, pdfuplatex2.bat, latexmk1, latexmk2, latexmk3, latexmk4, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -59,6 +59,318 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 <br>
 
 　　　コンソール出力を表示しない 　　<span style="color:Black;background-color:#EEEEEE;">\[ 自動で隠す　　　　　　　　　　　　　　▼\]</span><br>
+
+***
+
+#### pdfpLaTeX {#nb7beec9}
+
+■ W32TeX の場合
+
+W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
+
+***
+
+- C:\w32tex\bin\pdfplatex.bat
+
+***
+
+```
+@echo off
+platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc "%1" && dvipdfmx "%~n1"
+```
+
+***
+
+■ TeX Live の場合
+
+pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
+
+***
+
+- C:\texlive\2012\bin\win32\pdfplatex.bat
+
+***
+
+```
+@echo off
+platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvipdfmx -f ptex-ipaex.map "%~n1"
+```
+
+***
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　プログラム: <ins>pdfplatex.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　プログラム: <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### pdfpLaTeX2 {#y6e650d6}
+
+pdfplatex2.bat を作成して pdfplatex2.bat で PDF ファイルを作成します．
+
+convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
+Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
+
+***
+
+- C:\w32tex\bin\pdfplatex2.bat
+- C:\texlive\2012\bin\win32\pdfplatex2.bat
+
+***
+
+```
+@echo off
+platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -g > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps"
+```
+
+***
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX2</ins><br>
+　　プログラム: <ins>pdfplatex2.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### pdfupLaTeX {#r7f9a2a4}
+
+pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
+
+■ W32TeX の場合
+
+***
+
+- C:\w32tex\bin\pdfuplatex.bat
+
+***
+
+```
+@echo off
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvipdfmx "%~n1"
+```
+
+***
+
+■ TeX Live の場合
+
+***
+
+- C:\texlive\2012\bin\win32\pdfuplatex.bat
+
+***
+
+```
+@echo off
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvipdfmx -f ptex-ipaex.map "%~n1"
+```
+
+***
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　プログラム: <ins>pdfuplatex.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　プログラム: <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+#### pdfupLaTeX2 {#cf95a9e9}
+
+pdfuplatex2.bat を作成して pdfuplatex2.bat で PDF ファイルを作成します．
+
+convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
+Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
+
+***
+
+- C:\w32tex\bin\pdfuplatex2.bat
+- C:\texlive\2012\bin\win32\pdfuplatex2.bat
+
+***
+
+```
+@echo off
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -u > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps"
+```
+
+***
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX2</ins><br>
+　　プログラム: <ins>pdfuplatex2.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
 
 ***
 
@@ -334,266 +646,6 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### pdfpLaTeX {#nb7beec9}
-
-pdfplatex1.bat を作成して pdfplatex1.bat で PDF ファイルを作成します．
-
-■ W32TeX の場合
-
-***
-
-- C:\w32tex\bin\pdfplatex1.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
-dvipdfmx "%~n1"
-```
-
-***
-
-■ TeX Live の場合
-
-***
-
-- C:\texlive\2012\bin\win32\pdfplatex1.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
-dvipdfmx -f ptex-ipaex.map "%~n1"
-```
-
-***
-
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
-
-名前とプログラムを入力します．
-
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
-
-実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfpLaTeX</ins><br>
-　　プログラム: <ins>pdfplatex1.bat</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-#### pdfpLaTeX2 {#y6e650d6}
-
-pdfplatex2.bat を作成して pdfplatex2.bat で PDF ファイルを作成します．
-
-convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
-Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
-
-***
-
-- C:\w32tex\bin\pdfplatex2.bat
-- C:\texlive\2012\bin\win32\pdfplatex2.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -g > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps"
-```
-
-***
-
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
-
-名前とプログラムを入力します．
-
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
-
-実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfpLaTeX2</ins><br>
-　　プログラム: <ins>pdfplatex2.bat</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-#### pdfupLaTeX {#r7f9a2a4}
-
-pdfuplatex1.bat を作成して pdfuplatex1.bat で PDF ファイルを作成します．
-
-■ W32TeX の場合
-
-***
-
-- C:\w32tex\bin\pdfuplatex1.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1"
-```
-
-***
-
-■ TeX Live の場合
-
-***
-
-- C:\texlive\2012\bin\win32\pdfuplatex1.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx -f ptex-ipaex.map "%~n1"
-```
-
-***
-
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
-
-名前とプログラムを入力します．
-
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
-
-実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfupLaTeX</ins><br>
-　　プログラム: <ins>pdfuplatex1.bat</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-#### pdfupLaTeX2 {#cf95a9e9}
-
-pdfuplatex2.bat を作成して pdfuplatex2.bat で PDF ファイルを作成します．
-
-convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
-Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
-
-***
-
-- C:\w32tex\bin\pdfuplatex2.bat
-- C:\texlive\2012\bin\win32\pdfuplatex2.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps"
-```
-
-***
-
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
-
-名前とプログラムを入力します．
-
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
-
-実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfupLaTeX2</ins><br>
-　　プログラム: <ins>pdfuplatex2.bat</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
 #### pBibTeX {#a883f235}
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
@@ -727,12 +779,8 @@ ps2pdf.bat "%~n1.ps"
 <br>
 
 　　　　タイプセットの方法<br>
-　　　　 Latexmk1　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
-　　　　 Latexmk2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
-　　　　 Latexmk3<br>
-　　　　 Latexmk4<br>
-　　　　<span style="color:White;background-color:#1188FF;"> pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　　 pdfpLaTeX2<br>
+　　　　<span style="color:White;background-color:#1188FF;"> pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　 pdfpLaTeX2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
 　　　　 pdfupLaTeX<br>
 　　　　 pdfupLaTeX2<br>
 　　　　 pdfTeX<br>
@@ -744,6 +792,10 @@ ps2pdf.bat "%~n1.ps"
 　　　　 ConTeXt (LuaTeX)<br>
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
+　　　　 Latexmk1<br>
+　　　　 Latexmk2<br>
+　　　　 Latexmk3<br>
+　　　　 Latexmk4<br>
 　　　　 pBibTeX<br>
 　　　　 upBibTeX<br>
 　　　　 BibTeX<br>
@@ -762,11 +814,11 @@ ps2pdf.bat "%~n1.ps"
 
 ### pdfpLaTeXS {#pd4ad539}
 
-pdfplatex1S.bat を作成します．
+pdfplatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatex1S.bat
+- C:\w32tex\bin\pdfplatexS.bat
 
 ***
 
@@ -798,7 +850,7 @@ endlocal
 <br>
 
 　　名前:　　　　<ins>pdfpLaTeXS</ins><br>
-　　プログラム: <ins>pdfplatex1S.bat</ins><br>
+　　プログラム: <ins>pdfplatexS.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
@@ -880,11 +932,11 @@ endlocal
 
 ### pdfupLaTeXS {#u9e90942}
 
-pdfuplatex1S.bat を作成します．
+pdfuplatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex1S.bat
+- C:\w32tex\bin\pdfuplatexS.bat
 
 ***
 
@@ -916,7 +968,7 @@ endlocal
 <br>
 
 　　名前:　　　　<ins>pdfupLaTeXS</ins><br>
-　　プログラム: <ins>pdfuplatex1S.bat</ins><br>
+　　プログラム: <ins>pdfuplatexS.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
@@ -1240,11 +1292,11 @@ C:\w32tex\share\texworks\TeXworks.exe --position=%l "%f"
 
 ### pdfpLaTeXA {#e7697990}
 
-pdfplatex1A.bat を作成します．
+pdfplatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatex1A.bat
+- C:\w32tex\bin\pdfplatexA.bat
 
 ***
 
@@ -1270,7 +1322,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 <br>
 
 　　名前:　　　　<ins>pdfpLaTeXA</ins><br>
-　　プログラム: <ins>pdfplatex1A.bat</ins><br>
+　　プログラム: <ins>pdfplatexA.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
@@ -1346,11 +1398,11 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 ### pdfupLaTeXA {#p7c5112a}
 
-pdfuplatex1A.bat を作成します．
+pdfuplatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex1A.bat
+- C:\w32tex\bin\pdfuplatexA.bat
 
 ***
 
@@ -1376,7 +1428,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 <br>
 
 　　名前:　　　　<ins>pdfupLaTeXA</ins><br>
-　　プログラム: <ins>pdfuplatex1A.bat</ins><br>
+　　プログラム: <ins>pdfuplatexA.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
