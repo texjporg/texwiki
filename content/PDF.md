@@ -9,7 +9,8 @@ pukiwiki: "PDF"
 
 ## PDF {#kf03468a}
 
-PDF は [PostScript](/PostScript/) をベースに作成されたファイルフォーマットです．
+PDF は [PostScript](/PostScript/) をベースに作成されたファイルフォーマットです．<br>
+[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．<br>
 
 - [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
