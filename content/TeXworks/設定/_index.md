@@ -16,6 +16,48 @@ pukiwiki: "TeXworks/設定"
 
 ```
 
+## エンコーディングの設定 {#sc2efa04}
+
+\[編集\]-\[設定\] のエディタタブのエンコーディングのリストから使用するエンコーディングを指定できます．<br>
+デフォルトでは UTF-8 に設定されています．<br>
+Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
+エディタの編集画面の右下に表示されているエンコーディングをクリックしてエンコーディングを変更することもできます．<br>
+Shift_JIS/ISO-2022-JP/EUC-JP が表示されない場合は TeXworks 0.4.4 以降をインストールしてください．<br>
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>TeXworksの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]</ins></span><strong>\[　エディタ　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　プレビュー　\]\[　タイプセット　\]\[　スクリプト　\]</ins></span><br>
+　　　　エディタのデフォルト<br>
+　　　　<ins> MS UI Gothic　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> <ins>12 pt　\[◆\]</ins><br>
+　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　<ins>32 px　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+　　　　☐ 行番号表示　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 行の折り返し<br>
+　　　　構文の色付け: <span style="color:Black;background-color:#EEEEEE;">\[ LaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　　　自動インデント: <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
+　　　　引用符の入力支援 <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　　　スペルチェッカの言語: <span style="color:Black;background-color:#EEEEEE;">\[ English - UnitedStates (en_US)　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　　　エンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　　　　エディタ全体のオプション<br>
+　　　　☐ 現在カーソルのある行をハイライトする<br>
+　　　　☑ 自動補完を有効にする<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　注意:これはデフォルトの設定です。設定を変更しても、すでに開いているウィンドウには影響しません。既存のウィンドウの設定を変更す<br>
+　　　るには、"フォーマット" メニューから設定をおこなってください<br>
+
+***
+
 ## タイプセットの設定 {#q50d2378}
 
 {{< children >}}
