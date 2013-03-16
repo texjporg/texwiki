@@ -227,6 +227,11 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ### 参考 {#r85dc0a5}
 
+- [あべのりページ](http://www.math.sci.hokudai.ac.jp/~abenori/) ([阿部紀行さん](http://d.hatena.ne.jp/abenori/) ([twitter](https://twitter.com/abenori)))
+    「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
+    <!-- ↑一次配布元などではないので、このあたりが妥当 -->
+    <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
+
 - windows8 で　texインストーラ３ ([qa:57051](https://okumuralab.org/~okumura/texfaq/qa/57051.html), [QA: windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953), [qa:57052](https://okumuralab.org/~okumura/texfaq/qa/57052.html), [qa:57058](https://okumuralab.org/~okumura/texfaq/qa/57058.html))
 - [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
