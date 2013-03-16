@@ -64,7 +64,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" -f ptex-ipaex.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" %.dvi</ins><br>
 
 　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
 
