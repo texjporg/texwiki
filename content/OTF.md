@@ -16,7 +16,7 @@ pukiwiki: "OTF"
 ### OTF パッケージとは {#h230c839}
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
-[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（開発版を利用した場合）の
+[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版・開発版を利用した場合）の
 和文 OpenType フォントを使うためのパッケージです。
 
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
@@ -55,21 +55,32 @@ pukiwiki: "OTF"
 
 #### W32TeX {#z4ee6291}
 
-角藤さんの
-[W32TeX](/W32TeX/) に
-含まれている[otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします （開発版なら [otfdevel.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfdevel.tar.xz) ，安定版なら [otf.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otf.tar.xz)
-をダウンロードします）。<br>
+[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
 これを例えば C:\temp\ に入れます。<br>
 Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
 
 ```
 >cd \w32tex
->tar xvf C:/temp/otfbeta.tar.xz
+>tar Jxvf C:/temp/otfbeta.tar.xz
 ```
 
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
-とりあえずこれで大丈夫です。
+W32TeX の tar は古いバージョンのものなので J オプションを省略して展開することができないようです．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
+
+```
+>tar xvf C:/temp/otfbeta.tar.xz
+tar: Hmm, this doesn't look like a tar archive
+tar: Skipping to next file header
+tar: Only read 9800 bytes from archive otfbeta.tar.xz
+```
+
+```
+>tar --version
+GNU tar 1.11.8 + 2.0(WIN32)
+```
+
+[Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
 
 #### TeX Live {#da8ed89a}
 
