@@ -32,7 +32,7 @@ pdfplatex (シェルスクリプト) を作成します．
 ```
 #!/bin/sh
 platex -synctex=1 "$1" && \
-dvipdfmx -f ptex-ipaex.map "`basename "$1" .tex`"
+dvipdfmx "`basename "$1" .tex`"
 ```
 
 ***
@@ -182,7 +182,7 @@ pdfuplatex (シェルスクリプト) を作成します．
 ```
 #!/bin/sh
 uplatex -synctex=1 "$1" && \
-dvipdfmx -f ptex-ipaex.map "`basename "$1" .tex`"
+dvipdfmx "`basename "$1" .tex`"
 ```
 
 ***
@@ -337,7 +337,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -397,7 +397,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
