@@ -83,6 +83,7 @@ CD-ROM で附いています。
 
 ### その他 {#af57d83a}
 
+- [sudoku.ps](https://gist.github.com/naohaq/5161653)
 - [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html)（奥村さん@滋賀県立大）
 - Adobe Systems 著，桑沢清志 訳
     『[PostScript リファレンスマニュアル 第3版](http://ascii.asciimw.jp/books/books/detail/4-7561-3822-5.shtml)』
