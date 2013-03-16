@@ -250,7 +250,7 @@ dvipdfmx "%~n1"
 ```
 @echo off
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx -f ptex-ipaex.map "%~n1"
+dvipdfmx -f uptex-ipaex.map "%~n1"
 ```
 
 ***
@@ -566,7 +566,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
