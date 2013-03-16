@@ -226,7 +226,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript に P
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-f ptex-ipaex.map "&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
 <br>
