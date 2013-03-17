@@ -18,7 +18,7 @@ pukiwiki: "TeXworks/設定/Windows"
 #### 設定前 {#n2341fff}
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-pdfplatex.bat, pdfplatex2.bat, pdfuplatex.bat, pdfuplatex2.bat, latexmk1, latexmk2, latexmk3, latexmk4, latexmk5, latexmk6, latexmk7, latexmk8, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
+pdfplatex.bat, pdfplatex2.bat, pdfuplatex.bat, pdfuplatex2.bat, latexmk-pdfpLaTeX, latexmk-pdfpLaTeX2, latexmk-pdfupLaTeX, latexmk-pdfupLaTeX2, latexmk-pdfLaTeX, latexmk-LuaLaTeX, latexmk-LuaJITLaTeX, latexmk-XeLaTeX, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -374,7 +374,7 @@ ps2pdf.bat "%~n1.ps"
 
 ***
 
-#### Latexmk1 {#ub925a5a}
+#### Latexmk-pdfpLaTeX {#ub925a5a}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -394,7 +394,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk1</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
@@ -421,7 +421,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk1</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
@@ -440,7 +440,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk2 {#xd83ee9b}
+#### Latexmk-pdfpLaTeX2 {#xd83ee9b}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -460,7 +460,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk2</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
@@ -489,7 +489,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk2</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
@@ -510,7 +510,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk3 {#t6b9c629}
+#### Latexmk-pdfupLaTeX {#t6b9c629}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -530,7 +530,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk3</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
@@ -557,7 +557,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk3</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
@@ -576,7 +576,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk4 {#h1fdd4cd}
+#### Latexmk-pdfupLaTeX2 {#h1fdd4cd}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -596,7 +596,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk4</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
@@ -625,7 +625,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk4</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
@@ -646,7 +646,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk5 {#g9f8b777}
+#### Latexmk-pdfLaTeX {#g9f8b777}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -664,7 +664,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk5</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/pdflatex -synctex=1/</ins><br>
@@ -681,7 +681,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk6 {#o5201be5}
+#### Latexmk-LuaLaTeX {#o5201be5}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -699,7 +699,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk6</ins><br>
+　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/lualatex -synctex=1/</ins><br>
@@ -716,7 +716,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk7 {#j65f502c}
+#### Latexmk-LuaJITLaTeX {#j65f502c}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -734,7 +734,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk7</ins><br>
+　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/luajitlatex -synctex=1/</ins><br>
@@ -751,7 +751,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk8 {#j68480c3}
+#### Latexmk-XeLaTeX {#j68480c3}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -769,7 +769,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk8</ins><br>
+　　名前:　　　　<ins>Latexmk-XeLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/xelatex -synctex=1/</ins><br>
@@ -932,14 +932,14 @@ Latexmk で PDF ファイルを作成します．
 　　　　 ConTeXt (LuaTeX)<br>
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
-　　　　 Latexmk1<br>
-　　　　 Latexmk2<br>
-　　　　 Latexmk3<br>
-　　　　 Latexmk4<br>
-　　　　 Latexmk5<br>
-　　　　 Latexmk6<br>
-　　　　 Latexmk7<br>
-　　　　 Latexmk8<br>
+　　　　 Latexmk-pdfpLaTeX<br>
+　　　　 Latexmk-pdfpLaTeX2<br>
+　　　　 Latexmk-pdfupLaTeX<br>
+　　　　 Latexmk-pdfupLaTeX2<br>
+　　　　 Latexmk-pdfLaTeX<br>
+　　　　 Latexmk-pdfLuaLaTeX<br>
+　　　　 Latexmk-pdfLuaJITLaTeX<br>
+　　　　 Latexmk-XeLaTeX<br>
 　　　　 pBibTeX<br>
 　　　　 upBibTeX<br>
 　　　　 BibTeX<br>
