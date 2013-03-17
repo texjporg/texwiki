@@ -301,7 +301,7 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk1 {#id6f3d3f}
+#### Latexmk-pdfpLaTeX {#id6f3d3f}
 
 ***
 
@@ -317,7 +317,7 @@ latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk2 {#p2b753e6}
+#### Latexmk-pdfpLaTeX2 {#p2b753e6}
 
 ***
 
@@ -333,7 +333,7 @@ latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk3 {#t17eb179}
+#### Latexmk-pdfupLaTeX {#t17eb179}
 
 ***
 
@@ -349,7 +349,7 @@ latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeinde
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk4 {#p3caf947}
+#### Latexmk-pdfupLaTeX2 {#p3caf947}
 
 ***
 
@@ -365,7 +365,7 @@ latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeinde
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk5 {#q7311d5c}
+#### Latexmk-pdfLaTeX {#q7311d5c}
 
 ***
 
@@ -381,7 +381,7 @@ latexmk -e '$pdflatex=q/pdflatex -synctex=1/' -e '$bibtex=q/bibtex/' -e '$makein
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk6 {#gd49f6fd}
+#### Latexmk-LuaLaTeX {#gd49f6fd}
 
 ***
 
@@ -397,7 +397,7 @@ latexmk -e '$pdflatex=q/lualatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makei
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk7 {#of7ecadb}
+#### Latexmk-LuaJITLaTeX {#of7ecadb}
 
 ***
 
@@ -413,7 +413,7 @@ latexmk -e '$pdflatex=q/luajitlatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$ma
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk8 {#s2321b30}
+#### Latexmk-XeLaTeX {#s2321b30}
 
 ***
 
