@@ -15,7 +15,7 @@ pukiwiki: "LuaTeX-ja"
 
 ## LuaTeX-ja とは {#ha0b38ce}
 
-LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/) で日本語文書の組版を行うためのパッケージです．<br>
+LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語文書の組版を行うためのパッケージです．<br>
 LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
 
 - [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
@@ -35,16 +35,20 @@ LuaTeX-ja は
 
 で利用可能です．
 
-### ダウンロード {#xa9091b6}
+### リリース情報 {#g1f2f88f}
 
-- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz)
-- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
+- [git.sourceforge.jp Git - luatex-ja/luatexja.git/tags](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=tags)
 
 ### ChangeLog {#ka55de08}
 
 - [git.sourceforge.jp Git - luatex-ja/luatexja.git/summary](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+
+### ダウンロード {#xa9091b6}
+
+- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz)
+- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
 
 ### インストール {#p4234337}
 
