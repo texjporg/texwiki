@@ -318,7 +318,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk1 {#mef164a7}
+#### Latexmk-pdfpLaTeX {#mef164a7}
 
 タイプセットの方法を設定します．
 
@@ -328,7 +328,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk1</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1/</ins><br>
@@ -347,7 +347,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk2 {#zf4308f5}
+#### Latexmk-pdfpLaTeX2 {#zf4308f5}
 
 タイプセットの方法を設定します．
 
@@ -357,7 +357,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk2</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/platex -synctex=1/</ins><br>
@@ -378,7 +378,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk3 {#xb8626bf}
+#### Latexmk-pdfupLaTeX {#xb8626bf}
 
 タイプセットの方法を設定します．
 
@@ -388,7 +388,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk3</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1/</ins><br>
@@ -407,7 +407,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk4 {#bfa76c53}
+#### Latexmk-pdfupLaTeX2 {#bfa76c53}
 
 タイプセットの方法を設定します．
 
@@ -417,7 +417,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk4</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex -synctex=1/</ins><br>
@@ -438,7 +438,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk5 {#e6b3ad69}
+#### Latexmk-pdfLaTeX {#e6b3ad69}
 
 タイプセットの方法を設定します．
 
@@ -448,7 +448,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk5</ins><br>
+　　名前:　　　　<ins>Latexmk-pdfLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/pdflatex -synctex=1/</ins><br>
@@ -465,7 +465,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk6 {#l2112a03}
+#### Latexmk-LuaLaTeX {#l2112a03}
 
 タイプセットの方法を設定します．
 
@@ -475,7 +475,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk6</ins><br>
+　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/lualatex -synctex=1/</ins><br>
@@ -492,7 +492,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk7 {#d293759f}
+#### Latexmk-LuaJITLaTeX {#d293759f}
 
 タイプセットの方法を設定します．
 
@@ -502,7 +502,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk7</ins><br>
+　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/luajitlatex -synctex=1/</ins><br>
@@ -519,7 +519,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk8 {#t2f64324}
+#### Latexmk-XeLaTeX {#t2f64324}
 
 タイプセットの方法を設定します．
 
@@ -529,7 +529,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk8</ins><br>
+　　名前:　　　　<ins>Latexmk-XeLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/xelatex -synctex=1/</ins><br>
