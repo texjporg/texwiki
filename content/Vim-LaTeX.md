@@ -86,8 +86,6 @@ Vim を起動し
 - plugin/
 - latextags
 - ltags
-    <!-- -Makefile -->
-    <!-- -Makefile.in -->
 
 を配置します．
 
@@ -167,8 +165,6 @@ Vim を起動し
 - plugin/
 - latextags
 - ltags
-    <!-- -Makefile -->
-    <!-- -Makefile.in -->
 
 を配置します．
 
@@ -257,8 +253,6 @@ Vim を起動し
 - plugin/
 - latextags
 - ltags
-    <!-- -Makefile -->
-    <!-- -Makefile.in -->
 
 を配置します．
 
@@ -299,7 +293,6 @@ let g:Tex_BibtexFlavor = 'pbibtex'
 let g:Tex_MakeIndexFlavor = 'mendex $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
 let g:Tex_ViewRule_dvi = 'pxdvi -watchfile 1'
-"let g:Tex_ViewRule_dvi = 'advi -watch-file 1'
 "let g:Tex_ViewRule_dvi = 'evince'
 "let g:Tex_ViewRule_dvi = 'okular --unique'
 let g:Tex_ViewRule_ps = 'gv --watch'
@@ -313,7 +306,6 @@ let g:Tex_ViewRule_pdf = 'evince'
 "let g:Tex_ViewRule_pdf = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
 "let g:Tex_ViewRule_pdf = 'qpdfview --unique'
 "let g:Tex_ViewRule_pdf = 'pdfviewer'
-"let g:Tex_ViewRule_pdf = 'gv --watch'
 "let g:Tex_ViewRule_pdf = 'acroread'
 "let g:Tex_ViewRule_pdf = 'pdfopen -viewer ar9-tab'
 ```
@@ -843,6 +835,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
     (沼井 裕二 (okmount) さん)
 
 - [Vim : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_225413.html)
+- [macvim+kaoriya+vimlatex](http://fbncc112358.blogspot.jp/2013/03/osxwsemacsviperyatexlatexmaclionosxwsmo.html)
 - [Vim-LaTeX 導入](http://0xffffff.hatenablog.com/entry/2013/01/26/211841)
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Open pdf to the current location in a LaTeX ](http://vim.wikia.com/wiki/Open_pdf_to_the_current_location_in_a_LaTeX_file)
