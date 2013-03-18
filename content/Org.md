@@ -86,7 +86,7 @@ W32TeX では
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org-mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
 latexmk は W32TeX, TeX Live に含まれています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
@@ -100,9 +100,13 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;(setq org-export-run-in-background t)
 (setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
 ;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/lualatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/luajitlatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/xelatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex %f"))
+;(setq org-export-run-in-background t)
 (if (not (eq org-export-run-in-background t))
     (setq org-file-apps
           '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file %s --page $page}\" | cmd"))))
@@ -113,6 +117,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\else
 \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
 \\usepackage{amsmath}
 \\usepackage{amssymb}
 \\usepackage{graphicx}
@@ -157,9 +163,13 @@ org ファイルの先頭に
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;(setq org-export-run-in-background t)
 (setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
+;(setq org-export-run-in-background t)
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
@@ -167,6 +177,8 @@ org ファイルの先頭に
 \\else
 \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
 \\usepackage{amsmath}
 \\usepackage{amssymb}
 \\usepackage{graphicx}
@@ -211,9 +223,13 @@ org ファイルの先頭に
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;(setq org-export-run-in-background t)
 (setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
+;(setq org-export-run-in-background t)
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
@@ -221,6 +237,8 @@ org ファイルの先頭に
 \\else
 \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
 \\usepackage{amsmath}
 \\usepackage{amssymb}
 \\usepackage{graphicx}
