@@ -7,22 +7,24 @@ pukiwiki: "Org"
 
 # Org
 
-[Emacs](/Emacs/) > Org-mode
+[Emacs](/Emacs/) > Org mode
 
-## [Org-mode](http://orgmode.org/) {#d6cfda4f}
+## [Org mode](http://orgmode.org/) {#d6cfda4f}
 
-<img src="http://orgmode.org/img/org-mode-unicorn-logo.png" alt="Org-mode" style="float:right">
+<img src="http://orgmode.org/img/org-mode-unicorn-logo.png" alt="Org mode" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Org-mode とは {#rea710af}
+## Org mode とは {#rea710af}
 
 Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
-- [org-mode.git](http://orgmode.org/w/?p=org-mode.git)
-    - [org-beamer.el --- Beamer-specific LaTeX export for org-mode](http://orgmode.org/w/?p=org-mode.git;a=blob;f=lisp/org-beamer.el)
-    - [org-latex.el --- LaTeX exporter for org-mode](http://orgmode.org/w/?p=org-mode.git;a=blob;f=lisp/org-latex.el)
+
+### ChangeLog {#r21fa6e2}
+
+- [org-mode.git - Org-mode, an Emacs mode for organizing your life.](http://orgmode.org/cgit.cgi/org-mode.git/)
+- [orgmode.org Git - org-mode.git/summary](http://orgmode.org/w/?p=org-mode.git)
 
 ## LaTeX Export {#k6bbb6c5}
 
@@ -98,17 +100,25 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-export-latex-coding-system 'utf-8)
-(setq org-export-run-in-background t)
+;(setq org-export-run-in-background t)
 (setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+(if (not (eq org-export-run-in-background t))
+    (setq org-file-apps
+          '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file %s --page $page}\" | cmd"))))
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
-               "\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+               "\\ifdefined\\ucs
+\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+\\else
+\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+\\fi
 \\usepackage{amsmath}
 \\usepackage{amssymb}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
-\\usepackage{pxjahyper}"
+\\usepackage{pxjahyper}
+\\hypersetup{colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -132,11 +142,107 @@ org ファイルの先頭に
 - [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
 - [Emacs + Org Export + TeXShop](http://skalldan.wordpress.com/2011/07/18/emacs-org-export-texshop/)
 
+#### 設定 {#l55021f8}
+
+動作未確認です．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．<br>
+
+***
+
+```
+;;
+;; Org-mode
+;;
+(add-to-list 'load-path "~/site-lisp/org/lisp")
+(require 'org)
+(require 'org-latex)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+;(setq org-export-run-in-background t)
+(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+(add-to-list 'org-export-latex-classes
+             '("jsarticle"
+               "\\ifdefined\\ucs
+\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+\\else
+\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+\\fi
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\usepackage{pxjahyper}
+\\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
+
+***
+
+org ファイルの先頭に
+
+```
+#+LaTeX_CLASS: jsarticle
+```
+
+を追加します．
+
 ### Linux {#h20d131a}
 
 - [TeX Live 2011 ユーザが org 文書を pdf に出力するための設定](http://qiita.com/items/da23c80d334139194a4d)
 - [LaTeX形式のレポートをemacs+org-modeだけで書く](http://ik-fib.com/2012/01/latex_emacs_org-mode/)
 - [Emacs org-modeを使ってみる: (14) LaTeXにエクスポート](http://d.hatena.ne.jp/tamura70/20100217/org)
+
+#### 設定 {#n84d0ac5}
+
+動作未確認です．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．<br>
+
+***
+
+```
+;;
+;; Org-mode
+;;
+(add-to-list 'load-path "~/site-lisp/org/lisp")
+(require 'org)
+(require 'org-latex)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+;(setq org-export-run-in-background t)
+(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+(add-to-list 'org-export-latex-classes
+             '("jsarticle"
+               "\\ifdefined\\ucs
+\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+\\else
+\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+\\fi
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\usepackage{pxjahyper}
+\\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
+
+***
+
+org ファイルの先頭に
+
+```
+#+LaTeX_CLASS: jsarticle
+```
+
+を追加します．
 
 ### 使い方 {#a6515cd5}
 
