@@ -44,6 +44,8 @@ Org mode is for keeping notes, maintaining TODO lists, planning projects, and au
 
 ### インストール {#l69ff892}
 
+Org-mode は Emacs 22 以降では標準で含まれています．
+
 #### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
 M-x package-install RET org RET
@@ -67,6 +69,12 @@ M-x list-packages RET でリストを表示して org を選択
 ```
 
 ***
+
+&#x7e;/.emacs.d/init.el で load-path に ~/site-lisp/org/lisp を追加します．<br>
+
+```
+ (add-to-list 'load-path "~/site-lisp/org/lisp")
+```
 
 ### Windows {#q16766de}
 
@@ -96,7 +104,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ;;
 ;; Org-mode
 ;;
-(add-to-list 'load-path "~/site-lisp/org/lisp")
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
@@ -208,7 +215,6 @@ org ファイルの先頭に
 ;;
 ;; Org-mode
 ;;
-(add-to-list 'load-path "~/site-lisp/org/lisp")
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
@@ -317,7 +323,6 @@ org ファイルの先頭に
 ;;
 ;; Org-mode
 ;;
-(add-to-list 'load-path "~/site-lisp/org/lisp")
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
@@ -420,3 +425,7 @@ C-c C-e d で PDF ファイルを出力して表示します．<br>
 - [Writing Beamer presentations in org-mode](http://orgmode.org/worg/exporters/beamer/tutorial.html)
 - \[[Emacs\]emacs + beamerの設定](http://d.hatena.ne.jp/killingout_n-bita/20121224/1356359190)
 - [Emacs org-modeを使ってみる: (15) Beamerにエクスポート](http://d.hatena.ne.jp/tamura70/20100218/org)
+
+## HTML {#t60cf94b}
+
+- [Org-mode による HTML 文書作成入門](http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
