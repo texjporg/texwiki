@@ -110,12 +110,13 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (if (not (eq org-export-run-in-background t))
     (setq org-file-apps
           '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file %s --page $page}\" | cmd"))))
+
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
 \\else
-\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -125,6 +126,54 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
 \\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("bxjsarticle"
+               "\\ifdefined\\kanjiskip
+  \\ifdefined\\ucs
+    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+  \\else
+    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+  \\fi
+\\else
+  \\documentclass[12pt,a4paper]{bxjsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+\\else
+  \\ifdefined\\XeTeXversion
+    \\usepackage[xetex]{graphicx}
+    \\usepackage[xetex]{hyperref}
+  \\else
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
+  \\fi
+\\fi
+\\ifdefined\\directlua
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\else
+  \\hypersetup{colorlinks=true}
+\\fi
+\\ifdefined\\XeTeXversion
+  \\usepackage{zxjatype}
+  \\setjamainfont{MS Mincho}
+  \\setjasansfont{MS Gothic}
+  \\setjamonofont{MS Gothic}
+\\fi
+\\ifdefined\\directlua
+  \\usepackage{luatexja}
+\\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -170,12 +219,13 @@ org ファイルの先頭に
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
 ;(setq org-export-run-in-background t)
+
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
 \\else
-\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -185,6 +235,54 @@ org ファイルの先頭に
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
 \\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("bxjsarticle"
+               "\\ifdefined\\kanjiskip
+  \\ifdefined\\ucs
+    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+  \\else
+    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+  \\fi
+\\else
+  \\documentclass[12pt,a4paper]{bxjsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+\\else
+  \\ifdefined\\XeTeXversion
+    \\usepackage[xetex]{graphicx}
+    \\usepackage[xetex]{hyperref}
+  \\else
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
+  \\fi
+\\fi
+\\ifdefined\\directlua
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\else
+  \\hypersetup{colorlinks=true}
+\\fi
+\\ifdefined\\XeTeXversion
+  \\usepackage{zxjatype}
+  \setjamainfont{IPAexMincho}
+  \setjasansfont{IPAexGothic}
+  \setjamonofont{IPAexGothic}
+\\fi
+\\ifdefined\\directlua
+  \\usepackage{luatexja}
+\\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -230,12 +328,13 @@ org ファイルの先頭に
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
 ;(setq org-export-run-in-background t)
+
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-\\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
 \\else
-\\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -245,6 +344,54 @@ org ファイルの先頭に
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
 \\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("bxjsarticle"
+               "\\ifdefined\\kanjiskip
+  \\ifdefined\\ucs
+    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+  \\else
+    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+  \\fi
+\\else
+  \\documentclass[12pt,a4paper]{bxjsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+\\else
+  \\ifdefined\\XeTeXversion
+    \\usepackage[xetex]{graphicx}
+    \\usepackage[xetex]{hyperref}
+  \\else
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
+  \\fi
+\\fi
+\\ifdefined\\directlua
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\else
+  \\hypersetup{colorlinks=true}
+\\fi
+\\ifdefined\\XeTeXversion
+  \\usepackage{zxjatype}
+  \setjamainfont{IPAexMincho}
+  \setjasansfont{IPAexGothic}
+  \setjamonofont{IPAexGothic}
+\\fi
+\\ifdefined\\directlua
+  \\usepackage{luatexja}
+\\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
