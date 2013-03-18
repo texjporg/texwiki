@@ -59,6 +59,15 @@ pukiwiki: "OTF"
 これを例えば C:\temp\ に入れます。<br>
 Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
 
+W32TeX \[2013/03/18\] 以降の場合は
+
+```
+>cd \w32tex
+>tar xvf C:/temp/otfbeta.tar.xz
+```
+
+W32TeX \[2013/03/18\] よりも前のバージョンの場合は
+
 ```
 >cd \w32tex
 >tar Jxvf C:/temp/otfbeta.tar.xz
@@ -66,7 +75,20 @@ Windows PowerShell やコマンド プロンプトで次のように打ち込み
 
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
-W32TeX \[2013/03/18\] よりも前のバージョンの tar は古いバージョンのものなので J オプションを省略して展開することができないようです．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
+W32TeX \[2013/03/18\] 以降の場合は GNU tar 1.11.8 + 2.1(WIN32) になっています．
+
+```
+>tar --version
+GNU tar 1.11.8 + 2.1(WIN32)
+```
+
+の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
+
+```
+tar xvf C:/temp/otfbeta.tar.xz
+```
+
+W32TeX \[2013/03/18\] よりも前のバージョンの tar は GNU tar 1.11.8 + 2.0(WIN32) になっていて古いバージョンのものなので J オプションを省略して展開することができません．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
 
 ```
 >tar xvf C:/temp/otfbeta.tar.xz
@@ -81,17 +103,6 @@ GNU tar 1.11.8 + 2.0(WIN32)
 ```
 
 [Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
-
-```
->tar --version
-GNU tar 1.11.8 + 2.1(WIN32)
-```
-
-の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
-
-```
-tar xvf C:/temp/otfbeta.tar.xz
-```
 
 #### TeX Live {#da8ed89a}
 
