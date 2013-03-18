@@ -140,6 +140,22 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-export-latex-classes
+             '("ltjsarticle"
+               "\\documentclass[12pt,a4paper]{ltjsarticle}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{pdfencoding=auto,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
@@ -218,12 +234,12 @@ org ファイルの先頭に
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
+(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
 ;(setq org-export-run-in-background t)
 
 (add-to-list 'org-export-latex-classes
@@ -241,6 +257,22 @@ org ファイルの先頭に
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
 \\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("ltjsarticle"
+               "\\documentclass[12pt,a4paper]{ltjsarticle}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{pdfencoding=auto,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -349,6 +381,22 @@ org ファイルの先頭に
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
 \\hypersetup{colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("ltjsarticle"
+               "\\documentclass[12pt,a4paper]{ltjsarticle}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{pdfencoding=auto,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
