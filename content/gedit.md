@@ -570,32 +570,6 @@ pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_
 
 ***
 
-#### gv {#qda5d9a3}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-gv --watch "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### Emacs {#b1a60c18}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-emacs "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
 #### acroread {#h5982543}
 
 ***
