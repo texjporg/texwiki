@@ -66,7 +66,7 @@ W32TeX \[2013/03/18\] 以降の場合は
 >tar xvf C:/temp/otfbeta.tar.xz
 ```
 
-W32TeX \[2013/03/18\] よりも前のバージョンの場合は
+W32TeX \[2013/03/18\] よりも前の場合は
 
 ```
 >cd \w32tex
@@ -82,13 +82,13 @@ W32TeX \[2013/03/18\] 以降の場合は GNU tar 1.11.8 + 2.1(WIN32) になっ�
 GNU tar 1.11.8 + 2.1(WIN32)
 ```
 
-の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
+GNU tar 1.11.8 + 2.1(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
 
 ```
 tar xvf C:/temp/otfbeta.tar.xz
 ```
 
-W32TeX \[2013/03/18\] よりも前のバージョンの tar は GNU tar 1.11.8 + 2.0(WIN32) になっていて古いバージョンのものなので J オプションを省略して展開することができません．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
+W32TeX \[2013/03/18\] よりも前の tar は GNU tar 1.11.8 + 2.0(WIN32) になっていて古いバージョンのものなので J オプションを省略して展開することができません．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
 
 ```
 >tar xvf C:/temp/otfbeta.tar.xz
