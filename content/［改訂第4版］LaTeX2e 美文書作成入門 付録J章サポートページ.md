@@ -8,7 +8,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://www.gihyo.co.jp/books/syoseki.php/4-7741-2984-4)』（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
-本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://ethics.let.hokudai.ac.jp/~gpae/plus2/?Staff/Kuriyama)にあります。
+本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
 
@@ -20,7 +20,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「次期 pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) の開発が始まりました。[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)のご尽力により，既に [ptetex3](http://tutimura.ath.cx/ptetex/) へのパッチとして試用可能です（なお，[ptetexWiki:UTF-8対応(4) #upTeX 対応](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29%23m605b29c) もご覧ください）。
+- p. 359 註12 「pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) は TeX Live 2012 以降で使用可能です。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）—「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
