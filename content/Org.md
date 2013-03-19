@@ -17,7 +17,16 @@ pukiwiki: "Org"
 
 ## Org mode とは {#rea710af}
 
-Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
+<!-- Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system. -->
+
+Org mode は
+
+- ノートの保存
+- TODO リストの管理
+- プロジェクト計画
+
+のためのモードです．<br>
+高速で効率的なプレーンテキストシステムを使ってファイルを編集することができます．<br>
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 
@@ -44,7 +53,7 @@ Org mode is for keeping notes, maintaining TODO lists, planning projects, and au
 
 ### インストール {#l69ff892}
 
-Org-mode は Emacs 22 以降では標準で含まれています．
+Org mode は Emacs 22 以降では標準で含まれています．
 
 #### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
@@ -93,7 +102,7 @@ W32TeX では
 #### 設定 {#y73c067b}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-Org-mode はデフォルトでは pdfLaTeX が使われます．<br>
+Org mode はデフォルトでは pdfLaTeX が使われます．<br>
 pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
 latexmk は W32TeX, TeX Live に含まれています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
@@ -102,13 +111,15 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ```
 ;;
-;; Org-mode
+;; Org mode
 ;;
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/lualatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/luajitlatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
@@ -121,9 +132,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -132,7 +143,27 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\usepackage{graphicx}
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
-\\hypersetup{colorlinks=true}"
+\\hypersetup{setpagesize=false,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("jsarticle-dvips"
+               "\\ifdefined\\ucs
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+\\else
+  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{setpagesize=false,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -218,24 +249,29 @@ org ファイルの先頭に
 
 - [EmacsのOrg-modeから日本語ファイルをTeX&amp;PDFにする時の問題点](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=903)
 - [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
-- [Emacs + Org Export + TeXShop](http://skalldan.wordpress.com/2011/07/18/emacs-org-export-texshop/)
+- [Org-Mode | Amrta](http://skalldan.wordpress.com/category/emacs/org-mode-emacs/)
 
 #### 設定 {#l55021f8}
 
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+Org mode はデフォルトでは pdfLaTeX が使われます．<br>
+pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+latexmk は TeX Live に含まれています．<br>
 
 ***
 
 ```
 ;;
-;; Org-mode
+;; Org mode
 ;;
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
@@ -245,9 +281,9 @@ org ファイルの先頭に
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -256,7 +292,27 @@ org ファイルの先頭に
 \\usepackage{graphicx}
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
-\\hypersetup{colorlinks=true}"
+\\hypersetup{setpagesize=false,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("jsarticle-dvips"
+               "\\ifdefined\\ucs
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+\\else
+  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{setpagesize=false,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -348,18 +404,23 @@ org ファイルの先頭に
 
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+Org mode はデフォルトでは pdfLaTeX が使われます．<br>
+pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+latexmk は TeX Live に含まれています．<br>
 
 ***
 
 ```
 ;;
-;; Org-mode
+;; Org mode
 ;;
 (require 'org)
 (require 'org-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
@@ -369,9 +430,9 @@ org ファイルの先頭に
 (add-to-list 'org-export-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{times}
@@ -380,7 +441,27 @@ org ファイルの先頭に
 \\usepackage{graphicx}
 \\usepackage{hyperref}
 \\usepackage{pxjahyper}
-\\hypersetup{colorlinks=true}"
+\\hypersetup{setpagesize=false,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-export-latex-classes
+             '("jsarticle-dvips"
+               "\\ifdefined\\ucs
+  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+\\else
+  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+\\fi
+[NO-DEFAULT-PACKAGES]
+\\usepackage{times}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
+\\hypersetup{setpagesize=false,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
