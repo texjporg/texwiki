@@ -93,19 +93,7 @@ tex="latex";
 texcommand="platex";
 ```
 
-platex のデフォルトがUTF-8になっていない場合は "platex-utf8" とする。こういうコマンドがなければエイリアスかバッチファイルで作る。"platex -kanji=utf8" のようにはできないようだ。また，日本語対応dvipsのコマンドが別名の場合は
-
-```
-dvips="dvipsk";
-```
-
-または
-
-```
-dvips="pdvips";
-```
-
-としないといけないだろう。
+platex のデフォルトがUTF-8になっていない場合は "platex-utf8" とする。こういうコマンドがなければエイリアスかバッチファイルで作る。"platex -kanji=utf8" のようにはできないようだ。
 
 ### 日本語対応（Windows） {#f6f53eb8}
 
@@ -178,6 +166,7 @@ yaxis("$y$",LeftRight,RightTicks);
 - [Asymptote - laclefwiki](http://saekiyoshiyasu.org/wiki/Asymptote)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
+- [実験室(Asymptote)](http://homepage2.nifty.com/domae/asymptote.html)
 - [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
 - [Asymptoteで日本語を表示させられませんでした](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=765)
 - [シンプット (A_Symptote)さん](https://twitter.com/A_Symptote)
