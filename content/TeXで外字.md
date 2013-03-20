@@ -9,9 +9,9 @@ pukiwiki: "TeXで外字"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji.html -->
 
-## OTF パッケージ(開発版)で最大 23,058 グリフ {#ve311433}
+## OTF パッケージ(ベータ版・開発版)で最大 23,058 グリフ {#ve311433}
 
-[OTF パッケージ(開発版)](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/otf.html) でAdobe-Japan1-6の全 23,058 グリフが使えます。ほとんどのグリフはこれで大丈夫です。 
+[OTF パッケージ(ベータ版・開発版)](/OTF/) でAdobe-Japan1-6の全 23,058 グリフが使えます。ほとんどのグリフはこれで大丈夫です。 
 
 ## Illustrator で外字作成 {#oad7ee64}
 
