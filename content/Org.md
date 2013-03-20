@@ -35,27 +35,11 @@ Org mode は
 - [org-mode.git - Org-mode, an Emacs mode for organizing your life.](http://orgmode.org/cgit.cgi/org-mode.git/)
 - [orgmode.org Git - org-mode.git/summary](http://orgmode.org/w/?p=org-mode.git)
 
-## LaTeX Export {#k6bbb6c5}
-
-- [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
-- [Emacs の Org ファイルを platex と dvipdfmx で PDF 化する設定．](http://qiita.com/items/6eb4d8d799e41ef3f15d)
-- [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
-- [org-modeのLatexエクスポートで長いURLが折り返さないのを修正](http://d.hatena.ne.jp/hirono2011/20111124/1322156182)
-- [org-modeでTeX出力のフォーマットを設定する](http://d.hatena.ne.jp/sanryuu/20110413)
-- [Org-mode](http://d.hatena.ne.jp/daharu/20110409/)
-- [org-mode で日本語LaTeXにexport](http://blog.goo.ne.jp/gleaning/e/683f62e972b126324882477c75522207)
-- [org-modeで卒業論文を書く :NOTE:](http://d.hatena.ne.jp/r_takaishi/20100209/)
-- [Org-Mode で日本語 PDF を出力できるようにする](http://www.moreslowly.jp/mw/index.php/Org-Mode_%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E_PDF_%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B)
-- [Org-Mode の機能、組み込み LaTeX — その1](http://www.kitetu.net/old/notes/0003.html)
-- [Org-Mode の機能、組み込み LaTeX — その2](http://www.kitetu.net/old/notes/0004.html)
-- [Org-Mode の組み込み LaTeX 和訳部分](http://www.kitetu.net/info-renais/emacs/manual/org-mode/tr_embedded-latex.html)
-- [Jekyll + Org-mod で LaTeX](http://gacha.yukimizake.net/blog/2010/10/22/jekyll-and-org-mod-with-latex.html)
-
-### インストール {#l69ff892}
+## インストール {#l69ff892}
 
 Org mode は Emacs 22 以降では標準で含まれています．
 
-#### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
+### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
 M-x package-install RET org RET
 
@@ -63,7 +47,7 @@ M-x package-install RET org RET
 
 M-x list-packages RET でリストを表示して org を選択
 
-#### 公式サイトのパッケージを使用する場合 {#vc647a74}
+### 公式サイトのパッケージを使用する場合 {#vc647a74}
 
 パッケージを展開して名前を org にリネームして &#x7e;/.emacs.d/site-lisp に配置します．
 
@@ -84,6 +68,22 @@ M-x list-packages RET でリストを表示して org を選択
 ```
  (add-to-list 'load-path "~/site-lisp/org/lisp")
 ```
+
+## LaTeX Export {#k6bbb6c5}
+
+- [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
+- [Emacs の Org ファイルを platex と dvipdfmx で PDF 化する設定．](http://qiita.com/items/6eb4d8d799e41ef3f15d)
+- [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
+- [org-modeのLatexエクスポートで長いURLが折り返さないのを修正](http://d.hatena.ne.jp/hirono2011/20111124/1322156182)
+- [org-modeでTeX出力のフォーマットを設定する](http://d.hatena.ne.jp/sanryuu/20110413)
+- [Org-mode](http://d.hatena.ne.jp/daharu/20110409/)
+- [org-mode で日本語LaTeXにexport](http://blog.goo.ne.jp/gleaning/e/683f62e972b126324882477c75522207)
+- [org-modeで卒業論文を書く :NOTE:](http://d.hatena.ne.jp/r_takaishi/20100209/)
+- [Org-Mode で日本語 PDF を出力できるようにする](http://www.moreslowly.jp/mw/index.php/Org-Mode_%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E_PDF_%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B)
+- [Org-Mode の機能、組み込み LaTeX — その1](http://www.kitetu.net/old/notes/0003.html)
+- [Org-Mode の機能、組み込み LaTeX — その2](http://www.kitetu.net/old/notes/0004.html)
+- [Org-Mode の組み込み LaTeX 和訳部分](http://www.kitetu.net/info-renais/emacs/manual/org-mode/tr_embedded-latex.html)
+- [Jekyll + Org-mod で LaTeX](http://gacha.yukimizake.net/blog/2010/10/22/jekyll-and-org-mod-with-latex.html)
 
 ### Windows {#q16766de}
 
