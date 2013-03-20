@@ -48,6 +48,7 @@ pukiwiki: "iOS"
     - [iTunes App Store - Tex Touch](http://itunes.apple.com/jp/app/tex-touch/id377627321?mt=8)/[iTunes App Store - Tex Touch for iPhone](http://itunes.apple.com/jp/app/tex-touch-for-iphone/id406891012?mt=8)
     - [Tex Timer](http://www.vancapy.com/textouch/setup/)
     - [TeX Cloud](http://www.vancapy.com/textouch/texcloud/)
+        - [Tex Timer Single Doc(beta0.1)の利用【PC ～ iPadでTeX】](http://kiyomidais.cocolog-nifty.com/blog/2013/03/textimer.html)
         - [iPad で LaTeX ?!](http://skalldan.wordpress.com/2012/04/11/ipad-%E3%81%A7-latex/)
         - [LaTeX on the iPad](http://jblevins.org/log/latex-on-the-ipad)
         - [macportsのplatexでも使えます．](http://appcomments.com/reviews/334548870)
