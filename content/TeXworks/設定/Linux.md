@@ -23,6 +23,8 @@ pukiwiki: "TeXworks/設定/Linux"
 
 pdfplatex (シェルスクリプト) を作成します．
 
+■ フォントマップを指定しない場合<br>
+
 ***
 
 - pdfplatex
@@ -33,6 +35,22 @@ pdfplatex (シェルスクリプト) を作成します．
 #!/bin/sh
 platex -synctex=1 "$1" && \
 dvipdfmx "`basename "$1" .tex`"
+```
+
+***
+
+■ IPAexフォントを埋め込む場合<br>
+
+***
+
+- pdfplatex
+
+***
+
+```
+#!/bin/sh
+platex -synctex=1 "$1" && \
+dvipdfmx -f ptex-ipaex.map "`basename "$1" .tex`"
 ```
 
 ***
@@ -173,6 +191,8 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 
 pdfuplatex (シェルスクリプト) を作成します．
 
+■ フォントマップを指定しない場合<br>
+
 ***
 
 - pdfuplatex
@@ -183,6 +203,22 @@ pdfuplatex (シェルスクリプト) を作成します．
 #!/bin/sh
 uplatex -synctex=1 "$1" && \
 dvipdfmx "`basename "$1" .tex`"
+```
+
+***
+
+■ IPAexフォントを埋め込む場合<br>
+
+***
+
+- pdfuplatex
+
+***
+
+```
+#!/bin/sh
+uplatex -synctex=1 "$1" && \
+dvipdfmx -f uptex-ipaex.map "`basename "$1" .tex`"
 ```
 
 ***
