@@ -13,7 +13,7 @@ Hunspell はスペルチェッカーです．<br>
 
 - [Hunspell](http://hunspell.sourceforge.net/)
 
-以下のエディタで使用されています．
+以下の統合環境・エディタで使用されています．
 
 - [LyX](/LyX/)
 - [TeXworks](/TeXworks/)
@@ -21,6 +21,7 @@ Hunspell はスペルチェッカーです．<br>
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [WinShell](/WinShell/)
+- Mery
 
 ### 辞書 {#q4b7f294}
 
