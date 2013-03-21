@@ -884,6 +884,8 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
     - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
     - [vim-scripts/LaTeX-Box - GitHub](https://github.com/vim-scripts/LaTeX-Box)
     - [Latexmkとvim, vim-boxの設定](http://d.hatena.ne.jp/wal-neko/20101119/1290158352)
+- [TeX 9 : A semi-automatic LaTeX ftplugin with lots of firepower!](http://www.vim.org/scripts/script.php?script_id=3508)
+    - [vim-scripts/TeX-9 · GitHub](https://github.com/vim-scripts/TeX-9)
 - [auctex.vim](http://www.math.rochester.edu/people/faculty/cmlr/Latex/)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
 - [tex.vim : Indent file for TeX](http://www.vim.org/scripts/script.php?script_id=218)
