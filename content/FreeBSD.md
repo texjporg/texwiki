@@ -31,6 +31,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
     - [print/texlive-core](https://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
     - [print/texlive-collection-langcjk](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
+- [TeX Live 2012 on FreeBSD Extended support](http://anthesphoria.net/FreeBSD/TeXLive-2012/bin/)
 
 ### その他関連Ports {#k9078aba}
 
@@ -54,8 +55,6 @@ make &amp;&amp; make installで導入できます．
 <tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
 <tr><td><a href="/YaTeX/">YaTeX</a></td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
-<tr><td>tgif2tex</td><td>print/tgif2tex</td><td>Converting texts in figure by tgif to LaTeX commands</td></tr>
-<tr><td>ja-plain2</td><td>japanese/plain2</td><td>A text converter from plain to any format</td></tr>
 </tbody>
 </table>
 
