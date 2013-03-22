@@ -81,8 +81,7 @@ MacTeX-2012 以降には luatexja が含まれています．<br>
 
 ### 注意点 {#vbed1356}
 
-LuaTeX 開発版のソースを追っかけて自分でコンパイルしている場合，r4433--r4446 は （内部の lpeg が新しくなった関係で luaotfload パッケージが動かなくなったので）利用できません． そのため，r4432 以前か，r4447 以降を使用して下さい．<br>
-W32TeX における LuaTeX 開発版 (luatex-dev-w32.tar.xz) では，2012/05/26 <strong>以外</strong>のものであれば大丈夫のようです．<br>
+[LuaTeX-jaの使い方#手動でインストールする場合](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h3-.E6.89.8B.E5.8B.95.E3.81.A7.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.81.99.E3.82.8B.E5.A0.B4.E5.90.88) を参照．<br>
 
 現状では pLaTeX と比べるとタイプセットに時間がかかります．<br>
 
@@ -193,4 +192,5 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
 - \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
 - [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
+- [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
