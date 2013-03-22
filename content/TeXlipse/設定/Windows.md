@@ -167,7 +167,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -201,7 +201,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -269,7 +269,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
@@ -389,7 +389,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -519,7 +519,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-U "%input" -s nomencl.ist -o "%output"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
