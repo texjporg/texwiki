@@ -47,6 +47,11 @@ KDE
 
 - [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
 
+### OS X {#ra4ed7b1}
+
+- [kde4-kile](http://trac.macports.org/browser/trunk/dports/tex/kde4-kile/Portfile)
+- [How to install Kile on Mac OS X Mountain Lion](http://www.tosnos.com/?p=28)
+
 ### Ubuntu {#b7368c5d}
 
 - [Ubuntu -- パッケージ検索結果 -- kile](http://packages.ubuntu.com/ja/kile)
