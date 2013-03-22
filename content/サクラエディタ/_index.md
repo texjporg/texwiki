@@ -181,7 +181,7 @@ bregonig.dll を
 bregonig.dll が有効になると，検索／置換／Grep で
 
 ```
-bregonig.dll Ver.3.03 with Onigmo 5.13.3
+bregonig.dll Ver.3.04 with Onigmo 5.13.4
 ```
 
 のように表示されます．
@@ -202,7 +202,7 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 　　　☑カーソル位置の文字列をデフォルトの検索文字列にする(C)<br>
 　　　☑次・前検索で他のビューでの検索条件変更を引き継ぐ(I)<br>
 　　　正規表現ライブラリの指定(L)　　　　　<ins>.\bregonig.dll</ins><br>
-　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
+　　　bregonig.dll Ver.3.04 with Onigmo 5.13.4<br>
 
 <br>
 
@@ -227,7 +227,7 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 　　条件(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
 　　☐英大文字と小文字を区別する(C)<br>
-　　☑正規表現(E)　　 bregonig.dll Ver.3.03 with Onigmo 5.13.3　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
+　　☑正規表現(E)　　 bregonig.dll Ver.3.04 with Onigmo 5.13.4　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
 　　☑見つからないときにメッセージを表示(M)<br>
 　　☑検索ダイアログを自動的に閉じる(L)　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
 　　☐先頭（末尾）から再検索する(Z)　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　ヘルプ(H)　　 \]</span><br>
@@ -246,7 +246,7 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 選択文字(0)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(R)　　　\]</span><br>
 　　☑正規表現(E)　　　　　　　　　　　　　　　　　　　　　 ◯ 選択終点(2)追加　　　　<span style="color:Black;background-color:#EEEEEE;">\[　すべて置換(A)　\]</span><br>
-　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
+　　　　bregonig.dll Ver.3.04 with Onigmo 5.13.4<br>
 　　☐「すべて置換」は置換の繰返し(I)　　　　　　　　　　範囲<br>
 　　☑見つからないときにメッセージを表示(M)　　　　　◯ 選択範囲(S)<br>
 　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　 <span style="color:#3333CC;">◎</span> ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
@@ -268,7 +268,7 @@ bregonig.dll Ver.3.03 with Onigmo 5.13.3
 　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 該当行(L)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　　　　　　　　　　◯ 該当部分(P)　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　検索(F)　　\]</span><br>
 　　☑正規表現(E)<br>
-　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3　　　　　　　　　　　　　　結果出力形式<br>
+　　　　bregonig.dll Ver.3.04 with Onigmo 5.13.4　　　　　　　　　　　　　　結果出力形式<br>
 　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　▼\]</span>　　　　　　　　　　<span style="color:#3333CC;">◎</span> ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
 　　☐フォルダの初期値をカレントフォルダにする(D)　　　　　　　　　　 ◯ ファイル毎（I）　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　ヘルプ(H)　　\]</span><br>
 
@@ -333,7 +333,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[　支援　\]</ins></span><strong>\[　正規表現キーワード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　☑正規表現キーワードを使用する(R)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　bregonig.dll Ver.3.03 with Onigmo 5.13.3<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　bregonig.dll Ver.3.04 with Onigmo 5.13.4<br>
 　　　正規表現キーワード(K)<br>
 　　　　∣キーワード　　　　　　　　　　　　　　　　　　∣色指定　　　　　　　　　　　∣　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　先頭(T)　\]</span><br>
 　　　　∣<span style="color:White;background-color:#1188FF;">/\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k 　　　　　　正規表現キーワード1　　　</span>　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　上へ(U)　\]</span><br>
