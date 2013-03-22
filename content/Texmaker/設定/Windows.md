@@ -24,9 +24,10 @@ PDF ビューアに TeXworks を使用する場合は [TeXworks#組み込みの 
 [LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex を luajitlatex に変更して使用してください．<br>
 
-#### [W32TeX](/W32TeX/) (自動判別の場合) {#cd578b1e}
+#### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) (自動判別の場合) {#cd578b1e}
 
-W32TeX はデフォルトでは ptexenc を用いて自動判別します．
+W32TeX はデフォルトでは ptexenc を用いて自動判別します．<br>
+TeX Live はデフォルトでは自動判別しませんが -guess-input-enc オプションを使用すれば自動判別します．<br>
 
 ***
 
@@ -56,15 +57,15 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins> または <ins>dvipdfmx %.dvi</ins><br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf %.ps</ins><br>
 
 <div style="clear:both"></div>
 
@@ -83,7 +84,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins> または <ins>"C:/texlive/2012/tlpkg/dviout/dviout.exe" -1 %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins><br>
@@ -95,7 +96,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<ins>texworks %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -105,7 +106,7 @@ W32TeX はデフォルトでは ptexenc を用いて自動判別します．
 
 ***
 
-#### [W32TeX](/W32TeX/) (UTF-8 の場合) {#q9c95374}
+#### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) (UTF-8 の場合) {#q9c95374}
 
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
@@ -139,15 +140,15 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins> または <ins>dvipdfmx %.dvi</ins><br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf %.ps</ins><br>
 
 <div style="clear:both"></div>
 
@@ -166,7 +167,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
+<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins> または <ins>"C:/texlive/2012/tlpkg/dviout/dviout.exe" -1 %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.ps</ins><br>
@@ -178,7 +179,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<ins>texworks %.pdf</ins> または <ins>"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins> または <ins>"C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -188,14 +189,12 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 ***
 
-#### [TeX Live](</TeX Live/>) {#p3874cc2}
+TeX Live 2012 を使用する場合は
 
 - [TeX Live 2012 と日本語](http://torip.whitesnow.jp/?p=1020)
 - [TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html)
 
-を参照．
-
-<!-- [[TeX Live 2012 on Windows:http://blogs.yahoo.co.jp/igproj_fusion/15776344.html]] を参照． -->
+にも設定方法が記述されています．
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
 
