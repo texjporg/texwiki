@@ -14,3 +14,4 @@ pukiwiki: "YASnippet"
 YASnippet は [Emacs](/Emacs/) のスニペットプラグインです．<br>
 
 - [Emacs で LaTeX を書いている人が今すぐ yasnippet を最新版にすべきたった1つの理由](http://kita.dyndns.org/diary/?date=20121212)
+- [Nyoho/my-snippets · GitHub](https://github.com/Nyoho/my-snippets)
