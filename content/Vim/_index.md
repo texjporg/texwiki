@@ -53,7 +53,6 @@ GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する�
 最新版へアップデートしてください．<br>
 詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
 
-GVim 7.3.344 で UNIX 系 の GVim で起動時にハングしたり起動が遅くなったりしていた問題が修正されました．<br>
 Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
 
 ### 派生版 {#ka1322d7}
@@ -894,6 +893,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 - [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
 - [瞬間没入感](http://kwakita.wordpress.com/2013/03/22/immersion/)
+- [【Linux Mint, vim】日本語のtexをvimで書く環境を整える](http://calorie001.hatenablog.com/entry/2012/12/13/182057)
 - [LaTeXをquickrunで楽に処理する](http://d.hatena.ne.jp/itchyny/20121001/1349094989)
 - [vim 快適な論文執筆環境の整備 -その1-](http://kuni255.blogspot.jp/2011/12/vim-1.html)
 - [vim 快適な論文執筆環境の整備 -その2-](http://kuni255.blogspot.jp/2011/12/vim-2.html)
