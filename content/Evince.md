@@ -107,6 +107,8 @@ fwdevince がうまく動作しない場合は
 
 ***
 
+Evince 2.91.0以前は３ヶ所修正が必要です。
+
 ```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -160,6 +162,7 @@ class EvinceForwardSearch:
             dbus_name = daemon.FindDocument('file://' + quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
             window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
             time.sleep(0.2)
+            #window.SyncView(tex, (line, 1), dbus_interface="org.gnome.evince.Window") # Evince 2.91.0以前(1)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
             traceback.print_exc()
@@ -265,6 +268,7 @@ class EvinceWindowProxy:
             if self._log:
                 self._log.debug("GetWindowList returned empty list")
 
+    #def on_sync_source(self, input_file, source_link): # Evince 2.91.0以前(2)
     def on_sync_source(self, input_file, source_link, timestamp):
         import subprocess
         import re
@@ -284,6 +288,7 @@ class EvinceWindowProxy:
         print(cmd)
         subprocess.call(cmd, shell=True)
         if self.source_handler is not None:
+            #self.source_handler(input_file, source_link)  # Evince 2.91.0以前(3)
             self.source_handler(input_file, source_link, timestamp)
 
 if __name__ == '__main__':
@@ -398,8 +403,8 @@ tex_file = os.path.join(os.path.dirname(os.path.abspath(sys.argv[3])), './', os.
 Evince 2.91.0 以降を使用する場合は [D-Bus の仕様が変更されている](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0)ので evince_forward_search を
 
 ```
-#window.SyncView(tex_file, (line_number,1), dbus_interface="org.gnome.evince.Window")
-window.SyncView(tex_file, (line_number,1), 0, dbus_interface="org.gnome.evince.Window")
+#window.SyncView(tex, (line,1), dbus_interface="org.gnome.evince.Window")
+window.SyncView(tex, (line,1), 0, dbus_interface="org.gnome.evince.Window")
 ```
 
 に修正して evince_backward_search を
