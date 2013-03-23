@@ -14,7 +14,7 @@ pukiwiki: "Visual Windows for TeX"
 ## Visual Windows for TeX とは {#k33ee4a0}
 
 Visual Windows for TeX は国産でフリーの TeX 統合環境です．<br>
-Visual Windows for Unicode TeX, Visual Windows for xeTeX も開発中です．<br>
+Visual Windows for Unicode TeX, Visual Windows for xeTeX もあります．<br>
 
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physjpn/vtexwin.htm) (Japanese page)
 - [Visual Windows for TeX](http://phys.cool.coocan.jp/physeng/vtexwin.htm) (English page)
