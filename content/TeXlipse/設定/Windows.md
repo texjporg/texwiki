@@ -762,8 +762,8 @@ SumatraPDF を使用する場合は，
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mozilla Firefox</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\Mozilla Firefox\firefox.exe</ins> または <ins>C:\Program Files (x86)\Mozilla Firefox\firefox.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-new-window "&#x25;fullfile"</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Windows\System32\cmd.exe</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>/c start firefox -new-window "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
@@ -802,7 +802,7 @@ Mozilla Firefox (pdf.js) を使用する場合は，
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Chrome PDF Viewer</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Windows\System32\cmd.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>/c &#x25;LOCALAPPDATA&#x25;\Google\Chrome\Application\chrome.exe --new-window "&#x25;fullfile"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>/c start chrome --new-window "&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
