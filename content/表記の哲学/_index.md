@@ -40,6 +40,8 @@ pukiwiki: "表記の哲学"
         - 例 [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
             <!-- - - 日本でボールド体が普及していない原因は？ -->
 
+- サンセリフ体：日本物理学会誌規定を見ると、テンソル変数・行列変数は（立体の）サンセリフ体を使用とのこと（例：$\mathsf{A}$）
+
 - 単位行列 $I$ （イタリック体で良いかどうか？）
     - 変数ではないので，イタリック体対象外で立体のままか？（ISOに従うと）
 
