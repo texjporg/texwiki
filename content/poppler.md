@@ -791,9 +791,9 @@ $ popd
 - [libffi](http://sourceware.org/libffi/) をインストールします．<br>
 
 ```
-$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.12.tar.gz
-$ tar xvf libffi-3.0.12.tar.gz
-$ pushd libffi-3.0.12
+$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz
+$ tar xvf libffi-3.0.13.tar.gz
+$ pushd libffi-3.0.13
 $ ./configure --prefix=/mingw
 $ make
 $ make install
