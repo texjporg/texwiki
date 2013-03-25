@@ -16,15 +16,23 @@ pukiwiki: "Sublime Text"
 Sublime Text はテキストエディタです． (シェアウェア)
 
 - [Sublime Text](http://www.sublimetext.com/)
-    - [Sublime Text 3](http://www.sublimetext.com/3)
-    - [Sublime Text 2](http://www.sublimetext.com/2)
-    - [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
-    - [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
-- [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
+
+### Sublime Text 3 {#o04f9cc2}
+
+- [Sublime Text 3](http://www.sublimetext.com/3)
+- [Sublime Text 3 - Dev Builds](http://www.sublimetext.com/3dev)
+
+### Sublime Text 2 {#z97e1aeb}
+
+- [Sublime Text 2](http://www.sublimetext.com/2)
+- [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
+- [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
 
 ### 動作環境 {#ec9465b5}
 
 Windows, OS X, Linux
+
+## [Sublime Package Control](http://wbond.net/sublime_packages/package_control) {#r17a3176}
 
 ## Windows での日本語入力対応 {#cde09531}
 
