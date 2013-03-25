@@ -82,10 +82,6 @@ xyzzy+ は Ms-PL です．<br>
 
 ### スクリーンショット {#of7fa0a1}
 
-<!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
-<!-- &br; -->
-<!-- #ref(http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_001.png,nolink,kyotex-mode を使った xyzzy の画面) -->
-
 <img src="http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/img/snapshot_016.png" alt="kyotex-mode を使った xyzzy の画面">
 
 ## ダウンロードとインストール {#xy9167cb}
@@ -133,19 +129,9 @@ xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう
 
 ## SumatraPDF との連携 {#s1d4a0f1}
 
-platex に -synctex=1 オプションを付けて実行します。すなわち，
-
-```
-platex -synctex=1
-```
-
-を実行するようにします。
-
 ### forward search {#ra3924a4}
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。
-
-[KaTeX#SumatraPDF との連携](/KaTeX/#y959d8e3) を参照．
 
 ### inverse search {#n1f72109}
 
@@ -163,15 +149,13 @@ SumatraPDF で画面の一部（本文の文字など）をダブルクリック
 
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
-xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，TeX 用マクロ [KaTeX (花鳥)](/KaTeX/)，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
+xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
 有名なマクロであれば，たいがい NetInstaller から楽にインストールできます。<br>
 詳細は
 [XyzzyWiki:QuickTour/ext/NetInstaller](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/NetInstaller)
 をご覧ください。<br>
-kyotex-mode，[KaTeX (花鳥)](#xykb6f8d)，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
+kyotex-mode，[outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) (アウトラインツリー表示マクロ。
 LaTeX 正規表現アウトライン機能があるらしい) あたりを入れておけば便利でしょう。<br>
-[bibtex-mode \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)，
-[RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex) というものもあります。<br>
 簡単な使い方を説明します。前に示したリンク先の情報の通り，インストール後，xyzzy を再起動します。<br>
 Alt + x と入力して netinstaller と入力して Enter を押すと Netinstaller が起動します。<br>
 a キーを押し，次の項目以降で示すカッコ内の URI を入力して Enter を押します。<br>
@@ -266,44 +250,6 @@ Ctrl + Enter またはメニューバーより ［Outline-Tree］ → ［アウ�
 あとは，TeX ファイル名をクリックすれば，\section や \subsection の階層構造などが示され，それぞれの項目をクリックすることでファイルの該当する部分に飛びます。
 
 詳細は，[作者の Flash によるデモ](http://ohkubo.s53.xrea.com/xyzzy/outline-tree/demo/outline-tree2.html)をご覧ください。
-
-<!-- ***outline-tree 1 [#xyott1kl] -->
-<!--  -->
-<!-- 以下はバージョン1に相当する古い情報です。 -->
-<!--  -->
-<!-- [[上の xyzzy の画像 [Internet Archive]:http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png]]で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。 -->
-<!-- そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。 -->
-<!--  -->
-<!-- -Masatoshi's xyzzy extend lisps -->
-<!-- (&ref(http://xyzzy.s53.xrea.com/ni/ni.l,http://xyzzy.s53.xrea.com/ni/ni.l);) -->
-<!--  -->
-<!-- から treeviewdll をインストールし，その後 -->
-<!-- -[[雑記帖:http://ohkubo.s53.xrea.com/]] -->
-<!-- (&ref(http://ohkubo.s53.xrea.com/xyzzy/packages.l,http://ohkubo.s53.xrea.com/xyzzy/packages.l);) -->
-<!--  -->
-<!-- から outlinetree をインストールします。~/.xyzzy には -->
-<!-- (load-library "olt/olt") -->
-<!-- と記述します。メニューバーの ［表示］ → ［ツールバー］ → ［Outline］ でアウトライン用ツールバーが起動できる。 -->
-<!-- ［ツール］ → ［アウトラインツリー設定］ で ［アウトラインタイプ］ の ［動作設定］タブで「LaTeXファイル（簡易）」を選びます。 -->
-<!-- あとは，ツールバーの一番左のボタン ［アウトライン作成（更新）］ を押すことで，アウトラインが作成されるようになります。 -->
-<!--  -->
-<!-- 後述する [[KaTeX>#xykb6f8d]] をお使いの方は，ホームディレクトリに “.olt” というファイルを作り，次のように記述しておきます。 -->
-<!-- このように書いておくと，TeX ファイルの場合にアウトラインを作成すると LaTeX 用のアウトラインになります。 -->
-<!--  -->
-<!-- - --  -->
-<!-- ;;; -*- mode: Lisp -* -->
-<!-- (in-package "outline-tree") -->
-<!--  -->
-<!--  ;; For KaTeX -->
-<!-- (when (find-load-path "elisp") -->
-<!--   (require "elisp") -->
-<!--   (add-hook 'elisp::katex-mode-hook 'olt-setting-LaTeX-mode) -->
-<!--   (pushnew '(elisp::katex-mode . olt-setting-LaTeX-mode) -->
-<!--            *olt-setting-alist* :test 'equal)) -->
-<!--  -->
-<!--  ;; このファイルで *olt-setting-alist* に設定した内容を既存のバッファに適用 -->
-<!-- (olt-init-setting) -->
-<!-- - --  -->
 
 ### コメントアウト用マクロ {#kb32d525}
 
