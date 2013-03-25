@@ -127,26 +127,6 @@ xyzzy.exe へのものではなく，xyzzycli.exe へのものにしましょう
 このことから，少なくともマウス操作においては，他のエディタを
 お使いの方にとっても違和感はほとんどないのではないかと思われます。<br>
 
-## SumatraPDF との連携 {#s1d4a0f1}
-
-### forward search {#ra3924a4}
-
-xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。
-
-### inverse search {#n1f72109}
-
-[SumatraPDF](/SumatraPDF/) の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
-
-```
-C:\xyzzy\xyzzycli.exe -g %l "%f"
-```
-
-と書き込んで \[OK\] をクリックしてください。
-
-SumatraPDF で画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
-上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
-なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
-
 ## TeX で書く際に役立つマクロの紹介 {#xycb6f8d}
 
 xyzzy のマクロには，tex/latex/bibtex 編集支援モードの kyotex-mode，アウトラインの表示機能マクロ [outline-tree2](http://ohkubo.s53.xrea.com/xyzzy/index.html#outline-tree2) などがあります。<br>
@@ -162,6 +142,10 @@ a キーを押し，次の項目以降で示すカッコ内の URI を入力し�
 そうすることで，xyzzy マクロを配布しているサイトとマクロのリストが登録されます。<br>
 あとはサイトを選んで Enter で決定し，インストールしたいマクロを選び，i キーでインストールします。<br>
 終了は q です。<br>
+
+### kyotex-mode {#l977de24}
+
+KyoTeX - TeX Wiki を参照．<br>
 
 ### outline-tree でアウトライン表示 {#xyob6f8d}
 
@@ -393,6 +377,26 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyInput (TeX 入力支援スクリプト)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+
+## SumatraPDF との連携 {#s1d4a0f1}
+
+<!-- **forward search [#ra3924a4] -->
+<!--  -->
+<!-- xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。 -->
+
+### inverse search {#n1f72109}
+
+[SumatraPDF](/SumatraPDF/) の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
+
+```
+C:\xyzzy\xyzzycli.exe -g %l "%f"
+```
+
+と書き込んで \[OK\] をクリックしてください。
+
+SumatraPDF で画面の一部（本文の文字など）をダブルクリックすると， xyzzy が前面に出て，該当個所に飛ぶはずです。<br>
+上の記述は xyzzycli.exe が C:/xyzzy/ にあると仮定しています。<br>
+なお，xyzzy の二重起動を防止するため，xyzzy.exe ではなく xyzzycli.exe を指定していることに注意してください。<br>
 
 ## Linux で xyzzy {#wba8406f}
 
