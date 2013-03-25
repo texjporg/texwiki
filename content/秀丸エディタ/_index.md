@@ -92,8 +92,6 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ### 祝鳥 (のりてふ) {#mdf32e5b}
 
-### guishell, TeXmac {#ld68541f}
-
 <!-- **RaTeX0e [#s1e27527] -->
 <!-- -[[RaTeX0e:http://uca-works.com/program/ratex.html]] -->
 <!-- (福中 公輔 さん) -->
