@@ -172,6 +172,18 @@ MakeIndex Option:
 
 - [コンパイルコマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/compile.html) を参照．
 
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#3C0;text-align:center">メニュー [kyotex(Y)]</th><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">機能</th></tr>
+> <tr><td>texでコンパイル(G)</td><td>Ctrl+l Ctrl+o</td><td>TeX を実行して DVI ファイルを表示</td></tr>
+> <tr><td>tex-&gt;bibtex-&gt;tex-&gt;tex(B)</td><td>Ctrl+l Ctrl+b</td><td>TeX -&gt; BibTeX -&gt; TeX -&gt; TeX を実行して DVI ファイルを表示</td></tr>
+> <tr><td>dviファイルからpdfを作る(P)</td><td>Ctrl+l Ctrl+p</td><td>DVI ファイルを PDF ファイルに変換して PDF ファイルを表示</td></tr>
+> </tbody>
+> </table>
+>
+
+kyotex-mode を使用する場合は C-l で recenter するかわりに M-x recenter で recenter が実行できます．<br>
+
 ### 補完コマンド {#be009b07}
 
 - [補完コマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/completion.html) を参照．
