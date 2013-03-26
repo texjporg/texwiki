@@ -380,9 +380,10 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 
 ## SumatraPDF との連携 {#s1d4a0f1}
 
-<!-- **forward search [#ra3924a4] -->
-<!--  -->
-<!-- xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。 -->
+### forward search {#ra3924a4}
+
+xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。<br>
+設定は KyoTeX を参照してください。<br>
 
 ### inverse search {#n1f72109}
 
