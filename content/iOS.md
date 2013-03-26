@@ -36,15 +36,15 @@ pukiwiki: "iOS"
 
 ### シェアウェア・製品 {#na04d581}
 
-- [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
-    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
-    - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222?mt=8)
-    - [FAST Intelligence](http://www.litchie.com/)
 - [Texpad](http://texpadapp.com/) (シェアウェア)
     - Texpad はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
     - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159?mt=8)
     - [Texpad -- blog](http://texpadapp.com/blog/)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
+- [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
+    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
+    - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222?mt=8)
+    - [FAST Intelligence](http://www.litchie.com/)
 - [Tex Touch](http://www.vancapy.com/) (シェアウェア)
     - [iTunes App Store - Tex Touch](http://itunes.apple.com/jp/app/tex-touch/id377627321?mt=8)/[iTunes App Store - Tex Touch for iPhone](http://itunes.apple.com/jp/app/tex-touch-for-iphone/id406891012?mt=8)
     - [Tex Timer](http://www.vancapy.com/textouch/setup/)
