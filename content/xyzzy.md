@@ -58,6 +58,9 @@ xyzzy+ は Ms-PL です．<br>
 興味のある方は，是非参加してみてください。<br>
 
 - [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
+    - [xyzzy-022](http://xyzzy-022.github.com/)
+        - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
+        - [xyzzy - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/xyzzy/)
     - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
         - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
         - [動かないlispパッケージ一覧](https://bitbucket.org/mumurik/xyzzy/wiki/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84lisp%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7)
@@ -67,9 +70,6 @@ xyzzy+ は Ms-PL です．<br>
         - [名無しさんのための GitHub ３分クッキング](https://gist.github.com/1962125)
     - [xyzzy+](http://xyzzy.codeplex.com/)
         - [コミットログ](http://xyzzy.codeplex.com/SourceControl/list/changesets)
-    - [xyzzy-022](http://xyzzy-022.github.com/)
-        - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
-        - [xyzzy - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/xyzzy/)
             <!-- - -[[xyzzy.src (bowbow99-master):https://github.com/bowbow99/xyzzy.src/]] -->
             <!-- - --[[コミットログ:https://github.com/bowbow99/xyzzy.src/commits/]] -->
             <!-- - -[[xyzzy.src (for-gcc):https://github.com/bulb/xyzzy.src]] -->
@@ -172,7 +172,9 @@ KyoTeX - TeX Wiki を参照．<br>
 &#x7e;/.xyzzy などの初期設定ファイルには最低限次のように書いておきます。
 
 ```
+;;
 ;; outline-tree 2
+;;
 (require "outline-tree/outline-tree")
 ```
 
@@ -383,7 +385,7 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 ### forward search {#ra3924a4}
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。<br>
-設定は KyoTeX を参照してください。<br>
+KyoTeX の設定を参照してください。<br>
 
 ### inverse search {#n1f72109}
 
