@@ -37,4 +37,5 @@ chrome://plugins
 
 ## 関連リンク {#v9c56a2d}
 
+- [ChromiumでChrome PDF Viewerを使う](http://hikaru.6.ql.bz/memo.php?id=chrome)
 - [Linux Mint - Google Chrome をインストール！](http://www.mk-mode.com/wordpress/2012/11/04002054/)
