@@ -89,6 +89,8 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [MTeX for Notepad++](</MTeX for Notepad++/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/#s758d3d9>)
+- [xyzzy](/xyzzy/)
+    - KyoTeX
 
 ■ フリーウェア (無料)
 
