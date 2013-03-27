@@ -228,7 +228,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$r = echo "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$r = Write-Output "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -259,7 +259,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = Write-Output "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -418,7 +418,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>-Command "&amp; {$s = echo %s.pdf;$p = \[System.IO.Path\]::GetFullPath($s);cmd /c start chrome --new-window $p}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$s = Write-Output %s.pdf;$p = \[System.IO.Path\]::GetFullPath($s);cmd /c start chrome --new-window $p}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -523,7 +523,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}; if($?) {ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = Write-Output "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; platex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname $s $s; if($?) {dvips -Ppdf -o $p $d}; if($?) {ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -593,7 +593,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 9<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>-Command "&amp; {$r = echo "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s; if($?) {dvips -Ppdf -o $p $d}; if($?) {ps2pdf.bat $p}}"</ins><br>
+　　コマンドライン 　<ins>-Command "&amp; {$r = Write-Output "%s"; $s = """$r"""; $d = """$r.dvi"""; $p = """$r.ps"""; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode $s; if($?) {dvips -Ppdf -o $p $d}; if($?) {ps2pdf.bat $p}}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
