@@ -161,10 +161,10 @@ yaxis("$y$",LeftRight,RightTicks);
 
 ### 関連リンク {#xbb02c40}
 
+- [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [Asymptoteでハマった…](http://forest.edu.u-toyama.ac.jp/blog/2012/12/asymptote-1.html)
 - [Asymptote 問題集](http://d.hatena.ne.jp/denpoya/)
 - [Asymptote - laclefwiki](http://saekiyoshiyasu.org/wiki/Asymptote)
-- [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
 - [実験室(Asymptote)](http://homepage2.nifty.com/domae/asymptote.html)
 - [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
