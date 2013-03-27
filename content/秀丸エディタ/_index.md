@@ -165,9 +165,7 @@ main:
   question $$cmd;
   if (result == yes) {
     save;
-    ##shell = createobject("WScript.Shell");
-    callmethod ##shell, "Run", $$cmd;
-    releaseobject ##shell;
+    runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
   }
 
   releaseobject ##fso;
@@ -206,10 +204,8 @@ main:
 
   $$args = $$texworks + " " + $$pdfFile;
   $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
-  ##shell = createobject("WScript.Shell");
-  callmethod ##shell, "Run", $$cmd;
+  runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
 
-  releaseobject ##shell;
   releaseobject ##re;
   releaseobject ##fso;
 ```
@@ -266,10 +262,8 @@ main:
 
   $$args = $$sumatraPDF + " -reuse-instance " + $$pdfFile + " -inverse-search \"\\\"" + $$hidemaru + "\\\" /m3 /j%l \\\"%f\\\"\"" + " -forward-search " + $$currentTeXFile + " " + $$line;
   $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
-  ##shell = createobject("WScript.Shell");
-  callmethod ##shell, "Run", $$cmd;
+  runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
 
-  releaseobject ##shell;
   releaseobject ##re;
   releaseobject ##fso;
 ```
@@ -328,9 +322,7 @@ main:
   question $$cmd;
   if (result == yes) {
     save;
-    ##shell = createobject("WScript.Shell");
-    callmethod ##shell, "Run", $$cmd;
-    releaseobject ##shell;
+    runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
   }
 
   releaseobject ##fso;
