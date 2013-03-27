@@ -103,3 +103,4 @@ platex hoge.tex
 - [PowerTab](http://powertab.codeplex.com/)
 - [PowerTab](https://bitbucket.org/rod/dotfiles/src/tip/WindowsPowerShell/Modules/PowerTab/)
 - [Windows Power Shell、なんとコマンドシェルからcomオブジェクトまで使える!!](http://morimorigameblogg.blogspot.jp/2009/11/windows-power-shellcom.html)
+- [Dos、バッチ、コマンドプロンプトで仕事をしなければいけない不幸な人に送るforコマンド解説](http://ebi.dyndns.biz/windowsadmin/2012/03/16/dos%E3%80%81%E3%83%90%E3%83%83%E3%83%81%E3%80%81%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%A7%E4%BB%95%E4%BA%8B%E3%82%92%E3%81%97%E3%81%AA%E3%81%91/)
