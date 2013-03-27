@@ -99,7 +99,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 
 ## [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
-- platex を使用する場合 (TeXworks, YaTeX, KaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
+- platex を使用する場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
 
 ***
 
@@ -147,7 +147,7 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- platex を使用する場合 (Texmaker, TeXstudio, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+- platex を使用する場合 (Texmaker, TeXstudio, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
 
 ***
 
@@ -195,7 +195,7 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- uplatex を使用する場合 (TeXworks, YaTeX, KaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
+- uplatex を使用する場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合) などの場合)
 
 ***
 
@@ -243,7 +243,7 @@ latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
 ```
 
-- uplatex を使用する場合 (Texmaker, TeXstudio, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
+- uplatex を使用する場合 (Texmaker, TeXstudio, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合) などの場合)
 
 ***
 
