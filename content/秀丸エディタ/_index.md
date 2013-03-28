@@ -77,6 +77,11 @@ Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
 
 ***
 
+## 行番号の計算方法 {#kfec9023}
+
+デフォルトでは行番号の計算方法がワープロ的（折り返しも１行とする）になっています．<br>
+TeX で文書を作成する場合は行番号の計算方法をエディタ的（改行だけを数える）に変更します．<br>
+
 ## 正規表現 {#f7fa3efd}
 
 - [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
@@ -260,7 +265,7 @@ main:
   $$currentTeXFile = "\"" + $$currentTeXFile + "\"";
   $$pdfFile = "\"" + $$pdfFile + "\"";
 
-  $$args = $$sumatraPDF + " -reuse-instance " + $$pdfFile + " -inverse-search \"\\\"" + $$hidemaru + "\\\" /m3 /j%l \\\"%f\\\"\"" + " -forward-search " + $$currentTeXFile + " " + $$line;
+  $$args = $$sumatraPDF + " -reuse-instance " + $$pdfFile + " -inverse-search \"\\\"" + $$hidemaru + "\\\" /m3 /j%%l \\\"%%f\\\"\"" + " -forward-search " + $$currentTeXFile + " " + $$line;
   $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
   runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
 
