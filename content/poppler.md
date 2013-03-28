@@ -87,7 +87,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
-- [Python](http://www.python.org/) 2.7.3 Windows Installer (32bit 版) をダウンロードしてインストールします．<br>
+- [Python](http://www.python.org/) 2.7.4 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
     <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
     <!--  -->
     <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
@@ -214,21 +214,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.0/libpng-1.6.0.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.1/libpng-1.6.1.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.0.tar.xz
-$ tar xvf libpng-1.6.0.tar.xz
-$ pushd libpng-1.6.0
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.1.tar.xz
+$ tar xvf libpng-1.6.1.tar.xz
+$ pushd libpng-1.6.1
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.0/libpng-1.6.0.tar.xz -->
-<!-- $ tar xvf libpng-1.6.0.tar.xz -->
-<!-- $ pushd libpng-1.6.0 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.1/libpng-1.6.1.tar.xz -->
+<!-- $ tar xvf libpng-1.6.1.tar.xz -->
+<!-- $ pushd libpng-1.6.1 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
