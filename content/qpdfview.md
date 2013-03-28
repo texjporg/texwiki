@@ -9,7 +9,9 @@ pukiwiki: "qpdfview"
 
 ## [qpdfview](https://launchpad.net/qpdfview) {#gb497957}
 
-### qpdfview とは {#o070cb99}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## qpdfview とは {#o070cb99}
 
 qpdfview はタブ切り替え型のドキュメントビューアです．<br>
 PDF ファイルや PS ファイルが表示できます．<br>
