@@ -9,7 +9,9 @@ pukiwiki: "PdfViewer"
 
 ## [PdfViewer](http://opendesktop.org/content/show.php/PdfViewer+%28app+%2B+library%29?content=149637) {#a48b6ebd}
 
-### PdfViewer とは {#f1727432}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## PdfViewer とは {#f1727432}
 
 PdfViewer は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
