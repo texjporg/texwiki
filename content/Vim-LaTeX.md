@@ -63,7 +63,7 @@ GVim の on-the-spot の実装に問題があるようです．
 
 ## インストール {#sbc289a6}
 
-### [W32TeX](/W32TeX/) ([Windows](</Microsoft Windows/>)) {#eb85b35a}
+### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) ([Windows](</Microsoft Windows/>)) {#eb85b35a}
 
 [Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
 
@@ -125,6 +125,7 @@ let g:Tex_BibtexFlavor = 'pbibtex -kanji=utf8'
 "let g:Tex_BibtexFlavor = 'upbibtex'
 let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
 let g:Tex_ViewRule_dvi = 'C:/w32tex/dviout/dviout.exe -1'
+"let g:Tex_ViewRule_dvi = 'C:/texlive/2012/tlpkg/dviout/dviout -1'
 let g:Tex_ViewRule_ps = 'C:/Program Files/SumatraPDF/SumatraPDF.exe -reuse-instance'
 "let g:Tex_ViewRule_ps = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe -reuse-instance'
 let g:Tex_ViewRule_pdf = 'texworks'
