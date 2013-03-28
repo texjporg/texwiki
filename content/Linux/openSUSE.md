@@ -11,6 +11,10 @@ pukiwiki: "Linux/openSUSE"
 
 ## [openSUSE](http://www.opensuse.org/) {#nea99a9d}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## openSUSE とは {#n178877e}
+
 - [openSUSE.org](http://www.opensuse.org/)
 - [メインページ - openSUSE](http://ja.opensuse.org/)
 
