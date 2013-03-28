@@ -11,6 +11,8 @@ pukiwiki: "Linux/CentOS"
 
 ## [CentOS](http://www.centos.org/) {#n9cb81ae}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## TeX Live {#od75da14}
 
 ### TeX Live 2012 {#e1520aae}
