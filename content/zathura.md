@@ -9,6 +9,8 @@ pukiwiki: "zathura"
 
 ## [zathura](http://pwmt.org/projects/zathura/) {#z4200d90}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## zathura とは {#s6eb3d04}
 
 zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．<br>
