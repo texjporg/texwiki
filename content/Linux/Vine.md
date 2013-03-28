@@ -11,6 +11,8 @@ pukiwiki: "Linux/Vine"
 
 ## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## Vine Linux とは {#c3c75f2e}
 
 Vine Linux はコンパクトで軽量な日本語 Linux ディストリビューションです．
