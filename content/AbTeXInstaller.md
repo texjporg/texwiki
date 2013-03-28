@@ -11,7 +11,7 @@ pukiwiki: "AbTeXInstaller"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### TeX インストーラ 3 とは {#wd4d33ba}
+## TeX インストーラ 3 とは {#wd4d33ba}
 
 「TeX インストーラ 3」は TeX のインストーラーです。<br>
 [W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
@@ -35,7 +35,7 @@ GSview が CTAN から提供されなくなりました． → [GSview is no lon
 GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
 GSview をインストールする場合は TeXインストーラ 3 0.84 にアップデートしてください．<br>
 
-### インストール方法 {#gbf84ff3}
+## インストール {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 から TeXインストーラ3 の最新版をダウンロードして展開 (解凍) します。<br>
@@ -224,7 +224,7 @@ otf パッケージの最新版は otfbeta です。<br>
 <!--  -->
 <!-- 【↑】[[「TeX インストーラ 3」以外のインストーラー>TeX installers for Windows]]のことも時々でいいから思い出してあげてください。 -->
 
-### 参考 {#r85dc0a5}
+## 参考 {#r85dc0a5}
 
 - [あべのりページ](http://www.math.sci.hokudai.ac.jp/~abenori/) ([阿部紀行さん](http://d.hatena.ne.jp/abenori/) ([twitter](https://twitter.com/abenori)))
     「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
