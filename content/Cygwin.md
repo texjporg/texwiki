@@ -40,7 +40,7 @@ Cygwin 本家の TeX Live パッケージ以外では
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．<br>
 ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
 
-## [TeX Live](</TeX Live/>) {#dead7b03}
+## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#dead7b03}
 
 ### リリース情報 {#z608db6c}
 
