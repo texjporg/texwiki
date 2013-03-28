@@ -11,6 +11,8 @@ pukiwiki: "Linux/Gentoo"
 
 ## [Gentoo Linux](http://www.gentoo.org/) {#j8a08e75}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## 公式サイト {#gdebd34f}
 
 - [Gentoo Linux](http://www.gentoo.org/)
