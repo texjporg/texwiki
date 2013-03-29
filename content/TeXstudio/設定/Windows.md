@@ -123,7 +123,7 @@ DviPdf
 : dvipdfmx.exe %.dvi
 
 BibTeX
-: pbibtex.exe %<br>pbibtex.exe -kanji=utf8 %<br>upbibtex.exe %<br>bibtexu.exe %<br>bibtex.exe %
+: pbibtex.exe -kanji=utf8 %<br>upbibtex.exe %<br>bibtexu.exe %<br>bibtex.exe %
 
 BibTex 8ビット
 : bibtex8.exe %
@@ -132,7 +132,7 @@ Biber
 : biber.exe %
 
 Makeindex
-: mendex.exe %.idx<br>mendex.exe -U %.idx<br>makeindex.exe %.idx
+: mendex.exe -U %.idx<br>makeindex.exe %.idx
 
 Texindy
 : texindy.exe
@@ -141,7 +141,7 @@ Makeglossary
 : makeglossaries.exe
 
 Metapost
-: pmpost.exe -interaction=nonstopmode ?me)<br>pmpost.exe -kanji=utf8 -interaction=nonstopmode ?me)<br>upmpost.exe -interaction=nonstopmode ?me)<br>mpost.exe -interaction=nonstopmode ?me)
+: pmpost.exe -kanji=utf8 -interaction=nonstopmode ?me)<br>upmpost.exe -interaction=nonstopmode ?me)<br>mpost.exe -interaction=nonstopmode ?me)
 
 Asymptote
 : asy.exe %m\*.asy
