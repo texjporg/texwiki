@@ -11,19 +11,19 @@ pukiwiki: "Linux/Gentoo"
 
 ## [Gentoo Linux](http://www.gentoo.org/) {#j8a08e75}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gentoo_Linux_logo_matte.svg/200px-Gentoo_Linux_logo_matte.svg.png" alt="Gentoo" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## 公式サイト {#gdebd34f}
+## Gentoo とは {#gdebd34f}
 
 - [Gentoo Linux](http://www.gentoo.org/)
-
-## Gentoo Linux Users Group Japan {#c18610d8}
-
 - [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/)
 
 ## [TeX Live](</TeX Live/>) {#ld62f64f}
 
 - [TeX Live - Gentoo Wiki](http://wiki.gentoo.org/wiki/TeX_Live)
+- [Gentoo Packages /package/app-text/texlive](http://packages.gentoo.org/package/app-text/texlive)
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
 - [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 
