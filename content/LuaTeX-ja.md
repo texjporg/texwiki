@@ -192,5 +192,6 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
 - \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
 - [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
+- [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
 - [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
