@@ -13,12 +13,20 @@ pukiwiki: "Android"
 
 ## TeX Live {#ec902282}
 
-- [Android で TeX がしたい](http://tkyon.blogspot.jp/2013/03/android-tex.html)
-- [TeXPortal](https://github.com/anhoavu/TeXPortal/)
+### TeX Live (Android) {#h805f992}
+
+- [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal)
     - TeXPortal はインターネットに接続しなくても Android で TeX や LaTeX ドキュメントのコンパイルが可能です．
-    - [TeXPortal - The TeX EXperience](https://play.google.com/store/apps/details?id=lah.texportal)
+    - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
+    - [Nexus7（タブレット端末）にTeXPortalをインストール](http://blog.livedoor.jp/ti5942/archives/7804326.html)
 - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
+    - TeXLive binary distribution for Android OS
 - [TeX Live for Android](https://code.google.com/p/texlive-for-android/)
+    - An experimental native implementation of TeX Live 2012 for Android.
+
+### TeX Live (Linux) {#rfcf69bf}
+
+- [Android で TeX がしたい](http://tkyon.blogspot.jp/2013/03/android-tex.html)
 
 ## PDF ビューア {#t5fdeba9}
 
