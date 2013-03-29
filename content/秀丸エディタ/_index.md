@@ -152,6 +152,7 @@ main:
   ##fso = createobject("Scripting.FileSystemObject");
   $$c = callmethod_returnstr(##fso, "GetParentFolderName", filename2);
   $$b = callmethod_returnstr(##fso, "GetBaseName", filename2);
+  releaseobject ##fso;
   $$cd = "cd /d " + "\"" + $$c + "\"";
   $$latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
   if ((charset & 0x3F) == 6) {
@@ -172,8 +173,6 @@ main:
     save;
     runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
   }
-
-  releaseobject ##fso;
 ```
 
 ***
@@ -204,15 +203,13 @@ main:
   }
 
   $$mainTeXDir = callmethod_returnstr(##fso, "GetParentFolderName", $$pdfFile);
+  releaseobject ##re;
+  releaseobject ##fso;
   $$cd = "cd /d " + "\"" + $$mainTeXDir + "\"";
   $$pdfFile = "\"" + $$pdfFile + "\"";
-
   $$args = $$texworks + " " + $$pdfFile;
   $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
   runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
-
-  releaseobject ##re;
-  releaseobject ##fso;
 ```
 
 ***
@@ -261,16 +258,14 @@ main:
   }
 
   $$mainTeXDir = callmethod_returnstr(##fso, "GetParentFolderName", $$pdfFile);
+  releaseobject ##re;
+  releaseobject ##fso;
   $$cd = "cd /d " + "\"" + $$mainTeXDir + "\"";
   $$currentTeXFile = "\"" + $$currentTeXFile + "\"";
   $$pdfFile = "\"" + $$pdfFile + "\"";
-
   $$args = $$sumatraPDF + " -reuse-instance " + $$pdfFile + " -inverse-search \"\\\"" + $$hidemaru + "\\\" /m3 /j%%l \\\"%%f\\\"\"" + " -forward-search " + $$currentTeXFile + " " + $$line;
   $$cmd = "cmd /c " + $$cd + " && echo " + $$args + " | cmd";
   runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
-
-  releaseobject ##re;
-  releaseobject ##fso;
 ```
 
 ***
@@ -306,6 +301,7 @@ main:
   ##fso = createobject("Scripting.FileSystemObject");
   $$c = callmethod_returnstr(##fso, "GetParentFolderName", filename2);
   $$b = callmethod_returnstr(##fso, "GetBaseName", filename2);
+  releaseobject ##fso;
   $$cd = "cd /d " + "\"" + $$c + "\"";
   $$latex = "platex -guess-input-enc -sjis-terminal";
   if ((charset & 0x3F) == 6) {
@@ -329,8 +325,6 @@ main:
     save;
     runex $$cmd, 0, 0, "", 7, "", 1, "", 1, "", 0, 0, 0;
   }
-
-  releaseobject ##fso;
 ```
 
 ***
