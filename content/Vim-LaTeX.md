@@ -63,7 +63,7 @@ GVim の on-the-spot の実装に問題があるようです．
 
 ## インストール {#sbc289a6}
 
-### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) ([Windows](</Microsoft Windows/>)) {#eb85b35a}
+### Windows {#eb85b35a}
 
 [Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
 
@@ -140,7 +140,7 @@ let g:Tex_ViewRule_pdf = 'texworks'
 
 TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
-### [MacTeX &amp; TeX Live](/Mac/#f5466652) ([OS X](/Mac/)) {#aecb2dfb}
+### OS X {#aecb2dfb}
 
 動作未確認です．<br>
 Mac OS X 10.6 では動作するようです． → -[VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html), [VIMでLaTeX　前回の訂正](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_168.html)
@@ -233,7 +233,7 @@ set imdisable
 
 set imdisable を設定すると問題が発生する場合は set imdisable を削除してください．<br>
 
-### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) {#f59a6b76}
+### Linux {#f59a6b76}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
 
