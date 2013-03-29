@@ -131,10 +131,10 @@ C-c s または M-x sumatrapdf-forward-search で TeX ファイル中のカー�
 メニューの \[kyotex(Y)\]-\[基本設定\]-\[コンパイラの設定(D)\] で
 
 TeX(T):
-: platex -kanji=utf8 -guess-input-enc -synctex=1
+: platex -kanji=utf8 -guess-input-enc -synctex=1<br>uplatex -kanji=utf8 -no-guess-input-enc -synctex=1
 
 BiBTeX(B):
-: pbibtex -kanji=utf8
+: pbibtex -kanji=utf8<br>upbibtex
 
 DVI->PDF(P):
 : dvipdfmx
@@ -149,7 +149,9 @@ MakeIndex Option:
 
 - C:\xyzzy\site-lisp\kyotex\kyotex-compiler-settings.l
 
-に設定が保存されます．
+に設定が保存されます．<br>
+
+■ platex, pbibtex の場合
 
 ***
 
@@ -162,6 +164,23 @@ MakeIndex Option:
 (setq *kyotex-default-makeindex-args-str* "@@")
 (setq *kyotex-default-batch-commands* '("platex @@.tex"))
 (setq *kyotex-default-batch-commands-str* "platex @@.tex")
+```
+
+***
+
+■ uplatex, upbibtex の場合
+
+***
+
+```
+(setq *kyotex-default-tex-compiler* "uplatex -kanji=utf8 -no-guess-input-enc -synctex=1")
+(setq *kyotex-default-bibtex-compiler* "upbibtex")
+(setq *kyotex-default-dvipdfm-compiler* "dvipdfmx")
+(setq *kyotex-default-makeindex-compiler* "mendex -U")
+(setq *kyotex-default-makeindex-args* '("@@"))
+(setq *kyotex-default-makeindex-args-str* "@@")
+(setq *kyotex-default-batch-commands* '("uplatex @@.tex"))
+(setq *kyotex-default-batch-commands-str* "uplatex @@.tex")
 ```
 
 ***
