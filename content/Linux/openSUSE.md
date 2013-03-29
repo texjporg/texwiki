@@ -11,6 +11,8 @@ pukiwiki: "Linux/openSUSE"
 
 ## [openSUSE](http://www.opensuse.org/) {#nea99a9d}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/98/OpenSUSE_official-logo-color.svg/200px-OpenSUSE_official-logo-color.svg.png" alt="openSUSE" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## openSUSE とは {#n178877e}
