@@ -11,7 +11,15 @@ pukiwiki: "Linux/CentOS"
 
 ## [CentOS](http://www.centos.org/) {#n9cb81ae}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a9/CentOS_full_logo.svg/500px-CentOS_full_logo.svg.png" alt="CentOS" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## CentOS とは {#hc0603c9}
+
+CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．<br>
+
+- [CentOS](http://www.centos.org/)
 
 ## TeX Live {#od75da14}
 
