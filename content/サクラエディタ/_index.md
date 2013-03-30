@@ -126,7 +126,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 ## デフォルトの文字コード {#a47f6241}
 
-サクラエディタは，\[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] からデフォルトの文字コードを指定することができます．<br>
+サクラエディタ Ver. 2.0.6.0 は \[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] からデフォルトの文字コードを指定することができます．<br>
 UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選択します．<br>
 
 ***
@@ -135,18 +135,18 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \] <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
+　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
 　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
 
 <br>
 
 　　　　外部ヘルプの設定(L)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (2)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (2)... \]</span><br>
 
 <br>
 
 　　　　外部HTMLヘルプの設定(P)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (3)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (3)... \]</span><br>
 　　　　☑ビューアを複数起動しない(N)<br>
 
 <br>
@@ -353,6 +353,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 ## マクロ {#k75075b0}
 
+- サクラエディタ r2746 で ExpandParameter にタイプ別設定の名前などの追加が行われました (→ [Sakura Editor / Code / Commit \[r2746\]](http://sourceforge.net/p/sakura-editor/code/2746/))
 - サクラエディタ Ver. 2.0.6.0 で ExpandParameter の機能追加が行われました (→ [Sakura Editor / PatchUnicode / #302 ExpandParameter機能追加等](http://sourceforge.net/p/sakura-editor/patchunicode/302/))
 - [Macro - SakuraEditorWiki](http://sakura.qp.land.to/?Macro)
     <!-- -[[サクラエディタマクロ:http://www.geocities.jp/maru3128/SakuraMacro/]] -->
@@ -1303,11 +1304,13 @@ main();
 
 ## 入力補完 {#b1c33ed1}
 
-サクラエディタには TeX の入力補完機能があります．
+TeX の入力補完機能があります．
 
 入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] または Ctrl+Space で実行できます．<br>
 単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．<br>
 サクラエディタ Ver. 2.0.6.0 で強調キーワードで補完できるようになりました (→ [Sakura Editor / PatchUnicode / #340 強調キーワードで補完修正](http://sourceforge.net/p/sakura-editor/patchunicode/340/))<br>
+
+\[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] で入力補完機能の設定ができます．<br>
 
 ***
 
@@ -1315,18 +1318,18 @@ main();
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> \[ (1)... \] <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
+　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
 　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
 
 <br>
 
 　　　　外部ヘルプの設定(L)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (2)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (2)... \]</span><br>
 
 <br>
 
 　　　　外部HTMLヘルプの設定(P)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \[ (3)... \]<br>
+　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (3)... \]</span><br>
 　　　　☑ビューアを複数起動しない(N)<br>
 
 <br>
@@ -1339,7 +1342,7 @@ main();
 
 ## アウトライン解析 {#kb277c8a}
 
-サクラエディタには TeX のアウトライン解析機能があります．
+TeX のアウトライン解析機能があります．
 
 アウトライン解析は，メニューの \[検索(S)\] → \[アウトライン解析(L)...\] で実行できます．<br>
 アウトライン解析画面のドッキングも可能です．<br>
@@ -1365,13 +1368,13 @@ main();
 　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
 　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
 　　　　　 TAB表示(8文字)　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
-　　　　　　　☐矢印表示(>)　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> \[ (1)... \]<br>
+　　　　　　　☐矢印表示(>)　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
 
 <br>
 
 　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　その他<br>
 　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　　☐英文ワードラップ(W)<br>
-　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)　　☐ぶら下げを隠す(-)<br>
+　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
 　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
 　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　　☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
 　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
@@ -1384,7 +1387,7 @@ main();
 - [Plugin - SakuraEditorWiki](http://sakura.qp.land.to/?Plugin)
     - [Plugin/投稿](http://sakura.qp.land.to/?Plugin%2F%C5%EA%B9%C6)
 
-サクラエディタには，プラグイン機能があります．
+プラグイン機能があります．
 
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
@@ -1422,7 +1425,7 @@ main();
 
 ## 関連付け {#jcb237bc}
 
-サクラエディタは，タイプ別設定一覧からの関連付けが可能です．
+タイプ別設定一覧からの関連付けが可能です．
 
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
@@ -1431,9 +1434,9 @@ main();
 
 ## 背景画像の表示 {#g21b26e8}
 
-サクラエディタは，背景画像を表示することが可能です．
+背景画像を表示することが可能です．
 
-メニューの \[設定(O)\] → \[タイプ別設定(Y)...\] の カラータブの背景画像から画像を選択できます．
+サクラエディタ Ver. 2.0.6.0 は \[設定(O)\] → \[タイプ別設定(Y)...\] のカラータブの背景画像から画像を選択できます．
 
 ## Linux で サクラエディタを使う {#pf5d83cb}
 
