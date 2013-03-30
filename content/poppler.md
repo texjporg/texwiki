@@ -9,6 +9,8 @@ pukiwiki: "poppler"
 
 ## [poppler](http://poppler.freedesktop.org/) {#c1f030c4}
 
+<img src="http://poppler.freedesktop.org/logo.png" alt="poppler" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## poppler とは {#fd295383}
