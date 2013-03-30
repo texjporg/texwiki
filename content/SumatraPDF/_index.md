@@ -1638,6 +1638,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 - [F# 3.0 を Visual Studio なしでインストールする](http://blog.recyclebin.jp/archives/2889)
 - [Microsoft、「Visual Studio Express」でF#言語を利用可能にするアドインを公開](http://www.forest.impress.co.jp/docs/news/20120913_559448.html)
 - [DDEApp Tutorial (C#, C++)](http://www.codeproject.com/Articles/401117/DDEApp-Tutorial-Csharp-Cplusplus)
+- [現在実行しているDLLのパスを取得する。(GetExecutingAssembly )](http://d.hatena.ne.jp/tekk/20110307/1299513821)
 - [Process.Start()で起動したプロセスのメインウィンドウのハンドルが取得できない場合の対処法](http://www.slotware.net/blog/2009/11/processstart.html)
 - \[[SDK32\] バッファ長の指定が不十分だと DDEML で不具合が発生する](http://support.microsoft.com/kb/107387/ja)
 - [DDE Is Still Alive &amp; Kicking](http://chrisoldwood.blogspot.jp/2009/10/dde-is-still-alive-kicking.html)
