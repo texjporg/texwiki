@@ -25,14 +25,14 @@ OS X 10.8, 10.7, 10.6, 10.5
 
 [JTeX](http://www.math.sci.osaka-u.ac.jp/~koiso/JTeX.html) の最近の変更を参照．<br>
 
-### JTeXEdit {#i6a864d7}
+### JTeXEdit <a id="jtexedit"></a> {#i6a864d7}
 
 JTeXEdit は TeX 用エディタです．<br>
 JTeX に含まれています．<br>
 
 - [MathTime Pro 2 と JTeXEdit](http://west.math.cst.nihon-u.ac.jp/~nisikawa/blog/?p=13)
 
-### PictPrinter {#s727dea0}
+### PictPrinter <a id="pictprinter"></a> {#s727dea0}
 
 PictPrinter は DVI プレビューアです．<br>
 JTeX に含まれています．<br>
