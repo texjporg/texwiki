@@ -9,6 +9,10 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
+```
+
+```
+
 ## [KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) &amp; [KaTeX カスタム版](https://github.com/mumurik/NAXEL/downloads) {#f8899a4c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
@@ -33,7 +37,7 @@ GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移�
 KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX です．<br>
 KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br> <!-- マルチフレーム版専用の KaTeX カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
-マルチフレーム版専用の KaTeX カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
+マルチフレーム版専用の KaTeX カスタム版は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
 マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
 
@@ -41,7 +45,7 @@ KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
 EmacsLisp移植キット/emacs.l カスタム版のライセンスは GNU GPL v2 です．<br> <!-- マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
-マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
+マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
 マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
 マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
 
@@ -113,7 +117,7 @@ KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，ka
 
 ***
 
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.12@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.12@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>?</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
 
@@ -178,7 +182,7 @@ xyzzy 標準のキーバインドと Windows キーバインドの切り替え�
 
 マルチフレーム版以外を使用する場合は [KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) を使用します．
 
-マルチフレーム版を試している方は，[Downloads · mumurik/NAXEL · GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記のサイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
+マルチフレーム版を試している方は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記のサイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
 マルチフレーム版では KaTeX オリジナル版を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ## 設定 {#pea65968}
@@ -1013,20 +1017,20 @@ WhatsUniCJK-tex.zip などを参考にしてください。
 %%% 簡化字中国語（中国大陸などで用いられる）の場合は
 %%% 「簡体中文」環境を用います。
 \begin{簡体中文}
-你好。说\textbf{东大}。请多关照。
+?好。?\textbf{?大}。?多?照。
 \end{簡体中文}
 
 \subsection{Traditional Chinese}
 %%% 繁體字中国語（臺灣［台湾］・香港などで用いられる）の場合は
 %%% 「繁体中文」環境を用います。
 \begin{繁体中文}
-你好。說\textbf{東大}。請多關照。
+?好。?\textbf{東大}。請多關照。
 \end{繁体中文}
 
 \section{Korean}
 %%% 韓國語・朝鮮語の場合は「ハングル」環境を用います。
 \begin{ハングル}
-안녕하세요.\textbf{히가시 히로시}라고 합니다.잘 부탁드립니다.
+?????.\textbf{??? ???}?? ???.? ??????.
 \end{ハングル}
 
 \end{document}
