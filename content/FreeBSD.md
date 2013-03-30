@@ -9,6 +9,8 @@ pukiwiki: "FreeBSD"
 
 ## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/df/Freebsd_logo.svg/500px-Freebsd_logo.svg.png" alt="FreeBSD" style="float:right">
+
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
