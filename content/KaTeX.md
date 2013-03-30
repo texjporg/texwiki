@@ -27,27 +27,34 @@ GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移�
 マルチフレーム版では動作しません．<br>
 マルチフレーム版では KaTeX カスタム版を使用してください．<br> <!-- KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．~ -->
 
-<!-- -[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] -->
 - [雄猫のがらくた置き場 (xyzzy) \[Internet Archive\]](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) (公式サイトの Web Archive)
 
 <!-- #ref(http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png,nolink,KaTeX を使った xyzzy の画面) -->
+
+<!-- 公式サイトの Web Archive [[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] -->
+<!-- (&ref(http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l,http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l);) -->
+<!-- から KaTeX を選択してダウンロードできます．~ -->
+<!-- Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます． -->
+
+マルチフレーム版を使用している方は，[https://github.com/mumurik/NAXEL/downloads](https://github.com/mumurik/NAXEL/downloads) からダウンロードしたものを使ってください。（KaTeX の公式サイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
+マルチフレーム版では KaTeX オリジナル版を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ### KaTeX カスタム版とは {#m8b25abb}
 
 KaTeX (花鳥) カスタム版は，マルチフレーム版専用の KaTeX です．<br>
 KaTeX (花鳥) カスタム版のライセンスは GNU GPL v2 です．<br>
 マルチフレーム版ではオリジナルの KaTeX を使用した場合，スタックオーバーフローのエラーが発生するので KaTeX カスタム版を使用してください．<br> <!-- マルチフレーム版専用の KaTeX カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
-マルチフレーム版専用の KaTeX カスタム版は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
-マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
-マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
+マルチフレーム版専用の KaTeX カスタム版は，[https://github.com/mumurik/NAXEL/downloads](https://github.com/mumurik/NAXEL/downloads) からダウンロードできます．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
+マルチフレーム版でない xyzzy を使う方は，KaTeX オリジナル版を使ってください．<br>
 
 ### EmacsLisp移植キット/emacs.l カスタム版とは {#x6836fe0}
 
 EmacsLisp移植キット/emacs.l カスタム版は，マルチフレーム版専用の EmacsLisp移植キット/emacs.l です．<br>
 EmacsLisp移植キット/emacs.l カスタム版のライセンスは GNU GPL v2 です．<br> <!-- マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[[マルチフレーム版の開発サイトのダウンロードページ:https://bitbucket.org/mumurik/xyzzy/downloads]]からダウンロードできます．~ -->
-マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードできます．<br>
-マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br> <!-- マルチフレーム版でないxyzzyを使う方は，[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] をダウンロードして使ってください．~ -->
-マルチフレーム版でないxyzzyを使う方は，[KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) をダウンロードして使ってください．<br>
+マルチフレーム版専用の EmacsLisp移植キット/emacs.l カスタム版は，[https://github.com/mumurik/NAXEL/downloads](https://github.com/mumurik/NAXEL/downloads) からダウンロードできます．<br>
+マルチフレーム版の開発サイトのダウンロードページに置かれているものは，マルチフレーム版での使用を想定して配布されているものです．<br>
+マルチフレーム版でない xyzzy を使う方は，KaTeX オリジナル版を使ってください．<br>
 
 ### License {#x302c417}
 
@@ -117,7 +124,7 @@ KaTeX Version 1.67.1.11 では readme.txt の License はフリーウェア，ka
 
 ***
 
-<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.12@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>?</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#33CC00;"><ins>　　<span style="color:White;"><strong>xyzzy 0.2.3.12@KaTeX</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#22BB00;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 検索(S)　 表示(V)　 ウィンドウ(W)　 ツール(T)　 KaTeX(K)　 ヘルプ(?)　　　　　　　　　　　</ins></span><br>
 
@@ -173,17 +180,6 @@ Windows 標準のキーボードショートカットが使えるようになり
 - [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
 
 xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
-
-<!-- 公式サイトの Web Archive [[雄猫のがらくた置き場 (xyzzy) [Internet Archive]:http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html]] -->
-<!-- (&ref(http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l,http://web.archive.org/web/20070830041740/http://osuneko.at.infoseek.co.jp/xyzzy/packages.l);) -->
-<!-- から KaTeX を選択してダウンロードできます．~ -->
-<!-- Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます． -->
-<!-- マルチフレーム版以外を使用する場合は [[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] を使用します． -->
-
-マルチフレーム版以外を使用する場合は [KaTeX オリジナル版](http://web.archive.org/web/20100624030528/http://osuneko.at.infoseek.co.jp/xyzzy/xyzzy.html) を使用します．
-
-マルチフレーム版を試している方は，[Downloads ・ mumurik/NAXEL ・ GitHub](https://github.com/mumurik/NAXEL/downloads)からダウンロードしたものを使ってください。（上記のサイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
-マルチフレーム版では KaTeX オリジナル版を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ## 設定 {#pea65968}
 
@@ -271,7 +267,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                      (t "mendex -U")))
 (setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
-(setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
+(if (file-exist-p "C:/w32tex/dviout/dviout.exe")
+    (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
+  (setq elisp::dvi2-command "C:/texlive/2012/tlpkg/dviout/dviout -1"))
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 
@@ -299,9 +297,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
   (let* ((tex-file (get-buffer-file-name))
          (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
          (line (format nil "~D" (current-line-number)))
-         (cmd (if (file-exist-p "C:/Program Files/SumatraPDF/SumatraPDF.exe")
-                  "\"C:/Program Files/SumatraPDF/SumatraPDF\""
-                "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
+         (cmd "rundll32 shell32,ShellExec_RunDLL SumatraPDF")
          (args))
     (setq args (concat "-reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
     (message (concat cmd " " args))
@@ -458,9 +454,7 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
   (let* ((tex-file (get-buffer-file-name))
          (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
          (line (format nil "~D" (current-line-number)))
-         (cmd (if (file-exist-p "C:/Program Files/SumatraPDF/SumatraPDF.exe")
-                  "\"C:/Program Files/SumatraPDF/SumatraPDF\""
-                "\"C:/Program Files (x86)/SumatraPDF/SumatraPDF\""))
+         (cmd "rundll32 shell32,ShellExec_RunDLL SumatraPDF")
          (args))
     (setq args (concat "-reuse-instance \"" pdf-file "\" -forward-search \"" tex-file "\" " line))
     (message (concat cmd " " args))
@@ -642,6 +636,11 @@ Optional second argument CHAR is for non-interactive call from menu."
 KaHTML についての記述は
 [XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9)
 に移転することにしました。そちらを是非ご参照いただければと思います。
+
+## bibtex-mode, RefTeX for xyzzy {#x70fba46}
+
+- [bibtex-mode \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)
+- [RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex)
 
 ## 対応括弧を見つけてみる {#xyparenl}
 
@@ -1017,20 +1016,20 @@ WhatsUniCJK-tex.zip などを参考にしてください。
 %%% 簡化字中国語（中国大陸などで用いられる）の場合は
 %%% 「簡体中文」環境を用います。
 \begin{簡体中文}
-?好。?\textbf{?大}。?多?照。
+你好。说\textbf{东大}。请多关照。
 \end{簡体中文}
 
 \subsection{Traditional Chinese}
 %%% 繁體字中国語（臺灣［台湾］・香港などで用いられる）の場合は
 %%% 「繁体中文」環境を用います。
 \begin{繁体中文}
-?好。?\textbf{東大}。請多關照。
+你好。說\textbf{東大}。請多關照。
 \end{繁体中文}
 
 \section{Korean}
 %%% 韓國語・朝鮮語の場合は「ハングル」環境を用います。
 \begin{ハングル}
-?????.\textbf{??? ???}?? ???.? ??????.
+안녕하세요.\textbf{히가시 히로시}라고 합니다.잘 부탁드립니다.
 \end{ハングル}
 
 \end{document}
@@ -1311,7 +1310,7 @@ dvipdfmx gtest-o.dvi
 
 を実行して PDF ファイルを閲覧するようにしてください。
 
-xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気を出して
+xyzzy オリジナル版の作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気を出して
 他の言語を扱えるようになったら，
 その都度グルジア語と同じように，TeX パッケージの転記規則を調べ，
 変換スクリプトを作ることで同様に任意の外国語文字を直接入力できるように
@@ -1331,7 +1330,7 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
 
 ## 関連リンク {#h4cf9c4e}
 
-<!-- -[[katex 1.67.1.12:http://www.geocities.jp/mathemabics/storage.html]] -->
+- [KaTeXのコマンド](http://hoehoetukasa.blogspot.jp/2013/03/katex.html)
 - [katex のキーワードハイライト ($~$) を変更する](http://d.hatena.ne.jp/manthano/20120801/1343829179)
 - [xyzzyとkatex](http://dai-ao.seesaa.net/article/274397892.html)
 - [dviout](http://airhoo.hatenablog.com/entry/2012/05/07/050123)
@@ -1353,3 +1352,34 @@ xyzzy 作者の[亀井哲弥さん](http://www.jsdlab.co.jp/~kamei/)がやる気
 - [質問箱/112 - XyzzyWiki (Dabbrevで、ある開いていないファイルのみを読み込んで補完する方法)](http://xyzzy.s53.xrea.com/wiki/index.php?%BC%C1%CC%E4%C8%A2%2F112)
 - [katex-kill-proc](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?33a2536c21b7ead86ca4343ecece4446)
 - [katex-autoload-dir](http://raido.sakura.ne.jp/southly/lisp/ni/view.lisp?4876687f1858d1f88578004a36293b60)
+
+<!-- *謝辞 [#xyathxds] -->
+<!--  -->
+<!-- 本文書を作るにあたり，[[2ch:http://www.2ch.net/]] の xyzzy 関連スレや -->
+<!-- [[Xyzzy Wiki:http://xyzzy.s53.xrea.com/wiki/]] のアイディアを -->
+<!-- 拝借するなどしています。親切にご教示くださった方々に心より御礼申し上げます。 -->
+<!--  -->
+<!-- *Comments [#xyacm2ab] -->
+<!--  -->
+<!-- -編集などは勝手にどうぞ。編集まではしたくないけどツッコミがある場合、新しいアイディアがある場合、この文書に関するご質問がある場合はコメント欄から遠慮なくどうぞ。（質問は一応調べてから来てくれるとうれしいです。） - - ダメダメ筆者 &new{2005-10-26 (水) 09:41:57}; -->
+<!-- -項目が多くなって見づらい気がしたので多少整理してみました。ちなみに[[xyzzyでもispellは使える:http://xyzzy.s53.xrea.com/wiki/?QuickTour%2Fetc%2Fispell]]はずです。とはいえ私もaspell派ですが。 - -  &new{2005-10-26 (水) 18:24:05}; -->
+<!-- -整理ありがとうございました！ちなみにxyzzyから使えるIspellは亀井さんの移植したものであって角藤さんの移植したものではなかったはずです。亀井さんの移植したIspellにはTeXの命令を無視するなどの機能はありましたっけ？ - - ダメダメ筆者 &new{2005-10-26 (水) 18:36:18}; -->
+<!-- -なるほど、そういうことでしたか。ispellは使ってないのできちんと調べずに書いてしまいました。すいません。でも、「角藤先生のispellは使えない」→「Aspellを使うことになる」だとほかの可能性をまったく除外しているように感じました。Aspellを使うことをオススメします、ぐらいでいいのではないでしょうか。 - -  &new{2005-10-26 (水) 20:25:44}; -->
+<!-- -ここはTeX WikiなのでAspell以外の選択肢を除外してしまいましたが、やんわりとお勧めしたほうがいいかもしれませんね。直してみました。 - - ダメダメ筆者 &new{2005-10-27 (木) 09:07:26}; -->
+<!-- -Aspellはwin2k環境変数LANGにja_JP.SJISがかき込んであるとディスクトップアイコンに英文テキストをドラッグしても起動せず、xyzzyではcannot spown aspellとなって起動しません。ispellは平気です。 - - zyma56 &new{2005-11-02 (水) 05:28:49}; -->
+<!-- -ご報告ありがとうございます。早速追記させていただきます。 - - ダメダメ筆者 &new{2005-11-02 (水) 08:32:52}; -->
+<!-- -Aspellについて追記しておきました。 - -  &new{2005-11-02 (水) 18:07:56}; -->
+<!-- -ありがとうございました。xyzzy+KTeXはここ２週間の使用経験で手放せなくなりました。初心者の私がみなさまのご助言を得て解決したこのケースが他のみなさまのお役にたてば嬉しいです。 - - zyam56 &new{2005-11-02 (水) 20:20:10}; -->
+<!-- -自分の書いたコードがここで紹介されていて感激しました． - -  &new{2005-11-05 (土) 15:52:39}; -->
+<!-- - どうもありがとうございました＞Aspellについて追記した方＆改良コードを書いてくださった方　私自身はへたれコードしか書けませんので、どなたかより良いコードが書ける方はどんどん直してください。 - - ダメダメ筆者 &new{2005-11-07 (月) 18:14:31}; -->
+<!-- - xyzzyのライセンスがMITライセンスになりました。割と重要なことですのでいちおうコメント欄にも書いておきます。 - - ダメダメ筆者 &new{2005-12-19 (月) 14:34:31}; -->
+<!-- - パスにスペースが入っている場合も考慮してDVIOUTの設定（srcの%s）を囲みました。 - - 稲原 &new{2005-12-24 (土) 21:57:36}; -->
+<!-- - ありがとうございました。なるほど、たしかにこれは必要なことです。 - - ダメダメ筆者 &new{2005-12-27 (火) 08:58:46}; -->
+<!-- - outline-treeのバージョン2の解説を書いてみました。間違いなどがありましたらご指摘下さい。 - - ダメダメ筆者 &new{2006-05-26 (金) 15:19:04}; -->
+<!-- - parenがnetinstallerから消えるなどしていましたので、parentagをメインに紹介することにしました。 - - ダメダメ筆者 &new{2006-05-30 (火) 18:00:26}; -->
+<!-- - xyzzyのインストーラについて追記しました。 - - ダメダメ筆者 &new{2006-06-07 (水) 10:34:10}; -->
+<!-- - [[xyzzy上のスペルチェッカー作成:http://keijisaito.info/arc/spell/spell_check.htm]]にaspellの設定説明と片手でできるテンキー用スペルチェックのファイルがあります。 - - 1154736330 &new{2006-08-05 (土) 09:05:30}; -->
+<!-- - 動的補完のコードに問題点があったので、修正しました。 - - act &new{2007-02-20 (火) 22:49:36}; -->
+<!-- - 「KaTeX で TeX の命令をラクラク入力」のセクションに "pbibtex.exe" 関連の記述を追加しました。 - - 1257567430 &new{2009-11-07 (土) 13:17:10}; -->
+<!--  -->
+<!-- #comment -->
