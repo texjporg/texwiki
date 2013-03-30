@@ -54,6 +54,4 @@ pukiwiki: "iOS"
         - [LaTeX on the iPad](http://jblevins.org/log/latex-on-the-ipad)
         - [macportsのplatexでも使えます．](http://appcomments.com/reviews/334548870)
         - [iPadでLaTeXを！！](http://tomhus.blogspot.com/2011/02/ipadlatex.html)
-- [UX Write](http://www.uxproductivity.com/) (シェアウェア)
-    - [iTunes App Store - UX Write](http://itunes.apple.com/jp/app/ux-write/id538278306?mt=8)
 - [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078?mt=8) (シェアウェア)
