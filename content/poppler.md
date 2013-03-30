@@ -85,64 +85,53 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
+- [Python](http://www.python.org/) 2.7.4 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
+
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
-- [Python](http://www.python.org/) 2.7.4 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
-    <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
-    <!--  -->
-    <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
+<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
+<!--  -->
+<!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
 
-mingw-utils をインストールします．<br>
-
-```
-$ mingw-get install mingw-utils
-```
-
-MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．<br>
-
-32bit Windows の場合
-
-```
-$ pexports /c/Windows/System32/python27.dll > python27.def
-$ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
-C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
-$ rm python27.def
-```
-
-64bit Windows の場合
-
-```
-$ pexports /c/Windows/SysWOW64/python27.dll > python27.def
-$ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
-C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
-$ rm python27.def
-```
-
-***
-
-- C:/MinGW/lib/pkgconfig/python.pc
-- C:/MinGW/lib/pkgconfig/python-2.7.pc
-
-を作成して以下の内容を記述します．
-
-***
-
-```
-prefix=/mingw
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=/c/Python27/include
-
-Name: Python
-Description: Python library
-Requires: 
-Version: 2.7
-Libs.private:
-Libs: -L${libdir} -lpython27
-Cflags: -IC:/Python27/include
-```
-
-***
+<!-- mingw-utils をインストールします．~ -->
+<!--  -->
+<!-- $ mingw-get install mingw-utils -->
+<!--  -->
+<!-- MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．~ -->
+<!--  -->
+<!-- 32bit Windows の場合 -->
+<!--  -->
+<!-- $ pexports /c/Windows/System32/python27.dll > python27.def -->
+<!-- $ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
+<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'. -->
+<!-- $ rm python27.def -->
+<!--  -->
+<!-- 64bit Windows の場合 -->
+<!--  -->
+<!-- $ pexports /c/Windows/SysWOW64/python27.dll > python27.def -->
+<!-- $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
+<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'. -->
+<!-- $ rm python27.def -->
+<!--  -->
+<!-- - --  -->
+<!-- -C:/MinGW/lib/pkgconfig/python.pc -->
+<!-- -C:/MinGW/lib/pkgconfig/python-2.7.pc -->
+<!--  -->
+<!-- を作成して以下の内容を記述します． -->
+<!-- - --  -->
+<!-- prefix=/mingw -->
+<!-- exec_prefix=${prefix} -->
+<!-- libdir=${exec_prefix}/lib -->
+<!-- includedir=/c/Python27/include -->
+<!--  -->
+<!-- Name: Python -->
+<!-- Description: Python library -->
+<!-- Requires:  -->
+<!-- Version: 2.7 -->
+<!-- Libs.private: -->
+<!-- Libs: -L${libdir} -lpython27 -->
+<!-- Cflags: -IC:/Python27/include -->
+<!-- - --  -->
 
 <!-- ~/.bash_profile に以下の内容を記述します． -->
 <!-- if [ -f ~/.bashrc ]; then . ~/.bashrc; fi -->
@@ -455,24 +444,10 @@ $ popd
 
 - [fontconfig](http://www.fontconfig.org/) をインストールします．
 
-fontconfig 2.10.91 でビルドエラーが発生する場合は [fontconfig on Windows のビルドエラーとその対策](http://blogs.yahoo.co.jp/igproj_fusion/16786546.html) を参照してください．
-
-<!-- $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.91.tar.bz2 -->
-
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.2.tar.bz2
-```
-
-<!-- $ tar xvf fontconfig-2.10.91.tar.bz2 -->
-
-```
-$ tar xvf fontconfig-2.10.2.tar.bz2
-```
-
-<!-- $ pushd fontconfig-2.10.91 -->
-
-```
-$ pushd fontconfig-2.10.2
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.92.tar.bz2
+$ tar xvf fontconfig-2.10.92.tar.bz2
+$ pushd fontconfig-2.10.92
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
@@ -546,6 +521,20 @@ C:\MinGW\etc\fonts\local.conf を作成して以下のように編集します�
 
 ***
 
+C:\MinGW\etc\fonts\fonts.conf の71行目に記述されている
+
+```
+<include ignore_missing="yes">/mingw/etc/fonts/conf.d</include>
+```
+
+の下に
+
+```
+<include ignore_missing="yes">local.conf</include>
+```
+
+を追加します．
+
 fc-match で Ryumin-Light と GothicBBB-Medium を確認します．
 
 ```
@@ -554,14 +543,6 @@ msmincho.ttc: "MS Mincho" "Regular"
 $ fc-match GothicBBB-Medium
 msgothic.ttc: "MS Gothic" "Regular"
 ```
-
-上記のように表示されない場合は C:\MinGW\etc\fonts\fonts.conf に
-
-```
-<include ignore_missing="yes">local.conf</include>
-```
-
-を記述してください．
 
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
@@ -803,14 +784,24 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.34/glib-2.34.3.tar.xz
-$ tar xvf glib-2.34.3.tar.xz
-$ pushd glib-2.34.3
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.0.tar.xz
+$ tar xvf glib-2.36.0.tar.xz
+$ pushd glib-2.36.0
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
+
+<!-- -[[GObject Introspection:https://live.gnome.org/GObjectIntrospection]] をインストールします． -->
+<!--  -->
+<!-- $ curl -R -L -O http://download.gnome.org/sources/gobject-introspection/1.36/gobject-introspection-1.36.0.tar.xz -->
+<!-- $ tar xvf gobject-introspection-1.36.0.tar.xz -->
+<!-- $ pushd gobject-introspection-1.36.0 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
 
 - [gettext](http://www.gnu.org/software/gettext/) をインストールします．
 
@@ -821,15 +812,27 @@ $ pushd gettext-0.18.2.1
 $ ./configure --prefix=/mingw
 ```
 
-<!--  -->
-<!-- [[gettext-runtime/tests/test-lock.c:http://git.savannah.gnu.org/cgit/gettext.git/tree/gettext-runtime/tests/test-lock.c#n105]] を修正します．~ -->
-<!-- //static inline void * gl_thread_self (void) -->
-<!-- static inline pthread_t gl_thread_self (void) -->
-<!-- { -->
-<!--   //return = (void *) pthread_self (); -->
-<!--   return pthread_self (); -->
-<!-- } -->
-<!--  -->
+gettext-tools/gnulib-lib/wctype.in.h の344行目から360行目までをコメントアウトします．
+
+```
+//_GL_WCTYPE_INLINE wint_t
+//rpl_towlower (wint_t wc)
+//{
+//  return (wint_t) (wchar_t) towlower (wc);
+//}
+//#  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
+//#   define towlower rpl_towlower
+//#  endif
+// 
+//_GL_WCTYPE_INLINE wint_t
+//rpl_towupper (wint_t wc)
+//{
+//  return (wint_t) (wchar_t) towupper (wc);
+//}
+//#  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
+//#   define towupper rpl_towupper
+//#  endif
+```
 
 ```
 $ make
