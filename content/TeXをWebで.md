@@ -132,6 +132,7 @@ ulimit -t 10 -f 1024
 - [writeLaTeX](https://www.writelatex.com/)
     - [「writeLaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=writeLaTeX)
     - [writeLaTeX を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=writeLaTeX)
+    - [タブレットなどでLaTeXを使う/writeLATEX,Texpad(iPad)](http://kiyomidais.cocolog-nifty.com/blog/2013/03/latexwritelatex.html)
 - [LiveLaTeX](http://nanatomo.com/livelatex/)
 - [てふてふかれん](http://tex-web.net/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
