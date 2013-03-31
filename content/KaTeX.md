@@ -36,7 +36,8 @@ GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移�
 <!-- から KaTeX を選択してダウンロードできます．~ -->
 <!-- Emacs Lisp 移植キットは KaTeX に含まれていますが個別にダウンロードすることもできます． -->
 
-マルチフレーム版を使用している方は，[https://github.com/mumurik/NAXEL/downloads](https://github.com/mumurik/NAXEL/downloads) からダウンロードしたものを使ってください。（KaTeX の公式サイトから入手できるものとは厳密に言うと違うものですので注意してください）。<br>
+マルチフレーム版を使用している方は，[https://github.com/mumurik/NAXEL/downloads](https://github.com/mumurik/NAXEL/downloads) からダウンロードしたものを使ってください。<br>
+KaTeX の公式サイトの Web Archive から入手できるものとは厳密に言うと違うものですので注意してください。<br>
 マルチフレーム版では KaTeX オリジナル版を使用した場合，スタックオーバーフローのエラーが発生します．<br>
 
 ### KaTeX カスタム版とは {#m8b25abb}
@@ -308,12 +309,51 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
           #'(lambda ()
               (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
 
+(defun fwdsumatrapdf-forward-search ()
+  (interactive)
+  (let* ((tex-file (get-buffer-file-name))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (line (format nil "~D" (current-line-number)))
+         (cmd "fwdsumatrapdf")
+         (args))
+    (setq args (concat "\"" pdf-file "\" \"" tex-file "\" " line))
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
+                  :exec-directory (directory-namestring tex-file))))
+
+(add-hook 'elisp::katex-mode-hook
+          #'(lambda ()
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
+
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (auto-fill-mode nil)))
 ```
 
 ***
+
+### xyzzy 終了時に \_katexrc を生成しないようにする {#yffe0d19}
+
+デフォルトでは xyzzy 終了時に \_katexrc が生成されます．<br>
+\_katexrc を生成しないようにするには katexlib.l の
+
+```
+(defun KaTeX-save-history ()
+```
+
+の中の
+
+```
+  (save-buffer)
+  (kill-buffer (selected-buffer))
+```
+
+をコメントアウトします．
+
+```
+;  (save-buffer)
+;  (kill-buffer (selected-buffer))
+```
 
 ## 使い方 {#ycbb077d}
 
@@ -481,161 +521,150 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 ***
 
 ```
-(defun sumatrapdf-forward-search ()
+(defun fwdsumatrapdf-forward-search ()
   (interactive)
   (let* ((tex-file (get-buffer-file-name))
-         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf")))
-    (call-process (concat "fwdsumatrapdf" " " pdf-file " " tex-file " "
-                          (format nil "~D" (current-line-number)))
+         (pdf-file (concat (el::KaTeX-get-preview-file-name) ".pdf"))
+         (line (format nil "~D" (current-line-number)))
+         (cmd "fwdsumatrapdf")
+         (args))
+    (setq args (concat "\"" pdf-file "\" \"" tex-file "\" " line))
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
                   :exec-directory (directory-namestring tex-file))))
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
 ```
 
 ***
 
-すると，C-c s または M-x sumatrapdf-forward-search （Alt を押しながら x を押し，“sumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
+すると，C-c f または M-x fwdsumatrapdf-forward-search （Alt を押しながら x を押し，“fwdsumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ### inverse search {#v8e96370}
 
 [xyzzy#SumatraPDF との連携#inverse search](/xyzzy/#n1f72109) を参照．
 
-## コマンドの追加 {#j3178c6b}
-
-さらに，KaTeX からその他のコマンドを実行できるように改造してみましょう。
-次のコメント行（セミコロン “;” から始まる，xyzzy が命令を読み込まない行）を参考にすれば，任意のコマンドを登録できるようになるでしょう。
-ここでは “out2uni” というコマンドを登録しています
-（今ではあまり使わないコマンドですが，ちょっとネタが思いつかないので）。
-
-長いものですが，基本的には「ここから」から「ここまで」のみを編集していけば OK です。なお，前に
-
-```
-(in-package "elisp")
-(require "katex")
-```
-
-の2行を記述してない場合は，記述しておくようにしてください。
-
-```
-(defun KaTeX-typeset-menu (arg &optional char)
-  "Typeset, preview, visit error and miscellaneous convenient menu.
-Optional second argument CHAR is for non-interactive call from menu."
-  (interactive "P")
-  (message
-   (concat "J)latex R)egion B)ibtex mk(I)ndex "
-	   (if (fboundp 'start-process) "K)ill-latex ")
-	   "P)review "
-	   (and (boundp 'window-system) window-system "S)earch ")
-	   "V)iewerr L)pr D)vips dvipdF)m"
-	   ;; ここでさらにコマンドを追加する場合は説明文をダブルクウォート (") で区切って
-	   ;; 追加する。ここでは「O)ut2uni」というのをスペースのあとに追加する。
-	   ;; 二つ以上追加したい場合（ここでは「A)command」というのを追加する）は
-	   ;; 例えば「O)ut2uni」のあとにスペースで区切り，
-	   ;; " O)ut2uni A)command"
-	   ;; のように書く。
-	   ;;
-	   ;; ここから
-	   
-	   " O)ut2uni"
-	   
-	   ;; ここまで
-	   ))
-  (let ((pre-ime (and (get-ime-mode) (toggle-ime)))
-	(sw (selected-window)) (c (or char (read-char))))
-    (require "katexprc") ;for Nemacs's bug
-    (select-window sw)
-    (cond
-     ((= c #\j) (KaTeX-typeset-buffer))
-     ((= c #\r) (KaTeX-typeset-region))
-     ((= c #\b) (KaTeX-call-command-on-file
-		 bibtex-command "*KaTeX-bibtex*"))
-    ((= c #\i) (KaTeX-call-command-on-file
-		 makeindex-command "*KaTeX-makeindex*"))
-     ((= c #\k) (KaTeX-kill-typeset-process KaTeX-typeset-process))
-     
-     ((= c #\p) (call-interactively 'KaTeX-preview))
-     ;((= c #\q) (KaTeX-system "lpq" "*Printer queue*"))
-     ((= c #\v) (KaTeX-view-error))
-     ((= c #\l) (KaTeX-lpr arg))
-     ((= c #\m) (KaTeX-switch-mode-menu arg))
-     ((= c #\b) (KaTeX-insert-string "\\")) ;???
-     ;((= c #\s) (KaTeX-xdvi-remote-search arg))
-     ;; -----------------------------------------------------------
-     ;; added command
-     ((= c #\d) (KaTeX-dvi2ps))
-     ((= c #\f) (KaTeX-dvipdfm))
-     ;; さらに加えたいコマンドを「ここから」から「ここまで」まで以下に次の様式で記入します。
-     ;; ((= c #\【Ctrl + c, t の後に押すキーボード】) (【コマンドを実行するための関数名】))
-     ;; 一例では Ctrl + c, t そして“o”の順に押すキーボードショートカットに
-     ;; “KaTeX-out2uni”という関数を割り当てます。
-     ;; 二つ以上関数を割り当てる場合は，上の added command の下のように改行するなりして並べます。
-     ;;
-     ;; ここから
-    
-     ((= c #\o) (KaTeX-out2uni))
-     
-     ;; ここまで
-     )
-    (and pre-ime (not (get-ime-mode)) (toggle-ime))))
-(KaTeX-define-key #\t 'KaTeX-typeset-menu)
-```
-
-```
-(defvar dvips-command "dvips -Ppdf ")
-(defun KaTeX-dvi2ps ()
-(interactive)
-(KaTeX-save-buffers)
-(KaTeX-call-command-on-file dvips-command KaTeX-typeset-buffer))
-```
-
-```
-(defvar dvipdfm-command "dvipdfmx ")
-(defun KaTeX-dvipdfm ()
-(interactive)
-(KaTeX-save-buffers)
-(KaTeX-call-command-on-file dvipdfm-command KaTeX-typeset-buffer))
-```
-
-```
-;;; 実際にコマンドを呼び出す関数を作ります。
-;;; 先ほど，“KaTeX-out2uni”という関数に Ctrl + c, t, o というキーボードショートカットを
-;;; 割り当てました。これは「out2uni （現在編集中のファイルから拡張子を抜いたファイル名）」という外部コマンドを呼び出す関数です。
-;;; あとは次のテンプレートを参考に，見よう見まねで作ってください。
-;;; 複数以上コマンドを割り当てるときは defvar から KaTeX-call-command-on-file の行まで追記します。
-;;;
-;;; (defvar 【適当な分かりやすい変数の名前。なんでもいい。】 "【呼び出すコマンド。最後のスペースをお忘れなく】")
-;;; (defun 【先ほどキーボードショートカットに割り当てた関数名】 ()
-;;; (interactive)
-;;; (KaTeX-save-buffers)
-;;; (KaTeX-call-command-on-file 【先ほど defvar... で記述した変数の名前】 KaTeX-typeset-buffer))
-;;; 自作した各種コマンド起動関数，たとえば多言語関連で後述する UTF82TeX などを起動する関数
-;;; などについてもこの下に記入します。
-;;;
-;;; ここから
-```
-
-```
-(defvar out2uni-command "out2uni ")
-(defun KaTeX-out2uni ()
-  (interactive)
-  (KaTeX-save-buffers)
-  (KaTeX-call-command-on-file out2uni-command KaTeX-typeset-buffer))
-```
-
-```
-;;; ここまで
-```
-
-なお，KaTeX には，同じマークアップ言語である HTML （正確には違うらしい）を
-編集するための KaHTML というのも同梱してあります。exbrowserdll と browserex と
-併用することで非常に便利な HTML 編集環境を作ることができます。
-
-KaHTML についての記述は
-[XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定](http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9)
-に移転することにしました。そちらを是非ご参照いただければと思います。
+<!-- *コマンドの追加 [#j3178c6b] -->
+<!-- さらに，KaTeX からその他のコマンドを実行できるように改造してみましょう。 -->
+<!-- 次のコメント行（セミコロン “;” から始まる，xyzzy が命令を読み込まない行）を参考にすれば，任意のコマンドを登録できるようになるでしょう。 -->
+<!-- ここでは “out2uni” というコマンドを登録しています -->
+<!-- （今ではあまり使わないコマンドですが，ちょっとネタが思いつかないので）。 -->
+<!--  -->
+<!-- 長いものですが，基本的には「ここから」から「ここまで」のみを編集していけば OK です。なお，前に -->
+<!--  -->
+<!-- (in-package "elisp") -->
+<!-- (require "katex") -->
+<!--  -->
+<!-- の2行を記述してない場合は，記述しておくようにしてください。 -->
+<!--  -->
+<!-- (defun KaTeX-typeset-menu (arg &optional char) -->
+<!--   "Typeset, preview, visit error and miscellaneous convenient menu. -->
+<!-- Optional second argument CHAR is for non-interactive call from menu." -->
+<!--   (interactive "P") -->
+<!--   (message -->
+<!--    (concat "J)latex R)egion B)ibtex mk(I)ndex " -->
+<!-- 	   (if (fboundp 'start-process) "K)ill-latex ") -->
+<!-- 	   "P)review " -->
+<!-- 	   (and (boundp 'window-system) window-system "S)earch ") -->
+<!-- 	   "V)iewerr L)pr D)vips dvipdF)m" -->
+<!-- 	   ;; ここでさらにコマンドを追加する場合は説明文をダブルクウォート (") で区切って -->
+<!-- 	   ;; 追加する。ここでは「O)ut2uni」というのをスペースのあとに追加する。 -->
+<!-- 	   ;; 二つ以上追加したい場合（ここでは「A)command」というのを追加する）は -->
+<!-- 	   ;; 例えば「O)ut2uni」のあとにスペースで区切り， -->
+<!-- 	   ;; " O)ut2uni A)command" -->
+<!-- 	   ;; のように書く。 -->
+<!-- 	   ;; -->
+<!-- 	   ;; ここから -->
+<!-- 	    -->
+<!-- 	   " O)ut2uni" -->
+<!-- 	    -->
+<!-- 	   ;; ここまで -->
+<!-- 	   )) -->
+<!--   (let ((pre-ime (and (get-ime-mode) (toggle-ime))) -->
+<!-- 	(sw (selected-window)) (c (or char (read-char)))) -->
+<!--     (require "katexprc") ;for Nemacs's bug -->
+<!--     (select-window sw) -->
+<!--     (cond -->
+<!--      ((= c #\j) (KaTeX-typeset-buffer)) -->
+<!--      ((= c #\r) (KaTeX-typeset-region)) -->
+<!--      ((= c #\b) (KaTeX-call-command-on-file -->
+<!-- 		 bibtex-command "*KaTeX-bibtex*")) -->
+<!--     ((= c #\i) (KaTeX-call-command-on-file -->
+<!-- 		 makeindex-command "*KaTeX-makeindex*")) -->
+<!--      ((= c #\k) (KaTeX-kill-typeset-process KaTeX-typeset-process)) -->
+<!--       -->
+<!--      ((= c #\p) (call-interactively 'KaTeX-preview)) -->
+<!--      ;((= c #\q) (KaTeX-system "lpq" "*Printer queue*")) -->
+<!--      ((= c #\v) (KaTeX-view-error)) -->
+<!--      ((= c #\l) (KaTeX-lpr arg)) -->
+<!--      ((= c #\m) (KaTeX-switch-mode-menu arg)) -->
+<!--      ((= c #\b) (KaTeX-insert-string "\\")) ;??? -->
+<!--      ;((= c #\s) (KaTeX-xdvi-remote-search arg)) -->
+<!--      ;; - -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  -->
+<!--      ;; added command -->
+<!--      ((= c #\d) (KaTeX-dvi2ps)) -->
+<!--      ((= c #\f) (KaTeX-dvipdfm)) -->
+<!--      ;; さらに加えたいコマンドを「ここから」から「ここまで」まで以下に次の様式で記入します。 -->
+<!--      ;; ((= c #\【Ctrl + c, t の後に押すキーボード】) (【コマンドを実行するための関数名】)) -->
+<!--      ;; 一例では Ctrl + c, t そして“o”の順に押すキーボードショートカットに -->
+<!--      ;; “KaTeX-out2uni”という関数を割り当てます。 -->
+<!--      ;; 二つ以上関数を割り当てる場合は，上の added command の下のように改行するなりして並べます。 -->
+<!--      ;; -->
+<!--      ;; ここから -->
+<!--      -->
+<!--      ((= c #\o) (KaTeX-out2uni)) -->
+<!--       -->
+<!--      ;; ここまで -->
+<!--      ) -->
+<!--     (and pre-ime (not (get-ime-mode)) (toggle-ime)))) -->
+<!-- (KaTeX-define-key #\t 'KaTeX-typeset-menu) -->
+<!--  -->
+<!-- (defvar dvips-command "dvips -Ppdf ") -->
+<!-- (defun KaTeX-dvi2ps () -->
+<!-- (interactive) -->
+<!-- (KaTeX-save-buffers) -->
+<!-- (KaTeX-call-command-on-file dvips-command KaTeX-typeset-buffer)) -->
+<!--  -->
+<!-- (defvar dvipdfm-command "dvipdfmx ") -->
+<!-- (defun KaTeX-dvipdfm () -->
+<!-- (interactive) -->
+<!-- (KaTeX-save-buffers) -->
+<!-- (KaTeX-call-command-on-file dvipdfm-command KaTeX-typeset-buffer)) -->
+<!--  -->
+<!-- ;;; 実際にコマンドを呼び出す関数を作ります。 -->
+<!-- ;;; 先ほど，“KaTeX-out2uni”という関数に Ctrl + c, t, o というキーボードショートカットを -->
+<!-- ;;; 割り当てました。これは「out2uni （現在編集中のファイルから拡張子を抜いたファイル名）」という外部コマンドを呼び出す関数です。 -->
+<!-- ;;; あとは次のテンプレートを参考に，見よう見まねで作ってください。 -->
+<!-- ;;; 複数以上コマンドを割り当てるときは defvar から KaTeX-call-command-on-file の行まで追記します。 -->
+<!-- ;;; -->
+<!-- ;;; (defvar 【適当な分かりやすい変数の名前。なんでもいい。】 "【呼び出すコマンド。最後のスペースをお忘れなく】") -->
+<!-- ;;; (defun 【先ほどキーボードショートカットに割り当てた関数名】 () -->
+<!-- ;;; (interactive) -->
+<!-- ;;; (KaTeX-save-buffers) -->
+<!-- ;;; (KaTeX-call-command-on-file 【先ほど defvar... で記述した変数の名前】 KaTeX-typeset-buffer)) -->
+<!-- ;;; 自作した各種コマンド起動関数，たとえば多言語関連で後述する UTF82TeX などを起動する関数 -->
+<!-- ;;; などについてもこの下に記入します。 -->
+<!-- ;;; -->
+<!-- ;;; ここから -->
+<!--  -->
+<!-- (defvar out2uni-command "out2uni ") -->
+<!-- (defun KaTeX-out2uni () -->
+<!--   (interactive) -->
+<!--   (KaTeX-save-buffers) -->
+<!--   (KaTeX-call-command-on-file out2uni-command KaTeX-typeset-buffer)) -->
+<!--  -->
+<!-- ;;; ここまで -->
+<!--  -->
+<!-- なお，KaTeX には，同じマークアップ言語である HTML （正確には違うらしい）を -->
+<!-- 編集するための KaHTML というのも同梱してあります。exbrowserdll と browserex と -->
+<!-- 併用することで非常に便利な HTML 編集環境を作ることができます。 -->
+<!--  -->
+<!-- KaHTML についての記述は -->
+<!-- [[XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定:http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9]] -->
+<!-- に移転することにしました。そちらを是非ご参照いただければと思います。 -->
 
 ## bibtex-mode, RefTeX for xyzzy {#x70fba46}
 
