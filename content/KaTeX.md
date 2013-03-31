@@ -224,9 +224,10 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                      (t "mendex -U")))
 (setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
-(if (file-exist-p "C:/w32tex/dviout/dviout.exe")
-    (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
-  (setq elisp::dvi2-command "C:/texlive/2012/tlpkg/dviout/dviout -1"))
+(setq elisp::dvi2-command (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "texworks")
+                                (t (if (file-exist-p "C:/w32tex/dviout/dviout.exe")
+                                       (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
+                                     (setq elisp::dvi2-command "C:/texlive/2012/tlpkg/dviout/dviout -1")))))
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 
@@ -284,6 +285,63 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
               (auto-fill-mode nil)))
+
+(require "katex")
+(require "katexlib")
+(require "katexprc")
+
+(defun elisp::KaTeX-preview (preview-command preview-file)
+  "Execute xdvi (or other) to tex-preview."
+  (interactive
+      (list
+       (elisp::read-string-with-history
+	"Preview command: "
+	(or (elisp::KaTeX-get-builtin "PREVIEW") elisp::dvi2-command)
+	'elisp::KaTeX-preview-command-history)
+       (elisp::read-string-with-history
+	;"Preview file[.dvi]: "
+	"Preview file: "
+	(if (get 'dvi2-command 'region)
+	    (substring KaTeX-texput-file
+		       0 (rindex KaTeX-texput-file #\.))
+	  (elisp::KaTeX-get-preview-file-name))
+	'elisp::KaTeX-preview-file-history)))
+  (setq dvi2-command preview-command)	;`dvi2command' is buffer local
+  ;(unless (string-matchp "\.dvi$" preview-file)
+  ;    (setq preview-file (concat preview-file ".dvi")))
+  (if (string-match "dviout" elisp::dvi2-command)
+      (setq preview-file (concat preview-file ".dvi"))
+    (setq preview-file (concat preview-file ".pdf")))
+  (cond
+   ((file-exist-p preview-file)  ;m.m
+    (save-excursion
+      (elisp::KaTeX-visit-main t)
+      (let ((pbuffer "*dvi-preview*") (dir default-directory))
+;;;          (KaTeX-showup-buffer                     ;-> m.m
+;;;            pbuffer (function (lambda (x) (nth 3 (window-edges x)))))
+;;;	(set-buffer (get-buffer-create pbuffer))
+;;;	(erase-buffer)
+	(make-local-variable 'need-not-save)
+	(setq need-not-save t) ;m.m <-
+	(setq default-directory dir)	;for 18
+	(cd dir)				;for 19
+	(setq preview-command (concat preview-command " " preview-file))
+	(when elisp::*typeset-with-shell-command*
+	  (setq preview-command (concat *shell* " " KaTeX-shell-command-option
+					" " preview-command)))
+        (editor::call-process preview-command :no-std-handles t :show :show)
+	(message
+	 (concat "Starting " preview-command
+		 " to preview " preview-file))
+	(refresh-screen) ;m.m (redraw-display)
+	)))
+   (elisp::*preview-with-typeset*  ;m.m ->
+    (setq *typeset-and-preview* t
+	  *last-preview-command* preview-command
+	  *last-preview-file* preview-file)
+    (KaTeX-typeset-buffer))
+   (t
+    nil)))
 ```
 
 ***
