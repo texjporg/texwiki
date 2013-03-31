@@ -116,6 +116,24 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 (add-hook '*kyotex-mode-hook*
           #'(lambda ()
               (define-key *kyotex-mode-map* '(#\C-c #\s) 'sumatrapdf-forward-search)))
+
+(defun fwdsumatrapdf-forward-search ()
+  (interactive)
+  (let* ((tex-file (get-buffer-file-name))
+         (pdf-file (if (string-equal *kyotex-dvipdfm-recent-output* "")
+                       (concat (car (split-string (get-buffer-file-name) "\\.")) ".pdf")
+                     *kyotex-dvipdfm-recent-output*))
+         (line (format nil "~D" (current-line-number)))
+         (cmd "fwdsumatrapdf")
+         (args))
+    (setq args (concat "\"" pdf-file "\" \"" tex-file "\" " line))
+    (message (concat cmd " " args))
+    (call-process (concat cmd " " args)
+                  :exec-directory (directory-namestring tex-file))))
+
+(add-hook '*kyotex-mode-hook*
+          #'(lambda ()
+              (define-key *kyotex-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
 ```
 
 ***
