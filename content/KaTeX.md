@@ -138,50 +138,6 @@ J)latex R)egion B)ibtex mk(I)ndex K)ill-latex P)review S)earch V)iewerr L)pr<br>
 
 ***
 
-## KaTeX で TeX の命令をラクラク入力 {#k658955e}
-
-TeX で命令を書いているときに，そうした命令を書いていくのがおっくうになることがありませんか？<br>
-例えば箇条書きを書くときにいちいち \begin{itemize} と \end{itemize} を書いてくくり，さらに項目ごとにいちいち先頭に \item などと書かなきゃならない……面倒くさい，そう思うこともあるに違いありません。<br>
-そんなときは KaTeX を使ってみましょう。<br>
-
-KaTeX （花鳥）は便利なキーボードショートカットを多数有し，LaTeX の命令や環境の入力を素早く，なおかつ楽にしてくれるマクロです。<br>
-[YaTeX](/YaTeX/) の xyzzy 版と言った方がわかりやすいかもしれません。<br>
-
-xyzzy に標準添付されている winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
-例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
-従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
-
-xyzzy は標準では Emacs 風のキーボードショートカットに
-なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
-Windows 標準のキーボードショートカットが使えるようになります。<br>
-しかしながら，
-この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
-使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
-要望を完全にはかなえてくれません。<br>
-そのような方は，
-大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。<br>
-インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
-ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
-初期設定ファイルで，
-
-```
-(load-library "pavail")
-```
-
-と記述するだけです。<br>
-これで，xyzzy を快適に使うことができるように
-なるかもしれません（私が使っている分には，不具合は今のところありません）。<br>
-なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
-まったく宣伝していません。
-従って，まだ Netinstaller からはインストールできません。<br>
-これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
-同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
-ものですが，次のところが元祖で pavail.l が後発になると思います。<br>
-
-- [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
-
-xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
-
 ## 設定 {#pea65968}
 
 環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS) や [Cygwin](/Cygwin/) Bash Shell から
@@ -332,10 +288,45 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ***
 
-### xyzzy 終了時に \_katexrc を生成しないようにする {#yffe0d19}
+### bibtex-mode {#x70fba46}
 
-デフォルトでは xyzzy 終了時に \_katexrc が生成されます．<br>
-\_katexrc を生成しないようにするには katexlib.l の
+- [bibtex-mode \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)
+
+### RefTeX for xyzzy {#h5422042}
+
+- [RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex)
+
+RefTeX for xyzzy のアーカイブを展開して，reftex フォルダーをコピーして xyzzy の site-lisp フォルダーにペーストします．<br>
+
+***
+
+```
+C:.
+└─xyzzy
+    └─site-lisp
+        └─reftex
+```
+
+***
+
+&#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
+
+***
+
+```
+;;
+;; RefTeX with KaTeX
+;;
+(add-hook 'elisp::katex-mode-hook 'turn-on-reftex)
+(autoload 'turn-on-reftex "reftex/reftex")
+```
+
+***
+
+### xyzzy 終了時に &#x7e;/\_katexrc を生成しないようにする {#yffe0d19}
+
+デフォルトでは xyzzy 終了時に &#x7e;/\_katexrc が生成されます．<br>
+&#x7e;/\_katexrc を生成しないようにするには katexlib.l の
 
 ```
 (defun KaTeX-save-history ()
@@ -421,6 +412,50 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 > </tbody>
 > </table>
 >
+
+### KaTeX で TeX の命令をラクラク入力 {#k658955e}
+
+TeX で命令を書いているときに，そうした命令を書いていくのがおっくうになることがありませんか？<br>
+例えば箇条書きを書くときにいちいち \begin{itemize} と \end{itemize} を書いてくくり，さらに項目ごとにいちいち先頭に \item などと書かなきゃならない……面倒くさい，そう思うこともあるに違いありません。<br>
+そんなときは KaTeX を使ってみましょう。<br>
+
+KaTeX （花鳥）は便利なキーボードショートカットを多数有し，LaTeX の命令や環境の入力を素早く，なおかつ楽にしてくれるマクロです。<br>
+[YaTeX](/YaTeX/) の xyzzy 版と言った方がわかりやすいかもしれません。<br>
+
+xyzzy に標準添付されている winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
+例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
+従って，マウスで選択さえしていなければ，KaTeX で頻繁に用いられるキー \[prefix\] とも問題なく共存できるのです。<br>
+
+xyzzy は標準では Emacs 風のキーボードショートカットに
+なっていますが，xyzzy 標準添付の Gates.l や winkey.l を用いることで
+Windows 標準のキーボードショートカットが使えるようになります。<br>
+しかしながら，
+この二つは「普段は Gates.l 並みに多い Windows 標準のキーボードショートカットを
+使いたいが，KaTeX などのマクロのキーボードショートカットも使いたい」という
+要望を完全にはかなえてくれません。<br>
+そのような方は，
+大友さん作の[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) というマクロをお使いください。<br>
+インストールは，[pavail.l](http://web.archive.org/web/20060824010604/http://www.klavis.info/pavail.l) を
+ダウンロードして xyzzy/site-lisp/ にコピーし，~/.xyzzy などの
+初期設定ファイルで，
+
+```
+(load-library "pavail")
+```
+
+と記述するだけです。<br>
+これで，xyzzy を快適に使うことができるように
+なるかもしれません（私が使っている分には，不具合は今のところありません）。<br>
+なお，他人様のコードを借用して組み合わせただけのつまらないマクロのため
+まったく宣伝していません。
+従って，まだ Netinstaller からはインストールできません。<br>
+これくらいのことを考えている方は他にもいるはずなのにな……と思ったら
+同じことを考えている方がいらっしゃいました。たぶん pavail.l と似た機能の
+ものですが，次のところが元祖で pavail.l が後発になると思います。<br>
+
+- [winkey2.l](http://www.uranus.dti.ne.jp/~shiro-/soft/xyzzy/keybind.html#windows)
+
+xyzzy 標準のキーバインドと Windows キーバインドの切り替えには [toggle-gates](http://ohkubo.s53.xrea.com/xyzzy/index.html#toggle-gates) も便利です。
 
 ### その他 {#t6621c20}
 
@@ -666,12 +701,13 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 <!-- [[XyzzyWiki:QuickTour/ext/KaTeX #KaHTML の設定:http://xyzzy.s53.xrea.com/wiki/?QuickTour/ext/KaTeX#j73htme9]] -->
 <!-- に移転することにしました。そちらを是非ご参照いただければと思います。 -->
 
-## bibtex-mode, RefTeX for xyzzy {#x70fba46}
-
-- [bibtex-mode \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#bibtex-mode)
-- [RefTeX for xyzzy \[Internet Archive\]](http://web.archive.org/web/20080923160004/http://f55.aaa.livedoor.jp/~ynomura/xyzzy/#reftex)
-
 ## 対応括弧を見つけてみる {#xyparenl}
+
+[xyzzyでプログラミング/paren - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?xyzzy%A4%C7%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%2Fparen)
+
+### paren.lの改造版 {#n3f9720b}
+
+[silog - script/paren](http://white.s151.xrea.com/wiki/index.php?script%2Fparen)
 
 ### parentag {#xyprtags}
 
@@ -780,9 +816,6 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 
 などと記入しておきます。こうしておくと，たとえば \docu などと TeX ソース編集中に書きかけたときに Ctrl + . と入力する (C-.) ことで，\documentclass などのリストが自動的に出てきます。
 矢印キーの上下などで選択し，Enter を押すと補完されます。
-
-2005年11月4日9時くらいまでの記述は paren などの設定との共存ができませんでしたが，上記のとおりの記述であれば大丈夫です。
-前の設定を書いた方は，申し訳ありませんが前の設定を消して上のものに差し替えてください。
 
 ## clickable-uri と小物マクロによる便利技 {#xyclickab}
 
