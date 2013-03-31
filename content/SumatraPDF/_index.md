@@ -56,6 +56,7 @@ v1.6 から PostScript ファイルの表示にも対応しました．([Ghostsc
 
 ### 派生版・独自ビルド版 {#i2d3e037}
 
+- [SumatraPDF 先読み対応バージョン](https://gist.github.com/miau/5277670)
 - [PDFlite](http://www.pdflite.com/)
 - [XhmikosR's builds home/sumatrapdf/](http://xhmikosr.1f0.de/index.php?folder=c3VtYXRyYXBkZg==)
 - 最適化ビルド版の [SumatraPDF x86/x64 Optimized Builds](http://guti.is-great.org/static.php?page=SumatraPDFOpt)
