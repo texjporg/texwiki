@@ -23,6 +23,7 @@ pukiwiki: "Android"
     - [Nexus7（タブレット端末）にTeXPortalをインストール](http://blog.livedoor.jp/ti5942/archives/7804326.html)
 - [TeX Live for Android](https://code.google.com/p/texlive-for-android/)
     - An experimental native implementation of TeX Live 2012 for Android.
+    - [Android に TeXLive2012 を インストール Part2 日本語も使えたよ編](http://tkyon.blogspot.jp/2013/04/android-texlive2012-part2.html)
     - [Android に TeXLive2012 をインストール](http://tkyon.blogspot.jp/2013/03/android-texlive2012.html)
     - [Latex Compiler on Android : Blog Adhitya Bhawiyuga](http://blog.setiarasa.com/uncategorized/latex-compiler-on-android/)
 - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
