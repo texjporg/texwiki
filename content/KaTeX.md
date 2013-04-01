@@ -221,6 +221,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                      ((string-match "pdflatex\\|latex" elisp::tex-command) "makeindex")
                                      (t "mendex -U")))
 (setq elisp::dvi2-command "texworks")
+;(setq elisp::dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 (setq elisp::dviprint-command-format "pdfopen --rxi --file %s.pdf")
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
@@ -242,7 +243,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\p) 'texworks-preview)))
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\v) 'texworks-preview)))
 
 (defun sumatrapdf-forward-search ()
   (interactive)
@@ -544,12 +545,12 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\p) 'texworks-preview)))
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\v) 'texworks-preview)))
 ```
 
 ***
 
-C-c p または M-x texworks-preview （Alt を押しながら x を押し，“texworks-preview” と入力して Enterキーを押す）とすることで，PDF ファイルを開いてくれるはずです．<br>
+C-c v または M-x texworks-preview （Alt を押しながら x を押し，“texworks-preview” と入力して Enterキーを押す）とすることで，PDF ファイルを開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ## SumatraPDF との連携 {#y959d8e3}
