@@ -193,10 +193,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (setq elisp::KaTeX-default-documentclass "jsarticle")
 (setq elisp::tex-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1\"")
 ;(setq elisp::tex-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-;(setq elisp::tex-command "platex -guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "pdfplatex2.bat")
-;(setq elisp::tex-command "uplatex -no-guess-input-enc -kanji=utf8 -synctex=1")
 ;(setq elisp::tex-command "pdfuplatex.bat")
 ;(setq elisp::tex-command "pdfuplatex2.bat")
 ;(setq elisp::tex-command "pdflatex -synctex=1")
@@ -309,7 +307,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
   (setq dvi2-command preview-command)	;`dvi2command' is buffer local
   ;(unless (string-matchp "\.dvi$" preview-file)
   ;    (setq preview-file (concat preview-file ".dvi")))
-  (if (string-match "dviout" elisp::dvi2-command)
+  (if (string-matchp "dviout" elisp::dvi2-command)
       (setq preview-file (concat preview-file ".dvi"))
     (setq preview-file (concat preview-file ".pdf")))
   (cond
@@ -447,10 +445,8 @@ C:.
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#3C0;text-align:center">入力</th><th style="color:#FFF;background-color:#3C0;text-align:center">タイプセット方式</th></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET latexmk RET</td><td>latexmk</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET platex -synctex=1 RET</td><td>platex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex RET</td><td>pdfplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfplatex2 RET</td><td>pdfplatex2</td></tr>
-> <tr><td>M-x set-variable RET elisp::tex-command RET uplatex -synctex=1 RET</td><td>uplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex RET</td><td>pdfuplatex</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdfuplatex2 RET</td><td>pdfuplatex2</td></tr>
 > <tr><td>M-x set-variable RET elisp::tex-command RET pdflatex -synctex=1 RET</td><td>pdflatex</td></tr>
@@ -479,6 +475,8 @@ TeX で命令を書いているときに，そうした命令を書いていく�
 
 KaTeX （花鳥）は便利なキーボードショートカットを多数有し，LaTeX の命令や環境の入力を素早く，なおかつ楽にしてくれるマクロです。<br>
 [YaTeX](/YaTeX/) の xyzzy 版と言った方がわかりやすいかもしれません。<br>
+
+### キーバインドについて {#r9adefbc}
 
 xyzzy に標準添付されている winkey.l というマクロを使えば，KaTeX などのマクロとのキーボードショートカット上の共存が可能です。<br>
 例えば，C-c はマウスによる選択［セレクション］時にはコピーになりますが，選択をしていない場合はコピーには割り当てられません。<br>
