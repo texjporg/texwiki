@@ -226,8 +226,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                            (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
 (setq elisp::dvi2-command (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "texworks")
                                 (t (if (file-exist-p "C:/w32tex/dviout/dviout.exe")
-                                       (setq elisp::dvi2-command "C:/w32tex/dviout/dviout -1")
-                                     (setq elisp::dvi2-command "C:/texlive/2012/tlpkg/dviout/dviout -1")))))
+                                       "C:/w32tex/dviout/dviout -1"
+                                     "powershell -Command \"& {$dviout = (Get-Command dviout | Select-Object Path).Path + '/../../../../????/tlpkg/dviout/dviout.exe';Start-Process $dviout -ArgumentList ('-1',$args[0])}\""))))
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 
@@ -280,7 +280,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\w) 'fwdsumatrapdf-forward-search)))
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
@@ -628,12 +628,12 @@ KaTeX を使う場合は次のような文字列を ~/.xyzzy などの初期設�
 
 (add-hook 'elisp::katex-mode-hook
           #'(lambda ()
-              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
+              (define-key elisp::*KaTeX-mode-map* '(#\C-c #\w) 'fwdsumatrapdf-forward-search)))
 ```
 
 ***
 
-すると，C-c f または M-x fwdsumatrapdf-forward-search （Alt を押しながら x を押し，“fwdsumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
+すると，C-c w または M-x fwdsumatrapdf-forward-search （Alt を押しながら x を押し，“fwdsumatrapdf-forward-search” と入力して Enterキーを押す）とすることで，現在 TeX ファイル中でカーソルのある箇所に相当する PDF ファイルの位置を開いてくれるはずです．<br>
 頻繁に使う方はキーボードショートカット（キーバインド）を定義したり自前でツールバー・ツールバーに割り当てる関数を作成しておくことを勧めます．<br>
 
 ### inverse search {#v8e96370}
@@ -822,6 +822,8 @@ KaTeX をお使いの場合，~/.xyzzy などの初期設定ファイルには
 のように記述します。これでもう括弧で悩むことはなくなるはずです。<br>
 
 ## 動的補完でらくらく入力 {#xydb6f8d}
+
+<img src="http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png" alt="KaTeX">
 
 [上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，\text と入力した後に小さなメニューを出している様子が気にかかった方もいらっしゃるでしょう。
 これは，動的補完 (Dabbrev) という xyzzy 標準の機能を利用しているのです。
