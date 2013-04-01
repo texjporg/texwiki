@@ -106,8 +106,6 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 
 ■ シェアウェア
 
-- [Inlage](http://www.inlage.com/) (シェアウェア)
-- [WinEdt](http://www.winedt.com/) (シェアウェア)
 - [秀丸エディタ](</秀丸エディタ/>) (シェアウェア)
     - [SumatraPDF.mac](</秀丸エディタ/#y16d42fd>)
     - 祝鳥 (のりてふ)
