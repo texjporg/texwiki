@@ -220,12 +220,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                      ((string-match "lualatex\\|luajitlatex\\|xelatex" elisp::tex-command) "texindy")
                                      ((string-match "pdflatex\\|latex" elisp::tex-command) "makeindex")
                                      (t "mendex -U")))
-(setq elisp::dviprint-command-format (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "pdfopen --rxi --file %s.pdf")
-                                           (t "cmd /c tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & dvipdfmx %s && pdfopen --rxi --file %s.pdf")))
-(setq elisp::dvi2-command (cond ((string-match "pdf\\|lua\\|xe" elisp::tex-command) "texworks")
-                                (t (if (file-exist-p "C:/w32tex/dviout/dviout.exe")
-                                       "C:/w32tex/dviout/dviout -1"
-                                     "powershell -Command \"& {$dviout = (Get-Command dviout | Select-Object Path).Path + '/../../../../????/tlpkg/dviout/dviout.exe';Start-Process $dviout -ArgumentList ('-1',$args[0])}\""))))
+(setq elisp::dvi2-command "texworks")
+(setq elisp::dviprint-command-format "pdfopen --rxi --file %s.pdf")
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
 
