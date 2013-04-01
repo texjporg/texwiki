@@ -133,7 +133,7 @@ siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを�
 
 (add-hook '*kyotex-mode-hook*
           #'(lambda ()
-              (define-key *kyotex-mode-map* '(#\C-c #\f) 'fwdsumatrapdf-forward-search)))
+              (define-key *kyotex-mode-map* '(#\C-c #\w) 'fwdsumatrapdf-forward-search)))
 ```
 
 ***
