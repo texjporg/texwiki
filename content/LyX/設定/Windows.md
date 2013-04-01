@@ -337,7 +337,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>dvi</ins><br>
 短絡キー(U):　　　　　<ins>D</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\dviout\dviout.exe" -1</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\dviout\dviout.exe" -1</ins> または <ins>"C:\texlive\2012\tlpkg\dviout\dviout.exe" -1</ins><br>
 複写子(P):<br>
 
 ***
@@ -364,7 +364,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\share\texworks\TeXworks.exe"</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -387,7 +387,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -435,7 +435,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\share\texworks\TeXworks.exe"</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -458,7 +458,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -506,7 +506,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\share\texworks\TeXworks.exe"</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -529,7 +529,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -577,7 +577,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\share\texworks\TeXworks.exe"</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -600,7 +600,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -648,7 +648,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\share\texworks\TeXworks.exe"</ins><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -671,7 +671,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -719,7 +719,7 @@ pukiwiki: "LyX/設定/Windows"
 拡張子(X):　　　　　　<ins>ps</ins><br>
 短絡キー(U):　　　　　<ins>t</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (32bit Windows の場合) <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins> (64bit Windows の場合)<br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
@@ -753,8 +753,6 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 #### SumatraPDF を前面に表示したい場合 {#d7bb0d3c}
 
-■ 32bit Windows の場合
-
 ***
 
 <span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
@@ -766,24 +764,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^3]<br>
 順検索<br>
 　DVIコマンド: <br>
-　PDFコマンド: <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance $$o -forward-search $$t $$n</ins><br>
-
-***
-
-■ 64bit Windows の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance $$o -forward-search $$t $$n</ins><br>
+　PDFコマンド: <ins>cmd /c start SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
 
 ***
 
