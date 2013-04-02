@@ -88,11 +88,11 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
 
-<span style="color:#888888;background-color:#EEEEEE;"><ins>platex -interaction=nonstopmode %.tex&#x7c;pbibtex %&#x7c;platex -interaction=nonstopmode %.tex&#x7c;platex -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;"C:/w32tex/share/texworks/TeXworks.exe" %.pdf</ins></span><br>
+<span style="color:#888888;background-color:#EEEEEE;"><ins>platex -interaction=nonstopmode %.tex&#x7c;pbibtex %&#x7c;platex -interaction=nonstopmode %.tex&#x7c;platex -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;texworks %.pdf</ins></span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">For .asy files　</span><ins>"C:/Program Files/Asymptote/asy.exe" -f pdf -noView %.asy&#x7c;"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">For .asy files　</span><ins>asy -f pdf -noView %.asy&#x7c;pdfopen --rxi --file %.pdf</ins><br>
 
 　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しない</span><br>
 
