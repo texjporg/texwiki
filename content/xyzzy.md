@@ -153,7 +153,7 @@ KyoTeX - TeX Wiki を参照．<br>
 
 <img src="http://f.hatena.ne.jp/images/fotolife/k/ks88/20091123/20091123214305.jpg" alt="outline-tree2 を使った xyzzy の画面">
 
-[上の xyzzy の画像 \[Internet Archive\]](http://web.archive.org/web/20060824011710/http://www.klavis.info/xyzzyscr.png)で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
+上の xyzzy の画像で，左側に \section や \subsection の構成をツリー構造で示した欄があることに気づいたと思います。
 そんなふうに LaTeX ソースの論理構造をグラフィカルに示してくれる outline-tree を入れます。
 
 現在は outline-tree のバージョンが2になっています。
