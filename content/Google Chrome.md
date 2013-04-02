@@ -35,6 +35,8 @@ chrome://plugins
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
 
+Chrome PDF Viewer にコマンドラインから引数を与える場合は PDF ファイルをフルパスで指定する必要があります．<br>
+
 ## 関連リンク {#v9c56a2d}
 
 - [ChromiumでChrome PDF Viewerを使う](http://hikaru.6.ql.bz/memo.php?id=chrome)
