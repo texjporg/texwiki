@@ -30,6 +30,7 @@ W32TeX の LuaJITTeX は [LuaTeX-ja](/LuaTeX-ja/) が使用可能です．<br>
 Linux の場合は以下のサイトからバイナリが入手出来ます．<br>
 
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
+- [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
 
 ```
 $ wget http://standalone.contextgarden.net/current/bin/luajittex/linux-64/bin/luajittex
