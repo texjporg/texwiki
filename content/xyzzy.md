@@ -60,6 +60,7 @@ xyzzy+ は Ms-PL です．<br>
 - [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
     - [xyzzy-022](http://xyzzy-022.github.com/)
         - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
+        - [xyzzy 0.2.2.239 リリースノート](http://xyzzy-022.github.com/xyzzy/2012/05/29/xyzzy-0_2_2_239-release-note/)
         - [xyzzy - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/xyzzy/)
     - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
         - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
