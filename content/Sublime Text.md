@@ -83,6 +83,7 @@ Windows, OS X, Linux
 
 ### Windows {#m51226c8}
 
+- [NicoHack!第三回　おしゃれなテキストエディターSublime Textを使おう！](http://ch.nicovideo.jp/tanzo/blomaga/ar152449)
 - [Windows 版の Sublime Text 2 を使う](http://blog.segu.jp/2012/05/windows-sublime-text-2.html)
 
 ### OS X {#d13b8a86}
