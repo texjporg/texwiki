@@ -17,8 +17,6 @@ pukiwiki: "Skim"
 
 Skim は PDF ビューアです．<br>
 SyncTeX に対応しています．<br>
-DVI ファイルも PDF ファイルに変換して表示してくれます<br>
-DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．<br>
 
 - [Skim](http://skim-app.sourceforge.net/)
 
@@ -40,12 +38,16 @@ OS X 10.6 以降
 
 ## 不具合 {#obddc9fb}
 
-- [Version 1.3.11 にはファイルの自動更新機能に不具合があるようです](http://sourceforge.net/tracker/?func=detail&aid=3180818&group_id=192583&atid=941981) → Version 1.3.12 で修正されました (Fix automatic file updating.)
-- Version 1.3.20 で displayline が修正されました (Fix displayline script for SyncTeX support for Lion.)
+- [SourceForge.net: Skim PDF Reader and Note-taker for OS X: Bugs](http://sourceforge.net/tracker/?group_id=192583&atid=941981&source=navbar)
 
 ## forward search {#c02e2c91}
 
 - SyncTeX による forward search を行う場合は Skim に含まれている [displayline](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/displayline?view=markup) を使用します
+
+## DVI ファイルを PDF ファイルに変換して表示 {#nfee2aaa}
+
+DVI ファイルも PDF ファイルに変換して表示してくれます．<br>
+DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．<br>
 
 ## 関連リンク {#a3af5ca3}
 
