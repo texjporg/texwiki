@@ -112,7 +112,7 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 - Sublime Text (シェアウェア)
     - LaTeXTools (LaTeX Plugin for Sublime Text 2)
 
-### fwdsumatrapdf.exe {#n8da77e2}
+### fwdsumatrapdf.exe <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
 fwdsumatrapdf.exe は SumatraPDF で forward search を行うツールです．<br>
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
