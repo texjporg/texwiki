@@ -96,7 +96,7 @@ TeX Live はデフォルトでは自動判別しませんが -guess-input-enc �
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox %.pdf</ins> または <ins>cmd /c start chrome !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -179,7 +179,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox %.pdf</ins> または <ins>cmd /c start chrome !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
