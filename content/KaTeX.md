@@ -222,6 +222,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                                      (t "mendex -U")))
 (setq elisp::dvi2-command "texworks")
 ;(setq elisp::dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+;(setq elisp::dvi2-command "rundll32 shell32,ShellExec_RunDLL firefox -new-window")
+;(setq elisp::dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
 (setq elisp::dviprint-command-format "pdfopen --rxi --file %s.pdf")
 (setq elisp::*KaTeX-use-toolbar* t)
 (set-extended-key-translate-table exkey-M-return #\M-RET)
