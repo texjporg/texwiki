@@ -17,6 +17,7 @@ pukiwiki: "Gummi"
 
 Gummi は LaTeX エディタです．<br>
 Live preview 機能があります．<br>
+SyncTeX にも対応しています．<br>
 
 - [Gummi](http://gummi.midnightcoding.org/)
 
