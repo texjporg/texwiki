@@ -17,7 +17,8 @@ pukiwiki: "LaTeXila"
 
 ## LaTeXila とは {#h4d58d3b}
 
-LaTeXila は LaTeX 統合環境 (LaTeX エディタ) です．
+LaTeXila は LaTeX 統合環境 (LaTeX エディタ) です．<br>
+LaTeXila 2.5.3 以降は SyncTeX に対応しています．<br>
 
 - [LaTeXila - LaTeX editor for GNOME](http://projects.gnome.org/latexila/)
 
