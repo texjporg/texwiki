@@ -95,7 +95,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
 - [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
-    - サクラエディタ Ver 2.0.6.0 で外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました (→ [Sakura Editor / PatchUnicode / #230 外部ヘルプ1でもHTMLヘルプを表示](http://sourceforge.net/p/sakura-editor/patchunicode/230/))
+    - サクラエディタ Ver. 2.0.6.0 で外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました (→ [Sakura Editor / PatchUnicode / #230 外部ヘルプ1でもHTMLヘルプを表示](http://sourceforge.net/p/sakura-editor/patchunicode/230/))
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
     - サクラエディタ Ver. 2.0.6.0 で C/Migemo 1.3 に対応しました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
@@ -118,9 +118,9 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 
 　　　キーワードヘルプ<br>
 
-　　　migemo設定<br>
-　　 DLL(M)　<ins>.\migemo.dll</ins><br>
-　　 辞書(I)　<ins>.\dict</ins><br>
+　　　migemo設定<br> <!-- 　　 DLL(M)　%%%.\migemo.dll%%%&br; -->
+　　 DLL(M)　<br> <!-- 　　 辞書(I)　%%%.\dict%%%&br; -->
+　　 辞書(I)　<br>
 
 ***
 
@@ -1452,7 +1452,7 @@ $ wine sakura.exe
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]\[ 　　支援　　 \]\[ 　　マクロ　　 \]\[　　プラグイン　　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
