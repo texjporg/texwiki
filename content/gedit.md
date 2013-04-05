@@ -24,9 +24,8 @@ gedit は GNOME 公式のテキストエディタです．<br>
 <span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">ファイル(</ins>F<ins>)</span>　 <span style="color:Black;">編集(</ins>E<ins>)</span>　 <span style="color:Black;">表示(</ins>V<ins>)</span>　 <span style="color:Black;">検索(</ins>S<ins>)</span>　 <span style="color:Black;">ツール(</ins>T<ins>)</span>　 <span style="color:Black;">ドキュメント(</ins>D<ins>)</span>　 <span style="color:Black;">ヘルプ(</ins>H<ins>)</span>　　　　　　　　　　　　　</ins></span><br>
 
 ```
-\documentclass[12pt]{article}
+\documentclass[12pt]{scrartcl}
 \usepackage{indentfirst}
-\usepackage{a4wide}
 \begin{document}
 \section{What is gedit?}
 gedit is the official text editor of the GNOME desktop environment.
