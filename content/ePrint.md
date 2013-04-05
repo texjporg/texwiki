@@ -71,9 +71,8 @@ LaTeX2e なら graphics
 と書いておき，図を読み込ませたいところに，たとえば
 
 ```
-\begin{center}
+\centering
 \includegraphics[width=8cm]{foo.eps}
-\end{center}
 ```
 
 のように書きます。
