@@ -135,11 +135,12 @@ ShiftJIS (Shift_JIS) では発生しませんでした．
 
 UTF-8 を使用したい方は
 
+- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
 - [TeXworks](/TeXworks/)
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
+- Gummi
 - [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
@@ -151,7 +152,6 @@ UTF-8 を使用したい方は
 - jEdit
 - [Geany](/Geany/)
 - [gedit](/gedit/)
-- Gummi
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
