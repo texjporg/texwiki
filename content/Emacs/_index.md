@@ -499,6 +499,7 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [TeX]</th><th style="color:#FFF;background-color:#36A;text-align:center">入力</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
 > <tr><td>TeX File</td><td>C-c C-f</td><td>タイプセット</td></tr>
+> <tr><td>TeX Kill</td><td>C-c C-k</td><td>タイプセットを中断</td></tr>
 > <tr><td>BibTeX File</td><td>C-c C-i または C-c TAB</td><td>BibTeX</td></tr>
 > <tr><td>TeX View</td><td>C-c C-v</td><td>プレビュー</td></tr>
 > <tr><td>TeX Print</td><td>C-c C-p</td><td>印刷</td></tr>
