@@ -157,8 +157,8 @@ let g:atp_fold_environments = 1
 
 ***
 
-ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作しません．<br>
-コンパイル・プレビューは [Make - TeX Wiki](/Make/) を参考にして Latexmk や OMake などを使ってください．<br>
+<!-- ATP 10.6 のコンパイル・プレビューは Windows ではうまく動作しません．~ -->
+<!-- コンパイル・プレビューは [[Make - TeX Wiki>Make]] を参考にして Latexmk や OMake などを使ってください．~ -->
 
 ### 移動 {#xdfac89b}
 
