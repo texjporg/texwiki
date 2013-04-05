@@ -83,7 +83,7 @@ LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex 
 <ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>gv --watch %.ps</ins> または <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>qpdfview --unique %.ps</ins> または <ins>xdg-open %.ps</ins><br>
+<ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>qpdfview --unique %.ps</ins> または <ins>gv --watch %.ps</ins> または <ins>xdg-open %.ps</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
@@ -92,7 +92,7 @@ LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex 
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>qpdfview --unique %.pdf</ins> または <ins>texmaker2qpdfview %.pdf #.tex @</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+<ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>qpdfview --unique %.pdf</ins> または <ins>texmaker2qpdfview %.pdf #.tex @</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>texworks %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
