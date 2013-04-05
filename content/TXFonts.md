@@ -7,6 +7,29 @@ pukiwiki: "TXFonts"
 
 # TXFonts
 
+## New TX font package {#j252bcab}
+
+- [http://ctan.org/pkg/newtx](http://ctan.org/pkg/newtx)
+    - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
+
+### News {#s0ef87dd}
+
+- \[2013-03-29\] newtx 1.09
+
+### 使い方 {#rcf88e0c}
+
+```
+\usepackage{newtxtext,newtxmath}
+```
+
+詳細は
+
+```
+texdoc newtx
+```
+
+で確認してください．
+
 ## TX フォント {#uba8f4cc}
 
 \[Summary in English\]
