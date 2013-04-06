@@ -9,12 +9,33 @@ pukiwiki: "TXFonts"
 
 ## New TX font package {#j252bcab}
 
-- [http://ctan.org/pkg/newtx](http://ctan.org/pkg/newtx)
+- [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
+- [http://www.ctan.org/pkg/boondox](http://www.ctan.org/pkg/boondox)
+    - boon­dox – Math­e­mat­i­cal al­pha­bets de­rived from the STIX fonts
 
 ### News {#s0ef87dd}
 
 - \[2013-03-29\] newtx 1.09
+
+### インストール {#va9608e1}
+
+#### W32TeX {#h170776e}
+
+W32TeX には newtx, boondox パッケージが含まれていないので手動でインストールします．<br>
+
+newtx と boondox パッケージを C:\w32tex\share\texmf-local ディレクトリ配下の適切な場所に配置します．<br>
+
+C:\w32tex\share\texmf\dvipdfmx\config\dvipdfmx.cfg に以下を追加します．<br>
+
+```
+f newtx.map
+f boondox.map
+```
+
+#### TeX Live {#v5e856b3}
+
+TeX Live には newtx, boondox パッケージが最初からインストールされています．<br>
 
 ### 使い方 {#rcf88e0c}
 
@@ -230,6 +251,7 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
 
 フリーのもので，いくつかのフォントを Times にするためのパッケージもあげておきます。
 
+- newtx …… Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
 - mathptmx …… LaTeX の PSNFSS に含まれるものです。
 - mathptm …… mathptmx の旧版
 - Belleek ([TrueTeX](http://truetex.com/))
