@@ -300,25 +300,9 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 
 ## 他の方法 {#b00fa762}
 
-### Equation Magic (Lite) {#e1e0d1fe}
+### LibreOffice/Apache OpenOffice Math {#e2697394}
 
-TeX ではありませんが同様な機能を持つ数式エディタとして
-[Equation Magic Lite](http://www.micropress-inc.com/eqmlite.htm) があります。
-これは [Equation Magic Pro](http://www.micropress-inc.com/eqmpro/) の
-機能制限版で，無償で配布されています。これは Microsoft Office Word などの
-OLE 対応ソフトからは ［挿入］→［オブジェクト］→［Equation Magic］ で
-編集することができます。 <!-- 全角の［］ですか……。 -->
-Illustrator にはクリップボード経由で文字として貼り付けられます。Microsoft
-Windows に “mv” で始まる名前の TrueType フォントが9個インストールされ，
-それが使われますので，Illustrator の中から簡単な修正ができます。
-これらのフォントは Computer Modern とそっくりです。 
-
-### OLETeX {#bf856a64}
-
-Microsoft Office Word/PowerPoint に Microsoft Windows の OLE 機能を使って
-数式を貼り込むものとして，小倉信彦さんによるシェアウェア OLETeX があります。
-これについては [市川健一郎さん](http://www.geocities.co.jp/SiliconValley/7231/oletex.htm) の解説をご覧ください。 
-本来はインプレス版向けのソフトウェアですが，[坂井芳行さん](http://www2.odn.ne.jp/~ciw95550/oletex.html) が角藤さんの pTeX で動作させるための方法を解説されています。ただし，最近の版ではさらに手を加える必要があるかもしれません。
+[LibreOffice/Apache OpenOffice](/LibreOffice/) Math は OLE に対応しています。
 
 ### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
 
