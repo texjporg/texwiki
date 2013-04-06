@@ -138,7 +138,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -159,7 +158,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -175,7 +173,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -199,7 +196,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
   \\usepackage[dvipdfmx]{graphicx}
@@ -287,7 +283,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -308,7 +303,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -324,7 +318,6 @@ latexmk は TeX Live に含まれています．<br>
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -348,7 +341,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
   \\usepackage[dvipdfmx]{graphicx}
@@ -436,7 +428,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -457,7 +448,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -473,7 +463,6 @@ latexmk は TeX Live に含まれています．<br>
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
@@ -497,7 +486,6 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
-\\usepackage{amssymb}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
   \\usepackage[dvipdfmx]{graphicx}
