@@ -19,7 +19,7 @@ RJ TextEd は Unicode をサポートしたテキストエディタです．<br>
 
 - [RJ TextEd](http://www.rj-texted.se/)
 
-## Languages {#mb8b01ee}
+## メニューの日本語化 {#mb8b01ee}
 
 \[Env<ins>i</ins>ronment\]-\[Languages\]-\[\[jpn\] - Japanese (日本語)\] を選択するとメニューが日本語になります．
 
