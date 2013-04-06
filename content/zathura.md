@@ -20,7 +20,9 @@ SyncTeX に対応しています．<br>
 
 - [Home | pwmt.org](http://pwmt.org/)
     - [zathura](http://pwmt.org/projects/zathura/)
+    - [girara](http://pwmt.org/projects/girara/)
 - [The zathura Archives](http://lists.pwmt.org/archive/zathura/)
+- [The girara Archives](http://lists.pwmt.org/archive/girara/)
 
 ### 動作環境 {#q9b59e7d}
 
@@ -41,8 +43,15 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=za
 
 ### ChangeLog {#fdab5877}
 
+#### zathura {#wf24e546}
+
 - [git.pwmt.org Git - zathura.git/shortlog](http://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
 - [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git) (master)
+
+#### girara {#l7dfb095}
+
+- [git.pwmt.org Git - girara.git/shortlog](http://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
+- [git.pwmt.org Git - girara.git/summary](http://git.pwmt.org/?p=girara.git;a=summary) (master)
 
 ### 派生版 {#oea86148}
 
