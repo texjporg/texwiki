@@ -233,6 +233,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 - [インストーラ３でのTeXのインストール](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=974)
 - windows8 で　texインストーラ３ ([qa:57051](https://okumuralab.org/~okumura/texfaq/qa/57051.html), [QA: windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953), [qa:57052](https://okumuralab.org/~okumura/texfaq/qa/57052.html), [qa:57058](https://okumuralab.org/~okumura/texfaq/qa/57058.html))
+- [windowsでtex](http://d.hatena.ne.jp/imasusen/20130115/1358255816)
 - [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
 - [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
 - [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
