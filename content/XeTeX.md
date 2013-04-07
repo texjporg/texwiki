@@ -129,7 +129,7 @@ fmtutil.cnf と texmf.cnf が入っています。
 
 xetex-w32.tar.xz を TeX のインストールトップディレクトリで展開して下さい。
 
-TopDir/share/texmf/fonts/conf に移動し，（つまりカレントディレクトリとし）
+TopDir/share/texmf-dist/fonts/conf に移動し，（つまりカレントディレクトリとし）
 そこにある fonts.conf というファイルを編集します。
 編集するのは “Find fonts in these directories” というセクションだけです。
 そこにはデフォルトで， Windows のシステムフォントディレクトリだけが
@@ -145,8 +145,8 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 
 ```
     <dir>c:/windows/fonts</dir>
-    <dir>c:/w32tex/share/texmf/fonts/opentype</dir>
-    <dir>c:/w32tex/share/texmf/fonts/truetype</dir>
+    <dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
+    <dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
     <dir>c:/w32tex/share/texmf-local/fonts/opentype</dir>
     <dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 ```
@@ -160,7 +160,7 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 なるコマンドを実行して下さい。これはフォントディレクトリにある各ファイルを
 スキャンして，キャッシュファイルを作成するコマンドです。サブディレクトリ
 は自動的にサーチされます。
-キャッシュファイルは，TopDir/share/texmf/fonts/cache に作成されます。
+キャッシュファイルは，TopDir/share/texmf-dist/fonts/cache に作成されます。
 大きいフォントファイルが大量にあると，このコマンドは終了までに数分かかる
 ことがありますから，気長に他の仕事をしていて下さい。
 
