@@ -37,7 +37,7 @@ HTML と LaTeX には次のような対応関係があります。
 <tr><td>                          </td><td>\date{日付}</td></tr>
 <tr><td>&lt;link rel="stylesheet"    </td><td>% スタイルシートに対応するものは</td></tr>
 <tr><td>      type="text/css"     </td><td>% ドキュメントクラスとパッケージ</td></tr>
-<tr><td>      href="hoge.css"&gt;    </td><td>\usepackage{txfonts}</td></tr>
+<tr><td>      href="hoge.css"&gt;    </td><td>\usepackage{newtxtext,newtxmath}</td></tr>
 <tr><td>&lt;/head&gt;                   </td><td>% プリアンブル終了</td></tr>
 <tr><td>&lt;body&gt;                    </td><td>\begin{document}</td></tr>
 <tr><td>                          </td><td></td></tr>
