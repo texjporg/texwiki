@@ -28,7 +28,7 @@ W32TeX には newtx, boondox パッケージが含まれていないので手動
 
 newtx と boondox パッケージを C:\w32tex\share\texmf-local ディレクトリ配下の適切な場所に配置します．<br>
 
-C:\w32tex\share\texmf\dvipdfmx\config\dvipdfmx.cfg に以下を追加します．<br>
+C:\w32tex\share\texmf-dist\dvipdfmx\config\dvipdfmx.cfg に以下を追加します．<br>
 
 ```
 f newtx.map
