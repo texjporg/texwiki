@@ -14,7 +14,7 @@ pukiwiki: "FreeBSD"
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
-### TeX Live {#w7ff21ac}
+### TeX Live <a id="texlive"></a> {#w7ff21ac}
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
@@ -40,19 +40,15 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 Portsですので，
 make &amp;&amp; make installで導入できます．
 
-#### TeXパッケージ {#z26b2356}
-
-<table>
-<tbody>
-<tr><td>latex-mathabx</td><td>print/latex-mathabx</td><td>Math series, aka mathabx MetaFont fontset for TeX/LaTeX</td></tr>
-</tbody>
-</table>
+<!-- ***TeXパッケージ [#z26b2356] -->
+<!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
 
 #### TeXソースの入力支援 {#z413bd5e}
 
+<!-- |[[TeXmacs]]|editors/texmacs|A free WYSIWYG scientific text editor| -->
+
 <table>
 <tbody>
-<tr><td>TeXmacs</td><td>editors/texmacs</td><td>A free WYSIWYG scientific text editor</td></tr>
 <tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
 <tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
@@ -60,25 +56,21 @@ make &amp;&amp; make installで導入できます．
 </tbody>
 </table>
 
-#### TeXソースからの変換 {#r0d43da9}
-
-<table>
-<tbody>
-<tr><td>detex</td><td>print/detex</td><td>Strips TeX/LaTeX codes from a file</td></tr>
-<tr><td>latex2html</td><td>textproc/latex2html</td><td>Convert LaTeX documents to HTML</td></tr>
-<tr><td>ja-latex2html</td><td>japanese/latex2html</td><td>Japanese LaTeX2HTML with JA patch</td></tr>
-</tbody>
-</table>
+<!-- ***TeXソースからの変換 [#r0d43da9] -->
+<!-- |detex|print/detex|Strips TeX/LaTeX codes from a file| -->
+<!-- |latex2html|textproc/latex2html|Convert LaTeX documents to HTML| -->
+<!-- |ja-latex2html|japanese/latex2html|Japanese LaTeX2HTML with JA patch| -->
 
 #### DVIファイルからの変換 {#b5e1aa4a}
 
 <table>
 <tbody>
 <tr><td>dvipdfmx</td><td>print/dvipdfmx</td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
-<tr><td>dvi2tty</td><td>print/dvi2tty</td><td>A dvi-file previewer for text only devices</td></tr>
-<tr><td>ja-dvi2tty</td><td>japanese/dvi2tty</td><td>Character-based DVI file previewer</td></tr>
 </tbody>
 </table>
+
+<!-- |dvi2tty|print/dvi2tty|A dvi-file previewer for text only devices| -->
+<!-- |ja-dvi2tty|japanese/dvi2tty|Character-based DVI file previewer| -->
 
 #### PostScript関連 {#v58c994c}
 
@@ -86,18 +78,20 @@ make &amp;&amp; make installで導入できます．
 <tbody>
 <tr><td>ghostview</td><td>print/ghostview</td><td>An X11 front-end for ghostscript, the GNU postscript previewer</td></tr>
 <tr><td>gv</td><td>print/gv</td><td>A PostScript and PDF previewer</td></tr>
-<tr><td>psutils-a4</td><td>print/psutils-a4</td><td>Utilities for manipulating PostScript documents</td></tr>
-<tr><td>psutils-letter</td><td>print/psutils-letter</td><td>Utilities for manipulating PostScript documents</td></tr>
 </tbody>
 </table>
+
+<!-- |psutils-a4|print/psutils-a4|Utilities for manipulating PostScript documents| -->
+<!-- |psutils-letter|print/psutils-letter|Utilities for manipulating PostScript documents| -->
 
 #### TeXをバックエンドとして使うアプリケーション {#ba4b7bf1}
 
 <table>
 <tbody>
 <tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
-<tr><td>jadetex</td><td>print/jadetex</td><td>A TeX backend for Jade, for typesetting SGML documents</td></tr>
-<tr><td>ja-jadetex</td><td>japanese/jadetex-ptex</td><td>A pTeX backend for Jade, for typesetting SGML documents</td></tr>
-<tr><td>smartdoc</td><td>textproc/smartdoc</td><td>XML utility to create various documents</td></tr>
 </tbody>
 </table>
+
+<!-- |jadetex|print/jadetex|A TeX backend for Jade, for typesetting SGML documents| -->
+<!-- |ja-jadetex|japanese/jadetex-ptex|A pTeX backend for Jade, for typesetting SGML documents| -->
+<!-- |smartdoc|textproc/smartdoc|XML utility to create various documents| -->
