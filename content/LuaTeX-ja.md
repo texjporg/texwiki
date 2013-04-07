@@ -61,7 +61,7 @@ W32TeX をフルインストールすると<br>
 C:.
 └─w32tex
     └─share
-        └─texmf
+        └─texmf-dist
              └─tex
                  └─luatex
                      └─luatex-ja
