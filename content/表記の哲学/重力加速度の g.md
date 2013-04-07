@@ -42,7 +42,13 @@ pukiwiki: "表記の哲学/重力加速度の g"
 <tr><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmNormalUpright.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmNormalUpright.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmNormalItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmNormalItalic.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmMathRoman.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmMathRoman.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmMathItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gCmMathItalic.png" alt=""></a></td></tr>
 </tbody></table>
 
-- txfontsの場合には，
+- newtx の場合は
+
+    ```
+    \usepackage[varg]{newtxmath}
+    ```
+
+    txfonts の場合は
 
     ```
     \usepackage[varg]{txfonts}
@@ -55,7 +61,13 @@ pukiwiki: "表記の哲学/重力加速度の g"
 <tr><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargNormalUpright.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargNormalUpright.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargNormalItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargNormalItalic.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargMathRoman.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargMathRoman.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargMathItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsVargMathItalic.png" alt=""></a></td></tr>
 </tbody></table>
 
-- (参考) txfontsの場合で，
+- (参考) newtx の場合は
+
+    ```
+    \usepackage{newtxmath}
+    ```
+
+    txfonts の場合は
 
     ```
     \usepackage{txfonts}
