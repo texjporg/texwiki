@@ -54,11 +54,6 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 - TeX のコマンドを補完してくれます．(Ctrl + Space)
 - 折りたたみが可能です．→ デフォルトでは OFF になっています．\[View\]-\[Fold Margin\] で ON にできます．
 - SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能です．
-    - [TeXnicCenter 2.0 Alpha 3 から，デフォルトの PDF ビューアが SumatraPDF になりました．](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/86030778d9fc)
-
-### ドキュメント {#s783d445}
-
-- [Welcome to the documentation of TeXnicCenter &mdash; TeXnicCenter v2.0 documentation](http://texniccenter.sourceforge.net/)
 
 ## 不具合 {#p40a9a4a}
 
