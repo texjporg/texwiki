@@ -138,8 +138,8 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 
 使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
 PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)<br>
-[UTF8-UCS2](http://project.ktug.or.kr/dvipdfmx/sample/misc/UTF8-UCS2) は、[dvipdfmx 開発元](http://project.ktug.or.kr/dvipdfmx/)から入手できます。<br>
-TeX Live 2012, W32TeX の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
+CMap は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．<br>
+TeX Live 2012 以降, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -157,8 +157,9 @@ TeX Live 2012, W32TeX の場合は、UTF8-UCS2 はインストール済みです
 \fi
 ```
 
-補助面 (U+10000以上) の文字を使用する場合は [CMap UTF8-UTF16](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) を使用します．<br>
-TeX Live 2012, 2012/05/25 以降の W32TeX の場合は UTF8-UTF16 はインストール済みです．<br>
+補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex/UTF8-UTF16?view=markup) を使用します．<br>
+[TeX memo - upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．<br>
+TeX Live 2012 以降, 2012/05/25 以降の W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場合は UTF8-UTF16 はインストール済みです．<br>
 
 ```
 \ifx\kanjiskip\undefined\else
