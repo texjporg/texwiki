@@ -38,7 +38,7 @@ W32TeX の場合は Babel の japanese パッケージをインストールす�
 1. japanese.zip を展開します．
 1. 展開すると japanese.ins というファイルがあるので，japanese.ins を C:\w32tex\bin\platex.exe に Drag &amp; Drop します．
 1. japanese.ins と同じフォルダに japanese.ldf が作成されます．
-1. japanese.ldf をコピーして C:\w32tex\share\texmf\tex\generic\babel にペースト(貼り付け)すればインストール完了です．
-1. もし C:\w32tex\share\texmf\ls-R が存在する場合は C:\w32tex\bin\deltexlsr.exe をダブルクリックして C:\w32tex\share\texmf\ls-R を削除してください．
+1. japanese.ldf をコピーして C:\w32tex\share\texmf-dist\tex\generic\babel にペースト(貼り付け)すればインストール完了です．
+1. もし C:\w32tex\share\texmf-dist\ls-R が存在する場合は C:\w32tex\bin\deltexlsr.exe をダブルクリックして C:\w32tex\share\texmf-dist\ls-R を削除してください．
 
 - [funyarara @ Wiki - インストール](http://www35.atwiki.jp/funyarara/pages/43.html) にも japanese.ldf のインストール・設定方法があります．
