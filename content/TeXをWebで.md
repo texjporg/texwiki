@@ -39,7 +39,7 @@ pTeX（日本語版 TeX）については，最近の Linux ディストリビ�
 
 ### セキュリティ上の配慮 {#aeb59313}
 
-以下で $TEXMF と書いた部分は /usr/\[local\[/texlive\*\]/\]share/texmf
+以下で $TEXMF と書いた部分は /usr/\[local\[/texlive\*\]/\]share/texmf-dist
 のような名前のディレクトリを意味します。
 
 TeX の設定ファイル $TEXMF/web2c/texmf.cnf が次のようになっていなかったら書き換えます。
