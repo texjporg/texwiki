@@ -14,9 +14,13 @@ pukiwiki: "cm-super"
 [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 
 [cm-super.zip](https://mirror.ctan.org/fonts/ps-type1/cm-super.zip) がダウンロードできます。
 
+### W32TeX {#e991fdd9}
+
+W32TeX には標準で含まれています．<br>
+
 ### TeX Live {#v13d26d6}
 
-TeX Live 2012 には標準で含まれています．<br>
+TeX Live には標準で含まれています．<br>
 
 #### Ubuntu {#h3ad69fe}
 
