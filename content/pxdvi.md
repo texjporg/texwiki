@@ -13,7 +13,7 @@ pukiwiki: "pxdvi"
 
 ## pxdvi とは {#s1b173bb}
 
-pxdvi は DVI プレビューアです．<br>
+pxdvi は日本語に対応した DVI プレビューアです．<br>
 pxdvi は [xdvik](http://xdvi.sourceforge.net/) を日本語化したものです．<br>
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
@@ -33,17 +33,17 @@ X Window System
 - \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
     - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=log)
-    - [ChangeLog.TL](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog.TL?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
 
 - [http://gitorious.org/xdvik-japanese-patch-cleanup](http://gitorious.org/xdvik-japanese-patch-cleanup)
 - [http://gitorious.org/tlptexlive](http://gitorious.org/tlptexlive)
 
-xdvik 22.85 は TeX Live 2012 に含まれています．
+xdvik 22.86 は TeX Live 2013 に含まれています．
 
 ## インストール {#cce5d1ed}
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-TeX Live 2012 で pxdvi をインストールする場合は tlptexlive with TeX Live 2012 を参照してください．<br>
+TeX Live 2013 で pxdvi をインストールする場合は tlptexlive with TeX Live 2013 を参照してください．<br>
 
 ## 関連リンク {#qded2ff9}
 
