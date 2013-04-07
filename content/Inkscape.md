@@ -893,7 +893,7 @@ Error: Couldn't find a font for 'Ryumin Light Identity H'
 some font thing failed
 ```
 
-C:\w32tex\share\texmf\fonts\conf\local.conf を編集します．
+C:\w32tex\share\texmf-dist\fonts\conf\local.conf を編集します．
 
 ***
 
@@ -911,8 +911,8 @@ C:\w32tex\share\texmf\fonts\conf\local.conf を編集します．
   You can add directories if you have additional fonts.
   Example:
 
-<dir>c:/w32tex/share/texmf/fonts/opentype</dir>
-<dir>c:/w32tex/share/texmf/fonts/truetype</dir>
+<dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
 -->
 
 <match target="pattern">
@@ -942,14 +942,14 @@ C:\w32tex\share\texmf\fonts\conf\local.conf を編集します．
 MinGW Shell (MSYS) の場合は
 
 ```
-$ export FONTCONFIG_PATH=C:/w32tex/share/texmf/fonts/conf
+$ export FONTCONFIG_PATH=C:/w32tex/share/texmf-dist/fonts/conf
 $ pdf2svg tmp.pdf tmp.svg
 ```
 
 コマンド プロンプトの場合は
 
 ```
->set FONTCONFIG_PATH=C:\w32tex\share\texmf\fonts\conf
+>set FONTCONFIG_PATH=C:\w32tex\share\texmf-dist\fonts\conf
 >pdf2svg tmp.pdf tmp.svg
 ```
 
