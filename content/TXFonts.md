@@ -11,6 +11,8 @@ pukiwiki: "TXFonts"
 
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
+- [http://www.ctan.org/pkg/newpx](http://www.ctan.org/pkg/newpx)
+    - newpx – Al­ter­na­tive uses of the PX fonts, with im­proved met­rics
 - [http://www.ctan.org/pkg/boondox](http://www.ctan.org/pkg/boondox)
     - boon­dox – Math­e­mat­i­cal al­pha­bets de­rived from the STIX fonts
 
