@@ -33,7 +33,7 @@ pukiwiki: "OTF"
     で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
     使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
 
-- TeX Live 2012 以降では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/4/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+- TeX Live 2012 以降では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/04/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### ChangeLog {#k32bef0c}
 
@@ -669,7 +669,7 @@ dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
 <!-- （下の記述にある Microsoft Windows の TrueType フォントを使う場合の -->
 <!--   dvipdfmx 用の map ファイルや次のサイトをご参照ください。 -->
 <!--   http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LaTeX-CJK#odc3338f -->
-<!--   http://cvs.ktug.or.kr/viewcvs/*checkout*/dvipdfmx/README?rev=1.24 -->
+<!--   http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfmx/README?view=markup -->
 <!--   http://www.ring.gr.jp/pub/text/CTAN/dviware/dvipdfmx/README       ） -->
 <!-- 実際に，Adobe-Japan1-6 や “/AJ16” を使わずに -->
 <!-- Identity-H, Identity-V と TrueType フォントを使うように -->
