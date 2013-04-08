@@ -158,21 +158,6 @@ Command:
 Options:
 : '%target'
 
-### ViewDVI {#jdb2e9e7}
-
-#### pxdvi の場合 {#gf8017cc}
-
-\[New...\] をクリックして pxdvi を入力します．
-
-Select:
-: pxdvi
-
-Command:
-: pxdvi
-
-Options:
-: -watchfile 1 '%target'
-
 ## 使い方 {#ub2acf7c}
 
 ### QuickBuild {#o3d47735}
