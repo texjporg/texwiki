@@ -88,9 +88,6 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [Emacs For Mac OS X](http://www.emacsformacosx.com/)
     - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://www.emacsformacosx.com/builds)
 - [Emacs for OS X Modified](http://vgoulet.act.ulaval.ca/en/emacs/mac/)
-- [Aquamacs Emacs](http://aquamacs.org/)
-    - MacWiki:Aquamacs_Emacs によると Aquamacs Emacs は，ネットワーク経由でモードの利用情報などを収集するらしいです．(setq aquamacs-version-check-url nil) でオフにできます．詳しくは [check-for-updates.el](https://github.com/davidswelt/aquamacs-emacs/blob/master/aquamacs/src/site-lisp/check-for-updates.el) を参照．
-    - [コミットログ](https://github.com/davidswelt/aquamacs-emacs/commits/master)
 
 #### Windows, OS X, Linux {#l1a2cc42}
 
