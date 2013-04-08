@@ -386,7 +386,7 @@ WinAPI も呼び出せます（コモンダイアログを使うときには Net
 ### forward search {#ra3924a4}
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。<br>
-KyoTeX, [KaTeX](/KaTeX/) の設定を参照してください。<br>
+KyoTeX の設定を参照してください。<br>
 
 ### inverse search {#n1f72109}
 
