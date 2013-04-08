@@ -96,7 +96,6 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 ■ フリーウェア (無料)
 
 - EasyTeX
-- [WinShell](/WinShell/)
 - Mery
     - SumatraPDF.js
 - gPad
