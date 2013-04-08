@@ -321,29 +321,6 @@ pukiwiki: "LyX/設定/Windows"
 
 ***
 
-#### DVI {#q37ac96c}
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>DVI　　　　　　　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>dvi</ins><br>
-拡張子(X):　　　　　　<ins>dvi</ins><br>
-短絡キー(U):　　　　　<ins>D</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\w32tex\dviout\dviout.exe" -1</ins> または <ins>"C:\texlive\2012\tlpkg\dviout\dviout.exe" -1</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 #### PDF (dvipdfm) {#xc68f23e}
 
 ■ [TeXworks](/TeXworks/) の場合
@@ -695,31 +672,6 @@ pukiwiki: "LyX/設定/Windows"
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
-#### Postscript {#h5a8500c}
-
-■ [SumatraPDF](/SumatraPDF/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>Postscript　　　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>ps</ins><br>
-拡張子(X):　　　　　　<ins>ps</ins><br>
-短絡キー(U):　　　　　<ins>t</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
 
 ***
