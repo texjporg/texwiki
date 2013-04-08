@@ -20,7 +20,6 @@ Hunspell はスペルチェッカーです．<br>
 - [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
-- [WinShell](/WinShell/)
 - Mery
 
 ### 辞書 {#q4b7f294}
