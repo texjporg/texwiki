@@ -89,16 +89,14 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [NppExec](/NppExec/)
     - [MTeX for Notepad++](</MTeX for Notepad++/>)
 - [サクラエディタ](</サクラエディタ/>)
-    - [SumatraPDF.js](</サクラエディタ/#s758d3d9>)
+    - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 - [xyzzy](/xyzzy/)
     - KyoTeX
-    - [KaTeX](/KaTeX/)
 
 ■ フリーウェア (無料)
 
 - EasyTeX
 - [WinShell](/WinShell/)
-- Visual Windows for TeX
 - Mery
     - SumatraPDF.js
 - gPad
@@ -1585,10 +1583,9 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [NppExec](/NppExec/)
     - [MTeX for Notepad++](</MTeX for Notepad++/>)
 - [サクラエディタ](</サクラエディタ/>)
-    - [fwdsumatrapdf.js](</サクラエディタ/#ce8c0353>)
+    - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
 - [xyzzy](/xyzzy/)
     - KyoTeX
-    - [KaTeX](/KaTeX/)
 
 ■ フリーウェア (無料)
 
