@@ -9,6 +9,8 @@ pukiwiki: "Sublime Text"
 
 ## [Sublime Text](http://www.sublimetext.com/) {#pefc7cc2}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/4/4c/Sublime_Text_Logo.png" alt="Sublime Text" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## Sublime Text とは {#w93773a9}
