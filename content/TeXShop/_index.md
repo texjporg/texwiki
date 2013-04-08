@@ -68,6 +68,7 @@ Live preview for TeXShop
 - [Taylor/「TeXShop」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeXShop)
 - [泉 富士夫/「TeXShop」の検索結果 - Twilog](http://twilog.org/Izumi_Fujio/search?word=TeXShop)
 - [TeXShop Simulator](https://dl.dropbox.com/u/5807100/TeXShopSimulator/index.html)
+- [まとめ：LaTeXで卒業論文を書く(1)](http://ichijikann.blog6.fc2.com/blog-entry-147.html)
 - [texlive-lang-cjk導入時のTeXShopの設定](http://hiyokoz.blogspot.jp/2013/01/texlive-lang-cjktexshop.html)
 - [シェルスクリプトに関して uplatex2pdf-utf8という以下のスクリプトがあります。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1399148908)
 - [MacでTeX環境を整える+α](http://forza3.blog66.fc2.com/blog-entry-291.html)
