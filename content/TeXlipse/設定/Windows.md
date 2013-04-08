@@ -348,7 +348,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\platex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -362,7 +362,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\platex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -376,7 +376,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\uplatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\uplatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -393,7 +393,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\pdflatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\pdflatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -410,7 +410,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\xelatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\xelatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -428,7 +428,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\lualatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\lualatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -442,7 +442,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\luajitlatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -460,7 +460,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\pbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -474,7 +474,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\upbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\upbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -488,7 +488,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\bibtexu.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\bibtexu.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -505,7 +505,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\biber.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\biber.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
@@ -522,7 +522,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
@@ -539,7 +539,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\dvips.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\dvips.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
@@ -556,7 +556,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\dvipdfmx.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\dvipdfmx.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
@@ -573,7 +573,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\ps2pdf.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -590,7 +590,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2012\bin\win32\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
@@ -966,88 +966,6 @@ Adobe Reader を使用する場合は，
 
 の優先度を一番上にします．
 
-### PS ファイル ビューアー {#d5afa7cc}
-
-#### [SumatraPDF](/SumatraPDF/) {#o2911d51}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF PS</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins> または <ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;file"</ins><br>
-　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-
-<br>
-
-　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[ps 　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
-SumatraPDF を使用する場合は，
-
-> <span style="color:White;background-color:#1188FF;">　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
-
-の優先度を一番上にします．
-
-### DVI ファイル ビューアー {#y075cb2d}
-
-#### [dviout](/dviout/) {#o33347b9}
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>dviout</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\w32tex\dviout\dviout.exe</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-1 "&#x25;file"</ins><br>
-　　　　ビューで送信する DDE メッセージ<br>
-　　　　コマンド： <ins>\[WinNormal\]\[FileOpen("%file")\]</ins><br>
-　　　　サーバー： <ins>dviout</ins>　　　　　　　　　　　　　　　　　　　　　　　　　トピック： <ins>dviout</ins><br>
-
-<br>
-
-　　　　再ビルド前に送信する DDE メッセージ<br>
-　　　　コマンド： <br>
-　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 　　トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[dvi　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
-
-<br>
-
-　　　File ok.
-
-***
-
-dviout を使用する場合は，
-
-> <span style="color:White;background-color:#1188FF;">　dviout (C:\w32tex\dviout\dviout.exe)　</span><br>
-
-の優先度を一番上にします．
-
 ### 編集後 {#y59ef935}
 
 ***
@@ -1066,8 +984,6 @@ dviout を使用する場合は，
 　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
-　sumatra PDF PS (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
-　dviout (C:\w32tex\dviout\dviout.exe)<br>
 　yap ()<br>
 　xdvi ()<br>
 　itexmac ()<br>
