@@ -9,6 +9,12 @@ pukiwiki: "MiKTeX"
 
 ## [MiKTeX](http://miktex.org/) {#n766a2b6}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## MiKTeX とは {#b83589db}
+
+MiKTeX は TeX のディストリビューションです．<br>
+
 - [MiKTeX Project Page](http://miktex.org/)
     - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
 
