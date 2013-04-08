@@ -271,5 +271,3 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
 
 - 本家CTANサーバ:
     [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
-
-- [TXFONTSをMacpTeXで利用するための情報](http://macptex.appi.keio.ac.jp/~uchiyama/txfonts.html)
