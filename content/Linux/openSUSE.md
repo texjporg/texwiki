@@ -17,6 +17,8 @@ pukiwiki: "Linux/openSUSE"
 
 ## openSUSE とは {#n178877e}
 
+openSUSE は Linux ベースのオペレーティングシステムです．<br>
+
 - [openSUSE.org](http://www.opensuse.org/)
 - [メインページ - openSUSE](http://ja.opensuse.org/)
 
