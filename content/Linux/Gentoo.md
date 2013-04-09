@@ -11,14 +11,16 @@ pukiwiki: "Linux/Gentoo"
 
 ## [Gentoo Linux](http://www.gentoo.org/) {#j8a08e75}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gentoo_Linux_logo_matte.svg/200px-Gentoo_Linux_logo_matte.svg.png" alt="Gentoo" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gentoo_Linux_logo_matte.svg/200px-Gentoo_Linux_logo_matte.svg.png" alt="Gentoo" width="128" height="128" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Gentoo とは {#gdebd34f}
+## Gentoo Linux とは {#gdebd34f}
+
+Gentoo Linux はソフトウェアをソースコードからコンパイルして環境を構築していく Linux ディストリビューションです．<br>
 
 - [Gentoo Linux](http://www.gentoo.org/)
-- [Gentoo Linux Users Group Japan(GentooJP)](http://www.gentoo.gr.jp/)
+- [Gentoo Linux Users Group Japan (GentooJP)](http://www.gentoo.gr.jp/)
 
 ## [TeX Live](</TeX Live/>) {#ld62f64f}
 
