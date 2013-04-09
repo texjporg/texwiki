@@ -47,7 +47,7 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 8, 7, Vista, XP, 2000 日本語版
+Windows 8, 7, Vista, XP, 2000
 
 ### License {#y5064e03}
 
@@ -92,6 +92,7 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 ## コマンドラインオプション {#j41d5a42}
 
 - [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp/HLP000109.html)
+- [コマンドラインオプション - SakuraEditorWiki](http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3)
 
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
@@ -126,6 +127,8 @@ Windows 8, 7, Vista, XP, 2000 日本語版
 ***
 
 ## デフォルトの文字コード {#a47f6241}
+
+- [FAQ/57 - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ%2F57)
 
 サクラエディタ Ver. 2.0.6.0 は \[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] からデフォルトの文字コードを指定することができます．<br>
 UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選択します．<br>
@@ -545,6 +548,7 @@ $ wine sakura.exe
 
 ## 関連リンク {#c879d1c4}
 
+- [「はじめてのサクラエディタ」筆者サポートページ](http://supportdoc.net/support-sakura/)
 - [Sakura EditorでLaTeXを使う](http://physics-station.blogspot.jp/2013/04/sakura-editorlatex.html)
 - [そっとプロジェクト＠Ｗｉｋｉ - ソフトウェア/サクラエディタ](http://www19.atwiki.jp/sotto_project/pages/151.html)
 - [Memo/SakuraEditor - DEX Lab](http://dex.qp.land.to/pukiwiki/index.php?Memo/SakuraEditor)
