@@ -31,7 +31,7 @@ LuaTeX-ja は
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/)
     - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
-- [MacTeX](/Mac/#f5466652) (MacTeX-2012 以降)
+- [MacTeX](/Mac/#mactex) (MacTeX-2012 以降)
 
 で利用可能です．
 
