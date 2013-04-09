@@ -21,7 +21,6 @@ TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 - [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
 - [TeXnicCenter | Free Business &amp; Enterprise software downloads at SourceForge.net](http://sourceforge.net/projects/texniccenter/)
-- [CTAN:help/Catalogue/entries/texniccenter.html](https://mirror.ctan.org/help/Catalogue/entries/texniccenter.html)
 
 ### 動作環境 {#sa939c6e}
 
@@ -41,8 +40,9 @@ TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さん
 
 ### ChangeLog {#y2c9ad23}
 
-- [SourceForge: texniccenter/texniccenter: Summary](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/)
-    - [コミットログ](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/shortlog)
+- [Hg tools](http://sourceforge.net/p/texniccenter/_list/hg)
+    - [Code](http://sourceforge.net/p/texniccenter/code/)
+        - [log](http://sourceforge.net/p/texniccenter/code/ci/tip/log/)
 
 ### スクリーンショット {#defb0bff}
 
