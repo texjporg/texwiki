@@ -149,10 +149,18 @@ C-c s または M-x sumatrapdf-forward-search で TeX ファイル中のカー�
 メニューの \[kyotex(Y)\]-\[基本設定\]-\[コンパイラの設定(D)\] で
 
 TeX(T):
-: platex -kanji=utf8 -guess-input-enc -synctex=1<br>uplatex -kanji=utf8 -no-guess-input-enc -synctex=1
+: &nbsp;
+
+: platex -kanji=utf8 -guess-input-enc -synctex=1
+
+: uplatex -kanji=utf8 -no-guess-input-enc -synctex=1
 
 BiBTeX(B):
-: pbibtex -kanji=utf8<br>upbibtex
+: &nbsp;
+
+: pbibtex -kanji=utf8
+
+: upbibtex
 
 DVI->PDF(P):
 : dvipdfmx
