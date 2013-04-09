@@ -72,8 +72,8 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
-- [LyX](/LyX/)
 - [Texmaker](/Texmaker/)
+- [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/)
@@ -1566,8 +1566,8 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
-- [LyX](/LyX/)
 - [Texmaker](/Texmaker/)
+- [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/)
