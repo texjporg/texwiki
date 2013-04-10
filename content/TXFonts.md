@@ -15,6 +15,8 @@ pukiwiki: "TXFonts"
     - newpx – Al­ter­na­tive uses of the PX fonts, with im­proved met­rics
 - [http://www.ctan.org/pkg/boondox](http://www.ctan.org/pkg/boondox)
     - boon­dox – Math­e­mat­i­cal al­pha­bets de­rived from the STIX fonts
+- [http://www.ctan.org/pkg/fontaxes](http://www.ctan.org/pkg/fontaxes)
+    - fontaxes – Ad­di­tional font axes for LaTeX
 
 ### News {#s0ef87dd}
 
@@ -24,20 +26,23 @@ pukiwiki: "TXFonts"
 
 #### W32TeX {#h170776e}
 
-W32TeX には newtx, boondox パッケージが含まれていないので手動でインストールします．<br>
+W32TeX には newtx, boondox パッケージが含まれていないので手動でインストールします。<br>
 
-newtx と boondox パッケージを C:\w32tex\share\texmf-local ディレクトリ配下の適切な場所に配置します．<br>
+newtx と boondox パッケージを C:\w32tex\share\texmf-local ディレクトリ配下の適切な場所に配置します。<br>
 
-C:\w32tex\share\texmf-dist\dvipdfmx\config\dvipdfmx.cfg に以下を追加します．<br>
+newtx は内部で fontaxes.sty を呼ぶようなので、これもインストールします。
 
-```
-f newtx.map
-f boondox.map
-```
+コマンドプロンプトで
+
+> updmap --add newtx.map boondox.map
+
+とします。
+
+（W32TeX に入れてくれるとうれしいな）
 
 #### TeX Live {#v5e856b3}
 
-TeX Live には newtx, boondox パッケージが最初からインストールされています．<br>
+TeX Live には newtx, boondox, fontaxes パッケージが最初からインストールされています．<br>
 
 ### 使い方 {#rcf88e0c}
 
@@ -51,7 +56,7 @@ TeX Live には newtx, boondox パッケージが最初からインストール�
 texdoc newtx
 ```
 
-で確認してください．
+で確認してください。
 
 ## TX フォント {#uba8f4cc}
 
