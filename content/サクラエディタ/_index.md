@@ -72,6 +72,7 @@ Windows 8, 7, Vista, XP, 2000
 
 ## ダウンロード {#p4ea6725}
 
+- [ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
 - [http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
 - [サクラエディタ UNICODE/ANSI 版](http://sourceforge.net/projects/sakura-editor/files/)
