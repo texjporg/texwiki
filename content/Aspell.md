@@ -72,7 +72,7 @@ $ brew install aspell --lang=en
 MacPorts を使って簡単にインストールできます。
 
 ```
-$ sudo port intall aspell aspell-dict-en
+$ sudo port install aspell aspell-dict-en
 ```
 
 ### Aspell の使い方（コマンド プロンプト編） {#aspus466}
