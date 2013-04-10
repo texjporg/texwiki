@@ -632,11 +632,20 @@ hmgothr-v   "@A-OTF 見出ゴMB31 Pr6N MB31"
 > ```
 >
 > などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。<br>
-> [updmap-setup-kanji.pl](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/jfontmaps/updmap-setup-kanji.pl?view=markup) を使用すれば PDFへのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
+> TeX Live 2013 の場合は [kanji-config-updmap](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/jfontmaps/kanji-config-updmap.pl?view=markup) を使用すれば PDFへのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
 >
 > ```
-> $ updmap-setup-kanji <fontname>　　（otf-<fontname>.mapにしたがってフォントを埋め込む）
-> $ updmap-setup-kanji auto　　　（hiragino, morisawa, kozuka, ipaex, ipaのいずれかを埋め込む）
+> $ kanji-config-updmap <fontname>　　（otf-<fontname>.map にしたがってフォントを埋め込む）
+> $ kanji-config-updmap auto　　　（hiragino, morisawa, kozuka, ipaex, ipa, ms のいずれかを埋め込む）
+> $ kanji-config-updmap nofont　　（PDFにフォントを埋め込まない）
+> $ kanji-config-updmap status　　（現在の埋め込み設定を確認する）
+> ```
+>
+> TeX Live 2012 の場合は updmap-setup-kanji を使用すれば PDFへのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
+>
+> ```
+> $ updmap-setup-kanji <fontname>　　（otf-<fontname>.map にしたがってフォントを埋め込む）
+> $ updmap-setup-kanji auto　　　（hiragino, morisawa, kozuka, ipaex, ipa のいずれかを埋め込む）
 > $ updmap-setup-kanji nofont　　（PDFにフォントを埋め込まない）
 > $ updmap-setup-kanji status　　（現在の埋め込み設定を確認する）
 > ```
