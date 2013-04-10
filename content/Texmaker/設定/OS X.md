@@ -15,14 +15,13 @@ pukiwiki: "Texmaker/設定/OS X"
 
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
-MacTeX &amp; TeX Live の場合の設定を書きます．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
 [LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
 LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex を luajitlatex に変更して使用してください．<br>
 
-#### [MacTeX &amp; TeX Live](/Mac/#f5466652) {#i89a162a}
+#### [MacTeX &amp; TeX Live](/Mac/#mactex) {#i89a162a}
 
 動作未確認です．<br>
 Texmaker 3.4.1 では動作するようです．<br>
