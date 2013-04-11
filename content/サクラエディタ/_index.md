@@ -499,12 +499,6 @@ TeX のアウトライン解析機能があります．
 - [本体へ関連付けツールを組み込み - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/49)
 - [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](http://sourceforge.net/p/sakura-editor/patchunicode/148/)
 
-## 背景画像の表示 {#g21b26e8}
-
-背景画像を表示することが可能です．
-
-サクラエディタ Ver. 2.0.6.0 は \[設定(O)\] → \[タイプ別設定(Y)...\] のカラータブの背景画像から画像を選択できます．
-
 ## Linux で サクラエディタを使う {#pf5d83cb}
 
 [Wine](http://www.winehq.org/) を使えば動作するようです．
