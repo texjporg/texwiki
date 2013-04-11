@@ -170,7 +170,7 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
-BXjscls と ZXjatype は [TeX Live](</TeX Live/>) に含まれています．<br>
+BXjscls と ZXjatype は [TeX Live](</TeX Live/>) 2013 に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
