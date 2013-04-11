@@ -123,6 +123,8 @@ xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https:
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
 
+- [Issue 116: xeCJK: Support for Ideographic Variation Selectors](https://code.google.com/p/ctex-kit/issues/detail?id=116)
+
 ### 使い方 {#k3d278aa}
 
 #### MS Mincho, MS Gothic の場合 {#u1a0c13b}
