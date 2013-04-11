@@ -104,7 +104,7 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 ■ シェアウェア
 
 - [秀丸エディタ](</秀丸エディタ/>) (シェアウェア)
-    - [SumatraPDF.mac](</秀丸エディタ/#y16d42fd>)
+    - [SumatraPDF.mac](</秀丸エディタ/マクロ/#y16d42fd>)
     - 祝鳥 (のりてふ)
 - Sublime Text (シェアウェア)
     - LaTeXTools (LaTeX Plugin for Sublime Text 2)
