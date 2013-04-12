@@ -45,6 +45,12 @@ xdvik 22.86 は TeX Live 2013 に含まれています．
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 TeX Live 2013 で pxdvi をインストールする場合は tlptexlive with TeX Live 2013 を参照してください．<br>
 
+## 使い方 {#o73d19d8}
+
+```
+$ pxdvi -watchfile 1 hoge.dvi
+```
+
 ## 関連リンク {#qded2ff9}
 
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
