@@ -121,7 +121,7 @@ Adobe Reader XI, Adobe Acrobat XI を使用する場合は
 
 または
 
-- TeX Live [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) 以降
+- TeX Live 2013 以降 (→ [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) でコミットされました)
 
 が必要です．<br>
 
