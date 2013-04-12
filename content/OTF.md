@@ -53,6 +53,10 @@ pukiwiki: "OTF"
 
 ### Microsoft Windows でのインストール {#t967d888}
 
+#### TeX Live {#da8ed89a}
+
+TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+
 #### W32TeX {#z4ee6291}
 
 [W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
@@ -103,10 +107,6 @@ GNU tar 1.11.8 + 2.0(WIN32)
 ```
 
 [Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
-
-#### TeX Live {#da8ed89a}
-
-TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### OS X でのインストール {#h2117028}
 
