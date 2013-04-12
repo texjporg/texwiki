@@ -90,72 +90,158 @@ SVN<br>
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 LaTeX
-: platex.exe -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex<br>platex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex<br>uplatex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex<br>latex.exe -synctex=1 -interaction=nonstopmode %.tex
+: &nbsp;
+
+: platex.exe -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex
+
+: platex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex
+
+: uplatex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
+
+: latex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
+: &nbsp;
+
 : pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 XeLaTeX
+: &nbsp;
+
 : xelatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 LuaLaTeX
-: lualatex.exe -synctex=1 -interaction=nonstopmode %.tex<br>luajitlatex.exe -synctex=1 -interaction=nonstopmode %.tex
+: &nbsp;
+
+: lualatex.exe -synctex=1 -interaction=nonstopmode %.tex
+
+: luajitlatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 DVIビューア
-: dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]<br>dde:///"C:\texlive\2012\tlpkg\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
+: &nbsp;
+
+: dde:///"C:\texlive\2013\tlpkg\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
+
+: dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
 
 PSビューア
-: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"<br>dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]<br>dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
+: &nbsp;
+
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"
+
+: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"
+
+: dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
+
+: dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
 
 外部PDFビューア
-: texworks.exe "?am.pdf"<br>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @<br>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @<br>dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]<br>dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]<br>"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"<br>"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
+: &nbsp;
+
+: texworks.exe "?am.pdf"
+
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+
+: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+
+: dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
+
+: dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
+
+: "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
+
+: "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
 
 DviPs
+: &nbsp;
+
 : dvips.exe -Ppdf -o %.ps %.dvi
 
 DviPng
+: &nbsp;
+
 : dvipng.exe -T tight -D 120 %.dvi
 
 Ps2Pdf
+: &nbsp;
+
 : ps2pdf.bat %.ps
 
 DviPdf
+: &nbsp;
+
 : dvipdfmx.exe %.dvi
 
 BibTeX
-: pbibtex.exe -kanji=utf8 %<br>upbibtex.exe %<br>bibtexu.exe %<br>bibtex.exe %
+: &nbsp;
+
+: pbibtex.exe -kanji=utf8 %
+
+: upbibtex.exe %
+
+: bibtexu.exe %
+
+: bibtex.exe %
 
 BibTex 8ビット
+: &nbsp;
+
 : bibtex8.exe %
 
 Biber
+: &nbsp;
+
 : biber.exe %
 
 Makeindex
-: mendex.exe -U %.idx<br>makeindex.exe %.idx
+: &nbsp;
+
+: mendex.exe -U %.idx
+
+: makeindex.exe %.idx
 
 Texindy
 : texindy.exe
 
 Makeglossary
+: &nbsp;
+
 : makeglossaries.exe
 
 Metapost
-: pmpost.exe -kanji=utf8 -interaction=nonstopmode ?me)<br>upmpost.exe -interaction=nonstopmode ?me)<br>mpost.exe -interaction=nonstopmode ?me)
+: &nbsp;
+
+: pmpost.exe -kanji=utf8 -interaction=nonstopmode ?me)
+
+: upmpost.exe -interaction=nonstopmode ?me)
+
+: mpost.exe -interaction=nonstopmode ?me)
 
 Asymptote
+: &nbsp;
+
 : asy.exe %m\*.asy
 
 Ghostscript
+: &nbsp;
+
+: C:\texlive\2013\tlpkg\tlgs\bin\gswin32c.exe
+
 : "C:\gs\gs9.07\bin\gswin32c.exe"
 
 Latexmk
+: &nbsp;
+
 : latexmk -pdf -silent -pdflatex="pdflatex -synctex=1 &#x25;&#x25;O &#x25;&#x25;S" %
 
 SVN
+: &nbsp;
+
 : svn.exe
 
 SVNADMIN
+: &nbsp;
+
 : svnadmin.exe
 
 ***
