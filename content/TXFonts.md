@@ -24,6 +24,10 @@ pukiwiki: "TXFonts"
 
 ### インストール {#va9608e1}
 
+#### TeX Live {#v5e856b3}
+
+TeX Live には newtx, boondox, fontaxes パッケージが最初からインストールされています．<br>
+
 #### W32TeX {#h170776e}
 
 W32TeX には newtx, boondox パッケージが含まれていないので手動でインストールします。<br>
@@ -39,10 +43,6 @@ newtx は内部で fontaxes.sty を呼ぶようなので、これもインスト
 とします。
 
 （W32TeX に入れてくれるとうれしいな）
-
-#### TeX Live {#v5e856b3}
-
-TeX Live には newtx, boondox, fontaxes パッケージが最初からインストールされています．<br>
 
 ### 使い方 {#rcf88e0c}
 
