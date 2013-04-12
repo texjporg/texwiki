@@ -7,7 +7,11 @@ pukiwiki: "Emacs/TeX mode"
 
 # Emacs/TeX mode
 
-### [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
+[Emacs](/Emacs/) > TeX mode
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
 - [TeX Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
 - [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
@@ -22,11 +26,11 @@ pukiwiki: "Emacs/TeX mode"
 Emacs には標準で [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) が含まれています．<br>
 スニペットが必要な場合は [YASnippet](/YASnippet/) を使ってください．<br>
 
-#### License {#g3e59977}
+### License {#g3e59977}
 
 GPLv3
 
-#### Windows {#m2df1dd4}
+### Windows {#m2df1dd4}
 
 [emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839) をインストールします．<br>
 Emacs を起動して<br>
@@ -134,7 +138,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
 
-#### OS X {#g5794e10}
+### OS X {#g5794e10}
 
 [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410) を参照．<br>
 [Emacs.app](http://www.muskmelon.jp/?page_id=79) または [Emacs For Mac OS X](http://www.emacsformacosx.com/) をインストールします．<br>
@@ -225,7 +229,7 @@ C-x C-f ~/
 
 ***
 
-#### Linux {#q1bd16f3}
+### Linux {#q1bd16f3}
 
 Emacs を起動して<br>
 
@@ -388,7 +392,7 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
 
 ***
 
-#### 使い方 {#b6d90b9d}
+### 使い方 {#b6d90b9d}
 
 > <table>
 > <tbody>
