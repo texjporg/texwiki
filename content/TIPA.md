@@ -32,6 +32,8 @@ tipa-1.3 です）。[CTAN:help/Catalogue/entries/tipa.html](https://mirror.ctan
 
 ### インストール {#j6ff5f64}
 
+TeX Live や W32TeX に最初から含まれています．<br>
+
 make が使える環境であれば，Makefile の先頭の PREFIX の定義を適宜変更し
 
 ```
