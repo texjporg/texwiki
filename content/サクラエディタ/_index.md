@@ -132,33 +132,18 @@ Windows 8, 7, Vista, XP, 2000
 
 - [FAQ/57 - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ%2F57)
 
-サクラエディタ Ver. 2.0.6.0 は \[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] からデフォルトの文字コードを指定することができます．<br>
+サクラエディタ Ver. 2.0.7.0 以降は \[設定(O)\]-\[タイプ別設定(Y)...\]-\[ウィンドウ\] からデフォルトの文字コードを指定することができます．<br>
 UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選択します．<br>
 
 ***
 
 <span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
-　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
-　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
-
-<br>
-
-　　　　外部ヘルプの設定(L)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (2)... \]</span><br>
-
-<br>
-
-　　　　外部HTMLヘルプの設定(P)<br>
-　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (3)... \]</span><br>
-　　　　☑ビューアを複数起動しない(N)<br>
-
-<br>
-
-　　　　デフォルトの文字コード<br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ スクリーン \]\[ カラー \]</ins></span><strong>\[ ウィンドウ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 支援　\]\[ 正規表現キーワード \]\[ キーワードヘルプ \]</ins></span><br>
+　　　 入力モード<br>
+　　　　デフォルトの文字コード　　　　　　　　　　　　　　　　　　　　　起動時のIME（日本語入力変換）<br>
+　　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span>　　　　　　　　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　▼\]</span><br>
+　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　 ▼\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
 ***
@@ -304,27 +289,30 @@ bregonig.dll Ver.3.04 with Onigmo 5.13.4
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]</ins></span><strong>\[　カラー　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
-　　　　　色指定(L)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　強調キーワード1　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　▼\]</span><br>
-　　　　<strong>✓</strong> <span style="color:White;background-color:#1188FF;">正規表現キーワード1　　　　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　強調キーワード2～10...　\]</span><br>
-　　　　　　正規表現キーワード2　　　　　　　　　　　　　　　　　　　　　　　　　コメントスタイル<br>
-　　　　　　正規表現キーワード3　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(F)　<ins>\begin{comment}</ins>　～(T)　<ins>\end{comment}</ins><br>
-　　　　　　正規表現キーワード4　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(A)　<ins>\iffalse</ins>　　　　 　 　～(Z)　<ins>\fi</ins><br>
-　　　　　　正規表現キーワード5　　　　　　　　　　　　　　　　　　　　　　　　　行型(M)　<ins>&#x25;</ins>　　　　☐桁(P)　　<span style="color:#888888;">@　<ins>1</ins></span><br>
-　　　　　　正規表現キーワード6　　　　　　　　　　　　　　　　　　　　　　　　　行型(E)　　　　　　☐桁(O)　　<span style="color:#888888;">\[　 <ins>1</ins></span><br>
-　　　　　　正規表現キーワード7　　　　　　　　　　　　　　　　　　　　　　　　　行型(G)　　　　　　☐桁(J)　　<span style="color:#888888;">\]　 <ins>1</ins></span><br>
-　　　　　　正規表現キーワード8<br>
-　　　　　　正規表現キーワード9　　　　　　　　　　　　　　　　　　　　　　　　　エスケープ　　　　　　　　行番号区切り<br>
-　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> C言語風: "\\""　　　　◯ なし(N)<br>
-　　　　　　DIFF差分表示(追加)　　　　　　　　　　　　　　　　　　　　　　　　　◯ PL/SQL風: """"　　　<span style="color:#3333CC;">◎</span> 縦線(V)<br>
-　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ 任意(Y)<br>
-　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　行番号の表示　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span><br>
-　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　◯ 折り返し単位(R)<br>
-　　　　背景画像　<ins>　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span>　　　　　　　　<span style="color:#3333CC;">◎</span> 改行単位(W)<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[左上　　　　▼\]</span> ScrollXY ☑ ☑ RepeatXY ☑ ☑ X <ins>0</ins>　　　　　　　　　　縦線桁指定(3)　<ins>　　　　　　　　　　　　　　　</ins><br>
-　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span>　Offset Y <ins>0</ins>　　　　　　　　　　\*桁またはStep(Begin,End)でコンマ区切り
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]</ins></span><strong>\[　カラー　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ウィンドウ \]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
+　　　　　色指定(L)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　強調キーワード<br>
+　　　　<strong>✓</strong> <span style="color:White;background-color:#1188FF;">正規表現キーワード1　　　　　　　　　　　　</span>　　　　　　　　　　　　　　強調キーワード1　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　▼\]</span><br>
+　　　　　　正規表現キーワード2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　　2～10...　　　　　\]</span><br>
+　　　　　　正規表現キーワード3　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　共通設定(C)...　　　\]</span><br>
+　　　　　　正規表現キーワード4<br>
+　　　　　　正規表現キーワード5　　　　　　　　　　　　　　　　　　　　　　　　　コメントスタイル<br>
+　　　　　　正規表現キーワード6　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(F)　<ins>\begin{comment}</ins>　～(T)　<ins>\end{comment}</ins><br>
+　　　　　　正規表現キーワード7　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(A)　<ins>\iffalse</ins>　　　　 　 　～(Z)　<ins>\fi</ins><br>
+　　　　　　正規表現キーワード8　　　　　　　　　　　　　　　　　　　　　　　　　行型(M)　<ins>&#x25;</ins>　　　　☐桁(P)　　<span style="color:#888888;">@　<ins>1</ins></span><br>
+　　　　　　正規表現キーワード9　　　　　　　　　　　　　　　　　　　　　　　　　行型(E)　　　　　　☐桁(O)　　<span style="color:#888888;">\[　 <ins>1</ins></span><br>
+　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　 行型(G)　　　　　　☐桁(J)　　<span style="color:#888888;">\]　 <ins>1</ins></span><br>
+　　　　　　DIFF差分表示(追加)<br>
+　　　　　　DIFF差分表示(追加)<br>
+　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　エスケープ<br>
+　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> C言語風: "\\""<br>
+　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　◯ PL/SQL風: """"<br>
+
+<br>
+
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span>　　　　　　　　　　　　　　　縦線桁指定(3)　<ins>　　　　　　　　　　　　　　　</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\*桁またはStep(Begin,End)でコンマ区切り
 
 ***
 
@@ -336,7 +324,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 <span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[　支援　\]</ins></span><strong>\[　正規表現キーワード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キーワードヘルプ　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[ ウィンドウ \]\[　支援　\]</ins></span><strong>\[　正規表現キーワード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　☑正規表現キーワードを使用する(R)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　bregonig.dll Ver.3.04 with Onigmo 5.13.4<br>
@@ -383,7 +371,7 @@ TeX の入力補完機能があります．
 
 <span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[ ウィンドウ \]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
 　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　▼\]</span><br>
 　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
@@ -401,9 +389,11 @@ TeX の入力補完機能があります．
 
 <br>
 
-　　　　デフォルトの文字コード<br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　▼\]</span><br>
-　　　　☐自動判別時にCESU-8 を優先する(U)<br>
+<br>
+
+<br>
+
+<br>
 
 ***
 
@@ -425,27 +415,27 @@ TeX のアウトライン解析機能があります．
 
 <span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
 
-　　<strong>\[　スクリーン　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　カラー　\]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
+　　<strong>\[　スクリーン　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　カラー　\]\[ ウィンドウ \]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　 設定の名前(N)　<ins>TeX</ins>　　　　　　　　　　　　　　　　　　　　ファイル拡張子(X)　<ins>tex,ltx,sty,bib,log,blg,aux,bbl,toc,lof,lot,idx,ind,glo</ins><br>
-　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　起動時のIME（日本語入力変換）<br>
-　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　▼\]</span>　　　　　　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　▼\]</span><br>
-　　　　　　折り返し桁数(R)　<ins>10240　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　 ▼\]</span><br>
-　　　　　　文字の間隔(C)　　<ins>0　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
-　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
-　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
-　　　　　 TAB表示(8文字)　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
-　　　　　　　☐矢印表示(>)　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
+　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
+　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　▼\]</span>　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
+　　　　　　折り返し桁数(R)　<ins>10240　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
+　　　　　　文字の間隔(C)　　<ins>0　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　◯ ルールファイル(F)<br>
+　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
+　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins><br>
+　　　　　 TAB表示(8文字)　<ins>^       </ins><br>
+　　　　　　　☐矢印表示(>)　　☐SPACEの挿入<br>
 
 <br>
 
 　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　その他<br>
 　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　　☐英文ワードラップ(W)<br>
-　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
-　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
-　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　　☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
-　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
-　　　　☐改行時に末尾の空白を削除(E)　　　　　　　　　　　　　　　　　　　　☐文書アイコンを使う(O)<br>
+　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)<br>
+　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
+　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　　☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
+　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　　☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
+　　　　☐改行時に末尾の空白を削除(E)　　　　　　　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
 
 ***
 
