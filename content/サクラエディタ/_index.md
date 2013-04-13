@@ -314,7 +314,7 @@ bregonig.dll Ver.3.04 with Onigmo 5.13.4
 　　　　　　正規表現キーワード9　　　　　　　　　　　　　　　　　　　　　　　　　行型(E)　　　　　　　☐桁(O)　　\[　 <ins>1　　\[◆\]</ins><br>
 　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　 行型(G)　　　　　　　☐桁(J)　　\]　 <ins>1　　\[◆\]</ins><br>
 　　　　　　DIFF差分表示(追加)<br>
-　　　　　　DIFF差分表示(追加)<br>
+　　　　　　DIFF差分表示(変更)<br>
 　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　エスケープ<br>
 　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> C言語風: "\\""<br>
 　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　◯ PL/SQL風: """"<br>
