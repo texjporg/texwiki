@@ -146,6 +146,16 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span> ☐BOM　　　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　 ▼\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
+<br>
+
+　　　 ウィンドウ<br>
+　　　　☐文書アイコンを使う(O)<br>
+　　　　行番号の表示　　　　　　　行番号区切り　　　　　　　　　背景画像<br>
+　　　　◯折り返し単位(R)　　　　◯なし(N)　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
+　　　　<span style="color:#3333CC;">◎</span>改行単位(W)　　　　　　<span style="color:#3333CC;">◎</span>縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
+　　　　　　　　　　　　　　　　　　　◯任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 ▼\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+
 ***
 
 ## 正規表現 {#ucca1b07}
@@ -300,9 +310,9 @@ bregonig.dll Ver.3.04 with Onigmo 5.13.4
 　　　　　　正規表現キーワード5　　　　　　　　　　　　　　　　　　　　　　　　　コメントスタイル<br>
 　　　　　　正規表現キーワード6　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(F)　<ins>\begin{comment}</ins>　～(T)　<ins>\end{comment}</ins><br>
 　　　　　　正規表現キーワード7　　　　　　　　　　　　　　　　　　　　　　　　　ブロック型(A)　<ins>\iffalse</ins>　　　　 　 　～(Z)　<ins>\fi</ins><br>
-　　　　　　正規表現キーワード8　　　　　　　　　　　　　　　　　　　　　　　　　行型(M)　<ins>&#x25;</ins>　　　　☐桁(P)　　<span style="color:#888888;">@　<ins>1</ins></span><br>
-　　　　　　正規表現キーワード9　　　　　　　　　　　　　　　　　　　　　　　　　行型(E)　　　　　　☐桁(O)　　<span style="color:#888888;">\[　 <ins>1</ins></span><br>
-　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　 行型(G)　　　　　　☐桁(J)　　<span style="color:#888888;">\]　 <ins>1</ins></span><br>
+　　　　　　正規表現キーワード8　　　　　　　　　　　　　　　　　　　　　　　　　行型(M)　<ins>&#x25;</ins>　　　　　☐桁(P)　　@　<ins>1　　\[◆\]</ins><br>
+　　　　　　正規表現キーワード9　　　　　　　　　　　　　　　　　　　　　　　　　行型(E)　　　　　　　☐桁(O)　　\[　 <ins>1　　\[◆\]</ins><br>
+　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　 行型(G)　　　　　　　☐桁(J)　　\]　 <ins>1　　\[◆\]</ins><br>
 　　　　　　DIFF差分表示(追加)<br>
 　　　　　　DIFF差分表示(追加)<br>
 　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　エスケープ<br>
@@ -311,8 +321,8 @@ bregonig.dll Ver.3.04 with Onigmo 5.13.4
 
 <br>
 
-　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span>　　　　　　　　　　　　　　　縦線桁指定(3)　<ins>　　　　　　　　　　　　　　　</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\*桁またはStep(Begin,End)でコンマ区切り
+　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span>　　　　　　　　　　　　縦線桁指定(3)　<ins>　　　　　　　　　　　　　　　</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \*桁またはStep(Begin,End)でコンマ区切り
 
 ***
 
