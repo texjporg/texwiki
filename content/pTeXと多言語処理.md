@@ -1566,6 +1566,9 @@ jEdit，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 AkelPad，
 真魚\[まな\]，
+medit，
+[gedit](/gedit/)，
+[Geany](/Geany/)，
 [Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
 [GreenPad](http://www.kmonos.net/lib/gp.html)，
 [Yudit](http://www.yudit.org/)
