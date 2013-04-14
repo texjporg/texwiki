@@ -15,7 +15,7 @@ pukiwiki: "Cygwin"
 
 ## Cygwin とは {#yd433e3a}
 
-Cygwin は Microsoft Windows 上で動作する Linux (Unix) ライクな環境です．<br>
+Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
@@ -32,8 +32,8 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 Cygwin 本家の TeX Live パッケージ以外では
 
-- [W32TeX](/W32TeX/)
 - [TeX Live の公式パッケージ](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [W32TeX](/W32TeX/)
 
 の選択肢もあります．
 
