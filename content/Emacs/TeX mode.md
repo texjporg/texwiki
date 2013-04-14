@@ -42,6 +42,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します． ([GNU Emacsのinitファイルの置き場所＠Windows7](http://tamatamablog.blog.so-net.ne.jp/2010-02-10) を参考)<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+以下の設定では W32TeX, TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
@@ -54,17 +55,13 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "eptex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "euptex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "ptex2pdf -e -ot \"-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "ptex2pdf -e -ot \"-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "ptex2pdf -e -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
@@ -74,10 +71,16 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ;(setq tex-bibtex-command "upbibtex")
 ;(setq tex-bibtex-command "bibtex")
 ;(setq tex-bibtex-command "bibtexu")
-(setq tex-dvi-view-command (if (file-exists-p "C:/w32tex/dviout/dviout.exe")
-                               "C:/w32tex/dviout/dviout -1"
-                             "powershell -Command \"& {$dvi = [System.String]::Concat('\"\"\"',$args,'\"\"\"');$dviout = (Get-Command dviout | Select-Object Path).Path + '/../../../../????/tlpkg/dviout/dviout.exe';Start-Process $dviout -ArgumentList ('-1',$dvi)}\""))
-(setq tex-dvi-print-command "dvipdfmx")
+(require 'tex-mode)
+(defun tex-view ()
+  (interactive)
+  (tex-send-command "texworks" (tex-append tex-print-file ".pdf")))
+(defun tex-print (&optional alt)
+  (interactive "P")
+  (if (tex-shell-running)
+      (tex-kill-job)
+    (tex-start-shell))
+  (tex-send-command "pdfopen --rxi --file" (tex-append tex-print-file ".pdf")))
 (setq tex-compile-commands
       '(("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=%r %f && dvipdfmx %r" "%f" "%r.pdf")
         ("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=%r %f && dvips -Ppdf -z -f %r.dvi | convbkmk -g > %r.ps && ps2pdf.bat %r.ps" "%f" "%r.pdf")
@@ -167,6 +170,7 @@ C-x C-f ~/
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 
 ***
 
@@ -178,17 +182,13 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "/usr/texbin/eptex -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "/usr/texbin/euptex -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "/usr/texbin/ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "/usr/texbin/ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "/usr/texbin/ptex2pdf -e -u -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "/usr/texbin/pdftex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/xetex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "/usr/texbin/platex -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "/usr/texbin/ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "/usr/texbin/ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "/usr/texbin/ptex2pdf -l -u -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "/usr/texbin/pdflatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "/usr/texbin/lualatex -synctex=1 -interaction=nonstopmode")
@@ -198,10 +198,16 @@ C-x C-f ~/
 ;(setq tex-bibtex-command "/usr/texbin/upbibtex")
 ;(setq tex-bibtex-command "/usr/texbin/bibtex")
 ;(setq tex-bibtex-command "/usr/texbin/bibtexu")
-(setq tex-dvi-view-command "/usr/bin/open -a PictPrinter.app")
-;(setq tex-dvi-view-command "/usr/texbin/pxdvi -watchfile 1")
-;(setq tex-dvi-view-command "/usr/bin/open -a Skim.app")
-(setq tex-dvi-print-command "/usr/texbin/dvipdfmx")
+(require 'tex-mode)
+(defun tex-view ()
+  (interactive)
+  (tex-send-command "/usr/bin/open -a Preview.app" (tex-append tex-print-file ".pdf")))
+(defun tex-print (&optional alt)
+  (interactive "P")
+  (if (tex-shell-running)
+      (tex-kill-job)
+    (tex-start-shell))
+  (tex-send-command "/usr/bin/open -a \"Adobe Reader.app\"" (tex-append tex-print-file ".pdf")))
 (setq tex-compile-commands
       '(("/usr/texbin/platex -synctex=1 -interaction=nonstopmode %f && /usr/texbin/dvipdfmx %r" "%f" "%r.pdf")
         ("/usr/texbin/platex -synctex=1 -interaction=nonstopmode %f && /usr/texbin/dvips -Ppdf -z -f %r.dvi | /usr/texbin/convbkmk -g > %r.ps && /usr/local/bin/ps2pdf %r.ps" "%f" "%r.pdf")
@@ -271,6 +277,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
 
 ***
@@ -283,17 +290,13 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "eptex -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "euptex -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "ptex2pdf -e -u -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "platex -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "uplatex -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "ptex2pdf -l -u -ot \"-synctex=1 -interaction=nonstopmode\"")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
@@ -303,8 +306,16 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
 ;(setq tex-bibtex-command "upbibtex")
 ;(setq tex-bibtex-command "bibtex")
 ;(setq tex-bibtex-command "bibtexu")
-(setq tex-dvi-view-command "pxdvi -watchfile 1")
-(setq tex-dvi-print-command "dvipdfmx")
+(require 'tex-mode)
+(defun tex-view ()
+  (interactive)
+  (tex-send-command "evince" (tex-append tex-print-file ".pdf") " &"))
+(defun tex-print (&optional alt)
+  (interactive "P")
+  (if (tex-shell-running)
+      (tex-kill-job)
+    (tex-start-shell))
+  (tex-send-command "acroread" (tex-append tex-print-file ".pdf") " &"))
 (setq tex-compile-commands
       '(("platex -synctex=1 -interaction=nonstopmode %f && dvipdfmx %r" "%f" "%r.pdf")
         ("platex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -g > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
