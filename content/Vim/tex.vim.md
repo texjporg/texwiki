@@ -9,6 +9,8 @@ pukiwiki: "Vim/tex.vim"
 
 [Vim](/Vim/) > tex.vim
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## tex.vim {#rf521622}
 
 $HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
@@ -639,7 +641,7 @@ noremap <expr> <C-K>v ViewFile()
 
 ***
 
-#### Windows の場合 {#kf0c55a9}
+### Windows の場合 {#kf0c55a9}
 
 タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは TeXworks を使用します．<br>
@@ -674,7 +676,7 @@ noremap <expr> <C-K>v ViewFile()
 > </table>
 >
 
-#### OS X の場合 {#v2d90738}
+### OS X の場合 {#v2d90738}
 
 動作未確認です．<br>
 タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
@@ -712,7 +714,7 @@ noremap <expr> <C-K>v ViewFile()
 > </table>
 >
 
-#### Linux の場合 {#q23aa2de}
+### Linux の場合 {#q23aa2de}
 
 タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは Evince を使用します．<br>
