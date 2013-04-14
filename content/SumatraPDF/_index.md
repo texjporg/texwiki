@@ -83,7 +83,7 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
-    - [tex.vim](/Vim/#y0b061e7)
+    - [tex.vim](/Vim/tex.vim/)
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
