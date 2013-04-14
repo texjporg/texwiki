@@ -11,6 +11,8 @@ pukiwiki: "Texmaker/設定/Linux"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## 設定 {#t1b1a7e1}
+
 ### コマンド {#cab65285}
 
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
