@@ -109,11 +109,11 @@ DVIビューア用紙寸法設定:　　[^12]<br>
 書誌情報の生成<br>
 処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 オプション(O):　　　　　[^13]<br>
-日本語用処理子(J):　<ins>pbibtex</ins> または <ins>pbibtex -kanji=utf8</ins> または <ins>upbibtex</ins>[^14]<br>
+日本語用処理子(J):　<ins>pbibtex -kanji=utf8</ins> または <ins>upbibtex</ins>[^14]<br>
 索引の生成<br>
 処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
 オプション(T):　　　　　[^15]<br>
-日本語用処理子(J):　<ins>mendex -c -q</ins> または <ins>mendex -c -q -U</ins>[^16]<br>
+日本語用処理子(J):　<ins>mendex -c -q -U</ins>[^16]<br>
 
 <br>
 
