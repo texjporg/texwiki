@@ -13,7 +13,7 @@ pukiwiki: "MuPDF"
 
 ## MuPDF とは {#u255891c}
 
-MuPDF は軽量な PDF/XPS ビューアです．<br>
+MuPDF は軽量な PDF/XPS/CBZ ビューアです．<br>
 
 - [MuPDF](http://www.mupdf.com/)
 
