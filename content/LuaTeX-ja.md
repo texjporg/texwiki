@@ -31,7 +31,6 @@ LuaTeX-ja は
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/)
     - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
-- [MacTeX](/Mac/#mactex) (MacTeX-2012 以降)
 
 で利用可能です．
 
@@ -52,6 +51,10 @@ LuaTeX-ja は
 
 ### インストール {#p4234337}
 
+#### [TeX Live](</TeX Live/>) {#v2c7b507}
+
+TeX Live 2012 以降には luatexja が含まれています．<br>
+
 #### [W32TeX](/W32TeX/) {#a565ecc6}
 
 2012/04/20 以降の W32TeX には luatexja.tar.xz が含まれています．<br>
@@ -70,14 +73,6 @@ C:.
 にインストールされます．<br>
 
 ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を実行してください．
-
-#### [TeX Live](</TeX Live/>) {#v2c7b507}
-
-TeX Live 2012 以降には luatexja が含まれています．<br>
-
-#### [MacTeX](/Mac/#f5466652) {#p8fa09cd}
-
-MacTeX-2012 以降には luatexja が含まれています．<br>
 
 ### 注意点 {#vbed1356}
 
@@ -160,7 +155,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 
 ### [Babel](/Babel/) {#v6636cbc}
 
-多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/tex-archive/macros/xetex/latex/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
+多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
 
 - [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830)
 - [polyglossia が LuaTeX に非対応な理由（ツイッター）](https://twitter.com/zr_tex8r/status/196604967115694080)
