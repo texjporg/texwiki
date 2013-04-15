@@ -72,6 +72,7 @@ M-x list-packages RET でリストを表示して org を選択
 ## LaTeX Export {#k6bbb6c5}
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
+- [org-modeで日本語PDFを出力する](http://fjyuu.info/org-export-pdf/)
 - [Emacs の Org ファイルを platex と dvipdfmx で PDF 化する設定．](http://qiita.com/items/6eb4d8d799e41ef3f15d)
 - [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
 - [org-modeのLatexエクスポートで長いURLが折り返さないのを修正](http://d.hatena.ne.jp/hirono2011/20111124/1322156182)
