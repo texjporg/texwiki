@@ -1599,12 +1599,8 @@ inverse search を行うには TeX コマンドのオプションに -synctex=1 
 inverse search は SumatraPDF の画面をダブルクリックすると実行されます．<br>
 SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で inverse search で実行されるコマンドラインの設定を行います．<br>
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．<br>
-派生版・独自ビルド版の中にはこの設定が削除されているものがあるので，その場合は
-
-- 公式サイトの SumatraPDF を使用する
-- SumatraPDF のコマンドラインの -inverse-search オプションで指定する
-
-などの方法で対処してください．<br>
+SumatraPDF は PDF ファイルを表示した状態でないと逆順検索コマンドラインの設定が表示されないといった情報があります． (→ [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html))<br>
+逆順検索コマンドラインの設定が表示されない場合は SumatraPDF のコマンドラインオプションの -inverse-search オプションで指定して対処してください．<br>
 どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．<br>
 例えば [W32TeX](/W32TeX/) に含まれている [TeXworks](/TeXworks/) であれば
 
