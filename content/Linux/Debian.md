@@ -66,9 +66,13 @@ Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages
 aptitude または apt-get を使用してインストールしても OK です．<br>
 
 ```
-$ sudo aptitude install texlive-lang-cjk
-$ sudo aptitude install texlive-fonts-recommended
-$ sudo aptitude install xdvik-ja
+$ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
+```
+
+または
+
+```
+$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
 ```
 
 /usr/share/texmf/web2c/texmf.cnf を編集します．
