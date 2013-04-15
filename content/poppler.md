@@ -728,14 +728,14 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.29.0.tar.bz2
-$ tar xvf curl-7.29.0.tar.bz2
-$ pushd curl-7.29.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.30.0.tar.bz2
+$ tar xvf curl-7.30.0.tar.bz2
+$ pushd curl-7.30.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.29.0
+  curl version:     7.30.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
@@ -872,9 +872,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.22.2.tar.gz
-$ tar xvf poppler-0.22.2.tar.gz
-$ pushd poppler-0.22.2
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.22.3.tar.gz
+$ tar xvf poppler-0.22.3.tar.gz
+$ pushd poppler-0.22.3
 ```
 
 ***
