@@ -29,7 +29,7 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 #### インストール {#u48e60e8}
 
-TeX Live 2012, MacTeX-2012 を使用している場合は Babel の japanese パッケージはすでにインストールされています．<br>
+TeX Live 2012 以降を使用している場合は Babel の japanese パッケージはすでにインストールされています．<br>
 
 W32TeX の場合は Babel の japanese パッケージをインストールする必要があります．<br>
 インストール方法は以下のとおりです．<br>
