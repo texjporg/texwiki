@@ -31,7 +31,7 @@ dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウ�
 - \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
 
-### 使い方 {#he5a75c1}
+## 使い方 {#he5a75c1}
 
 DVI ファイルを SVG ファイルに変換する場合は
 
@@ -57,4 +57,8 @@ DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を�
 $ pdftocairo -svg hoge.pdf
 ```
 
-ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われてしまうようです．<br>
+ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
+
+## 関連リンク {#b9432180}
+
+- [dvisvgm : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvisvgm)
