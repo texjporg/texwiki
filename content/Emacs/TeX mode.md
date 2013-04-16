@@ -9,26 +9,21 @@ pukiwiki: "Emacs/TeX mode"
 
 [Emacs](/Emacs/) > TeX mode
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
-
 ## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
-- [TeX Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
-- [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
-- [Using pdfTeX in Emacs \`tex-mode'](http://www.emacswiki.org/emacs/PdfTeX)
-- [LaTeX メモ#Emacs との連携](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/latex/#emacs)
-- [Meadow で LaTeX を使う](http://www.cymric.jp/old/tex/meadow.html)
-- [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
-- [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
-- [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://slashdot.jp/~t-nissie/journal/560083)
-- [Emacsのlatex-modeのインデント](http://www.hit.ac.jp/~wachi/misc/latexindent.html)
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## TeX mode とは {#b759a43a}
+
+TeX mode は TeX ファイルを編集・タイプセット・プレビューするためのモードです．<br>
 Emacs には標準で [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) が含まれています．<br>
 スニペットが必要な場合は [YASnippet](/YASnippet/) を使ってください．<br>
 
 ### License {#g3e59977}
 
 GPLv3
+
+## 設定 {#x084b3ec}
 
 ### Windows {#m2df1dd4}
 
@@ -42,7 +37,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します． ([GNU Emacsのinitファイルの置き場所＠Windows7](http://tamatamablog.blog.so-net.ne.jp/2010-02-10) を参考)<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では W32TeX, TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
@@ -154,8 +149,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ***
 
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
 ### OS X {#g5794e10}
 
 [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410) を参照．<br>
@@ -170,7 +163,7 @@ C-x C-f ~/
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 
 ***
 
@@ -277,7 +270,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
 
 ***
@@ -450,7 +443,7 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
 
 ***
 
-### 使い方 {#b6d90b9d}
+## 使い方 {#b6d90b9d}
 
 > <table>
 > <tbody>
@@ -502,3 +495,15 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
 &#x2d;S:\*\*-　　<strong>\*tex-shell\*</strong>　　　　　Bot L1　　　(TeX-Shell:run Shell-Compile)--------------------------------<br>
 
 ***
+
+## 関連リンク {#ca23f166}
+
+- [TeX Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
+- [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
+- [Using pdfTeX in Emacs \`tex-mode'](http://www.emacswiki.org/emacs/PdfTeX)
+- [LaTeX メモ#Emacs との連携](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/latex/#emacs)
+- [Meadow で LaTeX を使う](http://www.cymric.jp/old/tex/meadow.html)
+- [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
+- [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
+- [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://slashdot.jp/~t-nissie/journal/560083)
+- [Emacsのlatex-modeのインデント](http://www.hit.ac.jp/~wachi/misc/latexindent.html)
