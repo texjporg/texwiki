@@ -172,7 +172,7 @@ C:.
 
 &#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
-以下の設定では W32TeX, TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 pdfplatex.bat は W32TeX に含まれています．<br>
 TeX Live を使用する場合は pdfplatex.bat が含まれていないので TeXworks の [pdfplatex.bat](</TeXworks/設定/Windows/#nb7beec9>) を使用してください．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
