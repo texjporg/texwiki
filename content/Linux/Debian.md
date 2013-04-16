@@ -37,26 +37,18 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#z4379676}
 
+- [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - tlptexlive with TeX Live 2013
 
 ### TeX Live 2012 <a id="texlive2012"></a> {#l03a7314}
 
-- [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - [Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)
-- [167びぼーろく; pxdviのインストール(texlive 2012)](http://phys-diary.blogspot.jp/2012/10/167-pxdvitexlive-2012.html)
-- [154びぼーろく;texlive 2012のインストール](http://phys-diary.blogspot.jp/2012/07/154texlive-2012.html)
-- [review導入時のTeXLive、Acroread導入](http://sesame_purple.b.sourceforge.jp/2012/06/30/review%E5%B0%8E%E5%85%A5%E6%99%82%E3%81%AEtexlive%E3%80%81acroread%E5%B0%8E%E5%85%A5/)
-- [pLaTeX はじめの一歩（2012） - 計算数学実習資料集](https://sites.google.com/site/keisansugaku/home/ks/platex2012)
-    - [dvi ファイルの表示](https://sites.google.com/site/keisansugaku/home/ks/platex2012/dvi_view)
-- [TeX Live 2012 with tlptexlive](http://fugenji.org/thomas/diary/index.php?no=r850)
-- [TeX Live 2012](http://fugenji.org/thomas/diary/index.php?no=r849)
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
 
 - [Raspberry Pi で遊ぶ (1) &mdash;LaTeX のコンパイルサーバーとして&#8212;](http://skalldan.wordpress.com/2013/02/18/raspberry-pi-%E3%81%A7%E9%81%8A%E3%81%B6-1-latex-%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%97%E3%81%A6/)
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
-- [Debian Wheezyをインストールしてみる](http://kacl19nrlb99.blog117.fc2.com/blog-entry-82.html)
 
 #### Debian GNU/Linux sid x86_64 (amd64) での TeX Live 2012/Debian のインストール {#v3917726}
 
