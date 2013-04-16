@@ -55,8 +55,6 @@ pukiwiki: "MTeX for Notepad++"
 
 ***
 
-PDFを表示で TeXworks を使用する場合は [TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
 ## SumatraPDF との連携 {#q214c924}
 
 ### forward search (SumatraPDF を前面に表示したい場合) {#rd95d13c}
