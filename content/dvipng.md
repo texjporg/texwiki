@@ -25,8 +25,6 @@ Version 1.9 から サブフォントに対応しているので、サブフォ�
     <!-- -http://preview-latex.sourceforge.net/ -->
     <!-- - -http://sourceforge.net/projects/preview-latex/ -->
 
-- [TeX Live - TeX Wiki#dvipng](</TeX Live/#ob19804f>)
-
 mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。
 
 ### License {#s323d9c3}
@@ -40,7 +38,13 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ### 使い方 {#ic72a209}
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して dvipng を使わずに poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+DVI ファイルを PNG ファイルに変換する場合は
+
+```
+$ dvipng hoge.dvi
+```
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
 
 ```
 $ pdftocairo -png hoge.pdf
