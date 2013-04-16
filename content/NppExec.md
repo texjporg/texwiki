@@ -506,8 +506,6 @@ UNICODE 版の場合，デフォルトではインストールされていない
 
 ### TeXworks {#d203fe0e}
 
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
 ***
 
 <span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
