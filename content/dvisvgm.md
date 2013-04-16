@@ -9,11 +9,10 @@ pukiwiki: "dvisvgm"
 
 ## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
 
-dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェアです．<br>
+dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
 - [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
-- [TeX Live - TeX Wiki#dvisvgm](</TeX Live/#s8483053>)
 
 ### License {#b1b30f5a}
 
@@ -34,9 +33,28 @@ dvisvgm は DVI ファイルを SVG ファイルに変換するソフトウェ�
 
 ### 使い方 {#he5a75c1}
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して dvisvgm を使わずに poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．
+DVI ファイルを SVG ファイルに変換する場合は
+
+```
+$ dvisvgm hoge.dvi
+```
+
+EPS ファイルを SVG ファイルに変換する場合は
+
+```
+$ dvisvgm -E hoge.eps
+```
+
+dvisvgm を使用して SVG ファイルに変換した場合はテキストデータも保持されます．<br>
+
+DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
+この場合もテキストデータが保持されます．<br>
+
+日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
 
 ```
 
 $ pdftocairo -svg hoge.pdf
 ```
+
+ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われてしまうようです．<br>
