@@ -232,6 +232,7 @@ otf パッケージの最新版は otfbeta です。<br>
     <!-- ↑一次配布元などではないので、このあたりが妥当 -->
     <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
 
+- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2013年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法（2013年4月版）](http://did2memo.net/2012/04/27/tex-uninstall/)
 - [インストーラ３でのTeXのインストール](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=974)
 - windows8 で　texインストーラ３ ([qa:57051](https://okumuralab.org/~okumura/texfaq/qa/57051.html), [QA: windows8 で　texインストーラ３](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=953), [qa:57052](https://okumuralab.org/~okumura/texfaq/qa/57052.html), [qa:57058](https://okumuralab.org/~okumura/texfaq/qa/57058.html))
 - [windowsでtex](http://d.hatena.ne.jp/imasusen/20130115/1358255816)
@@ -240,5 +241,4 @@ otf パッケージの最新版は otfbeta です。<br>
 - [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
 - [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
-- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2010年4月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法](http://did2memo.net/2012/04/27/tex-uninstall/)
 - [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
