@@ -87,7 +87,7 @@ pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成しま�
 
 ***
 
-- C:\texlive\2012\bin\win32\pdfplatex.bat
+- C:\texlive\2013\bin\win32\pdfplatex.bat
 
 ***
 
@@ -170,7 +170,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 ***
 
 - C:\w32tex\bin\pdfplatex2.bat
-- C:\texlive\2012\bin\win32\pdfplatex2.bat
+- C:\texlive\2013\bin\win32\pdfplatex2.bat
 
 ***
 
@@ -243,7 +243,7 @@ dvipdfmx "%~n1"
 
 ***
 
-- C:\texlive\2012\bin\win32\pdfuplatex.bat
+- C:\texlive\2013\bin\win32\pdfuplatex.bat
 
 ***
 
@@ -325,7 +325,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 ***
 
 - C:\w32tex\bin\pdfuplatex2.bat
-- C:\texlive\2012\bin\win32\pdfuplatex2.bat
+- C:\texlive\2013\bin\win32\pdfuplatex2.bat
 
 ***
 
@@ -1853,4 +1853,3 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 ## 関連リンク {#n8b7f53c}
 
 - [TeXworksの設定](http://www.netplan.co.jp/archives/2167)
-- [W32TeX をアンインストール → TeX Live 2012 を入れる → TeXworksの設定が面倒 → TeX Live をアンインストール → W32TeX を入れなおす → いとも簡単に TeXworks が動く(ｲﾏｺｺ)](https://twitter.com/kotaq1989/status/261484930230542337)
