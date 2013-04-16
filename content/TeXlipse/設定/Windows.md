@@ -714,8 +714,6 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 #### [TeXworks](/TeXworks/) {#e36f125c}
 
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
 ***
 
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
