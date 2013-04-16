@@ -136,8 +136,6 @@ let g:Tex_ViewRule_pdf = 'texworks'
 
 ***
 
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
 TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
 ### OS X {#aecb2dfb}
