@@ -67,7 +67,7 @@ WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応�
 ### 日本語言語ファイル {#z273ed84}
 
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
-    - [jp_JP.txt](http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt) (Google キャッシュ)
+    <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
 [( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell3 日本語言語ファイルを公開されています．<br>
 WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
@@ -145,26 +145,26 @@ UTF-8 を使用したい方は
 - 真魚\[まな\]
 - [xyzzy](/xyzzy/)
 - jEdit
-- [Geany](/Geany/)
+- medit
 - [gedit](/gedit/)
+- [Geany](/Geany/)
+- TeXmacs
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
 ### エンコーディングが ShiftJIS の場合の括弧の強調表示時の文字化け → 対応する括弧の強調表示を OFF にする {#n7cba889}
 
-エンコーディングが ShiftJIS の場合，括弧の強調表示時に，日本語が文字化けする不具合があります．
-
-例えば
+エンコーディングが ShiftJIS の場合，括弧の強調表示時に，日本語が文字化けする不具合があります．<br>
+例えば<br>
 
 ```
 \chapter{日本語文字
 ```
 
-と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．<br>
 
-エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．
-
-これを回避するには，対応する括弧の強調表示のチェックをはずしてください．
+エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．<br>
+文字化けを回避するには，対応する括弧の強調表示のチェックをはずしてください．<br>
 
 ***
 
