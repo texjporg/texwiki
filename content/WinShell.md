@@ -28,12 +28,7 @@ WinShell には
 
 などの機能があります．
 
-<strong>WinShell は LaTeX そのものではありません．</strong>
-
-LaTeX の処理系は別途インストールする必要があります．
-
 - [LaTeX User Front End : WinShell](http://www.winshell.org/)
-    公式サイト
 
 ### お知らせ {#z73b9e72}
 
@@ -154,15 +149,6 @@ UTF-8 を使用したい方は
 - [gedit](/gedit/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
-
-[Winshell3.3 の Runtime Error: nouse](http://yeblog.cocolog-nifty.com/nouse/2009/02/winshell33-runt.html) にも，Runtime Error! に関する情報があります．
-
-どうしても WinShell で UTF-8 を使用したい場合は
-
-- 主なTeXプログラムの設定 (エンコーディングが UTF-8 の場合)
-- ユーザ指定プログラム (エンコーディングが UTF-8 の場合)
-
-を参照して設定をしてください．
 
 ### エンコーディングが ShiftJIS の場合の括弧の強調表示時の文字化け → 対応する括弧の強調表示を OFF にする {#n7cba889}
 
