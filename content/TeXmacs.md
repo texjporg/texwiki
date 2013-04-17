@@ -49,4 +49,5 @@ OS X の Qt アプリケーションで Backslash (U+005C) が 円記号 (U+00A5
 
 ## 関連リンク {#id8a740a}
 
+- [MaximaをTeXmacsで使う](http://snowh.wordpress.com/2011/07/03/maxima%E3%82%92texmacs%E3%81%A7%E4%BD%BF%E3%81%86/)
 - [GNU TeXmacsのすすめ](http://mlog.euqset.org/archives/debian-users/50974.html)
