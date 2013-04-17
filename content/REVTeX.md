@@ -10,9 +10,9 @@ pukiwiki: "REVTeX"
 ## [REVTeX](http://publish.aps.org/revtex/) {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
-もう角藤さんの W32TeX や新しい TeX Live
+TeX Live や 角藤さんの W32TeX
 などにはインストール済みですので，改めてインストールする必要はありません。
-インストール法は消して，使い方をもっと詳しくすべきですね。
+使い方をもっと詳しくすべきですね。
 
 - [REVTeX Home Page](http://publish.aps.org/revtex/)
 
@@ -22,20 +22,7 @@ pukiwiki: "REVTeX"
 
 ### インストール {#jaaef53a}
 
-W32TeX, TeX Live には既にインストールされています．<br>
-
-<!-- UNIX 系の OS で手動でインストールする場合は次のようにします。 -->
-<!-- Windows でも同様です（mv は move または copy とします）。 -->
-<!-- インストールディレクトリ /usr/local/texlive/2012/texmf-dist はシステムにより異なります。 -->
-<!--  -->
-<!-- unzip revtex4.zip -->
-<!-- cd revtex4 -->
-<!-- mkdir -p /usr/local/texlive/2012/texmf-dist/tex/latex/revtex4 -->
-<!-- mv *.cls *.rtx *.sty /usr/local/texlive/2012/texmf-dist/tex/latex/revtex4 -->
-<!-- mkdir -p /usr/local/texlive/2012/texmf-dist/bibtex/bst/revtex4 -->
-<!-- mv *.bst /usr/local/texlive/2012/texmf-dist/bibtex/bst/revtex4 -->
-<!-- mktexlsr  (または texhash) -->
-<!--  -->
+TeX Live, W32TeX には既にインストールされています．<br>
 
 参考
 
@@ -43,37 +30,12 @@ W32TeX, TeX Live には既にインストールされています．<br>
 
 ### AMS-LaTeX と natbib のインストール {#f1d3fb76}
 
-W32TeX, TeX Live には既にインストールされています．<br>
+TeX Live, W32TeX には既にインストールされています．<br>
 
 REVTeX の使用には次のパッケージも必要です。
 
 - AMS-LaTeX 2.0 以降
 - natbib \[1999/05/28 7.0 (PWD)\] 以降
-
-<!-- AMS-LaTeX と natbib はすでに入っていると思われますが、もしないなら次のようにしてインストールします。 -->
-<!--  -->
-<!-- [[AMS-LaTeX:http://www.ams.org/tex/amslatex.html]] -->
-<!-- は次のようにインストールします。 -->
-<!-- 同じファイル名でもバージョンがときどき上がっています。 -->
-<!-- 中心となるファイル amsmath.sty の最新版は [2000/07/18 v2.13 AMS math features] -->
-<!-- というバージョンです。 -->
-<!--  -->
-<!-- tar xvf amsltx2.tgz -C /usr/local/texlive/2012/texmf-dist -->
-<!-- mktexlsr  (または texhash) -->
-<!--  -->
-<!-- natbib は -->
-<!-- [[CTAN:/macros/latex/contrib/natbib/]] -->
-<!-- にあります。 -->
-<!-- 最新版は [2000/07/24 7.0a (PWD)] です。 -->
-<!-- ディレクトリごと持ってきて、その中で次のようにします。 -->
-<!--  -->
-<!-- latex natbib.ins -->
-<!-- latex bibentry.ins -->
-<!-- mkdir -p /usr/local/texlive/2012/texmf-dist/tex/latex/natbib -->
-<!-- mv *.sty /usr/local/texlive/2012/texmf-dist/tex/latex/natbib -->
-<!-- mkdir -p /usr/local/texlive/2012/texmf-dist/bibtex/bst/natbib -->
-<!-- mv *.bst /usr/local/texlive/2012/texmf-dist/bibtex/bst/natbib -->
-<!-- mktexlsr  (または texhash) -->
 
 ### 実行 {#f6f956b2}
 
