@@ -476,19 +476,6 @@ mendex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 保存(S):
 : 編集中のドキュメント
 
-#### TeXworks {#b3f685e3}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-texworks "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
 #### Evince {#t53bc494}
 
 ***
@@ -565,6 +552,32 @@ qpdfview --unique ""`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:"$GE
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME""
+```
+
+***
+
+#### TeXworks {#b3f685e3}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+texworks "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### Mozilla Firefox (pdf.js) {#h50b5c23}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+firefox -new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
