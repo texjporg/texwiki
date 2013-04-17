@@ -47,19 +47,45 @@ Geany はデフォルトで LaTeX のビルドに対応しています．
 
 #### LaTeX コマンド {#z6996bd9}
 
-LaTeX -> <ins>D</ins>VI
-: platex -synctex=1 --file-line-error-style "%f"<br>uplatex -synctex=1 --file-line-error-style "%f"
-
 LaTeX -> <ins>P</ins>DF
-: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"<br>platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -g > "%e.ps" &amp;&amp; ps2pdf "%e.ps"<br>uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"<br>uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"<br>pdflatex -synctex=1 --file-line-error-style "%f"<br>lualatex -synctex=1 --file-line-error-style "%f"<br>luajitlatex -synctex=1 --file-line-error-style "%f"<br>xelatex -synctex=1 --file-line-error-style "%f"
+: &nbsp;
+
+: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+
+: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -g > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
+
+: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+
+: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
+
+: pdflatex -synctex=1 --file-line-error-style "%f"
+
+: lualatex -synctex=1 --file-line-error-style "%f"
+
+: luajitlatex -synctex=1 --file-line-error-style "%f"
+
+: xelatex -synctex=1 --file-line-error-style "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
 V<ins>i</ins>ew PDF File
-: evince "%e.pdf"<br>okular --unique "%e.pdf"<br>zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"<br>qpdfview --unique "%e.pdf"<br>pdfviewer "%e.pdf"
+: &nbsp;
 
-<ins>V</ins>iew DVI File
-: pxdvi -watchfile 1 "%e.dvi"
+: evince "%e.pdf"
+
+: okular --unique "%e.pdf"
+
+: zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
+
+: qpdfview --unique "%e.pdf"
+
+: pdfviewer "%e.pdf"
+
+: texworks "%e.pdf"
+
+: firefox -new-window "%e.pdf"
+
+: acroread "%e.pdf"
 
 ### [GeanyLaTeX](http://frank.uvena.de/en/Geany/geanylatex/) {#scc8a76c}
 
