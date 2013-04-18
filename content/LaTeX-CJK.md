@@ -521,3 +521,4 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 ## 関連リンク {#nae3b659}
 
 - [「&quot;CJK パッケージ&quot;」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%22CJK+%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%22)
+- [CJK-LaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/CJK-LaTeX)
