@@ -44,7 +44,7 @@ Cygwin 本家の TeX Live パッケージ以外では
 
 ### リリース情報 {#z608db6c}
 
-#### TeX Live 2012 {#a5716290}
+#### TeX Live 2012/Cygwin {#a5716290}
 
 - \[[ANNOUNCEMENT\] Updated: texlive-collection-basic-20120628-2 (TEST)](http://cygwin.com/ml/cygwin/2012-08/msg00188.html)
 - \[[ANNOUNCEMENT\] Updated: TeX Live 2012](http://cygwin.com/ml/cygwin/2012-07/msg00311.html)
@@ -61,7 +61,9 @@ dvipdfmx がうまく動作しない場合は以下の記事を参照して /usr
 
 ### インストール {#a8514c6c}
 
-Cygwin の setup.exe のパッケージ選択画面で [TeX Live](</TeX Live/>) を選択してインストールできます．<br>
+- [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
+
+Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択してインストールできます．<br>
 
 ***
 
