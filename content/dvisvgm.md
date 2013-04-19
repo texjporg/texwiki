@@ -33,6 +33,8 @@ dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウ�
 
 ## 使い方 {#he5a75c1}
 
+[CJK package](/LaTeX-CJK/) を使用すれば dvisvgm でも日本語が使用できます．<br>
+
 DVI ファイルを SVG ファイルに変換する場合は
 
 ```
@@ -50,7 +52,7 @@ dvisvgm を使用して SVG ファイルに変換した場合はテキストデ�
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
 この場合もテキストデータが保持されます．<br>
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
+pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
 
 ```
 
