@@ -9,9 +9,9 @@ pukiwiki: "dvips"
 
 ## dvips {#y40d302b}
 
-<strong>目次</strong>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### dvips とは {#lb7ddcdb}
+## dvips とは {#lb7ddcdb}
 
 dvips は DVI ファイルを PS ファイルに変換するソフトウェアです．
 
@@ -23,6 +23,9 @@ dvips は DVI ファイルを PS ファイルに変換するソフトウェア�
 
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/ChangeLog?view=markup)
+
+## 使い方 {#a0ed32c6}
 
 ### dvips の用紙サイズ指定 {#b1d8723b}
 
