@@ -9,7 +9,9 @@ pukiwiki: "dvipng"
 
 ## [dvipng](http://www.nongnu.org/dvipng/) {#i1384369}
 
-### dvipngとは？ {#wd523196}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## dvipngとは？ {#wd523196}
 
 dvipng は dvi ファイルから png 形式の画像を生成するコマンドです。
 [preview-latex プロジェクト](http://www.gnu.org/software/auctex/preview-latex.html)の成果物として公開されています。<br>
@@ -35,8 +37,9 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipng](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/ChangeLog?view=markup)
 
-### 使い方 {#ic72a209}
+## 使い方 {#ic72a209}
 
 [CJK package](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
 
@@ -52,7 +55,7 @@ pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイ�
 $ pdftocairo -png hoge.pdf
 ```
 
-### 関連リンク {#d403df71}
+## 関連リンク {#d403df71}
 
 - [PXtosb パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxtosb.html)
 - [dvipng - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?dvipng)
