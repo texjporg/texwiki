@@ -96,9 +96,6 @@ gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにす
 - [http://git.gnome.org/browse/gedit-latex](http://git.gnome.org/browse/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [Ubuntu 12.10: geditのプラグインを導入](http://blog.livedoor.jp/ti5942/archives/7573141.html)
-- [synctex with gedit on Ubuntu 12.04](http://blog.livedoor.jp/shota_soga_/archives/3536366.html)
-- [日本語でgedit pluginsを紹介する](http://utisam.blogspot.com/2011/04/gedit-plugins.html)
-- [EDUbuntu：geditのプラグインをインストールしました。](http://blog.livedoor.jp/ti5942/archives/3682394.html)
 
 ### [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin) {#uc9a113c}
 
