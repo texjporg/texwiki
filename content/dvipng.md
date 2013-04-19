@@ -38,13 +38,15 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ### 使い方 {#ic72a209}
 
+[CJK package](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
+
 DVI ファイルを PNG ファイルに変換する場合は
 
 ```
 $ dvipng hoge.dvi
 ```
 
-日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
 
 ```
 $ pdftocairo -png hoge.pdf
