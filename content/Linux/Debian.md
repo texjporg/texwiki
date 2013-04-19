@@ -50,7 +50,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
 
-#### Debian GNU/Linux sid x86_64 (amd64) での TeX Live 2012/Debian のインストール {#v3917726}
+#### Debian GNU/Linux wheezy で TeX Live 2012/Debian のインストール {#v3917726}
 
 Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
 日本語化された xdvi が必要な場合は [xdvik-ja](http://packages.debian.org/sid/xdvik-ja) パッケージもインストールします．<br>
