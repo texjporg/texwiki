@@ -9,6 +9,10 @@ pukiwiki: "dvisvgm"
 
 ## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## dvisvgm とは {#xb898030}
+
 dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
@@ -30,6 +34,7 @@ dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウ�
 - [dvisvgm / Code / Browse Commits](http://sourceforge.net/p/dvisvgm/code/commit_browser)
 - \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/ChangeLog?view=markup)
 
 ## 使い方 {#he5a75c1}
 
