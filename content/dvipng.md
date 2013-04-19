@@ -49,7 +49,8 @@ DVI ファイルを PNG ファイルに変換する場合は
 $ dvipng hoge.dvi
 ```
 
-pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
+PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
 
 ```
 $ pdftocairo -png hoge.pdf
