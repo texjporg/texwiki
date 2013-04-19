@@ -55,16 +55,16 @@ $ dvisvgm -E hoge.eps
 dvisvgm を使用して SVG ファイルに変換した場合はテキストデータも保持されます．<br>
 
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
-この場合もテキストデータが保持されます．<br>
+Inkscape を使用する場合もテキストデータが保持されます．<br>
 
 pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
+ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
+PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
 
 ```
 
 $ pdftocairo -svg hoge.pdf
 ```
-
-ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
 
 ## 関連リンク {#b9432180}
 
