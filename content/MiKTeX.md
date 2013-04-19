@@ -20,7 +20,7 @@ MiKTeX は TeX のディストリビューションです．<br>
 
 ### 注意事項 {#e87c6af7}
 
-MiKTeX にも platex.exe がありますが，日本語 pTeX ではないので日本語を使う場合は [LuaTeX](/LuaTeX/) や [XeTeX](/XeTeX/) をおすすめします．
+MiKTeX にも platex.exe がありますが，日本語 pLaTeX ではないので日本語を使う場合は [LuaLaTeX](/LuaTeX/) や [XeLaTeX](/XeTeX/) をおすすめします．
 
 ```
 >platex.exe
@@ -59,3 +59,5 @@ MiKTeX には [Ghostscript](/Ghostscript/) が含まれていますが日本語�
 
 - [「はじめてのLaTeX」著者サポート：MiKTeX2.9のインストール](http://supportdoc.net/support-latex/newmik.html)
 - [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
+- [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
+- [TexnicCenter2.0の日本語使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=794)
