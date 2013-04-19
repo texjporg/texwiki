@@ -9,6 +9,8 @@ pukiwiki: "MuPDF"
 
 ## [MuPDF](http://www.mupdf.com/) {#x9985d4a}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a7/MuPDF.png" alt="MuPDF" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## MuPDF とは {#u255891c}
