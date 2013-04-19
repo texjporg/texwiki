@@ -28,3 +28,8 @@ GPL
 ## ツール {#jc47d589}
 
 Lua, Python, シェルスクリプトでツールが作成できます．<br>
+
+## 関連リンク {#red630e0}
+
+- [Ubuntuでオススメのテキストエディタ　medit](http://symfoware.blog68.fc2.com/blog-entry-1025.html)
+- [試そう！WindowsやLinuxで使える高度なプログラミングエディタ「medit」](http://www.moongift.jp/2011/10/20111011-3/)
