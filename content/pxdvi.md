@@ -46,6 +46,13 @@ xdvik 22.86 は TeX Live 2013 に含まれています．
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 TeX Live 2013 で pxdvi をインストールする場合は tlptexlive with TeX Live 2013 を参照してください．<br>
 
+<!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
+<!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
+<!-- $ tar xvf pxdvi.tar.xz -->
+<!-- $ tar xvf pxdvi.x86_64-linux.tar.xz -->
+<!-- $ sudo cp -pR texmf /usr/local/share -->
+<!-- $ sudo cp -p bin/x86_64-linux/pxdvi* /usr/local/bin -->
+
 ## 使い方 {#o73d19d8}
 
 ```
