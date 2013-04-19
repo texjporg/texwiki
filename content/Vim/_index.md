@@ -137,6 +137,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - Automatic LaTeX Plugin for Vim (ATP)
 - neocomplcache &amp; neosnippet
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
+- [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
 - [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
     - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
