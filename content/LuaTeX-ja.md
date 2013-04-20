@@ -184,6 +184,7 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 - [「LuaTeX-ja」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX-ja)
 - [LuaTeX-ja を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=LuaTeX-ja)
 - [LuaTex-ja : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LuaTex-ja)
+- [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
 - \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
 - \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
 - [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
