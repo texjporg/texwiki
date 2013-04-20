@@ -31,5 +31,6 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 
 ### TeX Live 2012 {#ba4e8250}
 
+- [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
 - [春は Gentoo♪　〔Part ６：とりあえず完了〕【texlive 2012 インストール手順】](http://blogs.yahoo.co.jp/igproj_fusion/16932540.html)
 - [TeX Live 2012 on Gentoo Linux (x86 &amp; x86_64)](http://blogs.yahoo.co.jp/igproj_fusion/15771588.html)
