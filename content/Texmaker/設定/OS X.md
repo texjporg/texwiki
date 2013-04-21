@@ -35,6 +35,7 @@ Texmaker 3.4.1 では動作するようです．<br>
 BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
 
 - [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
+- [TeXshopでbibTeXがうまく動かなくなりました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=991)
 
 ***
 
