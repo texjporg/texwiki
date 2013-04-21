@@ -42,6 +42,7 @@ pukiwiki: "iOS"
     - Texpad はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
     - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159?mt=8)
     - [Texpad -- blog](http://texpadapp.com/blog/)
+    - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
 - [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
     - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
@@ -57,3 +58,7 @@ pukiwiki: "iOS"
         - [macportsのplatexでも使えます．](http://appcomments.com/reviews/334548870)
         - [iPadでLaTeXを！！](http://tomhus.blogspot.com/2011/02/ipadlatex.html)
 - [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078?mt=8) (シェアウェア)
+
+## 関連リンク {#f3da3e0a}
+
+- [Newest &#39;ipad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/ipad)
