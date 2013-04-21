@@ -15,12 +15,14 @@ Hunspell はスペルチェッカーです．<br>
 
 以下の統合環境・エディタで使用されています．
 
+- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
 - [TeXworks](/TeXworks/)
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
+- [WinShell](/WinShell/)
 - Mery
+- RJ TextEd
 
 ### 辞書 {#q4b7f294}
 
