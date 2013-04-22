@@ -617,7 +617,7 @@ hmgothr-v   "@A-OTF 見出ゴMB31 Pr6N MB31"
 
 ## map Files for the OTF Package {#nc92c884}
 
-ここからの話の対象は W32TeX，あるいは TeX Live の場合であろうと思われます。
+ここからの話の対象は TeX Live あるいは W32TeX の場合であろうと思われます。
 
 > TeX Live をお使いの場合は，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
 > 埋め込み制御は
@@ -640,15 +640,6 @@ hmgothr-v   "@A-OTF 見出ゴMB31 Pr6N MB31"
 > $ kanji-config-updmap auto　　　（hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms のいずれかを埋め込む）
 > $ kanji-config-updmap nofont　　（PDF にフォントを埋め込まない）
 > $ kanji-config-updmap status　　（現在の埋め込み設定を確認する）
-> ```
->
-> TeX Live 2012 の場合は updmap-setup-kanji を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
->
-> ```
-> $ updmap-setup-kanji <fontname>　　（otf-<fontname>.map にしたがってフォントを埋め込む）
-> $ updmap-setup-kanji auto　　　（hiragino, morisawa, kozuka, ipaex, ipa のいずれかを埋め込む）
-> $ updmap-setup-kanji nofont　　（PDF にフォントを埋め込まない）
-> $ updmap-setup-kanji status　　（現在の埋め込み設定を確認する）
 > ```
 >
 
