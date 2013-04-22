@@ -29,7 +29,7 @@ X Window System
 
 ### リリース情報/ChangeLog {#y0777637}
 
-- [SourceForge.net Repository - \[xdvi\] Log of /xdvik/CHANGES](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/CHANGES?view=log)
+- [SourceForge.net Repository - \[xdvi\] Contents of /xdvik/texk/xdvik/CHANGES](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/CHANGES?view=markup)
 
 - \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
