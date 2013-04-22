@@ -21,7 +21,7 @@ pukiwiki: "TeX installers for Windows"
 <!-- -''短所''： -->
 <!-- -''備考''： -->
 
-このページでは，Windows 向け（[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/)）の
+このページでは，[Microsoft Windows](</Microsoft Windows/>) 向けの
 TeX インストーラを色々な視点から比較してみます。
 
 インストーラは多種多様なものがあってよいですし，
@@ -30,7 +30,7 @@ TeX インストーラを色々な視点から比較してみます。
 
 初心者の方は 
 
-- TeX Live をインストールする場合は「install-tl.bat」
+- TeX Live をインストールする場合は「install-tl.zip」
 - W32TeX をインストールする場合は「TeX インストーラ 3」
 
 がおすすめです。
