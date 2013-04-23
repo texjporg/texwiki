@@ -30,7 +30,7 @@ Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;
 
 Windows でも動作するようです。 → ｢TeXを使ってみよう｣をWindows上で動かせました ([qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html))
 
-pTeX（日本語版 TeX）については，最近の Linux ディストリビューションは TeX Live 2012 になっているので pTeX が UTF-8 に対応しています。<br>
+pTeX（日本語版 TeX）については，最近の Linux ディストリビューションは TeX Live 2012 以降になっているので pTeX が UTF-8 に対応しています。<br>
 ソースからコンパイルする方法は以下のページをご参照ください。<br>
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
@@ -127,6 +127,7 @@ ulimit -t 10 -f 1024
 
 #### フリーウェア (無料) {#e0fded48}
 
+- [TeXを使ってみよう（pTeX版）](http://glc.l.u-tokyo.ac.jp/tex/)
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [SpanDeX](http://spandex.io/)
 - [writeLaTeX](https://www.writelatex.com/)
