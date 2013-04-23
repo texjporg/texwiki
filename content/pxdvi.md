@@ -56,7 +56,7 @@ TeX Live 2013 で pxdvi をインストールする場合は tlptexlive with TeX
 ## 使い方 {#o73d19d8}
 
 ```
-$ pxdvi -watchfile 1 hoge.dvi
+$ pxdvi -watchfile 1 hoge.dvi &
 ```
 
 ## 関連リンク {#qded2ff9}
