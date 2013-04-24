@@ -31,19 +31,13 @@ Ring Server
 - HTTP
     - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-        <!-- - -[[www.t.ring.gr.jp/pub/text/CTAN/:http://www.t.ring.gr.jp/pub/text/CTAN/]]（近いサーバ優先……[[TENBIN:http://www.tenbin.org/]] -->
-        <!-- 及び [[RADIX:http://www.toyama.net/~ikuo/tools/radix.html]] -->
-        <!-- の機能を利用して近傍のサーバへ誘導） -->
-    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
+    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
     - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/)
 - Anonymous FTP
     - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-        <!-- - -[[ftp.t.ring.gr.jp/pub/text/CTAN/:ftp://ftp.t.ring.gr.jp/pub/text/CTAN/]]（近いサーバ優先……[[TENBIN:http://www.tenbin.org/]] -->
-        <!-- 及び [[RADIX:http://www.toyama.net/~ikuo/tools/radix.html]] -->
-        <!-- の機能を利用して近傍のサーバへ誘導） -->
-    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（空いているサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
+    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
     - [ftp.core.ring.gr.jp/pub/text/CTAN/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/)
 
@@ -130,15 +124,6 @@ CTAN の世界的なミラーリングとして次の URI があります。
     - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/)
         <!-- ftp.ice.nuie.nagoya-u.ac.jp = ftp.nuie.nagoya-u.ac.jp -->
 
-<!-- -[[北海道大学:http://www.hokudai.ac.jp/]] [[理学部:http://www.sci.hokudai.ac.jp/]] [[地球科学科:http://www.sci.hokudai.ac.jp/grp/epub/ep-web/]] -->
-<!-- [[FTP (green):http://www.ep.sci.hokudai.ac.jp/~epftp/]] -->
-<!-- - -ftp://green.ep.sci.hokudai.ac.jp/pub/CTAN/ -->
-<!-- ftp.ep.sci.hokudai.ac.jp = green.ep.sci.hokudai.ac.jp -->
-
-<!-- -[[筑波大学:http://www.tsukuba.ac.jp/]] [[大学院システム情報工学研究科:http://www.sie.tsukuba.ac.jp/]] [[コンピュータネットワーク研究室:http://www.netlab.cs.tsukuba.ac.jp/]] -->
-<!-- [[FTP サービス:http://www.netlab.cs.tsukuba.ac.jp/ftp-site/information-JP.html]] -->
-<!-- - -ftp://ftp.netlab.cs.tsukuba.ac.jp/pub/TeX/CTAN/ -->
-
 ### CTAN内日本語関連収録物 {#p09c9b86}
 
 下記は "[http://mirror.ctan.org/](http://mirror.ctan.org/)" にリンクしているので、ミラーサイトのどこかに飛びます。
@@ -161,9 +146,5 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
-
-***
-
-## Comments {#comments}
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
