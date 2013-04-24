@@ -25,7 +25,7 @@ OS X 10.8, 10.7, 10.6, 10.5, 10.4
 
 ### License {#m60344b8}
 
-[GPL](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=blob;f=Docs/GPL.txt;hb=HEAD)
+[GPLv2](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=blob;f=Docs/GPL.txt;hb=HEAD)
 
 ### リリース情報 {#ed02eb4b}
 
