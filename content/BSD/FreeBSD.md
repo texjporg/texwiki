@@ -7,14 +7,27 @@ pukiwiki: "BSD/FreeBSD"
 
 # BSD/FreeBSD
 
+[BSD](/BSD/) > FreeBSD
+
 ## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/df/Freebsd_logo.svg/500px-Freebsd_logo.svg.png" alt="FreeBSD" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## FreeBSD とは {#o8689db1}
+
+FreeBSD はオープンソースの Unix 系オペレーティングシステムです．<br>
+
+- [The FreeBSD Project](http://www.freebsd.org)
+- [The FreeBSD Project (ja)](http://www.freebsd.org/ja/)
+
+### Ports {#j8583985}
+
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
-### TeX Live <a id="texlive"></a> {#w7ff21ac}
+## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
@@ -23,11 +36,11 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 方法があります．
 
-#### tlptexlive {#zbf14d42}
+### tlptexlive {#zbf14d42}
 
 - [「texlive」の検索結果 - msllの日記](http://d.hatena.ne.jp/msll/searchdiary?word=texlive)
 
-#### TeX Live 関連 {#p4fe1144}
+### TeX Live 関連 {#p4fe1144}
 
 - [freebsd-texlive](https://code.google.com/p/freebsd-texlive/)
     - [print/texlive-core](https://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
@@ -35,7 +48,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 - [TeX Live 2012 on FreeBSD Extended support](http://anthesphoria.net/FreeBSD/TeXLive-2012/bin/)
 
-### その他関連Ports {#k9078aba}
+## その他関連Ports {#k9078aba}
 
 Portsですので，
 make &amp;&amp; make installで導入できます．
