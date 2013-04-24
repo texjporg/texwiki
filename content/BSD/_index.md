@@ -9,3 +9,5 @@ pukiwiki: "BSD"
 # BSD
 
 ## BSD {#s075206e}
+
+{{< children >}}
