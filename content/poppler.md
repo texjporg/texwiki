@@ -382,9 +382,9 @@ $ popd
 - [libxml2](http://xmlsoft.org/) をインストールします．
 
 ```
-$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz
-$ tar xvf libxml2-2.9.0.tar.gz
-$ pushd libxml2-2.9.0
+$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.1.tar.gz
+$ tar xvf libxml2-2.9.1.tar.gz
+$ pushd libxml2-2.9.1
 ```
 
 <!-- configure.in を修正します． -->
@@ -786,9 +786,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.0.tar.xz
-$ tar xvf glib-2.36.0.tar.xz
-$ pushd glib-2.36.0
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.1.tar.xz
+$ tar xvf glib-2.36.1.tar.xz
+$ pushd glib-2.36.1
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
