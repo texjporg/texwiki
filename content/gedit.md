@@ -70,7 +70,7 @@ Windows, OS X, Linux
 
 ### License {#bf49560f}
 
-[GPL](http://git.gnome.org/browse/gedit/tree/COPYING)
+[GPLv2](http://git.gnome.org/browse/gedit/tree/COPYING)
 
 ### リリース情報/ChangeLog {#z39e4e65}
 
