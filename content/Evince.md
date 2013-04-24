@@ -30,7 +30,7 @@ Windows, OS X, Linux
 
 ### License {#lf30b1e1}
 
-[GPL](http://git.gnome.org/browse/evince/tree/COPYING)
+[GPLv2](http://git.gnome.org/browse/evince/tree/COPYING)
 
 ### リリース情報 {#m8e1200a}
 
@@ -82,9 +82,6 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ## forward and inverse search {#ga060086}
 
-[Evince 2.31.5](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_31_5) から SyncTeX による forward and inverse search が可能になりました．<br>
-[Evince 2.91.0](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0) で D-Bus の仕様が変更されました． → \[[shell\] Add timestamp parameter to SyncView.](http://git.gnome.org/browse/evince/commit/?id=a2b36d8928c30f93f74869b294e72d2484422646)<br>
-[Evince 3.5.5](http://git.gnome.org/browse/evince/commit/?id=3.5.5) で D-Bus のインターフェースに gdbus-codegen が使用されるようになりました． → [daemon: Use gdbus-codegen for the org.gnome.evince.Daemon interface](http://git.gnome.org/browse/evince/commit/?id=1aac15e8098f1b2197f5bcf2430395ee9843eb43)<br>
 fwdevince, evince_forward_search を使用して forward search ができます．<br>
 invevince, evince_backward_search を使用して inverse search ができます．<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
@@ -106,8 +103,6 @@ fwdevince がうまく動作しない場合は
 - fwdevince
 
 ***
-
-Evince 2.91.0以前は３ヶ所修正が必要です。
 
 ```
 #!/usr/bin/env python
@@ -162,7 +157,6 @@ class EvinceForwardSearch:
             dbus_name = daemon.FindDocument('file://' + quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
             window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
             time.sleep(0.2)
-            #window.SyncView(tex, (line, 1), dbus_interface="org.gnome.evince.Window") # Evince 2.91.0以前(1)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
             traceback.print_exc()
@@ -268,7 +262,6 @@ class EvinceWindowProxy:
             if self._log:
                 self._log.debug("GetWindowList returned empty list")
 
-    #def on_sync_source(self, input_file, source_link): # Evince 2.91.0以前(2)
     def on_sync_source(self, input_file, source_link, timestamp):
         import subprocess
         import re
@@ -288,7 +281,6 @@ class EvinceWindowProxy:
         print(cmd)
         subprocess.call(cmd, shell=True)
         if self.source_handler is not None:
-            #self.source_handler(input_file, source_link)  # Evince 2.91.0以前(3)
             self.source_handler(input_file, source_link, timestamp)
 
 if __name__ == '__main__':
@@ -296,7 +288,7 @@ if __name__ == '__main__':
     if cmd == 'fwdevince' or cmd == 'evince_forward_search':
         synctexSearch = EvinceForwardSearch()
         synctexSearch.run()
-    elif cmd == 'invevince' or cmd == 'evince_inverse_search' or cmd == 'evince_backward_search':
+    elif cmd == 'invevince' or cmd == 'bwdevince' or cmd == 'evince_inverse_search' or cmd == 'evince_backward_search':
         synctexSearch = EvinceInverseSearch()
         synctexSearch.run()
     else:
@@ -400,7 +392,7 @@ tex_file の値を適切な値になるように修正すれば forward search �
 tex_file = os.path.join(os.path.dirname(os.path.abspath(sys.argv[3])), './', os.path.basename(os.path.abspath(sys.argv[3])))
 ```
 
-Evince 2.91.0 以降を使用する場合は [D-Bus の仕様が変更されている](http://git.gnome.org/browse/evince/commit/?id=EVINCE_2_91_0)ので evince_forward_search を
+evince_forward_search を
 
 ```
 #window.SyncView(tex, (line,1), dbus_interface="org.gnome.evince.Window")
@@ -429,7 +421,44 @@ Okular にも同様の問題が発生していたようです．
 - [Emacs/AUCTeX: Rewriting the Okular-make-url function to work with new synctex (full path + “./”) syntax](http://stackoverflow.com/questions/6898710/emacs-auctex-rewriting-the-okular-make-url-function-to-work-with-new-synctex-f)
 - [Bug 274294 - okular's synctex support doesn't work with lua(la)tex generated output](https://bugs.kde.org/show_bug.cgi?id=274294) → Fixed
 
-## 関連リンク {#n7670496}
+## Evince で使用する代替フォントの設定 {#id0a7178}
 
 - [evinceで明朝がゴシックになる](http://d.hatena.ne.jp/mcm57/20130115/1358250271)
+
+***
+
+- &#x7e;/.config/fontconfig/fonts.conf
+
+***
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+<dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
+
+<match target="pattern">
+  <test qual="any" name="family">
+    <string>Ryumin</string>
+  </test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>IPAexMincho</string>
+  </edit>
+</match>
+<match target="pattern">
+  <test qual="any" name="family">
+    <string>GothicBBB</string>
+  </test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>IPAexGothic</string>
+  </edit>
+</match>
+
+</fontconfig>
+```
+
+***
+
+## 関連リンク {#n7670496}
+
 - [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836)
