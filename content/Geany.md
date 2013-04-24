@@ -28,7 +28,7 @@ Windows, OS X, Linux
 
 ### License {#q7890579}
 
-[GPL](https://github.com/geany/geany/blob/master/COPYING)
+[GPLv2](https://github.com/geany/geany/blob/master/COPYING)
 
 ### リリース情報/ChangeLog {#n1e93e0e}
 
