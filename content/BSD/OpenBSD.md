@@ -24,4 +24,5 @@ OpenBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#xd125334}
 
+- [http://openports.se/print/texlive](http://openports.se/print/texlive)
 - [TeXLive OpenBSD Port](http://www.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/)
