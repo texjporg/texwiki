@@ -25,7 +25,7 @@ KDE
 
 ### License {#qbc60c11}
 
-[GPL](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
+[GPLv2](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
 
 ### リリース情報 {#v4dc0489}
 
@@ -66,6 +66,6 @@ KDE
 - [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html)
 
-## 設定 {#o2eb9a55}
+## Okular で使用する代替フォントの設定 {#o2eb9a55}
 
 - [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)
