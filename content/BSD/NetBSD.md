@@ -7,7 +7,21 @@ pukiwiki: "BSD/NetBSD"
 
 # BSD/NetBSD
 
+[BSD](/BSD/) > NetBSD
+
 ## [NetBSD](http://www.netbsd.org/) {#qf29df7f}
+
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/5/5c/NetBSD.svg/200px-NetBSD.svg.png" alt="NetBSD" style="float:right">
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## NetBSD とは {#mb5f216a}
+
+NetBSD はオープンソースの Unix 系オペレーティングシステムです．<br>
 
 - [NetBSD](http://www.netbsd.org/)
 - [Japan NetBSD Users' Group](http://www.jp.netbsd.org/)
+
+## TeX Live <a id="texlive"></a> {#j32677f5}
+
+- [texlive - NetBSD Wiki](http://wiki.netbsd.org/pkgsrc/texlive/)
