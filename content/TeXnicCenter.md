@@ -28,7 +28,7 @@ Windows 7, Vista, XP
 
 ### License {#haaa8397}
 
-[GPL](http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/file/tip/COPYING)
+[GPL](http://sourceforge.net/p/texniccenter/manual/ci/tip/tree/source/copyright.rst)
 
 ### リリース情報 {#da101e5c}
 
