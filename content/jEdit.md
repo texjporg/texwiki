@@ -26,7 +26,7 @@ Windows, OS X, Linux などの Java が動作する環境で動作します．<b
 
 ### License {#s3842d45}
 
-[GPL](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)
+[GPLv2](http://jedit.svn.sourceforge.net/svnroot/jedit/jEdit/trunk/doc/COPYING.txt)
 
 ### リリース情報 {#kca18bf0}
 
