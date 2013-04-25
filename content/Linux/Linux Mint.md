@@ -21,6 +21,7 @@ Linux Mint は Debian GNU/Linux と Ubuntu をベースにした Linux ディス
 
 - [Linux Mint](http://linuxmint.com/)
 - [Linux Mint Japan](http://linuxmint-jp.net/)
+- [https://github.com/linuxmint](https://github.com/linuxmint)
 
 ## TeX Live {#d237a7b2}
 
