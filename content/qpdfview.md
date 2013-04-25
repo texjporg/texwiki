@@ -50,6 +50,10 @@ qpdfview version 0.3.5 以降は SyncTeX に対応しています．<br>
 
 - [Debian -- パッケージ検索結果 -- qpdfview](http://packages.debian.org/ja/qpdfview)
 
+### Fedora {#qa034e43}
+
+- [Fedora Package Database -- Qpdfview](https://admin.fedoraproject.org/pkgdb/applications/Qpdfview)
+
 ### Arch Linux {#ua5dc612}
 
 - [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
