@@ -56,15 +56,6 @@ CD-ROM で附いています。
     (PowerPoint の表示中のスライドを EPS ファイルに出力するアドイン)
     (EMF → EPS)
 
-- [EMF2EPS](http://www.vector.co.jp/soft/win95/art/se170946.html)
-    (大上 茂雄 さん)
-    (EMF → EPS)
-
-- [EMFtoEPS](http://www.projectory.de/emftoeps/)
-    (Dirk Struve)
-    (EMF → EPS)
-
-- [WMF2EPS](http://www.wmf2eps.de.vu/)（シェアウェア。Windows の PS プリンタドライバで簡単に EPS を作るツール。プレビューも付けられる）
 - [ドローソフト](</描画・グラフツール/>)を使って EPS ファイルを作成することもできます
 
 ### PDF 作成 {#w9442957}
