@@ -48,6 +48,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 #### Ubuntu 12.04 {#s9076027}
 
+- [Installing TeX Live 2012 on Xubuntu 12.04 LTS ](http://quantumfluctuation.blogspot.co.uk/2013/04/installing-tex-live-2012-on-xubuntu.html)
 - [文字と惑う - texlive](http://vraisamis.hatenadiary.jp/search?q=texlive), [Ubuntu 12.04 texliveをインストールした後、texlive-baseがインストールできない](https://forums.ubuntulinux.jp/viewtopic.php?id=14976)
 - [Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)
 - [Ubuntu12.04+LaTex+UTF8+日本語フォントの設定メモ](http://birondalab.blogspot.jp/2012/10/ubuntu1204latexutf8.html)
