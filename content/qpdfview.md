@@ -33,8 +33,6 @@ Linux
 
 [timeline : qpdfview](https://launchpad.net/qpdfview/+series) を参照．<br>
 
-qpdfview version 0.3.5 以降は SyncTeX に対応しています．<br>
-
 ### ChangeLog {#ne9f67d7}
 
 - [CHANGES](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/CHANGES)
