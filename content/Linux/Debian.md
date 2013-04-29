@@ -145,15 +145,13 @@ $ rm -rf ~/.adobe
 を実行します
 ```
 
-また、Adobe から供給されている [Adobe Reader](</Adobe Reader/>) 9.4.2 (Linux 版/日本語版) をインストールする場合は以下のようにします．
-
-```
-$ sudo dpkg --add-architecture i386 
-$ sudo apt-get install libgtk2.0-0:i386 libatk1.0-0:i386 libcairo2:i386 libgdk-pixbuf2.0-0:i386 libglib2.0-0:i386 libpango1.0-0:i386 libpixman-1-0:i386 libxcb-shm0:i386 libjasper1:i386 libpcre3:i386 libthai0:i386 libdatrie1:i386 gtk2-engines:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/jpn/AdbeRdr9.4.2-1_i386linux_jpn.deb
-$ sudo dpkg -i --force-architecture AdbeRdr9.4.2-1_i386linux_jpn.deb
-$ sudo ln -fs ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Resource/CIDFont/KozGoPr6N-Medium.otf /opt/Adobe/Reader9/Resource/CIDFont/KozGoPr6N-Medium.otf
-```
+<!-- また、Adobe から供給されている [[Adobe Reader]] 9.4.2 (Linux 版/日本語版) をインストールする場合は以下のようにします． -->
+<!--  -->
+<!-- $ sudo dpkg - -add-architecture i386  -->
+<!-- $ sudo apt-get install libgtk2.0-0:i386 libatk1.0-0:i386 libcairo2:i386 libgdk-pixbuf2.0-0:i386 libglib2.0-0:i386 libpango1.0-0:i386 libpixman-1-0:i386 libxcb-shm0:i386 libjasper1:i386 libpcre3:i386 libthai0:i386 libdatrie1:i386 gtk2-engines:i386 -->
+<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/jpn/AdbeRdr9.4.2-1_i386linux_jpn.deb -->
+<!-- $ sudo dpkg -i - -force-architecture AdbeRdr9.4.2-1_i386linux_jpn.deb -->
+<!-- $ sudo ln -fs ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Resource/CIDFont/KozGoPr6N-Medium.otf /opt/Adobe/Reader9/Resource/CIDFont/KozGoPr6N-Medium.otf -->
 
 #### Wine を用いた Windows 版 Adobe Reader のインストール・実行 {#j0e5abe3}
 
