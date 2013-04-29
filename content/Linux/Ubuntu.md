@@ -64,6 +64,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 Ubuntu 12.10 と同様の方法でインストールできます．<br>
 
 - [Ubuntu 13.04でLaTeX環境を整える](http://kubuser.blog.fc2.com/blog-entry-33.html)
+- [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
 - [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
 
 #### Ubuntu 12.10 {#xcbd943a}
