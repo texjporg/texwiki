@@ -32,7 +32,6 @@ Linux Mint は Debian GNU/Linux と Ubuntu をベースにした Linux ディス
 ### TeX Live 2012 {#q00bf695}
 
 - [Linux で日本語 TeX 環境構築](http://c2de6320.hatenablog.com/entry/2013/04/29/180934)
-- [acer aspire one d250(AOD250)にLinux mint 13 mayaをインストール(7)](http://kimagure-zakkichou.blogspot.jp/2012/09/acer-aspire-one-d250aod250linux-mint-13_27.html)
 - [Gtiddlywiki \[ a server side tiddlywiki runs on GAE \] tex](http://tsrtesttest.appspot.com/wiki/tex)
     - [texlive 2012 インストール Debian Linux Mint Edition](http://tsrtesttest.appspot.com/wiki/texlive%202012%20%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%20Debian%20Linux%20Mint%20Edition)
     - [texlive framed 改](http://tsrtesttest.appspot.com/wiki/texlive%20framed%20%E6%94%B9)
