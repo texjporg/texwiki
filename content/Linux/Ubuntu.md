@@ -48,24 +48,14 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 #### Ubuntu 12.04 {#s9076027}
 
-- [Installing TeX Live 2012 on Xubuntu 12.04 LTS ](http://quantumfluctuation.blogspot.co.uk/2013/04/installing-tex-live-2012-on-xubuntu.html)
+- [Installing TeX Live 2012 on Xubuntu 12.04 LTS ](http://quantumfluctuation.blogspot.co.uk/2013/04/installing-tex-live-2012-on-xubuntu.html), [pxdvi install "Not implemented by now, sorry!"](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1002)
 - [文字と惑う - texlive](http://vraisamis.hatenadiary.jp/search?q=texlive), [Ubuntu 12.04 texliveをインストールした後、texlive-baseがインストールできない](https://forums.ubuntulinux.jp/viewtopic.php?id=14976)
 - [Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)
 - [Ubuntu12.04+LaTex+UTF8+日本語フォントの設定メモ](http://birondalab.blogspot.jp/2012/10/ubuntu1204latexutf8.html)
 - [Ubuntu12.04LTSにTeXLive2012をインストール](http://kurikuri888.blog76.fc2.com/blog-entry-1718.html)
 - [Ubuntu12.04へのTex Live インストール](http://chaperonin.moe-nifty.com/blog/2012/09/ubuntu1204tex-l.html)
-- [70歳でもLinux +卓球 +水泳　 Linux](http://madahiru.blog81.fc2.com/blog-category-2.html)
-    - [TeXLive と TeXworks のインストール手順 on Ubuntu 12.04](http://madahiru.blog81.fc2.com/blog-entry-395.html)
-    - [日本語TeXインストール on Ubuntu 参考サイト](http://madahiru.blog81.fc2.com/blog-entry-389.html)
-    - [TeX のインストール for Ubuntu 12.04](http://madahiru.blog81.fc2.com/blog-entry-387.html)
-    - [Ubuntu 12.04 へ TeX をインストールする(3)・・"本当に成功！"](http://madahiru.blog81.fc2.com/blog-entry-384.html)
-    - [Ubuntu 12.04 へ TeX をインストールする・・"ついに成功！"と思いきや・・](http://madahiru.blog81.fc2.com/blog-entry-383.html)
-    - [Ubuntu 12.04 へ TeX をインストールする・・ついに成功！](http://madahiru.blog81.fc2.com/blog-entry-382.html)
 - [TeX Live 2012 on Ubuntu 12.04(Precise)](http://tex-numerics.blogspot.jp/2012/09/tex-live-2012-on-ubuntu-1204precise.html)
 - [YaTeXメモ](http://d.hatena.ne.jp/su48us/20120731)
-- [LinuxへTexLiveインストールメモ](http://blog.ik.am/entry/view/id/144/titie/Linux%E3%81%B8TexLive%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/)
-- [TeX Liveの最新版をインストール](http://www47.atwiki.jp/cscd/pages/212.html)
-- [lubuntuにTeXLive 2012インストール中](http://forest.edu.u-toyama.ac.jp/blog/2012/07/lubuntutexlive-2012.html), [TeXLive 2012インストール終了](http://forest.edu.u-toyama.ac.jp/blog/2012/07/texlive-2012.html)
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
 
@@ -153,16 +143,15 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 
 ### TeX Live 2013 + tlptexlive のインストール {#hf3fd9de}
 
-TeX Live 2013 をインストールします．<br>
+<!-- TeX Live 2013 をインストールします．~ -->
+<!--  -->
+<!-- $ wget http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz -->
+<!-- $ tar xvf install-tl-unx.tar.gz -->
+<!-- $ cd install-tl* -->
+<!-- $ sudo ./install-tl - -repository http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/ -->
+<!--  -->
 
-```
-$ wget http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
-$ tar xvf install-tl-unx.tar.gz
-$ cd install-tl*
-$ sudo ./install-tl --repository http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/
-```
-
-TeX Live 2013 pretest をインストールする場合は [http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/) を [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/) に変更します．<br>
+TeX Live 2013 pretest をインストールします．<br>
 
 ```
 $ wget http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
