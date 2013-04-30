@@ -81,7 +81,7 @@ $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
 
 xdvik-ja パッケージは /usr/bin/pxdvi-xaw を提供しています．<br>
 texlive-binaries パッケージで提供されている /usr/bin/xdvi, /usr/bin/xdvi-xaw に対して
-divert(退避)および alternatives の提供を行なうので、/usr/bin/xdvi を実行するだけで日本語に対応した xdvi が実行可能です．<br>
+divert(退避)および alternatives の提供を行なうので、/usr/bin/xdvi を実行するだけで pTeX に対応した xdvi が実行可能です．<br>
 実行可能ファイル名が pxdvi じゃないと気持が悪い、という人は pxdvi という名前で alias を作成するといいと思います．<br>
 
 /usr/share/texmf/web2c/texmf.cnf を編集します．
@@ -238,7 +238,7 @@ Do you want to continue with the exact same settings as before (y/N): y
 
 #### pxdvi と pmetapost のインストール {#p2dd43c0}
 
-pxdvi (日本語化された xdvi) と pmetapost (日本語 MetaPost) が必要な場合は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)からインストールします．
+pxdvi (pTeX に対応した xdvik) と pmetapost (日本語 MetaPost) が必要な場合は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)からインストールします．
 
 ```
 $ sudo tlmgr update --self --all
