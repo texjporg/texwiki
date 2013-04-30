@@ -75,7 +75,7 @@ GSview をインストールする場合は TeXインストーラ 3 0.84 にア�
 　　　　<ins>C:\w32tex\\</ins><br>
 　　　　※ 保存先、インストール先には全角文字やスペースの入ったフォルダ名は使用できません．<br>
 　　　　URL<br>
-　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/</ins><br> <!-- 　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/%%%&br; -->
+　　　　　　<ins>&#x66;tp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/</ins><br> <!-- 　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/%%%&br; -->
 　　　　　　☐一覧以外を使う（↓に入力）<br>
 　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　高度な設定　　\]</span> ← otf と luatex のパッケージを変更してインストールする場合は \[高度な設定\] をクリック<br>
@@ -112,11 +112,11 @@ otf パッケージの最新版は otfbeta です。<br>
 
 　　　　dviout，Ghostscript，GSviewのインストール設定を行います．<br>
 　　　　dvioutのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x66;tp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/%%%};&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/dviout/</ins><br>
+　　　　　　　　<ins>&#x66;tp://ftp.ring.gr.jp/pub/text/TeX/dviout/</ins><br>
 　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
 　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/dviout/current/%%%&br; -->
 　　　　GhostscriptのURL<br> <!-- 　　　　　　　　&color(#888888,#EEEEEE){%%%&#x68;ttp://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/%%%};&br; -->
-　　　　　　　　<ins>&#x66;tp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/</ins><br>
+　　　　　　　　<ins>&#x66;tp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/</ins><br>
 　　　　　　　　☐一覧以外を使う（↓に入力）<br> <!-- 　　　　　　　　☑一覧以外を使う（↓に入力）&br; -->
 　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br> <!-- 　　　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/gs/%%%&br; -->
 　　　　GSviewのURL<br>
