@@ -64,23 +64,6 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
-■ W32TeX の場合
-
-W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
-
-***
-
-- C:\w32tex\bin\pdfplatex.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
-```
-
-***
-
 ■ TeX Live の場合
 
 pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
@@ -95,6 +78,23 @@ pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成しま�
 @echo off
 platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
 dvipdfmx -f ptex-ipaex.map "%~n1"
+```
+
+***
+
+■ W32TeX の場合
+
+W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
+
+***
+
+- C:\w32tex\bin\pdfplatex.bat
+
+***
+
+```
+@echo off
+platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
 ```
 
 ***
@@ -169,8 +169,8 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\w32tex\bin\pdfplatex2.bat
 - C:\texlive\2013\bin\win32\pdfplatex2.bat
+- C:\w32tex\bin\pdfplatex2.bat
 
 ***
 
@@ -223,22 +223,6 @@ ps2pdf.bat "%~n1.ps"
 
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
-■ W32TeX の場合
-
-***
-
-- C:\w32tex\bin\pdfuplatex.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1"
-```
-
-***
-
 ■ TeX Live の場合
 
 ***
@@ -251,6 +235,22 @@ dvipdfmx "%~n1"
 @echo off
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvipdfmx -f uptex-ipaex.map "%~n1"
+```
+
+***
+
+■ W32TeX の場合
+
+***
+
+- C:\w32tex\bin\pdfuplatex.bat
+
+***
+
+```
+@echo off
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
+dvipdfmx "%~n1"
 ```
 
 ***
@@ -324,8 +324,8 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\w32tex\bin\pdfuplatex2.bat
 - C:\texlive\2013\bin\win32\pdfuplatex2.bat
+- C:\w32tex\bin\pdfuplatex2.bat
 
 ***
 
@@ -386,33 +386,6 @@ Latexmk で PDF ファイルを作成します．
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
-■ W32TeX の場合
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfdvi</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
 ■ TeX Live の場合
 
 ***
@@ -440,6 +413,33 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
+■ W32TeX の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfdvi</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfpLaTeX2 {#xd83ee9b}
 
 Latexmk で PDF ファイルを作成します．
@@ -451,35 +451,6 @@ Latexmk で PDF ファイルを作成します．
 <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-■ W32TeX の場合
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat %O %S %D/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfps</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
 
 ■ TeX Live の場合
 
@@ -510,6 +481,35 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
+■ W32TeX の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/platex -synctex=1 -kanji=utf8 -guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex -kanji=utf8/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat %O %S %D/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfps</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfupLaTeX {#t6b9c629}
 
 Latexmk で PDF ファイルを作成します．
@@ -521,33 +521,6 @@ Latexmk で PDF ファイルを作成します．
 <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-■ W32TeX の場合
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfdvi</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
 
 ■ TeX Live の場合
 
@@ -576,6 +549,33 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
+■ W32TeX の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfdvi</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfupLaTeX2 {#h1fdd4cd}
 
 Latexmk で PDF ファイルを作成します．
@@ -587,35 +587,6 @@ Latexmk で PDF ファイルを作成します．
 <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
-
-■ W32TeX の場合
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat %O %S %D/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfps</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
 
 ■ TeX Live の場合
 
@@ -637,6 +608,35 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$ps2pdf=q/ps2pdf %O %S %D/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdfps</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+■ W32TeX の場合
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex -U/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat %O %S %D/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfps</ins><br>
