@@ -19,7 +19,7 @@ MinGW は "Minimalist GNU for Windows" の略語で Microsoft Windows アプリ�
 
 [mingw-get-inst](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/)
 
-## TeX Live {#h63c1837}
+## TeX Live <a id="texlive"></a> {#h63c1837}
 
 - [TeX Liveをmakeしようと試みてみた](http://d.hatena.ne.jp/abenori/20111105)
 - [runscript.dllがないと怒られる．](http://d.hatena.ne.jp/abenori/20111216)
