@@ -115,11 +115,11 @@ XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が
 
 ### Windows でのインストール {#j287e7c2}
 
+#### TeX Live {#j68a945d}
+
+TeX Live をインストールすると XeTeX がインストールされます．
+
 #### W32TeX {#qa9dfa1c}
-
-<!-- XeTeX for W32 のインストール方法 -->
-
-W32TeX \[2012/11/25\] で XeTeX が再び Windows 2000 でも動くようになりました．<br>
 
 cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
 
@@ -190,10 +190,6 @@ Windows のシステムフォントディレクトリの他に，購入したフ
 nkf によって 2 バイト仮名に変換されたりするからです。漢字フォント名を
 使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。
 通常はアルファベットの名前のほうが入力も簡単でしょう。
-
-#### TeX Live {#j68a945d}
-
-TeX Live をインストールすると XeTeX がインストールされます．
 
 ### OS X でのインストール {#x46670ed}
 
