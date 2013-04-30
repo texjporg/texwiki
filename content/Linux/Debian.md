@@ -22,6 +22,10 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian](http://www.debian.org)
 
+### 設定 {#n0611da8}
+
+- [Debianリポジトリの設定方法](http://ftp-admin.blogspot.jp/2013/02/debian.html)
+
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#j310e7a0}
 
 - [Debian -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.debian.org/ja/texlive-lang-cjk)
