@@ -147,10 +147,10 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 
 <!-- TeX Live 2013 をインストールします．~ -->
 <!--  -->
-<!-- $ wget http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz -->
+<!-- $ wget http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz -->
 <!-- $ tar xvf install-tl-unx.tar.gz -->
 <!-- $ cd install-tl* -->
-<!-- $ sudo ./install-tl - -repository http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/ -->
+<!-- $ sudo ./install-tl - -repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/ -->
 <!--  -->
 
 TeX Live 2013 pretest をインストールします．<br>
@@ -247,12 +247,12 @@ $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/
 $ sudo tlmgr pinning add tlptexlive 'pxdvi*'
 tlmgr: package repositories:
-	main = http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/
+	main = http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
 	tlptexlive = http://www.tug.org/~preining/tlptexlive/
 tlmgr: new pinning data for tlptexlive: pxdvi*
 $ sudo tlmgr pinning add tlptexlive 'pmetapost*'
 tlmgr: package repositories:
-	main = http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/
+	main = http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
 	tlptexlive = http://www.tug.org/~preining/tlptexlive/
 tlmgr: new pinning data for tlptexlive: pmetapost*
 $ sudo tlmgr install pxdvi pmetapost
