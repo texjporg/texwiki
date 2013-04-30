@@ -44,6 +44,13 @@ GPL
 - [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
 - [Changes in Version 2](http://pages.uoregon.edu/koch/texshop/changes_2.html)
 
+## 不具合 {#i75be8c7}
+
+### TeX ファイルと TeXShop アイコンの関連付けができない {#v06af948}
+
+- [TeXShop Icon](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004)
+- [MacOSX-TeX - texshop icon](http://macosx-tex.576846.n2.nabble.com/texshop-icon-td7579225.html)
+
 ## 設定 {#sc027054}
 
 [TeXShop/設定](</TeXShop/設定/>) を参照．
