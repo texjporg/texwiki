@@ -146,7 +146,7 @@ dvipdfmx -f ptex-ipaex.map "%~n1"
 　　プログラム: <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8 -jobname=$basename</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
@@ -303,7 +303,7 @@ dvipdfmx -f uptex-ipaex.map "%~n1"
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-u</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$synctexoption -no-guess-input-enc -kanji=utf8</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
