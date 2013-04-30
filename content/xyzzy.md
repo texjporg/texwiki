@@ -7,7 +7,7 @@ pukiwiki: "xyzzy"
 
 # xyzzy
 
-## [xyzzy](http://xyzzy-022.github.com/) {#ea58addb}
+## [xyzzy](http://xyzzy-022.github.io/) {#ea58addb}
 
 <img src="http://xyzzy.s53.xrea.com/wiki/index.php?plugin=ref&amp;page=tips%2Ficon%A4%F2%BD%F1%A4%AD%B4%B9%A4%A8%A4%EB&amp;src=xyzzy_g.png" alt="xyzzy" style="float:right">
 
@@ -37,7 +37,7 @@ Emacs ライクなテキストエディタというと，デフォルトの状�
 キーボードショートカット（キーバインド）は Windows の他のエディタと異なり，特殊ですが，標準添付の Gates.l など，Windows 標準のキーボードショートカットにするためのマクロがあります。<br>
 レジストリは変更しませんので，少しでも興味のある方は試してみてはいかがでしょうか？<br>
 
-- [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.com/)
+- [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.io/)
 
 ### 動作環境 {#q77fe1cc}
 
@@ -58,9 +58,9 @@ xyzzy+ は Ms-PL です．<br>
 興味のある方は，是非参加してみてください。<br>
 
 - [派生版 - XyzzyWiki](http://xyzzy.s53.xrea.com/wiki/index.php?%C7%C9%C0%B8%C8%C7)
-    - [xyzzy-022](http://xyzzy-022.github.com/)
+    - [xyzzy-022](http://xyzzy-022.github.io/)
         - [コミットログ](https://github.com/xyzzy-022/xyzzy/commits/)
-        - [xyzzy 0.2.2.239 リリースノート](http://xyzzy-022.github.com/xyzzy/2012/05/29/xyzzy-0_2_2_239-release-note/)
+        - [xyzzy 0.2.2.239 リリースノート](http://xyzzy-022.github.io/xyzzy/2012/05/29/xyzzy-0_2_2_239-release-note/)
         - [xyzzy - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/xyzzy/)
     - [マルチフレーム版](https://bitbucket.org/mumurik/xyzzy/wiki/Home)
         - [コミットログ](https://github.com/mumurik/xyzzy/commits/)
@@ -89,7 +89,7 @@ xyzzy+ は Ms-PL です．<br>
 
 まず，
 
-- [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.com/)
+- [xyzzy - カスタマイズ可能で軽快な Windows 用テキストエディタ](http://xyzzy-022.github.io/)
 
 から xyzzy をダウンロードします。<br>
 圧縮ファイルを適当な場所に展開（解凍）するだけでインストールは終了です。<br> <!-- [[インストーラ:http://xyzzy.s53.xrea.com/wiki/?Installer%20of%20xyzzy]]もあります。~ --> <!-- USB メモリで使用する方は， --> <!-- [[マルチフレーム版:https://bitbucket.org/mumurik/xyzzy/wiki/Home]], [[xyzzyをちょこちょこ改造:http://blog.2310.net/archives/618]]// --> <!-- がおすすめです。~ -->
