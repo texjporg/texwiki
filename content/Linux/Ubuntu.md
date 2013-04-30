@@ -108,6 +108,7 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
+- [UbuntuでTeXを使う](http://kowaimononantenai.blogspot.jp/2013/04/ubuntutex.html)
 - [Ubuntu 12.10を入れた時にやったこと](http://blog.papix.net/entry/2013/04/16/215200)
 - [UbuntuでTeX環境を整えた](http://qb4.blogspot.jp/2013/04/ubuntutex.html)
 - [VM上のUbuntu 12.10をセットアップした](http://mas0061.blogspot.jp/2013/04/vmubuntu-1210.html)
