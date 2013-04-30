@@ -43,10 +43,6 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味で，アスキ
 
 - 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX,upLaTeX](/upTeX,upLaTeX/) が利用できます。
 - Unicode に完全対応したものには [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX, [XeTeX, XeLaTeX](/XeTeX/) があります。
-- 【参考】TeX を日本語化したものには NTT JTeX やその多国語版 MuLTeX
-    もあります。現在これらは千葉大学の[櫻井貴文さん](http://www.math.s.chiba-u.ac.jp/~sakurai/)が
-    [TeXfamily](http://www.math.s.chiba-u.ac.jp/~sakurai/software.html)
-    としてメンテナンスしていらっしゃいます。
 
 1994年に LaTeX の新版 LaTeX 2ε（トゥー・イー），1995年にはアスキーから日本語版
 pLaTeX 2ε が出ました。これにともなって，それ以前の古い LaTeX を特に LaTeX 2.09
