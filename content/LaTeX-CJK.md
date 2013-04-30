@@ -16,7 +16,7 @@ pukiwiki: "LaTeX-CJK"
 日本語を処理できる TeX としては、
 国内ではアスキー社による日本語 pTeX が広く使われていますが、
 TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
-このため、ツールによっては [dvisvgm](/dvisvgm/) や [dvipng](/dvipng/) のように pTeX に対応してないものがあります。
+このため、ツールによっては [dvisvgm](/dvisvgm/), [dvipng](/dvipng/), xdvik のように pTeX に対応してないものがあります。
 
 ここでは、コンパイラ等には手を加えず、
 マクロで日中韓文字を処理する CJK LaTeX を紹介します。
@@ -201,7 +201,7 @@ LaTeX2e と LaTeX2.09 の大きな違いは、NFSS2 の採用です。
 \usepackage[T1]{CJKutf8} % フォントエンコーディングをオプションで指定しても良い。
 
 \begin{document}
-\begin{CJK}{UTF8}{}
+\begin{CJK}{UTF8}{min}
 UTF-8で何か文章を書く。babel等でハイフネーションの言語を指定すれば、正しく組版される。
 \end{CJK}
 \end{document}
