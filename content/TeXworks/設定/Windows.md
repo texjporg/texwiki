@@ -76,7 +76,7 @@ W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
 
 ```
 @echo off
-platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc "%1" && dvipdfmx "%~n1"
+platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
 ```
 
 ***
