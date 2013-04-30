@@ -23,7 +23,7 @@ pukiwiki: "KaTeX"
 
 KaTeX (花鳥) オリジナル版は [xyzzy](/xyzzy/) の TeX モードです．<br>
 GNU Emacs / XEmacs の TeX モードである [YaTeX](/YaTeX/) を xyzzy に移植したものです．<br>
-[xyzzy](http://xyzzy-022.github.com/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナル版の xyzzy 0.2.1.173 以降で動作します．<br>
+[xyzzy](http://xyzzy-022.github.io/) (0.2.2 系列) と [xyzzy+](http://xyzzy.codeplex.com/) (Unicode 版) とオリジナル版の xyzzy 0.2.1.173 以降で動作します．<br>
 マルチフレーム版では動作しません．<br>
 マルチフレーム版では KaTeX カスタム版を使用してください．<br> <!-- KaTeX (花鳥)，Emacs lisp 移植キット，parentag は GPL v2 で配布されていましたが，「iswebライト」が 2010年10月31日 をもってサービス提供を終了したため，公式サイトは消滅しました．~ -->
 
@@ -191,7 +191,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (setq elisp::KaTeX-kanji-code nil)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
-(setq elisp::tex-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1\"")
+(setq elisp::tex-command "powershell -Command \"& {$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($args),'\"\"\"');$texopt = [System.String]::Concat('\"\"\"','-kanji=utf8 -guess-input-enc -synctex=1 -sjis-terminal -jobname=',$b,'\"\"\"');ptex2pdf -l -ot $texopt $b}\"")
+;(setq elisp::tex-command "powershell -Command \"& {$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($args),'\"\"\"');$texopt = [System.String]::Concat('\"\"\"','-kanji=utf8 -guess-input-enc -synctex=1 -sjis-terminal -jobname=',$b,'\"\"\"');Start-Process ptex2pdf -ArgumentList ('-l','-ot',$texopt,$b)}\"")
+;(setq elisp::tex-command "ptex2pdf -l -ot \"-kanji=utf8 -guess-input-enc -synctex=1\"")
 ;(setq elisp::tex-command "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
 ;(setq elisp::tex-command "pdfplatex.bat")
 ;(setq elisp::tex-command "pdfplatex2.bat")
