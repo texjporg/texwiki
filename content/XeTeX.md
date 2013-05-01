@@ -29,7 +29,7 @@ XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 
 
 #### ChangeLog {#w3545bdb}
 
-- [http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex](http://xetex.git.sourceforge.net/git/gitweb.cgi?p=xetex/xetex)
+- [http://sourceforge.net/p/xetex/code/ci/master/log/](http://sourceforge.net/p/xetex/code/ci/master/log/)
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
