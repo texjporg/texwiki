@@ -170,12 +170,12 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 <!-- - --  -->
 <!-- lstat は MinGW にはないので無理っぽい -->
 
-- [zlib](http://zlib.net/) をインストールします．
+- [zlib](http://zlib.net/) をインストールします． ([ChangeLog](http://zlib.net/ChangeLog.txt))
 
 ```
-$ curl -R -L -O http://zlib.net/zlib-1.2.7.tar.gz
-$ tar xvf zlib-1.2.7.tar.gz
-$ pushd zlib-1.2.7
+$ curl -R -L -O http://zlib.net/zlib-1.2.8.tar.xz
+$ tar xvf zlib-1.2.8.tar.xz
+$ pushd zlib-1.2.8
 $ make -f win32/Makefile.gcc BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib SHARED_MODE=1 install
 $ popd
 ```
@@ -203,7 +203,7 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 を実行します．
 
-- [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．
+- [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.2/libpng-1.6.2.tar.xz -->
 
