@@ -57,15 +57,15 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 #### Debian GNU/Linux 7.0 wheezy で TeX Live 2012/Debian のインストール {#v3917726}
 
 Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
-日本語化された xdvi が必要な場合は [xdvik-ja](http://packages.debian.org/sid/xdvik-ja) パッケージもインストールします．<br>
+pTeX に対応した xdvik が必要な場合は [xdvik-ja](http://packages.debian.org/sid/xdvik-ja) パッケージもインストールします．<br>
 
-aptitude または apt-get を使用してインストールしても OK です．<br>
+aptitude を使用してインストールしても OK です．<br>
 
 ```
 $ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
 ```
 
-または
+apt-get を使用してインストールしても OK です．<br>
 
 ```
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
