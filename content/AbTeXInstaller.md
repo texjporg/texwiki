@@ -187,7 +187,6 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB<br>
-　　　　 ∣☑oldinputs.tar.xz　　　　　　　　　　　　無い　　　1.2MB<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
