@@ -68,6 +68,7 @@ Windows 8, 7, Vista, XP, 2000
 
 - [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
 - [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
+- [BeniZakura](https://bitbucket.org/suzzsegv/benizakura/downloads)
 
 ## ダウンロード {#p4ea6725}
 
