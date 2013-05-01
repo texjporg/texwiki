@@ -54,7 +54,6 @@ BALANCE って何ですか？ また、RingServer
 CTAN の世界的なミラーリングとして次の URI があります。
 
 - [http://mirror.ctan.org/](http://mirror.ctan.org/)
-- [http://www.ctan.org/get/](http://www.ctan.org/get/)
 
 接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです。
 
