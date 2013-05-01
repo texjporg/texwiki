@@ -89,7 +89,7 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 ### fwdevince {#ie18c015}
 
 fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
-TeX Live 2013 または TeX Live 2012, Evince 3.8.0 または Evince 3.4.0, Python 3.2.3 または Python 2.7.3 で動作確認しています．<br>
+TeX Live 2013, Evince 3.8.0, Python 3.2.3 または Python 2.7.3 で動作確認しています．<br>
 TeX Live 2012, Evince 3.6.0, Python 2.7.3 でも動作するようです． → [Ubuntu 12.10: fwdevince によるEvince で forward searchうまくいきました。](https://twitter.com/ti5942/status/269820600980213760), [早速ですが、２０１２年１１月１７日掲載のfwdevinceを試してみる](http://blog.livedoor.jp/ti5942/archives/7580234.html)<br>
 fwdevince がうまく動作しない場合は
 
