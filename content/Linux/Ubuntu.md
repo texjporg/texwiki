@@ -112,6 +112,7 @@ repstopdf,epspdf,extractbb,\
 - [Ubuntu 12.10を入れた時にやったこと](http://blog.papix.net/entry/2013/04/16/215200)
 - [UbuntuでTeX環境を整えた](http://qb4.blogspot.jp/2013/04/ubuntutex.html)
 - [VM上のUbuntu 12.10をセットアップした](http://mas0061.blogspot.jp/2013/04/vmubuntu-1210.html)
+- [Ubuntu入れてやったこといろいろ](http://d.hatena.ne.jp/NU_Pan/20130318/1363578704)
 - [【Ubuntu12.10】LaTeX環境を整える【簡単】](http://nort-wmli.blogspot.jp/2012/11/ubuntu1210latex.html), [【LaTeX】I can't find file \`ptmr7t'](http://nort-wmli.blogspot.jp/2013/03/latexi-cant-find-file-ptmr7t.html)
 - [quotchap.styを使用した文書において章番号のみ表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=951)
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
