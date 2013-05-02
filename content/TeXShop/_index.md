@@ -46,10 +46,11 @@ GPL
 
 ## 不具合 {#i75be8c7}
 
-### TeX ファイルと TeXShop アイコンの関連付けができない → Mountain Lion Cache Cleaner を使う {#v06af948}
+### TeX ファイルと TeXShop アイコンの関連付けができない {#v06af948}
 
-- \[[OS X TeX\] can't get TeXShop 3.14 icons](http://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html)
 - [TeXShop Icon](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004)
+- \[[OS X TeX\] can't get TeXShop 3.14 icons](http://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html)
+- [MacOSX-TeX - can't get TeXShop 3.14 icons](http://macosx-tex.576846.n2.nabble.com/can-t-get-TeXShop-3-14-icons-td7580870.html)
 - [MacOSX-TeX - texshop icon](http://macosx-tex.576846.n2.nabble.com/texshop-icon-td7579225.html)
 
 ## 設定 {#sc027054}
