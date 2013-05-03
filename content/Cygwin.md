@@ -30,7 +30,7 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 [以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，本家の texlive パッケージをインストールする方法を説明しています．<br>
 いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
-Cygwin 本家の TeX Live パッケージ以外では
+Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
 - [TeX Live の公式パッケージ](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [W32TeX](/W32TeX/)
@@ -40,7 +40,7 @@ Cygwin 本家の TeX Live パッケージ以外では
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．<br>
 ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
 
-## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#dead7b03}
+## TeX Live/Cygwin <a id="texlive"></a> {#dead7b03}
 
 ### リリース情報 {#z608db6c}
 
@@ -111,7 +111,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 ```
 - All ▲▼ Install ← すべてのパッケージをインストールする場合はクリックして Default から Install に変更
   ...
-  - Publishing ▲▼ Install ← TeX Live をフルインストールする場合はクリックして Default から Install に変更
+  - Publishing ▲▼ Install ← TeX Live/Cygwin をフルインストールする場合はクリックして Default から Install に変更
       asymptote: Vector graphics language for TeX
       jgraph: A Filter for Plotting Graphs in Postscript
       libkpathsea-devel: TeX file and path search library (development)
