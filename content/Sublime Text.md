@@ -99,4 +99,5 @@ Windows, OS X, Linux
 
 ### Linux {#r2805e10}
 
+- [Sublime Text 2をLinux MintやUbuntuでPPAからインストールする](http://blog.lindwurm.biz/2013/04/how-to-install-sublime.html)
 - [Sublime Text 2のプラグインOpen With Vimを書いてみた](http://d.hatena.ne.jp/itiut/20111229/1325138744)
