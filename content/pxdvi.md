@@ -49,6 +49,7 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
+    - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html)
 
