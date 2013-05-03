@@ -140,6 +140,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
     - [dvips](http://mirror.ctan.org/dviware/dvips/)
     - [dvipdfmx](http://mirror.ctan.org/dviware/dvipdfmx/)
     - [dviout](http://mirror.ctan.org/dviware/dviout/)
+    - [xdvik](http://mirror.ctan.org/dviware/xdvik/)
 
 ### 関連リンク {#wc81d3dd}
 
