@@ -27,7 +27,7 @@ Linux Mint は Debian GNU/Linux と Ubuntu をベースにした Linux ディス
 
 ### TeX Live 2013 {#ef984d1b}
 
-- tlptexlive with TeX Live 2013
+- TeX Live 2013
 
 ### TeX Live 2012 {#q00bf695}
 
