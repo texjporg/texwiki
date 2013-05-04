@@ -89,28 +89,6 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
-- [UbuntuでTeXを使う](http://kowaimononantenai.blogspot.jp/2013/04/ubuntutex.html)
-- [Ubuntu 12.10を入れた時にやったこと](http://blog.papix.net/entry/2013/04/16/215200)
-- [UbuntuでTeX環境を整えた](http://qb4.blogspot.jp/2013/04/ubuntutex.html)
-- [VM上のUbuntu 12.10をセットアップした](http://mas0061.blogspot.jp/2013/04/vmubuntu-1210.html)
-- [Ubuntu入れてやったこといろいろ](http://d.hatena.ne.jp/NU_Pan/20130318/1363578704)
-- [【Ubuntu12.10】LaTeX環境を整える【簡単】](http://nort-wmli.blogspot.jp/2012/11/ubuntu1210latex.html), [【LaTeX】I can't find file \`ptmr7t'](http://nort-wmli.blogspot.jp/2013/03/latexi-cant-find-file-ptmr7t.html)
-- [quotchap.styを使用した文書において章番号のみ表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=951)
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
-- [Ubuntu12.10におけるTex環境の構築](http://hgeekooohay.blogspot.jp/2013/01/ubuntu1210tex.html)
-- [Ubuntu12.10にmozc(Goolge日本語入力)とLaTex環境をインストール](http://unigadget.doorblog.jp/archives/22104415.html)
-- [UBUNTU12.10でLaTeX](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_175.html)
-- [Linux/Ubuntu/TeXをインストール](http://www.oceanwave.jp/index.php?Linux%2FUbuntu%2FTeX%A4%F2%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
-- [Ubuntu (Lubuntu) 12.10 にTeXLive2012,TeXworks をインストール](http://tkyon.blogspot.jp/2012/12/ubuntu-lubuntu-1210-texlive2012texworks.html)
-- [UbuntuにTeX環境 -2-](http://ngc1952.net/archives/1063)
-- [TeX環境を整備](http://d.hatena.ne.jp/rougeref/20121204#1354617828)
-- [Ubuntu 12.10日本語Remixを仮想マシンにインストール](http://ameblo.jp/akenji/entry-11397513309.html)
-- [Ubuntuのインストール直後にやることをまとめてみよう](http://onemoreduo.blogspot.jp/2012/11/ubuntu.html)
-- [Ubuntu12.10にtexlive2012をインストールする](http://krakenbeal.blogspot.jp/2012/11/ubuntu1210texlive2012.html)
-- [初心者クラス： Ubuntu 12.10 で始める「LaTeX入門」TeXworks](http://blog.livedoor.jp/ti5942/archives/7546892.html)
-- [Ubuntu12.10のxdviで日本語が表示されないぽよの解決法](http://nori-tsukudani.blogspot.com/2012/10/ubuntu12xdvi.html)
-- [KURASAWA's Home Page : Ubuntu#TeX Live 2012](http://physics.s.chiba-u.ac.jp/~kurasawa/ubuntu.html#tex2012)
-
 ## TeX Live 2013 <a id="texlive2013install"></a> {#jd4f2edd}
 
 ### dummy パッケージの作成 {#he7ed5d4}
@@ -264,7 +242,7 @@ $ kpsewhich ipaexm.ttf
 $ kpsewhich ipaexg.ttf
 /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
 $ kpsewhich ptex-ipaex.map
-/usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ptex-ipaex.map
+/usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
 ```
 
 dvipdfmx で ptex-ipaex.map を指定して実行します．
