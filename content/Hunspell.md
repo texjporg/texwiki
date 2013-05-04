@@ -20,9 +20,6 @@ Hunspell はスペルチェッカーです．<br>
 - [TeXworks](/TeXworks/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
-- [WinShell](/WinShell/)
-- Mery
-- RJ TextEd
 
 ### 辞書 {#q4b7f294}
 
