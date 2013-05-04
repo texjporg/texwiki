@@ -82,7 +82,7 @@ LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex 
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
+<ins>pxdvi -watchfile 1 %.dvi</ins> または <ins>xdvi -watchfile 1 %.dvi</ins> または <ins>xdg-open %.dvi</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>evince %.ps</ins> または <ins>okular --unique %.ps</ins> または <ins>zathura %.ps</ins> または <ins>qpdfview --unique %.ps</ins> または <ins>gv --watch %.ps</ins> または <ins>xdg-open %.ps</ins><br>
