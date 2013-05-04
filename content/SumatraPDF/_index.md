@@ -87,29 +87,10 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
-    - [MTeX for Notepad++](</MTeX for Notepad++/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 - [xyzzy](/xyzzy/)
     - KyoTeX
-    - [KaTeX](/KaTeX/)
-
-■ フリーウェア (無料)
-
-- EasyTeX
-- [WinShell](/WinShell/)
-- Mery
-    - SumatraPDF.js
-- gPad
-    - SumatraPDF.js
-
-■ シェアウェア
-
-- [秀丸エディタ](</秀丸エディタ/>) (シェアウェア)
-    - [SumatraPDF.mac](</秀丸エディタ/マクロ/#y16d42fd>)
-    - 祝鳥 (のりてふ)
-- Sublime Text (シェアウェア)
-    - LaTeXTools (LaTeX Plugin for Sublime Text 2)
 
 ### fwdsumatrapdf.exe <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
@@ -1582,19 +1563,10 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
-    - [MTeX for Notepad++](</MTeX for Notepad++/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
 - [xyzzy](/xyzzy/)
     - KyoTeX
-    - [KaTeX](/KaTeX/)
-
-■ フリーウェア (無料)
-
-- Mery
-    - fwdsumatrapdf.js
-- gPad
-    - fwdsumatrapdf.js
 
 ## inverse search {#wfcdbef6}
 
