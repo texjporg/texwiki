@@ -39,7 +39,7 @@ Ring Server
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
-    - [ftp.core.ring.gr.jp/pub/text/CTAN/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/)
+    - [core.ring.gr.jp/pub/text/CTAN/](ftp://core.ring.gr.jp/pub/text/CTAN/)
 
 【注意】Ring Server
 は複数のファイルサーバの集合体です。ホームページの中ほどにサーバの一覧がありますので，ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN
