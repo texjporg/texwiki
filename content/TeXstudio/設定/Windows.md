@@ -117,24 +117,6 @@ LuaLaTeX
 
 : luajitlatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
-DVIビューア
-: &nbsp;
-
-: dde:///"C:\texlive\2013\tlpkg\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
-
-: dde:///"C:\w32tex\dviout\dviout.exe":dviout/dviout/\[WinNormal\]\[FileOpen("?am.dvi")\]
-
-PSビューア
-: &nbsp;
-
-: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"
-
-: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.ps"
-
-: dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
-
-: dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[Open("?am.ps",0,1,1)\]
-
 外部PDFビューア
 : &nbsp;
 
