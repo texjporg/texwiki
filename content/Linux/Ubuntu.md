@@ -33,7 +33,6 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
 - [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
-- [Ubuntu -- パッケージ検索結果 -- xdvik-ja](http://packages.ubuntu.com/ja/xdvik-ja)
 - [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
@@ -42,20 +41,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 #### Ubuntu 13.04 {#se51f85a}
 
-- tlptexlive with TeX Live 2013
-
-### TeX Live 2012 <a id="texlive2012"></a> {#t55d8e95}
-
-#### Ubuntu 12.04 {#s9076027}
-
-- [Installing TeX Live 2012 on Xubuntu 12.04 LTS ](http://quantumfluctuation.blogspot.co.uk/2013/04/installing-tex-live-2012-on-xubuntu.html), [pxdvi install "Not implemented by now, sorry!"](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1002)
-- [文字と惑う - texlive](http://vraisamis.hatenadiary.jp/search?q=texlive), [Ubuntu 12.04 texliveをインストールした後、texlive-baseがインストールできない](https://forums.ubuntulinux.jp/viewtopic.php?id=14976)
-- [Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)
-- [Ubuntu12.04+LaTex+UTF8+日本語フォントの設定メモ](http://birondalab.blogspot.jp/2012/10/ubuntu1204latexutf8.html)
-- [Ubuntu12.04LTSにTeXLive2012をインストール](http://kurikuri888.blog76.fc2.com/blog-entry-1718.html)
-- [Ubuntu12.04へのTex Live インストール](http://chaperonin.moe-nifty.com/blog/2012/09/ubuntu1204tex-l.html)
-- [TeX Live 2012 on Ubuntu 12.04(Precise)](http://tex-numerics.blogspot.jp/2012/09/tex-live-2012-on-ubuntu-1204precise.html)
-- [YaTeXメモ](http://d.hatena.ne.jp/su48us/20120731)
+- TeX Live 2013
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
 
@@ -76,13 +62,8 @@ Ubuntu 12.10 (Quantal Quetzal) には TeX Live 2012/Debian が収録されてい
 UTF-8 に対応した pLaTeX[^1] が使用可能になっています．<br>
 
 ```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
+$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
-
-xdvik-ja パッケージは /usr/bin/pxdvi-xaw を提供しています．<br>
-texlive-binaries パッケージで提供されている /usr/bin/xdvi, /usr/bin/xdvi-xaw に対して
-divert(退避)および alternatives の提供を行なうので、/usr/bin/xdvi を実行するだけで pTeX に対応した xdvi が実行可能です．<br>
-実行可能ファイル名が pxdvi じゃないと気持が悪い、という人は pxdvi という名前で alias を作成するといいと思います．<br>
 
 /usr/share/texmf/web2c/texmf.cnf を編集します．
 
@@ -130,7 +111,7 @@ repstopdf,epspdf,extractbb,\
 - [Ubuntu12.10のxdviで日本語が表示されないぽよの解決法](http://nori-tsukudani.blogspot.com/2012/10/ubuntu12xdvi.html)
 - [KURASAWA's Home Page : Ubuntu#TeX Live 2012](http://physics.s.chiba-u.ac.jp/~kurasawa/ubuntu.html#tex2012)
 
-## [tlptexlive](</TeX Live/#tlptexlive>) with TeX Live 2013 <a id="tlptexlive"></a> {#jd4f2edd}
+## TeX Live 2013 <a id="texlive2013install"></a> {#jd4f2edd}
 
 ### dummy パッケージの作成 {#he7ed5d4}
 
@@ -144,7 +125,7 @@ $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 ```
 
-### TeX Live 2013 + tlptexlive のインストール {#hf3fd9de}
+### TeX Live 2013 のインストール {#hf3fd9de}
 
 TeX Live 2013 をインストールします．<br>
 
@@ -239,28 +220,6 @@ Do you want to continue with the exact same settings as before (y/N): y
     $ sudo /usr/local/texlive/2013/bin/x86_64-linux/tlmgr path add
     ```
 
-#### pxdvi と pmetapost のインストール {#p2dd43c0}
-
-pxdvi (pTeX に対応した xdvik) と pmetapost (日本語 MetaPost) が必要な場合は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)からインストールします．
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/
-$ sudo tlmgr pinning add tlptexlive 'pxdvi*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pxdvi*
-$ sudo tlmgr pinning add tlptexlive 'pmetapost*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pmetapost*
-$ sudo tlmgr install pxdvi pmetapost
-$ sudo tlmgr path add
-```
-
 #### texmf.cnf の編集 {#e29d5a24}
 
 [/usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/web2c/texmf.cnf?view=markup) を編集します．<br>
@@ -294,44 +253,6 @@ repstopdf,epspdf,extractbb,\
 ```
 
 アップデートによって texmf.cnf が上書きされ設定がリセットされてしまう場合は /usr/local/texlive/texmf-local/web2c/texmf.cnf に設定を記述しておけば OK です．<br>
-
-### pxdvi の確認 {#y151a616}
-
-pxdvi で以下の警告が表示される場合は設定ファイルを修正します．
-
-```
-Warning: Cannot convert string "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-*" to type FontStruct
-Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to type FontStruct
-```
-
-<!-- pxdvi-xaw:  cannot get scaling factors. -->
-<!-- pxdvi-xaw: Warning: Raw Postscript commands on page 1 may be rendered incorrectly. -->
-
-[/usr/local/texlive/2013/texmf-dist/xdvi/XDvi の 135 行目](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/xdvi/XDvi?view=markup#l135) に Fonts and colors が定義されています．<br>
-
-```
-!!!------------------------------------------------------------------------------
-!!!------------------------------ Fonts and colors ------------------------------
-!!!------------------------------------------------------------------------------
-*font:     -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*
-!!! Use a smaller font for the statusline in the Xaw version:
-*statusline.font: -*-helvetica-medium-r-*-*-10-*-*-*-*-*-*
-```
-
-font と statusline.font の定義を修正します．(参考: \[[VineSeed:18113\] update: xdvik](http://ml.vinelinux.org/vineseed/msg01271.html))
-
-```
-!!!------------------------------------------------------------------------------
-!!!------------------------------ Fonts and colors ------------------------------
-!!!------------------------------------------------------------------------------
-!*font:     -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*
-*font:     -*-*-medium-r-*-*-12-*-*-*-*-*-*-*
-!!! Use a smaller font for the statusline in the Xaw version:
-!*statusline.font: -*-helvetica-medium-r-*-*-10-*-*-*-*-*-*
-*statusline.font: -*-*-medium-r-*-*-10-*-*-*-*-*-*-*
-```
-
-以上の作業で警告が表示されなくなりました．
 
 ### dvipdfmx で IPAex フォントの埋め込み {#j5ae0e71}
 
