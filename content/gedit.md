@@ -70,13 +70,13 @@ Windows, OS X, Linux
 
 ### License {#bf49560f}
 
-[GPLv2](http://git.gnome.org/browse/gedit/tree/COPYING)
+[GPLv2](https://git.gnome.org/browse/gedit/tree/COPYING)
 
 ### リリース情報/ChangeLog {#z39e4e65}
 
-- [gedit - GNOME Text Editor](http://git.gnome.org/browse/gedit/) GNOME GIT source code repository
-    - [refs](http://git.gnome.org/browse/gedit/refs/)
-    - [log](http://git.gnome.org/browse/gedit/log/)
+- [gedit - GNOME Text Editor](https://git.gnome.org/browse/gedit/) GNOME GIT source code repository
+    - [refs](https://git.gnome.org/browse/gedit/refs/)
+    - [log](https://git.gnome.org/browse/gedit/log/)
 
 ## プラグイン {#c01f900c}
 
@@ -87,13 +87,13 @@ Windows, OS X, Linux
 
 ### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
 
-gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](http://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．<br>
+gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](https://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．<br>
 \[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．<br>
 
 - [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin)
     <!-- - -[[gedit-latex team:http://sourceforge.net/project/memberlist.php?group_id=204144]] -->
 
-- [http://git.gnome.org/browse/gedit-latex](http://git.gnome.org/browse/gedit-latex)
+- [https://git.gnome.org/browse/gedit-latex](https://git.gnome.org/browse/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [Ubuntu 12.10: geditのプラグインを導入](http://blog.livedoor.jp/ti5942/archives/7573141.html)
 
@@ -136,14 +136,6 @@ Code comment を使用するとコメントアウト，コメントアウトの�
 適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
 Latexmk は Latexmk Version 4.35 で動作確認しています．<br>
-Latexmk Version 4.24 では
-
-```
-Latexmk: -norc bad option
-```
-
-と表示されタイプセットできません．<br>
-[Ubuntu 12.10 の latexmk](http://packages.ubuntu.com/ja/latexmk) は Latexmk Version 4.24 ですが -norc オプションを外せば使用出来るようです． → [Ubuntu 12.10:geditの外部ツールにLatexmk5を追加](http://blog.livedoor.jp/ti5942/archives/7722539.html)<br>
 
 #### pdfpLaTeX {#pcd18d0c}
 
