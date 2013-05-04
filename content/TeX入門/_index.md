@@ -64,7 +64,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 - [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，定価 &yen;3,339 (本体 &yen;3,180)，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
     [W32TeX](/W32TeX/) と
-    [Ghostscript](/Ghostscript/)，[dviout](/dviout/)，OS X 用バイナリなどを収めた
+    [Ghostscript](/Ghostscript/)，OS X 用バイナリなどを収めた
     DVD-ROM が附いています。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
