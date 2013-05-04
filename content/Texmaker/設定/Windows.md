@@ -74,7 +74,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>mpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
@@ -85,12 +85,6 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
 
 ***
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>powershell -Command "&amp; {$dvi = \[System.String\]::Concat('"""',$args,'"""');$x = Get-Command dviout;$y = Select-Object Path -InputObject $x;$dviout = $y.Path + '/../../../../????/tlpkg/dviout/dviout.exe';Start-Process $dviout -ArgumentList ('-1',$dvi)}" %.dvi</ins><br>
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>cmd /c start SumatraPDF -reuse-instance %.ps</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
@@ -176,12 +170,6 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
 
 ***
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>"C:/w32tex/dviout/dviout.exe" -1 %.dvi</ins><br>
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>cmd /c start SumatraPDF -reuse-instance %.ps</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
