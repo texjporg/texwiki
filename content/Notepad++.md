@@ -134,8 +134,6 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
-### [MTeX for Notepad++](</MTeX for Notepad++/>) {#n6c79c5f}
-
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
 XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), }, \] を補完してくれます．
@@ -149,7 +147,6 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 ### forward search {#k51d2c1d}
 
 [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)<br>
-[MTeX for Notepad++#SumatraPDF との連携](</MTeX for Notepad++/#q214c924>)<br>
 を参照してください．
 
 ### inverse search {#u3c0d179}
