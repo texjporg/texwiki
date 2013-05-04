@@ -151,14 +151,6 @@ Cygwin については
 
 内に移動する（存在しないディレクトリは予め作っておく）。
 
-### dviout for Windows のカスタマイズ {#r9f015cc}
-
-- $TEXMFLOCAL/fonts/ 以下のファイルも
-    参照されるように，[dviout for Windows](/dviout/) の
-    \[Option\] → \[Setup Parameters...\] → \[Font\] → TEXROOT: 欄に
-    例えば “;C:\w32tex\share\texmf-local\fonts” を
-    追加記述し，\[Save\] → \[OK\] する。
-
 ### type1ec.sty のインストール {#sea65834}
 
 - [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/)
