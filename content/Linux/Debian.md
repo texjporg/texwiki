@@ -30,7 +30,6 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.debian.org/ja/texlive-lang-cjk)
 - [Debian -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.debian.org/ja/texlive-fonts-recommended)
-- [Debian -- パッケージ検索結果 -- xdvik-ja](http://packages.debian.org/ja/xdvik-ja)
 - [Debian -- パッケージ検索結果 -- latexmk](http://packages.debian.org/ja/latexmk)
 - [Debian -- パッケージ検索結果 -- ghostscript](http://packages.debian.org/ja/ghostscript)
 - [Debian -- sid の texlive パッケージに関する詳細](http://packages.debian.org/sid/texlive)
@@ -42,11 +41,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 ### TeX Live 2013 <a id="texlive2013"></a> {#z4379676}
 
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
-- tlptexlive with TeX Live 2013
-
-### TeX Live 2012 <a id="texlive2012"></a> {#l03a7314}
-
-- [Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)
+- TeX Live 2013
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
 
@@ -57,18 +52,17 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 #### Debian GNU/Linux 7.0 wheezy で TeX Live 2012/Debian のインストール {#v3917726}
 
 Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
-pTeX に対応した xdvik が必要な場合は [xdvik-ja](http://packages.debian.org/sid/xdvik-ja) パッケージもインストールします．<br>
 
 aptitude を使用してインストールしても OK です．<br>
 
 ```
-$ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
+$ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 apt-get を使用してインストールしても OK です．<br>
 
 ```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended xdvik-ja
+$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 /usr/share/texmf/web2c/texmf.cnf を編集します．
