@@ -131,12 +131,7 @@ jsarticle.clsでは、uplatexオプションを追加してください。
 
 ### dviware {#e548f906}
 
-[W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) 2012 に含まれる[dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
-
-[dviout](/dviout/)は、以下を参考してください。
-
-- [upTeX で出力された DVI ファイルを dviout で表示する場合の注意点](/dviout/#wadc9abf)
-- upLaTeXを使おう \[電脳世界の奥底にて\] の中の [dvioutについて](http://zrbabbler.sp.land.to/uplatex.html#ssec-install-dviout)
+[W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) 2012 以降に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
