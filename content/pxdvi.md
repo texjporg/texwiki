@@ -61,7 +61,6 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 ### インストール {#cce5d1ed}
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-TeX Live 2013 で pxdvi をインストールする場合は tlptexlive with TeX Live 2013 を参照してください．<br>
 
 <!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
 <!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
