@@ -14,7 +14,7 @@ pukiwiki: "AbTeXInstaller"
 ## TeX インストーラ 3 とは {#wd4d33ba}
 
 「TeX インストーラ 3」は TeX のインストーラーです。<br>
-[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，[dviout for Windows](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
+[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，dviout for Windows，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
 環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できるかと思います。
 
@@ -149,11 +149,11 @@ otf パッケージの最新版は otfbeta です。<br>
 　☑ TeXworksのショートカットをデスクトップに作成する<br>
 　TeXworks 利用時に埋め込むフォントを指定してください．<br>
 　　◎ デフォルトの指定を使います．<br>
-　　◯ msembed.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
-　　◯ hiraembed.map（ヒラギノフォントを用います．）<br>
-　　◯ ipaembed.map（IPAex フォントを用います．）<br>
-　　◯ kozembed.map（小塚明朝・ゴシック Pro を用います．）<br>
-　　◯ koz6embed.map（小塚明朝・ゴシック Pro6N を用います．）<br>
+　　◯ msmingoth.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
+　　◯ hiragino.map（ヒラギノフォントを用います．）<br>
+　　◯ ipaex.map（IPAex フォントを用います．）<br>
+　　◯ kozuka.map（小塚明朝・ゴシック Pro を用います．）<br>
+　　◯ kozukapr6n.map（小塚明朝・ゴシック Pr6N を用います．）<br>
 　　◯ noembed.map（埋め込みません．TeXworks でのプレビューは不可．）<br>
 
 ***
