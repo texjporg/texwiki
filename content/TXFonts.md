@@ -126,7 +126,6 @@ TXフォントが出たころは、期待感がたいへん大きかったので
 ### インストール（W32TeX） {#o79bd0d3}
 
 角藤さんの W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.xz，t1fonts.tar.xz）ので，何もする必要はありません。<br>
-dviout で使う場合は Ghostscript もインストールする必要があります。<br>
 
 ### インストール（TeX Live, MacTeX） {#dd6c8b38}
 
