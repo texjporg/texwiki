@@ -28,13 +28,13 @@ GNOME
 
 ### License {#a34a81c6}
 
-[GPLv3](http://git.gnome.org/browse/latexila/tree/COPYING)
+[GPLv3](https://git.gnome.org/browse/latexila/tree/COPYING)
 
 ### リリース情報/ChangeLog {#p49a2369}
 
-- [latexila - LaTeXila, an Integrated LaTeX Environment](http://git.gnome.org/browse/latexila/)
-    - [NEWS](http://git.gnome.org/browse/latexila/plain/NEWS)
-    - [log](http://git.gnome.org/browse/latexila/log/)
+- [latexila - LaTeXila, an Integrated LaTeX Environment](https://git.gnome.org/browse/latexila/)
+    - [NEWS](https://git.gnome.org/browse/latexila/plain/NEWS)
+    - [log](https://git.gnome.org/browse/latexila/log/)
 - [swilmet/latexila · GitHub](https://github.com/swilmet/latexila)
     - [NEWS](https://github.com/swilmet/latexila/blob/master/NEWS)
     - [コミットログ](https://github.com/swilmet/latexila/commits/master)
