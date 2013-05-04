@@ -13,8 +13,6 @@ pukiwiki: "HyperTeX"
 
 HyperTeX は dvi ファイル中に簡単なタグを \special 命令で入れておくと
 ハイパージャンプができるというものです。
-[dviout](/dviout/)
-はハイパージャンプに対応しています。
 
 詳細は次のリンクをたどってください。
 
