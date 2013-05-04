@@ -9,7 +9,7 @@ pukiwiki: "Evince"
 
 ## [Evince](http://projects.gnome.org/evince/) {#fec1fb99}
 
-<img src="http://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png" alt="Evince" style="float:right">
+<img src="https://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png" alt="Evince" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -30,16 +30,16 @@ Windows, OS X, Linux
 
 ### License {#lf30b1e1}
 
-[GPLv2](http://git.gnome.org/browse/evince/tree/COPYING)
+[GPLv2](https://git.gnome.org/browse/evince/tree/COPYING)
 
 ### リリース情報 {#m8e1200a}
 
-[http://git.gnome.org/browse/evince/refs/tags](http://git.gnome.org/browse/evince/refs/tags) を参照．<br>
+[https://git.gnome.org/browse/evince/refs/tags](https://git.gnome.org/browse/evince/refs/tags) を参照．<br>
 
 ### ChangeLog {#nb7ae766}
 
-- [git](http://git.gnome.org/browse/evince/)
-    - [log](http://git.gnome.org/browse/evince/log/)
+- [https://git.gnome.org/browse/evince/](https://git.gnome.org/browse/evince/)
+    - [log](https://git.gnome.org/browse/evince/log/)
 
 ## ダウンロード/インストール {#j395f01d}
 
@@ -90,7 +90,6 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 
 fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
 TeX Live 2013, Evince 3.8.0, Python 3.2.3 または Python 2.7.3 で動作確認しています．<br>
-TeX Live 2012, Evince 3.6.0, Python 2.7.3 でも動作するようです． → [Ubuntu 12.10: fwdevince によるEvince で forward searchうまくいきました。](https://twitter.com/ti5942/status/269820600980213760), [早速ですが、２０１２年１１月１７日掲載のfwdevinceを試してみる](http://blog.livedoor.jp/ti5942/archives/7580234.html)<br>
 fwdevince がうまく動作しない場合は
 
 - fwdevince をうまく動作するように修正する
@@ -435,6 +434,7 @@ Okular にも同様の問題が発生していたようです．
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
+<dir>/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 
 <match target="pattern">
