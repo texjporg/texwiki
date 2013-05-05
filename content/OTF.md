@@ -11,9 +11,9 @@ pukiwiki: "OTF"
 
 ## OTF パッケージ {#l22413ec}
 
-<strong>目次</strong>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### OTF パッケージとは {#h230c839}
+## OTF パッケージとは {#h230c839}
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
@@ -49,6 +49,8 @@ pukiwiki: "OTF"
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log)
+
+## インストール {#g2a8e99e}
 
 ### Microsoft Windows でのインストール {#t967d888}
 
@@ -133,6 +135,8 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 [Adobe-GB1-5](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_gb1-5.tar.z/download), 
 [Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download), 
 [Adobe-Korea1-2](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_korean1-2.tar.z/download) を取得できます。
+
+## 使い方 {#c8490780}
 
 ### フォントを埋め込まず使用する {#m049c993}
 
@@ -330,7 +334,7 @@ otf-cjmr-v  Identity-V      KozMinPr6N-Regular.otf
 これで明朝体については「小塚明朝 Pr6N R」が埋め込まれるので
 Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
-### Adobe-Japan1-6 とは {#j54465d8}
+## Adobe-Japan1-6 とは {#j54465d8}
 
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
 U-PRESS用の文字を含む23,058グリフの文字セットです。
@@ -472,7 +476,7 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 
 ここからの話の対象は TeX Live あるいは W32TeX の場合であろうと思われます。
 
-> TeX Live をお使いの場合は，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
+> TeX Live をお使いの場合は，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
 > 埋め込み制御は
 >
 > ```
