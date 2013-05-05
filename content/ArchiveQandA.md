@@ -36,11 +36,6 @@ pukiwiki: "ArchiveQandA"
 ### dvioutのエラーメッセージ {#lb61846e}
 
 - dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) でプレビューする</strong>方法があります。
-- エラーが発生した場合には，関連する HELP が開くので熟読すること。
-
-<br>
-
-    また，[dvioutにおけるトラブル](http://akagi.ms.u-tokyo.ac.jp/dvioutQA.html)を参照しましょう。
 
 ### TeX本体のエラーメッセージ {#s54a975c}
 
@@ -73,13 +68,6 @@ pukiwiki: "ArchiveQandA"
         ```
 
         を実行します。すると、filename.xxx と同じディレクトリに filename.xbb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。<br>
-        dviout をお使いの場合は、同梱されている bmc.exe を使うこともできます。使い方は
-
-        ```
-        bmc -b filename.xxx
-        ```
-
-        となります。
 
 - 複数ページのPDFファイルの任意のページを取り込む
     - [PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
