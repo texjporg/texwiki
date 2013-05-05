@@ -1565,7 +1565,6 @@ jEdit，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
 AkelPad，
-真魚\[まな\]，
 medit，
 [gedit](/gedit/)，
 [Geany](/Geany/)，
