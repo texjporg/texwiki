@@ -83,7 +83,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 ## forward and inverse search {#ga060086}
 
 fwdevince, evince_forward_search を使用して forward search ができます．<br>
-invevince, evince_backward_search を使用して inverse search ができます．<br>
+invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
 
 ### fwdevince {#ie18c015}
