@@ -49,9 +49,6 @@ CD-ROM で附いています。
     外側を侵蝕することがあります。これを試してみてください）
 
 - [pstoedit](http://www.pstoedit.net/)
-- [仮想 EPS プリンタの作成方法](http://keijisaito.info/arc/TeX/v_eps_printer.htm)（Windows
-    2000/XP において，Excel のグラフなどを EPS 化する仮想 EPS プリンタの作り方）
-
 - [EpsWriter](http://torasenriwohashiru.seesaa.net/) (Tanaka さん)
     (PowerPoint の表示中のスライドを EPS ファイルに出力するアドイン)
     (EMF → EPS)
@@ -70,7 +67,6 @@ CD-ROM で附いています。
     （日本語 PDF を生成する Perl モジュール PDFJ がある。JIS X 4051 に
     ほぼ準拠した日本語組版ルールを組み込んであるとのこと）
 
-- [PDFlib home page](http://www.pdflib.com/)
 - PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) も参照
 
 ### その他 {#af57d83a}
