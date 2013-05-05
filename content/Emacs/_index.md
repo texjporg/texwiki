@@ -257,7 +257,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### inverse search {#vecb4fd9}
 
-TeX Live 2012, Evince 3.4.0, GNU Emacs 23.3.1 で動作確認しています．<br>
+TeX Live 2013, Evince 3.8.0, GNU Emacs 24.3.1 で動作確認しています．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 
 ```
