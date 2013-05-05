@@ -16,14 +16,13 @@ pukiwiki: "OTF"
 ### OTF パッケージとは {#h230c839}
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
-[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版・開発版を利用した場合）の
+[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
 和文 OpenType フォントを使うためのパッケージです。
 
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。 <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
 
-- 安定版を利用した場合は Adobe-Japan1-5 相当のフォントあたり最大20,317文字となります。
-- OTF パッケージは5書体以上を扱うことができます。以前の[UTF パッケージ](http://psitau.kitunebi.com/utf.html)は明朝体とゴシック体だけでした。
+- OTF パッケージは5書体以上を扱うことができます。
 - また，和文フォントのメトリックが改訂されました。
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
@@ -214,7 +213,7 @@ Windows PowerShell やコマンド プロンプトで次のようにして処理
 
 Adobe Reader/Acrobat XI をお使いの方が多くなりましたので，最新の
 Adobe-Japan1-6 の文字を表示させて見ましょう。OTF パッケージは
-開発版を使用します。
+ベータ版を使用します。
 
 テスト用の pLaTeX ソースは，例えば次のものを用いてみます。
 
@@ -249,9 +248,6 @@ Adobe-Japan1-6で追加された文字を使った例
 
 最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に
 Adobe-Japan1-6 で追加された文字を使っています。コマンド処理は上と同様です。
-
-コマンドが苦手な方は，[TeXworks](/TeXworks/) に
-簡単な方法が書かれているのでご覧ください。
 
 ### フォントを埋め込むには {#hf05d89a}
 
