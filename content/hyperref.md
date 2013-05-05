@@ -11,7 +11,7 @@ pukiwiki: "hyperref"
 
 [hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです。
 
-<strong>目次</strong>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ### 更新履歴 {#e8ca0037}
 
@@ -20,7 +20,7 @@ pukiwiki: "hyperref"
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
 [PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する LaTeX パッケージです．<br>
-PXjahyper パッケージは [TeX Live](</TeX Live/>) に含まれています．<br>
+PXjahyper パッケージは TeX Live 2013 に含まれています．<br>
 
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/pxjahyper](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/?view=log)
