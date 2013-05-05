@@ -154,7 +154,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　◯ ipaex.map（IPAex フォントを用います．）<br>
 　　◯ kozuka.map（小塚明朝・ゴシック Pro を用います．）<br>
 　　◯ kozukapr6n.map（小塚明朝・ゴシック Pr6N を用います．）<br>
-　　◯ noembed.map（埋め込みません．TeXworks でのプレビューは不可．）<br>
+　　◯ noembed.map（埋め込みません．）<br>
 
 ***
 
