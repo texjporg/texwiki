@@ -283,6 +283,7 @@ latexmk -c
 latexmk -C
 ```
 
+- [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
