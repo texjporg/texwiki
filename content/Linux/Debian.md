@@ -49,7 +49,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
 
-#### Debian GNU/Linux 7.0 Wheezy で TeX Live 2012/Debian のインストール {#v3917726}
+#### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
 
 Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
 
@@ -88,6 +88,10 @@ makeindex,mendex,texindy,\
 mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
+
+## [Evince](/Evince/) {#w1fb0d62}
+
+[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Adobe Reader](</Adobe Reader/>) <a id="adobereader"></a> {#o1495f80}
 
