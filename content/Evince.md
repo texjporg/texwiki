@@ -420,9 +420,15 @@ Okular にも同様の問題が発生していたようです．
 - [Emacs/AUCTeX: Rewriting the Okular-make-url function to work with new synctex (full path + “./”) syntax](http://stackoverflow.com/questions/6898710/emacs-auctex-rewriting-the-okular-make-url-function-to-work-with-new-synctex-f)
 - [Bug 274294 - okular's synctex support doesn't work with lua(la)tex generated output](https://bugs.kde.org/show_bug.cgi?id=274294) → Fixed
 
-## Evince で使用する代替フォントの設定 {#id0a7178}
+## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
 
-- [evinceで明朝がゴシックになる](http://d.hatena.ne.jp/mcm57/20130115/1358250271)
+フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．<br>
+以下の設定では TeX Live 2012 以降に含まれている IPAexMincho, IPAexGothic で表示するようにしています．<br>
+
+```
+$ mkdir -p ~/.config/fontconfig
+$ vi ~/.config/fontconfig/fonts.conf
+```
 
 ***
 
@@ -435,6 +441,8 @@ Okular にも同様の問題が発生していたようです．
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
 <dir>/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/local/texlive/2012/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 
 <match target="pattern">
@@ -458,6 +466,13 @@ Okular にも同様の問題が発生していたようです．
 ```
 
 ***
+
+```
+$ fc-match Ryumin
+ipaexm.ttf: "IPAex明朝" "Regular"
+$ fc-match GothicBBB
+ipaexg.ttf: "IPAexゴシック" "Regular"
+```
 
 ## 関連リンク {#n7670496}
 
