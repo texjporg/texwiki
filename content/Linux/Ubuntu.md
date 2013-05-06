@@ -315,6 +315,10 @@ $ ps2pdf -dDELAYSAFER hoge.ps
 
 として変換します．
 
+## [Evince](/Evince/) {#m440464c}
+
+[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+
 ## 関連リンク {#ofcc84e4}
 
 - [ASCII.jp：～師範、組版システム「TeX」について教えてください！～｜行っとけ！　Ubuntu道場！](http://ascii.jp/elem/000/000/725/725528/)
