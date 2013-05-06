@@ -232,7 +232,7 @@ repstopdf,epspdf,extractbb,\
 
 アップデートによって texmf.cnf が上書きされ設定がリセットされてしまう場合は /usr/local/texlive/texmf-local/web2c/texmf.cnf に設定を記述しておけば OK です．<br>
 
-### dvipdfmx で IPAex フォントの埋め込み {#j5ae0e71}
+### ptex2pdf (platex + dvipdfmx) で IPAex フォントの埋め込み {#j5ae0e71}
 
 TeX Live 2013 には IPAex フォント，ptex-ipaex.map が収録されています．<br>
 
@@ -245,10 +245,10 @@ $ kpsewhich ptex-ipaex.map
 /usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
 ```
 
-dvipdfmx で ptex-ipaex.map を指定して実行します．
+ptex2pdf で -l -od '-f ptex-ipaex.map' オプションを指定して実行します．
 
 ```
-$ dvipdfmx -f ptex-ipaex.map hoge.dvi
+$ ptex2pdf -l -od '-f ptex-ipaex.map' hoge.tex
 ```
 
 以上の作業で IPAex フォントが埋め込まれます．
