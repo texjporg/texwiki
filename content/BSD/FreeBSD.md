@@ -29,6 +29,8 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
+- [FreshPorts -- print/texlive-full](http://www.freshports.org/print/texlive-full/)
+
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 - ports を使わずに TeX Live の公式パッケージをインストールする
