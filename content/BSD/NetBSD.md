@@ -27,7 +27,3 @@ NetBSD はオープンソースの Unix 系オペレーティングシステム�
 ### TeX Live 2013 {#ke8ac2b3}
 
 - [TeX Live 2013 binaries for NetBSD](http://www.babafou.eu.org/texlive-netbsd/)
-
-### TeX Live 2011 {#e6442dce}
-
-- [texlive - NetBSD Wiki](http://wiki.netbsd.org/pkgsrc/texlive/)
