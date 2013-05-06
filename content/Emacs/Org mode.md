@@ -244,6 +244,7 @@ org ファイルの先頭に
 
 ### OS X {#a97921ad}
 
+- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 - [EmacsのOrg-modeから日本語ファイルをTeX&amp;PDFにする時の問題点](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=903)
 - [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
 - [Org-Mode | Amrta](http://skalldan.wordpress.com/category/emacs/org-mode-emacs/)
