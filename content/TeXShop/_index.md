@@ -61,14 +61,6 @@ GPL
 
 [TeXShop/使い方](</TeXShop/使い方/>) を参照．
 
-## ツール {#kffeddd2}
-
-### [Flashmode](http://www.math.uni-heidelberg.de/studinfo/gerhardt/Flashmode/) {#ye507bc3}
-
-Live preview for TeXShop
-
-### [Ramón's TeXShop Tools](http://www2.hawaii.edu/~ramonf/TeXShop/) {#db2483a1}
-
 ## 関連リンク {#qb1b8010}
 
 - MacWiki:TeXShop
