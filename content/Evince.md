@@ -89,7 +89,7 @@ inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇�
 ### fwdevince {#ie18c015}
 
 fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
-TeX Live 2013, Evince 3.8.0, Python 3.2.3 または Python 2.7.3 で動作確認しています．<br>
+TeX Live 2013, Evince 3.8.0, Python 3.3.1 または Python 2.7.4 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
 - fwdevince をうまく動作するように修正する
@@ -315,7 +315,7 @@ invevince は例えば [TeXworks](/TeXworks/) の場合は
 
 ```
 $ evince hoge.pdf &
-$ invevince hoge.pdf "texworks --position=%l %f"
+$ invevince hoge.pdf 'texworks --position=%l "%f"'
 ```
 
 のように実行して Evince 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
