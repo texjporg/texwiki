@@ -53,14 +53,6 @@ Ubuntu 12.10 と同様の方法でインストールできます．<br>
 - [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
 - [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
 
-#### Ubuntu 12.10 {#xcbd943a}
-
-- [QuantalQuetzal/ReleaseNotes/ja/JapaneseEnvironment](https://wiki.ubuntu.com/QuantalQuetzal/ReleaseNotes/ja/JapaneseEnvironment)
-    - [TeX Liveが2012になりました](https://wiki.ubuntu.com/QuantalQuetzal/ReleaseNotes/ja/JapaneseEnvironment#line-30)
-
-Ubuntu 12.10 (Quantal Quetzal) には TeX Live 2012/Debian が収録されています．→ \[[ubuntu-jp:4234\] Ubuntu 12.10のTeX Liveが2012になりました](https://lists.ubuntu.com/archives/ubuntu-jp/2012-October/004233.html)<br>
-UTF-8 に対応した pLaTeX[^1] が使用可能になっています．<br>
-
 ```
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
@@ -326,5 +318,3 @@ $ ps2pdf -dDELAYSAFER hoge.ps
 - [Ubuntu 12.04のevinceでpdfを開くと明朝体もゴシック体で表示されるのを直す](http://ubutun.blogspot.jp/2012/05/ubuntu-1204evincepdf.html)
 - [Ubuntu 12.04をインストール](http://ubutun.blogspot.jp/2012/04/ubuntu-1204.html)
 - [本家Ubuntuの日本語表示問題 Ubuntu 12.04編](http://blog.minawa.net/2012/04/ubuntu-ubuntu-1204.html)
-
-[^1]: 内部処理の文字コードは EUC-JP
