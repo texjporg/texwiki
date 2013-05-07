@@ -1559,21 +1559,12 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 オープンソースソフトウェアとして
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
-[xyzzy](/xyzzy/)，
-jEdit，
-[FooEditor](http://sourceforge.jp/projects/fooeditor/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) UNICODE 版，
-AkelPad，
-medit，
 [gedit](/gedit/)，
-[Geany](/Geany/)，
-[Alpha](http://sourceforge.jp/projects/alpha/releases/?package_id=1965)，
-[GreenPad](http://www.kmonos.net/lib/gp.html)，
-[Yudit](http://www.yudit.org/)
+[Geany](/Geany/)
 などがあります。
-ただ，xyzzy はタイ語などには
-対応していません。Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方は AkelPad，メモ帳がおすすめです。Linux などの UNIX 互換 OS では
+Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方はメモ帳がおすすめです。Linux などの UNIX 互換 OS では
 GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，OS X では
 [Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[Emacs For Mac OS X](http://www.emacsformacosx.com/)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
