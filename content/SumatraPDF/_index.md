@@ -89,8 +89,6 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [NppExec](/NppExec/)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
-- [xyzzy](/xyzzy/)
-    - KyoTeX
 
 ### fwdsumatrapdf.exe <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
@@ -1565,8 +1563,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [NppExec](/NppExec/)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
-- [xyzzy](/xyzzy/)
-    - KyoTeX
 
 ## inverse search {#wfcdbef6}
 
