@@ -64,42 +64,6 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 ## ダウンロード/インストール {#w2221884}
 
-### ソースコードからインストール {#t7edecd8}
-
-[girara](http://pwmt.org/projects/girara/) をインストールします．
-
-```
-$ wget http://pwmt.org/projects/girara/download/girara-0.1.5.tar.gz
-$ tar xvf girara-0.1.5.tar.gz
-$ pushd girara-0.1.5
-$ sudo make install
-make install で No package 'gtk+-2.0' found のエラーが発生する場合は
-$ sudo make GIRARA_GTK_VERSION=3 install
-$ popd
-```
-
-[zathura](http://pwmt.org/projects/zathura/) をインストールします．
-
-```
-$ wget http://pwmt.org/projects/zathura/download/zathura-0.2.2.tar.gz
-$ tar xvf zathura-0.2.2.tar.gz
-$ pushd zathura-0.2.2
-$ sudo make install
-make install で No package 'gtk+-2.0' found のエラーが発生する場合は
-$ sudo make ZATHURA_GTK_VERSION=3 install
-$ popd
-```
-
-[zathura-pdf-poppler](http://pwmt.org/projects/zathura/plugins/zathura-pdf-poppler/) をインストールします．
-
-```
-$ wget http://pwmt.org/projects/zathura/plugins/download/zathura-pdf-poppler-0.2.2.tar.gz
-$ tar xvf zathura-pdf-poppler-0.2.2.tar.gz
-$ pushd zathura-pdf-poppler-0.2.2
-$ sudo make install
-$ popd
-```
-
 ### Ubuntu {#cc8ebe01}
 
 - [Ubuntu -- パッケージ検索結果 -- zathura](http://packages.ubuntu.com/ja/zathura)
@@ -107,6 +71,10 @@ $ popd
 ### Debian {#x8dcc844}
 
 - [Debian -- パッケージ検索結果 -- zathura](http://packages.debian.org/ja/zathura)
+
+### Fedora {#f03f2bfa}
+
+- [Fedora Package Database -- zathura](https://admin.fedoraproject.org/pkgdb/acls/name/zathura)
 
 ### Arch Linux {#h8cd5d50}
 
