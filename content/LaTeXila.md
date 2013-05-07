@@ -44,3 +44,27 @@ LaTeXila 2.5.3 で SyncTeX に対応しました．<br>
 ### インストール {#scad45f9}
 
 [Installation](http://projects.gnome.org/latexila/#installation) を参照．
+
+<!-- ***OpenBSD [#v124e0d8] -->
+<!--  -->
+<!-- -http://openports.se/x11/gnome/latexila -->
+
+## Build Tool {#t1320044}
+
+\[Build\]-\[Manage Build Tools\]
+
+### Personal build tools {#kcfc97ba}
+
+#### Latexmk-pdfpLaTeX {#hcba291f}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi $filename
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pdfpLaTeX\] で実行できます
