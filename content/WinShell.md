@@ -141,14 +141,8 @@ UTF-8 を使用したい方は
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
-- AkelPad
-- 真魚\[まな\]
-- [xyzzy](/xyzzy/)
-- jEdit
-- medit
 - [gedit](/gedit/)
 - [Geany](/Geany/)
-- TeXmacs
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
