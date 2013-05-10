@@ -26,8 +26,7 @@ Windows 8, 7, Vista, XP
 
 ### リリース情報 {#f691af94}
 
-2013-04-12 texmf-dist 対応版 (→ [2013-04-12 - にっき♪](http://d.hatena.ne.jp/abenori/20130412))<br>
-2013-03-07 TeXインストーラ 3 0.84<br>
+2013-05-11 TeXインストーラ 3 0.84r1<br>
 2013-03-07 プラグイン集<br>
 
 ### 注意事項 {#bb499d3c}
@@ -154,7 +153,8 @@ otf パッケージの最新版は otfbeta です。<br>
 　　◯ ipaex.map（IPAex フォントを用います．）<br>
 　　◯ kozuka.map（小塚明朝・ゴシック Pro を用います．）<br>
 　　◯ kozukapr6n.map（小塚明朝・ゴシック Pr6N を用います．）<br>
-　　◯ noembed.map（埋め込みません．TeXworks 0.4.5 では日本語のフォントを埋め込んでいない場合は ＭＳ 明朝 で表示されるようになりました．）<br>
+　　◯ noembed.map（埋め込みません．TeXworks でのプレビューは不可．[^1]）<br>
+　　☐ 2004JIS 字形を使う．（デフォルトの指定を選択時は無視されます．）<br>
 
 ***
 
@@ -242,3 +242,5 @@ otf パッケージの最新版は otfbeta です。<br>
 - [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
 - [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
+
+[^1]: TeXworks 0.4.5 では日本語のフォントを埋め込んでいない場合は ＭＳ 明朝 で表示されるようになりました．
