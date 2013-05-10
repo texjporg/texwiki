@@ -15,7 +15,7 @@ pukiwiki: "LuaTeX"
 
 ## LuaTeX とは {#v17b2316}
 
-LuaTeX は [Lua](http://www.lua.org/) が使える TeX です．<br>
+LuaTeX は Lua が使える TeX です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
@@ -23,6 +23,10 @@ LuaTeX に関しては以下のページを参照してください．<br>
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
 - [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
+
+### License {#u58971dd}
+
+[GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
 
 ### ChangeLog {#h5bae295}
 
