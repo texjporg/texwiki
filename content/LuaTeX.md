@@ -20,6 +20,7 @@ LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
 - [FusionForge: LuaTeX: Project Home](https://foundry.supelec.fr/projects/luatex/)
+- [lualatex · GitHub](https://github.com/lualatex)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
 - [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
