@@ -82,12 +82,24 @@ LaTeX2e と LaTeX 2.09 は異なるものなので注意が必要です。
 LaTeX2e，\documentstyle で始めるのが LaTeX 2.09 です。LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に
 LaTeX 2.09 の互換モードで処理されるので，エラーなどが出ないことも多くあります。
 
-## インストールの仕方 {#i326adb5}
+## インストール {#i326adb5}
 
-PC 初心者にはこれが最も難しいところです。この TeX Wiki に
-OS ごとのインストール法が詳しく書かれていますので，ご参照ください。特に
-Microsoft Windows については
+初心者には TeX のインストールが最も難しいところです。<br>
+TeX Wiki に OS ごとのインストール方法が詳しく書かれていますので，ご参照ください。<br>
+
+### Microsoft Windows {#t3b1a89c}
+
 [Microsoft Windows - TeX Wiki](</Microsoft Windows/>) をご覧ください。
+
+### Mac {#m050163b}
+
+[Mac - TeX Wiki](/Mac/) をご覧ください。
+
+### Linux {#z51c014e}
+
+[Linux - TeX Wiki](/Linux/) をご覧ください。
+
+### Web {#j1241f24}
 
 インストール不要で TeX が使えるウェブページ「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」もあります。
 
