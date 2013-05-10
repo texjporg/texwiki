@@ -13,9 +13,13 @@ pukiwiki: "LuaJITTeX"
 
 ## LuaJITTeX とは {#u3c93cbf}
 
-LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を [LuaJIT](http://luajit.org/) に置き換えたものです.<br>
+LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を [LuaJIT](http://luajit.org/) に置き換えたものです.<br>
 
 - [FusionForge: LuaJITTeX: Project Home](https://foundry.supelec.fr/projects/luajittex/)
+
+### License {#a9b7759e}
+
+[GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luajittex)
 
 ### ChangeLog {#s3ef1408}
 
