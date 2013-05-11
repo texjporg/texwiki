@@ -46,7 +46,7 @@ GPL
 
 ## 不具合 {#i75be8c7}
 
-### TeX ファイルと TeXShop アイコンの関連付けができない {#v06af948}
+### TeX ファイルと TeXShop アイコンの関連付けができない → [自己解決しました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004&parent=5533) {#v06af948}
 
 - [TeXShop Icon](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004)
 - \[[OS X TeX\] can't get TeXShop 3.14 icons](http://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html)
