@@ -30,10 +30,15 @@ Org mode は
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 
+### リリース情報 {#lb82f3d0}
+
+- [http://orgmode.org/cgit.cgi/org-mode.git/refs/](http://orgmode.org/cgit.cgi/org-mode.git/refs/)
+- [http://orgmode.org/w/?p=org-mode.git;a=tags](http://orgmode.org/w/?p=org-mode.git;a=tags)
+
 ### ChangeLog {#r21fa6e2}
 
-- [org-mode.git - Org-mode, an Emacs mode for organizing your life.](http://orgmode.org/cgit.cgi/org-mode.git/)
-- [orgmode.org Git - org-mode.git/summary](http://orgmode.org/w/?p=org-mode.git)
+- [http://orgmode.org/cgit.cgi/org-mode.git/](http://orgmode.org/cgit.cgi/org-mode.git/)
+- [http://orgmode.org/w/?p=org-mode.git](http://orgmode.org/w/?p=org-mode.git)
 
 ## インストール {#l69ff892}
 
@@ -63,49 +68,27 @@ M-x list-packages RET でリストを表示して org を選択
 
 ***
 
-&#x7e;/.emacs.d/init.el で load-path に ~/site-lisp/org/lisp を追加します．<br>
+&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します．<br>
 
 ```
- (add-to-list 'load-path "~/site-lisp/org/lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
 ```
 
-## LaTeX Export {#k6bbb6c5}
+## Export to LaTeX {#k6bbb6c5}
 
 - [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
-- [org-modeで日本語PDFを出力する](http://fjyuu.info/org-export-pdf/)
-- [Emacs の Org ファイルを platex と dvipdfmx で PDF 化する設定．](http://qiita.com/items/6eb4d8d799e41ef3f15d)
-- [org-modeでLaTeXのプリアンプルを設定](http://d.hatena.ne.jp/hirono2011/20120712/1342098157)
-- [org-modeのLatexエクスポートで長いURLが折り返さないのを修正](http://d.hatena.ne.jp/hirono2011/20111124/1322156182)
-- [org-modeでTeX出力のフォーマットを設定する](http://d.hatena.ne.jp/sanryuu/20110413)
-- [Org-mode](http://d.hatena.ne.jp/daharu/20110409/)
-- [org-mode で日本語LaTeXにexport](http://blog.goo.ne.jp/gleaning/e/683f62e972b126324882477c75522207)
-- [org-modeで卒業論文を書く :NOTE:](http://d.hatena.ne.jp/r_takaishi/20100209/)
-- [Org-Mode で日本語 PDF を出力できるようにする](http://www.moreslowly.jp/mw/index.php/Org-Mode_%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E_PDF_%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B)
-- [Org-Mode の機能、組み込み LaTeX — その1](http://www.kitetu.net/old/notes/0003.html)
-- [Org-Mode の機能、組み込み LaTeX — その2](http://www.kitetu.net/old/notes/0004.html)
-- [Org-Mode の組み込み LaTeX 和訳部分](http://www.kitetu.net/info-renais/emacs/manual/org-mode/tr_embedded-latex.html)
-- [Jekyll + Org-mod で LaTeX](http://gacha.yukimizake.net/blog/2010/10/22/jekyll-and-org-mod-with-latex.html)
+- [Writing Beamer presentations in org-mode](http://orgmode.org/worg/exporters/beamer/tutorial.html)
+- [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
+- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 
 ### Windows {#q16766de}
-
-- [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
-- [Org-Modeで日本語を含むファイルをPDFにエクスポートする方法](http://d.hatena.ne.jp/mokimokisan/20120624/1340558857)
-- [日本語文を含む org ファイルを jsarticle クラスの LaTeX にエクスポートして PDF に変換する方法](http://tmishina.cocolog-nifty.com/blog/2010/11/org-jsarticle-l.html)
-
-W32TeX では
-
-```
-! LaTeX Error: File `wasysym.sty' not found.
-```
-
-と表示されるので W32TeX を使用する場合は wasysym.sty を別途インストールしてください．
 
 #### 設定 {#y73c067b}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org mode はデフォルトでは pdfLaTeX が使われます．<br>
 pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
-latexmk は W32TeX, TeX Live に含まれています．<br>
+latexmk は TeX Live, W32TeX に含まれています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
@@ -114,23 +97,23 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ;;
 ;; Org mode
 ;;
-(require 'org)
-(require 'org-latex)
+(require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/lualatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/luajitlatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/xelatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex %f"))
-;(setq org-export-run-in-background t)
-(if (not (eq org-export-run-in-background t))
+(setq org-latex-default-class "jsarticle")
+(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc/\" -e \"$bibtex=q/pbibtex -kanji=utf8/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc/\" -e \"$bibtex=q/upbibtex/\" -e \"$makeindex=q/mendex -U/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex/\" -e \"$bibtex=q/bibtex/\" -e \"$makeindex=q/makeindex/\" -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/lualatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/luajitlatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/xelatex/\" -e \"$bibtex=q/bibtexu/\" -e \"$makeindex=q/texindy/\" -norc -gg -xelatex %f"))
+;(setq org-export-in-background t)
+(if (not (eq org-export-in-background t))
     (setq org-file-apps
           '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --rxi --file %s --page $page}\" | cmd"))))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
@@ -150,7 +133,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
@@ -169,7 +152,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
@@ -184,7 +167,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
@@ -234,20 +217,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ***
 
-org ファイルの先頭に
-
-```
-#+LaTeX_CLASS: jsarticle
-```
-
-を追加します．
-
 ### OS X {#a97921ad}
-
-- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
-- [EmacsのOrg-modeから日本語ファイルをTeX&amp;PDFにする時の問題点](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=903)
-- [bxjsarticleと英語文献の書式](https://okumuralab.org/tex/mod/forum/discuss.php?d=841)
-- [Org-Mode | Amrta](http://skalldan.wordpress.com/category/emacs/org-mode-emacs/)
 
 #### 設定 {#l55021f8}
 
@@ -263,20 +233,20 @@ latexmk は TeX Live に含まれています．<br>
 ;;
 ;; Org mode
 ;;
-(require 'org)
-(require 'org-latex)
+(require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
-;(setq org-export-run-in-background t)
+(setq org-latex-default-class "jsarticle")
+(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
+;(setq org-export-in-background t)
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
@@ -296,7 +266,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
@@ -315,7 +285,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
@@ -330,7 +300,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
@@ -380,19 +350,7 @@ latexmk は TeX Live に含まれています．<br>
 
 ***
 
-org ファイルの先頭に
-
-```
-#+LaTeX_CLASS: jsarticle
-```
-
-を追加します．
-
 ### Linux {#h20d131a}
-
-- [TeX Live 2011 ユーザが org 文書を pdf に出力するための設定](http://qiita.com/items/da23c80d334139194a4d)
-- [LaTeX形式のレポートをemacs+org-modeだけで書く](http://ik-fib.com/2012/01/latex_emacs_org-mode/)
-- [Emacs org-modeを使ってみる: (14) LaTeXにエクスポート](http://d.hatena.ne.jp/tamura70/20100217/org)
 
 #### 設定 {#n84d0ac5}
 
@@ -408,20 +366,20 @@ latexmk は TeX Live に含まれています．<br>
 ;;
 ;; Org mode
 ;;
-(require 'org)
-(require 'org-latex)
+(require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
-;(setq org-latex-to-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
-;(setq org-export-run-in-background t)
+(setq org-latex-default-class "jsarticle")
+(setq org-latex-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/platex/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/pdflatex/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/lualatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
+;(setq org-export-in-background t)
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
@@ -441,7 +399,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
   \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
@@ -460,7 +418,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
@@ -475,7 +433,7 @@ latexmk は TeX Live に含まれています．<br>
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-export-latex-classes
+(add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
@@ -525,26 +483,21 @@ latexmk は TeX Live に含まれています．<br>
 
 ***
 
+### 使い方 {#a6515cd5}
+
 org ファイルの先頭に
 
 ```
+#+TITLE: hoge
 #+LaTeX_CLASS: jsarticle
 ```
 
 を追加します．
 
-### 使い方 {#a6515cd5}
+C-c C-e l l で LaTeX ファイルを出力します．<br>
+C-c C-e l p で PDF ファイルを出力します．<br>
+C-c C-e l o で PDF ファイルを出力して表示します．<br>
 
-C-c C-e l で LaTeX ファイルを出力します．<br>
-C-c C-e p で PDF ファイルを出力します．<br>
-C-c C-e d で PDF ファイルを出力して表示します．<br>
-
-## [Beamer](/Beamer/) Export {#k112eb83}
-
-- [Writing Beamer presentations in org-mode](http://orgmode.org/worg/exporters/beamer/tutorial.html)
-- \[[Emacs\]emacs + beamerの設定](http://d.hatena.ne.jp/killingout_n-bita/20121224/1356359190)
-- [Emacs org-modeを使ってみる: (15) Beamerにエクスポート](http://d.hatena.ne.jp/tamura70/20100218/org)
-
-## HTML {#t60cf94b}
+## Export to HTML {#t60cf94b}
 
 - [Org-mode による HTML 文書作成入門](http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
