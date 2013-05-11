@@ -337,12 +337,12 @@ $ popd
 
 - [freetype](http://www.freetype.org/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.4.11/freetype-2.4.11.tar.bz2 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.4.12/freetype-2.4.12.tar.bz2 -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.11.tar.bz2
-$ tar xvf freetype-2.4.11.tar.bz2
-$ pushd freetype-2.4.11
+$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.12.tar.bz2
+$ tar xvf freetype-2.4.12.tar.bz2
+$ pushd freetype-2.4.12
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -549,9 +549,9 @@ msgothic.ttc: "MS Gothic" "Regular"
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/pixman-0.28.2.tar.gz
-$ tar xvf pixman-0.28.2.tar.gz
-$ pushd pixman-0.28.2
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.30.0.tar.gz
+$ tar xvf pixman-0.30.0.tar.gz
+$ pushd pixman-0.30.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
