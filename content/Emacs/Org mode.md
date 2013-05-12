@@ -42,7 +42,8 @@ Org mode は
 
 ## インストール {#l69ff892}
 
-Org mode は Emacs 22 以降では標準で含まれています．
+Org mode は Emacs 22 以降では標準で含まれています．<br>
+Org mode 8.0 未満の場合は最新版の Org mode にアップグレードします．<br>
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
@@ -76,8 +77,6 @@ M-x list-packages RET でリストを表示して org を選択
 
 ## Export to LaTeX {#k6bbb6c5}
 
-- [LaTeX Export](http://orgmode.org/worg/org-tutorials/org-latex-export.html)
-- [Writing Beamer presentations in org-mode](http://orgmode.org/worg/exporters/beamer/tutorial.html)
 - [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
 - [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 
