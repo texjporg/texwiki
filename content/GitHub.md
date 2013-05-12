@@ -8,3 +8,12 @@ pukiwiki: "GitHub"
 # GitHub
 
 ## [GitHub](https://github.com/) {#rb09b0aa}
+
+- [zr-tex8r - GitHub](https://github.com/zr-tex8r)
+- [zr-tex8r&#39;s Gists](https://gist.github.com/zr-tex8r)
+- [kmaed/kmbeamer · GitHub](https://github.com/kmaed/kmbeamer)
+- [kmaed/pdffill · GitHub](https://github.com/kmaed/pdffill)
+- [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
+- [DVI のパース](https://gist.github.com/anonymous/4318395) ([swtw7466](https://github.com/swtw7466))
+- [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
+- [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
