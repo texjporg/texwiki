@@ -8,3 +8,24 @@ pukiwiki: "Python"
 # Python
 
 ## [Python](http://www.python.org/) {#ff8ca087}
+
+TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
+Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
+
+- [Python Programming Language &ndash; Official Website](http://www.python.org/)
+
+python.exe を C:\Python27 にインストールした場合は
+
+```
+;C:\Python27
+```
+
+を環境変数 PATH に追加します
+
+python.exe を C:\Python33 にインストールした場合は
+
+```
+;C:\Python33
+```
+
+を環境変数 PATH に追加します
