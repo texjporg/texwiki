@@ -396,6 +396,9 @@ TeX の入力補完機能があります．
 　　　　外部HTMLヘルプの設定(P)<br>
 　　　　<ins>.\sakura.chm</ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ (3)... \]</span><br>
 　　　　☑ビューアを複数起動しない(N)<br>
+　　　　☑終了時、改行の一致を検査する(E)<br>
+
+<br>
 
 <br>
 
