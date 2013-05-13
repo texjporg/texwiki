@@ -155,12 +155,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 
 ### [Babel](/Babel/) {#v6636cbc}
 
-多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。XeLaTeX では既に babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されていますが、現時点では polyglossia は LuaLaTeX からは使用できません。
-
-- [再び悩ましい状態に：Luminescence](http://fugenji.org/thomas/diary/index.php?no=r830)
-- [polyglossia が LuaTeX に非対応な理由（ツイッター）](https://twitter.com/zr_tex8r/status/196604967115694080)
-
-を参照．
+多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。
 
 #### japanese {#m6094362}
 
@@ -178,6 +173,11 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 ```
 
 のように呼び出すと、platex 等で japanese を呼び出したのと同じように日本語環境を使うことができます。
+
+### polyglossia {#vf242886}
+
+babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
+polyglossia v1.3 以降は XeLaTeX と LuaLaTeX がサポートされています。<br>
 
 ## 関連リンク {#sf395095}
 
