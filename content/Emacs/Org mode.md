@@ -244,6 +244,8 @@ latexmk は TeX Live に含まれています．<br>
 ;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
 ;(setq org-export-in-background t)
+(setq org-file-apps
+      '(("pdf" . "/usr/bin/open -a Preview.app %s")))
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
@@ -353,7 +355,6 @@ latexmk は TeX Live に含まれています．<br>
 
 #### 設定 {#n84d0ac5}
 
-動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org mode はデフォルトでは pdfLaTeX が使われます．<br>
 pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
@@ -377,6 +378,8 @@ latexmk は TeX Live に含まれています．<br>
 ;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/luajitlatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf %f"))
 ;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/xelatex/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex %f"))
 ;(setq org-export-in-background t)
+(setq org-file-apps
+      '(("pdf" . "evince %s")))
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
@@ -488,6 +491,7 @@ org ファイルの先頭に
 
 ```
 #+TITLE: hoge
+#+AUTHOR: fuga
 #+LaTeX_CLASS: jsarticle
 ```
 
