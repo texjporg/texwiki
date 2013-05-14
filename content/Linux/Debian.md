@@ -133,8 +133,8 @@ $ sudo apt-get install acroread:i386 acroread-fonts-jpn
 ```
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get install libgtk2.0-0:i386 libatk1.0-0:i386 libcairo2:i386 libgdk-pixbuf2.0-0:i386 libglib2.0-0:i386 libpango1.0-0:i386 libpixman-1-0:i386 libxcb-shm0:i386 libjasper1:i386 libpcre3:i386 libthai0:i386 libdatrie1:i386 gtk2-engines:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.4/enu/AdbeRdr9.5.4-1_i386linux_enu.deb
-$ sudo dpkg -i --force-architecture AdbeRdr9.5.4-1_i386linux_enu.deb
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
+$ sudo dpkg -i --force-architecture AdbeRdr9.5.5-1_i386linux_enu.deb
 $ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_jpn_i486-linux.tar.bz2
 $ tar xvf FontPack910_jpn_i486-linux.tar.bz2
 $ sudo JPNKIT/INSTALL
@@ -162,8 +162,8 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 ```
 $ sudo dpkg --add-architecture i386 
 $ sudo apt-get install wine-bin:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.02/ja_JP/AdbeRdr11002_ja_JP.exe
-$ wine AdbeRdr11002_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.03/ja_JP/AdbeRdr11003_ja_JP.exe
+$ wine AdbeRdr11003_ja_JP.exe
 $ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Reader/AcroRd32.exe
 ```
 
