@@ -82,14 +82,7 @@ Windows 8, 7, Vista, XP, 2000
 
 ## 不具合 {#jbc9f4c6}
 
-### サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュする → サクラエディタ Ver. 2.0.6.0 で修正されました {#j51dbfec}
-
-サクラエディタ Ver. 2.0.6.0 で修正されました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
-
-サクラエディタ Ver. 2.0.5.0 で [cmigemo-default-win32-20110227.zip](http://www.kaoriya.net/software/cmigemo) の migemo.dll を使用するとサクラエディタがクラッシュします．<br>
-サクラエディタ Ver. 2.0.5.0 を使用している方は Ver. 2.0.6.0 以降にアップデートしてください．<br>
-
-- [C/Migemo 32ビット最新版でサクラエディタが不正終了](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev&tree=r5710)
+- [BugReport - SakuraEditorWiki](http://sakura.qp.land.to/?BugReport)
 
 ## コマンドラインオプション {#j41d5a42}
 
