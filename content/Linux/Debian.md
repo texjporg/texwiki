@@ -128,7 +128,7 @@ $ sudo apt-get update
 $ sudo apt-get install acroread:i386 acroread-fonts-jpn
 ```
 
-なお、Adobe から供給されている [Adobe Reader](</Adobe Reader/>) 9.5.4 (Linux 版/英語版) の .deb パッケージと Adobe Reader 日本語フォントパック (Linux 版) を自力でインストールしたい、という場合は、以下のようにします．
+なお、Adobe から供給されている [Adobe Reader](</Adobe Reader/>) 9.5.5 (Linux 版/英語版) の .deb パッケージと Adobe Reader 日本語フォントパック (Linux 版) を自力でインストールしたい、という場合は、以下のようにします．
 
 ```
 $ sudo dpkg --add-architecture i386
