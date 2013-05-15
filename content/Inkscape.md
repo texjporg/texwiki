@@ -91,7 +91,8 @@ sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,lat
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
-Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定することが可能になりました．
+Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定することが可能になりました．<br>
+! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) のエラーが発生する場合は 「EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成」 のチェックボックスを解除してください． (→ [inkscapeで作った画像epsをtexでの利用の仕方がわからず困っています．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10107244200))<br>
 
 ***
 
@@ -112,7 +113,7 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 
 　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
 　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
-　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成　☑<br>
+　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成　☑ ← ! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) のエラーが発生する場合はチェックボックスを解除してください<br>
 　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
 　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
 　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
