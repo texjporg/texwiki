@@ -49,19 +49,7 @@ Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリ
 
 ## 不具合 {#q60cf17d}
 
-### pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れる → pdf2htmlEX version 0.4 で修正されました {#x082653d}
-
-pdf2htmlEX version 0.4 で修正されました． →
-(参照：[commit a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96](https://github.com/coolwanglu/pdf2htmlEX/commit/a28d9f8a206188ba3a0b7a661f9d6a306e8d1b96))<br>
-修正前の pdf2htmlEX version 0.3 で変換した HTML ファイルを Internet Explorer 9 で表示すると表示が崩れます．→ [IE での表示](https://twitter.com/tomoBorderless/status/245510669665984512)<br>
-
-### pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる → pdf2htmlEX version 0.5 で修正されました {#ddfa6a70}
-
-pdf2htmlEX version 0.5 で修正されました． →
-(参照：[commit fddff14dc87a192c8efd52949d643bc7760842fc](https://github.com/coolwanglu/pdf2htmlEX/commit/fddff14dc87a192c8efd52949d643bc7760842fc))<br>
-修正前の pdf2htmlEX version 0.4 で変換した HTML ファイルを Windows 版の Mozilla Firefox で表示すると Firefox の動作が極端に遅くなる現象が発生します．→ [Windows 版の Firefoxで開くとフリーズ](https://twitter.com/kobachi_dearu/status/245839318202081280)<br>
-Windows 版の Mozilla Firefox で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) を表示すると Firefox の動作が極端に遅くなります．<br>
-OS X や Linux の Firefox では問題が発生しないようです．<br>
+- [https://github.com/coolwanglu/pdf2htmlEX/issues?state=open](https://github.com/coolwanglu/pdf2htmlEX/issues?state=open)
 
 ## インストール {#d5b9a2e9}
 
@@ -491,7 +479,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.22.1
+--   found poppler, version 0.23.0
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 Found config.h: C:/MinGW/include/fontforge/config.h
