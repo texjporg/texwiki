@@ -42,3 +42,8 @@ W32TeX の場合は Babel の japanese パッケージをインストールす�
 1. もし C:\w32tex\share\texmf-dist\ls-R が存在する場合は C:\w32tex\bin\deltexlsr.exe をダブルクリックして C:\w32tex\share\texmf-dist\ls-R を削除してください．
 
 - [funyarara @ Wiki - インストール](http://www35.atwiki.jp/funyarara/pages/43.html) にも japanese.ldf のインストール・設定方法があります．
+
+### polyglossia {#q0893d44}
+
+babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
+polyglossia v1.3 以降は XeLaTeX と LuaLaTeX がサポートされています。<br>
