@@ -34,7 +34,6 @@ Beamer は
 - [TeX Live](</TeX Live/>)
 - [W32TeX](/W32TeX/) (2011/09/19 以降)
 - [MiKTeX](/MiKTeX/)
-- [MacTeX](/Mac/#f5466652)
 
 で利用可能です．
 
@@ -68,7 +67,7 @@ l.12 \ProvidesClassRCS
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
 
-### dvipdfmx でナビゲーションシンボルと \framezoom が機能しない, XeLaTeX で \framezoom が機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用する {#v3f3e1ec}
+### dvipdfmx でナビゲーションシンボルと \framezoom が機能しない, XeLaTeX で \framezoom が機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
 
 - [LaTeX: to make the navigation symbols (and \framezoom) work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
@@ -76,7 +75,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Beamer は dvipdfmx をサポートするか否か？ (3)](http://d.hatena.ne.jp/zrbabbler/20130303/1362319511)
 - [おっ、platex+dvipdfmxで拡大表示ができるようになった！？](http://blog.livedoor.jp/ti5942/archives/7760380.html)
 
-### XeLaTeX でナビゲーションシンボルが機能しない → [bxdpx-beamer.sty](https://gist.github.com/zr-tex8r/4980892) を使用するもしくは Beamer 3.17 以降にアップデートする {#s082f108}
+### XeLaTeX でナビゲーションシンボルが機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用するもしくは Beamer 3.17 以降にアップデートする {#s082f108}
 
 - [「XeLaTeX でナビゲーションシンボルが機能しない →bxdpx-beamerパッケージを使う」がいい！？](http://blog.livedoor.jp/ti5942/archives/7765237.html)
 - [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html)
