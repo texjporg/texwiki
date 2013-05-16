@@ -25,12 +25,13 @@ LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luate
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
 
+[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．<br>
+
 LuaTeX-ja は
 
-- [TeX Live](</TeX Live/>) (TeX Live 2012 以降)
+- [TeX Live](</TeX Live/>) (TeX Live 2012 以降．最新版は TeX Live 2013 以降．)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
-- [MiKTeX](/MiKTeX/)
-    - [MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja)
+- [MiKTeX](/MiKTeX/) ([MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja))
 
 で利用可能です．
 
