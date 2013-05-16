@@ -17,3 +17,5 @@ pukiwiki: "GitHub"
 - [DVI のパース](https://gist.github.com/anonymous/4318395) ([swtw7466](https://github.com/swtw7466))
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
 - [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
+- [https://github.com/SublimeText/LaTeXTools](https://github.com/SublimeText/LaTeXTools)
+- [https://github.com/munepi](https://github.com/munepi)
