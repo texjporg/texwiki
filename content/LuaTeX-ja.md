@@ -16,16 +16,14 @@ pukiwiki: "LuaTeX-ja"
 ## LuaTeX-ja とは {#ha0b38ce}
 
 LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語文書の組版を行うためのパッケージです．<br>
-LuaTeX-ja は [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja) に submit されました。(["New on CTAN: LuaTeX-ja": CTAN Announcements, Fri, 20 Apr 2012 06:51:50 -0700](http://www.mail-archive.com/ctan-ann@dante.de/msg04764.html))<br>
 
 - [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
     - [LuaTeX-ja の使い方](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
+- [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja)
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
-
-[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．<br>
 
 LuaTeX-ja は
 
@@ -51,6 +49,8 @@ LuaTeX-ja は
 - [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
 
 ### インストール {#p4234337}
+
+[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．<br>
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
@@ -190,6 +190,8 @@ polyglossia v1.3 以降は XeLaTeX と LuaLaTeX がサポートされていま�
 - \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
 - \[[latex\]\[japanese\]lualatex example](https://gist.github.com/3316964)
 - [PharoByExample-japanese](https://github.com/SquareBracketAssociates/PharoByExample-japanese)
+- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
+- [Conflict between luatex-ja and fontspec](http://tex.stackexchange.com/questions/95764/conflict-between-luatex-ja-and-fontspec)
 - [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
 - [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
