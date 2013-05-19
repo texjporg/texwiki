@@ -49,6 +49,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 Ubuntu 12.10 と同様の方法でインストールできます．<br>
 
+- [Ubuntu(Xubuntu)でTeXをEmacsで書く](http://ameblo.jp/the1736/entry-11533722174.html)
 - \[[Ubuntu13.04\]LaTexのセットアップ](http://aruneko.wkeya.com/archives/461)
 - [Ubuntu 13.04でLaTeX環境を整える](http://kubuser.blog.fc2.com/blog-entry-33.html)
 - [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
