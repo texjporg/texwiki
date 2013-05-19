@@ -80,6 +80,12 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 - [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
+<!-- *inverse search [#c00c992e] -->
+<!--  -->
+<!-- TeXworks の場合は -->
+<!--  -->
+<!-- $ zathura -s -x 'texworks - -position=%{line} "%{input}"' hoge.pdf -->
+
 ## 関連リンク {#l21c05df}
 
 - [Emacs like key bindings for zathura](https://gist.github.com/3168313)
