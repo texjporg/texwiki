@@ -8,3 +8,6 @@ pukiwiki: "C"
 # C
 
 ## C {#hb6b6e11}
+
+- [http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
+- [http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
