@@ -50,7 +50,7 @@ Linux
 
 ### Fedora {#qa034e43}
 
-- [Fedora Package Database -- Qpdfview](https://admin.fedoraproject.org/pkgdb/applications/Qpdfview)
+- [Fedora Package Database -- qpdfview](https://admin.fedoraproject.org/pkgdb/acls/name/qpdfview)
 
 ### Arch Linux {#ua5dc612}
 
@@ -63,3 +63,60 @@ Linux
 \[Edit\]-\[Settings...\]-\[Behaviour\]
 
 Auto-refresh の項目をチェックするとファイルを自動的に更新してくれます．
+
+***
+
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
+　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
+　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
+　　　　Track recently used:　　　　　　　　　☐<br>
+　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
+　　　　Restore bookmarks:　　　　　　　　　☐<br>
+　　　　Restore per-file settings:　　　　　　☐<br>
+　　　　Synchronize presentation:　　　　　☐<br>
+　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
+
+***
+
+## SyncTeX {#pd09d0e8}
+
+### forward search {#edba988b}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+
+```
+$ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
+```
+
+のように実行します．<br>
+
+### inverse search {#n500afd3}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+TeXworks の場合は<br>
+Source editor の項目に
+
+```
+texworks --position=%2 "%1"
+```
+
+を設定します．<br>
+
+***
+
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
+　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
+　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
+　　　　Track recently used:　　　　　　　　　☐<br>
+　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
+　　　　Restore bookmarks:　　　　　　　　　☐<br>
+　　　　Restore per-file settings:　　　　　　☐<br>
+　　　　Synchronize presentation:　　　　　☐<br>
+　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
+
+***
+
+qpdfview 上でダブルクリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
