@@ -110,6 +110,10 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
+### Arch Linux {#y10f7abd}
+
+- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
+
 ## 関連リンク {#u27a744e}
 
 - [MuPDF for Windows 9x](http://d.hatena.ne.jp/lukewarm/20110521#p1)
