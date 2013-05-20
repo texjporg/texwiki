@@ -50,12 +50,8 @@ Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentati
 
 ### Linux の GVim で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → ソースコードの修正またはコンソール版の Vim を使用する {#g843a69b}
 
-- \[[Vim-latex-devel\] Vim-latexsuite and IBus](http://www.mail-archive.com/vim-latex-devel@lists.sourceforge.net/msg01078.html)
-- [vim-latex と gvim を併用すると日本語が打てない罠](http://d.hatena.ne.jp/jimbeam0203/20080703/1215113577) &amp; [gtk2のgvimだとscimで日本語入力ができない](http://d.hatena.ne.jp/mFumi/20090901/1251779763) → SCIM の「未確定文字列を入力対象クライアントのウインドウに表示」のチェックを外す
-- [VIM-LaTeX を起動すると，GVim で日本語入力ができません… kinput2 は立ち上がるのですが，入力した瞬間に落ちます．](http://alohakun.blog7.fc2.com/blog-entry-61.html)
-- [vim-latex は便利なんですけど，他の機能との相性が難しいですよね．私の場合は，何故か gvim で起動させると kinput2 が落ちるので，端末内の Vim で起動させています．](http://d.hatena.ne.jp/noya/comment?date=20051202#c)
-
-GVim の on-the-spot の実装に問題があるようです．
+Linux の GVim で Vim-LaTeX を使用すると日本語入力に問題が発生します．<br>
+GVim の on-the-spot の実装に問題があるようです．<br>
 
 - [http://www.bookshelf.jp/2ch/unix/1232035011.html#45](http://www.bookshelf.jp/2ch/unix/1232035011.html#45)
 - [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
@@ -91,7 +87,8 @@ Vim を起動し
 
 #### 設定 {#q8a0044b}
 
-$HOME/\_vimrc に設定を記述します．
+$HOME/\_vimrc に設定を記述します．<br>
+以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 
 ***
 
@@ -108,29 +105,35 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_ps = 'dvi,ps'
-let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+let g:Tex_FormatDependency_pdf = 'pdf'
+"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-"let g:Tex_FormatDependency_pdf = 'pdf'
-let g:Tex_CompileRule_dvi = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode $*'
-"let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $*'
-let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
-"let g:Tex_CompileRule_pdf = 'ps2pdf.bat $*.ps'
+let g:Tex_FormatDependency_ps = 'dvi,ps'
+let g:Tex_CompileRule_pdf = 'ptex2pdf -l -ot "-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode" $*'
+"let g:Tex_CompileRule_pdf = 'ptex2pdf -l -u -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" $*'
 "let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+"let g:Tex_CompileRule_pdf = 'ps2pdf.bat $*.ps'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_dvi = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = 'pbibtex -kanji=utf8'
 "let g:Tex_BibtexFlavor = 'upbibtex'
+"let g:Tex_BibtexFlavor = 'bibtex'
+"let g:Tex_BibtexFlavor = 'bibtexu'
 let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
-let g:Tex_ViewRule_dvi = 'dviout'
-let g:Tex_ViewRule_ps = 'C:/Program Files/SumatraPDF/SumatraPDF.exe -reuse-instance'
-"let g:Tex_ViewRule_ps = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe -reuse-instance'
+"let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
+"let g:Tex_MakeIndexFlavor = 'texindy $*.idx'
 let g:Tex_ViewRule_pdf = 'texworks'
-"let g:Tex_ViewRule_pdf = 'C:/Program Files/SumatraPDF/SumatraPDF.exe -reuse-instance -inverse-search "C:\vim73-kaoriya-win32\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
-"let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe -reuse-instance -inverse-search "C:\vim73-kaoriya-win64\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
+"let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
 "let g:Tex_ViewRule_pdf = 'pdfopen --rxi --file'
+let g:Tex_ViewRule_ps = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance'
+let g:Tex_ViewRule_dvi = 'cmd /c start $*.dvi'
 ```
 
 ***
@@ -168,7 +171,8 @@ Vim を起動し
 
 #### 設定 {#hf6d9f36}
 
-$HOME/.vimrc に設定を記述します．
+$HOME/.vimrc に設定を記述します．<br>
+以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 
 ***
 
@@ -185,30 +189,37 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_ps = 'dvi,ps'
-let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+let g:Tex_FormatDependency_pdf = 'pdf'
+"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-"let g:Tex_FormatDependency_pdf = 'pdf'
-let g:Tex_CompileRule_dvi = '/usr/texbin/platex -synctex=1 -interaction=nonstopmode $*'
-"let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode $*'
-let g:Tex_CompileRule_ps = '/usr/texbin/dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_pdf = '/usr/texbin/dvipdfmx $*.dvi'
-"let g:Tex_CompileRule_pdf = '/usr/local/bin/ps2pdf $*.ps'
+let g:Tex_FormatDependency_ps = 'dvi,ps'
+let g:Tex_CompileRule_pdf = '/usr/texbin/ptex2pdf -l -ot "-synctex=1 -interaction=nonstopmode" $*'
+"let g:Tex_CompileRule_pdf = '/usr/texbin/ptex2pdf -l -u -ot "-synctex=1 -interaction=nonstopmode" $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/lualatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = '/usr/texbin/xelatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = '/usr/texbin/dvipdfmx $*.dvi'
+"let g:Tex_CompileRule_pdf = '/usr/local/bin/ps2pdf $*.ps'
+let g:Tex_CompileRule_ps = '/usr/texbin/dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_dvi = '/usr/texbin/platex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = '/usr/texbin/pbibtex'
 "let g:Tex_BibtexFlavor = '/usr/texbin/upbibtex'
+"let g:Tex_BibtexFlavor = '/usr/texbin/bibtex'
+"let g:Tex_BibtexFlavor = '/usr/texbin/bibtexu'
 let g:Tex_MakeIndexFlavor = '/usr/texbin/mendex $*.idx'
+"let g:Tex_MakeIndexFlavor = '/usr/texbin/makeindex $*.idx'
+"let g:Tex_MakeIndexFlavor = '/usr/texbin/texindy $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_dvi = '/usr/bin/open'
-let g:Tex_ViewRule_ps = '/usr/bin/open'
 let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXShop.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXworks.app'
+"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Firefox.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a "Adobe Reader.app"'
+let g:Tex_ViewRule_ps = '/usr/bin/open'
+let g:Tex_ViewRule_dvi = '/usr/bin/open'
 ```
 
 ***
@@ -254,7 +265,8 @@ Vim を起動し
 
 #### 設定 {#j3b0f658}
 
-$HOME/.vimrc に設定を記述します．
+$HOME/.vimrc に設定を記述します．<br>
+以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 
 ***
 
@@ -271,37 +283,44 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_ps = 'dvi,ps'
-let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+let g:Tex_FormatDependency_pdf = 'pdf'
+"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
-"let g:Tex_FormatDependency_pdf = 'pdf'
-let g:Tex_CompileRule_dvi = 'platex -synctex=1 -interaction=nonstopmode $*'
-"let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode $*'
-let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
-"let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
+let g:Tex_FormatDependency_ps = 'dvi,ps'
+let g:Tex_CompileRule_pdf = 'ptex2pdf -l -ot "-synctex=1 -interaction=nonstopmode" $*'
+"let g:Tex_CompileRule_pdf = 'ptex2pdf -l -u -ot "-synctex=1 -interaction=nonstopmode" $*'
 "let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+"let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
+let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
+let g:Tex_CompileRule_dvi = 'platex -synctex=1 -interaction=nonstopmode $*'
+"let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode $*'
 let g:Tex_BibtexFlavor = 'pbibtex'
 "let g:Tex_BibtexFlavor = 'upbibtex'
+"let g:Tex_BibtexFlavor = 'bibtex'
+"let g:Tex_BibtexFlavor = 'bibtexu'
 let g:Tex_MakeIndexFlavor = 'mendex $*.idx'
+"let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
+"let g:Tex_MakeIndexFlavor = 'texindy $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_dvi = 'xdvi -watchfile 1'
-let g:Tex_ViewRule_ps = 'evince'
-"let g:Tex_ViewRule_ps = 'okular --unique'
-"let g:Tex_ViewRule_ps = 'zathura'
-"let g:Tex_ViewRule_ps = 'qpdfview --unique'
-"let g:Tex_ViewRule_ps = 'gv --watch'
 let g:Tex_ViewRule_pdf = 'evince'
 "let g:Tex_ViewRule_pdf = 'okular --unique'
 "let g:Tex_ViewRule_pdf = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
 "let g:Tex_ViewRule_pdf = 'qpdfview --unique'
 "let g:Tex_ViewRule_pdf = 'pdfviewer'
 "let g:Tex_ViewRule_pdf = 'texworks'
+"let g:Tex_ViewRule_pdf = 'firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'acroread'
 "let g:Tex_ViewRule_pdf = 'pdfopen -viewer ar9-tab'
+let g:Tex_ViewRule_ps = 'evince'
+"let g:Tex_ViewRule_ps = 'okular --unique'
+"let g:Tex_ViewRule_ps = 'zathura'
+"let g:Tex_ViewRule_ps = 'qpdfview --unique'
+"let g:Tex_ViewRule_ps = 'gv --watch'
+let g:Tex_ViewRule_dvi = 'xdvi -watchfile 1'
 ```
 
 ***
@@ -631,7 +650,7 @@ $HOME/\_vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連携 (inv
 function! Tex_ForwardSearchLaTeX()
 ...
   " tips on vim.sf.net (vim.sf.net tip #225)
-  if (has('win32') && (viewer =~? "yap"))
+  if (has('win32') && (viewer =~? '^ *yap\( \|$\)'))
 
     let execString = 'silent! !start '. viewer.' -s '.line('.').expand('%').' '.mainfnameRoot
 
@@ -665,13 +684,9 @@ let s:path = expand('<sfile>:p:h')
 function! Tex_ForwardSearchLaTeX()
 ...
   " tips on vim.sf.net (vim.sf.net tip #225)
-  if (has('win32') && (viewer =~? "yap"))
+  if (has('win32') && (viewer =~? '^ *yap\( \|$\)'))
 
     let execString = 'silent! !start '. viewer.' -s '.line('.').expand('%').' '.mainfnameRoot
-
-  elseif (has('win32') && (viewer =~? "dviout"))
-
-    let execString = 'silent! !start ' . viewer . ' -1 ' . mainfnameRoot . '.dvi' . ' \# '. line('.') . ' ' . expand('%')
 
   elseif (has('win32') && (viewer =~? "sumatrapdf"))
 
@@ -687,30 +702,14 @@ function! Tex_ForwardSearchLaTeX()
 
 SumatraPDF で inverse search を使用するには LaTeX コマンドに -synctex=1 を追加して
 
-- SumatraPDF のフルパスが C:\Program Files\SumatraPDF\SumatraPDF.exe
-- gvim.exe のフルパスが C:\vim73-kaoriya-win32\gvim.exe
+- gvim.exe のフルパスが C:\vim\gvim.exe
 
 の場合 $HOME/\_vimrc の g:Tex_ViewRule_pdf を
 
 ***
 
 ```
-let g:Tex_ViewRule_pdf = 'C:/Program Files/SumatraPDF/SumatraPDF.exe -reuse-instance -inverse-search "C:\vim73-kaoriya-win32\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
-```
-
-***
-
-に設定します．
-
-- SumatraPDF のフルパスが C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
-- gvim.exe のフルパスが C:\vim73-kaoriya-win64\gvim.exe
-
-の場合 $HOME/\_vimrc の g:Tex_ViewRule_pdf を
-
-***
-
-```
-let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe -reuse-instance -inverse-search "C:\vim73-kaoriya-win64\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
 ```
 
 ***
