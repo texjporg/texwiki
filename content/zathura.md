@@ -80,7 +80,9 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 - [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
-## inverse search {#c00c992e}
+## SyncTeX {#g93d0312}
+
+### inverse search {#c00c992e}
 
 TeXworks の場合は
 
