@@ -447,9 +447,9 @@ $ popd
 - [fontconfig](http://www.fontconfig.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.92.tar.bz2
-$ tar xvf fontconfig-2.10.92.tar.bz2
-$ pushd fontconfig-2.10.92
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.93.tar.bz2
+$ tar xvf fontconfig-2.10.93.tar.bz2
+$ pushd fontconfig-2.10.93
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
