@@ -80,11 +80,15 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 - [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
-<!-- *inverse search [#c00c992e] -->
-<!--  -->
-<!-- TeXworks の場合は -->
-<!--  -->
-<!-- $ zathura -s -x 'texworks - -position=%{line} "%{input}"' hoge.pdf -->
+## inverse search {#c00c992e}
+
+TeXworks の場合は
+
+```
+$ zathura -s -x 'texworks --position=%{line} "%{input}"' hoge.pdf
+```
+
+のように実行して zathura 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
 
 ## 関連リンク {#l21c05df}
 
