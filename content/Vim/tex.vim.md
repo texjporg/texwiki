@@ -434,7 +434,7 @@ function! SumatraPDF()
     elseif glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') != ''
       let viewer = '"' . glob('C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') . '"'
     else
-      let viewer = 'SumatraPDF.exe'
+      let viewer = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance ' . masterPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
   endif
