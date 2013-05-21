@@ -21,6 +21,8 @@ LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語�
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
     - [LuaTeX-ja の使い方](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
+- [フォーラム](http://sourceforge.jp/projects/luatex-ja/forums/)
+    - [公開討議/質問](http://sourceforge.jp/forum/forum.php?forum_id=25558)
 - [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja)
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
