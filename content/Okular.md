@@ -69,3 +69,40 @@ KDE
 ## 代替フォントの設定 {#o2eb9a55}
 
 - [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)
+
+## SyncTeX {#ya8f4753}
+
+### forward search {#i560a338}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+
+```
+$ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
+```
+
+のように実行します．<br>
+
+### inverse search {#ja9305fc}
+
+\[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\]
+
+TeXworks の場合は<br>
+エディタ の項目に
+
+エディタ
+: &nbsp;
+
+```
+カスタム
+```
+
+コマンド
+: &nbsp;
+
+```
+texworks --position=%l
+```
+
+を設定します．<br>
+
+Okular 上で Shift + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
