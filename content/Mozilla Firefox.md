@@ -23,22 +23,24 @@ Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 
 ### 派生版 {#qf4f5dc1}
 
+#### Windows {#e6087dd8}
+
+- [Pale Moon](http://www.palemoon.org/)
 - [Waterfox](http://www.waterfoxproject.org/)
 
 ### [pdf.js](http://mozilla.github.com/pdf.js/) <a id="pdfjs"></a> {#n3aa2497}
 
 pdf.js は JavaScript で書かれた PDF Viewer です．<br>
-Firefox 15 で PDF Viewer が組み込まれました．<br>
-Firefox 19 で PDF Viewer がデフォルトで有効になりました．<br>
+Firefox 19 以降は PDF Viewer がデフォルトで有効になっています．<br>
 
 - [pdf.js](http://mozilla.github.com/pdf.js/)
 - [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
 
 #### 設定方法 {#u5cf20d8}
 
-Mozilla Firefox 19.0 以降ではデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
+Mozilla Firefox 19.0 以降はデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
 
-Mozilla Firefox 19.0 よりも前のバージョンでは Mozilla Firefox のアドレスバーに
+PDF Viewer が有効になっていない場合は Mozilla Firefox のアドレスバーに
 
 ```
 about:config
