@@ -31,20 +31,35 @@ GPL
 
 [glad's&nbsp;contents](http://opendesktop.org/usermanager/search.php?username=glad&action=contents) を参照．<br>
 
-### ダウンロード/インストール {#nc36e2d6}
+## ダウンロード/インストール {#nc36e2d6}
 
-#### Arch Linux {#q1ca3262}
+### Arch Linux {#q1ca3262}
 
 - [https://aur.archlinux.org/packages/pdfviewer/](https://aur.archlinux.org/packages/pdfviewer/)
 
-<!-- *SyncTeX [#x552ffb4] -->
-<!-- **inverse search [#uf48aa9b] -->
-<!--  -->
-<!-- [Tools]-[Settings]-[Configure PdfViewer...] -->
-<!--  -->
-<!-- TeXworks の場合は~ -->
-<!-- Editor の項目に -->
-<!-- texworks - -position=%l %f -->
-<!-- を設定します．~ -->
-<!--  -->
-<!-- PdfViewer 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．~ -->
+## SyncTeX {#x552ffb4}
+
+### forward search {#z9f74b60}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+
+```
+$ pdfviewer "file:hoge.pdf#src:30 hoge.tex"
+```
+
+のように実行します．<br>
+
+### inverse search {#uf48aa9b}
+
+\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
+
+TeXworks の場合は<br>
+Editor の項目に
+
+```
+texworks --position=%l "%f"
+```
+
+を設定します．<br>
+
+PdfViewer 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
