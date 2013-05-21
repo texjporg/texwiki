@@ -66,7 +66,7 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 
 ***
 
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]\[ ◀ \]\[ ▶ \]</ins></span><br>
 　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
 　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
 　　　　Track recently used:　　　　　　　　　☐<br>
@@ -74,7 +74,10 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
 　　　　Synchronize presentation:　　　　　☐<br>
-　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
+　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
 　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
 
 ***
@@ -106,7 +109,7 @@ texworks --position=%2 "%1"
 
 ***
 
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]\[ ◀ \]\[ ▶ \]</ins></span><br>
 　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
 　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
 　　　　Track recently used:　　　　　　　　　☐<br>
@@ -114,7 +117,10 @@ texworks --position=%2 "%1"
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
 　　　　Synchronize presentation:　　　　　☐<br>
-　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
+　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[◆\]</ins><br>
+　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
 　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
 
 ***
