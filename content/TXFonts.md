@@ -20,7 +20,7 @@ pukiwiki: "TXFonts"
 
 ### News {#s0ef87dd}
 
-- \[2013-03-29\] newtx 1.09
+- \[2013-05-19\] newtx 1.10
 
 ### インストール {#va9608e1}
 
