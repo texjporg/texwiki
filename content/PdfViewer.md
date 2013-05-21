@@ -36,3 +36,15 @@ GPL
 #### Arch Linux {#q1ca3262}
 
 - [https://aur.archlinux.org/packages/pdfviewer/](https://aur.archlinux.org/packages/pdfviewer/)
+
+<!-- *SyncTeX [#x552ffb4] -->
+<!-- **inverse search [#uf48aa9b] -->
+<!--  -->
+<!-- [Tools]-[Settings]-[Configure PdfViewer...] -->
+<!--  -->
+<!-- TeXworks の場合は~ -->
+<!-- Editor の項目に -->
+<!-- texworks - -position=%l %f -->
+<!-- を設定します．~ -->
+<!--  -->
+<!-- PdfViewer 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．~ -->
