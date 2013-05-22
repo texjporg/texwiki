@@ -295,19 +295,6 @@ $ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
 ```
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
-ps2pdf で
-
-```
-Error: /invalidfileaccess in /findfont
-```
-
-のエラーが発生して PS ファイルが PDF ファイルに変換できない場合は
-
-```
-$ ps2pdf -dDELAYSAFER hoge.ps
-```
-
-として変換します．
 
 ## [Evince](/Evince/) {#m440464c}
 
