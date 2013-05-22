@@ -85,43 +85,96 @@ Windows, OS X, Linux
 
 を参照．<br>
 
-### [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin) {#p2206363}
+### [gedit-latex](https://git.gnome.org/browse/gedit-latex/) {#p2206363}
 
-gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．インストール方法は [README](https://git.gnome.org/browse/gedit-latex/tree/README) を参照してください．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．<br>
-
-- [gedit-latex](https://live.gnome.org/Gedit/LaTeXPlugin)
-    <!-- - -[[gedit-latex team:http://sourceforge.net/project/memberlist.php?group_id=204144]] -->
-
-- [https://git.gnome.org/browse/gedit-latex](https://git.gnome.org/browse/gedit-latex)
+- [https://git.gnome.org/browse/gedit-latex/](https://git.gnome.org/browse/gedit-latex/)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
-- [Ubuntu 12.10: geditのプラグインを導入](http://blog.livedoor.jp/ti5942/archives/7573141.html)
+- [https://live.gnome.org/Gedit/LaTeXPlugin](https://live.gnome.org/Gedit/LaTeXPlugin)
+- [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
 
-### [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin) {#uc9a113c}
+gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．<br>
+LaTeX Plugin の \[設定(P)\] で LaTeX Plugin で使用する Tools の設定ができます．<br>
+Tools の項目の LaTeX → PDF を選択して \[プロパティ(P)\] をクリックします．<br>
 
+LaTeX → PDF はデフォルトでは
+
+```
+rubber --inplace --maxerr -1 --short --force --warn all --pdf "$filename"
+gvfs-open "$shortname.pdf"
+```
+
+に設定されています．<br>
+これらを \[削除(R)\] して<br>
+
+```
+latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+```
+
+を \[追加(A)\] して設定します．<br>
+LaTeX → PDF は \[ツール(T)\]-\[LaTeX → PDF\] で実行できます．<br>
+\[表示(V)\]-\[ボトムパネル(B)\] の \[Tools\] タブをクリックすると Job (処理状況) が表示されます．<br>
+出力した PDF ファイルを表示したい場合は SyncTeX プラグインを使用して表示してください．<br>
+
+### [gedit-plugins (SyncTeX)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex) {#uc9a113c}
+
+- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex)
+    <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
+
+- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
+
+SyncTeX プラグインは gedit-plugins に収録されています．<br>
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．<br>
 \[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．<br>
 
-forward search は gedit で Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
+forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
 
-forward search をメニューまたはショートカットキーから実行する場合は
+gedit 3.8.2 の起動時に
 
 ```
-TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
+Traceback (most recent call last):
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 251, in <lambda>
+    self.window.connect("tab-added", lambda window, tab: self.add_helper(tab.get_view(), window)),
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 276, in add_helper
+    helper = SynctexViewHelper(view, window, self)
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 99, in __init__
+    self.update_location()
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 152, in update_location
+    modeline_output_file = self.get_output_file()
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
+    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
+TypeError: unsupported operand type(s) for +: 'range' and 'range'
+Traceback (most recent call last):
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 112, in on_saved_or_loaded
+    self.update_location()
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 152, in update_location
+    modeline_output_file = self.get_output_file()
+  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
+    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
+TypeError: unsupported operand type(s) for +: 'range' and 'range'
 ```
 
-と出て forward search できないかもしれません．
+といったエラーメッセージが出力される場合は /usr/lib/gedit/plugins/synctex/synctex.py を修正すれば forward and inverse search が動作するようになります．<br>
 
-- [gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
-- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
-- [Ubuntu 12.10: gedit(3.6.0)でSyncTeX](http://blog.livedoor.jp/ti5942/archives/7580530.html)
-- [Ubuntu 12.10: Search with SyncTeX(gedit and Evince 3.6.0)](http://blog.livedoor.jp/ti5942/archives/7575570.html)
-- [Gedit: Forward search fails](https://bbs.archlinux.org/viewtopic.php?id=129940)
+```
+for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
+```
 
-### Code comment {#q8313fab}
+を
 
-Code comment を使用するとコメントアウト，コメントアウトの解除ができます．<br>
+```
+for i in list(range(min(3,line_count))) + list(range(max(0,line_count - 3), line_count)):
+```
+
+に修正します．<br>
+
+### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
+
+- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment)
+
+Code comment プラグインは gedit-plugins に収録されています．<br>
+Code comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．<br>
 \[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Code comment にチェックをいれます．<br>
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
@@ -554,6 +607,19 @@ pdfviewer "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 texworks "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
+#### MuPDF {#cdaf098f}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+mupdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
