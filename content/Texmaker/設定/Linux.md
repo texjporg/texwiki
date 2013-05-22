@@ -18,7 +18,7 @@ pukiwiki: "Texmaker/設定/Linux"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
+組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Bib(la)tex の bibtex を pbibtex または upbibtex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
@@ -88,7 +88,7 @@ LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex 
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2o_k_u_l_a_r %.pdf @ !/#.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>qpdfview --unique %.pdf</ins> または <ins>texmaker2qpdfview %.pdf #.tex @</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>texworks %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+<ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2okular %.pdf @ !/#.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>qpdfview --unique %.pdf</ins> または <ins>texmaker2qpdfview %.pdf #.tex @</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>texworks %.pdf</ins> または <ins>mupdf %.pdf</ins> または <ins>firefox -new-window %.pdf</ins> または <ins>chromium --new-window %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -120,7 +120,7 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプショ�
 
 ***
 
-- texmaker2o_k_u_l_a_r
+- texmaker2okular
 
 ***
 
@@ -132,8 +132,8 @@ okular --unique "file:$1#src:$2 $3"
 ***
 
 ```
-$ chmod +x texmaker2o_k_u_l_a_r
-$ sudo cp -p texmaker2o_k_u_l_a_r /usr/local/bin
+$ chmod +x texmaker2okular
+$ sudo cp -p texmaker2okular /usr/local/bin
 ```
 
 ### forward search {#rb0da469}
@@ -141,7 +141,7 @@ $ sudo cp -p texmaker2o_k_u_l_a_r /usr/local/bin
 forward search は PDFビューアに
 
 ```
-texmaker2o_k_u_l_a_r %.pdf @ !/#.tex
+texmaker2okular %.pdf @ !/#.tex
 ```
 
 です．
