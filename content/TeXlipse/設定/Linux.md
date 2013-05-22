@@ -544,6 +544,45 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
+#### [MuPDF](/MuPDF/) {#w826ebb6}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>MuPDF</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>mupdf "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
 #### [Mozilla Firefox](</Mozilla Firefox/>) (pdf.js) {#f3e29620}
 
 ***
@@ -558,6 +597,45 @@ pukiwiki: "TeXlipse/設定/Linux"
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mozilla Firefox</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>firefox -new-window "&#x25;file"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+#### [Chrome PDF Viewer](</Google Chrome/#wfd819f9>) {#id588cc6}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Chrome PDF Viewer</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>chromium --new-window "&#x25;file"</ins><br>
 
 <br>
 
