@@ -342,7 +342,9 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
         ("qpdfview --unique %r.pdf &" "%r.pdf")
         ("pdfviewer %r.pdf &" "%r.pdf")
         ("texworks %r.pdf &" "%r.pdf")
+        ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
+        ("chromium --new-window %r.pdf &" "%r.pdf")
         ("acroread %r.pdf &" "%r.pdf")
         ("pdfopen -viewer ar9-tab %r.pdf &" "%r.pdf")))
 
