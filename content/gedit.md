@@ -571,6 +571,19 @@ firefox -new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
+#### Chrome PDF Viewer {#l9d9720f}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+chromium --new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
 #### acroread {#h5982543}
 
 ***
