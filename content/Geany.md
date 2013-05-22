@@ -83,7 +83,11 @@ V<ins>i</ins>ew PDF File
 
 : texworks "%e.pdf"
 
+: mupdf "%e.pdf"
+
 : firefox -new-window "%e.pdf"
+
+: chromium --new-window "%e.pdf"
 
 : acroread "%e.pdf"
 
