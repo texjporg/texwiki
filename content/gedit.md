@@ -170,19 +170,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'range' and 'range'
 ```
 
-といったエラーメッセージが出力される場合は /usr/lib/gedit/plugins/synctex/synctex.py を修正すれば forward and inverse search が動作するようになります．<br>
-
-```
-for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
-```
-
-を
-
-```
-for i in list(range(min(3,line_count))) + list(range(max(0,line_count - 3), line_count)):
-```
-
-に修正します．<br>
+といったエラーメッセージが出力される場合は /usr/lib/gedit/plugins/synctex/synctex.py を [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば forward and inverse search が動作するようになります．<br>
 
 ### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
 
