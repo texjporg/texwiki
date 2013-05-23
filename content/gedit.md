@@ -145,7 +145,14 @@ SyncTeX プラグインを使用すると gedit と Evince の間で forward and
 forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
 
-gedit の起動時に
+gedit のメニューから \[ツール(T)\]-\[Forward Search\] を実行して
+
+```
+TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
+```
+
+といったエラーメッセージが出力されたり<br>
+gedit の起動時に<br>
 
 ```
 Traceback (most recent call last):
@@ -170,7 +177,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'range' and 'range'
 ```
 
-といったエラーメッセージが出力される場合は /usr/lib/gedit/plugins/synctex/synctex.py を [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば forward and inverse search が動作するようになります．<br>
+といったエラーメッセージが出力されたりする場合は /usr/lib/gedit/plugins/synctex/synctex.py を [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば forward and inverse search が動作するようになります．<br>
 
 ### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
 
@@ -182,6 +189,12 @@ Code comment プラグインを使用するとコメントアウト，コメン�
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
+### コードスニペット {#t852fd66}
+
+コードスニペットは，よく使用する文字列をすばやく挿入するためのプラグインです．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の コードスニペットにチェックをいれます．<br>
+\[ツール(T)\]-\[スニペットの管理...\] からコードスニペットの設定ができます．<br>
+
 ### 外部ツール {#qa44ee46}
 
 外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．<br>
@@ -191,6 +204,8 @@ Code comment プラグインを使用するとコメントアウト，コメン�
 編集(E): の項目にシェルスクリプトを追加します．<br>
 適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
+\[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．<br>
+以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 Latexmk は Latexmk Version 4.35 で動作確認しています．<br>
 
 #### pdfpLaTeX {#pcd18d0c}
@@ -201,8 +216,7 @@ Latexmk は Latexmk Version 4.35 で動作確認しています．<br>
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+ptex2pdf -l -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -237,8 +251,7 @@ ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvipdfmx "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+ptex2pdf -l -u -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
