@@ -43,6 +43,10 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - TeX Live 2013
 
+### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#rde4f3be}
+
+- [TeX Live 2013 for Debian](http://www.preining.info/blog/2013/05/tex-live-2013-for-debian/)
+
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
 
 - [Debian Wheezy amd64でLaTeX環境を構築する](http://linux.tsutomuonoda.com/debian-wheezy-amd64-latex/)
