@@ -45,6 +45,8 @@ pukiwiki: "Android"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
+- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert)
+    - [anhoavu/TeXpert · GitHub](https://github.com/anhoavu/TeXpert)
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
