@@ -45,16 +45,18 @@ Geany はデフォルトで LaTeX のビルドに対応しています．
 
 \[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
 
+以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+
 #### LaTeX コマンド {#z6996bd9}
 
 LaTeX -> <ins>P</ins>DF
 : &nbsp;
 
-: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+: ptex2pdf -l -ot '-synctex=1 --file-line-error-style' "%f"
 
 : platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -g > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
 
-: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvipdfmx "%e.dvi"
+: ptex2pdf -l -u -ot '-synctex=1 --file-line-error-style' "%f"
 
 : uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
 
