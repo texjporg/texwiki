@@ -107,14 +107,29 @@ gvfs-open "$shortname.pdf"
 に設定されています．<br>
 これらを \[削除(R)\] して<br>
 
+TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用する場合は
+
+```
+ptex2pdf -l -ot '-synctex=1' "$filename"
+```
+
+Latexmk を使用する場合は
+
 ```
 latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
 を \[追加(A)\] して設定します．<br>
+出力した PDF ファイルを表示するようにしたい場合は
+
+```
+ evince "$shortname.pdf"
+```
+
+も \[追加(A)\] してください．<br>
 LaTeX → PDF は \[ツール(T)\]-\[LaTeX → PDF\] で実行できます．<br>
 \[表示(V)\]-\[ボトムパネル(B)\] の \[Tools\] タブをクリックすると Job (処理状況) が表示されます．<br>
-出力した PDF ファイルを表示したい場合は SyncTeX プラグインを使用して表示してください．<br>
+forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．<br>
 
 ### [gedit-plugins (SyncTeX)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex) {#uc9a113c}
 
@@ -130,7 +145,7 @@ SyncTeX プラグインを使用すると gedit と Evince の間で forward and
 forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
 
-gedit 3.8.2 の起動時に
+gedit の起動時に
 
 ```
 Traceback (most recent call last):
