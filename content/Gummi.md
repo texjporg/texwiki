@@ -52,12 +52,22 @@ Windows, Linux
 デフォルトでは TeXLive with PdfTeX になっています．<br>
 日本語を使用する場合は TeXLive with XeTeX を選択します．<br>
 
+#### Typesetter options {#e0f379d4}
+
+デフォルトでは SyncTeX がオフになっています．<br>
+SyncTeX を使用する場合は Enable SyncTeX をチェックします．<br>
+
 ## 使い方 {#r032afe0}
 
 ### Live preview {#y2098a5e}
 
 エディタに文書を記述すると Live preview で PDF ファイルを表示してくれます．<br>
 文書にエラーがあると Live preview されないのでその場合はエラーを修正してください．<br>
+
+### Sync Preview with Editor {#u5448fb5}
+
+\[<ins>V</ins>iew\]-\[Sync Preview with Editor\] をチェックします．<br>
+エディタに文書を記述すると自動的にスクロールして対応する PDF ファイルの場所に移動してくれます．<br>
 
 ## 関連リンク {#if3da882}
 
