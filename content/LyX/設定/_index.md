@@ -180,9 +180,9 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 LaTeX (pLaTeX) で書き出しするときに出力したい文字コードを選択してください．<br>
 
 - Japanese (non-CJK) (UTF8)
-- 日本語(CJK不使用) (EUC-JP)
-- 日本語(CJK不使用) (JIS)
-- 日本語(CJK不使用) (SJIS)
+- 日本語(pLaTeX) (EUC-JP)
+- 日本語(pLaTeX) (JIS)
+- 日本語(pLaTeX) (SJIS)
 
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
 出力した文書が文字化けしてしまう場合は (u)platex, (u)pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
@@ -345,7 +345,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが Japanese (non-CJK) (日本語(CJK不使用)) の場合は既定値は DVI です．<br>
+文字コードが Japanese (non-CJK) (日本語(pLaTeX)) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -361,7 +361,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (ps2pdf) {#s335ea5f}
 
-文字コードが Japanese (non-CJK) (日本語(CJK不使用)) の場合は既定値は DVI です．<br>
+文字コードが Japanese (non-CJK) (日本語(pLaTeX)) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -377,7 +377,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (LuaTeX) {#g2e3c1cf}
 
-文字コードが ユニコード(XeTeX) (UTF-8) の場合は既定値は PDF (pdflatex) です．<br>
+文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．<br>
 LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -393,7 +393,7 @@ LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (L
 
 #### PDF (XeTeX) {#zd1cca72}
 
-文字コードが ユニコード(XeTeX) (UTF-8) の場合は既定値は PDF (pdflatex) です．<br>
+文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．<br>
 XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -791,7 +791,7 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 [^20]: クラスが変更された時にクラスオプションを既定値にする
 [^21]: どの言語パッケージをLyXが使うべきか選択してください
 [^22]: 言語パッケージを読み込むコマンドを入力してください (既定値：babel) 
-[^23]: OpenTypeやTrueTypeフォントを直接使用する (要XeTeXないしLuaTeX) 
+[^23]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
 [^24]: 文書の既定フォント族を選択してください
 [^25]: フォントエンコーディングを指定します (例: T1)。
 [^26]: ローマン (セリフ) 体の書体を選んでください
