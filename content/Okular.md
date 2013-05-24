@@ -51,7 +51,7 @@ KDE
 
 ### Fedora {#mf21deef}
 
-- [Fedora Package Database -- okular](https://admin.fedoraproject.org/pkgdb/acls/name/okular)
+- [https://apps.fedoraproject.org/packages/okular](https://apps.fedoraproject.org/packages/okular)
 
 ### openSUSE {#w345a41b}
 
