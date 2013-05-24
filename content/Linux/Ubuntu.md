@@ -99,132 +99,11 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 
 ### TeX Live 2013 のインストール {#hf3fd9de}
 
-TeX Live 2013 をインストールします．<br>
-
-```
-$ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
-$ tar xvf install-tl-unx.tar.gz
-$ cd install-tl*
-$ sudo ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-```
-
-TeX Live 2013 がリリースされていない場合は TeX Live 2013 pretest をインストールします．<br>
-
-```
-$ wget http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
-$ tar xvf install-tl-unx.tar.gz
-$ cd install-tl*
-$ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
-```
-
-```
-======================> TeX Live installation procedure <=====================
-
-=======> Note: Letters/digits in <angle brackets> indicate menu items <=======
-=======>       for commands or configurable options                   <=======
-
- Detected platform: x86_64 with GNU/Linux
- 
- <B> platforms: 1 out of 17
-
- <S> installation scheme (scheme-full)
-     84 collections out of 85, disk space required: 3845 MB
-
- Customizing installation scheme:
-   <C> standard collections
-   <L> language collections
-
- <D> directories:
-   TEXDIR (the main TeX directory):
-     /usr/local/texlive/2013
-   TEXMFLOCAL (directory for site-wide local files):
-     /usr/local/texlive/texmf-local
-   TEXMFSYSVAR (directory for variable and automatically generated data):
-     /usr/local/texlive/2013/texmf-var
-   TEXMFSYSCONFIG (directory for local config):
-     /usr/local/texlive/2013/texmf-config
-   TEXMFVAR (personal directory for variable and automatically generated data):
-     ~/.texlive2013/texmf-var
-   TEXMFCONFIG (personal directory for local config):
-     ~/.texlive2013/texmf-config
-   TEXMFHOME (directory for user-specific files):
-     ~/texmf
-
- <O> options:
-   [ ] use letter size instead of A4 by default
-   [X] allow execution of restricted list of programs via \write18
-   [X] create all format files
-   [X] install macro/font doc tree
-   [X] install macro/font source tree
-
- <V> set up for portable installation
-
-Actions:
- <I> start installation to hard disk
- <H> help
- <Q> quit
-
-Enter command: I
-```
-
-I を入力してインストールを開始します．<br>
-サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
-エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
-再開できない場合は接続先を変更するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
-
-```
-$ sudo ./install-tl --profile installation.profile
-ABORTED INSTALLATION FOUND: installation.profile
-Do you want to continue with the exact same settings as before (y/N): y
-```
-
-インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
-
-- 32 bit 版の場合
-
-    ```
-    $ sudo /usr/local/texlive/2013/bin/i386-linux/tlmgr path add
-    ```
-
-- 64 bit 版の場合
-
-    ```
-    $ sudo /usr/local/texlive/2013/bin/x86_64-linux/tlmgr path add
-    ```
+[Linux#TeX Live 2013 のインストール](/Linux/#texlive2013) を参照．<br>
 
 #### texmf.cnf の編集 {#e29d5a24}
 
-[/usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/web2c/texmf.cnf?view=markup) を編集します．<br>
-編集には [Vim](/Vim/) を使用します．<br>
-Vim の使い方が分からない場合は [Emacs](/Emacs/) や [gedit](/gedit/) でもかまいません．<br>
-
-```
-$ sudo vim /usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf
-```
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-アップデートによって texmf.cnf が上書きされ設定がリセットされてしまう場合は /usr/local/texlive/texmf-local/web2c/texmf.cnf に設定を記述しておけば OK です．<br>
+[Linux#texmf.cnf の編集](/Linux/#texmfcnf) を参照．<br>
 
 ### ptex2pdf (platex + dvipdfmx) で IPAex フォントの埋め込み {#j5ae0e71}
 
@@ -298,7 +177,91 @@ ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込ま�
 
 ## [Evince](/Evince/) {#m440464c}
 
+```
+$ sudo apt-get install evince
+```
+
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+
+## [Texmaker](/Texmaker/) {#z2142745}
+
+```
+$ sudo apt-get install texmaker
+$ sudo apt-get install ibus-qt4
+$ sudo apt-get install qt4-qtconfig
+```
+
+[Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
+
+## [LyX](/LyX/) {#s7886348}
+
+```
+$ sudo apt-get install lyx
+```
+
+最新版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
+
+## [TeXworks](/TeXworks/) {#veed3c44}
+
+```
+$ sudo apt-get install texworks
+```
+
+最新版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+
+## Gummi {#a1b3d45b}
+
+```
+$ sudo apt-get install gummi
+```
+
+## LaTeXila {#v3e14a29}
+
+```
+$ sudo apt-get install latexila
+```
+
+## [Emacs](/Emacs/) {#s0b6fa60}
+
+```
+$ sudo apt-get install emacs24
+```
+
+## [Vim](/Vim/) {#a5b8fa0b}
+
+```
+$ sudo apt-get install vim
+```
+
+## [gedit](/gedit/) {#ofba42a2}
+
+```
+$ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
+```
+
+## [Geany](/Geany/) {#zed31359}
+
+```
+$ sudo apt-get install geany geany-plugins
+```
+
+## [Inkscape](/Inkscape/) {#u785615b}
+
+```
+$ sudo apt-get install inkscape pstoedit python-lxml
+```
+
+eqtexsvg を最新版に更新します．<br>
+
+```
+$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+$ tar xvf eqtexsvg.tar.gz
+$ chmod +x eqtexsvg.py
+$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
+$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
+```
+
+Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
 
 ## 関連リンク {#ofcc84e4}
 
