@@ -12,7 +12,7 @@ pukiwiki: "Evince/fwdevince"
 ## fwdevince とは {#h085e412}
 
 fwdevince は Linux の Evince で forward and inverse search を行うためのツールです．<br>
-TeX Live 2013, Evince 3.8.0, Python 3.3.2 または Python 2.7.5 で動作確認しています．<br>
+TeX Live 2013, Evince 3.8.2, Python 3.3.2 または Python 2.7.5 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
 - fwdevince をうまく動作するように修正する
