@@ -63,7 +63,7 @@ KDE
 
 ### Fedora {#zdfde6e5}
 
-- [Fedora Package Database -- kile](https://admin.fedoraproject.org/pkgdb/acls/name/kile)
+- [https://apps.fedoraproject.org/packages/kile](https://apps.fedoraproject.org/packages/kile)
 
 ### openSUSE {#d4893a59}
 
