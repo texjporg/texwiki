@@ -65,7 +65,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ### Fedora {#jbf882d0}
 
-- [Fedora Package Database -- evince](https://admin.fedoraproject.org/pkgdb/acls/name/evince)
+- [https://apps.fedoraproject.org/packages/evince](https://apps.fedoraproject.org/packages/evince)
 
 ### openSUSE {#rd040fd0}
 
