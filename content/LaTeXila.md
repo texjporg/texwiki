@@ -49,7 +49,7 @@ GNOME
 
 ## 不具合 {#o7b20b21}
 
-### LaTeXila 2.8.1 で \section{hoge} で hoge を削除して ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) {#xf55798b}
+### LaTeXila 2.8.1 で \section{hoge} で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) {#xf55798b}
 
 LaTeXila 2.8.1 で
 
@@ -57,7 +57,7 @@ LaTeXila 2.8.1 で
 \section{hoge}
 ```
 
-で hoge を削除して ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．
+で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．
 
 ## Build Tool {#t1320044}
 
