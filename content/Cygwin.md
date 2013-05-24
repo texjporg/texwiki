@@ -276,6 +276,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 - [ckw-mod](http://deflis.github.com/ckw-mod/)
     - [ckw-mod を使う](http://yuu0t.hatenablog.com/entry/2012/01/12/220801)
 - [mlterm](http://mlterm.sourceforge.net/)
+- [sakura](https://launchpad.net/sakura)
 - [evilvte](http://www.calno.com/evilvte/)
 
 ## 関連リンク {#bc8cfcc3}
