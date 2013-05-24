@@ -183,6 +183,12 @@ $ sudo apt-get install evince
 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
+## [MuPDF](/MuPDF/) {#s8c9b663}
+
+```
+$ sudo apt-get install mupdf
+```
+
 ## [Texmaker](/Texmaker/) {#z2142745}
 
 ```
