@@ -50,7 +50,11 @@ Linux
 
 ### Fedora {#qa034e43}
 
-- [Fedora Package Database -- qpdfview](https://admin.fedoraproject.org/pkgdb/acls/name/qpdfview)
+- [https://apps.fedoraproject.org/packages/qpdfview](https://apps.fedoraproject.org/packages/qpdfview)
+
+### openSUSE {#e541d6b9}
+
+- [http://software.opensuse.org/package/qpdfview](http://software.opensuse.org/package/qpdfview)
 
 ### Arch Linux {#ua5dc612}
 
