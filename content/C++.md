@@ -11,3 +11,4 @@ pukiwiki: "C++"
 
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
+- [本の虫](http://cpplover.blogspot.jp/)
