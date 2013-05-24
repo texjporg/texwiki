@@ -177,7 +177,35 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'range' and 'range'
 ```
 
-といったエラーメッセージが出力されたりする場合は /usr/lib/gedit/plugins/synctex/synctex.py を [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば forward and inverse search が動作するようになります．<br>
+または
+
+```
+Traceback (most recent call last):
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 251, in <lambda>
+    self.window.connect("tab-added", lambda window, tab: self.add_helper(tab.get_view(), window)),
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 276, in add_helper
+    helper = SynctexViewHelper(view, window, self)
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 99, in __init__
+    self.update_location()
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 152, in update_location
+    modeline_output_file = self.get_output_file()
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
+    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
+TypeError: unsupported operand type(s) for +: 'range' and 'range'
+Traceback (most recent call last):
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 112, in on_saved_or_loaded
+    self.update_location()
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 152, in update_location
+    modeline_output_file = self.get_output_file()
+  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
+    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
+TypeError: unsupported operand type(s) for +: 'range' and 'range'
+```
+
+といったエラーメッセージが出力されたりする場合は<br>
+/usr/lib/gedit/plugins/synctex/synctex.py または /usr/lib64/gedit/plugins/synctex/synctex.py を<br>
+[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば<br>
+forward and inverse search が動作するようになります．<br>
 
 ### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
 
@@ -518,6 +546,54 @@ upbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 保存(S):
 : 編集中のドキュメント
 
+#### BibTeX {#x4e24d45}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+bibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### BibTeXu {#k577f678}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+bibtexu "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### Biber {#h912f5e0}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+biber "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
 #### Mendex {#p50c6431}
 
 ***
@@ -527,6 +603,38 @@ upbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 mendex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### MakeIndex {#h36cb82d}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+makeindex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### TeXindy {#q22d091b}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+texindy "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 ```
 
 ***
