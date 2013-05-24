@@ -39,8 +39,6 @@ GNOME
     - [NEWS](https://github.com/swilmet/latexila/blob/master/NEWS)
     - [コミットログ](https://github.com/swilmet/latexila/commits/master)
 
-LaTeXila 2.5.3 で SyncTeX に対応しました．<br>
-
 ### インストール {#scad45f9}
 
 [Installation](http://projects.gnome.org/latexila/#installation) を参照．
@@ -48,6 +46,18 @@ LaTeXila 2.5.3 で SyncTeX に対応しました．<br>
 <!-- ***OpenBSD [#v124e0d8] -->
 <!--  -->
 <!-- -http://openports.se/x11/gnome/latexila -->
+
+## 不具合 {#o7b20b21}
+
+### LaTeXila 2.8.1 で \section{hoge} で hoge を削除して ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) {#xf55798b}
+
+LaTeXila 2.8.1 で
+
+```
+\section{hoge}
+```
+
+で hoge を削除して ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．
 
 ## Build Tool {#t1320044}
 
@@ -68,3 +78,15 @@ Post Processor
 : latexmk
 
 \[Build\]-\[Latexmk-pdfpLaTeX\] で実行できます
+
+## Evince との連携 {#t97f1692}
+
+LaTeXila 2.5.3 以降は SyncTeX に対応しています．<br>
+
+### forward search {#o187dfd8}
+
+\[Search\]-\[Search Forward\] または Ctrl+Alt+F で forward search ができます．<br>
+
+### inverse search {#tc58bb85}
+
+Evince 上で Ctrl + 左クリックを実行すると TeX 文書の対応する行にジャンプします．<br>
