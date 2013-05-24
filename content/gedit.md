@@ -203,7 +203,8 @@ TypeError: unsupported operand type(s) for +: 'range' and 'range'
 ```
 
 といったエラーメッセージが出力されたりする場合は<br>
-/usr/lib/gedit/plugins/synctex/synctex.py または /usr/lib64/gedit/plugins/synctex/synctex.py を<br>
+/usr/lib/gedit/plugins/synctex/synctex.py または<br>
+/usr/lib64/gedit/plugins/synctex/synctex.py を<br>
 [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば<br>
 forward and inverse search が動作するようになります．<br>
 
