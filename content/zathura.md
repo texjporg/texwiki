@@ -74,7 +74,7 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 ### Fedora {#f03f2bfa}
 
-- [Fedora Package Database -- zathura](https://admin.fedoraproject.org/pkgdb/acls/name/zathura)
+- [https://apps.fedoraproject.org/packages/zathura](https://apps.fedoraproject.org/packages/zathura)
 
 ### openSUSE {#p01e8065}
 
