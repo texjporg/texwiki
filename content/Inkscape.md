@@ -163,12 +163,6 @@ LaTeX と連携するためのエクステンション．<br>
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
 - [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
-- [InkscapeをLaTeXと一緒に使う](http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html)
-    <!-- - -http://sora-blue.net/~shogo82148/memo/soft/inkscape/with-LaTeX.html -->
-    <!-- - -http://sora-blue.net/~shogo82148/i/memo/soft/inkscape/with-LaTeX.html -->
-    <!-- -[[Inkscape で LaTeX の数式を入力する:http://www.empitsu.com/wp/?p=24]] -->
-    <!-- -[[Inkscape で LaTeX の数式を入力する（続編）:http://www.empitsu.com/wp/?p=85]] -->
-    <!-- -[[Windows版の Inkscape で LaTeX の数式を入力する:http://d.hatena.ne.jp/hiroki777/20080221]] -->
 
 #### インストール {#v77ed75c}
 
