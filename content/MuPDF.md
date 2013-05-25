@@ -120,7 +120,7 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 
 ### Fedora {#k5d2c514}
 
-- [Fedora Package Database -- mupdf](https://admin.fedoraproject.org/pkgdb/acls/name/mupdf)
+- [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
 
 ### openSUSE {#sa86e80c}
 
