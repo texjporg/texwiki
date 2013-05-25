@@ -218,6 +218,14 @@ Code comment プラグインを使用するとコメントアウト，コメン�
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
+### [gedit-plugins (Bracket Completion)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion) {#af44b88e}
+
+- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion](https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion)
+
+Bracket Completion プラグインは gedit-plugins に収録されています．<br>
+Bracket Completion プラグインを使用すると閉じかっこを自動的に追加してくれます．<br>
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Bracket Completion にチェックをいれます．<br>
+
 ### コードスニペット {#t852fd66}
 
 コードスニペットは，よく使用する文字列をすばやく挿入するためのプラグインです．<br>
