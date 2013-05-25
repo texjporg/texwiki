@@ -193,27 +193,41 @@ $ sudo apt-get install mupdf
 
 ```
 $ sudo apt-get install texmaker
-$ sudo apt-get install ibus-qt4
 $ sudo apt-get install qt4-qtconfig
+```
+
+インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+
+```
+$ sudo apt-get install ibus-qt4
 ```
 
 [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
 
 ## [LyX](/LyX/) {#s7886348}
 
+最新版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
+
 ```
 $ sudo apt-get install lyx
 ```
 
-最新版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
-
 ## [TeXworks](/TeXworks/) {#veed3c44}
+
+最新版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
 
 ```
 $ sudo apt-get install texworks
+$ sudo apt-get install qt4-qtconfig
 ```
 
-最新版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+
+```
+$ sudo apt-get install ibus-qt4
+```
+
+[かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Ubuntu)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
 
 ## Gummi {#a1b3d45b}
 
