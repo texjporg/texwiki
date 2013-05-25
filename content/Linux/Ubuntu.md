@@ -59,7 +59,7 @@ Ubuntu 12.10 と同様の方法でインストールできます．<br>
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
-/usr/share/texmf/web2c/texmf.cnf を編集します．
+/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
