@@ -15,9 +15,10 @@ pukiwiki: "Geany"
 
 ## Geany とは {#u4d63bea}
 
-Geany は GTK+ を使用した IDE の機能を持つテキストエディタです．<br>
-Geany は 軽くて高速な IDE としても使用できます．<br>
-Geany は LaTeX の編集に対応しており，Shift_JIS/CP932/ISO-2022-JP/EUC-JP/UTF-8 等の文字コードに対応しています．<br>
+Geany は GTK+ を使用した高速で軽量な IDE です．<br>
+Geany は IDE の機能を持つテキストエディタとしても使用出来ます．<br>
+Geany は LaTeX の編集に対応しています．<br>
+Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．<br>
 
 - [Geany](http://www.geany.org/)
 - [Geany Portable](http://sourceforge.net/projects/geanyportable/files/)
@@ -41,11 +42,11 @@ Windows, OS X, Linux
 
 ### ビルドコマンドの設定 {#aaa2ae74}
 
-Geany はデフォルトで LaTeX のビルドに対応しています．
-
 \[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
 
+Geany はデフォルトで LaTeX のビルドに対応しています．<br>
 以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+BibTeX や hyperref パッケージなどを使用する場合は latexmk を使用してください．<br>
 
 #### LaTeX コマンド {#z6996bd9}
 
@@ -67,6 +68,22 @@ LaTeX -> <ins>P</ins>DF
 : luajitlatex -synctex=1 --file-line-error-style "%f"
 
 : xelatex -synctex=1 --file-line-error-style "%f"
+
+: latexmk -e '$latex=q/platex -synctex=1 --file-line-error-style/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
+
+: latexmk -e '$latex=q/platex -synctex=1 --file-line-error-style/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "%f"
+
+: latexmk -e '$latex=q/uplatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
+
+: latexmk -e '$latex=q/uplatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "%f"
+
+: latexmk -e '$pdflatex=q/pdflatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf "%f"
+
+: latexmk -e '$pdflatex=q/lualatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "%f"
+
+: latexmk -e '$pdflatex=q/luajitlatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "%f"
+
+: latexmk -e '$pdflatex=q/xelatex -synctex=1 --file-line-error-style/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
@@ -93,9 +110,24 @@ V<ins>i</ins>ew PDF File
 
 : acroread "%e.pdf"
 
+#### ビルドコマンドの使い方 {#da168efd}
+
+> <table>
+> <tbody>
+> <tr><th style="color:#000;background-color:#FE4;text-align:center">メニュー [ビルド(<ins>B</ins>)]</th><th style="color:#000;background-color:#FE4;text-align:center">ツールバー</th><th style="color:#000;background-color:#FE4;text-align:center">ショートカットキー</th><th style="color:#000;background-color:#FE4;text-align:center">機能</th></tr>
+> <tr><td>LaTeX -&gt; <ins>P</ins>DF</td><td>ビルド</td><td>F9</td><td>PDF ファイルの作成</td></tr>
+> <tr><td>V<ins>i</ins>ew PDF File</td><td>実行</td><td>F5</td><td>PDF ファイルを表示</td></tr>
+> </tbody>
+> </table>
+>
+
 ### [GeanyLaTeX](http://frank.uvena.de/en/Geany/geanylatex/) {#scc8a76c}
 
 - [http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX](http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX)
+
+\[ツール(<ins>T</ins>)\]-\[プラグインマネージャ(<ins>P</ins>)\] で GeanyLaTeX にチェックをいれてアクティブにします．<br>
+メニューに \[<ins>L</ins>aTeX\] や \[<ins>B</ins>ibTeX\] が追加されます．<br>
+\[ツール(<ins>T</ins>)\]-\[LaTeXウィザード(<ins>W</ins>)\] で LaTeX 文書を簡単に作成するウィザードを開始できます．<br>
 
 ## 関連リンク {#j4cca0b1}
 
