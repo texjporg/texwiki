@@ -45,16 +45,10 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#rde4f3be}
 
+- [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
 - [TeX Live 2013 for Debian](http://www.preining.info/blog/2013/05/tex-live-2013-for-debian/)
 
-### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
-
-- [Debian Wheezy amd64でLaTeX環境を構築する](http://linux.tsutomuonoda.com/debian-wheezy-amd64-latex/)
-- [Raspberry Pi で遊ぶ (1) &mdash;LaTeX のコンパイルサーバーとして&#8212;](http://skalldan.wordpress.com/2013/02/18/raspberry-pi-%E3%81%A7%E9%81%8A%E3%81%B6-1-latex-%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%97%E3%81%A6/)
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
-- [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
-
-#### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
+#### Debian GNU/Linux sid で TeX Live 2013/Debian のインストール {#b43aa577}
 
 Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
 
@@ -70,7 +64,54 @@ apt-get を使用してインストールしても OK です．<br>
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
-/usr/share/texmf/web2c/texmf.cnf を編集します．
+/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
+
+shell_escape_commands が以下のように記述されていると思います．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+shell_escape_commands を以下のように編集して保存します．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,\
+repstopdf,epspdf,extractbb,\
+```
+
+### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
+
+- [Debian Wheezy amd64でLaTeX環境を構築する](http://linux.tsutomuonoda.com/debian-wheezy-amd64-latex/)
+- [Raspberry Pi で遊ぶ (1) &mdash;LaTeX のコンパイルサーバーとして&#8212;](http://skalldan.wordpress.com/2013/02/18/raspberry-pi-%E3%81%A7%E9%81%8A%E3%81%B6-1-latex-%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%97%E3%81%A6/)
+- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
+- [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
+
+#### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
+
+Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/wheezy/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/wheezy/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
+
+aptitude を使用してインストールしても OK です．<br>
+
+```
+$ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended
+```
+
+apt-get を使用してインストールしても OK です．<br>
+
+```
+$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
+```
+
+/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
