@@ -11,7 +11,7 @@ pukiwiki: "Linux/Linux Mint"
 
 ## [Linux Mint](http://linuxmint.com/) {#f4077eb2}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Official_Linux_Mint_logo.svg/500px-Official_Linux_Mint_logo.svg.png" alt="Linux Mint" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png" alt="Linux Mint" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
