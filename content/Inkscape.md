@@ -159,7 +159,7 @@ LaTeX と連携するためのエクステンション．<br>
 <strong>環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．<br>
 
 [EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
-[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，古いバージョンの場合は修正しないと正しく動作しません．<br>
+[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．<br>
 
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
@@ -204,7 +204,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 とすることで確認できます．
 
-もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成して
+もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成します．<br>
+最新版の eqtexsvg.py (2011-05-17)  を使用する場合は<br>
 
 ```
 class Equation:
@@ -225,7 +226,7 @@ class Equation:
 
 #### 使用方法 {#se15d9b2}
 
-- 環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
+- <strong>環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] から使用可能．
 
 PATH を通しているのに Latex 数式が表示されない場合は，まずコマンド プロンプトから
 
@@ -241,57 +242,6 @@ C:\inkscape>inkscape
 ```
 
 として Inkscape を起動してみてください．
-
-- デフォルトで含まれている eqtexsvg.py (2010-04-04) を使用すると，数式がうまく表示されなかったので eqtexsvg.py の dvips コマンドのオプションを以下のように修正すると表示されました．最新版 (2011-05-17) では修正しなくても表示されました．<br>
-
-    ```
-            #os.system('dvips -q -f -E -D 600 -y 5000 -o "%s" "%s"' % (ps_file, dvi_file))
-            os.system('dvips -q -f -E -Ppdf -o "%s" "%s"' % (ps_file, dvi_file))
-    ```
-
-- eqtexsvg.py は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
-
-    ```
-    C:\inkscape>.\python\python.exe
-    Python 2.6.5 (r265:79096, Mar 19 2010, 21:48:26) [MSC v.1500 32 bit (Intel)] on
-    win32
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> import tempfile
-    >>> tempfile.gettempdir()
-    ```
-
-    とすることで確認できます．<br>
-    もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成します．<br>
-
-最新版の eqtexsvg.py (2011-05-17)  を使用する場合は<br>
-
-```
-class Equation:
-    """Current LaTeX Equation"""
-
-    def __init__(self, param={}):
-```
-
-```
-    ...
- 
-        try: 
-            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
-            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
-```
-
-デフォルトで含まれている eqtexsvg.py (2010-04-04) を使用する場合は<br>
-
-```
-    def effect(self):
-
-        #base_dir = tempfile.mkdtemp("", "inkscape-");
-        base_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
-```
-
-などとして eqtexsvg.py の self.temp_dir や base_dir を修正します．<br>
-この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
-処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
 
 ***
 
