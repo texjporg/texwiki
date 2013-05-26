@@ -57,11 +57,31 @@ LaTeXila 2.8.1 で
 \section{hoge}
 ```
 
-で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．
+で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．<br>
 
 ## Build Tool {#t1320044}
 
 \[Build\]-\[Manage Build Tools\]
+
+<!-- **Default build tools [#s9d34304] -->
+<!--  -->
+<!-- ***LaTeX → DVI → PDF (Latexmk) [#kfbc0e63] -->
+<!--  -->
+<!-- デフォルトでは -->
+<!-- :Commands| -->
+<!-- :|latexmk -pdfdvi -synctex=1 $filename -->
+<!-- :Post Processor| -->
+<!-- :|latexmk -->
+<!--  -->
+<!-- となっています．~ -->
+<!-- デフォルトの設定を削除して以下のように設定します．~ -->
+<!--  -->
+<!-- :Commands| -->
+<!-- :|latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename" -->
+<!-- :Post Processor| -->
+<!-- :|latexmk -->
+<!--  -->
+<!-- [Build]-[LaTeX → DVI → PDF (Latexmk)] で実行できます．~ -->
 
 ### Personal build tools {#kcfc97ba}
 
@@ -70,14 +90,112 @@ LaTeXila 2.8.1 で
 Commands
 : &nbsp;
 
-: latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi $filename
+: latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 
 Post Processor
 : &nbsp;
 
 : latexmk
 
-\[Build\]-\[Latexmk-pdfpLaTeX\] で実行できます
+\[Build\]-\[Latexmk-pdfpLaTeX\] で実行できます．<br>
+
+#### Latexmk-pdfpLaTeX2 {#kb20cc70}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/platex -synctex=1/' -e '$bibtex=q/pbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pdfpLaTeX2\] で実行できます．<br>
+
+#### Latexmk-pdfupLaTeX {#q6b26226}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pdfupLaTeX\] で実行できます．<br>
+
+#### Latexmk-pdfupLaTeX2 {#s6b92cf0}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/uplatex -synctex=1/' -e '$bibtex=q/upbibtex/' -e '$makeindex=q/mendex/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pdfupLaTeX2\] で実行できます．<br>
+
+#### Latexmk-pdfLaTeX {#of015905}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$pdflatex=q/pdflatex -synctex=1/' -e '$bibtex=q/bibtex/' -e '$makeindex=q/makeindex/' -norc -gg -pdf "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pdfLaTeX\] で実行できます．<br>
+
+#### Latexmk-LuaLaTeX {#s8b1424d}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$pdflatex=q/lualatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-LuaLaTeX\] で実行できます．<br>
+
+#### Latexmk-LuaJITLaTeX {#hea17a5b}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$pdflatex=q/luajitlatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -pdf "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-LuaJITLaTeX\] で実行できます．<br>
+
+#### Latexmk-XeLaTeX {#c3409718}
+
+Commands
+: &nbsp;
+
+: llatexmk -e '$pdflatex=q/xelatex -synctex=1/' -e '$bibtex=q/bibtexu/' -e '$makeindex=q/texindy/' -norc -gg -xelatex "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-XeLaTeX\] で実行できます．<br>
 
 ## Evince との連携 {#t97f1692}
 
