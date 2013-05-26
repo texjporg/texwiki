@@ -175,6 +175,24 @@ $ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
+## [Python](/Python/) {#c68c1c0f}
+
+```
+$ sudo apt-get install python python3
+```
+
+## [Ruby](/Ruby/) {#j96f01f6}
+
+```
+$ sudo apt-get install ruby1.9.3
+```
+
+## [Perl](/Perl/) {#q23bc7da}
+
+```
+$ sudo apt-get install perl
+```
+
 ## [Evince](/Evince/) {#m440464c}
 
 ```
@@ -182,6 +200,18 @@ $ sudo apt-get install evince
 ```
 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+
+## [Okular](/Okular/) {#xd972c8e}
+
+```
+$ sudo apt-get install okular kde-l10n-ja
+```
+
+## [qpdfview](/qpdfview/) {#n4d4de3e}
+
+```
+$ sudo apt-get install qpdfview
+```
 
 ## [MuPDF](/MuPDF/) {#s8c9b663}
 
@@ -206,15 +236,17 @@ $ sudo apt-get install ibus-qt4
 
 ## [LyX](/LyX/) {#s7886348}
 
-最新版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
+最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
 
 ```
 $ sudo apt-get install lyx
 ```
 
+文字コードに 日本語(pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
+
 ## [TeXworks](/TeXworks/) {#veed3c44}
 
-最新版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
 
 ```
 $ sudo apt-get install texworks
@@ -239,6 +271,12 @@ $ sudo apt-get install gummi
 
 ```
 $ sudo apt-get install latexila
+```
+
+## [Kile](/Kile/) {#u0698a20}
+
+```
+$ sudo apt-get install kile
 ```
 
 ## [Emacs](/Emacs/) {#s0b6fa60}
