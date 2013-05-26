@@ -63,7 +63,9 @@ v1.6 から PostScript ファイルの表示にも対応しました．([Ghostsc
 - [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
 - TeX ユーザのための [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) → 本家にマージされました．
 
-## forward search {#m71d9172}
+## SyncTeX {#m55b995b}
+
+### forward search {#m71d9172}
 
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
@@ -90,11 +92,11 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 
-### fwdsumatrapdf.exe <a id="fwdsumatrapdf"></a> {#n8da77e2}
+#### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照．
 
-## inverse search {#wfcdbef6}
+### inverse search {#wfcdbef6}
 
 inverse search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 inverse search は SumatraPDF の画面をダブルクリックすると実行されます．<br>
