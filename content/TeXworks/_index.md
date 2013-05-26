@@ -215,7 +215,7 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 #### 修正方法 (Ubuntu) {#ke5fd57d}
 
-Ubuntu 13.04 の場合は
+Ubuntu 13.04 で ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
