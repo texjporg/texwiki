@@ -109,6 +109,30 @@ repstopdf,epspdf,extractbb,\
 - [ArchLinuxにLaTeXをインストール](http://amkkun.hatenablog.com/entry/2012/10/24/040333)
 - [ThinkPad Edge E430にArchLinuxをインストール](http://amkkun.hatenablog.com/entry/2012/11/04/123834)
 
+## [Python](/Python/) {#i5b0d02d}
+
+python, python2 をインストールします．<br>
+
+```
+$ sudo pacman -S python python2
+```
+
+## [Ruby](/Ruby/) {#f4286b29}
+
+ruby をインストールします．<br>
+
+```
+$ sudo pacman -S ruby
+```
+
+## [Perl](/Perl/) {#sf038555}
+
+perl をインストールします．<br>
+
+```
+$ sudo pacman -S perl
+```
+
 ## [Ghostscript](/Ghostscript/) {#yb4bdfcc}
 
 ghostscript をインストールします．<br>
@@ -242,7 +266,7 @@ texmaker をインストールします．<br>
 $ sudo pacman -S texmaker
 ```
 
-Texmaker は日本語入力に関して不具合があるので<br>
+Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
 
 ### fcitx の場合 {#z5f111a8}
@@ -302,6 +326,14 @@ gummi をインストールします．<br>
 $ sudo pacman -S gummi
 ```
 
+## [Kile](/Kile/) {#l211571b}
+
+kile, kdebase-konsole をインストールします．<br>
+
+```
+$ sudo pacman -S kile kdebase-konsole
+```
+
 ## [Emacs](/Emacs/) {#le6bf422}
 
 emacs をインストールします．<br>
@@ -324,14 +356,6 @@ gedit, gedit-plugins をインストールします．<br>
 
 ```
 $ sudo pacman -S gedit gedit-plugins
-```
-
-SyncTeX プラグインでエラーが発生する場合は最新版の synctex.py にアップデートします．<br>
-
-```
-$ curl -O https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py
-$ sudo cp synctex.py /usr/lib/gedit/plugins/synctex
-$ rm synctex.py
 ```
 
 ## [Geany](/Geany/) {#z3d2b775}
