@@ -50,7 +50,6 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 - [LyX with Mac Book Pro Retina, JP](http://heloremy.wordpress.com/2012/10/16/lyx-with-mac-book-pro-retina-jp/)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [Mac OS XにTex Lyx導入](http://d.hatena.ne.jp/mosa_siru/20120627/1340818055)
-- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
 - [LyX &laquo; Konno Log](http://knnlog.wordpress.com/tag/lyx/)
     - [MacTeX で LyX を使う](http://knnlog.wordpress.com/2012/04/01/mactex-%E3%81%A7-lyx-%E3%82%92%E4%BD%BF%E3%81%86/)
     - [Lion への LyX 導入](http://knnlog.wordpress.com/2011/10/16/lion-%E3%81%B8%E3%81%AE-lyx-%E5%B0%8E%E5%85%A5/)
