@@ -80,13 +80,15 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 - [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html)
 
-## forward and inverse search {#ga060086}
+## SyncTeX {#w699c2c2}
+
+### forward and inverse search {#ga060086}
 
 fwdevince, evince_forward_search を使用して forward search ができます．<br>
 invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．<br>
 inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
 
-### fwdevince <a id="fwdevince"></a> {#ie18c015}
+#### fwdevince <a id="fwdevince"></a> {#ie18c015}
 
 Evince/fwdevince を参照．
 
