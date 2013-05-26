@@ -27,7 +27,7 @@ GPLv3
 
 ### Windows {#m2df1dd4}
 
-[emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839) をインストールします．<br>
+[emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．<br>
 Emacs を起動して<br>
 
 ```
@@ -152,7 +152,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ### OS X {#g5794e10}
 
 [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410) を参照．<br>
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) または [Emacs For Mac OS X](http://www.emacsformacosx.com/) をインストールします．<br>
+[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490) または [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
 Emacs を起動して<br>
 
 ```
