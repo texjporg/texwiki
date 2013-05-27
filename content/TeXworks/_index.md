@@ -249,7 +249,7 @@ Qt 設定ツールを使用せずに TeXworks の編集画面で右クリック�
 
 #### 修正方法 (Fedora) {#qfaf14ec}
 
-Fedora Rawhide の場合は
+Fedora Rawhide, 19, 18 の場合は
 
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
