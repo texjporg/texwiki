@@ -143,8 +143,8 @@ $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 
 ```
 $ sudo yum install texmaker
-$ sudo yum install ibus-qt
 $ sudo yum install qt-config
+$ sudo yum install ibus-qt
 ```
 
 [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Fedora)](/Texmaker/#n5ec4d4e) を参照して不具合を回避します．<br>
@@ -202,13 +202,7 @@ $ sudo yum install vim
 $ sudo yum install gedit gedit-latex gedit-plugins
 ```
 
-SyncTeX プラグインでエラーが発生する場合は最新版の synctex.py にアップデートします．<br>
-
-```
-$ curl -O https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py
-$ sudo cp synctex.py /usr/lib64/gedit/plugins/synctex
-$ rm synctex.py
-```
+SyncTeX プラグインでエラーが発生する場合は[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) にアップデートします．<br>
 
 ## [Geany](/Geany/) {#ha256fb0}
 
