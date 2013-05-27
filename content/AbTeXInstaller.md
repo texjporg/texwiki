@@ -26,14 +26,14 @@ Windows 8, 7, Vista, XP
 
 ### リリース情報 {#f691af94}
 
-2013-05-11 TeXインストーラ 3 0.84r1<br>
+2013-05-27 TeXインストーラ 3 0.84r2<br>
 2013-03-07 プラグイン集<br>
 
 ### 注意事項 {#bb499d3c}
 
 GSview が CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
-GSview をインストールする場合は TeXインストーラ 3 0.84 にアップデートしてください．<br>
+GSview をインストールする場合は TeXインストーラ 3 を最新版にアップデートしてください．<br>
 
 ## インストール {#gbf84ff3}
 
