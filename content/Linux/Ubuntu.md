@@ -129,6 +129,12 @@ $ ptex2pdf -l -od '-f ptex-ipaex.map' hoge.tex
 ### dvips + ps2pdf (Ghostscript) を使用して PDF ファイルを作成 {#gcac3589}
 
 Ubuntu 13.04 には Ghostscript 9.07 が収録されています．<br>
+Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
+
+```
+$ sudo apt-get install ghostscript
+```
+
 以下の表示が出力されて dvips + ps2pdf (Ghostscript) を使用して PDF ファイルが作成できない場合は Ghostscript の設定をします．<br>
 
 ```
@@ -152,7 +158,7 @@ Search path:
    /usr/local/lib/ghostscript/fonts : /usr/share/fonts
 ```
 
-/usr/share/fonts/truetype/ipaex に TeX Live の IPAex フォントのディレクトリのシンボリックリンクを作成します．
+/usr/share/fonts/truetype/ipaex に TeX Live 2013 の IPAex フォントのディレクトリのシンボリックリンクを作成します．
 
 ```
 $ sudo ln -s /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
@@ -296,6 +302,8 @@ $ sudo apt-get install vim
 ```
 $ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
 ```
+
+SyncTeX プラグインでエラーが発生する場合は[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) にアップデートします．<br>
 
 ## [Geany](/Geany/) {#zed31359}
 
