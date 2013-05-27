@@ -35,7 +35,7 @@ pukiwiki: "ArchiveQandA"
 
 ### dvioutのエラーメッセージ {#lb61846e}
 
-- dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) でプレビューする</strong>方法があります。
+- dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。
 
 ### TeX本体のエラーメッセージ {#s54a975c}
 
