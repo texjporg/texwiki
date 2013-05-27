@@ -64,6 +64,7 @@ Windows, OS X, Linux で動作します．<br>
 
 ### Windows 版 Inkscape 0.48.4 (0.48.2 以降) のメニューのフォントがおかしい → etc\pango\pango.aliases の sans の先頭に meiryo, を追加する {#i6aee1d9}
 
+- [Inkscape Portable の日本語化とフォントを変更する](http://mekemoke.jp/2013/04/1159.html)
 - [Windows 版 Inkscape の メニューフォント設定方法](http://www.ginshali.info/2011/12/windows-inkscape.html)
 
 Windows 版 Inkscape 0.48.4 (0.48.2 以降) を起動するとメニューのフォントが 0.48.1 とは異なっていました．
