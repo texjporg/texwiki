@@ -691,9 +691,20 @@ Editor:
 : Custom Text Editor
 
 Command:
-: texworks --position=%l "%f"
+: texworks --position=%l
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## qpdfview との連携 {#xa845db9}
+
+### inverse search {#e1580763}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+Source editor:
+: texworks --position=%2 "%1"
+
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
 ## PdfViewer との連携 {#v93c1198}
 
