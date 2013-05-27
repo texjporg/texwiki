@@ -59,6 +59,8 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
+[NeoBundle](https://github.com/Shougo/neobundle.vim) を使ってインストールができます． → [vim-latexはneobundleでインストールしよう](http://wp.raa0121.info/2013/04/vim-latexneobundle.html)<br>
+
 ### Windows {#eb85b35a}
 
 [Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
