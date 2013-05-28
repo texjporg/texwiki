@@ -55,6 +55,14 @@ Ubuntu 12.10 と同様の方法でインストールできます．<br>
 - [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
 - [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
 
+TeX Live 2012/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
+
+```
+$ sudo apt-get install texlive-full
+```
+
+個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
+
 ```
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
@@ -302,8 +310,6 @@ $ sudo apt-get install vim
 ```
 $ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
 ```
-
-SyncTeX プラグインでエラーが発生する場合は[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) にアップデートします．<br>
 
 ## [Geany](/Geany/) {#zed31359}
 
