@@ -29,6 +29,10 @@ Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディス
 
 - TeX Live 2013
 
+### TeX Live 2013/Debian {#qcd9ce14}
+
+- Linux/Ubuntu
+
 ### TeX Live 2012 {#q00bf695}
 
 - [Linux で日本語 TeX 環境構築](http://c2de6320.hatenablog.com/entry/2013/04/29/180934)
@@ -39,9 +43,44 @@ Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディス
 
 ### TeX Live 2012/Debian {#ea828b67}
 
+- Linux/Ubuntu
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [linux mint 14 cinnamon というOSで「Gummi」や「Texmaker」というソフトでLatexの文書を作成したいのですが、日本語環境設定がうまくいきません。やり方を教えてください。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1497730384)
 
+## [Evince](/Evince/) {#qfdb160b}
+
+Linux/Ubuntu
+
+## [Okular](/Okular/) {#ba1358b3}
+
+Linux/Ubuntu
+
+## [qpdfview](/qpdfview/) {#u94ec4be}
+
+Linux/Ubuntu
+
+## [MuPDF](/MuPDF/) {#c80fa1e6}
+
+Linux/Ubuntu
+
+## [Texmaker](/Texmaker/) {#u8c0cbda}
+
+Linux/Ubuntu
+
+## [LyX](/LyX/) {#jdcf4217}
+
+Linux/Ubuntu
+
+## [TeXworks](/TeXworks/) {#g455c5e0}
+
+Linux/Ubuntu
+
+## Gummi {#g4646b51}
+
+Linux/Ubuntu
+
 ## fcitx-mozc {#a10c0ee8}
 
-Linux/Ubuntu を参照．<br>
+Linux Mint 15 では fcitx-mozc が利用できます．<br>
+
+Linux/Ubuntu
