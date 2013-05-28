@@ -47,6 +47,18 @@ Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディス
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [linux mint 14 cinnamon というOSで「Gummi」や「Texmaker」というソフトでLatexの文書を作成したいのですが、日本語環境設定がうまくいきません。やり方を教えてください。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1497730384)
 
+## [Python](/Python/) {#reda4f97}
+
+Linux/Ubuntu
+
+## [Ruby](/Ruby/) {#mf285d32}
+
+Linux/Ubuntu
+
+## [Perl](/Perl/) {#e850770a}
+
+Linux/Ubuntu
+
 ## [Evince](/Evince/) {#qfdb160b}
 
 Linux/Ubuntu
@@ -76,6 +88,38 @@ Linux/Ubuntu
 Linux/Ubuntu
 
 ## Gummi {#g4646b51}
+
+Linux/Ubuntu
+
+## LaTeXila {#ied3d1b1}
+
+Linux/Ubuntu
+
+## [Kile](/Kile/) {#b86719e1}
+
+Linux/Ubuntu
+
+## [Eclipse](/Eclipse/) {#bd4e03c3}
+
+Linux/Ubuntu
+
+## [Emacs](/Emacs/) {#w2c42a95}
+
+Linux/Ubuntu
+
+## [Vim](/Vim/) {#febc084d}
+
+Linux/Ubuntu
+
+## [gedit](/gedit/) {#fc6bbe0c}
+
+Linux/Ubuntu
+
+## [Geany](/Geany/) {#caa66bfb}
+
+Linux/Ubuntu
+
+## [Inkscape](/Inkscape/) {#ke45cdf4}
 
 Linux/Ubuntu
 
