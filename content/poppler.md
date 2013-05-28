@@ -872,9 +872,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.23.0.tar.xz
-$ tar xvf poppler-0.23.0.tar.xz
-$ pushd poppler-0.23.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.23.1.tar.xz
+$ tar xvf poppler-0.23.1.tar.xz
+$ pushd poppler-0.23.1
 ```
 
 ***
