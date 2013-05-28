@@ -146,7 +146,11 @@ TeX Live 2012/Debian がインストールされないように dummy パッケ�
 ```
 $ sudo apt-get install equivs
 $ wget http://www.tug.org/texlive/files/debian-control-ex.txt
-debian-control-ex.txt に tex-common, texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します．
+```
+
+<!-- debian-control-ex.txt に tex-common, texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
+
+```
 $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 ```
@@ -235,19 +239,19 @@ $ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
-## [Python](/Python/) {#c68c1c0f}
+## [Python](/Python/) <a id="python"></a> {#c68c1c0f}
 
 ```
 $ sudo apt-get install python python3
 ```
 
-## [Ruby](/Ruby/) {#j96f01f6}
+## [Ruby](/Ruby/) <a id="ruby"></a> {#j96f01f6}
 
 ```
 $ sudo apt-get install ruby1.9.3
 ```
 
-## [Perl](/Perl/) {#q23bc7da}
+## [Perl](/Perl/) <a id="perl"></a> {#q23bc7da}
 
 ```
 $ sudo apt-get install perl
@@ -321,25 +325,31 @@ $ sudo apt-get install ibus-qt4
 
 インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Ubuntu)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
 
-## Gummi {#a1b3d45b}
+## Gummi <a id="gummi"></a> {#a1b3d45b}
 
 ```
 $ sudo apt-get install gummi
 ```
 
-## LaTeXila {#v3e14a29}
+## LaTeXila <a id="latexila"></a> {#v3e14a29}
 
 ```
 $ sudo apt-get install latexila
 ```
 
-## [Kile](/Kile/) {#u0698a20}
+## [Kile](/Kile/) <a id="kile"></a> {#u0698a20}
 
 ```
 $ sudo apt-get install kile
 ```
 
-## [Emacs](/Emacs/) {#s0b6fa60}
+## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#ae8afa99}
+
+```
+$ sudo apt-get install eclipse
+```
+
+## [Emacs](/Emacs/) <a id="emacs"></a> {#s0b6fa60}
 
 ```
 $ sudo apt-get install emacs24
@@ -355,25 +365,25 @@ $ sudo apt-get install emacs24
 - [https://launchpad.net/ubuntu/+source/auctex/](https://launchpad.net/ubuntu/+source/auctex/)
     - [https://launchpad.net/ubuntu/+source/auctex/+changelog](https://launchpad.net/ubuntu/+source/auctex/+changelog)
 
-## [Vim](/Vim/) {#a5b8fa0b}
+## [Vim](/Vim/) <a id="vim"></a> {#a5b8fa0b}
 
 ```
 $ sudo apt-get install vim
 ```
 
-## [gedit](/gedit/) {#ofba42a2}
+## [gedit](/gedit/) <a id="gedit"></a> {#ofba42a2}
 
 ```
 $ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
 ```
 
-## [Geany](/Geany/) {#zed31359}
+## [Geany](/Geany/) <a id="geany"></a> {#zed31359}
 
 ```
 $ sudo apt-get install geany geany-plugins
 ```
 
-## [Inkscape](/Inkscape/) {#u785615b}
+## [Inkscape](/Inkscape/) <a id="inkscape"></a> {#u785615b}
 
 ```
 $ sudo apt-get install inkscape pstoedit python-lxml
@@ -382,7 +392,7 @@ $ sudo apt-get install inkscape pstoedit python-lxml
 eqtexsvg を最新版に更新します．<br>
 
 ```
-$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+$ wget http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
 $ tar xvf eqtexsvg.tar.gz
 $ chmod +x eqtexsvg.py
 $ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
@@ -393,7 +403,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
 
-Ubuntu 13.04 以降は fcitx-mozc が利用できます．<br>
+Ubuntu 13.04 では fcitx-mozc が利用できます．<br>
 
 ```
 $ sudo apt-get install software-properties-common
