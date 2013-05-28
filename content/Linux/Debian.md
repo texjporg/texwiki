@@ -238,3 +238,17 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 - [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
 - [WineHQ  - Adobe Reader](http://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
     - [WineHQ  - Adobe Reader 11.x](http://appdb.winehq.org/objectManager.php?sClass=version&iId=27093)
+
+## Emacs {#gfaebf66}
+
+### YaTeX {#r57295dd}
+
+- [https://launchpad.net/debian/+source/yatex/](https://launchpad.net/debian/+source/yatex/)
+    - [https://launchpad.net/debian/+source/yatex/+changelog](https://launchpad.net/debian/+source/yatex/+changelog)
+- [YaTeXのインストールと設定](http://emacs.tsutomuonoda.com/latex-emacs-yatex-install-setting/)
+
+### AUCTeX {#t099fe57}
+
+- [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/Emacs/auctex_config.html)
+- [https://launchpad.net/debian/+source/auctex/](https://launchpad.net/debian/+source/auctex/)
+    - [https://launchpad.net/debian/+source/auctex/+changelog](https://launchpad.net/debian/+source/auctex/+changelog)
