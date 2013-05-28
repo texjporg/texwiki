@@ -36,7 +36,14 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 #### Fedora 20 (Rawhide), 19, 18 {#u01e1fc4}
 
-Fedora 20 (Rawhide), 19, 18 では texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
+Fedora 20 (Rawhide), 19, 18 では TeX Live 2013 が使用できます．<br>
+texlive-scheme-full を指定すれば TeX Live 2013 をフルインストールできます．<br>
+
+```
+$ sudo yum install texlive-scheme-full
+```
+
+個別にインストールしたい場合は texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
 
 ```
 $ sudo yum install texlive-collection-langcjk
@@ -201,8 +208,6 @@ $ sudo yum install vim
 ```
 $ sudo yum install gedit gedit-latex gedit-plugins
 ```
-
-SyncTeX プラグインでエラーが発生する場合は[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) にアップデートします．<br>
 
 ## [Geany](/Geany/) {#ha256fb0}
 
