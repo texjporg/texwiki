@@ -52,7 +52,7 @@ pukiwiki: "LyX/設定/Windows"
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (plain)　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[LyX　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tex2lyx -e UTF8 -f $$i $$o</ins><br>
+変換子(O):　　　<ins>tex2lyx -e utf8 -f $$i $$o</ins><br>
 追加フラグ(X):<br>
 
 ***
