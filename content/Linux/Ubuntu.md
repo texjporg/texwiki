@@ -31,6 +31,11 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
 
+- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
+- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
+    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
+- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
+    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
 - [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
 - [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
@@ -42,6 +47,46 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 #### Ubuntu 13.04 {#se51f85a}
 
 - TeX Live 2013
+
+### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
+
+#### Ubuntu 13.10 {#xabd5471}
+
+TeX Live 2013/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
+
+```
+$ sudo apt-get install texlive-full
+```
+
+個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
+
+```
+$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
+```
+
+/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
+
+shell_escape_commands が以下のように記述されていると思います．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+shell_escape_commands を以下のように編集して保存します．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,\
+repstopdf,epspdf,extractbb,\
+```
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
 
@@ -101,6 +146,7 @@ TeX Live 2012/Debian がインストールされないように dummy パッケ�
 ```
 $ sudo apt-get install equivs
 $ wget http://www.tug.org/texlive/files/debian-control-ex.txt
+debian-control-ex.txt に tex-common, texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します．
 $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 ```
@@ -207,7 +253,7 @@ $ sudo apt-get install ruby1.9.3
 $ sudo apt-get install perl
 ```
 
-## [Evince](/Evince/) {#m440464c}
+## [Evince](/Evince/) <a id="evince"></a> {#m440464c}
 
 ```
 $ sudo apt-get install evince
@@ -215,25 +261,25 @@ $ sudo apt-get install evince
 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
-## [Okular](/Okular/) {#xd972c8e}
+## [Okular](/Okular/) <a id="okular"></a> {#xd972c8e}
 
 ```
 $ sudo apt-get install okular kde-l10n-ja
 ```
 
-## [qpdfview](/qpdfview/) {#n4d4de3e}
+## [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#n4d4de3e}
 
 ```
 $ sudo apt-get install qpdfview
 ```
 
-## [MuPDF](/MuPDF/) {#s8c9b663}
+## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#s8c9b663}
 
 ```
 $ sudo apt-get install mupdf
 ```
 
-## [Texmaker](/Texmaker/) {#z2142745}
+## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#z2142745}
 
 ```
 $ sudo apt-get install texmaker
@@ -248,7 +294,7 @@ $ sudo apt-get install ibus-qt4
 
 インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
 
-## [LyX](/LyX/) {#s7886348}
+## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
 最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
 
@@ -258,7 +304,7 @@ $ sudo apt-get install lyx
 
 文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
-## [TeXworks](/TeXworks/) {#veed3c44}
+## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
 
 最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
 
@@ -299,6 +345,16 @@ $ sudo apt-get install kile
 $ sudo apt-get install emacs24
 ```
 
+### [YaTeX](/YaTeX/) {#pc05aa7c}
+
+- [https://launchpad.net/ubuntu/+source/yatex/](https://launchpad.net/ubuntu/+source/yatex/)
+    - [https://launchpad.net/ubuntu/+source/yatex/+changelog](https://launchpad.net/ubuntu/+source/yatex/+changelog)
+
+### [AUCTeX](/AUCTeX/) {#u31c1597}
+
+- [https://launchpad.net/ubuntu/+source/auctex/](https://launchpad.net/ubuntu/+source/auctex/)
+    - [https://launchpad.net/ubuntu/+source/auctex/+changelog](https://launchpad.net/ubuntu/+source/auctex/+changelog)
+
 ## [Vim](/Vim/) {#a5b8fa0b}
 
 ```
@@ -334,6 +390,18 @@ $ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
 ```
 
 Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
+
+## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
+
+Ubuntu 13.04 以降は fcitx-mozc が利用できます．<br>
+
+```
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ikuya-fruitsbasket/fcitx
+$ sudo apt-get update
+$ sudo apt-get install fcitx fcitx-mozc
+$ im-config -x
+```
 
 ## 関連リンク {#ofcc84e4}
 
