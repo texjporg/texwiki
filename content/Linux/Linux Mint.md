@@ -17,7 +17,7 @@ pukiwiki: "Linux/Linux Mint"
 
 ## [Linux Mint とは](http://linuxmint-jp.net/linuxmint.html) {#b5a36704}
 
-Linux Mint は Debian GNU/Linux と Ubuntu をベースにした Linux ディストリビューションです．
+Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディストリビューションです．
 
 - [Linux Mint](http://linuxmint.com/)
 - [Linux Mint Japan](http://linuxmint-jp.net/)
@@ -41,3 +41,7 @@ Linux Mint は Debian GNU/Linux と Ubuntu をベースにした Linux ディス
 
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [linux mint 14 cinnamon というOSで「Gummi」や「Texmaker」というソフトでLatexの文書を作成したいのですが、日本語環境設定がうまくいきません。やり方を教えてください。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1497730384)
+
+## fcitx-mozc {#a10c0ee8}
+
+Linux/Ubuntu を参照．<br>
