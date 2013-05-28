@@ -595,7 +595,7 @@ Cygwin では問題なく動作するようです．<br>
 - [pdf2htmlEX - Convert PDF to HTML without losing format](http://linux.ikoinoba.net/index.php?UID=1349019363)
 
 ```
-$ sudo apt-get install python-software-properties
+$ sudo apt-get install software-properties-common
 $ sudo apt-add-repository ppa:coolwanglu/pdf2htmlex
 $ sudo apt-get update
 $ sudo apt-get install pdf2htmlex
