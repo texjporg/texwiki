@@ -34,9 +34,9 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ### TeX Live 2013 {#n44a0820}
 
-#### Fedora Rawhide, 19, 18 {#u01e1fc4}
+#### Fedora 20 (Rawhide), 19, 18 {#u01e1fc4}
 
-Fedora Rawhide, 19, 18 では texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
+Fedora 20 (Rawhide), 19, 18 では texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
 
 ```
 $ sudo yum install texlive-collection-langcjk
@@ -155,7 +155,7 @@ $ sudo yum install ibus-qt
 $ sudo yum install lyx
 ```
 
-文字コードに 日本語(pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## [TeXworks](/TeXworks/) {#q8a87364}
 
