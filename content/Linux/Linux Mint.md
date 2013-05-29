@@ -7,35 +7,61 @@ pukiwiki: "Linux/Linux Mint"
 
 # Linux/Linux Mint
 
-[Linux](/Linux/) > Linux Mint
+[Linux](/Linux/) > Linux Mint/Linux Mint Debian Edition (LMDE)
 
-## [Linux Mint](http://linuxmint.com/) {#f4077eb2}
+## [Linux Mint/Linux Mint Debian Edition (LMDE)](http://linuxmint.com/) {#f4077eb2}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png" alt="Linux Mint" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## [Linux Mint とは](http://linuxmint-jp.net/linuxmint.html) {#b5a36704}
+## [Linux Mint/Linux Mint Debian Edition (LMDE) とは](http://linuxmint-jp.net/linuxmint.html) {#b5a36704}
 
-Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディストリビューションです．
+Linux Mint は Ubuntu をベースにした Linux ディストリビューションです．<br>
+Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
 
 - [Linux Mint](http://linuxmint.com/)
 - [Linux Mint Japan](http://linuxmint-jp.net/)
 - [https://github.com/linuxmint](https://github.com/linuxmint)
 
+## ダウンロード {#a6b4fe07}
+
+### ミラーサイト {#ce6708ed}
+
+#### ISO Images {#b7834158}
+
+- [http://psg.mtu.edu/pub/linuxmint/images/](http://psg.mtu.edu/pub/linuxmint/images/)
+
+#### パッケージ {#ub67daca}
+
+- [http://psg.mtu.edu/pub/linuxmint-packages/](http://psg.mtu.edu/pub/linuxmint-packages/)
+
 ## TeX Live {#d237a7b2}
 
 ### TeX Live 2013 {#ef984d1b}
+
+#### Linux Mint 15 {#l0b7aecc}
 
 - TeX Live 2013
 
 ### TeX Live 2013/Debian {#qcd9ce14}
 
+#### Linux Mint 16 {#h653bc7f}
+
 - Linux/Ubuntu
+
+#### LMDE {#n74aafdf}
+
+- Linux/Debian
 
 ### TeX Live 2012 {#q00bf695}
 
+#### Linux Mint 14 {#w84c80f3}
+
 - [Linux で日本語 TeX 環境構築](http://c2de6320.hatenablog.com/entry/2013/04/29/180934)
+
+#### LMDE {#i35398cb}
+
 - [Gtiddlywiki \[ a server side tiddlywiki runs on GAE \] tex](http://tsrtesttest.appspot.com/wiki/tex)
     - [texlive 2012 インストール Debian Linux Mint Edition](http://tsrtesttest.appspot.com/wiki/texlive%202012%20%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%20Debian%20Linux%20Mint%20Edition)
     - [texlive framed 改](http://tsrtesttest.appspot.com/wiki/texlive%20framed%20%E6%94%B9)
@@ -43,7 +69,12 @@ Linux Mint は Ubuntu と Debian GNU/Linux をベースにした Linux ディス
 
 ### TeX Live 2012/Debian {#ea828b67}
 
+#### Linux Mint 15 {#n724cc58}
+
 - Linux/Ubuntu
+
+#### Linux Mint 14 {#u8065ca0}
+
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 - [linux mint 14 cinnamon というOSで「Gummi」や「Texmaker」というソフトでLatexの文書を作成したいのですが、日本語環境設定がうまくいきません。やり方を教えてください。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1497730384)
 
@@ -64,6 +95,10 @@ Linux/Ubuntu
 Linux/Ubuntu
 
 ## [Okular](/Okular/) {#ba1358b3}
+
+Linux/Ubuntu
+
+## [zathura](/zathura/) {#eabe50ed}
 
 Linux/Ubuntu
 
