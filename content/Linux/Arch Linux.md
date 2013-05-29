@@ -111,15 +111,11 @@ repstopdf,epspdf,extractbb,\
 
 ## [Python](/Python/) {#i5b0d02d}
 
-python, python2 をインストールします．<br>
-
 ```
 $ sudo pacman -S python python2
 ```
 
 ## [Ruby](/Ruby/) {#f4286b29}
-
-ruby をインストールします．<br>
 
 ```
 $ sudo pacman -S ruby
@@ -127,15 +123,11 @@ $ sudo pacman -S ruby
 
 ## [Perl](/Perl/) {#sf038555}
 
-perl をインストールします．<br>
-
 ```
 $ sudo pacman -S perl
 ```
 
 ## [Ghostscript](/Ghostscript/) {#yb4bdfcc}
-
-ghostscript をインストールします．<br>
 
 ```
 $ sudo pacman -S ghostscript
@@ -182,8 +174,6 @@ ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込ま�
 
 ## poppler {#bfbc00bc}
 
-poppler, poppler-data をインストールします．<br>
-
 ```
 $ sudo pacman -S poppler poppler-data
 ```
@@ -192,8 +182,6 @@ Arch Linux の Evince, Okular, zathura, Texmaker などの poppler + fontconfig 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Evince](/Evince/) {#qd63d30c}
-
-evince をインストールします．<br>
 
 ```
 $ sudo pacman -S evince
@@ -207,15 +195,11 @@ $ sudo pacman -S gvfs
 
 ## [Okular](/Okular/) {#d36d48ab}
 
-kdegraphics-okular, kde-l10n-ja をインストールします．<br>
-
 ```
 $ sudo pacman -S kdegraphics-okular kde-l10n-ja
 ```
 
 ## [zathura](/zathura/) {#cae6188b}
-
-zathura, zathura-pdf-poppler, zathura-ps をインストールします．<br>
 
 ```
 $ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
@@ -223,15 +207,11 @@ $ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 
 ## [MuPDF](/MuPDF/) {#w1b2cec8}
 
-mupdf をインストールします．<br>
-
 ```
 $ sudo pacman -S mupdf
 ```
 
 ## Xpdf {#yfd9416b}
-
-xpdf, xpdf-japanese をインストールします．<br>
 
 ```
 $ sudo pacman -S xpdf xpdf-japanese
@@ -259,8 +239,6 @@ fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public
 ***
 
 ## [Texmaker](/Texmaker/) {#kc254e63}
-
-texmaker をインストールします．<br>
 
 ```
 $ sudo pacman -S texmaker
@@ -310,8 +288,6 @@ Texmaker の \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] の�
 
 ## [LyX](/LyX/) {#odd649e9}
 
-lyx をインストールします．<br>
-
 ```
 $ sudo pacman -S lyx
 ```
@@ -320,15 +296,11 @@ $ sudo pacman -S lyx
 
 ## Gummi {#gf42d835}
 
-gummi をインストールします．<br>
-
 ```
 $ sudo pacman -S gummi
 ```
 
 ## [Kile](/Kile/) {#l211571b}
-
-kile, kdebase-konsole をインストールします．<br>
 
 ```
 $ sudo pacman -S kile kdebase-konsole
@@ -336,15 +308,11 @@ $ sudo pacman -S kile kdebase-konsole
 
 ## [Emacs](/Emacs/) {#le6bf422}
 
-emacs をインストールします．<br>
-
 ```
 $ sudo pacman -S emacs
 ```
 
 ## [Vim](/Vim/) {#g73ca7b0}
-
-vim をインストールします．<br>
 
 ```
 $ sudo pacman -S vim
@@ -352,23 +320,17 @@ $ sudo pacman -S vim
 
 ## [gedit](/gedit/) {#k1930181}
 
-gedit, gedit-plugins をインストールします．<br>
-
 ```
 $ sudo pacman -S gedit gedit-plugins
 ```
 
 ## [Geany](/Geany/) {#z3d2b775}
 
-geany, geany-plugins をインストールします．<br>
-
 ```
 $ sudo pacman -S geany geany-plugins
 ```
 
 ## [Inkscape](/Inkscape/) {#ca45a692}
-
-inkscape, pstoedit, python2-lxml をインストールします．<br>
 
 ```
 $ sudo pacman -S inkscape pstoedit python2-lxml
