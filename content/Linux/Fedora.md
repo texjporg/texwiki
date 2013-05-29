@@ -237,7 +237,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ### libkkc {#a96c1055}
 
-Fedora 19 から日本語入力が ibus-kkc に変更されました． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
+Fedora 19 から日本語入力が ibus-kkc に変更されています． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
 
 - [libkkc / libkkc / wiki / Home &mdash; Bitbucket](https://bitbucket.org/libkkc/libkkc/)
 - [du -a ~ueno | Just another WordPress site](http://blog.du-a.org/)
