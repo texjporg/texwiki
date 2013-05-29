@@ -50,15 +50,32 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 #### Debian GNU/Linux sid で TeX Live 2013/Debian のインストール {#b43aa577}
 
-Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
+Synaptic パッケージマネージャからインストールする場合は
+
+- フルインストールの場合は [texlive-full](http://packages.debian.org/sid/texlive-full) パッケージを選択してインストール
+- 個別にインストールする場合は [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストール
+
+すれば OK です．<br>
 
 aptitude を使用してインストールしても OK です．<br>
+
+```
+$ sudo aptitude install texlive-full
+```
+
+または
 
 ```
 $ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 apt-get を使用してインストールしても OK です．<br>
+
+```
+$ sudo apt-get install texlive-full
+```
+
+または
 
 ```
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
@@ -97,15 +114,32 @@ repstopdf,epspdf,extractbb,\
 
 #### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
 
-Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/wheezy/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/wheezy/texlive-fonts-recommended) パッケージを選択してインストールすれば OK です．<br>
+Synaptic パッケージマネージャからインストールする場合は
+
+- フルインストールの場合は [texlive-full](http://packages.debian.org/wheezy/texlive-full) パッケージを選択してインストール
+- 個別にインストールする場合は [texlive-lang-cjk](http://packages.debian.org/wheezy/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/wheezy/texlive-fonts-recommended) パッケージを選択してインストール
+
+すれば OK です．<br>
 
 aptitude を使用してインストールしても OK です．<br>
+
+```
+$ sudo aptitude install texlive-full
+```
+
+または
 
 ```
 $ sudo aptitude install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 apt-get を使用してインストールしても OK です．<br>
+
+```
+$ sudo apt-get install texlive-full
+```
+
+または
 
 ```
 $ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
