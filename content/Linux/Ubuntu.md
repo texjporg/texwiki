@@ -7,9 +7,9 @@ pukiwiki: "Linux/Ubuntu"
 
 # Linux/Ubuntu
 
-[Linux](/Linux/) > Ubuntu
+[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
 
-## [Ubuntu](http://www.ubuntu.com/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right">
 
@@ -17,7 +17,7 @@ pukiwiki: "Linux/Ubuntu"
 
 ## Ubuntu とは {#i6bcb07d}
 
-Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．
+Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
 
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
@@ -28,6 +28,20 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
+
+### 派生版 {#i77fdd5e}
+
+#### Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu とは {#fa2981c9}
+
+Ubuntu GNOME はデスクトップ環境に GNOME を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
+- [Ubuntu GNOME](http://ubuntugnome.org/)
+- [Kubuntu](http://www.kubuntu.org/)
+- [Xubuntu](http://xubuntu.org/)
+- [Lubuntu](http://lubuntu.net/)
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
 
@@ -148,7 +162,7 @@ $ sudo apt-get install equivs
 $ wget http://www.tug.org/texlive/files/debian-control-ex.txt
 ```
 
-<!-- debian-control-ex.txt に tex-common, texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
+<!-- debian-control-ex.txt に texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
 
 ```
 $ equivs-build debian-control-ex.txt
@@ -163,7 +177,7 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 
 [Linux#texmf.cnf の編集](/Linux/#texmfcnf) を参照．<br>
 
-### ptex2pdf (platex + dvipdfmx) で IPAex フォントの埋め込み {#j5ae0e71}
+### ptex2pdf で IPAex フォントの埋め込み {#j5ae0e71}
 
 TeX Live 2013 には IPAex フォント，ptex-ipaex.map が収録されています．<br>
 
@@ -182,7 +196,7 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-### dvips + ps2pdf (Ghostscript) を使用して PDF ファイルを作成 {#gcac3589}
+### dvips + ps2pdf を使用して PDF ファイルを作成 {#gcac3589}
 
 Ubuntu 13.04 には Ghostscript 9.07 が収録されています．<br>
 Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
