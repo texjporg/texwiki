@@ -176,13 +176,11 @@ $ kpsewhich ptex-ipaex.map
 /usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
 ```
 
-ptex2pdf で -l -od '-f ptex-ipaex.map' オプションを指定して実行します．
+pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -od '-f ptex-ipaex.map' hoge.tex
+$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
-
-以上の作業で IPAex フォントが埋め込まれます．
 
 ### dvips + ps2pdf (Ghostscript) を使用して PDF ファイルを作成 {#gcac3589}
 
@@ -269,6 +267,12 @@ $ sudo apt-get install evince
 
 ```
 $ sudo apt-get install okular kde-l10n-ja
+```
+
+## [zathura](/zathura/) <a id="zathura"></a> {#z031990b}
+
+```
+$ sudo apt-get install zathura
 ```
 
 ## [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#n4d4de3e}
