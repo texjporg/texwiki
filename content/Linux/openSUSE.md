@@ -17,7 +17,7 @@ pukiwiki: "Linux/openSUSE"
 
 ## openSUSE とは {#n178877e}
 
-openSUSE は安定して，使い易い，多目的な Linux ベースのオペレーティングシステムです．<br>
+openSUSE は安定・使い易い・多目的な Linux ベースのオペレーティングシステムです．<br>
 
 - [openSUSE.org](http://www.opensuse.org/)
 - [メインページ - openSUSE](http://ja.opensuse.org/)
@@ -28,7 +28,7 @@ openSUSE は安定して，使い易い，多目的な Linux ベースのオペ�
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
-### TeX Live 2012/TeX Live for opensuse.org {#y0f6032d}
+### TeX Live 2012/TeX Live for SUSE Linux {#y0f6032d}
 
 #### openSUSE 12.3 {#i8bbf7fd}
 
@@ -59,9 +59,25 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-collection-latex texlive-collection-luatex texlive-collection-xetex
 ```
 
+## Texmaker {#ua730d97}
+
+```
+$ sudo zypper install texmaker
+```
+
 ## LyX {#uad65708}
 
-- [OpenSUSEで lyx から日本語 pdf 出力](http://computermawari.blogspot.jp/2012/10/opensuse-lyx-pdf.html)
+```
+$ sudo zypper install lyx
+```
+
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
+
+## TeXworks {#n8431fb2}
+
+```
+$ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
+```
 
 ## MinGW {#e5f30d58}
 
