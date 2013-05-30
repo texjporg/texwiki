@@ -28,7 +28,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ### ミラーサイト {#ce6708ed}
 
-日本のミラーサイトは No codecs 版のみの配布になっています．<br>
+日本のミラーサイト (JAIST) は No codecs 版のみの配布になっています．<br>
 
 #### ISO Images {#b7834158}
 
