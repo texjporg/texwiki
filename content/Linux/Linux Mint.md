@@ -46,17 +46,13 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 #### Linux Mint 15 {#l0b7aecc}
 
-- TeX Live 2013
+- Linux/Ubuntu
 
 ### TeX Live 2013/Debian {#qcd9ce14}
 
 #### Linux Mint 16 {#h653bc7f}
 
 - Linux/Ubuntu
-
-#### LMDE {#n74aafdf}
-
-- Linux/Debian
 
 ### TeX Live 2012 {#q00bf695}
 
