@@ -29,7 +29,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
 
-### 派生版 {#i77fdd5e}
+### 公式派生版 {#i77fdd5e}
 
 #### Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu とは {#fa2981c9}
 
