@@ -60,7 +60,7 @@ Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの 
 
 #### Ubuntu 13.04 {#se51f85a}
 
-- TeX Live 2013
+- Linux/Ubuntu
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
 
