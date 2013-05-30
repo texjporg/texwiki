@@ -28,12 +28,16 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ### ミラーサイト {#ce6708ed}
 
+日本のミラーサイトは No codecs 版のみの配布になっています．<br>
+
 #### ISO Images {#b7834158}
 
+- [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/isos/stable/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/isos/stable/)
 - [http://psg.mtu.edu/pub/linuxmint/images/](http://psg.mtu.edu/pub/linuxmint/images/)
 
 #### パッケージ {#ub67daca}
 
+- [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/)
 - [http://psg.mtu.edu/pub/linuxmint-packages/](http://psg.mtu.edu/pub/linuxmint-packages/)
 
 ## TeX Live {#d237a7b2}
