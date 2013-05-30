@@ -28,9 +28,39 @@ openSUSE は安定して，使い易い，多目的な Linux ベースのオペ�
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
-### TeX Live 2012 {#y0f6032d}
+### TeX Live 2012/TeX Live for opensuse.org {#y0f6032d}
 
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
+#### openSUSE 12.3 {#i8bbf7fd}
+
+- フルインストールの場合
+
+YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
+zypper を使用しても OK です．<br>
+
+```
+$ sudo zypper install texlive-scheme-full
+```
+
+- 個別にインストールする場合
+
+個別にインストールしたい場合は texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
+YaST パッケージマネージャ で texlive-collection-langcjk を検索して texlive-collection-langcjk パッケージを選択してインストールします．<br>
+zypper を使用しても OK です．<br>
+
+```
+$ sudo zypper install texlive-collection-langcjk
+```
+
+pdfLaTeX, [LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) を使用する場合は texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex パッケージもインストールします．<br>
+YaST パッケージマネージャ で texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex を検索して texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex パッケージを選択してインストールします．<br>
+zypper を使用しても OK です．<br>
+
+```
+$ sudo zypper install texlive-collection-latex texlive-collection-luatex texlive-collection-xetex
+```
+
+## LyX {#uad65708}
+
 - [OpenSUSEで lyx から日本語 pdf 出力](http://computermawari.blogspot.jp/2012/10/opensuse-lyx-pdf.html)
 
 ## MinGW {#e5f30d58}
