@@ -75,7 +75,7 @@ Windows, OS X, Linux
 ### リリース情報/ChangeLog {#z39e4e65}
 
 - [gedit - GNOME Text Editor](https://git.gnome.org/browse/gedit/) GNOME GIT source code repository
-    - [refs](https://git.gnome.org/browse/gedit/refs/)
+    - [https://git.gnome.org/browse/gedit/refs/tags](https://git.gnome.org/browse/gedit/refs/tags)
     - [log](https://git.gnome.org/browse/gedit/log/)
 
 ## プラグイン {#c01f900c}
