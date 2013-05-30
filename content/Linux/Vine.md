@@ -24,9 +24,13 @@ Vine Linux はコンパクトで軽量な日本語 Linux ディストリビュ�
 
 ## TeX Live {#c1d98d5f}
 
+### TeX Live 2012/Vine Linux {#ue950dcc}
+
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
 
-### Vine Linux 6.1 {#sf8daebc}
+### TeX Live 2009 (Web2C 2009) with ptexlive {#ibf43cda}
+
+#### Vine Linux 6.1 {#sf8daebc}
 
 - [TeX 環境 Vine Linux 6](http://trac.vinelinux.org/wiki/TeXEnvironment/Vine6)
 - [日本語 TeX 利用ガイド](http://vinelinux.org/docs/vine6/tex-guide/vine-tex-guide.html)
