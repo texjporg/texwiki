@@ -40,10 +40,10 @@ pukiwiki: "iOS"
 
 ### シェアウェア・製品 {#na04d581}
 
-- [Texpad](http://texpadapp.com/) (シェアウェア)
+- [Texpad](https://www.texpadapp.com/) (シェアウェア)
     - Texpad はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
     - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159?mt=8)
-    - [Texpad -- blog](http://texpadapp.com/blog/)
+    - [Texpad -- blog](https://www.texpadapp.com/blog/)
     - [Texpad-API.framework](https://github.com/vallettaventures/Texpad-API)
     - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
