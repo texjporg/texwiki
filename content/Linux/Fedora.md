@@ -233,9 +233,7 @@ $ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
 
 Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
 
-## 日本語入力システム {#f0cbf30c}
-
-### libkkc {#a96c1055}
+## ibus-kkc {#a96c1055}
 
 Fedora 19 から日本語入力が ibus-kkc に変更されています． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
 
