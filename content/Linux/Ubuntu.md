@@ -43,6 +43,14 @@ Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの 
 - [Xubuntu](http://xubuntu.org/)
 - [Lubuntu](http://lubuntu.net/)
 
+### 派生版 {#m65a8766}
+
+#### Linux Mint とは {#n7037512}
+
+Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
+- [Linux Mint](</Linux/Linux Mint/>)
+
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
 
 - [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
