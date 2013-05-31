@@ -29,6 +29,10 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 - [Gentoo Packages /package/dev-texlive/texlive-latex](http://packages.gentoo.org/package/dev-texlive/texlive-latex)
 - [GenTwoo: Socilal Compiling /package/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex/)
 
+### TeX Live 2013 {#n27bff2f}
+
+- [Linux](/Linux/#texlive2013)
+
 ### TeX Live 2012 {#ba4e8250}
 
 - [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
