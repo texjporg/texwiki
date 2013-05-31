@@ -61,6 +61,7 @@ dvipdfmx がうまく動作しない場合は以下の記事を参照して /usr
 
 ### インストール {#a8514c6c}
 
+- [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
 
 Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択してインストールできます．<br>
@@ -243,6 +244,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 ## setup.exe 以外のパッケージ管理 {#re5d2b36}
 
 - [apt-cyg](https://code.google.com/p/apt-cyg/)
+    - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [cyg-apt](https://code.google.com/p/cyg-apt/)
 - [CygApt](https://code.google.com/p/maphew/wiki/CygApt)
 - [cyg-get](https://code.google.com/p/cyg-get/)
