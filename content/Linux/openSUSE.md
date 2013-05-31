@@ -59,6 +59,8 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-collection-latex texlive-collection-luatex texlive-collection-xetex
 ```
 
+- [TeXLive 2012 で pTeX を使う](http://blog.geeko.jp/ftake/748)
+
 ## Texmaker {#ua730d97}
 
 ```
