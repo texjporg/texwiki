@@ -48,35 +48,21 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 - Linux/Ubuntu
 
+#### LMDE {#q5d1118e}
+
+- Linux/Debian
+
 ### TeX Live 2013/Debian {#qcd9ce14}
 
 #### Linux Mint 16 {#h653bc7f}
 
 - Linux/Ubuntu
 
-### TeX Live 2012 {#q00bf695}
-
-#### Linux Mint 14 {#w84c80f3}
-
-- [Linux で日本語 TeX 環境構築](http://c2de6320.hatenablog.com/entry/2013/04/29/180934)
-
-#### LMDE {#i35398cb}
-
-- [Gtiddlywiki \[ a server side tiddlywiki runs on GAE \] tex](http://tsrtesttest.appspot.com/wiki/tex)
-    - [texlive 2012 インストール Debian Linux Mint Edition](http://tsrtesttest.appspot.com/wiki/texlive%202012%20%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%20Debian%20Linux%20Mint%20Edition)
-    - [texlive framed 改](http://tsrtesttest.appspot.com/wiki/texlive%20framed%20%E6%94%B9)
-    - [texlive 画像挿入でleftborderがブラック・ホワイトアウトする件](http://tsrtesttest.appspot.com/wiki/texlive%20%E7%94%BB%E5%83%8F%E6%8C%BF%E5%85%A5%E3%81%A7leftborder%E3%81%8C%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%BB%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88%E3%81%99%E3%82%8B%E4%BB%B6)
-
 ### TeX Live 2012/Debian {#ea828b67}
 
 #### Linux Mint 15 {#n724cc58}
 
 - Linux/Ubuntu
-
-#### Linux Mint 14 {#u8065ca0}
-
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
-- [linux mint 14 cinnamon というOSで「Gummi」や「Texmaker」というソフトでLatexの文書を作成したいのですが、日本語環境設定がうまくいきません。やり方を教えてください。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1497730384)
 
 ## [Python](/Python/) {#reda4f97}
 
