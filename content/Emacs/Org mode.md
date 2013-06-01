@@ -77,6 +77,7 @@ M-x list-packages RET でリストを表示して org を選択
 
 ## Export to LaTeX {#k6bbb6c5}
 
+- [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
 - [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
 - [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 
@@ -492,7 +493,7 @@ org ファイルの先頭に
 ```
 #+TITLE: hoge
 #+AUTHOR: fuga
-#+LaTeX_CLASS: jsarticle
+#+LATEX_CLASS: jsarticle
 ```
 
 を追加します．
@@ -503,4 +504,5 @@ C-c C-e l o で PDF ファイルを出力して表示します．<br>
 
 ## Export to HTML {#t60cf94b}
 
+- [HTML export](http://orgmode.org/manual/HTML-export.html)
 - [Org-mode による HTML 文書作成入門](http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
