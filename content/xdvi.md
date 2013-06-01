@@ -64,30 +64,27 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
-#### TeX Live 2013 の場合 {#c75bb558}
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/
-$ sudo tlmgr pinning add tlptexlive 'pxdvi*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pxdvi*
-$ sudo tlmgr pinning add tlptexlive 'pmetapost*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pmetapost*
-$ sudo tlmgr install pxdvi pmetapost
-$ sudo tlmgr path add
-```
-
-#### TeX Live 2012 の場合 {#nfc0c66c}
-
-- [TeX Live 2012 で pxdvi と pmetapost をインストールする方法](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1002#p5470)
-
+<!-- ***TeX Live 2013 の場合 [#c75bb558] -->
+<!--  -->
+<!-- $ sudo tlmgr update - -self - -all -->
+<!-- $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive -->
+<!-- tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
+<!-- $ sudo tlmgr pinning add tlptexlive 'pxdvi*' -->
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pxdvi* -->
+<!-- $ sudo tlmgr pinning add tlptexlive 'pmetapost*' -->
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pmetapost* -->
+<!-- $ sudo tlmgr install pxdvi pmetapost -->
+<!-- $ sudo tlmgr path add -->
+<!--  -->
+<!-- ***TeX Live 2012 の場合 [#nfc0c66c] -->
+<!-- -[[TeX Live 2012 で pxdvi と pmetapost をインストールする方法:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1002#p5470]] -->
+<!--  -->
 <!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
 <!-- $ curl -R -L -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
 <!-- $ tar xvf pxdvi.tar.xz -->
