@@ -390,7 +390,7 @@ Linux/Debian#Adobe Reader を参照してインストールすれば KozGoPr6N-M
 TeX Live をインストールして
 
 ```
-dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
+ptex2pdf -l -od '-f ptex-hiragino.map -f otf-hiragino.map' hoge.tex
 ```
 
 を実行しました。
