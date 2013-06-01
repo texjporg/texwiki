@@ -143,13 +143,55 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
-## [Evince](/Evince/) {#w1fb0d62}
+## [Python](/Python/) <a id="python"></a> {#df01e340}
+
+```
+$ sudo apt-get install python python3
+```
+
+## [Ruby](/Ruby/) <a id="ruby"></a> {#b036c19c}
+
+```
+$ sudo apt-get install ruby1.9.3
+```
+
+## [Perl](/Perl/) <a id="perl"></a> {#t46cade6}
+
+```
+$ sudo apt-get install perl
+```
+
+## [Evince](/Evince/) <a id="evince"></a> {#w1fb0d62}
 
 ```
 $ sudo apt-get install evince
 ```
 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+
+## [Okular](/Okular/) <a id="okular"></a> {#u6c2955c}
+
+```
+$ sudo apt-get install okular kde-l10n-ja
+```
+
+## [zathura](/zathura/) <a id="zathura"></a> {#r36251d6}
+
+```
+$ sudo apt-get install zathura
+```
+
+## [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#f44ae716}
+
+```
+$ sudo apt-get install qpdfview
+```
+
+## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#fff66c5d}
+
+```
+$ sudo apt-get install mupdf
+```
 
 ## [Adobe Reader](</Adobe Reader/>) <a id="adobereader"></a> {#o1495f80}
 
@@ -251,7 +293,77 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 - [WineHQ  - Adobe Reader](http://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
     - [WineHQ  - Adobe Reader 11.x](http://appdb.winehq.org/objectManager.php?sClass=version&iId=27093)
 
-## Emacs {#gfaebf66}
+## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#v9a89433}
+
+```
+$ sudo apt-get install texmaker
+$ sudo apt-get install qt4-qtconfig
+```
+
+インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+
+```
+$ sudo apt-get install ibus-qt4
+```
+
+インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
+
+## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
+
+最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
+
+```
+$ sudo apt-get install lyx
+```
+
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
+
+## [TeXworks](/TeXworks/) <a id="texworks"></a> {#r265d7ea}
+
+最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+
+```
+$ sudo apt-get install texworks
+$ sudo apt-get install qt4-qtconfig
+```
+
+インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+
+```
+$ sudo apt-get install ibus-qt4
+```
+
+インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Ubuntu)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
+
+## Gummi <a id="gummi"></a> {#g69f5317}
+
+```
+$ sudo apt-get install gummi
+```
+
+## LaTeXila <a id="latexila"></a> {#q4026bb3}
+
+```
+$ sudo apt-get install latexila
+```
+
+## [Kile](/Kile/) <a id="kile"></a> {#xe3b1e96}
+
+```
+$ sudo apt-get install kile
+```
+
+## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#f101e753}
+
+```
+$ sudo apt-get install eclipse
+```
+
+## [Emacs](/Emacs/) <a id="emacs"></a> {#gfaebf66}
+
+```
+$ sudo apt-get install emacs24
+```
 
 ### YaTeX {#r57295dd}
 
@@ -264,3 +376,39 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 - [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/Emacs/auctex_config.html)
 - [https://launchpad.net/debian/+source/auctex/](https://launchpad.net/debian/+source/auctex/)
     - [https://launchpad.net/debian/+source/auctex/+changelog](https://launchpad.net/debian/+source/auctex/+changelog)
+
+## [Vim](/Vim/) <a id="vim"></a> {#k24f9849}
+
+```
+$ sudo apt-get install vim
+```
+
+## [gedit](/gedit/) <a id="gedit"></a> {#j3cc1af4}
+
+```
+$ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
+```
+
+## [Geany](/Geany/) <a id="geany"></a> {#afd436be}
+
+```
+$ sudo apt-get install geany geany-plugins
+```
+
+## [Inkscape](/Inkscape/) <a id="inkscape"></a> {#h0e14315}
+
+```
+$ sudo apt-get install inkscape pstoedit python-lxml
+```
+
+eqtexsvg を最新版に更新します．<br>
+
+```
+$ wget http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+$ tar xvf eqtexsvg.tar.gz
+$ chmod +x eqtexsvg.py
+$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
+$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
+```
+
+Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
