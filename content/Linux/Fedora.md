@@ -32,7 +32,7 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 - [The TeXLive Archives](http://www.linux.cz/pipermail/texlive/)
 - \[[TeX\] - Luoyang Press](http://d.hatena.ne.jp/ratbeta/searchdiary?word=%2A%5BTeX%5D)
 
-### TeX Live 2013 {#n44a0820}
+### TeX Live 2013 (Fedora) {#n44a0820}
 
 #### Fedora 20 (Rawhide), 19, 18 {#u01e1fc4}
 
