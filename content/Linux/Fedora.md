@@ -26,13 +26,18 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 - [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
     - [Features/TeXLive](http://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
+- [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
 - [http://jnovy.fedorapeople.org/texlive/](http://jnovy.fedorapeople.org/texlive/)
 - [http://kojipkgs.fedoraproject.org/packages/texlive/](http://kojipkgs.fedoraproject.org/packages/texlive/)
 - [The TeXLive Archives](http://www.linux.cz/pipermail/texlive/)
 - \[[TeX\] - Luoyang Press](http://d.hatena.ne.jp/ratbeta/searchdiary?word=%2A%5BTeX%5D)
 
-### TeX Live 2013 (Fedora) {#n44a0820}
+### TeX Live 2013 <a id="texlive2013"></a> {#dfc42b2c}
+
+- [Linux](/Linux/#texlive2013)
+
+### TeX Live 2013 (Fedora) <a id="texlive2013fedora"></a> {#n44a0820}
 
 #### Fedora 20 (Rawhide), 19, 18 {#u01e1fc4}
 
