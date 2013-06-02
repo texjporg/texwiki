@@ -136,10 +136,9 @@ LuaLaTeX でも [hyperref](/hyperref/) が使用できます．<br>
 #### しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードの作成 {#pf9bb02b}
 
 しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードの作成は [hyperref](/hyperref/) を使用します．<br>
-指定するドライバは pdftex です．<br>
 
 ```
-\usepackage[pdftex,pdfencoding=auto]{hyperref}
+\usepackage[pdfencoding=auto]{hyperref}
 \hypersetup{%
   bookmarksnumbered=true,%
   colorlinks=true,%
@@ -155,6 +154,12 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - LF (\000\012)
 - CR (\000\015)
 - CRLF (\000\015\000\012)
+
+ドライバを指定しないとうまく動作しない場合は pdftex を指定します．<br>
+
+```
+\usepackage[pdftex,pdfencoding=auto]{hyperref}
+```
 
 ### [Babel](/Babel/) {#v6636cbc}
 
