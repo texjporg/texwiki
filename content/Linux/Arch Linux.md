@@ -62,6 +62,10 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 - [LaTeX - ArchWiki](https://wiki.archlinux.org/index.php/LaTeX)
 - [Kile and TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/Kile_and_TeX_Live)
 
+### TeX Live 2013 {#w9579c29}
+
+- [Linux](/Linux/#texlive2013)
+
 ### TeX Live 2012/Arch Linux {#x25fb663}
 
 texlive-langcjk, texlive-most をインストールします．<br>
