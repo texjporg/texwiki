@@ -88,6 +88,12 @@ $ sudo zypper install lyx
 $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
 ```
 
+## Kile {#a5604b87}
+
+```
+$ sudo zypper install kile
+```
+
 ## MinGW {#e5f30d58}
 
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
