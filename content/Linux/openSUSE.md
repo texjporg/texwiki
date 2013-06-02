@@ -24,9 +24,16 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 
 ## TeX Live {#n3c200b7}
 
+- [http://software.opensuse.org/package/texlive-scheme-full](http://software.opensuse.org/package/texlive-scheme-full)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+
+### TeX Live 2013 {#v87b6755}
+
+TeX Live を公式サイトのパッケージを使用してインストールする場合は [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) パッケージをインストールします．<br>
+
+- [Linux](/Linux/#texlive2013)
 
 ### TeX Live 2012/TeX Live for SUSE Linux {#y0f6032d}
 
