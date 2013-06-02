@@ -325,7 +325,7 @@ $ sudo apt-get install qt4-qtconfig
 $ sudo apt-get install ibus-qt4
 ```
 
-インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
+インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Linux Mint)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
@@ -352,7 +352,7 @@ $ sudo apt-get install qt4-qtconfig
 $ sudo apt-get install ibus-qt4
 ```
 
-インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Ubuntu)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
+インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Linux Mint)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
 
 ## Gummi <a id="gummi"></a> {#a1b3d45b}
 
