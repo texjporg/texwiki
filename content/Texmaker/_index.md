@@ -65,6 +65,11 @@ GPLv2
 　 [![Windows 8 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbwindows8.png)](http://www.xm1math.net/texmaker/windows8.png)<br>
 　　Texmaker compiled with Qt5　　　　　　　Texmaker at work on Windows 8<br>
 
+<br>
+
+[![Ubuntu で動作する Qt5 バージョンの Texmaker](http://www.xm1math.net/texmaker/thumbtexmakerQT5_ubuntu.png)](http://www.xm1math.net/texmaker/texmakerQT5_ubuntu.png)<br>
+　Qt5 version of Texmaker on Ubuntu<br>
+
 ### 特徴 {#m6bf2399}
 
 > <table>
@@ -96,24 +101,6 @@ GPLv2
 ### 修正版・派生版 {#n8123b82}
 
 - [texmaker(Win)修正版](http://blogs.yahoo.co.jp/igproj_fusion/folder/566040.html)
-    <!-- - -[[texmaker-3.5.1(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/16344768.html]] -->
-    <!-- - -[[texmaker-3.5(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15979041.html]] -->
-    <!-- - -[[texmaker-3.4.1(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15819529.html]] -->
-    <!-- - -[[texmaker-3.4(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15803245.html]] -->
-    <!-- - -[[texmaker-3.3.4(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15517641.html]] -->
-    <!-- - -[[texmaker-3.3.3(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15227946.html]] -->
-    <!-- - -[[texmaker-3.3.2(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/15005904.html]] -->
-    <!-- - -[[texmaker-3.3.1(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/14973093.html]] -->
-    <!-- - -[[texmaker-3.2.2_r1（Win）修正版:http://blogs.yahoo.co.jp/igproj_fusion/14911563.html]] -->
-    <!-- - -[[texmaker-3.2.2(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/14653392.html]] -->
-    <!-- - --[[texmaker-3.2.2.exe:http://igproj.com/Archive/LaTeX/]] -->
-    <!-- - -[[texmaker-3.2.1(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/14574990.html]] -->
-    <!-- - -[[texmaker-3.2(Win)修正版:http://blogs.yahoo.co.jp/igproj_fusion/14500793.html]] -->
-    <!-- - -[[Texmaker改造:http://blogs.yahoo.co.jp/igproj_fusion/14296354.html]] -->
-    <!-- - --[[「Texmaker改造」で内蔵PDFビューアーを利用するには:http://blogs.yahoo.co.jp/igproj_fusion/14390807.html]] -->
-    <!-- - --[[TeXLive2011(Windows)とTexmaker改造版:http://blogs.yahoo.co.jp/igproj_fusion/14393930.html]] -->
-    <!-- - --[[我輩はネ申である:http://blogs.yahoo.co.jp/igproj_fusion/14427869.html]] -->
-
 - [TeXstudio](/TeXstudio/)
 - [bidiTeXmaker3](https://bitbucket.org/srazi/biditexmaker3)
 
@@ -342,25 +329,11 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 - C:\MinGW\bin と C:\Qt\インストールしたQtのバージョン\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
-<!-- ソースコードを修正してビルドされる方は，以下のサイトが参考になります． -->
-<!-- -[[LaTeX frontend/texmaker/ver 1.9.2 (Windows)【2009.10.15】>http://igproj.com/fusion/wiki/LaTeX/index.php?LaTeX%20frontend/texmaker/ver%201.9.2%20(Win)]] -->
-<!-- -[[LaTeX Install/texmaker>http://igproj.com/zone3/index.php?LaTeX%20Install/texmaker]] -->
-<!-- -[[How-to static build>http://igproj.com/zone7/index.php?How-to%20static%20build]] -->
+### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある {#i1222dd8}
 
-<!-- なお -->
-
-<!-- -http://igproj.com/fusion/wiki/LaTeX/ -->
-<!-- -http://igproj.com/zone3/ -->
-
-<!-- で提供されるすべてのソフトウェアおよびドキュメントは，GNU 一般公衆利用許諾契約書（GNU General Public License; GPL），GNU フリー文書利用許諾契約書（GNU Free Documentation License; GFDL）の条件と制約のもとで，自由に複製，再頒布，改変が可能です． -->
-<!-- 「上記のサイト」ということは、私が書いたAnthyの設定に関する文書もGFDLになるんですか？ それで構いはしないのですが - wakakumo -->
-<!-- すみません。たしかにそう解釈することもできますね。修正しときます。ちなみに上記のサイトは私とは関係ありません。あと日本語化の作業を続けていただいてありがとうございました。 - 前に Texmaker を日本語化して wakakumo さんにあげた人 -->
-
-### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりする {#i1222dd8}
-
-Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりします．<br>
-fcitx-mozc では \section{ の直後では日本語入力が ON になりません．日本語入力を ON にした状態で \section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 になります．<br>
-ibus-kkc も同様に \section{ の直後では日本語入力が ON になりません．<br>
+Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがあります．<br>
+fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．\section{ の直後に日本語入力が ON にならない場合に手動で日本語入力を ON にした状態で \section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されます．<br>
+ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．<br>
 
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
 
