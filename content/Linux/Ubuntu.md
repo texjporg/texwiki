@@ -316,16 +316,39 @@ $ sudo apt-get install mupdf
 
 ```
 $ sudo apt-get install texmaker
-$ sudo apt-get install qt4-qtconfig
 ```
 
-インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
 
-```
-$ sudo apt-get install ibus-qt4
-```
+1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
-インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Linux Mint)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
+    ```
+    $ sudo apt-get install ibus-qt4
+    ```
+
+1. [qt4-qtconfig](http://packages.ubuntu.com/ja/qt4-qtconfig) を導入する
+
+    ```
+    $ sudo apt-get install qt4-qtconfig
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. Texmaker を起動する
+
+    ```
+    $ texmaker &
+    ```
+
+とすると Texmaker の日本語入力で黒く表示される問題が解決しました．
+
+Qt 設定ツールを使用せずに Texmaker の編集画面で右クリックして \[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
+\[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
@@ -343,16 +366,39 @@ $ sudo apt-get install lyx
 
 ```
 $ sudo apt-get install texworks
-$ sudo apt-get install qt4-qtconfig
 ```
 
-インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
 
-```
-$ sudo apt-get install ibus-qt4
-```
+1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
-インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Linux Mint)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
+    ```
+    $ sudo apt-get install ibus-qt4
+    ```
+
+1. [qt4-qtconfig](http://packages.ubuntu.com/ja/qt4-qtconfig) を導入する
+
+    ```
+    $ sudo apt-get install qt4-qtconfig
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. TeXworks を起動する
+
+    ```
+    $ texworks &
+    ```
+
+1. 現在カーソルのある行をハイライトするをチェックする
+
+とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
+Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+\[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
 
 ## Gummi <a id="gummi"></a> {#a1b3d45b}
 
