@@ -1018,6 +1018,5 @@ $ cp -pR poppler-data-0.4.6 /mingw/share/poppler
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [Popplerについてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130112/1358002227)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
-- [popplerでPDFを画像に変換すると日本語フォントが抜ける話](http://nanatomo.com/program/744)
 - [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
