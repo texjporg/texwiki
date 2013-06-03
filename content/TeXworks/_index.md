@@ -36,8 +36,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
         <!-- - -[[~texworks/packaging/win32 : changes:http://bazaar.launchpad.net/~texworks/packaging/win32/changes]] -->
         <!-- - -[[~texworks/packaging/trunk : changes:http://bazaar.launchpad.net/~texworks/packaging/trunk/changes]] -->
         <!-- -[[stloeffler/TeXworks - GitHub:https://github.com/stloeffler/TeXworks]] Unofficial fork of the TeXworks editor -->
-
-- [Experimental Multi-Page PDF Viewer](https://github.com/stloeffler/TeXworks/tree/multipage-viewer)
+        <!-- -[[Experimental Multi-Page PDF Viewer:https://github.com/stloeffler/TeXworks/tree/multipage-viewer]] -->
 
 ### 動作環境 {#ye220c29}
 
@@ -59,9 +58,9 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, poppler 0.22.1 を使用して
 
 - [コミットログ (svn, official)](https://code.google.com/p/texworks/source/list)
     <!-- -[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
+    <!-- -[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
+    <!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
 
-- [コミットログ (github, unofficial)](https://github.com/Sharpie/TeXworks/commits/)
-- [コミットログ (github, multipage-viewer)](https://github.com/stloeffler/TeXworks/commits/multipage-viewer)
 - \[[texlive\] Index of /trunk/Master/tlpkg/texworks](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log)
 
@@ -213,9 +212,9 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 ***
 
-#### 修正方法 (Ubuntu) {#ke5fd57d}
+#### 修正方法 (Linux Mint) {#ke5fd57d}
 
-Ubuntu 13.04 で ibus を使用している場合は
+Linux Mint 15 で ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
