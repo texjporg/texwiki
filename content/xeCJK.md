@@ -16,6 +16,7 @@ pukiwiki: "xeCJK"
 ## [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
+IVS (異体字セレクタ) にも対応しています．<br>
 [W32TeX](/W32TeX/) の xetex-w32.tar.xz, [TeX Live](</TeX Live/>), [MiKTeX](/MiKTeX/) に含まれています．<br>
 
 - [ctex-kit](https://code.google.com/p/ctex-kit/)
