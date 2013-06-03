@@ -39,9 +39,9 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ### TeX Live 2013 (Fedora) <a id="texlive2013fedora"></a> {#n44a0820}
 
-#### Fedora 20 (Rawhide), 19, 18 {#u01e1fc4}
+#### Fedora 20, 19, 18 {#u01e1fc4}
 
-Fedora 20 (Rawhide), 19, 18 では TeX Live 2013 が使用できます．<br>
+Fedora 20, 19, 18 では TeX Live 2013 が使用できます．<br>
 texlive-scheme-full を指定すれば TeX Live 2013 をフルインストールできます．<br>
 
 ```
@@ -155,11 +155,39 @@ $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 
 ```
 $ sudo yum install texmaker
-$ sudo yum install qt-config
-$ sudo yum install ibus-qt
 ```
 
-[Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Fedora)](/Texmaker/#n5ec4d4e) を参照して不具合を回避します．<br>
+Fedora 20, 19, 18 の場合は
+
+1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
+
+    ```
+    $ sudo yum install ibus-qt
+    ```
+
+1. [qt-config](https://apps.fedoraproject.org/packages/qt-config) を導入する
+
+    ```
+    $ sudo yum install qt-config
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. Texmaker を起動する
+
+    ```
+    $ texmaker &
+    ```
+
+とすると Texmaker の日本語入力で黒く表示される問題が解決しました．
+
+Qt 設定ツールを使用せずに Texmaker の編集画面で右クリックして \[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
+\[インプットメソッドを選択\] で XIM を選択すると日本語入力で黒く表示されてしまいました．<br>
 
 ## [LyX](/LyX/) {#n0d7807d}
 
@@ -175,7 +203,37 @@ $ sudo yum install lyx
 $ sudo yum install texworks
 ```
 
-[かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Fedora)](/TeXworks/#qfaf14ec) を参照して不具合を回避します．<br>
+Fedora 20, 19, 18 の場合は
+
+1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
+
+    ```
+    $ sudo yum install ibus-qt
+    ```
+
+1. [qt-config](https://apps.fedoraproject.org/packages/qt-config) を導入する
+
+    ```
+    $ sudo yum install qt-config
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. TeXworks を起動する
+
+    ```
+    $ texworks &
+    ```
+
+1. 現在カーソルのある行をハイライトするをチェックする
+
+とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
+Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+\[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
 
 ## Gummi {#ce6ea66b}
 
