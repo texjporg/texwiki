@@ -18,6 +18,9 @@ pukiwiki: "Linux/Ubuntu"
 ## Ubuntu とは {#i6bcb07d}
 
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
+Ubuntu 12.10 以降は Amazon レンズが収録されています．<br>
+Ubuntu はデスクトップ環境に Unity を採用しています．<br>
+Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](</Linux/Linux Mint/>) や Ubuntu の公式派生版を使用してください．<br>
 
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
@@ -28,6 +31,12 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
+
+### Amazon レンズ (unity-lens-video, unity-scope-video-remote, unity-lens-shopping, unity-lens-music, unity-lens-photos, unity-lens-radios) の削除 {#l309d60c}
+
+```
+$ sudo apt-get remove unity-lens-video unity-scope-video-remote unity-lens-shopping unity-lens-music unity-lens-photos unity-lens-radios
+```
 
 ### 公式派生版 {#i77fdd5e}
 
@@ -69,13 +78,13 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#y097b8c5}
 
-#### Ubuntu 13.04 {#se51f85a}
+#### Linux Mint 15 {#se51f85a}
 
 - Linux/Ubuntu
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
 
-#### Ubuntu 13.10 {#xabd5471}
+#### Linux Mint 16 {#xabd5471}
 
 TeX Live 2013/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
 
@@ -115,9 +124,9 @@ repstopdf,epspdf,extractbb,\
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
 
-#### Ubuntu 13.04 {#fd747683}
+#### Linux Mint 15 {#fd747683}
 
-Ubuntu 12.10 と同様の方法でインストールできます．<br>
+Linux Mint 14 と同様の方法でインストールできます．<br>
 
 - [Ubuntu(Xubuntu)でTeXをEmacsで書く](http://ameblo.jp/the1736/entry-11533722174.html)
 - \[[Ubuntu13.04\]LaTexのセットアップ](http://aruneko.wkeya.com/archives/461)
@@ -165,7 +174,7 @@ repstopdf,epspdf,extractbb,\
 
 ### dummy パッケージの作成 {#he7ed5d4}
 
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live 2012/Debian に依存するパッケージをインストールしようとすると Ubuntu や Debian GNU/Linux の TeX Live 2012/Debian も同時にインストールされてしまいます．<br>
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live 2012/Debian に依存するパッケージをインストールしようとすると TeX Live 2012/Debian も同時にインストールされてしまいます．<br>
 TeX Live 2012/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
 
 ```
@@ -209,7 +218,7 @@ $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 
 ### dvips + ps2pdf を使用して PDF ファイルを作成 {#gcac3589}
 
-Ubuntu 13.04 には Ghostscript 9.07 が収録されています．<br>
+Linux Mint 15 には Ghostscript 9.07 が収録されています．<br>
 Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
 
 ```
@@ -318,7 +327,7 @@ $ sudo apt-get install mupdf
 $ sudo apt-get install texmaker
 ```
 
-Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+Linux Mint 15 でインプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
@@ -352,7 +361,7 @@ Qt 設定ツールを使用せずに Texmaker の編集画面で右クリック�
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
-最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
+最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
 
 ```
 $ sudo apt-get install lyx
@@ -362,13 +371,13 @@ $ sudo apt-get install lyx
 
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
 
-最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Linux Mint](</TeXworks/インストール/#p69845c9>) を参照．<br>
 
 ```
 $ sudo apt-get install texworks
 ```
 
-Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+Linux Mint 15 でインプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
@@ -478,7 +487,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
 
-Ubuntu 13.04 では fcitx-mozc が利用できます．<br>
+Linux Mint 15 では fcitx-mozc が利用できます．<br>
 
 ```
 $ sudo apt-get install software-properties-common
