@@ -55,7 +55,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 - [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
 
-### Ubuntu {#lacd43b5}
+### Linux Mint {#lacd43b5}
 
 - [Ubuntu -- パッケージ検索結果 -- evince](http://packages.ubuntu.com/ja/evince)
 
