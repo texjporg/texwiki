@@ -53,7 +53,7 @@ KDE
 - [kde4-kile](http://trac.macports.org/browser/trunk/dports/tex/kde4-kile/Portfile)
 - [How to install Kile on Mac OS X Mountain Lion](http://www.tosnos.com/?p=28)
 
-### Ubuntu {#b7368c5d}
+### Linux Mint {#b7368c5d}
 
 - [Ubuntu -- パッケージ検索結果 -- kile](http://packages.ubuntu.com/ja/kile)
 
