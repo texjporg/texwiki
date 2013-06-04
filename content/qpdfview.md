@@ -40,7 +40,7 @@ Linux
 
 ## ダウンロード/インストール {#h3948c41}
 
-### Ubuntu {#c6d3b357}
+### Linux Mint {#c6d3b357}
 
 - [Ubuntu -- パッケージ検索結果 -- qpdfview](http://packages.ubuntu.com/ja/qpdfview)
 
