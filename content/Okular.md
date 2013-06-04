@@ -41,7 +41,7 @@ KDE
 
 - [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
 
-### Ubuntu {#d3c8be06}
+### Linux Mint {#d3c8be06}
 
 - [Ubuntu -- パッケージ検索結果 -- okular](http://packages.ubuntu.com/ja/okular)
 
