@@ -7,9 +7,9 @@ pukiwiki: "Linux/Ubuntu"
 
 # Linux/Ubuntu
 
-[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
+[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu/Linux Mint
 
-## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/)/[Linux Mint](</Linux/Linux Mint/>) {#m38e62cf}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right">
 
@@ -19,7 +19,7 @@ pukiwiki: "Linux/Ubuntu"
 
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
 Ubuntu 12.10 以降は Amazon レンズが収録されています．<br>
-Ubuntu はデスクトップ環境に Unity を採用しています．<br>
+Ubuntu 11.04 以降はデスクトップ環境に Unity を採用しています．<br>
 Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](</Linux/Linux Mint/>) や Ubuntu の公式派生版を使用してください．<br>
 
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
@@ -32,7 +32,11 @@ Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
 
-### Amazon レンズ (unity-lens-video, unity-scope-video-remote, unity-lens-shopping, unity-lens-music, unity-lens-photos, unity-lens-radios) の削除 {#l309d60c}
+### Amazon レンズ ([unity-lens-video](http://packages.ubuntu.com/ja/unity-lens-video), [unity-scope-video-remote](http://packages.ubuntu.com/ja/unity-scope-video-remote), [unity-lens-shopping](http://packages.ubuntu.com/ja/unity-lens-shopping), [unity-lens-music](http://packages.ubuntu.com/ja/unity-lens-music), [unity-lens-photos](http://packages.ubuntu.com/ja/unity-lens-photos), [unity-lens-radios](http://packages.ubuntu.com/ja/unity-lens-radios)) の削除 {#l309d60c}
+
+- [フリーソフトウェアのリーダーRichard Stallman曰く: Amazonの検索を統合したUbuntuはスパイウェアだ](http://jp.techcrunch.com/2012/12/08/20121207free-software-leader-richard-stallman-amazon-search-integration-in-ubuntu-amounts-to-spyware/)
+- [Ubuntu 12.10にAmazonレンズを無効にする設定項目が加わったらしい](http://cpplover.blogspot.jp/2012/10/ubuntu-1210amazon.html)
+- [ストールマン、UbuntuのUnityレンズについて](http://cpplover.blogspot.jp/2012/10/ubuntuunity.html)
 
 ```
 $ sudo apt-get remove unity-lens-video unity-scope-video-remote unity-lens-shopping unity-lens-music unity-lens-photos unity-lens-radios
