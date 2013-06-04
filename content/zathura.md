@@ -64,7 +64,7 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 ## ダウンロード/インストール {#w2221884}
 
-### Ubuntu {#cc8ebe01}
+### Linux Mint {#cc8ebe01}
 
 - [Ubuntu -- パッケージ検索結果 -- zathura](http://packages.ubuntu.com/ja/zathura)
 
