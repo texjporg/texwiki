@@ -76,16 +76,10 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 #### Linux Mint 16 {#h653bc7f}
 
-TeX Live 2013/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
+TeX Live 2013/Debian をインストールする場合は texlive-full を指定してインストールします．<br>
 
 ```
 $ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 /usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
@@ -118,16 +112,10 @@ repstopdf,epspdf,extractbb,\
 
 Linux Mint 14 と同様の方法でインストールできます．<br>
 
-TeX Live 2012/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
+TeX Live 2012/Debian をインストールする場合は texlive-full を指定してインストールします．<br>
 
 ```
 $ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 /usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
