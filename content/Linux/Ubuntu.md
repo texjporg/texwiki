@@ -87,53 +87,15 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 
 #### Linux Mint 15 {#se51f85a}
 
-- Linux/Ubuntu
+- [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
 
 #### Linux Mint 16 {#xabd5471}
 
-TeX Live 2013/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
-```
-
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
+- [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013debian>)
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
-
-#### Linux Mint 15 {#fd747683}
-
-Linux Mint 14 と同様の方法でインストールできます．<br>
 
 - [Ubuntu(Xubuntu)でTeXをEmacsで書く](http://ameblo.jp/the1736/entry-11533722174.html)
 - \[[Ubuntu13.04\]LaTexのセットアップ](http://aruneko.wkeya.com/archives/461)
@@ -141,368 +103,99 @@ Linux Mint 14 と同様の方法でインストールできます．<br>
 - [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
 - [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
 
-TeX Live 2012/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
+#### Linux Mint 15 {#fd747683}
 
-```
-$ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
-```
-
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
+- [Linux/Linux Mint](</Linux/Linux Mint/#texlive2012debian>)
 
 ## TeX Live 2013 <a id="texlive2013install"></a> {#jd4f2edd}
 
-### dummy パッケージの作成 {#he7ed5d4}
-
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live 2012/Debian に依存するパッケージをインストールしようとすると TeX Live 2012/Debian も同時にインストールされてしまいます．<br>
-TeX Live 2012/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
-
-```
-$ sudo apt-get install equivs
-$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
-```
-
-<!-- debian-control-ex.txt に texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
-
-```
-$ equivs-build debian-control-ex.txt
-$ sudo dpkg -i texlive-local_2011-1~1_all.deb
-```
-
-### TeX Live 2013 のインストール {#hf3fd9de}
-
-[Linux#TeX Live 2013 のインストール](/Linux/#texlive2013) を参照．<br>
-
-#### texmf.cnf の編集 {#e29d5a24}
-
-[Linux#texmf.cnf の編集](/Linux/#texmfcnf) を参照．<br>
-
-### ptex2pdf で IPAex フォントの埋め込み {#j5ae0e71}
-
-TeX Live 2013 には IPAex フォント，ptex-ipaex.map が収録されています．<br>
-
-```
-$ kpsewhich ipaexm.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-$ kpsewhich ipaexg.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich ptex-ipaex.map
-/usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
-```
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
-```
-
-### dvips + ps2pdf を使用して PDF ファイルを作成 {#gcac3589}
-
-Linux Mint 15 には Ghostscript 9.07 が収録されています．<br>
-Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
-
-```
-$ sudo apt-get install ghostscript
-```
-
-以下の表示が出力されて dvips + ps2pdf (Ghostscript) を使用して PDF ファイルが作成できない場合は Ghostscript の設定をします．<br>
-
-```
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexm-H.
-Can't find (or can't open) font file ipaexm-H.
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexg-H.
-Can't find (or can't open) font file ipaexg-H.
-```
-
-Ghostscript の Search path を確認します．<br>
-
-```
-$ gs --help
-...
-Search path:
-   /usr/share/ghostscript/9.07/Resource/Init :
-   /usr/share/ghostscript/9.07/lib :
-   /usr/share/ghostscript/9.07/Resource/Font :
-   /usr/share/ghostscript/fonts : /var/lib/ghostscript/fonts :
-   /usr/share/cups/fonts : /usr/share/ghostscript/fonts :
-   /usr/local/lib/ghostscript/fonts : /usr/share/fonts
-```
-
-/usr/share/fonts/truetype/ipaex に TeX Live 2013 の IPAex フォントのディレクトリのシンボリックリンクを作成します．
-
-```
-$ sudo ln -s /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
-```
-
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap を作成します．
-
-```
-$ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
-```
-
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap に設定を記述します．<br>
-
-```
-/ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/ipaexg << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexg.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/Ryumin-Light /ipaexm ;
-/GothicBBB-Medium /ipaexg ;
-```
-
-ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
 
 ## [Python](/Python/) <a id="python"></a> {#c68c1c0f}
 
-```
-$ sudo apt-get install python python3
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#python>)
 
 ## [Ruby](/Ruby/) <a id="ruby"></a> {#j96f01f6}
 
-```
-$ sudo apt-get install ruby1.9.3
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#ruby>)
 
 ## [Perl](/Perl/) <a id="perl"></a> {#q23bc7da}
 
-```
-$ sudo apt-get install perl
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#perl>)
 
 ## [Evince](/Evince/) <a id="evince"></a> {#m440464c}
 
-```
-$ sudo apt-get install evince
-```
-
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#evince>)
 
 ## [Okular](/Okular/) <a id="okular"></a> {#xd972c8e}
 
-```
-$ sudo apt-get install okular kde-l10n-ja
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#okular>)
 
 ## [zathura](/zathura/) <a id="zathura"></a> {#z031990b}
 
-```
-$ sudo apt-get install zathura
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#zathura>)
 
 ## [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#n4d4de3e}
 
-```
-$ sudo apt-get install qpdfview
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#qpdfview>)
 
 ## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#s8c9b663}
 
-```
-$ sudo apt-get install mupdf
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#mupdf>)
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#z2142745}
 
-```
-$ sudo apt-get install texmaker
-```
-
-Linux Mint 15 でインプットメソッドに ibus を使用している場合は
-
-1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
-
-    ```
-    $ sudo apt-get install ibus-qt4
-    ```
-
-1. [qt4-qtconfig](http://packages.ubuntu.com/ja/qt4-qtconfig) を導入する
-
-    ```
-    $ sudo apt-get install qt4-qtconfig
-    ```
-
-1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
-
-    ```
-    $ qtconfig-qt4
-    ```
-
-1. Texmaker を起動する
-
-    ```
-    $ texmaker &
-    ```
-
-とすると Texmaker の日本語入力で黒く表示される問題が解決しました．
-
-Qt 設定ツールを使用せずに Texmaker の編集画面で右クリックして \[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
-編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
-\[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#texmaker>)
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
-最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
-
-```
-$ sudo apt-get install lyx
-```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#lyx>)
 
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
 
-最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Linux Mint](</TeXworks/インストール/#p69845c9>) を参照．<br>
-
-```
-$ sudo apt-get install texworks
-```
-
-Linux Mint 15 でインプットメソッドに ibus を使用している場合は
-
-1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
-
-    ```
-    $ sudo apt-get install ibus-qt4
-    ```
-
-1. [qt4-qtconfig](http://packages.ubuntu.com/ja/qt4-qtconfig) を導入する
-
-    ```
-    $ sudo apt-get install qt4-qtconfig
-    ```
-
-1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
-
-    ```
-    $ qtconfig-qt4
-    ```
-
-1. TeXworks を起動する
-
-    ```
-    $ texworks &
-    ```
-
-1. 現在カーソルのある行をハイライトするをチェックする
-
-とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
-Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
-\[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#texworks>)
 
 ## Gummi <a id="gummi"></a> {#a1b3d45b}
 
-```
-$ sudo apt-get install gummi
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#gummi>)
 
 ## LaTeXila <a id="latexila"></a> {#v3e14a29}
 
-```
-$ sudo apt-get install latexila
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#latexila>)
 
 ## [Kile](/Kile/) <a id="kile"></a> {#u0698a20}
 
-```
-$ sudo apt-get install kile
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#kile>)
 
 ## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#ae8afa99}
 
-```
-$ sudo apt-get install eclipse
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#eclipse>)
 
 ## [Emacs](/Emacs/) <a id="emacs"></a> {#s0b6fa60}
 
-```
-$ sudo apt-get install emacs24
-```
-
-### [YaTeX](/YaTeX/) {#pc05aa7c}
-
-- [https://launchpad.net/ubuntu/+source/yatex/](https://launchpad.net/ubuntu/+source/yatex/)
-    - [https://launchpad.net/ubuntu/+source/yatex/+changelog](https://launchpad.net/ubuntu/+source/yatex/+changelog)
-
-### [AUCTeX](/AUCTeX/) {#u31c1597}
-
-- [https://launchpad.net/ubuntu/+source/auctex/](https://launchpad.net/ubuntu/+source/auctex/)
-    - [https://launchpad.net/ubuntu/+source/auctex/+changelog](https://launchpad.net/ubuntu/+source/auctex/+changelog)
+[Linux/Linux Mint](</Linux/Linux Mint/#emacs>)
 
 ## [Vim](/Vim/) <a id="vim"></a> {#a5b8fa0b}
 
-```
-$ sudo apt-get install vim
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#vim>)
 
 ## [gedit](/gedit/) <a id="gedit"></a> {#ofba42a2}
 
-```
-$ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#gedit>)
 
 ## [Geany](/Geany/) <a id="geany"></a> {#zed31359}
 
-```
-$ sudo apt-get install geany geany-plugins
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#geany>)
 
 ## [Inkscape](/Inkscape/) <a id="inkscape"></a> {#u785615b}
 
-```
-$ sudo apt-get install inkscape pstoedit python-lxml
-```
-
-eqtexsvg を最新版に更新します．<br>
-
-```
-$ wget http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
-$ tar xvf eqtexsvg.tar.gz
-$ chmod +x eqtexsvg.py
-$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
-$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
-```
-
-Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
+[Linux/Linux Mint](</Linux/Linux Mint/#inkscape>)
 
 ## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
 
 Linux Mint 15 では fcitx-mozc が利用できます．<br>
 
-```
-$ sudo apt-get install software-properties-common
-$ sudo apt-add-repository ppa:ikuya-fruitsbasket/fcitx
-$ sudo apt-get update
-$ sudo apt-get install fcitx fcitx-mozc
-$ im-config -x
-```
+[Linux/Linux Mint](</Linux/Linux Mint/#fcitx-mozc>)
 
 ## 関連リンク {#ofcc84e4}
 
