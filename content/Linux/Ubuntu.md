@@ -34,8 +34,10 @@ Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](
 
 ### Amazon レンズ ([unity-lens-video](http://packages.ubuntu.com/ja/unity-lens-video), [unity-scope-video-remote](http://packages.ubuntu.com/ja/unity-scope-video-remote), [unity-lens-shopping](http://packages.ubuntu.com/ja/unity-lens-shopping), [unity-lens-music](http://packages.ubuntu.com/ja/unity-lens-music), [unity-lens-photos](http://packages.ubuntu.com/ja/unity-lens-photos), [unity-lens-radios](http://packages.ubuntu.com/ja/unity-lens-radios)) の削除 {#l309d60c}
 
+- [http://www.gnu.org/distros/common-distros.html#Ubuntu](http://www.gnu.org/distros/common-distros.html#Ubuntu)
 - [フリーソフトウェアのリーダーRichard Stallman曰く: Amazonの検索を統合したUbuntuはスパイウェアだ](http://jp.techcrunch.com/2012/12/08/20121207free-software-leader-richard-stallman-amazon-search-integration-in-ubuntu-amounts-to-spyware/)
 - [リチャードストールマン氏が Ubuntu を非難](http://japan.internet.com/webtech/20121211/3.html)
+- [2012年9月27日　問題は広告じゃない!? Ubuntu 12.10のデフォルト検索→Amazonに反対するワケ](http://gihyo.jp/admin/clip/01/linux_dt/201209/27)
 - [Ubuntu 12.10にAmazonレンズを無効にする設定項目が加わったらしい](http://cpplover.blogspot.jp/2012/10/ubuntu-1210amazon.html)
 - [ストールマン、UbuntuのUnityレンズについて](http://cpplover.blogspot.jp/2012/10/ubuntuunity.html)
 - [Richard Stallman氏の批判にUbuntuのコミュニティーマネージャーが反論](http://linux.slashdot.jp/story/12/12/10/2111218/Richard-Stallman%E6%B0%8F%E3%81%AE%E6%89%B9%E5%88%A4%E3%81%ABUbuntu%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E5%8F%8D%E8%AB%96)
@@ -178,11 +180,3 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 Linux Mint 15 では fcitx-mozc が利用できます．<br>
 
 [Linux/Linux Mint](</Linux/Linux Mint/#fcitx-mozc>)
-
-## 関連リンク {#ofcc84e4}
-
-- [ASCII.jp：～師範、組版システム「TeX」について教えてください！～｜行っとけ！　Ubuntu道場！](http://ascii.jp/elem/000/000/725/725528/)
-- [Sickly Life](http://www.k5.dion.ne.jp/~r-f/sicklylife/) Ubuntu をインストールした直後に行う設定
-- [Ubuntu 12.04のevinceでpdfを開くと明朝体もゴシック体で表示されるのを直す](http://ubutun.blogspot.jp/2012/05/ubuntu-1204evincepdf.html)
-- [Ubuntu 12.04をインストール](http://ubutun.blogspot.jp/2012/04/ubuntu-1204.html)
-- [本家Ubuntuの日本語表示問題 Ubuntu 12.04編](http://blog.minawa.net/2012/04/ubuntu-ubuntu-1204.html)
