@@ -21,8 +21,6 @@ PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 ```
 
 ```
@@ -45,8 +43,6 @@ PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択し
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 ```
 
 ```
@@ -68,8 +64,6 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 ```
 
 ```
@@ -90,8 +84,6 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 PDFコマンドは PdfViewer を使用します．<br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 ```
 
