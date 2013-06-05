@@ -52,22 +52,12 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 #### Debian GNU/Linux sid で TeX Live 2013/Debian のインストール {#b43aa577}
 
-- フルインストールする場合は Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/sid/texlive-full) パッケージを選択してインストール
-- 個別にインストールする場合は Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/sid/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/sid/texlive-fonts-recommended) パッケージを選択してインストール
-
-すれば OK です．<br>
+Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/sid/texlive-full) パッケージを選択してインストールすれば OK です．<br>
 
 apt-get を使用してインストールしても OK です．<br>
-フルインストールする場合は
 
 ```
 $ sudo apt-get install texlive-full
-```
-
-個別にインストールする場合は
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 /usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
@@ -103,22 +93,12 @@ repstopdf,epspdf,extractbb,\
 
 #### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
 
-- フルインストールする場合は Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/wheezy/texlive-full) パッケージを選択してインストール
-- 個別にインストールする場合は Synaptic パッケージマネージャから [texlive-lang-cjk](http://packages.debian.org/wheezy/texlive-lang-cjk), [texlive-fonts-recommended](http://packages.debian.org/wheezy/texlive-fonts-recommended) パッケージを選択してインストール
-
-すれば OK です．<br>
+Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/wheezy/texlive-full) パッケージを選択してインストールすれば OK です．<br>
 
 apt-get を使用してインストールしても OK です．<br>
-フルインストールする場合は
 
 ```
 $ sudo apt-get install texlive-full
-```
-
-個別にインストールする場合は
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
 ```
 
 /usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
