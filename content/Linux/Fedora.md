@@ -42,22 +42,10 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 #### Fedora 20, 19, 18 {#u01e1fc4}
 
 Fedora 20, 19, 18 では TeX Live 2013 が使用できます．<br>
-texlive-scheme-full を指定すれば TeX Live 2013 をフルインストールできます．<br>
+yum で texlive-scheme-full を指定すれば TeX Live 2013 をインストールできます．<br>
 
 ```
 $ sudo yum install texlive-scheme-full
-```
-
-個別にインストールしたい場合は texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
-
-```
-$ sudo yum install texlive-collection-langcjk
-```
-
-pdfLaTeX, [LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) を使用する場合は texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex パッケージもインストールします．<br>
-
-```
-$ sudo yum install texlive-collection-latex texlive-collection-luatex texlive-collection-xetex
 ```
 
 /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
