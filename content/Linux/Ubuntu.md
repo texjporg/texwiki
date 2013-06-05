@@ -17,7 +17,7 @@ pukiwiki: "Linux/Ubuntu"
 
 ## Ubuntu とは {#i6bcb07d}
 
-Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
+Ubuntu は Debian GNU/Linux をベースに Amazon レンズを追加した Linux ディストリビューションです．<br>
 Ubuntu 12.10 以降は Amazon レンズが収録されています．<br>
 Ubuntu 11.04 以降はデスクトップ環境に Unity を採用しています．<br>
 Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](</Linux/Linux Mint/>) や Ubuntu の公式派生版を使用してください．<br>
@@ -35,8 +35,11 @@ Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](
 ### Amazon レンズ ([unity-lens-video](http://packages.ubuntu.com/ja/unity-lens-video), [unity-scope-video-remote](http://packages.ubuntu.com/ja/unity-scope-video-remote), [unity-lens-shopping](http://packages.ubuntu.com/ja/unity-lens-shopping), [unity-lens-music](http://packages.ubuntu.com/ja/unity-lens-music), [unity-lens-photos](http://packages.ubuntu.com/ja/unity-lens-photos), [unity-lens-radios](http://packages.ubuntu.com/ja/unity-lens-radios)) の削除 {#l309d60c}
 
 - [フリーソフトウェアのリーダーRichard Stallman曰く: Amazonの検索を統合したUbuntuはスパイウェアだ](http://jp.techcrunch.com/2012/12/08/20121207free-software-leader-richard-stallman-amazon-search-integration-in-ubuntu-amounts-to-spyware/)
+- [リチャードストールマン氏が Ubuntu を非難](http://japan.internet.com/webtech/20121211/3.html)
 - [Ubuntu 12.10にAmazonレンズを無効にする設定項目が加わったらしい](http://cpplover.blogspot.jp/2012/10/ubuntu-1210amazon.html)
 - [ストールマン、UbuntuのUnityレンズについて](http://cpplover.blogspot.jp/2012/10/ubuntuunity.html)
+- [Richard Stallman氏の批判にUbuntuのコミュニティーマネージャーが反論](http://linux.slashdot.jp/story/12/12/10/2111218/Richard-Stallman%E6%B0%8F%E3%81%AE%E6%89%B9%E5%88%A4%E3%81%ABUbuntu%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E5%8F%8D%E8%AB%96)
+- [Ubuntu脱出計画その1 〜動機編〜](http://nippondanji.blogspot.jp/2013/02/ubuntu1.html)
 
 ```
 $ sudo apt-get remove unity-lens-video unity-scope-video-remote unity-lens-shopping unity-lens-music unity-lens-photos unity-lens-radios
