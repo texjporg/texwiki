@@ -50,6 +50,18 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ## TeX Live <a id="texlive"></a> {#d237a7b2}
 
+- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
+- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
+    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
+- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
+    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
+- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
+- [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
+- [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
+- [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
+- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+
 ### TeX Live 2013 <a id="texlive2013"></a> {#ef984d1b}
 
 #### Linux Mint 15 {#l0b7aecc}
