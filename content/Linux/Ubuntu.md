@@ -71,18 +71,6 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
 
-- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
-- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
-    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
-- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
-    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
-- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
-- [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
-- [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
-- [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
-- [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
-- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-
 ### TeX Live 2013 <a id="texlive2013"></a> {#y097b8c5}
 
 #### Linux Mint 15 {#se51f85a}
@@ -96,12 +84,6 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 - [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013debian>)
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
-
-- [Ubuntu(Xubuntu)でTeXをEmacsで書く](http://ameblo.jp/the1736/entry-11533722174.html)
-- \[[Ubuntu13.04\]LaTexのセットアップ](http://aruneko.wkeya.com/archives/461)
-- [Ubuntu 13.04でLaTeX環境を整える](http://kubuser.blog.fc2.com/blog-entry-33.html)
-- [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
-- [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
 
 #### Linux Mint 15 {#fd747683}
 
