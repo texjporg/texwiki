@@ -20,8 +20,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ platex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>platex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -34,8 +32,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ uplatex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>uplatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -51,8 +47,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>pdflatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -67,8 +61,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
@@ -86,8 +78,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ lualatex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>lualatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -100,8 +90,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ luajitlatex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>luajitlatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -118,8 +106,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ pbibtex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>pbibtex "&#x25;input"</ins><br>
@@ -132,8 +118,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ upbibtex の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
@@ -146,8 +130,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 ***
 
 ■ bibtexu の場合<br>
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>bibtexu "&#x25;input"</ins><br>
@@ -162,8 +144,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Biber (BibLaTeX)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
@@ -180,8 +160,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>mendex -s "%style" "%input"</ins><br>
@@ -196,8 +174,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
@@ -214,8 +190,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>dvipdfmx "&#x25;input"</ins><br>
@@ -231,8 +205,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>ps2pdf "&#x25;input"</ins><br>
@@ -247,8 +219,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Makeindex program (nomencl)　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
@@ -276,8 +246,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Evince</ins><br>
@@ -318,8 +286,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>fwdevince</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
@@ -356,8 +322,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Okular</ins><br>
@@ -396,8 +360,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>zathura</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
@@ -434,8 +396,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>qpdfview</ins><br>
@@ -474,8 +434,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>PdfViewer</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
@@ -512,8 +470,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
@@ -552,8 +508,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>MuPDF</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
@@ -590,8 +544,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mozilla Firefox</ins><br>
@@ -630,8 +582,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Chrome PDF Viewer</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
@@ -668,8 +618,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　acroread ()　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
