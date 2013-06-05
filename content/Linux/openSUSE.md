@@ -39,34 +39,12 @@ TeX Live を公式サイトのパッケージを使用してインストール�
 
 #### openSUSE 12.3 {#i8bbf7fd}
 
-- フルインストールの場合
-
 YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
 zypper を使用しても OK です．<br>
 
 ```
 $ sudo zypper install texlive-scheme-full
 ```
-
-- 個別にインストールする場合
-
-個別にインストールしたい場合は texlive-collection-langcjk パッケージをインストールすれば (e-)(u)pTeX を使用した日本語の LaTeX 環境が構築できます．<br>
-YaST パッケージマネージャ で texlive-collection-langcjk を検索して texlive-collection-langcjk パッケージを選択してインストールします．<br>
-zypper を使用しても OK です．<br>
-
-```
-$ sudo zypper install texlive-collection-langcjk
-```
-
-pdfLaTeX, [LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) を使用する場合は texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex パッケージもインストールします．<br>
-YaST パッケージマネージャ で texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex を検索して texlive-collection-latex, texlive-collection-luatex, texlive-collection-xetex パッケージを選択してインストールします．<br>
-zypper を使用しても OK です．<br>
-
-```
-$ sudo zypper install texlive-collection-latex texlive-collection-luatex texlive-collection-xetex
-```
-
-- [TeXLive 2012 で pTeX を使う](http://blog.geeko.jp/ftake/748)
 
 ## Texmaker {#ua730d97}
 
