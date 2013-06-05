@@ -63,63 +63,6 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 !...............................................
 ```
 
-#### xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなる → realscripts を修正する → xeCJK 3.1.1 で対応しました {#d18a4ff7}
-
-xeCJK 3.1.1 で対応しました． → [xeCJK r382](https://code.google.com/p/ctex-kit/source/detail?r=382)<br>
-[CJK spacing suddenly no longer works](http://tex.stackexchange.com/questions/84394/cjk-spacing-suddenly-no-longer-works) によると xltxtra によってロードされる realscripts パッケージが原因らしいです．\dim_eval:n を使用すると OK らしいです．<br>
-
-- [xeCJK 与 xltxtra 在中文标点符号处出错](https://code.google.com/p/ctex-kit/issues/detail?id=100)
-- [XeCJK v3.1.0\* 中文标点问题](https://code.google.com/p/ctex-kit/issues/detail?id=102)
-
-xeCJK 3.1.0 で xltxtra と xeCJK を使用すると表示がおかしくなります．
-
-```
-\usepackage{xltxtra}
-\usepackage{xeCJK}
-```
-
-以下のように修正したところ正常に表示されるようになりました．
-
-```
-\usepackage{xltxtra}
-\ExplSyntaxOn
-\cs_set:Nn \dim_max:nn {
-  \dim_eval:n{\dim_compare:nTF {#1>#2} {#1} {#2}}
-}
-\cs_set:Nn \dim_min:nn {
-  \dim_eval:n{\dim_compare:nTF {#2>#1} {#1} {#2}}
-}
-\ExplSyntaxOff
-\usepackage{xeCJK}
-```
-
-#### xeCJK error: "l3-too-old" → l3kernel, l3packages をアップデートする {#se187b49}
-
-- [Ubuntu 12.10 の texlive で ctex-kit の r350,r351（４）テスト](http://blog.livedoor.jp/ti5942/archives/7562221.html)
-- [xeCJK l3-too-old](http://tex.stackexchange.com/questions/79257/xecjk-l3-too-old)
-
-xeCJK error: "l3-too-old" のエラーが発生した場合は [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
-
-```
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! xeCJK error: "l3-too-old"
-!
-! Support package 'xtemplate' too old.
-!
-! Please update an up to date version of the bundles
-!
-! 'l3kernel' and 'l3packages'
-!
-! using your TeX package manager or from CTAN.
-!
-!
-! See the xeCJK documentation for further information.
-!
-! Type <return> to continue.
-!...............................................
-```
-
 ### 不具合 {#t2600dd9}
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
@@ -200,17 +143,7 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 
 [>Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
 
-### 不具合 {#u54213d7}
-
-#### [xeCJK 3.0.6 r343](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用するとエラーが発生する → xeCJK, l3kernel, l3packages をアップデートする {#bf394f82}
-
-- [Ubuntu 12.10 の texlive で xeCJK/ZXjatype を使うにはどうすればよいか？](http://blog.livedoor.jp/ti5942/archives/7562299.html)
-- [Ubuntu 12.10 64bit texliveに入っているxeCJKのバージョン？](http://blog.livedoor.jp/ti5942/archives/7561243.html)
-- [Ubuntu 12.10: xeCJK/ZXjatypeを導入したが。。。](http://blog.livedoor.jp/ti5942/archives/7556359.html)
-- [zxjatype, xeCJK3.0.6だと動かなかったけどxeCJK3.0.9だと動いた．](https://twitter.com/imunolion/status/260648169849896960)
-
-l3kernel, l3packages が古いバージョンで [xeCJK 3.0.6 r343](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) で ZXjatype 0.6 を使用する場合は XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合があります．<br>
-気になる方は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
+<!-- **不具合 [#u54213d7] -->
 
 ### 使い方 {#v46b0c77}
 
