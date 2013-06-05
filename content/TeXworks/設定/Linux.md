@@ -73,8 +73,6 @@ $ sudo cp -p pdfplatex /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>pdfpLaTeX</ins><br>
@@ -101,8 +99,6 @@ $ sudo cp -p pdfplatex /usr/local/bin
 [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -161,8 +157,6 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 タイプセットの方法を設定します．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -241,8 +235,6 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>pdfupLaTeX</ins><br>
@@ -269,8 +261,6 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -329,8 +319,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>pdfupLaTeX2</ins><br>
@@ -360,8 +348,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
@@ -388,8 +374,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 タイプセットの方法を設定します．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -420,8 +404,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
@@ -448,8 +430,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 タイプセットの方法を設定します．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -480,8 +460,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>Latexmk-pdfLaTeX</ins><br>
@@ -506,8 +484,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 タイプセットの方法を設定します．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -534,8 +510,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
@@ -560,8 +534,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 タイプセットの方法を設定します．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -589,8 +561,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 実行後、PDFを表示するのチェックをはずしてください．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -623,8 +593,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
 <br>
 
 　　名前:　　　　<ins>upBibTeX</ins><br>
@@ -655,8 +623,6 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 実行後、PDFを表示するのチェックをはずしてください．
 
 ***
-
-<span style="color:Black;background-color:#222222;"><ins>　　<span style="color:Black;background-color:#EE5500;">(×)</span>　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
