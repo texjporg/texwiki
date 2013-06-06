@@ -17,7 +17,7 @@ pukiwiki: "xeCJK"
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
 IVS (異体字セレクタ) にも対応しています．<br>
-[W32TeX](/W32TeX/) の xetex-w32.tar.xz, [TeX Live](</TeX Live/>), [MiKTeX](/MiKTeX/) に含まれています．<br>
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) の xetex-w32.tar.xz, [MiKTeX](/MiKTeX/) に含まれています．<br>
 
 - [ctex-kit](https://code.google.com/p/ctex-kit/)
     - [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
@@ -71,15 +71,6 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 
 ### 使い方 {#k3d278aa}
 
-#### MS Mincho, MS Gothic の場合 {#u1a0c13b}
-
-```
-\usepackage{xeCJK}
-\setCJKmainfont{MS Mincho}
-\setCJKsansfont{MS Gothic}
-\setCJKmonofont{MS Gothic}
-```
-
 #### IPAexMincho, IPAexGothic の場合 {#af21d789}
 
 ```
@@ -96,6 +87,15 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 \setCJKmainfont{IPAMincho}
 \setCJKsansfont{IPAGothic}
 \setCJKmonofont{IPAGothic}
+```
+
+#### MS Mincho, MS Gothic の場合 {#u1a0c13b}
+
+```
+\usepackage{xeCJK}
+\setCJKmainfont{MS Mincho}
+\setCJKsansfont{MS Gothic}
+\setCJKmonofont{MS Gothic}
 ```
 
 <!-- **xeCJK 以外のパッケージ [#k90787cf] -->
@@ -116,7 +116,7 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
-BXjscls と ZXjatype は TeX Live 2013 に含まれています．<br>
+BXjscls と ZXjatype は TeX Live 2013 以降に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
@@ -148,31 +148,6 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 ### 使い方 {#v46b0c77}
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
-
-#### MS Mincho, MS Gothic の場合 {#teab5b7f}
-
-```
-\usepackage{zxjatype}
-\setjamainfont{MS Mincho}
-\setjasansfont{MS Gothic}
-\setjamonofont{MS Gothic}
-```
-
-zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
-
-```
-\IfFileExists{zxjatype.sty}{
-  \usepackage{zxjatype}
-  \setjamainfont{MS Mincho}
-  \setjasansfont{MS Gothic}
-  \setjamonofont{MS Gothic}
-}{
-  \usepackage{xeCJK}
-  \setCJKmainfont{MS Mincho}
-  \setCJKsansfont{MS Gothic}
-  \setCJKmonofont{MS Gothic}
-}
-```
 
 #### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
 
@@ -221,6 +196,31 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
   \setCJKmainfont{IPAMincho}
   \setCJKsansfont{IPAGothic}
   \setCJKmonofont{IPAGothic}
+}
+```
+
+#### MS Mincho, MS Gothic の場合 {#teab5b7f}
+
+```
+\usepackage{zxjatype}
+\setjamainfont{MS Mincho}
+\setjasansfont{MS Gothic}
+\setjamonofont{MS Gothic}
+```
+
+zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
+
+```
+\IfFileExists{zxjatype.sty}{
+  \usepackage{zxjatype}
+  \setjamainfont{MS Mincho}
+  \setjasansfont{MS Gothic}
+  \setjamonofont{MS Gothic}
+}{
+  \usepackage{xeCJK}
+  \setCJKmainfont{MS Mincho}
+  \setCJKsansfont{MS Gothic}
+  \setCJKmonofont{MS Gothic}
 }
 ```
 
