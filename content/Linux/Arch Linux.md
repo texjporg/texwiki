@@ -351,3 +351,7 @@ $ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
 ```
 
 Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
+
+## awesome {#hf2862e7}
+
+- [ウィンドウマネージャ「awesome」の基本操作](http://momoto.github.io/blog/2013/03/27/awesome-tutorials/)
