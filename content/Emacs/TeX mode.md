@@ -34,7 +34,7 @@ Emacs を起動して<br>
 C-x C-f ~/
 ```
 
-で，ホームディレクトリ (&#x7e;/) の場所を確認します． ([GNU Emacsのinitファイルの置き場所＠Windows7](http://tamatamablog.blog.so-net.ne.jp/2010-02-10) を参考)<br>
+で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
