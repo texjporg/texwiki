@@ -15,8 +15,6 @@ pukiwiki: "WinShell/設定/ShiftJIS"
 
 ### BibTeX {#tf3b5c49}
 
-#### pbibtex の場合 {#e809345f}
-
 ***
 
 <span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
