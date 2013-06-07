@@ -56,6 +56,10 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 - [pacman (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Pacman_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
 - [Pacman Rosetta](https://wiki.archlinux.org/index.php/Pacman_Rosetta)
 
+### Yaourt {#nf53cc4e}
+
+- [Yaourt (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Yaourt_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+
 ## [TeX Live](</TeX Live/>) {#e2a82c70}
 
 - [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
@@ -209,6 +213,18 @@ $ sudo pacman -S kdegraphics-okular kde-l10n-ja
 $ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 ```
 
+## [qpdfview](/qpdfview/) {#xe3804e4}
+
+```
+$ yaourt -S qpdfview
+```
+
+## PdfViewer {#h51fbe76}
+
+```
+$ yaourt -S pdfviewer
+```
+
 ## [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
@@ -298,10 +314,28 @@ $ sudo pacman -S lyx
 
 文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
+## [TeXworks](/TeXworks/) {#y01d9b26}
+
+```
+$ yaourt -S texworks
+```
+
+## [TeXstudio](/TeXstudio/) {#geb231cb}
+
+```
+$ yaourt -S texstudio
+```
+
 ## Gummi {#gf42d835}
 
 ```
 $ sudo pacman -S gummi
+```
+
+## LaTeXila {#q4319830}
+
+```
+$ yaourt -S latexila
 ```
 
 ## [Kile](/Kile/) {#l211571b}
@@ -326,6 +360,7 @@ $ sudo pacman -S vim
 
 ```
 $ sudo pacman -S gedit gedit-plugins
+$ yaourt -S gedit-latex
 ```
 
 ## [Geany](/Geany/) {#z3d2b775}
