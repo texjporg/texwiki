@@ -50,7 +50,6 @@ Windows 8, 7, Vista, XP, 2000
 を参照．<br>
 
 WinShell 3.3.2.5 以降は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
-WinShell 3.3.2.3 以降は Adobe Reader X と Adobe Acrobat X の DDE に対応しています．<br>
 
 ### スクリーンショット {#l2305277}
 
@@ -314,10 +313,8 @@ WinShell/使い方 を参照．
 - [WinShellのbibtexでエラーが出た時](http://blog.livedoor.jp/tmako123-programming/archives/22041970.html)
 - [WinShellでTeXのコンパイル中にも編集する方法](http://tatsyblog.wordpress.com/2013/01/07/winshell%E3%81%A7tex%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E4%B8%AD%E3%81%AB%E3%82%82%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
 - [WinShell便利設定](http://dalvatechnique.seesaa.net/article/310165517.html)
-- [レポートの表紙をTeXで書きなおしてみた](http://nryas.hateblo.jp/entry/2012/12/25/005143)
 - [LaTeXインストール・論文作成](http://bin.t.u-tokyo.ac.jp/startup2012/)
 - [LaTexの使い方 初級編](http://www.library.osaka-u.ac.jp/doc/TA_LaTeX1.pdf) (PDF)
 - [WinShellでTeXのコンパイル中にも編集する方法](http://tatsyblog.wordpress.com/2013/01/07/winshell%E3%81%A7tex%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E4%B8%AD%E3%81%AB%E3%82%82%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
 - [キーワード：WinShell | 情報科学屋さんを目指す人のメモ](http://did2memo.net/tag/winshell/)
-- [Windows 7 のセットアップ](http://transitive.info/2012/03/24/windows7-setup/)
 - Tex統合開発環境WinShellの利用方法について ([その1](http://www.ex.media.osaka-cu.ac.jp/windows/winshell.html), [その2](http://www.ex.media.osaka-cu.ac.jp/windows/winshell9F.html))
