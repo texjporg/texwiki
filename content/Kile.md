@@ -29,7 +29,7 @@ KDE
 
 ### License {#bd454552}
 
-[GPL](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/COPYING)
+[GPLv2](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/COPYING)
 
 ### リリース情報 {#qfb7e12c}
 
