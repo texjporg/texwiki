@@ -261,6 +261,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 TeX Live 2013, Evince 3.8.0, GNU Emacs 24.3.1 で動作確認しています．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
+AUCTeX 11.87 以降では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
 
 ```
 (require 'dbus)
@@ -296,7 +297,7 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 ### forward search {#maa4da39}
 
 [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
+[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Okular との連携 (forward and inverse search)](/AUCTeX/#d95e95ee)<br>
 [YaTeX#Okular との連携 (forward search)](/YaTeX/#o8772291)<br>
 を参照してください．
 
