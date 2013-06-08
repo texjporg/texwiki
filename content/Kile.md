@@ -75,122 +75,169 @@ KDE
 
 ## 設定 {#g12179be}
 
-\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
 
 ### QuickBuild {#t46a75f7}
 
-Select:
+選択:
 : LaTeX+DVItoPDF+ViewPDF
+
+PDF ファイルを表示するときに forward search をしたい場合は
+
+\[新規...\]
+
+LaTeX+DVItoPDF+ForwardPDF
+
+\[全般\] タブで
+
+LaTeX<br>
+DVItoPDF<br>
+ForwardPDF<br>
+
+を設定して
+
+選択:
+: LaTeX+DVItoPDF+ForwardPDF
 
 ### LaTeX {#hec49503}
 
 #### platex の場合 {#vab528b1}
 
-Command:
+コマンド(<ins>M</ins>):
 : platex
 
-Options:
+オプション:
 : -synctex=1 -interaction=nonstopmode '%source'
 
 #### uplatex の場合 {#w257ee86}
 
-Command:
+コマンド(<ins>M</ins>):
 : uplatex
 
-Options:
+オプション:
 : -synctex=1 -interaction=nonstopmode '%source'
 
 ### BibTeX {#kd1bef77}
 
 #### pbibtex の場合 {#j092a932}
 
-Command:
+コマンド(<ins>M</ins>):
 : pbibtex
 
-Options:
+オプション:
 : '%S'
 
 #### upbibtex の場合 {#febb1ff7}
 
-Command:
+コマンド(<ins>M</ins>):
 : upbibtex
 
-Options:
+オプション:
 : '%S'
 
 ### MakeIndex {#o588ae80}
 
-Command:
+コマンド(<ins>M</ins>):
 : mendex
 
-Options:
+オプション:
 : '%S.idx'
 
 ### DVItoPDF {#kf18eec8}
 
-Command:
+コマンド(<ins>M</ins>):
 : dvipdfmx
 
-Options:
+オプション:
 : '%S.dvi'
 
 ### ViewPDF {#fdeebbcf}
 
 #### Okular Unique の場合 {#d5998916}
 
-Select:
+選択:
 : Okular Unique
 
-Command:
+コマンド(<ins>M</ins>):
 : okular
 
-Options:
+オプション:
 : --unique '%target'
 
 #### Evince の場合 {#c83cd000}
 
-Select:
+選択:
 : Evince
 
-Command:
+コマンド(<ins>M</ins>):
 : evince
 
-Options:
+オプション:
+: '%target'
+
+#### qpdfview Unique の場合 {#x84dd0b8}
+
+\[新規...\]
+
+qpdfview Unique
+
+選択:
+: qpdfview Unique
+
+コマンド(<ins>M</ins>):
+: qpdfview
+
+オプション:
+: --unique '%target'
+
+#### PdfViewer の場合 {#y3cb8479}
+
+\[新規...\]
+
+PdfViewer
+
+選択:
+: PdfViewer
+
+コマンド(<ins>M</ins>):
+: pdfviewer
+
+オプション:
 : '%target'
 
 ## 使い方 {#ub2acf7c}
 
 ### QuickBuild {#o3d47735}
 
-メニューの \[Build\]-\[QuickBuild\] でビルドして PDF ファイルを表示します．
+メニューの \[ビルド(<ins>U</ins>)\]-\[<ins>Q</ins>uickBuild\] でビルドして PDF ファイルを表示します．
 
 ## Okular との連携 {#q0949a00}
 
 ### forward search {#ad302b58}
 
-\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
 
 #### ForwardPDF {#a8c50040}
 
-Select:
+選択:
 : Okular
 
-Command:
+コマンド(<ins>M</ins>):
 : okular
 
-Options:
+オプション:
 : --unique '%absolute_target'
 
-Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
+Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
 
 ### inverse search {#t261af4f}
 
-Okular のメニューの \[Settings\]-\[Configure Okular...\]-\[Editor\] の項目から Kile を選択します．
+Okular のメニューの \[設定(S)\]-\[Okular を設定(O)...\]-\[エディタ\] の項目から Kile を選択します．
 
-Editor:
+エディタ:
 : Kile
 
-Command:
+コマンド:
 : kile --line %l
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
@@ -231,43 +278,104 @@ $ chmod +x kile2fwdevince
 $ sudo cp -p kile2fwdevince /usr/local/bin
 ```
 
-\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
 
 #### ForwardPDF {#ace63589}
 
-\[New...\] をクリックして Evince を入力します．
+\[新規...\] をクリックして Evince を入力します．
 
-Select:
+選択:
 : Evince
 
-Command:
+コマンド(<ins>M</ins>):
 : kile2fwdevince
 
-Options:
+オプション:
 : '%target'
 
-Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
+Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
+
+## qpdfview との連携 {#u024daea}
+
+### forward search {#o5906f94}
+
+***
+
+- kile2qpdfview
+
+***
+
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import re
+import subprocess
+
+if __name__ == '__main__':
+    m = re.match(r'file:(\S*)#src:(\S*) (\S*)', sys.argv[1])
+    if m:
+        pdf = m.group(1)
+        line = m.group(2)
+        tex = m.group(3)
+        args = pdf + '#src:' + tex + ':' + line + ':0'
+        subprocess.call(['qpdfview', '--unique', args])
+```
+
+***
+
+```
+$ chmod +x kile2qpdfview
+$ sudo cp -p kile2qpdfview /usr/local/bin
+```
+
+\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
+
+#### ForwardPDF {#p9b7fdb1}
+
+\[新規...\] をクリックして qpdfview を入力します．
+
+選択:
+: qpdfview
+
+コマンド(<ins>M</ins>):
+: kile2qpdfview
+
+オプション:
+: '%target'
+
+Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
+
+### inverse search {#i42c49b9}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+Source editor:
+: kile --line %2 "%1"
+
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
 ## PdfViewer との連携 {#p9f6aff5}
 
 ### forward search {#iff757fb}
 
-\[Settings\]-\[Configure Kile...\]-\[Tools\]-\[Build\]
+\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
 
 #### ForwardPDF {#c86416d5}
 
-\[New...\] をクリックして PdfViewer を入力します．
+\[新規...\] をクリックして PdfViewer を入力します．
 
-Select:
+選択:
 : PdfViewer
 
-Command:
+コマンド(<ins>M</ins>):
 : pdfviewer
 
-Options:
+オプション:
 : '%target'
 
-Kile のメニューの \[Build\]-\[View\]-\[ForwardPDF\] で forward search ができます．
+Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
 
 ### inverse search {#t261af4f}
 
