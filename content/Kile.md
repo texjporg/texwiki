@@ -15,7 +15,7 @@ pukiwiki: "Kile"
 
 ## Kile とは {#v4a214a0}
 
-Kile は TeX の統合環境です．<br>
+Kile は LaTeX の統合環境です．<br>
 SyncTeX に対応しています．<br>
 エディタ部分は [Kate](http://kate-editor.org/) を使用しています．<br>
 
@@ -79,8 +79,14 @@ KDE
 
 ### QuickBuild {#t46a75f7}
 
+#### LaTeX+DVItoPDF+ViewPDF の場合 {#l170063d}
+
+LaTeX+DVItoPDF+ViewPDF を選択します．<br>
+
 選択:
 : LaTeX+DVItoPDF+ViewPDF
+
+#### LaTeX+DVItoPDF+ForwardPDF の場合 {#l39af91a}
 
 PDF ファイルを表示するときに forward search をしたい場合は
 
@@ -94,7 +100,7 @@ LaTeX<br>
 DVItoPDF<br>
 ForwardPDF<br>
 
-を設定して
+を設定して LaTeX+DVItoPDF+ForwardPDF を選択します．<br>
 
 選択:
 : LaTeX+DVItoPDF+ForwardPDF
@@ -390,5 +396,5 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
     - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
-- [LinuxでSyncTeXを使う](http://kubuser.blog.fc2.com/blog-entry-26.html)
+- [latex | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/blog-category-2.html)
 - [KileをWindowsで使ってみる](http://d.tnose.net/?p=1654)
