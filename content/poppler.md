@@ -786,9 +786,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.2.tar.xz
-$ tar xvf glib-2.36.2.tar.xz
-$ pushd glib-2.36.2
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.3.tar.xz
+$ tar xvf glib-2.36.3.tar.xz
+$ pushd glib-2.36.3
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
@@ -872,9 +872,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.23.1.tar.xz
-$ tar xvf poppler-0.23.1.tar.xz
-$ pushd poppler-0.23.1
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.23.2.tar.xz
+$ tar xvf poppler-0.23.2.tar.xz
+$ pushd poppler-0.23.2
 ```
 
 ***
