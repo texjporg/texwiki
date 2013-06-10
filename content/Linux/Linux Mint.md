@@ -26,6 +26,8 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ## ダウンロード {#a6b4fe07}
 
+- [Mirrors - Linux Mint](http://www.linuxmint.com/mirrors.php)
+
 ### 国内ミラーサイト {#ce6708ed}
 
 日本のミラーサイト (JAIST) は No codecs 版のみの配布になっています．<br>
@@ -37,16 +39,6 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 #### パッケージ {#ub67daca}
 
 - [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/)
-
-### 海外ミラーサイト {#u4cd67bf}
-
-#### ISO Images {#v9b5de5a}
-
-- [http://psg.mtu.edu/pub/linuxmint/images/](http://psg.mtu.edu/pub/linuxmint/images/)
-
-#### パッケージ {#o0223c32}
-
-- [http://psg.mtu.edu/pub/linuxmint-packages/](http://psg.mtu.edu/pub/linuxmint-packages/)
 
 ## TeX Live <a id="texlive"></a> {#d237a7b2}
 
