@@ -178,7 +178,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ### PDFView {#j67d12bb}
 
-SyncTeX を使用して SumatraPDF で forward search を行う場合や Adobe Reader を使用する場合は PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．<br>
+PDFLaTeXを先に実行 のチェックは外しておいた方が良いでしょう．<br>
 Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
 PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
