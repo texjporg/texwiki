@@ -46,13 +46,19 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-scheme-full
 ```
 
-## Texmaker {#ua730d97}
+## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
+
+```
+$ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
+```
+
+## [Texmaker](/Texmaker/) {#ua730d97}
 
 ```
 $ sudo zypper install texmaker
 ```
 
-## LyX {#uad65708}
+## [LyX](/LyX/) {#uad65708}
 
 ```
 $ sudo zypper install lyx
@@ -60,19 +66,37 @@ $ sudo zypper install lyx
 
 文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
-## TeXworks {#n8431fb2}
+## [TeXworks](/TeXworks/) {#n8431fb2}
 
 ```
 $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
 ```
 
-## Kile {#a5604b87}
+## LaTeXila {#r5f3b44b}
+
+```
+$ sudo zypper install latexila
+```
+
+## [Kile](/Kile/) {#a5604b87}
 
 ```
 $ sudo zypper install kile
 ```
 
-## MinGW {#e5f30d58}
+## [gedit](/gedit/) {#q3837a6e}
+
+```
+$ sudo zypper install gedit gedit-plugins gedit-plugin-latex
+```
+
+## [Geany](/Geany/) {#q6659b75}
+
+```
+$ sudo zypper install geany geany-plugins
+```
+
+## [MinGW](/MinGW/) {#e5f30d58}
 
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
