@@ -161,7 +161,7 @@ $ sudo mkdir -p /usr/share/fonts/truetype
 $ sudo ln -s /usr/share/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
 ```
 
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap に設定を記述します．<br>
+/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap に設定を記述します．<br>
 
 ```
 $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
@@ -389,4 +389,20 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## awesome {#hf2862e7}
 
+```
+$ sudo pacman -S awesome
+```
+
+または
+
+```
+$ yaourt -S awesome-git
+```
+
 - [ウィンドウマネージャ「awesome」の基本操作](http://momoto.github.io/blog/2013/03/27/awesome-tutorials/)
+
+## sakura {#kf265bc9}
+
+```
+$ sudo pacman -S sakura
+```
