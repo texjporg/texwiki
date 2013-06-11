@@ -546,11 +546,10 @@ uplatex + dvipdfmx の場合は [PDFの作り方#フォントの埋め込み設�
 
 - [Newest &#39;texworks&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texworks)
     - [configure latexmk in Texworks 0.2.3](http://tex.stackexchange.com/questions/18936/configure-latexmk-in-texworks-0-2-3)
+- [USBメモリ活用講座【実践編・TeXworksとupLaTeX】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/texworks.shtml)
 - [アプリケーション（TeXworks）について](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10105181875)
 - [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
-- [TeXWorksで日本語が表示されない、という時は - どこかWiki](http://dokoka.org/wiki.cgi?page=TeXWorks%A4%C7%C6%FC%CB%DC%B8%EC%A4%AC%C9%BD%BC%A8%A4%B5%A4%EC%A4%CA%A4%A4%A1%A2%A4%C8%A4%A4%A4%A6%BB%FE%A4%CF)
 - [TeXっておいしいのかな？](http://d.hatena.ne.jp/filline/20120412/1334220540)
-- [USBメモリ活用講座【実践編・TeXworksとupLaTeX】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/texworks.shtml)
 - [TeXworks のテンプレートに日本語の雛形を入れてみました](http://d.hatena.ne.jp/munepi/20110625/texworks)
 - [TeXworks+JabRefで参考文献を表示させるときの注意点](http://d.hatena.ne.jp/motoso/comment?date=20110609)
 - [jplain.bstで参考文献を表示させる．](http://brainmuscle.blog64.fc2.com/blog-entry-16.html)
