@@ -24,6 +24,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 ## インストール {#ba9eb570}
 
 - [Beginners' Guide (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Beginners%27_Guide_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+- [arch linux(はてな)](http://arch2013.hatenablog.com/)
 - [ArchLinuxのインストール](http://mba-hack.blogspot.jp/2013/05/archlinux.html)
 - [2013.4.30 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20130430/)
 - [Arch Linux 2013.04.01 インストールまとめ1](http://lynx0077.hateblo.jp/entry/2013/04/18/214846), [Arch Linux 2013.04.01 インストールまとめ2](http://lynx0077.hateblo.jp/entry/2013/04/18/215116)
