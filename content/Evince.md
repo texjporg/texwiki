@@ -75,6 +75,10 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 - [https://www.archlinux.org/packages/?q=evince](https://www.archlinux.org/packages/?q=evince)
 
+### Gentoo Linux {#lcdb6ed7}
+
+- [http://packages.gentoo.org/package/app-text/evince](http://packages.gentoo.org/package/app-text/evince)
+
 ### Beyond Linux From Scratch {#i9f92bae}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
