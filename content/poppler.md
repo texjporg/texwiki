@@ -53,7 +53,7 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 
 #### MinGW {#x2d1044d}
 
-TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32](http://curl.haxx.se/download.html#Win32) から curl の Windows バイナリをダウンロードして curl.exe に PATH を通してください．<br>
+TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32](http://curl.haxx.se/download.html#Win32) から curl の Windows バイナリをダウンロードして環境変数 PATH に curl.exe が存在するフォルダーを追加してください．<br>
 W32TeX を使用している場合は curl が W32TeX に含まれているのでダウンロードする必要はありません．<br>
 sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれています．<br>
 
