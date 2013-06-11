@@ -134,6 +134,10 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 
 - [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
 
+### Gentoo Linux {#d1a956ba}
+
+- [http://packages.gentoo.org/package/app-text/mupdf](http://packages.gentoo.org/package/app-text/mupdf)
+
 ## 関連リンク {#u27a744e}
 
 - [MuPDF for Windows 9x](http://d.hatena.ne.jp/lukewarm/20110521#p1)
