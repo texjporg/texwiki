@@ -60,6 +60,10 @@ Linux
 
 - [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
 
+### Gentoo Linux {#ka0be970}
+
+- [http://packages.gentoo.org/package/app-text/qpdfview](http://packages.gentoo.org/package/app-text/qpdfview)
+
 ## 設定 {#uc8afff9}
 
 ### Auto-refresh {#na403c1a}
