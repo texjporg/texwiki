@@ -24,6 +24,28 @@ Windows Vista, XP で Windows PowerShell がインストールされていない
 - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
 - [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
 
+### スクリプトの実行 {#o34da8bc}
+
+デフォルトの設定では実行ポリシーが Restricted に設定されており，スクリプトの実行が無効になっているため実行できません．<br>
+
+```
+PS > powershell .\hoge.ps1
+.\hoge.ps1 : このシステムではスクリプトの実行が無効になっているため、ファイル C:\Users\<UserName>\Desktop\hoge.ps1 を読み込
+むことができません。詳細については、「about_Execution_Policies」(http://go.microsoft.com/fwlink/?LinkID=135170) を参照
+してください。
+発生場所 行:1 文字:1
++ .\hoge.ps1
++ ~~~~~~~~~~
+    + CategoryInfo          : セキュリティ エラー: (: ) []、PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+```
+
+powershell -ExecutionPolicy RemoteSigned .\hoge.ps1 のように実行ポリシーに RemoteSigned を指定すれば実行できます．<br>
+
+```
+PS > powershell -ExecutionPolicy RemoteSigned .\hoge.ps1
+```
+
 ### Tab 補完 {#b02c3a08}
 
 Windows PowerShell では Tab でコマンドレットやファイル名などが補完できます．<br>
@@ -84,6 +106,12 @@ platex hoge.tex
     - [packages](http://chocolatey.org/packages)
         - [texlive](http://chocolatey.org/packages/texlive)
     - [wiki](https://github.com/chocolatey/chocolatey/wiki)
+
+### Pash {#q316851f}
+
+Windows PowerShell のオープンソース実装．<br>
+
+- [Pash](https://github.com/Pash-Project/Pash)
 
 ### 関連リンク {#teb8e64f}
 
