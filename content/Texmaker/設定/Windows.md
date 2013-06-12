@@ -52,9 +52,9 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode/""" -e """$bibtex=q/pbibtex -kanji=utf8/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode/""" -e """$bibtex=q/upbibtex/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+　　　<strong>クイックビルド</strong><br>
 
 <div style="clear:both"></div>
 
@@ -115,7 +115,8 @@ TeX Live 2012 を使用する場合は
 W32TeX はデフォルトでは ptexenc を用いて自動判別します．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
-コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードセットを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)
+コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードセットを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
+W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
 
@@ -137,9 +138,9 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>latexmk -gg -pdfdvi %.tex</ins> または <ins>latexmk -gg -pdfps %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode/""" -e """$bibtex=q/pbibtex -kanji=utf8/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode/""" -e """$bibtex=q/upbibtex/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/lualatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/luajitlatex -synctex=1 -interaction=nonstopmode/" -norc -gg -pdf %.tex</ins><br>または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
 
-　　　<strong>クイックビルド</strong>　　 または <ins>latexmk -e "$pdflatex=q/xelatex -synctex=1 -interaction=nonstopmode/" -norc -gg -xelatex %.tex</ins><br>
+　　　<strong>クイックビルド</strong><br>
 
 <div style="clear:both"></div>
 
