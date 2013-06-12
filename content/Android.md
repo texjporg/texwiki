@@ -61,6 +61,7 @@ pukiwiki: "Android"
 
 ### シェアウェア・製品 {#z7716277}
 
+- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey)
 
