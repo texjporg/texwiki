@@ -13,6 +13,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
 - [Python Programming Language &ndash; Official Website](http://www.python.org/)
+- [プログラミング言語 Python](http://www.python.jp/)
 
 python.exe を C:\Python27 にインストールした場合は
 
@@ -29,3 +30,8 @@ python.exe を C:\Python33 にインストールした場合は
 ```
 
 を環境変数 PATH に追加します
+
+## 関連リンク {#z55d6188}
+
+- WikiPedia.ja:Python
+- [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
