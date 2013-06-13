@@ -42,11 +42,11 @@ Linux
 
 ### Linux Mint {#c6d3b357}
 
-- [Ubuntu -- パッケージ検索結果 -- qpdfview](http://packages.ubuntu.com/ja/qpdfview)
+- [http://packages.ubuntu.com/ja/qpdfview](http://packages.ubuntu.com/ja/qpdfview)
 
 ### Debian {#g4ce84b5}
 
-- [Debian -- パッケージ検索結果 -- qpdfview](http://packages.debian.org/ja/qpdfview)
+- [http://packages.debian.org/ja/qpdfview](http://packages.debian.org/ja/qpdfview)
 
 ### Fedora {#qa034e43}
 
