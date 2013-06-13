@@ -114,13 +114,13 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
-### Ubuntu {#od9b1036}
+### Linux Mint {#od9b1036}
 
-- [Ubuntu -- パッケージ検索結果 -- mupdf](http://packages.ubuntu.com/ja/mupdf)
+- [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
 
 ### Debian {#ve64b6e7}
 
-- [Debian -- パッケージ検索結果 -- mupdf](http://packages.debian.org/ja/mupdf)
+- [http://packages.debian.org/ja/mupdf](http://packages.debian.org/ja/mupdf)
 
 ### Fedora {#k5d2c514}
 
