@@ -73,6 +73,10 @@ KDE
 
 - [https://www.archlinux.org/packages/?q=kile](https://www.archlinux.org/packages/?q=kile)
 
+### Gentoo Linux {#je25493e}
+
+- [http://packages.gentoo.org/package/app-editors/kile](http://packages.gentoo.org/package/app-editors/kile)
+
 ## 設定 {#g12179be}
 
 \[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
