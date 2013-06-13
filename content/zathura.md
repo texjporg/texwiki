@@ -66,11 +66,11 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 
 ### Linux Mint {#cc8ebe01}
 
-- [Ubuntu -- パッケージ検索結果 -- zathura](http://packages.ubuntu.com/ja/zathura)
+- [http://packages.ubuntu.com/ja/zathura](http://packages.ubuntu.com/ja/zathura)
 
 ### Debian {#x8dcc844}
 
-- [Debian -- パッケージ検索結果 -- zathura](http://packages.debian.org/ja/zathura)
+- [http://packages.debian.org/ja/zathura](http://packages.debian.org/ja/zathura)
 
 ### Fedora {#f03f2bfa}
 
