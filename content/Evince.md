@@ -57,11 +57,11 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ### Linux Mint {#lacd43b5}
 
-- [Ubuntu -- パッケージ検索結果 -- evince](http://packages.ubuntu.com/ja/evince)
+- [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
 
 ### Debian {#rf817124}
 
-- [Debian -- パッケージ検索結果 -- evince](http://packages.debian.org/ja/evince)
+- [http://packages.debian.org/ja/evince](http://packages.debian.org/ja/evince)
 
 ### Fedora {#jbf882d0}
 
