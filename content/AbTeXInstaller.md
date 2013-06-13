@@ -200,6 +200,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　538KB<br>
 　　　　 ∣☑t1fonts.tar.xz　　　　　　　　　　　　　無い　　　22.9MB<br>
 　　　　 ∣☑t1utils-w32.tar.xz　　　　　　　　　　無い　　　119KB<br>
+　　　　 ∣☑tex-gyre.tar.xz　　　　　　　　　　　　無い　　　12MB<br>
 　　　　 ∣☑tex4htk-w32.tar.xz　　　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑texinfotools-w32.tar.xz　　　　　　　無い　　　2.5MB<br>
 　　　　 ∣☑tiff2png-w32.tar.xz　　　　　　　　　　無い　　　87KB<br>
@@ -217,6 +218,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　14.8MB<br>
 　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
+　　　　 ∣☑xypic.tar.xz　　　　　　　　　　　　　　無い　　　4.1MB<br>
 
 ***
 
