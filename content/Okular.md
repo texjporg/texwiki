@@ -43,11 +43,11 @@ KDE
 
 ### Linux Mint {#d3c8be06}
 
-- [Ubuntu -- パッケージ検索結果 -- okular](http://packages.ubuntu.com/ja/okular)
+- [http://packages.ubuntu.com/ja/okular](http://packages.ubuntu.com/ja/okular)
 
 ### Debian {#j00dbf39}
 
-- [Debian -- パッケージ検索結果 -- okular](http://packages.debian.org/ja/okular)
+- [http://packages.debian.org/ja/okular](http://packages.debian.org/ja/okular)
 
 ### Fedora {#mf21deef}
 
