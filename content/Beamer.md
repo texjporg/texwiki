@@ -149,6 +149,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ## TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
+- [Beamerで「メイリオ」フォントを使う方法](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1036)
 - [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
 - [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=926)
 - [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
