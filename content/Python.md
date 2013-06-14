@@ -33,5 +33,5 @@ python.exe を C:\Python33 にインストールした場合は
 
 ## 関連リンク {#z55d6188}
 
-- WikiPedia.ja:Python
+- [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
