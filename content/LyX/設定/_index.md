@@ -176,14 +176,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 ***
 
 日本語の文書を作成する場合は，言語を日本語に設定します．<br>
-文字コードは以下の中から選択します．<br>
-LaTeX (pLaTeX) で書き出しするときに出力したい文字コードを選択してください．<br>
-
-- Japanese (non-CJK) (UTF8)
-- 日本語(pLaTeX) (EUC-JP)
-- 日本語(pLaTeX) (JIS)
-- 日本語(pLaTeX) (SJIS)
-
+LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) を選択します．<br>
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
 出力した文書が文字化けしてしまう場合は (u)platex, (u)pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
 
