@@ -589,7 +589,7 @@ Cygwin では問題なく動作するようです．<br>
 
 ### Linux {#bbc3ecf8}
 
-#### Linux Mint {#z45bd221}
+#### Ubuntu {#z45bd221}
 
 - [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
 - [pdf2htmlEX - Convert PDF to HTML without losing format](http://linux.ikoinoba.net/index.php?UID=1349019363)
