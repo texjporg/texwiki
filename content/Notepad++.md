@@ -157,7 +157,7 @@ C:\npp\unicode\notepad++.exe "%f" -n%l
 
 ## Linux で Notepad++ {#hd58d1c7}
 
-- WikiPedia.ja:Notepad++
+- [Wikipedia.ja:Notepad++](https://ja.wikipedia.org/wiki/Notepad%2B%2B)
 
 ## 関連リンク {#d8eabd2e}
 
