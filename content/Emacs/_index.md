@@ -18,9 +18,9 @@ pukiwiki: "Emacs"
 
 ## Emacs とは {#a9896c87}
 
-Emacs は，拡張性のあるカスタマイズ可能なテキストエディタです．でも，それだけではありません．<br>
-Emacs の核となる部分は Emacs Lisp インタプリタです．<br>
-Emacs Lisp は Lisp の方言の一つで，テキストの編集をサポートする機能があります．<br>
+[Emacs](https://ja.wikipedia.org/wiki/Emacs) は，拡張性のあるカスタマイズ可能なテキストエディタです．でも，それだけではありません．<br>
+Emacs の核となる部分は [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) インタプリタです．<br>
+Emacs Lisp は [Lisp](https://ja.wikipedia.org/wiki/LISP) の方言の一つで，テキストの編集をサポートする機能があります．<br>
 Emacs Lisp を使えば自由に楽しくカスタマイズすることができます．<br>
 
 - [Emacs JP](http://emacs-jp.github.com/)
