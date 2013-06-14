@@ -253,7 +253,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
     - [Cygwinパッケージマネージャの自作中（その１）](http://d.hatena.ne.jp/ksugita0510/20101031/p2)
     - [Cygwinパッケージマネージャの自作中（その２）](http://d.hatena.ne.jp/ksugita0510/20101106/p1)
 
-## Terminal Emulator {#y02da075}
+## [Terminal Emulator](https://ja.wikipedia.org/wiki/%E7%AB%AF%E6%9C%AB%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF) {#y02da075}
 
 [Best terminal environment for Cygwin/Windows?](http://stackoverflow.com/questions/701895/best-terminal-environment-for-cygwin-windows) を参照．
 
