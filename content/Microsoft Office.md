@@ -14,7 +14,7 @@ pukiwiki: "Microsoft Office"
 - [Office IT 担当者向けブログ](http://blogs.technet.com/b/office_jp/)
 - [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
 - [MSOfficeJP(@MSOfficeJP) - Twilog](http://twilog.org/MSOfficeJP)
-- WikiPedia.ja:Microsoft Office
+- [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
 
 ## アドイン {#w6cd2e21}
 
