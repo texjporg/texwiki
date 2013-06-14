@@ -31,7 +31,7 @@ pukiwiki: "XyMTeX"
 を挙げておきます。
 
 XyMTeX は改良に改良を重ね，（試して
-いませんが）マイトトキシン (maitotoxin)
+いませんが）[マイトトキシン (maitotoxin)](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%83%88%E3%83%88%E3%82%AD%E3%82%B7%E3%83%B3)
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Maitotoxin.png/654px-Maitotoxin.png" alt="マイトトキシンの構造式" style="display:block;margin-inline:auto;margin-right:auto">
 
@@ -42,7 +42,7 @@ XyMTeX は改良に改良を重ね，（試して
 不可であること，任意の平面構造より立体的に突出した構造（楔形のことではない。
 これは Version 4.01 で実装済み）を描く際に picture 環境などによる
 レイアウト指定が必要になることを挙げます。例えばフグ毒である
-次のテトロドトキシン (tetrodotoxin)
+次の[テトロドトキシン (tetrodotoxin)](https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%88%E3%83%AD%E3%83%89%E3%83%88%E3%82%AD%E3%82%B7%E3%83%B3)
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tetrodotoxin-2D-skeletal.png/275px-Tetrodotoxin-2D-skeletal.png" alt="テトロドトキシンの構造式" style="display:block;margin-inline:auto;margin-right:auto">
 
