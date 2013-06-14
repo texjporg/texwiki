@@ -53,7 +53,7 @@ Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリ
 
 ## インストール {#d5b9a2e9}
 
-C++11 未対応のコンパイラを使用している場合は GCC 4.7.0 以降をインストールしてください。<br>
+[C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) 未対応のコンパイラを使用している場合は GCC 4.7.0 以降をインストールしてください。<br>
 [Dependency](https://github.com/coolwanglu/pdf2htmlEX#dependency) によると GCC 4.4.6 以上でビルド可能なようです．<br>
 
 ### Windows {#r72743bf}
