@@ -184,6 +184,7 @@ mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
 - [MinGW | Qt Wiki | Qt Project](http://qt-project.org/wiki/MinGW)
 - [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
+- [C::B advanced](http://sourceforge.net/projects/cbadvanced/)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
