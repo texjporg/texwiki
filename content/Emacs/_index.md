@@ -307,12 +307,12 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-\[Settings\]-\[Configure Okular...\]-\[Editor\] の項目から Emacs client を選択します．
+\[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\] の項目から Emacs client を選択します．
 
-Editor:
+エディタ:
 : Emacs client
 
-Command:
+コマンド:
 : emacsclient -a emacs --no-wait +%l %f
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
