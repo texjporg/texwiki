@@ -146,7 +146,7 @@ platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%
 　　プログラム: <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8 -jobname="""$basename"""</ins><br>
+　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8 -jobname='$basename'</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
