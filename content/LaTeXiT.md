@@ -16,7 +16,7 @@ pukiwiki: "LaTeXiT"
 ## LaTeXiT とは {#j7c51563}
 
 LaTeXiT は数式エディタです．<br>
-[MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
+[MacTeX](/Mac/#mactex) に標準で含まれています．<br>
 
 - [LaTeXiT](http://www.chachatelier.fr/latexit/)
     <!-- -[[LaTeXiT:http://pierre.chachatelier.fr/latexit]] -->
@@ -57,16 +57,11 @@ OS X 10.4 以降
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
 　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins> または <ins>/usr/texbin/uplatex</ins><br>
 　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
-　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← 最新版の Ghostscript を使用したい場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) または [Richard Koch Home Page](http://pages.uoregon.edu/koch/) で配布されている Ghostscript に変更<br>
-　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← 最新版の Ghostscript を使用したい場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) または [Richard Koch Home Page](http://pages.uoregon.edu/koch/) で配布されている Ghostscript に変更<br>
+　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/gs</ins> に変更<br>
+　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/ps2pdf</ins> に変更<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
 
 ***
-
-#### コマンドの引数 (/usr/texbin/platex または /usr/texbin/uplatex) {#x1c644d6}
-
-コマンドの引数
-: -kanji=utf8
 
 ## 関連リンク {#tab9989c}
 
@@ -75,9 +70,5 @@ OS X 10.4 以降
 - [2012年、Mac(Lion)とTeXと日本語と、あとhomebrew - A Way of Code](http://toggtc.hatenablog.com/entry/2012/02/20/230500)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - MacWiki:LaTeXiT
-- [LaTeXiTでアレする](http://ototorosama.com/blog/2011/11/latexit%E3%81%A7%E3%82%A2%E3%83%AC%E3%81%99%E3%82%8B/)
-- [久し振りの単独記事は、MacOSX LionにTeX環境を入れる話。](http://blog.goo.ne.jp/superspeed1963/e/09803682db0044e5bb3e5f6d5674c95c)
-- [pTeX.app+LaTeXiT.appで日本語を表示する．](http://d.hatena.ne.jp/beehive62/20100606/1275809660)
-- [LaTeXiTの数式で日本語を通す方法](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=52)
 - LaTeXiTでUndefined control sequence.l.1 \documentclass とのエラーメッセージがでる ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
 - [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
