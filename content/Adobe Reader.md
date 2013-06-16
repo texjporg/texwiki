@@ -14,7 +14,7 @@ pukiwiki: "Adobe Reader"
 Adobe Reader は PDF ファイルを表示・印刷するためのソフトウェアです．
 
 Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
-PDF ファイルのプレビューには [TeXworks](/TeXworks/) や [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
 - [Adobe Reader](http://www.adobe.com/jp/products/reader.html)
 - [モバイル版Adobe Reader](http://www.adobe.com/jp/products/reader-mobile.html)
@@ -43,13 +43,17 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 
 ### Windows 版 Adobe Reader XI または Adobe Reader X で Google 日本語入力を使用している場合に日本語入力ができない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
 
+- [Adobe Reader XI(11)で検索ボックスに日本語入力できない件](http://www.pg1x.com/2012/12/29/adobe-reader-xi11%E3%81%A7%E6%A4%9C%E7%B4%A2%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%81%AB%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E4%BB%B6/)
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
-### Windows 7 64bit で PDF ファイルのサムネールが表示されない → [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+### Windows 8, 7 64bit で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
 
-- [Adobe PDF iFilter 9 for 64-bit platforms](http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4025&fileID=3941)
+- [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
+- [ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/](ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/)
 - [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/)
+- [OSを64ビット版Windowsに変えたらPDFのサムネイルが非表示に――その解決法は](http://bizmakoto.jp/bizid/articles/1304/16/news038.html)
+- [Windows8のエクスプローラーでpdfファイルをサムネイル表示させるには？](http://openmemo.blog.fc2.com/blog-entry-287.html)
 - [【解決法】64bit版Windows7でPDFファイルのサムネイルが表示されない！](http://www.midnight2d.com/blog/archives/190)
 - [64bit版 Windows 7 で Adobe PDFのサムネイルを表示する](http://tak-shimiz.lolipop.jp/oyajinote/blog/archives/2011/0521_183928.html)
 
@@ -115,13 +119,13 @@ Adobe Reader 9 を使用している方は Adobe Reader XI または Adobe Reade
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
-Adobe Reader XI, Adobe Acrobat XI を使用する場合は
+Adobe Reader XI を使用する場合は
 
-- W32TeX \[2012/10/15\] 以降
+- TeX Live 2013 以降 (→ [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) でコミットされました)
 
 または
 
-- TeX Live 2013 以降 (→ [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) でコミットされました)
+- W32TeX \[2012/10/15\] 以降
 
 が必要です．<br>
 
