@@ -402,7 +402,7 @@ kanji-config-updmap ipaex
 
 ### W32TeX の場合 {#h6fd82bc}
 
-W32TeX はデフォルトでは ＭＳ 明朝・ＭＳ ゴシックを埋め込みます．<br>
+W32TeX \[2013/06/15\] 以降はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
 platex + dvipdfmx の組み合わせで PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
 フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が存在するかどうかを確認します．<br>
 
@@ -423,22 +423,19 @@ C:.
 ***
 
 C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が存在しない場合は最新版の [W32TeX](/W32TeX/) にアップデートしてください．<br>
-C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていればフォントが埋め込まれます．<br>
+C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．<br>
 
 ***
 
 ```
-%%%
-%%% ASCII pTeX Basic Fonts
-%%%
+%%
+%% ASCII pTeX Examples
+%%
 
-%
-% embed MS-Mincho and MS-Gothic
-%
-rml   H :0:msmincho.ttc
-gbm   H :0:msgothic.ttc
-rmlv  V :0:msmincho.ttc
-gbmv  V :0:msgothic.ttc
+rml   H ipaexm.ttf
+gbm   H ipaexg.ttf
+rmlv  V ipaexm.ttf
+gbmv  V ipaexg.ttf
 ```
 
 ***
@@ -450,83 +447,6 @@ kpsewhich -progname=dvipdfmx -format=.map cid-x.map
 ```
 
 uplatex + dvipdfmx の場合は [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#rdc781c9>) を参照してください．<br>
-
-<!-- PDF ビューアで日本語を表示するためにフォントの埋め込みの設定を行います． -->
-<!--  -->
-<!-- インストールしたフォルダーが C:\w32tex 以下の場合 -->
-<!--  -->
-<!-- C:\w32tex\share\texmf-local\fonts\map\dvipdfmx\base フォルダーを作成します． -->
-<!--  -->
-<!-- C:\w32tex\share\texmf\fonts\map\dvipdfmx\base\cid-x.map を -->
-<!--  -->
-<!-- C:\w32tex\share\texmf-local\fonts\map\dvipdfmx\base にコピーします． -->
-<!--  -->
-<!-- - --  -->
-<!-- C:. -->
-<!-- └─w32tex -->
-<!--     └─share -->
-<!--         ├─texmf-dist -->
-<!--         │   └─fonts -->
-<!--         │       └─map -->
-<!--         │           └─dvipdfmx -->
-<!--         │               └─base -->
-<!--         │                   └─cid-x.map -->
-<!--         └─texmf-local -->
-<!--              └─fonts -->
-<!--                  └─map -->
-<!--                      └─dvipdfmx -->
-<!--                          └─base -->
-<!--                              └─cid-x.map -->
-<!-- - --  -->
-<!--  -->
-<!-- C:\w32tex\share\texmf-local\fonts\map\dvipdfmx\base\cid-x.map を編集します． -->
-<!--  -->
-<!-- -編集前 -->
-<!-- - --  -->
-<!-- %cyberb@Unicode@ unicode cyberbit -->
-<!-- % -->
-<!-- % upTeX not embed -->
-<!-- % -->
-<!-- urml		UniJIS-UTF16-H		!Ryumin-Light -->
-<!-- urmlv		UniJIS-UTF16-V		!Ryumin-Light -->
-<!-- ugbm		UniJIS-UTF16-H		!GothicBBB-Medium -->
-<!-- ugbmv		UniJIS-UTF16-V		!GothicBBB-Medium -->
-<!--  -->
-<!-- uprml-h		UniJIS-UTF16-H		!Ryumin-Light -->
-<!-- uprml-v		UniJIS-UTF16-V		!Ryumin-Light -->
-<!-- upgbm-h		UniJIS-UTF16-H		!GothicBBB-Medium -->
-<!-- upgbm-v		UniJIS-UTF16-V		!GothicBBB-Medium -->
-<!-- uprml-hq	UniJIS-UCS2-H		!Ryumin-Light -->
-<!-- upgbm-hq	UniJIS-UCS2-H		!GothicBBB-Medium -->
-<!-- - --  -->
-<!-- -編集後 -->
-<!-- - --  -->
-<!-- %cyberb@Unicode@ unicode cyberbit -->
-<!-- % -->
-<!-- % upTeX not embed -->
-<!-- % -->
-<!-- %urml		UniJIS-UTF16-H		!Ryumin-Light -->
-<!-- %urmlv		UniJIS-UTF16-V		!Ryumin-Light -->
-<!-- %ugbm		UniJIS-UTF16-H		!GothicBBB-Medium -->
-<!-- %ugbmv		UniJIS-UTF16-V		!GothicBBB-Medium -->
-<!-- urml		UniJIS-UTF16-H		:0:msmincho.ttc -->
-<!-- urmlv		UniJIS-UTF16-V		:0:msmincho.ttc -->
-<!-- ugbm		UniJIS-UTF16-H		:0:msgothic.ttc -->
-<!-- ugbmv		UniJIS-UTF16-V		:0:msgothic.ttc -->
-<!--  -->
-<!-- %uprml-h		UniJIS-UTF16-H		!Ryumin-Light -->
-<!-- %uprml-v		UniJIS-UTF16-V		!Ryumin-Light -->
-<!-- %upgbm-h		UniJIS-UTF16-H		!GothicBBB-Medium -->
-<!-- %upgbm-v		UniJIS-UTF16-V		!GothicBBB-Medium -->
-<!-- %uprml-hq	UniJIS-UCS2-H		!Ryumin-Light -->
-<!-- %upgbm-hq	UniJIS-UCS2-H		!GothicBBB-Medium -->
-<!-- uprml-h		UniJIS-UTF16-H		:0:msmincho.ttc -->
-<!-- uprml-v		UniJIS-UTF16-V		:0:msmincho.ttc -->
-<!-- upgbm-h		UniJIS-UTF16-H		:0:msgothic.ttc -->
-<!-- upgbm-v		UniJIS-UTF16-V		:0:msgothic.ttc -->
-<!-- uprml-hq	UniJIS-UCS2-H		:0:msmincho.ttc -->
-<!-- upgbm-hq	UniJIS-UCS2-H		:0:msgothic.ttc -->
-<!-- - --  -->
 
 ## 設定 {#q50d2378}
 
