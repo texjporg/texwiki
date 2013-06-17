@@ -202,9 +202,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
-  \\setjamainfont{MS Mincho}
-  \\setjasansfont{MS Gothic}
-  \\setjamonofont{MS Gothic}
+  \\setjamainfont{ipaexm.ttf}
+  \\setjasansfont{ipaexg.ttf}
+  \\setjamonofont{ipaexg.ttf}
 \\fi
 \\ifdefined\\directlua
   \\usepackage{luatexja}
@@ -337,9 +337,9 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
-  \setjamainfont{IPAexMincho}
-  \setjasansfont{IPAexGothic}
-  \setjamonofont{IPAexGothic}
+  \\setjamainfont{ipaexm.ttf}
+  \\setjasansfont{ipaexg.ttf}
+  \\setjamonofont{ipaexg.ttf}
 \\fi
 \\ifdefined\\directlua
   \\usepackage{luatexja}
@@ -471,9 +471,9 @@ latexmk は TeX Live に含まれています．<br>
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
-  \setjamainfont{IPAexMincho}
-  \setjasansfont{IPAexGothic}
-  \setjamonofont{IPAexGothic}
+  \\setjamainfont{ipaexm.ttf}
+  \\setjasansfont{ipaexg.ttf}
+  \\setjamonofont{ipaexg.ttf}
 \\fi
 \\ifdefined\\directlua
   \\usepackage{luatexja}
