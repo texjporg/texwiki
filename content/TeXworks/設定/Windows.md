@@ -64,7 +64,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
-■ TeX Live の場合
+■ TeX Live 2013 の場合
 
 pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
 
@@ -77,10 +77,18 @@ pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成しま�
 ```
 @echo off
 platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
-dvipdfmx -f ptex-ipaex.map "%~n1"
+dvipdfmx "%~n1"
 ```
 
 ***
+
+IPAexフォントを埋め込む場合はコマンド プロンプトから
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．<br>
 
 ■ W32TeX の場合
 
@@ -223,7 +231,7 @@ ps2pdf.bat "%~n1.ps"
 
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
-■ TeX Live の場合
+■ TeX Live 2013 の場合
 
 ***
 
@@ -234,10 +242,18 @@ pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成し�
 ```
 @echo off
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx -f uptex-ipaex.map "%~n1"
+dvipdfmx "%~n1"
 ```
 
 ***
+
+IPAexフォントを埋め込む場合はコマンド プロンプトから
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．<br>
 
 ■ W32TeX の場合
 
