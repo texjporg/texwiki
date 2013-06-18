@@ -86,6 +86,7 @@ repstopdf,epspdf,extractbb,\
 
 ### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
 
+- [VirtualBoxにDebian/wheezyをインストール](http://ameblo.jp/koba-matethm/entry-11554870177.html)
 - [Debian Wheezy amd64でLaTeX環境を構築する](http://linux.tsutomuonoda.com/debian-wheezy-amd64-latex/)
 - [Raspberry Pi で遊ぶ (1) &mdash;LaTeX のコンパイルサーバーとして&#8212;](http://skalldan.wordpress.com/2013/02/18/raspberry-pi-%E3%81%A7%E9%81%8A%E3%81%B6-1-latex-%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%97%E3%81%A6/)
 - [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
