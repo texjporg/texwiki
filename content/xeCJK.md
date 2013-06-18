@@ -80,13 +80,41 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 \setCJKmonofont{IPAexGothic}
 ```
 
-#### IPAMincho, IPAGothic の場合 {#uab0d085}
+上記の設定で<br>
+
+```
+(c:/w32tex/share/texmf-dist/tex/xelatex/xecjk/config/xeCJK.cfg)))
+kpathsea: Running mktextfm IPAexMincho/ICU
+
+The command name is C:\w32tex\bin\mktextfm
+
+kpathsea: Running mktexmf IPAexMincho/ICU.mf
+
+The command name is C:\w32tex\bin\mktexmf
+name = IPAexMincho/ICU, rootname = IPAexMincho/ICU, pointsize =
+mktexmf: empty or non-existent rootfile!
+Cannot find IPAexMincho/ICU.mf.
+kpathsea: Appending font creation commands to missfont.log.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+!
+! The font "IPAexMincho" cannot be found.
+!
+! See the fontspec documentation for further information.
+!
+! For immediate help type H <return>.
+!...............................................
+```
+
+のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
 
 ```
 \usepackage{xeCJK}
-\setCJKmainfont{IPAMincho}
-\setCJKsansfont{IPAGothic}
-\setCJKmonofont{IPAGothic}
+\setCJKmainfont{ipaexm.ttf}
+\setCJKsansfont{ipaexg.ttf}
+\setCJKmonofont{ipaexg.ttf}
 ```
 
 #### MS Mincho, MS Gothic の場合 {#u1a0c13b}
@@ -158,6 +186,43 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 \setjamonofont{IPAexGothic}
 ```
 
+上記の設定で<br>
+
+```
+(c:/w32tex/share/texmf-dist/tex/xelatex/xecjk/config/xeCJK.cfg)))
+kpathsea: Running mktextfm IPAexMincho/ICU
+
+The command name is C:\w32tex\bin\mktextfm
+
+kpathsea: Running mktexmf IPAexMincho/ICU.mf
+
+The command name is C:\w32tex\bin\mktexmf
+name = IPAexMincho/ICU, rootname = IPAexMincho/ICU, pointsize =
+mktexmf: empty or non-existent rootfile!
+Cannot find IPAexMincho/ICU.mf.
+kpathsea: Appending font creation commands to missfont.log.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+!
+! The font "IPAexMincho" cannot be found.
+!
+! See the fontspec documentation for further information.
+!
+! For immediate help type H <return>.
+!...............................................
+```
+
+のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
+
+```
+\usepackage{zxjatype}
+\setjamainfont{ipaexm.ttf}
+\setjasansfont{ipaexg.ttf}
+\setjamonofont{ipaexg.ttf}
+```
+
 zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
 
 ```
@@ -171,31 +236,6 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
   \setCJKmainfont{IPAexMincho}
   \setCJKsansfont{IPAexGothic}
   \setCJKmonofont{IPAexGothic}
-}
-```
-
-#### IPAMincho, IPAGothic の場合 {#j2934d74}
-
-```
-\usepackage{zxjatype}
-\setjamainfont{IPAMincho}
-\setjasansfont{IPAGothic}
-\setjamonofont{IPAGothic}
-```
-
-zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
-
-```
-\IfFileExists{zxjatype.sty}{
-  \usepackage{zxjatype}
-  \setjamainfont{IPAMincho}
-  \setjasansfont{IPAGothic}
-  \setjamonofont{IPAGothic}
-}{
-  \usepackage{xeCJK}
-  \setCJKmainfont{IPAMincho}
-  \setCJKsansfont{IPAGothic}
-  \setCJKmonofont{IPAGothic}
 }
 ```
 
