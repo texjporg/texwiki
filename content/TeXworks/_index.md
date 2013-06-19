@@ -82,6 +82,7 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, poppler 0.22.1 を使用して
 
 ## TeX ► QA ► フォーラム ► 一般フォーラム ► {#m9d42515}
 
+- [TeXworksのpdfビューワーで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1039)
 - [文字の前後の空白](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=922)
 - [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
 - [TeXworksで文字化けします。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=886)
