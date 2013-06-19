@@ -36,18 +36,61 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 
 - [Linux](/Linux/#texlive2013)
 
-### TeX Live 2012 {#ba4e8250}
+## [Evince](/Evince/) {#g696ddc1}
 
-- [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
-- [春は Gentoo♪　〔Part ６：とりあえず完了〕【texlive 2012 インストール手順】](http://blogs.yahoo.co.jp/igproj_fusion/16932540.html)
-- [TeX Live 2012 on Gentoo Linux (x86 &amp; x86_64)](http://blogs.yahoo.co.jp/igproj_fusion/15771588.html)
+- [http://gentwoo.elisp.net/packages/app-text/evince](http://gentwoo.elisp.net/packages/app-text/evince)
+
+## [Okular](/Okular/) {#z8140a10}
+
+- [http://gentwoo.elisp.net/packages/kde-base/okular](http://gentwoo.elisp.net/packages/kde-base/okular)
+
+## [zathura](/zathura/) {#t0a73215}
+
+- [http://gentwoo.elisp.net/packages/app-text/zathura](http://gentwoo.elisp.net/packages/app-text/zathura)
+
+## [qpdfview](/qpdfview/) {#wcb9878f}
+
+- [http://gentwoo.elisp.net/packages/app-text/qpdfview](http://gentwoo.elisp.net/packages/app-text/qpdfview)
+
+## [Texmaker](/Texmaker/) {#s4e0cb5d}
+
+- [http://gentwoo.elisp.net/packages/app-office/texmaker](http://gentwoo.elisp.net/packages/app-office/texmaker)
+
+## [LyX](/LyX/) {#p4f2e771}
+
+- [http://gentwoo.elisp.net/packages/app-office/lyx](http://gentwoo.elisp.net/packages/app-office/lyx)
+
+## [TeXworks](/TeXworks/) {#b5894e2b}
+
+## Gummi {#kc5a1561}
+
+- [http://gentwoo.elisp.net/packages/app-editors/gummi](http://gentwoo.elisp.net/packages/app-editors/gummi)
+
+## LaTeXila {#b1485fd8}
+
+## [Kile](/Kile/) {#qc5e840d}
+
+- [http://gentwoo.elisp.net/packages/app-editors/kile](http://gentwoo.elisp.net/packages/app-editors/kile)
 
 ## [Emacs](/Emacs/) {#wd024ab5}
 
+- [http://gentwoo.elisp.net/packages/app-editors/emacs](http://gentwoo.elisp.net/packages/app-editors/emacs)
+
 ### YaTeX {#bd731415}
 
+- [http://gentwoo.elisp.net/packages/app-emacs/yatex](http://gentwoo.elisp.net/packages/app-emacs/yatex)
 - [http://packages.gentoo.org/package/app-emacs/yatex](http://packages.gentoo.org/package/app-emacs/yatex)
 
 ### AUCTeX {#vbff1741}
 
+- [http://gentwoo.elisp.net/packages/app-emacs/auctex](http://gentwoo.elisp.net/packages/app-emacs/auctex)
 - [http://packages.gentoo.org/package/app-emacs/auctex](http://packages.gentoo.org/package/app-emacs/auctex)
+
+## [Vim](/Vim/) {#h4e75309}
+
+- [http://gentwoo.elisp.net/packages/app-editors/vim](http://gentwoo.elisp.net/packages/app-editors/vim)
+
+### Vim-LaTeX {#v9a32534}
+
+- [http://gentwoo.elisp.net/packages/app-vim/vim-latex](http://gentwoo.elisp.net/packages/app-vim/vim-latex)
+- [http://packages.gentoo.org/package/app-vim/vim-latex](http://packages.gentoo.org/package/app-vim/vim-latex)
