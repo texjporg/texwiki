@@ -387,10 +387,10 @@ Linux/Debian#Adobe Reader を参照してインストールすれば KozGoPr6N-M
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
-TeX Live をインストールして
+MacTeX-2013 をインストールして
 
 ```
-ptex2pdf -l -od '-f ptex-hiragino.map -f otf-hiragino.map' hoge.tex
+kanji-config-updmap hiragino
 ```
 
 を実行しました。
@@ -475,6 +475,30 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 ## map Files for the OTF Package {#nc92c884}
 
 ここからの話の対象は TeX Live あるいは W32TeX の場合であろうと思われます。
+
+> W32TeX をお使いの場合は，(e-)(u)pTeX エンジン用の map ファイルが準備されています。埋め込み制御はすべて dvipdfmx の -f オプションを使います。
+>
+> ```
+> dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
+> dvipdfmx -f hiragino dviname (Hiragino)
+> dvipdfmx -f hiragino04 dviname (Hiragino, JIS2004字形)
+> dvipdfmx -f hiraginopron dviname (Hiragino ProN)
+> dvipdfmx -f hiraginopron04 dviname (Hiragino ProN, JIS2004字形)
+> dvipdfmx -f ipa dviname (ipa)
+> dvipdfmx -f ipaex dviname (ipaex)
+> dvipdfmx -f kozuka dviname (小塚 Pro)
+> dvipdfmx -f koauka04 dviname (小塚 Pro, JIS2004字形)
+> dvipdfmx -f kozukapr6n dviname (小塚 Pr6N)
+> dvipdfmx -f kozukapr6n04 dviname (小塚 Pr6N, JIS2004字形)
+> dvipdfmx -f morisawa dviname (Morisawa)
+> dvipdfmx -f morisawa04 dviname (Morisawa, JIS2004字形)
+> dvipdfmx -f morisawapr6n dviname (Morisawa Pr6N)
+> dvipdfmx -f morisawapr6n04 dviname (Morisawa Pr6N, JIS2004字形)
+> dvipdfmx -f msmingoth dviname (msmincho and msgothic)
+> dvipdfmx -f noembed dviname (埋め込まない)
+> dvipdfmx -f noembed04 dviname (埋め込まない, JIS2004字形)
+> ```
+>
 
 > TeX Live をお使いの場合は，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
 > 埋め込み制御は
