@@ -33,6 +33,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 ### TeX Live 2013 {#jc67c0a8}
 
+- [TeXLive2013へのアップグレード](http://anastashia.blog.shinobi.jp/tex/upgrade_to_texlive2013)
 - [Linux](/Linux/#texlive2013)
 
 ### TeX Live 2012, Ghostscript {#e1520aae}
