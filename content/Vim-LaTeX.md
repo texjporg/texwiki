@@ -35,8 +35,8 @@ Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentati
 
 ### ChangeLog {#ye1a925a}
 
-- [SourceForge - vim-latex/vim-latex/summary](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex)
-    - [コミットログ](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=shortlog)
+- [http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/)
+    - [コミットログ](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/log/)
 
 ### スクリーンショット {#fcc0c5b2}
 
@@ -59,7 +59,13 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
-[NeoBundle](https://github.com/Shougo/neobundle.vim) を使ってインストールができます． → [vim-latexはneobundleでインストールしよう](http://wp.raa0121.info/2013/04/vim-latexneobundle.html)<br>
+[NeoBundle](https://github.com/Shougo/neobundle.vim) を使ってインストールができます．
+
+```
+  NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+```
+
+→ [vim-latexはneobundleでインストールしよう](http://wp.raa0121.info/2013/04/vim-latexneobundle.html)~ ※リンク先のリポジトリアドレスではインストール出来ません（2013/06/21確認）．
 
 ### Windows {#eb85b35a}
 
