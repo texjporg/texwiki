@@ -48,8 +48,8 @@ TeXlipse Version 1.4.2 以降は 64-bit Windows に対応しています．<br>
 
 ### ChangeLog {#e321b2d0}
 
-- [SourceForge - texlipse/net.sourceforge.texlipse/summary](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse)
-    - [shortlog](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=shortlog)
+- [http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
+    - [log](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
 
 ### スクリーンショット {#j94c34b3}
 
@@ -109,12 +109,12 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 
 ### Eclipse がフリーズする → TeXlipse git HEAD では Eclipse がフリーズする問題は修正されています {#k9639d78}
 
-- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=commit;h=bbf0c9ab337f61a4fc0a3c283fd6823661e3e420)
+- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/bbf0c9ab337f61a4fc0a3c283fd6823661e3e420/)
 - [TeXlipse causes Eclipse UI to freeze](http://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) → Fixed
 
 ### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない → TeXlipse git HEAD ではワードラップの問題は修正されています {#k7905270}
 
-- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](http://texlipse.git.sourceforge.net/git/gitweb.cgi?p=texlipse/net.sourceforge.texlipse;a=commit;h=77f84799c805a5785d3ee1d8cda903e6bb52cfe9)
+- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/77f84799c805a5785d3ee1d8cda903e6bb52cfe9/)
 - [Word wrap in Juno](http://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
 - [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
 
