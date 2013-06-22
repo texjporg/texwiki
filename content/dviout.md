@@ -7,7 +7,8 @@ pukiwiki: "dviout"
 
 # dviout
 
-dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。
+dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
+TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ## dviout for Windows {#rfded337}
 
@@ -64,7 +65,8 @@ dviout3184-inst.zip と同じものであり，ここではこれらの点が
 
 ### TeX Live の場合 {#se2d51a5}
 
-TeX Live の Win32 版には標準で dviout が含まれていて TeX Live 2013 であれば C:\texlive\2013\tlpkg\dviout 以下に配置されています．<br>
+TeX Live の Win32 版には標準で dviout が含まれています．<br>
+TeX Live 2013 であれば C:\texlive\2013\tlpkg\dviout 以下に配置されています．<br>
 
 ### W32TeX の場合 {#r4cfc9ce}
 
