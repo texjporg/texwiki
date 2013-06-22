@@ -71,6 +71,14 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 
 - [Linux](/Linux/#texlive2013)
 
+TeX Live の公式サイトのインストーラでインストールする場合は
+[texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/)
+をインストールします．<br>
+
+```
+$ yaourt -S texlive-dummy
+```
+
 ### TeX Live 2012/Arch Linux {#x25fb663}
 
 texlive-langcjk, texlive-most をインストールします．<br>
