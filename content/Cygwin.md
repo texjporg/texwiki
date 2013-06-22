@@ -53,9 +53,9 @@ Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
 ### 不具合 {#iffd4e02}
 
-#### TeX Live 2013/Cygwin で texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている → 文字コードを ISO-2022-JP に変更する {#sdcc1be2}
+#### texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている → 文字コードを ISO-2022-JP に変更する {#sdcc1be2}
 
-TeX Live 2013/Cygwin で texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
+texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
 
 #### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
 
@@ -233,6 +233,8 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 
 ***
 
+#### texmf.cnf の編集 {#uc813f02}
+
 /usr/share/texmf-dist/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
@@ -262,6 +264,8 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
+
+#### [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) {#y0fb372c}
 
 ## [W32TeX](/W32TeX/) {#f3b98402}
 
