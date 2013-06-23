@@ -39,6 +39,8 @@ TeX Live を公式サイトのパッケージを使用してインストール�
 
 #### openSUSE 12.3 {#i8bbf7fd}
 
+- [openSUSE12.3（その５）](http://take0703.wordpress.com/2013/06/22/opensuse12-3%EF%BC%88%E3%81%9D%E3%81%AE%EF%BC%95%EF%BC%89/)
+
 YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
 zypper を使用しても OK です．<br>
 
