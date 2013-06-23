@@ -283,6 +283,7 @@ latexmk -c
 latexmk -C
 ```
 
+- [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
 - [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
