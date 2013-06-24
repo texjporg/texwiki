@@ -48,6 +48,34 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-scheme-full
 ```
 
+/usr/lib/texmf/web2c/texmf.cnf を編集します．
+
+```
+$ sudo vi /usr/lib/texmf/web2c/texmf.cnf
+```
+
+shell_escape_commands が以下のように記述されていると思います．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+shell_escape_commands を以下のように編集して保存します．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,\
+repstopdf,epspdf,extractbb,\
+```
+
 ## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
 
 ```
