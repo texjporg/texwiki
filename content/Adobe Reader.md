@@ -32,7 +32,7 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) や [TeXwork
 
 ### お知らせ {#xa82989b}
 
-[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)します．<br>
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 
 ### リリース情報 {#j256c5cd}
