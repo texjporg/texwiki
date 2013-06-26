@@ -65,7 +65,7 @@ GVim の on-the-spot の実装に問題があるようです．<br>
   NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 ```
 
-→ [vim-latexはneobundleでインストールしよう](http://wp.raa0121.info/2013/04/vim-latexneobundle.html)~ ※リンク先のリポジトリアドレスではインストール出来ません（2013/06/21確認）．
+<!-- → [[vim-latexはneobundleでインストールしよう:http://wp.raa0121.info/2013/04/vim-latexneobundle.html]]~ ※リンク先のリポジトリアドレスではインストール出来ません（2013/06/21確認）． -->
 
 ### Windows {#eb85b35a}
 
@@ -676,7 +676,7 @@ function! Tex_ForwardSearchLaTeX()
 
 ### SumatraPDF を前面に表示したくない場合 {#g49fe34c}
 
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
 [$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=blob;f=ftplugin/latex-suite/compiler.vim) を修正します．
 
