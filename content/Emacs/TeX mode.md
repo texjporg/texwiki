@@ -39,6 +39,7 @@ C-x C-f ~/
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 以下の設定では TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
+fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
 ***
 
@@ -115,7 +116,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
          (mtf (tex-main-file))
          (pf (concat (car (split-string mtf "\\.")) ".pdf"))
          (ln (format "%d" (line-number-at-pos)))
-         (cmd "start SumatraPDF")
+         (cmd "rundll32 shell32,ShellExec_RunDLL SumatraPDF")
          (args (concat "-reuse-instance \"" pf "\" -forward-search \"" ctf "\" " ln)))
     (message (concat cmd " " args))
     (process-kill-without-query
@@ -175,14 +176,14 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "/usr/texbin/ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
-;(setq tex-run-command "/usr/texbin/ptex2pdf -e -u -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "/usr/texbin/ptex2pdf -e -ot '-synctex=1 -interaction=nonstopmode'")
+;(setq tex-run-command "/usr/texbin/ptex2pdf -e -u -ot '-synctex=1 -interaction=nonstopmode'")
 ;(setq tex-run-command "/usr/texbin/pdftex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/usr/texbin/xetex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "/usr/texbin/ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
-;(setq latex-run-command "/usr/texbin/ptex2pdf -l -u -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "/usr/texbin/ptex2pdf -l -ot '-synctex=1 -interaction=nonstopmode'")
+;(setq latex-run-command "/usr/texbin/ptex2pdf -l -u -ot '-synctex=1 -interaction=nonstopmode'")
 ;(setq latex-run-command "/usr/texbin/pdflatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "/usr/texbin/lualatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "/usr/texbin/luajitlatex -synctex=1 -interaction=nonstopmode")
@@ -283,14 +284,14 @@ fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -e -ot \"-synctex=1 -interaction=nonstopmode\"")
-;(setq tex-run-command "ptex2pdf -e -u -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "ptex2pdf -e -ot '-synctex=1 -interaction=nonstopmode'")
+;(setq tex-run-command "ptex2pdf -e -u -ot '-synctex=1 -interaction=nonstopmode'")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -l -ot \"-synctex=1 -interaction=nonstopmode\"")
-;(setq latex-run-command "ptex2pdf -l -u -ot \"-synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "ptex2pdf -l -ot '-synctex=1 -interaction=nonstopmode'")
+;(setq latex-run-command "ptex2pdf -l -u -ot '-synctex=1 -interaction=nonstopmode'")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "luajitlatex -synctex=1 -interaction=nonstopmode")
