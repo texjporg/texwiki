@@ -34,7 +34,7 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 - [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
 
-### dvipdfmx で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. → TeX Live 2013 以降または W32TeX \[2013/01/11\] 以降にアップデート {#z5173081}
+### TeX Live 2012 の dvipdfmx で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. → TeX Live 2013 以降または W32TeX \[2013/01/11\] 以降にアップデート {#z5173081}
 
 TeX Live 2013 (→ [Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787) を参照) および W32TeX \[2013/01/11\] で修正されました
 
