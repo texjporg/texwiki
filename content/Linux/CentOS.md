@@ -50,3 +50,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 ```
 $ sudo yum install evince
 ```
+
+## Adobe Reader {#eb6955fb}
+
+- [CentOS 6.xにAdobe Readerインストール設定（yum）](http://boota.mydns.jp/blog/?p=2028)
