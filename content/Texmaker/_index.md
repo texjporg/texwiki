@@ -209,7 +209,20 @@ setFormat( i, 1,ColorStandard);
 
 としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます．<br>
 
-poppler-qt4.h を参照できるようにするため，texmaker.pro に INCLUDEPATH を追加します．
+Qt 5 を使用する場合は texmaker.pro を修正します．<br>
+
+***
+
+```
+## QT4
+#QT += xml webkit network
+## QT5
+QT += xml webkitwidgets network widgets printsupport concurrent
+```
+
+***
+
+poppler-qt4.h, poppler-qt5.h を参照できるようにするため，texmaker.pro に INCLUDEPATH を追加して LIBS に -lpoppler-qt5 を追加します．
 
 Portable バージョンを作成する場合は #DEFINES += USB_VERSION の # を外します．
 
@@ -220,7 +233,8 @@ win32 {
 INCLUDEPATH += C:\QtSDK\mingw\include
 INCLUDEPATH += C:\poppler
 INCLUDEPATH += /mingw/include/poppler/qt4
-LIBS         += -LC:\poppler -lpoppler-qt4
+INCLUDEPATH += /mingw/include/poppler/qt5
+LIBS         += -LC:\poppler -lpoppler-qt4 -lpoppler-qt5
 RC_FILE = win.rc
 
 DEFINES += USB_VERSION
@@ -228,37 +242,9 @@ DEFINES += USB_VERSION
 
 ***
 
-<!-- $ cp utilities/texmaker.ico . -->
-
 ```
 $ qmake texmaker.pro
 $ make release
-```
-
-***
-
-```
-'dynamic_cast_will_always_fail_because_rtti_is_disabled' is not a member of 'const Poppler::LinkGoto*'
-```
-
-のエラーが発生する場合は [C:\Qt\4.8.4\src\corelib\global\qglobal.h](http://qt.gitorious.org/qt/qt/blobs/4.8/src/corelib/global/qglobal.h#line2505) の qt_dynamic_cast_check の処理 (2505行目あたり) を { return 0; } に修正します．
-
-***
-
-```
-#ifdef QT_NO_DYNAMIC_CAST
-#  define dynamic_cast QT_PREPEND_NAMESPACE(qt_dynamic_cast_check)
-
-  template<typename T, typename X>
-  T qt_dynamic_cast_check(X, T* = 0)
-//  { return T::dynamic_cast_will_always_fail_because_rtti_is_disabled; }
-  { return 0; }
-#endif
-```
-
-***
-
-```
 $ cd release
 $ ./texmaker &
 ```
