@@ -19,3 +19,4 @@ pukiwiki: "GitHub"
 - [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
 - [https://github.com/SublimeText/LaTeXTools](https://github.com/SublimeText/LaTeXTools)
 - [https://github.com/munepi](https://github.com/munepi)
+- [latex向けの.gitignore](http://memo.yomukaku.net/entries/196)
