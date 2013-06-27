@@ -36,7 +36,7 @@ poppler は
 
 ### リリース情報 {#ha3b28ab}
 
-[Poppler](http://poppler.freedesktop.org/) を参照．<br>
+- [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags) を参照．<br>
 
 poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました．<br>
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
@@ -905,6 +905,7 @@ Building poppler with support for:
   splash output:      yes
   cairo output:       yes
   qt4 wrapper:        yes
+  qt5 wrapper:        no
   glib wrapper:       yes
     introspection:    no
   cpp wrapper:        yes
@@ -949,6 +950,7 @@ Building Poppler with support for:
   splash output:        yes
   cairo output:         yes
   qt4 wrapper:          yes
+  qt5 wrapper:          no
   glib wrapper:         yes
     introspection:      no
   cpp wrapper:          yes
