@@ -59,11 +59,13 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-<!-- -http://qt-project.org/downloads から Qt5 または Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します． -->
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
-    <!-- - -[[Qt5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
+<!-- -http://qt-project.org/downloads から Qt 5 または Qt 4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します． -->
+- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt 4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の bin ディレクトリに PATH を通します．
+    <!-- - -[[Qt 5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
 
 <!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
+
+- [Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
 
 - [CMake - Cross Platform Make](http://www.cmake.org/cmake/resources/software.html) から Binary distributions の Windows ZIP File をダウンロードして展開し，bin フォルダー (cmake.exe のあるフォルダー) に PATH を通します．
 
@@ -317,10 +319,13 @@ $ popd
 
 - [OpenJPEG](http://www.openjpeg.org/) をインストールします．
 
+<!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
+<!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
+<!-- $ pushd openjpeg-2.0.0 -->
+
 ```
-$ curl --insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz
-$ tar xvf openjpeg-2.0.0.tar.gz
-$ pushd openjpeg-2.0.0
+$ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only
+$ pushd openjpeg-read-only
 $ mkdir build
 $ pushd build
 ```
@@ -328,7 +333,7 @@ $ pushd build
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
 
 ```
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DUNIX:bool=on
 $ make
 $ make install
 $ popd
@@ -883,20 +888,12 @@ $ pushd poppler-0.23.2
 
 <!-- ■ Qt5 mingw バイナリをインストールした場合 -->
 <!--  -->
-<!-- configure の moc のバージョンチェックの処理の項目をコメントアウトします． -->
-<!--  -->
-<!-- #    if test x"$mocversiongrep" != x"$mocversion"; then -->
-<!--       # no valid moc found -->
-<!-- #      enable_poppler_qt4=no; -->
-<!-- #      MOCQT4="not found" -->
-<!-- #    fi -->
-<!--  -->
-<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/lib -lQt5Concurrent -lQt5Core -lQt5Gui -lQt5Network -lQt5PrintSupport -lQt5Sql -lQt5WebKit -lQt5WebKitWidgets -lQt5Widgets -lQt5Xml" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/Qt5.0.1/5.0.1/mingw47_32/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/Qt5.0.1/5.0.1/mingw47_32/bin" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
+<!-- $ POPPLER_QT5_CFLAGS="-IC:/Qt5.1.0/5.1.0/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt5.1.0/5.1.0/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt5.1.0/5.1.0/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt5.1.0/5.1.0/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config - -cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config - -libs libopenjp2`" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
 <!-- ■ Qt4 mingw バイナリをインストールした場合 -->
 
 ```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
@@ -938,10 +935,10 @@ $ mkdir build
 $ pushd build
 ```
 
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBOPENJPEG=ON -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DENABLE_LIBCURL=ON -->
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBOPENJPEG=ON -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll -->
 
 ```
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll
 ```
 
 ```
