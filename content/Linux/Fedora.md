@@ -48,7 +48,8 @@ yum で texlive-scheme-full を指定すれば TeX Live 2013 をインストー�
 $ sudo yum install texlive-scheme-full
 ```
 
-/usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf が存在しない場合は /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．<br>
 
 shell_escape_commands が以下のように記述されていると思います．
 
