@@ -26,9 +26,6 @@ Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
 - [Ubuntu Japanese Wiki - Ubuntu Japanese Wiki](https://wiki.ubuntulinux.jp/)
     - [開発](https://wiki.ubuntulinux.jp/Develop)
-        <!-- - -[[JapaneseLocalizedDerivative/LaTeXForJapanese:https://wiki.ubuntulinux.jp/JapaneseLocalizedDerivative/LaTeXForJapanese]] -->
-        <!-- - -[[AdobeReaderJpn-Migration:https://wiki.ubuntulinux.jp/Develop/AdobeReaderJpn-Migration]] -->
-
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
 
@@ -67,7 +64,7 @@ Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの 
 
 #### Linux Mint とは {#n7037512}
 
-Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Linux Mint](</Linux/Linux Mint/>)
 
@@ -75,7 +72,7 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#y097b8c5}
 
-#### Linux Mint 15 {#se51f85a}
+#### Linux Mint 16, 15 {#se51f85a}
 
 - [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
 
