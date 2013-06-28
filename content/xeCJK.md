@@ -16,7 +16,7 @@ pukiwiki: "xeCJK"
 ## [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
-IVS (異体字セレクタ) にも対応しています．<br>
+IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．<br>
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) の xetex-w32.tar.xz, [MiKTeX](/MiKTeX/) に含まれています．<br>
 
 - [ctex-kit](https://code.google.com/p/ctex-kit/)
@@ -66,8 +66,6 @@ xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} �
 ### 不具合 {#t2600dd9}
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
-
-- [Issue 116: xeCJK: Support for Ideographic Variation Selectors](https://code.google.com/p/ctex-kit/issues/detail?id=116)
 
 ### 使い方 {#k3d278aa}
 
