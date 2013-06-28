@@ -21,31 +21,26 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 - [WANG Lu (coolwanglu) - Twitter](https://twitter.com/coolwanglu)
     - 日本語で返信していただいてもかまいません。
 
-## 注意点 {#j715c0ef}
-
-### pdf2htmlEX version 0.6 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → --auto-hint 1 オプションを指定する {#t8c12146}
-
-pdf2htmlEX version 0.6 で --auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．<br>
-Windows 版の Google Chrome で [Formulas](http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html) の元になった cheat.pdf を --auto-hint 1 オプション指定なしで
-
-```
-$ pdf2htmlEX --zoom 2 cheat.pdf
-```
-
-として変換して表示すると
-
-拡大/縮小 90% → 1−x の − (マイナス) が表示される<br>
-拡大/縮小 100% → 1−x の − (マイナス) が表示されない<br>
-拡大/縮小 110% → 1−x の − (マイナス) が表示される<br>
-
-といった現象が発生します．<br>
-オプション指定で --auto-hint 1 を指定すると表示できるようになりました
-
-```
-$ pdf2htmlEX --auto-hint 1 --zoom 2 cheat.pdf
-```
-
-Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [Chromeはwindowsでanti-aliasがないようです](https://twitter.com/coolwanglu/status/246220925454934016)
+<!-- *注意点 [#j715c0ef] -->
+<!-- **pdf2htmlEX version 0.6 で - -auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → - -auto-hint 1 オプションを指定する [#t8c12146] -->
+<!--  -->
+<!-- pdf2htmlEX version 0.6 で - -auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．~ -->
+<!-- Windows 版の Google Chrome で [[Formulas:http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html]] の元になった cheat.pdf を - -auto-hint 1 オプション指定なしで -->
+<!--  -->
+<!-- $ pdf2htmlEX - -zoom 2 cheat.pdf -->
+<!--  -->
+<!-- として変換して表示すると -->
+<!--  -->
+<!-- 拡大/縮小 90% → 1−x の − (マイナス) が表示される~ -->
+<!-- 拡大/縮小 100% → 1−x の − (マイナス) が表示されない~ -->
+<!-- 拡大/縮小 110% → 1−x の − (マイナス) が表示される~ -->
+<!--  -->
+<!-- といった現象が発生します．~ -->
+<!-- オプション指定で - -auto-hint 1 を指定すると表示できるようになりました -->
+<!--  -->
+<!-- $ pdf2htmlEX - -auto-hint 1 - -zoom 2 cheat.pdf -->
+<!--  -->
+<!-- Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [[Chromeはwindowsでanti-aliasがないようです:https://twitter.com/coolwanglu/status/246220925454934016]] -->
 
 ## 不具合 {#q60cf17d}
 
@@ -62,59 +57,50 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 
 poppler - TeX Wiki を参照して poppler をインストールします．(pdf2htmlEX をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)<br>
 
-[Python](http://www.python.org/) 2.7.5 Windows x86 MSI Installer をダウンロードしてインストールします．<br> <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ --> <!--  --> <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
-
-mingw-utils をインストールします．<br>
-
-```
-$ mingw-get install mingw-utils
-```
-
-MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．<br>
-
-32bit Windows の場合
-
-```
-$ pexports /c/Windows/System32/python27.dll > python27.def
-$ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a
-C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'.
-$ rm python27.def
-```
-
-64bit Windows の場合
-
-```
-$ pexports /c/Windows/SysWOW64/python27.dll > python27.def
-$ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a
-C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'.
-$ rm python27.def
-```
-
-***
-
-- C:/MinGW/lib/pkgconfig/python.pc
-- C:/MinGW/lib/pkgconfig/python-2.7.pc
-
-を作成して以下の内容を記述します．
-
-***
-
-```
-prefix=/mingw
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=/c/Python27/include
-
-Name: Python
-Description: Python library
-Requires: 
-Version: 2.7
-Libs.private:
-Libs: -L${libdir} -lpython27
-Cflags: -IC:/Python27/include
-```
-
-***
+<!-- [[Python:http://www.python.org/]] 2.7.5 Windows x86 MSI Installer をダウンロードしてインストールします．~ -->
+<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
+<!--  -->
+<!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
+<!--  -->
+<!-- mingw-utils をインストールします．~ -->
+<!--  -->
+<!-- $ mingw-get install mingw-utils -->
+<!--  -->
+<!-- MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．~ -->
+<!--  -->
+<!-- 32bit Windows の場合 -->
+<!--  -->
+<!-- $ pexports /c/Windows/System32/python27.dll > python27.def -->
+<!-- $ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
+<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'. -->
+<!-- $ rm python27.def -->
+<!--  -->
+<!-- 64bit Windows の場合 -->
+<!--  -->
+<!-- $ pexports /c/Windows/SysWOW64/python27.dll > python27.def -->
+<!-- $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
+<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'. -->
+<!-- $ rm python27.def -->
+<!--  -->
+<!-- - --  -->
+<!-- -C:/MinGW/lib/pkgconfig/python.pc -->
+<!-- -C:/MinGW/lib/pkgconfig/python-2.7.pc -->
+<!--  -->
+<!-- を作成して以下の内容を記述します． -->
+<!-- - --  -->
+<!-- prefix=/mingw -->
+<!-- exec_prefix=${prefix} -->
+<!-- libdir=${exec_prefix}/lib -->
+<!-- includedir=/c/Python27/include -->
+<!--  -->
+<!-- Name: Python -->
+<!-- Description: Python library -->
+<!-- Requires:  -->
+<!-- Version: 2.7 -->
+<!-- Libs.private: -->
+<!-- Libs: -L${libdir} -lpython27 -->
+<!-- Cflags: -IC:/Python27/include -->
+<!-- - --  -->
 
 <!-- [[Boost:http://www.boost.org/]] をインストールします． -->
 <!-- $ curl -R -L -O http://download.sourceforge.net/boost/boost_1_51_0.tar.bz2 -->
@@ -144,32 +130,26 @@ Cflags: -IC:/Python27/include
 <!-- >exit -->
 <!-- $ ./b2 - -prefix=/mingw toolset=gcc link=static,shared install -->
 <!-- $ popd -->
-
-dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [dlfcn-win32](https://code.google.com/p/dlfcn-win32/) をインストールします．<br>
-FontForge はこれらの関数を使用しているようです．<br>
-
-```
-$ curl --insecure -R -L -O https://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2
-$ tar xvf dlfcn-win32-r19.tar.bz2
-$ pushd dlfcn-win32-r19
-$ ./configure --prefix=/mingw --enable-shared
-$ make
-$ make install
-$ popd
-```
-
-[libspiro](http://libspiro.sourceforge.net/) をインストールします．<br>
-
-```
-$ curl -R -L -O http://download.sourceforge.net/libspiro/libspiro_src-20071029.tar.bz2
-$ tar xvf libspiro_src-20071029.tar.bz2
-$ pushd libspiro-20071029
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
+<!--  -->
+<!-- dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [[dlfcn-win32:https://code.google.com/p/dlfcn-win32/]] をインストールします．~ -->
+<!-- FontForge はこれらの関数を使用しているようです．~ -->
+<!-- $ curl - -insecure -R -L -O https://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2 -->
+<!-- $ tar xvf dlfcn-win32-r19.tar.bz2 -->
+<!-- $ pushd dlfcn-win32-r19 -->
+<!-- $ ./configure - -prefix=/mingw - -enable-shared -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+<!--  -->
+<!-- [[libspiro:http://libspiro.sourceforge.net/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://download.sourceforge.net/libspiro/libspiro_src-20071029.tar.bz2 -->
+<!-- $ tar xvf libspiro_src-20071029.tar.bz2 -->
+<!-- $ pushd libspiro-20071029 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+<!--  -->
 <!-- [[getopt:http://software.frodo.looijaard.name/getopt/]] をインストールします．~ -->
 <!-- $ curl -R -L -O http://software.frodo.looijaard.name/getopt/files/getopt-1.1.5.tar.gz -->
 <!-- $ tar xvf getopt-1.1.5.tar.gz -->
@@ -212,53 +192,62 @@ $ popd
 <!-- $ make -->
 <!-- $ make install -->
 <!-- $ popd -->
+<!--  -->
+<!-- [[LibUnicodeNames:https://bitbucket.org/sortsmill/libunicodenames]] をインストールします．~ -->
+<!-- $ curl - -insecure -R -L -O https://bitbucket.org/sortsmill/libunicodenames/downloads/libunicodenames-1.0.0_beta5.tar.xz -->
+<!-- $ tar xvf libunicodenames-1.0.0_beta5.tar.xz -->
+<!-- $ pushd libunicodenames-1.0.0_beta5 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!--  -->
+<!-- configure でエラーが発生する場合は configure からエラーの原因を取り除きます． -->
+<!--  -->
+<!-- -        if test ! "x$pythonexists" = "xyes"; then -->
+<!-- -          { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5 -->
+<!--  -->
+<!-- -$as_echo "$as_me: error: in \`$ac_pwd':" >&2;} -->
+<!-- -as_fn_error $? " -->
+<!-- -  Could not link test program to Python. Maybe the main Python library has been -->
+<!--  -->
+<!-- -  installed in some non-standard library path. If so, pass it to configure, -->
+<!-- -  via the LDFLAGS environment variable. -->
+<!-- -  Example: ./configure LDFLAGS=\"-L/usr/non-standard-path/python/lib\" -->
+<!-- -  ============================================================================ -->
+<!-- -   ERROR! -->
+<!-- -   You probably have to install the development version of the Python package -->
+<!-- -   for your distribution.  The exact name of this package varies among them. -->
+<!-- -  ============================================================================ -->
+<!--  -->
+<!-- -See \`config.log' for more details" "$LINENO" 5; } -->
+<!-- -         PYTHON_VERSION="" -->
+<!-- -       fi -->
+<!--  -->
+<!-- -       # -->
+<!-- -       # all done! -->
+<!-- -       # -->
+<!--  -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
 
-[LibUnicodeNames](https://bitbucket.org/sortsmill/libunicodenames) をインストールします．<br>
+[pango](http://www.pango.org/) をインストールします．<br>
 
 ```
-$ curl --insecure -R -L -O https://bitbucket.org/sortsmill/libunicodenames/downloads/libunicodenames-1.0.0_beta5.tar.xz
-$ tar xvf libunicodenames-1.0.0_beta5.tar.xz
-$ pushd libunicodenames-1.0.0_beta5
-```
-
-<!-- $ curl - -insecure -R -L -o sortsmill-libunicodenames.tar.gz https://github.com/sortsmill/libunicodenames/tarball/master -->
-<!-- $ tar xvf sortsmill-libunicodenames.tar.gz -->
-<!-- $ pushd sortsmill-libunicodenames* -->
-<!-- $ autoreconf - -install -->
-
-```
+$ curl -R -L -O http://download.gnome.org/sources/pango/1.35/pango-1.35.0.tar.xz
+$ tar xvf pango-1.35.0.tar.xz
+$ pushd pango-1.35.0
 $ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
 ```
 
-configure でエラーが発生する場合は configure からエラーの原因を取り除きます．
+[PlibC](http://plibc.sourceforge.net/) をインストールします．<br>
 
 ```
--        if test ! "x$pythonexists" = "xyes"; then
--          { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
-
--$as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
--as_fn_error $? "
--  Could not link test program to Python. Maybe the main Python library has been
-
--  installed in some non-standard library path. If so, pass it to configure,
--  via the LDFLAGS environment variable.
--  Example: ./configure LDFLAGS=\"-L/usr/non-standard-path/python/lib\"
--  ============================================================================
--   ERROR!
--   You probably have to install the development version of the Python package
--   for your distribution.  The exact name of this package varies among them.
--  ============================================================================
--
--See \`config.log' for more details" "$LINENO" 5; }
--         PYTHON_VERSION=""
--       fi
--
--       #
--       # all done!
--       #
-```
-
-```
+$ curl -R -L -O http://download.sourceforge.net/plibc/plibc-0.1.7-src.tar.gz
+$ tar xvf plibc-0.1.7-src.tar.gz
+$ pushd PlibC-0.1.7
+$ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
@@ -282,17 +271,16 @@ Automatically preparing build ... done
 The fontforge build system is now prepared.  To build here, run:
   ./configure
   make
-$ ./configure --prefix=/mingw
-```
 
-```
+$ ./configure --prefix=/mingw
+
 Summary of optional features:
 
   real (floating pt) double
   programs           yes
   native scripting   yes
-  python scripting   yes
-  python extension   yes
+  python scripting   no
+  python extension   no
   freetype debugger  no
   capslock for alt   no
   raw points mode    no
@@ -302,59 +290,25 @@ Summary of optional features:
 Summary of optional dependencies:
 
   cairo              yes        http://www.cairographics.org/
-  freetype           yes        http://www.freetype.org/
+```
+
+<!--   freetype           yes        http://www.freetype.org/ -->
+
+```
   giflib             no         http://giflib.sourceforge.net/
   libjpeg            yes        http://en.wikipedia.org/wiki/Libjpeg
   libpng             yes        http://www.libpng.org/
   libtiff            yes        http://en.wikipedia.org/wiki/Libtiff
   libxml             yes        http://www.xmlsoft.org/
-  libspiro           yes        http://libspiro.sourceforge.net/
-  libunicodenames    yes        https://bitbucket.org/sortsmill/libunicodenames
-
+  libspiro           no         http://libspiro.sourceforge.net/
+  libuninameslist    no         https://github.com/fontforge/libuninameslist
+  libunicodenames    no         https://bitbucket.org/sortsmill/libunicodenames
+  zeromq             no         http://www.zeromq.org/
+  libreadline        no         http://www.gnu.org/software/readline
   X Window System    no
-```
 
-```
 $ make
-```
-
-```
-noprefs.c:451:2: error: implicit declaration of function 'GetModuleFileNameA' [-
-Werror=implicit-function-declaration]
-noprefs.c:679:5: error: implicit declaration of function 'srandom' [-Werror=impl
-icit-function-declaration]
-noprefs.c:680:5: error: implicit declaration of function 'random' [-Werror=impli
-cit-function-declaration]
-```
-
-のエラーが発生する場合は
-
-```
-#if defined(_WIN32)
-#include <windows.h>
-#define srandom srand
-#define random rand
-#endif
-```
-
-を追加します．
-
-```
 $ make install
-```
-
-make install でエラーになる場合は pyhook/Makefile を
-
-```
-#pyexecdir = ${exec_prefix}\Lib\site-packages
-#pythondir = ${prefix}\Lib\site-packages
-pyexecdir = C:/Python27/Lib/site-packages
-pythondir = C:/Python27/Lib/site-packages
-```
-
-に修正します．
-
-```
 $ popd
 ```
 
@@ -369,15 +323,15 @@ $ make
 ```
 
 ```
-../libtool: line 6013: cd: ./lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `./lib'
+../libtool: line 6013: cd: C:QtQt5.1.05.1.0mingw48_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.1.05.1.0mingw48_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-0.95/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -L'./lib' -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
-QT_LIBS = -L'c:/Qt/4.8.4/lib' -lmingw32 -lqtmain -lQtGui4 -lQtCore4
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.1.0\5.1.0\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.1.0/5.1.0/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
@@ -435,12 +389,13 @@ char *mkdtemp(char *tempbuf) {
 
 を追加します．
 
-src/util.cc に
+src/util/path.cc に
 
 <!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
 
 ```
 #if defined(_WIN32)
+#include <windows.h>
 int mkdir(const char *pathname, mode_t mode) {
   if (::GetFileAttributes(pathname) == FILE_ATTRIBUTE_DIRECTORY) {
     errno = EEXIST;
@@ -453,15 +408,18 @@ int mkdir(const char *pathname, mode_t mode) {
 
 を追加します．
 
-<!-- src/ffw.c に -->
-<!--  -->
-<!-- // #if defined(_WIN32) && ! defined(_MSC_VER) -->
-<!-- #if defined(_WIN32) -->
-<!-- #undef printf -->
-<!-- #undef vfprintf -->
-<!-- #endif -->
-<!--  -->
-<!-- を追加します． -->
+src/util/ffw.c に
+
+<!-- #if defined(_WIN32) && ! defined(_MSC_VER) -->
+
+```
+#if defined(_WIN32)
+#undef printf
+#undef vfprintf
+#endif
+```
+
+を追加します．
 
 ```
 $ mkdir build
@@ -479,10 +437,11 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.23.0
+--   found poppler, version 0.23.3
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
-Found config.h: C:/MinGW/include/fontforge/config.h
+-- Performing Test CXX0X_SUPPORT
+-- Performing Test CXX0X_SUPPORT - Success
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/coolwanglu-pdf2htmlEX-???????/build
@@ -490,34 +449,42 @@ Found config.h: C:/MinGW/include/fontforge/config.h
 
 ```
 $ make
-[  6%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
-[ 12%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
+[  3%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/pdf2htmlEX.cc.obj
+[  7%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/draw.cc.ob
+j
+[ 11%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/general.cc
 .obj
-[ 18%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
+[ 15%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
 bj
-[ 25%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/install.cc
+[ 19%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/font.cc.ob
+j
+[ 23%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/link.cc.ob
+j
+[ 26%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/outline.cc
 .obj
-[ 31%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/export.cc.
-obj
-[ 37%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
-j
-[ 43%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/image.cc.o
+[ 30%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/state.cc.o
 bj
-[ 50%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/draw.cc.ob
+[ 34%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/text.cc.ob
 j
-[ 56%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/link.cc.ob
-j
-[ 62%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLRenderer/LineBuffer
-.cc.obj
-[ 68%] Building C object CMakeFiles/pdf2htmlEX.dir/src/ffw.c.obj
-[ 75%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/SplashBackgroundRendere
-r.cc.obj
-[ 81%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/CairoBackgroundRenderer
-.cc.obj
-[ 87%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Preprocessor.cc.obj
-
-[ 93%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util.cc.obj
-[100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/ArgParser.cc.obj
+[ 38%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer/Spla
+shBackgroundRenderer.cc.obj
+[ 42%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/BackgroundRenderer/Cair
+oBackgroundRenderer.cc.obj
+[ 46%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/const.cc.obj
+[ 50%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/encoding.cc.obj
+[ 53%] Building C object CMakeFiles/pdf2htmlEX.dir/src/util/ffw.c.obj
+[ 57%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/math.cc.obj
+[ 61%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/misc.cc.obj
+[ 65%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/path.cc.obj
+[ 69%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/util/unicode.cc.obj
+[ 73%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/ArgParser.cc.obj
+[ 76%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Base64Stream.cc.obj
+[ 80%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Color.cc.obj
+[ 84%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLTextLine.cc.obj
+[ 88%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/HTMLTextPage.cc.obj
+[ 92%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/Preprocessor.cc.obj
+[ 96%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/StringFormatter.cc.obj
+[100%] Building CXX object CMakeFiles/pdf2htmlEX.dir/src/TmpFiles.cc.obj
 Linking CXX executable pdf2htmlEX.exe
 [100%] Built target pdf2htmlEX
 ```
@@ -532,31 +499,38 @@ collect2.exe: error: ld returned 1 exit status
 	/C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
 hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
 xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
-e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
-winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lgunicode -lkernel32 -luser32
+ -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 ```
 
 と記述されている行を修正してリンクできるようにしてください．<br>
-以下のように修正するとリンクできるようになりました．<br>
+以下のように
+
+```
+-liconv -lintl -lz -lltdl -ljpeg -lxml2 -lgutils -lpng16 -ltiff -lglib-2.0 -lgio-2.0
+```
+
+を追加するとリンクできるようになりました．<br>
 実際は1行です．<br>
 
 ```
 	/C/MinGW/bin/g++.exe   -Wall --std=c++0x -O2 -DNDEBUG    -Wl,--whole-arc
 hive CMakeFiles/pdf2htmlEX.dir/objects.a -Wl,--no-whole-archive  -o pdf2htmlEX.e
 xe -Wl,--out-implib,libpdf2htmlEX.dll.a -Wl,--major-image-version,0,--minor-imag
-e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lkernel32 -luser32 -lgdi32 -l
-winspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32  -lz -lfreety
-pe -lxml2 -lgioftp -lgutils -lpng15 -lltdl -ljpeg -liconv -lspiro -lunicodenames
- -lintl -lgobject-2.0 -ltiff -lgunicode -lpython27
+e-version,0  -L/C/MinGW/lib -lpoppler -lfontforge -lgunicode -lkernel32 -luser32
+ -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -l
+iconv -lintl -lz -lltdl -ljpeg -lxml2 -lgutils -lpng16 -ltiff -lglib-2.0 -lgio-2
+.0
 ```
 
 ```
 $ make install
 [100%] Built target pdf2htmlEX
 Install the project...
--- Install configuration: ""
+-- Install configuration: "Release"
 -- Installing: C:/MinGW/bin/pdf2htmlEX.exe
 -- Installing: C:/MinGW/share/pdf2htmlEX/base.css
+-- Installing: C:/MinGW/share/pdf2htmlEX/fancy.css
 -- Installing: C:/MinGW/share/pdf2htmlEX/jquery.js
 -- Installing: C:/MinGW/share/pdf2htmlEX/pdf2htmlEX.js
 -- Installing: C:/MinGW/share/pdf2htmlEX/manifest
@@ -564,11 +538,12 @@ Install the project...
 ```
 
 ```
-$ pdf2htmlEX --help
-pdftohtmlEX version 0.6
+$ pdf2htmlEX --version
+pdf2htmlEX version 0.9
 ```
 
-pdf2htmlEX はコードを適切に修正すれば Windows でも動作します．
+pdf2htmlEX はコードを適切に修正すれば Windows でも動作します．<br>
+プログラムを実行すると Segmentation fault が発生する場合は gdb を使用してデバッグしてください．<br>
 
 #### Cygwin {#wf50eda2}
 
