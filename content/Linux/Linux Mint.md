@@ -57,7 +57,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#ef984d1b}
 
-#### Linux Mint 15 {#l0b7aecc}
+#### Linux Mint 16, 15 {#l0b7aecc}
 
 - [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
 
@@ -75,7 +75,7 @@ TeX Live 2013/Debian をインストールする場合は texlive-full を指定
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
@@ -111,7 +111,7 @@ TeX Live 2012/Debian をインストールする場合は texlive-full を指定
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
@@ -139,8 +139,8 @@ repstopdf,epspdf,extractbb,\
 
 ### dummy パッケージの作成 {#e80aea0e}
 
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live 2012/Debian に依存するパッケージをインストールしようとすると TeX Live 2012/Debian も同時にインストールされてしまいます．<br>
-TeX Live 2012/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
+TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
 
 ```
 $ sudo apt-get install equivs
@@ -183,7 +183,6 @@ $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 
 ### dvips + ps2pdf を使用して PDF ファイルを作成 {#q606bab3}
 
-Linux Mint 15 には Ghostscript 9.07 が収録されています．<br>
 Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
 
 ```
@@ -219,13 +218,13 @@ Search path:
 $ sudo ln -s /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
 ```
 
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap を作成します．
+/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap を作成します．
 
 ```
-$ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
+$ sudo touch /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 ```
 
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap に設定を記述します．<br>
+/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap に設定を記述します．<br>
 
 ```
 /ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
