@@ -59,6 +59,8 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
+### NeoBundle を使用する場合 {#adee180e}
+
 [NeoBundle](https://github.com/Shougo/neobundle.vim) を使ってインストールができます．
 
 ```
@@ -70,6 +72,8 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 ### Windows {#eb85b35a}
 
 [Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
+
+#### 公式サイトのパッケージを使用する場合 {#g7a904f1}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
 
@@ -154,6 +158,8 @@ TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF 
 Mac OS X 10.6 では動作するようです． → -[VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html), [VIMでLaTeX　前回の訂正](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_168.html)
 
 [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
+
+#### 公式サイトのパッケージを使用する場合 {#kf230ea5}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
 
@@ -248,6 +254,8 @@ set imdisable
 set imdisable を設定すると問題が発生する場合は set imdisable を削除してください．<br>
 
 ### Linux {#f59a6b76}
+
+#### 公式サイトのパッケージを使用する場合 {#o23d2f9e}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
 
