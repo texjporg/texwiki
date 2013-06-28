@@ -57,9 +57,24 @@ Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
 texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
 
-#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
+#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
 
-dvipdfmx がうまく動作しない場合は以下の記事を参照して /usr/share/texmf/dvipdfmx/dvipdfmx.cfg を修正してください．<br>
+dvipdfmx がうまく動作しない場合は /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．<br>
+
+デフォルトでは
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に設定されています．<br>
+Ghostscript のコマンド名が gs の場合は
+
+```
+D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に修正します．<br>
 
 - [dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00366.html)
     - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
@@ -266,10 +281,6 @@ $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
 #### [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) {#y0fb372c}
-
-## [W32TeX](/W32TeX/) {#f3b98402}
-
-- [LaTeX とか使う](http://syun2ej.jugem.jp/?eid=3346)
 
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
