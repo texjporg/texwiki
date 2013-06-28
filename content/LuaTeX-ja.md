@@ -7,7 +7,7 @@ pukiwiki: "LuaTeX-ja"
 
 # LuaTeX-ja
 
-[LuaTeX](/LuaTeX/) > LuaTeX-ja
+[LuaTeX](/LuaTeX/), LuaJITTeX > LuaTeX-ja
 
 ## LuaTeX-ja {#nec94db0}
 
