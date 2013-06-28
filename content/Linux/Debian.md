@@ -62,7 +62,7 @@ apt-get を使用してインストールしても OK です．<br>
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
@@ -104,7 +104,7 @@ apt-get を使用してインストールしても OK です．<br>
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
 
 shell_escape_commands が以下のように記述されていると思います．
 
