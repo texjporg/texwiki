@@ -425,8 +425,8 @@ src/util/ffw.c に
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
--- The C compiler identification is GNU 4.7.2
--- The CXX compiler identification is GNU 4.7.2
+-- The C compiler identification is GNU 4.8.1
+-- The CXX compiler identification is GNU 4.8.1
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
