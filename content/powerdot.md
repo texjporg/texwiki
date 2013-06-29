@@ -19,16 +19,24 @@ pukiwiki: "powerdot"
 
 powerdot は プレゼンテーション用の LaTeX クラスです．<br>
 powerdot は dvipdfmx に対応していないので、[PDFを作る](</PDFの作り方/#gf004f58>)ためには、 dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller の組み合わせで使用してください．<br>
-しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html) を参照．)<br>
+しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html) を参照．)<br> <!-- powerdot は CTAN から削除されました． ([[Powerdot removal?:http://www.tug.org/pipermail/tex-live/2013-June/033799.html]] を参照．)~ -->
 
 - [https://stuwww.uvt.nl/~hendri/](https://stuwww.uvt.nl/~hendri/)
-- [http://www.ctan.org/pkg/powerdot](http://www.ctan.org/pkg/powerdot) → CTAN から削除されました
+- [http://www.ctan.org/pkg/powerdot](http://www.ctan.org/pkg/powerdot)
+- [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
+    <!-- 作者の希望でCTANから削除されたそうです。(2013/6/29) -->
 
 ### powerdot {#nb8d29fc}
 
-- TeX Live 2013, [W32TeX](/W32TeX/) \[2011/09/19\] 以降に標準で含まれています．
-- [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
-    <!-- 作者の希望でCTANから削除されたそうです。(2013/6/29) -->
+- TeX Live 2012, [W32TeX](/W32TeX/) \[2011/09/19\] 以降に標準で含まれています．
+- TeX Live 2013 で削除されました．TeX Live 2013 をアップデートすると powerdot が削除されます．<br>
+
+```
+>tlmgr update --self --all
+tlmgr.pl: package repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet
+tlmgr: saving backups to C:/texlive/2013/tlpkg/backups
+[ 1/??] auto-remove: powerdot ... done
+```
 
 ### [xcolor](http://www.ukern.de/tex/xcolor.html) {#d003f983}
 
