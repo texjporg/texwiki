@@ -20,6 +20,8 @@ The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使っ�
 - [Aeb_Pro](http://www.math.uakron.edu/~dpstory/aeb_pro.html)
 - [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
     - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
+- [http://www.ctan.org/pkg/acrotex](http://www.ctan.org/pkg/acrotex)
+- [CTAN:help/Catalogue/entries/acrotex.html](https://mirror.ctan.org/help/Catalogue/entries/acrotex.html)
 
 ## インストール {#a7637893}
 
