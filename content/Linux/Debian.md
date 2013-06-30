@@ -42,6 +42,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#z4379676}
 
+- [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
 - [TeX Live 2013 released](http://www.preining.info/blog/2013/06/tex-live-2013-released/)
