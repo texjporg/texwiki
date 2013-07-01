@@ -76,6 +76,20 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+nkf をインストールします．<br>
+
+```
+$ sudo zypper install nkf
+```
+
+/usr/lib/texmf/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
 ## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
 
 ```
