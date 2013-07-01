@@ -274,13 +274,28 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+```
+$ wget http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
+$ tar xvf nkf-2.1.2.tar.gz
+$ pushd nkf-2.1.2
+$ make
+$ make prefix=/usr install
+$ popd
+```
+
+/usr/share/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
-
-#### [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) {#y0fb372c}
 
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
