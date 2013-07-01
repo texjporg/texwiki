@@ -39,9 +39,9 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ### TeX Live 2013 (Fedora) <a id="texlive2013fedora"></a> {#n44a0820}
 
-#### Fedora 20, 19, 18 {#u01e1fc4}
+#### Fedora 20, 19 {#u01e1fc4}
 
-Fedora 20, 19, 18 では TeX Live 2013 が使用できます．<br>
+Fedora 20, 19 では TeX Live 2013 が使用できます．<br>
 yum で texlive-scheme-full を指定すれば TeX Live 2013 をインストールできます．<br>
 
 ```
@@ -71,6 +71,20 @@ kpsewhich,\
 makeindex,mendex,texindy,\
 mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
+```
+
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+nkf をインストールします．<br>
+
+```
+$ sudo yum install nkf
+```
+
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
@@ -146,7 +160,7 @@ $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 $ sudo yum install texmaker
 ```
 
-Fedora 20, 19, 18 の場合は
+Fedora 20, 19 の場合は
 
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
@@ -192,7 +206,7 @@ $ sudo yum install lyx
 $ sudo yum install texworks
 ```
 
-Fedora 20, 19, 18 の場合は
+Fedora 20, 19 の場合は
 
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
