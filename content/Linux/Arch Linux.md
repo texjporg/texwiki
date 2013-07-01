@@ -115,6 +115,20 @@ mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+[nkf](https://aur.archlinux.org/packages/nkf/) をインストールします．<br>
+
+```
+$ yaourt -S nkf
+```
+
+/usr/share/texmf/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
 - [tkyon: TeX](http://tkyon.blogspot.jp/search/label/TeX), [tkyon: Arch](http://tkyon.blogspot.jp/search/label/Arch)
     - [Android で TeX がしたい](http://tkyon.blogspot.jp/2013/03/android-tex.html)
     - [Archlinux (Archbang)にTeXLive2012,TeXworksをインストール](http://tkyon.blogspot.com/2012/12/archlinux-archbangtexlive2012texworks.html)
