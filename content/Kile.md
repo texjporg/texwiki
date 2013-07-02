@@ -400,5 +400,6 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
     - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
+- [Kile使ってみたよ](http://ameblo.jp/a-gateau-chocolate/entry-11565297948.html)
 - [latex | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/blog-category-2.html)
 - [KileをWindowsで使ってみる](http://d.tnose.net/?p=1654)
