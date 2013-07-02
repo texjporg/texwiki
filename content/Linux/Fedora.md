@@ -20,6 +20,7 @@ pukiwiki: "Linux/Fedora"
 Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
 
 - [Fedora Project](http://fedoraproject.org/)
+- [Public mirror list](http://mirrors.fedoraproject.org/publiclist/)
 
 ## [TeX Live](</TeX Live/>) {#u412c2cf}
 
@@ -301,7 +302,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## ibus-kkc {#a96c1055}
 
-Fedora 19 から日本語入力が ibus-kkc に変更されています． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
+Fedora 19 から日本語入力に ibus-kkc が利用できるようになりました． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
 
 - [libkkc / libkkc / wiki / Home &mdash; Bitbucket](https://bitbucket.org/libkkc/libkkc/)
 - [du -a ~ueno | Just another WordPress site](http://blog.du-a.org/)
