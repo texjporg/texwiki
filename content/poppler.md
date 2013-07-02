@@ -60,7 +60,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt 5 または Qt 4 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の Qt 関連バイナリが存在する bin フォルダー (qmake.exe や moc.exe のあるフォルダー) に PATH を通します．
+- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt 5 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の Qt 関連バイナリが存在する bin フォルダー (qmake.exe や moc.exe のあるフォルダー) に PATH を通します．
     <!-- - -[[Qt 5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
 
 <!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
@@ -245,9 +245,9 @@ $ popd
 - [XZ Utils](http://tukaani.org/xz/) をインストールします．
 
 ```
-$ curl -R -L -O http://tukaani.org/xz/xz-5.0.4.tar.xz
-$ tar xvf xz-5.0.4.tar.xz
-$ pushd xz-5.0.4
+$ curl -R -L -O http://tukaani.org/xz/xz-5.0.5.tar.xz
+$ tar xvf xz-5.0.5.tar.xz
+$ pushd xz-5.0.5
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -886,7 +886,7 @@ $ pushd poppler-0.23.3
 
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 poppler は configure で Makefile を作成してインストールしてください)
 
-■ Qt 5 mingw バイナリをインストールした場合
+<!-- ■ Qt 5 mingw バイナリをインストールした場合 -->
 
 ```
 $ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.1.0/5.1.0/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.1.0/5.1.0/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.1.0/5.1.0/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.1.0/5.1.0/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
@@ -897,18 +897,16 @@ $ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.1.0/5.1.0/mingw48_32/include" POPPLER_QT5_LIBS
 <!-- #include <windows.h> -->
 <!-- を追加 -->
 
-■ Qt 4 mingw バイナリをインストールした場合
-
-```
-$ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
-```
+<!-- ■ Qt 4 mingw バイナリをインストールした場合 -->
+<!--  -->
+<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" LIBOPENJPEG_CFLAGS="`pkg-config - -cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config - -libs libopenjp2`" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
 ```
 Building poppler with support for:
   font configuration: fontconfig
   splash output:      yes
   cairo output:       yes
-  qt4 wrapper:        yes
+  qt4 wrapper:        no
   qt5 wrapper:        yes
   glib wrapper:       yes
     introspection:    no
@@ -953,7 +951,7 @@ Building Poppler with support for:
   font configuration:   fontconfig
   splash output:        yes
   cairo output:         yes
-  qt4 wrapper:          yes
+  qt4 wrapper:          no
   qt5 wrapper:          yes
   glib wrapper:         yes
     introspection:      no
