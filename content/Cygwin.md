@@ -297,6 +297,14 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
+ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) の shebang line
+
+```
+#!/usr/bin/env texlua  
+```
+
+の texlua の後ろの余分なスペース2つを削除してください．<br>
+
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
