@@ -13,21 +13,14 @@ pukiwiki: "NppExec"
 
 ## [NppExec](http://sourceforge.net/projects/npp-plugins/files/NppExec/) {#n297fed5}
 
-NppExec を使うと LaTeX 環境を簡単に作ることができます．
-
-UNICODE 版の場合，デフォルトではインストールされていないので \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．
-
-\[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．
-
-\[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．
-
-\[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．
-
-コマンドを設定して名前を付けて保存します．
-
-設定した後で \[プラグイン\]-\[NppExec\]-\[Advanced Options...\] の Menu item から設定した項目を登録します．
-
-\[設定\]-\[ショートカット管理...\]-\[Plugin commands\] から登録した項目のショートカットの設定をします．
+NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
+UNICODE 版の場合，デフォルトではインストールされていないので \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．<br>
+\[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
+\[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
+\[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
+コマンドを設定して名前を付けて保存します．<br>
+設定した後で \[プラグイン\]-\[NppExec\]-\[Advanced Options...\] の Menu item から設定した項目を登録します．<br>
+\[設定\]-\[ショートカット管理...\]-\[Plugin commands\] から登録した項目のショートカットの設定をします．<br>
 
 - [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec.htm)
 
