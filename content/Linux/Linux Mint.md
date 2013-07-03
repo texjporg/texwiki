@@ -325,6 +325,10 @@ $ sudo apt-get install mupdf
 $ sudo apt-get install texmaker
 ```
 
+Texmaker はかな漢字変換に関して不具合があるので<br>
+不具合を回避するための設定をします．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
+
 Linux Mint 15 でインプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
