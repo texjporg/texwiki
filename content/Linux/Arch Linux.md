@@ -79,6 +79,63 @@ TeX Live の公式サイトのインストーラでインストールする場�
 $ yaourt -S texlive-dummy
 ```
 
+### TeX Live 2013/Arch Linux {#y18009db}
+
+texlive-langcjk, texlive-most をインストールします．<br>
+
+```
+$ sudo pacman -S texlive-langcjk texlive-most
+```
+
+/usr/share/texmf-dist/web2c/texmf.cnf を編集します．<br>
+/usr/share/texmf-dist/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
+
+```
+$ sudo vi /usr/share/texmf-dist/web2c/texmf.cnf
+```
+
+shell_escape_commands が以下のように記述されていると思います．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+shell_escape_commands を以下のように編集して保存します．
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,\
+repstopdf,epspdf,extractbb,\
+```
+
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+[nkf](https://aur.archlinux.org/packages/nkf/) をインストールします．<br>
+
+```
+$ yaourt -S nkf
+```
+
+/usr/share/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
+pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+
+```
+$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+```
+
 ### TeX Live 2012/Arch Linux {#x25fb663}
 
 texlive-langcjk, texlive-most をインストールします．<br>
@@ -136,9 +193,6 @@ PTEX_IN_FILTER = /usr/bin/nkf -w
 - [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
 - [Arch LinuxでTex環境](http://d.hatena.ne.jp/yutaka_j/20130212/1360661416)
 - [ArchLinux へ TeX のインストール](http://d.hatena.ne.jp/with137d/20130131/1359632905)
-- [TeXLiveの導入とフォントの設定](http://d.hatena.ne.jp/gionXY/20121208/1354970466)
-- [ArchLinuxにLaTeXをインストール](http://amkkun.hatenablog.com/entry/2012/10/24/040333)
-- [ThinkPad Edge E430にArchLinuxをインストール](http://amkkun.hatenablog.com/entry/2012/11/04/123834)
 
 ## [Python](/Python/) {#i5b0d02d}
 
@@ -177,7 +231,7 @@ Search path:
 
 ```
 
-/usr/share/fonts/truetype/ipaex に TeX Live 2012/Arch Linux の IPAex フォントのディレクトリのシンボリックリンクを作成します．
+/usr/share/fonts/truetype/ipaex に TeX Live/Arch Linux の IPAex フォントのディレクトリのシンボリックリンクを作成します．
 
 ```
 $ sudo mkdir -p /usr/share/fonts/truetype
@@ -289,6 +343,7 @@ $ sudo pacman -S texmaker
 
 Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
 ### fcitx の場合 {#z5f111a8}
 
