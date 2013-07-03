@@ -20,6 +20,7 @@ Hunspell はスペルチェッカーです．<br>
 - [TeXworks](/TeXworks/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
+- [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
 ### 辞書 {#q4b7f294}
 
