@@ -58,8 +58,8 @@ Windows 8, 7, Vista, XP, 2000
 
 [News](http://notepad-plus-plus.org/news/) を参照．<br>
 
-Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
-Notepad++ v6.1 以降は Unicode 版のみのリリースです．<br>
+<!-- Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．~ -->
+<!-- Notepad++ v6.1 以降は Unicode 版のみのリリースです．~ -->
 
 ### ChangeLog {#q10cf331}
 
@@ -121,9 +121,8 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ### 自動保存/入力補完 {#u18b6dd3}
 
-自動補完 (オートコンプリート) の設定ができます．
-
-メニューから補完を行う場合は \[編集(E)\]-\[オートコンプリート\]-\[関数名補完\] または \[単語補完\] で補完できます．
+自動補完 (オートコンプリート) の設定ができます．<br>
+メニューから補完を行う場合は \[編集(E)\]-\[オートコンプリート\]-\[関数名補完\] または \[単語補完\] で補完できます．<br>
 
 - [自動補完 (Auto Complete) - Notepad++の使用方法](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/edit/auto-complete.htm)
 
@@ -134,13 +133,20 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
+NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
+詳細は [NppExec - TeX Wiki](/NppExec/) を参照してください．<br>
+
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
-XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), }, \] を補完してくれます．
+XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), }, \] を補完してくれます．<br>
+\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．<br>
+\[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．<br>
 
-\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．
+### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
-\[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．
+Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収録されています．<br>
+\[プラグイン\]-\[DSpellCheck\]-\[[Online Manual...](https://github.com/Predelnik/DSpellCheck/wiki/Manual)\] で使い方を参照してください．<br>
+赤い線が表示されるのを OFF にする場合は \[プラグイン\]-\[DSpellCheck\]-\[Auto-check Document\] のチェックをはずします．<br>
 
 ## SumatraPDF との連携 {#ted60cbe}
 
