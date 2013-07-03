@@ -11,7 +11,9 @@ pukiwiki: "Mozilla Firefox"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/e/e7/Mozilla_Firefox_3.5_logo_256.png" alt="Mozilla Firefox" style="float:right">
 
-### Mozilla Firefox とは {#if26ee34}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Mozilla Firefox とは {#if26ee34}
 
 Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 
@@ -28,7 +30,7 @@ Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 - [Pale Moon](http://www.palemoon.org/)
 - [Waterfox](http://www.waterfoxproject.org/)
 
-### [pdf.js](http://mozilla.github.com/pdf.js/) <a id="pdfjs"></a> {#n3aa2497}
+## [pdf.js](http://mozilla.github.com/pdf.js/) <a id="pdfjs"></a> {#n3aa2497}
 
 pdf.js は JavaScript で書かれた PDF Viewer です．<br>
 Firefox 19 以降は PDF Viewer がデフォルトで有効になっています．<br>
@@ -36,7 +38,12 @@ Firefox 19 以降は PDF Viewer がデフォルトで有効になっています
 - [pdf.js](http://mozilla.github.com/pdf.js/)
 - [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
 
-#### 設定方法 {#u5cf20d8}
+Opera でも pdf.js が動作するようです．<br>
+
+- [https://github.com/operasoftware/pdf.js](https://github.com/operasoftware/pdf.js)
+- [https://addons.opera.com/ja/extensions/details/pdf-viewer/](https://addons.opera.com/ja/extensions/details/pdf-viewer/)
+
+### 設定方法 {#u5cf20d8}
 
 Mozilla Firefox 19.0 以降はデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
 
@@ -63,7 +70,7 @@ pdfjs
 メニューのオプションからオプションをクリックします．<br>
 プログラムタブのファイルの種類 (Content Type) の PDF 文書 (PDF) の取り扱い方法のリストから Firefox でプレビュー表示を選択します．<br>
 
-### 関連リンク {#vb4554e0}
+## 関連リンク {#vb4554e0}
 
 - [Get Firefox URL?](http://stackoverflow.com/questions/430614/get-firefox-url)
 - [pdf.jsをインストールして動かしてみる](http://dev.classmethod.jp/tool/pdf-js-install/)
