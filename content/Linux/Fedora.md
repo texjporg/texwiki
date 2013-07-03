@@ -20,6 +20,9 @@ pukiwiki: "Linux/Fedora"
 Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
 
 - [Fedora Project](http://fedoraproject.org/)
+
+## ダウンロード {#j75c78dc}
+
 - [Public mirror list](http://mirrors.fedoraproject.org/publiclist/)
 
 ## [TeX Live](</TeX Live/>) {#u412c2cf}
@@ -31,8 +34,8 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
 - [http://jnovy.fedorapeople.org/texlive/](http://jnovy.fedorapeople.org/texlive/)
 - [http://kojipkgs.fedoraproject.org/packages/texlive/](http://kojipkgs.fedoraproject.org/packages/texlive/)
-- [The TeXLive Archives](http://www.linux.cz/pipermail/texlive/)
-- \[[TeX\] - Luoyang Press](http://d.hatena.ne.jp/ratbeta/searchdiary?word=%2A%5BTeX%5D)
+    <!-- -[[The TeXLive Archives:http://www.linux.cz/pipermail/texlive/]] -->
+    <!-- -[[[TeX] - Luoyang Press:http://d.hatena.ne.jp/ratbeta/searchdiary?word=%2A%5BTeX%5D]] -->
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#dfc42b2c}
 
