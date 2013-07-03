@@ -164,8 +164,10 @@ tex-check-comments true
 
 ### Aspell の使い方（Notepad++編） {#ydccb206}
 
-Notepad++ には Spell Checker プラグインが収録されています。<br>
-\[プラグイン\]-\[Spell-Checker\]-\[How to use...\] で使い方を参照してください。<br>
+Notepad++ 6.3.3 以降には [DSpellCheck](https://github.com/Predelnik/DSpellCheck) (Spell Checker プラグイン) が収録されています。<br>
+\[プラグイン\]-\[DSpellCheck\]-\[[Online Manual...](https://github.com/Predelnik/DSpellCheck/wiki/Manual)\] で使い方を参照してください。<br>
+デフォルトでは [Hunspell](/Hunspell/) が使用されます．<br>
+Aspell を使用する場合は \[プラグイン\]-\[DSpellCheck\]-\[Settings...\] の Simple タブの Library から Aspell を選択して設定します．<br>
 
 ### Aspell の使い方（Emacs編） {#aemcsfoi}
 
