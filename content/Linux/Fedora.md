@@ -23,6 +23,8 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ## ダウンロード {#j75c78dc}
 
+### ミラーサイト {#oc47dabf}
+
 - [Public mirror list](http://mirrors.fedoraproject.org/publiclist/)
 
 ## [TeX Live](</TeX Live/>) {#u412c2cf}
@@ -85,7 +87,8 @@ nkf をインストールします．<br>
 $ sudo yum install nkf
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf が存在しない場合は /usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
 
 ```
 PTEX_IN_FILTER = /usr/bin/nkf -w
@@ -163,6 +166,10 @@ $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 ```
 $ sudo yum install texmaker
 ```
+
+Texmaker はかな漢字変換に関して不具合があるので<br>
+不具合を回避するための設定をします．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
 Fedora 20, 19 の場合は
 
@@ -253,6 +260,12 @@ $ sudo yum install gummi
 ```
 $ sudo yum install latexila
 $ sudo yum install perl-Digest-MD5
+```
+
+## [Kile](/Kile/) {#o606f639}
+
+```
+$ sudo yum install kile
 ```
 
 ## [Eclipse](/Eclipse/) {#p298a48c}
