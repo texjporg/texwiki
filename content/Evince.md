@@ -99,7 +99,7 @@ Evince/fwdevince を参照．
 ## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
 
 フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．<br>
-以下の設定では TeX Live 2012 以降に含まれている IPAexMincho, IPAexGothic で表示するようにしています．<br>
+以下の設定では TeX Live に含まれている IPAexMincho, IPAexGothic で表示するようにしています．<br>
 
 ```
 $ mkdir -p ~/.config/fontconfig
@@ -117,9 +117,9 @@ $ vi ~/.config/fontconfig/fonts.conf
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
 <dir>/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex</dir>
-<dir>/usr/local/texlive/2012/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
 
 <match target="pattern">
   <test qual="any" name="family">
