@@ -119,7 +119,6 @@ $ vi ~/.config/fontconfig/fonts.conf
 <dir>/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
-<dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
 
 <match target="pattern">
   <test qual="any" name="family">
