@@ -71,7 +71,7 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 
 - [Linux](/Linux/#texlive2013)
 
-TeX Live の公式サイトのインストーラでインストールする場合は
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止するため
 [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/)
 をインストールします．<br>
 
@@ -136,25 +136,7 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-## [Python](/Python/) {#i5b0d02d}
-
-```
-$ sudo pacman -S python python2
-```
-
-## [Ruby](/Ruby/) {#f4286b29}
-
-```
-$ sudo pacman -S ruby
-```
-
-## [Perl](/Perl/) {#sf038555}
-
-```
-$ sudo pacman -S perl
-```
-
-## [Ghostscript](/Ghostscript/) {#yb4bdfcc}
+[ghostscript](https://www.archlinux.org/packages/?q=ghostscript) をインストールします．<br>
 
 ```
 $ sudo pacman -S ghostscript
@@ -198,6 +180,24 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 ***
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
+
+## [Python](/Python/) {#i5b0d02d}
+
+```
+$ sudo pacman -S python python2
+```
+
+## [Ruby](/Ruby/) {#f4286b29}
+
+```
+$ sudo pacman -S ruby
+```
+
+## [Perl](/Perl/) {#sf038555}
+
+```
+$ sudo pacman -S perl
+```
 
 ## poppler {#bfbc00bc}
 
