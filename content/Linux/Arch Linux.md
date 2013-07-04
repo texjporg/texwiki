@@ -136,64 +136,6 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-### TeX Live 2012/Arch Linux {#x25fb663}
-
-texlive-langcjk, texlive-most をインストールします．<br>
-
-```
-$ sudo pacman -S texlive-langcjk texlive-most
-```
-
-/usr/share/texmf/web2c/texmf.cnf を編集します．
-
-```
-$ sudo vi /usr/share/texmf/web2c/texmf.cnf
-```
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-[nkf](https://aur.archlinux.org/packages/nkf/) をインストールします．<br>
-
-```
-$ yaourt -S nkf
-```
-
-/usr/share/texmf/web2c/texmf.cnf に設定を追加します．<br>
-
-```
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
-- [tkyon: TeX](http://tkyon.blogspot.jp/search/label/TeX), [tkyon: Arch](http://tkyon.blogspot.jp/search/label/Arch)
-    - [Android で TeX がしたい](http://tkyon.blogspot.jp/2013/03/android-tex.html)
-    - [Archlinux (Archbang)にTeXLive2012,TeXworksをインストール](http://tkyon.blogspot.com/2012/12/archlinux-archbangtexlive2012texworks.html)
-    - [TeX 用エディタの設定](http://tkyon.blogspot.jp/2013/02/tex.html)
-- [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
-- [Arch LinuxでTex環境](http://d.hatena.ne.jp/yutaka_j/20130212/1360661416)
-- [ArchLinux へ TeX のインストール](http://d.hatena.ne.jp/with137d/20130131/1359632905)
-
 ## [Python](/Python/) {#i5b0d02d}
 
 ```
