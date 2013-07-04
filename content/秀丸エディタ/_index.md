@@ -26,7 +26,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 動作環境 {#d2be5bb8}
 
-Windows 8, 7, Vista, 2003, XP, 2000, NT4.0, Me, 98, 95
+[秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) を参照．<br>
 
 ### ChangeLog {#k3ce2677}
 
