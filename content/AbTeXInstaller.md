@@ -26,8 +26,7 @@ Windows 8, 7, Vista, XP
 
 ### リリース情報 {#f691af94}
 
-2013-05-27 TeXインストーラ 3 0.84r2<br>
-2013-03-07 プラグイン集<br>
+[TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) を参照．<br>
 
 ### 注意事項 {#bb499d3c}
 
