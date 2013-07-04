@@ -57,9 +57,24 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#ef984d1b}
 
-#### Linux Mint 16, 15 {#l0b7aecc}
+#### Linux Mint {#l0b7aecc}
 
-- [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013install>)
+- [Linux#TeX Live 2013 のインストール](/Linux/#texlive2013)
+
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
+TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+
+```
+$ sudo apt-get install equivs
+$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
+```
+
+<!-- debian-control-ex.txt に texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
+
+```
+$ equivs-build debian-control-ex.txt
+$ sudo dpkg -i texlive-local_2011-1~1_all.deb
+```
 
 #### LMDE <a id="lmde"></a> {#q5d1118e}
 
@@ -168,106 +183,6 @@ $ sudo apt-get install nkf
 ```
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
-
-## TeX Live 2013 <a id="texlive2013install"></a> {#hb733649}
-
-### dummy パッケージの作成 {#e80aea0e}
-
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
-TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
-
-```
-$ sudo apt-get install equivs
-$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
-```
-
-<!-- debian-control-ex.txt に texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
-
-```
-$ equivs-build debian-control-ex.txt
-$ sudo dpkg -i texlive-local_2011-1~1_all.deb
-```
-
-### TeX Live 2013 のインストール {#cf0c2ecd}
-
-[Linux#TeX Live 2013 のインストール](/Linux/#texlive2013) を参照．<br>
-
-#### texmf.cnf の編集 {#sff97eaa}
-
-[Linux#texmf.cnf の編集](/Linux/#texmfcnf) を参照．<br>
-
-### ptex2pdf で IPAex フォントの埋め込み {#u4af0cc3}
-
-TeX Live 2013 には IPAex フォント，ptex-ipaex.map が収録されています．<br>
-
-```
-$ kpsewhich ipaexm.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-$ kpsewhich ipaexg.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich ptex-ipaex.map
-/usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
-```
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
-```
-
-### dvips + ps2pdf を使用して PDF ファイルを作成 {#q606bab3}
-
-Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
-
-```
-$ sudo apt-get install ghostscript
-```
-
-以下の表示が出力されて dvips + ps2pdf (Ghostscript) を使用して PDF ファイルが作成できない場合は Ghostscript の設定をします．<br>
-
-```
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexm-H.
-Can't find (or can't open) font file ipaexm-H.
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexg-H.
-Can't find (or can't open) font file ipaexg-H.
-```
-
-Ghostscript の Search path を確認します．<br>
-
-```
-$ gs --help
-...
-Search path:
-   /usr/share/ghostscript/9.07/Resource/Init :
-   /usr/share/ghostscript/9.07/lib :
-   /usr/share/ghostscript/9.07/Resource/Font :
-   /usr/share/ghostscript/fonts : /var/lib/ghostscript/fonts :
-   /usr/share/cups/fonts : /usr/share/ghostscript/fonts :
-   /usr/local/lib/ghostscript/fonts : /usr/share/fonts
-```
-
-/usr/share/fonts/truetype/ipaex に TeX Live 2013 の IPAex フォントのディレクトリのシンボリックリンクを作成します．
-
-```
-$ sudo ln -s /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
-```
-
-/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap を作成します．
-
-```
-$ sudo touch /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
-```
-
-/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap に設定を記述します．<br>
-
-```
-/ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/ipaexg << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexg.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/Ryumin-Light /ipaexm ;
-/GothicBBB-Medium /ipaexg ;
-```
-
-ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
