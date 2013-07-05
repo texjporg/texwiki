@@ -272,7 +272,7 @@ C-x C-f ~/
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
-fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
 
