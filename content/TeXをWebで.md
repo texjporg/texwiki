@@ -129,16 +129,9 @@ ulimit -t 10 -f 1024
 
 - [TeXを使ってみよう（pTeX版）](http://glc.l.u-tokyo.ac.jp/tex/)
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
-- [SpanDeX](http://spandex.io/)
-- [writeLaTeX](https://www.writelatex.com/)
-    - [「writeLaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=writeLaTeX)
-    - [writeLaTeX を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=writeLaTeX)
-    - [タブレットなどでLaTeXを使う/writeLATEX,Texpad(iPad)](http://kiyomidais.cocolog-nifty.com/blog/2013/03/latexwritelatex.html)
-- [LiveLaTeX](http://nanatomo.com/livelatex/)
 - [てふてふかれん](http://tex-web.net/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [Online Latex Editor](http://luikore.github.com/latex/)
-    <!-- -[[あげは蝶君 Ver 0.90 - TeX (upTeX) を使ってみよう:http://www.aozora.jp/tools/uptex/]] -->
     <!-- -[[XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）:http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/]] -->
 
 ### 関連リンク {#cfaeb364}
