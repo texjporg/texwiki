@@ -7,7 +7,7 @@ pukiwiki: "Google Chrome"
 
 # Google Chrome
 
-## [Google Chrome](https://www.google.com/chrome) {#m72f98a3}
+## [Google Chrome](https://www.google.com/chrome)/[Chromium](http://www.chromium.org/) {#m72f98a3}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Chrome_icon_%282011%29.svg/200px-Google_Chrome_icon_%282011%29.svg.png" alt="Google Chrome" style="float:right">
 
@@ -18,6 +18,12 @@ pukiwiki: "Google Chrome"
 Google Chrome は Google が開発している Web ブラウザです．<br>
 
 - [Google Chrome](https://www.google.com/chrome)
+
+## Chromium とは {#sac771fc}
+
+Chromium は Google Chrome で使用されているオープンソースの Web ブラウザです．<br>
+
+- [The Chromium Projects](http://www.chromium.org/)
 
 ### 派生版 {#gc229b7d}
 
@@ -45,7 +51,7 @@ chrome://plugins
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
 
-Windows の場合は Chrome PDF Viewer にコマンドラインから引数を与える場合は PDF ファイルをフルパスで指定する必要があります．<br>
+Windows 版の Google Chrome で Chrome PDF Viewer にコマンドラインから引数を与えて PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があります．<br>
 
 ## 拡張機能 {#u71b1117}
 
