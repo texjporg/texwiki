@@ -11,11 +11,21 @@ pukiwiki: "Google Chrome"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Chrome_icon_%282011%29.svg/200px-Google_Chrome_icon_%282011%29.svg.png" alt="Google Chrome" style="float:right">
 
-### Google Chrome とは {#sada177b}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Google Chrome とは {#sada177b}
 
 Google Chrome は Google が開発している Web ブラウザです．<br>
 
-### プラグイン {#y795a936}
+- [Google Chrome](https://www.google.com/chrome)
+
+### 派生版 {#gc229b7d}
+
+#### Windows {#k7a99ec2}
+
+- [Comodo Dragon](http://www.comodo.com/home/browsers-toolbars/browser.php)
+
+## プラグイン {#y795a936}
 
 ブラウザ ウィンドウの上部にあるアドレスバーに
 
@@ -31,11 +41,15 @@ chrome://plugins
 
 を入力
 
-#### Chrome PDF Viewer {#wfd819f9}
+### Chrome PDF Viewer <a id="chromepdfviewer"></a> {#wfd819f9}
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
 
 Chrome PDF Viewer にコマンドラインから引数を与える場合は PDF ファイルをフルパスで指定する必要があります．<br>
+
+## pdf.js {#q878e075}
+
+- [https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm)
 
 ## 関連リンク {#v9c56a2d}
 
