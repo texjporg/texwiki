@@ -27,6 +27,7 @@ Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 
 #### Windows {#e6087dd8}
 
+- [Comodo IceDragon](http://www.comodo.com/home/browsers-toolbars/icedragon-browser.php)
 - [Pale Moon](http://www.palemoon.org/)
 - [Waterfox](http://www.waterfoxproject.org/)
 
@@ -37,6 +38,11 @@ Firefox 19 以降は PDF Viewer がデフォルトで有効になっています
 
 - [pdf.js](http://mozilla.github.com/pdf.js/)
 - [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
+- [https://addons.mozilla.org/ja/firefox/addon/pdfjs/](https://addons.mozilla.org/ja/firefox/addon/pdfjs/)
+
+Google Chrome でも pdf.js が動作するようです．<br>
+
+- [https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm)
 
 Opera でも pdf.js が動作するようです．<br>
 
