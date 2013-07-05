@@ -738,7 +738,7 @@ SumatraPDF の inverse search は ダブルクリックで行います．
 
 ## Evince との連携 (forward and inverse search) {#j6ff1448}
 
-- [Evince - TeX Wiki](/Evince/)
+- Evince/fwdevince
 - [Vim, Evince and forward and backward LaTeX synctex search](http://jlebl.wordpress.com/2011/01/13/vim-evince-and-forward-and-backward-latex-synctex-search/)
 - [Synctex support for Vim and Evince through DBus](https://github.com/peder2tm/sved)
 
@@ -756,7 +756,8 @@ let g:Tex_ViewRule_pdf = 'evince'
 
 に設定します．
 
-$HOME/.vim/ftplugin/latex-suite/compiler.vim を修正します．
+$HOME/.vim/ftplugin/latex-suite/compiler.vim を修正します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
 
