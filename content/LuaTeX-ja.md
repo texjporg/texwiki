@@ -29,7 +29,7 @@ LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語�
 
 LuaTeX-ja は
 
-- [TeX Live](</TeX Live/>) (TeX Live 2012 以降．最新版は TeX Live 2013 以降．)
+- [TeX Live](</TeX Live/>) (最新版は TeX Live 2013 以降で動作)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/) ([MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja))
 
@@ -57,10 +57,11 @@ LuaTeX-ja は
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
 TeX Live 2012 以降には luatexja が含まれています．<br>
+最新版は TeX Live 2013 以降で動作します．<br>
 
 #### [W32TeX](/W32TeX/) {#a565ecc6}
 
-2012/04/20 以降の W32TeX には luatexja.tar.xz が含まれています．<br>
+W32TeX \[2012/04/20\] 以降には luatexja.tar.xz が含まれています．<br>
 W32TeX をフルインストールすると<br>
 
 ```
