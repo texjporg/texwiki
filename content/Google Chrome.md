@@ -51,7 +51,8 @@ chrome://plugins
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
 
-Windows 版の Google Chrome で Chrome PDF Viewer にコマンドラインから引数を与えて PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があります．<br>
+Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があります．<br>
+Linux 版の Chromium にコマンドラインから引数を与えて Chrome PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要はありません．<br>
 
 ## 拡張機能 {#u71b1117}
 
