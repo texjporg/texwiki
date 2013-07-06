@@ -546,7 +546,7 @@ epsfdoc.tex をタイプセットして dviout で表示してみましょう。
 
 このサンプルでは Ghostscript 附属の golfer.eps，tiger.eps を使っています。<br>
 golfer.eps はモノクロ，tiger.eps はカラーの画像サンプルです。<br>
-epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\Program Files\gs\gs9.07\examples\ または C:\Program Files (x86)\gs\gs9.07\examples\ または C:\gs\gs9.07\examples\\) から
+epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\gs\gs9.07\examples\ または C:\Program Files\gs\gs9.07\examples\ または C:\Program Files (x86)\gs\gs9.07\examples\\) から
 C:\w32tex\dviout\GRAPHIC\PS\ フォルダーにコピーしてください。
 
 コマンド プロンプトから epsfdoc.tex のタイプセットを行います。
@@ -657,7 +657,7 @@ dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・�
 dviout 3.15.1 以降で PDF を作る際には，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）を使うのが便利です。<br>
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
 「ニコニコマーク」ボタンが見当たらない場合には，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
-この場合，PDF 化は dviout から dvipdfm(x) を起動して行われるので，各種設定には dvipdfm(x) 側の設定を正しく行う必要があります。<br>
+この場合，PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
 PDF の作成がうまくいかない場合は [dvioutのdvipdfmxでpdfファイルが作成されない](http://www.eng.kagawa-u.ac.jp/~haruna/memo/TeX/dvipdfmx.html) を参照してください．<br>
 
 ***
