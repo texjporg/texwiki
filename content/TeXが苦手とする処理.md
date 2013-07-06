@@ -94,7 +94,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 
 <!-- // 枠の四隅を四分円にする例（PSTricks 使用）： -->
 <!-- // 枠線上に見出し文字列を乗せるにはもう少し細工が必要です。 -->
-<!-- // また，（2007/02/04 の時点では）dvipdfm(x) を用いる場合には -->
+<!-- // また，（2007/02/04 の時点では）dvipdfmx を用いる場合には -->
 <!-- // このサンプルは利用できません。dvipdfmx などの PostScript を解さない -->
 <!-- // DVIware を用いる場合，枠の四隅にはフォント lcircle10 に収められている -->
 <!-- // 文字を利用するなり，tpic specials を用いるなりしてください（pict2e -->
