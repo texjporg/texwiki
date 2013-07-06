@@ -305,6 +305,9 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 
 の texlua の後ろの余分なスペース2つを削除してください．<br>
 
+- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
+- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
+
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
@@ -363,4 +366,4 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 - [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
 - [\*shell\* バッファ(cygwin の bash) から日本語ファイルを扱うための設定](http://www.ysnb.net/meadow/meadow-users-jp/2010/msg00001.html)
 - [Windows に Cygwin バージョン 1.7 をインストール](http://kkaneko.com/rinkou/cygwin/cygwin.html)
-- [便利コマンドバッチ集 (客先PCでCygwinとか入れられないとか言う環境のために)](http://d.hatena.ne.jp/aya_eiya/20120312/1331572894)
+- [便利コマンドバッチ集](http://aya-eiya.hateblo.jp/entry/20120312/1331572894)
