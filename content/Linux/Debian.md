@@ -42,10 +42,20 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#z4379676}
 
+- [Linux](/Linux/#texlive2013)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
-- [Linux/Linux Mint](</Linux/Linux Mint/#texlive2013>)
 - [TeX Live 2013 released](http://www.preining.info/blog/2013/06/tex-live-2013-released/)
+
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
+TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+
+```
+$ sudo apt-get install equivs
+$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
+$ equivs-build debian-control-ex.txt
+$ sudo dpkg -i texlive-local_2011-1~1_all.deb
+```
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#rde4f3be}
 
@@ -317,20 +327,45 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 
 ```
 $ sudo apt-get install texmaker
-$ sudo apt-get install qt4-qtconfig
 ```
 
-インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+Texmaker はかな漢字変換に関して不具合があるので<br>
+不具合を回避するための設定をします．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
-```
-$ sudo apt-get install ibus-qt4
-```
+Debian GNU/Linux でインプットメソッドに ibus を使用している場合は
 
-インプットメソッドに ibus を使用している場合は [Texmaker#かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる#修正方法 (Ubuntu)](/Texmaker/#q93a4c5b) を参照して不具合を回避します．<br>
+1. [ibus-qt4](http://packages.debian.org/ja/ibus-qt4) を導入する
+
+    ```
+    $ sudo apt-get install ibus-qt4
+    ```
+
+1. [qt4-qtconfig](http://packages.debian.org/ja/qt4-qtconfig) を導入する
+
+    ```
+    $ sudo apt-get install qt4-qtconfig
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. Texmaker を起動する
+
+    ```
+    $ texmaker &
+    ```
+
+とすると Texmaker の日本語入力で黒く表示される問題が解決しました．
+
+Qt 設定ツールを使用せずに Texmaker の編集画面で右クリックして \[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
+\[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
-
-最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
 
 ```
 $ sudo apt-get install lyx
@@ -340,20 +375,41 @@ $ sudo apt-get install lyx
 
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#r265d7ea}
 
-最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
-
 ```
 $ sudo apt-get install texworks
-$ sudo apt-get install qt4-qtconfig
 ```
 
-インプットメソッドに ibus を使用している場合は ibus-qt4 もインストールします．<br>
+Debian GNU/Linux でインプットメソッドに ibus を使用している場合は
 
-```
-$ sudo apt-get install ibus-qt4
-```
+1. [ibus-qt4](http://packages.debian.org/ja/ibus-qt4) を導入する
 
-インプットメソッドに ibus を使用している場合は [かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる#修正方法 (Ubuntu)](/TeXworks/#ke5fd57d) を参照して不具合を回避します．<br>
+    ```
+    $ sudo apt-get install ibus-qt4
+    ```
+
+1. [qt4-qtconfig](http://packages.debian.org/ja/qt4-qtconfig) を導入する
+
+    ```
+    $ sudo apt-get install qt4-qtconfig
+    ```
+
+1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
+
+    ```
+    $ qtconfig-qt4
+    ```
+
+1. TeXworks を起動する
+
+    ```
+    $ texworks &
+    ```
+
+1. 現在カーソルのある行をハイライトするをチェックする
+
+とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
+Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
+\[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
 
 ## Gummi <a id="gummi"></a> {#g69f5317}
 
