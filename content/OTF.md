@@ -71,13 +71,6 @@ W32TeX \[2013/03/18\] 以降の場合は
 >tar xvf C:/temp/otfbeta.tar.xz
 ```
 
-W32TeX \[2013/03/18\] よりも前の場合は
-
-```
->cd \w32tex
->tar Jxvf C:/temp/otfbeta.tar.xz
-```
-
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
 W32TeX \[2013/03/18\] 以降の場合は GNU tar 1.11.8 + 2.1(WIN32) になっています．
@@ -91,20 +84,6 @@ GNU tar 1.11.8 + 2.1(WIN32) の場合，圧縮フィルタ用のオプション�
 
 ```
 tar xvf C:/temp/otfbeta.tar.xz
-```
-
-W32TeX \[2013/03/18\] よりも前の tar は GNU tar 1.11.8 + 2.0(WIN32) になっていて古いバージョンのものなので J オプションを省略して展開することができません．([qa:57065](https://okumuralab.org/~okumura/texfaq/qa/57065.html), [qa:57066](https://okumuralab.org/~okumura/texfaq/qa/57066.html))
-
-```
->tar xvf C:/temp/otfbeta.tar.xz
-tar: Hmm, this doesn't look like a tar archive
-tar: Skipping to next file header
-tar: Only read 9800 bytes from archive otfbeta.tar.xz
-```
-
-```
->tar --version
-GNU tar 1.11.8 + 2.0(WIN32)
 ```
 
 [Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
@@ -264,9 +243,9 @@ Adobe-Japan1-6 で追加された文字を使っています。コマンド処�
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
 そのためには OpenType フォントが必要です。
 
-#### Microsoft Windows NT 6.x系 (8, 7, Vista) の場合 {#p413a15f}
+#### Microsoft Windows NT 6.x系 (8.1, 8, 7, Vista) の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI または Adobe Reader/Acrobat X の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成し，$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に次のように書きます（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成し，$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に次のように書きます（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
 ```
 rml         H               KozMinPr6N-Regular.otf
