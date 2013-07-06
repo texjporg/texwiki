@@ -59,7 +59,7 @@ pzdr
 
 - \[動機\] pdf ではフォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォントが充てられるので，その表示を確認したいことがある．
     - dvi や ps では『美文書...』と同じフォントで見えるが（それすら環境依存か<span style="color:#F00;"><em>?</em></span>），pdf だと異なることがある（フォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォント（pzdr (Zapf Dingbats) に対して AdobePiStd）が充てられるため）．
-    - pdf に，Zapf Dingbats フォントを埋め込むには，dvipdfm.cfg ファイルの下の方に f embase14.map と書き込んで（% f embase14.map とすでに書いてあれば % を外して），普通に dvipdfm コマンドを掛ければよい（こうしておくと Adobe の Times ，Helvetica ，Courier も埋め込まれます）．
+    - pdf に，Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に f embase14.map と書き込んで（% f embase14.map とすでに書いてあれば % を外して），普通に dvipdfmx コマンドを掛ければよい（こうしておくと Adobe の Times ，Helvetica ，Courier も埋め込まれます）．
         <!-- ''御存知の方，誰か書き込んでください！'' -->
 
 - 記号の番号が分かれば，たとえば (cmr10 で<span style="color:#F00;"><em>?</em></span>) \[ を出力したければ，
@@ -89,9 +89,9 @@ pzdr
 <!-- computer modern フォントを使用するための設定を行っていなければ， -->
 <!-- computer modern フォントに対しては mf ファイルから PK 形式の -->
 <!-- フォントを生成・使用することを試みるでしょう． -->
-<!-- 一方，dvips(k) や dvipdfm(x) では map ファイルの中に tfm/jfm ファイルと -->
+<!-- 一方，dvips(k) や dvipdfmx では map ファイルの中に tfm/jfm ファイルと -->
 <!-- 実際に用いられるフォント（PostScript Type1 フォントなど）の対応関係を -->
-<!-- 記述し（もちろん，書式は dvips(k) 用の map ファイルと dvipdfm(x)  -->
+<!-- 記述し（もちろん，書式は dvips(k) 用の map ファイルと dvipdfmx  -->
 <!-- 用の map ファイルとでは異なりますが），それに基づいて処理が行われます． -->
 <!-- ただし，仮想フォントが用いられていた場合には， -->
 <!--   dvi ファイル中のフォント（tfm/jfm ファイル）名・文字コード -->
