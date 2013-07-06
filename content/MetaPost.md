@@ -46,6 +46,12 @@ web2c 配布にも MetaPost のマニュアルが入っています。
 - [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
     - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
 
+### 不具合 {#z01f418a}
+
+#### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される {#c01c14c0}
+
+- [TeXLive 2013のmf2pt1がおかしい件](http://qiita.com/_yyu_/items/b1fac90074545ccee727)
+
 ### MetaPostプログラミング入門 {#p3fbc416}
 
 #### 簡単な線画の作成 {#t3a63dd6}
