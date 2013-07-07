@@ -109,7 +109,7 @@ TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-o
 ### CMap {#n2a34850}
 
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。<br>
-[CMap Resources](http://sourceforge.net/adobe/cmap/home/Home/) から "Downloads" へ進み、
+[CMap Resources](http://sourceforge.net/adobe/cmap/) から "Downloads" へ進み、
 [Adobe-Japan1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_japan1-6.tar.z/download), 
 [Adobe-GB1-5](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_gb1-5.tar.z/download), 
 [Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download), 
@@ -453,31 +453,9 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 
 ## map Files for the OTF Package {#nc92c884}
 
-ここからの話の対象は TeX Live あるいは W32TeX の場合であろうと思われます。
+TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています．<br>
 
-> W32TeX をお使いの場合は，(e-)(u)pTeX エンジン用の map ファイルが準備されています。埋め込み制御はすべて dvipdfmx の -f オプションを使います。
->
-> ```
-> dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
-> dvipdfmx -f hiragino dviname (Hiragino)
-> dvipdfmx -f hiragino04 dviname (Hiragino, JIS2004字形)
-> dvipdfmx -f hiraginopron dviname (Hiragino ProN)
-> dvipdfmx -f hiraginopron04 dviname (Hiragino ProN, JIS2004字形)
-> dvipdfmx -f ipa dviname (ipa)
-> dvipdfmx -f ipaex dviname (ipaex)
-> dvipdfmx -f kozuka dviname (小塚 Pro)
-> dvipdfmx -f koauka04 dviname (小塚 Pro, JIS2004字形)
-> dvipdfmx -f kozukapr6n dviname (小塚 Pr6N)
-> dvipdfmx -f kozukapr6n04 dviname (小塚 Pr6N, JIS2004字形)
-> dvipdfmx -f morisawa dviname (Morisawa)
-> dvipdfmx -f morisawa04 dviname (Morisawa, JIS2004字形)
-> dvipdfmx -f morisawapr6n dviname (Morisawa Pr6N)
-> dvipdfmx -f morisawapr6n04 dviname (Morisawa Pr6N, JIS2004字形)
-> dvipdfmx -f msmingoth dviname (msmincho and msgothic)
-> dvipdfmx -f noembed dviname (埋め込まない)
-> dvipdfmx -f noembed04 dviname (埋め込まない, JIS2004字形)
-> ```
->
+### TeX Live の場合 {#p1b2eb36}
 
 > TeX Live をお使いの場合は，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
 > 埋め込み制御は
@@ -503,15 +481,40 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 > ```
 >
 
-dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
+> dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
+>
+> ```
+> dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
+> ```
+>
+> などとオプション “-f” で直接指定する方法もあります。
 
-```
-dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
-```
+### W32TeX の場合 {#rffd4bea}
 
-などとオプション “-f” で直接指定する方法もあります。
-
-- [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照．
+> W32TeX をお使いの場合は，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
+> 埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照．)<br>
+>
+> ```
+> dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
+> dvipdfmx -f hiragino dviname (Hiragino)
+> dvipdfmx -f hiragino04 dviname (Hiragino, JIS2004字形)
+> dvipdfmx -f hiraginopron dviname (Hiragino ProN)
+> dvipdfmx -f hiraginopron04 dviname (Hiragino ProN, JIS2004字形)
+> dvipdfmx -f ipa dviname (ipa)
+> dvipdfmx -f ipaex dviname (ipaex)
+> dvipdfmx -f kozuka dviname (小塚 Pro)
+> dvipdfmx -f koauka04 dviname (小塚 Pro, JIS2004字形)
+> dvipdfmx -f kozukapr6n dviname (小塚 Pr6N)
+> dvipdfmx -f kozukapr6n04 dviname (小塚 Pr6N, JIS2004字形)
+> dvipdfmx -f morisawa dviname (Morisawa)
+> dvipdfmx -f morisawa04 dviname (Morisawa, JIS2004字形)
+> dvipdfmx -f morisawapr6n dviname (Morisawa Pr6N)
+> dvipdfmx -f morisawapr6n04 dviname (Morisawa Pr6N, JIS2004字形)
+> dvipdfmx -f msmingoth dviname (msmincho and msgothic)
+> dvipdfmx -f noembed dviname (埋め込まない)
+> dvipdfmx -f noembed04 dviname (埋め込まない, JIS2004字形)
+> ```
+>
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 <!-- otf-cjmr-h は，前半では Identity-H と紹介されていますが， -->
@@ -663,6 +666,8 @@ $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map の最後に
 次のような内容を直接追記しても良いでしょう。）
 
 #### フォントを埋め込まない場合 {#t1a90b4f}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/)
 
 ***
 
@@ -827,36 +832,13 @@ hirakaku-w6-v  Identity-V         !HiraKakuProN-W6.otf
 ```
 hiramaru-w4-h  Adobe-Japan1-6     !HiraMaruProN-W4.otf
 hiramaru-w4-v  Identity-V         !HiraMaruProN-W4.otf
-
-%%% UTF package
-hmr            H                   Ryumin-Light
-hmrv           V                   Ryumin-Light
-unijmin-h      UniJIS-UTF16-H      Ryumin-Light
-unijmin-v      UniJIS-UTF16-V      Ryumin-Light
-```
-
-<!-- %cidmin-h       Identity-H          Ryumin-Light -->
-
-```
-cidmin-h       Adobe-Japan1-6      Ryumin-Light
-cidmin-v       Identity-V          Ryumin-Light
-
-hkb            H                   GothicBBB-Medium
-hkbv           V                   GothicBBB-Medium
-unijgoth-h     UniJIS-UTF16-H      GothicBBB-Medium
-unijgoth-v     UniJIS-UTF16-V      GothicBBB-Medium
-```
-
-<!-- %cidgoth-h      Identity-H          GothicBBB-Medium -->
-
-```
-cidgoth-h      Adobe-Japan1-6      GothicBBB-Medium
-cidgoth-v      Identity-V          GothicBBB-Medium
 ```
 
 ***
 
 #### フリーフォントを使う場合 {#xcbe9625}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/)
 
 ***
 
@@ -988,43 +970,6 @@ otf-ukgr-v     UniKS-UTF16-V       UnDotum.ttf
 ```
 otf-ckgr-h     Adobe-Korea1-2      UnDotum.ttf
 otf-ckgr-v     Identity-V          UnDotum.ttf/AK12
-
-%%% UTF package
-hmr            H                   ipaexm.ttf
-hmrv           V                   ipaexm.ttf
-unijmin-h      UniJIS-UTF16-H      ipaexm.ttf
-unijmin-v      UniJIS-UTF16-V      ipaexm.ttf
-```
-
-<!-- %cidmin-h       Identity-H          ipaexm.ttf/AJ16 -->
-
-```
-cidmin-h       Adobe-Japan1-6      ipaexm.ttf
-cidmin-v       Identity-V          ipaexm.ttf/AJ16
-
-hkb            H                   ipaexg.ttf
-hkbv           V                   ipaexg.ttf
-unijgoth-h     UniJIS-UTF16-H      ipaexg.ttf
-unijgoth-v     UniJIS-UTF16-V      ipaexg.ttf
-```
-
-<!-- %cidgoth-h      Identity-H          ipaexg.ttf/AJ16 -->
-
-```
-cidgoth-h      Adobe-Japan1-6      ipaexg.ttf
-cidgoth-v      Identity-V          ipaexg.ttf/AJ16
-
-%hkb            H                   VL-Gothic-Regular.ttf
-%hkbv           V                   VL-Gothic-Regular.ttf
-%unijgoth-h     UniJIS-UTF16-H      VL-Gothic-Regular.ttf
-%unijgoth-v     UniJIS-UTF16-V      VL-Gothic-Regular.ttf
-```
-
-<!-- %cidgoth-h      Identity-H          VL-Gothic-Regular.ttf/AJ16 -->
-
-```
-%cidgoth-h      Adobe-Japan1-6      VL-Gothic-Regular.ttf
-%cidgoth-v      Identity-V          VL-Gothic-Regular.ttf/AJ16
 ```
 
 ***
@@ -1032,6 +977,9 @@ cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 各フリーフォントの入手先は[フォント - TeX Wiki](</フォント/>)を参照してください。なお，入手先は変更される場合があります。また，利用・再配布等にあたっては「使用許諾契約」をご自身で確認されることを強くおすすめいたします（フリーフォントの「使用許諾契約」は随時変更されるため）。
 
 #### OS X 附属のフォント（[ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)など）を使う場合 {#l6a3d188}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/)
 
 ***
 
@@ -1225,31 +1173,6 @@ hirakaku-w6-v  Identity-V          HiraKakuProN-W6.otf
 ```
 hiramaru-w4-h  Adobe-Japan1-6      HiraMaruProN-W4.otf
 hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
-
-%%% UTF package
-hmr            H                   HiraMinProN-W3.otf
-hmrv           V                   HiraMinProN-W3.otf
-unijmin-h      UniJIS-UTF16-H      HiraMinProN-W3.otf
-unijmin-v      UniJIS-UTF16-V      HiraMinProN-W3.otf
-```
-
-<!-- %cidmin-h       Identity-H          HiraMinProN-W3.otf -->
-
-```
-cidmin-h       Adobe-Japan1-6      HiraMinProN-W3.otf
-cidmin-v       Identity-V          HiraMinProN-W3.otf
-
-hkb            H                   HiraKakuProN-W3.otf
-hkbv           V                   HiraKakuProN-W3.otf
-unijgoth-h     UniJIS-UTF16-H      HiraKakuProN-W3.otf
-unijgoth-v     UniJIS-UTF16-V      HiraKakuProN-W3.otf
-```
-
-<!-- %cidgoth-h      Identity-H          HiraKakuProN-W3.otf -->
-
-```
-cidgoth-h      Adobe-Japan1-6      HiraKakuProN-W3.otf
-cidgoth-v      Identity-V          HiraKakuProN-W3.otf
 ```
 
 ***
@@ -1267,6 +1190,8 @@ Microsoft Office for Mac 2011 に
 「[ＭＳフォントの合法的な入手が可能です: Apple サポートコミュニティ](https://discussionsjapan.apple.com/thread/10036561)」）。
 
 #### Microsoft Windows 附属のフォントを使う場合 {#g54b5df7}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/)
 
 ***
 
@@ -1409,31 +1334,6 @@ otf-ukgr-v     UniKS-UTF16-V    :3:gulim.ttc
 ```
 otf-ckgr-h     Adobe-Korea1-2   :3:gulim.ttc
 otf-ckgr-v     Identity-V       :3:gulim.ttc/AK12
-
-%%% UTF package
-hmr            H                :0:msmincho.ttc
-hmrv           V                :0:msmincho.ttc
-unijmin-h      UniJIS-UTF16-H   :0:msmincho.ttc
-unijmin-v      UniJIS-UTF16-V   :0:msmincho.ttc
-```
-
-<!-- %cidmin-h       Identity-H       :0:msmincho.ttc/AJ16 -->
-
-```
-cidmin-h       Adobe-Japan1-6   :0:msmincho.ttc
-cidmin-v       Identity-V       :0:msmincho.ttc/AJ16
-
-hkb            H                :0:msgothic.ttc
-hkbv           V                :0:msgothic.ttc
-unijgoth-h     UniJIS-UTF16-H   :0:msgothic.ttc
-unijgoth-v     UniJIS-UTF16-V   :0:msgothic.ttc
-```
-
-<!-- %cidgoth-h      Identity-H       :0:msgothic.ttc/AJ16 -->
-
-```
-cidgoth-h      Adobe-Japan1-6   :0:msgothic.ttc
-cidgoth-v      Identity-V       :0:msgothic.ttc/AJ16
 ```
 
 ***
@@ -1563,43 +1463,6 @@ otf-cjml-v     Identity-V       :0:HG-MinchoL-Sun.ttc/AJ16
 ```
 %otf-cjml-h     Adobe-Japan1-6   :0:msmincho.ttc
 %otf-cjml-v     Identity-V       :0:msmincho.ttc/AJ16
-
-%%% UTF package
-hmr            H                :0:HG-MinchoL-Sun.ttc
-hmrv           V                :0:HG-MinchoL-Sun.ttc
-unijmin-h      UniJIS-UTF16-H   :0:HG-MinchoL-Sun.ttc
-unijmin-v      UniJIS-UTF16-V   :0:HG-MinchoL-Sun.ttc
-```
-
-<!-- %cidmin-h       Identity-H       :0:HG-MinchoL-Sun.ttc/AJ16 -->
-
-```
-cidmin-h       Adobe-Japan1-6   :0:HG-MinchoL-Sun.ttc
-cidmin-v       Identity-V       :0:HG-MinchoL-Sun.ttc/AJ16
-
-%hmr            H                :0:msmincho.ttc
-%hmrv           V                :0:msmincho.ttc
-%unijmin-h      UniJIS-UTF16-H   :0:msmincho.ttc
-%unijmin-v      UniJIS-UTF16-V   :0:msmincho.ttc
-```
-
-<!-- %cidmin-h       Identity-H       :0:msmincho.ttc/AJ16 -->
-
-```
-%cidmin-h       Adobe-Japan1-6   :0:msmincho.ttc
-%cidmin-v       Identity-V       :0:msmincho.ttc/AJ16
-
-hkb            H                :0:hgrgm.ttc
-hkbv           V                :0:hgrgm.ttc
-unijgoth-h     UniJIS-UTF16-H   :0:hgrgm.ttc
-unijgoth-v     UniJIS-UTF16-V   :0:hgrgm.ttc
-```
-
-<!-- %cidgoth-h      Identity-H       :0:hgrgm.ttc/AJ16 -->
-
-```
-cidgoth-h      Adobe-Japan1-6   :0:hgrgm.ttc
-cidgoth-v      Identity-V       :0:hgrgm.ttc/AJ16
 ```
 
 ***
@@ -1640,6 +1503,10 @@ cidgoth-v      Identity-V       :0:hgrgm.ttc/AJ16
 それぞれ “Light”，“Bold” のウェイトに分類しています。
 
 #### [Adobe のフォント](http://www.adobe.com/jp/type/)（[小塚書体など](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)）を使う場合 {#v02c074b}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/)
 
 ***
 
@@ -1806,62 +1673,14 @@ otf-ckgr-h     Adobe-Korea1-2      AdobeGothicStd-Bold.otf
 otf-ckgr-v     Identity-V          AdobeGothicStd-Bold.otf
 ```
 
-```
-%%% UTF package
-hmr            H                   KozMinPr6N-Regular.otf
-hmrv           V                   KozMinPr6N-Regular.otf
-unijmin-h      UniJIS-UTF16-H      KozMinPr6N-Regular.otf
-unijmin-v      UniJIS-UTF16-V      KozMinPr6N-Regular.otf
-```
-
-<!-- %cidmin-h       Identity-H          KozMinPr6N-Regular.otf -->
-
-```
-cidmin-h       Adobe-Japan1-6      KozMinPr6N-Regular.otf
-cidmin-v       Identity-V          KozMinPr6N-Regular.otf
-
-%hmr            H                  !KozMinPr6N-Regular.otf
-%hmrv           V                  !KozMinPr6N-Regular.otf
-%unijmin-h      UniJIS-UTF16-H     !KozMinPr6N-Regular.otf
-%unijmin-v      UniJIS-UTF16-V     !KozMinPr6N-Regular.otf
-```
-
-<!-- %cidmin-h       Identity-H         !KozMinPr6N-Regular.otf -->
-
-```
-%cidmin-h       Adobe-Japan1-6     !KozMinPr6N-Regular.otf
-%cidmin-v       Identity-V         !KozMinPr6N-Regular.otf
-
-hkb            H                   KozGoPr6N-Medium.otf
-hkbv           V                   KozGoPr6N-Medium.otf
-unijgoth-h     UniJIS-UTF16-H      KozGoPr6N-Medium.otf
-unijgoth-v     UniJIS-UTF16-V      KozGoPr6N-Medium.otf
-```
-
-<!-- %cidgoth-h      Identity-H          KozGoPr6N-Medium.otf -->
-
-```
-cidgoth-h      Adobe-Japan1-6      KozGoPr6N-Medium.otf
-cidgoth-v      Identity-V          KozGoPr6N-Medium.otf
-
-%hkb            H                  !KozGoPr6N-Medium.otf
-%hkbv           V                  !KozGoPr6N-Medium.otf
-%unijgoth-h     UniJIS-UTF16-H     !KozGoPr6N-Medium.otf
-%unijgoth-v     UniJIS-UTF16-V     !KozGoPr6N-Medium.otf
-```
-
-<!-- %cidgoth-h      Identity-H         !KozGoPr6N-Medium.otf -->
-
-```
-%cidgoth-h      Adobe-Japan1-6     !KozGoPr6N-Medium.otf
-%cidgoth-v      Identity-V         !KozGoPr6N-Medium.otf
-```
-
 ***
 
 Adobe の丸ゴシック体はないので，Adobe-Japan1-6 に対応する別のゴシック体（上の例ですと，「小塚ゴシック Pr6N H」です。）を充ててみました。Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/)
 
 ***
 
@@ -1932,115 +1751,11 @@ otf-ujmgr-v    UniJIS-UTF16-V      A-OTF-MidashiGoPr6N-MB31.otf
 ```
 otf-cjmgr-h    Adobe-Japan1-6      A-OTF-MidashiGoPr6N-MB31.otf
 otf-cjmgr-v    Identity-V          A-OTF-MidashiGoPr6N-MB31.otf
-
-%%% UTF package
-hmr            H                   A-OTF-RyuminPr6N-Light.otf
-hmrv           V                   A-OTF-RyuminPr6N-Light.otf
-unijmin-h      UniJIS-UTF16-H      A-OTF-RyuminPr6N-Light.otf
-unijmin-v      UniJIS-UTF16-V      A-OTF-RyuminPr6N-Light.otf
-```
-
-<!-- %cidmin-h       Identity-H          A-OTF-RyuminPr6N-Light.otf -->
-
-```
-cidmin-h       Adobe-Japan1-6      A-OTF-RyuminPr6N-Light.otf
-cidmin-v       Identity-V          A-OTF-RyuminPr6N-Light.otf
-
-hkb            H                   A-OTF-GothicBBBPr6N-Medium.otf
-hkbv           V                   A-OTF-GothicBBBPr6N-Medium.otf
-unijgoth-h     UniJIS-UTF16-H      A-OTF-GothicBBBPr6N-Medium.otf
-unijgoth-v     UniJIS-UTF16-V      A-OTF-GothicBBBPr6N-Medium.otf
-```
-
-<!-- %cidgoth-h      Identity-H          A-OTF-GothicBBBPr6N-Medium.otf -->
-
-```
-cidgoth-h      Adobe-Japan1-6      A-OTF-GothicBBBPr6N-Medium.otf
-cidgoth-v      Identity-V          A-OTF-GothicBBBPr6N-Medium.otf
 ```
 
 ***
 
 モリサワの丸ゴシック体は，Adobe-Japan1-6 に対応していますが，ここでは，Adobe-Japan1-6 に対応する別のゴシック体（上の例ですと，Adobe のゴシック体「小塚ゴシック Pr6N H」に相当する「見出ゴMB31 Pr6N MB31」です。）を充ててみました。Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
-
-<!-- ***[[Vine Linux 3.2 CR:http://vinelinux.org/whatsnew.html#news/20060123]] 附属のフォントを使う場合 [#kf9b6d7c] -->
-<!--  -->
-<!-- - --  -->
-<!-- rml            H                :0:lxmincho.ttc -->
-<!-- rmlv           V                :0:lxmincho.ttc -->
-<!--  -->
-<!-- gbm            H                :0:lxgothic.ttc -->
-<!-- gbmv           V                :0:lxgothic.ttc -->
-<!--  -->
-<!-- %%% OTF package -->
-<!-- hminr-h        H                :0:lxmincho.ttc -->
-<!-- hminr-v        V                :0:lxmincho.ttc -->
-<!-- otf-ujmr-h     UniJIS-UTF16-H   :0:lxmincho.ttc -->
-<!-- otf-ujmr-v     UniJIS-UTF16-V   :0:lxmincho.ttc -->
-<!-- // %otf-cjmr-h     Identity-H       :0:lxmincho.ttc/AJ16 -->
-<!-- otf-cjmr-h     Adobe-Japan1-6   :0:lxmincho.ttc -->
-<!-- otf-cjmr-v     Identity-V       :0:lxmincho.ttc/AJ16 -->
-<!--  -->
-<!-- hgothr-h       H                :0:lxgothic.ttc -->
-<!-- hgothr-v       V                :0:lxgothic.ttc -->
-<!-- otf-ujgr-h     UniJIS-UTF16-H   :0:lxgothic.ttc -->
-<!-- otf-ujgr-v     UniJIS-UTF16-V   :0:lxgothic.ttc -->
-<!-- // %otf-cjgr-h     Identity-H       :0:lxgothic.ttc/AJ16 -->
-<!-- otf-cjgr-h     Adobe-Japan1-6   :0:lxgothic.ttc -->
-<!-- otf-cjgr-v     Identity-V       :0:lxgothic.ttc/AJ16 -->
-<!--  -->
-<!-- hminb-h        H                :0:dfminc.ttc -->
-<!-- hminb-v        V                :0:dfminc.ttc -->
-<!-- otf-ujmb-h     UniJIS-UTF16-H   :0:dfminc.ttc -->
-<!-- otf-ujmb-v     UniJIS-UTF16-V   :0:dfminc.ttc -->
-<!-- // %otf-cjmb-h     Identity-H       :0:dfminc.ttc/AJ16 -->
-<!-- otf-cjmb-h     Adobe-Japan1-6   :0:dfminc.ttc -->
-<!-- otf-cjmb-v     Identity-V       :0:dfminc.ttc/AJ16 -->
-<!--  -->
-<!-- hgothb-h       H                :0:lxgothub.ttc -->
-<!-- hgothb-v       V                :0:lxgothub.ttc -->
-<!-- otf-ujgb-h     UniJIS-UTF16-H   :0:lxgothub.ttc -->
-<!-- otf-ujgb-v     UniJIS-UTF16-V   :0:lxgothub.ttc -->
-<!-- // %otf-cjgb-h     Identity-H       :0:lxgothub.ttc/AJ16 -->
-<!-- otf-cjgb-h     Adobe-Japan1-6   :0:lxgothub.ttc -->
-<!-- otf-cjgb-v     Identity-V       :0:lxgothub.ttc/AJ16 -->
-<!--  -->
-<!-- hmgothr-h      H                :0:lxmgoth.ttc -->
-<!-- hmgothr-v      V                :0:lxmgoth.ttc -->
-<!-- otf-ujmgr-h    UniJIS-UTF16-H   :0:lxmgoth.ttc -->
-<!-- otf-ujmgr-v    UniJIS-UTF16-V   :0:lxmgoth.ttc -->
-<!-- // %otf-cjmgr-h    Identity-H       :0:lxmgoth.ttc/AJ16 -->
-<!-- otf-cjmgr-h    Adobe-Japan1-6   :0:lxmgoth.ttc -->
-<!-- otf-cjmgr-v    Identity-V       :0:lxmgoth.ttc/AJ16 -->
-<!--  -->
-<!-- hgotheb-h      H                :0:lxpop.ttc -->
-<!-- hgotheb-v      V                :0:lxpop.ttc -->
-<!--  -->
-<!-- hminl-h        H                :0:lxmincho.ttc -->
-<!-- hminl-v        V                :0:lxmincho.ttc -->
-<!-- otf-ujml-h     UniJIS-UTF16-H   :0:lxmincho.ttc -->
-<!-- otf-ujml-v     UniJIS-UTF16-V   :0:lxmincho.ttc -->
-<!-- // %otf-cjml-h     Identity-H       :0:lxmincho.ttc/AJ16 -->
-<!-- otf-cjml-h     Adobe-Japan1-6   :0:lxmincho.ttc -->
-<!-- otf-cjml-v     Identity-V       :0:lxmincho.ttc/AJ16 -->
-<!--  -->
-<!-- %%% UTF package -->
-<!-- hmr            H                :0:lxmincho.ttc -->
-<!-- hmrv           V                :0:lxmincho.ttc -->
-<!-- unijmin-h      UniJIS-UTF16-H   :0:lxmincho.ttc -->
-<!-- unijmin-v      UniJIS-UTF16-V   :0:lxmincho.ttc -->
-<!-- // %cidmin-h       Identity-H       :0:lxmincho.ttc/AJ16 -->
-<!-- cidmin-h       Adobe-Japan1-6   :0:lxmincho.ttc -->
-<!-- cidmin-v       Identity-V       :0:lxmincho.ttc/AJ16 -->
-<!--  -->
-<!-- hkb            H                :0:lxgothic.ttc -->
-<!-- hkbv           V                :0:lxgothic.ttc -->
-<!-- unijgoth-h     UniJIS-UTF16-H   :0:lxgothic.ttc -->
-<!-- unijgoth-v     UniJIS-UTF16-V   :0:lxgothic.ttc -->
-<!-- // %cidgoth-h      Identity-H       :0:lxgothic.ttc/AJ16 -->
-<!-- cidgoth-h      Adobe-Japan1-6   :0:lxgothic.ttc -->
-<!-- cidgoth-v      Identity-V       :0:lxgothic.ttc/AJ16 -->
-<!-- - --  -->
 
 ### <a id="map-dvips">For dvips</a> {#k1eb9f9c}
 
@@ -2153,21 +1868,6 @@ hirakaku-w6-h     HiraKakuProN-W6-Identity-H
 hirakaku-w6-v     HiraKakuProN-W6-Identity-V
 hiramaru-w4-h     HiraMaruProN-W4-Identity-H
 hiramaru-w4-v     HiraMaruProN-W4-Identity-V
-
-%%% UTF package
-hmr                  Ryumin-Light-H
-hmrv                 Ryumin-Light-V
-unijmin-h            Ryumin-Light-UniJIS-UTF16-H
-unijmin-v            Ryumin-Light-UniJIS-UTF16-V
-cidmin-h             Ryumin-Light-Identity-H
-cidmin-v             Ryumin-Light-Identity-V
-
-hkb              GothicBBB-Medium-H
-hkbv             GothicBBB-Medium-V
-unijgoth-h       GothicBBB-Medium-UniJIS-UTF16-H
-unijgoth-v       GothicBBB-Medium-UniJIS-UTF16-V
-cidgoth-h        GothicBBB-Medium-Identity-H
-cidgoth-v        GothicBBB-Medium-Identity-V
 ```
 
 ***
