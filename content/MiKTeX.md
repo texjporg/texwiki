@@ -7,6 +7,8 @@ pukiwiki: "MiKTeX"
 
 # MiKTeX
 
+[Microsoft Windows](</Microsoft Windows/>) > MiKTeX
+
 ## [MiKTeX](http://miktex.org/) {#n766a2b6}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
