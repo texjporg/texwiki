@@ -153,7 +153,7 @@ $ sudo yum install mupdf
 
 ## [Adobe Reader](</Adobe Reader/>) {#m85c82f5}
 
-- [Install Adobe Reader on Fedora 18/17, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
+- [Install Adobe Reader on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
 
 ```
 $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
