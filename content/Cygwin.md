@@ -7,6 +7,8 @@ pukiwiki: "Cygwin"
 
 # Cygwin
 
+[Microsoft Windows](</Microsoft Windows/>) > Cygwin
+
 ## [Cygwin](http://www.cygwin.com/) {#y69b4c00}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cygwin_logo.svg/200px-Cygwin_logo.svg.png" alt="Cygwin" style="float:right">
