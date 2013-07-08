@@ -53,6 +53,12 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 
 - [http://gentwoo.elisp.net/packages/app-text/qpdfview](http://gentwoo.elisp.net/packages/app-text/qpdfview)
 
+## [Adobe Reader](</Adobe Reader/>) {#we719f2a}
+
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
+Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
+
 ## [Texmaker](/Texmaker/) {#s4e0cb5d}
 
 - [http://gentwoo.elisp.net/packages/app-office/texmaker](http://gentwoo.elisp.net/packages/app-office/texmaker)
