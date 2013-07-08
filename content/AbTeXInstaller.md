@@ -152,7 +152,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　◯ ipaex.map（IPAex フォントを用います．）<br>
 　　◯ kozuka.map（小塚明朝・ゴシック Pro を用います．）<br>
 　　◯ kozukapr6n.map（小塚明朝・ゴシック Pr6N を用います．）<br>
-　　◯ noembed.map（埋め込みません．TeXworks でのプレビューは不可．[^1]）<br>
+　　◯ noembed.map（埋め込みません．TeXworks ではＭＳ 明朝のみで表示．）<br>
 　　☐ 2004JIS 字形を使う．（デフォルトの指定を選択時は無視されます．）<br>
 
 ***
@@ -242,5 +242,3 @@ otf パッケージの最新版は otfbeta です。<br>
 - [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
 - [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
-
-[^1]: TeXworks 0.4.5 では日本語のフォントを埋め込んでいない場合は ＭＳ 明朝 で表示されるようになりました．
