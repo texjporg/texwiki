@@ -39,25 +39,26 @@ replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 
 と聞かれることがあります。「A」と入力してEnterキーを押しておきましょう。
 
-環境変数PATHを必要に応じて設定します。PATHの値はC:\Program Files\Aspell\bin または C:\Program Files (x86)\Aspell\bin です。（ただし、コマンド プロンプトを用いる場合です。EasyTeX などから呼び出す場合はPATHの設定をする必要はありません。）
+環境変数PATHを必要に応じて設定します。PATHの値はC:\Program Files\Aspell\bin または C:\Program Files (x86)\Aspell\bin です。（ただし、コマンド プロンプトを用いる場合です。Notepad++ などから呼び出す場合はPATHの設定をする必要はありません。）
 
 <!-- Windows以外のインストール方法は、[[欧文スペルチェッカー GNU Aspell:http:// members.jcom.home.ne.jp/advweb/build/others/aspell.html]]をご覧ください。 -->
 
 #### Linuxの場合 {#w22db8c3}
 
-Linuxでは通常最初からaspellがインストールされています。aspellが入っていなければ、例えば、VineLinuxだとすると
-
-```
-$ sudo apt-get install aspell
-```
-
-でインストールが完了します。Ubuntuの場合だと、
+Linux Mint の場合は
 
 ```
 $ sudo apt-get install aspell aspell-en
 ```
 
-です。
+です。<br>
+Vine Linux の場合は
+
+```
+$ sudo apt-get install aspell
+```
+
+です。<br>
 
 #### OS X の場合 {#g5b60c70}
 
