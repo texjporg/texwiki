@@ -23,8 +23,6 @@ pukiwiki: "TeXworks/設定/Linux"
 
 pdfplatex (シェルスクリプト) を作成します．
 
-■ フォントマップを指定しない場合<br>
-
 ***
 
 - pdfplatex
@@ -39,21 +37,13 @@ dvipdfmx "`basename "$1" .tex`"
 
 ***
 
-■ IPAexフォントを埋め込む場合<br>
-
-***
-
-- pdfplatex
-
-***
+IPAexフォントを埋め込む場合は
 
 ```
-#!/bin/sh
-platex -synctex=1 "$1" && \
-dvipdfmx -f ptex-ipaex.map "`basename "$1" .tex`"
+$ kanji-config-updmap ipaex
 ```
 
-***
+を実行します．<br>
 
 chmod で実行権限を付加します．
 
@@ -185,8 +175,6 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 
 pdfuplatex (シェルスクリプト) を作成します．
 
-■ フォントマップを指定しない場合<br>
-
 ***
 
 - pdfuplatex
@@ -201,21 +189,13 @@ dvipdfmx "`basename "$1" .tex`"
 
 ***
 
-■ IPAexフォントを埋め込む場合<br>
-
-***
-
-- pdfuplatex
-
-***
+IPAexフォントを埋め込む場合は
 
 ```
-#!/bin/sh
-uplatex -synctex=1 "$1" && \
-dvipdfmx -f uptex-ipaex.map "`basename "$1" .tex`"
+$ kanji-config-updmap ipaex
 ```
 
-***
+を実行します．<br>
 
 chmod で実行権限を付加します．
 
@@ -353,13 +333,13 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-pdfpLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$latex=q/platex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ptex-ipaex.map -f otf-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -380,11 +360,11 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-pdfpLaTeX2</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/platex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$latex=q/platex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/pbibtex/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/pbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -409,13 +389,13 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -436,11 +416,11 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -465,11 +445,11 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-pdfLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/pdflatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/pdflatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtex/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -490,14 +470,14 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/lualatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-lualatex</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -515,14 +495,14 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/luajitlatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/luajitlatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-lualatex</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -540,11 +520,11 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-XeLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/xelatex -synctex=1/</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/xelatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-xelatex</ins><br>
