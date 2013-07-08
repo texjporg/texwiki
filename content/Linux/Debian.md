@@ -225,6 +225,10 @@ $ sudo apt-get install mupdf
 
 ## [Adobe Reader](</Adobe Reader/>) <a id="adobereader"></a> {#o1495f80}
 
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
+Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
+
 ### Debian GNU/Linux sid x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
 
 #### 64 bit OS 上での 32 bit バイナリの取り扱いに関して {#u2fe7284}
