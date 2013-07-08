@@ -117,62 +117,6 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#s760f6d9}
-
-- [VirtualBoxにDebian/wheezyをインストール](http://ameblo.jp/koba-matethm/entry-11554870177.html)
-- [Debian Wheezy amd64でLaTeX環境を構築する](http://linux.tsutomuonoda.com/debian-wheezy-amd64-latex/)
-- [Raspberry Pi で遊ぶ (1) &mdash;LaTeX のコンパイルサーバーとして&#8212;](http://skalldan.wordpress.com/2013/02/18/raspberry-pi-%E3%81%A7%E9%81%8A%E3%81%B6-1-latex-%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%A8%E3%81%97%E3%81%A6/)
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
-- [Debian wheezyへTeX環境のインストール](http://animemo.seesaa.net/article/314356021.html)
-
-#### Debian GNU/Linux 7.0 「Wheezy」 で TeX Live 2012/Debian のインストール {#v3917726}
-
-Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/wheezy/texlive-full) パッケージを選択してインストールすれば OK です．<br>
-
-apt-get を使用してインストールしても OK です．<br>
-
-```
-$ sudo apt-get install texlive-full
-```
-
-/usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-nkf をインストールします．<br>
-
-```
-$ sudo apt-get install nkf
-```
-
-/usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
-
-```
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
 ## [Python](/Python/) <a id="python"></a> {#df01e340}
 
 ```
@@ -337,7 +281,7 @@ Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
 \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
-Debian GNU/Linux でインプットメソッドに ibus を使用している場合は
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.debian.org/ja/ibus-qt4) を導入する
 
@@ -383,7 +327,7 @@ $ sudo apt-get install lyx
 $ sudo apt-get install texworks
 ```
 
-Debian GNU/Linux でインプットメソッドに ibus を使用している場合は
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.debian.org/ja/ibus-qt4) を導入する
 
