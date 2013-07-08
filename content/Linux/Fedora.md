@@ -153,6 +153,10 @@ $ sudo yum install mupdf
 
 ## [Adobe Reader](</Adobe Reader/>) {#m85c82f5}
 
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
+Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
+
 - [Install Adobe Reader on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
 
 ```
