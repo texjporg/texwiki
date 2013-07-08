@@ -134,56 +134,6 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#ea828b67}
-
-#### Linux Mint 15 {#n724cc58}
-
-Linux Mint 14 と同様の方法でインストールできます．<br>
-
-TeX Live 2012/Debian をインストールする場合は texlive-full を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-full
-```
-
-/usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-nkf をインストールします．<br>
-
-```
-$ sudo apt-get install nkf
-```
-
-/usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
-
-```
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
 ```
@@ -250,7 +200,7 @@ Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
 \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
-Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
@@ -300,7 +250,7 @@ $ sudo apt-get install lyx
 $ sudo apt-get install texworks
 ```
 
-Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
