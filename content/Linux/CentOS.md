@@ -45,12 +45,23 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 - [chef-texlive](https://github.com/tk0miya/chef-texlive)
 - [CentOS - TeX Live 2012 インストール！](http://www.mk-mode.com/wordpress/2012/09/15002016/)
 
-## Evince {#b582893c}
+## [Evince](/Evince/) {#b582893c}
 
 ```
 $ sudo yum install evince
 ```
 
-## Adobe Reader {#eb6955fb}
+## [Adobe Reader](</Adobe Reader/>) {#eb6955fb}
+
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
+Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
 
 - [CentOS 6.xにAdobe Readerインストール設定（yum）](http://boota.mydns.jp/blog/?p=2028)
+- [Install Adobe Reader on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
+
+```
+$ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
+$ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+$ sudo yum install nspluginwrapper.i686 AdobeReader_enu
+```
