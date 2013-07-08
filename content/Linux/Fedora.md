@@ -47,7 +47,6 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 #### Fedora 20, 19 {#u01e1fc4}
 
-Fedora 20, 19 では TeX Live 2013 が使用できます．<br>
 yum で texlive-scheme-full を指定すれば TeX Live 2013 をインストールできます．<br>
 
 ```
@@ -55,7 +54,6 @@ $ sudo yum install texlive-scheme-full
 ```
 
 /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf が存在しない場合は /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．<br>
 
 shell_escape_commands が以下のように記述されていると思います．
 
@@ -88,7 +86,6 @@ $ sudo yum install nkf
 ```
 
 /usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf が存在しない場合は /usr/share/texlive/texmf/web2c/texmf.cnf に設定を追加します．<br>
 
 ```
 PTEX_IN_FILTER = /usr/bin/nkf -w
@@ -175,8 +172,6 @@ Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
 \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
 
-Fedora 20, 19 の場合は
-
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
     ```
@@ -220,8 +215,6 @@ $ sudo yum install lyx
 ```
 $ sudo yum install texworks
 ```
-
-Fedora 20, 19 の場合は
 
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
