@@ -110,9 +110,9 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
 ```
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
-  $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1';
-  $bibtex = 'pbibtex -kanji=utf8';
-  $makeindex = 'mendex -U';
+  $latex = 'platex %O -kanji=utf8 -guess-input-enc -synctex=1 %S';
+  $bibtex = 'pbibtex %O -kanji=utf8 %B';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -125,9 +125,9 @@ if ($^O eq 'MSWin32') {
     $pdf_previewer = 'texworks';
   }
 } else {
-  $latex = 'platex -synctex=1';
-  $bibtex = 'pbibtex';
-  $makeindex = 'mendex';
+  $latex = 'platex %O -synctex=1 %S';
+  $bibtex = 'pbibtex %O %B';
+  $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -153,9 +153,9 @@ latexmk -gg -pdfps hoge.tex
 ```
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
-  $latex = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode';
-  $bibtex = 'pbibtex -kanji=utf8';
-  $makeindex = 'mendex -U';
+  $latex = 'platex %O -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode %S';
+  $bibtex = 'pbibtex %O -kanji=utf8 %B';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -168,9 +168,9 @@ if ($^O eq 'MSWin32') {
     $pdf_previewer = 'texworks';
   }
 } else {
-  $latex = 'platex -synctex=1 -interaction=nonstopmode';
-  $bibtex = 'pbibtex';
-  $makeindex = 'mendex';
+  $latex = 'platex %O -synctex=1 -interaction=nonstopmode %S';
+  $bibtex = 'pbibtex %O %B';
+  $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -g > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -196,9 +196,9 @@ latexmk -gg -pdfps hoge.tex
 ```
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
-  $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1';
-  $bibtex = 'upbibtex';
-  $makeindex = 'mendex -U';
+  $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -211,9 +211,9 @@ if ($^O eq 'MSWin32') {
     $pdf_previewer = 'texworks';
   }
 } else {
-  $latex = 'uplatex -synctex=1';
-  $bibtex = 'upbibtex';
-  $makeindex = 'mendex';
+  $latex = 'uplatex %O -synctex=1 %S';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -239,9 +239,9 @@ latexmk -gg -pdfps hoge.tex
 ```
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
-  $latex = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode';
-  $bibtex = 'upbibtex';
-  $makeindex = 'mendex -U';
+  $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -254,9 +254,9 @@ if ($^O eq 'MSWin32') {
     $pdf_previewer = 'texworks';
   }
 } else {
-  $latex = 'uplatex -synctex=1 -interaction=nonstopmode';
-  $bibtex = 'upbibtex';
-  $makeindex = 'mendex';
+  $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -285,6 +285,7 @@ latexmk -C
 
 - [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
 - [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
+- [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
