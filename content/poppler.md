@@ -32,7 +32,7 @@ poppler は
 
 ### License {#i424d155}
 
-[GPLv2](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING), [GPLv3](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING3)
+[GPLv3](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING3), [GPLv2](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING)
 
 ### リリース情報 {#ha3b28ab}
 
@@ -185,9 +185,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.11.1.tar.gz
-$ tar xvf cmake-2.8.11.1.tar.gz
-$ pushd cmake-2.8.11.1
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.11.2.tar.gz
+$ tar xvf cmake-2.8.11.2.tar.gz
+$ pushd cmake-2.8.11.2
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -318,6 +318,8 @@ $ popd
 ```
 
 - [OpenJPEG](http://www.openjpeg.org/) をインストールします．
+
+OpenJPEG 2.0.0 以降を使用して poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
 
 <!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
 <!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
@@ -813,33 +815,32 @@ $ popd
 - [gettext](http://www.gnu.org/software/gettext/) をインストールします．
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.2.1.tar.gz
-$ tar xvf gettext-0.18.2.1.tar.gz
-$ pushd gettext-0.18.2.1
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.tar.gz
+$ tar xvf gettext-0.18.3.tar.gz
+$ pushd gettext-0.18.3
 $ ./configure --prefix=/mingw
 ```
 
-gettext-tools/gnulib-lib/wctype.in.h の344行目から360行目までをコメントアウトします．
-
-```
-//_GL_WCTYPE_INLINE wint_t
-//rpl_towlower (wint_t wc)
-//{
-//  return (wint_t) (wchar_t) towlower (wc);
-//}
-//#  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
-//#   define towlower rpl_towlower
-//#  endif
-// 
-//_GL_WCTYPE_INLINE wint_t
-//rpl_towupper (wint_t wc)
-//{
-//  return (wint_t) (wchar_t) towupper (wc);
-//}
-//#  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
-//#   define towupper rpl_towupper
-//#  endif
-```
+<!--  -->
+<!-- gettext-tools/gnulib-lib/wctype.in.h の344行目から360行目までをコメントアウトします． -->
+<!-- //_GL_WCTYPE_INLINE wint_t -->
+<!-- //rpl_towlower (wint_t wc) -->
+<!-- //{ -->
+<!-- //  return (wint_t) (wchar_t) towlower (wc); -->
+<!-- //} -->
+<!-- //#  if !(defined __cplusplus && defined GNULIB_NAMESPACE) -->
+<!-- //#   define towlower rpl_towlower -->
+<!-- //#  endif -->
+<!-- //  -->
+<!-- //_GL_WCTYPE_INLINE wint_t -->
+<!-- //rpl_towupper (wint_t wc) -->
+<!-- //{ -->
+<!-- //  return (wint_t) (wchar_t) towupper (wc); -->
+<!-- //} -->
+<!-- //#  if !(defined __cplusplus && defined GNULIB_NAMESPACE) -->
+<!-- //#   define towupper rpl_towupper -->
+<!-- //#  endif -->
+<!--  -->
 
 ```
 $ make
