@@ -321,6 +321,8 @@ $ popd
 
 OpenJPEG 2.0.0 以降を使用して poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
 
+OpenJPEG 最新版の場合
+
 <!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
 <!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
 <!-- $ pushd openjpeg-2.0.0 -->
@@ -339,6 +341,18 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS
 $ make
 $ make install
 $ popd
+$ popd
+```
+
+OpenJPEG 1.5.1 の場合
+
+```
+$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
+$ tar xvf openjpeg-1.5.1.tar.gz
+$ pushd openjpeg-1.5.1
+$ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
+$ make
+$ make install
 $ popd
 ```
 
