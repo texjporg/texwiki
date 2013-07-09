@@ -390,6 +390,45 @@ ps2pdf.bat "%~n1.ps"
 
 ***
 
+#### Latexmk {#u0fa8c19}
+
+Latexmk で PDF ファイルを作成します．
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfpLaTeX {#ub925a5a}
 
 Latexmk で PDF ファイルを作成します．
@@ -948,6 +987,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 ConTeXt (LuaTeX)<br>
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
+　　　　 Latexmk<br>
 　　　　 Latexmk-pdfpLaTeX<br>
 　　　　 Latexmk-pdfpLaTeX2<br>
 　　　　 Latexmk-pdfupLaTeX<br>
