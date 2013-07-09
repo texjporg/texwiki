@@ -305,12 +305,12 @@ $ popd
 
 - [Little CMS](http://www.littlecms.com/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.4/lcms2-2.4.tar.gz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.5/lcms2-2.5.tar.gz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.4.tar.gz
-$ tar xvf lcms2-2.4.tar.gz
-$ pushd lcms2-2.4
+$ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.5.tar.gz
+$ tar xvf lcms2-2.5.tar.gz
+$ pushd lcms2-2.5
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -791,9 +791,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.36/glib-2.36.3.tar.xz
-$ tar xvf glib-2.36.3.tar.xz
-$ pushd glib-2.36.3
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.3.tar.xz
+$ tar xvf glib-2.37.3.tar.xz
+$ pushd glib-2.37.3
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
@@ -1019,6 +1019,9 @@ $ cp -pR poppler-data-0.4.6 /mingw/share/poppler
 ## 関連リンク {#m3ac74dd}
 
 - [Poppler: Displaying PDF Files with Qt](http://doc.qt.digia.com/qq/qq27-poppler.html)
+- [Poppler - DenkiYagi](http://terurou.hateblo.jp/category/Poppler)
+    - [Poppler 0.22.5の.NETバインディングを作成する](http://terurou.hateblo.jp/entry/2013/07/09/160937)
+    - [MinGWでPoppler 0.22.5をビルド](http://terurou.hateblo.jp/entry/2013/07/09/160937)
 - [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [Popplerについてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130112/1358002227)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
