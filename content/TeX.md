@@ -23,6 +23,7 @@ pukiwiki: "TeX"
 - [TeXでナベアツ](http://note.golden-lucky.net/2011/08/tex_16.html)
 - [TeXで「最後のコマンド」だけ挙動を変える（ワンパス版）](http://note.golden-lucky.net/2011/08/tex.html)
 - [TeX で Brainfuck](http://note.golden-lucky.net/2011/01/tex-brainfuck.html)
+- [TeXで使用しているハイフネーションアルゴリズムについて](http://blog.field-works.co.jp/post/20896179728/tex)
 - [TeXでFizzBuzz](http://note.golden-lucky.net/2010/03/texfizzbuzz.html)
 - [TeXのマクロでFizzBuzz](http://hogespace.hatenablog.jp/entry/2012/02/20/133731)
 - [TeXでとある魔術のロゴ作成](http://d.hatena.ne.jp/itchyny/20120402/1333337995)
