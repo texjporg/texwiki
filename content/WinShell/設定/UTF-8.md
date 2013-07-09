@@ -134,7 +134,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex -kanji=utf8 -no-guess-input-enc -synctex=1/""" -e """$bibtex=q/pbibtex -kanji=utf8/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 $src/""" -e """$bibtex=q/pbibtex $opt -kanji=utf8 $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -167,7 +167,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/""" -e """$bibtex=q/upbibtex/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -705,7 +705,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　XeLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 9　　　　　　　　　　　　　　</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Tool 10<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex -kanji=utf8 -no-guess-input-enc -synctex=1/""" -e """$bibtex=q/pbibtex -kanji=utf8/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 $src/""" -e """$bibtex=q/pbibtex $opt -kanji=utf8 $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -740,7 +740,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　XeLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Latexmk-pdfpLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">Tool 10　　　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex -kanji=utf8 -no-guess-input-enc -synctex=1/""" -e """$bibtex=q/upbibtex/""" -e """$makeindex=q/mendex -U/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c powershell.exe -Command "&amp; {$s = """%s"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
