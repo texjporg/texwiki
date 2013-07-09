@@ -322,6 +322,35 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
+#### Latexmk {#w19207d5}
+
+タイプセットの方法を設定します．
+
+***
+
+<br>
+
+　　名前:　　　　<ins>Latexmk</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfpLaTeX {#mef164a7}
 
 タイプセットの方法を設定します．
