@@ -720,7 +720,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 #### SumatraPDF を前面に表示したくない場合 {#w7121c3e}
 
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
 ***
 
