@@ -16,6 +16,15 @@ pukiwiki: "MuPDF"
 ## MuPDF とは {#u255891c}
 
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．<br>
+MuPDF は<br>
+
+<table>
+<tbody>
+<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/SumatraPDF/">SumatraPDF</a></td></tr>
+</tbody>
+</table>
+
+などで使用されています．<br>
 
 - [MuPDF](http://www.mupdf.com/)
 
@@ -140,4 +149,7 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 
 ## 関連リンク {#u27a744e}
 
+- [MuPDF - DenkiYagi](http://terurou.hateblo.jp/category/MuPDF)
+    - [MuPDF conveter（MuPDFLib）でPDFを画像に変換してみる](http://terurou.hateblo.jp/entry/2013/07/10/172026)
+- [MuPDF 1.2 ライブラリーの C++ ラッパー](http://www.rvf-rc45.net/wordpress/?p=628)
 - [MuPDF for Windows 9x](http://d.hatena.ne.jp/lukewarm/20110521#p1)
