@@ -100,6 +100,22 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 [チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
 
+#### 20130708.0, 20130711.0 では非埋め込みの明朝体が正常に表示されない → lltjdefs.sty, ltj-plain.sty の誤植が原因 {#k84a4a58}
+
+[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) にも記述がありますが，20130708.0, 20130711.0 では，lltjdefs.sty, ltj-plain.sty において
+
+```
+\def\ltj@stdmcfont{psft:Ryumin-Light}
+```
+
+となっているべきところが
+
+```
+\def\ltj@stdmcfont{psft:Ryumin-Right}
+```
+
+となっているという誤植があります (2013/07/11)．
+
 #### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
 
 LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
@@ -182,6 +198,8 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 ```
 
 のように呼び出すと、platex 等で japanese を呼び出したのと同じように日本語環境を使うことができます。
+
+（2013/07/11 追記）TeX Live 2013 では，japanese.ldf の漢字コードは ISO-2022-JP になっているので，LuaTeX-ja で扱うには UTF-8 に変換する必要があります．また，（少なくとも）20130515.0 以降では，命令に日本語文字を使えるようになっているので，\西暦 → \Seireki 等の書き換えは不要です．
 
 ### polyglossia {#vf242886}
 
