@@ -666,7 +666,7 @@ evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 #### fwdevince {#s41c2ddc}
 
-fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
 
