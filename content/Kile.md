@@ -256,7 +256,7 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ### forward search {#ob62a5ad}
 
-fwdevince は [Evince - TeX Wiki#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．
+fwdevince は Evince/fwdevince の fwdevince を使用します．
 
 ***
 
