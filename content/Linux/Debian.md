@@ -45,7 +45,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Linux](/Linux/#texlive2013)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
-- [TeX Live 2013 released](http://www.preining.info/blog/2013/06/tex-live-2013-released/)
+- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
 TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
