@@ -90,9 +90,9 @@ TeX Live 2013/Debian をインストールする場合は texlive-full を指定
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
 
-shell_escape_commands が以下のように記述されていると思います．
+shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -103,7 +103,8 @@ mpost,\
 repstopdf,\
 ```
 
-shell_escape_commands を以下のように編集して保存します．
+デフォルトでは extractbb が自動実行されません．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
