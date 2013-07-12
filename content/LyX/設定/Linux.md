@@ -17,7 +17,7 @@ pukiwiki: "LyX/設定/Linux"
 
 #### [Evince](/Evince/) の場合 {#ebd984f2}
 
-PDFコマンドは [Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
+PDFコマンドは Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
 
