@@ -47,15 +47,34 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 #### Fedora 20, 19 {#u01e1fc4}
 
-yum で texlive-scheme-full を指定すれば TeX Live 2013 をインストールできます．<br>
+yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013 をインストールできます．<br>
 
 ```
-$ sudo yum install texlive-scheme-full
+$ sudo yum install texlive-scheme-full perl-Digest-MD5
+```
+
+perl-Digest-MD5 をインストールしないと kanji-config-updmap でエラーが発生します．<br>
+
+```
+$ kanji-config-updmap ipaex
+Setting up ... ptex-ipaex.map
+Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+Compilation failed in require at /usr/bin/updmap line 42.
+BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
+Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+Compilation failed in require at /usr/bin/updmap line 42.
+BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
+Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
+Compilation failed in require at /usr/bin/updmap line 42.
+BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
 ```
 
 /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
 
-shell_escape_commands が以下のように記述されていると思います．
+shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -66,7 +85,8 @@ mpost,\
 repstopdf,\
 ```
 
-shell_escape_commands を以下のように編集して保存します．
+デフォルトでは extractbb が自動実行されません．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
@@ -90,6 +110,15 @@ $ sudo yum install nkf
 ```
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
+
+TeX Live 2013 では kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
 
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
@@ -138,7 +167,7 @@ $ sudo yum install ruby
 ## [Perl](/Perl/) {#m7e04372}
 
 ```
-$ sudo yum install perl
+$ sudo yum install perl perl-Digest-MD5
 ```
 
 ## [Evince](/Evince/) {#na36e8b6}
@@ -180,7 +209,7 @@ $ sudo yum install mupdf
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
 
-- [Install Adobe Reader on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
+- [http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
 
 ```
 $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
