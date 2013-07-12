@@ -59,7 +59,7 @@ Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレー
 Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
 
 - [CentOS 6.xにAdobe Readerインストール設定（yum）](http://boota.mydns.jp/blog/?p=2028)
-- [Install Adobe Reader on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
+- [http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
 
 ```
 $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
