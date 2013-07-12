@@ -250,7 +250,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 
 ***
 
-#### texmf.cnf の編集 {#uc813f02}
+#### extractbb の追加 {#uc813f02}
 
 /usr/share/texmf-dist/web2c/texmf.cnf を編集します．
 
@@ -275,6 +275,8 @@ makeindex,mendex,texindy,\
 mpost,pmpost,\
 repstopdf,epspdf,extractbb,\
 ```
+
+#### 文字コードの自動判別 {#hab7fdc9}
 
 文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
 
