@@ -17,9 +17,11 @@ TeX Live 2013 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk
 ## xdvik とは {#s47919ef}
 
 xdvik は DVI プレビューアです．<br>
+xdvi を Kpathsea ライブラリに対応させたものです．<br>
 [CJK package](/LaTeX-CJK/) を使用すれば xdvik でも日本語が表示できます．<br>
 
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
+- [xdvi](http://math.berkeley.edu/~vojta/xdvi.html)
 
 ### 動作環境 {#y90c90d1}
 
@@ -64,6 +66,8 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 ### インストール {#cce5d1ed}
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
+
+- [CentOS 6.4 + TeX Live 2013 において pxdvi で日本語を表示する](http://granular.blog39.fc2.com/blog-entry-69.html)
 
 <!-- ***TeX Live 2013 の場合 [#c75bb558] -->
 <!--  -->
