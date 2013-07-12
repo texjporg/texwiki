@@ -117,6 +117,25 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
+pxdvi を使用する場合は xdvik-ja をインストールします．<br>
+
+```
+$ sudo apt-get install xdvik-ja
+```
+
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+% pxdvi
+XDVIINPUTS = /etc/texmf/xdvi
+```
+
+platex で処理された DVI ファイルが表示できます．<br>
+
+```
+$ xdvi -watchfile 1 hoge.dvi &
+```
+
 ## [Python](/Python/) <a id="python"></a> {#df01e340}
 
 ```
