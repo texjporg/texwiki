@@ -94,7 +94,7 @@ $ sudo pacman -S texlive-langcjk texlive-most
 $ sudo vi /usr/share/texmf-dist/web2c/texmf.cnf
 ```
 
-shell_escape_commands が以下のように記述されていると思います．
+shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -105,7 +105,8 @@ mpost,\
 repstopdf,\
 ```
 
-shell_escape_commands を以下のように編集して保存します．
+デフォルトでは extractbb が自動実行されません．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
