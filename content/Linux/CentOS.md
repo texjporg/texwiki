@@ -33,6 +33,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 ### TeX Live 2013 {#jc67c0a8}
 
+- [CentOS 6.4 + TeX Live 2013 において pxdvi で日本語を表示する](http://granular.blog39.fc2.com/blog-entry-69.html)
 - [TeXLive2013へのアップグレード](http://anastashia.blog.shinobi.jp/tex/upgrade_to_texlive2013)
 - [Linux](/Linux/#texlive2013)
 
