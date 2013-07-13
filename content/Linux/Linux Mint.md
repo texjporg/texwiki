@@ -163,6 +163,12 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ xdvi -watchfile 1 hoge.dvi &
 ```
 
+または<br>
+
+```
+$ pxdvi-xaw -watchfile 1 hoge.dvi &
+```
+
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
 ```
