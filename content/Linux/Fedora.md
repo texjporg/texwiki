@@ -34,8 +34,8 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
-- [http://jnovy.fedorapeople.org/texlive/](http://jnovy.fedorapeople.org/texlive/)
 - [http://kojipkgs.fedoraproject.org/packages/texlive/](http://kojipkgs.fedoraproject.org/packages/texlive/)
+    <!-- -http://jnovy.fedorapeople.org/texlive/ -->
     <!-- -[[The TeXLive Archives:http://www.linux.cz/pipermail/texlive/]] -->
     <!-- -[[[TeX] - Luoyang Press:http://d.hatena.ne.jp/ratbeta/searchdiary?word=%2A%5BTeX%5D]] -->
 
@@ -43,11 +43,11 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 - [Linux](/Linux/#texlive2013)
 
-### TeX Live 2013 (Fedora) <a id="texlive2013fedora"></a> {#n44a0820}
+### TeX Live 2013/Fedora <a id="texlive2013fedora"></a> {#n44a0820}
 
 #### Fedora 20, 19 {#u01e1fc4}
 
-yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013 をインストールできます．<br>
+yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013/Fedora をインストールできます．<br>
 
 ```
 $ sudo yum install texlive-scheme-full perl-Digest-MD5
@@ -126,7 +126,7 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-pxdvi をインストールする場合は 64bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から texlive-2012-4vl7.x86_64.rpm をダウンロード・展開して適切な設定をすれば使用可能になります．<br>
+pxdvi は 64bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から texlive-2012-4vl7.x86_64.rpm をダウンロード・展開して適切な設定をすれば使用可能になります．<br>
 
 ```
 $ mkdir texlive
