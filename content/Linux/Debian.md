@@ -112,6 +112,15 @@ $ sudo apt-get install nkf
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
+TeX Live 2013 では kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
