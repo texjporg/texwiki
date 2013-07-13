@@ -14,7 +14,7 @@ TeX Live 2013 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## xdvik とは {#s47919ef}
+## xdvik とは <a id="xdvik"></a> {#s47919ef}
 
 xdvik は DVI プレビューアです．<br>
 xdvi を Kpathsea ライブラリに対応させたものです．<br>
@@ -46,7 +46,7 @@ xdvik 22.86 は TeX Live 2013 に含まれています．
 $ xdvi -watchfile 1 hoge.dvi &
 ```
 
-## pxdvi とは {#s1b173bb}
+## pxdvi とは <a id="pxdvi"></a> {#s1b173bb}
 
 pxdvi は pTeX で出力された DVI ファイルに対応した DVI プレビューアです．<br>
 pxdvi は xdvik を pTeX に対応させたものです．<br>
