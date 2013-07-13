@@ -152,6 +152,12 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
+または<br>
+
+```
+$ pxdvi-motif -watchfile 1 hoge.dvi &
+```
+
 ## [Python](/Python/) {#z2c220a1}
 
 ```
