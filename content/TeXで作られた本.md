@@ -68,7 +68,7 @@ TeX で組まれていますが，それ以外のもの）：
 
 - 力武健次『インターネットコミュニティ —国際ネットワーク最前線—』（オーム社，1994年）
 - 坂梨隆三，小木曽智信，酒井わか奈，村上謙 編『[好色伝受—本文・総索引・研究](http://www.bookmailclub.com/bmc/reader/search/?.command=detail&book_id=1553)』（笠間書院，2000年）
-- [フリー教材開発コミュニティー エフテキスト](http://www.ftext.org/)……TeX で作成された数学の教科書。クリエイティブ・コモンズライセンスでオンライン配布されている
+- [フリー教材開発コミュニティFTEXT](http://www.ftext.org/)……TeX で作成された数学の教科書。クリエイティブ・コモンズライセンスでオンライン配布されている
 - 太郎丸博著『人文・社会科学のためのカテゴリカル・データ解析入門』（ナカニシヤ出版、2005年）
 - 太郎丸博編『フリーターとニートの社会学』（世界思想社, 2006年）
 - 戸川博. 『個人出版社への道』. 2007年7月10日発売. 未来舎. ISBN: 978-4990348625 ……[個人出版コミュニティ](http://bookproduction.blog69.fc2.com/)の方が実際にLaTeXで製作、自費出版（Amazon委託販売）している書籍のようです
@@ -154,23 +154,23 @@ Date: 5 Nov 2002 11:11:53 -0800
 
 その答えから：
 
-- [Lettering Art in Modern Use](http://members.aol.com/willadams/) (William Adams) の Portfolio
-    の The Book of Tea など。
+- [Lettering Art in Modern Use](http://mysite.verizon.net/william_franklin_adams/) (William Adams) の Portfolio
+    の [The Book of Tea](https://www.wikipedia.org/wiki/The_Book_of_Tea) ([PDF](http://mysite.verizon.net/william_franklin_adams/portfolio/typography/thebookoftea.pdf)) など。
 
-- [Bodhisattvamaarga in "Sik.saasamuccaya](http://homepages.comnet.co.nz/~r-mahoney/ma_thesis/ma_thesis.html)
+- [Bodhisattvamaarga in "Sik.saasamuccaya \[Intetnet Archive\]](http://web.archive.org/web/20041218020042/http://homepages.comnet.co.nz/~r-mahoney/ma_thesis/ma_thesis.html)
 - The Memoir Class ([CTAN:macros/latex/contrib/memoir/](https://mirror.ctan.org/macros/latex/contrib/memoir/)) のドキュメント
-- [Beyond Words--Life Cast](http://www.beyondword.com/books/lc.html)
-    （[サンプルページ](http://www.bluesky.com/mask/mask.gif)）
+- [Beyond Words--Life Cast \[Internet Archive\]](http://web.archive.org/web/20041013181653/http://www.beyondword.com/books/lc.html)
+    （[サンプルページ \[Internet Archive\]](http://web.archive.org/web/20021219030553/http://bluesky.com/mask/mask.gif)）
 
 - 最近買った Latin poetry に関する Cambridge University Press の3冊の本は LaTeX で作られていたがたいへん美しい。
-- [The Caucasus Early Warning Network](http://www.fewer.org/caucasus/)
-    の [Conflict Prevention in the Caucasus: Actors, Response Capacities, and Planning Processes (February 2002)](http://www.fewer.org/caucasus/studcap.pdf) (Plain TeX)
-    (Typeset by [TeXframe Design](http://www.texframe.co.uk/))
+- [The Caucasus Early Warning Network \[Internet Archive\]](http://web.archive.org/web/20040604154429/http://www.fewer.org/caucasus/)
+    の [Conflict Prevention in the Caucasus: Actors, Response Capacities, and Planning Processes (February 2002) \[Internet Archive\]](http://web.archive.org/web/20031209151619/http://www.fewer.org/caucasus/studcap.pdf) (Plain TeX)
+    (Typeset by [TeXframe Design \[Internet Archive\]](http://web.archive.org/web/20050126003050/http://www.texframe.co.uk/))
 
 - [Simple Nature](http://www.lightandmatter.com/area1sn.html) (with LaTeX source)
 - [The Computational Beauty of Nature](http://www.amazon.com/exec/obidos/tg/detail/-/0262561271/) (Gary William Flake)
 - [Algebraic Topology](http://www.math.cornell.edu/~hatcher/AT/AT.pdf) (Allen Hatcher)
-- [Interactive Composition Corporation](http://www.iccorp.com/) のもの。
+- [Interactive Composition Corporation](http://www.iccorp.com/typeset.html) のもの。
 - [Indian TeX Users Group](http://www.tug.org.in/)
     の [Online tutorials for LaTeX](http://www.tug.org.in/tutorials.html)
     の Introduction など
