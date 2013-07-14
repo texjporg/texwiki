@@ -7,15 +7,23 @@ pukiwiki: "Linux/CentOS"
 
 # Linux/CentOS
 
-[Linux](/Linux/) > CentOS/Scientific Linux (SL)
+[Linux](/Linux/) > Red Hat Enterprise Linux (RHEL)/CentOS/Scientific Linux (SL)
 
-## [CentOS](http://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
+## [Red Hat Enterprise Linux (RHEL)](http://www.redhat.com/products/enterprise-linux/)/[CentOS](http://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scientific_Linux_logo_and_wordmark.svg/200px-Scientific_Linux_logo_and_wordmark.svg.png" alt="Scientific Linux (SL)" style="float:right">
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a9/CentOS_full_logo.svg/500px-CentOS_full_logo.svg.png" alt="CentOS" style="float:right">
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/6/6c/RedHat.svg/500px-RedHat.svg.png" alt="Red Hat Enterprise Linux (RHEL)" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Red Hat Enterprise Linux (RHEL) とは {#y9ceb9fc}
+
+Red Hat Enterprise Linux (RHEL) は Red Hat が開発・販売している Linux ディストリビューションです．<br>
+
+- [Red Hat Enterprise Linux](http://www.redhat.com/products/enterprise-linux/)
 
 ## CentOS とは {#hc0603c9}
 
