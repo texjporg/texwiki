@@ -191,6 +191,10 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
+pxdvi は tlptexliveリポジトリの pxdvi-xaw と VineSeed の pxdvi-motif が TeX Live 2013/Arch Linux でも動作しました．<br>
+pxdvi が必要な人は pxdvi をダウンロードして適切な場所に配置して適切な設定をしてください．<br>
+rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．<br>
+
 ## [Python](/Python/) {#i5b0d02d}
 
 ```
