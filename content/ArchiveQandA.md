@@ -23,9 +23,9 @@ pukiwiki: "ArchiveQandA"
 - MiKTeX であれば texdoc -l &lt;パッケージ名> と打つ<br>
     (例) texdoc -l hyperref
 
-- TeXworks や dviout など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
+- TeXworks など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-### TeXworksのエラーメッセージ {#g1eb4223}
+### TeXworks のエラーメッセージ {#g1eb4223}
 
 - エラーが発生した場合は，エラーメッセージをよく読んで対処してください。
 
@@ -33,9 +33,15 @@ pukiwiki: "ArchiveQandA"
 
     よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
 
-### dvioutのエラーメッセージ {#lb61846e}
+### dviout のエラーメッセージ {#lb61846e}
 
-- dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。
+dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
+TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
+
+### xdvi のエラーメッセージ {#x72af3e8}
+
+xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), PdfViewer, [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
+TeX Live 2013 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ### TeX本体のエラーメッセージ {#s54a975c}
 
