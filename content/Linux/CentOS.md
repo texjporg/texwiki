@@ -31,11 +31,20 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 - [CentOS](http://www.centos.org/)
 
+### ミラーサイト {#tf7026af}
+
+- [the status of CentOS mirrors#jp](http://mirror-status.centos.org/#jp)
+- [http://www.centos.org/modules/tinycontent/index.php?id=32](http://www.centos.org/modules/tinycontent/index.php?id=32)
+
 ## Scientific Linux (SL) とは {#d9e440c7}
 
 Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．<br>
 
 - [Scientific Linux (SL)](http://www.scientificlinux.org/)
+
+### ミラーサイト {#vbf06ac5}
+
+- [Scientific Linux - Public Mirrors](http://www.scientificlinux.org/download/mirrors)
 
 ## TeX Live {#od75da14}
 
