@@ -807,9 +807,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.3.tar.xz
-$ tar xvf glib-2.37.3.tar.xz
-$ pushd glib-2.37.3
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.4.tar.xz
+$ tar xvf glib-2.37.4.tar.xz
+$ pushd glib-2.37.4
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
