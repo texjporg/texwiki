@@ -81,6 +81,8 @@ $ yaourt -S texlive-dummy
 
 ### TeX Live 2013/Arch Linux {#y18009db}
 
+TeX Live 2012/Arch Linux をインストールしている場合は TeX Live 2012/Arch Linux をアンインストールしてから TeX Live 2013/Arch Linux をインストールしてください． (→ [TeXLive 2013 update may require user intervention](https://www.archlinux.org/news/texlive-2013-update-may-require-user-intervention/))<br>
+
 texlive-langcjk, texlive-most をインストールします．<br>
 
 ```
@@ -158,9 +160,9 @@ ghostscript の Search path を確認します．<br>
 $ gs --help
 ...
 Search path:
-   /usr/share/ghostscript/9.07/Resource/Init :
-   /usr/share/ghostscript/9.07/lib :
-   /usr/share/ghostscript/9.07/Resource/Font :
+   /usr/share/ghostscript/`gs --version`/Resource/Init :
+   /usr/share/ghostscript/`gs --version`/lib :
+   /usr/share/ghostscript/`gs --version`/Resource/Font :
    /usr/share/ghostscript/fonts : /usr/share/fonts/Type1 : /usr/share/fonts
 
 ```
@@ -191,9 +193,50 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
-pxdvi は tlptexliveリポジトリの pxdvi-xaw と VineSeed の pxdvi-motif が TeX Live 2013/Arch Linux でも動作しました．<br>
-pxdvi が必要な人は pxdvi をダウンロードして適切な場所に配置して適切な設定をしてください．<br>
-rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．<br>
+pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64bit 版の TeX Live 2013/Arch Linux でも動作します．<br>
+pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して TEXFONTMAPS と &#x58;DVIINPUTS に適切な値を設定してください．<br>
+
+```
+$ mkdir pxdvi
+$ cd pxdvi
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz
+$ tar xvf pxdvi.tar.xz
+$ tar xvf pxdvi.x86_64-linux.tar.xz
+$ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin
+$ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi
+$ sudo cp -pR texmf/xdvi /usr/share/texmf-dist/pxdvi
+$ sudo cp -pR texmf/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
+$ sudo mkdir -p /usr/share/texmf-local/web2c
+$ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
+```
+
+/usr/share/texmf-local/web2c/texmf.cnf の TEXFONTMAPS を修正します．<br>
+
+```
+% font name map files.  This isn't just fonts/map// because ConTeXt
+% wants support for having files with the same name in the different
+% subdirs.  Maybe if the programs ever get unified to accepting the same
+% map file syntax the definition can be simplified again.
+%TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//
+TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/share/texmf-dist/fonts/map/pxdvi
+```
+
+/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+
+```
+% pxdvi
+XDVIINPUTS = /usr/share/texmf-dist/pxdvi
+```
+
+platex で処理された DVI ファイルが表示できます．<br>
+
+```
+$ pxdvi -watchfile 1 hoge.dvi &
+```
+
+<!-- VineSeed の pxdvi-motif も TeX Live 2013/Arch Linux でも動作しました．~ -->
+<!-- rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．~ -->
 
 ## [Python](/Python/) {#i5b0d02d}
 
