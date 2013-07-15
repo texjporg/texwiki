@@ -126,11 +126,11 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-pxdvi は 64bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から texlive-2012-4vl7.x86_64.rpm をダウンロード・展開して適切な設定をすれば使用可能になります．<br>
+pxdvi は 64bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から texlive-2012-4vl7.x86_64.rpm をダウンロード・展開して pxdvi-motif, pxdvi.cfg などを適切な場所に配置して &#x58;DVIINPUTS に適切な値を設定すれば使用可能になります．<br>
 
 ```
-$ mkdir texlive
-$ cd texlive
+$ mkdir pxdvi
+$ cd pxdvi
 $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/texlive-2012-4vl7.x86_64.rpm
 $ rpm2cpio texlive-2012-4vl7.x86_64.rpm | cpio -id
 $ sudo cp -p usr/bin/pxdvi-motif /usr/bin
@@ -152,11 +152,36 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
-または<br>
-
-```
-$ pxdvi-motif -watchfile 1 hoge.dvi &
-```
+<!-- $ mkdir pxdvi -->
+<!-- $ cd pxdvi -->
+<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
+<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
+<!-- $ tar xvf pxdvi.tar.xz -->
+<!-- $ tar xvf pxdvi.x86_64-linux.tar.xz -->
+<!-- $ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin -->
+<!-- $ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi -->
+<!-- $ sudo cp -pR texmf/xdvi /usr/share/texlive/texmf-dist/pxdvi -->
+<!-- $ sudo cp -pR texmf/fonts/map/pxdvi /usr/share/texlive/texmf-dist/fonts/map/pxdvi -->
+<!-- $ sudo mkdir -p /usr/share/texmf-local/web2c -->
+<!-- $ sudo cp /usr/share/texlive/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c -->
+<!--  -->
+<!-- /usr/share/texmf-local/web2c/texmf.cnf の TEXFONTMAPS を修正します．~ -->
+<!--  -->
+<!-- % font name map files.  This isn't just fonts/map// because ConTeXt -->
+<!-- % wants support for having files with the same name in the different -->
+<!-- % subdirs.  Maybe if the programs ever get unified to accepting the same -->
+<!-- % map file syntax the definition can be simplified again. -->
+<!-- %TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}// -->
+<!-- TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/share/texlive/texmf-dist/fonts/map/pxdvi -->
+<!--  -->
+<!-- /usr/share/texlive/texmf-dist/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．~ -->
+<!--  -->
+<!-- % pxdvi -->
+<!-- XDVIINPUTS = /usr/share/texlive/texmf-dist/pxdvi -->
+<!--  -->
+<!-- platex で処理された DVI ファイルが表示できます．~ -->
+<!--  -->
+<!-- $ pxdvi -watchfile 1 hoge.dvi & -->
 
 ## [Python](/Python/) {#z2c220a1}
 
