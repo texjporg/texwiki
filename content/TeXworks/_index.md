@@ -40,7 +40,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows (8, 7, Vista, XP)，OS X, GNU/Linux で利用できます．<br>
+Microsoft Windows (8.1, 8, 7, Vista, XP)，OS X, GNU/Linux で利用できます．<br>
 TeXworks は [Qt](http://qt-project.org/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5.0/qtdoc/platform-details.html) で動作します．<br>
 
 ### License {#lccd03cb}
@@ -69,7 +69,7 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, poppler 0.22.1 を使用して
 > <table>
 > <tbody>
 > <tr><td><a href="http://www.tug.org/texworks/img/texworks-linux.png"><img src="http://www.tug.org/texworks/img/texworks-linux-thumb.png" alt="TeXworks on GNU/Linux (Ubuntu)"></a></td><td><a href="http://www.tug.org/texworks/img/texworks-win7.png"><img src="http://www.tug.org/texworks/img/texworks-win7-thumb.png" alt="TeXworks on Windows 7"></a></td><td><a href="http://www.tug.org/texworks/img/texworks-osx.png"><img src="http://www.tug.org/texworks/img/texworks-osx-thumb.png" alt="TeXworks on OS X"></a></td></tr>
-> <tr><td style="text-align:center">TeXworks on GNU/Linux (Ubuntu)</td><td style="text-align:center">TeXworks on Windows 7</td><td style="text-align:center">TeXworks on OS X</td></tr>
+> <tr><td style="text-align:center">TeXworks on GNU/Linux</td><td style="text-align:center">TeXworks on Windows 7</td><td style="text-align:center">TeXworks on OS X</td></tr>
 > </tbody>
 > </table>
 >
@@ -391,9 +391,9 @@ nkf やメモ帳以外の変換ツールを使用したい場合は [KanjiTransl
 
 Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
 
-### TeX Live 2013 の場合 {#aa8923ee}
+### TeX Live の場合 {#aa8923ee}
 
-IPAexフォントを埋め込む場合はコマンド プロンプトから
+TeX Live 2013 以降で IPAexフォントを埋め込む場合はコマンド プロンプトから
 
 ```
 kanji-config-updmap ipaex
