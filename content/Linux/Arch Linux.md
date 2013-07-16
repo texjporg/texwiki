@@ -21,6 +21,15 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 
 - [Arch Linux](http://www.archlinux.org/)
 
+### ミラーサイト {#z011535f}
+
+- [Mirrors (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Mirrors_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+- [Pacman Mirrorlist Generator](https://www.archlinux.org/mirrorlist/)
+- [http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/](http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/)
+- [http://ftp.naist.jp/pub/Linux/archlinux/](http://ftp.naist.jp/pub/Linux/archlinux/)
+- [http://ftp.nara.wide.ad.jp/pub/Linux/archlinux/](http://ftp.nara.wide.ad.jp/pub/Linux/archlinux/)
+- [http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/](http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/)
+
 ## インストール {#ba9eb570}
 
 - [Beginners' Guide (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Beginners%27_Guide_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
