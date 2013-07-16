@@ -235,8 +235,25 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
-VineSeed の pxdvi-motif も pxdvi-xaw と同様に TeX Live 2013/Arch Linux で動作します．<br>
+VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64bit 版の TeX Live 2013/Arch Linux で動作します．<br>
+
+```
+$ mkdir vine
+$ cd vine
+$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/texlive-2012-4vl7.x86_64.rpm
+$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libkpathsea-2012-4vl7.x86_64.rpm
+$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/openMotif-2.3.3-1vl6.x86_64.rpm
+$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libjpeg-turbo-1.2.1-1vl7.x86_64.rpm
+$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libpng-1.2.50-1vl7.x86_64.rpm
+```
+
+rpm2cpio と cpio で rpm ファイルを展開します．<br>
 rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．<br>
+展開したファイルの pxdvi-motif と pxdvi-motif の実行に必要なライブラリを適切な場所に配置すれば pxdvi-motif が実行できます．<br>
+
+```
+$ pxdvi-motif -watchfile 1 hoge.dvi &
+```
 
 ## [Python](/Python/) {#i5b0d02d}
 
