@@ -633,6 +633,35 @@ JPEG 形式の画像を表示するには ifjpegx.spi が必要です。<br>
 展開後 ifjpegx.spi を dviout.exe と同じフォルダーに配置します．<br>
 他のフォルダーに配置する場合は 展開後 \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に ifjpegx.spi が存在するフォルダーを指定してください。<br>
 
+## Warning を無視する {#fa72a1b5}
+
+- hyperrefとdvioutのwarning ([qa:38510](https://okumuralab.org/~okumura/texfaq/qa/38510.html), [qa:38511](https://okumuralab.org/~okumura/texfaq/qa/38511.html), [qa:38512](https://okumuralab.org/~okumura/texfaq/qa/38512.html))
+
+***
+
+<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]</ins></span><strong>\[　Common　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　\]</ins></span><br>
+　　　　Loupe<br>
+　　　Size:<br>
+　　　Scale:<br>
+　　　Speed:<br>
+　　　☐ Edge view<br>
+
+<br>
+
+　　　(g)source special/ignore specials　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　　Save　　　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　Restore　　　　 \]</span><br>
+　　　src:　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+　　　gsrc: <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+　　　isp:　<ins>pdf:</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
+
+***
+
 ## 非対応パッケージ {#pd5bea65}
 
 PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
