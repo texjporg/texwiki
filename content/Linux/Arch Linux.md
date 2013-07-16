@@ -193,7 +193,7 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
-pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64bit 版の TeX Live 2013/Arch Linux でも動作します．<br>
+pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64bit 版の TeX Live 2013/Arch Linux で動作します．<br>
 pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して TEXFONTMAPS と &#x58;DVIINPUTS に適切な値を設定してください．<br>
 
 ```
@@ -235,8 +235,8 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
-<!-- VineSeed の pxdvi-motif も TeX Live 2013/Arch Linux でも動作しました．~ -->
-<!-- rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．~ -->
+VineSeed の pxdvi-motif も pxdvi-xaw と同様に TeX Live 2013/Arch Linux で動作します．<br>
+rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．<br>
 
 ## [Python](/Python/) {#i5b0d02d}
 
