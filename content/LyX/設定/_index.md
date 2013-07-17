@@ -176,7 +176,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 ***
 
 日本語の文書を作成する場合は，言語を日本語に設定します．<br>
-LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) を選択します．<br>
+LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは Japanese (pLaTeX) (UTF8) を選択します．<br>
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
 出力した文書が文字化けしてしまう場合は (u)platex, (u)pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
 
@@ -338,7 +338,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが Japanese (pLaTeX) または Japanese (non-CJK) の場合は既定値は DVI です．<br>
+文字コードが Japanese (pLaTeX) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -354,7 +354,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (ps2pdf) {#s335ea5f}
 
-文字コードが Japanese (pLaTeX) または Japanese (non-CJK) の場合は既定値は DVI です．<br>
+文字コードが Japanese (pLaTeX) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -435,7 +435,7 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 
 #### platex + dvipdfmx の場合 {#j305d328}
 
-文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
 dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -446,7 +446,7 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -462,7 +462,7 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 
 #### platex + dvips + ps2pdf の場合 {#v823b899}
 
-文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
 dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -473,7 +473,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -489,7 +489,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
 dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -500,7 +500,7 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -516,7 +516,7 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 
 #### uplatex + dvips + ps2pdf の場合 {#p803a02d}
 
-文書クラスで article (Japanese New) を選択し，クラスオプションを設定します．<br>
+文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
 dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -527,7 +527,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -543,8 +543,8 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 #### pdflatex の場合 {#n5e2e894}
 
-文書クラスで article を選択し，クラスオプションを設定します．<br>
-pdflatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．<br>
+pdflatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -554,7 +554,7 @@ pdflatex を使用する場合は，グラフィックドライバに pdfTeX を
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[KOMA-Script Article 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -564,14 +564,14 @@ pdflatex を使用する場合は，グラフィックドライバに pdfTeX を
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[pdfTeX　　　　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
 #### lualatex, luajitlatex の場合 {#l1a666c4}
 
-文書クラスで article (Japanese New for LuaTeX) を選択し，クラスオプションを設定します．<br>
-lualatex, luajitlatex を使用する場合は，グラフィックドライバに pdfTeX を指定します．<br>
+文書クラスで Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．<br>
+lualatex, luajitlatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -581,7 +581,7 @@ lualatex, luajitlatex を使用する場合は，グラフィックドライバ�
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New for LuaTeX)　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (ltjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
@@ -591,13 +591,13 @@ lualatex, luajitlatex を使用する場合は，グラフィックドライバ�
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[pdfTeX　　　　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
 #### xelatex の場合 {#ce0db196}
 
-文書クラスで article (Japanese New by ZR) を選択し，クラスオプションを設定します．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
 xelatex を使用する場合は，グラフィックドライバに XeTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -608,7 +608,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[article (Japanese New by ZR)　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
