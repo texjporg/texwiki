@@ -54,6 +54,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 - [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu)
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#ef984d1b}
 
@@ -74,6 +75,14 @@ $ wget http://www.tug.org/texlive/files/debian-control-ex.txt
 ```
 $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
+```
+
+[texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu) を使用する場合は以下のようにします．<br>
+
+```
+$ add-apt-repository ppa:krlmlr/ppa
+$ apt-get update
+$ apt-get install texlive-dummy
 ```
 
 #### LMDE <a id="lmde"></a> {#q5d1118e}
