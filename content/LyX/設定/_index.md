@@ -45,16 +45,17 @@ pukiwiki: "LyX/設定"
 <br>
 
 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span>[^1]<br>
-言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを任意設定に変更し \usepackage{babel} を削除します．<br>
+言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを任意設定に変更し \usepackage{babel} を削除します．<br>
 開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
 終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
-既定小数点(P): 　　<ins>.</ins><br>
+Default Decimal Separator: 　　<ins>.</ins><br>
+長さ単位の既定値(U): <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　　　　　　　　　　 ▼\]</span><br>
 ☐言語を大域的に設定(G)[^6] ← 言語を大域的に設定のチェックをはずします．<br>
 ☑自動開始(B)[^7]<br>
 ☑自動終了(E)[^8]<br>
 ☐外国語をマークする(F)[^9] ← 外国語をマークするのチェックをはずします．<br>
 右から左書きの言語をサポート<br>
-　☑RTLサポートを有効化(P)[^10]<br>
+　☑Enable RTL support[^10]<br>
 　カーソルの動き: <span style="color:#3333CC;">◎</span> 論理的(L)　◯ 視覚的(V)<br>
 
 ***
