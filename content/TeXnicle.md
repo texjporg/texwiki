@@ -115,5 +115,3 @@ Live Update を有効にしておくと、修正するたびに自動でコン�
 ## 関連リンク {#ba4bf8c9}
 
 - [TeXnicleの設定](http://www.sekailab.com/wp/2013/06/27/texnicle-setting/)
-- [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
-- [LaTeX統合エディタ"TeXnicle"で日本語入りBiBTeXを使えるようにする](http://koemu.hatenablog.jp/entry/2013/01/01/195655)
