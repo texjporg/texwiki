@@ -80,9 +80,9 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 [texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu) を使用する場合は以下のようにします．<br>
 
 ```
-$ add-apt-repository ppa:krlmlr/ppa
-$ apt-get update
-$ apt-get install texlive-dummy
+$ sudo add-apt-repository ppa:krlmlr/ppa
+$ sudo apt-get update
+$ sudo apt-get install texlive-dummy
 ```
 
 #### LMDE <a id="lmde"></a> {#q5d1118e}
