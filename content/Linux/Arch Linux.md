@@ -9,7 +9,7 @@ pukiwiki: "Linux/Arch Linux"
 
 [Linux](/Linux/) > Arch Linux
 
-## [Arch Linux](http://www.archlinux.org/) {#e64e7986}
+## [Arch Linux](https://www.archlinux.org/) {#e64e7986}
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Archlinux-official-fullcolour.svg/500px-Archlinux-official-fullcolour.svg.png" alt="Arch Linux" style="float:right">
 
@@ -19,7 +19,7 @@ pukiwiki: "Linux/Arch Linux"
 
 Arch Linux はシンプルで軽量な Linux ディストリビューションです．
 
-- [Arch Linux](http://www.archlinux.org/)
+- [Arch Linux](https://www.archlinux.org/)
 
 ### ミラーサイト {#z011535f}
 
@@ -45,7 +45,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux ?.?.?-?-ARCH (tty1)
+Arch Linux 3.10.1-1-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
