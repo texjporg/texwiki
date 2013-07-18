@@ -336,7 +336,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
@@ -359,7 +360,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
@@ -382,7 +384,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
@@ -407,7 +410,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
@@ -430,7 +434,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
@@ -453,7 +458,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
@@ -478,7 +484,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
@@ -501,7 +508,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
@@ -524,7 +532,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
@@ -549,7 +558,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf5</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
@@ -572,7 +582,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf5</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
@@ -595,7 +606,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
@@ -620,7 +632,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
@@ -643,7 +656,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
@@ -666,7 +680,8 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
+Extensions:　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 短絡キー(U):　　　　　<ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
