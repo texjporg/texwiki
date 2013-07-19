@@ -20,6 +20,10 @@ MiKTeX は TeX のディストリビューションです．<br>
 - [MiKTeX Project Page](http://miktex.org/)
     - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
 
+### 派生版 {#v2c807b8}
+
+- [proTeXt](http://www.tug.org/protext/)
+
 ### 注意事項 {#e87c6af7}
 
 MiKTeX にも platex.exe がありますが，日本語 pLaTeX ではないので日本語を使う場合は [LuaLaTeX](/LuaTeX/) や [XeLaTeX](/XeTeX/) をおすすめします．
