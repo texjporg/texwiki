@@ -206,7 +206,7 @@ $ sudo apt-get install mupdf
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/joc/acrobat/it/news/)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
-Adobe Reader XI は [Wine](http://www.winehq.org/) 上でも動作します．<br>
+Adobe Reader XI は Wine 上でも動作します．<br>
 
 ### Debian GNU/Linux sid x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
 
@@ -303,8 +303,6 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 - [Linux版Adobe Reader 9で日本語が表示できない問題の解決法](http://d.hatena.ne.jp/pyopyopyo/20090726/p1)
 - [Linux用の日本語版Adobe Readerは脆弱性が放置されてるのね](http://linux.ikoinoba.net/index.php?UID=1336916076)
 - [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
-- [WineHQ  - Adobe Reader](http://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
-    - [WineHQ  - Adobe Reader 11.x](http://appdb.winehq.org/objectManager.php?sClass=version&iId=27093)
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#v9a89433}
 
