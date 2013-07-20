@@ -99,7 +99,7 @@ $ sudo cp texmf-dist/web2c/texmf.cnf .
 
 /usr/local/texlive/2013/texmf.cnf を編集します．<br>
 
-TEXFONTMAPS を修正します．<br>
+/usr/local/texlive/2013/texmf.cnf の TEXFONTMAPS を修正します．<br>
 
 ```
 % font name map files.  This isn't just fonts/map// because ConTeXt
@@ -110,11 +110,25 @@ TEXFONTMAPS を修正します．<br>
 TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/local/texlive/2013/texmf/fonts/map/pxdvi
 ```
 
-XDVIINPUTS を追加します．<br>
+/usr/local/texlive/2013/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
 
 ```
 % pxdvi
 XDVIINPUTS = /usr/local/texlive/2013/texmf/xdvi
+```
+
+TEXFONTMAPS に /usr/local/texlive/2013/texmf/fonts/map/pxdvi が追加されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value TEXFONTMAPS
+...;/usr/local/texlive/2013/texmf/fonts/map/pxdvi
+```
+
+&#x58;DVIINPUTS に /usr/local/texlive/2013/texmf/xdvi が設定されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value XDVIINPUTS
+/usr/local/texlive/2013/texmf/xdvi
 ```
 
 platex で処理された DVI ファイルが表示できます．<br>
