@@ -46,12 +46,14 @@ Expat License については
 
 2012-02-12 dviout 3.18.4<br>
 
-以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
+dviout 3.18.3 ALPHA 5 以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
 についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
 問題を持っていました。<br>
-最新版の dviout 3.18.4 は CTAN にある
-dviout3184-inst.zip と同じものであり，ここではこれらの点が
-訂正されています。
+最新版の dviout 3.18.4 は実質的に CTAN にある
+dviout3183a6-inst-20111008.zip と同じものであり，ここではこれらの点が
+訂正されています。<br>
+dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
+最小の修正を加え，正式リリースされたものです。
 
 ### ChangeLog {#r5124b5a}
 
@@ -490,15 +492,6 @@ dviout の \[Option\] → \[Install\] を選べば設定が修正できます
 dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化されます
 （ファイルは消えません）。<br>
 この場合には再度 C:\w32tex\dviout\dviout.exe をダブルクリックして実行し，最初から設定が始められます。
-
-なお，以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
-についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
-問題を持っていました。<br>
-最新版の dviout 3.18.4 は実質的に CTAN にある
-dviout3183a6-inst-20111008.zip と同じものであり，ここではこれらの点が
-訂正されています。<br>
-dviout 3.18.4 は dviout3183a6-inst-20111008.zip に
-最小の修正を加え，正式リリースされたものです。
 
 ### 確認 {#h44c2d6a}
 
