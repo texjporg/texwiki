@@ -29,7 +29,7 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 ### 動作環境 {#n7f5a256}
 
-Windows 8, 7, Vista, XP, 2000, NT, Me, 98, 95<br>
+Windows 8.1, 8, 7, Vista, XP, 2000, NT, Me, 98, 95<br>
 
 ### License {#w9d4ec9d}
 
@@ -44,7 +44,8 @@ Expat License については
 
 ### リリース情報 {#uce3262c}
 
-2012-02-12 dviout 3.18.4 がリリースされました．<br>
+2012-02-12 dviout 3.18.4<br>
+
 以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
 についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
 問題を持っていました。<br>
