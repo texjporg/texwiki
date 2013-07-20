@@ -7,9 +7,9 @@ pukiwiki: "gedit"
 
 # gedit
 
-## [gedit](http://projects.gnome.org/gedit/) {#c704b7fa}
+## [gedit](https://projects.gnome.org/gedit/) {#c704b7fa}
 
-<img src="http://projects.gnome.org/gedit/images/gedit-logo.png" alt="gedit" style="float:right">
+<img src="https://projects.gnome.org/gedit/images/gedit-logo.png" alt="gedit" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -17,7 +17,7 @@ pukiwiki: "gedit"
 
 gedit は GNOME 公式のテキストエディタです．<br>
 
-- [gedit](http://projects.gnome.org/gedit/)
+- [gedit](https://projects.gnome.org/gedit/)
 
 ***
 
