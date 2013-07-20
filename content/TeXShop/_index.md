@@ -19,7 +19,7 @@ pukiwiki: "TeXShop"
 ## TeXShop とは {#q728ac5b}
 
 TeXShop は TeX 統合環境です．<br>
-[MacTeX](/Mac/#f5466652) に標準で含まれています．<br>
+[MacTeX](/Mac/#mactex) に標準で含まれています．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
@@ -27,13 +27,7 @@ TeXShop は TeX 統合環境です．<br>
 
 ### 動作環境 {#i28ced5b}
 
-> <table>
-> <tbody>
-> <tr><td>TeXShop (Version 3)</td><td>OS X 10.8, 10.7</td></tr>
-> <tr><td>TeXShop (Version 2)</td><td>OS X 10.6, 10.5, 10.4</td></tr>
-> </tbody>
-> </table>
->
+OS X 10.9, 10.8, 10.7
 
 ### License {#x8f63441}
 
@@ -42,16 +36,15 @@ GPL
 ### リリース情報/ChangeLog {#td599942}
 
 - [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
-- [Changes in Version 2](http://pages.uoregon.edu/koch/texshop/changes_2.html)
 
-## 不具合 {#i75be8c7}
-
-### TeX ファイルと TeXShop アイコンの関連付けができない → [自己解決しました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004&parent=5533) {#v06af948}
-
-- [TeXShop Icon](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004)
-- \[[OS X TeX\] can't get TeXShop 3.14 icons](https://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html)
-- [MacOSX-TeX - can't get TeXShop 3.14 icons](http://macosx-tex.576846.n2.nabble.com/can-t-get-TeXShop-3-14-icons-td7580870.html)
-- [MacOSX-TeX - texshop icon](http://macosx-tex.576846.n2.nabble.com/texshop-icon-td7579225.html)
+<!-- *不具合 [#i75be8c7] -->
+<!--  -->
+<!-- **TeX ファイルと TeXShop アイコンの関連付けができない → [[自己解決しました:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004&parent=5533]] [#v06af948] -->
+<!--  -->
+<!-- -[[TeXShop Icon:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004]] -->
+<!-- -[[[OS X TeX] can't get TeXShop 3.14 icons:https://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html]] -->
+<!-- -[[MacOSX-TeX - can't get TeXShop 3.14 icons:http://macosx-tex.576846.n2.nabble.com/can-t-get-TeXShop-3-14-icons-td7580870.html]] -->
+<!-- -[[MacOSX-TeX - texshop icon:http://macosx-tex.576846.n2.nabble.com/texshop-icon-td7579225.html]] -->
 
 ## 設定 {#sc027054}
 
