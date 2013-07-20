@@ -26,20 +26,21 @@ Automatic LaTeX Plugin for Vim (ATP) は [Vim](/Vim/) で LaTeX ドキュメン�
 - [Automatic LaTex Plugin for Vim at SourceForge](http://sourceforge.net/projects/atp-vim/)
 - [Automatic LaTex Plugin for Vim / Wiki / Home](http://sourceforge.net/p/atp-vim/wiki/)
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
-- [vim-scripts/AutomaticLaTexPlugin - GitHub](https://github.com/vim-scripts/AutomaticLaTeXPlugin)
+- [https://github.com/coot/atp_vim](https://github.com/coot/atp_vim)
 
 ### 動作環境 {#tcbad3a2}
 
-ATP は Vim 7.3 以上で動作します．<br>
+Vim 7.3 以上<br>
 
 ### License {#s306eff3}
 
-ATP は GPLv3 でリリースされています．<br>
+GPLv3<br>
 
 ### ChangeLog {#rf82eb2b}
 
 - [log](http://sourceforge.net/p/atp-vim/code/ci/master/log/)
 - [コミットログ](http://sourceforge.net/p/atp-vim/code/commit_browser)
+- [https://github.com/coot/atp_vim/commits/master](https://github.com/coot/atp_vim/commits/master)
 
 ## ATP の動作に必要なもの {#g428a1c8}
 
