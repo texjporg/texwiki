@@ -392,12 +392,6 @@ $ sudo apt-get install texworks
 Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
 \[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
 
-## Gummi <a id="gummi"></a> {#g69f5317}
-
-```
-$ sudo apt-get install gummi
-```
-
 ## LaTeXila <a id="latexila"></a> {#q4026bb3}
 
 ```
