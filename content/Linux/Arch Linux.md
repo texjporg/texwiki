@@ -435,12 +435,6 @@ $ yaourt -S texworks
 $ yaourt -S texstudio
 ```
 
-## Gummi {#gf42d835}
-
-```
-$ sudo pacman -S gummi
-```
-
 ## LaTeXila {#q4319830}
 
 ```
