@@ -27,7 +27,7 @@ poppler は
 
 などで使用されています．<br>
 
-- [poppler](http://poppler.freedesktop.org/)
+- [Poppler](http://poppler.freedesktop.org/)
 - [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
 
 ### License {#i424d155}
