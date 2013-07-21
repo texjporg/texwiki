@@ -69,10 +69,6 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ## [TeXworks](/TeXworks/) {#b5894e2b}
 
-## Gummi {#kc5a1561}
-
-- [http://gentwoo.elisp.net/packages/app-editors/gummi](http://gentwoo.elisp.net/packages/app-editors/gummi)
-
 ## LaTeXila {#b1485fd8}
 
 ## [Kile](/Kile/) {#qc5e840d}
