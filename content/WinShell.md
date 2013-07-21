@@ -114,7 +114,7 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 
 <br>
 
-　　　　Program: C:\Program Files\WinShell\WinShell.exe<br>
+　　　　Program: C:\Program Files (x86)\WinShell\WinShell.exe<br>
 
 <br>
 
@@ -127,7 +127,7 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 
 ***
 
-ShiftJIS (Shift_JIS) では発生しませんでした．
+エンコーディングが ShiftJIS (Shift_JIS) の場合では発生しませんでした．
 
 UTF-8 を使用したい方は
 
@@ -136,7 +136,6 @@ UTF-8 を使用したい方は
 - [TeXworks](/TeXworks/)
 - [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
-- Gummi
 - [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
