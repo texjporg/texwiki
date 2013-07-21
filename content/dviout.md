@@ -636,10 +636,10 @@ JPEG 形式の画像を表示するには ifjpegx.spi が必要です。<br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]</ins></span><strong>\[　Common　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　\]</ins></span><br>
-　　　　Loupe<br>
-　　　Size:<br>
-　　　Scale:<br>
-　　　Speed:<br>
+　　　　Loupe　　　　　　　　　　　　Option(+CTRL)　　　　　　　　　　　Shape　　　　　　　　　Back<br>
+　　　Size:　<ins>250　　　　　\[◆\]</ins>　　　　Size:　<ins>480　　　　　\[◆\]</ins>　　　　　　　◎ Square　　　　　　◎ Default<br>
+　　　Scale: <ins>1　　　　　　\[◆\]</ins>　　　　Scale: <ins>8　　　　　　\[◆\]</ins>　　　　　　　◯ Measure　　　　　◯ White<br>
+　　　Speed: <ins>4　　　　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　　◯ Circle　　　　　　 ◯ Black<br>
 　　　☐ Edge view<br>
 
 <br>
