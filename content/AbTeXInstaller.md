@@ -71,7 +71,7 @@ GSview をインストールする場合は TeXインストーラ 3 を最新版
 　　　　<ins>C:\w32tex\download\\</ins><br>
 　　　　インストール先<br>
 　　　　<ins>C:\w32tex\\</ins><br>
-　　　　※ 保存先、インストール先には全角文字やスペースの入ったフォルダ名は使用できません．<br>
+　　　　※ 保存先、インストール先には全角文字やスペースの入ったフォルダ名は使用出来ません．<br>
 　　　　URL<br>
 　　　　　　<ins>&#x66;tp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/</ins><br> <!-- 　　　　　　%%%&#x66;tp://ftp.kddilabs.jp/TeX/ptex-win32/current/%%%&br; -->
 　　　　　　☐一覧以外を使う（↓に入力）<br>
@@ -223,9 +223,9 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
 　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
-　　　　 ∣☑win64/luatex-dev-w64.tar.xz　　　　　無い　　　2.4MB<br>
-　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　　無い　　　2.5MB<br>
-　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　　無い　　　391KB<br>
+　　　　 ∣☐win64/luatex-dev-w64.tar.xz　　　　 無い(選択)　　　2.4MB<br>
+　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い(選択)　　　2.5MB<br>
+　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
 　　　　 ∣☑win64/makeindex-w64.tar.xz　　　　　無い　　　477KB<br>
 　　　　 ∣☑win64/mftools-w64.tar.xz　　　　　　　無い　　　417KB<br>
 　　　　 ∣☑win64/mftrace-w64.tar.xz　　　　　　　無い　　　364KB<br>
