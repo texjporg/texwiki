@@ -282,13 +282,13 @@ $ sudo pacman -S ruby
 $ sudo pacman -S perl
 ```
 
-## poppler {#bfbc00bc}
+## [Poppler](/Poppler/) {#bfbc00bc}
 
 ```
 $ sudo pacman -S poppler poppler-data
 ```
 
-Arch Linux の Evince, Okular, zathura, Texmaker などの poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
+Arch Linux の Evince, Okular, zathura, Texmaker などの Poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Evince](/Evince/) {#qd63d30c}
