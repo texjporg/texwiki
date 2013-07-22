@@ -839,6 +839,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 ## 関連サイト {#fc8d75eb}
 
+- [http://masa.o.oo7.jp/vimrc.txt](http://masa.o.oo7.jp/vimrc.txt)
 - [TeXLive 2012＋Vim-LaTeXでてふてふする on Fedora 17](http://masanoriprog.blogspot.jp/2013/01/texlive-2012vim-latex-on-fedora-17.html)
 - [Vim-LaTeX (LaTeX-Suite) について(etc.)](http://d.hatena.ne.jp/mFumi/archive?word=*%5btex%5d)
     (mFumi さん)
