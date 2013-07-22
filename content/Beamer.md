@@ -120,6 +120,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 - 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
+- [All about colors](http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html#node_sec_25)
 
 ### [extsizes](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/extsizes.html) {#e19a97f8}
 
@@ -139,6 +140,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### Beamer Themes {#r446ce9a}
 
+- [Beamer Theme Matrix](http://www.hartwork.org/beamer-theme-matrix/)
 - [kmbeamer](https://github.com/kmaed/kmbeamer)
 - [Epyt](https://github.com/zohooo/epyt)
 - [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
