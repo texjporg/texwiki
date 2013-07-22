@@ -57,6 +57,7 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html)
+- [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
 
 ### ChangeLog {#y0777637}
 
@@ -142,7 +143,3 @@ $ pxdvi -watchfile 1 hoge.dvi &
 ```
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
-
-### 関連リンク {#qded2ff9}
-
-- [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
