@@ -50,7 +50,7 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 #### MinGW {#qd80d98f}
 
-poppler - TeX Wiki を参照して MinGW, freetype2, libjpeg, libopenjpeg, zlib 等をインストールします．
+[Poppler - TeX Wiki](/Poppler/) を参照して MinGW, freetype2, libjpeg, libopenjpeg, zlib 等をインストールします．
 
 - [jbig2dec](http://jbig2dec.sourceforge.net/) をインストールします．
 
