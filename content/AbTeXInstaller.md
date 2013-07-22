@@ -102,6 +102,9 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　◎ luatex-w32<br>
 　　　　◯ luatex-dev-w32<br>
 
+　　　　◎ luatex-w64<br>
+　　　　◯ luatex-dev-w64<br>
+
 ***
 
 <span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>dviout, Ghostscript, GSviewのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
@@ -223,8 +226,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
 　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
-　　　　 ∣☐win64/luatex-dev-w64.tar.xz　　　　 無い(選択)　　　2.4MB<br>
-　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い(選択)　　　2.5MB<br>
+　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
 　　　　 ∣☑win64/makeindex-w64.tar.xz　　　　　無い　　　477KB<br>
 　　　　 ∣☑win64/mftools-w64.tar.xz　　　　　　　無い　　　417KB<br>
