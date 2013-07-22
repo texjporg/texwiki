@@ -57,7 +57,7 @@ dvisvgm を使用して SVG ファイルに変換した場合はテキストデ�
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
 Inkscape を使用する場合もテキストデータが保持されます．<br>
 
-pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して poppler の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
+pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば簡単に SVG ファイルに変換できます．<br>
 ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
 PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
 
