@@ -51,8 +51,8 @@ TeXworks は [Qt](http://qt-project.org/) を使用しているため，基本�
 
 [News](http://www.tug.org/texworks/#News) を参照．<br>
 
-TeXworks 0.4.5 の Windows バイナリは Qt 4.8.1, poppler 0.22.2 を使用してビルドされています．<br>
-TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, poppler 0.22.1 を使用してビルドされています．<br>
+TeXworks 0.4.5 の Windows バイナリは Qt 4.8.1, Poppler 0.22.2 を使用してビルドされています．<br>
+TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．<br>
 
 ### ChangeLog {#j22176bb}
 
@@ -162,17 +162,17 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 ***
 
-### Windows で 日本語のフォントを埋め込んでいない PDF ファイルを作成して TeXworks 0.4.4 で表示した場合に代替フォントで表示されない → TeXworks 0.4.5 で poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました {#b4ae0a86}
+### Windows で 日本語のフォントを埋め込んでいない PDF ファイルを作成して TeXworks 0.4.4 で表示した場合に代替フォントで表示されない → TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました {#b4ae0a86}
 
 - [Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows](https://code.google.com/p/texworks/issues/detail?id=615)
 - \[[tex-live\] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts](http://www.tug.org/pipermail/tex-live/2013-March/033076.html)
 
-TeXworks 0.4.5 で poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．<br>
+TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．<br>
 ゴシック体を表示したい場合は以下の方法があります．<br>
 
 - フォントを埋め込む
 - バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります)
-- fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた poppler を使用して TeXworks をビルド
+- fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド
 
 ### かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる → 現在カーソルのある行をハイライトするを OFF にする {#s5bfc44e}
 
@@ -217,7 +217,7 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 - [Subversion Windows Installer](http://alagazam.net/) から Windows binaries をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
 
-- poppler をインストールします．
+- [Poppler](/Poppler/) をインストールします．
 
 - [Hunspell](/Hunspell/) をインストールします．
 
