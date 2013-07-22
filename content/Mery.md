@@ -63,7 +63,7 @@ UTF-8 を使用する場合は UTF-8 (BOM無し) または UTF-8 (BOM付き) を
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[論理座標　　　　　　　　　　　　 ▼\]</span>　　☑折り返し線を表示(A)<br>
 　　　　文字数(<ins>M</ins>):　　　<ins>80　　　　　　　\[◆\]</ins>　　☐カーソルのある行に下線を表示(U)<br>
 　　　　引用マーク(<ins>Q</ins>):　<ins>>　　　　　　　　　　</ins>　　☑対応する括弧を強調する(H)<br>
-　　　　タブの桁数(<ins>T</ins>):　<span style="color:Black;background-color:#EEEEEE;">\[4　　　　　　　　▼\]</span>　　☑自動インデントを有効にする(T)<br>
+　　　　タブの桁数(<ins>T</ins>):　<ins>4　　　　　　　　\[◆\]</ins>　　☑自動インデントを有効にする(T)<br>
 　　　　行間隔(<ins>S</ins>):　　　<ins>2　　　　　　　　\[◆\]</ins>　　☐タブの代わりに空白を挿入(I)<br>
 　　　　既定のエンコード(<ins>E</ins>):　　　　　　　　　　☐かな漢字変換を起動(P)<br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8 (BOM無し)　　　　　　　▼\]</span>　　☑URLをダブルクリックで開く(K)<br>
@@ -91,15 +91,11 @@ Mery/マクロ を参照．
 
 ## 入力補完 {#p98d874e}
 
-Mery には TeX の入力補完機能があります．
+Mery には TeX の入力補完機能があります．<br>
 
-Mery.exe と同じフォルダー内に Ext フォルダーがあります．
-
-Ext フォルダーの中に tex.txt という名前の辞書ファイルが存在します．
-
-Ctrl+Space を入力すると辞書ファイルの候補が補完されます．
-
-<!-- 辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます． -->
+Mery.exe と同じフォルダー内に Ext フォルダーがあります．<br>
+Ext フォルダーの中に tex.txt という名前の辞書ファイルが存在します．<br>
+Ctrl+Space を入力すると辞書ファイルの候補が補完されます．<br> <!-- 辞書ファイルを作成するのが面倒な場合は，辞書ファイルを作成しなくても編集中のファイルから候補を探して補完してくれます．~ -->
 
 ## プラグイン {#eb7452d5}
 
