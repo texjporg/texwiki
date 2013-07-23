@@ -106,9 +106,13 @@ nkf をインストールします．<br>
 $ sudo apt-get install nkf
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf に PTEX_IN_FILTER を追加します．<br>
 
 ```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+$ tail /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+...
+% guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
@@ -133,11 +137,21 @@ pxdvi を使用する場合は xdvik-ja をインストールします．<br>
 $ sudo apt-get install xdvik-ja
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
 
 ```
+$ printf '\n%% pxdvi\nXDVIINPUTS = /etc/texmf/xdvi\n' | sudo tee -a /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+$ tail /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+...
 % pxdvi
 XDVIINPUTS = /etc/texmf/xdvi
+```
+
+&#x58;DVIINPUTS に /etc/texmf/xdvi が設定されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value XDVIINPUTS
+/etc/texmf/xdvi
 ```
 
 platex で処理された DVI ファイルが表示できます．<br>
