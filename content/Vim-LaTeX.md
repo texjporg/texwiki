@@ -338,7 +338,8 @@ let g:Tex_ViewRule_ps = 'evince'
 "let g:Tex_ViewRule_ps = 'zathura'
 "let g:Tex_ViewRule_ps = 'qpdfview --unique'
 "let g:Tex_ViewRule_ps = 'gv --watch'
-let g:Tex_ViewRule_dvi = 'xdvi -watchfile 1'
+let g:Tex_ViewRule_dvi = 'pxdvi -watchfile 1'
+"let g:Tex_ViewRule_dvi = 'xdvi -watchfile 1'
 ```
 
 ***
