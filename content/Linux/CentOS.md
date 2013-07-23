@@ -50,15 +50,10 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 ### TeX Live 2013 {#jc67c0a8}
 
+- [Linux](/Linux/#texlive2013)
+- [TeX Live 2013 on Scientific Linux 6.4](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4)
 - [CentOS 6.4 + TeX Live 2013 において pxdvi で日本語を表示する](http://granular.blog39.fc2.com/blog-entry-69.html)
 - [TeXLive2013へのアップグレード](http://anastashia.blog.shinobi.jp/tex/upgrade_to_texlive2013)
-- [Linux](/Linux/#texlive2013)
-
-### TeX Live 2012 {#e1520aae}
-
-- [CentOS 6.4 で ps2pdf のエラー](http://granular.blog39.fc2.com/blog-entry-66.html)
-- [CentOS 6.3にGhostscript 9.07とTeXLive 2012をインストールする](http://dokoka.org/wiki.cgi?page=CentOS+6%2E3%A4%CBGhostscript+9%2E07%A4%C8TeXLive+2012%A4%F2%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB%A4%B9%A4%EB)
-- [Linuxに日本語LaTeXを導入する](http://note.chiebukuro.yahoo.co.jp/detail/n151638)
 
 ## [Evince](/Evince/) {#b582893c}
 
