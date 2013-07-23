@@ -70,66 +70,39 @@ pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexliv
 
 #### TeX Live 2013 の場合 {#c75bb558}
 
-- [CentOS 6.4 + TeX Live 2013 において pxdvi で日本語を表示する](http://granular.blog39.fc2.com/blog-entry-69.html)
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/
-$ sudo tlmgr pinning add tlptexlive 'pxdvi*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pxdvi*
-$ sudo tlmgr pinning add tlptexlive 'pmetapost*'
-tlmgr: package repositories:
-	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
-	tlptexlive = http://www.tug.org/~preining/tlptexlive/
-tlmgr: new pinning data for tlptexlive: pmetapost*
-$ sudo tlmgr install pxdvi pmetapost
-$ sudo tlmgr path add
-```
-
-/usr/local/texlive/2013/texmf.cnf を /usr/local/texlive/2013/texmf.cnf.org にリネームして /usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf を /usr/local/texlive/2013 にコピーします．<br>
-
 ```
 $ cd /usr/local/texlive/2013
-$ sudo mv texmf.cnf texmf.cnf.org
-$ sudo cp texmf-dist/web2c/texmf.cnf .
+$ sudo ln -s texmf-dist texmf
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 ```
 
-/usr/local/texlive/2013/texmf.cnf を編集します．<br>
-
-/usr/local/texlive/2013/texmf.cnf の TEXFONTMAPS を修正します．<br>
+<!-- tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
 
 ```
-% font name map files.  This isn't just fonts/map// because ConTeXt
-% wants support for having files with the same name in the different
-% subdirs.  Maybe if the programs ever get unified to accepting the same
-% map file syntax the definition can be simplified again.
-%TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//
-TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/local/texlive/2013/texmf/fonts/map/pxdvi
+$ sudo tlmgr pinning add tlptexlive 'pxdvi*'
 ```
 
-/usr/local/texlive/2013/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pxdvi* -->
 
 ```
-% pxdvi
-XDVIINPUTS = /usr/local/texlive/2013/texmf/xdvi
+$ sudo tlmgr pinning add tlptexlive 'pmetapost*'
 ```
 
-TEXFONTMAPS に /usr/local/texlive/2013/texmf/fonts/map/pxdvi が追加されていることを確認します．<br>
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pmetapost* -->
 
 ```
-$ kpsewhich -var-value TEXFONTMAPS
-...;/usr/local/texlive/2013/texmf/fonts/map/pxdvi
-```
-
-&#x58;DVIINPUTS に /usr/local/texlive/2013/texmf/xdvi が設定されていることを確認します．<br>
-
-```
-$ kpsewhich -var-value XDVIINPUTS
-/usr/local/texlive/2013/texmf/xdvi
+$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr path add
+$ cd /usr/local/texlive/2013/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+$ sudo sed 's/-helvetica-/-*-/' -i XDvi
 ```
 
 platex で処理された DVI ファイルが表示できます．<br>
