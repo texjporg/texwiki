@@ -7,7 +7,7 @@ pukiwiki: "TXFonts"
 
 # TXFonts
 
-## New TX font package {#j252bcab}
+## newtx {#j252bcab}
 
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
@@ -20,7 +20,7 @@ pukiwiki: "TXFonts"
 
 ### News {#s0ef87dd}
 
-- \[2013-05-26\] newtx 1.11
+- \[2013-07-20\] newtx 1.12
 
 ### インストール {#va9608e1}
 
