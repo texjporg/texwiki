@@ -147,8 +147,8 @@ epsffit.exe       musixflx.exe           ttfdump.exe
 epspdf.exe        musixtex.exe           ttftotype42.exe
 epspdftk.exe      odvicopy.exe           ulqda.exe
 epstopdf.exe      odvitype.exe           upbibtex.exe
-eptex.exe         ofm2opl.exe            updmap-setup-kanji-sys.exe
-euptex.exe        omfonts.exe            updmap-setup-kanji.exe
+eptex.exe         ofm2opl.exe            kanji-config-updmap-sys.exe
+euptex.exe        omfonts.exe            kanji-config-updmap.exe
 exceltex.exe      opl2ofm.exe            updmap-sys.exe
 extconv.exe       ot2kpx.exe             updmap.exe
 extractbb.exe     otangle.exe            updvitype.exe
