@@ -24,11 +24,10 @@ Sublime Text はテキストエディタです． (シェアウェア)
 - [Sublime Text 3](http://www.sublimetext.com/3)
 - [Sublime Text 3 - Dev Builds](http://www.sublimetext.com/3dev)
 
-### Sublime Text 2 {#z97e1aeb}
-
-- [Sublime Text 2](http://www.sublimetext.com/2)
-- [Sublime Text 2 - Dev Builds](http://www.sublimetext.com/dev)
-- [Sublime Text 2 - Nightly Builds](http://www.sublimetext.com/nightly)
+<!-- **Sublime Text 2 [#z97e1aeb] -->
+<!-- -[[Sublime Text 2:http://www.sublimetext.com/2]] -->
+<!-- -[[Sublime Text 2 - Dev Builds:http://www.sublimetext.com/dev]] -->
+<!-- -[[Sublime Text 2 - Nightly Builds:http://www.sublimetext.com/nightly]] -->
 
 ### 動作環境 {#ec9465b5}
 
@@ -54,9 +53,11 @@ Windows, OS X, Linux
 - [【Windowsアプリケーション】Sublime Text 2 メニュー日本語化](http://blog.huwy.org/article/292827228.html)
     - Mac でも日本語化できるみたいです
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text 2)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text 2 and 3)](https://github.com/SublimeText/LaTeXTools/tree/st3) {#e60d4c0f}
 
-- [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
+- [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/st3)
+    <!-- -[[SublimeText/LaTeXTools · GitHub:https://github.com/SublimeText/LaTeXTools]] -->
+
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
 
 ### Windows {#m3e22b6d}
@@ -66,13 +67,19 @@ Windows, OS X, Linux
 
 ### OS X {#c2e22368}
 
+- [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
+- [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
 - [mac、sublime text 2、latex](http://blog.hifumi.info/mac/mac-sublimetext2-latex/)
-- [LaTeX on Sublime Text 2](http://blog.izumin.info/2013/01/latex-on-sublime-text-2.html)
 - [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
 
 ### Linux {#x47ef3df}
 
 - [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
+
+## [LaTeXing](http://www.latexing.com/) {#u85131e8}
+
+- [LaTeXing - LaTeX plugin for Sublime Text 2/3](http://www.latexing.com/)
+- [http://docs.latexing.com/](http://docs.latexing.com/)
 
 ## [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) {#je94e188}
 
