@@ -244,7 +244,7 @@ WinShell 3.3.2.5 以降の場合，Adobe Reader XI で PDF ファイルを表示
 
 ***
 
-この場合レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを
+Adobe Reader XI の場合レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを
 
 ```
 AcroViewR11
