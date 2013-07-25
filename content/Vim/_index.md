@@ -251,6 +251,7 @@ Vim の一般的な折りたたみの操作に関しては [Vim-users.jp - Hack 
 
 ## 設定に関するリンク {#b7ef8622}
 
+- [Vimに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/Vim)
 - [SanRin舎 &raquo; vi/Vim](http://sanrinsha.lolipop.jp/blog/2011/04/vi%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF.html)
 - [vim でシェルコマンドを実行した際の Press ENTER or type command to continue を非表示に](http://d.hatena.ne.jp/koyudoon/20120131/1327959087)
 - [Vimのメモ](http://ogawa.s18.xrea.com/fswiki/wiki.cgi?page=Vim%A4%CE%A5%E1%A5%E2)
