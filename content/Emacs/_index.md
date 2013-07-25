@@ -389,6 +389,8 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ## 設定に関するリンク {#pd1c5cfc}
 
+- [Emacsに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/Emacs)
+
 ### Windows {#a1ddfe8b}
 
 - [NTEmacs の設定](http://www49.atwiki.jp/ntemacs/pages/1.html)
