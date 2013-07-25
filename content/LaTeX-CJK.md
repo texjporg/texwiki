@@ -9,7 +9,7 @@ pukiwiki: "LaTeX-CJK"
 
 (a place holder&mdash;not yet completed)
 
-(Could someone please translate this page into English?)
+(Could someone please translate this page into English?) → [TeX Wiki の英訳](http://jun0inoue.blogspot.fr/2013/05/tex-wiki.html)
 
 ## [The CJK package for LaTeX](http://cjk.ffii.org/) {#ue7194c1}
 
