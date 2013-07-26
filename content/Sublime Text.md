@@ -97,11 +97,10 @@ Windows, OS X, Linux
 
 ### OS X {#d13b8a86}
 
+- [Sublime Text 2のTeXビルドシステム](http://www35.atpages.jp/shocker/memoRANDOM/Misc/Misc_index.php)
 - [Sublime Text2を使ってTexを書いてコンパイルまでする。](https://gist.github.com/4482213)
 - [sublime text 2をmacで使う](http://blog.hifumi.info/mac/sublime-text-2-for-mac/)
 - [Emacs, Vim, Sublime Text 2 徹底比較](http://funatti.hatenablog.com/entry/2012/07/13/155629)
-- [プログラミングエディタ Sublime Text2 を使ってみよう！](http://d.hatena.ne.jp/mizchi/20111021/1319167480)
-- [Sublime Text 2のカスタマイズ](http://ready-study-go.blogspot.com/2011/09/sublime-text-2.html)
 - [Soda Theme](https://github.com/buymeasoda/soda-theme)
 
 ### Linux {#r2805e10}
