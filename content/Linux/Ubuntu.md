@@ -17,7 +17,7 @@ pukiwiki: "Linux/Ubuntu"
 
 ## Ubuntu とは {#i6bcb07d}
 
-Ubuntu は Debian GNU/Linux をベースに Amazon レンズを追加した Linux ディストリビューションです．<br>
+Ubuntu は Debian GNU/Linux をベースに Amazon レンズを追加して [Richard Stallman からスパイウェア認定された](http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do) Linux ディストリビューションです．<br>
 Ubuntu 12.10 以降は Amazon レンズが収録されています．<br>
 Ubuntu 11.04 以降はデスクトップ環境に Unity を採用しています．<br>
 Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](</Linux/Linux Mint/>) や Ubuntu の公式派生版を使用してください．<br>
@@ -31,6 +31,7 @@ Unity 以外のデスクトップ環境を使用したい場合は [Linux Mint](
 
 ### Amazon レンズ ([unity-lens-video](http://packages.ubuntu.com/ja/unity-lens-video), [unity-scope-video-remote](http://packages.ubuntu.com/ja/unity-scope-video-remote), [unity-lens-shopping](http://packages.ubuntu.com/ja/unity-lens-shopping), [unity-lens-music](http://packages.ubuntu.com/ja/unity-lens-music), [unity-lens-photos](http://packages.ubuntu.com/ja/unity-lens-photos), [unity-lens-radios](http://packages.ubuntu.com/ja/unity-lens-radios)) の削除 {#l309d60c}
 
+- [http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do](http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do)
 - [http://www.gnu.org/distros/common-distros.html#Ubuntu](http://www.gnu.org/distros/common-distros.html#Ubuntu)
 - [フリーソフトウェアのリーダーRichard Stallman曰く: Amazonの検索を統合したUbuntuはスパイウェアだ](http://jp.techcrunch.com/2012/12/08/20121207free-software-leader-richard-stallman-amazon-search-integration-in-ubuntu-amounts-to-spyware/)
 - [リチャードストールマン氏が Ubuntu を非難](http://japan.internet.com/webtech/20121211/3.html)
@@ -67,6 +68,16 @@ Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの 
 Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Linux Mint](</Linux/Linux Mint/>)
+
+### その他 Linux ディストリビューション {#dea53ddb}
+
+- [Arch Linux](</Linux/Arch Linux/>)
+- CentOS
+- Debian GNU/Linux
+- [Fedora](/Linux/Fedora/)
+- Gentoo Linux
+- [openSUSE](/Linux/openSUSE/)
+- Vine Linux
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
 
