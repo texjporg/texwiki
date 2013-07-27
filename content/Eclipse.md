@@ -20,6 +20,7 @@ pukiwiki: "Eclipse"
 Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
+- [Eclipse.org Git repositories](http://git.eclipse.org/)
 
 ### 動作環境 {#aae7926e}
 
