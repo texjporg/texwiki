@@ -59,9 +59,8 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 
 ### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#rde4f3be}
 
-- [TeX Live 2013 released](http://www.preining.info/blog/2013/06/tex-live-2013-released/)
+- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 - [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
-- [TeX Live 2013 for Debian](http://www.preining.info/blog/2013/05/tex-live-2013-for-debian/)
 
 #### Debian GNU/Linux sid で TeX Live 2013/Debian のインストール {#b43aa577}
 
@@ -73,7 +72,7 @@ apt-get を使用してインストールしても OK です．<br>
 $ sudo apt-get install texlive-full
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf の shell_escape_commands を確認します．<br>
 
 shell_escape_commands が以下のように記述されていると思います．<br>
 
@@ -87,6 +86,22 @@ repstopdf,\
 ```
 
 デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/share/texmf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/share/texmf/web2c
+$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
 shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
@@ -106,11 +121,11 @@ nkf をインストールします．<br>
 $ sudo apt-get install nkf
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に PTEX_IN_FILTER を追加します．<br>
+/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
 
 ```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-$ tail /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
 ...
 % guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
@@ -137,11 +152,11 @@ pxdvi を使用する場合は xdvik-ja をインストールします．<br>
 $ sudo apt-get install xdvik-ja
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+/usr/local/share/texmf/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
 
 ```
-$ printf '\n%% pxdvi\nXDVIINPUTS = /etc/texmf/xdvi\n' | sudo tee -a /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-$ tail /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+$ printf '\n%% pxdvi\nXDVIINPUTS = /etc/texmf/xdvi\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
 ...
 % pxdvi
 XDVIINPUTS = /etc/texmf/xdvi
