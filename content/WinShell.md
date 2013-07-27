@@ -72,7 +72,7 @@ WinShell 3.3.2.5 以降は Adobe Reader XI と Adobe Acrobat XI の DDE に対�
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
     <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
-[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell3 日本語言語ファイルを公開されています．<br>
+[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています．<br>
 WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
 ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください．<br>
 
@@ -146,7 +146,7 @@ UTF-8 を使用したい方は
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
-### エンコーディングが ShiftJIS の場合の括弧の強調表示時の文字化け → 対応する括弧の強調表示を OFF にする {#n7cba889}
+### エンコーディングが ShiftJIS の場合の括弧の強調表示時の文字化け → UTF-8 を使用するまたは対応する括弧の強調表示を OFF にする {#n7cba889}
 
 エンコーディングが ShiftJIS の場合，括弧の強調表示時に，日本語が文字化けする不具合があります．<br>
 例えば<br>
@@ -158,7 +158,8 @@ UTF-8 を使用したい方は
 と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．<br>
 
 エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．<br>
-文字化けを回避するには，対応する括弧の強調表示のチェックをはずしてください．<br>
+文字化けを回避するには，UTF-8 を使用する方法があります．<br>
+ShiftJIS を使用したい場合は対応する括弧の強調表示のチェックをはずしてください．<br>
 
 ***
 
@@ -227,7 +228,7 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
-WinShell 3.3.2.5 以降の場合，Adobe Reader XI で PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.5 以降の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
