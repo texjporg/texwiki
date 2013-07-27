@@ -12,6 +12,7 @@ pukiwiki: "Hunspell"
 Hunspell はスペルチェッカーです．<br>
 
 - [Hunspell](http://hunspell.sourceforge.net/)
+- [NHunspell](http://nhunspell.sourceforge.net/)
 
 以下の統合環境・エディタで使用されています．
 
