@@ -102,7 +102,13 @@ $ sudo tlmgr install pxdvi pmetapost
 $ sudo tlmgr path add
 $ cd /usr/local/texlive/2013/texmf-dist/xdvi
 $ sudo cp XDvi XDvi.org
-$ sudo sed 's/-helvetica-/-*-/' -i XDvi
+```
+
+<!-- $ sudo sed 's/-helvetica-/-*-/' -i XDvi -->
+
+```
+$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
 
 platex で処理された DVI ファイルが表示できます．<br>
