@@ -72,9 +72,7 @@ Compilation failed in require at /usr/bin/updmap line 42.
 BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．<br>
-
-shell_escape_commands が以下のように記述されていると思います．<br>
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -86,6 +84,22 @@ repstopdf,\
 ```
 
 デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/share/texlive/texmf-local//
+```
+
+/usr/share/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/share/texlive/texmf-local/web2c
+$ sudo touch /usr/share/texlive/texmf-local/web2c/texmf.cnf
+```
+
+/usr/share/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
 shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
@@ -105,9 +119,13 @@ nkf をインストールします．<br>
 $ sudo yum install nkf
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texlive/texmf-local/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
 
 ```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/share/texlive/texmf-local/web2c/texmf.cnf
+$ tail /usr/share/texlive/texmf-local/web2c/texmf.cnf
+...
+% guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
@@ -139,7 +157,7 @@ $ sudo cp -pR usr/share/texmf/xdvi/ /usr/share/texlive/texmf-dist/pxdvi
 $ sudo yum install openmotif
 ```
 
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+/usr/share/texlive/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
 
 ```
 % pxdvi
@@ -165,16 +183,7 @@ $ pxdvi -watchfile 1 hoge.dvi &
 <!-- $ sudo mkdir -p /usr/share/texmf-local/web2c -->
 <!-- $ sudo cp /usr/share/texlive/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c -->
 <!--  -->
-<!-- /usr/share/texmf-local/web2c/texmf.cnf の TEXFONTMAPS を修正します．~ -->
-<!--  -->
-<!-- % font name map files.  This isn't just fonts/map// because ConTeXt -->
-<!-- % wants support for having files with the same name in the different -->
-<!-- % subdirs.  Maybe if the programs ever get unified to accepting the same -->
-<!-- % map file syntax the definition can be simplified again. -->
-<!-- %TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}// -->
-<!-- TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/share/texlive/texmf-dist/fonts/map/pxdvi -->
-<!--  -->
-<!-- /usr/share/texlive/texmf-dist/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．~ -->
+<!-- /usr/share/texlive/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．~ -->
 <!--  -->
 <!-- % pxdvi -->
 <!-- XDVIINPUTS = /usr/share/texlive/texmf-dist/pxdvi -->
