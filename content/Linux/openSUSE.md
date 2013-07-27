@@ -87,9 +87,13 @@ nkf をインストールします．<br>
 $ sudo zypper install nkf
 ```
 
-/usr/lib/texmf/web2c/texmf.cnf に設定を追加します．<br>
+/usr/lib/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
 
 ```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/lib/texmf/web2c/texmf.cnf
+$ tail /usr/lib/texmf/web2c/texmf.cnf
+...
+% guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
