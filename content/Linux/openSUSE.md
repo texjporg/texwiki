@@ -49,14 +49,8 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-scheme-full
 ```
 
-/usr/lib/texmf/web2c/texmf.cnf を編集します．<br>
 /usr/lib/texmf/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
-
-```
-$ sudo vi /usr/lib/texmf/web2c/texmf.cnf
-```
-
-shell_escape_commands が以下のように記述されていると思います．<br>
+/usr/lib/texmf/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -68,6 +62,22 @@ repstopdf,\
 ```
 
 デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/share/texmf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/share/texmf/web2c
+$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
 shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
@@ -87,11 +97,11 @@ nkf をインストールします．<br>
 $ sudo zypper install nkf
 ```
 
-/usr/lib/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
+/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
 
 ```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/lib/texmf/web2c/texmf.cnf
-$ tail /usr/lib/texmf/web2c/texmf.cnf
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
 ...
 % guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
