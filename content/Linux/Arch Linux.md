@@ -45,7 +45,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux 3.10.2-1-ARCH (tty1)
+Arch Linux 3.10.3-1-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
@@ -98,14 +98,8 @@ texlive-langcjk, texlive-most をインストールします．<br>
 $ sudo pacman -S texlive-langcjk texlive-most
 ```
 
-/usr/share/texmf-dist/web2c/texmf.cnf を編集します．<br>
 /usr/share/texmf-dist/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
-
-```
-$ sudo vi /usr/share/texmf-dist/web2c/texmf.cnf
-```
-
-shell_escape_commands が以下のように記述されていると思います．<br>
+/usr/share/texmf-dist/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -117,6 +111,22 @@ repstopdf,\
 ```
 
 デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/share/texmf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/share/texmf/web2c
+$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
 shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
@@ -136,9 +146,13 @@ repstopdf,epspdf,extractbb,\
 $ yaourt -S nkf
 ```
 
-/usr/share/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
 
 ```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
+...
+% guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
@@ -203,7 +217,7 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
 pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64bit 版の TeX Live 2013/Arch Linux で動作します．<br>
-pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して TEXFONTMAPS と &#x58;DVIINPUTS に適切な値を設定してください．<br>
+pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定してください．<br>
 
 ```
 $ mkdir pxdvi
@@ -220,17 +234,6 @@ $ sudo mkdir -p /usr/share/texmf-local/web2c
 $ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
 ```
 
-/usr/share/texmf-local/web2c/texmf.cnf の TEXFONTMAPS を修正します．<br>
-
-```
-% font name map files.  This isn't just fonts/map// because ConTeXt
-% wants support for having files with the same name in the different
-% subdirs.  Maybe if the programs ever get unified to accepting the same
-% map file syntax the definition can be simplified again.
-%TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//
-TEXFONTMAPS = .;$TEXMF/fonts/map/{$progname,pdftex,dvips,}//;/usr/share/texmf-dist/fonts/map/pxdvi
-```
-
 /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
 
 ```
@@ -244,25 +247,21 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
-VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64bit 版の TeX Live 2013/Arch Linux で動作します．<br>
-
-```
-$ mkdir vine
-$ cd vine
-$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/texlive-2012-4vl7.x86_64.rpm
-$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libkpathsea-2012-4vl7.x86_64.rpm
-$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/openMotif-2.3.3-1vl6.x86_64.rpm
-$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libjpeg-turbo-1.2.1-1vl7.x86_64.rpm
-$ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libpng-1.2.50-1vl7.x86_64.rpm
-```
-
-rpm2cpio と cpio で rpm ファイルを展開します．<br>
-rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．<br>
-展開したファイルの pxdvi-motif と pxdvi-motif の実行に必要なライブラリを適切な場所に配置すれば pxdvi-motif が実行できます．<br>
-
-```
-$ pxdvi-motif -watchfile 1 hoge.dvi &
-```
+<!-- VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
+<!--  -->
+<!-- $ mkdir vine -->
+<!-- $ cd vine -->
+<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/texlive-2012-4vl7.x86_64.rpm -->
+<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libkpathsea-2012-4vl7.x86_64.rpm -->
+<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/openMotif-2.3.3-1vl6.x86_64.rpm -->
+<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libjpeg-turbo-1.2.1-1vl7.x86_64.rpm -->
+<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libpng-1.2.50-1vl7.x86_64.rpm -->
+<!--  -->
+<!-- rpm2cpio と cpio で rpm ファイルを展開します．~ -->
+<!-- rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．~ -->
+<!-- 展開したファイルの pxdvi-motif と pxdvi-motif の実行に必要なライブラリを適切な場所に配置すれば pxdvi-motif が実行できます．~ -->
+<!--  -->
+<!-- $ pxdvi-motif -watchfile 1 hoge.dvi & -->
 
 ## [Python](/Python/) {#i5b0d02d}
 
