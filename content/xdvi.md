@@ -111,12 +111,6 @@ $ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
 
-platex で処理された DVI ファイルが表示できます．<br>
-
-```
-$ pxdvi -watchfile 1 hoge.dvi &
-```
-
 ### 使い方 {#o73d19d8}
 
 ```
