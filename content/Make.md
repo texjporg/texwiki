@@ -89,6 +89,7 @@ $ make distclean
 
 Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。
 
+- [TeX文章をmakeで管理](http://folioscope.hatenablog.jp/entry/2013/07/29/000009)
 - [Makefileの解説](http://www.am.sanken.osaka-u.ac.jp/~mukaigaw/misc/Makefile.html)
 - [GNU Makeで楽々コンパイル(Latexも楽々)](http://note.chiebukuro.yahoo.co.jp/detail/n36864)
 - [自分用latex Makefile](https://gist.github.com/1095020)
