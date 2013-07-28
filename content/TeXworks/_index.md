@@ -41,7 +41,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 ### 動作環境 {#ye220c29}
 
 Microsoft Windows (8.1, 8, 7, Vista, XP)，OS X, GNU/Linux で利用できます．<br>
-TeXworks は [Qt](http://qt-project.org/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5.0/qtdoc/platform-details.html) で動作します．<br>
+TeXworks は [Qt](http://qt-project.org/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5.1/qtdoc/supported-platforms.html) で動作します．<br>
 
 ### License {#lccd03cb}
 
