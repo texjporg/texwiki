@@ -71,6 +71,8 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
 
 ### その他 Linux ディストリビューション {#dea53ddb}
 
+最新のソフトウェアを使用したい場合は [Arch Linux](</Linux/Arch Linux/>) をおすすめします．<br>
+
 - [Arch Linux](</Linux/Arch Linux/>)
 - CentOS
 - Debian GNU/Linux
