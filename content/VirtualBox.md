@@ -13,6 +13,12 @@ pukiwiki: "VirtualBox"
 
 VirtualBox は x86 と x86_64 の仮想化ソフトウェアです．<br>
 
+- [VirtualBox](https://www.virtualbox.org/)
+
 ### License {#k5d1dba3}
 
 [GPLv2](https://www.virtualbox.org/browser/vbox/trunk/COPYING)
+
+### ChangeLog {#v361881d}
+
+- [https://www.virtualbox.org/wiki/Changelog](https://www.virtualbox.org/wiki/Changelog)
