@@ -20,6 +20,8 @@ pukiwiki: "Linux/Arch Linux"
 Arch Linux はシンプルで軽量な Linux ディストリビューションです．
 
 - [Arch Linux](https://www.archlinux.org/)
+- [Arch Linux Forums](https://bbs.archlinux.org/)
+    <!-- - -[[root device not read-write warning:https://bbs.archlinux.org/viewtopic.php?pid=1303852]] -->
 
 ### ミラーサイト {#z011535f}
 
