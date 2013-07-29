@@ -226,6 +226,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
 　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
+　　　　 ∣☑win64/luajittex-w64.tar.xz　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
 　　　　 ∣☑win64/makeindex-w64.tar.xz　　　　　無い　　　477KB<br>
@@ -246,6 +247,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/txtutil-w64.tar.xz　　　　　　　無い　　　42KB<br>
 　　　　 ∣☑win64/uptex-w64.tar.xz　　　　　　　無い　　　1.4MB<br>
 　　　　 ∣☑win64/web2c-w64.tar.xz　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑win64/xetex-w64.tar.xz　　　　　　　無い　　　7.7MB<br>
 　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
 　　　　 ∣☑xypic.tar.xz　　　　　　　　　　　　　　無い　　　4.1MB<br>
