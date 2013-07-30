@@ -27,6 +27,7 @@ pukiwiki: "Microsoft Office"
 
 ## TeX との比較 {#k678548a}
 
+- [WordとTexって結局どっちがええのんか](http://yakyuzuki.blogspot.jp/2013/05/wordtex.html)
 - [僕がTeXで仕様書を書く理由](http://setsulla.hatenablog.com/entry/2012/10/09/144243)
 - [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
 - [TeXからWordへの乗り換えを試みた](http://d.hatena.ne.jp/moccos_info/20110801/p1)
