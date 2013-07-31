@@ -61,7 +61,7 @@ pukiwiki: "LyX/設定/Windows"
 
 #### LaTeX (pLaTeX) -> DVI {#p0550e68}
 
-■ platex (自動判別) の場合
+■ platex の場合
 
 ***
 
@@ -76,27 +76,7 @@ pukiwiki: "LyX/設定/Windows"
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pLaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>platex -guess-input-enc -synctex=1</ins><br>
-追加フラグ(X):　<ins>latex=platex</ins><br>
-
-***
-
-■ platex (UTF-8) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-変換子の定義(N)<br>
-<span style="color:Black;background-color:#DAEAFF;">LaTeX (pLaTeX) -> DVI　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-...<br>
-変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
-<span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pLaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-変換子(O):　　　<ins>platex -no-guess-input-enc -kanji=utf8 -synctex=1</ins><br>
+変換子(O):　　　<ins>platex -guess-input-enc -kanji=utf8 -synctex=1</ins><br>
 追加フラグ(X):　<ins>latex=platex</ins><br>
 
 ***
