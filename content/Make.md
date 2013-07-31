@@ -313,7 +313,7 @@ latexmk -C
 
 ## Perl スクリプト {#ce040874}
 
-- [platex して dvipdfmx するスクリプト](http://fjyuu.info/script/platexpdf/)
+- [ファイルが更新されたら自動で platex して dvipdfmx する](http://fjyuu.info/watch-platexpdf/)
     - [platexpdf – github](https://github.com/fjyuu/platexpdf)
 
 ## バッチファイル {#n34560fd}
