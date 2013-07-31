@@ -16,7 +16,7 @@ pukiwiki: "Illustrator"
 
 ### リリース情報 {#u178a7b2}
 
-- Illustrator CS6 (v.16)   2012年
+- Illustrator CC 2013年
 
 情報等
 
@@ -80,7 +80,7 @@ $ fixill.pl <old.eps >new.eps
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
 Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
-角藤さんの “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
+W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
 >fixill.exe <old.eps >new.eps
