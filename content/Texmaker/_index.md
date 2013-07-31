@@ -502,6 +502,7 @@ C:.
 
 ## 関連リンク {#n5a9b95f}
 
+- [http://fossies.org/dox/texmaker/](http://fossies.org/dox/texmaker/)
 - [Newest &#39;texmaker&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texmaker)
     - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
     - [Configure forward search with Texmaker + SumatraPDF](http://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf)
