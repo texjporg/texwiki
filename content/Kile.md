@@ -41,6 +41,7 @@ KDE
     - [Activity](https://projects.kde.org/projects/extragear/office/kile/activity)
 - [Repository](https://projects.kde.org/projects/extragear/office/kile/repository)
     - [ChangeLog](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/ChangeLog)
+- [http://quickgit.kde.org/?p=kile.git](http://quickgit.kde.org/?p=kile.git)
 
 ## ダウンロード/インストール {#a3a3000b}
 
