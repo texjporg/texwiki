@@ -78,26 +78,12 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 ***
 
-■ platex の場合 (自動判別の場合)<br>
+■ platex の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ platex の場合 (UTF-8 の場合)<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -307,7 +293,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.07\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -342,26 +328,12 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 
 ***
 
-■ platex の場合 (自動判別の場合)<br>
+■ platex の場合<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ platex の場合 (UTF-8 の場合)<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\platex.exe</ins> または <ins>C:\w32tex\bin64\platex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
 <br>
@@ -374,7 +346,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\uplatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\uplatex.exe</ins> または <ins>C:\w32tex\bin64\uplatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -391,7 +363,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pdflatex.exe</ins> または <ins>C:\w32tex\bin64\pdflatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -408,7 +380,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\xelatex.exe</ins> または <ins>C:\w32tex\bin64\xelatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -426,7 +398,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\lualatex.exe</ins> または <ins>C:\w32tex\bin64\lualatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -440,7 +412,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\luajitlatex.exe</ins> または <ins>C:\w32tex\bin64\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -458,7 +430,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\pbibtex.exe</ins> または <ins>C:\w32tex\bin64\pbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -472,7 +444,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -486,7 +458,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\bibtexu.exe</ins> または <ins>C:\w32tex\bin64\bibtexu.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -520,7 +492,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
@@ -537,7 +509,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvips.exe</ins> または <ins>C:\w32tex\bin64\dvips.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
@@ -554,7 +526,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin64\dvipdfmx.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
@@ -588,7 +560,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bi
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\w32tex\bin\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
