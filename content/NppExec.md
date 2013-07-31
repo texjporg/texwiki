@@ -572,7 +572,7 @@ UNICODE 版の場合，デフォルトではインストールされていない
 
 ### forward search (SumatraPDF を前面に表示したくない場合) {#dfc0b616}
 
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
 #### fwdsumatrapdf {#b6351a6e}
 
