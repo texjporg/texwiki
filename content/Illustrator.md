@@ -21,10 +21,7 @@ pukiwiki: "Illustrator"
 情報等
 
 - [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
-- [入出力ファイル対応形式 （Illustrator CS6）](http://kb2.adobe.com/jp/cps/936/cpsid_93632.html)
-- [Illustrator CS5の新機能／差異](http://www.dtp-transit.jp/adobe/illustrator/post_1090.html)
-- [Illustrator CS4の主要な新機能](http://www.dtp-transit.jp/adobe/illustrator/post_656.html)
-- [Illustrator CS4までの実用的な新機能講座](http://www.incunabula.co.jp/book/Illustcs4_newfun/)
+- [Illustrator CC の新機能](http://helpx.adobe.com/jp/illustrator/using/whats-new.html)
 
 ### Illustrator の図を TeX に {#sa00c636}
 
@@ -98,6 +95,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 【参考情報】
 
+- \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
 - [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
 - [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
 - [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
