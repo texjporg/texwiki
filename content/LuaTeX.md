@@ -41,7 +41,7 @@ LuaTeX に関しては以下のページを参照してください．<br>
 
 - LuaJITTeX
 
-## LuaTeX で日本語 {#a0eb47cd}
+## LuaTeX, LuaLaTeX で日本語 {#a0eb47cd}
 
 ### [LuaTeX-ja](/LuaTeX-ja/) {#v931ec0a}
 
