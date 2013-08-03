@@ -176,7 +176,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 ***
 
 日本語の文書を作成する場合は，言語を日本語に設定します．<br>
-LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは Japanese (pLaTeX) (UTF8) を選択します．<br>
+LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．<br>
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
 出力した文書が文字化けしてしまう場合は (u)platex, (u)pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
 
@@ -193,7 +193,7 @@ lyx ファイル自体は常に UTF-8 で保存されます．<br>
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (pLaTeX) (UTF8)　　　　▼\]</span><br>
+　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
 
 <br>
 
@@ -217,7 +217,7 @@ babel を使用して文書を作成する場合は babel を on にします．
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[Japanese (pLaTeX) (UTF8)　　　　▼\]</span><br>
+　<span style="color:#3333CC;">◎</span>その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
 
 <br>
 
@@ -338,7 +338,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが Japanese (pLaTeX) の場合は既定値は DVI です．<br>
+文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
@@ -354,7 +354,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 
 #### PDF (ps2pdf) {#s335ea5f}
 
-文字コードが Japanese (pLaTeX) の場合は既定値は DVI です．<br>
+文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．<br>
 日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．<br>
 
 ***
