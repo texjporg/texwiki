@@ -14,9 +14,9 @@ pukiwiki: "AbTeXInstaller"
 ## TeX インストーラ 3 とは {#wd4d33ba}
 
 「TeX インストーラ 3」は TeX のインストーラーです。<br>
-[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，dviout for Windows，[Ghostscript](/Ghostscript/)，[GSview](http://pages.cs.wisc.edu/~ghost/gsview/)
+[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，dviout for Windows，[Ghostscript](/Ghostscript/)，[GSview](/Ghostscript/#gsview)
 をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
-環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できるかと思います。
+環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できると思います。
 
 - [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 
@@ -28,17 +28,13 @@ Windows 8, 7, Vista, XP
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) を参照．<br>
 
-### 注意事項 {#bb499d3c}
-
-GSview が CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
-GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
-GSview をインストールする場合は TeXインストーラ 3 を最新版にアップデートしてください．<br>
+<!-- **注意事項 [#bb499d3c] -->
 
 ## インストール {#gbf84ff3}
 
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 から TeXインストーラ3 の最新版をダウンロードして展開 (解凍) します。<br>
-実行方法は展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br>
+展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br>
 
 ***
 
