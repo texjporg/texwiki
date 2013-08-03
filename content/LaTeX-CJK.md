@@ -21,7 +21,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。
 このため、ツールによっては [dvisvgm](/dvisvgm/), [dvipng](/dvipng/) のように pTeX に対応してないものがあります。
 
 ここでは、コンパイラ等には手を加えず、
-マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [bxcjkjatype](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype) を紹介します。 <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
+マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [bxcjkjatype](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype) を紹介します。 <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。 --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。 --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
 UTF-8 等を用いて中国韓國文字も処理できます。
@@ -210,7 +210,7 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 
 #### bxcjkjatype {#e32515ef}
 
-[bxcjkjatype](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype) を参照．<br>
+[BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [bxcjkjatype](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype) を参照．<br>
 
 ## インストール {#fb6c9457}
 
