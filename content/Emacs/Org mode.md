@@ -177,7 +177,15 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
     \\documentclass[platex,12pt,a4paper]{bxjsarticle}
   \\fi
 \\else
-  \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\ifdefined\\XeTeXversion
+    \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\else
+    \\ifdefined\\directlua
+      \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\else
+      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+    \\fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -198,7 +206,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 \\ifdefined\\directlua
   \\hypersetup{pdfencoding=auto,colorlinks=true}
 \\else
-  \\hypersetup{colorlinks=true}
+  \\usepackage[whole,autotilde]{bxcjkjatype}
+  \\hypersetup{unicode,colorlinks=true}
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
@@ -312,7 +321,15 @@ latexmk は TeX Live に含まれています．<br>
     \\documentclass[platex,12pt,a4paper]{bxjsarticle}
   \\fi
 \\else
-  \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\ifdefined\\XeTeXversion
+    \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\else
+    \\ifdefined\\directlua
+      \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\else
+      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+    \\fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -333,7 +350,8 @@ latexmk は TeX Live に含まれています．<br>
 \\ifdefined\\directlua
   \\hypersetup{pdfencoding=auto,colorlinks=true}
 \\else
-  \\hypersetup{colorlinks=true}
+  \\usepackage[whole,autotilde]{bxcjkjatype}
+  \\hypersetup{unicode,colorlinks=true}
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
@@ -446,7 +464,15 @@ latexmk は TeX Live に含まれています．<br>
     \\documentclass[platex,12pt,a4paper]{bxjsarticle}
   \\fi
 \\else
-  \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\ifdefined\\XeTeXversion
+    \\documentclass[12pt,a4paper]{bxjsarticle}
+  \\else
+    \\ifdefined\\directlua
+      \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\else
+      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+    \\fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -467,7 +493,8 @@ latexmk は TeX Live に含まれています．<br>
 \\ifdefined\\directlua
   \\hypersetup{pdfencoding=auto,colorlinks=true}
 \\else
-  \\hypersetup{colorlinks=true}
+  \\usepackage[whole,autotilde]{bxcjkjatype}
+  \\hypersetup{unicode,colorlinks=true}
 \\fi
 \\ifdefined\\XeTeXversion
   \\usepackage{zxjatype}
