@@ -543,7 +543,9 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 #### pdflatex の場合 {#n5e2e894}
 
-文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．<br>
+<!-- 文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．~ -->
+
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションに CJK を設定します．<br>
 pdflatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -553,14 +555,14 @@ pdflatex を使用する場合は，グラフィックドライバに 既定値 
 
 <br>
 
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[KOMA-Script Article 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　文書クラス(C)<br> <!-- 　&color(Black,#EEEEEE){[KOMA-Script Article 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt</ins><br>
+　任意設定(T):　　　 <ins>12pt,CJK</ins><br>
 
 <br>
 
@@ -715,9 +717,10 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 \usepackage{ifxetex}
 \ifpdf
   \ifluatex
-    \usepackage[pdftex,pdfencoding=auto]{hyperref}
+    \usepackage[pdfencoding=auto]{hyperref}
   \else
-    \usepackage[pdftex]{hyperref}
+    \usepackage[whole,autotilde]{bxcjkjatype}
+    \usepackage[unicode]{hyperref}
   \fi
 \else
   \ifxetex
