@@ -67,8 +67,9 @@ Windows PowerShell やコマンド プロンプトで次のように打ち込み
 W32TeX \[2013/03/18\] 以降の場合は
 
 ```
->cd \w32tex
->tar xvf C:/temp/otfbeta.tar.xz
+PS C:\Users\???> c:
+PS C:\Users\???> cd \w32tex
+PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 ```
 
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
@@ -76,14 +77,14 @@ dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// �
 W32TeX \[2013/03/18\] 以降の場合は GNU tar 1.11.8 + 2.1(WIN32) になっています．
 
 ```
->tar --version
+PS C:\w32tex> .\tar --version
 GNU tar 1.11.8 + 2.1(WIN32)
 ```
 
 GNU tar 1.11.8 + 2.1(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
 
 ```
-tar xvf C:/temp/otfbeta.tar.xz
+PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 ```
 
 [Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
