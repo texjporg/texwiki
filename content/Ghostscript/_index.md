@@ -404,7 +404,9 @@ Ghostscript 9.07 を C:\Program Files (x86)\gs\gs9.07 にインストールし�
 
 MS-Windows で使用可能な gs のフロントエンド(プレビューしたり，その他様々なことを gui で行うためのソフトウェア)のいくつかについてインストール方法と注意点を簡単に記しておきます．
 
-#### GSview {#xde11637}
+#### GSview <a id="gsview"></a> {#xde11637}
+
+- GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
 - [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32bit版の GSview インストーラーをダウンロードし，実行します．GSview には 32/64bit版の区別がありますが，これは使用する gs の 32/64bit版に合わせなけなければなりません．角藤版 Ghostscript は 32bit版であるので，角藤版 Ghostscript を使用する場合には，GSview も 32bit版を用いなければなりません．
 
