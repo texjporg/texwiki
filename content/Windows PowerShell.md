@@ -9,19 +9,23 @@ pukiwiki: "Windows PowerShell"
 
 ## [Windows PowerShell](http://www.microsoft.com/powershell) {#q8f27306}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ### Windows PowerShell とは {#p39685d9}
 
 Windows PowerShell はコマンドラインシェルまたはオブジェクト指向プログラミングが可能なスクリプト言語です．
 
-### ダウンロード {#o9ec2561}
+### インストール {#o9ec2561}
 
+Windows 8.1 には Windows PowerShell 4.0 が標準搭載されています．<br>
 Windows 8 には Windows PowerShell 3.0 が標準搭載されています．<br>
-Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br>
-Windows 7 の場合は \[スタート\]-\[すべてのプログラム\]-\[アクセサリ\]-\[Windows PowerShell\]-\[Windows PowerShell\] で Windows PowerShell を起動できます．<br>
+Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br> <!-- Windows 7 の場合は [スタート]-[すべてのプログラム]-[アクセサリ]-[Windows PowerShell]-[Windows PowerShell] で Windows PowerShell を起動できます．~ -->
 
-Windows Vista, XP で Windows PowerShell がインストールされていない場合は以下のページからダウンロードできます．
+Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) からダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
+Windows Vista SP2, Windows XP SP3 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) からダウンロードしてインストールできます．<br>
 
-- [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
+- [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
+    - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
 - [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
 
 ### スクリプトの実行 {#o34da8bc}
@@ -134,3 +138,4 @@ Windows PowerShell のオープンソース実装．<br>
 - [Dos、バッチ、コマンドプロンプトで仕事をしなければいけない不幸な人に送るforコマンド解説](http://ebi.dyndns.biz/windowsadmin/2012/03/16/dos%E3%80%81%E3%83%90%E3%83%83%E3%83%81%E3%80%81%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%A7%E4%BB%95%E4%BA%8B%E3%82%92%E3%81%97%E3%81%AA%E3%81%91/)
 - [連載：Windows 2000コマンドライン徹底活用　第8回　forコマンド（その2） --  1．ディレクトリの再帰的処理](http://www.atmarkit.co.jp/fwin2k/operation/command008/command01.html)
 - [連載：Windows 2000コマンドライン徹底活用　第8回　forコマンド（その2） --  2．ファイル解析による繰り返し処理](http://www.atmarkit.co.jp/fwin2k/operation/command008/command02.html)
+- [IT技術者が困ったときに見るブログ](http://pollux.tea-nifty.com/blog/)
