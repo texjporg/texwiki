@@ -499,7 +499,7 @@ dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化され�
 まず，[TeX入門/最初の例](</TeX入門/最初の例/>) の ex1.tex をタイプセットします。<br>
 
 ```
->platex ex1
+platex ex1
 ```
 
 ex1.dvi が出力されたら dviout の \[File\]-\[Open...\] から ex1.dvi を選択して開きます。<br>
@@ -542,11 +542,11 @@ golfer.eps はモノクロ，tiger.eps はカラーの画像サンプルです�
 epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\gs\gs9.07\examples\ または C:\Program Files\gs\gs9.07\examples\ または C:\Program Files (x86)\gs\gs9.07\examples\\) から
 C:\w32tex\dviout\GRAPHIC\PS\ フォルダーにコピーしてください。
 
-コマンド プロンプトから epsfdoc.tex のタイプセットを行います。
+Windows PowerShell またはコマンド プロンプトから epsfdoc.tex のタイプセットを行います。
 
 ```
->cd c:\w32tex\dviout\GRAPHIC\PS
->platex epsfdoc
+cd c:\w32tex\dviout\GRAPHIC\PS
+platex epsfdoc
 ```
 
 dviout で epsfdoc.dvi を開くと，3ページ目の下に虎の絵が表示されます。<br>
