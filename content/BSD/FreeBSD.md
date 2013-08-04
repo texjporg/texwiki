@@ -24,6 +24,8 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ### Ports {#j8583985}
 
+- [Ports svn r317904 UPDATING 20130511](http://svnweb.freebsd.org/ports/head/UPDATING?r1=317568&r2=317904) にて，Port make時の変数 TEX_DEFAULT を tetex （2013年7月現在こちらが既定値）にするか texlive にするかで，teTeXにするかTeXliveにするかを選べるようになりました．
+
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
@@ -35,6 +37,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 - ports を使わずに TeX Live の公式パッケージをインストールする
 - ports を使って TeX Live をインストールする
+    - 日本語環境は print/texlive-full と japanese/tex-ptex をインストールすることで，従来のpLaTeXやdvipdfmxと同名同等のコマンドが利用できるようになる (/etc/make.conf にて TEX_DEFAULT=texlive と書いておくほうが良いでしょう）
 
 方法があります．
 
@@ -54,6 +57,8 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 Portsですので，
 make &amp;&amp; make installで導入できます．
+
+（多くのPortがまだteTeXを前提としているため，TeXliveとは共存しないものが多数あります．Makefile中の変数 USE_TEX の中身を確認してください．USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．）
 
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
