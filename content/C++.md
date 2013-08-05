@@ -15,3 +15,5 @@ pukiwiki: "C++"
 - [C++：CodeZine（コードジン）](http://codezine.jp/article/tag/165)
 - [本の虫](http://cpplover.blogspot.jp/)
 - [n次正方行列の逆行列をTeX形式で出力するプログラム](http://nazolab.net/notes/n/145)
+- [http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx)
+- [http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp)
