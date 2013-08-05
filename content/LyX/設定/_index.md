@@ -705,7 +705,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-(u)platex + dvipdfmx, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](https://github.com/zr-tex8r/ZXjatype) をインストールして LaTeXプリアンブルで
+(u)platex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [bxcjkjatype パッケージ](/LaTeX-CJK/), [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](/xeCJK/) をインストールして LaTeXプリアンブルで
 
 ***
 
@@ -757,7 +757,7 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 \section{\LyX{}するたびファイルがふえるね}
 ```
 
-のように入力して \[表示(V)\]-\[PDF (dvipdfm) を表示(V)\] をすると自動的にしおりを作成してくれます．
+のように入力して \[文書(D)\]-\[\[PDF (dvipdfm)\] を表示(V)\] をすると自動的にしおりを作成してくれます．
 
 ## [Inkscape](/Inkscape/) との連携 {#r74179c0}
 
