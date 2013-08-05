@@ -266,8 +266,4 @@ otf パッケージの最新版は otfbeta です。<br>
 - [日本語ＴｅＸ環境をMac Book で使いたい](http://bulesky58.com/%EF%BD%94%EF%BD%85%EF%BD%98macbook/.html)
 - [インストーラ３でのTeXのインストール](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=974)
 - [Windows 8にTeXをインストールして使うまでの手順](http://hitgot.org/archives/setting-of-tex-on-win8/)
-- [LaTeXのインストール と dvioutの設定](http://blogs.yahoo.co.jp/t_terui/64089471.html)
-- [Emacsのorg-modeで数式をインライン表示する方法](http://d.hatena.ne.jp/natsutan/20120721/1342838705)
-- [初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）](http://hnsn1202.hateblo.jp/entry/2012/06/07/030443)
-- [数学語で文章を書くために、pLATeXを使う](http://d.hatena.ne.jp/foo22222/20120601/1338545446)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
