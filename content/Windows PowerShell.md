@@ -21,6 +21,7 @@ Windows 8.1 には Windows PowerShell 4.0 が標準搭載されています．<b
 Windows 8 には Windows PowerShell 3.0 が標準搭載されています．<br>
 Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br> <!-- Windows 7 の場合は [スタート]-[すべてのプログラム]-[アクセサリ]-[Windows PowerShell]-[Windows PowerShell] で Windows PowerShell を起動できます．~ -->
 
+Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) からダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
 Windows Vista SP2, Windows XP SP3 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) からダウンロードしてインストールできます．<br>
 
