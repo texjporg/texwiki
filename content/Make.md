@@ -97,6 +97,7 @@ Makefile の書き方は簡単な条件分岐なので、ご覧になるだけ�
     - [修士論文用のテンプレートを作った](http://mkdir.g.hatena.ne.jp/ymrl/20121112/1352743084)
 - [texマン](http://utata.hatenadiary.jp/entry/2012/11/03/215140)
 - [なんかpdf作るために使ったり](https://gist.github.com/programmerMOT/4994126)
+- \[[TeX\]Makefileの活用\[Make\]](http://kevlar.blog137.fc2.com/blog-entry-3.html)
 
 ## [Latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) {#xe923cf8}
 
@@ -310,6 +311,10 @@ latexmk -C
 
 - [ptex2pdf](http://gitorious.org/tlptexlive/ptex2pdf)
     - [There and back again &middot; ptex2pdf](http://blog.preining.info/software-projects/ptex2pdf/)
+
+## Ruby スクリプト {#h23942de}
+
+- [部門/TeX/ソースファイルが更新されたら自動的にコンパイルするスクリプト](http://www47.atwiki.jp/cscd/m/pages/219.html)
 
 ## Perl スクリプト {#ce040874}
 
