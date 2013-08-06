@@ -48,7 +48,7 @@ Notepad++ は
 
 ### 動作環境 {#p5d7567d}
 
-Windows 8, 7, Vista, XP, 2000
+Windows 8.1, 8, 7, Vista, XP, 2000
 
 ### License {#p3f91661}
 
