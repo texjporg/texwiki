@@ -372,7 +372,7 @@ LaTeX 形式の数式を Inkscape に含めることが可能なエクステン�
 - [Inkscape 0.48.4 で LaTeX の数式を入れるには](http://rexpit.blog29.fc2.com/blog-entry-97.html)
 - [MacBook AirのInkscapeでLaTeXの数式を扱う](http://blog.izumin.info/2013/01/macbook-airinkscapelatex.html)
 - [Inkscape 0.4.8+TexText](http://blog.nhiroki.net/2012/10/04/textext_on_windows)
-- [textext で使う my.sty](http://kreisel.fam.cx/webmaster/clog/2011-11-23-1.html)
+- [textext で使う my.sty](http://kreisel.fam.cx/webmaster/clog/2011-11-27-1.html)
 - [ぼやっきんぐ   &raquo; Inkscape](http://www.empitsu.com/wp/?cat=8)
 - [ＯＺのＸＸ使い: textextの検索結果](http://kozimathewizard.blogspot.com/search?q=textext)
 - [いわにぃのブログ : textext を含む記事](http://blog.livedoor.jp/ti5942/search?q=textext)
@@ -561,7 +561,9 @@ RuntimeError: Command pdflatex ...
 
 C:\inkscape\share\extensions\textext.py の 1014 行目あたりを修正します．
 
-pdfcrop の実行には Perl が必要です．
+textext は PDF ファイルの作成に pdflatex を使用します．<br>
+pdflatex では [CJK LaTeX/bxcjkjatype](/LaTeX-CJK/) を使用して日本語を使用することができます．<br>
+pdfcrop の実行には Perl が必要です．<br>
 
 ***
 
@@ -624,25 +626,25 @@ C:\inkscape\tmp\tmp?????? は OSError の例外が発生し，
 
 ***
 
-#### textext で日本語を使う {#q35ff2bf}
+#### textext で (u)pLaTeX を使う {#q35ff2bf}
 
-pdflatex では，日本語を使えないので日本語を使える Tex Text Japanese を作成します．
-
-***
-
-C:\inkscape\share\extensions\textext.py をコピー，貼り付けして C:\inkscape\share\extensions\textext_ja.py にリネームします．<br>
-C:\inkscape\share\extensions\textext.inx をコピー，貼り付けして C:\inkscape\share\extensions\textext_ja.inx にリネームします．<br>
+pdfLaTeX ではなく (u)pLaTeX を使用する Tex Text pLaTeX を作成します．<br>
 
 ***
 
-C:\inkscape\share\extensions\textext_ja.inx を編集します．
+C:\inkscape\share\extensions\textext.py をコピー，貼り付けして C:\inkscape\share\extensions\textext_platex.py にリネームします．<br>
+C:\inkscape\share\extensions\textext.inx をコピー，貼り付けして C:\inkscape\share\extensions\textext_platex.inx にリネームします．<br>
 
 ***
 
-- &lt;\_name>Tex Text Japanese&lt;/\_name>
-- &lt;id>org.ekips.filter.textext_ja&lt;/id>
-- &lt;dependency type="executable" location="extensions">textext_ja.py&lt;/dependency>
-- &lt;command reldir="extensions" interpreter="python">textext_ja.py&lt;/command>
+C:\inkscape\share\extensions\textext_platex.inx を編集します．
+
+***
+
+- &lt;\_name>Tex Text pLaTeX&lt;/\_name>
+- &lt;id>org.ekips.filter.textext_platex&lt;/id>
+- &lt;dependency type="executable" location="extensions">textext_platex.py&lt;/dependency>
+- &lt;command reldir="extensions" interpreter="python">textext_platex.py&lt;/command>
 
 に変更します．
 
@@ -650,27 +652,27 @@ C:\inkscape\share\extensions\textext_ja.inx を編集します．
 
 ```
 <inkscape-extension>
-  <_name>Tex Text Japanese</_name>
-  <id>org.ekips.filter.textext_ja</id>
-  <dependency type="executable" location="extensions">textext_ja.py</dependency>
+  <_name>Tex Text pLaTeX</_name>
+  <id>org.ekips.filter.textext_platex</id>
+  <dependency type="executable" location="extensions">textext_platex.py</dependency>
   <dependency type="executable" location="extensions">inkex.py</dependency>
   <effect>
     <object-type>all</object-type>
   </effect>
   <script>
-    <command reldir="extensions" interpreter="python">textext_ja.py</command>
+    <command reldir="extensions" interpreter="python">textext_platex.py</command>
   </script>
 </inkscape-extension>
 ```
 
 ***
 
-C:\inkscape\share\extensions\textext_ja.py の 109 行目あたりの windows.set_title を "TeX Text Japanese" に変更します．
+C:\inkscape\share\extensions\textext_platex.py の 109 行目あたりの windows.set_title を "TeX Text pLaTeX" に変更します．
 
 ***
 
 ```
-            window.set_title("TeX Text Japanese")
+            window.set_title("TeX Text pLaTeX")
 ```
 
 ***
@@ -681,7 +683,7 @@ textext の Text に入力された日本語は UTF-8 で保存されます．
 
 ただし，日本語① などの文字列 (この場合は platex ではなく uplatex で処理しないと ① が表示されません) の場合は UTF-8 と判別できないようなので -no-guess-input-enc で自動判別をしないようにして -kanji=utf8 を追加します．
 
-C:\inkscape\share\extensions\textext_ja.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を
+C:\inkscape\share\extensions\textext_platex.py の 1014 行目あたりの # Exec pdflatex: tex -> pdf を
 
 - # Exec pdfplatex: tex -> dvi -> pdf
 - # Exec pdfuplatex: tex -> dvi -> pdf
@@ -742,7 +744,7 @@ pdfcrop, epstopdf の実行には Perl が必要です．
 
 ***
 
-C:\inkscape\share\extensions\textext_ja.py の 1153 行目あたりの # Exec pstoedit: pdf -> svg の項目を # Exec Ghostscript (epswrite) and pstoedit: pdf -> eps -> svg に修正します．
+C:\inkscape\share\extensions\textext_platex.py の 1153 行目あたりの # Exec pstoedit: pdf -> svg の項目を # Exec Ghostscript (epswrite) and pstoedit: pdf -> eps -> svg に修正します．
 
 ***
 
@@ -769,15 +771,15 @@ pstoedit で pdf -> svg 変換して処理すれば発生しませんでした�
 
 ```
 Traceback (most recent call last):
-  File "textext_ja.py", line 246, in cb_ok
+  File "textext_platex.py", line 246, in cb_ok
     self.callback()
-  File "textext_ja.py", line 456, in <lambda>
+  File "textext_platex.py", line 456, in <lambda>
     asker.ask(lambda: self.do_convert(info, old_node))
-  File "textext_ja.py", line 470, in do_convert
+  File "textext_platex.py", line 470, in do_convert
     new_node = converter.convert(info)
-  File "textext_ja.py", line 1050, in convert
+  File "textext_platex.py", line 1050, in convert
     new_node = self.svg_to_group()
-  File "textext_ja.py", line 1072, in svg_to_group
+  File "textext_platex.py", line 1072, in svg_to_group
     tree = etree.parse(self.tmp('svg'))
   File "lxml.etree.pyx", line 2692, in lxml.etree.parse (src/lxml/lxml.etree.c:49594)
   File "parser.pxi", line 1500, in lxml.etree._parseDocument (src/lxml/lxml.etree.c:71364)
