@@ -14,15 +14,22 @@ pukiwiki: "AbTeXInstaller"
 ## TeX インストーラ 3 とは {#wd4d33ba}
 
 「TeX インストーラ 3」は TeX のインストーラーです。<br>
-[W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)，dviout for Windows，[Ghostscript](/Ghostscript/)，[GSview](/Ghostscript/#gsview)
-をサーバからダウンロードし，それらをインストールする方式を採っています。<br>
-環境変数や dviout for Windows の初期設定など面倒な設定をユーザ自身で直接やらなくても済みますので，手軽なインストール方法として活用できると思います。
+
+- [W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)
+- dviout for Windows
+- [Ghostscript](/Ghostscript/)
+- [GSview](/Ghostscript/#gsview)
+- [TeXworks](/TeXworks/)
+
+をサーバからダウンロードしてインストールします。<br>
+環境変数 PATH の設定や TeXworks のショートカットの作成などの作業をユーザーが直接しなくても済みますので，<br>
+手軽なインストール方法として活用できると思います。
 
 - [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 
 ### 動作環境 {#ge54c4b7}
 
-Windows 8, 7, Vista, XP
+Windows 8.1, 8, 7, Vista, XP
 
 ### リリース情報 {#f691af94}
 
@@ -38,7 +45,7 @@ Windows 8, 7, Vista, XP
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>TeXのインストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXのインストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -55,7 +62,7 @@ Windows 8, 7, Vista, XP
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>TeXのインストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXのインストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -86,7 +93,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>W32TeXの高度な設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>W32TeXの高度な設定</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -103,7 +110,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>dviout, Ghostscript, GSviewのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>dviout, Ghostscript, GSviewのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -127,7 +134,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>その他のソフトのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>その他のソフトのインストール設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -141,7 +148,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　　<span style="color:White;"><strong>TeXworks 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXworks 設定</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　☑ TeXworksのショートカットをデスクトップに作成する<br>
 　TeXworks 利用時に埋め込むフォントを指定してください．<br>
@@ -156,7 +163,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:Black;background-color:#000080;"><ins>　<span style="color:White;"><strong>インストールファイルの選択</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>インストールファイルの選択</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
