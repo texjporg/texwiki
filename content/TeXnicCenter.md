@@ -34,10 +34,6 @@ Windows 7, Vista, XP
 
 [TeXnicCenter News](http://www.texniccenter.org/news) を参照．
 
-TeXnicCenter 2.0 Alpha 4 で 64-Bit Windows がサポートされました．<br>
-TeXnicCenter 2.0 Alpha 3 で Logo Contest で優勝した Lukas Schneider さんのアイコンになりました．<br>
-バージョン 1.0 は，日本語表示，日本語入力ともに不可でしたが，バージョン 2.0 から Unicode に対応し，日本語表示，日本語入力が可能になっています．<br>
-
 ### ChangeLog {#y2c9ad23}
 
 - [Hg tools](http://sourceforge.net/p/texniccenter/_list/hg)
