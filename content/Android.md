@@ -21,7 +21,7 @@ pukiwiki: "Android"
     - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
     - [Android で LaTeX](http://d.hatena.ne.jp/kaikimiyoshi2/20130727/1374925927)
     - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
-    - [Nexus7（タブレット端末）にTeXPortalをインストール](http://blog.livedoor.jp/ti5942/archives/7804326.html)
+    - [Nexus7（タブレット端末）にTeXPortalをインストール](http://blog.livedoor.jp/ti5942/archives/7804326.html), [pdflatex,TeXPortalでもbxjsarticleクラス](https://twitter.com/ti5942/status/364216566985924608)
     - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
