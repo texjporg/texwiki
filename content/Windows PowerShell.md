@@ -11,23 +11,26 @@ pukiwiki: "Windows PowerShell"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### Windows PowerShell とは {#p39685d9}
+## Windows PowerShell とは {#p39685d9}
 
 Windows PowerShell はコマンドラインシェルまたはオブジェクト指向プログラミングが可能なスクリプト言語です．
 
-### インストール {#o9ec2561}
+## インストール {#o9ec2561}
 
 Windows 8.1 には Windows PowerShell 4.0 が標準搭載されています．<br>
 Windows 8 には Windows PowerShell 3.0 が標準搭載されています．<br>
 Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br> <!-- Windows 7 の場合は [スタート]-[すべてのプログラム]-[アクセサリ]-[Windows PowerShell]-[Windows PowerShell] で Windows PowerShell を起動できます．~ -->
 
 Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
-Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) からダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
-Windows Vista SP2, Windows XP SP3 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) からダウンロードしてインストールできます．<br>
+Windows 7 SP1 は Windows Management Framework 4.0 をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
+Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) をダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
+Windows Vista SP2, Windows XP SP3 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) をダウンロードしてインストールできます．<br>
 
 - [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
     - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
 - [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
+
+## 使い方 {#f77eb1cd}
 
 ### スクリプトの実行 {#o34da8bc}
 
@@ -103,7 +106,7 @@ platex hoge.tex
 
 としたほうが簡単かもしれません．
 
-### パッケージ管理 {#l45cb315}
+## パッケージ管理 {#l45cb315}
 
 #### chocolatey {#ofbc7592}
 
@@ -112,13 +115,13 @@ platex hoge.tex
         - [texlive](http://chocolatey.org/packages/texlive)
     - [wiki](https://github.com/chocolatey/chocolatey/wiki)
 
-### Pash {#q316851f}
+## Pash {#q316851f}
 
 Windows PowerShell のオープンソース実装．<br>
 
 - [Pash](https://github.com/Pash-Project/Pash)
 
-### 関連リンク {#teb8e64f}
+## 関連リンク {#teb8e64f}
 
 - [Windows PowerShell](http://technet.microsoft.com/ja-jp/library/bb978526.aspx)
     - [Windows PowerShell コア](http://technet.microsoft.com/ja-jp/library/bb978525.aspx)
