@@ -26,7 +26,7 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 ### 動作環境 {#he80243b}
 
-Windows 8, 7, Vista, XP
+Windows 8.1, 8, 7, Vista, XP
 
 ### リリース情報/ChangeLog {#nc0d64ca}
 
