@@ -17,3 +17,8 @@ pukiwiki: "C++"
 - [n次正方行列の逆行列をTeX形式で出力するプログラム](http://nazolab.net/notes/n/145)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx)
 - [http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp)
+
+### ライブラリ・フレームワーク {#se7f734e}
+
+- [Boost](http://www.boost.org/)
+- [Qt](http://qt-project.org/)
