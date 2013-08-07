@@ -8,3 +8,6 @@ pukiwiki: "Haskell"
 # Haskell
 
 ## Haskell {#r7b07a76}
+
+- [Haskell](http://www.haskell.org/)
+- [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
