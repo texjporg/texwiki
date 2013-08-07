@@ -8,3 +8,5 @@ pukiwiki: "C Sharp"
 # C Sharp
 
 ## C# {#h89884a4}
+
+- [http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx)
