@@ -11,6 +11,7 @@ pukiwiki: "F Sharp"
 
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
+- [http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx)
 
 ### F# 3.0 {#yb6a3a97}
 
