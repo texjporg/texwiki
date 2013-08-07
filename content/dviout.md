@@ -60,6 +60,34 @@ dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
 - [http://tug.org/svn/dviout/](http://tug.org/svn/dviout/)
     - [log](http://tug.org/svn/dviout/trunk/?view=log)
 
+## 不具合 {#ufbeded4}
+
+### dviout を管理者として実行していない場合に Error in RegCreateKey が表示される → dviout を管理者として実行する {#ca2f4069}
+
+dviout を管理者として実行していない場合は Error in RegCreateKey が表示されるかもしれません。<br>
+
+***
+
+<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+<br>
+
+　　Error in RegCreateKey<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span><br>
+
+***
+
+Error in RegCreateKey が表示された場合は \[OK\] をクリックします。<br>
+\[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
+dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
+
 ## インストール {#f465326c}
 
 あらかじめ TeX システムをインストールして
@@ -435,31 +463,7 @@ C:\PROGRA~2\gs\gs9.07\bin\gswin32c.exe
 
 こちらのほうは頭のバッククォート (\`) は不要です。
 
-<!-- [Finish] をクリックすると -->
-
 \[Finish\] をクリックします。<br>
-dviout を管理者として実行していない場合は Error in RegCreateKey が表示されるかもしれません。<br>
-
-***
-
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-<br>
-
-　　Error in RegCreateKey<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span><br>
-
-***
-
-Error in RegCreateKey が表示された場合は \[OK\] をクリックします。<br>
-\[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
 設定が完了すると dviout の下の方に簡単な補足説明が出ます。<br>
 
 ```
