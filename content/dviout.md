@@ -174,13 +174,13 @@ dviout.exe を右クリックします。<br>
 ***
 
 　　　<strong>開く(O)</strong><br>
-<span style="color:Black;background-color:#DAEAFF;">　　　管理者として実行(A)...　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">　　　管理者として実行(A)　　　　　　　　　　　　　　　　　　　　</span><br>
 
 　　　...<br>
 
 ***
 
-\[管理者として実行(A)...\] を選択して dviout を起動します。<br>
+\[管理者として実行(A)\] を選択して dviout を起動します。<br>
 初回起動時は dviout が 
 
 ***
