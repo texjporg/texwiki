@@ -257,6 +257,52 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>その他のソフトウェア</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　　　インストールするソフトウェアにチェックをいれてください．<br>
+　　　　ソフト名　　　　　｜説明<br>
+　　　　☑TeXworks　　　　TeXworks の設定<br>
+
+***
+
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>インストールの完了</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　　　インストールが終了しました完全な終了の為には再起動が必要です．<br>
+
+<br>
+
+　　　　インストール結果<br>
+　　　　W32TeX　　　　　　　　　: 成功<br>
+　　　　dviout　　　　　　　　　　 : 成功<br>
+　　　　dvioutの設定　　　　　　: 成功<br>
+　　　　Ghostscript　　　　　　　: 成功<br>
+　　　　GSview　　　　　　　　　 : 成功<br>
+　　　　環境変数　　　　　　　　 : 成功<br>
+　　　　その他のソフトウェア　 : 成功<br>
+
+<br>
+
+　　　　インストールに失敗した場合はreadme等を参考にして手動インストールを試みてください．<br>
+　　　　また詳細なインストール結果及びエラー情報はabtexinst_log.txtに保存されています<br>
+
+***
+
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　<span style="color:Black;"><strong>AbTeXinst.exe</strong></span>　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　再起動が必要です．今すぐ再起動しますか？<br>
+
+<br>
+
+　　　　　　　　　　\[　　はい(Y)　　\]　\[　 いいえ(N) 　\]<br>
+
+***
+
 <!-- 【注意】「TeX インストーラ 3」は確かに手軽なインストーラですが，''「これでしかインストールできない」ようであれば，TeX に手を出す前に「昔はパソコン入門でやっていたようなこと」（ユーザ環境のカスタマイズ，コマンドライン上での作業など）を学んでおいた方が良いでしょう''。 -->
 <!--  -->
 <!-- 【↑】[[「TeX インストーラ 3」以外のインストーラー>TeX installers for Windows]]のことも時々でいいから思い出してあげてください。 -->
