@@ -47,7 +47,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux 3.10.3-1-ARCH (tty1)
+Arch Linux 3.10.5-1-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
