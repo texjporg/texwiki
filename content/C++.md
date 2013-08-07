@@ -18,6 +18,12 @@ pukiwiki: "C++"
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx)
 - [http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp)
 
+### 処理系 {#zc4c802d}
+
+- [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
+- ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
+- [Microsoft Visual Studio Express](http://www.microsoft.com/japan/msdn/vstudio/express/)
+
 ### ライブラリ・フレームワーク {#se7f734e}
 
 - [Boost](http://www.boost.org/)
