@@ -291,7 +291,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 ***
 
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　<span style="color:Black;"><strong>AbTeXinst.exe</strong></span>　　　　　　　　　　　</ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>AbTeXinst.exe</strong></span>　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -299,7 +299,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 <br>
 
-　　　　　　　　　　\[　　はい(Y)　　\]　\[　 いいえ(N) 　\]<br>
+　　　　　　　　　　\[ 　　はい(Y)　　 \]　\[　　いいえ(N)　　\]<br>
 
 ***
 
