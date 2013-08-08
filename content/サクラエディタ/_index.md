@@ -123,7 +123,9 @@ Windows 8.1, 8, 7, Vista, XP, 2000
 
 ***
 
-## デフォルトの文字コード {#a47f6241}
+## 文字コード {#a47f6241}
+
+### デフォルトの文字コード {#bbabcd0a}
 
 - [FAQ/57 - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ%2F57)
 
@@ -150,6 +152,20 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 　　　　<span style="color:#3333CC;">◎</span>改行単位(W)　　　　　　<span style="color:#3333CC;">◎</span>縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
 　　　　　　　　　　　　　　　　　　　◯任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 ▼\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+
+***
+
+### 文字コードセット指定 {#q69d8ccc}
+
+サクラエディタ Ver. 2.0.6.0 以降は \[設定(O)\]-\[文字コードセット指定(A)...\] から開いているファイルの文字コードを変更することができます．<br>
+文字コードを UTF-8 に変更する場合は UTF-8 を選択します．<br>
+
+***
+
+<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>文字コードの指定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　文字コードセット(C): <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　▼\]</span>　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span><br>
+　　　　　　　　　　　　　　☐BOM　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　キャンセル(X)　\]</span><br>
 
 ***
 
@@ -426,20 +442,20 @@ TeX のアウトライン解析機能があります．
 　　<strong>\[　スクリーン　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　カラー　\]\[ ウィンドウ \]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　 設定の名前(N)　<ins>TeX</ins>　　　　　　　　　　　　　　　　　　　　ファイル拡張子(X)　<ins>tex,ltx,sty,bib,log,blg,aux,bbl,toc,lof,lot,idx,ind,glo</ins><br>
-　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
-　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　▼\]</span>　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
-　　　　　　折り返し桁数(R)　<ins>10240　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
-　　　　　　文字の間隔(C)　　<ins>0　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　◯ ルールファイル(F)<br>
-　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
-　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　タイプ別フォント<br>
-　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　▼\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
-　　　　　　　　　　　　　　　　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　フォント(F)...　　　\]</span><br>
-　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　禁則処理<br>
-　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　　☐英文ワードラップ(W)<br>
-　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)<br>
-　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
-　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　　☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
-　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　　☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
+　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
+　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　▼\]</span>　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
+　　　　　　折り返し桁数(R)　<ins>10240　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
+　　　　　　文字の間隔(C)　　<ins>0　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
+　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
+　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　 タイプ別フォント<br>
+　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　▼\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
+　　　　　　　　　　　　　　　　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　フォント(F)...　　　\]</span><br>
+　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 禁則処理<br>
+　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　 ☐英文ワードラップ(W)<br>
+　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　 ☐改行ぶら下げ(^)<br>
+　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
+　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　 ☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
+　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　▼\]</span>　　　　　　　　　　　　　 ☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
 　　　　☐改行時に末尾の空白を削除(E)　　　　　　　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
 
 ***
