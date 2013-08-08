@@ -87,39 +87,54 @@ Windows 8.1, 8, 7, Vista, XP, 2000
 
 \[設定(T)\]-\[環境設定...\]
 
-### 新規作成/既定ディレクトリ {#eb38bb7e}
+### 新規ドキュメント (New Document) {#eb38bb7e}
 
 Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　　　　　　　　　印刷 - 色・余白　　　　　　　　　　　\]\[　　　　　　　　　　　自動保存/入力補完　　　　　　　　　　　\]\[ 　　　　　　　　　　その他　　　　　　　　　　 \]</ins></span><br>
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　全般設定　　　\]\[　　　エディット画面　　　\]</ins></span><strong>\[　　　新規作成/既定ディレクトリ　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　　　ファイルの関連付け　　　\]\[ 　　　言語メニュー/タブ設定　　　 \]</ins></span><br>
-
-　　　　　　　　　　　　　　　　　　　　新規ドキュメント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　デフォルトディレクトリ(開く/保存)<br>
-　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 <span style="color:#3333CC;">◎</span> 選択されているドキュメントのディレクトリ<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> WINDOWS　　　◯ MAC　　　　　　　 ◯ UNIX　　　　　　　　　　　◯ 前回使用したディレクトリ<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ◯ <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　<span style="color:#888888;background-color:#EEEEEE;">\[ ... \]</span><br>
-　　　　　　　　　　　　　　　　　　　　エンコード<br>
-　　　　　　　　◯ ANSI　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　開いたファイルの履歴<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 起動時にチェックしない<br>
-　　　　　　　　　　☑開いているANSIファイルに適用　　　　　　　　　　　　　　　　　　　　　　　　　　エントリ数の上限: 　　<span style="color:#3333CC;"><ins>15</ins></span><br>
-　　　　　　　　◯ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　表示<br>
-　　　　　　　　◯ UCS-2 Big Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ サブメニュー化する<br>
-　　　　　　　　◯ UCS-2 Little Endian　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ファイル名のみ<br>
-　　　　　　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span>　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 完全なファイルパス<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ 文字列の長さを指定:　　　<span style="color:White;"><ins>100</ins></span><br>
-　　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　▼\]</span><br>
+<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>環境設定</strong></span>　　　　　　　　　　</ins></span><br>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　閉じる　　\]</span><br>
+　　General<br>
+　　Editing<br>
+　　<span style="color:White;background-color:#1188FF;">New Document　　　　　　</span><br>
+　　Default Directory<br>
+　　Recent Files History<br>
+　　File Association<br>
+　　Language Menu<br>
+　　Tab Settings<br>
+　　Print<br>
+　　Backup<br>
+　　Auto-Completion<br>
+　　Multi-Instance<br>
+　　Delimiter<br>
+　　MISC.<br>
 
 ***
 
-### 自動保存/入力補完 {#u18b6dd3}
+<span style="color:Black;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規ドキュメント<br>
+　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 エンコード<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ANSI<br>
+　　　　　　　　<span style="color:#3333CC;">◎</span> Windows　　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)<br>
+　　　　　　　　◯ Mac　　　　　　　　　　　　　　　　　　　　　　　　　☑開いているANSIファイルに適用<br>
+　　　　　　　　◯ Unix　　　　　　　　　　　　　　　　　　　　　　　 ◯ UTF-8<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Little Endian<br>
+　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　▼\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　閉じる　　\]</span><br>
+
+***
+
+### 自動補完 (Auto-Completion) {#u18b6dd3}
 
 自動補完 (オートコンプリート) の設定ができます．<br>
 メニューから補完を行う場合は \[編集(E)\]-\[オートコンプリート\]-\[関数名補完\] または \[単語補完\] で補完できます．<br>
@@ -139,7 +154,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
 XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), }, \] を補完してくれます．<br>
-\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．<br>
+\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で XBrackets Lite を選択してインストールします．<br>
 \[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．<br>
 
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
@@ -158,7 +173,7 @@ Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収�
 ### inverse search {#u3c0d179}
 
 ```
-C:\npp\unicode\notepad++.exe "%f" -n%l
+"C:\npp\notepad++.exe" "%f" -n%l
 ```
 
 ## Linux で Notepad++ {#hd58d1c7}
