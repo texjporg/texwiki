@@ -314,9 +314,6 @@ otf パッケージの最新版は otfbeta です。<br>
     <!-- ↑一次配布元などではないので、このあたりが妥当 -->
     <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
 
-- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編(2013年6月版)](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法（2013年4月版）](http://did2memo.net/2012/04/27/tex-uninstall/)
-- [WindowsへのTeXのインストール](http://www.ic.daito.ac.jp/~mizutani/tex/install.html)
-- [日本語ＴｅＸ環境をMac Book で使いたい](http://bulesky58.com/%EF%BD%94%EF%BD%85%EF%BD%98macbook/.html)
-- [インストーラ３でのTeXのインストール](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=974)
+- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法](http://did2memo.net/2012/04/27/tex-uninstall/)
 - [Windows 8にTeXをインストールして使うまでの手順](http://hitgot.org/archives/setting-of-tex-on-win8/)
 - [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
