@@ -14,7 +14,7 @@ pukiwiki: "NppExec"
 ## [NppExec](http://sourceforge.net/projects/npp-plugins/files/NppExec/) {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
-UNICODE 版の場合，デフォルトではインストールされていないので \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] でインストールします．<br>
+\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で NppExec を選択してインストールできます．<br>
 \[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
