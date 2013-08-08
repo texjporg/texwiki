@@ -310,9 +310,9 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 　　　　　　正規表現キーワード10　　　　　　　　　　　　　　　　　　　　　　　　 行型(G)　　　　　　　☐桁(J)　　\]　 <ins>1　　\[◆\]</ins><br>
 　　　　　　DIFF差分表示(追加)<br>
 　　　　　　DIFF差分表示(変更)<br>
-　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　エスケープ<br>
-　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> C言語風: "\\""<br>
-　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　◯ PL/SQL風: """"<br>
+　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　文字列エスケープ(Q)<br>
+　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[C/C++言語風 \\"　　▼\]</span> ☐行内のみ(\\)<br>
+　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　<span style="color:#888888;">☐終了文字がない場合行末まで色分け(N)</span><br>
 
 <br>
 
@@ -431,13 +431,10 @@ TeX のアウトライン解析機能があります．
 　　　　　　折り返し桁数(R)　<ins>10240　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　▼\]</span><br>
 　　　　　　文字の間隔(C)　　<ins>0　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　◯ ルールファイル(F)<br>
 　　　　　　　　行の間隔(L)　　<ins>1　　　\[◆\]</ins> ドット　　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
-　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins><br>
-　　　　　 TAB表示(8文字)　<ins>^       </ins><br>
-　　　　　　　☐矢印表示(>)　　☐SPACEの挿入<br>
-
-<br>
-
-　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　その他<br>
+　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　タイプ別フォント<br>
+　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　▼\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
+　　　　　　　　　　　　　　　　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　フォント(F)...　　　\]</span><br>
+　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　禁則処理<br>
 　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　　☐英文ワードラップ(W)<br>
 　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ▼\]</span>　　　　　　　　　　　　　　☐改行ぶら下げ(^)<br>
 　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
@@ -526,9 +523,9 @@ $ wine sakura.exe
 　　名前を付けて保存...　　　　　　　　　　　　　　　　　　　　　　 右サイドクリック<br>
 　　すべて上書き保存　　　　　　　　　　　　　　　　 ☐Alt　　　　トリプルクリック<br>
 　　閉じて(無題)　　　　　　　　　　　　　　　　　　　　　　　　　　 クアドラプルクリック<br>
-　　閉じて開く...　　　　　　　　　　　　　　　　　　　　　　　　　　 　F1<br>
-　　閉じる　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 F2<br>
-　　保存して閉じる　　　　　　　　　　　　　　　　　　　　　　　　　 F3<br>
+　　閉じて開く...　　　　　　　　　　　　　　　　　　　　　　　　　　 　ホイールアップ<br>
+　　閉じる　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ホイールダウン<br>
+　　保存して閉じる　　　　　　　　　　　　　　　　　　　　　　　　　 ホイール左<br>
 　　…　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 …<br>
 　<ins>　機能に割り当てられているキー(G)　　　　</ins><br>
 
