@@ -30,6 +30,10 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 ## 不具合 {#mb96765c}
 
+### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → \special{papersize=148truemm,210truemm} {#r12477d0}
+
+- [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
+
 ### [dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961) → [pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259) を使用する {#he8e8e71}
 
 - [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
