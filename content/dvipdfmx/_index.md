@@ -30,7 +30,9 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 ## 不具合 {#mb96765c}
 
-### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → \special{papersize=148truemm,210truemm} {#r12477d0}
+### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → TeX Live 2014 以降または W32TeX \[2013/08/09\] 以降にアップデート {#r12477d0}
+
+TeX Live 2014 (→ [Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398) を参照) および W32TeX \[2013/08/09\] で修正されました
 
 - [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
 
