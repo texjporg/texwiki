@@ -83,7 +83,7 @@ Windows 8.1, 8, 7, Vista, XP, 2000
 メニューの Encoding (日本語メニューでは“エンコード(M)”) に “ANSI で開く” が選択されている場合，日本語を入力すると文字化けを起こします．<br>
 日本語が使えるエンコーディング (UTF-8 (BOM なし), UTF-8 など) を選択してください．<br>
 
-## 環境設定 {#ka388f7d}
+## 環境設定 (Preferences) {#ka388f7d}
 
 \[設定(T)\]-\[環境設定...\]
 
@@ -121,12 +121,12 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規ドキュメント<br>
 　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 エンコード<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ANSI<br>
-　　　　　　　　<span style="color:#3333CC;">◎</span> Windows　　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> UTF-8(BOMなし)<br>
-　　　　　　　　◯ Mac　　　　　　　　　　　　　　　　　　　　　　　　　☑開いているANSIファイルに適用<br>
-　　　　　　　　◯ Unix　　　　　　　　　　　　　　　　　　　　　　　 ◯ UTF-8<br>
+　　　　　　　 <span style="color:#3333CC;">(●)</span> Windows　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">(●)</span> UTF-8(BOMなし)<br>
+　　　　　　　　◯ Old Mac　　　　　　　　　　　　　　　　　　　　　　　☑開いているANSIファイルに適用<br>
+　　　　　　　　◯ Unix/OSX　　　　　　　　　　　　　　　　　　　　◯ UTF-8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Little Endian<br>
-　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　▼\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　▼\]</span><br>
+　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　ᐯ\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　ᐯ\]</span><br>
 
 <br>
 
@@ -141,7 +141,7 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 - [自動補完 (Auto Complete) - Notepad++の使用方法](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/edit/auto-complete.htm)
 
-## プラグイン {#k2155ff2}
+## プラグイン (Plugins) {#k2155ff2}
 
 - [NotePad++ プラグイン](http://www.geocities.jp/freesftys/)
 - [SourceForge.net: Plugin Central - notepad-plus](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Plugin_Central)
