@@ -98,11 +98,11 @@ Windows 8.1, 8, 7, Vista, XP, 2000
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　編集　\]\[　ファイル　\]\[　ファイル名表示　\]\[　バックアップ　\]\[　書式　\]\[　検索　\]\[　キー割り当て　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]</ins></span><strong>\[　　支援　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　　マクロ　　 \]\[　　プラグイン　　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　　\]\[ 　検索　　　\]\[ 　キー割り当て　 \]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　\]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]</ins></span><strong>\[　　支援　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　　マクロ　　　 \]\[　　プラグイン　　\]</ins></span><br>
 　　　入力補完機能<br>
 　　 候補決定キー　　☑Enter　　☐Tab　　☑→(R)<br>
 
@@ -131,13 +131,13 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ スクリーン \]\[ カラー \]</ins></span><strong>\[ ウィンドウ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 支援　\]\[ 正規表現キーワード \]\[ キーワードヘルプ \]</ins></span><br>
 　　　 入力モード<br>
 　　　　デフォルトの文字コード　　　　　　　　　　　　　　　　　　　起動時のIME（日本語入力変換）<br>
-　　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　ᐯ\]</span>　　　　　　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　　　ᐯ\]</span><br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　ᐯ\]</span> ☐BOM　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　 ᐯ\]</span><br>
+　　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　<strong>ᐯ</strong>\]</span> ☐BOM　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　 <strong>ᐯ</strong>\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
 <br>
@@ -146,8 +146,8 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 　　　　☐文書アイコンを使う(O)<br>
 　　　　行番号の表示　　　　　　　行番号区切り　　　　　　　　　背景画像<br>
 　　　　◯ 折り返し単位(R)　　　　◯ なし(N)　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
-　　　 <span style="color:#3333CC;">(●)</span> 改行単位(W)　　　　　<span style="color:#3333CC;">(●)</span> 縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
-　　　　　　　　　　　　　　　　　　　◯ 任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 ᐯ\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+　　　 (●) 改行単位(W)　　　　　(●) 縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
+　　　　　　　　　　　　　　　　　　　◯ 任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 <strong>ᐯ</strong>\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 
 ***
@@ -159,9 +159,9 @@ UTF-8 をデフォルトの文字コードに指定する場合は UTF-8 を選�
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>文字コードの指定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>文字コードの指定</strong></span>　　　　　　　　　　　　　　　</ins></span><br>
 
-　　文字コードセット(C): <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　ᐯ\]</span>　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span><br>
+　　文字コードセット(C): <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　<strong>ᐯ</strong>\]</span>　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span><br>
 　　　　　　　　　　　　　　☐BOM　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　キャンセル(X)　\]</span><br>
 
 ***
@@ -199,11 +199,11 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]\[ 　　支援　　 \]\[ 　　マクロ　　 \]\[　　プラグイン　　 \]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー 　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　編集　\]\[　ファイル　\]\[　ファイル名表示　\]\[　バックアップ　\]\[　書式　\]</ins></span><strong>\[　検索　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キー割り当て　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]\[　　支援　　　　\]\[ 　　マクロ　　　　\]\[　　プラグイン　　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　 \]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　 \]</ins></span><strong>\[ 　検索　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　キー割り当て　 \]</ins></span><br>
 
 <br>
 
@@ -231,9 +231,9 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>検索</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>検索</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　条件(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ᐯ</ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
+　　条件(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
 　　☐英大文字と小文字を区別する(C)<br>
 　　☑正規表現(E)　　 bregonig.dll Ver.3.05 with Onigmo 5.13.5　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
@@ -247,18 +247,18 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>置換</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>置換</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　置換前(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ᐯ</ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
-　　置換後(P)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ᐯ</ins>　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
+　　置換前(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
+　　置換後(P)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins>　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
 　　☐クリップボードから貼り付ける(T)　　　　　　　　　　置換対象　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
-　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 選択文字(0)<br>
+　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　 (●) 選択文字(0)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(R)　　　\]</span><br>
 　　☑正規表現(E)　　　　　　　　　　　　　　　　　　　　　 ◯ 選択終点(2)追加　　　　<span style="color:Black;background-color:#EEEEEE;">\[　すべて置換(A)　\]</span><br>
 　　　　bregonig.dll Ver.3.05 with Onigmo 5.13.5<br>
 　　☐「すべて置換」は置換の繰返し(I)　　　　　　　　　　範囲<br>
 　　☑見つからないときにメッセージを表示(M)　　　　　◯ 選択範囲(S)<br>
-　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　 <span style="color:#3333CC;">◎</span> ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
+　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　(●) ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
 　　☐先頭（末尾）から再検索する(Z)　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　ヘルプ(H)　　 \]</span><br>
 
 ***
@@ -267,18 +267,18 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　　　 <span style="color:White;"><strong>Grep条件入力</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Grep条件入力</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　条件(N)　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ᐯ</ins><br>
-　　ファイル(T)　　<ins>\*.\*　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ᐯ</ins><br>
-　　フォルダ(O)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ᐯ</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
+　　条件(N)　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins><br>
+　　ファイル(T)　　<ins>\*.\*　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <strong>ᐯ</strong></ins><br>
+　　フォルダ(O)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 現フォルダ(U) \]</span><br>
 　　☑サブフォルダからも検索する(E)　　　　　　　　　　　　　　　　　　　結果出力<br>
-　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 該当行(L)<br>
+　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　 (●) 該当行(L)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　　　　　　　　　　◯ 該当部分(P)　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　検索(F)　　\]</span><br>
 　　☑正規表現(E)<br>
 　　　　bregonig.dll Ver.3.05 with Onigmo 5.13.5　　　　　　　　　　　　　　結果出力形式<br>
-　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　ᐯ\]</span>　　　　　　　　　　<span style="color:#3333CC;">◎</span> ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
+　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　 (●) ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
 　　☐フォルダの初期値をカレントフォルダにする(D)　　　　　　　　　　 ◯ ファイル毎（I）　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　ヘルプ(H)　　\]</span><br>
 
 ***
@@ -307,11 +307,11 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]</ins></span><strong>\[　カラー　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ウィンドウ \]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　　色指定(L)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　強調キーワード<br>
-　　　　<strong>✓</strong> <span style="color:White;background-color:#1188FF;">正規表現キーワード1　　　　　　　　　　　　</span>　　　　　　　　　　　　　　強調キーワード1　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　ᐯ\]</span><br>
+　　　　<strong>✓</strong> <span style="color:White;background-color:#1188FF;">正規表現キーワード1　　　　　　　　　　　　</span>　　　　　　　　　　　　　　強調キーワード1　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　　　正規表現キーワード2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　　2～10...　　　　　\]</span><br>
 　　　　　　正規表現キーワード3　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　共通設定(C)...　　　\]</span><br>
 　　　　　　正規表現キーワード4<br>
@@ -324,7 +324,7 @@ bregonig.dll Ver.3.05 with Onigmo 5.13.5
 　　　　　　DIFF差分表示(追加)<br>
 　　　　　　DIFF差分表示(変更)<br>
 　　　　☑色分け/表示(D)　　☐太字(B)　　☐下線(U)　　　　　　　　　　　　文字列エスケープ(Q)<br>
-　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[C/C++言語風 \\"　　ᐯ\]</span> ☐行内のみ(\\)<br>
+　　　　　　文字色(C)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　文字色統一(&lt;)...　\]</span>　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[C/C++言語風 \\"　　<strong>ᐯ</strong>\]</span> ☐行内のみ(\\)<br>
 　　　　　　背景色(K)　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　背景色統一(>)...　\]</span>　　　　　　　　　　　　　<span style="color:#888888;">☐終了文字がない場合行末まで色分け(N)</span><br>
 
 <br>
@@ -340,7 +340,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[ ウィンドウ \]\[　支援　\]</ins></span><strong>\[　正規表現キーワード　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　キーワードヘルプ　\]</ins></span><br>
 
@@ -355,7 +355,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 　　　　∣　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　挿入(S)　\]</span><br>
 　　　　∣　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　追加(A)　\]</span><br>
 　　　正規表現(N)　　<ins>/\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k</ins> 　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　更新(E)　\]</span><br>
-　　　　 色指定(C)　　 <span style="color:Black;background-color:#EEEEEE;">\[正規表現キーワード1　　　　　　　　　ᐯ\]</span>　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　削除(D)　\]</span><br>
+　　　　 色指定(C)　　 <span style="color:Black;background-color:#EEEEEE;">\[正規表現キーワード1　　　　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　削除(D)　\]</span><br>
 　　　\[色指定\]で「URL」を選択するとマッチ文字列が　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　エクスポート(X)...　\]</span><br>
 　　　クリッカブルになります<br>
 
@@ -387,11 +387,11 @@ TeX の入力補完機能があります．
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリーン　\]\[　カラー　\]\[ ウィンドウ \]</ins></span><strong>\[　支援　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 　　　　入力補完機能<br>
-　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　ᐯ\]</span><br>
+　　　　単語ファイル(W)　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ (1)... \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　☐英大文字小文字を同一視(I)　　　　　　候補： ☑編集中のファイル(F)　☑強調キーワード(K)<br>
 
 <br>
@@ -434,25 +434,25 @@ TeX のアウトライン解析機能があります．
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<strong>\[　スクリーン　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　カラー　\]\[ ウィンドウ \]\[　支援　\]\[　正規表現キーワード　\]\[　キーワードヘルプ　\]</ins></span><br>
 
 　　　 設定の名前(N)　<ins>TeX</ins>　　　　　　　　　　　　　　　　　　　　ファイル拡張子(X)　<ins>tex,ltx,sty,bib,log,blg,aux,bbl,toc,lof,lot,idx,ind,glo</ins><br>
 　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
-　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　ᐯ\]</span>　　　　　　　　　　　<span style="color:#3333CC;">◎</span> 標準ルール(B)<br>
-　　　　　　折り返し桁数(R)　<ins>10240　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　ᐯ\]</span><br>
+　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　 (●) 標準ルール(B)<br>
+　　　　　　折り返し桁数(R)　<ins>10240　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　　　文字の間隔(C)　　<ins>0　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
 　　　　　　　　行の間隔(L)　　<ins>1　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
 　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　 タイプ別フォント<br>
-　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　ᐯ\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
+　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　<strong>ᐯ</strong>\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
 　　　　　　　　　　　　　　　　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　フォント(F)...　　　\]</span><br>
 　　　　インデント　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 禁則処理<br>
 　　　　☑自動インデント(U)　　　 ☑全角空白も(Z)　　　　　　　　　　　　　　 ☐英文ワードラップ(W)<br>
-　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 ᐯ\]</span>　　　　　　　　　　　　　 ☐改行ぶら下げ(^)<br>
+　　　　スマートインデント(S)　　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　 <strong>ᐯ</strong>\]</span>　　　　　　　　　　　　　 ☐改行ぶら下げ(^)<br>
 　　　　その他のインデント対象文字(I)　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐ぶら下げを隠す(-)</span><br>
 　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　</ins>　　　　　　　　　　　　　 ☐句読点ぶら下げ(\\)　　　<ins>、。，．､｡,.</ins><br>
-　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　ᐯ\]</span>　　　　　　　　　　　　　 ☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
+　　　　折り返し行インデント(2)　　<span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　　 ☐行頭禁則(\[)　　<ins>　　　　　　　　　　　</ins><br>
 　　　　☐改行時に末尾の空白を削除(E)　　　　　　　　　　　　　　　　　　　　☐行末禁則(\])　　<ins>　　　　　　　　　　　</ins><br>
 
 ***
@@ -471,11 +471,11 @@ TeX のアウトライン解析機能があります．
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　編集　\]\[　ファイル　\]\[　ファイル名表示　\]\[　バックアップ　\]\[　書式　\]\[　検索　\]\[　キー割り当て　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]\[　　支援　　\]\[ 　　マクロ　　 \]</ins></span><strong>\[　　プラグイン　　\]</strong><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　　\]\[ 　検索　　　\]\[ 　キー割り当て　 \]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　\]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]\[　　支援　　　\]\[ 　　マクロ　　　 \]</ins></span><strong>\[　　プラグイン　　\]</strong><br>
 
 　プラグイン　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　ZIPプラグインを導入(Z)　　\]</span><br>
 　☑プラグインを有効にする(E)　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　フォルダを開く(F)　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　新規プラグインを追加(I)　　\]</span><br>
@@ -521,13 +521,13 @@ $ wine sakura.exe
 
 ***
 
-<span style="color:Black;background-color:#FF77AA;"><ins>　<span style="color:White;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FA77AA;"></ins>\[ <strong><span style="color:White;">？</span></strong> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　\]\[　　強調キーワード　　\]\[ 　　支援　　 \]\[ 　　マクロ　　 \]\[　　プラグイン　　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　全般　 \]\[　ウィンドウ　\]\[ 　メインメニュー　 \]\[　ツールバー　\]\[ 　タブバー　 \]\[　ステータスバー　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　編集　\]\[　ファイル　\]\[　ファイル名表示　\]\[　バックアップ　\]\[　書式　\]\[　検索　\]</ins></span><strong>\[　キー割り当て　\]</strong><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]\[　　支援　　　　\]\[ 　　マクロ　　　　\]\[　　プラグイン　　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　 \]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　　\]\[ 　検索　　　\]</ins></span><strong>\[ 　キー割り当て　 \]</strong><br>
 
-　　　　　　種別(K)　<span style="color:Black;background-color:#EEEEEE;">\[ ファイル操作系　　　　ᐯ\]</span>　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span><br>
+　　　　　　種別(K)　<span style="color:Black;background-color:#EEEEEE;">\[ ファイル操作系　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span><br>
 　　機能(F)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　キー(Y)<br>
 　　新規作成　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#1188FF;">ダブルクリック　　　　　　　　　　　　　　</span><br>
 　　開く...　　　　　　　　　　　　　　　　　　　　　 　　　☐Shift 　 　右クリック<br>
