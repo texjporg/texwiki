@@ -93,7 +93,7 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>環境設定</strong></span>　　　　　　　　　　</ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　</ins></span><br>
 
 <br>
 
@@ -114,19 +114,19 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規ドキュメント<br>
 　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 エンコード<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ANSI<br>
-　　　　　　　 <span style="color:#3333CC;">(●)</span> Windows　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;">(●)</span> UTF-8(BOMなし)<br>
+　　　　　　　 (●) Windows　　　　　　　　　　　　　　　　　　　　(●) UTF-8(BOMなし)<br>
 　　　　　　　　◯ Old Mac　　　　　　　　　　　　　　　　　　　　　　　☑開いているANSIファイルに適用<br>
 　　　　　　　　◯ Unix/OSX　　　　　　　　　　　　　　　　　　　　◯ UTF-8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Little Endian<br>
-　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　ᐯ\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　ᐯ\]</span><br>
+　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　<strong>ᐯ</strong>\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 
 <br>
 
@@ -173,7 +173,8 @@ Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収�
 ### inverse search {#u3c0d179}
 
 ```
-"C:\npp\notepad++.exe" "%f" -n%l
+"C:\Program Files\Notepad++\notepad++.exe" "%f" -n%l
+"C:\Program Files (x86)\Notepad++\notepad++.exe" "%f" -n%l
 ```
 
 ## Linux で Notepad++ {#hd58d1c7}
