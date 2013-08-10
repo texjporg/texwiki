@@ -19,15 +19,16 @@ Sublime Text はテキストエディタです． (シェアウェア)
 
 - [Sublime Text](http://www.sublimetext.com/)
 
+### Sublime Text 2 {#z97e1aeb}
+
+- [Sublime Text 2](http://www.sublimetext.com/2)
+    <!-- -[[Sublime Text 2 - Dev Builds:http://www.sublimetext.com/dev]] -->
+    <!-- -[[Sublime Text 2 - Nightly Builds:http://www.sublimetext.com/nightly]] -->
+
 ### Sublime Text 3 {#o04f9cc2}
 
 - [Sublime Text 3](http://www.sublimetext.com/3)
 - [Sublime Text 3 - Dev Builds](http://www.sublimetext.com/3dev)
-
-<!-- **Sublime Text 2 [#z97e1aeb] -->
-<!-- -[[Sublime Text 2:http://www.sublimetext.com/2]] -->
-<!-- -[[Sublime Text 2 - Dev Builds:http://www.sublimetext.com/dev]] -->
-<!-- -[[Sublime Text 2 - Nightly Builds:http://www.sublimetext.com/nightly]] -->
 
 ### 動作環境 {#ec9465b5}
 
@@ -53,11 +54,9 @@ Windows, OS X, Linux
 - [【Windowsアプリケーション】Sublime Text 2 メニュー日本語化](http://blog.huwy.org/article/292827228.html)
     - Mac でも日本語化できるみたいです
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text 2 and 3)](https://github.com/SublimeText/LaTeXTools/tree/st3) {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text 2 and 3)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
 
-- [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/st3)
-    <!-- -[[SublimeText/LaTeXTools · GitHub:https://github.com/SublimeText/LaTeXTools]] -->
-
+- [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
 
 ### Windows {#m3e22b6d}
@@ -85,6 +84,31 @@ Windows, OS X, Linux
 
 - [SublimeOnSaveBuild Sublime Plugin](https://github.com/alexnj/SublimeOnSaveBuild)
 - [Sublime Text 2 でファイル保存時に自動でビルドさせる](http://y-anz-m.blogspot.jp/2012/11/sublime-text-2.html)
+
+## SumatraPDF との連携 {#hf07fc30}
+
+### inverse search {#u2a5078e}
+
+```
+"C:\Program Files\Sublime Text 2\sublime_text.exe" "%f:%l"
+"C:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
+```
+
+## Skim との連携 {#a71db317}
+
+### inverse search {#ud969bd6}
+
+PDF-TeX 同期サポート:
+: &nbsp;
+
+初期値:
+: Sublime Text 2 または Custom
+
+コマンド:
+: /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
+
+引数:
+: "%file":%line
 
 ## 関連リンク {#p3fe3a8a}
 
