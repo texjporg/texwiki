@@ -100,12 +100,12 @@ otf パッケージの最新版は otfbeta です。<br>
 　　インストールするファイルを選んでください．<br>
 　　　　◯ otf<br>
 　　　　◯ otfdevel<br>
-　　　　◎ otfbeta<br>
+　　　 (●) otfbeta<br>
 
-　　　　◎ luatex-w32<br>
+　　　 (●) luatex-w32<br>
 　　　　◯ luatex-dev-w32<br>
 
-　　　　◎ luatex-w64<br>
+　　　 (●) luatex-w64<br>
 　　　　◯ luatex-dev-w64<br>
 
 ***
@@ -152,7 +152,7 @@ otf パッケージの最新版は otfbeta です。<br>
 
 　☑ TeXworksのショートカットをデスクトップに作成する<br>
 　TeXworks 利用時に埋め込むフォントを指定してください．<br>
-　　◎ デフォルトの指定を使います．<br>
+　 (●) デフォルトの指定を使います．<br>
 　　◯ msmingoth.map（ＭＳ 明朝・ＭＳ ゴシックを用います．）<br>
 　　◯ hiragino.map（ヒラギノフォントを用います．）<br>
 　　◯ ipaex.map（IPAex フォントを用います．）<br>
