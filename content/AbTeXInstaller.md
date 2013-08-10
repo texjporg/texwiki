@@ -219,28 +219,28 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑utf.tar.xz　　　　　　　　　　　　　　　　無い　　　706KB<br>
 　　　　 ∣☑vf-a2bk.tar.xz　　　　　　　　　　　　　無い　　　10KB<br>
 　　　　 ∣☑vf-n2bk.tar.xz　　　　　　　　　　　　　無い　　　13KB<br>
-　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　無い　　　26.4MB<br>
-　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑web2c-lib.tar.xz　　　　　　　　　　　　無い　　　26.4MB<br>
+　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　　無い　　　16.0MB<br>
 　　　　 ∣☑win64/aleph-w64.tar.xz　　　　　　　無い　　　771KB<br>
-　　　　 ∣☑win64/context-w64.tar.xz　　　　　　　無い　　　1.1MB<br>
+　　　　 ∣☑win64/context-w64.tar.xz　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/dvi2ps-w64.tar.xz　　　　　　　無い　　　689KB<br>
 　　　　 ∣☑win64/dvi2tty-w64.tar.xz　　　　　　　無い　　　428KB<br>
-　　　　 ∣☑win64/dvipdfm-w64.tar.xz　　　　　　　無い　　　729KB<br>
+　　　　 ∣☑win64/dvipdfm-w64.tar.xz　　　　　　無い　　　729KB<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
-　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　　無い　　　1.1MB<br>
+　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
 　　　　 ∣☑win64/luajittex-w64.tar.xz　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
-　　　　 ∣☑win64/makeindex-w64.tar.xz　　　　　無い　　　477KB<br>
-　　　　 ∣☑win64/mftools-w64.tar.xz　　　　　　　無い　　　417KB<br>
-　　　　 ∣☑win64/mftrace-w64.tar.xz　　　　　　　無い　　　364KB<br>
+　　　　 ∣☑win64/makeindex-w64.tar.xz　　　　無い　　　477KB<br>
+　　　　 ∣☑win64/mftools-w64.tar.xz　　　　　　無い　　　417KB<br>
+　　　　 ∣☑win64/mftrace-w64.tar.xz　　　　　　無い　　　364KB<br>
 　　　　 ∣☑win64/omegaj-w64.tar.xz　　　　　　　無い　　　392KB<br>
 　　　　 ∣☑win64/pdftex-w64.tar.xz　　　　　　　無い　　　1.8MB<br>
-　　　　 ∣☑win64/plain2-2.54-w64.tar.xz　　　　　無い　　　45KB<br>
-　　　　 ∣☑win64/pmx-w64.tar.xz　　　　　　　　　無い　　　576KB<br>
+　　　　 ∣☑win64/plain2-2.54-w64.tar.xz　　　　無い　　　45KB<br>
+　　　　 ∣☑win64/pmx-w64.tar.xz　　　　　　　　無い　　　576KB<br>
 　　　　 ∣☑win64/psutils-w64.tar.xz　　　　　　　無い　　　368KB<br>
-　　　　 ∣☑win64/ptex-w64.tar.xz　　　　　　　　　無い　　　1.5MB<br>
+　　　　 ∣☑win64/ptex-w64.tar.xz　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑win64/sam2p-w64.tar.xz　　　　　　　無い　　　397KB<br>
 　　　　 ∣☑win64/t1utils-w64.tar.xz　　　　　　　無い　　　39KB<br>
 　　　　 ∣☑win64/tex4htk-w64.tar.xz　　　　　　　無い　　　405KB<br>
