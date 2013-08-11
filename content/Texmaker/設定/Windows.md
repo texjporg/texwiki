@@ -39,7 +39,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -124,7 +124,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -245,7 +245,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode -jobname="%~n1" %1 && ^
+platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode %1 && ^
 dvipdfmx "%~n1" && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
@@ -276,7 +276,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode -jobname="%~n1" %1 && ^
+platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
