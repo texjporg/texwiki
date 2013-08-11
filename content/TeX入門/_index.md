@@ -69,10 +69,6 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 まずは次の本を挙げておきます。
 
-- [Leslie Lamport](http://lamport.org/) 著，[阿瀬 はる美](https://twitter.com/harumi_ase)
-    訳『[文書処理システム LaTeX2e](http://www.pej-hed.jp/washo/103.html)』（ピアソン・エデュケーション（現：[株式会社ピアソン桐原](http://www.pearsonkirihara.jp/)），1999年，税込価格 &yen;3,150，[ISBN 978-4-89471-139-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-89471-139-6)）……LaTeX2e
-    の原典です。
-
 - [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)『[［改訂第5版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』（[技術評論社](http://gihyo.jp/)，2010年7月，定価 &yen;3,339 (本体 &yen;3,180)，[ISBN 978-4-7741-4319-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-4319-4)）……角藤さんの
     [W32TeX](/W32TeX/) と
     [Ghostscript](/Ghostscript/)，OS X 用バイナリなどを収めた
