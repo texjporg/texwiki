@@ -275,7 +275,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
     - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.07”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.07 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです(Windows 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので注意が必要です)．また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs9.07 などというフォルダーにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs9.07 などといったフォルダー構造を仮定していることが多いということは理解しておいてください．
+\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.07 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです(Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので注意が必要です)．また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs9.07 などというフォルダーにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs9.07 などといったフォルダー構造を仮定していることが多いということは理解しておいてください．
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -286,7 +286,7 @@ ASCII 以外の文字（日本語など）を使っていると，Ghostscript �
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。<br>
 環境変数 TEMP のデフォルトは
-Windows 8, 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
+Windows 8.1, 8, 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
 (&cong; C:\Users\\%USERNAME%\AppData\Local\Temp) と，
 Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
 (&cong; "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
@@ -317,7 +317,7 @@ Ghostscript 9.07 を C:\gs\gs9.07 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib<br>C:\w32tex\bin;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -349,7 +349,7 @@ Ghostscript 9.07 を C:\Program Files\gs\gs9.07 にインストールした場�
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -381,7 +381,7 @@ Ghostscript 9.07 を C:\Program Files (x86)\gs\gs9.07 にインストールし�
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
