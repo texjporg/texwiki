@@ -27,20 +27,20 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 
 ## 日本語対応の TeX 環境の導入 {#b369bf5c}
 
-2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，本家から提供されることになりました．<br>
+2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されることになりました．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
-[以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，本家の texlive パッケージをインストールする方法を説明しています．<br>
-いわゆる OS のパッケージングなので，本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
+[以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，TeX Live/Cygwin をインストールする方法を説明しています．<br>
+いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
 Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
-- [TeX Live の公式パッケージ](http://tug.org/texlive/)＋[tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [TeX Live の公式パッケージ](http://tug.org/texlive/)
 - [W32TeX](/W32TeX/)
 
 の選択肢もあります．
 
-[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) に Cygwin のバイナリが用意されています．<br>
-ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです．
+<!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
+<!-- ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
 ## TeX Live <a id="texlive"></a> {#dead7b03}
 
@@ -252,9 +252,7 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 
 #### extractbb の追加 {#uc813f02}
 
-/usr/share/texmf-dist/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
+/usr/share/texmf-dist/web2c/texmf.cnf に shell_escape_commands が以下のように記述されていると思います．<br>
 
 ```
 shell_escape_commands = \
@@ -265,7 +263,24 @@ mpost,\
 repstopdf,\
 ```
 
-shell_escape_commands を以下のように編集して保存します．
+デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/share/texmf-site
+```
+
+/usr/share/texmf-site/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/share/texmf-site/web2c
+$ sudo touch /usr/share/texmf-site/web2c/texmf.cnf
+```
+
+/usr/share/texmf-site/web2c/texmf.cnf を編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
@@ -289,7 +304,7 @@ $ make prefix=/usr install
 $ popd
 ```
 
-/usr/share/texmf-dist/web2c/texmf.cnf に設定を追加します．<br>
+/usr/share/texmf-site/web2c/texmf.cnf に設定を追加します．<br>
 
 ```
 PTEX_IN_FILTER = /usr/bin/nkf -w
