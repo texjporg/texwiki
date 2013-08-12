@@ -64,13 +64,13 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
-■ TeX Live 2014 の場合
+■ TeX Live の場合
 
 pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
 
 ***
 
-- C:\texlive\2014\bin\win32\pdfplatex.bat
+- C:\texlive\2013\bin\win32\pdfplatex.bat
 
 ***
 
@@ -177,7 +177,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2014\bin\win32\pdfplatex2.bat
+- C:\texlive\2013\bin\win32\pdfplatex2.bat
 - C:\w32tex\bin\pdfplatex2.bat
 
 ***
@@ -231,11 +231,11 @@ ps2pdf.bat "%~n1.ps"
 
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
-■ TeX Live 2014 の場合
+■ TeX Live の場合
 
 ***
 
-- C:\texlive\2014\bin\win32\pdfuplatex.bat
+- C:\texlive\2013\bin\win32\pdfuplatex.bat
 
 ***
 
@@ -340,7 +340,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2014\bin\win32\pdfuplatex2.bat
+- C:\texlive\2013\bin\win32\pdfuplatex2.bat
 - C:\w32tex\bin\pdfuplatex2.bat
 
 ***
