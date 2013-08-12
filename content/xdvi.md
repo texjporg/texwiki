@@ -70,6 +70,8 @@ pxdvi, pmetapost は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive
 
 #### TeX Live 2013 の場合 {#c75bb558}
 
+- [tlptexlive 2013](http://www.preining.info/blog/2013/08/tlptexlive-2013/)
+
 ```
 $ cd /usr/local/texlive/2013
 $ sudo ln -s texmf-dist texmf
@@ -100,6 +102,7 @@ $ sudo tlmgr pinning add tlptexlive '*'
 
 ```
 $ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr update --all
 $ cd /usr/local/texlive/2013/texmf-dist/xdvi
 $ sudo cp XDvi XDvi.org
 ```
