@@ -64,9 +64,9 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 - [http://gitorious.org/xdvik-japanese-patch-cleanup](http://gitorious.org/xdvik-japanese-patch-cleanup)
 - [http://gitorious.org/tlptexlive](http://gitorious.org/tlptexlive)
 
-### インストール {#cce5d1ed}
+### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
+pxdvi, pmetapost は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 #### TeX Live 2013 の場合 {#c75bb558}
 
@@ -80,18 +80,19 @@ $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 <!-- tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
 
 ```
-$ sudo tlmgr pinning add tlptexlive 'pxdvi*'
+$ sudo tlmgr pinning add tlptexlive '*'
 ```
 
 <!-- tlmgr: package repositories: -->
 <!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
 <!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: * -->
+<!-- $ sudo tlmgr pinning add tlptexlive 'pxdvi*' -->
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
 <!-- tlmgr: new pinning data for tlptexlive: pxdvi* -->
-
-```
-$ sudo tlmgr pinning add tlptexlive 'pmetapost*'
-```
-
+<!-- $ sudo tlmgr pinning add tlptexlive 'pmetapost*' -->
 <!-- tlmgr: package repositories: -->
 <!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
 <!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
@@ -99,7 +100,6 @@ $ sudo tlmgr pinning add tlptexlive 'pmetapost*'
 
 ```
 $ sudo tlmgr install pxdvi pmetapost
-$ sudo tlmgr path add
 $ cd /usr/local/texlive/2013/texmf-dist/xdvi
 $ sudo cp XDvi XDvi.org
 ```
