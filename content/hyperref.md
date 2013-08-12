@@ -865,7 +865,7 @@ hyperrefパッケージをデフォルトで読み込む．
 
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
-以下にサンプルコードを示します。hyperref 6.82g で確認しました．<br>
+以下にサンプルコードを示します。hyperref 6.83m で確認しました．<br>
 hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります．<br>
 その場合は，変更できないと思われるので，適宜修正して使ってください．<br>
 この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります．<br>
@@ -910,20 +910,22 @@ abc
 \end{document}
 ```
 
-#### dvipdfm/dvipdfmx/xetex の場合 {#d3c17ccb}
+#### dvipdfmx/xetex の場合 {#d3c17ccb}
 
 ```
 \documentclass{article}
-%\usepackage[dvipdfm]{hyperref}
-\usepackage[dvipdfmx]{hyperref}
-%\usepackage[xetex]{hyperref}
-%**********************************************************************
-% Change bookmarks color and font style [dvipdfm/dvipdfmx/xetex only]
+\ifdefined\XeTeXversion
+  \usepackage[xetex]{hyperref}
+\else
+  \usepackage[dvipdfmx]{hyperref}
+\fi
+%*************************************************************
+% Change bookmarks color and font style [dvipdfmx/xetex only]
 % (override a part of hdvipdfm.def/hxetex.def)
 % PDF-1.4 (Acrobat 5.x) or later is valid
 % /C array [R G B]
 % /F integer
-%**********************************************************************
+%*************************************************************
 \makeatletter
 \newcount\bookmarksFontStyleInteger
 \def\bookmarksColorArray{1 0 0}
@@ -1008,19 +1010,18 @@ abc
 \end{document}
 ```
 
-#### dvips/dvipsone の場合 {#q60cb78c}
+#### dvips の場合 {#q60cb78c}
 
 ```
 \documentclass{article}
 \usepackage[dvips]{hyperref}
-%\usepackage[dvipsone]{hyperref}
-%**************************************************************
-% Change bookmarks color and font style [dvips/dvipsone only]
+%*************************************************************
+% Change bookmarks color and font style [dvips only]
 % (override a part of pdfmark.def)
 % PDF-1.4 (Acrobat 5.x) or later is valid
 % /C array [R G B]
 % /F integer
-%**************************************************************
+%*************************************************************
 \makeatletter
 \newcount\bookmarksFontStyleInteger
 \def\bookmarksColorArray{1 0 0}
