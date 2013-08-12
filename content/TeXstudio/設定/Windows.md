@@ -92,9 +92,7 @@ SVN<br>
 LaTeX
 : &nbsp;
 
-: platex.exe -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=% %.tex
-
-: platex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode -jobname=% %.tex
+: platex.exe -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
 
 : uplatex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
 
@@ -207,9 +205,9 @@ Asymptote
 Ghostscript
 : &nbsp;
 
-: C:\texlive\2013\tlpkg\tlgs\bin\gswin32c.exe
-
 : "C:\gs\gs9.07\bin\gswin32c.exe"
+
+<!-- :|C:\texlive\2013\tlpkg\tlgs\bin\gswin32c.exe -->
 
 Latexmk
 : &nbsp;
