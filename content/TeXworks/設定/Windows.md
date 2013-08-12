@@ -64,19 +64,19 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
-■ TeX Live 2013 の場合
+■ TeX Live 2014 の場合
 
 pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfplatex.bat
+- C:\texlive\2014\bin\win32\pdfplatex.bat
 
 ***
 
 ```
 @echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvipdfmx "%~n1"
 ```
 
@@ -102,7 +102,7 @@ W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
 
 ```
 @echo off
-platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
+platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
 ```
 
 ***
@@ -154,7 +154,7 @@ platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%
 　　プログラム: <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8 -jobname='$basename'</ins><br>
+　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
@@ -177,14 +177,14 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfplatex2.bat
+- C:\texlive\2014\bin\win32\pdfplatex2.bat
 - C:\w32tex\bin\pdfplatex2.bat
 
 ***
 
 ```
 @echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps"
@@ -231,11 +231,11 @@ ps2pdf.bat "%~n1.ps"
 
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
-■ TeX Live 2013 の場合
+■ TeX Live 2014 の場合
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfuplatex.bat
+- C:\texlive\2014\bin\win32\pdfuplatex.bat
 
 ***
 
@@ -340,7 +340,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfuplatex2.bat
+- C:\texlive\2014\bin\win32\pdfuplatex2.bat
 - C:\w32tex\bin\pdfuplatex2.bat
 
 ***
@@ -966,7 +966,7 @@ setlocal
 if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
 set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
 ) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvipdfmx "%~n1" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
@@ -1024,7 +1024,7 @@ setlocal
 if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
 set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
 ) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
-platex -synctex=1 -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
@@ -1444,7 +1444,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -kanji=utf8 -guess-input-enc %1 && ^
 dvipdfmx "%~n1" && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
@@ -1496,7 +1496,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -jobname="%~n1" %1 && ^
+platex -kanji=utf8 -guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
