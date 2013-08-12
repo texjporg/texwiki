@@ -78,8 +78,8 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
     (tex-start-shell))
   (tex-send-command "pdfopen --rxi --file" (tex-append tex-print-file ".pdf")))
 (setq tex-compile-commands
-      '(("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=%r %f && dvipdfmx %r" "%f" "%r.pdf")
-        ("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -jobname=%r %f && dvips -Ppdf -z -f %r.dvi | convbkmk -g > %r.ps && ps2pdf.bat %r.ps" "%f" "%r.pdf")
+      '(("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvipdfmx %r" "%f" "%r.pdf")
+        ("platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -g > %r.ps && ps2pdf.bat %r.ps" "%f" "%r.pdf")
         ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvipdfmx %r" "%f" "%r.pdf")
         ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.bat %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
