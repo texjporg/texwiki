@@ -17,7 +17,7 @@ pukiwiki: "MetaPost"
 
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
-MetaPostの日本語版については
+MetaPostの日本語版 (pmpost, upmpost) については
 
 - [W32TeX](/W32TeX/)
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
@@ -443,7 +443,7 @@ fontmapline "-foo bar <baz.pfb";
 (MetaPost だけでなくて、全ての TeX エンジン、METAFONT でも
 pool ファイルは無くなっています。) 1.501 から mem ファイルも無くなりました。
 
-MetaPost のバージョンは 1.803 になっています。eps, svg に加えてビットマップの png
+TeX Live 2013 では MetaPost のバージョンは 1.803 になっています。eps, svg に加えてビットマップの png
 も出力可 (outputformat := "png";)。
 
 ### 参考サイト {#sa284452}
