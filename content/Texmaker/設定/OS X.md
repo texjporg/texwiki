@@ -79,7 +79,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/mpost" -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins> または <ins>"/usr/texbin/upmpost" -interaction=nonstopmode &#x25;</ins> または <ins>"/usr/texbin/mpost" -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
 
