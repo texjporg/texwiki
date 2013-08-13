@@ -62,7 +62,10 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 ### ChangeLog {#y0777637}
 
 - [http://gitorious.org/xdvik-japanese-patch-cleanup](http://gitorious.org/xdvik-japanese-patch-cleanup)
+    - [http://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master](http://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master)
 - [http://gitorious.org/tlptexlive](http://gitorious.org/tlptexlive)
+    - [http://gitorious.org/tlptexlive/build-tlptexlive/commits/master](http://gitorious.org/tlptexlive/build-tlptexlive/commits/master)
+    - [http://gitorious.org/tlptexlive/tlptexlive-root/commits/master](http://gitorious.org/tlptexlive/tlptexlive-root/commits/master)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
