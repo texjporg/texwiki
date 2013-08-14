@@ -205,7 +205,7 @@ Asymptote
 Ghostscript
 : &nbsp;
 
-: "C:\gs\gs9.07\bin\gswin32c.exe"
+: "C:\gs\gs9.08\bin\gswin32c.exe"
 
 <!-- :|C:\texlive\2013\tlpkg\tlgs\bin\gswin32c.exe -->
 
