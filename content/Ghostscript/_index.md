@@ -241,7 +241,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 - Ghostscript のインストーラー
 
-- [Ghostscript](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs907w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
+- [Ghostscript](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/) gs ディレクトリ内の gs908w32full-gpl.exe (最新の32bit版の Ghostscript) をダウンロード
     - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
         - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
@@ -270,12 +270,12 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 #### インストール方法 {#b84b5a69}
 
-- gs907w32full-gpl.exe を実行します。
-    - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.07”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.07”
-    - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.07”に変更します。
+- gs908w32full-gpl.exe を実行します。
+    - デフォルトのインストール先は，32bit Windows の場合は “C:\Program Files\gs\gs9.08”，64bit Windows の場合は “C:\Program Files (x86)\gs\gs9.08”
+    - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.08”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.07 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです(Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので注意が必要です)．また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs9.07 などというフォルダーにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs9.07 などといったフォルダー構造を仮定していることが多いということは理解しておいてください．
+\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.08 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです(Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので注意が必要です)．また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs9.08 などというフォルダーにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs9.08 などといったフォルダー構造を仮定していることが多いということは理解しておいてください．
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -300,10 +300,10 @@ ASCII 文字だけで設定します。
 
 インストールした Ghostscript に含まれる bin と lib を付け加えておきます．具体的には次のようにします．
 
-Ghostscript 9.07 を C:\gs\gs9.07 にインストールした場合
+Ghostscript 9.08 を C:\gs\gs9.08 にインストールした場合
 
 ```
-;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib
+;C:\gs\gs9.08\bin;C:\gs\gs9.08\lib
 ```
 
 を環境変数 PATH に追加します。
@@ -317,7 +317,7 @@ Ghostscript 9.07 を C:\gs\gs9.07 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib<br>C:\w32tex\bin;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.07\bin;C:\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.08\bin;C:\gs\gs9.08\lib<br>C:\w32tex\bin;C:\gs\gs9.08\bin;C:\gs\gs9.08\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.08\bin;C:\gs\gs9.08\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -332,10 +332,10 @@ Ghostscript 9.07 を C:\gs\gs9.07 にインストールした場合
 
 ***
 
-Ghostscript 9.07 を C:\Program Files\gs\gs9.07 にインストールした場合
+Ghostscript 9.08 を C:\Program Files\gs\gs9.08 にインストールした場合
 
 ```
-;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib
+;C:\Program Files\gs\gs9.08\bin;C:\Program Files\gs\gs9.08\lib
 ```
 
 を環境変数 PATH に追加します。
@@ -349,7 +349,7 @@ Ghostscript 9.07 を C:\Program Files\gs\gs9.07 にインストールした場�
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.07\bin;C:\Program Files\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.08\bin;C:\Program Files\gs\gs9.08\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.08\bin;C:\Program Files\gs\gs9.08\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -364,10 +364,10 @@ Ghostscript 9.07 を C:\Program Files\gs\gs9.07 にインストールした場�
 
 ***
 
-Ghostscript 9.07 を C:\Program Files (x86)\gs\gs9.07 にインストールした場合
+Ghostscript 9.08 を C:\Program Files (x86)\gs\gs9.08 にインストールした場合
 
 ```
-;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib
+;C:\Program Files (x86)\gs\gs9.08\bin;C:\Program Files (x86)\gs\gs9.08\lib
 ```
 
 を環境変数 PATH に追加します。
@@ -381,7 +381,7 @@ Ghostscript 9.07 を C:\Program Files (x86)\gs\gs9.07 にインストールし�
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.07\bin;C:\Program Files (x86)\gs\gs9.07\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files (x86)\gs\gs9.08\bin;C:\Program Files (x86)\gs\gs9.08\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.08\bin;C:\Program Files (x86)\gs\gs9.08\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -444,14 +444,14 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.07\bin\gsdll32.dll) に修正します．
+を Ghostscript の dll ファイル (C:\gs\gs9.08\bin\gsdll32.dll) に修正します．
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/gs/gs9.07/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/gs/gs9.08/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
@@ -478,10 +478,10 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ### cidfmap の初期設定 {#ra5fe424}
 
-日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．これを他の CID font や TrueType font に代替させることを主な目的とした 設定ファイルが cidfmap です．角藤版 Ghoststscript では，gs\gs9.07\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンド プロンプトから実行すればそれがなされます．
+日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．これを他の CID font や TrueType font に代替させることを主な目的とした 設定ファイルが cidfmap です．角藤版 Ghoststscript では，gs\gs9.08\lib に存在します．インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．次の命令をコマンド プロンプトから実行すればそれがなされます．
 
 ```
-gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.07/lib/cidfmap c:/gs/gs9.07/lib/mkcidfm.ps
+gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.08/lib/cidfmap c:/gs/gs9.08/lib/mkcidfm.ps
 ```
 
 パス名部分に関しては各自の環境に合わせて書き直して下さい．また，c:/windows/fonts というのは Windows の システムフォントフォルダーのことです．
@@ -581,7 +581,7 @@ HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
 
 ### CMap {#k55ee82d}
 
-gs\gs9.07\Resource\CMap\ に入っています。主なものを挙げてみます。
+gs\gs9.08\Resource\CMap\ に入っています。主なものを挙げてみます。
 
 - H
 - V
@@ -626,9 +626,9 @@ gs\gs9.07\Resource\CMap\ に入っています。主なものを挙げてみま�
 
 ### CID font {#dc743646}
 
-CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs9.07\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
+CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs9.08\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
 
-CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs9.07\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs9.08\Resource\CIDFont\ に置くかリンクを張っておきます．
 
 この HeiseiMin-W3 を例にとり説明します．gs の段階でこのフォントに代替させる場合，例えば ps file では Ryumin-Light が指定されていてこれを HeiseiMin-W3 に代替させる場合には，cidfmap に次のような alias の記述をしておきます．
 
@@ -642,7 +642,7 @@ CID font file は，ファイル名を拡張子無しの PostScript 名に変え
 
 ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．
 
-CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs9.07\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs9.08\Resource\CIDFont\ に置くかリンクを張っておきます．
 
 OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)．これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります．従って，この作業を行うためのファイルあるいはPSコードが必要になります．
 
@@ -652,7 +652,7 @@ OpenType font で出力する場合には，ps file で指定されたフォン�
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-という内容のファイルを gs\gs9.07\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．
+という内容のファイルを gs\gs9.08\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．
 
 cidfmap でのフォント代替の記述は CID font の場合と同様です．例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう．ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります．この場合には，
 
@@ -660,7 +660,7 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 /Ryumin-Light-H /H [/Ryumin-Light] composefont pop
 ```
 
-という内容のファイルを gs\gs9.07\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
+という内容のファイルを gs\gs9.08\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
 
 なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．
 
@@ -684,7 +684,7 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs9.07\Resource\Font\ に
+[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs9.08\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -764,9 +764,9 @@ composefont pop
 
 ### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
 
-角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs9.07\kanji\kconfig.ps の記述内容によって設定されます．
+角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs9.08\kanji\kconfig.ps の記述内容によって設定されます．
 
-#### gs\gs9.07\kanji\kconfig.ps の記述例 {#d0c50ae3}
+#### gs\gs9.08\kanji\kconfig.ps の記述例 {#d0c50ae3}
 
 ***
 
@@ -790,7 +790,7 @@ composefont pop
 
 このファイルは Shift_JIS で保存してください。
 
-### gs\gs9.07\lib\cidfmap の記述例 {#m115a63f}
+### gs\gs9.08\lib\cidfmap の記述例 {#m115a63f}
 
 これはさまざまなフォントを扱うための設定の example です．
 
@@ -1061,7 +1061,7 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 ***
 
 この lib/neverembed.ps への設定を ps2pdf でも有効に
-するためには，[gs\gs9.07\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
+するためには，[gs\gs9.08\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
 
 ```
 echo -c .setpdfwrite -f%1 >>"%TEMP%\_.at"2
@@ -1080,7 +1080,7 @@ echo -c .setpdfwrite -f neverembed.ps -f%1 >>"%TEMP%\_.at"2
 ```
 
 を追加します。<br>
-（UNIX や UNIX 互換 OS では，[ghostscript/9.07/lib/ps2pdfwr](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfwr;hb=HEAD) の記述内容の44行目
+（UNIX や UNIX 互換 OS では，[ghostscript/9.08/lib/ps2pdfwr](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfwr;hb=HEAD) の記述内容の44行目
 
 ```
 exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
@@ -1192,7 +1192,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
 
-### /usr/local/share/ghostscript/9.07/Resource/Init/cidfmap の記述例 {#g10fce9f}
+### /usr/local/share/ghostscript/9.08/Resource/Init/cidfmap の記述例 {#g10fce9f}
 
 #### <a id="cidfmap-osx">For OS X</a> {#eb079434}
 
@@ -1367,15 +1367,15 @@ PostScript Level 1 での基本14書体が正確に表示されます。
 - [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
 - [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 
-などから ghostscript-9.07.tar.bz2 を入手します。
+などから ghostscript-9.08.tar.bz2 を入手します。
 
 ### インストール {#u4ad1919}
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ tar xvf ghostscript-9.07.tar.bz2
-$ cd ghostscript-9.07
+$ tar xvf ghostscript-9.08.tar.bz2
+$ cd ghostscript-9.08
 $ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
@@ -1391,7 +1391,7 @@ $ sudo make install
 > pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
 > ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
 
-また，/usr/local/share/ghostscript/9.07/ の下に
+また，/usr/local/share/ghostscript/9.08/ の下に
 たくさんのものが入ります。/usr/local/man/man1/ と
 /usr/local/man/de/man1/ の中にもマニュアル類が入ります。
 
@@ -1399,7 +1399,7 @@ $ sudo make install
 
 ```
 
-和文については，cidfmap (/usr/local/share/ghostscript/9.07/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
+和文については，cidfmap (/usr/local/share/ghostscript/9.08/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
 
 ```
 /Ryumin-Light      /HiraMinProN-W3   ;
@@ -1408,19 +1408,19 @@ $ sudo make install
 /HeiseiKakuGo-W5   /GothicBBB-Medium ;
 ```
 
-あとは /usr/local/share/ghostscript/9.07/Resource/CIDFont/ の
+あとは /usr/local/share/ghostscript/9.08/Resource/CIDFont/ の
 中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
 名前でシンボリックリンクを作っておきます。例えば OS X なら
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMinProN-W3
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMinProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMinProN-W6
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMinProN-W6
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuProN-W3
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuProN-W6
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
 $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
@@ -1428,21 +1428,21 @@ $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
 $ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuStdN-W8
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuStdN-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMaruProN-W4
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMaruProN-W4
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMinPro-W3
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMinPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMinPro-W6
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMinPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuPro-W3
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuPro-W6
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraKakuStd-W8
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraKakuStd-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/9.07/Resource/CIDFont/HiraMaruPro-W4
+> /usr/local/share/ghostscript/9.08/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s /Library/Fonts/华文宋体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
 $ sudo ln -s /Library/Fonts/华文楷体.ttf \
@@ -1453,7 +1453,7 @@ $ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
 ```
 
-さらに，/usr/local/share/ghostscript/9.07/Resource/Font/ の中に
+さらに，/usr/local/share/ghostscript/9.08/Resource/Font/ の中に
 例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
 
 ```
@@ -1480,7 +1480,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
 
-### /usr/local/share/ghostscript/9.07/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
+### /usr/local/share/ghostscript/9.08/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
 
 #### <a id="cidfmap-unix">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
 
