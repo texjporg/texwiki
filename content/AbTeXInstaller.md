@@ -280,13 +280,13 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
 　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☐gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☑gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣<br>
-　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　GSview<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　∣<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☑gs908w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　GSview<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　　∣<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
