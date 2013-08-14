@@ -213,7 +213,7 @@ function! PdfpLaTeX(type)
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdfplatex'
     if has('win32') || has('win64')
-      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile
+      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
       let g:makeindex = 'mendex -U -T'
@@ -232,7 +232,7 @@ function! PdfpLaTeX(type)
     endif
   elseif a:type == 'pdfplatex2'
     if has('win32') || has('win64')
-      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal -jobname=' . masterBaseName . ' ' . masterTeXFile
+      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
       let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
