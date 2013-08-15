@@ -27,15 +27,14 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-<strong>Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください。</strong>
+Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください。
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
 - [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
 - [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
 
-<strong>GSview は CTAN から提供されなくなりました．</strong><br>
-
-<strong>GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．</strong><br>
+GSview は CTAN から提供されなくなりました．<br>
+GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
 
 - [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
 
@@ -436,7 +435,7 @@ MS-Windows で使用可能な gs のフロントエンド(プレビューした�
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
 
-公式サイトで配布されている PS_View を起動するには，psv.wx.lua の gsargs の dllloc
+TeX Live に含まれている PS_View の C:\texlive\2013\tlpkg\tlpsv\psv.wx.lua または公式サイトで配布されている PS_View の psv.wx.lua の gsargs の dllloc
 
 ```
 local gsargs = {
@@ -488,7 +487,7 @@ gswin32c -q -dBATCH -sFONTDIR=c:/windows/fonts -sCIDFMAP=c:/gs/gs9.08/lib/cidfma
 
 一つ注意を言っておきます．この自動設定を行ったとしても，あなたの環境にある CJK つまり 日中韓のフォントがすべて使えるようになるわけではありません．mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダーに見つかった TrueType fonts への代替設定がされるだけです．これだけで自由自在になるわけではないことに注意してください．
 
-コマンド プロンプトの使い方がわからない場合は Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．これをコピー・ペーストするだけでも大丈夫かもしれません(Windows の version による違いもあるので一概には言えませんが)．パス名部分については各自の環境に合わせることが必要になることがあります．
+Windows PowerShell またはコマンド プロンプトの使い方がわからない場合は Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．これをコピー・ペーストするだけでも大丈夫かもしれません(Windows の version による違いもあるので一概には言えませんが)．パス名部分については各自の環境に合わせることが必要になることがあります．
 
 ***
 
