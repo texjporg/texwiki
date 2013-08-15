@@ -230,8 +230,8 @@ $ tar xvf pxdvi.tar.xz
 $ tar xvf pxdvi.x86_64-linux.tar.xz
 $ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin
 $ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi
-$ sudo cp -pR texmf/xdvi /usr/share/texmf-dist/pxdvi
-$ sudo cp -pR texmf/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
+$ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi
+$ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
 $ sudo mkdir -p /usr/share/texmf-local/web2c
 $ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
 ```
