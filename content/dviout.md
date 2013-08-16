@@ -680,6 +680,8 @@ dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・�
 
 ## PDF を作るには {#c3def66b}
 
+### dvipdfmx {#b020c0c5}
+
 dviout 3.15.1 以降で PDF を作る際には，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）を使うのが便利です。<br>
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
 「ニコニコマーク」ボタンが見当たらない場合には，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
@@ -699,6 +701,8 @@ PDF の作成がうまくいかない場合は [dvioutのdvipdfmxでpdfファイ
 　　　　From:<ins>　　1\[◆\]</ins>　　To:<ins>　　8\[◆\]</ins>　　　　　　　☐ View PDF ?<br>
 
 ***
+
+### Acrobat Distiller {#bbe5941f}
 
 PDF ファイルを作成する場合は dviout から Distiller (Adobe PDF) プリンターに印刷することも可能です。
 ただし，欧文フォントや EPS グラフィックがギザギザになります。
