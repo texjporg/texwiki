@@ -67,8 +67,8 @@ Windows PowerShell やコマンド プロンプトで次のように打ち込み
 W32TeX \[2013/03/18\] 以降の場合は
 
 ```
-PS C:\Users\???> c:
-PS C:\Users\???> cd \w32tex
+PS C:\Users\$Env:USERNAME> c:
+PS C:\Users\$Env:USERNAME> cd \w32tex
 PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 ```
 
