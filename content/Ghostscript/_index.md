@@ -27,7 +27,8 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください。
+Ghostscript 9.08 には GSview に関するバグがあります． → [A bug affecting compatibility with GSview was discovered very shortly after the 9.08 release.](http://www.ghostscript.com/)<br>
+Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください．<br>
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
 - [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
@@ -110,13 +111,13 @@ Microsoft Windows なら
 - 32bit版の Ghostscript の場合は
 
     ```
-    >gswin32c
+    gswin32c
     ```
 
 - 64bit版の Ghostscript の場合は
 
     ```
-    >gswin64c
+    gswin64c
     ```
 
 です。
@@ -131,12 +132,22 @@ $ gs
 
 ### サポートしているデバイスを調べるには {#d708538b}
 
-Ghostscript のサポートする出力形式を調べるには
+Ghostscript のサポートする出力形式を調べるには<br>
 Microsoft Windows では
 
-```
->gswin32c -h
-```
+- 32bit版の Ghostscript の場合は
+
+    ```
+    gswin32c -h
+    ```
+
+- 64bit版の Ghostscript の場合は
+
+    ```
+    gswin64c -h
+    ```
+
+と打ち込みます。
 
 UNIX 互換 OS では
 
@@ -169,36 +180,57 @@ GS>quit
 ### EPS から PNG への変換 {#g1adcf94}
 
 EPS を α（アルファ）チャンネルを使った透過機能附きの PNG に
-変換する場合には Microsoft Windows なら例えば
+変換する場合には Microsoft Windows の Windows PowerShell なら例えば
 
 ```
-     >gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop ^
+PS > gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop `
+>> -r600 -dTextAlphaBits=4 -dGraphicsAlphaBits=4 `
+>> -sOutputFile="output.png" "input.eps"
+>>
+```
+
+コマンド プロンプトなら例えば
+
+```
+>gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop ^
 More? -r600 -dTextAlphaBits=4 -dGraphicsAlphaBits=4 ^
-More? -sOutputFile=output.png input.eps
+More? -sOutputFile="output.png" "input.eps"
 ```
 
-とします。UNIX 互換 OS なら例えば
+とします。<br>
+UNIX 互換 OS なら例えば
 
 ```
 $ gs -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop -r600 \
-> -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile=output.png input.eps
+> -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile="output.png" "input.eps"
 ```
 
 とします。
 
-EPS を256色 PNG に変換する場合には Microsoft Windows なら例えば
+EPS を256色 PNG に変換する場合には Microsoft Windows の Windows PowerShell なら例えば
 
 ```
-     >gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=png256 -dEPSCrop ^
+PS > gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=png256 -dEPSCrop `
+>> -r600 -dTextAlphaBits=4 -dGraphicsAlphaBits=4 `
+>> -sOutputFile="output.png" "input.eps"
+>>
+```
+
+とします。<br>
+コマンド プロンプトなら例えば
+
+```
+>gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=png256 -dEPSCrop ^
 More? -r600 -dTextAlphaBits=4 -dGraphicsAlphaBits=4 ^
-More? -sOutputFile=output.png input.eps
+More? -sOutputFile="output.png" "input.eps"
 ```
 
-とします。UNIX 互換 OS なら例えば
+とします。<br>
+UNIX 互換 OS なら例えば
 
 ```
 $ gs -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=png256 -dEPSCrop -r600 \
-> -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile=output.png input.eps
+> -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sOutputFile="output.png" "input.eps"
 ```
 
 とします。
@@ -285,11 +317,9 @@ ASCII 以外の文字（日本語など）を使っていると，Ghostscript �
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。<br>
 環境変数 TEMP のデフォルトは
-Windows 8.1, 8, 7, Vista の場合では %USERPROFILE%\AppData\Local\Temp
-(&cong; C:\Users\\%USERNAME%\AppData\Local\Temp) と，
-Windows XP の場合では "%USERPROFILE%\Local Settings\Temp"
-(&cong; "C:\Documents and Settings\\%USERNAME%\Local Settings\Temp") と
-設定されているので，この環境変数 TEMP を（例えば
+Windows 8.1, 8, 7, Vista の場合は %USERPROFILE%\AppData\Local\Temp
+(&cong; C:\Users\\%USERNAME%\AppData\Local\Temp)
+と設定されているので，この環境変数 TEMP を（例えば
 UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように）
 ASCII 文字だけで設定します。
 
@@ -436,6 +466,7 @@ MS-Windows で使用可能な gs のフロントエンド(プレビューした�
 #### PS_View {#h218efe8}
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
+Windows 版の TeX Live に標準で含まれています．<br>
 
 TeX Live に含まれている PS_View の C:\texlive\2013\tlpkg\tlpsv\psv.wx.lua または公式サイトで配布されている PS_View の psv.wx.lua の gsargs の dllloc
 
@@ -445,7 +476,7 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.08\bin\gsdll32.dll) に修正します．
+を Ghostscript の dll ファイル (C:\gs\gs9.08\bin\gsdll32.dll) に修正します．<br>
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
@@ -453,6 +484,12 @@ local gsargs = {
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
   dllloc= "C:/gs/gs9.08/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+```
+
+TeX Live の場合は C:\texlive\texmf-local\web2c\texmf.cnf に以下の記述を追加しても OK です． (→ [2013-08-11 - にっき♪](http://d.hatena.ne.jp/abenori/20130811))
+
+```
+TEXLIVE_WINDOWS_EXTERNAL_GS_DLL=C:/gs/gs9.08/bin/gsdll32.dll
 ```
 
 &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
