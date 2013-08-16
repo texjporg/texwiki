@@ -51,7 +51,6 @@ Windows 8.1, 8, 7 は Windows PowerShell が標準搭載されています．<br
 > <tr><td>Windows 8</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
 > <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
 > <tr><td>Windows Vista</td><td>［Windows キーを押す］-［検索の開始］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows XP</td><td>［スタート］-［すべてのプログラム］-［アクセサリ］-［Windows PowerShell］-［Windows PowerShell］</td></tr>
 > </tbody>
 > </table>
 >
@@ -65,7 +64,6 @@ Windows 8.1, 8, 7 は Windows PowerShell が標準搭載されています．<br
 > <tr><td>Windows 8</td><td>［Windows キー + X キーを押す］または［左下隅を右クリック］-［コマンド プロンプト］</td></tr>
 > <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
 > <tr><td>Windows Vista</td><td>［Windows キーを押す］-［検索の開始］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows XP</td><td>［スタート］-［すべてのプログラム］-［アクセサリ］-［コマンド プロンプト］</td></tr>
 > </tbody>
 > </table>
 >
