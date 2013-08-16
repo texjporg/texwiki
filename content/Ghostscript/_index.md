@@ -180,7 +180,8 @@ GS>quit
 ### EPS から PNG への変換 {#g1adcf94}
 
 EPS を α（アルファ）チャンネルを使った透過機能附きの PNG に
-変換する場合には Microsoft Windows の Windows PowerShell なら例えば
+変換する場合には Microsoft Windows の<br>
+Windows PowerShell なら例えば
 
 ```
 PS > gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop `
@@ -207,7 +208,8 @@ $ gs -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pngalpha -dEPSCrop -r600 \
 
 とします。
 
-EPS を256色 PNG に変換する場合には Microsoft Windows の Windows PowerShell なら例えば
+EPS を256色 PNG に変換する場合には Microsoft Windows の<br>
+Windows PowerShell なら例えば
 
 ```
 PS > gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=png256 -dEPSCrop `
@@ -437,7 +439,9 @@ MS-Windows で使用可能な gs のフロントエンド(プレビューした�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- gs908w32full-gpl.exe と gsv50w32.exe がうまく動作しない場合は gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない ([qa:57187](https://okumuralab.org/~okumura/texfaq/qa/57187.html), [qa:57188](https://okumuralab.org/~okumura/texfaq/qa/57188.html)), [gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1079) を参照してください．<br>
+- Ghostscript 9.08 には GSview に関するバグがあります． → [A bug affecting compatibility with GSview was discovered very shortly after the 9.08 release.](http://www.ghostscript.com/)<br>
+
+- gs908w32full-gpl.exe と gsv50w32.exe がうまく動作しない場合は gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない ([qa:57187](https://okumuralab.org/~okumura/texfaq/qa/57187.html), [qa:57188](https://okumuralab.org/~okumura/texfaq/qa/57188.html), [qa:57189](https://okumuralab.org/~okumura/texfaq/qa/57189.html)), [gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1079) を参照してください．<br>
 
 - [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32bit版の GSview インストーラーをダウンロードし，実行します．GSview には 32/64bit版の区別がありますが，これは使用する gs の 32/64bit版に合わせなけなければなりません．角藤版 Ghostscript は 32bit版であるので，角藤版 Ghostscript を使用する場合には，GSview も 32bit版を用いなければなりません．
 
@@ -463,7 +467,7 @@ MS-Windows で使用可能な gs のフロントエンド(プレビューした�
 
     無論こんなにたくさん用意する必要はなく，自分に必要なものを設定すればそれで十分です．
 
-#### PS_View {#h218efe8}
+#### PS_View <a id="psview"></a> {#h218efe8}
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
 Windows 版の TeX Live に標準で含まれています．<br>
@@ -512,7 +516,8 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
-フロントエンドといえるものではないにせよ gs を呼び出しているアプリケーションは多数あります(例えば dvipdfmx)．これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です．
+フロントエンドといえるものではないにせよ gs を呼び出しているアプリケーションは多数あります(例えば dvipdfmx, Inkscape)．<br>
+これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です．
 
 ### cidfmap の初期設定 {#ra5fe424}
 
@@ -1762,11 +1767,10 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 - [Ghostscript + GSview の日本語版](http://www.khotta.org/ghost/) /
     [ミラーサイト](http://khotta.digiweb.jp/ghost/)（堀田 耕作さん@愛知教育大・数学）
     ［TeX，Ghostscript，GSview， mathabx，gnuplot，象形文字フォントについて］
-    - [さあ、始めよう pLaTeX2e Blog](http://blogs.yahoo.co.jp/koh_hotta)
+
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/gs.html)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
-- [PS_View](http://psview.sourceforge.net/) Ghostscript を使って PS/PDF ファイルを表示するプレビューア
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
 
 ## Comment {#z51688d5}
