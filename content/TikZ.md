@@ -51,7 +51,7 @@ PGFはデフォルトではdvipsを使用する設定になっていますが、
 graphicxを使用しない場合は、以下のいずれかをtikz（またはpgf）パッケージを読み込む前に記述します。
 
 ```
-\def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmの場合はxなし
+\def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmxの場合
 \def\pgfsysdriver{pgfsys-dvips.def}%デフォルト
 \def\pgfsysdriver{pgfsys-pdftex.def}%最も高機能
 \def\pgfsysdriver{pgfsys-xetex.def}%XeTeXの場合
@@ -684,7 +684,7 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 ## Troubleshooting {#i0cba852}
 
 - \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
-- 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html))
+- 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
 - (e-)(u)ptex + dvipdfmx を使用することによる制約。pdfTeXを使用すれば可能です。（マニュアル  p.111 (ver 2.10-CVS) または p.109 (ver 2.10)）
     - パスで画像をマスクできない／パターンを使用できない／シェーディングが使用できない
         - 実際には <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）
