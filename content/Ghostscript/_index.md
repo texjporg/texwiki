@@ -407,6 +407,8 @@ MS-Windows で使用可能な gs のフロントエンド(プレビューした�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
+- gs908w32full-gpl.exe と gsv50w32.exe がうまく動作しない場合は gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない ([qa:57187](https://okumuralab.org/~okumura/texfaq/qa/57187.html), [qa:57188](https://okumuralab.org/~okumura/texfaq/qa/57188.html)), [gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1079) を参照してください．<br>
+
 - [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32bit版の GSview インストーラーをダウンロードし，実行します．GSview には 32/64bit版の区別がありますが，これは使用する gs の 32/64bit版に合わせなけなければなりません．角藤版 Ghostscript は 32bit版であるので，角藤版 Ghostscript を使用する場合には，GSview も 32bit版を用いなければなりません．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
