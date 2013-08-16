@@ -393,7 +393,7 @@ Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する
 
 ### TeX Live の場合 {#aa8923ee}
 
-TeX Live 2013 以降で IPAexフォントを埋め込む場合はコマンド プロンプトから
+TeX Live 2013 以降で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
 kanji-config-updmap ipaex
@@ -441,10 +441,10 @@ gbmv  V ipaexg.ttf
 
 ***
 
-cid-x.map の場所はコマンドラインから以下のコマンドを実行すれば検索できます．
+cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
 
 ```
-kpsewhich -progname=dvipdfmx -format=.map cid-x.map
+kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
 ```
 
 uplatex + dvipdfmx の場合は [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#rdc781c9>) を参照してください．<br>
@@ -488,7 +488,7 @@ uplatex + dvipdfmx の場合は [PDFの作り方#フォントの埋め込み設�
 - [texworksに日本語フォントを埋め込みたいんですが、解説サイトを見るとcid-x.mapというファイルが必要みたいなんですが、これが見つかりません。どうすればいいでしょうか。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1496913364)
 
     ```
-    kpsewhich -progname=dvipdfmx -format=.map cid-x.map
+    kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
     ```
 
 [^1]: Dick は Richard のニックネーム (愛称)．Richard → Rich → Rick → Dick．
