@@ -24,7 +24,7 @@ Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br>
 Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は Windows Management Framework 4.0 をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) をダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
-Windows Vista SP2, Windows XP SP3 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) をダウンロードしてインストールできます．<br>
+Windows Vista SP2 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) をダウンロードしてインストールできます．<br>
 
 - [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
     - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
@@ -143,3 +143,4 @@ Windows PowerShell のオープンソース実装．<br>
 - [連載：Windows 2000コマンドライン徹底活用　第8回　forコマンド（その2） --  1．ディレクトリの再帰的処理](http://www.atmarkit.co.jp/fwin2k/operation/command008/command01.html)
 - [連載：Windows 2000コマンドライン徹底活用　第8回　forコマンド（その2） --  2．ファイル解析による繰り返し処理](http://www.atmarkit.co.jp/fwin2k/operation/command008/command02.html)
 - [IT技術者が困ったときに見るブログ](http://pollux.tea-nifty.com/blog/)
+- [生産性を向上できる Windows PowerShell に関する簡単なヒント](http://gallery.technet.microsoft.com/scriptcenter/cc89a8ff-8e4c-44f9-a47c-d1b8e46f788a)
