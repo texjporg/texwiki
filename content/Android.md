@@ -17,15 +17,15 @@ pukiwiki: "Android"
 
 ### TeX Live (Android) {#h805f992}
 
-- [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal)
-    - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
-    - [Android で LaTeX](http://d.hatena.ne.jp/kaikimiyoshi2/20130727/1374925927)
-    - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
-    - [Nexus7（タブレット端末）にTeXPortalをインストール](http://blog.livedoor.jp/ti5942/archives/7804326.html), [pdflatex,TeXPortalでもbxjsarticleクラス](https://twitter.com/ti5942/status/364216566985924608)
-    - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
+- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate), [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal)
+    - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
+    - [Android で LaTeX](http://d.hatena.ne.jp/kaikimiyoshi2/20130727/1374925927)
+    - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
+    - [TeXPortal を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeXPortal), [岩崎 隆盛/「TeXPortal」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeXPortal)
+    - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
 
 ### TeX Live (Linux) {#rfcf69bf}
 
