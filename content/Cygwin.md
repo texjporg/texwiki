@@ -25,6 +25,15 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
+### 動作環境 {#n6af06c2}
+
+- [http://www.cygwin.com/faq.html#faq.what.supported](http://www.cygwin.com/faq.html#faq.what.supported)
+
+### License {#fe355f24}
+
+- [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
+- [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
+
 ## 日本語対応の TeX 環境の導入 {#b369bf5c}
 
 2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されることになりました．<br>
