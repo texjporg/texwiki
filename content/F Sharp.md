@@ -28,8 +28,3 @@ Windows 7 SP1 の場合は .NET Framework 4.5 をインストールする必要�
 
 - [F# 3.0 を Visual Studio なしでインストールする](http://blog.recyclebin.jp/archives/2889)
 - [Microsoft、「Visual Studio Express」でF#言語を利用可能にするアドインを公開](http://www.forest.impress.co.jp/docs/news/20120913_559448.html)
-
-### F# 2.0 {#y64cdba3}
-
-Windows Vista SP2 を使用している場合は Visual Studio Express 2012 が動作しないので F# 2.0 を使用します．<br>
-F# 2.0 の場合は [Microsoft F#, April 2011 Community Technology Preview](http://www.microsoft.com/download/en/details.aspx?id=11100) をダウンロードしてインストールします．
