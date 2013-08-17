@@ -127,7 +127,7 @@ I 24
 - [#美文書 １１５ページ、「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://twitter.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://twitter.com/ti5942/status/273742359915794432)
 
 dvipdfmx はコマンドの名前によって機能を変えることができます．<br>
-[dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/src/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．<br>
+[dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．<br>
 UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．<br>
 
 ### DVI ファイルが存在しない PDF ファイルを削除する {#i282b26a}
