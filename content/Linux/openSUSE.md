@@ -85,7 +85,7 @@ shell_escape_commands = \
 bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
-mpost,pmpost,\
+mpost,pmpost,upmpost,\
 repstopdf,epspdf,extractbb,\
 ```
 
