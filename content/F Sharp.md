@@ -14,6 +14,12 @@ pukiwiki: "F Sharp"
 - [http://msdn.microsoft.com/ja-jp/library/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/dd233154.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx)
 
+### F# 3.1 {#ke30a498}
+
+Windows 8.1, Windows 8, Windows 7 SP1 では Visual Studio 2013 をインストールすれば F# 3.1 が使用できます．<br>
+
+- [Microsoft、「F# 3.1」をプレビュー公開](http://www.forest.impress.co.jp/docs/news/20130701_605944.html)
+
 ### F# 3.0 {#yb6a3a97}
 
 Windows 8, Windows 7 SP1 では [F# Tools for Visual Studio Express 2012 for Web](http://www.microsoft.com/en-us/download/details.aspx?id=34675) をダウンロードしてインストールすれば F# 3.0 が使用できます．<br>
@@ -25,5 +31,5 @@ Windows 7 SP1 の場合は .NET Framework 4.5 をインストールする必要�
 
 ### F# 2.0 {#y64cdba3}
 
-Windows Vista SP2, Windows XP SP3 を使用している場合は Visual Studio Express 2012 が動作しないので F# 2.0 を使用します．<br>
+Windows Vista SP2 を使用している場合は Visual Studio Express 2012 が動作しないので F# 2.0 を使用します．<br>
 F# 2.0 の場合は [Microsoft F#, April 2011 Community Technology Preview](http://www.microsoft.com/download/en/details.aspx?id=11100) をダウンロードしてインストールします．
