@@ -152,6 +152,7 @@ Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でイン�
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
 - [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
+- [CygwinでvimでTeXのコンパイル](http://d.hatena.ne.jp/interferobserver/20130815/1376517041)
 - [瞬間没入感](http://kwakita.wordpress.com/2013/03/22/immersion/)
 - [【Linux Mint, vim】日本語のtexをvimで書く環境を整える](http://calorie001.hatenablog.com/entry/2012/12/13/182057)
 - [LaTeXをquickrunで楽に処理する](http://d.hatena.ne.jp/itchyny/20121001/1349094989)
