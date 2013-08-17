@@ -508,21 +508,16 @@ platex ex1
 
 ex1.dvi が出力されたら dviout の \[File\]-\[Open...\] から ex1.dvi を選択して開きます。<br>
 
-初回起動時にはここでフォント生成が始まりますが，数秒待つと文字が現れます。
+初回起動時にはここでフォント生成が始まりますが，数秒待つと文字が現れます。<br>
 
 ここで “Cannot resolve Fonts” というエラーが出るのは，TeX がうまく
 インストールされていないか，TeX の環境変数が間違っているか，
 あるいは dviout インストール時に入力した情報が間違っているためです。
-もう一度これらを見直してください。
+もう一度これらを見直してください。<br>
 
 TXフォントなどの Type 1 フォントを使った
 文書だけで “Cannot resolve Fonts” が出る場合には，[Ghostscript](/Ghostscript/) の
-インストールまたは設定が失敗している可能性が考えられます。
-
-Windows XP で一部の数式記号で文字化けが起こる場合は，パソコンに古い BaKoMa
-フォントがインストールされている可能性があります。詳しくは乙部厳己さんの解説
-「[WindowsXP 対応について](http://argent.shinshu-u.ac.jp/otobe/tex/book/WinXP.html)」
-をご覧ください。
+インストールまたは設定が失敗している可能性が考えられます。<br>
 
 ## プレビューの自動更新 {#t2d3346c}
 
@@ -531,6 +526,53 @@ dviout には DVI ファイルが更新されると自動的に表示を更新�
 
 1. \[Option\]-\[Setup parameters...\]-\[System\]-\[Auto Renew\] にチェックを入れて \[Save\]-\[適用(A)\]-\[OK\] をクリックします．
 1. \[Option\]-\[Continuous Renew\] にチェックを入れます．
+
+## PDF を作るには {#c3def66b}
+
+### dvipdfmx {#b020c0c5}
+
+dviout 3.15.1 以降で PDF を作る際には，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）を使うのが便利です。<br>
+初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
+「ニコニコマーク」ボタンが見当たらない場合には，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
+この場合，PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
+PDF の作成がうまくいかない場合は [TeXworks](/TeXworks/) を使用して PDF を作成してください．<br>
+
+***
+
+<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Print</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+　　Printer:　Make PDF by dvipdfm(x)　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　OK　　\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　Cancel　\]</span><br>
+　　　Print range　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Help　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　Setup...　\]</span><br>
+　　　◎ All　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ Selection \]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ dviprt<br>
+　　　◯ Pages (1)　　　　　　(8)　　　　　　　　　　☐ dvipdfm (not x)<br>
+　　　　From:<ins>　　1\[◆\]</ins>　　To:<ins>　　8\[◆\]</ins>　　　　　　　☐ View PDF ?<br>
+
+***
+
+### Acrobat Distiller {#bbe5941f}
+
+PDF ファイルを作成する場合は dviout から Distiller (Adobe PDF) プリンターに印刷することも可能です。<br>
+ただし，欧文フォントや EPS グラフィックがギザギザになります。<br>
+欧文フォントがギザギザになる問題は，Computer Modern と AMS フォントに限れば，
+[BaKoMa TrueType フォント](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
+をインストールすれば解決できます。<br>
+[TX フォント](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TXFonts) など PostScript Type 1 フォントのギザギザは解消できません。<br>
+TrueType の Times New Roman，Arial，Courier New であれば，乙部さんの
+「[書体拡張プロジェクト](http://argent.shinshu-u.ac.jp/otobe/tex/packages/fontproj.html)」
+に書かれている方法できれいに出力できます。<br>
+
+dviout から Distiller 経由で
+PDF を作るには，Computer Modern フォントの場合には BaKoMa TrueType
+フォント[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
+を Windows にインストールすることによって，ビットマップでない
+本来の美しい文字になります（TexPoint をインストールすると一部
+古い BaKoMa フォントで上書きされてしまうようですのでご注意ください）。<br>
+ただ，TX フォントなどの Type 1 フォントは
+やはりビットマップになります。
+
+[TeXWiki:PDFの作り方](</PDFの作り方/>) もご覧ください。<br>
 
 ## PostScript (EPS) 画像 {#ib983531}
 
@@ -677,53 +719,6 @@ CID に完全対応した DVIware を利用しましょう。<br>
 dviout for Windows は dvips と完全互換ではありません。<br>
 [PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
 dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
-
-## PDF を作るには {#c3def66b}
-
-### dvipdfmx {#b020c0c5}
-
-dviout 3.15.1 以降で PDF を作る際には，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）を使うのが便利です。<br>
-初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
-「ニコニコマーク」ボタンが見当たらない場合には，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
-この場合，PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
-PDF の作成がうまくいかない場合は [dvioutのdvipdfmxでpdfファイルが作成されない](http://www.eng.kagawa-u.ac.jp/~haruna/memo/TeX/dvipdfmx.html) を参照してください．<br>
-
-***
-
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Print</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　Printer:　Make PDF by dvipdfm(x)　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　OK　　\]</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　Cancel　\]</span><br>
-　　　Print range　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Help　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　Setup...　\]</span><br>
-　　　◎ All　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ Selection \]</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ dviprt<br>
-　　　◯ Pages (1)　　　　　　(8)　　　　　　　　　　☐ dvipdfm (not x)<br>
-　　　　From:<ins>　　1\[◆\]</ins>　　To:<ins>　　8\[◆\]</ins>　　　　　　　☐ View PDF ?<br>
-
-***
-
-### Acrobat Distiller {#bbe5941f}
-
-PDF ファイルを作成する場合は dviout から Distiller (Adobe PDF) プリンターに印刷することも可能です。
-ただし，欧文フォントや EPS グラフィックがギザギザになります。
-欧文フォントがギザギザになる問題は，Computer Modern と AMS フォントに限れば，
-[BaKoMa TrueType フォント](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
-をインストールすれば解決できます。
-[TX フォント](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TXFonts) など PostScript Type 1 フォントのギザギザは解消できません。
-TrueType の Times New Roman，Arial，Courier New であれば，乙部さんの
-「[書体拡張プロジェクト](http://argent.shinshu-u.ac.jp/otobe/tex/packages/fontproj.html)」
-に書かれている方法できれいに出力できます。
-
-dviout から Distiller 経由で
-PDF を作るには，Computer Modern フォントの場合には BaKoMa TrueType
-フォント[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
-を Windows にインストールすることによって，ビットマップでない
-本来の美しい文字になります（TexPoint をインストールすると一部
-古い BaKoMa フォントで上書きされてしまうようですのでご注意ください）。<br>
-ただ，TX フォントなどの Type 1 フォントは
-やはりビットマップになります。
-
-[TeXWiki:PDFの作り方](</PDFの作り方/>) もご覧ください。
 
 ## upTeX で出力された DVI ファイルを dviout で表示する場合の注意点 {#wadc9abf}
 
@@ -913,3 +908,4 @@ DVI ファイルを表示するとフォントが正しく表示されるよう�
 
 - [TeX インストールガイド―― dviout for Windows のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/dviout.htm) @ [トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](https://twitter.com/tony4649))（旧 @nifty DTP と印刷フォーラム \[FDTP\]）
 - [Windows 95/98/Me/NT/2000/XP における dviout のインストール](http://akagi.ms.u-tokyo.ac.jp/tex_dvioutw.html)（dviout for Windows 一次配布元）
+- [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
