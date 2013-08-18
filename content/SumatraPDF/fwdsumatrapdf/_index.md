@@ -208,11 +208,6 @@ C:\w32tex\bin\fwdsumatrapdf.fsx を fsc.exe でコンパイルすると C:\w32te
 ```
 >C:
 >cd C:\w32tex\bin
-```
-
-- F# 3.0 の場合
-
-```
 C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
 C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
 ```
@@ -222,20 +217,6 @@ C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
 ```
 C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fs
 C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fsx
-```
-
-- F# 2.0 の場合
-
-```
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
-```
-
-上記のコマンドでうまく動作しない場合は
-
-```
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll --standalone fwdsumatrapdf.fs
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll --standalone fwdsumatrapdf.fsx
 ```
 
 ***
@@ -294,55 +275,6 @@ fwdsumatrapdf.fsx のように拡張子を .fsx とすればビルドせずに f
 ```
 
 引数に渡すパラメータや状況によって例外が発生することがあります．<br>
-
-- F# 2.0 でビルドする場合の注意点
-
-F# 2.0 でビルドするときに --standalone オプションを追加しなかった場合，環境によっては fwdsumatrapdf.exe を実行したときに以下のような例外が発生するかもしれません．
-
-```
-ハンドルされていない例外: System.IO.FileNotFoundException: ファイルまたはアセン
-ブリ 'FSharp.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=????????????
-????'、またはその依存関係の 1 つが読み込めませんでした。指定されたファイルが見つ
-かりません。
-ファイル名 'FSharp.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=??????
-??????????' です。
-   場所 Fwdsumatrapdf.SumatraPDFClient.Main(String[] args)
-   場所 Fwdsumatrapdf.Main.EntryPoint(String[] args)
-```
-
-上記のエラーが発生する場合は以下のように --standalone オプションを追加してビルドしてください．
-
-```
->C:
->cd C:\w32tex\bin
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll --standalone fwdsumatrapdf.fs
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll --standalone fwdsumatrapdf.fsx
-```
-
-F# 2.0 でビルドするときに --standalone オプションを追加した場合以下の警告が表示されるかもしれませんが実行できるので気にしないでください．
-
-```
-warning FS2009: Ignoring mixed managed/unmanaged assembly 'System.Data' during s
-tatic linking
-
-warning FS2009: Ignoring mixed managed/unmanaged assembly 'System.Transactions'
-during static linking
-
-warning FS2009: Ignoring mixed managed/unmanaged assembly 'System.Data.OracleCli
-ent' during static linking
-```
-
-<!-- F# 3.0 の場合 -->
-<!--  -->
-<!-- warning FS2011: Assembly 'System.ServiceModel.Internals' was referenced transiti -->
-<!-- vely and the assembly could not be resolved automatically. Static linking will a -->
-<!-- ssume this DLL has no dependencies on the F# library or other statically linked -->
-<!-- DLLs. Consider adding an explicit reference to this DLL. -->
-<!--  -->
-<!-- warning FS2011: Assembly 'SMDiagnostics' was referenced transitively and the ass -->
-<!-- embly could not be resolved automatically. Static linking will assume this DLL h -->
-<!-- as no dependencies on the F# library or other statically linked DLLs. Consider a -->
-<!-- dding an explicit reference to this DLL. -->
 
 ### C# 版 {#de1b4851}
 
