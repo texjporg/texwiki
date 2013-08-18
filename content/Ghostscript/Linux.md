@@ -11,15 +11,39 @@ pukiwiki: "Ghostscript/Linux"
 
 ## Ghostscript for Linux {#j0238493}
 
-### ダウンロード {#g31ae747}
+### ダウンロード/インストール {#g31ae747}
+
+#### Linux Mint {#eef2e142}
+
+- [http://packages.ubuntu.com/ja/ghostscript](http://packages.ubuntu.com/ja/ghostscript)
+
+#### Debian {#e2250e99}
+
+- [http://packages.debian.org/ja/ghostscript](http://packages.debian.org/ja/ghostscript)
+
+#### Fedora {#v3e95c6b}
+
+- [https://apps.fedoraproject.org/packages/ghostscript](https://apps.fedoraproject.org/packages/ghostscript)
+
+#### openSUSE {#n12ef824}
+
+- [http://software.opensuse.org/package/ghostscript](http://software.opensuse.org/package/ghostscript)
+
+#### Arch Linux {#icf0081e}
+
+- [https://www.archlinux.org/packages/?q=ghostscript](https://www.archlinux.org/packages/?q=ghostscript)
+
+#### Gentoo Linux {#ze142c19}
+
+- [http://packages.gentoo.org/package/app-text/ghostscript-gpl](http://packages.gentoo.org/package/app-text/ghostscript-gpl)
+
+#### ソースコードからインストール {#u4ad1919}
 
 - [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
 - [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
 - [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 
 などから ghostscript-9.09.tar.bz2 を入手します。
-
-### インストール {#u4ad1919}
 
 /usr/local/ 以下にインストールする場合です。
 
