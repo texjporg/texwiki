@@ -42,7 +42,7 @@ pukiwiki: "Illustrator"
 \end{document}
 ```
 
-Adobe Illustrator CS (11.0.0) で作られたファイルで確認。
+Adobe Illustrator CS6 (16.0.0) で作られたファイルで確認。<br>
 
 #### EPS 形式ファイル {#h86d212a}
 
@@ -68,16 +68,16 @@ Illustrator で保存時の注意：
 不正な EPS は，
 [Tomas Rokicki](http://tomas.rokicki.com/)
 の [Illustrator 7.0/8.0/9.0 BeginData Bug](http://tomas.rokicki.com/illbug/)
-から “fixill.pl” を頂いてきて直す。
-次のようにして使う。
+から “fixill.pl” を頂いてきて直す。<br>
+次のようにして使う。<br>
 
 ```
 $ fixill.pl <old.eps >new.eps
 ```
 
-“fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
-Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
-W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
+“fixill.pl” は Perl スクリプトであり，実行には Perl が必要。<br>
+Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。<br>
+W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。<br>
 
 ```
 >fixill.exe <old.eps >new.eps
@@ -95,6 +95,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 【参考情報】
 
+- [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
 - \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
 - [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
 - [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
