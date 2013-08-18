@@ -1140,9 +1140,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-さらに，gs\gs9.08\lib\cidfmap の末尾に次を追記します。
+さらに，gs\gs9.09\lib\cidfmap の末尾に次を追記します。
 
-#### gs\gs9.08\lib\cidfmap への追記 {#meed555f}
+#### gs\gs9.09\lib\cidfmap への追記 {#meed555f}
 
 ***
 
@@ -1365,7 +1365,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-なお，gs\gs9.08\Resource\CMap\ に CMap をコピーしていない方は，
+なお，gs\gs9.09\Resource\CMap\ に CMap をコピーしていない方は，
 そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
