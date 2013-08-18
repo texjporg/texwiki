@@ -41,7 +41,7 @@ $ sudo make install
 > pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13,
 > ps2pdf14, ps2pdfwr, ps2ps, pv.sh, unix-lpr.sh, wftopfa
 
-また，/usr/local/share/ghostscript/9.09/ の下に
+また，/usr/local/share/ghostscript/\`gs --version\`/ の下に
 たくさんのものが入ります。/usr/local/man/man1/ と
 /usr/local/man/de/man1/ の中にもマニュアル類が入ります。
 
@@ -49,77 +49,14 @@ $ sudo make install
 
 ```
 
-和文については，cidfmap (/usr/local/share/ghostscript/9.09/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
+和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。IPAexフォントを利用するなら
 
 ```
-/Ryumin-Light      /HiraMinProN-W3   ;
-/GothicBBB-Medium  /HiraKakuProN-W3  ;
-/HeiseiMin-W3      /Ryumin-Light     ;
-/HeiseiKakuGo-W5   /GothicBBB-Medium ;
+/ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
+/ipaexg << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexg.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
+/Ryumin-Light /ipaexm ;
+/GothicBBB-Medium /ipaexg ;
 ```
-
-あとは /usr/local/share/ghostscript/9.09/Resource/CIDFont/ の
-中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
-名前でシンボリックリンクを作っておきます。例えば OS X なら
-
-```
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinProN-W6
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuProN-W6
-$ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
-$ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
-$ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
-> /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuStdN-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMaruProN-W4
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuStd-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMaruPro-W4
-$ sudo ln -s /Library/Fonts/华文宋体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
-$ sudo ln -s /Library/Fonts/华文楷体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
-$ sudo ln -s /Library/Fonts/华文仿宋.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
-$ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
-> /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
-```
-
-さらに，/usr/local/share/ghostscript/9.09/Resource/Font/ の中に
-例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
-
-```
-
-```
-
-***
-
-```
-/HiraMinProN-W3-H
-/H /CMap findresource
-[/HiraMinProN-W3 /CIDFont findresource]
-composefont pop
-```
-
-***
 
 以上で PostScript ファイルの表示ができるようになりました。
 ps2pdf もうまく行えます。
@@ -130,7 +67,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
 
-### /usr/local/share/ghostscript/9.09/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
+### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
 
 #### <a id="cidfmap-unix">For UNIX (e.g. Solaris, etc.) or Unix-like OS (e.g. Linux, BSD, etc.)</a> {#c18aa324}
 
