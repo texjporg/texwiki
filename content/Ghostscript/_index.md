@@ -56,9 +56,10 @@ L. Peter Deutsch の次のインタビュー記事をご覧ください。
 
 ### リリース情報 {#jbfe1b2f}
 
-<!-- -[[git.ghostscript.com Git - ghostpdl.git/tags:http://git.ghostscript.com/?p=ghostpdl.git;a=tags]] -->
+- [http://git.ghostscript.com/?p=ghostpdl.git;a=tags](http://git.ghostscript.com/?p=ghostpdl.git;a=tags)
+- [Ghostscript: News](http://www.ghostscript.com/News.html)
 
-[Ghostscript: News](http://www.ghostscript.com/News.html) を参照．
+を参照．
 
 ### ChangeLog {#ua2f6680}
 
