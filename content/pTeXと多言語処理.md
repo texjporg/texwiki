@@ -19,37 +19,27 @@ pTeX 上で多言語混在文書を扱う方法を
 取り扱っていませんし，個々のパッケージのインストール方法についても一部の
 パッケージについては割愛しています。<br>
 そこで稲垣さんが取り上げてくださることを
-期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
+期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。<br>
 
 この文書では基本的に Microsoft Windows を想定して書いていますが，UNIX 互換
-OS などでも似たような方法でインストールできるかもしれません。
+OS などでも似たような方法でインストールできるかもしれません。<br>
 また，[安田功さんの解説](http://yasuda.homeip.net/tex/texinst2.html)は
-UNIX 互換 OS での多言語環境構築において非常に参考になると思います。
+UNIX 互換 OS での多言語環境構築において非常に参考になると思います。<br>
 
 ### 参考—pTeX を使わない方法 {#o00569f3}
 
 ちなみに，pTeX でなくても良い場合は，
 
+1. [upTeX](/upTeX,upLaTeX/)
 1. [LuaTeX](/LuaTeX/)
 1. LuaJITTeX
-1. [XeTeX](/XeTeX/)
-1. [upTeX](/upTeX,upLaTeX/)
-1. [xeCJK パッケージ](/xeCJK/)
-1. [CJK パッケージ](/LaTeX-CJK/)
-1. [Unicode パッケージ](https://mirror.ctan.org/macros/latex/contrib/unicode/)
-1. CJK パッケージと Unicode パッケージの併用によるアプローチ
-1. [Aleph](http://wiki.contextgarden.net/Aleph)/[Omega \[Internet Archive\]](http://web.archive.org/web/20110726033308/http://omega.enstb.org/)
+1. [XeTeX](/XeTeX/), [XeLaTeX](/XeTeX/) + [xeCJK パッケージ](/xeCJK/)
+1. [(pdf)LaTeX](/pdfTeX/) + [CJK パッケージ](/LaTeX-CJK/)
+1. [newunicodechar パッケージ](https://mirror.ctan.org/macros/latex/contrib/newunicodechar/)
+1. [Aleph](http://wiki.contextgarden.net/Aleph)
 
 によるアプローチなどが考えられます。<br>
 upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照ください。<br>
-CJK パッケージと Unicode パッケージの併用によるアプローチ については FreeBSD
-上で[安田さんの試み](http://yasuda.homeip.net/tex/cjk.html)を参照ください。<br>
-Aleph/Omega の
-多言語化については
-[Omega-CJK \[Internet Archive\]](http://web.archive.org/web/20080605061802/http://hep-ph.konkuk.ac.kr/ChoF/)，[OmegaVN \[Internet Archive\]](http://web.archive.org/web/20071026212901/http://forum.vnoss.org/viewtopic.php?id=870)
-などがあります。OmegaVN に
-ついてはグェンさん自身のご紹介 ([qa:34272](https://okumuralab.org/~okumura/texfaq/qa/34272.html)) と
-最新版 dvipdfmx 上で使用する場合の注意事項 ([qa:37564](https://okumuralab.org/~okumura/texfaq/qa/37564.html)) も参照ください。<br>
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
@@ -1140,9 +1130,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-さらに，gs\gs9.09\lib\cidfmap の末尾に次を追記します。
+さらに，gs\gs$(gswin32c --version)\lib\cidfmap の末尾に次を追記します。
 
-#### gs\gs9.09\lib\cidfmap への追記 {#meed555f}
+#### gs\gs$(gswin32c --version)\lib\cidfmap への追記 {#meed555f}
 
 ***
 
@@ -1300,7 +1290,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /UnJamoDotum                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoDotum.ttf)  >> ;
 /UnJamoNovel                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoNovel.ttf)  >> ;
 
-%%% monospaced TrueType outline fonts in Windows Vista/XP
+%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
 %%% See C:\Windows\Fonts\
 /MS-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 0 >> ;
 /MS-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 0 >> ;
@@ -1313,7 +1303,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /GulimChe                     << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 1 >> ;
 /GungsuhChe                   << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 3 >> ;
 
-%%% proportional TrueType outline fonts in Windows Vista/XP
+%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
 %%% See C:\Windows\Fonts\
 /MS-PMincho                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 1 >> ;
 /MS-PGothic                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 1 >> ;
@@ -1325,14 +1315,14 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /Gulim                        << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 0 >> ;
 /Gungsuh                      << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 2 >> ;
 
-%%% monospaced TrueType outline fonts in Windows Vista
+%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
 %%% See C:\Windows\Fonts\
 /SimSun-ExtB                  << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simsunb.ttf) >> ;
 /KaiTi                        << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simkai.ttf)  >> ;
 /FangSong                     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simfang.ttf) >> ;
 /DFKaiShu-SB-Estd-BF          << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (C:/Windows/Fonts/kaiu.ttf)    >> ;
 
-%%% proportional TrueType outline fonts in Windows Vista
+%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
 %%% See C:\Windows\Fonts\
 /Meiryo                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 0 >> ;
 /Meiryo-Italic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 1 >> ;
@@ -1349,7 +1339,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /MalgunGothicRegular          << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/malgun.ttf)                 >> ;
 /MalgunGothicBold             << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/malgunbd.ttf)               >> ;
 
-%%% TrueType outline fonts in Microsoft Office 2003
+%%% TrueType outline fonts in Microsoft Office 2013
 /HGMinchoB                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrmb.ttc)   /SubfontID 0 >> ;
 /HGMinchoE                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrme.ttc)   /SubfontID 0 >> ;
 /HGSoeiPresenceEB             << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrpre.ttc)  /SubfontID 0 >> ;
@@ -1365,7 +1355,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-なお，gs\gs9.09\Resource\CMap\ に CMap をコピーしていない方は，
+なお，gs\gs$(gswin32c --version)\Resource\CMap\ に CMap をコピーしていない方は，
 そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
@@ -1560,13 +1550,13 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
 [Notepad++](/Notepad++/)，
-[サクラエディタ](</サクラエディタ/>) UNICODE 版，
+[サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
 [gedit](/gedit/)，
 [Geany](/Geany/)
 などがあります。
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方はメモ帳がおすすめです。Linux などの UNIX 互換 OS では
 GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，OS X では
-[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[Emacs For Mac OS X](http://www.emacsformacosx.com/)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
+[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
 そこで Microsoft Windows に附属しているワードパッド (WordPad) で
 リッチテキスト形式 (RTF) の多言語文書を
