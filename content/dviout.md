@@ -401,7 +401,7 @@ TeX や Ghostscript をネットワークドライブにインストールして
 
 と聞いてきますので， \[はい(Y)\] をクリックします。<br>
 すると，例えば次のように入ります（環境やバージョンによって違いがあります）。<br>
-■ Ghostscript を C:\gs\gs9.08 にインストールした場合
+■ Ghostscript を C:\gs\gs9.09 にインストールした場合
 
 ***
 
@@ -412,16 +412,16 @@ TeX や Ghostscript をネットワークドライブにインストールして
 　　 For font generation on demand, push \[gen:\] to set it<br>
 　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\gs\gs9.08\bin\gswin32c.exe</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\gs\gs9.09\bin\gswin32c.exe</ins><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
 
 ***
 
 ```
-C:\gs\gs9.08\bin\gswin32c.exe
+C:\gs\gs9.09\bin\gswin32c.exe
 ```
 
-■ Ghostscript を C:\Program Files\gs\gs9.08 にインストールした場合
+■ Ghostscript を C:\Program Files\gs\gs9.09 にインストールした場合
 
 ***
 
@@ -432,16 +432,16 @@ C:\gs\gs9.08\bin\gswin32c.exe
 　　 For font generation on demand, push \[gen:\] to set it<br>
 　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\PROGRA~1\gs\gs9.08\bin\gswin32c.exe</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\PROGRA~1\gs\gs9.09\bin\gswin32c.exe</ins><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
 
 ***
 
 ```
-C:\PROGRA~1\gs\gs9.08\bin\gswin32c.exe
+C:\PROGRA~1\gs\gs9.09\bin\gswin32c.exe
 ```
 
-■ Ghostscript を C:\Program Files (x86)\gs\gs9.08 にインストールした場合
+■ Ghostscript を C:\Program Files (x86)\gs\gs9.09 にインストールした場合
 
 ***
 
@@ -452,13 +452,13 @@ C:\PROGRA~1\gs\gs9.08\bin\gswin32c.exe
 　　 For font generation on demand, push \[gen:\] to set it<br>
 　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\PROGRA~2\gs\gs9.08\bin\gswin32c.exe</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\PROGRA~2\gs\gs9.09\bin\gswin32c.exe</ins><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
 
 ***
 
 ```
-C:\PROGRA~2\gs\gs9.08\bin\gswin32c.exe
+C:\PROGRA~2\gs\gs9.09\bin\gswin32c.exe
 ```
 
 こちらのほうは頭のバッククォート (\`) は不要です。
@@ -585,7 +585,7 @@ epsfdoc.tex をタイプセットして dviout で表示してみましょう。
 
 このサンプルでは Ghostscript 附属の golfer.eps，tiger.eps を使っています。<br>
 golfer.eps はモノクロ，tiger.eps はカラーの画像サンプルです。<br>
-epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\gs\gs9.08\examples\ または C:\Program Files\gs\gs9.08\examples\ または C:\Program Files (x86)\gs\gs9.08\examples\\) から
+epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\gs\gs9.09\examples\ または C:\Program Files\gs\gs9.09\examples\ または C:\Program Files (x86)\gs\gs9.09\examples\\) から
 C:\w32tex\dviout\GRAPHIC\PS\ フォルダーにコピーしてください。
 
 Windows PowerShell またはコマンド プロンプトから epsfdoc.tex のタイプセットを行います。
@@ -621,7 +621,7 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 　　　　　 ◯ Off　　　　　　　　　　　　◎ On (default)　　　　　　 ◯ verbose<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ Direct PS ← \usepackage\[dvips\]{hyperref} を使用する場合はチェックをはずす<br>
 　　　　　 ◯ PBM　　　　　　　　　　　◯ exact PBM　　　　　　　◯ gssub<br>
-　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\gs\gs9.08\bin\gswin32c.exe</ins><br>
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\gs\gs9.09\bin\gswin32c.exe</ins><br>
 　　　　　gdat: <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　☐ draw frame (gbox:)　　　　　　　　　☑ gfit: color BMP　　　　　　　　☐ gow: overwrite<br>
 　　　　　☐ size includes mag　　　　　　　　　　☑ gclip: clip　　　　　　　　　GIF:<ins>BMP (full color)\[▼\]</ins><br>
