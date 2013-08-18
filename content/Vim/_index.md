@@ -49,12 +49,6 @@ Vim は，チャリティウェアです．<br>
 
 [コミットログ](https://code.google.com/p/vim/source/list) を参照．<br>
 
-GVim 7.3.034 よりも前のバージョンには DLL 読み込みに関する脆弱性が存在します．<br>
-最新版へアップデートしてください．<br>
-詳細は [GVim における DLL 読み込みに関する脆弱性](http://jvn.jp/jp/JVN27868039/) を参照してください．<br>
-
-Gvim 7.3.520 で Ubuntu 12.04 でパッケージマネージャ経由でインストールされた GVim が起動時に数十秒ハングする問題が修正されました．<br>
-
 ### 派生版 {#ka1322d7}
 
 #### Windows {#mcb80f41}
@@ -199,7 +193,7 @@ SumatraPDF v1.9.4622 以上の場合はコマンドラインから forward searc
 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
-C:\vim73-kaoriya-win32\gvim.exe -n --remote-silent +%l "%f"
+C:\vim\gvim.exe -n --remote-silent +%l "%f"
 ```
 
 です．
