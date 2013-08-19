@@ -9,7 +9,7 @@ pukiwiki: "WinShell"
 
 <strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。それでも使いたければ以下の情報を見てください。</strong><br>
 
-WinShell ではなく [Texmaker](/Texmaker/), [LyX](/LyX/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/), [TeXnicCenter](/TeXnicCenter/) などの統合環境をおすすめします．<br>
+WinShell ではなく [Texmaker](/Texmaker/), [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/), [TeXnicCenter](/TeXnicCenter/) などの統合環境をおすすめします．<br>
 
 ## [WinShell](http://www.winshell.org/) {#cf193be7}
 
@@ -134,9 +134,9 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 UTF-8 を使用したい方は
 
 - [Texmaker](/Texmaker/)
+- [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
 - [TeXworks](/TeXworks/)
-- [TeXstudio](/TeXstudio/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
