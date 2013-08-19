@@ -13,6 +13,8 @@ pukiwiki: "F Sharp"
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
 - [http://msdn.microsoft.com/ja-jp/library/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/dd233154.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx)
+- [F#入門](http://fsharp.web.fc2.com/)
+- [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
 
 ### F# 3.1 {#ke30a498}
 
