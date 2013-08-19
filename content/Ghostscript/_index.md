@@ -95,20 +95,7 @@ Ghostscript 7.07 には脆弱性が存在するので縦書きが必要ない場
 Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります。<br>
 これらはいずれも背後で Ghostscript を動かしています。<br>
 
-## 注意点 {#t786e49a}
-
-### コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されない → CodePage の値を 932 に変更する {#qa4ebbcb}
-
-コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されないようです．(コマンド自体は正常終了します．)<br>
-これは一般に .bat ファイルが認識されないバグのためです．
-
-CodePage の値が 932 の場合は PDF ファイルが出力されます．
-
-```
-gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
-```
-
-のように ps2pdf.bat ではなく gswin32c.exe を実行すると PDF ファイルが作成できるようです．
+<!-- *注意点 [#t786e49a] -->
 
 ## 使い方 {#odaff2e6}
 
@@ -136,6 +123,7 @@ Ghostscript/OS X を参照．
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
+- [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) (PDF)
 
 ## Comment {#z51688d5}
 
