@@ -47,7 +47,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux 3.10.5-1-ARCH (tty1)
+Arch Linux 3.10.7-1-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
@@ -416,6 +416,12 @@ Texmaker のデフォルトのインプットメソッドが ibus になりま�
 Texmaker の \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックして<br>
 \[インプットメソッドを選択\]-\[ibus\] を選択してください．<br>
 
+## [TeXstudio](/TeXstudio/) {#geb231cb}
+
+```
+$ yaourt -S texstudio
+```
+
 ## [LyX](/LyX/) {#odd649e9}
 
 ```
@@ -428,12 +434,6 @@ $ sudo pacman -S lyx
 
 ```
 $ yaourt -S texworks
-```
-
-## [TeXstudio](/TeXstudio/) {#geb231cb}
-
-```
-$ yaourt -S texstudio
 ```
 
 ## LaTeXila {#q4319830}
