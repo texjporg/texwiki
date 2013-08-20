@@ -315,12 +315,12 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 - C:\MinGW\bin と C:\Qt\インストールしたQtのバージョン\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
-### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [Kile](/Kile/) を使用する {#i1222dd8}
+### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用する {#i1222dd8}
 
 Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがあります．<br>
 fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．\section{ の直後に日本語入力が ON にならない場合に手動で日本語入力を ON にした状態で \section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されます．<br>
 ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．<br>
-[Kile](/Kile/) を使用することで回避できます．<br>
+[TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用することで回避できます．<br>
 
 - [Kile使ってみたよ](http://ameblo.jp/a-gateau-chocolate/entry-11565297948.html)
 
