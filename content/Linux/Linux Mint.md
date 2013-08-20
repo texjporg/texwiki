@@ -306,6 +306,12 @@ Qt 設定ツールを使用せずに Texmaker の編集画面で右クリック�
 編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
 \[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
 
+## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#q1b2ff71}
+
+```
+$ sudo apt-get install texstudio
+```
+
 ## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
 
 最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
