@@ -35,9 +35,9 @@ GNOME
 - [latexila - LaTeXila, an Integrated LaTeX Environment](https://git.gnome.org/browse/latexila/)
     - [NEWS](https://git.gnome.org/browse/latexila/plain/NEWS)
     - [log](https://git.gnome.org/browse/latexila/log/)
-- [swilmet/latexila · GitHub](https://github.com/swilmet/latexila)
-    - [NEWS](https://github.com/swilmet/latexila/blob/master/NEWS)
-    - [コミットログ](https://github.com/swilmet/latexila/commits/master)
+- [GNOME/latexila · GitHub](https://github.com/GNOME/latexila)
+    - [NEWS](https://github.com/GNOME/latexila/blob/master/NEWS)
+    - [コミットログ](https://github.com/GNOME/latexila/commits/master)
 
 ### インストール {#scad45f9}
 
@@ -49,7 +49,7 @@ GNOME
 
 ## 不具合 {#o7b20b21}
 
-### LaTeXila 2.8.2 で \section{hoge} で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) → [Kile](/Kile/) を使用する {#xf55798b}
+### LaTeXila 2.8.2 で \section{hoge} で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) → [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用する {#xf55798b}
 
 LaTeXila 2.8.2 で
 
@@ -58,7 +58,7 @@ LaTeXila 2.8.2 で
 ```
 
 で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．<br>
-[Kile](/Kile/) を使用することで回避できます．<br>
+[TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用することで回避できます．<br>
 
 ## Build Tool {#t1320044}
 
