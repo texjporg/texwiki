@@ -220,7 +220,7 @@ fwdsumatrapdf.exe %.pdf #.tex @
 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
-C:\Texmaker\texmaker.exe "%f" -line %l
+"C:\Texmaker\texmaker.exe" "%f" -line %l
 ```
 
 です．
