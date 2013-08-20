@@ -10,3 +10,4 @@ pukiwiki: "Bash"
 ## Bash {#f79a5d3a}
 
 - [Bash - GNU Project - Free Software Foundation](http://www.gnu.org/software/bash/bash.html)
+- [Super Technique 講座～bash 超プログラム術](http://www.nurs.or.jp/~sug/soft/super/bash.htm)
