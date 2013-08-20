@@ -212,7 +212,9 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: latexmk -pdf -silent -pdflatex="pdflatex -synctex=1 &#x25;&#x25;O &#x25;&#x25;S" %
+: latexmk -e "$latex=q/platex &#x25;&#x25;O -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/pbibtex &#x25;&#x25;O -kanji=utf8 &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+
+: latexmk -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 SVN
 : &nbsp;
