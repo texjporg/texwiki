@@ -11,3 +11,4 @@ pukiwiki: "Haskell"
 
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
+- [HaskellJP wiki](http://wiki.haskell.jp/)
