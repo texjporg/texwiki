@@ -24,7 +24,6 @@ Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br>
 Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は Windows Management Framework 4.0 をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は Windows Update または [Windows Management Framework 3.0](http://support.microsoft.com/kb/2506143) をダウンロードしてインストールすれば Windows PowerShell 3.0 にアップグレードできます．<br>
-Windows Vista SP2 で Windows PowerShell 2.0 がインストールされていない場合は Windows Update または [Windows Management Framework](http://support.microsoft.com/kb/968929) をダウンロードしてインストールできます．<br>
 
 - [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
     - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
@@ -121,6 +120,10 @@ platex hoge.tex
 
 - [http://sourceforge.net/projects/conemu/](http://sourceforge.net/projects/conemu/)
 - [https://code.google.com/p/conemu-maximus5/](https://code.google.com/p/conemu-maximus5/)
+
+## Excel との連携 {#v10b1cbb}
+
+- [Excel PowerShell Tool Version 1.0](http://manamana.ddo.jp/blog/page/Excel-PowerShell-Tool-Version-10.aspx)
 
 ## Pash {#q316851f}
 
