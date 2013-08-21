@@ -7,9 +7,9 @@ pukiwiki: "Microsoft Office"
 
 # Microsoft Office
 
-## [Microsoft Office](http://office.microsoft.com/) {#f4dcc3e1}
+## [Microsoft Office](http://office.microsoft.com/ja-jp/) {#f4dcc3e1}
 
-- [Microsoft Office - Office.com](http://office.microsoft.com/)
+- [Microsoft Office - Office.com](http://office.microsoft.com/ja-jp/)
 - [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
 - [Office IT 担当者向けブログ](http://blogs.technet.com/b/office_jp/)
 - [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
