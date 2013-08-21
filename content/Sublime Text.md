@@ -80,6 +80,10 @@ Windows, OS X, Linux
 - [LaTeXing - LaTeX plugin for Sublime Text 2/3](http://www.latexing.com/)
 - [http://docs.latexing.com/](http://docs.latexing.com/)
 
+### Windows {#xf9437a8}
+
+- [Sublime Text 3 + LaTeXingでTeX環境を作ってみた。](http://isiz.hateblo.jp/entry/2013/08/22/Sublime_Text_3_%2B_LaTeXing%E3%81%A7TeX%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E3%80%82)
+
 ## [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) {#je94e188}
 
 - [SublimeOnSaveBuild Sublime Plugin](https://github.com/alexnj/SublimeOnSaveBuild)
