@@ -30,15 +30,21 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 ## 不具合 {#mb96765c}
 
-### [dvipdfmx Version 20130624 で しおりを作成するとジャンプできない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078) → dvipdfmx-20130405 を使用または W32TeX \[2013/08/17\] 以降にアップデート {#x496f09a}
+### [dvipdfmx Version 20130624 で TikZ を使用すると \*\* ERROR \*\* Invalid object type: 10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081) → TeX Live 2013 (dvipdfmx-20130405) を使用または W32TeX \[2013/08/17\] 以降にアップデート {#m3330a51}
 
-dvipdfmx-20130405 ではジャンプできます<br>
+TeX Live 2013 (dvipdfmx-20130405) では大丈夫です<br>
+
+- \[[dvipdfmx\] tikz のパターン描画でエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081)
+
+### [dvipdfmx Version 20130624 で しおりを作成するとジャンプできない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078) → TeX Live 2013 (dvipdfmx-20130405) を使用または W32TeX \[2013/08/17\] 以降にアップデート {#x496f09a}
+
+TeX Live 2013 (dvipdfmx-20130405) ではジャンプできます<br>
 
 - [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
 
-### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → dvipdfmx-20130405 を使用または TeX Live 2014 以降または W32TeX \[2013/08/09\] 以降にアップデート {#r12477d0}
+### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → TeX Live 2013 (dvipdfmx-20130405) を使用または TeX Live 2014 以降または W32TeX \[2013/08/09\] 以降にアップデート {#r12477d0}
 
-dvipdfmx-20130405 では出力可能です<br>
+TeX Live 2013 (dvipdfmx-20130405) では出力可能です<br>
 TeX Live 2014 (→ [Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398) を参照) および W32TeX \[2013/08/09\] で修正されました<br>
 
 - [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
@@ -47,14 +53,14 @@ TeX Live 2014 (→ [Revision 31398](http://www.tug.org/svn/texlive?view=revision
 
 - [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
 
-### TeX Live 2012 の dvipdfmx で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. → TeX Live 2013 以降または W32TeX \[2013/01/11\] 以降にアップデート {#z5173081}
+### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. → TeX Live 2013 (dvipdfmx-20130405) 以降または W32TeX \[2013/01/11\] 以降にアップデート {#z5173081}
 
 TeX Live 2013 (→ [Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787) を参照) および W32TeX \[2013/01/11\] で修正されました<br>
 
 - [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/56967.html)
 - [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=917)
 
-### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない → TeX Live 2013 以降または W32TeX \[2012/08/21\] 以降にアップデート {#za070e82}
+### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない → TeX Live 2013 (dvipdfmx-20130405) 以降または W32TeX \[2012/08/21\] 以降にアップデート {#za070e82}
 
 TeX Live 2013 (→ [Revision 27479](http://www.tug.org/svn/texlive?view=revision&revision=27479), [Revision 27480](http://www.tug.org/svn/texlive?view=revision&revision=27480) を参照) および W32TeX \[2012/08/21\] で修正されました<br>
 
@@ -105,22 +111,23 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 - TeX Live 2013 以降で使用可能です (→ TeX Live [Revision 29495](http://www.tug.org/svn/texlive?view=revision&revision=29495), [Revision 29512](http://www.tug.org/svn/texlive?view=revision&revision=29512) でコミットされました)
 - W32TeX \[2013/03/25\] で dvipdfmx,  W32TeX \[2013/03/27\] で xdvipdfmx に取り込まれました．
 
-デフォルトでは有効にならないようになっています。有効にするにはコマンドライン
-オプション
+デフォルトでは有効にならないようになっています。<br>
+有効にするにはコマンドラインオプション
 
 ```
 -I number
 ```
 
-において、number を正整数にします。この数値は、キャッシュが有効な時間を
-表しています。デフォルトで有効にしたい場合、dvipdfmx.cfg の I セクションで
+において、number を正整数にします。<br>
+この数値は、キャッシュが有効な時間を表しています。<br>
+デフォルトで有効にしたい場合、dvipdfmx.cfg の I セクションで
 
 ```
 I 24
 ```
 
-のように設定しておきます。この場合、一日以内ならキャッシュにイメージがある
-場合、それを使用することを意味しています。
+のように設定しておきます。<br>
+この場合、一日以内ならキャッシュにイメージがある場合、それを使用することを意味しています。<br>
 
 ### dvipdfmx に dvipdfm, extractbb, xbb, ebb などの名前でシンボリックリンクを作成する {#k882a214}
 
@@ -135,7 +142,7 @@ UNIX ではプログラムに複数の機能を実装してシンボリックリ
 dvipdfmx には DVI ファイルが存在しない PDF ファイルを削除する機能があります．
 
 ```
-PS > dvipdfmx test
+PS C:\Users\$Env:USERNAME> dvipdfmx test
 test.dvi -> test.pdf
 
 ** ERROR ** Could not open specified DVI file: test.dvi
