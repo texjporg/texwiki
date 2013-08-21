@@ -11,3 +11,4 @@ pukiwiki: "C"
 
 - [http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
+- [C言語は今でも価値のある言語か？](http://www.infoq.com/jp/news/2013/01/C-Language)
