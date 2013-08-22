@@ -24,7 +24,7 @@ pukiwiki: "Android"
     - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
     - [Android で LaTeX](http://d.hatena.ne.jp/kaikimiyoshi2/20130727/1374925927)
     - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
-    - [TeXPortal を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeXPortal), [岩崎 隆盛/「TeXPortal」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeXPortal)
+    - [TeXPortal : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeXPortal), [TeXPortal を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeXPortal), [岩崎 隆盛/「TeXPortal」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeXPortal)
     - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
 
 ### TeX Live (Linux) {#rfcf69bf}
