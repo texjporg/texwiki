@@ -32,7 +32,6 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 Ghostscript 9.08 には GSview に関するバグがあります．<br>
 
-- [A bug affecting compatibility with GSview was discovered very shortly after the 9.08 release.](http://www.ghostscript.com/)
 - [gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1079) ([qa:57187](https://okumuralab.org/~okumura/texfaq/qa/57187.html), [qa:57188](https://okumuralab.org/~okumura/texfaq/qa/57188.html), [qa:57189](https://okumuralab.org/~okumura/texfaq/qa/57189.html))
 
 Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください．<br>
@@ -57,9 +56,9 @@ Windows, OS X, Linux などの UNIX 互換 OS
 最新版の Ghostscript のライセンスは GNU Affero General Public License (AGPL) ですが，過去のバージョンには [AFPL](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING.AFPL;hb=HEAD) 版の Ghostscript があります。<br>
 AFPL 版は商業的な配布に制限があります。<br>
 このあたりの事情は，ちょっと古いですが，Ghostscript の作者
-L. Peter Deutsch の次のインタビュー記事をご覧ください。
+[L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください。
 
-- [L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041009114809/http://devlinux.org/deutsch-interview.html)
+- [L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
 
 ### リリース情報 {#jbfe1b2f}
 
