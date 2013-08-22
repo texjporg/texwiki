@@ -29,3 +29,8 @@ pukiwiki: "C++"
 
 - [Boost](http://www.boost.org/)
 - [Qt](http://qt-project.org/)
+
+### デストラクタ {#k238dbba}
+
+- [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
+- [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
