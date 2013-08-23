@@ -138,6 +138,7 @@ Windows PowerShell のオープンソース実装．<br>
         - [Windows PowerShell Cmdlet のヘルプ トピック](http://technet.microsoft.com/ja-jp/library/dd347701.aspx)
 - [winscript.jp](http://winscript.jp/)
 - [基礎知識 (Windows PowerShell)](http://ufcpp.net/study/powershell/basic.html)
+- [使う気が無い人向けのPowerShell入門](http://karino2.livejournal.com/69885.html)
 - [GUIユーザーのためのPowerShell入門](http://news.mynavi.jp/column/powershell/)
 - [GREP and SED with PowerShell](http://blogs.msdn.com/b/zainnab/archive/2007/07/09/grep-and-sed-with-powershell.aspx)
 - [Windows PowerShellを便利に使うための10のミニテクニック](http://handasse.blogspot.com/2009/08/powershell10.html)
