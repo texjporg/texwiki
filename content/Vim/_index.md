@@ -145,6 +145,7 @@ Vim は，チャリティウェアです．<br>
     - [vim-scripts/tex.vim--Tanzler - GitHub](https://github.com/vim-scripts/tex.vim--Tanzler)
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
 - [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
+- [unite-bibtex](https://github.com/termoshtt/unite-bibtex)
 - [Whizzy4Vim (WhizzyTeX for Vim)](http://www.pakunet.jp/whizzy4vim)
 - [CygwinでvimでTeXのコンパイル](http://d.hatena.ne.jp/interferobserver/20130815/1376517041)
 - [瞬間没入感](http://kwakita.wordpress.com/2013/03/22/immersion/)
