@@ -31,13 +31,13 @@ pukiwiki: "Ghostscript/OS X"
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinProN-W3
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinProN-W6
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinProN-W6
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuProN-W3
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuProN-W3
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuProN-W6
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuProN-W6
 $ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
 $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
@@ -45,21 +45,21 @@ $ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
 $ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
 > /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuStdN-W8
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuStdN-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMaruProN-W4
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMaruProN-W4
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinPro-W3
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMinPro-W6
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuPro-W3
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuPro-W3
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuPro-W6
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuPro-W6
 $ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraKakuStd-W8
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuStd-W8
 $ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/9.09/Resource/CIDFont/HiraMaruPro-W4
+> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMaruPro-W4
 $ sudo ln -s /Library/Fonts/华文宋体.ttf \
 > /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
 $ sudo ln -s /Library/Fonts/华文楷体.ttf \
