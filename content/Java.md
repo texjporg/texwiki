@@ -7,6 +7,8 @@ pukiwiki: "Java"
 
 # Java
 
+## Java, Scala {#m5391c84}
+
 ## Java {#e1088309}
 
 - [http://java.com/](http://java.com/)
@@ -22,3 +24,7 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 - [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
 
 もあります．
+
+## Scala {#ae0cb378}
+
+- [The Scala Programming Languag](http://www.scala-lang.org/)
