@@ -18,6 +18,8 @@ pukiwiki: "C++"
 - [http://msdn.microsoft.com/ja-jp/library/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/60k1461a.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/60k1461a.aspx)
 - [http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp)
+- [http://dev.activebasic.com/egtra/category/cpp/](http://dev.activebasic.com/egtra/category/cpp/)
+- [http://dev.activebasic.com/egtra/tag/cplusplus11/](http://dev.activebasic.com/egtra/tag/cplusplus11/)
 
 ### 処理系 {#zc4c802d}
 
@@ -29,6 +31,7 @@ pukiwiki: "C++"
 
 - [Boost](http://www.boost.org/)
 - [Qt](http://qt-project.org/)
+    - [Qt関連情報](http://uilabo.web.fc2.com/Qt/index.html)
 
 ### デストラクタ {#k238dbba}
 
