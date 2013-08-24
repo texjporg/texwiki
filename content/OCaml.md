@@ -13,3 +13,4 @@ pukiwiki: "OCaml"
 - [OCaml.jp](http://ocaml.jp/)
 - [OCaml Advent Calendar 2012](http://partake.in/events/680a8735-b35c-4911-aaba-03aaf0f400b2)
 - [Random memo of OCaml programming](https://bitbucket.org/camlspotter/ocaml-zippy-tutorial-in-japanese/src/8c85565b137193d324dfd4a2e8e9a577c700c8e2/random_memo.rst?at=default)
+- [https://github.com/realworldocaml](https://github.com/realworldocaml)
