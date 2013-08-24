@@ -33,8 +33,8 @@ forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> �
     - [Wiki](https://code.google.com/p/sumatrapdf/w/)
         - [DDEcommands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
 - [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
-    - [forward search fails in texlive 2011](http://forums.fofou.org/sumatrapdf/topic?id=2131346)
-    - [Forward search from Vim to sumatrapdf](http://forums.fofou.org/sumatrapdf/topic?id=2353338)
+    <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
+    <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
 
 ### 動作環境 {#z85aa9cd}
 
@@ -75,8 +75,8 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [Texmaker](/Texmaker/)
-- [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
+- [LyX](/LyX/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
