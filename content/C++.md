@@ -20,6 +20,7 @@ pukiwiki: "C++"
 - [http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/comphelp/v121v141/index.jsp)
 - [http://dev.activebasic.com/egtra/category/cpp/](http://dev.activebasic.com/egtra/category/cpp/)
 - [http://dev.activebasic.com/egtra/tag/cplusplus11/](http://dev.activebasic.com/egtra/tag/cplusplus11/)
+- [Visual C++ の勉強部屋](http://homepage3.nifty.com/ishidate/vcpp.htm)
 
 ### 処理系 {#zc4c802d}
 
