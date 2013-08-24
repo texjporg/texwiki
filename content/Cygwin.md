@@ -18,10 +18,13 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
+[Cygwin 1.7.22](http://cygwin.com/ml/cygwin/2013-07/msg00438.html) 以降は 64bit 版もあります．<br>
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
     - [The Cygwin Project mailing list archives](http://cygwin.com/ml/cygwin/)
+    - [The cygwin-announce mailing list archives](http://cygwin.com/ml/cygwin-announce/)
+    - [The cygwin-apps mailing list archives](http://cygwin.com/ml/cygwin-apps/)
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
@@ -38,7 +41,7 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 
 2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されることになりました．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
-[以下](#dead7b03)では，Cygwin オフィシャルインストーラの setup.exe を使って，TeX Live/Cygwin をインストールする方法を説明しています．<br>
+TeX Live/Cygwin は，Cygwin オフィシャルインストーラの setup-x86.exe または setup-x86_64.exe を使ってインストールできます．<br>
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
 Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
@@ -49,18 +52,25 @@ Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 の選択肢もあります．
 
 <!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
-<!-- ただし，setup.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
+<!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
 ## TeX Live <a id="texlive"></a> {#dead7b03}
-
-- [http://ftp.jaist.ac.jp/pub/cygwin/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/release/TeX/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/release/TeX/)
 
 ### リリース情報 {#z608db6c}
 
 #### TeX Live 2013/Cygwin {#a5716290}
 
 - \[[ANNOUNCEMENT\] Updated: TeX Live 2013](http://cygwin.com/ml/cygwin/2013-06/msg00553.html)
+
+### 32bit 版 (x86) {#cf18fc4c}
+
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
+
+### 64bit 版 (x86_64) {#u7b94ff6}
+
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
 
 ### 不具合 {#iffd4e02}
 
@@ -96,7 +106,7 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
 
-Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択してインストールできます．<br>
+Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画面で TeX Live/Cygwin を選択してインストールできます．<br>
 
 ***
 
@@ -130,8 +140,8 @@ Cygwin の setup.exe のパッケージ選択画面で TeX Live/Cygwin を選択
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Setup.exe version 2.774</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2012</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.819 (32bit)</strong> または <strong>Setup.exe version 2.819 (64bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
 ***
@@ -340,15 +350,16 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
 
-## setup.exe 以外のオフラインインストーラー {#lb2cecd8}
+## setup-x86.exe, setup-x86_64.exe 以外のオフラインインストーラー {#lb2cecd8}
 
 - [pmcyg](http://pmcyg.sourceforge.net/)
     - [オフラインでもCygwinのインストールを行えるようにする「pmcyg」](http://www.moongift.jp/2010/01/pmcyg/)
     - [pmcygを使ってCygwinをクリーンインストール](http://d.hatena.ne.jp/takehikom/20100110/1263073598)
 
-## setup.exe 以外のパッケージ管理 {#re5d2b36}
+## setup-x86.exe, setup-x86_64.exe 以外のパッケージ管理 {#re5d2b36}
 
 - [apt-cyg](https://code.google.com/p/apt-cyg/)
+    - [https://github.com/transcode-open/apt-cyg](https://github.com/transcode-open/apt-cyg)
     - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [cyg-apt](https://code.google.com/p/cyg-apt/)
 - [CygApt](https://code.google.com/p/maphew/wiki/CygApt)
@@ -389,9 +400,11 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 ## 関連リンク {#bc8cfcc3}
 
 - [Gow (Gnu On Windows)](https://github.com/bmatzelle/gow/wiki)
-- [Cygwin Portable](http://symbiosoft.net/projects/cygwin-portable)
-- [cygwinでのtexについて](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1384247398)
-- [Using LaTeX in Japanese on Cygwin.](http://www.mmsp.nitech.ac.jp/~k09/edit.php?tips%2FCygwin%20%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%20TeX%202011%20%E5%B9%B4%E7%89%88)
-- [\*shell\* バッファ(cygwin の bash) から日本語ファイルを扱うための設定](http://www.ysnb.net/meadow/meadow-users-jp/2010/msg00001.html)
-- [Windows に Cygwin バージョン 1.7 をインストール](http://kkaneko.com/rinkou/cygwin/cygwin.html)
+- [ゼロからはじめる「Cygwin」 - WindowsでUNIXを動かしてみよう！](http://news.mynavi.jp/articles/2013/08/06/cygwin/)
+- [いつの間にか Cygwin の 64bit 版がリリースされてた](http://d.hatena.ne.jp/sa-y/20130821#1377076966)
+- [Cygwin 64 と gcc 4.8.1](http://www.oki-osk.jp/esc/cyg/cygwin-27.html)
+- [cygwinの64bit版をインストール。fork問題の解決](http://waless.hatenablog.jp/entry/2013/07/28/103345)
+- [Cygwin/インストール](http://discypus.jp/wiki/?Cygwin%2F%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB)
+    <!-- -[[Windows に Cygwin バージョン 1.7 をインストール:http://kkaneko.com/rinkou/cygwin/cygwin.html]] -->
+
 - [便利コマンドバッチ集](http://aya-eiya.hateblo.jp/entry/20120312/1331572894)
