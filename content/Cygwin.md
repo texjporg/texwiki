@@ -18,7 +18,7 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
-[Cygwin 1.7.22](http://cygwin.com/ml/cygwin/2013-07/msg00438.html) 以降は 64bit 版もあります．<br>
+[Cygwin 1.7.22](http://cygwin.com/ml/cygwin/2013-07/msg00438.html) 以降は 64-bit 版もあります．<br>
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
@@ -41,7 +41,7 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 
 2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されることになりました．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
-TeX Live/Cygwin は，Cygwin オフィシャルインストーラの setup-x86.exe または setup-x86_64.exe を使ってインストールできます．<br>
+TeX Live/Cygwin は，Cygwin オフィシャルインストーラーの setup-x86.exe または setup-x86_64.exe を使ってインストールできます．<br>
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
 Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
@@ -62,12 +62,12 @@ Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
 - \[[ANNOUNCEMENT\] Updated: TeX Live 2013](http://cygwin.com/ml/cygwin/2013-06/msg00553.html)
 
-### 32bit 版 (x86) {#cf18fc4c}
+### 32-bit 版 (x86) {#cf18fc4c}
 
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
 - [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
 
-### 64bit 版 (x86_64) {#u7b94ff6}
+### 64-bit 版 (x86_64) {#u7b94ff6}
 
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
 - [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
@@ -110,7 +110,7 @@ Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画�
 
 ***
 
-<span style="color:Black;background-color:#80A0A0;"><ins>　　 <span style="color:#99003F;"><strong>Cygwin Setup</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#709090;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#709090;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#80A0A0;background-color:#80A0A0;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Cygwin Setup</strong></span>　　　　　　　　　　　　　　　　<span style="color:#80A0A0;background-color:#80A0A0;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#80A0A0;background-color:#80A0A0;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cygwin_logo.svg/200px-Cygwin_logo.svg.png" alt="Cygwin" style="float:left">
 
@@ -140,13 +140,13 @@ Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画�
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.819 (32bit)</strong> または <strong>Setup.exe version 2.819 (64bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.819 (32-bit)</strong> または <strong>Setup.exe version 2.819 (64-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
 ***
 
-<span style="color:Black;background-color:#80A0A0;"><ins>　　 <span style="color:#99003F;"><strong>Cygwin Setup - Select Packages</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#709090;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#709090;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#80A0A0;background-color:#80A0A0;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Cygwin Setup - Select Packages</strong></span>　　　　　　　　　　　　　　　　<span style="color:#80A0A0;background-color:#80A0A0;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#80A0A0;background-color:#80A0A0;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<strong>Select Packages</strong><br>
 　　　　<span style="font-size:12px">Select packages to download</span>
@@ -386,6 +386,7 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 - [Tera Term](http://ttssh2.sourceforge.jp/)
 - [Poderosa](http://poderosa.sourceforge.net/)
 - [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
+- [ConEmu](https://code.google.com/p/conemu-maximus5/)
 - [Console](http://sourceforge.net/projects/console/)
 - [CygTerm](http://www.dd.iij4u.or.jp/~nsym/cygwin/cygterm/)
 - [rxvt](http://rxvt.sourceforge.net/)
