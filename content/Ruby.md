@@ -9,8 +9,15 @@ pukiwiki: "Ruby"
 
 ## [Ruby](http://www.ruby-lang.org/) {#ufdd9309}
 
+- [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
+- [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
 convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
+
+## インストール {#oe1e1c67}
+
+### Windows {#j2a4eaa7}
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 
