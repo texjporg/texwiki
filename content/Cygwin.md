@@ -37,9 +37,9 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 - [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
 - [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
 
-## 日本語対応の TeX 環境の導入 {#b369bf5c}
+## TeX Live <a id="texlive"></a> {#dead7b03}
 
-2012年3月（[2012-03-02 \[cygin-apps\]](http://cygwin.com/ml/cygwin/2012-03/msg00120.html)）に，TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されることになりました．<br>
+TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されています．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
 TeX Live/Cygwin は，Cygwin オフィシャルインストーラーの setup-x86.exe または setup-x86_64.exe を使ってインストールできます．<br>
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
@@ -53,14 +53,6 @@ Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
 
 <!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
 <!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
-
-## TeX Live <a id="texlive"></a> {#dead7b03}
-
-### リリース情報 {#z608db6c}
-
-#### TeX Live 2013/Cygwin {#a5716290}
-
-- \[[ANNOUNCEMENT\] Updated: TeX Live 2013](http://cygwin.com/ml/cygwin/2013-06/msg00553.html)
 
 ### 32-bit 版 (x86) {#cf18fc4c}
 
@@ -377,22 +369,16 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 - [cygwin ck terminal emulator](http://www.geocities.jp/meir000/ck/)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
     - [PuTTY wish cygwin-terminal-window](http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/cygwin-terminal-window.html)
-    - [FuTTY](https://code.google.com/p/futty/)
-    - [PuTTYcyg](https://code.google.com/p/puttycyg/)
     - [PuTTYjp](http://hp.vector.co.jp/authors/VA024651/)
     - [GDI PuTTY](http://ice.hotmint.com/putty/)
     - [D2D/DW PuTTY](http://ice.hotmint.com/putty/d2ddw.html)
-    - [CygwinをPuTTYクローンと一緒に使えば思ったほど悪くない](http://oddwit.com/blog/2011/cygwin-futty)
+    - [FuTTY](https://code.google.com/p/futty/)
 - [Tera Term](http://ttssh2.sourceforge.jp/)
 - [Poderosa](http://poderosa.sourceforge.net/)
 - [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
 - [ConEmu](https://code.google.com/p/conemu-maximus5/)
 - [Console](http://sourceforge.net/projects/console/)
-- [CygTerm](http://www.dd.iij4u.or.jp/~nsym/cygwin/cygterm/)
-- [rxvt](http://rxvt.sourceforge.net/)
-    - [ja patched rxvt-20050409-9 on Cygwin](http://vmi.jp/software/cygwin/rxvt.html)
-    - [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- [ckw-mod](http://deflis.github.com/ckw-mod/)
+- [ckw-mod](http://ckw-mod.github.io/)
     - [ckw-mod を使う](http://yuu0t.hatenablog.com/entry/2012/01/12/220801)
 - [mlterm](http://mlterm.sourceforge.net/)
 - [sakura](https://launchpad.net/sakura)
