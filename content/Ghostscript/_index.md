@@ -96,10 +96,6 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
 
 <!-- *注意点 [#t786e49a] -->
 
-## 使い方 {#odaff2e6}
-
-[Ghostscript/使い方](</Ghostscript/使い方/>) を参照．
-
 ## Ghostscript for Microsoft Windows {#w33eec77}
 
 [Ghostscript/Windows](/Ghostscript/Windows/) を参照．
@@ -111,6 +107,10 @@ Ghostscript/OS X を参照．
 ## Ghostscript for Linux {#xff4aa84}
 
 [Ghostscript/Linux](/Ghostscript/Linux/) を参照．
+
+## 使い方 {#odaff2e6}
+
+[Ghostscript/使い方](</Ghostscript/使い方/>) を参照．
 
 ## 関連リンク {#we8f22aa}
 
