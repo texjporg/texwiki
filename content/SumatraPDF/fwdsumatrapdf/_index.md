@@ -670,6 +670,13 @@ $ cd /c/w32tex/bin
 $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
+Clang/LLVM でもビルド可能です．<br>
+
+```
+$ cd /c/w32tex/bin
+$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+```
+
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
@@ -688,6 +695,9 @@ Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でも
  *
  * MinGW
  * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ *
+ * Clang/LLVM
+ * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
@@ -743,10 +753,11 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
 
 namespace sumatrapdfclient
 {
-    template<typename T>
     class DdeClient
     {
     private:
+        basic_string<wchar_t> server;
+        basic_string<wchar_t> topic;
         DWORD idInstance;
         HSZ hszServer;
         HSZ hszTopic;
@@ -755,8 +766,10 @@ namespace sumatrapdfclient
         HDDEDATA hDdeTransactionData;
 
     public:
-        explicit DdeClient()
+        explicit DdeClient(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic)
         {
+            this->server = server;
+            this->topic = topic;
             this->idInstance = 0;
             this->hszServer = nullptr;
             this->hszTopic = nullptr;
@@ -809,19 +822,19 @@ namespace sumatrapdfclient
 
         }
 
-        auto execute(const basic_string<T>& server, const basic_string<T>& topic, const basic_string<T>& command) -> int
+        auto execute(const basic_string<wchar_t>& command) -> int
         {
             if (DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
                 wcerr << L"DdeInitializeW error" << endl;
                 return 4;
             }
 
-            if ((this->hszServer = DdeCreateStringHandleW(this->idInstance, server.c_str(), CP_WINUNICODE)) == nullptr) {
+            if ((this->hszServer = DdeCreateStringHandleW(this->idInstance, this->server.c_str(), CP_WINUNICODE)) == nullptr) {
                 wcerr << L"DdeCreateStringHandleW error" << endl;
                 return DdeGetLastError(idInstance);
             }
 
-            if ((this->hszTopic = DdeCreateStringHandleW(this->idInstance, topic.c_str(), CP_WINUNICODE)) == nullptr) {
+            if ((this->hszTopic = DdeCreateStringHandleW(this->idInstance, this->topic.c_str(), CP_WINUNICODE)) == nullptr) {
                 wcerr << L"DdeCreateStringHandleW error" << endl;
                 return DdeGetLastError(idInstance);
             }
@@ -831,7 +844,7 @@ namespace sumatrapdfclient
                 return DdeGetLastError(idInstance);
             }
 
-            if ((this->hDdeData = DdeCreateDataHandle(this->idInstance, reinterpret_cast<BYTE*>(const_cast<T*>(command.c_str())), static_cast<DWORD>((command.length() + 1)*sizeof(T)), 0, nullptr, CF_UNICODETEXT, 0)) == nullptr) {
+            if ((this->hDdeData = DdeCreateDataHandle(this->idInstance, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(command.c_str())), static_cast<DWORD>((command.length() + 1)*sizeof(wchar_t)), 0, nullptr, CF_UNICODETEXT, 0)) == nullptr) {
                 wcerr << L"DdeCreateDataHandle error" << endl;
                 return DdeGetLastError(idInstance);
             }
@@ -849,8 +862,7 @@ namespace sumatrapdfclient
 
 using namespace sumatrapdfclient;
 
-template<typename T>
-auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
+auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
 {
     auto err = 0;
 
@@ -862,7 +874,7 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
     }
 
     HKEY subKey = nullptr;
-    const basic_string<T> keyPath(L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe");
+    const basic_string<wchar_t> keyPath(L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe");
     if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath.c_str(), 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
         err = 1;
     }
@@ -875,9 +887,9 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
         }
     }
 
-    basic_string<T> sumatrapdfRegistry(sz, L'\0');
+    basic_string<wchar_t> sumatrapdfRegistry(sz, L'\0');
     if (subKey != nullptr) {
-        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(const_cast<T*>(sumatrapdfRegistry.c_str())), &sz) != ERROR_SUCCESS) {
+        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(sumatrapdfRegistry.c_str())), &sz) != ERROR_SUCCESS) {
             err = 1;
         }
     }
@@ -887,7 +899,7 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
         subKey = nullptr;
     }
 
-    basic_string<T> sumatrapdf(L"SumatraPDF.exe");
+    basic_string<wchar_t> sumatrapdf(L"SumatraPDF.exe");
     if (err == 0) {
         if (sumatrapdfRegistry.length() != 0) {
             if (PathFileExistsW(sumatrapdfRegistry.c_str())) {
@@ -900,8 +912,8 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
 
     if (err != 0) {
         err = 0;
-        const T* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
-        const T* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
+        const wchar_t* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+        const wchar_t* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
         if (PathFileExistsW(sumatrapdfWin32Default)) {
             sumatrapdf = sumatrapdfWin32Default;
         } else if (PathFileExistsW(sumatrapdfWin64Default)) {
@@ -924,12 +936,12 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
 
     si.cb = sizeof(si);
 
-    const basic_string<T> reuseInstance(L"-reuse-instance");
-    basic_ostringstream<T> oss;
+    const basic_string<wchar_t> reuseInstance(L"-reuse-instance");
+    basic_ostringstream<wchar_t> oss;
     oss << L"\"" << sumatrapdf << L"\" " << reuseInstance << L" \"" << pdf << L"\"";
-    basic_string<T> sumatrapdfCommandLine(oss.str());
+    basic_string<wchar_t> sumatrapdfCommandLine(oss.str());
 
-    if (CreateProcessW(nullptr, const_cast<T*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
+    if (CreateProcessW(nullptr, const_cast<wchar_t*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
         err = 3;
         return err;
     }
@@ -939,11 +951,10 @@ auto static RunSumatraPDF(const basic_string<T>& pdf) -> int
     return err;
 }
 
-template<typename T>
-auto static DdeExecute(const basic_string<T>& server, const basic_string<T>& topic, const basic_string<T>& command) -> int
+auto static DdeExecute(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic, const basic_string<wchar_t>& command) -> int
 {
-    auto dde = DdeClient<T>();
-    return dde.execute(server, topic, command);
+    auto dde = DdeClient(server, topic);
+    return dde.execute(command);
 }
 
 #if defined (_MSC_VER)
@@ -1014,6 +1025,22 @@ $ cd /c/w32tex/bin
 $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
+Clang/LLVM でもビルド可能です．<br>
+
+C の場合
+
+```
+$ cd /c/w32tex/bin
+$ clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+```
+
+C++ の場合
+
+```
+$ cd /c/w32tex/bin
+$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+```
+
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 C の場合
@@ -1043,6 +1070,10 @@ C++ の場合
  * MinGW
  * $ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
  * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ *
+ * Clang/LLVM
+ * $ clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
@@ -1324,12 +1355,11 @@ exn:
     return err;
 }
 
-#if defined (_MSC_VER)
 int
+#if defined (_MSC_VER)
 wmain(int argc,
       wchar_t** argv)
 #else
-int
 main(void)
 #endif
 {
