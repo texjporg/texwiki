@@ -34,4 +34,5 @@ python.exe を C:\Python33 にインストールした場合は
 ## 関連リンク {#z55d6188}
 
 - [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
+- [Python の if \__name_\_ == ‘\__main_\_’: を Perl, Ruby, PHP で行う](http://www.serendip.ws/archives/4360)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
