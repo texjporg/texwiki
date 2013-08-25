@@ -81,8 +81,9 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 
 ## 関連リンク {#x6de2338}
 
-- \[[会津若松市\]リブレオフィス導入時に発生した事例](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_prob.htm)
-- \[[会津若松市\]リブレオフィス導入までの経過](http://www.city.aizuwakamatsu.fukushima.jp/ja/shisei/torikumi/ooo/lo_info_koutei.htm)
+- [LibreOfficeの導入事例 - The Document Foundation Wiki](https://wiki.documentfoundation.org/JA/Marketing/CaseStudy)
 - [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・LibreOffice/OpenOffice.org のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
-- [「LibreOffice」利用マニュアルを公開しました](http://www.ja-fukuoka.or.jp/blog/archives/2011/12/libreoffice_manual_1112.php)
+- [LibreOffice | 福岡市農業協同組合](http://www.ja-fukuoka.or.jp/category/libre/)
+- [LibreOffice アーカイブ - Jablog（ジャブログ） -JA福岡市公式ブログ-](http://www.ja-fukuoka.or.jp/blog/archives/cat2/libreoffice/)
+- [オープンソース | 会津若松市](http://www.city.aizuwakamatsu.fukushima.jp/bunya/opensource/)
