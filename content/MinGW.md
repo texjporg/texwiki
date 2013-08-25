@@ -182,6 +182,7 @@ mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
 - [MinGW-builds](http://sourceforge.net/projects/mingwbuilds/)
 - [News - nuwen.net](http://nuwen.net/)
     - [MinGW Distro - nuwen.net](http://nuwen.net/mingw.html)
+- [mingw-w64-dgn](https://code.google.com/p/mingw-w64-dgn/)
 - [MinGW | Qt Wiki | Qt Project](http://qt-project.org/wiki/MinGW)
 - [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
