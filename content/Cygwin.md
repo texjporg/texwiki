@@ -95,6 +95,7 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 
 ### インストール {#a8514c6c}
 
+- [Windowsに執筆支援ツールのReVIEWを入れて書籍制作をCIする](http://ch3cooh.hatenablog.jp/entry/20130826/1377523171)
 - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
 
