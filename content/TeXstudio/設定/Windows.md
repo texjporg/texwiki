@@ -246,7 +246,7 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 forward search は 外部PDFビューア に
 
-■ 32bit Windows の場合
+■ 32-bit Windows の場合
 
 ```
 "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
@@ -258,7 +258,7 @@ forward search は 外部PDFビューア に
 dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
 ```
 
-■ 64bit Windows の場合
+■ 64-bit Windows の場合
 
 ```
 "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
@@ -276,13 +276,13 @@ dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[Forwa
 
 forward search は 外部PDFビューア に
 
-■ 32bit Windows の場合
+■ 32-bit Windows の場合
 
 ```
 dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
 ```
 
-■ 64bit Windows の場合
+■ 64-bit Windows の場合
 
 ```
 dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
