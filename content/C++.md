@@ -9,6 +9,7 @@ pukiwiki: "C++"
 
 ## C++ {#j4003691}
 
+- [http://www.stroustrup.com/](http://www.stroustrup.com/)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
@@ -34,6 +35,7 @@ pukiwiki: "C++"
 - [Boost](http://www.boost.org/)
 - [Qt](http://qt-project.org/)
     - [Qt関連情報](http://uilabo.web.fc2.com/Qt/index.html)
+    - [Connect to DDE Server](http://qt-project.org/forums/viewthread/16309/)
 
 ### デストラクタ {#k238dbba}
 
