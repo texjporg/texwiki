@@ -218,7 +218,7 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
-pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64bit 版の TeX Live 2013/Arch Linux で動作します．<br>
+pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64-bit 版の TeX Live 2013/Arch Linux で動作します．<br>
 pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定してください．<br>
 
 ```
@@ -249,7 +249,7 @@ platex で処理された DVI ファイルが表示できます．<br>
 $ pxdvi -watchfile 1 hoge.dvi &
 ```
 
-<!-- VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
+<!-- VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64-bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
 <!--  -->
 <!-- $ mkdir vine -->
 <!-- $ cd vine -->
