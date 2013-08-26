@@ -68,7 +68,7 @@ W32TeX がインストールされていれば以下のような表示になっ�
 これらを \[編集(E)...\] します．<br>
 TeX Live はデフォルトでは自動判別しませんが -guess-input-enc オプションを指定すれば自動判別します．<br>
 W32TeX はデフォルトでは ptexenc を用いて自動判別します．<br>
-dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32bit 版) に PATH が通っているか確認してください．<br>
+dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-bit 版) に PATH が通っているか確認してください．<br>
 
 ### TeX Live の場合 {#je390768}
 
