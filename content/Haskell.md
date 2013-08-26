@@ -17,3 +17,4 @@ pukiwiki: "Haskell"
 - [Haskell Advent Calendar 2012](http://partake.in/events/45a01d39-af5e-42f1-91c7-e8fcc91db244)
 - [Haskellで文字列を UTF-32 ⇔UTF-16 変換する。](http://d.hatena.ne.jp/sirocco/20130416/1366103044)
 - [Haskellで副作用を起こす(Win32 API によるUTF-16 ⇔ Shift-JIS 変換)](http://d.hatena.ne.jp/sirocco/20130422/1366632065)
+- [島ぶくろ　 Haskellプログラミング](http://saltheads.blog134.fc2.com/blog-category-16.html)
