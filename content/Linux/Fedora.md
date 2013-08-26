@@ -144,7 +144,7 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-pxdvi は 64bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から pxdvi-motif が収録されているパッケージ (texlive-2012-4vl7.x86_64.rpm) をダウンロード・展開して pxdvi-motif, pxdvi.cfg などを適切な場所に配置して openmotif をインストールして &#x58;DVIINPUTS に適切な値を設定すれば使用可能になります．<br>
+pxdvi は 64-bit 版の Fedora 19 の場合は [http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/](http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/) から pxdvi-motif が収録されているパッケージ (texlive-2012-4vl7.x86_64.rpm) をダウンロード・展開して pxdvi-motif, pxdvi.cfg などを適切な場所に配置して openmotif をインストールして &#x58;DVIINPUTS に適切な値を設定すれば使用可能になります．<br>
 
 ```
 $ mkdir vine
