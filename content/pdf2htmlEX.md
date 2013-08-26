@@ -68,14 +68,14 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 <!--  -->
 <!-- MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します．~ -->
 <!--  -->
-<!-- 32bit Windows の場合 -->
+<!-- 32-bit Windows の場合 -->
 <!--  -->
 <!-- $ pexports /c/Windows/System32/python27.dll > python27.def -->
 <!-- $ dlltool -D /c/Windows/System32/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
 <!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'. -->
 <!-- $ rm python27.def -->
 <!--  -->
-<!-- 64bit Windows の場合 -->
+<!-- 64-bit Windows の場合 -->
 <!--  -->
 <!-- $ pexports /c/Windows/SysWOW64/python27.dll > python27.def -->
 <!-- $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
