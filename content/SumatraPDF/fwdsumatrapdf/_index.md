@@ -221,7 +221,7 @@ C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals 
 
 ***
 
-- 32bit Windows の場合
+- 32-bit Windows の場合
 
 ***
 
@@ -244,7 +244,7 @@ C:.
 
 ***
 
-- 64bit Windows の場合
+- 64-bit Windows の場合
 
 ***
 
