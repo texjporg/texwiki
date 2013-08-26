@@ -83,7 +83,7 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 
 ***
 
-コマンド プロンプト (標準出力) に出力したい場合は printf を使用します．
+Windows PowerShell またはコマンド プロンプト (標準出力) に出力したい場合は printf を使用します．
 
 ***
 
@@ -131,3 +131,6 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 
 - [Newest &#39;luajittex&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/luajittex)
 - [QA: luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)
+- [https://code.launchpad.net/~reviczky/luatex/debian-luajittex](https://code.launchpad.net/~reviczky/luatex/debian-luajittex)
+- [https://code.launchpad.net/~reviczky/+archive/luatex-daily](https://code.launchpad.net/~reviczky/+archive/luatex-daily)
+- [https://code.launchpad.net/~reviczky/+recipe/luajittex-daily](https://code.launchpad.net/~reviczky/+recipe/luajittex-daily)
