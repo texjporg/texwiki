@@ -173,13 +173,13 @@ Aspell を使用する場合は \[プラグイン\]-\[DSpellCheck\]-\[Settings..
 ### Aspell の使い方（Emacs編） {#aemcsfoi}
 
 Emacs の exec-path に Aspell の PATH を追加します。<br>
-32bit Windows の場合は
+32-bit Windows の場合は
 
 ```
 (add-to-list 'exec-path "C:/Program Files/Aspell/bin")
 ```
 
-64bit Windows の場合は
+64-bit Windows の場合は
 
 ```
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin")
