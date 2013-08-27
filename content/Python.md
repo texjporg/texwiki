@@ -9,6 +9,8 @@ pukiwiki: "Python"
 
 ## [Python](http://www.python.org/) {#ff8ca087}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/500px-Python_logo_and_wordmark.svg.png" alt="Python" style="float:right">
+
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
@@ -35,4 +37,5 @@ python.exe を C:\Python33 にインストールした場合は
 
 - [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
 - [Python の if \__name_\_ == ‘\__main_\_’: を Perl, Ruby, PHP で行う](http://www.serendip.ws/archives/4360)
+- [http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python](http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
