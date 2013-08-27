@@ -35,8 +35,11 @@ PS C:\w32tex\bin>dmd fwdsumatrapdf.d
 
 module fwdsumatrapdf;
 
-pragma (lib, "user32.lib");
-pragma (lib, "advapi32.lib");
+version (DigitalMars)
+{
+    pragma (lib, "user32.lib");
+    pragma (lib, "advapi32.lib");
+}
 
 import core.stdc.stdlib;
 import std.conv;
@@ -174,7 +177,7 @@ struct DDEClient {
     auto execute(in string command)
     {
         DdeInitializeW(&this.idInstance, sumatraDdeCallback, APPCMD_CLIENTONLY, 0);
-        if (this.idInstance == 0u) throw new DdemlError("DdeCreateStringHandleW error");
+        if (this.idInstance == 0u) throw new DdemlError("DdeInitializeW error");
         this.hszServer = DdeCreateStringHandleW(this.idInstance, toUTF16z(server), CP_WINUNICODE);
         if (this.hszServer == null) throw new DdemlError("DdeCreateStringHandleW error");
         this.hszTopic = DdeCreateStringHandleW(this.idInstance, toUTF16z(topic), CP_WINUNICODE);
