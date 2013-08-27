@@ -9,6 +9,8 @@ pukiwiki: "TeX"
 
 ## TeX {#b942966a}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TeX_logo.svg/200px-TeX_logo.svg.png" alt="TeX" style="float:right">
+
 ### TeX プログラミング {#ff81e0cc}
 
 - \[[プログラミング\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
