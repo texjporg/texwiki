@@ -30,3 +30,254 @@ Windows 7 SP1 の場合は .NET Framework 4.5 をインストールする必要�
 
 - [F# 3.0 を Visual Studio なしでインストールする](http://blog.recyclebin.jp/archives/2889)
 - [Microsoft、「Visual Studio Express」でF#言語を利用可能にするアドインを公開](http://www.forest.impress.co.jp/docs/news/20120913_559448.html)
+
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
+
+F# 版の fwdsumatrapdf は他のプログラミング言語で記述されたものに比べると短いことがわかると思います．<br>
+F# 版の fwdsumatrapdf.exe のビルド・実行には F# が必要です．<br>
+
+- fwdsumatrapdf.exe の作成方法
+    - F# をインストールします．
+    - C:\w32tex\bin\fwdsumatrapdf.fs または C:\w32tex\bin\fwdsumatrapdf.fsx を作成します．
+
+***
+
+- C:\w32tex\bin\fwdsumatrapdf.fs
+- C:\w32tex\bin\fwdsumatrapdf.fsx
+
+***
+
+```
+// vim: ts=4 sw=4 expandtab:
+// >fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
+// >fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
+#if INTERACTIVE
+#r @"Microsoft.VisualBasic.dll"
+#endif
+
+#light
+
+module Fwdsumatrapdf
+
+module Ddeml =
+    open System
+    open System.Runtime.InteropServices
+
+    //exception DdemlError of string
+    type DdemlError (e) = inherit Exception (e)
+    type DdeCallback = delegate of uint32 * uint32 * nativeint * nativeint * nativeint * nativeint * uint32 * uint32 -> nativeint
+    let APPCMD_CLIENTONLY = 0x10u
+    let CP_WINUNICODE = 1200
+    let CF_UNICODETEXT = 13u
+    let XCLASS_FLAGS = 0x4000u
+    let XTYP_EXECUTE = (0x0050u ||| XCLASS_FLAGS)
+    [<DllImport(@"user32.dll", EntryPoint="DdeInitializeW", CharSet=CharSet.Unicode)>]
+    extern uint32 DdeInitializeW (uint32&, DdeCallback, uint32, uint32)
+    [<DllImport(@"user32.dll", EntryPoint="DdeUninitialize", CharSet=CharSet.Unicode)>]
+    extern bool DdeUninitialize (uint32)
+    [<DllImport(@"user32.dll", EntryPoint="DdeCreateStringHandleW", CharSet=CharSet.Unicode)>]
+    extern nativeint DdeCreateStringHandleW (uint32, string, int)
+    [<DllImport(@"user32.dll", EntryPoint="DdeFreeStringHandle", CharSet=CharSet.Unicode)>]
+    extern bool DdeFreeStringHandle (uint32, nativeint)
+    [<DllImport(@"user32.dll", EntryPoint="DdeCreateDataHandle", CharSet=CharSet.Unicode)>]
+    extern nativeint DdeCreateDataHandle (uint32, string, uint32, uint32, nativeint, uint32, uint32)
+    [<DllImport(@"user32.dll", EntryPoint="DdeFreeDataHandle", CharSet=CharSet.Unicode)>]
+    extern bool DdeFreeDataHandle (nativeint)
+    [<DllImport(@"user32.dll", EntryPoint="DdeConnect", CharSet=CharSet.Unicode)>]
+    extern nativeint DdeConnect (uint32, nativeint, nativeint, nativeint)
+    [<DllImport(@"user32.dll", EntryPoint="DdeDisconnect", CharSet=CharSet.Unicode)>]
+    extern bool DdeDisconnect (nativeint)
+    [<DllImport(@"user32.dll", EntryPoint="DdeClientTransaction", CharSet=CharSet.Unicode)>]
+    extern nativeint DdeClientTransaction (nativeint, uint32, nativeint, nativeint, uint32, uint32, uint32, nativeint)
+
+module SumatraPDFClient =
+    open System
+    open System.IO
+    open System.Diagnostics
+    open System.ComponentModel
+    open Microsoft.Win32
+    open Microsoft.VisualBasic
+
+    let timeout = 10000
+
+    let Usage args = do
+#if INTERACTIVE
+        let s = "usage: fsi " + fsi.CommandLineArgs.[0] + " pdffile texfile line"
+#else
+        let s = "usage: " + (Environment.GetCommandLineArgs ()).[0] + " pdffile texfile line"
+#endif
+        match Array.length args with
+        | 3 -> ()
+        | _ -> do
+            Console.Error.WriteLine s
+            Environment.Exit 2
+
+    let RunSumatraPDF pdf = do
+        match Process.GetProcessesByName "SumatraPDF" |> Array.length with
+        | 0 -> do
+            let ps = new Process ()
+            try
+                let registryValue = ref "SumatraPDF.exe"
+                let keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe"
+                using (Registry.LocalMachine.OpenSubKey keyPath) ( fun rKey ->
+                    registryValue := String.Empty |> rKey.GetValue |> string
+                )
+                let sumatrapdfRegistry = !registryValue
+                match File.Exists sumatrapdfRegistry with
+                | true  -> ps.StartInfo.FileName <- sumatrapdfRegistry
+                | false -> new FileNotFoundException "File Not Found." |> raise
+            with
+                | e -> do
+                     let sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe"
+                     let sumatrapdfWin64Default = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"
+                     match (File.Exists sumatrapdfWin32Default, File.Exists sumatrapdfWin64Default) with
+                     | (true, true)   -> ps.StartInfo.FileName <- sumatrapdfWin32Default
+                     | (true, false)  -> ps.StartInfo.FileName <- sumatrapdfWin32Default
+                     | (false, true)  -> ps.StartInfo.FileName <- sumatrapdfWin64Default
+                     | (false, false) -> ps.StartInfo.FileName <- Interaction.InputBox ("Input the path to SumatraPDF.exe.", "fwdsumatrapdf", "SumatraPDF.exe")
+            ps.StartInfo.Arguments <- "-reuse-instance " + "\"" + pdf + "\""
+            ps.Start () |> ignore
+            ps.WaitForInputIdle timeout |> ignore
+        | _ -> ()
+
+    let DdeExecute server topic command = do
+        let mutable idInstance = 0u
+        let mutable hszServer = 0n
+        let mutable hszTopic = 0n
+        let mutable hConvClient = 0n
+        let mutable hDdeData = 0n
+        let mutable hDdeTransactionData = 0n
+        try
+            Ddeml.DdeInitializeW (&idInstance, new Ddeml.DdeCallback (fun uType uFmt hconv hsz1 hsz2 hdata dwData1 dwData2 -> 0n), Ddeml.APPCMD_CLIENTONLY, 0u) |> ignore
+            if idInstance = 0u then new Ddeml.DdemlError "DdeInitializeW error" |> raise
+            hszServer <- Ddeml.DdeCreateStringHandleW (idInstance, server, Ddeml.CP_WINUNICODE)
+            if hszServer = 0n then new Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
+            hszTopic <- Ddeml.DdeCreateStringHandleW (idInstance, topic, Ddeml.CP_WINUNICODE)
+            if hszTopic = 0n then new Ddeml.DdemlError "DdeCreateStringHandleW error" |> raise
+            hConvClient <- Ddeml.DdeConnect (idInstance, hszServer, hszTopic, 0n)
+            if hConvClient = 0n then new Ddeml.DdemlError "DdeConnect error" |> raise
+            hDdeData <- Ddeml.DdeCreateDataHandle (idInstance, command, uint32 ((String.length command + 1)*sizeof<char>), 0u, 0n, Ddeml.CF_UNICODETEXT, 0u)
+            if hDdeData = 0n then new Ddeml.DdemlError "DdeCreateDataHandle error" |> raise
+            hDdeTransactionData <- Ddeml.DdeClientTransaction (hDdeData, uint32 -1, hConvClient, 0n, 0u, Ddeml.XTYP_EXECUTE, uint32 timeout, 0n)
+            if hDdeTransactionData = 0n then new Ddeml.DdemlError "DdeClientTransaction error" |> raise
+        finally
+            if hDdeTransactionData <> 0n then Ddeml.DdeFreeDataHandle (hDdeTransactionData) |> ignore
+            if hDdeData <> 0n then Ddeml.DdeFreeDataHandle (hDdeData) |> ignore
+            if hszServer <> 0n then Ddeml.DdeFreeStringHandle (idInstance, hszServer) |> ignore
+            if hszTopic <> 0n then Ddeml.DdeFreeStringHandle (idInstance, hszTopic) |> ignore
+            if hConvClient <> 0n then Ddeml.DdeDisconnect (hConvClient) |> ignore
+            if idInstance <> 0u then Ddeml.DdeUninitialize (idInstance) |> ignore
+
+    let Main args = do
+        Usage args
+        let pdf = args.[0]
+        let tex = args.[1]
+        let line = args.[2]
+        try
+            int line |> ignore
+            RunSumatraPDF pdf
+            let active = 0
+            let forwardSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + string active + ")]"
+            DdeExecute "SUMATRA" "control" forwardSearch
+        with
+            | :? Win32Exception as e -> do
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -3
+            | :? InvalidOperationException as e -> do
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -2
+            | e -> do
+                 Console.Error.WriteLine e.Message
+                 Environment.Exit -1
+
+module Main =
+    open System
+    open SumatraPDFClient
+
+#if INTERACTIVE
+    fsi.CommandLineArgs |> Array.toList |> List.tail |> List.toArray |> Main
+#else
+    [<EntryPoint; STAThread>]
+    let EntryPoint args =
+        Main args
+        0
+#endif
+```
+
+***
+
+- fwdsumatrapdf.fs または fwdsumatrapdf.fsx をビルドして fwdsumatrapdf.exe を作成します．
+
+C:\w32tex\bin\fwdsumatrapdf.fsx を fsc.exe でコンパイルすると C:\w32tex\bin\fwdsumatrapdf.exe が作成されます．<br>
+コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
+
+```
+>C:
+>cd C:\w32tex\bin
+C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
+C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
+```
+
+上記のコマンドでうまく動作しない場合は
+
+```
+C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fs
+C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fsx
+```
+
+***
+
+- 32-bit Windows の場合
+
+***
+
+```
+C:.
+├─w32tex
+│  └─bin
+│      ├─fwdsumatrapdf.exe
+│      ├─fwdsumatrapdf.fs
+│      └─fwdsumatrapdf.fsx
+└─Program Files
+    └─Microsoft SDKs
+        └─F#
+            └─3.0
+                └─Framework
+                    └─v4.0
+                        ├─Fsc.exe
+                        └─Fsi.exe
+```
+
+***
+
+- 64-bit Windows の場合
+
+***
+
+```
+C:.
+├─w32tex
+│  └─bin
+│      ├─fwdsumatrapdf.exe
+│      ├─fwdsumatrapdf.fs
+│      └─fwdsumatrapdf.fsx
+└─Program Files (x86)
+    └─Microsoft SDKs
+        └─F#
+            └─3.0
+                └─Framework
+                    └─v4.0
+                        ├─Fsc.exe
+                        └─Fsi.exe
+```
+
+***
+
+fwdsumatrapdf.fsx のように拡張子を .fsx とすればビルドせずに fsi.exe で実行することが可能です．<br>
+ただしビルドした場合に比べると動作は遅くなります．<br>
+
+```
+>fsi C:\w32tex\bin\fwdsumatrapdf.fsx hoge.pdf hoge.tex 30
+```
+
+引数に渡すパラメータや状況によって例外が発生することがあります．<br>
