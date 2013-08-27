@@ -9,6 +9,8 @@ pukiwiki: "Haskell"
 
 ## Haskell {#r7b07a76}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/200px-Haskell-Logo.svg.png" alt="Haskell" style="float:right">
+
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
