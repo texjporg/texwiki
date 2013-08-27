@@ -324,6 +324,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
 　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
+　　　　 ∣☑win64/lcdf-typetools-w64.tar.xz　　無い　　　782KB<br>
 　　　　 ∣☑win64/luajittex-w64.tar.xz　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
