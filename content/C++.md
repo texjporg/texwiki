@@ -59,7 +59,7 @@ $ cd /c/w32tex/bin
 $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
-Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
 >cd /d c:\w32tex\bin
@@ -256,7 +256,7 @@ auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
     }
 
     HKEY subKey = nullptr;
-    const basic_string<wchar_t> keyPath(L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe");
+    const basic_string<wchar_t> keyPath(LR"(SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe)");
     if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath.c_str(), 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
         err = 1;
     }
@@ -294,8 +294,8 @@ auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
 
     if (err != 0) {
         err = 0;
-        const wchar_t* sumatrapdfWin32Default = L"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
-        const wchar_t* sumatrapdfWin64Default = L"C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe";
+        const wchar_t* sumatrapdfWin32Default = LR"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
+        const wchar_t* sumatrapdfWin64Default = LR"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
         if (PathFileExistsW(sumatrapdfWin32Default)) {
             sumatrapdf = sumatrapdfWin32Default;
         } else if (PathFileExistsW(sumatrapdfWin64Default)) {
