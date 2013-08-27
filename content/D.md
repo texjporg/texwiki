@@ -11,3 +11,263 @@ pukiwiki: "D"
 
 - [http://dlang.org/](http://dlang.org/)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
+
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#nfc264ca}
+
+D 版も作成してみました．<br>
+DMD32 D Compiler v2.063.2 でビルドできます．<br>
+Windows PowerShell から以下のようにしてビルドします．<br>
+
+```
+PS C:\w32tex\bin>dmd fwdsumatrapdf.d
+```
+
+***
+
+- C:\w32tex\bin\fwdsumatrapdf.d
+
+***
+
+```
+// vim: ts=4 sw=4 expandtab:
+// -*- coding: utf-8 -*-
+// >dmd fwdsumatrapdf.d
+
+module fwdsumatrapdf;
+
+pragma (lib, "user32.lib");
+pragma (lib, "advapi32.lib");
+
+import core.stdc.stdlib;
+import std.conv;
+import std.exception;
+import std.file;
+import std.path;
+import std.stdio;
+import std.utf;
+import std.windows.registry;
+
+immutable auto APPCMD_CLIENTONLY = 0x10u;
+immutable auto CP_WINUNICODE = 1200;
+immutable auto CF_UNICODETEXT = 13u;
+immutable auto XCLASS_FLAGS = 0x4000u;
+immutable auto XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
+
+immutable auto TIMEOUT = 10000;
+auto existSumatraHWND = false;
+
+class DdemlError : Exception {
+    this(in string e) {
+        super(e);
+    }
+}
+
+struct STARTUPINFOW {
+    uint cb;
+    wchar* lpReserved;
+    wchar* lpDesktop;
+    wchar* lpTitle;
+    uint dwX;
+    uint dwY;
+    uint dwXSize;
+    uint dwYSize;
+    uint dwXCountChars;
+    uint dwYCountChars;
+    uint dwFillAttribute;
+    uint dwFlags;
+    ushort wShowWindow;
+    ushort cbReserved2;
+    byte* lpReserved2;
+    void* hStdInput;
+    void* hStdOutput;
+    void* hStdError;
+}
+
+struct PROCESS_INFORMATION {
+    void* hProcess;
+    void* hThread;
+    uint dwProcessId;
+    uint dwThreadId;
+}
+
+extern (C)
+{
+    wchar* wcsrchr(in wchar*, in wchar);
+    int wcscmp(in wchar*, in wchar*);
+}
+
+extern (Windows)
+{
+    int GetWindowTextW(void*, in wchar*, int);
+    auto GetSumatraHWND = function bool(void* hwnd, uint lParam) {
+        immutable auto maxSize = 1024;
+        wchar[maxSize] windowText;
+        GetWindowTextW(hwnd, windowText.ptr, maxSize);
+
+        if (windowText[0] == to!wchar('\0')) {
+            return true;
+        }
+
+        wchar* title = null;
+        if ((title = wcsrchr(cast(wchar*)windowText.ptr, to!wchar('S'))) == null) {
+            return true;
+        }
+
+        wstring sumatrapdf = "SumatraPDF";
+        if (wcscmp(title, sumatrapdf.ptr) != 0) {
+            return true;
+        }
+
+        existSumatraHWND = true;
+
+        return true;
+    };
+    bool EnumWindows(bool function (void*, uint), uint);
+    auto sumatraDdeCallback = function void* (uint uType, uint uFmt, void* hconv, void* hsz1, void* hsz2, void* hdata, uint dwData1, uint dwData2) { return null; };
+    wchar** GetCommandLineW();
+    wchar** CommandLineToArgvW(in wchar**, int*);
+    uint DdeInitializeW(uint*, void* function (uint, uint, void*, void*, void*, void*, uint, uint), uint, uint);
+    bool DdeUninitialize(uint);
+    void* DdeCreateStringHandleW(uint, in wchar*, int);
+    bool DdeFreeStringHandle(uint, void*);
+    void* DdeCreateDataHandle(uint, in wchar*, uint, uint, void*, const uint, uint);
+    bool DdeFreeDataHandle(void*);
+    void* DdeConnect(uint, void*, void*, void*);
+    bool DdeDisconnect(void*);
+    void* DdeClientTransaction(void*, uint, void*, void*, uint, uint, uint, void*);
+    bool CreateProcessW(in wchar*, in wchar*, void*, void*, bool, uint, void*, void*, void*, void*);
+    uint WaitForInputIdle(void*, uint);
+}
+
+struct DDEClient {
+    private string server;
+    private string topic;
+    private uint idInstance;
+    private void* hszServer;
+    private void* hszTopic;
+    private void* hConvClient;
+    private void* hDdeData;
+    private void* hDdeTransactionData;
+
+    this(in string server, in string topic)
+    {
+        this.server = server;
+        this.topic = topic;
+        this.idInstance = 0u;
+        this.hszServer = null;
+        this.hszTopic = null;
+        this.hConvClient = null;
+        this.hDdeData = null;
+        this.hDdeTransactionData = null;
+    }
+
+    ~this()
+    {
+        if (this.hDdeTransactionData != null) DdeFreeDataHandle(this.hDdeTransactionData);
+        if (this.hDdeData != null) DdeFreeDataHandle(this.hDdeData);
+        if (this.hszServer != null) DdeFreeStringHandle(this.idInstance, this.hszServer);
+        if (this.hszTopic != null) DdeFreeStringHandle(this.idInstance, this.hszTopic);
+        if (this.hConvClient != null) DdeDisconnect(this.hConvClient);
+        if (this.idInstance != 0) DdeUninitialize(this.idInstance);
+    }
+
+    auto execute(in string command)
+    {
+        DdeInitializeW(&this.idInstance, sumatraDdeCallback, APPCMD_CLIENTONLY, 0);
+        if (this.idInstance == 0u) throw new DdemlError("DdeCreateStringHandleW error");
+        this.hszServer = DdeCreateStringHandleW(this.idInstance, toUTF16z(server), CP_WINUNICODE);
+        if (this.hszServer == null) throw new DdemlError("DdeCreateStringHandleW error");
+        this.hszTopic = DdeCreateStringHandleW(this.idInstance, toUTF16z(topic), CP_WINUNICODE);
+        if (this.hszTopic == null) throw new DdemlError("DdeCreateStringHandleW error");
+        this.hConvClient = DdeConnect(this.idInstance, this.hszServer, this.hszTopic, null);
+        if (this.hConvClient == null) throw new DdemlError("DdeConnect error");
+        this.hDdeData = DdeCreateDataHandle(this.idInstance, toUTF16z(command), to!uint((command.length + 1)*wchar.sizeof), 0, null, CF_UNICODETEXT, 0u);
+        if (this.hDdeData == null) throw new DdemlError("DdeCreateDataHandle error");
+        this.hDdeTransactionData = DdeClientTransaction(this.hDdeData, cast(uint)-1, this.hConvClient, null, 0, XTYP_EXECUTE, to!uint(TIMEOUT), null);
+        if (this.hDdeTransactionData == null) throw new DdemlError("DdeClientTransaction error");
+
+        return;
+    }
+}
+
+auto
+DdeExecute(string server, string topic, string command)
+{
+    auto dde = DDEClient(server, topic);
+    return dde.execute(command);
+}
+
+auto
+RunSumatraPDF(string pdf)
+{
+    uint hList;
+    EnumWindows(GetSumatraHWND, hList);
+    if (existSumatraHWND == true) {
+        return;
+    }
+
+    immutable auto keyPath = r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
+    string sumatrapdf = r"SumatraPDF.exe";
+    try {
+        auto key = Registry.localMachine.getKey(keyPath);
+        auto val = key.getValue(null);
+        sumatrapdf = "\"" ~ val.value_SZ() ~ "\"";
+    } catch (Exception e) {
+        immutable string sumatrapdfWin32Default = r"C:\Program Files\SumatraPDF\SumatraPDF.exe";
+        immutable string sumatrapdfWin64Default = r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
+        if (exists(sumatrapdfWin32Default)) {
+            sumatrapdf = "\"" ~ sumatrapdfWin32Default ~ "\"";
+        } else if (exists(sumatrapdfWin64Default)) {
+            sumatrapdf = "\"" ~ sumatrapdfWin64Default ~ "\"";
+        } else {
+            sumatrapdf = r"C:\Windows\System32\rundll32 shell32,ShellExec_RunDLL SumatraPDF";
+        }
+    }
+
+    immutable auto sumatrapdfCommandLine = sumatrapdf ~ " -reuse-instance " ~ "\"" ~ pdf ~ "\"";
+    STARTUPINFOW si;
+    PROCESS_INFORMATION pi;
+    if (CreateProcessW(null, toUTF16z(sumatrapdfCommandLine), null, null, false, 0u, null, null, &si, &pi) == false) {
+        throw new Exception("CreateProcessW error");
+        return;
+    }
+
+    WaitForInputIdle(pi.hProcess, to!uint(TIMEOUT));
+
+    return;
+}
+
+auto
+Usage(in string[] args)
+{
+    if (args.length != 4) {
+        stderr.writefln("Usage: %s pdf tex line", baseName(args[0]));
+        exit(2);
+    }
+
+    return;
+}
+
+int
+main(string[] args)
+{
+    Usage(args);
+    immutable auto pdf = args[1];
+    immutable auto tex = args[2];
+    immutable auto line = args[3];
+    try {
+        to!int(line);
+        RunSumatraPDF(absolutePath(pdf));
+        immutable auto active = 0;
+        immutable auto forwardSearch = "[ForwardSearch(\"" ~ absolutePath(pdf) ~ "\",\"" ~ absolutePath(tex) ~ "\"," ~ line ~ ",0,0," ~ to!string(active) ~ ")]";
+        DdeExecute("SUMATRA", "control", forwardSearch);
+    } catch (Exception e) {
+        stderr.writefln(to!string(e));
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
+***
