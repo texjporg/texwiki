@@ -9,6 +9,8 @@ pukiwiki: "Perl"
 
 ## [Perl](http://www.perl.org/) {#ub914852}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/200px-Camelia.svg.png" alt="Perl" style="float:right">
+
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
 
