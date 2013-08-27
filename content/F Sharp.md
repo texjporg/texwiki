@@ -9,6 +9,8 @@ pukiwiki: "F Sharp"
 
 ## F# {#e8696677}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/9/93/FSharp_Logo.png" alt="F#" style="float:right">
+
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
 - [http://msdn.microsoft.com/ja-jp/library/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/dd233154.aspx)
@@ -33,7 +35,7 @@ Windows 7 SP1 の場合は .NET Framework 4.5 をインストールする必要�
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
 
-F# 版の fwdsumatrapdf は他のプログラミング言語で記述されたものに比べると短いことがわかると思います．<br>
+F# 版の fwdsumatrapdf は他の静的型付け言語で記述されたものに比べると短いことがわかると思います．<br>
 F# 版の fwdsumatrapdf.exe のビルド・実行には F# が必要です．<br>
 
 - fwdsumatrapdf.exe の作成方法
