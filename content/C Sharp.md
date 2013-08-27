@@ -9,6 +9,8 @@ pukiwiki: "C Sharp"
 
 ## C#, VB {#j3a00665}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/200px-C_Sharp_wordmark.svg.png" alt="C#" style="float:right">
+
 ## C# {#h89884a4}
 
 - [http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx)
