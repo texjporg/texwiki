@@ -9,6 +9,8 @@ pukiwiki: "PHP"
 
 ## PHP: Hypertext Preprocessor {#k50e5340}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/200px-PHP-logo.svg.png" alt="PHP" style="float:right">
+
 [http://www.php.net/](http://www.php.net/)
 
 - [http://jp2.php.net/](http://jp2.php.net/) (日本のミラーサイト)
