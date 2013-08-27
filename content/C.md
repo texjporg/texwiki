@@ -9,8 +9,11 @@ pukiwiki: "C"
 
 ## C {#hb6b6e11}
 
-- [http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
-- [http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/200px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png" alt="C" style="float:right">
+
+- [Wikipedia.ja:C言語](https://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
+- [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
+- [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
 - [C言語は今でも価値のある言語か？](http://www.infoq.com/jp/news/2013/01/C-Language)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
