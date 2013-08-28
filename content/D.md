@@ -245,7 +245,7 @@ auto
 Usage(in string[] args)
 {
     if (args.length != 4) {
-        stderr.writefln("Usage: %s pdf tex line", baseName(args[0]));
+        stderr.writefln("usage: %s pdf tex line", baseName(args[0]));
         exit(2);
     }
 
