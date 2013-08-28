@@ -37,6 +37,7 @@ module fwdsumatrapdf;
 
 version (DigitalMars)
 {
+    pragma (lib, "kernel32.lib");
     pragma (lib, "user32.lib");
     pragma (lib, "advapi32.lib");
 }
