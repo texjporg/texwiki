@@ -25,3 +25,5 @@ pukiwiki: "Haskell"
 - [http://darcs.haskell.org/testsuite/timeout/](http://darcs.haskell.org/testsuite/timeout/)
     - [http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc](http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc)
 - [https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc](https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc)
+- [http://tanakh.jp/pub/pfi-seminar-2011-12-08.html#1](http://tanakh.jp/pub/pfi-seminar-2011-12-08.html#1)
+- [http://www.ync-net.co.jp/~kaz/cgi-bin/WiLiKi/wiliki.cgi?try%2fthrow%2fcatch%2ffinally](http://www.ync-net.co.jp/~kaz/cgi-bin/WiLiKi/wiliki.cgi?try%2fthrow%2fcatch%2ffinally)
