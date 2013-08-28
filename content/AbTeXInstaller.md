@@ -39,101 +39,6 @@ Windows 8.1, 8, 7, Vista, XP
 
 ## インストール {#gbf84ff3}
 
-Windows PowerShell または コマンド プロンプトを起動します．<br>
-Windows 8.1, 8, 7 は Windows PowerShell が標準搭載されています．<br>
-
-> <table>
-> <thead>
-> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">Windows PowerShell の起動方法</th></tr>
-> </thead>
-> <tbody>
-> <tr><td>Windows 8.1</td><td>［Windows キー + X キーを押す］または［左下隅を右クリック］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows 8</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows Vista</td><td>［Windows キーを押す］-［検索の開始］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> </tbody>
-> </table>
->
-
-> <table>
-> <thead>
-> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">コマンド プロンプトの起動方法</th></tr>
-> </thead>
-> <tbody>
-> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows 8</td><td>［Windows キー + X キーを押す］または［左下隅を右クリック］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows Vista</td><td>［Windows キーを押す］-［検索の開始］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> </tbody>
-> </table>
->
-
-Windows PowerShell またはコマンド プロンプトに次のように
-打ち込んでフォルダー オプションを表示します．<br>
-
-```
-control folders
-```
-
-表示タブをクリックします．<br>
-
-- 隠しファイル、隠しフォルダーおよび隠しドライブを表示する
-
-を選択します．<br>
-
-- 登録されている拡張子は表示しない
-- 保護されたオペレーティング システム ファイルを表示しない (推奨)
-
-のチェックをはずします．<br>
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>フォルダー オプション</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 全般　 \]</ins></span><strong>\[ 表示　 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 検索　 \]</ins></span><br>
-
-　　 フォルダーの表示<br>
-　　　　　　　　　　　　この表示方法 (詳細表示やアイコンなど) をこの種類のフォルダーす<br>
-　　　　　　　　　　　　べてに適用することができます。<br>
-　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[　　フォルダーに適用(L)　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　フォルダーをリセット(R)　　\]</span><br>
-
-<br>
-
-<br>
-
-　　 詳細設定:<br>
-　　　　ファイルおよびフォルダー<br>
-　　　　☑ ステータス バーを表示する<br>
-　　　　☐ タイトル バーに完全なパスを表示する<br>
-　　　　☐ チェックボックスを使用して項目を選択する<br>
-　　　　☑ ドライブ文字を表示する<br>
-　　　　　ファイルとフォルダーの表示<br>
-　　　　　<strong>(●) 隠しファイル、隠しフォルダーおよび隠しドライブを表示する ← 選択する</strong><br>
-　　　　　 ◯ 隠しファイル、隠しフォルダーおよび隠しドライブを表示しない<br>
-　　　　☑ フォルダーとデスクトップの項目の説明をポップアップで表示する<br>
-　　　　☑ フォルダーのヒントにファイル サイズ情報を表示する<br>
-　　　　☑ フォルダーの結合の競合を非表示にする<br>
-　　　　☑ プレビュー ウィンドウでプレビューのハンドラーを表示する<br>
-　　　　　リスト ビューで入力するとき<br>
-　　　　　 ◯ 検索ボックスに自動的に入力する<br>
-　　　　　(●) 入力した項目をビューで選択する<br>
-　　　　☐ ログオン時に以前のフォルダー ウィンドウを表示する<br>
-　　　　☑ 暗号化や圧縮された NTFS ファイルをカラーで表示する<br>
-　　　　☑ 共有ウィザードを使用する (推奨)<br>
-　　　　☑ 空のドライブは表示しない<br>
-　　　　☑ 縮小版にファイル アイコンを表示する<br>
-　　　　☐ 常にアイコンを表示し、縮小版は表示しない<br>
-　　　　☐ 常にメニューを表示する<br>
-　　　　<strong>☐ 登録されている拡張子は表示しない ← チェックをはずす</strong><br>
-　　　　☐ 別のプロセスでフォルダー ウィンドウを開く<br>
-　　　　<strong>☐ 保護されたオペレーティング システム ファイルを表示しない (推奨) ← チェックをはずす</strong><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値に戻す(D)　　\]</span><br>
-
-***
-
 [TeX インストーラ 3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
 から TeXインストーラ3 の最新版をダウンロードして展開 (解凍) します。<br>
 展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br>
@@ -324,7 +229,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/dvipsk-w64.tar.xz　　　　　　　無い　　　601KB<br>
 　　　　 ∣☑win64/dvitools-w64.tar.xz　　　　　　無い　　　1.1MB<br>
 　　　　 ∣☑win64/jtex-w64.tar.xz　　　　　　　　無い　　　570KB<br>
-　　　　 ∣☑win64/lcdf-typetools-w64.tar.xz　　無い　　　782KB<br>
+　　　　 ∣☑win64/lcdf-typetools-w64.tar.xz　　無い　　　695KB<br>
 　　　　 ∣☑win64/luajittex-w64.tar.xz　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/luatex-w64.tar.xz　　　　　　 無い　　　2.5MB<br>
 　　　　 ∣☑win64/m-tx-w64.tar.xz　　　　　　　 無い　　　391KB<br>
