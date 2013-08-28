@@ -20,3 +20,8 @@ pukiwiki: "Haskell"
 - [Haskellで文字列を UTF-32 ⇔UTF-16 変換する。](http://d.hatena.ne.jp/sirocco/20130416/1366103044)
 - [Haskellで副作用を起こす(Win32 API によるUTF-16 ⇔ Shift-JIS 変換)](http://d.hatena.ne.jp/sirocco/20130422/1366632065)
 - [島ぶくろ　 Haskellプログラミング](http://saltheads.blog134.fc2.com/blog-category-16.html)
+- [Haskellの構造体をCと同期させる](http://tsubaki.hatenablog.com/entry/20110112/1294759187)
+- [How do I use Haskell's FFI on structs?](http://stackoverflow.com/questions/670221/how-do-i-use-haskells-ffi-on-structs)
+- [http://darcs.haskell.org/testsuite/timeout/](http://darcs.haskell.org/testsuite/timeout/)
+    - [http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc](http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc)
+- [https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc](https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc)
