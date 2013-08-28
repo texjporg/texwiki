@@ -51,13 +51,13 @@ import std.stdio;
 import std.utf;
 import std.windows.registry;
 
-immutable auto APPCMD_CLIENTONLY = 0x10u;
-immutable auto CP_WINUNICODE = 1200;
-immutable auto CF_UNICODETEXT = 13u;
-immutable auto XCLASS_FLAGS = 0x4000u;
-immutable auto XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
+immutable APPCMD_CLIENTONLY = 0x10u;
+immutable CP_WINUNICODE = 1200;
+immutable CF_UNICODETEXT = 13u;
+immutable XCLASS_FLAGS = 0x4000u;
+immutable XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
 
-immutable auto TIMEOUT = 10000;
+immutable TIMEOUT = 10000;
 auto existSumatraHWND = false;
 
 class DdemlError : Exception {
@@ -104,7 +104,7 @@ extern (Windows)
 {
     int GetWindowTextW(void*, in wchar*, int);
     auto GetSumatraHWND = function bool(void* hwnd, uint lParam) {
-        immutable auto maxSize = 1024;
+        immutable maxSize = 1024;
         wchar[maxSize] windowText;
         GetWindowTextW(hwnd, windowText.ptr, maxSize);
 
@@ -210,15 +210,15 @@ RunSumatraPDF(string pdf)
         return;
     }
 
-    immutable auto keyPath = r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
+    immutable keyPath = r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
     string sumatrapdf = r"SumatraPDF.exe";
     try {
         auto key = Registry.localMachine.getKey(keyPath);
         auto val = key.getValue(null);
         sumatrapdf = "\"" ~ val.value_SZ() ~ "\"";
     } catch (Exception e) {
-        immutable string sumatrapdfWin32Default = r"C:\Program Files\SumatraPDF\SumatraPDF.exe";
-        immutable string sumatrapdfWin64Default = r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
+        immutable sumatrapdfWin32Default = r"C:\Program Files\SumatraPDF\SumatraPDF.exe";
+        immutable sumatrapdfWin64Default = r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
         if (exists(sumatrapdfWin32Default)) {
             sumatrapdf = "\"" ~ sumatrapdfWin32Default ~ "\"";
         } else if (exists(sumatrapdfWin64Default)) {
@@ -228,7 +228,7 @@ RunSumatraPDF(string pdf)
         }
     }
 
-    immutable auto sumatrapdfCommandLine = sumatrapdf ~ " -reuse-instance " ~ "\"" ~ pdf ~ "\"";
+    immutable sumatrapdfCommandLine = sumatrapdf ~ " -reuse-instance " ~ "\"" ~ pdf ~ "\"";
     STARTUPINFOW si;
     PROCESS_INFORMATION pi;
     if (CreateProcessW(null, toUTF16z(sumatrapdfCommandLine), null, null, false, 0u, null, null, &si, &pi) == false) {
@@ -256,14 +256,14 @@ int
 main(string[] args)
 {
     Usage(args);
-    immutable auto pdf = args[1];
-    immutable auto tex = args[2];
-    immutable auto line = args[3];
+    immutable pdf = args[1];
+    immutable tex = args[2];
+    immutable line = args[3];
     try {
         to!int(line);
         RunSumatraPDF(absolutePath(pdf));
-        immutable auto active = 0;
-        immutable auto forwardSearch = "[ForwardSearch(\"" ~ absolutePath(pdf) ~ "\",\"" ~ absolutePath(tex) ~ "\"," ~ line ~ ",0,0," ~ to!string(active) ~ ")]";
+        immutable active = 0;
+        immutable forwardSearch = "[ForwardSearch(\"" ~ absolutePath(pdf) ~ "\",\"" ~ absolutePath(tex) ~ "\"," ~ line ~ ",0,0," ~ to!string(active) ~ ")]";
         DdeExecute("SUMATRA", "control", forwardSearch);
     } catch (Exception e) {
         stderr.writefln(to!string(e));
