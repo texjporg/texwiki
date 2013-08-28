@@ -136,9 +136,13 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
     <!-- - -[[Issue 261: Scripts:https://code.google.com/p/texworks/issues/detail?id=261]] -->
     <!-- - -[[Issue 516: backslash becomes yen:https://code.google.com/p/texworks/issues/detail?id=516]] -->
 
-### [MacTeX-2013 の TeXworks で TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXShop](/TeXShop/) を使用する {#n5c2ae8e}
+### [MacTeX-2013 の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用する {#n5c2ae8e}
+
+MacTeX-2013 の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
 
 - [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
+- [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
+- [Issue 623 - texworks - Built-in PDF viewer cannot display Japanese characters correctly.](https://code.google.com/p/texworks/issues/detail?id=623)
 
 ### OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう → [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html.ja) で Backslash が優先されるようにキーバインドを変更する {#f4128341}
 
