@@ -82,6 +82,7 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
 
 ## TeX ► QA ► フォーラム ► 一般フォーラム ► {#m9d42515}
 
+- [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
 - [TeXworksのpdfビューワーで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1039)
 - [文字の前後の空白](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=922)
 - [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
@@ -134,6 +135,10 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
     <!-- - -[[Issue 164:	color schemes:https://code.google.com/p/texworks/issues/detail?id=164]] -->
     <!-- - -[[Issue 261: Scripts:https://code.google.com/p/texworks/issues/detail?id=261]] -->
     <!-- - -[[Issue 516: backslash becomes yen:https://code.google.com/p/texworks/issues/detail?id=516]] -->
+
+### [MacTeX-2013 の TeXworks で TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXShop](/TeXShop/) を使用する {#n5c2ae8e}
+
+- [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
 
 ### OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう → [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html.ja) で Backslash が優先されるようにキーバインドを変更する {#f4128341}
 
