@@ -30,7 +30,7 @@ let g:tex_flavor='latex'
 ***
 
 を記述しておく必要があります．<br>
-補完機能が必要な方は neocomplcache &amp; neosnippet を使用してください．<br>
+補完機能が必要な方は [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
 
 ***
 
