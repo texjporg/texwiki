@@ -45,7 +45,7 @@ Windows, OS X, Linux
 
 ### Windows {#f2460848}
 
-- [Evince/Downloads - GNOME Live!](https://live.gnome.org/Evince/Downloads)
+- [Apps/Evince/Downloads - GNOME Wiki!](https://wiki.gnome.org/Apps/Evince/Downloads)
 
 公式サイトの Windows 版の Evince で日本語を表示したい場合はフォントを埋め込む必要があります．<br>
 自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．<br>
