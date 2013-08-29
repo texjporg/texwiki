@@ -23,6 +23,8 @@ pukiwiki: "C++"
 - [http://dev.activebasic.com/egtra/tag/cplusplus11/](http://dev.activebasic.com/egtra/tag/cplusplus11/)
 - [Visual C++ の勉強部屋](http://homepage3.nifty.com/ishidate/vcpp.htm)
 - [最新のC++を学ぶ - Barbara Moo氏インタビュー](http://www.infoq.com/jp/articles/modern-C-book-moo)
+- [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
+- [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
 
 ### 処理系 {#zc4c802d}
 
@@ -36,11 +38,6 @@ pukiwiki: "C++"
 - [Qt](http://qt-project.org/)
     - [Qt関連情報](http://uilabo.web.fc2.com/Qt/index.html)
     - [Connect to DDE Server](http://qt-project.org/forums/viewthread/16309/)
-
-### デストラクタ {#k238dbba}
-
-- [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
-- [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#m066ad0f}
 
