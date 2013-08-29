@@ -116,8 +116,6 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 となっているという誤植があります (2013/07/11)．
 
-- [LuaTeX-jaではギリシャ文字のイタリック体が表示されない件](http://ubutun.blogspot.jp/2013/08/luatex-ja.html)
-
 #### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
 
 LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
@@ -211,6 +209,7 @@ polyglossia v1.3 以降は XeLaTeX と LuaLaTeX がサポートされていま�
 ## 関連リンク {#sf395095}
 
 - [「LuaTeX-ja」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX-ja)
+- [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
 - [LuaTeX-ja を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=LuaTeX-ja)
 - [LuaTex-ja : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LuaTex-ja)
 - [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
