@@ -19,7 +19,7 @@ DMD32 D Compiler v2.063.2 でビルドできます．<br>
 Windows PowerShell から以下のようにしてビルドします．<br>
 
 ```
-PS C:\w32tex\bin>dmd fwdsumatrapdf.d
+PS C:\w32tex\bin> dmd fwdsumatrapdf.d
 ```
 
 ***
