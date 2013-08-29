@@ -57,7 +57,6 @@ Vim は，チャリティウェアです．<br>
     Vim オリジナルに，日本語を扱う上で便利な設定やスクリプトが追加されている
     - [koron (MURAOKA Taro) · GitHub](https://github.com/koron)
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
-        <!-- -[[vim-win3264:https://code.google.com/p/vim-win3264/]] -->
         <!-- -[[gVim Portable:http://sf.net/projects/portableapps/files/gVim%20Portable/]] -->
 
 #### Windows, Linux {#o0f5036e}
@@ -111,14 +110,6 @@ Vim は，チャリティウェアです．<br>
 
 - [Issues](https://code.google.com/p/vim/issues/list)
 
-### Ubuntu 12.04 の gvim がまともに動かない → [Patch 7.3.520 にて修正されました](http://vim-jp.org/blog/2012/05/20/patch_7.3.520.html) {#fba97189}
-
-回避策：gvim -f で起動<br>
-
-- [GTK版GVimが起動時に数十秒待たされる問題が修正されました。](http://vim-jp.org/blog/2012/05/20/patch_7.3.520.html)
-- [Issue #193: Ubuntu 12.04 の gvim がまともに動かない · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/193)
-- [Bug #987707 “gvim in Precise can't connect to ibus and takes a l...” : Bugs : “vim” package : Ubuntu](https://bugs.launchpad.net/ubuntu/+source/vim/+bug/987707)
-
 ## Vim で LaTeX {#i2be46c6}
 
 ### tex.vim {#y0b061e7}
@@ -129,7 +120,7 @@ Vim は，チャリティウェアです．<br>
 
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
-- neocomplcache &amp; neosnippet
+- [neocomplete &amp; neosnippet](/neocomplete/)
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
