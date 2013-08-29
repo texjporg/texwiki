@@ -27,3 +27,7 @@ pukiwiki: "Haskell"
 - [https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc](https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc)
 - [http://tanakh.jp/pub/pfi-seminar-2011-12-08.html#1](http://tanakh.jp/pub/pfi-seminar-2011-12-08.html#1)
 - [http://www.ync-net.co.jp/~kaz/cgi-bin/WiLiKi/wiliki.cgi?try%2fthrow%2fcatch%2ffinally](http://www.ync-net.co.jp/~kaz/cgi-bin/WiLiKi/wiliki.cgi?try%2fthrow%2fcatch%2ffinally)
+- [http://keqh.net/cookbook/](http://keqh.net/cookbook/)
+- [Haskell の例外処理](http://tnomura9.exblog.jp/15094780/)
+- [Haskell での例外処理](http://d.hatena.ne.jp/kazu-yamamoto/20120604/1338802792), [Haskellでの例外処理(その2)](http://d.hatena.ne.jp/kazu-yamamoto/20120605/1338871044)
+- [http://stackoverflow.com/questions/6009384/exception-handling-in-haskell](http://stackoverflow.com/questions/6009384/exception-handling-in-haskell)
