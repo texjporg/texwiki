@@ -9,7 +9,7 @@ pukiwiki: "neocomplete"
 
 [Vim](/Vim/) > neocomplete &amp; neosnippet
 
-## [neocomplete](https://github.com/Shougo/neocomplete.vim) &amp; [neosnippet](https://github.com/Shougo/neosnippet) {#g1ec4871}
+## [neocomplete](https://github.com/Shougo/neocomplete.vim) &amp; [neosnippet](https://github.com/Shougo/neosnippet.vim) {#g1ec4871}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -19,13 +19,16 @@ neocomplete は Vim のプラグインです．
 
 - [neocomplete](https://github.com/Shougo/neocomplete.vim)
 
+### ダウンロード/インストール {#z05f3c9b}
+
+- [https://github.com/Shougo/neocomplete.vim#installation](https://github.com/Shougo/neocomplete.vim#installation) を参照．<br>
+
 ## neosnippet とは {#n08b97c1}
 
 neosnippet は Vim のプラグインです．
 
-- [neosnippet](https://github.com/Shougo/neosnippet)
-- [あるVimmerのブログ: neosnippet](http://vinarian.blogspot.com/search/label/neosnippet)
+- [neosnippet](https://github.com/Shougo/neosnippet.vim)
 
-## ダウンロード/インストール {#z05f3c9b}
+### ダウンロード/インストール {#dfebda1b}
 
-- [https://github.com/Shougo/neocomplete.vim#installation](https://github.com/Shougo/neocomplete.vim#installation) を参照．<br>
+- [https://github.com/Shougo/neosnippet.vim#installation](https://github.com/Shougo/neosnippet.vim#installation) を参照．<br>
