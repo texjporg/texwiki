@@ -16,7 +16,8 @@ pukiwiki: "D"
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#nfc264ca}
 
-D 版も作成してみました．<br>
+### D 版 {#b96c322d}
+
 DMD32 D Compiler v2.063.2 でビルドできます．<br>
 Windows PowerShell から以下のようにしてビルドします．<br>
 
@@ -129,9 +130,9 @@ extern (Windows)
         return true;
     };
     bool EnumWindows(bool function (void*, uint), uint);
+    bool CreateProcessW(in wchar*, in wchar*, void*, void*, bool, uint, void*, void*, void*, void*);
+    uint WaitForInputIdle(void*, uint);
     auto sumatraDdeCallback = function void* (uint uType, uint uFmt, void* hconv, void* hsz1, void* hsz2, void* hdata, uint dwData1, uint dwData2) { return null; };
-    wchar** GetCommandLineW();
-    wchar** CommandLineToArgvW(in wchar**, int*);
     uint DdeInitializeW(uint*, void* function (uint, uint, void*, void*, void*, void*, uint, uint), uint, uint);
     bool DdeUninitialize(uint);
     void* DdeCreateStringHandleW(uint, in wchar*, int);
@@ -141,8 +142,6 @@ extern (Windows)
     void* DdeConnect(uint, void*, void*, void*);
     bool DdeDisconnect(void*);
     void* DdeClientTransaction(void*, uint, void*, void*, uint, uint, uint, void*);
-    bool CreateProcessW(in wchar*, in wchar*, void*, void*, bool, uint, void*, void*, void*, void*);
-    uint WaitForInputIdle(void*, uint);
 }
 
 struct DDEClient {
