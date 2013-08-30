@@ -42,7 +42,8 @@ pukiwiki: "C++"
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#m066ad0f}
 
-C++11 版も作成してみました．<br>
+### C++11 版 {#qea0161e}
+
 [MinGW](/MinGW/) の GCC でビルドできます．<br>
 
 ```
