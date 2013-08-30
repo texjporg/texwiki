@@ -37,7 +37,8 @@ pukiwiki: "C Sharp"
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#xd30da3f}
 
-C# 版も作成してみました．<br>
+### C# 版 {#x61699f8}
+
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
@@ -235,7 +236,8 @@ namespace SumatraPDFClient
 
 ***
 
-VB 版も作成してみました．<br>
+### VB 版 {#x51a7ee4}
+
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
