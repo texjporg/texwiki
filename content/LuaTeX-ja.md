@@ -116,6 +116,8 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 となっているという誤植があります (2013/07/11)．
 
+- [Fix typo in src/ltj-plain.sty and src/patches/lltjdefs.sty](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=commit;h=17af71ac2567703411f2aca0fdb0b8050717be90) を参照．<br>
+
 #### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
 
 LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
