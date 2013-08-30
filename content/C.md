@@ -19,7 +19,9 @@ pukiwiki: "C"
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
-C, C++ 版も作成してみました．<br>
+### C, C++ 版 {#a48a3eb3}
+
+C, C++ 版は他の言語で作られたバイナリよりも高速に動作します．<br>
 [MinGW](/MinGW/) の GCC でビルドできます．<br>
 
 C の場合
