@@ -35,6 +35,8 @@ Windows 7 SP1 の場合は .NET Framework 4.5 をインストールする必要�
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
 
+### F# 版 {#cfffdb72}
+
 F# 版の fwdsumatrapdf は他の静的型付け言語で記述されたものに比べると短いことがわかると思います．<br>
 F# 版の fwdsumatrapdf.exe のビルド・実行には F# が必要です．<br>
 
