@@ -15,6 +15,7 @@ pukiwiki: "C"
 - [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
 - [C言語は今でも価値のある言語か？](http://www.infoq.com/jp/news/2013/01/C-Language)
+- \[[SDK\] プロセスの列挙](http://shoppers-jp.com/tech/sdk037.html)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
