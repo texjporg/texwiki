@@ -18,8 +18,8 @@ Hunspell はスペルチェッカーです．<br>
 
 - [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
-- [LyX](/LyX/)
 - [TeXworks](/TeXworks/)
+- [LyX](/LyX/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
