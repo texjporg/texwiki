@@ -11,6 +11,7 @@ pukiwiki: "D"
 
 - [http://dlang.org/](http://dlang.org/)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
+- [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#nfc264ca}
 
