@@ -11,11 +11,17 @@ pukiwiki: "Python"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/500px-Python_logo_and_wordmark.svg.png" alt="Python" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
 - [Python Programming Language &ndash; Official Website](http://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
+
+## インストール {#y6c76d8e}
+
+### Windows {#s4be4fc1}
 
 python.exe を C:\Python27 にインストールした場合は
 
