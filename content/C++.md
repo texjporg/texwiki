@@ -25,6 +25,7 @@ pukiwiki: "C++"
 - [最新のC++を学ぶ - Barbara Moo氏インタビュー](http://www.infoq.com/jp/articles/modern-C-book-moo)
 - [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
 - [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
+- [32bit プロセスは 64bit プロセスを見つけられない](http://d.hatena.ne.jp/tt_clown/20110416/1302927489)
 
 ### 処理系 {#zc4c802d}
 
@@ -132,7 +133,7 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
 
 namespace sumatrapdfclient
 {
-    class DdeClient
+    class DDEClient
     {
     private:
         basic_string<wchar_t> server;
@@ -145,7 +146,7 @@ namespace sumatrapdfclient
         HDDEDATA hDdeTransactionData;
 
     public:
-        explicit DdeClient(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic)
+        explicit DDEClient(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic)
         {
             this->server = server;
             this->topic = topic;
@@ -157,7 +158,7 @@ namespace sumatrapdfclient
             this->hDdeTransactionData = nullptr;
         }
 
-        ~DdeClient()
+        ~DDEClient()
         {
             if (this->hDdeTransactionData != nullptr) {
                 if (DdeFreeDataHandle(this->hDdeTransactionData) == FALSE) {
@@ -332,7 +333,7 @@ auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
 
 auto static DdeExecute(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic, const basic_string<wchar_t>& command) -> int
 {
-    auto dde = DdeClient(server, topic);
+    auto dde = DDEClient(server, topic);
     return dde.execute(command);
 }
 
