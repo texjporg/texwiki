@@ -10,3 +10,6 @@ pukiwiki: "Go"
 ## [Go](http://golang.org/) {#vc3e64fe}
 
 - [The Go Programming Language](http://golang.org/)
+- [https://code.google.com/p/go/](https://code.google.com/p/go/)
+- [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
+- [http://go.shibu.jp/](http://go.shibu.jp/)
