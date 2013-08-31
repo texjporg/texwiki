@@ -7,7 +7,7 @@ pukiwiki: "Haskell"
 
 # Haskell
 
-## Haskell {#r7b07a76}
+## [Haskell](http://www.haskell.org/) {#r7b07a76}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/200px-Haskell-Logo.svg.png" alt="Haskell" style="float:right">
 
@@ -34,7 +34,16 @@ pukiwiki: "Haskell"
 - [http://stackoverflow.com/questions/6009384/exception-handling-in-haskell](http://stackoverflow.com/questions/6009384/exception-handling-in-haskell)
 - [http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell](http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell)
 
-## fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#j60bcd39}
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
+
+### Haskell 版 {#cbd580e5}
+
+The Glorious Glasgow Haskell Compilation System, version 7.6.3 でビルドできます．<br>
+Windows PowerShell から以下のようにしてビルドします．<br>
+
+```
+PS C:\w32tex\bin> ghc fwdsumatrapdf.hs
+```
 
 ***
 
@@ -234,7 +243,6 @@ timeout = 10000
 runSumatraPDF :: String -> IO Bool
 runSumatraPDF pdf = do
     let sumatraPDFNotFound = unsafePerformIO (enumWindows (unsafePerformIO $ mkEnumWindowsProc getSumatraHWND) lParam)
-    print sumatraPDFNotFound
     if sumatraPDFNotFound
         then do
             findSumatraPDFInRegistry
