@@ -26,9 +26,17 @@ forward search するときに SumatraPDF を前面に表示したい場合は f
 forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf.exe を使ってください．<br>
 ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
 
-### F# 版 {#pd9dd173}
+### C, C++ 版 {#qf7ea8bf}
 
-F Sharp を参照．<br>
+C を参照．<br>
+
+### C++11 版 {#p11a58d5}
+
+C++ を参照．<br>
+
+### D 版 {#f4f68590}
+
+D を参照．<br>
 
 ### C# 版 {#de1b4851}
 
@@ -38,17 +46,9 @@ C Sharp を参照．<br>
 
 C Sharp を参照．<br>
 
-### D 版 {#f4f68590}
+### F# 版 {#pd9dd173}
 
-D を参照．<br>
-
-### C++11 版 {#p11a58d5}
-
-C++ を参照．<br>
-
-### C, C++ 版 {#qf7ea8bf}
-
-C を参照．<br>
+F Sharp を参照．<br>
 
 ### Haskell 版 {#m42b08da}
 
