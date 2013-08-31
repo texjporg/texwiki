@@ -20,7 +20,7 @@ Poppler は
 
 <table>
 <tbody>
-<tr><th style="color:#468">統合環境・エディタ</th><td style="color:#468;background-color:#DDD"><a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a>, <a href="/TeXstudio/">TeXstudio</a>, <a href="/Kile/">Kile</a></td></tr>
+<tr><th style="color:#468">統合環境・エディタ</th><td style="color:#468;background-color:#DDD"><a href="/Texmaker/">Texmaker</a>, <a href="/TeXstudio/">TeXstudio</a>, <a href="/TeXworks/">TeXworks</a>, <a href="/Kile/">Kile</a></td></tr>
 <tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a> (zathura-pdf-poppler), <a href="/qpdfview/">qpdfview</a>, PdfViewer</td></tr>
 </tbody>
 </table>
@@ -468,9 +468,9 @@ $ popd
 - [fontconfig](http://www.fontconfig.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.94.tar.bz2
-$ tar xvf fontconfig-2.10.94.tar.bz2
-$ pushd fontconfig-2.10.94
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.10.95.tar.bz2
+$ tar xvf fontconfig-2.10.95.tar.bz2
+$ pushd fontconfig-2.10.95
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
@@ -807,9 +807,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.5.tar.xz
-$ tar xvf glib-2.37.5.tar.xz
-$ pushd glib-2.37.5
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.6.tar.xz
+$ tar xvf glib-2.37.6.tar.xz
+$ pushd glib-2.37.6
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
