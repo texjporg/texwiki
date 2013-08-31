@@ -31,3 +31,7 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 ## Scala {#ae0cb378}
 
 - [The Scala Programming Languag](http://www.scala-lang.org/)
+
+## Xtend {#l2e93837}
+
+- [Xtend - Modernized Java](http://www.eclipse.org/xtend/)
