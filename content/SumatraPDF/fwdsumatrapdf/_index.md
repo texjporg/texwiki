@@ -50,6 +50,10 @@ C++ を参照．<br>
 
 C を参照．<br>
 
+### Haskell 版 {#m42b08da}
+
+Haskell を参照．<br>
+
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
 fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使用可能です．
