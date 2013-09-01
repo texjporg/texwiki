@@ -42,6 +42,7 @@ python.exe を C:\Python33 にインストールした場合は
 ## 関連リンク {#z55d6188}
 
 - [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
+- [python3.3環境構築](http://oceanmarine.sakura.ne.jp/sphinx/python_env.html)
 - [Python の if \__name_\_ == ‘\__main_\_’: を Perl, Ruby, PHP で行う](http://www.serendip.ws/archives/4360)
 - [http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python](http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
