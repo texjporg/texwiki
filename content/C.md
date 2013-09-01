@@ -16,6 +16,8 @@ pukiwiki: "C"
 - [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
 - [C言語は今でも価値のある言語か？](http://www.infoq.com/jp/news/2013/01/C-Language)
 - \[[SDK\] プロセスの列挙](http://shoppers-jp.com/tech/sdk037.html)
+- [コマンドライン引数の取得（プロセスファイルシステムを利用する） - Linux/C/C++ Tips](http://lldev.jp/linux_c_cpp/tips/pfs_cmdline.html)
+- [http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline](http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
