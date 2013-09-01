@@ -88,7 +88,6 @@ sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,lat
 - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
 - [Release notes/0.48#New LaTeX export for PDF/EPS/PS - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
 - [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html), [http://az.ctan.org/pkg/svg-inkscape](http://az.ctan.org/pkg/svg-inkscape)
-- [http://sites.google.com/site/richardhenwood/inkscapelatexextension](http://sites.google.com/site/richardhenwood/inkscapelatexextension)
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
@@ -912,17 +911,6 @@ Error: Missing or invalid Encoding entry in Type 0 font
 Error: Unknown font tag 'R10'
 Error (238): No font in show/space
 ```
-
-### [svg2latex](https://gitorious.org/svg2latex/svg2latex) {#x3c0d408}
-
-svg2latex takes an svg file and produces a file with latex markup and a pdf or eps file which is called in by the latex markup.
-
-- [svg2latex - Gitorious](https://gitorious.org/svg2latex/svg2latex)
-- [svg2latex](http://sites.google.com/site/richardhenwood/svg2latex2)
-
-### [svg2tex](https://github.com/Oni/svg2tex) {#wc9b7463}
-
-Svg2tex is a python script that extracts all text from a \*.svg file to a LaTeX picture environment. This way the picture's text is processed directly by LaTeX and can be included into the document.
 
 ### [inkscape2tikz](https://code.google.com/p/inkscape2tikz/) {#u5ee2f7d}
 
