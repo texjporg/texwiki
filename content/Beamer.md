@@ -146,7 +146,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Epyt](https://github.com/zohooo/epyt)
 - [The progressbar Beamer theme](http://recherche.noiraudes.net/fr/LaTeX.php)
 - [http://mike.depalatis.net/beamerthemes/](http://mike.depalatis.net/beamerthemes/)
-- [Keynote Like Gradient Theme for LaTeX Beamer (時計じかけの林檎)](http://sites.google.com/site/tokeijikakenoringo/Home/keynote-like-gradient-theme-for-latex-beamer)
+- [Keynote Like Gradient Theme for LaTeX Beamer (時計じかけの林檎)](https://sites.google.com/site/tokeijikakenoringo/Home/keynote-like-gradient-theme-for-latex-beamer)
 - [LaTeX-beamerのテンプレート](http://d.hatena.ne.jp/ckazu/20090217/1234857766)
 - [LATEX resources for Rice students by Daina Chiba](http://ricebeamer.dynaman.net)
 
