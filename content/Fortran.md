@@ -12,10 +12,13 @@ pukiwiki: "Fortran"
 - [Fortran Wiki](http://fortranwiki.org/)
     - [Fortran 2008 status](http://fortranwiki.org/fortran/show/Fortran+2008+status)
     - [Fortran 2003 status](http://fortranwiki.org/fortran/show/Fortran+2003+status)
+- [Fortran入門](http://www.nag-j.co.jp/fortran/)
 - [Fortran 2003入門](http://www.nag-j.co.jp/fortran/fortran2003/)
 - [Fortran2003でFFTW](http://sage-t.tumblr.com/post/57793790661/fortran2003-fftw)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
+- [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
+- [FortranからPythonへ](http://www.slideshare.net/shibukawa/fortranpython-presentation)
 
 ### 処理系 {#xfad745a}
 
