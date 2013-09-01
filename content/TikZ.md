@@ -702,7 +702,7 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 - [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入、メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
 - [GeoGebra](http://www.geogebra.org/cms/ja)
-    - GeoGebraの使い方…[GeoGebra日本](http://sites.google.com/site/geogebrajp/)
+    - GeoGebraの使い方…[GeoGebra日本](https://sites.google.com/site/geogebrajp/)
 - [TikZiT](http://tikzit.sourceforge.net/)
 - [Jpdgdraw](http://www.dickimaw-books.com/apps/jpgfdraw/)
 - [Sketch -- A 3D Scene Description Translator](http://www.frontiernet.net/~eugene.ressler/)
