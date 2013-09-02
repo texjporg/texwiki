@@ -29,12 +29,13 @@ pukiwiki: "Fortran"
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
+    - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用のみ)
 
 ### 使い方 {#r3bbac60}
 
-GNU Fortran (rev2, Built by MinGW-builds project) 4.8.1 で動作確認しています．<br>
+GNU Fortran 4.8.1 で動作確認しています．<br>
 
 #### 使用可能な拡張子 {#d9d770b5}
 
@@ -50,7 +51,7 @@ GNU Fortran の場合は拡張子に .f, .for, .ftn, .f90, .f95, .f03, .f08 な�
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -o helloworld helloworld.f08
+! $ gfortran -static -o helloworld helloworld.f08
 program helloworld
     implicit none
     print '(a)', "Hello World"
@@ -61,7 +62,7 @@ end program helloworld
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -o helloworld helloworld.f08
+! $ gfortran -static -o helloworld helloworld.f08
 program helloworld
     use iso_fortran_env
     implicit none
@@ -73,7 +74,7 @@ end program helloworld
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -o helloworld helloworld.f08
+! $ gfortran -static -o helloworld helloworld.f08
 module c_stdio
     use iso_c_binding
     implicit none
@@ -100,7 +101,7 @@ C の puts 関数などを呼び出して出力することもできます．<br
 Fortran の文字列は null 終端文字列ではないので C の関数に渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
 ```
-$ gfortran -o helloworld helloworld.f08
+$ gfortran -static -o helloworld helloworld.f08
 $ ./helloworld
 ```
 
