@@ -14,8 +14,9 @@ pukiwiki: "Fortran"
     - [Fortran 2003 status](http://fortranwiki.org/fortran/show/Fortran+2003+status)
 - [Fortran入門](http://www.nag-j.co.jp/fortran/)
 - [Fortran 2003入門](http://www.nag-j.co.jp/fortran/fortran2003/)
-- [Fortran2003でFFTW](http://sage-t.tumblr.com/post/57793790661/fortran2003-fftw)
+- [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
+- [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
 - [FortranからPythonへ](http://www.slideshare.net/shibukawa/fortranpython-presentation)
@@ -28,10 +29,16 @@ pukiwiki: "Fortran"
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
+- [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
+    - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用のみ)
 
 ### 使い方 {#r3bbac60}
 
 GNU Fortran (rev2, Built by MinGW-builds project) 4.8.1 で動作確認しています．<br>
+
+#### 使用可能な拡張子 {#d9d770b5}
+
+GNU Fortran の場合は拡張子に .f, .for, .ftn, .f90, .f95, .f03, .f08 などが使用できるようです． → [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html)
 
 #### 標準出力に "Hello World" を出力 {#x79017be}
 
@@ -42,21 +49,54 @@ GNU Fortran (rev2, Built by MinGW-builds project) 4.8.1 で動作確認してい
 ***
 
 ```
+! vim: ts=4 sw=4 expandtab:
+! $ gfortran -o helloworld helloworld.f08
 program helloworld
-    use iso_c_binding
     implicit none
-    interface c_stdio
-        subroutine c_stdio_puts(s) bind(C, name='puts')
-            import
-            character(c_char), intent(in) :: s
-        end subroutine c_stdio_puts
-    end interface c_stdio
-    call c_stdio_puts("Hello World" // c_null_char)
+    print '(a)', "Hello World"
 end program helloworld
 ```
 
 ***
 
+```
+! vim: ts=4 sw=4 expandtab:
+! $ gfortran -o helloworld helloworld.f08
+program helloworld
+    use iso_fortran_env
+    implicit none
+    write(unit=output_unit, fmt='(a)') "Hello World"
+end program helloworld
+```
+
+***
+
+```
+! vim: ts=4 sw=4 expandtab:
+! $ gfortran -o helloworld helloworld.f08
+module c_stdio
+    use iso_c_binding
+    implicit none
+    interface
+        subroutine c_puts(s) bind(C, name='puts')
+            import
+            character(kind=c_char), intent(in) :: s
+        end subroutine c_puts
+    end interface
+end module c_stdio
+
+program helloworld
+    use iso_c_binding
+    use c_stdio
+    implicit none
+    call c_puts("Hello World" // c_null_char)
+end program helloworld
+```
+
+***
+
+データの出力は print 文や write 文で行います．<br>
+C の puts 関数などを呼び出して出力することもできます．<br>
 Fortran の文字列は null 終端文字列ではないので C の関数に渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
 ```
