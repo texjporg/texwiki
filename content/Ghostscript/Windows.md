@@ -24,9 +24,9 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 ### 注意点 {#de072348}
 
-#### Ghostscript 9.09 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
+#### Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
 
-Ghostscript 9.09 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
+Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
 
 ```
 PS C:\Users\$Env:USERNAME> ps2pdf.bat "予定.ps"
@@ -40,7 +40,7 @@ Dictionary stack:
    --dict:1186/1684(ro)(G)--   --dict:0/20(G)--   --dict:79/200(L)--
 Current allocation mode is local
 Last OS error: No such file or directory
-GPL Ghostscript 9.09: Unrecoverable error, exit code 1
+GPL Ghostscript 9.10: Unrecoverable error, exit code 1
 ```
 
 gswin32c.exe から直接実行すれば処理ができます．<br>
