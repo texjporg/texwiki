@@ -293,7 +293,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-b
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.09\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -543,7 +543,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-b
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.09\lib\ps2pdf.bat</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -589,7 +589,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-b
 　　Makeindex program　　　(C:\w32tex\bin\mendex.exe)<br>
 　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
 　　Dvipdf program　　　(C:\w32tex\bin\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\gs\gs9.09\lib\ps2pdf.bat)<br>
+　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat)<br>
 　　Makeindex program (nomencl)　　　(C:\w32tex\bin\mendex.exe)<br>
 　　Kpsewhich program　　　(C:\w32tex\bin\kpsewhich.exe)<br>
 
