@@ -43,6 +43,22 @@ Windows 8.1, 8, 7, Vista, XP
 から TeXインストーラ3 の最新版をダウンロードして展開 (解凍) します。<br>
 展開したフォルダーの "abtexinst.exe" をダブルクリックします。<br>
 
+64-bit Windows で 64-bit 版の Ghostscript と GSview が表示されない場合は abtexinst_sys.ini に記述されている
+
+```
+GS=gs[0-9]*w32full(-gpl)?\.(zip|exe)
+GV=gsv[0-9]*w32\.exe
+```
+
+を<br>
+
+```
+GS=gs[0-9]*w(32|64)full(-gpl)?\.(zip|exe)
+GV=gsv[0-9]*w(32|64)\.exe
+```
+
+に修正します．<br>
+
 ***
 
 <span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXのインストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
@@ -186,13 +202,13 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☐gs909w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
 　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　 ∣<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　 GSview<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　 ∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　∣<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　　∣<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　 GSview<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB　　　　　　∣<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
