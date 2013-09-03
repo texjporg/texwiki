@@ -191,7 +191,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　14.8MB　　　　Ghostscript<br>
 　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　15.0MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
-　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　426KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
+　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　747KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
 　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　447KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
 　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　145KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
 　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
@@ -239,6 +239,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑web2c-w32.tar.xz　　　　　　　　　　　無い　　　16.0MB<br>
 　　　　 ∣☑win64/aleph-w64.tar.xz　　　　　　　無い　　　771KB<br>
 　　　　 ∣☑win64/context-w64.tar.xz　　　　　　無い　　　1.1MB<br>
+　　　　 ∣☑win64/cweb-w64.tar.xz　　　　　　　 無い　　　747KB<br>
 　　　　 ∣☑win64/dvi2ps-w64.tar.xz　　　　　　　無い　　　689KB<br>
 　　　　 ∣☑win64/dvi2tty-w64.tar.xz　　　　　　　無い　　　428KB<br>
 　　　　 ∣☑win64/dvipdfm-w64.tar.xz　　　　　　無い　　　729KB<br>
