@@ -102,7 +102,7 @@ Ghostscript や GSview が既にインストールされている場合にはそ
 #### インストール方法 {#b84b5a69}
 
 - gs910w32full-gpl.exe または gs910w64full-gpl.exe を実行します。
-    - デフォルトのインストール先は，32-bit Windows の場合は “C:\Program Files\gs\gs9.10”，64-bit Windows の場合は “C:\Program Files (x86)\gs\gs9.10”
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.10”
     - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.10”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
@@ -130,7 +130,7 @@ UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “
 インストールした Ghostscript に含まれる bin フォルダー と lib フォルダーを環境変数 PATH に追加します．<br>
 具体的には次のように設定します．<br>
 
-Ghostscript 9.10 を C:\gs\gs9.10 にインストールした場合
+Ghostscript を C:\gs\gs9.10 にインストールした場合
 
 ```
 ;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib
@@ -162,7 +162,7 @@ Ghostscript 9.10 を C:\gs\gs9.10 にインストールした場合
 
 ***
 
-Ghostscript 9.10 を C:\Program Files\gs\gs9.10 にインストールした場合
+Ghostscript を C:\Program Files\gs\gs9.10 にインストールした場合
 
 ```
 ;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib
@@ -220,7 +220,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32-bit 版の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．角藤版 Ghostscript は 32-bit 版/64-bit 版が存在するので，角藤版 Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
+- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．角藤版 Ghostscript は 32-bit 版/64-bit 版が存在するので，角藤版 Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
@@ -293,7 +293,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
-フロントエンドといえるものではないにせよ gs を呼び出しているアプリケーションは多数あります(例えば dvipdfmx, Inkscape)．<br>
+フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります(例えば dvipdfmx, Inkscape)．<br>
 これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です．
 
 ### cidfmap の初期設定 {#ra5fe424}
