@@ -70,7 +70,7 @@ gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutput
 
 ### 配布先 {#gc8a2a19}
 
-gs910w32full-gpl.exe (最新の角藤版 Ghostscript インストーラー) をダウンロードします．<br>
+gs910w32full-gpl.exe または gs910w64full-gpl.exe (最新の角藤版 Ghostscript インストーラー) をダウンロードします．<br>
 
 - 角藤版 Ghostscript のミラーサイト
     - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
@@ -101,7 +101,7 @@ Ghostscript や GSview が既にインストールされている場合にはそ
 
 #### インストール方法 {#b84b5a69}
 
-- gs910w32full-gpl.exe を実行します。
+- gs910w32full-gpl.exe または gs910w64full-gpl.exe を実行します。
     - デフォルトのインストール先は，32-bit Windows の場合は “C:\Program Files\gs\gs9.10”，64-bit Windows の場合は “C:\Program Files (x86)\gs\gs9.10”
     - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.10”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
@@ -179,39 +179,7 @@ Ghostscript 9.10 を C:\Program Files\gs\gs9.10 にインストールした場�
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
-> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> </tbody>
-> </table>
->
-
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
-
-　　システム環境変数(S)<br>
-...<br>
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
-
-***
-
-Ghostscript 9.10 を C:\Program Files (x86)\gs\gs9.10 にインストールした場合
-
-```
-;C:\Program Files (x86)\gs\gs9.10\bin;C:\Program Files (x86)\gs\gs9.10\lib
-```
-
-を環境変数 PATH に追加します。
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境変数</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　Ghostscript のユーザー環境変数(U)<br>
-
-> <table>
-> <tbody>
-> <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files (x86)\gs\gs9.10\bin;C:\Program Files (x86)\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.10\bin;C:\Program Files (x86)\gs\gs9.10\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -252,7 +220,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32-bit 版の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．角藤版 Ghostscript は 32-bit 版であるので，角藤版 Ghostscript を使用する場合には，GSview も 32-bit 版を用いなければなりません．
+- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の 32-bit 版の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．角藤版 Ghostscript は 32-bit 版/64-bit 版が存在するので，角藤版 Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
