@@ -14,13 +14,13 @@ pukiwiki: "Fortran"
     - [Fortran 2003 status](http://fortranwiki.org/fortran/show/Fortran+2003+status)
 - [Fortran入門](http://www.nag-j.co.jp/fortran/)
 - [Fortran 2003入門](http://www.nag-j.co.jp/fortran/fortran2003/)
+- [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v111v131/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v111v131/index.jsp)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
 - [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
 - [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
-- [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
 - [FortranからPythonへ](http://www.slideshare.net/shibukawa/fortranpython-presentation)
 - [http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html](http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html)
 - [http://software.intel.com/en-us/forums/topic/270769](http://software.intel.com/en-us/forums/topic/270769)
@@ -34,6 +34,7 @@ pukiwiki: "Fortran"
     - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用での使用のみ可)
+    - [Fortran (Intel Parallel Studio) のインストール](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Fortran+%28Intel+Parallel+Studio+XE%29+%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8)
 
 ### 使い方 {#r3bbac60}
 
@@ -126,3 +127,10 @@ MinGW の gfortran でビルドしたバイナリで
 ```
 
 のように -static オプションを追加してビルドすれば OK です．<br>
+
+### Python や C から Fortran を呼び出す {#kaea5749}
+
+- [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
+- [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
+- [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
+- [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
