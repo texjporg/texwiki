@@ -28,6 +28,12 @@ pukiwiki: "Fortran"
 - [http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html](http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html)
 - [http://software.intel.com/en-us/forums/topic/270769](http://software.intel.com/en-us/forums/topic/270769)
 - [http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm](http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm)
+- [http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN)
+- [Fortran 覚書](http://www.gcxx.jp/memo/?fortran)
+- [Fortranでシミュレーションをしよう](http://www.ile.osaka-u.ac.jp/research/cmp/download/forte90-text-v1.pdf) (PDF)
+- [Fortranスマートプログラミング](http://www.ile.osaka-u.ac.jp/research/cmp/download/forte90-text-v3.pdf) (PDF)
+- [Fortran 90/95 入門①](http://www.hucc.hokudai.ac.jp/~a10019/kosyu/pdf2/Fortran_1.pdf) (PDF)
+- [Fortran 90/95 入門②](http://www.hucc.hokudai.ac.jp/~a10019/kosyu/pdf2/Fortran_2.pdf) (PDF)
 
 ### 処理系 {#xfad745a}
 
