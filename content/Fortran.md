@@ -29,6 +29,7 @@ pukiwiki: "Fortran"
 - [http://software.intel.com/en-us/forums/topic/270769](http://software.intel.com/en-us/forums/topic/270769)
 - [http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm](http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm)
 - [http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN)
+- [高速化プログラミング](http://fast-programming.aglk.net/)
 - [Fortran 覚書](http://www.gcxx.jp/memo/?fortran)
 - [Fortranスマートプログラミング](http://www.ile.osaka-u.ac.jp/research/cmp/text.html) (PDF)
 - [Fortran 90/95 入門①](http://www.hucc.hokudai.ac.jp/~a10019/kosyu/pdf2/Fortran_1.pdf) (PDF)
@@ -47,7 +48,7 @@ pukiwiki: "Fortran"
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用での使用のみ可)
     - [Fortran (Intel Parallel Studio) のインストール](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Fortran+%28Intel+Parallel+Studio+XE%29+%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8)
 
-### 使い方 {#r3bbac60}
+### Fortran 2008 の使い方 {#r3bbac60}
 
 #### 使用可能な拡張子 {#d9d770b5}
 
@@ -122,7 +123,7 @@ end program helloworld
 GNU Fortran 4.8.1 で動作確認しています．<br>
 データの出力は print 文や write 文で行います．<br>
 C の puts 関数などを呼び出して出力することもできます．<br>
-Fortran の文字列は null 終端文字列ではないので C の関数に渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
+Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
 ```
 $ gfortran -std=f2008 -static -o helloworld helloworld.f90
@@ -141,6 +142,24 @@ MinGW の gfortran でビルドしたバイナリで
 ```
 
 のように -static オプションを追加してビルドすれば OK です．<br>
+
+#### 標準出力に 1 から 100 までの和を出力 {#m969de65}
+
+***
+
+- sum.f90
+
+***
+
+```
+program main
+    implicit none
+    integer :: i
+    print '(g0)', sum((/(i, i = 1, 100)/))
+end program main
+```
+
+***
 
 ### Python や C から Fortran を呼び出す {#kaea5749}
 
