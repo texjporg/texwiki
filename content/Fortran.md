@@ -75,8 +75,6 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 ***
 
 ```
-! vim: ts=4 sw=4 expandtab:
-! $ gfortran -std=f2008 -static -o helloworld helloworld.f90
 program hello_world
     implicit none
     print '(g0)', "Hello World"
@@ -86,8 +84,6 @@ end program hello_world
 ***
 
 ```
-! vim: ts=4 sw=4 expandtab:
-! $ gfortran -std=f2008 -static -o helloworld helloworld.f90
 program hello_world
     use, intrinsic :: iso_fortran_env
     implicit none
@@ -98,8 +94,6 @@ end program hello_world
 ***
 
 ```
-! vim: ts=4 sw=4 expandtab:
-! $ gfortran -std=f2008 -static -o helloworld helloworld.f90
 module c_stdio
     use, intrinsic :: iso_c_binding
     implicit none
@@ -171,6 +165,30 @@ end program sum_from_1_to_100
 ***
 
 ```
+program sum_from_1_to_n
+    implicit none
+    integer :: i, j
+    integer :: n
+    character(len=3) :: arg_length_format
+    character(len=256) :: arg
+
+    do i = 0, command_argument_count()
+        call get_command_argument(i, arg)
+        if (i == 0) then
+            cycle
+        end if
+        write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
+        read(unit=arg, fmt='(i' // trim(arg_length_format) // ')') n
+        if (n /= 0) then
+            print '(g0)', sum((/(j, j = 1, n)/))
+        end if
+    end do
+end program sum_from_1_to_n
+```
+
+***
+
+```
 module c_stdlib
     use, intrinsic :: iso_c_binding
     implicit none
@@ -206,7 +224,7 @@ end program sum_from_1_to_n
 
 ***
 
-### Python や C から Fortran を呼び出す {#kaea5749}
+### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
 - [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
 - [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
