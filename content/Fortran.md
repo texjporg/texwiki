@@ -24,6 +24,7 @@ pukiwiki: "Fortran"
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
 - [FortranからPythonへ](http://www.slideshare.net/shibukawa/fortranpython-presentation)
+- [2.2 Fortran90/95入門 後半](http://exp.cs.kobe-u.ac.jp/wiki/comp_practice/index.php?2.2%20Fortran90%2F95%C6%FE%CC%E7%20%B8%E5%C8%BE)
 - [Fortran90/95での引数の値渡し (Pass by value)](http://sgks.blogspot.jp/2008/02/fortran9095-pass-by-value.html)
 - [http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html](http://gcc.gnu.org/onlinedocs/gfortran/Interoperable-Subroutines-and-Functions.html)
 - [http://software.intel.com/en-us/forums/topic/270769](http://software.intel.com/en-us/forums/topic/270769)
@@ -76,10 +77,10 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 ```
 ! vim: ts=4 sw=4 expandtab:
 ! $ gfortran -std=f2008 -static -o helloworld helloworld.f90
-program helloworld
+program hello_world
     implicit none
     print '(g0)', "Hello World"
-end program helloworld
+end program hello_world
 ```
 
 ***
@@ -87,11 +88,11 @@ end program helloworld
 ```
 ! vim: ts=4 sw=4 expandtab:
 ! $ gfortran -std=f2008 -static -o helloworld helloworld.f90
-program helloworld
+program hello_world
     use, intrinsic :: iso_fortran_env
     implicit none
     write(unit=output_unit, fmt='(g0)') "Hello World"
-end program helloworld
+end program hello_world
 ```
 
 ***
@@ -110,12 +111,12 @@ module c_stdio
     end interface
 end module c_stdio
 
-program helloworld
+program hello_world
     use, intrinsic :: iso_c_binding
     use c_stdio
     implicit none
     call c_puts("Hello World" // c_null_char)
-end program helloworld
+end program hello_world
 ```
 
 ***
@@ -152,11 +153,55 @@ MinGW の gfortran でビルドしたバイナリで
 ***
 
 ```
-program main
+program sum_from_1_to_100
     implicit none
     integer :: i
     print '(g0)', sum((/(i, i = 1, 100)/))
-end program main
+end program sum_from_1_to_100
+```
+
+***
+
+#### コマンドライン引数から値 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
+
+***
+
+- sum.f90
+
+***
+
+```
+module c_stdlib
+    use, intrinsic :: iso_c_binding
+    implicit none
+    interface
+        function c_atoi(s) result(i) bind(c, name='atoi')
+            import
+            character(kind=c_char), intent(in) :: s
+            integer(kind=c_int) :: i
+        end function c_atoi
+    end interface
+end module c_stdlib
+
+program sum_from_1_to_n
+    use, intrinsic :: iso_c_binding
+    use c_stdlib
+    implicit none
+    integer :: i, j
+    integer :: n
+    character(len=256) :: arg
+
+    do i = 0, command_argument_count()
+        call get_command_argument(i, arg)
+        if (i == 0) then
+            cycle
+        end if
+        n = c_atoi(trim(arg) // c_null_char)
+        if (n /= 0) then
+            print '(g0)', sum((/(j, j = 1, n)/))
+        end if
+    end do
+end program sum_from_1_to_n
 ```
 
 ***
