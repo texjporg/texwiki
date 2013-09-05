@@ -155,7 +155,7 @@ MinGW の gfortran でビルドしたバイナリで
 ```
 program sum_from_1_to_100
     implicit none
-    integer :: i
+    integer(kind=4) :: i
     print '(g0, g0)', "Sum from 1 to 100 = ", sum((/(i, i = 1, 100)/))
 end program sum_from_1_to_100
 ```
@@ -167,7 +167,7 @@ g0 編集記述子は print 文や write 文で整数や文字列などの任意
 &#x2a; を使用して出力した場合は処理系によって出力フォーマットが異なる場合があります．<br>
 処理系によって出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 
-#### コマンドライン引数から値 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
+#### コマンドライン引数から整数 N (0 &lt; N &lt; 65536) を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
 ***
 
@@ -178,8 +178,8 @@ g0 編集記述子は print 文や write 文で整数や文字列などの任意
 ```
 program sum_from_1_to_n
     implicit none
-    integer :: i, j
-    integer :: n
+    integer(kind=4) :: i, j
+    integer(kind=4) :: n
     character(len=3) :: arg_length_format
     character(len=256) :: arg
 
@@ -189,9 +189,12 @@ program sum_from_1_to_n
     end if
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
+        if (valid_number(arg) .eqv. .false.) then
+            cycle
+        end if
         write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
         read(unit=arg, fmt='(i' // trim(arg_length_format) // ')') n
-        if (n /= 0) then
+        if (n > 0 .and. n < 65536) then
             print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
         end if
     end do
@@ -202,6 +205,21 @@ contains
         call get_command(cmd)
         write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
     end subroutine usage
+
+    function valid_number(arg) result(ok)
+        character(len=*), intent(in) :: arg
+        integer(kind=4) :: i
+        logical(kind=4) :: ok
+
+        do i = 1, len_trim(arg)
+            if (arg(i:i) < '0' .or. arg(i:i) > '9') then
+                ok = .false.
+                exit
+            else
+                ok = .true.
+            end if
+        end do
+    end function valid_number
 end program sum_from_1_to_n
 ```
 
@@ -224,8 +242,8 @@ program sum_from_1_to_n
     use, intrinsic :: iso_c_binding
     use c_stdlib
     implicit none
-    integer :: i, j
-    integer :: n
+    integer(kind=4) :: i, j
+    integer(kind=4) :: n
     character(len=256) :: arg
 
     if (command_argument_count() == 0) then
@@ -235,7 +253,7 @@ program sum_from_1_to_n
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
         n = c_atoi(trim(arg) // c_null_char)
-        if (n /= 0) then
+        if (n > 0 .and. n < 65536) then
             print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
         end if
     end do
