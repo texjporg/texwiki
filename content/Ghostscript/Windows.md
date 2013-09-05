@@ -24,7 +24,7 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 ### 注意点 {#de072348}
 
-#### Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
+#### Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
 
 Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
 
@@ -43,10 +43,10 @@ Last OS error: No such file or directory
 GPL Ghostscript 9.10: Unrecoverable error, exit code 1
 ```
 
-gswin32c.exe から直接実行すれば処理ができます．<br>
+rungs.exe, gswin32c.exe, gswin64c.exe から直接実行すれば処理ができます．<br>
 
 ```
-PS C:\Users\$Env:USERNAME> gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
+PS C:\Users\$Env:USERNAME> rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
 ```
 
 TeX Live の ps2pdf.exe を使用しても OK です．<br>
@@ -63,10 +63,10 @@ PS C:\Users\$Env:USERNAME> ps2pdf.exe "予定.ps"
 CodePage の値が 932 の場合は PDF ファイルが出力されます．
 
 ```
-gswin32c.exe -dESPCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
+rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
 ```
 
-のように ps2pdf.bat ではなく gswin32c.exe を実行すると PDF ファイルが作成できるようです．
+のように ps2pdf.bat ではなく rungs.exe, gswin32c.exe, gswin64c.exe を実行すると PDF ファイルが作成できるようです．
 
 ### 配布先 {#gc8a2a19}
 
@@ -300,7 +300,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．<br>
 これを他の CID font や TrueType font に代替させることを主な目的とした設定ファイルが cidfmap です．<br>
-角藤版 Ghoststscript では，gs\gs$(gswin32c --version)\lib に存在します．<br>
+角藤版 Ghoststscript では，gs\gs$(rungs --version)\lib に存在します．<br>
 インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．<br>
 しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．<br>
 cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．<br>
@@ -308,7 +308,7 @@ cidfmap を見たときに，% から始まるコメント行ばかりである�
 次の命令を Windows PowerShell から実行すればそれがなされます．
 
 ```
-$gsversion = 'gs' + $(gswin32c --version); gswin32c -q -dBATCH -sFONTDIR="c:/windows/fonts" -sCIDFMAP="c:/gs/$gsversion/lib/cidfmap" "c:/gs/$gsversion/lib/mkcidfm.ps"
+$gsversion = 'gs' + $(rungs --version); rungs -q -dBATCH -sFONTDIR="c:/windows/fonts" -sCIDFMAP="c:/gs/$gsversion/lib/cidfmap" "c:/gs/$gsversion/lib/mkcidfm.ps"
 ```
 
 パス名部分に関しては各自の環境に合わせて書き直して下さい．<br>
@@ -416,7 +416,7 @@ HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
 
 ### CMap {#k55ee82d}
 
-gs\gs$(gswin32c --version)\Resource\CMap\ に入っています。主なものを挙げてみます。
+gs\gs$(rungs --version)\Resource\CMap\ に入っています。主なものを挙げてみます。
 
 - H
 - V
@@ -461,9 +461,9 @@ gs\gs$(gswin32c --version)\Resource\CMap\ に入っています。主なもの�
 
 ### CID font {#dc743646}
 
-CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs$(gswin32c --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
+CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs$(rungs --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
 
-CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs$(gswin32c --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
 
 この HeiseiMin-W3 を例にとり説明します．gs の段階でこのフォントに代替させる場合，例えば ps file では Ryumin-Light が指定されていてこれを HeiseiMin-W3 に代替させる場合には，cidfmap に次のような alias の記述をしておきます．
 
@@ -477,7 +477,7 @@ CID font file は，ファイル名を拡張子無しの PostScript 名に変え
 
 ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．
 
-CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(gswin32c --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
 
 OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)．これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります．従って，この作業を行うためのファイルあるいはPSコードが必要になります．
 
@@ -487,7 +487,7 @@ OpenType font で出力する場合には，ps file で指定されたフォン�
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-という内容のファイルを gs\gs$(gswin32c --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．
 
 cidfmap でのフォント代替の記述は CID font の場合と同様です．例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう．ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります．この場合には，
 
@@ -495,7 +495,7 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 /Ryumin-Light-H /H [/Ryumin-Light] composefont pop
 ```
 
-という内容のファイルを gs\gs$(gswin32c --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
 
 なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．
 
@@ -503,7 +503,7 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 
 ここでは日本語等 (CJK) の TrueType font を用いる場合のフォントの置き場所やパスの設定方法について説明します．
 
-1) まず，ここで用いる用語の説明をしておきます．LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です．これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，gswin32c -h で表示されるもののうちの Search path: の部分に記述される場所のことです．環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします．角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です．これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります．なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です．
+1) まず，ここで用いる用語の説明をしておきます．LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です．これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，rungs -h で表示されるもののうちの Search path: の部分に記述される場所のことです．環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします．角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です．これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります．なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です．
 
 2) 拡張子が .ttf や .ttc である TrueType font (拡張子が .otf であっても TrueType outline であるならば同様に使えるかもしれないが未確認) は，cidfmap での代替を行うことによって使用することができます．この場合，フォントファイルは，cidfmap に記述される /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます(フォントファイルは実ファイルではなくリンクでも構いません)．gs のドキュメントによれば，これは絶対パス指定でならなければならないようです．しかし，相対パス指定，つまり /Path (msmincho.ttc) のような記述も実際には使うことができます．相対パス指定の場合には，フォントは LIB PATH のみから探されます(FONT PATH の場所は探されない)．従って，相対パス指定の場合には，LIB PATH に含まれる場所にフォントファイル(またはリンク)を置いてください．
 
@@ -519,7 +519,7 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(gswin32c --version)\Resource\Font\ に
+[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(rungs --version)\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
@@ -599,9 +599,9 @@ composefont pop
 
 ### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
 
-角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs$(gswin32c --version)\kanji\kconfig.ps の記述内容によって設定されます．
+角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます．
 
-#### gs\gs$(gswin32c --version)\kanji\kconfig.ps の記述例 {#d0c50ae3}
+#### gs\gs$(rungs --version)\kanji\kconfig.ps の記述例 {#d0c50ae3}
 
 ***
 
@@ -625,7 +625,7 @@ composefont pop
 
 このファイルは Shift_JIS で保存してください。
 
-### gs\gs$(gswin32c --version)\lib\cidfmap の記述例 {#m115a63f}
+### gs\gs$(rungs --version)\lib\cidfmap の記述例 {#m115a63f}
 
 これはさまざまなフォントを扱うための設定の example です．
 
@@ -828,7 +828,7 @@ CJK フォントを埋め込まないように制御するには “/NeverEmbed�
 Windows PowerShell に次のようにコマンドを入力します。<br>
 
 ```
-C:\Users\$Env:USERNAME> gswin32c -dSAFER -q -dBATCH -dNOPAUSE `
+C:\Users\$Env:USERNAME> rungs -dSAFER -q -dBATCH -dNOPAUSE `
 >> -sDEVICE="pdfwrite" -dCompatibilityLevel="1.4" -sOutputFile="foo.pdf" `
 >> -c ".setpdfwrite <</NeverEmbed [/MS-Mincho]>> setdistillerparams" `
 >> -f "foo.ps"
@@ -838,7 +838,7 @@ C:\Users\$Env:USERNAME> gswin32c -dSAFER -q -dBATCH -dNOPAUSE `
 コマンド プロンプトの場合は次のようにコマンドを入力します。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
+>rungs -dSAFER -q -dBATCH -dNOPAUSE ^
 More? -sDEVICE="pdfwrite" -dCompatibilityLevel="1.4" -sOutputFile="foo.pdf" ^
 More? -c ".setpdfwrite <</NeverEmbed [/MS-Mincho]>> setdistillerparams" ^
 More? -f "foo.ps"
@@ -853,7 +853,7 @@ More? -f "foo.ps"
 Windows PowerShell にコマンドを入力する方法もあります。
 
 ```
-C:\Users\$Env:USERNAME> gswin32c -dSAFER -q -dBATCH -dNOPAUSE `
+C:\Users\$Env:USERNAME> rungs -dSAFER -q -dBATCH -dNOPAUSE `
 >> -sDEVICE="pdfwrite" -dCompatibilityLevel="1.4" -sOutputFile="foo.pdf" `
 >> -c .setpdfwrite -f "neverembed.ps" -f "foo.ps"
 >>
@@ -862,7 +862,7 @@ C:\Users\$Env:USERNAME> gswin32c -dSAFER -q -dBATCH -dNOPAUSE `
 コマンド プロンプトの場合は次のようにコマンドを入力します。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE ^
+>rungs -dSAFER -q -dBATCH -dNOPAUSE ^
 More? -sDEVICE="pdfwrite" -dCompatibilityLevel="1.4" -sOutputFile="foo.pdf" ^
 More? -c .setpdfwrite -f "neverembed.ps" -f "foo.ps"
 ```
@@ -916,7 +916,7 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 ***
 
 この lib/neverembed.ps への設定を ps2pdf でも有効に
-するためには，[gs\gs$(gswin32c --version)\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
+するためには，[gs\gs$(rungs --version)\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
 
 ```
 echo -c .setpdfwrite -f%1 >>"%TEMP%\_.at"2
@@ -935,51 +935,32 @@ echo -c .setpdfwrite -f neverembed.ps -f%1 >>"%TEMP%\_.at"2
 ```
 
 を追加します。<br>
-（UNIX や UNIX 互換 OS では，[ghostscript/\`gs --version\`/lib/ps2pdfwr](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfwr;hb=HEAD) の記述内容の44行目
-
-```
-exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
-```
-
-を
-
-```
-#exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
-```
-
-のようにコメントアウトし
-
-```
-exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f neverembed.ps -f "$infile"
-```
-
-を追加します。）
 
 さらに dvipdfmx が PostScript ファイルや EPS ファイルを PDF に変換する場合に
 lib/neverembed.ps への設定を有効にするためには
 
+[TeX Live](</TeX Live/>) の場合は [dvipdfmx.cfg](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/dvipdfmx/dvipdfmx.cfg?view=markup) の記述内容の150行目
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に次のように “-f neverembed.ps ” を挿入します。
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' -f neverembed.ps '%i' -c quit"
+```
+
 [W32TeX](/W32TeX/) の場合は $TEXMF/dvipdfmx/config/dvipdfmx.cfg の記述内容の38行目
 
 ```
-D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f %i -c quit"
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f '%i' -c quit"
 ```
 
 に次のように “-f neverembed.ps ” を挿入します。
 
 ```
-D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile=%o -c .setpdfwrite -f neverembed.ps -f %i -c quit"
-```
-
-[TeX Live](</TeX Live/>) の場合は [dvipdfmx.cfg](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/dvipdfmx/dvipdfmx.cfg?view=markup) の記述内容の152行目
-
-```
-D  "rungs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
-```
-
-に次のように “-f neverembed.ps ” を挿入します。
-
-```
-D  "rungs -q -dNOPAUSE -dBATCH -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' -f neverembed.ps '%i' -c quit"
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f neverembed.ps -f '%i' -c quit"
 ```
 
 ### PDF への欧文用フォントの埋め込み制御 {#y3b70de6}
