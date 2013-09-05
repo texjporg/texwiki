@@ -21,6 +21,7 @@ pukiwiki: "Fortran"
 - [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
 - [Fortran日記](http://fortran.cscblog.jp/)
+- [なんとなく始めたブログ: fortran](http://sak12.blogspot.jp/search/label/fortran)
 - [Fortrantips](http://pmt.sakura.ne.jp/wiki/index.php?title=Fortrantips)
 - [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
@@ -40,6 +41,7 @@ pukiwiki: "Fortran"
 - [データ解析のためのFortran90/95](http://web.agr.ehime-u.ac.jp/~kishou/Lecture/atmosphere/atmo06.htm)
 - [Fortran90プログラミング](http://www7b.biglobe.ne.jp/~fortran/)
 - [Fortran エラー処理で文番号を使わない方法 ](http://seismon.blog85.fc2.com/blog-entry-90.html)
+- [Fortran90で構造解析をしよう！](http://www.rcs.arch.t.u-tokyo.ac.jp/kusuhara/tips/linux/fortran.html)
 
 ### 処理系 {#xfad745a}
 
@@ -153,11 +155,13 @@ MinGW の gfortran でビルドしたバイナリで
 program sum_from_1_to_100
     implicit none
     integer :: i
-    print '(g0)', sum((/(i, i = 1, 100)/))
+    print '(g0, g0)', "Sum from 1 to 100 = ", sum((/(i, i = 1, 100)/))
 end program sum_from_1_to_100
 ```
 
 ***
+
+配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
 
 #### コマンドライン引数から値 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
@@ -175,17 +179,25 @@ program sum_from_1_to_n
     character(len=3) :: arg_length_format
     character(len=256) :: arg
 
-    do i = 0, command_argument_count()
+    if (command_argument_count() == 0) then
+        call usage()
+        stop
+    end if
+    do i = 1, command_argument_count()
         call get_command_argument(i, arg)
-        if (i == 0) then
-            cycle
-        end if
         write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
         read(unit=arg, fmt='(i' // trim(arg_length_format) // ')') n
         if (n /= 0) then
-            print '(g0)', sum((/(j, j = 1, n)/))
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
         end if
     end do
+contains
+    subroutine usage()
+        use, intrinsic :: iso_fortran_env
+        character(len=256) :: cmd
+        call get_command(cmd)
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
+    end subroutine usage
 end program sum_from_1_to_n
 ```
 
@@ -212,20 +224,31 @@ program sum_from_1_to_n
     integer :: n
     character(len=256) :: arg
 
-    do i = 0, command_argument_count()
+    if (command_argument_count() == 0) then
+        call usage()
+        stop
+    end if
+    do i = 1, command_argument_count()
         call get_command_argument(i, arg)
-        if (i == 0) then
-            cycle
-        end if
         n = c_atoi(trim(arg) // c_null_char)
         if (n /= 0) then
-            print '(g0)', sum((/(j, j = 1, n)/))
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
         end if
     end do
+contains
+    subroutine usage()
+        use, intrinsic :: iso_fortran_env
+        character(len=256) :: cmd
+        call get_command(cmd)
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
+    end subroutine usage
 end program sum_from_1_to_n
 ```
 
 ***
+
+文字列から数値への変換は read 文で行います．<br>
+C の atoi 関数で文字列から数値へ変換することもできます．<br>
 
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
