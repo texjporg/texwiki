@@ -20,6 +20,8 @@ pukiwiki: "Fortran"
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
 - [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
+- [Fortran日記](http://fortran.cscblog.jp/)
+- [Fortrantips](http://pmt.sakura.ne.jp/wiki/index.php?title=Fortrantips)
 - [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
@@ -45,6 +47,7 @@ pukiwiki: "Fortran"
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
     - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
+    - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からバイナリが取得できます．
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用での使用のみ可)
     - [Fortran (Intel Parallel Studio) のインストール](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Fortran+%28Intel+Parallel+Studio+XE%29+%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8)
