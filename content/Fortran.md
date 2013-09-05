@@ -48,6 +48,7 @@ pukiwiki: "Fortran"
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
+    - [http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html](http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html)
     - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
     - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からバイナリが取得できます．
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
@@ -162,6 +163,9 @@ end program sum_from_1_to_100
 ***
 
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
+g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
+&#x2a; を使用して出力した場合は処理系によって出力フォーマットが異なる場合があります．<br>
+処理系によって出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 
 #### コマンドライン引数から値 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
@@ -249,6 +253,7 @@ end program sum_from_1_to_n
 
 文字列から数値への変換は read 文で行います．<br>
 C の atoi 関数で文字列から数値へ変換することもできます．<br>
+数値から文字列への変換は write 文で行います．<br>
 
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
