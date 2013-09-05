@@ -329,3 +329,27 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 <!-- /DFFreeRyuyou-Lt              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dffry2.ttc)   /SubfontID 0 >> ; -->
 
 ***
+
+### PDF への CJK フォントの非埋め込み制御 {#ya99c3fd}
+
+[Ghostscript/Windows](/Ghostscript/Windows/#zd1cf8d8) を参照．<br>
+
+UNIX や UNIX 互換 OS では，[ghostscript/\`gs --version\`/lib/ps2pdfwr](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfwr;hb=HEAD) の記述内容の44行目
+
+```
+exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
+```
+
+を
+
+```
+#exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f "$infile"
+```
+
+のようにコメントアウトし
+
+```
+exec "$GS_EXECUTABLE" $OPTIONS -q -P- -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr "-sOutputFile=$outfile" $OPTIONS -c .setpdfwrite -f neverembed.ps -f "$infile"
+```
+
+を追加します。
