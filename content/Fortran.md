@@ -53,9 +53,11 @@ pukiwiki: "Fortran"
     - [http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html](http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html)
     - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
     - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からバイナリが取得できます．
+    - [http://gfortran.com/](http://gfortran.com/) gfortran daily builds
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用での使用のみ可)
     - [Fortran (Intel Parallel Studio) のインストール](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Fortran+%28Intel+Parallel+Studio+XE%29+%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8)
+    - [ifort で最近良く使うコンパイルオプション](http://naturesflyers.blogspot.jp/2013/08/ifort.html)
 
 ### Fortran 2008 の使い方 {#r3bbac60}
 
@@ -131,7 +133,7 @@ C の puts 関数などを呼び出して出力することもできます．<br
 Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
 ```
-$ gfortran -std=f2008 -static -o helloworld helloworld.f90
+$ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
 $ ./helloworld
 ```
 
@@ -143,7 +145,7 @@ MinGW の gfortran でビルドしたバイナリで
 といった現象が発生する場合は
 
 ```
- $ gfortran -std=f2008 -static -o helloworld helloworld.f90
+ $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
 ```
 
 のように -static オプションを追加してビルドすれば OK です．<br>
@@ -214,7 +216,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N (0 < N < 65536) ..."
     end subroutine usage
 
     function valid_number(arg) result(ok)
@@ -222,6 +224,7 @@ contains
         integer(kind=4) :: i
         logical(kind=4) :: ok
 
+        ok = .false.
         do i = 1, len_trim(arg)
             if (arg(i:i) < '0' .or. arg(i:i) > '9') then
                 ok = .false.
@@ -278,7 +281,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N (0 < N < 65536) ..."
     end subroutine usage
 end program sum_from_1_to_n
 ```
