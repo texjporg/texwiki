@@ -43,6 +43,7 @@ pukiwiki: "Fortran"
 - [Fortran エラー処理で文番号を使わない方法 ](http://seismon.blog85.fc2.com/blog-entry-90.html)
 - [Fortran90で構造解析をしよう！](http://www.rcs.arch.t.u-tokyo.ac.jp/kusuhara/tips/linux/fortran.html)
 - [Fortranでの配列の要素へのアクセス順序について](http://d.hatena.ne.jp/aldente39/20120209/1328800255)
+- [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
 
 ### 処理系 {#xfad745a}
 
@@ -185,21 +186,27 @@ program sum_from_1_to_n
     integer(kind=4) :: n
     character(len=3) :: arg_length_format
     character(len=256) :: arg
+    integer(kind=4) :: ios
 
     if (command_argument_count() == 0) then
         call usage()
         stop
     end if
+
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
         if (valid_number(arg) .eqv. .false.) then
             cycle
         end if
         write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
-        read(unit=arg, fmt='(i' // trim(arg_length_format) // ')') n
-        if (n > 0 .and. n < 65536) then
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
+        read(unit=arg, fmt='(i' // trim(arg_length_format) // ')', iostat=ios) n
+        if (ios > 0) then
+            cycle
         end if
+        if (n <= 0 .or. n >= 65536) then
+            cycle
+        end if
+        print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
     end do
 contains
     subroutine usage()
@@ -255,12 +262,14 @@ program sum_from_1_to_n
         call usage()
         stop
     end if
+
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
         n = c_atoi(trim(arg) // c_null_char)
-        if (n > 0 .and. n < 65536) then
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
+        if (n <= 0 .or. n >= 65536) then
+            cycle
         end if
+        print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
     end do
 contains
     subroutine usage()
