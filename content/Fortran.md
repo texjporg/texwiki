@@ -42,6 +42,7 @@ pukiwiki: "Fortran"
 - [Fortran90プログラミング](http://www7b.biglobe.ne.jp/~fortran/)
 - [Fortran エラー処理で文番号を使わない方法 ](http://seismon.blog85.fc2.com/blog-entry-90.html)
 - [Fortran90で構造解析をしよう！](http://www.rcs.arch.t.u-tokyo.ac.jp/kusuhara/tips/linux/fortran.html)
+- [Fortranでの配列の要素へのアクセス順序について](http://d.hatena.ne.jp/aldente39/20120209/1328800255)
 
 ### 処理系 {#xfad745a}
 
@@ -103,6 +104,8 @@ end program hello_world
 module c_stdio
     use, intrinsic :: iso_c_binding
     implicit none
+    private
+    public :: c_puts
     interface
         subroutine c_puts(s) bind(c, name='puts')
             import
@@ -229,6 +232,8 @@ end program sum_from_1_to_n
 module c_stdlib
     use, intrinsic :: iso_c_binding
     implicit none
+    private
+    public :: c_atoi
     interface
         function c_atoi(s) result(i) bind(c, name='atoi')
             import
