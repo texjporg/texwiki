@@ -43,6 +43,11 @@ pukiwiki: "Fortran"
 - [Fortran エラー処理で文番号を使わない方法 ](http://seismon.blog85.fc2.com/blog-entry-90.html)
 - [Fortran90で構造解析をしよう！](http://www.rcs.arch.t.u-tokyo.ac.jp/kusuhara/tips/linux/fortran.html)
 - [Fortranでの配列の要素へのアクセス順序について](http://d.hatena.ne.jp/aldente39/20120209/1328800255)
+- [MinGW Fortran でプログラミング　Excelで使用](http://pub.ne.jp/TakeA/?entry_id=4584618)
+- [計算機に関する雑多なTips](http://daweb.ism.ac.jp/~saitohm/top/_tRlEvpW.html)
+- [Fortran 90 with Excel – gfortran example](http://sukhbinder.wordpress.com/2010/07/20/fortran-90-with-excel-gfortran-example/)
+- [using gfortran to call windows api functions](http://compgroups.net/comp.lang.fortran/using-gfortran-to-call-windows-api-function/226148)
+- [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
 
 ### 処理系 {#xfad745a}
@@ -76,7 +81,7 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html)
 - [http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm)
 
-#### 標準出力に "Hello World" を出力 {#x79017be}
+#### 標準出力，MessageBox に "Hello World" を出力 {#x79017be}
 
 ***
 
@@ -127,9 +132,37 @@ end program hello_world
 
 ***
 
+```
+module c_windows
+    use, intrinsic :: iso_c_binding
+    implicit none
+    private
+    public :: c_MessageBoxA
+    interface
+        subroutine c_MessageBoxA(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxA')
+            import
+            !gcc$ attributes stdcall :: c_MessageBoxA
+            type(c_ptr), value :: hWnd
+            character(c_char), intent(in) :: lpText
+            character(c_char), intent(in) :: lpCaption
+            integer(c_int), value :: uType
+        end subroutine c_MessageBoxA
+    end interface
+end module c_windows
+
+program hello_world
+    use, intrinsic :: iso_c_binding
+    use c_windows
+    implicit none
+    call c_MessageBoxA(c_null_ptr, "Hello World" // c_null_char, "Hello World" // c_null_char, 0)
+end program hello_world
+```
+
+***
+
 GNU Fortran 4.8.1 で動作確認しています．<br>
 データの出力は print 文や write 文で行います．<br>
-C の puts 関数などを呼び出して出力することもできます．<br>
+C の puts 関数や Windows API の MessageBox 関数を呼び出して出力することもできます．<br>
 Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
 ```
@@ -170,8 +203,8 @@ end program sum_from_1_to_100
 
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
 g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
-&#x2a; を使用して出力した場合は処理系によって出力フォーマットが異なる場合があります．<br>
-処理系によって出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
+&#x2a; を使用して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
+gfortran と ifort で出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 
 #### コマンドライン引数から整数 N (0 &lt; N &lt; 65536) を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
