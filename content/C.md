@@ -18,6 +18,8 @@ pukiwiki: "C"
 - \[[SDK\] プロセスの列挙](http://shoppers-jp.com/tech/sdk037.html)
 - [コマンドライン引数の取得（プロセスファイルシステムを利用する） - Linux/C/C++ Tips](http://lldev.jp/linux_c_cpp/tips/pfs_cmdline.html)
 - [http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline](http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline)
+- [http://cx20.main.jp/blog/hello/category/win32-api/](http://cx20.main.jp/blog/hello/category/win32-api/)
+- [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
