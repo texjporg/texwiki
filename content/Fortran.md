@@ -200,7 +200,7 @@ program sum_from_1_to_n
         end if
         write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
         read(unit=arg, fmt='(i' // trim(arg_length_format) // ')', iostat=ios) n
-        if (ios > 0) then
+        if (ios /= 0) then
             cycle
         end if
         if (n <= 0 .or. n >= 65536) then
@@ -212,6 +212,7 @@ contains
     subroutine usage()
         use, intrinsic :: iso_fortran_env
         character(len=256) :: cmd
+
         call get_command(cmd)
         write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
     end subroutine usage
@@ -275,6 +276,7 @@ contains
     subroutine usage()
         use, intrinsic :: iso_fortran_env
         character(len=256) :: cmd
+
         call get_command(cmd)
         write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " number ..."
     end subroutine usage
