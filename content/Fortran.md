@@ -17,9 +17,11 @@ pukiwiki: "Fortran"
 - [インテル® Fortran Composer XE 2013 Linux\* 版入門](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/get_started_lf.htm)
 - [インテル® Fortran コンパイラー XE 13.0 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
 - [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
+- [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
 - [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
+- [fortran66の日記](http://d.hatena.ne.jp/fortran66/)
 - [Fortran日記](http://fortran.cscblog.jp/)
 - [なんとなく始めたブログ: fortran](http://sak12.blogspot.jp/search/label/fortran)
 - [Fortrantips](http://pmt.sakura.ne.jp/wiki/index.php?title=Fortrantips)
@@ -193,6 +195,9 @@ end program hello_world
 
 GNU Fortran 4.8.1 で動作確認しています．<br>
 データの出力は print 文や write 文で行います．<br>
+g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
+print 文や write 文でフォーマットに &#x2a; を指定して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
+gfortran と ifort で出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 C の puts 関数や Windows API の MessageBox 関数を呼び出して出力することもできます．<br>
 Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 
@@ -233,9 +238,6 @@ end program sum_from_1_to_100
 ***
 
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
-g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
-&#x2a; を使用して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
-gfortran と ifort で出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 
 #### コマンドライン引数から整数 N (0 &lt; N &lt; 65536) を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
