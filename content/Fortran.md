@@ -239,7 +239,7 @@ end program sum_from_1_to_100
 
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
 
-#### コマンドライン引数から整数 N (0 &lt; N &lt; 65536) を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
+#### コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
 ***
 
@@ -255,6 +255,8 @@ program sum_from_1_to_n
     character(len=3) :: arg_length_format
     character(len=256) :: arg
     integer(kind=4) :: ios
+    integer(kind=4), dimension(:), allocatable :: n_array_4
+    integer(kind=8), dimension(:), allocatable :: n_array_8
 
     if (command_argument_count() == 0) then
         call usage()
@@ -271,10 +273,19 @@ program sum_from_1_to_n
         if (ios /= 0) then
             cycle
         end if
-        if (n <= 0 .or. n >= 65536) then
+        if (n <= 0) then
             cycle
+        else if (n > 0 .and. n < 65536) then
+            allocate(n_array_4(1:n))
+            forall(j = 1:n) n_array_4(j:j) = j
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
+            deallocate(n_array_4)
+        else if (n >= 65536) then
+            allocate(n_array_8(1:n))
+            forall(j = 1:n) n_array_8(j:j) = j
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
+            deallocate(n_array_8)
         end if
-        print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
     end do
 contains
     subroutine usage()
@@ -282,7 +293,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N (0 < N < 65536) ..."
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N ..."
     end subroutine usage
 
     function valid_number(arg) result(ok)
@@ -327,6 +338,8 @@ program sum_from_1_to_n
     integer(kind=4) :: i, j
     integer(kind=4) :: n
     character(len=256) :: arg
+    integer(kind=4), dimension(:), allocatable :: n_array_4
+    integer(kind=8), dimension(:), allocatable :: n_array_8
 
     if (command_argument_count() == 0) then
         call usage()
@@ -336,10 +349,19 @@ program sum_from_1_to_n
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
         n = c_atoi(trim(arg) // c_null_char)
-        if (n <= 0 .or. n >= 65536) then
+        if (n <= 0) then
             cycle
+        else if (n > 0 .and. n < 65536) then
+            allocate(n_array_4(1:n))
+            forall(j = 1:n) n_array_4(j:j) = j
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
+            deallocate(n_array_4)
+        else if (n >= 65536) then
+            allocate(n_array_8(1:n))
+            forall(j = 1:n) n_array_8(j:j) = j
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
+            deallocate(n_array_8)
         end if
-        print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum((/(j, j = 1, n)/))
     end do
 contains
     subroutine usage()
@@ -347,7 +369,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N (0 < N < 65536) ..."
+        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N ..."
     end subroutine usage
 end program sum_from_1_to_n
 ```
@@ -357,8 +379,7 @@ end program sum_from_1_to_n
 文字列から数値への変換は read 文で行います．<br>
 C の atoi 関数で文字列から数値へ変換することもできます．<br>
 数値から文字列への変換は write 文で行います．<br>
-
-整数 N の値が 65536 以上の場合の 1 から N までの和を計算したい場合は整数の kind の値を integer(kind=4) から integer(kind=8) に変更したり[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用したりすれば可能です．<br>
+[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することもできます．<br>
 多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
 C で簡単に記述できます．<br>
 
