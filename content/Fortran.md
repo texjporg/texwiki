@@ -223,7 +223,7 @@ MinGW の gfortran でビルドしたバイナリで
 
 ***
 
-- sum.f90
+- sum100.f90
 
 ***
 
@@ -243,7 +243,7 @@ end program sum_from_1_to_100
 
 ***
 
-- sum.f90
+- nsum.f90
 
 ***
 
@@ -357,6 +357,89 @@ end program sum_from_1_to_n
 文字列から数値への変換は read 文で行います．<br>
 C の atoi 関数で文字列から数値へ変換することもできます．<br>
 数値から文字列への変換は write 文で行います．<br>
+
+整数 N の値が 65536 以上の場合の 1 から N までの和を計算したい場合は整数の kind の値を integer(kind=4) から integer(kind=8) に変更したり[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用したりすれば可能です．<br>
+多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
+C で簡単に記述できます．<br>
+
+***
+
+- nsum.c
+
+***
+
+```
+// vim: ts=4 sw=4 expandtab:
+// gcc -Wall -Ofast -march=native -std=c11 -static -o nsum nsum.c -lgmp
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <gmp.h>
+
+void usage(const char* restrict);
+bool valid_number(const char* restrict);
+void nsum(const char* restrict);
+
+void
+usage(const char* restrict s)
+{
+    fprintf(stderr, "usage: %s N ...", s);
+}
+
+bool
+valid_number(const char* restrict s)
+{
+    for (int i = 0; i < strlen(s); i++) {
+        if (!isdigit(s[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void
+nsum(const char* restrict s)
+{
+    mpz_t n;
+    mpz_t k;
+    mpz_t inc;
+    mpz_t arg;
+    mpz_init_set_str(inc, "1", 10);
+    mpz_init_set_str(k, "1", 10);
+    mpz_init_set_str(n, "0", 10);
+    mpz_init_set_str(arg, s, 10);
+    while (mpz_cmp(k, arg) <= 0) {
+        mpz_add(n, n, k);
+        mpz_add(k, k, inc);
+    }
+    gmp_printf("Sum from 1 to %Zd = %Zd\n", arg, n);
+    mpz_clear(arg);
+    mpz_clear(inc);
+    mpz_clear(k);
+    mpz_clear(n);
+}
+
+int
+main(int argc, char** argv)
+{
+    if (argc < 2) {
+        usage(argv[0]);
+        return 2;
+    }
+
+    for (int i = 1; i < argc; i++) {
+        if (valid_number(argv[i]) == false) {
+            continue;
+        }
+        nsum(argv[i]);
+    }
+
+    return 0;
+}
+```
+
+***
 
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
