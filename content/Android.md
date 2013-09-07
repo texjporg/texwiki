@@ -43,7 +43,7 @@ pukiwiki: "Android"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert)
+- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert), [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
     - [anhoavu/TeXpert · GitHub](https://github.com/anhoavu/TeXpert)
 - [Emacs](/Emacs/)
     - [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
