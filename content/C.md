@@ -20,6 +20,7 @@ pukiwiki: "C"
 - [http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline](http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline)
 - [http://cx20.main.jp/blog/hello/category/win32-api/](http://cx20.main.jp/blog/hello/category/win32-api/)
 - [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
+- [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
