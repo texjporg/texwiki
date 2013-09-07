@@ -143,9 +143,9 @@ module c_windows
             import
             !gcc$ attributes stdcall :: c_MessageBoxA
             type(c_ptr), value :: hWnd
-            character(c_char), intent(in) :: lpText
-            character(c_char), intent(in) :: lpCaption
-            integer(c_int), value :: uType
+            character(kind=c_char), intent(in) :: lpText
+            character(kind=c_char), intent(in) :: lpCaption
+            integer(kind=c_int), value :: uType
         end subroutine c_MessageBoxA
     end interface
 end module c_windows
@@ -155,6 +155,37 @@ program hello_world
     use c_windows
     implicit none
     call c_MessageBoxA(c_null_ptr, "Hello World" // c_null_char, "Hello World" // c_null_char, 0)
+end program hello_world
+```
+
+***
+
+```
+module c_windows
+    use, intrinsic :: iso_c_binding
+    implicit none
+    private
+    public :: c_MessageBoxW
+    interface
+        subroutine c_MessageBoxW(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxW')
+            import
+            !gcc$ attributes stdcall :: c_MessageBoxW
+            type(c_ptr), value :: hWnd
+            type(c_ptr), value :: lpText
+            type(c_ptr), value :: lpCaption
+            integer(kind=c_int), value :: uType
+        end subroutine c_MessageBoxW
+    end interface
+end module c_windows
+
+program hello_world
+    use, intrinsic :: iso_c_binding
+    use c_windows
+    implicit none
+    integer(kind=1), dimension(1:24), target :: hello_world_wchar = &
+        & (/72, 0, 101, 0, 108, 0, 108, 0, 111, 0, 32, 0, &
+        &   87, 0, 111, 0, 114, 0, 108, 0, 100, 0,  0, 0/)! "Hello World" + "\0"
+    call c_MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
 end program hello_world
 ```
 
