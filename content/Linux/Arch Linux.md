@@ -21,7 +21,6 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 
 - [Arch Linux](https://www.archlinux.org/)
 - [Arch Linux Forums](https://bbs.archlinux.org/)
-    <!-- - -[[root device not read-write warning:https://bbs.archlinux.org/viewtopic.php?pid=1303852]] -->
 
 ### ミラーサイト {#z011535f}
 
@@ -217,47 +216,6 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 ***
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
-
-<!-- pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64-bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
-<!-- pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定してください．~ -->
-<!--  -->
-<!-- $ mkdir pxdvi -->
-<!-- $ cd pxdvi -->
-<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
-<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
-<!-- $ tar xvf pxdvi.tar.xz -->
-<!-- $ tar xvf pxdvi.x86_64-linux.tar.xz -->
-<!-- $ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin -->
-<!-- $ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi -->
-<!-- $ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi -->
-<!-- $ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi -->
-<!-- $ sudo mkdir -p /usr/share/texmf-local/web2c -->
-<!-- $ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c -->
-<!--  -->
-<!-- /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．~ -->
-<!--  -->
-<!-- % pxdvi -->
-<!-- XDVIINPUTS = /usr/share/texmf-dist/pxdvi -->
-<!--  -->
-<!-- platex で処理された DVI ファイルが表示できます．~ -->
-<!--  -->
-<!-- $ pxdvi -watchfile 1 hoge.dvi & -->
-<!--  -->
-<!-- VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64-bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
-<!--  -->
-<!-- $ mkdir vine -->
-<!-- $ cd vine -->
-<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/texlive-2012-4vl7.x86_64.rpm -->
-<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libkpathsea-2012-4vl7.x86_64.rpm -->
-<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/openMotif-2.3.3-1vl6.x86_64.rpm -->
-<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libjpeg-turbo-1.2.1-1vl7.x86_64.rpm -->
-<!-- $ curl -O http://ftp.jaist.ac.jp/pub/Linux/Vine/VineSeed/x86_64/RPMS.main/libpng-1.2.50-1vl7.x86_64.rpm -->
-<!--  -->
-<!-- rpm2cpio と cpio で rpm ファイルを展開します．~ -->
-<!-- rpm2cpio が Segmentation fault (コアダンプ) する場合は Windows 版の 7-Zip をインストールして Wine で実行して rpm ファイルを展開してください．~ -->
-<!-- 展開したファイルの pxdvi-motif と pxdvi-motif の実行に必要なライブラリを適切な場所に配置すれば pxdvi-motif が実行できます．~ -->
-<!--  -->
-<!-- $ pxdvi-motif -watchfile 1 hoge.dvi & -->
 
 ## [Python](/Python/) {#i5b0d02d}
 
