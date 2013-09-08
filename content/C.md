@@ -21,6 +21,7 @@ pukiwiki: "C"
 - [http://cx20.main.jp/blog/hello/category/win32-api/](http://cx20.main.jp/blog/hello/category/win32-api/)
 - [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
 - [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
+- [桂田研卒研ノート](http://www.math.meiji.ac.jp/~mk/labo/text/)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
