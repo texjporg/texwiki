@@ -238,7 +238,17 @@ end program sum_from_1_to_100
 
 ***
 
+```
+program sum_from_1_to_100
+    implicit none
+    print '(g0, g0)', "Sum from 1 to 100 = ", int(100.0_8*(100.0_8+1.0_8)*0.5_8, kind=8)
+end program sum_from_1_to_100
+```
+
+***
+
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
+1 から 100 までの和であれば sum 関数を使わずに 100\*(100+1)/2 で計算することもできます．<br>
 
 #### コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
@@ -344,7 +354,7 @@ program sum_from_1_to_n
     use, intrinsic :: iso_c_binding
     use c_stdlib
     implicit none
-    integer(kind=4) :: i, j
+    integer(kind=4) :: i
     integer(kind=4) :: n
     character(len=256) :: arg
 
@@ -358,22 +368,9 @@ program sum_from_1_to_n
 
         n = c_atoi(trim(arg) // c_null_char)
 
-        if (n > 0 .and. n < 65536) then
-            block
-                integer(kind=4), dimension(:), allocatable :: n_array_4
-                allocate(n_array_4(1:n))
-                forall(j = 1:n) n_array_4(j:j) = j
-                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
-                deallocate(n_array_4)
-            end block
-        else if (n >= 65536 .and. n <= huge(n)) then
-            block
-                integer(kind=8), dimension(:), allocatable :: n_array_8
-                allocate(n_array_8(1:n))
-                forall(j = 1:n) n_array_8(j:j) = j
-                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
-                deallocate(n_array_8)
-            end block
+        if (n > 0 .and. n <= huge(n)) then
+            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", &
+                & int(real(n, kind=8)*(real(n, kind=8)+1.0_8)*0.5_8, kind=8)
         else
             cycle
         end if
@@ -407,6 +404,7 @@ C で簡単に記述できます．<br>
 ```
 // vim: ts=4 sw=4 expandtab:
 // gcc -Wall -Ofast -march=native -std=c11 -static -o nsum nsum.c -lgmp
+// gcc -Wall -Ofast -march=native -std=c11 -static -DNSUM1 -o nsum nsum.c -lgmp
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -415,7 +413,8 @@ C で簡単に記述できます．<br>
 
 void usage(const char* restrict);
 bool valid_number(const char* restrict);
-void nsum(const char* restrict);
+void nsum1(const char* restrict);
+void nsum2(const char* restrict);
 
 void
 usage(const char* restrict s)
@@ -435,7 +434,7 @@ valid_number(const char* restrict s)
 }
 
 void
-nsum(const char* restrict s)
+nsum1(const char* restrict s)
 {
     mpz_t n;
     mpz_t k;
@@ -456,13 +455,46 @@ nsum(const char* restrict s)
     mpz_clear(n);
 }
 
+void
+nsum2(const char* restrict s)
+{
+    mpq_t n;
+    mpq_t k;
+    mpq_t inc;
+    mpq_t arg;
+    mpq_init(n);
+    mpq_init(k);
+    mpq_init(inc);
+    mpq_init(arg);
+    mpq_set_str(inc, "1", 10);
+    mpq_set_str(k, "1/2", 10);
+    mpq_set_str(n, "0", 10);
+    mpq_set_str(arg, s, 10);
+    mpq_add(n, arg, inc);
+    mpq_mul(n, n, arg);
+    mpq_mul(n, n, k);
+    gmp_printf("Sum from 1 to %Qd = %Qd\n", arg, n);
+    mpq_clear(arg);
+    mpq_clear(inc);
+    mpq_clear(k);
+    mpq_clear(n);
+}
+
 int
 main(int argc, char** argv)
 {
+    void (*nsum)(const char* restrict);
+
     if (argc < 2) {
         usage(argv[0]);
         return 2;
     }
+
+#if defined (NSUM1)
+    nsum = nsum1;
+#else
+    nsum = nsum2;
+#endif
 
     for (int i = 1; i < argc; i++) {
         if (valid_number(argv[i]) == false) {
