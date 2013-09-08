@@ -66,6 +66,11 @@ pukiwiki: "Fortran"
     - [Fortran (Intel Parallel Studio) のインストール](http://pen.agbi.tsukuba.ac.jp/~RStiger/hiki2/?Fortran+%28Intel+Parallel+Studio+XE%29+%A4%CE%A5%A4%A5%F3%A5%B9%A5%C8)
     - [ifort で最近良く使うコンパイルオプション](http://naturesflyers.blogspot.jp/2013/08/ifort.html)
 
+### IDE・エディタ {#xe73a6d2}
+
+- [Eclipse](/Eclipse/)
+    - [Photran](http://www.eclipse.org/photran/)
+
 ### Fortran 2008 の使い方 {#r3bbac60}
 
 #### 使用可能な拡張子 {#d9d770b5}
@@ -391,6 +396,10 @@ end program sum_from_1_to_n
 文字列から数値への変換は read 文で行います．<br>
 C の atoi 関数で文字列から数値へ変換することもできます．<br>
 数値から文字列への変換は write 文で行います．<br>
+最初のプログラムは 1 から N まで sum 関数で足し算をしています．<br>
+2番めのプログラムは N(N+1)/2 で計算しています．<br>
+数が大きくなると N(N+1)/2 の計算式のほうが早く計算できます．<br>
+ただし Fortran の組み込みの型を使用して大きな数を扱うのは限界があります．<br>
 大きな数で正確な演算結果が必要な場合は[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することをおすすめします．<br>
 多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
 C で簡単に記述できます．<br>
