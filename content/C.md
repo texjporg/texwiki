@@ -23,6 +23,124 @@ pukiwiki: "C"
 - [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
 - [桂田研卒研ノート](http://www.math.meiji.ac.jp/~mk/labo/text/)
 
+## コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#w46fe110}
+
+[任意精度演算](https://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97)を扱うためのライブラリである [GMP](http://gmplib.org/) を使用すると C で簡単に記述できます．<br>
+
+***
+
+- nsum.c
+
+***
+
+```
+// vim: ts=4 sw=4 expandtab:
+// gcc -Wall -Ofast -march=native -std=c11 -static -o nsum nsum.c -lgmp
+// gcc -Wall -Ofast -march=native -std=c11 -static -DNSUM1 -o nsum nsum.c -lgmp
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <gmp.h>
+
+void usage(const char* restrict);
+bool valid_number(const char* restrict);
+void nsum1(const char* restrict);
+void nsum2(const char* restrict);
+
+void
+usage(const char* restrict s)
+{
+    fprintf(stderr, "usage: %s N ...\n", s);
+}
+
+bool
+valid_number(const char* restrict s)
+{
+    for (int i = 0; i < strlen(s); i++) {
+        if (!isdigit(s[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void
+nsum1(const char* restrict s)
+{
+    mpz_t n;
+    mpz_t k;
+    mpz_t inc;
+    mpz_t arg;
+    mpz_init_set_str(inc, "1", 10);
+    mpz_init_set_str(k, "1", 10);
+    mpz_init_set_str(n, "0", 10);
+    mpz_init_set_str(arg, s, 10);
+    while (mpz_cmp(k, arg) <= 0) {
+        mpz_add(n, n, k);
+        mpz_add(k, k, inc);
+    }
+    gmp_printf("Sum from 1 to %Zd = %Zd\n", arg, n);
+    mpz_clear(arg);
+    mpz_clear(inc);
+    mpz_clear(k);
+    mpz_clear(n);
+}
+
+void
+nsum2(const char* restrict s)
+{
+    mpq_t n;
+    mpq_t k;
+    mpq_t inc;
+    mpq_t arg;
+    mpq_init(n);
+    mpq_init(k);
+    mpq_init(inc);
+    mpq_init(arg);
+    mpq_set_str(inc, "1", 10);
+    mpq_set_str(k, "1/2", 10);
+    mpq_set_str(n, "0", 10);
+    mpq_set_str(arg, s, 10);
+    mpq_add(n, arg, inc);
+    mpq_mul(n, n, arg);
+    mpq_mul(n, n, k);
+    gmp_printf("Sum from 1 to %Qd = %Qd\n", arg, n);
+    mpq_clear(arg);
+    mpq_clear(inc);
+    mpq_clear(k);
+    mpq_clear(n);
+}
+
+int
+main(int argc, char** argv)
+{
+    void (*nsum)(const char* restrict);
+
+    if (argc < 2) {
+        usage(argv[0]);
+        return 2;
+    }
+
+#if defined (NSUM1)
+    nsum = nsum1;
+#else
+    nsum = nsum2;
+#endif
+
+    for (int i = 1; i < argc; i++) {
+        if (valid_number(argv[i]) == false) {
+            continue;
+        }
+        nsum(argv[i]);
+    }
+
+    return 0;
+}
+```
+
+***
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
 ### C, C++ 版 {#a48a3eb3}
