@@ -71,7 +71,7 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 
 pxdvi, pmetapost (pmpost, upmpost) は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
-#### TeX Live 2013 の場合 {#c75bb558}
+#### TeX Live 2013 の場合 (Linux ディストリビューションによって配布されている TeX Live 2013 は除く) {#c75bb558}
 
 - [tlptexlive 2013](http://www.preining.info/blog/2013/08/tlptexlive-2013/)
 
