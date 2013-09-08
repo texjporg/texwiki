@@ -200,6 +200,7 @@ print 文や write 文でフォーマットに &#x2a; を指定して出力し�
 gfortran と ifort で出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
 C の puts 関数や Windows API の MessageBox 関数を呼び出して出力することもできます．<br>
 Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
+Fortran はデフォルトでは参照渡しなので C の関数に値渡しをしたい場合は仮引数に value 属性を追加する必要があります．<br>
 
 ```
 $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
@@ -263,17 +264,19 @@ program sum_from_1_to_n
 
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
+
         if (valid_number(arg) .eqv. .false.) then
             cycle
         end if
+
         write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
         read(unit=arg, fmt='(i' // trim(arg_length_format) // ')', iostat=ios) n
+
         if (ios /= 0) then
             cycle
         end if
-        if (n <= 0) then
-            cycle
-        else if (n > 0 .and. n < 65536) then
+
+        if (n > 0 .and. n < 65536) then
             block
                 integer(kind=4), dimension(:), allocatable :: n_array_4
                 allocate(n_array_4(1:n))
@@ -352,10 +355,10 @@ program sum_from_1_to_n
 
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
+
         n = c_atoi(trim(arg) // c_null_char)
-        if (n <= 0) then
-            cycle
-        else if (n > 0 .and. n < 65536) then
+
+        if (n > 0 .and. n < 65536) then
             block
                 integer(kind=4), dimension(:), allocatable :: n_array_4
                 allocate(n_array_4(1:n))
@@ -417,7 +420,7 @@ void nsum(const char* restrict);
 void
 usage(const char* restrict s)
 {
-    fprintf(stderr, "usage: %s N ...", s);
+    fprintf(stderr, "usage: %s N ...\n", s);
 }
 
 bool
