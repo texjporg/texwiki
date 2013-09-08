@@ -132,6 +132,7 @@ ulimit -t 10 -f 1024
 - [てふてふかれん](http://tex-web.net/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [Online Latex Editor](http://luikore.github.com/latex/)
+- [compileonline.com](http://www.compileonline.com/)
     <!-- -[[XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）:http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/]] -->
 
 ### 関連リンク {#cfaeb364}
