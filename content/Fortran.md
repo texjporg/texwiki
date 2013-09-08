@@ -255,8 +255,6 @@ program sum_from_1_to_n
     character(len=3) :: arg_length_format
     character(len=256) :: arg
     integer(kind=4) :: ios
-    integer(kind=4), dimension(:), allocatable :: n_array_4
-    integer(kind=8), dimension(:), allocatable :: n_array_8
 
     if (command_argument_count() == 0) then
         call usage()
@@ -276,15 +274,23 @@ program sum_from_1_to_n
         if (n <= 0) then
             cycle
         else if (n > 0 .and. n < 65536) then
-            allocate(n_array_4(1:n))
-            forall(j = 1:n) n_array_4(j:j) = j
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
-            deallocate(n_array_4)
-        else if (n >= 65536) then
-            allocate(n_array_8(1:n))
-            forall(j = 1:n) n_array_8(j:j) = j
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
-            deallocate(n_array_8)
+            block
+                integer(kind=4), dimension(:), allocatable :: n_array_4
+                allocate(n_array_4(1:n))
+                forall(j = 1:n) n_array_4(j:j) = j
+                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
+                deallocate(n_array_4)
+            end block
+        else if (n >= 65536 .and. n <= huge(n)) then
+            block
+                integer(kind=8), dimension(:), allocatable :: n_array_8
+                allocate(n_array_8(1:n))
+                forall(j = 1:n) n_array_8(j:j) = j
+                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
+                deallocate(n_array_8)
+            end block
+        else
+            cycle
         end if
     end do
 contains
@@ -338,8 +344,6 @@ program sum_from_1_to_n
     integer(kind=4) :: i, j
     integer(kind=4) :: n
     character(len=256) :: arg
-    integer(kind=4), dimension(:), allocatable :: n_array_4
-    integer(kind=8), dimension(:), allocatable :: n_array_8
 
     if (command_argument_count() == 0) then
         call usage()
@@ -352,15 +356,23 @@ program sum_from_1_to_n
         if (n <= 0) then
             cycle
         else if (n > 0 .and. n < 65536) then
-            allocate(n_array_4(1:n))
-            forall(j = 1:n) n_array_4(j:j) = j
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
-            deallocate(n_array_4)
-        else if (n >= 65536) then
-            allocate(n_array_8(1:n))
-            forall(j = 1:n) n_array_8(j:j) = j
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
-            deallocate(n_array_8)
+            block
+                integer(kind=4), dimension(:), allocatable :: n_array_4
+                allocate(n_array_4(1:n))
+                forall(j = 1:n) n_array_4(j:j) = j
+                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
+                deallocate(n_array_4)
+            end block
+        else if (n >= 65536 .and. n <= huge(n)) then
+            block
+                integer(kind=8), dimension(:), allocatable :: n_array_8
+                allocate(n_array_8(1:n))
+                forall(j = 1:n) n_array_8(j:j) = j
+                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
+                deallocate(n_array_8)
+            end block
+        else
+            cycle
         end if
     end do
 contains
@@ -379,7 +391,7 @@ end program sum_from_1_to_n
 文字列から数値への変換は read 文で行います．<br>
 C の atoi 関数で文字列から数値へ変換することもできます．<br>
 数値から文字列への変換は write 文で行います．<br>
-[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することもできます．<br>
+大きな数で正確な演算結果が必要な場合は[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することをおすすめします．<br>
 多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
 C で簡単に記述できます．<br>
 
