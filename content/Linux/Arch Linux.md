@@ -218,37 +218,31 @@ $ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
 
 ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
-pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64-bit 版の TeX Live 2013/Arch Linux で動作します．<br>
-pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定してください．<br>
-
-```
-$ mkdir pxdvi
-$ cd pxdvi
-$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz
-$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz
-$ tar xvf pxdvi.tar.xz
-$ tar xvf pxdvi.x86_64-linux.tar.xz
-$ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin
-$ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi
-$ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi
-$ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
-$ sudo mkdir -p /usr/share/texmf-local/web2c
-$ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
-```
-
-/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
-
-```
-% pxdvi
-XDVIINPUTS = /usr/share/texmf-dist/pxdvi
-```
-
-platex で処理された DVI ファイルが表示できます．<br>
-
-```
-$ pxdvi -watchfile 1 hoge.dvi &
-```
-
+<!-- pxdvi は tlptexliveリポジトリの pxdvi-xaw が 64-bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
+<!-- pxdvi が必要な人は tlptexliveリポジトリから pxdvi をダウンロード・展開して pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定してください．~ -->
+<!--  -->
+<!-- $ mkdir pxdvi -->
+<!-- $ cd pxdvi -->
+<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz -->
+<!-- $ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz -->
+<!-- $ tar xvf pxdvi.tar.xz -->
+<!-- $ tar xvf pxdvi.x86_64-linux.tar.xz -->
+<!-- $ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin -->
+<!-- $ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi -->
+<!-- $ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi -->
+<!-- $ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi -->
+<!-- $ sudo mkdir -p /usr/share/texmf-local/web2c -->
+<!-- $ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c -->
+<!--  -->
+<!-- /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．~ -->
+<!--  -->
+<!-- % pxdvi -->
+<!-- XDVIINPUTS = /usr/share/texmf-dist/pxdvi -->
+<!--  -->
+<!-- platex で処理された DVI ファイルが表示できます．~ -->
+<!--  -->
+<!-- $ pxdvi -watchfile 1 hoge.dvi & -->
+<!--  -->
 <!-- VineSeed の pxdvi-motif も pxdvi-xaw と同様に 64-bit 版の TeX Live 2013/Arch Linux で動作します．~ -->
 <!--  -->
 <!-- $ mkdir vine -->
