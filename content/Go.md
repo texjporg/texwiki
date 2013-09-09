@@ -14,3 +14,4 @@ pukiwiki: "Go"
 - [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
 - [http://go.shibu.jp/](http://go.shibu.jp/)
 - [http://ryochack.hatenablog.com/archive/category/golang](http://ryochack.hatenablog.com/archive/category/golang)
+- [http://golang.org/src/pkg/syscall/syscall_windows.go](http://golang.org/src/pkg/syscall/syscall_windows.go)
