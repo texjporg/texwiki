@@ -25,7 +25,7 @@ pukiwiki: "C"
 - [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
 - [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
 
-## C から Fortran の関数を呼び出し {#x01bff9e}
+## C から Fortran の関数を呼び出す {#x01bff9e}
 
 Fortran の関数
 
@@ -45,6 +45,12 @@ end function f_sin
 ```
 
 ***
+
+```
+elemental pure function f_sin(x) result(y) bind(c, name='f_sin')
+```
+
+とするとエラーになります．<br>
 
 ```
 $ gfortran -c fsin.f90
