@@ -22,6 +22,75 @@ pukiwiki: "C"
 - [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
 - [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
 - [桂田研卒研ノート](http://www.math.meiji.ac.jp/~mk/labo/text/)
+- [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
+- [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
+
+## C から Fortran の関数を呼び出し {#x01bff9e}
+
+Fortran の関数
+
+***
+
+- fsin.f90
+
+***
+
+```
+pure function f_sin(x) result(y) bind(c, name='f_sin')
+    use, intrinsic :: iso_c_binding
+    real(kind=c_double), value :: x
+    real(kind=c_double) :: y
+    y = sin(x)
+end function f_sin
+```
+
+***
+
+```
+$ gfortran -c fsin.f90
+$ nm fsin.o
+00000000 b .bss
+00000000 d .data
+00000000 r .eh_frame
+00000000 r .rdata$zzz
+00000000 t .text
+00000000 T _f_sin
+         U _sin
+```
+
+C の関数
+
+***
+
+- sin.c
+
+***
+
+```
+#include <stdio.h>
+#include <math.h>
+
+extern double f_sin(double);
+
+int
+main(int argc, char** argv)
+{
+    double x = M_PI * 0.5;
+    printf("f_sin(%f) = %f\n", x, f_sin(x));
+    printf("sin(%f) = %f\n", x, sin(x));
+
+    return 0;
+}
+```
+
+***
+
+```
+$ gcc -o sin sin.c fsin.o
+$ ./sin
+f_sin(1.570796) = 1.000000
+sin(1.570796) = 1.000000
+```
 
 ## コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#w46fe110}
 
