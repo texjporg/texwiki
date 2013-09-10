@@ -38,11 +38,11 @@ C++ を参照．<br>
 
 D を参照．<br>
 
-### C# 版 {#de1b4851}
-
-C Sharp を参照．<br>
-
 ### VB 版 {#hc64ff38}
+
+Visual Basic を参照．<br>
+
+### C# 版 {#de1b4851}
 
 C Sharp を参照．<br>
 
