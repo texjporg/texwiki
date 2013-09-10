@@ -518,6 +518,8 @@ main(int argc, char** argv)
 
 ***
 
+<!-- ***cat ライクなコマンド [#s0a9990f] -->
+
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
 - [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
