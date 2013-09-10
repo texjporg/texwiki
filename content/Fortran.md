@@ -404,121 +404,73 @@ C の atoi 関数で文字列から数値へ変換することもできます．
 多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
 C で簡単に記述できます．<br>
 
+- C を参照．
+
+#### cat ライクなコマンド {#s0a9990f}
+
 ***
 
-- nsum.c
+- cat2.f90
 
 ***
 
 ```
-// vim: ts=4 sw=4 expandtab:
-// gcc -Wall -Ofast -march=native -std=c11 -static -o nsum nsum.c -lgmp
-// gcc -Wall -Ofast -march=native -std=c11 -static -DNSUM1 -o nsum nsum.c -lgmp
-#include <ctype.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <string.h>
-#include <gmp.h>
+program cat2
+    use, intrinsic :: iso_c_binding
+    use, intrinsic :: iso_fortran_env
+    implicit none
+    integer(kind=4) :: i
+    character(len=256) :: arg
+    character(len=65536) :: line
+    integer(kind=4) :: fno
+    integer(kind=4) :: ios
+    integer(kind=4) :: length
+    logical(kind=4) :: arg_exist
+    logical(kind=4) :: arg_open
 
-void usage(const char* restrict);
-bool valid_number(const char* restrict);
-void nsum1(const char* restrict);
-void nsum2(const char* restrict);
+    do i = 0, command_argument_count()
+        call get_command_argument(i, arg)
 
-void
-usage(const char* restrict s)
-{
-    fprintf(stderr, "usage: %s N ...\n", s);
-}
+        if (i /= 0) then
+            inquire(file=arg, exist=arg_exist)
+            if (.not. arg_exist .and. arg /= "-") then
+                write(unit=error_unit, fmt='(g0, g0, g0)') trim(arg), ": No such file or directory"
+                cycle
+            end if
+        end if
 
-bool
-valid_number(const char* restrict s)
-{
-    for (int i = 0; i < strlen(s); i++) {
-        if (!isdigit(s[i])) {
-            return false;
-        }
-    }
-    return true;
-}
+        if (command_argument_count() == 0 .or. arg == "-") then
+            read(unit=input_unit, fmt='(a)', advance='no', iostat=ios, size=length) line
+            if (ios < 0) then
+                write(unit=output_unit, fmt='(a)') line(1:length)
+                cycle
+            end if
+        else
+            if (i == 0) cycle
+            open(newunit=fno, file=arg, form='formatted', access='sequential', status='old', action='read')
+        end if
 
-void
-nsum1(const char* restrict s)
-{
-    mpz_t n;
-    mpz_t k;
-    mpz_t inc;
-    mpz_t arg;
-    mpz_init_set_str(inc, "1", 10);
-    mpz_init_set_str(k, "1", 10);
-    mpz_init_set_str(n, "0", 10);
-    mpz_init_set_str(arg, s, 10);
-    while (mpz_cmp(k, arg) <= 0) {
-        mpz_add(n, n, k);
-        mpz_add(k, k, inc);
-    }
-    gmp_printf("Sum from 1 to %Zd = %Zd\n", arg, n);
-    mpz_clear(arg);
-    mpz_clear(inc);
-    mpz_clear(k);
-    mpz_clear(n);
-}
+        do
+            read(unit=fno, fmt='(a)', advance='no', iostat=ios, size=length) line
+            if (ios < 0) then
+                write(unit=output_unit, fmt='(a, a)', advance='no') line(1:length), new_line('a')
+                cycle
+            else
+                exit
+            end if
+        end do
 
-void
-nsum2(const char* restrict s)
-{
-    mpq_t n;
-    mpq_t k;
-    mpq_t inc;
-    mpq_t arg;
-    mpq_init(n);
-    mpq_init(k);
-    mpq_init(inc);
-    mpq_init(arg);
-    mpq_set_str(inc, "1", 10);
-    mpq_set_str(k, "1/2", 10);
-    mpq_set_str(n, "0", 10);
-    mpq_set_str(arg, s, 10);
-    mpq_add(n, arg, inc);
-    mpq_mul(n, n, arg);
-    mpq_mul(n, n, k);
-    gmp_printf("Sum from 1 to %Qd = %Qd\n", arg, n);
-    mpq_clear(arg);
-    mpq_clear(inc);
-    mpq_clear(k);
-    mpq_clear(n);
-}
-
-int
-main(int argc, char** argv)
-{
-    void (*nsum)(const char* restrict);
-
-    if (argc < 2) {
-        usage(argv[0]);
-        return 2;
-    }
-
-#if defined (NSUM1)
-    nsum = nsum1;
-#else
-    nsum = nsum2;
-#endif
-
-    for (int i = 1; i < argc; i++) {
-        if (valid_number(argv[i]) == false) {
-            continue;
-        }
-        nsum(argv[i]);
-    }
-
-    return 0;
-}
+        if (arg /= "-") then
+            inquire(unit=fno, opened=arg_open)
+            if (arg_open) then
+                close(unit=fno)
+            end if
+        end if
+    end do
+end program cat2
 ```
 
 ***
-
-<!-- ***cat ライクなコマンド [#s0a9990f] -->
 
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
