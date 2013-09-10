@@ -270,33 +270,6 @@ $ sudo apt-get update
 $ sudo apt-get install acroread:i386 acroread-fonts-jpn
 ```
 
-なお、Adobe から供給されている [Adobe Reader](</Adobe Reader/>) 9.5.5 (Linux 版/英語版) の .deb パッケージと Adobe Reader 日本語フォントパック (Linux 版) を自力でインストールしたい、という場合は、以下のようにします．
-
-```
-$ sudo dpkg --add-architecture i386
-$ sudo apt-get install libgtk2.0-0:i386 libatk1.0-0:i386 libcairo2:i386 libgdk-pixbuf2.0-0:i386 libglib2.0-0:i386 libpango1.0-0:i386 libpixman-1-0:i386 libxcb-shm0:i386 libjasper1:i386 libpcre3:i386 libthai0:i386 libdatrie1:i386 gtk2-engines:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
-$ sudo dpkg -i --force-architecture AdbeRdr9.5.5-1_i386linux_enu.deb
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_jpn_i486-linux.tar.bz2
-$ tar xvf FontPack910_jpn_i486-linux.tar.bz2
-$ sudo JPNKIT/INSTALL
-$ sudo ln -fs ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Resource/CIDFont/KozGoPr6N-Medium.otf /opt/Adobe/Reader9/Resource/CIDFont/KozGoPr6N-Medium.otf
-```
-
-```
-ゴシック体が表示されない場合は
-$ rm -rf ~/.adobe
-を実行します
-```
-
-<!-- また、Adobe から供給されている [[Adobe Reader]] 9.4.2 (Linux 版/日本語版) をインストールする場合は以下のようにします． -->
-<!--  -->
-<!-- $ sudo dpkg - -add-architecture i386  -->
-<!-- $ sudo apt-get install libgtk2.0-0:i386 libatk1.0-0:i386 libcairo2:i386 libgdk-pixbuf2.0-0:i386 libglib2.0-0:i386 libpango1.0-0:i386 libpixman-1-0:i386 libxcb-shm0:i386 libjasper1:i386 libpcre3:i386 libthai0:i386 libdatrie1:i386 gtk2-engines:i386 -->
-<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/jpn/AdbeRdr9.4.2-1_i386linux_jpn.deb -->
-<!-- $ sudo dpkg -i - -force-architecture AdbeRdr9.4.2-1_i386linux_jpn.deb -->
-<!-- $ sudo ln -fs ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Resource/CIDFont/KozGoPr6N-Medium.otf /opt/Adobe/Reader9/Resource/CIDFont/KozGoPr6N-Medium.otf -->
-
 #### Wine を用いた Windows 版 Adobe Reader のインストール・実行 {#j0e5abe3}
 
 wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使う場合、保護モードを無効にしないとファイルが開けないようです．<br>
@@ -304,8 +277,8 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 ```
 $ sudo dpkg --add-architecture i386 
 $ sudo apt-get install wine-bin:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.03/ja_JP/AdbeRdr11003_ja_JP.exe
-$ wine AdbeRdr11003_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.04/ja_JP/AdbeRdr11004_ja_JP.exe
+$ wine AdbeRdr11004_ja_JP.exe
 $ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Reader/AcroRd32.exe
 ```
 
@@ -324,14 +297,6 @@ Adobe Reader の保護モード
 
 Linux 版の Adobe Reader では検索語のフィールドに日本語の直接入力ができませんでした (コピー&amp;ペーストによる日本語の入力・検索は可能です)。<br>
 Windows 版の Adobe Reader では日本語入力、検索、共に可能なようです (ただし日本語入力で表示される文字列は□で表示されたりすることがあるかもしれません)．<br>
-
-### 関連リンク {#la21311d}
-
-- [debian (amd64) に Adobe Reader をインストールする方法](http://d.hatena.ne.jp/pyopyopyo/20121004/p1)
-- [acroread 9.5.1-dmo6](http://hidenosuke.org/diary/?date=20120708#p02)
-- [Linux版Adobe Reader 9で日本語が表示できない問題の解決法](http://d.hatena.ne.jp/pyopyopyo/20090726/p1)
-- [Linux用の日本語版Adobe Readerは脆弱性が放置されてるのね](http://linux.ikoinoba.net/index.php?UID=1336916076)
-- [Adobe Reader 9.5.1 日本語版もどきをインストールしてみた](http://d.hatena.ne.jp/munepi/20120414/AdobeReader_jpn)
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#v9a89433}
 
