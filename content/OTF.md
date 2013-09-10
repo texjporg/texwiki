@@ -243,7 +243,7 @@ Adobe-Japan1-6 で追加された文字を使っています。コマンド処�
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
 そのためには OpenType フォントが必要です。
 
-#### Microsoft Windows NT 6.x系 (8.1, 8, 7, Vista) の場合 {#p413a15f}
+#### Microsoft Windows NT 6.x系 (8.1, 8, 7) の場合 {#p413a15f}
 
 とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
@@ -321,7 +321,7 @@ Linux/Solaris 版の Adobe Reader 9 に
 - KozGoPr6N-Medium.otf ［Adobe-Japan1-6 対応の日本語ゴシック体フォント］
 
 が附属していません。<br>
-Linux/Debian#Adobe Reader を参照してインストールすれば KozGoPr6N-Medium.otf も使用できます．<br>
+Adobe Reader (Windows 版/日本語版) をインストールしてシンボリックリンクを作成すれば KozGoPr6N-Medium.otf も使用できます．<br>
 
 <!-- 2002年9月に出た Adobe-Japan1-5 は，JIS X 0213:2000 （JIS 第3，第4水準）や -->
 <!-- 国語審議会報告に基づく印刷標準字体の文字を含む20,317グリフの文字セットです。 -->
