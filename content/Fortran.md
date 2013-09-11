@@ -9,6 +9,11 @@ pukiwiki: "Fortran"
 
 ## Fortran {#pbb06ff1}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
+
+## Fortran 2008, 2003, 95, 90 {#o355751c}
+
+- [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
     - [Fortran 2008 status](http://fortranwiki.org/fortran/show/Fortran+2008+status)
     - [Fortran 2003 status](http://fortranwiki.org/fortran/show/Fortran+2003+status)
@@ -55,6 +60,7 @@ pukiwiki: "Fortran"
 ### 処理系 {#xfad745a}
 
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
+    - [TS29113Status - GCC Wiki](http://gcc.gnu.org/wiki/TS29113Status)
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
     - [http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html](http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html)
@@ -70,6 +76,11 @@ pukiwiki: "Fortran"
 
 - [Eclipse](/Eclipse/)
     - [Photran](http://www.eclipse.org/photran/)
+- [Code::Blocks](http://www.codeblocks.org/)
+    - [Code::Blocks IDE for Fortran](http://darmar.vgtu.lt/)
+- [Emacs](/Emacs/)
+- [Vim](/Vim/)
+- [Notepad++](/Notepad++/)
 
 ### Fortran 2008 の使い方 {#r3bbac60}
 
@@ -425,18 +436,19 @@ program cat2
     integer(kind=4) :: fno
     integer(kind=4) :: ios
     integer(kind=4) :: length
-    logical(kind=4) :: arg_exist
-    logical(kind=4) :: arg_open
 
     do i = 0, command_argument_count()
         call get_command_argument(i, arg)
 
         if (i /= 0) then
-            inquire(file=arg, exist=arg_exist)
-            if (.not. arg_exist .and. arg /= "-") then
-                write(unit=error_unit, fmt='(g0, g0, g0)') trim(arg), ": No such file or directory"
-                cycle
-            end if
+            block
+                logical(kind=4) :: arg_exist
+                inquire(file=arg, exist=arg_exist)
+                if (.not. arg_exist .and. arg /= "-") then
+                    write(unit=error_unit, fmt='(g0, g0, g0)') trim(arg), ": No such file or directory"
+                    cycle
+                end if
+            end block
         end if
 
         if (command_argument_count() == 0 .or. arg == "-") then
@@ -461,10 +473,13 @@ program cat2
         end do
 
         if (arg /= "-") then
-            inquire(unit=fno, opened=arg_open)
-            if (arg_open) then
-                close(unit=fno)
-            end if
+            block
+                logical(kind=4) :: arg_open
+                inquire(unit=fno, opened=arg_open)
+                if (arg_open) then
+                    close(unit=fno)
+                end if
+            end block
         end if
     end do
 end program cat2
