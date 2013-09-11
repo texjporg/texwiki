@@ -24,6 +24,81 @@ pukiwiki: "TeXstudio/設定"
 
 ### ビルド {#cb495de1}
 
+#### ☐ 高度なオプションの表示 の場合 {#f13fa401}
+
+***
+
+<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+
+一般<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+
+コマンド<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+
+<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　　　</span><br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+
+キーボードショートカット<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+
+エディタ<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+
+構文の強調表示<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
+
+カスタム強調表示<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+
+コマンドの補完<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+
+文法<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+
+プレビュー<br>
+
+<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+
+SVN<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　☐ 高度なオプションの表示
+
+<br>
+
+***
+
+<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+ビルド &amp; 表示
+: DVI->PDFチェーン
+
+<!-- :既定のコンパイラ|LaTeX -->
+
+#### ☑ 高度なオプションの表示 の場合 {#x0fa4d02}
+
 ***
 
 <span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
@@ -103,9 +178,9 @@ SVN<br>
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 ビルド &amp; 表示
-: DVI->PDFチェーン (☐ 高度なオプションの表示 の場合)<br>txs:///dvi-pdf-chain (☑ 高度なオプションの表示 の場合)
+: txs:///dvi-pdf-chain
 
-<!-- :既定のコンパイラ|LaTeX (☐ 高度なオプションの表示 の場合)&br;txs:///latex (☑ 高度なオプションの表示 の場合) -->
+<!-- :既定のコンパイラ|txs:///latex (☑ 高度なオプションの表示 の場合) -->
 
 ***
 
