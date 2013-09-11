@@ -696,8 +696,8 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 
 ## TikZ 対応エディタ {#ta16acba}
 
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TikzEdt](http://www.tikzedt.org/)
 - [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入、メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
