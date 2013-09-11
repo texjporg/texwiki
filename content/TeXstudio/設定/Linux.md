@@ -13,59 +13,59 @@ pukiwiki: "TeXstudio/設定/Linux"
 
 ***
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
 一般<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
 <span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
 ビルド<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
 キーボードショートカット<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
 メニュー<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
 ツールバー<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
 エディタ<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
 詳細なエディタ設定<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
 構文の強調表示<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
 カスタム強調表示<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
 コマンドの補完<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
 文法<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
 プレビュー<br>
 
-<img src="http://svn.code.sf.net/p/texstudio/code/trunk/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
 SVN<br>
 
