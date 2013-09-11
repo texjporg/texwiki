@@ -30,6 +30,7 @@ pukiwiki: "Fortran"
 - [Fortran日記](http://fortran.cscblog.jp/)
 - [なんとなく始めたブログ: fortran](http://sak12.blogspot.jp/search/label/fortran)
 - [Fortrantips](http://pmt.sakura.ne.jp/wiki/index.php?title=Fortrantips)
+- [Fortranで水理計算](http://fortran.godo-tys.jp/dokuwiki/fortran)
 - [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
@@ -179,11 +180,26 @@ end program hello_world
 ***
 
 ```
+module c_string
+    use, intrinsic :: iso_c_binding
+    implicit none
+    private
+    public :: c_memset
+    interface
+        subroutine c_memset(buf, ch, n) bind(c, name='memset')
+            import
+            type(c_ptr), value :: buf
+            integer(kind=c_int), value :: ch
+            integer(kind=c_size_t), value :: n
+        end subroutine c_memset
+    end interface
+end module c_string
+
 module c_windows
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_MessageBoxW
+    public :: c_MessageBoxW, c_MultiByteToWideChar
     interface
         subroutine c_MessageBoxW(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxW')
             import
@@ -193,16 +209,31 @@ module c_windows
             type(c_ptr), value :: lpCaption
             integer(kind=c_int), value :: uType
         end subroutine c_MessageBoxW
+        function c_MultiByteToWideChar(codePage, dwFlags, lpMultiByteStr, cchMultiByte, lpWideCharStr, cchWideChar) &
+                & result(wideCharBufSize) bind(c, name='MultiByteToWideChar')
+            import
+            !gcc$ attributes stdcall :: c_MultiByteToWideChar
+            integer(kind=c_int), value :: codePage
+            integer(kind=c_int), value :: dwFlags
+            character(kind=c_char), intent(in) :: lpMultiByteStr
+            integer(kind=c_int), value :: cchMultiByte
+            type(c_ptr), value :: lpWideCharStr
+            integer(kind=c_int), value :: cchWideChar
+            integer(kind=c_int) :: wideCharBufSize
+        end function c_MultiByteToWideChar
     end interface
 end module c_windows
 
 program hello_world
     use, intrinsic :: iso_c_binding
+    use c_string
     use c_windows
     implicit none
-    integer(kind=1), dimension(1:24), target :: hello_world_wchar = &
-        & (/72, 0, 101, 0, 108, 0, 108, 0, 111, 0, 32, 0, &
-        &   87, 0, 111, 0, 114, 0, 108, 0, 100, 0,  0, 0/)! "Hello World" + "\0"
+    character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
+    integer(kind=1), dimension(1:2*len(msg)), target :: hello_world_wchar
+    integer(kind=c_int) :: bufSize
+    call c_memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
+    bufSize = c_MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
     call c_MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
 end program hello_world
 ```
