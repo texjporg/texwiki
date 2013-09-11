@@ -111,7 +111,7 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 ```
 program hello_world
     implicit none
-    print '(g0)', "Hello World"
+    print '(*(g0))', "Hello World"
 end program hello_world
 ```
 
@@ -121,7 +121,7 @@ end program hello_world
 program hello_world
     use, intrinsic :: iso_fortran_env
     implicit none
-    write(unit=output_unit, fmt='(g0)') "Hello World"
+    write(unit=output_unit, fmt='(*(g0))') "Hello World"
 end program hello_world
 ```
 
@@ -243,8 +243,8 @@ end program hello_world
 GNU Fortran 4.8.1 で動作確認しています．<br>
 データの出力は print 文や write 文で行います．<br>
 g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
-print 文や write 文でフォーマットに &#x2a; を指定して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
-gfortran と ifort で出力フォーマットが異なるのを回避したい場合は &#x2a; を使用せずに書式指定してください．<br>
+print 文や write 文でフォーマットに &#x2a; のみを指定して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
+gfortran と ifort で出力フォーマットが異なる場合は書式指定してください．<br>
 C の puts 関数や Windows API の MessageBox 関数を呼び出して出力することもできます．<br>
 Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
 Fortran はデフォルトでは参照渡しなので C の関数に値渡しをしたい場合は仮引数に value 属性を追加する必要があります．<br>
@@ -279,7 +279,7 @@ MinGW の gfortran でビルドしたバイナリで
 program sum_from_1_to_100
     implicit none
     integer(kind=4) :: i
-    print '(g0, g0)', "Sum from 1 to 100 = ", sum((/(i, i = 1, 100)/))
+    print '(*(g0))', "Sum from 1 to 100 = ", sum((/(i, i = 1, 100)/))
 end program sum_from_1_to_100
 ```
 
@@ -288,7 +288,7 @@ end program sum_from_1_to_100
 ```
 program sum_from_1_to_100
     implicit none
-    print '(g0, g0)', "Sum from 1 to 100 = ", int(100.0_8*(100.0_8+1.0_8)*0.5_8, kind=8)
+    print '(*(g0))', "Sum from 1 to 100 = ", int(100.0_8*(100.0_8+1.0_8)*0.5_8, kind=8)
 end program sum_from_1_to_100
 ```
 
@@ -326,7 +326,7 @@ program sum_from_1_to_n
             cycle
         end if
 
-        write(unit=arg_length_format, fmt='(g0)') len_trim(arg)
+        write(unit=arg_length_format, fmt='(*(g0))') len_trim(arg)
         read(unit=arg, fmt='(i' // trim(arg_length_format) // ')', iostat=ios) n
 
         if (ios /= 0) then
@@ -338,7 +338,7 @@ program sum_from_1_to_n
                 integer(kind=4), dimension(:), allocatable :: n_array_4
                 allocate(n_array_4(1:n))
                 forall(j = 1:n) n_array_4(j:j) = j
-                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_4)
+                print '(*(g0))', "Sum from 1 to ", n, " = ", sum(n_array_4)
                 deallocate(n_array_4)
             end block
         else if (n >= 65536 .and. n <= huge(n)) then
@@ -346,7 +346,7 @@ program sum_from_1_to_n
                 integer(kind=8), dimension(:), allocatable :: n_array_8
                 allocate(n_array_8(1:n))
                 forall(j = 1:n) n_array_8(j:j) = j
-                print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", sum(n_array_8)
+                print '(*(g0))', "Sum from 1 to ", n, " = ", sum(n_array_8)
                 deallocate(n_array_8)
             end block
         else
@@ -359,7 +359,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N ..."
+        write(unit=error_unit, fmt='(*(g0))') "usage: ", trim(cmd), " N ..."
     end subroutine usage
 
     function valid_number(arg) result(ok)
@@ -416,7 +416,7 @@ program sum_from_1_to_n
         n = c_atoi(trim(arg) // c_null_char)
 
         if (n > 0 .and. n <= huge(n)) then
-            print '(g0, g0, g0, g0)', "Sum from 1 to ", n, " = ", &
+            print '(*(g0))', "Sum from 1 to ", n, " = ", &
                 & int(real(n, kind=8)*(real(n, kind=8)+1.0_8)*0.5_8, kind=8)
         else
             cycle
@@ -428,7 +428,7 @@ contains
         character(len=256) :: cmd
 
         call get_command(cmd)
-        write(unit=error_unit, fmt='(g0, g0, g0)') "usage: ", trim(cmd), " N ..."
+        write(unit=error_unit, fmt='(*(g0))') "usage: ", trim(cmd), " N ..."
     end subroutine usage
 end program sum_from_1_to_n
 ```
@@ -476,7 +476,7 @@ program cat2
                 logical(kind=4) :: arg_exist
                 inquire(file=arg, exist=arg_exist)
                 if (.not. arg_exist .and. arg /= "-") then
-                    write(unit=error_unit, fmt='(g0, g0, g0)') trim(arg), ": No such file or directory"
+                    write(unit=error_unit, fmt='(*(g0))') trim(arg), ": No such file or directory"
                     cycle
                 end if
             end block
@@ -485,7 +485,7 @@ program cat2
         if (command_argument_count() == 0 .or. arg == "-") then
             read(unit=input_unit, fmt='(a)', advance='no', iostat=ios, size=length) line
             if (ios < 0) then
-                write(unit=output_unit, fmt='(a)') line(1:length)
+                write(unit=output_unit, fmt='(*(g0))') line(1:length)
                 cycle
             end if
         else
@@ -496,7 +496,7 @@ program cat2
         do
             read(unit=fno, fmt='(a)', advance='no', iostat=ios, size=length) line
             if (ios < 0) then
-                write(unit=output_unit, fmt='(a, a)', advance='no') line(1:length), new_line('a')
+                write(unit=output_unit, fmt='(*(g0))', advance='no') line(1:length), new_line('a')
                 cycle
             else
                 exit
