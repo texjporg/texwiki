@@ -19,7 +19,7 @@ pukiwiki: "Texmaker"
 ## Texmaker とは {#y02c99e4}
 
 Texmaker は，LaTeX エディタ (統合環境) です．<br>
-[TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) と同様，組み込みの PDF ビューアに対して SyncTeX がサポートされています．<br>
+[TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) と同様，組み込みの PDF ビューアに対して SyncTeX がサポートされています．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
