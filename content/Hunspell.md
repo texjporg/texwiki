@@ -16,8 +16,8 @@ Hunspell はスペルチェッカーです．<br>
 
 以下の統合環境・エディタで使用されています．
 
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [LyX](/LyX/)
 - [TeXnicCenter](/TeXnicCenter/)
