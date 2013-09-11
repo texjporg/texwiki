@@ -7,7 +7,7 @@ pukiwiki: "C Sharp"
 
 # C Sharp
 
-## C#, VB {#j3a00665}
+## C# {#j3a00665}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/200px-C_Sharp_wordmark.svg.png" alt="C#" style="float:right">
 
