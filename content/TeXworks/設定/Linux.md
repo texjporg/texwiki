@@ -21,21 +21,33 @@ pukiwiki: "TeXworks/設定/Linux"
 
 #### pdfpLaTeX {#ed42a6c2}
 
-pdfplatex (シェルスクリプト) を作成します．
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
 
 ***
 
-- pdfplatex
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　プログラム:　 <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
 
 ***
 
-```
-#!/bin/sh
-platex -synctex=1 "$1" && \
-dvipdfmx "`basename "$1" .tex`"
-```
+pdfplatex (シェルスクリプト) を作成しても OK です．
 
-***
+- Bash を参照．
 
 IPAexフォントを埋め込む場合は
 
@@ -86,49 +98,11 @@ $ sudo cp -p pdfplatex /usr/local/bin
 
 ***
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>pdfpLaTeX</ins><br>
-　　プログラム:　 <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
 #### pdfpLaTeX2 {#qcbb3b20}
 
 pdfplatex2 (シェルスクリプト) を作成します．
 
-***
-
-- pdfplatex2
-
-***
-
-```
-#!/bin/sh
-platex -synctex=1 "$1" && \
-dvips -Ppdf -z -f "`basename "$1" .tex`.dvi" | \
-convbkmk -g > "`basename "$1" .tex`.ps" && \
-ps2pdf "`basename "$1" .tex`.ps"
-```
-
-***
+- Bash を参照．
 
 chmod で実行権限を付加します．
 
@@ -173,21 +147,32 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 
 #### pdfupLaTeX {#h6d8b747}
 
-pdfuplatex (シェルスクリプト) を作成します．
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
 
 ***
 
-- pdfuplatex
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　プログラム:　 <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
 
 ***
 
-```
-#!/bin/sh
-uplatex -synctex=1 "$1" && \
-dvipdfmx "`basename "$1" .tex`"
-```
+pdfuplatex (シェルスクリプト) を作成しても OK です．
 
-***
+- Bash を参照．
 
 IPAexフォントを埋め込む場合は
 
@@ -238,48 +223,11 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 
 ***
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>pdfupLaTeX</ins><br>
-　　プログラム:　 <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-u</ins><br>
-　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
 #### pdfupLaTeX2 {#f387d242}
 
 pdfuplatex2 (シェルスクリプト) を作成します．
 
-***
-
-- pdfuplatex2
-
-***
-
-```
-#!/bin/sh
-uplatex -synctex=1 "$1" && \
-dvips -Ppdf -z -f "`basename "$1" .tex`.dvi" | \
-convbkmk -u > "`basename "$1" .tex`.ps" && \
-ps2pdf "`basename "$1" .tex`.ps"
-```
-
-***
+- Bash を参照．
 
 chmod で実行権限を付加します．
 
