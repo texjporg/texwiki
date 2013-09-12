@@ -9,6 +9,12 @@ pukiwiki: "D"
 
 ## D {#kd5e7295}
 
+<img src="http://dlang.org/images/d3.png" alt="D" style="float:right">
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## D 2.0 {#m0ebe189}
+
 - [http://dlang.org/](http://dlang.org/)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
