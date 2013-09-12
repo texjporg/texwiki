@@ -13,7 +13,7 @@ pukiwiki: "Fortran"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Fortran 2008, 2003, 95, 90 {#o355751c}
+## Fortran 2008, Fortran 2003, Fortran 95, Fortran 90 {#o355751c}
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
