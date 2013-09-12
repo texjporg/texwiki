@@ -11,6 +11,10 @@ pukiwiki: "Haskell"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/200px-Haskell-Logo.svg.png" alt="Haskell" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Haskell 2010 {#j02438c3}
+
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
