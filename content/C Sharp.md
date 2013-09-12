@@ -9,9 +9,11 @@ pukiwiki: "C Sharp"
 
 ## C# {#j3a00665}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/200px-C_Sharp_wordmark.svg.png" alt="C#" style="float:right">
 
-## C# {#h89884a4}
+## C# 5.0, C# 4.0 {#h89884a4}
 
 - [http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx)
