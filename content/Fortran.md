@@ -11,6 +11,8 @@ pukiwiki: "Fortran"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## Fortran 2008, 2003, 95, 90 {#o355751c}
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
@@ -58,6 +60,7 @@ pukiwiki: "Fortran"
 - [Fortran 90 with Excel – gfortran example](http://sukhbinder.wordpress.com/2010/07/20/fortran-90-with-excel-gfortran-example/)
 - [using gfortran to call windows api functions](http://compgroups.net/comp.lang.fortran/using-gfortran-to-call-windows-api-function/226148)
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
+- [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
 
 ### 処理系 {#xfad745a}
@@ -77,6 +80,10 @@ pukiwiki: "Fortran"
 
 ### IDE・エディタ {#xe73a6d2}
 
+[http://fortranwiki.org/fortran/show/Source+code+editors](http://fortranwiki.org/fortran/show/Source+code+editors) を参照．<br>
+
+#### フリーソフトウェア (オープンソースソフトウェア) {#yb3ceb92}
+
 - [Eclipse](/Eclipse/)
     - [Photran](http://www.eclipse.org/photran/)
 - [Code::Blocks](http://www.codeblocks.org/)
@@ -84,6 +91,8 @@ pukiwiki: "Fortran"
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
+- [gedit](/gedit/)
+- [Geany](/Geany/)
 
 ### Fortran 2008 の使い方 {#r3bbac60}
 
