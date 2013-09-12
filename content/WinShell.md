@@ -133,10 +133,10 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 
 UTF-8 を使用したい方は
 
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
-- [LyX](/LyX/)
+- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
+- [LyX](/LyX/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
