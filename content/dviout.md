@@ -57,7 +57,7 @@ dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
 
 ### ChangeLog {#r5124b5a}
 
-- [http://tug.org/svn/dviout/](http://tug.org/svn/dviout/)
+- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
     - [log](http://tug.org/svn/dviout/trunk/?view=log)
 
 ## 不具合 {#ufbeded4}
@@ -97,7 +97,6 @@ dviout を管理者として実行した場合はこのエラーは発生しな�
 ### TeX Live の場合 {#se2d51a5}
 
 TeX Live の Win32 版には標準で dviout が含まれています．<br>
-TeX Live 2013 であれば C:\texlive\2013\tlpkg\dviout 以下に配置されています．<br>
 
 ### W32TeX の場合 {#r4cfc9ce}
 
@@ -477,28 +476,6 @@ dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化され�
 （ファイルは消えません）。<br>
 この場合には再度 C:\w32tex\dviout\dviout.exe をダブルクリックして実行し，最初から設定が始められます。
 
-### 確認 {#h44c2d6a}
-
-うまくいったかどうか確かめましょう。<br>
-まず，[TeX入門/最初の例](</TeX入門/最初の例/>) の ex1.tex をタイプセットします。<br>
-
-```
-platex ex1
-```
-
-ex1.dvi が出力されたら dviout の \[File\]-\[Open...\] から ex1.dvi を選択して開きます。<br>
-
-初回起動時にはここでフォント生成が始まりますが，数秒待つと文字が現れます。<br>
-
-ここで “Cannot resolve Fonts” というエラーが出るのは，TeX がうまく
-インストールされていないか，TeX の環境変数が間違っているか，
-あるいは dviout インストール時に入力した情報が間違っているためです。
-もう一度これらを見直してください。<br>
-
-TXフォントなどの Type 1 フォントを使った
-文書だけで “Cannot resolve Fonts” が出る場合には，[Ghostscript](/Ghostscript/) の
-インストールまたは設定が失敗している可能性が考えられます。<br>
-
 ## プレビューの自動更新 {#t2d3346c}
 
 dviout には DVI ファイルが更新されると自動的に表示を更新する機能があります．<br>
@@ -531,55 +508,17 @@ PDF の作成がうまくいかない場合は [TeXworks](/TeXworks/) を使用�
 
 ***
 
-### Acrobat Distiller {#bbe5941f}
+### dvips + ps2pdf.bat (Ghostscript) {#bbe5941f}
 
-PDF ファイルを作成する場合は dviout から Distiller (Adobe PDF) プリンターに印刷することも可能です。<br>
-ただし，欧文フォントや EPS グラフィックがギザギザになります。<br>
-欧文フォントがギザギザになる問題は，Computer Modern と AMS フォントに限れば，
-[BaKoMa TrueType フォント](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
-をインストールすれば解決できます。<br>
-[TX フォント](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TXFonts) など PostScript Type 1 フォントのギザギザは解消できません。<br>
-TrueType の Times New Roman，Arial，Courier New であれば，乙部さんの
-「[書体拡張プロジェクト](http://argent.shinshu-u.ac.jp/otobe/tex/packages/fontproj.html)」
-に書かれている方法できれいに出力できます。<br>
-
-dviout から Distiller 経由で
-PDF を作るには，Computer Modern フォントの場合には BaKoMa TrueType
-フォント[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)
-を Windows にインストールすることによって，ビットマップでない
-本来の美しい文字になります（TexPoint をインストールすると一部
-古い BaKoMa フォントで上書きされてしまうようですのでご注意ください）。<br>
-ただ，TX フォントなどの Type 1 フォントは
-やはりビットマップになります。
-
-[TeXWiki:PDFの作り方](</PDFの作り方/>) もご覧ください。<br>
+dvipdfmx 以外では dvips + ps2pdf.bat (Ghostscript) でも PDF ファイルを作成することが可能です。<br>
 
 ## PostScript (EPS) 画像 {#ib983531}
 
 [Ghostscript](/Ghostscript/) をインストールして
 dviout で Ghostscript を使うように設定すれば，[PostScript](/PostScript/) 画像を含む
-DVI ファイルを表示・印刷することができます。
-
-試しに C:\w32tex\dviout\GRAPHIC\PS\ フォルダー（ディレクトリ）にある
-epsfdoc.tex をタイプセットして dviout で表示してみましょう。
-
-このサンプルでは Ghostscript 附属の golfer.eps，tiger.eps を使っています。<br>
-golfer.eps はモノクロ，tiger.eps はカラーの画像サンプルです。<br>
-epsfdoc.tex をタイプセットするには，golfer.eps，tiger.eps を Ghostscript の examples\ フォルダー (C:\gs\gs9.10\examples\ または C:\Program Files\gs\gs9.10\examples\\) から
-C:\w32tex\dviout\GRAPHIC\PS\ フォルダーにコピーしてください。
-
-Windows PowerShell またはコマンド プロンプトから epsfdoc.tex のタイプセットを行います。
-
-```
-cd c:\w32tex\dviout\GRAPHIC\PS
-platex epsfdoc
-```
-
-dviout で epsfdoc.dvi を開くと，3ページ目の下に虎の絵が表示されます。<br>
-デフォルトの設定ではカラーのはずの虎がモノクロで表示されます。<br>
-dviout の \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[GIF\] で
+DVI ファイルを表示・印刷することができます。<br>
+モノクロで表示されてしまう場合は dviout の \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[GIF\] で
 raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] をクリックすればフルカラーになります。<br>
-必要であればきちんと印刷できるかどうか試してみてください。<br>
 
 ```
  \usepackage[dvips]{hyperref}
@@ -615,8 +554,7 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 ***
 
 dviout の印刷は Windows に依存しており，特に画像の印刷は Windows のバージョンによってトラブルが生じることがあります。<br>
-\[Option\] → \[Setup Parameters\] → \[Graphic\] で “auto mode (p2)” となっているところを変えるとうまくいくことがあるようです。<br>
-dviout で印刷がうまくいかない場合は dvipdfmx または dvips + Ghostscript (ps2pdf) で PDF ファイルに変換して印刷してみてください。<br>
+dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2pdf.bat (Ghostscript) で PDF ファイルに変換して印刷してみてください。<br>
 
 ## EPS 以外の画像を使うには {#z97e7e7b}
 
