@@ -35,6 +35,8 @@ pukiwiki: "C"
 - [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
 - [Microsoft Visual Studio Express](http://www.microsoft.com/japan/msdn/vstudio/express/)
+    - [C99 library support in Visual Studio 2013](http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx)
+- [TCC : Tiny C Compiler](http://bellard.org/tcc/)
 
 ### ライブラリ・フレームワーク {#w5f859a1}
 
