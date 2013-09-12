@@ -11,6 +11,10 @@ pukiwiki: "C"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/200px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png" alt="C" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## C11, C99, C89 {#k4c5d2ad}
+
 - [Wikipedia.ja:C言語](https://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
@@ -25,6 +29,29 @@ pukiwiki: "C"
 - [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
 - [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
 - [C言語機能の比較](http://www.6809.net/tenk/?C%E8%A8%80%E8%AA%9E%E6%A9%9F%E8%83%BD%E3%81%AE%E6%AF%94%E8%BC%83)
+
+### 処理系 {#d2633a16}
+
+- [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
+- ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
+- [Microsoft Visual Studio Express](http://www.microsoft.com/japan/msdn/vstudio/express/)
+
+### ライブラリ・フレームワーク {#w5f859a1}
+
+- [GTK+](http://www.gtk.org/)
+
+### IDE・エディタ {#vaa4f864}
+
+#### フリーソフトウェア (オープンソースソフトウェア) {#n4409bbb}
+
+- [Eclipse](/Eclipse/)
+    - [Eclipse CDT](http://www.eclipse.org/cdt/)
+- [Emacs](/Emacs/)
+- [Vim](/Vim/)
+- [Notepad++](/Notepad++/)
+- [サクラエディタ](</サクラエディタ/>)
+- [gedit](/gedit/)
+- [Geany](/Geany/)
 
 ## C から Fortran の関数を呼び出す {#x01bff9e}
 
