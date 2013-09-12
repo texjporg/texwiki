@@ -11,6 +11,10 @@ pukiwiki: "F Sharp"
 
 <img src="http://upload.wikimedia.org/wikipedia/en/9/93/FSharp_Logo.png" alt="F#" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## F# 3.1, F# 3.0 {#ff18d823}
+
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
 - [http://msdn.microsoft.com/ja-jp/library/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/dd233154.aspx)
