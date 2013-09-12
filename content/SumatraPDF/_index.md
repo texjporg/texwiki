@@ -74,8 +74,8 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
-- [Texmaker](/Texmaker/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/)
