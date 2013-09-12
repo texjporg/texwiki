@@ -38,13 +38,13 @@ upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてU
 
 ### インストール {#d62d0a5a}
 
-#### Windows {#sa412321}
-
-最新の[W32TeX](/W32TeX/)には [uptex-w32.tar.xz](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz) が含まれています。
-
 #### TeX Live {#mc80f714}
 
-[TeX Live](</TeX Live/>) 2012には upTeX が含まれています。
+[TeX Live](</TeX Live/>) 2012 以降には upTeX が含まれています。
+
+#### W32TeX {#sa412321}
+
+最新の[W32TeX](/W32TeX/)には [uptex-w32.tar.xz](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz) が含まれています。
 
 ### 最初の例 {#nea5a740}
 
@@ -131,7 +131,7 @@ jsarticle.clsでは、uplatexオプションを追加してください。
 
 ### dviware {#e548f906}
 
-[W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) 2012 以降に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
+[TeX Live](</TeX Live/>) 2012 以降, [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
@@ -272,7 +272,7 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 
 ### ヘブライ語 {#f3b6c860}
 
-[W32TeX](/W32TeX/), [TeX Live](</TeX Live/>)に含まれるuplatexコマンドは、[e-TeX](/e-TeX/)拡張を含んだe-upTeXをコンパイラとしているため、TeX-XeT機能が利用できます。
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれるuplatexコマンドは、[e-TeX](/e-TeX/)拡張を含んだe-upTeXをコンパイラとしているため、TeX-XeT機能が利用できます。
 ヘブライ文字ブロックの\kcatcode を15に設定することで、
 欧文LaTeXと同様、babelパッケージのhebrewオプションが利用出来ます。
 
