@@ -7,7 +7,7 @@ pukiwiki: "Java"
 
 # Java
 
-## Java, Scala {#m5391c84}
+## Java {#m5391c84}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Java_logo_and_wordmark.svg/200px-Java_logo_and_wordmark.svg.png" alt="Java" style="float:right">
 
