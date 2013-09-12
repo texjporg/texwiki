@@ -19,8 +19,10 @@ pukiwiki: "Fortran"
     - [Fortran 2003 status](http://fortranwiki.org/fortran/show/Fortran+2003+status)
 - [Fortran入門](http://www.nag-j.co.jp/fortran/)
 - [Fortran 2003入門](http://www.nag-j.co.jp/fortran/fortran2003/)
+- [Getting Started with the Intel® Fortran Composer XE 2013 SP1 for Linux\* OS](http://nf.nci.org.au/facilities/software/intel-ct/14.0.080/Documentation/en_US/get_started_lf.htm)
 - [インテル® Fortran Composer XE 2013 Linux\* 版入門](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/get_started_lf.htm)
-- [インテル® Fortran コンパイラー XE 13.0 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
+- [User and Reference Guide for the Intel® Fortran Compiler 14.0](http://nf.nci.org.au/facilities/software/intel-ct/14.0.080/Documentation/en_US/compiler_f/main_for/index.htm)
+- [インテル® Fortran コンパイラー XE 13.1 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
 - [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
 - [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
@@ -322,7 +324,7 @@ program sum_from_1_to_n
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
 
-        if (valid_number(arg) .eqv. .false.) then
+        if (.not. valid_number(arg)) then
             cycle
         end if
 
