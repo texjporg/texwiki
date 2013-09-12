@@ -64,6 +64,34 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　プログラム: <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+バッチファイルを作成しても OK です．<br>
+
 ■ TeX Live の場合
 
 pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
@@ -142,32 +170,6 @@ platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
 
 ***
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfpLaTeX</ins><br>
-　　プログラム: <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption -guess-input-enc -kanji=utf8</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
 #### pdfpLaTeX2 {#y6e650d6}
 
 pdfplatex2.bat を作成して pdfplatex2.bat で PDF ファイルを作成します．
@@ -229,6 +231,32 @@ ps2pdf.bat "%~n1.ps"
 
 #### pdfupLaTeX {#r7f9a2a4}
 
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+
+***
+
+<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　プログラム: <ins>ptex2pdf</ins><br>
+　　引数:　　　　<ins>-l</ins><br>
+　　　　　　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-ot</ins><br>
+　　　　　　　　　<ins>$synctexoption -no-guess-input-enc -kanji=utf8</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
+バッチファイルを作成しても OK です．<br>
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
 ■ TeX Live の場合
@@ -296,31 +324,6 @@ dvipdfmx "%~n1"
 <br>
 
 <br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定しても OK です．
-
-***
-
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>pdfupLaTeX</ins><br>
-　　プログラム: <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-u</ins><br>
-　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption -no-guess-input-enc -kanji=utf8</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
 
