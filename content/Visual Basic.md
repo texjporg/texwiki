@@ -9,6 +9,8 @@ pukiwiki: "Visual Basic"
 
 ## Visual Basic {#uaa6ccd6}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## VB {#oa25d360}
 
 - [http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx)
