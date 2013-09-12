@@ -13,10 +13,10 @@ pukiwiki: "iOS"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## TeX Live {#w97b9c35}
-
-- [TeX Live for iPhone](http://gamma-level.com/iphoneos/ports/texlive)
-- [How TeX made it to the iOS App Store - running on DOS, inside an emulator | Hacker News](http://news.ycombinator.com/item?id=4438047)
+<!-- *TeX Live [#w97b9c35] -->
+<!--  -->
+<!-- -[[TeX Live for iPhone:http://gamma-level.com/iphoneos/ports/texlive]] -->
+<!-- -[[How TeX made it to the iOS App Store - running on DOS, inside an emulator | Hacker News:http://news.ycombinator.com/item?id=4438047]] -->
 
 ## PDF ビューア {#cf5b731d}
 
