@@ -20,12 +20,11 @@ pukiwiki: "Android"
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
-- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate), [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal)
+- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate), [TeXPortal (TeXポータル)](https://play.google.com/store/apps/details?id=lah.texportal)
     - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
-    - [Android で LaTeX](http://d.hatena.ne.jp/kaikimiyoshi2/20130727/1374925927)
     - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
+    - [TeXポータル : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB), [TeXポータル を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB), [岩崎 隆盛/「TeXポータル」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB)
     - [TeXPortal : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeXPortal), [TeXPortal を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeXPortal), [岩崎 隆盛/「TeXPortal」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeXPortal)
-    - [TeXLive-Android (TeXAndroid)](https://github.com/anhoavu/TeXAndroid)
 
 ### TeX Live (Linux) {#rfcf69bf}
 
@@ -33,17 +32,18 @@ pukiwiki: "Android"
 
 ## PDF ビューア {#t5fdeba9}
 
-- [MuPDF](/MuPDF/)
-- [Mu++ PDFビューア](https://play.google.com/store/apps/details?id=com.artifex.tml2.mupdf)
-- [APV PDF Viewer](https://play.google.com/store/apps/details?id=cx.hell.android.pdfview)
-- [PDFView](https://play.google.com/store/apps/details?id=com.acadoid.pdfview)
-- [Adobe Reader](</Adobe Reader/>)
+- [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdfdemo)
+    - MuPDF ベースの派生版
+        - [PDFView](https://play.google.com/store/apps/details?id=com.acadoid.pdfview)
+        - [APV PDF Viewer](https://play.google.com/store/apps/details?id=cx.hell.android.pdfview)
+- [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
+- [Adobe Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert), [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
+- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert), [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
     - [anhoavu/TeXpert · GitHub](https://github.com/anhoavu/TeXpert)
 - [Emacs](/Emacs/)
     - [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
