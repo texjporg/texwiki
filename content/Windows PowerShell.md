@@ -136,6 +136,7 @@ Windows PowerShell のオープンソース実装．<br>
 - [Windows PowerShell](http://technet.microsoft.com/ja-jp/library/bb978526.aspx)
     - [Windows PowerShell コア](http://technet.microsoft.com/ja-jp/library/bb978525.aspx)
         - [Windows PowerShell Cmdlet のヘルプ トピック](http://technet.microsoft.com/ja-jp/library/dd347701.aspx)
+- [Windows PowerShell Blog - Site Home - MSDN Blogs](http://blogs.msdn.com/b/powershell/)
 - [winscript.jp](http://winscript.jp/)
 - [基礎知識 (Windows PowerShell)](http://ufcpp.net/study/powershell/basic.html)
 - [使う気が無い人向けのPowerShell入門](http://karino2.livejournal.com/69885.html)
