@@ -245,7 +245,7 @@ program hello_world
     integer(kind=c_int) :: bufSize
     call c_memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
     bufSize = c_MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
-    call c_MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
+    if (bufSize /= 0) call c_MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
 end program hello_world
 ```
 
@@ -529,7 +529,7 @@ end program cat2
 
 ***
 
-### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
+#### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
 - [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
 - [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
