@@ -185,9 +185,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12-rc1.tar.gz
-$ tar xvf cmake-2.8.12-rc1.tar.gz
-$ pushd cmake-2.8.12-rc1
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12-rc3.tar.gz
+$ tar xvf cmake-2.8.12-rc3.tar.gz
+$ pushd cmake-2.8.12-rc3
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -207,21 +207,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.3/libpng-1.6.3.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.4/libpng-1.6.4.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.3.tar.xz
-$ tar xvf libpng-1.6.3.tar.xz
-$ pushd libpng-1.6.3
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.4.tar.xz
+$ tar xvf libpng-1.6.4.tar.xz
+$ pushd libpng-1.6.4
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.3/libpng-1.6.3.tar.xz -->
-<!-- $ tar xvf libpng-1.6.3.tar.xz -->
-<!-- $ pushd libpng-1.6.3 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.4/libpng-1.6.4.tar.xz -->
+<!-- $ tar xvf libpng-1.6.4.tar.xz -->
+<!-- $ pushd libpng-1.6.4 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
