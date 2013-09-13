@@ -18,7 +18,7 @@ pukiwiki: "TeXworks/設定/Windows"
 #### 設定前 {#n2341fff}
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-pdfplatex.bat, pdfplatex2.bat, pdfuplatex.bat, pdfuplatex2.bat, latexmk-pdfpLaTeX, latexmk-pdfpLaTeX2, latexmk-pdfupLaTeX, latexmk-pdfupLaTeX2, latexmk-pdfLaTeX, latexmk-LuaLaTeX, latexmk-LuaJITLaTeX, latexmk-XeLaTeX, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
+ptex2pdf または pdfplatex.bat, pdfplatex2.bat, ptex2pdf または pdfuplatex.bat, pdfuplatex2.bat, latexmk-pdfpLaTeX, latexmk-pdfpLaTeX2, latexmk-pdfupLaTeX, latexmk-pdfupLaTeX2, latexmk-pdfLaTeX, latexmk-LuaLaTeX, latexmk-LuaJITLaTeX, latexmk-XeLaTeX, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -64,7 +64,15 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 #### pdfpLaTeX {#nb7beec9}
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
 
 ***
 
@@ -109,14 +117,6 @@ dvipdfmx "%~n1"
 ```
 
 ***
-
-IPAexフォントを埋め込む場合はコマンド プロンプトから
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．<br>
 
 ■ W32TeX の場合
 
@@ -231,7 +231,15 @@ ps2pdf.bat "%~n1.ps"
 
 #### pdfupLaTeX {#r7f9a2a4}
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
 
 ***
 
@@ -274,14 +282,6 @@ dvipdfmx "%~n1"
 ```
 
 ***
-
-IPAexフォントを埋め込む場合はコマンド プロンプトから
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．<br>
 
 ■ W32TeX の場合
 
