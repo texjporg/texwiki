@@ -184,7 +184,8 @@ program hello_world
     use, intrinsic :: iso_c_binding
     use c_windows
     implicit none
-    call c_MessageBoxA(c_null_ptr, "Hello World" // c_null_char, "Hello World" // c_null_char, 0)
+    character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
+    call c_MessageBoxA(c_null_ptr, msg, msg, 0)
 end program hello_world
 ```
 
@@ -535,3 +536,4 @@ end program cat2
 - [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
 - [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
+- [メモリマップドファイルを使ったデータの共有](http://rakasaka.fc2web.com/delphi/mapping.html)
