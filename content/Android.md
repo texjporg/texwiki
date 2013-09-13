@@ -50,19 +50,19 @@ pukiwiki: "Android"
 - [Vim](/Vim/)
     - [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
 - [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
-- [Jota Text Editor](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota)
 
 ### フリーウェア (無料) {#pfa162c4}
 
 - [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
-- [Portable LaTeX Editor](https://play.google.com/store/apps/details?id=manescu.latex.editor)
+- [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
 - [Jota+](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus)
 
 ### シェアウェア・製品 {#z7716277}
 
 - [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro)
+- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey)
 
 ## 関連リンク {#o413eb91}
