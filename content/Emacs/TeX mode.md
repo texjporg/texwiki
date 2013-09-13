@@ -165,6 +165,7 @@ C-x C-f ~/
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+MacPorts の TeX Live の場合は [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688) を参照してください．<br>
 
 ***
 
