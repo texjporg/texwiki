@@ -16,6 +16,7 @@ pukiwiki: "D"
 ## D 2.0 {#m0ebe189}
 
 - [http://dlang.org/](http://dlang.org/)
+    - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
 - [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
