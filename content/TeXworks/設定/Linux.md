@@ -21,7 +21,15 @@ pukiwiki: "TeXworks/設定/Linux"
 
 #### pdfpLaTeX {#ed42a6c2}
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
 
 ***
 
@@ -48,14 +56,6 @@ pukiwiki: "TeXworks/設定/Linux"
 pdfplatex (シェルスクリプト) を作成しても OK です．
 
 - Bash を参照．
-
-IPAexフォントを埋め込む場合は
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
 
 chmod で実行権限を付加します．
 
@@ -147,7 +147,15 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 
 #### pdfupLaTeX {#h6d8b747}
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
 
 ***
 
@@ -173,14 +181,6 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 pdfuplatex (シェルスクリプト) を作成しても OK です．
 
 - Bash を参照．
-
-IPAexフォントを埋め込む場合は
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
 
 chmod で実行権限を付加します．
 
