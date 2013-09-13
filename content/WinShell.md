@@ -59,13 +59,11 @@ WinShell 3.3.2.5 以降は Adobe Reader XI と Adobe Acrobat XI の DDE に対�
 
 ## ダウンロード {#j27d3bd6}
 
-### インストーラー版 {#d795df7b}
+### リリース版 {#d795df7b}
 
 - [Download : WinShell](http://www.winshell.org/modules/download/)
 
-### ポータブル版 {#w8b350cf}
-
-- [Download : WinShell](http://www.winshell.org/modules/download/)
+インストーラー版とポータブル版があります．<br>
 
 ### 日本語言語ファイル {#z273ed84}
 
@@ -145,84 +143,6 @@ UTF-8 を使用したい方は
 - [サクラエディタ](</サクラエディタ/>)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
-
-### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用するまたは対応する括弧の強調表示を OFF にする {#n7cba889}
-
-エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります．<br>
-例えば<br>
-
-```
-\chapter{日本語文字
-```
-
-と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．<br>
-
-エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．<br>
-文字化けを回避するには，UTF-8 を使用する方法があります．<br>
-ShiftJIS を使用したい場合は対応する括弧の強調表示のチェックをはずしてください．<br>
-
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　☑ 構文の強調表示(S)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
-
-<br>
-
-　　　　　　　　　　☐ 対応する括弧の強調表示(M) ← ShiftJIS の場合はチェックをはずす<br>
-
-<br>
-
-<br>
-
-<br>
-
-***
-
-#### WinShellにてカーソルを合わせると消える文字について {#hec85ef2}
-
-関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
-
-[http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156)
-
-LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。
-
-プロジェクトの ［目次］ において，\section に日本語を指定した場合に
-文字が表示されない不具合があります。<br>
-(追記：2009/12/21)<br>
-{}の中で使用すると不具合が起こる文字を以下の通りにまとめます。
-
-> <table>
-> <tbody>
-> <tr><td>2byte目</td><td>文字</td><td></td></tr>
-> <tr><td>0x7b</td><td>{</td><td>＋ ボ к 閲 顎 宮 鶏 砿 施 旬 須 捜 畜 怒 倍 府 本 養 几 嘴 學 悳 掉 桀 毬 炮 痣 窖 縵 艝 蛔 諚 轆 閔 驅 黠 垬 葈</td></tr>
-> <tr><td>0x7d</td><td>}</td><td>マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓</td></tr>
-> </tbody>
-> </table>
->
-
-1行目の文字群は2byte目が0x7b( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
-これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
-(追記：2010/01/20)<br>
-また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
-対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
-その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
-
-【参考】
-
-- [Shift_JISのダメ文字](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp)
-    - [ダメ文字一覧表](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp/table)
 
 ### Adobe Reader XI で PDF ファイルが表示できない → WinShell 3.3.2.5 以降にアップデートしてレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを AcroViewR11 に修正 {#s2ec7c9c}
 
@@ -330,6 +250,84 @@ DDE を使用しない場合は PDFView を以下のように設定します．
 　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
 
 ***
+
+### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用するまたは対応する括弧の強調表示を OFF にする {#n7cba889}
+
+エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります．<br>
+例えば<br>
+
+```
+\chapter{日本語文字
+```
+
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．<br>
+
+エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．<br>
+文字化けを回避するには，UTF-8 を使用する方法があります．<br>
+ShiftJIS を使用したい場合は対応する括弧の強調表示のチェックをはずしてください．<br>
+
+***
+
+<span style="color:Black;background-color:#ACDEFE;"><ins>　オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+
+　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　☑ 構文の強調表示(S)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　☐ 対応する括弧の強調表示(M) ← ShiftJIS の場合はチェックをはずす<br>
+
+<br>
+
+<br>
+
+<br>
+
+***
+
+#### WinShellにてカーソルを合わせると消える文字について {#hec85ef2}
+
+関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
+
+[http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156)
+
+LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。
+
+プロジェクトの ［目次］ において，\section に日本語を指定した場合に
+文字が表示されない不具合があります。<br>
+(追記：2009/12/21)<br>
+{}の中で使用すると不具合が起こる文字を以下の通りにまとめます。
+
+> <table>
+> <tbody>
+> <tr><td>2byte目</td><td>文字</td><td></td></tr>
+> <tr><td>0x7b</td><td>{</td><td>＋ ボ к 閲 顎 宮 鶏 砿 施 旬 須 捜 畜 怒 倍 府 本 養 几 嘴 學 悳 掉 桀 毬 炮 痣 窖 縵 艝 蛔 諚 轆 閔 驅 黠 垬 葈</td></tr>
+> <tr><td>0x7d</td><td>}</td><td>マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓</td></tr>
+> </tbody>
+> </table>
+>
+
+1行目の文字群は2byte目が0x7b( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
+これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
+(追記：2010/01/20)<br>
+また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
+対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
+その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
+
+【参考】
+
+- [Shift_JISのダメ文字](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp)
+    - [ダメ文字一覧表](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp/table)
 
 ## 設定 {#xe1b50b7}
 
