@@ -15,3 +15,4 @@ pukiwiki: "Go"
 - [http://go.shibu.jp/](http://go.shibu.jp/)
 - [http://ryochack.hatenablog.com/archive/category/golang](http://ryochack.hatenablog.com/archive/category/golang)
 - [http://golang.org/src/pkg/syscall/syscall_windows.go](http://golang.org/src/pkg/syscall/syscall_windows.go)
+- [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
