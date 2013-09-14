@@ -32,7 +32,10 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### リリース情報 {#da101e5c}
 
-[TeXnicCenter News](http://www.texniccenter.org/news) を参照．
+- [TeXnicCenter News](http://www.texniccenter.org/news)
+- [http://sourceforge.net/p/texniccenter/code/ref/default/tags/](http://sourceforge.net/p/texniccenter/code/ref/default/tags/)
+
+を参照．
 
 ### ChangeLog {#y2c9ad23}
 
