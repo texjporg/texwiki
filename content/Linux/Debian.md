@@ -155,7 +155,7 @@ $ sudo apt-get install python python3
 ## [Ruby](/Ruby/) <a id="ruby"></a> {#b036c19c}
 
 ```
-$ sudo apt-get install ruby1.9.3
+$ sudo apt-get install ruby2.0
 ```
 
 ## [Perl](/Perl/) <a id="perl"></a> {#t46cade6}
