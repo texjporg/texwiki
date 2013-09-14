@@ -52,25 +52,25 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 [Poppler - TeX Wiki](/Poppler/) を参照して MinGW, freetype2, libjpeg, libopenjpeg, zlib 等をインストールします．
 
-- [jbig2dec](http://jbig2dec.sourceforge.net/) をインストールします．
-
-<!-- $ curl -R -L -o jbig2dec.tar.gz "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz" -->
-<!-- $ tar xvf jbig2dec.tar.gz -->
-<!-- $ pushd jbig2dec* -->
-<!-- $ ./autogen.sh -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
+- [jbig2dec](http://git.ghostscript.com/?p=jbig2dec.git) をインストールします．
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/jbig2dec/jbig2dec-0.11.tar.xz
-$ tar xvf jbig2dec-0.11.tar.xz
-$ pushd jbig2dec-0.11
-$ configure --prefix=/mingw
+$ curl -R -L -o jbig2dec.tar.gz "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz"
+$ tar xvf jbig2dec.tar.gz
+$ pushd jbig2dec*
+$ ./autogen.sh
+$ ./configure --prefix=/mingw
 $ make
 $ make install
-$ popd
 ```
+
+<!-- $ curl -R -L -O http://download.sourceforge.net/jbig2dec/jbig2dec-0.11.tar.xz -->
+<!-- $ tar xvf jbig2dec-0.11.tar.xz -->
+<!-- $ pushd jbig2dec-0.11 -->
+<!-- $ configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
 
 - [MuPDF](http://www.mupdf.com/) をインストールします．
 
