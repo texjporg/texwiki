@@ -51,6 +51,12 @@ $ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
 $ sudo zypper install texmaker
 ```
 
+## [TeXworks](/TeXworks/) {#n8431fb2}
+
+```
+$ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
+```
+
 ## [LyX](/LyX/) {#uad65708}
 
 ```
@@ -58,12 +64,6 @@ $ sudo zypper install lyx
 ```
 
 文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
-## [TeXworks](/TeXworks/) {#n8431fb2}
-
-```
-$ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
-```
 
 ## LaTeXila {#r5f3b44b}
 
