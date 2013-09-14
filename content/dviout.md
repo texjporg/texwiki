@@ -49,7 +49,7 @@ Expat License については
 dviout 3.18.3 ALPHA 5 以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
 についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
 問題を持っていました。<br>
-最新版の dviout 3.18.4 は実質的に CTAN にある
+最新版の dviout 3.18.4 は実質的に
 dviout3183a6-inst-20111008.zip と同じものであり，ここではこれらの点が
 訂正されています。<br>
 dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
@@ -101,6 +101,7 @@ TeX Live の Win32 版には標準で dviout が含まれています．<br>
 ### W32TeX の場合 {#r4cfc9ce}
 
 W32TeX には dviout が含まれていないので dviout for Windows の最新の安定版をダウンロードします．<br>
+TeX インストーラ 3 で，dviout をインストールするとデフォルトでは C:\w32tex\dviout にインストールされます．<br>
 
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
     （安定版）
@@ -143,7 +144,6 @@ tex318w.zip ファイルを右クリックします。<br>
 
 \[名前の変更(M)\] を選択して dviout という名前のフォルダー名に変更します。<br>
 dviout フォルダーを C:\w32tex (W32TeX をインストールしたフォルダー) に移動させます。<br>
-TeX インストーラ 3 で，dviout をインストールするとデフォルトでは C:\w32tex\dviout にインストールされます．<br>
 dviout フォルダーの dviout.exe を右クリックします。<br>
 
 ***
@@ -291,8 +291,9 @@ TEXPK:<br>
 
 ***
 
-と言ってくるので \[はい(Y)\] をクリックします。<br>
-そうすれば，次のような標準値が入ります。<br>
+と言ってきます。<br>
+TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
+そして，次のような標準値を手動で入力します。<br>
 W32TeX \[2013/04/08\] 以降は TEXROOT の値に C:\w32tex\share\texmf-dist\fonts を指定してください。<br>
 
 ***
@@ -351,9 +352,9 @@ TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tf
 
 ***
 
-と聞いてきますので， \[はい(Y)\] をクリックします。<br>
-ここで TeX がインストールされていないと失敗します。<br>
-W32TeX がインストールされていれば次のように入るはずです。<br>
+と聞いてきます。<br>
+TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
+そして，次のような値を手動で入力します。<br>
 
 ***
 
@@ -362,7 +363,7 @@ W32TeX がインストールされていれば次のように入るはずです�
 　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
 　　 ☑ Register dviout on Windows's menu: Start->Program<br>
 　　 For font generation on demand, push \[gen:\] to set it<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
 　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
@@ -370,7 +371,7 @@ W32TeX がインストールされていれば次のように入るはずです�
 ***
 
 ```
-`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s
+`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s または `C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s
 ```
 
 この頭に入っているのはバッククォート (\`) です。
@@ -378,7 +379,7 @@ W32TeX がインストールされていれば次のように入るはずです�
 TeX や Ghostscript をネットワークドライブにインストールしてある場合は，
 \[gen:\] と \[gsx:\] はボタンを押しても自動では入りません。<br>
 手で打ち込む必要があります。<br>
-[Ghostscript](/Ghostscript/) がインストールされていれば，\[gsx:\]をクリックします。<br>
+\[gsx:\]をクリックします。<br>
 
 ***
 
@@ -398,9 +399,9 @@ TeX や Ghostscript をネットワークドライブにインストールして
 
 ***
 
-と聞いてきますので， \[はい(Y)\] をクリックします。<br>
-すると，例えば次のように入ります（環境やバージョンによって違いがあります）。<br>
-■ Ghostscript を C:\gs\gs9.10 にインストールした場合
+と聞いてきます。<br>
+TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
+そして，次のような値を手動で入力します。<br>
 
 ***
 
@@ -409,35 +410,15 @@ TeX や Ghostscript をネットワークドライブにインストールして
 　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
 　　 ☑ Register dviout on Windows's menu: Start->Program<br>
 　　 For font generation on demand, push \[gen:\] to set it<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin64c.exe</ins><br>
+　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\w32tex\bin\rungs.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\PROGRA~1\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\w32tex\bin64\rungs.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin64c.exe</ins> または <ins>C:\PROGRA~1\gs\gs9.10\bin\gswin64c.exe</ins><br>
 　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
 
 ***
 
 ```
-C:\gs\gs9.10\bin\gswin32c.exe または C:\gs\gs9.10\bin\gswin64c.exe
-```
-
-■ Ghostscript を C:\Program Files\gs\gs9.10 にインストールした場合
-
-***
-
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
-　　 ☑ Register dviout on Windows's menu: Start->Program<br>
-　　 For font generation on demand, push \[gen:\] to set it<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
-　　 For PostScript, push \[gsx:\] to set Ghostscript<br>
-　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span>　　<ins>C:\PROGRA~1\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\PROGRA~1\gs\gs9.10\bin\gswin64c.exe</ins><br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　&lt; Back　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　Finish　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
-
-***
-
-```
-C:\PROGRA~1\gs\gs9.10\bin\gswin32c.exe または C:\PROGRA~1\gs\gs9.10\bin\gswin64c.exe
+C:\w32tex\bin\rungs.exe または C:\gs\gs9.10\bin\gswin32c.exe または C:\PROGRA~1\gs\gs9.10\bin\gswin32c.exe または C:\w32tex\bin64\rungs.exe または C:\gs\gs9.10\bin\gswin64c.exe または C:\PROGRA~1\gs\gs9.10\bin\gswin64c.exe
 ```
 
 こちらのほうは頭のバッククォート (\`) は不要です。
@@ -540,7 +521,7 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 　　　　　 ◯ Off　　　　　　　　　　　　◎ On (default)　　　　　　 ◯ verbose<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ Direct PS ← \usepackage\[dvips\]{hyperref} を使用する場合はチェックをはずす<br>
 　　　　　 ◯ PBM　　　　　　　　　　　◯ exact PBM　　　　　　　◯ gssub<br>
-　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin64c.exe</ins><br>
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\w32tex\bin\rungs.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\PROGRA~1\gs\gs9.10\bin\gswin32c.exe</ins> または <ins>C:\w32tex\bin64\rungs.exe</ins> または <ins>C:\gs\gs9.10\bin\gswin64c.exe</ins> または <ins>C:\PROGRA~1\gs\gs9.10\bin\gswin64c.exe</ins><br>
 　　　　　gdat: <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　☐ draw frame (gbox:)　　　　　　　　　☑ gfit: color BMP　　　　　　　　☐ gow: overwrite<br>
 　　　　　☐ size includes mag　　　　　　　　　　☑ gclip: clip　　　　　　　　　GIF:<ins>BMP (full color)\[▼\]</ins><br>
@@ -732,7 +713,7 @@ A default FONT will be used.
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]</ins></span><strong>\[　Font2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　\]</ins></span><br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　　　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　　　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　　 <span style="color:Black;background-color:#EEEEEE;">\[ftt:\]</span>　　　　　 <ins>^x\map\ttfonts.map</ins><br>
 　　　 TEXSUBF:　 <ins>^r\sfd\\\\;^r\\..\ttf2pk\\\\;^r\\..\ttf2tfm\\\\</ins><br>
 　　　 TEXPKD:<br>
@@ -825,5 +806,4 @@ DVI ファイルを表示するとフォントが正しく表示されるよう�
 ## 関連リンク {#a0623ac1}
 
 - [TeX インストールガイド―― dviout for Windows のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/dviout.htm) @ [トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](https://twitter.com/tony4649))（旧 @nifty DTP と印刷フォーラム \[FDTP\]）
-- [Windows 95/98/Me/NT/2000/XP における dviout のインストール](http://akagi.ms.u-tokyo.ac.jp/tex_dvioutw.html)（dviout for Windows 一次配布元）
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
