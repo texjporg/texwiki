@@ -206,6 +206,12 @@ $ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 ```
 
+## [TeXstudio](/TeXstudio/) {#aaf316c5}
+
+```
+$ sudo yum install texstudio
+```
+
 ## [Texmaker](/Texmaker/) {#lcaf9397}
 
 ```
@@ -246,20 +252,6 @@ Qt 設定ツールを使用せずに Texmaker の編集画面で右クリック�
 編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
 \[インプットメソッドを選択\] で XIM を選択すると日本語入力で黒く表示されてしまいました．<br>
 
-## [TeXstudio](/TeXstudio/) {#aaf316c5}
-
-```
-$ sudo yum install texstudio
-```
-
-## [LyX](/LyX/) {#n0d7807d}
-
-```
-$ sudo yum install lyx
-```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
 ## [TeXworks](/TeXworks/) {#q8a87364}
 
 ```
@@ -295,6 +287,14 @@ $ sudo yum install texworks
 とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
 Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
 \[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
+
+## [LyX](/LyX/) {#n0d7807d}
+
+```
+$ sudo yum install lyx
+```
+
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## LaTeXila {#ka561406}
 
