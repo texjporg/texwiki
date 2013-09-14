@@ -173,41 +173,6 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
-pxdvi を使用する場合は xdvik-ja をインストールします．<br>
-
-```
-$ sudo apt-get install xdvik-ja
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
-
-```
-$ printf '\n%% pxdvi\nXDVIINPUTS = /etc/texmf/xdvi\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
-$ tail /usr/local/share/texmf/web2c/texmf.cnf
-...
-% pxdvi
-XDVIINPUTS = /etc/texmf/xdvi
-```
-
-&#x58;DVIINPUTS に /etc/texmf/xdvi が設定されていることを確認します．<br>
-
-```
-$ kpsewhich -var-value XDVIINPUTS
-/etc/texmf/xdvi
-```
-
-platex で処理された DVI ファイルが表示できます．<br>
-
-```
-$ xdvi -watchfile 1 hoge.dvi &
-```
-
-または<br>
-
-```
-$ pxdvi-xaw -watchfile 1 hoge.dvi &
-```
-
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
 ```
@@ -264,6 +229,12 @@ $ sudo apt-get install mupdf
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#q1b2ff71}
+
+```
+$ sudo apt-get install texstudio
+```
+
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#u8c0cbda}
 
 ```
@@ -306,22 +277,6 @@ Qt 設定ツールを使用せずに Texmaker の編集画面で右クリック�
 編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
 \[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
 
-## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#q1b2ff71}
-
-```
-$ sudo apt-get install texstudio
-```
-
-## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
-
-最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
-
-```
-$ sudo apt-get install lyx
-```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#g455c5e0}
 
 最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Linux Mint](</TeXworks/インストール/#p69845c9>) を参照．<br>
@@ -361,6 +316,16 @@ $ sudo apt-get install texworks
 とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
 Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
 \[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
+
+## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
+
+最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
+
+```
+$ sudo apt-get install lyx
+```
+
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## LaTeXila <a id="latexila"></a> {#ied3d1b1}
 
