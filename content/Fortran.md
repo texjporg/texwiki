@@ -59,6 +59,7 @@ pukiwiki: "Fortran"
 - [計算機に関する雑多なTips](http://daweb.ism.ac.jp/~saitohm/top/_tRlEvpW.html)
 - [Fortran 90 with Excel – gfortran example](http://sukhbinder.wordpress.com/2010/07/20/fortran-90-with-excel-gfortran-example/)
 - [using gfortran to call windows api functions](http://compgroups.net/comp.lang.fortran/using-gfortran-to-call-windows-api-function/226148)
+- [Bug 34112 - Add $!DEC ATTRIBUTE support for 32bit Windows' STDCALL](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=34112)
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
