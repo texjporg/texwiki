@@ -202,7 +202,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☐gs909w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
 　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
 　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　　∣<br>
 　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　 GSview<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
