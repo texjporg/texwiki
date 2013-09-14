@@ -628,13 +628,13 @@ dvips で変換した PS ファイルは Ghostscript 附属の ps2pdf
 処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません。
 
 Acrobat をお持ちであれば Windows 上でダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます。<br>
-dvipdfmx を使うほうがトラブルは少ないかもしれません。
+dvipdfmx を使うほうがトラブルは少ないかもしれません。<br>
 
-dvips はできるだけ新しいものを使いましょう。
+dvips はできるだけ新しいものを使いましょう。<br>
 dvips を含めた Windows 用 TeX については
 [Windows へのインストール](</Microsoft Windows/>)
-のページをご覧ください。
-Computer Modern Type 1 フォントの入った t1fonts.tar.xz も必ずインストールしておきます。
+のページをご覧ください。<br>
+W32TeX の場合は Computer Modern Type 1 フォントの入った t1fonts.tar.xz も必ずインストールしておきます。<br>
 
 foo.dvi という DVI ファイルを Distiller 入力用の PostScript ファイル foo.ps
 に変換するには，角藤さんの W32TeX ではコマンド プロンプトで次のように打ち込みます（TeX Live では，“-Ppdf” オプションは不要です。デフォルトで，pk フォントではなく Type 1 フォントを利用できます）。
@@ -889,9 +889,8 @@ PDF のパスワードを忘れてしまった場合は
 - [pdf仮想プリンタを作成する (Windows 7 Enterprise 64bit)](http://heilman-jinroku.blogspot.jp/2012/09/pdfwindows-7-enterprise-64bit.html)
 - [ghostscript と RedMon による PDF プリンタの実現](http://miko.org/~tatyana/tech/Win/pdfprinter.html)
 
-Windows 上で，フリーウェアだけで Distiller と同様に簡単に PDF が作れます。
-[Ghostscript, Ghostview and GSview](http://www.cs.wisc.edu/~ghost/)
-のページからリンクされている [RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います。
+Windows 上で，フリーウェアだけで Distiller と同様に簡単に PDF が作れます。<br>
+[RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います。<br>
 
 あらかじめ最新版の Ghostscript をインストールしておきます。<br>
 フォントを埋め込むように設定しておくといいでしょう。<br>
@@ -914,7 +913,7 @@ RedMon を展開して setup.exe を実行します。
 Redirect this port to the program:
 : &nbsp;
 
-C:\gs\gs9.10\bin\gswin32c.exe
+C:\gs\gs9.10\bin\gswin32c.exe または C:\gs\gs9.10\bin\gswin64c.exe
 
 Arguments for this program are:
 : -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dSAFER -sPAPERSIZE=a4 -sOutputFile="%1" -
