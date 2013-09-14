@@ -34,6 +34,7 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 
 ### TeX Live 2013 {#n27bff2f}
 
+- [http://grauwoelfchen.at/graffiti/slide-with-latex](http://grauwoelfchen.at/graffiti/slide-with-latex)
 - [TeX Live 2013 on Gentoo Linux](http://blogs.yahoo.co.jp/igproj_fusion/17319986.html)
 - [Linux](/Linux/#texlive2013)
 
