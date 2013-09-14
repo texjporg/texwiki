@@ -319,6 +319,12 @@ fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## [TeXstudio](/TeXstudio/) {#geb231cb}
+
+```
+$ yaourt -S texstudio
+```
+
 ## [Texmaker](/Texmaker/) {#kc254e63}
 
 ```
@@ -368,10 +374,10 @@ Texmaker のデフォルトのインプットメソッドが ibus になりま�
 Texmaker の \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックして<br>
 \[インプットメソッドを選択\]-\[ibus\] を選択してください．<br>
 
-## [TeXstudio](/TeXstudio/) {#geb231cb}
+## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
-$ yaourt -S texstudio
+$ yaourt -S texworks
 ```
 
 ## [LyX](/LyX/) {#odd649e9}
@@ -381,12 +387,6 @@ $ sudo pacman -S lyx
 ```
 
 文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
-## [TeXworks](/TeXworks/) {#y01d9b26}
-
-```
-$ yaourt -S texworks
-```
 
 ## LaTeXila {#q4319830}
 
