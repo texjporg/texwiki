@@ -58,7 +58,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>作者</strong>：[阿部 紀行](http://www.math.sci.hokudai.ac.jp/~abenori/)さん
 - <strong>初心者オススメ度</strong>：★★★★★
 - <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
-- <strong>インストールする対象</strong>：W32TeX バイナリ，TeXworks，Ghostscript，GSview，dviout for Windows（DLL プラグインおよび Ruby スクリプトの追加方式により xypic，ispell，WinShell）
+- <strong>インストールする対象</strong>：W32TeX バイナリ，TeXworks，Ghostscript，GSview，dviout for Windows（DLL プラグインおよび Ruby スクリプトの追加方式により ispell，WinShell）
 - <strong>ユーザーインターフェース</strong>：GUI
 - <strong>ネット・ローカルインストール</strong>：ネットインストーラ。ローカルにも対応しています。
 - <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
@@ -78,12 +78,10 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>初心者オススメ度</strong>：★★★★☆
 - <strong>ライセンス</strong>：フリーウェア
 - <strong>インストールする対象</strong>：W32TeX バイナリ
-- <strong>ユーザーインターフェース</strong>：CUI（コマンド プロンプト）
+- <strong>ユーザーインターフェース</strong>：CUI（Windows PowerShell, コマンド プロンプト）
 - <strong>ネット・ローカルインストール</strong>：ローカルのみ
 - <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
-- <strong>長所</strong>：最もシンプルなインストーラ。自作のバッチファイル
-    update.bat などを自分用に用意すれば，他の処理とも連携できます。
-
+- <strong>長所</strong>：最もシンプルなインストーラ。自作の PowerShell スクリプトやバッチファイルなどを自分用に用意すれば，他の処理とも連携できます。
 - <strong>短所</strong>：Microsoft Windows の GUI
     しか触ったことのない人や，初心者には厳しいかもしれません。初心者の方は TeX インストーラ 3 を使ったほうがいいでしょう。
 
