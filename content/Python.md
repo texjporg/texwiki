@@ -13,6 +13,8 @@ pukiwiki: "Python"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## Python 3 {#d9180565}
+
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
@@ -38,6 +40,11 @@ python.exe を C:\Python33 にインストールした場合は
 ```
 
 を環境変数 PATH に追加します．<br>
+
+## PythonTeX {#i2fab9c1}
+
+- [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
+- [PythonTeXで遊ぶ](http://xaro.hatenablog.jp/entry/2013/09/15/153807)
 
 ## 関連リンク {#z55d6188}
 
