@@ -101,7 +101,8 @@ TeX Live の Win32 版には標準で dviout が含まれています．<br>
 ### W32TeX の場合 {#r4cfc9ce}
 
 W32TeX には dviout が含まれていないので dviout for Windows の最新の安定版をダウンロードします．<br>
-TeX インストーラ 3 で，dviout をインストールするとデフォルトでは C:\w32tex\dviout にインストールされます．<br>
+TeX インストーラ 3 で，dviout をインストールすることもできます．<br>
+デフォルトでは C:\w32tex\dviout にインストールされます．<br>
 
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
     （安定版）
@@ -208,7 +209,7 @@ dviout.exe を右クリックします。<br>
 ***
 
 \[管理者として実行(A)\] を選択して dviout を起動します。<br>
-初回起動時は dviout が 
+初回起動時は dviout が警告を表示します。<br>
 
 ***
 
@@ -229,7 +230,7 @@ dviout.exe を右クリックします。<br>
 
 ***
 
-と聞いてきますので， \[はい(Y)\] をクリックします。
+\[はい(Y)\] をクリックします。
 
 ***
 
@@ -250,8 +251,6 @@ dviout.exe を右クリックします。<br>
 
 標準のプリンターの名前が表示され，フォント解像度（dpi 値）や紙のサイズを聞いてきます。<br>
 ここでは Microsoft XPS Document Writer with 600 dpi と表示されているので 600 dpi に設定しました．<br>
-プリンターが存在しないまたは不明の場合は解像度は標準の 300 dpi にしておきます。<br>
-紙のサイズも標準の A4，縦置き (Portrait) のままで OK です。<br>
 \[> Next\] をクリックします。<br>
 
 ***
@@ -270,7 +269,7 @@ TEXPK:<br>
 ***
 
 フォントのある場所を聞いてきます。<br>
-\[Guess\] をクリックすると
+\[Guess\] をクリックします。<br>
 
 ***
 
@@ -291,7 +290,6 @@ TEXPK:<br>
 
 ***
 
-と言ってきます。<br>
 TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
 \[いいえ(N)\] をクリックした場合は次のような値を手動で入力します。<br>
 
@@ -311,11 +309,11 @@ TEXPK:　　<ins>^r\tfm\\\\^s^tfm;^r\pk\\\\^s.^dpk;^r\vf\\\\^s.vf;^r\ovf\\\\^s.o
 ***
 
 ```
-TEXROOT: C:\w32tex\share\texmf-dist\fonts （または ^T\fonts）
+TEXROOT: C:\w32tex\share\texmf-dist\fonts
 TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tfm
 ```
 
-\[> Next\] をクリックします。
+\[> Next\] をクリックします。<br>
 
 ***
 
@@ -351,7 +349,6 @@ TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tf
 
 ***
 
-と聞いてきます。<br>
 TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
 \[いいえ(N)\] をクリックした場合は次のような値を手動で入力します。<br>
 
@@ -373,7 +370,7 @@ TeX Live がインストールされている場合は \[いいえ(N)\] をク�
 `C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s または `C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s
 ```
 
-この頭に入っているのはバッククォート (\`) です。
+この頭に入っている文字はバッククォート (\`) です。<br>
 手で書き込む際にはバッククォートを必ず先頭に入れてください。<br>
 TeX や Ghostscript をネットワークドライブにインストールしてある場合は，
 \[gen:\] と \[gsx:\] はボタンを押しても自動では入りません。<br>
@@ -398,7 +395,6 @@ TeX や Ghostscript をネットワークドライブにインストールして
 
 ***
 
-と聞いてきます。<br>
 TeX Live がインストールされている場合は \[いいえ(N)\] をクリックします。<br>
 \[いいえ(N)\] をクリックした場合は次のような値を手動で入力します。<br>
 
