@@ -48,7 +48,32 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 - [LaTeX のビルド手順](https://code.google.com/p/python-doc-ja/wiki/LaTeXBuild)
 
+## Sphinx → HTML {#xba45212}
+
+HTML ファイルを作成する場合は<br>
+
+```
+make html
+```
+
+を実行します．<br>
+
 ## Sphinx → LaTeX → PDF {#wb4c36d7}
+
+LaTeX 経由で PDF ファイルを作成する場合は<br>
+
+```
+make latexpdf
+```
+
+を実行します．<br>
+日本語の PDF ファイルを作成する場合は<br>
+
+```
+make latexpdfja
+```
+
+を実行します．<br>
 
 - [https://bitbucket.org/keik/sphinx-lualatex](https://bitbucket.org/keik/sphinx-lualatex)
 - [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
@@ -62,6 +87,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
     - \[[Sphinx-Users 176\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000175.html)
     - \[[Sphinx-Users 178\] Re:	日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000177.html)
     - \[[Sphinx-Users 179\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000178.html)
+- [Sphinx と LaTeX を使うときの 小技](https://gist.github.com/uchida/4545280)
 - [使い始めたばかりのSphinxでPDFを生成してみた](http://kanonji.info/blog/2013/04/12/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E3%81%B0%E3%81%8B%E3%82%8A%E3%81%AEsphinx%E3%81%A7pdf%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
 - [Sphinx で日本語を含む PDF 出力をする](http://atasatamatara.hatenablog.jp/entry/2013/03/16/204232)
 - [Sphinx + TeX + PDF with jsbook](http://tboffice.hatenablog.jp/entry/2013/01/08/035429)
