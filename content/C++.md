@@ -26,6 +26,7 @@ pukiwiki: "C++"
 - [http://dev.activebasic.com/egtra/category/cpp/](http://dev.activebasic.com/egtra/category/cpp/)
 - [http://dev.activebasic.com/egtra/tag/cplusplus11/](http://dev.activebasic.com/egtra/tag/cplusplus11/)
 - [Visual C++ の勉強部屋](http://homepage3.nifty.com/ishidate/vcpp.htm)
+- [ゲーム開発者のための C++11/C++14](http://www.slideshare.net/Reputeless/c11c14)
 - [最新のC++を学ぶ - Barbara Moo氏インタビュー](http://www.infoq.com/jp/articles/modern-C-book-moo)
 - [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
 - [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
