@@ -18,7 +18,7 @@ pukiwiki: "LaTeX-CJK"
 日本語を処理できる TeX としては、
 国内ではアスキー社による日本語 pTeX が広く使われていますが、
 TeX コンパイラ・DVI ウェア共に独自拡張を施しています。<br>
-このため、ツールによっては [dvisvgm](/dvisvgm/), [dvipng](/dvipng/) のように pTeX に対応してないものがあります。<br>
+このため、[dvipng](/dvipng/) のように pTeX に対応してないツールがあります。<br>
 
 ここでは、コンパイラ等には手を加えず、
 マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [bxcjkjatype](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype) を紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
