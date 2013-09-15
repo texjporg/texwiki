@@ -17,6 +17,8 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Sphinx home](http://sphinx-doc.org/) {#u72d0718}
 
+- [http://sphinx-doc.org/latest/](http://sphinx-doc.org/latest/)
+
 ### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
 - [Sphinxをはじめよう](http://sphinx-users.jp/gettingstarted/)
