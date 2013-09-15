@@ -21,6 +21,11 @@ Python で書かれたスクリプトを実行するには Python の処理系�
 - [Python Programming Language &ndash; Official Website](http://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
 
+### 派生版 {#h517ae27}
+
+- [PyPy](http://pypy.org/)
+- [Cython](http://cython.org/)
+
 ## インストール {#y6c76d8e}
 
 ### Windows {#s4be4fc1}
