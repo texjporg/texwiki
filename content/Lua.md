@@ -15,16 +15,23 @@ pukiwiki: "Lua"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-### Lua とは {#b2872967}
+## Lua とは {#b2872967}
 
 Lua は パワフル・高速・軽量で組み込み可能なスクリプト言語です．
 
 - [The Programming Language Lua](http://www.lua.org/)
 
-#### リリース情報 {#ze0d96ae}
+### リリース情報 {#ze0d96ae}
 
 [Lua: news](http://www.lua.org/news.html) を参照．
 
-#### License {#t7d3e3fb}
+### License {#t7d3e3fb}
 
 [MIT License](http://www.lua.org/license.html)
+
+### 派生版 {#ze6ac740}
+
+#### LuaJIT {#s3b8296f}
+
+- [LuaJIT](http://luajit.org/)
+- [LuaJITでWindowsアプリ](http://d.hatena.ne.jp/jeg/20130406/1365266391)
