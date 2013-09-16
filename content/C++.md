@@ -118,8 +118,6 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
 #include <cwchar>
 #include <cerrno>
 
-using namespace std;
-
 auto static const TIMEOUT = 10000;
 auto static existSumatraHWND = FALSE;
 
@@ -130,19 +128,19 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
     UNREFERENCED_PARAMETER(lParam);
 
     auto const maxSize = 1024;
-    basic_string<wchar_t> windowText(maxSize, L'\0');
-    GetWindowTextW(hwnd, const_cast<wchar_t*>(windowText.c_str()), maxSize);
+    auto windowText = std::basic_string<wchar_t>(maxSize, L'\0');
+    ::GetWindowTextW(hwnd, const_cast<wchar_t*>(windowText.c_str()), maxSize);
 
     if (windowText.at(0) == L'\0') {
         return TRUE;
     }
 
     wchar_t* title = nullptr;
-    if ((title = wcsrchr(const_cast<wchar_t*>(windowText.c_str()), L'S')) == nullptr) {
+    if ((title = std::wcsrchr(const_cast<wchar_t*>(windowText.c_str()), L'S')) == nullptr) {
         return TRUE;
     }
 
-    if (wcscmp(title, L"SumatraPDF") != 0) {
+    if (std::wcscmp(title, L"SumatraPDF") != 0) {
         return TRUE;
     }
 
@@ -156,8 +154,8 @@ namespace sumatrapdfclient
     class DDEClient
     {
     private:
-        basic_string<wchar_t> server;
-        basic_string<wchar_t> topic;
+        std::basic_string<wchar_t> server;
+        std::basic_string<wchar_t> topic;
         DWORD idInstance;
         HSZ hszServer;
         HSZ hszTopic;
@@ -166,7 +164,7 @@ namespace sumatrapdfclient
         HDDEDATA hDdeTransactionData;
 
     public:
-        explicit DDEClient(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic)
+        explicit DDEClient(const std::basic_string<wchar_t>& server, const std::basic_string<wchar_t>& topic)
         {
             this->server = server;
             this->topic = topic;
@@ -181,77 +179,77 @@ namespace sumatrapdfclient
         ~DDEClient()
         {
             if (this->hDdeTransactionData != nullptr) {
-                if (DdeFreeDataHandle(this->hDdeTransactionData) == FALSE) {
-                    if (DdeGetLastError(this->idInstance) != 0) {
-                        wcerr << L"DdeFreeDataHandle error" << endl;
+                if (::DdeFreeDataHandle(this->hDdeTransactionData) == FALSE) {
+                    if (::DdeGetLastError(this->idInstance) != 0) {
+                        std::wcerr << L"DdeFreeDataHandle error" << std::endl;
                     }
                 }
             }
 
             if (this->hDdeData != nullptr) {
-                if (DdeFreeDataHandle(this->hDdeData) == FALSE) {
-                    if (DdeGetLastError(this->idInstance) != 0) {
-                        wcerr << L"DdeFreeDataHandle error" << endl;
+                if (::DdeFreeDataHandle(this->hDdeData) == FALSE) {
+                    if (::DdeGetLastError(this->idInstance) != 0) {
+                        std::wcerr << L"DdeFreeDataHandle error" << std::endl;
                     }
                 }
             }
 
             if (this->hszServer != nullptr) {
-                if (DdeFreeStringHandle(this->idInstance, this->hszServer) == FALSE) {
-                    wcerr << L"DdeFreeStringHandle error" << endl;
+                if (::DdeFreeStringHandle(this->idInstance, this->hszServer) == FALSE) {
+                    std::wcerr << L"DdeFreeStringHandle error" << std::endl;
                 }
             }
 
             if (this->hszTopic != nullptr) {
-                if (DdeFreeStringHandle(this->idInstance, this->hszTopic) == FALSE) {
-                    wcerr << L"DdeFreeStringHandle error" << endl;
+                if (::DdeFreeStringHandle(this->idInstance, this->hszTopic) == FALSE) {
+                    std::wcerr << L"DdeFreeStringHandle error" << std::endl;
                 }
             }
 
             if (this->hConvClient != nullptr) {
-                if (DdeDisconnect(this->hConvClient) == FALSE) {
-                    wcerr << L"DdeDisconnect error" << endl;
+                if (::DdeDisconnect(this->hConvClient) == FALSE) {
+                    std::wcerr << L"DdeDisconnect error" << std::endl;
                 }
             }
 
             if (this->idInstance != 0) {
-                if (DdeUninitialize(this->idInstance) == FALSE) {
-                    wcerr << L"DdeUninitialize error" << endl;
+                if (::DdeUninitialize(this->idInstance) == FALSE) {
+                    std::wcerr << L"DdeUninitialize error" << std::endl;
                 }
             }
 
         }
 
-        auto execute(const basic_string<wchar_t>& command) -> int
+        auto execute(const std::basic_string<wchar_t>& command) -> int
         {
-            if (DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
-                wcerr << L"DdeInitializeW error" << endl;
+            if (::DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
+                std::wcerr << L"DdeInitializeW error" << std::endl;
                 return 4;
             }
 
-            if ((this->hszServer = DdeCreateStringHandleW(this->idInstance, this->server.c_str(), CP_WINUNICODE)) == nullptr) {
-                wcerr << L"DdeCreateStringHandleW error" << endl;
-                return DdeGetLastError(idInstance);
+            if ((this->hszServer = ::DdeCreateStringHandleW(this->idInstance, this->server.c_str(), CP_WINUNICODE)) == nullptr) {
+                std::wcerr << L"DdeCreateStringHandleW error" << std::endl;
+                return ::DdeGetLastError(this->idInstance);
             }
 
-            if ((this->hszTopic = DdeCreateStringHandleW(this->idInstance, this->topic.c_str(), CP_WINUNICODE)) == nullptr) {
-                wcerr << L"DdeCreateStringHandleW error" << endl;
-                return DdeGetLastError(idInstance);
+            if ((this->hszTopic = ::DdeCreateStringHandleW(this->idInstance, this->topic.c_str(), CP_WINUNICODE)) == nullptr) {
+                std::wcerr << L"DdeCreateStringHandleW error" << std::endl;
+                return ::DdeGetLastError(this->idInstance);
             }
 
-            if ((this->hConvClient = DdeConnect(this->idInstance, this->hszServer, this->hszTopic, nullptr)) == nullptr) {
-                wcerr << L"DdeConnect error" << endl;
-                return DdeGetLastError(idInstance);
+            if ((this->hConvClient = ::DdeConnect(this->idInstance, this->hszServer, this->hszTopic, nullptr)) == nullptr) {
+                std::wcerr << L"DdeConnect error" << std::endl;
+                return ::DdeGetLastError(this->idInstance);
             }
 
-            if ((this->hDdeData = DdeCreateDataHandle(this->idInstance, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(command.c_str())), static_cast<DWORD>((command.length() + 1)*sizeof(wchar_t)), 0, nullptr, CF_UNICODETEXT, 0)) == nullptr) {
-                wcerr << L"DdeCreateDataHandle error" << endl;
-                return DdeGetLastError(idInstance);
+            if ((this->hDdeData = ::DdeCreateDataHandle(this->idInstance, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(command.c_str())), static_cast<DWORD>((command.length() + 1)*sizeof(wchar_t)), 0, nullptr, CF_UNICODETEXT, 0)) == nullptr) {
+                std::wcerr << L"DdeCreateDataHandle error" << std::endl;
+                return ::DdeGetLastError(this->idInstance);
             }
 
-            if ((this->hDdeTransactionData = DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), this->hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
-                wcerr << L"DdeClientTransaction error" << endl;
-                return DdeGetLastError(idInstance);
+            if ((this->hDdeTransactionData = ::DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), this->hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
+                std::wcerr << L"DdeClientTransaction error" << std::endl;
+                return ::DdeGetLastError(this->idInstance);
             }
 
             return 0;
@@ -260,49 +258,47 @@ namespace sumatrapdfclient
     };
 }
 
-using namespace sumatrapdfclient;
-
-auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
+auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
 {
     auto err = 0;
 
     static HWND hList;
-    EnumWindows(reinterpret_cast<WNDENUMPROC>(GetSumatraHWND), reinterpret_cast<LPARAM>(hList));
+    ::EnumWindows(reinterpret_cast<WNDENUMPROC>(GetSumatraHWND), reinterpret_cast<LPARAM>(hList));
 
     if (existSumatraHWND == TRUE) {
         return err;
     }
 
     HKEY subKey = nullptr;
-    const basic_string<wchar_t> keyPath(LR"(SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe)");
-    if (RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath.c_str(), 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
+    const auto keyPath = std::basic_string<wchar_t>(LR"(SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe)");
+    if (::RegOpenKeyExW(HKEY_LOCAL_MACHINE, keyPath.c_str(), 0, KEY_QUERY_VALUE, &subKey) != ERROR_SUCCESS) {
         err = 1;
     }
 
     DWORD dwType = 0;
     DWORD sz = 0;
     if (subKey != nullptr) {
-        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, nullptr, &sz) != ERROR_SUCCESS) {
+        if (::RegQueryValueExW(subKey, nullptr, nullptr, &dwType, nullptr, &sz) != ERROR_SUCCESS) {
             err = 1;
         }
     }
 
-    basic_string<wchar_t> sumatrapdfRegistry(sz, L'\0');
+    auto sumatrapdfRegistry = std::basic_string<wchar_t>(sz, L'\0');
     if (subKey != nullptr) {
-        if (RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(sumatrapdfRegistry.c_str())), &sz) != ERROR_SUCCESS) {
+        if (::RegQueryValueExW(subKey, nullptr, nullptr, &dwType, reinterpret_cast<BYTE*>(const_cast<wchar_t*>(sumatrapdfRegistry.c_str())), &sz) != ERROR_SUCCESS) {
             err = 1;
         }
     }
 
     if (subKey != nullptr) {
-        RegCloseKey(subKey);
+        ::RegCloseKey(subKey);
         subKey = nullptr;
     }
 
-    basic_string<wchar_t> sumatrapdf(L"SumatraPDF.exe");
+    auto sumatrapdf = std::basic_string<wchar_t>(L"SumatraPDF.exe");
     if (err == 0) {
         if (sumatrapdfRegistry.length() != 0) {
-            if (PathFileExistsW(sumatrapdfRegistry.c_str())) {
+            if (::PathFileExistsW(sumatrapdfRegistry.c_str())) {
                 sumatrapdf = sumatrapdfRegistry;
             } else {
                 err = 1;
@@ -312,11 +308,11 @@ auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
 
     if (err != 0) {
         err = 0;
-        const wchar_t* sumatrapdfWin32Default = LR"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
-        const wchar_t* sumatrapdfWin64Default = LR"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
-        if (PathFileExistsW(sumatrapdfWin32Default)) {
+        const auto sumatrapdfWin32Default = LR"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
+        const auto sumatrapdfWin64Default = LR"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
+        if (::PathFileExistsW(sumatrapdfWin32Default)) {
             sumatrapdf = sumatrapdfWin32Default;
-        } else if (PathFileExistsW(sumatrapdfWin64Default)) {
+        } else if (::PathFileExistsW(sumatrapdfWin64Default)) {
             sumatrapdf = sumatrapdfWin64Default;
         } else {
             sumatrapdf = L"SumatraPDF.exe";
@@ -336,24 +332,24 @@ auto static RunSumatraPDF(const basic_string<wchar_t>& pdf) -> int
 
     si.cb = sizeof(si);
 
-    const basic_string<wchar_t> reuseInstance(L"-reuse-instance");
-    basic_ostringstream<wchar_t> oss;
+    const auto reuseInstance = std::basic_string<wchar_t>(L"-reuse-instance");
+    std::basic_ostringstream<wchar_t> oss;
     oss << L"\"" << sumatrapdf << L"\" " << reuseInstance << L" \"" << pdf << L"\"";
-    basic_string<wchar_t> sumatrapdfCommandLine(oss.str());
+    auto sumatrapdfCommandLine = std::basic_string<wchar_t>(oss.str());
 
-    if (CreateProcessW(nullptr, const_cast<wchar_t*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
+    if (::CreateProcessW(nullptr, const_cast<wchar_t*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
         err = 3;
         return err;
     }
 
-    WaitForInputIdle(pi.hProcess, TIMEOUT);
+    ::WaitForInputIdle(pi.hProcess, TIMEOUT);
 
     return err;
 }
 
-auto static DdeExecute(const basic_string<wchar_t>& server, const basic_string<wchar_t>& topic, const basic_string<wchar_t>& command) -> int
+auto static DdeExecute(const std::basic_string<wchar_t>& server, const std::basic_string<wchar_t>& topic, const std::basic_string<wchar_t>& command) -> int
 {
-    auto dde = DDEClient(server, topic);
+    auto dde = sumatrapdfclient::DDEClient(server, topic);
     return dde.execute(command);
 }
 
@@ -366,21 +362,21 @@ auto main() -> int
     auto err = 0;
 #if !defined (_MSC_VER)
     auto argc = 0;
-    auto argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+    auto argv = ::CommandLineToArgvW(::GetCommandLineW(), &argc);
 #endif
 
     if (argc != 4) {
-        wcerr << L"usage: " << argv[0] << L" pdffile texfile line" << endl;
+        std::wcerr << L"usage: " << argv[0] << L" pdffile texfile line" << std::endl;
         err = 2;
         return err;
     }
 
-    const basic_string<wchar_t> pdf(argv[1]);
-    const basic_string<wchar_t> tex(argv[2]);
-    const basic_string<wchar_t> line(argv[3]);
+    auto const pdf = std::basic_string<wchar_t>(argv[1]);
+    auto const tex = std::basic_string<wchar_t>(argv[2]);
+    auto const line = std::basic_string<wchar_t>(argv[3]);
 
-    if (wcstol(line.c_str(), nullptr, 0) == 0 || errno == ERANGE) {
-        wcerr << line << L" can't convert to the line number." << endl;
+    if (std::wcstol(line.c_str(), nullptr, 0) == 0 || errno == ERANGE) {
+        std::wcerr << line << L" can't convert to the line number." << std::endl;
         err = -1;
         return err;
     }
@@ -390,11 +386,11 @@ auto main() -> int
     }
 
     auto active = 0;
-    basic_ostringstream<wchar_t> woss;
+    std::basic_ostringstream<wchar_t> woss;
     woss << L"[ForwardSearch(\"" << pdf << L"\",\"" << tex << L"\"," << line << L",0,0," << active << L")]";
-    const basic_string<wchar_t> forwardSearch(woss.str());
-    const basic_string<wchar_t> server(L"SUMATRA");
-    const basic_string<wchar_t> topic(L"control");
+    auto const forwardSearch = std::basic_string<wchar_t>(woss.str());
+    auto const server = std::basic_string<wchar_t>(L"SUMATRA");
+    auto const topic = std::basic_string<wchar_t>(L"control");
 
     if ((err = DdeExecute(server, topic, forwardSearch)) != 0) {
         return err;
