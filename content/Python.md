@@ -48,8 +48,10 @@ python.exe を C:\Python33 にインストールした場合は
 
 ## PythonTeX {#i2fab9c1}
 
+- PythonTeX は TeX Live, W32TeX に含まれています．
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
-- [PythonTeXで遊ぶ](http://xaro.hatenablog.jp/entry/2013/09/15/153807)
+- [&quot;Python&quot; - 記事一覧 - 何かを書き留める何か](http://xaro.hatenablog.jp/archive/category/Python)
+    - [http://xaro.hatenablog.jp/search?q=PythonTeX](http://xaro.hatenablog.jp/search?q=PythonTeX)
 
 ## 関連リンク {#z55d6188}
 
