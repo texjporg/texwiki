@@ -27,3 +27,8 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 - [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
 
 もあります．
+
+## 関連リンク {#g6fed84c}
+
+- [雑把の仮想マシン(JVM, .NET, BEAM, スクリプト言語, LLVM)](http://yohshiy.blog.fc2.com/blog-entry-238.html)
+- [JDKのインストール(Windows)と Java 関連用語の説明](http://yohshiy.blog.fc2.com/blog-entry-226.html)
