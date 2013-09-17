@@ -61,6 +61,7 @@ Windows, OS X, Linux
 
 ### Windows {#m3e22b6d}
 
+- [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
 - [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
 - [Windows + Sublime Text2 + LaTeX](http://over-k.sakura.ne.jp/blog/?p=59)
 
