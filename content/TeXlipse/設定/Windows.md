@@ -649,7 +649,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 
 ### PDF ファイル ビューアー {#r96591c7}
 
-#### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) {#o62b47a3}
+#### [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/) <a id="pdf4eclipse"></a> {#o62b47a3}
 
 Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．<br>
 フォントを埋め込めば日本語も表示可能です．<br>
