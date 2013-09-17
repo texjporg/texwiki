@@ -174,6 +174,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [岩崎 隆盛/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=Beamer)
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
 - [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
+- [LaTeX + Beamer でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/18/020615)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
