@@ -19,6 +19,8 @@ pukiwiki: "Haskell"
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+- [ゆるふわHaskell (Light &amp; Airy Haskell)](http://kzfm.github.io/laskell/)
+- [http://maoe.hatenadiary.jp/archive/category/Haskell](http://maoe.hatenadiary.jp/archive/category/Haskell)
 - [本物のプログラマはHaskellを使う](http://itpro.nikkeibp.co.jp/article/COLUMN/20060915/248215/)
 - [Haskell Advent Calendar 2012](http://partake.in/events/45a01d39-af5e-42f1-91c7-e8fcc91db244)
 - [Haskellで文字列を UTF-32 ⇔UTF-16 変換する。](http://d.hatena.ne.jp/sirocco/20130416/1366103044)
