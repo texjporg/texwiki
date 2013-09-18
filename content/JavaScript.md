@@ -17,4 +17,3 @@ pukiwiki: "JavaScript"
 
 - [モダンな言語でHTML5を開発しよう！ 俯瞰して理解するaltJSの比較 (前篇 – TypeScript, CoffeeScript, Haxe)](http://html5experts.jp/clockmaker/2183/)
 - [続々出てきた JavaScript 系新言語。どれを使う?](http://yohshiy.blog.fc2.com/blog-entry-183.html)
-- [http://www.modulecounts.com/](http://www.modulecounts.com/)
