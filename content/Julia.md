@@ -8,3 +8,5 @@ pukiwiki: "Julia"
 # Julia
 
 ## [Julia](http://julialang.org/) {#mcc2f191}
+
+- [The Julia Language](http://julialang.org/)
