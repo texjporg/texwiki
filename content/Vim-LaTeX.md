@@ -387,7 +387,7 @@ Vim-LaTeX では，折りたたみに関しては以下の 2 つの操作を覚�
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">メニュー [TeX-Suite]</th><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td></td><td>&lt;Space&gt;</td><td>カーソル位置の折りたたみを開いて桁を1つ進める</td></tr>
+> <tr><td></td><td>&lt;Space&gt;</td><td>カーソル位置の折りたたみを開いてカーソルを1つ進める</td></tr>
 > <tr><td>Refresh Folds</td><td>\rf</td><td>カーソル位置以外の折りたたみを閉じる</td></tr>
 > </tbody>
 > </table>
@@ -851,41 +851,14 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 - [Vim : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_225413.html)
 - [macvim+kaoriya+vimlatex](http://fbncc112358.blogspot.jp/2013/03/osxwsemacsviperyatexlatexmaclionosxwsmo.html)
-- [Vim-LaTeX 導入](http://0xffffff.hatenablog.com/entry/2013/01/26/211841)
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Open pdf to the current location in a LaTeX ](http://vim.wikia.com/wiki/Open_pdf_to_the_current_location_in_a_LaTeX_file)
 - [Newest &#39;vim&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/vim)
-- [vim 快適な論文執筆環境の整備 -その2-](http://kuni255.blogspot.jp/2011/12/vim-2.html)
-- [Vim-LaTeXの導入](http://gajumaru.ddo.jp/wordpress/?p=359)
 - [vim-latex 操作まとめ](http://blog.livedoor.jp/itym/archives/332261.html)
 - [Windows の VIM-Latex で補完](http://d.hatena.ne.jp/k3k1/20110227/1298775822)
-- [Windows×Tex×USB×Vim](http://d.hatena.ne.jp/firepig/20110118)
 - [Sumatra PDF viewerがLaTeX用によさげ](http://d.hatena.ne.jp/Rion778/20091127)
 - [Vim-LaTeXを書き換え](http://hidehiroyokota.wordpress.com/2011/01/26/rewriting-vim-latex-gotoerrorlocation/)
-- [Macはじめました。: ターミナルからQuick Lookする方法](http://lastarrow.tumblr.com/post/34790484391/mac-quick-look)
-- [偽Vim使いがLaTeXを使い始めた on Mac](http://shkh.hatenablog.com/entry/2012/04/30/214107)
-- [Mac上のVim-LaTeXでいい感じにPDFへコンパイルする設定](http://anond.hatelabo.jp/20110823180114)
-- \[[vim-LaTeX\]記事一覧 - c⌒っ_д\_)っ←のや](http://d.hatena.ne.jp/noya/archive?word=%2A%5Bvim-LaTeX%5D)
-- [VIM-LaTeX 良いかも](http://alohakun.blog7.fc2.com/blog-entry-60.html)
-    (若槻 俊宏 (あろは) さん)
-
-- [VIM-LaTeX で jbibtex を使う．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_tex)/[VIM-LaTeX で警告を抑制する．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_warn)/[vimspell を使う．](http://ushiolab.sys.es.osaka-u.ac.jp/~kanazawa/main/tips.html#vim_spell)
-- [Vim + VIM-LaTeX で TeX](http://www.c.csce.kyushu-u.ac.jp/kb/wiki/index.php?TeX%2FWindows%BE%E5%A4%C7%A4%CETeX%CA%D4%BD%B8%B4%C4%B6%AD#ge0a5c12)
-- ["LaTeX Font Warning" vim-latex](http://ggutter.blogspot.com/2009/05/latex-font-warning-vim-latex.html)
-- [MacPortsからインストールしたTex環境とMacVimの組合せでvim-latexを使う設定](http://vim.g.hatena.ne.jp/y_yanbe/20080918/1221724545)
 - [Vim+LaTeX on Linux - NLPWiki](https://facwiki.cs.byu.edu/nlp/index.php/Vim%2BLaTeX_on_Linux)
 - [Vim LaTeX/Skim](http://mactex-wiki.tug.org/wiki/index.php/SyncTeX#Vim_LaTeX.2FSkim)
 - [MacVim won't run bibtex (or compile as necessary to clear warnings) with \ll shortcut](http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-shor)
-- [Vim+LaTeXのコンパイル環境の決定版](http://blomott.mobi/rubyneko/entry%2CKr4pdneXf4dr7AHIqedeTQ%2C%2C%2C%2C.html)
-    <!-- -[[Vim+LaTeXのコンパイル環境の決定版 [Internet Archive]:http://web.archive.org/web/20090129134051/http://ujihisa.nowa.jp/entry/3a8fe06cc1]] -->
-
-- [VIM-LaTeX (LaTeX-suite) でその場でCompiling ruleを変更する方法](http://blomott.mobi/rubyneko/entry%2CMsb5ghfnuZDarqhKxZq2rw%2C%2C%2C%2C.html)
-- [latex-suite + beamerで快適folding](http://blomott.mobi/rubyneko/entry%2CshuWakaAb79Gq-szi9seUw%2C%2C%2C%2C.html)
 - [c. 256色日和](https://sites.google.com/site/zrexv5te/kyoryu/sl-c760/256colorcrazy)
-- [latexSuite.vimの便利キーAlt-iをなんとかして使う (おまけあり)](http://blomott.mobi/rubyneko/entry%2C3nk1xJT90ncRaXRp_2AbUQ%2C%2C%2C%2C.html)
-    <!-- -[[latexSuite.vimの便利キーAlt-iをなんとかして使う (おまけあり) [Internet Archive]:http://web.archive.org/web/20090224044204/http://ujihisa.nowa.jp/archive/2008/09/]] -->
-    <!-- -[[ここ最近のLaTeX + Vimに関する自分のエントリをまとめてみる:http://blomott.mobi/rubyneko/entry%2CIfbEFfNcBLSRV2Br5_OaZw%2C%2C%2C%2C.html]] -->
-
-- [vimでtexで$aaa$みたいなのの入力をラクにする設定](http://blomott.mobi/rubyneko/entry%2CT3G5eJNLL7aaGFAJadDmAA%2C%2C%2C%2C.html)
-- [VIM-LaTeXを試してみた](http://blomott.mobi/rubyneko/entry%2CmwrzbK9nMSYU9M3Qf8c2kA%2C%2C%2C%2C.html), [VIM-LaTeXを試してみた (2)](http://blomott.mobi/rubyneko/entry%2CQiT80vPzE-sOY7Xz_P8gjQ%2C%2C%2C%2C.html)
-- [memo/vim-LaTex \[Internet Archive\]](http://web.archive.org/web/20050627163954/www.ss.ics.tut.ac.jp/noya/index.php?%5b%5bmemo/vim-LaTex%5d%5d)
