@@ -8,3 +8,288 @@ pukiwiki: "TeXstudio/設定/OS X"
 # TeXstudio/設定/OS X
 
 [TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > OS X
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+### コマンド {#a32ff532}
+
+***
+
+<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+
+一般<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+
+<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+
+ビルド<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+
+キーボードショートカット<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+
+エディタ<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+
+構文の強調表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+
+コマンドの補完<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+
+文法<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+
+プレビュー<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+
+SVN<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　☐ 高度なオプションの表示
+
+<br>
+
+***
+
+***
+
+<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+
+一般<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+
+<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+
+ビルド<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+
+キーボードショートカット<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
+
+メニュー<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
+
+ツールバー<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+
+エディタ<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
+
+詳細なエディタ設定<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+
+構文の強調表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
+
+カスタム強調表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+
+コマンドの補完<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+
+文法<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+
+プレビュー<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+
+SVN<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　☑ 高度なオプションの表示
+
+<br>
+
+***
+
+LaTeX
+: &nbsp;
+
+: "/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex
+
+: "/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
+
+: "/usr/texbin/latex" -synctex=1 -interaction=nonstopmode %.tex
+
+PdfLaTeX
+: &nbsp;
+
+: "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
+
+XeLaTeX
+: &nbsp;
+
+: "/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
+
+LuaLaTeX
+: &nbsp;
+
+: "/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
+
+: "/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
+
+外部PDFビューア
+: &nbsp;
+
+: "/usr/bin/open" -a Preview.app %.pdf
+
+: "/usr/bin/open" -a Skim.app %.pdf
+
+: "/usr/bin/open" -a TeXShop.app %.pdf
+
+: "/usr/bin/open" -a TeXworks.app %.pdf
+
+: "/usr/bin/open" -a "Adobe Reader.app" %.pdf
+
+DviPs
+: &nbsp;
+
+: "/usr/texbin/dvips" -Ppdf -o %.ps %.dvi
+
+DviPng
+: &nbsp;
+
+: "/usr/texbin/dvipng" -T tight -D 120 %.dvi
+
+Ps2Pdf
+: &nbsp;
+
+: "/usr/local/bin/ps2pdf" %.ps
+
+DviPdf
+: &nbsp;
+
+: "/usr/texbin/dvipdfmx" %.dvi
+
+BibTeX
+: &nbsp;
+
+: "/usr/texbin/pbibtex" %
+
+: "/usr/texbin/upbibtex" %
+
+: "/usr/texbin/bibtexu" %
+
+: "/usr/texbin/bibtex" %
+
+BibTex 8ビット
+: &nbsp;
+
+: "/usr/texbin/bibtex8" %
+
+Biber
+: &nbsp;
+
+: "/usr/texbin/biber" %
+
+Makeindex
+: &nbsp;
+
+: "/usr/texbin/mendex" %.idx
+
+: "/usr/texbin/makeindex" %.idx
+
+Texindy
+: "/usr/texbin/texindy"
+
+Makeglossary
+: &nbsp;
+
+: makeglossaries
+
+Metapost
+: &nbsp;
+
+: "/usr/texbin/pmpost" -interaction=nonstopmode %
+
+: "/usr/texbin/upmpost" -interaction=nonstopmode %
+
+: "/usr/texbin/mpost" -interaction=nonstopmode %
+
+Asymptote
+: &nbsp;
+
+: "/usr/texbin/asy" %.asy
+
+Ghostscript
+: &nbsp;
+
+: "/usr/local/bin/gs"
+
+Latexmk
+: &nbsp;
+
+: "/usr/texbin/latexmk" -e "$latex=q/platex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/pbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+
+: "/usr/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+
+: "/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
+
+: "/usr/texbin/latexmk" -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -lualatex -silent %
+
+: "/usr/texbin/latexmk" -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -lualatex -silent %
+
+: "/usr/texbin/latexmk" -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -xelatex -silent %
+
+SVN
+: &nbsp;
+
+: svn
+
+SVNADMIN
+: &nbsp;
+
+: svnadmin
+
+***
+
+<!-- *関連リンク [#r167bf94] -->
+<!--  -->
+<!-- -http://tex.stackexchange.com/questions/38627/commands-paths-in-texstudio-on-mac-os-x-with-could-not-start-the-command-err -->
