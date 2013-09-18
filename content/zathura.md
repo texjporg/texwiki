@@ -32,26 +32,26 @@ Linux, BSD
 
 ### License {#v6901e72}
 
-[zlib/libpng License](http://git.pwmt.org/?p=zathura.git;a=blob;f=LICENSE;hb=HEAD)
+[zlib/libpng License](https://git.pwmt.org/?p=zathura.git;a=blob;f=LICENSE;hb=HEAD)
 
 ### リリース情報 {#p5c718a4}
 
 [News](http://pwmt.org/news/) を参照．<br>
 
-Version 0.2.2 で [SyncTeX (forward search) の対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b)の実装をはじめました (work in progress)．<br>
-Version 0.2.1 で [SyncTeX (inverse search) に対応](http://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
+Version 0.2.2 で [SyncTeX (forward search) の対応](https://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b)の実装をはじめました (work in progress)．<br>
+Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
 ### ChangeLog {#fdab5877}
 
 #### zathura {#wf24e546}
 
-- [git.pwmt.org Git - zathura.git/shortlog](http://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
-- [git.pwmt.org Git - zathura.git/summary](http://git.pwmt.org/?p=zathura.git) (master)
+- [git.pwmt.org Git - zathura.git/shortlog](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
+- [git.pwmt.org Git - zathura.git/summary](https://git.pwmt.org/?p=zathura.git) (master)
 
 #### girara {#l7dfb095}
 
-- [git.pwmt.org Git - girara.git/shortlog](http://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
-- [git.pwmt.org Git - girara.git/summary](http://git.pwmt.org/?p=girara.git;a=summary) (master)
+- [git.pwmt.org Git - girara.git/shortlog](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
+- [git.pwmt.org Git - girara.git/summary](https://git.pwmt.org/?p=girara.git;a=summary) (master)
 
 ### 派生版 {#oea86148}
 
