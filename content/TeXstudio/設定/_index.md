@@ -18,6 +18,12 @@ pukiwiki: "TeXstudio/設定"
 
 高度なオプションの表示をチェックすると詳細設定ができます．<br>
 
+```
+高度なオプションを有効化しました。
+これで詳細にTXSを設定することが可能です。
+一般的な設定のみを見るには再度高度なオプションを無効化してください。
+```
+
 ### コマンド {#yc27e161}
 
 {{< children >}}
@@ -90,10 +96,17 @@ SVN<br>
 
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
+メタコマンド<br>
+
 ビルド &amp; 表示
 : DVI->PDFチェーン
 
 <!-- :既定のコンパイラ|LaTeX -->
+
+ユーザーコマンド<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[　 追加 　\]</span><br>
+
+***
 
 #### ☑ 高度なオプションの表示 の場合 {#x0fa4d02}
 
@@ -175,10 +188,23 @@ SVN<br>
 
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
+メタコマンド<br>
+
 ビルド &amp; 表示
 : txs:///dvi-pdf-chain
 
 <!-- :既定のコンパイラ|txs:///latex (☑ 高度なオプションの表示 の場合) -->
+
+ユーザーコマンド<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[　 追加 　\]</span><br>
+
+ビルドオプション<br>
+☑ コンパイル前に参考文献を確認・更新<br>
+☑ コンパイル開始時にメッセージを表示<br>
+☐ すでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しない<br>
+標準出力に表示:<br>
+コンパイルの繰り返しの最大数:<br>
+☐ 追加の検索パス:<br>
 
 ***
 
@@ -248,7 +274,14 @@ SVN<br>
 
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
-☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす
+エディタ<br>
+フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
+フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+既定のフォントエンコーディング:<br>
+　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
+字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+二重引用符の置換:　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす<br>
 
 ***
 
@@ -332,6 +365,16 @@ SVN<br>
 
 <span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
-☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす
+エディタ<br>
+フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
+フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+行間隔:　　　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
+　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
+字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+二重引用符の置換:　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす<br>
+☑ 非テキスト環境でのスペルミスを隠す　　　　　　　　　　　　　　　　　　　☑ 非テキスト環境での文法エラーを隠す<br>
+☐ 含まれるファイルを自動的に読み込む<br>
 
 ***
