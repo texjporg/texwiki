@@ -27,6 +27,9 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipdfm-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/ChangeLog?view=markup)
+- \[[texlive\] Index of /trunk/Build/source/texk/dvipdf-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/?view=log)
+    - [CangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/ChangeLog?view=markup)
 
 ## 不具合 {#mb96765c}
 
