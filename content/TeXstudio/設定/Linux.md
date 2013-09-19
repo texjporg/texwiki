@@ -237,7 +237,7 @@ Makeindex
 : makeindex %.idx
 
 Texindy
-: texindy
+: texindy %.idx
 
 Makeglossary
 : &nbsp;
