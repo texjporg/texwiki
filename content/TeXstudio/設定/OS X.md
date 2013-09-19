@@ -237,7 +237,7 @@ Makeindex
 : "/usr/texbin/makeindex" %.idx
 
 Texindy
-: "/usr/texbin/texindy"
+: "/usr/texbin/texindy" %.idx
 
 Makeglossary
 : &nbsp;
