@@ -243,7 +243,7 @@ Makeindex
 : makeindex.exe %.idx
 
 Texindy
-: texindy.exe
+: texindy.exe %.idx
 
 Makeglossary
 : &nbsp;
