@@ -207,21 +207,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.4/libpng-1.6.4.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.5/libpng-1.6.5.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.4.tar.xz
-$ tar xvf libpng-1.6.4.tar.xz
-$ pushd libpng-1.6.4
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.5.tar.xz
+$ tar xvf libpng-1.6.5.tar.xz
+$ pushd libpng-1.6.5
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.4/libpng-1.6.4.tar.xz -->
-<!-- $ tar xvf libpng-1.6.4.tar.xz -->
-<!-- $ pushd libpng-1.6.4 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.5/libpng-1.6.5.tar.xz -->
+<!-- $ tar xvf libpng-1.6.5.tar.xz -->
+<!-- $ pushd libpng-1.6.5 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
@@ -829,9 +829,9 @@ $ popd
 - [gettext](http://www.gnu.org/software/gettext/) をインストールします．
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.tar.gz
-$ tar xvf gettext-0.18.3.tar.gz
-$ pushd gettext-0.18.3
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.1.tar.gz
+$ tar xvf gettext-0.18.3.1.tar.gz
+$ pushd gettext-0.18.3.1
 $ ./configure --prefix=/mingw
 ```
 
