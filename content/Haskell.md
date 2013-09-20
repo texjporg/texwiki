@@ -26,6 +26,7 @@ pukiwiki: "Haskell"
 - [Haskellで文字列を UTF-32 ⇔UTF-16 変換する。](http://d.hatena.ne.jp/sirocco/20130416/1366103044)
 - [Haskellで副作用を起こす(Win32 API によるUTF-16 ⇔ Shift-JIS 変換)](http://d.hatena.ne.jp/sirocco/20130422/1366632065)
 - [島ぶくろ　 Haskellプログラミング](http://saltheads.blog134.fc2.com/blog-category-16.html)
+- [unsafePerformIOでunsafeなグローバル変数を作る。](http://d.hatena.ne.jp/napthats/20120426/1335416167)
 - [Haskellの構造体をCと同期させる](http://tsubaki.hatenablog.com/entry/20110112/1294759187)
 - [Haskell@Windowsのコンソールで日本語が文字化けする話の対策](http://tsubaki.hatenablog.com/entry/2013/02/20/090115)
 - [How do I use Haskell's FFI on structs?](http://stackoverflow.com/questions/670221/how-do-i-use-haskells-ffi-on-structs)
@@ -40,6 +41,7 @@ pukiwiki: "Haskell"
 - [http://stackoverflow.com/questions/6009384/exception-handling-in-haskell](http://stackoverflow.com/questions/6009384/exception-handling-in-haskell)
 - [http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell](http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell)
 - [48時間でSchemeを書こう](http://ja.wikibooks.org/wiki/48%E6%99%82%E9%96%93%E3%81%A7Scheme%E3%82%92%E6%9B%B8%E3%81%93%E3%81%86)
+- [Haskellの勉強をしていたら、Elixirのパイプライン演算子がF#由来であることを知った](http://d.hatena.ne.jp/ajiyoshi/20130127/1359284684)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
@@ -247,15 +249,16 @@ xTYP_EXECUTE = 0x0050 .|. xCLASS_FLAGS
 timeout :: CInt
 timeout = 10000
 
+{-# NOINLINE existSumatraHWND #-}
 existSumatraHWND :: IORef Bool
-existSumatraHWND = do
-    let e = unsafePerformIO $ newIORef False
-    e
+existSumatraHWND = unsafePerformIO $ newIORef False
 
 runSumatraPDF :: String -> IO Bool
 runSumatraPDF pdf = do
-    enumWindows (unsafePerformIO $ mkEnumWindowsProc getSumatraHWND) lParam
-    case unsafePerformIO $ readIORef existSumatraHWND of
+    enumwindowsproc <- mkEnumWindowsProc getSumatraHWND
+    enumWindows enumwindowsproc lParam
+    existSumatraPDF <- readIORef existSumatraHWND
+    case existSumatraPDF of
         True  -> return True
         False -> do
             findSumatraPDFInRegistry
@@ -361,7 +364,8 @@ ddeExecute server topic command = do
 
         getIdInstance = do
             alloca $ \p_idInstance -> do
-                e <- ddeInitializeW p_idInstance (unsafePerformIO $ mkDdeCallback sumatraDdeCallback) aPPCMD_CLIENTONLY 0
+                ddecallback <- mkDdeCallback sumatraDdeCallback
+                e <- ddeInitializeW p_idInstance ddecallback aPPCMD_CLIENTONLY 0
                 idInstance <- peek p_idInstance
                 if idInstance == 0 || e /= 0 then do
                     throwIO $ userError "ddeInitializeW Error"
