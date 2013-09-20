@@ -8,3 +8,5 @@ pukiwiki: "Objective-C"
 # Objective-C
 
 ## Objective-C {#ed0ebb7e}
+
+- [Wikipedia.ja:Objective-C](https://ja.wikipedia.org/wiki/Objective-C)
