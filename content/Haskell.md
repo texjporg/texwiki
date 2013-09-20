@@ -39,6 +39,7 @@ pukiwiki: "Haskell"
 - [Haskell での例外処理](http://d.hatena.ne.jp/kazu-yamamoto/20120604/1338802792), [Haskellでの例外処理(その2)](http://d.hatena.ne.jp/kazu-yamamoto/20120605/1338871044)
 - [http://stackoverflow.com/questions/6009384/exception-handling-in-haskell](http://stackoverflow.com/questions/6009384/exception-handling-in-haskell)
 - [http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell](http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell)
+- [48時間でSchemeを書こう](http://ja.wikibooks.org/wiki/48%E6%99%82%E9%96%93%E3%81%A7Scheme%E3%82%92%E6%9B%B8%E3%81%93%E3%81%86)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
@@ -89,7 +90,7 @@ import Foreign.ForeignPtr
 import Foreign.Storable
 
 foreign import ccall "wchar.h wcscmp"
-    c_wcscmp :: CWString -> CWString -> IO (CInt)
+    c_wcscmp :: CWString -> CWString -> IO CInt
 foreign import ccall "wchar.h wcsrchr"
     c_wcsrchr :: CWString -> CWchar -> IO (Ptr CWchar)
 foreign import stdcall "windows.h GetWindowTextW"
@@ -246,14 +247,18 @@ xTYP_EXECUTE = 0x0050 .|. xCLASS_FLAGS
 timeout :: CInt
 timeout = 10000
 
+existSumatraHWND :: IORef Bool
+existSumatraHWND = do
+    let e = unsafePerformIO $ newIORef False
+    e
+
 runSumatraPDF :: String -> IO Bool
 runSumatraPDF pdf = do
-    let sumatraPDFNotFound = unsafePerformIO (enumWindows (unsafePerformIO $ mkEnumWindowsProc getSumatraHWND) lParam)
-    if sumatraPDFNotFound
-        then do
+    enumWindows (unsafePerformIO $ mkEnumWindowsProc getSumatraHWND) lParam
+    case unsafePerformIO $ readIORef existSumatraHWND of
+        True  -> return True
+        False -> do
             findSumatraPDFInRegistry
-            return True
-        else do
             return True
     where
         sumatrapdfWin32 = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"
@@ -278,7 +283,8 @@ runSumatraPDF pdf = do
                         then do
                             cmp <- c_wcscmp title sumatrapdf
                             if cmp == 0 then do
-                                return False
+                                writeIORef existSumatraHWND True
+                                return True
                             else do
                                 return True
                         else do
