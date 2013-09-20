@@ -13,11 +13,13 @@ pukiwiki: "Ruby"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-- [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
-- [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+## Ruby 2.0 {#z9c2e043}
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
 convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
+
+- [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
+- [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
 
 ## インストール {#oe1e1c67}
 
@@ -40,3 +42,7 @@ ruby.exe を C:\Ruby200-x64\bin にインストールした場合は
 ```
 
 を環境変数 PATH に追加します
+
+## mruby (組み込み向け Ruby) {#we4042fb}
+
+- [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
