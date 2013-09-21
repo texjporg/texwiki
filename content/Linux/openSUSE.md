@@ -35,6 +35,17 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 
 - [Linux](/Linux/#texlive2013)
 
+### TeX Live 2013/TeX Live for SUSE Linux {#y0f6032d}
+
+#### openSUSE 13.1 {#i8bbf7fd}
+
+YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
+zypper を使用しても OK です．<br>
+
+```
+$ sudo zypper install texlive-scheme-full
+```
+
 ## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
