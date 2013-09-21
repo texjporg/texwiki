@@ -32,6 +32,7 @@ pukiwiki: "C++"
 - [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
 - [32bit プロセスは 64bit プロセスを見つけられない](http://d.hatena.ne.jp/tt_clown/20110416/1302927489)
 - [http://www.slideshare.net/adankevich/c11-15621074](http://www.slideshare.net/adankevich/c11-15621074)
+- [You cannot override a class (static) constant](https://gist.github.com/MihailJP/4236262)
 
 ### 処理系 {#zc4c802d}
 
