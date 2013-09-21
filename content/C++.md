@@ -44,9 +44,7 @@ pukiwiki: "C++"
 ### ライブラリ・フレームワーク {#se7f734e}
 
 - [Boost](http://www.boost.org/)
-- [Qt](http://qt-project.org/)
-    - [Qt関連情報](http://uilabo.web.fc2.com/Qt/index.html)
-    - [Connect to DDE Server](http://qt-project.org/forums/viewthread/16309/)
+- [Qt](/Qt/)
 
 ### IDE・エディタ {#a35a736d}
 
