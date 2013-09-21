@@ -17,4 +17,5 @@ pukiwiki: "Go"
 - [http://golang.org/src/pkg/syscall/syscall_windows.go](http://golang.org/src/pkg/syscall/syscall_windows.go)
 - [https://github.com/lxn/win](https://github.com/lxn/win)
 - [https://github.com/AllenDang/w32](https://github.com/AllenDang/w32)
+- [unsafeでポインタを使って構造体のプライベートフィールドの値を書き換える例。](https://gist.github.com/hnakamur/6648237)
 - [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
