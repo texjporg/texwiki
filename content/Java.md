@@ -28,6 +28,12 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 
 もあります．
 
+### ライブラリ {#t5f9c39b}
+
+- [Java Native Access (JNA)](https://github.com/twall/jna)
+- [JDDE (Dynamic Data Exchange For Java)](http://jdde.pretty-tools.com/)
+    - [http://sourceforge.net/projects/jdde/](http://sourceforge.net/projects/jdde/)
+
 ## 関連リンク {#g6fed84c}
 
 - [雑把の仮想マシン(JVM, .NET, BEAM, スクリプト言語, LLVM)](http://yohshiy.blog.fc2.com/blog-entry-238.html)
