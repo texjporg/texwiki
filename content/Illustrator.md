@@ -27,11 +27,25 @@ pukiwiki: "Illustrator"
 
 #### ai/PDF 形式ファイル {#l3862bb1}
 
-最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままでも OK。<br>
-TeX Live 2014 (→ TeX Live [revision 31722](http://www.tug.org/svn/texlive?view=revision&revision=31722) を参照) 以降は dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
-なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報が内部に書き込まれており（描かれている図形ぴったりの矩形サイズの値）、TeX文書内への図の挿入は EPS ファイルの場合と同様に処理される（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。<br> <!-- 従って、TeX文書内への図の挿入は EPS ファイルの場合と同様に処理される（[[TeX入門/図表]]も参照のこと）。 --> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
+最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。<br>
+TeX Live 2014 (→ TeX Live [revision 31722](http://www.tug.org/svn/texlive?view=revision&revision=31722) を参照) 以降, W32TeX \[2013/09/22\] 以降は dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
+なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。<br>
+TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
+
+dvipdfmx.def \[2013/09/21 v3.3 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] の場合
+
+```
+%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
+\documentclass{article}
+\usepackage[dvipdfmx]{graphicx}
+\begin{document}
+\includegraphics{hoge.ai}
+\end{document}
+```
+
+dvipdfmx.def \[2013/05/27 v3.2 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] の場合
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
