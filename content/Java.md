@@ -34,6 +34,10 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 - [JDDE (Dynamic Data Exchange For Java)](http://jdde.pretty-tools.com/)
     - [http://sourceforge.net/projects/jdde/](http://sourceforge.net/projects/jdde/)
 
+### IDE {#efcb0c41}
+
+- [Eclipse](/Eclipse/)
+
 ## 関連リンク {#g6fed84c}
 
 - [雑把の仮想マシン(JVM, .NET, BEAM, スクリプト言語, LLVM)](http://yohshiy.blog.fc2.com/blog-entry-238.html)
