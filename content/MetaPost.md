@@ -50,6 +50,10 @@ web2c 配布にも MetaPost のマニュアルが入っています。
 
 #### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される {#c01c14c0}
 
+```
+(最近の W32TeX ではフィックスされている。)
+```
+
 - [TeXLive 2013のmf2pt1がおかしい件](http://qiita.com/_yyu_/items/b1fac90074545ccee727)
 
 ### MetaPostプログラミング入門 {#p3fbc416}
@@ -451,4 +455,5 @@ TeX Live 2013 では MetaPost のバージョンは 1.803 になっています�
 - [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
 - [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
 - [TeX&amp;MetaPostであそぼう](http://homepage2.nifty.com/domae/)(みなもさんによるMePoTeX 配布など)
+- [MetaPost Basics: Drawing lines, curves and shapes and using color](http://www.latex-community.org/component/content/article/61-latexs-friends-others/486-metapost-lines-curves-shapes-color)
 - [Function Grapher](http://www.tlhiv.org/mpgraph/) WEB application by MetaPost
