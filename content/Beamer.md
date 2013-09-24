@@ -32,7 +32,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 Beamer は
 
 - [TeX Live](</TeX Live/>)
-- [W32TeX](/W32TeX/) (2011/09/19 以降)
+- [W32TeX](/W32TeX/)
 - [MiKTeX](/MiKTeX/)
 
 で利用可能です．
@@ -112,20 +112,17 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### [TikZ and PGF](/TikZ/) {#o6f8726a}
 
-- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - e-TeX 拡張が必要 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
 
 ### [xcolor](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
-- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
 - [All about colors](http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html#node_sec_25)
 
 ### [extsizes](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/extsizes.html) {#e19a97f8}
 
-- 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
 - [CTAN:help/Catalogue/entries/extsizes.html](https://mirror.ctan.org/help/Catalogue/entries/extsizes.html)
 
 ### [LaTeX beamerposter](http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php) {#pabd14ab}
