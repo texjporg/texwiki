@@ -21,6 +21,11 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 - [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
 
+### 派生版 {#w5708e1c}
+
+- [JRuby](http://jruby.org/)
+- [Rubinius](http://rubini.us/)
+
 ## インストール {#oe1e1c67}
 
 ### Windows {#j2a4eaa7}
