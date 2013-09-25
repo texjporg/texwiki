@@ -23,6 +23,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 
 ### 派生版 {#w5708e1c}
 
+- [IronRuby](http://ironruby.codeplex.com/)
 - [JRuby](http://jruby.org/)
 - [Rubinius](http://rubini.us/)
 
