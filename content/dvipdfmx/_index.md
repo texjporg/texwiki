@@ -133,7 +133,7 @@ I 24
 のように設定しておきます。<br>
 この場合、一日以内ならキャッシュにイメージがある場合、それを使用することを意味しています。<br>
 
-### dvipdfmx に dvipdfm, extractbb, xbb, ebb などの名前でシンボリックリンクを作成する {#k882a214}
+### dvipdfmx に extractbb などの名前でシンボリックリンクを作成する {#k882a214}
 
 - [#美文書 １１５ページ、「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://twitter.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://twitter.com/ti5942/status/273742359915794432)
 
