@@ -15,14 +15,15 @@ pukiwiki: "TikZ"
 
 PGF (Portable Graphics Format) は、Till Tantau（Beamerのオリジナルの開発者） および Mark Wibrow, Christian Feuers&auml;nger を中心として開発されているTeX用の描画パッケージです。<br>
 PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します。<br>
-Beamer が基礎としている描画エンジンもPGFです。
+Beamer が基礎としている描画エンジンもPGFです。<br>
 
-また、R や gnuplot と連携させて描画させることもできます。
+また、R や gnuplot と連携させて描画させることもできます。<br>
 
-PGF/TikZ が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）PGF/TikZ 自身が持っているライブラリで機能が拡充されるほか、PGF/TikZ を利用し、拡張するパッケージも数多く作られています。（PGFPlots, TikZ-dependency, tkz-euclideなど。）
-同じく高度な描画機能を持っている[PSTricks](/PSTricks/)との大きな違いは、（psを経由せずに）PDF を作成できる点です。
+PGF/TikZ が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）<br>
+PGF/TikZ 自身が持っているライブラリで機能が拡充されるほか、PGF/TikZ を利用し、拡張するパッケージも数多く作られています。（PGFPlots, TikZ-dependency, tkz-euclideなど。）<br>
+同じく高度な描画機能を持っている[PSTricks](/PSTricks/)との大きな違いは、（psを経由せずに）PDF を作成できる点です。<br>
 
-PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。
+PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
 
 - [Altermundus tkz-base](http://altermundus.com/pages/builds/)
     - [ChangeLog](http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog)
@@ -30,7 +31,6 @@ PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
-    - 2011/09/20 以降の [W32TeX](/W32TeX/) には標準で含まれています．
     - [e-TeX](/e-TeX/) 拡張が必要です． ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
     - [TeX Live](</TeX Live/>) 2012 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
 
