@@ -35,3 +35,7 @@ Lua は パワフル・高速・軽量で組み込み可能なスクリプト言
 
 - [LuaJIT](http://luajit.org/)
 - [LuaJITでWindowsアプリ](http://d.hatena.ne.jp/jeg/20130406/1365266391)
+
+## 関連リンク {#c11edac0}
+
+- [LuaスクリプトとDLLをラッパーするEXEを作る](http://asdf.wkeya.com/code/lua.html)
