@@ -23,6 +23,8 @@ Python で書かれたスクリプトを実行するには Python の処理系�
 
 ### 派生版 {#h517ae27}
 
+- [IronPython](http://ironpython.codeplex.com/)
+- [Jython](http://www.jython.org/)
 - [PyPy](http://pypy.org/)
 - [Cython](http://cython.org/)
 
