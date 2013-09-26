@@ -11,7 +11,9 @@ pukiwiki: "Emacs/Org mode"
 
 ## [Org mode](http://orgmode.org/) {#d6cfda4f}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Org-mode-unicorn.svg/200px-Org-mode-unicorn.svg.png" alt="Org mode" style="float:right">
+<img src="http://orgmode.org/img/org-mode-unicorn-logo.png" alt="Org mode" style="float:right">
+
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Org-mode-unicorn.svg/200px-Org-mode-unicorn.svg.png,right,around,nolink,Org mode) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
