@@ -46,6 +46,72 @@ zypper を使用しても OK です．<br>
 $ sudo zypper install texlive-scheme-full
 ```
 
+/usr/share/texmf/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
+/usr/share/texmf/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/share/texmf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/share/texmf/web2c
+$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,upmpost,\
+repstopdf,epspdf,extractbb,\
+```
+
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+nkf をインストールします．<br>
+
+```
+$ sudo zypper install nkf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
+
+```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
+...
+% guess input enc
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
+dvipdfmx を実行して
+
+```
+** WARNING ** Could not open config file "dvipdfmx.cfg".
+```
+
+が表示される場合は TeX Live 2013/TeX Live for SUSE Linux を使用せずに TeX Live 2013 を使用してください．<br>
+
 ## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
