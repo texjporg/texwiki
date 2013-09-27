@@ -42,7 +42,7 @@ WinShell には
 
 ### 動作環境 {#f8ed906d}
 
-Windows 8.1, 8, 7, Vista, XP, 2000
+Windows 8.1, 8, 7, Vista, XP
 
 ### リリース情報/ChangeLog {#yc18b30c}
 
