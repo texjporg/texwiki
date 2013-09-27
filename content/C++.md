@@ -11,7 +11,7 @@ pukiwiki: "C++"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## C++14, C++11, C++03, C++98 {#g7125441}
+## C++14, C++11 {#g7125441}
 
 - [http://www.stroustrup.com/](http://www.stroustrup.com/)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
