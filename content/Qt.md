@@ -10,6 +10,8 @@ pukiwiki: "Qt"
 ## Qt {#i2e83951}
 
 - [Qt](http://qt-project.org/)
+- [https://qt.gitorious.org/](https://qt.gitorious.org/)
+- [Wikipedia.ja:Qt](https://ja.wikipedia.org/wiki/Qt)
 - [http://qt-project.org/wiki](http://qt-project.org/wiki)
     - [http://qt-project.org/wiki/Category:LanguageBindings](http://qt-project.org/wiki/Category:LanguageBindings)
 - [http://qt5.jp/](http://qt5.jp/)
