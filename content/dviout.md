@@ -29,7 +29,7 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 ### 動作環境 {#n7f5a256}
 
-Windows 8.1, 8, 7, Vista, XP, 2000, NT, Me, 98, 95<br>
+Windows 8.1, 8, 7, Vista, XP<br>
 
 ### License {#w9d4ec9d}
 
