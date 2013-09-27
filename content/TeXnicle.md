@@ -114,4 +114,5 @@ Live Update を有効にしておくと、修正するたびに自動でコン�
 
 ## 関連リンク {#ba4bf8c9}
 
+- [http://koemu.hatenablog.jp/search?q=TeXnicle](http://koemu.hatenablog.jp/search?q=TeXnicle)
 - [TeXnicleの設定](http://www.sekailab.com/wp/2013/06/27/texnicle-setting/)
