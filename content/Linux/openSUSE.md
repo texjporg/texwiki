@@ -104,13 +104,56 @@ $ tail /usr/local/share/texmf/web2c/texmf.cnf
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
+TeX Live 2013 では kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+
+```
+$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+```
+
 dvipdfmx を実行して
 
 ```
 ** WARNING ** Could not open config file "dvipdfmx.cfg".
 ```
 
-が表示される場合は TeX Live 2013/TeX Live for SUSE Linux を使用せずに TeX Live 2013 を使用してください．<br>
+が表示される場合は dvipdfmx.cfg を適切な場所 (例えば TeX ファイルと同じディレクトリなど) に配置すれば表示されなくなります．<br>
+dvipdfmx.cfg は
+
+```
+$ kpsewhich --progname=dvipdfmx --format=othertext dvipdfmx.cfg
+```
+
+で検索できます．<br>
+
+## [Poppler](/Poppler/) {#dae12f15}
+
+```
+$ sudo zypper install poppler-data
+```
+
+openSUSE の Evince, Okular, Texmaker, TeXworks などの Poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
+[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+
+## [Evince](/Evince/) {#p27ad2e3}
+
+```
+$ sudo zypper install evince
+```
+
+## [Okular](/Okular/) {#kfc5a9bf}
+
+```
+$ sudo zypper install okular
+```
 
 ## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
 
