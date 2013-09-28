@@ -125,6 +125,7 @@ Ghostscript/OS X を参照．
 - [情報工学特別講義 II](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/)
     - [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
     - [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
+- [http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc](http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc)
 
 ## Comment {#z51688d5}
 
