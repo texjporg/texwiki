@@ -114,10 +114,6 @@ Ghostscript/OS X を参照．
 
 ## 関連リンク {#we8f22aa}
 
-- [Ghostscript + GSview の日本語版](http://www.khotta.org/ghost/) /
-    [ミラーサイト](http://khotta.digiweb.jp/ghost/)（堀田 耕作さん@愛知教育大・数学）
-    ［TeX，Ghostscript，GSview， mathabx，gnuplot，象形文字フォントについて］
-
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/gs.html)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
