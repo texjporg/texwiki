@@ -17,3 +17,6 @@ pukiwiki: "PHP"
 
 - 日本PHPユーザー会 (Japan PHP User Group)
     - [http://www.php.gr.jp/](http://www.php.gr.jp/)
+
+- Phalanger – the PHP compiler for .NET
+    - [http://www.php-compiler.net/](http://www.php-compiler.net/)
