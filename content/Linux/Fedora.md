@@ -165,7 +165,7 @@ $ sudo yum install perl perl-Digest-MD5
 $ sudo yum install evince
 ```
 
-Fedora の Evince, Okular, zathura, qpdfview, Texmaker, TeXworks などの poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
+Fedora の Evince, Okular, zathura, qpdfview, TeXstudio, Texmaker, TeXworks などの poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Okular](/Okular/) {#k7d05705}
