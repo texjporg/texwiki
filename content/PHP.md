@@ -20,3 +20,6 @@ pukiwiki: "PHP"
 
 - Phalanger – the PHP compiler for .NET
     - [http://www.php-compiler.net/](http://www.php-compiler.net/)
+
+- [PHP による Web プログラミング](http://oku.edu.mie-u.ac.jp/~okumura/php/)
+- [PHPBook](http://www.phpbook.jp/)
