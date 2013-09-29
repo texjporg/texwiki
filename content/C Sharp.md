@@ -13,12 +13,13 @@ pukiwiki: "C Sharp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## C# 5.0, C# 4.0 {#h89884a4}
+## C# 5.0 {#h89884a4}
 
 - [http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx)
 - [http://ufcpp.net/study/csharp/](http://ufcpp.net/study/csharp/)
 - [http://www.wgag.net/csharp/](http://www.wgag.net/csharp/)
+- [C# Advent Calender 2012](http://atnd.org/events/33905)
 
 ## C# コンパイラ {#h8ce0ca0}
 
