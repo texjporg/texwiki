@@ -124,10 +124,10 @@ GNU Emacs は，フリーソフトウェアです．<br>
 ### その他の TeX に関する便利な elisp {#s94c0123}
 
 - [EmacsWiki: Category Tex](http://www.emacswiki.org/emacs/CategoryTex)
+- [Org mode](</Emacs/Org mode/>) Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
 - [YASnippet](/YASnippet/) スニペットプラグイン
 - [AUCTeX](/AUCTeX/) GNU Emacs や XEmacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/) Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
-- [Org mode](</Emacs/Org mode/>) Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs や Meadow でプレビューするための Emacs Lisp
     - [Windows XP で latex-math-preview.el を使う](http://transitive.info/software/latex-math-preview/meadow/)
     - [EmacsWiki:LaTeXMathPreview](http://www.emacswiki.org/emacs/LaTeXMathPreview)
