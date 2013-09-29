@@ -8,3 +8,5 @@ pukiwiki: "Erlang"
 # Erlang
 
 ## Erlang {#p7d55e0c}
+
+- [Erlang Programming Language](http://www.erlang.org/)
