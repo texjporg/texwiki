@@ -33,6 +33,7 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 - [Java Native Access (JNA)](https://github.com/twall/jna)
 - [JDDE (Dynamic Data Exchange For Java)](http://jdde.pretty-tools.com/)
     - [http://sourceforge.net/projects/jdde/](http://sourceforge.net/projects/jdde/)
+- [JRegistry](http://sourceforge.net/projects/jregistry/)
 
 ### IDE {#efcb0c41}
 
