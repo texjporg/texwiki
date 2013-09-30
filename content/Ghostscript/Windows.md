@@ -473,6 +473,11 @@ CID font file は，ファイル名を拡張子無しの PostScript 名に変え
 
 代替をさせず，ps file に HeiseiMin-W3 が指定されていてそれをそのまま用いる場合には cidfmap には何も記述しません．
 
+```
+CID フォントを用いる場合，経験によるとエラーになるかもしれません．
+オリジナル ソースに存在するバグと思われます．
+```
+
 ### 日本語 OpenType font {#j4509a9f}
 
 ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．
@@ -497,7 +502,14 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 
 という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
 
-なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．
+なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．また W32TeX における 2013/10/01 以降の dvipsk-w32.tar.xz, dvipsk-w64.tar.xz
+に入っている ps2otfps.exe を用いて
+
+```
+ps2otfps old.ps new.ps
+```
+
+によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます．
 
 ### 日本語 TrueType font {#wbee8199}
 
@@ -519,7 +531,17 @@ cidfmap でのフォント代替の記述は CID font の場合と同様です�
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(rungs --version)\Resource\Font\ に
+[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．
+
+```
+W32TeX に入れられたプログラム ps2otfps.exe を使用する場合，以下の作業は
+一切不要です．
+ps2otfps old.ps new.ps
+によって，dvips が出力した old.ps を変換して new.ps を作成します．
+この new.ps を Ghostscript で取り扱うことができます。
+```
+
+例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(rungs --version)\Resource\Font\ に
 
 ```
 /Ryumin-Light-Identity-H /Identity-H [/Ryumin-Light] composefont pop
