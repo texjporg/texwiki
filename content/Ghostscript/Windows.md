@@ -976,13 +976,13 @@ D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=
 [W32TeX](/W32TeX/) の場合は $TEXMF/dvipdfmx/config/dvipdfmx.cfg の記述内容の38行目
 
 ```
-D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f '%i' -c quit"
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f '%i' -c quit"
 ```
 
 に次のように “-f neverembed.ps ” を挿入します。
 
 ```
-D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f neverembed.ps -f '%i' -c quit"
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f neverembed.ps -f '%i' -c quit"
 ```
 
 ### PDF への欧文用フォントの埋め込み制御 {#y3b70de6}
