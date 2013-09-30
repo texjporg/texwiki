@@ -207,21 +207,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.5/libpng-1.6.5.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.6/libpng-1.6.6.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.5.tar.xz
-$ tar xvf libpng-1.6.5.tar.xz
-$ pushd libpng-1.6.5
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.6.tar.xz
+$ tar xvf libpng-1.6.6.tar.xz
+$ pushd libpng-1.6.6
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.5/libpng-1.6.5.tar.xz -->
-<!-- $ tar xvf libpng-1.6.5.tar.xz -->
-<!-- $ pushd libpng-1.6.5 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.6/libpng-1.6.6.tar.xz -->
+<!-- $ tar xvf libpng-1.6.6.tar.xz -->
+<!-- $ pushd libpng-1.6.6 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
@@ -807,9 +807,9 @@ $ popd
 - [GLib](http://www.gtk.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.37/glib-2.37.93.tar.xz
-$ tar xvf glib-2.37.93.tar.xz
-$ pushd glib-2.37.93
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.38/glib-2.38.0.tar.xz
+$ tar xvf glib-2.38.0.tar.xz
+$ pushd glib-2.38.0
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
