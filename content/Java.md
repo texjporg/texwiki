@@ -43,3 +43,6 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 
 - [雑把の仮想マシン(JVM, .NET, BEAM, スクリプト言語, LLVM)](http://yohshiy.blog.fc2.com/blog-entry-238.html)
 - [JDKのインストール(Windows)と Java 関連用語の説明](http://yohshiy.blog.fc2.com/blog-entry-226.html)
+- [http://stackoverflow.com/questions/5826070/java-runtime-process-check-if-waiting-for-input](http://stackoverflow.com/questions/5826070/java-runtime-process-check-if-waiting-for-input)
+- [http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input](http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input)
+- [http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java](http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java)
