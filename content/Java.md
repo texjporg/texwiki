@@ -46,3 +46,4 @@ Java でプログラミングをしたい人は JDK をダウンロードして�
 - [http://stackoverflow.com/questions/5826070/java-runtime-process-check-if-waiting-for-input](http://stackoverflow.com/questions/5826070/java-runtime-process-check-if-waiting-for-input)
 - [http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input](http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input)
 - [http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java](http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java)
+- [http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna](http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna)
