@@ -10,3 +10,4 @@ pukiwiki: "Objective-C"
 ## Objective-C {#ed0ebb7e}
 
 - [Wikipedia.ja:Objective-C](https://ja.wikipedia.org/wiki/Objective-C)
+- [Objective-Cを絶対書きたくない人向けのiOSアプリ開発ソリューションの総括](http://d.hatena.ne.jp/laiso+iphone/20130624/1372093093)
