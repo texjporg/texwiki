@@ -16,7 +16,7 @@ pukiwiki: "SumatraPDF/fwdsumatrapdf"
 
 ## fwdsumatrapdf とは {#yd16dc0f}
 
-fwdsumatrapdf.exe は SumatraPDF で forward search を行うツールです．<br>
+fwdsumatrapdf は SumatraPDF で forward search を行うツールです．<br>
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 
 ### お知らせ {#ebfb06f5}
@@ -37,6 +37,10 @@ C++ を参照．<br>
 ### D 版 {#f4f68590}
 
 D を参照．<br>
+
+### Java 版 {#adf40b65}
+
+Java を参照．<br>
 
 ### VB 版 {#hc64ff38}
 
