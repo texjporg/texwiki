@@ -17,6 +17,7 @@ pukiwiki: "OCaml"
 - [http://stackoverflow.com/questions/tagged/ocaml](http://stackoverflow.com/questions/tagged/ocaml)
     - [http://stackoverflow.com/questions/1916433/what-does-mean-in-an-ocaml-external-declaration](http://stackoverflow.com/questions/1916433/what-does-mean-in-an-ocaml-external-declaration)
 - [http://wodi.forge.ocamlcore.org/](http://wodi.forge.ocamlcore.org/)
+- [http://www.linux-nantes.org/~fmonnier/ocaml/ocaml-wrapping-c.html](http://www.linux-nantes.org/~fmonnier/ocaml/ocaml-wrapping-c.html)
 - [C関数をラップしてOCamlに接続する方法 (How to wrap C functions to OCaml)](http://www.geocities.jp/harddiskdive/ocaml-wrapping-c/ocaml-wrapping-c.html)
 - [http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface](http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface)
 - [https://github.com/ocamllabs/ocaml-ctypes](https://github.com/ocamllabs/ocaml-ctypes)
