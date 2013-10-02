@@ -17,7 +17,7 @@ MinGW は "Minimalist GNU for Windows" の略語で Microsoft Windows アプリ�
 
 ## インストーラー {#x50e277a}
 
-[mingw-get-inst](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/)
+[http://sourceforge.net/projects/mingw/files/Installer/](http://sourceforge.net/projects/mingw/files/Installer/)
 
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
