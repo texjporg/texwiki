@@ -40,9 +40,7 @@ TeXlipse は
 
 ### リリース情報 {#f49b6dcf}
 
-2012-04-09 Pdf4Eclipse Version 1.1.0<br>
-2012-04-03 BibSonomy Version 2.0.23<br>
-2011-11-26 TeXlipse Version 1.5.0<br>
+[News](http://texlipse.sourceforge.net/news.php) を参照．<br>
 
 TeXlipse Version 1.4.2 以降は 64-bit Windows に対応しています．<br>
 
