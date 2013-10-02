@@ -12,6 +12,7 @@ pukiwiki: "Scala"
 - [The Scala Programming Language](http://www.scala-lang.org/)
 - [Better Java としての Scala](https://gist.github.com/Shinpeim/6740436)
 - [Effective Scala](http://twitter.github.io/effectivescala/)
+- [Java to Scala converter](http://javatoscala.com/)
 
 ### ライブラリ {#f02ba6e6}
 
