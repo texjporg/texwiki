@@ -20,6 +20,8 @@ pukiwiki: "Lisp"
 ## Common Lisp {#jce01653}
 
 - [Steel Bank Common Lisp (SBCL)](http://www.sbcl.org/)
+- [Armed Bear Common Lisp (ABCL)](http://abcl.org/)
+- [Common Lispマニュアルまとめ](http://matome.naver.jp/odai/2133444895364254901)
 - [Common LISP users jp](http://cl.cddddr.org/)
     - [処理系:日本語の扱い - Common LISP users jp](http://cl.cddddr.org/index.cgi?%E5%87%A6%E7%90%86%E7%B3%BB%3A%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E6%89%B1%E3%81%84)
 
