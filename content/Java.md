@@ -19,6 +19,7 @@ pukiwiki: "Java"
 - [http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input](http://stackoverflow.com/questions/10765928/java-how-to-know-if-a-process-is-waiting-for-input)
 - [http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java](http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java)
 - [http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna](http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna)
+- [Java/「現在ディレクトリ」(Current Working Directory)の変更](http://www.glamenv-septzen.net/view/1213)
 
 ### Java™ Platform, Standard Edition (JRE &amp; JDK) {#o8881b8e}
 
