@@ -534,11 +534,19 @@ ps2otfps old.ps new.ps
 [OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．
 
 ```
-W32TeX に入れられたプログラム ps2otfps.exe を使用する場合，以下の作業は
-一切不要です．
+(注意!!)
+W32TeX に入れられたプログラム ps2otfps.exe を使用する場合，
+.../Resource/Font/ に沢山のファイルを作成するという以下の作業は一切不要です．
 ps2otfps old.ps new.ps
 によって，dvips が出力した old.ps を変換して new.ps を作成します．
-この new.ps を Ghostscript で取り扱うことができます。
+この new.ps を Ghostscript で取り扱うことができます．
+但し，OpenType フォントファイルを PostScript 名に変換したファイルを
+.../Resource/CIDFont/
+にコピーしておくという作業だけは必要です．
+OpenType フォントの PostScript 名は
+otfinfo -p OpenTypeFontFile
+とすると表示されます．また dvips 用の map ファイルは PostScript 名で
+書いておきます．
 ```
 
 例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(rungs --version)\Resource\Font\ に
