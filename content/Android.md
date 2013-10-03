@@ -19,6 +19,7 @@ pukiwiki: "Android"
 
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
+    - [TeX, Live, for, Android を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX+Live+for+Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
 - [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate), [TeXPortal (TeXポータル)](https://play.google.com/store/apps/details?id=lah.texportal)
     - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
