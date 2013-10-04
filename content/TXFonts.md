@@ -30,19 +30,7 @@ TeX Live には newtx, boondox, fontaxes パッケージが最初からインス
 
 #### W32TeX {#h170776e}
 
-W32TeX には newtx, boondox パッケージが含まれていないので手動でインストールします。<br>
-
-newtx と boondox パッケージを C:\w32tex\share\texmf-local ディレクトリ配下の適切な場所に配置します。<br>
-
-newtx は内部で fontaxes.sty を呼ぶようなので、これもインストールします。
-
-コマンドプロンプトで
-
-> updmap --add newtx.map boondox.map
-
-とします。
-
-（W32TeX に入れてくれるとうれしいな）
+W32TeX には newtx, boondox, fontaxes パッケージが最初からインストールされています．<br>
 
 ### 使い方 {#rcf88e0c}
 
