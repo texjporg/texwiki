@@ -38,13 +38,6 @@ GPL
 - [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
 
 <!-- *不具合 [#i75be8c7] -->
-<!--  -->
-<!-- **TeX ファイルと TeXShop アイコンの関連付けができない → [[自己解決しました:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004&parent=5533]] [#v06af948] -->
-<!--  -->
-<!-- -[[TeXShop Icon:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1004]] -->
-<!-- -[[[OS X TeX] can't get TeXShop 3.14 icons:https://email.esm.psu.edu/pipermail/macosx-tex/2013-May/050794.html]] -->
-<!-- -[[MacOSX-TeX - can't get TeXShop 3.14 icons:http://macosx-tex.576846.n2.nabble.com/can-t-get-TeXShop-3-14-icons-td7580870.html]] -->
-<!-- -[[MacOSX-TeX - texshop icon:http://macosx-tex.576846.n2.nabble.com/texshop-icon-td7579225.html]] -->
 
 ## 設定 {#sc027054}
 
@@ -62,6 +55,7 @@ GPL
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
 - [Taylor/「TeXShop」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeXShop)
 - [泉 富士夫/「TeXShop」の検索結果 - Twilog](http://twilog.org/Izumi_Fujio/search?word=TeXShop)
+- [MacTeX 2013でTeXShopの設定](http://knnlog.wordpress.com/2013/10/06/mactex-2013%E3%81%A7texshop-lyx%E3%81%AE%E8%A8%AD%E5%AE%9A/)
 - [まとめ：LaTeXで卒業論文を書く(1)](http://ichijikann.blog6.fc2.com/blog-entry-147.html)
 - [texlive-lang-cjk導入時のTeXShopの設定](http://hiyokoz.blogspot.jp/2013/01/texlive-lang-cjktexshop.html)
 - [シェルスクリプトに関して uplatex2pdf-utf8という以下のスクリプトがあります。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1399148908)
