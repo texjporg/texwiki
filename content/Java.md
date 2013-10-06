@@ -20,6 +20,8 @@ pukiwiki: "Java"
 - [http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java](http://stackoverflow.com/questions/54686/how-to-get-a-list-of-current-open-windows-process-with-java)
 - [http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna](http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna)
 - [Java/「現在ディレクトリ」(Current Working Directory)の変更](http://www.glamenv-septzen.net/view/1213)
+- [Java からコマンドを実行 - Runtime クラスの利用 -](http://www.whitemark.co.jp/tec/java/javaExamples9.html)
+- [Javaでシェルコマンドを実行して標準出力を取得する](http://blog.app-works.org/archives/194)
 
 ### Java™ Platform, Standard Edition (JRE &amp; JDK) {#o8881b8e}
 
