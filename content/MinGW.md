@@ -190,6 +190,7 @@ mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/](http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
+- [クロスGCC(on Linux Host for Targeting Mingw-w64 Windows)のビルド](http://sideseeker.hateblo.jp/entry/2013/10/06/072748)
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
