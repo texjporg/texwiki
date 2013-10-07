@@ -208,7 +208,8 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
 　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
 　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB　　　　　　∣<br>
+　　　　 ∣☑newtxpx-boondoxfonts.tar.xz　　　　無い　　　5.0MB　　　　　　∣<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
