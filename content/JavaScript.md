@@ -30,6 +30,16 @@ pukiwiki: "JavaScript"
 - [LiveScript](http://livescript.net/)
 - [ClojureScript](https://github.com/clojure/clojurescript)
 
+## Node.js {#s744dce3}
+
+- [node.js](http://nodejs.org/)
+- [Node.js 日本ユーザグループ](http://nodejs.jp/)
+- [ビギナーのための Node.jsプログラミング入門](http://libro.tuyano.com/index2?id=1115003)
+
+## jQuery {#i3ba4ee4}
+
+- [jQuery](http://jquery.com/)
+
 ## JavaScript Engine {#v88dd665}
 
 - [V8 JavaScript Engine](https://code.google.com/p/v8/)
