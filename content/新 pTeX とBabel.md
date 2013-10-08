@@ -76,8 +76,8 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[W32TeX](/W32TeX/) では
-[TeX Live](</TeX Live/>) 所収の
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) では
+TeX Live 所収の
 ハイフネーションファイル（68種類）が同梱されています。<br>
 8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
@@ -100,14 +100,12 @@ Cygwin については
 「[Cygwin - TeX Wiki](/Cygwin/)」
 をご覧ください。
 
-#### 『［改訂第5版］ LaTeX2e 美文書作成入門』付録 DVD-ROM {#oe0dfa58}
+#### 『［改訂第6版］ LaTeX2e 美文書作成入門』付録 DVD-ROM {#oe0dfa58}
 
-『[［改訂第5版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)』
+『[［改訂第6版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』
 付録 DVD-ROM には
-[W32TeX](/W32TeX/) と
-[ptexlive for TeX Live 2009](http://tutimura.ath.cx/ptexlive/) が収録されています。<br>
-付録DVD所収のもの（Mac・Cygwin用）はBabel対応版になっています（インストールは p.345, p.347 参照）。<br>
-詳細は [付録I「LaTeX2eによる多言語処理」サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/multi/) を参照してください。<br>
+[TeX Live](</TeX Live/>) が収録されています。<br>
+TeX Live は Babel に対応しています。<br>
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
