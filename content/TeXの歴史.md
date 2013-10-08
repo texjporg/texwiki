@@ -114,7 +114,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf10/">TeX ユーザの集い 2010</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2011</td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf11/">TeX ユーザの集い 2011</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2012</td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf12/">TeX ユーザの集い 2012</a> が開催される。</td></tr>
-<tr><td style="text-align:center">2013</td><td>10</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">『[改訂第6版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
+<tr><td style="text-align:center">2013</td><td>10</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">『[改訂第6版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
