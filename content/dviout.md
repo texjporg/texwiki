@@ -554,6 +554,7 @@ PNG 形式の画像を表示するには ifpng.spi が必要です。<br>
 からプラグインを選択して ifpng.spi をダウンロードしてください。<br>
 展開後 ifpng.spi を dviout.exe と同じフォルダーに配置します．<br>
 他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に ifpng.spi が存在するフォルダーを指定してください。<br>
+PNG ファイルが表示されない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
 
 ### JPEG 形式 {#s4f7def7}
 
@@ -565,6 +566,7 @@ JPEG 形式の画像を表示するには ifjpegx.spi が必要です。<br>
 からプラグインを選択して ifjpegx.spi をダウンロードしてください。<br>
 展開後 ifjpegx.spi を dviout.exe と同じフォルダーに配置します．<br>
 他のフォルダーに配置する場合は 展開後 \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に ifjpegx.spi が存在するフォルダーを指定してください。<br>
+JPEG ファイルが表示されない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
 
 ## Warning を無視する {#fa72a1b5}
 
