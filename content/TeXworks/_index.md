@@ -25,7 +25,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境に TeXworks が紹介されています．<br>
+([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/), [改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境に TeXworks が紹介されています．<br>
 
 - [TeXworks 公式サイト](http://www.tug.org/texworks/)
     - [The texworks Archives](http://tug.org/pipermail/texworks/)
