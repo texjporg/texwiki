@@ -21,7 +21,7 @@ pukiwiki: "PDFの作り方"
 
 - (u)(p)LaTeX + dvipdfmx
 - (u)(p)LaTeX + dvips + ps2pdf (Ghostscript)
-- pdfLaTeX
+- [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
 - LuaJITLaTeX
 - [XeLaTeX](/XeTeX/)
@@ -41,7 +41,7 @@ pukiwiki: "PDFの作り方"
 
 [Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) を参照。
 
-[Ghostscript](/Ghostscript/) (ps2pdf)，dvipdfmx，pdfTeX，[LuaTeX](/LuaTeX/)，LuaJITTeX, xdvipdfmx
+[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，LuaJITTeX, [xdvipdfmx](/dvipdfmx/)
 ([XeTeX](/XeTeX/)) の他に，次のソフトがあります。
 
 - 無償，フリーウェア，オープンソース
@@ -83,7 +83,7 @@ pukiwiki: "PDFの作り方"
         - [RedMon による PDF 作成](</PDFの作り方/#mbf7209f>)
 
 - 有償，商用，シェアウェア
-    - [Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
+    - [Adobe Acrobat](http://www.adobe.com/jp/products/acrobat.html)
         ([Adobe Systems](http://www.adobe.com/jp/))
     - [Microsoft Office](</Microsoft Office/>)
         - Microsoft Office 2013 は PDF 1.7 をサポート
@@ -98,7 +98,7 @@ pukiwiki: "PDFの作り方"
     - [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
     - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
     - [pdfFactory](http://www.nsd.co.jp/fineprint/pdf.html) と [FinePrint](http://www.nsd.co.jp/fineprint/) ([NSD](http://www.nsd.co.jp/))
-    - [Jaws PDF](http://www.jawspdf.com/) (開発元は [Global Graphics Software](http://www.globalgraphics.co.jp/))
+    - [gDoc Creator](http://www.gdoc.com/creator/) ([Global Graphics Software](http://www.globalgraphics.com/))
     - [Expert PDF Creator](http://www.visagesoft.com/) (Expert PDF Reader は Free)
     - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp) (CutePDF Writer は Free)
 
@@ -119,12 +119,12 @@ pukiwiki: "PDFの作り方"
 
 ### Adobe Reader と Adobe Acrobat は違うの？ {#c982e6e9}
 
-[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/) は
+[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat.html) は
 Acrobat Distiller を含む製品（商品）です。
 値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください。
 
 その機能によって製品が幾つか存在しています。
-参考：「[Adobe - Adobe Acrobatファミリー： 製品比較](http://www.adobe.com/jp/products/acrobat/matrix.html)」
+参考：「[Adobe - Adobe Acrobatファミリー： 製品比較](http://www.adobe.com/jp/products/acrobat/product-comparison.html)」
 
 - Adobe Reader XI — PDF の閲覧と印刷のみ。無償配布されている。
 - Adobe Acrobat XI
@@ -137,7 +137,7 @@ Adobe Acrobat があれば Adobe Reader は不要です。
 
 Microsoft 製品でも Adobe 製品でも，なるべく最新のアップデートを適用しておきましょう。<br>
 Microsoft Office は [Windows Update 利用の手順](http://www.microsoft.com/ja-jp/security/pc-security/j_musteps.aspx)を参照して Office をアップデートします。<br>
-Adobe 製品は[アドビシステムズ](http://www.adobe.co.jp/)の
+Adobe 製品は[アドビシステムズ](http://www.adobe.com/jp/)の
 ダウンロードのページをご覧ください。<br>
 
 ### Acrobat Distiller の設定 {#e5e57a76}
@@ -315,18 +315,19 @@ Word の極細 (0.25 pt) の罫線は使わないほうが無難です。
 [Linux へのインストール](/Linux/)
 などのページをご覧ください。
 
-TeX で PDF を作る現在の標準的な方法は，dvipdfmx を使うものです。
-具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください。
+TeX で日本語の PDF ファイルを作る標準的な方法は，dvipdfmx を使うものです。<br>
+具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください。<br>
 
-もう一つの方法は，dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
-で PDF に変換するものです。
-詳しくは [dvips の使い方](#lf015a28) をご覧ください。
+dvipdfmx 以外の方法としては，dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
+で PDF に変換するものがあります。<br>
+詳しくは [dvips の使い方](#lf015a28) をご覧ください。<br>
 
-欧文のみの原稿ならば，pdfLaTeX でも可能です。
+欧文のみの原稿ならば，pdfLaTeX が簡単です。<br>
+BXcjkjatype を使用すると pdfLaTeX で日本語の PDF ファイルも作成できます。<br>
 
-Unicode を使用する場合は，[LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) がおすすめです。
+Unicode を使用する場合は，[LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) がおすすめです。<br>
 
-角藤さんの W32TeX では Computer Modern Type 1 フォントは[t1fonts.tar.xz](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1fonts.tar.xz) に含まれています。
+W32TeX では Computer Modern Type 1 フォントは[t1fonts.tar.xz](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1fonts.tar.xz) に含まれています。
 
 無償で配布されている Computer Modern Type 1
 フォントはすべてのサイズがそろっているわけではないので，次のように type1cm
@@ -467,15 +468,22 @@ upgbm-hq	UniJIS-UCS2-H		ipaexg.ttf
 
 と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます。
 
-dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます。EPS 挿入には
-外部プログラムとして Ghostscript が必要です。ベクトル画像は PDF 形式，
-ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう。
+dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます。<br>
+EPS 挿入には外部プログラムとして Ghostscript が必要です。<br>
+ベクトル画像は PDF 形式，ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう。<br>
 
 #### バウンディングボックス（BoundingBox）ファイルの作成 {#rf074b4b}
 
-texmf.cnf の shell_escape_commands に extractbb が指定されていて，\usepackage\[dvipdfmx\]{graphicx} の場合は，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。（[W32TeX](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?W32TeX)や[美文書第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)からインストールした場合。）
+[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
 
-[TeX Live](</TeX Live/>) ([MacTeX](/Mac/#mactex)) では extractbb の実行は自動化されていません。自動化したい場合は
+```
+\usepackage[dvipdfmx]{graphicx}
+```
+
+のようにすると，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。<br>
+
+[TeX Live](</TeX Live/>) ([MacTeX](/Mac/#mactex)) では extractbb の実行は自動化されていません。<br>
+自動化したい場合は
 
 - Windows の場合は C:\texlive\texmf-local\web2c\texmf.cnf
 - OS X, Linux の場合は /usr/local/texlive/texmf-local/web2c/texmf.cnf
@@ -499,7 +507,7 @@ repstopdf,epspdf,extractbb,\
 
 を書き足します。
 
-自動的に extractbb が実行されない場合は，あらかじめコマンド プロンプトで
+自動的に extractbb が実行されない場合は，あらかじめ Windows PowerShell またはコマンド プロンプトで
 
 ```
 extractbb zu.png
@@ -516,8 +524,8 @@ extractbb zu.png
 ```
 
 のようにして graphicx
-パッケージを読み込む際に必ず \[dvipdfmx\] オプションを与えます。
-これで LaTeX と dvipdfmx で処理します。
+パッケージを読み込む際に必ず \[dvipdfmx\] オプションを与えます。<br>
+これで LaTeX と dvipdfmx で処理します。<br>
 
 Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます。<br>
 詳しくは [Ghostscript](/Ghostscript/)
@@ -534,127 +542,63 @@ $ open -a 'Acrobat Distiller.app' ファイル名
 
 dvipdfmx で PSfrag を使うには，まず \pagestyle{empty}
 で図と PSfrag だけのページを作り，“dvips -Ppdf -E” で
-いったん EPS にしてから，それをメインの LaTeX ファイルに挿入します。
+いったん EPS にしてから，それをメインの LaTeX ファイルに挿入します。<br>
 ちょっと面倒ですので，
 [overpic](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/overpic.html)
 や
 [labelfig](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/labelfig.html)
-を使うのがいいでしょう。
+を使うのがいいでしょう。<br>
 
-dvipdfmx は PFB 形式の Type 1 フォントしか使えません。
-PFA → PFB 変換には [FontForge](http://fontforge.sourceforge.net/) が使えそうです。
+dvipdfmx は PFB 形式の Type 1 フォントしか使えません。<br>
+PFA → PFB 変換には [FontForge](http://fontforge.sourceforge.net/) が使えそうです。<br>
 
 <div style="text-align:right">See <a href="/HyperTeX/#ubbc3ac6">HyperTeX#hyperref を上手に呼んで便利な PDF を作る</a></div>
-
-<!-- **dvipdfmo の使い方 (obsolete) [#o3b2aca8] -->
-<!--  -->
-<!-- dvipdfmo (dvipdfm 日本語版) は W32TeX に含まれています。~ -->
-<!-- 2009年後半以降の W32TeX では、TeX Live 2009 に従って dvipdfm は -->
-<!-- dvipdfmx の別名になっています。~ -->
-<!-- できるだけオリジナルの dvipdfm と近いモード -->
-<!-- で動くようになっていますが、全く同じというわけではありません。~ -->
-<!-- 日本語版 dvipdfm がどうしても必要な場合があるかもしれないので、 -->
-<!-- dvipdfmo という名前で使用できるようになっています。 -->
-<!--  -->
-<!-- dvipdfm の日本語化は奥村 晴彦 著『[[［改訂版］ LaTeX2e 美文書作成入門:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html]]』 -->
-<!-- の第1刷が出た後で行われましたので，この本にはほとんど記述がありません。~ -->
-<!--  -->
-<!-- ***バウンディングボックス（BoundingBox）ファイルの作成 [#yc9cf776] -->
-<!--  -->
-<!-- \usepackage[dvipdfm]{graphicx} の場合，EPS 以外（たとえば zu.png）を挿入するには，あらかじめコマンド プロンプトで -->
-<!--  -->
-<!-- extractbb -m zu.png -->
-<!--  -->
-<!-- または -->
-<!--  -->
-<!-- ebb zu.png -->
-<!--  -->
-<!-- と打ち込んで zu.bb というバウンディングボックスファイルを作っておきます。 -->
-<!--  -->
-<!-- また，LaTeX ファイル中では -->
-<!-- \usepackage[dvipdfm]{graphicx} -->
-<!-- ... -->
-<!-- \includegraphics[width=8cm]{zu.png} -->
-<!-- のようにして graphicx -->
-<!-- パッケージを読み込む際に必ず [dvipdfm] オプションを与えます。 -->
-<!-- これで LaTeX と dvipdfmo で処理します。 -->
-<!--  -->
-<!-- extractbb (xbb) と ebb では，微妙に出力する BoundingBox の値が異なりますので注意してください。以下に，2008/2/17 付けの W32TeX の ChangeLog を引用します。 -->
-<!--  -->
-<!-- [2008/02/17] -->
-<!-- ... -->
-<!-- (14) dvipdfm-w32.tar.bz2 -->
-<!--     dvipdfmx.exe を更新した。また xbb.exe が出力するファイルの拡張子を -->
-<!--     オリジナルと同じで .xbb とした。同梱した dvipdfmx.def を使う場合は -->
-<!--     BoundinbBox 用には xbb.exe を使って、foo.xbb を作るようにすること。 -->
-<!--     また、ebb.exe におけるデフォルトの PIX2PT を、オリジナルと同じ -->
-<!--     72/100 に戻した。ただしこの値はオプションによって自由に変えられるので -->
-<!--     ebb -h として使用法を確かめること。 -->
-<!--     dvipdfm.def は foo.bb なるファイル名しか使えないので、xbb.exe の出力は -->
-<!--     使えない。 dvipdfmx.def の場合は xbb.exe の出力が使える。そこで次の -->
-<!--     データを参考にすると良いかもしれない: -->
-<!--     実験によると以下のようになると思う。 -->
-<!--     (a) pdf の場合 -->
-<!--         ebb foo と xbb foo の出力は同じ BoundingBox を持つ -->
-<!--     (b) jpeg の場合 -->
-<!--         ebb -R foo と xbb foo の出力は同じ BooundingBox を持つ -->
-<!--     (c) png の場合 -->
-<!--         ebb -r 96 foo と xbb foo の出力は同じ BoundingBox を持つ -->
-<!--  -->
-<!-- EPS の場合には，dvipdfm が Ghostscript を呼び出して PDF -->
-<!-- に変換してから埋め込みますが，あらかじめ Distiller などで PDF にしておくほうが楽です。 -->
-<!-- Distiller を使う際に，バウンディングボックスを正確にするには，Distiller -->
-<!-- のジョブオプションの［詳細設定］で「EPSファイルのページサイズ変更とアートワークの中央配置」をオフにして，バウンディングボックス情報は元の EPS のものをそのまま使うといいでしょう。 -->
-<!-- たとえば元の zu.eps にある “%%BoundingBox: 100 200 300 400” といった行をそのまま zu.bb -->
-<!-- にするか，あるいは -->
-<!--  -->
-<!-- \usepackage[dvipdfm]{graphicx} -->
-<!-- ... -->
-<!-- \includegraphics[width=8cm,bb=100 200 300 400]{zu.pdf} -->
-<!--  -->
-<!-- のようにします。 -->
-<!--  -->
-<!-- dvipdfm については[[中丸さん:http://www.eaflux.com/]]の -->
-<!-- [[dvipdfa:http://www.eaflux.com/dvipdfa/]]， -->
-<!-- [[replacecjkfonts, cjkps2pdf:http://www.eaflux.com/replacecjkfonts/]] -->
-<!-- のページにいろいろ巧妙な方法が紹介されています。 -->
 
 ### dvips の使い方 {#lf015a28}
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです。
 
 dvips で変換した PS ファイルは Ghostscript 附属の ps2pdf
-コマンドで PDF ファイルに変換できます。きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。
-処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません。
+コマンドで PDF ファイルに変換できます。<br>
+きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。<br>
+処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません。<br>
 
 Acrobat をお持ちであれば Windows 上でダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます。<br>
 dvipdfmx を使うほうがトラブルは少ないかもしれません。<br>
 
 dvips はできるだけ新しいものを使いましょう。<br>
-dvips を含めた Windows 用 TeX については
-[Windows へのインストール](</Microsoft Windows/>)
-のページをご覧ください。<br>
 W32TeX の場合は Computer Modern Type 1 フォントの入った t1fonts.tar.xz も必ずインストールしておきます。<br>
 
 foo.dvi という DVI ファイルを Distiller 入力用の PostScript ファイル foo.ps
-に変換するには，角藤さんの W32TeX ではコマンド プロンプトで次のように打ち込みます（TeX Live では，“-Ppdf” オプションは不要です。デフォルトで，pk フォントではなく Type 1 フォントを利用できます）。
+に変換するには，W32TeX では Windows PowerShell またはコマンド プロンプトで次のように打ち込みます。<br>
 
-- dvips -Ppdf foo.dvi  (欧文，和文)
+```
+dvips -Ppdf -o foo.ps foo.dvi
+```
 
-ハイパーリンクを埋め込んであるなら dvips -Ppdf -z ... のように “-z” も付けます。
+ハイパーリンクを埋め込んであるなら dvips -Ppdf -z ... のように “-z” も付けます。<br>
+TeX Live では，“-Ppdf” オプションは不要です。<br>
+デフォルトで，pk フォントではなく Type 1 フォントを利用できます。<br>
 
 欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします。
 
 通常のドキュメントクラスでは，\[a4paper\] オプションを付けても，Acrobat Distiller
-のデフォルト設定では用紙がレターサイズになってしまいます。
+のデフォルト設定では用紙がレターサイズになってしまいます。<br>
 A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
-に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）。
-私の[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
+に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）。<br>
+[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
 \documentclass\[a4paper,papersize\]{js...}
-のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます。
+のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます。<br>
 
-図を挿入する際には \usepackage\[dvips\]{graphicx} のように \[dvips\]
-オプションを指定します。図として EPS を挿入できます。
+図を挿入する際には
+
+```
+\usepackage[dvips]{graphicx}
+```
+
+のように \[dvips\]
+オプションを指定します。<br>
+図として EPS を挿入できます。<br>
 
 ### 図の描き方 {#yca8607c}
 
@@ -724,8 +668,8 @@ EPS 形式での書き出しに対応していないソフトでも，Windows �
 プリンタードライバをインストールして「ファイルに印刷」すれば PostScript
 形式で保存できます。
 
-PostScript プリンタードライバは Windows の「設定」→「プリンター」→「プリンターの追加」でインストールできます。
-インストール時にローカルプリンター（出力先 FILE:）としてください。
+PostScript プリンタードライバは Windows の「設定」→「プリンター」→「プリンターの追加」でインストールできます。<br>
+インストール時にローカルプリンター（出力先 FILE:）としてください。<br>
 適当なプリンター記述 (PPD) ファイルがないなら，Generic PostScript Printer
 としてインストールします。
 
@@ -735,8 +679,8 @@ EPS 出力に設定するには，
 
 保存するときはファイル名の拡張子を “.eps” にします（例： test.eps）。
 
-しかし，この方法では BoundingBox （図の外枠の情報）が間違って附き，余白が広くなりすぎることがよくあります。
-バウンディングボックスを直すには次のどちらかの方法を使います。
+しかし，この方法では BoundingBox （図の外枠の情報）が間違って附き，余白が広くなりすぎることがよくあります。<br>
+バウンディングボックスを直すには次のどちらかの方法を使います。<br>
 
 - テキストエディタで開き，先頭附近の “%%BoundingBox: 10 20 300 400” の
     ような行を見つけ，四つの値（それぞれ左下隅の x，y 座標，右上隅の x，y
@@ -744,27 +688,30 @@ EPS 出力に設定するには，
 
 - Windows の GSview というソフトでバウンディングボックスを修正する
 
-以上の手順を簡単にする [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) (フリーソフト) があります。
-たいへん使い勝手の良いソフトです。
+以上の手順を簡単にする [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) (フリーソフト) があります。<br>
+たいへん使い勝手の良いソフトです。<br>
 
 また，「[Windows での TeX 用仮想 EPS プリンターの作成方法](http://keijisaito.info/arc/tex/v_eps_printer.htm)」
-では，Windows 同梱のドライバから仮想 EPS プリンターを作る方法が書いてあります。
+では，Windows 同梱のドライバから仮想 EPS プリンターを作る方法が書いてあります。<br>
 「[Excel グラフをきれいに TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/vector_pdf.htm)」，
 「[画像や写真を TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/picture_eps.htm)」では，
-それぞれベクトル形式のグラフ，ラスター形式の画像を埋め込む手順をスクリーンショット附きで説明しています。
+それぞれベクトル形式のグラフ，ラスター形式の画像を埋め込む手順をスクリーンショット附きで説明しています。<br>
 
-Windows の PS プリンタードライバではなかなか質の高い EPS ができないものです。
-crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです。
+Windows の PS プリンタードライバではなかなか質の高い EPS ができないものです。<br>
+crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです。<br>
 いったん Distiller で PDF に変換して Acrobat （商品）で開き，必要な部分だけ切り抜き，EPS
-形式で保存し直すほうがうまくいくかもしれません。
+形式で保存し直すほうがうまくいくかもしれません。<br>
 フリーなツールでは
 [ps2eps](http://www.tm.uka.de/~bless/ps2eps)
-が使えそうです。PS プリンタードライバの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています。
+が使えそうです。<br>
+PS プリンタードライバの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています。<br>
 
 Visio 2003 以降は [EPS 出力がサポートされなくなりました](http://office.microsoft.com/ja-jp/visio/HA010857571041.aspx)が，
 [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) を使うと EPS ファイルに変換できます。
 
-[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) の Draw には，EPS エクスポート機能があります。コピー＆ペーストで Draw に貼り付け，Ctrl-A で全選択して，ファイル→エクスポートでファイル書式を EPS にすると，EPS 形式で出力できます。Ctrl-A で全選択しておかないと， BoundingBox がページ全体になってしまうので，お忘れなく。
+[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) の Draw には，EPS エクスポート機能があります。<br>
+コピー＆ペーストで Draw に貼り付け，Ctrl-A で全選択して，ファイル→エクスポートでファイル書式を EPS にすると，EPS 形式で出力できます。<br>
+Ctrl-A で全選択しておかないと， BoundingBox がページ全体になってしまうので，お忘れなく。<br>
 
 ### OS X のソフトから画像を挿入するには {#g035cf1f}
 
@@ -778,7 +725,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass{jsarticle}
-\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
 \begin{document}
 ...
 \includegraphics[bb=100 400 500 700,clip,width=5cm]{zu.pdf}
@@ -790,7 +737,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 もちろん数値は適当に変えてください。
 単位はポイント (= 1/72 inch) で，紙の左下隅が原点 (0, 0) です。
 
-これで platex で処理し，dvipdfmx で PDF にして，「プレビュー」または Adobe Reader
+これで ptex2pdf で PDF にして，「プレビュー」または Adobe Reader
 で印刷します（あるいは [TeXworks](/TeXworks/), [TeXShop](/TeXShop/)
 を使えば「タイプセット」ボタンをクリックするだけで PDF ができます）。
 
@@ -826,9 +773,7 @@ Word などに埋め込む際には，プレビューのラジオボタンは必
 ### PDF をパスワードで保護するには {#u51b6592}
 
 Acrobat を使えばできますが，フリーウェアとして
-[iText](http://itextpdf.com/)
-を使った
-[encrypt_pdf](http://kickjava.com/src/com/lowagie/tools/encrypt_pdf.java.htm)
+[QPDF](http://qpdf.sourceforge.net/)
 といったものもあるそうです (使ったことはありません)。
 
 また、OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます。（ただし、Adobe Readerからはこの操作はできませんので、一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください。）
@@ -969,37 +914,38 @@ Word などのアプリケーションからこのプリンターに印刷する
 
 ### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
 
-(1) tex → dvi → ps → pdf （元祖流？）
+(1) tex → pdf 
 
 ```
-(1)-1: (u)platex: tex → dvi
-(1)-2: dvips: dvi → ps
-(1)-3: ps2pdf (Ghostscript)  or 「Adobe Distiller」: ps → pdf
-※ 挿入図ファイルはEPS形式のみ, pstricks, powerdot 使用可能
-※ arXiv等ではこれを要求されるようです
+pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
+lua(jit)latex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
+xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
+※ 挿入図ファイルはPDF形式等も可
 ```
 
 (2) tex → dvi → pdf 
 
 ```
-(2)-1: (u)platex: tex → dvi        # 上記と同じ
+(2)-1: (u)(p)latex: tex → dvi
 (2)-2: dvipdfmx: dvi → pdf
+※ ptex2pdf を使用すると (2)-1, (2)-2 の処理を一度に実行できます。
 ※ 挿入図ファイルはPDF形式等も可（EPS形式以外はdvipdfmxが自力で対応するので、Ghostscriptの助けは不要）。
 ```
 
-(3) tex → pdf 
+(3) tex → dvi → ps → pdf
 
 ```
-pdflatex: tex → pdf (日本語を使用する場合は bxcjkjatype)
-lualatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
-luajitlatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
-xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
+(3)-1: (u)(p)latex: tex → dvi
+(3)-2: dvips: dvi → ps
+(3)-3: ps2pdf (Ghostscript)  or 「Adobe Distiller」: ps → pdf
+※ arXiv等ではこれを要求されるようです
+※ 挿入図ファイルはEPS形式のみ, pstricks, powerdot 使用可能
 ```
 
 ### PDF形式ファイル（図）の挿入について {#n20e1824}
 
-- PDF形式等の挿入図（EPS形式ではなく）を用い，「dvipdfmx: dvi → pdf」の流儀で処理させると，Ghostscriptを経ることもなく，通常は処理も速い。
-- 図の挿入は、一般的には，BoundingBox情報の処理が必要（→[TeX入門/図表](</TeX入門/図表/>)）。BoundingBoxとは、EPS形式で定義されているような、描画図をぴったり囲む矩形のこと。
+- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「pdflatex, lua(jit)latex, xelatex: tex → pdf」または「(u)(p)latex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い。
+- 図の挿入は、一般的には，BoundingBox 情報の処理が必要（→[TeX入門/図表](</TeX入門/図表/>)）。BoundingBox とは、EPS 形式で定義されているような、描画図をぴったり囲む矩形のこと。
 
 - pdf ファイルの BoundingBox 情報
     - PDF ファイルも、EPS形式と同様の BoundingBox （の概念）を持っているようで、Adobe [Illustrator](/Illustrator/) で作成・保存したPDF ファイル（また .ai ファイル）では実際に書き込まれる。この場合は挿入図の処理は EPS 形式と同様となる。
