@@ -18,7 +18,7 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
-[Cygwin 1.7.22](http://cygwin.com/ml/cygwin/2013-07/msg00438.html) 以降は 64-bit 版もあります．<br>
+32-bit 版と 64-bit 版のインストーラーがあります．<br>
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
@@ -133,7 +133,7 @@ Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画�
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.819 (32-bit)</strong> または <strong>Setup.exe version 2.819 (64-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.829 (32-bit)</strong> または <strong>Setup.exe version 2.829 (64-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
