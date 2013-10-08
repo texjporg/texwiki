@@ -17,6 +17,7 @@ pukiwiki: "JavaScript"
 
 - [モダンな言語でHTML5を開発しよう！ 俯瞰して理解するaltJSの比較 (前篇 – TypeScript, CoffeeScript, Haxe)](http://html5experts.jp/clockmaker/2183/)
 - [続々出てきた JavaScript 系新言語。どれを使う?](http://yohshiy.blog.fc2.com/blog-entry-183.html)
+- [新・三大JavaScriptフレームワークの実践(Backbone.js Knockout.js Angular.js)](http://qiita.com/icoxfog417/items/3c68e1a4de7121658e29)
 
 ## JavaScript を出力する言語 {#ya021e3a}
 
