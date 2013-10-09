@@ -20,8 +20,6 @@ Python で書かれたスクリプトを実行するには Python の処理系�
 
 - [Python Programming Language &ndash; Official Website](http://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
-- [http://roscidus.com/blog/blog/2013/06/09/choosing-a-python-replacement-for-0install/](http://roscidus.com/blog/blog/2013/06/09/choosing-a-python-replacement-for-0install/)
-- [http://roscidus.com/blog/blog/2013/06/20/replacing-python-round-2/](http://roscidus.com/blog/blog/2013/06/20/replacing-python-round-2/)
 
 ### 派生版 {#h517ae27}
 
