@@ -48,7 +48,7 @@ pukiwiki: "iOS"
     - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
 - [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
-    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
+    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．[CJK パッケージ](/LaTeX-CJK/)を使用すれば日本語文書もローカルでコンパイルできます．
     - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222?mt=8)
     - [FAST Intelligence](http://www.litchie.com/)
 - [Tex Touch](http://www.vancapy.com/) (シェアウェア)
