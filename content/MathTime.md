@@ -39,7 +39,7 @@ CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出て�
 Times ベースの数式フォントとしては，ほかに
 [MicroPress](http://www.micropress-inc.com/)
 の [TM Math](http://www.micropress-inc.com/fonts/tmmath/tmmain.htm)
-($150.00 + 送料 $20.00) や，フリーのものでは TXFonts
+($150.00 + 送料 $20.00) や，フリーのものでは newtx
 や，LaTeX の PSNFSS パッケージに含まれている mathptmx などがあります。
 
 - [数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)
@@ -138,6 +138,10 @@ latex mathtime.ins
 /usr/local/share/texmf/fonts/vf/yandy/mathplus
 ```
 
+#### dvipdfmx {#vb3eac95}
+
+dvipdfmxでは、TFM名に一致するPFBを検索しますので、mapファイルは不要です。
+
 #### dvips {#o060901a}
 
 dvips用に、次のような mt-yy.map を作ります。
@@ -194,17 +198,17 @@ p +mt-plus.map
 
 を加えてください。
 
-これだけで問題なく使えると思いますが，角藤さんの Windows 版 pTeX
-配布で gsftopk ではなく ps2pk を使ってビットマップフォント生成をしたい場合は，
+これだけで問題なく使えると思いますが，角藤さんの W32TeX
+で gsftopk ではなく ps2pk を使ってビットマップフォント生成をしたい場合は，
 ZIP ファイルの afm ディレクトリに含まれる \*.afm
 ファイルをたとえば次のようなディレクトリを作って入れます。
 
 ```
-/usr/local/share/texmf/fonts/afm/yandy/mathtime
-/usr/local/share/texmf/fonts/afm/yandy/mathplus
+c:/w32tex/share/texmf-local/fonts/afm/yandy/mathtime
+c:/w32tex/share/texmf-local/fonts/afm/yandy/mathplus
 ```
 
-そして，/usr/local/share/texmf/dvips/ps2pk/pspksupp.map
+そして，c:/w32tex/share/texmf-local/dvips/ps2pk/pspksupp.map
 に次のように追加します。
 
 ```
@@ -233,10 +237,6 @@ rmtmih     rmtmih.pfb     0      1
 rmtmub     rmtmub.pfb     0      1
 rmtmuh     rmtmuh.pfb     0      1
 ```
-
-#### dvipdfmx {#vb3eac95}
-
-dvipdfmxでは、TFM名に一致するPFBを検索しますので、mapファイルは不要です。
 
 ### 使い方 {#afcc2c31}
 
