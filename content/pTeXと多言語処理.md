@@ -11,7 +11,7 @@ pukiwiki: "pTeXと多言語処理"
 
 pTeX 上で多言語混在文書を扱う方法を
 まとめたものとして，[稲垣徹さん](http://www2.tba.t-com.ne.jp/ing/)による
-「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
+「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
 「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」
 が知られています。<br>
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，
@@ -168,8 +168,7 @@ updmap --add arabtex.map
 ### ヘブライ語 {#o6107e61}
 
 ヘブライ語は Babel の hebrew オプションを用いる方法があります。
-TeX--XeT 機能を用いるため従来の pTeX では処理できませんでしたが，
-pTeX と [e-TeX](/e-TeX/) の統合版の登場により処理可能になりました。
+TeX--XeT 機能を用いるため [e-TeX](/e-TeX/) 非対応の古い pTeX では処理できませんでしたが，[e-pTeX](/e-pTeX/) の登場により処理可能になりました。
 参考： [qa:50566](https://okumuralab.org/~okumura/texfaq/qa/50566.html),  [qa:50568](https://okumuralab.org/~okumura/texfaq/qa/50568.html), [qa:50589](https://okumuralab.org/~okumura/texfaq/qa/50589.html), [qa:55967](https://okumuralab.org/~okumura/texfaq/qa/55967.html) <!-- , [[qa:55969]], [[qa:55970]] ← これらはドイツ語なので削っておきます。 -->
 
 ## 中央アジアの諸言語 {#arsktowi}
@@ -1130,9 +1129,9 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-さらに，gs\gs$(gswin32c --version)\lib\cidfmap の末尾に次を追記します。
+さらに，gs\gs$(rungs --version)\lib\cidfmap の末尾に次を追記します。
 
-#### gs\gs$(gswin32c --version)\lib\cidfmap への追記 {#meed555f}
+#### gs\gs$(rungs --version)\lib\cidfmap への追記 {#meed555f}
 
 ***
 
@@ -1355,7 +1354,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 ***
 
-なお，gs\gs$(gswin32c --version)\Resource\CMap\ に CMap をコピーしていない方は，
+なお，gs\gs$(rungs --version)\Resource\CMap\ に CMap をコピーしていない方は，
 そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
