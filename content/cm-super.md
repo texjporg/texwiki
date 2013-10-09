@@ -11,24 +11,42 @@ pukiwiki: "cm-super"
 
 ## cm-super {#vb256d79}
 
-[CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 
-[cm-super.zip](https://mirror.ctan.org/fonts/ps-type1/cm-super.zip) がダウンロードできます。
+[CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 <br>
+[cm-super.zip](https://mirror.ctan.org/fonts/ps-type1/cm-super.zip) がダウンロードできます。<br>
 
-### W32TeX {#e991fdd9}
+- [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/)
+    から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty)
+    をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する
+    （存在しないディレクトリは予め作っておく）。
 
-W32TeX には標準で含まれています．<br>
+- （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の
+    Type 1 フォントが含まれています）<br>
+    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/)
+    から[cm-super.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) を
+    ダウンロードし，
+    元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。
+    先の type1ec.sty は上書きして良い。
+
+- $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，
+    その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，
+    ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する
+    （それ以外のファイルは，さしあたって不必要）。
 
 ### TeX Live {#v13d26d6}
 
 TeX Live には標準で含まれています．<br>
 
-#### Ubuntu {#h3ad69fe}
+#### Linux Mint {#h3ad69fe}
 
 - [Ubuntu -- パッケージ検索結果 -- cm-super](http://packages.ubuntu.com/ja/cm-super)
 
 #### Debian {#v3930077}
 
 - [Debian -- パッケージ検索結果 -- cm-super](http://packages.debian.org/ja/cm-super)
+
+### W32TeX {#e991fdd9}
+
+W32TeX には標準で含まれています．<br>
 
 ## 関連リンク {#e74a0814}
 
