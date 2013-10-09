@@ -13,6 +13,10 @@ pukiwiki: "Perl"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## Perl 11 {#fbb82aae}
+
+- [This Perl goes to 11](http://perl11.org/)
+
 ## Perl 6 {#xd216707}
 
 - [Perl 6](http://perl6.org/)
