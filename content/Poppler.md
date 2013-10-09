@@ -804,7 +804,7 @@ $ make install
 $ popd
 ```
 
-- [GLib](http://www.gtk.org/) をインストールします．
+- [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
 $ curl -R -L -O http://download.gnome.org/sources/glib/2.38/glib-2.38.0.tar.xz
@@ -816,7 +816,7 @@ $ make install
 $ popd
 ```
 
-<!-- -[[GObject Introspection:https://live.gnome.org/GObjectIntrospection]] をインストールします． -->
+<!-- -[[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]] をインストールします． -->
 <!--  -->
 <!-- $ curl -R -L -O http://download.gnome.org/sources/gobject-introspection/1.36/gobject-introspection-1.36.0.tar.xz -->
 <!-- $ tar xvf gobject-introspection-1.36.0.tar.xz -->
