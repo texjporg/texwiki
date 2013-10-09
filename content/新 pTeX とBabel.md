@@ -15,11 +15,11 @@ pukiwiki: "新 pTeX とBabel"
 
 ### 更新履歴 {#sa5b8545}
 
+- \[2013/10/09\]
+    [推奨環境](#z22ea698)に[『［改訂6版］ LaTeX2e 美文書作成入門』付録 DVD-ROM](#oe0dfa58) の項を追加しました。
+
 - \[2007/11/15\]
     [推奨環境](#z22ea698)に Vine 版，Mac OS X 版の記述を追加しました。-- 栗山
-
-- \[2007/11/01\]
-    [推奨環境](#z22ea698)に[『［改訂5版］ LaTeX2e 美文書作成入門』付録 DVD-ROM](#oe0dfa58) の項を追加しました。-- 栗山
 
 - \[2007/07/12\]
     最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
@@ -78,7 +78,7 @@ pukiwiki: "新 pTeX とBabel"
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) では
 TeX Live 所収の
-ハイフネーションファイル（68種類）が同梱されています。<br>
+ハイフネーションファイルが同梱されています。<br>
 8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
@@ -89,9 +89,9 @@ TeX Live 所収の
 
 #### UNIX, Unix-like OS, OS X, Cygwin {#y673f46e}
 
-TeX Live 2012, MacTeX-2012 では Babel がデフォルトでインストールされます。<br>
-TeX Live 2012, MacTeX-2012 では [TeX Live](</TeX Live/>) 所収の
-ハイフネーションファイル（68種類）が同梱されています。<br>
+TeX Live 2013, MacTeX-2013 では Babel がデフォルトでインストールされます。<br>
+TeX Live 2013, MacTeX-2013 では [TeX Live](</TeX Live/>) 所収の
+ハイフネーションファイルが同梱されています。<br>
 UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
 手作業で調整する必要があるかもしれません
 （「[日本語 LaTeX による多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
@@ -104,8 +104,8 @@ Cygwin については
 
 『[［改訂第6版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』
 付録 DVD-ROM には
-[TeX Live](</TeX Live/>) が収録されています。<br>
-TeX Live は Babel に対応しています。<br>
+[TeX Live](</TeX Live/>) 2013 が収録されています。<br>
+TeX Live 2013 は Babel に対応しています。<br>
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
@@ -121,7 +121,7 @@ TeX Live は Babel に対応しています。<br>
     箇所の “false” 部分を “true” と書き換え，上書き保存する。
 
 - $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
-- コマンド プロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
+- Windows PowerShell またはコマンド プロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
     >tex 99allenc.tex
@@ -149,12 +149,9 @@ TeX Live は Babel に対応しています。<br>
 
 内に移動する（存在しないディレクトリは予め作っておく）。
 
-### type1ec.sty のインストール {#sea65834}
+### cm-super パッケージのダウンロードとインストール {#a4477ec1}
 
-- [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/)
-    から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty)
-    をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する
-    （存在しないディレクトリは予め作っておく）。
+- [cm-super - TeX Wiki](/cm-super/) を参照。
 
 ### タイプセットのテスト {#mafcbf19}
 
@@ -226,23 +223,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ここから先は Type 1 フォントを使うための設定です。
 不必要であれば無視してください。
 
-### cm-super パッケージのダウンロードとインストール {#a4477ec1}
-
-- [cm-super](/cm-super/) にも解説があります。
-
-- （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の
-    Type 1 フォントが含まれています）<br>
-    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/)
-    から[cm-super.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) を
-    ダウンロードし，
-    元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。
-    先の type1ec.sty は上書きして良い。
-
-- $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，
-    その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，
-    ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する
-    （それ以外のファイルは，さしあたって不必要）。
-
 ### キリルアルファベットの追加 {#p1435221}
 
 - キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される
@@ -265,29 +245,29 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ### updmap ツールを使って関連ファイルの一括更新 {#r7d115bb}
 
-- $TEXMF/web2c/updmap.cfg （ptetex3 では $TEXMFCONFIG/web2c/updmap.cfg）に，
+- $TEXMF/web2c/updmap.cfg に，
     必要に応じて
 
     ```
-    MixedMap cbgreek.map
-    Map cm-super-t1.map
-    Map cm-super-ts1.map
-    Map cm-super-t2a.map
-    Map cm-super-t2b.map
-    Map cm-super-t2c.map
-    Map cm-super-x2.map
+    MixedMap cbgreek-full.map
+    MixedMap cm-super-t1.map
+    MixedMap cm-super-t2a.map
+    MixedMap cm-super-t2b.map
+    MixedMap cm-super-t2c.map
+    MixedMap cm-super-ts1.map
+    MixedMap cm-super-x2.map
     #Map cyrillic-ot2.map      % 安田功さんのパッケージ
     #Map cyrillic-t2d.map      % 安田功さんのパッケージ
     #Map bibunj-cyrillic.map   % 永田善久さんのサポートページ
     ```
 
-    と記述し，コマンド プロンプトにて
+    と記述し，Windows PowerShell またはコマンド プロンプトにて
 
     ```
     updmap
     ```
 
-    ないし UNIX 互換 OS，Mac OS 環境でシステム全体を更新する場合は
+    ないし システム全体を更新する場合は
 
     ```
     updmap-sys
@@ -318,8 +298,8 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 - [Babel のマニュアル（英語）](http://www.ring.gr.jp/pub/text/CTAN/languages/babel/babel.pdf)
     &#x5b;[CTAN](/CTAN/)\]
 
-- [pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)
+- [pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)
     （稲垣徹さん）
 
-- [南北館](http://www003.upp.so-net.ne.jp/NAMBOKU/)
-    - [LaTeXの細道・けもの道\[パッケージ編\]](http://www003.upp.so-net.ne.jp/NAMBOKU/latex/latex020.html)
+- [南北館](http://a011w.broada.jp/wbaefznh35st/)
+    - [Windows版LaTeX(pTeX)の細道・けもの道\[パッケージ編\]](http://a011w.broada.jp/wbaefznh35st/latex/latex020.html)
