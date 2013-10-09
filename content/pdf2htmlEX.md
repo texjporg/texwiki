@@ -424,7 +424,7 @@ src/util/ffw.c に
 ```
 $ mkdir build
 $ cd build
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- The C compiler identification is GNU 4.8.1
 -- The CXX compiler identification is GNU 4.8.1
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
@@ -437,7 +437,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.24.0
+--   found poppler, version 0.24.2
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
@@ -553,7 +553,8 @@ Cygwin では問題なく動作するようです．<br>
 
 #### Homebrew {#db279f00}
 
-- [homebrew/Library/Formula/pdf2htmlex.rb at pdf2htmlex · jamiely/homebrew · GitHub](https://github.com/jamiely/homebrew/blob/pdf2htmlex/Library/Formula/pdf2htmlex.rb)
+- brew install pdf2htmlex
+- [https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb)
     <!-- - -[[Pdf2htmlex.rb:https://gist.github.com/3758157]] -->
     <!-- - -[[pdf2htmlex brew formula rough draft:https://gist.github.com/3758431]] -->
 
