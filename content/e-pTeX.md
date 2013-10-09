@@ -13,7 +13,7 @@ pukiwiki: "e-pTeX"
 
 ### e-pTeX とは {#a746c835}
 
-e-pTeX は pTeX に e-TeX 拡張を追加したものです．<br>
+e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．<br>
 
 - [e-pTeX Wiki](http://sourceforge.jp/projects/eptex/wiki/FrontPage)
 
