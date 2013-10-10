@@ -17,7 +17,10 @@ Mathptmx は，本文・数式とも，フォントを Computer Modern から Ti
 >
 > ***
 >
-> このパッケージを利用すると，\jmath，\amalg，\coprod が出力できなくなってしまいます。下のようにすると，この3種類の文字（演算子）だけ Computer Modern で，ほかは Times で出力することができます。このソースは，TXFonts を参考にして書きました。
+
+このパッケージを利用すると，\jmath，\amalg，\coprod が出力できなくなってしまいます。<br>
+下のようにすると，この3種類の文字（演算子）だけ Computer Modern で，ほかは Times で出力することができます。<br>
+このソースは，[newtx](/newtx/) を参考にして書きました。
 
 ```
 \documentclass{jsarticle}
