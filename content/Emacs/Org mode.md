@@ -32,6 +32,10 @@ Org mode は
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 
+### License {#da0cead0}
+
+[GPLv3](http://orgmode.org/w/?p=org-mode.git;a=blob;f=COPYING;hb=HEAD)
+
 ### リリース情報 {#lb82f3d0}
 
 - [http://orgmode.org/cgit.cgi/org-mode.git/refs/](http://orgmode.org/cgit.cgi/org-mode.git/refs/)
@@ -44,7 +48,7 @@ Org mode は
 
 ## インストール {#l69ff892}
 
-Org mode は Emacs 22 以降では標準で含まれています．<br>
+Org mode は Emacs に標準で含まれています．<br>
 Org mode 8.0 未満の場合は最新版の Org mode にアップグレードします．<br>
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
