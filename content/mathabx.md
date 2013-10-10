@@ -13,7 +13,10 @@ pukiwiki: "mathabx"
 
 ### What is {#ib3a49d5}
 
-Mathabx は [Anthony Phan](http://www-math.univ-poitiers.fr/~phan/) 氏により2002年4月30日に初めて公開された新しい数式用フォントで、Computer Modern および AMS fonts の上位互換を目指してデザインされています。名称は初期の配布が matha, mathb, mathx シリーズからなるものであったことに由来すると思われます。
+- [http://www.ctan.org/pkg/mathabx](http://www.ctan.org/pkg/mathabx)
+
+Mathabx は [Anthony Phan](http://www-math.univ-poitiers.fr/~phan/) 氏により2002年4月30日に初めて公開された新しい数式用フォントで、Computer Modern および AMS fonts の上位互換を目指してデザインされています。<br>
+名称は初期の配布が matha, mathb, mathx シリーズからなるものであったことに由来すると思われます。
 
 Mathabx フォントの出力例を次に示します。
 
