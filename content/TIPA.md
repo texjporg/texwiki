@@ -9,6 +9,8 @@ pukiwiki: "TIPA"
 
 ## TIPA {#z57e2958}
 
+- [http://www.ctan.org/pkg/tipa](http://www.ctan.org/pkg/tipa)
+
 [TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm) は[東京大学](http://www.u-tokyo.ac.jp/)の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた
 IPA（<strong>I</strong>nternational <strong>P</strong>honetic
 <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)，謂ゆる発音記号）のフォントです。TIPA
