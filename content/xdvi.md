@@ -69,53 +69,9 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi, pmetapost (pmpost, upmpost) は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-
-#### TeX Live 2013 の場合 (Linux ディストリビューションによって配布されている TeX Live 2013 は除く) {#c75bb558}
+pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 - [tlptexlive 2013](http://www.preining.info/blog/2013/08/tlptexlive-2013/)
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-```
-
-<!-- tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
-
-```
-$ sudo tlmgr pinning add tlptexlive '*'
-```
-
-<!-- tlmgr: package repositories: -->
-<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
-<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- tlmgr: new pinning data for tlptexlive: * -->
-<!-- $ sudo tlmgr pinning add tlptexlive 'pxdvi*' -->
-<!-- tlmgr: package repositories: -->
-<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
-<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- tlmgr: new pinning data for tlptexlive: pxdvi* -->
-<!-- $ sudo tlmgr pinning add tlptexlive 'pmetapost*' -->
-<!-- tlmgr: package repositories: -->
-<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
-<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- tlmgr: new pinning data for tlptexlive: pmetapost* -->
-
-```
-$ sudo tlmgr install pxdvi pmetapost
-$ sudo tlmgr update --all
-$ cd /usr/local/texlive/2013
-$ sudo ln -s texmf-dist texmf
-$ cd /usr/local/texlive/2013/texmf-dist/xdvi
-$ sudo cp XDvi XDvi.org
-```
-
-<!-- $ sudo sed 's/-helvetica-/-*-/' -i XDvi -->
-
-```
-$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-```
 
 ### 使い方 {#o73d19d8}
 
