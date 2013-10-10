@@ -7,7 +7,7 @@ pukiwiki: "newtx"
 
 # newtx
 
-## newtx/newpx {#xd8a1457}
+## newtx {#xd8a1457}
 
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
