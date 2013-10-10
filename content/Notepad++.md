@@ -52,7 +52,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### License {#p3f91661}
 
-[GPL](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
+[GPLv3, GPLv2](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
 
 ### リリース情報 {#d2ceb628}
 
@@ -68,7 +68,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### 派生版 {#l02b5ab5}
 
-- [Notepad++ 派生ビルド](http://www.geocities.jp/freesftys/npp/)
+- [Notepad++ 派生ビルド](http://freesftys.wkeya.com/app/npp/)
     - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
 - [Notepad++ Portable](http://portableapps.com/apps/development/notepadpp_portable)
     - [Notepad++ Portable on SourceForge](http://sourceforge.net/projects/portableapps/files/Notepad%2B%2B%20Portable/Additional%20Versions/)
@@ -143,7 +143,7 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 ## プラグイン (Plugins) {#k2155ff2}
 
-- [NotePad++ プラグイン](http://www.geocities.jp/freesftys/)
+- [NotePad++ プラグイン](http://freesftys.wkeya.com/)
 - [SourceForge.net: Plugin Central - notepad-plus](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Plugin_Central)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
