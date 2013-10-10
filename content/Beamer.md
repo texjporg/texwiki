@@ -13,6 +13,8 @@ pukiwiki: "Beamer"
 
 ## Beamer とは {#g7e9b20e}
 
+- [http://www.ctan.org/pkg/beamer](http://www.ctan.org/pkg/beamer)
+
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
 ### [LaTeX Beamer class](https://bitbucket.org/rivanvx/beamer/) {#n3e24f61}
@@ -96,7 +98,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
-### Ubuntu {#x6d699a5}
+### Linux Mint {#x6d699a5}
 
 - [Ubuntu – パッケージ検索結果 -- latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
 
@@ -173,7 +175,6 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
 - [LaTeX + Beamer でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/18/020615)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
-- [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
 - [Beamer (辻研究室)](http://neurodynamics.jp/etc/beamer)
 - [Beamerで2ペインにする](http://koemu.hatenablog.jp/entry/2013/01/23/204309)
