@@ -7,6 +7,10 @@ pukiwiki: "hieroglf"
 
 # hieroglf
 
+## hieroglf {#ja1baf4e}
+
+- [http://www.ctan.org/pkg/hieroglf](http://www.ctan.org/pkg/hieroglf)
+
 古代エジプトの象形文字フォントが利用できるパッケージをご紹介いたします。
 
 Peter Wilson 氏による，紀元前3000年から紀元400年頃に用いられた
