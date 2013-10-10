@@ -287,8 +287,8 @@ $ kpsewhich -var-value TEXMFLOCAL
 /usr/share/texmf-site/web2c/texmf.cnf を作成します．<br>
 
 ```
-$ sudo mkdir -p /usr/share/texmf-site/web2c
-$ sudo touch /usr/share/texmf-site/web2c/texmf.cnf
+$ mkdir -p /usr/share/texmf-site/web2c
+$ touch /usr/share/texmf-site/web2c/texmf.cnf
 ```
 
 /usr/share/texmf-site/web2c/texmf.cnf を編集します．<br>
@@ -300,7 +300,7 @@ bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
 mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb,\
+repstopdf,epspdf,extractbb
 ```
 
 #### 文字コードの自動判別 {#hab7fdc9}
