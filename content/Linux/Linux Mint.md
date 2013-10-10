@@ -137,7 +137,7 @@ bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
 mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb,\
+repstopdf,epspdf,extractbb
 ```
 
 文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
