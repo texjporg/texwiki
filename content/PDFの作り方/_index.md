@@ -502,7 +502,7 @@ bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
 mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb,\
+repstopdf,epspdf,extractbb
 ```
 
 を書き足します。
