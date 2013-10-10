@@ -26,7 +26,7 @@ pukiwiki: "Java"
 ### Java™ Platform, Standard Edition (JRE &amp; JDK) {#o8881b8e}
 
 - [Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/)
-- [http://jdk8.java.net/download.html](http://jdk8.java.net/download.html)
+- [https://jdk8.java.net/download.html](https://jdk8.java.net/download.html)
 
 Java で書かれたアプリケーションを使用する場合は JRE をインストールします．<br>
 Java でプログラミングをしたい人は JDK をインストールします．<br>
