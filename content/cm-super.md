@@ -11,26 +11,28 @@ pukiwiki: "cm-super"
 
 ## cm-super {#vb256d79}
 
-[CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/) でミラーされています。 <br>
-[cm-super.zip](https://mirror.ctan.org/fonts/ps-type1/cm-super.zip) がダウンロードできます。<br>
+- [http://www.ctan.org/pkg/cm-super](http://www.ctan.org/pkg/cm-super)
 
-- [CTAN:fonts/ps-type1/cm-super/](https://mirror.ctan.org/fonts/ps-type1/cm-super/)
-    から[type1ec.sty](http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty)
-    をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する
-    （存在しないディレクトリは予め作っておく）。
+<!-- [[CTAN:fonts/ps-type1/cm-super/]] でミラーされています。 ~ -->
+<!-- [[cm-super.zip>CTAN:fonts/ps-type1/cm-super.zip]] がダウンロードできます。~ -->
 
-- （cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の
-    Type 1 フォントが含まれています）<br>
-    [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/)
-    から[cm-super.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip) を
-    ダウンロードし，
-    元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。
-    先の type1ec.sty は上書きして良い。
+<!-- -[[CTAN:fonts/ps-type1/cm-super/]] -->
+<!-- から&ref(http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty); -->
+<!-- をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する -->
+<!-- （存在しないディレクトリは予め作っておく）。 -->
 
-- $TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き，
-    その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから，
-    ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する
-    （それ以外のファイルは，さしあたって不必要）。
+<!-- -（cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の -->
+<!-- Type 1 フォントが含まれています）~ -->
+<!-- [[CTAN:fonts/ps-type1/]] -->
+<!-- から&ref(ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip); を -->
+<!-- ダウンロードし， -->
+<!-- 元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する。 -->
+<!-- 先の type1ec.sty は上書きして良い。 -->
+
+<!-- -$TEXMFLOCAL/tex/latex/cm-super/ ディレクトリを開き， -->
+<!-- その中にある pfb/ ディレクトリだけを cm-super/ とリネームしてから， -->
+<!-- ディレクトリごと $TEXMFLOCAL/fonts/type1/ 以下に移動する -->
+<!-- （それ以外のファイルは，さしあたって不必要）。 -->
 
 ### TeX Live {#v13d26d6}
 
@@ -52,3 +54,4 @@ W32TeX には標準で含まれています．<br>
 
 - [Babel な話：type1ec パッケージの 10pt オプションがアレな件](http://d.hatena.ne.jp/zrbabbler/20120906/1346931893)
 - [cm-super - 松浦高志のページ](http://user.ecc.u-tokyo.ac.jp/users/user-12036/wiki.cgi?page=cm-super)
+- [cm-super - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?cm-super)
