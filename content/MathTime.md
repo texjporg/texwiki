@@ -39,7 +39,7 @@ CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出て�
 Times ベースの数式フォントとしては，ほかに
 [MicroPress](http://www.micropress-inc.com/)
 の [TM Math](http://www.micropress-inc.com/fonts/tmmath/tmmain.htm)
-($150.00 + 送料 $20.00) や，フリーのものでは newtx
+($150.00 + 送料 $20.00) や，フリーのものでは [newtx](/newtx/)
 や，LaTeX の PSNFSS パッケージに含まれている mathptmx などがあります。
 
 - [数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)
