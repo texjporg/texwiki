@@ -108,6 +108,12 @@ mpost,pmpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
 
+mktexlsr を実行します．<br>
+
+```
+$ sudo mktexlsr
+```
+
 文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
 
 nkf をインストールします．<br>
@@ -120,13 +126,14 @@ $ sudo yum install nkf
 
 ```
 $ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/share/texlive/texmf-local/web2c/texmf.cnf
+$ sudo mktexlsr
 $ tail /usr/share/texlive/texmf-local/web2c/texmf.cnf
 ...
 % guess input enc
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
-TeX Live 2013 では kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
 IPAexフォントを埋め込む場合は<br>
 
 ```
