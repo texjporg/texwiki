@@ -29,9 +29,9 @@ e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．<br>
 
 ### 不具合 {#xf84e130}
 
-#### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降または W32TeX \[2013/08/12\] 以降にアップデート {#p4d23466}
+#### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降にアップデート {#p4d23466}
 
-TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414) を参照) および W32TeX \[2013/08/12\] で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．<br>
+TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414) を参照) で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．<br>
 TeX Live 2013 ではファイル名に日本語を使用した場合，ファイル名を正しく処理できない場合があります．<br>
 
 ```
