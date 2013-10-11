@@ -284,7 +284,7 @@ $ sudo apt-get install texmaker
 
 Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
-\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用してください．<br>
 
 インプットメソッドに ibus を使用している場合は
 
