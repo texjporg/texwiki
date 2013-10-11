@@ -8,7 +8,7 @@ pukiwiki: "dviout"
 # dviout
 
 dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
-TeX Live 2013 以降, W32TeX \[2013/03/11\] 以降であれば [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
+TeX Live, W32TeX は [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ## dviout for Windows {#rfded337}
 
