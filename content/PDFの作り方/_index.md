@@ -398,8 +398,8 @@ dvipdfmx -f dlbase14.map ファイル名
 
 なる special コマンドを書いておいてもよいです。(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
 
-次に和文フォントですが，TeX Live ではデフォルトで和文フォントを埋め込みませんが，W32TeX \[2013/06/15\] 以降はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます。<br>
-TeX Live 2013 の場合は IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
+次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます。<br>
+TeX Live の場合は IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
 kanji-config-updmap ipaex
