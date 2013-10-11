@@ -408,7 +408,8 @@ Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する
 
 ### TeX Live の場合 {#aa8923ee}
 
-TeX Live 2013 以降で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
+デフォルトでは和文フォントを埋め込みません．<br>
+IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
 kanji-config-updmap ipaex
@@ -418,8 +419,8 @@ kanji-config-updmap ipaex
 
 ### W32TeX の場合 {#h6fd82bc}
 
-W32TeX \[2013/06/15\] 以降はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
-platex + dvipdfmx の組み合わせで PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
+pdfpLaTeX (platex + dvipdfmx) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
 フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が存在するかどうかを確認します．<br>
 
 ***
