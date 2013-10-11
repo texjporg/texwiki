@@ -44,7 +44,7 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 #### Fedora 20, 19 {#u01e1fc4}
 
-yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013/Fedora をインストールできます．<br>
+yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live/Fedora をインストールできます．<br>
 
 ```
 $ sudo yum install texlive-scheme-full perl-Digest-MD5
@@ -227,7 +227,7 @@ $ sudo yum install texmaker
 
 Texmaker はかな漢字変換に関して不具合があるので<br>
 不具合を回避するための設定をします．<br>
-\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [Kile](/Kile/) を使用してください．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用してください．<br>
 
 1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
 
