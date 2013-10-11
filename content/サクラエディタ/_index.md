@@ -76,7 +76,6 @@ Windows 8.1, 8, 7, Vista, XP
 - [サクラエディタ UNICODE/ANSI 版](http://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ Unicode/x64](http://sourceforge.net/p/sakura-editor/wiki/64bit/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
-    - [VS2008EE+WinSDK7.0のsakura 2.0.8.1 x64版](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data&tree=r7675)
 - [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 
 ## 不具合 {#jbc9f4c6}
