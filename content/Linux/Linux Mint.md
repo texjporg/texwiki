@@ -406,7 +406,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## fcitx-mozc <a id="fcitx-mozc"></a> {#a10c0ee8}
 
-Linux Mint 15 では fcitx-mozc が利用できます．<br>
+fcitx-mozc が利用できます．<br>
 
 ```
 $ sudo apt-get install software-properties-common
