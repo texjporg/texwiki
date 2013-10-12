@@ -328,6 +328,12 @@ $ popd
 PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
+mktexlsr を実行します．<br>
+
+```
+$ mktexlsr
+```
+
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
