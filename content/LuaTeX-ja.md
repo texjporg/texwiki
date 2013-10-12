@@ -56,12 +56,12 @@ LuaTeX-ja は
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
-TeX Live 2012 以降には luatexja が含まれています．<br>
+TeX Live には luatexja が含まれています．<br>
 最新版は TeX Live 2013 以降で動作します．<br>
 
 #### [W32TeX](/W32TeX/) {#a565ecc6}
 
-W32TeX \[2012/04/20\] 以降には luatexja.tar.xz が含まれています．<br>
+W32TeX には luatexja.tar.xz が含まれています．<br>
 W32TeX をフルインストールすると<br>
 
 ```
@@ -100,12 +100,13 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 [チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
 
-#### LuaTeX-ja 20130708.0, 20130711.0 では非埋め込みの明朝体が正常に表示されない → lltjdefs.sty, ltj-plain.sty の誤植が原因 → LuaTeX-ja 20130909.0 で修正されました {#k84a4a58}
+#### LuaTeX-ja 20130708.0, 20130711.0 では非埋め込みの明朝体が正常に表示されない → LuaTeX-ja 20130909.0 で修正されました {#k84a4a58}
 
 LuaTeX-ja 20130909.0 で修正されました．<br>
 
 - [Fix typo in src/ltj-plain.sty and src/patches/lltjdefs.sty](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=commit;h=17af71ac2567703411f2aca0fdb0b8050717be90) を参照．<br>
 
+lltjdefs.sty, ltj-plain.sty の誤植が原因です．<br>
 [LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) にも記述がありますが，20130708.0, 20130711.0 では，lltjdefs.sty, ltj-plain.sty において
 
 ```
