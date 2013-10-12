@@ -517,7 +517,13 @@ mpost,pmpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
 
-を書き足します。
+を書き足して管理者権限で
+
+```
+mktexlsr
+```
+
+を実行します。
 
 自動的に extractbb が実行されない場合は，あらかじめ Windows PowerShell またはコマンド プロンプトで
 
@@ -599,7 +605,7 @@ TeX Live では，“-Ppdf” オプションは不要です。<br>
 A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
 に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）。<br>
 [新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
-\documentclass\[a4paper,papersize\]{js...}
+\documentclass\[a4paper,papersize\]{jsarticle}
 のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます。<br>
 
 図を挿入する際には
