@@ -71,7 +71,7 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
-- [tlptexlive 2013](http://www.preining.info/blog/2013/08/tlptexlive-2013/)
+- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 
 ### 使い方 {#o73d19d8}
 
