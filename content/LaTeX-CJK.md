@@ -24,7 +24,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。<br
 このため、[dvipng](/dvipng/) のように pTeX に対応してないツールがあります。<br>
 
 ここでは、コンパイラ等には手を加えず、
-マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
+マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [ipaex-type1](https://github.com/zr-tex8r/ipaex-type1), [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。~ --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。~ --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
 UTF-8 等を用いて中国韓國文字も処理できます。<br>
@@ -225,6 +225,10 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 \end{CJK}
 \end{document}
 ```
+
+#### ipaex-type1 {#i302fdd5}
+
+[ipaex-type1](https://github.com/zr-tex8r/ipaex-type1) を参照．<br>
 
 #### BXcjkjatype {#e32515ef}
 
@@ -548,7 +552,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 ## 関連リンク {#nae3b659}
 
-- [「&quot;CJK パッケージ&quot;」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%22CJK+%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%22), [「bxcjkjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype)
-- [CJK-LaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/CJK-LaTeX), [LaTeX-CJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX-CJK), [bxcjkjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/bxcjkjatype)
+- [「&quot;CJK パッケージ&quot;」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%22CJK+%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%22), [「ipaex-type1」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=ipaex-type1), [「bxcjkjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype)
+- [CJK-LaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/CJK-LaTeX), [LaTeX-CJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX-CJK), [ipaex-type1 を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ipaex-type1), [bxcjkjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/bxcjkjatype)
 - [Ubuntu で pLaTeX を使わずに日本語を書く](http://jun0inoue.blogspot.jp/2013/05/ubuntu-platex.html)
 - [CJK，Unicode パッケージ，ロシア語多書体の利用](http://yasuda.homeip.net/tex/cjk.html)
