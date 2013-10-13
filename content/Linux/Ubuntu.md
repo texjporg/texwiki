@@ -22,7 +22,6 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
 - [Ubuntu Japanese Wiki - Ubuntu Japanese Wiki](https://wiki.ubuntulinux.jp/)
-    - [開発](https://wiki.ubuntulinux.jp/Develop)
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
 
