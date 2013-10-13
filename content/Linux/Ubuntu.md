@@ -23,9 +23,6 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
 - [Ubuntu Japanese Wiki - Ubuntu Japanese Wiki](https://wiki.ubuntulinux.jp/)
     - [開発](https://wiki.ubuntulinux.jp/Develop)
-        <!-- - -[[JapaneseLocalizedDerivative/LaTeXForJapanese:https://wiki.ubuntulinux.jp/JapaneseLocalizedDerivative/LaTeXForJapanese]] -->
-        <!-- - -[[AdobeReaderJpn-Migration:https://wiki.ubuntulinux.jp/Develop/AdobeReaderJpn-Migration]] -->
-
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
 - [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
 
@@ -69,104 +66,10 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 
 ### TeX Live 2013 <a id="texlive2013"></a> {#y097b8c5}
 
-#### Ubuntu 13.04 {#se51f85a}
+- [Linux#TeX Live 2013 のインストール](/Linux/#texlive2013)
 
-- Linux/Ubuntu
-
-### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
-
-#### Ubuntu 13.10 {#xabd5471}
-
-TeX Live 2013/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
-```
-
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf-dist/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-### TeX Live 2012/Debian <a id="texlive2012debian"></a> {#rf0fcf3b}
-
-#### Ubuntu 13.04 {#fd747683}
-
-Ubuntu 12.10 と同様の方法でインストールできます．<br>
-
-- [Ubuntu(Xubuntu)でTeXをEmacsで書く](http://ameblo.jp/the1736/entry-11533722174.html)
-- \[[Ubuntu13.04\]LaTexのセットアップ](http://aruneko.wkeya.com/archives/461)
-- [Ubuntu 13.04でLaTeX環境を整える](http://kubuser.blog.fc2.com/blog-entry-33.html)
-- [Ubuntu 13.04 に TeXLive 2012 をインストール](http://tkyon.blogspot.jp/2013/04/ubuntu-1304-texlive-2012.html)
-- [Ubuntu 13.04 のインストール &amp; 設定](http://transitive.info/2013/04/22/install-ubuntu-1304/)
-
-TeX Live 2012/Debian をフルインストールする場合は texlive-full を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-full
-```
-
-個別にインストールしたい場合は texlive-lang-cjk と texlive-fonts-recommended を指定してインストールします．<br>
-
-```
-$ sudo apt-get install texlive-lang-cjk texlive-fonts-recommended
-```
-
-/usr/share/texmf/web2c/texmf.cnf または /usr/share/texlive/texmf/web2c/texmf.cnf を編集します．
-
-shell_escape_commands が以下のように記述されていると思います．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,\
-repstopdf,epspdf,extractbb,\
-```
-
-## TeX Live 2013 <a id="texlive2013install"></a> {#jd4f2edd}
-
-### dummy パッケージの作成 {#he7ed5d4}
-
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live 2012/Debian に依存するパッケージをインストールしようとすると Ubuntu や Debian GNU/Linux の TeX Live 2012/Debian も同時にインストールされてしまいます．<br>
-TeX Live 2012/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
+TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
 
 ```
 $ sudo apt-get install equivs
@@ -180,87 +83,104 @@ $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 ```
 
-### TeX Live 2013 のインストール {#hf3fd9de}
-
-[Linux#TeX Live 2013 のインストール](/Linux/#texlive2013) を参照．<br>
-
-#### texmf.cnf の編集 {#e29d5a24}
-
-[Linux#texmf.cnf の編集](/Linux/#texmfcnf) を参照．<br>
-
-### ptex2pdf で IPAex フォントの埋め込み {#j5ae0e71}
-
-TeX Live 2013 には IPAex フォント，ptex-ipaex.map が収録されています．<br>
+[texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu) を使用する場合は以下のようにします．<br>
 
 ```
-$ kpsewhich ipaexm.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-$ kpsewhich ipaexg.ttf
-/usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich ptex-ipaex.map
-/usr/local/texlive/2013/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
+$ sudo add-apt-repository ppa:krlmlr/ppa
+$ sudo apt-get update
+$ sudo apt-get install texlive-dummy
 ```
+
+### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
+
+#### Ubuntu 14.04, 13.10 {#xabd5471}
+
+TeX Live 2013/Debian をインストールする場合は texlive-full を指定してインストールします．<br>
+
+```
+$ sudo apt-get install texlive-full
+```
+
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf の shell_escape_commands を確認します．<br>
+
+shell_escape_commands が以下のように記述されていると思います．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+デフォルトでは extractbb が自動実行されません．<br>
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/share/texmf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/share/texmf/web2c
+$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,upmpost,\
+repstopdf,epspdf,extractbb
+```
+
+mktexlsr を実行します．<br>
+
+```
+$ sudo mktexlsr
+```
+
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+nkf をインストールします．<br>
+
+```
+$ sudo apt-get install nkf
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
+
+```
+$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ sudo mktexlsr
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
+...
+% guess input enc
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
 
 pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
-
-### dvips + ps2pdf を使用して PDF ファイルを作成 {#gcac3589}
-
-Ubuntu 13.04 には Ghostscript 9.07 が収録されています．<br>
-Ghostscript がインストールされていない場合は Ghostscript をインストールします．<br>
-
-```
-$ sudo apt-get install ghostscript
-```
-
-以下の表示が出力されて dvips + ps2pdf (Ghostscript) を使用して PDF ファイルが作成できない場合は Ghostscript の設定をします．<br>
-
-```
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexm-H.
-Can't find (or can't open) font file ipaexm-H.
-Can't find (or can't open) font file /usr/share/ghostscript/9.07/Resource/Font/ipaexg-H.
-Can't find (or can't open) font file ipaexg-H.
-```
-
-Ghostscript の Search path を確認します．<br>
-
-```
-$ gs --help
-...
-Search path:
-   /usr/share/ghostscript/9.07/Resource/Init :
-   /usr/share/ghostscript/9.07/lib :
-   /usr/share/ghostscript/9.07/Resource/Font :
-   /usr/share/ghostscript/fonts : /var/lib/ghostscript/fonts :
-   /usr/share/cups/fonts : /usr/share/ghostscript/fonts :
-   /usr/local/lib/ghostscript/fonts : /usr/share/fonts
-```
-
-/usr/share/fonts/truetype/ipaex に TeX Live 2013 の IPAex フォントのディレクトリのシンボリックリンクを作成します．
-
-```
-$ sudo ln -s /usr/local/texlive/2013/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
-```
-
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap を作成します．
-
-```
-$ sudo touch /usr/share/ghostscript/9.07/Resource/Init/cidfmap
-```
-
-/usr/share/ghostscript/9.07/Resource/Init/cidfmap に設定を記述します．<br>
-
-```
-/ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/ipaexg << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexg.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/Ryumin-Light /ipaexm ;
-/GothicBBB-Medium /ipaexg ;
-```
-
-ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
 ## [Python](/Python/) <a id="python"></a> {#c68c1c0f}
 
@@ -312,13 +232,29 @@ $ sudo apt-get install qpdfview
 $ sudo apt-get install mupdf
 ```
 
+## [Adobe Reader](</Adobe Reader/>) {#jc822238}
+
+[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
+Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
+Adobe Reader XI は Wine 上でも動作します．<br>
+
+## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#w37788fd}
+
+```
+$ sudo apt-get install texstudio
+```
+
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#z2142745}
 
 ```
 $ sudo apt-get install texmaker
 ```
 
-Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+Texmaker はかな漢字変換に関して不具合があるので<br>
+不具合を回避するための設定をします．<br>
+\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用してください．<br>
+
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
@@ -350,25 +286,15 @@ Qt 設定ツールを使用せずに Texmaker の編集画面で右クリック�
 編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
 \[インプットメソッドを選択\] で XIM や uim を選択すると日本語入力で黒く表示されてしまいました．<br>
 
-## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
-
-最新の安定版/開発版をインストールしたい場合は LyX/インストール#Ubuntu を参照．<br>
-
-```
-$ sudo apt-get install lyx
-```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
 
-最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Ubuntu](</TeXworks/インストール/#p69845c9>) を参照．<br>
+最新の安定版/開発版をインストールしたい場合は [TeXworks/インストール#Linux Mint](</TeXworks/インストール/#p69845c9>) を参照．<br>
 
 ```
 $ sudo apt-get install texworks
 ```
 
-Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用している場合は
+インプットメソッドに ibus を使用している場合は
 
 1. [ibus-qt4](http://packages.ubuntu.com/ja/ibus-qt4) を導入する
 
@@ -400,11 +326,15 @@ Ubuntu 13.04, Linux Mint 15 でインプットメソッドに ibus を使用し�
 Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
 \[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
 
-## Gummi <a id="gummi"></a> {#a1b3d45b}
+## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
+
+最新の安定版/開発版をインストールしたい場合は LyX/インストール#Linux Mint を参照．<br>
 
 ```
-$ sudo apt-get install gummi
+$ sudo apt-get install lyx
 ```
+
+文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## LaTeXila <a id="latexila"></a> {#v3e14a29}
 
@@ -478,7 +408,7 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 ## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
 
-Ubuntu 13.04 では fcitx-mozc が利用できます．<br>
+fcitx-mozc が利用できます．<br>
 
 ```
 $ sudo apt-get install software-properties-common
@@ -488,10 +418,14 @@ $ sudo apt-get install fcitx fcitx-mozc
 $ im-config -x
 ```
 
-## 関連リンク {#ofcc84e4}
+## 関連リンク {#p9c99f41}
 
-- [ASCII.jp：～師範、組版システム「TeX」について教えてください！～｜行っとけ！　Ubuntu道場！](http://ascii.jp/elem/000/000/725/725528/)
-- [Sickly Life](http://www.k5.dion.ne.jp/~r-f/sicklylife/) Ubuntu をインストールした直後に行う設定
-- [Ubuntu 12.04のevinceでpdfを開くと明朝体もゴシック体で表示されるのを直す](http://ubutun.blogspot.jp/2012/05/ubuntu-1204evincepdf.html)
-- [Ubuntu 12.04をインストール](http://ubutun.blogspot.jp/2012/04/ubuntu-1204.html)
-- [本家Ubuntuの日本語表示問題 Ubuntu 12.04編](http://blog.minawa.net/2012/04/ubuntu-ubuntu-1204.html)
+- [http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do](http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do)
+- [http://www.gnu.org/distros/common-distros.html#Ubuntu](http://www.gnu.org/distros/common-distros.html#Ubuntu)
+- [フリーソフトウェアのリーダーRichard Stallman曰く: Amazonの検索を統合したUbuntuはスパイウェアだ](http://jp.techcrunch.com/2012/12/08/20121207free-software-leader-richard-stallman-amazon-search-integration-in-ubuntu-amounts-to-spyware/)
+- [リチャードストールマン氏が Ubuntu を非難](http://japan.internet.com/webtech/20121211/3.html)
+- [2012年9月27日　問題は広告じゃない!? Ubuntu 12.10のデフォルト検索→Amazonに反対するワケ](http://gihyo.jp/admin/clip/01/linux_dt/201209/27)
+- [Ubuntu 12.10にAmazonレンズを無効にする設定項目が加わったらしい](http://cpplover.blogspot.jp/2012/10/ubuntu-1210amazon.html)
+- [ストールマン、UbuntuのUnityレンズについて](http://cpplover.blogspot.jp/2012/10/ubuntuunity.html)
+- [Richard Stallman氏の批判にUbuntuのコミュニティーマネージャーが反論](http://linux.slashdot.jp/story/12/12/10/2111218/Richard-Stallman%E6%B0%8F%E3%81%AE%E6%89%B9%E5%88%A4%E3%81%ABUbuntu%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E5%8F%8D%E8%AB%96)
+- [Ubuntu脱出計画その1 〜動機編〜](http://nippondanji.blogspot.jp/2013/02/ubuntu1.html)
