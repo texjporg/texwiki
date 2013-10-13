@@ -226,6 +226,8 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 \end{document}
 ```
 
+### 日本語に関するパッケージ {#zd452c87}
+
 #### ipaex-type1 {#i302fdd5}
 
 [ipaex-type1](https://github.com/zr-tex8r/ipaex-type1) を参照．<br>
@@ -235,6 +237,14 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を参照．<br>
 
 ## インストール {#fb6c9457}
+
+### TeX Live {#o07a519a}
+
+TeX Live では CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．<br>
+
+### W32TeX {#gb5c8c94}
+
+- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html) を参照．<br>
 
 ### TeX {#a7fe5a5f}
 
@@ -384,67 +394,68 @@ dvipdfmx は以下のフォントを「知って」います。
 > \[TFM 名ステム\]@\[SFD 名\]@ \[CMap 名\] \[フォントファイル名\]
 
 で指定すると、それらのフォントが dvipdfmx の検索パスに存在しなくても、
-フォントが埋め込まれていない PDF ファイルができあがります。
+フォントが埋め込まれていない PDF ファイルができあがります。<br>
 ただし、\[CMap 名\]は SFD を適用した結果のエンコーディングから
-上の表の文字集合に記された CID の並び順への対応表です。
+上の表の文字集合に記された CID の並び順への対応表です。<br>
 \[SFD 名\]には普通 TFM を作成する時に ttf2tfm の引数として指定したのと
-同じものを使います。しかし、次のようなこともできます。
+同じものを使います。<br>
+しかし、次のようなこともできます。<br>
 
 ```
 jsso12@UJIS@ UniJIS-UCS2-H HeiseiMin-W3-Acro
 ```
 
 これは単純に jsso12XX.tfm のエンコーディングを集めてユニコードに復元し、
-Adobe-Japan1 のグリフに標準的に対応させます。
+Adobe-Japan1 のグリフに標準的に対応させます。<br>
 
 ```
 jsso12@SJIS@ RKSJ-H HeiseiMin-W3-Acro
 ```
 
 これも単純ですが、jsso12XX.tfm のエンコーディングを集めて Shift_JIS に復元し、
-Adobe-Japan1 のグリフに標準的に対応させます。
+Adobe-Japan1 のグリフに標準的に対応させます。<br>
 
 ```
 jsso12@SJIS@ 90ms-RKSJ-H HeiseiMin-W3-Acro
 ```
 
-これも Shift_JIS を経由しますが、 Windows-31J （Microsoft Windows 標準日本語文字セット）の対応を使用します。
-一部、上とは微妙に違う字形が使われます。
+これも Shift_JIS を経由しますが、 Windows-31J （Microsoft Windows 標準日本語文字セット）の対応を使用します。<br>
+一部、上とは微妙に違う字形が使われます。<br>
 
 ```
 jsso12@SJIS@ 78-RKSJ-H HeiseiMin-W3-Acro
 ```
 
 これは表外漢字の新字体、旧字体が入れ替わったりしている
-JIS C 6226-1978 (JIS X 0208:1978) での例示字形が使われます。
+JIS C 6226-1978 (JIS X 0208:1978) での例示字形が使われます。<br>
 
 フォントを埋め込んでいない PDF では表示、印刷環境により、異なる代替フォントが
-使われることがあります。
+使われることがあります。<br>
 
 #### 実在する OpenType (CFF, CID-keyed) フォントの場合 {#zc736617}
 
 上と殆ど同じですが、\[フォントファイル名\]には dvipdfmx の検索パスに存在する
-フォントを指定しなければなりません。
+フォントを指定しなければなりません。<br>
 デフォルトではフォントが埋め込まれますが、\[フォントファイル名\]の先頭に
-“!” を付けると、埋め込まれなくなります。
+“!” を付けると、埋め込まれなくなります。<br>
 また、\[フォントファイル名\]の後に “,Bold”、“,Italic”、または “,BoldItalic” を
-付けた場合もフォントは埋め込まれません。
+付けた場合もフォントは埋め込まれません。<br>
 これらは、フォントを PDF ヴューアーが機械的に太らせたり、ひしゃげさせたりして、
-表示することを指示します。
+表示することを指示します。<br>
 
 #### TrueType フォントによる OpenType (CFF, CID-keyed) 偽装 {#odc3338f}
 
-TTF フォントでは、内部的なグリフの並び順に何の決まりもありません。
+TTF フォントでは、内部的なグリフの並び順に何の決まりもありません。<br>
 従って、フォントファイル内のグリフにアクセスするにはフォントファイルが持つ、
 CMap テーブルが使われますが、\[CMap 名\]に指定された CMap ファイルの文字集合が
 Adobe の標準文字集合の時は、標準的なユニコードからの対応により、
-TrueType フォントを CID フォントとして、埋め込む事ができます。
+TrueType フォントを CID フォントとして、埋め込む事ができます。<br>
 但し、ユニコードの割り振られていないグリフなどは元々 TTF フォントには
-存在しない場合が多いですし、たとえ存在してもアクセスできません。
+存在しない場合が多いですし、たとえ存在してもアクセスできません。<br>
 \[CMap 名\]に指定された CMap ファイルの文字集合が Adobe の標準文字集合と異なっていても、
 TTF フォント名の後ろに “/AJ14” 等と付けてやれば、Adobe-Japan1 の supplement 4 を
-偽装できます。
-TrueType フォントを埋め込まずに使用する場合、原則として、この方法を使って下さい。
+偽装できます。<br>
+TrueType フォントを埋め込まずに使用する場合、原則として、この方法を使って下さい。<br>
 
 #### TrueType フォントの場合 {#q2b385eb}
 
@@ -554,5 +565,6 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
 
 - [「&quot;CJK パッケージ&quot;」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%22CJK+%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%22), [「ipaex-type1」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=ipaex-type1), [「bxcjkjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=bxcjkjatype)
 - [CJK-LaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/CJK-LaTeX), [LaTeX-CJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX-CJK), [ipaex-type1 を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ipaex-type1), [bxcjkjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/bxcjkjatype)
+- [My Future Sight for Past: cjk](http://myfuturesightforpast.blogspot.jp/search/label/cjk)
 - [Ubuntu で pLaTeX を使わずに日本語を書く](http://jun0inoue.blogspot.jp/2013/05/ubuntu-platex.html)
 - [CJK，Unicode パッケージ，ロシア語多書体の利用](http://yasuda.homeip.net/tex/cjk.html)
