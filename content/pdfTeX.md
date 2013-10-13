@@ -20,4 +20,7 @@ pukiwiki: "pdfTeX"
 
 ## pdfLaTeX で日本語 {#dfcf126c}
 
-[CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) を参照．<br>
+[CJK LaTeX/BXcjkjatype](/LaTeX-CJK/)<br>
+[My Future Sight for Past: pdflatex](http://myfuturesightforpast.blogspot.jp/search/label/pdflatex)<br>
+
+を参照．<br>
