@@ -24,11 +24,11 @@ Vine Linux はコンパクトで軽量な日本語 Linux ディストリビュ�
 
 ## TeX Live {#c1d98d5f}
 
-### TeX Live 2013 {#a6e990be}
+### TeX Live 公式パッケージ {#a6e990be}
 
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 
-### TeX Live 2013/Vine Linux {#ue950dcc}
+### TeX Live/Vine Linux {#ue950dcc}
 
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
 
