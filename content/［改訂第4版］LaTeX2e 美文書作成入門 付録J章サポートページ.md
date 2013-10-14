@@ -14,7 +14,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 ## Errata {#kdcdc574}
 
-- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip](http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては [TeXWiki:新 pTeX と Babel #cm-super](</新 pTeX とBabel/#a4477ec1>) をご参照ください。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
+- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip](http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記していますが，cm-super のインストールについては [TeXWiki:cm-super](/cm-super/) をご参照ください。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
 
 - p. 358 註9 「ラテンアルファベットによる対応づけ (transliteration)」は p. 363 では「ASCII 翻字入力」という表現になっていますが（表記の揺れ），意味は同じです。
 
@@ -65,10 +65,9 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
-- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」—多書体 TeX の開発者である[堀田耕作さんのウェブサイト](http://www.khotta.org/ghost/package.html)でGT書体を使うためのパッケージ[gtfonts2.lzh](http://www.khotta.org/ghost/gt/gtfonts2.lzh) および[gtfonts2.tgz](http://www.khotta.org/ghost/gt/gtfonts2.tgz) が公開されています。[W32TeX](/W32TeX/) でもGT書体を使うためのパッケージ[gtftex.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/gtftex.zip) が提供されています。
+- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」— ZR さんが「GT書体フォント」を pLaTeX, upLaTeX で使用するためのパッケージ [PXgtfont パッケージ](http://zrbabbler.sp.land.to/pxgtfont.html), XeLaTeX で使用するためのパッケージ [ZXgtfont パッケージ](http://zrbabbler.sp.land.to/zxgtfont.html) を公開されています。
 
-- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」—こちらも[堀田さんのウェブサイト](http://www.khotta.org/ghost/package.html)で[mjfonts2.lzh](http://www.khotta.org/ghost/moj/mjfonts2.lzh) （Microsoft Windows 版），
-    [mjfonts2.tgz](http://www.khotta.org/ghost/moj/mjfonts2.tgz) （UNIX, Unix-like OS 版）が提供されています。
+- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法](http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
 
 ## コメント {#l1a73338}
 
