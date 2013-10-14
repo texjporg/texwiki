@@ -8,3 +8,5 @@ pukiwiki: "Microsoft Visual Studio Express"
 # Microsoft Visual Studio Express
 
 ## [Microsoft Visual Studio Express](http://www.microsoft.com/ja-jp/dev/express/) {#g7218848}
+
+- [Wikipedia.ja:Microsoft_Visual_Studio_Express](https://ja.wikipedia.org/wiki/Microsoft_Visual_Studio_Express)
