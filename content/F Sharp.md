@@ -22,6 +22,10 @@ pukiwiki: "F Sharp"
 - [F#入門](http://fsharp.web.fc2.com/)
 - [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
 
+### F# → JavaScript {#c5c64235}
+
+- [WebSharper](http://www.websharper.com/)
+
 ### F# 3.1 {#ke30a498}
 
 Windows 8.1, Windows 8, Windows 7 SP1 では Visual Studio 2013 をインストールすれば F# 3.1 が使用できます．<br>
