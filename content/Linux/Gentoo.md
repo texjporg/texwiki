@@ -32,11 +32,11 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 - [http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex](http://gentwoo.elisp.net/packages/dev-texlive/texlive-latex)
 - [http://gentwoo.elisp.net/packages/dev-texlive/texlive-langcjk](http://gentwoo.elisp.net/packages/dev-texlive/texlive-langcjk)
 
-### TeX Live 2013 {#n27bff2f}
+### TeX Live のインストール {#n27bff2f}
 
 - [http://grauwoelfchen.at/graffiti/slide-with-latex](http://grauwoelfchen.at/graffiti/slide-with-latex)
 - [TeX Live 2013 on Gentoo Linux](http://blogs.yahoo.co.jp/igproj_fusion/17319986.html)
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 
 ## [Evince](/Evince/) {#g696ddc1}
 
