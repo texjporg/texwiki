@@ -37,119 +37,15 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 
 ### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
-#### openSUSE 13.1 {#i8bbf7fd}
-
-TeX Live 2013/TeX Live for SUSE Linux のインストールは
-YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
-zypper を使用しても OK です．<br>
-
 ```
 $ sudo zypper install texlive-scheme-full
 ```
-
-/usr/share/texmf/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
-/usr/share/texmf/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-デフォルトでは extractbb が自動実行されません．<br>
-
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/share/texmf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
-
-```
-$ sudo mkdir -p /usr/local/share/texmf/web2c
-$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-nkf をインストールします．<br>
-
-```
-$ sudo zypper install nkf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
-
-```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
-$ sudo mktexlsr
-$ tail /usr/local/share/texmf/web2c/texmf.cnf
-...
-% guess input enc
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
-```
-
-dvipdfmx を実行して
-
-```
-** WARNING ** Could not open config file "dvipdfmx.cfg".
-```
-
-が表示される場合は dvipdfmx.cfg を適切な場所 (例えば TeX ファイルと同じディレクトリなど) に配置すれば表示されなくなります．<br>
-dvipdfmx.cfg は
-
-```
-$ kpsewhich --progname=dvipdfmx --format=othertext dvipdfmx.cfg
-```
-
-で検索できます．<br>
 
 ## [Poppler](/Poppler/) {#dae12f15}
 
 ```
 $ sudo zypper install poppler-data
 ```
-
-openSUSE の Evince, Okular, Texmaker, TeXworks などの Poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Evince](/Evince/) {#p27ad2e3}
 
