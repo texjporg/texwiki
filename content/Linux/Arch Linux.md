@@ -91,138 +91,9 @@ $ yaourt -S texlive-dummy
 
 ### TeX Live/Arch Linux {#y18009db}
 
-TeX Live 2012/Arch Linux をインストールしている場合は TeX Live 2012/Arch Linux をアンインストールしてから TeX Live 2013/Arch Linux をインストールしてください． (→ [TeXLive 2013 update may require user intervention](https://www.archlinux.org/news/texlive-2013-update-may-require-user-intervention/))<br>
-
-texlive-langcjk, texlive-most をインストールします．<br>
-
 ```
 $ sudo pacman -S texlive-langcjk texlive-most
 ```
-
-/usr/share/texmf-dist/web2c/texmf.cnf は /etc/texmf/web2c/texmf.cnf へのシンボリックリンクになっています．<br>
-/usr/share/texmf-dist/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-デフォルトでは extractbb が自動実行されません．<br>
-
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/share/texmf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
-
-```
-$ sudo mkdir -p /usr/local/share/texmf/web2c
-$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-[nkf](https://aur.archlinux.org/packages/nkf/) をインストールします．<br>
-
-```
-$ yaourt -S nkf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
-
-```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
-$ sudo mktexlsr
-$ tail /usr/local/share/texmf/web2c/texmf.cnf
-...
-% guess input enc
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
-```
-
-[ghostscript](https://www.archlinux.org/packages/?q=ghostscript) をインストールします．<br>
-
-```
-$ sudo pacman -S ghostscript
-```
-
-ghostscript の Search path を確認します．<br>
-
-```
-$ gs --help
-...
-Search path:
-   /usr/share/ghostscript/`gs --version`/Resource/Init :
-   /usr/share/ghostscript/`gs --version`/lib :
-   /usr/share/ghostscript/`gs --version`/Resource/Font :
-   /usr/share/ghostscript/fonts : /usr/share/fonts/Type1 : /usr/share/fonts
-
-```
-
-/usr/share/fonts/truetype/ipaex に TeX Live/Arch Linux の IPAex フォントのディレクトリのシンボリックリンクを作成します．
-
-```
-$ sudo mkdir -p /usr/share/fonts/truetype
-$ sudo ln -s /usr/share/texmf-dist/fonts/truetype/public/ipaex /usr/share/fonts/truetype/ipaex
-```
-
-/usr/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap に設定を記述します．<br>
-
-```
-$ sudo vi /usr/share/ghostscript/`gs --version`/Resource/Init/cidfmap
-```
-
-***
-
-```
-/ipaexm << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexm.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/ipaexg << /FileType /TrueType /Path (/usr/share/fonts/truetype/ipaex/ipaexg.ttf) /SubfontID 0 /CSI [(Japan1) 6] >> ;
-/Ryumin-Light /ipaexm ;
-/GothicBBB-Medium /ipaexg ;
-```
-
-***
-
-ps2pdf で PDF ファイルを作成すると IPAex フォントが埋め込まれます．<br>
 
 ## [Python](/Python/) {#i5b0d02d}
 
@@ -247,9 +118,6 @@ $ sudo pacman -S perl
 ```
 $ sudo pacman -S poppler poppler-data
 ```
-
-Arch Linux の Evince, Okular, zathura, qpdfview, TeXstudio, Texmaker, TeXworks などの Poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Evince](/Evince/) {#qd63d30c}
 
