@@ -62,95 +62,8 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 - [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
 
-#### Debian GNU/Linux sid で TeX Live 2013/Debian のインストール {#b43aa577}
-
-Synaptic パッケージマネージャから [texlive-full](http://packages.debian.org/sid/texlive-full) パッケージを選択してインストールすれば OK です．<br>
-
-apt-get を使用してインストールしても OK です．<br>
-
 ```
 $ sudo apt-get install texlive-full
-```
-
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf の shell_escape_commands を確認します．<br>
-
-shell_escape_commands が以下のように記述されていると思います．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-デフォルトでは extractbb が自動実行されません．<br>
-
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/share/texmf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を作成します．<br>
-
-```
-$ sudo mkdir -p /usr/local/share/texmf/web2c
-$ sudo touch /usr/local/share/texmf/web2c/texmf.cnf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-nkf をインストールします．<br>
-
-```
-$ sudo apt-get install nkf
-```
-
-/usr/local/share/texmf/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
-
-```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
-$ sudo mktexlsr
-$ tail /usr/local/share/texmf/web2c/texmf.cnf
-...
-% guess input enc
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
 
 ## [Python](/Python/) <a id="python"></a> {#df01e340}
@@ -176,8 +89,6 @@ $ sudo apt-get install perl
 ```
 $ sudo apt-get install evince
 ```
-
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Okular](/Okular/) <a id="okular"></a> {#u6c2955c}
 
