@@ -36,15 +36,15 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
 - [http://kojipkgs.fedoraproject.org/packages/texlive/](http://kojipkgs.fedoraproject.org/packages/texlive/)
 
-### TeX Live 2013 <a id="texlive2013"></a> {#dfc42b2c}
+### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 
-### TeX Live 2013/Fedora <a id="texlive2013fedora"></a> {#n44a0820}
+### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
 #### Fedora 20, 19 {#u01e1fc4}
 
-yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live/Fedora をインストールできます．<br>
+yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013/Fedora をインストールできます．<br>
 
 ```
 $ sudo yum install texlive-scheme-full perl-Digest-MD5
