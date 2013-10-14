@@ -63,9 +63,9 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 
-### TeX Live 2013 <a id="texlive2013"></a> {#y097b8c5}
+### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
-- [Linux#TeX Live 2013 のインストール](/Linux/#texlive2013)
+- [Linux#TeX Live のインストール](/Linux/#texliveinstall)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
 TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
@@ -90,7 +90,7 @@ $ sudo apt-get update
 $ sudo apt-get install texlive-dummy
 ```
 
-### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#c935e6e4}
+### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
 #### Ubuntu 14.04, 13.10 {#xabd5471}
 
