@@ -77,9 +77,9 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 - [LaTeX - ArchWiki](https://wiki.archlinux.org/index.php/LaTeX)
 - [Kile and TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/Kile_and_TeX_Live)
 
-### TeX Live 2013 {#w9579c29}
+### TeX Live 公式パッケージ {#w9579c29}
 
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止するため
 [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/)
@@ -89,7 +89,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 $ yaourt -S texlive-dummy
 ```
 
-### TeX Live 2013/Arch Linux {#y18009db}
+### TeX Live/Arch Linux {#y18009db}
 
 TeX Live 2012/Arch Linux をインストールしている場合は TeX Live 2012/Arch Linux をアンインストールしてから TeX Live 2013/Arch Linux をインストールしてください． (→ [TeXLive 2013 update may require user intervention](https://www.archlinux.org/news/texlive-2013-update-may-require-user-intervention/))<br>
 
