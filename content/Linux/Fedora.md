@@ -42,110 +42,8 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
-#### Fedora 20, 19 {#u01e1fc4}
-
-yum で texlive-scheme-full と perl-Digest-MD5 を指定すれば TeX Live 2013/Fedora をインストールできます．<br>
-
 ```
-$ sudo yum install texlive-scheme-full perl-Digest-MD5
-```
-
-perl-Digest-MD5 をインストールしないと kanji-config-updmap でエラーが発生します．<br>
-
-```
-$ kanji-config-updmap ipaex
-Setting up ... ptex-ipaex.map
-Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-Compilation failed in require at /usr/bin/updmap line 42.
-BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
-Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-Compilation failed in require at /usr/bin/updmap line 42.
-BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
-Can't locate Digest/MD5.pm in @INC (@INC contains: /usr/share/texlive/tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-BEGIN failed--compilation aborted at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 201.
-Compilation failed in require at /usr/bin/updmap line 42.
-BEGIN failed--compilation aborted at /usr/bin/updmap line 42.
-```
-
-/usr/share/texlive/texmf-dist/web2c/texmf.cnf の shell_escape_commands が以下のように記述されていると思います．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-デフォルトでは extractbb が自動実行されません．<br>
-
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/share/texlive/texmf-local//
-```
-
-/usr/share/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
-
-```
-$ sudo mkdir -p /usr/share/texlive/texmf-local/web2c
-$ sudo touch /usr/share/texlive/texmf-local/web2c/texmf.cnf
-```
-
-/usr/share/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-nkf をインストールします．<br>
-
-```
-$ sudo yum install nkf
-```
-
-/usr/share/texlive/texmf-local/web2c/texmf.cnf に PTEX_IN_FILTER = /usr/bin/nkf -w を追加します．<br>
-
-```
-$ printf '\n%% guess input enc\nPTEX_IN_FILTER = /usr/bin/nkf -w\n' | sudo tee -a /usr/share/texlive/texmf-local/web2c/texmf.cnf
-$ sudo mktexlsr
-$ tail /usr/share/texlive/texmf-local/web2c/texmf.cnf
-...
-% guess input enc
-PTEX_IN_FILTER = /usr/bin/nkf -w
-```
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+$ sudo yum install texlive-scheme-full
 ```
 
 ## [Python](/Python/) {#z2c220a1}
@@ -171,9 +69,6 @@ $ sudo yum install perl perl-Digest-MD5
 ```
 $ sudo yum install evince
 ```
-
-Fedora の Evince, Okular, zathura, qpdfview, TeXstudio, Texmaker, TeXworks などの poppler + fontconfig を使用するアプリケーションはインストール直後のデフォルトの状態ではフォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまいます．<br>
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
 ## [Okular](/Okular/) {#k7d05705}
 
