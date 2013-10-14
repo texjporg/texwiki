@@ -40,9 +40,9 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary)
 - [http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk](http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk)
 
-### TeX Live 2013 <a id="texlive2013"></a> {#z4379676}
+### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
@@ -57,7 +57,7 @@ $ equivs-build debian-control-ex.txt
 $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 ```
 
-### TeX Live 2013/Debian <a id="texlive2013debian"></a> {#rde4f3be}
+### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 - [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
