@@ -32,7 +32,7 @@ pukiwiki: "OTF"
     で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
     使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
 
-- TeX Live 2012 以降では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/04/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+- TeX Live では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/04/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### ChangeLog {#k32bef0c}
 
@@ -56,15 +56,13 @@ pukiwiki: "OTF"
 
 #### TeX Live {#da8ed89a}
 
-TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 #### W32TeX {#z4ee6291}
 
 [W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
 これを例えば C:\temp\ に入れます。<br>
 Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
-
-W32TeX \[2013/03/18\] 以降の場合は
 
 ```
 PS C:\Users\$Env:USERNAME> c:
@@ -74,7 +72,7 @@ PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
-W32TeX \[2013/03/18\] 以降の場合は GNU tar 1.11.8 + 2.1(WIN32) になっています．
+W32TeX の tar は GNU tar 1.11.8 + 2.1(WIN32) です．
 
 ```
 PS C:\w32tex> .\tar --version
@@ -96,7 +94,7 @@ MacTeX または TeX Live をインストールすれば OTF パッケージも�
 
 #### MacTeX &amp; TeX Live {#t85f1532}
 
-MacTeX-2012，TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+MacTeX，TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### Solaris，UNIX 互換 OS でのインストール {#aec1d55c}
 
@@ -105,7 +103,7 @@ TeX Live をインストールすれば OTF パッケージもインストール
 
 #### TeX Live {#fa2a3abb}
 
-TeX Live 2012 以降では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
 ### CMap {#n2a34850}
 
