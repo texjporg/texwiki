@@ -29,16 +29,17 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 - [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 
-### TeX Live 2013 {#v87b6755}
+### TeX Live 公式パッケージ {#v87b6755}
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止するため [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) パッケージをインストールします．<br>
 
-- [Linux](/Linux/#texlive2013)
+- [Linux](/Linux/#texliveinstall)
 
-### TeX Live 2013/TeX Live for SUSE Linux {#y0f6032d}
+### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
 #### openSUSE 13.1 {#i8bbf7fd}
 
+TeX Live 2013/TeX Live for SUSE Linux のインストールは
 YaST パッケージマネージャ で texlive-scheme-full を検索してtexlive-scheme-full パッケージを選択してインストールします．<br>
 zypper を使用しても OK です．<br>
 
