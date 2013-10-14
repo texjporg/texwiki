@@ -10,11 +10,13 @@ pukiwiki: "Microsoft Office"
 ## [Microsoft Office](http://office.microsoft.com/ja-jp/) {#f4dcc3e1}
 
 - [Microsoft Office - Office.com](http://office.microsoft.com/ja-jp/)
+- [ホーム | Microsoft Office](http://www.microsoft.com/ja-jp/office/)
 - [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
 - [Office IT 担当者向けブログ](http://blogs.technet.com/b/office_jp/)
 - [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
 - [MSOfficeJP(@MSOfficeJP) - Twilog](http://twilog.org/MSOfficeJP)
 - [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
+- [http://ja.wikibooks.org/wiki/Microsoft_Office](http://ja.wikibooks.org/wiki/Microsoft_Office)
 
 ## アドイン {#w6cd2e21}
 
