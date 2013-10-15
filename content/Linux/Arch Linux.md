@@ -125,12 +125,6 @@ $ sudo pacman -S poppler poppler-data
 $ sudo pacman -S evince
 ```
 
-gvfs が必要な人は gvfs もインストールします．<br>
-
-```
-$ sudo pacman -S gvfs
-```
-
 ## [Okular](/Okular/) {#d36d48ab}
 
 ```
@@ -206,49 +200,6 @@ $ yaourt -S texstudio
 $ sudo pacman -S texmaker
 ```
 
-Texmaker はかな漢字変換に関して不具合があるので<br>
-不具合を回避するための設定をします．<br>
-\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用してください．<br>
-
-### fcitx の場合 {#z5f111a8}
-
-fcitx を使用する場合はテキストとハイライトが同系色の場合に文字が見えにくくなります．<br>
-Qt 設定ツールを起動します．<br>
-
-```
-$ qtconfig-qt4
-```
-
-Qt 設定ツールの \[外観\]-\[パレットの設定\]-\[パレットの調整(<ins>T</ins>)...\]-\[中央部の色の役割(<ins>R</ins>)\] からハイライトを選択して<br>
-\[色の選択(<ins>S</ins>)\] からテキストの色が白でも黒でもどちらでも見えるように適切な色を設定します．<br>
-Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から fcitx を選択すると<br>
-Texmaker のデフォルトのインプットメソッドが fcitx になります．<br>
-デフォルトのインプットメソッドを fcitx 以外にしたい場合は<br>
-Texmaker の \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックして<br>
-\[インプットメソッドを選択\]-\[fcitx\] を選択してください．<br>
-
-### ibus の場合 {#ic19545c}
-
-ibus を使用する場合はテキストとハイライトが黒く表示されて文字が見えなくなります．<br>
-ibus を使用する場合は ibus-qt もインストールします．<br>
-
-```
-$ sudo pacman -S ibus-qt
-```
-
-ibus-qt をインストールしてインプットメソッドを ibus にするとハイライトが薄紫色になって文字が見えるようになります．<br>
-Qt 設定ツールを起動します．<br>
-
-```
-$ qtconfig-qt4
-```
-
-Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択すると<br>
-Texmaker のデフォルトのインプットメソッドが ibus になります．<br>
-デフォルトのインプットメソッドを ibus 以外にしたい場合は<br>
-Texmaker の \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックして<br>
-\[インプットメソッドを選択\]-\[ibus\] を選択してください．<br>
-
 ## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
@@ -260,8 +211,6 @@ $ yaourt -S texworks
 ```
 $ sudo pacman -S lyx
 ```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## LaTeXila {#q4319830}
 
@@ -305,18 +254,6 @@ $ sudo pacman -S geany geany-plugins
 ```
 $ sudo pacman -S inkscape pstoedit python2-lxml
 ```
-
-eqtexsvg を最新版に更新します．<br>
-
-```
-$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
-$ tar xvf eqtexsvg.tar.gz
-$ chmod +x eqtexsvg.py
-$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
-$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
-```
-
-Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
 
 ## awesome {#hf2862e7}
 
