@@ -39,7 +39,7 @@ pukiwiki: "C++"
 - [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
     - [http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)
-- [Microsoft Visual Studio Express](http://www.microsoft.com/japan/msdn/vstudio/express/)
+- Microsoft Visual Studio Express
 
 ### ライブラリ・フレームワーク {#se7f734e}
 
