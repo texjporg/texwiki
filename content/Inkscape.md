@@ -165,7 +165,7 @@ LaTeX と連携するためのエクステンション．<br>
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
 - [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
 
-#### インストール {#v77ed75c}
+#### インストール (Windows) {#v77ed75c}
 
 dvisvgm, dvips, latex は [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) に含まれています．
 
@@ -223,6 +223,31 @@ class Equation:
 などとして C:\inkscape\share\extensions\eqtexsvg.py の self.temp_dir を修正してください．<br>
 この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
 処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
+
+#### インストール (Linux) {#jbc77a7b}
+
+eqtexsvg を最新版に更新します．<br>
+
+```
+$ wget http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+```
+
+または
+
+```
+$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+```
+
+eqtexsvg.tar.gz を展開して chmod で実行権限を付加して /usr/share/inkscape/extensions にコピーします．<br>
+
+```
+$ tar xvf eqtexsvg.tar.gz
+$ chmod +x eqtexsvg.py
+$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
+$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
+```
+
+Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
 
 #### 使用方法 {#se15d9b2}
 
