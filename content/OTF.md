@@ -447,7 +447,7 @@ $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。<br>
-TeX Live 2013 の場合は [kanji-config-updmap](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/jfontmaps/kanji-config-updmap.pl?view=markup) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
+[kanji-config-updmap](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/jfontmaps/kanji-config-updmap.pl?view=markup) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
 
 ```
 $ kanji-config-updmap <fontname>　　（otf-<fontname>.map にしたがってフォントを埋め込む）
