@@ -120,83 +120,17 @@ $ sudo yum install texstudio
 $ sudo yum install texmaker
 ```
 
-Texmaker はかな漢字変換に関して不具合があるので<br>
-不具合を回避するための設定をします．<br>
-\section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならない場合は [TeXstudio](/TeXstudio/) または [Kile](/Kile/) を使用してください．<br>
-
-1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
-
-    ```
-    $ sudo yum install ibus-qt
-    ```
-
-1. [qt-config](https://apps.fedoraproject.org/packages/qt-config) を導入する
-
-    ```
-    $ sudo yum install qt-config
-    ```
-
-1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
-
-    ```
-    $ qtconfig-qt4
-    ```
-
-1. Texmaker を起動する
-
-    ```
-    $ texmaker &
-    ```
-
-とすると Texmaker の日本語入力で黒く表示される問題が解決しました．
-
-Qt 設定ツールを使用せずに Texmaker の編集画面で右クリックして \[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
-編集画面で右クリックして \[インプットメソッドを選択\] が出てこない場合は \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\] のテキスト入力ボックスでマウスを右クリックすると出てきました．<br>
-\[インプットメソッドを選択\] で XIM を選択すると日本語入力で黒く表示されてしまいました．<br>
-
 ## [TeXworks](/TeXworks/) {#q8a87364}
 
 ```
 $ sudo yum install texworks
 ```
 
-1. [ibus-qt](https://apps.fedoraproject.org/packages/ibus-qt) を導入する
-
-    ```
-    $ sudo yum install ibus-qt
-    ```
-
-1. [qt-config](https://apps.fedoraproject.org/packages/qt-config) を導入する
-
-    ```
-    $ sudo yum install qt-config
-    ```
-
-1. Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択する
-
-    ```
-    $ qtconfig-qt4
-    ```
-
-1. TeXworks を起動する
-
-    ```
-    $ texworks &
-    ```
-
-1. 現在カーソルのある行をハイライトするをチェックする
-
-とすることで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
-Qt 設定ツールを使用せずに TeXworks の編集画面で右クリックして，\[インプットメソッドを選択\]-\[ibus\] を選択しても OK です．<br>
-\[インプットメソッドを選択\]-\[XIM\] ではかな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなるようです．<br>
-
 ## [LyX](/LyX/) {#n0d7807d}
 
 ```
 $ sudo yum install lyx
 ```
-
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
 
 ## LaTeXila {#ka561406}
 
@@ -247,21 +181,7 @@ $ sudo yum install geany geany-plugins-geanylatex
 $ sudo yum install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
 ```
 
-eqtexsvg を最新版に更新します．<br>
-
-```
-$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
-$ tar xvf eqtexsvg.tar.gz
-$ chmod +x eqtexsvg.py
-$ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
-$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
-```
-
-Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[Latex 数式...\] が使用出来ます．<br>
-
 ## ibus-kkc {#a96c1055}
-
-Fedora 19 から日本語入力に ibus-kkc が利用できるようになりました． → [http://fedoraproject.org/wiki/Releases/19/FeatureList](http://fedoraproject.org/wiki/Releases/19/FeatureList)<br>
 
 - [libkkc / libkkc / wiki / Home &mdash; Bitbucket](https://bitbucket.org/libkkc/libkkc/)
 - [du -a ~ueno | Just another WordPress site](http://blog.du-a.org/)
