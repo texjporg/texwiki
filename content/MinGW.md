@@ -11,7 +11,9 @@ pukiwiki: "MinGW"
 
 ## MinGW とは {#tb48dbc4}
 
-MinGW は "Minimalist GNU for Windows" の略語で Microsoft Windows アプリケーションを開発するための最小限の開発環境を提供します.
+MinGW は "Minimalist GNU for Windows" の略語で Microsoft Windows アプリケーションを開発するための最小限の開発環境を提供します．<br>
+TeX 関連プログラムには C, C++ で書かれたプログラムがあります．<br>
+MinGW を使用すれば TeX Live の最新の開発版を自分でビルドして使用することができます．<br>
 
 - [MinGW | Minimalist GNU for Windows](http://www.mingw.org/)
 
