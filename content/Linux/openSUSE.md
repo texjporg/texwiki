@@ -87,8 +87,6 @@ $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
 $ sudo zypper install lyx
 ```
 
-文字コードに Japanese (pLaTeX) (UTF8) または Japanese (non-CJK) (UTF8) が表示されない場合は [Japanese (non-CJK) (UTF8) の追加](/LyX/#p6f7d077) を参照して追加します．<br>
-
 ## LaTeXila {#r5f3b44b}
 
 ```
