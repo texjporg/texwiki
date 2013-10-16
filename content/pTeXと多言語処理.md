@@ -123,13 +123,13 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に
 グルジア文字を直接入力している場合は，後述する UTF82TeX を用いて
 グルジア文字を mxedruli パッケージ用の ASCII 文字転写規則に変換しましょう。
 
-文書が出来ましたら，普通に pLaTeX で処理します。すなわち，
+文書が出来ましたら，普通に ptex2pdf で処理します。すなわち，
 
 ```
-platex gtest-o.tex
+ptex2pdf -l gtest-o.tex
 ```
 
-を実行します。DVI ファイルをプレビューしてみて，
+を実行します。PDF ファイルをプレビューしてみて，
 うまくいっているかどうかを確認してください。
 
 ## 中東の諸言語 {#arablowic}
@@ -282,11 +282,10 @@ fmtutil --byfmt platex
 ソースをヴェトナム文字で直接入力した方は，
 後述する UTF82TeX で変換してください。
 
-出来上がったら platex および dvipdfmx で処理します。
+出来上がったら ptex2pdf で処理します。
 
 ```
-platex vtest-o.tex
-dvipdfmx vtest-o.dvi
+ptex2pdf -l vtest-o.tex
 ```
 
 PDF ファイルを見ると，ヴェトナム語が正常に表示されているはずです。
@@ -461,11 +460,10 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 あとはいつもの通りに処理します。
 
 ```
-platex foo.tex
-dvipdfmx foo.dvi
+ptex2pdf -l foo.tex
 ```
 
-foo.pdfを開くとタイ語と日本語が共存しているはずです。
+foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 なお Unicode でタイ語文書を記述できる方は，先に述べたような iconv → swath → 8bt2ptex の代わりに，最後の項で紹介する [UTF82TeX](</pTeXと多言語処理/#iutf82tx>) を用いたほうがさらに簡便です。
 
@@ -552,8 +550,7 @@ rem copy mlotf.sty test\
 rem copy tfm\* test\
 rem copy vf\* test\
 rem cd test
-rem platex test1.tex
-rem dvipdfmx test1.dvi
+rem ptex2pdf -l test1.tex
 rem start test1.pdf
 ```
 
@@ -1429,11 +1426,10 @@ utf8toutf cjkintro.tex cjkintro-sjis.tex
 これで変換され，文字コードも自動的に Shift_JIS になりました。
 生成したファイル名はここでは “cjkintro-sjis.tex” です。
 
-あとはいつものように platex などで処理し，PDF 文書で確認しましょう。
+あとは ptex2pdf などで処理し，PDF 文書で確認しましょう。
 
 ```
-platex cjkintro-sjis.tex
-dvipdfmx cjkintro-sjis.dvi
+ptex2pdf -l cjkintro-sjis.tex
 ```
 
 または，
