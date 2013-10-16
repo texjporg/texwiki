@@ -480,9 +480,9 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 韓國語（&#xd55c;&#xad6d;&#xc5b4;）
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
-KoreanTeX
-がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，
-後述する方法と異なり入力ソフト \[input method\] が不要です）。
+KoreanTeX （pLaTeX2e に対応しているのは[kTeX 1.2.2](http://www.khotta.org/ghost/ktex/ktex-122.zip)）がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，後述する方法と異なり入力ソフト \[input method\] が不要です）。
+
+多書体 TeX の開発者である[堀田耕作さん](http://www.khotta.org/ghost/)の[KoreanTeX への解説ページ 1](http://blogs.yahoo.co.jp/koh_hotta/44928272.html)および[KoreanTeX への解説ページ 2](http://blogs.yahoo.co.jp/koh_hotta/45883465.html)もあります。
 
 一方，中国語（&#x6c49;&#x8bed;［漢語］，中文）については扱う方法が
 ありませんでした。しかし，[OTF パッケージ](/OTF/)と OTFCJK パッケージの登場に
