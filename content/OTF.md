@@ -490,6 +490,34 @@ dvipdfmx -f noembed dviname (埋め込まない)
 dvipdfmx -f noembed04 dviname (埋め込まない, JIS2004字形)
 ```
 
+dvips の場合は
+
+```
+dvips -Pdl dviname (デフォルト,otf は Hiragino ProN)
+dvips -Pdl -u+hiragino-ps dviname (Hiragino)
+dvips -Pdl -u+hiragino04-ps dviname (Hiragino, JIS2004字形)
+dvips -Pdl -u+hiraginopron-ps dviname (Hiragino ProN)
+dvips -Pdl -u+hiraginopron04-ps dviname (Hiragino ProN, JIS2004字形)
+dvips -Pdl -u+kozuka-ps dviname (小塚 Pro)
+dvips -Pdl -u+koauka04-ps dviname (小塚 Pro, JIS2004字形)
+dvips -Pdl -u+kozukapr6n-ps dviname (小塚 Pr6N)
+dvips -Pdl -u+kozukapr6n04-ps dviname (小塚 Pr6N, JIS2004字形)
+dvips -Pdl -u+morisawa-ps dviname (Morisawa)
+dvips -Pdl -u+morisawa04-ps dviname (Morisawa, JIS2004字形)
+dvips -Pdl -u+morisawapr6n-ps dviname (Morisawa Pr6N)
+dvips -Pdl -u+morisawapr6n04-ps dviname (Morisawa Pr6N, JIS2004字形)
+dvips -Pdl -u+standard-ps dviname (Ryumin-Light, GothicBBB-Medium のみ)
+dvips -Pdl -u+standard04-ps dviname (Ryumin-Light, GothicBBB-Medium のみ, JIS2004字形)
+```
+
+結果の PS は Distiller で処理できる。 Ghostscript で処理するには、
+
+```
+ps2otfps old.ps new.ps
+```
+
+によって、new.ps を作成し、この new.ps を Ghostscript で処理する。
+
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 <!-- otf-cjmr-h は，前半では Identity-H と紹介されていますが， -->
 <!-- 以下では Adobe-Japan1-6 にしてあるのはどういう意味があるのでしょうか。 -->
