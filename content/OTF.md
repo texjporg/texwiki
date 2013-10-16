@@ -510,13 +510,13 @@ dvips -Pdl -u+standard-ps dviname (Ryumin-Light, GothicBBB-Medium のみ)
 dvips -Pdl -u+standard04-ps dviname (Ryumin-Light, GothicBBB-Medium のみ, JIS2004字形)
 ```
 
-結果の PS は Distiller で処理できる。 Ghostscript で処理するには、
+結果の PS は Distiller で処理できます。 Ghostscript を使う場合は、
 
 ```
 ps2otfps old.ps new.ps
 ```
 
-によって、new.ps を作成し、この new.ps を Ghostscript で処理する。
+によって、new.ps を作成し、この new.ps を Ghostscript で処理します。
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 <!-- otf-cjmr-h は，前半では Identity-H と紹介されていますが， -->
