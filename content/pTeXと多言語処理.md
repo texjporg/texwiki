@@ -884,10 +884,10 @@ Adobe Reader 附属の CMap
 例えば "C:\Program Files\Adobe\Reader 11.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
-DVI → PS → PDF の流れで作りたい方は $TEXMF/fonts/map/dvips/base/psfonts.map に
-次を追加します。
+DVI → PS → PDF の流れで作りたい方は自分用のたとえば mydvips.map に
+次を記述します。(dvips のオプション -u+mydvips.map で使用)
 
-#### $TEXMF/fonts/map/dvips/base/psfonts.map への追記 (その1) {#r889375b}
+#### mydvips.map への記述 (その1) {#r889375b}
 
 ***
 
@@ -1005,7 +1005,7 @@ cidgoth-v        GothicBBB-Medium-Identity-V
 
 または
 
-#### $TEXMF/fonts/map/dvips/base/psfonts.map への追記 (その2) {#tfd8aa35}
+#### mydvips.map への記述 (その2) {#tfd8aa35}
 
 ***
 
