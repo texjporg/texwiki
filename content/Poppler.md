@@ -749,14 +749,14 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.32.0.tar.bz2
-$ tar xvf curl-7.32.0.tar.bz2
-$ pushd curl-7.32.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.33.0.tar.bz2
+$ tar xvf curl-7.33.0.tar.bz2
+$ pushd curl-7.33.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.32.0
+  curl version:     7.33.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
