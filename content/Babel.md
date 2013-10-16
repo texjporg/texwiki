@@ -29,7 +29,7 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 #### インストール {#u48e60e8}
 
-TeX Live 2012 以降を使用している場合は Babel の japanese パッケージはすでにインストールされています．<br>
+TeX Live では Babel の japanese パッケージはすでにインストールされています．<br>
 
 W32TeX の場合は Babel の japanese パッケージをインストールする必要があります．<br>
 インストール方法は以下のとおりです．<br>
@@ -46,4 +46,4 @@ W32TeX の場合は Babel の japanese パッケージをインストールす�
 ### polyglossia {#q0893d44}
 
 babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
-polyglossia v1.3 以降は XeLaTeX と LuaLaTeX がサポートされています。<br>
+polyglossia は LuaLaTeX と XeLaTeX がサポートされています。<br>
