@@ -209,7 +209,8 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 ### polyglossia {#vf242886}
 
 babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
-polyglossia は LuaLaTeX と XeLaTeX がサポートされています。<br>
+polyglossia は LuaLaTeX と XeLaTeX がサポートされています．<br>
+polyglossia は TeX Live にも W32TeX にもインストールされています．<br>
 
 ## 関連リンク {#sf395095}
 
