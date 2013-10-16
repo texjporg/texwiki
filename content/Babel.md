@@ -31,19 +31,10 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 TeX Live では Babel の japanese パッケージはすでにインストールされています．<br>
 
-W32TeX の場合は Babel の japanese パッケージをインストールする必要があります．<br>
-インストール方法は以下のとおりです．<br>
-
-1. [CTAN:language/japanese/japanese.zip](https://mirror.ctan.org/language/japanese/japanese.zip) から japanese.zip をダウンロードします．
-1. japanese.zip を展開します．
-1. 展開すると japanese.ins というファイルがあるので，japanese.ins を C:\w32tex\bin\platex.exe に Drag &amp; Drop します．
-1. japanese.ins と同じフォルダに japanese.ldf が作成されます．
-1. japanese.ldf をコピーして C:\w32tex\share\texmf-dist\tex\generic\babel にペースト(貼り付け)すればインストール完了です．
-1. もし C:\w32tex\share\texmf-dist\ls-R が存在する場合は C:\w32tex\bin\deltexlsr.exe をダブルクリックして C:\w32tex\share\texmf-dist\ls-R を削除してください．
-
-- [funyarara @ Wiki - インストール](http://www35.atwiki.jp/funyarara/pages/43.html) にも japanese.ldf のインストール・設定方法があります．
+W32TeX の場合は Babel の japanese パッケージは 2013/10/17 以降の版にインストールされています．<br>
 
 ### polyglossia {#q0893d44}
 
 babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
-polyglossia は LuaLaTeX と XeLaTeX がサポートされています。<br>
+polyglossia は LuaLaTeX と XeLaTeX がサポートされています．<br>
+polyglossia は TeX Live にも W32TeX にもインストールされています．<br>
