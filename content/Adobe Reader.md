@@ -52,7 +52,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
-### Windows 8, 7 64-bit で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+### Windows 8.1, 8, 7 64-bit で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
 
 - [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
 - [ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/](ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/)
@@ -125,16 +125,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
-Adobe Reader XI を使用する場合は
-
-- TeX Live 2013 以降 (→ [Revision 28281](http://www.tug.org/svn/texlive?view=revision&revision=28281) でコミットされました)
-
-または
-
-- W32TeX \[2012/10/15\] 以降
-
-が必要です．<br>
-
+TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを開くことができます．<br>
 pdfopen を使用する場合 PDF ファイルは Adobe Reader に関連付けしておく必要があります．<br>
 
 ### PDF ファイルを開く {#id6d0918}
