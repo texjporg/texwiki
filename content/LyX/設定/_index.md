@@ -66,12 +66,6 @@ Default Decimal Separator: 　　<ins>.</ins><br>
 
 babel を使用して文書を作成する場合は babel を on にします．
 
-W32TeX を使用していて babel の japanese パッケージをインストールしたい場合は
-
-- [Babel - TeX Wiki](/Babel/)
-
-をご覧下さい．
-
 babel のオプションを設定する場合は以下の方法があります．
 
 - クラスオプションでグローバルに設定する
