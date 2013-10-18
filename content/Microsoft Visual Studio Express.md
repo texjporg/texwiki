@@ -14,3 +14,4 @@ Microsoft Visual Studio Express を使用すれば自分でビルドして使用
 
 - [Microsoft Visual Studio Express](http://www.microsoft.com/ja-jp/dev/express/)
 - [Wikipedia.ja:Microsoft_Visual_Studio_Express](https://ja.wikipedia.org/wiki/Microsoft_Visual_Studio_Express)
+- [Windows software development kit (SDK) for Windows 8.1](http://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
