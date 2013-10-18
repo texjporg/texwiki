@@ -9,4 +9,4 @@ pukiwiki: "LaTeX2HTML5"
 
 ## LaTeX2HTML5 {#f6c1ef79}
 
-- [latex2html5.com](http://latex2html5.com/)
+- latex2html5
