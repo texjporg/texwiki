@@ -30,8 +30,6 @@ pukiwiki: "F Sharp"
 
 Windows 8.1, Windows 8, Windows 7 SP1 では Visual Studio 2013 をインストールすれば F# 3.1 が使用できます．<br>
 
-- [Microsoft、「F# 3.1」をプレビュー公開](http://www.forest.impress.co.jp/docs/news/20130701_605944.html)
-
 ### F# 3.0 {#yb6a3a97}
 
 Windows 8, Windows 7 SP1 では [F# Tools for Visual Studio Express 2012 for Web](http://www.microsoft.com/en-us/download/details.aspx?id=34675) をダウンロードしてインストールすれば F# 3.0 が使用できます．<br>
