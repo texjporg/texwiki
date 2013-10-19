@@ -230,13 +230,3 @@ $ sudo apt-get install geany geany-plugins
 ```
 $ sudo apt-get install inkscape pstoedit python-lxml
 ```
-
-## fcitx-mozc <a id="fcitx-mozc"></a> {#a10c0ee8}
-
-```
-$ sudo apt-get install software-properties-common
-$ sudo apt-add-repository ppa:ikuya-fruitsbasket/fcitx
-$ sudo apt-get update
-$ sudo apt-get install fcitx fcitx-mozc
-$ im-config -x
-```
