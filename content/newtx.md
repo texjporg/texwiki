@@ -55,6 +55,8 @@ Modified txmi/txmi1 tfm/vf files
 [txmi1.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi1.zip))
 improve the spacing of $S$ with subscripts.
 
+- [http://www.ctan.org/pkg/txfonts](http://www.ctan.org/pkg/txfonts)
+
 ### News {#b42eab94}
 
 - \[2008-03-26\] small capsがAdobe Reader 8でうまく表示できない問題のfix およびtxfonts.styの若干の修正 (Young Ryu)
