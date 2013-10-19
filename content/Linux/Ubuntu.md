@@ -232,16 +232,6 @@ $ sudo apt-get install geany geany-plugins
 $ sudo apt-get install inkscape pstoedit python-lxml
 ```
 
-## fcitx-mozc <a id="fcitx-mozc"></a> {#rbb0c80a}
-
-```
-$ sudo apt-get install software-properties-common
-$ sudo apt-add-repository ppa:ikuya-fruitsbasket/fcitx
-$ sudo apt-get update
-$ sudo apt-get install fcitx fcitx-mozc
-$ im-config -x
-```
-
 ## 関連リンク {#p9c99f41}
 
 - [http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do](http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do)
