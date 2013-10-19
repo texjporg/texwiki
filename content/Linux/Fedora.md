@@ -44,6 +44,7 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ```
 $ sudo yum install texlive-scheme-full
+$ sudo yum install perl-Digest-MD5
 ```
 
 ## [Python](/Python/) {#z2c220a1}
@@ -61,7 +62,8 @@ $ sudo yum install ruby
 ## [Perl](/Perl/) {#m7e04372}
 
 ```
-$ sudo yum install perl perl-Digest-MD5
+$ sudo yum install perl
+$ sudo yum install perl-Digest-MD5
 ```
 
 ## [Evince](/Evince/) {#na36e8b6}
