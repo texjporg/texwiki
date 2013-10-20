@@ -309,8 +309,7 @@ latexmk -C
 
 ## Lua スクリプト {#uddc392d}
 
-- [ptex2pdf](https://gitorious.org/tlptexlive/ptex2pdf)
-    - [There and back again &middot; ptex2pdf](http://blog.preining.info/software-projects/ptex2pdf/)
+- [ptex2pdf](/ptex2pdf/)
 
 ## Ruby スクリプト {#h23942de}
 
