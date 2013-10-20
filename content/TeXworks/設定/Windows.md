@@ -72,7 +72,7 @@ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
+[ptex2pdf](/ptex2pdf/) を使って設定します．<br>
 
 ***
 
@@ -239,7 +239,7 @@ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
+[ptex2pdf](/ptex2pdf/) を使って設定します．<br>
 
 ***
 
