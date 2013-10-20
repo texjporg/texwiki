@@ -107,7 +107,7 @@ gvfs-open "$shortname.pdf"
 に設定されています．<br>
 これらを \[削除(R)\] して<br>
 
-TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用する場合は
+[ptex2pdf](/ptex2pdf/) を使用する場合は
 
 ```
 ptex2pdf -l -ot '-synctex=1' "$filename"
@@ -242,7 +242,7 @@ Bracket Completion プラグインを使用すると閉じかっこを自動的�
 適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
 \[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．<br>
-以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 Latexmk は Latexmk Version 4.37 以降が必要です．<br>
 
 #### pdfpLaTeX {#pcd18d0c}
