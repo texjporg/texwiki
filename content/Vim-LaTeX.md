@@ -100,7 +100,7 @@ Vim を起動し
 #### 設定 {#q8a0044b}
 
 $HOME/\_vimrc に設定を記述します．<br>
-以下の設定では TeX Live, W32TeX に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -186,7 +186,7 @@ Vim を起動し
 #### 設定 {#hf6d9f36}
 
 $HOME/.vimrc に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -282,7 +282,7 @@ Vim を起動し
 #### 設定 {#j3b0f658}
 
 $HOME/.vimrc に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
