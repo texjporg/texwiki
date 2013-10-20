@@ -42,8 +42,6 @@ TeXlipse は
 
 [News](http://texlipse.sourceforge.net/news.php) を参照．<br>
 
-TeXlipse Version 1.4.2 以降は 64-bit Windows に対応しています．<br>
-
 ### ChangeLog {#e321b2d0}
 
 - [http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
@@ -188,6 +186,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 - [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
+- [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
     <!-- -[[6. TeXlipse の追加・設定 | Eclipse を使おう別館:http://x19290.appspot.com/using-eclipse/main.html#S6]] -->
 
