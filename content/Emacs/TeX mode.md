@@ -37,7 +37,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では TeX Live, W32TeX に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
@@ -164,7 +164,7 @@ C-x C-f ~/
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 MacPorts の TeX Live の場合は [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688) を参照してください．<br>
 
 ***
@@ -272,7 +272,7 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
