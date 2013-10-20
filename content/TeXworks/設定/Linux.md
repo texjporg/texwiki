@@ -29,7 +29,7 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
+[ptex2pdf](/ptex2pdf/) を使って設定します．<br>
 
 ***
 
@@ -155,7 +155,7 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-[ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使って設定します．<br>
+[ptex2pdf](/ptex2pdf/) を使って設定します．<br>
 
 ***
 
@@ -645,7 +645,3 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 - [LaTeX - おもこん - Yahoo!ブログ](http://blogs.yahoo.co.jp/jeaou/folder/1202527.html)
 - [VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)
     - おもこんには、VineLinuxでgnuplotとTexworksを連携させる話題があり、Texworksのコンフィギュレーションファイルがその中で解説されています。[VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)から、「VineLinuxのgnuplot…」「pregnuplotを…」を見てください。
-
-## 関連リンク {#k8a54b4f}
-
-- [There and back again &middot; ptex2pdf](http://blog.preining.info/software-projects/ptex2pdf/)
