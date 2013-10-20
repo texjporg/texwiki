@@ -45,7 +45,7 @@ Windows, OS X, Linux
 \[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
 
 Geany はデフォルトで LaTeX のビルドに対応しています．<br>
-以下の設定では TeX Live 2013 以降に含まれている [ptex2pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup) を使用しています．<br>
+以下の設定では TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 BibTeX や hyperref パッケージなどを使用する場合は latexmk を使用してください．<br>
 
 #### LaTeX コマンド {#z6996bd9}
