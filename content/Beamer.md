@@ -39,7 +39,7 @@ Beamer は
 
 で利用可能です．
 
-- pdfLaTeX の場合は [CJK LaTeX/bxcjkjatype](/LaTeX-CJK/) で日本語文書が作成出来ます．
+- pdfLaTeX の場合は [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) で日本語文書が作成出来ます．
 - LuaLaTeX/LuaJITLaTeX の場合は [LuaTeX-ja](/LuaTeX-ja/) で日本語文書が作成できます．
 - XeLaTeX の場合は [xeCJK/ZXjatype](/xeCJK/) で日本語文書が作成できます．
 
@@ -140,6 +140,8 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### Beamer Themes {#r446ce9a}
 
+- [LaTeX Beamer Themes](http://latex.simon04.net/)
+- [LaTeX Beamerにカスタムテーマをインストールして使う](http://d.hatena.ne.jp/muupan/20130922/1379830899)
 - [Beamer Theme Matrix](http://www.hartwork.org/beamer-theme-matrix/)
 - [kmbeamer](https://github.com/kmaed/kmbeamer)
 - [Epyt](https://github.com/zohooo/epyt)
