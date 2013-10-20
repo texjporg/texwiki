@@ -57,7 +57,6 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-May/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-April/thread.html)
     - [http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html](http://sourceforge.jp/projects/xdvi/lists/archive/users/2013-March/thread.html)
-- [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
 
 ### ChangeLog {#y0777637}
@@ -73,6 +72,7 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+- [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
 
 ### 使い方 {#o73d19d8}
 
