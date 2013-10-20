@@ -90,9 +90,8 @@ dviout を管理者として実行した場合はこのエラーは発生しな�
 
 ## インストール {#f465326c}
 
-あらかじめ TeX システムをインストールして
-おきます。[Microsoft Windows - TeX Wiki](</Microsoft Windows/>) を
-ご覧ください。<br>
+あらかじめ TeX システムをインストールしておきます。<br>
+[Microsoft Windows - TeX Wiki](</Microsoft Windows/>) をご覧ください。<br>
 
 ### TeX Live の場合 {#se2d51a5}
 
