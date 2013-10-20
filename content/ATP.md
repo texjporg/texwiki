@@ -39,7 +39,6 @@ GPLv3<br>
 ### ChangeLog {#rf82eb2b}
 
 - [log](http://sourceforge.net/p/atp-vim/code/ci/master/log/)
-- [コミットログ](http://sourceforge.net/p/atp-vim/code/commit_browser)
 - [https://github.com/coot/atp_vim/commits/master](https://github.com/coot/atp_vim/commits/master)
 
 ## ATP の動作に必要なもの {#g428a1c8}
