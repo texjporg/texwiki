@@ -303,9 +303,9 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe](http://www1.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
+まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
 
-[libiconv + iconv.exe](http://www1.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
+[libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
 
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
