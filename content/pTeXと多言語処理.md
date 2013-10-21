@@ -134,24 +134,32 @@ ptex2pdf -l gtest-o.tex
 
 ## 中東の諸言語 {#arablowic}
 
-アラビア語についてはArabTeX上で扱えますし，ヘブライ語はArabTeXによる方法とBabelから用いる方法の2種類があるようです。詳細は，
+### アラビア語 {#r238fbee}
+
+アラビア語についてはArabTeX上で扱えますし，ヘブライ語はArabTeXによる方法とBabelから用いる方法の2種類があるようです。<br>
+詳細は，
 [ArabTeX User's Manualの日本語訳](http://www.kotoito.net/arabtex.html),
 [ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364),
 [TeX &amp; ArabTeX \[Internet Archive\]](http://web.archive.org/web/20080420234244/http://www.osaka-gaidai.ac.jp/~mes/multi/multi_02.html) などをご覧ください。
 
 インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
 
-まず，[ArabTeX](http://www.ctan.org/get?fn=/language/arabtex.zip)をダウンロードします。展開（解凍）後，次のようにコピーします。$TEXMFLOCAL は share/texmf-local などご自分の環境に置き換えてください。
+TeX Live の場合は ArabTeX は最初からインストールされています。<br>
+W32TeX の場合は [ArabTeX](http://www.ctan.org/pkg/arabtex) をダウンロードします。<br>
+展開（解凍）後，次のようにコピーします。<br>
+$TEXMFLOCAL は C:/w32tex/share/texmf-local などご自分の環境に置き換えてください。<br>
 
-- mfinput/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/fonts/source/arabtex/
-- tfm/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/fonts/tfm/arabtex/
-- psfonts/ ディレクトリ内の PFB ファイルすべて → $TEXMFLOCAL/fonts/type1/arabtex/
+- mfinput/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/fonts/source/public/arabtex/
+- tfm/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/fonts/tfm/public/arabtex/
+- psfonts/ ディレクトリ内の PFB ファイルすべて → $TEXMFLOCAL/fonts/type1/public/arabtex/
 - psfonts/ ディレクトリ内の map ファイルすべて → $TEXMFLOCAL/fonts/map/dvips/arabtex/
 - texinput/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/tex/latex/arabtex/
 
-さらに，安田さんが ArabTeX と Babel を共存させるためのパッチを作ってくださいました。パッチ適用済みのファイルは「[ダウンロード・サービス #ArabTeX 7 ビット化アーカイブ](http://yasuda.homeip.net/dl/dl.html#p)」からダウンロードします。これらは $TEXMFLOCAL/tex/latex/arabtex/ にコピーします。
+さらに，安田さんが ArabTeX と Babel を共存させるためのパッチを作ってくださいました。<br>
+パッチ適用済みのファイルは「[ダウンロード・サービス #ArabTeX 7 ビット化アーカイブ](http://yasuda.homeip.net/dl/dl.html#p)」からダウンロードします。<br>
+これらは $TEXMFLOCAL/tex/latex/arabtex/ にコピーします。
 
-必要な方はmktexlsrをコマンド プロンプトなどで実行します。
+必要な方は Windows PowerShell またはコマンド プロンプトで mktexlsr を実行します。
 
 ```
 mktexlsr
@@ -244,7 +252,7 @@ $TEXMFLOCAL/fonts/map/dvips/misc/ に保存しておいてください。
 
     と追加します。
 
-あとはコマンド プロンプトなどで次のように fmtutil で処理します。
+あとは Windows PowerShell またはコマンド プロンプトなどで次のように fmtutil で処理します。
 
 ```
 fmtutil --byfmt latex
@@ -345,7 +353,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 
 - $TEXMFLOCAL/tex/generic/babel/
 
-にコピーします。thai.ldfはthaiold.ldfなどと名前を変え，コマンド プロンプトで
+にコピーします。thai.ldfはthaiold.ldfなどと名前を変え，Windows PowerShell またはコマンド プロンプトで
 
 ```
 8bt2ptex thaiold.ldf >thai.ldf
@@ -386,7 +394,8 @@ C:\w32tex\bin\ など PATH の通ったところにコピーします
 
 では，実際にタイ語文書を作りましょう。
 
-Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。 ([Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。)これをthaiutf8.txtとします。コマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。
+Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。 ([Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。)これをthaiutf8.txtとします。<br>
+Windows PowerShell またはコマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。
 
 ```
 iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
@@ -394,10 +403,10 @@ iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 
 TIS-620 の文字コードで編集して保存した場合は上のようなiconvでの変換作業は不要です。
 
-これらの方法などで出来た thaimemo.txt をコマンド プロンプトにて SWATH で
+これらの方法などで出来た thaimemo.txt を Windows PowerShell またはコマンド プロンプトにて SWATH で
 処理し，単語の切れ目に \wbr という目印を付けます。
 例えば data/ ディレクトリを C:\w32tex\bin\ にコピーしたなら，
-次のようにコマンド プロンプトなどより実行します。
+Windows PowerShell またはコマンド プロンプトで次のように実行します。
 
 ```
 swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
