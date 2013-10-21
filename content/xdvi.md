@@ -72,6 +72,70 @@ pxdvi は xdvik を pTeX に対応させたものです．<br>
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+
+#### TeX Live 2013 (OS X) の場合 {#ve2d6700}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr update --all
+$ cd /usr/local/texlive/2013
+$ sudo ln -s texmf-dist texmf
+$ cd /usr/local/texlive/2013/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+$ brew install gnu-sed または sudo port install gsed
+$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+#### TeX Live 2013 (Linux) の場合 {#xf0871b2}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+```
+
+<!-- tlmgr: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
+
+```
+$ sudo tlmgr pinning add tlptexlive '*'
+```
+
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: * -->
+<!-- $ sudo tlmgr pinning add tlptexlive 'pxdvi*' -->
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pxdvi* -->
+<!-- $ sudo tlmgr pinning add tlptexlive 'pmetapost*' -->
+<!-- tlmgr: package repositories: -->
+<!-- 	main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+<!-- 	tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: new pinning data for tlptexlive: pmetapost* -->
+
+```
+$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr update --all
+$ cd /usr/local/texlive/2013
+$ sudo ln -s texmf-dist texmf
+$ cd /usr/local/texlive/2013/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+```
+
+<!-- $ sudo sed 's/-helvetica-/-*-/' -i XDvi -->
+
+```
+$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+#### TeX Live 2013/Arch Linux の場合 {#w4613e7f}
+
 - [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
 
 ### 使い方 {#o73d19d8}
