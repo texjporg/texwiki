@@ -117,8 +117,8 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_pdf = 'pdf'
-"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+"let g:Tex_FormatDependency_pdf = 'pdf'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
 let g:Tex_FormatDependency_ps = 'dvi,ps'
 let g:Tex_CompileRule_pdf = 'ptex2pdf -l -ot "-kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
@@ -203,8 +203,8 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_pdf = 'pdf'
-"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+"let g:Tex_FormatDependency_pdf = 'pdf'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
 let g:Tex_FormatDependency_ps = 'dvi,ps'
 let g:Tex_CompileRule_pdf = '/usr/texbin/ptex2pdf -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
@@ -299,8 +299,8 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_FormatDependency_pdf = 'pdf'
-"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+"let g:Tex_FormatDependency_pdf = 'pdf'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
 let g:Tex_FormatDependency_ps = 'dvi,ps'
 let g:Tex_CompileRule_pdf = 'ptex2pdf -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
@@ -840,6 +840,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 ## 関連サイト {#fc8d75eb}
 
+- [MacPortsでLaTeXの導入とvim-latex](http://d.hatena.ne.jp/adragoona/20131022/1382451627)
 - [MacVimでVim-LaTeXを使えるようにした。](http://d.hatena.ne.jp/tnil/20130827/1377615499)
 - [http://masa.o.oo7.jp/vimrc.txt](http://masa.o.oo7.jp/vimrc.txt)
 - [TeXLive 2012＋Vim-LaTeXでてふてふする on Fedora 17](http://masanoriprog.blogspot.jp/2013/01/texlive-2012vim-latex-on-fedora-17.html)
