@@ -149,6 +149,7 @@ $ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zli
 
 ## 関連リンク {#u27a744e}
 
+- [Reading PDF file in Windows store App sample in C#, C++, JavaScript for Visual Studio 2012](http://code.msdn.microsoft.com/windowsapps/Open-PDF-in-Windows-store-0614b58c)
 - [MuPDF - DenkiYagi](http://terurou.hateblo.jp/category/MuPDF)
     - [MuPDF conveter（MuPDFLib）でPDFを画像に変換してみる](http://terurou.hateblo.jp/entry/2013/07/10/172026)
 - [MuPDF 1.2 ライブラリーの C++ ラッパー](http://www.rvf-rc45.net/wordpress/?p=628)
