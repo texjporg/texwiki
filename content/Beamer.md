@@ -81,7 +81,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 ### XeLaTeX でナビゲーションシンボルが機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用するもしくは Beamer 3.17 以降にアップデートする {#s082f108}
 
 - [「XeLaTeX でナビゲーションシンボルが機能しない →bxdpx-beamerパッケージを使う」がいい！？](http://blog.livedoor.jp/ti5942/archives/7765237.html)
-- [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html)
+- [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html) → [Ubuntu 13.10 で Beamer 3.24 にアップデートされました](http://packages.ubuntu.com/ja/latex-beamer)
 
 ### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
 
@@ -175,6 +175,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [岩崎 隆盛/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=Beamer)
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
 - [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
+- [Beamer &mdash; Tasuku Soma&#39;s Homepage](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/beamer.html)
 - [LaTeX + Beamer でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/18/020615)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
