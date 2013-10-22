@@ -465,7 +465,7 @@ $ make install
 $ popd
 ```
 
-- [fontconfig](http://www.fontconfig.org/) をインストールします．
+- [fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/) をインストールします．
 
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.bz2
