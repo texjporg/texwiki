@@ -178,18 +178,18 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
-    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\fi
 \\else
   \\ifdefined\\XeTeXversion
-    \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
     \\ifdefined\\directlua
-      \\documentclass[12pt,a4paper]{bxjsarticle}
+      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\else
-      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\fi
   \\fi
 \\fi
@@ -322,18 +322,18 @@ latexmk は TeX Live に含まれています．<br>
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
-    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\fi
 \\else
   \\ifdefined\\XeTeXversion
-    \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
     \\ifdefined\\directlua
-      \\documentclass[12pt,a4paper]{bxjsarticle}
+      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\else
-      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\fi
   \\fi
 \\fi
@@ -465,18 +465,18 @@ latexmk は TeX Live に含まれています．<br>
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
   \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
-    \\documentclass[platex,12pt,a4paper]{bxjsarticle}
+    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\fi
 \\else
   \\ifdefined\\XeTeXversion
-    \\documentclass[12pt,a4paper]{bxjsarticle}
+    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
   \\else
     \\ifdefined\\directlua
-      \\documentclass[12pt,a4paper]{bxjsarticle}
+      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\else
-      \\documentclass[12pt,a4paper,CJK]{bxjsarticle}
+      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
     \\fi
   \\fi
 \\fi
