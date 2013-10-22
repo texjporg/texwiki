@@ -539,7 +539,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 <!-- 文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．~ -->
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションに CJK を設定します．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
 pdflatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -556,7 +556,7 @@ pdflatex を使用する場合は，グラフィックドライバに 既定値 
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt,CJK</ins><br>
+　任意設定(T):　　　 <ins>pdflatex,12pt,jadriver=standard</ins><br>
 
 <br>
 
@@ -610,7 +610,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt</ins><br>
+　任意設定(T):　　　 <ins>xelatex,12pt,jadriver=standard</ins><br>
 
 <br>
 
@@ -699,7 +699,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-(u)platex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は [bxcjkjatype パッケージ](/LaTeX-CJK/), [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](/xeCJK/) をインストールして LaTeXプリアンブルで
+(u)platex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
 
 ***
 
@@ -740,7 +740,8 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 ***
 
-のように編集すれば OK です．
+のように編集すれば OK です．<br>
+W32TeX の場合は [bxcjkjatype パッケージ](/LaTeX-CJK/), [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](/xeCJK/) をインストールします．<br>
 
 LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込んでいる場合
 
