@@ -40,7 +40,7 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 ### 編集前 {#j7da835a}
 
-W32TeX がインストールされていれば以下のような表示になっているはずです．<br>
+TeX Live または W32TeX がインストールされていれば以下のような表示になっているはずです．<br>
 
 ***
 
@@ -49,26 +49,23 @@ W32TeX がインストールされていれば以下のような表示になっ�
 　ビルダー設定
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\w32tex\bin\latex.exe)<br>
+　　Latex program　　　(C:\texlive\2013\bin\win32\latex.exe または C:\w32tex\bin\latex.exe または C:\w32tex\bin64\latex.exe)<br>
 　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\w32tex\bin\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\w32tex\bin\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\w32tex\bin\lualatex.exe)<br>
-　　Bibtex program　　　(C:\w32tex\bin\bibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\w32tex\bin\biber.exe)<br>
-　　Makeindex program　　　(C:\w32tex\bin\makeindex.exe)<br>
-　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
-　　Dvipdf program　　　(C:\w32tex\bin\dvipdfm.exe)<br>
+　　PdfLatex program　　　(C:\texlive\2013\bin\win32\pdflatex.exe または C:\w32tex\bin\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe)<br>
+　　XeLatex program　　　(C:\texlive\2013\bin\win32\xelatex.exe または C:\w32tex\bin\xelatex.exe または C:\w32tex\bin64\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\texlive\2013\bin\win32\lualatex.exe または C:\w32tex\bin\lualatex.exe または C:\w32tex\bin64\lualatex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2013\bin\win32\bibtex.exe または C:\w32tex\bin\bibtex.exe または C:\w32tex\bin64\bibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\texlive\2013\bin\win32\biber.exe または C:\w32tex\bin\biber.exe または C:\w32tex\bin64\biber.exe)<br>
+　　Makeindex program　　　(C:\texlive\2013\bin\win32\makeindex.exe または C:\w32tex\bin\makeindex.exe または C:\w32tex\bin64\makeindex.exe)<br>
+　　Dvips program　　　(C:\texlive\2013\bin\win32\dvips.exe または C:\w32tex\bin\dvips.exe または C:\w32tex\bin64\dvips.exe)<br>
+　　Dvipdf program　　　(C:\texlive\2013\bin\win32\dvipdfm.exe または C:\w32tex\bin\dvipdfm.exe または C:\w32tex\bin64\dvipdfm.exe)<br>
 　　Ps2pdf program　　　()<br>
-　　Makeindex program (nomencl)　　　(C:\w32tex\bin\makeindex.exe)<br>
-　　Kpsewhich program　　　(C:\w32tex\bin\kpsewhich.exe)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2013\bin\win32\makeindex.exe または C:\w32tex\bin\makeindex.exe または C:\w32tex\bin64\makeindex.exe)<br>
+　　Kpsewhich program　　　(C:\texlive\2013\bin\win32\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe)<br>
 
 ***
 
 これらを \[編集(E)...\] します．<br>
-TeX Live はデフォルトでは自動判別しませんが -guess-input-enc オプションを指定すれば自動判別します．<br>
-W32TeX はデフォルトでは ptexenc を用いて自動判別します．<br>
-dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-bit 版) に PATH が通っているか確認してください．<br>
 
 ### TeX Live の場合 {#je390768}
 
@@ -579,19 +576,19 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-b
 　ビルダー設定
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\w32tex\bin\platex.exe)<br>
+　　Latex program　　　(C:\texlive\2013\bin\win32\platex.exe または C:\w32tex\bin\platex.exe または C:\w32tex\bin64\platex.exe)<br>
 　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\w32tex\bin\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\w32tex\bin\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\w32tex\bin\lualatex.exe)<br>
-　　Bibtex program　　　(C:\w32tex\bin\pbibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\w32tex\bin\biber.exe)<br>
-　　Makeindex program　　　(C:\w32tex\bin\mendex.exe)<br>
-　　Dvips program　　　(C:\w32tex\bin\dvips.exe)<br>
-　　Dvipdf program　　　(C:\w32tex\bin\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat)<br>
-　　Makeindex program (nomencl)　　　(C:\w32tex\bin\mendex.exe)<br>
-　　Kpsewhich program　　　(C:\w32tex\bin\kpsewhich.exe)<br>
+　　PdfLatex program　　　(C:\texlive\2013\bin\win32\pdflatex.exe または C:\w32tex\bin\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe)<br>
+　　XeLatex program　　　(C:\texlive\2013\bin\win32\xelatex.exe または C:\w32tex\bin\xelatex.exe または C:\w32tex\bin64\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\texlive\2013\bin\win32\lualatex.exe または C:\w32tex\bin\lualatex.exe または C:\w32tex\bin64\lualatex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2013\bin\win32\pbibtex.exe または C:\w32tex\bin\pbibtex.exe または C:\w32tex\bin64\pbibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\texlive\2013\bin\win32\biber.exe または C:\w32tex\bin\biber.exe または C:\w32tex\bin64\biber.exe)<br>
+　　Makeindex program　　　(C:\texlive\2013\bin\win32\mendex.exe または C:\w32tex\bin\mendex.exe または C:\w32tex\bin64\mendex.exe)<br>
+　　Dvips program　　　(C:\texlive\2013\bin\win32\dvips.exe または C:\w32tex\bin\dvips.exe または C:\w32tex\bin64\dvips.exe)<br>
+　　Dvipdf program　　　(C:\texlive\2013\bin\win32\dvipdfmx.exe または C:\w32tex\bin\dvipdfmx.exe または C:\w32tex\bin64\dvipdfmx.exe)<br>
+　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat または C:\texlive\2013\bin\win32\ps2pdf.exe)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2013\bin\win32\mendex.exe または C:\w32tex\bin\mendex.exe または C:\w32tex\bin64\mendex.exe)<br>
+　　Kpsewhich program　　　(C:\texlive\2013\bin\win32\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe)<br>
 
 ***
 
@@ -599,7 +596,7 @@ dvipdfmx で EPS ファイルがうまく扱えない場合は Ghostscript (32-b
 
 ## ビューアー設定 {#g567cc73}
 
-PDF ファイル，PS ファイル，DVI ファイルを表示するための設定をします．
+PDF ファイルを表示するための設定をします．
 
 ***
 
@@ -641,7 +638,7 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 　itexmac ()<br>
 　kdvi ()<br>
 　gv ()<br>
-　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
+　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe または C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)<br>
 　acroread ()<br>
 　none ()<br>
 
@@ -654,7 +651,8 @@ PDF ファイル，PS ファイル，DVI ファイルを表示するための設
 Pdf4Eclipse は PDF ファイルの自動更新と SyncTeX による forward and inverse search に対応しています．<br>
 フォントを埋め込めば日本語も表示可能です．<br>
 プロジェクト・エクスプローラーの PDF ファイルをダブルクリックすると Pdf4Eclipse で開きます．<br>
-編集中の TeX ファイルのタブをクリックしたまま下方にドラッグ (移動) すると TeX ファイルと PDF ファイルを水平分割または垂直分割して表示できます．(ドラッグする方向や移動する距離によって水平分割・垂直分割を指定できます．)<br>
+編集中の TeX ファイルのタブをクリックしたまま下方にドラッグ (移動) すると TeX ファイルと PDF ファイルを水平分割または垂直分割して表示できます．<br>
+ドラッグする方向や移動する距離によって水平分割・垂直分割を指定できます．<br>
 編集中の TeX ファイルの編集画面を右クリック → Forward search (Ctrl+Alt+F) で forward search ができます．<br>
 PDF ファイルの画面をダブルクリックすると inverse search ができます．<br>
 
@@ -758,7 +756,7 @@ TeXworks を使用する場合は，
 ***
 
 ■ SumatraPDF を前面に表示したくない場合<br>
-[SumatraPDF#fwdsumatrapdf.exe](/SumatraPDF/#n8da77e2) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 <span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 　　 ビューアーを構成します。<br>
@@ -921,10 +919,11 @@ Adobe Reader を使用する場合は，
 <br>
 
 　ビューアー構成 (優先度降順)：<br>
-　TeXworks (C:\w32tex\share\texworks\TeXworks.exe)<br>
-　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
+　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe または C:\w32tex\share\texworks\TeXworks.exe)<br>
+　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe または C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)<br>
+　Mozilla Firefox (C:\Program Files\Mozilla Firefox\firefox.exe または C:\Program Files (x86)\Mozilla Firefox\firefox.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
-　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
+　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe または C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
 　yap ()<br>
 　xdvi ()<br>
 　itexmac ()<br>
