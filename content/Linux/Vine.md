@@ -121,8 +121,6 @@ $ sudo apt-get install emacs
 ### [YaTeX](/YaTeX/) {#b339a19f}
 
 - [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
-- \[[VineSeed:22561\] update: emacs, emacs24, emacsen-common, yatex, howm](http://ml.vinelinux.org/vineseed/msg05713.html)
-- \[[VineSeed:22562\] Re: update: emacs, emacs24, emacsen-common, yatex, howm](http://ml.vinelinux.org/vineseed/msg05714.html)
 - \[[推奨\] \C-c から \C-c \C- へ変更 \[yatex:04567\]](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex/vine-default-yatex.el)
 
 ### [AUCTeX](/AUCTeX/) {#l05e9420}
