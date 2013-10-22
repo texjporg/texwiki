@@ -73,7 +73,7 @@ pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexliv
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 
-#### TeX Live 2013 (OS X) の場合 {#ve2d6700}
+#### TeX Live 2013 公式パッケージ (OS X) の場合 {#ve2d6700}
 
 ```
 $ sudo tlmgr update --self --all
@@ -90,7 +90,7 @@ $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
 
-#### TeX Live 2013 (Linux) の場合 {#xf0871b2}
+#### TeX Live 2013 公式パッケージ (Linux) の場合 {#xf0871b2}
 
 ```
 $ sudo tlmgr update --self --all
@@ -137,6 +137,86 @@ $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDv
 #### TeX Live 2013/Arch Linux の場合 {#w4613e7f}
 
 - [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
+
+pxdvi を使えば TeX Live 2013/Arch Linux で platex で処理された日本語 DVI ファイルが表示できます．<br>
+tlptexlive リポジトリから pxdvi をダウンロード・展開して<br>
+pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して<br>
+/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定します．<br>
+
+```
+$ mkdir pxdvi
+$ cd pxdvi
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz
+$ tar xvf pxdvi.tar.xz
+$ tar xvf pxdvi.x86_64-linux.tar.xz
+$ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin
+$ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi
+$ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi
+$ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
+$ sudo mkdir -p /usr/share/texmf-local/web2c
+$ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
+```
+
+/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+
+```
+$ printf '\n%% pxdvi\nXDVIINPUTS = /usr/share/texmf-dist/pxdvi\n' | sudo tee -a /usr/share/texmf-local/web2c/texmf.cnf
+$ tail /usr/share/texmf-local/web2c/texmf.cnf
+...
+% pxdvi
+XDVIINPUTS = /usr/share/texmf-dist/pxdvi
+```
+
+&#x58;DVIINPUTS に /usr/share/texmf-dist/pxdvi が設定されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value XDVIINPUTS
+/usr/share/texmf-dist/pxdvi
+```
+
+platex で処理された DVI ファイルが表示できます．<br>
+
+```
+$ pxdvi -watchfile 1 hoge.dvi &
+```
+
+#### TeX Live 2013/Debian の場合 {#h734b9c9}
+
+pxdvi を使用する場合は xdvik-ja をインストールします．<br>
+
+```
+$ sudo apt-get install xdvik-ja
+```
+
+/usr/local/share/texmf/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+
+```
+$ printf '\n%% pxdvi\nXDVIINPUTS = /etc/texmf/xdvi\n' | sudo tee -a /usr/local/share/texmf/web2c/texmf.cnf
+$ tail /usr/local/share/texmf/web2c/texmf.cnf
+...
+% pxdvi
+XDVIINPUTS = /etc/texmf/xdvi
+```
+
+&#x58;DVIINPUTS に /etc/texmf/xdvi が設定されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value XDVIINPUTS
+/etc/texmf/xdvi
+```
+
+platex で処理された DVI ファイルが表示できます．<br>
+
+```
+$ xdvi -watchfile 1 hoge.dvi &
+```
+
+または<br>
+
+```
+$ pxdvi-xaw -watchfile 1 hoge.dvi &
+```
 
 ### 使い方 {#o73d19d8}
 
