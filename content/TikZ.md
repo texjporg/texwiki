@@ -740,6 +740,7 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 - [ZR-TeXnobabbler/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=TikZ)
 - [いわにぃのブログ : TikZ](http://blog.livedoor.jp/ti5942/tag/TikZ), [いわにぃのブログ : PGF/TikZ](http://blog.livedoor.jp/ti5942/archives/cat_131138.html)
 - [岩崎 隆盛/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=TikZ)
+- [うぶつん: Tikz](http://ubutun.blogspot.jp/search/label/Tikz)
 - [TikZ | 人ごとな独り言](http://hitgot.org/archives/category/computer/programming/tex/tikz/)
 - [ちっちのぶろぐ: Tikz](http://chitchnoblog.blogspot.jp/search/label/Tikz)
 - [tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
