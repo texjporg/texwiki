@@ -37,8 +37,6 @@ Notepad++ は
         - [twitter](https://twitter.com/ho_don/)
         - [facebook](http://www.facebook.com/D0N.H0)
 - [npp-community](https://github.com/npp-community)
-    - [notepad-plus-svn-mirror](https://github.com/npp-community/notepad-plus-svn-mirror)
-        - [コミットログ](https://github.com/npp-community/notepad-plus-svn-mirror/commits/)
 - [Notepad++ Project on SourceForge](http://sourceforge.net/projects/notepad-plus/)
     - [Members](http://sourceforge.net/p/notepad-plus/_members/)
         - [Don HO](http://sourceforge.net/u/donho/)
