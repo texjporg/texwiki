@@ -71,7 +71,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 - [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』（[技術評論社](http://gihyo.jp/)，2013年10月，定価 &yen;3,360 (本体 &yen;3,200)，[ISBN 978-4-7741-6045-0](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6045-0)）……
     [TeX Live](</TeX Live/>) 2013 を収録した
-    DVD-ROM が附いています。
+    DVD-ROM 付。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
 
