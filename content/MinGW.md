@@ -27,7 +27,7 @@ MinGW を使用すれば TeX Live の最新の開発版を自分でビルドし�
 - [runscript.dllがないと怒られる．](http://d.hatena.ne.jp/abenori/20111216)
 
 MinGW をフルインストールします．<br>
-\[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
+MinGW Shell を起動します．
 
 ```
 $ mkdir texlive
