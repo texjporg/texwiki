@@ -44,3 +44,9 @@ pukiwiki: "Microsoft Office"
 - [最近、MS Equation Editor にどっぷり](http://ufcpp.wordpress.com/2010/02/16/%E6%9C%80%E8%BF%91%E3%80%81ms-equation-editor-%E3%81%AB%E3%81%A9%E3%81%A3%E3%81%B7%E3%82%8A/)
 - [10 の理由に増やしてみた](http://ufcpp.wordpress.com/2010/02/19/10-%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AB%E5%A2%97%E3%82%84%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
 - [WordとLaTeX－どちらを使うべきか？](http://www.forte-science.co.jp/news/articles/20090106/wordorlatex.cfm)
+
+## Excel {#q611269f}
+
+- [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
+- [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
+- [「ネ申Excel」はなぜ問題なのか](http://slashdot.jp/submission/53152/%E3%80%8C%E3%83%8D%E7%94%B3Excel%E3%80%8D%E3%81%AF%E3%81%AA%E3%81%9C%E5%95%8F%E9%A1%8C%E3%81%AA%E3%81%AE%E3%81%8B)
