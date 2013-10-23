@@ -53,6 +53,8 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 
 ### Windows {#r72743bf}
 
+[pdf2htmlEX Windows Version](http://soft.rubypdf.com/software/pdf2htmlex-windows-version)
+
 #### MinGW {#d9c5cb24}
 
 [Poppler - TeX Wiki](/Poppler/) を参照して Poppler をインストールします．(pdf2htmlEX をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)<br>
