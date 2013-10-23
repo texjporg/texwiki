@@ -23,7 +23,7 @@ TeXShop は TeX 統合環境です．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
-    - [TeXShop](http://pages.uoregon.edu/koch/texshop/) (本家)
+    - [TeXShop](http://pages.uoregon.edu/koch/texshop/)
 
 ### 動作環境 {#i28ced5b}
 
