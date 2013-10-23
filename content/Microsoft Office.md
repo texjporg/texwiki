@@ -49,4 +49,5 @@ pukiwiki: "Microsoft Office"
 
 - [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
 - [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
-- [「ネ申Excel」はなぜ問題なのか](http://slashdot.jp/submission/53152/%E3%80%8C%E3%83%8D%E7%94%B3Excel%E3%80%8D%E3%81%AF%E3%81%AA%E3%81%9C%E5%95%8F%E9%A1%8C%E3%81%AA%E3%81%AE%E3%81%8B)
+- [「ネ申Excel」はなぜ問題なのか](http://it.slashdot.jp/story/13/10/23/037221/%E3%80%8C%E3%83%8D%E7%94%B3Excel%E3%80%8D%E3%81%AF%E3%81%AA%E3%81%9C%E5%95%8F%E9%A1%8C%E3%81%AA%E3%81%AE%E3%81%8B)
+    <!-- -[[「ネ申Excel」はなぜ問題なのか:http://slashdot.jp/submission/53152/%E3%80%8C%E3%83%8D%E7%94%B3Excel%E3%80%8D%E3%81%AF%E3%81%AA%E3%81%9C%E5%95%8F%E9%A1%8C%E3%81%AA%E3%81%AE%E3%81%8B]] -->
