@@ -18,7 +18,7 @@ pukiwiki: "AbTeXInstaller"
 - [W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)
 - dviout for Windows
 - [Ghostscript](/Ghostscript/)
-- [GSview](/Ghostscript/#gsview)
+- [GSview](/Ghostscript/Windows/#gsview)
 - [TeXworks](/TeXworks/)
 
 をサーバからダウンロードしてインストールします。<br>
