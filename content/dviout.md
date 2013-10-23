@@ -59,6 +59,24 @@ dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
 
 - \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
     - [log](http://tug.org/svn/dviout/trunk/?view=log)
+- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
+    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
+
+## ビルド {#d0101f83}
+
+ソースコードを取得
+
+```
+mkdir dviout
+cd dviout
+svn co svn://tug.org/dviout/trunk
+```
+
+trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動
+
+Solution Explorer から dviwin.c を削除
+
+BUILD -> Build Solution で dviout をビルド
 
 ## 不具合 {#ufbeded4}
 
