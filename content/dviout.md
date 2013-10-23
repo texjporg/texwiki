@@ -78,6 +78,12 @@ Solution Explorer から dviwin.c を削除
 
 BUILD -> Build Solution で dviout をビルド
 
+MSBuild を使用してビルドすることもできます
+
+```
+msbuild dviout.sln
+```
+
 ## 不具合 {#ufbeded4}
 
 ### dviout を管理者として実行していない場合に Error in RegCreateKey が表示される → dviout を管理者として実行する {#ca2f4069}
