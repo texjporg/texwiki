@@ -13,6 +13,14 @@ pukiwiki: "Linux/Ubuntu"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right">
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right">
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a0/Ubuntu_GNOME.png" alt="Ubuntu GNOME" style="display:block;margin-inline:auto;margin-right:auto">
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right">
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## Ubuntu とは {#i6bcb07d}
