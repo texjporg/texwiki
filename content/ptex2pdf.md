@@ -9,7 +9,7 @@ pukiwiki: "ptex2pdf"
 
 ## ptex2pdf {#u0ef9f2c}
 
-ptex2pdf は (e)(u)p(la)tex と dvipdfmx を実行する Lua スクリプトです．<br>
+ptex2pdf は ptex, eptex, platex, uptex, euptex, uplatex の中から指定したコマンドと dvipdfmx を実行する Lua スクリプトです．<br>
 ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 
 - [http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
