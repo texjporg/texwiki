@@ -316,9 +316,9 @@ pukiwiki: "LyX/設定/Windows"
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>m</ins><br>
+捷径(U):　　　　　　　 <ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
@@ -340,9 +340,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>m</ins><br>
+捷径(U):　　　　　　　 <ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
@@ -364,9 +364,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf3</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>m</ins><br>
+捷径(U):　　　　　　　 <ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
 複写子(P):<br>
@@ -390,9 +390,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>P</ins><br>
+捷径(U):　　　　　　　 <ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
@@ -414,9 +414,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>P</ins><br>
+捷径(U):　　　　　　　 <ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
@@ -438,9 +438,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>P</ins><br>
+捷径(U):　　　　　　　 <ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
 複写子(P):<br>
@@ -464,9 +464,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>F</ins><br>
+捷径(U):　　　　　　　 <ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
@@ -488,9 +488,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>F</ins><br>
+捷径(U):　　　　　　　 <ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
@@ -512,9 +512,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>F</ins><br>
+捷径(U):　　　　　　　 <ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
 複写子(P):<br>
@@ -538,9 +538,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf5</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>u</ins><br>
+捷径(U):　　　　　　　 <ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
@@ -562,9 +562,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf5</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>u</ins><br>
+捷径(U):　　　　　　　 <ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
@@ -586,9 +586,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>X</ins><br>
+捷径(U):　　　　　　　 <ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
 複写子(P):<br>
@@ -612,9 +612,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>X</ins><br>
+捷径(U):　　　　　　　 <ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
@@ -636,9 +636,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf4</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>X</ins><br>
+捷径(U):　　　　　　　 <ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
 複写子(P):<br>
@@ -660,9 +660,9 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
 　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
 短縮名(H):　　　　　　<ins>pdf2</ins><br>
-Extensions:　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
 MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-短絡キー(U):　　　　　<ins>F</ins><br>
+捷径(U):　　　　　　　 <ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>pdfview</ins><br>
 複写子(P):<br>
@@ -709,7 +709,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^3]<br>
 順検索<br>
 　DVIコマンド: <br>
-　PDFコマンド: <ins>cmd /c start SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
+　PDFコマンド: <ins>rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
 
 ***
 
@@ -733,7 +733,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 ***
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
-\[移動(N)\]-\[Forward search\] または 右クリック → \[Forward search\] で 順検索 (forward search) ができます．<br>
+\[移動(N)\]-\[順検索(F)\] または 右クリック → \[順検索(F)\] で 順検索 (forward search) ができます．<br>
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
 
