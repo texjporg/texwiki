@@ -46,7 +46,7 @@ texdoc newtx
 
 で確認してください。
 
-## TX フォント {#uba8f4cc}
+## TX フォント (obsolete) {#uba8f4cc}
 
 \[Summary in English\]
 Young Ryu's TX fonts tutorial in Japanese.
@@ -79,7 +79,7 @@ improve the spacing of $S$ with subscripts.
 - \[2001-01-03\] 新たに CTAN に収められたものは多少内容が違うようです（実質同じ？）ので，
     私のところに置いてあるものもパッケージングしなおしました。
 
-- TX フォントの最新版は 3.1 Patch 1 (2000-12-21) です。拙著
+- TX フォントの最新版は 2009-01-14 です。拙著
     [『［改訂版］LaTeX2e 美文書作成入門』](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)
     のCD-ROMに入っているものは初期バージョンですので，
     更新をお勧めします。
