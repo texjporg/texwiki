@@ -311,14 +311,14 @@ Microsoft Windows 版の Adobe Reader XI に
 - AdobeGothicStd-Bold.otf ［Adobe-Korea1-2 対応の
     韓國語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
 
-が附属しています。<br>
+が付属しています。<br>
 
 Linux/Solaris 版の Adobe Reader 9 に
 対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/)には
 
 - KozGoPr6N-Medium.otf ［Adobe-Japan1-6 対応の日本語ゴシック体フォント］
 
-が附属していません。<br>
+が付属していません。<br>
 Adobe Reader (Windows 版/日本語版) をインストールしてシンボリックリンクを作成すれば KozGoPr6N-Medium.otf も使用できます．<br>
 
 <!-- 2002年9月に出た Adobe-Japan1-5 は，JIS X 0213:2000 （JIS 第3，第4水準）や -->
@@ -342,7 +342,7 @@ Adobe Reader (Windows 版/日本語版) をインストールしてシンボリ�
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
-MacTeX-2013 をインストールして
+MacTeX をインストールして
 
 ```
 kanji-config-updmap hiragino
@@ -622,7 +622,7 @@ ps2otfps old.ps new.ps
 <!-- 独自の map ファイルを作って使って頂ければ幸いと考えたからです。 -->
 <!-- しかし，最もよく使う埋め込み制御をデフォルトの map ファイルとして updmap や -->
 <!-- cid-x.mapなどの標準 map ファイルに設定しておくのが便利だとは考えます。 -->
-<!-- （20th Sep., 2006 現在では W32TeX 附属の -->
+<!-- （20th Sep., 2006 現在では W32TeX 付属の -->
 <!--   $TEXMFMAIN/fonts/map/dvipdfmx/base/cid-x.map に -->
 <!--   中国語や韓國語用の virtual font に対する記述はありますが， -->
 <!--   Microsoft Windows に標準ではインストールされていないフォントを指定してあるので， -->
@@ -714,7 +714,7 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 ```
 
 なお，Microsoft Windows に
-附属している日本語フォントのウェイトに関する分類は次のようになっています。
+付属している日本語フォントのウェイトに関する分類は次のようになっています。
 
 <table>
 <thead>
@@ -752,7 +752,7 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 <!-- "/Library/Fonts/Microsoft/MS Mincho.ttf" への -->
 <!-- シンボリックリンクです。"MS Mincho.ttf"，Batang.ttf，Gulim.ttf は -->
 <!-- Microsoft Office for Mac 2011 に -->
-<!-- 附属しているフォントです。"MS Mincho.ttf"，"MS Gothic.ttf" は -->
+<!-- 付属しているフォントです。"MS Mincho.ttf"，"MS Gothic.ttf" は -->
 <!-- [[Microsoft Office for Mac 2011 30日間無償評価版:http://www.microsoft.com/japan/mac/trial]]から -->
 <!-- 入手して使うことができます（情報源は -->
 <!-- 「[[ＭＳフォントの合法的な入手が可能です: Apple サポートコミュニティ:https://discussionsjapan.apple.com/thread/10036561]]」）。 -->
@@ -775,7 +775,7 @@ ptex2pdf -l -od "-f hiragino.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
-<!-- は OS X に附属していません。 -->
+<!-- は OS X に付属していません。 -->
 
 #### [Adobe のフォント](http://www.adobe.com/jp/type/)（[小塚書体など](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)）を使う場合 {#v02c074b}
 
