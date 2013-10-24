@@ -252,7 +252,7 @@ TeX Live では CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が�
 その他に
 [CTAN:languages/japanese/CJK/](https://mirror.ctan.org/languages/japanese/CJK/) 
 にある配下のマクロファイル（cjk-4.x.x/という名前のディレクトリ。zipやtarballで圧縮されている場合もあり）と、更には TFM ファイル（フォントメトリック）が必要です。<br>
-CJK にデフォルトで附属するフォントの設定は dvips や pdflatex での使用も
+CJK にデフォルトで付属するフォントの設定は dvips や pdflatex での使用も
 可能なようになっているので、dvipdfmx で使うには最適なものではありません。<br>
 ここではカスタムなフォント定義を行なう方法を説明します。<br>
 さて、pTeX や Aleph のように独自の拡張を施していない TeX が使用する TFM には、
