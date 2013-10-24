@@ -108,14 +108,14 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
     <!-- - --  -->
     <!-- - --ショートカットは自分で作るにはどのようにしたら良いのでしょう？ -->
     <!-- - --  -->
-    <!-- Windows 版の LyX では [ツール(T)]-[設定(P)...]-[編集]-[短絡キー] でショートカットの設定ができます．~ -->
+    <!-- Windows 版の LyX では [ツール(T)]-[設定(P)...]-[編集]-[捷径] でショートカットの設定ができます．~ -->
     <!-- ただし項目名が関数になっているのでどの機能に対応しているのか分かりにくいかもしれません．~ -->
     <!-- - --  -->
     <!-- - -[[LyX2.0を使おう！#13 vsEmacs:http://www.geocities.jp/flutecore/Weblog/archives/2011/08/entry_90.html]] -->
     <!-- - --どのように設定したらショートカットを使って箇条書きモードから抜け出る事が出来ますか？ -->
     <!-- - --  -->
     <!-- Windows 版の LyX では Alt+Return で箇条書きモードから抜け出ることが可能です．~ -->
-    <!-- [ツール(T)]-[設定(P)...]-[編集]-[短絡キー] の カーソル関数・マウス関数・編集関数の break-paragraph inverse に Alt+Return が設定されています．~ -->
+    <!-- [ツール(T)]-[設定(P)...]-[編集]-[捷径] の カーソル関数・マウス関数・編集関数の break-paragraph inverse に Alt+Return が設定されています．~ -->
     <!-- - --  -->
     <!-- - -[[LyX2.0を使おう！#12　　vs Ulysses2.0:http://www.geocities.jp/flutecore/Weblog/archives/2011/08/entry_89.html]] -->
     <!-- - -[[LyX2.0を使おう！#11 外国語入力:http://www.geocities.jp/flutecore/Weblog/archives/2011/08/entry_88.html]] -->
