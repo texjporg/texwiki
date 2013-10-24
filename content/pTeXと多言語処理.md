@@ -888,7 +888,7 @@ cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 韓國語フォントに [Un-fonts](http://kldp.net/projects/unfonts/)
 (UnBatang.ttf, UnDotum.ttf) を用いています。いずれも無償で入手できます。
 
-Adobe Reader 附属の CMap
+Adobe Reader 付属の CMap
 （どこにあるのか分からない場合には “UniGB-UTF16-H” で検索してみること）は
 例えば "C:\Program Files\Adobe\Reader 11.0\Resource\CMap\\" にあるので，
 全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
@@ -1353,7 +1353,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 ***
 
 なお，gs\gs$(rungs --version)\Resource\CMap\ に CMap をコピーしていない方は，
-そこに先に述べた Adobe Reader 附属の CMap などをコピーしてください。
+そこに先に述べた Adobe Reader 付属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
 
@@ -1541,7 +1541,7 @@ UTF-8 対応 pTeX と upTeX は
 input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/abeaupricker/) に関するサイトを挙げておきます。
 
 一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
-元々附属しているメモ帳 (Notepad) の他に
+元々付属しているメモ帳 (Notepad) の他に
 オープンソースソフトウェアとして
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
@@ -1554,7 +1554,7 @@ Emacs は充分すぎるほどの多言語対応能力を持っていますが�
 GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，OS X では
 [MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
 
-そこで Microsoft Windows に附属しているワードパッド (WordPad) で
+そこで Microsoft Windows に付属しているワードパッド (WordPad) で
 リッチテキスト形式 (RTF) の多言語文書を
 作り，[RTFコンバータ](http://www5b.biglobe.ne.jp/~harigaya/rtfcnv.html)で
 UTF-8 テキストファイルに変換する方法をお勧めします。RTFコンバータの
