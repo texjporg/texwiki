@@ -576,7 +576,7 @@ PFA → PFB 変換には [FontForge](http://fontforge.sourceforge.net/) が使�
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです。
 
-dvips で変換した PS ファイルは Ghostscript 附属の ps2pdf
+dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
 コマンドで PDF ファイルに変換できます。<br>
 きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。<br>
 処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません。<br>
