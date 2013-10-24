@@ -28,7 +28,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -46,17 +46,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pdfpLaTeX</ins><br>
 　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -71,7 +71,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -89,17 +89,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pdfpLaTeX2</ins><br>
 　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -114,7 +114,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -132,17 +132,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pdfupLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -157,7 +157,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -175,17 +175,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pdfupLaTeX2</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -200,7 +200,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -218,17 +218,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeX</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeX</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pdfLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[H　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[H　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -243,7 +243,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -261,17 +261,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaLaTeX</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaLaTeX</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>LuaLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -286,7 +286,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -304,17 +304,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeX</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeX</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -329,7 +329,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -347,17 +347,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeX</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeX</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>XeLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[I　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[I　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -372,7 +372,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -390,17 +390,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pBibTeX</span>　　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pBibTeX</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>pBibTeX</ins><br>
 　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -415,7 +415,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -433,17 +433,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">upBibTeX</span>　　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">upBibTeX</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>upBibTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -458,7 +458,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -476,17 +476,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">Mendex</span>　　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">Mendex</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>Mendex</ins><br>
 　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[M　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[M　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -501,7 +501,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -518,17 +518,17 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXworks</span>　　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXworks</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ <strong><span style="color:White;">✕</span></strong> \]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
 　　　　　　Name :　<ins>TeXworks</ins><br>
 　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[O　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[O　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -549,7 +549,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -566,7 +566,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">SumatraPDF</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">SumatraPDF</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -580,7 +580,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -597,7 +597,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">fwdsumatrapdf</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">fwdsumatrapdf</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -611,7 +611,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -629,7 +629,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeXA</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeXA</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -637,7 +637,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -655,7 +655,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -663,7 +663,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -681,7 +681,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeXA</span>　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeXA</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -689,7 +689,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -707,7 +707,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2A</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2A</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -715,7 +715,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -733,7 +733,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeXA</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeXA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -741,7 +741,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -759,7 +759,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaLaTeXA</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaLaTeXA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -767,7 +767,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -785,7 +785,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeXA</span>　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeXA</span>　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -793,7 +793,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-<span style="color:Black;background-color:#94CE18;"><ins>　<span style="color:White;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong> 　\]<ins></span> </ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -811,7 +811,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeXA</span>　　　　　　　　　　　　　　　　　　▼\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeXA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
