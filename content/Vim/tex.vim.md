@@ -718,7 +718,7 @@ noremap <expr> <C-K>v ViewFile()
 
 タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
 ビューアはデフォルトでは Evince を使用します．<br>
-fwdevince は [Evince - TeX Wiki](/Evince/) の fwdevince を使用します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
 
 > <table>
