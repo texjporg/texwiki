@@ -69,10 +69,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 Encoding は
 
-- ANSI
-    - 日本語版 Windows では Shift_JIS として保存されます．
-        <!-- - -TeXnicCenter 2.0 Alpha 3 では Shift_JIS のファイルは ANSI で開かれていて文字が正しく表示されていましたが，TeXnicCenter 2.0 Alpha 4 では Shift_JIS のファイルは，ファイルを開くときに ANSI ではなく UTF-8 で開かれてしまい，文字が正しく表示されない場合があります．日本語を使用する場合は [File]-[Save As...] の Encoding で UTF-8 を指定して保存することをおすすめします．→ [[ASCII documents default to UTF-8 character encoding instead of ANSI:http://texniccenter.hg.sourceforge.net/hgweb/texniccenter/texniccenter/rev/c1f76110a594]] -->
-
+- ANSI (ANSI は日本語版 Windows では CP932 (Shift_JIS) として保存されます)
 - UTF-8
 - UTF-8 with BOM
 - UTF-16
@@ -82,7 +79,7 @@ Encoding は
 
 に対応しています．
 
-Encoding を指定して保存する場合は \[File\]-\[Save As...\] の Encoding のリストから Encoding を指定して保存してください．
+UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリストから UTF-8 を指定して保存してください．
 
 ## 設定 {#y0d2dce6}
 
