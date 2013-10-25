@@ -37,7 +37,7 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 - [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
 - [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
 
-## TeX Live <a id="texlive"></a> {#dead7b03}
+## TeX Live/Cygwin <a id="texlive"></a> {#dead7b03}
 
 TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されています．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
@@ -93,7 +93,7 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
     - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
 - [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
 
-### インストール {#a8514c6c}
+### インストール {#fc129d62}
 
 - [Windowsに執筆支援ツールのReVIEWを入れて書籍制作をCIする](http://ch3cooh.hatenablog.jp/entry/20130826/1377523171)
 - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
@@ -133,7 +133,7 @@ Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画�
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.829 (32-bit)</strong> または <strong>Setup.exe version 2.829 (64-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.830 (32-bit)</strong> または <strong>Setup.exe version 2.830 (64-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
