@@ -20,8 +20,8 @@ SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
 - [Evince](https://projects.gnome.org/evince/)
-- [Evince Document Viewer](http://library.gnome.org/users/evince/stable/index.html.en)
-    - [Evince Document Viewer › SyncTex » Supported Editors](http://library.gnome.org/users/evince/stable/synctex-editors.html.en)
+- [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
+    - [Evince Document Viewer › SyncTex » Supported Editors](https://help.gnome.org/users/evince/stable/synctex-editors.html.en)
 - [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
 ### 動作環境 {#q9c64542}
