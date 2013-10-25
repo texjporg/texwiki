@@ -484,11 +484,11 @@ dviout には DVI ファイルが更新されると自動的に表示を更新�
 
 ### dvipdfmx {#b020c0c5}
 
-dviout 3.15.1 以降で PDF を作る際には，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）を使うのが便利です。<br>
+dviout は，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタン）で PDF ファイルを作成することができます。<br>
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
-「ニコニコマーク」ボタンが見当たらない場合には，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
-この場合，PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
-PDF の作成がうまくいかない場合は [TeXworks](/TeXworks/) を使用して PDF を作成してください．<br>
+「ニコニコマーク」ボタンは，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
+PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
+PDF ファイルの作成がうまくいかない場合は [TeXworks](/TeXworks/) を使用してください．<br>
 
 ***
 
