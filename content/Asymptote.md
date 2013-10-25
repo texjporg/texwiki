@@ -17,6 +17,10 @@ pukiwiki: "Asymptote"
 - [Asymptote](http://asymptote.sourceforge.net/)
 - [Asymptote project on SourceForge](http://sourceforge.net/projects/asymptote/)
 
+#### License {#a68c9862}
+
+[GPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE), [LGPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE.LESSER)
+
 <!-- *** ChangeLog [#k13ddf14] -->
 <!-- -[[log:http://asymptote.svn.sourceforge.net/viewvc/asymptote/trunk/asymptote/?view=log]] -->
 
