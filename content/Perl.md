@@ -24,6 +24,8 @@ pukiwiki: "Perl"
 ## Perl 5 {#lf5a8369}
 
 - [The Perl Programming Language - www.perl.org](http://www.perl.org/)
+- [http://dev.perl.org/](http://dev.perl.org/)
+- [https://github.com/Perl](https://github.com/Perl)
 
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
