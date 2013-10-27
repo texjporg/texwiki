@@ -720,9 +720,9 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
   \ifxetex
     \usepackage[xetex]{hyperref}
     \usepackage{zxjatype}
-    \setjamainfont{MS Mincho}
-    \setjasansfont{MS Gothic}
-    \setjamonofont{MS Gothic}
+    \setjamainfont{ipaexm.ttf}
+    \setjasansfont{ipaexg.ttf}
+    \setjamonofont{ipaexg.ttf}
   \else
     \usepackage[dvipdfmx]{hyperref}
     \usepackage{pxjahyper}
