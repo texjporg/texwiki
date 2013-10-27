@@ -325,15 +325,15 @@ $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.1.05.1.0mingw48_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.1.05.1.0mingw48_32lib'
+../libtool: line 6013: cd: C:QtQt5.2.05.2.0mingw48_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.2.05.2.0mingw48_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-0.95/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.1.0\5.1.0\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.1.0/5.1.0/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.2.0\5.2.0\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.2.0/5.2.0/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
@@ -439,7 +439,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.24.2
+--   found poppler, version 0.24.3
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
