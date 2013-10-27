@@ -98,6 +98,9 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 $ sudo apt-get install texworks
 ```
 
+タイプセットのデフォルトが pdfLaTeX に設定されている場合は pLaTeX (ptex2pdf) に変更します．<br>
+VineSeed の TeXworks は初回起動時に Segmentation fault が発生して起動できないことがありますが 2 回目以降は起動できるようです．<br>
+
 ## [LyX](/LyX/) {#f3133664}
 
 - [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
