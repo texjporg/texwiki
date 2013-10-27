@@ -92,14 +92,6 @@ TeX で文書を作成する場合は行番号の計算方法をエディタ的�
 
 [秀丸エディタ/マクロ](</秀丸エディタ/マクロ/>) を参照．
 
-## スクリプト {#w87ef5ac}
-
-### Happy {#q96fb99f}
-
-- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
-    - HappyInput (TeX 入力支援スクリプト)
-    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
-
 ## 関連リンク {#mec8cd02}
 
 - [アウトライン解析でブロックの始端と終端を明確化](http://www.maruo.co.jp/hidesoft/2/x31065_.html#31065)
