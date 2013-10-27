@@ -892,9 +892,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.24.2.tar.xz
-$ tar xvf poppler-0.24.2.tar.xz
-$ pushd poppler-0.24.2
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.24.3.tar.xz
+$ tar xvf poppler-0.24.3.tar.xz
+$ pushd poppler-0.24.3
 ```
 
 ***
@@ -904,7 +904,7 @@ $ pushd poppler-0.24.2
 <!-- ■ Qt 5 mingw バイナリをインストールした場合 -->
 
 ```
-$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.1.1/5.1.1/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.1.1/5.1.1/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.1.1/5.1.1/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.1.1/5.1.1/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.2.0/5.2.0/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.2.0/5.2.0/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.2.0/5.2.0/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.2.0/5.2.0/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 <!-- goo/gfile.cc -->
