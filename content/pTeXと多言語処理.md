@@ -187,77 +187,8 @@ TeX--XeT 機能を用いるため [e-TeX](/e-TeX/) 非対応の古い pTeX で�
 
 ### ヴェトナム語 {#vnwtexpi}
 
-ヴェトナム語の場合は [VnTeX](http://sourceforge.net/projects/vntex/) を
-用います。このリンク先から圧縮形式の違うだけのものは除いて
-全種類（3種類だと思う）のファイルをダウンロードしてきます。
-「[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/ndex.html)」の [qa:33515](https://okumuralab.org/~okumura/texfaq/qa/33515.html) および [qa:27846](https://okumuralab.org/~okumura/texfaq/qa/27846.html) の投稿を参考に
-インストールします。以下，$TEXMFLOCAL を例えば share/texmf-local などと
-自分の環境に合わせて置き換えて考えてください。
-
-vntex-20030303.zip を展開（解凍）し，次のディレクトリはそのまま上書きします。
-
-- vntex-20030303/web2c/ → $TEXMFLOCAL/web2c/
-- vntex-20030303/fonts/ → $TEXMFLOCAL/fonts/
-- vntex-20030303/tex/ → $TEXMFLOCAL/tex/
-- vntex-20030303/doc/ → $TEXMFLOCAL/doc/
-
-次は，$TEXMF/fontname/special.map が存在しない場合のみコピーします。
-
-- vntex-20030303/fontname/special.map → $TEXMFLOCAL/fontname/special.map
-
-次のファイルを次のように適切な場所にコピーします。
-
-- vntex-20030303/dvips/vntex/config.vnr → $TEXMFLOCAL/dvips/config/
-- vntex-20030303/dvips/vntex/t5.enc → $TEXMFLOCAL/fonts/enc/dvips/base/
-- vntex-20030303/dvips/vntex/vnr.map → $TEXMFLOCAL/fonts/map/dvips/misc/
-- vntex-20030303/dvipdfm/config/vnr.map → $TEXMFLOCAL/fonts/map/dvipdfm/base/
-
-dvipdfmx をお使いの場合，$TEXMF/dvipdfmx/config/dvipdfmx.cfg に
-
-```
-f vnr.map
-```
-
-と書きます。
-
-フォントは基本的に vnr-t1-20030303.zip と urwvn-tex-20030114.zip の
-fonts/ や tex/ ディレクトリ (urwvn-tex-20030114.zipのみ) を
-そのまま対応するディレクトリ（例えば share/texmf-local/）に上書きしますが
-urwvn-tex-20030114/dvips/urwvn/urwvn.map だけは
-$TEXMFLOCAL/fonts/map/dvips/misc/ に保存しておいてください。
-
-今回は日本語と一緒に扱うことを前提に，VnTeX を Babel に組み込んでみます。
-
-1. $TEXMFLOCAL/tex/generic/babel/ に
-    VnTeX の tex/latex/vietnam/ に含まれている vietnam.ldf を置く。
-
-1. babel.sty の \DeclareOption の並んでいる辺り
-    （私は \DeclareOption{USenglish}{\input{english.ldf}} の下にした）に 
-
-    ```
-    \DeclareOption{vietnam}{\input{vietnam.ldf}}
-    ```
-
-    を追加する。
-
-1. $TEXMF/tex/generic/hyphen/ukhyphen.tex をコピーし，vnhyphen.tex に
-    リネームする。（とりあえず外来語に多い英語でやっています。
-    古いベトナム書籍の組版ではフランス語やロシア語に倣ったものもあるそうです。）
-
-1. $TEXMF/tex/generic/config/language.dat の末尾に
-
-    ```
-    vietnam vnhyphen.tex
-    ```
-
-    と追加します。
-
-あとは Windows PowerShell またはコマンド プロンプトなどで次のように fmtutil で処理します。
-
-```
-fmtutil --byfmt latex
-fmtutil --byfmt platex
-```
+ヴェトナム語の場合は [VnTeX](http://sourceforge.net/projects/vntex/) を用います。<br>
+TeX Live の場合は VnTeX は最初からインストールされています。<br>
 
 入力は基本的に ASCII 文字で書いていきますが，
 ヴェトナム語の入力ソフト (input method) を持っている方は
