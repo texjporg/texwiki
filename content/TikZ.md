@@ -681,6 +681,81 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 ・{Z, X, …, M} → {Z, X, V, T, R, P, N} と解釈
 ```
 
+### 図画のみの出力 {#nf2ceec5}
+
+tikz/PGF で作成した図画を含んだソースファイルから、図画のみを別ファイルに抽出できます。
+dvips または pdfTeX を用いると、ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後に適用することで画像の大きさちょうどの pdf を得られます。<br>
+
+- ソースコードに追加記述
+1. プリアンブルに追加
+1. 画像部分に追加
+- オプションをつけてコンパイルする
+1. platex → dvipdfmx → pdfcrop
+1. platex → dvips
+1. pdflatex
+
+#### ソースコードへの追加記述 {#yddb8d2b}
+
+1. プリアンプルへの追加<br>
+    プリアンプルに以下のコードを追加します。<em>filename</em> は、tex ファイル自体の名前です（拡張子の .tex などは含めません）。
+
+    ```
+    \pgfrealjobname{filename}
+    ```
+
+1. 図画部分への追加<br>
+    tikz 環境の前後に pgf のコマンドを以下のように書き足します。<em>filename-fig1</em> は、それぞれの図画につける任意の名前です。
+
+    ```
+    \beginpgfgraphicnamed{filename-fig1}
+    \begin{tikzpicture}
+    ...
+    \end{tikzpicture}
+    \endpgfgraphicnamed
+    ```
+
+#### コンパイル {#q32b1a53}
+
+ソースコード（tex ファイル）をコンパイルするときに、以下のオプションをつけて実行します。それぞれの図画に対し、<strong>--jobname</strong> オプションをつけてコンパイルします。（なお、以下の例では拡張子（.tex など）をつけてますが、省略しても各コマンドは「よきにはからって」くれます。）<br>
+
+```
+$platex --jobname=filename-fig1 filename.tex~
+```
+
+これで、図画だけを含んだ filename-fig1.dvi が作成されます。
+
+1. dvipdfmx を使用する場合
+
+    ```
+    $dvipdfmx filename-fig1.dvi
+    $pdfcrop filename-fig1.pdf
+    ```
+
+    これで、図画の大きさちょうどの pdf ファイルが作成されます。
+    余白を入れるには pdfcrop に <strong>--margins</strong> オプションを用います。以下の例では、周囲に 3bp の余白を入れています。
+
+    ```
+    $pdfcrop --margins 3 filename-fig1.pdf
+    ```
+
+    （4方向の余白を指定するには &lt;左> &lt;上> &lt;右> &lt;下> と指定します。数字を2つ指定した場合は&lt;右>&lt;下>の余白になります。）
+
+1. dvips を使用する場合
+
+    ```
+    $dvips filename-fig1.dvi
+    ```
+
+    これで、図画の大きさちょうどの ps ファイルが作成されます。
+
+1. platex ではなく pdfTeX（pdfLaTeX）を使用する場合
+
+    ```
+    $pdflatex --jobname=filename-fig1 filename.tex
+    ```
+
+    これだけで、図画の大きさちょうどの pdf ファイル（filename-fig1.pdf）が作成されますが、pdfTeX は日本語には対応していませんので、図中に日本語が含まれている場合はそこは空白になります。
+
 ## Troubleshooting {#i0cba852}
 
 - \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
