@@ -25,7 +25,7 @@ pukiwiki: "C Sharp"
 
 ### csc {#fbf8c36a}
 
-- [Microsoft® Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
+- [Microsoft Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
 
 ### mcs {#zfadab82}
 
