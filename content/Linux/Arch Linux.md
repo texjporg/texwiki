@@ -192,6 +192,12 @@ $ yaourt -S texstudio
 $ sudo pacman -S texmaker
 ```
 
+または
+
+```
+$ yaourt -S texmaker-qt5
+```
+
 ## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
