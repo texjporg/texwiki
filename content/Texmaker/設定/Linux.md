@@ -22,8 +22,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
 コマンドの Bib(la)tex の bibtex を pbibtex または upbibtex に変更します．<br>
 コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
-[LuaLaTeX](/LuaTeX/) を使用したい場合は，コマンドの PdfLaTeX の pdflatex を lualatex に変更して使用してください．<br>
-LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex を luajitlatex に変更して使用してください．<br>
 
 #### [TeX Live](</TeX Live/>) {#x932c6ec}
 
@@ -35,11 +33,11 @@ LuaJITLaTeX を使用したい場合は，コマンドの PdfLaTeX の pdflatex 
 
 <span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <div style="clear:both"></div>
 
