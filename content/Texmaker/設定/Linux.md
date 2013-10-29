@@ -96,7 +96,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 ## [Evince](/Evince/) との連携 {#xd595a5d}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#dc58c25f}
 
@@ -112,7 +112,7 @@ fwdevince %.pdf @ #.tex
 
 ## Okular との連携 {#e1d5124a}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ***
 
@@ -156,7 +156,7 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ## zathura との連携 {#k3c22c37}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### inverse search {#s8c6284b}
 
@@ -190,7 +190,7 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ## qpdfview との連携 {#t3c4682d}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#dca2869a}
 
@@ -231,7 +231,7 @@ Source editor:
 
 ## PdfViewer との連携 {#d2a108e6}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#t982a3a5}
 
