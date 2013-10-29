@@ -60,19 +60,17 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">クイックビルドで使用するコマンド</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + PDF ファイルを表示</span>　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span> LaTeX + dvipdfm + PDF ファイルを表示</span><br>
 
-　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span> LaTeX + dvipdfm + PDF ファイルを表示</span><br>
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Bib(la)tex + LaTeX (x2) + dvips + ps2pdf + PDF ファイルを表示</span>　　　<span style="color:Black;background-color:#F5F5F5;">◯ Sweave + PdfLaTeX + PDF ファイルを表示</span><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Asymptote + LaTeX + dvips + PS ファイルを表示</span><br>
 
@@ -80,7 +78,9 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ Latexmk + PDF ファイルを表示</span><br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ XeLaTeX + PDF ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ XeLaTeX + PDF ファイルを表示</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ LuaLaTeX + PDF ファイルを表示</span><br>
 
 <div style="clear:both"></div>
 
