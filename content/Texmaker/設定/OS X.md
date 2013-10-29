@@ -108,7 +108,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 ## Skim との連携 {#b05a1a86}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#jbc32d2d}
 
