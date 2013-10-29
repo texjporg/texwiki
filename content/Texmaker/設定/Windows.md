@@ -187,7 +187,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
 
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンドのオプションに -synctex=1 を追加します．
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#y08c577b}
 
