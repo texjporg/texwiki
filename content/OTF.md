@@ -292,7 +292,7 @@ Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 ## Adobe-Japan1-6 とは {#j54465d8}
 
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
-U-PRESS用の文字を含む23,058グリフの文字セットです。
+U-PRESS用の文字を含む23,058グリフの文字セットです。<br>
 Adobe Reader XI 日本語版（または Adobe Reader XI に用いるアジア・拡張言語フォントパック）に含まれている 
 KozMinPr6N-Regular.otf  と KozGoPr6N-Medium.otf がこれに準拠していますので，Adobe Reader XI が
 対応している OS ならどれでも無償で豊富なフォントを利用できるようになりました。<br>
@@ -442,6 +442,7 @@ $ sudo updmap-sys --setoption kanjiEmbed hiragino （ヒラギノ書体を埋め
 $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
+$ sudo updmap-sys --setoption kanjiEmbed yu       （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
 ```
@@ -451,7 +452,7 @@ $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを
 
 ```
 $ kanji-config-updmap <fontname>　　（otf-<fontname>.map にしたがってフォントを埋め込む）
-$ kanji-config-updmap auto　　　（hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms のいずれかを埋め込む）
+$ kanji-config-updmap auto　　　（hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu のいずれかを埋め込む）
 $ kanji-config-updmap nofont　　（PDF にフォントを埋め込まない）
 $ kanji-config-updmap status　　（現在の埋め込み設定を確認する）
 ```
@@ -757,6 +758,16 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 <!-- 入手して使うことができます（情報源は -->
 <!-- 「[[ＭＳフォントの合法的な入手が可能です: Apple サポートコミュニティ:https://discussionsjapan.apple.com/thread/10036561]]」）。 -->
 
+#### 游フォントを使う場合 {#t5547d05}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/)
+
+- TeX Live の場合
+
+```
+ptex2pdf -l -od "-f ptex-yu.map -f otf-yu.map" hoge.tex
+```
+
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
@@ -830,10 +841,14 @@ p  +psfonts-local.map
 （ここでは $TEXMFLOCAL/fonts/map/dvips/local/psfonts-local.map）を
 $TEXMFLOCAL/fonts/map/dvips// 以下に作成します。
 
-（または {$TEXMFMAIN,$TEXMFDIST}/fonts/map/dvips/base/psfonts.map を
-$TEXMFLOCAL/fonts/map/dvips/base/psfonts.map にコピーした上で，
-$TEXMFLOCAL/fonts/map/dvips/base/psfonts.map の最後に
-次のような内容を直接追記しても良いでしょう。）
+<!-- （または {$TEXMFMAIN,$TEXMFDIST}/fonts/map/dvips/base/psfonts.map を -->
+<!-- $TEXMFLOCAL/fonts/map/dvips/base/psfonts.map にコピーした上で， -->
+<!-- $TEXMFLOCAL/fonts/map/dvips/base/psfonts.map の最後に -->
+<!-- 次のような内容を直接追記しても良いでしょう。） -->
+<!--  -->
+<!-- psfonts.map ( $TEXMFDIST/fonts/map/dvips/updmap/psfonts.map ) -->
+<!-- は、updmap が処理するので、編集しない方がよい。 -->
+<!-- もし fonts/map/dvips/base に psfonts.map があったら消去すること。 -->
 
 ***
 
