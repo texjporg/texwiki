@@ -340,26 +340,26 @@ Adobe Reader (Windows 版/日本語版) をインストールしてシンボリ�
 
 ### ヒラギノと OS X {#l1d1369f}
 
-ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
+ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。<br>
 
-MacTeX をインストールして
+TeX Live をインストールして
 
 ```
 kanji-config-updmap hiragino
 ```
 
-を実行しました。
-これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。
+を実行しました。<br>
+これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。<br>
 
 !["ヒラギノ出力例"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
 
 \usepackage\[expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
 『[［改訂版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)』も
-ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。
+ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。<br>
 ちなみに無指定の OTF パッケージでは
 \bfseries で同じウェイトのゴシックになるだけですので，
-上の図の例では “bold” オプションも加えて太いゴシックにしてあります。
+上の図の例では “bold” オプションも加えて太いゴシックにしてあります。<br>
 
 ### 新しいフォントメトリック {#y2c312cd}
 
@@ -665,8 +665,12 @@ ps2otfps old.ps new.ps
 <!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map の最後に -->
 <!-- 次のような内容を直接追記しても良いでしょう。） -->
 
+- [https://gitorious.org/tlptexlive/jfontmaps](https://gitorious.org/tlptexlive/jfontmaps)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)
+
 #### フォントを埋め込まない場合 {#t1a90b4f}
 
+- [https://gitorious.org/tlptexlive/jfontmaps/source/noEmbed/](https://gitorious.org/tlptexlive/jfontmaps/source/noEmbed/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/)
 
 - TeX Live の場合
@@ -683,6 +687,7 @@ ptex2pdf -l -od "-f noembed.map" hoge.tex
 
 #### IPAexフォントを使う場合 {#xcbe9625}
 
+- [https://gitorious.org/tlptexlive/jfontmaps/source/ipaex/](https://gitorious.org/tlptexlive/jfontmaps/source/ipaex/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/)
 
 - TeX Live の場合
@@ -701,6 +706,7 @@ ptex2pdf -l -od "-f ipaex.map" hoge.tex
 
 #### MSフォントを使う場合 {#g54b5df7}
 
+- [https://gitorious.org/tlptexlive/jfontmaps/source/ms/](https://gitorious.org/tlptexlive/jfontmaps/source/ms/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/)
 
 - TeX Live の場合
@@ -761,6 +767,7 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 
 #### 游フォントを使う場合 {#t5547d05}
 
+- [https://gitorious.org/tlptexlive/jfontmaps/source/yu/](https://gitorious.org/tlptexlive/jfontmaps/source/yu/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/)
 
 - TeX Live の場合
@@ -777,6 +784,8 @@ ptex2pdf -l -od "-f yu.map" hoge.tex
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
+- [https://gitorious.org/tlptexlive/jfontmaps/source/hiragino/](https://gitorious.org/tlptexlive/jfontmaps/source/hiragino/)
+- [https://gitorious.org/tlptexlive/jfontmaps/source/hiragino-pron/](https://gitorious.org/tlptexlive/jfontmaps/source/hiragino-pron/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/)
 
@@ -797,8 +806,12 @@ ptex2pdf -l -od "-f hiragino.map" hoge.tex
 
 #### [Adobe のフォント](http://www.adobe.com/jp/type/)（[小塚書体など](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)）を使う場合 {#v02c074b}
 
-<!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/ -->
-<!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/ -->
+<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/kozuka/ -->
+<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/kozuka-pr6/ -->
+- [https://gitorious.org/tlptexlive/jfontmaps/source/kozuka-pr6n/](https://gitorious.org/tlptexlive/jfontmaps/source/kozuka-pr6n/)
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/ -->
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/ -->
+
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/)
 
 - TeX Live の場合
@@ -817,7 +830,10 @@ Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
 
-<!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/ -->
+<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/morisawa/ -->
+- [https://gitorious.org/tlptexlive/jfontmaps/source/morisawa-pr6n/](https://gitorious.org/tlptexlive/jfontmaps/source/morisawa-pr6n/)
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/ -->
+
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/)
 
 - TeX Live の場合
