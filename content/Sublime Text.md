@@ -19,12 +19,6 @@ Sublime Text はテキストエディタです． (シェアウェア)
 
 - [Sublime Text](http://www.sublimetext.com/)
 
-### Sublime Text 2 {#z97e1aeb}
-
-- [Sublime Text 2](http://www.sublimetext.com/2)
-    <!-- -[[Sublime Text 2 - Dev Builds:http://www.sublimetext.com/dev]] -->
-    <!-- -[[Sublime Text 2 - Nightly Builds:http://www.sublimetext.com/nightly]] -->
-
 ### Sublime Text 3 {#o04f9cc2}
 
 - [Sublime Text 3](http://www.sublimetext.com/3)
@@ -67,6 +61,7 @@ Windows, OS X, Linux
 
 ### OS X {#c2e22368}
 
+- [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
 - [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
 - [mac、sublime text 2、latex](http://blog.hifumi.info/mac/mac-sublimetext2-latex/)
