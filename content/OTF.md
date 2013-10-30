@@ -487,6 +487,7 @@ dvipdfmx -f morisawa04 dviname (Morisawa, JIS2004字形)
 dvipdfmx -f morisawapr6n dviname (Morisawa Pr6N)
 dvipdfmx -f morisawapr6n04 dviname (Morisawa Pr6N, JIS2004字形)
 dvipdfmx -f msmingoth dviname (msmincho and msgothic)
+dvipdfmx -f yu dviname (游明朝・游ゴシック)
 dvipdfmx -f noembed dviname (埋め込まない)
 dvipdfmx -f noembed04 dviname (埋め込まない, JIS2004字形)
 ```
@@ -768,6 +769,12 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 ptex2pdf -l -od "-f ptex-yu.map -f otf-yu.map" hoge.tex
 ```
 
+- W32TeX の場合
+
+```
+ptex2pdf -l -od "-f yu.map" hoge.tex
+```
+
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
@@ -950,6 +957,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
+- [http://www.ctan.org/pkg/jfontmaps](http://www.ctan.org/pkg/jfontmaps)
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
