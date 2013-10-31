@@ -89,7 +89,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
-- [Python](http://www.python.org/) 2.7.5 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
+- [Python](http://www.python.org/) 2.7.6 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
 
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
@@ -807,9 +807,9 @@ $ popd
 - [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.38/glib-2.38.1.tar.xz
-$ tar xvf glib-2.38.1.tar.xz
-$ pushd glib-2.38.1
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.0.tar.xz
+$ tar xvf glib-2.39.0.tar.xz
+$ pushd glib-2.39.0
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
