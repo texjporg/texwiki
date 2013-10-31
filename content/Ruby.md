@@ -33,7 +33,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 
-ruby.exe を C:\Ruby200\bin にインストールした場合は
+Ruby を C:\Ruby200 にインストールした場合は
 
 ```
 ;C:\Ruby200\bin
@@ -41,7 +41,7 @@ ruby.exe を C:\Ruby200\bin にインストールした場合は
 
 を環境変数 PATH に追加します
 
-ruby.exe を C:\Ruby200-x64\bin にインストールした場合は
+Ruby を C:\Ruby200-x64 にインストールした場合は
 
 ```
 ;C:\Ruby200-x64\bin
