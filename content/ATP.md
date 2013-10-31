@@ -46,11 +46,19 @@ GPLv3<br>
 ATP の動作には
 
 - [Python](/Python/)
-- [psutil](https://code.google.com/p/psutil/)
+- [psutil](https://pypi.python.org/pypi?:action=display&name=psutil#downloads)
 
-が必要です．
+が必要です．<br>
+Python と psutil がインストールされていない場合はこれらをインストールしておいてください．<br>
+Windows で easy_install を使用して psutil をインストールする場合は Windows PowerShell またはコマンド プロントから以下のコマンドを実行します．<br>
 
-Python と psutil がインストールされていない場合はこれらをインストールしておいてください．
+```
+easy_install -U psutil
+```
+
+error: Setup script exited with error: Unable to find vcvarsall.bat のエラーが発生する場合は以下のサイトを参考にして設定すればインストールできます．<br>
+
+- [pythonでvcvarsall.batエラーが出る。](http://ivis-mynikki.blogspot.jp/2013/03/pythonvcvarsallbat.html)
 
 ## ダウンロード/インストール {#n5f1b86f}
 
@@ -79,6 +87,8 @@ Vim を起動し
 - colors/
 - doc/
 - ftplugin/
+- indent/
+- plugin/
 - syntax/
 
 を配置します．
@@ -97,8 +107,16 @@ Vim を起動し
 filetype plugin on
 filetype indent on
 syntax on
+```
+
+<!-- let b:atp_TexFlavor = 'tex' -->
+<!-- let b:atp_TexCompiler = 'ptex2pdf' -->
+<!-- let b:atp_TexOptions = '-l -ot "-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode"' -->
+<!-- let b:atp_BibCompiler = 'pbibtex' -->
+<!-- let b:atp_Viewer = 'texworks' -->
+
+```
 let g:atp_folding = 1
-let g:atp_fold_environments = 1
 ```
 
 ***
@@ -114,14 +132,6 @@ let g:atp_folding = 1
 ```
 
 を追加すると折りたたみが on になります．
-
-environments の折りたたみ を on にする場合は
-
-```
-let g:atp_fold_environments = 1
-```
-
-を追加します．
 
 カーソル位置の折りたたみを開く場合は &lt;Space> で代用できます．
 
@@ -140,7 +150,7 @@ let g:atp_fold_environments = 1
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
-> <tr><td>pdfLaTeX</td><td>\l</td><td>:TEX</td><td>pdfLaTeX</td></tr>
+> <tr><td>Compile</td><td>\l</td><td>:TEX</td><td>コンパイル</td></tr>
 > <tr><td>Bibtex</td><td>\b</td><td>:Bibtex</td><td>BibTeX</td></tr>
 > <tr><td>View Output</td><td>\v</td><td>:ViewOutput</td><td>プレビュー</td></tr>
 > </tbody>
