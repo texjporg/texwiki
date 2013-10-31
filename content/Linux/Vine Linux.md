@@ -20,8 +20,15 @@ pukiwiki: "Linux/Vine Linux"
 Vine Linux はコンパクトで軽量な国産の日本語 Linux ディストリビューションです．
 
 - [Vine Linux](http://vinelinux.org/)
+
+### VineSeed {#ocbe7947}
+
+VineSeed は Vine Linux の開発版です．<br>
+新しい TeX Live/Vine Linux を使用したい場合は VineSeed がおすすめです．<br>
+
 - [VineSeed – VineSeed](http://trac.vinelinux.org/wiki/VineSeed)
 - [Vine7/HowToUpgrade – VineSeed](http://trac.vinelinux.org/wiki/Vine7/HowToUpgrade)
+- [VineSeed Package Information](http://vinelinux.org/seed/vineseed.html)
 
 ## TeX Live {#c1d98d5f}
 
