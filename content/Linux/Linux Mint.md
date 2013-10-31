@@ -210,7 +210,7 @@ $ sudo apt-get install emacs24
 ## [Vim](/Vim/) <a id="vim"></a> {#febc084d}
 
 ```
-$ sudo apt-get install vim
+$ sudo apt-get install vim vim-gtk
 ```
 
 ## [gedit](/gedit/) <a id="gedit"></a> {#fc6bbe0c}
