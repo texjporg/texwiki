@@ -244,7 +244,7 @@ $ sudo apt-get install emacs24
 ## [Vim](/Vim/) <a id="vim"></a> {#k24f9849}
 
 ```
-$ sudo apt-get install vim
+$ sudo apt-get install vim vim-gtk
 ```
 
 ## [gedit](/gedit/) <a id="gedit"></a> {#j3cc1af4}
