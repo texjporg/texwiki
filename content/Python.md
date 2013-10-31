@@ -32,13 +32,21 @@ Python で書かれたスクリプトを実行するには Python の処理系�
 
 ### Windows {#s4be4fc1}
 
-python.exe を C:\Python34 にインストールした場合は
+Python を C:\Python34 にインストールした場合は
 
 ```
-;C:\Python34
+;C:\Python34;C:\Python34\Scripts
 ```
 
 を環境変数 PATH に追加します．<br>
+
+## パッケージ管理 {#n7b5e91b}
+
+### pip {#q07300c6}
+
+pip は Python 3.4 以降ではデフォルトでインストールされます．<br>
+
+- [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
 
 ## PythonTeX {#i2fab9c1}
 
