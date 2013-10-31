@@ -156,9 +156,9 @@ let g:atp_folding = 1
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#40C;text-align:center">メニュー [LaTeX]</th><th style="color:#FFF;background-color:#40C;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#40C;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#40C;text-align:center">機能</th></tr>
-> <tr><td>Compile</td><td>\l</td><td>:TEX</td><td>コンパイル</td></tr>
+> <tr><td>Compile<br>pdfLaTeX</td><td>\l</td><td>:Tex</td><td>コンパイル</td></tr>
 > <tr><td>Bibtex</td><td>\b</td><td>:Bibtex</td><td>BibTeX</td></tr>
-> <tr><td>View Output</td><td>\v</td><td>:ViewOutput</td><td>プレビュー</td></tr>
+> <tr><td>View with Okular<br>View with Evince</td><td>\v</td><td>:View</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
 >
