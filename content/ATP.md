@@ -50,6 +50,12 @@ ATP の動作には
 
 が必要です．<br>
 Python と psutil がインストールされていない場合はこれらをインストールしておいてください．<br>
+Windows で pip を使用して psutil をインストールする場合は Windows PowerShell またはコマンド プロントから以下のコマンドを実行します．<br>
+
+```
+pip install --upgrade psutil
+```
+
 Windows で easy_install を使用して psutil をインストールする場合は Windows PowerShell またはコマンド プロントから以下のコマンドを実行します．<br>
 
 ```
