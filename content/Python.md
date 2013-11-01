@@ -50,12 +50,7 @@ pip は Python 3.4 以降ではデフォルトでインストールされます�
 
 ## PythonTeX {#i2fab9c1}
 
-- PythonTeX は TeX Live, W32TeX に含まれています．
-- [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
-- [3 次元極座標のラプラシアンをPythonTeXで計算してみた](http://nsplat.wordpress.com/2013/10/04/3-%E6%AC%A1%E5%85%83%E6%A5%B5%E5%BA%A7%E6%A8%99%E3%81%AE%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B7%E3%82%A2%E3%83%B3%E3%82%92pythontex%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
-- [TeXLive2013とPythonTeXを入れた](http://nsplat.wordpress.com/2013/10/04/texlive2013%E3%81%A8pythontex%E3%82%92%E5%85%A5%E3%82%8C%E3%81%9F/)
-- [&quot;Python&quot; - 記事一覧 - 何かを書き留める何か](http://xaro.hatenablog.jp/archive/category/Python)
-    - [http://xaro.hatenablog.jp/search?q=PythonTeX](http://xaro.hatenablog.jp/search?q=PythonTeX)
+[PythonTeX - TeX Wiki](/PythonTeX/) を参照．<br>
 
 ## fwdevince <a id="fwdevince"></a> {#p46d6b08}
 
