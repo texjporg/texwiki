@@ -155,7 +155,6 @@ TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF 
 ### OS X {#aecb2dfb}
 
 動作未確認です．<br>
-Mac OS X 10.6 では動作するようです． → -[VIMでLaTeX　OSX10.6へインストールと設定](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_167.html), [VIMでLaTeX　前回の訂正](http://www.geocities.jp/flutecore/Weblog/archives/2012/12/entry_168.html)
 
 [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
 
