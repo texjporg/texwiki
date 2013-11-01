@@ -80,30 +80,8 @@ EasyTeX/設定 を参照．
 
 EasyTeX/使い方 を参照．
 
-## EasyTeX 用マクロ {#j92ac132}
-
-- [AutoHotKey スクリプト](http://ryo-t.com/diary/?p=94)
-    (谷内 稜 さん)
-
-- [TeXエディタ](http://www2s.biglobe.ne.jp/~Taiju/leaf/tjsoft17_texeditor.htm)
-    (H. Shinozaki さん)
-
-- [漢文エディタ](http://www2s.biglobe.ne.jp/~Taiju/leaf/tjsoft05_kanbun.htm)
-    (H. Shinozaki さん)
-
 ## 関連リンク {#p8488be5}
 
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 - [easychair というクラスファイルの使い方](http://ameblo.jp/8713-blog/archive1-201201.html)
-
-<!-- *Comments [#etacm8ab] -->
-<!--  -->
-<!-- - 修正等は自由にしていただいて構いません。ちょっとしたコメント・質問等はここにどうぞ。 - - これを書いた人 &new{2005-11-09 (水) 14:54:34}; -->
-<!-- - easyTeXをインストールしましたが、コンパイルできません・・・TEX実行ﾌｧｲﾙのパスが駄目だそうです。どうしたらよいでしょうか？？ - - ﾆｬｵ &new{2006-07-20 (木) 21:40:08}; -->
-<!-- - 「初期設定」は，終わっているのでしょうか？ 詳しいことが分かりませんので「設定を見直してみてください」ぐらいしかアドバイス出来ません。もちろん TeX そのもののインストールは終わっているんですよね。 - - tony &new{2006-07-21 (金) 08:39:55}; -->
-<!-- - EasyTeX と dviout との連携がうまくいきません．EasyTeX　も　dviout　も指示通り設定しましたが，どちらからもうまく作動しません．何を間違っているのか分からず困っています． - - textex &new{2006-07-29 (土) 01:45:13}; -->
-<!-- - [[質問のしかた]]をよく読んで，続きは[[TeX Q & A 掲示板:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/]] で・・・ - - tony &new{2006-07-29 (土) 04:13:51}; -->
-<!-- - インストール方法を再度チェックしてから，QandA　を同じような質問を探しました．アバウトな質問の仕方をしてすみませんでした．ありがとうございました． - - textex &new{2006-08-03 (木) 20:01:49}; -->
-<!--  -->
-<!-- #comment -->
