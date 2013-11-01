@@ -48,6 +48,10 @@ pip は Python 3.4 以降ではデフォルトでインストールされます�
 
 - [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
 
+error: Setup script exited with error: Unable to find vcvarsall.bat のエラーが発生する場合は以下のサイトを参考にして設定すればインストールできます．<br>
+
+- [pythonでvcvarsall.batエラーが出る。](http://ivis-mynikki.blogspot.jp/2013/03/pythonvcvarsallbat.html)
+
 ## PythonTeX {#i2fab9c1}
 
 [PythonTeX - TeX Wiki](/PythonTeX/) を参照．<br>
