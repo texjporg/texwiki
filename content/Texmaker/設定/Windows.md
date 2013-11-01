@@ -100,13 +100,6 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 ***
 
-TeX Live 2012 を使用する場合は
-
-- [TeX Live 2012 と日本語](http://torip.whitesnow.jp/?p=1020)
-- [TeX Live 2012 on Windows （改訂版）](http://blogs.yahoo.co.jp/igproj_fusion/15803621.html)
-
-にも設定方法が記述されています．
-
 #### [W32TeX](/W32TeX/) の場合 {#q9c95374}
 
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
