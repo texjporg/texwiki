@@ -27,6 +27,13 @@ e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．<br>
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/ChangeLog?view=markup)
 
+### ptexenc {#w41f5dea}
+
+- [ptexenc/文字コード判定 - ptexlive Wiki](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA)
+- \[[texlive\] Index of /trunk/Build/source/texk/ptexenc](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/ChangeLog?view=markup)
+
 ### 不具合 {#xf84e130}
 
 #### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降にアップデート {#p4d23466}
