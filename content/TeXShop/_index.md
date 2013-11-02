@@ -19,6 +19,7 @@ pukiwiki: "TeXShop"
 ## TeXShop とは {#q728ac5b}
 
 TeXShop は TeX 統合環境です．<br>
+SyncTeX に対応しています．<br>
 [MacTeX](/Mac/#mactex) に標準で含まれています．<br>
 [TeXworks](/TeXworks/) は TeXShop をモデルにしています．<br>
 
