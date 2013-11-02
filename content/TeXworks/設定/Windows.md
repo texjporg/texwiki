@@ -1849,4 +1849,5 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 ## 関連リンク {#n8b7f53c}
 
+- [TeXworksにplatexを設定](http://www.makisima.org/v3/2013/11/02/texworks-platex-add/)
 - [TeXworksの設定](http://www.netplan.co.jp/archives/2167)
