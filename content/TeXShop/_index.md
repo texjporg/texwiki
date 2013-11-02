@@ -54,7 +54,7 @@ GPL
 - [Newest &#39;texshop&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texshop)
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
 - [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
-- [Taylor/「TeXShop」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeXShop)
+- [Yusuke Terada/「TeXShop」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeXShop)
 - [泉 富士夫/「TeXShop」の検索結果 - Twilog](http://twilog.org/Izumi_Fujio/search?word=TeXShop)
 - [MacTeX 2013でTeXShopの設定](http://knnlog.wordpress.com/2013/10/06/mactex-2013%E3%81%A7texshop-lyx%E3%81%AE%E8%A8%AD%E5%AE%9A/)
 - [まとめ：LaTeXで卒業論文を書く(1)](http://ichijikann.blog6.fc2.com/blog-entry-147.html)
