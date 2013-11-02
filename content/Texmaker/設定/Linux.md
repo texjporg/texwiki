@@ -100,7 +100,7 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 ### forward search {#dc58c25f}
 
-[Evince#fwdevince](/Evince/#ie18c015) の fwdevince を使用します．<br>
+Evince/fwdevince の fwdevince を使用します．<br>
 
 forward search は PDFビューアに
 
