@@ -34,19 +34,22 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 ## インストール {#ba9eb570}
 
 - [Beginners' Guide (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Beginners%27_Guide_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+- [Arch Linuxインストールメモ （archlinux-2013.09.01）](http://extrea.hatenablog.com/entry/2013/09/16/020230)
+- [【Arch Linuxをインストールする】 2013.7.01バージョン](http://zaka-think.com/linux/arch-linux%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/)
+- [Arch Linux インストール](http://qiita.com/tukiyo/items/48fb3b4b41642743d581)
+- [Arch Linux インストールから awesome 導入まで](http://qiita.com/co-me@github/items/12f21126c5117e07decd)
 - [arch linux(はてな)](http://arch2013.hatenablog.com/)
 - [ArchLinuxのインストール](http://mba-hack.blogspot.jp/2013/05/archlinux.html)
 - [2013.4.30 - Maidsphere // メイドスフィア](http://www.maidsphere.jp/archive/20130430/)
 - [Arch Linux 2013.04.01 インストールまとめ1](http://lynx0077.hateblo.jp/entry/2013/04/18/214846), [Arch Linux 2013.04.01 インストールまとめ2](http://lynx0077.hateblo.jp/entry/2013/04/18/215116)
 - [ArchLinux 2013.04.01 をインストール、日本語化](http://tkyon.blogspot.jp/2013/04/archlinux-20130401.html)
 - [ArchLinux\[2013.03.01\]をインストールしてみた。](http://hgeekooohay.blogspot.jp/2013/03/archlinux20130301.html)
-- [Arch Linuxインストールメモ （archlinux-2013.02.01）](http://extrea.hatenablog.com/entry/2013/02/15/123721)
 - [Arch Linux セットアップまとめ](http://jedipunkz.github.io/blog/2013/01/14/arch-linux-setup/)
 
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux 3.10.7-1-ARCH (tty1)
+Arch Linux 3.10.10-1-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
