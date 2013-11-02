@@ -16,6 +16,7 @@ pukiwiki: "TeXnicle"
 ## TeXnicle とは {#k3131c97}
 
 TeXnicle は TeX 統合環境です．<br>
+SyncTeX に対応しています．<br>
 
 - [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html)
 - [martinhewitson/TeXnicle · GitHub](https://github.com/martinhewitson/TeXnicle)
