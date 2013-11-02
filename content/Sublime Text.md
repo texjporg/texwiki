@@ -55,16 +55,15 @@ Windows, OS X, Linux
 
 ### Windows {#m3e22b6d}
 
+- [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
 - [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
 - [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
-- [Windows + Sublime Text2 + LaTeX](http://over-k.sakura.ne.jp/blog/?p=59)
 
 ### OS X {#c2e22368}
 
 - [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
 - [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
-- [mac、sublime text 2、latex](http://blog.hifumi.info/mac/mac-sublimetext2-latex/)
 - [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
 
 ### Linux {#x47ef3df}
