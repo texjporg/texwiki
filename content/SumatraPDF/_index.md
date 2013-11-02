@@ -70,7 +70,7 @@ v1.6 から PostScript ファイルの表示にも対応しました．([Ghostsc
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
 
-以下のエディタ・マクロ・プラグインは SumatraPDF v1.9 以降で forward and inverse search が可能です．
+以下のエディタ・マクロ・プラグインは SumatraPDF で forward and inverse search が可能です．
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
