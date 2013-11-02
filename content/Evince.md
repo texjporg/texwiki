@@ -9,7 +9,9 @@ pukiwiki: "Evince"
 
 ## [Evince](https://projects.gnome.org/evince/) {#fec1fb99}
 
-<img src="https://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png" alt="Evince" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Evince_logo.svg/200px-Evince_logo.svg.png" alt="Evince" style="float:right">
+
+<!-- #ref(https://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png,right,around,nolink,Evince) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
