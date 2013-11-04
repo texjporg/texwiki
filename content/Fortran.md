@@ -350,7 +350,9 @@ program sum_from_1_to_n
             block
                 integer(kind=4), dimension(:), allocatable :: n_array_4
                 allocate(n_array_4(1:n))
-                forall(j = 1:n) n_array_4(j:j) = j
+                do concurrent (j = 1:n)
+                    n_array_4(j:j) = j
+                end do
                 print '(*(g0))', "Sum from 1 to ", n, " = ", sum(n_array_4)
                 deallocate(n_array_4)
             end block
@@ -358,7 +360,9 @@ program sum_from_1_to_n
             block
                 integer(kind=8), dimension(:), allocatable :: n_array_8
                 allocate(n_array_8(1:n))
-                forall(j = 1:n) n_array_8(j:j) = j
+                do concurrent (j = 1:n)
+                    n_array_8(j:j) = j
+                end do
                 print '(*(g0))', "Sum from 1 to ", n, " = ", sum(n_array_8)
                 deallocate(n_array_8)
             end block
