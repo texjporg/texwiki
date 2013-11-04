@@ -44,8 +44,26 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ```
 $ sudo yum install texlive-scheme-full
-$ sudo yum install perl-Digest-MD5
 ```
+
+Rawhide のパッケージは TeX Live 2014/dev になっています．<br>
+
+```
+$ platex -v
+e-pTeX 3.1415926-p3.4-130605-2.6 (utf8.euc) (TeX Live 2014/dev)
+kpathsea version 6.2.0dev
+ptexenc version 1.3.2dev
+Copyright 2013 D.E. Knuth.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the e-pTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the e-pTeX source.
+Primary author of e-pTeX: Peter Breitenlohner.
+```
+
+デフォルトでは Ghostscript で日本語が表示できませんが<br>
+Ghostscript を適切に設定することで 日本語が表示できるようになります．<br>
 
 ## [Python](/Python/) {#z2c220a1}
 
@@ -63,7 +81,6 @@ $ sudo yum install ruby
 
 ```
 $ sudo yum install perl
-$ sudo yum install perl-Digest-MD5
 ```
 
 ## [Evince](/Evince/) {#na36e8b6}
@@ -138,7 +155,6 @@ $ sudo yum install lyx
 
 ```
 $ sudo yum install latexila
-$ sudo yum install perl-Digest-MD5
 ```
 
 ## [Kile](/Kile/) {#o606f639}
