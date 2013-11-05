@@ -75,7 +75,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
     - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
 - Adobe Reader Touch
-    - [Windows ストア の Windows 用 Adobe Reader Touch アプリ](http://apps.microsoft.com/windows/ja-JP/app/adobe-reader/162a2931-8ee6-4a56-9570-53282525d7a3) (Windows 8, Windows RT)
+    - [Windows ストア の Windows 用 Adobe Reader Touch アプリ](http://apps.microsoft.com/windows/ja-JP/app/adobe-reader/162a2931-8ee6-4a56-9570-53282525d7a3)
 - Adobe Acrobat
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
 
