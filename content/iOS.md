@@ -57,9 +57,6 @@ pukiwiki: "iOS"
     - [TeX Cloud](http://www.vancapy.com/textouch/texcloud/)
         - [Tex Timer Single Doc(beta0.1)の利用【PC ～ iPadでTeX】](http://kiyomidais.cocolog-nifty.com/blog/2013/03/textimer.html)
         - [iPad で LaTeX ?!](http://skalldan.wordpress.com/2012/04/11/ipad-%E3%81%A7-latex/)
-        - [LaTeX on the iPad](http://jblevins.org/log/latex-on-the-ipad)
-        - [macportsのplatexでも使えます．](http://appcomments.com/reviews/334548870)
-        - [iPadでLaTeXを！！](http://tomhus.blogspot.com/2011/02/ipadlatex.html)
 - [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078?mt=8) (シェアウェア)
 
 ## 関連リンク {#f3da3e0a}
