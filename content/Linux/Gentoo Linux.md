@@ -41,6 +41,10 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 
 - [http://grauwoelfchen.at/graffiti/slide-with-latex](http://grauwoelfchen.at/graffiti/slide-with-latex)
 
+## [Ghostscript](/Ghostscript/) {#j3d231a6}
+
+- [http://gentwoo.elisp.net/packages/app-text/ghostscript-gpl](http://gentwoo.elisp.net/packages/app-text/ghostscript-gpl)
+
 ## [Evince](/Evince/) {#g696ddc1}
 
 - [http://gentwoo.elisp.net/packages/app-text/evince](http://gentwoo.elisp.net/packages/app-text/evince)
