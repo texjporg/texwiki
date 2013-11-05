@@ -66,6 +66,12 @@ $ sudo dpkg -i texlive-local_2011-1~1_all.deb
 $ sudo apt-get install texlive-full
 ```
 
+## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#y4c2003d}
+
+```
+$ sudo apt-get install ghostscript
+```
+
 ## [Python](/Python/) <a id="python"></a> {#df01e340}
 
 ```
