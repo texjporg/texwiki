@@ -62,7 +62,13 @@ named COPYING and the e-pTeX source.
 Primary author of e-pTeX: Peter Breitenlohner.
 ```
 
-デフォルトでは Ghostscript で日本語が表示できませんが<br>
+## [Ghostscript](/Ghostscript/) {#w3eeacef}
+
+```
+$ sudo yum install ghostscript
+```
+
+デフォルトの設定では Ghostscript で日本語が表示できませんが<br>
 Ghostscript を適切に設定することで 日本語が表示できるようになります．<br>
 
 ## [Python](/Python/) {#z2c220a1}
