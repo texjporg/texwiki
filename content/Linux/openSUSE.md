@@ -41,6 +41,12 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 $ sudo zypper install texlive-scheme-full
 ```
 
+## [Ghostscript](/Ghostscript/) {#iea7fcc9}
+
+```
+$ sudo zypper install ghostscript
+```
+
 ## [Poppler](/Poppler/) {#dae12f15}
 
 ```
