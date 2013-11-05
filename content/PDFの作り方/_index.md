@@ -805,6 +805,8 @@ Word などに埋め込む際には，プレビューのラジオボタンは必
 
 ### PDF をパスワードで保護するには {#u51b6592}
 
+- [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
+
 Acrobat を使えばできますが，フリーウェアとして
 [QPDF](http://qpdf.sourceforge.net/)
 といったものもあるそうです (使ったことはありません)。
