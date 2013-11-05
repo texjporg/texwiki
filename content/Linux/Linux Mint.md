@@ -95,6 +95,12 @@ $ sudo apt-get install texlive-dummy
 $ sudo apt-get install texlive-full
 ```
 
+## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#t53b858c}
+
+```
+$ sudo apt-get install ghostscript
+```
+
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
 ```
