@@ -99,14 +99,12 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 ## [TeXworks](/TeXworks/) {#g983cd3a}
 
 - [TeXworks](http://vinelinux.org/docs/vine6/tex-guide/texworks.html)
-- [Vine Linux 6 でTexWorks](http://blog.livedoor.jp/rootan2007/archives/51823342.html)
 
 ```
 $ sudo apt-get install texworks
 ```
 
 タイプセットのデフォルトが pdfLaTeX に設定されている場合は pLaTeX (ptex2pdf) に変更します．<br>
-VineSeed の TeXworks は初回起動時に Segmentation fault が発生して起動できないことがありますが 2 回目以降は起動できるようです．<br>
 
 ## [LyX](/LyX/) {#f3133664}
 
@@ -131,13 +129,12 @@ $ sudo apt-get install emacs
 ### [YaTeX](/YaTeX/) {#b339a19f}
 
 - [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
-- \[[推奨\] \C-c から \C-c \C- へ変更 \[yatex:04567\]](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex/vine-default-yatex.el)
+- [http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex)
 
 ### [AUCTeX](/AUCTeX/) {#l05e9420}
 
 - [AUCTeX](http://vinelinux.org/docs/vine6/tex-guide/auctex.html)
-- [Vine Linux 6 向けに AUCTeX のパッケージを調整しました](http://d.hatena.ne.jp/munepi/20110623/auctex)
-- \[[あまり要を得ないメモ\] auctex のメニュー \[Vine Linux 6.0\]](http://log-c.blog.so-net.ne.jp/2011-09-16-2)
+- [http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex](http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex)
 
 ## [Vim](/Vim/) {#na92681c}
 
