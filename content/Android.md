@@ -15,21 +15,21 @@ pukiwiki: "Android"
 
 ## TeX Live <a id="texlive"></a> {#ec902282}
 
-### TeX Live (Android) {#h805f992}
+### フリーソフトウェア (オープンソースソフトウェア) {#s4ea771c}
+
+#### TeX Live for Android {#p2cbca91}
 
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
     - [TeX, Live, for, Android を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX+Live+for+Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
-- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate), [TeXPortal (TeXポータル)](https://play.google.com/store/apps/details?id=lah.texportal)
-    - [anhoavu/TeXPortal · GitHub](https://github.com/anhoavu/TeXPortal/)
-    - [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
-    - [TeXポータル : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB), [TeXポータル を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB), [岩崎 隆盛/「TeXポータル」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeX%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB)
-    - [TeXPortal : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeXPortal), [TeXPortal を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeXPortal), [岩崎 隆盛/「TeXPortal」の検索結果 - Twilog](http://twilog.org/ti5942/search?word=TeXPortal)
 
-### TeX Live (Linux) {#rfcf69bf}
+### シェアウェア {#ac15962a}
 
-- [Android で TeX がしたい](http://tkyon.blogspot.jp/2013/03/android-tex.html)
+#### TeXPortal {#va170afe}
+
+- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate)
+    - [http://anhoavu.github.io/texportal.html](http://anhoavu.github.io/texportal.html)
 
 ## PDF ビューア {#t5fdeba9}
 
@@ -44,8 +44,6 @@ pukiwiki: "Android"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert), [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
-    - [anhoavu/TeXpert · GitHub](https://github.com/anhoavu/TeXpert)
 - [Emacs](/Emacs/)
     - [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
 - [Vim](/Vim/)
@@ -54,6 +52,7 @@ pukiwiki: "Android"
 
 ### フリーウェア (無料) {#pfa162c4}
 
+- [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
 - [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
@@ -61,10 +60,11 @@ pukiwiki: "Android"
 
 ### シェアウェア・製品 {#z7716277}
 
-- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter)
-- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro)
-- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro)
-- [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey)
+- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
+- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
+- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
+- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
+- [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
 
 ## 関連リンク {#o413eb91}
 
