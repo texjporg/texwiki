@@ -15,6 +15,10 @@ pukiwiki: "Xpdf"
 
 GPLv3, GPLv2
 
+### Windows {#za509c90}
+
+- [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
+
 ### OS X {#ua3cd20e}
 
 - [Xpdf.app](http://www.muskmelon.jp/?page_id=86)
