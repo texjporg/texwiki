@@ -98,6 +98,12 @@ $ yaourt -S texlive-dummy
 $ sudo pacman -S texlive-langcjk texlive-most
 ```
 
+## [Ghostscript](/Ghostscript/) {#q940a9dc}
+
+```
+$ sudo pacman -S ghostscript
+```
+
 ## [Python](/Python/) {#i5b0d02d}
 
 ```
