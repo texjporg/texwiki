@@ -22,6 +22,7 @@ pukiwiki: "Android"
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
     - [TeX, Live, for, Android を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX+Live+for+Android)
+    - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
 
 ### シェアウェア {#ac15962a}
@@ -31,17 +32,22 @@ pukiwiki: "Android"
 - [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate)
     - [http://anhoavu.github.io/texportal.html](http://anhoavu.github.io/texportal.html)
     - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
-    - [http://www.ohloh.net/p/texportal](http://www.ohloh.net/p/texportal)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
+- [MobileOrg (Donate)](https://play.google.com/store/apps/details?id=com.matburt.mobileorg.donate), [MobileOrg](https://play.google.com/store/apps/details?id=com.matburt.mobileorg)
+    - [https://github.com/matburt/mobileorg-android](https://github.com/matburt/mobileorg-android)
+    - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
 - [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
+    - [https://github.com/momodalo/vimtouch](https://github.com/momodalo/vimtouch)
     - [Vim - TeX Wiki](/Vim/)
 - [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
+    - [https://github.com/zielmicha/emacs-android](https://github.com/zielmicha/emacs-android)
     - [Emacs - TeX Wiki](/Emacs/)
 - [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
+    - [https://github.com/jecelyin/920-Text-Editor](https://github.com/jecelyin/920-Text-Editor)
 
 ### フリーウェア (無料) {#pfa162c4}
 
