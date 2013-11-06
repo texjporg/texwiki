@@ -373,7 +373,7 @@ W32TeX では Computer Modern Type 1 フォントは[t1fonts.tar.xz](http://www.
 [dvipdfmx](/dvipdfmx/) は TeX 出力（DVI ファイル）を PDF に変換するフリーソフトウェアです。<br>
 dvipdfmx はオリジナル dvipdfm ([The dvipdfm page](http://gaspra.kettering.edu/dvipdfm/)) + 日本語パッチ → CJK 対応 dvipdfm → dvipdfmx と進化したものです。<br>
 
-『［改訂第3版］ LaTeX2e 美文書作成入門』以降は dvipdfmx で PDF 化したものを印刷所に入稿して作りました。
+『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました。<br>
 
 dvipdfmx は TeX Live, W32TeX に含まれています。<br>
 
@@ -683,10 +683,10 @@ dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG �
 ### Windows のソフトから EPS ファイルを作るには {#s66ac89b}
 
 EPS 形式での書き出しに対応していないソフトでも，Windows の PostScript
-プリンタードライバをインストールして「ファイルに印刷」すれば PostScript
+プリンタードライバーをインストールして「ファイルに印刷」すれば PostScript
 形式で保存できます。
 
-PostScript プリンタードライバは
+PostScript プリンタードライバーは
 Windows PowerShell またはコマンド プロンプトから
 
 ```
@@ -725,19 +725,19 @@ control printers
 たいへん使い勝手の良いソフトです。<br>
 
 また，「[Windows での TeX 用仮想 EPS プリンターの作成方法](http://keijisaito.info/arc/tex/v_eps_printer.htm)」
-では，Windows 同梱のドライバから仮想 EPS プリンターを作る方法が書いてあります。<br>
+では，Windows 同梱のドライバーから仮想 EPS プリンターを作る方法が書いてあります。<br>
 「[Excel グラフをきれいに TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/vector_pdf.htm)」，
 「[画像や写真を TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/picture_eps.htm)」では，
 それぞれベクトル形式のグラフ，ラスター形式の画像を埋め込む手順をスクリーンショット附きで説明しています。<br>
 
-Windows の PS プリンタードライバではなかなか質の高い EPS ができないものです。<br>
+Windows の PS プリンタードライバーではなかなか質の高い EPS ができないものです。<br>
 crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです。<br>
 いったん Distiller で PDF に変換して Acrobat （商品）で開き，必要な部分だけ切り抜き，EPS
 形式で保存し直すほうがうまくいくかもしれません。<br>
 フリーなツールでは
 [ps2eps](http://www.tm.uka.de/~bless/ps2eps)
 が使えそうです。<br>
-PS プリンタードライバの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています。<br>
+PS プリンタードライバーの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています。<br>
 
 Visio 2003 以降は [EPS 出力がサポートされなくなりました](http://office.microsoft.com/ja-jp/visio/HA010857571041.aspx)が，
 [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) を使うと EPS ファイルに変換できます。
