@@ -34,7 +34,8 @@ pukiwiki: "iOS"
 ### シェアウェア・製品 {#na04d581}
 
 - [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
-    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．[BXjscls](/BXjscls/), [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語文書もローカルでコンパイルできます．
+    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
+    - [BXjscls](/BXjscls/), [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば pdflatex で日本語文書がローカルでコンパイルできます．
     - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222)
     - [FAST Intelligence](http://www.litchie.com/)
 - [Texpad](https://www.texpadapp.com/) (シェアウェア)
