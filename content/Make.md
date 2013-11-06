@@ -409,6 +409,11 @@ latexmk -C
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
 
+## arara {#d21204f6}
+
+- [http://cereda.github.io/arara/](http://cereda.github.io/arara/)
+- [https://github.com/cereda/arara](https://github.com/cereda/arara)
+
 ## Lua スクリプト {#uddc392d}
 
 - [ptex2pdf](/ptex2pdf/)
