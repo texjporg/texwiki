@@ -30,6 +30,36 @@ pukiwiki: "Android"
 
 - [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate)
     - [http://anhoavu.github.io/texportal.html](http://anhoavu.github.io/texportal.html)
+    - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
+    - [http://www.ohloh.net/p/texportal](http://www.ohloh.net/p/texportal)
+
+## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
+
+### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
+
+- [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
+    - [Vim - TeX Wiki](/Vim/)
+- [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
+    - [Emacs - TeX Wiki](/Emacs/)
+- [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
+
+### フリーウェア (無料) {#pfa162c4}
+
+- [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
+    - [http://anhoavu.github.io/texpert.html](http://anhoavu.github.io/texpert.html)
+- [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
+- [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
+- [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
+- [Jota+](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus)
+
+### シェアウェア・製品 {#z7716277}
+
+- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
+- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
+    - [http://anhoavu.github.io/texpert.html](http://anhoavu.github.io/texpert.html)
+- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
+- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
+- [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
 
 ## PDF ビューア {#t5fdeba9}
 
@@ -39,32 +69,6 @@ pukiwiki: "Android"
         - [APV PDF Viewer](https://play.google.com/store/apps/details?id=cx.hell.android.pdfview)
 - [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
 - [Adobe Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
-
-## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
-
-### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
-
-- [Emacs](/Emacs/)
-    - [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
-- [Vim](/Vim/)
-    - [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
-- [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
-
-### フリーウェア (無料) {#pfa162c4}
-
-- [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
-- [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
-- [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
-- [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
-- [Jota+](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus)
-
-### シェアウェア・製品 {#z7716277}
-
-- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
-- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
-- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
-- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
-- [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
 
 ## 関連リンク {#o413eb91}
 
