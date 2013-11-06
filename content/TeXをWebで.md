@@ -12,8 +12,8 @@ pukiwiki: "TeXをWebで"
 ### はじめに {#vd570d76}
 
 [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
-のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します。
-ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです。
+のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します。<br>
+ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです。<br>
 
 ### 準備 {#y7017653}
 
@@ -30,7 +30,7 @@ Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;
 
 Windows でも動作するようです。 → ｢TeXを使ってみよう｣をWindows上で動かせました ([qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html))
 
-pTeX（日本語版 TeX）については，最近の Linux ディストリビューションは TeX Live 2012 以降になっているので pTeX が UTF-8 に対応しています。<br>
+pTeX（日本語版 TeX）については，最近の Linux ディストリビューションは TeX Live 2013 以降になっているので pTeX が UTF-8 に対応しています。<br>
 ソースからコンパイルする方法は以下のページをご参照ください。<br>
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
