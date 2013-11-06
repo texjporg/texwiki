@@ -125,25 +125,23 @@ TeX Live をインストールすると XeTeX がインストールされます�
 
 #### W32TeX {#qa9dfa1c}
 
-cf. [qa:43295](https://okumuralab.org/~okumura/texfaq/qa/43295.html)
-
-最新の web2c-w32.tar.xz を入手して，TeX のインストール
-トップディレクトリで展開して下さい。この中に xetex をサポートする
-fmtutil.cnf と texmf.cnf が入っています。
-
-xetex-w32.tar.xz を TeX のインストールトップディレクトリで展開して下さい。
+32-bit バイナリを使用する場合は<br>
+xetex-w32.tar.xz<br>
+64-bit バイナリを使用する場合は<br>
+xetex-w32.tar.xz, xetex-w64.tar.xz<br>
+を TeX のインストールトップディレクトリで展開して下さい。<br>
 
 TopDir/share/texmf-dist/fonts/conf に移動し，（つまりカレントディレクトリとし）
 そこにある fonts.conf というファイルを編集します。
-編集するのは “Find fonts in these directories” というセクションだけです。
+編集するのは “Find fonts in these directories” というセクションだけです。<br>
 そこにはデフォルトで， Windows のシステムフォントディレクトリだけが
 
 ```
     <dir>c:/windows/fonts</dir>
 ```
 
-として入れてありますから，このままで良い場合は編集する必要はありません。
-ディレクトリの名前が違う場合には変更する必要があります。 <!-- Windows 2000 だと c:/winnt/fonts となりますが， --> <!-- Windows 2000 も最近はメジャーではなく Windows XP の方が一般的でしょうか。 -->
+として入れてありますから，このままで良い場合は編集する必要はありません。<br>
+ディレクトリの名前が違う場合には変更する必要があります。<br>
 Windows のシステムフォントディレクトリの他に，購入したフォントのディレクトリがあれば，
 以下の例のように追加することができます：
 
@@ -658,6 +656,7 @@ Hello, \TeX !
 - [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
 - [XeLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_127398.html)
+- [XeTeX on Web](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130225214304767), [XeTeX on Web（続き）](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130226144129711)
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [世界の言語と文字](http://www2.tba.t-com.ne.jp/ing/language.html)
