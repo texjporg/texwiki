@@ -18,46 +18,46 @@ pukiwiki: "iOS"
 <!-- -[[TeX Live for iPhone:http://gamma-level.com/iphoneos/ports/texlive]] -->
 <!-- -[[How TeX made it to the iOS App Store - running on DOS, inside an emulator | Hacker News:http://news.ycombinator.com/item?id=4438047]] -->
 
-## PDF ビューア {#cf5b731d}
-
-- [PDF Viewer App for iOS](https://github.com/vfr/Viewer)
-    - [PDF Reader Core for iOS](https://github.com/vfr/Reader)
-- [MuPDF](/MuPDF/)
-- [Adobe Reader](</Adobe Reader/>)
-
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
 [iTextEditors](http://brettterpstra.com/ios-text-editors/) を参照．
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#o1e16332}
 
-- [Emacs](/Emacs/)
-- [Vim](/Vim/)
+- [Vim](https://itunes.apple.com/jp/app/vim/id492668168)
+    - [Vim - TeX Wiki](/Vim/)
 
 ### フリーウェア (無料) {#x09967e4}
 
-- [iVerbTeX](http://itunes.apple.com/jp/app/iverbtex/id560869163?mt=8)
+- [iVerbTeX](http://itunes.apple.com/jp/app/iverbtex/id560869163)
 
 ### シェアウェア・製品 {#na04d581}
 
+- [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
+    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．[BXjscls](/BXjscls/), [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語文書もローカルでコンパイルできます．
+    - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222)
+    - [FAST Intelligence](http://www.litchie.com/)
 - [Texpad](https://www.texpadapp.com/) (シェアウェア)
     - Texpad はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
-    - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159?mt=8)
+    - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159)
     - [Texpad -- blog](https://www.texpadapp.com/blog/)
     - [Texpad-API.framework](https://github.com/vallettaventures/Texpad-API)
     - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
-- [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
-    - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．[CJK パッケージ](/LaTeX-CJK/)を使用すれば日本語文書もローカルでコンパイルできます．
-    - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222?mt=8)
-    - [FAST Intelligence](http://www.litchie.com/)
 - [Tex Touch](http://www.vancapy.com/) (シェアウェア)
-    - [iTunes App Store - Tex Touch](http://itunes.apple.com/jp/app/tex-touch/id377627321?mt=8)/[iTunes App Store - Tex Touch for iPhone](http://itunes.apple.com/jp/app/tex-touch-for-iphone/id406891012?mt=8)
+    - [iTunes App Store - Tex Touch](http://itunes.apple.com/jp/app/tex-touch/id377627321)/[iTunes App Store - Tex Touch for iPhone](http://itunes.apple.com/jp/app/tex-touch-for-iphone/id406891012)
     - [Tex Timer](http://www.vancapy.com/textouch/setup/)
     - [TeX Cloud](http://www.vancapy.com/textouch/texcloud/)
         - [Tex Timer Single Doc(beta0.1)の利用【PC ～ iPadでTeX】](http://kiyomidais.cocolog-nifty.com/blog/2013/03/textimer.html)
         - [iPad で LaTeX ?!](http://skalldan.wordpress.com/2012/04/11/ipad-%E3%81%A7-latex/)
-- [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078?mt=8) (シェアウェア)
+- [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078) (シェアウェア)
+
+## PDF ビューア {#cf5b731d}
+
+- [PDF Viewer App for iOS](https://github.com/vfr/Viewer)
+    - [PDF Reader Core for iOS](https://github.com/vfr/Reader)
+- [MuPDF](https://itunes.apple.com/jp/app/mupdf/id482941798)
+- [Adobe Reader](https://itunes.apple.com/jp/app/adobe-reader/id469337564)
 
 ## 関連リンク {#f3da3e0a}
 
