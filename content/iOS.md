@@ -24,7 +24,13 @@ pukiwiki: "iOS"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#o1e16332}
 
+- [MobileOrg](https://itunes.apple.com/jp/app/mobileorg/id634225528)
+    - [http://mobileorg.github.io/](http://mobileorg.github.io/)
+    - [https://github.com/mobileorg](https://github.com/mobileorg)
+    - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
 - [Vim](https://itunes.apple.com/jp/app/vim/id492668168)
+    - [http://applidium.com/en/applications/vim/](http://applidium.com/en/applications/vim/)
+    - [https://github.com/applidium/Vim](https://github.com/applidium/Vim)
     - [Vim - TeX Wiki](/Vim/)
 
 ### フリーウェア (無料) {#x09967e4}
