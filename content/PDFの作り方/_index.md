@@ -13,7 +13,7 @@ pukiwiki: "PDFの作り方"
 投稿論文や予稿で PDF を要求されることが増えました。
 ここでは PDF の上手な作り方を解説します。
 
-<strong>目次</strong>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ### PDF を作るためのソフト {#mde22763}
 
@@ -99,8 +99,8 @@ pukiwiki: "PDFの作り方"
     - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
     - [pdfFactory](http://www.nsd.co.jp/fineprint/pdf.html) と [FinePrint](http://www.nsd.co.jp/fineprint/) ([NSD](http://www.nsd.co.jp/))
     - [gDoc Creator](http://www.gdoc.com/creator/) ([Global Graphics Software](http://www.globalgraphics.com/))
-    - [Expert PDF Creator](http://www.visagesoft.com/) (Expert PDF Reader は Free)
-    - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp) (CutePDF Writer は Free)
+    - [Expert PDF Creator](http://www.visagesoft.com/)
+    - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp)
 
 #### PDF 編集ソフト一覧 {#se764b4f}
 
