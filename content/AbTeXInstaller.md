@@ -15,7 +15,7 @@ pukiwiki: "AbTeXInstaller"
 
 「TeX インストーラ 3」は TeX のインストーラーです。<br>
 
-- [W32TeX](/W32TeX/) (角藤さんのサイトでいう「フルインストール」の内容に相当)
+- [W32TeX](/W32TeX/)
 - dviout for Windows
 - [Ghostscript](/Ghostscript/)
 - [GSview](/Ghostscript/Windows/#gsview)
@@ -332,7 +332,3 @@ otf パッケージの最新版は otfbeta です。<br>
     「作ったもの，書いたもの，その他」に TeX のインストーラやシェルなどがあります
     <!-- ↑一次配布元などではないので、このあたりが妥当 -->
     <!-- // 「インストーラの配布元だ」という揚げ足取りはご遠慮ください． -->
-
-- [もう難しいなんて言わせない！たった20分でできる簡単TeXインストールWindows編](http://did2memo.net/2012/04/23/easy-latex-install-windows-201204/), [TeXインストーラでインストールしたソフトウェア一式をアンインストールする方法](http://did2memo.net/2012/04/27/tex-uninstall/)
-- [Windows 8にTeXをインストールして使うまでの手順](http://hitgot.org/archives/setting-of-tex-on-win8/)
-- [LaTeX2eの設定: Windows](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/settingwindows.html)
