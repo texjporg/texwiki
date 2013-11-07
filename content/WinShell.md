@@ -7,7 +7,7 @@ pukiwiki: "WinShell"
 
 # WinShell
 
-<strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。それでも使いたければ以下の情報を見てください。</strong><br>
+<strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。</strong><br>
 
 WinShell ではなく [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/) などの統合環境をおすすめします．<br>
 
@@ -336,9 +336,3 @@ WinShell/設定 を参照．
 ## 使い方 {#n7874abc}
 
 WinShell/使い方 を参照．
-
-## 関連リンク {#t6b26342}
-
-- [キーワード：WinShell | 情報科学屋さんを目指す人のメモ](http://did2memo.net/tag/winshell/)
-- [WinShellのbibtexでエラーが出た時](http://blog.livedoor.jp/tmako123-programming/archives/22041970.html)
-- [WinShellでTeXのコンパイル中にも編集する方法](http://tatsyblog.wordpress.com/2013/01/07/winshell%E3%81%A7tex%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E4%B8%AD%E3%81%AB%E3%82%82%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
