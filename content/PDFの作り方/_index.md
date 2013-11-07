@@ -371,10 +371,7 @@ W32TeX では Computer Modern Type 1 フォントは[t1fonts.tar.xz](http://www.
 ### dvipdfmx の使い方 {#rdc781c9}
 
 [dvipdfmx](/dvipdfmx/) は TeX 出力（DVI ファイル）を PDF に変換するフリーソフトウェアです。<br>
-dvipdfmx はオリジナル dvipdfm ([The dvipdfm page](http://gaspra.kettering.edu/dvipdfm/)) + 日本語パッチ → CJK 対応 dvipdfm → dvipdfmx と進化したものです。<br>
-
 『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました。<br>
-
 dvipdfmx は TeX Live, W32TeX に含まれています。<br>
 
 使い方は，Windows PowerShell またはコマンド プロンプトなどで
@@ -923,8 +920,6 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [（フォントを）埋め込むか、埋め込まざるか、その設定方法が問題だ（TeX Live 編）](http://d.hatena.ne.jp/zrbabbler/20130115/1358197826), [埋め込むか、埋め込まざるか、の補足](http://d.hatena.ne.jp/zrbabbler/20130119/1358573411), [埋め込むか、埋め込まざるか、後者は問題だ](http://d.hatena.ne.jp/zrbabbler/20130131/1359631758)
 - [pdf ファイルのフォント埋め込みについて - JSIAM](http://www.jsiam.org/modules/xfsection/article.php?articleid=57)
 - [手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm) (横浜工文社さん)
-    <!-- 手書き PDF 入門は，一旦リンク切れになっていましたが，2009-01-06 現在復活しています． -->
-
 - [フリーソフトで PDF を作成する方法](http://www.trueroad.jp/pdf-make/) （細田さん）
 - [WinTeX文書をPDF化する](http://kamoland.com/comp/tex_acro.html)
 - [さまざまなPDFの作成技術の概観](http://www.antenna.co.jp/pdf/reference/createpdf.htm) (アンテナハウスさん)
