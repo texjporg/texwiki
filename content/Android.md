@@ -29,7 +29,7 @@ pukiwiki: "Android"
 
 #### TeXPortal {#va170afe}
 
-- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate)
+- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
     - [http://anhoavu.github.io/texportal.html](http://anhoavu.github.io/texportal.html)
     - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
 
@@ -70,9 +70,10 @@ pukiwiki: "Android"
 ## PDF ビューア {#t5fdeba9}
 
 - [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdfdemo)
-    - MuPDF ベースの派生版
-        - [PDFView](https://play.google.com/store/apps/details?id=com.acadoid.pdfview)
-        - [APV PDF Viewer](https://play.google.com/store/apps/details?id=cx.hell.android.pdfview)
+    <!-- - -MuPDF ベースの派生版 -->
+    <!-- - --[[PDFView:https://play.google.com/store/apps/details?id=com.acadoid.pdfview]] -->
+    <!-- - --[[APV PDF Viewer:https://play.google.com/store/apps/details?id=cx.hell.android.pdfview]] -->
+
 - [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
 - [Adobe Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
 
