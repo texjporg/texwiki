@@ -69,7 +69,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP が表示されない場合は 最新版の TeXwork
 W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
 TeX Live, MacTeX の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
 
-### Windowes 8.1, 8, 7, Vista (TeX Live) の場合 {#ycb12d64}
+### Windowes 8.1, 8, 7 (TeX Live) の場合 {#ycb12d64}
 
 1. [http://extensions.services.openoffice.org/](http://extensions.services.openoffice.org/) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
@@ -79,7 +79,7 @@ TeX Live, MacTeX の TeXworks はスペルチェックの辞書が含まれて�
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
 
-上記の設定でうまくいかない場合は [texlive 2012](http://technology.dip.jp/~ray/2013/02/967) の「texworksのスペルチェッカの辞書の設置場所」を参照してください．
+上記の設定でうまくいかない場合は [texlive 2012 &raquo; leaf letter](http://technology.dip.jp/~ray/2013/02/967) の「texworksのスペルチェッカの辞書の設置場所」を参照してください．
 
 ### OS X (MacTeX) の場合 {#d0319cb7}
 
