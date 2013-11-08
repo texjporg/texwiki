@@ -396,6 +396,7 @@ ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such fi
 - [mlterm](http://mlterm.sourceforge.net/)
 - [sakura](https://launchpad.net/sakura)
 - [evilvte](http://www.calno.com/evilvte/)
+- [Final Term](http://finalterm.org/)
 
 ## 関連リンク {#bc8cfcc3}
 
