@@ -25,7 +25,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。<br
 
 ここでは、コンパイラ等には手を加えず、
 マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [ipaex-type1](https://github.com/zr-tex8r/ipaex-type1), [BXjscls](/BXjscls/) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
-周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。
+周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。<br>
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。~ --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。~ --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
 UTF-8 等を用いて中国韓國文字も処理できます。<br>
 海外では、英文中にほんの少し漢字を書きたい場合によく使われているようです。<br> <!-- CJK LaTeX に詳しくない者が書き加えました。~ --> <!-- 間違ってたらすいません。~ --> <!-- CJK は主に台湾で使われています。~ -->
@@ -240,11 +240,13 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 
 ### TeX Live {#o07a519a}
 
-TeX Live では CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．<br>
+TeX Live は CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．<br>
 
 ### W32TeX {#gb5c8c94}
 
-- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html) を参照．<br>
+W32TeX は cjkzr.tar.xz をインストールすれば OK です．<br>
+
+- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html)<br>
 
 ### TeX {#a7fe5a5f}
 
