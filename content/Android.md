@@ -29,7 +29,7 @@ pdflatex は普通に使用できるそうです．
 
 ***
 
-<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;"><strong>ω</strong></span></span> Window 1 <span style="color:Gray;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>▓</strong></span></span>　</span></ins></span><br>
 
 <span style="color:White;background-color:Black;">u0_a80@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
@@ -41,7 +41,7 @@ platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→
 
 ***
 
-<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;"><strong>ω</strong></span></span> Window 1 <span style="color:Gray;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>▓</strong></span></span>　</span></ins></span><br>
 
 <span style="color:White;background-color:Black;">u0_a80@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
@@ -53,7 +53,7 @@ eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使�
 
 ***
 
-<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;"><strong>ω</strong></span></span> Window 1 <span style="color:Gray;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;"><strong>▓</strong></span></span>　</span></ins></span><br>
 
 <span style="color:White;background-color:Black;">u0_a80@android:/ $ eptex -fmt=platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
