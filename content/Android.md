@@ -25,6 +25,93 @@ pukiwiki: "Android"
     - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
 
+pdflatex は普通に使用できるそうです．
+
+***
+
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+
+<span style="color:White;background-color:Black;">u0_a80@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<span style="color:White;background-color:Black;">pdfTeX 3.1415926-2.5-1.40.14 (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→ [TeX Live for Androidで、platexすると「This is pTeX」です。。。](https://twitter.com/ti5942/status/385371725031931904))
+
+***
+
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+
+<span style="color:White;background-color:Black;">u0_a80@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<span style="color:White;background-color:Black;">pTeX 3.1415926-p3.4 (utf8.euc) (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使用できるそうです．(→ [platexコマンドは、拡張されていないので、コマンドeptex --fmt=platexを使う。](https://twitter.com/ti5942/status/389611613503754240))
+
+***
+
+<span style="color:#0077CC;background-color:#0077CC;"><ins><span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;">ω</span></span> Window 1 ◢　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(＋)　×　▓　</span></ins></span><br>
+
+<span style="color:White;background-color:Black;">u0_a80@android:/ $ eptex -fmt=platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<span style="color:White;background-color:Black;">e-pTeX 3.1415926-p3.4-110825-2.6 (utf8.euc) (Web2C 2013 for Android) 　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=platex で作成された DVI ファイルを dvipdfmx で処理できるそうです． (→ [dvipdfmx.cfgのKとPの行をコメントアウトすると、eptex -fmt=platexで作成されたdviをdvipdfmxで、PDFができます。](https://twitter.com/ti5942/status/385378025983856640))
+
+***
+
+- dvipdfmx.cfg
+
+***
+
+```
+%% PDF Security (Encryption) Setting
+%%
+%% Those options won't take effects unless you use flag 'S'.
+%%
+%% Key bits for PDF encryption (40 - 128)
+
+%K  40
+
+%% Permission flag for PDF encryption: Revision will be 3 if the key size
+%% is greater than 40 bits.
+%%
+%% 0x0004 (Revision 2) Print the document.
+%%        (Revision 3) Print the document (possibly not at the highest quality
+%%        level, depending on whether bit 12[0x0800] is also set).
+%% 0x0008 Modify the contents of the document by operations other than those
+%%        controlled by bits 6[0x0020], 9[0x0100], and 11[0x0400].
+%% 0x0010 (Revision 2) Copy or otherwise extract text and graphics from the
+%%        document, including extracting text and graphics (in support of
+%%        accessibility to disabled users or for other purposes).
+%%        (Revision 3) Copy or otherwise extract text and grphics from the
+%%        document by operations other than that controlled by bit 10[0x0200].
+%% 0x0020 Add or modify text annotations, fill in interactive form fields,
+%%        and, if bit 4[0x0008] is also set, create or modify interactive
+%%        form fields (including signature fields).
+%%
+%% (Revision 3 only)
+%% 0x0100 Fill in existing interactive form fields (including signature
+%%        fields), even if bit 6 is clear.
+%% 0x0200 Extract text and graphics (in support of accessibility to disabled
+%%        users or for other purposes).
+%% 0x0400 Assemble the document (insert, rotate, or delete pages and create
+%%        bookmarks or thumbnail images), even if bit 4 is clear.
+%% 0x0800 Print the document to a representation from which a faithful digital
+%%        copy of the PDF content could be generated. When this bit is clear
+%%        (and bit 3 is set), printing is limited to a low-level representation
+%%        of the appearance, possibly of degraded quality.
+
+%P  0x003C
+```
+
+***
+
 ### シェアウェア {#ac15962a}
 
 #### TeXPortal {#va170afe}
