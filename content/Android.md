@@ -25,7 +25,7 @@ pukiwiki: "Android"
     - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
 
-pdflatex は普通に使用できるそうです．
+pdflatex は普通に使用できるそうです．(→ [TeXLive for Androidの端末なら、pdflatexが使えるぞ！](https://twitter.com/ti5942/status/398938593088901120))
 
 ***
 
@@ -33,9 +33,23 @@ pdflatex は普通に使用できるそうです．
 
 <span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
 
-<span style="color:White;background-color:Black;">u0_a80@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">u0_a77@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 <span style="color:White;background-color:Black;">pdfTeX 3.1415926-2.5-1.40.14 (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+uplatex も普通に使用できるそうです．(→ [TeXLive for Android uplatexも普通に動くよ！ ](https://twitter.com/ti5942/status/398946031406034945))
+
+***
+
+<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
+
+<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+
+<span style="color:White;background-color:Black;">u0_a77@android:/ $ uplatex -version 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<span style="color:White;background-color:Black;">e-upTeX 3.1415926-p3.4-u1.11-110825-2.6 (utf8.uptex) (Web2C 2013 for Android) 　　　　　　　　　　　　</span><br>
 
 ***
 
@@ -47,7 +61,7 @@ platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→
 
 <span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
 
-<span style="color:White;background-color:Black;">u0_a80@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">u0_a77@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 <span style="color:White;background-color:Black;">pTeX 3.1415926-p3.4 (utf8.euc) (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
@@ -61,7 +75,7 @@ eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使�
 
 <span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
 
-<span style="color:White;background-color:Black;">u0_a80@android:/ $ eptex -fmt=platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">u0_a77@android:/ $ eptex -fmt=platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 <span style="color:White;background-color:Black;">e-pTeX 3.1415926-p3.4-110825-2.6 (utf8.euc) (Web2C 2013 for Android) 　　　　　　　　　　　　　　　　　　</span><br>
 
