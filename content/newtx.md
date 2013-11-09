@@ -46,7 +46,7 @@ texdoc newtx
 
 で確認してください。
 
-## TX フォント (obsolete) {#uba8f4cc}
+## TX フォント (obsolete) → newtx を使用する {#uba8f4cc}
 
 \[Summary in English\]
 Young Ryu's TX fonts tutorial in Japanese.
