@@ -73,8 +73,9 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 [非 e-TeX で hyperref を使うと……](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) を参照．
 
-2012/05/28 の oberdiek バンドルの更新でこの問題が解決されました。詳細については上掲のリンク先を参照してください。
-（2012/06/13 以降の W32TeX ではこの新しい oberdiek バンドルが含まれています。）
+2012/05/28 の oberdiek バンドルの更新でこの問題が解決されました。<br>
+詳細については上掲のリンク先を参照してください。<br>
+2012/06/13 以降の W32TeX ではこの新しい oberdiek バンドルが含まれています。<br>
 
 ### 指定可能なオプション {#za8c61cb}
 
@@ -114,16 +115,8 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 とすることも可能です．
 
-しおりを作成する場合は2回コンパイルが必要です．
-
-v6.75e で dvipdfmx が指定できるようになりました．
-
-\usepackage で dvipdfmx を指定してエラーが発生する場合は
-
-- hyperref を最新のもの (6.75e 以降のバージョン) にアップデートする
-- \usepackage でオプションを dvipdfmx ではなく dvipdfm を指定する
-
-のどちらかを試してみてください．
+しおりを作成する場合は2回コンパイルが必要です．<br>
+\usepackage で dvipdfmx を指定してエラーが発生する場合は hyperref パッケージを最新版 にアップデートしてください．<br>
 
 hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
@@ -1103,7 +1096,7 @@ abc
 
 ***
 
-- \usepackage\[dvipdfm,bookmarkstype=toc,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false\]{hyperref} -- kd 2007-03-20 (火) 15:21:01
+- \usepackage\[dvipdfmx,bookmarkstype=toc,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false\]{hyperref} -- kd 2007-03-20 (火) 15:21:01
 - 修士論文のpdf作成等の際には，ぜひともhyperrefをご利用してpdfファイルを作って下さい．（例えば上記例をプリアンブル部に書けばよいと思います．目次から本文のページ等へジャンプ可能だと読み手が楽です．） -- kd 2007-03-20 (火) 15:27:11
 - 逆に「書籍の原稿」といった、「最終的な組版を書き手自身がやるのではない」文書の場合には、hyperref パッケージをはじめとする、お行儀の悪い（＝LaTeX の内部処理をあちこち書き換える）パッケージは決して使用しないでください。 -- 1296893894 2011-02-05 (土) 17:18:14
 - texlive2011ではsetpagesize=falseを指定しないと版面が紙の右下側にずれる現象がおこりました。私の環境特有かもしれませんが一応報告を -- yayugu 2011-08-09 (火) 22:11:52
