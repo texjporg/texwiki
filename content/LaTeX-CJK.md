@@ -97,7 +97,7 @@ UTF-8 等を用いて中国韓國文字も処理できます。<br>
 CJK パッケージは inputenc パッケージなどと同じく、
 8bit目（最上位bit）の立った文字のカテゴリー
 コードを変更して、多バイト文字の
-TeX ソースを標準的な8bit版の
+LaTeX ソースを標準的な8bit版の
 pdfLaTeX でコンパイル可能にするマクロ集です。<br>
 当然、8bit目（最上位bit）の立った文字が
 マクロとして処理される前に
@@ -133,9 +133,9 @@ pLaTeX では使用できません。<br>
 </tbody>
 </table>
 
-ユーザーコードは TeX のソースコードの encoding に書き込む文字列、
+ユーザーコードは LaTeX のソースコードの encoding に書き込む文字列、
 TFM エンコーディングは fd ファイルの作成に必要です。<br>
-この説明から見当がつくと思いますが、TeX のソースコードに
+この説明から見当がつくと思いますが、LaTeX のソースコードに
 様々なエンコーディングが混じっていても、問題なくコンパイルできます。<br>
 しかし、編集の手間を考えると、複数のエンコーディングを用いて
 原稿を用意する時は別ファイルにしておいて、\input するのが良いでしょう。<br>
@@ -550,33 +550,35 @@ CMap テーブルを使用して TTF フォントにアクセスするには、c
 > -p 1
 > ```
 >
-> SMP (Supplementary Multilingual Plane) の文字にアクセスします。
+> SMP (Supplementary Multilingual Plane) の文字にアクセスします。<br>
 > TeX で必要なのは、主に、古代文字です。<br>
 > 0x0000&ndash;0xFFFF のコードポイントに 0x10000 平行移動した
-> 0x10000&ndash;0x1FFFF のコードポイントを持つ文字を対応させます。
+> 0x10000&ndash;0x1FFFF のコードポイントを持つ文字を対応させます。<br>
 >
 > ```
 > -p 2
 > ```
 >
-> SIP (Supplementary Ideographic Plane) の文字にアクセスします。
-> これは BMP に収まり切れなかった漢字です。
+> SIP (Supplementary Ideographic Plane) の文字にアクセスします。<br>
+> これは BMP に収まり切れなかった漢字です。<br>
 > 0x0000&ndash;0xFFFF のコードポイントに 0x20000 平行移動した
-> 0x20000&ndash;0x2FFFF のコードポイントを持つ文字を対応させます。
+> 0x20000&ndash;0x2FFFF のコードポイントを持つ文字を対応させます。<br>
 
 何等かの事情で TTF フォントのグリフに、CMap を経由せず、
 その並び順で直接アクセスするには、
-文字集合として、Adobe-Identity を持つ CMap ファイルを使用します。
-しかし、この CMap ファイルの名前は “Identity-H” または “Identity-V” であってはいけません。
+文字集合として、Adobe-Identity を持つ CMap ファイルを使用します。<br>
+しかし、この CMap ファイルの名前は “Identity-H” または “Identity-V” であってはいけません。<br>
 
 ## サンプル {#f920d8cd}
 
 以下のサンプルをコンパイルするには [CTAN:languages/japanese/CJK/](https://mirror.ctan.org/languages/japanese/CJK/)
-配下のファイルが必要です。サンプルはインストールして使用することも可能なように
+配下のファイルが必要です。<br>
+サンプルはインストールして使用することも可能なように
 アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
-（フォルダー）を用意し、すべてのファイルをそこにコピーします。更にサンプル内の
+（フォルダー）を用意し、すべてのファイルをそこにコピーします。<br>
+更にサンプル内の
 dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるには cid-x.map に
-改名、インストールして使用する場合はその内容をシステムの cid-x.map に追加します。
+改名、インストールして使用する場合はその内容をシステムの cid-x.map に追加します。<br>
 
 1. [UTF-8 で書かれた TeX ファイルで CJK の各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
     - これまでに判明している問題点:
