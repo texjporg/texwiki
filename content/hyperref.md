@@ -20,7 +20,7 @@ pukiwiki: "hyperref"
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
 [PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する LaTeX パッケージです．<br>
-PXjahyper パッケージは TeX Live に含まれています．<br>
+PXjahyper パッケージは TeX Live, W32TeX に含まれています．<br>
 
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/pxjahyper](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/?view=log)
