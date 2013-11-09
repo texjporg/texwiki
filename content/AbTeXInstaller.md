@@ -189,26 +189,27 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣　　　 ∣☑tex318w.zip　　　　　　　　　　　　　　無い　　　2.9MB<br>
 　　　　 ∣☑aleph-w32.tar.xz　　　　　　　　　　　無い　　　4.1MB　　　　　　 ∣<br>
 　　　　 ∣☑biblatex-biber.tar.xz　　　　　　　　　無い　　　14.8MB　　　　Ghostscript<br>
-　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　14.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　15.0MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
-　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　747KB　　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
-　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　447KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
-　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　145KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
-　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.4MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
-　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
-　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
-　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☐gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
-　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☐gs909w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
-　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　　∣<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　 GSview<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
-　　　　 ∣☑newtxpx-boondoxfonts.tar.xz　　　　無い　　　5.0MB　　　　　　∣<br>
+　　　　 ∣☑cjkzr.tar.xz　　　　　　　　　　　　　　 無い　　　16.0MB　　　　　∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑context-doc.tar.xz　　　　　　　　　　無い　　　15.0MB　　　　　∣☐gs707w32full.zip　　　　　　　　　　　無い　　　6.8MB<br>
+　　　　 ∣☑context.tar.xz　　　　　　　　　　　　　無い　　　15.0MB　　　　　∣☐gs870w32full-gpl.zip　　　　　　　　無い　　　12.5MB<br>
+　　　　 ∣☑cweb-w32.tar.xz　　　　　　　　　　　無い　　　747KB　　　　　　∣☐gs871w32full-gpl.zip　　　　　　　　無い　　　16.0MB<br>
+　　　　 ∣☑dvi2ps-w32.tar.xz　　　　　　　　　　 無い　　　447KB　　　　　　∣☐gs900w32full-gpl.zip　　　　　　　　無い　　　14.4MB<br>
+　　　　 ∣☑dvi2tty-w32.tar.xz　　　　　　　　　　無い　　　145KB　　　　　　∣☐gs901w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑dvipdfm-w32.tar.xz　　　　　　　　　　無い　　　1.6MB　　　　　　∣☐gs902w32full-gpl.zip　　　　　　　　無い　　　14.8MB<br>
+　　　　 ∣☑dvipsk-w32.tar.xz　　　　　　　　　　　無い　　　4.4MB　　　　　　∣☐gs904w32full-gpl.zip　　　　　　　　無い　　　15.1MB<br>
+　　　　 ∣☑dvitools-w32.tar.xz　　　　　　　　　　無い　　　1.2MB　　　　　　∣☐gs905w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
+　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
+　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs909w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　　∣<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　 GSview<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　 ∣<br>
+　　　　 ∣☑newtxpx-boondoxfonts.tar.xz　　　　無い　　　5.0MB<br>
 　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
