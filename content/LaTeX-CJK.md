@@ -18,13 +18,77 @@ pukiwiki: "LaTeX-CJK"
 - [http://www.ctan.org/pkg/cjk](http://www.ctan.org/pkg/cjk)
 - [http://www.ctan.org/pkg/bxcjkjatype](http://www.ctan.org/pkg/bxcjkjatype)
 
+CJK パッケージは [pdfLaTeX](/pdfTeX/) で CJK 文書を作成するためのパッケージです．<br>
+
+### インストール {#fb6c9457}
+
+#### TeX Live {#o07a519a}
+
+TeX Live は CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．<br>
+
+#### W32TeX {#gb5c8c94}
+
+W32TeX は cjkzr.tar.xz をインストールすれば CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が使用できます．<br>
+
+- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html)<br>
+
+### 日本語に関するパッケージ {#zd452c87}
+
+ipaex-type1, BXjscls &amp; BXcjkjatype を使用すると [pdfLaTeX](/pdfTeX/) で日本語の文書が作成できます．<br>
+
+#### ipaex-type1 {#i302fdd5}
+
+[ipaex-type1](https://github.com/zr-tex8r/ipaex-type1) を参照．<br>
+
+#### BXjscls &amp; BXcjkjatype {#e32515ef}
+
+[BXjscls](/BXjscls/) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を参照．<br>
+
+#### 使い方 {#u0524a48}
+
+以下の様な文書を作成して UTF-8 で保存します．<br>
+
+***
+
+- neko.tex
+
+***
+
+```
+\documentclass[pdflatex,jadriver=standard]{bxjsarticle}
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+***
+
+pdfLaTeX を実行します．<br>
+
+```
+pdflatex neko.tex
+```
+
+! Package keyval Error: pdflatex undefined. のエラーが発生する場合は BXjscls を最新版にアップデートします．<br>
+
+## CJK パッケージの詳細 {#k191ae10}
+
+### はじめに {#ebc72ee3}
+
 日本語を処理できる TeX としては、
 国内ではアスキー社による日本語 pTeX が広く使われていますが、
 TeX コンパイラ・DVI ウェア共に独自拡張を施しています。<br>
 このため、[dvipng](/dvipng/) のように pTeX に対応してないツールがあります。<br>
 
 ここでは、コンパイラ等には手を加えず、
-マクロで日中韓文字を処理する CJK LaTeX と CJK パッケージで日本語が簡単に扱える [ipaex-type1](https://github.com/zr-tex8r/ipaex-type1), [BXjscls](/BXjscls/) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
+マクロで日中韓文字を処理する CJK パッケージを紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。<br>
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。~ --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。~ --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
 UTF-8 等を用いて中国韓國文字も処理できます。<br>
@@ -226,29 +290,7 @@ UTF-8で何か文章を書く。babel等でハイフネーションの言語を�
 \end{document}
 ```
 
-### 日本語に関するパッケージ {#zd452c87}
-
-#### ipaex-type1 {#i302fdd5}
-
-[ipaex-type1](https://github.com/zr-tex8r/ipaex-type1) を参照．<br>
-
-#### BXcjkjatype {#e32515ef}
-
-[BXjscls](/BXjscls/) &amp; [BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) を参照．<br>
-
-## インストール {#fb6c9457}
-
-### TeX Live {#o07a519a}
-
-TeX Live は CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．<br>
-
-### W32TeX {#gb5c8c94}
-
-W32TeX は cjkzr.tar.xz をインストールすれば OK です．<br>
-
-- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html)<br>
-
-### TeX {#a7fe5a5f}
+### 動作環境 {#a7fe5a5f}
 
 まず、LaTeX が動作する環境が必要です。<br>
 その他に
@@ -335,24 +377,27 @@ CJK パッケージを使って、まともな PDF を作成するには dvipdfm
 PDF ファイル内のフォントとの対応だけです。
 
 > 背景を説明しておくと、DVI ファイルには文字の形に関する情報は
-> 何も入っていません。大きさと位置、そして、それがどの TFM に由来するか
-> の情報だけしか入っていません。DVI ドライバーの仕事はその大きさと位置に
-> フォントから取得した文字の形に関する情報を当てはめていくことにあります。
-> 従って、TFM とフォントとの対応が必要になってくる訳です。
+> 何も入っていません。<br>
+> 大きさと位置、そして、それがどの TFM に由来するか
+> の情報だけしか入っていません。<br>
+> DVI ドライバーの仕事はその大きさと位置に
+> フォントから取得した文字の形に関する情報を当てはめていくことにあります。<br>
+> 従って、TFM とフォントとの対応が必要になってくる訳です。<br>
 > この対応が与えられていない場合、大抵の DVI ドライバーはビットマップフォントを
-> 生成して、それを利用しようとします。
+> 生成して、それを利用しようとします。<br>
 > 現在の pTeX の場合、ここでビットマップフォントの生成に失敗してエラーで
-> 止まってしまうので、誰でもインストールの失敗に気がつきます。
+> 止まってしまうので、誰でもインストールの失敗に気がつきます。<br>
 > ところが CJK パッケージをフルインストールしているとデフォルトの
 > フォントに対してはビットマップフォントの生成に成功してしまうため、
-> インストールの失敗に気がつかずに、使い続けてしまうケースが多いようです。
+> インストールの失敗に気がつかずに、使い続けてしまうケースが多いようです。<br>
 > 以下のサンプルではいずれも新たなフォント (TFM) を定義して使っていますので、
-> 実フォントの対応についても方法を例示しています。
+> 実フォントの対応についても方法を例示しています。<br>
 
 dvipdfmx で TFM と PDF ファイル内のフォントとの対応を指定するファイル (map file) は
 多数ありますが、その大部分は dvipdfm と共有なので、dvipdfm でも理解できる
-8-bit フォントしか扱えません。そこで、この対応は dvipdfmx 専用のマップファイルである
-cid-x.map に書きます。(Details will be added later.)
+8-bit フォントしか扱えません。<br>
+そこで、この対応は dvipdfmx 専用のマップファイルである
+cid-x.map に書きます。(Details will be added later.)<br>
 
 #### 実在しない OpenType (CFF, CID-keyed) フォントの場合 {#ef120abe}
 
