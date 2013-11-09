@@ -49,8 +49,8 @@ $ xdvi -watchfile 1 hoge.dvi &
 
 ## pxdvi とは <a id="pxdvi"></a> {#s1b173bb}
 
-pxdvi は pTeX で出力された DVI ファイルに対応した DVI プレビューアです．<br>
-pxdvi は xdvik を pTeX に対応させたものです．<br>
+pxdvi は (e-)pTeX で出力された DVI ファイルに対応した DVI プレビューアです．<br>
+pxdvi は xdvik を (e-)pTeX に対応させたものです．<br>
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
