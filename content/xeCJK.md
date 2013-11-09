@@ -17,7 +17,7 @@ pukiwiki: "xeCJK"
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
 IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．<br>
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) の xetex-w32.tar.xz, [MiKTeX](/MiKTeX/) に含まれています．<br>
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/), [MiKTeX](/MiKTeX/) に含まれています．<br>
 
 - [ctex-kit](https://code.google.com/p/ctex-kit/)
     - [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
@@ -146,7 +146,7 @@ ZXjatype は TeX Live, W32TeX に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
-- [BXjscls](https://github.com/zr-tex8r/BXjscls) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
+- [BXjscls](/BXjscls/) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
 - [http://www.ctan.org/pkg/bxjscls](http://www.ctan.org/pkg/bxjscls)
