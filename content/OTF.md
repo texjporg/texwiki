@@ -23,11 +23,11 @@ pukiwiki: "OTF"
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。 <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
 
 - OTF パッケージは5書体以上を扱うことができます。
-- また，和文フォントのメトリックが改訂されました。
+- 和文フォントのメトリックが改訂されました。
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- なお，OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
+- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
     （CID 番号に完全対応している DVIware
     で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
     使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
@@ -52,13 +52,11 @@ pukiwiki: "OTF"
 
 ## インストール {#g2a8e99e}
 
-### Microsoft Windows でのインストール {#t967d888}
-
-#### TeX Live {#da8ed89a}
+### TeX Live {#da8ed89a}
 
 TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
 
-#### W32TeX {#z4ee6291}
+### W32TeX {#z4ee6291}
 
 [W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
 これを例えば C:\temp\ に入れます。<br>
@@ -87,24 +85,6 @@ PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 
 [Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
 
-### OS X でのインストール {#h2117028}
-
-OS X の場合は，
-MacTeX または TeX Live をインストールすれば OTF パッケージもインストールできます。<br>
-
-#### MacTeX &amp; TeX Live {#t85f1532}
-
-MacTeX，TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
-
-### Solaris，UNIX 互換 OS でのインストール {#aec1d55c}
-
-Solaris，Linux，BSD などの場合は，
-TeX Live をインストールすれば OTF パッケージもインストールできます。<br>
-
-#### TeX Live {#fa2a3abb}
-
-TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
-
 ### CMap {#n2a34850}
 
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。<br>
@@ -118,12 +98,15 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 
 ### フォントを埋め込まず使用する {#m049c993}
 
-まず OpenType フォントを持っていなくても試せる方法です。Ryimun-Light と
-GothicBBB-Meduim は，dvipdfmx では埋め込まれないフォントであることと，
-埋め込まれてない Ryumin-Light と GothicBBB-Medium を [Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
-が適切なフォントに代替して表示・印刷することを利用する方法です。dvipdfmx
-および Adobe Reader/Acrobat で
-使えるアジア・拡張言語フォントパック
+まず OpenType フォントを持っていなくても試せる方法です。<br>
+Ryimun-Light と
+GothicBBB-Meduim は
+dvipdfmx では埋め込まれないフォントであることと，
+埋め込まれてない
+Ryumin-Light と GothicBBB-Medium を [Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
+が適切なフォントに代替して表示・印刷することを利用する方法です。<br>
+dvipdfmx
+および Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
 (Adobe Reader XI Font Packs
 [Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
 /
@@ -132,10 +115,10 @@ GothicBBB-Meduim は，dvipdfmx では埋め込まれないフォントである
 Adobe Reader 9.1 Font Packs
 [Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix))
 は
-すでにインストールされているものとします。
+すでにインストールされているものとします。<br>
 
-これで次のものをテストしてみます。
-\UTF{...} は十六進4桁の Unicode 番号，\CID{...} は十進の CID 番号を使います。
+これで次のものをテストしてみます。<br>
+\UTF{...} は十六進4桁の Unicode 番号，\CID{...} は十進の CID 番号を使います。<br>
 
 ***
 
