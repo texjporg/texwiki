@@ -7,6 +7,7 @@ pukiwiki: "MediaWiki"
 
 # MediaWiki
 
-## MediaWiki:www.mediawiki.org/‎ {#u2244f7d}
+## MediaWiki {#u2244f7d}
 
-- www.mediawiki.org/‎
+- [http://www.mediawiki.org/](http://www.mediawiki.org/)‎
+- [http://www.mediawiki.org/wiki/MediaWiki/ja](http://www.mediawiki.org/wiki/MediaWiki/ja)
