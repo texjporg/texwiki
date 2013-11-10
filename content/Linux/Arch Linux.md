@@ -84,9 +84,12 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 
 - [Linux](/Linux/#texliveinstall)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止するため
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
 [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/)
 をインストールします．<br>
+texlive-dummy をインストールすると
+TeX Live/Arch Linux に依存するパッケージが
+TeX Live/Arch Linux をインストールするのを防止できます．<br>
 
 ```
 $ yaourt -S texlive-dummy
@@ -201,12 +204,6 @@ $ yaourt -S texstudio
 $ sudo pacman -S texmaker
 ```
 
-または
-
-```
-$ yaourt -S texmaker-qt5
-```
-
 ## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
@@ -266,12 +263,6 @@ $ sudo pacman -S inkscape pstoedit python2-lxml
 
 ```
 $ sudo pacman -S awesome
-```
-
-または
-
-```
-$ yaourt -S awesome-git
 ```
 
 - [ウィンドウマネージャ「awesome」の基本操作](http://momoto.github.io/blog/2013/03/27/awesome-tutorials/)
