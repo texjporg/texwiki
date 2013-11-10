@@ -26,6 +26,24 @@ pukiwiki: "Android"
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
     - [http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones](http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones)
 
+TeX Live for Android を起動して TeX Live をインストールします．
+
+***
+
+<span style="color:#0077CC;background-color:#333333;"><span style="font-size:30px"><span style="color:#0077CC;background-color:#333333;">　Install TeXLive to you device?　</span>　　　　　　　　　　　　　　</span></span><br>
+
+<span style="color:#0077CC;background-color:#333333;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+
+<span style="color:White;background-color:#333333;"><span style="font-size:24px"><span style="color:White;background-color:#333333;">　Are you sure that your device's internal storage is larger than　</span>　　　</span></span><br>
+
+<span style="color:White;background-color:#333333;"><span style="font-size:24px"><span style="color:White;background-color:#333333;">　70M?　</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span></span><br>
+
+<span style="color:Gray;background-color:#333333;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+
+<span style="color:White;background-color:#333333;">　　　　　　　　　　　　　　 No 　　　　　　　　　　　　　　<span style="color:Gray;background-color:#333333;"><strong>│</strong></span>　　　　　　　　　　　　　　Yes　　　　　　　　　　　　　　</span><br>
+
+***
+
 pdflatex は普通に使用できるそうです．(→ [TeXLive for Androidの端末なら、pdflatexが使えるぞ！](https://twitter.com/ti5942/status/398938593088901120))
 
 ***
