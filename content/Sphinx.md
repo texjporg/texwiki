@@ -34,7 +34,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 - [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
 - [Sphinx Advent Calendar 2012 (全部俺)](http://advent-calendar2012.usaturn.net/)
-- [Sphinx &mdash; おっさんウェブ 1.0.0 documentation](http://ossanhoihoi.web.fc2.com/sphinx/sphinx.html)
+- [http://ossanhoihoi.web.fc2.com/](http://ossanhoihoi.web.fc2.com/)
 - [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
 - [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 
