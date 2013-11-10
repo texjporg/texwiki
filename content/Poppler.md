@@ -570,9 +570,9 @@ msgothic.ttc: "MS Gothic" "Regular"
 - [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/pixman-0.30.2.tar.gz
-$ tar xvf pixman-0.30.2.tar.gz
-$ pushd pixman-0.30.2
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.32.0.tar.gz
+$ tar xvf pixman-0.32.0.tar.gz
+$ pushd pixman-0.32.0
 $ ./configure --prefix=/mingw
 $ make
 $ make install
