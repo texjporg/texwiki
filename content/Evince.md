@@ -23,7 +23,6 @@ SyncTeX に対応しています．<br>
 
 - [Evince](https://projects.gnome.org/evince/)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
-    - [Evince Document Viewer › SyncTex » Supported Editors](https://help.gnome.org/users/evince/stable/synctex-editors.html.en)
 - [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
 ### 動作環境 {#q9c64542}
@@ -87,6 +86,9 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html)
 
 ## SyncTeX {#w699c2c2}
+
+- [Evince Document Viewer › SyncTex](https://help.gnome.org/users/evince/stable/index.html.en#synctex)
+    - [Evince Document Viewer › SyncTex » Supported Editors](https://help.gnome.org/users/evince/stable/synctex-editors.html.en)
 
 ### forward and inverse search {#ga060086}
 
