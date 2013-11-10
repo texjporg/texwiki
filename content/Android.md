@@ -24,6 +24,7 @@ pukiwiki: "Android"
     - [TeX, Live, for, Android を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=TeX+Live+for+Android)
     - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
     - [Android で TeXLive2013](http://tkyon.blogspot.jp/2013/07/android-texlive2013.html)
+    - [http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones](http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones)
 
 pdflatex は普通に使用できるそうです．(→ [TeXLive for Androidの端末なら、pdflatexが使えるぞ！](https://twitter.com/ti5942/status/398938593088901120))
 
