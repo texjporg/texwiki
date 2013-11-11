@@ -130,7 +130,6 @@ ulimit -t 10 -f 1024
 
 - [TeXを使ってみよう（pTeX版）](http://glc.l.u-tokyo.ac.jp/tex/)
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
-- [てふてふかれん](http://tex-web.net/)
 - [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [Online Latex Editor](http://luikore.github.com/latex/)
 - [compileonline.com](http://www.compileonline.com/)
