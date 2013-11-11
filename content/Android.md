@@ -100,7 +100,28 @@ eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使�
 
 ***
 
-dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=platex で作成された DVI ファイルを dvipdfmx で処理できるそうです． (→ [dvipdfmx.cfgのKとPの行をコメントアウトすると、eptex -fmt=platexで作成されたdviをdvipdfmxで、PDFができます。](https://twitter.com/ti5942/status/385378025983856640))
+platex を e-pTeX に変更したい場合はシンボリックリンクを変更するといいみたいです．(→ [TeXLive-for-Android<br>platexコマンドをeptex -fmt=platexにするには、シンボリックリンクを変えるとよい。<br>rm platex<br>ln -s eptex platex<br>とすればいいんだ！？ ](https://twitter.com/ti5942/status/400147097812344832),<br>[(∀｀\*ゞ)ｴﾍﾍ<br>これでいいのかなぁ？](https://twitter.com/ti5942/status/400148349006786560))
+
+***
+
+```
+$ rm platex
+$ ln -s eptex platex
+```
+
+***
+
+<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
+
+<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+
+<span style="color:White;background-color:Black;">u0_a77@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<span style="color:White;background-color:Black;">e-pTeX 3.1415926-p3.4-110825-2.6 (utf8.euc) (Web2C 2013 for Android) 　　　　　　　　　　　　　　　　　　</span><br>
+
+***
+
+dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [dvipdfmx.cfgのKとPの行をコメントアウトすると、eptex -fmt=platexで作成されたdviをdvipdfmxで、PDFができます。](https://twitter.com/ti5942/status/385378025983856640))
 
 ***
 
@@ -156,7 +177,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 #### TeXPortal {#va170afe}
 
 - [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
-    - [http://lameandroidhero.github.io/texportal/](http://lameandroidhero.github.io/texportal/)
+    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
     - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
     - [https://plus.google.com/102906741972076888588/posts](https://plus.google.com/102906741972076888588/posts)
 
@@ -179,7 +200,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 ### フリーウェア (無料) {#pfa162c4}
 
 - [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
-    - [http://lameandroidhero.github.io/texpert/](http://lameandroidhero.github.io/texpert/)
+    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
 - [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
@@ -190,7 +211,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 - [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
     - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
 - [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
-    - [http://lameandroidhero.github.io/texpert/](http://lameandroidhero.github.io/texpert/)
+    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
 - [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
