@@ -156,8 +156,9 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 #### TeXPortal {#va170afe}
 
 - [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
-    - [http://anhoavu.github.io/texportal.html](http://anhoavu.github.io/texportal.html)
+    - [http://lameandroidhero.github.io/texportal/](http://lameandroidhero.github.io/texportal/)
     - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
+    - [https://plus.google.com/102906741972076888588/posts](https://plus.google.com/102906741972076888588/posts)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
@@ -178,7 +179,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 ### フリーウェア (無料) {#pfa162c4}
 
 - [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
-    - [http://anhoavu.github.io/texpert.html](http://anhoavu.github.io/texpert.html)
+    - [http://lameandroidhero.github.io/texpert/](http://lameandroidhero.github.io/texpert/)
 - [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
@@ -187,8 +188,9 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 ### シェアウェア・製品 {#z7716277}
 
 - [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
+    - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
 - [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
-    - [http://anhoavu.github.io/texpert.html](http://anhoavu.github.io/texpert.html)
+    - [http://lameandroidhero.github.io/texpert/](http://lameandroidhero.github.io/texpert/)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
 - [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
