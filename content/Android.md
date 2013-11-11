@@ -155,7 +155,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 
 #### TeXPortal {#va170afe}
 
-- [TeXPortal (Donate Version)](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
+- [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
     - [http://lameandroidhero.github.io/texportal/](http://lameandroidhero.github.io/texportal/)
     - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
     - [https://plus.google.com/102906741972076888588/posts](https://plus.google.com/102906741972076888588/posts)
@@ -189,7 +189,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると eptex -fmt=plat
 
 - [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
     - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
-- [TeXpert (TeXの達人)](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
+- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
     - [http://lameandroidhero.github.io/texpert/](http://lameandroidhero.github.io/texpert/)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
 - [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
