@@ -109,9 +109,9 @@ xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する 
 
 ### XeLaTeX で日本語 {#m8e2a0bc}
 
-#### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#t23b4dfc}
+#### [BXjscls](/BXjscls/) {#t23b4dfc}
 
-XeLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
+XeLaTeX では [BXjscls](/BXjscls/) が使用可能です．<br>
 
 #### [xeCJK/ZXjatype](/xeCJK/) {#ref20094}
 
@@ -656,6 +656,7 @@ Hello, \TeX !
 - [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
 - [XeLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_127398.html)
+- [http://miyazakikenji.wordpress.com/?s=xelatex](http://miyazakikenji.wordpress.com/?s=xelatex)
 - [XeTeX on Web](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130225214304767), [XeTeX on Web（続き）](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130226144129711)
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
