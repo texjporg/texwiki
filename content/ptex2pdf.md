@@ -9,28 +9,57 @@ pukiwiki: "ptex2pdf"
 
 ## ptex2pdf {#u0ef9f2c}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## ptex2pdf とは {#c565a6de}
+
 ptex2pdf は ptex, eptex, platex, uptex, euptex, uplatex の中から指定したコマンドと dvipdfmx を実行する Lua スクリプトです．<br>
 ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 もともとは TeXworks での使用を簡便にするために開発されましたが、TeXShop その他の統合環境においても使用できますし、コマンドライン（ターミナルからの直接の入力）でも使用できます。
 
 - [http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
-- [https://gitorious.org/tlptexlive/ptex2pdf](https://gitorious.org/tlptexlive/ptex2pdf)
-    - [https://gitorious.org/tlptexlive/ptex2pdf/commits](https://gitorious.org/tlptexlive/ptex2pdf/commits)
 - [http://www.preining.info/blog/software-projects/ptex2pdf/](http://www.preining.info/blog/software-projects/ptex2pdf/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
-- [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 
 ### License {#b37c3e22}
 
 [GPLv2](https://gitorious.org/tlptexlive/ptex2pdf/source/COPYING)
 
-### 使い方 {#dfd1522f}
+### ChangeLog {#e3bc9999}
+
+- [https://gitorious.org/tlptexlive/ptex2pdf](https://gitorious.org/tlptexlive/ptex2pdf)
+    - [https://gitorious.org/tlptexlive/ptex2pdf/commits](https://gitorious.org/tlptexlive/ptex2pdf/commits)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
+    - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log)
+
+## 不具合 {#n3e20d7f}
+
+### TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#g2950b8d}
+
+TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
+
+```
+$ ptex2pdf -l hoge.tex
+/usr/bin/env: texlua  : No such file or directory
+```
+
+ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は ptex2pdf.lua の shebang line
+
+```
+#!/usr/bin/env texlua  
+```
+
+の texlua の後ろの余分なスペース2つを削除してください．<br>
+
+- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
+- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
+
+## 使い方 {#dfd1522f}
 
 ```
 ptex2pdf <オプション> <ファイル名.tex>
 ```
 
-#### オプション一覧 {#q9a85657}
+### オプション一覧 {#q9a85657}
 
 - -v  version
 - -h  help
@@ -43,7 +72,7 @@ ptex2pdf <オプション> <ファイル名.tex>
 - -ot '&lt;opts>' extra options for TeX（TeX コンパイル時のオプション指定）
 - -od '&lt;opts>' extra options for dvipdfmx（dvipdfmx のオプション指定）
 
-#### 使用例 {#ldc0b8f0}
+### 使用例 {#ldc0b8f0}
 
 - pLaTeX でコンパイル
 
@@ -68,3 +97,5 @@ ptex2pdf <オプション> <ファイル名.tex>
     ```
     ptex2pdf -l -ot "-synctex=1 -shell-escape" -od "-p b5 -S -P 0x0804"
     ```
+
+- [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
