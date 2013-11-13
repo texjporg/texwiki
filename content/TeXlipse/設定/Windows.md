@@ -467,7 +467,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 TeXworks を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe または C:\w32tex\share\texworks\TeXworks.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -534,7 +534,7 @@ TeXworks を使用する場合は，
 
 SumatraPDF を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe または C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -573,7 +573,7 @@ SumatraPDF を使用する場合は，
 
 Mozilla Firefox (pdf.js) を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　Mozilla Firefox (C:\Program Files\Mozilla Firefox\firefox.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　Mozilla Firefox (C:\Windows\System32\cmd.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -651,7 +651,7 @@ Chrome PDF Viewer を使用する場合は，
 
 Adobe Reader を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe または C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -671,7 +671,7 @@ Adobe Reader を使用する場合は，
 　ビューアー構成 (優先度降順)：<br>
 　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe または C:\w32tex\share\texworks\TeXworks.exe)<br>
 　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe または C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)<br>
-　Mozilla Firefox (C:\Program Files\Mozilla Firefox\firefox.exe または C:\Program Files (x86)\Mozilla Firefox\firefox.exe)<br>
+　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe または C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe)<br>
 　yap ()<br>
