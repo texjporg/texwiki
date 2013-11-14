@@ -55,6 +55,9 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu)
+- [TeX Live in Launchpad](https://launchpad.net/tex-live)
+    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
+        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#ef984d1b}
 
