@@ -177,12 +177,11 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場�
 \usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
 \usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
-(u)platex + dvips + Ghostscript (ps2pdf) の場合は，オプションを dvipdfmx ではなく dvips に変更します．<br>
 platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．<br>
 uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
 
 ```
-\usepackage[dvips]{hyperref}
+\usepackage{hyperref}
 \hypersetup{%
  bookmarksnumbered=true,%
  colorlinks=true,%
@@ -191,6 +190,12 @@ uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止す�
  pdfauthor={ななしのごんべぇ},%
  pdfsubject={hyperref入門・演習},%
  pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
+```
+
+platex, uplatex を使用してドライバオプションを指定しない場合はデフォルトでは dvips に設定されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
+
+```
+\usepackage[dvips]{hyperref}
 ```
 
 lualatex の場合は，hyperref のオプションに
@@ -208,10 +213,22 @@ unicode=true
 を追加します．
 
 ```
+\usepackage[pdfencoding=auto]{hyperref}
+```
+
+lualatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
+
+```
 \usepackage[pdftex,pdfencoding=auto]{hyperref}
 ```
 
 xelatex の場合は、指定しても指定しなくても文字化けしないしおりになります。
+
+```
+\usepackage{hyperref}
+```
+
+xelatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
 
 ```
 \usepackage[xetex]{hyperref}
