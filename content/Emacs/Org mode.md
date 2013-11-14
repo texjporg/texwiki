@@ -202,8 +202,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
   \\usepackage{pxjahyper}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage[xetex]{graphicx}
-    \\usepackage[xetex]{hyperref}
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
   \\else
     \\usepackage{graphicx}
     \\usepackage{hyperref}
@@ -346,8 +346,8 @@ latexmk は TeX Live に含まれています．<br>
   \\usepackage{pxjahyper}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage[xetex]{graphicx}
-    \\usepackage[xetex]{hyperref}
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
   \\else
     \\usepackage{graphicx}
     \\usepackage{hyperref}
@@ -489,8 +489,8 @@ latexmk は TeX Live に含まれています．<br>
   \\usepackage{pxjahyper}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage[xetex]{graphicx}
-    \\usepackage[xetex]{hyperref}
+    \\usepackage{graphicx}
+    \\usepackage{hyperref}
   \\else
     \\usepackage{graphicx}
     \\usepackage{hyperref}
