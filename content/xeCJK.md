@@ -146,11 +146,7 @@ ZXjatype は TeX Live, W32TeX に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
 ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
 
-- [BXjscls](/BXjscls/) &amp; [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
-- [http://www.ctan.org/pkg/bxjscls](http://www.ctan.org/pkg/bxjscls)
-- [http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls](http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls)
+- [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/zxjatype](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/?view=log)
 - [http://www.ctan.org/pkg/zxjatype](http://www.ctan.org/pkg/zxjatype)
