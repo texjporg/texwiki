@@ -26,12 +26,12 @@ Shift_JIS/ISO-2022-JP/EUC-JP が表示されない場合は 最新版の TeXwork
 
 ***
 
-<span style="color:Black;background-color:#007BBB;"><ins>　　　<span style="color:White;"><strong>TeXworksの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#006AAA;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXworksの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]</ins></span><strong>\[　エディタ　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　プレビュー　\]\[　タイプセット　\]\[　スクリプト　\]</ins></span><br>
 　　　　エディタのデフォルト<br>
-　　　　<ins> MS UI Gothic　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> <ins>12 pt　\[◆\]</ins><br>
-　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　<ins>32 px　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+　　　　<ins> メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> <ins>12 pt　\[<strong>⇕</strong>\]</ins><br>
+　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　<ins>32 px　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 　　　　☐ 行番号表示　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 行の折り返し<br>
 　　　　構文の色付け: <span style="color:Black;background-color:#EEEEEE;">\[ LaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 　　　　自動インデント: <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
@@ -90,6 +90,41 @@ TeX Live, MacTeX の TeXworks はスペルチェックの辞書が含まれて�
 1. /Users/&lt;ユーザー名>/Library/TeXworks/dictionaries ディレクトリを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
+
+## フォントの選択 {#h886fb41}
+
+\[フォーマット\]-\[フォント\] で編集中のファイルを表示するためのフォントを選択できます．<br>
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>フォントの選択</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+フォント(F)　　　　　　　　　　　　　　　　　　　　　　　フォントスタイル(Y)　　　　　　　　　サイズ(S)<br>
+<span style="color:White;background-color:#1188FF;">メイリオ</span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">明朝</span>　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">12</span><br>
+
+Urdu Typesetting　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">明朝　　　　　　　　　　　　　　</span>　　 6<br>
+Utsaah　　　　　　　　　　　　　　　　　　　　　　　　　　ゴシック　　　　　　　　　　　　　　 7<br>
+Vani　　　　　　　　　　　　　　　　　　　　　　　　　　　 イタリック　　　　　　　　　　　　　　8<br>
+Verdana　　　　　　　　　　　　　　　　　　　　　　　　　ゴシック イタリック　　　　　　　　　9<br>
+Vijaya　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　10<br>
+Vrinda　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　11<br>
+Webdings　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">12　　　　　　</span><br>
+Wingdings　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　14<br>
+<span style="color:Black;background-color:#DAEAFF;">メイリオ　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　16<br>
+
+<br>
+
+　文字飾り　　　　　　　　　　　　　　　　　　　　　　　　　サンプル<br>
+　☐ 取り消し線(K)<br>
+　☐ 下線(U)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>AaBbYyZz</strong><br>
+　言語(I)<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[ すべて　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+***
+
+## 構文の色付け {#bfadedc6}
+
+\[フォーマット\]-\[構文の色付け\]-\[LaTeX\] を選択すると編集中のファイルが色分けされるようになります．<br>
 
 ## 背景色・文字色の変更 {#g4b457a4}
 
