@@ -13,7 +13,7 @@ pukiwiki: "TeXworks/設定/Windows"
 
 ## タイプセットの設定 {#q50d2378}
 
-### [W32TeX](/W32TeX/), [TeX Live](</TeX Live/>) {#kaca20c0}
+### [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) {#kaca20c0}
 
 #### 設定前 {#n2341fff}
 
