@@ -51,7 +51,7 @@ OS X 10.4 以降
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>処理に使用するプログラム</strong><br>
 　　　　　　　　　　　　　　　　　　　　　　　　構成： <span style="color:Black;background-color:#FAFAFA;"><ins>\[ デフォルト　　　　　　　　　　　 ◆ \]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>コマンド</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
-　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:Black;background-color:#9FCFFB;">◎</span> latex+dvipdf<br>
+　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span> latex+dvipdf<br>
 
 　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
@@ -65,10 +65,7 @@ OS X 10.4 以降
 
 ## 関連リンク {#tab9989c}
 
-- [Macで数式を](http://blog.goo.ne.jp/m4g/e/b866d05459e5c16e5dbceaeba859a1f2)
-- [Macで数式ありプレゼンテーション](http://www.yasutomo57jp.com/2012/09/03/mac%E3%81%A7%E6%95%B0%E5%BC%8F%E3%81%82%E3%82%8A%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/)
-- [Mac OSX LionでLatexitを使う](http://d.hatena.ne.jp/satojkovic/20120408/1333927675)
-- [2012年、Mac(Lion)とTeXと日本語と、あとhomebrew - A Way of Code](http://toggtc.hatenablog.com/entry/2012/02/20/230500)
+- [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - MacWiki:LaTeXiT
 - LaTeXiTでUndefined control sequence.l.1 \documentclass とのエラーメッセージがでる ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
