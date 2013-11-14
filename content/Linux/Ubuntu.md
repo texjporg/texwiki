@@ -70,6 +70,10 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu 
 - [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu)
+- [TeX Live in Launchpad](https://launchpad.net/tex-live)
+    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
+        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
