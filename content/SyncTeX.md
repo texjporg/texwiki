@@ -9,9 +9,23 @@ pukiwiki: "SyncTeX"
 
 ## SyncTeX {#i5b9d0ce}
 
-[SyncTeX](http://itexmac.sourceforge.net/SyncTeX.html)<br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## SyncTeX とは {#i8f28fee}
+
+SyncTeX というのは、PDF viewer と editor の間の synchronization を実現したものです．<br>
+SyncTeX をサポートするエンジンは ptex, eptex, uptex, euptex, pdftex, luatex, luajittex, xetex です．<br>
+オプションで
+
+- -synctex=1 とすると，zlib で圧縮した SyncTeX 用データを出力します．
+- -synctex=-1 のように負の値に設定すると，圧縮しないデータを出力します．
+
+ただし ConTeXt の場合は、mkiv であればソースにおいて \enabledirectives\[system.synctex\] とし，mkii であればソースにおいて \synctex=1 としておくと SyncTeX が有効になります．<br>
 
 - [The official SyncTeX page](http://itexmac.sourceforge.net/SyncTeX.html)
+
+### ChangeLog {#q711590a}
+
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/synctexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/ChangeLog?view=markup)
