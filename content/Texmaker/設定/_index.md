@@ -54,19 +54,19 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 ***
 
-<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">クイックビルドで使用するコマンド</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + PDF ファイルを表示</span>　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + PDF ファイルを表示</span>　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span> LaTeX + dvipdfm + PDF ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">(●) LaTeX + dvipdfm + PDF ファイルを表示</span><br>
 
-　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Bib(la)tex + LaTeX (x2) + dvips + ps2pdf + PDF ファイルを表示</span>　　　<span style="color:Black;background-color:#F5F5F5;">◯ Sweave + PdfLaTeX + PDF ファイルを表示</span><br>
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Bib(la)tex + LaTeX (x2) + dvips + ps2pdf + PDF ファイルを表示</span>　　　　<span style="color:Black;background-color:#F5F5F5;">◯ Sweave + PdfLaTeX + PDF ファイルを表示</span><br>
 
 <div style="clear:both"></div>
 
@@ -131,15 +131,15 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 ***
 
-<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
 
 <span style="color:Black;background-color:#F5F5F5;">エディタ</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>ＭＳ ゴシック　　　　　　　　▼</ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
+<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>メイリオ　　　　　　　　　　　<strong>ᐯ</strong></ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
+<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">文字コード　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　▼\]</ins></span><span style="color:Black;background-color:#F5F5F5;">　☑ 行番号の表示</span><br>
 
@@ -151,7 +151,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　☐ インライン</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[◆\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
+<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">色</span><br>
 
@@ -213,7 +213,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 ***
 
-<span style="color:Black;background-color:#9BC527;"><ins>　　<span style="color:White;"><strong>Texmaker</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#8BB517;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker</strong></span>　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　設定されている文字コードでは<br>
 　　ファイルの文字が正しく表示されない可能性があります (UTF-8).<br>
