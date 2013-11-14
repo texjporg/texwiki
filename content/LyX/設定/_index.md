@@ -430,7 +430,8 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 #### platex + dvipdfmx の場合 {#j305d328}
 
 文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
+dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
+クラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -446,18 +447,18 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt,papersize</ins><br>
+　任意設定(T):　　　 <ins>dvipdfmx,12pt,papersize</ins><br>
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[DVIPDFMx　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
 #### platex + dvips + ps2pdf の場合 {#v823b899}
 
 文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
+dvips を使用する場合は，グラフィックドライバに 既定値 または Dvips を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -477,14 +478,15 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[Dvips　　　　　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
 文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx を指定します．<br>
+dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
+クラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -500,18 +502,18 @@ dvipdfmx を使用する場合は，グラフィックドライバに DVIPDFMx �
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>uplatex,12pt,papersize</ins><br>
+　任意設定(T):　　　 <ins>uplatex,dvipdfmx,12pt,papersize</ins><br>
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[DVIPDFMx　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
 #### uplatex + dvips + ps2pdf の場合 {#p803a02d}
 
 文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvips を使用する場合は，グラフィックドライバに Dvips を指定します．<br>
+dvips を使用する場合は，グラフィックドライバに 既定値 または Dvips を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -531,7 +533,7 @@ dvips を使用する場合は，グラフィックドライバに Dvips を指�
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[Dvips　　　　　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
@@ -594,7 +596,7 @@ lualatex, luajitlatex を使用する場合は，グラフィックドライバ�
 #### xelatex の場合 {#ce0db196}
 
 文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-xelatex を使用する場合は，グラフィックドライバに XeTeX を指定します．<br>
+xelatex を使用する場合は，グラフィックドライバに 既定値 または XeTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -614,7 +616,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 
 <br>
 
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[XeTeX 　　　　▼\]</span><br>
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ***
 
@@ -718,7 +720,7 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
   \fi
 \else
   \ifxetex
-    \usepackage[xetex]{hyperref}
+    \usepackage{hyperref}
     \usepackage{zxjatype}
     \setjamainfont{ipaexm.ttf}
     \setjasansfont{ipaexg.ttf}
@@ -741,7 +743,6 @@ xelatex を使用する場合は，グラフィックドライバに XeTeX を�
 ***
 
 のように編集すれば OK です．<br>
-W32TeX の場合は [bxcjkjatype パッケージ](/LaTeX-CJK/), [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper), [ZXjatype パッケージ](/xeCJK/) をインストールします．<br>
 
 LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込んでいる場合
 
