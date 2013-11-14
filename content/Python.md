@@ -44,9 +44,10 @@ Python を C:\Python34 にインストールした場合は
 
 ### pip {#q07300c6}
 
-pip は Python 3.4 以降ではデフォルトでインストールされます．<br>
+<!-- pip は Python 3.4 以降ではデフォルトでインストールされます．~ -->
 
 - [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
+- [Python3.4からpipが標準インストーラに！？](http://qiita.com/ksato9700/items/c5a6db9d17ad0770a747)
 
 error: Setup script exited with error: Unable to find vcvarsall.bat のエラーが発生する場合は以下のサイトを参考にして設定すればインストールできます．<br>
 
