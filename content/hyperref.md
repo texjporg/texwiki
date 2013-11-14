@@ -15,13 +15,17 @@ pukiwiki: "hyperref"
 
 ### 更新履歴 {#e8ca0037}
 
-[ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog) を参照。
+- [http://www.tug.org/applications/hyperref/ftp/ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog)
 
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
-[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する LaTeX パッケージです．<br>
+[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する (u)pLaTeX 用のパッケージです．<br>
 PXjahyper パッケージは TeX Live, W32TeX に含まれています．<br>
 
+#### ChangeLog {#h773478f}
+
+- [https://github.com/zr-tex8r/PXjahyper](https://github.com/zr-tex8r/PXjahyper)
+    - [https://github.com/zr-tex8r/PXjahyper/commits/](https://github.com/zr-tex8r/PXjahyper/commits/)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/pxjahyper](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/pxjahyper/?view=log)
 
