@@ -19,7 +19,7 @@ pukiwiki: "TeXworks"
 TeXworks は，TeX でドキュメントを作成するためのシンプルな統合環境です．<br>
 TeXworks は Dick[^1] Koch 氏の [TeXShop](/TeXShop/) をモデルにしています．<br>
 [TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/)，[MacTeX](/Mac/#mactex) 等のディストリビューションに標準で含まれています．<br>
-[TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/) と同様，SyncTeX もサポートしており，メニューも日本語化されています．<br>
+[TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/) と同様，[SyncTeX](/SyncTeX/) もサポートしており，メニューも日本語化されています．<br>
 TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
@@ -40,7 +40,9 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows (8.1, 8, 7, Vista, XP)，OS X, GNU/Linux で利用できます．<br>
+Microsoft Windows，OS X, GNU/Linux で利用できます．<br>
+TeXworks の Windows 版は，Windows XP 以降の Windows で動作します．<br>
+Windows 2000 では動作しません．<br>
 TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5.1/qtdoc/supported-platforms.html) で動作します．<br>
 
 ### License {#lccd03cb}
