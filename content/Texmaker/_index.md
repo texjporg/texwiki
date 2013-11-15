@@ -151,14 +151,8 @@ Windows, Linux で不具合が発生して OS X では発生しないようで�
 Windows の場合は Texmaker の修正版を使用することで回避できます．<br>
 fcitx を使用している場合はテキストとハイライトが同系色の場合に見えにくくなります．Qt 設定ツールの \[外観\]-\[パレットの設定\]-\[パレットの調整(<ins>T</ins>)...\]-\[中央部の色の役割(<ins>R</ins>)\] からハイライトを選択して \[色の選択(<ins>S</ins>)\] から適切な色を設定して Texmaker の \[インプットメソッドを選択\] で fcitx を選択することで回避できます．Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から fcitx を選択すると Texmaker のデフォルトのインプットメソッドが fcitx になります．<br>
 ibus を使用している場合は Linux Mint の場合は ibus-qt4, qt4-qtconfig，Fedora の場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
+Arch Linux, Texmaker 4.1, ibus-kkc の組み合わせでは特に問題なく日本語入力できています．<br>
 uim, XIM を使用している場合は背景が黒く表示されて判読不能になることがあるようです．<br>
-
-- [TeX 用エディタの設定](http://tkyon.blogspot.jp/2013/02/tex.html) ← Arch Linux で不具合が発生．Texmaker の \[インプットメソッドを選択\] で XIM を指定している場合は変換候補が下の方に表示される場合があります．
-- [Texmakerの日本語入力が切り替わらなくなるのを修正](http://denshihakoma.blogspot.jp/2013/01/texmaker.html) ← Ubuntu 12.04 で不具合が発生．
-- [<strong>Windows XP＋IME2002の環境では，文書作成中に日本語変換するとハイライトの背景色が黒のため文字色と同化して見えなくなるという問題があります</strong>（二回変換して変換候補が表示されれば何とかなります）．](http://www.sip-ac.jp/sip/tex01.html)
-- [SciProg　生物研究者の備忘録](http://d.hatena.ne.jp/Moment5/20100806/1281121648) ← Windows 7 English version では不具合は特に見当たらなかった．
-- [Texmaker ver.2.0 について](http://blogs.yahoo.co.jp/igproj_fusion/6526838.html) ← Gentoo Linux と [OS X](/Mac/) では，この不具合は発生せず，Windows では発生する．
-- [Texmakerで日本語をUIMで打つ](http://d.hatena.ne.jp/Ieshoriveul/20110805/1312555157) ← 日本語入力欄が黒いのは甘え．
 
 バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．<br>
 また，同じく Qt を使用している [TeXworks でもハイライトに関する不具合が存在する](/TeXworks/#s5bfc44e)ので，もしかすると Qt の不具合 (仕様？) かもしれません．<br>
