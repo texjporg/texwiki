@@ -9,6 +9,8 @@ pukiwiki: "Sphinx"
 
 ## [Sphinx](http://sphinx-doc.org/) {#t006e75b}
 
+<img src="http://sphinx-doc.org/latest/_static/sphinxheader.png" alt="Sphinx" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## Sphinx とは {#pbb2bc6a}
@@ -18,6 +20,18 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 ### [Sphinx home](http://sphinx-doc.org/) {#u72d0718}
 
 - [http://sphinx-doc.org/latest/](http://sphinx-doc.org/latest/)
+
+### License {#qc08e5c2}
+
+[BSD 2-Clause](https://bitbucket.org/birkenfeld/sphinx/src/tip/LICENSE)
+
+### ChangeLog {#b34742d0}
+
+- [http://sphinx-doc.org/latest/changes.html](http://sphinx-doc.org/latest/changes.html)
+- [https://bitbucket.org/birkenfeld/sphinx/](https://bitbucket.org/birkenfeld/sphinx/)
+    - [https://bitbucket.org/birkenfeld/sphinx/commits/](https://bitbucket.org/birkenfeld/sphinx/commits/)
+
+## Sphinx-Users.jp {#d394d0e1}
 
 ### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
@@ -29,14 +43,6 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 ### [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/) {#yb1fc56f}
 
 ### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
-
-### 関連リンク {#lc632f60}
-
-- [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
-- [Sphinx Advent Calendar 2012 (全部俺)](http://advent-calendar2012.usaturn.net/)
-- [http://ossanhoihoi.web.fc2.com/](http://ossanhoihoi.web.fc2.com/)
-- [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
-- [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 
 ## Python ドキュメント {#h53fa12f}
 
@@ -122,5 +128,10 @@ make latexpdfja
 
 ## 関連リンク {#t09e1c4e}
 
+- [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
+- [Sphinx Advent Calendar 2012 (全部俺)](http://advent-calendar2012.usaturn.net/)
+- [http://ossanhoihoi.web.fc2.com/](http://ossanhoihoi.web.fc2.com/)
+- [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
+- [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 - [おれたちが考えた最強の出版システムPython Developers Festa 2012.11](http://www.slideshare.net/k16shikano/our-docsyspyfes201211)
 - [omakeもmakeも使わずに、Sphinxドキュメントの継続的ビルド](http://tell-k.hatenablog.com/entry/2012/01/04/022229)
