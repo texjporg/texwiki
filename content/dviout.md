@@ -92,7 +92,7 @@ dviout を管理者として実行していない場合は Error in RegCreateKey
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -182,7 +182,7 @@ dviout フォルダーの dviout.exe を右クリックします。<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　</ins></span>[<img src="http://www.nsknet.or.jp/~tony/TeX/install/win/icon/dviout.gif" alt="dviout" width="18" height="16">](http://akagi.ms.u-tokyo.ac.jp/dviout.html)<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>dviout.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　</ins></span>[<img src="http://www.nsknet.or.jp/~tony/TeX/install/win/icon/dviout.gif" alt="dviout" width="18" height="16">](http://akagi.ms.u-tokyo.ac.jp/dviout.html)<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>dviout.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
@@ -236,7 +236,7 @@ dviout.exe を右クリックします。<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Warning</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Warning</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -257,7 +257,7 @@ dviout.exe を右クリックします。<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Install fundamental parameters(Font resolution and Paper size)</strong></span>　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　<span style="color:Black;"><strong>Install fundamental parameters(Font resolution and Paper size)</strong></span>　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　Default Windows System printer:<br>
 　　　Microsoft XPS Document Writer with 600 dpi<br>
@@ -265,8 +265,8 @@ dviout.exe を右クリックします。<br>
 <br>
 
 　　Default for dviout...<br>
-　　　Resolution of font(dpi:)　　　 <ins>600　　　　\[◆\]</ins>　　　　　 　 ◎ Portrait<br>
-　　 ☐ Different dpi for printing　 <span style="color:Gray;"><ins>300　　　　\[◆\]</ins></span>　　　　　　 ◯ Landscape<br>
+　　　Resolution of font(dpi:)　　　 <ins>600　　　　\[<strong>⇕</strong>\]</ins>　　　　　 　(●) Portrait<br>
+　　 ☐ Different dpi for printing　 <span style="color:Gray;"><ins>300　　　　\[<strong>⇕</strong>\]</ins></span>　　　　　　 ◯ Landscape<br>
 　　　Paper size　　　<ins>A4　　210 x 297 mm　　　　　　　　　　　　　\[▼\]</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Help　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　> Next　　 \]</span> <span style="color:Black;background-color:#EEEEEE;">\[ 　　Cancel　　 \]</span><br>
 
@@ -278,7 +278,7 @@ dviout.exe を右クリックします。<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register the location of Font files</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Register the location of Font files</strong></span>　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Guess　　　\]</span>　　Push left button to detect fonts.<br>
 　　　　　　　　　　　　　　　(Use dpi in the first page)<br>
@@ -296,7 +296,7 @@ TEXPK:<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>TeXの環境</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXの環境</strong></span>　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -317,7 +317,7 @@ TEXPK:<br>
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register the location of Font files</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Register the location of Font files</strong></span>　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">\[　　　Guess　　　\]</span>　　Push left button to detect fonts.<br>
 　　　　　　　　　　　　　　　(Use dpi in the first page)<br>
@@ -339,7 +339,7 @@ TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tf
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
 　　 ☑ Register dviout on Windows's menu: Start->Program<br>
@@ -355,7 +355,7 @@ TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tf
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>mktexpk/makepk/MaKeTeXPK</strong></span>　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　<span style="color:Black;"><strong>mktexpk/makepk/MaKeTeXPK</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -375,7 +375,7 @@ TEXPK:   ^r\tfm\\^s^tfm;^r\pk\\^s.^dpk;^r\vf\\^s.vf;^r\ovf\\^s.ovf;^r\tfm\\^s.tf
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
 　　 ☑ Register dviout on Windows's menu: Start->Program<br>
@@ -400,7 +400,7 @@ TeX や Ghostscript をネットワークドライブにインストールして
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>gswin32.exe</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>gswin32.exe</strong></span>　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -420,7 +420,7 @@ TeX や Ghostscript をネットワークドライブにインストールして
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Register Programs</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ☑ Relate DVI file (.dvi) to dviout for Windows<br>
 　　 ☑ Register dviout on Windows's menu: Start->Program<br>
@@ -492,15 +492,15 @@ PDF ファイルの作成がうまくいかない場合は [TeXworks](/TeXworks/
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>Print</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Print</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　Printer:　Make PDF by dvipdfm(x)　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　OK　　\]</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　Cancel　\]</span><br>
 　　　Print range　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Help　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　Setup...　\]</span><br>
-　　　◎ All　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ Selection \]</span><br>
+　　 (●) All　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ Selection \]</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ dviprt<br>
 　　　◯ Pages (1)　　　　　　(8)　　　　　　　　　　☐ dvipdfm (not x)<br>
-　　　　From:<ins>　　1\[◆\]</ins>　　To:<ins>　　8\[◆\]</ins>　　　　　　　☐ View PDF ?<br>
+　　　　From:<ins>　　1\[<strong>⇕</strong>\]</ins>　　To:<ins>　　8\[<strong>⇕</strong>\]</ins>　　　　　　　　☐ View PDF ?<br>
 
 ***
 
@@ -525,15 +525,15 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]</ins></span><strong>\[　Graphic　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　\]</ins></span><br>
 　　　　　tpic specials<br>
-　　　　　 ◯ Off　　　　　　　　　　　　◯ Bezier　　　　　　　　　　◎ spline　　　　　　　　　　☐ tate<br>
+　　　　　 ◯ Off　　　　　　　　　　　　◯ Bezier　　　　　　　　　 (●) spline　　　　　　　　　　☐ tate<br>
 
 　　　　　Ghostscript<br>
-　　　　　 ◯ Off　　　　　　　　　　　　◎ On (default)　　　　　　 ◯ verbose<br>
+　　　　　 ◯ Off　　　　　　　　　　　 (●) On (default)　　　　　　 ◯ verbose<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ Direct PS ← \usepackage\[dvips\]{hyperref} を使用する場合はチェックをはずす<br>
 　　　　　 ◯ PBM　　　　　　　　　　　◯ exact PBM　　　　　　　◯ gssub<br>
 　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\w32tex\bin\rungs.exe</ins> または <ins>C:\w32tex\bin64\rungs.exe</ins><br>
@@ -594,14 +594,14 @@ JPEG ファイルが表示されない場合は dviout を使用せず PDF フ�
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]</ins></span><strong>\[　Common　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　\]</ins></span><br>
 　　　　Loupe　　　　　　　　　　　　Option(+CTRL)　　　　　　　　　　　Shape　　　　　　　　　Back<br>
-　　　Size:　<ins>250　　　　　\[◆\]</ins>　　　　Size:　<ins>480　　　　　\[◆\]</ins>　　　　　　　◎ Square　　　　　　◎ Default<br>
-　　　Scale: <ins>1　　　　　　\[◆\]</ins>　　　　Scale: <ins>8　　　　　　\[◆\]</ins>　　　　　　　◯ Measure　　　　　◯ White<br>
-　　　Speed: <ins>4　　　　　　\[◆\]</ins>　　　　　　　　　　　　　　　　　　　　　　　　◯ Circle　　　　　　 ◯ Black<br>
+　　　Size:　<ins>250　　　　　\[<strong>⇕</strong>\]</ins>　　　　Size:　<ins>480　　　　　\[<strong>⇕</strong>\]</ins>　　　　　　 (●) Square　　　　　 (●) Default<br>
+　　　Scale: <ins>1　　　　　　\[<strong>⇕</strong>\]</ins>　　　　Scale: <ins>8　　　　　　\[<strong>⇕</strong>\]</ins>　　　　　　　◯ Measure　　　　　◯ White<br>
+　　　Speed: <ins>4　　　　　　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　　　　　　◯ Circle　　　　　　 ◯ Black<br>
 　　　☐ Edge view<br>
 
 <br>
@@ -650,7 +650,7 @@ upTeX で DVI ファイルを作成し，dviout で表示しようとすると f
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>No Memory</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:#EEEEEE;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>No Memory</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 <br>
 
@@ -671,14 +671,14 @@ upTeX で DVI ファイルを作成し，dviout で表示しようとすると f
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]</ins></span><strong>\[　System　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　REGISTRY　\]</ins></span><br>
-　　　　　raster buffer size　　　　　　　　　　br:　<ins>400　　　　　\[◆\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span><br>
-　　　　　font buffer size　　　　　　　　　　　bf:　<ins>4000　　　　\[◆\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
-　　　　　bitmap buffer size/max　　　　　　bb:　<ins>4000　　　　\[◆\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Default　　　 \]</span><br>
-　　　　　number of dviouts/max　　　　multi:　<ins>4　　　　　　　\[◆\]</ins><br>
+　　　　　raster buffer size　　　　　　　　　　br:　<ins>400　　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span><br>
+　　　　　font buffer size　　　　　　　　　　　bf:　<ins>4000　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
+　　　　　bitmap buffer size/max　　　　　　bb:　<ins>4000　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Default　　　 \]</span><br>
+　　　　　number of dviouts/max　　　　multi:　<ins>4　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 　　　　　log file (path name or +:dviout.log or -:no log)：<br>
 　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　☑ Auto Renew　　　　　　　　　　　☐ 2nd tool buttons　　　　　　　　☐ Reverse page_up/down<br>
@@ -726,7 +726,7 @@ A default FONT will be used.
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]</ins></span><strong>\[　Font2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　\]</ins></span><br>
@@ -739,7 +739,7 @@ A default FONT will be used.
 <br>
 
 　　　　☑ Keep Path (Fkeep:)　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Flush　　　　\]</span><br>
-　　　　☐ CheckFontID (c:)　　　　　　　　　　　　　　　　　　　　A:　<ins>0　　　　　　　\[◆\]</ins>　　ttf: <ins>1　　　　　　　\[◆\]</ins><br>
+　　　　☐ CheckFontID (c:)　　　　　　　　　　　　　　　　　　　　A:　<ins>0　　　　　　　\[<strong>⇕</strong>\]</ins>　　ttf: <ins>1　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 　　　　☑ VirtualFont (virtual:)<br>
 　　　　☑ OnDemand (Fod:)　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
 
@@ -795,7 +795,7 @@ DVI ファイルを表示するとフォントが正しく表示されるよう�
 
 ***
 
-<span style="color:Black;background-color:#E0EB9F;"><ins>　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#D0DA8E;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]\[　Font2　\]\[ 　WinJFont　\]</ins></span><strong>\[ 　JFont2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　Key　　\]</ins></span><br>
@@ -807,8 +807,8 @@ DVI ファイルを表示するとフォントが正しく表示されるよう�
 
 <br>
 
-　　　　☐ NTTJTeX font subnstitution (ntt:)　　　　　　　　　Adjust size S: <ins>1000　　　　　　　\[◆\]</ins> /1000<br>
-　　　　☑ Use yoko font for tate (g:)　　　　　　　　　　　　　　　base line J:　<ins>0　　　　　　　　　\[◆\]</ins> /1000<br>
+　　　　☐ NTTJTeX font subnstitution (ntt:)　　　　　　　　　Adjust size S: <ins>1000　　　　　　　\[<strong>⇕</strong>\]</ins> /1000<br>
+　　　　☑ Use yoko font for tate (g:)　　　　　　　　　　　　　　　base line J:　<ins>0　　　　　　　　　\[<strong>⇕</strong>\]</ins> /1000<br>
 　　　　☑ Use inner jfm (Jfm:)　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
 　　　　☑ Adjust baseline (Jbt:)　　　　　　　☑ Adjust basepoint (Jgt:)　　by jfm<br>
 
