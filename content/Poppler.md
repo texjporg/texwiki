@@ -807,9 +807,9 @@ $ popd
 - [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.0.tar.xz
-$ tar xvf glib-2.39.0.tar.xz
-$ pushd glib-2.39.0
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.1.tar.xz
+$ tar xvf glib-2.39.1.tar.xz
+$ pushd glib-2.39.1
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
