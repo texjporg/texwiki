@@ -397,7 +397,7 @@ nkf の場所は以下のようにして確認できます．<br>
     ```
 
 使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545) などを参照してください．<br>
-コマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．<br>
+Windows PowerShell またはコマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．<br>
 メモ帳で UTF-8 に変換した場合は BOM が付加されます．<br>
 nkf やメモ帳以外の変換ツールを使用したい場合は [KanjiTranslator](http://www.kashim.com/kanjitranslator/) などの文字コード変換ツールを使っても OK です．<br>
 
