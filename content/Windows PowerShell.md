@@ -64,7 +64,7 @@ Windows PowerShell では Tab でコマンドレットやファイル名など�
 のように補完され
 
 ```
-platex .\hoge.tex
+ptex2pdf -l .\hoge.tex
 ```
 
 とするとコンパイルできません．
@@ -72,25 +72,7 @@ platex .\hoge.tex
 この場合は
 
 ```
-platex ".\hoge.tex".substring(2)
-```
-
-または
-
-```
-ls -n .\hoge.tex | platex
-```
-
-または
-
-```
-".\hoge.tex" -replace ".\\" | platex
-```
-
-または
-
-```
-[System.IO.Path]::GetFileName(".\hoge.tex") | platex
+ptex2pdf -l ".\hoge.tex".substring(2)
 ```
 
 のようにすれば OK です．
@@ -99,7 +81,7 @@ ls -n .\hoge.tex | platex
 
 ```
 cmd
-platex hoge.tex
+ptex2pdf -l hoge.tex
 ```
 
 としたほうが簡単かもしれません．
