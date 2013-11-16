@@ -145,7 +145,10 @@ pgfパッケージは内部で[xcolor](http://www.ring.gr.jp/pub/text/CTAN/help/
 
 red、green、blue、cyan、magenta、yellow、black、gray、white、darkgray、lightgray、brown、lime、olive、orange、pink、purple、teal、violet
 
-PGF/TikZでの色指定は基本的にxcolorの形式を踏襲しますので、色指定の際に複数の色をブレンドしたものを使用することができます。たとえば、red!30!gray は「30%の red＋70%の gray」の意味します。単に red!30 とした場合は、white とのブレンドと解釈されます。3色以上のブレンドも可能です。
+PGF/TikZでの色指定は基本的にxcolorの形式を踏襲しますので、色指定の際に複数の色をブレンドしたものを使用することができます。<br>
+たとえば、red!30!gray は「30%の red＋70%の gray」の意味します。<br>
+単に red!30 とした場合は、white とのブレンドと解釈されます。<br>
+3色以上のブレンドも可能です。<br>
 
 新しい色を新規に定義するときは、以下の書式で定義します。（pgfとは独立したxcolorパッケージに基づくので、tikzpicture環境以外でも使用可能です。）
 
@@ -683,8 +686,9 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 
 ### 図画のみの出力 {#nf2ceec5}
 
-tikz/PGF で作成した図画を含んだソースファイルから、図画のみを別ファイルに抽出できます。
-dvips または pdfTeX を用いると、ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後に適用することで画像の大きさちょうどの pdf を得られます。<br>
+tikz/PGF で作成した図画を含んだソースファイルから、図画のみを別ファイルに抽出できます。<br>
+dvips または pdfTeX を用いると、ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。<br>
+dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後に適用することで画像の大きさちょうどの pdf を得られます。<br>
 
 - ソースコードに追加記述
 1. プリアンブルに追加
@@ -776,11 +780,11 @@ $platex --jobname=filename-fig1 filename.tex~
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [TikzEdt](http://www.tikzedt.org/)
+- [TikZiT](http://tikzit.sourceforge.net/)
 - [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入、メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
 - [GeoGebra](http://www.geogebra.org/cms/ja)
     - GeoGebraの使い方…[GeoGebra日本](https://sites.google.com/site/geogebrajp/)
-- [TikZiT](http://tikzit.sourceforge.net/)
 - [Jpdgdraw](http://www.dickimaw-books.com/apps/jpgfdraw/)
 - [Sketch -- A 3D Scene Description Translator](http://www.frontiernet.net/~eugene.ressler/)
 - [ePiX](http://mathcs.holycross.edu/~ahwang/epix/ePiX.html)
