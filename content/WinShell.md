@@ -51,7 +51,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 を参照．<br>
 
-WinShell 3.3.2.5 以降は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
+WinShell 3.3.2.6 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
 
 ### スクリーンショット {#l2305277}
 
@@ -78,7 +78,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → 別の統合環境・エディタを使用する {#g47585a4}
 
-WinShell 3.3.2.6 で，エンコーディングを UTF-8 に変更し
+エンコーディングを UTF-8 に変更して
 
 ***
 
@@ -127,8 +127,6 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 
 ***
 
-エンコーディングが ShiftJIS (Shift_JIS) の場合では発生しませんでした．
-
 UTF-8 を使用したい方は
 
 - [TeXstudio](/TeXstudio/)
@@ -144,11 +142,11 @@ UTF-8 を使用したい方は
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
-### Adobe Reader XI で PDF ファイルが表示できない → WinShell 3.3.2.5 以降にアップデートしてレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを AcroViewR11 に修正 {#s2ec7c9c}
+### Adobe Reader XI で PDF ファイルが表示できない → WinShell 3.3.2.6 にアップデートしてレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを AcroViewR11 に修正 {#s2ec7c9c}
 
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
-WinShell 3.3.2.5 以降の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
@@ -317,12 +315,12 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 > </table>
 >
 
-1行目の文字群は2byte目が0x7b( { )になっており、2行目の文字群は2byte目が0x7d( } )となっているため、エラーが発生します。<br>
-これらの文字群を使用するとWinShellのBibTeXのフロントエンド編集での読み込みもできません。(WinShell3.3.0.3,WinShell3.3.0.6,WinShell3.3.1.2で確認)<br>
+1行目の文字群は 2-byte 目が 0x7b ( { ) になっており、2行目の文字群は 2-byte 目が 0x7d ( } ) となっているため、エラーが発生します。<br>
+これらの文字群を使用すると WinShell の BibTeX のフロントエンド編集での読み込みもできません。<br>
 (追記：2010/01/20)<br>
 また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
-対策として、上記文字群が含まれているBibTeX項目を、別のbibファイルに隔離して２つのbibファイルを使い分けると少し使い勝手が向上します。<br>
-その際、隔離したbibが_Unknownにまとめて表示されれば、WinShellが本来意図して付けたBibTeXの機能を使用できるかと思います。<br> <!-- ちなみに確認OSはXP 32ビットProfessional版 SP2 -->
+対策として、上記文字群が含まれている BibTeX 項目を、別の bib ファイルに隔離して2つの bib ファイルを使い分けると少し使い勝手が向上します。<br>
+その際、隔離した bib が \_Unknown にまとめて表示されれば、WinShell が本来意図して付けた BibTeX の機能を使用できるかと思います。<br> <!-- ちなみに確認 OS は XP SP2 32ビット Professional 版 -->
 
 【参考】
 
