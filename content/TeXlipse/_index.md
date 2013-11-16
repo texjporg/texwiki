@@ -153,7 +153,7 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 名前(N):　　　　　<ins>TeXlipse Update Site</ins><br>
 ロケーション(L): <ins>&#x68;ttp://texlipse.sourceforge.net</ins>
