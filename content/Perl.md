@@ -43,3 +43,8 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 ```
 
 がシステム環境変数 Path に追加されます．
+
+### TeX関連モジュール {#y91d7e77}
+
+- [TeX-DVI - CPAN](http://search.cpan.org/~janpaz/TeX-DVI-1.01/)
+- [TeX-XDV-Parse - CPAN](http://search.cpan.org/~jrm/TeX-XDV-Parse-0.02/)
