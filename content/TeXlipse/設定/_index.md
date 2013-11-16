@@ -20,7 +20,7 @@ pukiwiki: "TeXlipse/設定"
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　一般<br>
@@ -34,24 +34,59 @@ pukiwiki: "TeXlipse/設定"
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-　コンテンツ・タイプ
-
-　各ファイル・タイプに関連づけられたエディターについては、<span style="color:#1188FF;"><ins>'ファイルの関連づけ'</ins></span> を参照してください。<br>
-　コンテンツ・タイプ(C)：<br>
-　　　　JAR コンテンツ<br>
-　　　　Java クラス・ファイル<br>
-　　　　Word ドキュメント<br>
-　　◢　テキスト<br>
-　　　　…<br>
-　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX File　</span><br>
-　　　　…<br>
-　　▷　バイナリー・ファイル<br>
+UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF-8 を入力して \[　　　　　更新(U)　　　　　\] をクリックします．
 
 ***
 
-UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF-8 を入力して \[　　　　　更新(U)　　　　　\] をクリックします．
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　<strong>コンテンツ・タイプ</strong>
+
+　各ファイル・タイプに関連づけられたエディターについては、<span style="color:#1188FF;"><ins>'ファイルの関連づけ'</ins></span> を参照してください。<br>
+　コンテンツ・タイプ(C)：<br>
+　　　　Java クラス・ファイル<br>
+　　　　Word ドキュメント<br>
+　　◢　テキスト<br>
+　　　　▷　JAR マニフェスト・ファイル<br>
+　　　　　　Java ソース・ファイル<br>
+　　　　▷　Java プロパティー・ファイル<br>
+　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX File　</span><br>
+　　　　▷　XML<br>
+　　　　　　ランタイム・ログ・ファイル<br>
+　　　　　　リファクタリング・ヒストリー・インデックス<br>
+　　　　　　リファクタリング・ヒストリー・ファイル<br>
+
+<br>
+
+<br>
+
+<br>
+
+　ファイルの関連付け(F)：<br>
+　&#x2a;.cls (ロック)<br>
+　&#x2a;.ltx (ロック)<br>
+　&#x2a;.sty (ロック)<br>
+　&#x2a;.tex (ロック)<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　デフォルト・エンコード(E)：<ins>UTF-8</ins>
+
+***
 
 ## ビルダー設定 {#ad4786b7}
 
@@ -75,7 +110,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　一般<br>
@@ -90,7 +125,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>スペル</strong><br>
 
@@ -98,7 +133,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 <br>
 
-　　使用するエンジンのスペルを選択(U): <span style="color:Black;background-color:#EEEEEE;">\[Latex　　　　　　　　　▼\]</span><br>
+　　使用するエンジンのスペルを選択(U): <span style="color:Black;background-color:#EEEEEE;">\[Latex　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 
 ***
 
@@ -114,7 +149,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　Texlipse<br>
@@ -129,7 +164,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>スペル・チェッカー</strong><br>
 
@@ -166,7 +201,7 @@ TeX ファイル編集中に改行すると Parsing が行われ，間違った�
 
 ***
 
-コンソールビューを表示させておくと，コンパイル時のメッセージ (コマンド プロンプトでコンパイルした場合に表示されるメッセージ）が Eclipse 内で確認できます．
+コンソールビューを表示させておくと，コンパイル時のメッセージ (Windows PowerShell またはコマンド プロンプトでコンパイルした場合に表示されるメッセージ）が Eclipse 内で確認できます．
 
 エラーが発生した場合に手がかりとなるので，表示できるようにしておきましょう．
 
@@ -176,7 +211,7 @@ TeX ファイル編集中に改行すると Parsing が行われ，間違った�
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　Texlipse<br>
@@ -239,7 +274,7 @@ makeidx パッケージが作成するテンポラリーファイルを tmp デ�
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 名前(N):　　　　　<ins>Vrapper Update Site</ins><br>
 ロケーション(L): <ins>&#x68;ttp://vrapper.sourceforge.net/update-site/stable</ins>
