@@ -35,29 +35,23 @@ pukiwiki: "iOS"
 
 ### フリーウェア (無料) {#x09967e4}
 
-- [iVerbTeX](http://itunes.apple.com/jp/app/iverbtex/id560869163)
+- [iVerbTeX](https://itunes.apple.com/jp/app/iverbtex/id560869163)
 
 ### シェアウェア・製品 {#na04d581}
 
-- [TeX Writer](http://www.texwriterapp.com/) (シェアウェア)
+- [TeX Writer](https://itunes.apple.com/jp/app/tex-writer/id552717222) (シェアウェア)
     - TeX Writer はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
     - [BXjscls](/BXjscls/), [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば pdflatex で日本語文書がローカルでコンパイルできます．
-    - [iTunes App Store - TeX Writer - iOS LaTeX Editor and Compiler](http://itunes.apple.com/jp/app/tex-writer/id552717222)
+    - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
     - [FAST Intelligence](http://www.litchie.com/)
-- [Texpad](https://www.texpadapp.com/) (シェアウェア)
+- [Texpad](https://itunes.apple.com/jp/app/texpad-latex-editor/id550419159) (シェアウェア)
     - Texpad はインターネットに接続しなくても iOS で TeX や LaTeX ドキュメントのコンパイルが可能です．
-    - [iTunes App Store - Texpad : LaTeX editor](http://itunes.apple.com/jp/app/texpad-latex-editor/id550419159)
+    - [https://www.texpadapp.com/](https://www.texpadapp.com/)
     - [Texpad -- blog](https://www.texpadapp.com/blog/)
     - [Texpad-API.framework](https://github.com/vallettaventures/Texpad-API)
     - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
-- [Tex Touch](http://www.vancapy.com/) (シェアウェア)
-    - [iTunes App Store - Tex Touch](http://itunes.apple.com/jp/app/tex-touch/id377627321)/[iTunes App Store - Tex Touch for iPhone](http://itunes.apple.com/jp/app/tex-touch-for-iphone/id406891012)
-    - [Tex Timer](http://www.vancapy.com/textouch/setup/)
-    - [TeX Cloud](http://www.vancapy.com/textouch/texcloud/)
-        - [Tex Timer Single Doc(beta0.1)の利用【PC ～ iPadでTeX】](http://kiyomidais.cocolog-nifty.com/blog/2013/03/textimer.html)
-        - [iPad で LaTeX ?!](http://skalldan.wordpress.com/2012/04/11/ipad-%E3%81%A7-latex/)
-- [iVerbTeX Pro](http://itunes.apple.com/jp/app/iverbtex-pro/id560872078) (シェアウェア)
+- [iVerbTeX Pro](https://itunes.apple.com/jp/app/iverbtex-pro/id560872078) (シェアウェア)
 
 ## PDF ビューア {#cf5b731d}
 
