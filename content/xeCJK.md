@@ -171,6 +171,40 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
 
+#### BXjscls を使用する場合 {#zd6d9a92}
+
+以下の様な文書を作成して UTF-8 で保存します．<br>
+
+***
+
+- neko.tex
+
+***
+
+```
+\documentclass[xelatex,jadriver=standard]{bxjsarticle}
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+***
+
+XeLaTeX を実行します．<br>
+
+```
+xelatex neko.tex
+```
+
+エラーが発生する場合は BXjscls を最新版にアップデートします．<br>
+
 #### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
 
 ```
