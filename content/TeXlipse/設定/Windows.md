@@ -11,7 +11,7 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## ビルダー設定 {#j3f79297}
+## ビルダー設定 <a id="builder"></a> {#j3f79297}
 
 デフォルトでは英語版のビルド・コマンドが設定されています．
 
@@ -23,7 +23,7 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　Texlipse<br>
@@ -44,9 +44,9 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　ビルダー設定
+　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
 　　Latex program　　　(C:\texlive\2013\bin\win32\latex.exe または C:\w32tex\bin\latex.exe または C:\w32tex\bin64\latex.exe)<br>
@@ -76,7 +76,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ platex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins> または <ins>C:\w32tex\bin\platex.exe</ins> または <ins>C:\w32tex\bin64\platex.exe</ins><br>
@@ -90,7 +90,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ uplatex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\uplatex.exe</ins> または <ins>C:\w32tex\bin\uplatex.exe</ins> または <ins>C:\w32tex\bin64\uplatex.exe</ins><br>
@@ -107,7 +107,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\pdflatex.exe</ins> または <ins>C:\w32tex\bin\pdflatex.exe</ins> または <ins>C:\w32tex\bin64\pdflatex.exe</ins><br>
@@ -124,7 +124,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\xelatex.exe</ins> または <ins>C:\w32tex\bin\xelatex.exe</ins> または <ins>C:\w32tex\bin64\xelatex.exe</ins><br>
@@ -142,7 +142,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ lualatex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\lualatex.exe</ins> または <ins>C:\w32tex\bin\lualatex.exe</ins> または <ins>C:\w32tex\bin64\lualatex.exe</ins><br>
@@ -156,7 +156,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ luajitlatex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\luajitlatex.exe</ins> または <ins>C:\w32tex\bin\luajitlatex.exe</ins> または <ins>C:\w32tex\bin64\luajitlatex.exe</ins><br>
@@ -174,7 +174,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ pbibtex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\pbibtex.exe</ins> または <ins>C:\w32tex\bin\pbibtex.exe</ins> または <ins>C:\w32tex\bin64\pbibtex.exe</ins><br>
@@ -188,7 +188,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ upbibtex の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\upbibtex.exe</ins> または <ins>C:\w32tex\bin\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins><br>
@@ -202,7 +202,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 ***
 
 ■ bibtexu の場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\bibtexu.exe</ins> または <ins>C:\w32tex\bin\bibtexu.exe</ins> または <ins>C:\w32tex\bin64\bibtexu.exe</ins><br>
@@ -219,7 +219,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\biber.exe</ins> または <ins>C:\w32tex\bin\biber.exe</ins><br>
@@ -236,7 +236,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins><br>
@@ -253,7 +253,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\dvips.exe</ins> または <ins>C:\w32tex\bin\dvips.exe</ins> または <ins>C:\w32tex\bin64\dvips.exe</ins><br>
@@ -270,7 +270,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin64\dvipdfmx.exe</ins><br>
@@ -287,7 +287,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
@@ -304,7 +304,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins><br>
@@ -321,9 +321,9 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　ビルダー設定
+　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
 　　Latex program　　　(C:\texlive\2013\bin\win32\platex.exe または C:\w32tex\bin\platex.exe または C:\w32tex\bin64\platex.exe)<br>
@@ -344,7 +344,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 設定を反映させるため \[適用(A)\] <strong>&gt;</strong> \[OK\] をクリックします．
 
-## ビューアー設定 {#g567cc73}
+## ビューアー設定 <a id="viewer"></a> {#g567cc73}
 
 PDF ファイルを表示するための設定をします．
 
@@ -354,7 +354,7 @@ PDF ファイルを表示するための設定をします．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　◢　Texlipse<br>
@@ -373,9 +373,9 @@ PDF ファイルを表示するための設定をします．
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　ビューアー設定
+　<strong>ビューアー設定</strong>
 
 　このページは使用可能なビューアーのためにデフォルトを構成します。プレビューがエディターから起動されたと<br>
 　き、現在の出力に合う最も優先度の高いビューアーが選択されます。<br>
@@ -412,7 +412,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　 </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　…<br>
 　　　<span style="color:Black;background-color:#DAEAFF;">　Pdf4Eclipse　</span><br>
@@ -421,14 +421,14 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 　General settings for viewing PDF documents<br>
 　☑ Enable pseudo continuous scrolling(E)<br>
 　　PDF renderer (document must be reopend for change to take effect)<br>
 　　◯ SUN renderer (より速い)<br>
 　　◯ JPedal renderer (higher compatibility)<br>
-　　<span style="color:#3333CC;">◎</span> JPedal renderer for some document types that can not be displayed by SUN renderer, otherwise SUN renderer<br>
+　　(●) JPedal renderer for some document types that can not be displayed by SUN renderer, otherwise SUN renderer<br>
 
 ***
 
@@ -440,7 +440,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
@@ -455,8 +455,8 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -480,7 +480,7 @@ TeXworks を使用する場合は，
 ***
 
 ■ SumatraPDF を前面に表示したい場合<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>Modify existing viewer configuration</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
@@ -495,8 +495,8 @@ TeXworks を使用する場合は，
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -507,7 +507,7 @@ TeXworks を使用する場合は，
 
 ■ SumatraPDF を前面に表示したくない場合<br>
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>Modify existing viewer configuration</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
@@ -522,8 +522,8 @@ TeXworks を使用する場合は，
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -546,7 +546,7 @@ SumatraPDF を使用する場合は，
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Mozilla Firefox</ins><br>
@@ -561,8 +561,8 @@ SumatraPDF を使用する場合は，
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -585,7 +585,7 @@ Mozilla Firefox (pdf.js) を使用する場合は，
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Chrome PDF Viewer</ins><br>
@@ -600,8 +600,8 @@ Mozilla Firefox (pdf.js) を使用する場合は，
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <br>
 　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -624,7 +624,7 @@ Chrome PDF Viewer を使用する場合は，
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　 <span style="color:White;"><strong>Modify existing viewer configuration</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>Modify existing viewer configuration</strong></span> 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
@@ -639,8 +639,8 @@ Chrome PDF Viewer を使用する場合は，
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocClose("%fullfile")\]</ins><br>
 　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
-　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
@@ -659,9 +659,9 @@ Adobe Reader を使用する場合は，
 
 ***
 
-<span style="color:Black;background-color:#473EBE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>◛</strong></span> \]<ins></span><span style="color:Black;background-color:#373EAE;"></ins>\[ <span style="color:White;"><strong>▭</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　ビューアー設定
+　<strong>ビューアー設定</strong>
 
 　このページは使用可能なビューアーのためにデフォルトを構成します。プレビューがエディターから起動されたと<br>
 　き、現在の出力に合う最も優先度の高いビューアーが選択されます。<br>
