@@ -276,7 +276,7 @@ SVN<br>
 
 エディタ<br>
 フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
-フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 既定のフォントエンコーディング:<br>
 　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
 字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
@@ -367,8 +367,8 @@ SVN<br>
 
 エディタ<br>
 フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
-フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
-行間隔:　　　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[◆\]</ins><br>
+フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
+行間隔:　　　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
 　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
 字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
