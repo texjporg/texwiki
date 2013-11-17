@@ -46,7 +46,7 @@ Windows, OS X, Linux
 ## メニューの日本語化 {#p0f8c581}
 
 - [【Windowsアプリケーション】Sublime Text 2 メニュー日本語化](http://blog.huwy.org/article/292827228.html)
-    - Mac でも日本語化できるみたいです
+    - Mac, Linux でも日本語化できるみたいです
 
 ## [LaTeXTools (LaTeX Plugin for Sublime Text 2 and 3)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
 
@@ -69,15 +69,6 @@ Windows, OS X, Linux
 ### Linux {#x47ef3df}
 
 - [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
-
-## [LaTeXing](http://www.latexing.com/) {#u85131e8}
-
-- [LaTeXing - LaTeX plugin for Sublime Text 2/3](http://www.latexing.com/)
-- [http://docs.latexing.com/](http://docs.latexing.com/)
-
-### Windows {#xf9437a8}
-
-- [Sublime Text 3 + LaTeXingでTeX環境を作ってみた。](http://isiz.hateblo.jp/entry/2013/08/22/Sublime_Text_3_%2B_LaTeXing%E3%81%A7TeX%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E3%80%82), [Error loading syntax file on Sublime Text 3](http://isiz.hateblo.jp/entry/2013/08/23/Error_loading_syntax_file_on_Sublime_Text_3)
 
 ## [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) {#je94e188}
 
