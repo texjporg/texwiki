@@ -108,7 +108,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 
 ***
 
-<span style="color:Black;background-color:#FFF100;"><ins>　<span style="color:#FF4000;"><strong>SumatraPDF のオプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#FFF100;background-color:#FFF100;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>SumatraPDF のオプション</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 ...<br>
 　　逆順検索コマンドラインの設定<br>
