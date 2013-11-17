@@ -125,6 +125,10 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
+使用するエンジンのスペルで Latex を選択します．<br>
+
+***
+
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>スペル</strong><br>
