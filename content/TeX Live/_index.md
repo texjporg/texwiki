@@ -319,7 +319,9 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 [MinGW - TeX Wiki#TeX Live](/MinGW/#texlive) を参照．<br>
 
-### Beyond Linux From Scratch {#pd2ee686}
+### Linux {#ue7a2b2a}
+
+#### Beyond Linux From Scratch {#pd2ee686}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/texlive.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/texlive.html)
