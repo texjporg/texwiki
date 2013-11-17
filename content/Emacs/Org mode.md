@@ -143,9 +143,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -177,52 +177,36 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\fi
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \\ifdefined\\XeTeXversion
-    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\ifdefined\\directlua
-      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\else
-      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\fi
-  \\fi
+  \ifdefined\pdfoutput
+    \ifnum\pdfoutput=0
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \else
+      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \fi
+  \else
+    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
   \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+      \\hypersetup{colorlinks=true}
   \\else
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+    \\ifdefined\\directlua
+      \\hypersetup{pdfencoding=auto,colorlinks=true}
+    \\else
+      \\hypersetup{unicode,colorlinks=true}
+    \\fi
   \\fi
-\\fi
-\\ifdefined\\directlua
-  \\hypersetup{pdfencoding=auto,colorlinks=true}
-\\else
-  \\usepackage[whole,autotilde]{bxcjkjatype}
-  \\hypersetup{unicode,colorlinks=true}
-\\fi
-\\ifdefined\\XeTeXversion
-  \\usepackage{zxjatype}
-  \\setjamainfont{ipaexm.ttf}
-  \\setjasansfont{ipaexg.ttf}
-  \\setjamonofont{ipaexg.ttf}
-\\fi
-\\ifdefined\\directlua
-  \\usepackage{luatexja}
 \\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
@@ -287,9 +271,9 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -321,52 +305,36 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\fi
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \\ifdefined\\XeTeXversion
-    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\ifdefined\\directlua
-      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\else
-      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\fi
-  \\fi
+  \ifdefined\pdfoutput
+    \ifnum\pdfoutput=0
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \else
+      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \fi
+  \else
+    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
   \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+      \\hypersetup{colorlinks=true}
   \\else
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+    \\ifdefined\\directlua
+      \\hypersetup{pdfencoding=auto,colorlinks=true}
+    \\else
+      \\hypersetup{unicode,colorlinks=true}
+    \\fi
   \\fi
-\\fi
-\\ifdefined\\directlua
-  \\hypersetup{pdfencoding=auto,colorlinks=true}
-\\else
-  \\usepackage[whole,autotilde]{bxcjkjatype}
-  \\hypersetup{unicode,colorlinks=true}
-\\fi
-\\ifdefined\\XeTeXversion
-  \\usepackage{zxjatype}
-  \\setjamainfont{ipaexm.ttf}
-  \\setjasansfont{ipaexg.ttf}
-  \\setjamonofont{ipaexg.ttf}
-\\fi
-\\ifdefined\\directlua
-  \\usepackage{luatexja}
 \\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
@@ -430,9 +398,9 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvips]{jsarticle}
+  \\documentclass[12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -464,52 +432,36 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\ifdefined\\ucs
-    \\documentclass[uplatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\documentclass[platex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\fi
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \\ifdefined\\XeTeXversion
-    \\documentclass[xelatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \\else
-    \\ifdefined\\directlua
-      \\documentclass[lualatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\else
-      \\documentclass[pdflatex,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \\fi
-  \\fi
+  \ifdefined\pdfoutput
+    \ifnum\pdfoutput=0
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \else
+      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \fi
+  \else
+    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
+\\usepackage{graphicx}
+\\usepackage{hyperref}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
   \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+      \\hypersetup{colorlinks=true}
   \\else
-    \\usepackage{graphicx}
-    \\usepackage{hyperref}
+    \\ifdefined\\directlua
+      \\hypersetup{pdfencoding=auto,colorlinks=true}
+    \\else
+      \\hypersetup{unicode,colorlinks=true}
+    \\fi
   \\fi
-\\fi
-\\ifdefined\\directlua
-  \\hypersetup{pdfencoding=auto,colorlinks=true}
-\\else
-  \\usepackage[whole,autotilde]{bxcjkjatype}
-  \\hypersetup{unicode,colorlinks=true}
-\\fi
-\\ifdefined\\XeTeXversion
-  \\usepackage{zxjatype}
-  \\setjamainfont{ipaexm.ttf}
-  \\setjasansfont{ipaexg.ttf}
-  \\setjamonofont{ipaexg.ttf}
-\\fi
-\\ifdefined\\directlua
-  \\usepackage{luatexja}
 \\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
@@ -522,6 +474,8 @@ latexmk は TeX Live に含まれています．<br>
 
 ### 使い方 {#a6515cd5}
 
+#### jsarticle で (u)platex + dvipdfmx を使用する場合 {#q8639193}
+
 org ファイルの先頭に
 
 ```
@@ -531,6 +485,44 @@ org ファイルの先頭に
 ```
 
 を追加します．
+
+#### jsarticle で (u)platex + dvips + ps2pdf を使用する場合 {#c4685629}
+
+org ファイルの先頭に
+
+```
+#+TITLE: hoge
+#+AUTHOR: fuga
+#+LATEX_CLASS: jsarticle-dvips
+```
+
+を追加します．
+
+#### ltjsarticle で lua(jit)latex を使用する場合 {#of5b23e4}
+
+org ファイルの先頭に
+
+```
+#+TITLE: hoge
+#+AUTHOR: fuga
+#+LATEX_CLASS: ltjsarticle
+```
+
+を追加します．
+
+#### bxjsarticle で (u)platex + dvipdfmx, pdflatex, lua(jit)latex, xelatex を使用する場合 {#mc51aa00}
+
+org ファイルの先頭に
+
+```
+#+TITLE: hoge
+#+AUTHOR: fuga
+#+LATEX_CLASS: bxjsarticle
+```
+
+を追加します．
+
+#### ファイルの出力 {#nee250e6}
 
 C-c C-e l l で LaTeX ファイルを出力します．<br>
 C-c C-e l p で PDF ファイルを出力します．<br>
