@@ -15,6 +15,12 @@ pukiwiki: "Windows PowerShell"
 
 Windows PowerShell はコマンドラインシェルまたはオブジェクト指向プログラミングが可能なスクリプト言語です．
 
+- [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
+    - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
+- [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
+- [Windows PowerShell Language Specification Version 3.0](http://www.microsoft.com/en-us/download/details.aspx?id=36389)
+- [Windows PowerShell Language Specification Version 2.0](http://www.microsoft.com/en-us/download/details.aspx?id=9706)
+
 ## インストール {#o9ec2561}
 
 Windows 8.1 には Windows PowerShell 4.0 が標準搭載されています．<br>
@@ -23,10 +29,6 @@ Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br>
 
 Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は [Windows Management Framework 4.0](http://www.microsoft.com/ja-jp/download/details.aspx?id=40855) をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
-
-- [Microsoft スクリプト センター | TechNet](http://technet.microsoft.com/ja-jp/scriptcenter)
-    - [Windows PowerShell でのスクリプティング](http://technet.microsoft.com/ja-jp/scriptcenter/powershell.aspx)
-- [Scripting with Windows PowerShell](http://www.microsoft.com/powershell)
 
 ## 使い方 {#f77eb1cd}
 
@@ -138,3 +140,4 @@ Windows PowerShell のオープンソース実装．<br>
 - [IT技術者が困ったときに見るブログ](http://pollux.tea-nifty.com/blog/)
 - [生産性を向上できる Windows PowerShell に関する簡単なヒント](http://gallery.technet.microsoft.com/scriptcenter/cc89a8ff-8e4c-44f9-a47c-d1b8e46f788a)
 - [How to remove (all) Windows 8 apps using PowerShell](http://www.ghacks.net/2013/08/20/how-to-remove-all-windows-8-apps-using-powershell/)
+- [Learn Windows PowerShell 3 in a Month of Lunches, 2nd Edition](http://it-ebooks.info/book/1539/)
