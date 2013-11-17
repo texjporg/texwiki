@@ -82,6 +82,7 @@ EasyTeX/使い方 を参照．
 
 ## 関連リンク {#p8488be5}
 
+- [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=EasyTeX](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=EasyTeX)
 - [0からTex,EasyTexのインストール (Windows7 32bit)](http://d.hatena.ne.jp/Kshi_Kshi/20110111)
 - [Easy TeXでbibTeXをつかう](http://yumetaminn.blog91.fc2.com/blog-entry-305.html)
 - [easychair というクラスファイルの使い方](http://ameblo.jp/8713-blog/archive1-201201.html)
