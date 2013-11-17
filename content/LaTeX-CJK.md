@@ -20,6 +20,10 @@ pukiwiki: "LaTeX-CJK"
 
 CJK パッケージは [pdfLaTeX](/pdfTeX/) で CJK 文書を作成するためのパッケージです．<br>
 
+### ChangeLog {#j34716cd}
+
+- [http://git.savannah.gnu.org/gitweb/?p=cjk.git](http://git.savannah.gnu.org/gitweb/?p=cjk.git)
+
 ### インストール {#fb6c9457}
 
 #### TeX Live {#o07a519a}
