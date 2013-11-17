@@ -13,6 +13,8 @@ pukiwiki: "TeX Live Utility"
 
 <!-- #ref(http://community.sabayon.org/ugc/app-text/texlive-core/tex-live-utility-icon.png,right,around,nolink,TeX Live Utility) -->
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ### TeX Live Utility とは {#n3457ddb}
 
 TeX Live のパッケージ管理などができる TeX Live Manager（tlmgr）の OS X ネイティブの GUI ユーティリティ。<br>
