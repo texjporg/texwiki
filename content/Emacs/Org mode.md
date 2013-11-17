@@ -123,9 +123,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -179,15 +179,15 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
                "\\ifdefined\\kanjiskip
   \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \ifdefined\pdfoutput
-    \ifnum\pdfoutput=0
+  \\ifdefined\\pdfoutput
+    \\ifnum\\pdfoutput=0
       \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \else
+    \\else
       \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \fi
-  \else
+    \\fi
+  \\else
     \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -251,9 +251,9 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -307,15 +307,15 @@ latexmk は TeX Live に含まれています．<br>
                "\\ifdefined\\kanjiskip
   \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \ifdefined\pdfoutput
-    \ifnum\pdfoutput=0
+  \\ifdefined\\pdfoutput
+    \\ifnum\\pdfoutput=0
       \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \else
+    \\else
       \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \fi
-  \else
+    \\fi
+  \\else
     \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -378,9 +378,9 @@ latexmk は TeX Live に含まれています．<br>
 (add-to-list 'org-latex-classes
              '("jsarticle"
                "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\else
-  \\documentclass[12pt,a4paper,papersize,dvipdfmx]{jsarticle}
+  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -434,15 +434,15 @@ latexmk は TeX Live に含まれています．<br>
                "\\ifdefined\\kanjiskip
   \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
 \\else
-  \ifdefined\pdfoutput
-    \ifnum\pdfoutput=0
+  \\ifdefined\\pdfoutput
+    \\ifnum\\pdfoutput=0
       \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \else
+    \\else
       \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-    \fi
-  \else
+    \\fi
+  \\else
     \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
-  \fi
+  \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
