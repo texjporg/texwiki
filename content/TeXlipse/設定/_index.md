@@ -137,7 +137,7 @@ UTF-8 を使用する場合は デフォルト・エンコード(E)： で，UTF
 
 ***
 
-[dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
+[http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texlipse/dictionaries/](http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texlipse/dictionaries/) などから辞書をダウンロードします．
 
 辞書ファイルを展開します．
 
