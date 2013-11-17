@@ -334,3 +334,7 @@ WinShell/設定 を参照．
 ## 使い方 {#n7874abc}
 
 WinShell/使い方 を参照．
+
+## 関連リンク {#i06febca}
+
+- [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
