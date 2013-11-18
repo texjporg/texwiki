@@ -51,8 +51,6 @@ Windows 8.1, 8, 7, Vista, XP
 
 を参照．<br>
 
-WinShell 3.3.2.6 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
-
 ### スクリーンショット {#l2305277}
 
 [![WinShell 3 の新しい画面](http://www.winshell.org/screenshots/main_small.png)](http://www.winshell.org/screenshots/main.png) [![Linux で動作する WinShell 3](http://www.winshell.org/screenshots/Linux_WinShell_small.png)](http://www.winshell.org/screenshots/Linux_WinShell.png)
@@ -146,6 +144,7 @@ UTF-8 を使用したい方は
 
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
+WinShell 3.3.2.6 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
 WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
