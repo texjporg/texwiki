@@ -23,6 +23,7 @@ LaTeXiT は数式エディタです．<br>
     - [Downloads](http://www.chachatelier.fr/latexit/latexit-downloads.php)
         - [Beta](http://www.chachatelier.fr/latexit/latexit-beta.php)
     - [FAQ](http://www.chachatelier.fr/latexit/latexit-faq.php)
+- [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
 
 ### 動作環境 {#e0e2eaf2}
 
