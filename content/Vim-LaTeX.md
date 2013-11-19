@@ -44,7 +44,11 @@ Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentati
 
 ## [不具合](http://sourceforge.net/tracker/?group_id=52322&atid=466456) {#df88e09f}
 
-### MacVim-KaoriYa で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → 回避策：.gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
+### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → KeyRemap4MacBook を使用する {#p586f5da}
+
+- [MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる](https://twitter.com/inaka_calm/status/402774566134480896) → [Mac で KeyRemap4MacBook を使って IME をノーマルモードで必ずオフにする](http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/)
+
+### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → .gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
 - [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → .gvimrc に set imdisable
 
