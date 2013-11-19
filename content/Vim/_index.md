@@ -118,10 +118,10 @@ Vim は，チャリティウェアです．<br>
 
 ### その他のプラグイン {#g8a1b1b6}
 
-- [Vim-LaTeX](/Vim-LaTeX/)
-- Automatic LaTeX Plugin for Vim (ATP)
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
+- [Vim-LaTeX](/Vim-LaTeX/)
+- Automatic LaTeX Plugin for Vim (ATP)
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
@@ -163,12 +163,6 @@ Vim は，チャリティウェアです．<br>
     - [watchr](https://github.com/mynyml/watchr)
 - [Vim - ConTeXt wiki](http://sandbox.contextgarden.net/Vim)
 - [tex_autoclose.vim : TeX / LaTeX ftplugin to automatically close environments ](http://www.vim.org/scripts/script.php?script_id=920)
-- [text editors &laquo; PhilTeX](http://www.charlietanksley.net/philtex/category/text-editors/)
-    - [Vim for LaTeX, part 1](http://www.charlietanksley.net/philtex/vim-for-latex-part-1/)
-    - [Vim for LaTeX, part 2](http://www.charlietanksley.net/philtex/vim-for-latex-part-2/)
-    - [Vim for LaTeX, part 3](http://www.charlietanksley.net/philtex/vim-for-latex-part-3/)
-    - [Vim for LaTeX, part 4](http://www.charlietanksley.net/philtex/vim-for-latex-part-4/)
-- [vim-live-latex-preview (LaTeX in (g)Vim with live update-as-you-type PDF preview &laquo; PhilTeX)](http://www.charlietanksley.net/philtex/vim-live-latex-preview/)
 - [Writing LaTeX files with GVim &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/2010/10/07/writing-latex-files-with-gvim/)
 
 ## SumatraPDF との連携 {#tf5a143c}
