@@ -274,6 +274,7 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/xetex-w64.tar.xz　　　　　　　無い　　　8.1MB<br>
 　　　　 ∣☑xetex-w32.tar.xz　　　　　　　　　　　無い　　　15.8MB<br>
 　　　　 ∣☑xindy-w32.tar.xz　　　　　　　　　　　無い　　　1.6MB<br>
+　　　　 ∣☑xymtex.tar.xz　　　　　　　　　　　　　無い　　　11MB<br>
 　　　　 ∣☑xypic.tar.xz　　　　　　　　　　　　　　無い　　　4.1MB<br>
 
 ***
