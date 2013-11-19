@@ -17,24 +17,28 @@ pukiwiki: "OTF"
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
-和文 OpenType フォントを使うためのパッケージです。
-
+和文 OpenType フォントを使うためのパッケージです。<br>
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
-など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。 <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
+など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br> <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
+
+- [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
+- [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
+
+### 特徴 {#w1bac38c}
 
 - OTF パッケージは5書体以上を扱うことができます。
 - 和文フォントのメトリックが改訂されました。
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です
-    （CID 番号に完全対応している DVIware
+- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。<br>
+    CID 番号に完全対応している DVIware
     で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
-    使用する場合には従属欧文およびプロポーショナル仮名を使用可）。
-
-- TeX Live では japanese-otf パッケージ，japanese-otf-uptex パッケージがデフォルトでインストールされます．バージョンはベータ版 ([2012/04/11 v1.7b5](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+    使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。<br>
 
 ### ChangeLog {#k32bef0c}
+
+[変更履歴](http://psitau.kitunebi.com/otf.html) を参照．<br>
 
 #### japanese-otf {#b26e364e}
 
@@ -55,6 +59,7 @@ pukiwiki: "OTF"
 ### TeX Live {#da8ed89a}
 
 TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+バージョンはベータ版 ([2012/04/11 v1.7b5 psitau, u0.11 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### W32TeX {#z4ee6291}
 
@@ -101,10 +106,11 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 まず OpenType フォントを持っていなくても試せる方法です。<br>
 Ryimun-Light と
 GothicBBB-Meduim は
-dvipdfmx では埋め込まれないフォントであることと，
-埋め込まれてない
-Ryumin-Light と GothicBBB-Medium を [Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
-が適切なフォントに代替して表示・印刷することを利用する方法です。<br>
+dvipdfmx では埋め込まれないフォントです。<br>
+[Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
+が埋め込まれてない
+Ryumin-Light と GothicBBB-Medium
+を適切なフォントに代替して表示・印刷することを利用します。<br>
 dvipdfmx
 および Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
 (Adobe Reader XI Font Packs
@@ -137,9 +143,8 @@ Adobe Reader 9.1 Font Packs
 
 ***
 
-これを “hoge.tex” という名前で保存します。
-
-Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。
+これを “hoge.tex” という名前で保存します。<br>
+Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。<br>
 
 - TeX Live の場合
 
@@ -173,13 +178,14 @@ open hoge.pdf
 xdg-open hoge.pdf
 ```
 
-PDF ファイルが Adobe Reader/Acrobat に関連付けされている場合は hoge.pdf が Adobe Reader/Acrobat で開かれて表示されると思います。
+PDF ファイルが Adobe Reader/Acrobat に関連付けされている場合は hoge.pdf が Adobe Reader/Acrobat で開かれて表示されると思います。<br>
 
 Adobe Reader/Acrobat XI をお使いの方が多くなりましたので，最新の
-Adobe-Japan1-6 の文字を表示させて見ましょう。OTF パッケージは
-ベータ版を使用します。
+Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
+OTF パッケージは
+ベータ版を使用します。<br>
 
-テスト用の pLaTeX ソースは，例えば次のものを用いてみます。
+テスト用の pLaTeX ソースは，例えば次のものを用いてみます。<br>
 
 ***
 
@@ -216,19 +222,21 @@ Adobe-Japan1-6 で追加された文字を使っています。コマンド処�
 ### フォントを埋め込むには {#hf05d89a}
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので
-軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。
+軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。<br>
 実際，上の pLaTeX ファイルに “\gtfamily” と書き込んで
 全部をゴシック体にすると，Adobe Reader/Acrobat X で開いた場合に
-「土口の吉」が明朝体になってしまうことがあります。
+「土口の吉」が明朝体になってしまうことがあります。<br>
 
-どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
-そのためには OpenType フォントが必要です。
+どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
+そのためには OpenType フォントが必要です。<br>
 
 #### Microsoft Windows NT 6.x系 (8.1, 8, 7) の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
+シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。<br>
+C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。<br>
 
-Windows PowerShell, コマンド プロンプトで次のようにして処理します。
+Windows PowerShell またはコマンド プロンプトで次のようにして処理します。<br>
 
 - TeX Live の場合
 
@@ -242,7 +250,7 @@ ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
 ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
 ```
 
-これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
+これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック
 (Adobe Reader XI Font Packs
@@ -254,31 +262,32 @@ Adobe Reader 9.1 Font Packs
 [Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix))
 内の
 OpenType フォントの用途として，Adobe Reader/Acrobat での
-プレビュー・印刷用途を想定しているようです。
-上のような dvipdfmx を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい（[TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません）。
+プレビュー・印刷用途を想定しているようです。<br>
+上のような dvipdfmx を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
+[TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。<br>
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
 とりあえず Adobe Reader/Acrobat 9 の KozMinPr6N-Regular.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下から
-シンボリックリンクします。
+シンボリックリンクします。<br>
 
-次のようにして処理します。
+次のようにして処理します。<br>
 
 ```
 ptex2pdf -l -od '-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map' hoge.tex
 ```
 
 これで明朝体については「小塚明朝 Pr6N R」が埋め込まれるので
-Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
+Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
 ## Adobe-Japan1-6 とは {#j54465d8}
 
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
 U-PRESS用の文字を含む23,058グリフの文字セットです。<br>
-Adobe Reader XI 日本語版（または Adobe Reader XI に用いるアジア・拡張言語フォントパック）に含まれている 
-KozMinPr6N-Regular.otf  と KozGoPr6N-Medium.otf がこれに準拠していますので，Adobe Reader XI が
-対応している OS ならどれでも無償で豊富なフォントを利用できるようになりました。<br>
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。<br>
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Reader XI 日本語版または Adobe Reader XI に用いるアジア・拡張言語フォントパックに含まれているので
+Adobe Reader XI を使用すれば豊富なフォントを利用できます。<br>
 Microsoft Windows 版の Adobe Reader XI に
 対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/)には
 
@@ -375,20 +384,23 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 [安田功さん](http://yasuda.homeip.net/)の
 [Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html)
 は，UTF-8 の入力ファイルを pLaTeX で処理可能な文字やコントロールシーケンスに
-変換するプリプロセッサです。これを使えば，漢字・ハングル（&#xd55c;&#xae00;）等
+変換するプリプロセッサです。<br>
+これを使えば，漢字・ハングル（&#xd55c;&#xae00;）等
 CJK の文字は OTF パッケージのコントロールシーケンスに変換できるので，
 文字コードを直接数値入力する手間が
-省けます。[TeXWiki:pTeX と多言語処理 #多言語の Unicode 直接入力と pTeX](</pTeXと多言語処理/#cyraccpw>)
-にも解説があります。
+省けます。<br>
+[TeXWiki:pTeX と多言語処理 #多言語の Unicode 直接入力と pTeX](</pTeXと多言語処理/#cyraccpw>)
+にも解説があります。<br>
 
 大友さんの[機種依存文字変換テーブル \[Internet Archive\]](http://web.archive.org/web/20070923025753/http://www.klavis.info/sjistbl.txt)を
 併用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども変換できて便利そうです
-（[qa:41425](https://okumuralab.org/~okumura/texfaq/qa/41425.html) 参照）。
+（[qa:41425](https://okumuralab.org/~okumura/texfaq/qa/41425.html) 参照）。<br>
 
 一方，[角藤さん](/W32TeX/)の配布に
 含まれる[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
 の方は Microsoft Windows 用の exe 実行ファイルも附いていますし，より簡単に
-使えそうです。ソースはC言語で，UNIX 互換 OS でも make 一発で作れます。
+使えそうです。<br>
+ソースはC言語で，UNIX 互換 OS でも make 一発で作れます。<br>
 
 ### CID 番号参照用のサンプルへのリンク {#ze53c84a}
 
@@ -961,6 +973,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://www.geocities.co.jp/texuttex/jfontsettings.html) （ut さん）
+- [TeX Live and upTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1148)
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
