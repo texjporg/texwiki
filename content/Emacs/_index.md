@@ -75,8 +75,6 @@ GNU Emacs は，フリーソフトウェアです．<br>
     - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
     - [ビルド記録](http://gnupack.sourceforge.jp/docs/current/UsersGuide_build_procedure.html#_emacs)
     - [http://jaist.dl.sourceforge.jp/gnupack/](http://jaist.dl.sourceforge.jp/gnupack/)
-- [GNU emacs(x64)](http://hp.vector.co.jp/authors/VA052357/emacs.html)
-    - [GNU emacs windows(x64)バイナリパッケージ](http://www.vector.co.jp/soft/winnt/writing/se494046.html)
 - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [Emacs for Windows Modified](http://vgoulet.act.ulaval.ca/en/emacs/windows/)
 
