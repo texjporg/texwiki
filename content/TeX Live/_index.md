@@ -168,8 +168,8 @@ TeX Live は OS ごとにインストール方法が異なるのでそれぞれ�
 TeX Live はアップデートが簡単に行えます．<br>
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
 
-- C:\texlive\2013\tlpkg\backups (Windows の場合)
-- /usr/local/texlive/2013/tlpkg/backups (OS X, Linux の場合)
+- C:\texlive\2013\tlpkg\backups (Windows (Win32) の場合)
+- /usr/local/texlive/2013/tlpkg/backups (Windows (Cygwin), OS X, Linux の場合)
 
 などのディレクトリにパッケージのバックアップが保存されます．<br>
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
