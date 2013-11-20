@@ -71,56 +71,7 @@ babel のオプションを設定する場合は以下の方法があります�
 - クラスオプションでグローバルに設定する
 - babel のオプションでローカルに設定する
 
-### LaTeX {#t6075904}
-
-\[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[LaTeX\]
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　<span style="color:White;"><strong>LyX: 設定</strong></span>　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　　　　　▷　操作性<br>
-　　　　　　▷　編集<br>
-　　　　　　 　 パス<br>
-　　　　　　 　 利用者情報<br>
-　　　　　　▷　言語設定<br>
-　　　　　　◢　出力<br>
-　　　　　　　　　　一般<br>
-　　　　　　　　　　プリンタ<br>
-　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX　　　　　　　</span><br>
-　　　　　　▷　ファイル処理<br>
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-☐ LaTeXフォントエンコーディング:　　<span style="color:#888888;"><ins>T1</ins></span>[^11] ← 言語が英語の場合に自動的に \usepackage\[T1\]{fontenc} を追加してほしくない場合は LaTeXフォントエンコーディングのチェックをはずします．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
-DVIビューア用紙寸法設定:　　[^12]<br>
-書誌情報の生成<br>
-処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-オプション(O):　　　　　[^13]<br>
-日本語用処理子(J):　<ins>pbibtex -kanji=utf8</ins> (Windows の場合) または <ins>pbibtex</ins> (OS X, Linux の場合) または <ins>upbibtex</ins>[^14]<br>
-索引の生成<br>
-処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
-オプション(T):　　　　　[^15]<br>
-日本語用処理子(J):　<ins>mendex -c -q -U</ins> (Windows の場合) または <ins>mendex -c -q</ins> (OS X, Linux の場合)[^16]<br>
-
-<br>
-
-用語集コマンド(N):　<ins>makeindex -s nomencl.ist</ins>[^17]<br>
-CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^18]<br>
-☑ LaTeXファイルでWindows流のパス表記を使う(U)[^19]<br>
-☐ 文書クラス変更時にクラスオプションをリセットする(E)[^20]<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
-
-### 変換子, ファイル形式, 順検索 (forward search) {#o4630905}
+### LaTeX, 変換子, ファイル形式, 順検索 (forward search) {#o4630905}
 
 {{< children >}}
 
@@ -172,7 +123,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^1
 日本語の文書を作成する場合は，言語を日本語に設定します．<br>
 LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．<br>
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
-出力した文書が文字化けしてしまう場合は (u)platex, (u)pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
+出力した文書が文字化けしてしまう場合は platex, pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
 
 LaTeX (pLaTeX) で書き出しすると指定した文字コードで出力されます．<br>
 lyx ファイル自体は常に UTF-8 で保存されます．<br>
@@ -191,7 +142,7 @@ lyx ファイル自体は常に UTF-8 で保存されます．<br>
 
 <br>
 
-言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^21]　<ins>　　　　　　　　　　</ins>[^22] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
+言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^11]　<ins>　　　　　　　　　　</ins>[^12] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
 
 ***
 
@@ -285,15 +236,15 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 
 ***
 
-☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^23]<br>
-既定のフォント族(D):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^24]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
-LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^25]<br>
-ローマン体(R):　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^26]<br>
-サンセリフ体(S):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^27]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-タイプライタ体(T):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^28]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^29]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真性スモールキャップ体を使う(M)</span>[^30]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 旧様式数字を使う(O)</span>[^31]<br>
+☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
+既定のフォント族(D):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
+LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
+ローマン体(R):　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
+サンセリフ体(S):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+タイプライタ体(T):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^19]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真性スモールキャップ体を使う(M)</span>[^20]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 旧様式数字を使う(O)</span>[^21]<br>
 
 ***
 
@@ -342,7 +293,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 <br>
 
 出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^32]<br>
+　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^22]<br>
 
 ***
 
@@ -771,25 +722,15 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 [^8]: 有効にすると、言語切替コマンドで文書言語を明示的に閉じることをしないようにします
 [^9]: 作業領域で外国語を視覚的にハイライトする時にチェックしてください
 [^10]: 右から左へ書く言語 (ヘブライ語、アラビア語など) をサポートするときに選択してください。
-[^11]: フォントエンコーディングを指定します (例: T1)。
-[^12]: 特定のDVIビューアが使う用紙寸法フラグを設定(-paper) 
-[^13]: BibTeXコマンドとオプション
-[^14]: pLaTeX(日本語)使用時のBibTeXコマンドとオプション
-[^15]: 索引コマンドとオプション(makeindex, xindy) 
-[^16]: pLaTeX(日本語)使用時の索引コマンドとオプション
-[^17]: 用語集コマンドとオプション(通常makeindex) 
-[^18]: CheckTeX開始コマンドとオプション
-[^19]: Select whether LyX should output Windows or Cygwin style paths to LaTeX files. Don't change the default unless the TeX engine was not correctly detected at configure time. Warning: Your changes here will not be saved.
-[^20]: クラスが変更された時にクラスオプションを既定値にする
-[^21]: どの言語パッケージをLyXが使うべきか選択してください
-[^22]: 言語パッケージを読み込むコマンドを入力してください (既定値：babel) 
-[^23]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
-[^24]: 文書の既定フォント族を選択してください
-[^25]: フォントエンコーディングを指定します (例: T1)。
-[^26]: ローマン (セリフ) 体の書体を選んでください
-[^27]: サンセリフ (グロテスク) 体の書体を選んでください
-[^28]: タイプライタ (等間隔) 体の書体を選んでください
-[^29]: 日中韓 (CJK) で文字で使用するフォントを入力してください
-[^30]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
-[^31]: 図を並べない旧様式を使用する
-[^32]: 既定の用紙寸法を指定してください(表示・更新用) 
+[^11]: どの言語パッケージをLyXが使うべきか選択してください
+[^12]: 言語パッケージを読み込むコマンドを入力してください (既定値：babel) 
+[^13]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
+[^14]: 文書の既定フォント族を選択してください
+[^15]: フォントエンコーディングを指定します (例: T1)。
+[^16]: ローマン (セリフ) 体の書体を選んでください
+[^17]: サンセリフ (グロテスク) 体の書体を選んでください
+[^18]: タイプライタ (等間隔) 体の書体を選んでください
+[^19]: 日中韓 (CJK) で文字で使用するフォントを入力してください
+[^20]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
+[^21]: 図を並べない旧様式を使用する
+[^22]: 既定の用紙寸法を指定してください(表示・更新用) 
