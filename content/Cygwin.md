@@ -37,89 +37,151 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 - [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
 - [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
 
-## TeX Live/Cygwin <a id="texlive"></a> {#dead7b03}
+## TeX Live (Cygwin) <a id="texlive"></a> {#dead7b03}
+
+Cygwin で TeX Live を使用する場合は
+
+- TeX Live 公式パッケージ
+- TeX Live/Cygwin
+
+の選択肢があります．
+
+### TeX Live 公式パッケージ {#cfed3869}
+
+#### TeX Live のインストール {#peed6637}
+
+- [CygwinにTeXlive公式パッケージを導入する](http://vraisamis.hatenadiary.jp/entry/2013/11/19/213227)
+- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
+- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+
+を参照．<br>
+
+[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+
+```
+$ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+```
+
+install-tl-unx.tar.gz を展開します．<br>
+
+```
+$ tar xvf install-tl-unx.tar.gz
+```
+
+展開したインストーラのディレクトリに移動します．<br>
+
+```
+$ cd install-tl*
+```
+
+インストーラを実行します．<br>
+オプションでダウンロードするリポジトリを指定できます．<br>
+
+```
+$ ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+
+...
+
+Actions:
+ <I> start installation to hard disk
+ <H> help
+ <Q> quit
+
+Enter command: I
+```
+
+I を入力してインストールを開始します．<br>
+サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
+エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
+
+```
+$ ./install-tl --profile installation.profile
+ABORTED INSTALLATION FOUND: installation.profile
+Do you want to continue with the exact same settings as before (y/N): y
+```
+
+インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
+
+```
+$ /usr/local/texlive/????/bin/i386-cygwin/tlmgr path add
+```
+
+#### アップデート {#k71f6600}
+
+アップデートは
+
+```
+$ tlmgr update --self --all
+```
+
+を実行すれば OK です．<br>
+
+#### extractbb の追加 <a id="extractbb"></a> {#od9c58f2}
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/texlive/????/../texmf-local
+```
+
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
+
+```
+$ mkdir -p /usr/local/texlive/texmf-local/web2c
+$ touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
+```
+
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,upmpost,\
+repstopdf,epspdf,extractbb
+```
+
+mktexlsr を実行します．<br>
+
+```
+$ mktexlsr
+```
+
+#### 文字コードの自動判別 {#d4ff8f82}
+
+[日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照．<br>
+
+### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
 
 TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージングによって，Cygwin 本家から提供されています．<br>
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
-TeX Live/Cygwin は，Cygwin オフィシャルインストーラーの setup-x86.exe または setup-x86_64.exe を使ってインストールできます．<br>
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
-
-Cygwin 本家の TeX Live パッケージ (TeX Live/Cygwin) 以外では
-
-- [TeX Live の公式パッケージ](http://tug.org/texlive/)
-- [W32TeX](/W32TeX/)
-
-の選択肢もあります．
 
 <!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
 <!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
-### 32-bit 版 (x86) {#cf18fc4c}
+#### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
 
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
 - [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
 
-### 64-bit 版 (x86_64) {#u7b94ff6}
+#### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
 
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
 - [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
 
-### 不具合 {#iffd4e02}
-
-#### TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#p6191d87}
-
-TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
-
-```
-$ ptex2pdf -l hoge.tex
-/usr/bin/env: texlua  : No such file or directory
-```
-
-ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
-
-```
-#!/usr/bin/env texlua  
-```
-
-の texlua の後ろの余分なスペース2つを削除してください．<br>
-
-- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
-- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
-
-#### texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている → 文字コードを ISO-2022-JP に変更する {#sdcc1be2}
-
-texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
-
-#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
-
-dvipdfmx がうまく動作しない場合は /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．<br>
-
-デフォルトでは
-
-```
-D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
-```
-
-に設定されています．<br>
-Ghostscript のコマンド名が gs の場合は
-
-```
-D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
-```
-
-に修正します．<br>
-
-- [dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00366.html)
-    - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
-- [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
-
-### インストール {#fc129d62}
+#### TeX Live/Cygwin のインストール {#fc129d62}
 
 - [Windowsに執筆支援ツールのReVIEWを入れて書籍制作をCIする](http://ch3cooh.hatenablog.jp/entry/20130826/1377523171)
 - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
 
-Cygwin の setup-x86.exe または setup-x86_64.exe のパッケージ選択画面で TeX Live/Cygwin を選択してインストールできます．<br>
+Cygwin オフィシャルインストーラーの setup-x86.exe または setup-x86_64.exe を使って TeX Live/Cygwin をインストールできます．<br>
+パッケージ選択画面で Publishing を Default から Install に変更すると TeX Live/Cygwin がフルインストールされます．<br>
 
 ***
 
@@ -359,6 +421,55 @@ pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 ```
+
+### 不具合 {#iffd4e02}
+
+#### TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#p6191d87}
+
+TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
+
+```
+$ ptex2pdf -l hoge.tex
+/usr/bin/env: texlua  : No such file or directory
+```
+
+ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
+
+```
+#!/usr/bin/env texlua  
+```
+
+の texlua の後ろの余分なスペース2つを削除してください．<br>
+
+- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
+- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
+
+#### texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている → 文字コードを ISO-2022-JP に変更する {#sdcc1be2}
+
+texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
+
+#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
+
+dvipdfmx がうまく動作しない場合は /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．<br>
+
+デフォルトでは
+
+```
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に設定されています．<br>
+Ghostscript のコマンド名が gs の場合は
+
+```
+D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
+```
+
+に修正します．<br>
+
+- [dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00366.html)
+    - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
+- [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
 
 ## [Cygwin Ports](http://sourceware.org/cygwinports/) {#p78f0c6f}
 
