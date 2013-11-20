@@ -50,7 +50,7 @@ OS X 10.4 以降
 <span style="color:Gray;background-color:#EEEEEE;"><ins>　<strong>一般</strong>　　<strong>テキスト編集</strong>　　<strong>テンプレート</strong>　</ins></span><span style="color:Gray;background-color:#DDDDDD;"><ins><span style="color:#DDDDDD;">\[</span>　<strong>プログラム</strong>　<span style="color:#DDDDDD;">\]</span></ins></span><span style="color:Gray;background-color:#EEEEEE;"><ins>　<strong>ライブラリ</strong>　　<strong>履歴</strong>　　<strong>サービス</strong>　　<strong>詳細</strong>　　<strong>ウェブ</strong>　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>処理に使用するプログラム</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　構成： <span style="color:Black;background-color:#FAFAFA;"><ins>\[ デフォルト　　　　　　　　　　　 ◆ \]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　構成： <span style="color:Black;background-color:#FAFAFA;"><ins>\[ デフォルト　　　　　　　　　　　 <strong>⇕</strong> \]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>コマンド</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
 　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span> latex+dvipdf<br>
 
