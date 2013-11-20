@@ -13,6 +13,55 @@ pukiwiki: "LyX/設定/Windows"
 
 ## 設定 {#ue19dc3a}
 
+### LaTeX {#m41cae1f}
+
+\[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[LaTeX\]
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　<span style="color:White;"><strong>LyX: 設定</strong></span>　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　　　　　▷　操作性<br>
+　　　　　　▷　編集<br>
+　　　　　　 　 パス<br>
+　　　　　　 　 利用者情報<br>
+　　　　　　▷　言語設定<br>
+　　　　　　◢　出力<br>
+　　　　　　　　　　一般<br>
+　　　　　　　　　　プリンタ<br>
+　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX　　　　　　　</span><br>
+　　　　　　▷　ファイル処理<br>
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+☐ LaTeXフォントエンコーディング:　　<span style="color:#888888;"><ins>T1</ins></span>[^1] ← 言語が英語の場合に自動的に \usepackage\[T1\]{fontenc} を追加してほしくない場合は LaTeXフォントエンコーディングのチェックをはずします．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
+DVIビューア用紙寸法設定:　　[^2]<br>
+書誌情報の生成<br>
+処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
+オプション(O):　　　　　[^3]<br>
+日本語用処理子(J):　<ins>pbibtex -kanji=utf8</ins> または <ins>upbibtex</ins>[^4]<br>
+索引の生成<br>
+処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
+オプション(T):　　　　　[^5]<br>
+日本語用処理子(J):　<ins>mendex -c -q -U</ins>[^6]<br>
+
+<br>
+
+用語集コマンド(N):　<ins>makeindex -s nomencl.ist</ins>[^7]<br>
+CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8]<br>
+☑ LaTeXファイルでWindows流のパス表記を使う(U)[^9]<br>
+☐ 文書クラス変更時にクラスオプションをリセットする(E)[^10]<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
+
 ### 変換子 {#l23ec9b3}
 
 \[ツール(T)\]-\[設定(P)...\]-\[ファイル処理\]-\[変換子\]
@@ -704,9 +753,9 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins>[^1]<br>
-日付書式(D): 　<ins>&#x25;x</ins>[^2]<br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^3]<br>
+出力の行幅(L): <ins>65</ins>[^11]<br>
+日付書式(D): 　<ins>&#x25;x</ins>[^12]<br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^13]<br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
@@ -797,6 +846,16 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 - [LyX ～数式エディタとして使う～](http://physchem.web.fc2.com/PC/latex/lyx.html)
 - [TeX | どうでもいいメモ（保守中）](http://6esky.wordpress.com/category/tex/)
 
-[^1]: 書き出す平文/LaTeX/SGMLファイルの最大行数。0に設定すると、全ての段落は一行に出力されます。行数が>0ならば、段落行は空白行によって分離されます。
-[^2]: strftime出力の日付書式
-[^3]: 書き出しに際し、既存ファイルが上書きされる場合にどうするか。
+[^1]: フォントエンコーディングを指定します (例: T1)。
+[^2]: 特定のDVIビューアが使う用紙寸法フラグを設定(-paper) 
+[^3]: BibTeXコマンドとオプション
+[^4]: pLaTeX(日本語)使用時のBibTeXコマンドとオプション
+[^5]: 索引コマンドとオプション(makeindex, xindy) 
+[^6]: pLaTeX(日本語)使用時の索引コマンドとオプション
+[^7]: 用語集コマンドとオプション(通常makeindex) 
+[^8]: CheckTeX開始コマンドとオプション
+[^9]: Select whether LyX should output Windows or Cygwin style paths to LaTeX files. Don't change the default unless the TeX engine was not correctly detected at configure time. Warning: Your changes here will not be saved.
+[^10]: クラスが変更された時にクラスオプションを既定値にする
+[^11]: 書き出す平文/LaTeX/SGMLファイルの最大行数。0に設定すると、全ての段落は一行に出力されます。行数が>0ならば、段落行は空白行によって分離されます。
+[^12]: strftime出力の日付書式
+[^13]: 書き出しに際し、既存ファイルが上書きされる場合にどうするか。
