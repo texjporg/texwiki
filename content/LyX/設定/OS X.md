@@ -47,6 +47,7 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 ## 関連リンク {#tab664aa}
 
+- [http://miyazakikenji.wordpress.com/tag/lyx/](http://miyazakikenji.wordpress.com/tag/lyx/)
 - [LyX with Mac Book Pro Retina, JP](http://heloremy.wordpress.com/2012/10/16/lyx-with-mac-book-pro-retina-jp/)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [Mac OS XにTex Lyx導入](http://d.hatena.ne.jp/mosa_siru/20120627/1340818055)
