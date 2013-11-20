@@ -37,7 +37,7 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 - [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
 - [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
 
-## TeX Live (Cygwin) <a id="texlive"></a> {#dead7b03}
+## TeX Live <a id="texlive"></a> {#dead7b03}
 
 Cygwin で TeX Live を使用する場合は
 
