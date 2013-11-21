@@ -117,7 +117,24 @@ $ tlmgr update --self --all
 
 を実行すれば OK です．<br>
 
-#### extractbb の追加 <a id="extractbb"></a> {#od9c58f2}
+#### pmetapost (pmpost, upmpost) のインストール {#x265f6f4}
+
+- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+
+pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナリが必要な場合は
+[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
+
+```
+$ tlmgr update --self --all
+$ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ tlmgr pinning add tlptexlive '*'
+$ tlmgr install pmetapost
+$ tlmgr update --all
+```
+
+#### extractbb の追加 {#od9c58f2}
+
+- [TeX Live texmf-localの扱いに関して。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1149)
 
 TEXMFLOCAL の値を確認します．<br>
 
@@ -345,6 +362,8 @@ Cygwin オフィシャルインストーラーの setup-x86.exe または setup-
 ***
 
 #### extractbb の追加 {#uc813f02}
+
+- [TeX Live texmf-localの扱いに関して。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1149)
 
 /usr/share/texmf-dist/web2c/texmf.cnf に shell_escape_commands が以下のように記述されていると思います．<br>
 
