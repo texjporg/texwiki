@@ -9,6 +9,14 @@ pukiwiki: "newtx"
 
 ## newtx {#xd8a1457}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## newtx とは {#cec39c59}
+
+newtx は TX フォントを改良したものです．<br>
+
+- [Michael Sharpe Home Page](http://math.ucsd.edu/~msharpe/)
+    - [MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
 - [http://www.ctan.org/pkg/newpx](http://www.ctan.org/pkg/newpx)
@@ -20,7 +28,7 @@ pukiwiki: "newtx"
 
 ### News {#s0ef87dd}
 
-- \[2013-10-18\] newtx 1.151
+[MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html) を参照．<br>
 
 ### インストール {#va9608e1}
 
@@ -113,9 +121,9 @@ newtx, newpx は TeX Live, W32TeX に標準でインストールされます。<
 
 ### インストール {#u8fe5614}
 
-#### TeX Live, MacTeX {#dd6c8b38}
+#### TeX Live {#dd6c8b38}
 
-TeX Live, MacTeX には txfonts, pxfonts が含まれていますので，何もする必要はありません。
+TeX Live には txfonts, pxfonts が含まれていますので，何もする必要はありません。
 
 #### W32TeX {#o79bd0d3}
 
