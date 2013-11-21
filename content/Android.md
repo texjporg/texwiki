@@ -44,7 +44,7 @@ TeX Live for Android を起動して TeX Live をインストールします．
 
 ***
 
-pdflatex は普通に使用できるそうです．(→ [TeXLive for Androidの端末なら、pdflatexが使えるぞ！](https://twitter.com/ti5942/status/398938593088901120))
+pdflatex は普通に使用できるそうです．(→ [https://twitter.com/ti5942/status/398938593088901120](https://twitter.com/ti5942/status/398938593088901120) )
 
 ***
 
@@ -58,7 +58,7 @@ pdflatex は普通に使用できるそうです．(→ [TeXLive for Androidの�
 
 ***
 
-uplatex も普通に使用できるそうです．(→ [TeXLive for Android uplatexも普通に動くよ！ ](https://twitter.com/ti5942/status/398946031406034945))
+uplatex も普通に使用できるそうです．(→ [https://twitter.com/ti5942/status/398946031406034945](https://twitter.com/ti5942/status/398946031406034945) )
 
 ***
 
@@ -72,7 +72,7 @@ uplatex も普通に使用できるそうです．(→ [TeXLive for Android upla
 
 ***
 
-platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→ [TeX Live for Androidで、platexすると「This is pTeX」です。。。](https://twitter.com/ti5942/status/385371725031931904))
+platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→ [https://twitter.com/ti5942/status/385371725031931904](https://twitter.com/ti5942/status/385371725031931904) )
 
 ***
 
@@ -86,7 +86,7 @@ platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→
 
 ***
 
-eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使用できるそうです．(→ [platexコマンドは、拡張されていないので、コマンドeptex --fmt=platexを使う。](https://twitter.com/ti5942/status/389611613503754240))
+eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使用できるそうです．(→ [https://twitter.com/ti5942/status/389611613503754240](https://twitter.com/ti5942/status/389611613503754240) )
 
 ***
 
@@ -100,7 +100,7 @@ eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使�
 
 ***
 
-platex を e-pTeX に変更したい場合はシンボリックリンクを変更するといいみたいです．(→ [TeXLive-for-Android<br>platexコマンドをeptex -fmt=platexにするには、シンボリックリンクを変えるとよい。<br>rm platex<br>ln -s eptex platex<br>とすればいいんだ！？ ](https://twitter.com/ti5942/status/400147097812344832),<br>[(∀｀\*ゞ)ｴﾍﾍ<br>これでいいのかなぁ？](https://twitter.com/ti5942/status/400148349006786560))
+platex を e-pTeX に変更したい場合はシンボリックリンクを変更するといいみたいです．(→ [https://twitter.com/ti5942/status/400147097812344832](https://twitter.com/ti5942/status/400147097812344832) , [https://twitter.com/ti5942/status/400148349006786560](https://twitter.com/ti5942/status/400148349006786560) )
 
 ***
 
@@ -121,7 +121,7 @@ $ ln -s eptex platex
 
 ***
 
-dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [dvipdfmx.cfgのKとPの行をコメントアウトすると、eptex -fmt=platexで作成されたdviをdvipdfmxで、PDFができます。](https://twitter.com/ti5942/status/385378025983856640))
+dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640) )
 
 ***
 
