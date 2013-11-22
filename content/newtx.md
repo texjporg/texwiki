@@ -26,6 +26,10 @@ newtx は TX フォントを改良したものです．<br>
 - [http://www.ctan.org/pkg/fontaxes](http://www.ctan.org/pkg/fontaxes)
     - fontaxes – Ad­di­tional font axes for LaTeX
 
+### License {#ga9ac954}
+
+[The LaTeX Project Public Li­cense](http://latex-project.org/lppl/)
+
 ### News {#s0ef87dd}
 
 [MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html) を参照．<br>
