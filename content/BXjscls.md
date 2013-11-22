@@ -25,7 +25,7 @@ TeX Live, W32TeX に含まれています．<br>
 
 ## 不具合 {#x3d34063}
 
-### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. → xetex オプション指定をはずす {#oe701641}
+### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. → graphicx の xetex オプション指定をはずす {#oe701641}
 
 bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. が発生します．<br>
 
@@ -48,7 +48,7 @@ bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると 
 
 ***
 
-xetex オプション指定をはずすとタイプセットできます．<br>
+graphicx の xetex オプション指定をはずすとタイプセットできます．<br>
 
 ***
 
