@@ -127,7 +127,7 @@ pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナ�
 ```
 $ tlmgr update --self --all
 $ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ tlmgr pinning add tlptexlive '*'
+$ tlmgr pinning add tlptexlive "*"
 $ tlmgr install pmetapost
 $ tlmgr update --all
 ```
@@ -170,7 +170,34 @@ $ mktexlsr
 
 #### 文字コードの自動判別 {#d4ff8f82}
 
-[日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照．<br>
+文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
+
+```
+$ wget http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
+$ tar xvf nkf-2.1.3.tar.gz
+$ pushd nkf-2.1.3
+$ make
+$ make prefix=/usr install
+$ popd
+```
+
+/usr/local/texlive/texmf-local/web2c/texmf.cnf に設定を追加します．<br>
+
+```
+PTEX_IN_FILTER = /usr/bin/nkf -w
+```
+
+mktexlsr を実行します．<br>
+
+```
+$ mktexlsr
+```
+
+pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+
+```
+$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+```
 
 ### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
 
@@ -415,9 +442,9 @@ $ mktexlsr
 文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
 
 ```
-$ wget http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
-$ tar xvf nkf-2.1.2.tar.gz
-$ pushd nkf-2.1.2
+$ wget http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
+$ tar xvf nkf-2.1.3.tar.gz
+$ pushd nkf-2.1.3
 $ make
 $ make prefix=/usr install
 $ popd
