@@ -19,6 +19,10 @@ neocomplete は Vim のプラグインです．
 
 - [neocomplete](https://github.com/Shougo/neocomplete.vim)
 
+### License {#y10df6b4}
+
+[MIT License](https://github.com/Shougo/neocomplete.vim/blob/master/doc/neocomplete.txt)
+
 ### ダウンロード/インストール {#z05f3c9b}
 
 - [https://github.com/Shougo/neocomplete.vim#installation](https://github.com/Shougo/neocomplete.vim#installation) を参照．<br>
@@ -28,6 +32,10 @@ neocomplete は Vim のプラグインです．
 neosnippet は Vim のプラグインです．
 
 - [neosnippet](https://github.com/Shougo/neosnippet.vim)
+
+### License {#d570ab41}
+
+[MIT License](https://github.com/Shougo/neosnippet.vim/blob/master/doc/neosnippet.txt)
 
 ### ダウンロード/インストール {#dfebda1b}
 
