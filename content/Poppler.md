@@ -373,9 +373,9 @@ $ popd
 - [nkf](http://sourceforge.jp/projects/nkf/) をインストールします．
 
 ```
-$ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/53171/nkf-2.1.2.tar.gz
-$ tar xvf nkf-2.1.2.tar.gz
-$ pushd nkf-2.1.2
+$ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
+$ tar xvf nkf-2.1.3.tar.gz
+$ pushd nkf-2.1.3
 $ make
 $ make prefix=/mingw install
 mkdir /mingw/bin
