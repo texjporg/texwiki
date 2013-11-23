@@ -185,6 +185,8 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
+- [LaTeX for Android](https://play.google.com/store/apps/details?id=in.rgksugan.latex4android)
+    - [https://github.com/rgksugan/Latex4Android](https://github.com/rgksugan/Latex4Android)
 - [MobileOrg (Donate)](https://play.google.com/store/apps/details?id=com.matburt.mobileorg.donate), [MobileOrg](https://play.google.com/store/apps/details?id=com.matburt.mobileorg)
     - [https://github.com/matburt/mobileorg-android](https://github.com/matburt/mobileorg-android)
     - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
@@ -201,6 +203,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 
 - [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
     - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
+- [TexEditor Free](https://play.google.com/store/apps/details?id=com.TeXEditorFree)
 - [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
 - [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
 - [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
@@ -212,6 +215,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
     - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
 - [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
     - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
+- [TeXEditor](https://play.google.com/store/apps/details?id=com.TeXEditor.TeXEditor_full) (シェアウェア)
 - [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
 - [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
