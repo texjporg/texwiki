@@ -15,8 +15,6 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
-
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
 一般<br>
@@ -74,8 +72,6 @@ SVN<br>
 ***
 
 ***
-
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
