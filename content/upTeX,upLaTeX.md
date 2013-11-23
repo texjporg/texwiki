@@ -11,18 +11,24 @@ pukiwiki: "upTeX,upLaTeX"
 
 ## upTeX, upLaTeXとは {#ge195750}
 
-[upTeX, upLaTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)の内部Unicode[^1]版。pTeX, pLaTeXでは、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
-upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてUnicodeの範囲を扱えるようになっています。
-また、\kcatcode の設定切替えで欧文LaTeXの\inputenc{utf8}やBabelが障害なく利用でき、CJK以外の多言語についてもpLaTeXよりも扱いやすくなっています。特徴をまとめると、
+[upTeX, upLaTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版。<br>
+pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
+upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
+また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
+特徴をまとめると、
 
-- pTeX, pLaTeX上位互換
+- pTeX, pLaTeX 上位互換
     - 組版品質、縦組み機能、過去の資産活用
-- UTF-8入力、内部Unicodeによりプレーンテキストでの処理能力向上
+- UTF-8 入力、内部 Unicode によりプレーンテキストでの処理能力向上
     - 日本語字種の拡張
     - CJK(日中韓)各言語の混植
-    - 欧文TeXのUnicode入力、babelとの親和性向上
+    - 欧文 TeX の Unicode 入力、babel との親和性向上
 
 ### ChangeLog {#le7df259}
+
+- [主な更新箇所](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+
+を参照．<br>
 
 #### upTeX {#na27195e}
 
@@ -40,15 +46,15 @@ upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてU
 
 #### TeX Live {#mc80f714}
 
-[TeX Live](</TeX Live/>) 2012 以降には upTeX が含まれています。
+[TeX Live](</TeX Live/>) には upTeX が含まれています。
 
 #### W32TeX {#sa412321}
 
-最新の[W32TeX](/W32TeX/)には [uptex-w32.tar.xz](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz) が含まれています。
+[W32TeX](/W32TeX/) には [uptex-w32.tar.xz](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz) が含まれています。
 
 ### 最初の例 {#nea5a740}
 
-例えば、以下のようなデータをUnicode対応のテキストエディタで編集し、文字コードUTF-8でkumo.texというファイル名で保存します。
+例えば、以下のようなデータを Unicode 対応のテキストエディタで編集し、文字コード UTF-8 で kumo.tex というファイル名で保存します。<br>
 
 ```
 % kumo.tex
@@ -63,25 +69,30 @@ upTeX, upLaTeXでは、漢字/かな/CJK(日中韓)記号/ハングルとしてU
 \end{document}
 ```
 
-次に、コマンド プロンプト上で以下のコマンドを入力することにより、コンパイルします。
+次に、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、コンパイルします。<br>
 
 ```
 uplatex kumo.tex
 ```
 
-さらに、dviwareで処理します。
-この例では、コマンド プロンプト上で以下のコマンドを入力することにより、dvipdfmxでpdf化します。
+さらに、dviwareで処理します。<br>
+この例では、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、dvipdfmx で pdf 化します。<br>
 
 ```
 dvipdfmx kumo.dvi
 ```
 
-出力として kumo.pdf が得られます。
+出力として kumo.pdf が得られます。<br>
+[ptex2pdf](/ptex2pdf/) を使用しても OK です．<br>
+
+```
+ptex2pdf -l -u kumo
+```
 
 ### 簡単な使い方 {#wd228c3a}
 
-upTeX, upLaTeXは、pTeX, pLaTeXとほぼ同様に使うことができます。
-pTeX, pLaTeXで利用しているコマンド名等は以下のように読み替えてください。
+upTeX, upLaTeX は、pTeX, pLaTeX とほぼ同様に使うことができます。
+pTeX, pLaTeX で利用しているコマンド名等は以下のように読み替えてください。
 
 - コマンド名
 
@@ -126,24 +137,25 @@ pTeX, pLaTeXで利用しているコマンド名等は以下のように読み�
 | JY1  | JY2   | 横組み |
 | JT1  | JT2   | 縦組み |
 
-jsarticle.clsでは、uplatexオプションを追加してください。
-[otfパッケージ](/OTF/)では、uplatexオプションを追加してください。
+jsarticle.cls では、uplatex オプションを追加してください。
+[otfパッケージ](/OTF/)では、uplatex オプションを追加してください。
 
 ### dviware {#e548f906}
 
-[TeX Live](</TeX Live/>) 2012 以降, [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
 ### 仕様 {#o544ccd9}
 
-upTeXは、\kcatcode の設定次第で、入力されたUTF-8の文字を内部処理に渡す際にCJKトークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の8bit文字からなるUTF-8の文字列に振り分けて処理します。
-\kcatcode は、[Unicodeのblock](http://unicode.org/Public/UNIDATA/Blocks.txt)ごとに設定可能です。以下では基本的な書き方を例示していますが、[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)を利用すると、フォント、\kcatcode、babelの設定などを簡便にできます。
+upTeXは、\kcatcode の設定次第で、入力された UTF-8 の文字を内部処理に渡す際に CJK トークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の 8-bit 文字からなる UTF-8 の文字列に振り分けて処理します。<br>
+\kcatcode は、[Unicode の block](http://unicode.org/Public/UNIDATA/Blocks.txt) ごとに設定可能です。<br>
+以下では基本的な書き方を例示していますが、[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)を利用すると、フォント、\kcatcode、babel の設定などを簡便にできます。
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
-upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記号, ハングル のいずれかに設定されています。
-適切なフォントに切り替えるだけで、CJK混植の文書を作成できます。以下は、入力例です。
+upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK 記号, ハングル のいずれかに設定されています。
+適切なフォントに切り替えるだけで、CJK 混植の文書を作成できます。以下は、入力例です。
 
 ```
 \documentclass{ujarticle}
@@ -198,15 +210,17 @@ upTeXのデフォルトで、U+0080以上の文字は、漢字, かな, CJK記�
 \end{document}
 ```
 
-[pxbabelパッケージ](http://zrbabbler.sp.land.to/pxbase.html#sec-pxbabel)を利用すると、CJK言語間の切り換えが簡便になります。
+[pxbabelパッケージ](http://zrbabbler.sp.land.to/pxbase.html#sec-pxbabel)を利用すると、CJK 言語間の切り換えが簡便になります。
 
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
-upTeXのデフォルトでは、U+0080以上の文字は欧文としては処理されませんが、\kcatcode を15に設定することで、欧文の8bit文字列として扱うことが出来ます。
-欧文LaTeXのinputencパッケージを利用することで、UTF-8で記述された文書が処理出来ます。
-pLaTeXの場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、
-upLaTeXの場合は、ギリシャ文字ブロック、キリル文字ブロックの\kcatcode を15に設定することで回避できます。ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。
-欧文LaTeXのbabelパッケージも、欧文LaTeXと同様に利用出来ます。以下は、入力例です。
+upTeX のデフォルトでは、U+0080 以上の文字は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。<br>
+欧文 LaTeX の inputenc パッケージを利用することで、UTF-8 で記述された文書が処理出来ます。<br>
+pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、
+upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。<br>
+ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。<br>
+欧文 LaTeX の babel パッケージも、欧文 LaTeX と同様に利用出来ます。<br>
+以下は、入力例です。<br>
 
 ```
 \documentclass{ujarticle}
@@ -272,18 +286,19 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 
 ### ヘブライ語 {#f3b6c860}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれるuplatexコマンドは、[e-TeX](/e-TeX/)拡張を含んだe-upTeXをコンパイラとしているため、TeX-XeT機能が利用できます。
-ヘブライ文字ブロックの\kcatcode を15に設定することで、
-欧文LaTeXと同様、babelパッケージのhebrewオプションが利用出来ます。
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる uplatex コマンドは、[e-TeX](/e-TeX/) 拡張を含んだ e-upTeX をコンパイラとしているため、TeX-XeT 機能が利用できます。<br>
+ヘブライ文字ブロックの \kcatcode を 15 に設定することで、
+欧文 LaTeX と同様、babel パッケージの hebrew オプションが利用出来ます。<br>
 
 ### その他の言語 {#ldca57c5}
 
-upTeX自身の機能としてアラビア文字など複雑な文字をレンダリングする能力を持っているわけではありません。しかし、欧文TeXで使用できるパッケージなどを利用することにより組版を実現できます。
+upTeX 自身の機能としてアラビア文字など複雑な文字をレンダリングする能力を持っているわけではありません。<br>
+しかし、欧文 TeX で使用できるパッケージなどを利用することにより組版を実現できます。<br>
 
 ## 関連リンク {#of92a3e9}
 
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 
-[^1]: 内部Unicodeになっているのは、CJKの文字。欧文の処理は欧文TeX, pTeXと同様、8bitのままです。
+[^1]: 内部 Unicode になっているのは、CJK の文字。欧文の処理は欧文 TeX, pTeX と同様、8-bit のままです。
 [^2]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
