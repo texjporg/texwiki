@@ -36,6 +36,8 @@ forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> �
     <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
     <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
 
+- [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
+
 ### 動作環境 {#z85aa9cd}
 
 Windows 8.1, 8, 7, Vista, XP
