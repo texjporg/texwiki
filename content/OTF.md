@@ -38,7 +38,10 @@ pukiwiki: "OTF"
 
 ### ChangeLog {#k32bef0c}
 
-[変更履歴](http://psitau.kitunebi.com/otf.html) を参照．<br>
+- [変更履歴](http://psitau.kitunebi.com/otf.html)
+- [主な更新箇所](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+
+を参照．<br>
 
 #### japanese-otf {#b26e364e}
 
@@ -59,7 +62,7 @@ pukiwiki: "OTF"
 ### TeX Live {#da8ed89a}
 
 TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
-バージョンはベータ版 ([2012/04/11 v1.7b5 psitau, u0.11 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+バージョンはベータ版 ([2012/04/11 v1.7b5 psitau, u0.12 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### W32TeX {#z4ee6291}
 
@@ -356,16 +359,18 @@ kanji-config-updmap hiragino
 ### 新しいフォントメトリック {#y2c312cd}
 
 OTF パッケージを（“noreplace” オプション以外で）使うと，\UTF{...} や
-\CID{...} で指定した文字以外についても，新しい和文用メトリックが使われます。
+\CID{...} で指定した文字以外についても，新しい和文用メトリックが使われます。<br>
 これは JIS フォントメトリックとほぼ同じですが，JIS フォントメトリックが今までの
 min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」であったのに対し，OTF
-パッケージの新 JIS メトリックは正方形（高さ + 深さ = 幅）です。従って，1 zw
-= 1 zh です（公称 10 pt のフォントで 1 zw = 1 zh = 9.62216 pt）。また，
-一般的な PostScript の和文フォントにならって「高さ : 深さ = 88 : 12」です。
+パッケージの新 JIS メトリックは正方形（高さ + 深さ = 幅）です。<br>
+従って，1 zw
+= 1 zh です（公称 10 pt のフォントで 1 zw = 1 zh = 9.62216 pt）。<br>
+また，一般的な PostScript の和文フォントにならって「高さ : 深さ = 88 : 12」です。<br>
 
 さらに，「？」と「！」（JIS の用語では「区切り約物」）の後に，
 横書きの場合も 0.5 zw のグルー（スペース）が入るようになりました
-（縦書きでは tmin10 などと同様 1 zw が入ります）。このグルーを禁止するには
+（縦書きでは tmin10 などと同様 1 zw が入ります）。<br>
+このグルーを禁止するには
 
 ```
 あっ！\inhibitglue と驚く
