@@ -11,6 +11,11 @@ pukiwiki: "Lisp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## Lisp {#ge8108db}
+
+- [Wikipedia.ja:LISP](https://ja.wikipedia.org/wiki/LISP)
+- [Lisp Advent Calendar 2013](http://qiita.com//advent-calendar/2013/lisp)
+
 ## Scheme {#o84ab52a}
 
 - [Racket](http://racket-lang.org/)
@@ -28,6 +33,7 @@ pukiwiki: "Lisp"
 ## Closure {#vcbb46a7}
 
 - [Clojure](http://clojure.org/)
+- [Clojure Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/clojure)
 
 ## Emacs Lisp {#j7378fb1}
 
