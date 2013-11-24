@@ -33,7 +33,7 @@ pukiwiki: "C++"
 - [32bit プロセスは 64bit プロセスを見つけられない](http://d.hatena.ne.jp/tt_clown/20110416/1302927489)
 - [http://www.slideshare.net/adankevich/c11-15621074](http://www.slideshare.net/adankevich/c11-15621074)
 - [You cannot override a class (static) constant](https://gist.github.com/MihailJP/4236262)
-- [C++ Advent Calendar 2013](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
+- [C++ Advent Calendar 2013 - PARTAKE](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
 
 ### 処理系 {#zc4c802d}
 
