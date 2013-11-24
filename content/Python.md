@@ -293,6 +293,7 @@ $ invevince hoge.pdf 'texworks --position=%l "%f"'
 ## 関連リンク {#z55d6188}
 
 - [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
+- [Python Advent Calendar 2013](http://www.adventar.org/calendars/166)
 - [python3.3環境構築](http://oceanmarine.sakura.ne.jp/sphinx/python_env.html)
 - [Python の if \__name_\_ == ‘\__main_\_’: を Perl, Ruby, PHP で行う](http://www.serendip.ws/archives/4360)
 - [http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python](http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python)
