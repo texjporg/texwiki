@@ -15,9 +15,7 @@ pukiwiki: "Android"
 
 ## TeX Live <a id="texlive"></a> {#ec902282}
 
-### フリーソフトウェア (オープンソースソフトウェア) {#s4ea771c}
-
-#### TeX Live for Android {#p2cbca91}
+### TeX Live for Android {#p2cbca91}
 
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
@@ -171,15 +169,6 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 ```
 
 ***
-
-### シェアウェア {#ac15962a}
-
-#### TeXPortal {#va170afe}
-
-- [TeXPortal](https://play.google.com/store/apps/details?id=lah.texportal.donate) (シェアウェア)
-    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
-    - [https://www.facebook.com/TeXPortal](https://www.facebook.com/TeXPortal)
-    - [https://plus.google.com/102906741972076888588/posts](https://plus.google.com/102906741972076888588/posts)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
