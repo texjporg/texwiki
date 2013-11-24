@@ -36,6 +36,8 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
         <!-- [[Vim team:http://sourceforge.net/project/memberlist.php?group_id=8] -->
         <!-- [[develop:http://sourceforge.net/projects/vim/develop]] -->
 
+- [Vim Advent Calendar 2013 : ATND](http://atnd.org/events/45072)
+
 ### 動作環境 {#w6b94f3c}
 
 [download : vim online](http://www.vim.org/download.php) を参照．
