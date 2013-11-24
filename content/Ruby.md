@@ -20,6 +20,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 
 - [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+- [Ruby Advent Calendar 2013](http://qiita.com/advent-calendar/2013/ruby)
 
 ### 派生版 {#w5708e1c}
 
