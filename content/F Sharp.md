@@ -21,6 +21,7 @@ pukiwiki: "F Sharp"
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx)
 - [F#入門](http://fsharp.web.fc2.com/)
 - [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
+- [F# Advent Calendar 2013](http://connpass.com/event/3935/)
 
 ### F# → JavaScript {#c5c64235}
 
