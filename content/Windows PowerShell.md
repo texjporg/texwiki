@@ -141,3 +141,4 @@ Windows PowerShell のオープンソース実装．<br>
 - [生産性を向上できる Windows PowerShell に関する簡単なヒント](http://gallery.technet.microsoft.com/scriptcenter/cc89a8ff-8e4c-44f9-a47c-d1b8e46f788a)
 - [How to remove (all) Windows 8 apps using PowerShell](http://www.ghacks.net/2013/08/20/how-to-remove-all-windows-8-apps-using-powershell/)
 - [Learn Windows PowerShell 3 in a Month of Lunches, 2nd Edition](http://it-ebooks.info/book/1539/)
+- [PowerShell Advent Calendar 2013 : ATND](http://atnd.org/events/45107)
