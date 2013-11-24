@@ -13,7 +13,7 @@ pukiwiki: "Scala"
 - [Better Java としての Scala](https://gist.github.com/Shinpeim/6740436)
 - [Effective Scala](http://twitter.github.io/effectivescala/)
 - [Java to Scala converter](http://javatoscala.com/)
-- [Scala Advent Calendar 2013](http://qiita.com/advent-calendar/2013/scala)
+- [Scala Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/scala)
 
 ### ライブラリ {#f02ba6e6}
 
