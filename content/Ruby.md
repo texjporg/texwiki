@@ -20,7 +20,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 
 - [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
-- [Ruby Advent Calendar 2013](http://qiita.com/advent-calendar/2013/ruby)
+- [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 
 ### 派生版 {#w5708e1c}
 
@@ -53,6 +53,7 @@ Ruby を C:\Ruby200-x64 にインストールした場合は
 ## mruby (組み込み向け Ruby) {#we4042fb}
 
 - [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
+- [mruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/mruby)
 
 ## fwdevince <a id="fwdevince"></a> {#x681ced4}
 
