@@ -18,3 +18,4 @@ pukiwiki: "Rust"
 - [Rust 基礎文法最速マスター (rust 0.7 編)](http://gifnksm.hatenablog.jp/entry/2013/07/15/170736)
 - [http://qiita.com/tags/rust](http://qiita.com/tags/rust)
 - [http://wontfix.blogspot.jp/search/label/rust](http://wontfix.blogspot.jp/search/label/rust)
+- [Rust Advent Calendar 2013](http://qiita.com/advent-calendar/2013/rust)
