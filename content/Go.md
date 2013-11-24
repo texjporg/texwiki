@@ -19,4 +19,4 @@ pukiwiki: "Go"
 - [https://github.com/AllenDang/w32](https://github.com/AllenDang/w32)
 - [unsafeでポインタを使って構造体のプライベートフィールドの値を書き換える例。](https://gist.github.com/hnakamur/6648237)
 - [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
-- [Go Advent Calendar 2013](http://qiita.com/advent-calendar/2013/go)
+- [Go Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/go)
