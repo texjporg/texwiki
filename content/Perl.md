@@ -26,6 +26,7 @@ pukiwiki: "Perl"
 - [The Perl Programming Language - www.perl.org](http://www.perl.org/)
 - [http://dev.perl.org/](http://dev.perl.org/)
 - [https://github.com/Perl](https://github.com/Perl)
+- [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
 
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
