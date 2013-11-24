@@ -10,3 +10,4 @@ pukiwiki: "Elixir"
 ## Elixir {#z9959866}
 
 - [http://elixir-lang.org/](http://elixir-lang.org/)
+- [Elixir Advent Calendar 2013](http://qiita.com/advent-calendar/2013/elixir)
