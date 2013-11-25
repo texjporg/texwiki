@@ -48,13 +48,13 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
-TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html)を作成して依存関係の問題を回避します．<br>
 
 ```
 $ sudo apt-get install equivs
-$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
-$ equivs-build debian-control-ex.txt
-$ sudo dpkg -i texlive-local_2011-1~1_all.deb
+$ wget http://www.tug.org/texlive/files/debian-equivs-2013-ex.txt
+$ equivs-build debian-equivs-2013-ex.txt
+$ sudo dpkg -i texlive-local_2013-1_all.deb
 ```
 
 ### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
