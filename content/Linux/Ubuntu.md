@@ -105,27 +105,20 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
 - [Linux](/Linux/#texliveinstall)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
-TeX Live/Debian がインストールされないように dummy パッケージを作成して依存関係の問題を回避します．<br>
+TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html)を作成して依存関係の問題を回避します．<br>
 
 ```
 $ sudo apt-get install equivs
-$ wget http://www.tug.org/texlive/files/debian-control-ex.txt
+$ wget http://www.tug.org/texlive/files/debian-equivs-2013-ex.txt
+$ equivs-build debian-equivs-2013-ex.txt
+$ sudo dpkg -i texlive-local_2013-1_all.deb
 ```
 
-<!-- debian-control-ex.txt に texlive-full, texlive-lang-cjk, asymptote, asymptote-doc などの項目を追加します． -->
-
-```
-$ equivs-build debian-control-ex.txt
-$ sudo dpkg -i texlive-local_2011-1~1_all.deb
-```
-
-[texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu) を使用する場合は以下のようにします．<br>
-
-```
-$ sudo add-apt-repository ppa:krlmlr/ppa
-$ sudo apt-get update
-$ sudo apt-get install texlive-dummy
-```
+<!-- [[texlive-dummy-ubuntu:https://github.com/krlmlr/texlive-dummy-ubuntu]] を使用する場合は以下のようにします．~ -->
+<!--  -->
+<!-- $ sudo add-apt-repository ppa:krlmlr/ppa -->
+<!-- $ sudo apt-get update -->
+<!-- $ sudo apt-get install texlive-dummy -->
 
 ### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
