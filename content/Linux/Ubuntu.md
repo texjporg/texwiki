@@ -15,7 +15,7 @@ pukiwiki: "Linux/Ubuntu"
 
 <br>
 
-<img src="https://wiki.ubuntu.com/UbuntuGNOME/Artwork/Graphics?action=AttachFile&amp;do=get&amp;target=logo_medium.png" alt="Ubuntu GNOME" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/500px-Ubuntu_GNOME_logo.svg.png" alt="Ubuntu GNOME" style="float:right">
 
 <br>
 
@@ -95,7 +95,6 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
 - [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
 - [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [texlive-dummy-ubuntu](https://github.com/krlmlr/texlive-dummy-ubuntu)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
