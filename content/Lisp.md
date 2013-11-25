@@ -14,7 +14,7 @@ pukiwiki: "Lisp"
 ## Lisp {#ge8108db}
 
 - [Wikipedia.ja:LISP](https://ja.wikipedia.org/wiki/LISP)
-- [Lisp Advent Calendar 2013](http://qiita.com//advent-calendar/2013/lisp)
+- [Lisp Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com//advent-calendar/2013/lisp)
 
 ## Scheme {#o84ab52a}
 
