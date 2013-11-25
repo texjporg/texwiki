@@ -13,13 +13,25 @@ pukiwiki: "Linux/Ubuntu"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right">
 
+<br>
+
+<img src="https://wiki.ubuntu.com/UbuntuGNOME/Artwork/Graphics?action=AttachFile&amp;do=get&amp;target=logo_medium.png" alt="Ubuntu GNOME" style="float:right">
+
+<br>
+
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right">
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a0/Ubuntu_GNOME.png" alt="Ubuntu GNOME" style="display:block;margin-inline:auto;margin-right:auto">
+<br>
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right">
 
+<br>
+
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right">
+
+<br>
+
+<br>
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -28,6 +40,7 @@ pukiwiki: "Linux/Ubuntu"
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
 
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
+- [Home - Ubuntu Wiki](https://wiki.ubuntu.com/)
 - [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
 - [Ubuntu Japanese Wiki - Ubuntu Japanese Wiki](https://wiki.ubuntulinux.jp/)
 - [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
@@ -37,23 +50,35 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 - [Derivatives](http://www.ubuntu.com/about/about-ubuntu/derivatives)
 
-#### Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu とは {#fa2981c9}
+#### Ubuntu GNOME とは {#fa2981c9}
 
 Ubuntu GNOME はデスクトップ環境に GNOME を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Ubuntu GNOME](http://ubuntugnome.org/)
+
+#### Kubuntu とは {#d3ca4531}
+
+Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
 - [Kubuntu](http://www.kubuntu.org/)
+
+#### Xubuntu とは {#m7f07ea0}
+
+Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
 - [Xubuntu](http://xubuntu.org/)
+
+#### Lubuntu とは {#zdc5ee41}
+
+Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
 - [Lubuntu](http://lubuntu.net/)
 
 ### 派生版 {#m65a8766}
 
 #### Linux Mint とは {#n7037512}
 
-Linux Mint はデスクトップ環境に Cinnamon, MATE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Linux Mint](</Linux/Linux Mint/>)
 
