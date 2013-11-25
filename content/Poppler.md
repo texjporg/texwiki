@@ -185,9 +185,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.tar.gz
-$ tar xvf cmake-2.8.12.tar.gz
-$ pushd cmake-2.8.12
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz
+$ tar xvf cmake-2.8.12.1.tar.gz
+$ pushd cmake-2.8.12.1
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
