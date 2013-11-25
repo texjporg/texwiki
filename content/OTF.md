@@ -78,14 +78,14 @@ PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 
 dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
 
-W32TeX の tar は GNU tar 1.11.8 + 2.1(WIN32) です．
+W32TeX の tar は GNU tar 1.11.8 + 2.2(WIN32) です．
 
 ```
 PS C:\w32tex> .\tar --version
-GNU tar 1.11.8 + 2.1(WIN32)
+GNU tar 1.11.8 + 2.2(WIN32)
 ```
 
-GNU tar 1.11.8 + 2.1(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
+GNU tar 1.11.8 + 2.2(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
 
 ```
 PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
