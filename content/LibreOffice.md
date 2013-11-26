@@ -68,7 +68,6 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 - [TexMaths](http://roland65.free.fr/texmaths/)
     - [Ubuntu12.10 LibreOfficeでTeX文法で数式を書く](http://d.hatena.ne.jp/cmphys/20130418/1366281436)
     - [LibreOfficeにLatexの数式を埋め込む](http://shunboo.blogspot.jp/2012/10/libreofficelatex.html)
-    - [Ubuntu11.10 LibreOfficeでTeX文法で数式を書く](http://d.hatena.ne.jp/cmphys/20120126/1327584371)
 
 ## LibreOffice/Apache OpenOffice Draw {#t359ffe0}
 
@@ -76,8 +75,6 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
     - [Ubuntu12.10 LibreOfficeでTeX文法で数式を書く](http://d.hatena.ne.jp/cmphys/20130418/1366281436)
 
 ## LibreOffice/Apache OpenOffice Math {#p45a32d8}
-
-- [LaTeXを使わずきれいな数式をフリーソフトで書く方法](http://genpi215.blog33.fc2.com/blog-entry-712.html)
 
 ## 関連リンク {#x6de2338}
 
