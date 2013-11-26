@@ -40,7 +40,7 @@ OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
 など），モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
 
 日本では TeX，LaTeX
-を株式会社アスキー（現：[株式会社アスキー・メディアワークス](http://asciimw.jp/)）が日本語化した
+を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/)）が日本語化した
 [pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 がよく使われています。<br>
 pTeX，pLaTeX の頭文字の
