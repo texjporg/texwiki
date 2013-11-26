@@ -8,7 +8,7 @@ pukiwiki: "TeXの歴史"
 # TeXの歴史
 
 国内／海外のTeX（および関連ソフトウェア）の歴史をまとめてみたいと思います。当時を知る方、ぜひいろんな出来事を教えてください。 <!-- 現段階の海外の歴史は、http://www.xent.com/feb98/0307.html を参考にしました。// link切れ 2009/04/25 -->
-[TeX年表](http://argent.shinshu-u.ac.jp/otobe/tex/docs/texhist.html)というのもありました。
+[TeX年表](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/texhist.html)というのもありました。
 
 <!-- 年表における記述ルール（提案） -->
 <!-- ・releaseという言葉の訳語については、書籍・論文などは発表、発刊などをあてる。ソフトウェアについてはリリースとする -->
