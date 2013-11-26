@@ -111,7 +111,7 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 ***
 
-<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
@@ -119,51 +119,51 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　　　　\[txs:///dvi-pdf-chain　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　　　　\[txs:///dvi-pdf-chain　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　</span>　　　 既定のコンパイラ　　　 \[txs:///latexmk　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　</span>　　　 既定のコンパイラ　　　 \[txs:///latexmk　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット　　　 既定のビューワー　　　 \[txs:///view-pdf　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+キーボードショートカット　　　 既定のビューワー　　　 \[txs:///view-pdf　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
-メニュー　　　　　　　　　　　　 PDFビューア　　　　　　\[txs:///view-pdf-internal --embedded　　　 <strong>ᐯ</strong>\]<br>
+メニュー　　　　　　　　　　　　 PDFビューア　　　　　　\[txs:///view-pdf-internal --embedded　　　 　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー　　　　　　　 　　　既定の文献　　　　　　　\[txs:///bibtex　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+ツールバー　　　　　　　 　　　既定の文献　　　　　　　\[txs:///bibtex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-エディタ　　　　　　　 　　　　　既定の索引ツール　　　 \[txs:///makeindex　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+エディタ　　　　　　　 　　　　　既定の索引ツール　　　 \[txs:///makeindex　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定　　　　　 PSチェーン　　　　　　　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///view-ps　<strong>ᐯ</strong>\]<br>
+詳細なエディタ設定　　　　　 PSチェーン　　　　　　　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///view-ps　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示　　　　　　　DVIチェーン　　　　　　　\[txs:///latex &#x7c; txs:///view-dvi　　　　　　　　<strong>ᐯ</strong>\]<br>
+構文の強調表示　　　　　　　DVIチェーン　　　　　　　\[txs:///latex &#x7c; txs:///view-dvi　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
-カスタム強調表示　　　　　　PDFチェーン　　　　　　　\[txs:///pdflatex &#x7c; txs:///view-pdf　　　　　　　<strong>ᐯ</strong>\]<br>
+カスタム強調表示　　　　　　PDFチェーン　　　　　　　\[txs:///pdflatex &#x7c; txs:///view-pdf　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　DVI->PDFチェーン　　　　\[txs:///latex &#x7c; txs:///dvipdf &#x7c; txs:///view-pdf　<strong>ᐯ</strong>\]<br>
+コマンドの補完　　　　　　　　DVI->PDFチェーン　　　　\[txs:///latex &#x7c; txs:///dvipdf &#x7c; txs:///view-pdf　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法　　　　　　　　　　　　　　DVI->PS->PDFチェーン　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///ps2pdf &#x7c; txs:///view-pdf　<strong>ᐯ</strong>\]<br>
+文法　　　　　　　　　　　　　　DVI->PS->PDFチェーン　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///ps2pdf &#x7c; txs:///view-pdf　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
-プレビュー　　　　　　　　　　 Asymptote DVIチェーン　\[txs:///latex &#x7c; txs:///asy &#x7c; txs:///latex &#x7c; txs:///view-dvi　<strong>ᐯ</strong>\]<br>
+プレビュー　　　　　　　　　　 Asymptote DVIチェーン　\[txs:///latex &#x7c; txs:///asy &#x7c; txs:///latex &#x7c; txs:///view-dvi　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
@@ -197,6 +197,8 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 ### エディタ {#m95b4393}
 
 #### 高度なオプションの表示が OFF の場合 {#j5e857fd}
+
+日本語の文書を作成する場合インラインチェックのチェックをはずします．<br>
 
 ***
 
@@ -270,6 +272,8 @@ SVN<br>
 ***
 
 #### 高度なオプションの表示が ON の場合 {#j2e0dcc0}
+
+日本語の文書を作成する場合インラインチェックのチェックをはずします．<br>
 
 ***
 
