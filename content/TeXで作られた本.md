@@ -18,7 +18,7 @@ pukiwiki: "TeXで作られた本"
 
 TeX で作った本を出している出版社：
 
-> アスキー（現：[アスキー・メディアワークス](http://asciimw.jp/)），
+> [株式会社KADOKAWA](http://www.kadokawa.co.jp/)，
 > [インプレス](http://www.impressjapan.jp/)，
 > [技術評論社](http://gihyo.jp/)（以上はコンピュータ書），
 > [朝倉書店](http://www.asakura.co.jp/)，
