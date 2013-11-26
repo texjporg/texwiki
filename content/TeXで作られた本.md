@@ -60,10 +60,10 @@ TeX で組まれていますが，それ以外のもの）：
 - ローレンス・レッシグ著，山形浩生訳『コモンズ』（翔泳社，2002年）
 - ローレンス・レッシグ著，山形浩生，守岡桜訳『Free Culture』（翔泳社，2004年）
 - 亀田隆，高村正樹
-    『[Z会数学基礎問題集 数学I・A](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12251)』
-    『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12261)』
-    『[同III・C](http://www.zkai.co.jp/books/search/book_detail.asp?ID=12271)』
-    （Z会出版，2000年）
+    『[Z会数学基礎問題集 数学I・A チェック＆リピート 改訂第2版](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2139)』
+    『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2140)』
+    『[同III](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2141)』
+    （Z会出版，2013年）
 
 - 力武健次『インターネットコミュニティ —国際ネットワーク最前線—』（オーム社，1994年）
 - 坂梨隆三，小木曽智信，酒井わか奈，村上謙 編『[好色伝受—本文・総索引・研究](http://www.bookmailclub.com/bmc/reader/search/?.command=detail&book_id=1553)』（笠間書院，2000年）
@@ -122,18 +122,18 @@ TeX で組まれていますが，それ以外のもの）：
 
 著者自身が (La)TeX で原稿を作成したと報告のあった本：
 
-- 高橋正雄. 『[基礎と演習 理工系の電磁気学](http://www.kyoritsu-pub.co.jp/shinkan/shin0409_10.html)』. 2004年9月27日発売. 共立出版. ISBN 4-320-03432-5. ([qa:31795](https://okumuralab.org/~okumura/texfaq/qa/31795.html))
+- 高橋正雄. 『[基礎と演習 理工系の電磁気学](http://www.kyoritsu-pub.co.jp/kenpon/bookDetail/9784320034327)』. 2004年9月27日発売. 共立出版. ISBN 978-4-320-03432-7. ([qa:31795](https://okumuralab.org/~okumura/texfaq/qa/31795.html))
     <!-- http://www.kyoritsu-pub.co.jp/bookhtml/0406/002798.html -->
 
-- 宮腰忠. 『[高校数学 + α：基礎と論理の物語](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2004年9月24日発売. 共立出版．ISBN 4-320-01768-4. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
+- 宮腰忠. 『[高校数学 + α：基礎と論理の物語](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2004年9月24日発売. 共立出版．ISBN 978-4-320-01768-9. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
     <!-- http://www.kyoritsu-pub.co.jp/shinkan/shin0409_08.html -->
 
-- 宮腰忠. 『[高校数学 + α：なっとくの線形代数](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2007年7月11日発売. 共立出版．ISBN978-4-320-01840-2.
-- 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=4-7687-0501-4)』. 2005年10月11日発売. 現代数学社. ISBN 4-7687-0501-4. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
+- 宮腰忠. 『[高校数学 + α：なっとくの線形代数](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2007年7月11日発売. 共立出版．ISBN 978-4-320-01840-2.
+- 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
-- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN4 7733-7282-6 C3041](http://www.kindaibungeisha.com/)
+- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
 - 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
-- 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー．[ISBN4 7561-1667-1 C3055](http://ascii.jp/)
+- 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/)）．[ISBN 978-4-7561-1667-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-1667-3)
 - 吉田武『オイラーの贈り物』．2001年11月発売．筑摩書房．ISBN4 480-08675-7 C0141
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
