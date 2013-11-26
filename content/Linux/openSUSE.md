@@ -35,7 +35,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
 [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
-パッケージをインストールします．<br>
+をインストールします．<br>
 texlive-dummy-opensuse をインストールすると
 TeX Live/TeX Live for SUSE Linux に依存するパッケージが
 TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．<br>
@@ -79,6 +79,8 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 ```
 $ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
 ```
+
+## [TeXstudio](/TeXstudio/) {#xc0b5b03}
 
 ## [Texmaker](/Texmaker/) {#ua730d97}
 
