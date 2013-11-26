@@ -937,7 +937,6 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [LaTeX で原稿を書いてから印刷所に入稿するまで](http://hayamiz.com/~hotchpotch/?p=43)
 - [dvipdfmxで作ったPDFをPDF/X-1aにする際にいちばんうまくいく方法](http://tumblr.golden-lucky.net/post/195552930/dvipdfmx-pdf-pdf-x-1a-1)
 - [pdfx.sty](http://fugenji.org/thomas/diary/index.php?no=r794)
-- [TeX+movie15(media9)+u3dによる3Dモデル埋め込みPDF作成](http://d.hatena.ne.jp/npal_shared/20120907/1346980528)
 - [TeXにpng画像を挿入するときの注意](http://qiita.com/items/32ea69d031701463f789)
 
 ## 要約 {#gf004f58}
