@@ -15,7 +15,7 @@ pukiwiki: "TeXstudio/設定/Windows"
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
@@ -23,7 +23,7 @@ pukiwiki: "TeXstudio/設定/Windows"
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -75,7 +75,7 @@ SVN<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
@@ -83,7 +83,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -148,8 +148,6 @@ SVN<br>
 <br>
 
 ***
-
-<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
 
 LaTeX
 : &nbsp;
