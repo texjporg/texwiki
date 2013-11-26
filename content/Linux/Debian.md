@@ -43,6 +43,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
 - [Linux](/Linux/#texliveinstall)
+- [Debian 7 wheezy stable への TeX Live 2013 導入の備忘録](http://skalldan.wordpress.com/2013/11/25/debian-7-wheezy-stable-%E3%81%B8%E3%81%AE-tex-live-2013-%E5%B0%8E%E5%85%A5%E3%81%AE%E5%82%99%E5%BF%98%E9%8C%B2/)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
