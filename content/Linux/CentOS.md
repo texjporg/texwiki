@@ -11,11 +11,11 @@ pukiwiki: "Linux/CentOS"
 
 ## [Red Hat Enterprise Linux (RHEL)](http://www.redhat.com/products/enterprise-linux/)/[CentOS](http://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scientific_Linux_logo_and_wordmark.svg/200px-Scientific_Linux_logo_and_wordmark.svg.png" alt="Scientific Linux (SL)" style="float:right">
-
-<img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a9/CentOS_full_logo.svg/500px-CentOS_full_logo.svg.png" alt="CentOS" style="float:right">
-
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/6/6c/RedHat.svg/500px-RedHat.svg.png" alt="Red Hat Enterprise Linux (RHEL)" style="float:right">
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Centos_full.svg/500px-Centos_full.svg.png" alt="CentOS" style="float:right">
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scientific_Linux_logo_and_wordmark.svg/200px-Scientific_Linux_logo_and_wordmark.svg.png" alt="Scientific Linux (SL)" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -52,8 +52,6 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 - [Linux](/Linux/#texliveinstall)
 - [TeX Live 2013 on Scientific Linux 6.4](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4)
-- [CentOS 6.4 + TeX Live 2013 において pxdvi で日本語を表示する](http://granular.blog39.fc2.com/blog-entry-69.html)
-- [TeXLive2013へのアップグレード](http://anastashia.blog.shinobi.jp/tex/upgrade_to_texlive2013)
 
 ## [Evince](/Evince/) {#b582893c}
 
@@ -75,3 +73,5 @@ $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-
 $ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 ```
+
+## [TeXstudio](/TeXstudio/) {#d3954fd9}
