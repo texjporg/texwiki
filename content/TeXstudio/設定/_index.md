@@ -16,51 +16,60 @@ pukiwiki: "TeXstudio/設定"
 
 \[オプション(O)\]-\[TeXstudioの設定(C)\]
 
+### 高度なオプションの表示 {#r962ad23}
+
 高度なオプションの表示をチェックすると詳細設定ができます．<br>
 
-```
-高度なオプションを有効化しました。
-これで詳細にTXSを設定することが可能です。
-一般的な設定のみを見るには再度高度なオプションを無効化してください。
-```
+***
+
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXStudio</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　　　　高度なオプションを有効化しました。<br>
+　　　　　これで詳細にTXSを設定することが可能です。<br>
+　　　　　一般的な設定のみを見るには再度高度なオプションを無効化してください。<br>
+
+***
 
 ### コマンド {#yc27e161}
 
 {{< children >}}
 
-を参照．<br>
+を参照して platex, pbibtex, mendex, dvipdfmx, latexmk などの設定をします．<br>
 
 ### ビルド {#cb495de1}
 
-#### ☐ 高度なオプションの表示 の場合 {#f13fa401}
+#### 高度なオプションの表示が OFF の場合 {#f13fa401}
+
+platex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を DVI->PDFチェーン に変更します．<br>
+Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を コンパイル &amp; 表示 に変更して 既定のコンパイラ を Latexmk に変更します．<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
-一般<br>
+一般　　　　　　　　　　　　　　メタコマンド<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド<br>
+コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　<span style="color:Black;background-color:#EEEEEE;">\[DVI->PDFチェーン　　　　　　　　　　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　</span>　　　 既定のコンパイラ <span style="color:Black;background-color:#EEEEEE;">\[Latexmk　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット<br>
+キーボードショートカット　　　 既定のビューワー <span style="color:Black;background-color:#EEEEEE;">\[PDFビューア　　　　　　　　　　　　　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-エディタ<br>
+エディタ　　　　　　　　　　　　　PDFビューア　　　<span style="color:Black;background-color:#EEEEEE;">\[組み込みPDFビューア (埋め込み)　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示<br>
+構文の強調表示　　　　　　　 既定の文献　　　<span style="color:Black;background-color:#EEEEEE;">\[BibTeX　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
@@ -82,7 +91,8 @@ SVN<br>
 
 <br>
 
-<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザーコマンド<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　<span style="color:Green;"><strong>✚</strong></span> 追加 　\]</span><br>
 
 <br>
 
@@ -94,89 +104,87 @@ SVN<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+#### 高度なオプションの表示が ON の場合 {#x0fa4d02}
 
-メタコマンド<br>
-
-ビルド &amp; 表示
-: DVI->PDFチェーン
-
-<!-- :既定のコンパイラ|LaTeX -->
-
-ユーザーコマンド<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[　 追加 　\]</span><br>
+platex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を txs:///dvi-pdf-chain に変更します．<br>
+Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を txs:///compile &#x7c; txs:///view に変更して 既定のコンパイラ を txs:///latexmk に変更します．<br>
 
 ***
 
-#### ☑ 高度なオプションの表示 の場合 {#x0fa4d02}
-
-***
-
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
-一般<br>
+一般　　　　　　　　　　　　　　メタコマンド<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド<br>
+コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　　　　\[txs:///dvi-pdf-chain　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">ビルド 　　　　　　　　　　</span>　　　 既定のコンパイラ　　　 \[txs:///latexmk　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット<br>
+キーボードショートカット　　　 既定のビューワー　　　 \[txs:///view-pdf　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
-メニュー<br>
+メニュー　　　　　　　　　　　　 PDFビューア　　　　　　\[txs:///view-pdf-internal --embedded　　　 <strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー<br>
+ツールバー　　　　　　　 　　　既定の文献　　　　　　　\[txs:///bibtex　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-エディタ<br>
+エディタ　　　　　　　 　　　　　既定の索引ツール　　　 \[txs:///makeindex　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定<br>
+詳細なエディタ設定　　　　　 PSチェーン　　　　　　　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///view-ps　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示<br>
+構文の強調表示　　　　　　　DVIチェーン　　　　　　　\[txs:///latex &#x7c; txs:///view-dvi　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
-カスタム強調表示<br>
+カスタム強調表示　　　　　　PDFチェーン　　　　　　　\[txs:///pdflatex &#x7c; txs:///view-pdf　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完<br>
+コマンドの補完　　　　　　　　DVI->PDFチェーン　　　　\[txs:///latex &#x7c; txs:///dvipdf &#x7c; txs:///view-pdf　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法<br>
+文法　　　　　　　　　　　　　　DVI->PS->PDFチェーン　\[txs:///latex &#x7c; txs:///dvips &#x7c; txs:///ps2pdf &#x7c; txs:///view-pdf　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
-プレビュー<br>
+プレビュー　　　　　　　　　　 Asymptote DVIチェーン　\[txs:///latex &#x7c; txs:///asy &#x7c; txs:///latex &#x7c; txs:///view-dvi　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
-SVN<br>
+SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:///pdflatex &#x7c; txs:///asy &#x7c; txs:///pdflatex &#x7c; txs:///view-pdf　<strong>ᐯ</strong>\]<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　ユーザーコマンド<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　<span style="color:Green;"><strong>✚</strong></span> 追加 　\]</span><br>
 
 <br>
 
 <br>
 
-<br>
-
-<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　ビルドオプション<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　☑ コンパイル前に参考文献を確認・更新<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　☑ コンパイル開始時にメッセージを表示<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　☐ すでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しない<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　標準出力に表示:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　コンパイルの繰り返しの最大数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 追加の検索パス:<br>
 
 <br>
 
@@ -186,35 +194,13 @@ SVN<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-メタコマンド<br>
-
-ビルド &amp; 表示
-: txs:///dvi-pdf-chain
-
-<!-- :既定のコンパイラ|txs:///latex (☑ 高度なオプションの表示 の場合) -->
-
-ユーザーコマンド<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[　 追加 　\]</span><br>
-
-ビルドオプション<br>
-☑ コンパイル前に参考文献を確認・更新<br>
-☑ コンパイル開始時にメッセージを表示<br>
-☐ すでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しない<br>
-標準出力に表示:<br>
-コンパイルの繰り返しの最大数:<br>
-☐ 追加の検索パス:<br>
-
-***
-
 ### エディタ {#m95b4393}
 
-#### ☐ 高度なオプションの表示 の場合 {#j5e857fd}
+#### 高度なオプションの表示が OFF の場合 {#j5e857fd}
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
@@ -234,7 +220,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ　　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
@@ -272,12 +258,10 @@ SVN<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
 エディタ<br>
-フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
+フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-既定のフォントエンコーディング:<br>
+既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
 　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
 字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 二重引用符の置換:　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
@@ -285,11 +269,11 @@ SVN<br>
 
 ***
 
-#### ☑ 高度なオプションの表示 の場合 {#j2e0dcc0}
+#### 高度なオプションの表示が ON の場合 {#j2e0dcc0}
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　<span style="color:White;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　</ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
@@ -317,7 +301,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ　　　　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
@@ -363,10 +347,8 @@ SVN<br>
 
 ***
 
-<span style="color:Black;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#2F33DF;"></ins>\[ <span style="color:White;"><strong>？</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
 エディタ<br>
-フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　▼</ins> ☐ モノスペースフォントのみ表示<br>
+フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 行間隔:　　　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
