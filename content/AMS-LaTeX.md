@@ -11,13 +11,13 @@ pukiwiki: "AMS-LaTeX"
 
 [AMS-LaTeX](http://www.ams.org/publications/authors/tex/amslatex) は
 [アメリカ数学会](http://www.ams.org/)（American Mathematical Society）
-によって開発されたパッケージおよびクラスファイルです。
+によって開発されたパッケージおよびクラスファイルです。<br>
 AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した amsmath と，
-アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。
+アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。<br>
 
-- 角藤さんの W32TeX を初めとする多くの TeX システムには最初から含まれていますが，
-    [http://www.ams.org/publications/authors/tex/amslatex](http://www.ams.org/publications/authors/tex/amslatex) や
-    [CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
+TeX Live, W32TeX には最初から含まれていますが，
+[http://www.ams.org/publications/authors/tex/amslatex](http://www.ams.org/publications/authors/tex/amslatex) や
+[CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
 
 ドキュメント等
 
