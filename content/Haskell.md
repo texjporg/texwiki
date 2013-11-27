@@ -22,7 +22,6 @@ pukiwiki: "Haskell"
 - [ゆるふわHaskell (Light &amp; Airy Haskell)](http://kzfm.github.io/laskell/)
 - [http://maoe.hatenadiary.jp/archive/category/Haskell](http://maoe.hatenadiary.jp/archive/category/Haskell)
 - [本物のプログラマはHaskellを使う](http://itpro.nikkeibp.co.jp/article/COLUMN/20060915/248215/)
-- [Haskell Advent Calendar 2012](http://partake.in/events/45a01d39-af5e-42f1-91c7-e8fcc91db244)
 - [Haskellで文字列を UTF-32 ⇔UTF-16 変換する。](http://d.hatena.ne.jp/sirocco/20130416/1366103044)
 - [Haskellで副作用を起こす(Win32 API によるUTF-16 ⇔ Shift-JIS 変換)](http://d.hatena.ne.jp/sirocco/20130422/1366632065)
 - [島ぶくろ　 Haskellプログラミング](http://saltheads.blog134.fc2.com/blog-category-16.html)
