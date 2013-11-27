@@ -360,7 +360,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\インストールしたQtのバージョン\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\4.8.5\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ### TeXworks 0.4.4 で UTF-8 with BOM (UTF-8 BOM あり) 形式のファイルを保存すると BOM が削除される → TeXworks 0.4.5 で修正されました {#je29691c}
 
