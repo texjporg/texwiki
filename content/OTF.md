@@ -62,7 +62,7 @@ pukiwiki: "OTF"
 ### TeX Live {#da8ed89a}
 
 TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
-バージョンはベータ版 ([2012/04/11 v1.7b5 psitau, u0.12 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+バージョンはベータ版 ([2013/11/17 v1.7b6 psitau, u0.13 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
 
 ### W32TeX {#z4ee6291}
 
