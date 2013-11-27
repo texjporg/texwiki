@@ -18,30 +18,30 @@ pukiwiki: "TeXで作られた本"
 
 TeX で作った本を出している出版社：
 
-> [株式会社KADOKAWA](http://www.kadokawa.co.jp/)，
-> [インプレス](http://www.impressjapan.jp/)，
-> [技術評論社](http://gihyo.jp/)（以上はコンピュータ書），
-> [朝倉書店](http://www.asakura.co.jp/)，
-> [岩波書店](http://www.iwanami.co.jp/)， 
-> [内田老鶴圃](http://www.rokakuho.co.jp/)，
-> [旺文社](http://www.obunsha.co.jp/)，
-> [学術図書出版社](http://www.gakujutsu.co.jp/)，
-> [共立出版](http://www.kyoritsu-pub.co.jp/)，
-> [コロナ社](http://www.coronasha.co.jp/)，
-> [三省堂](http://www.sanseido-publ.co.jp/)（本の一覧は[ここ](#SanseidoBooks)），
-> [シュプリンガー・ジャパン](http://www.springer.jp/)，
-> [サイエンス社](http://www.saiensu.co.jp/)，
-> [駿台文庫](http://www.sundaibunko.jp/)，
-> [Z会出版](http://www.zkai.co.jp/books/)，
-> [日本評論社](http://www.nippyo.co.jp/)，
-> [培風館](http://www.baifukan.co.jp/)，
-> [白水社](http://www.hakusuisha.co.jp/)，
-> [平凡社](http://www.heibonsha.co.jp/)，
-> [マガジンハウス](http://magazineworld.jp/)，
-> [丸善](http://pub.maruzen.co.jp/)，
-> [森北出版](http://www.morikita.co.jp/)，
-> [オーム社](http://www.ohmsha.co.jp/)，
-> [多摩通信社](http://www.tamacom.com/index-j.html)
+> - [株式会社KADOKAWA](http://www.kadokawa.co.jp/)
+> - [インプレス](http://www.impressjapan.jp/)
+> - [技術評論社](http://gihyo.jp/)
+> - [朝倉書店](http://www.asakura.co.jp/)
+> - [岩波書店](http://www.iwanami.co.jp/)
+> - [内田老鶴圃](http://www.rokakuho.co.jp/)
+> - [旺文社](http://www.obunsha.co.jp/)
+> - [学術図書出版社](http://www.gakujutsu.co.jp/)
+> - [共立出版](http://www.kyoritsu-pub.co.jp/)
+> - [コロナ社](http://www.coronasha.co.jp/)
+> - [三省堂](http://www.sanseido-publ.co.jp/)（本の一覧は[ここ](#SanseidoBooks)）
+> - [シュプリンガー・ジャパン](http://www.springer.jp/)
+> - [サイエンス社](http://www.saiensu.co.jp/)
+> - [駿台文庫](http://www.sundaibunko.jp/)
+> - [Z会出版](http://www.zkai.co.jp/books/)
+> - [日本評論社](http://www.nippyo.co.jp/)
+> - [培風館](http://www.baifukan.co.jp/)
+> - [白水社](http://www.hakusuisha.co.jp/)
+> - [平凡社](http://www.heibonsha.co.jp/)
+> - [マガジンハウス](http://magazineworld.jp/)
+> - [丸善](http://pub.maruzen.co.jp/)
+> - [森北出版](http://www.morikita.co.jp/)
+> - [オーム社](http://www.ohmsha.co.jp/)
+> - [多摩通信社](http://www.tamacom.com/index-j.html)
 
 意外な本（コンピュータ書や大学レベル以上の理系の本は沢山のものが
 TeX で組まれていますが，それ以外のもの）：
