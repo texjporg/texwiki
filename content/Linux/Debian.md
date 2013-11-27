@@ -144,15 +144,18 @@ Linux 版、Windows 版の双方に関して、[Adobe Reader](</Adobe Reader/>) 
 $ sudo dpkg --add-architecture <architecture>
 ```
 
-を実行することにより、システムのセカンドアーキテクチャが登録され、インストール・実行が可能となります。このとき、セカンドアーキテクチャのパッケージ名末尾には ":&lt;architecture>" が付与されます。
+を実行することにより、システムのセカンドアーキテクチャが登録され、インストール・実行が可能となります。<br>
+このとき、セカンドアーキテクチャのパッケージ名末尾には ":&lt;architecture>" が付与されます。<br>
 
-wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32 bit アーキテクチャのサポートが必須となります。これに関しては、wine のインストール時に apt が説明のメッセージを出しますので、詳細はそちらを御参照下さい。
+wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32 bit アーキテクチャのサポートが必須となります。<br>
+これに関しては、wine のインストール時に apt が説明のメッセージを出しますので、詳細はそちらを御参照下さい。<br>
 
 #### Linux 版 Adobe Reader のインストール {#l44b42e5}
 
-[Adobe Reader](</Adobe Reader/>) (Linux 版/英語版) と Adobe Reader 日本語フォントパック (Linux 版) のパッケージが [deb-multimedia](http://deb-multimedia.org/) (dmo) から供給されています。apt への追加法に関しては [deb-multimedia のページ](http://deb-multimedia.org/) の下の方に書かれています。
+[Adobe Reader](</Adobe Reader/>) (Linux 版/英語版) と Adobe Reader 日本語フォントパック (Linux 版) のパッケージが [deb-multimedia](http://deb-multimedia.org/) (dmo) から供給されています。<br>
+apt への追加法に関しては [deb-multimedia のページ](http://deb-multimedia.org/) の下の方に書かれています。<br>
 
-dmo を apt へ追加した後、インストールする際には以下のようにします。
+dmo を apt へ追加した後、インストールする際には以下のようにします。<br>
 
 ```
 $ sudo dpkg --add-architecture i386 
