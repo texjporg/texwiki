@@ -35,7 +35,7 @@ pukiwiki: "iOS"
 
 ### フリーウェア (無料) {#x09967e4}
 
-- [iVerbTeX](https://itunes.apple.com/jp/app/iverbtex/id560869163)
+- [VerbTeX LaTeX Editor](https://itunes.apple.com/jp/app/iverbtex/id560869163)
 
 ### シェアウェア・製品 {#na04d581}
 
@@ -51,7 +51,7 @@ pukiwiki: "iOS"
     - [Texpad-API.framework](https://github.com/vallettaventures/Texpad-API)
     - [Newest &#39;texpad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texpad)
     - [Texpad : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_232791.html)
-- [iVerbTeX Pro](https://itunes.apple.com/jp/app/iverbtex-pro/id560872078) (シェアウェア)
+- [VerbTeX Pro LaTeX Editor](https://itunes.apple.com/jp/app/iverbtex-pro/id560872078) (シェアウェア)
 
 ## PDF ビューア {#cf5b731d}
 
