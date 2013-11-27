@@ -205,7 +205,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 - [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
     - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
 - [TeXEditor](https://play.google.com/store/apps/details?id=com.TeXEditor.TeXEditor_full) (シェアウェア)
-- [VerbTeX Pro LaTeX (Encryption)](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
+- [VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
 - [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
 - [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
 
