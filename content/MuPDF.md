@@ -16,6 +16,7 @@ pukiwiki: "MuPDF"
 ## MuPDF とは {#u255891c}
 
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．<br>
+MuPDF は PDF/XPS/CBZ のパーサ/レンダリングライブラリとしても使用できます．<br>
 MuPDF は<br>
 
 <table>
@@ -38,7 +39,8 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 
 ### ChangeLog {#vbbec018}
 
-- [summary](http://git.ghostscript.com/?p=mupdf.git;a=summary)
+- [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
+    - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
 
 ### fork {#d573b664}
 
@@ -115,7 +117,7 @@ fitz/image_jpx.c の
 としてコメントアウトします．
 
 ```
-$ CFLAGS="-Wall -O2 -march=native `pkg-config --cflags freetype2 libopenjpeg zlib`" LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 `pkg-config --libs freetype2 libopenjpeg zlib`" make build=release prefix=/mingw install
+$ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg zlib`" LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 `pkg-config --libs freetype2 libopenjpeg zlib`" make build=release prefix=/mingw install
 ```
 
 ### OS X {#bad1a3d8}
