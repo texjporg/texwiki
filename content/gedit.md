@@ -18,6 +18,7 @@ pukiwiki: "gedit"
 gedit は GNOME 公式のテキストエディタです．<br>
 
 - [gedit](https://projects.gnome.org/gedit/)
+- [https://wiki.gnome.org/action/show/Apps/Gedit](https://wiki.gnome.org/action/show/Apps/Gedit)
 
 ***
 
@@ -87,9 +88,9 @@ Windows, OS X, Linux
 
 ### [gedit-latex](https://git.gnome.org/browse/gedit-latex/) {#p2206363}
 
+- [https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin)
 - [https://git.gnome.org/browse/gedit-latex/](https://git.gnome.org/browse/gedit-latex/)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
-- [https://live.gnome.org/Gedit/LaTeXPlugin](https://live.gnome.org/Gedit/LaTeXPlugin)
 - [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
 
 gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．<br>
