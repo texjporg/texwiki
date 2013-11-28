@@ -48,7 +48,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### [Python Japan User's Group](http://www.python.jp/) {#dc4feddc}
 
-- [Python 和訳ドキュメント](http://www.python.jp/doc/)
+- [Python 和訳ドキュメント](http://docs.python.jp/)
 
 ### [python-doc-ja - Pythonドキュメント日本語翻訳プロジェクト](https://code.google.com/p/python-doc-ja/) {#wb6e2415}
 
