@@ -46,22 +46,6 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 $ sudo yum install texlive-scheme-full
 ```
 
-Rawhide のパッケージは TeX Live 2014/dev になっています．<br>
-
-```
-$ platex -v
-e-pTeX 3.1415926-p3.4-130605-2.6 (utf8.euc) (TeX Live 2014/dev)
-kpathsea version 6.2.0dev
-ptexenc version 1.3.2dev
-Copyright 2013 D.E. Knuth.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the e-pTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the e-pTeX source.
-Primary author of e-pTeX: Peter Breitenlohner.
-```
-
 ## [Ghostscript](/Ghostscript/) {#w3eeacef}
 
 ```
