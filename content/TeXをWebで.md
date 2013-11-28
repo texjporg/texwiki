@@ -118,22 +118,18 @@ ulimit -t 10 -f 1024
 
 #### フリーソフトウェア (オープンソフトウェア) {#g834836b}
 
+- [JaxEdit](http://jaxedit.com/)
 - [texlive.js](http://manuels.github.com/texlive.js/website/)
     - [WebブラウザだけでLaTeXからPDFを生成「texlive.js」](http://www.moongift.jp/2013/01/20130130/)
     - [I ported LaTeX to Javascript | Hacker News](http://news.ycombinator.com/item?id=5083361)
-- [JaxEdit](http://jaxedit.com/)
 - [etherTeX](https://github.com/geier/ethertex)
-    <!-- -[[LaTeX Lab:https://code.google.com/p/latex-lab/]] -->
-    <!-- - -[[Google-Docs Base Editor (GDBE):https://code.google.com/p/gdbe/]] -->
 
 #### フリーウェア (無料) {#e0fded48}
 
 - [TeXを使ってみよう（pTeX版）](http://glc.l.u-tokyo.ac.jp/tex/)
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
-- [如何様Latex](http://monja49.blog40.fc2.com/blog-entry-349.html)
 - [Online Latex Editor](http://luikore.github.com/latex/)
 - [compileonline.com](http://www.compileonline.com/)
-    <!-- -[[XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）:http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/]] -->
 
 ### 関連リンク {#cfaeb364}
 
