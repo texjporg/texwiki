@@ -78,15 +78,14 @@ Vim は，チャリティウェアです．<br>
     - [コミットログ](https://github.com/splhack/macvim/commits/master)
 - [MacVim](https://code.google.com/p/macvim/)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
-- [vim-cocoa](https://code.google.com/p/vim-cocoa/)
-    - [コミットログ](https://github.com/jjgod/vim-cocoa/commits/master)
 - [MacOSX Vim](http://sf.net/projects/macosxvim/files/)
 
 #### Android {#o2329571}
 
 - [VimTouch](https://github.com/momodalo/vimtouch)
     - [Vim Touch - Google Play](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch&hl=ja)
-        <!-- -[[Vim for Android:http://ux.getuploader.com/vim/]] -->
+- [rbox](http://d.hatena.ne.jp/rattcv/searchdiary?word=rbox)
+    <!-- - -[[Vim for Android:http://ux.getuploader.com/vim/]] -->
 
 #### iOS {#o6e8ea48}
 
