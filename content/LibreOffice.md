@@ -19,11 +19,6 @@ LibreOffice はフリーのオフィススイートです．
     - [The Document Foundation Wiki](http://wiki.documentfoundation.org/)
     - [LibreOffice Help](http://help.libreoffice.org/)
     - [The Document Foundation Blog](http://blog.documentfoundation.org/)
-- [git](http://cgit.freedesktop.org/libreoffice)
-    - [build](http://cgit.freedesktop.org/libreoffice/build/)
-        - [log](http://cgit.freedesktop.org/libreoffice/build/log/)
-- [gerrit.libreoffice Code Review](https://gerrit.libreoffice.org/)
-    - [gerrit.libreoffice Code Review - core.git/summary](https://gerrit.libreoffice.org/gitweb?p=core.git)
 - [Home &raquo; LibreOffice](http://www.libreoffice.org/)
 - [LibreOffice Extensions](http://extensions.libreoffice.org/)
 - [ホーム &raquo; LibreOffice](http://ja.libreoffice.org/)
@@ -31,6 +26,14 @@ LibreOffice はフリーのオフィススイートです．
     - [Index of /libreoffice/portable](http://download.documentfoundation.org/libreoffice/portable/)
 - [LibreOffice repositories](http://cgit.freedesktop.org/libreoffice)
 - [LibreOffice - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/libreoffice/)
+
+### ChangeLog {#of052050}
+
+- [git](http://cgit.freedesktop.org/libreoffice)
+    - [libreoffice/core](http://cgit.freedesktop.org/libreoffice/core/)
+        - [log](http://cgit.freedesktop.org/libreoffice/core/log/)
+- [gerrit.libreoffice Code Review](https://gerrit.libreoffice.org/)
+    - [gerrit.libreoffice Code Review - core.git/summary](https://gerrit.libreoffice.org/gitweb?p=core.git)
 
 ## Apache OpenOffice (AOO) とは {#q7dc6482}
 
@@ -61,6 +64,7 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 
 - [Calc2LaTeX](http://calc2latex.sourceforge.net/indexj.html)
     - [LibreOffice Calcの表をTeX形式で出力](http://hnsn1202.hateblo.jp/entry/2012/08/06/204352)
+    - [Calc2LaTeX/ LibreOfficeでTeXの作表](http://blogs.yahoo.co.jp/igproj_fusion/15215206.html)
     - [USBメモリ活用講座【付録・Calc2LaTeX使用法】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/c2ltx.shtml)
 
 ## LibreOffice/Apache OpenOffice Impress {#ha3da53a}
