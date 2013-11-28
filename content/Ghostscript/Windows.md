@@ -147,7 +147,7 @@ Ghostscript を C:\gs\gs9.10 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -179,7 +179,7 @@ Ghostscript を C:\Program Files\gs\gs9.10 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
