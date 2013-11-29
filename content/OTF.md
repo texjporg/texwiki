@@ -774,13 +774,16 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 
 #### 游フォントを使う場合 {#t5547d05}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/yu/](https://gitorious.org/tlptexlive/jfontmaps/source/yu/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu/)
+- [https://gitorious.org/tlptexlive/jfontmaps/source/yu-win/](https://gitorious.org/tlptexlive/jfontmaps/source/yu-win/)
+- [https://gitorious.org/tlptexlive/jfontmaps/source/yu-osx/](https://gitorious.org/tlptexlive/jfontmaps/source/yu-osx/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
 
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-yu.map -f otf-yu.map" hoge.tex
+ptex2pdf -l -od "-f ptex-yu-win.map -f otf-yu-win.map" hoge.tex
+ptex2pdf -l -od "-f ptex-yu-osx.map -f otf-yu-osx.map" hoge.tex
 ```
 
 - W32TeX の場合
