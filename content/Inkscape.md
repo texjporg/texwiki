@@ -87,7 +87,13 @@ sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,lat
 
 - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
 - [Release notes/0.48#New LaTeX export for PDF/EPS/PS - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
-- [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html), [http://az.ctan.org/pkg/svg-inkscape](http://az.ctan.org/pkg/svg-inkscape)
+- [svg-inkscape](http://www.ctan.org/pkg/svg-inkscape), [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html)
+    - 使い方は texdoc で確認してください
+
+        ```
+        texdoc svg-inkscape
+        ```
+
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
@@ -96,39 +102,39 @@ Inkscape 0.48 から PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX
 
 ***
 
-<span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Portable Document Format</strong></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>Portable Document Format</strong></span>　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
-　PDF バージョン制限 <ins> PDF 1.5　　　　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　PDF バージョン制限 <ins> PDF 1.5　　　　　　　　　　　　　　　　　\[ <strong>ᐯ</strong> \]</ins><br>
 　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成　☑<br>
 　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
-　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600　\[<strong>⇕</strong>\]</ins><br>
 　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
 　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
-　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ <strong>ᐯ</strong> \]</ins><br>
 　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成　☑ ← ! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) のエラーが発生する場合はチェックボックスを解除してください<br>
 　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
-　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600　\[<strong>⇕</strong>\]</ins><br>
 　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
 　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
 
 ***
 
-<span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>PostScript</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
-　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ ▼ \]</ins><br>
+　PS レベル制限 <ins> PostScript level 3　　　　　　　　　　　　　　\[ <strong>ᐯ</strong> \]</ins><br>
 　テキストをパスに変換　　　　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成　　 ☑<br>
 　フィルタエフェクトをラスタライズ　　　　　　　　　　　　　　　　　　　　☑<br>
-　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600</ins><br>
+　ラスタライズ解像度 (dpi):　　　　　　　　　　　　　　　　　　　　　　<ins>600　\[<strong>⇕</strong>\]</ins><br>
 　エクスポート領域は描画全体　　　　　　　　　　　　　　　　　　　　　☑<br>
 　エクスポート領域はページ　　　　　　　　　　　　　　　　　　　　　　　☐<br>
 　オブジェクトを ID で制限する <ins>　　　　　　　　　　　　　　　　　　　　　</ins><br>
@@ -270,7 +276,7 @@ C:\inkscape>inkscape
 
 ***
 
-<span style="color:Black;background-color:#72C304;"><ins>　　　<span style="color:White;"><strong>Latex 数式</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Latex 数式</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　Latex 数式: <ins>\\(\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
 　追加パッケージ(カンマで区切る):<br>
