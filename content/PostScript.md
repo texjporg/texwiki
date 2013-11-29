@@ -14,13 +14,6 @@ PostScript は業界標準のページ記述言語です。<br>
 [Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp)
 から全て得ることができます。<br>
 [PDF](/PDF/) は PostScript がベースになっています。<br>
-なお，[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
-
-PostScript については，Adobe から4冊の技術資料が出ており，
-うち3冊はアスキーから邦訳が出ています。他にもたくさんの解説書が出ています。<br>
-CQ 出版社の『PostScript 詳細解説』（1997年）という本には，
-和製の LEGATOSCRIPT という Macintosh 上の PostScript インタープリタのデモ版が
-CD-ROM で附いています。
 
 ### PostScript {#h5ddd3dc}
 
@@ -29,50 +22,30 @@ CD-ROM で附いています。
 - [Beyond Linux® From Scratch (PostScript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/ps.html)
 - [Gutenprint (formerly called Gimp-Print)](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
 
-### Ghostscript {#c88bc88f}
+### 処理系 {#c7df0d3d}
+
+#### Ghostscript {#c88bc88f}
+
+Ghostscript は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
 
 [Ghostscript - TeX Wiki](/Ghostscript/) を参照．
 
 ### EPS 作成 {#lceaa8b7}
 
-- [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>)
-    (EMF/WMF → EPS)
-
-- [emf2eps](http://www29.atwiki.jp/t-sadakata/)
-    (貞方 毅 (Tsuyoshi Sadakata) さん)
-
-- [寺嶋さん](http://hp.vector.co.jp/authors/VA023018/)の
-    EPS-draw，EPS-conv，EPS-merg などは便利そうです
-
-- [ps2eps](http://www.tm.uka.de/~bless/ps2eps.html)（Windows の
-    PS プリンタドライバで作った EPS は clip オプションを付けても
-    外側を侵蝕することがあります。これを試してみてください）
-
-- [pstoedit](http://www.pstoedit.net/)
-- [EpsWriter](http://torasenriwohashiru.seesaa.net/) (Tanaka さん)
-    (PowerPoint の表示中のスライドを EPS ファイルに出力するアドイン)
-    (EMF → EPS)
-
+- [変換ツール](</変換ツール/#i3d14633>)
 - [ドローソフト](</描画・グラフツール/>)を使って EPS ファイルを作成することもできます
 
-### PDF 作成 {#w9442957}
-
-- [convbkmk.rb](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) dvips で，日本語のしおりの文字化けを防止するスクリプト
-- [松本隆太郎](http://www.rmatsumoto.org/tex-ps-pdf/)さん：
-    綺麗で小さな PostScript 及び PDF を TeX から作る /
-    hyperref と日本語 / 画像を含む PS ファイルを小さくする
-
-- [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
-- [中島 靖](http://hp1.jonex.ne.jp/~nakajima.yasushi/) さん
-    （日本語 PDF を生成する Perl モジュール PDFJ がある。JIS X 4051 に
-    ほぼ準拠した日本語組版ルールを組み込んであるとのこと）
-
-- PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) も参照
-
-### その他 {#af57d83a}
+### 関連リンク {#af57d83a}
 
 - [sudoku.ps](https://gist.github.com/naohaq/5161653)
-- [TeX Shack](http://www.mech.usp.ac.jp/~okumura/tex/tex.html)（奥村さん@滋賀県立大）
+- [「PostScript」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=PostScript)
+
+### 書籍 {#t05e4cd7}
+
+PostScript については，Adobe から4冊の技術資料が出ており，
+うち3冊はアスキーから邦訳が出ています。他にもたくさんの解説書が出ています。<br>
+
+- 寒川 光『[LaTeX&amp;PostScriptスーパーユーザのテクニック](http://www.kyoritsu-pub.co.jp/bookdetail/9784320121652)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2006年，税込価格 &yen;3,150，[ISBN 978-4-320-12165-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-12165-2)）
 - Adobe Systems 著，桑沢清志 訳
-    『[PostScript リファレンスマニュアル 第3版](http://ascii.asciimw.jp/books/books/detail/4-7561-3822-5.shtml)』
+    『[PostScript リファレンスマニュアル 第3版](http://index.ascii.jp/9766/)』
     （アスキー，2001年，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
