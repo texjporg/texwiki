@@ -28,7 +28,7 @@ pukiwiki: "XyMTeX"
 [XyMTeX （キュムテフ）](http://xymtex.com/fujitas3/xymtex/)が
 参考になることでしょう。
 
-XymTeX は W32TeX に含まれています．<br>
+XymTeX は TeX Live, W32TeX に含まれています．<br>
 
 なお，簡単な参照ページとして
 「[LaTeX で化学構造式 &mdash; XyMTeX の紹介（Internet Archive のウェブアーカイブ）](http://web.archive.org/web/20090224162250/http://www.klavis.info/xym.html)」
