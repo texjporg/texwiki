@@ -93,7 +93,6 @@ l.4 $\bm{a}
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [os.execute() in LuaTeX 0.75.0](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
 - [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
-- [LuaTeX について](http://ossipedia.ipa.go.jp/article/17/)
 - [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
 - [Luatexを使ってMoleCoding](http://molecoding.cocolog-nifty.com/blog/2011/10/luatexmolecodin.html)
@@ -105,3 +104,4 @@ l.4 $\bm{a}
 - [Automatically downloading images to be included](https://groups.google.com/forum/?fromgroups=#!topic/comp.text.tex/_c_kcgQTfaw)
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html))
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
+- [LuaTeX について \[Internet Archive\]](http://web.archive.org/web/20130212160952/http://ossipedia.ipa.go.jp/article/17/)
