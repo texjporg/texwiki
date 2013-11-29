@@ -30,10 +30,6 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.08 には GSview に関するバグがあります．<br>
-
-- [gs908w32full-gpl.exeとgsv50w32.exeがうまく動作しない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1079) ([qa:57187](https://okumuralab.org/~okumura/texfaq/qa/57187.html), [qa:57188](https://okumuralab.org/~okumura/texfaq/qa/57188.html), [qa:57189](https://okumuralab.org/~okumura/texfaq/qa/57189.html))
-
 Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください．<br>
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
@@ -123,10 +119,9 @@ Ghostscript/OS X を参照．
     - [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
 - [http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc](http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc)
 
-## Comment {#z51688d5}
-
-- 「PDF への欧文用フォントの埋め込み制御」で書き換えすべきファイルが、gs9.00、8.70では"Resource/Init/gs_pdfwr.ps"に移動しています。 -- 13th-note 2010-10-12 (火) 15:51:13
-- 「PDFへの欧文用フォントの埋め込み制御」でgs_pdfwr.psについて/.standardfontsを書き換えずに，"/.distillersettings mark"の下の"/default mark"の下の設定(8.71だと104～130行目，最後の空行も含む)をコピーして/NeverEmbedの行を変更したpsfontsembedという新しい設定を作り，dvipdfmx -D "ps2pdf -dPDFSETTINGS=/psfontsembed %i %o"としても良いようです． -- stamura 2010-10-21 (木) 12:00:51
-- 先ほどは上記のように書きましたが，その後調べてみると/AlwaysEmbed, /NeverEmbedがうまく働かない問題は"[http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html](http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html)"で解決されているようです．ただし，gs_pdfwr.psのdefaultでは/NeverEmbedが基本14フォントが指定されているので/AlwaysEmbedは効かず，基本14フォントから埋め込みたいフォントを除いたリストを/NeverEmbedに指定するということになりますが． -- stamura 2010-10-21 (木) 13:41:39
-
-#COMMENT
+<!-- * Comment [#z51688d5] -->
+<!-- - 「PDF への欧文用フォントの埋め込み制御」で書き換えすべきファイルが、gs9.00、8.70では"Resource/Init/gs_pdfwr.ps"に移動しています。 - - 13th-note &new{2010-10-12 (火) 15:51:13}; -->
+<!-- - 「PDFへの欧文用フォントの埋め込み制御」でgs_pdfwr.psについて/.standardfontsを書き換えずに，"/.distillersettings mark"の下の"/default mark"の下の設定(8.71だと104～130行目，最後の空行も含む)をコピーして/NeverEmbedの行を変更したpsfontsembedという新しい設定を作り，dvipdfmx -D "ps2pdf -dPDFSETTINGS=/psfontsembed %i %o"としても良いようです． - - stamura &new{2010-10-21 (木) 12:00:51}; -->
+<!-- - 先ほどは上記のように書きましたが，その後調べてみると/AlwaysEmbed, /NeverEmbedがうまく働かない問題は"http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html"で解決されているようです．ただし，gs_pdfwr.psのdefaultでは/NeverEmbedが基本14フォントが指定されているので/AlwaysEmbedは効かず，基本14フォントから埋め込みたいフォントを除いたリストを/NeverEmbedに指定するということになりますが． - - stamura &new{2010-10-21 (木) 13:41:39}; -->
+<!--  -->
+<!-- #COMMENT -->
