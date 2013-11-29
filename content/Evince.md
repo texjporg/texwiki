@@ -7,7 +7,7 @@ pukiwiki: "Evince"
 
 # Evince
 
-## [Evince](https://projects.gnome.org/evince/) {#fec1fb99}
+## [Evince](https://wiki.gnome.org/Apps/Evince) {#fec1fb99}
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Evince_logo.svg/200px-Evince_logo.svg.png,right,around,nolink,Evince) -->
 
@@ -21,7 +21,7 @@ Evince は PDF, PS, DVI ファイルが表示可能なドキュメント・ビ�
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
-- [Evince](https://projects.gnome.org/evince/)
+- [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
 - [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
