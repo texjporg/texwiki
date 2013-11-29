@@ -220,7 +220,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\biber.exe</ins> または <ins>C:\texlive\2013\bin\win64\biber.exe</ins> または <ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\biber.exe</ins> または <ins>C:\texlive\2013\bin\win64\biber.exe</ins> または <ins>C:\w32tex\bin\biber.exe</ins> または <ins>C:\w32tex\bin64\biber.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
@@ -473,7 +473,7 @@ TeXworks を使用する場合は，
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe または C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
 
 ***
 
