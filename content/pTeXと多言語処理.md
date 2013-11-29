@@ -420,9 +420,7 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 韓國語（&#xd55c;&#xad6d;&#xc5b4;）
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
-KoreanTeX （pLaTeX2e に対応しているのは[kTeX 1.2.2](http://www.khotta.org/ghost/ktex/ktex-122.zip)）がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，後述する方法と異なり入力ソフト \[input method\] が不要です）。
-
-多書体 TeX の開発者である[堀田耕作さん](http://www.khotta.org/ghost/)の[KoreanTeX への解説ページ 1](http://blogs.yahoo.co.jp/koh_hotta/44928272.html)および[KoreanTeX への解説ページ 2](http://blogs.yahoo.co.jp/koh_hotta/45883465.html)もあります。
+KoreanTeX がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
 一方，中国語（&#x6c49;&#x8bed;［漢語］，中文）については扱う方法が
 ありませんでした。しかし，[OTF パッケージ](/OTF/)と OTFCJK パッケージの登場に
@@ -809,7 +807,7 @@ cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 ***
 
 ここで日本語フォントに
-[IPAexフォント/IPAフォント](http://ossipedia.ipa.go.jp/ipafont/)
+[IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/)
 (ipaexm.ttf, ipaexg.ttf) を，中国語簡化字フォントに
 [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/)
 (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wqy.sourceforge.net/en/)
@@ -1123,12 +1121,12 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /HYGoThic-Medium-Acro         /HYGoThic-Medium             ;
 
 %%% IPAex Fonts
-%%% See http://ossipedia.ipa.go.jp/ipafont/
+%%% See http://ipafont.ipa.go.jp/
 /IPAexMincho                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexm.ttf) >> ;
 /IPAexGothic                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexg.ttf) >> ;
 
 %%% IPA Fonts
-%%% See http://ossipedia.ipa.go.jp/ipafont/
+%%% See http://ipafont.ipa.go.jp/
 /IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipam.ttf) >> ;
 /IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipag.ttf) >> ;
 
@@ -1218,7 +1216,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /UnJamoDotum                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoDotum.ttf)  >> ;
 /UnJamoNovel                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoNovel.ttf)  >> ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% monospaced TrueType outline fonts in Windows 8.1/8/7
 %%% See C:\Windows\Fonts\
 /MS-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 0 >> ;
 /MS-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 0 >> ;
@@ -1231,7 +1229,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /GulimChe                     << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 1 >> ;
 /GungsuhChe                   << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 3 >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% proportional TrueType outline fonts in Windows 8.1/8/7
 %%% See C:\Windows\Fonts\
 /MS-PMincho                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 1 >> ;
 /MS-PGothic                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 1 >> ;
@@ -1243,14 +1241,14 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 /Gulim                        << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 0 >> ;
 /Gungsuh                      << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 2 >> ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% monospaced TrueType outline fonts in Windows 8.1/8/7
 %%% See C:\Windows\Fonts\
 /SimSun-ExtB                  << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simsunb.ttf) >> ;
 /KaiTi                        << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simkai.ttf)  >> ;
 /FangSong                     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simfang.ttf) >> ;
 /DFKaiShu-SB-Estd-BF          << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (C:/Windows/Fonts/kaiu.ttf)    >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% proportional TrueType outline fonts in Windows 8.1/8/7
 %%% See C:\Windows\Fonts\
 /Meiryo                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 0 >> ;
 /Meiryo-Italic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 1 >> ;
