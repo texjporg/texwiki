@@ -191,27 +191,6 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 - [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
     - [https://github.com/jecelyin/920-Text-Editor](https://github.com/jecelyin/920-Text-Editor)
 
-### フリーウェア (無料) {#pfa162c4}
-
-- [TeXpert Lite](https://play.google.com/store/apps/details?id=lah.texpert.lite)
-    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
-- [TexEditor Free](https://play.google.com/store/apps/details?id=com.TeXEditorFree)
-- [TeXBuster](https://play.google.com/store/apps/details?id=com.exadge.dt.texbuster)
-- [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex)
-- [DroidEdit (free code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit)
-- [Jota+](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus)
-
-### シェアウェア・製品 {#z7716277}
-
-- [TeX Writer](https://play.google.com/store/apps/details?id=com.litchie.texwriter) (シェアウェア)
-    - [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
-- [TeXpert](https://play.google.com/store/apps/details?id=lah.texpert) (シェアウェア)
-    - [http://lameandroidhero.github.io/](http://lameandroidhero.github.io/)
-- [TeXEditor](https://play.google.com/store/apps/details?id=com.TeXEditor.TeXEditor_full) (シェアウェア)
-- [VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro) (シェアウェア)
-- [DroidEdit Pro (code editor)](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro) (シェアウェア)
-- [Jota+★PRO-KEY](https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota.plus.prokey) (シェアウェア)
-
 ## PDF ビューア {#t5fdeba9}
 
 - [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdfdemo)
