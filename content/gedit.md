@@ -7,9 +7,9 @@ pukiwiki: "gedit"
 
 # gedit
 
-## [gedit](https://projects.gnome.org/gedit/) {#c704b7fa}
+## [gedit](https://wiki.gnome.org/Apps/Gedit) {#c704b7fa}
 
-<img src="https://projects.gnome.org/gedit/images/gedit-logo.png" alt="gedit" style="float:right">
+<img src="https://git.gnome.org/browse/gedit/plain/pixmaps/gedit-logo.png" alt="gedit" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -17,7 +17,7 @@ pukiwiki: "gedit"
 
 gedit は GNOME 公式のテキストエディタです．<br>
 
-- [gedit](https://projects.gnome.org/gedit/)
+- [gedit](https://wiki.gnome.org/Apps/Gedit)
 - [https://wiki.gnome.org/action/show/Apps/Gedit](https://wiki.gnome.org/action/show/Apps/Gedit)
 
 ***
@@ -86,7 +86,7 @@ Windows, OS X, Linux
 
 を参照．<br>
 
-### [gedit-latex](https://git.gnome.org/browse/gedit-latex/) {#p2206363}
+### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
 
 - [https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin)
 - [https://git.gnome.org/browse/gedit-latex/](https://git.gnome.org/browse/gedit-latex/)
