@@ -7,6 +7,8 @@ pukiwiki: "Ghostscript/Windows"
 
 # Ghostscript/Windows
 
+Windows のための Ghostscript としてまず触れるべきなのは，公式のWindows配布物でしょう．そのうえで，角藤さんの作成されているGhostscriptではどんな差分があるか開設するのが良いのではないでしょうか？　最近では，TeX Live (2013) に含まれている tlgs が，日本語の設定まで済んだ公式のWindows配布物に近い出来になっている（Resoursesディレクトリなどが消えているにも関わらずユーザにとって不自由のない動きになっている）ので，それについても触れるのがよいのではないでしょうか？
+
 [Ghostscript](/Ghostscript/) > Windows
 
 ## Ghostscript for Microsoft Windows {#zaffc352}
@@ -220,7 +222,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．角藤版 Ghostscript は 32-bit 版/64-bit 版が存在するので，角藤版 Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
+- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．Ghostscript は 32-bit 版/64-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
