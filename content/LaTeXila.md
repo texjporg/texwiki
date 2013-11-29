@@ -7,9 +7,9 @@ pukiwiki: "LaTeXila"
 
 # LaTeXila
 
-## [LaTeXila](https://projects.gnome.org/latexila/) {#e966f73d}
+## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) {#e966f73d}
 
-<img src="https://projects.gnome.org/latexila/images/logo.png" alt="LaTeXila" style="float:right">
+<img src="https://git.gnome.org/browse/latexila/plain/data/images/app/logo.png" alt="LaTeXila" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -20,7 +20,7 @@ pukiwiki: "LaTeXila"
 LaTeXila は LaTeX 統合環境 (LaTeX エディタ) です．<br>
 SyncTeX に対応しています．<br>
 
-- [LaTeXila - LaTeX editor for GNOME](https://projects.gnome.org/latexila/)
+- [LaTeXila - LaTeX editor for GNOME](https://wiki.gnome.org/Apps/LaTeXila)
 
 ### 動作環境 {#a52783ff}
 
@@ -41,7 +41,7 @@ GNOME
 
 ### インストール {#scad45f9}
 
-[Installation](https://projects.gnome.org/latexila/#installation) を参照．
+[Installation](https://wiki.gnome.org/Apps/LaTeXila#Installation) を参照．
 
 <!-- ***OpenBSD [#v124e0d8] -->
 <!--  -->
