@@ -271,9 +271,9 @@ Cygwin オフィシャルインストーラーの setup-x86.exe または setup-
 　　　　<span style="font-size:12px">Select packages to download</span>
 
 ```
-- All ▲▼ Install ← すべてのパッケージをインストールする場合はクリックして Default から Install に変更
+- All ⇕ Install ← すべてのパッケージをインストールする場合はクリックして Default から Install に変更
   ...
-  - Publishing ▲▼ Install ← TeX Live/Cygwin をフルインストールする場合はクリックして Default から Install に変更
+  - Publishing ⇕ Install ← TeX Live/Cygwin をフルインストールする場合はクリックして Default から Install に変更
       asymptote: Vector graphics language for TeX
       jgraph: A Filter for Plotting Graphs in Postscript
       libkpathsea-devel: TeX file and path search library (development)
