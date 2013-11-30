@@ -38,6 +38,4 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 
 ### PDF 作成 {#w4991875}
 
-- [convbkmk.rb](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) dvips で，日本語のしおりの文字化けを防止するスクリプト
-- [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
-- PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) も参照
+- PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) を参照
