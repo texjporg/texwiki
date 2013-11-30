@@ -31,6 +31,10 @@ Ghostscript は PostScript/PDF インタープリタ (ソフトウェア RIP) �
 
 [Ghostscript - TeX Wiki](/Ghostscript/) を参照．
 
+#### Acrobat Distiller {#l57d69fc}
+
+[Acrobat Distiller は何をするためのソフトウェアですか](http://helpx.adobe.com/jp/legacy/kb/4624.html)
+
 ### EPS 作成 {#lceaa8b7}
 
 - [変換ツール](</変換ツール/#i3d14633>)
@@ -40,3 +44,5 @@ Ghostscript は PostScript/PDF インタープリタ (ソフトウェア RIP) �
 
 - [sudoku.ps](https://gist.github.com/naohaq/5161653)
 - [「PostScript」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=PostScript)
+- [convbkmk.rb](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) dvips で出力した PostScript ファイルを PDF ファイルに変換するときに日本語のしおりの文字化けを防止するためのスクリプト
+- [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
