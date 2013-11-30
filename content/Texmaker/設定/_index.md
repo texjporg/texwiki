@@ -64,7 +64,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + PDF ファイルを表示</span>　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">(●) LaTeX + dvipdfm + PDF ファイルを表示</span><br>
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><span style="color:black;background-color:yellow;"><strong>(●) LaTeX + dvipdfm + PDF ファイルを表示 ← 選択する</strong></span></span><br>
 
 　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Bib(la)tex + LaTeX (x2) + dvips + ps2pdf + PDF ファイルを表示</span>　　　　<span style="color:Black;background-color:#F5F5F5;">◯ Sweave + PdfLaTeX + PDF ファイルを表示</span><br>
 
@@ -125,7 +125,8 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 \[オプション(O)\]-\[Texmaker の設定\]-\[エディタ\]
 
 文字コードのリストからエディタで使用する文字コードを指定できます．<br>
-デフォルトの文字コードは UTF-8 です．Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
+デフォルトの文字コードは UTF-8 です．<br>
+Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
 日本語の文書を作成する場合はスペルチェック辞書のインラインのチェックを外します．<br>
 重要なファイルを作成する場合は 10 分ごとにバックアップをとる にチェックを入れます．<br>
 
@@ -149,7 +150,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　☐ インライン</span><br>
+<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　<span style="color:black;background-color:yellow;"><strong>☐ インライン ← 日本語の文書を作成する場合はチェックをはずす</strong></span></span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
 
