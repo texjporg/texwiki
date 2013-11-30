@@ -181,6 +181,7 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
     - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
 - [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
     - [https://github.com/momodalo/vimtouch](https://github.com/momodalo/vimtouch)
+    - [http://twilog.org/ti5942/search?word=VimTouch](http://twilog.org/ti5942/search?word=VimTouch)
     - [Vim - TeX Wiki](/Vim/)
 - [rbox](http://d.hatena.ne.jp/rattcv/searchdiary?word=rbox)
     - [http://twilog.org/ti5942/search?word=rbox](http://twilog.org/ti5942/search?word=rbox)
