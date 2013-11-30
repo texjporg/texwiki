@@ -31,18 +31,25 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 - [https://bitbucket.org/birkenfeld/sphinx/](https://bitbucket.org/birkenfeld/sphinx/)
     - [https://bitbucket.org/birkenfeld/sphinx/commits/](https://bitbucket.org/birkenfeld/sphinx/commits/)
 
-## Sphinx-Users.jp {#d394d0e1}
+### Sphinx-Users.jp {#d394d0e1}
 
-### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
+#### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
 - [Sphinxをはじめよう](http://sphinx-users.jp/gettingstarted/)
     - [Windowsへのインストール](http://sphinx-users.jp/gettingstarted/install_windows.html)
     - [Windowsへのインストール(スタンドアロンインストール)](http://sphinx-users.jp/gettingstarted/install_windows_standalone.html)
     - [Mac OS X, Linuxへのインストール](http://sphinx-users.jp/gettingstarted/install_unix.html)
+- [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/)
+- [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/)
 
-### [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/) {#yb1fc56f}
+## インストール {#a449ee84}
 
-### [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/) {#t96985ae}
+pip を使用してインストールします．<br>
+Sphinx 1.2b3 をインストールする場合は以下のコマンドを実行します．<br>
+
+```
+pip install Sphinx==1.2b3
+```
 
 ## Python ドキュメント {#h53fa12f}
 
@@ -65,6 +72,8 @@ make html
 を実行します．<br>
 
 ## Sphinx → LaTeX → PDF {#wb4c36d7}
+
+[TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) をインストールします．<br>
 
 LaTeX 経由で PDF ファイルを作成する場合は<br>
 
