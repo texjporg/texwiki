@@ -28,7 +28,7 @@ Org mode は
 - プロジェクト計画
 
 のためのモードです．<br>
-高速で効率的なプレーンテキストシステムを使ってファイルを編集することができます．<br>
+テキストファイルを高速・効率的に編集することができます．<br>
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 
