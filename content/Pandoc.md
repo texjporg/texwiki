@@ -14,3 +14,10 @@ pukiwiki: "Pandoc"
 - [pandocでlatexをpdfに変換](https://gist.github.com/add20/a4ea9b143c41552e72f5)
 - [多様なフォーマットに対応！ドキュメント変換ツールPandocを知ろう](http://qiita.com/items/80bcd0f353ef5b8980ee)
 - [Pandoc &amp; Markdown でいこう！](http://blog.livedoor.jp/ti5942/archives/7168669.html)
+
+### エディタ {#h2a45f83}
+
+- [Emacs](/Emacs/)
+    - [Pandoc-mode](http://joostkremers.github.io/pandoc-mode/)
+- [Vim](/Vim/)
+    - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
