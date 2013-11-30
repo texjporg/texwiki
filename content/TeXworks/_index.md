@@ -211,7 +211,7 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 <br>
 
 　　　　エディタ全体のオプション<br>
-　　　　☐ 現在カーソルのある行をハイライトする　← チェックをはずす<br>
+　　　　<span style="color:black;background-color:yellow;"><strong>☐ 現在カーソルのある行をハイライトする　← チェックをはずす</strong></span><br>
 　　　　☑ 自動補完を有効にする<br>
 
 <br>
