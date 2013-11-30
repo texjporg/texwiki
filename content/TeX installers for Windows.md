@@ -25,8 +25,8 @@ pukiwiki: "TeX installers for Windows"
 TeX インストーラを色々な視点から比較してみます。
 
 インストーラは多種多様なものがあってよいですし，
-ユーザーの好みやレベルに合ったものを選べばよいでしょう。
-インストーラを選ぶときの参考にして下さい。
+ユーザーの好みやレベルに合ったものを選べばよいでしょう。<br>
+インストーラを選ぶときの参考にして下さい。<br>
 
 初心者の方は 
 
@@ -42,8 +42,8 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>初心者オススメ度</strong>：★★★★★
 - <strong>ライセンス</strong>：LPPL, GPL
 - <strong>インストールする対象</strong>：TeX Live バイナリ，TeXworks，Ghostscript，PS_View，dviout for Windows
-- <strong>ユーザーインターフェース</strong>：GUI
-- <strong>ネット・ローカルインストール</strong>：ネットワークインストーラー。ISO ファイルもあります。
+- <strong>ユーザーインターフェース</strong>：GUI, CUI（Windows PowerShell, コマンド プロンプト）
+- <strong>ネットワーク・ローカルインストール</strong>：ネットワークインストーラー。TeX Live はネットワークインストールが推奨されています。ISO ファイルでローカルインストールもできます。
 - <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
 - <strong>長所</strong>：パッケージの管理が可能で最新のバージョンに簡単にアップデートできます。
 - <strong>短所</strong>：
@@ -60,16 +60,16 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
 - <strong>インストールする対象</strong>：W32TeX バイナリ，TeXworks，Ghostscript，GSview，dviout for Windows（DLL プラグインおよび Ruby スクリプトの追加方式により ispell，WinShell）
 - <strong>ユーザーインターフェース</strong>：GUI
-- <strong>ネット・ローカルインストール</strong>：ネットインストーラ。ローカルにも対応しています。
+- <strong>ネットワーク・ローカルインストール</strong>：ネットワークインストーラー。ローカルにも対応しています。
 - <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
-- <strong>長所</strong>：『モットーは「誰にでもインストール出来る TeX」』の通りのインストーラ。単にサーバーからのダウンロードなので，インストーラ用のパッケージャーが不要。おそらく最も汎用性がある，多くの Windows の TeX を使う人をカバーするインストーラ。専用プラグインは Ruby により，比較的簡単に作成できる。
+- <strong>長所</strong>：『モットーは「誰にでもインストール出来る TeX」』の通りのインストーラ。単にサーバーからのダウンロードなので，インストーラ用のパッケージャーが不要。専用プラグインは Ruby により，比較的簡単に作成できる。
 - <strong>短所</strong>：
-    ファイルの配布方法や W32TeX の内部構造が変更された場合にうまく動作しなくなる可能性があります。
+    W32TeX の仕様が変更された場合にうまく動作しなくなる可能性があります。
 
 - <strong>備考</strong>： TeX インストーラ 3 ローカル特化バージョンも別途公開されています。
     その他，多数の TeX 関連ツールおよび解説をされています。
 
-- <strong>参考</strong>：TeXWiki:AbTeXInstaller
+- <strong>参考</strong>：AbTeXInstaller - TeX Wiki
 
 ## texinst {#v558e4b5}
 
@@ -79,10 +79,10 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>ライセンス</strong>：フリーウェア
 - <strong>インストールする対象</strong>：W32TeX バイナリ
 - <strong>ユーザーインターフェース</strong>：CUI（Windows PowerShell, コマンド プロンプト）
-- <strong>ネット・ローカルインストール</strong>：ローカルのみ
+- <strong>ネットワーク・ローカルインストール</strong>：ローカルのみ
 - <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
-- <strong>長所</strong>：最もシンプルなインストーラ。自作の PowerShell スクリプトやバッチファイルなどを自分用に用意すれば，他の処理とも連携できます。
-- <strong>短所</strong>：Microsoft Windows の GUI
+- <strong>長所</strong>：最もシンプルなインストーラー。自作の PowerShell スクリプトやバッチファイルなどを自分用に用意すれば，他の処理とも連携できます。
+- <strong>短所</strong>：GUI
     しか触ったことのない人や，初心者には厳しいかもしれません。初心者の方は TeX インストーラ 3 を使ったほうがいいでしょう。
 
-- <strong>参考</strong>：[TeXWiki:W32TeX](/W32TeX/)
+- <strong>参考</strong>：[W32TeX - TeX Wiki](/W32TeX/)
