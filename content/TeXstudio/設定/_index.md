@@ -198,43 +198,44 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 #### 高度なオプションの表示が OFF の場合 {#j5e857fd}
 
-日本語の文書を作成する場合インラインチェックのチェックをはずします．<br>
+デフォルトの文字コードは UTF-8 です．<br>
+日本語の文書を作成する場合はインラインチェックのチェックをはずします．<br>
 
 ***
 
-<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
-一般<br>
+一般　　　　　　　　　　　　　　エディタ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド<br>
+コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-ビルド<br>
+ビルド　　　　　　　　　　　　　フォントサイズ:　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット<br>
+キーボードショートカット　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示<br>
+構文の強調表示　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完<br>
+コマンドの補完　　　　　　　　二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法<br>
+文法　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
@@ -260,68 +261,58 @@ SVN<br>
 
 ***
 
-エディタ<br>
-フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
-フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
-　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
-字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
-二重引用符の置換:　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
-☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす<br>
-
-***
-
 #### 高度なオプションの表示が ON の場合 {#j2e0dcc0}
 
-日本語の文書を作成する場合インラインチェックのチェックをはずします．<br>
+デフォルトの文字コードは UTF-8 です．<br>
+日本語の文書を作成する場合はインラインチェックのチェックをはずします．<br>
 
 ***
 
-<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
 
-一般<br>
+一般　　　　　　　　　　　　　　エディタ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド<br>
+コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-ビルド<br>
+ビルド　　　　　　　　　　　　　フォントサイズ:　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット<br>
+キーボードショートカット　　　行間隔:　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
-メニュー<br>
+メニュー　　　　　　　　　　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー<br>
+ツールバー　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span><br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定<br>
+詳細なエディタ設定　　　　　 二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示<br>
+構文の強調表示　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
-カスタム強調表示<br>
+カスタム強調表示　　　　　　 ☑ 非テキスト環境でのスペルミスを隠す　　　　　　　　　　　　　☑ 非テキスト環境での文法エラーを隠す<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完<br>
+コマンドの補完　　　　　　　　☐ 含まれるファイルを自動的に読み込む<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
@@ -348,19 +339,5 @@ SVN<br>
 　☑ 高度なオプションの表示
 
 <br>
-
-***
-
-エディタ<br>
-フォントファミリー:　　　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
-フォントサイズ:　　　　　　　　　　　　　　<ins>12　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-行間隔:　　　　　　　　　　　　　　　　　　<ins>100%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-既定のフォントエンコーディング:　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
-　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
-字下げモード:　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
-二重引用符の置換:　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
-☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす<br>
-☑ 非テキスト環境でのスペルミスを隠す　　　　　　　　　　　　　　　　　　　☑ 非テキスト環境での文法エラーを隠す<br>
-☐ 含まれるファイルを自動的に読み込む<br>
 
 ***
