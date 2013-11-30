@@ -12,7 +12,9 @@ pukiwiki: "Markdown"
 - [Markdown](http://daringfireball.net/projects/markdown/)
 - [https://pypi.python.org/pypi/Markdown](https://pypi.python.org/pypi/Markdown)
 - [Wikipedia.ja:Markdown](https://ja.wikipedia.org/wiki/Markdown)
-- [kramdown](http://kramdown.rubyforge.org/)
+- [kramdown](http://kramdown.gettalong.org/)
+- [Redcarpet](https://github.com/vmg/redcarpet)
+- [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 - [Pandoc](/Pandoc/)
 - [md2pdf](https://github.com/vzaccaria/md2pdf)
 - [markdown2latex](http://pypi.python.org/pypi/markdown2latex/)
@@ -21,7 +23,10 @@ pukiwiki: "Markdown"
 
 - [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)
 - [Emacs](/Emacs/)
-    - [Pandoc-mode](http://joostkremers.github.io/pandoc-mode/)
+    - [Emacs Markdown Mode](http://jblevins.org/projects/markdown-mode/)
 - [Vim](/Vim/)
-    - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
+    - [Markdown Vim Mode](https://github.com/plasticboy/vim-markdown)
+    - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
+    - [VimでMarkdown, ブラウザでプレビュー](http://qiita.com/us10096698/items/1ac05c5c9543d2f79fa3)
+    - [Vim で GitHub Flavored Markdown をプレビューする](http://superbrothers.hatenablog.com/entry/2013/09/28/123546)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
