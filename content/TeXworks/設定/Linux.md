@@ -19,7 +19,7 @@ pukiwiki: "TeXworks/設定/Linux"
 
 ### [TeX Live](</TeX Live/>) {#y48c4d8a}
 
-#### pdfpLaTeX {#ed42a6c2}
+#### pLaTeX (ptex2pdf), pdfpLaTeX {#ed42a6c2}
 
 IPAexフォントを埋め込む場合は<br>
 
@@ -35,7 +35,7 @@ $ kanji-config-updmap ipaex
 
 <br>
 
-　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　名前:　　　　<ins>pLaTeX (ptex2pdf)</ins><br>
 　　プログラム:　 <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
@@ -145,7 +145,7 @@ $ sudo cp -p pdfplatex2 /usr/local/bin
 
 ***
 
-#### pdfupLaTeX {#h6d8b747}
+#### upLaTeX (ptex2pdf), pdfupLaTeX {#h6d8b747}
 
 IPAexフォントを埋め込む場合は<br>
 
@@ -161,7 +161,7 @@ $ kanji-config-updmap ipaex
 
 <br>
 
-　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　名前:　　　　<ins>upLaTeX (ptex2pdf)</ins><br>
 　　プログラム:　 <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-u</ins><br>
