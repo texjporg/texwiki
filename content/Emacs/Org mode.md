@@ -31,6 +31,7 @@ Org mode は
 テキストファイルを高速・効率的に編集することができます．<br>
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
+- [Org Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
 
 ### License {#da0cead0}
 
