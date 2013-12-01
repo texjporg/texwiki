@@ -16,8 +16,12 @@ pukiwiki: "Emacs/TeX mode"
 ## TeX mode とは {#b759a43a}
 
 TeX mode は TeX ファイルを編集・タイプセット・プレビューするためのモードです．<br>
-Emacs には標準で [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) が含まれています．<br>
+Emacs には標準で [TeX mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) が含まれています．<br>
 スニペットが必要な場合は [YASnippet](/YASnippet/) を使ってください．<br>
+
+- [http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el)
+- [http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el)
+- [http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD)
 
 ### License {#g3e59977}
 
