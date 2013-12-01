@@ -27,6 +27,8 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 - [ghostscript.com Mailing Lists](http://ghostscript.com/mailman/listinfo/)
     - [The gs-bugs Archives](http://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](http://ghostscript.com/pipermail/gs-devel/)
+- [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+- [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
 
 ### お知らせ {#c2f53cec}
 
