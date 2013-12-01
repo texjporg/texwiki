@@ -45,6 +45,7 @@ Python を C:\Python34 にインストールした場合は
 ### pip {#q07300c6}
 
 - [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
+- [http://www.pip-installer.org/](http://www.pip-installer.org/)
 - [Python3.4からpipが標準インストーラに！？](http://qiita.com/ksato9700/items/c5a6db9d17ad0770a747)
 
 Python 3.4 ではインストーラでインストールするときに pip を指定すれば pip, easy_install がインストールされます．<br>
@@ -61,8 +62,8 @@ pip や easy_install を使用して error: Setup script exited with error: Unab
 TeX Live 2013, Evince 3.8.3, Python 3.3.2 または Python 2.7.5 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
-- fwdevince をうまく動作するように修正する
-- evince_synctex (evince_forward_search &amp; evince_backward_search) を使用する
+- Ruby 版の fwdevince を使用する
+- Python 版の fwdevince をうまく動作するように修正する
 
 などの方法で対処してください．<br>
 
