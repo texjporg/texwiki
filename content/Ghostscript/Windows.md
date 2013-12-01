@@ -15,14 +15,16 @@ Windows のための Ghostscript としてまず触れるべきなのは，公�
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+### Ghostscript {#w95eb08a}
+
+Windows 版の Ghostscript バイナリが公式サイトで配布されています．<br>
+Windows 版には日本語の縦書き PostScript ファイルがきれいに表示できる角藤版 Ghostscript が存在します．<br>
+日本語の縦書き PostScript ファイルを表示する必要がある場合は角藤版 Ghostscript を使用してください．<br>
+
 ### 角藤版 Ghostscript {#m511355c}
 
-Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語強化版バイナリの配布が存在します．<br>
-ここではそれを角藤版 Ghostscript と呼ぶことにし，主にその角藤版 Ghostscript を対象にします．<br>
-
-- 角藤版 Ghostscript に関する記述です．
-- ここに書かれている内容は，無責任・無保証です．
-- 何か問題が発生した場合はリポジトリからソースコードを取得して問題箇所を修正してビルドすれば問題が解決するかもしれません．
+Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語の縦書き PostScript ファイルがきれいに表示できるバイナリが存在します．<br>
+ここではそれを角藤版 Ghostscript と呼ぶことにします．<br>
 
 ### 注意点 {#de072348}
 
@@ -72,43 +74,55 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 
 ### 配布先 {#gc8a2a19}
 
-gs910w32full-gpl.exe または gs910w64full-gpl.exe (最新の角藤版 Ghostscript インストーラー) をダウンロードします．<br>
+#### Ghostscript {#q1e803c3}
 
-- 角藤版 Ghostscript のミラーサイト
-    - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
-    - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+- [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+
+#### 角藤版 Ghostscript {#sbee10cb}
+
+- [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
+- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 
 ### インストール {#a4d9c6ea}
 
 #### 前提条件 {#ead68e72}
 
-安易な「再インストール」なるものはできるだけ避けて下さい．<br>
-Ghostscript や GSview が既にインストールされている場合にはそれを完全な形でアンインストールします．<br>
+旧バージョンの Ghostscript や GSview が既にインストールされている場合は最新版をインストールする前に旧バージョンをアンインストールしておきます．<br>
 ここでは GSview がインストールされていた場合を含めて手順を述べます．<br>
 
 - 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます．
-- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript，GSview をアンインストールします．旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします．
-- Ghostscript や GSview のフォルダーを探し，何か残っていたならばフォルダーごと削除します．
+- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript，GSview をアンインストールします．<br>
+    旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします．
+
+- 旧バージョンの Ghostscript や GSview のフォルダーを探し，何か残っていたならばフォルダーごと削除します．
 - その後，Ghostscript，GSview の順にインストールします．
 
 #### インストール方法 {#b84b5a69}
 
-- gs910w32full-gpl.exe または gs910w64full-gpl.exe を実行します。
+- gs910w32full-gpl.exe または gs910w64full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
     - デフォルトのインストール先は “C:\Program Files\gs\gs9.10”
     - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.10”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-\[参考\] いわゆる初心者は上記のインストール場所を用いておくのがいいでしょう(角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.10 にインストールしておくのが推奨されるという言い方もできます)．しかしながら，インストール場所は各人が好きなように設定することができます．C:\gs でも問題ないでしょうし，通常はやりませんが C:\ に直接インストールすることも可能なはずです(Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので注意が必要です)．また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難でしょう．なお，歴史的な理由等から gs\gs9.10 などというフォルダーにインストールされることがほとんどです．その関係から，様々な解説ではこの gs\gs9.10 などといったフォルダー構造を仮定していることが多いということは理解しておいてください．
+\[参考\] 初心者は上記のインストール場所にインストールするのがいいでしょう．<br>
+角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.10 にインストールしておくのがおすすめです．<br>
+Ghostscript は好きな場所にインストールすることができます．<br>
+C:\gs でも問題ありません．<br>
+Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので C:\ にファイルをコピー・移動する場合は注意が必要です．<br>
+また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難です．<br>
+なお，歴史的な理由等から gs\gs9.10 などというフォルダーにインストールされることがほとんどです．<br>
+その関係から，様々な解説ではこの gs\gs9.10 などといったフォルダー構造を仮定していることが多いということを理解しておいてください．<br>
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -226,7 +240,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
-- &#x2d;dWINKANJI オプションを使用して日本語を表示するには，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の内容に “-dWINKANJI” を追加します。-dWINKANJI オプションに関しては後ろの方に簡単な解説があるのでそちらを参照してください．
+- 角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語の PostScript ファイルを表示するには，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の内容に “-dWINKANJI” を追加します。-dWINKANJI オプションに関しては後ろの方に簡単な解説があるのでそちらを参照してください．
 
 - GSview の \[File\]->\[PS to EPS\] の機能は十分に注意を払って使用してください．ps file を与えた場合に出来上がるのは不正な eps file です．出来上がった eps file を思い通りに扱えない dviware も存在するので，これは簡易的な機能であると理解してください．このことに関しては，\[File\]->\[PS to EPS\] のダイヤログに現れる \[Help\] のボタンを押すと解説を見ることができます．なお，ps ではなく eps file を与えた場合には，この機能は BoundingBox を gui で付け替える有用な tool となります．
 
@@ -250,6 +264,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
 Windows 版の TeX Live に標準で含まれています．<br>
+PS_View を使用する場合は 32-bit 版の Ghostscript が必要です．<br>
 
 TeX Live に含まれている PS_View の C:\texlive\2013\tlpkg\tlpsv\psv.wx.lua または公式サイトで配布されている PS_View の psv.wx.lua の gsargs の dllloc
 
@@ -259,7 +274,7 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を Ghostscript の dll ファイル (C:\gs\gs9.10\bin\gsdll32.dll) に修正します．<br>
+を角藤版 Ghostscript の dll ファイル (C:\gs\gs9.10\bin\gsdll32.dll) に修正します．<br>
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
@@ -275,7 +290,7 @@ TeX Live の場合は C:\texlive\texmf-local\web2c\texmf.cnf に以下の記述�
 TEXLIVE_WINDOWS_EXTERNAL_GS_DLL=C:/gs/gs9.10/bin/gsdll32.dll
 ```
 
-&#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
+角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
 
 ```
 local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
