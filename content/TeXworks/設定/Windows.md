@@ -62,7 +62,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 ***
 
-#### pdfpLaTeX {#nb7beec9}
+#### pLaTeX (ptex2pdf), pdfpLaTeX {#nb7beec9}
 
 TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
 
@@ -80,7 +80,7 @@ kanji-config-updmap ipaex
 
 <br>
 
-　　名前:　　　　<ins>pdfpLaTeX</ins><br>
+　　名前:　　　　<ins>pLaTeX (ptex2pdf)</ins><br>
 　　プログラム: <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
@@ -229,7 +229,7 @@ ps2pdf.bat "%~n1.ps"
 
 ***
 
-#### pdfupLaTeX {#r7f9a2a4}
+#### upLaTeX (ptex2pdf), pdfupLaTeX {#r7f9a2a4}
 
 TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
 
@@ -247,7 +247,7 @@ kanji-config-updmap ipaex
 
 <br>
 
-　　名前:　　　　<ins>pdfupLaTeX</ins><br>
+　　名前:　　　　<ins>upLaTeX (ptex2pdf)</ins><br>
 　　プログラム: <ins>ptex2pdf</ins><br>
 　　引数:　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-u</ins><br>
@@ -893,7 +893,7 @@ Latexmk で PDF ファイルを作成します．
 
 #### 設定後 {#me50c549}
 
-デフォルトを pdfpLaTeX に変更します．<br>
+デフォルトを pLaTeX (ptex2pdf) または pdfpLaTeX に変更します．<br>
 タイプセットのコンソール出力を確認したい場合は 「コンソール出力を表示しない」 に 『表示する』 を指定します．<br> <!-- TeXworks Version 0.5 [[r.793:https://code.google.com/p/texworks/source/detail?r=793]] 以降の場合は Hide output panel: に Never を指定します．~ -->
 
 ***
@@ -915,9 +915,9 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　　　タイプセットの方法<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;"> pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　<span style="color:Black;background-color:#DAEAFF;"> pLaTeX (ptex2pdf) または pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 　　　　 pdfpLaTeX2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
-　　　　 pdfupLaTeX<br>
+　　　　 upLaTeX (ptex2pdf) または pdfupLaTeX<br>
 　　　　 pdfupLaTeX2<br>
 　　　　 pdfTeX<br>
 　　　　 pdfLaTeX<br>
@@ -943,7 +943,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 Mendex<br>
 　　　　 MakeIndex<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pLaTeX (ptex2pdf) または pdfpLaTeX　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
