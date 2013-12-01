@@ -25,7 +25,7 @@ pukiwiki: "C"
 - [http://cx20.main.jp/blog/hello/category/win32-api/](http://cx20.main.jp/blog/hello/category/win32-api/)
 - [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
 - [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
-- [桂田研卒研ノート](http://www.math.meiji.ac.jp/~mk/labo/text/)
+- [桂田研卒研ノート](http://nalab.mind.meiji.ac.jp/~mk/labo/text/)
 - [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
 - [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
 - [C言語機能の比較](http://www.6809.net/tenk/?C%E8%A8%80%E8%AA%9E%E6%A9%9F%E8%83%BD%E3%81%AE%E6%AF%94%E8%BC%83)
