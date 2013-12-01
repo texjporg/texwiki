@@ -530,6 +530,8 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 ## setup-x86.exe, setup-x86_64.exe 以外のパッケージ管理 {#re5d2b36}
 
 - [apt-cyg](https://code.google.com/p/apt-cyg/)
+    - [https://github.com/paprykarz/apt-cyg](https://github.com/paprykarz/apt-cyg)
+    - [https://github.com/kou1okada/apt-cyg](https://github.com/kou1okada/apt-cyg)
     - [https://github.com/transcode-open/apt-cyg](https://github.com/transcode-open/apt-cyg)
     - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [cyg-apt](https://code.google.com/p/cyg-apt/)
