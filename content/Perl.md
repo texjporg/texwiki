@@ -13,10 +13,6 @@ pukiwiki: "Perl"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Perl 11 {#fbb82aae}
-
-- [This Perl goes to 11](http://perl11.org/)
-
 ## Perl 6 {#xd216707}
 
 - [Perl 6](http://perl6.org/)
@@ -26,10 +22,17 @@ pukiwiki: "Perl"
 - [The Perl Programming Language - www.perl.org](http://www.perl.org/)
 - [http://dev.perl.org/](http://dev.perl.org/)
 - [https://github.com/Perl](https://github.com/Perl)
-- [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
 
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
+TeX Live (Win32) 版には Perl 5 の処理系が含まれています．<br>
+W32TeX を使用する場合は Strawberry Perl をインストールしてください．<br>
+
+### ChangeLog {#i169c6d8}
+
+- [http://perl5.git.perl.org/perl.git](http://perl5.git.perl.org/perl.git)
+- [https://github.com/Perl/perl5](https://github.com/Perl/perl5)
+    - [https://github.com/Perl/perl5/commits/](https://github.com/Perl/perl5/commits/)
 
 ### インストール {#l06514b7}
 
@@ -49,3 +52,8 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 
 - [TeX-DVI - CPAN](http://search.cpan.org/~janpaz/TeX-DVI-1.01/)
 - [TeX-XDV-Parse - CPAN](http://search.cpan.org/~jrm/TeX-XDV-Parse-0.02/)
+
+## 関連リンク {#lbc0c2cf}
+
+- [This Perl goes to 11](http://perl11.org/)
+- [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
