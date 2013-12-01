@@ -44,6 +44,8 @@ LuaTeX-ja は
 - [git.sourceforge.jp Git - luatex-ja/luatexja.git/summary](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
+- [http://sourceforge.jp/users/h7k/history](http://sourceforge.jp/users/h7k/history)
+- [http://sourceforge.jp/users/kmaeda/history](http://sourceforge.jp/users/kmaeda/history)
 
 ### ダウンロード {#xa9091b6}
 
@@ -218,6 +220,7 @@ polyglossia は TeX Live にも W32TeX にもインストールされていま�
 - [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
 - [LuaTeX-ja を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=LuaTeX-ja)
 - [LuaTex-ja : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LuaTex-ja)
+- [電通大生のためのLuaLaTeX -UEC Advent Calendar 2013-](http://xaro.hatenablog.jp/entry/2013/12/02/075603)
 - [texlive 2012 - lualatex on Gentoo](http://blogs.yahoo.co.jp/igproj_fusion/17030484.html)
 - [abc11name.tex](https://gist.github.com/aleo724/5238922)
 - \[[tex\]embed source code syntax highlighting with texments](https://gist.github.com/3322504)
