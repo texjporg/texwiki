@@ -138,9 +138,11 @@ make latexpdfja
 ## 関連リンク {#t09e1c4e}
 
 - [Sphinxとは - はてなキーワード](http://d.hatena.ne.jp/keyword/Sphinx)
+- [Sphinx Advent Calendar 2012 - connpass](http://connpass.com/event/1441/)
 - [Sphinx Advent Calendar 2012 (全部俺)](http://advent-calendar2012.usaturn.net/)
 - [http://ossanhoihoi.web.fc2.com/](http://ossanhoihoi.web.fc2.com/)
 - [数学・情報系男子がWikiを捨ててSphinxを使うべき10の理由](http://room6933.com/blog/2011/12/19/hello_sphinx/)
 - [Sphinx](http://blogs.yahoo.co.jp/igproj_fusion/14494896.html)
 - [おれたちが考えた最強の出版システムPython Developers Festa 2012.11](http://www.slideshare.net/k16shikano/our-docsyspyfes201211)
 - [omakeもmakeも使わずに、Sphinxドキュメントの継続的ビルド](http://tell-k.hatenablog.com/entry/2012/01/04/022229)
+- [ドキュメンテーション Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/documentation)
