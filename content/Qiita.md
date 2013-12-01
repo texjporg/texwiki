@@ -7,6 +7,6 @@ pukiwiki: "Qiita"
 
 # Qiita
 
-## Qiita {#dcf76c22}
+## [Qiita](http://qiita.com/) {#dcf76c22}
 
 - [http://qiita.com/zr_tex8r](http://qiita.com/zr_tex8r)
