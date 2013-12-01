@@ -23,14 +23,6 @@ METAFONT 言語で書かれたソースファイルをコンパイルすると�
 自作のフォントを METAFONT で制作するためにはデザインセンスだけでなく、プログラミングの知識も必要になります。<br>
 METAFONT を使用すれば、簡単な記号だけでなく、パラメータを調節することにより複数のウェイト (太さや横幅など) に変化するような、高品質のフォントファミリーを作成することもできます。<br>
 
-METAFONTについて勉強したい方は、以下の書籍をご覧下さい。
-
-- 【絶版】Knuth
-    [『METAFONTブック』](http://index.ascii.jp/10836/)
-    鷺谷好輝訳（アスキー，1994年，6932円，[ISBN4-7561-0194-1](http://ja.wikipedia.org/wiki/Special:Booksources/4-7561-0194-1)）
-    ……METAFONT の原典です。
-    原著のソースファイル：[CTAN:systems/knuth/dist/mf/mfbook.tex](https://mirror.ctan.org/systems/knuth/dist/mf/mfbook.tex)
-
 ### 関連リンク {#af77cd68}
 
 - [TeXで外字を使う, JIS 補助漢字 METAFONT など](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/program.html) (安岡孝一さん)
