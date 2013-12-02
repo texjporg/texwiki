@@ -454,6 +454,58 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
+### BibTeX {#v14b8793}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; bibtex "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">BibTeX</span>　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
+
+### BibTeXu {#s9c94c1c}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; bibtexu "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">BibTeXu</span>　　　　　　　　　　　　　　　　　　　　 <strong>ᐯ</strong>\]</ins><br>
+
+***
+
 ### Mendex {#y0117ee8}
 
 ***
@@ -494,6 +546,58 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
 
 <br>
+
+***
+
+### MakeIndex {#zfab6176}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; makeindex "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">MakeIndex</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
+
+### TeXindy {#q7444722}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; texindy "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXIndy</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
