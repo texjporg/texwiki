@@ -30,6 +30,10 @@ Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br>
 Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は [Windows Management Framework 4.0](http://www.microsoft.com/ja-jp/download/details.aspx?id=40855) をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 
+Windows 8.1 ではタスク バーとナビゲーションのプロパティで「左下隅を右クリックするか Windows キー + X キーを押したときに表示されるメニューで、コマンド プロンプトを Windows PowerShell に置き換える」を ON にするとコマンド プロンプトから Windows PowerShell に置き換えることができます．<br>
+
+- [Windows 8.1 左下隅のナビゲーション メニューをコマンド プロンプトからPowerShellに置き換える](http://nasunoblog.blogspot.jp/2013/11/windows-81-powershell.html)
+
 ## 使い方 {#f77eb1cd}
 
 ### スクリプトの実行 {#o34da8bc}
@@ -142,3 +146,4 @@ Windows PowerShell のオープンソース実装．<br>
 - [How to remove (all) Windows 8 apps using PowerShell](http://www.ghacks.net/2013/08/20/how-to-remove-all-windows-8-apps-using-powershell/)
 - [Learn Windows PowerShell 3 in a Month of Lunches, 2nd Edition](http://it-ebooks.info/book/1539/)
 - [PowerShell Advent Calendar 2013 : ATND](http://atnd.org/events/45107)
+- [Windows 8.1 でなくなった Windows エクスペリエンス インデックス GUI表示の代りに PowerShell で測定する](http://tech.guitarrapc.com/entry/2013/10/25/075010)
