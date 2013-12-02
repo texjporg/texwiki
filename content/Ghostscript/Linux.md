@@ -330,6 +330,10 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ***
 
+### PDF への欧文14書体の埋め込み {#ga265d9e}
+
+- [いまさらのdvipdfmxのフォント埋め込み](http://tauros.ams.eng.osaka-u.ac.jp/mt/jp/archives/000076.html)
+
 ### PDF への CJK フォントの非埋め込み制御 {#ya99c3fd}
 
 [Ghostscript/Windows](/Ghostscript/Windows/#zd1cf8d8) を参照．<br>
