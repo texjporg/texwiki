@@ -18,7 +18,7 @@ pukiwiki: "TeXworks/設定/Windows"
 #### 設定前 {#n2341fff}
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-pLaTeX (ptex2pdf), pdfpLaTeX, pdfpLaTeX2, upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, Latexmk, Latexmk-pdfpLaTeX, Latexmk-pdfpLaTeX2, Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX, pBibTeX, upBibTeX, Mendex を使ってタイプセットできるように設定します．<br>
+pLaTeX (ptex2pdf), pdfpLaTeX, pdfpLaTeX2, upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, Latexmk, Latexmk-pdfpLaTeX, Latexmk-pdfpLaTeX2, Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX, pBibTeX, upBibTeX, BibTeXu, Mendex, TeXindy を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -121,19 +121,6 @@ dvipdfmx "%~n1"
 ■ W32TeX の場合
 
 W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
-
-***
-
-- C:\w32tex\bin\pdfplatex.bat
-
-***
-
-```
-@echo off
-platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
-```
-
-***
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
@@ -856,6 +843,43 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
+#### BibTeXu {#adb97170}
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するのチェックをはずしてください．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>BibTeXu</ins><br>
+　　プログラム: <ins>bibtexu.exe</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
 #### Mendex {#ef14bad7}
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
@@ -876,6 +900,43 @@ Latexmk で PDF ファイルを作成します．
 　　プログラム: <ins>mendex.exe</ins><br>
 　　引数:　　　　<ins>-U</ins><br>
 　　　　　　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+#### TeXindy {#w8653e3e}
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するのチェックをはずしてください．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>TeXindy</ins><br>
+　　プログラム: <ins>texindy.exe</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
 
 <br>
 
@@ -943,8 +1004,10 @@ Latexmk で PDF ファイルを作成します．
 　　　　 pBibTeX<br>
 　　　　 upBibTeX<br>
 　　　　 BibTeX<br>
+　　　　 BibTeXu<br>
 　　　　 Mendex<br>
 　　　　 MakeIndex<br>
+　　　　 TeXindy<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
