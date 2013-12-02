@@ -577,6 +577,37 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
+#### BibTeXu {#ke431c35}
+
+タイプセットの方法を設定します．
+
+実行後、PDFを表示するのチェックをはずしてください．
+
+***
+
+<br>
+
+　　名前:　　　　<ins>BibTeXu</ins><br>
+　　プログラム:　 <ins>bibtexu</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
 #### Mendex {#m4dd7796}
 
 タイプセットの方法を設定します．
@@ -589,6 +620,37 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 　　名前:　　　　<ins>Mendex</ins><br>
 　　プログラム:　 <ins>mendex</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+#### TeXindy {#kf87d076}
+
+タイプセットの方法を設定します．
+
+実行後、PDFを表示するのチェックをはずしてください．
+
+***
+
+<br>
+
+　　名前:　　　　<ins>TeXindy</ins><br>
+　　プログラム:　 <ins>texindy</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
