@@ -209,7 +209,7 @@ function! PdfpLaTeX(type)
 
   w
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdfplatex'
@@ -307,7 +307,7 @@ function! PdfLaTeX(type)
 
   w
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdflatex'
@@ -352,7 +352,7 @@ function! BibTeX()
 
   w
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
@@ -374,7 +374,7 @@ function! MakeIndex()
 
   w
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
@@ -394,7 +394,7 @@ function! TeXworks()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
@@ -425,7 +425,7 @@ function! SumatraPDF()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:t")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -451,7 +451,7 @@ function! Preview()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'open -a Preview.app'
@@ -468,7 +468,7 @@ function! TeXShop()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'open -a TeXShop.app'
@@ -485,7 +485,7 @@ function! Skim()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:t")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -503,7 +503,7 @@ function! Evince()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'evince'
@@ -520,7 +520,7 @@ function! FwdEvince()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:t")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -538,7 +538,7 @@ function! Okular()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:p")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -556,7 +556,7 @@ function! Zathura()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
@@ -573,7 +573,7 @@ function! Qpdfview()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:t")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -591,7 +591,7 @@ function! PdfViewer()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let currentTeXFile = expand("%:t")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
@@ -609,7 +609,7 @@ function! AdobeReader()
     return ''
   end
 
-  let masterDir = getcwd()
+  let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
