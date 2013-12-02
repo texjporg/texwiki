@@ -18,7 +18,7 @@ pukiwiki: "TeXworks/設定/Windows"
 #### 設定前 {#n2341fff}
 
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-ptex2pdf または pdfplatex.bat, pdfplatex2.bat, ptex2pdf または pdfuplatex.bat, pdfuplatex2.bat, latexmk-pdfpLaTeX, latexmk-pdfpLaTeX2, latexmk-pdfupLaTeX, latexmk-pdfupLaTeX2, latexmk-pdfLaTeX, latexmk-LuaLaTeX, latexmk-LuaJITLaTeX, latexmk-XeLaTeX, pbibtex, upbibtex, mendex を使ってタイプセットできるように設定します．<br>
+pLaTeX (ptex2pdf), pdfpLaTeX, pdfpLaTeX2, upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, Latexmk, Latexmk-pdfpLaTeX, Latexmk-pdfpLaTeX2, Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX, pBibTeX, upBibTeX, Mendex を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -62,7 +62,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 ***
 
-#### pLaTeX (ptex2pdf), pdfpLaTeX {#nb7beec9}
+#### pLaTeX (ptex2pdf) {#nb7beec9}
 
 TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
 
@@ -98,7 +98,7 @@ kanji-config-updmap ipaex
 
 ***
 
-バッチファイルを作成しても OK です．<br>
+#### pdfpLaTeX {#rfc4e3b5}
 
 ■ TeX Live の場合
 
@@ -229,7 +229,7 @@ ps2pdf.bat "%~n1.ps"
 
 ***
 
-#### upLaTeX (ptex2pdf), pdfupLaTeX {#r7f9a2a4}
+#### upLaTeX (ptex2pdf) {#r7f9a2a4}
 
 TeX Live で IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから<br>
 
@@ -264,7 +264,8 @@ kanji-config-updmap ipaex
 
 ***
 
-バッチファイルを作成しても OK です．<br>
+#### pdfupLaTeX {#r6870d92}
+
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
 ■ TeX Live の場合
@@ -915,9 +916,11 @@ Latexmk で PDF ファイルを作成します．
 <br>
 
 　　　　タイプセットの方法<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;"> pLaTeX (ptex2pdf) または pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
-　　　　 pdfpLaTeX2　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
-　　　　 upLaTeX (ptex2pdf) または pdfupLaTeX<br>
+　　　　<span style="color:Black;background-color:#DAEAFF;"> pLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　 pdfpLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
+　　　　 pdfpLaTeX2<br>
+　　　　 upLaTeX (ptex2pdf)<br>
+　　　　 pdfupLaTeX<br>
 　　　　 pdfupLaTeX2<br>
 　　　　 pdfTeX<br>
 　　　　 pdfLaTeX<br>
@@ -934,8 +937,8 @@ Latexmk で PDF ファイルを作成します．
 　　　　 Latexmk-pdfupLaTeX<br>
 　　　　 Latexmk-pdfupLaTeX2<br>
 　　　　 Latexmk-pdfLaTeX<br>
-　　　　 Latexmk-pdfLuaLaTeX<br>
-　　　　 Latexmk-pdfLuaJITLaTeX<br>
+　　　　 Latexmk-LuaLaTeX<br>
+　　　　 Latexmk-LuaJITLaTeX<br>
 　　　　 Latexmk-XeLaTeX<br>
 　　　　 pBibTeX<br>
 　　　　 upBibTeX<br>
@@ -943,7 +946,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 Mendex<br>
 　　　　 MakeIndex<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pLaTeX (ptex2pdf) または pdfpLaTeX　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
