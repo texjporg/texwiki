@@ -132,9 +132,19 @@ Adobe Reader 9.1 Font Packs
 ***
 
 ```
-%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jsarticle}
-\usepackage{otf}
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex]{jsarticle}
+    \usepackage[uplatex]{otf}
+  \else
+    \documentclass{jsarticle}
+    \usepackage{otf}
+  \fi
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{luatexja-otf}
+  \usepackage[noembed]{luatexja-preset}
+\fi
 \begin{document}
 
 森\UTF{9DD7}外と内田百\UTF{9592}とが\UTF{9AD9}島屋に行くところを想像した。
@@ -146,20 +156,56 @@ Adobe Reader 9.1 Font Packs
 
 ***
 
-これを “hoge.tex” という名前で保存します。<br>
+これを “hoge.tex” という名前で UTF-8 で保存します。<br>
 Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。<br>
 
 - TeX Live の場合
 
-```
-ptex2pdf -l -od "-f ptex-noEmbed.map -f otf-noEmbed.map" hoge.tex
-```
+> - pLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f ptex-noEmbed.map -f otf-noEmbed.map" hoge.tex
+>     ```
+>
+> - upLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
+>     ```
+>
+> - LuaLaTeX の場合
+>
+>     ```
+>     lualatex hoge.tex
+>     ```
+>
 
 - W32TeX の場合
 
-```
-ptex2pdf -l -od "-f noembed.map" hoge.tex
-```
+> - pLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f noembed.map" hoge.tex
+>     ```
+>
+> - upLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -u -od "-f noembed.map" hoge.tex
+>     ```
+>
+> - LuaLaTeX の場合
+>
+>     ```
+>     lualatex hoge.tex
+>     ```
+>
+> - LuaJITLaTeX の場合
+>
+>     ```
+>     luajitlatex hoge.tex
+>     ```
+>
 
 出力された PDF ファイルを表示します。
 
@@ -188,14 +234,25 @@ Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
 OTF パッケージは
 ベータ版を使用します。<br>
 
-テスト用の pLaTeX ソースは，例えば次のものを用いてみます。<br>
+テスト用の pLaTeX/upLaTeX/LuaLaTeX ソースは，例えば次のものを用いてみます。<br>
 
 ***
 
 ```
-%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jarticle}
-\usepackage{otf}
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex]{jsarticle}
+    \usepackage[uplatex]{otf}
+    \kcatcode`゜=18
+  \else
+    \documentclass{jsarticle}
+    \usepackage{otf}
+  \fi
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{luatexja-otf}
+  \usepackage[noembed]{luatexja-preset}
+\fi
 \begin{document}
 Adobe-Japan1-5で追加された文字を使った例
 \begin{itemize}
@@ -220,7 +277,18 @@ Adobe-Japan1-6で追加された文字を使った例
 ***
 
 最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に
-Adobe-Japan1-6 で追加された文字を使っています。コマンド処理は上と同様です。
+Adobe-Japan1-6 で追加された文字を使っています。<br>
+コマンド処理は上と同様です。<br>
+
+uplatex で処理する場合に \kcatcode\`゜=18 を追加しています．<br>
+これを追加しない場合はエラーが発生します．<br>
+upTeX での kcatcode の既定値が pTeX から変更されているようです．<br>
+
+- W32TeX の upTeX-0.11 ([qa:49088](https://okumuralab.org/~okumura/texfaq/qa/49088.html))
+- pTeX-0.11 の kcatcode の既定値 (Re: W32TeX の...) ([qa:49120](https://okumuralab.org/~okumura/texfaq/qa/49120.html))
+- upTeX の kcatcode の既定値(Re: 欧文ギリシア語の...) ([qa:48229](https://okumuralab.org/~okumura/texfaq/qa/48229.html), [qa:48242](https://okumuralab.org/~okumura/texfaq/qa/48242.html))
+
+を参考にしてください．<br>
 
 ### フォントを埋め込むには {#hf05d89a}
 
@@ -266,7 +334,7 @@ Adobe Reader 9.1 Font Packs
 内の
 OpenType フォントの用途として，Adobe Reader/Acrobat での
 プレビュー・印刷用途を想定しているようです。<br>
-上のような dvipdfmx を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
+上のような dvipdfmx や lualatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
 [TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。<br>
 
 #### UNIX 互換 OS の場合 {#c2475144}
@@ -984,6 +1052,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
 - [http://www.ctan.org/pkg/jfontmaps](http://www.ctan.org/pkg/jfontmaps)
+- [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
