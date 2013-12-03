@@ -9,7 +9,7 @@ pukiwiki: "OTF"
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-## OTF パッケージ {#l22413ec}
+## OTF (japanese-otf, japanese-otf-uptex, luatexja-otf, ZXotf) {#l22413ec}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -56,6 +56,18 @@ pukiwiki: "OTF"
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log)
+
+## luatexja-otf とは {#cdad83e4}
+
+luatexja-otf パッケージは LuaLaTeX, LuaJITLaTeX で OTF パッケージと同等の機能を実現するためのパッケージです．<br>
+
+- [LuaTeX-ja](/LuaTeX-ja/)
+
+## ZXotf とは {#saafb8c1}
+
+ZXotf パッケージは XeLaTeX で OTF パッケージと同等の機能を実現するためのパッケージです．<br>
+
+- [ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)
 
 ## インストール {#g2a8e99e}
 
@@ -109,13 +121,12 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 まず OpenType フォントを持っていなくても試せる方法です。<br>
 Ryimun-Light と
 GothicBBB-Meduim は
-dvipdfmx では埋め込まれないフォントです。<br>
+埋め込まれていないフォントを表します。<br>
 [Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
-が埋め込まれてない
+は埋め込まれていない
 Ryumin-Light と GothicBBB-Medium
-を適切なフォントに代替して表示・印刷することを利用します。<br>
-dvipdfmx
-および Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
+を適切なフォントに代替して表示・印刷します。<br>
+Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
 (Adobe Reader XI Font Packs
 [Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
 /
@@ -123,11 +134,14 @@ dvipdfmx
 /
 Adobe Reader 9.1 Font Packs
 [Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix))
-は
-すでにインストールされているものとします。<br>
+はインストール済みとします。<br>
 
 これで次のものをテストしてみます。<br>
-\UTF{...} は十六進4桁の Unicode 番号，\CID{...} は十進の CID 番号を使います。<br>
+
+- \UTF{...} は十六進4桁の Unicode 番号
+- \CID{...} は十進の CID 番号
+
+を使います。<br>
 
 ***
 
@@ -229,6 +243,43 @@ xdg-open hoge.pdf
 
 PDF ファイルが Adobe Reader/Acrobat に関連付けされている場合は hoge.pdf が Adobe Reader/Acrobat で開かれて表示されると思います。<br>
 
+upLaTeX + dvipdfmx, LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．<br>
+ただし upLaTeX の場合に
+
+```
+ \usepackage[uplatex]{otf}
+```
+
+を記述しなかった場合は dvipdfmx で
+
+```
+char=0x20bb7(134071)
+Tried to set a nonexistent character in a virtual font
+```
+
+と表示されて Adobe Reader XI で 𠮷 (U+20BB7) の字が表示されませんでした．<br>
+
+***
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[uplatex]{otf}
+\else
+  \documentclass{ltjsarticle}
+  \usepackage[noembed]{luatexja-preset}
+\fi
+\begin{document}
+
+森鷗外と内田百閒とが髙島屋に行くところを想像した。
+
+葛飾区の𠮷野屋
+
+\end{document}
+```
+
+***
+
 Adobe Reader/Acrobat XI をお使いの方が多くなりましたので，最新の
 Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
 OTF パッケージは
@@ -281,7 +332,7 @@ Adobe-Japan1-6 で追加された文字を使っています。<br>
 コマンド処理は上と同様です。<br>
 
 uplatex で処理する場合に \kcatcode\`゜=18 を追加しています．<br>
-これを追加しない場合はエラーが発生します．<br>
+これを追加しない場合は uplatex でエラーが発生します．<br>
 upTeX での kcatcode の既定値が pTeX から変更されているようです．<br>
 
 - W32TeX の upTeX-0.11 ([qa:49088](https://okumuralab.org/~okumura/texfaq/qa/49088.html))
@@ -294,8 +345,8 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので
 軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。<br>
-実際，上の pLaTeX ファイルに “\gtfamily” と書き込んで
-全部をゴシック体にすると，Adobe Reader/Acrobat X で開いた場合に
+実際，上のファイルに “\gtfamily” と書き込んで
+全部をゴシック体にして pLaTeX + dvipdfmx で処理すると，Adobe Reader/Acrobat X で開いた場合に
 「土口の吉」が明朝体になってしまうことがあります。<br>
 
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
@@ -311,15 +362,54 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 - TeX Live の場合
 
-```
-ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
-```
+> - pLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
+>     ```
+>
+> - upLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
+>     ```
+>
+> - LuaLaTeX の場合
+>
+>     ```
+>     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     lualatex hoge.tex
+>     ```
+>
 
 - W32TeX の場合
 
-```
-ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
-```
+> - pLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
+>     ```
+>
+> - upLaTeX + dvipdfmx の場合
+>
+>     ```
+>     ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
+>     ```
+>
+> - LuaLaTeX の場合
+>
+>     ```
+>     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     lualatex hoge.tex
+>     ```
+>
+> - LuaJITLaTeX の場合
+>
+>     ```
+>     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     luajitlatex hoge.tex
+>     ```
+>
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
@@ -334,7 +424,7 @@ Adobe Reader 9.1 Font Packs
 内の
 OpenType フォントの用途として，Adobe Reader/Acrobat での
 プレビュー・印刷用途を想定しているようです。<br>
-上のような dvipdfmx や lualatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
+上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
 [TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。<br>
 
 #### UNIX 互換 OS の場合 {#c2475144}
@@ -345,9 +435,24 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 
 次のようにして処理します。<br>
 
-```
-ptex2pdf -l -od '-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map' hoge.tex
-```
+- pLaTeX + dvipdfmx の場合
+
+    ```
+    ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
+    ```
+
+- upLaTeX + dvipdfmx の場合
+
+    ```
+    ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
+    ```
+
+- LuaLaTeX の場合
+
+    ```
+    \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+    lualatex hoge.tex
+    ```
 
 これで明朝体については「小塚明朝 Pr6N R」が埋め込まれるので
 Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
