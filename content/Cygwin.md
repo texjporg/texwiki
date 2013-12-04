@@ -193,10 +193,33 @@ mktexlsr を実行します．<br>
 $ mktexlsr
 ```
 
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+#### フォント埋め込みの設定 {#ea17ba92}
+
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+TeX Live には IPAex フォント，(u)ptex-ipaex.map が収録されています．<br>
+
+```
+$ kpsewhich ipaexm.ttf ipaexg.ttf
+/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
+/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
+$ kpsewhich ptex-ipaex.map uptex-ipaex.map
+/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
+/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
+```
+
+(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
@@ -462,10 +485,22 @@ mktexlsr を実行します．<br>
 $ mktexlsr
 ```
 
-pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+#### フォント埋め込みの設定 {#s6b421fb}
+
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
 $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### 不具合 {#iffd4e02}
