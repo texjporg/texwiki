@@ -17,7 +17,7 @@ pukiwiki: "OTF"
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
-和文 OpenType フォントを使うためのパッケージです。<br>
+和文 OpenType フォントを pLaTeX, upLaTeX で使うためのパッケージです。<br>
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br> <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
 
@@ -345,9 +345,8 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので
 軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。<br>
-実際，上のファイルに “\gtfamily” と書き込んで
-全部をゴシック体にして pLaTeX + dvipdfmx で処理すると，Adobe Reader/Acrobat X で開いた場合に
-「土口の吉」が明朝体になってしまうことがあります。<br>
+実際，上のファイルを upLaTeX + dvipdfmx で処理して，SumatraPDF と TeXworks で開いた場合に
+𠮷 (U+20BB7) の字が表示されませんでした。<br>
 
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
 そのためには OpenType フォントが必要です。<br>
@@ -857,12 +856,14 @@ ps2otfps old.ps new.ps
 
 ```
 ptex2pdf -l -od "-f ptex-noEmbed.map -f otf-noEmbed.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f noembed.map" hoge.tex
+ptex2pdf -l -u -od "-f noembed.map" hoge.tex
 ```
 
 #### IPAexフォントを使う場合 {#xcbe9625}
@@ -874,12 +875,14 @@ ptex2pdf -l -od "-f noembed.map" hoge.tex
 
 ```
 ptex2pdf -l -od "-f ptex-ipaex.map -f otf-ipaex.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-ipaex.map -f otf-up-ipaex.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f ipaex.map" hoge.tex
+ptex2pdf -l -u -od "-f ipaex.map" hoge.tex
 ```
 
 <!-- 各フリーフォントの入手先は[[フォント - TeX Wiki>フォント]]を参照してください。なお，入手先は変更される場合があります。また，利用・再配布等にあたっては「使用許諾契約」をご自身で確認されることを強くおすすめいたします（フリーフォントの「使用許諾契約」は随時変更されるため）。 -->
@@ -893,12 +896,14 @@ ptex2pdf -l -od "-f ipaex.map" hoge.tex
 
 ```
 ptex2pdf -l -od "-f ptex-ms.map -f otf-ms.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-ms.map -f otf-up-ms.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f msmingoth.map" hoge.tex
+ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
 ```
 
 なお，Microsoft Windows に
@@ -954,15 +959,26 @@ ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 
 - TeX Live の場合
 
-```
-ptex2pdf -l -od "-f ptex-yu-win.map -f otf-yu-win.map" hoge.tex
-ptex2pdf -l -od "-f ptex-yu-osx.map -f otf-yu-osx.map" hoge.tex
-```
+> - Windows の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f ptex-yu-win.map -f otf-yu-win.map" hoge.tex
+>     ptex2pdf -l -u -od "-f uptex-yu-win.map -f otf-up-yu-win.map" hoge.tex
+>     ```
+>
+> - OS X の場合
+>
+>     ```
+>     ptex2pdf -l -od "-f ptex-yu-osx.map -f otf-yu-osx.map" hoge.tex
+>     ptex2pdf -l -u -od "-f uptex-yu-osx.map -f otf-up-yu-osx.map" hoge.tex
+>     ```
+>
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f yu.map" hoge.tex
+ptex2pdf -l -u -od "-f yu.map" hoge.tex
 ```
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
@@ -976,12 +992,14 @@ ptex2pdf -l -od "-f yu.map" hoge.tex
 
 ```
 ptex2pdf -l -od "-f ptex-hiragino.map -f otf-hiragino.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-hiragino.map -f otf-up-hiragino.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f hiragino.map" hoge.tex
+ptex2pdf -l -u -od "-f hiragino.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
@@ -1001,12 +1019,14 @@ ptex2pdf -l -od "-f hiragino.map" hoge.tex
 
 ```
 ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
@@ -1023,12 +1043,14 @@ Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/
 
 ```
 ptex2pdf -l -od "-f ptex-morisawa-pr6n.map -f otf-morisawa-pr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-morisawa-pr6n.map -f otf-up-morisawa-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
 ptex2pdf -l -od "-f morisawapr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f morisawapr6n.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
