@@ -428,7 +428,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
-とりあえず Adobe Reader/Acrobat 9 の KozMinPr6N-Regular.otf のある
+とりあえず Adobe Reader 9 の KozMinPr6N-Regular.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下から
 シンボリックリンクします。<br>
 
