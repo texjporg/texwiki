@@ -280,7 +280,7 @@ Tried to set a nonexistent character in a virtual font
 
 ***
 
-Adobe Reader/Acrobat XI をお使いの方が多くなりましたので，最新の
+最新の
 Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
 OTF パッケージは
 ベータ版を使用します。<br>
@@ -569,9 +569,7 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 [TeXWiki:pTeX と多言語処理 #多言語の Unicode 直接入力と pTeX](</pTeXと多言語処理/#cyraccpw>)
 にも解説があります。<br>
 
-大友さんの[機種依存文字変換テーブル \[Internet Archive\]](http://web.archive.org/web/20070923025753/http://www.klavis.info/sjistbl.txt)を
-併用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども変換できて便利そうです
-（[qa:41425](https://okumuralab.org/~okumura/texfaq/qa/41425.html) 参照）。<br>
+upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できて便利そうです。<br>
 
 一方，[角藤さん](/W32TeX/)の配布に
 含まれる[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
@@ -640,6 +638,7 @@ dvipdfmx の設定を一時的に変更したいだけなら，コマンドラ�
 
 ```
 dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
+dvipdfmx -f uptex-hiragino.map -f otf-up-hiragino.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
