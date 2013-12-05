@@ -50,6 +50,35 @@ Ruby を C:\Ruby200-x64 にインストールした場合は
 
 を環境変数 PATH に追加します
 
+### Linux {#pfcca84f}
+
+#### Linux Mint {#o6dd6f52}
+
+- [http://packages.ubuntu.com/ja/ruby](http://packages.ubuntu.com/ja/ruby)
+- [http://packages.ubuntu.com/ja/ruby2.0](http://packages.ubuntu.com/ja/ruby2.0)
+
+#### Debian {#z226ac1e}
+
+- [http://packages.debian.org/ja/ruby](http://packages.debian.org/ja/ruby)
+- [http://packages.debian.org/ja/ruby2.0](http://packages.debian.org/ja/ruby2.0)
+
+#### Fedora {#c69aed3b}
+
+- [https://apps.fedoraproject.org/packages/ruby](https://apps.fedoraproject.org/packages/ruby)
+
+#### openSUSE {#r7994550}
+
+- [http://software.opensuse.org/package/ruby](http://software.opensuse.org/package/ruby)
+
+#### Arch Linux {#k152c3d6}
+
+- [https://www.archlinux.org/packages/extra/x86_64/ruby/](https://www.archlinux.org/packages/extra/x86_64/ruby/)
+- [https://www.archlinux.org/packages/extra/i686/ruby/](https://www.archlinux.org/packages/extra/i686/ruby/)
+
+#### Gentoo Linux {#wf560410}
+
+- [https://packages.gentoo.org/package/dev-lang/ruby](https://packages.gentoo.org/package/dev-lang/ruby)
+
 ## mruby (組み込み向け Ruby) {#we4042fb}
 
 - [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
