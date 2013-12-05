@@ -40,6 +40,39 @@ Python を C:\Python34 にインストールした場合は
 
 を環境変数 PATH に追加します．<br>
 
+### Linux {#l250486b}
+
+#### Linux Mint {#fb9002c1}
+
+- [http://packages.ubuntu.com/ja/python](http://packages.ubuntu.com/ja/python)
+- [http://packages.ubuntu.com/ja/python3](http://packages.ubuntu.com/ja/python3)
+
+#### Debian {#h38e333d}
+
+- [http://packages.debian.org/ja/python](http://packages.debian.org/ja/python)
+- [http://packages.debian.org/ja/python3](http://packages.debian.org/ja/python3)
+
+#### Fedora {#y61bb303}
+
+- [https://apps.fedoraproject.org/packages/python](https://apps.fedoraproject.org/packages/python)
+- [https://apps.fedoraproject.org/packages/python3](https://apps.fedoraproject.org/packages/python3)
+
+#### openSUSE {#v8959680}
+
+- [http://software.opensuse.org/package/python](http://software.opensuse.org/package/python)
+- [http://software.opensuse.org/package/python3](http://software.opensuse.org/package/python3)
+
+#### Arch Linux {#y0be7e82}
+
+- [https://www.archlinux.org/packages/extra/x86_64/python/](https://www.archlinux.org/packages/extra/x86_64/python/)
+- [https://www.archlinux.org/packages/extra/i686/python/](https://www.archlinux.org/packages/extra/i686/python/)
+- [https://www.archlinux.org/packages/extra/x86_64/python2/](https://www.archlinux.org/packages/extra/x86_64/python2/)
+- [https://www.archlinux.org/packages/extra/i686/python2/](https://www.archlinux.org/packages/extra/i686/python2/)
+
+#### Gentoo Linux {#u2a01502}
+
+- [https://packages.gentoo.org/package/dev-lang/python](https://packages.gentoo.org/package/dev-lang/python)
+
 ## パッケージ管理 {#n7b5e91b}
 
 ### pip {#q07300c6}
