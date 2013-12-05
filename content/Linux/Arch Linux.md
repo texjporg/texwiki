@@ -34,6 +34,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 ## インストール {#ba9eb570}
 
 - [Beginners' Guide (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Beginners%27_Guide_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+- [【ArchLinux】ArchLinuxインストールめも (2013完全版？？？)](http://tosainu.wktk.so/view/325)
 - [Arch Linuxインストールメモ （archlinux-2013.09.01）](http://extrea.hatenablog.com/entry/2013/09/16/020230)
 - [【Arch Linuxをインストールする】 2013.7.01バージョン](http://zaka-think.com/linux/arch-linux%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/)
 - [Arch Linux インストール](http://qiita.com/tukiyo/items/48fb3b4b41642743d581)
