@@ -90,7 +90,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span>　組み込みビューア</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
 
