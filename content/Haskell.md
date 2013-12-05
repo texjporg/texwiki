@@ -41,6 +41,8 @@ pukiwiki: "Haskell"
 - [http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell](http://stackoverflow.com/questions/2386210/how-to-get-a-pointer-value-in-haskell)
 - [48時間でSchemeを書こう](http://ja.wikibooks.org/wiki/48%E6%99%82%E9%96%93%E3%81%A7Scheme%E3%82%92%E6%9B%B8%E3%81%93%E3%81%86)
 - [Haskellの勉強をしていたら、Elixirのパイプライン演算子がF#由来であることを知った](http://d.hatena.ne.jp/ajiyoshi/20130127/1359284684)
+- [ファンクタ, アプリカティブ, モナド](https://gist.github.com/kohyama/5856037)
+- [lhs2TeX](http://www.andres-loeh.de/lhs2tex/)
 - [Haskell Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/haskell)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
