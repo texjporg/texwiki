@@ -142,10 +142,11 @@ UTF-8 を使用したい方は
 
 ### Adobe Reader XI で PDF ファイルが表示できない → WinShell 3.3.2.6 にアップデートしてレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを AcroViewR11 に修正 {#s2ec7c9c}
 
+- [WinShellのCannot start AcrobatReader or open the document.](http://d.hatena.ne.jp/imasusen/20131128/1385574812)
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
 WinShell 3.3.2.6 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
-WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの値によっては以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
