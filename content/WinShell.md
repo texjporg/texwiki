@@ -9,9 +9,9 @@ pukiwiki: "WinShell"
 
 <strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。</strong><br>
 
-WinShell ではなく [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/) などの統合環境をおすすめします．<br>
+<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境をおすすめします．</strong><br>
 
-## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/), [TeXnicCenter](/TeXnicCenter/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -146,7 +146,7 @@ UTF-8 を使用したい方は
 - [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
 WinShell 3.3.2.6 は Adobe Reader XI と Adobe Acrobat XI の DDE に対応しています．<br>
-WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの値によっては以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
 
 ***
 
