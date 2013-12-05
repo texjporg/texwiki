@@ -78,7 +78,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;"><span style="color:#3333CC;">◎</span>　組み込みビューア</span><br>
+<span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
 
