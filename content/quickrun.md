@@ -116,6 +116,7 @@ let g:quickrun_config = {
 ## 関連リンク {#p20fe037}
 
 - [http://twilog.org/ti5942/search?word=quickrun](http://twilog.org/ti5942/search?word=quickrun)
+- [Latexmkとquickrun.vimで快適な執筆環境](http://www.tabitha.mydns.jp/2013/10/10/latexmk%E3%81%A8quickrun-vim%E3%81%A7%E5%BF%AB%E9%81%A9%E3%81%AA%E5%9F%B7%E7%AD%86%E7%92%B0%E5%A2%83/)
 - [vimのbackgroundでtexコンパイルできるようにしたり](http://www.haconeco.com/?p=176)
 - [vim-quickrunでMarkdown(Mathjaxつき)](http://rutto-ysgr.net/post/46932083342/vim-quickrun-markdown-mathjax)
 - [quickrun.vim について語る](http://d.hatena.ne.jp/osyo-manga/20130311/1363012363)
