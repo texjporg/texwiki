@@ -132,6 +132,98 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
 
 ***
 
+### pdfLaTeX.js {#bcb5069b}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + pdflatex;
+
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
+```
+
+***
+
+### LuaLaTeX.js {#fdfe69ad}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var lualatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + lualatex;
+
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
+```
+
+***
+
+### LuaJITLaTeX.js {#h075066b}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var luajitlatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + luajitlatex;
+
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
+```
+
+***
+
+### XeLaTeX.js {#pe628e7a}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var xelatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + xelatex;
+
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
+```
+
+***
+
 ### TeXworks.js {#l8cddb6a}
 
 ***
