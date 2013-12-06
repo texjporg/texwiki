@@ -36,7 +36,7 @@ UTF-8 を既定のコードページにする場合は 65001 (UTF-8) に設定�
 
 ***
 
-<span style="color:Black;background-color:#0055DD;"><ins>　</ins></span>![AkelPad](http://akelpad.sourceforge.net/img/l.gif)<span style="color:Black;background-color:#0055DD;"><ins><span style="color:White;"><strong>設定...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+<span style="color:#0055DD;background-color:#0055DD;"><ins>　</ins></span>![AkelPad](http://akelpad.sourceforge.net/img/l.gif)<span style="color:#0055DD;background-color:#0055DD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定...</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　<strong>\[ 全般　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ レジストリー \]\[ エディター 1 \]\[ エディター 2 \]\[ 詳細設定 \]</ins></span><br>
 　　　　　実行<br>
@@ -55,17 +55,17 @@ UTF-8 を既定のコードページにする場合は 65001 (UTF-8) に設定�
 <br>
 
 　　　　コードページの認識:　　　　　　　　　　　　　　　　　　　　　　　　　バッファー:<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 日本語 (932, UTF-8)　　　　　　　　　　　　　　　　　　　　▼\]</span>　　<ins>1024</ins><br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 日本語 (932, UTF-8)　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　　<ins>1024</ins><br>
 
 <br>
 
 　　　　既定のコードページ:<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 65001 (UTF-8)　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　フィルター　\]</span><br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 65001 (UTF-8)　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　フィルター　\]</span><br>
 
 <br>
 
-　　　　既定の改行<br>
-　　　　　 <span style="color:#3333CC;">◎</span> Windows　　　　　　　　　◯ Unix　　　　　　　　　　　◯ Mac<br>
+　　　　　New file<br>
+　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 65001 (UTF-8)　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　☐ BOM　　<span style="color:Black;background-color:#EEEEEE;">\[ Win　　　<strong>ᐯ</strong>\]</span><br>
 
 ***
 
@@ -80,35 +80,54 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
 ***
 
 ```
-function main()
-{
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
-  var b = fso.GetBaseName(AkelPad.GetEditFile(0));
-  var cd = "cd /d " + ["\"", c, "\""].join("");
-  var latex = "platex -synctex=1 -guess-input-enc -sjis-terminal";
-  var codepage = AkelPad.GetEditCodePage(0);
-  if (codepage == 65001) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal";
-  } else if (codepage == 932) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal";
-  } else if (codepage == 20932) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal";
-  } else if (codepage == 50220 || codepage == 50221 || codepage == 50222) {
-    latex = "platex -synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal";
-  }
-  latex += " " + "-jobname=" + ["\"", b, "\""].join("") + " " + ["\"", b, "\""].join("");
-  var dvipdfm = "dvipdfmx" + " " + ["\"", b, "\""].join("");
-  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -guess-input-enc -sjis-terminal\"";
+    var codepage = AkelPad.GetEditCodePage(0);
+    if (codepage == 65001) {
+        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal\"";
+    } else if (codepage == 932) {
+        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal\"";
+    } else if (codepage == 20932) {
+        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal\"";
+    } else if (codepage == 50220 || codepage == 50221 || codepage == 50222) {
+        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal\"";
+    }
+    ptex2pdf += " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
 
-  var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
-  if (ok == 1) {
-    AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
-    AkelPad.Exec(cmd);
-  }
-}
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
+```
 
-main();
+***
+
+### pdfupLaTeX.js {#c0a300af}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
+    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
+    var cd = "cd /d " + ["\"", c, "\""].join("");
+    var ptex2pdf = "ptex2pdf -l -u -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8\"" + " " + ["\"", b, "\""].join("");
+    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
+
+    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
+    if (ok == 1) {
+        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
+        AkelPad.Exec(cmd);
+    }
+}.call(this));
 ```
 
 ***
@@ -118,30 +137,27 @@ main();
 ***
 
 ```
-function main()
-{
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  var currentTeXFile = AkelPad.GetEditFile(0);
-  var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
-  var texworks = "texworks";
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var currentTeXFile = AkelPad.GetEditFile(0);
+    var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    var texworks = "texworks";
 
-  if (!fso.FileExists(pdfFile)) {
-    var mainTeXFile = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
-    if (mainTeXFile != "") {
-      pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    if (!fso.FileExists(pdfFile)) {
+        var mainTeXFile = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+        if (mainTeXFile != "") {
+            pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+        }
     }
-  }
 
-  var mainTeXDir = fso.GetParentFolderName(pdfFile);
-  var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
-  pdfFile = ["\"", pdfFile, "\""].join("");
+    var mainTeXDir = fso.GetParentFolderName(pdfFile);
+    var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+    pdfFile = ["\"", pdfFile, "\""].join("");
 
-  var args = texworks + " " + pdfFile;
-  var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
-  AkelPad.Exec(cmd);
-}
-
-main();
+    var args = texworks + " " + pdfFile;
+    var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+    AkelPad.Exec(cmd);
+}.call(this));
 ```
 
 ***
