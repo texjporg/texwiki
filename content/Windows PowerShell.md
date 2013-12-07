@@ -118,6 +118,11 @@ Windows PowerShell のオープンソース実装．<br>
 
 - [Pash](https://github.com/Pash-Project/Pash)
 
+## WSH {#i8928798}
+
+- [http://wsh.style-mods.net/](http://wsh.style-mods.net/)
+    - [http://wsh.style-mods.net/topic10.htm](http://wsh.style-mods.net/topic10.htm)
+
 ## 関連リンク {#teb8e64f}
 
 - [Windows PowerShell](http://technet.microsoft.com/ja-jp/library/bb978526.aspx)
