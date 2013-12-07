@@ -119,7 +119,7 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
     var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
     var b = fso.GetBaseName(AkelPad.GetEditFile(0));
     var cd = "cd /d " + ["\"", c, "\""].join("");
-    var ptex2pdf = "ptex2pdf -l -u -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8\"" + " " + ["\"", b, "\""].join("");
+    var ptex2pdf = "ptex2pdf -l -u -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal\"" + " " + ["\"", b, "\""].join("");
     var cmd = "cmd /c " + cd + " && " + ptex2pdf;
 
     var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
