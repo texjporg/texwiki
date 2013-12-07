@@ -109,6 +109,44 @@ let g:quickrun_config = {
 
 ***
 
+#### pdfLaTeX, TeXworks を使用する場合 {#tae9ce5f}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'pdflatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
+#### pdfLaTeX, SumatraPDF を使用する場合 {#i54ae297}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'pdflatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
 #### LuaLaTeX, TeXworks を使用する場合 {#t7007bd8}
 
 ***
@@ -140,6 +178,44 @@ set noshellslash
 let g:quickrun_config = {
 \   'tex': {
 \       'command': 'lualatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
+#### LuaJITLaTeX, TeXworks を使用する場合 {#d6941ec3}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'luajitlatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
+#### LuaJITLaTeX, SumatraPDF を使用する場合 {#w61e8fca}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'luajitlatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%S:r.pdf"']
 \   },
 \}
@@ -225,6 +301,24 @@ let g:quickrun_config = {
 
 ***
 
+#### pdfLaTeX, open を使用する場合 {#l161e4d8}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'pdflatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
 #### LuaLaTeX, open を使用する場合 {#tddb72d5}
 
 ***
@@ -236,6 +330,24 @@ let g:quickrun_config = {
 let g:quickrun_config = {
 \   'tex': {
 \       'command': 'lualatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
+#### LuaJITLaTeX, open を使用する場合 {#ha729285}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'luajitlatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'open %s:r.pdf']
 \   },
 \}
@@ -299,6 +411,24 @@ let g:quickrun_config = {
 
 ***
 
+#### pdfLaTeX, xdg-open を使用する場合 {#gac3cd08}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'pdflatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'xdg-open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
 #### LuaLaTeX, xdg-open を使用する場合 {#me505449}
 
 ***
@@ -310,6 +440,24 @@ let g:quickrun_config = {
 let g:quickrun_config = {
 \   'tex': {
 \       'command': 'lualatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'xdg-open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
+#### LuaJITLaTeX, xdg-open を使用する場合 {#m611735a}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'luajitlatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'xdg-open %s:r.pdf']
 \   },
 \}
