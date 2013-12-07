@@ -20,6 +20,8 @@ pukiwiki: "XeTeX"
 XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
 「ズィーTeX」と読みます．<br>
 
+TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314))<br>
+
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
