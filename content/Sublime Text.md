@@ -65,6 +65,7 @@ Windows, OS X, Linux
 - [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
 - [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
+- [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
 
 ### Linux {#x47ef3df}
 
