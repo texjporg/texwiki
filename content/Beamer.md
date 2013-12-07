@@ -176,6 +176,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
 - [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
 - [Beamer &mdash; Tasuku Soma&#39;s Homepage](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/beamer.html)
+- [LyXでbeamer使うテンプレート](https://twitter.com/econometror/status/409287233372291072)
 - [LaTeX + Beamer でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/18/020615)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
