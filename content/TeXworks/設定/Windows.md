@@ -1487,10 +1487,18 @@ endlocal
 
 TeX コマンドのオプションに -synctex=1 を追加します．
 
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の記述を設定します．<br>
+
+■ TeX Live に含まれている TeXworks の場合
 
 ```
-C:\w32tex\share\texworks\TeXworks.exe --position=%l "%f"
+"C:\texlive\2013\tlpkg\texworks\texworks.exe" --position=%l "%f"
+```
+
+■ W32TeX に含まれている TeXworks の場合
+
+```
+"C:\w32tex\share\texworks\TeXworks.exe" --position=%l "%f"
 ```
 
 &#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
