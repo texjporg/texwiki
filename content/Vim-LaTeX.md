@@ -148,8 +148,6 @@ let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
 "let g:Tex_ViewRule_pdf = 'pdfopen --rxi --file'
-let g:Tex_ViewRule_ps = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance'
-let g:Tex_ViewRule_dvi = 'cmd /c start $*.dvi'
 ```
 
 ***
@@ -229,14 +227,13 @@ let g:Tex_MakeIndexFlavor = '/usr/texbin/mendex $*.idx'
 "let g:Tex_MakeIndexFlavor = '/usr/texbin/makeindex $*.idx'
 "let g:Tex_MakeIndexFlavor = '/usr/texbin/texindy $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
+let g:Tex_ViewRule_pdf = '/usr/bin/open'
+"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXShop.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXworks.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Firefox.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a "Adobe Reader.app"'
-let g:Tex_ViewRule_ps = '/usr/bin/open'
-let g:Tex_ViewRule_dvi = '/usr/bin/open'
 ```
 
 ***
@@ -325,7 +322,8 @@ let g:Tex_MakeIndexFlavor = 'mendex $*.idx'
 "let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
 "let g:Tex_MakeIndexFlavor = 'texindy $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_ViewRule_pdf = 'xdg-open'
+"let g:Tex_ViewRule_pdf = 'evince'
 "let g:Tex_ViewRule_pdf = 'okular --unique'
 "let g:Tex_ViewRule_pdf = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
 "let g:Tex_ViewRule_pdf = 'qpdfview --unique'
@@ -336,13 +334,6 @@ let g:Tex_ViewRule_pdf = 'evince'
 "let g:Tex_ViewRule_pdf = 'chromium --new-window'
 "let g:Tex_ViewRule_pdf = 'acroread'
 "let g:Tex_ViewRule_pdf = 'pdfopen -viewer ar9-tab'
-let g:Tex_ViewRule_ps = 'evince'
-"let g:Tex_ViewRule_ps = 'okular --unique'
-"let g:Tex_ViewRule_ps = 'zathura'
-"let g:Tex_ViewRule_ps = 'qpdfview --unique'
-"let g:Tex_ViewRule_ps = 'gv --watch'
-let g:Tex_ViewRule_dvi = 'pxdvi -watchfile 1'
-"let g:Tex_ViewRule_dvi = 'xdvi -watchfile 1'
 ```
 
 ***
