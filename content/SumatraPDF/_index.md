@@ -106,7 +106,8 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．<br>
 この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．<br>
 どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．<br>
-例えば [W32TeX](/W32TeX/) に含まれている [TeXworks](/TeXworks/) であれば
+
+[TeX Live](</TeX Live/>) に含まれている [TeXworks](/TeXworks/) であれば
 
 ***
 
@@ -116,7 +117,21 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 　　逆順検索コマンドラインの設定<br>
 　　PDF ドキュメント上でダブルクリックしたときに呼び出すコマンドラインを入<br>
 　　力:<br>
-　　<ins>C:\w32tex\share\texworks\TeXworks.exe --position=%l "%f"</ins><br>
+　　<ins>"C:\texlive\2013\tlpkg\texworks\texworks.exe" --position=%l "%f"</ins><br>
+
+***
+
+[W32TeX](/W32TeX/) に含まれている [TeXworks](/TeXworks/) であれば
+
+***
+
+<span style="color:#FFF100;background-color:#FFF100;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>SumatraPDF のオプション</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+...<br>
+　　逆順検索コマンドラインの設定<br>
+　　PDF ドキュメント上でダブルクリックしたときに呼び出すコマンドラインを入<br>
+　　力:<br>
+　　<ins>"C:\w32tex\share\texworks\TeXworks.exe" --position=%l "%f"</ins><br>
 
 ***
 
