@@ -25,6 +25,7 @@ pukiwiki: "OCaml"
 - [C関数をラップしてOCamlに接続する方法 (How to wrap C functions to OCaml)](http://www.geocities.jp/harddiskdive/ocaml-wrapping-c/ocaml-wrapping-c.html)
 - [http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface](http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface)
 - [https://github.com/ocamllabs/ocaml-ctypes](https://github.com/ocamllabs/ocaml-ctypes)
+- [https://realworldocaml.org/v1/en/html/](https://realworldocaml.org/v1/en/html/)
 
 ### ChangeLog {#j264cfdf}
 
