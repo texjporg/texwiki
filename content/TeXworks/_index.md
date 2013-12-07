@@ -420,7 +420,7 @@ kanji-config-updmap ipaex
 
 デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
 pdfpLaTeX (platex + dvipdfmx) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
-フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が存在するかどうかを確認します．<br>
+フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．<br>
 
 ***
 
@@ -438,7 +438,6 @@ C:.
 
 ***
 
-C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が存在しない場合は最新版の [W32TeX](/W32TeX/) にアップデートしてください．<br>
 C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．<br>
 
 ***
