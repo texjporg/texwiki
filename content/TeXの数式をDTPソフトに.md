@@ -168,10 +168,9 @@ OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォント
 （フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
 
 インストールの場所は，Adobe 製品だけから使うなら
-/Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では
-PictPrinter も同じフォントを使うことを考えれば，次の場所のいずれかに
-入れるのがいいかもしれません。OS X では次の順にフォントを探してくれます
-（→ 「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」）。
+/Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では次の場所のいずれかに入れるのがいいかもしれません。<br>
+OS X では次の順にフォントを探してくれます
+（→ 「[OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。<br>
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
@@ -186,22 +185,23 @@ PictPrinter も同じフォントを使うことを考えれば，次の場所�
 1. /Library/Fonts// 以下（Local ドメイン用。ローカルユーザ全員で使うなら）
 1. /Network/Library/Fonts// 以下（Network ドメイン用）
 1. /System/Library/Fonts/ （System ドメイン用。通常はここにはさわらない）
-1. /"System Folder"/Fonts/
-    （Classic ドメイン用。Classic 環境用だが Mac OS X 10.4 \[PowerPC\] でも使える）
 
 私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，
 その中にまとめて入れました（Mac OS X 10.2 以降で可能）。
 
-ただ，Mac 版 Illustrator 10.0.3 では PDF で保存すると一部の文字が化けます。
+ただ，Mac 版 Illustrator 10.0.3 では PDF で保存すると一部の文字が化けます。<br>
 “\\\[ \Gamma - \gamma \\\]” で実験してみてください
-（“$\Gamma$” や “$-$” は化けやすいことで有名）。Windows 版なら大丈夫なのに
-残念です。Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。PDF に
-したければ EPS で保存して Distiller で変換すればいいでしょう。 
+（“$\Gamma$” や “$-$” は化けやすいことで有名）。<br>
+Windows 版なら大丈夫なのに
+残念です。<br>
+Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。<br>
+PDF にしたければ EPS で保存して Distiller で変換すればいいでしょう。<br>
 
 念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント：
 [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）
-でも試してみました。「テキストエディット」では使えましたが，Illustrator では
-フォントリストには出るけれども表示できません。 
+でも試してみました。<br>
+「テキストエディット」では使えましたが，Illustrator では
+フォントリストには出るけれども表示できません。<br>
 
 ## WMF/EMF に変換する方法 {#b65fa32a}
 
@@ -322,6 +322,8 @@ PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の�
 
 - Latin Modern フォントの OpenType フォント形式ファイル：
     [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/)
+
+- [Mac 版 Illustrator での数式の編集](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1048)
 
 - [Applied Symbols](http://www.appliedsymbols.com/cm/) （Computer Modern フォントの OpenType 版［商品］）
 
