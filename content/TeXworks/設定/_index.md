@@ -22,7 +22,6 @@ pukiwiki: "TeXworks/設定"
 デフォルトでは UTF-8 に設定されています．<br>
 Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
 エディタの編集画面の右下に表示されているエンコーディングをクリックしてエンコーディングを変更することもできます．<br>
-Shift_JIS/ISO-2022-JP/EUC-JP が表示されない場合は 最新版の TeXworks をインストールしてください．<br>
 
 ***
 
