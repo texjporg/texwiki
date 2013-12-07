@@ -89,7 +89,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
-- [Python](http://www.python.org/) 2.7.6 Windows x86 MSI Installer をダウンロードしてインストールします．<br>
+- [Python](/Python/) をインストールします．<br>
 
 - \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
 
