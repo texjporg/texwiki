@@ -121,6 +121,7 @@ Vim は，チャリティウェアです．<br>
 
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
