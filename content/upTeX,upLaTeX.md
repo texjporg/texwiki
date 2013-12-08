@@ -15,7 +15,9 @@ pukiwiki: "upTeX,upLaTeX"
 pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
 upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
 また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
-特徴をまとめると、
+TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308))<br>
+
+### 特徴 {#redf175b}
 
 - pTeX, pLaTeX 上位互換
     - 組版品質、縦組み機能、過去の資産活用
@@ -23,8 +25,6 @@ upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして
     - 日本語字種の拡張
     - CJK(日中韓)各言語の混植
     - 欧文 TeX の Unicode 入力、babel との親和性向上
-
-TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308))<br>
 
 ### ChangeLog {#le7df259}
 
