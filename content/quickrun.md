@@ -497,5 +497,6 @@ Vim で TeX ファイルを開いてノーマルモードで \r をタイプし�
 - [quickrun.vim について語る](http://d.hatena.ne.jp/osyo-manga/20130311/1363012363)
 - [【Linux Mint, vim】日本語のtexをvimで書く環境を整える](http://calorie001.hatenablog.com/entry/2012/12/13/182057)
 - [LaTeXをquickrunで楽に処理する](http://d.hatena.ne.jp/itchyny/20121001/1349094989)
+- [vim-quickrunで指定ファイルからコンパイル](http://yozorabiyori.blog116.fc2.com/blog-entry-261.html)
 - [ほぼ完成？：quickrun.vimでTeX編集してpdfで見る．](http://d.hatena.ne.jp/fijixfiji/20091218/1261117585)
 - [http://lingr.com/room/vim/archives/2009/12/16](http://lingr.com/room/vim/archives/2009/12/16)
