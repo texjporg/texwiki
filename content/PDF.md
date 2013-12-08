@@ -25,6 +25,8 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 - [PDFKit](http://pdfkit.org/) JavaScript
 - [TCPDF](http://www.tcpdf.org/) PHP
     - [http://sourceforge.net/projects/tcpdf/](http://sourceforge.net/projects/tcpdf/)
+- [PDFMiner](http://www.unixuser.org/~euske/python/pdfminer/) Python
+- [PyPDF2](https://github.com/mstamy2/PyPDF2) Python
 - [ReportLab Toolkit](http://www.reportlab.com/software/opensource/rl-toolkit/) Python
 - [ThinReports Generator](http://www.thinreports.org/features/generator/) Ruby
 - [Prawn](http://prawn.majesticseacreature.com/) Ruby
@@ -35,7 +37,13 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 - [libHaru](http://libharu.org/) C, C++
 - [CL-PDF](http://www.cliki.net/CL-PDF) Common Lisp
     - [cl-pdf はもともと日本語 True Type フォントが使えたよ](http://read-eval-print.blogspot.com/2011/07/cl-pdf-true-type.html)
+- [CamlPDF](http://www.coherentpdf.com/ocaml-libraries.html) OCaml
+    - [https://github.com/johnwhitington/camlpdf](https://github.com/johnwhitington/camlpdf)
 
 ### PDF 作成 {#w4991875}
 
 - PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) を参照
+
+### 関連リンク {#j6d79d4c}
+
+- [PDF開発の基礎](http://www.slideshare.net/field-works/pdf-29001511)
