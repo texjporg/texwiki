@@ -1,0 +1,285 @@
+---
+title: "Linux"
+url: "/Linux/"
+date: 2013-12-08T04:43:36Z
+bookCollapseSection: true
+pukiwiki: "Linux"
+---
+
+# Linux
+
+## [Linux](https://ja.wikipedia.org/wiki/Linux) {#h0c68a28}
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/200px-Tux.svg.png" alt="Linux" style="float:right">
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
+## Linux ディストリビューション {#h2a1700b}
+
+Linux はディストリビューションによって TeX のインストール方法が異なるので，ディストリビューションごとの項目をご覧ください．<br>
+[TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．<br>
+最新のソフトウェアを使用したい場合は [Arch Linux](</Linux/Arch Linux/>) をおすすめします．<br>
+
+{{< children >}}
+
+## TeX ディストリビューション {#v025f4e5}
+
+### [TeX Live](</TeX Live/>) <a id="texlive"></a> {#d212a0d5}
+
+最新版の TeX Live をおすすめします．<br>
+
+#### TeX Live のインストール <a id="texliveinstall"></a> {#i0a1ca9a}
+
+- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
+- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+
+を参照．<br>
+
+[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+
+- wget を使用する場合
+
+    ```
+    $ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    ```
+
+- curl を使用する場合
+
+    ```
+    $ curl -O http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    ```
+
+install-tl-unx.tar.gz を展開します．<br>
+
+```
+$ tar xvf install-tl-unx.tar.gz
+```
+
+展開したインストーラのディレクトリに移動します．<br>
+
+```
+$ cd install-tl*
+```
+
+root 権限でインストーラを実行します．<br>
+オプションでダウンロードするリポジトリを指定できます．<br>
+
+```
+$ sudo ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+
+...
+
+Actions:
+ <I> start installation to hard disk
+ <H> help
+ <Q> quit
+
+Enter command: I
+```
+
+I を入力してインストールを開始します．<br>
+サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
+エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
+
+```
+$ sudo ./install-tl --profile installation.profile
+ABORTED INSTALLATION FOUND: installation.profile
+Do you want to continue with the exact same settings as before (y/N): y
+```
+
+インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
+
+- 64-bit 版の場合
+
+    ```
+    $ sudo /usr/local/texlive/????/bin/x86_64-linux/tlmgr path add
+    ```
+
+- 32-bit 版の場合
+
+    ```
+    $ sudo /usr/local/texlive/????/bin/i386-linux/tlmgr path add
+    ```
+
+#### アップデート {#v78bce27}
+
+アップデートは
+
+```
+$ sudo tlmgr update --self --all
+```
+
+を実行すれば OK です．<br>
+
+#### pmetapost (pmpost, upmpost) のインストール {#g33a7854}
+
+- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+
+pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナリが必要な場合は
+[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pmetapost
+$ sudo tlmgr update --all
+```
+
+#### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+$ kpsewhich -var-value TEXMFLOCAL
+/usr/local/texlive/????/../texmf-local
+```
+
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
+
+```
+$ sudo mkdir -p /usr/local/texlive/texmf-local/web2c
+$ sudo touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
+```
+
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,pmpost,upmpost,\
+repstopdf,epspdf,extractbb
+```
+
+mktexlsr を実行します．<br>
+
+```
+$ sudo mktexlsr
+```
+
+#### 文字コードの自動判別 {#e61461f5}
+
+[日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照．<br>
+
+#### フォント埋め込みの設定 {#w8cc5799}
+
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+TeX Live には IPAex フォント，(u)ptex-ipaex.map が収録されています．<br>
+
+```
+$ kpsewhich ipaexm.ttf ipaexg.ttf
+/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
+/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
+$ kpsewhich ptex-ipaex.map uptex-ipaex.map
+/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
+/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
+```
+
+(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+
+```
+$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
+```
+
+### [W32TeX](/W32TeX/) {#od6f4f13}
+
+[W32TeX](/W32TeX/) は Wine で動作します．<br>
+TeX Live に収録されていないプログラムを使用したい場合や [\input{日本語.tex}](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=887) などと記述すると TeX Live の platex でエラーが発生してコンパイルできない場合は W32TeX が便利です．<br>
+
+- [install-w32tex.py](https://gist.github.com/2766442) (a.k.a. 誰得スクリプト) Install W32TeX on Wine<br>
+- [TeXインストーラ3 は Wine で動作しません．](http://d.hatena.ne.jp/abenori/20120522)
+
+## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
+
+LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
+初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのがいいとおもいます．<br>
+エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります．<br>
+問題が発生した場合は別のエディタを使用してください．<br>
+人によってエディタの好みは様々なので自分にあったエディタを見つけてください．<br>
+見つからない人は自作してみるのもいいかもしれません．<br>
+
+- [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
+- [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
+
+にも Linux で使用可能な LaTeX 用の統合環境・エディタが紹介されています．
+
+### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
+
+- [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
+- [TeXworks](/TeXworks/)
+- [LyX](/LyX/)
+- LaTeXila
+- [Kile](/Kile/)
+- [Eclipse](/Eclipse/)
+    - [TeXlipse](/TeXlipse/)
+- [Emacs](/Emacs/)
+    - [Org mode](</Emacs/Org mode/>)
+    - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
+    - [AUCTeX](/AUCTeX/)
+    - [YaTeX](/YaTeX/)
+- [Vim](/Vim/)
+    - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+    - [Vim-LaTeX](/Vim-LaTeX/)
+    - Automatic LaTeX Plugin for Vim (ATP)
+- [gedit](/gedit/)
+- [Geany](/Geany/)
+
+## PDF ファイルビューア {#uf722ec6}
+
+- [Common Applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/Common_Applications/Documents)
+    <!-- -http://pdfreaders.org/ -->
+    <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
+
+を参照．
+
+### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
+
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [Kile](/Kile/), [TeXlipse](/TeXlipse/) ([Pdf4Eclipse](</TeXlipse/設定/Linux/#p67adb24>)), [Emacs](/Emacs/) ([DocView](/Emacs/#docview)) などは PDF ファイルビューアを内蔵しています．
+- [Evince](/Evince/)
+- [Okular](/Okular/)
+- [zathura](/zathura/)
+- [qpdfview](/qpdfview/)
+- PdfViewer
+- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf, llpp などで使われています．
+- [open-pdf-presenter](https://code.google.com/p/open-pdf-presenter/)
+- [Xpdf](/Xpdf/)
+- [Poppler](/Poppler/) Xpdf をベースにした PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer, Apvlv などで使われています．
+- [Apvlv](http://naihe2010.github.com/apvlv/)
+- [llpp](http://repo.or.cz/w/llpp.git)
+- [JFBView](http://seasonofcode.com/pages/jfbview.html)
+- [PDFCube](http://code.100allora.it/pdfcube/)
+- [PDFedit](http://pdfedit.cz/)
+- [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
+
+## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
+
+### フリーソフトウェア (オープンソースソフトウェア) {#p8c9577b}
+
+- [Zotero](http://www.zotero.org/)
+- [JabRef](http://jabref.sourceforge.net/)
+- [QRef](http://members3.jcom.home.ne.jp/qref/)
+
+## シェルスクリプト関連 {#z69d3afc}
+
+- Bash
+
+## Linux 関連 {#n1de1185}
+
+- [DistroWatch.com](http://distrowatch.com/)
+- [Open Source Watershed](http://oswatershed.org/)
+- [30 人の Linux カーネル開発者](https://jp.linux.com/linux-community/30linuxkerneldevelopers)
+- [Linux のシステム管理，Linux でソフトウエア開発環境やデスクトップ環境を作る](http://www.kkaneko.com/rinkou/linux/)
