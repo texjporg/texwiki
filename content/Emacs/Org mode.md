@@ -85,7 +85,8 @@ M-x list-packages RET でリストを表示して org を選択
 ## Export to LaTeX {#k6bbb6c5}
 
 - [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
-- [https://github.com/uwabami/dot.emacs.d/blob/master/config/org-mode_config.org](https://github.com/uwabami/dot.emacs.d/blob/master/config/org-mode_config.org)
+- [org-mode で日本語LaTeXを出力する方法](http://qiita.com/kawabata/items/1b56ec8284942ff2646b)
+- [https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org](https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org)
 - [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
 - [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 
