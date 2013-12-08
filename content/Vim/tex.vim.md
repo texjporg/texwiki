@@ -254,7 +254,7 @@ function! PdfpLaTeX(type)
     endif
   elseif a:type == 'pdfuplatex'
     if has('win32') || has('win64')
-      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8' . ' ' . masterTeXFile
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
       let g:bibtex = 'upbibtex'
       let g:makeindex = 'mendex -U'
@@ -273,7 +273,7 @@ function! PdfpLaTeX(type)
     endif
   elseif a:type == 'pdfuplatex2'
     if has('win32') || has('win64')
-      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8' . ' ' . masterTeXFile
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
       let g:bibtex = 'upbibtex'
@@ -285,7 +285,7 @@ function! PdfpLaTeX(type)
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       endif
     else
-      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
+      let latex = 'uplatex -synctex=1' . ' ' . masterTeXFile
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf' . ' ' . masterBaseName . '.ps'
       let g:bibtex = 'upbibtex'
