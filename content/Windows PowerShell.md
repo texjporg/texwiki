@@ -122,6 +122,9 @@ Windows PowerShell のオープンソース実装．<br>
 
 - [http://wsh.style-mods.net/](http://wsh.style-mods.net/)
     - [http://wsh.style-mods.net/topic10.htm](http://wsh.style-mods.net/topic10.htm)
+- [http://msdn.microsoft.com/en-us/library/windows/desktop/bb774094(v=vs.85).aspx](<http://msdn.microsoft.com/en-us/library/windows/desktop/bb774094(v=vs.85).aspx>)
+- [http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx](<http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx>)
+- [runas 使ってコマンドプロンプトを VBScript で管理者として実行](http://exvbs.seesaa.net/article/380424475.html)
 
 ## 関連リンク {#teb8e64f}
 
