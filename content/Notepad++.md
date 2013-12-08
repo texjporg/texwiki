@@ -86,7 +86,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### 新規ドキュメント (New Document) {#eb38bb7e}
 
-Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．<br>
+デフォルトの Encoding は UTF-8 without BOM です．<br>
 
 ***
 
@@ -123,7 +123,7 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 　　　　　　　　◯ Unix/OSX　　　　　　　　　　　　　　　　　　　　◯ UTF-8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Little Endian<br>
-　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　<strong>ᐯ</strong>\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　<strong>ᐯ</strong>\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span> または <span style="color:#888888;background-color:#EEEEEE;">\[Encode in Shift-JIS　　　　　　<strong>ᐯ</strong>\]</span><br>
 
 <br>
 
@@ -147,6 +147,13 @@ Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM で�
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 詳細は [NppExec - TeX Wiki](/NppExec/) を参照してください．<br>
+
+<!-- **[[jN (JavaScript for Notepad++):https://code.google.com/p/jn-npp-plugin/]] [#ob32f6ac] -->
+<!--  -->
+<!-- **[[NppSharp:http://nppsharp.codeplex.com/]] [#q36c3aac] -->
+<!--  -->
+<!-- **[[Python Script for Notepad++:http://npppythonscript.sourceforge.net/]] [#kd19bcd9] -->
+<!--  -->
 
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
