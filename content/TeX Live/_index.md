@@ -261,13 +261,13 @@ install-tl.zip をダウンロードして install-tl.zip を展開します．<
 Windows PowerShell またはコマンド プロンプトから
 
 ```
-.\install-tl.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+.\install-tl.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 または管理者として実行した Windows PowerShell またはコマンド プロンプトから
 
 ```
-.\install-tl-advanced.bat --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+.\install-tl-advanced.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 を実行します．<br>
