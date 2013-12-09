@@ -330,4 +330,5 @@ $ invevince hoge.pdf 'texworks --position=%l "%f"'
 - [python3.3環境構築](http://oceanmarine.sakura.ne.jp/sphinx/python_env.html)
 - [Python の if \__name_\_ == ‘\__main_\_’: を Perl, Ruby, PHP で行う](http://www.serendip.ws/archives/4360)
 - [http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python](http://stackoverflow.com/questions/16453691/python-waitfordebugevent-continuedebugevent-gray-hat-python)
+- [http://www.gesource.jp/programming/python/code/](http://www.gesource.jp/programming/python/code/)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
