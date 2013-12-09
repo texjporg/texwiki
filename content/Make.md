@@ -79,11 +79,11 @@ Makefile は、Make 設定ファイルの文法に従って記述します。<br
 1つのターゲットに対して複数の必須項目を指定できます。<br>
 必須項目のファイルが別の部分でターゲットとして指定されている場合、まずはそのファイルが生成されます。<br>
 
-コマンドは、必須項目からターゲットを生成するためのコマンドです。
+コマンドは、必須項目からターゲットを生成するためのコマンドです。なおコマンドの前に付ける&lt;タブ>は、スペースに変えると正常に動作しません。<br>
 
 #### 例: test.tex から PDFを生成する {#kfde0605}
 
-例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルが作成してある状態からPDFを生成することを考えます。<br>
+例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルが ~/latex ディレクトリーに作成してある状態からPDFを生成することを考えます。<br>
 まずはテキストエディタなどを使い、test.tex と同じディレクトリーに Makefile を次の内容で作成します。<br>
 
 ```
@@ -91,15 +91,37 @@ test.pdf: test.dvi
 	dvipdfmx $<
 
 test.dvi: test.tex
-	platex  -interaction=nonstopmode $<
+	platex -interaction=batchmode $<
 ```
 
-コマンドの前にある空白は、スペースではなくタブです。タブをスペースに変えると正常に動作しません。<br>
 コマンド中の「$&lt;」は必須項目を表し、この場合は「test.dvi」と「test.tex」になります。<br>
-なお、makeからplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、platexコマンドにオプション「-interaction=nonstopmode」を付けています。<br>
+なお、makeからplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、platexコマンドにオプション「-interaction=batchmode」を付けています。<br>
 
-Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行すると、Makefile に記述したコマンドが呼び出され、PDFが生成されます。<br>
+Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行します。Makefile に記述したコマンドが呼び出され、PDFが生成されます。<br>
 このあとは、test.tex が更新されたり生成された test.pdf が削除されたりしなければ、再度make コマンドを実行しても、Makefile に記述したコマンドは呼び出されません。<br>
+Mac OS XやLinux上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
+
+```
+$ cd ~/latex/
+$ ls
+Makefile  test.tex
+$ make
+platex  -interaction=batchmode test.tex
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013)
+ restricted \write18 enabled.
+entering extended mode
+dvipdfmx test.dvi
+test.dvi -> test.pdf
+[1]
+25751 bytes written
+$ ls
+Makefile  test.aux  test.dvi  test.log	test.pdf  test.tex
+$ make
+make: `test.pdf' is up to date.
+$ 
+```
+
+#### より実用的な Makefile {#f9ba303d}
 
 より実用的な Makefile として、次の内容が考えられます。<br>
 
@@ -120,7 +142,7 @@ distclean: clean
 	dvipdfmx $<
 
 %.dvi: %.tex
-	platex -interaction=nonstopmode $<
+	platex -interaction=batchmode $<
 ```
 
 この Makefile では次の機能を実現しています。
@@ -129,14 +151,76 @@ distclean: clean
 - make clean を実行すると、PDF生成時に一緒に生成された.aux、.log、.dvi ファイルが削除される
 - make distclean を実行すると、.aux、.log、.dvi ファイルに加えて PDF が削除される
 
+この Makefile で「%.dvi: %.tex」のように記述されている行はパターンルールといい、拡張子を元に動作ルールを決めます。
+「%.dvi: %.tex」は任意の.texファイルから.dviファイル、「%.pdf: %.dvi」は任意の.dviファイルから.pdfファイルを作成するルールを定めています。
+
 ただし、この Makefile では次のような場合に正常に動作しない可能性があります。
 
-- 相互参照を含む場合
-- 目次を生成する場合
-- 索引を生成する場合
-- BiBTeX を使って文献一覧を生成する場合
-- tex ソースを複数のファイルに分けている場合
-- 参照している画像などのファイルを別途生成または変換する必要がある場合
+- 相互参照や目次などを生成する場合
+- 画像を参照していたり、tex ソースを複数のファイルに分けていたりする場合
+- 索引や文献リストを生成する場合
+
+### 相互参照や目次などが含まれる場合 {#n2678470}
+
+ドキュメントに次のものが含まれる場合、上記の Makefile ではいずれの場合でも正常にPDFを生成できません。これらを正常に生成するには、複数回LaTeXを実行する必要があるからです。
+
+- 相互参照（数式や図・表・脚注の番号参照など）
+- 目次
+- 図リスト
+- 表リスト
+
+単純な解決方法は、無条件に複数回 LaTeXを実行することです。次の Makefile では変数 CNT で設定された回数（初期状態では2回）、無条件に LaTeX が実行されます。
+
+```
+TARGET := test.pdf
+
+CNT := 2
+
+.PHONY: all clean distclean
+
+all: $(TARGET)
+
+clean:
+	$(RM) *.aux *.log *.dvi
+
+distclean: clean
+	$(RM) $(TARGET)
+
+%.pdf: %.dvi
+	dvipdfmx $<
+
+%.dvi: %.tex
+	for i in `seq 1 $(CNT)`; do platex -interaction=batchmode $<; done
+```
+
+作成されたPDFファイルを確認し、相互参照や目次などの問題があればCNT 変数の数を増やすことを考えます。
+
+また、LaTeX を無条件で実行してから、ログファイルに警告が出力されている場合にだけ LaTeX を実行することもできます。次のMakefileでは、CNT 変数で指定された回数分LaTeX を実行してから、ログに相互参照未定義の警告がある場合だけLaTeXを実行するようにしています。相互参照に誤りがある場合、LaTeXを何回実行してもログに相互参照未定義の警告が出るので、相互参照未定義の警告がある場合のLaTeX実行は最大3回としています。
+
+```
+TARGET := test.pdf
+
+CNT := 2
+
+.PHONY: all clean distclean
+
+all: $(TARGET)
+
+clean:
+	$(RM) *.aux *.log *.dvi
+
+distclean: clean
+	$(RM) $(TARGET)
+
+%.pdf: %.dvi
+	dvipdfmx $<
+
+%.dvi: %.tex
+	for i in `seq 1 $(CNT)`; do platex -interaction=batchmode $<; done
+	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then platex -interaction=batchmode $<; else exit 0; fi; done
+```
+
+なお、LaTeXを複数回実行する方法の詳細については、『LaTeX2e美文書作成入門』P.161の「（p）LaTeXを適切な回数繰り返し実行する方法 」を参照してください。
 
 ### LaTeX 文書の処理における複数ファイルの管理 {#r1a92c3a}
 
