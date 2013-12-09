@@ -16,7 +16,7 @@ pukiwiki: "TeX"
 ### TeX 処理系 {#g6783551}
 
 - [e-pTeX](/e-pTeX/)
-- [upTeX](/upTeX,upLaTeX/)
+- [e-upTeX](/upTeX,upLaTeX/)
 - [pdfTeX](/pdfTeX/)
 - [LuaTeX](/LuaTeX/)
 - LuaJITTeX
