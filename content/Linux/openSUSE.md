@@ -27,14 +27,15 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [http://software.opensuse.org/package/texlive-scheme-full](http://software.opensuse.org/package/texlive-scheme-full)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
-- [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+- [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+    - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 
 ### TeX Live 公式パッケージ {#v87b6755}
 
 - [Linux](/Linux/#texliveinstall)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
-[texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+[texlive-dummy-opensuse](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 をインストールします．<br>
 texlive-dummy-opensuse をインストールすると
 TeX Live/TeX Live for SUSE Linux に依存するパッケージが
@@ -45,6 +46,8 @@ TeX Live/TeX Live for SUSE Linux をインストールするのを防止でき�
 ```
 $ sudo zypper install texlive-scheme-full
 ```
+
+&#x2a;\* WARNING \*\* Could not open config file "dvipdfmx.cfg". が表示される場合は TeX Live 公式パッケージをインストールしてください． → [Tex Live 2013 が壊れている疑惑](http://folioscope.hatenablog.jp/entry/2013/12/09/194754)
 
 ## [Ghostscript](/Ghostscript/) {#iea7fcc9}
 
