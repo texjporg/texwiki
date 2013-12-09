@@ -152,8 +152,11 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <!--  -->
 <!-- **[[NppSharp:http://nppsharp.codeplex.com/]] [#q36c3aac] -->
 <!--  -->
-<!-- **[[Python Script for Notepad++:http://npppythonscript.sourceforge.net/]] [#kd19bcd9] -->
-<!--  -->
+
+### [Python Script for Notepad++](</Python Script/>) {#kd19bcd9}
+
+Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
+詳細は [Python Script - TeX Wiki](</Python Script/>) を参照してください．<br>
 
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
@@ -172,7 +175,8 @@ Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収�
 ### forward search {#k51d2c1d}
 
 [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)<br>
-を参照してください．
+[Python Script#SumatraPDF との連携](</Python Script/#w3ac6f2d>)<br>
+を参照してください．<br>
 
 ### inverse search {#u3c0d179}
 
