@@ -9,7 +9,7 @@ pukiwiki: "RJ TextEd"
 
 ## [RJ TextEd](http://www.rj-texted.se/) {#ec487c4b}
 
-<img src="http://www.rj-texted.se/bilder/rjteheader.png" alt="RJ TextEd" style="float:right">
+<!-- #ref(http://www.rj-texted.se/bilder/rjteheader.png,right,around,nolink,RJ TextEd) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -18,6 +18,10 @@ pukiwiki: "RJ TextEd"
 RJ TextEd は Unicode をサポートしたテキストエディタです．<br>
 
 - [RJ TextEd](http://www.rj-texted.se/)
+
+### 動作環境 {#c77f0dbf}
+
+Windows 8.1, 8, 7, Vista, XP
 
 ## メニューの日本語化 {#mb8b01ee}
 
@@ -50,25 +54,43 @@ RJ TextEd は Unicode をサポートしたテキストエディタです．<br>
 ***
 
 ```
-function main()
 {
-  var fso = CreateOleObject("Scripting.FileSystemObject");
-  var wshShell = CreateOleObject("WScript.Shell");
-  var c = fso.GetParentFolderName(Document.FileName);
-  var b = fso.GetBaseName(Document.FileName);
-  var cd = "cd /d " + "\"" + c + "\"";
-  var latex = "platex -synctex=1 -kanji=utf8 -guess-input-enc -sjis-terminal";
-  latex += " " + "-jobname=" + "\"" + b + "\""+ " " + "\"" + b + "\"";
-  var dvipdfm = "dvipdfmx" + " " + "\"" + b + "\"";
-  var cmd = "cmd /c " + cd + " && " + latex + " && " + dvipdfm;
-  var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
-  if (ok == 1) {
-    Document.Save();
-    MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
-  }
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -kanji=utf8 -guess-input-enc -sjis-terminal\"" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
 }
+```
 
-main();
+***
+
+### pdfupLaTeX.js {#y2fd8be4}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var ptex2pdf = "ptex2pdf -l -u -ot \"-synctex=1 -kanji=utf8 -no-guess-input-enc -sjis-terminal\"" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
+}
 ```
 
 ***
@@ -78,33 +100,30 @@ main();
 ***
 
 ```
-function main()
 {
-  var fso = CreateOleObject("Scripting.FileSystemObject");
-  var wshShell = CreateOleObject("WScript.Shell");
-  var re = CreateOleObject("VBScript.RegExp");
-  re.Pattern = "\.[^.]*$";
-  var currentTeXFile = Document.FileName;
-  var pdfFile = re.Replace(currentTeXFile, ".pdf");
-  var texworks = "texworks";
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var re = CreateOleObject("VBScript.RegExp");
+    re.Pattern = "\.[^.]*$";
+    var currentTeXFile = Document.FileName;
+    var pdfFile = re.Replace(currentTeXFile, ".pdf");
+    var texworks = "texworks";
 
-  if (!fso.FileExists(pdfFile)) {
-    var mainTeXFile = MainApp.InputBox("RJ TextEd", "Input the path to main TeX file.");
-    if (mainTeXFile != "") {
-      pdfFile = re.Replace(mainTeXFile, ".pdf");
+    if (!fso.FileExists(pdfFile)) {
+        var mainTeXFile = MainApp.InputBox("RJ TextEd", "Input the path to main TeX file.");
+        if (mainTeXFile != "") {
+            pdfFile = re.Replace(mainTeXFile, ".pdf");
+        }
     }
-  }
 
-  var mainTeXDir = fso.GetParentFolderName(pdfFile);
-  var cd = "cd /d " + "\"" + mainTeXDir + "\"";
-  pdfFile = "\"" + pdfFile + "\"";
+    var mainTeXDir = fso.GetParentFolderName(pdfFile);
+    var cd = "cd /d " + "\"" + mainTeXDir + "\"";
+    pdfFile = "\"" + pdfFile + "\"";
 
-  var args = texworks + " " + pdfFile;
-  var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
-  MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, false, true);
+    var args = texworks + " " + pdfFile;
+    var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+    MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, false, true);
 }
-
-main();
 ```
 
 ***
