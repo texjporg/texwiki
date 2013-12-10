@@ -141,3 +141,56 @@ FastScript は
 ```
 
 ***
+
+## SumatraPDF との連携 {#xf1a2ee6}
+
+### forward search (SumatraPDF を前面に表示したい場合) {#k6635ec1}
+
+#### SumatraPDF.js {#ffc3045d}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var re = CreateOleObject("VBScript.RegExp");
+    re.Pattern = "\.[^.]*$";
+    var currentTeXFile = Document.FileName;
+    var pdfFile = re.Replace(currentTeXFile, ".pdf");
+    var line = IntToStr(Document.CursorY() + 1)
+    var sumatraPDF = wshShell.RegRead("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe\\");
+    var existSumatraPDF = true;
+
+    if (!fso.FileExists(sumatraPDF)) {
+        sumatraPDF = MainApp.InputBox("RJ TextEd", "Input the path to SumatraPDF.exe.");
+        if (!fso.FileExists(sumatraPDF)) {
+            sumatraPDF = "rundll32 shell32,ShellExec_RunDLL SumatraPDF";
+            existSumatraPDF = false;
+        }
+    }
+
+    if (existSumatraPDF) {
+        sumatraPDF = "\"" + sumatraPDF + "\"";
+    }
+
+    if (!fso.FileExists(pdfFile)) {
+        if (!fso.FileExists(pdfFile)) {
+            var mainTeXFile = MainApp.InputBox("RJ TextEd", "Input the path to main TeX file.");
+            if (mainTeXFile != "") {
+                pdfFile = re.Replace(mainTeXFile, ".pdf");
+            }
+        }
+    }
+
+    var mainTeXDir = fso.GetParentFolderName(pdfFile);
+    var cd = "cd /d " + "\"" + mainTeXDir + "\"";
+    pdfFile = "\"" + pdfFile + "\"";
+
+    var args = sumatraPDF + " -reuse-instance " + pdfFile + " -forward-search " + currentTeXFile + " " + line;
+    var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+    MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, false, true);
+}
+```
+
+***
