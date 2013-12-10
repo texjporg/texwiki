@@ -11,3 +11,4 @@ pukiwiki: "Ceylon"
 
 - [http://ceylon-lang.org/](http://ceylon-lang.org/)
 - [Ceylonはほとんど理想の言語](http://techblog.qoncept.jp/?p=246)
+- [http://qiita.com/tags/ceylon](http://qiita.com/tags/ceylon)
