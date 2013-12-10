@@ -18,6 +18,8 @@ AkelPad はコンパクトで高速なテキストエディタです．
 - [AkelPad](http://akelpad.sourceforge.net/)
 - [AkelPad | Free Development software downloads at SourceForge.net](http://sourceforge.net/projects/akelpad/)
 - [AkelPad 4 - User's Manual](http://akelpad.cvs.sourceforge.net/viewvc/akelpad/akelpad_4/AkelFiles/Docs/AkelHelp-Eng.htm)
+- [AkelPad の使い方 - AkelPad - SourceForge.JP](http://sourceforge.jp/projects/sfnet_akelpad/howto/usage)
+- [http://freesftys.wkeya.com/app/akelpad/](http://freesftys.wkeya.com/app/akelpad/)
 
 ### 動作環境 {#yf7ac403}
 
@@ -253,3 +255,5 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
 ```
 
 ***
+
+<!-- -https://bitbucket.org/FallenPhoenix/akelpad-scripts-collection/src/11cf068e06be7fd69f52cac3309ec2d3c5ed330b/KDJ/GoToEx.js?at=master -->
