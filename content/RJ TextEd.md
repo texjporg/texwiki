@@ -49,6 +49,20 @@ Windows 8.1, 8, 7, Vista, XP
 ツールメニューのツールから \[追加\] をクリックしてスクリプトを追加します．<br>
 追加したスクリプトはメニューの \[ツール(<ins>T</ins>)\] に表示されます．<br>
 
+### FastScript {#n85cf31b}
+
+- [Fast Script — scripting library - FastReports Inc.](http://www.fast-report.com/en/product/fast-script/)
+
+RJ TextEd のスクリプトは FastScript で記述します．<br>
+FastScript は
+
+- C++Script
+- PascalScript
+- BasicScript
+- JScript
+
+の中からプログラミング言語を選択して記述することができます．<br>
+
 ### pdfpLaTeX.js {#g293b7d1}
 
 ***
