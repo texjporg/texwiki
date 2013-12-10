@@ -148,6 +148,9 @@ FastScript は
 
 #### SumatraPDF.js {#ffc3045d}
 
+inverse search をする場合は起動中の RJ TextEd を終了する必要があります．<br>
+SumatraPDF.js は inverse search の設定に起動中の RJ TextEd を終了する処理を追加しています．<br>
+
 ***
 
 ```
@@ -156,19 +159,23 @@ FastScript は
     var wshShell = CreateOleObject("WScript.Shell");
     var re = CreateOleObject("VBScript.RegExp");
     re.Pattern = "\.[^.]*$";
-    var taskkill = "cmd /c tasklist /fi \\\"IMAGENAME eq TextEd.exe\\\" /nh | findstr \\\"TextEd.exe\\\" > nul && taskkill /F /IM TextEd.exe /T"
-    var textEd =  "\\\"" + MainApp.ExeName + "\\\""
+    var taskkill = "cmd /c tasklist /fi \\\"IMAGENAME eq TextEd.exe\\\" /nh | findstr \\\"TextEd.exe\\\" > nul && taskkill /F /IM TextEd.exe /T";
+    var textEd =  "\\\"" + MainApp.ExeName + "\\\"";
     var currentTeXFile = Document.FileName;
     var pdfFile = re.Replace(currentTeXFile, ".pdf");
-    var line = IntToStr(Document.CursorY() + 1)
-    var sumatraPDF = wshShell.RegRead("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe\\");
+    var line = IntToStr(Document.CursorY() + 1);
+    var sumatraPDF = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
     var existSumatraPDF = true;
 
-    if (!fso.FileExists(sumatraPDF)) {
-        sumatraPDF = MainApp.InputBox("RJ TextEd", "Input the path to SumatraPDF.exe.");
+    try {
+        sumatraPDF = wshShell.RegRead("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe\\");
+    } except {
         if (!fso.FileExists(sumatraPDF)) {
-            sumatraPDF = "rundll32 shell32,ShellExec_RunDLL SumatraPDF";
-            existSumatraPDF = false;
+            sumatraPDF = MainApp.InputBox("RJ TextEd", "Input the path to SumatraPDF.exe.");
+            if (!fso.FileExists(sumatraPDF)) {
+                sumatraPDF = "rundll32 shell32,ShellExec_RunDLL SumatraPDF";
+                existSumatraPDF = false;
+            }
         }
     }
 
@@ -198,6 +205,9 @@ FastScript は
 ***
 
 ### inverse search {#qc9d43a3}
+
+inverse search をする場合は起動中の RJ TextEd を終了する必要があります．<br>
+以下の inverse search の設定は起動中の RJ TextEd を終了する処理を追加しています．<br>
 
 ```
 cmd /c tasklist /fi "IMAGENAME eq TextEd.exe" /nh | findstr "TextEd.exe" > nul && taskkill /F /IM TextEd.exe /T & "C:\Program Files\RJ TextEd\TextEd.exe" /L:%l "%f"
