@@ -100,13 +100,15 @@ kanji-config-updmap ipaex
 
 #### pdfpLaTeX {#rfc4e3b5}
 
-■ TeX Live の場合
-
-pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．
+pdfplatex.bat を作成して pdfplatex.bat で PDF ファイルを作成します．<br>
+W32TeX の場合は pdfplatex.bat がデフォルトで含まれているので作成する必要はありません．
 
 ***
 
 - C:\texlive\2013\bin\win32\pdfplatex.bat
+- C:\texlive\2013\bin\win64\pdfplatex.bat
+- C:\w32tex\bin\pdfplatex.bat
+- C:\w32tex\bin64\pdfplatex.bat
 
 ***
 
@@ -117,10 +119,6 @@ dvipdfmx "%~n1"
 ```
 
 ***
-
-■ W32TeX の場合
-
-W32TeX の場合は pdfplatex.bat がデフォルトで含まれています．
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
@@ -167,7 +165,9 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 ***
 
 - C:\texlive\2013\bin\win32\pdfplatex2.bat
+- C:\texlive\2013\bin\win64\pdfplatex2.bat
 - C:\w32tex\bin\pdfplatex2.bat
+- C:\w32tex\bin64\pdfplatex2.bat
 
 ***
 
@@ -255,27 +255,12 @@ kanji-config-updmap ipaex
 
 pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
 
-■ TeX Live の場合
-
 ***
 
 - C:\texlive\2013\bin\win32\pdfuplatex.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1"
-```
-
-***
-
-■ W32TeX の場合
-
-***
-
+- C:\texlive\2013\bin\win64\pdfuplatex.bat
 - C:\w32tex\bin\pdfuplatex.bat
+- C:\w32tex\bin64\pdfuplatex.bat
 
 ***
 
@@ -332,7 +317,9 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 ***
 
 - C:\texlive\2013\bin\win32\pdfuplatex2.bat
+- C:\texlive\2013\bin\win64\pdfuplatex2.bat
 - C:\w32tex\bin\pdfuplatex2.bat
+- C:\w32tex\bin64\pdfuplatex2.bat
 
 ***
 
@@ -1025,7 +1012,7 @@ pdfplatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatexS.bat
+- pdfplatexS.bat
 
 ***
 
@@ -1083,7 +1070,7 @@ pdfplatex2S.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatex2S.bat
+- pdfplatex2S.bat
 
 ***
 
@@ -1143,7 +1130,7 @@ pdfuplatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatexS.bat
+- pdfuplatexS.bat
 
 ***
 
@@ -1201,7 +1188,7 @@ pdfuplatex2S.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex2S.bat
+- pdfuplatex2S.bat
 
 ***
 
@@ -1261,7 +1248,7 @@ pdflatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdflatexS.bat
+- pdflatexS.bat
 
 ***
 
@@ -1318,7 +1305,7 @@ lualatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\lualatexS.bat
+- lualatexS.bat
 
 ***
 
@@ -1375,7 +1362,7 @@ luajitlatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\luajitlatexS.bat
+- luajitlatexS.bat
 
 ***
 
@@ -1432,7 +1419,7 @@ xelatexS.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\xelatexS.bat
+- xelatexS.bat
 
 ***
 
@@ -1511,7 +1498,7 @@ pdfplatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatexA.bat
+- pdfplatexA.bat
 
 ***
 
@@ -1563,7 +1550,7 @@ pdfplatex2A.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfplatex2A.bat
+- pdfplatex2A.bat
 
 ***
 
@@ -1617,7 +1604,7 @@ pdfuplatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatexA.bat
+- pdfuplatexA.bat
 
 ***
 
@@ -1669,7 +1656,7 @@ pdfuplatex2A.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex2A.bat
+- pdfuplatex2A.bat
 
 ***
 
@@ -1723,7 +1710,7 @@ pdflatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdflatexA.bat
+- pdflatexA.bat
 
 ***
 
@@ -1774,7 +1761,7 @@ lualatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\lualatexA.bat
+- lualatexA.bat
 
 ***
 
@@ -1825,7 +1812,7 @@ luajitlatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\luajitlatexA.bat
+- luajitlatexA.bat
 
 ***
 
@@ -1876,7 +1863,7 @@ xelatexA.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\xelatexA.bat
+- xelatexA.bat
 
 ***
 
