@@ -144,7 +144,7 @@ FastScript は
 
 ## SumatraPDF との連携 {#xf1a2ee6}
 
-### forward search (SumatraPDF を前面に表示したい場合) {#k6635ec1}
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#k6635ec1}
 
 #### SumatraPDF.js {#ffc3045d}
 
@@ -156,6 +156,8 @@ FastScript は
     var wshShell = CreateOleObject("WScript.Shell");
     var re = CreateOleObject("VBScript.RegExp");
     re.Pattern = "\.[^.]*$";
+    var taskkill = "cmd /c tasklist /fi \\\"IMAGENAME eq TextEd.exe\\\" /nh | findstr \\\"TextEd.exe\\\" > nul && taskkill /F /IM TextEd.exe /T"
+    var textEd =  "\\\"" + MainApp.ExeName + "\\\""
     var currentTeXFile = Document.FileName;
     var pdfFile = re.Replace(currentTeXFile, ".pdf");
     var line = IntToStr(Document.CursorY() + 1)
@@ -187,10 +189,17 @@ FastScript は
     var cd = "cd /d " + "\"" + mainTeXDir + "\"";
     pdfFile = "\"" + pdfFile + "\"";
 
-    var args = sumatraPDF + " -reuse-instance " + pdfFile + " -forward-search " + currentTeXFile + " " + line;
+    var args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search " + "\"" + taskkill + " & " + textEd + " /L:%l \\\"%f\\\"\"" + " -forward-search \"" + currentTeXFile + "\" " + line;
     var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
     MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, false, true);
 }
 ```
 
 ***
+
+### inverse search {#qc9d43a3}
+
+```
+cmd /c tasklist /fi "IMAGENAME eq TextEd.exe" /nh | findstr "TextEd.exe" > nul && taskkill /F /IM TextEd.exe /T & "C:\Program Files\RJ TextEd\TextEd.exe" /L:%l "%f"
+cmd /c tasklist /fi "IMAGENAME eq TextEd.exe" /nh | findstr "TextEd.exe" > nul && taskkill /F /IM TextEd.exe /T & "C:\Program Files (x86)\RJ TextEd\TextEd.exe" /L:%l "%f"
+```
