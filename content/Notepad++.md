@@ -49,7 +49,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### License {#p3f91661}
 
-[GPLv3, GPLv2](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
+[GPLv2](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
 
 ### リリース情報 {#d2ceb628}
 
