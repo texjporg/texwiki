@@ -109,6 +109,98 @@ FastScript は
 
 ***
 
+### pdfLaTeX.js {#y6562d48}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var pdflatex = "pdflatex -synctex=1" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + pdflatex;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
+}
+```
+
+***
+
+### LuaLaTeX.js {#e54614e8}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var lualatex = "lualatex -synctex=1" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + lualatex;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
+}
+```
+
+***
+
+### LuaJITLaTeX.js {#a8687bf4}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var luajitlatex = "luajitlatex -synctex=1" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + luajitlatex;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
+}
+```
+
+***
+
+### XeLaTeX.js {#ifd52ea9}
+
+***
+
+```
+{
+    var fso = CreateOleObject("Scripting.FileSystemObject");
+    var wshShell = CreateOleObject("WScript.Shell");
+    var c = fso.GetParentFolderName(Document.FileName);
+    var b = fso.GetBaseName(Document.FileName);
+    var cd = "cd /d " + "\"" + c + "\"";
+    var xelatex = "xelatex -synctex=1" + " " + "\"" + b + "\"";
+    var cmd = "cmd /c " + cd + " && " + xelatex;
+    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
+    if (ok == 1) {
+        Document.Save();
+        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
+    }
+}
+```
+
+***
+
 ### TeXworks.js {#g8325174}
 
 ***
