@@ -156,3 +156,7 @@ Windows PowerShell のオープンソース実装．<br>
 - [Learn Windows PowerShell 3 in a Month of Lunches, 2nd Edition](http://it-ebooks.info/book/1539/)
 - [PowerShell Advent Calendar 2013 : ATND](http://atnd.org/events/45107)
 - [Windows 8.1 でなくなった Windows エクスペリエンス インデックス GUI表示の代りに PowerShell で測定する](http://tech.guitarrapc.com/entry/2013/10/25/075010)
+- [Windows batでコマンドの結果を変数に格納](http://qiita.com/long_long_float/items/f1a19816ef0d0070b68f)
+- [PowerShell の コマンドレット例外を取得する](http://tech.guitarrapc.com/entry/2013/07/22/000738)
+    <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
+    <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
