@@ -286,9 +286,10 @@ SumatraPDF.js は inverse search の設定に起動中の RJ TextEd を終了す
 
     var mainTeXDir = fso.GetParentFolderName(pdfFile);
     var cd = "cd /d " + "\"" + mainTeXDir + "\"";
+    currentTeXFile = "\"" + currentTeXFile + "\"";
     pdfFile = "\"" + pdfFile + "\"";
 
-    var args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search " + "\"" + taskkill + " & " + textEd + " /L:%l \\\"%f\\\"\"" + " -forward-search \"" + currentTeXFile + "\" " + line;
+    var args = sumatraPDF + " -reuse-instance " + pdfFile + " -inverse-search " + "\"" + taskkill + " & " + textEd + " /L:%l \\\"%f\\\"\"" + " -forward-search " + currentTeXFile + " " + line;
     var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
     MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, false, true);
 }
