@@ -18,6 +18,16 @@ Python Script を使うと LaTeX 環境を簡単に作ることができます�
 
 - [Python Script - Plugin for Notepad++](http://npppythonscript.sourceforge.net/)
 
+### 注意事項 {#f37b5e02}
+
+Python Script は 2 つのスクリプトを同時に実行できません．<br>
+2 つのスクリプトを同時に実行しようとすると以下のメッセージが表示されます．<br>
+
+```
+Another script is currently running. Running two scripts at the same time
+could produce unpredicable results, and is therefore disabled.
+```
+
 ### pdfpLaTeX.py {#i5300af4}
 
 ***
