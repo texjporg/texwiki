@@ -1018,19 +1018,14 @@ pdfplatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvipdfmx "%~n1" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1076,10 +1071,6 @@ pdfplatex2S.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 platex -synctex=1 -kanji=utf8 -guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -g > "%~n1.ps" && ^
@@ -1087,10 +1078,9 @@ ps2pdf.bat "%~n1.ps" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1136,19 +1126,14 @@ pdfuplatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvipdfmx "%~n1" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1194,10 +1179,6 @@ pdfuplatex2S.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
@@ -1205,10 +1186,9 @@ ps2pdf.bat "%~n1.ps" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1254,18 +1234,13 @@ pdflatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 pdflatex -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1311,18 +1286,13 @@ lualatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 lualatex -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1368,18 +1338,13 @@ luajitlatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 luajitlatex -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
@@ -1425,18 +1390,13 @@ xelatexS.bat を作成します．
 
 ```
 @echo off
-setlocal
-if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (
-set SUMATRAPDF=C:\Program Files\SumatraPDF\SumatraPDF.exe
-) else set SUMATRAPDF=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 xelatex -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
-echo "%SUMATRAPDF%" -reuse-instance "%~n1.pdf" | ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
 cmd
 )
-endlocal
 ```
 
 ***
