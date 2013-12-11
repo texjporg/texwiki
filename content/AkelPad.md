@@ -87,7 +87,7 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
     var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
     var b = fso.GetBaseName(AkelPad.GetEditFile(0));
     var cd = "cd /d " + ["\"", c, "\""].join("");
-    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -guess-input-enc -sjis-terminal\"";
+    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal\"";
     var codepage = AkelPad.GetEditCodePage(0);
     if (codepage == 65001) {
         ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal\"";
