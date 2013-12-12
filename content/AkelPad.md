@@ -234,13 +234,14 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
 (function () {
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var currentTeXFile = AkelPad.GetEditFile(0);
-    var pdfFile = currentTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+    var suffix = new RegExp(/\.[^.]*$/);
+    var pdfFile = currentTeXFile.replace(suffix, ".pdf");
     var texworks = "texworks";
 
     if (!fso.FileExists(pdfFile)) {
-        var mainTeXFile = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to main TeX file.", pdfFile.replace(new RegExp(/\.[^.]*$/), ".tex"));
+        var mainTeXFile = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to main TeX file.", pdfFile.replace(suffix, ".tex"));
         if (mainTeXFile != "") {
-            pdfFile = mainTeXFile.replace(new RegExp(/\.[^.]*$/), ".pdf");
+            pdfFile = mainTeXFile.replace(suffix, ".pdf");
         }
     }
 
@@ -249,6 +250,55 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
     pdfFile = ["\"", pdfFile, "\""].join("");
 
     var args = texworks + " " + pdfFile;
+    var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
+    AkelPad.Exec(cmd);
+}.call(this));
+```
+
+***
+
+### SumatraPDF.js {#k71c47b2}
+
+***
+
+```
+(function () {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var wshShell = new ActiveXObject("WScript.Shell");
+    var currentTeXFile = AkelPad.GetEditFile(0);
+    var suffix = new RegExp(/\.[^.]*$/);
+    var pdfFile = currentTeXFile.replace(suffix, ".pdf");
+    var texworks = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+    var existSumatraPDF = true;
+
+    try {
+        sumatraPDF = wshShell.RegRead("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe\\");
+    } catch (e) {
+        if (!fso.FileExists(sumatraPDF)) {
+            sumatraPDF = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to SumatraPDF.exe.", "SumatraPDF.exe");
+            if (!fso.FileExists(sumatraPDF)) {
+                sumatraPDF = "rundll32 shell32,ShellExec_RunDLL SumatraPDF";
+                existSumatraPDF = false;
+            }
+        }
+    }
+
+    if (existSumatraPDF) {
+        sumatraPDF = ["\"", sumatraPDF, "\""].join("");
+    }
+
+    if (!fso.FileExists(pdfFile)) {
+        var mainTeXFile = AkelPad.InputBox(AkelPad.GetMainWnd(), "AkelPad", "Input the path to main TeX file.", pdfFile.replace(suffix, ".tex"));
+        if (mainTeXFile != "") {
+            pdfFile = mainTeXFile.replace(suffix, ".pdf");
+        }
+    }
+
+    var mainTeXDir = fso.GetParentFolderName(pdfFile);
+    var cd = "cd /d " + ["\"", mainTeXDir, "\""].join("");
+    pdfFile = ["\"", pdfFile, "\""].join("");
+
+    var args = sumatraPDF + " -reuse-instance " + pdfFile;
     var cmd = "cmd /c " + cd + " && echo " + args + " | cmd";
     AkelPad.Exec(cmd);
 }.call(this));
