@@ -234,7 +234,7 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
 (function () {
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var currentTeXFile = AkelPad.GetEditFile(0);
-    var suffix = new RegExp(/\.[^.]*$/);
+    var suffix = /\.[^.]*$/;
     var pdfFile = currentTeXFile.replace(suffix, ".pdf");
     var texworks = "texworks";
 
@@ -266,9 +266,9 @@ Scripts から実行するスクリプトを選択して \[Exec\] をクリッ�
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var wshShell = new ActiveXObject("WScript.Shell");
     var currentTeXFile = AkelPad.GetEditFile(0);
-    var suffix = new RegExp(/\.[^.]*$/);
+    var suffix = /\.[^.]*$/;
     var pdfFile = currentTeXFile.replace(suffix, ".pdf");
-    var texworks = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
+    var sumatraPDF = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe";
     var existSumatraPDF = true;
 
     try {
