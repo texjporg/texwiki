@@ -79,9 +79,11 @@ Python を C:\Python34 にインストールした場合は
 
 - [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
 - [http://www.pip-installer.org/](http://www.pip-installer.org/)
+- [Python3.4のensurepip(それとpyvenvの更新)](http://pelican.aodag.jp/python34noensurepipsoretopyvenvnogeng-xin.html)
 - [Python3.4からpipが標準インストーラに！？](http://qiita.com/ksato9700/items/c5a6db9d17ad0770a747)
 
-Python 3.4 ではインストーラでインストールするときに pip を指定すれば pip, easy_install がインストールされます．<br>
+<!-- Python 3.4 ではインストーラでインストールするときに pip を指定すれば pip, easy_install がインストールされます．~ -->
+
 pip や easy_install を使用して error: Setup script exited with error: Unable to find vcvarsall.bat のエラーが発生する場合は以下のサイトを参考にして設定すれば pip や easy_install が使用できます．<br>
 
 - [pythonでvcvarsall.batエラーが出る。](http://ivis-mynikki.blogspot.jp/2013/03/pythonvcvarsallbat.html)
