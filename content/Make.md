@@ -605,6 +605,7 @@ latexmk -C
 [http://omake.metaprl.org/](http://omake.metaprl.org/)
 
 - [OMakeマニュアル 日本語訳](http://omake-japanese.sourceforge.jp/)
+- [ファイルを分割していると OMake + BibTeX がうまくいかない](http://qiita.com/t_uda/items/c89f300868e6a3707f6c)
 - [LaTeXのソースを毎回makeしてる情弱は俺まででいい #OMake](http://st63jun.hatenablog.jp/entry/2013/01/30/002642)
 - [OmakeによるLatexファイルの継続ビルド。べんり。](https://gist.github.com/4602243)
 - [ぼくのかんがえたさいきょうの小説執筆環境](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
