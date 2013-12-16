@@ -85,6 +85,7 @@ M-x list-packages RET でリストを表示して org を選択
 ## Export to LaTeX {#k6bbb6c5}
 
 - [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
+- [orgmodeで卒論を書いたときの話](http://qiita.com/PowerPC7450/items/b34b080dd941af689b56)
 - [org-mode で日本語LaTeXを出力する方法](http://qiita.com/kawabata/items/1b56ec8284942ff2646b)
 - [https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org](https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org)
 - [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
