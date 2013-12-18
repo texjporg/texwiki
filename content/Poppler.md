@@ -207,21 +207,21 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 - [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.6/libpng-1.6.6.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.7/libpng-1.6.7.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.6.tar.xz
-$ tar xvf libpng-1.6.6.tar.xz
-$ pushd libpng-1.6.6
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.7.tar.xz
+$ tar xvf libpng-1.6.7.tar.xz
+$ pushd libpng-1.6.7
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.6/libpng-1.6.6.tar.xz -->
-<!-- $ tar xvf libpng-1.6.6.tar.xz -->
-<!-- $ pushd libpng-1.6.6 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.7/libpng-1.6.7.tar.xz -->
+<!-- $ tar xvf libpng-1.6.7.tar.xz -->
+<!-- $ pushd libpng-1.6.7 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
@@ -749,14 +749,14 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.33.0.tar.bz2
-$ tar xvf curl-7.33.0.tar.bz2
-$ pushd curl-7.33.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.34.0.tar.bz2
+$ tar xvf curl-7.34.0.tar.bz2
+$ pushd curl-7.34.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.33.0
+  curl version:     7.34.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
@@ -807,9 +807,9 @@ $ popd
 - [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.1.tar.xz
-$ tar xvf glib-2.39.1.tar.xz
-$ pushd glib-2.39.1
+$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.2.tar.xz
+$ tar xvf glib-2.39.2.tar.xz
+$ pushd glib-2.39.2
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
