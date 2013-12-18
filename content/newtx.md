@@ -58,6 +58,10 @@ texdoc newtx
 
 で確認してください。
 
+### 関連リンク {#s6bcb75e}
+
+- newtx フォントで脚注に不具合 ([qa:57284](https://okumuralab.org/~okumura/texfaq/qa/57284.html), [qa:57286](https://okumuralab.org/~okumura/texfaq/qa/57286.html), [qa:57287](https://okumuralab.org/~okumura/texfaq/qa/57287.html), [qa:57288](https://okumuralab.org/~okumura/texfaq/qa/57288.html))
+
 ## TX フォント (obsolete) → newtx を使用する {#uba8f4cc}
 
 \[Summary in English\]
