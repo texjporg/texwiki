@@ -22,6 +22,7 @@ pukiwiki: "JavaScript"
 
 ## JavaScript を出力できる言語 {#ya021e3a}
 
+- [https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS](https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS)
 - [Dart](https://www.dartlang.org/)
 - [TypeScript](http://www.typescriptlang.org/)
 - [Haxe](http://haxe.org/)
