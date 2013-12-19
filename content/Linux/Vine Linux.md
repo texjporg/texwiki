@@ -29,6 +29,7 @@ VineSeed は Vine Linux の開発版です．<br>
 - [VineSeed – VineSeed](http://trac.vinelinux.org/wiki/VineSeed)
 - [Vine7/HowToUpgrade – VineSeed](http://trac.vinelinux.org/wiki/Vine7/HowToUpgrade)
 - [VineSeed Package Information](http://vinelinux.org/seed/vineseed.html)
+- [VineSeed ML アーカイブ](http://ml.vinelinux.org/vineseed/)
 
 ## TeX Live {#c1d98d5f}
 
