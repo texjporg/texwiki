@@ -217,8 +217,9 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑plain2-2.54-w32.tar.xz　　　　　　　　無い　　　177KB<br>
 　　　　 ∣☑platex.tar.xz　　　　　　　　　　　　　　無い　　　93KB<br>
 　　　　 ∣☑pmx.tar.xz　　　　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑pstoedit-w32.tar.xz　　　　　　　　　 無い　　　366KB<br>
 　　　　 ∣☑pstricks.tar.xz　　　　　　　　　　　　無い　　　92.4MB<br>
-　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　85KB<br>
+　　　　 ∣☑psutils-w32.tar.xz　　　　　　　　　　無い　　　507KB<br>
 　　　　 ∣☑ptex-w32.tar.xz　　　　　　　　　　　無い　　　4.2MB<br>
 　　　　 ∣☑qpdf-w32.tar.xz　　　　　　　　　　　無い　　　698KB<br>
 　　　　 ∣☑sam2p-w32.tar.xz　　　　　　　　　　無い　　　538KB<br>
@@ -260,7 +261,8 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑win64/pdftex-w64.tar.xz　　　　　　　無い　　　1.8MB<br>
 　　　　 ∣☑win64/plain2-2.54-w64.tar.xz　　　　無い　　　45KB<br>
 　　　　 ∣☑win64/pmx-w64.tar.xz　　　　　　　　無い　　　576KB<br>
-　　　　 ∣☑win64/psutils-w64.tar.xz　　　　　　　無い　　　368KB<br>
+　　　　 ∣☑win64/pstoedit-w64.tar.xz　　　　　　 無い　　　197KB<br>
+　　　　 ∣☑win64/psutils-w64.tar.xz　　　　　　　無い　　　375KB<br>
 　　　　 ∣☑win64/ptex-w64.tar.xz　　　　　　　　無い　　　1.5MB<br>
 　　　　 ∣☑win64/sam2p-w64.tar.xz　　　　　　　無い　　　397KB<br>
 　　　　 ∣☑win64/t1utils-w64.tar.xz　　　　　　　無い　　　39KB<br>
