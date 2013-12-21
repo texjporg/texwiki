@@ -19,6 +19,7 @@ pukiwiki: "C++"
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
+- [cpprefjp - C++ Library Reference](https://sites.google.com/site/cpprefjp/)
 - [C++：CodeZine（コードジン）](http://codezine.jp/article/tag/165)
 - [本の虫](http://cpplover.blogspot.jp/)
 - [n次正方行列の逆行列をTeX形式で出力するプログラム](http://nazolab.net/notes/n/145)
