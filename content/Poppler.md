@@ -807,7 +807,7 @@ $ popd
 - [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/glib/2.39/glib-2.39.2.tar.xz
+$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.2.tar.xz
 $ tar xvf glib-2.39.2.tar.xz
 $ pushd glib-2.39.2
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
@@ -818,9 +818,9 @@ $ popd
 
 <!-- -[[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]] をインストールします． -->
 <!--  -->
-<!-- $ curl -R -L -O http://download.gnome.org/sources/gobject-introspection/1.36/gobject-introspection-1.36.0.tar.xz -->
-<!-- $ tar xvf gobject-introspection-1.36.0.tar.xz -->
-<!-- $ pushd gobject-introspection-1.36.0 -->
+<!-- $ curl - -insecure -R -L -O https://download.gnome.org/sources/gobject-introspection/1.39/gobject-introspection-1.39.0.tar.xz -->
+<!-- $ tar xvf gobject-introspection-1.39.0.tar.xz -->
+<!-- $ pushd gobject-introspection-1.39.0 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
 <!-- $ make install -->
