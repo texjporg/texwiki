@@ -43,7 +43,7 @@ Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 Microsoft Windows，OS X, GNU/Linux で利用できます．<br>
 TeXworks の Windows 版は，Windows XP 以降の Windows で動作します．<br>
 Windows 2000 では動作しません．<br>
-TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5.1/qtdoc/supported-platforms.html) で動作します．<br>
+TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5/supported-platforms.html) で動作します．<br>
 
 ### License {#lccd03cb}
 
@@ -58,7 +58,7 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
 
 ### ChangeLog {#j22176bb}
 
-- [コミットログ (svn, official)](https://code.google.com/p/texworks/source/list)
+- [コミットログ](https://code.google.com/p/texworks/source/list)
     <!-- -[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
     <!-- -[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
     <!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
