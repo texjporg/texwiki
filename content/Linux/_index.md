@@ -112,11 +112,11 @@ $ sudo tlmgr update --self --all
 
 を実行すれば OK です．<br>
 
-#### pmetapost (pmpost, upmpost) のインストール {#g33a7854}
+#### pmetapost (upmpost) のインストール {#g33a7854}
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 
-pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナリが必要な場合は
+pmetapost (upmpost) と新しい uptex, dvipdfmx, dvips バイナリが必要な場合は
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 ```
@@ -148,10 +148,10 @@ shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
+mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
 
