@@ -38,11 +38,11 @@ ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
 
 ```
-$ ptex2pdf -l hoge.tex
+$ ptex2pdf -l -u hoge.tex
 /usr/bin/env: texlua  : No such file or directory
 ```
 
-ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は ptex2pdf.lua の shebang line
+ptex2pdf -l -u &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は ptex2pdf.lua の shebang line
 
 ```
 #!/usr/bin/env texlua  
