@@ -112,16 +112,6 @@ ForwardPDF<br>
 
 ### LaTeX {#hec49503}
 
-#### platex の場合 {#vab528b1}
-
-コマンド(<ins>M</ins>):
-: platex
-
-オプション:
-: -synctex=1 -interaction=nonstopmode '%source'
-
-#### uplatex の場合 {#w257ee86}
-
 コマンド(<ins>M</ins>):
 : uplatex
 
@@ -129,16 +119,6 @@ ForwardPDF<br>
 : -synctex=1 -interaction=nonstopmode '%source'
 
 ### BibTeX {#kd1bef77}
-
-#### pbibtex の場合 {#j092a932}
-
-コマンド(<ins>M</ins>):
-: pbibtex
-
-オプション:
-: '%S'
-
-#### upbibtex の場合 {#febb1ff7}
 
 コマンド(<ins>M</ins>):
 : upbibtex
