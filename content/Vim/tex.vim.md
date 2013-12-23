@@ -42,18 +42,18 @@ tex.vim が動作しない場合は [quickrun](/quickrun/) を使用してくだ
 
 ```
 if has('win32') || has('win64')
-  let g:typeset = 'pdfplatex'
-  let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
+  let g:typeset = 'pdfuplatex'
+  let g:bibtex = 'upbibtex -sjis-terminal'
   let g:makeindex = 'mendex -U -T'
   let g:viewer = 'texworks'
 elseif has('macunix')
-  let g:typeset = 'pdfplatex'
-  let g:bibtex = 'pbibtex'
+  let g:typeset = 'pdfuplatex'
+  let g:bibtex = 'upbibtex'
   let g:makeindex = 'mendex'
   let g:viewer = 'preview'
 else
-  let g:typeset = 'pdfplatex'
-  let g:bibtex = 'pbibtex'
+  let g:typeset = 'pdfuplatex'
+  let g:bibtex = 'upbibtex'
   let g:makeindex = 'mendex'
   let g:viewer = 'evince'
 endif
@@ -644,7 +644,7 @@ noremap <expr> <C-K>v ViewFile()
 
 ### Windows の場合 {#kf0c55a9}
 
-タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
+タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
 ビューアはデフォルトでは TeXworks を使用します．<br>
 
 > <table>
@@ -661,8 +661,6 @@ noremap <expr> <C-K>v ViewFile()
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
-> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
@@ -680,7 +678,7 @@ noremap <expr> <C-K>v ViewFile()
 ### OS X の場合 {#v2d90738}
 
 動作未確認です．<br>
-タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
+タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
 ビューアはデフォルトでは Preview を使用します．<br>
 
 > <table>
@@ -697,8 +695,6 @@ noremap <expr> <C-K>v ViewFile()
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
-> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
@@ -717,7 +713,7 @@ noremap <expr> <C-K>v ViewFile()
 
 ### Linux の場合 {#q23aa2de}
 
-タイプセットはデフォルトでは pdfpLaTeX を使用します．<br>
+タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
 ビューアはデフォルトでは Evince を使用します．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
@@ -736,8 +732,6 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>:Typeset pdfplatex &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX に変更</td></tr>
-> <tr><td>:Typeset pdfplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfpLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX に変更</td></tr>
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
