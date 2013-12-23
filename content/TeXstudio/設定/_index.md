@@ -34,13 +34,13 @@ pukiwiki: "TeXstudio/設定"
 
 {{< children >}}
 
-を参照して platex, pbibtex, mendex, dvipdfmx, latexmk などの設定をします．<br>
+を参照して uplatex, upbibtex, mendex, dvipdfmx, latexmk などの設定をします．<br>
 
 ### ビルド {#cb495de1}
 
 #### 高度なオプションの表示が OFF の場合 {#f13fa401}
 
-platex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を DVI->PDFチェーン に変更します．<br>
+uplatex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を DVI->PDFチェーン に変更します．<br>
 Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を コンパイル &amp; 表示 に変更して 既定のコンパイラ を Latexmk に変更します．<br>
 
 ***
@@ -106,7 +106,7 @@ SVN<br>
 
 #### 高度なオプションの表示が ON の場合 {#x0fa4d02}
 
-platex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を txs:///dvi-pdf-chain に変更します．<br>
+uplatex + dvipdfmx を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を txs:///dvi-pdf-chain に変更します．<br>
 Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp; 表示 を txs:///compile &#x7c; txs:///view に変更して 既定のコンパイラ を txs:///latexmk に変更します．<br>
 
 ***
