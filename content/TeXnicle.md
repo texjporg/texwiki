@@ -51,22 +51,22 @@ BSD 2-Clause
 ## 設定 {#y1c767e9}
 
 MacTeX がインストールされていることを前提としています．<br>
-デフォルトでは pdflatex を使用することになっているので、日本語 pLaTeX（e-pTeX）で使用する場合は以下のように新たな設定を追加します．
+デフォルトでは pdflatex を使用することになっているので、日本語 upLaTeX（e-upTeX）で使用する場合は以下のように新たな設定を追加します．
 
-### platex＋dvipdfmx として設定する方法 {#t9059d8b}
+### uplatex＋dvipdfmx として設定する方法 {#t9059d8b}
 
 1. 「Preferences」-「Typesetting」の項で Engines タブを選択し、表中の latex を選択して Duplicate します．
 1. コピーした engine ファイル ([latex.engine](https://github.com/martinhewitson/TeXnicle/blob/master/TeXnicle/Engine/EngineScripts/latex.engine)) を選択し、Edit します．
 1. 24行目の ENGINE の行を以下のように修正します．
 
     ```
-    ENGINE=/usr/texbin/platex
+    ENGINE=/usr/texbin/uplatex
     ```
 
 1. 25行目の BIBTEX の行を以下のように修正します．
 
     ```
-    BIBTEX=/usr/texbin/pbibtex
+    BIBTEX=/usr/texbin/upbibtex
     ```
 
 1. 26行目の DVIPS の行を以下のように修正します．
@@ -92,11 +92,11 @@ MacTeX がインストールされていることを前提としています．<
 1. 完了表示を以下のように修正します．
 
     ```
-    echo "*** platex.engine has completed."
+    echo "*** uplatex.engine has completed."
     ```
 
-1. 編集済みの engine ファイルを保存して閉じ、Reveal すると Finder 上 で選択されるので、ファイル名をわかりやすく（たとえば platex.engine に）修正します．
-1. 「Preferences」-「Typesetting」の項で Typesetting タブを選択し、Default Engine に日本語 pLaTeX 用に書き直した新しい engine を選択します．
+1. 編集済みの engine ファイルを保存して閉じ、Reveal すると Finder 上 で選択されるので、ファイル名をわかりやすく（たとえば uplatex.engine に）修正します．
+1. 「Preferences」-「Typesetting」の項で Typesetting タブを選択し、Default Engine に日本語 upLaTeX 用に書き直した新しい engine を選択します．
 1. 個々のファイルでその都度 engine を選択するには、画面左の歯車マークを選択して Engine を設定します．
 
 <strong>Happy LaTeXing!</strong>
