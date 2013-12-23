@@ -33,44 +33,6 @@ quickrun は Vim のプラグインです．<br>
 
 - [shellescape() doesn't work in Windows with 'shellslash' set](https://groups.google.com/forum/#!topic/vim_dev/MEJ3jG-rnR8)
 
-#### pLaTeX (ptex2pdf), TeXworks を使用する場合 {#q2096557}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -ot "-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode" "%s"', 'texworks "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
-#### pLaTeX (ptex2pdf), SumatraPDF を使用する場合 {#g53848c7}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -ot "-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode" "%s"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
 #### upLaTeX (ptex2pdf), TeXworks を使用する場合 {#mecced12}
 
 ***
@@ -265,24 +227,6 @@ let g:quickrun_config = {
 
 動作未確認です．<br>
 
-#### pLaTeX (ptex2pdf), open を使用する場合 {#m9aff51a}
-
-***
-
-```
-""
-"" quickrun
-""
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -ot "-synctex=1 -interaction=nonstopmode" %s', 'open %s:r.pdf']
-\   },
-\}
-```
-
-***
-
 #### upLaTeX (ptex2pdf), open を使用する場合 {#tad5eb4f}
 
 ***
@@ -374,24 +318,6 @@ let g:quickrun_config = {
 ***
 
 ### Linux {#gf5cf76a}
-
-#### pLaTeX (ptex2pdf), xdg-open を使用する場合 {#d6cc8509}
-
-***
-
-```
-""
-"" quickrun
-""
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -ot "-synctex=1 -interaction=nonstopmode" %s', 'xdg-open %s:r.pdf']
-\   },
-\}
-```
-
-***
 
 #### upLaTeX (ptex2pdf), xdg-open を使用する場合 {#he92df34}
 
