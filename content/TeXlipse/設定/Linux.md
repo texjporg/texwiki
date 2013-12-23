@@ -19,19 +19,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-■ platex の場合<br>
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>platex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ uplatex の場合<br>
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>uplatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
@@ -105,10 +92,10 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-■ pbibtex の場合<br>
+■ upbibtex の場合<br>
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>pbibtex "&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -117,10 +104,10 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-■ upbibtex の場合<br>
+■ bibtex の場合<br>
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>bibtex "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
