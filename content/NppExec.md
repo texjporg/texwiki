@@ -24,92 +24,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 - [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec.htm)
 
-### pdfpLaTeX {#o4701461}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; ptex2pdf -l -ot "-synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pdfpLaTeX</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### pdfpLaTeX2 {#y481dee8}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pdfpLaTeX2</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
 ### pdfupLaTeX {#i86b16de}
 
 ***
@@ -141,8 +55,8 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　　　　　Name :　<ins>pdfupLaTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -184,8 +98,8 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　　　　　Name :　<ins>pdfupLaTeX2</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -271,7 +185,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　　　　　Name :　<ins>LuaLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -314,7 +228,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
 　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -368,49 +282,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-### pBibTeX {#f74ea44b}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; pbibtex -kanji=utf8 -sjis-terminal "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pBibTeX</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pBibTeX</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
 ### upBibTeX {#uea6702c}
 
 ***
@@ -442,8 +313,8 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　　　　　Name :　<ins>upBibTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -480,6 +351,23 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>BibTeX</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
 ### BibTeXu {#s9c94c1c}
 
 ***
@@ -503,6 +391,23 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">BibTeXu</span>　　　　　　　　　　　　　　　　　　　　 <strong>ᐯ</strong>\]</ins><br>
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>BibTeXu</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
 
 ***
 
@@ -575,6 +480,23 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>MakeIndex</ins><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
 ### TeXindy {#q7444722}
 
 ***
@@ -600,6 +522,25 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXIndy</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>TeXindy</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
+## TeXworks との連携 {#f405549d}
 
 ### TeXworks {#d203fe0e}
 
@@ -710,58 +651,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 [Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
 
 ## Adobe Reader との連携 {#wbbe918a}
-
-### pdfpLaTeXA {#zd0370fb}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; ptex2pdf -l -ot "-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeXA</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-### pdfpLaTeX2A {#r078522e}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; platex -guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -g > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfpLaTeX2A</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
 
 ### pdfupLaTeXA {#w63fc0bc}
 
