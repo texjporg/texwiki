@@ -45,7 +45,7 @@ DVIビューア用紙寸法設定:　　[^2]<br>
 書誌情報の生成<br>
 処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 オプション(O):　　　　　[^3]<br>
-日本語用処理子(J):　<ins>pbibtex -kanji=utf8</ins> または <ins>upbibtex</ins>[^4]<br>
+日本語用処理子(J):　<ins>upbibtex</ins>[^4]<br>
 索引の生成<br>
 処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
 オプション(T):　　　　　[^5]<br>
@@ -86,8 +86,6 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 #### LaTeX (plain) -> LyX {#tcc5ab59}
 
-■ TeX ファイルが UTF-8 の場合
-
 ***
 
 <span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
@@ -109,28 +107,6 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 \[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
 #### LaTeX (pLaTeX) -> DVI {#p0550e68}
-
-■ platex の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-変換子の定義(N)<br>
-<span style="color:Black;background-color:#DAEAFF;">LaTeX (pLaTeX) -> DVI　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-...<br>
-変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
-<span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pLaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-変換子(O):　　　<ins>platex -guess-input-enc -kanji=utf8 -synctex=1</ins><br>
-追加フラグ(X):　<ins>latex=platex</ins><br>
-
-***
-
-■ uplatex の場合
 
 ***
 
@@ -175,28 +151,6 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 \[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
 #### DVI -> Postscript {#vcfbecff}
-
-■ platex の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-変換子の定義(N)<br>
-<span style="color:Black;background-color:#DAEAFF;">DVI -> Postscript　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-...<br>
-変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
-<span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-変換子(O):　　　<ins>dvips -Ppdf -z -f $$i | convbkmk -g > $$o</ins><br>
-追加フラグ(X):　<br>
-
-***
-
-■ uplatex の場合
 
 ***
 
