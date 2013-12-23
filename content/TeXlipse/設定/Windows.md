@@ -13,7 +13,7 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 ## ビルダー設定 <a id="builder"></a> {#j3f79297}
 
-デフォルトの設定では，pLaTeX が使えないので変更します．<br>
+デフォルトの設定では，upLaTeX が使えないので変更します．<br>
 
 ***
 
@@ -73,21 +73,6 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-■ platex の場合<br>
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\platex.exe</ins> または <ins>C:\texlive\2013\bin\win64\platex.exe</ins> または <ins>C:\w32tex\bin\platex.exe</ins> または <ins>C:\w32tex\bin64\platex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ uplatex の場合<br>
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
@@ -171,12 +156,12 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-■ pbibtex の場合<br>
+■ upbibtex の場合<br>
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\pbibtex.exe</ins> または <ins>C:\texlive\2013\bin\win64\pbibtex.exe</ins> または <ins>C:\w32tex\bin\pbibtex.exe</ins> または <ins>C:\w32tex\bin64\pbibtex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-kanji=utf8 "&#x25;input"</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\upbibtex.exe</ins> または <ins>C:\texlive\2013\bin\win64\upbibtex.exe</ins> または <ins>C:\w32tex\bin\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -185,11 +170,11 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 
 ***
 
-■ upbibtex の場合<br>
+■ bibtex の場合<br>
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\upbibtex.exe</ins> または <ins>C:\texlive\2013\bin\win64\upbibtex.exe</ins> または <ins>C:\w32tex\bin\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win32\bibtex.exe</ins> または <ins>C:\texlive\2013\bin\win64\bibtex.exe</ins> または <ins>C:\w32tex\bin\bibtex.exe</ins> または <ins>C:\w32tex\bin64\bibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -324,12 +309,12 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\texlive\2013\bin\win32\platex.exe または C:\texlive\2013\bin\win64\platex.exe または C:\w32tex\bin\platex.exe または C:\w32tex\bin64\platex.exe)<br>
+　　Latex program　　　(C:\texlive\2013\bin\win32\uplatex.exe または C:\texlive\2013\bin\win64\uplatex.exe または C:\w32tex\bin\uplatex.exe または C:\w32tex\bin64\uplatex.exe)<br>
 　　PsLatex program　　　()<br>
 　　PdfLatex program　　　(C:\texlive\2013\bin\win32\pdflatex.exe または C:\texlive\2013\bin\win64\pdflatex.exe または C:\w32tex\bin\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe)<br>
 　　XeLatex program　　　(C:\texlive\2013\bin\win32\xelatex.exe または C:\texlive\2013\bin\win64\xelatex.exe または C:\w32tex\bin\xelatex.exe または C:\w32tex\bin64\xelatex.exe)<br>
 　　LuaLatex program　　　(C:\texlive\2013\bin\win32\lualatex.exe または C:\texlive\2013\bin\win64\lualatex.exe または C:\w32tex\bin\lualatex.exe または C:\w32tex\bin64\lualatex.exe)<br>
-　　Bibtex program　　　(C:\texlive\2013\bin\win32\pbibtex.exe または C:\texlive\2013\bin\win64\pbibtex.exe または C:\w32tex\bin\pbibtex.exe または C:\w32tex\bin64\pbibtex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2013\bin\win32\upbibtex.exe または C:\texlive\2013\bin\win64\upbibtex.exe または C:\w32tex\bin\upbibtex.exe または C:\w32tex\bin64\upbibtex.exe)<br>
 　　Biber (BibLaTeX)　　　(C:\texlive\2013\bin\win32\biber.exe または C:\texlive\2013\bin\win64\biber.exe または C:\w32tex\bin\biber.exe または C:\w32tex\bin64\biber.exe)<br>
 　　Makeindex program　　　(C:\texlive\2013\bin\win32\mendex.exe または C:\texlive\2013\bin\win64\mendex.exe または C:\w32tex\bin\mendex.exe または C:\w32tex\bin64\mendex.exe)<br>
 　　Dvips program　　　(C:\texlive\2013\bin\win32\dvips.exe または C:\texlive\2013\bin\win64\dvips.exe または C:\w32tex\bin\dvips.exe または C:\w32tex\bin64\dvips.exe)<br>
