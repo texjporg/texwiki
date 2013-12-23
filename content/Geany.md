@@ -53,10 +53,6 @@ BibTeX や hyperref パッケージなどを使用する場合は latexmk を使
 LaTeX -> <ins>P</ins>DF
 : &nbsp;
 
-: ptex2pdf -l -ot '-synctex=1 --file-line-error-style' "%f"
-
-: platex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -g > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
-
 : ptex2pdf -l -u -ot '-synctex=1 --file-line-error-style' "%f"
 
 : uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
@@ -68,10 +64,6 @@ LaTeX -> <ins>P</ins>DF
 : luajitlatex -synctex=1 --file-line-error-style "%f"
 
 : xelatex -synctex=1 --file-line-error-style "%f"
-
-: latexmk -e '$latex=q/platex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
-
-: latexmk -e '$latex=q/platex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "%f"
 
 : latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
 
