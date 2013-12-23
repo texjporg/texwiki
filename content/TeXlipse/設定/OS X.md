@@ -14,10 +14,10 @@ pukiwiki: "TeXlipse/設定/OS X"
 ## ビルダー設定 <a id="builder"></a> {#vcf0d397}
 
 動作未確認です．<br>
-OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされています．<br>
-設定で \[Browse...\] を使用するとリンク先の eptex に変更されてしまい LaTeX 文書がタイプセットできなくなるので \[Browse...\] は使用せずに直接パスを指定してください．<br>
+OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされています．<br>
+設定で \[Browse...\] を使用するとリンク先の euptex に変更されてしまい LaTeX 文書がタイプセットできなくなるので \[Browse...\] は使用せずに直接パスを指定してください．<br>
 
-- texlipse日本語コンパイルできない（mac）→ 解決できました ([qa:56663](https://okumuralab.org/~okumura/texfaq/qa/56663.html), [qa:56664](https://okumuralab.org/~okumura/texfaq/qa/56664.html), [qa:56665](https://okumuralab.org/~okumura/texfaq/qa/56665.html), [qa:56666](https://okumuralab.org/~okumura/texfaq/qa/56666.html))
+<!-- -texlipse日本語コンパイルできない（mac）→ 解決できました ([[qa:56663]], [[qa:56664]], [[qa:56665]], [[qa:56666]]) -->
 
 ***
 
@@ -25,21 +25,6 @@ OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされていま
 
 ***
 
-■ platex の場合<br>
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/platex</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ uplatex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
@@ -123,11 +108,11 @@ OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされていま
 
 ***
 
-■ pbibtex の場合<br>
+■ upbibtex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/pbibtex</ins><br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -137,11 +122,11 @@ OS X の MacTeX, TeX Live の場合 platex は eptex にリンクされていま
 
 ***
 
-■ upbibtex の場合<br>
+■ bibtex の場合<br>
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
+　　 Program file： 　　　　　　　<ins>/usr/texbin/bibtex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
