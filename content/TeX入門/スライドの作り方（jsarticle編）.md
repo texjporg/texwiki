@@ -28,7 +28,7 @@ jsarticleにslideオプションを付けると簡単にスライドができま
 ### 雛形 {#c192429c}
 
 ```
-\documentclass[slide,papersize]{jsarticle}
+\documentclass[uplatex,slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
