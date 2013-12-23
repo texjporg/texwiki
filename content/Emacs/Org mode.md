@@ -123,11 +123,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -143,11 +139,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -249,11 +241,7 @@ latexmk は TeX Live に含まれています．<br>
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -269,11 +257,7 @@ latexmk は TeX Live に含まれています．<br>
 
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -374,11 +358,7 @@ latexmk は TeX Live に含まれています．<br>
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[dvipdfmx,12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,dvipdfmx,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -394,11 +374,7 @@ latexmk は TeX Live に含まれています．<br>
 
 (add-to-list 'org-latex-classes
              '("jsarticle-dvips"
-               "\\ifdefined\\ucs
-  \\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
-\\else
-  \\documentclass[12pt,a4paper,papersize]{jsarticle}
-\\fi
+               "\\documentclass[uplatex,12pt,a4paper,papersize]{jsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -495,7 +471,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### ltjsarticle で lua(jit)latex を使用する場合 {#of5b23e4}
+#### ltjsarticle で lualatex, luajitlatex を使用する場合 {#of5b23e4}
 
 org ファイルの先頭に
 
@@ -507,7 +483,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### bxjsarticle で uplatex + dvipdfmx, pdflatex, lua(jit)latex, xelatex を使用する場合 {#mc51aa00}
+#### bxjsarticle で uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex を使用する場合 {#mc51aa00}
 
 org ファイルの先頭に
 
