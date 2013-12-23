@@ -77,40 +77,6 @@ AkelFiles\Plugs\Scripts フォルダーにスクリプトを配置します．<b
 \[オプション(O)\]-\[プラグイン(N)...\] の プラグイン::関数 から Scripts::Main を選択して \[呼び出し\] をクリックします．<br>
 Scripts から実行するスクリプトを選択して \[Exec\] をクリックします．<br>
 
-### pdfpLaTeX.js {#mfc340cc}
-
-***
-
-```
-(function () {
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var c = fso.GetParentFolderName(AkelPad.GetEditFile(0));
-    var b = fso.GetBaseName(AkelPad.GetEditFile(0));
-    var cd = "cd /d " + ["\"", c, "\""].join("");
-    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal\"";
-    var codepage = AkelPad.GetEditCodePage(0);
-    if (codepage == 65001) {
-        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal\"";
-    } else if (codepage == 932) {
-        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=sjis -sjis-terminal\"";
-    } else if (codepage == 20932) {
-        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=euc -sjis-terminal\"";
-    } else if (codepage == 50220 || codepage == 50221 || codepage == 50222) {
-        ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -no-guess-input-enc -kanji=jis -sjis-terminal\"";
-    }
-    ptex2pdf += " " + ["\"", b, "\""].join("");
-    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
-
-    var ok = AkelPad.MessageBox(AkelPad.GetMainWnd(), cmd, "AkelPad", 1 | 64);
-    if (ok == 1) {
-        AkelPad.SaveFile(AkelPad.GetEditWnd(), AkelPad.GetEditFile(0));
-        AkelPad.Exec(cmd);
-    }
-}.call(this));
-```
-
-***
-
 ### pdfupLaTeX.js {#c0a300af}
 
 ***
