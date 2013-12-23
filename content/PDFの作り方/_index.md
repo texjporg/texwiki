@@ -19,8 +19,8 @@ pukiwiki: "PDFの作り方"
 
 #### フリーウェア派 (Windows/OS X/Linux/\*BSD/...) {#d8e4c485}
 
-- (u)(p)LaTeX + dvipdfmx
-- (u)(p)LaTeX + dvips + ps2pdf (Ghostscript)
+- upLaTeX + dvipdfmx
+- upLaTeX + dvips + ps2pdf (Ghostscript)
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
 - LuaJITLaTeX
@@ -34,7 +34,7 @@ pukiwiki: "PDFの作り方"
 
 #### 折衷派 (Windows/OS X) {#ve37d7b0}
 
-- (u)(p)LaTeX + dvips + Acrobat Distiller
+- upLaTeX + dvips + Acrobat Distiller
 - Acrobat ほか
 
 #### PDF 作成ソフト一覧 {#w48b82bc}
@@ -357,6 +357,7 @@ W32TeX では Computer Modern Type 1 フォントは[t1fonts.tar.xz](http://www.
     ```
     \usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,urlcolor=black,%
           linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false]{hyperref}
+    \usepackage{pxjahyper}
     ```
 
 - \boldsymbol などを用いて本物のボールド体を使ってください。（重ね打ち \[“\pmb” or “\bm”\] による擬似的ボールド体は見苦しいです。例えば IEEE サイトで有償提供されている論文などです。）
@@ -416,66 +417,40 @@ kanji-config-updmap ipaex
 
 を実行します。<br>
 
-W32TeX の場合は和文フォントを埋め込むかどうかは $TEXMF/fonts/map/dvipdfmx/base/cid-x.map というファイルの設定によります。
+W32TeX の場合は和文フォントはデフォルトでは IPAexMincho・IPAexGothic を埋め込みます。<br>
 
-platex + dvipdfmx の場合はこれに
-
-```
-rml   H  Ryumin-Light
-rmlv  V  Ryumin-Light
-gbm   H  GothicBBB-Medium
-gbmv  V  GothicBBB-Medium
-```
-
-と書いてあれば埋め込まれません。
+$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
 
 ```
-rml   H ipaexm.ttf
-gbm   H ipaexg.ttf
-rmlv  V ipaexm.ttf
-gbmv  V ipaexg.ttf
-```
+%%
+%% upTeX examples
+%%
 
-と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます。
-
-- なお、dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです。日本語版 dvipdfm にはこの問題はないようです。
-    （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
-    The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
-    sets may be used.）
-
-uplatex + dvipdfmx の場合はこれに
-
-```
-urml		UniJIS-UTF16-H		!Ryumin-Light
-urmlv		UniJIS-UTF16-V		!Ryumin-Light
-ugbm		UniJIS-UTF16-H		!GothicBBB-Medium
-ugbmv		UniJIS-UTF16-V		!GothicBBB-Medium
-
-uprml-h		UniJIS-UTF16-H		!Ryumin-Light
-uprml-v		UniJIS-UTF16-V		!Ryumin-Light
-upgbm-h		UniJIS-UTF16-H		!GothicBBB-Medium
-upgbm-v		UniJIS-UTF16-V		!GothicBBB-Medium
-uprml-hq	UniJIS-UCS2-H		!Ryumin-Light
-upgbm-hq	UniJIS-UCS2-H		!GothicBBB-Medium
-```
-
-と書いてあれば埋め込まれません。
-
-```
-urml		UniJIS-UTF16-H		ipaexm.ttf
-urmlv		UniJIS-UTF16-V		ipaexm.ttf
-ugbm		UniJIS-UTF16-H		ipaexg.ttf
-ugbmv		UniJIS-UTF16-V		ipaexg.ttf
-
-uprml-h		UniJIS-UTF16-H		ipaexm.ttf
-uprml-v		UniJIS-UTF16-V		ipaexm.ttf
-upgbm-h		UniJIS-UTF16-H		ipaexg.ttf
-upgbm-v		UniJIS-UTF16-V		ipaexg.ttf
-uprml-hq	UniJIS-UCS2-H		ipaexm.ttf
-upgbm-hq	UniJIS-UCS2-H		ipaexg.ttf
+urml     UniJIS-UTF16-H   ipaexm.ttf
+urmlv    UniJIS-UTF16-V   ipaexm.ttf
+ugbm     UniJIS-UTF16-H   ipaexg.ttf
+ugbmv    UniJIS-UTF16-V   ipaexg.ttf
+uprml-h  UniJIS-UTF16-H   ipaexm.ttf
+uprml-v  UniJIS-UTF16-V   ipaexm.ttf
+upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
+upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
+uprml-hq UniJIS-UCS2-H    ipaexm.ttf
+upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 ```
 
 と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます。
+
+cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
+
+```
+kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
+```
+
+なお、dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです。<br>
+日本語版 dvipdfm にはこの問題はないようです。<br>
+（参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
+The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
+sets may be used.）<br>
 
 dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます。<br>
 EPS 挿入には外部プログラムとして Ghostscript が必要です。<br>
@@ -507,10 +482,10 @@ sudo nano /usr/local/texlive/texmf-local/web2c/texmf.cnf　（ここでは例と
 
 ```
 shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
+mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
 
@@ -601,8 +576,8 @@ TeX Live では，“-Ppdf” オプションは不要です。<br>
 のデフォルト設定では用紙がレターサイズになってしまいます。<br>
 A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
 に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）。<br>
-[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
-\documentclass\[a4paper,papersize\]{jsarticle}
+[新ドキュメントクラス](/jsclasses/)なら
+\documentclass\[uplatex,a4paper,papersize\]{jsarticle}
 のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます。<br>
 
 図を挿入する際には
@@ -753,8 +728,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 これ（zu.pdf とします）を次のようにして挿入します。
 
 ```
-%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \begin{document}
 ...
@@ -947,7 +921,7 @@ Word などのアプリケーションからこのプリンターに印刷する
 
 ```
 pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
-lua(jit)latex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
+lualatex, luajitlatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
 xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 ※ 挿入図ファイルはPDF形式等も可
 ```
@@ -955,7 +929,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 (2) tex → dvi → pdf 
 
 ```
-(2)-1: (u)(p)latex: tex → dvi
+(2)-1: uplatex: tex → dvi
 (2)-2: dvipdfmx: dvi → pdf
 ※ ptex2pdf を使用すると (2)-1, (2)-2 の処理を一度に実行できます。
 ※ 挿入図ファイルはPDF形式等も可（EPS形式以外はdvipdfmxが自力で対応するので、Ghostscriptの助けは不要）。
@@ -964,7 +938,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 (3) tex → dvi → ps → pdf
 
 ```
-(3)-1: (u)(p)latex: tex → dvi
+(3)-1: uplatex: tex → dvi
 (3)-2: dvips: dvi → ps
 (3)-3: ps2pdf (Ghostscript)  or 「Adobe Distiller」: ps → pdf
 ※ arXiv等ではこれを要求されるようです
@@ -973,7 +947,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 
 ### PDF形式ファイル（図）の挿入について {#n20e1824}
 
-- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「pdflatex, lua(jit)latex, xelatex: tex → pdf」または「(u)(p)latex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い。
+- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「pdflatex, lualatex, luajitlatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い。
 - 図の挿入は、一般的には，BoundingBox 情報の処理が必要（→[TeX入門/図表](</TeX入門/図表/>)）。BoundingBox とは、EPS 形式で定義されているような、描画図をぴったり囲む矩形のこと。
 
 - pdf ファイルの BoundingBox 情報
