@@ -111,13 +111,13 @@ gvfs-open "$shortname.pdf"
 [ptex2pdf](/ptex2pdf/) を使用する場合は
 
 ```
-ptex2pdf -l -ot '-synctex=1' "$filename"
+ptex2pdf -l -u -ot '-synctex=1' "$filename"
 ```
 
 Latexmk を使用する場合は
 
 ```
-latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
 を \[追加(A)\] して設定します．<br>
@@ -246,41 +246,6 @@ Bracket Completion プラグインを使用すると閉じかっこを自動的�
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 Latexmk は Latexmk Version 4.37 以降が必要です．<br>
 
-#### pdfpLaTeX {#pcd18d0c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-ptex2pdf -l -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfpLaTeX2 {#g8ed96d6}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-platex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
-convbkmk -g > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
-ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
 #### pdfupLaTeX {#x4f1ba2c}
 
 ***
@@ -396,38 +361,6 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk-pdfpLaTeX {#id6f3d3f}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Latexmk-pdfpLaTeX2 {#p2b753e6}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
 #### Latexmk-pdfupLaTeX {#t17eb179}
 
 ***
@@ -517,22 +450,6 @@ latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O 
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -xelatex "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pBibTeX {#h82edb4a}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
 ```
 
 ***
