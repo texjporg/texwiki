@@ -139,7 +139,7 @@ I think this fix is due to F. Mittelbach.
 AMS-LaTeXを利用することを前提として，ディスプレイ数式のソース記述を簡単にまとめました．
 
 ```
-\documentclass{jarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage{amsmath}
 \begin{document}
 AMS-LaTeXを利用することを前提として，ディスプレイ数式のソース記述を簡単にまとめました．
@@ -195,5 +195,3 @@ AMS-LaTeXを利用することを前提として，ディスプレイ数式の�
 \end{itemize}
 \end{document}
 ```
-
-## コメント {#mlcomeiz}
