@@ -152,11 +152,7 @@ SVN<br>
 LaTeX
 : &nbsp;
 
-: platex.exe -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
-
 : uplatex.exe -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
-
-: latex.exe -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
@@ -215,8 +211,6 @@ DviPdf
 BibTeX
 : &nbsp;
 
-: pbibtex.exe -kanji=utf8 %
-
 : upbibtex.exe %
 
 : bibtexu.exe %
@@ -251,8 +245,6 @@ Makeglossary
 Metapost
 : &nbsp;
 
-: pmpost.exe -kanji=utf8 -interaction=nonstopmode ?me)
-
 : upmpost.exe -interaction=nonstopmode ?me)
 
 : mpost.exe -interaction=nonstopmode ?me)
@@ -271,8 +263,6 @@ Ghostscript
 
 Latexmk
 : &nbsp;
-
-: latexmk -e "$latex=q/platex &#x25;&#x25;O -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/pbibtex &#x25;&#x25;O -kanji=utf8 &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 : latexmk -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
@@ -306,18 +296,6 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 forward search は 外部PDFビューア に
 
-■ 32-bit Windows の場合
-
-```
-"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
-```
-
-または
-
-```
-dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
-```
-
 ■ 64-bit Windows の場合
 
 ```
@@ -330,22 +308,34 @@ dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSear
 dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
 ```
 
+■ 32-bit Windows の場合
+
+```
+"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+```
+
+または
+
+```
+dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
+```
+
 です．
 
 #### SumatraPDF を前面に表示したくない場合 {#pa03cf5d}
 
 forward search は 外部PDFビューア に
 
-■ 32-bit Windows の場合
-
-```
-dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
-```
-
 ■ 64-bit Windows の場合
 
 ```
 dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
+```
+
+■ 32-bit Windows の場合
+
+```
+dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
 ```
 
 です．
