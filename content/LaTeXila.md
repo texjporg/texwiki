@@ -78,41 +78,13 @@ LaTeXila 2.8.2 で
 <!-- デフォルトの設定を削除して以下のように設定します．~ -->
 <!--  -->
 <!-- :Commands| -->
-<!-- :|latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename" -->
+<!-- :|latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename" -->
 <!-- :Post Processor| -->
 <!-- :|latexmk -->
 <!--  -->
 <!-- [Build]-[LaTeX → DVI → PDF (Latexmk)] で実行できます．~ -->
 
 ### Personal build tools {#kcfc97ba}
-
-#### Latexmk-pdfpLaTeX {#hcba291f}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-pdfpLaTeX\] で実行できます．<br>
-
-#### Latexmk-pdfpLaTeX2 {#kb20cc70}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$latex=q/platex %O -synctex=1 %S/' -e '$bibtex=q/pbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-pdfpLaTeX2\] で実行できます．<br>
 
 #### Latexmk-pdfupLaTeX {#q6b26226}
 
