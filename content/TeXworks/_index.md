@@ -419,7 +419,7 @@ kanji-config-updmap ipaex
 ### W32TeX の場合 {#h6fd82bc}
 
 デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
-pdfpLaTeX (platex + dvipdfmx) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
+upLaTeX (ptex2pdf), pdfupLaTeX で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
 フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．<br>
 
 ***
@@ -444,13 +444,19 @@ C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のよう�
 
 ```
 %%
-%% ASCII pTeX Examples
+%% upTeX examples
 %%
 
-rml   H ipaexm.ttf
-gbm   H ipaexg.ttf
-rmlv  V ipaexm.ttf
-gbmv  V ipaexg.ttf
+urml     UniJIS-UTF16-H   ipaexm.ttf
+urmlv    UniJIS-UTF16-V   ipaexm.ttf
+ugbm     UniJIS-UTF16-H   ipaexg.ttf
+ugbmv    UniJIS-UTF16-V   ipaexg.ttf
+uprml-h  UniJIS-UTF16-H   ipaexm.ttf
+uprml-v  UniJIS-UTF16-V   ipaexm.ttf
+upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
+upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
+uprml-hq UniJIS-UCS2-H    ipaexm.ttf
+upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 ```
 
 ***
@@ -460,8 +466,6 @@ cid-x.map の場所は Windows PowerShell またはコマンド プロンプト�
 ```
 kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
 ```
-
-uplatex + dvipdfmx の場合は [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#rdc781c9>) を参照してください．<br>
 
 ## 設定 {#q50d2378}
 
