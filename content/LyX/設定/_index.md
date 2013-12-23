@@ -123,7 +123,7 @@ babel のオプションを設定する場合は以下の方法があります�
 日本語の文書を作成する場合は，言語を日本語に設定します．<br>
 LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．<br>
 言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
-出力した文書が文字化けしてしまう場合は platex, pbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
+出力した文書が文字化けしてしまう場合は uplatex, upbibtex, mendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
 
 LaTeX (pLaTeX) で書き出しすると指定した文字コードで出力されます．<br>
 lyx ファイル自体は常に UTF-8 で保存されます．<br>
@@ -378,61 +378,6 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 
 ***
 
-#### platex + dvipdfmx の場合 {#j305d328}
-
-文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
-クラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>dvipdfmx,12pt,papersize</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
-
-#### platex + dvips + ps2pdf の場合 {#v823b899}
-
-文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvips を使用する場合は，グラフィックドライバに 既定値 または Dvips を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt,papersize</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
-
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
 文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
@@ -652,7 +597,7 @@ xelatex を使用する場合は，グラフィックドライバに 既定値 �
 
 ***
 
-(u)platex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
+uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
 
 ***
 
