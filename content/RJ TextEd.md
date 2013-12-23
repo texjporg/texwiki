@@ -63,29 +63,6 @@ FastScript は
 
 の中から好みのプログラミング言語の構文 (シンタックス) を選択して記述することができます．<br>
 
-### pdfpLaTeX.js {#g293b7d1}
-
-***
-
-```
-{
-    var fso = CreateOleObject("Scripting.FileSystemObject");
-    var wshShell = CreateOleObject("WScript.Shell");
-    var c = fso.GetParentFolderName(Document.FileName);
-    var b = fso.GetBaseName(Document.FileName);
-    var cd = "cd /d " + "\"" + c + "\"";
-    var ptex2pdf = "ptex2pdf -l -ot \"-synctex=1 -kanji=utf8 -guess-input-enc -sjis-terminal\"" + " " + "\"" + b + "\"";
-    var cmd = "cmd /c " + cd + " && " + ptex2pdf;
-    var ok = wshShell.Popup(cmd, 0, "RJ TextEd", 1 + 64);
-    if (ok == 1) {
-        Document.Save();
-        MainApp.RunApp("C:\\Windows\\System32\\cmd.exe", cmd, true, true);
-    }
-}
-```
-
-***
-
 ### pdfupLaTeX.js {#y2fd8be4}
 
 ***
