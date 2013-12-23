@@ -18,7 +18,7 @@ pukiwiki: "Cygwin"
 ## Cygwin とは {#yd433e3a}
 
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
-32-bit 版と 64-bit 版のインストーラーがあります．<br>
+64-bit 版と 32-bit 版のインストーラーがあります．<br>
 アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
@@ -117,11 +117,11 @@ $ tlmgr update --self --all
 
 を実行すれば OK です．<br>
 
-#### pmetapost (pmpost, upmpost) のインストール {#x265f6f4}
+#### pmetapost (upmpost) のインストール {#x265f6f4}
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 
-pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナリが必要な場合は
+pmetapost (upmpost) と新しい uptex, dvipdfmx, dvips バイナリが必要な場合は
 [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 ```
@@ -155,36 +155,11 @@ shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
+mpost,upmpost,\
 repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ mktexlsr
-```
-
-#### 文字コードの自動判別 {#d4ff8f82}
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-```
-$ wget http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
-$ tar xvf nkf-2.1.3.tar.gz
-$ pushd nkf-2.1.3
-$ make
-$ make prefix=/usr install
-$ popd
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf に設定を追加します．<br>
-
-```
-PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
 mktexlsr を実行します．<br>
@@ -204,21 +179,19 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-TeX Live には IPAex フォント，(u)ptex-ipaex.map が収録されています．<br>
+TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
 
 ```
 $ kpsewhich ipaexm.ttf ipaexg.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich ptex-ipaex.map uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
+$ kpsewhich uptex-ipaex.map
 /usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
 ```
 
-(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 $ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
@@ -231,15 +204,15 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 <!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
 <!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
-#### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
-
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
-
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
 
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
 - [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
+
+#### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
+
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
@@ -247,7 +220,7 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
 - [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
 
-Cygwin オフィシャルインストーラーの setup-x86.exe または setup-x86_64.exe を使って TeX Live/Cygwin をインストールできます．<br>
+Cygwin オフィシャルインストーラーの setup-x86_64.exe または setup-x86.exe を使って TeX Live/Cygwin をインストールできます．<br>
 パッケージ選択画面で Publishing を Default から Install に変更すると TeX Live/Cygwin がフルインストールされます．<br>
 
 ***
@@ -282,7 +255,7 @@ Cygwin オフィシャルインストーラーの setup-x86.exe または setup-
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.831 (32-bit)</strong> または <strong>Setup.exe version 2.831 (64-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.831 (64-bit)</strong> または <strong>Setup.exe version 2.831 (32-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
@@ -447,36 +420,11 @@ shell_escape_commands を以下のように編集して保存します．<br>
 
 ```
 shell_escape_commands = \
-bibtex,bibtex8,bibtexu,pbibtex,upbibtex,biber,\
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
 makeindex,mendex,texindy,\
-mpost,pmpost,upmpost,\
+mpost,upmpost,\
 repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ mktexlsr
-```
-
-#### 文字コードの自動判別 {#hab7fdc9}
-
-文字コードの自動判別機能を有効にする場合は [日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照して設定します．<br>
-
-```
-$ wget http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
-$ tar xvf nkf-2.1.3.tar.gz
-$ pushd nkf-2.1.3
-$ make
-$ make prefix=/usr install
-$ popd
-```
-
-/usr/share/texmf-site/web2c/texmf.cnf に設定を追加します．<br>
-
-```
-PTEX_IN_FILTER = /usr/bin/nkf -w
 ```
 
 mktexlsr を実行します．<br>
@@ -496,10 +444,9 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 $ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
@@ -510,11 +457,11 @@ $ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
 
 ```
-$ ptex2pdf -l hoge.tex
+$ ptex2pdf -l -u hoge.tex
 /usr/bin/env: texlua  : No such file or directory
 ```
 
-ptex2pdf -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
+ptex2pdf -l -u &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
 
 ```
 #!/usr/bin/env texlua  
@@ -556,13 +503,13 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
 
-## setup-x86.exe, setup-x86_64.exe 以外のオフラインインストーラー {#lb2cecd8}
+## setup-x86_64.exe, setup-x86.exe 以外のオフラインインストーラー {#lb2cecd8}
 
 - [pmcyg](http://pmcyg.sourceforge.net/)
     - [オフラインでもCygwinのインストールを行えるようにする「pmcyg」](http://www.moongift.jp/2010/01/pmcyg/)
     - [pmcygを使ってCygwinをクリーンインストール](http://d.hatena.ne.jp/takehikom/20100110/1263073598)
 
-## setup-x86.exe, setup-x86_64.exe 以外のパッケージ管理 {#re5d2b36}
+## setup-x86_64.exe, setup-x86.exe 以外のパッケージ管理 {#re5d2b36}
 
 - [apt-cyg](https://code.google.com/p/apt-cyg/)
     - [https://github.com/paprykarz/apt-cyg](https://github.com/paprykarz/apt-cyg)
