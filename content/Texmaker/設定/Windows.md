@@ -37,7 +37,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -49,7 +49,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex $opt -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/pbibtex $opt -kanji=utf8 $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/pdflatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtex $opt $base/""" -e """$makeindex=q/makeindex $opt -o $dst $src/""" -norc -gg -pdf $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/lualatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/luajitlatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/xelatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -xelatex $s}"</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/pdflatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtex $opt $base/""" -e """$makeindex=q/makeindex $opt -o $dst $src/""" -norc -gg -pdf $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/lualatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/luajitlatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/xelatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -xelatex $s}"</ins><br>
 
 　　　<strong>クイックビルド</strong><br>
 
@@ -71,7 +71,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins> または <ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
@@ -115,7 +115,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -127,7 +127,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/platex $opt -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/pbibtex $opt -kanji=utf8 $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/pdflatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtex $opt $base/""" -e """$makeindex=q/makeindex $opt -o $dst $src/""" -norc -gg -pdf $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/lualatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/luajitlatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/xelatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -xelatex $s}"</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/pdflatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtex $opt $base/""" -e """$makeindex=q/makeindex $opt -o $dst $src/""" -norc -gg -pdf $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/lualatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/luajitlatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/xelatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -xelatex $s}"</ins><br>
 
 　　　<strong>クイックビルド</strong><br>
 
@@ -149,7 +149,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -kanji=utf8 -interaction=nonstopmode &#x25;</ins> または <ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
@@ -219,70 +219,6 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
 ## [Adobe Reader](</Adobe Reader/>) との連携 {#u27e1718}
-
-### pdfpLaTeXA {#c1deb4e2}
-
-pdfplatexA-nonstopmode.bat を作成します．
-
-***
-
-- C:\w32tex\bin\pdfplatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --rxi --file "%~n1.pdf" && ^
-pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode %1 && ^
-dvipdfmx "%~n1" && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-pdfplatexA-nonstopmode.bat %
-```
-
-を入力します．
-
-### pdfpLaTeX2A {#x150a7a4}
-
-pdfplatex2A-nonstopmode.bat を作成します．
-
-***
-
-- C:\w32tex\bin\pdfplatex2A-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --rxi --file "%~n1.pdf" && ^
-pdfclose --rxi --file "%~n1.pdf" & ^
-platex -kanji=utf8 -guess-input-enc -interaction=nonstopmode %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -g > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps" && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-pdfplatex2A-nonstopmode.bat %
-```
-
-を入力します．
 
 ### pdfupLaTeXA {#v915ab85}
 
