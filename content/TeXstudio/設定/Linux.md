@@ -148,11 +148,7 @@ SVN<br>
 LaTeX
 : &nbsp;
 
-: platex -synctex=1 -interaction=nonstopmode %.tex
-
 : uplatex -synctex=1 -interaction=nonstopmode %.tex
-
-: latex -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
@@ -207,8 +203,6 @@ DviPdf
 BibTeX
 : &nbsp;
 
-: pbibtex %
-
 : upbibtex %
 
 : bibtexu %
@@ -243,11 +237,7 @@ Makeglossary
 Metapost
 : &nbsp;
 
-: pmpost -interaction=nonstopmode %
-
 : upmpost -interaction=nonstopmode %
-
-: mpost -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
@@ -261,8 +251,6 @@ Ghostscript
 
 Latexmk
 : &nbsp;
-
-: latexmk -e "$latex=q/platex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/pbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 : latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
