@@ -97,7 +97,7 @@ M-x list-packages RET でリストを表示して org を選択
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
 latexmk は TeX Live, W32TeX に含まれています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
@@ -110,9 +110,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-default-class "jsarticle")
-(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc %S/\" -e \"$bibtex=q/pbibtex -kanji=utf8 %B/\" -e \"$makeindex=q/mendex -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/platex -kanji=utf8 -guess-input-enc %S/\" -e \"$bibtex=q/pbibtex -kanji=utf8 %B/\" -e \"$makeindex=q/mendex -U -o %D %S/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$makeindex=q/mendex -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$makeindex=q/mendex -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
 ;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$makeindex=q/mendex -U -o %D %S/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %S %D/\" -norc -gg -pdfps %f"))
 ;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex %S/\" -e \"$bibtex=q/bibtex %B/\" -e \"$makeindex=q/makeindex -o %D %S/\" -norc -gg -pdf %f"))
 ;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %b.pdf && pdfclose --rxi --file %b.pdf & latexmk -e \"$pdflatex=q/lualatex %S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$makeindex=q/texindy -o %D %S/\" -norc -gg -lualatex %f"))
@@ -227,7 +225,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
 latexmk は TeX Live に含まれています．<br>
 
 ***
@@ -239,9 +237,7 @@ latexmk は TeX Live に含まれています．<br>
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-default-class "jsarticle")
-(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex %S/' -e '$bibtex=q/pbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/platex %S/' -e '$bibtex=q/pbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
 ;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/pdflatex %S/' -e '$bibtex=q/bibtex %B/' -e '$makeindex=q/makeindex -o %D %S/' -norc -gg -pdf %f"))
 ;(setq org-latex-pdf-process '("/usr/texbin/latexmk -e '$pdflatex=q/lualatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$makeindex=q/texindy -o %D %S/' -norc -gg -lualatex %f"))
@@ -354,7 +350,7 @@ latexmk は TeX Live に含まれています．<br>
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく (u)pLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
+pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
 latexmk は TeX Live に含まれています．<br>
 
 ***
@@ -366,9 +362,7 @@ latexmk は TeX Live に含まれています．<br>
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-default-class "jsarticle")
-(setq org-latex-pdf-process '("latexmk -e '$latex=q/platex %S/' -e '$bibtex=q/pbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/platex %S/' -e '$bibtex=q/pbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -g > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
 ;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$makeindex=q/mendex -o %D %S/' -e '$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %S %D/' -norc -gg -pdfps %f"))
 ;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/pdflatex %S/' -e '$bibtex=q/bibtex %B/' -e '$makeindex=q/makeindex -o %D %S/' -norc -gg -pdf %f"))
 ;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/lualatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$makeindex=q/texindy -o %D %S/' -norc -gg -lualatex %f"))
@@ -477,7 +471,7 @@ latexmk は TeX Live に含まれています．<br>
 
 ### 使い方 {#a6515cd5}
 
-#### jsarticle で (u)platex + dvipdfmx を使用する場合 {#q8639193}
+#### jsarticle で uplatex + dvipdfmx を使用する場合 {#q8639193}
 
 org ファイルの先頭に
 
@@ -489,7 +483,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### jsarticle で (u)platex + dvips + ps2pdf を使用する場合 {#c4685629}
+#### jsarticle で uplatex + dvips + ps2pdf を使用する場合 {#c4685629}
 
 org ファイルの先頭に
 
@@ -513,7 +507,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### bxjsarticle で (u)platex + dvipdfmx, pdflatex, lua(jit)latex, xelatex を使用する場合 {#mc51aa00}
+#### bxjsarticle で uplatex + dvipdfmx, pdflatex, lua(jit)latex, xelatex を使用する場合 {#mc51aa00}
 
 org ファイルの先頭に
 
