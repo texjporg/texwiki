@@ -17,7 +17,7 @@ pukiwiki: "OTF"
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
-和文 OpenType フォントを pLaTeX, upLaTeX で使うためのパッケージです。<br>
+和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。<br>
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br> <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
 
@@ -147,13 +147,8 @@ Adobe Reader 9.1 Font Packs
 
 ```
 \ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex]{jsarticle}
-    \usepackage[uplatex]{otf}
-  \else
-    \documentclass{jsarticle}
-    \usepackage{otf}
-  \fi
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[uplatex]{otf}
 \else
   \documentclass{ltjsarticle}
   \usepackage{luatexja-otf}
@@ -175,12 +170,6 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 
 - TeX Live の場合
 
-> - pLaTeX + dvipdfmx の場合
->
->     ```
->     ptex2pdf -l -od "-f ptex-noEmbed.map -f otf-noEmbed.map" hoge.tex
->     ```
->
 > - upLaTeX + dvipdfmx の場合
 >
 >     ```
@@ -196,12 +185,6 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 
 - W32TeX の場合
 
-> - pLaTeX + dvipdfmx の場合
->
->     ```
->     ptex2pdf -l -od "-f noembed.map" hoge.tex
->     ```
->
 > - upLaTeX + dvipdfmx の場合
 >
 >     ```
@@ -285,20 +268,15 @@ Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
 OTF パッケージは
 ベータ版を使用します。<br>
 
-テスト用の pLaTeX/upLaTeX/LuaLaTeX ソースは，例えば次のものを用いてみます。<br>
+テスト用のソースは，例えば次のものを用いてみます。<br>
 
 ***
 
 ```
 \ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex]{jsarticle}
-    \usepackage[uplatex]{otf}
-    \kcatcode`゜=18
-  \else
-    \documentclass{jsarticle}
-    \usepackage{otf}
-  \fi
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[uplatex]{otf}
+  \kcatcode`゜=18
 \else
   \documentclass{ltjsarticle}
   \usepackage{luatexja-otf}
@@ -361,12 +339,6 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 - TeX Live の場合
 
-> - pLaTeX + dvipdfmx の場合
->
->     ```
->     ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
->     ```
->
 > - upLaTeX + dvipdfmx の場合
 >
 >     ```
@@ -383,12 +355,6 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 - W32TeX の場合
 
-> - pLaTeX + dvipdfmx の場合
->
->     ```
->     ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
->     ```
->
 > - upLaTeX + dvipdfmx の場合
 >
 >     ```
@@ -433,12 +399,6 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 シンボリックリンクします。<br>
 
 次のようにして処理します。<br>
-
-- pLaTeX + dvipdfmx の場合
-
-    ```
-    ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
-    ```
 
 - upLaTeX + dvipdfmx の場合
 
@@ -854,14 +814,12 @@ ps2otfps old.ps new.ps
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-noEmbed.map -f otf-noEmbed.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f noembed.map" hoge.tex
 ptex2pdf -l -u -od "-f noembed.map" hoge.tex
 ```
 
@@ -873,14 +831,12 @@ ptex2pdf -l -u -od "-f noembed.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-ipaex.map -f otf-ipaex.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-ipaex.map -f otf-up-ipaex.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f ipaex.map" hoge.tex
 ptex2pdf -l -u -od "-f ipaex.map" hoge.tex
 ```
 
@@ -894,14 +850,12 @@ ptex2pdf -l -u -od "-f ipaex.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-ms.map -f otf-ms.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-ms.map -f otf-up-ms.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f msmingoth.map" hoge.tex
 ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
 ```
 
@@ -961,14 +915,12 @@ ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
 > - Windows の場合
 >
 >     ```
->     ptex2pdf -l -od "-f ptex-yu-win.map -f otf-yu-win.map" hoge.tex
 >     ptex2pdf -l -u -od "-f uptex-yu-win.map -f otf-up-yu-win.map" hoge.tex
 >     ```
 >
 > - OS X の場合
 >
 >     ```
->     ptex2pdf -l -od "-f ptex-yu-osx.map -f otf-yu-osx.map" hoge.tex
 >     ptex2pdf -l -u -od "-f uptex-yu-osx.map -f otf-up-yu-osx.map" hoge.tex
 >     ```
 >
@@ -976,7 +928,6 @@ ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f yu.map" hoge.tex
 ptex2pdf -l -u -od "-f yu.map" hoge.tex
 ```
 
@@ -990,14 +941,12 @@ ptex2pdf -l -u -od "-f yu.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-hiragino.map -f otf-hiragino.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-hiragino.map -f otf-up-hiragino.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f hiragino.map" hoge.tex
 ptex2pdf -l -u -od "-f hiragino.map" hoge.tex
 ```
 
@@ -1017,14 +966,12 @@ ptex2pdf -l -u -od "-f hiragino.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-kozuka-pr6n.map -f otf-kozuka-pr6n.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f kozukapr6n.map" hoge.tex
 ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
 ```
 
@@ -1041,14 +988,12 @@ Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/
 - TeX Live の場合
 
 ```
-ptex2pdf -l -od "-f ptex-morisawa-pr6n.map -f otf-morisawa-pr6n.map" hoge.tex
 ptex2pdf -l -u -od "-f uptex-morisawa-pr6n.map -f otf-up-morisawa-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -od "-f morisawapr6n.map" hoge.tex
 ptex2pdf -l -u -od "-f morisawapr6n.map" hoge.tex
 ```
 
