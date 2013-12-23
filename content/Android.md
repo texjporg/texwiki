@@ -70,55 +70,6 @@ uplatex も普通に使用できるそうです．(→ [https://twitter.com/ti59
 
 ***
 
-platex は e-pTeX ではなく e-TeX 拡張なしの pTeX のようです．(→ [https://twitter.com/ti5942/status/385371725031931904](https://twitter.com/ti5942/status/385371725031931904) )
-
-***
-
-<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
-
-<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:Black;">u0_a77@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:White;background-color:Black;">pTeX 3.1415926-p3.4 (utf8.euc) (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
-eptex -fmt=platex として実行すると e-TeX 拡張された pLaTeX が使用できるそうです．(→ [https://twitter.com/ti5942/status/389611613503754240](https://twitter.com/ti5942/status/389611613503754240) )
-
-***
-
-<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
-
-<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:Black;">u0_a77@android:/ $ eptex -fmt=platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:White;background-color:Black;">e-pTeX 3.1415926-p3.4-110825-2.6 (utf8.euc) (Web2C 2013 for Android) 　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
-platex を e-pTeX に変更したい場合はシンボリックリンクを変更するといいみたいです．(→ [https://twitter.com/ti5942/status/400147097812344832](https://twitter.com/ti5942/status/400147097812344832) , [https://twitter.com/ti5942/status/400148349006786560](https://twitter.com/ti5942/status/400148349006786560) )
-
-***
-
-```
-$ rm platex
-$ ln -s eptex platex
-```
-
-***
-
-<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
-
-<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:Black;">u0_a77@android:/ $ platex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:White;background-color:Black;">e-pTeX 3.1415926-p3.4-110825-2.6 (utf8.euc) (Web2C 2013 for Android) 　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
 dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640) )
 
 ***
