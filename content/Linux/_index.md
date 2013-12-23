@@ -161,10 +161,6 @@ mktexlsr を実行します．<br>
 $ sudo mktexlsr
 ```
 
-#### 文字コードの自動判別 {#e61461f5}
-
-[日本語 encoding の推測](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1043) を参照．<br>
-
 #### フォント埋め込みの設定 {#w8cc5799}
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
@@ -176,28 +172,26 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-TeX Live には IPAex フォント，(u)ptex-ipaex.map が収録されています．<br>
+TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
 
 ```
 $ kpsewhich ipaexm.ttf ipaexg.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich ptex-ipaex.map uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/ptex-ipaex.map
+$ kpsewhich uptex-ipaex.map
 /usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
 ```
 
-(u)pLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
 $ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### [W32TeX](/W32TeX/) {#od6f4f13}
 
 [W32TeX](/W32TeX/) は Wine で動作します．<br>
-TeX Live に収録されていないプログラムを使用したい場合や [\input{日本語.tex}](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=887) などと記述すると TeX Live の platex でエラーが発生してコンパイルできない場合は W32TeX が便利です．<br>
+TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．<br>
 
 - [install-w32tex.py](https://gist.github.com/2766442) (a.k.a. 誰得スクリプト) Install W32TeX on Wine<br>
 - [TeXインストーラ3 は Wine で動作しません．](http://d.hatena.ne.jp/abenori/20120522)
