@@ -19,7 +19,7 @@ pukiwiki: "hyperref"
 
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
-[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する (u)pLaTeX 用のパッケージです．<br>
+[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する upLaTeX, pLaTeX 用のパッケージです．<br>
 PXjahyper パッケージは TeX Live, W32TeX に含まれています．<br>
 
 #### ChangeLog {#h773478f}
@@ -56,7 +56,7 @@ jsclasses を使用している場合はクラスオプションに papersize �
 - クラスオプションに papersize を指定する
 
     ```
-    \documentclass[papersize]{jsarticle}
+    \documentclass[uplatex,papersize]{jsarticle}
     ```
 
 #### "--"が hyperref で正しく扱われず，しおりが変になる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#d46c2828}
@@ -177,8 +177,7 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場�
 \usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
 \usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
-platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk, bkmk2uni, ps2jpdf 等を使用します．<br>
-uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
+(u)platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
 
 ```
 \usepackage{hyperref}
@@ -192,7 +191,8 @@ uplatex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止す�
  pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
 ```
 
-platex, uplatex を使用してドライバオプションを指定しない場合はデフォルトでは dvips に設定されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
+uplatex, platex を使用してドライバオプションを指定しない場合はデフォルトでは dvips に設定されます．<br>
+指定しないとうまく動作しない場合は以下のように指定します．<br>
 
 ```
 \usepackage[dvips]{hyperref}
