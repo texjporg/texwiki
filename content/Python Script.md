@@ -28,27 +28,6 @@ Another script is currently running. Running two scripts at the same time
 could produce unpredicable results, and is therefore disabled.
 ```
 
-### pdfpLaTeX.py {#i5300af4}
-
-***
-
-```
-import os
-import os.path
-import subprocess
-
-b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-c = os.path.dirname(notepad.getCurrentFilename())
-ptex2pdf = ['ptex2pdf', '-l', '-ot', '"', '-guess-input-enc', '-kanji=utf8', '-synctex=1', '-sjis-terminal', '"', b]
-ok = notepad.messageBox(' '.join(ptex2pdf), 'Notepad++', 1)
-if ok == 1:
-    notepad.save()
-    os.chdir(c)
-    subprocess.call(ptex2pdf)
-```
-
-***
-
 ### pdfupLaTeX.py {#p02f8a95}
 
 ***
