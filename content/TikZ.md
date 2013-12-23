@@ -166,7 +166,7 @@ PGF/TikZでの色指定は基本的にxcolorの形式を踏襲しますので、
 ### 簡単な図形描画の例 {#c4bd1edb}
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 % \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
 \usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
@@ -410,7 +410,7 @@ intersectionsライブラリを読み込んでおく必要があります。ラ�
 2つ目の例では、2曲線の交点を順に3つ a, b, c と名前を付けて、ラベルを付けてます。<br>
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
@@ -505,7 +505,7 @@ calc ライブラリを読み込むことで、簡単な座標計算ができま
 三角形の重心と垂心を求める例。<br>
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
@@ -597,7 +597,7 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 三角形の外心と内心を求める例。<br>
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc, through}
