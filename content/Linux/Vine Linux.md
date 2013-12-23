@@ -105,7 +105,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 $ sudo apt-get install texworks
 ```
 
-タイプセットのデフォルトが pdfLaTeX に設定されている場合は pLaTeX (ptex2pdf) に変更します．<br>
+タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．<br>
 
 ## [LyX](/LyX/) {#f3133664}
 
