@@ -46,19 +46,21 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=z
 
 #### zathura {#wf24e546}
 
-- [git.pwmt.org Git - zathura.git/shortlog](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
-- [git.pwmt.org Git - zathura.git/summary](https://git.pwmt.org/?p=zathura.git) (master)
+- [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex) (feature/synctex)
+- [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
+- [https://git.pwmt.org/?p=zathura.git](https://git.pwmt.org/?p=zathura.git) (master)
 
 #### girara {#l7dfb095}
 
-- [git.pwmt.org Git - girara.git/shortlog](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
-- [git.pwmt.org Git - girara.git/summary](https://git.pwmt.org/?p=girara.git;a=summary) (master)
+- [https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
+- [https://git.pwmt.org/?p=girara.git;a=summary](https://git.pwmt.org/?p=girara.git;a=summary) (master)
 
 ### 派生版 {#oea86148}
 
 zathura を SyncTeX に対応させた zathura-synctex が作成されています． → 本家にマージされました．<br>
 
 - [zathura-synctex](https://github.com/rschatz/zathura-synctex)
+- \[[zathura\] \[PATCH\] synctex forward synchronization](http://lists.pwmt.org/archive/zathura/2013-December/001324.html)
 - \[[zathura\] Synctex support](http://lists.pwmt.org/archive/zathura/2011-August/000047.html)
 - \[[zathura\]  Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00042.html)
 - [Re: \[zathura\] Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html)
