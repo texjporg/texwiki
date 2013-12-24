@@ -17,7 +17,7 @@ pukiwiki: "MetaPost"
 
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
-MetaPostの日本語版 (pmpost, upmpost) については
+MetaPostの日本語版 (upmpost) については
 
 - [W32TeX](/W32TeX/)
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
@@ -171,7 +171,7 @@ TeX/LaTeX の文書の中に組み込んで使う場合は，
 この場合，たとえば
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvips]{graphicx}
 \begin{document}
 ……
@@ -185,7 +185,7 @@ TeX/LaTeX の文書の中に組み込んで使う場合は，
 のようにして組み込み，
 
 ```
-platex test
+uplatex test
 ```
 
 として処理して
@@ -272,7 +272,7 @@ pdftex)。
 さきほどの例で（prologues:=1; を指定しておき）
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvips]{graphicx,psfrag}
 \begin{document}
 ……
