@@ -56,7 +56,7 @@ OS X 10.4 以降
 
 　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
-　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/platex</ins> または <ins>/usr/texbin/uplatex</ins><br>
+　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
 　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
 　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/gs</ins> に変更<br>
 　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/ps2pdf</ins> に変更<br>
