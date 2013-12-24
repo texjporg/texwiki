@@ -170,7 +170,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 
 - TeX Live の場合
 
-> - upLaTeX + dvipdfmx の場合
+> - upLaTeX (ptex2pdf) の場合
 >
 >     ```
 >     ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
@@ -185,7 +185,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 
 - W32TeX の場合
 
-> - upLaTeX + dvipdfmx の場合
+> - upLaTeX (ptex2pdf) の場合
 >
 >     ```
 >     ptex2pdf -l -u -od "-f noembed.map" hoge.tex
@@ -226,7 +226,7 @@ xdg-open hoge.pdf
 
 PDF ファイルが Adobe Reader/Acrobat に関連付けされている場合は hoge.pdf が Adobe Reader/Acrobat で開かれて表示されると思います。<br>
 
-upLaTeX + dvipdfmx, LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．<br>
+upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．<br>
 ただし upLaTeX の場合に
 
 ```
@@ -323,7 +323,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので
 軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。<br>
-実際，上のファイルを upLaTeX + dvipdfmx で処理して，SumatraPDF と TeXworks で開いた場合に
+実際，上のファイルを upLaTeX (ptex2pdf) で処理して，SumatraPDF と TeXworks で開いた場合に
 𠮷 (U+20BB7) の字が表示されませんでした。<br>
 
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
@@ -339,7 +339,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 - TeX Live の場合
 
-> - upLaTeX + dvipdfmx の場合
+> - upLaTeX (ptex2pdf) の場合
 >
 >     ```
 >     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
@@ -355,7 +355,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 - W32TeX の場合
 
-> - upLaTeX + dvipdfmx の場合
+> - upLaTeX (ptex2pdf) の場合
 >
 >     ```
 >     ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
@@ -400,7 +400,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 
 次のようにして処理します。<br>
 
-- upLaTeX + dvipdfmx の場合
+- upLaTeX (ptex2pdf) の場合
 
     ```
     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
