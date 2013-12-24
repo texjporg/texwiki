@@ -7,7 +7,7 @@ pukiwiki: "e-pTeX"
 
 # e-pTeX
 
-## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) {#u8bd5dfc}
+## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) (obsolete) → [e-upTeX](/upTeX,upLaTeX/) を使用する {#u8bd5dfc}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
