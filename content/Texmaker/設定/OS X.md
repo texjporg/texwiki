@@ -18,9 +18,9 @@ pukiwiki: "Texmaker/設定/OS X"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
-コマンドの Bib(la)tex の bibtex を pbibtex または upbibtex に変更します．<br>
-コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 
 #### [MacTeX &amp; TeX Live](/Mac/#mactex) {#i89a162a}
 
@@ -43,7 +43,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -63,7 +63,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/pbibtex" &#x25;</ins> または <ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtexu" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtexu" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins> または <ins>"/usr/texbin/makeindex" %.idx</ins> または <ins>"/usr/texbin/texindy" %.idx</ins><br>
 
@@ -77,7 +77,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/pmpost" -interaction=nonstopmode &#x25;</ins> または <ins>"/usr/texbin/upmpost" -interaction=nonstopmode &#x25;</ins> または <ins>"/usr/texbin/mpost" -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/upmpost" -interaction=nonstopmode &#x25;</ins> または <ins>"/usr/texbin/mpost" -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
 
