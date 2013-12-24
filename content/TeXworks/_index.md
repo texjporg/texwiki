@@ -21,7 +21,6 @@ TeXworks は Dick[^1] Koch 氏の [TeXShop](/TeXShop/) をモデルにしてい�
 [TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/)，[MacTeX](/Mac/#mactex) 等のディストリビューションに標準で含まれています．<br>
 [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/) と同様，[SyncTeX](/SyncTeX/) もサポートしており，メニューも日本語化されています．<br>
 TeXworks のデフォルトの文字コードは UTF-8 です．<br>
-Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
@@ -286,8 +285,6 @@ $ ./src/TeXworks.exe &
 
 - 現在カーソルのある行をハイライトするにチェックがはいっている場合にかな漢字変換をしてもハイライトに隠れずに表示されることを確認します．
 
-- \[編集\]-\[設定\]-\[エディタ\] のエンコーディングのリストに Shift_JIS/ISO-2022-JP/EUC-JP が表示されていることを確認します．
-
 - 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
 
 - このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，TeXworks の実行に必要なライブラリ (DLL ファイル) の確認をします．<br>
@@ -464,7 +461,7 @@ upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
 
 ```
-kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
+kpsewhich -progname=dvipdfmx -format=map cid-x.map
 ```
 
 ## 設定 {#q50d2378}
@@ -507,7 +504,7 @@ kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
     - [texworksに日本語フォントを埋め込みたいんですが、解説サイトを見るとcid-x.mapというファイルが必要みたいなんですが、これが見つかりません。どうすればいいでしょうか。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1496913364)
 
         ```
-        kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
+        kpsewhich -progname=dvipdfmx -format=map cid-x.map
         ```
 
 [^1]: Dick は Richard のニックネーム (愛称)．Richard → Rich → Rick → Dick．
