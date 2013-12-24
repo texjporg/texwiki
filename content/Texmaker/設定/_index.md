@@ -126,7 +126,6 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 文字コードのリストからエディタで使用する文字コードを指定できます．<br>
 デフォルトの文字コードは UTF-8 です．<br>
-Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
 日本語の文書を作成する場合はスペルチェック辞書のインラインのチェックを外します．<br>
 重要なファイルを作成する場合は 10 分ごとにバックアップをとる にチェックを入れます．<br>
 
@@ -207,23 +206,5 @@ Shift_JIS/ISO-2022-JP/EUC-JP も選択できます．<br>
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
-
-***
-
-ファイルの文字コードと設定されている文字コードが異なる場合は，ファイルを開くときに別の文字コードを指定して開くことが可能です．
-
-***
-
-<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker</strong></span>　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　設定されている文字コードでは<br>
-　　ファイルの文字が正しく表示されない可能性があります (UTF-8).<br>
-
-<br>
-
-<br>
-
-　　文字コードを指定:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[Shift_JIS　　　　　　　　　　　　　▼\]</span><br>
-　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
 
 ***
