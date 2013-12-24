@@ -21,7 +21,6 @@ pukiwiki: "Texmaker"
 Texmaker は，LaTeX エディタ (統合環境) です．<br>
 [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) と同様，組み込みの PDF ビューアに対して SyncTeX がサポートされています．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
-Shift_JIS/ISO-2022-JP/EUC-JP も使用可能です．<br>
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
     - [User manual](http://www.xm1math.net/texmaker/doc.html)
@@ -248,8 +247,6 @@ $ ./texmaker &
 ```
 
 - かな漢字変換をする際に，文字が黒くならないことを確認します．
-
-- \[Options\]-\[Configure Texmaker\]-\[Editor\] の Editor Font Encoding のリストに Shift_JIS/ISO-2022-JP/EUC-JP が表示されていることを確認します．
 
 - 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
 
