@@ -19,9 +19,9 @@ pukiwiki: "Texmaker/設定/Linux"
 
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
-コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
-コマンドの Bib(la)tex の bibtex を pbibtex または upbibtex に変更します．<br>
-コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 
 #### [TeX Live](</TeX Live/>) {#x932c6ec}
 
@@ -31,7 +31,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>platex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
 
@@ -51,7 +51,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
 
@@ -65,7 +65,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>pmpost -interaction=nonstopmode &#x25;</ins> または <ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
