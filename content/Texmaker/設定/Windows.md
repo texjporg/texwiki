@@ -19,14 +19,13 @@ pukiwiki: "Texmaker/設定/Windows"
 
 PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 PDF ビューアに 組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの LaTeX の latex を platex または uplatex に変更します．<br>
-コマンドの Bib(la)tex の bibtex を pbibtex または upbibtex に変更します．<br>
-コマンドの Dvipdfm の dvipdfm を dvipdfmx に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 
 #### [TeX Live](</TeX Live/>) の場合 {#cd578b1e}
 
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
-OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
 コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)
 
 ***
@@ -57,7 +56,7 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
 
@@ -71,11 +70,11 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins> または <ins>gswin64c.exe</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin64c.exe</ins> または <ins>gswin32c.exe</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
 
@@ -103,7 +102,6 @@ OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXwo
 #### [W32TeX](/W32TeX/) の場合 {#q9c95374}
 
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
-OS X, Linux など Windows 以外の OS でファイルを編集したり [TeXworks](/TeXworks/) とファイルを共有したりする場合は UTF-8 がおすすめです．<br>
 コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
@@ -135,7 +133,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>pbibtex -kanji=utf8 &#x25;</ins> または <ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
 
@@ -149,11 +147,11 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin32c.exe</ins> または <ins>gswin64c.exe</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gswin64c.exe</ins> または <ins>gswin32c.exe</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
 
