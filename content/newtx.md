@@ -139,10 +139,10 @@ W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.x
 
 ### 使い方 {#w2da6d80}
 
-LaTeX2e を使っている場合は，次のようにして txfonts パッケージを読み込みます。
+upLaTeX を使っている場合は，次のようにして txfonts パッケージを読み込みます。
 
 ```
-\documentclass{jsarticle}  % たとえば
+\documentclass[uplatex]{jsarticle}  % たとえば
 \usepackage{txfonts}
 \begin{document}
 
