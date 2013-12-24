@@ -593,7 +593,7 @@ TeX によるタイプセットの影響を受けます。 <!-- どなたか、�
 具体例として、まず。次の直角三角形の図を見て下さい。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{pst-node}
 \begin{document}
 \begin{center}
@@ -608,7 +608,7 @@ TeX によるタイプセットの影響を受けます。 <!-- どなたか、�
 これをノードを用いて書き換えると、
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{pst-node}
 \begin{document}
 \begin{center}
@@ -628,7 +628,7 @@ TeX によるタイプセットの影響を受けます。 <!-- どなたか、�
 点から斜辺に垂線を下ろそうとしたとすると、例えば、こうなります。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{infix-RPN,pst-node}
 \begin{document}
 \begin{center}
@@ -727,7 +727,7 @@ x 2 exp x sub 2 x x 1 add mul exp mul
 そこで、
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{pst-plot}
 \begin{document}
 \psset{plotstyle=curve,plotpoints=100}
@@ -748,7 +748,7 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 内容が逆ポーランド式記法の数式になります。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{infix-RPN}
 \begin{document}
 \infixtoRPN{(x^2-x)*2^(x*(x+1))}\RPN
@@ -764,7 +764,7 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 をプロットするには
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{infix-RPN,pst-3dplot}
 \begin{document}
 \psset{xPlotpoints=50,yPlotpoints=50,hiddenLine=true,plotstyle=curve}
@@ -779,7 +779,7 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 \parametricplot にはもちろん、 \edef を使えば良いです。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{infix-RPN,pst-3dplot}
 \begin{document}
 \psset{xPlotpoints=50,yPlotpoints=50,hiddenLine=true,plotstyle=curve}
@@ -797,7 +797,7 @@ PostScript に処理させるには、 \usepackage{pstricks-add} とプリアン
 algebraic オプションの値を true にします。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{pstricks-add}
 \begin{document}
 \psset{plotstyle=curve,plotpoints=100}
@@ -812,7 +812,7 @@ algebraic=true の時は、角度は弧度法で測ります。 \parametricplot 
 x 成分と y 成分は | で区切ります。
 
 ```
-\documentclass{jarticle}
+\documentclass{ujarticle}
 \usepackage{pstricks-add}
 \begin{document}
 \psset{plotstyle=curve,plotpoints=100}
@@ -1328,8 +1328,7 @@ $ extractbb foo.pdf
 - [PSTricksパッケージ](http://www.cityfujisawa.ne.jp/~huzinami/tex/g-pack2.html)
 - [PSTricks入門](http://surgery.matrix.jp/comp/tex/PSTricks/pstricks.html)
 
-## コメント {#j6e07b43}
-
+<!-- * コメント [#j6e07b43] -->
 <!-- 質問です。 -->
 <!-- latex->dvips->ps2pdf (Ghostscript 7.07) で処理した PSTricks を含むソースで、 -->
 <!-- psdot で出力される dot が、ビットマップ展開されてしまうのはなぜでしょうか？ -->
@@ -1346,5 +1345,3 @@ $ extractbb foo.pdf
 <!-- Ghostscript のヴァージョン問題、うーむ、困りました。 -->
 <!-- 2006-12-29 (金) 00:33:23 追記: 8.54-gpl をコンパイルし、この下でスケーラブルなグラフィックに -->
 <!--                      なっていることを確認しました。 -->
-
-#COMMENT
