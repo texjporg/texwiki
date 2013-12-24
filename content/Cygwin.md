@@ -472,10 +472,6 @@ ptex2pdf -l -u &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such
 - [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
 - [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
 
-#### texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている → 文字コードを ISO-2022-JP に変更する {#sdcc1be2}
-
-texlive-collection-langcjk-20130529-1 に含まれている /usr/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls の文字コードが UTF-8 (BOMなし) になっている場合は文字コードを ISO-2022-JP に変更します．
-
 #### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
 
 dvipdfmx がうまく動作しない場合は /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．<br>
