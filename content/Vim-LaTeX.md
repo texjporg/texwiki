@@ -133,8 +133,7 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -l -u -ot "-kanji=utf8 -no-guess-input-enc
 "let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = 'ps2pdf.bat $*.ps'
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_dvi = 'platex -kanji=utf8 -guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'upbibtex'
 "let g:Tex_BibtexFlavor = 'bibtex'
 "let g:Tex_BibtexFlavor = 'bibtexu'
@@ -214,8 +213,7 @@ let g:Tex_CompileRule_pdf = '/usr/texbin/ptex2pdf -l -u -ot "-synctex=1 -interac
 "let g:Tex_CompileRule_pdf = '/usr/texbin/dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = '/usr/local/bin/ps2pdf $*.ps'
 let g:Tex_CompileRule_ps = '/usr/texbin/dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_dvi = '/usr/texbin/platex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = '/usr/texbin/upbibtex'
 "let g:Tex_BibtexFlavor = '/usr/texbin/bibtex'
 "let g:Tex_BibtexFlavor = '/usr/texbin/bibtexu'
@@ -307,8 +305,7 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -l -u -ot "-synctex=1 -interaction=nonstop
 "let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 "let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
-let g:Tex_CompileRule_dvi = 'platex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'upbibtex'
 "let g:Tex_BibtexFlavor = 'bibtex'
 "let g:Tex_BibtexFlavor = 'bibtexu'
@@ -406,9 +403,9 @@ TeX ファイルを保存して \ll でコンパイルすれば，自動的に�
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">メニュー [TeX-Suite]</th><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
-> <tr><td>Target Format</td><td>:TTarget dvi</td><td>コンパイル・プレビュー対象フォーマットを DVI に変更</td></tr>
-> <tr><td>Target Format</td><td>:TTarget ps</td><td>コンパイル・プレビュー対象フォーマットを PS に変更</td></tr>
 > <tr><td>Target Format</td><td>:TTarget pdf</td><td>コンパイル・プレビュー対象フォーマットを PDF に変更</td></tr>
+> <tr><td>Target Format</td><td>:TTarget ps</td><td>コンパイル・プレビュー対象フォーマットを PS に変更</td></tr>
+> <tr><td>Target Format</td><td>:TTarget dvi</td><td>コンパイル・プレビュー対象フォーマットを DVI に変更</td></tr>
 > </tbody>
 > </table>
 >
