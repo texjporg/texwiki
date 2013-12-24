@@ -235,7 +235,7 @@ Ghostscript の epswrite デバイスを使って
 ***
 
 ```
-\documentclass[30pt]{jsarticle}
+\documentclass[uplatex,30pt]{jsarticle}
 \pagestyle{empty}
 \begin{document}
 \[ \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx = \sqrt{\frac{\pi}{2}} \]
@@ -247,7 +247,7 @@ Ghostscript の epswrite デバイスを使って
 次のコマンドを順に打ち込みます（Unix-like OS の場合）。 
 
 ```
-$ platex testeq.tex
+$ uplatex testeq.tex
 $ dvips -E -Ppdf testeq.dvi -o testeq.eps
 $ eps2eps testeq.eps testeq2.eps
 ```
@@ -258,7 +258,7 @@ $ eps2eps testeq.eps testeq2.eps
 オプションも含んでいます）。
 
 ```
->gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
+>rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です
@@ -293,7 +293,7 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 なく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
 
 ```
- >gswin32c -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
+ >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
 ```
 
 端が欠ける場合は “-dEPSCrop” を外せばいいようです。
