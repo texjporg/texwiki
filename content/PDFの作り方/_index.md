@@ -443,7 +443,7 @@ upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
 
 ```
-kpsewhich -progname=dvipdfmx -format=".map" cid-x.map
+kpsewhich -progname=dvipdfmx -format=map cid-x.map
 ```
 
 なお、dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです。<br>
