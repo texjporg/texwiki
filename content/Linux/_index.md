@@ -112,21 +112,6 @@ $ sudo tlmgr update --self --all
 
 を実行すれば OK です．<br>
 
-#### pmetapost (upmpost) のインストール {#g33a7854}
-
-- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
-
-pmetapost (upmpost) と新しい uptex, dvipdfmx, dvips バイナリが必要な場合は
-[tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pmetapost
-$ sudo tlmgr update --all
-```
-
 #### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
 
 TEXMFLOCAL の値を確認します．<br>
