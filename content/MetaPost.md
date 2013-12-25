@@ -23,8 +23,6 @@ MetaPost は John D. Hobby が作った [METAFONT](/METAFONT/) 類似のソフ�
 METAFONT が gf 形式のフォントを出力するのに対して，
 MetaPost は PostScript（EPS）形式のファイルを出力します。<br>
 
-1995年から AT&amp;T ライセンス不要のフリーソフトになりました。
-
 MetaPost の詳細は
 
 ```
@@ -39,6 +37,8 @@ texdoc metapost
 - [The MetaPost page](http://cm.bell-labs.com/who//hobby/MetaPost.html) (作者 John D. Hobby のページ)
 
 #### License {#ze87e412}
+
+1995年から AT&amp;T ライセンス不要のフリーソフトになりました。
 
 [LGPLv3](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING.LESSER?root=metapost&view=log)
 
