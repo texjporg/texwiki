@@ -172,8 +172,6 @@ Post Processor
 
 ## Evince との連携 {#t97f1692}
 
-LaTeXila 2.5.3 以降は SyncTeX に対応しています．<br>
-
 ### forward search {#o187dfd8}
 
 \[Search\]-\[Search Forward\] または Ctrl+Alt+F で forward search ができます．<br>
