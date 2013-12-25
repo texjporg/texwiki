@@ -148,7 +148,7 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
 
 ### OS X {#g5794e10}
 
-[Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410) を参照．<br>
+動作未確認です．<br>
 [MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490) または [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
 Emacs を起動して<br>
 
@@ -158,10 +158,8 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
-動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
-MacPorts の TeX Live の場合は [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688) を参照してください．<br>
 
 ***
 
@@ -387,6 +385,22 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c o") 'okular-forward-search)))
 
+(defun zathura-forward-search ()
+  (interactive)
+  (let* ((ctf (buffer-name))
+         (mtf (tex-main-file))
+         (pf (expand-file-name (concat (car (split-string mtf "\\.")) ".pdf")))
+         (ln (format "%d" (line-number-at-pos)))
+         (cmd "zathura")
+         (args (concat "--synctex-forward " ln ":0:" ctf " " pf)))
+    (message (concat cmd " " args))
+    (process-kill-without-query
+     (start-process-shell-command "zathura" nil cmd args))))
+
+(add-hook 'latex-mode-hook
+          '(lambda ()
+             (define-key latex-mode-map (kbd "C-c z") 'zathura-forward-search)))
+
 (defun qpdfview-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -488,6 +502,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 - [LaTeX メモ#Emacs との連携](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/latex/#emacs)
 - [Meadow で LaTeX を使う](http://www.cymric.jp/old/tex/meadow.html)
 - [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
+- [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://slashdot.jp/~t-nissie/journal/560083)
 - [Emacsのlatex-modeのインデント](http://www.hit.ac.jp/~wachi/misc/latexindent.html)
