@@ -10,6 +10,7 @@ pukiwiki: "PythonTeX"
 ## PythonTeX {#fef32cd2}
 
 PythonTeX は TeX Live, W32TeX に含まれています．<br>
+PythonTeX は [Python](/Python/) 以外に [Ruby](/Ruby/) や Julia もサポートしています．<br>
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
 - [http://www.ctan.org/pkg/pythontex](http://www.ctan.org/pkg/pythontex)
@@ -18,3 +19,4 @@ PythonTeX は TeX Live, W32TeX に含まれています．<br>
 - [TeXLive2013とPythonTeXを入れた](http://nsplat.wordpress.com/2013/10/04/texlive2013%E3%81%A8pythontex%E3%82%92%E5%85%A5%E3%82%8C%E3%81%9F/)
 - [&quot;Python&quot; - 記事一覧 - 何かを書き留める何か](http://xaro.hatenablog.jp/archive/category/Python)
     - [http://xaro.hatenablog.jp/search?q=PythonTeX](http://xaro.hatenablog.jp/search?q=PythonTeX)
+- [TeXでruby](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1185)
