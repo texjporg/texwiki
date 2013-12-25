@@ -17,34 +17,142 @@ pukiwiki: "MetaPost"
 
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
-MetaPostの日本語版 (upmpost) については
-
-- [W32TeX](/W32TeX/)
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
-
-から入手可能です．
-
 ### MetaPost とは {#e4617397}
 
-MetaPost は John Hobby が作った [METAFONT](/METAFONT/) 類似のソフトで，
+MetaPost は John D. Hobby が作った [METAFONT](/METAFONT/) 類似のソフトです。<br>
 METAFONT が gf 形式のフォントを出力するのに対して，
-MetaPost は PostScript（EPS）形式のファイルを出力します。
+MetaPost は PostScript（EPS）形式のファイルを出力します。<br>
 
 1995年から AT&amp;T ライセンス不要のフリーソフトになりました。
 
-詳しくは作者 Hobby 自身による
-[MetaPost](http://cm.bell-labs.com/who/hobby/MetaPost.html)
-ページをご覧ください。
-web2c 配布にも MetaPost のマニュアルが入っています。
+MetaPost の詳細は
+
+```
+texdoc metapost
+```
+
+で確認してください。<br>
 
 [Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。
 
 - [FusionForge: MetaPost: Project Home](https://foundry.supelec.fr/projects/metapost/) （本家）
+- [The MetaPost page](http://cm.bell-labs.com/who//hobby/MetaPost.html) (作者 John D. Hobby のページ)
+
+#### License {#ze87e412}
+
+[LGPLv3](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING.LESSER?root=metapost&view=log)
 
 #### ChangeLog {#q9da79df}
 
 - [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
     - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
+
+### MetaPost (日本語版) {#vcd749fc}
+
+W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
+
+TeX Live の場合は
+
+- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+
+から入手可能です．<br>
+tlptexlive については
+
+- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+
+を参照してください．<br>
+
+#### インストール (Windows) {#h80cb69d}
+
+```
+PS C:\Users\$Env:USERNAME> tlmgr update --self --all
+PS C:\Users\$Env:USERNAME> tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+```
+
+<!-- tlmgr.pl: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
+
+```
+PS C:\Users\$Env:USERNAME> tlmgr pinning add tlptexlive "*"
+```
+
+<!-- tlmgr.pl: package repositories: -->
+<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
+<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr.pl: new pinning data for tlptexlive: * -->
+
+```
+PS C:\Users\$Env:USERNAME> tlmgr install pmetapost
+```
+
+<!-- tlmgr.pl: package repositories: -->
+<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
+<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- [1/2, ??:??/??:??] install: pmetapost.win32 @tlptexlive [739k] -->
+<!-- [2/2, 00:06/00:06] install: pmetapost @tlptexlive [1k] -->
+<!-- tlmgr.pl: package log updated: C:/texlive/2013/texmf-var/web2c/tlmgr.log -->
+<!-- running mktexlsr ... -->
+<!-- done running mktexlsr. -->
+<!-- running mtxrun - -generate ... -->
+<!-- done running mtxrun - -generate. -->
+
+```
+PS C:\Users\$Env:USERNAME> tlmgr update --all
+```
+
+<!-- tlmgr.pl: package repositories: -->
+<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
+<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
+<!-- tlmgr: saving backups to C:/texlive/2013/tlpkg/backups -->
+<!-- [1/4, ??:??/??:??] update: dvipdfmx.win32 [271k] (30827 -> 31000@tlptexlive) ... done -->
+<!-- [2/4, 00:05/00:31] update: dvips.win32 [84k] (29816 -> 31000@tlptexlive) ... done -->
+<!-- [3/4, 00:08/00:37] update: ptex.win32 [837k] (30245 -> 31002@tlptexlive) ... done -->
+<!-- [4/4, 00:16/00:22] update: uptex.win32 [487k] (30412 -> 31000@tlptexlive) ... done -->
+<!-- tlmgr.pl: package log updated: C:/texlive/2013/texmf-var/web2c/tlmgr.log -->
+<!-- running mktexlsr ... -->
+<!-- done running mktexlsr. -->
+<!-- running mtxrun - -generate ... -->
+<!-- done running mtxrun - -generate. -->
+<!-- running updmap-sys ... -->
+<!-- done running updmap-sys. -->
+<!-- regenerating fmtutil.cnf in C:/texlive/2013/texmf-var -->
+<!-- running fmtutil-sys - -no-error-if-no-format - -byengine ptex ... -->
+<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine ptex. -->
+<!-- running fmtutil-sys - -no-error-if-no-format - -byengine euptex ... -->
+<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine euptex. -->
+<!-- running fmtutil-sys - -no-error-if-no-format - -byengine eptex ... -->
+<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine eptex. -->
+<!-- running fmtutil-sys - -no-error-if-no-format - -byengine uptex ... -->
+<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine uptex. -->
+
+#### インストール (Cygwin) {#w370c0b7}
+
+```
+$ tlmgr update --self --all
+$ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ tlmgr pinning add tlptexlive "*"
+$ tlmgr install pmetapost
+$ tlmgr update --all
+```
+
+#### インストール (OS X) {#q808c38d}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pmetapost
+$ sudo tlmgr update --all
+```
+
+#### インストール (Linux) {#adc6bf92}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pmetapost
+$ sudo tlmgr update --all
+```
 
 ### 不具合 {#z01f418a}
 
