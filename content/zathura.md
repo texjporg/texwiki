@@ -38,8 +38,7 @@ Linux, BSD
 
 [News](http://pwmt.org/news/) を参照．<br>
 
-<!-- Version 0.2.2 で [[SyncTeX (forward search) の対応:https://git.pwmt.org/?p=zathura.git;a=commit;h=a8cd10dcac7a6da06598bdbf402531989900fa0b]]の実装をはじめました (work in progress)．~ -->
-
+zathura [feature/synctex branch](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex) で SyncTeX (forward search) に対応しました．<br>
 Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
 ### ChangeLog {#fdab5877}
@@ -92,6 +91,18 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 - [http://packages.gentoo.org/package/app-text/zathura](http://packages.gentoo.org/package/app-text/zathura)
 
 ## SyncTeX {#g93d0312}
+
+### forward search {#m29e6702}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+
+```
+$ zathura hoge.pdf &
+$ zathura --synctex-forward 30:0:hoge.tex `pwd`/hoge.pdf
+```
+
+のように実行します．<br>
+forward search をする場合は hoge.pdf はフルパスで指定します．<br>
 
 ### inverse search {#c00c992e}
 
