@@ -290,6 +290,13 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ## zathura との連携 {#kb46ca7c}
 
+### forward search {#xc3a349c}
+
+[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
+[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
+[YaTeX#zathura との連携 (forward search)](/YaTeX/#j4034f6b)<br>
+を参照してください．<br>
+
 ### inverse search {#a432be77}
 
 ```
