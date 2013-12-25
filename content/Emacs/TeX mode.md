@@ -31,7 +31,7 @@ GPLv3
 
 ### Windows {#m2df1dd4}
 
-[emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．<br>
 Emacs を起動して<br>
 
 ```
