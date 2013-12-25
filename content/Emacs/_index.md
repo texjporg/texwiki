@@ -68,6 +68,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 #### Windows {#k091604e}
 
+- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
     - [http://sourceforge.jp/projects/gnupack/releases/?package_id=10839](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
@@ -75,7 +76,6 @@ GNU Emacs は，フリーソフトウェアです．<br>
     - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
     - [ビルド記録](http://gnupack.sourceforge.jp/docs/current/UsersGuide_build_procedure.html#_emacs)
     - [http://jaist.dl.sourceforge.jp/gnupack/](http://jaist.dl.sourceforge.jp/gnupack/)
-- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [Emacs for Windows Modified](http://vgoulet.act.ulaval.ca/en/emacs/windows/)
 
 #### OS X {#v2ece0ad}
