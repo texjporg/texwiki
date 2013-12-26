@@ -20,7 +20,7 @@ pukiwiki: "powerdot"
 powerdot は プレゼンテーション用の LaTeX クラスです．<br>
 TeX Live, W32TeX に標準で含まれています．<br>
 powerdot は dvipdfmx に対応していないので、PDFを作るためには、 dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller の組み合わせで使用してください．<br>
-しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html) を参照．)<br>
+しおりの文字化けを防止するには convbkmk を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html) を参照．)<br>
 
 - [https://stuwww.uvt.nl/~hendri/](https://stuwww.uvt.nl/~hendri/)
 - [http://www.ctan.org/pkg/powerdot](http://www.ctan.org/pkg/powerdot)
@@ -29,6 +29,7 @@ powerdot は dvipdfmx に対応していないので、PDFを作るためには�
 ### 関連リンク {#w637da69}
 
 - [powerdot with beamerboxesrounded](https://gist.github.com/3139838)
+- [powerdot で作ったDVIファイルを W32TeX の dvips で処理](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1187)
 - [177びぼーろく;powerdot その2](http://phys-diary.blogspot.jp/2012/11/177powerdot-2.html)
 - [Powerdot.clsのマニュアルを日本語訳したもの](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)
 - [Powerdot &mdash; LyX HowTo](http://www.int.otaru-uc.ac.jp/lyx-howto/presentation/powerdot)
