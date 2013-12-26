@@ -47,7 +47,7 @@ Last OS error: No such file or directory
 GPL Ghostscript 9.10: Unrecoverable error, exit code 1
 ```
 
-rungs.exe, gswin32c.exe, gswin64c.exe から直接実行すれば処理ができます．<br>
+rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます．<br>
 
 ```
 PS C:\Users\$Env:USERNAME> rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
@@ -70,7 +70,7 @@ CodePage の値が 932 の場合は PDF ファイルが出力されます．
 rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
 ```
 
-のように ps2pdf.bat ではなく rungs.exe, gswin32c.exe, gswin64c.exe を実行すると PDF ファイルが作成できるようです．
+のように ps2pdf.bat ではなく rungs.exe, gswin64c.exe, gswin32c.exe を実行すると PDF ファイルが作成できるようです．
 
 ### 配布先 {#gc8a2a19}
 
@@ -110,7 +110,7 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 
 #### インストール方法 {#b84b5a69}
 
-- gs910w32full-gpl.exe または gs910w64full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
+- gs910w64full-gpl.exe または gs910w32full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
     - デフォルトのインストール先は “C:\Program Files\gs\gs9.10”
     - C ドライブ直下にインストールしたい場合は “C:\gs\gs9.10”に変更します。
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
@@ -126,7 +126,7 @@ Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー�
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
-ユーザーアカウントの名前に例えば「山田太郎」のように
+ユーザー アカウント (Microsoft アカウント または ローカル アカウント) の名前に例えば「山田太郎」のように
 ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
 インストールに失敗することがあります。<br>
 これは環境変数
@@ -163,7 +163,7 @@ Ghostscript を C:\gs\gs9.10 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\texlive\2013\bin\win32;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib<br>C:\w32tex\bin;C:\gs\gs9.10\bin;C:\gs\gs9.10\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -195,7 +195,7 @@ Ghostscript を C:\Program Files\gs\gs9.10 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.10\bin;C:\Program Files\gs\gs9.10\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -236,7 +236,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 32-bit 版/64-bit 版の区別がありますが，これは使用する Ghostscript の 32-bit 版/64-bit 版に合わせなけなければなりません．Ghostscript は 32-bit 版/64-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 32-bit 版/64-bit 版を選択してください．
+- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません．Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
