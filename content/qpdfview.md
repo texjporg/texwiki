@@ -133,4 +133,4 @@ texworks --position=%2 "%1"
 
 ***
 
-qpdfview 上でダブルクリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
+qpdfview 上でダブルクリックすると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
