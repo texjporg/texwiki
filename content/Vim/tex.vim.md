@@ -69,11 +69,7 @@ function! TypesetFile()
     return ''
   end
 
-  if g:typeset == 'pdfplatex'
-    call PdfpLaTeX("pdfplatex")
-  elseif g:typeset == 'pdfplatex2'
-    call PdfpLaTeX("pdfplatex2")
-  elseif g:typeset == 'pdfuplatex'
+  if g:typeset == 'pdfuplatex'
     call PdfpLaTeX("pdfuplatex")
   elseif g:typeset == 'pdfuplatex2'
     call PdfpLaTeX("pdfuplatex2")
@@ -86,7 +82,7 @@ function! TypesetFile()
   elseif g:typeset == 'xelatex'
     call PdfLaTeX("xelatex")
   else
-    call PdfpLaTeX("pdfplatex")
+    call PdfpLaTeX("pdfuplatex")
   endif
   return ''
 endfunction
@@ -174,11 +170,7 @@ function! SetViewer(viewer)
 endfunction
 
 function! SetTypeset(type)
-  if a:type == 'pdfplatex'
-    let g:typeset = 'pdfplatex'
-  elseif a:type == 'pdfplatex2'
-    let g:typeset = 'pdfplatex2'
-  elseif a:type == 'pdfuplatex'
+  if a:type == 'pdfuplatex'
     let g:typeset = 'pdfuplatex'
   elseif a:type == 'pdfuplatex2'
     let g:typeset = 'pdfuplatex2'
@@ -191,7 +183,7 @@ function! SetTypeset(type)
   elseif a:type == 'xelatex'
     let g:typeset = 'xelatex'
   else
-    let g:typeset = 'pdfplatex'
+    let g:typeset = 'pdfuplatex'
   endif
 endfunction
 
@@ -212,51 +204,11 @@ function! PdfpLaTeX(type)
   let masterDir = expand("%:p:h")
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
-  if a:type == 'pdfplatex'
-    if has('win32') || has('win64')
-      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
-      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
-      let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
-      let g:makeindex = 'mendex -U -T'
-      if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
-        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
-      else
-        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
-      endif
-    else
-      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
-      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
-      let g:bibtex = 'pbibtex'
-      let g:makeindex = 'mendex'
-      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
-    endif
-  elseif a:type == 'pdfplatex2'
-    if has('win32') || has('win64')
-      let latex = 'platex -synctex=1 -guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
-      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
-      let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
-      let g:bibtex = 'pbibtex -kanji=utf8 -sjis-terminal'
-      let g:makeindex = 'mendex -U -T'
-      if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
-        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
-      else
-        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
-      endif
-    else
-      let latex = 'platex -synctex=1' . ' ' . masterTeXFile
-      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -g > ' . masterBaseName . '.ps'
-      let ps2pdf = 'ps2pdf' . ' ' . masterBaseName . '.ps'
-      let g:bibtex = 'pbibtex'
-      let g:makeindex = 'mendex'
-      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
-    endif
-  elseif a:type == 'pdfuplatex'
+  if a:type == 'pdfuplatex'
     if has('win32') || has('win64')
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
-      let g:bibtex = 'upbibtex'
+      let g:bibtex = 'upbibtex -sjis-terminal'
       let g:makeindex = 'mendex -U'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
@@ -276,7 +228,7 @@ function! PdfpLaTeX(type)
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
-      let g:bibtex = 'upbibtex'
+      let g:bibtex = 'upbibtex -sjis-terminal'
       let g:makeindex = 'mendex -U'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
