@@ -480,7 +480,7 @@ kanji-config-updmap hiragino
 
 !["ヒラギノ出力例"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
 
-\usepackage\[expert\]{otf} とすると，
+\usepackage\[uplatex,expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
 『[［改訂版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)』も
 ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。<br>
@@ -518,6 +518,8 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 
 ### UTF-8 入力での利用 {#u1eb9e1c}
 
+upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。<br>
+
 [安田功さん](http://yasuda.homeip.net/)の
 [Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html)
 は，UTF-8 の入力ファイルを pLaTeX で処理可能な文字やコントロールシーケンスに
@@ -528,8 +530,6 @@ CJK の文字は OTF パッケージのコントロールシーケンスに変�
 省けます。<br>
 [TeXWiki:pTeX と多言語処理 #多言語の Unicode 直接入力と pTeX](</pTeXと多言語処理/#cyraccpw>)
 にも解説があります。<br>
-
-upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できて便利そうです。<br>
 
 一方，[角藤さん](/W32TeX/)の配布に
 含まれる[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
