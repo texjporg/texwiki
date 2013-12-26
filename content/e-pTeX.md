@@ -7,6 +7,9 @@ pukiwiki: "e-pTeX"
 
 # e-pTeX
 
+e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できません．<br>
+Unicode を使用する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．<br>
+
 ## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) (obsolete) → [e-upTeX](/upTeX,upLaTeX/) を使用する {#u8bd5dfc}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
