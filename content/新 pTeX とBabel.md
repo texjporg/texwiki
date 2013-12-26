@@ -155,7 +155,7 @@ TeX Live 2013 は Babel に対応しています。<br>
 
 ### タイプセットのテスト {#mafcbf19}
 
-- 以下のファイルをタイプセットしてみてください。latex，platex の
+- 以下のファイルをタイプセットしてみてください。pdflatex, uplatex, platex の
     いずれでも OK となっているはずです（出力結果は
     『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
     付録J 357ページないし
@@ -280,8 +280,19 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 - 以上で，先のタイプセット用ファイル（名前を仮に johannes.tex とします）に
 
     ```
-    (p)latex johannes.tex
-    dvipdfmx johannes.dvi
+    pdflatex johannes.tex
+    ```
+
+    または
+
+    ```
+    ptex2pdf -l -u johannes.tex
+    ```
+
+    または
+
+    ```
+    ptex2pdf -l johannes.tex
     ```
 
     とすることで PostScript フォントの埋め込まれた PDF が作成されます。
