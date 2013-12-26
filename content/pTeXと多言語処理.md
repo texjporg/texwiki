@@ -39,7 +39,7 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. [Aleph](http://wiki.contextgarden.net/Aleph)
 
 によるアプローチなどが考えられます。<br>
-upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照ください。<br>
+upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。<br>
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
