@@ -14,7 +14,7 @@ Hunspell はスペルチェッカーです．<br>
 - [Hunspell](http://hunspell.sourceforge.net/)
 - [NHunspell](http://nhunspell.sourceforge.net/)
 
-以下の統合環境・エディタで使用されています．
+以下のフリーソフトウェア (オープンソースソフトウェア) の統合環境・エディタで使用されています．
 
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
