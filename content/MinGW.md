@@ -21,6 +21,16 @@ MinGW を使用すれば TeX Live の最新の開発版を自分でビルドし�
 
 [http://sourceforge.net/projects/mingw/files/Installer/](http://sourceforge.net/projects/mingw/files/Installer/)
 
+## MSYS {#o619b52f}
+
+- [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
+
+### MSYS2 {#x1532c23}
+
+- [http://www.mingw.org/wiki/MSYS2](http://www.mingw.org/wiki/MSYS2)
+- [http://sourceforge.net/projects/msys2/](http://sourceforge.net/projects/msys2/)
+- [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
+
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
 - [TeX Liveをmakeしようと試みてみた](http://d.hatena.ne.jp/abenori/20111105)
@@ -170,14 +180,6 @@ fmtutil-sys.exe   pdftosrc.exe
 ```
 
 64 bit Windows のネイティブなバイナリをビルドしたい場合は [MinGW-w64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
-
-ビルドしたバイナリの eptex, pbibtex, mendex は W32TeX と同様に sjis や sjis.euc となるようです．
-
-```
-e-pTeX 3.1415926-p3.3-110825-2.5 (sjis) (TeX Live 2013/dev)
-pBibTeX 0.99d-j0.33 (sjis.euc) (TeX Live 2013/dev)
-mendex - Japanese index processor, version 2.6f [14-Aug-2009] (sjis.euc).
-```
 
 ## 関連リンク {#e987affa}
 
