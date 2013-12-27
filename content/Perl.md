@@ -34,9 +34,9 @@ W32TeX を使用する場合は Strawberry Perl をインストールしてく�
 - [https://github.com/Perl/perl5](https://github.com/Perl/perl5)
     - [https://github.com/Perl/perl5/commits/](https://github.com/Perl/perl5/commits/)
 
-### インストール {#l06514b7}
+### インストール (Windows) {#l06514b7}
 
-#### Windows {#bfff8462}
+#### Strawberry Perl {#bfff8462}
 
 - [Strawberry Perl](http://strawberryperl.com/)
 
@@ -47,6 +47,12 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 ```
 
 がシステム環境変数 Path に追加されます．
+
+#### MSYS2 {#wedf6406}
+
+```
+$ pacman -S perl
+```
 
 ### TeX関連モジュール {#y91d7e77}
 
