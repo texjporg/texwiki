@@ -23,13 +23,15 @@ MinGW を使用すれば TeX Live の最新の開発版を自分でビルドし�
 
 ## MSYS {#o619b52f}
 
-- [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
-
 ### MSYS2 {#x1532c23}
 
 - [http://www.mingw.org/wiki/MSYS2](http://www.mingw.org/wiki/MSYS2)
 - [http://sourceforge.net/projects/msys2/](http://sourceforge.net/projects/msys2/)
 - [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
+
+### MSYS1 {#pb3bd48b}
+
+- [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
 
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
@@ -43,7 +45,7 @@ MinGW Shell を起動します．
 $ mkdir texlive
 $ cd texlive
 $ rsync -a --delete --exclude=.svn tug.org::tldevsrc/Build/source/ .
-$ ./Build --without-x --without-ln-s --disable-xetex --disable-xdvipdfmx --disable-xdv2pdf --disable-xdvik
+$ ./Build --without-x --without-ln-s --disable-xetex --disable-xdvipdfmx --disable-xdvik
 ```
 
 make  check-TESTS でエラーが発生しました．
