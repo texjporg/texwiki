@@ -16,7 +16,7 @@ pukiwiki: "Python"
 ## Python 3 {#d9180565}
 
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
-Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
+[PythonTeX](/PythonTeX/) などの Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
 - [Python Programming Language &ndash; Official Website](http://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
