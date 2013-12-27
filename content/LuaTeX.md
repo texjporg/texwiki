@@ -9,7 +9,7 @@ pukiwiki: "LuaTeX"
 
 ## [LuaTeX](http://www.luatex.org/) {#af5563d6}
 
-<img src="http://www.luatex.org/luatex.jpg" alt="LuaTeX" width="200" height="172" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/LuaTeX_logo.svg/200px-LuaTeX_logo.svg.png" alt="LuaTeX" width="200" height="172" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
