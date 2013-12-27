@@ -91,7 +91,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [Python](/Python/) をインストールします．<br>
 
-- \[スタート\]-\[すべてのプログラム\]-\[MinGW\]-\[MinGW Shell\] を起動します．
+- MinGW Shell (MSYS) を起動します．
 
 <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
 <!--  -->
@@ -230,6 +230,15 @@ $ popd
 <!-- $ popd -->
 <!-- $ popd -->
 <!--  -->
+<!-- -[[libjpeg-turbo:http://libjpeg-turbo.virtualgl.org/]] をインストールします．~ -->
+<!-- $ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.0.tar.gz -->
+<!-- $ tar xvf libjpeg-turbo-1.3.0.tar.gz -->
+<!-- $ pushd libjpeg-turbo-1.3.0 -->
+<!-- $ ./configure - -prefix=/mingw -->
+<!-- $ make -->
+<!-- $ make install -->
+<!-- $ popd -->
+
 - [libjpeg](http://www.ijg.org/) をインストールします．
 
 ```
