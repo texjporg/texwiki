@@ -32,13 +32,21 @@ Python で書かれたスクリプトを実行するには Python の処理系�
 
 ### Windows {#s4be4fc1}
 
-Python を C:\Python34 にインストールした場合は
+#### Windows Installer {#p1636dd5}
+
+Windows Installer の Python を C:\Python34 にインストールした場合は
 
 ```
 ;C:\Python34;C:\Python34\Scripts
 ```
 
 を環境変数 PATH に追加します．<br>
+
+#### MSYS2 {#zf164903}
+
+```
+$ pacman -S python
+```
 
 ### Linux {#l250486b}
 
