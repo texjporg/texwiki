@@ -13,7 +13,7 @@ pukiwiki: "Ruby"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Ruby 2.0 {#z9c2e043}
+## Ruby 2.1 {#z9c2e043}
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
 convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
@@ -32,23 +32,31 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 
 ### Windows {#j2a4eaa7}
 
+#### RubyInstaller for Windows {#p44e196d}
+
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 
-Ruby を C:\Ruby200 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby210 にインストールした場合は
 
 ```
-;C:\Ruby200\bin
+;C:\Ruby210\bin
+```
+
+を環境変数 PATH に追加します
+
+RubyInstaller for Windows の Ruby を C:\Ruby210-x64 にインストールした場合は
+
+```
+;C:\Ruby210-x64\bin
 ```
 
 を環境変数 PATH に追加します
 
-Ruby を C:\Ruby200-x64 にインストールした場合は
+#### MSYS2 {#a7424fa6}
 
 ```
-;C:\Ruby200-x64\bin
+$ pacman -S ruby
 ```
-
-を環境変数 PATH に追加します
 
 ### Linux {#pfcca84f}
 
