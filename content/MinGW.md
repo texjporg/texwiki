@@ -181,7 +181,7 @@ fixwwps.exe       pdftex.exe             wovp2ovf.exe
 fmtutil-sys.exe   pdftosrc.exe
 ```
 
-64 bit Windows のネイティブなバイナリをビルドしたい場合は [MinGW-w64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
+64-bit Windows のネイティブなバイナリをビルドしたい場合は [MinGW-w64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
 
 ## 関連リンク {#e987affa}
 
