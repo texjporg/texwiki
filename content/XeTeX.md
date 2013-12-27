@@ -485,7 +485,7 @@ glue, penalty, discretionary break です。ハイフンは日本語に関係し
 
 がありますが、ここでは、3. が問題となります。
 
-- 古典的な 8 bit 版の TeX では、空白文字の箇所に TFM から読みとられた量の glue が自動的に挿入されます。
+- 古典的な 8-bit 版の TeX では、空白文字の箇所に TFM から読みとられた量の glue が自動的に挿入されます。
 - pTeX では、更に、和字と和字の間に TFM (JFM) から読みとられた量の glue、または、 \kanjiskip が、和字とそれ以外の間に \xkanjiskip が自動的に挿入されます。また、禁則文字の前後には penalty が自動的に挿入されます。
     このグルーの挿入はマクロ展開後に行われます。
     更に詳しいことや、カスタマイズの方法については、[pTeX でのJIS X4051 の実装](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)を御覧下さい。
