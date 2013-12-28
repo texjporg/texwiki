@@ -7,7 +7,7 @@ pukiwiki: "Xpdf"
 
 # Xpdf
 
-## Xpdf {#y866cd84}
+## Xpdf (obsolete) → [Poppler](/Poppler/) を使用した PDF ビューア ([Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), PdfViewer, [TeXworks](/TeXworks/) など) または [MuPDF](/MuPDF/) を使用する {#y866cd84}
 
 - [Xpdf](http://www.foolabs.com/xpdf/)
 
