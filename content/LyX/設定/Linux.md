@@ -58,6 +58,27 @@ PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択し
 
 ***
 
+#### [zathura](/zathura/) の場合 {#f1b11fba}
+
+PDFコマンドは [zathura](/zathura/) を使用します．<br>
+
+***
+
+```
+
+```
+
+<br>
+
+出力の行幅(L): <ins>65</ins><br>
+日付書式(D): 　<ins>&#x25;x</ins><br>
+書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
+順検索<br>
+　DVIコマンド: <br>
+　PDFコマンド: <ins>zathura --synctex-forward $$n:0:$$t $$o</ins><br>
+
+***
+
 #### [qpdfview](/qpdfview/) の場合 {#a6f5bad3}
 
 PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
@@ -115,6 +136,14 @@ PDFコマンドは PdfViewer を使用します．<br>
 ### forward search {#w6988b67}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
+
+## zathura との連携 {#z3a17acd}
+
+\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+
+### forward search {#md1a5537}
+
+[順検索 (forward search)](</LyX/設定/Linux/#f1b11fba>) を参照してください．
 
 ## qpdfview との連携 {#i536202e}
 
