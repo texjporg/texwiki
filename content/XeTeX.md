@@ -77,19 +77,29 @@ FaceIndex は不要の場合は省略できる。<br>
 この場合は .xdv ファイル
 （.dvi ファイルを拡張したもの）を出力する。<br>
 .xdv ファイルをドライバによって PDF に変換する。<br>
+
+#### xdvipdfmx {#b219f871}
+
 PDF に変換するドライバは xdvipdfmx を用いる。<br>
 xdvipdfmx は dvipdfmx を XeTeX 用に拡張したものである。<br>
-xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。<br>
-xdv2pdf は TeX Live 2013 で除外され開発が中止された。(→ \[[XeTeX\] Future of xdv2pdf driver on Mac](http://tug.org/pipermail/xetex/2013-March/024120.html))<br>
-xdv2pdf は OS X 専用のドライバであって，他では利用できない。<br>
-xdv2pdf は OS X を有効利用するドライバだが，仮想フォントを読むことが
-できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には
-OS X であっても xdvipdfmx を使うことになる。<br>
-また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う
-場合だけ有効である。<br>
-graphics パッケージや color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。<br>
+
+<!-- ***xdv2pdf [#q2227054] -->
+<!-- xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。~ -->
+<!-- xdv2pdf は TeX Live 2013 で除外され開発が中止された。(→ [[[XeTeX] Future of xdv2pdf driver on Mac:http://tug.org/pipermail/xetex/2013-March/024120.html]])~ -->
+<!-- xdv2pdf は OS X 専用のドライバであって，他では利用できない。~ -->
+<!-- xdv2pdf は OS X を有効利用するドライバだが，仮想フォントを読むことが -->
+<!-- できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には -->
+<!-- OS X であっても xdvipdfmx を使う必要がある。~ -->
+<!-- また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う -->
+<!-- 場合だけ有効である。~ -->
+
+#### graphics パッケージ，graphicx パッケージ，color パッケージ {#r1d77dc8}
+
+graphics パッケージ，graphicx パッケージ，color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。<br>
 付加しないと動作しない場合は \[xetex\]
 オプションを付加する。<br>
+
+#### しおり {#o4b92f27}
 
 しおり等の PDF 文字列に関しては，オリジナルの dvipdfmx では 適切な CMap
 を指定することで Big Endian UTF-16 with BOM に変換するようになっていた。<br>
