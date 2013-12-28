@@ -48,17 +48,17 @@ $ sudo apt-get install task-texlive-full
 VineSeed のパッケージは TeX Live 2014/dev/Vine Linux になっています．<br>
 
 ```
-$ platex -v
-e-pTeX 3.1415926-p3.4-130605-2.6 (utf8.euc) (TeX Live 2014/dev/Vine Linux)
+$ uplatex -v
+e-upTeX 3.1415926-p3.4-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014/dev/Vine Linux)
 kpathsea version 6.2.0dev
 ptexenc version 1.3.2dev
 Copyright 2013 D.E. Knuth.
 There is NO warranty.  Redistribution of this software is
-covered by the terms of both the e-pTeX copyright and
+covered by the terms of both the e-upTeX copyright and
 the Lesser GNU General Public License.
 For more information about these matters, see the file
-named COPYING and the e-pTeX source.
-Primary author of e-pTeX: Peter Breitenlohner.
+named COPYING and the e-upTeX source.
+Primary author of e-upTeX: Peter Breitenlohner.
 ```
 
 ## [Python](/Python/) {#vedf0458}
@@ -127,15 +127,15 @@ $ sudo apt-get install latexila
 $ sudo apt-get install emacs
 ```
 
-### [YaTeX](/YaTeX/) {#b339a19f}
-
-- [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
-- [http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex)
-
 ### [AUCTeX](/AUCTeX/) {#l05e9420}
 
 - [AUCTeX](http://vinelinux.org/docs/vine6/tex-guide/auctex.html)
 - [http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex](http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex)
+
+### [YaTeX](/YaTeX/) {#b339a19f}
+
+- [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
+- [http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex)
 
 ## [Vim](/Vim/) {#na92681c}
 
