@@ -28,7 +28,7 @@ LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を [LuaJIT](http:
 
 ## インストール {#e0acc4f5}
 
-W32TeX \[2012/12/30\] 以降に含まれています．<br>
+W32TeX に含まれています．<br>
 W32TeX の LuaJITTeX は [LuaTeX-ja](/LuaTeX-ja/) が使用可能です．<br>
 
 Linux の場合は以下のサイトからバイナリが入手出来ます．<br>
