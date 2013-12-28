@@ -322,30 +322,6 @@ C:\inkscape>inkscape
         \[\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\]
         ```
 
-    - $$ ～ $$
-
-        ```
-        $$\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}$$
-        ```
-
-    - \begin{displaymath} ～ \end{displaymath}
-
-        ```
-        \begin{displaymath}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{displaymath}
-        ```
-
-    - \begin{equation\*} ～ \end{equation\*}
-
-        ```
-        \begin{equation*}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation*}
-        ```
-
-    - \begin{eqnarray\*} ～ \end{eqnarray\*}
-
-        ```
-        \begin{eqnarray*}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{eqnarray*}
-        ```
-
     - \begin{align\*} ～ \end{align\*}
 
         ```
@@ -358,19 +334,13 @@ C:\inkscape>inkscape
         \begin{gather*}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{gather*}
         ```
 
+    - \begin{equation\*} ～ \end{equation\*}
+
+        ```
+        \begin{equation*}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation*}
+        ```
+
 - ディスプレイ数式モード (番号を付ける場合)
-    - \begin{equation} ～ \end{equation}
-
-        ```
-        \begin{equation}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation}
-        ```
-
-    - \begin{eqnarray} ～ \end{eqnarray}
-
-        ```
-        \begin{eqnarray}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{eqnarray}
-        ```
-
     - \begin{align} ～ \end{align}
 
         ```
@@ -381,6 +351,12 @@ C:\inkscape>inkscape
 
         ```
         \begin{gather}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{gather}
+        ```
+
+    - \begin{equation} ～ \end{equation}
+
+        ```
+        \begin{equation}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation}
         ```
 
 ***
