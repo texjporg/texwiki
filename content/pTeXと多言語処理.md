@@ -35,7 +35,6 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. LuaJITTeX
 1. [XeTeX](/XeTeX/), [XeLaTeX](/XeTeX/) + [xeCJK パッケージ](/xeCJK/)
 1. [(pdf)LaTeX](/pdfTeX/) + [CJK パッケージ](/LaTeX-CJK/)
-1. [newunicodechar パッケージ](https://mirror.ctan.org/macros/latex/contrib/newunicodechar/)
 1. [Aleph](http://wiki.contextgarden.net/Aleph)
 
 によるアプローチなどが考えられます。<br>
@@ -428,7 +427,7 @@ KoreanTeX がありました（これはハングルを ASCII 文字転写した
 扱えるようになりました。（後述するように，UTF82TeX を用いる方法もあります。
 他に別の言語も直接入力して混在させている方に特に便利です。）
 
-以下をインストールする前に OTF パッケージと Omega が必要です。
+以下をインストールする前に OTF パッケージと Aleph が必要です。
 あらかじめ TeXインストーラ3 などでインストールしておきましょう。
 
 Perl をインストールしていない方は
