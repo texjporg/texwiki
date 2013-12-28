@@ -15,7 +15,7 @@ pTeX 上で多言語混在文書を扱う方法を
 「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」
 が知られています。<br>
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，
-中文）・韓國語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては
+中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては
 取り扱っていませんし，個々のパッケージのインストール方法についても一部の
 パッケージについては割愛しています。<br>
 そこで稲垣さんが取り上げてくださることを
@@ -415,15 +415,15 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 ## 東アジアの言語 {#easapflq}
 
-### 中国語・韓國語 {#cjkinqd}
+### 中国語・韓国語 {#cjkinqd}
 
-韓國語（&#xd55c;&#xad6d;&#xc5b4;）
+韓国語（&#xd55c;&#xad6d;&#xc5b4;）
 は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
 KoreanTeX がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，後述する方法と異なり入力ソフト \[input method\] が不要です）。
 
 一方，中国語（&#x6c49;&#x8bed;［漢語］，中文）については扱う方法が
 ありませんでした。しかし，[OTF パッケージ](/OTF/)と OTFCJK パッケージの登場に
-より，ようやく pTeX でも中国語（簡化字・繁體字の両方）と韓國語をまとめて
+より，ようやく pTeX でも中国語（簡化字・繁體字の両方）と韓国語をまとめて
 扱えるようになりました。（後述するように，UTF82TeX を用いる方法もあります。
 他に別の言語も直接入力して混在させている方に特に便利です。）
 
@@ -437,7 +437,7 @@ Perl をインストールしていない方は
 PDF 閲覧の際には
 [Adobe Reader](</Adobe Reader/>) が必要です。
 
-さて，中国語や韓國語
+さて，中国語や韓国語
 などは[utf8toutf](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/utils/utf8toutf.zip)
 と [otfcjk](http://psitau.kitunebi.com/experiment.html) を併用すると
 便利です。まずはそれぞれダウンロードしておきましょう。
@@ -813,7 +813,7 @@ cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 (wqy-zenhei.ttf) を，中国語繁體字フォントに
 [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と
 [cwTeX TrueType font](http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，
-韓國語フォントに [Un-fonts](http://kldp.net/projects/unfonts/)
+韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/)
 (UnBatang.ttf, UnDotum.ttf) を用いています。いずれも無償で入手できます。
 
 Adobe Reader 付属の CMap
@@ -1285,7 +1285,7 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 
 以上でインストールはようやく終わりです。
 
-さて，TeX ソースに中国語・韓國語を入力するためには
+さて，TeX ソースに中国語・韓国語を入力するためには
 設定が必要です。
 「[中国語・韓国語を入力したい](http://www.tjf.or.jp/ringo/migaku/post-22.php)」
 を参考に設定してください。
@@ -1344,7 +1344,7 @@ WhatsUniCJK-tex.zip などを参考にしてください。
 \end{繁体中文}
 
 \section{Korean}
-%%% 韓國語・朝鮮語の場合は「ハングル」環境を用います。
+%%% 韓国語・朝鮮語の場合は「ハングル」環境を用います。
 \begin{ハングル}
 안녕하세요.\textbf{히가시 히로시}라고 합니다.잘 부탁드립니다.
 \end{ハングル}
@@ -1381,7 +1381,7 @@ ps2pdf cjkintro-sjis.ps
 うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
 フォントのインストールを促されたらインストールしておいてください。
 
-最後に。中国語や韓國語は句読点が真ん中に表示されることがありますが，
+最後に。中国語や韓国語は句読点が真ん中に表示されることがありますが，
 それで問題ないはずです。
 （フォントのグリフの問題です。伝統的な組版かどうかまでは分かりませんが。）
 
@@ -1444,7 +1444,7 @@ fmtutil --byfmt platex
 また Unicode のまま編集することで，Aspell によるスペルチェックもできます。
 
 フランス語やドイツ語などの Latin-1, Latin-2 文字，ギリシア文字，
-ロシア語のキリル文字，ヴェトナム語，グルジア語，中国語，韓國語に
+ロシア語のキリル文字，ヴェトナム語，グルジア語，中国語，韓国語に
 ついては[安田功さん](http://yasuda.homeip.net/)が
 [Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) を
 公開していますので，これを用いれば一括で pTeX 処理可能な文書に変換できます。
@@ -1492,7 +1492,7 @@ UTF-8 テキストファイルに変換する方法をお勧めします。RTF�
 フォントを切り替えながら編集します（例えば，日本語は「ＭＳ ゴシック」など，
 ラテンアルファベット系言語・キリルアルファベット系言語・ギリシア語は
 Microsoft Sans Serif など，タイ語は Tahoma，中国語は SimSun など，
-韓國語は Dotum など）。文書の保存はリッチテキスト形式で構いません。
+韓国語は Dotum など）。文書の保存はリッチテキスト形式で構いません。
 
 あとは RTFコンバータを起動し，入力にワードパッドで作成した文書を指定して
 「出力ファイルの種類」を「テキスト形式」に，「テキストファイルのコード」を
@@ -1577,7 +1577,7 @@ $SWOPT   = "-f latex -d C:\\usr\\local\\bin\\data";
 
 さまざまな言語の入力ソフトを併用して書いていきます。
 
-準備ができたら，[Utf82TeX のページの入力例](http://yasuda.homeip.net/tex/utf82tex.html)も参考に書いていきます。タイ語も混在編集して構いません。中国語と韓國語はタグによって処理を分ける独自の方式
+準備ができたら，[Utf82TeX のページの入力例](http://yasuda.homeip.net/tex/utf82tex.html)も参考に書いていきます。タイ語も混在編集して構いません。中国語と韓国語はタグによって処理を分ける独自の方式
 をとります。したがって，OTFCJKをインストールする必要もおそらくありません。タグは
 %でコメントアウトしておくことで，TeXには無視させられます。
 
