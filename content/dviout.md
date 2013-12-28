@@ -44,7 +44,7 @@ Expat License については
 
 ### リリース情報 {#uce3262c}
 
-2012-02-12 dviout 3.18.4<br>
+2013-12-14 dviout 3.18.4 ALPHA 1<br>
 
 dviout 3.18.3 ALPHA 5 以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
 についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
@@ -196,20 +196,20 @@ dviout-x64 フォルダーまたは dviout フォルダーの dviout.exe を右�
 　　　　[<img src="http://www.nsknet.or.jp/~tony/TeX/install/win/icon/dviout.gif" alt="dviout" style="float:left">](http://akagi.ms.u-tokyo.ac.jp/dviout.html)
 　　　　　　　　　 <ins>dviout.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
-　　　　説明:　　　　　　　　　TeX previewer/printer_driver for Windows32
+　　　　説明:　　　　　　　　　TeX previewer/printer_driver for Windows
 
 <br>
 
-　　　　場所:　　　　　　　　　C:\w32tex\dviout<br>
-　　　　サイズ:　　　　　　　　824 KB (843,776 バイト)<br>
-　　　　ディスク上　　　　　　824 KB (843,776 バイト)<br>
+　　　　場所:　　　　　　　　　C:\w32tex\dviout-x64<br>
+　　　　サイズ:　　　　　　　　1.05 MB (1,106,944 バイト)<br>
+　　　　ディスク上　　　　　　1.05 MB (1,110,016 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2012年2月12日、20:29:28<br>
-　　　　更新日時:　　　　　　2012年2月12日、20:29:28<br>
-　　　　アクセス日時:　　　　2012年2月12日、20:29:28<br>
+　　　　作成日時:　　　　　　2013年12月14日、14:30:14<br>
+　　　　更新日時:　　　　　　2013年12月14日、14:30:14<br>
+　　　　アクセス日時:　　　　2013年12月14日、14:30:14<br>
 
 <br>
 
