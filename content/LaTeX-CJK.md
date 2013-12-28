@@ -95,7 +95,7 @@ TeX コンパイラ・DVI ウェア共に独自拡張を施しています。<br
 マクロで日中韓文字を処理する CJK パッケージを紹介します。<br> <!-- 漢字等がビットマップになることにさえ我慢できれば（？）、 -->
 周辺ツールも含めてオリジナルの TeX 環境がそのまま使えます。<br>
 縦書や日本語の禁則処理等は苦手ですが、 <!-- 日本語の禁則処理をしていない訳ではありません。~ --> <!-- pTeXと比べて、組版の仕上がりが見劣りするのは和文(中文)と欧文の境界に --> <!-- グルーが入らない事が原因であるように感じます。~ --> <!-- 境界に[space]を入れて誤魔化すのを忘れると、まあ、ひどい仕上がりになります。 -->
-UTF-8 等を用いて中国韓國文字も処理できます。<br>
+UTF-8 等を用いて中国韓国文字も処理できます。<br>
 海外では、pdfLaTeX で英文中にほんの少し漢字を書きたい場合によく使われているようです。<br> <!-- CJK LaTeX に詳しくない者が書き加えました。~ --> <!-- 間違ってたらすいません。~ --> <!-- CJK は主に台湾で使われています。~ -->
 
 CJK パッケージは inputenc パッケージなどと同じく、
@@ -172,7 +172,7 @@ EUC-JP の文書は c40song.fd で指定された jsso12XX.tfm が、等々の�
 
 CJK パッケージの配布には、様々な拡張とそのサンプルが同梱されています。<br>
 そのうち、最も重要と思われる CJKutf8 について説明します。<br>
-中国語と日本語（そして、いくらかは韓國語［&#xd55c;&#xad6d;&#xc5b4;］も）は禁則対象の文字の前後を除き、
+中国語と日本語（そして、いくらかは韓国語［&#xd55c;&#xad6d;&#xc5b4;］も）は禁則対象の文字の前後を除き、
 どこでも改行できると言う、他の言語にはなかなか見出しがたい、
 特徴的な組版規則を持っています。<br>
 CJK パッケージでは TeX 上にそのような
@@ -429,7 +429,7 @@ dvipdfmx は以下のフォントを「知って」います。
 <tr><td rowspan="2">Adobe-CNS1-0</td><td>MSung-Light-Acro</td></tr>
 <tr><td>MHei-Medium-Acro</td></tr>
 <tr><td>Adobe-CNS1-4</td><td>AdobeMingStd-Light-Acro</td></tr>
-<tr><th rowspan="5" style="text-align:center">韓國語<br>（&#xd55c;&#xad6d;&#xc5b4;）</th><td rowspan="2">Adobe-Korea1</td><td>HYSMyeongJo-Medium</td></tr>
+<tr><th rowspan="5" style="text-align:center">韓国語<br>（&#xd55c;&#xad6d;&#xc5b4;）</th><td rowspan="2">Adobe-Korea1</td><td>HYSMyeongJo-Medium</td></tr>
 <tr><td>HYGoThic-Medium</td></tr>
 <tr><td rowspan="2">Adobe-Korea1-0</td><td>HYSMyeongJo-Medium-Acro</td></tr>
 <tr><td>HYGoThic-Medium-Acro</td></tr>
