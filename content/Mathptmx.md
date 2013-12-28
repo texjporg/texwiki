@@ -23,7 +23,19 @@ Mathptmx は，本文・数式とも，フォントを Computer Modern から Ti
 このソースは，[newtx](/newtx/) を参考にして書きました。
 
 ```
-\documentclass{jsarticle}
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+\else
+  \ifdefined\pdfoutput
+    \ifdefined\directlua
+      \documentclass{ltjsarticle}
+    \else
+      \documentclass[pdflatex]{bxjsarticle}
+    \fi
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+  \fi
+\fi
 \usepackage{mathptmx}
 \DeclareSymbolFont{cmletters}{OML}{cmm}{m}{it}
 \DeclareSymbolFont{cmsymbols}{OMS}{cmsy}{m}{n}
