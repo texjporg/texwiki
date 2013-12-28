@@ -239,17 +239,17 @@ $ sudo apt-get install eclipse
 $ sudo apt-get install emacs24
 ```
 
-### YaTeX {#r57295dd}
-
-- [https://launchpad.net/debian/+source/yatex/](https://launchpad.net/debian/+source/yatex/)
-    - [https://launchpad.net/debian/+source/yatex/+changelog](https://launchpad.net/debian/+source/yatex/+changelog)
-- [YaTeXのインストールと設定](http://emacs.tsutomuonoda.com/latex-emacs-yatex-install-setting/)
-
 ### AUCTeX {#t099fe57}
 
 - [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/Emacs/auctex_config.html)
 - [https://launchpad.net/debian/+source/auctex/](https://launchpad.net/debian/+source/auctex/)
     - [https://launchpad.net/debian/+source/auctex/+changelog](https://launchpad.net/debian/+source/auctex/+changelog)
+
+### YaTeX {#r57295dd}
+
+- [https://launchpad.net/debian/+source/yatex/](https://launchpad.net/debian/+source/yatex/)
+    - [https://launchpad.net/debian/+source/yatex/+changelog](https://launchpad.net/debian/+source/yatex/+changelog)
+- [YaTeXのインストールと設定](http://emacs.tsutomuonoda.com/latex-emacs-yatex-install-setting/)
 
 ## [Vim](/Vim/) <a id="vim"></a> {#k24f9849}
 
