@@ -112,6 +112,35 @@ Error in RegCreateKey が表示された場合は \[OK\] をクリックしま�
 \[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
 dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
 
+## 非対応パッケージ {#pd5bea65}
+
+PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
+dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください．<br>
+
+### [TikZ](/TikZ/) {#m7bcebf4}
+
+dviout は [TikZ](/TikZ/) に対応していません．<br>
+PDF に変換して PDF ビューアで表示・印刷するといいでしょう。<br>
+
+### [media9](/media9/) {#h55cad77}
+
+dviout は [media9](/media9/) に対応していません．<br>
+PDF に変換して PDF ビューアで表示するといいでしょう。<br>
+
+### [OTF](/OTF/) {#i25da0b5}
+
+dviout は [OTF パッケージ](/OTF/)に完全対応していません。<br>
+\CID{...} などでの Adobe-Japan1 の CID 直接参照の機能は無く，
+代わりに CID → Unicode の変換を経由した表示機能があります。<br>
+dviout ではなく，dvipdfmx や dvips など
+CID に完全対応した DVIware を利用しましょう。<br>
+
+### [PSTricks](/PSTricks/) {#x2d3abf4}
+
+dviout は dvips と完全互換ではありません。<br>
+[PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
+dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
+
 ## インストール {#f465326c}
 
 あらかじめ TeX システムをインストールしておきます。<br>
@@ -119,11 +148,11 @@ dviout を管理者として実行した場合はこのエラーは発生しな�
 
 ### TeX Live の場合 {#se2d51a5}
 
-TeX Live の Win32 版には標準で dviout が含まれています．<br>
+TeX Live の Win32 版には dviout が含まれています．<br>
 
 ### W32TeX の場合 {#r4cfc9ce}
 
-W32TeX には dviout が含まれていないので dviout for Windows の最新の安定版をダウンロードします．<br>
+W32TeX には dviout が含まれていないので dviout をダウンロードします．<br>
 TeX インストーラ 3 で，dviout をインストールすることもできます．<br>
 デフォルトでは C:\w32tex\dviout にインストールされます．<br>
 
@@ -591,7 +620,7 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 　　　　　 ◯ Off　　　　　　　　　　　 (●) On (default)　　　　　　 ◯ verbose<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ Direct PS ← \usepackage\[dvips\]{hyperref} を使用する場合はチェックをはずす<br>
 　　　　　 ◯ PBM　　　　　　　　　　　◯ exact PBM　　　　　　　◯ gssub<br>
-　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\w32tex\bin\rungs.exe</ins> または <ins>C:\w32tex\bin64\rungs.exe</ins><br>
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[gsx:\]</span> <ins>C:\w32tex\bin64\rungs.exe</ins> または <ins>C:\w32tex\bin\rungs.exe</ins><br>
 　　　　　gdat: <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
 　　　　　☐ draw frame (gbox:)　　　　　　　　　☑ gfit: color BMP　　　　　　　　☐ gow: overwrite<br>
 　　　　　☐ size includes mag　　　　　　　　　　☑ gclip: clip　　　　　　　　　GIF:<ins>BMP (full color)\[▼\]</ins><br>
@@ -671,25 +700,6 @@ JPEG ファイルが表示されない場合は dviout を使用せず PDF フ�
 　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
 
 ***
-
-## 非対応パッケージ {#pd5bea65}
-
-PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
-dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください．<br>
-
-### [OTF](/OTF/) {#i25da0b5}
-
-dviout for Windows は [OTF パッケージ](/OTF/)に完全対応していません。<br>
-\CID{...} などでの Adobe-Japan1 の CID 直接参照の機能は無く，
-代わりに CID → Unicode の変換を経由した表示機能があります。<br>
-dviout ではなく，dvipdfmx や dvips など
-CID に完全対応した DVIware を利用しましょう。<br>
-
-### [PSTricks](/PSTricks/) {#x2d3abf4}
-
-dviout for Windows は dvips と完全互換ではありません。<br>
-[PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
-dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
 
 ## upTeX で出力された DVI ファイルを dviout で表示する場合の注意点 {#wadc9abf}
 
@@ -785,7 +795,7 @@ A default FONT will be used.
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]</ins></span><strong>\[　Font2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　\]</ins></span><br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　　　　<ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
+　　　 <span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　　　　<ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
 　　　 <span style="color:Black;background-color:#EEEEEE;">\[ftt:\]</span>　　　　　 <ins>^x\map\ttfonts.map</ins><br>
 　　　 TEXSUBF:　 <ins>^r\sfd\\\\;^r\\..\ttf2pk\\\\;^r\\..\ttf2tfm\\\\</ins><br>
 　　　 TEXPKD:<br>
