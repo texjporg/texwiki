@@ -26,6 +26,10 @@ Windows 版には日本語の縦書き PostScript ファイルがきれいに表
 Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語の縦書き PostScript ファイルがきれいに表示できるバイナリが存在します．<br>
 ここではそれを角藤版 Ghostscript と呼ぶことにします．<br>
 
+### tlgs {#j25e0f58}
+
+TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語・韓国語 (CJK) に対応しています． (→ \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760), \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504))<br>
+
 ### 注意点 {#de072348}
 
 #### Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
@@ -263,10 +267,9 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 #### PS_View <a id="psview"></a> {#h218efe8}
 
 [PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
-Windows 版の TeX Live に標準で含まれています．<br>
-PS_View を使用する場合は 32-bit 版の Ghostscript が必要です．<br>
+TeX Live (Win32 版) に標準で含まれています．<br>
 
-TeX Live に含まれている PS_View の C:\texlive\2013\tlpkg\tlpsv\psv.wx.lua または公式サイトで配布されている PS_View の psv.wx.lua の gsargs の dllloc
+W32TeX で PS_View を使用する場合は PS_View の psv.wx.lua の gsargs の dllloc
 
 ```
 local gsargs = {
@@ -274,7 +277,7 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を角藤版 Ghostscript の dll ファイル (C:\gs\gs9.10\bin\gsdll32.dll) に修正します．<br>
+を角藤版 32-bit Ghostscript の dll ファイル (C:\gs\gs9.10\bin\gsdll32.dll) に修正します．<br>
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
@@ -284,13 +287,7 @@ local gsargs = {
   dllloc= "C:/gs/gs9.10/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-TeX Live の場合は C:\texlive\texmf-local\web2c\texmf.cnf に以下の記述を追加しても OK です． (→ [2013-08-11 - にっき♪](http://d.hatena.ne.jp/abenori/20130811))
-
-```
-TEXLIVE_WINDOWS_EXTERNAL_GS_DLL=C:/gs/gs9.10/bin/gsdll32.dll
-```
-
-角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
+角藤版 32-bit Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
 
 ```
 local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
@@ -1026,7 +1023,7 @@ Times-Italic や Times-BoldItalic を埋め込んでいない PDF を
 表示すると，Times-Italic や Times-BoldItalic の部分が Italic 体ではなく
 Oblique 体（Slanted 体，斜体）で表示されてしまいます。
 （Xpdf で表示すると PostScript Level 1 での基本14書体は埋め込まれていなくても
-正確に表示されます。しかし Xpdf の場合は非埋め込みの中国語フォント・韓國語
+正確に表示されます。しかし Xpdf の場合は非埋め込みの中国語フォント・韓国語
 ［&#xd55c;&#xad6d;&#xc5b4;］フォントが表示されず，非埋め込みの日本語フォントに
 使われる書体にも不満がある方が多いとのこと。）<br>
 そこで Times-Italic と
