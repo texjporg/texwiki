@@ -433,10 +433,10 @@ Microsoft Windows 版の Adobe Reader XI に
 - AdobeMingStd-Light.otf ［Adobe-CNS1-6[^1] 対応の繁體中国語明體フォント］
 - AdobeFanHeitiStd-Bold.otf ［Adobe-CNS1-6 対応の繁體中国語黒體フォント］
 - AdobeMyungjoStd-Medium.otf ［Adobe-Korea1-2 対応の
-    韓國語｛&#xd55c;&#xad6d;&#xc5b4;｝明朝體｛&#xba85;&#xc870;&#xccb4;｝フォント］
+    韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝明朝體｛&#xba85;&#xc870;&#xccb4;｝フォント］
 
 - AdobeGothicStd-Bold.otf ［Adobe-Korea1-2 対応の
-    韓國語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
+    韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
 
 が付属しています。<br>
 
@@ -671,7 +671,7 @@ ps2otfps old.ps new.ps
 <!-- CMap に Adobe-Japan1-6 を指定するか， -->
 <!-- または Identity-H, Identity-V を指定した上で -->
 <!-- TrueType フォント名の最後に “/AJ16” を付け加える必要があります。 -->
-<!-- 中国語や韓國語についても同様のことが言えます。 -->
+<!-- 中国語や韓国語についても同様のことが言えます。 -->
 <!-- （下の記述にある Microsoft Windows の TrueType フォントを使う場合の -->
 <!--   dvipdfmx 用の map ファイルや次のサイトをご参照ください。 -->
 <!--   http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LaTeX-CJK#odc3338f -->
@@ -713,7 +713,7 @@ ps2otfps old.ps new.ps
 <!-- ptetex3 の updmap では CJK フォントも対象になっているのですか。 -->
 <!-- W32TeX では updmap は CJK フォント以外のみに対応しています。 -->
 <!-- ところで，ptetex3 では updmap での（特に Mac OS X での） -->
-<!-- 中国語や韓國語のフォントの埋め込み制御はどのようになっているのでしょうか？ -->
+<!-- 中国語や韓国語のフォントの埋め込み制御はどのようになっているのでしょうか？ -->
 <!-- 上の記述では日本語フォントの埋め込み制御しか無いようですが。 -->
 
 <!-- 丁寧な解説ありがとうございます。TrueType フォントのことを忘れておりました。 -->
@@ -764,9 +764,9 @@ ps2otfps old.ps new.ps
 <!-- cid-x.mapなどの標準 map ファイルに設定しておくのが便利だとは考えます。 -->
 <!-- （20th Sep., 2006 現在では W32TeX 付属の -->
 <!--   $TEXMFMAIN/fonts/map/dvipdfmx/base/cid-x.map に -->
-<!--   中国語や韓國語用の virtual font に対する記述はありますが， -->
+<!--   中国語や韓国語用の virtual font に対する記述はありますが， -->
 <!--   Microsoft Windows に標準ではインストールされていないフォントを指定してあるので， -->
-<!--   中国語や韓國語に対しては実質使い物になりません。 -->
+<!--   中国語や韓国語に対しては実質使い物になりません。 -->
 <!--   ptetex3 ではどうでしょうか？） -->
 <!--  -->
 <!-- この議論，このページの下の方か TeX Q & A の方へ移した方がよくありませんか？ -->
