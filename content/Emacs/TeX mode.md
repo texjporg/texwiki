@@ -389,7 +389,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
   (interactive)
   (let* ((ctf (buffer-name))
          (mtf (tex-main-file))
-         (pf (expand-file-name (concat (car (split-string mtf "\\.")) ".pdf")))
+         (pf (concat (car (split-string mtf "\\.")) ".pdf"))
          (ln (format "%d" (line-number-at-pos)))
          (cmd "zathura")
          (args (concat "--synctex-forward " ln ":0:" ctf " " pf)))
