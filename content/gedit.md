@@ -623,6 +623,19 @@ zathura -s -x "gedit "%{input}" +%{line}" "`basename "$GEDIT_CURRENT_DOCUMENT_NA
 
 ***
 
+#### fwdzathura {#pf09d81b}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+zathura --synctex-forward $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+```
+
+***
+
 #### qpdfview {#ud4fadf3}
 
 ***
