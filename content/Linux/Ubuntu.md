@@ -233,15 +233,15 @@ $ sudo apt-get install eclipse
 $ sudo apt-get install emacs24
 ```
 
-### [YaTeX](/YaTeX/) {#pc05aa7c}
-
-- [https://launchpad.net/ubuntu/+source/yatex/](https://launchpad.net/ubuntu/+source/yatex/)
-    - [https://launchpad.net/ubuntu/+source/yatex/+changelog](https://launchpad.net/ubuntu/+source/yatex/+changelog)
-
 ### [AUCTeX](/AUCTeX/) {#u31c1597}
 
 - [https://launchpad.net/ubuntu/+source/auctex/](https://launchpad.net/ubuntu/+source/auctex/)
     - [https://launchpad.net/ubuntu/+source/auctex/+changelog](https://launchpad.net/ubuntu/+source/auctex/+changelog)
+
+### [YaTeX](/YaTeX/) {#pc05aa7c}
+
+- [https://launchpad.net/ubuntu/+source/yatex/](https://launchpad.net/ubuntu/+source/yatex/)
+    - [https://launchpad.net/ubuntu/+source/yatex/+changelog](https://launchpad.net/ubuntu/+source/yatex/+changelog)
 
 ## [Vim](/Vim/) <a id="vim"></a> {#a5b8fa0b}
 
