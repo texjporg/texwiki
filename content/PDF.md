@@ -22,6 +22,7 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 - [iText](http://itextpdf.com/) iText (Java) と iText# (iTextSharp) (.NET)
     - [http://sourceforge.net/projects/itext/](http://sourceforge.net/projects/itext/)
     - [http://sourceforge.net/projects/itextsharp/](http://sourceforge.net/projects/itextsharp/)
+- [jPod](http://sourceforge.net/projects/jpodlib/) Java
 - [PDFKit](http://pdfkit.org/) JavaScript
 - [TCPDF](http://www.tcpdf.org/) PHP
     - [http://sourceforge.net/projects/tcpdf/](http://sourceforge.net/projects/tcpdf/)
