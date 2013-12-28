@@ -13,24 +13,28 @@ pukiwiki: "TIPA"
 
 [TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm) は[東京大学](http://www.u-tokyo.ac.jp/)の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた
 IPA（<strong>I</strong>nternational <strong>P</strong>honetic
-<strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)，謂ゆる発音記号）のフォントです。TIPA
+<strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)，謂ゆる発音記号）のフォントです。<br>
 
+TIPA
 の T は <strong>T</strong>eX または
-<strong>T</strong>okyo（東京大学？）を意味するとのことです。同じ福井さんが製作に携わった
+<strong>T</strong>okyo（東京大学？）を意味するとのことです。<br>
 
-TSIPA をベースに，大幅に機能およびフォントデザインを改良したものです。
+同じ福井さんが製作に携わった
+TSIPA をベースに，大幅に機能およびフォントデザインを改良したものです。<br>
 
 TIPA のフォントには IPA
-の記号のほか，アメリカの音声学，インド・ヨーロッパ言語，東アジアの言語学などで使用される音声記号が含まれています。これらは
+の記号のほか，アメリカの音声学，インド・ヨーロッパ言語，東アジアの言語学などで使用される音声記号が含まれています。<br>
+これらは
 Computer Modern
 をベースに設計されており，Roman，Slanted，Bold Extended，Sans Serif，Typewriter
-体など豊富な種類が使用できます（Italic 体はありません）。また，Times
-及び Helvetica にデザインを近付けたフォント xipa も含まれています。
+体など豊富な種類が使用できます（Italic 体はありません）。<br>
+また，Times
+及び Helvetica にデザインを近付けたフォント xipa も含まれています。<br>
 
 福井さんのウェブサイトの
 [tipa ディレクトリ](http://www.l.u-tokyo.ac.jp/~fkr/tipa/)から最新版がダウンロードできます（執筆時点での最新版は
 tipa-1.3 です）。[CTAN:help/Catalogue/entries/tipa.html](https://mirror.ctan.org/help/Catalogue/entries/tipa.html)
-でもミラーされています。
+でもミラーされています。<br>
 
 ### インストール {#j6ff5f64}
 
@@ -80,8 +84,8 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 
 ```
 %%% -*- mode: yatex; Coding: utf-8 -*-
-\documentclass{jsarticle}
-%\documentclass{jarticle}
+\documentclass[uplatex]{jsarticle}
+%\documentclass{ujarticle}
 \usepackage{tipa}
 \begin{document}
 ...
@@ -92,8 +96,8 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 
 ```
 %%% -*- mode: yatex; Coding: utf-8 -*-
-\documentclass{jsarticle}
-%\documentclass{jarticle}
+\documentclass[uplatex]{jsarticle}
+%\documentclass{ujarticle}
 \usepackage{tipa,tipx}
 \begin{document}
 ...
