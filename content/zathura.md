@@ -38,14 +38,13 @@ Linux, BSD
 
 [News](http://pwmt.org/news/) を参照．<br>
 
-zathura [feature/synctex branch](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex) で SyncTeX (forward search) に対応しました．<br>
+[開発版](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) で SyncTeX (forward search) に対応しました．<br>
 Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
 
 ### ChangeLog {#fdab5877}
 
 #### zathura {#wf24e546}
 
-- [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/feature/synctex) (feature/synctex)
 - [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
 - [https://git.pwmt.org/?p=zathura.git](https://git.pwmt.org/?p=zathura.git) (master)
 
@@ -98,11 +97,11 @@ TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇�
 
 ```
 $ zathura hoge.pdf &
-$ zathura --synctex-forward 30:0:hoge.tex `pwd`/hoge.pdf
+$ zathura --synctex-forward 30:0:hoge.tex hoge.pdf
 ```
 
 のように実行します．<br>
-forward search をする場合は hoge.pdf はフルパスで指定します．<br>
+zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．<br>
 
 ### inverse search {#c00c992e}
 
