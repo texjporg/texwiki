@@ -84,7 +84,7 @@ Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正�
 
 GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い (縦書き) に優れています。<br>
 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました．<br>
-Ghostscript 7.07 と比べて，CJK （中国語・日本語・韓國語）の縦書きへの対応が不充分です (CID フォントやWindows API を使った日本語の表示はできます)．<br>
+Ghostscript 7.07 と比べて，CJK （中国語・日本語・韓国語）の縦書きへの対応が不充分です (CID フォントやWindows API を使った日本語の表示はできます)．<br>
 Ghostscript 7.07 には脆弱性が存在するので縦書きが必要ない場合は最新版の Ghostscript を使用してください。<br>
 
 ### フロントエンド {#ka477802}
@@ -112,6 +112,7 @@ Ghostscript/OS X を参照．
 
 ## 関連リンク {#we8f22aa}
 
+- [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/gs.html)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
