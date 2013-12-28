@@ -7,7 +7,7 @@ pukiwiki: "PostScript"
 
 # PostScript
 
-## PostScript {#g9b8f6ae}
+## PostScript (obsolete) → [PDF](/PDF/) を使用する {#g9b8f6ae}
 
 PostScript は業界標準のページ記述言語です。<br>
 [PDF](/PDF/) は PostScript がベースになっています。<br>
