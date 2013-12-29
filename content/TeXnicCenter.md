@@ -65,7 +65,7 @@ Windows 8.1, 8, 7, Vista, XP
 - [Downloads](http://www.texniccenter.org/resources/downloads)
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
 
-## Encoding {#u85685c5}
+## Encoding → \[File\]-\[Save As...\] の Encoding のリストから UTF-8 を指定して保存する {#u85685c5}
 
 Encoding は
 
