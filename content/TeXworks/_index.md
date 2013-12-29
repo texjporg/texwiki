@@ -493,7 +493,6 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 - [Tex使ってみました - 極楽せきゅあ日記](http://d.hatena.ne.jp/sonodam/20110330/p1)
 - [Perl と texworks の連携について - Yahoo!知恵袋](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1343614933)
 - [新しい TeX ドキュメント制作環境 TeXworks の紹介](http://d.hatena.ne.jp/munepi/20100819/texworks)
-- [美文書５版のtexlive用のツールの設定とか :: メモlog](http://www.cm.kj.yamagata-u.ac.jp/memolog/?logid=37)
 - [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)
 - [TeXworks: Lowering the barrier to entry - YouTube](http://www.youtube.com/watch?v=f2i8ZgP7vUE)
 - [TeXWorksでの色の変更](http://ysykimura.wordpress.com/2011/11/12/texworks%E3%81%A7%E3%81%AE%E8%89%B2%E3%81%AE%E5%A4%89%E6%9B%B4/)
