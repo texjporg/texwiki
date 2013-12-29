@@ -236,8 +236,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf, llpp などで使われています．
 - [open-pdf-presenter](https://code.google.com/p/open-pdf-presenter/)
 - [Xpdf](/Xpdf/)
-- [Poppler](/Poppler/) Xpdf をベースにした PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer, Apvlv などで使われています．
-- [Apvlv](http://naihe2010.github.com/apvlv/)
+- [Poppler](/Poppler/) Xpdf をベースにした PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer などで使われています．
 - [llpp](http://repo.or.cz/w/llpp.git)
 - [JFBView](http://seasonofcode.com/pages/jfbview.html)
 - [PDFCube](http://code.100allora.it/pdfcube/)
