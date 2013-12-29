@@ -20,8 +20,9 @@ Beamer が基礎としている描画エンジンもPGFです。<br>
 また、R や gnuplot と連携させて描画させることもできます。<br>
 
 PGF/TikZ が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）<br>
-PGF/TikZ 自身が持っているライブラリで機能が拡充されるほか、PGF/TikZ を利用し、拡張するパッケージも数多く作られています。（PGFPlots, TikZ-dependency, tkz-euclideなど。）<br>
-同じく高度な描画機能を持っている[PSTricks](/PSTricks/)との大きな違いは、（psを経由せずに）PDF を作成できる点です。<br>
+PGF/TikZ 自身が持っているライブラリで機能が拡充されるほか、PGF/TikZ を利用し、拡張するパッケージも数多く作られています。<br>
+PGF/TikZ を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。<br>
+同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは、PostScript (PS) を経由せずに PDF を作成できる点です。<br>
 
 PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
 
@@ -36,7 +37,9 @@ PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
 
 ### 初期設定 {#e634a5d8}
 
-dviwareの指定をしてから、tikzパッケージを読み込みます。graphicxパッケージのオプションがPGFに自動的に適用されます（pgf自身、graphicxを読み込みます）。下は、dvipdfmxを使用する場合の設定です。
+dviware の指定をしてから、tikz パッケージを読み込みます。<br>
+graphicx パッケージのオプションが PGF に自動的に適用されます（pgf自身、graphicxを読み込みます）。<br>
+dvipdfmx を使用する場合は次のように設定します。<br>
 
 ```
 \usepackage[dvipdfmx]{graphicx}%
@@ -44,11 +47,13 @@ dviwareの指定をしてから、tikzパッケージを読み込みます。gra
 \usepackage{tikz}%（これで、pgfとpgfforが読み込まれます。）
 ```
 
-PGFはデフォルトではdvipsを使用する設定になっていますが、dvipdfmx、pdfTeX、XeTeXなどもサポートされています。なお、PGFの機能を100%サポートしているのはpdfTeXです。（[Troubleshootingを参照](#i0cba852)）
+PGF はデフォルトでは dvips を使用する設定になっています。<br>
+dvips 以外に dvipdfmx、pdfTeX、XeTeX などもサポートされています。<br>
+なお、PGF の機能を 100% サポートしているのは pdfTeX です。（[Troubleshootingを参照](#i0cba852)）<br>
 
 <br>
 
-graphicxを使用しない場合は、以下のいずれかをtikz（またはpgf）パッケージを読み込む前に記述します。
+graphicx を使用しない場合は、以下のいずれかを tikz（またはpgf）パッケージを読み込む前に記述します。<br>
 
 ```
 \def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmxの場合
@@ -57,23 +62,35 @@ graphicxを使用しない場合は、以下のいずれかをtikz（またはpg
 \def\pgfsysdriver{pgfsys-xetex.def}%XeTeXの場合
 ```
 
-その他の出力形式については、付属のマニュアルを参照してください。
+その他の出力形式については、付属のマニュアルを参照してください。<br>
 
 ### マニュアルについて {#x910ebfe}
 
-PGF/TikZには900ページ以上の長大なマニュアル (ver 2.10-CVS) または 700ページ以上の長大なマニュアル (ver 2.10) が付属し、その前半には70ページにも及ぶチュートリアルがあるので、学習を始めるのは比較的容易です。
+PGF/TikZには
 
-ところが、示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり、マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
+- 900ページ以上の長大なマニュアル (ver 2.10-CVS の場合)
+- 700ページ以上の長大なマニュアル (ver 2.10 の場合)
 
-たとえば、チュートリアルのp.34 (ver 2.10-CVS) または p.32 (ver 2.10) にある「パスの交錯」のセクションでは、説明の本文には「intersections ライブラリ」について言及されているものの、例にはその設定が記述されていないため、そのままではエラーが出ます。プリアンブルに<br>
+が付属し、その前半には 70 ページにも及ぶチュートリアルがあるので、学習を始めるのは比較的容易です。<br>
+
+ところが、示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり、マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。<br>
+
+たとえば、チュートリアルの
+
+- p.34 (ver 2.10-CVS の場合)
+- p.32 (ver 2.10 の場合)
+
+にある「パスの交錯」のセクションでは、説明の本文には「intersections ライブラリ」について言及されているものの、例にはその設定が記述されていないため、そのままではエラーが出ます。<br>
+プリアンブルに
 
 ```
 \usetikzlibrary{intersections}
 ```
 
-と設定しておく必要があります。
+と設定しておく必要があります。<br>
 
-また、初期設定ではexamplefillという色は定義されていません。マニュアルの例をそのまま写して試したい場合は、以下をプリアンブルにあらかじめ定義しておいた方がよいでしょう。<br>
+また、初期設定では examplefill という色は定義されていません。<br>
+マニュアルの例をそのまま写して試したい場合は、以下をプリアンブルにあらかじめ定義しておいた方がよいでしょう。<br>
 
 ```
 \colorlet{examplefill}{yellow!80!black}（プリアンブルでも本文の中でも環境中でもかまいません）
@@ -694,8 +711,8 @@ dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後�
 1. プリアンブルに追加
 1. 画像部分に追加
 - オプションをつけてコンパイルする
-1. platex → dvipdfmx → pdfcrop
-1. platex → dvips
+1. uplatex → dvipdfmx → pdfcrop
+1. uplatex → dvips
 1. pdflatex
 
 #### ソースコードへの追加記述 {#yddb8d2b}
@@ -723,7 +740,7 @@ dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後�
 ソースコード（tex ファイル）をコンパイルするときに、以下のオプションをつけて実行します。それぞれの図画に対し、<strong>--jobname</strong> オプションをつけてコンパイルします。（なお、以下の例では拡張子（.tex など）をつけてますが、省略しても各コマンドは「よきにはからって」くれます。）<br>
 
 ```
-$platex --jobname=filename-fig1 filename.tex~
+$ uplatex --jobname=filename-fig1 filename.tex~
 ```
 
 これで、図画だけを含んだ filename-fig1.dvi が作成されます。
@@ -731,15 +748,15 @@ $platex --jobname=filename-fig1 filename.tex~
 1. dvipdfmx を使用する場合
 
     ```
-    $dvipdfmx filename-fig1.dvi
-    $pdfcrop filename-fig1.pdf
+    $ dvipdfmx filename-fig1.dvi
+    $ pdfcrop filename-fig1.pdf
     ```
 
     これで、図画の大きさちょうどの pdf ファイルが作成されます。
     余白を入れるには pdfcrop に <strong>--margins</strong> オプションを用います。以下の例では、周囲に 3bp の余白を入れています。
 
     ```
-    $pdfcrop --margins 3 filename-fig1.pdf
+    $ pdfcrop --margins 3 filename-fig1.pdf
     ```
 
     （4方向の余白を指定するには &lt;左> &lt;上> &lt;右> &lt;下> と指定します。数字を2つ指定した場合は&lt;右>&lt;下>の余白になります。）
@@ -747,15 +764,15 @@ $platex --jobname=filename-fig1 filename.tex~
 1. dvips を使用する場合
 
     ```
-    $dvips filename-fig1.dvi
+    $ dvips filename-fig1.dvi
     ```
 
     これで、図画の大きさちょうどの ps ファイルが作成されます。
 
-1. platex ではなく pdfTeX（pdfLaTeX）を使用する場合
+1. uplatex ではなく pdfTeX（pdfLaTeX）を使用する場合
 
     ```
-    $pdflatex --jobname=filename-fig1 filename.tex
+    $ pdflatex --jobname=filename-fig1 filename.tex
     ```
 
     これだけで、図画の大きさちょうどの pdf ファイル（filename-fig1.pdf）が作成されますが、pdfTeX は日本語には対応していませんので、図中に日本語が含まれている場合はそこは空白になります。
@@ -764,7 +781,7 @@ $platex --jobname=filename-fig1 filename.tex~
 
 - \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
-- (e-)(u)ptex + dvipdfmx を使用することによる制約。pdfTeXを使用すれば可能です。（マニュアル  p.111 (ver 2.10-CVS) または p.109 (ver 2.10)）
+- dvipdfmx を使用することによる制約。pdfTeX を使用すれば可能です。（マニュアル  p.111 (ver 2.10-CVS の場合) または p.109 (ver 2.10 の場合)）
     - パスで画像をマスクできない／パターンを使用できない／シェーディングが使用できない
         - 実際には <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）
         - 実際には <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）
