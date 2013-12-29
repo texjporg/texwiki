@@ -19,7 +19,7 @@ pukiwiki: "OTF"
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
 和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。<br>
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
-など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br> <!-- Mac OS X については↓ --> <!-- http://web.archive.org/web/20090422125128/http://www.apple.com/jp/macosx/technology/unix.html --> <!-- 「LeopardはOpen Brand UNIX 03登録製品」 -->
+など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br>
 
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
@@ -148,11 +148,11 @@ Adobe Reader 9.1 Font Packs
 ```
 \ifdefined\kanjiskip
   \documentclass[uplatex]{jsarticle}
-  \usepackage[uplatex]{otf}
+  \usepackage[uplatex,jis2004]{otf}
 \else
   \documentclass{ltjsarticle}
   \usepackage{luatexja-otf}
-  \usepackage[noembed]{luatexja-preset}
+  \usepackage[noembed,jis2004]{luatexja-preset}
 \fi
 \begin{document}
 
@@ -173,7 +173,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
+>     ptex2pdf -l -u -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -188,7 +188,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f noembed.map" hoge.tex
+>     ptex2pdf -l -u -od "-f noembed04.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -230,7 +230,7 @@ upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使�
 ただし upLaTeX の場合に
 
 ```
- \usepackage[uplatex]{otf}
+ \usepackage[uplatex,jis2004]{otf}
 ```
 
 を記述しなかった場合は dvipdfmx で
@@ -247,10 +247,10 @@ Tried to set a nonexistent character in a virtual font
 ```
 \ifdefined\kanjiskip
   \documentclass[uplatex]{jsarticle}
-  \usepackage[uplatex]{otf}
+  \usepackage[uplatex,jis2004]{otf}
 \else
   \documentclass{ltjsarticle}
-  \usepackage[noembed]{luatexja-preset}
+  \usepackage[noembed,jis2004]{luatexja-preset}
 \fi
 \begin{document}
 
@@ -275,12 +275,12 @@ OTF パッケージは
 ```
 \ifdefined\kanjiskip
   \documentclass[uplatex]{jsarticle}
-  \usepackage[uplatex]{otf}
+  \usepackage[uplatex,jis2004]{otf}
   \kcatcode`゜=18
 \else
   \documentclass{ltjsarticle}
   \usepackage{luatexja-otf}
-  \usepackage[noembed]{luatexja-preset}
+  \usepackage[noembed,jis2004]{luatexja-preset}
 \fi
 \begin{document}
 Adobe-Japan1-5で追加された文字を使った例
@@ -342,13 +342,13 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
+>     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
 >
 >     ```
->     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
 >     lualatex hoge.tex
 >     ```
 >
@@ -358,20 +358,20 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
+>     ptex2pdf -l -u -od "-f kozukapr6n04.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
 >
 >     ```
->     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
 >     lualatex hoge.tex
 >     ```
 >
 > - LuaJITLaTeX の場合
 >
 >     ```
->     \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+>     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
 >     luajitlatex hoge.tex
 >     ```
 >
@@ -403,13 +403,13 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 - upLaTeX (ptex2pdf) の場合
 
     ```
-    ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
+    ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
     ```
 
 - LuaLaTeX の場合
 
     ```
-    \usepackage[noembed]{luatexja-preset} を \usepackage[kozuka-pr6n]{luatexja-preset} に変更
+    \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
     lualatex hoge.tex
     ```
 
@@ -448,23 +448,6 @@ Linux/Solaris 版の Adobe Reader 9 に
 が付属していません。<br>
 Adobe Reader (Windows 版/日本語版) をインストールしてシンボリックリンクを作成すれば KozGoPr6N-Medium.otf も使用できます．<br>
 
-<!-- 2002年9月に出た Adobe-Japan1-5 は，JIS X 0213:2000 （JIS 第3，第4水準）や -->
-<!-- 国語審議会報告に基づく印刷標準字体の文字を含む20,317グリフの文字セットです。 -->
-<!-- Mac OS X v10.2 のヒラギノ Pro がこれに準拠しています -->
-<!-- （実は18文字だけ足りないそうです → -->
-<!-- 「[[ZDNet Mac: デザイン & パブリッシング分野で Mac OS X がすぐれている理由［Internet Archive のウェブアーカイブ］:http://web.archive.org/web/20031020083437/http://www.zdnet.co.jp/macwire/0211/07/nj00_dandp.html]]」，Mac -->
-<!-- OS X v10.2.4 以降のヒラギノ [ver 7.11] には -->
-<!-- 全部のグリフがあるそうです［Thanks: uchiyama さん］）。 -->
-<!-- [[ダイナコムウェア:http://www.dynacw.co.jp/]]の OpenType -->
-<!-- 平成書体パックは Adobe-Japan1-5 準拠だそうです ([[qa:41849]])。 -->
-<!--  -->
-<!-- Adobe-Japan1-4 は15,444グリフの文字セットです。 -->
-<!-- Adobe Acrobat (Reader) 5，Adobe Reader/Acrobat 6 の -->
-<!-- KozMinPro-Regular-Acro.otf，KozGoPro-Medium-Acro.otf はこれのようです。 -->
-<!--  -->
-<!-- Adobe-Japan1-3 は9,354グリフの文字セットで，Std の附く名前の OpenType フォント， -->
-<!-- 例えばダイナコムウェアのOpenType 100 や，Adobe の古いバージョンの製品に附いている小塚フォントがこれにあたります。 -->
-
 ### ヒラギノと OS X {#l1d1369f}
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。<br>
@@ -472,7 +455,7 @@ Adobe Reader (Windows 版/日本語版) をインストールしてシンボリ�
 TeX Live をインストールして
 
 ```
-kanji-config-updmap hiragino
+kanji-config-updmap -jis2004 hiragino-pron
 ```
 
 を実行しました。<br>
@@ -480,7 +463,7 @@ kanji-config-updmap hiragino
 
 !["ヒラギノ出力例"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
 
-\usepackage\[uplatex,expert\]{otf} とすると，
+\usepackage\[uplatex,jis2004,expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
 『[［改訂版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)』も
 ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。<br>
@@ -516,26 +499,9 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 
 と書かなければなりません。
 
-### UTF-8 入力での利用 {#u1eb9e1c}
+### upLaTeX での利用 {#u1eb9e1c}
 
 upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。<br>
-
-[安田功さん](http://yasuda.homeip.net/)の
-[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html)
-は，UTF-8 の入力ファイルを pLaTeX で処理可能な文字やコントロールシーケンスに
-変換するプリプロセッサです。<br>
-これを使えば，漢字・ハングル（&#xd55c;&#xae00;）等
-CJK の文字は OTF パッケージのコントロールシーケンスに変換できるので，
-文字コードを直接数値入力する手間が
-省けます。<br>
-[TeXWiki:pTeX と多言語処理 #多言語の Unicode 直接入力と pTeX](</pTeXと多言語処理/#cyraccpw>)
-にも解説があります。<br>
-
-一方，[角藤さん](/W32TeX/)の配布に
-含まれる[utf8toutf](http://w32tex.org/generic/utf8toutf.zip)
-の方は Microsoft Windows 用の exe 実行ファイルも附いていますし，より簡単に
-使えそうです。<br>
-ソースはC言語で，UNIX 互換 OS でも make 一発で作れます。<br>
 
 ### CID 番号参照用のサンプルへのリンク {#ze53c84a}
 
@@ -597,8 +563,7 @@ hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6
 dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
 
 ```
-dvipdfmx -f ptex-hiragino.map -f otf-hiragino.map hoge.dvi
-dvipdfmx -f uptex-hiragino.map -f otf-up-hiragino.map hoge.dvi
+dvipdfmx -f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
@@ -814,13 +779,13 @@ ps2otfps old.ps new.ps
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-noEmbed.map -f otf-up-noEmbed.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f noembed.map" hoge.tex
+ptex2pdf -l -u -od "-f noembed04.map" hoge.tex
 ```
 
 #### IPAexフォントを使う場合 {#xcbe9625}
@@ -941,13 +906,13 @@ ptex2pdf -l -u -od "-f yu.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-hiragino.map -f otf-up-hiragino.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f hiragino.map" hoge.tex
+ptex2pdf -l -u -od "-f hiragino04.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
@@ -966,13 +931,13 @@ ptex2pdf -l -u -od "-f hiragino.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-kozuka-pr6n.map -f otf-up-kozuka-pr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f kozukapr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f kozukapr6n04.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
@@ -988,13 +953,13 @@ Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-morisawa-pr6n.map -f otf-up-morisawa-pr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f uptex-morisawa-pr6n-04.map -f otf-up-morisawa-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f morisawapr6n.map" hoge.tex
+ptex2pdf -l -u -od "-f morisawapr6n04.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
