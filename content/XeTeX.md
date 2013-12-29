@@ -19,7 +19,6 @@ pukiwiki: "XeTeX"
 
 XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
 「ズィーTeX」と読みます．<br>
-
 TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314))<br>
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
@@ -42,16 +41,18 @@ TeX Live 2014 以降はファイル名に漢字が使用できます．( → [fi
 
 ### 概要 {#n5d8d950}
 
+#### fontconfig {#r7df202a}
+
 XeTeX はシステムが認識する OpenType フォントをそのまま使える。<br>
-XeTeX で使えるフォントは OS が認識しているものと言うより，FontConfig が認識して
+XeTeX で使えるフォントは OS が認識しているものと言うより，fontconfig が認識して
 いるものと言ったほうが正確である。<br>
-XeTeX は
+XeTeX は次のようなフォントの指定法が可能である。<br>
 
 ```
 [FontFileName:FaceIndex]:features
 ```
 
-なるフォントの指定法も可能で，FontConfig とは無関係に， Kpathsearch
+fontconfig とは無関係に， Kpathsearch
 が見つけることができるところにある “Uninstalled fonts” を native fonts
 として使用することもできるようになっている。<br>
 例えば
@@ -68,8 +69,10 @@ XeTeX は
 
 と同じように振舞う。<br>
 FaceIndex は不要の場合は省略できる。<br>
-前者の方が FontConfig に関係しないので，
+前者の方が fontconfig に関係しないので，
 早く処理できるかもしれない。<br>
+
+#### xdv ファイル {#k933d7e1}
 
 デフォルトではタイプセット時に，パイプによって出力がドライバに送られ，
 最終出力は PDF となる。<br>
