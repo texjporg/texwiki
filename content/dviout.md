@@ -112,7 +112,14 @@ Error in RegCreateKey が表示された場合は \[OK\] をクリックしま�
 \[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
 dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
 
-## 非対応パッケージ {#pd5bea65}
+## dviout 非対応処理系 {#kc6adab4}
+
+### upTeX, e-upTeX {#lc765290}
+
+dviout は upTeX, e-upTeX に対応していません．<br>
+PDF に変換して PDF ビューアで表示・印刷するといいでしょう。<br>
+
+## dviout 非対応パッケージ {#pd5bea65}
 
 PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
 dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください．<br>
@@ -700,190 +707,6 @@ JPEG ファイルが表示されない場合は dviout を使用せず PDF フ�
 　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
 
 ***
-
-## upTeX で出力された DVI ファイルを dviout で表示する場合の注意点 {#wadc9abf}
-
-- upTeX のフォントと dviout ([qa:51135](https://okumuralab.org/~okumura/texfaq/qa/51135.html), [qa:51137](https://okumuralab.org/~okumura/texfaq/qa/51137.html))
-- upTeX のフォントと dviout (再検討) ([qa:51610](https://okumuralab.org/~okumura/texfaq/qa/51610.html))
-- Re: dvipng と日本語 ([qa:51705](https://okumuralab.org/~okumura/texfaq/qa/51705.html))
-- upLaTeXを使おう \[電脳世界の奥底にて\] の中の [dvioutについて](http://zrbabbler.sp.land.to/uplatex.html#ssec-install-dviout)
-- [uptex, uplatex](http://d.hatena.ne.jp/gcg00467/20101223#1293103329)
-- [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】#upTeX/upLaTeX を利用する場合の設定](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml#UPTEX)
-
-upTeX で DVI ファイルを作成し，dviout で表示しようとすると font file over のエラーが発生します。<br>
-\[OK\] をクリックすると dviout が強制終了します。<br>
-
-***
-
-<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>No Memory</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-<br>
-
-　　<span style="color:White;background-color:#BB0000;">(<ins><strong>×</strong></ins>)</span>　font file over:<br>
-　　　　　 C:\w32tex\share\texmf-dist\fonts\vf\uptex\jis\upjisr-h.vf<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span><br>
-
-***
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの System タブの font buffer size を 400 K byte から 4000 K byte など，エラーが発生しない値に変更し，\[Save\]-\[適用(A)\]-\[OK\] をクリックします．<br>
-
-***
-
-<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　 \]\[　Font2　\]\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　 \]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]</ins></span><strong>\[　System　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　REGISTRY　\]</ins></span><br>
-　　　　　raster buffer size　　　　　　　　　　br:　<ins>400　　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span><br>
-　　　　　font buffer size　　　　　　　　　　　bf:　<ins>4000　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
-　　　　　bitmap buffer size/max　　　　　　bb:　<ins>4000　　　　\[<strong>⇕</strong>\]</ins> K byte　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Default　　　 \]</span><br>
-　　　　　number of dviouts/max　　　　multi:　<ins>4　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-　　　　　log file (path name or +:dviout.log or -:no log)：<br>
-　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
-　　　　　☑ Auto Renew　　　　　　　　　　　☐ 2nd tool buttons　　　　　　　　☐ Reverse page_up/down<br>
-　　　　　☐ draw baseline　　　　　　　　　　☐ draw box　　　　　　　　　　　　　☐ show child windows<br>
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[(parameter)file:\]</span> <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
-　　　　　texhelp: <ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
-
-***
-
-font buffer size の値が小さいと起動しても dviout の下の方に警告が表示されます．<br>
-このような警告が表示される場合は font buffer size の値を大きくしてください．<br>
-
-***
-
-```
-Font buffer size -bf: 3200 K in [System] (<- Setup Parameters <- Option)
- is too small.
-Not an error but it is better to increase the size!
-```
-
-***
-
-DVI ファイルを表示するとフォントが正しく表示されず，dviout の下の方に Cannot find font file for uprml-h! の警告が表示されます．
-
-***
-
-```
-Cannot find font file for uprml-h!
-A default FONT will be used.
-```
-
-***
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの Font2 タブの \[ftt:\] をクリックします．
-
-```
-^x\map\ttfonts.map
-```
-
-が入力されるのを確認して，\[Save\]-\[適用(A)\]-\[OK\] をクリックします．
-
-***
-
-<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]</ins></span><strong>\[　Font2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　WinJFont　\]\[ 　JFont2　\]\[ 　Key　　\]</ins></span><br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[gen:\]</span>　　　　　<ins>\`C:\w32tex\bin64\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins> または <ins>\`C:\w32tex\bin\mktexpk.exe --dpi ^d --bdpi ^D --mag ^M ^s</ins><br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[ftt:\]</span>　　　　　 <ins>^x\map\ttfonts.map</ins><br>
-　　　 TEXSUBF:　 <ins>^r\sfd\\\\;^r\\..\ttf2pk\\\\;^r\\..\ttf2tfm\\\\</ins><br>
-　　　 TEXPKD:<br>
-　　　 TEXFLI:<br>
-
-<br>
-
-　　　　☑ Keep Path (Fkeep:)　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Flush　　　　\]</span><br>
-　　　　☐ CheckFontID (c:)　　　　　　　　　　　　　　　　　　　　A:　<ins>0　　　　　　　\[<strong>⇕</strong>\]</ins>　　ttf: <ins>1　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-　　　　☑ VirtualFont (virtual:)<br>
-　　　　☑ OnDemand (Fod:)　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
-
-***
-
-C:\w32tex\dviout\map\ttfonts.map に
-
-```
-%input  $user.map
-```
-
-という行が存在するのを確認します．<br>
-C:\w32tex\dviout\map\\$user.map を開くと<br>
-
-***
-
-```
-; In this file one may define the font mappings or the files to be input.
-; This file will not be overwritten by dviout (verion up).
-;
-```
-
-***
-
-と記述されているのでこの次の行に
-
-***
-
-```
-uprml-h "ＭＳ 明朝"     unicode
-upgbm-h "ＭＳ ゴシック"     unicode
-uprml-v "@ＭＳ 明朝"     unicode
-upgbm-v "@ＭＳ ゴシック"     unicode
-```
-
-***
-
-を追加して保存します．<br>
-保存するときは文字コードを Shift_JIS で保存してください．<br>
-C:\w32tex\share\texmf-dist\doc\uptex\base\for_dviout.map に dviout 用 map ファイルの記述例があるので参考にしてみてください．<br>
-
-DVI ファイルを表示するとフォントが正しく表示されるようになります．
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの JFont2 タブの Adjust basepoint (Jgt:) にチェックを入れます．
-
-```
-☑ Adjust basepoint (Jgt:)
-```
-
-***
-
-<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>DVIOUTのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#E0EB9F;background-color:#E0EB9F;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　Search　\]\[　HyperTeX　\]\[　Common　\]\[　Graphic　\]\[　Printer　\]\[　Paper　\]\[　System　\]\[　REGISTRY　　\]</ins></span><br>
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　CONTENTS　\]\[　Display　\]\[　Resolution　\]\[　Font　　\]\[　Font2　\]\[ 　WinJFont　\]</ins></span><strong>\[ 　JFont2　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　Key　　\]</ins></span><br>
-　　　 TEXKNJ:<br>
-　　　 JC:<br>
-　　　 <span style="color:Black;background-color:#EEEEEE;">\[vfn:\]</span><br>
-　　　 nttF:<br>
-　　　 G:　　　　　　　<ins>goth;jisg</ins><br>
-
-<br>
-
-　　　　☐ NTTJTeX font subnstitution (ntt:)　　　　　　　　　Adjust size S: <ins>1000　　　　　　　\[<strong>⇕</strong>\]</ins> /1000<br>
-　　　　☑ Use yoko font for tate (g:)　　　　　　　　　　　　　　　base line J:　<ins>0　　　　　　　　　\[<strong>⇕</strong>\]</ins> /1000<br>
-　　　　☑ Use inner jfm (Jfm:)　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　Save　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　　Restore　　　 \]</span><br>
-　　　　☑ Adjust baseline (Jbt:)　　　　　　　☑ Adjust basepoint (Jgt:)　　by jfm<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span> <span style="color:Gray;background-color:#EEEEEE;">\[　　　適用(A)　　　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[　　　ヘルプ　　　\]</span>
-
-***
-
-\[Save\]-\[適用(A)\]-\[OK\] をクリックします．
 
 ## 関連リンク {#a0623ac1}
 
