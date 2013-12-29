@@ -16,40 +16,6 @@ pukiwiki: "Bash"
 
 ## シェルスクリプト {#e6dabee0}
 
-### pdfpLaTeX <a id="pdfplatex"></a> {#a6a26ead}
-
-***
-
-- pdfplatex
-
-***
-
-```
-#!/bin/sh
-platex -synctex=1 "$1" && \
-dvipdfmx "`basename "$1" .tex`"
-```
-
-***
-
-### pdfpLaTeX2 <a id="pdfplatex2"></a> {#jf07d249}
-
-***
-
-- pdfplatex2
-
-***
-
-```
-#!/bin/sh
-platex -synctex=1 "$1" && \
-dvips -Ppdf -z -f "`basename "$1" .tex`.dvi" | \
-convbkmk -g > "`basename "$1" .tex`.ps" && \
-ps2pdf "`basename "$1" .tex`.ps"
-```
-
-***
-
 ### pdfupLaTeX <a id="pdfuplatex"></a> {#u19cdc5d}
 
 ***
