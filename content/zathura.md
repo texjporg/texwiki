@@ -98,6 +98,7 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=z
 ### キーボード操作 {#ta398819}
 
 zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
+[Emacs](/Emacs/) ライクなキーバインドにカスタマイズすることもできます． → [Emacs like key bindings for zathura](https://gist.github.com/3168313)<br>
 
 ### コマンドラインオプション {#u4f91695}
 
@@ -124,13 +125,11 @@ Application Options:
   --synctex-forward=position           Move to given synctex position
 ```
 
-```
-$ zathura --version
-zathura 0.2.6
-(plugin) djvu (0.2.3) (/usr/lib/zathura/djvu.so)
-(plugin) pdf-poppler (0.2.4) (/usr/lib/zathura/pdf.so)
-(plugin) ps (0.2.2) (/usr/lib/zathura/ps.so)
-```
+<!-- $ zathura - -version -->
+<!-- zathura 0.2.6 -->
+<!-- (plugin) djvu (0.2.3) (/usr/lib/zathura/djvu.so) -->
+<!-- (plugin) pdf-poppler (0.2.4) (/usr/lib/zathura/pdf.so) -->
+<!-- (plugin) ps (0.2.2) (/usr/lib/zathura/ps.so) -->
 
 ## SyncTeX {#g93d0312}
 
@@ -159,6 +158,6 @@ $ zathura -s -x 'texworks --position=%{line} "%{input}"' hoge.pdf
 ## 関連リンク {#l21c05df}
 
 - [Emacs like key bindings for zathura](https://gist.github.com/3168313)
-- [zathura - a document viewer (Page 1) / Community Contributions / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=115118)
-- [zathura - a PDF viewer (Page 1) / Community Contributions / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=80458)
-    - [SyncTeX kludge](https://bbs.archlinux.org/viewtopic.php?pid=807105#p807105)
+    <!-- -[[zathura - a document viewer (Page 1) / Community Contributions / Arch Linux Forums:https://bbs.archlinux.org/viewtopic.php?id=115118]] -->
+    <!-- -[[zathura - a PDF viewer (Page 1) / Community Contributions / Arch Linux Forums:https://bbs.archlinux.org/viewtopic.php?id=80458]] -->
+    <!-- - -[[SyncTeX kludge:https://bbs.archlinux.org/viewtopic.php?pid=807105#p807105]] -->
