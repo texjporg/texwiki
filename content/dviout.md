@@ -16,7 +16,7 @@ dviout で問題が発生する場合は <strong>dviout を使用せず PDF フ�
 
 ## dviout for Windows とは？ {#i1497a3b}
 
-dviout for Windows は日本語対応の DVI プレビューアです。<br>
+dviout for Windows は (e-)pTeX 対応の DVI プレビューアです。<br>
 詳しくは開発者（[大島利雄さん](http://akagi.ms.u-tokyo.ac.jp/~oshima/)）ご自身による次のページをご覧ください。
 
 - [dviout/dviprt 情報](http://akagi.ms.u-tokyo.ac.jp/dviout.html)
@@ -132,7 +132,7 @@ PDF に変換して PDF ビューアで表示・印刷するといいでしょ�
 ### [media9](/media9/) {#h55cad77}
 
 dviout は [media9](/media9/) に対応していません．<br>
-PDF に変換して PDF ビューアで表示するといいでしょう。<br>
+PDF に変換して [Adobe Reader](</Adobe Reader/>) で表示するといいでしょう。<br>
 
 ### [OTF](/OTF/) {#i25da0b5}
 
