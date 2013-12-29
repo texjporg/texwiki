@@ -36,7 +36,11 @@ Linux, BSD
 
 ### リリース情報 {#p5c718a4}
 
-[News](http://pwmt.org/news/) を参照．<br>
+- [https://git.pwmt.org/?p=zathura.git;a=tags](https://git.pwmt.org/?p=zathura.git;a=tags)
+- [https://git.pwmt.org/?p=girara.git;a=tags](https://git.pwmt.org/?p=girara.git;a=tags)
+- [News](http://pwmt.org/news/)
+
+を参照．<br>
 
 [開発版](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) で SyncTeX (forward search) に対応しました．<br>
 Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=zathura.git;a=commit;h=49116a08347566be0463682badce4c5572b84618)しました．<br>
@@ -53,15 +57,15 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=z
 - [https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
 - [https://git.pwmt.org/?p=girara.git;a=summary](https://git.pwmt.org/?p=girara.git;a=summary) (master)
 
-### 派生版 {#oea86148}
-
-zathura を SyncTeX に対応させた zathura-synctex が作成されています． → 本家にマージされました．<br>
-
-- [zathura-synctex](https://github.com/rschatz/zathura-synctex)
-- \[[zathura\] \[PATCH\] synctex forward synchronization](http://lists.pwmt.org/archive/zathura/2013-December/001324.html)
-- \[[zathura\] Synctex support](http://lists.pwmt.org/archive/zathura/2011-August/000047.html)
-- \[[zathura\]  Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00042.html)
-- [Re: \[zathura\] Synctex support](http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html)
+<!-- **派生版 [#oea86148] -->
+<!--  -->
+<!-- zathura を SyncTeX に対応させた zathura-synctex が作成されています． → 本家にマージされました．~ -->
+<!--  -->
+<!-- -[[zathura-synctex:https://github.com/rschatz/zathura-synctex]] -->
+<!-- -[[[zathura] [PATCH] synctex forward synchronization:http://lists.pwmt.org/archive/zathura/2013-December/001324.html]] -->
+<!-- -[[[zathura] Synctex support:http://lists.pwmt.org/archive/zathura/2011-August/000047.html]] -->
+<!-- -[[[zathura]  Synctex support:http://www.mail-archive.com/zathura@lists.pwmt.org/msg00042.html]] -->
+<!-- -[[Re: [zathura] Synctex support:http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html]] -->
 
 ## ダウンロード/インストール {#w2221884}
 
@@ -88,6 +92,45 @@ zathura を SyncTeX に対応させた zathura-synctex が作成されていま�
 ### Gentoo Linux {#z80dcad8}
 
 - [http://packages.gentoo.org/package/app-text/zathura](http://packages.gentoo.org/package/app-text/zathura)
+
+## 使い方 {#w279d8d0}
+
+### キーボード操作 {#ta398819}
+
+zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
+
+### コマンドラインオプション {#u4f91695}
+
+```
+$ zathura --help
+Usage:
+  zathura [OPTION...]  [file1] [file2] [...]
+
+Help Options:
+  -h, --help                           Show help options
+
+Application Options:
+  -e, --reparent=xid                   Reparents to window specified by xid
+  -c, --config-dir=path                Path to the config directory
+  -d, --data-dir=path                  Path to the data directory
+  -p, --plugins-dir=path               Path to the directories containing plugins
+  --fork                               Fork into the background
+  -w, --password=password              Document password
+  -P, --page=number                    Page number to go to
+  -l, --debug=level                    Log level (debug, info, warning, error)
+  -v, --version                        Print version information
+  -s, --synctex                        Enable synctex support
+  -x, --synctex-editor-command=cmd     Synctex editor (forwarded to the synctex command)
+  --synctex-forward=position           Move to given synctex position
+```
+
+```
+$ zathura --version
+zathura 0.2.6
+(plugin) djvu (0.2.3) (/usr/lib/zathura/djvu.so)
+(plugin) pdf-poppler (0.2.4) (/usr/lib/zathura/pdf.so)
+(plugin) ps (0.2.2) (/usr/lib/zathura/ps.so)
+```
 
 ## SyncTeX {#g93d0312}
 
