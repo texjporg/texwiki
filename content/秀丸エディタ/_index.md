@@ -41,10 +41,10 @@ pukiwiki: "秀丸エディタ"
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
-## 標準のエンコードの種類 {#m676962a}
+## 標準のエンコードの種類 → Unicode(UTF-8) を選択する {#m676962a}
 
-秀丸エディタの標準のエンコードの種類はデフォルトでは日本語(Shift-JIS)です．<br>
-エンコードの種類を UTF-8 にする場合は Unicode(UTF-8) を選択します．<br>
+秀丸エディタの標準のエンコードの種類は初期設定では日本語(Shift-JIS)です．<br>
+Unicode(UTF-8) を選択します．<br>
 
 ***
 
