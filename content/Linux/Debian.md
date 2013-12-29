@@ -22,9 +22,8 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian](http://www.debian.org)
 
-### 設定 {#n0611da8}
-
-- [Debianリポジトリの設定方法](http://ftp-admin.blogspot.jp/2013/02/debian.html)
+<!-- **設定 [#n0611da8] -->
+<!-- -[[Debianリポジトリの設定方法:http://ftp-admin.blogspot.jp/2013/02/debian.html]] -->
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#j310e7a0}
 
@@ -129,14 +128,14 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ### Debian GNU/Linux sid x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
 
-#### 64 bit OS 上での 32 bit バイナリの取り扱いに関して {#u2fe7284}
+#### 64-bit OS 上での 32-bit バイナリの取り扱いに関して {#u2fe7284}
 
 ```
 
 ```
 
-Linux 版、Windows 版の双方に関して、[Adobe Reader](</Adobe Reader/>) は、ia32（32 bit 版）バイナリのみが配布されています。<br>
-よって、64 bit の Linux 上で 32 bit バイナリを動作させなければなりません。<br>
+Linux 版、Windows 版の双方に関して、[Adobe Reader](</Adobe Reader/>) は、ia32（32-bit 版）バイナリのみが配布されています。<br>
+よって、64-bit の Linux 上で 32-bit バイナリを動作させなければなりません。<br>
 現在の Debian では [Multiarch](http://wiki.debian.org/Multiarch) によってこれを実現しています。<br>
 従来は ia32-libs 等をインストールすることでこれを実現していました。<br>
 
@@ -147,7 +146,7 @@ $ sudo dpkg --add-architecture <architecture>
 を実行することにより、システムのセカンドアーキテクチャが登録され、インストール・実行が可能となります。<br>
 このとき、セカンドアーキテクチャのパッケージ名末尾には ":&lt;architecture>" が付与されます。<br>
 
-wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32 bit アーキテクチャのサポートが必須となります。<br>
+wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32-bit アーキテクチャのサポートが必須となります。<br>
 これに関しては、wine のインストール時に apt が説明のメッセージを出しますので、詳細はそちらを御参照下さい。<br>
 
 #### Linux 版 Adobe Reader のインストール {#l44b42e5}
