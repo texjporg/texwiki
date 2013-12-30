@@ -50,12 +50,12 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=z
 #### zathura {#wf24e546}
 
 - [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
-- [https://git.pwmt.org/?p=zathura.git](https://git.pwmt.org/?p=zathura.git) (master)
+- [https://git.pwmt.org/?p=zathura.git](https://git.pwmt.org/?p=zathura.git) (summary)
 
 #### girara {#l7dfb095}
 
 - [https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
-- [https://git.pwmt.org/?p=girara.git;a=summary](https://git.pwmt.org/?p=girara.git;a=summary) (master)
+- [https://git.pwmt.org/?p=girara.git](https://git.pwmt.org/?p=girara.git) (summary)
 
 <!-- **派生版 [#oea86148] -->
 <!--  -->
