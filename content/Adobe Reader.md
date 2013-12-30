@@ -125,7 +125,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
-TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを開くことができます．<br>
+TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを Adobe Reader で開くことができます．<br>
 pdfopen を使用する場合 PDF ファイルは Adobe Reader に関連付けしておく必要があります．<br>
 
 ### PDF ファイルを開く {#id6d0918}
