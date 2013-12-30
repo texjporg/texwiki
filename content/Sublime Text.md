@@ -61,6 +61,7 @@ Windows, OS X, Linux
 
 ### OS X {#c2e22368}
 
+- [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
 - [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
 - [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
