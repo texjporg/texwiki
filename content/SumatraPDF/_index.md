@@ -79,7 +79,6 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
-- [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
@@ -93,6 +92,7 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [NppExec](/NppExec/)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
+- [TeXnicCenter](/TeXnicCenter/)
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
