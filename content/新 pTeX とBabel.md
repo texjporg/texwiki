@@ -7,7 +7,7 @@ pukiwiki: "新 pTeX とBabel"
 
 # 新 pTeX とBabel
 
-## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
+## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） (obsolete) → e-upTeX を使用する {#u0b9622c}
 
 以下では LaTeX/pLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
