@@ -103,10 +103,10 @@ pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成し�
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfuplatex.bat
 - C:\texlive\2013\bin\win64\pdfuplatex.bat
-- C:\w32tex\bin\pdfuplatex.bat
+- C:\texlive\2013\bin\win32\pdfuplatex.bat
 - C:\w32tex\bin64\pdfuplatex.bat
+- C:\w32tex\bin\pdfuplatex.bat
 
 ***
 
@@ -162,10 +162,10 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2013\bin\win32\pdfuplatex2.bat
 - C:\texlive\2013\bin\win64\pdfuplatex2.bat
-- C:\w32tex\bin\pdfuplatex2.bat
+- C:\texlive\2013\bin\win32\pdfuplatex2.bat
 - C:\w32tex\bin64\pdfuplatex2.bat
+- C:\w32tex\bin\pdfuplatex2.bat
 
 ***
 
@@ -1352,8 +1352,3 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 　　☐ 実行後、PDFを表示する<br>
 
 ***
-
-## 関連リンク {#n8b7f53c}
-
-- [TeXworksにplatexを設定](http://www.makisima.org/v3/2013/11/02/texworks-platex-add/)
-- [TeXworksの設定](http://www.netplan.co.jp/archives/2167)
