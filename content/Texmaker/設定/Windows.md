@@ -18,7 +18,7 @@ pukiwiki: "Texmaker/設定/Windows"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-PDF ビューアに 組み込みビューア，TeXworks，SumatraPDF を使用する場合は，LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
+PDF ビューアに 組み込みビューア，SumatraPDF，TeXworks を使用する場合は，LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
@@ -89,7 +89,7 @@ Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>texworks %.pdf</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -166,7 +166,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>texworks %.pdf</ins> または <ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>texworks %.pdf</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
@@ -206,13 +206,19 @@ fwdsumatrapdf.exe %.pdf #.tex @
 
 ### inverse search {#p850b553}
 
-inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下のように設定します．<br>
+
+■ 64-bit Windows の場合
 
 ```
-"C:\Texmaker\texmaker.exe" "%f" -line %l
+"C:\Program Files (x86)\Texmaker\texmaker.exe" "%f" -line %l
 ```
 
-です．
+■ 32-bit Windows の場合
+
+```
+"C:\Program Files\Texmaker\texmaker.exe" "%f" -line %l
+```
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
@@ -224,7 +230,7 @@ pdfuplatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatexA-nonstopmode.bat
+- pdfuplatexA-nonstopmode.bat
 
 ***
 
@@ -255,7 +261,7 @@ pdfuplatex2A-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdfuplatex2A-nonstopmode.bat
+- pdfuplatex2A-nonstopmode.bat
 
 ***
 
@@ -288,7 +294,7 @@ pdflatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\pdflatexA-nonstopmode.bat
+- pdflatexA-nonstopmode.bat
 
 ***
 
@@ -318,7 +324,7 @@ lualatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\lualatexA-nonstopmode.bat
+- lualatexA-nonstopmode.bat
 
 ***
 
@@ -348,7 +354,7 @@ luajitlatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\luajitlatexA-nonstopmode.bat
+- luajitlatexA-nonstopmode.bat
 
 ***
 
@@ -378,7 +384,7 @@ xelatexA-nonstopmode.bat を作成します．
 
 ***
 
-- C:\w32tex\bin\xelatexA-nonstopmode.bat
+- xelatexA-nonstopmode.bat
 
 ***
 
