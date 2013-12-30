@@ -7,6 +7,8 @@ pukiwiki: "pTeXと多言語処理"
 
 # pTeXと多言語処理
 
+## pTeXと多言語処理 (obsolete) → e-upTeX を使用する {#z7e3fae1}
+
 ## 初めに {#pfirasfd}
 
 pTeX 上で多言語混在文書を扱う方法を
