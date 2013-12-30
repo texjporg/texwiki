@@ -23,9 +23,6 @@ Emacs の核となる部分は [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_
 Emacs Lisp は [Lisp](https://ja.wikipedia.org/wiki/LISP) の方言の一つで，テキストの編集をサポートする機能があります．<br>
 Emacs Lisp を使えば自由に楽しくカスタマイズすることができます．<br>
 
-- [Emacs JP](http://emacs-jp.github.com/)
-- [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
-
 ### GNU Emacs {#e77c7c99}
 
 - [GNU Emacs - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/emacs/)
@@ -417,4 +414,5 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
 - [emacsでtexの不要なファイルを適当に削除する方法](http://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
-- [ubuntuでjbibtexを使うときに文字化けしない](http://unaju.net/2011/06/ubuntu%E3%81%A7jbibtex%E3%82%92%E4%BD%BF%E3%81%86%E3%81%A8%E3%81%8D%E3%81%AB%E6%96%87%E5%AD%97%E5%8C%96%E3%81%91%E3%81%97%E3%81%AA%E3%81%84/)
+- [Emacs JP](http://emacs-jp.github.com/)
+- [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
