@@ -53,6 +53,8 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 
 ### Windows {#r72743bf}
 
+#### [MXE (M cross environment)](http://mxe.cc/) {#tecb65f1}
+
 [pdf2htmlEX Windows Version](http://soft.rubypdf.com/software/pdf2htmlex-windows-version)
 
 #### MinGW {#d9c5cb24}
@@ -196,9 +198,9 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 <!-- $ popd -->
 <!--  -->
 <!-- [[LibUnicodeNames:https://bitbucket.org/sortsmill/libunicodenames]] をインストールします．~ -->
-<!-- $ curl - -insecure -R -L -O https://bitbucket.org/sortsmill/libunicodenames/downloads/libunicodenames-1.0.0_beta5.tar.xz -->
-<!-- $ tar xvf libunicodenames-1.0.0_beta5.tar.xz -->
-<!-- $ pushd libunicodenames-1.0.0_beta5 -->
+<!-- $ curl - -insecure -R -L -O https://bitbucket.org/sortsmill/libunicodenames/downloads/libunicodenames-1.0.1.tar.xz -->
+<!-- $ tar xvf libunicodenames-1.0.1.tar.xz -->
+<!-- $ pushd libunicodenames-1.0.1 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!--  -->
 <!-- configure でエラーが発生する場合は configure からエラーの原因を取り除きます． -->
@@ -234,9 +236,9 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 [pango](http://www.pango.org/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.gnome.org/sources/pango/1.35/pango-1.35.0.tar.xz
-$ tar xvf pango-1.35.0.tar.xz
-$ pushd pango-1.35.0
+$ curl --insecure -R -L -O https://download.gnome.org/sources/pango/1.38/pango-1.36.1.tar.xz
+$ tar xvf pango-1.36.1.tar.xz
+$ pushd pango-1.36.1
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -439,7 +441,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.24.3
+--   found poppler, version 0.25.1
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
@@ -621,6 +623,3 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 - [dlfcn-win32](https://code.google.com/p/dlfcn-win32/)
 - [MinGW/dllを呼び出す - Ura5han Wiki](http://ura5han.resourcez.org/wiki/MinGW/dll%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99)
-- [Build gcc 4.7.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1695)
-- [Compiling gcc-4.7.1 on Mac OSX Lion](http://solarianprogrammer.com/2012/07/21/compiling-gcc-4-7-1-mac-osx-lion/)
-- [sol-prog/gcc-4.7-binary · GitHub](https://github.com/sol-prog/gcc-4.7-binary)
