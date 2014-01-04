@@ -227,7 +227,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### inverse search {#vecb4fd9}
 
-TeX Live 2013, Evince 3.8.0, GNU Emacs 24.3.1 で動作確認しています．<br>
+TeX Live 2013, Evince 3.10.0, GNU Emacs 24.3.1 で動作確認しています．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 AUCTeX 11.87 以降では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
 
