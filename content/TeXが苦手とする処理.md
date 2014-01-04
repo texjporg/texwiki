@@ -10,10 +10,10 @@ pukiwiki: "TeXが苦手とする処理"
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
 [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では
-提供されず，ときとして TeX 自身は不得手とする処理について挙げます。
+提供されず，ときとして TeX 自身は不得手とする処理について挙げます。<br>
 既製品があるものについては既製品も紹介していますが，
 それらを用いた場合の出力結果に不満がある場合には，
-ユーザ自身で対処することになります。
+ユーザ自身で対処することになります。<br>
 
 ここに挙げる処理を行うのが単なる「書き手の趣味」である場合には，
 無理をせずに書き手自身の腕で無難にできる範囲の
@@ -22,13 +22,13 @@ pukiwiki: "TeXが苦手とする処理"
 ### 丸附き数字 {#s7930698}
 
 まず，丸附き数字（e.g.
-&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は（従来の
-Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り）
-「環境依存」文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
+&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は Unicode を使用せずに従来の
+Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り
+機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
 
 対処法は，大別すると次の3通りになります。
 
-1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode化されたTeX族を利用する。
+1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode 化された TeX 族を利用する。
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
@@ -52,15 +52,15 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
-まず，[qa:32045](https://okumuralab.org/~okumura/texfaq/qa/32045.html) でコメントされている現実があることを認識してください。
+まず，[qa:32045](https://okumuralab.org/~okumura/texfaq/qa/32045.html) でコメントされている現実があることを認識してください。<br>
 その上で既製品に
 あたると，[大石氏のサイト](http://www17.plala.or.jp/ohishi-masaru/)に
 下線類を作成するマクロについての比較を行った文書
 「[下線に関するマクロ比較](http://www17.plala.or.jp/ohishi-masaru/tex/library/underline.pdf)」
-（ただし，未完成）があり，その中でいくつかの既製品が紹介されています。
+（ただし，未完成）があり，その中でいくつかの既製品が紹介されています。<br>
 現在 <!-- （特定のコミュニティのメンバーでなくとも） --> <!-- おそらく@niftyを指していると思いますが，TeXに関するフォーラムは無くなったので --> <!-- 言及しなくとも良いでしょう。 - - tony 2006/11/06 --> <!-- // いまどきはむしろ mixi のようなところが問題になるのでは？ --> <!-- mixi には今のところ @nifty にあったようなライブラリのような機能はありませんし， --> <!-- サイトの成り立ちを考えると今後も設置されるとは思えないです。- - tony 2006/11/06 -->
 入手可能なもののうち，和文テキストを取り扱うことを念頭に置いたもので，
-かつ比較的完成度の高いものを挙げます。
+かつ比較的完成度の高いものを挙げます。<br>
 
 - [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)： 中島 浩氏。
     下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
@@ -100,8 +100,8 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 <!-- // 文字を利用するなり，tpic specials を用いるなりしてください（pict2e -->
 <!-- // パッケージで拡張した picture 環境でもよいかもしれません）。 -->
 <!--  -->
-<!-- %%% -*- mode: yatex; Coding: iso-2022-jp; Encoding: ISO-2022-JP -* -->
-<!-- \documentclass{jarticle} -->
+<!-- %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -* -->
+<!-- \documentclass{ujarticle} -->
 <!-- \usepackage{pstricks,pstcol} -->
 <!--  -->
 <!-- \usepackage{keyval} -->
@@ -252,7 +252,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 <table>
 <thead>
 <tr><th colspan="10" rowspan="2" style="text-align:center">Shift_JIS, ISO-2022-JP, EUC-JP に<br>おける環境依存文字</th><th colspan="4" style="text-align:center">代替処置の例</th></tr>
-<tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/UTF/ums package の命令</th></tr>
+<tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/ums package の命令</th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align:center">&#x2460;</td><td style="text-align:center">&#x2461;</td><td style="text-align:center">&#x2462;</td><td style="text-align:center">&#x2463;</td><td style="text-align:center">&#x2464;</td><td style="text-align:center">&#x2465;</td><td style="text-align:center">&#x2466;</td><td style="text-align:center">&#x2467;</td><td style="text-align:center">&#x2468;</td><td style="text-align:center">&#x2469;</td><td style="text-align:center">(1)</td><td style="text-align:center">(10)</td><td style="text-align:left">\ding{"AC}, \ding{"C0}, \ajMaru{1}</td><td rowspan="18" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
@@ -288,7 +288,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 <table>
 <thead>
 <tr><th rowspan="2" style="text-align:center">Shift_JIS,<br>ISO-2022-JP,<br>EUC-JP<br>における<br>環境依存文字</th><th colspan="3" style="text-align:center">代替処置の例</th></tr>
-<tr><th style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/UTF/ums package の命令</th></tr>
+<tr><th style="text-align:center">テキスト</th><th colspan="2" style="text-align:center">LaTeX や OTF/ums package の命令</th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align:center">&sum;</td><td style="text-align:center">&Sigma;</td><td style="text-align:left">$\sum$, \Pisymbol{psy}{"E5}</td><td rowspan="8" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
@@ -307,7 +307,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 <table>
 <thead>
 <tr><th colspan="2" rowspan="2" style="text-align:center"></th><th colspan="5" rowspan="2" style="text-align:center">Shift_JIS,<br>ISO-2022-JP,<br>EUC-JP<br>における<br>環境依存文字</th><th colspan="6" style="text-align:center">代替処置の例</th></tr>
-<tr><th colspan="5" style="text-align:center">テキスト</th><th style="text-align:center">OTF<br>UTF<br>ums</th></tr>
+<tr><th colspan="5" style="text-align:center">テキスト</th><th style="text-align:center">OTF<br>ums</th></tr>
 </thead>
 <tbody>
 <tr><th rowspan="4" style="text-align:center">人<br>名<br>用<br>漢<br>字</th><th rowspan="4" style="text-align:center">旧<br>字<br>体</th><td style="text-align:center">&#x9ed1;</td><td style="text-align:center">&#x85b0;</td><td style="text-align:center">&#xfa19;</td><td style="text-align:center">&#xfa1b;</td><td style="text-align:center">&#xfa1a;</td><td style="text-align:center">黒</td><td style="text-align:center">薫</td><td style="text-align:center">神</td><td style="text-align:center">福</td><td style="text-align:center">祥</td><td rowspan="19" style="text-align:left">\UTF{}<br><br>\CID{}<br><br>\UMS{}</td></tr>
@@ -355,7 +355,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 <table>
 <thead>
 <tr><th colspan="10" rowspan="2" style="text-align:center">Shift_JIS, ISO-2022-JP, EUC-JP に<br>おける環境依存文字</th><th colspan="5" style="text-align:center">代替処置の例</th></tr>
-<tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="3" style="text-align:center">LaTeX や OTF/UTF package の命令</th></tr>
+<tr><th colspan="2" style="text-align:center">テキスト</th><th colspan="3" style="text-align:center">LaTeX や OTF package の命令</th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align:center">&copy;</td><td colspan="9" style="text-align:center"></td><td colspan="2" style="text-align:center">(c)</td><td style="text-align:left">\copyright, \Pisymbol{psy}{"D3}, \Pisymbol{psy}{"E3}</td><td rowspan="2" style="text-align:left">\UTF{}</td><td rowspan="2" style="text-align:left">\CID{}</td></tr>
@@ -450,7 +450,7 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 使われるフォントをボールド体と見てくれない人が多くて困る． <!-- 「充分に満足な出力が得られる，標準配布（に近い）既製品が存在する」処理は --> <!-- この項にはなるべく載せないほうがよいと思いますが． --> <!-- そういうものはもはや「苦手」な処理とは言えないでしょうし，それ以前に --> <!-- 「何らかのパッケージを持ちだすような処理を手当たりしだいに載せ」ていたのでは --> <!-- 収拾がつかないと思います． -->
 
 ```
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
 \usepackage{bm} 
 \begin{document}
 $\bm{\phi}=\left(\phi_1,\,\phi_2\right)$
@@ -471,7 +471,7 @@ $\bm{\phi}=\left(\phi_1,\,\phi_2\right)$
 1\unit{\mu / s^2}
 ```
 
-> sistyle パッケージを用いると，大体そのような形で記述可能． <!-- 単純なものでよければ，次のサンプル程度のマクロを自作してもいい． --> <!-- \documentclass{jarticle} --> <!-- \makeatletter --> <!-- \def\unitprespace{\,} --> <!-- \DeclareRobustCommand*\unit{\@ifstar{\@unit\relax}{\@unit\unitprespace}} --> <!-- \def\@unit#1{% --> <!--    \ifmmode\else --> <!--       \ifvmode \leavevmode \fi --> <!--       \unskip --> <!--    \fi --> <!--    #1% --> <!--    \ifmmode \expandafter\@math@unit --> <!--    \else    \expandafter\@text@unit --> <!--    \fi} --> <!-- \def\@text@unit{\@@unit\f@size} --> <!-- \def\@math@unit#1{% --> <!--     \mathchoice{\@@unit\tf@size{#1}}{\@@unit\tf@size{#1}}% --> <!--                {\@@unit\sf@size{#1}}{\@@unit\ssf@size{#1}}} --> <!-- \def\@@unit#1#2{% --> <!--    \hbox{\fontsize#1\f@baselineskip\upshape --> <!--       \expandafter\let\csname unit \endcsname\mbox --> <!--       \def\@tempa{\mu}% --> <!--       \ifx\@@micro\@tempa\else \let\mu\@@micro \fi --> <!--       \@tfor\@tempa:=% --> <!--          {\@@b\b}{\@@c\c}{\@@d\d}{\@@t\t}{\@@H\H}% --> <!--          {\'\acute}{\'\grave}{\.\dot}{\"\ddot}{\^\hat}% --> <!--          {\v\check}{\u\breve}{\~\tilde}{\=\bar}% --> <!--          {\r\mathring}%%% 実際には，おそらく，この場合のみ処理するだけでも充分 --> <!--          {\b\b@in@unit}{\c\c@in@unit}{\d\d@in@unit}{\t\t@in@unit}{\H\H@in@unit}% --> <!--          \do{\expandafter\let\@tempa}% --> <!--       \medmuskip=2mu --> <!--       \edef\@tempa{\f@series}\edef\@tempa{\expandafter\@car\@tempa\@empty\@nil}% --> <!--       \if \@tempa b\relax \mathversion{bold}\fi --> <!--       $\mathrm{#2}$}} --> <!-- \def\b@in@unit#1{\hbox{\@@b{#1}}} --> <!-- \def\c@in@unit#1{\hbox{\@@c{#1}}} --> <!-- \def\d@in@unit#1{\hbox{\@@d{#1}}} --> <!-- \def\t@in@unit#1{\hbox{\@@t{#1}}} --> <!-- \def\H@in@unit#1{\hbox{\@@H{#1}}} --> <!-- \DeclareRobustCommand*\micro{\@@micro} --> <!-- \AtBeginDocument{% --> <!--    \@ifundefined{textmu}% --> <!--       {\@ifundefined{muup}% --> <!--          {\def\@@micro{\mu}}% --> <!--          {\def\@@micro{\muup}}}% --> <!--       {\def\@@micro{\mbox{\textmu}}}} --> <!-- \makeatother --> <!--  --> <!-- \usepackage{txfonts}%%% \muup を提供 --> <!--  --> <!-- \begin{document} --> <!-- 10 \unit{m \cdot s^{-1}} and 12\unit{\micro g/l} --> <!--  --> <!-- $v = 10 \unit{m/s}$ and $c = 12\unit{\mu g/l}$ --> <!-- $X = \sup_{v \geq 10\unit{m/s}} f(v)$ --> <!--  --> <!-- 10\,[\unit*{m/s}]%%% このような場合には \unit* とする． --> <!-- \end{document} -->
+> sistyle パッケージを用いると，大体そのような形で記述可能． <!-- 単純なものでよければ，次のサンプル程度のマクロを自作してもいい． --> <!-- \documentclass{ujarticle} --> <!-- \makeatletter --> <!-- \def\unitprespace{\,} --> <!-- \DeclareRobustCommand*\unit{\@ifstar{\@unit\relax}{\@unit\unitprespace}} --> <!-- \def\@unit#1{% --> <!--    \ifmmode\else --> <!--       \ifvmode \leavevmode \fi --> <!--       \unskip --> <!--    \fi --> <!--    #1% --> <!--    \ifmmode \expandafter\@math@unit --> <!--    \else    \expandafter\@text@unit --> <!--    \fi} --> <!-- \def\@text@unit{\@@unit\f@size} --> <!-- \def\@math@unit#1{% --> <!--     \mathchoice{\@@unit\tf@size{#1}}{\@@unit\tf@size{#1}}% --> <!--                {\@@unit\sf@size{#1}}{\@@unit\ssf@size{#1}}} --> <!-- \def\@@unit#1#2{% --> <!--    \hbox{\fontsize#1\f@baselineskip\upshape --> <!--       \expandafter\let\csname unit \endcsname\mbox --> <!--       \def\@tempa{\mu}% --> <!--       \ifx\@@micro\@tempa\else \let\mu\@@micro \fi --> <!--       \@tfor\@tempa:=% --> <!--          {\@@b\b}{\@@c\c}{\@@d\d}{\@@t\t}{\@@H\H}% --> <!--          {\'\acute}{\'\grave}{\.\dot}{\"\ddot}{\^\hat}% --> <!--          {\v\check}{\u\breve}{\~\tilde}{\=\bar}% --> <!--          {\r\mathring}%%% 実際には，おそらく，この場合のみ処理するだけでも充分 --> <!--          {\b\b@in@unit}{\c\c@in@unit}{\d\d@in@unit}{\t\t@in@unit}{\H\H@in@unit}% --> <!--          \do{\expandafter\let\@tempa}% --> <!--       \medmuskip=2mu --> <!--       \edef\@tempa{\f@series}\edef\@tempa{\expandafter\@car\@tempa\@empty\@nil}% --> <!--       \if \@tempa b\relax \mathversion{bold}\fi --> <!--       $\mathrm{#2}$}} --> <!-- \def\b@in@unit#1{\hbox{\@@b{#1}}} --> <!-- \def\c@in@unit#1{\hbox{\@@c{#1}}} --> <!-- \def\d@in@unit#1{\hbox{\@@d{#1}}} --> <!-- \def\t@in@unit#1{\hbox{\@@t{#1}}} --> <!-- \def\H@in@unit#1{\hbox{\@@H{#1}}} --> <!-- \DeclareRobustCommand*\micro{\@@micro} --> <!-- \AtBeginDocument{% --> <!--    \@ifundefined{textmu}% --> <!--       {\@ifundefined{muup}% --> <!--          {\def\@@micro{\mu}}% --> <!--          {\def\@@micro{\muup}}}% --> <!--       {\def\@@micro{\mbox{\textmu}}}} --> <!-- \makeatother --> <!--  --> <!-- \usepackage{txfonts}%%% \muup を提供 --> <!--  --> <!-- \begin{document} --> <!-- 10 \unit{m \cdot s^{-1}} and 12\unit{\micro g/l} --> <!--  --> <!-- $v = 10 \unit{m/s}$ and $c = 12\unit{\mu g/l}$ --> <!-- $X = \sup_{v \geq 10\unit{m/s}} f(v)$ --> <!--  --> <!-- 10\,[\unit*{m/s}]%%% このような場合には \unit* とする． --> <!-- \end{document} -->
 
 ## Comments {#ada1c094}
 
