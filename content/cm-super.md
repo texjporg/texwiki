@@ -48,7 +48,7 @@ TeX Live には標準で含まれています．<br>
 
 ### W32TeX {#e991fdd9}
 
-W32TeX には標準で含まれています．<br>
+W32TeX にはインストールされていないので CTAN から入手します． → [PDFへの変換について,](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1201)<br>
 
 ## 関連リンク {#e74a0814}
 
