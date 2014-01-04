@@ -38,15 +38,16 @@ Poppler は
 
 - [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags) を参照．<br>
 
-Poppler 0.23.3 以降は Qt 5 に対応しています．<br>
-Poppler 0.19.2 で font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されるようになりました．<br>
-ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
-GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定することをおすすめします．<br>
-
 ### ChangeLog {#u62118c7}
 
 - [poppler/poppler - The poppler pdf rendering library](http://cgit.freedesktop.org/poppler/poppler)
     - [log](http://cgit.freedesktop.org/poppler/poppler/log/)
+
+### font configuration {#e532ec53}
+
+Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます．<br>
+ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定することをおすすめします．<br>
 
 ## インストール {#e0d6f40b}
 
@@ -901,9 +902,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.25.0.tar.xz
-$ tar xvf poppler-0.25.0.tar.xz
-$ pushd poppler-0.25.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.25.1.tar.xz
+$ tar xvf poppler-0.25.1.tar.xz
+$ pushd poppler-0.25.1
 ```
 
 ***
