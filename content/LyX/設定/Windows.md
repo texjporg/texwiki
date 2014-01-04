@@ -306,30 +306,6 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 #### PDF (dvipdfm) {#xc68f23e}
 
-■ [TeXworks](/TeXworks/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>PDF (dvipdfm)　　　　　　　　　　 ▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>pdf3</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
-MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-捷径(U):　　　　　　　 <ins>m</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ■ [SumatraPDF](/SumatraPDF/) の場合
 
 ***
@@ -348,6 +324,30 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 捷径(U):　　　　　　　 <ins>m</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+複写子(P):<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+
+■ [TeXworks](/TeXworks/) の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+形式(F):　　　　　　　　<ins>PDF (dvipdfm)　　　　　　　　　　 ▼</ins><br>
+　　　　　　　　　　　　☑ 文書形式(D)<br>
+　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
+　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
+短縮名(H):　　　　　　<ins>pdf3</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
+捷径(U):　　　　　　　 <ins>m</ins><br>
+編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -380,30 +380,6 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 #### PDF (ps2pdf) {#f004342d}
 
-■ [TeXworks](/TeXworks/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>PDF (ps2pdf)　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>pdf</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
-MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-捷径(U):　　　　　　　 <ins>P</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ■ [SumatraPDF](/SumatraPDF/) の場合
 
 ***
@@ -422,6 +398,30 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 捷径(U):　　　　　　　 <ins>P</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+複写子(P):<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+
+■ [TeXworks](/TeXworks/) の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+形式(F):　　　　　　　　<ins>PDF (ps2pdf)　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　☑ 文書形式(D)<br>
+　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
+　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
+短縮名(H):　　　　　　<ins>pdf</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
+捷径(U):　　　　　　　 <ins>P</ins><br>
+編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -454,30 +454,6 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 #### PDF (pdflatex) {#fe61f4c6}
 
-■ [TeXworks](/TeXworks/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>PDF (pdflatex)　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>pdf2</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
-MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-捷径(U):　　　　　　　 <ins>F</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ■ [SumatraPDF](/SumatraPDF/) の場合
 
 ***
@@ -496,6 +472,30 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 捷径(U):　　　　　　　 <ins>F</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+複写子(P):<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+
+■ [TeXworks](/TeXworks/) の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+形式(F):　　　　　　　　<ins>PDF (pdflatex)　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　☑ 文書形式(D)<br>
+　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
+　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
+短縮名(H):　　　　　　<ins>pdf2</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
+捷径(U):　　　　　　　 <ins>F</ins><br>
+編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -528,30 +528,6 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 #### PDF (LuaTeX) {#p51f4c4b}
 
-■ [TeXworks](/TeXworks/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>PDF (LuaTeX)　　　　　　　　　　 ▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>pdf5</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
-MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-捷径(U):　　　　　　　 <ins>u</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ■ [SumatraPDF](/SumatraPDF/) の場合
 
 ***
@@ -570,6 +546,30 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 捷径(U):　　　　　　　 <ins>u</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+複写子(P):<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+
+■ [TeXworks](/TeXworks/) の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+形式(F):　　　　　　　　<ins>PDF (LuaTeX)　　　　　　　　　　 ▼</ins><br>
+　　　　　　　　　　　　☑ 文書形式(D)<br>
+　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
+　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
+短縮名(H):　　　　　　<ins>pdf5</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
+捷径(U):　　　　　　　 <ins>u</ins><br>
+編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -602,30 +602,6 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 #### PDF (XeTeX) {#td885a9e}
 
-■ [TeXworks](/TeXworks/) の場合
-
-***
-
-<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
-
-<br>
-
-形式(F):　　　　　　　　<ins>PDF (XeTeX)　　　　　　　　　　　▼</ins><br>
-　　　　　　　　　　　　☑ 文書形式(D)<br>
-　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
-　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
-短縮名(H):　　　　　　<ins>pdf4</ins><br>
-拡張子(X):　　　　　　<ins>pdf</ins><br>
-MIME:　　　　　　　　　<ins>application/pdf</ins><br>
-捷径(U):　　　　　　　 <ins>X</ins><br>
-編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
-複写子(P):<br>
-
-***
-
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
-
 ■ [SumatraPDF](/SumatraPDF/) の場合
 
 ***
@@ -644,6 +620,30 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 捷径(U):　　　　　　　 <ins>X</ins><br>
 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+複写子(P):<br>
+
+***
+
+\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+
+■ [TeXworks](/TeXworks/) の場合
+
+***
+
+<span style="color:Black;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#CFAE0C;"></ins>\[ <span style="color:White;"><strong>?</strong></span> \]<ins></span><span style="color:Black;background-color:#CC3333;"></ins>\[ 　<span style="color:White;"><strong>✕</strong></span>　 \]<ins></span> </ins></span><br>
+
+<br>
+
+形式(F):　　　　　　　　<ins>PDF (XeTeX)　　　　　　　　　　　▼</ins><br>
+　　　　　　　　　　　　☑ 文書形式(D)<br>
+　　　　　　　　　　　　☑ 書き出しメニューに表示(W)<br>
+　　　　　　　　　　　　☑ ベクトル画像形式(G)<br>
+短縮名(H):　　　　　　<ins>pdf4</ins><br>
+拡張子(X):　　　　　　<ins>pdf</ins><br>
+MIME:　　　　　　　　　<ins>application/pdf</ins><br>
+捷径(U):　　　　　　　 <ins>X</ins><br>
+編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
+閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>texworks</ins><br>
 複写子(P):<br>
 
 ***
@@ -790,15 +790,6 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 <!-- "C:\Program Files\LyX 2.1\bin\lyxeditor.cmd" "%f" %l -->
 
 を記述します．
-
-## 関連リンク {#gab21d87}
-
-- [TeX Live 2011( or MacTeX 2011) &amp; LyX 2.0.3の導入](http://texlive2011lyx203.blogspot.jp/)
-- [Windows7でTeX環境を作った](http://barippi.blog.fc2.com/blog-entry-1309.html)
-- [Ｌｙｘ導入](http://coswata.blog20.fc2.com/blog-entry-5409.html)
-- [WindowsにおいてLyX2.0で日本語を扱う](http://d.hatena.ne.jp/femm/20111206/1323165881)
-- [LyX ～数式エディタとして使う～](http://physchem.web.fc2.com/PC/latex/lyx.html)
-- [TeX | どうでもいいメモ（保守中）](http://6esky.wordpress.com/category/tex/)
 
 [^1]: フォントエンコーディングを指定します (例: T1)。
 [^2]: 特定のDVIビューアが使う用紙寸法フラグを設定(-paper) 
