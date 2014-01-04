@@ -104,8 +104,15 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jsarticle}
-%\documentclass{jarticle}
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex]{jsarticle}
+    %\documentclass{ujarticle}
+  \else
+    \documentclass{jsarticle}
+    %\documentclass{jarticle}
+  \fi
+\fi
 \usepackage{mxedruli}
 \begin{document}
 日本語を使いつつ，グルジア語のアルファベットを記述していきます。
@@ -200,8 +207,15 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jsarticle}
-%\documentclass{jarticle}
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex]{jsarticle}
+    %\documentclass{ujarticle}
+  \else
+    \documentclass{jsarticle}
+    %\documentclass{jarticle}
+  \fi
+\fi
 \usepackage{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{dblaccnt}
@@ -362,8 +376,15 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass[a4paper]{jsarticle}
-%\documentclass[a4paper]{jarticle}
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex,a4paper]{jsarticle}
+    %\documentclass[a4paper]{ujarticle}
+  \else
+    \documentclass[a4paper]{jsarticle}
+    %\documentclass[a4paper]{jarticle}
+  \fi
+\fi
 \usepackage[OT2,T1]{fontenc}
 \usepackage[thai]{babel} % thai オプション
 \usepackage{thswitch} % thswitch.sty を指定する
