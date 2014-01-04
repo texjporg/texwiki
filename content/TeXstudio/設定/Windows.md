@@ -261,6 +261,8 @@ Asymptote
 Ghostscript
 : &nbsp;
 
+: rungs.exe
+
 : "C:\gs\gs9.10\bin\gswin64c.exe"
 
 : "C:\gs\gs9.10\bin\gswin32c.exe"
