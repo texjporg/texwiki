@@ -19,14 +19,21 @@ pukiwiki: "URM"
 
 ### Uniform Requirements for Manuscripts Submitted to Biomedical Journals とは {#occb286d}
 
-生物医学の分野では、「[生物医学雑誌投稿に関する統一規定 (Uniform Requirements for Manuscripts Submitted to Biomedical Journals）](http://www.icmje.org/icmje.pdf)」が[国際医学雑誌編集者委員会（International Committee of Medical Journal Editors）](http://www.icmje.org/)により作成されており、現在500誌以上の雑誌がこの規定に従っています（[URMの採用雑誌一覧](http://www.icmje.org/jrnlist.html)）。これは、1979年に発表され、最初に会議を開催した都市の名をとってバンクーバースタイルと呼ばれ、2007年10月版が最新版です。[日本語訳](http://www.toukoukitei.net/URM0410.pdf)も存在します。
+生物医学の分野では、「[生物医学雑誌投稿に関する統一規定 (Uniform Requirements for Manuscripts Submitted to Biomedical Journals）](http://www.icmje.org/urm_full.pdf)」が[国際医学雑誌編集者委員会（International Committee of Medical Journal Editors）](/ICMJE/)により作成されています。<br>
+現在 500 誌以上の雑誌が URM に従っています（[URM の採用雑誌一覧](http://www.icmje.org/journals.html)）。<br>
+これは、1979 年に発表され、最初に会議を開催した都市の名をとって[バンクーバースタイル](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%B3%E3%82%AF%E3%83%BC%E3%83%90%E3%83%BC%E6%96%B9%E5%BC%8F)と呼ばれています。<br>
+最新版は 2010 年 4 月版です。<br>
+日本語訳も存在します。<br>
+
+- [海外医学雑誌投稿情報 | 統一規定 | 「生医学雑誌への投稿のための統一規定」 2010年4月改訂版 （翻訳）](http://www.toukoukitei.net/i4aURM201004.html)
+- [ICMJE統一投稿規定（2010年改訂版）｜論文作成お役立ち情報｜株式会社翻訳センター](http://www.honyakucenter.jp/usefulinfo/uniform_requirements2010.html)
 
 ### プリアンプルの例 {#yb81b0fc}
 
 ```
 \documentclass[a4paper,titlepage]{article}
 \usepackage{graphicx}
-\usepackage{times}
+\usepackage{newtxtext,newtxmath}
 \usepackage[doublespacing]{setspace}
 \renewcommand{\listfigurename}{Legends of Figures}
 \usepackage[noheads,tablesfirst]{endfloat}
@@ -41,16 +48,18 @@ pukiwiki: "URM"
 
 ### ダブルスペース {#j474cf50}
 
-簡単にダブルスペース化するには、doublespace.styまたはsetspace.styを使う。特別な理由がない限り、setspace.styを使った方が無難。
+簡単にダブルスペース化するには、setspace.sty または doublespace.sty を使う。<br>
+特別な理由がない限り、setspace.sty を使った方が無難。<br>
 
-- doublespaceの最新版は1986年であり、一方、setspaceの方は2000年である
+- setspace の最新版は 2000 年であり、一方、doublespace の方は 1986 年である
 - doublespace スタイルを使うと、backgrnd や pdfdraftcopy のように color を使う場合にエラーになる。詳細と解決策 [qa:37934](https://okumuralab.org/~okumura/texfaq/qa/37934.html)
 
-部分的にシングルスペースや任意のスペーシングをしたい場合のコマンド・環境がsetspace.styに用意されているので、詳細はsetspace.styの中をのぞく。
+部分的にシングルスペースや任意のスペーシングをしたい場合のコマンド・環境が setspace.sty に用意されている。<br>
+詳細は setspace.sty の中をのぞく。
 
 ### タイトルページの作成 {#h7ddae99}
 
-URMSBJでは、タイトルページの要素として、
+URM では、タイトルページの要素として、
 
 - 論文のタイトル
 - 著者氏名及び所属機関
@@ -82,7 +91,7 @@ URMSBJでは、タイトルページの要素として、
 
 #### ページ番号を右上に {#a0c50ac9}
 
-最新版のURMSBJではページ番号の位置指定はなくなったが、ページ番号の位置を簡単に変更したい場合は、pageno.styを使う。例えば右上なら下記のようにする。
+最新版の URM ではページ番号の位置指定はなくなったが、ページ番号の位置を簡単に変更したい場合は、pageno.styを使う。例えば右上なら下記のようにする。
 
 ```
 \usepackage[outsidehead]{pageno}
@@ -90,7 +99,7 @@ URMSBJでは、タイトルページの要素として、
 
 ### 四方余白を1インチに {#ae6567ae}
 
-最新版のURMSBJでは「十分な余白」に変更されたが、四方余白を1インチと指定されている場合は、fullpage.styで簡単に四方余白を1インチにできる。
+最新版の URM では「十分な余白」に変更されたが、四方余白を1インチと指定されている場合は、fullpage.styで簡単に四方余白を1インチにできる。
 
 ```
 \usepackage{fullpage}
@@ -106,7 +115,7 @@ URMSBJでは、タイトルページの要素として、
 
 ### 図表 {#gb594e5c}
 
-URMSBJでは、図表は1つずつ独立したページで用意して、本文の後につけなければならない。また、図はキャプションなしで用意し、図の裏に図番号などのラベルを貼る。
+URM では、図表は1つずつ独立したページで用意して、本文の後につけなければならない。また、図はキャプションなしで用意し、図の裏に図番号などのラベルを貼る。
 
 いまのところの妥協案は下記の通り。
 
@@ -151,20 +160,24 @@ endfloatを使っている場合、下記をプリアンプルに足す。
 
 ### 度量衡単位 {#f7517a12}
 
-SI単位を用いる。これをサポートするスタイルファイルとして、SIunits.styとsistyle.styがあり、両者は趣が異なる。Slunitsの方はフルスペルを書いてそれを大文字小文字を間違わずに正しく記号化するためのもの（例えば、mHz Mhz mhz MHzを区別してくれる）。SIstyleの方は入力を簡略化するための支援マクロである。残念ながら、SIunits.styはplatexでコンパイルできない（latexならOK）。
+SI 単位を用いる。<br>
 
-<strong>(例)</strong> SIstyleの使用例
+#### siunitx {#x11d1f9f}
+
+SI 単位をサポートするスタイルファイルとして、siunitx.sty がある。<br>
+siunitx はフルスペルを書いてそれを大文字小文字を間違わずに正しく記号化するためのもの（例えば、mHz Mhz mhz MHzを区別してくれる）。<br>
+siunitx は入力を簡略化するための支援マクロである。<br>
+
+<strong>(例)</strong> siunitx の使用例
 
 <table>
 <tbody>
-<tr><td> \SI{-1.234e^3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
+<tr><td> \SI[inter-unit-product=$\cdot$]{-1.234e3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
 <tr><td> \ang{32;46;23.373} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle2.png" alt=""></td></tr>
-<tr><td> \SI{5}{\micro s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
-<tr><td> \SI{60}{\degC} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle4.png" alt=""></td></tr>
+<tr><td> \SI{5}{\textit{\micro}s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
+<tr><td> \SI{60}{\degreeCelsius} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle4.png" alt=""></td></tr>
 </tbody>
 </table>
-
-もちろん本文中にも\degCなどマクロは使用できる。
 
 ### 略語を簡単に {#n64448be}
 
@@ -240,13 +253,3 @@ Knuth DE と本来の出力をします。vancouver.bstを編集して、Donald 
 ```
 
 と編集します。
-
-```
-
-```
-
-### その他 {#b7405687}
-
-### コメント {#y6aa6ec3}
-
-- ご存知の方もいらっしゃると思いますが、角籐版Web2c7.5.5のSIunits.styだと\minuteと\hourを書き換えればとりあえずplatexで使えるようです。 -- kazu 2006-08-14 (月) 14:15:28
