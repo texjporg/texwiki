@@ -281,3 +281,5 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
 
 - 本家CTANサーバ:
     [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
+
+- [txfonts のインテグラルのフォントを変える](http://blog.wgag.net/402.html)
