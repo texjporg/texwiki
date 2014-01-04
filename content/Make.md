@@ -83,7 +83,7 @@ Makefile は、Make 設定ファイルの文法に従って記述します。<br
 
 #### 基本的な Makefile {#xfdbcbf5}
 
-例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルが ~/latex ディレクトリーに作成してある状態からPDFを生成することを考えます。<br>
+例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルの \documentclass{jsarticle} を \documentclass\[uplatex\]{jsarticle} に変更したものが ~/latex ディレクトリーに作成してある状態から PDF を生成することを考えます。<br>
 まずはテキストエディタなどを使い、test.tex と同じディレクトリーに Makefile を次の内容で作成します。<br>
 
 ```
@@ -91,25 +91,25 @@ test.pdf: test.dvi
 	dvipdfmx $<
 
 test.dvi: test.tex
-	platex -interaction=batchmode $<
+	uplatex -interaction=batchmode $<
 ```
 
 コマンド中の「$&lt;」は必須項目を表し、この場合は「test.dvi」と「test.tex」になります。<br>
-なお、makeからplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、platexコマンドにオプション「-interaction=batchmode」を付けています。<br>
+なお、makeからuplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、uplatexコマンドにオプション「-interaction=batchmode」を付けています。<br>
 
 #### Make の実行 {#icc67860}
 
 Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行します。Makefile に記述したコマンドが呼び出され、PDFが生成されます。<br>
 このあとは、test.tex が更新されたり生成された test.pdf が削除されたりしなければ、再度make コマンドを実行しても、Makefile に記述したコマンドは呼び出されません。<br>
-Mac OS XやLinux上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
+OS XやLinux上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
 
 ```
 $ cd ~/latex/
 $ ls
 Makefile  test.tex
 $ make
-platex  -interaction=batchmode test.tex
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013)
+uplatex  -interaction=batchmode test.tex
+This is e-upTeX, Version 3.1415926-p3.4-u1.11-110825-2.6 (utf8.uptex) (TeX Live 2013)
  restricted \write18 enabled.
 entering extended mode
 dvipdfmx test.dvi
@@ -144,7 +144,7 @@ distclean: clean
 	dvipdfmx $<
 
 %.dvi: %.tex
-	platex -interaction=batchmode $<
+	uplatex -interaction=batchmode $<
 ```
 
 「%.dvi: %.tex」のように記述されている行はパターンルールといい、拡張子を元に動作ルールを決めます。
@@ -198,7 +198,7 @@ distclean: clean
 	dvipdfmx $<
 
 %.dvi: %.tex
-	for i in `seq 1 $(CNT)`; do platex -interaction=batchmode $<; done
+	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
 ```
 
 Makeの実行方法は、基本的なMakefileの場合と同じです。作成されたPDFファイルで、特に相互参照や目次などの問題がないか確認してください。
@@ -208,7 +208,7 @@ Makeの実行方法は、基本的なMakefileの場合と同じです。作成�
 
 #### ログファイルに警告のある場合の実行 {#z88e6381}
 
-まLaTeX を無条件で実行してから、ログファイルに警告がある場合にだけさらに LaTeX を実行することもできます。
+LaTeX を無条件で実行してから、ログファイルに警告がある場合にだけさらに LaTeX を実行することもできます。
 次のMakefileでは、CNT 変数で指定された回数分LaTeX を実行してから、ログに相互参照未定義の警告がある場合だけLaTeXを実行するようにしています。
 ログに相互参照未定義の警告があるかどうかは、shシェルのif文と grep（fgrep） を組み合わせて判定しています。
 また、相互参照に誤りがある場合はLaTeXを何回実行してもログに相互参照未定義の警告が出るので、相互参照未定義の警告がある場合のLaTeX実行は最大3回としています。
@@ -232,8 +232,8 @@ distclean: clean
 	dvipdfmx $<
 
 %.dvi: %.tex
-	for i in `seq 1 $(CNT)`; do platex -interaction=batchmode $<; done
-	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then platex -interaction=batchmode $<; else exit 0; fi; done
+	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
+	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then uplatex -interaction=batchmode $<; else exit 0; fi; done
 ```
 
 なお、LaTeXを複数回実行する方法の詳細については、『LaTeX2e美文書作成入門』P.161の「（p）LaTeXを適切な回数繰り返し実行する方法 」を参照してください。
@@ -268,8 +268,8 @@ distclean: clean
 	dvipdfmx $<
 
 %.dvi: %.tex
-	for i in `seq 1 $(CNT)`; do platex -interaction=batchmode $<; done
-	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then platex -interaction=batchmode $<; else exit 0; fi; done
+	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
+	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then uplatex -interaction=batchmode $<; else exit 0; fi; done
 
 %.xbb: %.pdf
 	extractbb $<
@@ -294,7 +294,7 @@ $ sed -e 's/}/}%/g' test.tex | sed -e 'y/}%/}\n/' | sed -n -e 's/.*\\includegrap
 LaTeXに -recorderオプションをつけて実行すると出力される.fls ファイルを元に調査することもできます。次のコマンドで、test.tex ファイルからtest.fls ファイルを生成します。
 
 ```
-$ platex -interaction=nonstopmode -recorder test.tex
+$ uplatex -interaction=nonstopmode -recorder test.tex
 ```
 
 .flsファイルには、LaTeX処理で入出力されるファイルがリストになっています。入力ファイルと出力ファイルはそれぞれ、INPUTとOUTPUTではじまる行に記録されます。また、TeXのシステムファイルもリストに含まれます。そのため、TeXのシステムファイル以外の入力ファイルを表示するには、
@@ -333,7 +333,7 @@ distclean:
 clean:
         rm *.aux *.dvi *.idx *.ilg *.ind *.log *.out *.toc *~ $(PDF)
 tex:
-        platex $(TEX)
+        uplatex $(TEX)
 idx:
         mendex $(IDX)
 dvipdf:
