@@ -11,12 +11,12 @@ pukiwiki: "javascripts for Adobe Illustrator CS"
 
 ## はじめに {#ae063b79}
 
-[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．
-フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．
-Illustrator CS のほかに，LaTeX と dvips, Ghostscript が必要です．
-和文も処理したい場合は，(--kanji=utf8 オプションが指定可能な)pLaTeX とdvips, GNU Ghostscript 7.07 が
-使える環境を用意してください．以下の内容はすべて和文も処理することを前提にしたものです．
-欧文のみの場合は，Ghostscript の別バージョンでも問題ないはずです．
+[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．<br>
+フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．<br>
+Illustrator CS のほかに，LaTeX と dvips, Ghostscript が必要です．<br>
+和文も処理したい場合は，upLaTeX と dvips, Ghostscript が
+使える環境を用意してください．<br>
+以下の内容はすべて和文も処理することを前提にしたものです．<br>
 
 Illustrator にさせている仕事は
 
@@ -29,11 +29,11 @@ TeX 関係のなんらかの処理を変えたい時はini.tex と
 makeEPS.bat を書き換えれば充分で，
 使用する上ではIllustrator Javascript に関する特別な知識は要らないはずです．
 
-Illustrator CS windows 版 (Windows XP SP2) で動作を確認しています．
-CS3 でも数式は処理できますが，和文の処理を行おうとすると問題があるようです．
+<!-- Illustrator CS windows 版 (Windows XP SP2) で動作を確認しています．~ -->
+<!-- CS3 でも数式は処理できますが，和文の処理を行おうとすると問題があるようです．~ -->
 
 Illustrator 上でのjavascript に関するマニュアルはインストールCD中にあります
-(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)．
+(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)．<br>
 
 ## 準備 {#d06797b4}
 
@@ -51,7 +51,7 @@ eq.tex の雛形になるテキストファイルです．テキストドキュ�
 作成したフォルダに保存します． <!-- 以下は一例ですので，場合によってはフォントサイズを変えたり適当なパッケージを読み込んだり，好きなマクロを追加したり自由に改変してください． -->
 
 ```
-\documentclass[10pt]{jarticle}
+\documentclass[uplatex,12pt]{jsarticle}
 \pagestyle{empty}
 \usepackage{%
 amsmath,%
@@ -75,15 +75,15 @@ eq.tex -> eq.dvi -> eq.eps -> outline.eps という処理を行うバッチフ�
 
 ```
 cd /d C:\AI\
-platex --kanji=utf8 eq
+uplatex -no-guess-input-enc -kanji=utf8 eq
 dvips -Pdl -E eq -o eq.eps
-gswin32c -q -sDEVICE=epswrite -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
+rungs -q -sDEVICE=epswrite -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
 ```
 
 ### TeX(&amp;T).js {#w5a4bc73}
 
-Illustrator CS で作業中に呼び出すことになるスクリプトです．
-テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Illustrator CS\プリセット\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
+Illustrator CS で作業中に呼び出すことになるスクリプトです．<br>
+テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator CS6 (64 Bit)\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator CS6 (64 Bit)\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
 
 第一行目の「AI = "/C/AI/";」は，作業フォルダの作成で作成したフォルダ名を指定しています．例えば，作業フォルダが"D:\hoge\test\\" なら，「AI = "/D/hoge/test/"」のように書き換えてください． <!-- [[作業用フォルダの作成>javascripts for Adobe Illustrator CS#q425d35e]]でC:\Documents and Settings\All Users\Application Data\Adobe\Illustrator CS\temp\を作った場合は「AI = "/C/Documents and Settings/All Users/Application Data/Adobe/Illustrator CS/temp/";」に書き換えてください． -->
 
@@ -407,7 +407,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- cd /d c:\AI\ -->
 <!-- latex eq -->
 <!-- dvips -Pdl -E eq -o eq.eps -->
-<!-- gswin32c -q -sDEVICE=epswrite -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps -->
+<!-- rungs -q -sDEVICE=epswrite -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps -->
 
 <!-- テキストドキュメントに次のように記述して、"bat.ini" という名前で"C:\AI\" に保存します(埋め込み配置のみでよいならば不要)。 -->
 
@@ -559,9 +559,11 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 
 ## スクリプトの利用 {#h8061542}
 
-Illustrator を起動してください．TeX(&amp;T).js を"C:\Program Files\Adobe\Illustrator CS\プリセット\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．なお，別の場所に保存した場合は，\[ファイル\]→\[スクリプト\]の末尾にある\[参照\]からTeX(&amp;T).js を指定する必要があります．
+Illustrator を起動してください．<br>
+TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator CS6 (64 Bit)\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．<br>
+なお，別の場所に保存した場合は，\[ファイル\]→\[スクリプト\]の末尾にある\[参照\]からTeX(&amp;T).js を指定する必要があります．<br>
 新規ドキュメントを作成し，テキストツールを使って，例えば次の内容のテキストアイテムを作ります．
-(テキストツールを使わずに，以下をコピーして，Illustrator 上で貼り付けを行っても問題ありません．)
+(テキストツールを使わずに，以下をコピーして，Illustrator 上で貼り付けを行っても問題ありません．)<br>
 
 ```
 &\int_{-\infty}^{\infty}\!\!\!\delta(x-\alpha)f(x)\mathrm{d}x=f(\alpha)\\
@@ -573,15 +575,15 @@ a_{m1} & \ldots & a_{mn}
 ```
 
 テキストアイテムのフレームを選択した状態で，\[ファイル\]→\[スクリプト\]→\[TeX(T)\]を選択し，cmd.exe が終了した後，
-"描画しますか?" という確認メッセージに「はい」と答えればテキストオブジェクトが数式に置換されます．
-なお，\[Alt+F\]→\[R\]→\[T\]でスクリプトを実行することも可能です．
+"描画しますか?" という確認メッセージに「はい」と答えればテキストオブジェクトが数式に置換されます．<br>
+なお，\[Alt+F\]→\[R\]→\[T\]でスクリプトを実行することも可能です．<br>
 
-置換したくない場合は数式の最後に"%k" を付けてください( 上の例では"...\end{pmatrix}" を"...\end{pmatrix}%k" とする )．
-テキストの真下に数式が配置されます．
+置換したくない場合は数式の最後に"%k" を付けてください( 上の例では"...\end{pmatrix}" を"...\end{pmatrix}%k" とする )．<br>
+テキストの真下に数式が配置されます．<br>
 また，複数のテキストを選択した状態でスクリプトを実行すれば，
-選択されているすべてのテキストに対して順に処理を行います．
+選択されているすべてのテキストに対して順に処理を行います．<br>
 
-数式を選択した状態で同じスクリプトを実行すると，テキストを復活させることができます． <!-- このスクリプトを使用して数式を貼り付けると，Illustrator のファイルが保存されているディレクトリにファイル名と同じ名前のフォルダが作られ，そこに数式に対応したテキストが保存されます．オブジェクトの名前とテキストファイルのファイル名を対応させているので，例えばグループ解除などの操作をしてオブジェクトの名前を変えてしまうとテキストを復活させることができなくなります．また，テキストファイルが格納されているフォルダを削除/移動した場合もテキストを復活させられなくなります．Illustrator のファイルから見た相対パスが重要なので，Illustrator のファイルを移動させるときはこのフォルダも一緒に移動してやってください．逆に言えば，再編集の必要が無いならこのフォルダを消してしまっても問題ありません． -->
+数式を選択した状態で同じスクリプトを実行すると，テキストを復活させることができます．<br> <!-- このスクリプトを使用して数式を貼り付けると，Illustrator のファイルが保存されているディレクトリにファイル名と同じ名前のフォルダが作られ，そこに数式に対応したテキストが保存されます．オブジェクトの名前とテキストファイルのファイル名を対応させているので，例えばグループ解除などの操作をしてオブジェクトの名前を変えてしまうとテキストを復活させることができなくなります．また，テキストファイルが格納されているフォルダを削除/移動した場合もテキストを復活させられなくなります．Illustrator のファイルから見た相対パスが重要なので，Illustrator のファイルを移動させるときはこのフォルダも一緒に移動してやってください．逆に言えば，再編集の必要が無いならこのフォルダを消してしまっても問題ありません． -->
 
 <!-- 何も選択しない状態でこのスクリプトを実行すると，不要になったテキストファイル(スクリプトから呼び出せないテキストファイル)を探して消去します． -->
 
