@@ -17,19 +17,11 @@ pukiwiki: "Texmaker/設定/OS X"
 
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
+動作未確認です．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
-
-#### [MacTeX &amp; TeX Live](/Mac/#mactex) {#i89a162a}
-
-動作未確認です．<br>
-Texmaker 3.4.1 では動作するようです．<br>
-
-- [TeXmaker3.4.1でも無事日本語が出力されました](http://www.geocities.jp/flutecore/Weblog/archives/2012/09/entry_133.html)
-- [QA: TeXmakerの設定改善について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=874)
-
 BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
 
 - [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
