@@ -48,7 +48,7 @@ Windows, OS X, Linux
 
 - [Apps/Evince/Downloads - GNOME Wiki!](https://wiki.gnome.org/Apps/Evince/Downloads)
 
-公式サイトの Windows 版の Evince で日本語を表示したい場合はフォントを埋め込む必要があります．<br>
+公式サイトの Windows 版の Evince で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))<br>
 自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．<br>
 Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
@@ -153,7 +153,3 @@ ipaexm.ttf: "IPAex明朝" "Regular"
 $ fc-match GothicBBB
 ipaexg.ttf: "IPAexゴシック" "Regular"
 ```
-
-## 関連リンク {#n7670496}
-
-- [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836)
