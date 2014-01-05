@@ -243,7 +243,7 @@ rmtmuh     rmtmuh.pfb     0      1
 古い7ビット版の TeX でも使える方法：
 
 ```
-\documentclass{jsarticle}           % またはjarticleなど
+\documentclass[uplatex]{jsarticle}  % またはujarticleなど
 \usepackage{amsmath,amsfonts}       % AMS-LaTeX, AMSFonts
 \usepackage[noTS1,mtbold]{mathtime} % ここで MathTime を読み込む
 \usepackage[scaled]{helvet}         % Helveticaをやや小さく
@@ -258,7 +258,7 @@ rmtmuh     rmtmuh.pfb     0      1
 次のようにT1エンコーディングにすれば解決できます。
 
 ```
-\documentclass{jsarticle}           % またはjarticleなど
+\documentclass[uplatex]{jsarticle}  % またはujarticleなど
 \usepackage[T1]{fontenc}            % T1エンコーディングにする
 \usepackage{amsmath,amsfonts}       % AMS-LaTeX, AMSFonts
 \usepackage[mtbold]{mathtime}       % ここで MathTime を読み込む
@@ -269,39 +269,39 @@ rmtmuh     rmtmuh.pfb     0      1
 \end{document}
 ```
 
-T1エンコーディングの場合，Computer Modernフォントを使うとそのままではビットマップになります。
-cm-superを入れるか，Latin Modernフォント・パッケージを入れる，aeパッケージを使う等の手が必要です。
+T1エンコーディングの場合，Computer Modernフォントを使うとそのままではビットマップになります。<br>
+Latin Modern フォント・パッケージを入れるか，cm-super を入れる，ae パッケージを使う等の手が必要です。<br>
 
 オプションの意味などは，mathtime.dtx を LaTeX
 で処理して得られるドキュメントに詳しく書かれています。
 
 ### 和文ゴシックが出ない？ {#f8b01a16}
 
-このままでは jarticle 等で \section などの和文がゴシック体になりません。
-jsarticle 等では大丈夫です。
+このままでは jarticle 等で \section などの和文がゴシック体になりません。<br>
+jsarticle 等では大丈夫です。<br>
 
 #### 理由 {#ea0721c5}
 
 まず，和文のゴシック体は，明朝体の太字（太明朝体）とはまったく違うものです。
 
 jsarticle 等では \section
-等のコマンドを「欧文はサンセリフ，和文はゴシック」と定義しています。
-ところが，jarticle 等では「欧文も和文も太字」となっています。
-つまり，欧文はローマン体の太字，和文は明朝体の太字になるはずです。
+等のコマンドを「欧文はサンセリフ，和文はゴシック」と定義しています。<br>
+ところが，jarticle 等では「欧文も和文も太字」となっています。<br>
+つまり，欧文はローマン体の太字，和文は明朝体の太字になるはずです。<br>
 
 しかし，pTeX では明朝体の太字を太明朝体ではなくゴシック体で代用しています。
 詳しく言えば，太字の太い方（bx）をゴシック体で代用し，太字の細い方（b）を標準の明朝体のままにしています。
 
 LaTeX の標準では太字は太い方（bx）を使うようになっているので，これで jarticle と jsarticle
-で同じ振舞いをするように見えます。
-ところが，mathtime では Times を使う関係上，太字は細い方（b）を使うので，辻褄が合わなくなります。
+で同じ振舞いをするように見えます。<br>
+ところが，mathtime では Times を使う関係上，太字は細い方（b）を使うので，辻褄が合わなくなります。<br>
 
 #### 辻褄を合わせる方法その1 {#n3487987}
 
-jarticle 等を fix する。
-または jsarticle 等を使う。
+jarticle 等を fix する。<br>
+または jsarticle 等を使う。<br>
 本文でゴシック体を使うには，明朝体の太字がゴシック体で代用されることを仮定せず，\gtfamily
-または \textgt{...}（または jsarticle 等なら \textsf{...} や \sffamily）を使う。
+または \textgt{...}（または jsarticle 等なら \textsf{...} や \sffamily）を使う。<br>
 
 #### 辻褄を合わせる方法その2 {#d089c836}
 
@@ -312,5 +312,5 @@ pTeX で細い太字（b）もゴシックで代用するようにする：
 \DeclareFontShape{JT1}{mc}{b}{n}{ssub*gt/m/n}{}
 ```
 
-これなら jarticle 等もそのままで使えます。
-明朝とゴシックの2書体の場合はこれで辻褄が合うでしょうが，多書体化を考えると，やはりまともな実装を最初からしたほうがいいように思います。
+これなら jarticle 等もそのままで使えます。<br>
+明朝とゴシックの2書体の場合はこれで辻褄が合うでしょうが，多書体化を考えると，やはりまともな実装を最初からしたほうがいいように思います。<br>
