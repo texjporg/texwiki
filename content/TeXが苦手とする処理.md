@@ -19,37 +19,6 @@ pukiwiki: "TeXが苦手とする処理"
 無理をせずに書き手自身の腕で無難にできる範囲の
 処理で済ませる（か，画像にしてしまう）方が賢明である場合もあることでしょう。
 
-### 丸附き数字 {#s7930698}
-
-まず，丸附き数字（e.g.
-&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は Unicode を使用せずに従来の
-Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り
-機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
-
-対処法は，大別すると次の3通りになります。
-
-1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/)など、Unicode 化された TeX 族を利用する。
-1. 丸附き数字などの字形をもったフォントを利用：
-    - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
-    - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
-        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，
-            何も付けなければ十進表記でも書けます。例えば
-
-> "AC = '254 = 172
-
-です。こういったコードは
-[testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
-
-- go.sty パッケージの囲碁用フォント [CTAN:fonts/go/](https://mirror.ctan.org/fonts/go/) (
-    ただし「39」が「29」と表示されるバグあり →[修正を行ったもの](http://tony.cocolog-nifty.com/misc/2006/02/_gosty_5257.html)）
-    - [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
-        &#x2460; {U+2460}］など）
-
-1. 丸の中身と丸を合成：
-    - \textcircled マクロ（LaTeX 自身が提供）
-    - \MARU マクロ（okumacro パッケージが提供するほか，
-        同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
-
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
 まず，[qa:32045](https://okumuralab.org/~okumura/texfaq/qa/32045.html) でコメントされている現実があることを認識してください。<br>
@@ -241,6 +210,37 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
 - [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
+
+### 丸附き数字 → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX を使用する {#s7930698}
+
+まず，丸附き数字（e.g.
+&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は Unicode を使用せずに従来の
+Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り
+機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
+
+対処法は，大別すると次の3通りになります。
+
+1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX 族を利用する。
+1. 丸附き数字などの字形をもったフォントを利用：
+    - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
+    - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
+        - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，
+            何も付けなければ十進表記でも書けます。例えば
+
+> "AC = '254 = 172
+
+です。こういったコードは
+[testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+
+- go.sty パッケージの囲碁用フォント [CTAN:fonts/go/](https://mirror.ctan.org/fonts/go/) (
+    ただし「39」が「29」と表示されるバグあり →[修正を行ったもの](http://tony.cocolog-nifty.com/misc/2006/02/_gosty_5257.html)）
+    - [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
+        &#x2460; {U+2460}］など）
+
+1. 丸の中身と丸を合成：
+    - \textcircled マクロ（LaTeX 自身が提供）
+    - \MARU マクロ（okumacro パッケージが提供するほか，
+        同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
 
 ### 環境依存文字（謂ゆる機種依存文字） {#p625d750}
 
