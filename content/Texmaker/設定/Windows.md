@@ -22,85 +22,6 @@ PDF ビューアに 組み込みビューア，SumatraPDF，TeXworks を使用�
 コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
-
-#### [TeX Live](</TeX Live/>) の場合 {#cd578b1e}
-
-Texmaker のデフォルトの文字コードは UTF-8 です．<br>
-コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)
-
-***
-
-<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>powershell -Command "&amp; {$s = """%.tex"""; $latex = \[char\]0x24+'latex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $dvipdf = \[char\]0x24+'dvipdf'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$latex=q/uplatex $opt -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/upbibtex $opt $base/""" -e """$makeindex=q/mendex $opt -U -o $dst $src/""" -e """$dvipdf=q/dvipdfmx $opt -o $dst $src/""" -norc -gg -pdfdvi $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/pdflatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtex $opt $base/""" -e """$makeindex=q/makeindex $opt -o $dst $src/""" -norc -gg -pdf $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/lualatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/luajitlatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -lualatex $s}"</ins><br>または <ins>powershell -Command "&amp; {$s = """%.tex"""; $pdflatex = \[char\]0x24+'pdflatex'; $bibtex = \[char\]0x24+'bibtex'; $makeindex = \[char\]0x24+'makeindex'; $opt = \[char\]0x25+'O'; $base = \[char\]0x25+'B'; $dst = \[char\]0x25+'D'; $src = \[char\]0x25+'S'; latexmk -e """$pdflatex=q/xelatex $opt -synctex=1 -interaction=nonstopmode $src/""" -e """$bibtex=q/bibtexu $opt $base/""" -e """$makeindex=q/texindy $opt -o $dst $src/""" -norc -gg -xelatex $s}"</ins><br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
-
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf.exe %.ps</ins><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins> または <ins>mpost -interaction=nonstopmode &#x25;</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>rungs.exe</ins> または <ins>gswin64c.exe</ins> または <ins>gswin32c.exe</ins><br>
-
-<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
-
-　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
-
-***
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;">(●) 組み込みビューア</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
-
-<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>texworks %.pdf</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
-
-<div style="clear:both"></div>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
-
-***
-
-#### [W32TeX](/W32TeX/) の場合 {#q9c95374}
-
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
@@ -139,9 +60,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx -f dlbase14.map %.dvi</ins> または <ins>dvipdfmx %.dvi</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins><br>
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf.exe %.ps</ins><br>
 
 <div style="clear:both"></div>
 
