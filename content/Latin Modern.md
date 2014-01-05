@@ -14,6 +14,7 @@ pukiwiki: "Latin Modern"
 - [The Latin Modern (LM) Family of Fonts &mdash; GUST](http://www.gust.org.pl/projects/e-foundry/latin-modern/)
 - [The LaTeX Font Catalogue &ndash; Latin Modern](http://www.tug.dk/FontCatalogue/lmodern/)
 - [http://ctan.org/pkg/lm](http://ctan.org/pkg/lm)
+- [http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super](http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super)
 
 ### Latin Modern Math {#k01b88ef}
 
