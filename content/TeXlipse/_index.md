@@ -187,6 +187,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 - [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
+- [https://gitorious.org/evince-texlipse-sync](https://gitorious.org/evince-texlipse-sync)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
     <!-- -[[6. TeXlipse の追加・設定 | Eclipse を使おう別館:http://x19290.appspot.com/using-eclipse/main.html#S6]] -->
