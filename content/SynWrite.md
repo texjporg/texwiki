@@ -28,9 +28,13 @@ Windows 8.1, 8, 7, Vista, XP
 
 MPL
 
+## メニューの日本語化 {#y0f1c588}
+
+\[Options\]-\[Customize...\]-\[Interface\]-\[Program Settings\]-\[Language\]-\[日本語 (日本)\]
+
 ## エンコーディング {#rf06b30b}
 
-### 新規ドキュメント {#e80f4d2b}
+### 新規ドキュメント → UTF-8, no BOM に変更する {#e80f4d2b}
 
 初期設定では ANSI (Windows) に設定されています．<br>
 UTF-8, no BOM に変更します．<br>
@@ -86,10 +90,46 @@ class Command:
 
 ## SumatraPDF との連携 {#ea9c18ec}
 
+### forward search {#n5679ec0}
+
+\[ツール(R)\]-\[ツールの構成設定\]
+
+ツールのプロパティ
+
+名前(N):
+: &nbsp;
+
+: SumatraPDF
+
+ファイル名(F):
+: &nbsp;
+
+: C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+
+: C:\Program Files\SumatraPDF\SumatraPDF.exe
+
+パラメータ(P):
+: &nbsp;
+
+: -reuse-instance "{FileDir}\\{FileNameNoExt}.pdf" -forward-search "{FileName}" {CurrentLineNum}
+
+構文(L):
+: &nbsp;
+
+: LaTeX
+
+事前の保存(S):
+: &nbsp;
+
+: なし
+
+TeX ファイルを開いて \[ツール(R)\]-\[SumatraPDF\] で実行できます．<br>
+
 ### inverse search {#hdae615d}
 
 inverse search をする場合は起動中の SynWrite を終了する必要があります．<br>
 以下の inverse search の設定は起動中の SynWrite を終了する処理を追加しています．<br>
+ダブルクリックして SumatraPDF が終了してしまう場合は SynWrite を一度手動で終了してからダブルクリックしてください．<br>
 
 ```
 cmd /c tasklist /fi "IMAGENAME eq Syn.exe" /nh | findstr "Syn.exe" > nul && taskkill /F /IM Syn.exe /T & "C:\Program Files\SynWrite\Syn.exe" "%f" /s /n=%l
