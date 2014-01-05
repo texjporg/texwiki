@@ -23,8 +23,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 
-#### [TeX Live](</TeX Live/>) {#x932c6ec}
-
 ***
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
