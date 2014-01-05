@@ -36,7 +36,7 @@ Adobe-Japan1-6 にもない文字は Illustrator で作ってしまいましょ�
 ここではファイル名を kou-itai.eps としました。これを次のようにして使います。 
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvips]{graphicx}
 \begin{document}
 
@@ -47,15 +47,15 @@ Adobe-Japan1-6 にもない文字は Illustrator で作ってしまいましょ�
 \end{document}
 ```
 
-dvipdfmxを使う場合は，上と同じでもかまいませんが，次のようにすると，処理が速くなります。 
+dvipdfmx を使う場合は，次のようにすると，処理が速くなります。 
 
-まず ps2pdf kou-itai.eps で kou-itai.pdf を作ります。 
+まず epstopdf kou-itai.eps で kou-itai.pdf を作ります。 
 
 それを次のようにして取り込みます。 
 
 ```
-\documentclass{jsarticle}
-\usepackage[dvipdfm]{graphicx}
+\documentclass[uplatex]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
 \begin{document}
 
 精興社
@@ -102,4 +102,4 @@ dvipdfmxを使う場合は，上と同じでもかまいませんが，次のよ
 
 有用なマークをEPS化されたものがありましたら，実体またはURLを送っていただければ幸いです。 
 
-[Creator's Exchange](http://www.radiocom.co.jp/) というところに各種マークがあるようです (Thanks: 谷村さん [qa:21265](https://okumuralab.org/~okumura/texfaq/qa/21265.html))。
+[Creator's Exchange \[Internet Archive\]](http://web.archive.org/web/20070702034229/http://www.radiocom.co.jp/) というところに各種マークがあるようです (Thanks: 谷村さん [qa:21265](https://okumuralab.org/~okumura/texfaq/qa/21265.html))。
