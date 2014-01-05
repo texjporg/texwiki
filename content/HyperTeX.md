@@ -19,11 +19,11 @@ HyperTeX は dvi ファイル中に簡単なタグを \special 命令で入れ�
 - [HyperTeX FAQ](http://www.arxiv.org/hypertex/)
 
 LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念のため，HyperTeX
-の基本仕様をすべて実現する簡単なマクロを挙げておきます。
+の基本仕様をすべて実現する簡単なマクロを挙げておきます。<br>
 これを myhyper.sty のような名前で保存し，
 スタイルファイル（パッケージ）として取り込んでください。
 \href の第1引数（飛び先のURL）には，TeX の特殊文字 ~ や # が入るので，
-ちょっとトリックを使ってあります。
+ちょっとトリックを使ってあります。<br>
 
 ```
 \def\href{\leavevmode \begingroup \@sanitize \@href}
@@ -96,8 +96,7 @@ pdftitle=\@title
 強制改行の \\\ が入っているときには，usepackage のオプションで指定することは厳しいので，先に hyperref を呼んでから，あとから \hypersetup を加えるとうまくいきます．
 
 ```
-\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-\RequirePackage[dvipdfm,%
+\RequirePackage[dvipdfmx,%
  bookmarks=true, bookmarksnumbered=true, bookmarkstype=toc, bookmarksopen=true,%
  pdfstartview={FitH -32768}, pdfpagelayout=TwoColumnRight, pdfdisplaydoctitle=true,%
 % pdftitle=\@title,
@@ -105,6 +104,7 @@ pdftitle=\@title
  pdfauthor={\@author{} (\advisor@prefix:{} \@advisor{} \advisor@suffix)},%
  pdfkeywords={\@keywords}%
 ]{hyperref}
+\RequirePackage{pxjahyper}
 
 \newcommand\org@maketitle{}
 \let\org@maketitle\maketitle
