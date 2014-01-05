@@ -47,3 +47,9 @@ pukiwiki: "JavaScript"
 ## JavaScript Engine {#v88dd665}
 
 - [V8 JavaScript Engine](https://code.google.com/p/v8/)
+
+## プレゼンテーション {#bd3c5ab8}
+
+- [reveal.js](http://lab.hakim.se/reveal-js/)
+    - [https://github.com/hakimel/reveal.js](https://github.com/hakimel/reveal.js)
+    - [なんかかっこいいプレゼンテーションテンプレートを探しているならreveal.js使ってみろって](http://qiita.com/ryurock/items/9c6de36b9d6a716e7992)
