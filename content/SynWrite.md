@@ -30,7 +30,7 @@ MPL
 
 ## メニューの日本語化 {#y0f1c588}
 
-\[Options\]-\[Customize...\]-\[Interface\]-\[Program Settings\]-\[Language\]-\[日本語 (日本)\]
+\[Options\]-\[Customize...\]-\[Interface\]-\[Program Settings\]-\[Language\]-\[日本語 (日本)\] を選択するとメニューが日本語になります．<br>
 
 ## エンコーディング {#rf06b30b}
 
@@ -49,10 +49,12 @@ UTF-8, no BOM に変更します．<br>
 
 ## プラグイン {#zd70eebc}
 
+SynWrite は [Python](/Python/) を使用してプラグインを作成できます．<br>
+
 - [SynWrite / Wiki / Plugins Python API](http://sourceforge.net/p/synwrite/wiki/Plugins%20Python%20API/)
 - [SynWrite / Wiki / Plugins Python API functions](http://sourceforge.net/p/synwrite/wiki/Plugins%20Python%20API%20functions/)
 
-### pdfupLaTeX {#k5d9b009}
+### SynPdfupLaTeX {#k5d9b009}
 
 \[ツール(R)\]-\[新規プラグイン...\]
 
@@ -90,46 +92,65 @@ class Command:
 
 ## SumatraPDF との連携 {#ea9c18ec}
 
-### forward search {#n5679ec0}
+### forward and inverse search (SumatraPDF を前面に表示したい場合) {#n5679ec0}
 
-\[ツール(R)\]-\[ツールの構成設定\]
+#### SynSumatraPDF {#m2c207ba}
 
-ツールのプロパティ
+\[ツール(R)\]-\[新規プラグイン...\]
 
-名前(N):
-: &nbsp;
+SumatraPDF を入力して OK をクリックします．<br>
+\__init_\_.py を以下のように編集します．<br>
 
-: SumatraPDF
+inverse search をする場合は起動中の SynWrite を終了する必要があります．<br>
+\__init_\_.py は inverse search の設定に起動中の SynWrite を終了する処理を追加しています．<br>
 
-ファイル名(F):
-: &nbsp;
+***
 
-: C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+- \__init_\_.py
 
-: C:\Program Files\SumatraPDF\SumatraPDF.exe
+***
 
-パラメータ(P):
-: &nbsp;
+```
+from sw import *
+from sw_util import *
+import os
+import os.path
+import winreg
 
-: -reuse-instance "{FileDir}\\{FileNameNoExt}.pdf" -forward-search "{FileName}" {CurrentLineNum}
+class Command:
+    def run(self):
+        taskkill = r'cmd /c tasklist /fi \"IMAGENAME eq Syn.exe\" /nh | findstr \"Syn.exe\" > nul && taskkill /F /IM Syn.exe /T'
+        synWrite = r'\"' + app_exe_dir() + r'\Syn.exe' + r'\"'
+        tex = file_get_name(FILENAME_CURRENT)
+        pdf = os.path.splitext(tex)[0] + '.pdf'
+        line = str(ed_get_caret_xy()[1] + 1)
 
-構文(L):
-: &nbsp;
+        regValue = None
+        with winreg.OpenKeyEx(winreg.HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe') as key:
+            regValue = winreg.QueryValue(key, None)
 
-: LaTeX
+        sumatraPDF = None
+        if os.path.exists(regValue):
+            sumatraPDF = '"' + regValue + '" -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
+        else:
+            inputValue = dlg_input('Input the path to SumatraPDF.exe', 'SumatraPDF.exe', '', '')
+            if os.path.exists(inputValue):
+                sumatraPDF = '"' + regValue + '" -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
+            else:
+                sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
 
-事前の保存(S):
-: &nbsp;
+        cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
+        os.system(cmd)
+```
 
-: なし
+***
 
-TeX ファイルを開いて \[ツール(R)\]-\[SumatraPDF\] で実行できます．<br>
+\[ツール(R)\]-\[プラグイン(P)\]-\[SynSumatraPDF\] で実行できます．<br>
 
 ### inverse search {#hdae615d}
 
 inverse search をする場合は起動中の SynWrite を終了する必要があります．<br>
 以下の inverse search の設定は起動中の SynWrite を終了する処理を追加しています．<br>
-ダブルクリックして SumatraPDF が終了してしまう場合は SynWrite を一度手動で終了してからダブルクリックしてください．<br>
 
 ```
 cmd /c tasklist /fi "IMAGENAME eq Syn.exe" /nh | findstr "Syn.exe" > nul && taskkill /F /IM Syn.exe /T & "C:\Program Files\SynWrite\Syn.exe" "%f" /s /n=%l
