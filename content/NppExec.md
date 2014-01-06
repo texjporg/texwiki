@@ -590,8 +590,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 #### SumatraPDF {#ld44000d}
 
-以下のように設定します．<br>
-
 ***
 
 <span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
@@ -600,7 +598,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE) | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" %CURRENT_LINE% | cmd<br>
 
 <br>
 
