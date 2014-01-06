@@ -90,8 +90,10 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
+    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
+- SynWrite
 - [TeXnicCenter](/TeXnicCenter/)
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
