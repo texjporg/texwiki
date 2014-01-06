@@ -116,8 +116,8 @@ inverse search をする場合は起動中の SynWrite を終了する必要が�
 ```
 from sw import *
 from sw_util import *
-import os
 import os.path
+import subprocess
 import winreg
 
 class Command:
@@ -143,7 +143,7 @@ class Command:
                 sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
 
         cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
-        os.system(cmd)
+        subprocess.call(cmd, shell=True)
 
 if __name__ == '__main__':
     Command().run()
