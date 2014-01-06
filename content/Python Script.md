@@ -63,8 +63,8 @@ if __name__ == '__main__':
 
 ```
 import sys
-import os
 import os.path
+import subprocess
 
 if sys.version_info >= (3, 0, 0):
     from winreg import *
@@ -93,7 +93,7 @@ class Command:
                 sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + npp + r' \"%f\" -n%l" -forward-search "' + tex + '" ' + line
 
         cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
-        os.system(cmd)
+        subprocess.call(cmd, shell=True)
 
 if __name__ == '__main__':
     Command().run()
