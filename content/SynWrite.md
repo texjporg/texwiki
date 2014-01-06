@@ -84,6 +84,9 @@ class Command:
             file_save()
             os.chdir(c)
             subprocess.call(ptex2pdf)
+
+if __name__ == '__main__':
+    Command().run()
 ```
 
 ***
@@ -135,12 +138,15 @@ class Command:
         else:
             inputValue = dlg_input('Input the path to SumatraPDF.exe', 'SumatraPDF.exe', '', '')
             if os.path.exists(inputValue):
-                sumatraPDF = '"' + regValue + '" -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
+                sumatraPDF = '"' + inputValue + '" -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
             else:
                 sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + taskkill + ' & ' + synWrite + r' \"%f\" /s /n=%l" -forward-search "' + tex + '" ' + line
 
         cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
         os.system(cmd)
+
+if __name__ == '__main__':
+    Command().run()
 ```
 
 ***
