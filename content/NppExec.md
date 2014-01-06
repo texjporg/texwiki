@@ -600,7 +600,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; if exist "C:\Program Files\SumatraPDF\SumatraPDF.exe" (echo "C:\Program Files\SumatraPDF\SumatraPDF" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE)) else (echo "C:\Program Files (x86)\SumatraPDF\SumatraPDF" -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE)) | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" $(CURRENT_LINE) | cmd<br>
 
 <br>
 
