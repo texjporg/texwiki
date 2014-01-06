@@ -175,7 +175,7 @@ Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収�
 
 ## SumatraPDF との連携 {#ted60cbe}
 
-### forward search {#k51d2c1d}
+### forward and inverse search {#k51d2c1d}
 
 [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)<br>
 [Python Script#SumatraPDF との連携](</Python Script/#w3ac6f2d>)<br>
