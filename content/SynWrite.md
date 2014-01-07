@@ -17,7 +17,6 @@ SynWrite は Unicode をサポートしたテキストエディタです．<br>
 
 - [SynWrite](http://www.uvviewsoft.com/synwrite/)
 - [http://sourceforge.net/projects/synwrite/](http://sourceforge.net/projects/synwrite/)
-- [https://github.com/Alexey-T/SynWrite](https://github.com/Alexey-T/SynWrite)
 - [SynWrite / Wiki / Home](http://sourceforge.net/p/synwrite/wiki/)
 
 ### 動作環境 {#cee93992}
@@ -27,6 +26,11 @@ Windows 8.1, 8, 7, Vista, XP
 ### License {#b11e6ba2}
 
 MPL
+
+### ChangeLog {#v9496de5}
+
+- [https://github.com/Alexey-T/SynWrite](https://github.com/Alexey-T/SynWrite)
+    - [https://github.com/Alexey-T/SynWrite/commits/](https://github.com/Alexey-T/SynWrite/commits/)
 
 ## メニューの日本語化 {#y0f1c588}
 
