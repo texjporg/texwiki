@@ -34,7 +34,6 @@ Windows 8.1, Windows 8, Windows 7 SP1 では Visual Studio 2013 をインスト�
 ### F# 3.0 {#yb6a3a97}
 
 Windows 8, Windows 7 SP1 では [F# Tools for Visual Studio Express 2012 for Web](http://www.microsoft.com/en-us/download/details.aspx?id=34675) をインストールすれば F# 3.0 が使用できます．<br>
-F# Tools for Visual Studio Express 2012 for Web は Visual Studio Express 2012 をインストールしなくても使用可能ですが F# 3.0 でプログラムを作成したい方は Visual Studio Express 2012 をインストールすることをおすすめします．<br>
 
 - [F# 3.0 を Visual Studio なしでインストールする](http://blog.recyclebin.jp/archives/2889)
 - [Microsoft、「Visual Studio Express」でF#言語を利用可能にするアドインを公開](http://www.forest.impress.co.jp/docs/news/20120913_559448.html)
