@@ -25,6 +25,7 @@ TeX Live 2014 以降はファイル名に漢字が使用できます．( → [fi
     - 日本語字種の拡張
     - CJK(日中韓)各言語の混植
     - 欧文 TeX の Unicode 入力、babel との親和性向上
+- [http://homepage3.nifty.com/ttk/comp/tex/01uptex_doc_utf8.txt](http://homepage3.nifty.com/ttk/comp/tex/01uptex_doc_utf8.txt)
 
 ### ChangeLog {#le7df259}
 
