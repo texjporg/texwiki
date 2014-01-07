@@ -37,7 +37,6 @@ UNIX 互換 OS での多言語環境構築において非常に参考になる�
 1. LuaJITTeX
 1. [XeTeX](/XeTeX/), [XeLaTeX](/XeTeX/) + [xeCJK パッケージ](/xeCJK/)
 1. [(pdf)LaTeX](/pdfTeX/) + [CJK パッケージ](/LaTeX-CJK/)
-1. [Aleph](http://wiki.contextgarden.net/Aleph)
 
 によるアプローチなどが考えられます。<br>
 upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。<br>
@@ -46,59 +45,68 @@ upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じ�
 
 英語以外の言語の多くは，今までラテンアルファベットによる対応付け
 （“transliteration” ［翻字，文字転写，字訳］ないし ASCII 翻字入力）による
-方法が一般的でした。これは TeX ソースファイル入力時にアクセント記号，
+方法が一般的でした。<br>
+これは TeX ソースファイル入力時にアクセント記号，
 あるいは文字全部を ASCII 文字の組み合わせで代替するもので，以下の記述も
-基本的にはこの方法に基づいています。ASCII 翻字入力についての詳細は
+基本的にはこの方法に基づいています。<br>
+ASCII 翻字入力についての詳細は
 [TeXWiki:アスキー文字を用いた転写表記](</アスキー文字を用いた転写表記/>) を
 ご覧ください（入力サンプルは
 [TeXWiki:新 pTeX と Babel #タイプセットのテスト](</新 pTeX とBabel/#mafcbf19>)）。
 また Unicode を用いた直接入力については本ページ後半
-[#多言語の Unicode 直接入力と pTeX](#cyraccpw) をご覧ください。
+[#多言語の Unicode 直接入力と pTeX](#cyraccpw) をご覧ください。<br>
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
 ### Babel を用いた方法 {#lsdjceet}
 
 欧米の諸言語であれば，Babel というパッケージを用いることで非常に
-美しい文書が作れます。これは各言語のハイフネーション・正書法のみならず，
+美しい文書が作れます。<br>
+これは各言語のハイフネーション・正書法のみならず，
 「参考文献」などの見出しまで各国の言語で出力してくれるという
-至れり尽くせりのパッケージです。インストールについては，基本的な言語のみで
+至れり尽くせりのパッケージです。<br>
+インストールについては，基本的な言語のみで
 あれば [TwXWiki:新 pTeX と Babel](</新 pTeX とBabel/>) あるいは
 「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://www2.tba.t-com.ne.jp/ing/babel.html)」や
 「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
-をご覧ください。
+をご覧ください。<br>
 
 ### 各パッケージによる方法 {#otpckgsd}
 
 文字がラテンアルファベットやキリル文字でない場合，
-各種パッケージを用いることになるかもしれません。欧米の諸言語であれば
+各種パッケージを用いることになるかもしれません。<br>
+欧米の諸言語であれば
 「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
-でも取り扱っていますが，ここでは例としてグルジア語について紹介します。
+でも取り扱っていますが，ここでは例としてグルジア語について紹介します。<br>
 
 #### グルジア語 {#mxeldrul}
 
 グルジア語の場合，TeX では
 [mxedruli パッケージ](https://mirror.ctan.org/help/Catalogue/entries/mxedruli.html)を
-用いることで，多数のグルジア文字を扱うことができます。mxedruli パッケージは
-ASCII アルファベットでグルジア語を記述することになります。
+用いることで，多数のグルジア文字を扱うことができます。<br>
+mxedruli パッケージは
+ASCII アルファベットでグルジア語を記述することになります。<br>
 入力ソフト (input method) がない場合は大変助かりますが，
-持っている方にとってはこのままではちょっと不便かもしれません。
-そんな方は後述する UTF82TeX を -x オプションつきで実行してみてください。
+持っている方にとってはこのままではちょっと不便かもしれません。<br>
+そんな方は後述する UTF82TeX を -x オプションつきで実行してみてください。<br>
 
-インストール方法について解説します。
+インストール方法について解説します。<br>
 
 グルジア語を扱う TeX パッケージである
 [mxedruli パッケージ](https://mirror.ctan.org/fonts/georgian/mxedruli/)をダウンロードし，
 展開（解凍）します。$TEXMFLOCAL/fonts/source/mxedruli/ に
 mf/ ディレクトリの中身を，$TEXMFLOCAL/tex/latex/mxedruli/ に
 inputs/ ディレクトリの中身をコピーします。（mxedruli/ ディレクトリは
-新たに作ります。名前は別に “mxedruli” でなくても良いですが。）
-必要な方は mktexlsr コマンドを実行しておきましょう。
+新たに作ります。<br>
+名前は別に “mxedruli” でなくても良いですが。）
+必要な方は mktexlsr コマンドを実行しておきましょう。<br>
 
-グルジア語の場合，次のようにソースを書いていきます。\usepackage で
-mxedruli を読み込みます。グルジア語は mxedr 環境内に
+グルジア語の場合，次のようにソースを書いていきます。<br>
+\usepackage で
+mxedruli を読み込みます。<br>
+グルジア語は mxedr 環境内に
 書きます。ASCII 文字ではなく，直接グルジア文字を入力している場合，
-保存する際には文字コード（エンコーディング）を UTF-8 で保存します。
+保存する際には文字コード（エンコーディング）を UTF-8 で保存します。<br>
 
 ***
 
@@ -129,16 +137,24 @@ mxedruli を読み込みます。グルジア語は mxedr 環境内に
 ***
 
 グルジア文字を直接入力している場合は，後述する UTF82TeX を用いて
-グルジア文字を mxedruli パッケージ用の ASCII 文字転写規則に変換しましょう。
+グルジア文字を mxedruli パッケージ用の ASCII 文字転写規則に変換しましょう。<br>
 
-文書が出来ましたら，普通に ptex2pdf で処理します。すなわち，
+文書が出来ましたら，普通に ptex2pdf で処理します。<br>
+すなわち，
+
+```
+ptex2pdf -l -u gtest-o.tex
+```
+
+または
 
 ```
 ptex2pdf -l gtest-o.tex
 ```
 
-を実行します。PDF ファイルをプレビューしてみて，
-うまくいっているかどうかを確認してください。
+を実行します。<br>
+PDF ファイルをプレビューしてみて，
+うまくいっているかどうかを確認してください。<br>
 
 ## 中東の諸言語 {#arablowic}
 
@@ -220,7 +236,6 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 \usepackage[T1]{fontenc}
 \usepackage{dblaccnt}
 \usepackage[vietnam,english]{babel}
-%\usepackage{japanese}
 \begin{document}
 
 こんな感じです。
@@ -237,6 +252,12 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 後述する UTF82TeX で変換してください。
 
 出来上がったら ptex2pdf で処理します。
+
+```
+ptex2pdf -l -u vtest-o.tex
+```
+
+または
 
 ```
 ptex2pdf -l vtest-o.tex
@@ -422,6 +443,12 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 あとはいつもの通りに処理します。
 
 ```
+ptex2pdf -l -u foo.tex
+```
+
+または
+
+```
 ptex2pdf -l foo.tex
 ```
 
@@ -440,99 +467,22 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 ### 中国語・韓国語 {#cjkinqd}
 
+中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）については，[OTF パッケージ](/OTF/)と PXbase パッケージの登場に
+より，pTeX でも中国語（簡化字・繁體字の両方）と韓国語をまとめて
+扱えます。<br>
+
+OTF パッケージ, PXbase パッケージは TeX Live, W32TeX に含まれています．<br>
+
 韓国語（&#xd55c;&#xad6d;&#xc5b4;）
-は[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
-KoreanTeX がありました（これはハングルを ASCII 文字転写したかたちで入力できますので，後述する方法と異なり入力ソフト \[input method\] が不要です）。
+に関しては[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
+KoreanTeX もあります。<br>
+KoreanTeX はハングルを ASCII 文字転写したかたちで入力できますので，入力ソフト \[input method\] が不要です。<br>
 
-一方，中国語（&#x6c49;&#x8bed;［漢語］，中文）については扱う方法が
-ありませんでした。しかし，[OTF パッケージ](/OTF/)と OTFCJK パッケージの登場に
-より，ようやく pTeX でも中国語（簡化字・繁體字の両方）と韓国語をまとめて
-扱えるようになりました。（後述するように，UTF82TeX を用いる方法もあります。
-他に別の言語も直接入力して混在させている方に特に便利です。）
-
-以下をインストールする前に OTF パッケージと Aleph が必要です。
-あらかじめ TeXインストーラ3 などでインストールしておきましょう。
-
-Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/)
-もインストールしておきましょう。
-
+dvipdfmx で変換し，PDF の形で出力結果を見ることになります。<br>
 PDF 閲覧の際には
-[Adobe Reader](</Adobe Reader/>) が必要です。
+[Adobe Reader](</Adobe Reader/>) が必要です。<br>
 
-さて，中国語や韓国語
-などは[utf8toutf](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/utils/utf8toutf.zip)
-と [otfcjk](http://psitau.kitunebi.com/experiment.html) を併用すると
-便利です。まずはそれぞれダウンロードしておきましょう。
-
-utf8toutf.zip を展開（解凍）し，w32bin/ ディレクトリ内の utf8toutf.exe を
-PATH の通ったディレクトリ（例えば TeX のインストールディレクトリ内にある
-実行ファイルディレクトリ C:\w32tex\bin\ など）にコピーしておきます。
-
-otfcjk.zip も展開後，mkttftrad.pl を開き，先頭の行にある
-
-```
-#!/usr/bin/perl
-```
-
-を
-
-```
-#!/strawberry/perl/bin/perl
-```
-
-に変更しておきます。（これは
-[Strawberry Perl](http://strawberryperl.com/) の
-デフォルトのインストールフォルダです。違う場合は適切に編集します。）
-
-mkchina というファイルを “mkchina.bat” に名前変更し，次のように修正します。
-
-***
-
-```
-echo "making vf (wait a while)..."
-perl mkchina.pl
-perl mkttftrad.pl
-pltotf basepl\s-base-h.pl tfm\s-chinese-h.tfm
-pltotf basepl\s-base-v.pl tfm\s-chinese-v.tfm
-pltotf basepl\s-base-h.pl tfm\s-chineseg-h.tfm
-pltotf basepl\s-base-v.pl tfm\s-chineseg-v.tfm
-pltotf basepl\t-base-h.pl tfm\t-chinese-h.tfm
-pltotf basepl\t-base-v.pl tfm\t-chinese-v.tfm
-pltotf basepl\t-base-h.pl tfm\t-chineseg-h.tfm
-pltotf basepl\t-base-v.pl tfm\t-chineseg-v.tfm
-pltotf basepl\t-base-h.pl tfm\tt-chinese-h.tfm
-pltotf basepl\t-base-v.pl tfm\tt-chinese-v.tfm
-pltotf basepl\t-base-h.pl tfm\tt-chineseg-h.tfm
-pltotf basepl\t-base-v.pl tfm\tt-chineseg-v.tfm
-del vf\*.ofm
-rem copy mlotf.sty test\
-rem copy tfm\* test\
-rem copy vf\* test\
-rem cd test
-rem ptex2pdf -l test1.tex
-rem start test1.pdf
-```
-
-***
-
-なお下のほうの rem を除いて適切に編集すれば，コンパイル・プレビューまで
-全自動でやってくれるでしょうが，通常はその必要はありません。
-
-今作った mkchina.bat をダブルクリックし，TFM と VF を
-生成させます。tfm/ ディレクトリの中身を $TEXMFLOCAL/fonts/tfm/otfcjk/
-に，vf/ ディレクトリの中身を $TEXMFLOCAL/fonts/vf/otfcjk/ にでも
-すべてコピーします。mlotf.sty を $TEXMFLOCAL/tex/latex/otfcjk/ に
-コピーします。あとは必要な方のみ
-
-```
-mktexlsr
-```
-
-を実行してください。
-
-dvipdfmx で変換し，PDF の形で出力結果を見ることになります。
-そこで "sample.map(for dvipdfmx)" を
+"sample.map(for dvipdfmx)" を
 参考に，$TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map に
 次のように追記しておきます。
 
@@ -787,43 +737,6 @@ hirakaku-w6-v  Identity-V          HiraKakuProN-W6.otf
 ```
 hiramaru-w4-h  Adobe-Japan1-6      HiraMaruProN-W4.otf
 hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
-
-%%% UTF package
-%hmr            H                   Ryumin-Light
-%hmrv           V                   Ryumin-Light
-%unijmin-h      UniJIS-UTF16-H      Ryumin-Light
-%unijmin-v      UniJIS-UTF16-V      Ryumin-Light
-```
-
-<!-- %cidmin-h       Identity-H          Ryumin-Light -->
-
-```
-%cidmin-h       Adobe-Japan1-6      Ryumin-Light
-%cidmin-v       Identity-V          Ryumin-Light
-
-hmr            H                   ipaexm.ttf
-hmrv           V                   ipaexm.ttf
-unijmin-h      UniJIS-UTF16-H      ipaexm.ttf
-unijmin-v      UniJIS-UTF16-V      ipaexm.ttf
-```
-
-<!-- %cidmin-h       Identity-H          ipaexm.ttf/AJ16 -->
-
-```
-cidmin-h       Adobe-Japan1-6      ipaexm.ttf
-cidmin-v       Identity-V          ipaexm.ttf/AJ16
-
-hkb            H                   ipaexg.ttf
-hkbv           V                   ipaexg.ttf
-unijgoth-h     UniJIS-UTF16-H      ipaexg.ttf
-unijgoth-v     UniJIS-UTF16-V      ipaexg.ttf
-```
-
-<!-- %cidgoth-h      Identity-H          ipaexg.ttf/AJ16 -->
-
-```
-cidgoth-h      Adobe-Japan1-6      ipaexg.ttf
-cidgoth-v      Identity-V          ipaexg.ttf/AJ16
 ```
 
 ***
@@ -944,21 +857,6 @@ hirakaku-w6-h     HiraKakuProN-W6-Identity-H
 hirakaku-w6-v     HiraKakuProN-W6-Identity-V
 hiramaru-w4-h     HiraMaruProN-W4-Identity-H
 hiramaru-w4-v     HiraMaruProN-W4-Identity-V
-
-%%% UTF package
-hmr                  Ryumin-Light-H
-hmrv                 Ryumin-Light-V
-unijmin-h            Ryumin-Light-UniJIS-UTF16-H
-unijmin-v            Ryumin-Light-UniJIS-UTF16-V
-cidmin-h             Ryumin-Light-Identity-H
-cidmin-v             Ryumin-Light-Identity-V
-
-hkb              GothicBBB-Medium-H
-hkbv             GothicBBB-Medium-V
-unijgoth-h       GothicBBB-Medium-UniJIS-UTF16-H
-unijgoth-v       GothicBBB-Medium-UniJIS-UTF16-V
-cidgoth-h        GothicBBB-Medium-Identity-H
-cidgoth-v        GothicBBB-Medium-Identity-V
 ```
 
 ***
@@ -1059,21 +957,6 @@ hirakaku-w6-h     HiraKakuProN-W6-Identity-H
 hirakaku-w6-v     HiraKakuProN-W6-Identity-V
 hiramaru-w4-h     HiraMaruProN-W4-Identity-H
 hiramaru-w4-v     HiraMaruProN-W4-Identity-V
-
-%%% UTF package
-hmr                  RyuminPr6N-Light-H
-hmrv                 RyuminPr6N-Light-V
-unijmin-h            RyuminPr6N-Light-UniJIS-UTF16-H
-unijmin-v            RyuminPr6N-Light-UniJIS-UTF16-V
-cidmin-h             RyuminPr6N-Light-Identity-H
-cidmin-v             RyuminPr6N-Light-Identity-V
-
-hkb              GothicBBBPr6N-Medium-H
-hkbv             GothicBBBPr6N-Medium-V
-unijgoth-h       GothicBBBPr6N-Medium-UniJIS-UTF16-H
-unijgoth-v       GothicBBBPr6N-Medium-UniJIS-UTF16-V
-cidgoth-h        GothicBBBPr6N-Medium-Identity-H
-cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 ```
 
 ***
@@ -1313,38 +1196,37 @@ cidgoth-v        GothicBBBPr6N-Medium-Identity-V
 「[中国語・韓国語を入力したい](http://www.tjf.or.jp/ringo/migaku/post-22.php)」
 を参考に設定してください。
 
-otfcjk での書き方は
-[Kino さんの入力例](http://www2.odn.ne.jp/alt-quinon/files/ptex/otfcjk/)の
-WhatsUniCJK-tex.zip などを参考にしてください。
-（OS X を想定した書き方のため，そのままコンパイルはできません。
+ここでは ZR さんの PXbase パッケージを使用します。<br>
 
-```
-\usepackage[ttf]{mlotf}
-```
+- [https://github.com/zr-tex8r/PXbase](https://github.com/zr-tex8r/PXbase)
+- [upLaTeXを使おう \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/uplatex.html)
+- [BXbase／PXbase パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxbase.html)
 
-の “\[ttf\]” を抜いて
+使い方は非常に簡単で，繁體字（正體字）は「\foreignlanguage{tchinese}{}」，
+簡化字（&#x7b80;化字，簡体字）は「\foreignlanguage{schinese}{}」，
+ハングル（&#xd55c;&#xae00;）は「\foreignlanguage{korean}{}」を使用するだけです。
 
-```
-\usepackage{mlotf}
-```
-
-に直すことで，［不具合はあるものの］とりあえずコンパイルは通ります。）
-使い方は非常に簡単で，繁體字（正體字）は「繁体中文」環境，
-簡化字（&#x7b80;化字，簡体字）は「簡体中文」環境，
-ハングル（&#xd55c;&#xae00;）は「ハングル」環境で括るだけです。
-
-自分で書いてみたい方は次のような自己紹介の文章でも良いでしょう。
-このファイルを “cjkintro.tex” とします。
+自分で書いてみたい方は次のような自己紹介の文章でも良いでしょう。<br>
+このファイルを “cjkintro.tex” として UTF-8 で保存します。<br>
 
 ***
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{jsarticle}
-%\documentclass{jarticle}
-\usepackage[multi]{otf}
-\usepackage{mlotf}
-
+\ifdefined\kanjiskip
+  \ifdefined\ucs
+    \documentclass[uplatex]{jsarticle}
+    %\documentclass{ujarticle}
+  \else
+    \documentclass{jsarticle}
+    %\documentclass{jarticle}
+    \usepackage[bxutf8]{inputenc}
+    \usepackage{pxbase}
+    \usepackage[multi]{otf}
+  \fi
+  \usepackage[english]{babel}
+  \usepackage[main=japanese]{pxbabel}
+\fi
 \begin{document}
 \section{Japanese}
 こんにちは。私の名前は\textbf{東大}です。よろしくお願いします。
@@ -1354,59 +1236,51 @@ WhatsUniCJK-tex.zip などを参考にしてください。
 \section{Chinese}
 \subsection{Simplified Chinese}
 %%% 簡化字中国語（中国大陸などで用いられる）の場合は
-%%% 「簡体中文」環境を用います。
-\begin{簡体中文}
-你好。说\textbf{东大}。请多关照。
-\end{簡体中文}
+%%% 「\foreignlanguage{schinese}{}」を用います。
+\foreignlanguage{schinese}{你好。说\textbf{东大}。请多关照。}
 
 \subsection{Traditional Chinese}
 %%% 繁體字中国語（臺灣［台湾］・香港などで用いられる）の場合は
-%%% 「繁体中文」環境を用います。
-\begin{繁体中文}
-你好。說\textbf{東大}。請多關照。
-\end{繁体中文}
+%%% 「\foreignlanguage{tchinese}{}」を用います。
+\foreignlanguage{tchinese}{你好。說\textbf{東大}。請多關照。}
 
 \section{Korean}
-%%% 韓国語・朝鮮語の場合は「ハングル」環境を用います。
-\begin{ハングル}
-안녕하세요.\textbf{히가시 히로시}라고 합니다.잘 부탁드립니다.
-\end{ハングル}
+%%% 韓国語・朝鮮語の場合は「\foreignlanguage{korean}{}」を用います。
+\foreignlanguage{korean}{안녕하세요.\textbf{히가시 히로시}라고 합니다.잘 부탁드립니다.}
 
 \end{document}
 ```
 
 ***
 
-コマンドラインより次のコマンドで変換します。
-
-```
-utf8toutf cjkintro.tex cjkintro-sjis.tex
-```
-
-これで変換され，文字コードも自動的に Shift_JIS になりました。
-生成したファイル名はここでは “cjkintro-sjis.tex” です。
-
 あとは ptex2pdf などで処理し，PDF 文書で確認しましょう。
 
 ```
-ptex2pdf -l cjkintro-sjis.tex
+ptex2pdf -l -u cjkintro.tex
+```
+
+または
+
+```
+ptex2pdf -l cjkintro.tex
 ```
 
 または，
 
 ```
-platex cjkintro-sjis.tex
-dvips cjkintro-sjis.dvi
-ps2pdf cjkintro-sjis.ps
+(u)platex cjkintro.tex
+dvips cjkintro.dvi
+ps2pdf cjkintro.ps
 ```
 
 のように実行します。あとは PDF を開いて
 うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
 フォントのインストールを促されたらインストールしておいてください。
 
-最後に。中国語や韓国語は句読点が真ん中に表示されることがありますが，
+最後に。<br>
+中国語や韓国語は句読点が真ん中に表示されることがありますが，
 それで問題ないはずです。
-（フォントのグリフの問題です。伝統的な組版かどうかまでは分かりませんが。）
+（フォントのグリフの問題です。伝統的な組版かどうかまでは分かりませんが。）<br>
 
 ### モンゴル語 {#omoneast}
 
@@ -1462,27 +1336,27 @@ fmtutil --byfmt platex
 中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
 作成し，これを TeX で処理したいという方もいらっしゃるでしょう。
 
-現在では各種フィルタソフト（プリプロセッサ）がありますので，
-それと併用することで Unicode のまま編集することができるようになりました。
-また Unicode のまま編集することで，Aspell によるスペルチェックもできます。
+現在では upTeX と UTF-8 対応 pTeX が
+[TeX Live](</TeX Live/>) と
+[W32TeX](/W32TeX/) で
+利用可能になっています。
+
+[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
+[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+（pTeX の内部 Unicode 版）の Ver.1.11 がリリースされています
+（なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
+
+pTeX 本体の UTF-8 対応は[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)によるものです（和文とラテン文字のみの対応）。<br>
+
+各種フィルタソフト（プリプロセッサ）もありますので，
+それと併用することで Unicode のまま編集することができます。<br>
+また Unicode のまま編集することで，Aspell によるスペルチェックもできます。<br>
 
 フランス語やドイツ語などの Latin-1, Latin-2 文字，ギリシア文字，
 ロシア語のキリル文字，ヴェトナム語，グルジア語，中国語，韓国語に
 ついては[安田功さん](http://yasuda.homeip.net/)が
 [Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) を
-公開していますので，これを用いれば一括で pTeX 処理可能な文書に変換できます。
-
-なお，pTeX 本体の Unicode (UTF-8) 対応に
-ついては[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)による
-試みがあります。（現在は和文とラテン文字のみの対応）。また
-[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
-[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-（pTeX の内部 Unicode 版）の Ver.1.11 もリリースされました
-（現在は安定版，なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
-UTF-8 対応 pTeX と upTeX は
-[TeX Live](</TeX Live/>) と
-[W32TeX](/W32TeX/) で
-利用可能になっています。
+公開していますので，これを用いれば一括で pTeX 処理可能な文書に変換できます。<br>
 
 ### Unicode のテキストファイルを作るには？ {#j8063098}
 
@@ -1498,18 +1372,23 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [Vim](/Vim/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
+SynWrite，
+AkelPad，
 [gedit](/gedit/)，
 [Geany](/Geany/)
 などがあります。
-Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。起動の速さを重視する方はメモ帳がおすすめです。Linux などの UNIX 互換 OS では
-GNU [Emacs](/Emacs/)，[Vim](/Vim/) が，OS X では
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。
+Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。<br>
+起動の速さを重視する方はメモ帳や AkelPad がおすすめです。<br>
+Linux などの UNIX 互換 OS では
+GNU Emacs，Vim が，OS X では
+[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。<br>
 
-そこで Microsoft Windows に付属しているワードパッド (WordPad) で
+Microsoft Windows に付属しているワードパッド (WordPad) で
 リッチテキスト形式 (RTF) の多言語文書を
 作り，[RTFコンバータ](http://www5b.biglobe.ne.jp/~harigaya/rtfcnv.html)で
-UTF-8 テキストファイルに変換する方法をお勧めします。RTFコンバータの
-インストールは，インストーラの指示に従ってインストールするだけなので簡単です。
+UTF-8 テキストファイルに変換する方法もあります。<br>
+RTFコンバータの
+インストールは，インストーラの指示に従ってインストールするだけなので簡単です。<br>
 
 まず，ワードパッドで多言語文書を作ります。それぞれの言語で，適当に
 フォントを切り替えながら編集します（例えば，日本語は「ＭＳ ゴシック」など，
