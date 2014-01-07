@@ -19,7 +19,7 @@ Knuth オリジナルの TeX と100%の互換性を保ちながら
 TeX の少々不便なところを補うような実用性の高い拡張となっている。<br>
 近年，ConTeXt や LaTeX における hyperref package など
 e-TeX の拡張モードを要求するマクロ類が増加しつつある。<br>
-また e-pTeX, e-upTeX, [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/), LuaJITTeX，[XeTeX](/XeTeX/)，Aleph （Omega と e-TeX のマージ） といった
+また e-pTeX, e-upTeX, [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/), LuaJITTeX，[XeTeX](/XeTeX/)，[Aleph](http://wiki.contextgarden.net/Aleph) （Omega と e-TeX のマージ） といった
 主だった TeX の拡張版においても e-TeX の拡張機能は取り入れられており，
 事実上の新標準とも呼ぶべき重要な拡張と言える。<br>
 
