@@ -36,6 +36,31 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 ### 注意点 {#w700f957}
 
+#### \setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合がある → \setmainfont{ipaexm.ttf} を追加する {#p8d5ba51}
+
+以下のように \setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合があるかもしれません．<br>
+
+```
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{ipaexm.ttf}
+\begin{document}
+あいうえお①
+\end{document}
+```
+
+\setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合は \setmainfont{ipaexm.ttf} を追加します．<br>
+
+```
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{ipaexm.ttf}
+\setmainfont{ipaexm.ttf}
+\begin{document}
+あいうえお①
+\end{document}
+```
+
 #### xeCJK error: "conflict-package" → \usepackage{xltxtra} を記述しないまたは \usepackage{xeCJK} のあとに \usepackage{xltxtra} を記述 {#g3111be5}
 
 - [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
