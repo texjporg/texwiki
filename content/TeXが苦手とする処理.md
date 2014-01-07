@@ -17,7 +17,7 @@ pukiwiki: "TeXが苦手とする処理"
 
 ここに挙げる処理を行うのが単なる「書き手の趣味」である場合には，
 無理をせずに書き手自身の腕で無難にできる範囲の
-処理で済ませる（か，画像にしてしまう）方が賢明である場合もあることでしょう。
+処理で済ませるか，画像にしてしまう方が賢明である場合もあることでしょう。
 
 ### 複数行にわたる下線（あるいは波線・破線など） {#t65559ac}
 
@@ -54,12 +54,12 @@ TeX は「お絵描き」ソフトではない以上，そのような飾り枠�
 
 枠の途中でのページ分割の必要がなければ，比較的単純な形状の枠については
 ascmac パッケージが提供する itembox 環境といったものが存在します
-（さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）。
+（さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）。<br>
 また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は
 「飾り文字を並べて作成した枠（ページ分割は不可）」を
 作成するマクロを提供しています
 （niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
-Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。
+Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。<br>
 
 <!-- // 枠の四隅を四分円にする例（PSTricks 使用）： -->
 <!-- // 枠線上に見出し文字列を乗せるにはもう少し細工が必要です。 -->
@@ -178,26 +178,26 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 「テキストに枠をつけたものを分割する」という形でのページ分割の必要がある場合，
 長方形の枠については
 [eclbkbox パッケージ](http://mechanics.civil.tohoku.ac.jp/~bear/bear-collections/style-files/eclbkbox.lzh)が
-提供する breakbox 環境が利用できます。
+提供する breakbox 環境が利用できます。<br>
 なお，ページ分割可能な枠の四隅を四分円にしたり
 斜めに切り落とした（八角形状の）枠にしたものは
 （著名な）既製品では提供されていないようですので，
-ユーザ自身で作成することになります。
+ユーザ自身で作成することになります。<br>
 要は，eclbkbox パッケージによる breakbox 環境などの処理をふまえつつ
 「枠の四隅」のところだけ書き換えればよいということになります
-（やるべきことは [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) の例と同様です）。
+（やるべきことは [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) の例と同様です）。<br>
 さらに，ページ分割可能な破線の枠を作成するとなると，もはや自動化は諦めて
 「手動で枠を分割しつつ，枠の断片を pstricks あたりで描画する」
 という方針をとるのが現実的かもしれません
 （一応，長方形の枠についてマクロレベルの処理で済ませた例が
-[qa:17408](https://okumuralab.org/~okumura/texfaq/qa/17408.html) にあります）。
+[qa:17408](https://okumuralab.org/~okumura/texfaq/qa/17408.html) にあります）。<br>
 
 #### 複数ページにわたる枠 (2) ［複数の枠を作成する場合］ {#s982eb3b}
 
 「枠をつけるテキストが複数ページにまたがる場合，個々のページに収まる部分ごとに
 枠をつける」という処理を行うには，framed パッケージが
 提供する framed 環境，shaded 環境
-（あるいは shaded 環境の定義に準じてカスタマイズしたもの）が使えます。 <!-- framed 環境と breakbox 環境との違いは， --> <!-- 例えば枠が3ページ以上にわたる場合の出力が次のようになる， --> <!-- という点にあります。 --> <!-- framed 環境: --> <!--    \fbox{最初の断片}, \fbox{2番目の断片},..., \fbox{最後の断片} --> <!-- breakbox 環境: --> <!--    最初の断片の上部と左右のみ罫線で囲んだもの， --> <!--    2番目の断片の左右にのみ罫線がついたもの， --> <!--    ...， --> <!--    最後の断片の下部と左右のみ罫線で囲んだもの -->
+（あるいは shaded 環境の定義に準じてカスタマイズしたもの）が使えます。<br> <!-- framed 環境と breakbox 環境との違いは， --> <!-- 例えば枠が3ページ以上にわたる場合の出力が次のようになる， --> <!-- という点にあります。 --> <!-- framed 環境: --> <!--    \fbox{最初の断片}, \fbox{2番目の断片},..., \fbox{最後の断片} --> <!-- breakbox 環境: --> <!--    最初の断片の上部と左右のみ罫線で囲んだもの， --> <!--    2番目の断片の左右にのみ罫線がついたもの， --> <!--    ...， --> <!--    最後の断片の下部と左右のみ罫線で囲んだもの -->
 
 ### 原稿用紙 {#i5d966d4}
 
@@ -213,10 +213,10 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 
 ### 丸附き数字 → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX を使用する {#s7930698}
 
-まず，丸附き数字（e.g.
+丸附き数字（e.g.
 &#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は Unicode を使用せずに従来の
 Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り
-機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。
+機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。<br>
 
 対処法は，大別すると次の3通りになります。
 
