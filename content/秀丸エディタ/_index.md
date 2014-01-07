@@ -48,7 +48,7 @@ Unicode(UTF-8) を選択します．<br>
 
 ***
 
-<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>自動判定の設定　(動作環境)</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#8080FF;background-color:#8080FF;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>自動判定の設定　(動作環境)</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　　自動判定で開くとき<br>
 　　　☑ファイルの内容を解析してエンコードの種類を自動認識する(E)<br>
@@ -57,7 +57,7 @@ Unicode(UTF-8) を選択します．<br>
 　　　　　☑日本語(EUC)<br>
 　　　　　☑日本語(JIS)<br>
 　　　　複数のエンコードの種類に適合する場合(M):<br>
-　　　　　　<span style="color:#3333CC;">◎</span>最初に確定したものにする<br>
+　　　　　　(●)最初に確定したものにする<br>
 　　　　　　◯優先順位に従う（２回読み込みが働くことがあります）<br>
 　　　　　　◯候補の一覧を表示<br>
 　　　☑XML宣言の認識(X)　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　標準のエンコードの種類(D)...　\]</span><br>
@@ -66,12 +66,12 @@ Unicode(UTF-8) を選択します．<br>
 
 ***
 
-<span style="color:Black;background-color:#8080FF;"><ins>　<span style="color:White;"><strong>標準のエンコードの種類</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;"></ins>\[ 　<strong><span style="color:White;">✕</span></strong>　 \]<ins></span> </ins></span><br>
+<span style="color:#8080FF;background-color:#8080FF;"><ins>　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>標準のエンコードの種類</strong></span>　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　　標準のエンコードの種類(D)<br>
-　　　　エンコードの種類(C) :　<span style="color:Black;background-color:#EEEEEE;">\[Unicode(UTF-8)　　　　　　　　　　　　　　▼\]</span><br>
-　　　　改行コード(R) :　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　▼\]</span><br>
-　　　　BOMの有無 :　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　▼\]</span><br>
+　　　　エンコードの種類(C) :　<span style="color:Black;background-color:#EEEEEE;">\[Unicode(UTF-8)　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　改行コード(R) :　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　BOMの有無 :　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　標準のエンコードの種類は、自動判定できなかった場合と、新規作成時<br>
 　　　とASCIIのファイルに適用されます。<br>
 
