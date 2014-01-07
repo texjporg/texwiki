@@ -34,63 +34,36 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 - [/tags/xeCJK/](https://code.google.com/p/ctex-kit/source/browse/tags/xeCJK/)
 - [Changes](https://code.google.com/p/ctex-kit/source/list)
 
-### 注意点 {#w700f957}
-
-#### \setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合がある → \setmainfont{ipaexm.ttf} を追加する {#p8d5ba51}
-
-以下のように \setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合があるかもしれません．<br>
-
-```
-\documentclass{article}
-\usepackage{xeCJK}
-\setCJKmainfont{ipaexm.ttf}
-\begin{document}
-あいうえお①
-\end{document}
-```
-
-\setCJKmainfont{ipaexm.ttf} で ① (U+2460) が表示されない場合は \setmainfont{ipaexm.ttf} を追加します．<br>
-
-```
-\documentclass{article}
-\usepackage{xeCJK}
-\setCJKmainfont{ipaexm.ttf}
-\setmainfont{ipaexm.ttf}
-\begin{document}
-あいうえお①
-\end{document}
-```
-
-#### xeCJK error: "conflict-package" → \usepackage{xltxtra} を記述しないまたは \usepackage{xeCJK} のあとに \usepackage{xltxtra} を記述 {#g3111be5}
-
-- [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
-
-xeCJK error: "conflict-package" が発生する場合は \usepackage{xltxtra} を記述しないかまたは \usepackage{xeCJK} のあとに \usepackage{xltxtra} を記述します． 
-
-```
-\usepackage{xltxtra}
-\usepackage{xeCJK}
-```
-
-のように \usepackage{xeCJK} の前に \usepackage{xltxtra} を記述した場合に xeCJK error: "conflict-package" が発生する場合があります．
-
-```
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! xeCJK error: "conflict-package"
-!
-! The `xltxtra' package is in conflict with xeCJK.
-! Please do not use it or load it after xeCJK.
-!
-! See the xeCJK documentation for further information.
-!
-! Type <return> to continue.
-!...............................................
-```
+<!-- **注意点 [#w700f957] -->
 
 ### 不具合 {#t2600dd9}
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
+
+#### xeCJK 3.2.9 で ① (U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
+
+xeCJK 3.2.9 で ① (U+2460) が表示されません．<br>
+
+```
+\documentclass{scrartcl}
+\usepackage{xeCJK}
+\setCJKmainfont{ipaexm.ttf}
+\begin{document}
+ABCDEあいうえお①
+\end{document}
+```
+
+① (U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
+
+```
+\documentclass{scrartcl}
+\usepackage{xeCJK}
+\setCJKmainfont{ipaexm.ttf}
+\XeTeXcharclass`①=1
+\begin{document}
+ABCDEあいうえお①
+\end{document}
+```
 
 ### 使い方 {#k3d278aa}
 
@@ -169,7 +142,7 @@ kpathsea: Appending font creation commands to missfont.log.
 ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
 ZXjatype は TeX Live, W32TeX に含まれています．<br>
 ZXjatype は xeCJK が必要です．<br>
-ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeCJK の動作に必要な新しいバージョンの l3kernel, l3packages が必要です．<br>
+ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 - [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/zxjatype](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/)
@@ -181,22 +154,15 @@ ZXjatype 0.6 で xeCJK 3.x 版を使用する場合は xeCJK 3.0.7 以降と xeC
 
 [Tags · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/tags) を参照．<br>
 
-ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
-[xeCJK 3.0.6 r343](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK/?r=343) を使用していて XeTeX 3.1415926-2.4-0.9998 でエラーが発生する場合は ZXjatype 0.6 は使用できません．<br>
-xeCJK 3.0.6 r343 を使用している場合は xeCJK, [l3kernel](https://mirror.ctan.org/help/Catalogue/entries/l3kernel.html), [l3packages](https://mirror.ctan.org/help/Catalogue/entries/l3packages.html) をアップデートしてください．<br>
-ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xeCJK 3.x 版ではエラーが発生します．<br>
-
 ### ChangeLog {#s6e9d1be}
 
-[>Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
+[Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
 
 <!-- **不具合 [#u54213d7] -->
 
 ### 使い方 {#v46b0c77}
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
-
-#### BXjscls を使用する場合 {#zd6d9a92}
 
 以下の様な文書を作成して UTF-8 で保存します．<br>
 
@@ -207,7 +173,11 @@ ZXjatype 0.6 よりも前のバージョンは expl3 で記述されている xe
 ***
 
 ```
-\documentclass[xelatex,jadriver=standard]{bxjsarticle}
+\documentclass[xelatex]{bxjsarticle}
+\usepackage{zxjatype}
+\setjamainfont{ipaexm.ttf}
+\setjasansfont{ipaexg.ttf}
+\setjamonofont{ipaexg.ttf}
 \begin{document}
 
 吾輩は猫である。名前はまだ無い。
