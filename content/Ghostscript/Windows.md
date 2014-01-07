@@ -7,8 +7,6 @@ pukiwiki: "Ghostscript/Windows"
 
 # Ghostscript/Windows
 
-Windows のための Ghostscript としてまず触れるべきなのは，公式のWindows配布物でしょう．そのうえで，角藤さんの作成されているGhostscriptではどんな差分があるか開設するのが良いのではないでしょうか？　最近では，TeX Live (2013) に含まれている tlgs が，日本語の設定まで済んだ公式のWindows配布物に近い出来になっている（Resoursesディレクトリなどが消えているにも関わらずユーザにとって不自由のない動きになっている）ので，それについても触れるのがよいのではないでしょうか？
-
 [Ghostscript](/Ghostscript/) > Windows
 
 ## Ghostscript for Microsoft Windows {#zaffc352}
@@ -400,7 +398,11 @@ Windows PowerShell の使い方がわからない場合は Ghostscript を再度
 
 ### cidfmap の基本的な記述方法 {#p7036a99}
 
-cidfmap を書き換える際に必要になることを簡単に述べておきます(詳しくは gs のドキュメントを読んでください)．下に実験用の基本的な例を張り付けておきます．前半の % Aliases は，左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．後半の % Substitutions は TrueType font の設定と考えて下さい．この例では，次の4つのフォント代替の連鎖が作られます(あるいはそう考えることができます)．
+cidfmap を書き換える際に必要になることを簡単に述べておきます(詳しくは gs のドキュメントを読んでください)．<br>
+下に実験用の基本的な例を張り付けておきます．<br>
+前半の % Aliases は，左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．<br>
+後半の % Substitutions は TrueType font の設定と考えて下さい．<br>
+この例では，次の4つのフォント代替の連鎖が作られます(あるいはそう考えることができます)．<br>
 
 ```
 Ryumin-Light -> MS-Mincho -> msmincho.ttc
@@ -409,7 +411,9 @@ HeiseiMin-W3 -> Ryumin-Light -> MS-Mincho -> msmincho.ttc
 HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
 ```
 
-ここで，一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．このことにも注意を払ってください．
+ここで，一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．<br>
+Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．<br>
+このことにも注意を払ってください．<br>
 
 ***
 
@@ -475,7 +479,8 @@ gs\gs$(rungs --version)\Resource\CMap\ に入っています。主なものを�
 
 ### CID font {#dc743646}
 
-CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．フォントファイルの置き場所が gs\gs$(rungs --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．
+CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．<br>
+フォントファイルの置き場所が gs\gs$(rungs --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．<br>
 
 CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
 
