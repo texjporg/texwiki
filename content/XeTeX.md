@@ -570,10 +570,12 @@ FMT ファイルで、\XeTeXcharclass の値は
 \@for\Kinsoku:={`＃,`￥,`＄,`＆}\do{\XeTeXcharclass\Kinsoku=4}
 ```
 
-とします。 \XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。
-\XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。
-なお、このメカニズムにより、文字間にトークンを挿入すると、内蔵の ICU ライブラリによる解析の対象は個別の文字になってしまうので、 \XeTeXlinebreaklocale の設定は無意味になります。
-同様に、 OpenType フォントの持つ、コンテクスト依存の文字置換や、リガチャーを使用する際にも、 \XeTeXinterchartokenstate=0 としなければなりません。
+とします。<br>
+\XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。<br>
+\XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。<br>
+これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。<br>
+なお、このメカニズムにより、文字間にトークンを挿入すると、内蔵の ICU ライブラリによる解析の対象は個別の文字になってしまうので、 \XeTeXlinebreaklocale の設定は無意味になります。<br>
+同様に、 OpenType フォントの持つ、コンテクスト依存の文字置換や、リガチャーを使用する際にも、 \XeTeXinterchartokenstate=0 としなければなりません。<br>
 
 ```
 {\XeTeXinterchartokenstate=0\fontspec[Script=Kana,RawFeature=+dlig]{Kozuka Mincho Pro-VI}ミリバール}
