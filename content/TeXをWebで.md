@@ -127,7 +127,6 @@ ulimit -t 10 -f 1024
 
 #### フリーウェア (無料) {#e0fded48}
 
-- [TeXを使ってみよう（pTeX版）](http://glc.l.u-tokyo.ac.jp/tex/)
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [Online Latex Editor](http://luikore.github.com/latex/)
 - [compileonline.com](http://www.compileonline.com/)
