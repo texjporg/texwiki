@@ -16,7 +16,7 @@ dviout で問題が発生する場合は <strong>dviout を使用せず PDF フ�
 
 ## dviout for Windows とは？ {#i1497a3b}
 
-dviout for Windows は (e-)pTeX 対応の DVI プレビューアです。<br>
+dviout for Windows は (e-)(u)pTeX 対応の DVI プレビューアです。<br>
 詳しくは開発者（[大島利雄さん](http://akagi.ms.u-tokyo.ac.jp/~oshima/)）ご自身による次のページをご覧ください。
 
 - [dviout/dviprt 情報](http://akagi.ms.u-tokyo.ac.jp/dviout.html)
@@ -46,14 +46,16 @@ Expat License については
 
 2013-12-14 dviout 3.18.4 ALPHA 1<br>
 
-dviout 3.18.3 ALPHA 5 以前の dviout は [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォント
-についてバグがあり、また非常に長いフォント名を与えるとクラッシュする
-問題を持っていました。<br>
+dviout 3.18.3 ALPHA 5 以前の dviout には以下の問題があります。<br>
+
+- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォントについてバグがあります。<br>
+- 非常に長いフォント名を与えるとクラッシュします。<br>
+
+dviout 3.18.4 ではこれらの点が訂正されています。<br>
 dviout 3.18.4 は実質的に
-dviout3183a6-inst-20111008.zip と同じものであり，ここではこれらの点が
-訂正されています。<br>
-dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
-最小の修正を加え，正式リリースされたものです。
+dviout3183a6-inst-20111008.zip と同じものです。<br>
+dviout 3.18.4 (dviout3184-inst.zip) は
+dviout3183a6-inst-20111008.zip に最小の修正を加え，正式リリースされたものです。
 
 ### ChangeLog {#r5124b5a}
 
@@ -64,7 +66,8 @@ dviout 3.18.4 (dviout3184-inst.zip) は dviout3183a6-inst-20111008.zip に
 
 ## ビルド {#d0101f83}
 
-ソースコードを取得
+[Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．<br>
+Windows PowerShell またはコマンド プロンプトを起動して dviout のソースコードを取得します．<br>
 
 ```
 mkdir dviout
@@ -72,13 +75,10 @@ cd dviout
 svn co svn://tug.org/dviout/trunk
 ```
 
-trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動
-
-Solution Explorer から dviwin.c を削除
-
-BUILD -> Build Solution で dviout をビルド
-
-MSBuild を使用してビルドすることもできます
+trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動します．<br>
+Solution Explorer から dviwin.c を削除します．<br>
+BUILD -> Build Solution で dviout をビルドします．<br>
+Windows PowerShell またはコマンド プロンプトからビルドしたい場合は MSBuild を使用してビルドすることもできます．<br>
 
 ```
 msbuild dviout.sln
@@ -565,7 +565,7 @@ dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化され�
 - [uptex, uplatex](http://d.hatena.ne.jp/gcg00467/20101223#1293103329)
 - [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】#upTeX/upLaTeX を利用する場合の設定](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml#UPTEX)
 
-upTeX で DVI ファイルを作成し，dviout で表示しようとすると font file over のエラーが発生します。<br>
+upTeX で DVI ファイルを作成し，初期設定の状態で dviout で表示しようとすると font file over のエラーが発生します。<br>
 \[OK\] をクリックすると dviout が強制終了します。<br>
 
 ***
