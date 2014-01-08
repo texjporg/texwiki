@@ -7,6 +7,8 @@ pukiwiki: "upTeX,upLaTeX"
 
 # upTeX,upLaTeX
 
+## e-upTeX {#t3be9c34}
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## upTeX, upLaTeXとは {#ge195750}
@@ -157,8 +159,9 @@ upTeXは、\kcatcode の設定次第で、入力された UTF-8 の文字を内�
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
-upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK 記号, ハングル のいずれかに設定されています。
-適切なフォントに切り替えるだけで、CJK 混植の文書を作成できます。以下は、入力例です。
+upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK 記号, ハングル のいずれかに設定されています。<br>
+適切なフォントに切り替えるだけで、CJK 混植の文書を作成できます。<br>
+以下は、入力例です。<br>
 
 ```
 \documentclass{ujarticle}
