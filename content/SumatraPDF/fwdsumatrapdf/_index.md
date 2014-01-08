@@ -79,7 +79,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [NppExec](/NppExec/)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
-- [TeXnicCenter](/TeXnicCenter/)
 
 ## 関連リンク {#c84cbf92}
 
