@@ -57,15 +57,16 @@ pLaTeX 2ε が出ました。<br>
 これにともなって，それ以前の古い LaTeX を特に LaTeX 2.09
 と呼ぶことになりました。<br>
 以下では現行の LaTeX 2ε と
-pLaTeX 2ε に基づいて説明します。<br>
+pLaTeX 2ε と
+upLaTeX 2ε に基づいて説明します。<br>
 組版処理による表記ができないプレーンテキストや電子メールなどで書くときには
-LaTeX 2ε を “LaTeX2e” と書くことになっていますので，以下では “LaTeX2e”，“pLaTeX2e” と書きます。
+LaTeX 2ε を “LaTeX2e” と書くことになっていますので，以下では “LaTeX2e”，“pLaTeX2e”，“upLaTeX2e” と書きます。
 
 TeX，pTeX については，ここでは
-LaTeX2e，pLaTeX2e の「縁の下の力持ち」としてそれぞれ
-TeX，pTeX が働いていると言うに留めておき，詳しい説明は省略します。<br>
+LaTeX2e，pLaTeX2e，upLaTeX2e の「縁の下の力持ち」としてそれぞれ
+TeX，pTeX，upTeX が働いていると言うに留めておき，詳しい説明は省略します。<br>
 
-## LaTeX2e，pLaTeX2e の入門書 {#l062c239}
+## LaTeX2e，pLaTeX2e，upLaTeX2e の入門書 {#l062c239}
 
 まずは次の本を挙げておきます。
 
@@ -79,7 +80,7 @@ TeX，pTeX が働いていると言うに留めておき，詳しい説明は省
 
 LaTeX には大きく分けて二つの異なるバージョンがあります。<br>
 現行の LaTeX2e と，一昔前の
-LaTeX 2.09 です（日本語化されたものでは pLaTeX2e と
+LaTeX 2.09 です（日本語化されたものでは upLaTeX2e と pLaTeX2e と
 pLaTeX 2.09 です）。<br>
 LaTeX2e と LaTeX 2.09 は別物と考えて良いくらいです。
 
