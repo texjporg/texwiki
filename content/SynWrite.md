@@ -18,6 +18,8 @@ SynWrite は Unicode をサポートしたテキストエディタです．<br>
 - [SynWrite](http://www.uvviewsoft.com/synwrite/)
 - [http://sourceforge.net/projects/synwrite/](http://sourceforge.net/projects/synwrite/)
 - [SynWrite / Wiki / Home](http://sourceforge.net/p/synwrite/wiki/)
+- [http://www.econtrol.ru/](http://www.econtrol.ru/)
+- [http://www.addictivesoftware.com/](http://www.addictivesoftware.com/)
 
 ### 動作環境 {#cee93992}
 
