@@ -354,7 +354,7 @@ latexmk は TeX Live に含まれています．<br>
 ;(setq org-latex-pdf-process '("latexmk -e '$pdflatex=q/xelatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$makeindex=q/texindy -o %D %S/' -norc -gg -xelatex %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
-      '(("pdf" . "evince %s")))
+      '(("pdf" . "xdg-open %s")))
 
 (add-to-list 'org-latex-classes
              '("jsarticle"
