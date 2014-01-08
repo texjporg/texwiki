@@ -7,10 +7,7 @@ pukiwiki: "pTeXと多言語処理"
 
 # pTeXと多言語処理
 
-e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できません．<br>
-Unicode を使用する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．<br>
-
-## pTeXと多言語処理 (obsolete) → e-upTeX を使用する {#z7e3fae1}
+## upTeX, pTeX と多言語処理 {#z7e3fae1}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -76,13 +73,11 @@ ASCII 翻字入力についての詳細は
 [ASCII 文字による翻字入力方式](</アスキー文字を用いた転写表記/>)は
 入力ソフト (input method) を必要としないという点で有用な手段ですが，
 中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
-作成し，これを TeX で処理したいという方もいらっしゃるでしょう。
-
+作成し，これを TeX で処理したいという方もいらっしゃるでしょう。<br>
 現在では upTeX が
 [TeX Live](</TeX Live/>) と
 [W32TeX](/W32TeX/) で
-利用可能になっています。
-
+利用可能になっています。<br>
 [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
 [upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
 （pTeX の内部 Unicode 版）の Ver.1.11 がリリースされています
@@ -90,11 +85,11 @@ ASCII 翻字入力についての詳細は
 
 ### Unicode のテキストファイルを作るには？ {#j8063098}
 
-このスクリプトを使うためには，もちろん外国語を直接入力するための入力ソフト
+Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト
 (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](http://www.google.co.jp/) などで探してみましょう。<br>
-参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?eLearning%2FInputMethod%2FGreek%2FWindows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では
 元々付属しているメモ帳 (Notepad) の他に
@@ -112,9 +107,9 @@ SynWrite，
 などがあります。<br>
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。<br>
 起動の速さを重視する方はメモ帳や AkelPad がおすすめです。<br>
-Linux などの UNIX 互換 OS では
-GNU Emacs，Vim が，OS X では
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。<br>
+OS X では
+[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，Linux などの UNIX 互換 OS では
+GNU Emacs，Vim が定番だと思います。<br>
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
@@ -246,13 +241,16 @@ updmap --add arabtex.map
 
 ### ヘブライ語 {#o6107e61}
 
-ヘブライ語は Babel の hebrew オプションを用いる方法があります。
+ヘブライ語は Babel の hebrew オプションを用いる方法があります。<br>
 TeX--XeT 機能を用いるため [e-TeX](/e-TeX/) 非対応の古い pTeX では処理できませんでしたが，[e-pTeX](/e-pTeX/) の登場により処理可能になりました。
 参考： [qa:50566](https://okumuralab.org/~okumura/texfaq/qa/50566.html),  [qa:50568](https://okumuralab.org/~okumura/texfaq/qa/50568.html), [qa:50589](https://okumuralab.org/~okumura/texfaq/qa/50589.html), [qa:55967](https://okumuralab.org/~okumura/texfaq/qa/55967.html) <!-- , [[qa:55969]], [[qa:55970]] ← これらはドイツ語なので削っておきます。 -->
 
 ## 中央アジアの諸言語 {#arsktowi}
 
-サンスクリット語は skt パッケージなどが知られています。また，ベンガル語・タミル語などの言語についても扱えます。これらについても「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」をご覧ください。後者にはインストール方法についての解説もあります。
+サンスクリット語は skt パッケージなどが知られています。<br>
+また，ベンガル語・タミル語などの言語についても扱えます。<br>
+これらについても「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」をご覧ください。<br>
+後者にはインストール方法についての解説もあります。<br>
 
 ## 東南アジアの諸言語 {#sethiecs}
 
@@ -301,12 +299,13 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 
 ### タイ語 {#thiocpaq}
 
-\[\[タイ語をどうにかする実験 \[電脳世界の奥底にて\]:http://zrbabbler.sp.land.to/bxthai.html\] を参照．<br>
+[タイ語をどうにかする実験 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/bxthai.html) を参照．<br>
 
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
+まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。<br>
+TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
 
 [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
 
