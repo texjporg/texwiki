@@ -131,12 +131,14 @@ UTF-8 を使用したい方は
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [LyX](/LyX/)
-- [TeXnicCenter](/TeXnicCenter/)
 - [Eclipse](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
+- AkelPad
+- SynWrite
+- [TeXnicCenter](/TeXnicCenter/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
