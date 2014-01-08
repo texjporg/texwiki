@@ -9,7 +9,7 @@ pukiwiki: "新 pTeX とBabel"
 
 ## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） (obsolete) → e-upTeX を使用する {#u0b9622c}
 
-以下では LaTeX/pLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
+以下では pdfLaTeX/upLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 
 なお、「新 pTeX」とはバージョン3.1.4以降のpTeXを指します。
 
@@ -155,7 +155,7 @@ TeX Live 2013 は Babel に対応しています。<br>
 
 ### タイプセットのテスト {#mafcbf19}
 
-- 以下のファイルをタイプセットしてみてください。pdflatex, uplatex, platex の
+- 以下のファイルをタイプセットしてみてください。pdflatex, uplatex の
     いずれでも OK となっているはずです（出力結果は
     『[［改訂第4版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
     付録J 357ページないし
@@ -287,12 +287,6 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
     ```
     ptex2pdf -l -u johannes.tex
-    ```
-
-    または
-
-    ```
-    ptex2pdf -l johannes.tex
     ```
 
     とすることで PostScript フォントの埋め込まれた PDF が作成されます。
