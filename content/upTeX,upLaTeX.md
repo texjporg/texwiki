@@ -94,8 +94,8 @@ ptex2pdf -l -u kumo
 
 ### 簡単な使い方 {#wd228c3a}
 
-upTeX, upLaTeX は、pTeX, pLaTeX とほぼ同様に使うことができます。
-pTeX, pLaTeX で利用しているコマンド名等は以下のように読み替えてください。
+upTeX, upLaTeX は、pTeX, pLaTeX とほぼ同様に使うことができます。<br>
+pTeX, pLaTeX で利用しているコマンド名等は以下のように読み替えてください。<br>
 
 - コマンド名
 
@@ -140,8 +140,8 @@ pTeX, pLaTeX で利用しているコマンド名等は以下のように読み�
 | JY1  | JY2   | 横組み |
 | JT1  | JT2   | 縦組み |
 
-jsarticle.cls では、uplatex オプションを追加してください。
-[otfパッケージ](/OTF/)では、uplatex オプションを追加してください。
+jsarticle.cls では、uplatex オプションを追加してください。<br>
+[otfパッケージ](/OTF/)では、uplatex オプションを追加してください。<br>
 
 ### dviware {#e548f906}
 
