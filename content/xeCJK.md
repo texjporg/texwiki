@@ -158,7 +158,32 @@ ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 [Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
 
-<!-- **不具合 [#u54213d7] -->
+### 不具合 {#u54213d7}
+
+#### ZXjatype 0.6 で ① (U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
+
+ZXjatype 0.6 で ① (U+2460) が表示されません．<br>
+
+```
+\documentclass[xelatex]{bxjsarticle}
+\usepackage{zxjatype}
+\setjamainfont{ipaexm.ttf}
+\begin{document}
+ABCDEあいうえお①
+\end{document}
+```
+
+① (U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
+
+```
+\documentclass[xelatex]{bxjsarticle}
+\usepackage{zxjatype}
+\setjamainfont{ipaexm.ttf}
+\XeTeXcharclass`①=1
+\begin{document}
+ABCDEあいうえお①
+\end{document}
+```
 
 ### 使い方 {#v46b0c77}
 
