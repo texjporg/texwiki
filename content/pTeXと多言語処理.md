@@ -7,7 +7,12 @@ pukiwiki: "pTeXと多言語処理"
 
 # pTeXと多言語処理
 
+e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できません．<br>
+Unicode を使用する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．<br>
+
 ## pTeXと多言語処理 (obsolete) → e-upTeX を使用する {#z7e3fae1}
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 ## 初めに {#pfirasfd}
 
