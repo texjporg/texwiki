@@ -11,6 +11,10 @@ pukiwiki: "pTeXと多言語処理"
 
 ## 初めに {#pfirasfd}
 
+ここでは upTeX, pTeX での多言語処理を扱います．<br>
+[upTeX](/upTeX,upLaTeX/) については、CJK 以外の言語では事情は pTeX とほぼ同じです。<br>
+[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。<br>
+
 pTeX 上で多言語混在文書を扱う方法を
 まとめたものとして，[稲垣徹さん](http://www2.tba.t-com.ne.jp/ing/)による
 「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
@@ -28,18 +32,22 @@ OS などでも似たような方法でインストールできるかもしれ�
 また，[安田功さんの解説](http://yasuda.homeip.net/tex/texinst2.html)は
 UNIX 互換 OS での多言語環境構築において非常に参考になると思います。<br>
 
-### 参考—pTeX を使わない方法 {#o00569f3}
+### 参考—upTeX, pTeX を使わない方法 {#o00569f3}
 
-ちなみに，pTeX でなくても良い場合は，
+ちなみに，upTeX, pTeX でなくても良い場合は，
 
-1. [upTeX](/upTeX,upLaTeX/)
 1. [LuaTeX](/LuaTeX/)
 1. LuaJITTeX
-1. [XeTeX](/XeTeX/), [XeLaTeX](/XeTeX/) + [xeCJK パッケージ](/xeCJK/)
-1. [(pdf)LaTeX](/pdfTeX/) + [CJK パッケージ](/LaTeX-CJK/)
+1. [XeTeX](/XeTeX/)
 
 によるアプローチなどが考えられます。<br>
-upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じです。[upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。<br>
+
+CJK に関しては，
+
+1. [XeLaTeX](/XeTeX/) + [xeCJK パッケージ](/xeCJK/)
+1. [(pdf)LaTeX](/pdfTeX/) + [CJK パッケージ](/LaTeX-CJK/)
+
+などが考えられます。<br>
 
 ### 入力方法—ASCII 翻字入力 (transliteration) と直接入力 {#n744380c}
 
@@ -52,9 +60,55 @@ upTeX については、CJK 以外の言語では事情は pTeX とほぼ同じ�
 ASCII 翻字入力についての詳細は
 [TeXWiki:アスキー文字を用いた転写表記](</アスキー文字を用いた転写表記/>) を
 ご覧ください（入力サンプルは
-[TeXWiki:新 pTeX と Babel #タイプセットのテスト](</新 pTeX とBabel/#mafcbf19>)）。
-また Unicode を用いた直接入力については本ページ後半
-[#多言語の Unicode 直接入力と pTeX](#cyraccpw) をご覧ください。<br>
+[TeXWiki:新 pTeX と Babel #タイプセットのテスト](</新 pTeX とBabel/#mafcbf19>)）。<br>
+また Unicode を用いた直接入力については
+[#多言語の Unicode 直接入力と upTeX](#cyraccpw) をご覧ください。<br>
+
+## 多言語の Unicode 直接入力と upTeX {#cyraccpw}
+
+### 概要 {#tagaiyos}
+
+[ASCII 文字による翻字入力方式](</アスキー文字を用いた転写表記/>)は
+入力ソフト (input method) を必要としないという点で有用な手段ですが，
+中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
+作成し，これを TeX で処理したいという方もいらっしゃるでしょう。
+
+現在では upTeX が
+[TeX Live](</TeX Live/>) と
+[W32TeX](/W32TeX/) で
+利用可能になっています。
+
+[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
+[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+（pTeX の内部 Unicode 版）の Ver.1.11 がリリースされています
+（なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
+
+### Unicode のテキストファイルを作るには？ {#j8063098}
+
+このスクリプトを使うためには，もちろん外国語を直接入力するための入力ソフト
+(input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
+
+input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/abeaupricker/) に関するサイトを挙げておきます。
+
+一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
+元々付属しているメモ帳 (Notepad) の他に
+オープンソースソフトウェアとして<br>
+
+[Emacs](/Emacs/)，
+[Vim](/Vim/)，
+[Notepad++](/Notepad++/)，
+[サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
+SynWrite，
+AkelPad，
+[gedit](/gedit/)，
+[Geany](/Geany/)
+
+などがあります。<br>
+Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。<br>
+起動の速さを重視する方はメモ帳や AkelPad がおすすめです。<br>
+Linux などの UNIX 互換 OS では
+GNU Emacs，Vim が，OS X では
+[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。<br>
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
@@ -88,7 +142,7 @@ mxedruli パッケージは
 ASCII アルファベットでグルジア語を記述することになります。<br>
 入力ソフト (input method) がない場合は大変助かりますが，
 持っている方にとってはこのままではちょっと不便かもしれません。<br>
-そんな方は後述する UTF82TeX を -x オプションつきで実行してみてください。<br>
+そんな方は UTF82TeX を -x オプションつきで実行してみてください。<br>
 
 インストール方法について解説します。<br>
 
@@ -112,15 +166,8 @@ mxedruli を読み込みます。<br>
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex]{jsarticle}
-    %\documentclass{ujarticle}
-  \else
-    \documentclass{jsarticle}
-    %\documentclass{jarticle}
-  \fi
-\fi
+\documentclass[uplatex]{jsarticle}
+%\documentclass{ujarticle}
 \usepackage{mxedruli}
 \begin{document}
 日本語を使いつつ，グルジア語のアルファベットを記述していきます。
@@ -136,7 +183,7 @@ mxedruli を読み込みます。<br>
 
 ***
 
-グルジア文字を直接入力している場合は，後述する UTF82TeX を用いて
+グルジア文字を直接入力している場合は，UTF82TeX を用いて
 グルジア文字を mxedruli パッケージ用の ASCII 文字転写規則に変換しましょう。<br>
 
 文書が出来ましたら，普通に ptex2pdf で処理します。<br>
@@ -144,12 +191,6 @@ mxedruli を読み込みます。<br>
 
 ```
 ptex2pdf -l -u gtest-o.tex
-```
-
-または
-
-```
-ptex2pdf -l gtest-o.tex
 ```
 
 を実行します。<br>
@@ -216,22 +257,15 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 
 入力は基本的に ASCII 文字で書いていきますが，
 ヴェトナム語の入力ソフト (input method) を持っている方は
-後述する UTF82TeX という変換スクリプトがありますので，
+UTF82TeX という変換スクリプトがありますので，
 それで入力しても大丈夫です（-x オプションをつけて実行します）。
 
 ***
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex]{jsarticle}
-    %\documentclass{ujarticle}
-  \else
-    \documentclass{jsarticle}
-    %\documentclass{jarticle}
-  \fi
-\fi
+\documentclass[uplatex]{jsarticle}
+%\documentclass{ujarticle}
 \usepackage{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{dblaccnt}
@@ -249,7 +283,7 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 ***
 
 ソースをヴェトナム文字で直接入力した方は，
-後述する UTF82TeX で変換してください。
+UTF82TeX で変換してください。
 
 出来上がったら ptex2pdf で処理します。
 
@@ -257,15 +291,11 @@ TeX Live の場合は VnTeX は最初からインストールされています�
 ptex2pdf -l -u vtest-o.tex
 ```
 
-または
-
-```
-ptex2pdf -l vtest-o.tex
-```
-
 PDF ファイルを見ると，ヴェトナム語が正常に表示されているはずです。
 
 ### タイ語 {#thiocpaq}
+
+\[\[タイ語をどうにかする実験 \[電脳世界の奥底にて\]:http://zrbabbler.sp.land.to/bxthai.html\] を参照．<br>
 
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
@@ -397,15 +427,8 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex,a4paper]{jsarticle}
-    %\documentclass[a4paper]{ujarticle}
-  \else
-    \documentclass[a4paper]{jsarticle}
-    %\documentclass[a4paper]{jarticle}
-  \fi
-\fi
+\documentclass[uplatex,a4paper]{jsarticle}
+%\documentclass[a4paper]{ujarticle}
 \usepackage[OT2,T1]{fontenc}
 \usepackage[thai]{babel} % thai オプション
 \usepackage{thswitch} % thswitch.sty を指定する
@@ -446,12 +469,6 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 ptex2pdf -l -u foo.tex
 ```
 
-または
-
-```
-ptex2pdf -l foo.tex
-```
-
 foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 なお Unicode でタイ語文書を記述できる方は，先に述べたような iconv → swath → 8bt2ptex の代わりに，最後の項で紹介する [UTF82TeX](</pTeXと多言語処理/#iutf82tx>) を用いたほうがさらに簡便です。
@@ -467,18 +484,10 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 ### 中国語・韓国語 {#cjkinqd}
 
-中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）については，[OTF パッケージ](/OTF/)と PXbase パッケージの登場に
-より，pTeX でも中国語（簡化字・繁體字の両方）と韓国語をまとめて
-扱えます。<br>
+中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）については，upTeX で直接扱うことができます。<br>
+PXbase パッケージを使用すれば upTeX で中国語（簡化字・繁體字の両方）と韓国語を簡単に扱えます。<br>
+PXbase パッケージは TeX Live, W32TeX に含まれています．<br>
 
-OTF パッケージ, PXbase パッケージは TeX Live, W32TeX に含まれています．<br>
-
-韓国語（&#xd55c;&#xad6d;&#xc5b4;）
-に関しては[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)の
-KoreanTeX もあります。<br>
-KoreanTeX はハングルを ASCII 文字転写したかたちで入力できますので，入力ソフト \[input method\] が不要です。<br>
-
-dvipdfmx で変換し，PDF の形で出力結果を見ることになります。<br>
 PDF 閲覧の際には
 [Adobe Reader](</Adobe Reader/>) が必要です。<br>
 
@@ -1213,20 +1222,10 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\ifdefined\kanjiskip
-  \ifdefined\ucs
-    \documentclass[uplatex]{jsarticle}
-    %\documentclass{ujarticle}
-  \else
-    \documentclass{jsarticle}
-    %\documentclass{jarticle}
-    \usepackage[bxutf8]{inputenc}
-    \usepackage{pxbase}
-    \usepackage[multi]{otf}
-  \fi
-  \usepackage[english]{babel}
-  \usepackage[main=japanese]{pxbabel}
-\fi
+\documentclass[uplatex]{jsarticle}
+%\documentclass{ujarticle}
+\usepackage[english]{babel}
+\usepackage[main=japanese]{pxbabel}
 \begin{document}
 \section{Japanese}
 こんにちは。私の名前は\textbf{東大}です。よろしくお願いします。
@@ -1259,23 +1258,19 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 ptex2pdf -l -u cjkintro.tex
 ```
 
-または
-
-```
-ptex2pdf -l cjkintro.tex
-```
-
 または，
 
 ```
-(u)platex cjkintro.tex
+uplatex cjkintro.tex
 dvips cjkintro.dvi
 ps2pdf cjkintro.ps
 ```
 
-のように実行します。あとは PDF を開いて
-うまく表示されているかどうか確認しましょう。なお，PDF を開いたときに
-フォントのインストールを促されたらインストールしておいてください。
+のように実行します。<br>
+あとは PDF を開いて
+うまく表示されているかどうか確認しましょう。<br>
+なお，PDF を Adobe Reader で開いたときに
+フォントのインストールを促されたらインストールしておいてください。<br>
 
 最後に。<br>
 中国語や韓国語は句読点が真ん中に表示されることがありますが，
@@ -1327,87 +1322,17 @@ fmtutil --byfmt platex
 作成された[横書き](https://okumuralab.org/~okumura/texfaq/qa/36989.html)と[縦書き](https://okumuralab.org/~okumura/texfaq/qa/36993.html)の2種類のサンプルが
 ありますので，試してみてください。
 
-## 多言語の Unicode 直接入力と pTeX {#cyraccpw}
-
-### 概要 {#tagaiyos}
-
-[ASCII 文字による翻字入力方式](</アスキー文字を用いた転写表記/>)は
-入力ソフト (input method) を必要としないという点で有用な手段ですが，
-中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
-作成し，これを TeX で処理したいという方もいらっしゃるでしょう。
-
-現在では upTeX と UTF-8 対応 pTeX が
-[TeX Live](</TeX Live/>) と
-[W32TeX](/W32TeX/) で
-利用可能になっています。
-
-[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
-[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-（pTeX の内部 Unicode 版）の Ver.1.11 がリリースされています
-（なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
-
-pTeX 本体の UTF-8 対応は[土村展之さん](http://www.nn.iij4u.or.jp/~tutimura/)によるものです（和文とラテン文字のみの対応）。<br>
-
-各種フィルタソフト（プリプロセッサ）もありますので，
-それと併用することで Unicode のまま編集することができます。<br>
-また Unicode のまま編集することで，Aspell によるスペルチェックもできます。<br>
-
-フランス語やドイツ語などの Latin-1, Latin-2 文字，ギリシア文字，
-ロシア語のキリル文字，ヴェトナム語，グルジア語，中国語，韓国語に
-ついては[安田功さん](http://yasuda.homeip.net/)が
-[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) を
-公開していますので，これを用いれば一括で pTeX 処理可能な文書に変換できます。<br>
-
-### Unicode のテキストファイルを作るには？ {#j8063098}
-
-このスクリプトを使うためには，もちろん外国語を直接入力するための入力ソフト
-(input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
-
-input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/abeaupricker/) に関するサイトを挙げておきます。
-
-一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
-元々付属しているメモ帳 (Notepad) の他に
-オープンソースソフトウェアとして
-[Emacs](/Emacs/)，
-[Vim](/Vim/)，
-[Notepad++](/Notepad++/)，
-[サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
-SynWrite，
-AkelPad，
-[gedit](/gedit/)，
-[Geany](/Geany/)
-などがあります。
-Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。<br>
-起動の速さを重視する方はメモ帳や AkelPad がおすすめです。<br>
-Linux などの UNIX 互換 OS では
-GNU Emacs，Vim が，OS X では
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，定番だと思います。<br>
-
-Microsoft Windows に付属しているワードパッド (WordPad) で
-リッチテキスト形式 (RTF) の多言語文書を
-作り，[RTFコンバータ](http://www5b.biglobe.ne.jp/~harigaya/rtfcnv.html)で
-UTF-8 テキストファイルに変換する方法もあります。<br>
-RTFコンバータの
-インストールは，インストーラの指示に従ってインストールするだけなので簡単です。<br>
-
-まず，ワードパッドで多言語文書を作ります。それぞれの言語で，適当に
-フォントを切り替えながら編集します（例えば，日本語は「ＭＳ ゴシック」など，
-ラテンアルファベット系言語・キリルアルファベット系言語・ギリシア語は
-Microsoft Sans Serif など，タイ語は Tahoma，中国語は SimSun など，
-韓国語は Dotum など）。文書の保存はリッチテキスト形式で構いません。
-
-あとは RTFコンバータを起動し，入力にワードパッドで作成した文書を指定して
-「出力ファイルの種類」を「テキスト形式」に，「テキストファイルのコード」を
-「Unicode (UTF-8)」に指定します。出力先・出力ファイル名を適当に決めて
-「実行」ボタンをクリックすることで，多言語テキストファイルが作られます。
+## UTF82TeX {#p07ce0eb}
 
 ### UTF82TeX のインストール・設定 {#iutf82tx}
 
-安田さんのスクリプトの実行には Perl が必要になります。Perl をインストールしていない方は
-[Strawberry Perl](http://strawberryperl.com/) をインストールしておきましょう。
-なお，PC-UNIX環境の方は各ディストリビューション毎にパッケージが用意されている(ないしインストール済みである)場合が多いです。
+安田さんのスクリプトの実行には Perl が必要になります。<br>
+Perl をインストールしていない方は
+[Strawberry Perl](http://strawberryperl.com/) をインストールしておきましょう。<br>
+なお，PC-UNIX環境の方は各ディストリビューション毎にパッケージが用意されている(ないしインストール済みである)場合が多いです。<br>
 
-まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開（解凍）します。展開したディレクトリ内のutf82texというファイルをUnicode対応のテキストエディタで開きますと，先頭の行に
+まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開（解凍）します。<br>
+展開したディレクトリ内のutf82texというファイルをUnicode対応のテキストエディタで開きますと，先頭の行に
 
 ```
 #!/usr/bin/perl -w
@@ -1419,7 +1344,7 @@ Microsoft Sans Serif など，タイ語は Tahoma，中国語は SimSun など�
 #!/strawberry/perl/bin/perl -w
 ```
 
-と書く）に直しておきます。
+と書く）に直しておきます。<br>
 
 タイ語を扱う場合，
 
@@ -1451,54 +1376,63 @@ if ($opts{'t'}) {
 
 あとは Utf82TeX を PATH の通ったディレクトリ
 （例えば TeX のインストールディレクトリ内にある
-実行ファイルディレクトリ C:\w32tex\bin\ など）にコピーします。
+実行ファイルディレクトリ C:\w32tex\bin\ など）にコピーします。<br>
 ついでに TeX 実行ファイルのインストール先であれば
 そのディレクトリ内にある perlexec.exe を utf82tex.exe などに
-コピーしておきます。（こうしておくとコマンド実行時に便利ですので。）
+コピーしておきます。<br>
+こうしておくとコマンド実行時に便利です。<br>
 
 次に，config/ ディレクトリの中の utf82texrc/，contrib/
 ディレクトリそのもの，tables/ ディレクトリの中の \*-tbl をすべて
-C:\usr\local\etc\utf82texフォルダ（無い場合には作る）にコピーします。
+C:\usr\local\etc\utf82texフォルダ（無い場合には作る）にコピーします。<br>
 上以外の場所にコピーしたい場合には
-環境変数 UTF82TEXRC にその場所への PATH を設定する必要があります。
+環境変数 UTF82TEXRC にその場所への PATH を設定する必要があります。<br>
 
 utf82texrc の PATH は特に /usr/local/bin から
-C:\\\usr\\\local\\\bin のように変更する必要はないようです。
-ただ，SWATH のオプションの部分は変更する必要があるかもしれません。
+C:\\\usr\\\local\\\bin のように変更する必要はないようです。<br>
+ただ，SWATH のオプションの部分は変更する必要があるかもしれません。<br>
 ここの記述のとおりにタイ語環境を構築した場合，utf82texrc を
 
 ```
 $SWOPT   = "-f latex -d C:\\usr\\local\\bin\\data";
 ```
 
-のように変更します。
+のように変更します。<br>
 
 ### UTF82TeX の使い方 {#ususeutf}
 
-実際にテキストエディタでUnicode文書を書いてみましょう。
+実際にテキストエディタで Unicode 文書を書いてみましょう。
 
 さまざまな言語の入力ソフトを併用して書いていきます。
 
-準備ができたら，[Utf82TeX のページの入力例](http://yasuda.homeip.net/tex/utf82tex.html)も参考に書いていきます。タイ語も混在編集して構いません。中国語と韓国語はタグによって処理を分ける独自の方式
-をとります。したがって，OTFCJKをインストールする必要もおそらくありません。タグは
-%でコメントアウトしておくことで，TeXには無視させられます。
+準備ができたら，[Utf82TeX のページの入力例](http://yasuda.homeip.net/tex/utf82tex.html)も参考に書いていきます。<br>
+タイ語も混在編集して構いません。<br>
+中国語と韓国語はタグによって処理を分ける独自の方式
+をとります。<br>
+タグは
+%でコメントアウトしておくことで，TeXには無視させられます。<br>
 
-さて，いろいろ頑張って一通り書き終わりました。このファイルをutftest8.texとします。ここでUtf82TeXの出番です。コマンドラインから
+さて，いろいろ頑張って一通り書き終わりました。<br>
+このファイルをutftest8.texとします。こ<br>
+こでUtf82TeXの出番です。<br>
+コマンドラインから
 
 ```
 utf82tex <utftest8.tex >utftest8-utex.tex
 ```
 
-を実行します。すると，utftest8.texを変換した結果をutf8out.texに書き出します。
+を実行します。<br>
+すると，utftest8.texを変換した結果をutf8out.texに書き出します。<br>
 
-書き出したutftest8-utf.texはUTF8です。
-platex -no-guess-input-enc -kanji=utf8 でコンパイルします。
-（土村氏によるpTeXの [UTF-8 対応［非公式］パッチ](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%282%29) を用いてコンパイルします。(［[qa:47792](https://okumuralab.org/~okumura/texfaq/qa/47792.html) 参照］。) このパッチは最新の TeX Live, W32TeX には導入されています。）
+書き出したutftest8-utf.texはUTF-8です。<br>
+uplatex  でコンパイルします。<br>
 
-タイ語が入っている場合は-tオプションを，ヴェトナム語やグルジア語などの拡張変換表を用いる場合は-xオプションをつけます。
+タイ語が入っている場合は-tオプションを，ヴェトナム語やグルジア語などの拡張変換表を用いる場合は-xオプションをつけます。<br>
 
-あとは pLaTeX あるいは LaTeX にかけるだけです。（「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は[新 pTeX とBabel](</新 pTeX とBabel/>)
-を是非ご覧ください。また，それ以外の外国語については，ここの該当箇所をお読みください。）
+あとは upLaTeX あるいは LaTeX にかけるだけです。<br>
+「そういえばロシア語・ギリシア語を使う環境をまだそろえていなかった」という方は[新 pTeX とBabel](</新 pTeX とBabel/>)
+を是非ご覧ください。<br>
+また，それ以外の外国語については，ここの該当箇所をお読みください。<br>
 
 ## 謝辞 {#mlathbos}
 
