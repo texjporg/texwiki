@@ -7,10 +7,7 @@ pukiwiki: "新 pTeX とBabel"
 
 # 新 pTeX とBabel
 
-e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できません．<br>
-Unicode を使用する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．<br>
-
-## 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） (obsolete) → e-upTeX を使用する {#u0b9622c}
+## upTeX, 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
