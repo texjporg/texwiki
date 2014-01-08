@@ -177,7 +177,7 @@ $ kpsewhich uptex-ipaex.map
 upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
+$ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
@@ -432,7 +432,7 @@ $ kanji-config-updmap ipaex
 upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
+$ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### 不具合 {#iffd4e02}
@@ -442,11 +442,11 @@ $ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
 
 ```
-$ ptex2pdf -l -u hoge.tex
+$ ptex2pdf -u -l hoge.tex
 /usr/bin/env: texlua  : No such file or directory
 ```
 
-ptex2pdf -l -u &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
+ptex2pdf -u -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
 
 ```
 #!/usr/bin/env texlua  
