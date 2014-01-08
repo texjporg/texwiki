@@ -88,9 +88,10 @@ ASCII 翻字入力についての詳細は
 このスクリプトを使うためには，もちろん外国語を直接入力するための入力ソフト
 (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
-input method については，[Google](http://www.google.co.jp/) などで探してみましょう。参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/abeaupricker/) に関するサイトを挙げておきます。
+input method については，[Google](http://www.google.co.jp/) などで探してみましょう。<br>
+参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://homepage1.nifty.com/suzuri/000/pc3.html)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
-一方の Unicode (UTF-8) 対応テキストエディタですが，Microsoft Windows では
+Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では
 元々付属しているメモ帳 (Notepad) の他に
 オープンソースソフトウェアとして<br>
 
@@ -98,8 +99,8 @@ input method については，[Google](http://www.google.co.jp/) などで探�
 [Vim](/Vim/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
-SynWrite，
 AkelPad，
+SynWrite，
 [gedit](/gedit/)，
 [Geany](/Geany/)
 
