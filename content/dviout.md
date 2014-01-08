@@ -780,7 +780,7 @@ dviout は，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタ
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
 「ニコニコマーク」ボタンは，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
 PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
-PDF ファイルの作成がうまくいかない場合は [TeXworks](/TeXworks/) を使用してください．<br>
+PDF ファイルの作成がうまくいかない場合は Windows PowerShell またはコマンド プロンプトから dvipdfmx を実行してください．<br>
 
 ***
 
