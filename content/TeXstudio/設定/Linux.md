@@ -256,11 +256,11 @@ Latexmk
 
 : latexmk -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
-: latexmk -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -lualatex -silent %
+: latexmk -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
-: latexmk -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -lualatex -silent %
+: latexmk -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
-: latexmk -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -xelatex -silent %
+: latexmk -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
 SVN
 : &nbsp;
