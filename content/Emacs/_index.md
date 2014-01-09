@@ -18,7 +18,8 @@ pukiwiki: "Emacs"
 
 ## Emacs とは {#a9896c87}
 
-[Emacs](https://ja.wikipedia.org/wiki/Emacs) は，拡張性のあるカスタマイズ可能なテキストエディタです．でも，それだけではありません．<br>
+[Emacs](https://ja.wikipedia.org/wiki/Emacs) は，拡張性のあるカスタマイズ可能なテキストエディタです．<br>
+でも，それだけではありません．<br>
 Emacs の核となる部分は [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) インタプリタです．<br>
 Emacs Lisp は [Lisp](https://ja.wikipedia.org/wiki/LISP) の方言の一つで，テキストの編集をサポートする機能があります．<br>
 Emacs Lisp を使えば自由に楽しくカスタマイズすることができます．<br>
@@ -163,7 +164,7 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 
 あるいは [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を利用して forward search を行うことも可能です．<br>
 sumatra-forward.el を使用する場合は，あらかじめ SumatraPDF を起動しておいてください．<br>
-[emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839) には ddeclient.exe が含まれているので別途ダウンロードする必要はありません．<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html), [emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839) には ddeclient.exe が含まれているので別途ダウンロードする必要はありません．<br>
 
 ### inverse search {#a06810d6}
 
