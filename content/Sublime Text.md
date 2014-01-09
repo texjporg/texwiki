@@ -15,7 +15,7 @@ pukiwiki: "Sublime Text"
 
 ## Sublime Text とは {#w93773a9}
 
-Sublime Text はテキストエディタです． (シェアウェア)
+Sublime Text はカスタマイズ性に優れたモダンなテキストエディタです． (シェアウェア)
 
 - [Sublime Text](http://www.sublimetext.com/)
 
@@ -40,15 +40,13 @@ Windows, OS X, Linux
 ## Shift_JIS, EUC-JP 対応 {#bc9dcabf}
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
-    - Sublime Text 2, Sublime Text 3 で Shift_JIS, EUC-JP などでエンコードされたファイルを扱うためのプラグイン.
-    - [Sublime Text 2をShift_JISに対応させるプラグインがあると聞いて](http://re-dzine.net/2012/10/sublime-text-2-shift-jis/)
+    - Sublime Text で Shift_JIS, EUC-JP などでエンコードされたファイルを扱うためのプラグイン.
 
-## メニューの日本語化 {#p0f8c581}
+## Japanese menu for Sublime Text {#p0f8c581}
 
-- [【Windowsアプリケーション】Sublime Text 2 メニュー日本語化](http://blog.huwy.org/article/292827228.html)
-    - Mac, Linux でも日本語化できるみたいです
+- [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text 2 and 3)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
@@ -59,6 +57,175 @@ Windows, OS X, Linux
 - [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
 - [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
 - [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
+
+#### ビルドコマンドの設定 {#jbbbbc43}
+
+メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
+LateXTools フォルダーの LaTeX.sublime-build を編集します．<br>
+[LaTeX.sublime-build の 50行目から 105行目](https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX.sublime-build#L50-105)あたりで設定されている
+Windows での cmd (コマンド) と path (パス) は
+
+```
+			// *** BEGIN MikTeX 2009 ***
+```
+
+から
+
+```
+			// *** END MikTeX 2009 ***
+```
+
+で囲まれている以下の設定が初期設定になっています．<br>
+
+```
+			"cmd": ["texify", 
+					"-b", "-p",
+					"--tex-option=\"--synctex=1\""
+			],
+			
+			"path": "",
+```
+
+これをコメントアウトします．<br>
+
+```
+			// "cmd": ["texify", 
+			// 		"-b", "-p",
+			// 		"--tex-option=\"--synctex=1\""
+			// ],
+			
+			// "path": "",
+```
+
+その下にある
+
+```
+			// *** BEGIN TeXLive 2011 ***
+```
+
+から
+
+```
+			// *** END TeXLive 2011 ***
+```
+
+で囲まれている以下の設定<br>
+
+```
+			// "cmd": ["latexmk", "-cd",
+			// 	"-e", "\\$pdflatex = '%E %O -interaction=nonstopmode -synctex=1 %S'",
+			//	//"-silent",
+			// 	"-f", "-pdf"],
+
+			// "path": "C:\\texlive\\2011\\bin\\win32;$PATH",
+```
+
+のコメントをはずして以下のように cmd (コマンド) と path (パス) を修正します．<br>
+■ Latexmk-pdfupLaTeX の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$pdflatex = 'ptex2pdf -u -l -ot \"%O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1\" %S'",
+				"-e", "\\$bibtex = 'upbibtex %O %B'",
+				"-e", "\\$makeindex = 'mendex %O -U -o %D %S'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdf"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+■ Latexmk-pdfupLaTeX2 の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "\\$bibtex = 'upbibtex %O %B'",
+				"-e", "\\$makeindex = 'mendex %O -U -o %D %S'",
+				"-e", "\\$dvips = 'dvips %O -z -f %S | convbkmk -u > %D'",
+				"-e", "\\$ps2pdf = 'ps2pdf.bat %O %S %D'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdfps"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+■ Latexmk-pdfLaTeX の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$pdflatex = 'pdflatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "\\$bibtex = 'bibtex %O %B'",
+				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdf"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+■ Latexmk-LuaLaTeX の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$pdflatex = 'lualatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "\\$bibtex = 'bibtexu %O %B'",
+				"-e", "\\$makeindex = 'texindy %O -o %D %S'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdf"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+■ Latexmk-LuaJITLaTeX の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$pdflatex = 'luajitlatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "\\$bibtex = 'bibtexu %O %B'",
+				"-e", "\\$makeindex = 'texindy %O -o %D %S'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdf"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+■ Latexmk-XeLaTeX の場合<br>
+
+```
+			"cmd": ["latexmk", "-cd",
+				"-e", "\\$pdflatex = 'xelatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "\\$bibtex = 'bibtexu %O %B'",
+				"-e", "\\$makeindex = 'texindy %O -o %D %S'",
+				//"-silent",
+				"-f", "-norc", "-gg", "-pdf"],
+
+			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+```
+
+#### SumatraPDF の設定 {#xdcd22a2}
+
+メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
+LateXTools フォルダーの jumpToPDF.py を編集します．<br>
+[jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
+
+```
+				subprocess.Popen(["SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+を以下のように修正します．
+
+■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合<br>
+
+```
+				subprocess.Popen([r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合<br>
+
+```
+				subprocess.Popen([r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+Ctrl+B をタイプすると TeX ファイルをビルドして PDF ファイルを作成したあとに SumatraPDF で PDF ファイルを表示して forward search を実行します．<br>
 
 ### OS X {#c2e22368}
 
@@ -73,49 +240,16 @@ Windows, OS X, Linux
 
 - [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
 
-## [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) {#je94e188}
-
-- [SublimeOnSaveBuild Sublime Plugin](https://github.com/alexnj/SublimeOnSaveBuild)
-- [Sublime Text 2 でファイル保存時に自動でビルドさせる](http://y-anz-m.blogspot.jp/2012/11/sublime-text-2.html)
-
 ## SumatraPDF との連携 {#hf07fc30}
 
 ### forward search {#f7ecc231}
 
-LaTeXTools を使用している場合は [jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
-
-```
-subprocess.Popen(["SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
-```
-
-を以下のように修正します．
-
-■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合
-
-```
-subprocess.Popen([r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
-```
-
-■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合
-
-```
-subprocess.Popen([r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
-```
-
-Ctrl+L をタイプしたあとで J をタイプすると forward search が実行されます．
+LaTeXTools を使用している場合は Ctrl+L をタイプしたあとで J をタイプすると forward search が実行されます．<br>
 
 ### inverse search {#u2a5078e}
 
-#### Sublime Text 3 の場合 {#va5d820b}
-
 ```
 "C:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
-```
-
-#### Sublime Text 2 の場合 {#x38f617b}
-
-```
-"C:\Program Files\Sublime Text 2\sublime_text.exe" "%f:%l"
 ```
 
 ## Skim との連携 {#a71db317}
