@@ -80,11 +80,42 @@ Windows, OS X, Linux
 
 ## SumatraPDF との連携 {#hf07fc30}
 
+### forward search {#f7ecc231}
+
+LaTeXTools を使用している場合は [jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
+
+```
+subprocess.Popen(["SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+を以下のように修正します．
+
+■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合
+
+```
+subprocess.Popen([r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合
+
+```
+subprocess.Popen([r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+```
+
+Ctrl+L をタイプしたあとで J をタイプすると forward search が実行されます．
+
 ### inverse search {#u2a5078e}
+
+#### Sublime Text 3 の場合 {#va5d820b}
+
+```
+"C:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
+```
+
+#### Sublime Text 2 の場合 {#x38f617b}
 
 ```
 "C:\Program Files\Sublime Text 2\sublime_text.exe" "%f:%l"
-"C:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
 ```
 
 ## Skim との連携 {#a71db317}
