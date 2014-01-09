@@ -133,7 +133,7 @@ Post Processor
 Commands
 : &nbsp;
 
-: latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -lualatex "$filename"
+: latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$filename"
 
 Post Processor
 : &nbsp;
@@ -147,7 +147,7 @@ Post Processor
 Commands
 : &nbsp;
 
-: latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -lualatex "$filename"
+: latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$filename"
 
 Post Processor
 : &nbsp;
@@ -161,7 +161,7 @@ Post Processor
 Commands
 : &nbsp;
 
-: llatexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -xelatex "$filename"
+: llatexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$filename"
 
 Post Processor
 : &nbsp;
