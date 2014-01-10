@@ -29,12 +29,12 @@ Red Hat Enterprise Linux (RHEL) は Red Hat が開発・販売している Linux
 
 CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．<br>
 
-- [CentOS](http://www.centos.org/)
+- [CentOS project](http://www.centos.org/)
+- [FrontPage - CentOS Wiki](http://wiki.centos.org/)
 
 ### ミラーサイト {#tf7026af}
 
 - [the status of CentOS mirrors#jp](http://mirror-status.centos.org/#jp)
-- [http://www.centos.org/modules/tinycontent/index.php?id=32](http://www.centos.org/modules/tinycontent/index.php?id=32)
 
 ## Scientific Linux (SL) とは {#d9e440c7}
 
