@@ -33,15 +33,13 @@ pukiwiki: "サクラエディタ"
     - [Members](http://sourceforge.net/p/sakura-editor/_members/)
 - [SakuraEditorWiki](http://sakura.qp.land.to/)
     - [FAQ](http://sakura.qp.land.to/?FAQ)
-    - [ジャンク品置き場](http://sakura.qp.land.to/?Junk)
 - [SakuraEditorMsiInstaller](https://github.com/tohosaku/SakuraEditorMsiInstaller)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
 - [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/)
+- [Mocaのブログ](http://mocaskr.blog42.fc2.com/)
 - [ds14050](http://vvvvvv.sakura.ne.jp/ds14050/)
     - [脳log\[SakuraEditor\]](http://vvvvvv.sakura.ne.jp/ds14050/diary/?category=SakuraEditor)
-- [”なすこじ”のトップページ](http://www.geocities.jp/nasukoji_7/)
-    - [ダウンロード](http://www.geocities.jp/nasukoji_7/download/download_sakuraeditor.html)
 
 ### 動作環境 {#vfdecfda}
 
@@ -65,7 +63,7 @@ Windows 8.1, 8, 7, Vista, XP
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
 - [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
-- [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
+- [サクラエディタ 開発関連](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 - [BeniZakura](https://bitbucket.org/suzzsegv/benizakura/downloads)
 
 ## ダウンロード {#p4ea6725}
@@ -73,10 +71,9 @@ Windows 8.1, 8, 7, Vista, XP
 - [http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
 - [ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
-- [サクラエディタ UNICODE/ANSI 版](http://sourceforge.net/projects/sakura-editor/files/)
-- [サクラエディタ Unicode/x64](http://sourceforge.net/p/sakura-editor/wiki/64bit/)
+- [http://sourceforge.net/projects/sakura-editor/files/](http://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
-- [サクラエディタ改造版暫定置場](http://mocaskr.web.fc2.com/sakura/bin_other.html)
+- [サクラエディタ 開発関連](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 
 ## 不具合 {#jbc9f4c6}
 
