@@ -46,7 +46,7 @@ Windows, OS X, Linux
 
 - [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) <a id="latextools"></a> {#e60d4c0f}
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
@@ -61,7 +61,7 @@ Windows, OS X, Linux
 #### ビルドコマンドの設定 {#jbbbbc43}
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
-LateXTools フォルダーの LaTeX.sublime-build を編集します．<br>
+LaTeXTools フォルダーの LaTeX.sublime-build を編集します．<br>
 [LaTeX.sublime-build の 50行目から 105行目](https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX.sublime-build#L50-105)あたりで設定されている
 Windows での cmd (コマンド) と path (パス) は
 
@@ -120,16 +120,17 @@ Windows での cmd (コマンド) と path (パス) は
 			// "path": "C:\\texlive\\2011\\bin\\win32;$PATH",
 ```
 
-のコメントをはずして以下のように cmd (コマンド) と path (パス) を修正します．<br>
+を削除して以下のように cmd (コマンド) と path (パス) を設定します．<br>
 ■ Latexmk-pdfupLaTeX の場合<br>
 
 ```
 			"cmd": ["latexmk", "-cd",
-				"-e", "\\$pdflatex = 'ptex2pdf -u -l -ot \"%O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1\" %S'",
+				"-e", "\\$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "\\$bibtex = 'upbibtex %O %B'",
 				"-e", "\\$makeindex = 'mendex %O -U -o %D %S'",
+				"-e", "\\$dvipdf = 'dvipdfmx %O -o %D %S'",
 				//"-silent",
-				"-f", "-norc", "-gg", "-pdf"],
+				"-f", "-norc", "-gg", "-pdfdvi"],
 
 			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
 ```
@@ -204,7 +205,28 @@ Windows での cmd (コマンド) と path (パス) は
 #### SumatraPDF の設定 {#xdcd22a2}
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
-LateXTools フォルダーの jumpToPDF.py を編集します．<br>
+LaTeXTools フォルダーの viewPDF.py を編集します．<br>
+[viewPDF.py の 50行目](https://github.com/SublimeText/LaTeXTools/blob/master/viewPDF.py#L50)あたりの
+
+```
+			viewercmd = ["SumatraPDF", "-reuse-instance"]
+```
+
+を以下のように修正します．
+
+■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合<br>
+
+```
+			viewercmd = [r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
+```
+
+■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合<br>
+
+```
+			viewercmd = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
+```
+
+LaTeXTools フォルダーの jumpToPDF.py を編集します．<br>
 [jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
 
 ```
