@@ -120,7 +120,7 @@ Windows での cmd (コマンド) と path (パス) は
 			// "path": "C:\\texlive\\2011\\bin\\win32;$PATH",
 ```
 
-を削除して以下のように cmd (コマンド) と path (パス) を設定します．<br>
+の下に cmd (コマンド) と path (パス) の設定を追加します．<br>
 ■ Latexmk-pdfupLaTeX の場合<br>
 
 ```
