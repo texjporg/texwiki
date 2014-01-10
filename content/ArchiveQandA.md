@@ -17,7 +17,7 @@ pukiwiki: "ArchiveQandA"
 
 - 検索サイトで，パッケージ名やコマンド名で検索する
 - マクロやパッケージ関わることであれば，[CTAN](/CTAN/) ([CTAN search](http://www.ctan.org/search.html)) でパッケージ名をキーに探す
-- W32TeX または TeX Live であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
+- TeX Live または W32TeX であれば texdoc -l -s &lt;パッケージ名> と打つ<br>
     (例) texdoc -l -s hyperref
     - TeX Live には [texdoctk](http://www.ctan.org/pkg/texdoctk) というPerl/Tkを用いたGUIのドキュメント検索ソフトがあります．
 - MiKTeX であれば texdoc -l &lt;パッケージ名> と打つ<br>
@@ -40,7 +40,7 @@ dviout で問題が発生する場合は <strong>dviout を使用せず PDF フ�
 
 ### xdvi のエラーメッセージ {#x72af3e8}
 
-xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), PdfViewer, [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
+xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ### TeX本体のエラーメッセージ {#s54a975c}
@@ -64,15 +64,28 @@ xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファ�
 
 ### 画像の作り方、扱い方 {#kbcf5f4a}
 
-- “Cannot determine size of graphic in filename.xxx (no size specifed)”というエラーが出て画像（JPG, PNGなど）が取り込めない（[qa:29325](https://okumuralab.org/~okumura/texfaq/qa/29325.html), [qa:19304](https://okumuralab.org/~okumura/texfaq/qa/19304.html)など）
+- “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG など）が取り込めない
     - その画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
-        コマンド プロンプトで画像ファイルのあるディレクトリに移動し
+        Windows PowerShell またはコマンド プロンプトで画像ファイルのあるディレクトリに移動します．<br>
+        PDF ファイルの場合は
 
         ```
-        extractbb filename.xxx
+        extractbb filename.pdf
         ```
 
-        を実行します。すると、filename.xxx と同じディレクトリに filename.xbb ファイルが作られ、（他のエラーがない限り）画像が取り込めるようになります。<br>
+        PNG ファイルの場合は
+
+        ```
+        extractbb filename.png
+        ```
+
+        JPG ファイルの場合は
+
+        ```
+        extractbb filename.jpg
+        ```
+
+        を実行します．すると、filename.pdf または filename.png または filename.jpg と同じディレクトリに filename.xbb ファイルが作られ、画像が取り込めるようになります．<br>
 
 - 複数ページのPDFファイルの任意のページを取り込む
     - [PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
