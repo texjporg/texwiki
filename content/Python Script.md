@@ -34,18 +34,19 @@ Python Script を使うと LaTeX 環境を簡単に作ることができます�
 ```
 import os
 import os.path
-import subprocess
 
 class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
-        ptex2pdf = ['ptex2pdf', '-l', '-u', '-ot', '"', '-no-guess-input-enc', '-kanji=utf8', '-synctex=1', '-sjis-terminal', '"', b]
-        ok = notepad.messageBox(' '.join(ptex2pdf), 'Notepad++', 1)
+        ptex2pdf = 'ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "' + b + '"'
+        ok = notepad.messageBox(ptex2pdf, 'Notepad++', 1)
         if ok == MESSAGEBOXFLAGS.RESULTOK:
             notepad.save()
             os.chdir(c)
-            subprocess.call(ptex2pdf)
+            console.clear()
+            console.show()
+            console.run(ptex2pdf)
 
 if __name__ == '__main__':
     Command().run()
@@ -64,7 +65,6 @@ if __name__ == '__main__':
 ```
 import sys
 import os.path
-import subprocess
 
 if sys.version_info >= (3, 0, 0):
     from winreg import *
@@ -93,7 +93,9 @@ class Command:
                 sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + npp + r' \"%f\" -n%l" -forward-search "' + tex + '" ' + line
 
         cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
-        subprocess.call(cmd, shell=True)
+        console.clear()
+        console.show()
+        console.run(cmd)
 
 if __name__ == '__main__':
     Command().run()
