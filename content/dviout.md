@@ -780,6 +780,12 @@ dviout は，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタ
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
 「ニコニコマーク」ボタンは，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
 PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
+dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
+
+```
+\usepackage[dvipdfmx]{graphicx}
+```
+
 PDF ファイルの作成がうまくいかない場合は Windows PowerShell またはコマンド プロンプトから dvipdfmx を実行してください．<br>
 
 ***
@@ -799,6 +805,11 @@ PDF ファイルの作成がうまくいかない場合は Windows PowerShell �
 ### dvips + ps2pdf.bat (Ghostscript) {#bbe5941f}
 
 dvipdfmx 以外では dvips + ps2pdf.bat (Ghostscript) でも PDF ファイルを作成することが可能です。<br>
+dvips + ps2pdf.bat を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvips オプションを指定します：
+
+```
+\usepackage[dvips]{graphicx}
+```
 
 ## PostScript (EPS) 画像 {#ib983531}
 
@@ -841,7 +852,8 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 
 ***
 
-dviout の印刷は Windows に依存しており，特に画像の印刷は Windows のバージョンによってトラブルが生じることがあります。<br>
+dviout の印刷は Windows に依存しています。<br>
+特に画像の印刷は Windows のバージョンによってはトラブルが生じることがあります。<br>
 dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2pdf.bat (Ghostscript) で PDF ファイルに変換して印刷してみてください。<br>
 
 ## EPS 以外の画像を使うには {#z97e7e7b}
