@@ -47,7 +47,7 @@ Poppler は
 
 Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます．<br>
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
-GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定することをおすすめします．<br>
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します．<br>
 
 ## インストール {#e0d6f40b}
 
@@ -894,11 +894,11 @@ $ popd
 - [Poppler](http://poppler.freedesktop.org/) をインストールします．
 
 ```
-configure の場合は --with-font-configuration=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
-CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig にリンクするようにすると日本語のフォントが埋め込まれていない PDF ファイルでも日本語が表示できるようになります．
-Poppler 0.19.2 で --with-font-configuration=win32 または -DFONT_CONFIGURATION=win32 でビルドしても日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示できるようになりました．
+Poppler は --with-font-configuration=win32 または -DFONT_CONFIGURATION=win32 でビルドすると日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示されます．
 ただし font configuration: win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．
-GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration: fontconfig でビルドして fontconfig を適切に設定することをおすすめします．
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration: fontconfig でビルドして fontconfig を適切に設定します．
+configure の場合は --with-font-configuration=fontconfig で fontconfig を使用できます．
+CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用できます．
 ```
 
 ```
