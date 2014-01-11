@@ -29,6 +29,7 @@ pukiwiki: "Latin Modern"
 
 - [TeX/PackageFile/lmodern - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FPackageFile%2Flmodern)
 - [LaTeX で Latin Modern Mono Light を使う](http://blog.wgag.net/112.html)
+- [XeLaTeX：欧文フォントについての補足 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/xelatex1.html)
 
 ```
 \usepackage[T1]{fontenc}
@@ -39,6 +40,12 @@ pukiwiki: "Latin Modern"
 
 ```
 texdoc lm
+```
+
+または
+
+```
+texdoc lmodern
 ```
 
 で確認してください．<br>
