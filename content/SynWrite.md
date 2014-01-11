@@ -84,8 +84,8 @@ class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(file_get_name(FILENAME_CURRENT)))[0]
         c = os.path.dirname(file_get_name(FILENAME_CURRENT))
-        ptex2pdf = ['ptex2pdf', '-l', '-u', '-ot', '"', '-no-guess-input-enc', '-kanji=utf8', '-synctex=1', '-sjis-terminal', '"', b]
-        ok = msg_box(MSG_CONFIRM, ' '.join(ptex2pdf))
+        ptex2pdf = 'ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "' + b + '"'
+        ok = msg_box(MSG_CONFIRM, ptex2pdf)
         if ok == True:
             file_save()
             os.chdir(c)
