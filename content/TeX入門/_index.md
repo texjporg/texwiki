@@ -61,7 +61,8 @@ pLaTeX 2ε が出ました。<br>
 pLaTeX 2ε と
 upLaTeX 2ε に基づいて説明します。<br>
 組版処理による表記ができないプレーンテキストや電子メールなどで書くときには
-LaTeX 2ε を “LaTeX2e” と書くことになっていますので，以下では “LaTeX2e”，“pLaTeX2e”，“upLaTeX2e” と書きます。
+LaTeX 2ε を “LaTeX2e” と書くことになっています。<br>
+以下では LaTeX 2ε，pLaTeX 2ε，upLaTeX 2ε をそれぞれ “LaTeX2e”，“pLaTeX2e”，“upLaTeX2e” と書きます。<br>
 
 TeX，pTeX，upTeX については，ここでは
 LaTeX2e，pLaTeX2e，upLaTeX2e の「縁の下の力持ち」としてそれぞれ
@@ -80,9 +81,10 @@ TeX，pTeX，upTeX が働いていると言うに留めておき，詳しい説�
 ### LaTeX のバージョンについて —入門書を読む際に— {#h22f32a6}
 
 LaTeX には大きく分けて二つの異なるバージョンがあります。<br>
-現行の LaTeX2e と，一昔前の
-LaTeX 2.09 です（日本語化されたものでは upLaTeX2e と pLaTeX2e と
-pLaTeX 2.09 です）。<br>
+現行の LaTeX2e と，旧バージョンの
+LaTeX 2.09 です。<br>
+日本語化されたものでは upLaTeX2e と pLaTeX2e と
+pLaTeX 2.09 があります。<br>
 LaTeX2e と LaTeX 2.09 は別物と考えて良いくらいです。
 
 図書館には今でも LaTeX 2.09 時代の解説書が並んでいたりするかもしれません。<br>
@@ -113,7 +115,13 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 
 ### [Web](</TeXをWebで/>) {#j1241f24}
 
-<div style="text-align:center">インストール不要で TeX が使えるウェブページ「<a href="http://oku.edu.mie-u.ac.jp/~okumura/texonweb/">TeXを使ってみよう</a>」もあります。</div>
+<div style="text-align:center">インストール不要で TeX が使えるウェブページ</div>
+
+<div style="text-align:center">「<a href="http://glc.l.u-tokyo.ac.jp/texonweb/">TeXを使ってみよう（upTeX版）</a>」</div>
+
+<div style="text-align:center">「<a href="http://oku.edu.mie-u.ac.jp/~okumura/texonweb/">TeXを使ってみよう</a>」</div>
+
+<div style="text-align:center">もあります。</div>
 
 ## 使い方 {#hf6bc116}
 
