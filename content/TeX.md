@@ -16,12 +16,13 @@ pukiwiki: "TeX"
 ### TeX 処理系 {#g6783551}
 
 - [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
-- [e-pTeX](/e-pTeX/)
-- [e-upTeX](/upTeX,upLaTeX/)
-- [pdfTeX](/pdfTeX/)
 - [LuaTeX](/LuaTeX/)
 - LuaJITTeX
 - [XeTeX](/XeTeX/)
+- [pdfTeX](/pdfTeX/)
+- [e-upTeX](/upTeX,upLaTeX/)
+- [e-pTeX](/e-pTeX/)
+- [e-TeX](/e-TeX/)
 
 ### TeX プログラミング {#ff81e0cc}
 
