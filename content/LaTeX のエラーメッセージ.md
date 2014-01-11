@@ -365,6 +365,27 @@ LaTeX のカウンタの値を \alph，\Alph，\fnsymbol などで文字列化�
 → まず，エンコーディング名が正しいかどうかを確認してください．
 正しければ，\DeclareFontEncoding を用いてエンコーディング  <em>encoding</em> の宣言を行ってください．
 
+- jarticle, jreport, jbook を使用していて ! LaTeX Error: Encoding scheme \`JY1' unknown. と表示される場合は<br>
+    jarticle の場合は
+
+    ```
+    \documentclass{ujarticle}
+    ```
+
+    jreport の場合は
+
+    ```
+    \documentclass{ujreport}
+    ```
+
+    jbook の場合は
+
+    ```
+    \documentclass{ujbook}
+    ```
+
+    のように upLaTeX で使用するクラスファイルに変更します．
+
 #### ! LaTeX Error: Environment <em>envname</em> undefined. {#k8a066dd}
 
 \renewenvironment で <em>envname</em> 環境を再定義しようとしているにもかかわらず，
@@ -438,6 +459,21 @@ fd ファイルが充分に新しいものであるかどうかにも注意し�
 → まず，エンコーディング名・ファミリー名が正しいかどうかを確認してください．
 正しければ，\DeclareFontFamily または \DeclareKanjiFamily を用いてエンコーディング
 <em>encoding</em> にファミリー <em>family</em> が存在することを宣言してください．
+
+- jsarticle, jsbook を使用していて ! LaTeX Error: Font family \`JY1+mc' unknown. と表示される場合は<br>
+    jsarticle の場合は
+
+    ```
+    \documentclass[uplatex]{jsarticle}
+    ```
+
+    jsbook の場合は
+
+    ```
+    \documentclass[uplatex]{jsbook}
+    ```
+
+    のように uplatex オプションを追加します．
 
 #### ! LaTeX Error: ftnright package used in one-column mode. {#v8346838}
 
