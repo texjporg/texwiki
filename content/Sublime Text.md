@@ -18,6 +18,7 @@ pukiwiki: "Sublime Text"
 Sublime Text はカスタマイズ性に優れたモダンなテキストエディタです． (シェアウェア)
 
 - [Sublime Text](http://www.sublimetext.com/)
+- [Package Control - the Sublime Text package manager](https://sublime.wbond.net/)
 
 ### Sublime Text 3 {#o04f9cc2}
 
@@ -28,21 +29,26 @@ Sublime Text はカスタマイズ性に優れたモダンなテキストエデ�
 
 Windows, OS X, Linux
 
-## [Sublime Package Control](http://wbond.net/sublime_packages/package_control) {#r17a3176}
+## 日本語に関するプラグイン {#fa7e32d3}
 
-## Windows での日本語入力対応 {#cde09531}
+### 日本語入力のインライン変換対応 {#cde09531}
+
+#### Windows {#nddbaed6}
 
 - [IMESupport for Sublime Text](https://github.com/chikatoike/IMESupport)
 - [「IMESupport」の検索結果一覧 - ゆり日記](http://d.hatena.ne.jp/chikatoike/archive?word=IMESupport)
 - [WindowsのIMEでインライン変換を正しく表示できるようにしてみた](http://qiita.com/items/5ccbe63d36009680e0e6)
 - \[[MAC\]\[WIN\]SUBLIME TEXT のススメと最初にすべき日本語入力環境の改善](http://roguer.info/2012/11/01/6049/)
 
-## Shift_JIS, EUC-JP 対応 {#bc9dcabf}
+#### Linux {#bf9812ef}
+
+- [SublimeIBus](https://github.com/chikatoike/SublimeIBus)
+
+### Shift_JIS, EUC-JP 対応 {#bc9dcabf}
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
-    - Sublime Text で Shift_JIS, EUC-JP などでエンコードされたファイルを扱うためのプラグイン.
 
-## Japanese menu for Sublime Text {#p0f8c581}
+### メニューの日本語化 {#p0f8c581}
 
 - [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
@@ -247,7 +253,10 @@ LaTeXTools フォルダーの jumpToPDF.py を編集します．<br>
 				subprocess.Popen([r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
 ```
 
-Ctrl+B をタイプすると TeX ファイルをビルドして PDF ファイルを作成したあとに SumatraPDF で PDF ファイルを表示して forward search を実行します．<br>
+#### 使い方 {#r3b484f1}
+
+TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
+PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示されて forward search が実行されます．<br>
 
 ### OS X {#c2e22368}
 
@@ -296,15 +305,12 @@ PDF-TeX 同期サポート:
 
 ### Windows {#m51226c8}
 
-- [NicoHack!第三回　おしゃれなテキストエディターSublime Textを使おう！](http://ch.nicovideo.jp/tanzo/blomaga/ar152449)
-- [Windows 版の Sublime Text 2 を使う](http://blog.segu.jp/2012/05/windows-sublime-text-2.html)
+- [Sublime Text 3 導入手順 (Windows7)](http://nanoway.net/pc/sublime-text-3)
 
 ### OS X {#d13b8a86}
 
 - [Sublime Text 2のTeXビルドシステム](http://www35.atpages.jp/shocker/memoRANDOM/Misc/Misc_index.php)
 - [Sublime Text2を使ってTexを書いてコンパイルまでする。](https://gist.github.com/4482213)
-- [sublime text 2をmacで使う](http://blog.hifumi.info/mac/sublime-text-2-for-mac/)
-- [Emacs, Vim, Sublime Text 2 徹底比較](http://funatti.hatenablog.com/entry/2012/07/13/155629)
 - [Soda Theme](https://github.com/buymeasoda/soda-theme)
 
 ### Linux {#r2805e10}
