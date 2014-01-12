@@ -7,7 +7,7 @@ pukiwiki: "EasyTeX"
 
 # EasyTeX
 
-## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#et3357}
+## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#et3357}
 
 <img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111214022.png" alt="EasyTeX" style="float:right">
 
@@ -50,27 +50,9 @@ Windows 8.1, 8, 7, Vista, XP
 - IME および ATOK による再変換をサポートしています．
 - [SumatraPDF](/SumatraPDF/) を使用すれば，SyncTeX による forward and inverse search も可能です．
 
-シンプルな統合環境なので，これから TeX を使い始める方におすすめのソフトです．
-
 ## 不具合 {#n8975b09}
 
 [TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
-
-## [ダウンロード](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#bf9167cb}
-
-### EasyTeX の入手先 {#qe994380}
-
-- [EasyTeX(Windows)でTeX統合環境](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
-
-## インストール {#sfc300c2}
-
-### zip ファイル {#d9b1ceee}
-
-zip ファイルの場合はファイルを適当なフォルダーに展開 (解凍) するだけでインストールは終了です．
-
-### exe ファイル {#fac37d0f}
-
-exe ファイル (インストーラー) の場合はインストーラーの指示に従ってインストールします．
 
 ## 設定 {#l2b1dc1e}
 
