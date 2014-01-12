@@ -100,7 +100,6 @@ Unicode (UTF-8) 対応テキストエディタについては，Microsoft Window
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降，
 AkelPad，
-SynWrite，
 [gedit](/gedit/)，
 [Geany](/Geany/)
 
