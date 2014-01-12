@@ -164,7 +164,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 ## インストール {#w628bee6}
 
-TeX Live は OS ごとにインストール方法が異なるのでそれぞれの OS のインストール方法を参照してください．<br>
+TeX Live は OS ごとにインストール方法が異なります．<br>
+それぞれの OS のインストール方法を参照してください．<br>
 TeX Live はアップデートが簡単に行えます．<br>
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
 
@@ -211,8 +212,6 @@ TeX Live はアップデートが簡単に行えます．<br>
 - [Android - TeX Wiki#TeX Live](/Android/#texlive)
 
 ## [tlptexlive](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) <a id="tlptexlive"></a> {#r64bfbe1}
-
-pmetapost (pmpost, upmpost) と新しい ptex, uptex, dvipdfmx, dvips バイナリが必要な場合は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)からインストールできます．
 
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
