@@ -141,18 +141,6 @@ $ sudo yum install texworks
 $ sudo yum install lyx
 ```
 
-## LaTeXila {#ka561406}
-
-```
-$ sudo yum install latexila
-```
-
-## [Kile](/Kile/) {#o606f639}
-
-```
-$ sudo yum install kile
-```
-
 ## [Eclipse](/Eclipse/) {#p298a48c}
 
 ```
@@ -169,18 +157,6 @@ $ sudo yum install emacs
 
 ```
 $ sudo yum install vim
-```
-
-## [gedit](/gedit/) {#s50327ec}
-
-```
-$ sudo yum install gedit gedit-latex gedit-plugins
-```
-
-## [Geany](/Geany/) {#ha256fb0}
-
-```
-$ sudo yum install geany geany-plugins-geanylatex
 ```
 
 ## [Inkscape](/Inkscape/) {#ue2d802a}
