@@ -115,12 +115,6 @@ $ sudo apt-get install texworks
 $ sudo apt-get install lyx
 ```
 
-## LaTeXila {#vec46f06}
-
-```
-$ sudo apt-get install latexila
-```
-
 ## [Emacs](/Emacs/) {#d8c86cfd}
 
 ```
