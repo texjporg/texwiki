@@ -337,28 +337,6 @@ Source editor:
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
-## PdfViewer との連携 {#j5194364}
-
-### forward search {#r571d61f}
-
-[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
-[YaTeX#PdfViewer との連携 (forward search)](/YaTeX/#c33117a9)<br>
-を参照してください．
-
-### inverse search {#ub3f8f81}
-
-```
-M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
-```
-
-\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
-
-Editor:
-: emacsclient -a emacs --no-wait +%l "%f"
-
-Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
-
 ## スペルチェック {#d14df590}
 
 [Aspell](/Aspell/) を使います．
