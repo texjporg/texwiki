@@ -100,27 +100,6 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ***
 
-#### PdfViewer の場合 {#y5f01220}
-
-PDFコマンドは PdfViewer を使用します．<br>
-
-***
-
-```
-
-```
-
-<br>
-
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>pdfviewer "file:$$o#src:$$n $$t"</ins><br>
-
-***
-
 ## Evince との連携 {#yfea5c32}
 
 \[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
@@ -150,14 +129,6 @@ PDFコマンドは PdfViewer を使用します．<br>
 \[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
 
 ### forward search {#l5055820}
-
-[順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
-
-## PdfViewer との連携 {#sa00c46a}
-
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
-
-### forward search {#ff4d5d64}
 
 [順検索 (forward search)](</LyX/設定/Linux/#l3e420bc>) を参照してください．
 
