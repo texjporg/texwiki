@@ -212,10 +212,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
     - [Vim-LaTeX](/Vim-LaTeX/)
     - Automatic LaTeX Plugin for Vim (ATP)
-- LaTeXila
-- [Kile](/Kile/)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
 
 ## PDF ファイルビューア {#uf722ec6}
 
@@ -227,20 +223,13 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
 
-- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [Kile](/Kile/), [TeXlipse](/TeXlipse/) ([Pdf4Eclipse](</TeXlipse/設定/Linux/#p67adb24>)), [Emacs](/Emacs/) ([DocView](/Emacs/#docview)) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXlipse](/TeXlipse/) ([Pdf4Eclipse](</TeXlipse/設定/Linux/#p67adb24>)), [Emacs](/Emacs/) ([DocView](/Emacs/#docview)) などは PDF ファイルビューアを内蔵しています．
 - [Evince](/Evince/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
-- PdfViewer
-- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf, llpp などで使われています．
-- [open-pdf-presenter](https://code.google.com/p/open-pdf-presenter/)
-- [Xpdf](/Xpdf/)
-- [Poppler](/Poppler/) Xpdf をベースにした PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer などで使われています．
-- [llpp](http://repo.or.cz/w/llpp.git)
-- [JFBView](http://seasonofcode.com/pages/jfbview.html)
-- [PDFCube](http://code.100allora.it/pdfcube/)
-- [PDFedit](http://pdfedit.cz/)
+- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
