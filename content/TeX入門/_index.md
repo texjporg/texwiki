@@ -50,7 +50,7 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
 およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用していました。<br>
-現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX,upLaTeX](/upTeX,upLaTeX/) が利用できます。<br>
+現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。<br>
 Unicode に完全対応したものには [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX, [XeTeX, XeLaTeX](/XeTeX/) があります。<br>
 
 1994年に LaTeX の新版 LaTeX 2ε（トゥー・イー），1995年にはアスキーから日本語版
@@ -76,7 +76,8 @@ TeX，pTeX，upTeX が働いていると言うに留めておき，詳しい説�
     [TeX Live](</TeX Live/>) 2013 を収録した
     DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2013/978-4-7741-6107-5)もあります。
 
-これ以外にも多くの[良書](</TeXの本/>)が出ていますので，書店でお選びください。
+これ以外にも多くの[良書](</TeXの本/>)が出ています。<br>
+書店でお選びください。<br>
 
 ### LaTeX のバージョンについて —入門書を読む際に— {#h22f32a6}
 
