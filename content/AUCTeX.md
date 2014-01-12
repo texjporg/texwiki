@@ -523,9 +523,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                    '("qpdfview" "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
                                      TeX-run-discard-or-function t t :help "Forward search with qpdfview"))
                       (add-to-list 'TeX-command-list
-                                   '("PdfViewer" "pdfviewer \"file:\"%s.pdf\"#src:%n %b\""
-                                     TeX-run-discard-or-function t t :help "Forward search with PdfViewer"))
-                      (add-to-list 'TeX-command-list
                                    '("TeXworks" "texworks %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
@@ -580,7 +577,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>fwdzathura</td><td>C-c C-c fwdzathura RET</td><td>forward search (PDF)</td></tr>
 > <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>PdfViewer</td><td>C-c C-c pdfviewer RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
