@@ -137,8 +137,6 @@ UTF-8 を使用したい方は
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
 - AkelPad
-- SynWrite
-- [TeXnicCenter](/TeXnicCenter/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境・エディタを使用してください．
 
