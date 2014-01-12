@@ -92,8 +92,6 @@ pukiwiki: "Fortran"
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
 
 ### Fortran 2008 の使い方 {#r3bbac60}
 
