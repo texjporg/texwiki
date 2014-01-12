@@ -54,8 +54,6 @@ pukiwiki: "C"
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
 
 ## C から Fortran の関数を呼び出す {#x01bff9e}
 
