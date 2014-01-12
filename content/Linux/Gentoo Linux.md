@@ -82,12 +82,6 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 - [http://gentwoo.elisp.net/packages/app-office/lyx](http://gentwoo.elisp.net/packages/app-office/lyx)
 
-## LaTeXila {#b1485fd8}
-
-## [Kile](/Kile/) {#qc5e840d}
-
-- [http://gentwoo.elisp.net/packages/app-editors/kile](http://gentwoo.elisp.net/packages/app-editors/kile)
-
 ## [Emacs](/Emacs/) {#wd024ab5}
 
 - [http://gentwoo.elisp.net/packages/app-editors/emacs](http://gentwoo.elisp.net/packages/app-editors/emacs)
