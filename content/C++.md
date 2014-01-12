@@ -60,8 +60,6 @@ pukiwiki: "C++"
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 - [サクラエディタ](</サクラエディタ/>)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#m066ad0f}
 
