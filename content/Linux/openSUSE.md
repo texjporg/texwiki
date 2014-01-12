@@ -103,30 +103,6 @@ $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
 $ sudo zypper install lyx
 ```
 
-## LaTeXila {#r5f3b44b}
-
-```
-$ sudo zypper install latexila
-```
-
-## [Kile](/Kile/) {#a5604b87}
-
-```
-$ sudo zypper install kile
-```
-
-## [gedit](/gedit/) {#q3837a6e}
-
-```
-$ sudo zypper install gedit gedit-plugins gedit-plugin-latex
-```
-
-## [Geany](/Geany/) {#q6659b75}
-
-```
-$ sudo zypper install geany geany-plugins
-```
-
 ## [MinGW](/MinGW/) {#e5f30d58}
 
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
