@@ -418,22 +418,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
 
-(defun pdfviewer-forward-search ()
-  (interactive)
-  (let* ((ctf (buffer-name))
-         (mtf (tex-main-file))
-         (pf (concat (car (split-string mtf "\\.")) ".pdf"))
-         (ln (format "%d" (line-number-at-pos)))
-         (cmd "pdfviewer")
-         (args (concat "\"file:" pf "#src:" ln " " ctf "\"")))
-    (message (concat cmd " " args))
-    (process-kill-without-query
-     (start-process-shell-command "pdfviewer" nil cmd args))))
-
-(add-hook 'latex-mode-hook
-          '(lambda ()
-             (define-key latex-mode-map (kbd "C-c p") 'pdfviewer-forward-search)))
-
 ;;
 ;; RefTeX with TeX mode
 ;;
