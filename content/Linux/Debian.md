@@ -214,18 +214,6 @@ $ sudo apt-get install texworks
 $ sudo apt-get install lyx
 ```
 
-## LaTeXila <a id="latexila"></a> {#q4026bb3}
-
-```
-$ sudo apt-get install latexila
-```
-
-## [Kile](/Kile/) <a id="kile"></a> {#xe3b1e96}
-
-```
-$ sudo apt-get install kile
-```
-
 ## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#f101e753}
 
 ```
@@ -254,18 +242,6 @@ $ sudo apt-get install emacs24
 
 ```
 $ sudo apt-get install vim vim-gtk
-```
-
-## [gedit](/gedit/) <a id="gedit"></a> {#j3cc1af4}
-
-```
-$ sudo apt-get install gedit gedit-latex-plugin gedit-plugins
-```
-
-## [Geany](/Geany/) <a id="geany"></a> {#afd436be}
-
-```
-$ sudo apt-get install geany geany-plugins
 ```
 
 ## [Inkscape](/Inkscape/) <a id="inkscape"></a> {#h0e14315}
