@@ -156,12 +156,6 @@ $ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 $ yaourt -S qpdfview
 ```
 
-## PdfViewer {#h51fbe76}
-
-```
-$ yaourt -S pdfviewer
-```
-
 ## [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
@@ -217,18 +211,6 @@ $ yaourt -S texworks
 $ sudo pacman -S lyx
 ```
 
-## LaTeXila {#q4319830}
-
-```
-$ yaourt -S latexila
-```
-
-## [Kile](/Kile/) {#l211571b}
-
-```
-$ sudo pacman -S kile kdebase-konsole
-```
-
 ## [Emacs](/Emacs/) {#le6bf422}
 
 ```
@@ -239,19 +221,6 @@ $ sudo pacman -S emacs
 
 ```
 $ sudo pacman -S vim
-```
-
-## [gedit](/gedit/) {#k1930181}
-
-```
-$ sudo pacman -S gedit gedit-plugins
-$ yaourt -S gedit-latex
-```
-
-## [Geany](/Geany/) {#z3d2b775}
-
-```
-$ sudo pacman -S geany geany-plugins
 ```
 
 ## [Inkscape](/Inkscape/) {#ca45a692}
