@@ -120,16 +120,6 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
 - [TeXworks (Windows 7)の日本語処理がうまくいきません。](https://okumuralab.org/tex/mod/forum/discuss.php?d=496)
 - [バッチファイルの書き方（W32TeXのpdfpLaTeX）](https://okumuralab.org/tex/mod/forum/discuss.php?d=423)
 
-## TeX Q &amp; A {#c7b3c175}
-
-- TeXworks のテンプレートに日本語の雛形を入れませんか？ ([qa:55996](https://okumuralab.org/~okumura/texfaq/qa/55996.html), [qa:55997](https://okumuralab.org/~okumura/texfaq/qa/55997.html), [qa:55998](https://okumuralab.org/~okumura/texfaq/qa/55998.html), [qa:55999](https://okumuralab.org/~okumura/texfaq/qa/55999.html))
-- \[改訂第5版\] LaTeX2e 美文書作成入門 ([qa:55911](https://okumuralab.org/~okumura/texfaq/qa/55911.html), [qa:55912](https://okumuralab.org/~okumura/texfaq/qa/55912.html), [qa:55913](https://okumuralab.org/~okumura/texfaq/qa/55913.html), [qa:55914](https://okumuralab.org/~okumura/texfaq/qa/55914.html), [qa:55915](https://okumuralab.org/~okumura/texfaq/qa/55915.html), [qa:55916](https://okumuralab.org/~okumura/texfaq/qa/55916.html), [qa:55917](https://okumuralab.org/~okumura/texfaq/qa/55917.html), [qa:55918](https://okumuralab.org/~okumura/texfaq/qa/55918.html), [qa:55919](https://okumuralab.org/~okumura/texfaq/qa/55919.html), [qa:55920](https://okumuralab.org/~okumura/texfaq/qa/55920.html), [qa:55921](https://okumuralab.org/~okumura/texfaq/qa/55921.html), [qa:55922](https://okumuralab.org/~okumura/texfaq/qa/55922.html), [qa:55923](https://okumuralab.org/~okumura/texfaq/qa/55923.html), [qa:55924](https://okumuralab.org/~okumura/texfaq/qa/55924.html), [qa:55925](https://okumuralab.org/~okumura/texfaq/qa/55925.html), [qa:55926](https://okumuralab.org/~okumura/texfaq/qa/55926.html), [qa:55927](https://okumuralab.org/~okumura/texfaq/qa/55927.html))
-- TeXworksのPDFを紙に印刷する方法を教えて下さい。 ([qa:55829](https://okumuralab.org/~okumura/texfaq/qa/55829.html), [qa:55831](https://okumuralab.org/~okumura/texfaq/qa/55831.html), [qa:55832](https://okumuralab.org/~okumura/texfaq/qa/55832.html), [qa:55833](https://okumuralab.org/~okumura/texfaq/qa/55833.html), [qa:55834](https://okumuralab.org/~okumura/texfaq/qa/55834.html))
-- input encoding ([qa:55754](https://okumuralab.org/~okumura/texfaq/qa/55754.html), [qa:55757](https://okumuralab.org/~okumura/texfaq/qa/55757.html), [qa:55759](https://okumuralab.org/~okumura/texfaq/qa/55759.html), [qa:55762](https://okumuralab.org/~okumura/texfaq/qa/55762.html), [qa:55764](https://okumuralab.org/~okumura/texfaq/qa/55764.html), [qa:55765](https://okumuralab.org/~okumura/texfaq/qa/55765.html), [qa:55766](https://okumuralab.org/~okumura/texfaq/qa/55766.html), [qa:55768](https://okumuralab.org/~okumura/texfaq/qa/55768.html), [qa:55770](https://okumuralab.org/~okumura/texfaq/qa/55770.html))
-- 更新すると設定情報が初期化(クリア)される ([qa:55734](https://okumuralab.org/~okumura/texfaq/qa/55734.html), [qa:55736](https://okumuralab.org/~okumura/texfaq/qa/55736.html), [qa:55737](https://okumuralab.org/~okumura/texfaq/qa/55737.html))
-- shift-jis で TeXworks ([qa:55727](https://okumuralab.org/~okumura/texfaq/qa/55727.html), [qa:55728](https://okumuralab.org/~okumura/texfaq/qa/55728.html), [qa:55729](https://okumuralab.org/~okumura/texfaq/qa/55729.html), [qa:55730](https://okumuralab.org/~okumura/texfaq/qa/55730.html), [qa:55731](https://okumuralab.org/~okumura/texfaq/qa/55731.html), [qa:55732](https://okumuralab.org/~okumura/texfaq/qa/55732.html), [qa:55733](https://okumuralab.org/~okumura/texfaq/qa/55733.html))
-- synctex and ptex ([qa:53333](https://okumuralab.org/~okumura/texfaq/qa/53333.html), [qa:53339](https://okumuralab.org/~okumura/texfaq/qa/53339.html), [qa:53340](https://okumuralab.org/~okumura/texfaq/qa/53340.html), [qa:53342](https://okumuralab.org/~okumura/texfaq/qa/53342.html), [qa:53343](https://okumuralab.org/~okumura/texfaq/qa/53343.html), [qa:53344](https://okumuralab.org/~okumura/texfaq/qa/53344.html), [qa:53347](https://okumuralab.org/~okumura/texfaq/qa/53347.html), [qa:53348](https://okumuralab.org/~okumura/texfaq/qa/53348.html), [qa:53372](https://okumuralab.org/~okumura/texfaq/qa/53372.html), [qa:53380](https://okumuralab.org/~okumura/texfaq/qa/53380.html), [qa:53381](https://okumuralab.org/~okumura/texfaq/qa/53381.html), [qa:53382](https://okumuralab.org/~okumura/texfaq/qa/53382.html), [qa:53412](https://okumuralab.org/~okumura/texfaq/qa/53412.html), [qa:53467](https://okumuralab.org/~okumura/texfaq/qa/53467.html), [qa:53480](https://okumuralab.org/~okumura/texfaq/qa/53480.html), [qa:53504](https://okumuralab.org/~okumura/texfaq/qa/53504.html), [qa:53519](https://okumuralab.org/~okumura/texfaq/qa/53519.html))
-
 ## 不具合 {#v0f00822}
 
 - [Issues](https://code.google.com/p/texworks/issues/list)
@@ -175,22 +165,11 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 ***
 
-### Windows で 日本語のフォントを埋め込んでいない PDF ファイルを作成して TeXworks 0.4.4 で表示した場合に代替フォントで表示されない → TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました {#b4ae0a86}
-
-- [Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows](https://code.google.com/p/texworks/issues/detail?id=615)
-- \[[tex-live\] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts](http://www.tug.org/pipermail/tex-live/2013-March/033076.html)
-
-TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．<br>
-ゴシック体を表示したい場合は以下の方法があります．<br>
-
-- フォントを埋め込む
-- バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります)
-- fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド
-
-### かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる → 現在カーソルのある行をハイライトするを OFF にする {#s5bfc44e}
+### かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる → 現在カーソルのある行をハイライトするを OFF にするまたは [TeXstudio](/TeXstudio/) を使用する {#s5bfc44e}
 
 TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体のオプションで現在カーソルのある行をハイライトするにチェックを入れている場合，かな漢字変換の際に，文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生します．<br>
 これを回避するには，現在カーソルのある行をハイライトするのチェックをはずしてください．<br>
+TeXworks ではなく [TeXstudio](/TeXstudio/) を使用しても OK です．<br>
 
 ***
 
@@ -226,147 +205,6 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 ***
 
-#### 修正方法 (Windows) {#pb4e9c13}
-
-- [Subversion Windows Installer](http://alagazam.net/) から Windows binaries をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
-
-- [Poppler](/Poppler/) をインストールします．
-
-- [Hunspell](/Hunspell/) をインストールします．
-
-<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz -->
-
-```
-$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz
-$ tar xvf hunspell-1.3.2.tar.gz
-$ pushd hunspell-1.3.2
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-- TeXworks のソースコードを取得します．
-
-```
-$ svn checkout http://texworks.googlecode.com/svn/trunk/ texworks-read-only
-$ pushd texworks-read-only
-```
-
-- TeXworks のソースコードの該当箇所を修正します．
-
-[texworks-read-only/src/CompletingEdit.cpp](https://code.google.com/p/texworks/source/browse/trunk/src/CompletingEdit.cpp) の
-
-```
-currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
-```
-
-の部分を
-
-```
-currentLineFormat->setForeground(QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG + .9 * fgG, .1 * bgB + .9 * fgB));
-currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
-```
-
-のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 \* bgR + .9 \* fgR, .1 \* bgG + .9 \* fgG, .1 \* bgB + .9 \* fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．<br>
-ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります．<br>
-
-- TeXworks をビルドします．
-
-```
-$ mkdir build
-$ pushd build
-$ cmake .. -G "MSYS Makefiles" -DWITH_LUA=OFF -DWITH_PYTHON=OFF -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -Dgp_cmd=C:/MinGW/bin/objdump.exe
-$ make
-$ ./src/TeXworks.exe &
-```
-
-上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
-
-- 現在カーソルのある行をハイライトするにチェックがはいっている場合にかな漢字変換をしてもハイライトに隠れずに表示されることを確認します．
-
-- 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
-
-- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，TeXworks の実行に必要なライブラリ (DLL ファイル) の確認をします．<br>
-    objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
-
-```
-$ objdump -p ./src/TeXworks.exe | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: QtCore4.dll
-        DLL Name: QtGui4.dll
-        DLL Name: QtScript4.dll
-        DLL Name: QtScriptTools4.dll
-        DLL Name: QtXml4.dll
-        DLL Name: USER32.dll
-        DLL Name: libgcc_s_dw2-1.dll
-        DLL Name: libhunspell-1.3-0.dll
-        DLL Name: libpoppler-qt4.dll
-        DLL Name: libpoppler.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: msvcrt.dll
-```
-
-```
-$ objdump -p /mingw/bin/libpoppler-qt4.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: QtCore4.dll
-        DLL Name: QtGui4.dll
-        DLL Name: QtXml4.dll
-        DLL Name: libgcc_s_dw2-1.dll
-        DLL Name: libpoppler.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: msvcrt.dll
-```
-
-```
-$ objdump -p /mingw/bin/libpoppler.dll | grep "DLL Name" | sort | uniq
-        DLL Name: ADVAPI32.DLL
-        DLL Name: GDI32.dll
-        DLL Name: KERNEL32.dll
-        DLL Name: USER32.dll
-        DLL Name: libcurl-4.dll
-        DLL Name: libfontconfig-1.dll
-        DLL Name: libfreetype-6.dll
-        DLL Name: libgcc_s_dw2-1.dll
-        DLL Name: libjpeg-9.dll
-        DLL Name: liblcms2-2.dll
-        DLL Name: libopenjp2.dll
-        DLL Name: libpng16-16.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: libtiff-5.dll
-        DLL Name: msvcrt.dll
-        DLL Name: zlib1.dll
-```
-
-```
-$ objdump -p /mingw/bin/libfontconfig-1.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: libfreetype-6.dll
-        DLL Name: libxml2-2.dll
-        DLL Name: msvcrt.dll
-```
-
-```
-$ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: WS2_32.dll
-        DLL Name: libiconv-2.dll
-        DLL Name: liblzma-5.dll
-        DLL Name: msvcrt.dll
-        DLL Name: zlib1.dll
-```
-
-- C:\MinGW\bin と C:\Qt\4.8.5\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
-
-### TeXworks 0.4.4 で UTF-8 with BOM (UTF-8 BOM あり) 形式のファイルを保存すると BOM が削除される → TeXworks 0.4.5 で修正されました {#je29691c}
-
-TeXworks 0.4.5 で修正されました (→ TeXworks [r1018](https://code.google.com/p/texworks/source/detail?r=1018) を参照)
-
-TeXworks 0.4.4 で UTF-8 with BOM (UTF-8 BOM あり) 形式のファイルを保存するとファイルのデータの先頭にある BOM (EF BB BF) が削除されます．
-
-- [Issue 591: Save appears to remove UTF-8 BOM](https://code.google.com/p/texworks/issues/detail?id=591) → Fixed
-
 ## 文字コードの変換 {#e8ba5265}
 
 TeXworks で使用する文字コードはデフォルトでは UTF-8 です．<br>
@@ -399,6 +237,14 @@ Windows PowerShell またはコマンド プロンプトに慣れていない場
 nkf やメモ帳以外の変換ツールを使用したい場合は [KanjiTranslator](http://www.kashim.com/kanjitranslator/) などの文字コード変換ツールを使っても OK です．<br>
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#t5313ebc}
+
+<!-- -[[Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows:https://code.google.com/p/texworks/issues/detail?id=615]] -->
+<!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
+<!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．~ -->
+<!-- ゴシック体を表示したい場合は以下の方法があります．~ -->
+<!-- -フォントを埋め込む -->
+<!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
+<!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
 
 Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
 
