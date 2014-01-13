@@ -91,6 +91,7 @@ make latexpdfja
 を実行します．<br>
 
 - [https://bitbucket.org/keik/sphinx-lualatex](https://bitbucket.org/keik/sphinx-lualatex)
+- [Succeeded to make a PDF including CJK text by sphinx](https://groups.google.com/forum/#!topic/sphinx-users/iaRNBHC_f5o)
 - [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
 - \[[Sphinx-Users 63\]	Windowsでの日本語LaTeX/PDF文書作成のための修正](http://www.python.jp/pipermail/sphinx-users/2011-March/000062.html)
     - \[[Sphinx-Users 64\] Re:	Windowsでの日本語LaTeX/PDF文書作成のための修正](http://www.python.jp/pipermail/sphinx-users/2011-March/000063.html)
