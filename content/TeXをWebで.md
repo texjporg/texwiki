@@ -119,10 +119,7 @@ ulimit -t 10 -f 1024
 #### フリーソフトウェア (オープンソフトウェア) {#g834836b}
 
 - [JaxEdit](http://jaxedit.com/)
-- [texlive.js](http://manuels.github.com/texlive.js/website/)
-    - [WebブラウザだけでLaTeXからPDFを生成「texlive.js」](http://www.moongift.jp/2013/01/20130130/)
-    - [I ported LaTeX to Javascript | Hacker News](http://news.ycombinator.com/item?id=5083361)
-- [etherTeX](https://github.com/geier/ethertex)
+- [texlive.js](http://manuels.github.io/texlive.js/)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
 
 #### フリーウェア (無料) {#e0fded48}
