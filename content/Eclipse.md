@@ -34,10 +34,6 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 [Release Milestones](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones)
 
-### 派生版 {#ea83e439}
-
-- [Eclipse Portable](http://sf.net/projects/eclipseportable/files/)
-
 ## Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
