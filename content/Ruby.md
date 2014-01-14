@@ -27,6 +27,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 - [IronRuby](http://ironruby.codeplex.com/)
 - [JRuby](http://jruby.org/)
 - [Rubinius](http://rubini.us/)
+- [Topaz](http://topazruby.com/)
 
 ## インストール {#oe1e1c67}
 
