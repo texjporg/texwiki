@@ -54,6 +54,114 @@ if __name__ == '__main__':
 
 ***
 
+### pdfLaTeX.py {#l6e1425f}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        pdflatex = 'pdflatex -synctex=1 "' + b + '"'
+        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
+        if ok == MESSAGEBOXFLAGS.RESULTOK:
+            notepad.save()
+            os.chdir(c)
+            console.clear()
+            console.show()
+            console.run(pdflatex)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
+### LuaLaTeX.py {#p03245f3}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        pdflatex = 'lualatex -synctex=1 "' + b + '"'
+        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
+        if ok == MESSAGEBOXFLAGS.RESULTOK:
+            notepad.save()
+            os.chdir(c)
+            console.clear()
+            console.show()
+            console.run(pdflatex)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
+### LuaJITLaTeX.py {#w98c875c}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        pdflatex = 'luajitlatex -synctex=1 "' + b + '"'
+        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
+        if ok == MESSAGEBOXFLAGS.RESULTOK:
+            notepad.save()
+            os.chdir(c)
+            console.clear()
+            console.show()
+            console.run(pdflatex)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
+### XeLaTeX.py {#zcb23cff}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        pdflatex = 'xelatex -synctex=1 "' + b + '"'
+        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
+        if ok == MESSAGEBOXFLAGS.RESULTOK:
+            notepad.save()
+            os.chdir(c)
+            console.clear()
+            console.show()
+            console.run(pdflatex)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
 ## SumatraPDF との連携 {#w3ac6f2d}
 
 ### forward and inverse search (SumatraPDF を前面に表示したい場合) {#cb16bf11}
