@@ -87,10 +87,8 @@ Windows 8.1, 8, 7, Vista, XP
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
 - [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
-    - サクラエディタ Ver. 2.0.6.0 で外部ヘルプ1でもヘルプの拡張子がchm等だった場合には、HTMLヘルプを表示できるようになりました (→ [Sakura Editor / PatchUnicode / #230 外部ヘルプ1でもHTMLヘルプを表示](http://sourceforge.net/p/sakura-editor/patchunicode/230/))
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
-    - サクラエディタ Ver. 2.0.6.0 で C/Migemo 1.3 に対応しました (→ [Sakura Editor / PatchUnicode / #180 C/Migemo1.3対応](http://sourceforge.net/p/sakura-editor/patchunicode/180/))<br>
 
 ***
 
@@ -122,7 +120,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 - [FAQ/57 - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ%2F57)
 
-サクラエディタ Ver. 2.0.7.0 以降は \[設定(O)\]-\[タイプ別設定(Y)...\]-\[ウィンドウ\] からデフォルトの文字コードを指定することができます．<br>
+\[設定(O)\]-\[タイプ別設定(Y)...\]-\[ウィンドウ\] からデフォルトの文字コードを指定することができます．<br>
 UTF-8 を選択します．<br>
 
 ***
@@ -150,7 +148,7 @@ UTF-8 を選択します．<br>
 
 ### 文字コードセット指定 {#q69d8ccc}
 
-サクラエディタ Ver. 2.0.6.0 以降は \[設定(O)\]-\[文字コードセット指定(A)...\] から開いているファイルの文字コードを変更することができます．<br>
+\[設定(O)\]-\[文字コードセット指定(A)...\] から開いているファイルの文字コードを変更することができます．<br>
 文字コードを UTF-8 に変更する場合は UTF-8 を選択します．<br>
 
 ***
@@ -378,7 +376,6 @@ TeX の入力補完機能があります．
 
 入力補完は，メニューの \[ツール(T)\] → \[入力補完(/)\] または Ctrl+Space で実行できます．<br>
 単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．<br>
-サクラエディタ Ver. 2.0.6.0 で強調キーワードで補完できるようになりました (→ [Sakura Editor / PatchUnicode / #340 強調キーワードで補完修正](http://sourceforge.net/p/sakura-editor/patchunicode/340/))<br>
 
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[支援\] で入力補完機能の設定ができます．<br>
 
@@ -425,7 +422,6 @@ TeX のアウトライン解析機能があります．
 
 - [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/DockingOutline)
 - [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](http://sourceforge.net/p/sakura-editor/patchunicode/116/)
-- サクラエディタ Ver. 2.0.6.0 で TeX のアウトライン解析の SJIS チェックの修正が行われました (→ [Sakura Editor / PatchUnicode / #257 Texアウトライン解析のSJISチェックの修正](http://sourceforge.net/p/sakura-editor/patchunicode/257/))<br>
 
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[スクリーン\] でアウトライン解析方法を指定できます．<br>
 
