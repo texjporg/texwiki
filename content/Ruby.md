@@ -97,14 +97,14 @@ $ pacman -S ruby
 
 ### Ruby 版 {#bf356aaf}
 
-Evince 3.8.3, Ruby 2.0.0, ruby-dbus 0.9.2 で動作確認しています．<br>
+Evince 3.10.0, Ruby 2.0.0, ruby-dbus 0.10.0 で動作確認しています．<br>
 
 ```
 $ sudo gem install ruby-dbus
-Fetching: ruby-dbus-0.9.2.gem (100%)
-Successfully installed ruby-dbus-0.9.2
-Parsing documentation for ruby-dbus-0.9.2
-Installing ri documentation for ruby-dbus-0.9.2
+Fetching: ruby-dbus-0.10.0.gem (100%)
+Successfully installed ruby-dbus-0.10.0
+Parsing documentation for ruby-dbus-0.10.0
+Installing ri documentation for ruby-dbus-0.10.0
 Done installing documentation for ruby-dbus after 1 seconds
 1 gem installed
 ```
