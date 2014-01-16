@@ -40,13 +40,11 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         ptex2pdf = 'ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "' + b + '"'
-        ok = notepad.messageBox(ptex2pdf, 'Notepad++', 1)
-        if ok == MESSAGEBOXFLAGS.RESULTOK:
-            notepad.save()
-            os.chdir(c)
-            console.clear()
-            console.show()
-            console.run(ptex2pdf)
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(ptex2pdf)
 
 if __name__ == '__main__':
     Command().run()
@@ -67,13 +65,11 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         pdflatex = 'pdflatex -synctex=1 "' + b + '"'
-        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
-        if ok == MESSAGEBOXFLAGS.RESULTOK:
-            notepad.save()
-            os.chdir(c)
-            console.clear()
-            console.show()
-            console.run(pdflatex)
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(pdflatex)
 
 if __name__ == '__main__':
     Command().run()
@@ -94,13 +90,11 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         pdflatex = 'lualatex -synctex=1 "' + b + '"'
-        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
-        if ok == MESSAGEBOXFLAGS.RESULTOK:
-            notepad.save()
-            os.chdir(c)
-            console.clear()
-            console.show()
-            console.run(pdflatex)
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(pdflatex)
 
 if __name__ == '__main__':
     Command().run()
@@ -121,13 +115,11 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         pdflatex = 'luajitlatex -synctex=1 "' + b + '"'
-        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
-        if ok == MESSAGEBOXFLAGS.RESULTOK:
-            notepad.save()
-            os.chdir(c)
-            console.clear()
-            console.show()
-            console.run(pdflatex)
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(pdflatex)
 
 if __name__ == '__main__':
     Command().run()
@@ -148,13 +140,11 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         pdflatex = 'xelatex -synctex=1 "' + b + '"'
-        ok = notepad.messageBox(pdflatex, 'Notepad++', 1)
-        if ok == MESSAGEBOXFLAGS.RESULTOK:
-            notepad.save()
-            os.chdir(c)
-            console.clear()
-            console.show()
-            console.run(pdflatex)
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(pdflatex)
 
 if __name__ == '__main__':
     Command().run()
