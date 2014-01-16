@@ -100,43 +100,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 ### 不具合 {#m2b9f4bc}
 
-[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
-
-#### LuaTeX-ja 20130708.0, 20130711.0 では非埋め込みの明朝体が正常に表示されない → LuaTeX-ja 20130909.0 で修正されました {#k84a4a58}
-
-LuaTeX-ja 20130909.0 で修正されました．<br>
-
-- [Fix typo in src/ltj-plain.sty and src/patches/lltjdefs.sty](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=commit;h=17af71ac2567703411f2aca0fdb0b8050717be90) を参照．<br>
-
-lltjdefs.sty, ltj-plain.sty の誤植が原因です．<br>
-[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) にも記述がありますが，20130708.0, 20130711.0 では，lltjdefs.sty, ltj-plain.sty において
-
-```
-\def\ltj@stdmcfont{psft:Ryumin-Light}
-```
-
-となっているべきところが
-
-```
-\def\ltj@stdmcfont{psft:Ryumin-Right}
-```
-
-となっているという誤植があります (2013/07/11)．
-
-#### フォントを埋め込まない場合に全角チルダ「～」(U+FF5E)が表示できない → 回避策: 全角チルダの代わりに波ダッシュ「〜」(U+301C) を使うか \usepackage{luatexja-fontspec} でフォントを指定して埋め込む {#i3e2d318}
-
-LuaTeX-ja でフォントを埋め込まない場合に全角チルダ「～」(U+FF5E) を処理すると表示されないようです．<br>
-これは全角チルダの代わりに波ダッシュ「〜」(U+301C)を使うことで回避できます．<br>
-\usepackage{luatexja-fontspec} でフォントを指定して埋め込むと全角チルダが表示できます．<br>
-
-- [Wikipedia:表記ガイド#波ダッシュ](http://ja.wikipedia.org/wiki/Wikipedia:%E8%A1%A8%E8%A8%98%E3%82%AC%E3%82%A4%E3%83%89#.E6.B3.A2.E3.83.80.E3.83.83.E3.82.B7.E3.83.A5) によると
-
-> 全角チルダ「～」(Unicode: U+FF5E)・チルダ「~」(Unicode: U+007E)は使用しないでください。<br>
-> 波ダッシュ・波ダーシ（「![](http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Wave_Dash.svg/18px-Wave_Dash.svg.png)」など）は原則として用いず、半角(JIS X 0201)にあるハイフンマイナス「-」で代用します。この理由は、波ダッシュ「〜」(Unicode: U+301C)が、コンピュータOSおよびフォントによっては上下逆の波形「![](http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Wave_Dash2.svg/18px-Wave_Dash2.svg.png)」で表示されることがあるからです。<br>
-> 波ダッシュを固有名称などでやむを得ず使用する際には、原則として「〜」(Unicode: U+301C)を必要最小限に用いてください。<br>
-> この場合、波ダッシュ「〜」(Unicode: U+301C)の入力は、Windows環境では、通常のキーボード入力（すなわち「全角チルダ」となってしまう入力）は避けて下さい。<br>
-
-とあるので全角チルダは使用しない方がいいかもしれません．
+[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．<br>
 
 ## 他のパッケージとの併用 {#kdbc7cfe}
 
