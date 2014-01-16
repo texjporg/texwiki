@@ -27,8 +27,8 @@ pukiwiki: "D"
 
 ### D 版 {#b96c322d}
 
-DMD32 D Compiler v2.063.2 でビルドできます．<br>
-Windows PowerShell から以下のようにしてビルドします．<br>
+DMD32 D Compiler v2.064 でビルドできます．<br>
+Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
 PS C:\w32tex\bin> dmd fwdsumatrapdf.d
@@ -262,7 +262,7 @@ Usage(in string[] args)
     return;
 }
 
-int
+void
 main(string[] args)
 {
     Usage(args);
@@ -279,8 +279,6 @@ main(string[] args)
         stderr.writefln(to!string(e));
         exit(1);
     }
-
-    return 0;
 }
 ```
 
