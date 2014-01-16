@@ -14,7 +14,9 @@ xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファ�
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## xdvik とは <a id="xdvik"></a> {#s47919ef}
+## [xdvik](http://xdvi.sourceforge.net/)  (obsolete) → PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="xdvik"></a> {#s47919ef}
+
+### xdvik とは {#de90c407}
 
 xdvik は DVI プレビューアです．<br>
 xdvi を Kpathsea ライブラリに対応させたものです．<br>
@@ -47,7 +49,9 @@ xdvik (xdvi-motif) は TeX Live/Vine Linux に含まれています．<br>
 $ xdvi -watchfile 1 hoge.dvi &
 ```
 
-## pxdvi とは <a id="pxdvi"></a> {#s1b173bb}
+## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)  (obsolete) → PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
+
+### pxdvi とは {#e137631f}
 
 pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです．<br>
 pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．<br>
