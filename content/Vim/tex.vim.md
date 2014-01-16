@@ -70,9 +70,9 @@ function! TypesetFile()
   end
 
   if g:typeset == 'pdfuplatex'
-    call PdfpLaTeX("pdfuplatex")
+    call PdfupLaTeX("pdfuplatex")
   elseif g:typeset == 'pdfuplatex2'
-    call PdfpLaTeX("pdfuplatex2")
+    call PdfupLaTeX("pdfuplatex2")
   elseif g:typeset == 'pdflatex'
     call PdfLaTeX("pdflatex")
   elseif g:typeset == 'lualatex'
@@ -82,7 +82,7 @@ function! TypesetFile()
   elseif g:typeset == 'xelatex'
     call PdfLaTeX("xelatex")
   else
-    call PdfpLaTeX("pdfuplatex")
+    call PdfupLaTeX("pdfuplatex")
   endif
   return ''
 endfunction
@@ -113,8 +113,6 @@ function! ViewFile()
     call Zathura()
   elseif g:viewer == 'qpdfview'
     call Qpdfview()
-  elseif g:viewer == 'pdfviewer'
-    call PdfViewer()
   elseif g:viewer == 'adobereader'
     call AdobeReader()
   endif
@@ -159,8 +157,6 @@ function! SetViewer(viewer)
       let g:viewer = 'zathura'
     elseif a:viewer == 'qpdfview'
       let g:viewer = 'qpdfview'
-    elseif a:viewer == 'pdfviewer'
-      let g:viewer = 'pdfviewer'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
     else
@@ -193,9 +189,9 @@ function! SetTeXmaster(master)
   endif
 endfunction
 
-function! PdfpLaTeX(type)
+function! PdfupLaTeX(type)
   if &ft != 'tex'
-    echo "calling PdfpLaTeX from a non-tex file"
+    echo "calling PdfupLaTeX from a non-tex file"
     return ''
   end
 
@@ -537,24 +533,6 @@ function! Qpdfview()
   return ''
 endfunction
 
-function! PdfViewer()
-  if &ft != 'tex'
-    echo "calling PdfViewer from a non-tex file"
-    return ''
-  end
-
-  let masterDir = expand("%:p:h")
-  let currentTeXFile = expand("%:t")
-  let masterTeXFile = g:master
-  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
-  let viewer = 'pdfviewer'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "file:' . masterPDFFile . '\#src:' . line(".") . ' ' . currentTeXFile . '" &'
-
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
 function! AdobeReader()
   if &ft != 'tex'
     echo "calling Adobe Reader from a non-tex file"
@@ -696,7 +674,6 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
 > <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
 > <tr><td>:Viewer qpdfview &lt;Enter&gt;</td><td>ビューアを qpdfview に変更</td></tr>
-> <tr><td>:Viewer pdfviewer &lt;Enter&gt;</td><td>ビューアを PdfViewer に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
