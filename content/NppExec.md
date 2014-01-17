@@ -22,7 +22,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 設定した後で \[プラグイン\]-\[NppExec\]-\[Advanced Options...\] の Menu item から設定した項目を登録します．<br>
 \[設定\]-\[ショートカット管理...\]-\[Plugin commands\] から登録した項目のショートカットの設定をします．<br>
 
-- [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec.htm)
+- [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec/)
 
 ### pdfupLaTeX {#i86b16de}
 
@@ -540,50 +540,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 ***
 
-## TeXworks との連携 {#f405549d}
-
-### TeXworks {#d203fe0e}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_CONSOLE 0<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo texworks "$(NAME_PART).pdf" | cmd<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXworks</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>TeXworks</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[O　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
 ## SumatraPDF との連携 {#jbc79e5b}
 
 ### forward and inverse search (SumatraPDF を前面に表示したい場合) {#qbc5204b}
@@ -597,7 +553,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　Command(s):<br>
-　　　NPP_CONSOLE 0<br>
+　　　NPP_CONSOLE 1<br>
 　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "$(NAME_PART).pdf" -inverse-search "\\"$(#0)\\" \\"%f\\" -n%l" -forward-search "$(FILE_NAME)" %CURRENT_LINE% | cmd<br>
 
 <br>
@@ -610,6 +566,23 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">SumatraPDF</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>SumatraPDF</ins><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[O　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
 
 ***
 
@@ -628,7 +601,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 <br>
 
 　　Command(s):<br>
-　　　NPP_CONSOLE 0<br>
+　　　NPP_CONSOLE 1<br>
 　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; fwdsumatrapdf.exe "$(NAME_PART).pdf" "$(FILE_NAME)" $(CURRENT_LINE)<br>
 
 <br>
@@ -647,6 +620,33 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 ### inverse search {#fe81f375}
 
 [Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
+
+## TeXworks との連携 {#f405549d}
+
+### TeXworks {#d203fe0e}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo texworks "$(NAME_PART).pdf" | cmd<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXworks</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
 
 ## Adobe Reader との連携 {#wbbe918a}
 
