@@ -510,39 +510,6 @@ Wine を使えば動作するようです．
 $ wine sakura.exe
 ```
 
-\[共通設定\]-\[キー割り当て\]-\[☑ウィンドウ毎にアクセラレータテーブルを作成する(Wine用)(W)\] にチェックを入れないと カーソルキー (矢印キー) や BackSpace キーがうまく動作しません．
-
-***
-
-<span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]\[　　支援　　　　\]\[ 　　マクロ　　　　\]\[　　プラグイン　　\]</ins></span><br>
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　 \]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　　\]\[ 　検索　　　\]</ins></span><strong>\[ 　キー割り当て　 \]</strong><br>
-
-　　　　　　種別(K)　<span style="color:Black;background-color:#EEEEEE;">\[ ファイル操作系　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　インポート(I)...　\]</span> <span style="color:Black;background-color:#EEEEEE;">\[ エクスポート(X)... \]</span><br>
-　　機能(F)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　キー(Y)<br>
-　　新規作成　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#1188FF;">ダブルクリック　　　　　　　　　　　　　　</span><br>
-　　開く...　　　　　　　　　　　　　　　　　　　　　 　　　☐Shift 　 　右クリック<br>
-　　開く(ドロップダウン)...　　　　　　　　　　　　　　　　　　　　　 　中クリック<br>
-　　上書き保存　　　　　　　　　　　　　　　　　　　　 ☐Ctrl 　　　左サイドクリック<br>
-　　名前を付けて保存...　　　　　　　　　　　　　　　　　　　　　　 右サイドクリック<br>
-　　すべて上書き保存　　　　　　　　　　　　　　　　 ☐Alt　　　　トリプルクリック<br>
-　　閉じて(無題)　　　　　　　　　　　　　　　　　　　　　　　　　　 クアドラプルクリック<br>
-　　閉じて開く...　　　　　　　　　　　　　　　　　　　　　　　　　　 　ホイールアップ<br>
-　　閉じる　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ホイールダウン<br>
-　　保存して閉じる　　　　　　　　　　　　　　　　　　　　　　　　　 ホイール左<br>
-　　…　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 …<br>
-　<ins>　機能に割り当てられているキー(G)　　　　</ins><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[割付(B)\]</span>　キーに割り当てられている機能<br>
-　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>　　<span style="color:Black;background-color:#EEEEEE;">\[解除(R)\]</span>　<ins>現在位置の単語選択</ins><br>
-　　☑ウィンドウ毎にアクセラレータテーブルを作成する(Wine用)(W)<br>
-
-***
-
 ## 関連リンク {#c879d1c4}
 
 - [「はじめてのサクラエディタ」筆者サポートページ](http://supportdoc.net/support-sakura/)
