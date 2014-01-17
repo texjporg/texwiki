@@ -126,6 +126,7 @@ Windows PowerShell のオープンソース実装．<br>
 - [http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx](<http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx>)
 - [runas 使ってコマンドプロンプトを VBScript で管理者として実行](http://exvbs.seesaa.net/article/380424475.html)
 - [WSHを始めよう](http://www.atmarkit.co.jp/ait/articles/0606/02/news116.html)
+- [x64には存在しないScriptControlの代わり](http://d.hatena.ne.jp/junjun777/20130617/x64_scriptcontrol)
 
 ## 関連リンク {#teb8e64f}
 
