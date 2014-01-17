@@ -232,6 +232,34 @@ if __name__ == '__main__':
 
 ***
 
+### forward search  (SumatraPDF を前面に表示したくない場合) {#p5e94fc2}
+
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+
+#### fwdsumatrapdf.py {#ubae479b}
+
+***
+
+```
+import os.path
+
+class Command:
+    def run(self):
+        fwdsumatrapdf = 'fwdsumatrapdf'
+        tex = notepad.getCurrentFilename()
+        pdf = os.path.splitext(tex)[0] + '.pdf'
+        line = str(editor.lineFromPosition(editor.getCurrentPos()) + 1)
+        cmd = fwdsumatrapdf + ' ' + pdf + ' ' + tex + ' ' + line
+        console.clear()
+        console.show()
+        console.run(cmd)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
 ### inverse search {#y839062a}
 
 [Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
