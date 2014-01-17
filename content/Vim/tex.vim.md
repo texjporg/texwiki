@@ -97,6 +97,8 @@ function! ViewFile()
     call TeXworks()
   elseif g:viewer == 'sumatrapdf'
     call SumatraPDF()
+  elseif g:viewer == 'fwdsumatrapdf'
+    call FwdSumatraPDF()
   elseif g:viewer == 'preview'
     call Preview()
   elseif g:viewer == 'texshop'
@@ -125,6 +127,8 @@ function! SetViewer(viewer)
       let g:viewer = 'texworks'
     elseif a:viewer == 'sumatrapdf'
       let g:viewer = 'sumatrapdf'
+    elseif a:viewer == 'fwdsumatrapdf'
+      let g:viewer = 'fwdsumatrapdf'
     elseif a:viewer == 'adobereader'
       let g:viewer = 'adobereader'
     else
@@ -393,6 +397,26 @@ function! SumatraPDF()
   return ''
 endfunction
 
+function! FwdSumatraPDF()
+  if &ft != 'tex'
+    echo "calling FwdSumatraPDF from a non-tex file"
+    return ''
+  end
+
+  let masterDir = expand("%:p:h")
+  let currentTeXFile = expand("%:t")
+  let masterTeXFile = g:master
+  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
+  if has('win32') || has('win64')
+    let viewer = 'fwdsumatrapdf'
+    let execString = 'cd /d ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' ' . currentTeXFile . ' ' . line(".")
+  endif
+
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
 function! Preview()
   if &ft != 'tex'
     echo "calling Preview from a non-tex file"
@@ -599,6 +623,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
+> <tr><td>:Viewer fwdsumatrapdf &lt;Enter&gt;</td><td>ビューアを fwdsumatrapdf に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
