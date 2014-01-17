@@ -15,6 +15,9 @@ pukiwiki: "Python Script"
 
 Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
 \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で Python Script を選択してインストールできます．<br>
+\[プラグイン\]-\[Python Script\]-\[Configuration\] で Python Script の設定をします．<br>
+plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成すると User Scripts に Python Script が表示されます．<br>
+表示された Python Script は Menu items や Toolbar icons に追加できます．<br>
 
 - [Python Script - Plugin for Notepad++](http://npppythonscript.sourceforge.net/)
 - [Welcome to PythonScript’s documentation!](http://npppythonscript.sourceforge.net/docs/latest/)
@@ -45,6 +48,34 @@ class Command:
         console.clear()
         console.show()
         console.run(ptex2pdf)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
+### pdfupLaTeX2.py {#rc9f8392}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        uplatex = 'uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "' + b + '"'
+        dvips = 'dvips -Ppdf -z -f "' + b + '.dvi" | convbkmk -u > "' + b + '.ps"'
+        ps2pdf = 'ps2pdf.bat "' + b + '.ps"'
+        uplatex_dvips_ps2pdf = uplatex + ' && ' + dvips + ' && ' + ps2pdf
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(r'cmd /c ' + uplatex_dvips_ps2pdf)
 
 if __name__ == '__main__':
     Command().run()
