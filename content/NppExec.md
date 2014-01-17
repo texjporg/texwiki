@@ -35,7 +35,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; ptex2pdf -l -u -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)"<br>
 
 <br>
 
@@ -661,7 +661,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; ptex2pdf -l -u -ot "-no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
 
 <br>
 
