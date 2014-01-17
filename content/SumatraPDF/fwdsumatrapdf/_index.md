@@ -74,9 +74,11 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
+    - [tex.vim](/Vim/tex.vim/)
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
+    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
 
