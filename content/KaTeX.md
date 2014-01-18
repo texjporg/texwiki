@@ -61,6 +61,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 (autoload 'elisp::katex-mode "katex" t)
 (setq elisp::KaTeX-inhibit-prefix-letter t)
 (setq elisp::KaTeX-kanji-code nil)
+(setq elisp::KaTeX-latex-message-code *encoding-utf8n*)
 (setq elisp::KaTeX-use-AMS-LaTeX t)
 (setq elisp::KaTeX-default-documentclass "jsarticle")
 (setq elisp::tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
