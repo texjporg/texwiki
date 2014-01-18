@@ -21,7 +21,7 @@ forward search を行うには TeX コマンドのオプションに -synctex=1 
 
 ### お知らせ {#ebfb06f5}
 
-SumatraPDF v1.9 から コマンドラインオプション -forward-search &lt;texfile> &lt;linenumber> による forward search に対応しました．<br>
+SumatraPDF はコマンドラインオプション -forward-search &lt;texfile> &lt;linenumber> を使用して forward search することが可能です．<br>
 forward search するときに SumatraPDF を前面に表示したい場合は fwdsumatrapdf.exe を使用せずに SumatraPDF のコマンドラインオプションを使用してください．<br>
 forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf.exe を使ってください．<br>
 ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
