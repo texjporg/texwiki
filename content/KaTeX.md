@@ -21,7 +21,7 @@ KaTeX は配布終了しました．<br>
 
 ## 設定 {#pea65968}
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS2 または MSYS) や [Cygwin](/Cygwin/) Bash Shell から
+環境変数 XYZZYHOME が設定されている場合，&#x7e;/.xyzzy は [MinGW](/MinGW/) Shell (MSYS2 または MSYS) や [Cygwin](/Cygwin/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
@@ -51,7 +51,7 @@ C:.
 
 ***
 
-&#x7e;/.xyzzy ファイルに設定を記述します．<br>
+&#x7e;/.xyzzy に設定を記述します．<br>
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
