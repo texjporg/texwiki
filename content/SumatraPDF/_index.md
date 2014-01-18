@@ -53,9 +53,6 @@ Windows 8.1, 8, 7, Vista, XP
 
 を参照．<br>
 
-v1.9 から コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search ができるようになりました． ([SumatraPDF v1.9.4622](https://code.google.com/p/sumatrapdf/source/detail?r=4622) を参照)<br>
-v1.6 から PostScript ファイルの表示にも対応しました．([Ghostscript](/Ghostscript/) が必要です．)<br>
-
 ### 派生版・独自ビルド版 {#i2d3e037}
 
 - [XhmikosR's Builds sumatrapdf](http://xhmikosr.1f0.de/sumatrapdf/)
@@ -70,7 +67,7 @@ v1.6 から PostScript ファイルの表示にも対応しました．([Ghostsc
 ### forward search {#m71d9172}
 
 forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
-SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
+コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
 
 以下のエディタ・マクロ・プラグインは SumatraPDF で forward and inverse search が可能です．
 
@@ -95,6 +92,8 @@ SumatraPDF v1.9 以降はコマンドラインオプション (-forward-search &
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
+
+forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使用します．<br>
 
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照．
 
