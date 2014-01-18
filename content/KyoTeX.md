@@ -31,7 +31,7 @@ kyotex-mode は [xyzzy](/xyzzy/) 用の TeX/LaTeX/BibTeX 編集支援モード�
 
 - [kyotex-modeのインストール](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/install.html) を参照．
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS) や [Cygwin](/Cygwin/) Bash Shell から
+環境変数 XYZZYHOME が設定されている場合，&#x7e;/.xyzzy は [MinGW](/MinGW/) Shell (MSYS2 または MSYS) や [Cygwin](/Cygwin/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
@@ -84,7 +84,7 @@ etc フォルダーに KyoTeX, BiBTeX を配置してください．<br>
 
 ## 設定 {#a7481706}
 
-&#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l ファイルに設定を記述します．<br>
+&#x7e;/.xyzzy または site-lisp フォルダーの siteinit.l に設定を記述します．<br>
 siteinit.l に記述した場合は xyzzy.wxp などのダンプファイルを削除します．<br>
 
 ***
@@ -151,50 +151,38 @@ C-c s または M-x sumatrapdf-forward-search で TeX ファイル中のカー�
 TeX(T):
 : &nbsp;
 
-: platex -kanji=utf8 -guess-input-enc -synctex=1
-
 : uplatex -kanji=utf8 -no-guess-input-enc -synctex=1
 
 BiBTeX(B):
 : &nbsp;
 
-: pbibtex -kanji=utf8
-
 : upbibtex
 
 DVI->PDF(P):
+: &nbsp;
+
 : dvipdfmx
 
 MakeIndex(M):
+: &nbsp;
+
 : mendex -U
 
 MakeIndex Option:
+: &nbsp;
+
 : @@
+
+Batch commands:
+: &nbsp;
+
+: ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" @@.tex
 
 に設定して \[設定の保存(S)\] をクリックします．
 
 - C:\xyzzy\site-lisp\kyotex\kyotex-compiler-settings.l
 
 に設定が保存されます．<br>
-
-■ platex, pbibtex の場合
-
-***
-
-```
-(setq *kyotex-default-tex-compiler* "platex -kanji=utf8 -guess-input-enc -synctex=1")
-(setq *kyotex-default-bibtex-compiler* "pbibtex -kanji=utf8")
-(setq *kyotex-default-dvipdfm-compiler* "dvipdfmx")
-(setq *kyotex-default-makeindex-compiler* "mendex -U")
-(setq *kyotex-default-makeindex-args* '("@@"))
-(setq *kyotex-default-makeindex-args-str* "@@")
-(setq *kyotex-default-batch-commands* '("platex @@.tex"))
-(setq *kyotex-default-batch-commands-str* "platex @@.tex")
-```
-
-***
-
-■ uplatex, upbibtex の場合
 
 ***
 
@@ -205,8 +193,8 @@ MakeIndex Option:
 (setq *kyotex-default-makeindex-compiler* "mendex -U")
 (setq *kyotex-default-makeindex-args* '("@@"))
 (setq *kyotex-default-makeindex-args-str* "@@")
-(setq *kyotex-default-batch-commands* '("uplatex @@.tex"))
-(setq *kyotex-default-batch-commands-str* "uplatex @@.tex")
+(setq *kyotex-default-batch-commands* '("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\" @@.tex"))
+(setq *kyotex-default-batch-commands-str* "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\" @@.tex")
 ```
 
 ***
