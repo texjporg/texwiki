@@ -9,13 +9,19 @@ pukiwiki: "KaTeX"
 
 [xyzzy](/xyzzy/) > KaTeX
 
-## KaTeX (配布終了) → [YaTeX](/YaTeX/) を使用する {#ife6863a}
+## KaTeX (配布終了) → [Emacs](/Emacs/) で [YaTeX](/YaTeX/) を使用する {#ife6863a}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
+## KaTeX とは {#s0f0c4c3}
+
+KaTeX (花鳥) は [xyzzy](/xyzzy/) の TeX モードです．<br>
+KaTeX は配布終了しました．<br>
+[Emacs](/Emacs/) で [YaTeX](/YaTeX/) を使用してください．<br>
+
 ## 設定 {#pea65968}
 
-環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS または MSYS2) や [Cygwin](/Cygwin/) Bash Shell から
+環境変数 XYZZYHOME が設定されている場合，.xyzzy ファイルは [MinGW](/MinGW/) Shell (MSYS2 または MSYS) や [Cygwin](/Cygwin/) Bash Shell から
 
 ```
 $ cd $XYZZYHOME
@@ -188,6 +194,70 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
     (KaTeX-typeset-buffer))
    (t
     nil)))
+
+(defun elisp::KaTeX-typeset (command buffer &optional prcname modename)
+  "Execute jlatex (or other) to LaTeX typeset."
+  (interactive)
+  (save-excursion
+    (let ((p (point)) (window (selected-window)) execdir (cb (elisp::current-buffer))
+	  (map elisp::KaTeX-typesetting-mode-map)
+	  (outcode
+	   (cond ((eq buffer-mode 'katex-mode) KaTeX-coding-system)
+		 ((eq buffer-mode 'yahtml-mode) yahtml-kanji-code))))
+      (if (and elisp::KaTeX-typeset-process
+	       (eq (process-status elisp::KaTeX-typeset-process) 'run))
+	  ;; if tex command is halting.
+	(KaTeX-kill-typeset-process elisp::KaTeX-typeset-process))
+      (elisp::KaTeX-put-nonstopmode)
+      (setq prcname (or prcname "LaTeX")
+	    modename (or modename "typeset"))
+      (if (eq buffer-mode 'katex-mode) (KaTeX-visit-main t)) ;;execution dir
+      (setq execdir default-directory)
+      ;;Select lower-most window if there are more than 2 windows and
+      ;;typeset buffer not seen.
+      (elisp::KaTeX-showup-buffer
+       buffer (function (lambda (x) (nth 3 (window-edges x)))) t) ;m.m
+;;;    (elisp::KaTeX-showup-buffer
+;;;     buffer (function (lambda (x) (nth 3 (window-edges x)))))
+      (set-buffer (get-buffer-create buffer))
+      (setq default-directory execdir)
+      (cd execdir)
+      (elisp::erase-buffer)
+      (make-local-variable 'need-not-save) ;m.m
+      (setq need-not-save t) ;m.m
+      (when elisp::*typeset-with-shell-command*
+	(setq command (concat *shell* " " KaTeX-shell-command-option " " command)))
+      (setq elisp::KaTeX-typeset-process ; *shell* " " KaTeX-shell-command-option " "
+	    (make-process command
+;			  :output buffer :outcode elisp::KaTeX-latex-message-code))
+			  :output buffer :incode elisp::KaTeX-latex-message-code :outcode elisp::KaTeX-latex-message-code))
+      (set-process-sentinel elisp::KaTeX-typeset-process 'KaTeX-typeset-sentinel)
+      (set-process-filter elisp::KaTeX-typeset-process 'elisp::KaTeX-typeset-process-filter)
+      (message "Calling `~A'..." command)
+      (setq KaTeX-current-TeX-buffer (elisp::buffer-name))
+      (elisp::use-local-map map)		;map may be localized
+      (elisp::set-syntax-table elisp::KaTeX-typeset-buffer-syntax)
+      (setq mode-name modename)
+      (set-marker (elisp::process-mark elisp::KaTeX-typeset-process) (1- (point)))
+      (if (bolp) (forward-line -1))	;what for?
+      (elisp::select-window (get-buffer-window buffer))
+;;;   (if (and KaTeX-emacs-19 window-system) ;m.m ->
+;;;     (let ((win (get-buffer-window buffer t)) owin)
+;;;	    (select-frame (window-frame win))
+;;;	    (setq owin (selected-window))
+;;;	    (elisp::select-window win)
+;;;	    (goto-char (point-max))
+;;;	    (recenter -1)
+;;;	    (elisp::select-window owin))
+;;;	(progn
+;;;	  (elisp::select-window (get-buffer-window buffer))
+;;;	  (goto-char (point-max))
+;;;	  (recenter -1))) ;m.m <-
+      ;(message "Done.")
+      (set-buffer-modified-p nil)
+      (elisp::select-window window)
+      (switch-to-buffer cb)
+      (elisp::KaTeX-remove-nonstopmode))))
 ```
 
 ***
