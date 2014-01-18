@@ -169,7 +169,7 @@ XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), 
 
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
-Notepad++ 6.3.3 以降には DSpellCheck (Spell Checker プラグイン) が収録されています．<br>
+Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されています．<br>
 \[プラグイン\]-\[DSpellCheck\]-\[[Online Manual...](https://github.com/Predelnik/DSpellCheck/wiki/Manual)\] で使い方を参照してください．<br>
 赤い線が表示されるのを OFF にする場合は \[プラグイン\]-\[DSpellCheck\]-\[Auto-check Document\] のチェックをはずします．<br>
 
