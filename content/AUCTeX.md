@@ -112,7 +112,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
 (setq TeX-engine 'uptex)
 ;(setq TeX-engine 'luatex)
 ;(setq TeX-engine 'xetex)
@@ -137,7 +137,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\" %t"
+                                   '("pdfupLaTeX" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\" %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
                                    '("pdfupLaTeX2" "uplatex -kanji=utf8 -no-guess-input-enc %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf.bat %f"
@@ -279,7 +279,7 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -e -u -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ;(setq TeX-engine 'luatex)
 ;(setq TeX-engine 'xetex)
@@ -295,7 +295,7 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "/usr/texbin/ptex2pdf -l -u -ot '%S %(mode)' %t"
+                                   '("pdfupLaTeX" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)' %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
                                    '("pdfupLaTeX2" "/usr/texbin/uplatex %S %(mode) %t && /usr/texbin/dvips -Ppdf -z -f %d | /usr/texbin/convbkmk -u > %f && /usr/local/bin/ps2pdf %f"
@@ -451,7 +451,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot '%S %(mode)'" "ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ;(setq TeX-engine 'luatex)
 ;(setq TeX-engine 'xetex)
@@ -466,7 +466,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "ptex2pdf -l -u -ot '%S %(mode)' %t"
+                                   '("pdfupLaTeX" "ptex2pdf -u -l -ot '%S %(mode)' %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
                                    '("pdfupLaTeX2" "uplatex %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf %f"
@@ -634,21 +634,21 @@ upTeX を使用する場合は次のように設定します．<br>
 ■ Windows の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
 ■ OS X の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -e -u -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
 ■ Linux の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot '%S %(mode)'" "ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
@@ -720,21 +720,21 @@ upTeX をデフォルトにする場合は TeX-engine に uptex を設定しま�
 ■ Windows の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -l -u -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
 ■ OS X の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -e -u -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
 ■ Linux の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -e -u -ot '%S %(mode)'" "ptex2pdf -l -u -ot '%S %(mode)'" "euptex")))
+(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
 (setq TeX-engine 'uptex)
 ```
 
