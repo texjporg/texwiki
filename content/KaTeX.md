@@ -7,4 +7,6 @@ pukiwiki: "KaTeX"
 
 # KaTeX
 
-## KaTeX (配布中止) → [Emacs](/Emacs/) + [YaTeX](/YaTeX/) を使用する {#ife6863a}
+[xyzzy](/xyzzy/) > KaTeX
+
+## KaTeX (配布終了) → [YaTeX](/YaTeX/) を使用する {#ife6863a}
