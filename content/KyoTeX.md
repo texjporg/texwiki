@@ -232,5 +232,3 @@ kyotex-mode を使用する場合は C-l で recenter するかわりに M-x rec
 ### 補完コマンド {#be009b07}
 
 - [補完コマンド](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/completion.html) を参照．
-
-<!-- *関連リンク [#j5d24b93] -->
