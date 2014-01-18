@@ -39,7 +39,22 @@ replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 
 と聞かれることがあります。「A」と入力してEnterキーを押しておきましょう。
 
-環境変数PATHを必要に応じて設定します。PATHの値はC:\Program Files\Aspell\bin または C:\Program Files (x86)\Aspell\bin です。（ただし、コマンド プロンプトを用いる場合です。Notepad++ などから呼び出す場合はPATHの設定をする必要はありません。）
+Windows PowerShell またはコマンド プロンプトを用いる場合は環境変数 PATH を設定します。<br>
+PATH の値は
+
+- 64-bit Windows の場合
+
+    ```
+    C:\Program Files (x86)\Aspell\bin
+    ```
+
+- 32-bit Windows の場合
+
+    ```
+    C:\Program Files\Aspell\bin
+    ```
+
+です。
 
 <!-- Windows以外のインストール方法は、[[欧文スペルチェッカー GNU Aspell:http:// members.jcom.home.ne.jp/advweb/build/others/aspell.html]]をご覧ください。 -->
 
@@ -74,7 +89,7 @@ MacPorts を使って簡単にインストールできます。
 $ sudo port install aspell aspell-dict-en
 ```
 
-### Aspell の使い方（コマンド プロンプト編） {#aspus466}
+### Aspell の使い方（Windows PowerShell・コマンド プロンプト編） {#aspus466}
 
 PATHを通しているならば、
 
@@ -113,7 +128,7 @@ aspell --lang=en -c -t 調べたいtexファイル
 例えば、コメント文もスペルチェックして欲しいときには、
 
 ```
-$ aspell -c -t --tex-check-comments TeXソースファイル
+aspell -c -t --tex-check-comments TeXソースファイル
 ```
 
 とします。
@@ -163,26 +178,19 @@ tex-check-comments true
 <!-- [[欧文スペルチェッカー GNU Aspell:http://members.jcom.home.ne.jp/advweb/build/others/aspell.html]] -->
 <!-- をご覧ください。 -->
 
-### Aspell の使い方（Notepad++編） {#ydccb206}
-
-Notepad++ 6.3.3 以降には [DSpellCheck](https://github.com/Predelnik/DSpellCheck) (Spell Checker プラグイン) が収録されています。<br>
-\[プラグイン\]-\[DSpellCheck\]-\[[Online Manual...](https://github.com/Predelnik/DSpellCheck/wiki/Manual)\] で使い方を参照してください。<br>
-デフォルトでは [Hunspell](/Hunspell/) が使用されます．<br>
-Aspell を使用する場合は \[プラグイン\]-\[DSpellCheck\]-\[Settings...\] の Simple タブの Library から Aspell を選択して設定します．<br>
-
 ### Aspell の使い方（Emacs編） {#aemcsfoi}
 
 Emacs の exec-path に Aspell の PATH を追加します。<br>
-32-bit Windows の場合は
-
-```
-(add-to-list 'exec-path "C:/Program Files/Aspell/bin")
-```
-
 64-bit Windows の場合は
 
 ```
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin")
+```
+
+32-bit Windows の場合は
+
+```
+(add-to-list 'exec-path "C:/Program Files/Aspell/bin")
 ```
 
 を &#x7e;/.emacs.d/init.el に追加します。<br>
