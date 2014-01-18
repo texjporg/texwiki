@@ -209,7 +209,7 @@ function! PdfupLaTeX(type)
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
       let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
       let g:bibtex = 'upbibtex -sjis-terminal'
-      let g:makeindex = 'mendex -U'
+      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
@@ -229,7 +229,7 @@ function! PdfupLaTeX(type)
       let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
       let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
       let g:bibtex = 'upbibtex -sjis-terminal'
-      let g:makeindex = 'mendex -U'
+      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
