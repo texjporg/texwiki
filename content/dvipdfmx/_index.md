@@ -109,6 +109,16 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 - [seac のバグは「構成要素の文字（例だと \\'{} e \\"{} o）を文書のどこかに紛れ込ませる」と逃げられる、はず。](https://twitter.com/zr_tex8r/status/209880317023109120)
 - [dvipdfm(x)のseacバグ](https://twitter.com/golden_lucky/status/209924362785140736)
 
+## 注意点 {#n8c7de22}
+
+### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される → map ファイルの UniJIS-UTF16-H を unicode に変更する {#n5909871}
+
+- [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
+- [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
+- [https://twitter.com/zr_tex8r/status/422752198724825090](https://twitter.com/zr_tex8r/status/422752198724825090)
+- [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
+- [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
+
 ## 使い方 {#qabeb774}
 
 ### [dvipdfmx を画像キャッシュで高速化](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=958) {#y11c4b43}
