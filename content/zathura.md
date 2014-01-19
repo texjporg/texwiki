@@ -145,14 +145,6 @@ $ zathura --synctex-forward 30:0:hoge.tex hoge.pdf
 のように実行します．<br>
 zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．<br>
 
-forward search で
-
-```
-error: Failed to run HighlightRects on 'org.pwmt.zathura.PID-????': GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: Type of message, '(ua(dddd)a(idddd))', does not match expected type '(ua(dddd)a(udddd))'
-```
-
-が表示される場合は dbus-interface.c の idddd を udddd に修正してビルドしてください．<br>
-
 ### inverse search {#c00c992e}
 
 TeXworks の場合は
