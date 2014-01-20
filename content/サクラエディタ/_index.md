@@ -366,9 +366,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けするように修�
 
 ### Happy {#n1688725}
 
-- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
-    - HappyInput (TeX 入力支援スクリプト)
-    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+- [Happy](/Happy/)
 
 ## 入力補完 {#b1c33ed1}
 
