@@ -36,9 +36,16 @@ LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
 の上に構築した文書処理システムです。<br>
 TeX, LaTeX はフリーウェアです。<br>
-[Microsoft Windows](http://www.microsoft.com/japan/windows/)，UNIX&reg;（[OS X](http://www.apple.com/jp/osx/) など），UNIX 互換
-OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
-など），モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。
+
+- [Microsoft Windows](http://www.microsoft.com/japan/windows/)
+- UNIX&reg;（[OS X](http://www.apple.com/jp/osx/) など）
+- UNIX 互換
+    OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
+    など）
+
+- モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）
+
+など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。<br>
 
 日本では TeX，LaTeX
 を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/)）が日本語化した
@@ -51,7 +58,13 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用していました。<br>
 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。<br>
-Unicode に完全対応したものには [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX, [XeTeX, XeLaTeX](/XeTeX/) があります。<br>
+Unicode に完全対応したものには<br>
+
+- [LuaTeX, LuaLaTeX](/LuaTeX/)
+- LuaJITTeX, LuaJITLaTeX
+- [XeTeX, XeLaTeX](/XeTeX/)
+
+があります。<br>
 
 1994年に LaTeX の新版 LaTeX 2ε（トゥー・イー），1995年にはアスキーから日本語版
 pLaTeX 2ε が出ました。<br>
