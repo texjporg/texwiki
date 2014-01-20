@@ -23,6 +23,7 @@ pukiwiki: "TeX"
 - [e-upTeX](/upTeX,upLaTeX/)
 - [e-pTeX](/e-pTeX/)
 - [e-TeX](/e-TeX/)
+- TeX ( [ftp://ftp.cs.stanford.edu/pub/tex/](ftp://ftp.cs.stanford.edu/pub/tex/) )
 
 ### TeX プログラミング {#ff81e0cc}
 
