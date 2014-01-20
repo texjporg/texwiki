@@ -85,6 +85,7 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
 
 - [Texworksを使用してdviをpdfに変換するときのエラーについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1213)
 - [TeXworks の初期設定カスタマイズ(美文書第６版DVD)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1182)
+- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 - [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
 - [TeXworksのpdfビューワーで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1039)
 - [文字の前後の空白](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=922)
