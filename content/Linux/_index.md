@@ -170,7 +170,7 @@ $ kpsewhich uptex-ipaex.map
 upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
 
 ```
-$ ptex2pdf -l -u -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
+$ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ```
 
 ### [W32TeX](/W32TeX/) {#od6f4f13}
