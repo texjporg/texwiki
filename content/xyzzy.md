@@ -36,9 +36,7 @@ MIT License
 
 ### Happy {#ra9f73ad}
 
-- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
-    - HappyInput (TeX 入力支援スクリプト)
-    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+- [Happy](/Happy/)
 
 ## SumatraPDF との連携 {#s1d4a0f1}
 
