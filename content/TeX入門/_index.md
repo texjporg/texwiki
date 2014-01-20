@@ -31,7 +31,7 @@ TeX および LaTeX
 
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。<br>
-現在のバージョン番号は 3.1415926 です。<br>
+現在のバージョン番号は 3.14159265 です。<br>
 LaTeX
 は [Leslie Lamport](http://lamport.org/) が TeX
 の上に構築した文書処理システムです。<br>
