@@ -32,3 +32,7 @@ pukiwiki: "Markdown"
 - [StackEdit](https://stackedit.io/)
     - [https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
+
+### Markdown → LaTeX {#v519987b}
+
+- [markdown->TeXの変換だけで卒論を仕上げるのに便利だったツール10個まとめ](http://mizchi.hatenablog.com/entry/2014/01/20/090957)
