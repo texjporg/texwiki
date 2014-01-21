@@ -8,3 +8,7 @@ pukiwiki: "Happy"
 # Happy
 
 ## Happy {#qc7045dc}
+
+- [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
+    - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
+    - HappyInput (TeX 入力支援スクリプト)
