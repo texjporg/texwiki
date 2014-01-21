@@ -111,7 +111,7 @@ gvfs-open "$shortname.pdf"
 [ptex2pdf](/ptex2pdf/) を使用する場合は
 
 ```
-ptex2pdf -l -u -ot '-synctex=1' "$filename"
+ptex2pdf -u -l -ot '-synctex=1' "$filename"
 ```
 
 Latexmk を使用する場合は
@@ -254,7 +254,7 @@ Latexmk は Latexmk Version 4.37 以降が必要です．<br>
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-ptex2pdf -l -u -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
+ptex2pdf -u -l -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
