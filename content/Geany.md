@@ -53,7 +53,7 @@ BibTeX や hyperref パッケージなどを使用する場合は latexmk を使
 LaTeX -> <ins>P</ins>DF
 : &nbsp;
 
-: ptex2pdf -l -u -ot '-synctex=1 --file-line-error-style' "%f"
+: ptex2pdf -u -l -ot '-synctex=1 --file-line-error-style' "%f"
 
 : uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
 
