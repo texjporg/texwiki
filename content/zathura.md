@@ -123,6 +123,7 @@ Application Options:
   -s, --synctex                        Enable synctex support
   -x, --synctex-editor-command=cmd     Synctex editor (forwarded to the synctex command)
   --synctex-forward=position           Move to given synctex position
+  --synctex-pid=pid                    Highlight given position in the given process
 ```
 
 <!-- $ zathura - -version -->
