@@ -79,5 +79,6 @@ pdfjs
 ## 関連リンク {#vb4554e0}
 
 - [Get Firefox URL?](http://stackoverflow.com/questions/430614/get-firefox-url)
+- [Looking for document on command line arguments for PDF.js. | Firefox サポートフォーラム | Mozilla サポート](https://support.mozilla.org/ja/questions/951546)
 - [pdf.jsをインストールして動かしてみる](http://dev.classmethod.jp/tool/pdf-js-install/)
 - [Firefox 19でPDFの文字が表示されない・文字化けする場合の設定](http://dtp.jdash.info/archives/51993479.html)
