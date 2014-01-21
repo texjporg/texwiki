@@ -7,7 +7,7 @@ pukiwiki: "TeXnicCenter"
 
 # TeXnicCenter
 
-## [TeXnicCenter](http://www.texniccenter.org/) {#f2674e4f}
+## [TeXnicCenter](http://www.texniccenter.org/) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#f2674e4f}
 
 <img src="http://texniccenter.sourceforge.net/_static/TeXnicCenter.png" alt="TeXnicCenter" style="float:right">
 
