@@ -82,8 +82,8 @@ kanji-config-updmap ipaex
 
 　　名前:　　　　<ins>upLaTeX (ptex2pdf)</ins><br>
 　　プログラム: <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-u</ins><br>
+　　引数:　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
 　　　　　　　　　<ins>$synctexoption -no-guess-input-enc -kanji=utf8</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
@@ -112,8 +112,7 @@ pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成し�
 
 ```
 @echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1"
+ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1
 ```
 
 ***
