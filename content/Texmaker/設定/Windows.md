@@ -87,15 +87,13 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
 
-<ins>texworks %.pdf</ins><br>
-
-<ins>cmd /c start firefox -new-window %.pdf</ins><br>
-
-<ins>cmd /c start chrome --new-window !/%.pdf</ins><br>
-
-<ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+<!-- %%%texworks %.pdf%%%&br; -->
+<!-- %%%cmd /c start firefox -new-window %.pdf%%%&br; -->
+<!-- %%%cmd /c start chrome - -new-window !/%.pdf%%%&br; -->
+<!-- %%%pdfopen - -rxi - -file %.pdf%%%&br; -->
 
 <div style="clear:both"></div>
 
@@ -115,8 +113,16 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 forward search は PDFビューアに
 
+■ 64-bit Windows の場合<br>
+
 ```
-cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @
+"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
+```
+
+■ 32-bit Windows の場合<br>
+
+```
+"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
 ```
 
 です．
