@@ -19,7 +19,8 @@ pukiwiki: "Texmaker/設定/Linux"
 
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 
@@ -82,7 +83,39 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>evince %.pdf</ins> または <ins>fwdevince %.pdf @ #.tex</ins> または <ins>okular --unique %.pdf</ins> または <ins>texmaker2okular %.pdf @ !/#.tex</ins> または <ins>zathura %.pdf</ins> または <ins>texmaker2zathura %.pdf</ins> または <ins>qpdfview --unique %.pdf</ins> または <ins>texmaker2qpdfview %.pdf #.tex @</ins> または <ins>pdfviewer %.pdf</ins> または <ins>texmaker2pdfviewer %.pdf @ #.tex</ins> または <ins>texworks %.pdf</ins> または <ins>mupdf %.pdf</ins> または <ins>firefox -new-window %.pdf</ins> または <ins>chromium --new-window %.pdf</ins> または <ins>acroread %.pdf</ins> または <ins>pdfopen -viewer ar9-tab %.pdf</ins> または <ins>xdg-open %.pdf</ins><br>
+<ins>evince %.pdf</ins><br>
+
+<ins>fwdevince %.pdf @ #.tex</ins><br>
+
+<ins>okular --unique %.pdf</ins><br>
+
+<ins>texmaker2okular %.pdf @ !/#.tex</ins><br>
+
+<ins>zathura %.pdf</ins><br>
+
+<ins>texmaker2zathura %.pdf</ins><br>
+
+<ins>qpdfview --unique %.pdf</ins><br>
+
+<ins>texmaker2qpdfview %.pdf #.tex @</ins><br>
+
+<ins>pdfviewer %.pdf</ins><br>
+
+<ins>texmaker2pdfviewer %.pdf @ #.tex</ins><br>
+
+<ins>texworks %.pdf</ins><br>
+
+<ins>mupdf %.pdf</ins><br>
+
+<ins>firefox -new-window %.pdf</ins><br>
+
+<ins>chromium --new-window %.pdf</ins><br>
+
+<ins>acroread %.pdf</ins><br>
+
+<ins>pdfopen -viewer ar9-tab %.pdf</ins><br>
+
+<ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
