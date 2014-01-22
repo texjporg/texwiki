@@ -717,8 +717,7 @@ pdfuplatexS.bat を作成します．
 
 ```
 @echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1" && ^
+ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
@@ -1059,8 +1058,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc %1 && ^
-dvipdfmx "%~n1" && ^
+ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
@@ -1111,7 +1109,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc %1 && ^
+uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
@@ -1165,7 +1163,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-pdflatex %1 && ^
+pdflatex -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
@@ -1216,7 +1214,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-lualatex %1 && ^
+lualatex -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
@@ -1267,7 +1265,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-luajitlatex %1 && ^
+luajitlatex -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
@@ -1318,7 +1316,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-xelatex %1 && ^
+xelatex -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
