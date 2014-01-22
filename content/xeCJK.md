@@ -40,9 +40,9 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
 
-#### xeCJK 3.2.9 で ① (U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
+#### xeCJK 3.2.9 で 丸1「①」(U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
-xeCJK 3.2.9 で ① (U+2460) が表示されません．<br>
+xeCJK 3.2.9 で 丸1「①」(U+2460) が表示されません．<br>
 
 ```
 \documentclass{scrartcl}
@@ -53,7 +53,7 @@ ABCDEあいうえお①
 \end{document}
 ```
 
-① (U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
+丸1「①」(U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
 
 ```
 \documentclass{scrartcl}
@@ -62,6 +62,59 @@ ABCDEあいうえお①
 \XeTeXcharclass`①=1
 \begin{document}
 ABCDEあいうえお①
+\end{document}
+```
+
+#### xeCJK 3.2.9 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示される → \XeTeXcharclass\`〜=1 を追加 {#h9d2aaf2}
+
+xeCJK 3.2.9 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示されます．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}}
+\else
+  \ifdefined\directlua
+    \documentclass{ltjsarticle}
+    \usepackage[ms]{luatexja-preset}
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+    \usepackage{xeCJK}
+    \setCJKmainfont{MS Mincho}
+  \fi
+\fi
+\begin{document}
+
+波ダッシュ「〜」(U+301C)
+
+全角チルダ「～」(U+FF5E)
+
+\end{document}
+```
+
+文字が詰まったように表示される場合は \XeTeXcharclass\`〜=1 を追加します．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}}
+\else
+  \ifdefined\directlua
+    \documentclass{ltjsarticle}
+    \usepackage[ms]{luatexja-preset}
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+    \usepackage{xeCJK}
+    \setCJKmainfont{MS Mincho}
+    \XeTeXcharclass`〜=1
+  \fi
+\fi
+\begin{document}
+
+波ダッシュ「〜」(U+301C)
+
+全角チルダ「～」(U+FF5E)
+
 \end{document}
 ```
 
@@ -160,9 +213,9 @@ ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 ### 不具合 {#u54213d7}
 
-#### ZXjatype 0.6 で ① (U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
+#### ZXjatype 0.6 で 丸1「①」(U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
 
-ZXjatype 0.6 で ① (U+2460) が表示されません．<br>
+ZXjatype 0.6 で 丸1「①」(U+2460) が表示されません．<br>
 
 ```
 \documentclass[xelatex]{bxjsarticle}
@@ -173,7 +226,7 @@ ABCDEあいうえお①
 \end{document}
 ```
 
-① (U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
+丸1「①」(U+2460) が表示されない場合は \XeTeXcharclass\`①=1 を追加します．<br>
 
 ```
 \documentclass[xelatex]{bxjsarticle}
