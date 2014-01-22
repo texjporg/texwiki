@@ -185,6 +185,59 @@ ABCDEあいうえお①
 \end{document}
 ```
 
+#### ZXjatype 0.6 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示される → \XeTeXcharclass\`〜=1 を追加 {#d6e463a5}
+
+ZXjatype 0.6 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示されます．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}}
+\else
+  \ifdefined\directlua
+    \documentclass{ltjsarticle}
+    \usepackage[ms]{luatexja-preset}
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+    \usepackage{zxjatype}
+    \setjamainfont{MS Mincho}
+  \fi
+\fi
+\begin{document}
+
+波ダッシュ「〜」(U+301C)
+
+全角チルダ「～」(U+FF5E)
+
+\end{document}
+```
+
+文字が詰まったように表示される場合は \XeTeXcharclass\`〜=1 を追加します．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}}
+\else
+  \ifdefined\directlua
+    \documentclass{ltjsarticle}
+    \usepackage[ms]{luatexja-preset}
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+    \usepackage{zxjatype}
+    \setjamainfont{MS Mincho}
+    \XeTeXcharclass`〜=1
+  \fi
+\fi
+\begin{document}
+
+波ダッシュ「〜」(U+301C)
+
+全角チルダ「～」(U+FF5E)
+
+\end{document}
+```
+
 ### 使い方 {#v46b0c77}
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
