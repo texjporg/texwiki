@@ -633,7 +633,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 　　Command(s):<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; echo texworks "$(NAME_PART).pdf" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "texworks --position=%{page+1} "%{output}"" | cmd<br>
 
 <br>
 
@@ -661,7 +661,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -687,7 +687,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.bat "$(NAME_PART).ps" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -713,7 +713,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; pdflatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; pdflatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -739,7 +739,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; lualatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; lualatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -765,7 +765,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; luajitlatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; luajitlatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -791,7 +791,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; xelatex "$(NAME_PART)" &amp;&amp; powershell -Command "&amp; {$pdf = """$(NAME_PART).pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --rxi --file "$(NAME_PART).pdf" &amp; xelatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --rxi --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
