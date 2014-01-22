@@ -13,6 +13,10 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 ### コマンド {#a32ff532}
 
+コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．<br>
+コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．<br>
+コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．<br>
+
 ***
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
