@@ -33,6 +33,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 ### TeX Live 公式パッケージ {#v87b6755}
 
 - [Linux](/Linux/#texliveinstall)
+- [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
 [texlive-dummy-opensuse](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
