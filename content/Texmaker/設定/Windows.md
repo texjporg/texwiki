@@ -18,8 +18,8 @@ pukiwiki: "Texmaker/設定/Windows"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-PDF ビューアに 組み込みビューア，SumatraPDF，TeXworks を使用する場合は，LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
@@ -87,7 +87,15 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins> または <ins>texworks %.pdf</ins> または <ins>cmd /c start firefox -new-window %.pdf</ins> または <ins>cmd /c start chrome --new-window !/%.pdf</ins> または <ins>pdfopen --rxi --file %.pdf</ins><br>
+<ins>cmd /c start SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+
+<ins>texworks %.pdf</ins><br>
+
+<ins>cmd /c start firefox -new-window %.pdf</ins><br>
+
+<ins>cmd /c start chrome --new-window !/%.pdf</ins><br>
+
+<ins>pdfopen --rxi --file %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
