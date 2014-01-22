@@ -33,25 +33,6 @@ quickrun は Vim のプラグインです．<br>
 
 - [shellescape() doesn't work in Windows with 'shellslash' set](https://groups.google.com/forum/#!topic/vim_dev/MEJ3jG-rnR8)
 
-#### upLaTeX (ptex2pdf), TeXworks を使用する場合 {#mecced12}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -u -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode" "%s"', 'texworks "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
 #### upLaTeX (ptex2pdf), SumatraPDF を使用する場合 {#vd71076c}
 
 ***
@@ -71,7 +52,7 @@ let g:quickrun_config = {
 
 ***
 
-#### pdfLaTeX, TeXworks を使用する場合 {#tae9ce5f}
+#### upLaTeX (ptex2pdf), TeXworks を使用する場合 {#mecced12}
 
 ***
 
@@ -82,8 +63,8 @@ let g:quickrun_config = {
 set noshellslash
 let g:quickrun_config = {
 \   'tex': {
-\       'command': 'pdflatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
+\       'command': 'ptex2pdf',
+\       'exec': ['%c -l -u -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode" "%s"', 'texworks "%S:r.pdf"']
 \   },
 \}
 ```
@@ -109,7 +90,7 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaLaTeX, TeXworks を使用する場合 {#t7007bd8}
+#### pdfLaTeX, TeXworks を使用する場合 {#tae9ce5f}
 
 ***
 
@@ -120,7 +101,7 @@ let g:quickrun_config = {
 set noshellslash
 let g:quickrun_config = {
 \   'tex': {
-\       'command': 'lualatex',
+\       'command': 'pdflatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
 \   },
 \}
@@ -147,7 +128,7 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaJITLaTeX, TeXworks を使用する場合 {#d6941ec3}
+#### LuaLaTeX, TeXworks を使用する場合 {#t7007bd8}
 
 ***
 
@@ -158,7 +139,7 @@ let g:quickrun_config = {
 set noshellslash
 let g:quickrun_config = {
 \   'tex': {
-\       'command': 'luajitlatex',
+\       'command': 'lualatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
 \   },
 \}
@@ -185,7 +166,7 @@ let g:quickrun_config = {
 
 ***
 
-#### XeLaTeX, TeXworks を使用する場合 {#d313fcde}
+#### LuaJITLaTeX, TeXworks を使用する場合 {#d6941ec3}
 
 ***
 
@@ -196,7 +177,7 @@ let g:quickrun_config = {
 set noshellslash
 let g:quickrun_config = {
 \   'tex': {
-\       'command': 'xelatex',
+\       'command': 'luajitlatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
 \   },
 \}
@@ -217,6 +198,25 @@ let g:quickrun_config = {
 \   'tex': {
 \       'command': 'xelatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
+#### XeLaTeX, TeXworks を使用する場合 {#d313fcde}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'xelatex',
+\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%s"', 'texworks "%S:r.pdf"']
 \   },
 \}
 ```
