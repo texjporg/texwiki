@@ -117,8 +117,8 @@ syntax on
 
 <!-- let b:atp_TexFlavor = 'tex' -->
 <!-- let b:atp_TexCompiler = 'ptex2pdf' -->
-<!-- let b:atp_TexOptions = '-l -ot "-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode"' -->
-<!-- let b:atp_BibCompiler = 'pbibtex' -->
+<!-- let b:atp_TexOptions = '-u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode"' -->
+<!-- let b:atp_BibCompiler = 'upbibtex' -->
 <!-- let b:atp_Viewer = 'texworks' -->
 
 ```
