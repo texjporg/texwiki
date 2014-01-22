@@ -9,7 +9,7 @@ pukiwiki: "guishell"
 
 [秀丸エディタ](</秀丸エディタ/>) > guishell, TeXmac
 
-## [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) {#h2793999}
+## [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) (obsolete) → 祝鳥 を使用する {#h2793999}
 
 [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
 guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
@@ -23,19 +23,19 @@ guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8�
 
 設定
 
-- guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で platex.fmt をチェックして 縦組み対応LaTeX2e(platex.fmt) を選択して OK をクリックする
+- guishell の \[オプション(O)\]-\[フォーマットファイルの登録(F)...\] で uplatex.fmt をチェックして 縦組み対応LaTeX2e(uplatex.fmt) を選択して OK をクリックする
 - guishell.cfg を以下のように設定
 
     ```
     index=0
-    FormatFile0=縦組み対応LaTeX2e(platex.fmt)
+    FormatFile0=縦組み対応LaTeX2e(uplatex.fmt)
     ```
 
 ***
 
 Gui-Shellの一般的動作設定<br>
 　　動作ﾓｰﾄﾞの設定<br>
-　　　◎ 日本語ﾓｰﾄﾞ(日本語版のﾌﾟﾛｸﾞﾗﾑを優先します)<br>
+　　　(●) 日本語ﾓｰﾄﾞ(日本語版のﾌﾟﾛｸﾞﾗﾑを優先します)<br>
 　　　◯ 欧文ﾓｰﾄﾞ(ｵﾘｼﾞﾅﾙ版のﾌﾟﾛｸﾞﾗﾑを優先します)<br>
 　　画面出力設定<br>
 　　☐ Gui-Shellコメントの抑制<br>
@@ -58,9 +58,9 @@ Gui-Shellの一般的動作設定<br>
 
 <br>
 
-　 ☐cont-en.fmt　　　　　　　　　　　縦組み対応LaTeX2e(platex.fmt)<br>
-　 ☐eptex.fmt<br>
-　 ☑platex.fmt<br>
+　 ☐cont-en.fmt　　　　　　　　　　　縦組み対応LaTeX2e(uplatex.fmt)<br>
+　 ☐euptex.fmt<br>
+　 ☑uplatex.fmt<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　☑フォーマットファイルバーの表示<br>
 
 ***
@@ -92,4 +92,5 @@ TeXMAC-R #4(8)<br>
 - [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
 - [角藤版 pTeX を， TeXMac &amp; 秀丸 から使う方法](http://mixedmoss.com/Oboegaki/TeXMac%20install.htm)
 - [PC-LaTeX環境](http://graphics.stanford.edu/~naemura/memo/latex-win.html)/
-    [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大)
+- [TeXシステムのインストール（１）](https://www.ipc.fukuoka-u.ac.jp/rd/texinstall/inst1/)
+- [LaTeXとWebの連携](http://graphics.stanford.edu/~naemura/memo/latex-web.html)(苗村さん＠東京大)
