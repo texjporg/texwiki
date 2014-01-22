@@ -41,8 +41,8 @@ $ kanji-config-updmap ipaex
 
 　　名前:　　　　<ins>upLaTeX (ptex2pdf)</ins><br>
 　　プログラム:　 <ins>ptex2pdf</ins><br>
-　　引数:　　　　<ins>-l</ins><br>
-　　　　　　　　　<ins>-u</ins><br>
+　　引数:　　　　<ins>-u</ins><br>
+　　　　　　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
 　　　　　　　　　<ins>$synctexoption</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
