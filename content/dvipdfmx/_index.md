@@ -113,7 +113,7 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 注意点 {#n8c7de22}
 
-### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される → map ファイルの UniJIS-UTF16-H を unicode に変更する {#n5909871}
+### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される → map ファイルの UniJIS-UTF16-H を unicode に変更または \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加 {#n5909871}
 
 - [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
 - [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
