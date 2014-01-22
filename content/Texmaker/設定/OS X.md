@@ -19,7 +19,8 @@ pukiwiki: "Texmaker/設定/OS X"
 
 動作未確認です．<br>
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
@@ -88,7 +89,19 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>open -a Preview.app %.pdf</ins> または <ins>open -a TeXShop.app %.pdf</ins> または <ins>open -a TeXworks.app %.pdf</ins> または <ins>open -a Skim.app %.pdf</ins> または <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins> または <ins>open -a "Adobe Reader.app" %.pdf</ins> または <ins>open %.pdf</ins><br>
+<ins>open -a Preview.app %.pdf</ins><br>
+
+<ins>open -a TeXShop.app %.pdf</ins><br>
+
+<ins>open -a TeXworks.app %.pdf</ins><br>
+
+<ins>open -a Skim.app %.pdf</ins><br>
+
+<ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
+
+<ins>open -a "Adobe Reader.app" %.pdf</ins><br>
+
+<ins>open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
