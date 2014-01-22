@@ -111,7 +111,7 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 #### SumatraPDF を前面に表示したい場合 {#id9fc839}
 
-forward search は PDFビューアに
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
 
 ■ 64-bit Windows の場合<br>
 
@@ -125,19 +125,15 @@ forward search は PDFビューアに
 "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
 ```
 
-です．
-
 #### SumatraPDF を前面に表示したくない場合 {#j0fbd66f}
 
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-forward search は PDFビューアに
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
 
 ```
 fwdsumatrapdf.exe %.pdf #.tex @
 ```
-
-です．
 
 ### inverse search {#p850b553}
 
@@ -175,9 +171,8 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc -interaction=nonstopmode %1 && ^
-dvipdfmx "%~n1" && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -185,7 +180,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-pdfuplatexA-nonstopmode.bat %
+pdfuplatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
@@ -206,11 +201,11 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc -interaction=nonstopmode %1 && ^
+uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -218,7 +213,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-pdfuplatex2A-nonstopmode.bat %
+pdfuplatex2A-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
@@ -239,8 +234,8 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-pdflatex -interaction=nonstopmode %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -248,7 +243,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-pdflatexA-nonstopmode.bat %
+pdflatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
@@ -269,8 +264,8 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-lualatex -interaction=nonstopmode %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+lualatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -278,7 +273,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-lualatexA-nonstopmode.bat %
+lualatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
@@ -299,8 +294,8 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-luajitlatex -interaction=nonstopmode %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -308,7 +303,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-luajitlatexA-nonstopmode.bat %
+luajitlatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
@@ -329,8 +324,8 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
-xelatex -interaction=nonstopmode %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+xelatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
 ```
 
 ***
@@ -338,7 +333,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
 
 ```
-xelatexA-nonstopmode.bat %
+xelatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
