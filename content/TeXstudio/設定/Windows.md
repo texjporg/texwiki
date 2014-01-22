@@ -13,6 +13,10 @@ pukiwiki: "TeXstudio/設定/Windows"
 
 ### コマンド {#zdc6ab74}
 
+コマンドの LaTeX に設定されている latex.exe を uplatex.exe に変更して -src を -synctex=1 に変更します．<br>
+コマンドの DviPdf に設定されている dvipdfm.exe を dvipdfmx.exe に変更します．<br>
+コマンドの BibTeX に設定されている bibtex.exe を upbibtex.exe に変更します．<br>
+
 ***
 
 <span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
@@ -186,11 +190,17 @@ LuaLaTeX
 
 : dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
-: texworks.exe "?am.pdf"
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} "&#x25;&#x25;{output}""
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file "&#x25;&#x25;{output}" --page &#x25;&#x25;{page+1}"
 
 : "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
 
 : "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "?am.pdf"
+
+: dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]
+
+: dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]
 
 DviPs
 : &nbsp;
