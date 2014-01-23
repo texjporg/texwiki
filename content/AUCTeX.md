@@ -116,14 +116,14 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq TeX-engine 'uptex)
 ;(setq TeX-engine 'luatex)
 ;(setq TeX-engine 'xetex)
-(setq TeX-view-program-list '(("TeXworks" "texworks %o")
-                              ("SumatraPDF" "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance %o -forward-search \"%b\" %n")
+(setq TeX-view-program-list '(("SumatraPDF" "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance %o -forward-search \"%b\" %n")
                               ("fwdsumatrapdf" "fwdsumatrapdf %o \"%b\" %n")
+                              ("TeXworks" "texworks %o")
                               ("Firefox" "rundll32 shell32,ShellExec_RunDLL firefox -new-window %o")
                               ("Chrome" "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\"")
                               ("pdfopen" "pdfopen --rxi --file %o")))
-(setq TeX-view-program-selection '((output-pdf "TeXworks")))
-;(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
+(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
+;(setq TeX-view-program-selection '((output-pdf "TeXworks")))
 ;(setq TeX-view-program-selection '((output-pdf "fwdsumatrapdf")))
 ;(setq TeX-view-program-selection '((output-pdf "Firefox")))
 ;(setq TeX-view-program-selection '((output-pdf "Chrome")))
@@ -173,14 +173,14 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                    '("Mendex" "mendex -U %s"
                                      TeX-run-command nil t :help "Create index file with mendex"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "texworks %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run TeXworks"))
-                      (add-to-list 'TeX-command-list
                                    '("SumatraPDF" "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
                                    '("fwdsumatrapdf" "fwdsumatrapdf %s.pdf \"%b\" %n"
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
+                      (add-to-list 'TeX-command-list
+                                   '("TeXworks" "texworks %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox" "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
@@ -220,9 +220,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>upBibTeX</td><td>C-c C-c upbibtex RET</td><td>タイプセット (upBibTeX)</td></tr>
 > <tr><td>BibTeXu</td><td>C-c C-c bibtexu RET</td><td>タイプセット (BibTeXu)</td></tr>
 > <tr><td>Mendex</td><td>C-c C-c mendex RET</td><td>タイプセット (Mendex)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
