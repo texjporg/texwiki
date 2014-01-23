@@ -9,6 +9,6 @@ pukiwiki: "jN"
 
 [Notepad++](/Notepad++/) > jN
 
-## jN {#i71db25c}
+## jN (JavaScript for Notepad++) {#i71db25c}
 
 - [jn-npp-plugin - Plugin for Notepad++ allowing you to automate some tasks by using JavaScript - Google Project Hosting](https://code.google.com/p/jn-npp-plugin/)
