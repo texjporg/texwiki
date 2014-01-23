@@ -45,7 +45,7 @@ if has('win32') || has('win64')
   let g:typeset = 'pdfuplatex'
   let g:bibtex = 'upbibtex -sjis-terminal'
   let g:makeindex = 'mendex -U -T'
-  let g:viewer = 'texworks'
+  let g:viewer = 'sumatrapdf'
 elseif has('macunix')
   let g:typeset = 'pdfuplatex'
   let g:bibtex = 'upbibtex'
@@ -93,12 +93,12 @@ function! ViewFile()
     return ''
   end
 
-  if g:viewer == 'texworks'
-    call TeXworks()
-  elseif g:viewer == 'sumatrapdf'
+  if g:viewer == 'sumatrapdf'
     call SumatraPDF()
   elseif g:viewer == 'fwdsumatrapdf'
     call FwdSumatraPDF()
+  elseif g:viewer == 'texworks'
+    call TeXworks()
   elseif g:viewer == 'preview'
     call Preview()
   elseif g:viewer == 'texshop'
@@ -599,7 +599,7 @@ noremap <expr> <C-K>v ViewFile()
 ### Windows の場合 {#kf0c55a9}
 
 タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
-ビューアはデフォルトでは TeXworks を使用します．<br>
+ビューアはデフォルトでは SumatraPDF を使用します．<br>
 
 > <table>
 > <tbody>
@@ -621,9 +621,9 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
-> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
 > <tr><td>:Viewer fwdsumatrapdf &lt;Enter&gt;</td><td>ビューアを fwdsumatrapdf に変更</td></tr>
+> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
