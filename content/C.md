@@ -35,6 +35,8 @@ pukiwiki: "C"
 ### 処理系 {#d2633a16}
 
 - [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
+    - [MinGW](/MinGW/)
+    - [Cygwin](/Cygwin/)
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
 - Microsoft Visual Studio Express
     - [C99 library support in Visual Studio 2013](http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx)
