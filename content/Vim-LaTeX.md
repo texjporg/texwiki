@@ -140,8 +140,8 @@ let g:Tex_BibtexFlavor = 'upbibtex'
 let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
 "let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
 "let g:Tex_MakeIndexFlavor = 'texindy $*.idx'
-let g:Tex_ViewRule_pdf = 'texworks'
-"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+"let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
 "let g:Tex_ViewRule_pdf = 'pdfopen --rxi --file'
@@ -149,7 +149,7 @@ let g:Tex_ViewRule_pdf = 'texworks'
 
 ***
 
-TeXworks ではなく SumatraPDF を使いたい場合は [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
+SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
 ### OS X {#aecb2dfb}
 
