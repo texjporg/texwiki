@@ -161,8 +161,12 @@ jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ること
 Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
 詳細は [Python Script - TeX Wiki](</Python Script/>) を参照してください．<br>
 
-<!-- **[[NppSharp:http://nppsharp.codeplex.com/]] [#q36c3aac] -->
-<!--  -->
+### [CS-Script](http://www.csscript.net/npp/) {#df55f8f4}
+
+- [http://csscriptnpp.codeplex.com/](http://csscriptnpp.codeplex.com/)
+- [http://nppscrips.codeplex.com/](http://nppscrips.codeplex.com/)
+
+<!-- **[[NppSharp]] [#q36c3aac] -->
 
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
