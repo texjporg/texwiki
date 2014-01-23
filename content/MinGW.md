@@ -29,6 +29,13 @@ MinGW を使用すれば TeX Live の最新の開発版を自分でビルドし�
 - [http://sourceforge.net/projects/msys2/](http://sourceforge.net/projects/msys2/)
 - [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
 
+MSYS2 では LANG が ja_JP.UTF-8 になっています．<br>
+
+```
+$ echo $LANG
+ja_JP.UTF-8
+```
+
 ### MSYS1 {#pb3bd48b}
 
 - [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
