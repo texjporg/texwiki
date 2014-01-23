@@ -151,15 +151,18 @@ Windows 8.1, 8, 7, Vista, XP
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 詳細は [NppExec - TeX Wiki](/NppExec/) を参照してください．<br>
 
-<!-- **[[jN (JavaScript for Notepad++):https://code.google.com/p/jn-npp-plugin/]] [#ob32f6ac] -->
-<!--  -->
-<!-- **[[NppSharp:http://nppsharp.codeplex.com/]] [#q36c3aac] -->
-<!--  -->
+### [jN (JavaScript for Notepad++)](/jN/) {#ob32f6ac}
+
+jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．<br>
+詳細は [jN - TeX Wiki](/jN/) を参照してください．<br>
 
 ### [Python Script for Notepad++](</Python Script/>) {#kd19bcd9}
 
 Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
 詳細は [Python Script - TeX Wiki](</Python Script/>) を参照してください．<br>
+
+<!-- **[[NppSharp:http://nppsharp.codeplex.com/]] [#q36c3aac] -->
+<!--  -->
 
 ### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
 
