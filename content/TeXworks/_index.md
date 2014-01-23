@@ -41,7 +41,6 @@ TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 
 Microsoft Windows，OS X, GNU/Linux で利用できます．<br>
 TeXworks の Windows 版は，Windows XP 以降の Windows で動作します．<br>
-Windows 2000 では動作しません．<br>
 TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5/supported-platforms.html) で動作します．<br>
 
 ### License {#lccd03cb}
@@ -207,6 +206,139 @@ TeXworks ではなく [TeXstudio](/TeXstudio/) を使用しても OK です．<b
 　　　るには、"フォーマット" メニューから設定をおこなってください<br>
 
 ***
+
+#### 修正方法 (Windows) {#pb4e9c13}
+
+- [Subversion Windows Installer](http://alagazam.net/) から Windows binaries をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
+
+- [Poppler](/Poppler/) をインストールします．
+
+- [Hunspell](/Hunspell/) をインストールします．
+
+<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz -->
+
+```
+$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz
+$ tar xvf hunspell-1.3.2.tar.gz
+$ pushd hunspell-1.3.2
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
+- TeXworks のソースコードを取得します．
+
+```
+$ svn checkout http://texworks.googlecode.com/svn/trunk/ texworks-read-only
+$ pushd texworks-read-only
+```
+
+- TeXworks のソースコードの該当箇所を修正します．
+
+[texworks-read-only/src/CompletingEdit.cpp](https://code.google.com/p/texworks/source/browse/trunk/src/CompletingEdit.cpp) の
+
+```
+currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
+```
+
+の部分を
+
+```
+currentLineFormat->setForeground(QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG + .9 * fgG, .1 * bgB + .9 * fgB));
+currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
+```
+
+のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 \* bgR + .9 \* fgR, .1 \* bgG + .9 \* fgG, .1 \* bgB + .9 \* fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．<br>
+ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります．<br>
+
+- TeXworks をビルドします．
+
+```
+$ mkdir build
+$ pushd build
+$ cmake .. -G "MSYS Makefiles" -DWITH_LUA=OFF -DWITH_PYTHON=OFF -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -Dgp_cmd=C:/MinGW/bin/objdump.exe
+$ make
+$ ./src/TeXworks.exe &
+```
+
+上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
+
+- 現在カーソルのある行をハイライトするにチェックがはいっている場合にかな漢字変換をしてもハイライトに隠れずに表示されることを確認します．
+
+- 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
+
+- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，TeXworks の実行に必要なライブラリ (DLL ファイル) の確認をします．<br>
+    objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
+
+```
+$ objdump -p ./src/TeXworks.exe | grep "DLL Name" | sort | uniq
+        DLL Name: KERNEL32.dll
+        DLL Name: QtCore4.dll
+        DLL Name: QtGui4.dll
+        DLL Name: QtScript4.dll
+        DLL Name: QtScriptTools4.dll
+        DLL Name: QtXml4.dll
+        DLL Name: USER32.dll
+        DLL Name: libgcc_s_dw2-1.dll
+        DLL Name: libhunspell-1.3-0.dll
+        DLL Name: libpoppler-qt4.dll
+        DLL Name: libpoppler.dll
+        DLL Name: libstdc++-6.dll
+        DLL Name: msvcrt.dll
+```
+
+```
+$ objdump -p /mingw/bin/libpoppler-qt4.dll | grep "DLL Name" | sort | uniq
+        DLL Name: KERNEL32.dll
+        DLL Name: QtCore4.dll
+        DLL Name: QtGui4.dll
+        DLL Name: QtXml4.dll
+        DLL Name: libgcc_s_dw2-1.dll
+        DLL Name: libpoppler.dll
+        DLL Name: libstdc++-6.dll
+        DLL Name: msvcrt.dll
+```
+
+```
+$ objdump -p /mingw/bin/libpoppler.dll | grep "DLL Name" | sort | uniq
+        DLL Name: ADVAPI32.DLL
+        DLL Name: GDI32.dll
+        DLL Name: KERNEL32.dll
+        DLL Name: USER32.dll
+        DLL Name: libcurl-4.dll
+        DLL Name: libfontconfig-1.dll
+        DLL Name: libfreetype-6.dll
+        DLL Name: libgcc_s_dw2-1.dll
+        DLL Name: libjpeg-9.dll
+        DLL Name: liblcms2-2.dll
+        DLL Name: libopenjp2.dll
+        DLL Name: libpng16-16.dll
+        DLL Name: libstdc++-6.dll
+        DLL Name: libtiff-5.dll
+        DLL Name: msvcrt.dll
+        DLL Name: zlib1.dll
+```
+
+```
+$ objdump -p /mingw/bin/libfontconfig-1.dll | grep "DLL Name" | sort | uniq
+        DLL Name: KERNEL32.dll
+        DLL Name: libfreetype-6.dll
+        DLL Name: libxml2-2.dll
+        DLL Name: msvcrt.dll
+```
+
+```
+$ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
+        DLL Name: KERNEL32.dll
+        DLL Name: WS2_32.dll
+        DLL Name: libiconv-2.dll
+        DLL Name: liblzma-5.dll
+        DLL Name: msvcrt.dll
+        DLL Name: zlib1.dll
+```
+
+- C:\MinGW\bin と C:\Qt\4.8.5\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ## 文字コードの変換 {#e8ba5265}
 
