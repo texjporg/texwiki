@@ -14,6 +14,10 @@ pukiwiki: "jN"
 - [jn-npp-plugin - Plugin for Notepad++ allowing you to automate some tasks by using JavaScript - Google Project Hosting](https://code.google.com/p/jn-npp-plugin/)
 - [jN - API](http://jn-npp-plugin.googlecode.com/svn/wiki/API/api.xml)
 
+### License {#y5793722}
+
+GPLv3
+
 ### Typeset.js {#oab03eb3}
 
 ***
