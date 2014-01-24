@@ -87,6 +87,7 @@ forward search を行うには TeX コマンドのオプションに -synctex=1 
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
+    - [jN](/jN/)
     - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
