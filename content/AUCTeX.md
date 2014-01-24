@@ -112,22 +112,19 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
-(setq TeX-engine 'uptex)
-;(setq TeX-engine 'luatex)
-;(setq TeX-engine 'xetex)
-(setq TeX-view-program-list '(("SumatraPDF" "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance %o -forward-search \"%b\" %n")
-                              ("fwdsumatrapdf" "fwdsumatrapdf %o \"%b\" %n")
-                              ("TeXworks" "texworks %o")
-                              ("Firefox" "rundll32 shell32,ShellExec_RunDLL firefox -new-window %o")
-                              ("Chrome" "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\"")
-                              ("pdfopen" "pdfopen --rxi --file %o")))
-(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
-;(setq TeX-view-program-selection '((output-pdf "TeXworks")))
-;(setq TeX-view-program-selection '((output-pdf "fwdsumatrapdf")))
-;(setq TeX-view-program-selection '((output-pdf "Firefox")))
-;(setq TeX-view-program-selection '((output-pdf "Chrome")))
-;(setq TeX-view-program-selection '((output-pdf "pdfopen")))
+(eval-after-load "tex-jp"
+  '(progn
+     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                        "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                        "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                        "euptex")))
+     (setq japanese-TeX-engine-default 'pdfuptex)
+     (setq TeX-view-program-list '(("SumatraPDF" "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
+     (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
+                                        (output-pdf "SumatraPDF")))
+     (setq japanese-LaTeX-default-style "jsarticle")
+     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+       (delq (assoc command TeX-command-list) TeX-command-list))))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -179,7 +176,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                    '("fwdsumatrapdf" "fwdsumatrapdf %s.pdf \"%b\" %n"
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "texworks %s.pdf"
+                                   '("TeXworks" "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox" "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
@@ -188,7 +185,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                    '("Chrome" "powershell -Command \"& {$r = Write-Output %s.pdf;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Chrome PDF Viewer"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfopen" "pdfopen --rxi --file %s.pdf"
+                                   '("pdfopen" "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --rxi --file %%{output} --page %%{page+1}\""
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
 
 ;;
@@ -238,7 +235,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 ...<br>
 &#x2d;U\\---　　<strong>auctex.tex</strong>　　　　　ALL L1　　　(LaTeX/MP Ref)-----------------------------------------<br>
-　Command: (default LaTeX) pdfuplatex<br>
+　Command: (default LaTeX) view<br>
 
 ***
 
@@ -279,13 +276,19 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
-;(setq TeX-engine 'luatex)
-;(setq TeX-engine 'xetex)
-(setq TeX-view-program-selection '((output-pdf "Preview.app")))
-;(setq TeX-view-program-selection '((output-pdf "Skim")))
-;(setq TeX-view-program-selection '((output-pdf "displayline")))
+(eval-after-load "tex-jp"
+  '(progn
+     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                        "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
+                                        "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
+                                        "euptex")))
+     (setq japanese-TeX-engine-default 'pdfuptex)
+     (setq TeX-view-program-selection '((output-pdf "Preview.app")))
+     ;(setq TeX-view-program-selection '((output-pdf "Skim")))
+     ;(setq TeX-view-program-selection '((output-pdf "displayline")))
+     (setq japanese-LaTeX-default-style "jsarticle")
+     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+       (delq (assoc command TeX-command-list) TeX-command-list))))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -451,12 +454,18 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
-;(setq TeX-engine 'luatex)
-;(setq TeX-engine 'xetex)
-(setq TeX-view-program-selection '((output-pdf "Evince")))
-;(setq TeX-view-program-selection '((output-pdf "Okular")))
+(eval-after-load "tex-jp"
+  '(progn
+     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                        "ptex2pdf -u -e -ot '%S %(mode)'"
+                                        "ptex2pdf -u -l -ot '%S %(mode)'"
+                                        "euptex")))
+     (setq japanese-TeX-engine-default 'pdfuptex)
+     (setq TeX-view-program-selection '((output-pdf "Evince")))
+     ;(setq TeX-view-program-selection '((output-pdf "Okular")))
+     (setq japanese-LaTeX-default-style "jsarticle")
+     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+       (delq (assoc command TeX-command-list) TeX-command-list))))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -523,7 +532,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                    '("qpdfview" "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
                                      TeX-run-discard-or-function t t :help "Forward search with qpdfview"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "texworks %s.pdf"
+                                   '("TeXworks" "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("MuPDF" "mupdf %s.pdf"
@@ -627,32 +636,41 @@ AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように�
 (load "preview-latex.el" nil t t)
 ```
 
-### upTeX を使用する {#zdc0afad}
+### upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する {#zdc0afad}
 
-upTeX を使用する場合は次のように設定します．<br>
+upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する場合は次のように設定します．<br>
 
 ■ Windows の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                   "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
 ■ OS X の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
+                                   "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
 ■ Linux の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "ptex2pdf -u -e -ot '%S %(mode)'"
+                                   "ptex2pdf -u -l -ot '%S %(mode)'"
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
-上の例では TeX-engine-alist に upTeX を設定して TeX-engine に uptex を設定しました．<br>
+上の例では TeX-engine-alist に pdfuptex を設定して japanese-TeX-engine-default に pdfuptex を設定しました．<br>
 
 ### ドキュメントクラスの設定 {#l246b90f}
 
@@ -714,28 +732,37 @@ PDF Viewer を変更する場合は
 
 ### TeX エンジンの選択 {#cd10b741}
 
-&#x7e;/.emacs.d/init.el で TeX-engine-alist に uptex を設定します．<br>
-upTeX をデフォルトにする場合は TeX-engine に uptex を設定します．<br>
+&#x7e;/.emacs.d/init.el で TeX-engine-alist に pdfuptex を設定します．<br>
+pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pdfuptex を設定します．<br>
 
 ■ Windows の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\"" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                   "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
 ■ OS X の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
+                                   "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
 ■ Linux の場合
 
 ```
-(setq TeX-engine-alist '((uptex "upTeX" "ptex2pdf -u -e -ot '%S %(mode)'" "ptex2pdf -u -l -ot '%S %(mode)'" "euptex")))
-(setq TeX-engine 'uptex)
+(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                   "ptex2pdf -u -e -ot '%S %(mode)'"
+                                   "ptex2pdf -u -l -ot '%S %(mode)'"
+                                   "euptex")))
+(setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
 > <table>
@@ -743,7 +770,7 @@ upTeX をデフォルトにする場合は TeX-engine に uptex を設定しま�
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">TeX エンジンの選択</th></tr>
 > <tr><td>TeXing Options -&gt; Use Default engine</td><td>M-x TeX-engine RET default RET</td><td>デフォルト (pdfTeX) を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use LuaTeX engine</td><td>M-x TeX-engine RET luatex RET</td><td>LuaTeX を使用</td></tr>
-> <tr><td>TeXing Options -&gt; Use upTeX engine</td><td>M-x TeX-engine RET uptex RET</td><td>upTeX を使用</td></tr>
+> <tr><td>TeXing Options -&gt; Use pdfupTeX engine</td><td>M-x TeX-engine RET pdfuptex RET</td><td>pdfupTeX を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use XeTeX engine</td><td>M-x TeX-engine RET xetex RET</td><td>XeTeX を使用</td></tr>
 > </tbody>
 > </table>
