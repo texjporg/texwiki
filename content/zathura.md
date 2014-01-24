@@ -146,6 +146,21 @@ $ zathura --synctex-forward 30:0:hoge.tex hoge.pdf
 のように実行します．<br>
 zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．<br>
 
+プロセス ID を指定して forward search をすることもできます．<br>
+pgrep や pidof を使用するとプロセス ID が取得できます．<br>
+
+```
+$ zathura hoge.pdf &
+$ PID=`pgrep zathura`
+$ zathura --synctex-pid=$PID --synctex-forward 30:0:hoge.tex hoge.pdf
+```
+
+```
+$ zathura hoge.pdf &
+$ PID=`pidof zathura`
+$ zathura --synctex-pid=$PID --synctex-forward 30:0:hoge.tex hoge.pdf
+```
+
 ### inverse search {#c00c992e}
 
 TeXworks の場合は
