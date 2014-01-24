@@ -36,6 +36,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 #### RubyInstaller for Windows {#p44e196d}
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
+- [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
 
 RubyInstaller for Windows の Ruby を C:\Ruby210 にインストールした場合は
 
