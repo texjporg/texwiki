@@ -15,6 +15,47 @@ pukiwiki: "guishell"
 guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
 (乙部 厳己 さん @ 信州大)
 
+### 設定 {#nd64fa19}
+
+#### guishell.cfg {#g4317aad}
+
+guishell.exe と同じフォルダーに guishell.cfg を作成して以下のように設定します．<br>
+
+***
+
+```
+index=4
+FormatFile0=uplatex.fmt
+FormatFile1=pdflatex.fmt
+FormatFile2=lualatex.fmt
+FormatFile3=luajitlatex.fmt
+FormatFile4=xelatex.fmt
+```
+
+***
+
+#### guishell.bat {#t1d838a8}
+
+guishell.exe と同じフォルダーに guishell.bat を作成して以下のように設定します．<br>
+
+***
+
+```
+@echo off
+set TEXMFROOT=C:\w32tex\share
+set TEXMFMAIN=%TEXMFROOT%\texmf-dist
+set TEXMFLOCAL=%TEXMFROOT%\texmf-local
+set TEXMFHOME=%USERPROFILE%\texmf
+set TEXMF=%TEXMFHOME%;%TEXMFLOCAL%;%TEXMFMAIN%
+set TEXMFCNF=%TEXMFLOCAL%\web2c;%TEXMFMAIN%\web2c
+
+start guishell.exe
+```
+
+***
+
+guishell.bat をダブルクリックすると guishell.exe が起動します．<br>
+
 ## 関連リンク {#m2c882b0}
 
 - [角藤版W32TeXでGuishell，TeXMAC，秀丸を利用する](http://homepage3.nifty.com/mamoru/data/800.htm)
