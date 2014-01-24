@@ -178,6 +178,8 @@ LuaLaTeX
 
 : "/usr/bin/open" -a Skim.app %.pdf
 
+: "/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
+
 : "/usr/bin/open" -a TeXShop.app %.pdf
 
 : "/usr/bin/open" -a TeXworks.app %.pdf
@@ -277,6 +279,24 @@ SVNADMIN
 : svnadmin
 
 ***
+
+## Skim との連携 {#p9518b78}
+
+### forward search {#d42e3a79}
+
+forward search は 外部PDFビューア に以下のように設定します．<br>
+
+```
+"/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
+```
+
+### inverse search {#ea54683f}
+
+コマンド:
+: /Applications/texstudio.app/Contents/MacOS/texstudio
+
+引数:
+: "%file" -line %line
 
 <!-- *関連リンク [#r167bf94] -->
 <!--  -->
