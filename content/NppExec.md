@@ -24,6 +24,10 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 
 - [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec/)
 
+### License {#b6f13e16}
+
+GPLv3
+
 ### pdfupLaTeX {#i86b16de}
 
 ***
