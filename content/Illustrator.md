@@ -16,7 +16,7 @@ pukiwiki: "Illustrator"
 
 ### リリース情報 {#u178a7b2}
 
-- Illustrator CC 2013年
+- Illustrator CC 17.1.0 2014年
 
 情報等
 
@@ -28,36 +28,24 @@ pukiwiki: "Illustrator"
 #### ai/PDF 形式ファイル {#l3862bb1}
 
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。<br>
-TeX Live 2014 (→ TeX Live [revision 31722](http://www.tug.org/svn/texlive?view=revision&revision=31722) を参照) 以降, W32TeX \[2013/09/22\] 以降は dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
+TeX Live 2014 (→ TeX Live [revision 31722](http://www.tug.org/svn/texlive?view=revision&revision=31722) を参照) 以降, W32TeX \[2014/01/22\] 以降は dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
 なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。<br>
 TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
-dvipdfmx.def \[2013/09/21 v3.3 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] の場合
+dvipdfmx.def \[2014/01/23 v3.4 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br>
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{article}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \begin{document}
 \includegraphics{hoge.ai}
 \end{document}
 ```
 
-dvipdfmx.def \[2013/05/27 v3.2 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] の場合
-
-```
-%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{article}
-\usepackage[dvipdfmx]{graphicx}
-\DeclareGraphicsRule{.ai}{pdf}{*}{}
-\begin{document}
-\includegraphics{hoge.ai}
-\end{document}
-```
-
-Adobe Illustrator CS6 (16.0.0) で作られたファイルで確認。<br>
+Adobe Illustrator CC 17.1.0 で作られたファイルで確認。<br>
 
 #### EPS 形式ファイル {#h86d212a}
 
@@ -65,12 +53,10 @@ Illustrator で EPS 保存したものを LaTeX に挿入する例：
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass{...}
+\documentclass[uplatex]{jsarticle}
 \usepackage[dvips]{graphicx}
 \begin{document}
-...
 \includegraphics[width=50mm,clip]{hoge.eps}
-...
 \end{document}
 ```
 
@@ -91,7 +77,7 @@ $ fixill.pl <old.eps >new.eps
 ```
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。<br>
-Microsoft Windows なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。<br>
+W32TeX なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。<br>
 W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。<br>
 
 ```
@@ -100,7 +86,7 @@ W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” �
 
 ### トラブル {#id16611b}
 
-Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) のスレッド（未解決）。
+Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html), [qa:27942](https://okumuralab.org/~okumura/texfaq/qa/27942.html) のスレッド（未解決）。
 
 ### その他 {#a59267c4}
 
