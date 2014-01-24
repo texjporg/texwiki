@@ -22,6 +22,10 @@ plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成�
 - [Python Script - Plugin for Notepad++](http://npppythonscript.sourceforge.net/)
 - [Welcome to PythonScript’s documentation!](http://npppythonscript.sourceforge.net/docs/latest/)
 
+### License {#cb3f7a8f}
+
+GPLv2
+
 <!-- **注意事項 [#f37b5e02] -->
 <!--  -->
 <!-- Python Script は 2 つのスクリプトを同時に実行できません．~ -->
