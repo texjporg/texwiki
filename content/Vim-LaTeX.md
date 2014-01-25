@@ -9,6 +9,35 @@ pukiwiki: "Vim-LaTeX"
 
 [Vim](/Vim/) > Vim-LaTeX (LaTeX-Suite)
 
+<!-- このページをメンテナンスしてくださっているかたへ： -->
+<!-- いつもありがとうございます。次のようなメールをいただきましたので， -->
+<!-- コメントとして付けておきます。 -->
+<!--  -->
+<!-- I add some little stuff in .vimrc to make Vim_LaTex + Quick_build + -->
+<!-- Forward_search available. -->
+<!-- This would smooth the annoy when a raw hand get in vim from texmaker -->
+<!-- or kile, like me. -->
+<!--  -->
+<!-- let g:Tex_ViewRule_pdf = ‘okular –unique’ -->
+<!-- let g:Tex_AutoFolding = 0 -->
+<!-- :nnoremap <F2> :w<CR>:call Tex_RunLaTeX()<CR>:call Tex_ViewLaTeX()<CR> -->
+<!-- :nnoremap <F3> :w<CR>:call Tex_RunLaTeX()<CR>:call Tex_ForwardSearchLaTeX()<CR> -->
+<!--  -->
+<!-- Then in okular, choose setting-configure okular-editor, -->
+<!--  -->
+<!-- Editor: Custom Text Editor -->
+<!--  -->
+<!-- Command: gvim –remote-silent +%l %f -->
+<!--  -->
+<!-- Now I can  use F2 to see the output and F3 to get where I am editing. -->
+<!--  -->
+<!-- P.S. I have tried forwardsearch with zathura and evince, it doesn’t -->
+<!-- work for me. Does it work for you? -->
+<!--  -->
+<!-- P.P.S the \ll \lv in visual mode save me a lot of time debugging and -->
+<!-- it is easy to handle for a new vim_texer just like me. I guess it -->
+<!-- would help the other beginners, too. -->
+
 ## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) {#z8e30b5a}
 
 <img src="http://vim-latex.sourceforge.net/vim-latex.gif" alt="Vim-LaTeX" style="float:right">
