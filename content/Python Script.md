@@ -223,7 +223,7 @@ class Command:
             if os.path.exists(inputValue):
                 sumatraPDF = '"' + inputValue + '" -reuse-instance "' + pdf + '" -inverse-search "' + npp + r' \"%f\" -n%l" -forward-search "' + tex + '" ' + line
             else:
-                sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + npp + r' \"%f\" -n%l" -forward-search "' + tex + '" ' + line
+                sumatraPDF = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "' + pdf + '" -inverse-search "' + npp + r' \"%f\" -n%l -c%c" -forward-search "' + tex + '" ' + line
 
         cmd = 'cmd /c echo ' + sumatraPDF + ' | cmd'
         console.clear()
