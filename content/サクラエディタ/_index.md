@@ -63,6 +63,7 @@ Windows 8.1, 8, 7, Vista, XP
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
 - [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
+- [サクラエディタ Unicode/64bit(x64)版](http://sourceforge.net/p/sakura-editor/wiki/64bit/)
 - [サクラエディタ 開発関連](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 - [BeniZakura](https://bitbucket.org/suzzsegv/benizakura/downloads)
 
@@ -73,7 +74,6 @@ Windows 8.1, 8, 7, Vista, XP
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
 - [http://sourceforge.net/projects/sakura-editor/files/](http://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
-- [サクラエディタ 開発関連](http://mocaskr.web.fc2.com/sakura/bin_other.html)
 
 ## 不具合 {#jbc9f4c6}
 
@@ -502,7 +502,7 @@ TeX のアウトライン解析機能があります．
 
 Wine を使えば動作するようです．
 
-- [Linuxでsakuraを使いたい - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ/47)
+- [Linux でサクラエディタを使いたい - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ/47)
 
 ```
 $ wine sakura.exe
