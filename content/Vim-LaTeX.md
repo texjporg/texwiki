@@ -60,7 +60,7 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 
 ### License {#v798753a}
 
-Vim-LaTeX は [VIM ライセンス](http://vim-latex.sourceforge.net/documentation/latex-suite/) ([日本語訳](https://sites.google.com/site/vimdocja/uganda-html)) でリリースされています．<br>
+[VIM ライセンス](http://vim-latex.sourceforge.net/documentation/latex-suite/) ([日本語訳](https://sites.google.com/site/vimdocja/uganda-html))
 
 ### ChangeLog {#ye1a925a}
 
@@ -347,7 +347,6 @@ let g:Tex_ViewRule_pdf = 'xdg-open'
 "let g:Tex_ViewRule_pdf = 'okular --unique'
 "let g:Tex_ViewRule_pdf = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
 "let g:Tex_ViewRule_pdf = 'qpdfview --unique'
-"let g:Tex_ViewRule_pdf = 'pdfviewer'
 "let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'mupdf'
 "let g:Tex_ViewRule_pdf = 'firefox -new-window'
@@ -854,6 +853,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 ## 関連サイト {#fc8d75eb}
 
+- [Scheme書くためにVimの環境を整えたメモ](http://pastak.hatenablog.com/entry/2013/10/30/235525)
 - [MacPortsでLaTeXの導入とvim-latex](http://d.hatena.ne.jp/adragoona/20131022/1382451627)
 - [MacVimでVim-LaTeXを使えるようにした。](http://d.hatena.ne.jp/tnil/20130827/1377615499)
 - [http://masa.o.oo7.jp/vimrc.txt](http://masa.o.oo7.jp/vimrc.txt)
