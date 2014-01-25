@@ -912,6 +912,7 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [dvipdfmxで作ったPDFをPDF/X-1aにする際にいちばんうまくいく方法](http://tumblr.golden-lucky.net/post/195552930/dvipdfmx-pdf-pdf-x-1a-1)
 - [pdfx.sty](http://fugenji.org/thomas/diary/index.php?no=r794)
 - [TeXにpng画像を挿入するときの注意](http://qiita.com/items/32ea69d031701463f789)
+- [http://www.willus.com/k2pdfopt/](http://www.willus.com/k2pdfopt/)
 
 ## 要約 {#gf004f58}
 
