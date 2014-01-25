@@ -211,6 +211,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
     - [Vim-LaTeX](/Vim-LaTeX/)
+    - LaTeX Box
     - Automatic LaTeX Plugin for Vim (ATP)
 
 ## PDF ファイルビューア {#uf722ec6}
