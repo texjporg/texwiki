@@ -50,7 +50,7 @@ elseif has('macunix')
   let g:typeset = 'pdfuplatex'
   let g:bibtex = 'upbibtex'
   let g:makeindex = 'mendex'
-  let g:viewer = 'preview'
+  let g:viewer = 'skim'
 else
   let g:typeset = 'pdfuplatex'
   let g:bibtex = 'upbibtex'
@@ -634,7 +634,7 @@ noremap <expr> <C-K>v ViewFile()
 
 動作未確認です．<br>
 タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
-ビューアはデフォルトでは Preview を使用します．<br>
+ビューアはデフォルトでは Skim を使用します．<br>
 
 > <table>
 > <tbody>
@@ -656,10 +656,10 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
+> <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
 > <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
 > <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
