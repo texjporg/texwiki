@@ -250,13 +250,13 @@ let g:Tex_MakeIndexFlavor = '/usr/texbin/mendex $*.idx'
 "let g:Tex_MakeIndexFlavor = '/usr/texbin/makeindex $*.idx'
 "let g:Tex_MakeIndexFlavor = '/usr/texbin/texindy $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_pdf = '/usr/bin/open'
+let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXShop.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXworks.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Firefox.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a "Adobe Reader.app"'
+"let g:Tex_ViewRule_pdf = '/usr/bin/open'
 ```
 
 ***
@@ -375,7 +375,7 @@ let g:Tex_ViewRule_pdf = 'xdg-open'
 
 <span style="color:Blue;">%</span><br>
 
-<span style="color:Navy;">&#x2b;--　 7 行: Preamble: \documentclass\[12pt\]{jsarticle}---------------------------------------------------------------------------------------</span><br>
+<span style="color:Navy;">&#x2b;--　 7 行: Preamble: \documentclass\[uplatex,12pt\]{jsarticle}---------------------------------------------------------------------------------</span><br>
 
 <span style="color:Magenta;">\begin{document}</span><br>
 
