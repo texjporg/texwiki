@@ -119,7 +119,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                         "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
                                         "euptex")))
      (setq japanese-TeX-engine-default 'pdfuptex)
-     (setq TeX-view-program-list '(("SumatraPDF" "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
+     (setq TeX-view-program-list '(("SumatraPDF"
+                                    "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
      (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
                                         (output-pdf "SumatraPDF")))
      (setq japanese-LaTeX-default-style "jsarticle")
@@ -134,58 +135,75 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\" %t"
+                                   '("pdfupLaTeX"
+                                     "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\" %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2" "uplatex -kanji=utf8 -no-guess-input-enc %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf.bat %f"
+                                   '("pdfupLaTeX2"
+                                     "uplatex -kanji=utf8 -no-guess-input-enc %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf.bat %f"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk" "latexmk %t"
+                                   '("Latexmk"
+                                     "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX" "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
+                                   '("Latexmk-pdfupLaTeX"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX2" "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.bat %%O %%S %%D/\" -norc -gg -pdfps %t"
+                                   '("Latexmk-pdfupLaTeX2"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.bat %%O %%S %%D/\" -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX2"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX" "latexmk -e \"$pdflatex=q/pdflatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX" "latexmk -e \"$pdflatex=q/lualatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
+                                   '("Latexmk-LuaLaTeX"
+                                     "latexmk -e \"$pdflatex=q/lualatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX" "latexmk -e \"$pdflatex=q/luajitlatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
+                                   '("Latexmk-LuaJITLaTeX"
+                                     "latexmk -e \"$pdflatex=q/luajitlatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX" "latexmk -e \"$pdflatex=q/xelatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
+                                   '("Latexmk-XeLaTeX"
+                                     "latexmk -e \"$pdflatex=q/xelatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$makeindex=q/texindy %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("upBibTeX" "upbibtex %s"
+                                   '("upBibTeX"
+                                     "upbibtex %s"
                                      TeX-run-BibTeX nil t :help "Run upBibTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("BibTeXu" "bibtexu %s"
+                                   '("BibTeXu"
+                                     "bibtexu %s"
                                      TeX-run-BibTeX nil t :help "Run BibTeXu"))
                       (add-to-list 'TeX-command-list
-                                   '("Mendex" "mendex -U %s"
+                                   '("Mendex"
+                                     "mendex -U %s"
                                      TeX-run-command nil t :help "Create index file with mendex"))
                       (add-to-list 'TeX-command-list
-                                   '("SumatraPDF" "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
+                                   '("SumatraPDF"
+                                     "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
-                                   '("fwdsumatrapdf" "fwdsumatrapdf %s.pdf \"%b\" %n"
+                                   '("fwdsumatrapdf"
+                                     "fwdsumatrapdf %s.pdf \"%b\" %n"
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
+                                   '("TeXworks"
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
-                                   '("Firefox" "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
+                                   '("Firefox"
+                                     "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
-                                   '("Chrome" "powershell -Command \"& {$r = Write-Output %s.pdf;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\""
+                                   '("Chrome"
+                                     "powershell -Command \"& {$r = Write-Output %s.pdf;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Chrome PDF Viewer"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfopen" "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --rxi --file %%{output} --page %%{page+1}\""
+                                   '("pdfopen"
+                                     "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --rxi --file %%{output} --page %%{page+1}\""
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
 
 ;;
@@ -298,61 +316,80 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)' %t"
+                                   '("pdfupLaTeX"
+                                     "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)' %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2" "/usr/texbin/uplatex %S %(mode) %t && /usr/texbin/dvips -Ppdf -z -f %d | /usr/texbin/convbkmk -u > %f && /usr/local/bin/ps2pdf %f"
+                                   '("pdfupLaTeX2"
+                                     "/usr/texbin/uplatex %S %(mode) %t && /usr/texbin/dvips -Ppdf -z -f %d | /usr/texbin/convbkmk -u > %f && /usr/local/bin/ps2pdf %f"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk" "/usr/texbin/latexmk %t"
+                                   '("Latexmk"
+                                     "/usr/texbin/latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX" "/usr/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                   '("Latexmk-pdfupLaTeX"
+                                     "/usr/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX2" "/usr/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
+                                   '("Latexmk-pdfupLaTeX2"
+                                     "/usr/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX2"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX" "/usr/texbin/latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-pdfLaTeX"
+                                     "/usr/texbin/latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX" "/usr/texbin/latexmk -e '$pdflatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-LuaLaTeX"
+                                     "/usr/texbin/latexmk -e '$pdflatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX" "/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-LuaJITLaTeX"
+                                     "/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX" "/usr/texbin/latexmk -e '$pdflatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-XeLaTeX"
+                                     "/usr/texbin/latexmk -e '$pdflatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("upBibTeX" "/usr/texbin/upbibtex %s"
+                                   '("upBibTeX"
+                                     "/usr/texbin/upbibtex %s"
                                      TeX-run-BibTeX nil t :help "Run upBibTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("BibTeXu" "/usr/texbin/bibtexu %s"
+                                   '("BibTeXu"
+                                     "/usr/texbin/bibtexu %s"
                                      TeX-run-BibTeX nil t :help "Run BibTeXu"))
                       (add-to-list 'TeX-command-list
-                                   '("Mendex" "/usr/texbin/mendex %s"
+                                   '("Mendex"
+                                     "/usr/texbin/mendex %s"
                                      TeX-run-command nil t :help "Create index file with mendex"))
                       (add-to-list 'TeX-command-list
-                                   '("Preview" "/usr/bin/open -a Preview.app %s.pdf"
+                                   '("Preview"
+                                     "/usr/bin/open -a Preview.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Preview"))
                       (add-to-list 'TeX-command-list
-                                   '("Skim" "/usr/bin/open -a Skim.app %s.pdf"
+                                   '("Skim"
+                                     "/usr/bin/open -a Skim.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Skim"))
                       (add-to-list 'TeX-command-list
-                                   '("displayline" "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
+                                   '("displayline"
+                                     "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
                                      TeX-run-discard-or-function t t :help "Forward search with Skim"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXShop" "/usr/bin/open -a TeXShop.app %s.pdf"
+                                   '("TeXShop"
+                                     "/usr/bin/open -a TeXShop.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run TeXShop"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "/usr/bin/open -a TeXworks.app %s.pdf"
+                                   '("TeXworks"
+                                     "/usr/bin/open -a TeXworks.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
-                                   '("Firefox" "/usr/bin/open -a Firefox.app %s.pdf"
+                                   '("Firefox"
+                                     "/usr/bin/open -a Firefox.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
-                                   '("AdobeReader" "/usr/bin/open -a \"Adobe Reader.app\" %s.pdf"
+                                   '("AdobeReader"
+                                     "/usr/bin/open -a \"Adobe Reader.app\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
 
 ;;
@@ -475,79 +512,104 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX" "ptex2pdf -u -l -ot '%S %(mode)' %t"
+                                   '("pdfupLaTeX"
+                                     "ptex2pdf -u -l -ot '%S %(mode)' %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2" "uplatex %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf %f"
+                                   '("pdfupLaTeX2"
+                                     "uplatex %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf %f"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk" "latexmk %t"
+                                   '("Latexmk"
+                                     "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX" "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                   '("Latexmk-pdfupLaTeX"
+                                     "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfupLaTeX2" "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
+                                   '("Latexmk-pdfupLaTeX2"
+                                     "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$makeindex=q/mendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX2"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX" "latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-pdfLaTeX"
+                                     "latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX" "latexmk -e '$pdflatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-LuaLaTeX"
+                                     "latexmk -e '$pdflatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX" "latexmk -e '$pdflatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-LuaJITLaTeX"
+                                     "latexmk -e '$pdflatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX" "latexmk -e '$pdflatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                   '("Latexmk-XeLaTeX"
+                                     "latexmk -e '$pdflatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$makeindex=q/texindy %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("upBibTeX" "upbibtex %s"
+                                   '("upBibTeX"
+                                     "upbibtex %s"
                                      TeX-run-BibTeX nil t :help "Run upBibTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("BibTeXu" "bibtexu %s"
+                                   '("BibTeXu"
+                                     "bibtexu %s"
                                      TeX-run-BibTeX nil t :help "Run BibTeXu"))
                       (add-to-list 'TeX-command-list
-                                   '("Mendex" "mendex %s"
+                                   '("Mendex"
+                                     "mendex %s"
                                      TeX-run-command nil t :help "Create index file with mendex"))
                       (add-to-list 'TeX-command-list
-                                   '("xdg-open" "xdg-open %s.pdf"
+                                   '("xdg-open"
+                                     "xdg-open %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run xdg-open"))
                       (add-to-list 'TeX-command-list
-                                   '("Evince" "evince %s.pdf"
+                                   '("Evince"
+                                     "evince %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Evince"))
                       (add-to-list 'TeX-command-list
-                                   '("fwdevince" "fwdevince %s.pdf %n \"%b\""
+                                   '("fwdevince"
+                                     "fwdevince %s.pdf %n \"%b\""
                                      TeX-run-discard-or-function t t :help "Forward search with Evince"))
                       (add-to-list 'TeX-command-list
-                                   '("Okular" "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
+                                   '("Okular"
+                                     "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
                       (add-to-list 'TeX-command-list
-                                   '("zathura" "zathura -s -x \"emacsclient --no-wait +%%{line} %%{input}\" %s.pdf"
+                                   '("zathura"
+                                     "zathura -s -x \"emacsclient --no-wait +%%{line} %%{input}\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run zathura"))
                       (add-to-list 'TeX-command-list
-                                   '("fwdzathura" "zathura --synctex-forward %n:0:%b %s.pdf"
+                                   '("fwdzathura"
+                                     "zathura --synctex-forward %n:0:%b %s.pdf"
                                      TeX-run-discard-or-function t t :help "Forward search with zathura"))
                       (add-to-list 'TeX-command-list
-                                   '("qpdfview" "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
+                                   '("qpdfview"
+                                     "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
                                      TeX-run-discard-or-function t t :help "Forward search with qpdfview"))
                       (add-to-list 'TeX-command-list
-                                   '("TeXworks" "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
+                                   '("TeXworks"
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
-                                   '("MuPDF" "mupdf %s.pdf"
+                                   '("MuPDF"
+                                     "mupdf %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run MuPDF"))
                       (add-to-list 'TeX-command-list
-                                   '("Firefox" "firefox -new-window %s.pdf"
+                                   '("Firefox"
+                                     "firefox -new-window %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
-                                   '("Chromium" "chromium --new-window %s.pdf"
+                                   '("Chromium"
+                                     "chromium --new-window %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Chromium"))
                       (add-to-list 'TeX-command-list
-                                   '("acroread" "acroread %s.pdf"
+                                   '("acroread"
+                                     "acroread %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfopen" "pdfopen -viewer ar9-tab %s.pdf"
+                                   '("pdfopen"
+                                     "pdfopen -viewer ar9-tab %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
 
 ;;
