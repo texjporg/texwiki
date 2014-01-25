@@ -301,9 +301,9 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
                                         "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
                                         "euptex")))
      (setq japanese-TeX-engine-default 'pdfuptex)
-     (setq TeX-view-program-selection '((output-pdf "Preview.app")))
+     (setq TeX-view-program-selection '((output-pdf "displayline")))
      ;(setq TeX-view-program-selection '((output-pdf "Skim")))
-     ;(setq TeX-view-program-selection '((output-pdf "displayline")))
+     ;(setq TeX-view-program-selection '((output-pdf "Preview.app")))
      (setq japanese-LaTeX-default-style "jsarticle")
      (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
        (delq (assoc command TeX-command-list) TeX-command-list))))
@@ -364,17 +364,17 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
                                      "/usr/texbin/mendex %s"
                                      TeX-run-command nil t :help "Create index file with mendex"))
                       (add-to-list 'TeX-command-list
-                                   '("Preview"
-                                     "/usr/bin/open -a Preview.app %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Preview"))
+                                   '("displayline"
+                                     "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
+                                     TeX-run-discard-or-function t t :help "Forward search with Skim"))
                       (add-to-list 'TeX-command-list
                                    '("Skim"
                                      "/usr/bin/open -a Skim.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Skim"))
                       (add-to-list 'TeX-command-list
-                                   '("displayline"
-                                     "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
-                                     TeX-run-discard-or-function t t :help "Forward search with Skim"))
+                                   '("Preview"
+                                     "/usr/bin/open -a Preview.app %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run Preview"))
                       (add-to-list 'TeX-command-list
                                    '("TeXShop"
                                      "/usr/bin/open -a TeXShop.app %s.pdf"
@@ -421,9 +421,9 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 > <tr><td>upBibTeX</td><td>C-c C-c upbibtex RET</td><td>タイプセット (upBibTeX)</td></tr>
 > <tr><td>BibTeXu</td><td>C-c C-c bibtexu RET</td><td>タイプセット (BibTeXu)</td></tr>
 > <tr><td>Mendex</td><td>C-c C-c mendex RET</td><td>タイプセット (Mendex)</td></tr>
-> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
+> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
