@@ -28,10 +28,6 @@ Automatic LaTeX Plugin for Vim (ATP) は [Vim](/Vim/) で LaTeX ドキュメン�
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
 - [https://github.com/coot/atp_vim](https://github.com/coot/atp_vim)
 
-### 動作環境 {#tcbad3a2}
-
-Vim 7.3 以上<br>
-
 ### License {#s306eff3}
 
 GPLv3<br>
