@@ -13,6 +13,7 @@ TeX 関連プログラムには C, C++, C#, F#, VB で書かれたプログラ�
 Microsoft Visual Studio Express を使用すれば自分でビルドして使用することができます．<br>
 
 - [Microsoft Visual Studio Express](http://www.microsoft.com/ja-jp/dev/express/)
+- [Microsoft Visual Studio Express 2013 for Windows Desktop](http://www.microsoft.com/ja-jp/download/details.aspx?id=40787)
     <!-- -http://www.microsoft.com/visualstudio/ -->
 
 - [Wikipedia.ja:Microsoft_Visual_Studio_Express](https://ja.wikipedia.org/wiki/Microsoft_Visual_Studio_Express)
