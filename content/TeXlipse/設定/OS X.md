@@ -262,7 +262,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 [Pdf4Eclipse](</TeXlipse/設定/Windows/#o62b47a3>) を参照．
 
-#### Preview {#uf79405f}
+#### displayline {#y5f135de}
 
 ***
 
@@ -273,9 +273,9 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Preview</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a Preview.app "&#x25;file"</ins><br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>displayline</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/Applications/Skim.app/Contents/SharedSupport/displayline</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;line "&#x25;file" "&#x25;texfile"</ins><br>
 
 <br>
 
@@ -292,8 +292,8 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <br>
 
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
+　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
@@ -340,7 +340,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 ***
 
-#### displayline {#y5f135de}
+#### Preview {#uf79405f}
 
 ***
 
@@ -351,9 +351,9 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　<strong>新規ビューアー構成の追加</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 ビューアーを構成します。<br>
-　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>displayline</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/Applications/Skim.app/Contents/SharedSupport/displayline</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>&#x25;line "&#x25;file" "&#x25;texfile"</ins><br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>Preview</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a Preview.app "&#x25;file"</ins><br>
 
 <br>
 
@@ -370,8 +370,8 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <br>
 
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　▼\]</span><br>
-　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ビューアー実行外部コマンド　　　　　　　　　　　▼\]</span><br>
-　　 ☑ ビューアーでフォーマット済み検索をサポート<br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
 
 <br>
 
