@@ -69,7 +69,7 @@ GPLv3
             currentTeXFile = ["\"", currentTeXFile, "\""].join("");
             pdfFile = ["\"", pdfFile, "\""].join("");
 
-            var args = "-reuse-instance " + pdfFile + " -inverse-search \"\\\"" + npp + "\\\" \\\"%f\\\" -n%l\"" + " -forward-search " + currentTeXFile + " " + line;
+            var args = "-reuse-instance " + pdfFile + " -inverse-search \"\\\"" + npp + "\\\" \\\"%f\\\" -n%l -c%c\"" + " -forward-search " + currentTeXFile + " " + line;
             new ActiveXObject("Shell.Application").ShellExecute(sumatraPDF, args, "", "open", 1);
         }
     };
