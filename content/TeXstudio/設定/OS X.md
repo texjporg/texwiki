@@ -174,11 +174,11 @@ LuaLaTeX
 外部PDFビューア
 : &nbsp;
 
-: "/usr/bin/open" -a Preview.app %.pdf
+: "/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
 
 : "/usr/bin/open" -a Skim.app %.pdf
 
-: "/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
+: "/usr/bin/open" -a Preview.app %.pdf
 
 : "/usr/bin/open" -a TeXShop.app %.pdf
 
