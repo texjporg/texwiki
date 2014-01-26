@@ -301,9 +301,10 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
                                         "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
                                         "euptex")))
      (setq japanese-TeX-engine-default 'pdfuptex)
-     (setq TeX-view-program-selection '((output-pdf "displayline")))
-     ;(setq TeX-view-program-selection '((output-pdf "Skim")))
-     ;(setq TeX-view-program-selection '((output-pdf "Preview.app")))
+     (setq TeX-view-program-selection '((output-dvi "displayline")
+                                        (output-pdf "displayline")))
+     ;(setq TeX-view-program-selection '((output-dvi "Skim")
+     ;                                   (output-pdf "Skim")))
      (setq japanese-LaTeX-default-style "jsarticle")
      (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
        (delq (assoc command TeX-command-list) TeX-command-list))))
@@ -498,8 +499,10 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                         "ptex2pdf -u -l -ot '%S %(mode)'"
                                         "euptex")))
      (setq japanese-TeX-engine-default 'pdfuptex)
-     (setq TeX-view-program-selection '((output-pdf "Evince")))
-     ;(setq TeX-view-program-selection '((output-pdf "Okular")))
+     (setq TeX-view-program-selection '((output-dvi "Evince")
+                                        (output-pdf "Evince")))
+     ;(setq TeX-view-program-selection '((output-dvi "Okular")
+     ;                                   (output-pdf "Okular")))
      (setq japanese-LaTeX-default-style "jsarticle")
      (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
        (delq (assoc command TeX-command-list) TeX-command-list))))
@@ -742,16 +745,18 @@ upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する場合は次のように設�
 (setq japanese-LaTeX-default-style "jsarticle")
 ```
 
-### PDF ビューアーの変更 {#pfbe6148}
+### DVI, PDF ビューアーの変更 {#pfbe6148}
 
-PDF Viewer を変更する場合は
-
-```
-(setq TeX-view-program-list '(("PDFviewer" "/path/viewer %o")))
-```
+DVI, PDF Viewer を変更する場合は
 
 ```
-(setq TeX-view-program-selection '((output-pdf "PDFviewer")))
+(setq TeX-view-program-list '(("DVIviewer" "/path/viewer %o")
+                              ("PDFviewer" "/path/viewer %o")))
+```
+
+```
+(setq TeX-view-program-selection '((output-dvi "DVIviewer")
+                                   (output-pdf "PDFviewer")))
 ```
 
 になります。
