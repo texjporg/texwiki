@@ -33,7 +33,6 @@ pukiwiki: "サクラエディタ"
     - [Members](http://sourceforge.net/p/sakura-editor/_members/)
 - [SakuraEditorWiki](http://sakura.qp.land.to/)
     - [FAQ](http://sakura.qp.land.to/?FAQ)
-- [SakuraEditorMsiInstaller](https://github.com/tohosaku/SakuraEditorMsiInstaller)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
 - [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/)
@@ -47,7 +46,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### License {#y5064e03}
 
-サクラエディタは，現在 zlib/libpng ライセンスに統一するため，ソースコードのライセンス整備中です．<br>
+サクラエディタは，ソースコードの大部分が zlib/libpng ライセンスです．<br>
 詳細は [ライセンス明確化推進計画](http://sakura.qp.land.to/?Develop/Licenses) を参照してください．<br>
 
 ### リリース情報 {#qe1b7074}
