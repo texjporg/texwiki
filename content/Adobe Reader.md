@@ -162,8 +162,17 @@ echo exit | pdfdde --rxi
 
 - [DDEを用いてページを指定してPDFを表示する](http://kb2.adobe.com/jp/cps/510/510047.html)
 - [Adobe Readerで指定したファイルの指定したページを開く](http://owlsperspective.blogspot.jp/2008/07/acroview.html)
+- [http://stackoverflow.com/questions/619158/adobe-reader-command-line-reference](http://stackoverflow.com/questions/619158/adobe-reader-command-line-reference)
+- [http://partners.adobe.com/public/developer/en/acrobat/PDFOpenParameters.pdf#page=5](http://partners.adobe.com/public/developer/en/acrobat/PDFOpenParameters.pdf#page=5)
+- [http://kb2.adobe.com/jp/cps/511/511759/attachments/511759_pdf_open_parameters.pdf](http://kb2.adobe.com/jp/cps/511/511759/attachments/511759_pdf_open_parameters.pdf)
 
 3ページ目を表示するには以下のようにします．
+
+```
+start AcroRd32 /a "page=3" hoge.pdf
+```
+
+または
 
 ```
 pdfopen --rxi --file hoge.pdf --page 3
