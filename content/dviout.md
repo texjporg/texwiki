@@ -859,38 +859,56 @@ dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2
 ## EPS 以外の画像を使うには {#z97e7e7b}
 
 dviout for Windows は Susieプラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。<br>
+
+<!-- -[[dvioutにSusieプラグインを入れる:http://tasusuweb.appspot.com/tex/susie.html]] -->
+
+### PNG 形式 {#v2a0576b}
+
+PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。<br>
+
+- [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
+
+から WIC Susie Plug-in をダウンロードしてください。<br>
+展開後 iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.spi が存在するフォルダーを指定してください。<br>
+プリアンブルに
+
+```
+\usepackage[dviout]{graphicx}
+```
+
+を記述すると PNG 画像が表示できます．<br>
 dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
 
 ```
 \usepackage[dvipdfmx]{graphicx}
 ```
 
-- [dvioutにSusieプラグインを入れる](http://tasusuweb.appspot.com/tex/susie.html)
-
-### PNG 形式 {#v2a0576b}
-
-PNG 形式の画像を表示するには ifpng.spi が必要です。<br>
-
-- [【渡辺 裕朗】ソフトウエア](http://www.asahi-net.or.jp/~DS8H-WTNB/software/)
-- [Susie32 PNG Plug-in (Regular 版)](http://cetus.sakura.ne.jp/softlab/software/ifpng.html)
-- [Susie32 PNG Plug-in (Light 版)](http://cetus.sakura.ne.jp/softlab/software/ifpngl.html)
-
-からプラグインを選択して ifpng.spi をダウンロードしてください。<br>
-展開後 ifpng.spi を dviout.exe と同じフォルダーに配置します．<br>
-他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に ifpng.spi が存在するフォルダーを指定してください。<br>
-PNG ファイルが表示されない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
+PNG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
 
 ### JPEG 形式 {#s4f7def7}
 
-JPEG 形式の画像を表示するには ifjpegx.spi が必要です。<br>
+JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。<br>
 
-- [SIMD Enhanced JPEG Plug-in (Regular 版)](http://cetus.sakura.ne.jp/softlab/software/ifjpegx.html)
-- [SIMD Enhanced JPEG Plug-in (Light 版)](http://cetus.sakura.ne.jp/softlab/software/ifjpegxl.html)
+- [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
 
-からプラグインを選択して ifjpegx.spi をダウンロードしてください。<br>
-展開後 ifjpegx.spi を dviout.exe と同じフォルダーに配置します．<br>
-他のフォルダーに配置する場合は 展開後 \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に ifjpegx.spi が存在するフォルダーを指定してください。<br>
-JPEG ファイルが表示されない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
+から WIC Susie Plug-in をダウンロードしてください。<br>
+展開後 iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.spi が存在するフォルダーを指定してください。<br>
+プリアンブルに
+
+```
+\usepackage[dviout]{graphicx}
+```
+
+を記述すると JPEG 画像が表示できます．<br>
+dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
+
+```
+\usepackage[dvipdfmx]{graphicx}
+```
+
+JPEG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
 
 ## Warning を無視する {#fa72a1b5}
 
