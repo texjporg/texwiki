@@ -939,6 +939,16 @@ JPEG ファイルが表示できない場合は dviout を使用せず PDF フ�
 
 ***
 
+## SyncTeX {#ab3daddf}
+
+TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
+
+```
+synctex view -i 30:0:hoge.tex -o hoge.dvi -x "C:\w32tex\dviout\dviout -1 %{output} %{page+1}"
+```
+
+のように実行します．<br>
+
 ## 関連リンク {#a0623ac1}
 
 - [TeX インストールガイド―― dviout for Windows のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/dviout.htm) @ [トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](https://twitter.com/tony4649))（旧 @nifty DTP と印刷フォーラム \[FDTP\]）
