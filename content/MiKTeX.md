@@ -35,7 +35,7 @@ MiKTeX にも platex.exe がありますが，日本語 pLaTeX ではありま�
 
 ```
 >platex.exe
-This is pdfTeX, Version 3.1415926-2.3-1.40.12
+This is pdfTeX, Version 3.14159265-2.3-1.40.12
 **
 ```
 
@@ -43,7 +43,7 @@ This is pdfTeX, Version 3.1415926-2.3-1.40.12
 
 ```
 >pdfplatex.exe
-This is pdfTeX, Version 3.1415926-2.3-1.40.12
+This is pdfTeX, Version 3.14159265-2.3-1.40.12
 **
 ```
 
