@@ -53,33 +53,31 @@ LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.ht
 
 ## 不具合 {#v600e2c1}
 
-### bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[ixbm.sty](https://gist.github.com/2625027) を使用する → [LuaTeX rev 4411](https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411) で修正されました {#o2818a24}
+- [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
 
-[LuaTeX rev 4411](https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411) で修正されました．<br>
-LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．<br>
-
-LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。
-
-```
-\documentclass{article} 
-\usepackage{bm} 
-\begin{document} 
-$\bm{a}$ 
-\end{document}
-```
-
-```
-! Invalid math code.
-\bm@command ->\mathchar 31458401
-
-l.4 $\bm{a}
-           $
-?
-```
-
-これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [ixbm.sty](https://gist.github.com/2625027) を使用すればエラーは回避できます。
-
-- [\mathcode と \omathcode と \Umathcode と](http://d.hatena.ne.jp/zrbabbler/20120509/1336584479)
+<!-- **bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[[ixbm.sty:https://gist.github.com/2625027]] を使用する → [[LuaTeX rev 4411:https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411]] で修正されました [#o2818a24] -->
+<!--  -->
+<!-- [[LuaTeX rev 4411:https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411]] で修正されました．~ -->
+<!-- LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．~ -->
+<!--  -->
+<!-- LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。 -->
+<!--  -->
+<!-- \documentclass{article}  -->
+<!-- \usepackage{bm}  -->
+<!-- \begin{document}  -->
+<!-- $\bm{a}$  -->
+<!-- \end{document} -->
+<!--  -->
+<!-- ! Invalid math code. -->
+<!-- \bm@command ->\mathchar 31458401 -->
+<!--  -->
+<!-- l.4 $\bm{a} -->
+<!--            $ -->
+<!-- ? -->
+<!--  -->
+<!-- これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [[ixbm.sty:https://gist.github.com/2625027]] を使用すればエラーは回避できます。 -->
+<!--  -->
+<!-- -[[\mathcode と \omathcode と \Umathcode と:http://d.hatena.ne.jp/zrbabbler/20120509/1336584479]] -->
 
 ## 関連リンク {#cdd9fc14}
 
