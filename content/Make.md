@@ -109,7 +109,7 @@ $ ls
 Makefile  test.tex
 $ make
 uplatex  -interaction=batchmode test.tex
-This is e-upTeX, Version 3.1415926-p3.4-u1.11-110825-2.6 (utf8.uptex) (TeX Live 2013)
+This is e-upTeX, Version 3.14159265-p3.4-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014/dev)
  restricted \write18 enabled.
 entering extended mode
 dvipdfmx test.dvi
