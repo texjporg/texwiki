@@ -47,6 +47,7 @@ TeX Live 2014 (→ [Revision 31738](http://www.tug.org/svn/texlive?view=revision
 TeX Live 2013 (dvipdfmx-20130405) ではジャンプできます<br>
 TeX Live 2014 (→ [Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759) を参照) で修正されました<br>
 
+- [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1225)
 - [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
 
 ### [dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073) → TeX Live 2014 以降にアップデート {#r12477d0}
