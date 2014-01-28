@@ -878,7 +878,7 @@ PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。<br
 ```
 
 を記述すると PNG 画像が表示できます．<br>
-dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
+dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します。<br>
 
 ```
 \usepackage[dvipdfmx]{graphicx}
@@ -902,7 +902,7 @@ JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。<b
 ```
 
 を記述すると JPEG 画像が表示できます．<br>
-dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
+dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します。<br>
 
 ```
 \usepackage[dvipdfmx]{graphicx}
