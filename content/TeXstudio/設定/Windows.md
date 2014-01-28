@@ -190,9 +190,9 @@ LuaLaTeX
 
 : dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} "&#x25;&#x25;{output}""
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} """&#x25;&#x25;{output}""""
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file "&#x25;&#x25;{output}" --page &#x25;&#x25;{page+1}"
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file """&#x25;&#x25;{output}""" --page &#x25;&#x25;{page+1}"
 
 : dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x """"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe""" /a page=&#x25;&#x25;{page+1} "&#x25;&#x25;{output}""
 
@@ -385,7 +385,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
@@ -418,7 +418,7 @@ uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 &
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.bat "%~n1.ps" && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
@@ -448,7 +448,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
@@ -478,7 +478,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 lualatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
@@ -508,7 +508,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
@@ -538,7 +538,7 @@ findstr "AcroRd32.exe" > nul && ^
 pdfopen --rxi --file "%~n1.pdf" && ^
 pdfclose --rxi --file "%~n1.pdf" & ^
 xelatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file "%%{output}" --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file """%%{output}""" --page %%{page+1}"
 ```
 
 ***
