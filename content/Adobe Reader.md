@@ -190,6 +190,20 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 
 ### [pdfopen and pdfclose](http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/) {#tf67f0e7}
 
+## SyncTeX {#s533a23f}
+
+### forward search {#s30ae8a0}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は<br>
+
+```
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "pdfopen --rxi --file '%{output}' --page %{page+1}"
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a 'page=%{page+1}' '%{output}'"
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a 'page=%{page+1}' '%{output}'"
+```
+
+のように実行します．<br>
+
 ## 関連リンク {#m8d917f7}
 
 - Linux/Debian - TeX Wiki#Adobe Reader
