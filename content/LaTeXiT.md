@@ -7,9 +7,9 @@ pukiwiki: "LaTeXiT"
 
 # LaTeXiT
 
-## [LaTeXiT](http://www.chachatelier.fr/latexit/) {#b58323c5}
+## [LaTeXiT](http://pierre.chachatelier.fr/latexit/) {#b58323c5}
 
-<img src="http://www.chachatelier.fr/latexit/images/latexit_128.png" alt="LaTeXiT" style="float:right">
+<img src="http://pierre.chachatelier.fr/latexit/images/latexit_128.png" alt="LaTeXiT" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -18,22 +18,21 @@ pukiwiki: "LaTeXiT"
 LaTeXiT は数式エディタです．<br>
 [MacTeX](/Mac/#mactex) に標準で含まれています．<br>
 
-- [LaTeXiT](http://www.chachatelier.fr/latexit/)
-    <!-- -[[LaTeXiT:http://pierre.chachatelier.fr/latexit]] -->
-    - [Downloads](http://www.chachatelier.fr/latexit/latexit-downloads.php)
-        - [Beta](http://www.chachatelier.fr/latexit/latexit-beta.php)
-    - [FAQ](http://www.chachatelier.fr/latexit/latexit-faq.php)
+- [LaTeXiT](http://pierre.chachatelier.fr/latexit/)
+    - [Downloads](http://pierre.chachatelier.fr/latexit/latexit-downloads.php)
+        - [Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.php)
+    - [FAQ](http://pierre.chachatelier.fr/latexit/latexit-faq.php)
 - [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
 
 ### 動作環境 {#e0e2eaf2}
 
 OS X 10.4 以降
 
-[COMPATIBILITY](http://www.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
+[COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
 
 ### リリース情報/ChangeLog {#sb3b1ab6}
 
-- [ChangeLog](http://www.chachatelier.fr/latexit/latexit-downloads.php#main)
+- [ChangeLog](http://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
 
 ## 環境設定 {#tab3d738}
 
