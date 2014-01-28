@@ -46,8 +46,20 @@ xdvik (xdvi-motif) は TeX Live/Vine Linux に含まれています．<br>
 ### 使い方 {#m5b0a3d2}
 
 ```
-$ xdvi -watchfile 1 hoge.dvi &
+$ xdvi -nofork -unique -watchfile 1 hoge.dvi &
 ```
+
+### SyncTeX {#g4e4f193}
+
+#### forward search {#ic1815e4}
+
+TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
+
+```
+$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'xdvi -nofork -unique -watchfile 1 +%{page+1} %{output}' &
+```
+
+のように実行します．<br>
 
 ## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)  (obsolete) → PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
 
@@ -78,5 +90,17 @@ pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexliv
 ### 使い方 {#o73d19d8}
 
 ```
-$ pxdvi -watchfile 1 hoge.dvi &
+$ pxdvi -nofork -unique -watchfile 1 hoge.dvi &
 ```
+
+### SyncTeX {#i441324e}
+
+#### forward search {#ucabcddf}
+
+TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
+
+```
+$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'pxdvi -nofork -unique -watchfile 1 +%{page+1} %{output}' &
+```
+
+のように実行します．<br>
