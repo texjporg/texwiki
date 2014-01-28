@@ -15,7 +15,7 @@ pukiwiki: "Vim/tex.vim"
 
 $HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
 
-tex.vim を使用する場合は $HOME/\_vimrc (Windows), $HOME/.vimrc (OS X, Linux) に
+tex.vim を使用する場合は $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (OS X, Linux) に
 
 ***
 
