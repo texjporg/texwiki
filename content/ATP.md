@@ -80,8 +80,8 @@ Vim を起動し
 
 パッケージを展開し
 
-- $HOME/.vim/ (UNIX, Linux)
 - $HOME/vimfiles/ (Windows)
+- $HOME/.vim/ (UNIX, Linux)
 
 に
 
@@ -95,8 +95,8 @@ Vim を起動し
 
 を配置します．
 
-- $HOME/.vimrc (UNIX, Linux)
-- $HOME/\_vimrc (Windows)
+- $HOME/vimfiles/vimrc (Windows)
+- $HOME/.vim/vimrc (UNIX, Linux)
 
 に設定を記述します．
 
