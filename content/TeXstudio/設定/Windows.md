@@ -175,6 +175,20 @@ LuaLaTeX
 
 : luajitlatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
+DVIビューア
+: &nbsp;
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "'C:\texlive\2013\tlpkg\dviout\dviout.exe' -1 -renew=+ '&#x25;&#x25;{output}' &#x25;&#x25;{page+1}"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "'C:\w32tex\dviout\dviout.exe' -1 -renew=+ '&#x25;&#x25;{output}' &#x25;&#x25;{page+1}"
+
+PSビューア
+: &nbsp;
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe' -reuse-instance -page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "'C:\Program Files\SumatraPDF\SumatraPDF.exe' -reuse-instance -page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
 外部PDFビューア
 : &nbsp;
 
@@ -190,13 +204,13 @@ LuaLaTeX
 
 : dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} """&#x25;&#x25;{output}""""
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file """&#x25;&#x25;{output}""" --page &#x25;&#x25;{page+1}"
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file '&#x25;&#x25;{output}' --page &#x25;&#x25;{page+1}"
 
-: dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x """"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe""" /a page=&#x25;&#x25;{page+1} "&#x25;&#x25;{output}""
+: dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "'C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a page=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x """"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe""" /a page=&#x25;&#x25;{page+1} "&#x25;&#x25;{output}""
+: dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "'C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a page=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
 DviPs
 : &nbsp;
