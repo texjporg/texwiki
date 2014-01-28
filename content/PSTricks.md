@@ -1225,7 +1225,7 @@ pstpdfmx の解説 [pstpdfmx.pdf](/attach/PSTricks/pstpdfmx.pdf)
 次のように処理します．
 
 ```
-platex fig.tex
+uplatex fig.tex
 dvips -Ppdf -o fig.ps fig.dvi
 epstopdf fig.ps fig.pdf
 gs -sDEVICE=pbm -fig.ps -sOutputFile=fig.pbm
@@ -1240,18 +1240,17 @@ bbb < fig.pbm > fib.bb
 すると完全な PDF ファイル file.pdf は次のように作ることになります．
 
 ```
-platex file
+uplatex file
 ./genpdf.sh file
-platex file
-dvipdfmx file
+ptex2pdf -u -l file
 ```
 
 dvips にこのマクロを流用するには 1 行か 2 行の修正で済みます (デバイスドライバに
 dvips を指定し， genpdf.sh の中で fig.ps の BoundingBox を awk/perl で
-プログラム bbb が出力した正しいものに置換するだけです)．しかし、やはり大変面倒です． 
-pdfLaTeX などが日本語化されれば pdftricks や ps4pdf などのパッケージが使える
-ようになるでしょう．いずれにしても pdfTeX/pdfLaTeX で日本語が使
-えるようになるまでは，このような面倒な処理が必要になると思います．
+プログラム bbb が出力した正しいものに置換するだけです)．<br>
+しかし、やはり大変面倒です．<br>
+LuaLaTeX で LuaTeX-ja を使用すれば pdftricks や ps4pdf などのパッケージが使える
+と思います．
 
 ### 実際に<em>使える</em>画像ファイルを作るには (別解) {#cddb53cd}
 
@@ -1266,7 +1265,7 @@ open(ARGV[0],"r").each_line{|line|;if line =~ /%%BoundingBox/; print line; break
 
 ```
 IMGSRCS = fig.tex
-TEX    = platex
+TEX    = uplatex
 DVIPS  = dvips
 PS2EPS = ps2epsi.bat
 PS2PDF = epstopdf -d --nogs
@@ -1299,8 +1298,8 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 PSTricks で描く図だけを別ファイル foo.tex に保存して，
 
 ```
-$ (p)latex foo
-$ (p)dvips -E foo
+$ uplatex foo
+$ dvips -E foo
 $ epstool --copy --bbox foo.ps foo.eps
 ```
 
@@ -1311,7 +1310,7 @@ $ epstopdf foo.eps foo.pdf
 $ extractbb foo.pdf
 ```
 
-としておけば，pdflatex, dvipdfmx, dvips などいろいろなドライバで共通に使える画像
+としておけば，pdftex, dvipdfmx, dvips などいろいろなドライバで共通に使える画像
 セットになります．
 
 [Herbert Voss 2006-10-10 の文書 \[Internet Archive\]](http://web.archive.org/web/20070513051617/http://perce.de/LaTeX/misc/PST2PDF) でも epstopdf を使っているみたいです． <!-- 上に例で挙げた Chebyshev 多項式の零点の図のように、ソースにサイズを --> <!-- 書き込んでしまうのでは、解答になりませんか？ --> <!-- // pspicture 環境の (x,y)(X,Y) でですか? --> <!-- // その指定では，その枠内ぴったりに図を描くようにがんばらないといけませんよね？ --> <!-- // アルファベットの `O' 1 文字だけを描いた図でもそれをやろうとすると， --> <!-- // 文字の太さとかを考えないと，きちんと BoundingBox の中にぴったり収めることは --> <!-- // 神技に近いです．BoundingBox は，図を描くときに手で指定するのではなく， --> <!-- // できあがった図から事後処理で補正できる方が reasonable だと思います． -->
