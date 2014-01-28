@@ -946,7 +946,7 @@ JPEG ファイルが表示できない場合は dviout を使用せず PDF フ�
 TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
 
 ```
-synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x """"C:\w32tex\dviout\dviout""" -1 -renew=+ """%{output}""" %{page+1}"
+synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "'C:\w32tex\dviout\dviout.exe' -1 -renew=+ '%{output}' %{page+1}"
 ```
 
 のように実行します．<br>
