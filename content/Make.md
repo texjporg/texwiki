@@ -507,6 +507,7 @@ latexmk -C
 #### リンク {#yb5452a3}
 
 - [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
+- [【質問】日本語環境における文献処理について](http://qiita.com/mr_konn/items/3f523eb6dcf1d9837c92)
 - [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
