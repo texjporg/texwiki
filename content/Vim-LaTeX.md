@@ -77,9 +77,9 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 
 - [MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる](https://twitter.com/inaka_calm/status/402774566134480896) → [Mac で KeyRemap4MacBook を使って IME をノーマルモードで必ずオフにする](http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/)
 
-### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → .gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
+### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → $HOME/.vim/gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
-- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → .gvimrc に set imdisable
+- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → $HOME/.vim/gvimrc に set imdisable
 
 ### Linux の GVim で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → ソースコードの修正またはコンソール版の Vim を使用する {#g843a69b}
 
@@ -132,7 +132,7 @@ Vim を起動し
 
 #### 設定 {#q8a0044b}
 
-$HOME/\_vimrc に設定を記述します．<br>
+$HOME/vimfiles/vimrc に設定を記述します．<br>
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
@@ -212,7 +212,7 @@ Vim を起動し
 
 #### 設定 {#hf6d9f36}
 
-$HOME/.vimrc に設定を記述します．<br>
+$HOME/.vim/vimrc に設定を記述します．<br>
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
@@ -261,7 +261,7 @@ let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 
 ***
 
-日本語入力に不具合が発生する場合は $HOME/.gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずします．
+日本語入力に不具合が発生する場合は $HOME/.vim/gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずします．
 
 ***
 
@@ -304,7 +304,7 @@ Vim を起動し
 
 #### 設定 {#j3b0f658}
 
-$HOME/.vimrc に設定を記述します．<br>
+$HOME/.vim/vimrc に設定を記述します．<br>
 以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
@@ -385,7 +385,7 @@ let g:Tex_ViewRule_pdf = 'xdg-open'
 
 ***
 
-TeX ファイルを開くときに自動的に折りたたみを行う機能を off にするには $HOME/\_vimrc または $HOME/.vimrc に
+TeX ファイルを開くときに自動的に折りたたみを行う機能を off にするには $HOME/vimfiles/vimrc または $HOME/.vim/vimrc に
 
 ```
 let g:Tex_AutoFolding = 0
@@ -442,7 +442,7 @@ TeX ファイルを保存して \ll でコンパイルすれば，自動的に�
 
 OS X ではデフォルトの対象フォーマットは PDF です．その他の OS ではデフォルトの対象フォーマットは DVI です．
 
-デフォルトの対象フォーマットを PDF に変更する場合は $HOME/\_vimrc または $HOME/.vimrc に
+デフォルトの対象フォーマットを PDF に変更する場合は $HOME/vimfiles/vimrc または $HOME/.vim/vimrc に
 
 ```
 let g:Tex_DefaultTargetFormat = 'pdf'
@@ -604,7 +604,7 @@ SSE を表示したい場合は，SS をタイプして &#x3c;Ctrl-V> をタイ�
 
 " を表示したい場合は，&#x3c;Ctrl-V> をタイプして " をタイプします．
 
-Smart Quotes を off にするには $HOME/\_vimrc または $HOME/.vimrc に
+Smart Quotes を off にするには $HOME/vimfiles/vimrc または $HOME/.vim/vimrc に
 
 ```
 let g:Tex_SmartKeyQuote = 0
@@ -656,7 +656,7 @@ EIT などのマクロの展開を抑制したい場合は，
 
 SumatraPDF で forward search を使用するには LaTeX コマンドに -synctex=1 を追加して
 
-$HOME/\_vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照して設定します．
+$HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照して設定します．
 
 使い方は
 
@@ -736,7 +736,7 @@ SumatraPDF で inverse search を使用するには LaTeX コマンドに -synct
 
 - gvim.exe のフルパスが C:\vim\gvim.exe
 
-の場合 $HOME/\_vimrc の g:Tex_ViewRule_pdf を
+の場合 $HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を
 
 ***
 
@@ -758,7 +758,7 @@ SumatraPDF の inverse search は ダブルクリックで行います．
 
 evince で forward and inverse search を使用するには LaTeX コマンドに -synctex=1 を追加して
 
-$HOME/.vimrc の g:Tex_ViewRule_pdf を
+$HOME/.vim/vimrc の g:Tex_ViewRule_pdf を
 
 ***
 
