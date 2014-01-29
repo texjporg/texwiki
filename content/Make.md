@@ -419,6 +419,7 @@ Latexmk [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
   $bibtex = 'upbibtex %O %B';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -434,6 +435,7 @@ if ($^O eq 'MSWin32') {
 } else {
   $latex = 'uplatex %O -synctex=1 %S';
   $bibtex = 'upbibtex %O %B';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -462,6 +464,7 @@ latexmk -gg -pdfps hoge.tex
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
   $bibtex = 'upbibtex %O %B';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -477,6 +480,7 @@ if ($^O eq 'MSWin32') {
 } else {
   $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
   $bibtex = 'upbibtex %O %B';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $makeindex = 'mendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -506,8 +510,11 @@ latexmk -C
 
 #### リンク {#yb5452a3}
 
-- [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
+- [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
 - [【質問】日本語環境における文献処理について](http://qiita.com/mr_konn/items/3f523eb6dcf1d9837c92)
+- [https://gist.github.com/konn](https://gist.github.com/konn)
+    - [https://gist.github.com/konn/8234466](https://gist.github.com/konn/8234466)
+- [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
 - [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
