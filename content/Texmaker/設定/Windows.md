@@ -90,6 +90,8 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
 
 <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+
+<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $pdf=\[char\]0x22+'%.pdf'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"</ins><br>
 <!-- %%%texworks %.pdf%%%&br; -->
 <!-- %%%cmd /c start firefox -new-window %.pdf%%%&br; -->
 <!-- %%%cmd /c start chrome - -new-window !/%.pdf%%%&br; -->
@@ -153,9 +155,21 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
+## [TeXworks](/TeXworks/) との連携 {#o9f4b99c}
+
+### forward search {#a41fe59c}
+
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+```
+powershell -Command "& {$param=[char]0x22+'@:0:#.tex'+[char]0x22; $pdf=[char]0x22+'%.pdf'+[char]0x22; $page=[char]0x25+'{page+1}'; $o=[char]0x27+[char]0x25+'{output}'+[char]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"
+```
+
 ## [Adobe Reader](</Adobe Reader/>) との連携 {#u27e1718}
 
-### pdfupLaTeXA {#v915ab85}
+### forward search {#l5bfe340}
+
+#### pdfupLaTeXA {#v915ab85}
 
 pdfuplatexA-nonstopmode.bat を作成します．
 
@@ -185,7 +199,7 @@ pdfuplatexA-nonstopmode.bat % #.tex @
 
 を入力します．
 
-### pdfupLaTeX2A {#pf77769a}
+#### pdfupLaTeX2A {#pf77769a}
 
 pdfuplatex2A-nonstopmode.bat を作成します．
 
@@ -218,7 +232,7 @@ pdfuplatex2A-nonstopmode.bat % #.tex @
 
 を入力します．
 
-### pdfLaTeXA {#j7c9b397}
+#### pdfLaTeXA {#j7c9b397}
 
 pdflatexA-nonstopmode.bat を作成します．
 
@@ -248,7 +262,7 @@ pdflatexA-nonstopmode.bat % #.tex @
 
 を入力します．
 
-### LuaLaTeXA {#b2053ddc}
+#### LuaLaTeXA {#b2053ddc}
 
 lualatexA-nonstopmode.bat を作成します．
 
@@ -278,7 +292,7 @@ lualatexA-nonstopmode.bat % #.tex @
 
 を入力します．
 
-### LuaJITLaTeXA {#z4aadf43}
+#### LuaJITLaTeXA {#z4aadf43}
 
 luajitlatexA-nonstopmode.bat を作成します．
 
@@ -308,7 +322,7 @@ luajitlatexA-nonstopmode.bat % #.tex @
 
 を入力します．
 
-### XeLaTeXA {#md09c195}
+#### XeLaTeXA {#md09c195}
 
 xelatexA-nonstopmode.bat を作成します．
 
