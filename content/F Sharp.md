@@ -13,7 +13,7 @@ pukiwiki: "F Sharp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## F# 3.1, F# 3.0 {#ff18d823}
+## F# 3.1 {#ff18d823}
 
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
@@ -27,16 +27,14 @@ pukiwiki: "F Sharp"
 
 - [WebSharper](http://www.websharper.com/)
 
+### インストール {#s1f0cd41}
+
+[Use F# on Windows](http://fsharp.org/use/windows/) を参照．<br>
+
 ### F# 3.1 {#ke30a498}
 
 Windows 8.1, Windows 8, Windows 7 SP1 では Visual Studio 2013 をインストールすれば F# 3.1 が使用できます．<br>
-
-### F# 3.0 {#yb6a3a97}
-
-Windows 8, Windows 7 SP1 では [F# Tools for Visual Studio Express 2012 for Web](http://www.microsoft.com/en-us/download/details.aspx?id=34675) をインストールすれば F# 3.0 が使用できます．<br>
-
-- [F# 3.0 を Visual Studio なしでインストールする](http://blog.recyclebin.jp/archives/2889)
-- [Microsoft、「Visual Studio Express」でF#言語を利用可能にするアドインを公開](http://www.forest.impress.co.jp/docs/news/20120913_559448.html)
+[Visual F# Out of Band Release 3.1.1](http://www.microsoft.com/en-us/download/details.aspx?id=41654) から F# コンパイラを入手することもできます．<br>
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
 
