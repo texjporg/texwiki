@@ -243,9 +243,9 @@ $ popd
 - [libjpeg](http://www.ijg.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.ijg.org/files/jpegsrc.v9.tar.gz
-$ tar xvf jpegsrc.v9.tar.gz
-$ pushd jpeg-9
+$ curl -R -L -O http://www.ijg.org/files/jpegsrc.v9a.tar.gz
+$ tar xvf jpegsrc.v9a.tar.gz
+$ pushd jpeg-9a
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -759,14 +759,14 @@ $ popd
 - [curl](http://curl.haxx.se/) をインストールします．
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.34.0.tar.bz2
-$ tar xvf curl-7.34.0.tar.bz2
-$ pushd curl-7.34.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.35.0.tar.bz2
+$ tar xvf curl-7.35.0.tar.bz2
+$ pushd curl-7.35.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.34.0
+  curl version:     7.35.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
@@ -817,9 +817,9 @@ $ popd
 - [GLib](https://developer.gnome.org/glib/) をインストールします．
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.2.tar.xz
-$ tar xvf glib-2.39.2.tar.xz
-$ pushd glib-2.39.2
+$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.3.tar.xz
+$ tar xvf glib-2.39.3.tar.xz
+$ pushd glib-2.39.3
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
