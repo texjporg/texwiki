@@ -225,7 +225,7 @@ BibTex 8ビット
 Biber
 : &nbsp;
 
-: "/usr/texbin/biber" %
+: "/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars %
 
 Makeindex
 : &nbsp;
@@ -260,7 +260,7 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: "/usr/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+: "/usr/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 : "/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
