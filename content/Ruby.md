@@ -102,7 +102,7 @@ $ pacman -S ruby
 
 ### Ruby 版 {#bf356aaf}
 
-Evince 3.10.0, Ruby 2.0.0, ruby-dbus 0.10.0 で動作確認しています．<br>
+Evince 3.10.3, Ruby 2.1.0, ruby-dbus 0.10.0 で動作確認しています．<br>
 
 ```
 $ sudo gem install ruby-dbus
