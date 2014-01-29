@@ -56,7 +56,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtexu" &#x25;</ins> または <ins>"/usr/texbin/biber" &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>"/usr/texbin/upbibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtex" &#x25;</ins> または <ins>"/usr/texbin/bibtexu" &#x25;</ins> または <ins>"/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/mendex" %.idx</ins> または <ins>"/usr/texbin/makeindex" %.idx</ins> または <ins>"/usr/texbin/texindy" %.idx</ins><br>
 
