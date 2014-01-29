@@ -160,6 +160,8 @@ TeX インストーラ 3 で，dviout をインストールすることもでき
 
 - [64bit dviout](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1171)
 
+Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/01/29以降)。
+
 #### 32-bit dviout {#h6957949}
 
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
