@@ -75,6 +75,8 @@ SVN<br>
 
 ***
 
+詳細な設定をする場合は高度なオプションの表示を ON にします．<br>
+
 ***
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
