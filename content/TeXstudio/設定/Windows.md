@@ -384,9 +384,21 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
+## [TeXworks](/TeXworks/) との連携 {#nbf2fe80}
+
+### forward search {#rd52a42f}
+
+forward search は 外部PDFビューア に以下のように設定します．<br>
+
+```
+synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=%%{page+1} '%%{output}'"
+```
+
 ## [Adobe Reader](</Adobe Reader/>) との連携 {#b8db9f79}
 
-### pdfupLaTeXA {#v47e9095}
+### forward search {#qc0a4b5f}
+
+#### pdfupLaTeXA {#v47e9095}
 
 pdfuplatexA-nonstopmode.bat を作成します．
 
@@ -416,7 +428,7 @@ pdfuplatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-### pdfupLaTeX2A {#u3863aaf}
+#### pdfupLaTeX2A {#u3863aaf}
 
 pdfuplatex2A-nonstopmode.bat を作成します．
 
@@ -449,7 +461,7 @@ pdfuplatex2A-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-### pdfLaTeXA {#s8c5a7ef}
+#### pdfLaTeXA {#s8c5a7ef}
 
 pdflatexA-nonstopmode.bat を作成します．
 
@@ -479,7 +491,7 @@ pdflatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-### LuaLaTeXA {#q18a41f2}
+#### LuaLaTeXA {#q18a41f2}
 
 lualatexA-nonstopmode.bat を作成します．
 
@@ -509,7 +521,7 @@ lualatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-### LuaJITLaTeXA {#ie839257}
+#### LuaJITLaTeXA {#ie839257}
 
 luajitlatexA-nonstopmode.bat を作成します．
 
@@ -539,7 +551,7 @@ luajitlatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-### XeLaTeXA {#h2489244}
+#### XeLaTeXA {#h2489244}
 
 xelatexA-nonstopmode.bat を作成します．
 
