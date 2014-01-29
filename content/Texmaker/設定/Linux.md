@@ -76,6 +76,16 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 ***
 
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'xdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.ps'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
 
@@ -83,7 +93,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>evince %.pdf</ins><br>
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.pdf'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
 
 <ins>fwdevince %.pdf @ #.tex</ins><br>
 
@@ -98,10 +108,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 <ins>qpdfview --unique %.pdf</ins><br>
 
 <ins>texmaker2qpdfview %.pdf #.tex @</ins><br>
-
-<ins>pdfviewer %.pdf</ins><br>
-
-<ins>texmaker2pdfviewer %.pdf @ #.tex</ins><br>
 
 <ins>texworks %.pdf</ins><br>
 
@@ -259,44 +265,3 @@ Source editor:
 : texmaker "%1" -line %2
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
-
-## PdfViewer との連携 {#d2a108e6}
-
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
-
-### forward search {#t982a3a5}
-
-***
-
-- texmaker2pdfviewer
-
-***
-
-```
-#!/bin/sh
-pdfviewer "file:$1#src:$2 $3"
-```
-
-***
-
-```
-$ chmod +x texmaker2pdfviewer
-$ sudo cp -p texmaker2pdfviewer /usr/local/bin
-```
-
-forward search は PDFビューアに
-
-```
-texmaker2pdfviewer %.pdf @ #.tex
-```
-
-です．
-
-### inverse search {#xc8511ae}
-
-\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
-
-Editor:
-: texmaker "%f" -line %l
-
-Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
