@@ -84,7 +84,7 @@ ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を
 
 [LuaTeX-jaの使い方#手動でインストールする場合](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h3-.E6.89.8B.E5.8B.95.E3.81.A7.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.81.99.E3.82.8B.E5.A0.B4.E5.90.88) を参照．<br>
 
-現状では pLaTeX と比べるとタイプセットに時間がかかります．<br>
+現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．<br>
 
 - [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
 - [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
@@ -93,7 +93,7 @@ mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理�
 LuaJITTeX を使用すると 1.3 倍ぐらい早くなることがあるようです． → [luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)<br>
 
 使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
-jarticle や jsarticle などの pTeX の使用を前提としたものは使用できません．<br>
+(u)jarticle や jsarticle などの (e-)(u)pTeX の使用を前提としたものは使用できません．<br>
 
 使用可能な文字コードは UTF-8 です．<br>
 Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
@@ -106,7 +106,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 ### [OTF](/OTF/) {#g94672b9}
 
-OTF パッケージは使用できません．<br>
+OTF パッケージ (japanese-otf, japanese-otf-uptex) は使用できません．<br>
 LuaTeX-ja では luatexja-otf.sty を使用します．<br>
 
 ```
