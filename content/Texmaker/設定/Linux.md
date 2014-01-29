@@ -50,7 +50,7 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
 
