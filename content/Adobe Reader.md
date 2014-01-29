@@ -46,10 +46,10 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ## 不具合 {#r92dd454}
 
-### Windows 版 Adobe Reader XI または Adobe Reader X で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
+### Windows 版 Adobe Reader XI, Adobe Reader X で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
 
-- [Adobe Reader XI(11)で検索ボックスに日本語入力できない件](http://www.pg1x.com/2012/12/29/adobe-reader-xi11%E3%81%A7%E6%A4%9C%E7%B4%A2%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%81%AB%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E4%BB%B6/)
-- [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://kb2.adobe.com/jp/cps/908/cpsid_90899.html)
+- [日本語入力ができない。【Adobe Reader X・XI 】  | ゆりかご倶楽部Ｑ＆Ａ：よくある質問と回答](http://www.yurikago.net/qa/cate3-38.html)
+- [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://helpx.adobe.com/jp/acrobat/kb/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
 ### Windows 8.1, 8, 7 64-bit で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
