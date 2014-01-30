@@ -347,36 +347,6 @@ Source editor:
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
-## PdfViewer との連携 {#p9f6aff5}
-
-### forward search {#iff757fb}
-
-\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
-
-#### ForwardPDF {#c86416d5}
-
-\[新規...\] をクリックして PdfViewer を入力します．
-
-選択:
-: PdfViewer
-
-コマンド(<ins>M</ins>):
-: pdfviewer
-
-オプション:
-: '%target'
-
-Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
-
-### inverse search {#t261af4f}
-
-\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
-
-Editor:
-: kile --line %l "%f"
-
-Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
-
 ## 関連リンク {#o6aee049}
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
