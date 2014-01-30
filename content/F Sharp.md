@@ -13,7 +13,7 @@ pukiwiki: "F Sharp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## F# 3.1 {#ff18d823}
+## F# 3.1.1 {#ff18d823}
 
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
