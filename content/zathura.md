@@ -102,6 +102,8 @@ zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
 
 ### コマンドラインオプション {#u4f91695}
 
+- [https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop](https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop)
+
 ```
 $ zathura --help
 Usage:
@@ -124,6 +126,7 @@ Application Options:
   -x, --synctex-editor-command=cmd     Synctex editor (forwarded to the synctex command)
   --synctex-forward=position           Move to given synctex position
   --synctex-pid=pid                    Highlight given position in the given process
+  --mode=mode                          Start in a non-default mode
 ```
 
 <!-- $ zathura - -version -->
