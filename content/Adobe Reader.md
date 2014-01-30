@@ -190,6 +190,8 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 
 ### [pdfopen and pdfclose](http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/) {#tf67f0e7}
 
+### [Man page acroread](http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread) {#rb9a599a}
+
 ## SyncTeX {#s533a23f}
 
 ### forward search {#s30ae8a0}
