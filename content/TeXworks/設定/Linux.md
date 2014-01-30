@@ -480,17 +480,6 @@ Source editor:
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
-## PdfViewer との連携 {#v93c1198}
-
-### inverse search {#taa10f7d}
-
-\[Tools\]-\[Settings\]-\[Configure PdfViewer...\]
-
-Editor:
-: texworks --position=%l "%f"
-
-Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
-
 ## gnuplot との連携 {#pe8db1a3}
 
 - [LaTeX - おもこん - Yahoo!ブログ](http://blogs.yahoo.co.jp/jeaou/folder/1202527.html)
