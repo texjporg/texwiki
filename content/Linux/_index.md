@@ -230,7 +230,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview, PdfViewer などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
