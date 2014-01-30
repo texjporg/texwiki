@@ -321,7 +321,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
         ("okular --unique %r.pdf &" "%r.pdf")
         ("zathura -s -x \"emacsclient --no-wait +%%{line} %%{input}\" %r.pdf &" "%r.pdf")
         ("qpdfview --unique %r.pdf &" "%r.pdf")
-        ("pdfviewer %r.pdf &" "%r.pdf")
         ("texworks %r.pdf &" "%r.pdf")
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
