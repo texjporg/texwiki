@@ -90,8 +90,6 @@ V<ins>i</ins>ew PDF File
 
 : qpdfview --unique "%e.pdf"
 
-: pdfviewer "%e.pdf"
-
 : texworks "%e.pdf"
 
 : mupdf "%e.pdf"
