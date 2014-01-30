@@ -121,7 +121,6 @@ make latexpdfja
 - [Sphinx と W32TeX で PDF 出力](http://d.hatena.ne.jp/hokorobi/20120108/1326023180)
 - [Sphinx で 日本語 pdf を出力する(Mac OS X Lion)](http://d.hatena.ne.jp/shiumachi/20120107/1325930802)
 - [(11日目) Sphinx から PDF を生成してみよう (LaTeX 編)](http://d.hatena.ne.jp/tk0miya/20111211), [(11日目) Sphinx から PDF を生成してみよう (LaTeX 編) - Hack like a rolling stone](http://d.hatena.ne.jp/tk0miya/touch/20111211)
-- [LatexでPDF出力してみる](http://d.hatena.ne.jp/liz5th/20110928#1317215264)
 - [ubuntuでsphinxのpdf出力をする環境を作る2](http://d.hatena.ne.jp/bols-blue/20110821/1313925176)
 - [ubuntuでsphinxのpdf出力をする環境を作る](http://d.hatena.ne.jp/bols-blue/20110820/1313832820)
 - [SphinxとTeXとPDFと日本語](http://d.hatena.ne.jp/s_yano/20100921/1285048025)
