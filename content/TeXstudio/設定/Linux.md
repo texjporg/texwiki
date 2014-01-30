@@ -184,8 +184,6 @@ LuaLaTeX
 
 : qpdfview --unique %.pdf
 
-: pdfviewer %.pdf
-
 DviPs
 : &nbsp;
 
