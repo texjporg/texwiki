@@ -208,12 +208,6 @@ PSビューア
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "pdfopen --rxi --file '&#x25;&#x25;{output}' --page &#x25;&#x25;{page+1}"
-
-: dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "'C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a 'page=&#x25;&#x25;{page+1}' '&#x25;&#x25;{output}'"
-
-: dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocOpen("?am.pdf")\]|dde:///"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe":acroviewR11/control/\[DocClose("?am.pdf")\]|synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "'C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a 'page=&#x25;&#x25;{page+1}' '&#x25;&#x25;{output}'"
-
 DviPs
 : &nbsp;
 
