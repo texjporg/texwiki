@@ -41,8 +41,10 @@ pukiwiki: "Asymptote"
 
 本家や[CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/)に各種バイナリがある。
 
-ソースからコンパイルするのも簡単。
-Mac OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。
+#### ビルド {#e0083d41}
+
+ソースからコンパイルするのも簡単。<br>
+OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。<br>
 Asymptoteソースを展開したディレクトリに
 [gc-7.1.tar.gz](http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc-7.1.tar.gz)
 を展開せずに置き，
@@ -57,7 +59,7 @@ make install
 
 でできる。
 
-Mac OS X 10.6 (Snow Leopard) では次のようなエラーになる。
+OS X 10.6 (Snow Leopard) では次のようなエラーになる。
 
 ```
 In file included from mach_dep.c:163:
@@ -73,10 +75,10 @@ make
 
 し，一つ上に上がって make し直せばよい。
 
-### Mac OS X でのプレビュー {#dc357da5}
+### OS X でのプレビュー {#dc357da5}
 
-標準ではgv（あるいはGSview）を使ったPostScriptプレビューになる。
-これはMacでも（gvをインストールしておけば）可能だが，X11を立ち上げておかないといけない。
+標準ではgv（あるいはGSview）を使ったPostScriptプレビューになる。<br>
+これはMacでも（gvをインストールしておけば）可能だが，X11を立ち上げておかないといけない。<br>
 より簡単には asy -f pdf で起動するか，あるいは ~/.asy/config.asy に
 
 ```
@@ -84,16 +86,26 @@ import settings;
 outformat="pdf"; 
 ```
 
-と書いておけばPDFプレビューできる。
-Leopardのプレビュー機能は，再読み込みにやや難があるが，非アクティブ→アクティブのタイミングでちゃんと再読み込みしてくれる。
+と書いておけばPDFプレビューできる。<br>
+Leopardのプレビュー機能は，再読み込みにやや難があるが，非アクティブ→アクティブのタイミングでちゃんと再読み込みしてくれる。<br>
 
 ### 使い方 {#mfe06d22}
 
 asy または asy -f pdf で起動する。help と入力すれば詳しいマニュアルが現れる。
 
-### 日本語対応 {#q20b2da8}
+### 日本語対応 (OS X) {#q20b2da8}
 
 /.asy/config.asy を次のようにすれば日本語が通るようである（要日本語対応Ghostscript）。
+
+#### upLaTeX の場合 {#m906ff30}
+
+```
+import settings;
+tex="latex";
+texcommand="uplatex";
+```
+
+#### pLaTeX の場合 {#mce0011a}
 
 ```
 import settings;
@@ -101,14 +113,19 @@ tex="latex";
 texcommand="platex";
 ```
 
-platex のデフォルトがUTF-8になっていない場合は "platex-utf8" とする。こういうコマンドがなければエイリアスかバッチファイルで作る。"platex -kanji=utf8" のようにはできないようだ。
+platex のデフォルトがUTF-8になっていない場合は "platex-utf8" とする。<br>
+こういうコマンドがなければエイリアスかバッチファイルで作る。<br>
+"platex -kanji=utf8" のようにはできないようだ。<br>
 
-### 日本語対応（Windows） {#f6f53eb8}
+### 日本語対応 (Windows) {#f6f53eb8}
 
 私の簡単なテストでは texdvicommand="platex --kanji=utf8"; のように
-オプションを含めることはできませんでした。ただし Windows 用バイナリです。
-全体がコマンド名と見なされるようです。しかし shift jis でも問題なく
-通るようです。危ない "表" なども大丈夫でした。テストした config.asy は
+オプションを含めることはできませんでした。<br>
+ただし Windows 用バイナリです。<br>
+全体がコマンド名と見なされるようです。<br>
+しかし shift jis でも問題なく通るようです。<br>
+危ない "表" なども大丈夫でした。<br>
+テストした config.asy は
 
 ```
 import settings;
@@ -122,9 +139,11 @@ psviewer="c:/ghostgum/gsview/gsview32.exe";
 ```
 
 うまくいったのは、偶然うまくゆく例を使ったためで、一般には Shift_JIS
-エンコーディングの場合、0x5c を含む文字はだめです。 W32TeX の
+エンコーディングの場合、0x5c を含む文字はだめです。<br>
+W32TeX の
 platex は Shift_JIS がデフォルトなので、texcommand="platex"; などと
-することはできません。 platex --kanji=utf8 ... と同じ役割をする
+することはできません。<br>
+platex --kanji=utf8 ... と同じ役割をする
 コマンド platex-utf8.exe を使って以下のように設定し、
 Asymptote で日本語を使うには UTF-8 を使ってください:
 
@@ -134,15 +153,16 @@ texcommand="platex-utf8";
 texdvicommand="platex-utf8";
 ```
 
-おそらく、 EUC でも ok でしょう。 EUC を使う場合は次のようにしておきます:
+おそらく、 EUC でも ok でしょう。<br>
+EUC を使う場合は次のようにしておきます:
 
 ```
 texcommand="platex-euc";
 texdvicommand="platex-euc";
 ```
 
-最新のものでは、texdvicommand なる変数は無くなっているかも知れません。
-その場合は、単に関連する行を削除するだけで ok です。
+最新のものでは、texdvicommand なる変数は無くなっているかも知れません。<br>
+その場合は、単に関連する行を削除するだけで ok です。<br>
 
 (本文にコメントを書いてすみません。適当に移動してください。 kakuto)
 
