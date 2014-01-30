@@ -77,11 +77,11 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
 
 <ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'xdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
 
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
 <ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.ps'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
