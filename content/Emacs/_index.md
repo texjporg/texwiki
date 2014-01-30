@@ -45,7 +45,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 [Releases](http://www.gnu.org/software/emacs/#Releases) を参照．<br>
 
-- [WHAT’S NEW IN EMACS 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/)
+- [WHAT’S NEW IN EMACS 24.4](http://www.masteringemacs.org/articles/2013/12/29/whats-new-in-emacs-24-4/)
 
 #### ChangeLog {#eba94bf5}
 
