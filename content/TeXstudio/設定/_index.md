@@ -22,7 +22,7 @@ pukiwiki: "TeXstudio/設定"
 
 ***
 
-<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXStudio</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudio</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　　　　高度なオプションを有効化しました。<br>
 　　　　　これで詳細にTXSを設定することが可能です。<br>
