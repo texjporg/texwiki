@@ -21,6 +21,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 - [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
+- [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 
 ### 派生版 {#w5708e1c}
 
