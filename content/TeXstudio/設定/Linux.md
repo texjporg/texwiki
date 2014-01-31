@@ -303,3 +303,98 @@ SVNADMIN
 : svnadmin
 
 ***
+
+## [Evince](/Evince/) との連携 {#y63d1279}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#c5c506ca}
+
+Evince/fwdevince の fwdevince を使用します．<br>
+
+forward search は外部PDFビューアに
+
+```
+fwdevince "?am.pdf" @ "?c:am.tex"
+```
+
+です．
+
+## Okular との連携 {#c6d921dc}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#x57d864f}
+
+forward search は外部PDFビューアに
+
+```
+okular --unique "file:?am.pdf#src:@ ?c:am.tex"
+```
+
+です．
+
+### inverse search {#xd0f2973}
+
+\[Settings\]-\[Configure Okular...\]-\[Editor\] の項目から Custom Text Editor を選択します．
+
+Editor:
+: Custom Text Editor
+
+Command:
+: texstudio "%f" -line %l
+
+Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## zathura との連携 {#i139e4bb}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#gc97fa6f}
+
+forward search はユーザーコマンドに
+
+```
+zathura --synctex-forward "@:0:?c:am.tex" "?am.pdf"
+```
+
+を設定します．<br>
+
+外部PDFビューアに zathura を設定して zathura で PDF ファイルを表示したあとでユーザーコマンドを実行します．<br>
+
+### inverse search {#hd7f6d9d}
+
+inverse search は外部PDFビューアに
+
+```
+zathura -s -x "texstudio '%%{input}' -line %%{line}" "?am.pdf"
+```
+
+を設定します．
+
+高度なオプションの表示を ON にして，ビルドオプションのすでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しないを ON にします．<br>
+
+Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## qpdfview との連携 {#j7ca7059}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#d9853641}
+
+forward search は外部PDFビューアに
+
+```
+qpdfview --unique "?am.pdf#src:?c:am.tex:@:0"
+```
+
+です．
+
+### inverse search {#f31d5e80}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+Source editor:
+: texstudio "%1" -line %2
+
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
