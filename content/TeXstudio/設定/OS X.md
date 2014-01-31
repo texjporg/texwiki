@@ -247,6 +247,8 @@ Metapost
 
 : "/usr/texbin/upmpost" -interaction=nonstopmode %
 
+: "/usr/texbin/mpost" -interaction=nonstopmode %
+
 Asymptote
 : &nbsp;
 
