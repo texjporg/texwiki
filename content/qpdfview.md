@@ -74,10 +74,11 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 
 ***
 
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
 　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
 　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
 　　　　Track recently used:　　　　　　　　　☐<br>
+　　　　Keep recently closed:　　　　　　　　 ☐<br>
 　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
@@ -117,10 +118,11 @@ texworks --position=%2 "%1"
 
 ***
 
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
 　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
 　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
 　　　　Track recently used:　　　　　　　　　☐<br>
+　　　　Keep recently closed:　　　　　　　　 ☐<br>
 　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
