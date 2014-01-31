@@ -97,6 +97,10 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
+<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+
+<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+
 <ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
 
 <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
@@ -118,6 +122,24 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 ## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward and inverse search {#xf457e6c}
+
+#### SumatraPDF を前面に表示したい場合 {#r4dc6964}
+
+forward and inverse search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+■ 64-bit Windows の場合<br>
+
+```
+powershell -Command "& {$line=[char]0x22+@+[char]0x22;$tex=[char]0x22+'#.tex'+[char]0x22;$pdf=[char]0x22+'%.pdf'+[char]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=[char]0x25+'f';$l=[char]0x25+'l';$inverse_search=[char]0x22+[char]0x5c+[char]0x22+$texmaker+[char]0x5c+[char]0x22+' '+[char]0x5c+[char]0x22+$f+[char]0x5c+[char]0x22+' -line '+$l+[char]0x22;$sumatrapdf=[char]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+[char]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+```
+
+■ 32-bit Windows の場合<br>
+
+```
+powershell -Command "& {$line=[char]0x22+@+[char]0x22;$tex=[char]0x22+'#.tex'+[char]0x22;$pdf=[char]0x22+'%.pdf'+[char]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=[char]0x25+'f';$l=[char]0x25+'l';$inverse_search=[char]0x22+[char]0x5c+[char]0x22+$texmaker+[char]0x5c+[char]0x22+' '+[char]0x5c+[char]0x22+$f+[char]0x5c+[char]0x22+' -line '+$l+[char]0x22;$sumatrapdf=[char]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+[char]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+```
 
 ### forward search {#y08c577b}
 
