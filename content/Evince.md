@@ -85,21 +85,6 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 - [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
 - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html)
 
-## SyncTeX {#w699c2c2}
-
-- [Evince Document Viewer › SyncTex](https://help.gnome.org/users/evince/stable/index.html.en#synctex)
-    - [Evince Document Viewer › SyncTex » Supported Editors](https://help.gnome.org/users/evince/stable/synctex-editors.html.en)
-
-### forward and inverse search {#ga060086}
-
-fwdevince, evince_forward_search を使用して forward search ができます．<br>
-invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．<br>
-inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
-
-#### fwdevince <a id="fwdevince"></a> {#ie18c015}
-
-Evince/fwdevince を参照．
-
 ## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
 
 フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．<br>
@@ -153,3 +138,44 @@ ipaexm.ttf: "IPAex明朝" "Regular"
 $ fc-match GothicBBB
 ipaexg.ttf: "IPAexゴシック" "Regular"
 ```
+
+## 使い方 {#jfee0cca}
+
+### コマンドラインオプション {#bc93383b}
+
+```
+$ evince --help
+用法:
+  evince [オプション...] [ファイル…] GNOME ドキュメントビューアー
+
+ヘルプのオプション:
+  -h, --help                      ヘルプのオプションを表示する
+  --help-all                      ヘルプのオプションをすべて表示する
+  --help-sm-client                Show session management options
+  --help-gtk                      GTK+ のオプションを表示する
+
+アプリケーションのオプション:
+  -p, --page-label=PAGE           表示するドキュメントのページラベル
+  -i, --page-index=NUMBER         表示するドキュメントのページ番号
+  -n, --named-dest=DEST           表示する Named destination
+  -f, --fullscreen                フルスクリーンモードで起動する
+  -s, --presentation              プレゼンテーションモードで起動する
+  -w, --preview                   プレビューアーで起動する
+  -l, --find=STRING               ドキュメントの中から単語や語句を検索する
+  --display=DISPLAY               使用するXのディスプレイを指定する
+```
+
+## SyncTeX {#w699c2c2}
+
+- [Evince Document Viewer › SyncTex](https://help.gnome.org/users/evince/stable/index.html.en#synctex)
+    - [Evince Document Viewer › SyncTex » Supported Editors](https://help.gnome.org/users/evince/stable/synctex-editors.html.en)
+
+### forward and inverse search {#ga060086}
+
+fwdevince, evince_forward_search を使用して forward search ができます．<br>
+invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．<br>
+inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
+
+#### fwdevince <a id="fwdevince"></a> {#ie18c015}
+
+Evince/fwdevince を参照．
