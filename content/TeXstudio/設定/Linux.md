@@ -173,16 +173,40 @@ LuaLaTeX
 
 : luajitlatex -synctex=1 -interaction=nonstopmode %.tex
 
+DVIビューア
+: &nbsp;
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "okular --unique --page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "xdvi -nofork -unique -watchfile 1 +&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "pxdvi -nofork -unique -watchfile 1 +&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+PSビューア
+: &nbsp;
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "okular --unique --page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
 外部PDFビューア
 : &nbsp;
 
-: evince %.pdf
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: okular --unique %.pdf
+: fwdevince "?am.pdf" @ "?c:am.tex"
 
-: zathura %.pdf
+: okular --unique "file:?am.pdf#src:@ ?c:am.tex"
 
-: qpdfview --unique %.pdf
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "zathura -P &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
+
+: zathura -s -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" "?am.pdf"
+
+: qpdfview --unique "?am.pdf#src:?c:am.tex:@:0"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
 DviPs
 : &nbsp;
@@ -242,6 +266,8 @@ Metapost
 : &nbsp;
 
 : upmpost -interaction=nonstopmode %
+
+: mpost -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
