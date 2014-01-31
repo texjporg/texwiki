@@ -88,7 +88,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
 
-<span style="color:#888888;background-color:#EEEEEE;"><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex&#x7c;upbibtex %&#x7c;uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex&#x7c;uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins></span><br>
+<span style="color:#888888;background-color:#EEEEEE;"><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex&#x7c;dvipdfmx %.dvi&#x7c;"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins></span><br>
 
 <span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
 
