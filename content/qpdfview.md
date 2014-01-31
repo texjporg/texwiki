@@ -91,6 +91,23 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 
 ***
 
+## 使い方 {#n3df728b}
+
+### コマンドラインオプション {#f3a7bfad}
+
+```
+$ qpdfview --help
+Usage: qpdfview [options] [--] [file[#page]] [file[#src:name:line:column]] ...
+
+Available options:
+  --help                      Show this information
+  --quiet                     Suppress warning messages when opening files
+  --search text               Search for text in the current tab
+  --unique                    Open files as tabs in unique window
+  --unique --instance name    Open files as tabs in named instance
+  --unique --choose-instance  Open files as tabs after choosing an instance name
+```
+
 ## SyncTeX {#pd09d0e8}
 
 ### forward search {#edba988b}
