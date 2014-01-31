@@ -194,9 +194,9 @@ PSビューア
 外部PDFビューア
 : &nbsp;
 
-: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
 
-: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files\TeXstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
 
 : dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
 
@@ -314,23 +314,29 @@ SVNADMIN
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
-### forward search {#xd4d4cea}
+### forward and inverse search {#m8df4b15}
 
-#### SumatraPDF を前面に表示したい場合 {#fb37c098}
+#### SumatraPDF を前面に表示したい場合 {#ofb25574}
 
-forward search は 外部PDFビューア に以下のように設定します．<br>
+forward and inverse search は 外部PDFビューア に以下のように設定します．<br>
 
 ■ 64-bit Windows の場合 (コマンドラインオプションを使用する場合)
 
 ```
-"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
 ```
 
 ■ 32-bit Windows の場合 (コマンドラインオプションを使用する場合)
 
 ```
-"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance "?am.pdf" -forward-search "?c:am.tex" @
+"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files\TeXstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
 ```
+
+### forward search {#xd4d4cea}
+
+#### SumatraPDF を前面に表示したい場合 {#fb37c098}
+
+forward search は 外部PDFビューア に以下のように設定します．<br>
 
 ■ 64-bit Windows の場合 (DDE を使用する場合)
 
