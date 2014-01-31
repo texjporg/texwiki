@@ -76,6 +76,37 @@ KDE
 
 - [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)
 
+## 使い方 {#jf24f8bb}
+
+### コマンドラインオプション {#md2d6a7f}
+
+```
+$ okular --help
+使用法: okular [Qt-オプション] [KDE-オプション] [オプション] [URL] 
+
+Okular, 汎用文書ビューア
+
+一般的なオプション:
+  --help                    オプションに関するヘルプを表示
+  --help-qt                 Qt に特有なオプションを表示
+  --help-kde                KDE に特有なオプションを表示
+  --help-all                すべてのオプションを表示
+  --author                  著作者情報
+  -v, --version             バージョン情報を表示
+  --license                 ライセンス情報を表示
+  --                        オプションの最後
+
+オプション:
+  -p, --page <number>       表示する文書のページ
+  --presentation            文書をプレゼンテーションモードで開く
+  --print                   Start with print dialog
+  --unique                  1 つのインスタンスのみ許可
+  --noraise                 Not raise window
+
+引数:
+  URL                       開く文書。標準入力から読む場合は “-” を指定。
+```
+
 ## SyncTeX {#ya8f4753}
 
 ### forward search {#i560a338}
