@@ -126,7 +126,7 @@ Done installing documentation for ruby-dbus after 1 seconds
 
 require 'dbus'
 
-pdf = File.expand_path(ARGV[0])
+pdf = File.expand_path(ARGV[0]).gsub(/ /, '%20')
 line = ARGV[1].to_i
 tex = File.expand_path(ARGV[2])
 bus = DBus::SessionBus.instance
