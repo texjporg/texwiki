@@ -169,7 +169,7 @@ Vim は，チャリティウェアです．<br>
 
 ### forward search {#j2d22939}
 
-SumatraPDF v1.9.4622 以上の場合はコマンドラインから forward search が可能です．
+SumatraPDF はコマンドラインから forward search が可能です．
 
 詳しくは，[tex.vim](#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
 
@@ -192,6 +192,8 @@ C:\vim\gvim.exe -n --remote-silent +%l "%f"
 ### forward and inverse search {#p2367ca6}
 
 [tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
+
+- [http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html](http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html)
 
 ## 使い方 {#j3d4339e}
 
