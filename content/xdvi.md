@@ -46,7 +46,13 @@ xdvik (xdvi-motif) は TeX Live/Vine Linux に含まれています．<br>
 ### 使い方 {#m5b0a3d2}
 
 ```
-$ xdvi -nofork -unique -watchfile 1 hoge.dvi &
+$ xdvi -nofork -unique -watchfile 1 'hoge.dvi' &
+```
+
+または
+
+```
+$ xdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
 
 ### SyncTeX {#g4e4f193}
@@ -56,7 +62,13 @@ $ xdvi -nofork -unique -watchfile 1 hoge.dvi &
 TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
 
 ```
-$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'xdvi -nofork -unique -watchfile 1 +%{page+1} %{output}' &
+$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'xdvi -nofork -unique -watchfile 1 +%{page+1} "%{output}"' &
+```
+
+または
+
+```
+$ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "xdvi -nofork -unique -watchfile 1 +%{page+1} '%{output}'" &
 ```
 
 のように実行します．<br>
@@ -90,7 +102,13 @@ pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexliv
 ### 使い方 {#o73d19d8}
 
 ```
-$ pxdvi -nofork -unique -watchfile 1 hoge.dvi &
+$ pxdvi -nofork -unique -watchfile 1 'hoge.dvi' &
+```
+
+または
+
+```
+$ pxdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
 
 ### SyncTeX {#i441324e}
@@ -100,7 +118,13 @@ $ pxdvi -nofork -unique -watchfile 1 hoge.dvi &
 TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
 
 ```
-$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'pxdvi -nofork -unique -watchfile 1 +%{page+1} %{output}' &
+$ synctex view -i '30:0:hoge.tex' -o 'hoge.dvi' -x 'pxdvi -nofork -unique -watchfile 1 +%{page+1} "%{output}"' &
+```
+
+または
+
+```
+$ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "pxdvi -nofork -unique -watchfile 1 +%{page+1} '%{output}'" &
 ```
 
 のように実行します．<br>
