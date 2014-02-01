@@ -171,20 +171,20 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 ### inverse search {#b8f7bf28}
 
-#### Vim-LaTeX 以外の場合 {#b099e4df}
+#### tex.vim, quickrun の場合 {#b099e4df}
 
-Vim-LaTeX 以外の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
+tex.vim, quickrun の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
 ```
 
 です．<br>
-Vim の設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
+設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
 #### Vim-LaTeX の場合 {#m67596d3}
 
-[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，通常の設定とは異なる記述が必要です．<br>
+[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，tex.vim, quickrun の設定とは異なる記述が必要です．<br>
 
 Vim-LaTeX の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
@@ -193,7 +193,7 @@ Vim-LaTeX の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプシ�
 ```
 
 です．<br>
-Vim-LaTeX の設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
+設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
@@ -209,6 +209,7 @@ Vim-LaTeX の設定ファイルから SumatraPDF の -inverse-search コマン�
 
 - [MBA-HACK: vim](http://mba-hack.blogspot.jp/search/label/vim)
     - [Vimの使い方まとめ](http://mba-hack.blogspot.jp/2013/02/vim.html)
+- [http://archiva.jp/web/tool/vim_basic.html](http://archiva.jp/web/tool/vim_basic.html)
 
 ### 折りたたみ {#ff31000b}
 
