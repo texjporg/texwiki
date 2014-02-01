@@ -122,15 +122,12 @@ Vim は，チャリティウェアです．<br>
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+- LaTeX Box
 - [Vim-LaTeX](/Vim-LaTeX/)
 - Automatic LaTeX Plugin for Vim (ATP)
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
-- [LaTeX Box](http://www.vim.org/scripts/script.php?script_id=3109)
-    - [LaTeX-Box-Team/LaTeX-Box - GitHub](https://github.com/LaTeX-Box-Team/LaTeX-Box)
-    - [vim-scripts/LaTeX-Box - GitHub](https://github.com/vim-scripts/LaTeX-Box)
-    - [Latexmkとvim, vim-boxの設定](http://d.hatena.ne.jp/wal-neko/20101119/1290158352)
 - [TeX 9 : A semi-automatic LaTeX ftplugin with lots of firepower!](http://www.vim.org/scripts/script.php?script_id=3508)
     - [vim-scripts/TeX-9 · GitHub](https://github.com/vim-scripts/TeX-9)
 - [auctex.vim](http://www.vim.org/scripts/script.php?script_id=162)
@@ -175,15 +172,19 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 ### inverse search {#b8f7bf28}
 
+#### Vim-LaTeX 以外の場合 {#b099e4df}
+
 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
-C:\vim\gvim.exe -n --remote-silent +%l "%f"
+"C:\vim\gvim.exe" -n --remote-silent +%l "%f"
 ```
 
 です．
 
-[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，これとは異なる記述が必要です．
+#### Vim-LaTeX の場合 {#m67596d3}
+
+[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，通常の設定とは異なる記述が必要です．
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
