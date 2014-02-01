@@ -169,7 +169,7 @@ let g:Tex_BibtexFlavor = 'upbibtex'
 let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
 "let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
 "let g:Tex_MakeIndexFlavor = 'texindy $*.idx'
-let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n -c \":RemoteOpen +\%l \%f\""'
 "let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
@@ -732,16 +732,13 @@ function! Tex_ForwardSearchLaTeX()
 
 ## [SumatraPDF](/SumatraPDF/) との連携 (inverse search) {#nefa91ff}
 
-SumatraPDF で inverse search を使用するには LaTeX コマンドに -synctex=1 を追加して
-
-- gvim.exe のフルパスが C:\vim\gvim.exe
-
-の場合 $HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を
+SumatraPDF で inverse search を使用するには LaTeX コマンドに -synctex=1 を追加します．<br>
+gvim.exe が :echo $VIM で表示されるディレクトリに存在する場合 $HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を
 
 ***
 
 ```
-let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "C:\vim\gvim.exe -n -c \":RemoteOpen +\%l \%f\""'
+let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n -c \":RemoteOpen +\%l \%f\""'
 ```
 
 ***
