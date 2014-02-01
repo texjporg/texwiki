@@ -206,28 +206,26 @@ function! PdfupLaTeX(type)
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdfuplatex'
     if has('win32') || has('win64')
-      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
-      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal"' . ' "' . masterTeXFile . '"'
       let g:bibtex = 'upbibtex -sjis-terminal'
       let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
-        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvipdfm
+        let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . ptex2pdf
       else
-        let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+        let execString = 'cd /d ' . masterDir . ' && ' . ptex2pdf
       endif
     else
-      let latex = 'uplatex -synctex=1' . ' ' . masterTeXFile
-      let dvipdfm = 'dvipdfmx' . ' ' . masterBaseName
+      let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1"' . ' "' . masterTeXFile . '"'
       let g:bibtex = 'upbibtex'
       let g:makeindex = 'mendex'
-      let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvipdfm
+      let execString = 'cd ' . masterDir . ' && ' . ptex2pdf
     endif
   elseif a:type == 'pdfuplatex2'
     if has('win32') || has('win64')
-      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' ' . masterTeXFile
-      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
-      let ps2pdf = 'ps2pdf.bat' . ' ' . masterBaseName . '.ps'
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
+      let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
+      let ps2pdf = 'ps2pdf.bat' . ' "' . masterBaseName . '.ps"'
       let g:bibtex = 'upbibtex -sjis-terminal'
       let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
@@ -237,9 +235,9 @@ function! PdfupLaTeX(type)
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       endif
     else
-      let latex = 'uplatex -synctex=1' . ' ' . masterTeXFile
-      let dvips = 'dvips -Ppdf -z -f' . ' ' . masterBaseName . '.dvi' . ' | convbkmk -u > ' . masterBaseName . '.ps'
-      let ps2pdf = 'ps2pdf' . ' ' . masterBaseName . '.ps'
+      let latex = 'uplatex -synctex=1' . ' "' . masterTeXFile . '"'
+      let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
+      let ps2pdf = 'ps2pdf' . ' "' . masterBaseName . '.ps"'
       let g:bibtex = 'upbibtex'
       let g:makeindex = 'mendex'
       let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -263,19 +261,19 @@ function! PdfLaTeX(type)
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdflatex'
-    let pdflatex = 'pdflatex -synctex=1' . ' ' . masterTeXFile
+    let pdflatex = 'pdflatex -synctex=1' . ' "' . masterTeXFile . '"'
     let g:bibtex = 'bibtex'
     let g:makeindex = 'makeindex'
   elseif a:type == 'lualatex'
-    let pdflatex = 'lualatex -synctex=1' . ' ' . masterTeXFile
+    let pdflatex = 'lualatex -synctex=1' . ' "' . masterTeXFile . '"'
     let g:bibtex = 'bibtexu'
     let g:makeindex = 'texindy'
   elseif a:type == 'luajitlatex'
-    let pdflatex = 'luajitlatex -synctex=1' . ' ' . masterTeXFile
+    let pdflatex = 'luajitlatex -synctex=1' . ' "' . masterTeXFile . '"'
     let g:bibtex = 'bibtexu'
     let g:makeindex = 'texindy'
   elseif a:type == 'xelatex'
-    let pdflatex = 'xelatex -synctex=1' . ' ' . masterTeXFile
+    let pdflatex = 'xelatex -synctex=1' . ' "' . masterTeXFile . '"'
     let g:bibtex = 'bibtexu'
     let g:makeindex = 'texindy'
   endif
@@ -308,9 +306,9 @@ function! BibTeX()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . g:bibtex . ' ' . masterBaseName
+    let execString = 'cd /d ' . masterDir . ' && ' . g:bibtex . ' "' . masterBaseName . '"'
   else
-    let execString = 'cd ' . masterDir . ' && ' . g:bibtex . ' ' . masterBaseName
+    let execString = 'cd ' . masterDir . ' && ' . g:bibtex . ' "' . masterBaseName . '"'
   endif
 
   execute 'silent! !' execString
@@ -330,9 +328,9 @@ function! MakeIndex()
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . g:makeindex ' ' . masterBaseName
+    let execString = 'cd /d ' . masterDir . ' && ' . g:makeindex ' "' . masterBaseName . '"'
   else
-    let execString = 'cd ' . masterDir . ' && ' . g:makeindex . ' ' . masterBaseName
+    let execString = 'cd ' . masterDir . ' && ' . g:makeindex . ' "' . masterBaseName . '"'
   endif
 
   execute 'silent! !' execString
@@ -357,13 +355,13 @@ function! TeXworks()
     else
       let viewer = 'TeXworks.exe'
     endif
-    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' "' . masterPDFFile . '" | cmd'
   elseif has('macunix')
     let viewer = 'open -a TeXworks.app'
-    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   else
     let viewer = 'texworks'
-    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
   execute 'silent! !' execString
@@ -389,7 +387,7 @@ function! SumatraPDF()
     else
       let viewer = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'
     endif
-    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance ' . masterPDFFile . ' -forward-search ' . currentTeXFile . ' ' . line(".") . ' | cmd'
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\"" "' . masterPDFFile . '" -forward-search "' . currentTeXFile . '" ' . line(".") . ' | cmd'
   endif
 
   execute 'silent! !' execString
@@ -409,7 +407,7 @@ function! FwdSumatraPDF()
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
     let viewer = 'fwdsumatrapdf'
-    let execString = 'cd /d ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' ' . currentTeXFile . ' ' . line(".")
+    let execString = 'cd /d ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" "' . currentTeXFile . '" ' . line(".")
   endif
 
   execute 'silent! !' execString
@@ -427,7 +425,7 @@ function! Preview()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'open -a Preview.app'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -444,7 +442,7 @@ function! TeXShop()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'open -a TeXShop.app'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -462,7 +460,7 @@ function! Skim()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . line(".") . ' ' . masterPDFFile . ' ' . currentTeXFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . line(".") . ' "' . masterPDFFile . '" "' . currentTeXFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -479,7 +477,7 @@ function! Evince()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'evince'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -497,7 +495,7 @@ function! FwdEvince()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'fwdevince'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' ' . line(".") . ' ' . currentTeXFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" ' . line(".") . ' "' . currentTeXFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -532,7 +530,7 @@ function! Zathura()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
   execute 'silent! !' execString
   redraw!
@@ -574,13 +572,13 @@ function! AdobeReader()
     else
       let viewer = 'pdfopen --rxi --file'
     endif
-    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' ' . masterPDFFile . ' | cmd'
+    let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' "' . masterPDFFile . '" | cmd'
   elseif has('macunix')
     let viewer = 'open -a "Adobe Reader.app"'
-    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   else
     let viewer = 'acroread'
-    let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . masterPDFFile . ' &'
+    let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
   execute 'silent! !' execString
