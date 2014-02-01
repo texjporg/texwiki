@@ -52,25 +52,6 @@ let g:quickrun_config = {
 
 ***
 
-#### upLaTeX (ptex2pdf), TeXworks を使用する場合 {#mecced12}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'ptex2pdf',
-\       'exec': ['%c -l -u -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode" "%S:t:r.tex"', 'texworks "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
 #### pdfLaTeX, SumatraPDF を使用する場合 {#i54ae297}
 
 ***
@@ -84,25 +65,6 @@ let g:quickrun_config = {
 \   'tex': {
 \       'command': 'pdflatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
-#### pdfLaTeX, TeXworks を使用する場合 {#tae9ce5f}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'pdflatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'texworks "%S:r.pdf"']
 \   },
 \}
 ```
@@ -128,25 +90,6 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaLaTeX, TeXworks を使用する場合 {#t7007bd8}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'lualatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'texworks "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
 #### LuaJITLaTeX, SumatraPDF を使用する場合 {#w61e8fca}
 
 ***
@@ -166,25 +109,6 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaJITLaTeX, TeXworks を使用する場合 {#d6941ec3}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'luajitlatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'texworks "%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
 #### XeLaTeX, SumatraPDF を使用する場合 {#bc9b26f0}
 
 ***
@@ -198,25 +122,6 @@ let g:quickrun_config = {
 \   'tex': {
 \       'command': 'xelatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
-\   },
-\}
-```
-
-***
-
-#### XeLaTeX, TeXworks を使用する場合 {#d313fcde}
-
-***
-
-```
-""
-"" quickrun
-""
-set noshellslash
-let g:quickrun_config = {
-\   'tex': {
-\       'command': 'xelatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'texworks "%S:r.pdf"']
 \   },
 \}
 ```
