@@ -20,6 +20,7 @@ pukiwiki: "LaTeX Box"
 LaTeX Box は Vim の LaTeX プラグインです．<br>
 
 - [https://github.com/LaTeX-Box-Team/LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box)
+- [Latexmkとvim, vim-boxの設定](http://d.hatena.ne.jp/wal-neko/20101119/1290158352)
 
 ### License {#b8ba19ac}
 
