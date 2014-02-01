@@ -210,8 +210,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
     - LaTeX Box
+    - [Vim-LaTeX](/Vim-LaTeX/)
     - Automatic LaTeX Plugin for Vim (ATP)
 
 ## PDF ファイルビューア {#uf722ec6}
