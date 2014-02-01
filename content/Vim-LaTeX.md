@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) (obsolete) → [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) または LaTeX Box を使用する {#z8e30b5a}
 
 <img src="http://vim-latex.sourceforge.net/vim-latex.gif" alt="Vim-LaTeX" style="float:right">
 
@@ -853,6 +853,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 
 ## 関連サイト {#fc8d75eb}
 
+- [latexmkとvim-quickrunとneosnippetでVim-LaTeXを卒業しよう](http://rutto-ysgr.net/post/75144999302/latexmk-vim-quickrun-neosnippet-vim-latex)
 - [Scheme書くためにVimの環境を整えたメモ](http://pastak.hatenablog.com/entry/2013/10/30/235525)
 - [MacPortsでLaTeXの導入とvim-latex](http://d.hatena.ne.jp/adragoona/20131022/1382451627)
 - [MacVimでVim-LaTeXを使えるようにした。](http://d.hatena.ne.jp/tnil/20130827/1377615499)
