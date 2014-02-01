@@ -245,6 +245,7 @@ function! PdfupLaTeX(type)
     endif
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -290,6 +291,7 @@ function! PdfLaTeX(type)
     let execString = 'cd ' . masterDir . ' && ' . pdflatex
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -312,6 +314,7 @@ function! BibTeX()
     let execString = 'cd ' . masterDir . ' && ' . g:bibtex . ' "' . masterBaseName . '"'
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -334,6 +337,7 @@ function! MakeIndex()
     let execString = 'cd ' . masterDir . ' && ' . g:makeindex . ' "' . masterBaseName . '"'
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -365,6 +369,7 @@ function! TeXworks()
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -391,6 +396,7 @@ function! SumatraPDF()
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\"" "' . masterPDFFile . '" -forward-search "' . currentTeXFile . '" ' . line(".") . ' | cmd'
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -411,6 +417,7 @@ function! FwdSumatraPDF()
     let execString = 'cd /d ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" "' . currentTeXFile . '" ' . line(".")
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -428,6 +435,7 @@ function! Preview()
   let viewer = 'open -a Preview.app'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -445,6 +453,7 @@ function! TeXShop()
   let viewer = 'open -a TeXShop.app'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -463,6 +472,7 @@ function! Skim()
   let viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' ' . line(".") . ' "' . masterPDFFile . '" "' . currentTeXFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -480,6 +490,7 @@ function! Evince()
   let viewer = 'evince'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -498,6 +509,7 @@ function! FwdEvince()
   let viewer = 'fwdevince'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" ' . line(".") . ' "' . currentTeXFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -516,6 +528,7 @@ function! Okular()
   let viewer = 'okular'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' --unique "file:' . masterPDFFile . '\#src:' . line(".") . ' ' . currentTeXFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -533,6 +546,7 @@ function! Zathura()
   let viewer = 'zathura -s -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -551,6 +565,7 @@ function! Qpdfview()
   let viewer = 'qpdfview'
   let execString = 'cd ' . masterDir . ' && ' . viewer . ' --unique "' . masterPDFFile . '\#src:' . currentTeXFile . ':' . line(".") . ':0' . '" &'
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -582,6 +597,7 @@ function! AdobeReader()
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
+  execute 'lcd ' . masterDir
   execute 'silent! !' execString
   redraw!
   return ''
@@ -694,10 +710,10 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
-> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
 > <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
 > <tr><td>:Viewer qpdfview &lt;Enter&gt;</td><td>ビューアを qpdfview に変更</td></tr>
+> <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
 > <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
