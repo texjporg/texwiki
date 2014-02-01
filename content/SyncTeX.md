@@ -23,6 +23,7 @@ SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, e
 ただし ConTeXt の場合は、mkiv であればソースにおいて \enabledirectives\[system.synctex\] とし，mkii であればソースにおいて \synctex=1 としておくと SyncTeX が有効になります．<br>
 
 - [The official SyncTeX page](http://itexmac.sourceforge.net/SyncTeX.html)
+- [http://tex.stackexchange.com/questions/tagged/forward-inverse-search](http://tex.stackexchange.com/questions/tagged/forward-inverse-search)
 
 ### ChangeLog {#q711590a}
 
