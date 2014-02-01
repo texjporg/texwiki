@@ -147,7 +147,6 @@ Vim は，チャリティウェアです．<br>
 - [Vimで保存時に自動的にTeXをコンパイル (適当編)](http://blomott.mobi/rubyneko/entry%2CsCKhEg6WPUiQnldaTG1j9w%2C%2C%2C%2C.html)
 - [ファイルの変更を監視してmake](http://d.hatena.ne.jp/hakobe932/20081221/1229874843)
 - [TexのMakefileとvimの設定](http://bkc.g.hatena.ne.jp/hakobe932/20081211/1228975757)
-- [ftpluginのtex.vim](http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html)
 - [Vim/TeXShop integration](http://reference-man.blogspot.com/2009/01/vimtexshop-integration.html)
 - [zencoding-vim](https://github.com/mattn/zencoding-vim)
     - \[[TeX\]記事一覧 - blob glob](http://d.hatena.ne.jp/cobodo/archive?word=*%5bTeX%5d)
@@ -168,23 +167,33 @@ Vim は，チャリティウェアです．<br>
 
 SumatraPDF はコマンドラインから forward search が可能です．
 
-詳しくは，[tex.vim](#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
+詳しくは，[tex.vim](/Vim/tex.vim/) または [Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
 
 ### inverse search {#b8f7bf28}
 
 #### Vim-LaTeX 以外の場合 {#b099e4df}
 
-inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+Vim-LaTeX 以外の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
 ```
 
-です．
+です．<br>
+Vim の設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
 #### Vim-LaTeX の場合 {#m67596d3}
 
-[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，通常の設定とは異なる記述が必要です．
+[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，通常の設定とは異なる記述が必要です．<br>
+
+Vim-LaTeX の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+
+```
+"C:\vim\gvim.exe" -n -c ":RemoteOpen +%l %f"
+```
+
+です．<br>
+Vim-LaTeX の設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
 詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
