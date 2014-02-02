@@ -59,7 +59,7 @@ Cygwin で TeX Live を使用する場合は
 [ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
 
 ```
-$ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．<br>
@@ -78,7 +78,7 @@ $ cd install-tl*
 オプションでダウンロードするリポジトリを指定できます．<br>
 
 ```
-$ ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ ./install-tl --repository http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/
 
 ...
 
