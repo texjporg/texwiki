@@ -77,14 +77,18 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 ***
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'xdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.dvi'+' -x '+0x22.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'xdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.ps'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.ps"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.ps"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
@@ -93,23 +97,21 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>/usr/bin/env ruby -e "system('synctex view -i '+'@:0:#.tex'+' -o '+'%.pdf'+' -x '+0x22.chr+'evince -i '+0x25.chr+'{page+1} '+0x25.chr+'{output}'+0x22.chr)"</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 <ins>fwdevince %.pdf @ #.tex</ins><br>
 
-<ins>okular --unique %.pdf</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 <ins>texmaker2okular %.pdf @ !/#.tex</ins><br>
 
-<ins>zathura %.pdf</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 <ins>texmaker2zathura %.pdf</ins><br>
 
-<ins>qpdfview --unique %.pdf</ins><br>
-
 <ins>texmaker2qpdfview %.pdf #.tex @</ins><br>
 
-<ins>texworks %.pdf</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
 <ins>mupdf %.pdf</ins><br>
 
