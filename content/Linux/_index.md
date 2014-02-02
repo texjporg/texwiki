@@ -40,13 +40,13 @@ Linux はディストリビューションによって TeX のインストール
 - wget を使用する場合
 
     ```
-    $ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ wget http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 - curl を使用する場合
 
     ```
-    $ curl -O http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ curl -O http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 install-tl-unx.tar.gz を展開します．<br>
@@ -65,7 +65,7 @@ root 権限でインストーラを実行します．<br>
 オプションでダウンロードするリポジトリを指定できます．<br>
 
 ```
-$ sudo ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ sudo ./install-tl --repository http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/
 
 ...
 
