@@ -37,6 +37,7 @@ pdf.js は JavaScript で書かれた PDF Viewer です．<br>
 Mozilla Firefox 19 以降は PDF Viewer がデフォルトで有効になっています．<br>
 
 - [pdf.js](http://mozilla.github.com/pdf.js/)
+- [https://github.com/mozilla/pdf.js/wiki/Viewer-options](https://github.com/mozilla/pdf.js/wiki/Viewer-options)
 - [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
 - [https://addons.mozilla.org/ja/firefox/addon/pdfjs/](https://addons.mozilla.org/ja/firefox/addon/pdfjs/)
 
@@ -75,6 +76,18 @@ pdfjs
 
 メニューのオプションからオプションをクリックします．<br>
 プログラムタブのファイルの種類 (Content Type) の PDF 文書 (PDF) の取り扱い方法のリストから Firefox でプレビュー表示を選択します．<br>
+
+## SyncTeX {#v2e4d11f}
+
+### forward search {#l3d0efe3}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は<br>
+
+```
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "rundll32 shell32,ShellExec_RunDLL firefox -new-window '%{output}#page=%{page+1}'"
+```
+
+のように実行します．<br>
 
 ## 関連リンク {#vb4554e0}
 
