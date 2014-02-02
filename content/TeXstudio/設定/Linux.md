@@ -320,7 +320,7 @@ fwdevince "?am.pdf" @ "?c:am.tex"
 
 です．
 
-## Okular との連携 {#c6d921dc}
+## [Okular](/Okular/) との連携 {#c6d921dc}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
@@ -346,19 +346,17 @@ Command:
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
-## zathura との連携 {#i139e4bb}
+## [zathura](/zathura/) との連携 {#i139e4bb}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
 ### forward search {#gc97fa6f}
 
-forward search はユーザーコマンドに
+forward search はユーザーコマンドに fwdzathura を作成して以下のようにコマンドを設定します．<br>
 
 ```
 zathura --synctex-forward "@:0:?c:am.tex" "?am.pdf"
 ```
-
-を設定します．<br>
 
 外部PDFビューアに zathura を設定して zathura で PDF ファイルを表示したあとでユーザーコマンドを実行します．<br>
 
@@ -376,7 +374,7 @@ zathura -s -x "texstudio '%%{input}' -line %%{line}" "?am.pdf"
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
-## qpdfview との連携 {#j7ca7059}
+## [qpdfview](/qpdfview/) との連携 {#j7ca7059}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
