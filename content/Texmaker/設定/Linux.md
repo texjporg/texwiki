@@ -101,15 +101,13 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <ins>fwdevince %.pdf @ #.tex</ins><br>
 
-<ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>texmaker2okular %.pdf @ !/#.tex</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"</ins><br>
 
 <ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
-<ins>texmaker2zathura %.pdf</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"</ins><br>
 
-<ins>texmaker2qpdfview %.pdf #.tex @</ins><br>
+<ins>/usr/bin/env ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"</ins><br>
 
 <ins>/usr/bin/env ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
 
@@ -153,30 +151,12 @@ fwdevince %.pdf @ #.tex
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
-***
-
-- texmaker2okular
-
-***
-
-```
-#!/bin/sh
-okular --unique "file:$1#src:$2 $3"
-```
-
-***
-
-```
-$ chmod +x texmaker2okular
-$ sudo cp -p texmaker2okular /usr/local/bin
-```
-
 ### forward search {#rb0da469}
 
 forward search は PDFビューアに
 
 ```
-texmaker2okular %.pdf @ !/#.tex
+/usr/bin/env ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"
 ```
 
 です．
@@ -197,33 +177,27 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
+### forward search {#za381a9a}
+
+ユーザーコマンドに fwdzathura を作成して以下のようにコマンドを設定します．<br>
+
+```
+/usr/bin/env ruby -e "cmd='zathura --synctex-forward '+0x22.chr+'"@"'+':0:'+'"#.tex"'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
+```
+
+PDFビューアに zathura を設定して zathura で PDF ファイルを表示したあとでユーザーコマンドを実行します．
+
 ### inverse search {#s8c6284b}
-
-***
-
-- texmaker2zathura
-
-***
-
-```
-#!/bin/sh
-zathura -s -x "texmaker "%{input}" -line %{line}" "$1"
-```
-
-***
-
-```
-$ chmod +x texmaker2zathura
-$ sudo cp -p texmaker2zathura /usr/local/bin
-```
 
 PDFビューアに
 
 ```
-texmaker2zathura %.pdf
+/usr/bin/env ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
 ```
 
 を設定します．
+
+クイックビルドの DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しないを ON にします．<br>
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
@@ -233,28 +207,10 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 ### forward search {#dca2869a}
 
-***
-
-- texmaker2qpdfview
-
-***
-
-```
-#!/bin/sh
-qpdfview --unique "$1#src:$2:$3:0"
-```
-
-***
-
-```
-$ chmod +x texmaker2qpdfview
-$ sudo cp -p texmaker2qpdfview /usr/local/bin
-```
-
 forward search は PDFビューアに
 
 ```
-texmaker2qpdfview %.pdf #.tex @
+/usr/bin/env ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"
 ```
 
 です．
