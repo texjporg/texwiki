@@ -17,7 +17,7 @@ pukiwiki: "upTeX,upLaTeX"
 pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
 upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
 また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
-TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557))<br>
+TeX Live 2014 以降はファイル名に漢字が使用できます．( → [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397), [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557))<br>
 texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))<br>
 texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．( → [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))<br>
 
