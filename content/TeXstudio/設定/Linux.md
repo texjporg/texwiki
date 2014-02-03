@@ -320,6 +320,20 @@ fwdevince "?am.pdf" @ "?c:am.tex"
 
 です．
 
+### inverse search {#b18e31c8}
+
+Evince/fwdevince の invevince を使用します．<br>
+
+inverse search はユーザーコマンドに invevince を作成して以下のようにコマンドを設定します．<br>
+
+```
+invevince "?am.pdf" "texstudio '%%f' -line %%l"
+```
+
+外部PDFビューアに evince を設定して evince で PDF ファイルを表示してユーザーコマンドを実行します．<br>
+Ctrl + 左クリックで inverse search ができます．<br>
+ユーザーコマンドを実行するタイミングは evince で PDF ファイルを表示する前でも後でもどちらでも OK です．<br>
+
 ## [Okular](/Okular/) との連携 {#c6d921dc}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
