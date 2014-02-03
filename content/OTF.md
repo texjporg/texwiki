@@ -1088,6 +1088,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
 - [http://www.ctan.org/pkg/jfontmaps](http://www.ctan.org/pkg/jfontmaps)
+- [upLaTeX + \propshape](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1235)
 - [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
