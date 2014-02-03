@@ -142,7 +142,7 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 ***
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → Texmaker の修正版または [TeXstudio](/TeXstudio/) を使用する {#c698d89f}
+### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → [TeXstudio](/TeXstudio/) または Texmaker の修正版を使用する {#c698d89f}
 
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって判読不能になるという不具合があります．<br>
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
@@ -316,6 +316,32 @@ Linux 版の Texmaker で \section{ を入力した直後に日本語入力を�
 fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．\section{ の直後に日本語入力が ON にならない場合に手動で日本語入力を ON にした状態で \section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されます．<br>
 ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．<br>
 [TeXstudio](/TeXstudio/) を使用することで回避できます．<br>
+
+### コマンドの設定に使用するパラメータのパースの仕方に問題がある → [TeXstudio](/TeXstudio/) または Ruby, Windows PowerShell, バッチファイル, シェルスクリプト などを使用する {#t0aace20}
+
+Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．<br>
+[TeXstudio](/TeXstudio/) はコマンドの設定に使用するパラメータのパースが正しく処理できます．<br>
+Texmaker の場合は例えばコマンドの設定に &#x25; が必要になった場合に &#x25; をそのまま記述しても &#x25;&#x25; と記述しても期待したように処理されません．<br>
+Ruby では
+
+```
+0x25.chr
+```
+
+Windows PowerShell では
+
+```
+[char]0x25
+```
+
+で &#x25; を表示できます．<br>
+このようにして Ruby や Windows PowerShell を使用して表示したい文字を「数値→文字」の変換で表現して設定を記述すれば OK です．<br>
+Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプトを使用しても OK です．<br>
+
+### Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがある → Ruby を使用して設定を記述する {#o6c242bd}
+
+Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．<br>
+この場合は Ruby を使用して設定を記述してください．<br>
 
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
 
