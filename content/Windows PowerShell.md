@@ -70,7 +70,7 @@ Windows PowerShell では Tab でコマンドレットやファイル名など�
 のように補完され
 
 ```
-ptex2pdf -l .\hoge.tex
+ptex2pdf -u -l .\hoge.tex
 ```
 
 とするとコンパイルできません．
@@ -78,7 +78,7 @@ ptex2pdf -l .\hoge.tex
 この場合は
 
 ```
-ptex2pdf -l ".\hoge.tex".substring(2)
+ptex2pdf -u -l ".\hoge.tex".substring(2)
 ```
 
 のようにすれば OK です．
@@ -87,7 +87,7 @@ ptex2pdf -l ".\hoge.tex".substring(2)
 
 ```
 cmd
-ptex2pdf -l hoge.tex
+ptex2pdf -u -l hoge.tex
 ```
 
 としたほうが簡単かもしれません．
@@ -159,5 +159,6 @@ Windows PowerShell のオープンソース実装．<br>
 - [Windows 8.1 でなくなった Windows エクスペリエンス インデックス GUI表示の代りに PowerShell で測定する](http://tech.guitarrapc.com/entry/2013/10/25/075010)
 - [Windows batでコマンドの結果を変数に格納](http://qiita.com/long_long_float/items/f1a19816ef0d0070b68f)
 - [PowerShell の コマンドレット例外を取得する](http://tech.guitarrapc.com/entry/2013/07/22/000738)
+- [コマンドプロンプトから色々な処理系でワンライナー：2012年バージョン](http://d.hatena.ne.jp/eel3/20120319/1332090071)
     <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
     <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
