@@ -441,6 +441,12 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
   $pdf_mode = 3;
+  if ($^O eq 'darwin') {
+    $pvc_view_file_via_temporary = 0;
+    $pdf_previewer = 'open -ga /Applications/Skim.app';
+  } else {
+    $pdf_previewer = 'xdg-open';
+  }
 }
 ```
 
@@ -486,6 +492,12 @@ if ($^O eq 'MSWin32') {
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
   $pdf_mode = 3;
+  if ($^O eq 'darwin') {
+    $pvc_view_file_via_temporary = 0;
+    $pdf_previewer = 'open -ga /Applications/Skim.app';
+  } else {
+    $pdf_previewer = 'xdg-open';
+  }
 }
 ```
 
