@@ -95,11 +95,11 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
 
-<ins>open -a Preview.app %.pdf</ins><br>
+<ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
 
 <ins>open -a Skim.app %.pdf</ins><br>
 
-<ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
+<ins>open -a Preview.app %.pdf</ins><br>
 
 <ins>open -a TeXShop.app %.pdf</ins><br>
 
