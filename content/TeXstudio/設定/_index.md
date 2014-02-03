@@ -30,6 +30,20 @@ pukiwiki: "TeXstudio/設定"
 
 ***
 
+### 設定ファイル {#g2cec334}
+
+> <table>
+> <thead>
+> <tr><th style="text-align:center">環境</th><th style="text-align:center">設定ファイルが保存されるフォルダー</th><th style="text-align:center">ファイル名</th></tr>
+> </thead>
+> <tbody>
+> <tr><td>Portable バージョン</td><td>TeXstudio の実行ファイルと同じフォルダー</td><td>texstudio.ini</td></tr>
+> <tr><td>Windows</td><td>%APPDATA%\texstudio\</td><td>texstudio.ini</td></tr>
+> <tr><td>UNIX, Linux, OS X</td><td>$HOME/.config/texstudio/</td><td>texstudio.ini</td></tr>
+> </tbody>
+> </table>
+>
+
 ### コマンド {#yc27e161}
 
 {{< children >}}
