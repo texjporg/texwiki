@@ -153,6 +153,21 @@ fwdevince %.pdf @ #.tex
 
 です．
 
+### inverse search {#zb2ae21e}
+
+Evince/fwdevince の invevince を使用します．<br>
+
+ユーザーコマンドに invevince を作成して以下のようにコマンドを設定します．<br>
+
+```
+ruby -e "cmd='invevince'+' '+0x22.chr+'"%.pdf"'+0x22.chr+' '+0x22.chr+'texmaker '+0x27.chr++0x25.chr+'f'+0x27.chr+' -line '+0x25.chr+'l'+0x22.chr;system(cmd)"
+```
+
+PDFビューアに evince を設定して evince で PDF ファイルを表示してユーザーコマンドを実行します．<br>
+Ctrl + 左クリックで inverse search ができます．<br>
+ユーザーコマンドを実行するタイミングは evince で PDF ファイルを表示する前でも後でもどちらでも OK です．<br>
+Texmaker の動作がおかしくなる場合は使用を中止してください．<br>
+
 ## Okular との連携 {#e1d5124a}
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
