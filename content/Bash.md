@@ -13,6 +13,7 @@ pukiwiki: "Bash"
 - [Super Technique 講座～bash 超プログラム術](http://www.nurs.or.jp/~sug/soft/super/bash.htm)
 - [UNIX &amp; Linux コマンド・シェルスクリプト リファレンス](http://shellscript.sunone.me/)
 - [sedのお勉強](http://qiita.com/takc923/items/bdce8c1a2126cac52492)
+- [Linux上のプロセスを監視して、プロセスがダウンしたら再起動させるShell](http://tech.thekyo.jp/linux%E4%B8%8A%E3%81%AE%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%82%92%E7%9B%A3%E8%A6%96%E3%81%97%E3%81%A6%E3%80%81%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%8C%E3%83%80%E3%82%A6%E3%83%B3%E3%81%97/91/)
 
 ## シェルスクリプト {#e6dabee0}
 
