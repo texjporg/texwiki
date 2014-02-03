@@ -23,6 +23,7 @@ fwdevince は Linux の Evince で forward and inverse search を行うための
 
 ### Emacs Lisp 版 {#m18a72d1}
 
+- [Emacs - TeX Wiki](/Emacs/)
 - [http://git.savannah.gnu.org/cgit/auctex.git/tree/tex.el](http://git.savannah.gnu.org/cgit/auctex.git/tree/tex.el)
 - [https://github.com/DamienCassou/emacs.d/blob/master/auctex-evince-sync.el](https://github.com/DamienCassou/emacs.d/blob/master/auctex-evince-sync.el)
 - [https://github.com/NicolasPetton/emacs.d/blob/master/modules/auctex-evince-sync.el](https://github.com/NicolasPetton/emacs.d/blob/master/modules/auctex-evince-sync.el)
