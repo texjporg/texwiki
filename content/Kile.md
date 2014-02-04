@@ -7,7 +7,7 @@ pukiwiki: "Kile"
 
 # Kile
 
-## [Kile](http://kile.sourceforge.net/) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#pab65dd4}
+## [Kile](http://kile.sourceforge.net/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#pab65dd4}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kile.svg/240px-Kile.svg.png" alt="Kile" style="float:right">
 
