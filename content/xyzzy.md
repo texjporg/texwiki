@@ -76,10 +76,6 @@ C-c s または M-x sumatrapdf-forward-search RET で実行できます．<br>
 
 KyoTeX を参照．<br>
 
-#### KaTeX の場合 {#w3a21acf}
-
-[KaTeX](/KaTeX/) を参照．<br>
-
 ### forward search (SumatraPDF を前面に表示したくない場合) {#dfbd45ed}
 
 xyzzy から SumatraPDF の該当箇所にジャンプすることが可能です。<br>
@@ -115,10 +111,6 @@ C-c w または M-x fwdsumatrapdf-forward-search RET で実行できます．<br
 #### KyoTeX の場合 {#l613cb17}
 
 KyoTeX を参照．<br>
-
-#### KaTeX の場合 {#b8e0fc06}
-
-[KaTeX](/KaTeX/) を参照．<br>
 
 ### inverse search {#n1f72109}
 
