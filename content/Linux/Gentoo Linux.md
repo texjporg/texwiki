@@ -72,15 +72,15 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - [http://gentwoo.elisp.net/packages/app-office/texstudio](http://gentwoo.elisp.net/packages/app-office/texstudio)
 - [http://packages.gentoo.org/package/app-office/texstudio](http://packages.gentoo.org/package/app-office/texstudio)
 
+## [LyX](/LyX/) {#p4f2e771}
+
+- [http://gentwoo.elisp.net/packages/app-office/lyx](http://gentwoo.elisp.net/packages/app-office/lyx)
+
 ## [Texmaker](/Texmaker/) {#s4e0cb5d}
 
 - [http://gentwoo.elisp.net/packages/app-office/texmaker](http://gentwoo.elisp.net/packages/app-office/texmaker)
 
 ## [TeXworks](/TeXworks/) {#b5894e2b}
-
-## [LyX](/LyX/) {#p4f2e771}
-
-- [http://gentwoo.elisp.net/packages/app-office/lyx](http://gentwoo.elisp.net/packages/app-office/lyx)
 
 ## [Emacs](/Emacs/) {#wd024ab5}
 
