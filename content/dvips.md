@@ -37,7 +37,7 @@ dvips は DVI ファイルを PS ファイルに変換するソフトウェア�
 私の [新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/) でたとえば
 
 ```
-\documentclass[papersize,a4paper]{jsarticle}
+\documentclass[uplatex,papersize,a4paper]{jsarticle}
 ```
 
 のようにオプション \[papersize\] を与えれば，dviファイル中に
