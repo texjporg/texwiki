@@ -22,6 +22,7 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
+- [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://tech.recompile.net/post/13843318337/shebang-bin-env-ruby-0)
 
 ### 派生版 {#w5708e1c}
 
@@ -65,6 +66,10 @@ RubyInstaller for Windows の Ruby を C:\Ruby210-x64 にインストールし�
 $ pacman -S ruby
 ```
 
+### OS X {#def5cf73}
+
+- [Ruby 2.1.0-p0インストール](http://qiita.com/shu_0115/items/ba33b692373f002cc568)
+
 ### Linux {#pfcca84f}
 
 #### Linux Mint {#o6dd6f52}
@@ -103,6 +108,8 @@ $ pacman -S ruby
 
 ### Ruby 版 {#bf356aaf}
 
+inverse search は実装していません．<br>
+forward search のみ実装しています．<br>
 Evince 3.10.3, Ruby 2.1.0, ruby-dbus 0.10.0 で動作確認しています．<br>
 
 ```
