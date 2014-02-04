@@ -383,7 +383,7 @@ dvipdfmx foo.dvi
 
 と打ち込むだけです。<br>
 これで foo.dvi が foo.pdf に変換されます。<br>
-コマンドラインを使用するのが苦手なかたは [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/)
+コマンドラインを使用するのが苦手なかたは [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
 などで dvipdfmx を使うように設定できます。<br>
 
 以下では dvipdfmx について説明します。<br>
