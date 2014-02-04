@@ -82,6 +82,8 @@ function! TypesetFile()
     call PdfLaTeX("luajitlatex")
   elseif g:typeset == 'xelatex'
     call PdfLaTeX("xelatex")
+  elseif g:typeset == 'latexmk'
+    call Latexmk("latexmk")
   else
     call PdfupLaTeX("pdfuplatex")
   endif
@@ -183,6 +185,8 @@ function! SetTypeset(type)
     let g:typeset = 'luajitlatex'
   elseif a:type == 'xelatex'
     let g:typeset = 'xelatex'
+  elseif a:type == 'latexmk'
+    let g:typeset = 'latexmk'
   else
     let g:typeset = 'pdfuplatex'
   endif
@@ -289,6 +293,38 @@ function! PdfLaTeX(type)
     endif
   else
     let execString = 'cd ' . masterDir . ' && ' . pdflatex
+  endif
+
+  execute 'lcd ' . masterDir
+  execute 'silent! !' execString
+  redraw!
+  return ''
+endfunction
+
+function! Latexmk(type)
+  if &ft != 'tex'
+    echo "calling Latexmk from a non-tex file"
+    return ''
+  end
+
+  w
+
+  let masterDir = expand("%:p:h")
+  let masterTeXFile = g:master
+  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
+  if a:type == 'latexmk'
+    let latexmk = 'latexmk' . ' "' . masterTeXFile . '"'
+  endif
+
+  if has('win32') || has('win64')
+    if g:viewer == 'adobereader'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
+      let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latexmk
+    else
+      let execString = 'cd /d ' . masterDir . ' && ' . latexmk
+    endif
+  else
+    let execString = 'cd ' . masterDir . ' && ' . latexmk
   endif
 
   execute 'lcd ' . masterDir
@@ -636,6 +672,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
+> <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
 > <tr><td>:Viewer fwdsumatrapdf &lt;Enter&gt;</td><td>ビューアを fwdsumatrapdf に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
@@ -671,6 +708,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
+> <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
 > <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
 > <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
@@ -708,6 +746,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
+> <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
 > <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
 > <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
