@@ -123,6 +123,12 @@ $ sudo yum install nspluginwrapper.i686 AdobeReader_enu
 $ sudo yum install texstudio
 ```
 
+## [LyX](/LyX/) {#n0d7807d}
+
+```
+$ sudo yum install lyx
+```
+
 ## [Texmaker](/Texmaker/) {#lcaf9397}
 
 ```
@@ -133,12 +139,6 @@ $ sudo yum install texmaker
 
 ```
 $ sudo yum install texworks
-```
-
-## [LyX](/LyX/) {#n0d7807d}
-
-```
-$ sudo yum install lyx
 ```
 
 ## [Eclipse](/Eclipse/) {#p298a48c}
