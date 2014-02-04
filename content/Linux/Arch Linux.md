@@ -110,8 +110,16 @@ $ sudo pacman -S ghostscript
 
 ## [Python](/Python/) {#i5b0d02d}
 
+### python3 {#e996fe1c}
+
 ```
-$ sudo pacman -S python python2
+$ sudo pacman -S python python-dbus python-gobject
+```
+
+### python2 {#tc491f53}
+
+```
+$ sudo pacman -S python2 python2-dbus python2-gobject
 ```
 
 ## [Ruby](/Ruby/) {#f4286b29}
@@ -193,6 +201,12 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 $ yaourt -S texstudio
 ```
 
+## [LyX](/LyX/) {#odd649e9}
+
+```
+$ sudo pacman -S lyx
+```
+
 ## [Texmaker](/Texmaker/) {#kc254e63}
 
 ```
@@ -203,12 +217,6 @@ $ sudo pacman -S texmaker
 
 ```
 $ yaourt -S texworks
-```
-
-## [LyX](/LyX/) {#odd649e9}
-
-```
-$ sudo pacman -S lyx
 ```
 
 ## [Emacs](/Emacs/) {#le6bf422}
