@@ -9,9 +9,9 @@ pukiwiki: "WinShell"
 
 <strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。</strong><br>
 
-<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境をおすすめします．</strong><br>
+<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境をおすすめします．</strong><br>
 
-## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -74,7 +74,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#g47585a4}
+### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 エンコーディングを UTF-8 に変更して
 
@@ -128,9 +128,9 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 UTF-8 を使用したい方は
 
 - [TeXstudio](/TeXstudio/)
+- [LyX](/LyX/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
-- [LyX](/LyX/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境を使用してください．
 
