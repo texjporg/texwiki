@@ -169,8 +169,8 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 ```
 $ sudo dpkg --add-architecture i386 
 $ sudo apt-get install wine-bin:i386
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.04/ja_JP/AdbeRdr11004_ja_JP.exe
-$ wine AdbeRdr11004_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
+$ wine AdbeRdr11006_ja_JP.exe
 $ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Reader/AcroRd32.exe
 ```
 
@@ -196,6 +196,12 @@ Windows 版の Adobe Reader では日本語入力、検索、共に可能なよ�
 $ sudo apt-get install texstudio
 ```
 
+## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
+
+```
+$ sudo apt-get install lyx
+```
+
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#v9a89433}
 
 ```
@@ -206,12 +212,6 @@ $ sudo apt-get install texmaker
 
 ```
 $ sudo apt-get install texworks
-```
-
-## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
-
-```
-$ sudo apt-get install lyx
 ```
 
 ## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#f101e753}
