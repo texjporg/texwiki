@@ -17,9 +17,9 @@ Hunspell はスペルチェッカーです．<br>
 以下のフリーソフトウェア (オープンソースソフトウェア) の統合環境・エディタで使用されています．
 
 - [TeXstudio](/TeXstudio/)
+- [LyX](/LyX/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
-- [LyX](/LyX/)
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
 ### 辞書 {#q4b7f294}
