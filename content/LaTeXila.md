@@ -7,7 +7,7 @@ pukiwiki: "LaTeXila"
 
 # LaTeXila
 
-## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) (obsolete) → [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [LyX](/LyX/) などの統合環境を使用する {#e966f73d}
+## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#e966f73d}
 
 <img src="https://git.gnome.org/browse/latexila/plain/data/images/app/logo.png" alt="LaTeXila" style="float:right">
 
