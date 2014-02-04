@@ -8,3 +8,8 @@ pukiwiki: "Biblatex"
 # Biblatex
 
 ## Biblatex {#a1e92399}
+
+- [http://www.ctan.org/pkg/biblatex](http://www.ctan.org/pkg/biblatex)
+- [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
+- [BibLaTeXを出来るだけ普通に使う（実践）](http://plaza.rakuten.co.jp/aquilax/diary/201110180001/)
+- [Getting Started with Biblatex](https://www.sharelatex.com/blog/2013/07/31/getting-started-with-biblatex.html)
