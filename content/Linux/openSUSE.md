@@ -86,6 +86,12 @@ $ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
 
 ## [TeXstudio](/TeXstudio/) {#xc0b5b03}
 
+## [LyX](/LyX/) {#uad65708}
+
+```
+$ sudo zypper install lyx
+```
+
 ## [Texmaker](/Texmaker/) {#ua730d97}
 
 ```
@@ -96,12 +102,6 @@ $ sudo zypper install texmaker
 
 ```
 $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
-```
-
-## [LyX](/LyX/) {#uad65708}
-
-```
-$ sudo zypper install lyx
 ```
 
 ## [MinGW](/MinGW/) {#e5f30d58}
