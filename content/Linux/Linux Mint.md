@@ -157,6 +157,12 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 $ sudo apt-get install texstudio
 ```
 
+## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
+
+```
+$ sudo apt-get install lyx
+```
+
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#u8c0cbda}
 
 ```
@@ -167,12 +173,6 @@ $ sudo apt-get install texmaker
 
 ```
 $ sudo apt-get install texworks
-```
-
-## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
-
-```
-$ sudo apt-get install lyx
 ```
 
 ## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#bd4e03c3}
