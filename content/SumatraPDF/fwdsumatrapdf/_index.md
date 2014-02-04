@@ -65,8 +65,8 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
+- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
