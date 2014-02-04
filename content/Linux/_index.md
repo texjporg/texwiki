@@ -198,9 +198,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 ### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
 
 - [TeXstudio](/TeXstudio/)
+- [LyX](/LyX/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
-- [LyX](/LyX/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
