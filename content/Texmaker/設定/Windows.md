@@ -20,7 +20,7 @@ pukiwiki: "Texmaker/設定/Windows"
 PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの Bib(la)tex に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
@@ -60,9 +60,9 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](</BibTeX関連ツール/>)　　 </span><ins>upbibtex &#x25;</ins> または <ins>bibtex &#x25;</ins> または <ins>bibtexu &#x25;</ins> または <ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
 
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>mendex -U %.idx</ins> または <ins>makeindex %.idx</ins> または <ins>texindy %.idx</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>texindy %.idx</ins><br>
 
 <span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
 
