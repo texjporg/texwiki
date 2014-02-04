@@ -74,8 +74,8 @@ forward search を行うには TeX コマンドのオプションに -synctex=1 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
+- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
