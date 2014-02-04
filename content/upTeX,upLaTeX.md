@@ -50,6 +50,25 @@ texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegrap
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
 
+### 不具合 {#p35560b1}
+
+#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする → pbibtex を使用するまたは backend に biber を指定して biber を使用する {#g3e20a4e}
+
+biblatex の backend に bibtex (upBibTeX 0.99d-j0.33-u1.11) を指定して upbibtex を使用すると upbibtex がフリーズします．<br>
+この場合は pbibtex を使用すると回避できます．<br>
+
+```
+pbibtex -kanji=utf8 hoge
+```
+
+backend に biber を指定して biber を使用して回避することもできます．<br>
+
+```
+biber --bblencoding=utf8 -u -U --output_safechars hoge
+```
+
+- [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
+
 ### インストール {#d62d0a5a}
 
 #### TeX Live {#mc80f714}
