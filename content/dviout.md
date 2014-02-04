@@ -871,8 +871,8 @@ PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。<br
 - [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
 
 から WIC Susie Plug-in をダウンロードしてください。<br>
-展開後 iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
-他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.spi が存在するフォルダーを指定してください。<br>
+展開後 64-bit dviout の場合は iftwic.sph を 32-bit dviout の場合は iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。<br>
 プリアンブルに
 
 ```
@@ -895,8 +895,8 @@ JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。<b
 - [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
 
 から WIC Susie Plug-in をダウンロードしてください。<br>
-展開後 iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
-他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.spi が存在するフォルダーを指定してください。<br>
+展開後 64-bit dviout の場合は iftwic.sph を 32-bit dviout の場合は iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。<br>
 プリアンブルに
 
 ```
