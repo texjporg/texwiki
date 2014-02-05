@@ -176,24 +176,6 @@ LuaLaTeX
 
 : luajitlatex -synctex=1 -interaction=nonstopmode %.tex
 
-DVIビューア
-: &nbsp;
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "okular --unique --page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "xdvi -nofork -unique -watchfile 1 +&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "pxdvi -nofork -unique -watchfile 1 +&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-PSビューア
-: &nbsp;
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: synctex view -i "@:0:?c:am.tex" -o "?am.ps" -x "okular --unique --page &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
 外部PDFビューア
 : &nbsp;
 
