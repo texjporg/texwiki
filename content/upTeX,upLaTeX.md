@@ -52,7 +52,7 @@ texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegrap
 
 ### 不具合 {#p35560b1}
 
-#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする → pbibtex を使用するまたは backend に biber を指定して biber を使用する {#g3e20a4e}
+#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする → backend に biber を指定して biber を使用する {#g3e20a4e}
 
 biblatex の backend に bibtex (upBibTeX 0.99d-j0.33-u1.11) を指定して upbibtex を使用すると upbibtex がフリーズします．<br>
 この場合は pbibtex を使用すると回避できます．<br>
@@ -61,7 +61,7 @@ biblatex の backend に bibtex (upBibTeX 0.99d-j0.33-u1.11) を指定して upb
 pbibtex -kanji=utf8 hoge
 ```
 
-backend に biber を指定して biber を使用して回避することもできます．<br>
+biblatex を使用する場合は backend に biber を指定して biber を使用するのがおすすめです．<br>
 
 ```
 biber --bblencoding=utf8 -u -U --output_safechars hoge
