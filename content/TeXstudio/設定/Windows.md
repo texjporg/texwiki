@@ -13,9 +13,11 @@ pukiwiki: "TeXstudio/設定/Windows"
 
 ### コマンド {#zdc6ab74}
 
+PDFビューアは，組み込みPDFビューアと外部PDFビューアを選択するようになっているので好きな方を選択してください．<br>
 コマンドの LaTeX に設定されている latex.exe を uplatex.exe に変更して -src を -synctex=1 に変更します．<br>
 コマンドの DviPdf に設定されている dvipdfm.exe を dvipdfmx.exe に変更します．<br>
 コマンドの BibTeX に設定されている bibtex.exe を upbibtex.exe に変更します．<br>
+コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
 
 ***
 
@@ -180,7 +182,7 @@ LuaLaTeX
 DVIビューア
 : &nbsp;
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "'C:\texlive\2013\tlpkg\dviout\dviout.exe' -1 -renew=+ '&#x25;&#x25;{output}' &#x25;&#x25;{page+1}"
+: synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "'C:\texlive\2014\tlpkg\dviout\dviout.exe' -1 -renew=+ '&#x25;&#x25;{output}' &#x25;&#x25;{page+1}"
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.dvi" -x "'C:\w32tex\dviout\dviout.exe' -1 -renew=+ '&#x25;&#x25;{output}' &#x25;&#x25;{page+1}"
 
@@ -235,10 +237,6 @@ BibTeX
 
 : upbibtex.exe %
 
-: bibtexu.exe %
-
-: bibtex.exe %
-
 BibTex 8ビット
 : &nbsp;
 
@@ -254,9 +252,9 @@ Makeindex
 
 : mendex.exe -U %.idx
 
-: makeindex.exe %.idx
-
 Texindy
+: &nbsp;
+
 : texindy.exe %.idx
 
 Makeglossary
@@ -268,8 +266,6 @@ Metapost
 : &nbsp;
 
 : upmpost.exe -interaction=nonstopmode ?me)
-
-: mpost.exe -interaction=nonstopmode ?me)
 
 Asymptote
 : &nbsp;
@@ -289,14 +285,6 @@ Latexmk
 : &nbsp;
 
 : latexmk -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
-
-: latexmk -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
 SVN
 : &nbsp;
