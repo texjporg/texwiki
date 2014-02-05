@@ -190,9 +190,16 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 
 ### inverse search {#u3c0d179}
 
+64-bit Windows の場合
+
+```
+"C:\Program Files (x86)\Notepad++\notepad++.exe" "%f" -n%l -c%c
+```
+
+32-bit Windows の場合
+
 ```
 "C:\Program Files\Notepad++\notepad++.exe" "%f" -n%l -c%c
-"C:\Program Files (x86)\Notepad++\notepad++.exe" "%f" -n%l -c%c
 ```
 
 ## Linux で Notepad++ {#hd58d1c7}
