@@ -134,7 +134,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>biber "&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>biber --bblencoding=utf8 -u -U --output_safechar "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
