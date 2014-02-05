@@ -86,16 +86,6 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 ***
 
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $dvi=\[char\]0x22+'%.dvi'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $dvi -x """'C:\texlive\2014\tlpkg\dviout\dviout.exe' -1 -renew=+ $o $page"""}"</ins><br>
-
-<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $dvi=\[char\]0x22+'%.dvi'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $dvi -x """'C:\w32tex\dviout\dviout.exe' -1 -renew=+ $o $page"""}"</ins><br>
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $ps=\[char\]0x22+'%.ps'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $ps -x """'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe' -reuse-instance -page $page $o"""}"</ins><br>
-
-<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $ps=\[char\]0x22+'%.ps'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $ps -x """'C:\Program Files\SumatraPDF\SumatraPDF.exe' -reuse-instance -page $page $o"""}"</ins><br>
-
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;">(●) 組み込みビューア</span><br>
 
