@@ -13,9 +13,11 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 ### コマンド {#a32ff532}
 
+PDFビューアは，組み込みPDFビューアと外部PDFビューアを選択するようになっているので好きな方を選択してください．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．<br>
 コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．<br>
 コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
 
 ***
 
@@ -178,16 +180,6 @@ LuaLaTeX
 
 : "/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
 
-: "/usr/bin/open" -a Skim.app %.pdf
-
-: "/usr/bin/open" -a Preview.app %.pdf
-
-: "/usr/bin/open" -a TeXShop.app %.pdf
-
-: "/usr/bin/open" -a TeXworks.app %.pdf
-
-: "/usr/bin/open" -a "Adobe Reader.app" %.pdf
-
 DviPs
 : &nbsp;
 
@@ -213,10 +205,6 @@ BibTeX
 
 : "/usr/texbin/upbibtex" %
 
-: "/usr/texbin/bibtexu" %
-
-: "/usr/texbin/bibtex" %
-
 BibTex 8ビット
 : &nbsp;
 
@@ -232,9 +220,9 @@ Makeindex
 
 : "/usr/texbin/mendex" %.idx
 
-: "/usr/texbin/makeindex" %.idx
-
 Texindy
+: &nbsp;
+
 : "/usr/texbin/texindy" %.idx
 
 Makeglossary
@@ -246,8 +234,6 @@ Metapost
 : &nbsp;
 
 : "/usr/texbin/upmpost" -interaction=nonstopmode %
-
-: "/usr/texbin/mpost" -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
@@ -263,14 +249,6 @@ Latexmk
 : &nbsp;
 
 : "/usr/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
-
-: "/usr/texbin/latexmk" -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: "/usr/texbin/latexmk" -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: "/usr/texbin/latexmk" -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: "/usr/texbin/latexmk" -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
 SVN
 : &nbsp;
