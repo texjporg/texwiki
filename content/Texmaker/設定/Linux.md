@@ -82,20 +82,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 ***
 
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>DVI ビューア</strong></span><br>
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'xdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.dvi"'+0x27.chr+' -x '+0x27.chr+'pxdvi -nofork -unique -watchfile 1 +'+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PS ビューア</strong></span><br>
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.ps"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.ps"'+0x27.chr+' -x '+0x27.chr+'okular --unique --page '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
 <span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
 
@@ -116,18 +102,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 <ins>ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"</ins><br>
 
 <ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
-
-<ins>mupdf %.pdf</ins><br>
-
-<ins>firefox -new-window %.pdf</ins><br>
-
-<ins>chromium --new-window %.pdf</ins><br>
-
-<ins>acroread %.pdf</ins><br>
-
-<ins>pdfopen -viewer ar9-tab %.pdf</ins><br>
-
-<ins>xdg-open %.pdf</ins><br>
 
 <div style="clear:both"></div>
 
