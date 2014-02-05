@@ -199,7 +199,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 - [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
-- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
@@ -211,8 +210,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
     - LaTeX Box
-    - [Vim-LaTeX](/Vim-LaTeX/)
-    - Automatic LaTeX Plugin for Vim (ATP)
 
 ## PDF ファイルビューア {#uf722ec6}
 
@@ -224,7 +221,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
 
-- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXlipse](/TeXlipse/) ([Pdf4Eclipse](</TeXlipse/設定/Linux/#p67adb24>)), [Emacs](/Emacs/) ([DocView](/Emacs/#docview)) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), [TeXlipse](/TeXlipse/) ([Pdf4Eclipse](</TeXlipse/設定/Linux/#p67adb24>)), [Emacs](/Emacs/) ([DocView](/Emacs/#docview)) などは PDF ファイルビューアを内蔵しています．
 - [Evince](/Evince/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
