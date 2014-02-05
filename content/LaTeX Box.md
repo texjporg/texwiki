@@ -30,6 +30,56 @@ GPLv3
 
 - [https://github.com/LaTeX-Box-Team/LaTeX-Box/commits/](https://github.com/LaTeX-Box-Team/LaTeX-Box/commits/)
 
+## 設定 {#w2c299bd}
+
+LaTeX Box はタイプセットに Latexmk を使用します．<br>
+[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
+
+### Windows {#o6005237}
+
+***
+
+```
+""
+"" LaTeX Box
+""
+let g:LatexBox_output_type = 'pdf'
+let g:LatexBox_latexmk_options = '-pdfdvi'
+let g:LatexBox_viewer = ' ' . 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
+```
+
+***
+
+### OS X {#ae1545aa}
+
+***
+
+```
+""
+"" LaTeX Box
+""
+let g:LatexBox_output_type = 'pdf'
+let g:LatexBox_latexmk_options = '-pdfdvi'
+let g:LatexBox_viewer = 'open'
+```
+
+***
+
+### Linux {#c34997e3}
+
+***
+
+```
+""
+"" LaTeX Box
+""
+let g:LatexBox_output_type = 'pdf'
+let g:LatexBox_latexmk_options = '-pdfdvi'
+let g:LatexBox_viewer = 'xdg-open'
+```
+
+***
+
 ## 使い方 {#v3610f47}
 
 ### タイプセット・プレビュー {#f14973a8}
