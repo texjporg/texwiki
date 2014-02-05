@@ -48,7 +48,7 @@ pukiwiki: "TeXstudio/設定"
 
 {{< children >}}
 
-を参照して uplatex, upbibtex, mendex, dvipdfmx, latexmk などの設定をします．<br>
+を参照して uplatex, upbibtex, biber, mendex, dvipdfmx, latexmk などの設定をします．<br>
 
 ### ビルド {#cb495de1}
 
@@ -83,7 +83,7 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示　　　　　　　 既定の文献　　　<span style="color:Black;background-color:#EEEEEE;">\[BibTeX　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+構文の強調表示　　　　　　　 既定の文献　　　<span style="color:Black;background-color:#EEEEEE;">\[Biber　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
@@ -149,7 +149,7 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー　　　　　　　 　　　既定の文献　　　　　　　\[txs:///bibtex　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+ツールバー　　　　　　　 　　　既定の文献　　　　　　　\[txs:///biber　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
