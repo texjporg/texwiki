@@ -208,8 +208,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-    - LaTeX Box
+    - [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) + LaTeX Box
 
 ## PDF ファイルビューア {#uf722ec6}
 
