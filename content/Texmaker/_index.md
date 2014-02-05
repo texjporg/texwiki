@@ -8,7 +8,7 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-## [Texmaker](http://www.xm1math.net/texmaker/) {#h2b86e88}
+## [Texmaker](http://www.xm1math.net/texmaker/) (obsolete) → [TeXstudio](/TeXstudio/) を使用する {#h2b86e88}
 
 <img src="http://www.xm1math.net/texmaker/texmaker128.png" alt="Texmaker" style="float:right">
 
@@ -470,8 +470,8 @@ C:.
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <!-- local.conf file to configure local font access -->
 <fontconfig>
-<dir>c:/texlive/2013/texmf-dist/fonts/opentype</dir>
-<dir>c:/texlive/2013/texmf-dist/fonts/truetype</dir>
+<dir>c:/texlive/2014/texmf-dist/fonts/opentype</dir>
+<dir>c:/texlive/2014/texmf-dist/fonts/truetype</dir>
 <dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
 <dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
 <dir>c:/Program Files/MiKTeX 2.9/fonts/opentype</dir>
