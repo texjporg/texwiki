@@ -31,6 +31,7 @@ let g:tex_flavor='latex'
 
 を記述しておく必要があります．<br>
 補完機能が必要な方は [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
+Latexmk を使用する場合は [Latexmk](/Latexmk/) の設定をしてください．<br>
 tex.vim が動作しない場合は [quickrun](/quickrun/) を使用してください．<br>
 OS X の場合は [ftpluginのtex.vim](http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html) も参考になります．<br>
 
@@ -313,7 +314,7 @@ function! Latexmk(type)
   let masterTeXFile = g:master
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'latexmk'
-    let latexmk = 'latexmk' . ' "' . masterTeXFile . '"'
+    let latexmk = 'latexmk -gg' . ' "' . masterTeXFile . '"'
   endif
 
   if has('win32') || has('win64')
