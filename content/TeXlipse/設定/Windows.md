@@ -47,19 +47,19 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\texlive\2013\bin\win64\latex.exe または C:\texlive\2013\bin\win32\latex.exe または C:\w32tex\bin64\latex.exe または C:\w32tex\bin\latex.exe)<br>
+　　Latex program　　　(C:\texlive\2014\bin\win64\latex.exe または C:\texlive\2014\bin\win32\latex.exe または C:\w32tex\bin64\latex.exe または C:\w32tex\bin\latex.exe)<br>
 　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\texlive\2013\bin\win64\pdflatex.exe または C:\texlive\2013\bin\win32\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe または C:\w32tex\bin\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\texlive\2013\bin\win64\xelatex.exe または C:\texlive\2013\bin\win32\xelatex.exe または C:\w32tex\bin64\xelatex.exe または C:\w32tex\bin\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\texlive\2013\bin\win64\lualatex.exe または C:\texlive\2013\bin\win32\lualatex.exe または C:\w32tex\bin64\lualatex.exe または C:\w32tex\bin\lualatex.exe)<br>
-　　Bibtex program　　　(C:\texlive\2013\bin\win64\bibtex.exe または C:\texlive\2013\bin\win32\bibtex.exe または C:\w32tex\bin64\bibtex.exe または C:\w32tex\bin\bibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\texlive\2013\bin\win64\biber.exe または C:\texlive\2013\bin\win32\biber.exe または C:\w32tex\bin64\biber.exe または C:\w32tex\bin\biber.exe)<br>
-　　Makeindex program　　　(C:\texlive\2013\bin\win64\makeindex.exe または C:\texlive\2013\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
-　　Dvips program　　　(C:\texlive\2013\bin\win64\dvips.exe または C:\texlive\2013\bin\win32\dvips.exe または C:\w32tex\bin64\dvips.exe または C:\w32tex\bin\dvips.exe)<br>
-　　Dvipdf program　　　(C:\texlive\2013\bin\win64\dvipdfm.exe または C:\texlive\2013\bin\win32\dvipdfm.exe または C:\w32tex\bin64\dvipdfm.exe または C:\w32tex\bin\dvipdfm.exe)<br>
+　　PdfLatex program　　　(C:\texlive\2014\bin\win64\pdflatex.exe または C:\texlive\2014\bin\win32\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe または C:\w32tex\bin\pdflatex.exe)<br>
+　　XeLatex program　　　(C:\texlive\2014\bin\win64\xelatex.exe または C:\texlive\2014\bin\win32\xelatex.exe または C:\w32tex\bin64\xelatex.exe または C:\w32tex\bin\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\texlive\2014\bin\win64\lualatex.exe または C:\texlive\2014\bin\win32\lualatex.exe または C:\w32tex\bin64\lualatex.exe または C:\w32tex\bin\lualatex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2014\bin\win64\bibtex.exe または C:\texlive\2014\bin\win32\bibtex.exe または C:\w32tex\bin64\bibtex.exe または C:\w32tex\bin\bibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\texlive\2014\bin\win64\biber.exe または C:\texlive\2014\bin\win32\biber.exe または C:\w32tex\bin64\biber.exe または C:\w32tex\bin\biber.exe)<br>
+　　Makeindex program　　　(C:\texlive\2014\bin\win64\makeindex.exe または C:\texlive\2014\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
+　　Dvips program　　　(C:\texlive\2014\bin\win64\dvips.exe または C:\texlive\2014\bin\win32\dvips.exe または C:\w32tex\bin64\dvips.exe または C:\w32tex\bin\dvips.exe)<br>
+　　Dvipdf program　　　(C:\texlive\2014\bin\win64\dvipdfm.exe または C:\texlive\2014\bin\win32\dvipdfm.exe または C:\w32tex\bin64\dvipdfm.exe または C:\w32tex\bin\dvipdfm.exe)<br>
 　　Ps2pdf program　　　()<br>
-　　Makeindex program (nomencl)　　　(C:\texlive\2013\bin\win64\makeindex.exe または C:\texlive\2013\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
-　　Kpsewhich program　　　(C:\texlive\2013\bin\win64\kpsewhich.exe または C:\texlive\2013\bin\win32\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2014\bin\win64\makeindex.exe または C:\texlive\2014\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
+　　Kpsewhich program　　　(C:\texlive\2014\bin\win64\kpsewhich.exe または C:\texlive\2014\bin\win32\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe)<br>
 
 ***
 
@@ -76,7 +76,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\uplatex.exe</ins> または <ins>C:\texlive\2013\bin\win32\uplatex.exe</ins> または <ins>C:\w32tex\bin64\uplatex.exe</ins> または <ins>C:\w32tex\bin\uplatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\uplatex.exe</ins> または <ins>C:\texlive\2014\bin\win32\uplatex.exe</ins> または <ins>C:\w32tex\bin64\uplatex.exe</ins> または <ins>C:\w32tex\bin\uplatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -93,7 +93,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\pdflatex.exe</ins> または <ins>C:\texlive\2013\bin\win32\pdflatex.exe</ins> または <ins>C:\w32tex\bin64\pdflatex.exe</ins> または <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\pdflatex.exe</ins> または <ins>C:\texlive\2014\bin\win32\pdflatex.exe</ins> または <ins>C:\w32tex\bin64\pdflatex.exe</ins> または <ins>C:\w32tex\bin\pdflatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -110,7 +110,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\xelatex.exe</ins> または <ins>C:\texlive\2013\bin\win32\xelatex.exe</ins> または <ins>C:\w32tex\bin64\xelatex.exe</ins> または <ins>C:\w32tex\bin\xelatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\xelatex.exe</ins> または <ins>C:\texlive\2014\bin\win32\xelatex.exe</ins> または <ins>C:\w32tex\bin64\xelatex.exe</ins> または <ins>C:\w32tex\bin\xelatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -128,7 +128,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\lualatex.exe</ins> または <ins>C:\texlive\2013\bin\win32\lualatex.exe</ins> または <ins>C:\w32tex\bin64\lualatex.exe</ins> または <ins>C:\w32tex\bin\lualatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\lualatex.exe</ins> または <ins>C:\texlive\2014\bin\win32\lualatex.exe</ins> または <ins>C:\w32tex\bin64\lualatex.exe</ins> または <ins>C:\w32tex\bin\lualatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -142,7 +142,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\luajitlatex.exe</ins> または <ins>C:\texlive\2013\bin\win32\luajitlatex.exe</ins> または <ins>C:\w32tex\bin64\luajitlatex.exe</ins> または <ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\luajitlatex.exe</ins> または <ins>C:\texlive\2014\bin\win32\luajitlatex.exe</ins> または <ins>C:\w32tex\bin64\luajitlatex.exe</ins> または <ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -160,7 +160,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\upbibtex.exe</ins> または <ins>C:\texlive\2013\bin\win32\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins> または <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\upbibtex.exe</ins> または <ins>C:\texlive\2014\bin\win32\upbibtex.exe</ins> または <ins>C:\w32tex\bin64\upbibtex.exe</ins> または <ins>C:\w32tex\bin\upbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -174,7 +174,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\bibtex.exe</ins> または <ins>C:\texlive\2013\bin\win32\bibtex.exe</ins> または <ins>C:\w32tex\bin64\bibtex.exe</ins> または <ins>C:\w32tex\bin\bibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\bibtex.exe</ins> または <ins>C:\texlive\2014\bin\win32\bibtex.exe</ins> または <ins>C:\w32tex\bin64\bibtex.exe</ins> または <ins>C:\w32tex\bin\bibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -188,7 +188,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\bibtexu.exe</ins> または <ins>C:\texlive\2013\bin\win32\bibtexu.exe</ins> または <ins>C:\w32tex\bin64\bibtexu.exe</ins> または <ins>C:\w32tex\bin\bibtexu.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\bibtexu.exe</ins> または <ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins> または <ins>C:\w32tex\bin64\bibtexu.exe</ins> または <ins>C:\w32tex\bin\bibtexu.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -205,8 +205,8 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\biber.exe</ins> または <ins>C:\texlive\2013\bin\win32\biber.exe</ins> または <ins>C:\w32tex\bin64\biber.exe</ins> または <ins>C:\w32tex\bin\biber.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\biber.exe</ins> または <ins>C:\texlive\2014\bin\win32\biber.exe</ins> または <ins>C:\w32tex\bin64\biber.exe</ins> または <ins>C:\w32tex\bin\biber.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>--bblencoding=utf8 -u -U --output_safechar "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
@@ -222,7 +222,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2013\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
@@ -239,7 +239,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2013\bin\win32\dvips.exe</ins> または <ins>C:\w32tex\bin64\dvips.exe</ins> または <ins>C:\w32tex\bin\dvips.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvips.exe</ins> または <ins>C:\w32tex\bin64\dvips.exe</ins> または <ins>C:\w32tex\bin\dvips.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
@@ -256,7 +256,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2013\bin\win32\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin64\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin64\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
@@ -273,7 +273,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2013\bin\win64\ps2pdf.exe</ins> または <ins>C:\texlive\2013\bin\win32\ps2pdf.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2014\bin\win64\ps2pdf.exe</ins> または <ins>C:\texlive\2014\bin\win32\ps2pdf.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -290,7 +290,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2013\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2013\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\mendex.exe</ins> または <ins>C:\w32tex\bin64\mendex.exe</ins> または <ins>C:\w32tex\bin\mendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
@@ -309,19 +309,19 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\texlive\2013\bin\win64\uplatex.exe または C:\texlive\2013\bin\win32\uplatex.exe または C:\w32tex\bin64\uplatex.exe または C:\w32tex\bin\uplatex.exe)<br>
+　　Latex program　　　(C:\texlive\2014\bin\win64\uplatex.exe または C:\texlive\2014\bin\win32\uplatex.exe または C:\w32tex\bin64\uplatex.exe または C:\w32tex\bin\uplatex.exe)<br>
 　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\texlive\2013\bin\win64\pdflatex.exe または C:\texlive\2013\bin\win32\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe または C:\w32tex\bin\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\texlive\2013\bin\win64\xelatex.exe または C:\texlive\2013\bin\win32\xelatex.exe または C:\w32tex\bin64\xelatex.exe または C:\w32tex\bin\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\texlive\2013\bin\win64\lualatex.exe または C:\texlive\2013\bin\win32\lualatex.exe または C:\w32tex\bin64\lualatex.exe または C:\w32tex\bin\lualatex.exe)<br>
-　　Bibtex program　　　(C:\texlive\2013\bin\win64\upbibtex.exe または C:\texlive\2013\bin\win32\upbibtex.exe または C:\w32tex\bin64\upbibtex.exe または C:\w32tex\bin\upbibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\texlive\2013\bin\win64\biber.exe または C:\texlive\2013\bin\win32\biber.exe または C:\w32tex\bin64\biber.exe または C:\w32tex\bin\biber.exe)<br>
-　　Makeindex program　　　(C:\texlive\2013\bin\win64\mendex.exe または C:\texlive\2013\bin\win32\mendex.exe または C:\w32tex\bin64\mendex.exe または C:\w32tex\bin\mendex.exe)<br>
-　　Dvips program　　　(C:\texlive\2013\bin\win64\dvips.exe または C:\texlive\2013\bin\win32\dvips.exe または C:\w32tex\bin64\dvips.exe または C:\w32tex\bin\dvips.exe)<br>
-　　Dvipdf program　　　(C:\texlive\2013\bin\win64\dvipdfmx.exe または C:\texlive\2013\bin\win32\dvipdfmx.exe または C:\w32tex\bin64\dvipdfmx.exe または C:\w32tex\bin\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat または C:\texlive\2013\bin\win64\ps2pdf.exe または C:\texlive\2013\bin\win32\ps2pdf.exe)<br>
-　　Makeindex program (nomencl)　　　(C:\texlive\2013\bin\win64\mendex.exe または C:\texlive\2013\bin\win32\mendex.exe または C:\w32tex\bin64\mendex.exe または C:\w32tex\bin\mendex.exe)<br>
-　　Kpsewhich program　　　(C:\texlive\2013\bin\win64\kpsewhich.exe または C:\texlive\2013\bin\win32\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe)<br>
+　　PdfLatex program　　　(C:\texlive\2014\bin\win64\pdflatex.exe または C:\texlive\2014\bin\win32\pdflatex.exe または C:\w32tex\bin64\pdflatex.exe または C:\w32tex\bin\pdflatex.exe)<br>
+　　XeLatex program　　　(C:\texlive\2014\bin\win64\xelatex.exe または C:\texlive\2014\bin\win32\xelatex.exe または C:\w32tex\bin64\xelatex.exe または C:\w32tex\bin\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\texlive\2014\bin\win64\lualatex.exe または C:\texlive\2014\bin\win32\lualatex.exe または C:\w32tex\bin64\lualatex.exe または C:\w32tex\bin\lualatex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2014\bin\win64\upbibtex.exe または C:\texlive\2014\bin\win32\upbibtex.exe または C:\w32tex\bin64\upbibtex.exe または C:\w32tex\bin\upbibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\texlive\2014\bin\win64\biber.exe または C:\texlive\2014\bin\win32\biber.exe または C:\w32tex\bin64\biber.exe または C:\w32tex\bin\biber.exe)<br>
+　　Makeindex program　　　(C:\texlive\2014\bin\win64\mendex.exe または C:\texlive\2014\bin\win32\mendex.exe または C:\w32tex\bin64\mendex.exe または C:\w32tex\bin\mendex.exe)<br>
+　　Dvips program　　　(C:\texlive\2014\bin\win64\dvips.exe または C:\texlive\2014\bin\win32\dvips.exe または C:\w32tex\bin64\dvips.exe または C:\w32tex\bin\dvips.exe)<br>
+　　Dvipdf program　　　(C:\texlive\2014\bin\win64\dvipdfmx.exe または C:\texlive\2014\bin\win32\dvipdfmx.exe または C:\w32tex\bin64\dvipdfmx.exe または C:\w32tex\bin\dvipdfmx.exe)<br>
+　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat または C:\texlive\2014\bin\win64\ps2pdf.exe または C:\texlive\2014\bin\win32\ps2pdf.exe)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2014\bin\win64\mendex.exe または C:\texlive\2014\bin\win32\mendex.exe または C:\w32tex\bin64\mendex.exe または C:\w32tex\bin\mendex.exe)<br>
+　　Kpsewhich program　　　(C:\texlive\2014\bin\win64\kpsewhich.exe または C:\texlive\2014\bin\win32\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe)<br>
 
 ***
 
@@ -494,7 +494,7 @@ SumatraPDF を使用する場合は，
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2013\tlpkg\texworks\texworks.exe</ins> (TeX Live の場合) <ins>C:\w32tex\share\texworks\TeXworks.exe</ins> (W32TeX の場合)<br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2014\tlpkg\texworks\texworks.exe</ins> (TeX Live の場合) <ins>C:\w32tex\share\texworks\TeXworks.exe</ins> (W32TeX の場合)<br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
@@ -517,7 +517,7 @@ SumatraPDF を使用する場合は，
 
 TeXworks を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe (TeX Live の場合) C:\w32tex\share\texworks\TeXworks.exe (W32TeX の場合))　</span><br>
+> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2014\tlpkg\texworks\texworks.exe (TeX Live の場合) C:\w32tex\share\texworks\TeXworks.exe (W32TeX の場合))　</span><br>
 
 の優先度を一番上にします．
 
@@ -653,7 +653,7 @@ Adobe Reader を使用する場合は，
 
 　ビューアー構成 (優先度降順)：<br>
 　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))<br>
-　TeXworks (C:\texlive\2013\tlpkg\texworks\texworks.exe (TeX Live の場合) C:\w32tex\share\texworks\TeXworks.exe (W32TeX の場合))<br>
+　TeXworks (C:\texlive\2014\tlpkg\texworks\texworks.exe (TeX Live の場合) C:\w32tex\share\texworks\TeXworks.exe (W32TeX の場合))<br>
 　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe (32-bit Windows の場合))<br>
