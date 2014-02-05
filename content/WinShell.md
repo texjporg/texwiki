@@ -9,9 +9,9 @@ pukiwiki: "WinShell"
 
 <strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。</strong><br>
 
-<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境をおすすめします．</strong><br>
+<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境をおすすめします．</strong><br>
 
-## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -74,7 +74,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 エンコーディングを UTF-8 に変更して
 
@@ -129,7 +129,6 @@ UTF-8 を使用したい方は
 
 - [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
-- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境を使用してください．
@@ -248,6 +247,13 @@ DDE を使用しない場合は PDFView を以下のように設定します．
 　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
 
 ***
+
+### 主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題がある → Ruby, Windows PowerShell, バッチファイル などを使用する {#v088befc}
+
+WinShell は主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題があります．<br>
+WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;s を2回以上使用すると WinShell がクラッシュします．<br>
+Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です．<br>
+Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です．<br>
 
 ### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用する {#n7cba889}
 
