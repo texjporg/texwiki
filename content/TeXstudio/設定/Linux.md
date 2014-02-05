@@ -13,9 +13,12 @@ pukiwiki: "TeXstudio/設定/Linux"
 
 ### コマンド {#fdb50ca9}
 
+PDFビューアは，組み込みPDFビューアと外部PDFビューアを選択するようになっているので好きな方を選択してください．<br>
+組み込みPDFビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．<br>
 コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．<br>
 コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．<br>
+コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
 
 ***
 
@@ -233,10 +236,6 @@ BibTeX
 
 : upbibtex %
 
-: bibtexu %
-
-: bibtex %
-
 BibTex 8ビット
 : &nbsp;
 
@@ -252,9 +251,9 @@ Makeindex
 
 : mendex %.idx
 
-: makeindex %.idx
-
 Texindy
+: &nbsp;
+
 : texindy %.idx
 
 Makeglossary
@@ -266,8 +265,6 @@ Metapost
 : &nbsp;
 
 : upmpost -interaction=nonstopmode %
-
-: mpost -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
@@ -283,14 +280,6 @@ Latexmk
 : &nbsp;
 
 : latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
-
-: latexmk -e "$pdflatex=q/pdflatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/makeindex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/lualatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/luajitlatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
-
-: latexmk -e "$pdflatex=q/xelatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$makeindex=q/texindy &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdf -silent %
 
 SVN
 : &nbsp;
