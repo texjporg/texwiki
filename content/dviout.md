@@ -174,9 +174,9 @@ Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/
 - [ftp://ftp.kddilabs.jp/TeX/dviout/current/](ftp://ftp.kddilabs.jp/TeX/dviout/current/) (安定版のミラー)
 - [ftp://ftp.kddilabs.jp/CTAN/dviware/dviout/](ftp://ftp.kddilabs.jp/CTAN/dviware/dviout/) (安定版のミラー)
 
-64-bit dviout の場合は dviout-x64.zip をダウンロードします。<br>
-32-bit dviout の場合は tex318w.zip をダウンロードします。<br>
-dviout-x64.zip または tex318w.zip を右クリックします。<br>
+64-bit dviout を使用する場合は dviout-x64.zip と tex318w.zip をダウンロードします。<br>
+32-bit dviout を使用する場合は tex318w.zip をダウンロードします。<br>
+ダウンロードした zip ファイルを右クリックします。<br>
 
 ***
 
@@ -204,7 +204,8 @@ dviout-x64.zip または tex318w.zip を右クリックします。<br>
 
 ***
 
-32-bit dviout の場合は \[名前の変更(M)\] を選択して dviout という名前のフォルダー名に変更します。<br>
+32-bit dviout を使用する場合は \[名前の変更(M)\] を選択して dviout という名前のフォルダー名に変更します。<br>
+64-bit dviout を使用する場合は 32-bit dviout のフォルダーの dviout.exe と dviout.chm 以外のファイルを dviout-x64 フォルダーにコピーします．<br>
 dviout-x64 フォルダーまたは dviout フォルダーを C:\w32tex (W32TeX をインストールしたフォルダー) に移動させます。<br>
 dviout-x64 フォルダーまたは dviout フォルダーの dviout.exe を右クリックします。<br>
 
