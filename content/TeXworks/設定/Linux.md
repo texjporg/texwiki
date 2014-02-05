@@ -190,6 +190,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
@@ -216,6 +218,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -246,6 +250,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
@@ -270,6 +276,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$pdflatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
@@ -296,6 +304,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
@@ -320,6 +330,8 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$pdflatex=q/xelatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
