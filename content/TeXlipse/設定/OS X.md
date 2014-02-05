@@ -158,7 +158,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/texbin/biber</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>--bblencoding=utf8 -u -U --output_safechar "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
 <br>
