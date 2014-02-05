@@ -186,9 +186,9 @@ $ popd
 - [CMake](http://www.cmake.org/) をインストールします．
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz
-$ tar xvf cmake-2.8.12.1.tar.gz
-$ pushd cmake-2.8.12.1
+$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
+$ tar xvf cmake-2.8.12.2.tar.gz
+$ pushd cmake-2.8.12.2
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
@@ -839,9 +839,9 @@ $ popd
 - [gettext](http://www.gnu.org/software/gettext/) をインストールします．
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.1.tar.gz
-$ tar xvf gettext-0.18.3.1.tar.gz
-$ pushd gettext-0.18.3.1
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.2.tar.gz
+$ tar xvf gettext-0.18.3.2.tar.gz
+$ pushd gettext-0.18.3.2
 $ ./configure --prefix=/mingw
 ```
 
