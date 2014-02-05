@@ -17,7 +17,7 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 
 - [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2 の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim などの場合) {#q3ee8e1b}
+### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2 の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
 
 ***
 
