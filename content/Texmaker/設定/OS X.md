@@ -97,18 +97,6 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
 
-<ins>open -a Skim.app %.pdf</ins><br>
-
-<ins>open -a Preview.app %.pdf</ins><br>
-
-<ins>open -a TeXShop.app %.pdf</ins><br>
-
-<ins>open -a TeXworks.app %.pdf</ins><br>
-
-<ins>open -a "Adobe Reader.app" %.pdf</ins><br>
-
-<ins>open %.pdf</ins><br>
-
 <div style="clear:both"></div>
 
 <br>
