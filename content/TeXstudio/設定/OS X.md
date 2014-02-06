@@ -183,7 +183,7 @@ LuaLaTeX
 DviPs
 : &nbsp;
 
-: "/usr/texbin/dvips" -Ppdf -o %.ps %.dvi
+: ruby -e "cmd='/usr/texbin/dvips -Ppdf -z -f %.dvi'+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+'%.ps';system(cmd)"
 
 DviPng
 : &nbsp;
