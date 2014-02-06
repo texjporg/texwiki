@@ -66,7 +66,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 
 - [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
-- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
@@ -75,10 +74,8 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
-    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
 
