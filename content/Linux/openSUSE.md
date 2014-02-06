@@ -92,12 +92,6 @@ $ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
 $ sudo zypper install lyx
 ```
 
-## [Texmaker](/Texmaker/) {#ua730d97}
-
-```
-$ sudo zypper install texmaker
-```
-
 ## [TeXworks](/TeXworks/) {#n8431fb2}
 
 ```
