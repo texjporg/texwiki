@@ -76,31 +76,22 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 - [http://gentwoo.elisp.net/packages/app-office/lyx](http://gentwoo.elisp.net/packages/app-office/lyx)
 
-## [Texmaker](/Texmaker/) {#s4e0cb5d}
-
-- [http://gentwoo.elisp.net/packages/app-office/texmaker](http://gentwoo.elisp.net/packages/app-office/texmaker)
-
 ## [TeXworks](/TeXworks/) {#b5894e2b}
 
 ## [Emacs](/Emacs/) {#wd024ab5}
 
 - [http://gentwoo.elisp.net/packages/app-editors/emacs](http://gentwoo.elisp.net/packages/app-editors/emacs)
 
-### YaTeX {#bd731415}
-
-- [http://gentwoo.elisp.net/packages/app-emacs/yatex](http://gentwoo.elisp.net/packages/app-emacs/yatex)
-- [http://packages.gentoo.org/package/app-emacs/yatex](http://packages.gentoo.org/package/app-emacs/yatex)
-
 ### AUCTeX {#vbff1741}
 
 - [http://gentwoo.elisp.net/packages/app-emacs/auctex](http://gentwoo.elisp.net/packages/app-emacs/auctex)
 - [http://packages.gentoo.org/package/app-emacs/auctex](http://packages.gentoo.org/package/app-emacs/auctex)
 
+### YaTeX {#bd731415}
+
+- [http://gentwoo.elisp.net/packages/app-emacs/yatex](http://gentwoo.elisp.net/packages/app-emacs/yatex)
+- [http://packages.gentoo.org/package/app-emacs/yatex](http://packages.gentoo.org/package/app-emacs/yatex)
+
 ## [Vim](/Vim/) {#h4e75309}
 
 - [http://gentwoo.elisp.net/packages/app-editors/vim](http://gentwoo.elisp.net/packages/app-editors/vim)
-
-### Vim-LaTeX {#v9a32534}
-
-- [http://gentwoo.elisp.net/packages/app-vim/vim-latex](http://gentwoo.elisp.net/packages/app-vim/vim-latex)
-- [http://packages.gentoo.org/package/app-vim/vim-latex](http://packages.gentoo.org/package/app-vim/vim-latex)
