@@ -75,7 +75,6 @@ forward search を行うには TeX コマンドのオプションに -synctex=1 
 
 - [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
-- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
@@ -84,11 +83,9 @@ forward search を行うには TeX コマンドのオプションに -synctex=1 
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
-    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 
