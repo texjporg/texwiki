@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) (obsolete) → [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) または LaTeX Box を使用する {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) (obsolete) → [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) + LaTeX Box を使用する {#z8e30b5a}
 
 <img src="http://vim-latex.sourceforge.net/vim-latex.gif" alt="Vim-LaTeX" style="float:right">
 
@@ -89,6 +89,10 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 - [http://www.bookshelf.jp/2ch/unix/1232035011.html#45](http://www.bookshelf.jp/2ch/unix/1232035011.html#45)
 - [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
 - [https://code.google.com/p/vim/source/browse/src/mbyte.c](https://code.google.com/p/vim/source/browse/src/mbyte.c)
+
+<!-- **CTRL-J が使えない [#v27fb866] -->
+<!--  -->
+<!-- -[[vim-latexについて · Issue #523 · vim-jp/issues · GitHub:https://github.com/vim-jp/issues/issues/523]] -->
 
 ## インストール {#sbc289a6}
 
