@@ -400,7 +400,7 @@ ddeExecute server topic command = do
         getHDdeTransactionData hDdeData hConvClient = do
             hDdeTransactionData <- ddeClientTransaction (castPtr hDdeData) (-1) hConvClient nullPtr 0 xTYP_EXECUTE timeout nullPtr
             if hDdeTransactionData == nullPtr then throwIO $ userError "ddeClientTransaction Error" else return True
-            return hDdeData
+            return hDdeTransactionData
 
 main :: IO a
 main = do
