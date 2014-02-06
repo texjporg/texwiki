@@ -128,6 +128,25 @@ let g:quickrun_config = {
 
 ***
 
+#### Latexmk, SumatraPDF を使用する場合 {#xdc8fa7d}
+
+***
+
+```
+""
+"" quickrun
+""
+set noshellslash
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'latexmk',
+\       'exec': ['%c -gg -pdfdvi "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
+\   },
+\}
+```
+
+***
+
 ### OS X {#i9f3f366}
 
 動作未確認です．<br>
@@ -222,6 +241,24 @@ let g:quickrun_config = {
 
 ***
 
+#### Latexmk, open を使用する場合 {#k1fce662}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'latexmk',
+\       'exec': ['%c -gg -pdfdvi %s', 'open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
 ### Linux {#gf5cf76a}
 
 #### upLaTeX (ptex2pdf), xdg-open を使用する場合 {#he92df34}
@@ -308,6 +345,24 @@ let g:quickrun_config = {
 \   'tex': {
 \       'command': 'xelatex',
 \       'exec': ['%c -synctex=1 -interaction=nonstopmode %s', 'xdg-open %s:r.pdf']
+\   },
+\}
+```
+
+***
+
+#### Latexmk, xdg-open を使用する場合 {#mf599954}
+
+***
+
+```
+""
+"" quickrun
+""
+let g:quickrun_config = {
+\   'tex': {
+\       'command': 'latexmk',
+\       'exec': ['%c -gg -pdfdvi %s', 'xdg-open %s:r.pdf']
 \   },
 \}
 ```
