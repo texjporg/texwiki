@@ -196,7 +196,7 @@ LuaLaTeX
 DviPs
 : &nbsp;
 
-: dvips -Ppdf -o %.ps %.dvi
+: ruby -e "cmd='dvips -Ppdf -z -f %.dvi'+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+'%.ps';system(cmd)"
 
 DviPng
 : &nbsp;
