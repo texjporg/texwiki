@@ -199,7 +199,7 @@ LuaLaTeX
 DviPs
 : &nbsp;
 
-: dvips.exe -Ppdf -o %.ps %.dvi
+: ruby.exe -e "cmd='dvips -Ppdf -z -f %.dvi'+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+'%.ps';system(cmd)"
 
 DviPng
 : &nbsp;
@@ -270,7 +270,7 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: latexmk -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+: latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/mendex &#x25;&#x25;O -U -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 SVN
 : &nbsp;
