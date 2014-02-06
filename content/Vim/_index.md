@@ -109,7 +109,8 @@ Vim は，チャリティウェアです．<br>
 
 ## 不具合 {#h94d310c}
 
-- [Issues](https://code.google.com/p/vim/issues/list)
+- [https://code.google.com/p/vim/issues/list](https://code.google.com/p/vim/issues/list)
+- [https://github.com/vim-jp/issues/issues](https://github.com/vim-jp/issues/issues)
 
 ## Vim で LaTeX {#i2be46c6}
 
@@ -171,9 +172,9 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 ### inverse search {#b8f7bf28}
 
-#### tex.vim, quickrun の場合 {#b099e4df}
+#### tex.vim, quickrun, LaTeX Box の場合 {#b099e4df}
 
-tex.vim, quickrun の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
+tex.vim, quickrun, LaTeX Box の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
