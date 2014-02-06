@@ -642,8 +642,7 @@ function! AdobeReader()
 endfunction
 
 noremap <expr> <C-K>f TypesetFile()
-noremap <expr> <C-K>b BibTeX()
-noremap <expr> <C-K>i MakeIndex()
+noremap <expr> <C-K>l Latexmk('latexmk')
 noremap <expr> <C-K>v ViewFile()
 ```
 
@@ -658,8 +657,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
 > <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; l</td><td>Latexmk</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
@@ -694,8 +692,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
 > <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; l</td><td>Latexmk</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
@@ -732,8 +729,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
 > <tr><td>&lt;Ctrl-K&gt; f</td><td>タイプセット</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; b</td><td>BibTeX</td></tr>
-> <tr><td>&lt;Ctrl-K&gt; i</td><td>MakeIndex</td></tr>
+> <tr><td>&lt;Ctrl-K&gt; l</td><td>Latexmk</td></tr>
 > <tr><td>&lt;Ctrl-K&gt; v</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
