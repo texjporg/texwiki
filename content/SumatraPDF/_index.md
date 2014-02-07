@@ -66,7 +66,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 ### forward search {#m71d9172}
 
-forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
+forward search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
 
 以下のエディタ・マクロ・プラグインは SumatraPDF で forward and inverse search が可能です．
@@ -104,7 +104,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．<br>
 どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．<br>
 
-[TeX Live](</TeX Live/>) に含まれている [TeXworks](/TeXworks/) であれば
+64-bit Windows での [TeXstudio](/TeXstudio/) であれば
 
 ***
 
@@ -114,11 +114,11 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 　　逆順検索コマンドラインの設定<br>
 　　PDF ドキュメント上でダブルクリックしたときに呼び出すコマンドラインを入<br>
 　　力:<br>
-　　<ins>"C:\texlive\2014\tlpkg\texworks\texworks.exe" --position=%l "%f"</ins><br>
+　　<ins>"C:\Program Files (x86)\TeXstudio\texstudio.exe" "%f" -line %l</ins><br>
 
 ***
 
-[W32TeX](/W32TeX/) に含まれている [TeXworks](/TeXworks/) であれば
+32-bit Windows での [TeXstudio](/TeXstudio/) であれば
 
 ***
 
@@ -128,7 +128,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 　　逆順検索コマンドラインの設定<br>
 　　PDF ドキュメント上でダブルクリックしたときに呼び出すコマンドラインを入<br>
 　　力:<br>
-　　<ins>"C:\w32tex\share\texworks\TeXworks.exe" --position=%l "%f"</ins><br>
+　　<ins>"C:\Program Files\TeXstudio\texstudio.exe" "%f" -line %l</ins><br>
 
 ***
 
