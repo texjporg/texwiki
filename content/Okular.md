@@ -123,7 +123,7 @@ $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 
 \[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\]
 
-TeXworks の場合は<br>
+TeXstudio の場合は<br>
 エディタ の項目に
 
 エディタ
@@ -137,9 +137,9 @@ TeXworks の場合は<br>
 : &nbsp;
 
 ```
-texworks --position=%l
+texstudio "%f" -line %l
 ```
 
 を設定します．<br>
 
-Okular 上で Shift + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
+Okular 上で Shift + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
