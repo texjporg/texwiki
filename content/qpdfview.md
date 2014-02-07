@@ -87,7 +87,7 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
 　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[◆\]</ins><br>
 　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
-　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
+　　　　Source editor:　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
 
 ***
 
@@ -124,11 +124,11 @@ $ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
 
 \[Edit\]-\[Settings...\]-\[Behaviour\]
 
-TeXworks の場合は<br>
+TeXstudio の場合は<br>
 Source editor の項目に
 
 ```
-texworks --position=%2 "%1"
+texstudio "%1" -line %2
 ```
 
 を設定します．<br>
@@ -148,8 +148,8 @@ texworks --position=%2 "%1"
 　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
 　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[◆\]</ins><br>
 　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[▼\]</ins><br>
-　　　　Source editor:　　　　　　　　　　　　<ins>texworks --position=%2 "%1"</ins><br>
+　　　　Source editor:　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
 
 ***
 
-qpdfview 上でダブルクリックすると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
+qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
