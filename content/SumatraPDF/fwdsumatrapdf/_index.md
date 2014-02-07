@@ -17,7 +17,7 @@ pukiwiki: "SumatraPDF/fwdsumatrapdf"
 ## fwdsumatrapdf とは {#yd16dc0f}
 
 fwdsumatrapdf は SumatraPDF で forward search を行うツールです．<br>
-forward search を行うには TeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
+forward search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 
 ### お知らせ {#ebfb06f5}
 
@@ -81,6 +81,8 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 
 ## 関連リンク {#c84cbf92}
 
+- [SumatraPDF Revision: r8607 - tweak DDEExecute (fix some edge cases)](https://code.google.com/p/sumatrapdf/source/detail?r=8607)
+- [Sumatra portable 2.4_Forward Search color not used?](http://forums.fofou.org/sumatrapdf/topic?id=3184115)
 - [DDEML Functions (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/ff468833(v=vs.85).aspx>)
 - [Windows Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa383751(v=vs.85).aspx>)
 - [The New Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa384264(v=vs.85).aspx>)
