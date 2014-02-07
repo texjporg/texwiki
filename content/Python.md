@@ -323,14 +323,14 @@ $ fwdevince hoge.pdf 30 hoge.tex
 
 のように実行すると Evince が起動して PDF ファイルの対応する行が赤い枠で囲まれて表示されます．
 
-invevince は例えば [TeXworks](/TeXworks/) の場合は
+invevince は例えば [TeXstudio](/TeXstudio/) の場合は
 
 ```
-$ evince hoge.pdf &
-$ invevince hoge.pdf 'texworks --position=%l "%f"'
+$ evince "hoge.pdf" &
+$ invevince "hoge.pdf" "texstudio '%f' -line %l"
 ```
 
-のように実行して Evince 上で Ctrl + 左クリックを実行すると TeXworks が起動して TeX 文書の対応する行にジャンプします．<br>
+のように実行して Evince 上で Ctrl + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
 
 ## 関連リンク {#z55d6188}
 
