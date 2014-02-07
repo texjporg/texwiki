@@ -126,7 +126,7 @@ Windows 8.1, 8, 7, Vista, XP
 　　　　　　　　◯ Unix/OSX　　　　　　　　　　　　　　　　　　　　◯ UTF-8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Little Endian<br>
-　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　<strong>ᐯ</strong>\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[Shift-JIS　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span> または <span style="color:#888888;background-color:#EEEEEE;">\[Encode in Shift-JIS　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　　　　　デフォルトの言語 ： <span style="color:Black;background-color:#EEEEEE;">\[Normal Text　　　<strong>ᐯ</strong>\]</span>　　　◯ <span style="color:#888888;background-color:#EEEEEE;">\[　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 
 <br>
 
@@ -208,6 +208,7 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 
 ## 関連リンク {#d8eabd2e}
 
+- [Windowsで快適にTeX](http://qiita.com/mpyw/items/28979ee8dbfdde4ddff6)
 - [WindowsでWebコーディング→Notepad++使えば良いとおもうよ！](http://blog.56doc.net/%E9%9B%91%E8%AB%87%E3%83%AD%E3%82%B0/windows%E3%81%A7web%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E2%86%92notepad-)
 - [TeX EditorとしてのNotepad++](http://www-al.nii.ac.jp/~kameda/blog/cmlog/1203230924.htm)
 - [GNU Octave, LaTeX, and Notepad++](http://www.tlhiv.org/ma497/software/)
