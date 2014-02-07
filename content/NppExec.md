@@ -627,7 +627,9 @@ GPLv3
 
 ## TeXworks との連携 {#f405549d}
 
-### TeXworks {#d203fe0e}
+### forward search {#h0f139e4}
+
+#### TeXworks {#d203fe0e}
 
 ***
 
@@ -654,7 +656,9 @@ GPLv3
 
 ## Adobe Reader との連携 {#wbbe918a}
 
-### pdfupLaTeXA {#w63fc0bc}
+### forward search {#safe0b18}
+
+#### pdfupLaTeXA {#w63fc0bc}
 
 ***
 
@@ -680,7 +684,7 @@ GPLv3
 
 ***
 
-### pdfupLaTeX2A {#te20483a}
+#### pdfupLaTeX2A {#te20483a}
 
 ***
 
@@ -706,7 +710,7 @@ GPLv3
 
 ***
 
-### pdfLaTeXA {#w4e87b4b}
+#### pdfLaTeXA {#w4e87b4b}
 
 ***
 
@@ -732,7 +736,7 @@ GPLv3
 
 ***
 
-### LuaLaTeXA {#j6d6a21e}
+#### LuaLaTeXA {#j6d6a21e}
 
 ***
 
@@ -758,7 +762,7 @@ GPLv3
 
 ***
 
-### LuaJITLaTeXA {#b880cc86}
+#### LuaJITLaTeXA {#b880cc86}
 
 ***
 
@@ -784,7 +788,7 @@ GPLv3
 
 ***
 
-### XeLaTeXA {#e131fdc9}
+#### XeLaTeXA {#e131fdc9}
 
 ***
 
