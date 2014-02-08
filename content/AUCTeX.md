@@ -159,7 +159,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.bat %%O %%S %%D/\" -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX2"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX" "latexmk -e \"$pdflatex=q/pdflatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
+                                   '("Latexmk-pdfLaTeX"
+                                     "latexmk -e \"$pdflatex=q/pdflatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
