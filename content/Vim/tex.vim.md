@@ -33,8 +33,7 @@ let g:tex_flavor='latex'
 補完機能が必要な場合は [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
 Latexmk を使用する場合は [Latexmk](/Latexmk/) の設定をしてください．<br>
 LaTeX Box を使用すると latexmk を使用してバックグラウンドでコンパイルができます．<br>
-tex.vim が動作しない場合は [quickrun](/quickrun/), LaTeX Box を使用してタイプセットしてください．<br>
-OS X の場合は [ftpluginのtex.vim](http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html) も参考になります．<br>
+tex.vim が動作しない場合は [quickrun](/quickrun/), LaTeX Box を使用してタイプセットしてください．<br> <!-- OS X の場合は [[ftpluginのtex.vim:http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html]] も参考になります．~ -->
 
 ***
 
