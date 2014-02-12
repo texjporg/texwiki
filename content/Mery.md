@@ -9,9 +9,9 @@ pukiwiki: "Mery"
 
 ## [Mery](http://www.haijin-boys.com/) {#l6f5ffa3}
 
-<img src="http://www.haijin-boys.com/weblog/uploads/330379294ff046ba56137.png" alt="Mery" style="float:right">
+<!-- #ref(http://www.haijin-boys.com/weblog/uploads/330379294ff046ba56137.png,right,around,nolink,Mery) -->
 
-<!-- #ref(http://www.haijin-boys.com/wiki/skins/common/images/wiki.png,right,around,nolink,Mery) -->
+<img src="http://www.haijin-boys.com/wiki/skins/common/images/wiki.png" alt="Mery" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
