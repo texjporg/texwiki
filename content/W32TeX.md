@@ -758,7 +758,7 @@ C:\work>uplatex -sjis-terminal sourcename.tex
 ```
 
 ```
-C:\work>dvipdfmx sourcename.tex 2>&1 | utf8prin
+C:\work>dvipdfmx sourcename.dvi 2>&1 | utf8prin
 ```
 
 スクリーンが「Unicode(\*)」のものは、そのままでも文字化けせずに表示させることができます。<br>
