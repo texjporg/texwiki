@@ -9,10 +9,10 @@ pukiwiki: "GitHub"
 
 ## [GitHub](https://github.com/) {#rb09b0aa}
 
-- [zr-tex8r - GitHub](https://github.com/zr-tex8r)
+- [zr-tex8r (Takayuki YATO) · GitHub](https://github.com/zr-tex8r)
 - [zr-tex8r&#39;s Gists](https://gist.github.com/zr-tex8r)
-- [kmaed/kmbeamer · GitHub](https://github.com/kmaed/kmbeamer)
-- [kmaed/pdffill · GitHub](https://github.com/kmaed/pdffill)
+- [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
+- [kmaed (Kazuki Maeda) · GitHub](https://github.com/kmaed)
 - [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
 - [DVI のパース](https://gist.github.com/anonymous/4318395) ([swtw7466](https://github.com/swtw7466))
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
