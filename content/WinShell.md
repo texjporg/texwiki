@@ -11,7 +11,7 @@ pukiwiki: "WinShell"
 
 <strong>WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境をおすすめします．</strong><br>
 
-## [WinShell](http://www.winshell.org/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) (非推奨) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
