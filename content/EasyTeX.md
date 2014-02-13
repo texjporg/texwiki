@@ -7,7 +7,7 @@ pukiwiki: "EasyTeX"
 
 # EasyTeX
 
-## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#et3357}
+## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) (非推奨) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#et3357}
 
 <img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111214022.png" alt="EasyTeX" style="float:right">
 
