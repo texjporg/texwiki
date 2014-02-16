@@ -62,7 +62,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ### Debian {#rf817124}
 
-- [http://packages.debian.org/ja/evince](http://packages.debian.org/ja/evince)
+- [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
 ### Fedora {#jbf882d0}
 
