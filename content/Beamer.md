@@ -104,7 +104,7 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 
 ### Debian {#h1b8334f}
 
-- [Debian -- パッケージ検索結果 -- latex-beamer](http://packages.debian.org/ja/latex-beamer)
+- [Debian -- パッケージ検索結果 -- latex-beamer](https://packages.debian.org/ja/latex-beamer)
 
 ### Arch Linux {#h5c71065}
 
