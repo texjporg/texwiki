@@ -44,7 +44,7 @@ TeX Live には標準で含まれています．<br>
 
 #### Debian {#v3930077}
 
-- [Debian -- パッケージ検索結果 -- cm-super](http://packages.debian.org/ja/cm-super)
+- [Debian -- パッケージ検索結果 -- cm-super](https://packages.debian.org/ja/cm-super)
 
 ### W32TeX {#e991fdd9}
 
