@@ -60,7 +60,7 @@ KDE
 
 ### Debian {#te2ad223}
 
-- [Debian -- パッケージ検索結果 -- kile](http://packages.debian.org/ja/kile)
+- [Debian -- パッケージ検索結果 -- kile](https://packages.debian.org/ja/kile)
 
 ### Fedora {#zdfde6e5}
 
