@@ -19,7 +19,7 @@ pukiwiki: "Ghostscript/Linux"
 
 #### Debian {#e2250e99}
 
-- [http://packages.debian.org/ja/ghostscript](http://packages.debian.org/ja/ghostscript)
+- [https://packages.debian.org/ja/ghostscript](https://packages.debian.org/ja/ghostscript)
 
 #### Fedora {#v3e95c6b}
 
