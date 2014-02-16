@@ -57,8 +57,8 @@ $ pacman -S python
 
 #### Debian {#h38e333d}
 
-- [http://packages.debian.org/ja/python](http://packages.debian.org/ja/python)
-- [http://packages.debian.org/ja/python3](http://packages.debian.org/ja/python3)
+- [https://packages.debian.org/ja/python](https://packages.debian.org/ja/python)
+- [https://packages.debian.org/ja/python3](https://packages.debian.org/ja/python3)
 
 #### Fedora {#y61bb303}
 
