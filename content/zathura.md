@@ -75,7 +75,7 @@ Version 0.2.1 で [SyncTeX (inverse search) に対応](https://git.pwmt.org/?p=z
 
 ### Debian {#x8dcc844}
 
-- [http://packages.debian.org/ja/zathura](http://packages.debian.org/ja/zathura)
+- [https://packages.debian.org/ja/zathura](https://packages.debian.org/ja/zathura)
 
 ### Fedora {#f03f2bfa}
 
