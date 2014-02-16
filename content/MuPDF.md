@@ -131,7 +131,7 @@ $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg 
 
 ### Debian {#ve64b6e7}
 
-- [http://packages.debian.org/ja/mupdf](http://packages.debian.org/ja/mupdf)
+- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
 
 ### Fedora {#k5d2c514}
 
