@@ -49,7 +49,7 @@ KDE
 
 ### Debian {#j00dbf39}
 
-- [http://packages.debian.org/ja/okular](http://packages.debian.org/ja/okular)
+- [https://packages.debian.org/ja/okular](https://packages.debian.org/ja/okular)
 
 ### Fedora {#mf21deef}
 
