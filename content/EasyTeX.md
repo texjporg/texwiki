@@ -54,12 +54,6 @@ Windows 8.1, 8, 7, Vista, XP
 
 [TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
 
-## 注意点 {#c4b0bc45}
-
-### EasyTeX Version 3.317 で［TeXﾃｷｽﾄ(T)］ → ［文書クラス(D)］で 使用するﾊﾟｯｹｰｼﾞ に graphicx を選択した場合に \usepackage\[dvipdfm\]{graphicx} が記述される → \usepackage\[dvipdfmx\]{graphicx} に修正する {#w3135335}
-
-\usepackage\[dvipdfm\]{graphicx} が記述される場合は \usepackage\[dvipdfmx\]{graphicx} に修正してください．<br>
-
 ## 設定 {#l2b1dc1e}
 
 EasyTeX/設定 を参照．
