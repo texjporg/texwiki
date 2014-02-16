@@ -46,7 +46,7 @@ Linux
 
 ### Debian {#g4ce84b5}
 
-- [http://packages.debian.org/ja/qpdfview](http://packages.debian.org/ja/qpdfview)
+- [https://packages.debian.org/ja/qpdfview](https://packages.debian.org/ja/qpdfview)
 
 ### Fedora {#qa034e43}
 
