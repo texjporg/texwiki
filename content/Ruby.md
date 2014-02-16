@@ -79,8 +79,8 @@ $ pacman -S ruby
 
 #### Debian {#z226ac1e}
 
-- [http://packages.debian.org/ja/ruby](http://packages.debian.org/ja/ruby)
-- [http://packages.debian.org/ja/ruby2.0](http://packages.debian.org/ja/ruby2.0)
+- [https://packages.debian.org/ja/ruby](https://packages.debian.org/ja/ruby)
+- [https://packages.debian.org/ja/ruby2.1](https://packages.debian.org/ja/ruby2.1)
 
 #### Fedora {#c69aed3b}
 
