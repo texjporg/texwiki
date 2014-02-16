@@ -9,7 +9,7 @@ pukiwiki: "Linux/Debian"
 
 [Linux](/Linux/) > Debian GNU/Linux
 
-## [Debian GNU/Linux](http://www.debian.org) {#b76dbb44}
+## [Debian GNU/Linux](https://www.debian.org) {#b76dbb44}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Debian-OpenLogo.svg/200px-Debian-OpenLogo.svg.png" alt="Debian GNU/Linux" style="float:right">
 
@@ -20,20 +20,20 @@ pukiwiki: "Linux/Debian"
 Debian はフリーなオペレーティングシステムを作成するためのプロジェクトです．<br>
 Debian GNU/Linux は Debian Project によって作成された Linux ディストリビューションです．<br>
 
-- [Debian](http://www.debian.org)
+- [Debian](https://www.debian.org)
 
 <!-- **設定 [#n0611da8] -->
 <!-- -[[Debianリポジトリの設定方法:http://ftp-admin.blogspot.jp/2013/02/debian.html]] -->
 
 ## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#j310e7a0}
 
-- [Debian -- パッケージ検索結果 -- texlive-full](http://packages.debian.org/ja/texlive-full)
-- [Debian -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.debian.org/ja/texlive-lang-cjk)
-- [Debian -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.debian.org/ja/texlive-fonts-recommended)
-- [Debian -- パッケージ検索結果 -- latexmk](http://packages.debian.org/ja/latexmk)
-- [Debian -- パッケージ検索結果 -- ghostscript](http://packages.debian.org/ja/ghostscript)
-- [Debian -- sid の texlive パッケージに関する詳細](http://packages.debian.org/sid/texlive)
-- [http://packages.debian.org/ja/sid/tex/](http://packages.debian.org/ja/sid/tex/)
+- [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
+- [Debian -- パッケージ検索結果 -- texlive-lang-cjk](https://packages.debian.org/ja/texlive-lang-cjk)
+- [Debian -- パッケージ検索結果 -- texlive-fonts-recommended](https://packages.debian.org/ja/texlive-fonts-recommended)
+- [Debian -- パッケージ検索結果 -- latexmk](https://packages.debian.org/ja/latexmk)
+- [Debian -- パッケージ検索結果 -- ghostscript](https://packages.debian.org/ja/ghostscript)
+- [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
+- [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary)
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary)
@@ -81,7 +81,7 @@ $ sudo apt-get install python python3
 ## [Ruby](/Ruby/) <a id="ruby"></a> {#b036c19c}
 
 ```
-$ sudo apt-get install ruby2.0
+$ sudo apt-get install ruby2.1
 ```
 
 ## [Perl](/Perl/) <a id="perl"></a> {#t46cade6}
