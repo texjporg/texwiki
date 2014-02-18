@@ -7,7 +7,7 @@ pukiwiki: "Kile"
 
 # Kile
 
-## [Kile](http://kile.sourceforge.net/) (obsolete) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#pab65dd4}
+## [Kile](http://kile.sourceforge.net/) (非推奨) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#pab65dd4}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kile.svg/240px-Kile.svg.png" alt="Kile" style="float:right">
 
@@ -180,21 +180,6 @@ qpdfview Unique
 
 オプション:
 : --unique '%target'
-
-#### PdfViewer の場合 {#y3cb8479}
-
-\[新規...\]
-
-PdfViewer
-
-選択:
-: PdfViewer
-
-コマンド(<ins>M</ins>):
-: pdfviewer
-
-オプション:
-: '%target'
 
 ## 使い方 {#ub2acf7c}
 
