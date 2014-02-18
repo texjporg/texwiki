@@ -19,10 +19,15 @@ MiKTeX は TeX のディストリビューションです．<br>
 
 - [MiKTeX Project Page](http://miktex.org/)
     - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
+- [http://sourceforge.net/projects/miktex/](http://sourceforge.net/projects/miktex/)
 
 ### 動作環境 {#s7a44d8b}
 
 Windows 8.1, 8, 7, Vista, XP
+
+### ChangeLog {#o3eda5f2}
+
+- [http://sourceforge.net/p/miktex/code/HEAD/log/](http://sourceforge.net/p/miktex/code/HEAD/log/)
 
 ### 派生版 {#v2c807b8}
 
