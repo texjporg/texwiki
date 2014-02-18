@@ -65,8 +65,9 @@ xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファ�
 ### 画像の作り方、扱い方 {#kbcf5f4a}
 
 - “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG など）が取り込めない
-    - その画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
+    - 画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
         Windows PowerShell またはコマンド プロンプトで画像ファイルのあるディレクトリに移動します．<br>
+        [TeX入門/図表#図のファイル形式に応じた記述法・設定法](</TeX入門/図表/#o967961d>)を参照して<br>
         PDF ファイルの場合は
 
         ```
@@ -94,13 +95,7 @@ xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファ�
         \includegraphics[page=3,width=5cm]{sample.pdf}
         ```
 
-        とソース中に記述し、コンパイル時に
-
-        ```
-        --shell-escape-commands=extractbb
-        ```
-
-        オプションを付けて実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
+        とソース中に記述し dvipdfmx を実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
         <!-- -[[TeX と「TeX 以外」]] -->
 
 ### Tips {#de167df2}
