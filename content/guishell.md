@@ -9,7 +9,7 @@ pukiwiki: "guishell"
 
 [秀丸エディタ](</秀丸エディタ/>) > guishell, TeXmac
 
-## [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) (obsolete) → 祝鳥 を使用する {#h2793999}
+## [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html) (非推奨) → 祝鳥 を使用する {#h2793999}
 
 [guishell, TeXmac](http://argent.shinshu-u.ac.jp/~otobe/prog/experimental.html)
 guishell 1.39.2 (Win32版, x64版, ソースファイル), TeXmac 2.17 (秀丸8以降・x64対応)
