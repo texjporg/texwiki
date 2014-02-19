@@ -19,6 +19,20 @@ pukiwiki: "WinShell"
 
 WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です．
 
+- [WinShell - LaTeX User Front End](http://www.winshell.org/)
+
+### お知らせ {#z73b9e72}
+
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
+『LaTeX2e 美文書作成入門』
+([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/), [改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．<br>
+
+### 動作環境 {#f8ed906d}
+
+Windows 8.1, 8, 7, Vista, XP
+
+### 特徴 {#mba54fc6}
+
 WinShell には
 
 - テキストエディタ
@@ -31,18 +45,6 @@ WinShell には
 - ユーザー定義オプション
 
 などの機能があります．
-
-- [WinShell - LaTeX User Front End](http://www.winshell.org/)
-
-### お知らせ {#z73b9e72}
-
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
-『LaTeX2e 美文書作成入門』
-([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/), [改訂第5版](http://oku.edu.mie-u.ac.jp/~okumura/bibun5/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．<br>
-
-### 動作環境 {#f8ed906d}
-
-Windows 8.1, 8, 7, Vista, XP
 
 ### 日本語言語ファイル {#z273ed84}
 
@@ -121,7 +123,6 @@ Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reade
 Adobe Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．<br>
 
 - [WinShellのCannot start AcrobatReader or open the document.](http://d.hatena.ne.jp/imasusen/20131128/1385574812)
-- [Adobe Reader XI: pdfView cannot be used](http://www.winshell.org/modules/smartfaq/faq.php?faqid=16)
 
 WinShell 3.3.2.6 は Adobe Reader XI, Adobe Acrobat XI, SumatraPDF の DDE に対応しています．<br>
 DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．<br>
