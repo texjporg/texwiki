@@ -406,7 +406,7 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 
 [Latexmk - TeX Wiki](/Latexmk/) を参照．<br>
 
-### OMake (obsolete) → [Latexmk](/Latexmk/) を使用する {#df86b9ce}
+### OMake (非推奨) → [Latexmk](/Latexmk/) を使用する {#df86b9ce}
 
 [http://omake.metaprl.org/](http://omake.metaprl.org/)
 
