@@ -7,7 +7,7 @@ pukiwiki: "xyzzy"
 
 # xyzzy
 
-## xyzzy (obsolete) → [Emacs](/Emacs/) を使用する {#r2e32810}
+## xyzzy (非推奨) → [Emacs](/Emacs/) を使用する {#r2e32810}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -30,7 +30,6 @@ MIT License
 
 - [xyzzy 付属の LaTeX モード](https://github.com/xyzzy-022/xyzzy/blob/develop/lisp/LaTeX.l)
 - KyoTeX
-- [KaTeX](/KaTeX/)
 
 ## スクリプト {#ha3f5417}
 
