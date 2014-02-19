@@ -67,10 +67,6 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 - [http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/)
     - [コミットログ](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/log/)
 
-### スクリーンショット {#fcc0c5b2}
-
-<img src="http://vim-latex.sourceforge.net/screenshots/compilation-error.png" alt="Vim-LaTeX でのコンパイルエラー画面">
-
 ## [不具合](http://sourceforge.net/tracker/?group_id=52322&atid=466456) {#df88e09f}
 
 ### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → KeyRemap4MacBook を使用する {#p586f5da}
