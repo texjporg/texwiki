@@ -90,9 +90,13 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 - [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
 - [https://code.google.com/p/vim/source/browse/src/mbyte.c](https://code.google.com/p/vim/source/browse/src/mbyte.c)
 
-<!-- **CTRL-J が使えない [#v27fb866] -->
-<!--  -->
-<!-- -[[vim-latexについて · Issue #523 · vim-jp/issues · GitHub:https://github.com/vim-jp/issues/issues/523]] -->
+### CTRL-J が使えない → [https://github.com/vim-jp/issues/issues/523#issuecomment-35015892](https://github.com/vim-jp/issues/issues/523#issuecomment-35015892) {#v27fb866}
+
+- [vim-latexについて · Issue #523 · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/523)
+
+### \int　や　{\pi} という表示が白く変換して表示される → [https://github.com/vim-jp/issues/issues/529#issuecomment-35566960](https://github.com/vim-jp/issues/issues/529#issuecomment-35566960) {#ee220d93}
+
+- [vim-latexの表示について · Issue #529 · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/529)
 
 ## インストール {#sbc289a6}
 
