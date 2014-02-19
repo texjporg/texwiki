@@ -13,7 +13,7 @@ pukiwiki: "Vim/tex.vim"
 
 ## tex.vim {#rf521622}
 
-$HOME/vimfiles/ftplugin/tex.vim (Windows), $HOME/.vim/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
+$HOME/vimfiles/after/ftplugin/tex.vim (Windows), $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
 
 tex.vim を使用する場合は $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (OS X, Linux) に
 
@@ -37,8 +37,8 @@ tex.vim が動作しない場合は [quickrun](/quickrun/), LaTeX Box を使用�
 
 ***
 
-- $HOME/vimfiles/ftplugin/tex.vim (Windows の場合)
-- $HOME/.vim/ftplugin/tex.vim (OS X, Linux の場合)
+- $HOME/vimfiles/after/ftplugin/tex.vim (Windows の場合)
+- $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux の場合)
 
 ***
 
