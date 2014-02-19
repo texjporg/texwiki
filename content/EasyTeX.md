@@ -9,8 +9,6 @@ pukiwiki: "EasyTeX"
 
 ## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) (非推奨) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#et3357}
 
-<img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111214022.png" alt="EasyTeX" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
@@ -28,17 +26,6 @@ TeX の入力とコマンドの実行が簡単にできるソフトウェアで�
 
 Windows 8.1, 8, 7, Vista, XP
 
-### リリース情報/ChangeLog {#nc0d64ca}
-
-[中川仁のホームページ](http://www.juen.ac.jp/math/nakagawa/nakagawa.html)<br>
-[変更点](http://www.juen.ac.jp/math/nakagawa/texguide.html#neweasytex)<br>
-
-を参照．<br>
-
-### スクリーンショット {#e7b3eafc}
-
-<img src="http://f.hatena.ne.jp/images/fotolife/K/Kshi_Kshi/20110111/20110111220630.png" alt="EasyTeX の画面">
-
 ### 特徴 {#c007c9f5}
 
 - EasyTeX Verson 3.30 以降は，Unicode (UTF-16、UTF-16BE、UTF-8、UTF-8BOM)、日本語 (Shit-JIS、EUC、JIS) に対応しています．
@@ -54,13 +41,819 @@ Windows 8.1, 8, 7, Vista, XP
 
 [TeXを使って数式をきれいに書こう](http://www.juen.ac.jp/math/nakagawa/texguide.html) の EasyTeX 不具合の報告 を参照．
 
-## 設定 {#l2b1dc1e}
+## TeX環境設定 {#e3c37dfc}
 
-EasyTeX/設定 を参照．
+### 初回起動時 {#x003cff0}
+
+EasyTeX を起動します．<br>
+初回起動時は， 「TeX環境設定」 が表示されます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span><br>
+>
+> 　<br>
+> 　<br>
+> 　<br>
+
+<span style="color:Black;background-color:#EEEEEE;">\[　　TeX環境を自動設定する　　\]</span><br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+EasyTeX の初期設定を手動で行います．<br>
+\[　　TeX環境を自動設定する　　\] をクリックすると，手動で設定するよりも時間がかかってしまうかもしれないので，使用しないでください．<br>
+
+### TeXExe {#o3f9cb28}
+
+■ W32TeX 64-bit バイナリ, dviout 64-bit バイナリの場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span> <ins>C:\w32tex\bin64</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span> <ins>C:\w32tex\dviout-x64\dviout.exe</ins><br>
+
+***
+
+■ W32TeX 32-bit バイナリ, dviout 32-bit バイナリの場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<strong>\[ TeXExe \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXOption \]\[ Spell \]\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[TeX実行ファイルのフォルダー\]</span> <ins>C:\w32tex\bin</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　　　　　　DVIドライバ　　　　　 \]</span> <ins>C:\w32tex\dviout\dviout.exe</ins><br>
+
+***
+
+TeX実行ファイルのフォルダーは
+platex.exe (pLaTeX の実行ファイル) が存在するフォルダーのフルパスを指定します．<br>
+DVI ドライバは dviout.exe のフルパスを指定します．<br>
+
+### TeXOption {#d7b2d9ae}
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]</ins></span><strong>\[ TeXOption \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Spell \]\[ PS/PDF \]</ins></span><br>
+　　　　　　言語<br>
+　　　　　　(●) 日本語　　　　　　　　　　　 　 　　☐ source special<br>
+　　　　　　 ◯ 英語<br>
+　　　　　TeXコンパイラ　　　　　　　　　　　　　　☑ SyncTeX　　　<ins>1 \[<strong>⇕</strong>\]</ins><br>
+　　　　　<span style="color:White;background-color:#1188FF;"> pLaTeX　　　　　　　　　　　　　　　　</span><br>
+　　　　　 jPlain　　　　　　　　　　　　　　　　　　　☐ ｺﾝﾊﾟｲﾙ画面を表示する<br>
+　　　　　 latexcompile<br>
+　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeXソースファイルのフォルダー\]</span>　<ins>　　　　　　　　　　　　　　　　　　　　</ins><br>
+
+***
+
+TeX コンパイラとオプションを設定します．<br>
+言語は日本語を選択します．<br>
+TeX コンパイラは pLaTeX を選択します．<br>
+SyncTeX にチェックを入れます．<br>
+
+### Spell {#z664fb17}
+
+■ 64-bit Windows の場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]</ins></span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> <ins>C:\Program Files (x86)\aspell\bin\aspell.exe</ins><br>
+>
+> 　　起動オプション <ins>--lang=en -t -c</ins><br>
+
+***
+
+■ 32-bit Windows の場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]</ins></span><strong>\[ Spell \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ PS/PDF \]</ins></span><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[スペルチェッカー\]</span> <ins>C:\Program Files\aspell\bin\aspell.exe</ins><br>
+>
+> 　　起動オプション <ins>--lang=en -t -c</ins><br>
+
+***
+
+スペルチェッカー (aspell.exe) のフルパスと起動オプションを指定します．<br>
+スペルチェッカーを使わない人は何も入力しなくても OK です．<br>
+
+### PS/PDF {#ubd35880}
+
+■ 64-bit Windows の場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>powershell -Command "&amp; {$ps = \[System.String\]::Concat('"""',$args\[1..($args.Length-1)\],'"""');$pdf = \[System.String\]::Concat('"""',\[System.IO.Path\]::GetFileNameWithoutExtension($args\[1..($args.Length-1)\]),'.pdf','"""');ps2pdf.bat $ps;if($?){texworks $pdf}}"</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>600　　\[<strong>⇕</strong>\]</ins><br>
+
+***
+
+■ 32-bit Windows の場合
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ TeXExe \]\[ TeXOption \]\[ Spell \]</ins></span><strong>\[ PS/PDF \]</strong><br>
+
+> <span style="color:Black;background-color:#EEEEEE;">\[　 GhostView 　\]</span> <ins>powershell -Command "&amp; {$ps = \[System.String\]::Concat('"""',$args\[1..($args.Length-1)\],'"""');$pdf = \[System.String\]::Concat('"""',\[System.IO.Path\]::GetFileNameWithoutExtension($args\[1..($args.Length-1)\]),'.pdf','"""');ps2pdf.bat $ps;if($?){texworks $pdf}}"</ins><br>
+>
+> <span style="color:Black;background-color:#EEEEEE;">\[　PDF Reader　\]</span> <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
+>
+> 　PDF Readerを開くタイミング　　<ins>600　　\[<strong>⇕</strong>\]</ins><br>
+
+***
+
+GhostView は以下の文字列をコピー &amp; ペーストします．<br>
+
+```
+powershell -Command "& {$ps = [System.String]::Concat('"""',$args[1..($args.Length-1)],'"""');$pdf = [System.String]::Concat('"""',[System.IO.Path]::GetFileNameWithoutExtension($args[1..($args.Length-1)]),'.pdf','"""');ps2pdf.bat $ps;if($?){texworks $pdf}}"
+```
+
+PDF Reader は SumatraPDF.exe のフルパスを指定します．<br>
+SumatraPDF を使用する場合は SyncTeX による forward and inverse search が使用できます．<br>
+Adobe Reader は PDF ファイルをロックするので PDF Reader は SumatraPDF がおすすめです．<br>
+Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．<br>
+
+### TeX環境設定の保存 {#lf745908}
+
+TeX環境設定が完了したら，\[ 　　<span style="color:#119933;">✔</span>OK　　 \] をクリックします．<br>
+この設定は，メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[TeX環境設定(T)\] から変更することができます．<br>
+
+## エンコードの種類 → Unicode(UTF-8) を選択する {#s484d028}
+
+メニューの \[ﾌｧｲﾙ(F)\]-\[エンコードの種類(D)\] からエンコードの種類を選択できます．<br>
+初期設定では 日本語(Shift-JIS) が選択されています．<br>
+Unicode(UTF-8) を選択します．<br>
+
+***
+
+<span style="color:Black;background-color:#DAEAFF;">　●　</span>　 日本語(Shift-JIS)<br>
+
+　　　　　日本語(EUC)<br>
+　　　　　日本語(JIS)<br>
+　　　　　Unicode(UTF-16)<br>
+　　　　　Unicode(UTF-16,BigEndian)<br>
+<span style="color:Black;background-color:#DAEAFF;">　　　　　Unicode(UTF-8)　　　　　　　　　　　　　　　　　</span><br>
+
+　　　　　Unicode(UTF-8BOM)<br>
+
+***
+
+## エディタ設定 {#b0958860}
+
+メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[エディタ設定(E)\] からエディタの設定を変更することができます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ｴﾃﾞｨﾀ設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　<strong>\[ ﾌｫﾝﾄ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 選択範囲 \]\[ ｺﾒﾝﾄ \]\[ TeX環境 \]\[ ﾜｰﾄﾞﾗｯﾌﾟ \]\[ ｷｰ割り当て \]\[ ﾀｲﾐﾝｸﾞ設定 \]\[ 行番号・行間・ﾀﾌﾞ \]\[ IME制御 \]</ins></span><br>
+
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　フォントの選択　\]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><span style="color:White;background-color:#000099;"> Aaあぁアァ亜宇 </span><span style="color:White;background-color:#000099;">　　　　　　　　　　　</span><br>
+　　　　　<span style="color:Black;background-color:#EEEEEE;">\[背景色の変更(<ins>B</ins>) \]</span>　　　<span style="color:White;background-color:#000099;"> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　　　☑ デフォルトの色設定を使用する<br>
+　　　　　　　 ◯ 背景色ホワイト<br>
+　　　　　　　 ◯ 背景色ネイビー<br>
+　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+## ツールの設定 {#h04c9433}
+
+メニューの \[ｵﾌﾟｼｮﾝ(O)\] → \[ツールの設定(O)\] からツールの設定をします．<br>
+設定を反映させるには，［ 　登録　 ］ボタンを押し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．<br>
+設定したツールはメニューの \[ﾂｰﾙ(A)\] から選択できます．<br>
+
+### upLaTeX (ptex2pdf) {#ibcc7039}
+
+uplatex (ptex2pdf) を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program0 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>upLaTeX (ptex2pdf)</ins><br>
+　 program1<br>
+　 program2<br>
+　 program3　　　　　プログラム<br>
+　 program4　　　　　　　 <ins>cmd.exe</ins><br>
+　 program5　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　実行時引数<br>
+　 program9　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c ptex2pdf -l -u -ot "-no-guess-input-enc -kanji=utf8 -synctex=1" "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### upLaTeX (dvips + ps2pdf) {#r8d461bb}
+
+uplatex (dvips + ps2pdf) を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program1 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>upLaTeX (dvips + ps2pdf)</ins><br>
+　 program2<br>
+　 program3<br>
+　 program4　　　　　プログラム<br>
+　 program5　　　　　　　 <ins>cmd.exe</ins><br>
+　 program6　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program7<br>
+　 program8<br>
+　 program9　　　　　実行時引数<br>
+　 program10　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfLaTeX {#j820f89e}
+
+pdflatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program2 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>pdfLaTeX</ins><br>
+　 program3<br>
+　 program4<br>
+　 program5　　　　　プログラム<br>
+　 program6　　　　　　　 <ins>cmd.exe</ins><br>
+　 program7　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program8<br>
+　 program9<br>
+　 program10　　　　　実行時引数<br>
+　 program11　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c pdflatex -synctex=1 "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaLaTeX {#m89bd4c6}
+
+lualatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program3 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>LuaLaTeX</ins><br>
+　 program4<br>
+　 program5<br>
+　 program6　　　　　プログラム<br>
+　 program7　　　　　　　 <ins>cmd.exe</ins><br>
+　 program8　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program9<br>
+　 program10<br>
+　 program11　　　　　実行時引数<br>
+　 program12　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c lualatex -synctex=1 "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaJITLaTeX {#o9390edf}
+
+luajitlatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program4 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>LuaJITLaTeX</ins><br>
+　 program5<br>
+　 program6<br>
+　 program7　　　　　プログラム<br>
+　 program8　　　　　　　 <ins>cmd.exe</ins><br>
+　 program9　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program10<br>
+　 program11<br>
+　 program12　　　　　実行時引数<br>
+　 program13　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c luajitlatex -synctex=1 "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### XeLaTeX {#oe45acd6}
+
+xelatex を使用して PDF ファイルを作成します．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program5 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>XeLaTeX</ins><br>
+　 program6<br>
+　 program7<br>
+　 program8　　　　　プログラム<br>
+　 program9　　　　　　　 <ins>cmd.exe</ins><br>
+　 program10　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　実行時引数<br>
+　 program14　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c xelatex -synctex=1 "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### upBibTeX {#w1425c53}
+
+upbibtex を使用して参考文献を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program6 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>upBibTeX</ins><br>
+　 program7<br>
+　 program8<br>
+　 program9　　　　　プログラム<br>
+　 program10　　　　　　　 <ins>upbibtex.exe</ins><br>
+　 program11　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program12<br>
+　 program13<br>
+　 program14　　　　　実行時引数<br>
+　 program15　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>"%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### BibTeX {#o7fa4bc3}
+
+bibtex を使用して参考文献を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program7 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>BibTeX</ins><br>
+　 program8<br>
+　 program9<br>
+　 program10　　　　　プログラム<br>
+　 program11　　　　　　　 <ins>bibtex.exe</ins><br>
+　 program12　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program13<br>
+　 program14<br>
+　 program15　　　　　実行時引数<br>
+　 program16　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>"%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### BibTeXu {#z35e2ff5}
+
+bibtexu を使用して参考文献を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program8 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>BibTeXu</ins><br>
+　 program12<br>
+　 program13<br>
+　 program14　　　　　プログラム<br>
+　 program15　　　　　　　 <ins>bibtexu.exe</ins><br>
+　 program16　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program17<br>
+　 program18<br>
+　 program19　　　　　実行時引数<br>
+　 program20　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>"%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### Mendex {#j08f6352}
+
+mendex を使用して索引を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program9 　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>Mendex</ins><br>
+　 program10<br>
+　 program11<br>
+　 program12　　　　　プログラム<br>
+　 program13　　　　　　　 <ins>mendex.exe</ins><br>
+　 program14　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program15<br>
+　 program16<br>
+　 program17　　　　　実行時引数<br>
+　 program18　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>-U "%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### MakeIndex {#s2a03925}
+
+makeindex を使用して索引を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program10　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>MakeIndex</ins><br>
+　 program11<br>
+　 program12<br>
+　 program13　　　　　プログラム<br>
+　 program14　　　　　　　 <ins>makeindex.exe</ins><br>
+　 program15　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　実行時引数<br>
+　 program19　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>"%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### TeXindy {#ye78c687}
+
+texindy を使用して索引を作成します．
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program11　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>TeXindy</ins><br>
+　 program12<br>
+　 program13<br>
+　 program14　　　　　プログラム<br>
+　 program15　　　　　　　 <ins>texindy.exe</ins><br>
+　 program16　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program17<br>
+　 program18<br>
+　 program19　　　　　実行時引数<br>
+　 program20　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>"%n"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+## [SumatraPDF](/SumatraPDF/) との連携 {#mcca4bad}
+
+EasyTeX のメニューバーより ［ｵﾌﾟｼｮﾝ(O)］ → ［TeX環境設定(T)］ と選びます．<br>
+出てきたウィンドウで \[TeXOption\] タブの SyncTeX にチェックを入れます．<br>
+\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．<br>
+
+### forward search {#o6a70e4f}
+
+LaTeX ソースのある領域を選択して \[ﾌｧｲﾙ(F)\]-\[コンパイル・Pdfプレビュー(F)\] で PDF ファイルの該当領域を検索します．<br>
+PDF ファイルが存在すれば，EasyTeX の画面をダブルクリックすると該当領域を検索します．<br>
+
+### inverse search {#a57927f9}
+
+EasyTeX の実行ファイルである EasyTeX.exe のフルパスが C:\easytex\EasyTeX.exe である場合
+
+SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で
+
+```
+C:\easytex\EasyTeX.exe /j%l "%f"
+```
+
+と書き込んで \[OK\] をクリックしてください．<br>
+SumatraPDF の画面をダブルクリックすると，以下のような「指定行への移動」が一瞬表示され，EasyTeX が前面に出て，該当箇所にジャンプします．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>指定行への移動</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　　行番号 または 行番号，桁番号 ？<br>
+
+<br>
+
+<br>
+
+　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## [Adobe Reader](</Adobe Reader/>) との連携 {#b6182a61}
+
+### upLaTeX (ptex2pdf) \[Adobe Reader\] {#v2f580e9}
+
+uplatex (ptex2pdf) を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program12　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>upLaTeX (ptex2pdf) \[Adobe Reader\]</ins><br>
+　 program13<br>
+　 program14<br>
+　 program15　　　　　プログラム<br>
+　 program16　　　　　　　 <ins>cmd.exe</ins><br>
+　 program17　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program18<br>
+　 program19<br>
+　 program20　　　　　実行時引数<br>
+　 program21　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1" "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### upLaTeX (dvips + ps2pdf) \[Adobe Reader\] {#o1ee54cf}
+
+uplatex (dvips + ps2pdf) を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program13　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>upLaTeX (dvips + ps2pdf) \[Adobe Reader\]</ins><br>
+　 program14<br>
+　 program15<br>
+　 program16　　　　　プログラム<br>
+　 program17　　　　　　　 <ins>cmd.exe</ins><br>
+　 program18　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program19<br>
+　 program20<br>
+　 program21　　　　　実行時引数<br>
+　 program22　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "%n" &amp;&amp; dvips -Ppdf -z -f "%n.dvi" | convbkmk -u > "%n.ps" &amp;&amp; ps2pdf.bat "%n.ps" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### pdfLaTeX \[Adobe Reader\] {#m3a434b8}
+
+pdflatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program14　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>pdfLaTeX \[Adobe Reader\]</ins><br>
+　 program15<br>
+　 program16<br>
+　 program17　　　　　プログラム<br>
+　 program18　　　　　　　 <ins>cmd.exe</ins><br>
+　 program19　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program20<br>
+　 program21<br>
+　 program22　　　　　実行時引数<br>
+　 program23　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; pdflatex -synctex=1 "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaLaTeX \[Adobe Reader\] {#q6d516db}
+
+lualatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program15　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>LuaLaTeX \[Adobe Reader\]</ins><br>
+　 program16<br>
+　 program17<br>
+　 program18　　　　　プログラム<br>
+　 program19　　　　　　　 <ins>cmd.exe</ins><br>
+　 program20　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program21<br>
+　 program22<br>
+　 program23　　　　　実行時引数<br>
+　 program24　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; lualatex -synctex=1 "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### LuaJITLaTeX \[Adobe Reader\] {#d8b19867}
+
+luajitlatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program16　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>LuaJITLaTeX \[Adobe Reader\]</ins><br>
+　 program17<br>
+　 program18<br>
+　 program19　　　　　プログラム<br>
+　 program20　　　　　　　 <ins>cmd.exe</ins><br>
+　 program21　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program22<br>
+　 program23<br>
+　 program24　　　　　実行時引数<br>
+　 program25　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; luajitlatex -synctex=1 "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
+
+### XeLaTeX \[Adobe Reader\] {#v05cb9fa}
+
+xelatex を使用して PDF ファイルを作成した後で Adobe Reader を使用して PDF ファイルを開きます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>ツールの設定</strong></span>　　　　　　　　　　<span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#ACCEFE;background-color:#ACCEFE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　タイトル<br>
+　<span style="color:White;background-color:#1188FF;"> program17　</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　<ins>XeLaTeX \[Adobe Reader\]</ins><br>
+　 program18<br>
+　 program19<br>
+　 program20　　　　　プログラム<br>
+　 program21　　　　　　　 <ins>cmd.exe</ins><br>
+　 program22　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　参照　　 \]</span><br>
+　 program23<br>
+　 program24<br>
+　 program25　　　　　実行時引数<br>
+　 program26　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　 <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --rxi --file "%n.pdf" &amp;&amp; pdfclose --rxi --file "%n.pdf" &amp; xelatex -synctex=1 "%n" &amp;&amp; powershell -Command "&amp; {$pdf = """%n.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)\[1\]; pdfopen --rxi --file $pdf --page $page}"</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　登録　 \]</span>　 　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除　 \]</span><br>
+　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span>　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#1199AA;">？</span></strong>ヘルプ(H)\]</span><br>
+
+***
 
 ## 使い方 {#etu162c1}
 
-EasyTeX/使い方 を参照．
+簡単な TeX ソースを作り，コンパイル，プレビューまで行いましょう．<br>
+まず，EasyTeX を起動します．<br>
+次に，［TeXﾃｷｽﾄ(T)］ → ［文書クラス(D)］ をクリックします．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>文書ｸﾗｽの設定</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　　　　　　文書ｸﾗｽ　　　　　　　　　　　用紙ｻｲｽﾞ　　　　　　文字ｻｲｽﾞ<br>
+　　小論文 (jarticle)　　　　　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　A4　　　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span>　　　　　10ポイント<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span><br>
+　　<span style="color:White;background-color:#1188FF;">小論文 (jsarticle)　　　　 </span>　 　　　　　<span style="color:White;background-color:#1188FF;">A4j　 　</span>　　 　　　　11ポイント<br>
+　　報告書 (jreport)　　　　　　　　　　　 A5　　　　　　　　　 <span style="color:White;background-color:#1188FF;">12ポイント</span><span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span><br>
+　　欧文小論文 (article)　　 <span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>　　　　　A5j　　 <span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span>
+
+　　　　　　　　　　　　　　　　　　　　　　　　使用するﾊﾟｯｹｰｼﾞ<br>
+　　　　☐2段組をする　　　　　　　　　　amsmath,amsthm,amssymb<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span><br>
+　　　　☐タイトルを付けない　　　　　　epic,eepic<br>
+　 　 　 　 　 　 　　　　　　　　　　　　 　 　graphicx　 　 　 　 　　　　　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span><br>
+
+<br>
+
+　　　ﾀｲﾄﾙ<br>
+　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+　　　著者<br>
+　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span>　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
+
+***
+
+「文書ｸﾗｽの設定」 で，jsarticle を指定します．<br>
+文字ｻｲｽﾞはデフォルトで 12ポイントが選択されていると思います．<br>
+jsarticle は 9pt，10pt，11pt，12pt，14pt，17pt，21pt，25pt，30pt，36pt，43pt を指定することができます．([pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/) を参照．)<br>
+［ﾀｲﾄﾙ］ と ［著者］ を適当に書きます．<br>
+［使用するﾊﾟｯｹｰｼﾞ］ の部分には使用するスタイルファイルを指定します (\usepackage コマンドで指定するものです)．<br>
+Shift + 左クリックで複数のパッケージを選択することが可能です．<br>
+一通り終わったら \[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] をクリックします．<br>
+一気に沢山のコマンドが書き加えられているのが分かりますね．<br>
+こうした補完は ［TeXﾃｷｽﾄ(T)］ と ［TeX数式(M)］ に多く入っています．<br>
+色々と試してみましょう．<br>
+一通り書き終わったら［ﾌｧｲﾙ(F)］ → ［コンパイル・Pdfプレビュー(F)］をクリックします．<br>
+うまくいけば PDF ファイルが表示されます．<br>
+編集中のファイルは自動的に保存されます．<br>
+［ﾌｧｲﾙ(F)］ → ［コンパイル・Pdfプレビュー(F)］(初回のみ) または ［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換(D)］で 「PDFファイルのページサイズの設定」 が表示されます．<br>
+
+***
+
+<span style="color:#ACCEFE;background-color:#ACCEFE;"><ins>　　　　<span style="color:Black;"><strong>PDFファイルのページサイズの設定</strong></span>　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　　　　　　　　ページサイズ<br>
+　　　　　　　指定しない　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐱ</strong></span><br>
+　　　　　　　a3　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \]</span><br>
+　　　　　　　<span style="color:White;background-color:#1188FF;">a4　　　　　　</span><br>
+　　　　　　　a5<br>
+　　　　　　　a6　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<strong><span style="color:#993311;">✘</span></strong>キャンセル\]</span><br>
+　　　　　　　b3　　　　　　<span style="color:#555555;background-color:#EEEEEE;"><strong>ᐯ</strong></span><br>
+　<br>
+　　　　　　　☐landscape<br>
+
+***
+
+ページサイズを指定し，\[ 　　<strong><span style="color:#119933;">✔</span></strong>OK　　 \] を押すと，dvipdfmx を使った PDF ファイルの生成と表示ができます．<br>
+［ﾌｧｲﾙ(F)］ → ［DVI->PDF変換2(R)］は dvipdfmx ではなく [dvips](/dvips/) + [Ghostscript](/Ghostscript/) で，処理を行います．<br>
+あとの操作は，基本的にメニューの中から入力したい命令を選んでいけば良いでしょう．<br>
+ある範囲を一括コメントイン・コメントアウトする便利な機能もあります．<br>
+範囲指定してからメニューより ［編集(E)］ → ［コメント/コメント解除(O)］ で，コメントイン・アウトできますので，活用してみてください．<br>
+ファイルを分割している場合は \[ｵﾌﾟｼｮﾝ(O)\] → \[親ファイルの指定(P)\] でメインのファイルを指定してください．<br>
 
 ## 関連リンク {#p8488be5}
 
