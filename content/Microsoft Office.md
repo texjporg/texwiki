@@ -18,6 +18,8 @@ pukiwiki: "Microsoft Office"
 - [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
 - [http://ja.wikibooks.org/wiki/Microsoft_Office](http://ja.wikibooks.org/wiki/Microsoft_Office)
 
+## [Microsoft Office Online](https://office.com/) {#n56aace2}
+
 ## アドイン {#w6cd2e21}
 
 [プレゼンツール - TeX Wiki](</プレゼンツール/>) を参照．
