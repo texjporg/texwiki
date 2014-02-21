@@ -39,14 +39,6 @@ GNOME
     - [NEWS](https://github.com/GNOME/latexila/blob/master/NEWS)
     - [コミットログ](https://github.com/GNOME/latexila/commits/master)
 
-### インストール {#scad45f9}
-
-[Installation](https://wiki.gnome.org/Apps/LaTeXila#Installation) を参照．
-
-<!-- ***OpenBSD [#v124e0d8] -->
-<!--  -->
-<!-- -http://openports.se/x11/gnome/latexila -->
-
 ## 不具合 {#o7b20b21}
 
 ### LaTeXila 2.8.2 で \section{hoge} で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) → [TeXstudio](/TeXstudio/) を使用する {#xf55798b}
