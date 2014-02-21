@@ -91,7 +91,7 @@ $ sudo apt-get install evince
 $ sudo apt-get install okular
 ```
 
-## [Adobe Reader](</Adobe Reader/>) {#p1d90d24}
+## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#p1d90d24}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
