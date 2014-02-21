@@ -45,18 +45,12 @@ tex.vim が動作しない場合は [quickrun](/quickrun/), LaTeX Box を使用�
 ```
 if has('win32') || has('win64')
   let g:typeset = 'pdfuplatex'
-  let g:bibtex = 'upbibtex -sjis-terminal'
-  let g:makeindex = 'mendex -U -T'
   let g:viewer = 'sumatrapdf'
 elseif has('macunix')
   let g:typeset = 'pdfuplatex'
-  let g:bibtex = 'upbibtex'
-  let g:makeindex = 'mendex'
   let g:viewer = 'skim'
 else
   let g:typeset = 'pdfuplatex'
-  let g:bibtex = 'upbibtex'
-  let g:makeindex = 'mendex'
   let g:viewer = 'evince'
 endif
 let g:master = expand("%:t")
@@ -213,8 +207,6 @@ function! PdfupLaTeX(type)
   if a:type == 'pdfuplatex'
     if has('win32') || has('win64')
       let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal"' . ' "' . masterTeXFile . '"'
-      let g:bibtex = 'upbibtex -sjis-terminal'
-      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . ptex2pdf
@@ -223,8 +215,6 @@ function! PdfupLaTeX(type)
       endif
     else
       let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1"' . ' "' . masterTeXFile . '"'
-      let g:bibtex = 'upbibtex'
-      let g:makeindex = 'mendex'
       let execString = 'cd ' . masterDir . ' && ' . ptex2pdf
     endif
   elseif a:type == 'pdfuplatex2'
@@ -232,8 +222,6 @@ function! PdfupLaTeX(type)
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
       let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf.bat' . ' "' . masterBaseName . '.ps"'
-      let g:bibtex = 'upbibtex -sjis-terminal'
-      let g:makeindex = 'mendex -U -T'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -244,8 +232,6 @@ function! PdfupLaTeX(type)
       let latex = 'uplatex -synctex=1' . ' "' . masterTeXFile . '"'
       let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf' . ' "' . masterBaseName . '.ps"'
-      let g:bibtex = 'upbibtex'
-      let g:makeindex = 'mendex'
       let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
     endif
   endif
@@ -269,20 +255,12 @@ function! PdfLaTeX(type)
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdflatex'
     let pdflatex = 'pdflatex -synctex=1' . ' "' . masterTeXFile . '"'
-    let g:bibtex = 'bibtex'
-    let g:makeindex = 'makeindex'
   elseif a:type == 'lualatex'
     let pdflatex = 'lualatex -synctex=1' . ' "' . masterTeXFile . '"'
-    let g:bibtex = 'bibtexu'
-    let g:makeindex = 'texindy'
   elseif a:type == 'luajitlatex'
     let pdflatex = 'luajitlatex -synctex=1' . ' "' . masterTeXFile . '"'
-    let g:bibtex = 'bibtexu'
-    let g:makeindex = 'texindy'
   elseif a:type == 'xelatex'
     let pdflatex = 'xelatex -synctex=1' . ' "' . masterTeXFile . '"'
-    let g:bibtex = 'bibtexu'
-    let g:makeindex = 'texindy'
   endif
 
   if has('win32') || has('win64')
@@ -326,52 +304,6 @@ function! Latexmk(type)
     endif
   else
     let execString = 'cd ' . masterDir . ' && ' . latexmk
-  endif
-
-  execute 'lcd ' . masterDir
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
-function! BibTeX()
-  if &ft != 'tex'
-    echo "calling BibTeX from a non-tex file"
-    return ''
-  end
-
-  w
-
-  let masterDir = expand("%:p:h")
-  let masterTeXFile = g:master
-  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
-  if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . g:bibtex . ' "' . masterBaseName . '"'
-  else
-    let execString = 'cd ' . masterDir . ' && ' . g:bibtex . ' "' . masterBaseName . '"'
-  endif
-
-  execute 'lcd ' . masterDir
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
-function! MakeIndex()
-  if &ft != 'tex'
-    echo "calling MakeIndex from a non-tex file"
-    return ''
-  end
-
-  w
-
-  let masterDir = expand("%:p:h")
-  let masterTeXFile = g:master
-  let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
-  if has('win32') || has('win64')
-    let execString = 'cd /d ' . masterDir . ' && ' . g:makeindex ' "' . masterBaseName . '"'
-  else
-    let execString = 'cd ' . masterDir . ' && ' . g:makeindex . ' "' . masterBaseName . '"'
   endif
 
   execute 'lcd ' . masterDir
