@@ -166,7 +166,7 @@ DVI->PDF(P):
 MakeIndex(M):
 : &nbsp;
 
-: mendex -U
+: makeindex
 
 MakeIndex Option:
 : &nbsp;
@@ -190,7 +190,7 @@ Batch commands:
 (setq *kyotex-default-tex-compiler* "uplatex -kanji=utf8 -no-guess-input-enc -synctex=1")
 (setq *kyotex-default-bibtex-compiler* "upbibtex")
 (setq *kyotex-default-dvipdfm-compiler* "dvipdfmx")
-(setq *kyotex-default-makeindex-compiler* "mendex -U")
+(setq *kyotex-default-makeindex-compiler* "makeindex")
 (setq *kyotex-default-makeindex-args* '("@@"))
 (setq *kyotex-default-makeindex-args-str* "@@")
 (setq *kyotex-default-batch-commands* '("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\" @@.tex"))
