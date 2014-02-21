@@ -87,17 +87,18 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - Adobe Acrobat
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
 
-### Linux {#v6f09b59}
-
-- Adobe Reader
-    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/unix/](ftp://ftp.adobe.com/pub/adobe/reader/unix/)
-        <!-- -Adobe Acrobat -->
-        <!-- - -http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Unix -->
+<!-- **Linux [#v6f09b59] -->
+<!--  -->
+<!-- -Adobe Reader -->
+<!-- - -http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix -->
+<!-- - -ftp://ftp.adobe.com/pub/adobe/reader/unix/ -->
+<!-- -Adobe Acrobat -->
+<!-- - -http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Unix -->
 
 ### Android {#k545c7f3}
 
 - [Adobe Reader - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
+- [ftp://ftp.adobe.com/pub/adobe/reader/android/](ftp://ftp.adobe.com/pub/adobe/reader/android/)
 
 ### iOS {#ac2b971a}
 
@@ -188,9 +189,9 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 
 ### [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222) {#fb046c0f}
 
-### [pdfopen and pdfclose](http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/) {#tf67f0e7}
-
-### [Man page acroread](http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread) {#rb9a599a}
+<!-- **[[pdfopen and pdfclose:http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/]] [#tf67f0e7] -->
+<!--  -->
+<!-- **[[Man page acroread:http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread]] [#rb9a599a] -->
 
 ## SyncTeX {#s533a23f}
 
