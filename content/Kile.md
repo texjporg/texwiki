@@ -94,7 +94,7 @@ ForwardPDF<br>
 ### MakeIndex {#o588ae80}
 
 コマンド(<ins>M</ins>):
-: mendex
+: makeindex
 
 オプション:
 : '%S.idx'
