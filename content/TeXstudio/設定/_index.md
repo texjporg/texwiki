@@ -48,7 +48,7 @@ pukiwiki: "TeXstudio/設定"
 
 {{< children >}}
 
-を参照して uplatex, upbibtex, biber, mendex, dvipdfmx, latexmk などの設定をします．<br>
+を参照して uplatex, upbibtex, biber, dvipdfmx, latexmk などの設定をします．<br>
 
 ### ビルド {#cb495de1}
 
