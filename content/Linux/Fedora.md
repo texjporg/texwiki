@@ -103,19 +103,17 @@ $ sudo yum install qpdfview
 $ sudo yum install mupdf
 ```
 
-## [Adobe Reader](</Adobe Reader/>) {#m85c82f5}
+## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#m85c82f5}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
-- [http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/](http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/)
-
-```
-$ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
-$ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-$ sudo yum install nspluginwrapper.i686 AdobeReader_enu
-```
+<!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
+<!--  -->
+<!-- $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm -->
+<!-- $ sudo rpm - -import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux -->
+<!-- $ sudo yum install nspluginwrapper.i686 AdobeReader_enu -->
 
 ## [TeXstudio](/TeXstudio/) {#aaf316c5}
 
