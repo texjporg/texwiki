@@ -92,34 +92,9 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-■ upbibtex の場合<br>
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
-　　　Input format： .bib 　　　出力フォーマット： .aux<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ bibtex の場合<br>
-　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>bibtex "&#x25;input"</ins><br>
-　　　Input format： .bib 　　　出力フォーマット： .aux<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ bibtexu の場合<br>
-　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>bibtexu "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
@@ -149,7 +124,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex -s "%style" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>makeindex -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -209,7 +184,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>makeindex "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
