@@ -117,7 +117,7 @@ ptex2pdf -u -l -ot '-synctex=1' "$filename"
 Latexmk を使用する場合は
 
 ```
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
 を \[追加(A)\] して設定します．<br>
@@ -369,7 +369,7 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -385,7 +385,7 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -401,7 +401,7 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -417,7 +417,7 @@ latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/'
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -433,7 +433,7 @@ latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -449,119 +449,7 @@ latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O 
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### upBibTeX {#if36eff6}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-upbibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### BibTeX {#x4e24d45}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-bibtex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### BibTeXu {#k577f678}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-bibtexu "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Biber {#h912f5e0}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-biber "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Mendex {#p50c6431}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-mendex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### MakeIndex {#h36cb82d}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-makeindex "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### TeXindy {#q22d091b}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-texindy "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`"
+latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/texindy %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -697,32 +585,6 @@ firefox -new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 chromium --new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### acroread {#h5982543}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-acroread "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### pdfopen {#mea51975}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pdfopen -viewer ar9-tab "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
