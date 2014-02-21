@@ -321,31 +321,31 @@ PDF       = $(FILENAME).pdf
 PDFOUT    = $(FILENAME)_enc.pdf
 
 all:
-        make tex
-        make tex
-        make idx
-        make tex
-        make dvipdf
-        make pw
+	make tex
+	make tex
+	make idx
+	make tex
+	make dvipdf
+	make pw
 distclean:
-        make clean
-        rm $(PDFOUT)
+	make clean
+	rm $(PDFOUT)
 clean:
-        rm *.aux *.dvi *.idx *.ilg *.ind *.log *.out *.toc *~ $(PDF)
+	rm *.aux *.dvi *.idx *.ilg *.ind *.log *.out *.toc *~ $(PDF)
 tex:
-        uplatex $(TEX)
+	uplatex $(TEX)
 idx:
-        mendex $(IDX)
+	makeindex $(IDX)
 dvipdf:
-        dvipdfmx $(DVI)
+	dvipdfmx $(DVI)
 pw:
-        pdftk $(PDF) output $(PDFOUT) owner_pw foobar
+	pdftk $(PDF) output $(PDFOUT) owner_pw foobar
 ```
 
-この場合、用意した LaTeX 文書ファイルは doc001.tex という名前です。mendex コマンドで索引を生成するのと、[pdftk](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) でコピー・ペースト・印刷の禁止、パスワードの付与を行うために、 
+この場合、用意した LaTeX 文書ファイルは doc001.tex という名前です。makeindex コマンドで索引を生成するのと、[pdftk](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) でコピー・ペースト・印刷の禁止、パスワードの付与を行うために、 
 
 - LaTeX での処理を2回
-- mendex
+- makeindex
 - LaTeX で最終処理
 - dvipdfmx で PDF ファイル生成
 - 生成した PDF ファイルを基に、pdftk でパスワード付与した PDF を生成
