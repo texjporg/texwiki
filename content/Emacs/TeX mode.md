@@ -287,7 +287,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
   (if (tex-shell-running)
       (tex-kill-job)
     (tex-start-shell))
-  (tex-send-command "acroread" (tex-append tex-print-file ".pdf") " &"))
+  (tex-send-command "xdg-open" (tex-append tex-print-file ".pdf") " &"))
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
@@ -318,9 +318,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
         ("texworks %r.pdf &" "%r.pdf")
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
-        ("chromium --new-window %r.pdf &" "%r.pdf")
-        ("acroread %r.pdf &" "%r.pdf")
-        ("pdfopen -viewer ar9-tab %r.pdf &" "%r.pdf")))
+        ("chromium --new-window %r.pdf &" "%r.pdf")))
 
 (defun evince-forward-search ()
   (interactive)
