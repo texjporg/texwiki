@@ -9,7 +9,7 @@ pukiwiki: "cm-super"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/cm-super.html -->
 
-## cm-super {#vb256d79}
+## cm-super (非推奨) → [Latin Modern](</Latin Modern/>) を使用する {#vb256d79}
 
 - [http://www.ctan.org/pkg/cm-super](http://www.ctan.org/pkg/cm-super)
 
@@ -38,17 +38,9 @@ pukiwiki: "cm-super"
 
 TeX Live には標準で含まれています．<br>
 
-#### Linux Mint {#h3ad69fe}
-
-- [Ubuntu -- パッケージ検索結果 -- cm-super](http://packages.ubuntu.com/ja/cm-super)
-
-#### Debian {#v3930077}
-
-- [Debian -- パッケージ検索結果 -- cm-super](https://packages.debian.org/ja/cm-super)
-
 ### W32TeX {#e991fdd9}
 
-W32TeX にはインストールされていないので CTAN から入手します． → [PDFへの変換について,](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1201)<br>
+W32TeX には標準で含まれていないので CTAN から入手します． → [PDFへの変換について,](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1201)<br>
 
 ## 関連リンク {#e74a0814}
 
