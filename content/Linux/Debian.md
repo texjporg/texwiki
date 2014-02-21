@@ -120,7 +120,7 @@ $ sudo apt-get install qpdfview
 $ sudo apt-get install mupdf
 ```
 
-## [Adobe Reader](</Adobe Reader/>) <a id="adobereader"></a> {#o1495f80}
+## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine <a id="adobereader"></a> {#o1495f80}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
@@ -134,8 +134,10 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ```
 
-Linux 版、Windows 版の双方に関して、[Adobe Reader](</Adobe Reader/>) は、ia32（32-bit 版）バイナリのみが配布されています。<br>
-よって、64-bit の Linux 上で 32-bit バイナリを動作させなければなりません。<br>
+<!-- Linux 版、Windows 版の双方に関して、[[Adobe Reader]] は、ia32（32-bit 版）バイナリのみが配布されています。~ -->
+
+Windows 版，Linux 版の [Adobe Reader](</Adobe Reader/>) は、ia32（32-bit 版）バイナリのみが配布されています。<br>
+よって、64-bit の Linux 上で Adobe Reader を使用する場合は 32-bit バイナリを動作させなければなりません。<br>
 現在の Debian では [Multiarch](http://wiki.debian.org/Multiarch) によってこれを実現しています。<br>
 従来は ia32-libs 等をインストールすることでこれを実現していました。<br>
 
@@ -149,18 +151,16 @@ $ sudo dpkg --add-architecture <architecture>
 wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32-bit アーキテクチャのサポートが必須となります。<br>
 これに関しては、wine のインストール時に apt が説明のメッセージを出しますので、詳細はそちらを御参照下さい。<br>
 
-#### Linux 版 Adobe Reader のインストール {#l44b42e5}
-
-[Adobe Reader](</Adobe Reader/>) (Linux 版/英語版) と Adobe Reader 日本語フォントパック (Linux 版) のパッケージが [deb-multimedia](http://deb-multimedia.org/) (dmo) から供給されています。<br>
-apt への追加法に関しては [deb-multimedia のページ](http://deb-multimedia.org/) の下の方に書かれています。<br>
-
-dmo を apt へ追加した後、インストールする際には以下のようにします。<br>
-
-```
-$ sudo dpkg --add-architecture i386 
-$ sudo apt-get update 
-$ sudo apt-get install acroread:i386 acroread-fonts-jpn
-```
+<!-- *** Linux 版 Adobe Reader のインストール [#l44b42e5] -->
+<!--  -->
+<!-- [[Adobe Reader]] (Linux 版/英語版) と Adobe Reader 日本語フォントパック (Linux 版) のパッケージが [[deb-multimedia:http://deb-multimedia.org/]] (dmo) から供給されています。~ -->
+<!-- apt への追加法に関しては [[deb-multimedia のページ:http://deb-multimedia.org/]] の下の方に書かれています。~ -->
+<!--  -->
+<!-- dmo を apt へ追加した後、インストールする際には以下のようにします。~ -->
+<!--  -->
+<!-- $ sudo dpkg - -add-architecture i386  -->
+<!-- $ sudo apt-get update  -->
+<!-- $ sudo apt-get install acroread:i386 acroread-fonts-jpn -->
 
 #### Wine を用いた Windows 版 Adobe Reader のインストール・実行 {#j0e5abe3}
 
@@ -187,7 +187,8 @@ Adobe Reader の保護モード
 
 #### 不具合等 {#a79bb64a}
 
-Linux 版の Adobe Reader では検索語のフィールドに日本語の直接入力ができませんでした (コピー&amp;ペーストによる日本語の入力・検索は可能です)。<br>
+<!-- Linux 版の Adobe Reader では検索語のフィールドに日本語の直接入力ができませんでした (コピー&ペーストによる日本語の入力・検索は可能です)。~ -->
+
 Windows 版の Adobe Reader では日本語入力、検索、共に可能なようです (ただし日本語入力で表示される文字列は□で表示されたりすることがあるかもしれません)．<br>
 
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#n198519c}
