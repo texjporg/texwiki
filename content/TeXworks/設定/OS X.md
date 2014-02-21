@@ -196,7 +196,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
@@ -225,7 +225,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -283,7 +283,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -310,7 +310,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -337,136 +337,12 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/texindy %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
-
-***
-
-#### upBibTeX {#la069802}
-
-タイプセットの方法を設定します．
-
-実行後、PDFを表示するのチェックをはずしてください．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>upBibTeX</ins><br>
-　　プログラム:　 <ins>upbibtex</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☐ 実行後、PDFを表示する<br>
-
-***
-
-#### BibTeXu {#e8f01dc3}
-
-タイプセットの方法を設定します．
-
-実行後、PDFを表示するのチェックをはずしてください．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>BibTeXu</ins><br>
-　　プログラム:　 <ins>bibtexu</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☐ 実行後、PDFを表示する<br>
-
-***
-
-#### Mendex {#a0e1c337}
-
-タイプセットの方法を設定します．
-
-実行後、PDFを表示するのチェックをはずしてください．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>Mendex</ins><br>
-　　プログラム:　 <ins>mendex</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☐ 実行後、PDFを表示する<br>
-
-***
-
-#### TeXindy {#nb729da9}
-
-タイプセットの方法を設定します．
-
-実行後、PDFを表示するのチェックをはずしてください．
-
-***
-
-<br>
-
-　　名前:　　　　<ins>TeXindy</ins><br>
-　　プログラム:　 <ins>texindy</ins><br>
-　　引数:　　　　<ins>$basename</ins><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☐ 実行後、PDFを表示する<br>
 
 ***
