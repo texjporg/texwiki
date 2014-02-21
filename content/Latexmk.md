@@ -17,7 +17,7 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 
 - [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2 の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
+### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
 
 ***
 
@@ -29,9 +29,10 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
+  $pdflatex = 'lualatex %O -synctex=1 %S';
   $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -45,9 +46,10 @@ if ($^O eq 'MSWin32') {
   }
 } else {
   $latex = 'uplatex %O -synctex=1 %S';
+  $pdflatex = 'lualatex %O -synctex=1 %S';
   $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $makeindex = 'mendex %O -o %D %S';
+  $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -66,9 +68,10 @@ if ($^O eq 'MSWin32') {
 ```
 latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
+latexmk -gg -pdf hoge.tex
 ```
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2 の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), quickrun などの場合) {#ke005cd5}
+### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), quickrun などの場合) {#ke005cd5}
 
 ***
 
@@ -80,9 +83,10 @@ latexmk -gg -pdfps hoge.tex
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
+  $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -96,9 +100,10 @@ if ($^O eq 'MSWin32') {
   }
 } else {
   $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
+  $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $makeindex = 'mendex %O -o %D %S';
+  $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -117,6 +122,7 @@ if ($^O eq 'MSWin32') {
 ```
 latexmk -gg -pdfdvi hoge.tex
 latexmk -gg -pdfps hoge.tex
+latexmk -gg -pdf hoge.tex
 ```
 
 ### 中間ファイルの削除 {#ob05c2ba}
