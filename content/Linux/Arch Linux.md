@@ -189,7 +189,7 @@ $ sudo pacman -S mupdf
 <!-- fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf -->
 <!-- - --  -->
 
-## [Adobe Reader](</Adobe Reader/>) {#f6223c5b}
+## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#f6223c5b}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
