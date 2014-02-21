@@ -401,16 +401,16 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\mendex.exe</ins><br>
+<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\mendex.exe</ins><br>
+<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\mendex.exe</ins><br>
+<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin\mendex.exe</ins><br>
+<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
+<ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -512,13 +512,13 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\texindy.exe</ins><br>
+<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin\texindy.exe</ins><br>
+<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -565,13 +565,13 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\texindy.exe</ins><br>
+<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin\texindy.exe</ins><br>
+<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -620,13 +620,13 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\texindy.exe</ins><br>
+<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\texindy.exe</ins><br>
+<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
 
-<ins>C:\w32tex\bin\texindy.exe</ins><br>
+<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
