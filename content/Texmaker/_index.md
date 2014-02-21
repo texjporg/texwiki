@@ -19,7 +19,7 @@ pukiwiki: "Texmaker"
 ## Texmaker とは {#y02c99e4}
 
 Texmaker は，LaTeX エディタ (統合環境) です．<br>
-[TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) と同様，SyncTeX がサポートされています．<br>
+SyncTeX がサポートされています．<br>
 Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
@@ -36,71 +36,16 @@ GPLv2
 
 ### リリース情報/ChangeLog {#g3ccd7ae}
 
-[ChangeLog](http://www.xm1math.net/texmaker/log.html) を参照．
-
-### [スクリーンショット](http://www.xm1math.net/texmaker/shots.html) {#x2eee2d6}
-
-[![the structure,the document and the embedded pdf viewer side by side](http://www.xm1math.net/texmaker/texmakertop.png)](http://www.xm1math.net/texmaker/texmakertop_big.png)<br>
-　　　　　　　　(the structure, the document and the embedded pdf viewer side by side)<br>
-
-<br>
-
-[![two documents side by side](http://www.xm1math.net/texmaker/sidebyside.png)](http://www.xm1math.net/texmaker/sidebyside_big.png)<br>
-　　　　　　　　　　　　　　　　　　　　(two documents side by side)<br>
-
-[![Linux で動作する Texmaker](http://www.xm1math.net/texmaker/thumblinux.png)](http://www.xm1math.net/texmaker/texmakerlinux.png)
-　 [![OS X で動作する Texmaker](http://www.xm1math.net/texmaker/thumbmacos.png)](http://www.xm1math.net/texmaker/texmakermacos.png)<br>
-　　　Texmaker at work on Linux　　　　　　　　　Texmaker at work on OS X<br>
-
-<br>
-
-[![Windows 7 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbw32.png)](http://www.xm1math.net/texmaker/texmakerw32.png)
-　 [![GNOME 3 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbgnome3.png)](http://www.xm1math.net/texmaker/texmakergnome3.png)<br>
-　　Texmaker at work on Windows 7　　　　　Texmaker at work on GNOME 3<br>
-
-<br>
-
-[![Qt5 でコンパイルされた Texmaker](http://www.xm1math.net/texmaker/thumbqt5.png)](http://www.xm1math.net/texmaker/texmakerqt5.png)
-　 [![Windows 8 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbwindows8.png)](http://www.xm1math.net/texmaker/windows8.png)<br>
-　　Texmaker compiled with Qt5　　　　　　　Texmaker at work on Windows 8<br>
-
-<br>
-
-[![Ubuntu で動作する Qt5 バージョンの Texmaker](http://www.xm1math.net/texmaker/thumbtexmakerQT5_ubuntu.png)](http://www.xm1math.net/texmaker/texmakerQT5_ubuntu.png)<br>
-　Qt5 version of Texmaker on Ubuntu<br>
+[ChangeLog](http://www.xm1math.net/texmaker/log.html)
 
 ### 特徴 {#m6bf2399}
 
-> <table>
-> <tbody>
-> <tr><td style="background-color:#CCF">Unicode 対応エディタ</td><td style="background-color:#CCF">スペルチェッカー</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/unicode.png"><img src="http://www.xm1math.net/texmaker/pics/unicode_s.png" alt="Unicode 対応エディタ"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/spell.png"><img src="http://www.xm1math.net/texmaker/pics/spell_s.png" alt="スペルチェッカー"></a></td></tr>
-> <tr><td style="background-color:#CCF">折りたたみ</td><td style="background-color:#CCF">補完</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/folding.png"><img src="http://www.xm1math.net/texmaker/pics/folding_s.png" alt="折りたたみ"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/completion.png"><img src="http://www.xm1math.net/texmaker/pics/completion_s.png" alt="補完"></a></td></tr>
-> <tr><td style="background-color:#CCF">アウトライン</td><td style="background-color:#CCF">"マスター"モード</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/structure.png"><img src="http://www.xm1math.net/texmaker/pics/structure_s.png" alt="アウトライン"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/master.png"><img src="http://www.xm1math.net/texmaker/pics/master_s.png" alt="マスターモード"></a></td></tr>
-> <tr><td style="background-color:#CCF">組み込みの PDF ビューア</td><td style="background-color:#CCF">簡単コンパイル</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/pdfsync.png"><img src="http://www.xm1math.net/texmaker/pics/pdfsync_s.png" alt="組み込みの PDF ビューア"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/quickbuild.png"><img src="http://www.xm1math.net/texmaker/pics/quickbuild_s.png" alt="簡単コンパイル"></a></td></tr>
-> <tr><td style="background-color:#CCF">数学記号</td><td style="background-color:#CCF">作成ウィザード</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/math.png"><img src="http://www.xm1math.net/texmaker/pics/math_s.png" alt="数学記号"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/wizard.png"><img src="http://www.xm1math.net/texmaker/pics/wizard_s.png" alt="作成ウィザード"></a></td></tr>
-> <tr><td style="background-color:#CCF">LaTeX リファレンス</td><td style="background-color:#CCF">エラーハンドリング</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/latexdoc.png"><img src="http://www.xm1math.net/texmaker/pics/latexdoc_s.png" alt="LaTeX リファレンス"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/log.png"><img src="http://www.xm1math.net/texmaker/pics/log_s.png" alt="エラーハンドリング"></a></td></tr>
-> <tr><td style="background-color:#CCF">矩形選択</td><td style="background-color:#CCF">フォルダー内のテキスト検索</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/block.png"><img src="http://www.xm1math.net/texmaker/pics/block_s.png" alt="矩形選択"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/findfolder.png"><img src="http://www.xm1math.net/texmaker/pics/findfolder_s.png" alt="フォルダー内のテキスト検索"></a></td></tr>
-> <tr><td style="background-color:#CCF">PDF ビューアの表示を回転</td><td style="background-color:#CCF">TeX4ht で html, odt エクスポート</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/rotate.png"><img src="http://www.xm1math.net/texmaker/pics/rotate_s.png" alt="PDF ビューアの表示を回転"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/export.png"><img src="http://www.xm1math.net/texmaker/pics/export_s.png" alt="TeX4ht で html,odt エクスポート"></a></td></tr>
-> <tr><td style="background-color:#CCF">正規表現</td><td style="background-color:#CCF">Asymptote</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/regular.png"><img src="http://www.xm1math.net/texmaker/pics/regular_s.png" alt="正規表現"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/asymptote.png"><img src="http://www.xm1math.net/texmaker/pics/asymptote_s.png" alt="Asymptote"></a></td></tr>
-> <tr><td style="background-color:#CCF">スニペット</td><td style="background-color:#CCF">Qt5 対応</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/snippets.png"><img src="http://www.xm1math.net/texmaker/pics/snippets_s.png" alt="スニペット"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/qt5.png"><img src="http://www.xm1math.net/texmaker/pics/qt5_s.png" alt="Qt5 対応"></a></td></tr>
-> </tbody>
-> </table>
->
+[http://www.xm1math.net/texmaker/#features](http://www.xm1math.net/texmaker/#features)
 
-### 修正版・派生版 {#n8123b82}
+### 派生版・修正版 {#n8123b82}
 
-- [texmaker(Win)修正版](http://blogs.yahoo.co.jp/igproj_fusion/folder/566040.html)
 - [TeXstudio](/TeXstudio/)
+- [texmaker(Win)修正版](http://blogs.yahoo.co.jp/igproj_fusion/folder/566040.html)
 - [bidiTeXmaker3](https://bitbucket.org/srazi/biditexmaker3)
 
 ### Texmaker 日本語化キット {#oed0ed19}
@@ -142,7 +87,7 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 ***
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → [TeXstudio](/TeXstudio/) または Texmaker の修正版を使用する {#c698d89f}
+### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → [TeXstudio](/TeXstudio/) を使用する {#c698d89f}
 
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって判読不能になるという不具合があります．<br>
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
@@ -162,13 +107,7 @@ uim を使用している場合は背景が黒く表示されて判読不能に�
 バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．<br>
 また，同じく Qt を使用している [TeXworks でもハイライトに関する不具合が存在する](/TeXworks/#s5bfc44e)ので，もしかすると Qt の不具合 (仕様？) かもしれません．<br>
 
-Windows 版は
-
-- [texmaker(Win)修正版](http://blogs.yahoo.co.jp/igproj_fusion/folder/566040.html)
-
-から日本語入力の問題を修正した Windows バイナリがダウンロードできます．<br>
-この exe ファイルは 7-Zip でも展開することが可能です．<br>
-Texmaker ではなく Texmaker の派生版の [TeXstudio](/TeXstudio/) を使っても OK です．<br>
+Texmaker ではなく Texmaker の派生版の [TeXstudio](/TeXstudio/) を使用すれば OK です．<br>
 
 #### 修正方法 (Windows) {#e1ab5b1e}
 
@@ -527,7 +466,6 @@ C:.
     - [Configure forward search with Texmaker + SumatraPDF](http://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
 - [http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/](http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/)
-- \[[雑記\]TeXの環境入れた。](http://zafaaaaai.blogspot.jp/2013/10/tex.html)
 - [Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
 - [GateKeeperに引っかかった時の対処(OS X)](http://hnsn1202.hateblo.jp/entry/2013/04/09/193136)
 - [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
