@@ -34,13 +34,11 @@ pukiwiki: "MTeX for Notepad++"
 > <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
 > <tr><td>1</td><td>TeX処理</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 -sjis-terminal "%MTeXnpp_CFName%.tex"</td></tr>
 > <tr><td>1</td><td>BibTeX処理</td><td>"upbibtex"</td><td>-sjis-terminal "%MTeXnpp_CFName%"</td></tr>
-> <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -T "%MTeXnpp_CFName%.idx"</td></tr>
+> <tr><td>1</td><td>Index処理</td><td>"makeindex"</td><td>"%MTeXnpp_CFName%.idx"</td></tr>
 > <tr><td>1</td><td>DVIからPSへ変換</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
 > <tr><td>1</td><td>PSからPDFへ変換</td><td>"cmd"</td><td>/c ps2pdf.bat "%MTeXnpp_CFName%.ps"</td></tr>
-> <tr><td>1</td><td>PDFを表示 (SumatraPDF の場合)</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
-> <tr><td>1</td><td>PDFを表示 (TeXworks の場合)</td><td>%MTeXnpp_start% "texworks.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf"</td></tr>
-> <tr><td>1</td><td>PDFを表示 (Adobe Reader の場合)</td><td>%MTeXnpp_start% "AcroRd32.exe"</td><td>"%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf"</td></tr>
+> <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
 > <tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
 > </tbody>
 > </table>
