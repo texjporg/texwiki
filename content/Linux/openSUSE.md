@@ -74,15 +74,13 @@ $ sudo zypper install evince
 $ sudo zypper install okular
 ```
 
-## [Adobe Reader](</Adobe Reader/>) {#m8b54511}
+## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#m8b54511}
 
 [Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
-```
-$ sudo zypper install acroread acroread-fonts-ja acroread-cmaps
-```
+- [http://en.opensuse.org/Adobe_Reader](http://en.opensuse.org/Adobe_Reader)
 
 ## [TeXstudio](/TeXstudio/) {#xc0b5b03}
 
