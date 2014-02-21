@@ -103,10 +103,6 @@ Vim は，チャリティウェアです．<br>
 - [VimWiki](http://vimwiki.net/)
 - [Vim Tips Wiki](http://vim.wikia.com/)
 
-### スクリーンショット {#p2c08dcd}
-
-[![Vim で LaTeX ファイルを編集している画面](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim-small.png)](http://linux.dsplabs.com.au/files/p54-resume/resume-latex-vim.png)
-
 ## 不具合 {#h94d310c}
 
 - [https://code.google.com/p/vim/issues/list](https://code.google.com/p/vim/issues/list)
@@ -124,8 +120,6 @@ Vim は，チャリティウェアです．<br>
 - [neocomplete &amp; neosnippet](/neocomplete/)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - LaTeX Box
-- [Vim-LaTeX](/Vim-LaTeX/)
-- Automatic LaTeX Plugin for Vim (ATP)
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
@@ -168,7 +162,7 @@ Vim は，チャリティウェアです．<br>
 
 SumatraPDF はコマンドラインから forward search が可能です．
 
-詳しくは，[tex.vim](/Vim/tex.vim/) または [Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (forward search)](/Vim-LaTeX/#e0090c3d) を参照してください．
+詳しくは，[tex.vim](/Vim/tex.vim/) を参照してください．
 
 ### inverse search {#b8f7bf28}
 
@@ -183,26 +177,11 @@ tex.vim, quickrun, LaTeX Box の場合 inverse search は SumatraPDF の \[設�
 です．<br>
 設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
-#### Vim-LaTeX の場合 {#m67596d3}
-
-[Vim-LaTeX](/Vim-LaTeX/) で SumatraPDF の inverse search をする場合は，tex.vim, quickrun の設定とは異なる記述が必要です．<br>
-
-Vim-LaTeX の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
-
-```
-"C:\vim\gvim.exe" -n -c ":RemoteOpen +%l %f"
-```
-
-です．<br>
-設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
-
-詳細は，[Vim-LaTeX](/Vim-LaTeX/)[#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
-
 ## Evince との連携 {#p78ad52b}
 
 ### forward and inverse search {#p2367ca6}
 
-[tex.vim](/Vim/#y0b061e7) または [Vim-LaTeX](/Vim-LaTeX/)[#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
+[tex.vim](/Vim/#y0b061e7) を参照してください．
 
 - [http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html](http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html)
 
