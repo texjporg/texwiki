@@ -43,41 +43,6 @@ KDE
     - [ChangeLog](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/ChangeLog)
 - [http://quickgit.kde.org/?p=kile.git](http://quickgit.kde.org/?p=kile.git)
 
-## ダウンロード/インストール {#a3a3000b}
-
-### Windows {#dba81ec6}
-
-- [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
-
-### OS X {#ra4ed7b1}
-
-- [kde4-kile](http://trac.macports.org/browser/trunk/dports/tex/kde4-kile/Portfile)
-- [How to install Kile on Mac OS X Mountain Lion](http://www.tosnos.com/?p=28)
-
-### Linux Mint {#b7368c5d}
-
-- [Ubuntu -- パッケージ検索結果 -- kile](http://packages.ubuntu.com/ja/kile)
-
-### Debian {#te2ad223}
-
-- [Debian -- パッケージ検索結果 -- kile](https://packages.debian.org/ja/kile)
-
-### Fedora {#zdfde6e5}
-
-- [https://apps.fedoraproject.org/packages/kile](https://apps.fedoraproject.org/packages/kile)
-
-### openSUSE {#d4893a59}
-
-- [http://software.opensuse.org/package/kile](http://software.opensuse.org/package/kile)
-
-### Arch Linux {#z65493ff}
-
-- [https://www.archlinux.org/packages/?q=kile](https://www.archlinux.org/packages/?q=kile)
-
-### Gentoo Linux {#je25493e}
-
-- [http://packages.gentoo.org/package/app-editors/kile](http://packages.gentoo.org/package/app-editors/kile)
-
 ## 設定 {#g12179be}
 
 \[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
