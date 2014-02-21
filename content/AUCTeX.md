@@ -618,15 +618,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                       (add-to-list 'TeX-command-list
                                    '("Chromium"
                                      "chromium --new-window %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Chromium"))
-                      (add-to-list 'TeX-command-list
-                                   '("acroread"
-                                     "acroread %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Adobe Reader"))
-                      (add-to-list 'TeX-command-list
-                                   '("pdfopen"
-                                     "pdfopen -viewer ar9-tab %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
+                                     TeX-run-discard-or-function t t :help "Run Chromium")))))
 
 ;;
 ;; RefTeX with AUCTeX
@@ -668,8 +660,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
-> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
 > </tbody>
 > </table>
 >
