@@ -182,7 +182,7 @@ let g:atp_folding = 1
 > </table>
 >
 
-&#x3c;CTRL-J> を入力すると [Vim-LaTeX](/Vim-LaTeX/) のような place holder の機能が実現できます．<br>
+&#x3c;CTRL-J> を入力すると Vim-LaTeX のような place holder の機能が実現できます．<br>
 ただし &lt;++> のように TeX ファイルに place holder を出力しません．
 
 ### 補完 {#v9176e7e}
