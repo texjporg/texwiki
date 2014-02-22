@@ -192,11 +192,11 @@ TeX Live はアップデートが簡単に行えます．<br>
 ### Linux {#x9f5592c}
 
 - [Linux - TeX Wiki#TeX Live](/Linux/#texlive)
+- [Linux/Arch Linux - TeX Wiki#TeX Live](</Linux/Arch Linux/#e2a82c70>)
 - [Linux/Linux Mint - TeX Wiki#TeX Live](</Linux/Linux Mint/#d237a7b2>)
 - Linux/Debian - TeX Wiki#TeX Live
 - [Linux/Fedora - TeX Wiki#TeX Live](/Linux/Fedora/#u412c2cf)
 - [Linux/openSUSE - TeX Wiki#TeX Live](/Linux/openSUSE/#n3c200b7)
-- [Linux/Arch Linux - TeX Wiki#TeX Live](</Linux/Arch Linux/#e2a82c70>)
 - Linux/Gentoo Linux - TeX Wiki#TeX Live
 - Linux/CentOS - TeX Wiki#TeX Live
 - Linux/Vine Linux - TeX Wiki#TeX Live
