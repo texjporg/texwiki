@@ -56,6 +56,10 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 - [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
 
+### Arch Linux {#eb51c4f9}
+
+- [https://www.archlinux.org/packages/?q=evince](https://www.archlinux.org/packages/?q=evince)
+
 ### Linux Mint {#lacd43b5}
 
 - [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
@@ -71,10 +75,6 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 ### openSUSE {#rd040fd0}
 
 - [http://software.opensuse.org/package/evince](http://software.opensuse.org/package/evince)
-
-### Arch Linux {#eb51c4f9}
-
-- [https://www.archlinux.org/packages/?q=evince](https://www.archlinux.org/packages/?q=evince)
 
 ### Gentoo Linux {#lcdb6ed7}
 
