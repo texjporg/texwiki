@@ -50,6 +50,13 @@ $ pacman -S python
 
 ### Linux {#l250486b}
 
+#### Arch Linux {#y0be7e82}
+
+- [https://www.archlinux.org/packages/extra/x86_64/python/](https://www.archlinux.org/packages/extra/x86_64/python/)
+- [https://www.archlinux.org/packages/extra/i686/python/](https://www.archlinux.org/packages/extra/i686/python/)
+- [https://www.archlinux.org/packages/extra/x86_64/python2/](https://www.archlinux.org/packages/extra/x86_64/python2/)
+- [https://www.archlinux.org/packages/extra/i686/python2/](https://www.archlinux.org/packages/extra/i686/python2/)
+
 #### Linux Mint {#fb9002c1}
 
 - [http://packages.ubuntu.com/ja/python](http://packages.ubuntu.com/ja/python)
@@ -69,13 +76,6 @@ $ pacman -S python
 
 - [http://software.opensuse.org/package/python](http://software.opensuse.org/package/python)
 - [http://software.opensuse.org/package/python3](http://software.opensuse.org/package/python3)
-
-#### Arch Linux {#y0be7e82}
-
-- [https://www.archlinux.org/packages/extra/x86_64/python/](https://www.archlinux.org/packages/extra/x86_64/python/)
-- [https://www.archlinux.org/packages/extra/i686/python/](https://www.archlinux.org/packages/extra/i686/python/)
-- [https://www.archlinux.org/packages/extra/x86_64/python2/](https://www.archlinux.org/packages/extra/x86_64/python2/)
-- [https://www.archlinux.org/packages/extra/i686/python2/](https://www.archlinux.org/packages/extra/i686/python2/)
 
 #### Gentoo Linux {#u2a01502}
 
