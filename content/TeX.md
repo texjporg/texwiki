@@ -48,3 +48,4 @@ pukiwiki: "TeX"
 - [LaTeXでオブジェクト指向プログラミング](http://d.hatena.ne.jp/tarao/20120621/1340255659)
 - [TeXを電卓として使おう（あるいは、TeXでベキ乗根）](http://note.golden-lucky.net/2012/12/textex.html)
 - [TeX &amp; LaTeX Advent Calendar 2013](http://www.adventar.org/calendars/187)
+- [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
