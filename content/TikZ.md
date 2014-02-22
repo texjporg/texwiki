@@ -26,14 +26,15 @@ PGF/TikZ を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euc
 
 PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
 
-- [Altermundus tkz-base](http://altermundus.com/pages/builds/)
-    - [ChangeLog](http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog)
 - [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/)
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
+- [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
     - [e-TeX](/e-TeX/) 拡張が必要です． ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
-    - [TeX Live](</TeX Live/>) 2012 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
+    - [TeX Live](</TeX Live/>) 2013 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
+        <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
+        <!-- - -[[ChangeLog:http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog]] -->
 
 ### 初期設定 {#e634a5d8}
 
@@ -48,8 +49,8 @@ dvipdfmx を使用する場合は次のように設定します。<br>
 ```
 
 PGF はデフォルトでは dvips を使用する設定になっています。<br>
-dvips 以外に dvipdfmx、pdfTeX、XeTeX などもサポートされています。<br>
-なお、PGF の機能を 100% サポートしているのは pdfTeX です。（[Troubleshootingを参照](#i0cba852)）<br>
+dvips 以外に dvipdfmx, dvisvgm, pdfTeX, LuaTeX, XeTeX などもサポートされています。<br>
+なお、PGF の機能を 100% サポートしているのは LuaTeX です。（[Troubleshootingを参照](#i0cba852)）<br>
 
 <br>
 
@@ -58,6 +59,7 @@ graphicx を使用しない場合は、以下のいずれかを tikz（または
 ```
 \def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmxの場合
 \def\pgfsysdriver{pgfsys-dvips.def}%デフォルト
+\def\pgfsysdriver{pgfsys-dvisvgm.def}%dvisvgmの場合
 \def\pgfsysdriver{pgfsys-pdftex.def}%最も高機能
 \def\pgfsysdriver{pgfsys-xetex.def}%XeTeXの場合
 ```
@@ -68,8 +70,7 @@ graphicx を使用しない場合は、以下のいずれかを tikz（または
 
 PGF/TikZには
 
-- 900ページ以上の長大なマニュアル (ver 2.10-CVS の場合)
-- 700ページ以上の長大なマニュアル (ver 2.10 の場合)
+- 1165ページの長大なマニュアル (ver 3.0.0 の場合)
 
 が付属し、その前半には 70 ページにも及ぶチュートリアルがあるので、学習を始めるのは比較的容易です。<br>
 
@@ -77,8 +78,7 @@ PGF/TikZには
 
 たとえば、チュートリアルの
 
-- p.34 (ver 2.10-CVS の場合)
-- p.32 (ver 2.10 の場合)
+- p.39 (ver 3.0.0 の場合)
 
 にある「パスの交錯」のセクションでは、説明の本文には「intersections ライブラリ」について言及されているものの、例にはその設定が記述されていないため、そのままではエラーが出ます。<br>
 プリアンブルに
@@ -713,7 +713,7 @@ dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後�
 - オプションをつけてコンパイルする
 1. uplatex → dvipdfmx → pdfcrop
 1. uplatex → dvips
-1. pdflatex
+1. lualatex
 
 #### ソースコードへの追加記述 {#yddb8d2b}
 
@@ -740,7 +740,7 @@ dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後�
 ソースコード（tex ファイル）をコンパイルするときに、以下のオプションをつけて実行します。それぞれの図画に対し、<strong>--jobname</strong> オプションをつけてコンパイルします。（なお、以下の例では拡張子（.tex など）をつけてますが、省略しても各コマンドは「よきにはからって」くれます。）<br>
 
 ```
-$ uplatex --jobname=filename-fig1 filename.tex~
+$ uplatex --jobname=filename-fig1 filename.tex
 ```
 
 これで、図画だけを含んだ filename-fig1.dvi が作成されます。
@@ -769,19 +769,19 @@ $ uplatex --jobname=filename-fig1 filename.tex~
 
     これで、図画の大きさちょうどの ps ファイルが作成されます。
 
-1. uplatex ではなく pdfTeX（pdfLaTeX）を使用する場合
+1. LuaLaTeX を使用する場合
 
     ```
-    $ pdflatex --jobname=filename-fig1 filename.tex
+    $ lualatex --jobname=filename-fig1 filename.tex
     ```
 
-    これだけで、図画の大きさちょうどの pdf ファイル（filename-fig1.pdf）が作成されますが、pdfTeX は日本語には対応していませんので、図中に日本語が含まれている場合はそこは空白になります。
+    これだけで、図画の大きさちょうどの pdf ファイル（filename-fig1.pdf）が作成されます。
 
 ## Troubleshooting {#i0cba852}
 
 - \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
-- dvipdfmx を使用することによる制約。pdfTeX を使用すれば可能です。（マニュアル  p.111 (ver 2.10-CVS の場合) または p.109 (ver 2.10 の場合)）
+- dvipdfmx を使用することによる制約。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0 の場合)）
     - パスで画像をマスクできない／パターンを使用できない／シェーディングが使用できない
         - 実際には <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）
         - 実際には <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）
@@ -789,7 +789,7 @@ $ uplatex --jobname=filename-fig1 filename.tex~
         - [TikZ は dvipdfmx をどこまでサポートするか？ (1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://slashdot.jp/~ujimushi/journal/551945)参照
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが、品質は落ちる／透明度は最近のGhostscriptを必要とする
-- LaTeXではなくplainTeX（TeX/pTeX）で使うとページ番号が表示されない
+- LaTeXではなくplainTeX（TeX/upTeX）で使うとページ番号が表示されない
     → [Strange behaviour with PGF/TikZ and Plain TeX output routine](http://tex.stackexchange.com/questions/88782/strange-behaviour-with-pgf-tikz)
 
 ## TikZ 対応エディタ {#ta16acba}
