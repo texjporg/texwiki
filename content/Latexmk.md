@@ -30,8 +30,8 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
   $pdflatex = 'lualatex %O -synctex=1 %S';
-  $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
   $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -47,8 +47,8 @@ if ($^O eq 'MSWin32') {
 } else {
   $latex = 'uplatex %O -synctex=1 %S';
   $pdflatex = 'lualatex %O -synctex=1 %S';
-  $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
   $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -84,8 +84,8 @@ latexmk -gg -pdf hoge.tex
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
-  $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
   $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -101,8 +101,8 @@ if ($^O eq 'MSWin32') {
 } else {
   $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
-  $bibtex = 'upbibtex %O %B';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
   $makeindex = 'makeindex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
