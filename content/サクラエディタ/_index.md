@@ -499,7 +499,7 @@ TeX のアウトライン解析機能があります．
 
 ## Linux で サクラエディタを使う {#pf5d83cb}
 
-Wine を使えば Linux でも動作します．
+Wine を使えば Linux でサクラエディタが使用できます．
 
 - [Linux でサクラエディタを使いたい - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ/47)
 
