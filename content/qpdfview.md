@@ -40,6 +40,10 @@ Linux
 
 ## ダウンロード/インストール {#h3948c41}
 
+### Arch Linux {#ua5dc612}
+
+- [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
+
 ### Linux Mint {#c6d3b357}
 
 - [http://packages.ubuntu.com/ja/qpdfview](http://packages.ubuntu.com/ja/qpdfview)
@@ -55,10 +59,6 @@ Linux
 ### openSUSE {#e541d6b9}
 
 - [http://software.opensuse.org/package/qpdfview](http://software.opensuse.org/package/qpdfview)
-
-### Arch Linux {#ua5dc612}
-
-- [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
 
 ### Gentoo Linux {#ka0be970}
 
