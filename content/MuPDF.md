@@ -125,6 +125,10 @@ $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg 
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
+### Arch Linux {#y10f7abd}
+
+- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
+
 ### Linux Mint {#od9b1036}
 
 - [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
@@ -140,10 +144,6 @@ $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg 
 ### openSUSE {#sa86e80c}
 
 - [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
-
-### Arch Linux {#y10f7abd}
-
-- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
 
 ### Gentoo Linux {#d1a956ba}
 
