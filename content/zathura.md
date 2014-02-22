@@ -68,6 +68,10 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 ## ダウンロード/インストール {#w2221884}
 
+### Arch Linux {#h8cd5d50}
+
+- [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
+
 ### Linux Mint {#cc8ebe01}
 
 - [http://packages.ubuntu.com/ja/zathura](http://packages.ubuntu.com/ja/zathura)
@@ -83,10 +87,6 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 ### openSUSE {#p01e8065}
 
 - [http://software.opensuse.org/package/zathura](http://software.opensuse.org/package/zathura)
-
-### Arch Linux {#h8cd5d50}
-
-- [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
 ### Gentoo Linux {#z80dcad8}
 
