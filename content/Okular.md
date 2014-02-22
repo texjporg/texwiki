@@ -43,6 +43,10 @@ KDE
 
 - [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
 
+### Arch Linux {#c209770f}
+
+- [https://www.archlinux.org/packages/?q=kdegraphics-okular](https://www.archlinux.org/packages/?q=kdegraphics-okular)
+
 ### Linux Mint {#d3c8be06}
 
 - [http://packages.ubuntu.com/ja/okular](http://packages.ubuntu.com/ja/okular)
@@ -58,10 +62,6 @@ KDE
 ### openSUSE {#w345a41b}
 
 - [http://software.opensuse.org/package/okular](http://software.opensuse.org/package/okular)
-
-### Arch Linux {#c209770f}
-
-- [https://www.archlinux.org/packages/?q=kdegraphics-okular](https://www.archlinux.org/packages/?q=kdegraphics-okular)
 
 ### Gentoo Linux {#rfafd9c6}
 
