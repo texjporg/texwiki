@@ -72,6 +72,11 @@ $ pacman -S ruby
 
 ### Linux {#pfcca84f}
 
+#### Arch Linux {#k152c3d6}
+
+- [https://www.archlinux.org/packages/extra/x86_64/ruby/](https://www.archlinux.org/packages/extra/x86_64/ruby/)
+- [https://www.archlinux.org/packages/extra/i686/ruby/](https://www.archlinux.org/packages/extra/i686/ruby/)
+
 #### Linux Mint {#o6dd6f52}
 
 - [http://packages.ubuntu.com/ja/ruby](http://packages.ubuntu.com/ja/ruby)
@@ -89,11 +94,6 @@ $ pacman -S ruby
 #### openSUSE {#r7994550}
 
 - [http://software.opensuse.org/package/ruby](http://software.opensuse.org/package/ruby)
-
-#### Arch Linux {#k152c3d6}
-
-- [https://www.archlinux.org/packages/extra/x86_64/ruby/](https://www.archlinux.org/packages/extra/x86_64/ruby/)
-- [https://www.archlinux.org/packages/extra/i686/ruby/](https://www.archlinux.org/packages/extra/i686/ruby/)
 
 #### Gentoo Linux {#wf560410}
 
