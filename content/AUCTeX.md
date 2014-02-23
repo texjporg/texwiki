@@ -1061,14 +1061,15 @@ AUCTeX とは関係ありませんが，先頭に
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [Newest &#39;auctex&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/auctex)
 - [Starter Kit LaTeX](http://www.kieranhealy.org/esk/starter-kit-latex.html)
+- [https://github.com/monsanto/auto-complete-auctex](https://github.com/monsanto/auto-complete-auctex)
+    - [http://melpa.milkbox.net/#/auto-complete-auctex](http://melpa.milkbox.net/#/auto-complete-auctex)
 - [https://github.com/tom-tan/auctex-latexmk](https://github.com/tom-tan/auctex-latexmk)
+    - [AUCTeX で PDF をコマンド一つで生成する．](http://qiita.com/items/cbc813028d7f5951b165)
+    - [https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk](https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk)
+    - [http://melpa.milkbox.net/#/auctex-latexmk](http://melpa.milkbox.net/#/auctex-latexmk)
 - [Youhei SASAKI's official site: AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/emacs/auctex_config.html)
 - [https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/auctex_config.org](https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/auctex_config.org)
 - [emacsにauctex （texlive 2012）](http://miyazakikenji.wordpress.com/2013/06/02/emacs%E3%81%ABauctex-%EF%BC%88texlive-2012%EF%BC%89/)
-- [auctex-latexmk.el](https://github.com/tom-tan/auctex-latexmk/)
-    - [AUCTeX で PDF をコマンド一つで生成する．](http://qiita.com/items/cbc813028d7f5951b165)
-    - [https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk](https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk)
-    - [http://melpa.milkbox.net/#auctex-latexmk](http://melpa.milkbox.net/#auctex-latexmk)
 - [auctex-lua.el](https://github.com/vermiculus/auctex-lua) Lua editing utilities for AUCTeX
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) (X)Emacs frontend to forward search with SumatraPDF
 - [yatex-modoki-mode](https://bitbucket.org/tequilasunset/yatex-modoki-mode/) AUCTeX を YaTeX っぽくするマイナーモード。
