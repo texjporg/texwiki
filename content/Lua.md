@@ -38,4 +38,5 @@ Lua は パワフル・高速・軽量で組み込み可能なスクリプト言
 
 ## 関連リンク {#c11edac0}
 
+- [https://sites.google.com/site/keisansugaku/home/lua-intro](https://sites.google.com/site/keisansugaku/home/lua-intro)
 - [LuaスクリプトとDLLをラッパーするEXEを作る](http://asdf.wkeya.com/code/lua.html)
