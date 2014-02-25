@@ -8,7 +8,7 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-## [Texmaker](http://www.xm1math.net/texmaker/) (非推奨) → [TeXstudio](/TeXstudio/) を使用する {#h2b86e88}
+## [Texmaker](http://www.xm1math.net/texmaker/) {#x838d855}
 
 <img src="http://www.xm1math.net/texmaker/texmaker128.png" alt="Texmaker" style="float:right">
 
@@ -79,7 +79,7 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 ***
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → [TeXstudio](/TeXstudio/) を使用する {#c698d89f}
+### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → 修正版または[TeXstudio](/TeXstudio/) を使用する {#c698d89f}
 
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって判読不能になるという不具合があります．<br>
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
@@ -99,7 +99,7 @@ uim を使用している場合は背景が黒く表示されて判読不能に�
 バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．<br>
 また，同じく Qt を使用している [TeXworks でもハイライトに関する不具合が存在する](/TeXworks/#s5bfc44e)ので，もしかすると Qt の不具合 (仕様？) かもしれません．<br>
 
-Texmaker ではなく Texmaker の派生版の [TeXstudio](/TeXstudio/) を使用すれば OK です．<br>
+Texmaker の日本語入力を直した修正版か派生版の [TeXstudio](/TeXstudio/) を使用するといいでしょう．<br>
 
 #### 修正方法 (Windows) {#e1ab5b1e}
 
