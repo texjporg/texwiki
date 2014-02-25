@@ -442,9 +442,881 @@ C:.
 
 [代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
 
-## 設定 {#e3cd1932}
+## 設定ファイル {#ke75945d}
 
-[Texmaker/設定](</Texmaker/設定/>) を参照．
+> <table>
+> <thead>
+> <tr><th style="text-align:center">環境</th><th style="text-align:center">設定ファイルが保存されるフォルダー</th><th style="text-align:center">ファイル名</th></tr>
+> </thead>
+> <tbody>
+> <tr><td>Portable バージョン</td><td>Texmaker の実行ファイルと同じフォルダー</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>Windows</td><td>%APPDATA%\xm1\</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>UNIX, Linux, OS X</td><td>$HOME/.config/xm1/</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> </tbody>
+> </table>
+>
+
+## 設定のリセット {#qc1461dd}
+
+\[オプション(O)\]-\[設定ファイル\]-\[設定をリセット\]
+
+## コマンド (Windows) {#cab65285}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+
+PDF ビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
+Texmaker のデフォルトの文字コードは UTF-8 です．<br>
+コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
+W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
+
+***
+
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>makeindex %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
+
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf.exe %.ps</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>rungs.exe</ins> または <ins>gswin64c.exe</ins> または <ins>gswin32c.exe</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;">(●) 組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+
+<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+
+<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+
+<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+
+<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $pdf=\[char\]0x22+'%.pdf'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"</ins><br>
+<!-- %%%texworks %.pdf%%%&br; -->
+<!-- %%%cmd /c start firefox -new-window %.pdf%%%&br; -->
+<!-- %%%cmd /c start chrome - -new-window !/%.pdf%%%&br; -->
+<!-- %%%pdfopen - -rxi - -file %.pdf%%%&br; -->
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## [SumatraPDF](/SumatraPDF/) との連携 {#f10825ae}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward and inverse search {#xf457e6c}
+
+#### SumatraPDF を前面に表示したい場合 {#r4dc6964}
+
+forward and inverse search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+■ 64-bit Windows の場合<br>
+
+```
+powershell -Command "& {$line=[char]0x22+@+[char]0x22;$tex=[char]0x22+'#.tex'+[char]0x22;$pdf=[char]0x22+'%.pdf'+[char]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=[char]0x25+'f';$l=[char]0x25+'l';$inverse_search=[char]0x22+[char]0x5c+[char]0x22+$texmaker+[char]0x5c+[char]0x22+' '+[char]0x5c+[char]0x22+$f+[char]0x5c+[char]0x22+' -line '+$l+[char]0x22;$sumatrapdf=[char]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+[char]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+```
+
+■ 32-bit Windows の場合<br>
+
+```
+powershell -Command "& {$line=[char]0x22+@+[char]0x22;$tex=[char]0x22+'#.tex'+[char]0x22;$pdf=[char]0x22+'%.pdf'+[char]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=[char]0x25+'f';$l=[char]0x25+'l';$inverse_search=[char]0x22+[char]0x5c+[char]0x22+$texmaker+[char]0x5c+[char]0x22+' '+[char]0x5c+[char]0x22+$f+[char]0x5c+[char]0x22+' -line '+$l+[char]0x22;$sumatrapdf=[char]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+[char]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+```
+
+### forward search {#y08c577b}
+
+#### SumatraPDF を前面に表示したい場合 {#id9fc839}
+
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+■ 64-bit Windows の場合<br>
+
+```
+"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
+```
+
+■ 32-bit Windows の場合<br>
+
+```
+"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
+```
+
+#### SumatraPDF を前面に表示したくない場合 {#j0fbd66f}
+
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+```
+fwdsumatrapdf.exe %.pdf #.tex @
+```
+
+### inverse search {#p850b553}
+
+inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下のように設定します．<br>
+
+■ 64-bit Windows の場合
+
+```
+"C:\Program Files (x86)\Texmaker\texmaker.exe" "%f" -line %l
+```
+
+■ 32-bit Windows の場合
+
+```
+"C:\Program Files\Texmaker\texmaker.exe" "%f" -line %l
+```
+
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## [TeXworks](/TeXworks/) との連携 {#o9f4b99c}
+
+### forward search {#a41fe59c}
+
+forward search は PDFビューアの外部ビューアに以下のように設定します．<br>
+
+```
+powershell -Command "& {$param=[char]0x22+'@:0:#.tex'+[char]0x22; $pdf=[char]0x22+'%.pdf'+[char]0x22; $page=[char]0x25+'{page+1}'; $o=[char]0x27+[char]0x25+'{output}'+[char]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"
+```
+
+## [Adobe Reader](</Adobe Reader/>) との連携 {#u27e1718}
+
+### forward search {#l5bfe340}
+
+#### pdfupLaTeXA {#v915ab85}
+
+pdfuplatexA-nonstopmode.bat を作成します．
+
+***
+
+- pdfuplatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+pdfuplatexA-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+#### pdfupLaTeX2A {#pf77769a}
+
+pdfuplatex2A-nonstopmode.bat を作成します．
+
+***
+
+- pdfuplatex2A-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
+dvips -Ppdf -z -f "%~n1.dvi" | ^
+convbkmk -u > "%~n1.ps" && ^
+ps2pdf.bat "%~n1.ps" && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+pdfuplatex2A-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+#### pdfLaTeXA {#j7c9b397}
+
+pdflatexA-nonstopmode.bat を作成します．
+
+***
+
+- pdflatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+pdflatexA-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+#### LuaLaTeXA {#b2053ddc}
+
+lualatexA-nonstopmode.bat を作成します．
+
+***
+
+- lualatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+lualatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+lualatexA-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+#### LuaJITLaTeXA {#z4aadf43}
+
+luajitlatexA-nonstopmode.bat を作成します．
+
+***
+
+- luajitlatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+luajitlatexA-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+#### XeLaTeXA {#md09c195}
+
+xelatexA-nonstopmode.bat を作成します．
+
+***
+
+- xelatexA-nonstopmode.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+xelatex -synctex=1 -interaction=nonstopmode %1 && ^
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
+```
+
+***
+
+クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
+
+```
+xelatexA-nonstopmode.bat % #.tex @
+```
+
+を入力します．
+
+## コマンド (OS X) {#qe10b63b}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+
+動作未確認です．<br>
+PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
+BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
+
+- [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
+- [TeXshopでbibTeXがうまく動かなくなりました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=991)
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>"/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/makeindex" %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" %.dvi</ins><br>
+
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/Applications/Ghostscript.app/bin/ps2pdf" %.ps</ins> または <ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/upmpost" -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;"><span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span>　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## Skim との連携 {#b05a1a86}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#jbc32d2d}
+
+forward search は PDFビューアに
+
+```
+"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex
+```
+
+です．
+
+### inverse search {#q51f9015}
+
+コマンド:
+: /Applications/texmaker.app/Contents/MacOS/texmaker
+
+引数:
+: "%file" -line %line
+
+## コマンド (Linux) {#web15355}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+
+PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
+組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
+
+***
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>makeindex %.idx</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
+
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
+
+<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+
+　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+
+***
+
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
+<span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+
+<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+
+<ins>fwdevince %.pdf @ #.tex</ins><br>
+
+<ins>ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"</ins><br>
+
+<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+
+<ins>ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"</ins><br>
+
+<ins>ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"</ins><br>
+
+<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## [Evince](/Evince/) との連携 {#xd595a5d}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#dc58c25f}
+
+Evince/fwdevince の fwdevince を使用します．<br>
+
+forward search は PDFビューアに
+
+```
+fwdevince %.pdf @ #.tex
+```
+
+です．
+
+### inverse search {#zb2ae21e}
+
+Evince/fwdevince の invevince を使用します．<br>
+
+ユーザーコマンドに invevince を作成して以下のようにコマンドを設定します．<br>
+
+```
+ruby -e "cmd='invevince'+' '+0x22.chr+'"%.pdf"'+0x22.chr+' '+0x22.chr+'texmaker '+0x27.chr++0x25.chr+'f'+0x27.chr+' -line '+0x25.chr+'l'+0x22.chr;system(cmd)"
+```
+
+PDFビューアに evince を設定して evince で PDF ファイルを表示してユーザーコマンドを実行します．<br>
+Ctrl + 左クリックで inverse search ができます．<br>
+ユーザーコマンドを実行するタイミングは evince で PDF ファイルを表示する前でも後でもどちらでも OK です．<br>
+Texmaker の動作がおかしくなる場合は使用を中止してください．<br>
+
+## Okular との連携 {#e1d5124a}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#rb0da469}
+
+forward search は PDFビューアに
+
+```
+ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"
+```
+
+です．
+
+### inverse search {#r820bc14}
+
+\[Settings\]-\[Configure Okular...\]-\[Editor\] の項目から Custom Text Editor を選択します．
+
+Editor:
+: Custom Text Editor
+
+Command:
+: texmaker "%f" -line %l
+
+Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## zathura との連携 {#k3c22c37}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#za381a9a}
+
+ユーザーコマンドに fwdzathura を作成して以下のようにコマンドを設定します．<br>
+
+```
+ruby -e "cmd='zathura --synctex-forward '+0x22.chr+'"@"'+':0:'+'"#.tex"'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
+```
+
+PDFビューアに zathura を設定して zathura で PDF ファイルを表示したあとでユーザーコマンドを実行します．
+
+### inverse search {#s8c6284b}
+
+PDFビューアに
+
+```
+ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
+```
+
+を設定します．
+
+クイックビルドの DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しないを ON にします．<br>
+
+Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## qpdfview との連携 {#t3c4682d}
+
+LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
+
+### forward search {#dca2869a}
+
+forward search は PDFビューアに
+
+```
+ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"
+```
+
+です．
+
+### inverse search {#pac65f46}
+
+\[Edit\]-\[Settings...\]-\[Behaviour\]
+
+Source editor:
+: texmaker "%1" -line %2
+
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
+
+## クイックビルド {#y84eb800}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[クイックビルド\]
+
+LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
+ユーザー定義でコマンドを指定して実行することもできます．<br>
+
+クイックビルドを実行して複数のビューアが起動してしまう場合は<br>
+
+- DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しないにチェックを入れる
+- ユーザー定義でビューアを起動する手順を除いた処理を作成する
+
+などの方法で対処してください．<br>
+
+***
+
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">クイックビルドで使用するコマンド</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + PS ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + PDF ファイルを表示</span>　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + DVI ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + dvips + ps2pdf + PDF ファイルを表示</span>　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><span style="color:black;background-color:yellow;"><strong>(●) LaTeX + dvipdfm + PDF ファイルを表示 ← 選択する</strong></span></span><br>
+
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Bib(la)tex + LaTeX (x2) + dvips + ps2pdf + PDF ファイルを表示</span>　　　　<span style="color:Black;background-color:#F5F5F5;">◯ Sweave + PdfLaTeX + PDF ファイルを表示</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">◯ LaTeX + Asymptote + LaTeX + dvips + PS ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ PdfLaTeX + Asymptote + PdfLaTeX + PDF ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ Latexmk + PDF ファイルを表示</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">◯ XeLaTeX + PDF ファイルを表示</span><br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　<strong>クイックビルド</strong>　</span>　 <span style="color:Black;background-color:#F5F5F5;">◯ LuaLaTeX + PDF ファイルを表示</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">◯ ユーザー定義 : (% : 拡張子を除いたファイル名)</span><br>
+
+<span style="color:#888888;background-color:#EEEEEE;"><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"&#x7c;rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance %.pdf -forward-search #.tex @</ins></span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">For .asy files　</span><ins>asy -f pdf -noView %.asy&#x7c;pdfopen --rxi --file %.pdf</ins><br>
+
+　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しない</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<strong>ショートカット</strong><br>
+
+<br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
+## エディタ {#y67addbe}
+
+\[オプション(O)\]-\[Texmaker の設定\]-\[エディタ\]
+
+文字コードのリストからエディタで使用する文字コードを指定できます．<br>
+デフォルトの文字コードは UTF-8 です．<br>
+日本語の文書を作成する場合はスペルチェック辞書のインラインのチェックを外します．<br>
+重要なファイルを作成する場合は 10 分ごとにバックアップをとる にチェックを入れます．<br>
+
+***
+
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">エディタ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>メイリオ　　　　　　　　　　　<strong>ᐯ</strong></ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">文字コード　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　▼\]</ins></span><span style="color:Black;background-color:#F5F5F5;">　☑ 行番号の表示</span><br>
+
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　<span style="color:black;background-color:yellow;"><strong>☐ インライン ← 日本語の文書を作成する場合はチェックをはずす</strong></span></span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">色</span><br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>エディタ</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+>
+> : &nbsp;
+>
+
+>
+> : &nbsp;
+>
+
+> <table>
+> <tbody>
+> <tr><td style="color:#555">Background</td><td>#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
+> <tr><td style="color:#555">Current line</td><td>#ececec</td></tr>
+> <tr><td style="color:#555">Highlighted line</td><td>#ff0000</td></tr>
+> <tr><td style="color:#555">Text</td><td>#000000</td></tr>
+> <tr><td style="color:#555">Comment</td><td>#606060</td></tr>
+> <tr><td style="color:#555">Math</td><td>#008000</td></tr>
+> <tr><td style="color:#555">...</td><td>...</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　デフォルトのテーマ　　　　\]</span><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
 
 ## 使い方 {#qb8bff72}
 
