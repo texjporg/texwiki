@@ -216,7 +216,6 @@ TeX Live はアップデートが簡単に行えます．<br>
 - [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 - [Japanese TeX Live adaptions development - Gitorious](https://gitorious.org/tlptexlive)
-- [xdvik Japanese patch Cleanup - Gitorious](https://gitorious.org/xdvik-japanese-patch-cleanup)
 
 ## [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
 
@@ -330,5 +329,3 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
-- [Advogato: Personal info for karlberry](http://www.advogato.org/person/karlberry/)
-    - [Advogato: Blog for karlberry](http://www.advogato.org/person/karlberry/diary.html)
