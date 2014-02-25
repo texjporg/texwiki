@@ -8,7 +8,7 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-## [Texmaker](http://www.xm1math.net/texmaker/) {#x838d855}
+## [Texmaker](http://www.xm1math.net/texmaker/) (非推奨) → [TeXstudio](/TeXstudio/) を使用する {#x838d855}
 
 <img src="http://www.xm1math.net/texmaker/texmaker128.png" alt="Texmaker" style="float:right">
 
