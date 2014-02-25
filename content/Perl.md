@@ -7,7 +7,7 @@ pukiwiki: "Perl"
 
 # Perl
 
-## [Perl](http://www.perl.org/) {#rf8f3586}
+## [Perl](http://www.perl.org/) (非推奨) → [Python](/Python/), [Ruby](/Ruby/), JavaScript, PHP を使用する {#rf8f3586}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/200px-Camelia.svg.png" alt="Perl" style="float:right">
 
