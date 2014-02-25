@@ -142,7 +142,7 @@ shell_escape_commands を以下のように編集して保存します．<br>
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,mendex,texindy,\
+makeindex,texindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
@@ -407,7 +407,7 @@ shell_escape_commands を以下のように編集して保存します．<br>
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,mendex,texindy,\
+makeindex,texindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
