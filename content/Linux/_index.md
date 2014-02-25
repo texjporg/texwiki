@@ -16,7 +16,8 @@ pukiwiki: "Linux"
 
 ## Linux ディストリビューション {#h2a1700b}
 
-Linux はディストリビューションによって TeX のインストール方法が異なるので，ディストリビューションごとの項目をご覧ください．<br>
+Linux はディストリビューションによって TeX のインストール方法が異なります．<br>
+Linux ディストリビューションに収録されている TeX Live をインストールする場合はディストリビューションごとの項目をご覧ください．<br>
 [TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．<br>
 最新のソフトウェアを使用したい場合は [Arch Linux](</Linux/Arch Linux/>) をおすすめします．<br>
 
@@ -135,7 +136,7 @@ shell_escape_commands を以下のように編集して保存します．<br>
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,mendex,texindy,\
+makeindex,texindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
@@ -226,7 +227,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Kile, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
