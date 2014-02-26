@@ -40,18 +40,18 @@ convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプト�
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 - [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
 
-RubyInstaller for Windows の Ruby を C:\Ruby210 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場合は
 
 ```
-;C:\Ruby210\bin
+;C:\Ruby200\bin
 ```
 
 を環境変数 PATH に追加します
 
-RubyInstaller for Windows の Ruby を C:\Ruby210-x64 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby200-x64 にインストールした場合は
 
 ```
-;C:\Ruby210-x64\bin
+;C:\Ruby200-x64\bin
 ```
 
 を環境変数 PATH に追加します
