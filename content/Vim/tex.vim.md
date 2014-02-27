@@ -11,9 +11,14 @@ pukiwiki: "Vim/tex.vim"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## tex.vim {#rf521622}
+## tex.vim → 問題が発生する場合は LaTeX Box または [quickrun](/quickrun/) を使用する {#rf521622}
 
-$HOME/vimfiles/after/ftplugin/tex.vim (Windows), $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux) に設定を記述することで Vim からタイプセット・プレビューができます．<br>
+Vim は
+
+- $HOME/vimfiles/after/ftplugin/tex.vim (Windows の場合)
+- $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux の場合)
+
+に設定を記述することで Vim からタイプセット・プレビューができます．<br>
 
 tex.vim を使用する場合は $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (OS X, Linux) に
 
@@ -30,10 +35,10 @@ let g:tex_flavor='latex'
 ***
 
 を記述しておく必要があります．<br>
-補完機能が必要な場合は [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
+補完機能が必要な場合は LaTeX Box または [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
 Latexmk を使用する場合は [Latexmk](/Latexmk/) の設定をしてください．<br>
 LaTeX Box を使用すると latexmk を使用してバックグラウンドでコンパイルができます．<br>
-tex.vim が動作しない場合は [quickrun](/quickrun/), LaTeX Box を使用してタイプセットしてください．<br> <!-- OS X の場合は [[ftpluginのtex.vim:http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html]] も参考になります．~ -->
+tex.vim が動作しない場合は LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br> <!-- OS X の場合は [[ftpluginのtex.vim:http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html]] も参考になります．~ -->
 
 ***
 
