@@ -60,6 +60,7 @@ Windows, OS X, Linux
 ### Windows {#m3e22b6d}
 
 - [Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理](http://hagetak.hatenablog.com/entry/2014/01/05/180432)
+- [SublimeText3でのLaTeX環境設定方法](http://hagetak.hatenablog.com/entry/2013/10/01/002830)
 - [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
 - [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
 - [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
