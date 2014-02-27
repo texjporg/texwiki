@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) (非推奨) → [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) + LaTeX Box を使用する {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) + LaTeX Box を使用する {#z8e30b5a}
 
 <img src="http://vim-latex.sourceforge.net/vim-latex.gif" alt="Vim-LaTeX" style="float:right">
 
