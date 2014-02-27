@@ -9,7 +9,7 @@ pukiwiki: "jN"
 
 [Notepad++](/Notepad++/) > jN
 
-## jN (JavaScript for Notepad++) {#i71db25c}
+## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) または [Python Script](</Python Script/>) を使用する {#i71db25c}
 
 - [jn-npp-plugin - Plugin for Notepad++ allowing you to automate some tasks by using JavaScript - Google Project Hosting](https://code.google.com/p/jn-npp-plugin/)
 - [jN - API](http://jn-npp-plugin.googlecode.com/svn/wiki/API/api.xml)
