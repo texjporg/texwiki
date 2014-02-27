@@ -9,7 +9,7 @@ pukiwiki: "AUCTeX"
 
 [Emacs](/Emacs/) > AUCTeX
 
-## [AUCTeX](http://www.gnu.org/software/auctex/) {#d40177aa}
+## [AUCTeX](http://www.gnu.org/software/auctex/) → 問題が発生する場合は [TeX mode](</Emacs/TeX mode/>) または [YaTeX](/YaTeX/) を使用する {#d40177aa}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
