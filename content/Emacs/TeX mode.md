@@ -9,7 +9,7 @@ pukiwiki: "Emacs/TeX mode"
 
 [Emacs](/Emacs/) > TeX mode
 
-## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
+## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) → 問題が発生する場合は [AUCTeX](/AUCTeX/) または [YaTeX](/YaTeX/) を使用する <a id="tex-mode"></a> {#e09eebbf}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
