@@ -9,7 +9,7 @@ pukiwiki: "cm-super"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/cm-super.html -->
 
-## cm-super (非推奨) → [Latin Modern](</Latin Modern/>) を使用する {#vb256d79}
+## cm-super → 問題が発生する場合は [Latin Modern](</Latin Modern/>) を使用する {#vb256d79}
 
 - [http://www.ctan.org/pkg/cm-super](http://www.ctan.org/pkg/cm-super)
 
