@@ -7,11 +7,10 @@ pukiwiki: "WinShell"
 
 # WinShell
 
-<strong>現在では主流ではありません。使っている人も少ないので、サポートも得にくいです。</strong><br>
+WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．<br>
+問題が発生する場合は WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用してください．<br>
 
-<strong>WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境をおすすめします．</strong><br>
-
-## [WinShell](http://www.winshell.org/) (非推奨) → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) → 問題が発生する場合は [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
