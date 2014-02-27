@@ -9,7 +9,7 @@ pukiwiki: "LaTeX Box"
 
 [Vim](/Vim/) > LaTeX Box
 
-## LaTeX Box {#qb2360b5}
+## LaTeX Box → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または [quickrun](/quickrun/) を使用する {#qb2360b5}
 
 <img src="https://raw.github.com/LaTeX-Box-Team/LaTeX-Box/master/doc/LaTeX-BoX.png" alt="LaTeX Box" width="255" height="255" style="float:right">
 
@@ -34,6 +34,7 @@ GPLv3
 
 LaTeX Box はタイプセットに Latexmk を使用します．<br>
 [Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
+LaTeX Box が動作しない場合は [tex.vim](/Vim/tex.vim/) または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
 
 ### Windows {#o6005237}
 
