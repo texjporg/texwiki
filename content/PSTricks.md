@@ -7,7 +7,7 @@ pukiwiki: "PSTricks"
 
 # PSTricks
 
-## [PSTricks](http://tug.org/PSTricks/) (非推奨) → [TikZ](/TikZ/) を使用する {#c2b5878d}
+## [PSTricks](http://tug.org/PSTricks/) → 問題が発生する場合は [TikZ](/TikZ/) を使用する {#c2b5878d}
 
 <!-- mimetex を使っている行をコメントアウトしました。復帰させました。 -->
 
