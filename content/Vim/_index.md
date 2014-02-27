@@ -110,16 +110,13 @@ Vim は，チャリティウェアです．<br>
 
 ## Vim で LaTeX {#i2be46c6}
 
-### tex.vim {#y0b061e7}
-
-[Vim/tex.vim](/Vim/tex.vim/) を参照．
-
-### その他のプラグイン {#g8a1b1b6}
-
+- [tex.vim](/Vim/tex.vim/)
+- LaTeX Box
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
-- LaTeX Box
+- [Vim-LaTeX](/Vim-LaTeX/)
+- ATP
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](http://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](http://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
