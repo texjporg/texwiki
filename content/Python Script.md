@@ -11,7 +11,7 @@ pukiwiki: "Python Script"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Python Script {#k806f6f8}
+## Python Script → 問題が発生する場合は [NppExec](/NppExec/) または [jN](/jN/) を使用する {#k806f6f8}
 
 Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
 \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で Python Script を選択してインストールできます．<br>
