@@ -177,7 +177,7 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場�
 \usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
 \usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
 
-(u)platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk を使用します．<br>
+(u)platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk または bkmk2uni を使用します．<br>
 
 ```
 \usepackage{hyperref}
