@@ -465,7 +465,7 @@ Path to MakeIndex<br>
 <ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
+<ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
