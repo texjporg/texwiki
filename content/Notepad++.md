@@ -185,6 +185,7 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 ### forward and inverse search {#k51d2c1d}
 
 [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)<br>
+[jN#SumatraPDF との連携](/jN/#u247e15e)<br>
 [Python Script#SumatraPDF との連携](</Python Script/#w3ac6f2d>)<br>
 を参照してください．<br>
 
