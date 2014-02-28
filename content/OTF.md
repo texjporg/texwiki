@@ -130,10 +130,7 @@ Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
 (Adobe Reader XI Font Packs
 [Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
 /
-[Mac](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac)
-/
-Adobe Reader 9.1 Font Packs
-[Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix))
+[Mac](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac))
 はインストール済みとします。<br>
 
 これで次のものをテストしてみます。<br>
@@ -394,7 +391,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
-とりあえず Adobe Reader 9 の KozMinPr6N-Regular.otf のある
+とりあえず Windows 版 Adobe Reader XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下から
 シンボリックリンクします。<br>
 
@@ -413,7 +410,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
     lualatex hoge.tex
     ```
 
-これで明朝体については「小塚明朝 Pr6N R」が埋め込まれるので
+これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので
 Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
 ## Adobe-Japan1-6 とは {#j54465d8}
