@@ -622,6 +622,13 @@ ps2otfps old.ps new.ps
 ```
 
 によって、new.ps を作成し、この new.ps を Ghostscript で処理します。
+あるいは，最新の ps2otfps はフィルタにもなるので (オプション -f)
+
+```
+dvips -f -Pdl ... dviname | ps2otfps -f >psname
+```
+
+を使うほうが便利でしょう。
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 <!-- otf-cjmr-h は，前半では Identity-H と紹介されていますが， -->
