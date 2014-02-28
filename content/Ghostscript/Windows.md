@@ -529,6 +529,13 @@ ps2otfps old.ps new.ps
 ```
 
 によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます．
+また最新の ps2otfps はオプション -f を付けるとフィルタとして働くので
+
+```
+dvips -f ... dviname | ps2otfps -f >psfile.ps
+```
+
+とすると更に便利です．
 
 ### 日本語 TrueType font {#wbee8199}
 
@@ -559,6 +566,9 @@ W32TeX に入れられたプログラム ps2otfps.exe を使用する場合，
 ps2otfps old.ps new.ps
 によって，dvips が出力した old.ps を変換して new.ps を作成します．
 この new.ps を Ghostscript で取り扱うことができます．
+最新の ps2otfps は -f オプションを付けると，フィルタとして働くので
+dvips -f ... dviname | ps2otfps -f >psfile.ps
+とすると，更に便利です．
 但し，OpenType フォントファイルを PostScript 名に変換したファイルを
 .../Resource/CIDFont/
 にコピーしておくという作業だけは必要です．
