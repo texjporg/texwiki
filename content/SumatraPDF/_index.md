@@ -86,6 +86,7 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
+    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
 
