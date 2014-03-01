@@ -13,11 +13,17 @@ pukiwiki: "PLplot"
 
 PLplot は，グラフを作成するためのライブラリです．<br>
 PDF, EPS, PS, EPS+LaTeX, SVG 形式などに出力可能です．<br>
-Linux, Mac OS X, Windows で使用できます．<br>
-フリーソフトウェアでライセンスは LGPL です．<br>
 
 - [PLplot 公式サイト](http://plplot.sourceforge.net/)
 - [PLplotのメモ](https://sites.google.com/site/makeplplot/)
+
+### 動作環境 {#dd55c850}
+
+Windows, OS X, Linux
+
+### License {#z821faef}
+
+LGPL
 
 ## インストール {#x8c634ec}
 
@@ -34,12 +40,15 @@ PLplot で PDF ファイルを作成する場合は [libHaru](http://libharu.org
 libHaru のビルドには zlib, libpng が必要です．<br>
 
 ```
-$ curl -R -L -O http://libharu.org/files/libhpdf-2.3.0RC2.tar.bz2
-$ tar xvf libhpdf-2.3.0RC2.tar.bz2
-$ pushd libhpdf-2.3.0RC2
-$ ./configure --prefix=/mingw --with-zlib=/mingw --with-png=/mingw
+$ curl --insecure -R -L -o libharu-libharu.tar.gz https://github.com/libharu/libharu/tarball/master
+$ tar xvf libharu-libharu.tar.gz
+$ pushd libharu-libharu*
+$ mkdir build
+$ pushd build
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
 $ make
 $ make install
+$ popd
 $ popd
 ```
 
@@ -48,9 +57,9 @@ ada と tcl のバインディングを有効にするとビルド時にエラ�
 &#x2d;DPLD_pdf=ON を指定すると，リンク時にエラーが発生したので指定しませんでした．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/plplot/plplot-5.9.9.tar.gz
-$ tar xvf plplot-5.9.9.tar.gz
-$ cd plplot-5.9.9
+$ curl -R -L -O http://download.sourceforge.net/plplot/plplot-5.10.0.tar.gz
+$ tar xvf plplot-5.10.0.tar.gz
+$ cd plplot-5.10.0
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_ada=OFF -DENABLE_tcl=OFF -DPLD_ps=ON -DPLD_pstex=ON
@@ -75,10 +84,10 @@ $ make install
 ```
 
 PLplot でデバイスに出力する場合に wingcc.dll, ps.dll などのドライバ (DLL ファイル) が必要になります．<br>
-/mingw/lib/plplot5.9.9/driversd/ にパスを通します．<br>
+/mingw/lib/plplot5.10.0/driversd/ にパスを通します．<br>
 
 ```
-$ export PATH=/mingw/lib/plplot5.9.9/driversd:$PATH
+$ export PATH=/mingw/lib/plplot5.10.0/driversd:$PATH
 ```
 
 ## アンインストール {#s2821338}
@@ -100,11 +109,11 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 サンプルをビルドしてみます．
 
 ```
-$ cd /mingw/share/plplot5.9.9/examples/
+$ cd /mingw/share/plplot5.10.0/examples/
 $ cd c
 $ make
 $ ./x01c
-PLplot library version: 5.9.9
+PLplot library version: 5.10.0
 
 Plotting Options:
  < 1> wingcc     Win32 (GCC)
