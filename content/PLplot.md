@@ -66,20 +66,17 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS
 $ make
 ```
 
-ここで test-drv-info.exe が動作を停止しました (おそらく extqt デバイスのテストでプログラムが落ちた可能性が高い(と予想))．
-
-***
-
-```
-test-drv-info.exe は動作を停止しました
-```
-
-***
-
-もう一度 make をタイプします．
+<!--  -->
+<!-- ここで test-drv-info.exe が動作を停止しました (おそらく extqt デバイスのテストでプログラムが落ちた可能性が高い(と予想))． -->
+<!--  -->
+<!-- - --  -->
+<!-- test-drv-info.exe は動作を停止しました -->
+<!-- - --  -->
+<!--  -->
+<!-- もう一度 make をタイプします． -->
+<!-- $ make -->
 
 ```
-$ make
 $ make install
 ```
 
