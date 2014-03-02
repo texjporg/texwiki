@@ -152,6 +152,7 @@ Vim は，チャリティウェアです．<br>
 - [Vim - ConTeXt wiki](http://sandbox.contextgarden.net/Vim)
 - [tex_autoclose.vim : TeX / LaTeX ftplugin to automatically close environments ](http://www.vim.org/scripts/script.php?script_id=920)
 - [Writing LaTeX files with GVim &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/2010/10/07/writing-latex-files-with-gvim/)
+- [vimのlatexの書き方　、や。の扱い · Issue #532 · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/532)
 
 ## SumatraPDF との連携 {#tf5a143c}
 
