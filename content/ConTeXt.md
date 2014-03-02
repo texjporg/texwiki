@@ -16,3 +16,4 @@ pukiwiki: "ConTeXt"
 - [ConTeXt wiki](http://wiki.contextgarden.net/)
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
+- [ConTeXt の 索引 について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1266)
