@@ -74,6 +74,7 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
@@ -83,12 +84,14 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
+    - [Vim-LaTeX](/Vim-LaTeX/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
     - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
+- [TeXnicCenter](/TeXnicCenter/)
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
