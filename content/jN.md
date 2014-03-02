@@ -9,6 +9,8 @@ pukiwiki: "jN"
 
 [Notepad++](/Notepad++/) > jN
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+
 ## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) または [Python Script](</Python Script/>) を使用する {#i71db25c}
 
 jN (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．<br>
@@ -21,6 +23,10 @@ plugins\jN\includes\ フォルダーに js ファイルを作成すると JavaSc
 
 GPLv3
 
+### ChangeLog {#w5083e4f}
+
+- [https://code.google.com/p/jn-npp-plugin/source/list](https://code.google.com/p/jn-npp-plugin/source/list)
+
 ### Typeset.js {#oab03eb3}
 
 plugins\jN\includes\Typeset.js を作成します．<br>
@@ -31,7 +37,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
 ```
 (function(){
     var pdfupLaTeX = {
-        text: "pdfupLaTeX",
+        text: "upLaTeX (ptex2pdf)",
         cmd: function(){
             var fso = new ActiveXObject("Scripting.FileSystemObject");
             var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
@@ -44,7 +50,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
         }
     };
     var pdfupLaTeX2 = {
-        text: "pdfupLaTeX2",
+        text: "upLaTeX (dvips + ps2pdf)",
         cmd: function(){
             var fso = new ActiveXObject("Scripting.FileSystemObject");
             var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
