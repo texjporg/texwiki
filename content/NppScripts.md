@@ -7,4 +7,8 @@ pukiwiki: "NppScripts"
 
 # NppScripts
 
+[Notepad++](/Notepad++/) > NppScripts
+
 ## NppScripts {#l1684fdd}
+
+- [Notepad&#43;&#43; Automation &#40;NppScripts&#41; - Home](http://nppscrips.codeplex.com/)
