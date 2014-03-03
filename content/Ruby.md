@@ -7,7 +7,7 @@ pukiwiki: "Ruby"
 
 # Ruby
 
-## [Ruby](http://www.ruby-lang.org/) {#ufdd9309}
+## [Ruby](https://www.ruby-lang.org/) {#ufdd9309}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/200px-Ruby_logo.svg.png" alt="Ruby" style="float:right">
 
@@ -16,13 +16,14 @@ pukiwiki: "Ruby"
 ## Ruby 2.1 {#z9c2e043}
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
-convbkmk.rb, [ConTeXt](/ConTeXt/) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
+convbkmk.rb などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
 
-- [http://www.ruby-lang.org/](http://www.ruby-lang.org/)
+- [https://www.ruby-lang.org/](https://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 - [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://tech.recompile.net/post/13843318337/shebang-bin-env-ruby-0)
+- [Ruby 2.1.1 で Hash#reject のデグレ](http://diary.sorah.jp/2014/02/28/ruby211-hash-reject)
 
 ### 派生版 {#w5708e1c}
 
