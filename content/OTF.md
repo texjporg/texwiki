@@ -122,15 +122,15 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 Ryimun-Light と
 GothicBBB-Meduim は
 埋め込まれていないフォントを表します。<br>
-[Adobe Reader](</Adobe Reader/>)/[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat/)
+[Adobe Reader](</Adobe Reader/>)
 は埋め込まれていない
 Ryumin-Light と GothicBBB-Medium
 を適切なフォントに代替して表示・印刷します。<br>
-Adobe Reader/Acrobat で使えるアジア・拡張言語フォントパック
-(Adobe Reader XI Font Packs
-[Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
-/
-[Mac](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac))
+Adobe Reader XI で使えるアジア・拡張言語フォントパック
+
+- [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Windows)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5508)
+- [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Mac)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5509)
+
 はインストール済みとします。<br>
 
 これで次のものをテストしてみます。<br>
@@ -170,7 +170,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
+>     ptex2pdf -u -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -185,7 +185,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f noembed04.map" hoge.tex
+>     ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -221,7 +221,7 @@ open hoge.pdf
 xdg-open hoge.pdf
 ```
 
-PDF ファイルが Adobe Reader/Acrobat に関連付けされている場合は hoge.pdf が Adobe Reader/Acrobat で開かれて表示されると思います。<br>
+PDF ファイルが Adobe Reader に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。<br>
 
 upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．<br>
 ただし upLaTeX の場合に
@@ -339,7 +339,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
+>     ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -355,7 +355,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 > - upLaTeX (ptex2pdf) の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f kozukapr6n04.map" hoge.tex
+>     ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 >     ```
 >
 > - LuaLaTeX の場合
@@ -376,13 +376,6 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック
-(Adobe Reader XI Font Packs
-[Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
-/
-[Mac](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac)
-/
-Adobe Reader 9.1 Font Packs
-[Unix](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix))
 内の
 OpenType フォントの用途として，Adobe Reader/Acrobat での
 プレビュー・印刷用途を想定しているようです。<br>
@@ -400,7 +393,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 - upLaTeX (ptex2pdf) の場合
 
     ```
-    ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
+    ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
     ```
 
 - LuaLaTeX の場合
@@ -436,14 +429,6 @@ Microsoft Windows 版の Adobe Reader XI に
     韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
 
 が付属しています。<br>
-
-Linux/Solaris 版の Adobe Reader 9 に
-対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/)には
-
-- KozGoPr6N-Medium.otf ［Adobe-Japan1-6 対応の日本語ゴシック体フォント］
-
-が付属していません。<br>
-Adobe Reader (Windows 版/日本語版) をインストールしてシンボリックリンクを作成すれば KozGoPr6N-Medium.otf も使用できます．<br>
 
 ### ヒラギノと OS X {#l1d1369f}
 
@@ -783,13 +768,13 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f noembed04.map" hoge.tex
+ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 ```
 
 #### IPAexフォントを使う場合 {#xcbe9625}
@@ -800,13 +785,13 @@ ptex2pdf -l -u -od "-f noembed04.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-ipaex.map -f otf-up-ipaex.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-ipaex.map -f otf-up-ipaex.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f ipaex.map" hoge.tex
+ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 ```
 
 <!-- 各フリーフォントの入手先は[[フォント - TeX Wiki>フォント]]を参照してください。なお，入手先は変更される場合があります。また，利用・再配布等にあたっては「使用許諾契約」をご自身で確認されることを強くおすすめいたします（フリーフォントの「使用許諾契約」は随時変更されるため）。 -->
@@ -819,13 +804,13 @@ ptex2pdf -l -u -od "-f ipaex.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-ms.map -f otf-up-ms.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-ms.map -f otf-up-ms.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
+ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 ```
 
 なお，Microsoft Windows に
@@ -884,20 +869,20 @@ ptex2pdf -l -u -od "-f msmingoth.map" hoge.tex
 > - Windows の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-yu-win.map -f otf-up-yu-win.map" hoge.tex
+>     ptex2pdf -u -l -od "-f uptex-yu-win.map -f otf-up-yu-win.map" hoge.tex
 >     ```
 >
 > - OS X の場合
 >
 >     ```
->     ptex2pdf -l -u -od "-f uptex-yu-osx.map -f otf-up-yu-osx.map" hoge.tex
+>     ptex2pdf -u -l -od "-f uptex-yu-osx.map -f otf-up-yu-osx.map" hoge.tex
 >     ```
 >
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f yu.map" hoge.tex
+ptex2pdf -u -l -od "-f yu.map" hoge.tex
 ```
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
@@ -910,13 +895,13 @@ ptex2pdf -l -u -od "-f yu.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f hiragino04.map" hoge.tex
+ptex2pdf -u -l -od "-f hiragino04.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
@@ -935,13 +920,13 @@ ptex2pdf -l -u -od "-f hiragino04.map" hoge.tex
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f kozukapr6n04.map" hoge.tex
+ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
@@ -957,13 +942,13 @@ Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/
 - TeX Live の場合
 
 ```
-ptex2pdf -l -u -od "-f uptex-morisawa-pr6n-04.map -f otf-up-morisawa-pr6n.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-morisawa-pr6n-04.map -f otf-up-morisawa-pr6n.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -l -u -od "-f morisawapr6n04.map" hoge.tex
+ptex2pdf -u -l -od "-f morisawapr6n04.map" hoge.tex
 ```
 
 Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
