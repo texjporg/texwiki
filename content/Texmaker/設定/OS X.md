@@ -34,21 +34,21 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>"/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+<br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>"/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>"/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+<br>
 
 <br>
 
@@ -62,40 +62,126 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>"/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;</ins> または <ins>"/usr/texbin/upbibtex" &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>"/usr/texbin/makeindex" %.idx</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>"/usr/texbin/dvips" -Ppdf -o %.ps %.dvi</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>"/usr/texbin/dvipdfmx" %.dvi</ins><br>
+<br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>"/Applications/Ghostscript.app/bin/ps2pdf" %.ps</ins> または <ins>"/usr/local/bin/ps2pdf" %.ps</ins><br>
+　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>"/usr/texbin/upmpost" -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>"/usr/texbin/asy" %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>"/usr/local/bin/gs"</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+<br>
 
-　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+　　　<strong>ショートカット</strong><br>
 
 ***
 
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;"><span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span>　組み込みビューア</span><br>
+コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+LaTeX
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+: "/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>"/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex</ins><br>
+PdfLaTeX
+: &nbsp;
+
+: "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
+
+: ☐ 出力ファイルを "build" サブフォルダーに出力する
+
+XeLaTeX
+: &nbsp;
+
+: "/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
+
+LuaLaTeX
+: &nbsp;
+
+: "/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
+
+: "/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
+
+Latexmk
+: &nbsp;
+
+: ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"
+
+Bib(la)tex
+: &nbsp;
+
+: "/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;
+
+: "/usr/texbin/upbibtex" &#x25;
+
+Makeindex
+: &nbsp;
+
+: "/usr/texbin/makeindex" %.idx
+
+dvips
+: &nbsp;
+
+: "/usr/texbin/dvips" -Ppdf -o %.ps %.dvi
+
+Dvipdfm
+: &nbsp;
+
+: "/usr/texbin/dvipdfmx" %.dvi
+
+ps2pdf
+: &nbsp;
+
+: "/Applications/Ghostscript.app/bin/ps2pdf" %.ps
+
+: "/usr/local/bin/ps2pdf" %.ps
+
+metapost
+: &nbsp;
+
+: "/usr/texbin/upmpost" -interaction=nonstopmode &#x25;
+
+Asymptote
+: &nbsp;
+
+: "/usr/texbin/asy" %.asy
+
+ghostscript
+: &nbsp;
+
+: "/usr/local/bin/gs"
+
+R Sweave
+: &nbsp;
+
+: R CMD Sweave %.Rnw
+
+Add to PATH
+: &nbsp;
+
+PDF ビューア
+: &nbsp;
+
+: <span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span>　組み込みビューア
+
+: ☑　埋め込み
+
+: ◯　外部ビューア
+
+: "/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex
 
 <div style="clear:both"></div>
 
