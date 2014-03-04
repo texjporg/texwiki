@@ -53,6 +53,11 @@ Vim は，チャリティウェアです．<br>
 
 ### 派生版 {#ka1322d7}
 
+#### Neovim {#i20f720c}
+
+- [Home &middot; Neovim](http://neovim.org/)
+- [https://github.com/neovim/neovim](https://github.com/neovim/neovim)
+
 #### Windows {#mcb80f41}
 
 - [KaoriYa (香り屋) 版](http://www.kaoriya.net/software/vim)
