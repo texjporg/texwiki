@@ -32,21 +32,21 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+<br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+<br>
 
 <br>
 
@@ -60,52 +60,143 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins> または <ins>upbibtex &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>makeindex %.idx</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
+<br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf.bat %.ps</ins> または <ins>ps2pdf.exe %.ps</ins><br>
+　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>rungs.exe</ins> または <ins>gswin64c.exe</ins> または <ins>gswin32c.exe</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+<br>
 
-　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+　　　<strong>ショートカット</strong><br>
 
 ***
 
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;">(●) 組み込みビューア</span><br>
+コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+LaTeX
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+: uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+PdfLaTeX
+: &nbsp;
 
-<ins>powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"</ins><br>
+: pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+: ☐ 出力ファイルを "build" サブフォルダーに出力する
 
-<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @</ins><br>
+XeLaTeX
+: &nbsp;
 
-<ins>powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $pdf=\[char\]0x22+'%.pdf'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"</ins><br>
-<!-- %%%texworks %.pdf%%%&br; -->
-<!-- %%%cmd /c start firefox -new-window %.pdf%%%&br; -->
-<!-- %%%cmd /c start chrome - -new-window !/%.pdf%%%&br; -->
-<!-- %%%pdfopen - -rxi - -file %.pdf%%%&br; -->
+: xelatex -synctex=1 -interaction=nonstopmode %.tex
+
+LuaLaTeX
+: &nbsp;
+
+: lualatex -synctex=1 -interaction=nonstopmode %.tex
+
+: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
+
+Latexmk
+: &nbsp;
+
+: ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"
+
+Bib(la)tex
+: &nbsp;
+
+: biber --bblencoding=utf8 -u -U --output_safechars &#x25;
+
+: upbibtex &#x25;
+
+Makeindex
+: &nbsp;
+
+: makeindex %.idx
+
+dvips
+: &nbsp;
+
+: dvips -Ppdf -o %.ps %.dvi
+
+Dvipdfm
+: &nbsp;
+
+: dvipdfmx %.dvi
+
+ps2pdf
+: &nbsp;
+
+: ps2pdf.bat %.ps
+
+: ps2pdf.exe %.ps
+
+metapost
+: &nbsp;
+
+: upmpost -interaction=nonstopmode &#x25;
+
+Asymptote
+: &nbsp;
+
+: asy %.asy
+
+ghostscript
+: &nbsp;
+
+: rungs.exe
+
+: gswin64c.exe
+
+: gswin32c.exe
+
+R Sweave
+: &nbsp;
+
+: R CMD Sweave %.Rnw
+
+Add to PATH
+: &nbsp;
+
+PDF ビューア
+: &nbsp;
+
+: (●) 組み込みビューア
+
+: ☑　埋め込み
+
+: ◯　外部ビューア
+
+: powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files (x86)\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+
+: powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
+
+: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
+
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %.pdf -forward-search #.tex @
+
+: powershell -Command "&amp; {$param=\[char\]0x22+'@:0:#.tex'+\[char\]0x22; $pdf=\[char\]0x22+'%.pdf'+\[char\]0x22; $page=\[char\]0x25+'{page+1}'; $o=\[char\]0x27+\[char\]0x25+'{output}'+\[char\]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"
+
+<!-- :|texworks %.pdf -->
+<!-- :|cmd /c start firefox -new-window %.pdf -->
+<!-- :|cmd /c start chrome - -new-window !/%.pdf -->
+<!-- :|pdfopen - -rxi - -file %.pdf -->
 
 <div style="clear:both"></div>
 
