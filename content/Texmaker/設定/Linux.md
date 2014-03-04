@@ -28,21 +28,21 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)</span><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">LaTeX　　　　</span><ins>uplatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">PdfLaTeX　　</span><ins>pdflatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">☐ 出力ファイルを "build" サブフォルダーに出力する</span><br>
+<br>
 
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span>　 <span style="color:Black;background-color:#F5F5F5;">XeLaTeX　　</span><ins>xelatex -synctex=1 -interaction=nonstopmode %.tex</ins>　　　　　<span style="color:Black;background-color:#F5F5F5;">LuaLaTeX　　</span><ins>lualatex -synctex=1 -interaction=nonstopmode %.tex</ins> または <ins>luajitlatex -synctex=1 -interaction=nonstopmode %.tex</ins><br>
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">Latexmk　　 </span><ins>ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"</ins><br>
+<br>
 
 <br>
 
@@ -56,52 +56,136 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[Bib(la)tex](/Biblatex/)　　 </span><ins>biber --bblencoding=utf8 -u -U --output_safechars &#x25;</ins> または <ins>upbibtex &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Makeindex　　</span><ins>makeindex %.idx</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[dvips](/dvips/)　　　　　</span><ins>dvips -Ppdf -o %.ps %.dvi</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">Dvipdfm　　　</span><ins>dvipdfmx %.dvi</ins><br>
+<br>
 
-　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">ps2pdf　　　　</span><ins>ps2pdf %.ps</ins><br>
+　　　　　<strong>エディタ</strong><br>
 
 <div style="clear:both"></div>
 
 <img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
 
-<span style="color:Black;background-color:#F5F5F5;">[metapost](/MetaPost/)　　</span><ins>upmpost -interaction=nonstopmode &#x25;</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[Asymptote](/Asymptote/)　</span><ins>asy %.asy</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">[ghostscript](/Ghostscript/)　</span><ins>gs</ins><br>
+<br>
 
-<span style="color:Black;background-color:#F5F5F5;">R Sweave　 </span><ins>R CMD Sweave %.Rnw</ins><br>
+<br>
 
-　　　<strong>ショートカット</strong>　　　<span style="color:Black;background-color:#F5F5F5;">Add to PATH　　　　</span><br>
+　　　<strong>ショートカット</strong><br>
 
 ***
 
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#F5F5F5;"><strong>PDF ビューア</strong></span><br>
-<span style="color:Black;background-color:#F5F5F5;">(●)　組み込みビューア</span><br>
+コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">☑　埋め込み</span><br>
+LaTeX
+: &nbsp;
 
-<span style="color:Black;background-color:#F5F5F5;">◯　外部ビューア</span><br>
+: uplatex -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+PdfLaTeX
+: &nbsp;
 
-<ins>fwdevince %.pdf @ #.tex</ins><br>
+: pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"</ins><br>
+: ☐ 出力ファイルを "build" サブフォルダーに出力する
 
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+XeLaTeX
+: &nbsp;
 
-<ins>ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"</ins><br>
+: xelatex -synctex=1 -interaction=nonstopmode %.tex
 
-<ins>ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"</ins><br>
+LuaLaTeX
+: &nbsp;
 
-<ins>ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"</ins><br>
+: lualatex -synctex=1 -interaction=nonstopmode %.tex
+
+: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
+
+Latexmk
+: &nbsp;
+
+: ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/makeindex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"
+
+Bib(la)tex
+: &nbsp;
+
+: biber --bblencoding=utf8 -u -U --output_safechars &#x25;
+
+: upbibtex &#x25;
+
+Makeindex
+: &nbsp;
+
+: makeindex %.idx
+
+dvips
+: &nbsp;
+
+: dvips -Ppdf -o %.ps %.dvi
+
+Dvipdfm
+: &nbsp;
+
+: dvipdfmx %.dvi
+
+ps2pdf
+: &nbsp;
+
+: ps2pdf %.ps
+
+metapost
+: &nbsp;
+
+: upmpost -interaction=nonstopmode &#x25;
+
+Asymptote
+: &nbsp;
+
+: asy %.asy
+
+ghostscript
+: &nbsp;
+
+: gs
+
+R Sweave
+: &nbsp;
+
+: R CMD Sweave %.Rnw
+
+Add to PATH
+: &nbsp;
+
+PDF ビューア
+: &nbsp;
+
+: (●)　組み込みビューア
+
+: ☑　埋め込み
+
+: ◯　外部ビューア
+
+: ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
+
+: fwdevince %.pdf @ #.tex
+
+: ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"
+
+: ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
+
+: ruby -e "cmd='zathura -s -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
+
+: ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"
+
+: ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
 
 <div style="clear:both"></div>
 
