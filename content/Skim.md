@@ -26,7 +26,7 @@ OS X 10.6 以降
 
 ### License {#o9f5d76f}
 
-[BSD 3-Clause](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/LICENSE?view=markup)
+[BSD 3-Clause](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/LICENSE)
 
 ### リリース情報 {#z7f1eead}
 
@@ -34,7 +34,8 @@ OS X 10.6 以降
 
 ### ChangeLog {#l1a8874a}
 
-- [コミットログ](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/?view=log)
+- [http://sourceforge.net/p/skim-app/code/HEAD/tree/](http://sourceforge.net/p/skim-app/code/HEAD/tree/)
+    - [log](http://sourceforge.net/p/skim-app/code/HEAD/log/)
 
 ## 不具合 {#obddc9fb}
 
