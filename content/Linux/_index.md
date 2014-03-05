@@ -198,8 +198,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
 
-- [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
+- [TeXstudio](/TeXstudio/)
 - [TeXworks](/TeXworks/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
