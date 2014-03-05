@@ -65,7 +65,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [LyX](/LyX/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
@@ -82,7 +81,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
     - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
-- [TeXnicCenter](/TeXnicCenter/)
 
 ## 関連リンク {#c84cbf92}
 
