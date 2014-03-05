@@ -298,7 +298,7 @@ PDF-TeX 同期サポート:
 : &nbsp;
 
 初期値:
-: Sublime Text 2 または Custom
+: Sublime Text
 
 コマンド:
 : /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
