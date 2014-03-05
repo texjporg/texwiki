@@ -21,12 +21,10 @@ pukiwiki: "Asymptote"
 
 [GPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE), [LGPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE.LESSER)
 
-<!-- *** ChangeLog [#k13ddf14] -->
-<!-- -[[log:http://asymptote.svn.sourceforge.net/viewvc/asymptote/trunk/asymptote/?view=log]] -->
-
 #### ChangeLog {#qa654d5d}
 
-- [http://sourceforge.net/p/asymptote/code/HEAD/log/](http://sourceforge.net/p/asymptote/code/HEAD/log/)
+- [http://sourceforge.net/p/asymptote/code/HEAD/tree/](http://sourceforge.net/p/asymptote/code/HEAD/tree/)
+    - [log](http://sourceforge.net/p/asymptote/code/HEAD/log/)
 
 ### 発音 {#te374add}
 
