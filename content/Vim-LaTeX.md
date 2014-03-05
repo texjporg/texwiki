@@ -464,7 +464,7 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 
 &#x3c;+options+>, &lt;+class+>, &lt;++> は place-holder で，&#x3c;Ctrl-J> をタイプすると place-holder が表示されている場所へジャンプします．
 
-place-holder を使った移動は [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) にも実装されています．
+place-holder を使った移動は [TeXworks](/TeXworks/) にも実装されています．
 
 EDO を表示したい場合は，EDo をタイプして &#x3c;Esc> (&#x3c;Ctrl-\[> または &#x3c;Ctrl-C> でも OK) をタイプして ~ をタイプします．
 
@@ -865,6 +865,7 @@ $ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l
 - [MacTex + Vim-LaTeX で Mac の TeX 環境を整える](http://shkh.hatenablog.com/entry/2012/04/30/214107)
 - [Open pdf to the current location in a LaTeX ](http://vim.wikia.com/wiki/Open_pdf_to_the_current_location_in_a_LaTeX_file)
 - [Newest &#39;vim&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/vim)
+- [http://tex.stackexchange.com/questions/tagged/latex-suite](http://tex.stackexchange.com/questions/tagged/latex-suite)
 - [vim-latex 操作まとめ](http://blog.livedoor.jp/itym/archives/332261.html)
 - [Windows の VIM-Latex で補完](http://d.hatena.ne.jp/k3k1/20110227/1298775822)
 - [Sumatra PDF viewerがLaTeX用によさげ](http://d.hatena.ne.jp/Rion778/20091127)
