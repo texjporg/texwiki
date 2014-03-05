@@ -47,7 +47,7 @@ pukiwiki: "C++"
 
 ### ライブラリ・フレームワーク {#se7f734e}
 
-- [Boost](http://www.boost.org/)
+- Boost
 - [Qt](/Qt/)
 
 ### IDE・エディタ {#a35a736d}
