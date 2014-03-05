@@ -39,13 +39,13 @@ OS X 10.6 以降
 
 ## 不具合 {#obddc9fb}
 
-- [SourceForge.net: Skim PDF Reader and Note-taker for OS X: Bugs](http://sourceforge.net/tracker/?group_id=192583&atid=941981&source=navbar)
+- [Skim / Bugs](http://sourceforge.net/p/skim-app/bugs/)
 
 ## SyncTeX {#n30dc96c}
 
 ### forward search {#c02e2c91}
 
-forward search を行う場合は Skim に含まれている [displayline](http://skim-app.svn.sourceforge.net/viewvc/skim-app/trunk/displayline?view=markup) を使用します．<br>
+forward search を行う場合は Skim に含まれている [displayline](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．<br>
 
 ## DVI ファイルを PDF ファイルに変換して表示 {#nfee2aaa}
 
