@@ -82,12 +82,18 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 - [http://en.opensuse.org/Adobe_Reader](http://en.opensuse.org/Adobe_Reader)
 
-## [TeXstudio](/TeXstudio/) {#xc0b5b03}
-
 ## [LyX](/LyX/) {#uad65708}
 
 ```
 $ sudo zypper install lyx
+```
+
+## [TeXstudio](/TeXstudio/) {#xc0b5b03}
+
+## [Texmaker](/Texmaker/) {#ua730d97}
+
+```
+$ sudo zypper install texmaker
 ```
 
 ## [TeXworks](/TeXworks/) {#n8431fb2}
