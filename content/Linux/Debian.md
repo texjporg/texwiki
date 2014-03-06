@@ -191,16 +191,22 @@ Adobe Reader の保護モード
 
 Windows 版の Adobe Reader では日本語入力、検索、共に可能なようです (ただし日本語入力で表示される文字列は□で表示されたりすることがあるかもしれません)．<br>
 
+## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
+
+```
+$ sudo apt-get install lyx
+```
+
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#n198519c}
 
 ```
 $ sudo apt-get install texstudio
 ```
 
-## [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
+## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#v9a89433}
 
 ```
-$ sudo apt-get install lyx
+$ sudo apt-get install texmaker
 ```
 
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#r265d7ea}
