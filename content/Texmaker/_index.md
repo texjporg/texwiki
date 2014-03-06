@@ -301,7 +301,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\Qt5.2.0\5.2.0\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.3.0\5.3.0\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) を使用する {#i1222dd8}
 
