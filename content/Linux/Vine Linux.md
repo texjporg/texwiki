@@ -97,6 +97,14 @@ $ sudo apt-get install okular
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## [LyX](/LyX/) {#f3133664}
+
+- [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
+
+```
+$ sudo apt-get install lyx
+```
+
 ## [TeXworks](/TeXworks/) {#g983cd3a}
 
 - [TeXworks](http://vinelinux.org/docs/vine6/tex-guide/texworks.html)
@@ -106,14 +114,6 @@ $ sudo apt-get install texworks
 ```
 
 タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．<br>
-
-## [LyX](/LyX/) {#f3133664}
-
-- [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
-
-```
-$ sudo apt-get install lyx
-```
 
 ## [Emacs](/Emacs/) {#d8c86cfd}
 
