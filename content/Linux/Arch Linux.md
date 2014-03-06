@@ -195,16 +195,23 @@ $ sudo pacman -S mupdf
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## [LyX](/LyX/) {#odd649e9}
+
+```
+$ sudo pacman -S lyx
+$ yaourt -S lyx-git
+```
+
 ## [TeXstudio](/TeXstudio/) {#geb231cb}
 
 ```
 $ yaourt -S texstudio
 ```
 
-## [LyX](/LyX/) {#odd649e9}
+## [Texmaker](/Texmaker/) {#kc254e63}
 
 ```
-$ sudo pacman -S lyx
+$ sudo pacman -S texmaker
 ```
 
 ## [TeXworks](/TeXworks/) {#y01d9b26}
