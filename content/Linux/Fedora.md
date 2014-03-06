@@ -115,16 +115,22 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 <!-- $ sudo rpm - -import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux -->
 <!-- $ sudo yum install nspluginwrapper.i686 AdobeReader_enu -->
 
+## [LyX](/LyX/) {#n0d7807d}
+
+```
+$ sudo yum install lyx
+```
+
 ## [TeXstudio](/TeXstudio/) {#aaf316c5}
 
 ```
 $ sudo yum install texstudio
 ```
 
-## [LyX](/LyX/) {#n0d7807d}
+## [Texmaker](/Texmaker/) {#lcaf9397}
 
 ```
-$ sudo yum install lyx
+$ sudo yum install texmaker
 ```
 
 ## [TeXworks](/TeXworks/) {#q8a87364}
