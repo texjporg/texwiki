@@ -200,6 +200,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
@@ -210,6 +211,10 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/) + LaTeX Box + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+- [Kile](/Kile/)
+- LaTeXila
+- [Geany](/Geany/)
+- [gedit](/gedit/)
 
 ## PDF ファイルビューア {#uf722ec6}
 
@@ -221,13 +226,13 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
 
-- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
 - [Evince](/Evince/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
