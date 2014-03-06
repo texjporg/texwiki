@@ -185,16 +185,22 @@ $ sudo apt-get install mupdf
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
+
+```
+$ sudo apt-get install lyx
+```
+
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#w37788fd}
 
 ```
 $ sudo apt-get install texstudio
 ```
 
-## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
+## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#z2142745}
 
 ```
-$ sudo apt-get install lyx
+$ sudo apt-get install texmaker
 ```
 
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
