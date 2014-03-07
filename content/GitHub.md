@@ -20,5 +20,6 @@ pukiwiki: "GitHub"
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
 - [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
 - [https://github.com/SublimeText/LaTeXTools](https://github.com/SublimeText/LaTeXTools)
+- [https://gist.github.com/LennMars/7323738](https://gist.github.com/LennMars/7323738)
 - [latex向けの.gitignore](http://memo.yomukaku.net/entries/196)
 - [GitHubに大規模な不正ログイン試行](http://blog.tokumaru.org/2013/11/github.html)
