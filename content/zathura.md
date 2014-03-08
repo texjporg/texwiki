@@ -101,7 +101,8 @@ zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
 
 ### コマンドラインオプション {#u4f91695}
 
-- [https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop](https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop)
+<!-- -https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop -->
+- [https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c](https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c)
 
 ```
 $ zathura --help
