@@ -20,8 +20,8 @@ Poppler は
 
 <table>
 <tbody>
-<tr><th style="color:#468">統合環境・エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/TeXworks/">TeXworks</a></td></tr>
-<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a> (zathura-pdf-poppler), <a href="/qpdfview/">qpdfview</a></td></tr>
+<tr><th style="color:#468">統合環境・エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a></td></tr>
+<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a>, <a href="/qpdfview/">qpdfview</a></td></tr>
 </tbody>
 </table>
 
