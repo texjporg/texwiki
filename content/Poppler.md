@@ -368,12 +368,12 @@ $ popd
 
 - [FreeType](http://www.freetype.org/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.5.2/freetype-2.5.2.tar.bz2 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2 -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.5.2.tar.bz2
-$ tar xvf freetype-2.5.2.tar.bz2
-$ pushd freetype-2.5.2
+$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.5.3.tar.bz2
+$ tar xvf freetype-2.5.3.tar.bz2
+$ pushd freetype-2.5.3
 $ ./configure --prefix=/mingw
 $ make
 $ make install
