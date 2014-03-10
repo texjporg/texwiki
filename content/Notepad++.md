@@ -82,7 +82,7 @@ Windows 8.1, 8, 7, Vista, XP
 
 Notepad++ v6.5.5 以降は文字コードを自動判別します．<br>
 メニューの Encoding (日本語メニューでは“エンコード(M)”) で Encode in ANSI (日本語メニューでは“ANSI で開く”) が選択されている場合，日本語を入力すると文字化けを起こします．<br>
-日本語が使えるエンコーディング (UTF-8 (BOM なし), UTF-8 など) を選択してください．<br>
+日本語が使えるエンコーディング (Encode in UTF-8 without BOM (日本語メニューでは“UTF-8 (BOM なし) で開く”) など) を選択してください．<br>
 
 ## 環境設定 (Preferences) {#ka388f7d}
 
