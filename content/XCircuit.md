@@ -7,9 +7,6 @@ pukiwiki: "XCircuit"
 
 # XCircuit
 
-<!-- TeXに直接関係ないかもしれませんが、役に立つToolということで -->
-<!-- まとめてみました。Hat -->
-
 ## [XCircuit](http://opencircuitdesign.com/xcircuit/) - フリーの回路図作成ソフト {#g1267ee5}
 
 [XCircuit](http://opencircuitdesign.com/xcircuit/)
