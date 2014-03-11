@@ -7,7 +7,7 @@ pukiwiki: "Masamichi"
 
 # Masamichi
 
-## [『雅理』 Masamichi エディタ](http://www.tam.ne.jp/hiraba/programs/) {#re9385b5}
+## [『雅理』 Masamichi エディタ](http://hiraba.webcrow.jp/) {#re9385b5}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -15,45 +15,45 @@ pukiwiki: "Masamichi"
 
 Masamichi は国産でフリーの TeX 用エディタです．<br>
 簡単な表計算モードと HTML 作成機能が付いています．<br>
-Windows で使える，機能的で，軽い TeX 用のエディタがあまり無いので，[秀丸エディタ](</秀丸エディタ/>) + [WinShell](/WinShell/) + α を目標に作成されたそうです．<br>
 
-- [Project Masamichi 「雅理」](http://www.tam.ne.jp/hiraba/programs/) (Japenese Version)
-    - [Masamichi Editor](http://www.tam.ne.jp/hiraba/programs/Masamichi/)
-    - [「雅理」 エディタの機能紹介](http://www.tam.ne.jp/hiraba/programs/descrip.html)
-- [Project Masamichi](http://www.tam.ne.jp/hiraba/programs/eindex.html) (English Version)
+- [Project_Masamichi](http://hiraba.webcrow.jp/)
 
 ### 動作環境 {#vf2fe6c8}
 
-Windows 7, Vista, XP
-
-### リリース情報/ChangeLog {#r8be4c06}
-
-[更新履歴](http://www.tam.ne.jp/hiraba/programs/descrip.html#change)を参照．<br>
-
-### スクリーンショット {#jf651a64}
-
-> <table>
-> <tbody>
-> <tr><td><a href="http://www.tam.ne.jp/hiraba/programs/texmode.png"><img src="http://www.tam.ne.jp/hiraba/programs/texmode.png" alt="TeX モード" width="355" height="300"></a></td><td><a href="http://www.tam.ne.jp/hiraba/programs/hyomode.png"><img src="http://www.tam.ne.jp/hiraba/programs/hyomode.png" alt="表計算モード" width="308" height="300"></a></td></tr>
-> </tbody>
-> </table>
->
+Windows 8.1, 8, 7, Vista, XP
 
 ## 設定 {#wa3f6cb4}
 
 \[ﾍﾙﾌﾟ(H)\]-\[設定\]
 
 TeXの変更
-: C:\w32tex\bin\platex.exe
+: &nbsp;
 
-dviout の選択
-: C:\w32tex\dviout\dviout.exe
+: C:\w32tex\bin64\uplatex.exe
+
+: C:\w32tex\bin\uplatex.exe
+
+<!-- :dviout の選択| -->
+<!-- :|C:\w32tex\dviout-x64\dviout.exe -->
+<!-- :|C:\w32tex\dviout\dviout.exe -->
 
 dvipdfmx の選択
+: &nbsp;
+
+: C:\w32tex\bin64\dvipdfmx.exe
+
 : C:\w32tex\bin\dvipdfmx.exe
 
 BibTex の選択
-: C:\w32tex\bin\pbibtex.exe
+: &nbsp;
+
+: C:\w32tex\bin64\upbibtex.exe
+
+: C:\w32tex\bin\upbibtex.exe
 
 MakeIndex の選択
-: C:\w32tex\bin\mendex.exe
+: &nbsp;
+
+: C:\w32tex\bin64\makeindex.exe
+
+: C:\w32tex\bin\makeindex.exe
