@@ -17,11 +17,12 @@ pukiwiki: "Visual Basic"
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx)
 - [Visual Basic Advent Calendar 2012 : ATND](http://atnd.org/events/33729)
 
-## VB コンパイラ {#gfc5181e}
+## 処理系 {#gfc5181e}
 
 ### vbc {#b8a94c02}
 
 - [Microsoft Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
+- Microsoft Visual Studio Express
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#cd033ba4}
 
