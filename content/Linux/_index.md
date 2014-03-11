@@ -211,6 +211,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/) + LaTeX Box + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+    - [Vim-LaTeX](/Vim-LaTeX/)
+    - ATP
 - [Kile](/Kile/)
 - LaTeXila
 - [Geany](/Geany/)
