@@ -13,15 +13,7 @@ pukiwiki: "TeXE"
 
 ## TeXE とは {#b019eb8f}
 
-TeXE は，Windows で動作する国産でフリーの簡易 TeX 専用エディタです．
-
-主な特徴は以下の通りです．
-
-- TeX コマンドの補完機能
-- 予約語の色指定
-- 文字コード変換機能
-- onig.dll を用いた正規表現検索/置換機能
-- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能
+TeXE は 国産でフリーの簡易 TeX 専用エディタです．
 
 - [ゆるゆるでいこう](http://www5.ocn.ne.jp/~fact/)
     - [Top](http://www5.ocn.ne.jp/~fact/top.html)
@@ -29,40 +21,35 @@ TeXE は，Windows で動作する国産でフリーの簡易 TeX 専用エデ�
         - [更新履歴](http://www5.ocn.ne.jp/~fact/download/history.txt)
         - [簡易ヘルプテキスト](http://www5.ocn.ne.jp/~fact/download/help.txt)
 
-## インストール {#pdbc335f}
+### 動作環境 {#g0bc153f}
 
-ダウンロードしたファイルを適当な場所に解凍するだけでインストールは完了です．
+Windows 8.1, 8, 7, Vista, XP
 
-- 注意事項
-    - onig.dll は TeXE.exe と同じ階層においてください．(別途用意する場合)
-    - .dat 等は TeXE.ini で場所を指定すれば移動，追加できます．
+### ChangeLog {#acf4c7af}
 
-## アンインストール {#n704d221}
+[更新履歴](http://www5.ocn.ne.jp/~fact/download/history.txt)
 
-設定はすべて TeXE.ini と TeXE.color に保存してあるので，アンインストールは解凍したファイルと INI ファイル等を削除するだけです．
+### 特徴 {#x3489437}
+
+- TeX コマンドの補完機能
+- 予約語の色指定
+- 文字コード変換機能
+- onig.dll を用いた正規表現検索/置換機能
+- SumatraPDF を使用すれば，SyncTeX による forward and inverse search も可能
 
 ## 設定 {#jf6b3b60}
 
 ### 簡易自動設定 {#r526ef0b}
 
-\[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります．
+\[表示\]-\[環境オプション\]-\[TeX\] に簡易自動設定があります．<br> <!--  --> <!-- - --  --> <!-- &color(Black,#ACDEFE){%%%　環境オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#CC3333){[　 &color(White){''✕''}; 　]}; %%%};&br; --> <!-- 　　&color(Black,#EEEEEE){%%%[　　編集/表示 ][　　ファイル ][　　メニュー ][　　色設定 ][　　入力支援 ]%%%};''[　　TeX ]''&br; --> <!-- 　　　簡易自動設定　　　　　　　　　　　　　　　　　　&color(Red){自動設定機能が正常に機能しない場合は下を手動で設定してください。};&br; --> <!-- 　　　&color(Black,#EEEEEE){[　　開始　　]};　&color(Black,#EEEEEE){[標準設定　　　　　　　▼]};&br; --> <!-- - --  --> <!--  -->
+開始すると自動設定してくれますが<br>
+\[TeX\] が platex.exe, \[BibTeX\] が jbibtex.exe, \[Dvi to Pdf\] が dvipdfm.exe になるので<br>
 
-***
-
-<span style="color:Black;background-color:#ACDEFE;"><ins>　環境オプション　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　編集/表示 \]\[　　ファイル \]\[　　メニュー \]\[　　色設定 \]\[　　入力支援 \]</ins></span><strong>\[　　TeX \]</strong><br>
-　　　簡易自動設定　　　　　　　　　　　　　　　　　　<span style="color:Red;">自動設定機能が正常に機能しない場合は下を手動で設定してください。</span><br>
-　　　<span style="color:Black;background-color:#EEEEEE;">\[　　開始　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　　　▼\]</span><br>
-
-***
-
-開始すると自動設定してくれますが，\[BibTeX\] が jbibtex.exe， \[Dvi to Pdf\] が dvipdfm.exe になるので
-
-- jbibtex.exe → pbibtex.exe または upbibtex.exe
+- platex.exe → uplatex.exe
+- jbibtex.exe → upbibtex.exe
 - dvipdfm.exe → dvipdfmx.exe
 
-に変更します．
+に変更します．<br>
 
 引数や Macro を入力する欄で，右クリックをするとパラメータの説明が表示されます．
 
@@ -126,17 +113,11 @@ Macroのパラメータ<br>
 
 ### TeX {#obbe32e3}
 
-#### platex の場合 {#b4b5e5be}
-
 フルパス
-: C:\w32tex\bin\platex.exe
+: &nbsp;
 
-引数
-: -guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal -jobname="%x" "%F"
+: C:\w32tex\bin64\uplatex.exe
 
-#### uplatex の場合 {#g3bbbc46}
-
-フルパス
 : C:\w32tex\bin\uplatex.exe
 
 引数
@@ -145,24 +126,22 @@ Macroのパラメータ<br>
 ### MakeIndex {#g6c29d8e}
 
 フルパス
-: C:\w32tex\bin\mendex.exe
+: &nbsp;
+
+: C:\w32tex\bin64\makeindex.exe
+
+: C:\w32tex\bin\makeindex.exe
 
 引数
-: -U -T "%X.idx"
+: "%X.idx"
 
 ### BibTeX {#j33abf74}
 
-#### pbibtex の場合 {#r4493254}
-
 フルパス
-: C:\w32tex\bin\pbibtex.exe
+: &nbsp;
 
-引数
-: -kanji=utf8 -sjis-terminal "%X"
+: C:\w32tex\bin64\upbibtex.exe
 
-#### upbibtex の場合 {#r4f37080}
-
-フルパス
 : C:\w32tex\bin\upbibtex.exe
 
 引数
@@ -170,55 +149,13 @@ Macroのパラメータ<br>
 
 ### Dvi Viewer {#n4f1bf86}
 
-#### dviout {#n0a40e5f}
-
-フルパス
-: C:\w32tex\dviout\dviout.exe
-
-引数
-: -1 "%D"
-
-DDE
-: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
-
-Service
-: dviout
-
-Topic
-: dviout
-
-Macro
-: \[WinNormal\]\[FileOpen("%D")\]
-
-#### TeXworks {#red004a1}
-
-DVI ファイルを表示する必要がない場合は，Dvi Viewer に TeXworks を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
-
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
-
-フルパス
-: C:\w32tex\share\texworks\TeXworks.exe
-
-引数
-: "%X.pdf"
-
-DDE
-: ☐DDEを使用する
-
-Service
-: &nbsp;
-
-Topic
-: &nbsp;
-
-Macro
-: &nbsp;
-
 #### SumatraPDF (SumatraPDF を前面に表示したい場合) {#ff11f3ec}
 
-DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
-
 フルパス
+: &nbsp;
+
+: C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+
 : C:\Program Files\SumatraPDF\SumatraPDF.exe
 
 引数
@@ -238,9 +175,11 @@ Macro
 
 #### SumatraPDF (SumatraPDF を前面に表示したくない場合) {#e7c044c0}
 
-DVI ファイルを表示する必要がない場合は，Dvi Viewer に SumatraPDF を設定して DVI ファイルのかわりに PDF ファイルを表示できます．
-
 フルパス
+: &nbsp;
+
+: C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+
 : C:\Program Files\SumatraPDF\SumatraPDF.exe
 
 引数
@@ -261,6 +200,10 @@ Macro
 ### Dvi to Pdf {#w081339b}
 
 フルパス
+: &nbsp;
+
+: C:\w32tex\bin64\dvipdfmx.exe
+
 : C:\w32tex\bin\dvipdfmx.exe
 
 引数
@@ -292,57 +235,30 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
 C:\texe022i\TeXE.exe /j%l "%f"
 ```
 
-## dviout との連携 (非推奨) {#u0ce365d}
+## 外部ツール {#z2fa544a}
 
-[dviout#forward and inverse search](/dviout/#ycc841a2) を参照．
+### 追加 {#r3adc450}
 
-TeX の引数に -src-specials を追加します．
-
-### forward search {#a097e41a}
-
-forward search は
-
-フルパス
-: C:\w32tex\dviout\dviout.exe
-
-引数
-: -1 "%D" "# %l '%f'"
-
-DDE
-: ☑DDEを使用する ← DDEを使用しない場合は，DDEを使用するのチェックをはずす
-
-Service
-: dviout
-
-Topic
-: dviout
-
-Macro
-: \[PageOpen(# %l '%f')\]\[WinNormal\]\[FileOpen("%D")\]
-
-### inverse search {#rb0c5e23}
-
-inverse search は dviout の \[Option\]-\[Setup Parameters...\]-\[Common\]-\[src:\] に
-
-```
-C:\texe022i\TeXE.exe^s /j%d "%s"
-```
-
-## 不具合 {#b8d5d357}
-
-### 環境 (設定？) によって PDF ファイルが開けないことがある {#r3adc450}
-
-\[ツール\]-\[PDFプレビュー\] で「PDFが開けませんでした」といったエラーメッセージが表示される場合があります．
-
-このとき PDF ファイルはきちんと作成されていますが，プレビューができません．
-
-この場合，一度 ini ファイルを削除してから設定をやり直すかもしくは \[表示\]-\[環境オプション\]-\[メニュー\] で
+\[表示\]-\[環境オプション\]-\[メニュー\]
 
 - 外部ツール
 
 \[追加\]
 
-[TeXworks#組み込みの PDF ビューアに日本語を表示させる](/TeXworks/#t5313ebc) を参照してフォントの埋め込みの設定を行います．
+- 追加/変更
+
+表示名
+: SumatraPDF
+
+コマンド
+: &nbsp;
+
+: C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf" -forward-search "%F" %l
+
+: C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf" -forward-search "%F" %l
+
+パス
+: <br>
 
 - 追加/変更
 
@@ -358,26 +274,19 @@ C:\texe022i\TeXE.exe^s /j%d "%s"
 - 追加/変更
 
 表示名
-: SumatraPDF
-
-コマンド
-: C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance "%X.pdf" -forward-search "%F" %l
-
-パス
-: <br>
-
-- 追加/変更
-
-表示名
 : Adobe Reader
 
 コマンド
+: &nbsp;
+
+: C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe "%X.pdf"
+
 : C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe "%X.pdf"
 
 パス
 : <br>
 
-を \[適用\] することで \[ツール(T)\]-\[SumatraPDF\] もしくは \[ツール(T)\]-\[Adobe Reader\] から PDF ファイルを表示することが可能になります．
+\[ツール(T)\]-\[SumatraPDF\] もしくは \[ツール(T)\]-\[TeXworks\] もしくは \[ツール(T)\]-\[Adobe Reader\] から PDF ファイルを表示できます．
 
 ショートカットキーを割り当てることも可能です．
 
