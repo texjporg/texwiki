@@ -389,6 +389,12 @@ Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する
 IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
+kanji-config-updmap-sys ipaex
+```
+
+または
+
+```
 kanji-config-updmap ipaex
 ```
 
