@@ -58,9 +58,9 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 
 #### HTTP {#nee0bfde}
 
+- [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/)
-- [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
@@ -81,9 +81,9 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 
 #### FTP {#a5c289aa}
 
+- [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/)
-- [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
@@ -117,9 +117,9 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 #### HTTP {#ud773768}
 
+- [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
 - [http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/)
 - [http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/)
-- [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
 - [http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
@@ -140,9 +140,9 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 #### FTP {#v6477b32}
 
+- [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
 - [ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/)
 - [ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/)
-- [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
