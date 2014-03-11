@@ -437,7 +437,7 @@ Microsoft Windows 版の Adobe Reader XI に
 TeX Live をインストールして
 
 ```
-kanji-config-updmap -jis2004 hiragino-pron
+sudo kanji-config-updmap-sys -jis2004 hiragino-pron
 ```
 
 を実行しました。<br>
@@ -530,10 +530,10 @@ $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを
 [kanji-config-updmap](https://gitorious.org/tlptexlive/jfontmaps/source/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
 
 ```
-$ kanji-config-updmap <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
-$ kanji-config-updmap auto        （自動的に <fontname> のいずれかを埋め込む）
-$ kanji-config-updmap nofont      （PDF にフォントを埋め込まない）
-$ kanji-config-updmap status      （現在の埋め込み設定を確認する）
+$ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
+$ sudo kanji-config-updmap-sys auto        （自動的に <fontname> のいずれかを埋め込む）
+$ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込まない）
+$ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
 ```
 
 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．<br>
