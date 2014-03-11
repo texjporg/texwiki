@@ -180,3 +180,4 @@ Output file removed.
 - [standalone クラスは dvipdfmx でも使えるような気がする](https://gist.github.com/3845085)
 - [LCDF TypetoolsでOpenTypeフォントを使う（DVIPDFMXで）](http://dev.activebasic.com/egtra/2012/12/18/522/)
 - [The DVIPDFMx Project](http://project.ktug.org/dvipdfmx/)
+- [DVI specials for PDF generation](http://project.ktug.org/dvipdfmx/doc/tb94cho.pdf) (PDF)
