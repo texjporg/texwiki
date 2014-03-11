@@ -152,9 +152,9 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 ### [FTP](https://ja.wikipedia.org/wiki/File_Transfer_Protocol) {#z04bbc8a}
 
 - [Ring Server](http://www.ring.gr.jp/)
+    - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/)
@@ -194,9 +194,9 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/)
     - [http://ctan.ijs.si/mirror/w32tex/current/](http://ctan.ijs.si/mirror/w32tex/current/)
 - [Ring Server](http://www.ring.gr.jp/)
+    - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/)
