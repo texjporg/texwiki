@@ -59,7 +59,7 @@ Cygwin で TeX Live を使用する場合は
 [ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
 
 ```
-$ wget http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．<br>
@@ -78,7 +78,7 @@ $ cd install-tl*
 オプションでダウンロードするリポジトリを指定できます．<br>
 
 ```
-$ ./install-tl --repository http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ ./install-tl --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
 
 ...
 
@@ -157,6 +157,12 @@ $ mktexlsr
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
 IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap-sys ipaex
+```
+
+または
 
 ```
 $ kanji-config-updmap ipaex
@@ -240,7 +246,7 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.831 (64-bit)</strong> または <strong>Setup.exe version 2.831 (32-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.844 (64-bit)</strong> または <strong>Setup.exe version 2.844 (32-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
@@ -422,6 +428,12 @@ $ mktexlsr
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
 IPAexフォントを埋め込む場合は<br>
+
+```
+$ kanji-config-updmap-sys ipaex
+```
+
+または
 
 ```
 $ kanji-config-updmap ipaex
