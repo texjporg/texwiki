@@ -326,7 +326,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
 そのためには OpenType フォントが必要です。<br>
 
-#### Microsoft Windows NT 6.x系 (8.1, 8, 7) の場合 {#p413a15f}
+#### Microsoft Windows NT 6.x系 の場合 {#p413a15f}
 
 とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。<br>
