@@ -42,7 +42,7 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### License {#y5064e03}
 
