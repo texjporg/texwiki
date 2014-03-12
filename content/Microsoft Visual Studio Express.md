@@ -14,6 +14,7 @@ Microsoft Visual Studio Express を使用すれば自分でビルドして使用
 
 - [Microsoft Visual Studio Express](http://www.microsoft.com/ja-jp/dev/express/)
 - [Microsoft Visual Studio Express 2013 for Windows Desktop](http://www.microsoft.com/ja-jp/download/details.aspx?id=40787)
+- [Visual Studio 2013 Update 2 CTP 2](http://www.microsoft.com/ja-jp/download/details.aspx?id=42023)
     <!-- -http://www.microsoft.com/visualstudio/ -->
 
 - [Wikipedia.ja:Microsoft_Visual_Studio_Express](https://ja.wikipedia.org/wiki/Microsoft_Visual_Studio_Express)
