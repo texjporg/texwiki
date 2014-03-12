@@ -23,7 +23,7 @@ TeXE は 国産でフリーの簡易 TeX 専用エディタです．
 
 ### 動作環境 {#g0bc153f}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### ChangeLog {#acf4c7af}
 
