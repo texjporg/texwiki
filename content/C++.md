@@ -108,7 +108,7 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
 #include <windows.h>
 #include <shlwapi.h>
 #include <ddeml.h>
-#if !defined (_MSC_VER)
+#if !defined _MSC_VER
 #include <shellapi.h>
 #endif
 #include <iostream>
@@ -120,16 +120,18 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
 #include <cwchar>
 #include <cerrno>
 
-auto static const TIMEOUT = 10000;
-auto static existSumatraHWND = FALSE;
+#if defined _MSC_VER && _MSC_VER <= 1800
+#define constexpr const
+#endif
 
-auto inline SumatraDdeCallback() -> HDDEDATA (CALLBACK *)(UINT uType, UINT uFmt, HCONV hconv, HSZ hsz1, HSZ hsz2, HDDEDATA hdata, DWORD dwData1, DWORD dwData2) { return nullptr; };
+auto static constexpr TIMEOUT = 10000;
+auto static existSumatraHWND = FALSE;
 
 auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
 {
     UNREFERENCED_PARAMETER(lParam);
 
-    auto const maxSize = 1024;
+    auto constexpr maxSize = 1024;
     auto windowText = std::basic_string<wchar_t>(maxSize, L'\0');
     ::GetWindowTextW(hwnd, const_cast<wchar_t*>(windowText.c_str()), maxSize);
 
@@ -224,7 +226,7 @@ namespace sumatrapdfclient
 
         auto execute(const std::basic_string<wchar_t>& command) -> int
         {
-            if (::DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>(SumatraDdeCallback()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
+            if (::DdeInitializeW(&(this->idInstance), reinterpret_cast<PFNCALLBACK>([]() -> HDDEDATA (CALLBACK *)(UINT uType, UINT uFmt, HCONV hconv, HSZ hsz1, HSZ hsz2, HDDEDATA hdata, DWORD dwData1, DWORD dwData2) { return nullptr; }()), APPCMD_CLIENTONLY, 0) != DMLERR_NO_ERROR) {
                 std::wcerr << L"DdeInitializeW error" << std::endl;
                 return 4;
             }
@@ -297,7 +299,7 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
         subKey = nullptr;
     }
 
-    auto sumatrapdf = std::basic_string<wchar_t>(L"SumatraPDF.exe");
+    auto sumatrapdf = std::basic_string<wchar_t>{L"SumatraPDF.exe"};
     if (err == 0) {
         if (sumatrapdfRegistry.length() != 0) {
             if (::PathFileExistsW(sumatrapdfRegistry.c_str())) {
@@ -310,8 +312,8 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
 
     if (err != 0) {
         err = 0;
-        const auto sumatrapdfWin32Default = LR"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
-        const auto sumatrapdfWin64Default = LR"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
+        constexpr auto sumatrapdfWin32Default = LR"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
+        constexpr auto sumatrapdfWin64Default = LR"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
         if (::PathFileExistsW(sumatrapdfWin32Default)) {
             sumatrapdf = sumatrapdfWin32Default;
         } else if (::PathFileExistsW(sumatrapdfWin64Default)) {
@@ -324,7 +326,7 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
     STARTUPINFOW si;
     PROCESS_INFORMATION pi;
 
-#if defined (_MSC_VER)
+#if defined _MSC_VER
     SecureZeroMemory(&si, sizeof(si));
     SecureZeroMemory(&pi, sizeof(pi));
 #else
@@ -334,10 +336,10 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
 
     si.cb = sizeof(si);
 
-    const auto reuseInstance = std::basic_string<wchar_t>(L"-reuse-instance");
+    const auto reuseInstance = std::basic_string<wchar_t>{L"-reuse-instance"};
     std::basic_ostringstream<wchar_t> oss;
     oss << L"\"" << sumatrapdf << L"\" " << reuseInstance << L" \"" << pdf << L"\"";
-    auto sumatrapdfCommandLine = std::basic_string<wchar_t>(oss.str());
+    auto sumatrapdfCommandLine = std::basic_string<wchar_t>{oss.str()};
 
     if (::CreateProcessW(nullptr, const_cast<wchar_t*>(sumatrapdfCommandLine.c_str()), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi) == 0) {
         err = 3;
@@ -351,18 +353,18 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
 
 auto static DdeExecute(const std::basic_string<wchar_t>& server, const std::basic_string<wchar_t>& topic, const std::basic_string<wchar_t>& command) -> int
 {
-    auto dde = sumatrapdfclient::DDEClient(server, topic);
+    auto dde = sumatrapdfclient::DDEClient{server, topic};
     return dde.execute(command);
 }
 
-#if defined (_MSC_VER)
+#if defined _MSC_VER
 auto wmain(int argc, wchar_t** argv) -> int
 #else
 auto main() -> int
 #endif
 {
     auto err = 0;
-#if !defined (_MSC_VER)
+#if !defined _MSC_VER
     auto argc = 0;
     auto argv = ::CommandLineToArgvW(::GetCommandLineW(), &argc);
 #endif
@@ -373,9 +375,9 @@ auto main() -> int
         return err;
     }
 
-    auto const pdf = std::basic_string<wchar_t>(argv[1]);
-    auto const tex = std::basic_string<wchar_t>(argv[2]);
-    auto const line = std::basic_string<wchar_t>(argv[3]);
+    auto const pdf = std::basic_string<wchar_t>{argv[1]};
+    auto const tex = std::basic_string<wchar_t>{argv[2]};
+    auto const line = std::basic_string<wchar_t>{argv[3]};
 
     if (std::wcstol(line.c_str(), nullptr, 0) == 0 || errno == ERANGE) {
         std::wcerr << line << L" can't convert to the line number." << std::endl;
@@ -390,9 +392,9 @@ auto main() -> int
     auto active = 0;
     std::basic_ostringstream<wchar_t> woss;
     woss << L"[ForwardSearch(\"" << pdf << L"\",\"" << tex << L"\"," << line << L",0,0," << active << L")]";
-    auto const forwardSearch = std::basic_string<wchar_t>(woss.str());
-    auto const server = std::basic_string<wchar_t>(L"SUMATRA");
-    auto const topic = std::basic_string<wchar_t>(L"control");
+    auto const forwardSearch = std::basic_string<wchar_t>{woss.str()};
+    auto const server = std::basic_string<wchar_t>{L"SUMATRA"};
+    auto const topic = std::basic_string<wchar_t>{L"control"};
 
     if ((err = DdeExecute(server, topic, forwardSearch)) != 0) {
         return err;
