@@ -23,7 +23,7 @@ MiKTeX は TeX のディストリビューションです．<br>
 
 ### 動作環境 {#s7a44d8b}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### ChangeLog {#o3eda5f2}
 
