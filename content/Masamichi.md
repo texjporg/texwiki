@@ -20,7 +20,7 @@ Masamichi は国産でフリーの TeX 用エディタです．<br>
 
 ### 動作環境 {#vf2fe6c8}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ## 設定 {#wa3f6cb4}
 
