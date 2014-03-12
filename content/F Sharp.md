@@ -19,6 +19,7 @@ pukiwiki: "F Sharp"
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
 - [http://msdn.microsoft.com/ja-jp/library/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/dd233154.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/dd233154.aspx)
+- [http://qiita.com/tags/fsharp](http://qiita.com/tags/fsharp)
 - [F#入門](http://fsharp.web.fc2.com/)
 - [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
 - [F# Advent Calendar 2013](http://connpass.com/event/3935/)
@@ -244,29 +245,6 @@ C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals 
 
 ***
 
-- 32-bit Windows の場合
-
-***
-
-```
-C:.
-├─w32tex
-│  └─bin
-│      ├─fwdsumatrapdf.exe
-│      ├─fwdsumatrapdf.fs
-│      └─fwdsumatrapdf.fsx
-└─Program Files
-    └─Microsoft SDKs
-        └─F#
-            └─3.1
-                └─Framework
-                    └─v4.0
-                        ├─Fsc.exe
-                        └─Fsi.exe
-```
-
-***
-
 - 64-bit Windows の場合
 
 ***
@@ -279,6 +257,29 @@ C:.
 │      ├─fwdsumatrapdf.fs
 │      └─fwdsumatrapdf.fsx
 └─Program Files (x86)
+    └─Microsoft SDKs
+        └─F#
+            └─3.1
+                └─Framework
+                    └─v4.0
+                        ├─Fsc.exe
+                        └─Fsi.exe
+```
+
+***
+
+- 32-bit Windows の場合
+
+***
+
+```
+C:.
+├─w32tex
+│  └─bin
+│      ├─fwdsumatrapdf.exe
+│      ├─fwdsumatrapdf.fs
+│      └─fwdsumatrapdf.fsx
+└─Program Files
     └─Microsoft SDKs
         └─F#
             └─3.1
