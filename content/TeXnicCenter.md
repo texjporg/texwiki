@@ -24,7 +24,7 @@ TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 ### 動作環境 {#sa939c6e}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### License {#haaa8397}
 
