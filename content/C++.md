@@ -44,6 +44,7 @@ pukiwiki: "C++"
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
     - [http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)
 - Microsoft Visual Studio Express
+    - [Visual C++ Compiler November 2013 CTP](http://www.microsoft.com/en-us/download/details.aspx?id=41151)
 
 ### ライブラリ・フレームワーク {#se7f734e}
 
