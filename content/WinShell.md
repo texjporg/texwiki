@@ -28,7 +28,7 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 ### 動作環境 {#f8ed906d}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### 特徴 {#mba54fc6}
 
