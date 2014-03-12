@@ -8,9 +8,9 @@ pukiwiki: "WinShell"
 # WinShell
 
 WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．<br>
-問題が発生する場合は WinShell ではなく [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用してください．<br>
+問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用してください．<br>
 
-## [WinShell](http://www.winshell.org/) → 問題が発生する場合は [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) → 問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -56,7 +56,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [TeXstudio](/TeXstudio/), [LyX](/LyX/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 エンコーディングを UTF-8 に変更して
 
@@ -109,8 +109,8 @@ LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[
 
 UTF-8 を使用したい方は
 
-- [TeXstudio](/TeXstudio/)
 - [LyX](/LyX/)
+- [TeXstudio](/TeXstudio/)
 - [TeXworks](/TeXworks/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境を使用してください．
