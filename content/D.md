@@ -19,6 +19,7 @@ pukiwiki: "D"
     - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [Wikipedia.ja:D言語](https://ja.wikipedia.org/wiki/D%E8%A8%80%E8%AA%9E)
+- [http://qiita.com/tags/dlang](http://qiita.com/tags/dlang)
 - [D言語 Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/dlang)
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
 - [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
@@ -27,7 +28,7 @@ pukiwiki: "D"
 
 ### D 版 {#b96c322d}
 
-DMD32 D Compiler v2.064 でビルドできます．<br>
+DMD32 D Compiler v2.065 でビルドできます．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
