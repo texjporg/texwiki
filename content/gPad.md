@@ -22,7 +22,7 @@ gPad は MDI 型テキストエディタです．
 
 ### 動作環境 {#d9fa4265}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ## 既定の文字コード → Unicode(UTF-8) を選択する {#oe5e7d80}
 
