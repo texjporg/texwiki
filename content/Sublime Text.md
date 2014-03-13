@@ -59,166 +59,41 @@ Windows, OS X, Linux
 
 ### Windows {#m3e22b6d}
 
-- [Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理](http://hagetak.hatenablog.com/entry/2014/01/05/180432)
-- [SublimeText3でのLaTeX環境設定方法](http://hagetak.hatenablog.com/entry/2013/10/01/002830)
-- [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
-- [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
-- [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
-
 #### ビルドコマンドの設定 {#jbbbbc43}
 
+W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
-LaTeXTools フォルダーの LaTeX.sublime-build を編集します．<br>
-[LaTeX.sublime-build の 50行目から 105行目](https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX.sublime-build#L50-105)あたりで設定されている
-Windows での cmd (コマンド) と path (パス) は
+LaTeXTools/builders/traditionalBuilder.py を編集します．<br>
+[traditionalBuilder.py の 18行目から 24行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-24)あたりの
 
 ```
-			// *** BEGIN MikTeX 2009 ***
-```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$pdflatex = '%E -interaction=nonstopmode -synctex=1 %S %O'",
+				"-f", "-pdf"]
 
-から
-
-```
-			// *** END MikTeX 2009 ***
-```
-
-で囲まれている以下の設定が初期設定になっています．<br>
-
-```
-			"cmd": ["texify", 
+DEFAULT_COMMAND_WINDOWS_MIKTEX = ["texify", 
 					"-b", "-p",
-					"--tex-option=\"--synctex=1\""
-			],
-			
-			"path": "",
+					"--tex-option=\"--synctex=1\""]
 ```
 
-これをコメントアウトします．<br>
+を以下のように修正します．<br>
 
 ```
-			// "cmd": ["texify", 
-			// 		"-b", "-p",
-			// 		"--tex-option=\"--synctex=1\""
-			// ],
-			
-			// "path": "",
-```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
+				"-e", "$bibtex = 'upbibtex %O %B'",
+				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
+				"-f", "-norc", "-gg", "-pdfdvi"]
 
-その下にある
-
-```
-			// *** BEGIN TeXLive 2011 ***
-```
-
-から
-
-```
-			// *** END TeXLive 2011 ***
-```
-
-で囲まれている以下の設定<br>
-
-```
-			// "cmd": ["latexmk", "-cd",
-			// 	"-e", "\\$pdflatex = '%E %O -interaction=nonstopmode -synctex=1 %S'",
-			//	//"-silent",
-			// 	"-f", "-pdf"],
-
-			// "path": "C:\\texlive\\2011\\bin\\win32;$PATH",
-```
-
-の下に cmd (コマンド) と path (パス) の設定を追加します．<br>
-■ Latexmk-pdfupLaTeX の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'upbibtex %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				"-e", "\\$dvipdf = 'dvipdfmx %O -o %D %S'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdfdvi"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
-```
-
-■ Latexmk-pdfupLaTeX2 の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'upbibtex %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				"-e", "\\$dvips = 'dvips %O -z -f %S | convbkmk -u > %D'",
-				"-e", "\\$ps2pdf = 'ps2pdf.bat %O %S %D'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdfps"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
-```
-
-■ Latexmk-pdfLaTeX の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$pdflatex = 'pdflatex %O -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'bibtex %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdf"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
-```
-
-■ Latexmk-LuaLaTeX の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$pdflatex = 'lualatex %O -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'bibtexu %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdf"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
-```
-
-■ Latexmk-LuaJITLaTeX の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$pdflatex = 'luajitlatex %O -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'bibtexu %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdf"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
-```
-
-■ Latexmk-XeLaTeX の場合<br>
-
-```
-			"cmd": ["latexmk", "-cd",
-				"-e", "\\$pdflatex = 'xelatex %O -interaction=nonstopmode -synctex=1 %S'",
-				"-e", "\\$bibtex = 'bibtexu %O %B'",
-				"-e", "\\$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
-				"-e", "\\$makeindex = 'makeindex %O -o %D %S'",
-				//"-silent",
-				"-f", "-norc", "-gg", "-pdf"],
-
-			"path": "C:\\texlive\\2013\\bin\\win32;$PATH",
+DEFAULT_COMMAND_WINDOWS_MIKTEX = DEFAULT_COMMAND_LATEXMK
 ```
 
 #### SumatraPDF の設定 {#xdcd22a2}
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
-LaTeXTools フォルダーの viewPDF.py を編集します．<br>
+LaTeXTools/viewPDF.py を編集します．<br>
 [viewPDF.py の 50行目](https://github.com/SublimeText/LaTeXTools/blob/master/viewPDF.py#L50)あたりの
 
 ```
@@ -239,7 +114,7 @@ LaTeXTools フォルダーの viewPDF.py を編集します．<br>
 			viewercmd = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
 ```
 
-LaTeXTools フォルダーの jumpToPDF.py を編集します．<br>
+LaTeXTools/jumpToPDF.py を編集します．<br>
 [jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
 
 ```
@@ -267,16 +142,55 @@ PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示�
 
 ### OS X {#c2e22368}
 
-- [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
-- [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
-- [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
-- [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
-- [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
-- [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
+#### ビルドコマンドの設定 {#x87217d3}
+
+メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
+LaTeXTools/builders/traditionalBuilder.py を編集します．<br>
+[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-20)あたりの
+
+```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$pdflatex = '%E -interaction=nonstopmode -synctex=1 %S %O'",
+				"-f", "-pdf"]
+```
+
+を以下のように修正します．<br>
+
+```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
+				"-e", "$bibtex = 'upbibtex %O %B'",
+				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
+				"-f", "-norc", "-gg", "-pdfdvi"]
+```
 
 ### Linux {#x47ef3df}
 
-- [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
+#### ビルドコマンドの設定 {#z0e9fdec}
+
+メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
+LaTeXTools/builders/traditionalBuilder.py を編集します．<br>
+[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-20)あたりの
+
+```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$pdflatex = '%E -interaction=nonstopmode -synctex=1 %S %O'",
+				"-f", "-pdf"]
+```
+
+を以下のように修正します．<br>
+
+```
+DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
+				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
+				"-e", "$bibtex = 'upbibtex %O %B'",
+				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
+				"-f", "-norc", "-gg", "-pdfdvi"]
+```
 
 ## SumatraPDF との連携 {#hf07fc30}
 
@@ -292,6 +206,10 @@ LaTeXTools を使用している場合は Ctrl+L をタイプしたあとで J �
 
 ## Skim との連携 {#a71db317}
 
+### forward search {#ld6076e7}
+
+LaTeXTools を使用している場合は Cmd+L をタイプしたあとで J をタイプすると forward search が実行されます．<br>
+
 ### inverse search {#ud969bd6}
 
 PDF-TeX 同期サポート:
@@ -306,6 +224,16 @@ PDF-TeX 同期サポート:
 引数:
 : "%file":%line
 
+## Evince との連携 {#c88ae1a2}
+
+### forward search {#d9a3fe23}
+
+LaTeXTools を使用している場合は Ctrl+L をタイプしたあとで J をタイプすると forward search が実行されます．<br>
+
+### inverse search {#g5eca105}
+
+LaTeXTools を使用している場合は Ctrl+左クリック を実行すると inverse search が実行されます．<br>
+
 ## 関連リンク {#p3fe3a8a}
 
 - [SublimeText Vim Emacs プラグイン比較表](https://github.com/chikatoike/SublimeTextWiki/wiki/SublimeText-Vim-Emacs-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E6%AF%94%E8%BC%83%E8%A1%A8)
@@ -313,9 +241,21 @@ PDF-TeX 同期サポート:
 ### Windows {#m51226c8}
 
 - [Sublime Text 3 導入手順 (Windows7)](http://nanoway.net/pc/sublime-text-3)
+- \[[Windows\] Sublime Text 2 で LaTeX のコンパイル](http://gymnagisane.blog.fc2.com/blog-entry-170.html)
+- [Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理](http://hagetak.hatenablog.com/entry/2014/01/05/180432)
+- [SublimeText3でのLaTeX環境設定方法](http://hagetak.hatenablog.com/entry/2013/10/01/002830)
+- [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
+- [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
+- [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
 
 ### OS X {#d13b8a86}
 
+- [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
+- [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
+- [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
+- [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
+- [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
+- [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
 - [Sublime Text 2のTeXビルドシステム](http://www35.atpages.jp/shocker/memoRANDOM/Misc/Misc_index.php)
 - [Sublime Text2を使ってTexを書いてコンパイルまでする。](https://gist.github.com/4482213)
 - [Soda Theme](https://github.com/buymeasoda/soda-theme)
@@ -323,4 +263,5 @@ PDF-TeX 同期サポート:
 ### Linux {#r2805e10}
 
 - [Sublime Text 2をLinux MintやUbuntuでPPAからインストールする](http://blog.lindwurm.biz/2013/04/how-to-install-sublime.html)
+- [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
 - [Sublime Text 2のプラグインOpen With Vimを書いてみた](http://d.hatena.ne.jp/itiut/20111229/1325138744)
