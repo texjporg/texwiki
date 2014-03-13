@@ -29,7 +29,9 @@ pukiwiki: "AbTeXInstaller"
 
 ### 動作環境 {#ge54c4b7}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
+
+[TeXインストーラ3 は Wine で動作しません．](http://d.hatena.ne.jp/abenori/20120522)
 
 ### リリース情報 {#f691af94}
 
