@@ -26,7 +26,7 @@ LaTeXiT は数式エディタです．<br>
 
 ### 動作環境 {#e0e2eaf2}
 
-OS X 10.4 以降
+OS X
 
 [COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
 
