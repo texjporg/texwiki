@@ -205,7 +205,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
