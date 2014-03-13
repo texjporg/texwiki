@@ -33,11 +33,6 @@ W32TeX は Visual C++ 2010 でビルドされているため Windows XP 以降�
 
 - [ChangeLog](http://w32tex.org/ChangeLog)
 
-### 簡易インストーラー {#n2f7f0ea}
-
-W32TeX のインストールを簡単にする「TeX インストーラ 3」が[あべのり［阿部紀行］さん](http://www.math.sci.hokudai.ac.jp/~abenori/)によって開発されました。<br>
-「TeX インストーラ 3」については AbTeXInstaller - TeX Wiki をご参照ください。<br>
-
 ### 統合環境・エディタ {#o7f5ab09}
 
 Windows PowerShell やコマンド プロンプトでの作業が苦手な方は [LyX](/LyX/)，[TeXstudio](/TeXstudio/)，[TeXworks](/TeXworks/) などの [TeX 専用の統合環境・エディタ](</TeX用エディタ/>) を使用すればマウスを使って作業することができます。<br>
@@ -265,7 +260,7 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 
 - [texinst2013.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2013.zip)（簡易インストーラー）
 - [unzip.exe](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/unzip.exe)（ZIP 展開ツール）
-    - Windows 8.1, 8, 7, Vista, XP は ZIP 形式の展開に標準で対応しています。[ZIP 形式](https://ja.wikipedia.org/wiki/ZIP_%28%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%29)の展開に対応したソフトウェア[^3]を用いてもかまいません。
+    - Windows は ZIP 形式の展開に標準で対応しています。[ZIP 形式](https://ja.wikipedia.org/wiki/ZIP_%28%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%29)の展開に対応したソフトウェア[^3]を用いてもかまいません。
     - unzip.exe は TeX Live Win32 版にも含まれています．
 - [web2c-lib.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-lib.tar.xz)（必須）
 - [web2c-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-w32.tar.xz), [web2c-w64.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/web2c-w64.tar.xz)（必須）
