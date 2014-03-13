@@ -186,7 +186,6 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．<br>
 
 - [install-w32tex.py](https://gist.github.com/2766442) (a.k.a. 誰得スクリプト) Install W32TeX on Wine<br>
-- [TeXインストーラ3 は Wine で動作しません．](http://d.hatena.ne.jp/abenori/20120522)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
 
