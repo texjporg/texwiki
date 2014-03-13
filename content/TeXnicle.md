@@ -23,7 +23,7 @@ SyncTeX に対応しています．<br>
 
 ### 動作環境 {#ob2dc8eb}
 
-OS X 10.9, 10.8, 10.7
+OS X
 
 ### License {#s7995e80}
 
