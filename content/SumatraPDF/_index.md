@@ -40,7 +40,7 @@ forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> �
 
 ### 動作環境 {#z85aa9cd}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### License {#f48c8095}
 
