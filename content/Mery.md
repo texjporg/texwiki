@@ -43,7 +43,7 @@ Mery は
 
 ### 動作環境 {#b792ae80}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ## 既定のエンコード {#ccaf57fb}
 
