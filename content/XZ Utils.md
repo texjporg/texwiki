@@ -9,6 +9,10 @@ pukiwiki: "XZ Utils"
 
 ## [XZ Utils](http://tukaani.org/xz/) {#l0b85e37}
 
+### ChangeLog {#bdd78fcc}
+
+[http://git.tukaani.org/?p=xz.git;a=summary](http://git.tukaani.org/?p=xz.git;a=summary)
+
 ### Installation {#d36e5a04}
 
 #### MinGW {#ca66da1c}
