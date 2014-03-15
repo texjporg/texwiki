@@ -23,11 +23,18 @@ $ make install
 $ popd
 ```
 
-<!-- -[[libjpeg-turbo:http://libjpeg-turbo.virtualgl.org/]] をインストールします．~ -->
-<!-- $ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.0.tar.gz -->
-<!-- $ tar xvf libjpeg-turbo-1.3.0.tar.gz -->
-<!-- $ pushd libjpeg-turbo-1.3.0 -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
+## [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) {#ib19d9ff}
+
+### Installation {#zbcb57de}
+
+#### MinGW {#l1391267}
+
+```
+$ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.0.tar.gz
+$ tar xvf libjpeg-turbo-1.3.0.tar.gz
+$ pushd libjpeg-turbo-1.3.0
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
