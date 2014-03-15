@@ -11,7 +11,7 @@ pukiwiki: "XZ Utils"
 
 ### Installation {#d36e5a04}
 
-### MinGW {#ca66da1c}
+#### MinGW {#ca66da1c}
 
 ```
 $ curl -R -L -O http://tukaani.org/xz/xz-5.0.5.tar.xz
