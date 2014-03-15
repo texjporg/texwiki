@@ -1,0 +1,24 @@
+---
+title: "OpenSSL"
+url: "/OpenSSL/"
+date: 2014-03-15T16:06:45Z
+pukiwiki: "OpenSSL"
+---
+
+# OpenSSL
+
+## [OpenSSL](http://www.openssl.org/) {#h33b149b}
+
+### Installation {#w1d4f4bd}
+
+#### MinGW {#h2041c43}
+
+```
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1f.tar.gz
+$ tar xvf openssl-1.0.1f.tar.gz
+$ pushd openssl-1.0.1f
+$ ./config --prefix=/mingw shared
+$ make
+$ make install
+$ popd
+```
