@@ -13,7 +13,9 @@ pukiwiki: "zlib"
 
 [http://zlib.net/ChangeLog.txt](http://zlib.net/ChangeLog.txt)
 
-### インストール {#zce96073}
+### Installation {#zce96073}
+
+#### MinGW {#p5c8b387}
 
 ```
 $ curl -R -L -O http://zlib.net/zlib-1.2.8.tar.xz
