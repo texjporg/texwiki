@@ -9,6 +9,10 @@ pukiwiki: "Little CMS"
 
 ## [Little CMS](http://www.littlecms.com/) {#b0b42891}
 
+### ChangeLog {#bd3e9b8c}
+
+[https://github.com/mm2/Little-CMS/commits/master](https://github.com/mm2/Little-CMS/commits/master)
+
 ### Installation {#k8b3dd98}
 
 #### MinGW {#uce45174}
