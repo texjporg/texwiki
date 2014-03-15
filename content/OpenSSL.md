@@ -9,6 +9,12 @@ pukiwiki: "OpenSSL"
 
 ## [OpenSSL](http://www.openssl.org/) {#h33b149b}
 
+### ChangeLog {#i24e878a}
+
+[http://git.openssl.org/gitweb/?p=openssl.git](http://git.openssl.org/gitweb/?p=openssl.git)
+
+[https://github.com/openssl/openssl/commits/master](https://github.com/openssl/openssl/commits/master)
+
 ### Installation {#w1d4f4bd}
 
 #### MinGW {#h2041c43}
