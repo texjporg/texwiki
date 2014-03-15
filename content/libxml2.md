@@ -9,6 +9,10 @@ pukiwiki: "libxml2"
 
 ## [libxml2](http://xmlsoft.org/) {#i46cce8d}
 
+### ChangeLog {#a3d7c8fa}
+
+[https://git.gnome.org/browse/libxml2/](https://git.gnome.org/browse/libxml2/)
+
 ### Installation {#y82ea743}
 
 #### MinGW {#e764be72}
