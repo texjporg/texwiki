@@ -9,6 +9,14 @@ pukiwiki: "FreeType"
 
 ## [FreeType](http://www.freetype.org/) {#t5ee2446}
 
+### ChangeLog {#gb3e0562}
+
+[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/log/](http://git.savannah.gnu.org/cgit/freetype/freetype2.git/log/)
+
+### Language Bindings {#g534d7a2}
+
+[http://www.freetype.org/developer.html#language-bindings](http://www.freetype.org/developer.html#language-bindings)
+
 ### Installation {#a3708638}
 
 #### MinGW {#zbf036d7}
