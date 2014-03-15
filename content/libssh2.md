@@ -9,6 +9,10 @@ pukiwiki: "libssh2"
 
 ## [libssh2](http://www.libssh2.org/) {#t7120b9d}
 
+### ChangeLog {#tbd58a7c}
+
+[http://git.libssh2.org/?p=libssh2.git;a=summary;js=1](http://git.libssh2.org/?p=libssh2.git;a=summary;js=1)
+
 ### Installation {#qae26d0b}
 
 #### MinGW {#ff2247b4}
