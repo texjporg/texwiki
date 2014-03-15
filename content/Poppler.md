@@ -36,7 +36,7 @@ Poppler は
 
 ### リリース情報 {#ha3b28ab}
 
-- [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags) を参照．<br>
+- [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags)
 
 ### ChangeLog {#u62118c7}
 
@@ -197,18 +197,6 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - Install [Fontconfig](/Fontconfig/).
 
-- Install [pixman](http://cgit.freedesktop.org/pixman/).
-
-```
-$ curl -R -L -O http://cairographics.org/releases/pixman-0.32.4.tar.gz
-$ tar xvf pixman-0.32.4.tar.gz
-$ pushd pixman-0.32.4
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
 - Install cairo.
 
 - Install OpenSSL.
@@ -230,169 +218,13 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-- Install [libssh2](http://www.libssh2.org/).
+- Install libssh2.
 
-```
-$ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.3.tar.gz
-$ tar xvf libssh2-1.4.3.tar.gz
-$ pushd libssh2-1.4.3
-$ ./configure --prefix=/mingw
-```
+- Install cURL.
 
-```
-  version:          1.4.3
-  Host type:        i686-pc-mingw32
-  Install prefix:   /mingw
-  Compiler:         gcc
-  Compiler flags:    -DLIBSSH2_WIN32
-  Library types:    Shared=yes, Static=yes
-  Crypto library:   openssl: yes (AES-CTR: no) libgcrypt: no
-  Debug build:      no
-  Build examples:   yes
-  Path to sshd:      (only for self-tests)
-  libz compression: yes
-```
+- Install libffi.
 
-```
-$ make
-$ make install
-$ popd
-```
-
-- Install [curl](http://curl.haxx.se/).
-
-```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.35.0.tar.bz2
-$ tar xvf curl-7.35.0.tar.bz2
-$ pushd curl-7.35.0
-$ ./configure --prefix=/mingw
-```
-
-```
-  curl version:     7.35.0
-  Host setup:       i686-pc-mingw32
-  Install prefix:   /mingw
-  Compiler:         gcc
-  SSL support:      enabled (OpenSSL)
-  SSH support:      enabled (libSSH2)
-  zlib support:     enabled
-  krb4 support:     no      (--with-krb4*)
-  GSSAPI support:   no      (--with-gssapi)
-  SPNEGO support:   no      (--with-spnego)
-  TLS-SRP support:  enabled
-  resolver:         default (--enable-ares / --enable-threaded-resolver)
-  ipv6 support:     no      (--enable-ipv6)
-  IDN support:      no      (--with-{libidn,winidn})
-  Build libcurl:    Shared=yes, Static=yes
-  Built-in manual:  no      (--enable-manual)
-  --libcurl option: enabled (--disable-libcurl-option)
-  Verbose errors:   enabled (--disable-verbose)
-  SSPI support:     no      (--enable-sspi)
-  ca cert bundle:   no
-  ca cert path:     no
-  LDAP support:     enabled (winldap)
-  LDAPS support:    enabled
-  RTSP support:     enabled
-  RTMP support:     no      (--with-librtmp)
-  metalink support: no      (--with-libmetalink)
-  Protocols:        DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS LDAP LDAPS P
-OP3 POP3S RTSP SCP SFTP SMTP SMTPS TELNET TFTP
-```
-
-```
-$ make
-$ make install
-$ popd
-```
-
-- Install [libffi](http://sourceware.org/libffi/).
-
-```
-$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz
-$ tar xvf libffi-3.0.13.tar.gz
-$ pushd libffi-3.0.13
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-- Install [GLib](https://developer.gnome.org/glib/).
-
-```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.91.tar.xz
-$ tar xvf glib-2.39.91.tar.xz
-$ pushd glib-2.39.91
-$ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-<!-- -Install [[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]]. -->
-<!--  -->
-<!-- $ curl - -insecure -R -L -O https://download.gnome.org/sources/gobject-introspection/1.39/gobject-introspection-1.39.0.tar.xz -->
-<!-- $ tar xvf gobject-introspection-1.39.0.tar.xz -->
-<!-- $ pushd gobject-introspection-1.39.0 -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-
-- Install [gettext](http://www.gnu.org/software/gettext/).
-
-```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.2.tar.gz
-$ tar xvf gettext-0.18.3.2.tar.gz
-$ pushd gettext-0.18.3.2
-$ ./configure --prefix=/mingw
-```
-
-<!--  -->
-<!-- gettext-tools/gnulib-lib/wctype.in.h の344行目から360行目までをコメントアウトします． -->
-<!-- //_GL_WCTYPE_INLINE wint_t -->
-<!-- //rpl_towlower (wint_t wc) -->
-<!-- //{ -->
-<!-- //  return (wint_t) (wchar_t) towlower (wc); -->
-<!-- //} -->
-<!-- //#  if !(defined __cplusplus && defined GNULIB_NAMESPACE) -->
-<!-- //#   define towlower rpl_towlower -->
-<!-- //#  endif -->
-<!-- //  -->
-<!-- //_GL_WCTYPE_INLINE wint_t -->
-<!-- //rpl_towupper (wint_t wc) -->
-<!-- //{ -->
-<!-- //  return (wint_t) (wchar_t) towupper (wc); -->
-<!-- //} -->
-<!-- //#  if !(defined __cplusplus && defined GNULIB_NAMESPACE) -->
-<!-- //#   define towupper rpl_towupper -->
-<!-- //#  endif -->
-<!--  -->
-
-```
-$ make
-$ make install
-$ popd
-```
-
-- Install [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config).
-
-```
-$ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
-$ tar xvf pkg-config-0.28.tar.gz
-$ pushd pkg-config-0.28
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-<!-- gtk -->
-<!--  -->
-<!-- make[1]: Entering directory `gtk+-3.6.0/gtk' -->
-<!--   CCLD     gtk-update-icon-cache.exe -->
-<!-- ../libtool: line 9517: ./gtk-update-icon-cache.exe: Bad file number -->
-<!-- このように表示される場合は管理者権限で MinGW Shell (MSYS) を実行してビルドしてください．~ -->
+- Install GLib.
 
 - Install [Poppler](http://poppler.freedesktop.org/).
 
