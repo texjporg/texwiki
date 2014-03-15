@@ -7,7 +7,7 @@ pukiwiki: "LibTIFF"
 
 # LibTIFF
 
-## [LibTIFF:](http://www.remotesensing.org/libtiff/) {#v8148926}
+## [LibTIFF](http://www.remotesensing.org/libtiff/) {#v8148926}
 
 ### Installation {#x9e16dd0}
 
