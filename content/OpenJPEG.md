@@ -1,0 +1,51 @@
+---
+title: "OpenJPEG"
+url: "/OpenJPEG/"
+date: 2014-03-15T05:44:41Z
+pukiwiki: "OpenJPEG"
+---
+
+# OpenJPEG
+
+## [OpenJPEG](http://www.openjpeg.org/) {#tfc3a613}
+
+### Installation {#qa7273ab}
+
+#### MinGW {#c2a477ae}
+
+OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
+
+OpenJPEG 最新版の場合
+
+<!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
+<!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
+<!-- $ pushd openjpeg-2.0.0 -->
+
+```
+$ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only
+$ pushd openjpeg-read-only
+$ mkdir build
+$ pushd build
+```
+
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
+
+```
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DUNIX:bool=on
+$ make
+$ make install
+$ popd
+$ popd
+```
+
+OpenJPEG 1.5.1 の場合
+
+```
+$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
+$ tar xvf openjpeg-1.5.1.tar.gz
+$ pushd openjpeg-1.5.1
+$ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
+$ make
+$ make install
+$ popd
+```
