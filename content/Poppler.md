@@ -175,160 +175,21 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - Install zlib.
 
-- Install [CMake](http://www.cmake.org/).
-
-```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
-$ tar xvf cmake-2.8.12.2.tar.gz
-$ pushd cmake-2.8.12.2
-$ mkdir build
-$ pushd build
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
-$ make
-$ make install
-$ popd
-$ popd
-```
-
-cmake の Makefile でインストールした場合は，make uninstall が使えないので，アンインストールする場合は，ビルドしたディレクトリで
-
-```
-$ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
-```
-
-を実行します．
+- Install CMake.
 
 - Install libpng.
 
 - Install libjpeg.
 
-- Install [XZ Utils](http://tukaani.org/xz/).
+- Install XZ Utils.
 
-```
-$ curl -R -L -O http://tukaani.org/xz/xz-5.0.5.tar.xz
-$ tar xvf xz-5.0.5.tar.xz
-$ pushd xz-5.0.5
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
+- Install LibTIFF.
 
-- Install [LibTIFF](http://www.remotesensing.org/libtiff/).
+- Install Little CMS.
 
-```
-$ curl -R -L -O http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
-$ tar xvf tiff-4.0.3.tar.gz
-$ pushd tiff-4.0.3
-$ ./configure --prefix=/mingw
-```
+- Install OpenJPEG.
 
-```
-Libtiff is now configured for i686-pc-mingw32
-
-  Installation directory:             /mingw
-  Documentation directory:            ${prefix}/share/doc/tiff-4.0.3
-  C compiler:                         gcc -g -O2 -Wall -W
-  C++ compiler:                       g++ -g -O2
-  Enable runtime linker paths:        no
-  Enable linker symbol versioning:    no
-  Support Microsoft Document Imaging: yes
-  Use win32 IO:                       yes
-
- Support for internal codecs:
-  CCITT Group 3 & 4 algorithms:       yes
-  Macintosh PackBits algorithm:       yes
-  LZW algorithm:                      yes
-  ThunderScan 4-bit RLE algorithm:    yes
-  NeXT 2-bit RLE algorithm:           yes
-  LogLuv high dynamic range encoding: yes
-
- Support for external codecs:
-  ZLIB support:                       yes
-  Pixar log-format algorithm:         yes
-  JPEG support:                       yes
-  Old JPEG support:                   yes
-  JPEG 8/12 bit dual mode:            no
-  ISO JBIG support:                   no
-  LZMA2 support:                      yes
-
-  C++ support:                        yes
-
-  OpenGL support:                     no
-```
-
-```
-$ make
-$ make install
-$ popd
-```
-
-- Install [Little CMS](http://www.littlecms.com/).
-
-<!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.5/lcms2-2.5.tar.gz -->
-
-```
-$ curl -R -L -O http://download.sourceforge.net/lcms/lcms2-2.5.tar.gz
-$ tar xvf lcms2-2.5.tar.gz
-$ pushd lcms2-2.5
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-- Install [OpenJPEG](http://www.openjpeg.org/).
-
-OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
-
-OpenJPEG 最新版の場合
-
-<!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
-<!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
-<!-- $ pushd openjpeg-2.0.0 -->
-
-```
-$ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only
-$ pushd openjpeg-read-only
-$ mkdir build
-$ pushd build
-```
-
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DBUILD_JPIP_SERVER:bool=on -DBUILD_JP3D:bool=on -->
-
-```
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS:bool=on -DBUILD_CODEC:bool=on -DBUILD_MJ2:bool=on -DBUILD_JPWL:bool=on -DUNIX:bool=on
-$ make
-$ make install
-$ popd
-$ popd
-```
-
-OpenJPEG 1.5.1 の場合
-
-```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
-$ tar xvf openjpeg-1.5.1.tar.gz
-$ pushd openjpeg-1.5.1
-$ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
-$ make
-$ make install
-$ popd
-```
-
-- Install [FreeType](http://www.freetype.org/).
-
-<!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2 -->
-
-```
-$ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.5.3.tar.bz2
-$ tar xvf freetype-2.5.3.tar.bz2
-$ pushd freetype-2.5.3
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
+- Install FreeType.
 
 - Install [nkf](http://sourceforge.jp/projects/nkf/).
 
