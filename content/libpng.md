@@ -13,7 +13,9 @@ pukiwiki: "libpng"
 
 [http://sourceforge.net/p/libpng/code/ci/master/log/](http://sourceforge.net/p/libpng/code/ci/master/log/)
 
-### インストール {#jc84d550}
+### Installation {#jc84d550}
+
+#### MinGW {#hb8b32d9}
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.10/libpng-1.6.10.tar.xz -->
 
