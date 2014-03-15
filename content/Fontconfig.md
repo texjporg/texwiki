@@ -9,6 +9,10 @@ pukiwiki: "Fontconfig"
 
 ## [Fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/) {#yb562832}
 
+### ChangeLog {#s8bf189d}
+
+[http://cgit.freedesktop.org/fontconfig/](http://cgit.freedesktop.org/fontconfig/)
+
 ### Installation {#c70d9c03}
 
 #### MinGW {#j2ea43a1}
