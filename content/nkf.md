@@ -7,14 +7,14 @@ pukiwiki: "nkf"
 
 # nkf
 
-## [nkf](http://sourceforge.jp/projects/nkf/) {#ie06d283}
+## [nkf](http://osdn.jp/projects/nkf/) {#ie06d283}
 
 ### Installation {#s4661abd}
 
 #### MinGW {#gdd930d3}
 
 ```
-$ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
+$ curl -R -L -O http://prdownloads.osdn.jp/nkf/59912/nkf-2.1.3.tar.gz
 $ tar xvf nkf-2.1.3.tar.gz
 $ pushd nkf-2.1.3
 $ make
