@@ -9,6 +9,10 @@ pukiwiki: "libjpeg"
 
 ## [libjpeg](http://www.ijg.org/) {#i0c27a04}
 
+### ChangeLog {#h0c6584b}
+
+[http://www.infai.org/jpeg/](http://www.infai.org/jpeg/)
+
 ### Installation {#v74c25d2}
 
 #### MinGW {#pece36ae}
@@ -24,6 +28,10 @@ $ popd
 ```
 
 ## [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) {#ib19d9ff}
+
+### ChangeLog {#o5d4a292}
+
+[http://sourceforge.net/p/libjpeg-turbo/code/HEAD/log/](http://sourceforge.net/p/libjpeg-turbo/code/HEAD/log/)
 
 ### Installation {#zbcb57de}
 
