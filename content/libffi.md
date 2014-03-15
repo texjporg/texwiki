@@ -9,6 +9,10 @@ pukiwiki: "libffi"
 
 ## [libffi](http://sourceware.org/libffi/) {#y7b33388}
 
+### ChangeLog {#sf0ce01b}
+
+[https://github.com/atgreen/libffi/commits/master](https://github.com/atgreen/libffi/commits/master)
+
 ### Installation {#e885e478}
 
 #### MinGW {#nfb2cfde}
