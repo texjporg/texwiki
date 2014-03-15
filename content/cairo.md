@@ -9,9 +9,27 @@ pukiwiki: "cairo"
 
 ## [cairo](http://www.cairographics.org/) {#ka2a7241}
 
+### ChangeLog {#g1e6e2e7}
+
+[http://cgit.freedesktop.org/cairo/](http://cgit.freedesktop.org/cairo/)
+
 ### Installation {#pc9d5936}
 
 #### MinGW {#s9a2b332}
+
+- Install [pixman](http://cgit.freedesktop.org/pixman/).
+
+```
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.32.4.tar.gz
+$ tar xvf pixman-0.32.4.tar.gz
+$ pushd pixman-0.32.4
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
+
+- Install cairo.
 
 ```
 $ curl -R -L -O http://cairographics.org/releases/cairo-1.12.16.tar.xz
