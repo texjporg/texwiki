@@ -9,6 +9,10 @@ pukiwiki: "cURL"
 
 ## [cURL](http://curl.haxx.se/) {#b9c11180}
 
+### ChangeLog {#b2bb9f55}
+
+[https://github.com/bagder/curl/commits/master](https://github.com/bagder/curl/commits/master)
+
 ### Installation {#wbd5fb7a}
 
 #### MinGW {#va108410}
