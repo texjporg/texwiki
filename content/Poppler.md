@@ -13,7 +13,7 @@ pukiwiki: "Poppler"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## Poppler とは {#fd295383}
+## Summary {#fd295383}
 
 Poppler は PDF ファイルを表示するためのライブラリです．<br>
 Poppler は
@@ -49,7 +49,7 @@ Poppler は font configuration で win32 を選択した場合，日本語のフ
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します．<br>
 
-## インストール {#e0d6f40b}
+## Installation {#e0d6f40b}
 
 ### Windows {#o45a1c30}
 
@@ -90,9 +90,9 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 を C:\MinGW\bin にコピーします．
 
-- [Python](/Python/) をインストールします．<br>
+- Install [Python](/Python/).
 
-- MinGW Shell (MSYS) を起動します．
+- Run MinGW Shell (MSYS).
 
 <!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
 <!--  -->
@@ -173,17 +173,9 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 <!-- - --  -->
 <!-- lstat は MinGW にはないので無理っぽい -->
 
-- [zlib](http://zlib.net/) をインストールします． ([ChangeLog](http://zlib.net/ChangeLog.txt))
+- Install zlib.
 
-```
-$ curl -R -L -O http://zlib.net/zlib-1.2.8.tar.xz
-$ tar xvf zlib-1.2.8.tar.xz
-$ pushd zlib-1.2.8
-$ make -f win32/Makefile.gcc BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib SHARED_MODE=1 install
-$ popd
-```
-
-- [CMake](http://www.cmake.org/) をインストールします．
+- Install [CMake](http://www.cmake.org/).
 
 ```
 $ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
@@ -206,53 +198,11 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 を実行します．
 
-- [libpng](http://www.libpng.org/pub/png/libpng.html) をインストールします．([log](http://sourceforge.net/p/libpng/code/ci/master/log/))
+- Install libpng.
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.10/libpng-1.6.10.tar.xz -->
+- Install libjpeg.
 
-```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.10.tar.xz
-$ tar xvf libpng-1.6.10.tar.xz
-$ pushd libpng-1.6.10
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.10/libpng-1.6.10.tar.xz -->
-<!-- $ tar xvf libpng-1.6.10.tar.xz -->
-<!-- $ pushd libpng-1.6.10 -->
-<!-- $ mkdir build -->
-<!-- $ pushd build -->
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-<!-- $ popd -->
-<!--  -->
-<!-- -[[libjpeg-turbo:http://libjpeg-turbo.virtualgl.org/]] をインストールします．~ -->
-<!-- $ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.0.tar.gz -->
-<!-- $ tar xvf libjpeg-turbo-1.3.0.tar.gz -->
-<!-- $ pushd libjpeg-turbo-1.3.0 -->
-<!-- $ ./configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-
-- [libjpeg](http://www.ijg.org/) をインストールします．
-
-```
-$ curl -R -L -O http://www.ijg.org/files/jpegsrc.v9a.tar.gz
-$ tar xvf jpegsrc.v9a.tar.gz
-$ pushd jpeg-9a
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
-- [XZ Utils](http://tukaani.org/xz/) をインストールします．
+- Install [XZ Utils](http://tukaani.org/xz/).
 
 ```
 $ curl -R -L -O http://tukaani.org/xz/xz-5.0.5.tar.xz
@@ -264,7 +214,7 @@ $ make install
 $ popd
 ```
 
-- [LibTIFF](http://www.remotesensing.org/libtiff/) をインストールします．
+- Install [LibTIFF](http://www.remotesensing.org/libtiff/).
 
 ```
 $ curl -R -L -O http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
@@ -313,7 +263,7 @@ $ make install
 $ popd
 ```
 
-- [Little CMS](http://www.littlecms.com/) をインストールします．
+- Install [Little CMS](http://www.littlecms.com/).
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/lcms/files/lcms/2.5/lcms2-2.5.tar.gz -->
 
@@ -327,7 +277,7 @@ $ make install
 $ popd
 ```
 
-- [OpenJPEG](http://www.openjpeg.org/) をインストールします．
+- Install [OpenJPEG](http://www.openjpeg.org/).
 
 OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
 
@@ -366,7 +316,7 @@ $ make install
 $ popd
 ```
 
-- [FreeType](http://www.freetype.org/) をインストールします．
+- Install [FreeType](http://www.freetype.org/).
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2 -->
 
@@ -380,7 +330,7 @@ $ make install
 $ popd
 ```
 
-- [nkf](http://sourceforge.jp/projects/nkf/) をインストールします．
+- Install [nkf](http://sourceforge.jp/projects/nkf/).
 
 ```
 $ curl -R -L -O http://jaist.dl.sourceforge.jp/nkf/59912/nkf-2.1.3.tar.gz
@@ -410,7 +360,7 @@ cp -f nkf.1j /mingw/man/ja/man1/nkf.1
 $ popd
 ```
 
-- [libxml2](http://xmlsoft.org/) をインストールします．
+- Install [libxml2](http://xmlsoft.org/).
 
 ```
 $ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.1.tar.gz
@@ -475,7 +425,7 @@ $ make install
 $ popd
 ```
 
-- [fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/) をインストールします．
+- Install [fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/).
 
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.bz2
@@ -577,7 +527,7 @@ $ fc-match GothicBBB-Medium
 msgothic.ttc: "MS Gothic" "Regular"
 ```
 
-- [pixman](http://cgit.freedesktop.org/pixman/) をインストールします．
+- Install [pixman](http://cgit.freedesktop.org/pixman/).
 
 ```
 $ curl -R -L -O http://cairographics.org/releases/pixman-0.32.4.tar.gz
@@ -589,7 +539,7 @@ $ make install
 $ popd
 ```
 
-- [cairo](http://www.cairographics.org/) をインストールします．
+- Install [cairo](http://www.cairographics.org/).
 
 ```
 $ curl -R -L -O http://cairographics.org/releases/cairo-1.12.16.tar.xz
@@ -698,7 +648,7 @@ $ make install
 $ popd
 ```
 
-- [OpenSSL](http://www.openssl.org/) をインストールします．
+- Install [OpenSSL](http://www.openssl.org/).
 
 ```
 $ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1f.tar.gz
@@ -727,7 +677,7 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-- [libssh2](http://www.libssh2.org/) をインストールします．
+- Install [libssh2](http://www.libssh2.org/).
 
 ```
 $ curl -R -L -O http://www.libssh2.org/download/libssh2-1.4.3.tar.gz
@@ -756,7 +706,7 @@ $ make install
 $ popd
 ```
 
-- [curl](http://curl.haxx.se/) をインストールします．
+- Install [curl](http://curl.haxx.se/).
 
 ```
 $ curl -R -L -O http://curl.haxx.se/download/curl-7.35.0.tar.bz2
@@ -802,7 +752,7 @@ $ make install
 $ popd
 ```
 
-- [libffi](http://sourceware.org/libffi/) をインストールします．<br>
+- Install [libffi](http://sourceware.org/libffi/).
 
 ```
 $ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz
@@ -814,7 +764,7 @@ $ make install
 $ popd
 ```
 
-- [GLib](https://developer.gnome.org/glib/) をインストールします．
+- Install [GLib](https://developer.gnome.org/glib/).
 
 ```
 $ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.91.tar.xz
@@ -826,7 +776,7 @@ $ make install
 $ popd
 ```
 
-<!-- -[[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]] をインストールします． -->
+<!-- -Install [[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]]. -->
 <!--  -->
 <!-- $ curl - -insecure -R -L -O https://download.gnome.org/sources/gobject-introspection/1.39/gobject-introspection-1.39.0.tar.xz -->
 <!-- $ tar xvf gobject-introspection-1.39.0.tar.xz -->
@@ -836,7 +786,7 @@ $ popd
 <!-- $ make install -->
 <!-- $ popd -->
 
-- [gettext](http://www.gnu.org/software/gettext/) をインストールします．
+- Install [gettext](http://www.gnu.org/software/gettext/).
 
 ```
 $ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.2.tar.gz
@@ -872,7 +822,7 @@ $ make install
 $ popd
 ```
 
-- [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config) をインストールします．
+- Install [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config).
 
 ```
 $ curl -R -L -O http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
@@ -891,7 +841,7 @@ $ popd
 <!-- ../libtool: line 9517: ./gtk-update-icon-cache.exe: Bad file number -->
 <!-- このように表示される場合は管理者権限で MinGW Shell (MSYS) を実行してビルドしてください．~ -->
 
-- [Poppler](http://poppler.freedesktop.org/) をインストールします．
+- Install [Poppler](http://poppler.freedesktop.org/).
 
 ```
 Poppler は --with-font-configuration=win32 または -DFONT_CONFIGURATION=win32 でビルドすると日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示されます．
