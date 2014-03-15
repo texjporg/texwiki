@@ -9,6 +9,10 @@ pukiwiki: "CMake"
 
 ## [CMake](http://www.cmake.org/) {#w49469c9}
 
+### ChangeLog {#n963ead6}
+
+[http://cmake.org/gitweb?p=cmake.git](http://cmake.org/gitweb?p=cmake.git)
+
 ### Installation {#w0109a3f}
 
 #### MinGW {#t16b8c71}
