@@ -9,6 +9,9 @@ pukiwiki: "GLib"
 
 ## [GLib](https://developer.gnome.org/glib/) {#t89d094a}
 
+- [https://developer.gnome.org/glib/stable/](https://developer.gnome.org/glib/stable/)
+- [https://developer.gnome.org/glib/unstable/](https://developer.gnome.org/glib/unstable/)
+
 ### Installation {#d8092964}
 
 #### MinGW {#s8134160}
