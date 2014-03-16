@@ -196,9 +196,12 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 　　　　　　　　　　　　　　　　　　　　　　　　　　☑ コンパイル前に参考文献を確認・更新<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　☑ コンパイル開始時にメッセージを表示<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　☐ すでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しない<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　標準出力に表示:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　コンパイルの繰り返しの最大数:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 追加の検索パス:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　標準出力に表示:　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ユーザーコマンドに対してのみ　　　　　　　　　　　　　▼\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　コンパイルの繰り返しの最大数:　　　　　　　　<ins>5　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　追加の検索パス:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　ログファイル<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFファイル<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　コマンド($PATH)<br>
 
 <br>
 
