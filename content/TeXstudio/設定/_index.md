@@ -233,27 +233,27 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
+キーボードショートカット　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　エンコーディングの自動検出:　　　☑ LaTeXの解析(%!TeX encoding, inputenc, inputenx)　　　　　☑ 文字の解析<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+構文の強調表示　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 折りたたむ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+コマンドの補完　　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
+文法　　　　　　　　　　　　　　二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
-プレビュー<br>
+プレビュー　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
@@ -302,35 +302,35 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
-メニュー　　　　　　　　　　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span> ☑ 読み込んだファイルのエンコーディングを自動検出する<br>
+メニュー　　　　　　　　　　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 折りたたむ<br>
+ツールバー　　　　　　　　　　エンコーディングの自動検出:　　　☑ LaTeXの解析(%!TeX encoding, inputenc, inputenx)　　　　　☑ 文字の解析<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
-<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+<span style="color:Black;background-color:#DAEAFF;">エディタ 　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　　 ☑ 折りたたむ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定　　　　　 二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+詳細なエディタ設定　　　　　 字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
-構文の強調表示　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
+構文の強調表示　　　　　　　 二重引用符の置換:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[置換しない　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
-カスタム強調表示　　　　　　 ☑ 非テキスト環境でのスペルミスを隠す　　　　　　　　　　　　　☑ 非テキスト環境での文法エラーを隠す<br>
+カスタム強調表示　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ インラインチェック: ← 日本語の文書を作成する場合はチェックをはずす</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　☐ 含まれるファイルを自動的に読み込む<br>
+コマンドの補完　　　　　　　 ☑ 非テキスト環境でのスペルミスを隠す　　　　　　　　　　　　　☑ 非テキスト環境での文法エラーを隠す<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法<br>
+文法　　　　　　　　　　　　　　☐ 含まれるファイルを自動的に読み込む<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
