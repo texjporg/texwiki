@@ -61,8 +61,8 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 
 [Poppler - TeX Wiki](/Poppler/) を参照して Poppler をインストールします．(pdf2htmlEX をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)<br>
 
-<!-- [[Python:http://www.python.org/]] 2.7.5 Windows x86 MSI Installer をダウンロードしてインストールします．~ -->
-<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python:http://www.python.org/]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
+<!-- [[Python]] 2.7.6 Windows x86 MSI Installer をダウンロードしてインストールします．~ -->
+<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
 <!--  -->
 <!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
 <!--  -->
