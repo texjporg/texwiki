@@ -7,7 +7,7 @@ pukiwiki: "Python"
 
 # Python
 
-## [Python](http://www.python.org/) {#ff8ca087}
+## [Python](https://www.python.org/) {#ff8ca087}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/500px-Python_logo_and_wordmark.svg.png" alt="Python" style="float:right">
 
@@ -18,7 +18,7 @@ pukiwiki: "Python"
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 [PythonTeX](/PythonTeX/) などの Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
-- [Python Programming Language &ndash; Official Website](http://www.python.org/)
+- [Welcome to Python.org](https://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
 
 ### 派生版 {#h517ae27}
@@ -90,8 +90,7 @@ $ pacman -S python
 - [Python3.4のensurepip(それとpyvenvの更新)](http://pelican.aodag.jp/python34noensurepipsoretopyvenvnogeng-xin.html)
 - [Python3.4からpipが標準インストーラに！？](http://qiita.com/ksato9700/items/c5a6db9d17ad0770a747)
 
-<!-- Python 3.4 ではインストーラでインストールするときに pip を指定すれば pip, easy_install がインストールされます．~ -->
-
+Python 3.4 では標準で pip, easy_install がインストールされます．<br>
 pip や easy_install を使用して error: Setup script exited with error: Unable to find vcvarsall.bat のエラーが発生する場合は以下のサイトを参考にして設定すれば pip や easy_install が使用できます．<br>
 
 - [pythonでvcvarsall.batエラーが出る。](http://ivis-mynikki.blogspot.jp/2013/03/pythonvcvarsallbat.html)
