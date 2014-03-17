@@ -70,6 +70,7 @@ $ pacman -S ruby
 ### OS X {#def5cf73}
 
 - [Ruby 2.1.0-p0インストール](http://qiita.com/shu_0115/items/ba33b692373f002cc568)
+- [Ruby 2.0.0-p0インストール(Mac OS X 10.8.2)](http://qiita.com/shu_0115/items/05a09296f3633cadac3f)
 
 ### Linux {#pfcca84f}
 
