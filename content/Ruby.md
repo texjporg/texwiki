@@ -16,7 +16,7 @@ pukiwiki: "Ruby"
 ## Ruby 2.1 {#z9c2e043}
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
-convbkmk.rb などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
+[convbkmk.rb](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/convbkmk/convbkmk.rb?view=markup) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
 
 - [https://www.ruby-lang.org/](https://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
