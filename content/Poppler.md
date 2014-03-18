@@ -73,7 +73,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - [GTK+ Download: Windows (32-bit)](http://www.gtk.org/download/win32.php) から
 
 - GLib の Run-time
-    - gettext-runtime の Run-time
+    <!-- - -gettext-runtime の Run-time -->
     - pkg-config の Tool
 
 をダウンロードして，展開後 bin フォルダーにある
@@ -85,7 +85,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
     - libgmodule-2.0-0.dll
     - libgobject-2.0-0.dll
     - libgthread-2.0-0.dll
-    - intl.dll
+        <!-- - -libintl-8.dll -->
     - pkg-config.exe
 
 を C:\MinGW\bin にコピーします．
