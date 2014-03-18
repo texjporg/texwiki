@@ -17,6 +17,8 @@ pukiwiki: "zlib"
 
 #### MinGW {#p5c8b387}
 
+<!-- -http://sourceforge.net/projects/mingw/files/MinGW/Base/zlib/ -->
+
 ```
 $ curl -R -L -O http://zlib.net/zlib-1.2.8.tar.xz
 $ tar xvf zlib-1.2.8.tar.xz
