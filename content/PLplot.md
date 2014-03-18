@@ -14,8 +14,7 @@ pukiwiki: "PLplot"
 PLplot は，グラフを作成するためのライブラリです．<br>
 PDF, EPS, PS, EPS+LaTeX, SVG 形式などに出力可能です．<br>
 
-- [PLplot 公式サイト](http://plplot.sourceforge.net/)
-- [PLplotのメモ](https://sites.google.com/site/makeplplot/)
+- [PLplot Home Page - Main](http://plplot.sourceforge.net/)
 
 ### 動作環境 {#dd55c850}
 
@@ -25,36 +24,31 @@ Windows, OS X, Linux
 
 LGPL
 
+### ChangeLog {#v32a5d09}
+
+[http://sourceforge.net/p/plplot/code/HEAD/log/](http://sourceforge.net/p/plplot/code/HEAD/log/)
+
+### 関連リンク {#s690b648}
+
+- [https://sites.google.com/site/makeplplot/](https://sites.google.com/site/makeplplot/)
+- [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
+- [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
+
 ## インストール {#x8c634ec}
 
 ### Windows {#z2e8dabc}
 
+#### MinGW {#h997502f}
+
 - [Configure PLplot for MinGW/CLI](http://www.miscdebris.net/plplot_wiki/index.php?title=Configure_PLplot_for_MinGW/CLI)
-- [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
-- [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
 
-[Poppler](/Poppler/) を参考にして MinGW, CMake, Qt, zlib, libpng 等をインストールします．
+[Poppler](/Poppler/) を参考にして MinGW, CMake, Qt, pkg-config 等をインストールします．
 
-PLplot で PDF ファイルを作成する場合は [libHaru](http://libharu.org/) または Qt が必要です．<br>
-[libHaru](http://libharu.org/) をインストールします．<br>
-libHaru のビルドには zlib, libpng が必要です．<br>
-
-```
-$ curl --insecure -R -L -o libharu-libharu.tar.gz https://github.com/libharu/libharu/tarball/master
-$ tar xvf libharu-libharu.tar.gz
-$ pushd libharu-libharu*
-$ mkdir build
-$ pushd build
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
-$ make
-$ make install
-$ popd
-$ popd
-```
+PLplot で PDF ファイルを作成する場合は [Qt](/Qt/) または libHaru が必要です．<br>
 
 PLplot をインストールします．<br>
-ada と tcl のバインディングを有効にするとビルド時にエラーが発生したので，-DENABLE_ada=OFF -DENABLE_tcl=OFF としました．<br>
-&#x2d;DPLD_pdf=ON を指定すると，リンク時にエラーが発生したので指定しませんでした．<br>
+&#x2d;DENABLE_d=ON にするとビルド時にエラーが発生したので，&#x2d;DENABLE_d=OFF としました．<br>
+&#x2d;DPLD_pdf=ON にするとビルド時にエラーが発生したので，&#x2d;DPLD_pdf=OFF としました．<br>
 
 ```
 $ curl -R -L -O http://download.sourceforge.net/plplot/plplot-5.10.0.tar.gz
@@ -62,7 +56,7 @@ $ tar xvf plplot-5.10.0.tar.gz
 $ cd plplot-5.10.0
 $ mkdir build
 $ cd build
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_ada=OFF -DENABLE_tcl=OFF -DPLD_ps=ON -DPLD_pstex=ON
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_d=OFF -DPLD_pdf=OFF -DPLD_ps=ON -DPLD_pstex=ON
 $ make
 ```
 
@@ -87,9 +81,17 @@ PLplot でデバイスに出力する場合に wingcc.dll, ps.dll などのド�
 $ export PATH=/mingw/lib/plplot5.10.0/driversd:$PATH
 ```
 
+### Linux {#o3b250b6}
+
+#### Arch Linux {#g5b0198c}
+
+- [https://aur.archlinux.org/packages/plplot/](https://aur.archlinux.org/packages/plplot/)
+
 ## アンインストール {#s2821338}
 
 ### Windows {#j9a86478}
+
+#### MinGW {#d6cfb753}
 
 cmake の Makefile でインストールした場合は，make uninstall が使えないので，アンインストールする場合は，ビルドしたディレクトリで
 
