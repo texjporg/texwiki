@@ -77,7 +77,7 @@ Clang/LLVM でもビルド可能です．<br>
 
 ```
 $ cd /c/w32tex/bin
-$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
 ```
 
 Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -100,7 +100,7 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
  * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Clang/LLVM
- * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+ * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
