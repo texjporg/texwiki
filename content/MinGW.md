@@ -40,6 +40,37 @@ ja_JP.UTF-8
 
 - [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
 
+#### /etc/fstab の作成 {#n8a19258}
+
+/mingw が存在しない場合は /etc/fstab を作成して c:/mingw		/mingw を追加します．<br>
+
+***
+
+- C:\MinGW\msys\1.0\etc\fstab
+
+***
+
+```
+#fstab.sample
+#This is a sample file for /etc/fstab.
+#Currently /etc/fstab is only read during dll initialization.
+#I will eventually watch the directory for changes and reread the file.
+#The line format is simple in that you give the Win32 path, followed by one or
+#more space or tab delimiter, followed by the mount point.  Mount points in 
+#typical UNIX environments must be a physical name on a drive before it can 
+#actually be used as a mount point.  In this implementation the "must exist" 
+#requirement isn't enforced, however, it will be an aide to such programs as 
+#find and readline's tab completion if it does exist.
+
+#You can use a # as the first character on the line as a comment indicator.
+#Blank lines are ignored.
+
+#Win32_Path		Mount_Point
+c:/mingw		/mingw
+```
+
+***
+
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
 - [TeX Liveをmakeしようと試みてみた](http://d.hatena.ne.jp/abenori/20111105)
