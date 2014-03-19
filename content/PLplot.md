@@ -174,18 +174,19 @@ EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定
 ### C++11 {#id0ea4f5}
 
 C++11 でも記述できるそうです → [PLplotの使い方](http://d.hatena.ne.jp/ignisan/20110924/p1)<br>
-リンク先のコードが PLplot 5.10.0 でコンパイルできなかったので修正してみました．<br>
-以下のコードは GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
+リンク先のコードは PLplot 5.10.0 でコンパイルできませんでした．<br>
+以下のコードはリンク先のコードを修正したもので<br>
+GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
 ```
-$ g++ -std=c++11 x03fix.cc -o x03fix `pkg-config --cflags --libs plplotd-c++`
+$ g++ -std=c++11 x03oldfix.cc -o x03oldfix `pkg-config --cflags --libs plplotd-c++`
 ```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03fix.cc -o x03fix `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 x03oldfix.cc -o x03oldfix `pkg-config --cflags --libs plplotd-c++`
 //
 #include <vector>
 #include <memory>
@@ -229,21 +230,24 @@ auto main(int argc, const char** argv) -> int
 
     auto pls = std::make_shared<Plots>(argc, argv);
     pls->plot(num, ax, ay);
-
-    return 0;
 }
 ```
 
 ***
 
 PLplot 5.10.0 では x03.cc は上記のコードから変更されているようです．<br>
-x03.cc を C++11 で記述すると以下のようになります．<br>
+以下のコードは PLplot 5.10.0 の x03.cc を C++11 で記述したもので<br>
+GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
+
+```
+$ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
+```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
 //
 #include <vector>
 #include <memory>
@@ -273,13 +277,13 @@ Polor::Polor( int argc, const char ** argv )
 
 auto Polor::plot() -> void
 {
-    constexpr int max_degree = 361;
-    constexpr int degree = max_degree - 1;
-    constexpr double pi = 4.0 * atan(1.0);
+    constexpr int degree = 360;
+    constexpr int max_degree = degree + 1;
+    constexpr double pi = 4.0 * atan( 1.0 );
     constexpr PLFLT dtr = pi / 180.0;
 
-    auto x0 = std::vector<PLFLT>(max_degree);
-    auto y0 = std::vector<PLFLT>(max_degree);
+    auto x0 = std::vector< PLFLT >( max_degree );
+    auto y0 = std::vector< PLFLT >( max_degree );
 
     for ( auto i = 0; i <= degree; ++i ) {
         x0[i] = std::cos( dtr * i );
@@ -328,8 +332,8 @@ auto Polor::plot() -> void
     }
 
     // Draw the graph.
-    auto x = std::vector<PLFLT>(max_degree);
-    auto y = std::vector<PLFLT>(max_degree);
+    auto x = std::vector< PLFLT >( max_degree );
+    auto y = std::vector< PLFLT >( max_degree );
     for ( auto i = 0; i <= degree; ++i ) {
         r    = std::sin( dtr * ( 5 * i ) );
         x[i] = x0[i] * r;
@@ -340,12 +344,11 @@ auto Polor::plot() -> void
 
     this->col0( 4 );
     this->mtex( "t", 2.0, 0.5, 0.5, "#frPLplot Example 3 - r(#gh)=sin 5#gh" );
-
 }
 
 auto main( int argc, const char ** argv ) -> int
 {
-    auto pls = std::make_shared<Polor>(argc, argv);
+    auto pls = std::make_shared< Polor >( argc, argv );
     pls->plot();
 }
 ```
