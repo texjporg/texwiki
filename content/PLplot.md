@@ -28,6 +28,10 @@ LGPL
 
 [http://sourceforge.net/p/plplot/code/HEAD/log/](http://sourceforge.net/p/plplot/code/HEAD/log/)
 
+### Language Bindings {#eabaaf6a}
+
+[http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/bindings/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/bindings/)
+
 ### Related links {#s690b648}
 
 - [http://www.miscdebris.net/plplot_wiki/](http://www.miscdebris.net/plplot_wiki/)
