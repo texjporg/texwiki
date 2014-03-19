@@ -46,7 +46,7 @@ LGPL
 
 [Poppler](/Poppler/) を参考にして MinGW, CMake, pkg-config 等をインストールします．
 
-PLplot で PDF ファイルを作成する場合は [Qt](/Qt/) または libHaru が必要です．<br>
+PLplot で PDF ファイルを作成する場合は cairo または [Qt](/Qt/) または libHaru が必要です．<br>
 
 PLplot をインストールします．<br>
 &#x2d;DENABLE_d=ON にするとビルド時にエラーが発生したので，&#x2d;DENABLE_d=OFF としました．<br>
@@ -224,7 +224,7 @@ auto main(int argc, const char** argv) -> int
     std::vector<double> ax(num), ay(num);
 
     for (auto i = 0; i < num; ++i) {
-        ax[i] = x_min + (x_max - x_min) / (num - 1.0) * i;
+        ax[i] = x_min + (x_max - x_min) / (static_cast<double>(num) - 1.0) * i;
         ay[i] = ax[i] * ax[i];
     }
 
@@ -235,7 +235,6 @@ auto main(int argc, const char** argv) -> int
 
 ***
 
-PLplot 5.10.0 では x03.cc は上記のコードから変更されているようです．<br>
 以下のコードは PLplot 5.10.0 の x03.cc を C++11 で記述したもので<br>
 GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
