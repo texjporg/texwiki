@@ -7,4 +7,18 @@ pukiwiki: "HarfBuzz"
 
 # HarfBuzz
 
-## [HarfBuzz](http://www.freedesktop.org/wiki/Software/HarfBuzz/) {#s01fae62}
+## [HarfBuzz (حرف‌باز)](http://www.freedesktop.org/wiki/Software/HarfBuzz/) {#s01fae62}
+
+### Installation {#m4b0da8d}
+
+#### MinGW {#q26159fe}
+
+```
+$ curl -R -L -O http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.27.tar.bz2
+$ tar xvf harfbuzz-0.9.27.tar.bz2
+$ pushd harfbuzz-0.9.27
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
