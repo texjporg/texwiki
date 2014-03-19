@@ -17,9 +17,6 @@ pukiwiki: "upTeX,upLaTeX"
 pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
 upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
 また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
-TeX Live 2014 以降はファイル名に漢字が使用できます．( → [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397), [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557))<br>
-texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))<br>
-texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．( → [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))<br>
 
 ### 特徴 {#redf175b}
 
@@ -170,6 +167,24 @@ jsarticle.cls では、uplatex オプションを追加してください。<br>
 ### dviware {#e548f906}
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
+
+### 日本語ファイル名 {#z3e68b41}
+
+TeX Live 2014 以降はファイル名に日本語が使用できます．<br>
+
+- [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
+- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
+- [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
+- \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
+- \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557)
+
+texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．<br>
+
+- [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210)
+
+texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．<br>
+
+- [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
