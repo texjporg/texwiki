@@ -87,7 +87,8 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 ### Code samples {#p78cac37}
 
-[http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/)
+- [http://plplot.sourceforge.net/examples.php](http://plplot.sourceforge.net/examples.php)
+- [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/)
 
 #### Build on MinGW {#hc1cce0b}
 
@@ -138,7 +139,7 @@ Plotting Options:
 Enter device number or keyword (stream 1): 1
 ```
 
-指定したデバイス番号を入力して Enter を入力すると指定したデバイスに結果が出力されます．<br>
+デバイス番号を入力して Enter を入力すると指定したデバイスに結果が出力されます．<br>
 
 コマンドライン引数からも指定できます．
 
@@ -188,7 +189,7 @@ $ g++ -std=c++11 x03fix.cc -o x03fix `pkg-config --cflags --libs plplotd-c++`
 //
 #include <vector>
 #include <memory>
-#include "plstream.h"
+#include <plstream.h>
 
 class Plots : public plstream {
 public:
@@ -230,6 +231,122 @@ auto main(int argc, const char** argv) -> int
     pls->plot(num, ax, ay);
 
     return 0;
+}
+```
+
+***
+
+PLplot 5.10.0 では x03.cc は上記のコードから変更されているようです．<br>
+x03.cc を C++11 で記述すると以下のようになります．<br>
+
+***
+
+```
+//
+// $ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+//
+#include <vector>
+#include <memory>
+#include <cmath>
+#include <cstdio>
+#include <plstream.h>
+
+class Polor : public plstream
+{
+public:
+    explicit Polor( int, const char ** );
+    auto plot() -> void;
+};
+
+Polor::Polor( int argc, const char ** argv )
+{
+    // Parse and process command line arguments.
+    this->parseopts( &argc, argv, PL_PARSE_FULL | PL_PARSE_SKIP );
+
+    // Set orientation to portrait - note not all device drivers
+    // support this, in particular most interactive drivers do not.
+    this->sori( 1 );
+
+    // Initialize PLplot.
+    this->init();
+}
+
+auto Polor::plot() -> void
+{
+    constexpr int max_degree = 361;
+    constexpr int degree = max_degree - 1;
+    constexpr double pi = 4.0 * atan(1.0);
+    constexpr PLFLT dtr = pi / 180.0;
+
+    auto x0 = std::vector<PLFLT>(max_degree);
+    auto y0 = std::vector<PLFLT>(max_degree);
+
+    for ( auto i = 0; i <= degree; ++i ) {
+        x0[i] = std::cos( dtr * i );
+        y0[i] = std::sin( dtr * i );
+    }
+    // Set up viewport and window, but do not draw box.
+    this->env( -1.3, 1.3, -1.3, 1.3, 1, -2 );
+
+    // Draw circles for polar grid
+    for ( auto i = 1; i <= 10; ++i ) {
+        this->arc( 0.0, 0.0, 0.1 * i, 0.1 * i, 0.0, static_cast< double >( degree ), 0.0, 0 );
+    }
+
+    this->col0( 2 );
+
+    char text[4] = "";
+    PLFLT theta, dx, dy, r, offset;
+    for ( auto i = 0; i <= 11; ++i ) {
+        theta = 30.0 * i;
+        dx    = std::cos( dtr * theta );
+        dy    = std::sin( dtr * theta );
+
+        // Draw radial spokes for polar grid.
+        this->join( 0.0, 0.0, dx, dy );
+        std::sprintf( text, "%d", static_cast< int >( std::round( theta ) ) );
+
+        // Write labels for angle.
+
+        if ( theta < 9.99 ) {
+            offset = 0.45;
+        }
+        else if ( theta < 99.9 ) {
+            offset = 0.30;
+        }
+        else {
+            offset = 0.15;
+        }
+
+        //Slightly off zero to avoid floating point logic flips at 90 and 270 deg.
+        if ( dx >= -0.00001 ) {
+            this->ptex( dx, dy, dx, dy, -offset, text );
+        }
+        else {
+            this->ptex( dx, dy, -dx, -dy, 1. + offset, text );
+        }
+    }
+
+    // Draw the graph.
+    auto x = std::vector<PLFLT>(max_degree);
+    auto y = std::vector<PLFLT>(max_degree);
+    for ( auto i = 0; i <= degree; ++i ) {
+        r    = std::sin( dtr * ( 5 * i ) );
+        x[i] = x0[i] * r;
+        y[i] = y0[i] * r;
+    }
+    this->col0( 3 );
+    this->line( max_degree, x.data(), y.data() );
+
+    this->col0( 4 );
+    this->mtex( "t", 2.0, 0.5, 0.5, "#frPLplot Example 3 - r(#gh)=sin 5#gh" );
+
+}
+
+auto main( int argc, const char ** argv ) -> int
+{
+    auto pls = std::make_shared<Polor>(argc, argv);
+    pls->plot();
 }
 ```
 
