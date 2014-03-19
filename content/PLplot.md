@@ -9,14 +9,14 @@ pukiwiki: "PLplot"
 
 ## [PLplot](http://plplot.sourceforge.net/) {#tc328e7c}
 
-## PLplot とは {#r3877799}
+## Summary {#r3877799}
 
 PLplot は，グラフを作成するためのライブラリです．<br>
 PDF, EPS, PS, EPS+LaTeX, SVG 形式などに出力可能です．<br>
 
 - [PLplot Home Page - Main](http://plplot.sourceforge.net/)
 
-### 動作環境 {#dd55c850}
+### System requirements {#dd55c850}
 
 Windows, OS X, Linux
 
@@ -28,13 +28,15 @@ LGPL
 
 [http://sourceforge.net/p/plplot/code/HEAD/log/](http://sourceforge.net/p/plplot/code/HEAD/log/)
 
-### 関連リンク {#s690b648}
+### Related links {#s690b648}
 
+- [http://www.miscdebris.net/plplot_wiki/](http://www.miscdebris.net/plplot_wiki/)
 - [https://sites.google.com/site/makeplplot/](https://sites.google.com/site/makeplplot/)
+- [PLplot でコマンドライン引数にデータファイルを指定する方法](http://krustf.hateblo.jp/entry/20130310/1362920130)
 - [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
 - [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
 
-## インストール {#x8c634ec}
+## Installation {#x8c634ec}
 
 ### Windows {#z2e8dabc}
 
@@ -67,7 +69,7 @@ $ make install
 
 - [https://aur.archlinux.org/packages/plplot/](https://aur.archlinux.org/packages/plplot/)
 
-## アンインストール {#s2821338}
+## Uninstallation {#s2821338}
 
 ### Windows {#j9a86478}
 
@@ -81,19 +83,18 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 を実行します．
 
-## 使い方 {#qd056acb}
+## Usage {#qd056acb}
 
-### コードサンプル {#p78cac37}
+### Code samples {#p78cac37}
 
 [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/)
 
-#### ビルド {#hc1cce0b}
+#### Build on MinGW {#hc1cce0b}
 
-サンプルをビルドしてみます．
+サンプルをビルドします．
 
 ```
-$ cd /mingw/share/plplot5.10.0/examples/
-$ cd c
+$ cd /mingw/share/plplot5.10.0/examples/c
 $ make
 ```
 
@@ -134,10 +135,10 @@ Plotting Options:
 ```
 
 ```
-Enter device number or keyword: 1
+Enter device number or keyword (stream 1): 1
 ```
 
-サンプルが表示されます．<br>
+指定したデバイス番号を入力して Enter を入力すると指定したデバイスに結果が出力されます．<br>
 
 コマンドライン引数からも指定できます．
 
@@ -176,14 +177,14 @@ C++11 でも記述できるそうです → [PLplotの使い方](http://d.hatena
 以下のコードは GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
 ```
-$ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+$ g++ -std=c++11 x03fix.cc -o x03fix `pkg-config --cflags --libs plplotd-c++`
 ```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 x03fix.cc -o x03fix `pkg-config --cflags --libs plplotd-c++`
 //
 #include <vector>
 #include <memory>
@@ -193,7 +194,7 @@ class Plots : public plstream {
 public:
     explicit Plots(int argc, const char** argv)
     {
-        this->parseopts(&argc, argv, PL_PARSE_FULL);
+        this->parseopts(&argc, argv, PL_PARSE_FULL | PL_PARSE_SKIP);
         this->scolbg(255, 255, 255);
         this->scol0(15, 0, 0, 0);
         // this->sdev("aqt");  // AquaTerm
