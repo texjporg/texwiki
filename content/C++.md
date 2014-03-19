@@ -34,6 +34,7 @@ pukiwiki: "C++"
 - [void\*にdeleteしてもデストラクタが呼ばれない！？](http://okazuki.hatenablog.com/entry/20120204/1328323854)
 - [newしてvoid\*化してdeleteするとはまる！](http://marupeke296.com/CPP_NewVoidDelete.html)
 - [32bit プロセスは 64bit プロセスを見つけられない](http://d.hatena.ne.jp/tt_clown/20110416/1302927489)
+- [C++で大規模な配列追記のパフォーマンス](http://d.hatena.ne.jp/ponkotuy/20111216/1324027752)
 - [http://www.slideshare.net/adankevich/c11-15621074](http://www.slideshare.net/adankevich/c11-15621074)
 - [You cannot override a class (static) constant](https://gist.github.com/MihailJP/4236262)
 - [C++ Advent Calendar 2013 - PARTAKE](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
