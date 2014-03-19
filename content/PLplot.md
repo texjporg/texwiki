@@ -42,7 +42,7 @@ LGPL
 
 - [Configure PLplot for MinGW/CLI](http://www.miscdebris.net/plplot_wiki/index.php?title=Configure_PLplot_for_MinGW/CLI)
 
-[Poppler](/Poppler/) を参考にして MinGW, CMake, Qt, pkg-config 等をインストールします．
+[Poppler](/Poppler/) を参考にして MinGW, CMake, pkg-config 等をインストールします．
 
 PLplot で PDF ファイルを作成する場合は [Qt](/Qt/) または libHaru が必要です．<br>
 
@@ -58,27 +58,7 @@ $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_d=OFF -DPLD_pdf=OFF -DPLD_ps=ON -DPLD_pstex=ON
 $ make
-```
-
-<!--  -->
-<!-- ここで test-drv-info.exe が動作を停止しました (おそらく extqt デバイスのテストでプログラムが落ちた可能性が高い(と予想))． -->
-<!--  -->
-<!-- - --  -->
-<!-- test-drv-info.exe は動作を停止しました -->
-<!-- - --  -->
-<!--  -->
-<!-- もう一度 make をタイプします． -->
-<!-- $ make -->
-
-```
 $ make install
-```
-
-PLplot でデバイスに出力する場合に wingcc.dll, ps.dll などのドライバ (DLL ファイル) が必要になります．<br>
-/mingw/lib/plplot5.10.0/driversd/ にパスを通します．<br>
-
-```
-$ export PATH=/mingw/lib/plplot5.10.0/driversd:$PATH
 ```
 
 ### Linux {#o3b250b6}
@@ -103,7 +83,11 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 
 ## 使い方 {#qd056acb}
 
-### Windows {#hc1cce0b}
+### コードサンプル {#p78cac37}
+
+[http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/examples/)
+
+#### ビルド {#hc1cce0b}
 
 サンプルをビルドしてみます．
 
@@ -111,7 +95,19 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 $ cd /mingw/share/plplot5.10.0/examples/
 $ cd c
 $ make
-$ ./x01c
+```
+
+PLplot でデバイスに出力する場合は wingcc.dll, ps.dll などのドライバ (DLL ファイル) が必要になります．<br>
+/mingw/lib/plplot5.10.0/driversd/ にパスを通します．<br>
+
+```
+$ export PATH=/mingw/lib/plplot5.10.0/driversd:$PATH
+```
+
+サンプルを実行します．<br>
+
+```
+$ ./x00c
 PLplot library version: 5.10.0
 
 Plotting Options:
@@ -141,18 +137,18 @@ Plotting Options:
 Enter device number or keyword: 1
 ```
 
-サンプルが表示されます．
+サンプルが表示されます．<br>
 
 コマンドライン引数からも指定できます．
 
 ```
-./x01c -dev wingcc
+./x00c -dev wingcc
 ```
 
-EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定するか，コマンドラインから以下のようにすると x01c.eps と x01c.eps_t が出力されます．
+EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定するか，コマンドラインから以下のようにすると x00c.eps と x00c.eps_t が出力されます．
 
 ```
-./x01c -dev pstex -o x01c.eps
+./x00c -dev pstex -o x00c.eps
 ```
 
 以下のようにして使用します．
@@ -161,14 +157,79 @@ EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定
 \documentclass{article}
 \usepackage[dvips]{graphicx}
 \begin{document}
-\input{x01c.eps_t}
+\input{x00c.eps_t}
 \end{document}
 ```
 
 コマンドライン引数の詳細は
 
 ```
-./x01c -h
+./x00c -h
 ```
 
 で確認できます．
+
+### C++11 {#id0ea4f5}
+
+C++11 でも記述できるそうです → [PLplotの使い方](http://d.hatena.ne.jp/ignisan/20110924/p1)<br>
+リンク先のコードが PLplot 5.10.0 でコンパイルできなかったので修正してみました．<br>
+以下のコードは GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
+
+```
+$ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+```
+
+***
+
+```
+//
+// $ g++ -std=c++11 x03.cc -o x03 `pkg-config --cflags --libs plplotd-c++`
+//
+#include <vector>
+#include <memory>
+#include "plstream.h"
+
+class Plots : public plstream {
+public:
+    explicit Plots(int argc, const char** argv)
+    {
+        this->parseopts(&argc, argv, PL_PARSE_FULL);
+        this->scolbg(255, 255, 255);
+        this->scol0(15, 0, 0, 0);
+        // this->sdev("aqt");  // AquaTerm
+        this->init();
+    }
+
+    auto plot(int num,
+            const std::vector<double>& ax,
+            const std::vector<double>& ay)
+            -> void
+    {
+        this->col0(15);
+        this->env(-1.3, 1.3, -0.3, 1.3, 1, 1);
+        this->lab("X", "Y", "y=x#u2#d");
+        this->col0(1);
+        this->width(3);
+        this->line(num, &ax[0], &ay[0]);
+    }
+};
+
+auto main(int argc, const char** argv) -> int
+{
+    constexpr double x_min = -1.0, x_max = 1.0;
+    constexpr int num = 30;
+    std::vector<double> ax(num), ay(num);
+
+    for (auto i = 0; i < num; ++i) {
+        ax[i] = x_min + (x_max - x_min) / (num - 1.0) * i;
+        ay[i] = ax[i] * ax[i];
+    }
+
+    auto pls = std::make_shared<Plots>(argc, argv);
+    pls->plot(num, ax, ay);
+
+    return 0;
+}
+```
+
+***
