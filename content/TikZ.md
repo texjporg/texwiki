@@ -124,7 +124,7 @@ texdoc tikz
 独立した環境の中に複雑な（複数の）コマンドを記す場合は
 
 ```
-\begin{tikzpicture}[オプション]
+\begin{tikzpicture}[環境オプション]
 　　コマンド;
 　　コマンド;
 …;
@@ -152,6 +152,15 @@ texdoc tikz
     - \filldraw は \path\[fill, draw\] の短縮形で、パス自身の色と内側の色をそれぞれ別に指定できる <strong>例：\[fill=cyan, draw=blue\]</strong>
 - 描画順
     - 記述された順番に描画される
+- 環境オプション
+    - 座標系を x 倍に拡大縮小するときは \[scale = x\] とする<br>
+        このとき拡大縮小されるのは座標系だけで、<strong>線の太さや文字の大きさは変化しない</strong>
+    - 文字や線の太さも含めて拡大縮小したいときは transform shape を追加して \[scale = x, transform shape\] とすればよいが、すべての要素が適切に拡大縮小されるとは限らない（tikz の作者は画像の拡大縮小は推奨していない）
+        - tikzpicture 環境全体を拡大縮小する別の方法として、全体を \scalebox で囲うやり方もある（縦の倍率は省略可能）
+
+            ```
+            \scalebox{横の倍率}[縦の倍率]{\begin{tikzpicture}...\end{tikzpicture} }  
+            ```
 
 ### PGF/TikZの拡張 {#i2fd58ae}
 
