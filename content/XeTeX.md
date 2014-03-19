@@ -19,14 +19,13 @@ pukiwiki: "XeTeX"
 
 XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
 「ズィーTeX」と読みます．<br>
-TeX Live 2014 以降はファイル名に漢字が使用できます．( → [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158), [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202), \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308), \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314), \[[texlive\] Revision 32700](http://www.tug.org/svn/texlive?view=revision&revision=32700))<br>
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [The XeTeX Archives](http://tug.org/pipermail/xetex/) (TUG)
 - [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
-- [HarfBuzz (حرف‌باز)](http://freedesktop.org/wiki/Software/HarfBuzz) (OpenType レイアウトエンジン)
+- HarfBuzz (OpenType レイアウトエンジン)
 
 ### License {#u72986d4}
 
@@ -120,6 +119,18 @@ XeLaTeX では [BXjscls](/BXjscls/) が使用可能です．<br>
 #### [xeCJK/ZXjatype](/xeCJK/) {#ref20094}
 
 XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．<br>
+
+#### 日本語ファイル名 {#k0e1d513}
+
+TeX Live 2014 以降はファイル名に日本語が使用できます．<br>
+
+- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
+- [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
+- \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
+- \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314)
+- \[[texlive\] Revision 32700](http://www.tug.org/svn/texlive?view=revision&revision=32700)
+- [xetex \[WIN32\]: Accept Unicode characters from STDIN on console](http://sourceforge.net/p/xetex/code/ci/3aff45f7aa7128fb489e2f0c78738a365d3dd630/)
+- [xetex \[win32\]: Display output of Unicode characters on console](http://sourceforge.net/p/xetex/code/ci/1da0e01d6a99108f284953aac94b4f874bdd997f/)
 
 ## インストール {#p3eca5bb}
 
