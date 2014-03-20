@@ -162,7 +162,7 @@ Plotting Options:
 Enter device number or keyword (stream 1): 1
 ```
 
-デバイス番号を入力して Enter を入力すると指定したデバイスに結果が出力されます．<br>
+デバイス番号またはキーワードを入力して Enter を入力すると指定したデバイスに結果が出力されます．<br>
 
 コマンドライン引数からも指定できます．
 
@@ -216,44 +216,46 @@ $ g++ -std=c++11 x03c++11oldfix.cc -o x03c++11oldfix `pkg-config --cflags --libs
 #include <cstddef>
 #include <plstream.h>
 
+using value_type = double;
+
 class Plots : public plstream {
 public:
-    explicit Plots(int argc, const char** argv)
+    explicit Plots( int argc, const char** argv )
     {
-        this->parseopts(&argc, argv, PL_PARSE_FULL | PL_PARSE_SKIP);
-        this->scolbg(255, 255, 255);
-        this->scol0(15, 0, 0, 0);
+        this->parseopts( &argc, argv, PL_PARSE_FULL | PL_PARSE_SKIP );
+        this->scolbg( 255, 255, 255 );
+        this->scol0( 15, 0, 0, 0 );
         this->init();
     }
 
-    template<typename T, std::size_t N>
+    template < template < typename U, std::size_t N > class T, typename U, std::size_t N >
     auto plot(std::size_t num,
-            const std::array<T, N>& ax,
-            const std::array<T, N>& ay)
+            T< U, N > const & ax,
+            T< U, N > const & ay)
             -> void
     {
-        this->col0(15);
-        this->env(-1.3, 1.3, -0.3, 1.3, 1, 1);
-        this->lab("X", "Y", "y=x#u2#d");
-        this->col0(1);
-        this->width(3);
-        this->line(num, ax.data(), ay.data());
+        this->col0( 15 );
+        this->env( -1.3, 1.3, -0.3, 1.3, 1, 1 );
+        this->lab( "X", "Y", "y=x#u2#d" );
+        this->col0( 1 );
+        this->width( 3 );
+        this->line( num, ax.data(), ay.data() );
     }
 };
 
-auto main(int argc, const char** argv) -> int
+auto main( int argc, const char** argv ) -> int
 {
-    constexpr double x_min = -1.0, x_max = 1.0;
+    constexpr value_type x_min = -1.0, x_max = 1.0;
     constexpr std::size_t num = 30;
-    std::array<double, num> ax, ay;
+    std::array< value_type, num > ax, ay;
 
-    for (auto i = 0; i < num; ++i) {
-        ax[i] = x_min + (x_max - x_min) / (static_cast<double>(num) - 1.0) * i;
+    for ( auto i = 0; i < num; ++i ) {
+        ax[i] = x_min + ( x_max - x_min ) / ( static_cast< value_type >( num ) - 1.0 ) * i;
         ay[i] = ax[i] * ax[i];
     }
 
-    auto pls = std::make_shared<Plots>(argc, argv);
-    pls->plot(num, ax, ay);
+    auto pls = std::make_shared< Plots >( argc, argv );
+    pls->plot( num, ax, ay );
 }
 ```
 
