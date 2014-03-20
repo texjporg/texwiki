@@ -17,6 +17,10 @@ pukiwiki: "Fontconfig"
 
 #### MinGW {#j2ea43a1}
 
+- Install libxml2
+
+- Install Fontconfig
+
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.bz2
 $ tar xvf fontconfig-2.11.0.tar.bz2
