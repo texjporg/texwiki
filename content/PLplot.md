@@ -42,6 +42,10 @@ LGPL
 
 ## Installation {#x8c634ec}
 
+### CMake options {#n5595ff6}
+
+- [CMake options for PLplot - PLplotWiki](http://www.miscdebris.net/plplot_wiki/index.php?title=CMake_options_for_PLplot)
+
 ### Windows {#z2e8dabc}
 
 #### MinGW {#h997502f}
@@ -62,6 +66,11 @@ $ tar xvf plplot-5.10.0.tar.gz
 $ cd plplot-5.10.0
 $ mkdir build
 $ cd build
+```
+
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_d=OFF -DPLD_pdf=OFF -DPLD_ps=ON -DPLD_pstex=ON -DPLD_pdfcairo=ON -DPLD_pscairo=ON -DPLD_svgcairo=ON -DPLD_pngcairo=ON -->
+
+```
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS=ON -DBUILD_TEST=ON -DENABLE_d=OFF -DPLD_pdf=OFF -DPLD_ps=ON -DPLD_pstex=ON
 $ make
 $ make install
@@ -137,6 +146,14 @@ Plotting Options:
  <18> pdfqt      Qt PDF driver
  <19> extqt      External Qt driver
  <20> memqt      Memory Qt driver
+ <21> pdfcairo   Cairo PDF Driver
+ <22> pscairo    Cairo PS Driver
+ <23> epscairo   Cairo EPS Driver
+ <24> svgcairo   Cairo SVG Driver
+ <25> pngcairo   Cairo PNG Driver
+ <26> memcairo   Cairo Memory Driver
+ <27> extcairo   Cairo External Context Driver
+ <28> wincairo   Cairo Microscoft Windows Driver
 ```
 
 ```
