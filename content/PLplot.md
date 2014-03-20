@@ -54,7 +54,7 @@ LGPL
 
 [Poppler](/Poppler/) を参考にして MinGW, CMake, pkg-config 等をインストールします．
 
-PLplot で PDF ファイルを作成する場合は cairo または [Qt](/Qt/) または libHaru が必要です．<br>
+PLplot で PDF ファイルを出力する場合は [Qt](/Qt/) または cairo または libHaru が必要です．<br>
 
 PLplot をインストールします．<br>
 &#x2d;DENABLE_d=ON にするとビルド時にエラーが発生したので，&#x2d;DENABLE_d=OFF としました．<br>
@@ -133,27 +133,29 @@ Plotting Options:
  < 5> pstex      Combined Postscript/LaTeX files
  < 6> null       Null device
  < 7> mem        User-supplied memory device
- < 8> svg        Scalable Vector Graphics (SVG 1.1)
- < 9> pdf        Portable Document Format PDF
- <10> bmpqt      Qt Windows bitmap driver
- <11> jpgqt      Qt jpg driver
- <12> pngqt      Qt png driver
- <13> ppmqt      Qt ppm driver
- <14> tiffqt     Qt tiff driver
- <15> svgqt      Qt SVG driver
- <16> qtwidget   Qt Widget
- <17> epsqt      Qt EPS driver
- <18> pdfqt      Qt PDF driver
- <19> extqt      External Qt driver
- <20> memqt      Memory Qt driver
- <21> pdfcairo   Cairo PDF Driver
- <22> pscairo    Cairo PS Driver
- <23> epscairo   Cairo EPS Driver
- <24> svgcairo   Cairo SVG Driver
- <25> pngcairo   Cairo PNG Driver
- <26> memcairo   Cairo Memory Driver
- <27> extcairo   Cairo External Context Driver
- <28> wincairo   Cairo Microscoft Windows Driver
+ < 8> psttf      PostScript File (monochrome)
+ < 9> psttfc     PostScript File (color)
+ <10> svg        Scalable Vector Graphics (SVG 1.1)
+ <11> pdf        Portable Document Format PDF
+ <12> bmpqt      Qt Windows bitmap driver
+ <13> jpgqt      Qt jpg driver
+ <14> pngqt      Qt png driver
+ <15> ppmqt      Qt ppm driver
+ <16> tiffqt     Qt tiff driver
+ <17> svgqt      Qt SVG driver
+ <18> qtwidget   Qt Widget
+ <19> epsqt      Qt EPS driver
+ <20> pdfqt      Qt PDF driver
+ <21> extqt      External Qt driver
+ <22> memqt      Memory Qt driver
+ <23> pdfcairo   Cairo PDF Driver
+ <24> pscairo    Cairo PS Driver
+ <25> epscairo   Cairo EPS Driver
+ <26> svgcairo   Cairo SVG Driver
+ <27> pngcairo   Cairo PNG Driver
+ <28> memcairo   Cairo Memory Driver
+ <29> extcairo   Cairo External Context Driver
+ <30> wincairo   Cairo Microscoft Windows Driver
 ```
 
 ```
