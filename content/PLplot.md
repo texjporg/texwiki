@@ -183,17 +183,18 @@ C++11 でも記述できるそうです → [PLplotの使い方](http://d.hatena
 GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
 ```
-$ g++ -std=c++11 x03oldfix.cc -o x03oldfix `pkg-config --cflags --libs plplotd-c++`
+$ g++ -std=c++11 x03c++11oldfix.cc -o x03c++11oldfix `pkg-config --cflags --libs plplotd-c++`
 ```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03oldfix.cc -o x03oldfix `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 x03c++11oldfix.cc -o x03c++11oldfix `pkg-config --cflags --libs plplotd-c++`
 //
-#include <vector>
+#include <array>
 #include <memory>
+#include <cstddef>
 #include <plstream.h>
 
 class Plots : public plstream {
@@ -203,13 +204,13 @@ public:
         this->parseopts(&argc, argv, PL_PARSE_FULL | PL_PARSE_SKIP);
         this->scolbg(255, 255, 255);
         this->scol0(15, 0, 0, 0);
-        // this->sdev("aqt");  // AquaTerm
         this->init();
     }
 
-    auto plot(int num,
-            const std::vector<double>& ax,
-            const std::vector<double>& ay)
+    template<typename T, std::size_t N>
+    auto plot(std::size_t num,
+            const std::array<T, N>& ax,
+            const std::array<T, N>& ay)
             -> void
     {
         this->col0(15);
@@ -217,15 +218,15 @@ public:
         this->lab("X", "Y", "y=x#u2#d");
         this->col0(1);
         this->width(3);
-        this->line(num, &ax[0], &ay[0]);
+        this->line(num, ax.data(), ay.data());
     }
 };
 
 auto main(int argc, const char** argv) -> int
 {
     constexpr double x_min = -1.0, x_max = 1.0;
-    constexpr int num = 30;
-    std::vector<double> ax(num), ay(num);
+    constexpr std::size_t num = 30;
+    std::array<double, num> ax, ay;
 
     for (auto i = 0; i < num; ++i) {
         ax[i] = x_min + (x_max - x_min) / (static_cast<double>(num) - 1.0) * i;
@@ -252,7 +253,7 @@ $ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++
 //
 // $ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
 //
-#include <vector>
+#include <array>
 #include <memory>
 #include <cmath>
 #include <cstdio>
@@ -285,13 +286,6 @@ auto Polor::plot() -> void
     constexpr double pi = 4.0 * atan( 1.0 );
     constexpr PLFLT dtr = pi / 180.0;
 
-    auto x0 = std::vector< PLFLT >( max_degree );
-    auto y0 = std::vector< PLFLT >( max_degree );
-
-    for ( auto i = 0; i <= degree; ++i ) {
-        x0[i] = std::cos( dtr * i );
-        y0[i] = std::sin( dtr * i );
-    }
     // Set up viewport and window, but do not draw box.
     this->env( -1.3, 1.3, -1.3, 1.3, 1, -2 );
 
@@ -302,8 +296,9 @@ auto Polor::plot() -> void
 
     this->col0( 2 );
 
-    char text[4] = "";
-    PLFLT theta, dx, dy, r, offset;
+    auto text = std::array< char, 4 >{ "" };
+    PLFLT theta, dx, dy, offset;
+
     for ( auto i = 0; i <= 11; ++i ) {
         theta = 30.0 * i;
         dx    = std::cos( dtr * theta );
@@ -311,7 +306,7 @@ auto Polor::plot() -> void
 
         // Draw radial spokes for polar grid.
         this->join( 0.0, 0.0, dx, dy );
-        std::sprintf( text, "%d", static_cast< int >( std::round( theta ) ) );
+        std::sprintf( text.data(), "%d", static_cast< int >( std::round( theta ) ) );
 
         // Write labels for angle.
 
@@ -325,23 +320,34 @@ auto Polor::plot() -> void
             offset = 0.15;
         }
 
-        //Slightly off zero to avoid floating point logic flips at 90 and 270 deg.
+        // Slightly off zero to avoid floating point logic flips at 90 and 270 deg.
         if ( dx >= -0.00001 ) {
-            this->ptex( dx, dy, dx, dy, -offset, text );
+            this->ptex( dx, dy, dx, dy, -offset, text.data() );
         }
         else {
-            this->ptex( dx, dy, -dx, -dy, 1. + offset, text );
+            this->ptex( dx, dy, -dx, -dy, 1. + offset, text.data() );
         }
     }
 
     // Draw the graph.
-    auto x = std::vector< PLFLT >( max_degree );
-    auto y = std::vector< PLFLT >( max_degree );
+    auto x0 = std::array< PLFLT, max_degree >{};
+    auto y0 = std::array< PLFLT, max_degree >{};
+
+    for ( auto i = 0; i <= degree; ++i ) {
+        x0[i] = std::cos( dtr * i );
+        y0[i] = std::sin( dtr * i );
+    }
+
+    PLFLT r;
+    auto x = std::array< PLFLT, max_degree >{};
+    auto y = std::array< PLFLT, max_degree >{};
+
     for ( auto i = 0; i <= degree; ++i ) {
         r    = std::sin( dtr * ( 5 * i ) );
         x[i] = x0[i] * r;
         y[i] = y0[i] * r;
     }
+
     this->col0( 3 );
     this->line( max_degree, x.data(), y.data() );
 
