@@ -724,7 +724,7 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 ### 図画のみの出力 {#nf2ceec5}
 
 tikz/PGF で作成した図画を含んだソースファイルから、図画のみを別ファイルに抽出できます。<br>
-dvips または pdfTeX を用いると、ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。<br>
+dvips または LuaTeX または pdfTeX を用いると、ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。<br>
 dvipdfmx を用いた場合は、コマンドラインから pdfcrop を最後に適用することで画像の大きさちょうどの pdf を得られます。<br>
 
 - ソースコードに追加記述
