@@ -170,7 +170,7 @@ jsarticle.cls では、uplatex オプションを追加してください。<br>
 
 ### 日本語ファイル名 {#z3e68b41}
 
-TeX Live 2014 以降はファイル名に日本語が使用できます．<br>
+TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．<br>
 
 - [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
 - [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
@@ -185,6 +185,8 @@ texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includeg
 texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．<br>
 
 - [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))
+
+Linux版においてはロケールがUTF-8系であればファイル名に日本語や他言語のUnicode文字が使用できます．<br>
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
