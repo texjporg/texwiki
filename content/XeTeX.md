@@ -122,7 +122,7 @@ XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が
 
 #### 日本語ファイル名 {#k0e1d513}
 
-TeX Live 2014 以降はファイル名に日本語が使用できます．<br>
+TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．<br>
 
 - [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
 - [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
