@@ -44,6 +44,7 @@ pukiwiki: "Haskell"
 - [ファンクタ, アプリカティブ, モナド](https://gist.github.com/kohyama/5856037)
 - [lhs2TeX](http://www.andres-loeh.de/lhs2tex/)
 - [Haskell Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/haskell)
+- [Theorem Prover Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/theorem_prover)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
