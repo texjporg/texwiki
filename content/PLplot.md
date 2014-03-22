@@ -9,14 +9,23 @@ pukiwiki: "PLplot"
 
 ## [PLplot](http://plplot.sourceforge.net/) {#tc328e7c}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ## Summary {#r3877799}
 
-PLplot は，グラフを作成するためのライブラリです．<br>
-PDF, EPS, PS, EPS+LaTeX, SVG 形式などに出力可能です．<br>
+PLplot is a library for creating scientific plots.<br>
 
 - [PLplot Home Page - Main](http://plplot.sourceforge.net/)
 
-### System requirements {#dd55c850}
+Output file formats:<br>
+
+- PDF
+- EPS
+- EPS+LaTeX
+- PS
+- SVG
+
+### System Requirements {#dd55c850}
 
 Windows, OS X, Linux
 
@@ -32,7 +41,7 @@ LGPL
 
 [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/bindings/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/bindings/)
 
-### Related links {#s690b648}
+### Related Links {#s690b648}
 
 - [http://www.miscdebris.net/plplot_wiki/](http://www.miscdebris.net/plplot_wiki/)
 - [https://sites.google.com/site/makeplplot/](https://sites.google.com/site/makeplplot/)
