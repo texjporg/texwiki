@@ -108,7 +108,7 @@ $ sed -e "s/\r$//" install_manifest.txt | sort | uniq | xargs rm
 サンプルをビルドします．
 
 ```
-$ cd /mingw/share/plplot5.10.0/examples/c
+$ cd /mingw/share/plplot5.10.0/examples/c++
 $ make
 ```
 
@@ -122,7 +122,7 @@ $ export PATH=/mingw/lib/plplot5.10.0/driversd:$PATH
 サンプルを実行します．<br>
 
 ```
-$ ./x00c
+$ ./x00
 PLplot library version: 5.10.0
 
 Plotting Options:
@@ -167,13 +167,13 @@ Enter device number or keyword (stream 1): 1
 コマンドライン引数からも指定できます．
 
 ```
-./x00c -dev wingcc
+./x00 -dev wingcc
 ```
 
-EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定するか，コマンドラインから以下のようにすると x00c.eps と x00c.eps_t が出力されます．
+EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定するか，コマンドラインから以下のようにすると x00.eps と x00.eps_t が出力されます．
 
 ```
-./x00c -dev pstex -o x00c.eps
+./x00 -dev pstex -o x00.eps
 ```
 
 以下のようにして使用します．
@@ -182,14 +182,14 @@ EPS+LaTeX 形式で出力したい場合は Plotting Options に pstex を指定
 \documentclass{article}
 \usepackage[dvips]{graphicx}
 \begin{document}
-\input{x00c.eps_t}
+\input{x00.eps_t}
 \end{document}
 ```
 
 コマンドライン引数の詳細は
 
 ```
-./x00c -h
+./x00 -h
 ```
 
 で確認できます．
@@ -202,21 +202,23 @@ C++11 でも記述できるそうです → [PLplotの使い方](http://d.hatena
 GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
 ```
-$ g++ -std=c++11 x03c++11oldfix.cc -o x03c++11oldfix `pkg-config --cflags --libs plplotd-c++`
+$ g++ -std=c++11 -O2 badexample.cc -o badexample `pkg-config --cflags --libs plplotd-c++`
 ```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03c++11oldfix.cc -o x03c++11oldfix `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 -O2 badexample.cc -o badexample `pkg-config --cflags --libs plplotd-c++`
 //
 #include <array>
 #include <memory>
 #include <cstddef>
 #include <plstream.h>
 
-using value_type = double;
+namespace badexample {
+    using value_type = double;
+}
 
 class Plots : public plstream {
 public:
@@ -245,12 +247,12 @@ public:
 
 auto main( int argc, const char** argv ) -> int
 {
-    constexpr value_type x_min = -1.0, x_max = 1.0;
+    constexpr badexample::value_type x_min = -1.0, x_max = 1.0;
     constexpr std::size_t num = 30;
-    std::array< value_type, num > ax, ay;
+    std::array< badexample::value_type, num > ax, ay;
 
     for ( auto i = 0; i < num; ++i ) {
-        ax[i] = x_min + ( x_max - x_min ) / ( static_cast< value_type >( num ) - 1.0 ) * i;
+        ax[i] = x_min + ( x_max - x_min ) / ( static_cast< badexample::value_type >( num ) - 1.0 ) * i;
         ay[i] = ax[i] * ax[i];
     }
 
@@ -265,14 +267,14 @@ auto main( int argc, const char** argv ) -> int
 GCC 4.8.1, PLplot 5.10.0 でビルド，実行できます．<br>
 
 ```
-$ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
+$ g++ -std=c++11 -O2 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
 ```
 
 ***
 
 ```
 //
-// $ g++ -std=c++11 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
+// $ g++ -std=c++11 -O2 x03c++11.cc -o x03c++11 `pkg-config --cflags --libs plplotd-c++`
 //
 #include <array>
 #include <memory>
