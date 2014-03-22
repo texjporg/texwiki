@@ -11,21 +11,20 @@ pukiwiki: "Poppler"
 
 <img src="http://poppler.freedesktop.org/logo.png" alt="poppler" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#fd295383}
 
-Poppler は PDF ファイルを表示するためのライブラリです．<br>
-Poppler は
+Poppler is a library used to render PDF documents.<br>
+
+Programs using Poppler.<br>
 
 <table>
 <tbody>
-<tr><th style="color:#468">統合環境・エディタ</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a></td></tr>
-<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a>, <a href="/qpdfview/">qpdfview</a></td></tr>
+<tr><th style="color:#468">LaTeX editor</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a></td></tr>
+<tr><th style="color:#468">PDF viewer</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a>, <a href="/qpdfview/">qpdfview</a></td></tr>
 </tbody>
 </table>
-
-などで使用されています．<br>
 
 - [Poppler](http://poppler.freedesktop.org/)
 - [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
@@ -34,14 +33,11 @@ Poppler は
 
 [GPLv3](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING3), [GPLv2](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING)
 
-### リリース情報 {#ha3b28ab}
-
-- [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags)
-
 ### ChangeLog {#u62118c7}
 
 - [poppler/poppler - The poppler pdf rendering library](http://cgit.freedesktop.org/poppler/poppler)
-    - [log](http://cgit.freedesktop.org/poppler/poppler/log/)
+    - [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags)
+    - [http://cgit.freedesktop.org/poppler/poppler/log/](http://cgit.freedesktop.org/poppler/poppler/log/)
 
 ### font configuration {#e532ec53}
 
