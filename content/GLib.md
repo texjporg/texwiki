@@ -19,9 +19,9 @@ pukiwiki: "GLib"
 - Install GLib.
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.91.tar.xz
-$ tar xvf glib-2.39.91.tar.xz
-$ pushd glib-2.39.91
+$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.39/glib-2.39.92.tar.xz
+$ tar xvf glib-2.39.92.tar.xz
+$ pushd glib-2.39.92
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
