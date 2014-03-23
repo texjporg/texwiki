@@ -9,6 +9,11 @@ pukiwiki: "HarfBuzz"
 
 ## [HarfBuzz (حرف‌باز)](http://www.freedesktop.org/wiki/Software/HarfBuzz/) {#s01fae62}
 
+### ChangeLog {#gc53d478}
+
+- [http://cgit.freedesktop.org/harfbuzz/](http://cgit.freedesktop.org/harfbuzz/)
+- [https://github.com/behdad/harfbuzz/commits/master](https://github.com/behdad/harfbuzz/commits/master)
+
 ### Installation {#m4b0da8d}
 
 #### MinGW {#q26159fe}
