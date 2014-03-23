@@ -33,8 +33,7 @@ Lua は パワフル・高速・軽量で組み込み可能なスクリプト言
 
 #### LuaJIT {#s3b8296f}
 
-- [LuaJIT](http://luajit.org/)
-- [LuaJITでWindowsアプリ](http://d.hatena.ne.jp/jeg/20130406/1365266391)
+- LuaJIT
 
 ## 関連リンク {#c11edac0}
 
