@@ -24,6 +24,7 @@ Output file formats:<br>
 - EPS+LaTeX
 - PS
 - SVG
+- [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/)
 
 ### System Requirements {#dd55c850}
 
@@ -84,6 +85,12 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DBUILD_SHARED_LIBS
 $ make
 $ make install
 ```
+
+### OS X {#n53ddf8b}
+
+#### Homebrew {#kbdff90a}
+
+- [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/plplot.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/plplot.rb)
 
 ### Linux {#o3b250b6}
 
