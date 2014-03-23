@@ -869,3 +869,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [テンプレート的 LaTeX、再び (1)](http://d.hatena.ne.jp/zrbabbler/20120504/1336153796)
 - [Graphics with PGF and TikZ](http://www.tug.org/pracjourn/2007-1/mertz/)
     - PracTeX journal(2007-1)の記事で、代表的な用法をシンプルに紹介（英文）
+- [BeamerのためのTikZ](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html)
+    - 木構造を表す模式図の作成例
+- [Miffy Code Snipets](http://miffysora.wikidot.com/tikz)
+- [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
+    - TikZによるグラフ作成（折れ線グラフ、棒グラフ）の例
