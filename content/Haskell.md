@@ -45,6 +45,7 @@ pukiwiki: "Haskell"
 - [lhs2TeX](http://www.andres-loeh.de/lhs2tex/)
 - [Haskell Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/haskell)
 - [Theorem Prover Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/theorem_prover)
+- [Haskell for OCaml programmers](http://staff.science.uva.nl/~poss/haskell-for-ocaml-programmers.html)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
