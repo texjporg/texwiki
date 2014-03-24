@@ -7,7 +7,9 @@ pukiwiki: "dvisvgm"
 
 # dvisvgm
 
-## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
+dvisvgm で問題が発生する場合は <strong>dvisvgm を使用せず PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する</strong>方法があります。<br>
+
+## [dvisvgm](http://dvisvgm.sourceforge.net/) → 問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する {#hefd7ca2}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -56,6 +58,15 @@ dvisvgm を使用して SVG ファイルに変換した場合はテキストデ�
 
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
 Inkscape を使用する場合もテキストデータが保持されます．<br>
+
+DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．<br>
+MuPDF の mudraw を使用する場合もテキストデータが保持されます．<br>
+PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+
+```
+
+$ mudraw -o hoge.svg hoge.pdf
+```
 
 DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば PDF ファイルを SVG ファイルに変換できます．<br>
 ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
