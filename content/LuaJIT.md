@@ -15,4 +15,6 @@ pukiwiki: "LuaJIT"
 
 ### Related Links {#w1d96a16}
 
+- [SciLua](http://scilua.org/)
+- [【LuaJIT】たらい回しとフィボナッチでベンチマーク](http://atmarksharp.com/posts/c-lua-javascript-benchmark.html)
 - [LuaJITでWindowsアプリ](http://d.hatena.ne.jp/jeg/20130406/1365266391)
