@@ -7,7 +7,9 @@ pukiwiki: "dvipng"
 
 # dvipng
 
-## [dvipng](http://www.nongnu.org/dvipng/) {#i1384369}
+dvipng で問題が発生する場合は <strong>dvipng を使用せず PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する</strong>方法があります。<br>
+
+## [dvipng](http://www.nongnu.org/dvipng/) → 問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する {#i1384369}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -44,8 +46,14 @@ DVI ファイルを PNG ファイルに変換する場合は
 $ dvipng hoge.dvi
 ```
 
-(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
 PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+
+```
+$ mudraw -o hoge.png hoge.pdf
+```
+
+または
 
 ```
 $ pdftocairo -png hoge.pdf
