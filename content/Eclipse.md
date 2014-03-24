@@ -9,7 +9,7 @@ pukiwiki: "Eclipse"
 
 ## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/3/34/Eclipse-logo.png" alt="Eclipse" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/de/thumb/a/a7/Eclipse_Logo.svg/500px-Eclipse_Logo.svg.png" alt="Eclipse" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -21,6 +21,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](http://www.eclipse.org/)
 - [Eclipse.org Git repositories](http://git.eclipse.org/)
+- [Eclipse - Google+](https://plus.google.com/+Eclipse)
 
 ### 動作環境 {#aae7926e}
 
