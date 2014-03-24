@@ -17,14 +17,13 @@ PLplot is a library for creating scientific plots.<br>
 
 - [PLplot Home Page - Main](http://plplot.sourceforge.net/)
 
-Output file formats:<br>
+Output file formats: -> [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/)
 
 - PDF
 - EPS
 - EPS+LaTeX
 - PS
 - SVG
-- [http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/](http://sourceforge.net/p/plplot/code/HEAD/tree/trunk/drivers/)
 
 ### System Requirements {#dd55c850}
 
