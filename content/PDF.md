@@ -47,4 +47,5 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 
 ### 関連リンク {#j6d79d4c}
 
+- [Open Source PDF Libraries and Tools](http://pdf-house.blogspot.com/)
 - [PDF開発の基礎](http://www.slideshare.net/field-works/pdf-29001511)
