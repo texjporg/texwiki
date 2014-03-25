@@ -31,6 +31,7 @@ pukiwiki: "C"
 - [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
 - [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
 - [C言語機能の比較](http://www.6809.net/tenk/?C%E8%A8%80%E8%AA%9E%E6%A9%9F%E8%83%BD%E3%81%AE%E6%AF%94%E8%BC%83)
+- [C言語で可変個引数を型拘束したい](http://mattn.kaoriya.net/software/lang/c/20140312213057.htm)
 
 ### 処理系 {#d2633a16}
 
