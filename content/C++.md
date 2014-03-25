@@ -20,6 +20,7 @@ pukiwiki: "C++"
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
 - [cpprefjp - C++ Library Reference](https://sites.google.com/site/cpprefjp/)
+    - [コンパイラの実装状況 - cpprefjp - C++ Library Reference](https://sites.google.com/site/cpprefjp/implementation-status)
 - [C++：CodeZine（コードジン）](http://codezine.jp/article/tag/165)
 - [本の虫](http://cpplover.blogspot.jp/)
 - [n次正方行列の逆行列をTeX形式で出力するプログラム](http://nazolab.net/notes/n/145)
@@ -123,7 +124,7 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
 #include <cwchar>
 #include <cerrno>
 
-#if defined _MSC_VER && _MSC_VER <= 1800
+#if defined _MSC_VER
 #define constexpr const
 #endif
 
