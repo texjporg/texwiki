@@ -22,9 +22,9 @@ pukiwiki: "Fontconfig"
 - Install Fontconfig
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.bz2
-$ tar xvf fontconfig-2.11.0.tar.bz2
-$ pushd fontconfig-2.11.0
+$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2
+$ tar xvf fontconfig-2.11.1.tar.bz2
+$ pushd fontconfig-2.11.1
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
