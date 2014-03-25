@@ -101,6 +101,11 @@ func runSumatraPDF() {
         panic(err)
     }
 
+    regCloseKey, err := advapi32.FindProc("RegCloseKey")
+    if err != nil {
+        panic(err)
+    }
+
     pathFileExistsW, err := shlwapi.FindProc("PathFileExistsW")
     if err != nil {
         panic(err)
@@ -130,6 +135,7 @@ func runSumatraPDF() {
         uintptr(0),
         uintptr(syscall.KEY_QUERY_VALUE),
         uintptr(unsafe.Pointer(&subKey)))
+    defer regCloseKey.Call(uintptr(subKey))
 
     if subKey != syscall.Handle(0) {
         regQueryValueExW.Call(
