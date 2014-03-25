@@ -203,16 +203,16 @@ otf パッケージの最新版は otfbeta です。<br>
 　　　　 ∣☑jtex-w32.tar.xz　　　　　　　　　　　　 無い　　　1.0MB　　　　　　∣☐gs906w32full-gpl.exe　　　　　　　　無い　　　10.6MB<br>
 　　　　 ∣☑latex.tar.xz　　　　　　　　　　　　　　　無い　　　6.7MB　　　　　　∣☐gs907w32full-gpl.exe　　　　　　　　無い　　　10.5MB<br>
 　　　　 ∣☑lcdf-typetools-w32.tar.xz　　　　　　無い　　　782KB　　　　　　∣☐gs909w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
-　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑ltxpkgs.tar.xz　　　　　　　　　　　　　　無い　　　185MB　　　　　 ∣☐gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
 　　　　 ∣☑luajittex-w32.tar.xz　　　　　　　　　　無い　　　 3.8MB　　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
-　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　　∣<br>
-　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　 GSview<br>
-　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
-　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
-　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　 ∣<br>
-　　　　 ∣☑newtxpx-boondoxfonts.tar.xz　　　　無い　　　5.0MB<br>
-　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB<br>
+　　　　 ∣☑luatex-w32.tar.xz　　　　　　　　　　　無い　　　 9.0MB　　　　　　∣☑gs912w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☑luatexja.tar.xz　　　　　　　　　　　　　無い　　　2.8MB　　　　　　 ∣☐gs912w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
+　　　　 ∣☑m-tx.tar.xz　　　　　　　　　　　　　　　無い　　　384KB　　　　　　∣<br>
+　　　　 ∣☑makeindex-w32.tar.xz　　　　　　　　 無い　　　203KB　　　　 GSview<br>
+　　　　 ∣☑manual.tar.xz　　　　　　　　　　　　　無い　　　1.3MB　　　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
+　　　　 ∣☑mftools.tar.xz　　　　　　　　　　　　　無い　　　97KB　　　　　　　∣☑gsv50w32.exe　　　　　　　　　　　　無い　　　1.9MB<br>
+　　　　 ∣☑newtxpx-boondoxfonts.tar.xz　　　　無い　　　5.0MB　　　　　　 ∣☐gsv50w64.exe　　　　　　　　　　　　無い　　　2.1MB<br>
+　　　　 ∣☑omegaj-w32.tar.xz　　　　　　　　   　　無い　　　1.0MB　　　　　　 ∣<br>
 　　　　 ∣☑otfbeta.tar.xz　　　　　　　　　　 　　 無い　　　239KB<br>
 　　　　 ∣☑pdftex-w32.tar.xz　　　　　　　　　　　無い　　　8.7MB<br>
 　　　　 ∣☑pgfcontrib.tar.xz　　　　　　　　　　　無い　　　31MB<br>
