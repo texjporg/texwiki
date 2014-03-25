@@ -27,3 +27,4 @@ pukiwiki: "PHP"
 - [徳丸浩の日記](http://blog.tokumaru.org/)
 - [PHP Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/php)
 - [PHP Advent Calendar 2013](http://www.adventar.org/calendars/101)
+- [Hack](http://hacklang.org/)
