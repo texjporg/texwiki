@@ -38,6 +38,10 @@ C++ を参照．<br>
 
 D を参照．<br>
 
+### Go 版 {#af383c2e}
+
+Go を参照．<br>
+
 ### Java 版 {#adf40b65}
 
 Java を参照．<br>
