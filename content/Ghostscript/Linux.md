@@ -13,6 +13,10 @@ pukiwiki: "Ghostscript/Linux"
 
 ### ダウンロード/インストール {#g31ae747}
 
+#### Arch Linux {#icf0081e}
+
+- [https://www.archlinux.org/packages/?q=ghostscript](https://www.archlinux.org/packages/?q=ghostscript)
+
 #### Linux Mint {#eef2e142}
 
 - [http://packages.ubuntu.com/ja/ghostscript](http://packages.ubuntu.com/ja/ghostscript)
@@ -29,10 +33,6 @@ pukiwiki: "Ghostscript/Linux"
 
 - [http://software.opensuse.org/package/ghostscript](http://software.opensuse.org/package/ghostscript)
 
-#### Arch Linux {#icf0081e}
-
-- [https://www.archlinux.org/packages/?q=ghostscript](https://www.archlinux.org/packages/?q=ghostscript)
-
 #### Gentoo Linux {#ze142c19}
 
 - [http://packages.gentoo.org/package/app-text/ghostscript-gpl](http://packages.gentoo.org/package/app-text/ghostscript-gpl)
@@ -43,13 +43,13 @@ pukiwiki: "Ghostscript/Linux"
 - [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
 - [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 
-などから ghostscript-9.10.tar.bz2 を入手します。
+などから ghostscript-9.12.tar.bz2 を入手します。
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ tar xvf ghostscript-9.10.tar.bz2
-$ cd ghostscript-9.10
+$ tar xvf ghostscript-9.12.tar.bz2
+$ cd ghostscript-9.12
 $ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
@@ -89,7 +89,8 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 シンボリックリンクを作っておくと良いでしょう
 （こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
 
-フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
+フォントパスが規定外のところにあると ps2pdf がエラーになるようです。<br>
+これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。<br>
 
 ### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#h0f0fbe0}
 
