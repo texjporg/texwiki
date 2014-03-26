@@ -11,21 +11,22 @@ pukiwiki: "cURL"
 
 ### ChangeLog {#b2bb9f55}
 
-[https://github.com/bagder/curl/commits/master](https://github.com/bagder/curl/commits/master)
+- [http://curl.haxx.se/changes.html](http://curl.haxx.se/changes.html)
+- [https://github.com/bagder/curl/commits/master](https://github.com/bagder/curl/commits/master)
 
 ### Installation {#wbd5fb7a}
 
 #### MinGW {#va108410}
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.35.0.tar.bz2
-$ tar xvf curl-7.35.0.tar.bz2
-$ pushd curl-7.35.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.36.0.tar.bz2
+$ tar xvf curl-7.36.0.tar.bz2
+$ pushd curl-7.36.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.35.0
+  curl version:     7.36.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
