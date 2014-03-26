@@ -43,9 +43,9 @@ Type=Tokyo
 
 [Program]
 TeXbin=C:\w32tex\bin
-dviout=C:\dviout\dviout.exe
-GSmain=C:\gs\gs9.10
-gsview=C:\Program Files (x86)\Ghostgum\gsview\gsview32.exe
+dviout=C:\w32tex\dviout-x64\dviout.exe
+GSmain=C:\gs\gs9.12
+gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
 pdfviewer=C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
 pdfviewertitle=
@@ -95,8 +95,8 @@ Type=Tokyo
 
 [Program]
 TeXbin=C:\w32tex\bin
-dviout=C:\dviout\dviout.exe
-GSmain=C:\gs\gs9.10
+dviout=C:\w32tex\dviout\dviout.exe
+GSmain=C:\gs\gs9.12
 gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
 
 pdfviewer=C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe
