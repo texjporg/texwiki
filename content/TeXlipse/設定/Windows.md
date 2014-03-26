@@ -244,7 +244,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\gs\gs9.10\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2014\bin\win64\ps2pdf.exe</ins> または <ins>C:\texlive\2014\bin\win32\ps2pdf.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\gs\gs9.12\lib\ps2pdf.bat</ins> または <ins>C:\texlive\2014\bin\win64\ps2pdf.exe</ins> または <ins>C:\texlive\2014\bin\win32\ps2pdf.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
@@ -290,7 +290,7 @@ TeX Live または W32TeX がインストールされていれば以下のよう
 　　Makeindex program　　　(C:\texlive\2014\bin\win64\makeindex.exe または C:\texlive\2014\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
 　　Dvips program　　　(C:\texlive\2014\bin\win64\dvips.exe または C:\texlive\2014\bin\win32\dvips.exe または C:\w32tex\bin64\dvips.exe または C:\w32tex\bin\dvips.exe)<br>
 　　Dvipdf program　　　(C:\texlive\2014\bin\win64\dvipdfmx.exe または C:\texlive\2014\bin\win32\dvipdfmx.exe または C:\w32tex\bin64\dvipdfmx.exe または C:\w32tex\bin\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\gs\gs9.10\lib\ps2pdf.bat または C:\texlive\2014\bin\win64\ps2pdf.exe または C:\texlive\2014\bin\win32\ps2pdf.exe)<br>
+　　Ps2pdf program　　　(C:\gs\gs9.12\lib\ps2pdf.bat または C:\texlive\2014\bin\win64\ps2pdf.exe または C:\texlive\2014\bin\win32\ps2pdf.exe)<br>
 　　Makeindex program (nomencl)　　　(C:\texlive\2014\bin\win64\makeindex.exe または C:\texlive\2014\bin\win32\makeindex.exe または C:\w32tex\bin64\makeindex.exe または C:\w32tex\bin\makeindex.exe)<br>
 　　Kpsewhich program　　　(C:\texlive\2014\bin\win64\kpsewhich.exe または C:\texlive\2014\bin\win32\kpsewhich.exe または C:\w32tex\bin64\kpsewhich.exe または C:\w32tex\bin\kpsewhich.exe)<br>
 
