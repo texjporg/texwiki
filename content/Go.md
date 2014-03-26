@@ -14,6 +14,7 @@ pukiwiki: "Go"
 - [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
 - [Wikipedia.ja:Go\_(プログラミング言語)](https://ja.wikipedia.org/wiki/Go_%28%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%29)
 - [http://go.shibu.jp/](http://go.shibu.jp/)
+- [https://github.com/astaxie/build-web-application-with-golang/blob/master/ja/ebook/preface.md](https://github.com/astaxie/build-web-application-with-golang/blob/master/ja/ebook/preface.md)
 - [http://ryochack.hatenablog.com/archive/category/golang](http://ryochack.hatenablog.com/archive/category/golang)
 - [http://golang.org/src/pkg/syscall/syscall_windows.go](http://golang.org/src/pkg/syscall/syscall_windows.go)
 - [https://github.com/lxn/win](https://github.com/lxn/win)
@@ -23,6 +24,23 @@ pukiwiki: "Go"
 - [unsafeでポインタを使って構造体のプライベートフィールドの値を書き換える例。](https://gist.github.com/hnakamur/6648237)
 - [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
 - [Go Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/go)
+
+## インストール {#v5dc7237}
+
+- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+
+### Windows {#a8588e8a}
+
+- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+
+### Linux {#ia995211}
+
+- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+
+#### Arch Linux {#x3280c12}
+
+- [https://www.archlinux.org/packages/community/x86_64/go/](https://www.archlinux.org/packages/community/x86_64/go/)
+- [https://www.archlinux.org/packages/community/i686/go/](https://www.archlinux.org/packages/community/i686/go/)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#u3fb5150}
 
