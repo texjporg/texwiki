@@ -57,6 +57,10 @@ Windows, OS X, Linux
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
 
+### ChangeLog {#zcc7e097}
+
+[https://github.com/SublimeText/LaTeXTools/commits/master](https://github.com/SublimeText/LaTeXTools/commits/master)
+
 ### Windows {#m3e22b6d}
 
 #### ビルドコマンドの設定 {#jbbbbc43}
@@ -115,10 +119,10 @@ LaTeXTools/viewPDF.py を編集します．<br>
 ```
 
 LaTeXTools/jumpToPDF.py を編集します．<br>
-[jumpToPDF.py の 96行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L96)あたりの
+[jumpToPDF.py の 101行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L101)あたりの
 
 ```
-				subprocess.Popen(["SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+				startCommands = ["SumatraPDF.exe","-reuse-instance"]
 ```
 
 を以下のように修正します．
@@ -126,13 +130,13 @@ LaTeXTools/jumpToPDF.py を編集します．<br>
 ■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合<br>
 
 ```
-				subprocess.Popen([r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+				startCommands = [r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance"]
 ```
 
 ■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合<br>
 
 ```
-				subprocess.Popen([r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance","-forward-search", srcfile, str(line), pdffile])
+				startCommands = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance"]
 ```
 
 #### 使い方 {#r3b484f1}
@@ -166,6 +170,11 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
 
+#### 使い方 {#i5f73594}
+
+TeX ファイルを編集して Cmd+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
+PDF ファイルが作成されると Skim で PDF ファイルが表示されて forward search が実行されます．<br>
+
 ### Linux {#x47ef3df}
 
 #### ビルドコマンドの設定 {#z0e9fdec}
@@ -191,6 +200,17 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
+
+#### 使い方 {#rcdb8d80}
+
+TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
+PDF ファイルが作成されると Evince で PDF ファイルが表示されて forward search が実行されます．<br>
+
+## [LaTeXSQ](https://github.com/randy3k/LaTeXSQ) <a id="latexsq"></a> {#xcd64fdd}
+
+### ChangeLog {#zc1e6581}
+
+[https://github.com/randy3k/LaTeXSQ/commits/master](https://github.com/randy3k/LaTeXSQ/commits/master)
 
 ## SumatraPDF との連携 {#hf07fc30}
 
@@ -241,27 +261,28 @@ LaTeXTools を使用している場合は Ctrl+左クリック を実行する�
 ### Windows {#m51226c8}
 
 - [Sublime Text 3 導入手順 (Windows7)](http://nanoway.net/pc/sublime-text-3)
-- \[[Windows\] Sublime Text 2 で LaTeX のコンパイル](http://gymnagisane.blog.fc2.com/blog-entry-170.html)
-- [Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理](http://hagetak.hatenablog.com/entry/2014/01/05/180432)
-- [SublimeText3でのLaTeX環境設定方法](http://hagetak.hatenablog.com/entry/2013/10/01/002830)
-- [Windows + sublime text2 + pLatexの環境設定](http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex)
-- [Sublime Text2でLaTeX](http://yanoshi.hatenablog.jp/entry/2013/09/17/190954)
-- [Sublime Text 2 で LaTeX on Windows](http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html)
+    <!-- -[[[Windows] Sublime Text 2 で LaTeX のコンパイル:http://gymnagisane.blog.fc2.com/blog-entry-170.html]] -->
+    <!-- -[[Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理:http://hagetak.hatenablog.com/entry/2014/01/05/180432]] -->
+    <!-- -[[SublimeText3でのLaTeX環境設定方法:http://hagetak.hatenablog.com/entry/2013/10/01/002830]] -->
+    <!-- -[[Windows + sublime text2 + pLatexの環境設定:http://yshtak.tumblr.com/post/65763928976/windows-sublime-text2-platex]] -->
+    <!-- -[[Sublime Text2でLaTeX:http://yanoshi.hatenablog.jp/entry/2013/09/17/190954]] -->
+    <!-- -[[Sublime Text 2 で LaTeX on Windows:http://ichiro-maruta.blogspot.jp/2013/01/sublime-text-2-latex.html]] -->
 
 ### OS X {#d13b8a86}
 
 - [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
-- [Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks](http://yusuke0.hatenablog.com/entry/2013/10/29/230314)
-- [LaTeX on Sublime Text 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
-- [sublime text 2でTeXできるようにしたときのメモ](http://myy.hatenablog.com/entry/2013/04/12/203612)
-- [Sublime Text2 で(p)LaTeX文書を扱う](http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
-- [Making your first PDF with LaTeX and Sublime Text 2 for Mac](http://economistry.com/2013/01/installing-and-using-latex-for-mac/)
-- [Sublime Text 2のTeXビルドシステム](http://www35.atpages.jp/shocker/memoRANDOM/Misc/Misc_index.php)
-- [Sublime Text2を使ってTexを書いてコンパイルまでする。](https://gist.github.com/4482213)
-- [Soda Theme](https://github.com/buymeasoda/soda-theme)
+- [やっとやる気になったのでSublimeTextでTeXの設定をした](http://namaegaukabanai.wordpress.com/2014/03/22/sublimetext2%E3%81%A7tex%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%97%E3%81%9F/)
+    <!-- -[[Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks:http://yusuke0.hatenablog.com/entry/2013/10/29/230314]] -->
+    <!-- -[[LaTeX on Sublime Text 2:http://izumin.hateblo.jp/entry/2013/05/09/230731]] -->
+    <!-- -[[sublime text 2でTeXできるようにしたときのメモ:http://myy.hatenablog.com/entry/2013/04/12/203612]] -->
+    <!-- -[[Sublime Text2 で(p)LaTeX文書を扱う:http://wiki.livedoor.jp/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad]] -->
+    <!-- -[[Making your first PDF with LaTeX and Sublime Text 2 for Mac:http://economistry.com/2013/01/installing-and-using-latex-for-mac/]] -->
+    <!-- -[[Sublime Text 2のTeXビルドシステム:http://www35.atpages.jp/shocker/memoRANDOM/Misc/Misc_index.php]] -->
+    <!-- -[[Sublime Text2を使ってTexを書いてコンパイルまでする。:https://gist.github.com/4482213]] -->
+    <!-- -[[Soda Theme:https://github.com/buymeasoda/soda-theme]] -->
 
 ### Linux {#r2805e10}
 
 - [Sublime Text 2をLinux MintやUbuntuでPPAからインストールする](http://blog.lindwurm.biz/2013/04/how-to-install-sublime.html)
-- [Sublime Text 2 で LaTeX するまでのメモ](http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/)
-- [Sublime Text 2のプラグインOpen With Vimを書いてみた](http://d.hatena.ne.jp/itiut/20111229/1325138744)
+    <!-- -[[Sublime Text 2 で LaTeX するまでのメモ:http://skalldan.wordpress.com/2012/11/23/sublime-text-2-%E3%81%A7-latex-%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%A1%E3%83%A2/]] -->
+    <!-- -[[Sublime Text 2のプラグインOpen With Vimを書いてみた:http://d.hatena.ne.jp/itiut/20111229/1325138744]] -->
