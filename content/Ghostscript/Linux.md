@@ -43,13 +43,13 @@ pukiwiki: "Ghostscript/Linux"
 - [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
 - [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 
-などから ghostscript-9.12.tar.bz2 を入手します。
+などから ghostscript-9.14.tar.bz2 を入手します。
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ tar xvf ghostscript-9.12.tar.bz2
-$ cd ghostscript-9.12
+$ tar xvf ghostscript-9.14.tar.bz2
+$ cd ghostscript-9.14
 $ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
