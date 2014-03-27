@@ -23,7 +23,7 @@ Happy は TeX を便利に使うためのスクリプトです．<br>
 
 ### 動作環境 {#l8517280}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ## HappyTeX {#la331529}
 
@@ -44,7 +44,7 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin
 dviout=C:\w32tex\dviout-x64\dviout.exe
-GSmain=C:\gs\gs9.12
+GSmain=C:\gs\gs9.14
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
 pdfviewer=C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
@@ -96,7 +96,7 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin
 dviout=C:\w32tex\dviout\dviout.exe
-GSmain=C:\gs\gs9.12
+GSmain=C:\gs\gs9.14
 gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
 
 pdfviewer=C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe
