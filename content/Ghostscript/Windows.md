@@ -30,9 +30,9 @@ TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語�
 
 ### 注意点 {#de072348}
 
-#### Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
+#### Ghostscript 9.12 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
 
-Ghostscript 9.10 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
+Ghostscript 9.12 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
 
 ```
 PS C:\Users\$Env:USERNAME> ps2pdf.bat "予定.ps"
@@ -46,7 +46,7 @@ Dictionary stack:
    --dict:1186/1684(ro)(G)--   --dict:0/20(G)--   --dict:79/200(L)--
 Current allocation mode is local
 Last OS error: No such file or directory
-GPL Ghostscript 9.10: Unrecoverable error, exit code 1
+GPL Ghostscript 9.12: Unrecoverable error, exit code 1
 ```
 
 rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます．<br>
@@ -84,9 +84,9 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 #### 角藤版 Ghostscript {#sbee10cb}
 
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/gs/](http://ftp.kddilabs.jp/TeX/ptex-win32/gs/)
-- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
@@ -121,7 +121,7 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 角藤版 Ghoststscript であるならば，デフォルトの Search Path の関係から C:\gs\gs9.12 にインストールしておくのがおすすめです．<br>
 Ghostscript は好きな場所にインストールすることができます．<br>
 C:\gs でも問題ありません．<br>
-Windows 8.1, 8, 7, Vista の場合には C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので C:\ にファイルをコピー・移動する場合は注意が必要です．<br>
+C:\ に直接ファイルをコピー・移動する場合は管理者権限が必要になるので C:\ にファイルをコピー・移動する場合は注意が必要です．<br>
 また，日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難です．<br>
 なお，歴史的な理由等から gs\gs9.12 などというフォルダーにインストールされることがほとんどです．<br>
 その関係から，様々な解説ではこの gs\gs9.12 などといったフォルダー構造を仮定していることが多いということを理解しておいてください．<br>
@@ -135,7 +135,7 @@ ASCII 以外の文字（日本語など）を使っていると，Ghostscript �
 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
 ASCII 以外の文字が使われてしまうことが原因です。<br>
 環境変数 TEMP のデフォルトは
-Windows 8.1, 8, 7, Vista の場合は %USERPROFILE%\AppData\Local\Temp
+%USERPROFILE%\AppData\Local\Temp
 (&cong; C:\Users\\%USERNAME%\AppData\Local\Temp)
 に設定されています．<br>
 環境変数 TEMP を ASCII 文字だけで設定します。（例えば
