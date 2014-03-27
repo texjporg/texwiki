@@ -248,7 +248,7 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 入手してください。何故ならば、64-bit 用アーカイブには、バイナリだけしか<br>
 入っていないからです。<br>
 また、64-bit バイナリは、Ghostscript が必要な場合、64-bit の Ghostscript<br>
-を使用するようになっていますから、64-bit の Ghostscript (例えば gs912w64full-gpl.exe)<br>
+を使用するようになっていますから、64-bit の Ghostscript (例えば gs914w64full-gpl.exe)<br>
 をインストールしておいて下さい。<br>
 頻繁に更新されていますのでバージョン番号は下と異なるかもしれません。<br>
 
