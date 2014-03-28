@@ -13,7 +13,7 @@ pukiwiki: "Linux/Arch Linux"
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Archlinux-official-fullcolour.svg/500px-Archlinux-official-fullcolour.svg.png" alt="Arch Linux" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Arch Linux とは {#lc2ea000}
 
