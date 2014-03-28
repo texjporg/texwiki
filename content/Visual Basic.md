@@ -11,7 +11,7 @@ pukiwiki: "Visual Basic"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## VB {#oa25d360}
+## Summary {#oa25d360}
 
 - [http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx)
