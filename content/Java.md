@@ -11,6 +11,8 @@ pukiwiki: "Java"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Java_logo_and_wordmark.svg/200px-Java_logo_and_wordmark.svg.png" alt="Java" style="float:right">
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ## Java 8 {#e1088309}
 
 - [http://java.com/](http://java.com/)
