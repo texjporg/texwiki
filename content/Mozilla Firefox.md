@@ -11,7 +11,7 @@ pukiwiki: "Mozilla Firefox"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png" alt="Mozilla Firefox" width="256" height="256" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Mozilla Firefox とは {#if26ee34}
 
