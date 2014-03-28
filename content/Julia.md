@@ -11,7 +11,7 @@ pukiwiki: "Julia"
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/b/be/Julia_%28programming_language%29_logo.png/320px-Julia_%28programming_language%29_logo.png" alt="Julia" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### Julia とは {#lf53506c}
 
