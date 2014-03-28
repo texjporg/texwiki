@@ -9,7 +9,7 @@ pukiwiki: "LuaJITTeX"
 
 ## [LuaJITTeX](https://foundry.supelec.fr/projects/luajittex/) {#y53144a3}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## LuaJITTeX とは {#u3c93cbf}
 
