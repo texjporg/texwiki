@@ -9,7 +9,7 @@ pukiwiki: "upTeX,upLaTeX"
 
 ## e-upTeX {#t3be9c34}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## upTeX, upLaTeXとは {#ge195750}
 
