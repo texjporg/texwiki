@@ -9,7 +9,7 @@ pukiwiki: "dvips"
 
 ## dvips {#y40d302b}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dvips とは {#lb7ddcdb}
 
@@ -30,11 +30,12 @@ dvips は DVI ファイルを PS ファイルに変換するソフトウェア�
 ### dvips の用紙サイズ指定 {#b1d8723b}
 
 標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize
-には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。この用紙設定コマンドが解釈不可能な場合には単に無視されます。
+には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。<br>
+この用紙設定コマンドが解釈不可能な場合には単に無視されます。<br>
 
 レターサイズにするには dvips に -t letter というオプションをつけて実行します。
 
-私の [新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/) でたとえば
+私の [新ドキュメントクラス](/jsclasses/) でたとえば
 
 ```
 \documentclass[uplatex,papersize,a4paper]{jsarticle}
@@ -110,7 +111,7 @@ papersize=用紙の幅,用紙の高さ
 ```
 
 ここで dvi ファイル内で papersize
-を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら a4 が選ばれます (1bp = 1/72 インチ)。
+を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら a4 が選ばれます (1bp = 1/72 インチ)。<br>
 これは &#x25;&#x25;BoundingBox を210mm×297mmにし，
 
 ```
@@ -128,7 +129,8 @@ ifelse
 %%EndPaperSize
 ```
 
-を出力します。従って Distiller で PDF
+を出力します。<br>
+従って Distiller で PDF
 に変換する際には正しく A4 サイズになります。
 
 また，257mm×364mmに±5bpの誤差で一致するなら jisb4
@@ -149,8 +151,8 @@ ifelse
 %%EndPaperSize
 ```
 
-という6行を出力します。
-従って PDF に変換した際に正しく JIS B4 サイズになります。
+という6行を出力します。<br>
+従って PDF に変換した際に正しく JIS B4 サイズになります。<br>
 
 papersize が 5bp の誤差範囲内でどの項目にも一致しないなら，最後の unknown
 が選ばれ，
