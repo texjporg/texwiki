@@ -11,7 +11,7 @@ dvipng で問題が発生する場合は <strong>dvipng を使用せず PDF フ�
 
 ## [dvipng](http://www.nongnu.org/dvipng/) → 問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する {#i1384369}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dvipngとは？ {#wd523196}
 
