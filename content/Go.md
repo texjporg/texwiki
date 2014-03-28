@@ -11,7 +11,7 @@ pukiwiki: "Go"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Go 1.2.1 {#hb43659d}
+## Summary {#hb43659d}
 
 - [The Go Programming Language](http://golang.org/)
 - [https://code.google.com/p/go/](https://code.google.com/p/go/)
