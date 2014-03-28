@@ -11,7 +11,7 @@ dvisvgm で問題が発生する場合は <strong>dvisvgm を使用せず PDF �
 
 ## [dvisvgm](http://dvisvgm.sourceforge.net/) → 問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する {#hefd7ca2}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dvisvgm とは {#xb898030}
 
