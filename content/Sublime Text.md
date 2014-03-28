@@ -69,6 +69,8 @@ LaTeXTools を入力して LaTeXTools を選択します．<br>
 
 ### 注意点 {#ua451899}
 
+#### LaTeXTools.sublime-settings {#l8dc04fb}
+
 LaTeXTools.sublime-settings が存在しない状態で TeX ファイルをビルドしようとすると<br>
 以下の文章が表示されてビルドできません．<br>
 
@@ -308,6 +310,7 @@ LaTeXTools を使用している場合は Ctrl+左クリック を実行する�
 
 ### OS X {#d13b8a86}
 
+- [【2014年版】『MacTex 2013』と『Sublime Text 2』でpLaTeX環境をつくる](http://www.moxbit.com/2014/03/mac-tex-st2-latex-2014.html)
 - [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
 - [やっとやる気になったのでSublimeTextでTeXの設定をした](http://namaegaukabanai.wordpress.com/2014/03/22/sublimetext2%E3%81%A7tex%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%97%E3%81%9F/)
     <!-- -[[Mac Sublime Text2で Tex 初歩の導入から　OS X Mavericks:http://yusuke0.hatenablog.com/entry/2013/10/29/230314]] -->
