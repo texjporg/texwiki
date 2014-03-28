@@ -10,7 +10,7 @@ pukiwiki: "dvipdfmx"
 
 ## [dvipdfmx/xdvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dvipdfmx/xdvipdfmx とは {#ia9746cb}
 
