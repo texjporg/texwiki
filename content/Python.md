@@ -13,7 +13,7 @@ pukiwiki: "Python"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Python 3.4 {#d9180565}
+## Summary {#d9180565}
 
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 [PythonTeX](/PythonTeX/) などの Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
