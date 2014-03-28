@@ -13,7 +13,7 @@ pukiwiki: "Ruby"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Ruby 2.1 {#z9c2e043}
+## Summary {#z9c2e043}
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
 [convbkmk.rb](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/convbkmk/convbkmk.rb?view=markup) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
