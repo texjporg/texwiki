@@ -13,7 +13,7 @@ pukiwiki: "C Sharp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## C# 6.0, C# 5.0 {#h89884a4}
+## Summary {#h89884a4}
 
 - [http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/kx37x362.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx)
