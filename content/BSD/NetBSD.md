@@ -13,7 +13,7 @@ pukiwiki: "BSD/NetBSD"
 
 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/5/5c/NetBSD.svg/200px-NetBSD.svg.png" alt="NetBSD" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## NetBSD とは {#mb5f216a}
 
