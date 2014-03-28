@@ -13,7 +13,7 @@ pukiwiki: "Linux/Gentoo Linux"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gentoo_Linux_logo_matte.svg/200px-Gentoo_Linux_logo_matte.svg.png" alt="Gentoo" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Gentoo Linux とは {#gdebd34f}
 
