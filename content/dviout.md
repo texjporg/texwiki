@@ -564,6 +564,7 @@ dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化され�
 - upTeX のフォントと dviout ([qa:51135](https://okumuralab.org/~okumura/texfaq/qa/51135.html), [qa:51137](https://okumuralab.org/~okumura/texfaq/qa/51137.html))
 - upTeX のフォントと dviout (再検討) ([qa:51610](https://okumuralab.org/~okumura/texfaq/qa/51610.html))
 - Re: dvipng と日本語 ([qa:51705](https://okumuralab.org/~okumura/texfaq/qa/51705.html))
+- uplatexのdvi表示(表罫線)について ([qa:55450](https://okumuralab.org/~okumura/texfaq/qa/55450.html), [qa:55452](https://okumuralab.org/~okumura/texfaq/qa/55452.html), [qa:55453](https://okumuralab.org/~okumura/texfaq/qa/55453.html), [qa:55454](https://okumuralab.org/~okumura/texfaq/qa/55454.html), [qa:55456](https://okumuralab.org/~okumura/texfaq/qa/55456.html))
 - upLaTeXを使おう \[電脳世界の奥底にて\] の中の [dvioutについて](http://zrbabbler.sp.land.to/uplatex.html#ssec-install-dviout)
 - [uptex, uplatex](http://d.hatena.ne.jp/gcg00467/20101223#1293103329)
 - [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】#upTeX/upLaTeX を利用する場合の設定](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml#UPTEX)
