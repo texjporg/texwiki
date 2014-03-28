@@ -15,7 +15,7 @@ pukiwiki: "Lua"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Lua とは {#b2872967}
+## Summary {#b2872967}
 
 Lua は パワフル・高速・軽量で組み込み可能なスクリプト言語です．
 
