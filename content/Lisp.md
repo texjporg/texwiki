@@ -9,7 +9,7 @@ pukiwiki: "Lisp"
 
 ## Lisp {#g48aead2}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Lisp {#ge8108db}
 
