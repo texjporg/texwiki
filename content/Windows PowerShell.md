@@ -9,9 +9,9 @@ pukiwiki: "Windows PowerShell"
 
 ## [Windows PowerShell](http://www.microsoft.com/powershell) {#q8f27306}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Windows PowerShell とは {#p39685d9}
+## Summary {#p39685d9}
 
 Windows PowerShell はコマンドラインシェルまたはオブジェクト指向プログラミングが可能なスクリプト言語です．
 
