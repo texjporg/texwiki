@@ -11,7 +11,7 @@ pukiwiki: "D"
 
 <img src="http://dlang.org/images/d3.png" alt="D" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## D 2.0 {#m0ebe189}
 
