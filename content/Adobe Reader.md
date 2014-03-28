@@ -11,7 +11,7 @@ pukiwiki: "Adobe Reader"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/1/1a/Adobe_Reader_XI_icon.png" alt="Adobe Reader" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Adobe Reader とは {#t103678c}
 
