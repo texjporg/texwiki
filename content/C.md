@@ -15,7 +15,7 @@ pukiwiki: "C"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## C11 {#k4c5d2ad}
+## Summary {#k4c5d2ad}
 
 - [Wikipedia.ja:C言語](https://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
