@@ -13,7 +13,7 @@ pukiwiki: "Lua"
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lua-logo-nolabel.svg/240px-Lua-logo-nolabel.svg.png,right,around,nolink,Lua) -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Lua とは {#b2872967}
 
