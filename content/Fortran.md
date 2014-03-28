@@ -11,7 +11,7 @@ pukiwiki: "Fortran"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Fortran 2008, Fortran 2003 {#o355751c}
 
