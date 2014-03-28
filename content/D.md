@@ -13,7 +13,7 @@ pukiwiki: "D"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## D 2.0 {#m0ebe189}
+## Summary {#m0ebe189}
 
 - [http://dlang.org/](http://dlang.org/)
     - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
