@@ -11,7 +11,7 @@ pukiwiki: "Okular"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/200px-KDE-graphics-viewer-document.svg.png" alt="Okular" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Okular とは {#jde0a0e5}
 
