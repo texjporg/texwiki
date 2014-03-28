@@ -13,7 +13,7 @@ pukiwiki: "Java"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Java 8 {#e1088309}
+## Summary {#e1088309}
 
 - [http://java.com/](http://java.com/)
 - [JDKのインストール(Windows)と Java 関連用語の説明](http://yohshiy.blog.fc2.com/blog-entry-226.html)
