@@ -11,7 +11,7 @@ pukiwiki: "Perl"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/200px-Camelia.svg.png" alt="Perl" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Perl 6 {#xd216707}
 
