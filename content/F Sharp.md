@@ -13,7 +13,7 @@ pukiwiki: "F Sharp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## F# 3.1.1 {#ff18d823}
+## Summary {#ff18d823}
 
 - [The F# Software Foundation](http://fsharp.org/)
 - [F# at Microsoft Research - Microsoft Research](http://research.microsoft.com/fsharp/)
@@ -42,7 +42,10 @@ pukiwiki: "F Sharp"
 
 #### OS X {#ja93cdf9}
 
-[Use F# on Mac OSX](http://fsharp.org/use/mac/) を参照．<br>
+[Use F# on Mac OSX](http://fsharp.org/use/mac/)<br>
+[MacでF#](http://qiita.com/disktnk/items/cb643ac86c0fd5a0bba2)<br>
+
+を参照．<br>
 
 #### Linux {#z59322bf}
 
