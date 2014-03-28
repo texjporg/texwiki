@@ -9,6 +9,10 @@ pukiwiki: "JavaScript"
 
 ## JavaScript {#f2fc5599}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## Summary {#t9fca996}
+
 - [Wikipedia.ja:JavaScript](https://ja.wikipedia.org/wiki/JavaScript)
 - [Wikipedia.ja:ECMAScript](https://ja.wikipedia.org/wiki/ECMAScript)
 - [JavaScript入門](http://www.pori2.net/js/)
