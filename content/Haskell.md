@@ -13,7 +13,7 @@ pukiwiki: "Haskell"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Haskell 2010 {#j02438c3}
+## Summary {#j02438c3}
 
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
