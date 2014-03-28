@@ -17,7 +17,7 @@ pukiwiki: "Linux/CentOS"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scientific_Linux_logo_and_wordmark.svg/200px-Scientific_Linux_logo_and_wordmark.svg.png" alt="Scientific Linux (SL)" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Red Hat Enterprise Linux (RHEL) とは {#y9ceb9fc}
 
