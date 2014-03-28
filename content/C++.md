@@ -13,7 +13,7 @@ pukiwiki: "C++"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## C++14, C++11 {#g7125441}
+## Summary {#g7125441}
 
 - [http://www.stroustrup.com/](http://www.stroustrup.com/)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
