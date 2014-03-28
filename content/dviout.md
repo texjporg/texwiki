@@ -12,7 +12,7 @@ dviout で問題が発生する場合は <strong>dviout を使用せず PDF フ�
 
 ## dviout for Windows → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#rfded337}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dviout for Windows とは？ {#i1497a3b}
 
