@@ -16,7 +16,8 @@ pukiwiki: "Ghostscript/OS X"
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
 
-和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。ヒラギノを利用するなら
+和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。<br>
+ヒラギノを利用するなら
 
 ```
 /Ryumin-Light      /HiraMinProN-W3   ;
@@ -27,7 +28,8 @@ pukiwiki: "Ghostscript/OS X"
 
 あとは /usr/local/share/ghostscript/\`gs --version\`/Resource/CIDFont/ の
 中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
-名前でシンボリックリンクを作っておきます。例えば OS X なら
+名前でシンボリックリンクを作っておきます。<br>
+例えば OS X なら
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
@@ -95,7 +97,8 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 シンボリックリンクを作っておくと良いでしょう
 （こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
 
-フォントパスが規定外のところにあると ps2pdf がエラーになるようです。これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。
+フォントパスが規定外のところにあると ps2pdf がエラーになるようです。<br>
+これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。<br>
 
 ### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#g10fce9f}
 
