@@ -12,7 +12,7 @@ Unicode を使用して問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/)
 
 ## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) → 問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/) を使用する {#u8bd5dfc}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### e-pTeX とは {#a746c835}
 
