@@ -9,6 +9,10 @@ pukiwiki: "Go"
 
 ## [Go](http://golang.org/) {#vc3e64fe}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## Go 1.2.1 {#hb43659d}
+
 - [The Go Programming Language](http://golang.org/)
 - [https://code.google.com/p/go/](https://code.google.com/p/go/)
 - [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
