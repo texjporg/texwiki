@@ -12,7 +12,7 @@ pukiwiki: "TeXworks"
 
 <img src="http://www.tug.org/texworks/img/TeXworks256.png" alt="TeXworks" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## TeXworks とは {#e8144da8}
 
