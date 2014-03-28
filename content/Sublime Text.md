@@ -11,7 +11,7 @@ pukiwiki: "Sublime Text"
 
 <img src="http://upload.wikimedia.org/wikipedia/en/4/4c/Sublime_Text_Logo.png" alt="Sublime Text" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Sublime Text とは {#w93773a9}
 
@@ -52,7 +52,7 @@ Windows, OS X, Linux
 
 - [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) <a id="latextools"></a> {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) → 問題が発生する場合は LaTeXSQ を使用する <a id="latextools"></a> {#e60d4c0f}
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
@@ -60,6 +60,38 @@ Windows, OS X, Linux
 ### ChangeLog {#zcc7e097}
 
 [https://github.com/SublimeText/LaTeXTools/commits/master](https://github.com/SublimeText/LaTeXTools/commits/master)
+
+### インストール {#i186fdb3}
+
+メニューの \[Preferences\]-\[Package Control\] を選択します．<br>
+Package Control: Install Package を選択します．<br>
+LaTeXTools を入力して LaTeXTools を選択します．<br>
+
+### 注意点 {#ua451899}
+
+LaTeXTools.sublime-settings が存在しない状態で TeX ファイルをビルドしようとすると<br>
+以下の文章が表示されてビルドできません．<br>
+
+```
+LaTeXTools: you need to migrate your preferences. See the
+README file for instructions.
+```
+
+メニューの \[Tools\]-\[Command Palette...\] を選択します．<br>
+
+```
+LaTeXTools: Reconfigure and migrate settings
+```
+
+を入力して LaTeXTools: Reconfigure and migrate settings を選択します．<br>
+
+```
+LaTeXTools settings successfully reconfigured. Your existing settings, if
+any, have been migrated.
+```
+
+が表示されて LaTeXTools.sublime-settings が作成されていれば<br>
+TeX ファイルがビルドできるようになります．<br>
 
 ### Windows {#m3e22b6d}
 
@@ -206,11 +238,17 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
 PDF ファイルが作成されると Evince で PDF ファイルが表示されて forward search が実行されます．<br>
 
-## [LaTeXSQ](https://github.com/randy3k/LaTeXSQ) <a id="latexsq"></a> {#xcd64fdd}
+## [LaTeXSQ](https://github.com/randy3k/LaTeXSQ) → 問題が発生する場合は LaTeXTools を使用する <a id="latexsq"></a> {#xcd64fdd}
 
 ### ChangeLog {#zc1e6581}
 
 [https://github.com/randy3k/LaTeXSQ/commits/master](https://github.com/randy3k/LaTeXSQ/commits/master)
+
+### インストール {#b204bf82}
+
+メニューの \[Preferences\]-\[Package Control\] を選択します．<br>
+Package Control: Install Package を選択します．<br>
+LaTeXSQ を入力して LaTeXSQ を選択します．<br>
 
 ## SumatraPDF との連携 {#hf07fc30}
 
