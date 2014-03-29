@@ -20,6 +20,8 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 - [https://www.ruby-lang.org/](https://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+- [若手エンジニア／初心者のためのRuby 2.1入門（1）](http://www.atmarkit.co.jp/ait/articles/1402/27/news042.html)
+- [若手エンジニア／初心者のためのRuby 2.1入門（2）](http://www.atmarkit.co.jp/ait/articles/1403/26/news030.html)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 - [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://tech.recompile.net/post/13843318337/shebang-bin-env-ruby-0)
@@ -67,10 +69,13 @@ RubyInstaller for Windows の Ruby を C:\Ruby200-x64 にインストールし�
 $ pacman -S ruby
 ```
 
+#### ビルド {#m4a4d031}
+
+- [Windows で ruby 2.1.1 をビルドする](http://blog.oogatta.com/entry/20140318/1395161294)
+
 ### OS X {#def5cf73}
 
-- [Ruby 2.1.0-p0インストール](http://qiita.com/shu_0115/items/ba33b692373f002cc568)
-- [Ruby 2.0.0-p0インストール(Mac OS X 10.8.2)](http://qiita.com/shu_0115/items/05a09296f3633cadac3f)
+- [Ruby 2.1.1インストール](http://qiita.com/shu_0115/items/9efb4b060f465cde0ff2)
 
 ### Linux {#pfcca84f}
 
@@ -112,7 +117,7 @@ $ pacman -S ruby
 
 inverse search は実装していません．<br>
 forward search のみ実装しています．<br>
-Evince 3.10.3, Ruby 2.1.0, ruby-dbus 0.10.0 で動作確認しています．<br>
+Evince 3.10.3, Ruby 2.1.1, ruby-dbus 0.10.0 で動作確認しています．<br>
 
 ```
 $ sudo gem install ruby-dbus
