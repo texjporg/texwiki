@@ -913,6 +913,7 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [pdfx.sty](http://fugenji.org/thomas/diary/index.php?no=r794)
 - [TeXにpng画像を挿入するときの注意](http://qiita.com/items/32ea69d031701463f789)
 - [http://www.willus.com/k2pdfopt/](http://www.willus.com/k2pdfopt/)
+- [Mac OS XでGhostScriptを使わない、日本語PostScriptファイルのPDF化](http://mechawooser.blogspot.jp/2013/11/mac-os-xghostscriptpostscriptpdf.html)
 
 ## 要約 {#gf004f58}
 
