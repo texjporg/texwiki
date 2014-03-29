@@ -101,7 +101,7 @@ pip や easy_install を使用して error: Setup script exited with error: Unab
 
 ## fwdevince <a id="fwdevince"></a> {#p46d6b08}
 
-Evince 3.10.3, Python 3.3.3, dbus-python 1.2.0, PyGObject 3.10.2 で動作確認しています．<br>
+Evince 3.10.3, Python 3.4.0, dbus-python 1.2.0, PyGObject 3.10.2 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
 - [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
