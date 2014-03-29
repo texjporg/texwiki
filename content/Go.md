@@ -15,6 +15,13 @@ pukiwiki: "Go"
 
 - [The Go Programming Language](http://golang.org/)
 - [https://code.google.com/p/go/](https://code.google.com/p/go/)
+
+### ChangeLog {#pdc98ad9}
+
+[https://code.google.com/p/go/source/list](https://code.google.com/p/go/source/list)
+
+### Related Links {#sba670f5}
+
 - [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
 - [Wikipedia.ja:Go\_(プログラミング言語)](https://ja.wikipedia.org/wiki/Go_%28%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%29)
 - [http://go.shibu.jp/](http://go.shibu.jp/)
