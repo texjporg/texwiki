@@ -40,7 +40,9 @@ dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウ�
 
 ## 使い方 {#he5a75c1}
 
-dvisvgm 1.4 以降は pTeX に対応しているので日本語が使用できます．<br>
+### DVI -> SVG {#e2526b87}
+
+dvisvgm 1.5 以降は pTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
 
 DVI ファイルを SVG ファイルに変換する場合は
 
@@ -56,8 +58,12 @@ $ dvisvgm -E hoge.eps
 
 dvisvgm を使用して SVG ファイルに変換した場合はテキストデータも保持されます．<br>
 
+### DVI -> PDF -> Inkscape -> SVG {#y57cab44}
+
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
 Inkscape を使用する場合もテキストデータが保持されます．<br>
+
+### DVI -> PDF -> MuPDF (mudraw) -> SVG {#pe2bf0a7}
 
 DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．<br>
 MuPDF の mudraw を使用する場合もテキストデータが保持されます．<br>
@@ -67,6 +73,8 @@ PDF ファイルの余白を削除する場合は pdfcrop を使用してくだ�
 
 $ mudraw -o hoge.svg hoge.pdf
 ```
+
+### DVI -> PDF -> Poppler (pdftocairo) -> SVG {#dbe3e3c1}
 
 DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば PDF ファイルを SVG ファイルに変換できます．<br>
 ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
