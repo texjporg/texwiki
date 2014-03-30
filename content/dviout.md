@@ -64,7 +64,7 @@ dviout3183a6-inst-20111008.zip に最小の修正を加え，正式リリース�
 - \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
     - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
 
-## ビルド {#d0101f83}
+## ビルド → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#d0101f83}
 
 [Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．<br>
 Windows PowerShell またはコマンド プロンプトを起動して dviout のソースコードを取得します．<br>
@@ -84,7 +84,7 @@ Windows PowerShell またはコマンド プロンプトからビルドしたい
 msbuild dviout.sln
 ```
 
-## 不具合 {#ufbeded4}
+## 不具合 → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#ufbeded4}
 
 ### dviout を管理者として実行していない場合に Error in RegCreateKey が表示される → dviout を管理者として実行する {#ca2f4069}
 
@@ -112,7 +112,7 @@ Error in RegCreateKey が表示された場合は \[OK\] をクリックしま�
 \[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
 dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
 
-## dviout 非対応パッケージ {#pd5bea65}
+## dviout 非対応パッケージ → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#pd5bea65}
 
 PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
 dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください．<br>
@@ -141,7 +141,7 @@ dviout は dvips と完全互換ではありません。<br>
 [PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
 dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
 
-## インストール {#f465326c}
+## インストール → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#f465326c}
 
 あらかじめ TeX システムをインストールしておきます。<br>
 [Microsoft Windows - TeX Wiki](</Microsoft Windows/>) をご覧ください。<br>
@@ -559,7 +559,7 @@ dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化され�
 （ファイルは消えません）。<br>
 この場合には再度 dviout をダブルクリックして実行すれば，最初から設定が始められます。
 
-## upTeX で出力された DVI ファイルを dviout で表示 {#wadc9abf}
+## upTeX で出力された DVI ファイルを dviout で表示 → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#wadc9abf}
 
 - upTeX のフォントと dviout ([qa:51135](https://okumuralab.org/~okumura/texfaq/qa/51135.html), [qa:51137](https://okumuralab.org/~okumura/texfaq/qa/51137.html))
 - upTeX のフォントと dviout (再検討) ([qa:51610](https://okumuralab.org/~okumura/texfaq/qa/51610.html))
