@@ -38,6 +38,8 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ## 使い方 {#ic72a209}
 
+### DVI -> PNG {#wff0573c}
+
 [CJK package](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
 
 DVI ファイルを PNG ファイルに変換する場合は
@@ -46,14 +48,19 @@ DVI ファイルを PNG ファイルに変換する場合は
 $ dvipng hoge.dvi
 ```
 
-(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
+### DVI -> PDF -> MuPDF (mudraw) -> PNG {#vf3c0c13}
+
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば簡単に PNG ファイルに変換できます．<br>
 PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
 
 ```
 $ mudraw -o hoge.png hoge.pdf
 ```
 
-または
+### DVI -> PDF -> Poppler (pdftocairo) -> PNG {#a65b7c7c}
+
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
+PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
 
 ```
 $ pdftocairo -png hoge.pdf
