@@ -53,3 +53,7 @@ $ make
 $ make install
 $ popd
 ```
+
+### Related Links {#o4d4f5fe}
+
+- [FreeTypeプロジェクトのttfautohintが凄い!](http://takehora.blogspot.jp/2014/01/freetypettfautohint.html)
