@@ -11,6 +11,7 @@ pukiwiki: "Pandoc"
 
 - [Pandoc](http://johnmacfarlane.net/pandoc/) a universal document converter
 - [https://code.google.com/p/pandoc/](https://code.google.com/p/pandoc/)
+- [Pandocを使ってMarkdownからPDFを生成する](http://qiita.com/takeh1k0/items/ff84cb85bfffedc75066)
 - [Pandoc+MarkdownでLaTeXとSphinx(reStructuredText)を操る。](http://nwpct1.hatenablog.com/entry/2014/01/20/203733)
 - [Pandocで MarkdownをPDFに変換したいのですが原因不明のエラーが出てしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10121517310)
 - [http://d.hatena.ne.jp/tondol/20140215/1392420965](http://d.hatena.ne.jp/tondol/20140215/1392420965)
