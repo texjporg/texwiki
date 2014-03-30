@@ -9,11 +9,11 @@ pukiwiki: "OTF"
 
 <!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
-## OTF (japanese-otf, japanese-otf-uptex, luatexja-otf, ZXotf) {#l22413ec}
+## OTF (japanese-otf, japanese-otf-uptex), luatexja-otf, ZXotf {#l22413ec}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
-## OTF パッケージとは {#h230c839}
+## OTF (japanese-otf, japanese-otf-uptex) パッケージとは {#h230c839}
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
 [Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
@@ -74,7 +74,7 @@ ZXotf パッケージは XeLaTeX で OTF パッケージと同等の機能を実
 ### TeX Live {#da8ed89a}
 
 TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
-バージョンはベータ版 ([2013/11/17 v1.7b6 psitau, u0.13 ttk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)) に相当します．
+バージョンは[ベータ版](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)に相当します．
 
 ### W32TeX {#z4ee6291}
 
