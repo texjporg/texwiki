@@ -198,18 +198,6 @@ TeXworks ではなく [TeXstudio](/TeXstudio/) を使用しても OK です．<b
 
 - [Hunspell](/Hunspell/) をインストールします．
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz -->
-
-```
-$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz
-$ tar xvf hunspell-1.3.2.tar.gz
-$ pushd hunspell-1.3.2
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ popd
-```
-
 - TeXworks のソースコードを取得します．
 
 ```
