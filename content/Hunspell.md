@@ -9,6 +9,10 @@ pukiwiki: "Hunspell"
 
 ## [Hunspell](http://hunspell.sourceforge.net/) {#g6159d85}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## Summary {#m1ff4251}
+
 Hunspell はスペルチェッカーです．<br>
 
 - [Hunspell](http://hunspell.sourceforge.net/)
@@ -29,3 +33,21 @@ Hunspell はスペルチェッカーです．<br>
 - [http://sourceforge.net/projects/lyxwininstaller/files/hunspell/](http://sourceforge.net/projects/lyxwininstaller/files/hunspell/)
 
 などから入手できます．
+
+## Installation {#y7b755eb}
+
+### Windows {#mcb4fc44}
+
+#### MinGW {#deab3978}
+
+<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz -->
+
+```
+$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz
+$ tar xvf hunspell-1.3.2.tar.gz
+$ pushd hunspell-1.3.2
+$ ./configure --prefix=/mingw
+$ make
+$ make install
+$ popd
+```
