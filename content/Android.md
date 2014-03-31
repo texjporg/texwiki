@@ -121,6 +121,11 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 
 ***
 
+### TeXPortal Free {#s2aa743c}
+
+- [TeXPortal Free](https://play.google.com/store/apps/details?id=lah.texportal)
+- [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
+
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
