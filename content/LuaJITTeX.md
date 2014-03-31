@@ -62,10 +62,48 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 \directlua{
   local ffi = require("ffi")
   ffi.cdef[[
-  int MessageBoxA(void* window, const char* text, const char* caption, int type);
+    int MessageBoxA(void* window, const char* text, const char* caption, int type);
   ]]
   ffi.C.MessageBoxA(nil, "Happy LuaJITLaTeXing!", "LuaJITTeX", 0)
 }
+\end{document}
+```
+
+***
+
+```
+\documentclass{article}
+\usepackage{luacode}
+\begin{document}
+\begin{luacode*}
+  local ffi = require("ffi")
+  ffi.cdef[[
+    typedef unsigned int   UINT;
+    typedef unsigned short WORD;
+    typedef unsigned long  DWORD;
+    typedef const char*    LPCSTR;
+    typedef wchar_t*       LPWSTR;
+    typedef const wchar_t* LPCWSTR;
+    enum{
+      CP_UTF8 = 65001
+    };
+    int MultiByteToWideChar(UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr,
+          int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar);
+    int MessageBoxW(void* window, const wchar_t* text, const wchar_t* caption, int type);
+  ]]
+  local kernel32 = ffi.load("kernel32")
+  local user32 = ffi.load("user32")
+  local function toWide(str)
+    local size = kernel32.MultiByteToWideChar(ffi.C.CP_UTF8, 0, str, str:len(), nil, 0)
+    local buffer = ffi.new("wchar_t[?]", size + 1)
+    ffi.fill(buffer, (size + 1) * ffi.sizeof("wchar_t"), 0)
+    if kernel32.MultiByteToWideChar(ffi.C.CP_UTF8, 0, str, str:len(), buffer, size) ~= size then
+        return nil
+    end
+    return buffer
+  end
+  user32.MessageBoxW(nil, toWide("Happy LuaJITLaTeXing!"), toWide("LuaJITTeX"), 0)
+\end{luacode*}
 \end{document}
 ```
 
@@ -94,7 +132,7 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 \begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
-  int printf(const char* format, ...);
+    int printf(const char* format, ...);
   ]]
   local msvcrt = ffi.load(ffi.os == "Windows" and "msvcrt")
   msvcrt.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
@@ -117,7 +155,7 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 \begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
-  int printf(const char* format, ...);
+    int printf(const char* format, ...);
   ]]
   local libc = ffi.load(ffi.os == "Linux" and "libc")
   libc.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
