@@ -20,6 +20,7 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 - [https://www.ruby-lang.org/](https://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+- [http://ruby.morphball.net/](http://ruby.morphball.net/)
 - [若手エンジニア／初心者のためのRuby 2.1入門（1）](http://www.atmarkit.co.jp/ait/articles/1402/27/news042.html)
 - [若手エンジニア／初心者のためのRuby 2.1入門（2）](http://www.atmarkit.co.jp/ait/articles/1403/26/news030.html)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
