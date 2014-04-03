@@ -181,14 +181,22 @@ end.
 これは単に4点を3本の線分で結ぶだけです。
 
 このファイルをたとえば test.mp
-という名前で保存して，
+という名前で UTF-8 で保存します．<br>
+
+日本語を使用する場合は
+
+```
+upmpost test
+```
+
+日本語を使用しない場合は
 
 ```
 mpost test
 ```
 
 と打ち込むと，beginfig(1); から endfig;
-までに描かれた内容が test.1 というEPSファイルに出力されます。
+までに描かれた内容が test.1 という EPS ファイルに出力されます。
 Ghostscript などで確認してみてください。
 
 もしさらに beginfig(2);……endfig;
@@ -322,9 +330,9 @@ Ghostscriptで見るか，PostScriptプリンタに送ります。
 dvips -E test -o test.eps
 ```
 
-のようにdvipsの -E オプションを使えば，
-本物のEPSファイルになり，
-TeX以外のアプリケーションに取り込むこともできます。
+のように dvips の -E オプションを使えば，
+本物の EPS ファイルになり，
+TeX 以外のアプリケーションに取り込むこともできます。
 
 #### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
 
@@ -348,11 +356,27 @@ end.
 
 このように TeX や LaTeX の文書が含まれている場合は，
 TeX または LaTeX を起動するコマンドをあらかじめ環境変数 TEX
-で指定しておく必要があります。
-たとえば上の例で LaTeX を起動するコマンドが latex なら，
-Bシェルの類なら export TEX=latex，
-Cシェルなら setenv TEX latex
-としてから mpost test と打ち込みます。
+で指定しておく必要があります。<br>
+たとえば上の例で LaTeX を起動するコマンドが uplatex の場合は<br>
+B Shell 系 (bash, zsh など) であれば
+
+```
+export TEX=uplatex
+```
+
+C Shell 系 (tcsh など) であれば
+
+```
+setenv TEX uplatex
+```
+
+としてから
+
+```
+upmpost test
+```
+
+と打ち込みます。
 
 なお、比較的新しい TeX 環境では、makempx が利口になっており、
 
