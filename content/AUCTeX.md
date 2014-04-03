@@ -805,8 +805,6 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 
 TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．
 
-&#x7e;/.emacs.d/init.el に以下を追加するとデフォルトで TeX-PDF-mode が有効になります．
-
 ```
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
 ```
