@@ -27,11 +27,11 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipdfm-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/ChangeLog?view=markup)
-- \[[texlive\] Index of /trunk/Build/source/texk/dvipdf-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/?view=log)
-    - [CangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdf-x/ChangeLog?view=markup)
 - \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def?view=markup)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def?view=log)
+- \[[latexfmxdef\] Index of /trunk](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/)
+    - [log](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/?view=log)
+    - [ChangeLog](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/ChangeLog?view=markup)
 
 ## 不具合 {#mb96765c}
 
@@ -171,6 +171,7 @@ Output file removed.
 
 ## 関連リンク {#me536d1a}
 
+- [Unofficial LaTeX graphics drivers - 概要 \[Puszcza\]](http://puszcza.gnu.org.ua/projects/latexfmxdef)
 - [Newest &#39;dvipdfmx&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/dvipdfmx)
 - [「dvipdfmx」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=dvipdfmx)
 - [PXchfon パッケージ ～pLaTeX文書のフォントを簡単に変更～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxchfon.html)
