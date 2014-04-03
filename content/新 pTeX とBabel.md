@@ -301,6 +301,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 - [Babel のマニュアル（英語）](http://www.ring.gr.jp/pub/text/CTAN/languages/babel/babel.pdf)
     &#x5b;[CTAN](/CTAN/)\]
 
+- [TeX Live 2013 導入](http://yasuda.homeip.net/insomnia/2014/04/tex-live-2013.html)
 - [pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)
     （稲垣徹さん）
 
