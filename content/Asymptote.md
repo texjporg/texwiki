@@ -44,7 +44,7 @@ pukiwiki: "Asymptote"
 ソースからコンパイルするのも簡単。<br>
 OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。<br>
 Asymptoteソースを展開したディレクトリに
-[gc-7.1.tar.gz](http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc-7.1.tar.gz)
+[gc-7.4.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.4.0.tar.gz)
 を展開せずに置き，
 
 ```
@@ -57,21 +57,17 @@ make install
 
 でできる。
 
-OS X 10.6 (Snow Leopard) では次のようなエラーになる。
-
-```
-In file included from mach_dep.c:163:
-/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined
-```
-
-このときは gc-7.1 の中で ucontext.h をインクルードしているファイルが二つあるのを sys/ucontext.h をインクルードするように書き換えてからその（gc-7.1 の）中で
-
-```
-./configure --disable-shared  --enable-large-config
-make
-```
-
-し，一つ上に上がって make し直せばよい。
+<!-- gc-7.1.tar.gz は OS X 10.6 (Snow Leopard) で次のようなエラーになる。 -->
+<!--  -->
+<!-- In file included from mach_dep.c:163: -->
+<!-- /usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined -->
+<!--  -->
+<!-- このときは gc-7.1 の中で ucontext.h をインクルードしているファイルが二つあるのを sys/ucontext.h をインクルードするように書き換えてからその（gc-7.1 の）中で -->
+<!--  -->
+<!-- ./configure - -disable-shared  - -enable-large-config -->
+<!-- make -->
+<!--  -->
+<!-- し，一つ上に上がって make し直せばよい。 -->
 
 ### OS X でのプレビュー {#dc357da5}
 
