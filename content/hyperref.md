@@ -16,6 +16,7 @@ pukiwiki: "hyperref"
 ### 更新履歴 {#e8ca0037}
 
 - [http://www.tug.org/applications/hyperref/ftp/ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/hyperref/?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/hyperref/?view=log)
 
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
