@@ -702,8 +702,10 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 
 - 「\変数」は \x や \y という単独文字だけでなく、\angle のような文字列を使用することもできます。（日本語も使用可能）
 - 「変域リスト」はコンマ区切りの数字または文字列です。（日本語も使用可能）
+- 「変域リスト」に名付けられた点列を与えれば、「\変数」は座標を示します。
+- 「/」で区切ることで、複数の「\変数」を指定できます。「変域リスト」内も同様に区切ります。
 
-たとえば、左の式は右のような結果となります。
+たとえば、左の式は、それぞれ右のような結果となります。
 
 ```
 ・\foreach \x in {1, 2, 3, 4} {A-\x, } →（出力）A-1, A-2, A-3, A-4, 
@@ -719,6 +721,38 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 ・{a, b, c, 1, 2, …, 6, d, e,..., h} → {a, b, c, 1, 2, 3, 4, 5, 6,  d, e, f, g, h} と解釈
 ・{a, …, e} → {a, b, c, d, e} と解釈
 ・{Z, X, …, M} → {Z, X, V, T, R, P, N} と解釈
+```
+
+#### 基本的な描画例 {#bb6c31a6}
+
+```
+%目盛り付き座標軸
+\begin{tikzpicture}
+\draw[thick, ->] (-1,0) -- (5,0) node [below] {$x$};%x軸
+\draw[thick, ->] (0,-1) -- (0,5) node [left] {$y$};%y軸
+\node at (0,0) [anchor=north east] {O};
+\foreach \x in {1,2,3,4}
+   \draw (\x cm,.2) -- (\x cm,0) node[anchor=north] {$\x$};
+\foreach \y in {1,2,3,4}
+   \draw (.2,\y cm) -- (0,\y cm) node[anchor=east] {$\y$};
+\end{tikzpicture}
+```
+
+```
+%時計の例（2変数指定の例）
+\begin{tikzpicture}
+\draw[very thick] (0,0) circle (2cm);%時計の外周
+\foreach \angle / \label in 
+  {0/3, 30/2, 60/1, 90/12, 120/11, 150/10, 180/9, 210/8, 240/7, 270/6, 300/5, 330/4} 
+  { 
+   \draw (\angle:1.8cm) -- (\angle:2cm); 
+   \node at (\angle:1.5cm) {\textsf{\label}}; 
+  } 
+\foreach \angle in {0,90,180,270} 
+   \draw[thick] (\angle:1.7cm) -- (\angle:2cm); 
+\draw[line width=3pt, cap=round] (0,0) -- (145:0.8cm);%短針
+\draw[line width=3pt, cap=round] (0,0) -- (30:1.2cm);%長針
+\end{tikzpicture}%
 ```
 
 ### 図画のみの出力 {#nf2ceec5}
