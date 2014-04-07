@@ -46,6 +46,7 @@ pukiwiki: "C"
 ### ライブラリ・フレームワーク {#w5f859a1}
 
 - [GTK+](http://www.gtk.org/)
+- GLib
 
 ### IDE・エディタ {#vaa4f864}
 
