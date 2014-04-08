@@ -32,6 +32,11 @@ pukiwiki: "C Sharp"
 
 - [Mono](http://www.mono-project.com/)
 
+## Microsoft .NET Native {#m68c5d81}
+
+- [Microsoft .NET Native](http://msdn.microsoft.com/en-US/vstudio/dotnetnative)
+- [.NET Native](http://ufcpp.wordpress.com/2014/04/03/net-native/)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#xd30da3f}
 
 ### C# 版 {#x61699f8}
