@@ -20,9 +20,9 @@ pukiwiki: "OpenSSL"
 #### MinGW {#h2041c43}
 
 ```
-$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1f.tar.gz
-$ tar xvf openssl-1.0.1f.tar.gz
-$ pushd openssl-1.0.1f
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1g.tar.gz
+$ tar xvf openssl-1.0.1g.tar.gz
+$ pushd openssl-1.0.1g
 $ ./config --prefix=/mingw shared
 $ make
 $ make install
