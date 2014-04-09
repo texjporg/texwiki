@@ -37,6 +37,8 @@ TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語�
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
 - [http://www.tug.org/pipermail/tex-live/2014-April/035059.html](http://www.tug.org/pipermail/tex-live/2014-April/035059.html)
 - [http://www.tug.org/pipermail/tex-live/2014-April/035060.html](http://www.tug.org/pipermail/tex-live/2014-April/035060.html)
+- [http://www.tug.org/pipermail/tex-live/2014-April/035061.html](http://www.tug.org/pipermail/tex-live/2014-April/035061.html)
+- [http://www.tug.org/pipermail/tex-live/2014-April/035062.html](http://www.tug.org/pipermail/tex-live/2014-April/035062.html)
 
 ### 注意点 {#de072348}
 
