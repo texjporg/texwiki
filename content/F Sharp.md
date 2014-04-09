@@ -24,6 +24,7 @@ pukiwiki: "F Sharp"
 - [F# - 七誌の開発Wiki](http://seesaawiki.jp/w/n7shi/d/F%23)
 - [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
 - [F# Advent Calendar 2013](http://connpass.com/event/3935/)
+- [http://fsharp.github.io/FAKE/](http://fsharp.github.io/FAKE/)
 
 ### F# → JavaScript {#c5c64235}
 
