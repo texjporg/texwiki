@@ -579,8 +579,12 @@ fontmapline "-foo bar <baz.pfb";
 (MetaPost だけでなくて、全ての TeX エンジン、METAFONT でも
 pool ファイルは無くなっています。) 1.501 から mem ファイルも無くなりました。
 
+現在 release されている最新バージョンは 1.999 です。(gmp, mpfr と link)。
+
 TeX Live 2013 では MetaPost のバージョンは 1.803 になっています。eps, svg に加えてビットマップの png
 も出力可 (outputformat := "png";)。
+
+TeX Live 2014 には バージョン 1.901 が入る予定です。
 
 ### 参考サイト {#sa284452}
 
