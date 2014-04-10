@@ -15,6 +15,9 @@ pukiwiki: "Ghostscript/OS X"
 
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
+- [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb)
+- [https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile)
+- [https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile)
 
 和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。<br>
 ヒラギノを利用するなら
