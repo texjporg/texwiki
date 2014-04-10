@@ -17,6 +17,7 @@ pukiwiki: "C++"
 
 - [http://www.stroustrup.com/](http://www.stroustrup.com/)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
+    - [http://ja.wikipedia.org/wiki/C++11](http://ja.wikipedia.org/wiki/C++11)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
 - [cpprefjp - C++ Library Reference](https://sites.google.com/site/cpprefjp/)
