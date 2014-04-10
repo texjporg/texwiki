@@ -27,8 +27,11 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 - [ghostscript.com Mailing Lists](http://ghostscript.com/mailman/listinfo/)
     - [The gs-bugs Archives](http://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](http://ghostscript.com/pipermail/gs-devel/)
-- [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+- [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
+- [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
+    - [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+    - [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
+- [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 
 ### お知らせ {#c2f53cec}
 
