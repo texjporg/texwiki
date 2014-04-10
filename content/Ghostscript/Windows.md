@@ -26,7 +26,10 @@ Windows 版の Ghostscript には，角藤さんがコンパイルされた日�
 
 ### tlgs {#j25e0f58}
 
-TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語・韓国語 (CJK) に対応しています． (→ \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760), \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504))<br>
+TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語・韓国語 (CJK) に対応しています．<br>
+
+- \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760)
+- \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504)
 
 ### 不具合 {#icf32882}
 
