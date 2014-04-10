@@ -40,9 +40,9 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 [Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
 
-#### xeCJK 3.2.9 で 丸1「①」(U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
+#### xeCJK 3.2.10 で 丸1「①」(U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
-xeCJK 3.2.9 で 丸1「①」(U+2460) が表示されません．<br>
+xeCJK 3.2.10 で 丸1「①」(U+2460) が表示されません．<br>
 
 ```
 \documentclass{scrartcl}
@@ -65,9 +65,9 @@ ABCDEあいうえお①
 \end{document}
 ```
 
-#### xeCJK 3.2.9 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示される → \XeTeXcharclass\`〜=1 を追加 {#h9d2aaf2}
+#### xeCJK 3.2.10 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示される → \XeTeXcharclass\`〜=1 を追加 {#h9d2aaf2}
 
-xeCJK 3.2.9 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示されます．<br>
+xeCJK 3.2.10 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や upLaTeX + dvipdfmx でタイプセットした場合と異なり文字が詰まったように表示されます．<br>
 
 ```
 \ifdefined\kanjiskip
