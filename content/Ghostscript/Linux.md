@@ -39,17 +39,17 @@ pukiwiki: "Ghostscript/Linux"
 
 #### ソースコードからインストール {#u4ad1919}
 
-- [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
-- [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
-- [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
+[http://git.ghostscript.com/?p=ghostpdl.git](http://git.ghostscript.com/?p=ghostpdl.git)
 
-などから ghostscript-9.14.tar.bz2 を入手します。
+から Ghostscript のソースコードを入手します。
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ tar xvf ghostscript-9.14.tar.bz2
-$ cd ghostscript-9.14
+$ curl -R -L -o ghostscript.tar.gz "http://git.ghostscript.com/?p=ghostpdl.git;a=snapshot;h=HEAD;sf=tgz"
+$ tar xvf ghostscript.tar.gz
+$ cd ghostscript*
+$ ./autogen.sh
 $ ./configure --disable-compile-inits --prefix=/usr/local
 $ make
 $ sudo make install
