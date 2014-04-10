@@ -887,14 +887,14 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 
 ### いろいろな使い方 {#v806ddfa}
 
-ダブルクォート " を打てば，状況に応じて \`\` または '' に変換してくれます。
+ダブルクォート " を打てば，状況に応じて \`\` または '' に変換してくれます。<br>
 
-TAB または SPACE で補完ができます。
-これらが効かないときは ESC TAB で補完します。
+TAB または SPACE で補完ができます。<br>
+これらが効かないときは ESC TAB で補完します。<br>
 候補一覧が出たら，さらに文字を補って補完するか，
-あるいはマウスの中央のボタンで候補をクリックします。
+あるいはマウスの中央のボタンで候補をクリックします。<br>
 
-フォント関係のコマンドです。
+フォント関係のコマンドです。<br>
 
 > <table>
 > <tbody>
@@ -908,7 +908,7 @@ TAB または SPACE で補完ができます。
 > </table>
 >
 
-その他のコマンドです。
+その他のコマンドです。<br>
 
 - TAB インデント
 - C-j インデントして改行
@@ -924,12 +924,12 @@ AUCTeX Clean ターゲット機能
 - C-c C-c Clean 中間ファイル(.log .aux etc...)の削除
 - C-c C-c Clean All 中間ファイル及び dvi ps pdf の削除
 
-これ以外にたくさんの機能があります。
-ぜひ info auctex でドキュメントをお読みください。
+これ以外にたくさんの機能があります。<br>
+ぜひ info auctex でドキュメントをお読みください。<br>
 
 ### カスタマイズ {#l23cdb90}
 
-サイトごとのカスタマイズは /usr/local/share/emacs/site-lisp/tex-site.el で行います。
+サイトごとのカスタマイズは /usr/local/share/emacs/site-lisp/tex-site.el で行います。<br>
 
 ### 複数ファイルの文書 {#fd84843a}
 
@@ -942,10 +942,10 @@ AUCTeX Clean ターゲット機能
 %%% End:
 ```
 
-すると，このバッファで C-c C-c すると，hogehoge.tex をコンパイルしたり hogehoge.dvi を表示したりします。
-これはこのファイルを japanese-latex モードで開くという便利な副作用もあります。
+すると，このバッファで C-c C-c すると，hogehoge.tex をコンパイルしたり hogehoge.dvi を表示したりします。<br>
+これはこのファイルを japanese-latex モードで開くという便利な副作用もあります。<br>
 
-もし自分自身がマスターなら，次のように書いておきます。
+もし自分自身がマスターなら，次のように書いておきます。<br>
 
 ```
 %%% Local Variables:
@@ -954,7 +954,7 @@ AUCTeX Clean ターゲット機能
 %%% End:
 ```
 
-こういったものを自動で入れたい場合は，Emacs の設定ファイルに次のように書いておきます（私は書いていません）。
+こういったものを自動で入れたい場合は，Emacs の設定ファイルに次のように書いておきます（私は書いていません）。<br>
 
 ```
 (setq TeX-auto-save t)
@@ -968,8 +968,8 @@ AUCTeX Clean ターゲット機能
 Master file: (default this file)
 ```
 
-と聞いてきますので，自分自身がマスターファイルなら単に Enter を押します。
-キャンセルは C-g です。
+と聞いてきますので，自分自身がマスターファイルなら単に Enter を押します。<br>
+キャンセルは C-g です。<br>
 
 ## SumatraPDF との連携 (forward and inverse search) {#h60fef7c}
 
