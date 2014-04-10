@@ -48,8 +48,7 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ## インストール {#d5b9a2e9}
 
-GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応しています．<br>
-[Dependencies](https://github.com/coolwanglu/pdf2htmlEX/wiki/Building#dependencies) によると GCC 4.4.6 以上でビルド可能なようです．<br>
+see [https://github.com/coolwanglu/pdf2htmlEX/wiki/Building](https://github.com/coolwanglu/pdf2htmlEX/wiki/Building)
 
 ### Windows {#r72743bf}
 
@@ -236,9 +235,9 @@ GCC 4.8.1 以降は [C++11](https://ja.wikipedia.org/wiki/C%2B%2B11) に対応�
 [pango](http://www.pango.org/) をインストールします．<br>
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/pango/1.38/pango-1.36.1.tar.xz
-$ tar xvf pango-1.36.1.tar.xz
-$ pushd pango-1.36.1
+$ curl --insecure -R -L -O https://download.gnome.org/sources/pango/1.36/pango-1.36.3.tar.xz
+$ tar xvf pango-1.36.3.tar.xz
+$ pushd pango-1.36.3
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -319,23 +318,23 @@ $ popd
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-0.95.tar.gz
-$ tar xvf ttfautohint-0.95.tar.gz
-$ pushd ttfautohint-0.95
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-1.00.tar.gz
+$ tar xvf ttfautohint-1.00.tar.gz
+$ pushd ttfautohint-1.00
 $ ./configure --prefix=/mingw
 $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.2.05.2.0mingw48_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.2.05.2.0mingw48_32lib'
+../libtool: line 6013: cd: C:QtQt5.3.05.3.0mingw48_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.3.05.3.0mingw48_32lib'
 ```
 
-のエラーが発生する場合は ttfautohint-0.95/frontend/Makefile の中身を
+のエラーが発生する場合は ttfautohint-1.00/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.2.0\5.2.0\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.2.0/5.2.0/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.3.0\5.3.0\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.3.0/5.3.0/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
@@ -441,7 +440,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.25.1
+--   found poppler, version 0.25.3
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
