@@ -17,6 +17,7 @@ pukiwiki: "D"
 
 - [http://dlang.org/](http://dlang.org/)
     - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
+- [http://gdcproject.org/](http://gdcproject.org/)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [Wikipedia.ja:D言語](https://ja.wikipedia.org/wiki/D%E8%A8%80%E8%AA%9E)
 - [http://qiita.com/tags/dlang](http://qiita.com/tags/dlang)
