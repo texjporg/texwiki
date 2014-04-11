@@ -16,7 +16,7 @@ pukiwiki: "Python Script"
 Python Script を使うと LaTeX 環境を簡単に作ることができます．<br>
 \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で Python Script を選択してインストールできます．<br>
 \[プラグイン\]-\[Python Script\]-\[Configuration\] で Python Script の設定をします．<br>
-plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成すると User Scripts に Python Script が表示されます．<br>
+plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成すると Machine Scripts に Python Script が表示されます．<br>
 表示された Python Script は Menu items に追加できます．<br>
 
 - [Python Script - Plugin for Notepad++](http://npppythonscript.sourceforge.net/)
@@ -46,7 +46,7 @@ class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
-        ptex2pdf = 'ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "' + b + '"'
+        ptex2pdf = 'ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1" "' + b + '"'
         notepad.save()
         os.chdir(c)
         console.clear()
@@ -71,7 +71,7 @@ class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
-        uplatex = 'uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "' + b + '"'
+        uplatex = 'uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "' + b + '"'
         dvips = 'dvips -Ppdf -z -f "' + b + '.dvi" | convbkmk -u > "' + b + '.ps"'
         ps2pdf = 'ps2pdf.bat "' + b + '.ps"'
         uplatex_dvips_ps2pdf = uplatex + ' && ' + dvips + ' && ' + ps2pdf
