@@ -24,7 +24,7 @@ plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成�
 
 ### License {#cb3f7a8f}
 
-GPLv2
+GPLv3
 
 <!-- **注意事項 [#f37b5e02] -->
 <!--  -->
