@@ -20,7 +20,7 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 ### License {#w1524716}
 
-[GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)<br>
+[GPLv3, GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)<br>
 
 ### ChangeLog {#he60a3d0}
 
@@ -35,7 +35,7 @@ xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフト�
 
 ## 不具合 {#mb96765c}
 
-### [dvipdfmx Version 20130624 で TikZ を使用すると \*\* ERROR \*\* Invalid object type: 10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081) → TeX Live 2014 以降にアップデート {#m3330a51}
+### [dvipdfmx Version 20130624 で TikZ を使用した DVI ファイルを処理すると \*\* ERROR \*\* Invalid object type: 10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081) → TeX Live 2014 以降にアップデート {#m3330a51}
 
 TeX Live 2013 (dvipdfmx-20130405) では大丈夫です<br>
 TeX Live 2014 (→ [Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739) を参照) で修正されました<br>
