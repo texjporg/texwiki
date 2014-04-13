@@ -98,21 +98,23 @@ CTAN の Beamer では発生しなかったので CTAN からダウンロード�
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
-### Linux Mint {#x6d699a5}
-
-- [Ubuntu – パッケージ検索結果 -- latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
-
-### Debian {#h1b8334f}
-
-- [Debian -- パッケージ検索結果 -- latex-beamer](https://packages.debian.org/ja/latex-beamer)
-
 ### Arch Linux {#h5c71065}
 
 - [https://aur.archlinux.org/packages/latex-beamer/](https://aur.archlinux.org/packages/latex-beamer/)
 
+### Linux Mint {#x6d699a5}
+
+- [http://packages.ubuntu.com/ja/texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
+- [http://packages.ubuntu.com/ja/latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
+
+### Debian {#h1b8334f}
+
+- [https://packages.debian.org/ja/texlive-latex-recommended](https://packages.debian.org/ja/texlive-latex-recommended)
+- [https://packages.debian.org/ja/latex-beamer](https://packages.debian.org/ja/latex-beamer)
+
 ## Beamer 関連パッケージ {#k4220bf5}
 
-### [TikZ and PGF](/TikZ/) {#o6f8726a}
+### [TikZ &amp; PGF](/TikZ/) {#o6f8726a}
 
 - e-TeX 拡張が必要 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
