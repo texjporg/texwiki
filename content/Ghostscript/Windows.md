@@ -31,18 +31,6 @@ TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語�
 - \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760)
 - \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504)
 
-### 不具合 {#icf32882}
-
-#### Ghostscript 9.14 でハイパーリンクが動作しない → Ghostscript 9.10 を使用する {#o46a997e}
-
-- [pdfwrite - while processing pdfmarks, ensure strings are null-terminated before using sscanf](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=fb1ac66da597d9d6fe773ddaf3413098028cc6a0)
-- [Bug 695119 - Ghostscript inconsistently fails creating links with pdfmark](http://bugs.ghostscript.com/show_bug.cgi?id=695119)
-- [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
-- [http://www.tug.org/pipermail/tex-live/2014-April/035059.html](http://www.tug.org/pipermail/tex-live/2014-April/035059.html)
-- [http://www.tug.org/pipermail/tex-live/2014-April/035060.html](http://www.tug.org/pipermail/tex-live/2014-April/035060.html)
-- [http://www.tug.org/pipermail/tex-live/2014-April/035061.html](http://www.tug.org/pipermail/tex-live/2014-April/035061.html)
-- [http://www.tug.org/pipermail/tex-live/2014-April/035062.html](http://www.tug.org/pipermail/tex-live/2014-April/035062.html)
-
 ### 注意点 {#de072348}
 
 #### Ghostscript 9.14 で Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
