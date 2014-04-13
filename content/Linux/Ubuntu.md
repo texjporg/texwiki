@@ -181,7 +181,7 @@ $ sudo apt-get install mupdf
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#jc822238}
 
-[Adobe Reader 9 は 2013年6月26日 でサポートが終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
+[Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
