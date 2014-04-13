@@ -91,8 +91,7 @@ TeX Live 所収の
 
 #### UNIX, Unix-like OS, OS X, Cygwin {#y673f46e}
 
-TeX Live 2013, MacTeX-2013 では Babel がデフォルトでインストールされます。<br>
-TeX Live 2013, MacTeX-2013 では [TeX Live](</TeX Live/>) 所収の
+TeX Live, MacTeX では [TeX Live](</TeX Live/>) 所収の
 ハイフネーションファイルが同梱されています。<br>
 UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
 手作業で調整する必要があるかもしれません
@@ -107,7 +106,7 @@ Cygwin については
 『[［改訂第6版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』
 付録 DVD-ROM には
 [TeX Live](</TeX Live/>) 2013 が収録されています。<br>
-TeX Live 2013 は Babel に対応しています。<br>
+TeX Live 2013 には Babel が収録されています。<br>
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
@@ -284,7 +283,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     または
 
     ```
-    ptex2pdf -l -u johannes.tex
+    ptex2pdf -u -l johannes.tex
     ```
 
     とすることで PostScript フォントの埋め込まれた PDF が作成されます。
