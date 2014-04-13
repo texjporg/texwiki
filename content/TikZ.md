@@ -7,7 +7,7 @@ pukiwiki: "TikZ"
 
 # TikZ
 
-## [TikZ &amp; PGF](http://altermundus.com/pages/builds/) {#w315bc8f}
+## [TikZ &amp; PGF](http://pgf.sourceforge.net/) {#w315bc8f}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
 
@@ -26,6 +26,7 @@ PGF/TikZ を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euc
 
 PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
 
+- [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
 - [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/)
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
@@ -35,6 +36,10 @@ PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
     - [TeX Live](</TeX Live/>) 2013 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
         <!-- - -[[ChangeLog:http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog]] -->
+
+### ChangeLog {#off3b30e}
+
+- [http://pgf.sourceforge.net/pgf_CVS.ChangeLog](http://pgf.sourceforge.net/pgf_CVS.ChangeLog)
 
 ### 初期設定 {#e634a5d8}
 
@@ -99,12 +104,10 @@ texdoc tikz
 
 と設定しておく必要があります。<br>
 
-また、初期設定では examplefill という色は定義されていません。<br>
-マニュアルの例をそのまま写して試したい場合は、以下をプリアンブルにあらかじめ定義しておいた方がよいでしょう。<br>
-
-```
-\colorlet{examplefill}{yellow!80!black}（プリアンブルでも本文の中でも環境中でもかまいません）
-```
+<!-- ver 3.0.0 からは examplefill という色は用いられなくなりましたので、以下の記述は obsolete です。 -->
+<!-- また、初期設定では examplefill という色は定義されていません。~ -->
+<!-- マニュアルの例をそのまま写して試したい場合は、以下をプリアンブルにあらかじめ定義しておいた方がよいでしょう。~ -->
+<!-- \colorlet{examplefill}{yellow!80!black}（プリアンブルでも本文の中でも環境中でもかまいません） -->
 
 仕様の改訂とともにマニュアルはアップデートされていますが、前半のチュートリアルなどには以前の仕様の書式が用いられていることがあります。（たとえば円を描く書式。）
 
