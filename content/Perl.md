@@ -54,6 +54,12 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 $ pacman -S perl
 ```
 
+#### tlperl {#x3549067}
+
+TeX Live の Windows 版には Perl の処理系が収録されています．<br>
+
+- [http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)
+
 ### TeX関連モジュール {#y91d7e77}
 
 - [TeX-DVI - CPAN](http://search.cpan.org/~janpaz/TeX-DVI-1.01/)
