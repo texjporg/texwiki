@@ -31,8 +31,7 @@ pukiwiki: "Bash"
 
 ```
 #!/bin/sh
-uplatex -synctex=1 "$1" && \
-dvipdfmx "`basename "$1" .tex`"
+ptex2pdf -u -l -ot "-synctex=1" "$1"
 ```
 
 ***
