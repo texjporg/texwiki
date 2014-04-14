@@ -78,7 +78,7 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) では
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には
 TeX Live 所収の
 ハイフネーションファイルが同梱されています。<br>
 8ビットコード対応済み
@@ -89,9 +89,16 @@ TeX Live 所収の
 - [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
-#### UNIX, Unix-like OS, OS X, Cygwin {#y673f46e}
+#### OS X {#l63154db}
 
-TeX Live, MacTeX では [TeX Live](</TeX Live/>) 所収の
+TeX Live, MacTeX には
+TeX Live 所収の
+ハイフネーションファイルが同梱されています。<br>
+
+#### UNIX, Unix-like OS, Cygwin {#y673f46e}
+
+TeX Live には
+TeX Live 所収の
 ハイフネーションファイルが同梱されています。<br>
 UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
 手作業で調整する必要があるかもしれません
