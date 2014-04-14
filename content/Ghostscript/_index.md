@@ -100,7 +100,8 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
 ### Ghostscript 9.14 でハイパーリンクが動作しない → Ghostscript 9.10 を使用する {#g8a715bc}
 
 - [pdfwrite - while processing pdfmarks, ensure strings are null-terminated before using sscanf](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=fb1ac66da597d9d6fe773ddaf3413098028cc6a0)
-- [Bug 695119 - Ghostscript inconsistently fails creating links with pdfmark](http://bugs.ghostscript.com/show_bug.cgi?id=695119)
+- [Bug 695119 &ndash; Ghostscript inconsistently fails creating links with pdfmark](http://bugs.ghostscript.com/show_bug.cgi?id=695119)
+- [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
 - [http://www.tug.org/pipermail/tex-live/2014-April/thread.html#35059](http://www.tug.org/pipermail/tex-live/2014-April/thread.html#35059)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035059.html](http://www.tug.org/pipermail/tex-live/2014-April/035059.html)
@@ -112,6 +113,7 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
     - [http://www.tug.org/pipermail/tex-live/2014-April/035065.html](http://www.tug.org/pipermail/tex-live/2014-April/035065.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035066.html](http://www.tug.org/pipermail/tex-live/2014-April/035066.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035067.html](http://www.tug.org/pipermail/tex-live/2014-April/035067.html)
+    - [http://www.tug.org/pipermail/tex-live/2014-April/035068.html](http://www.tug.org/pipermail/tex-live/2014-April/035068.html)
 
 <!-- *注意点 [#t786e49a] -->
 
