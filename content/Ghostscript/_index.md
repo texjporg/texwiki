@@ -12,7 +12,7 @@ pukiwiki: "Ghostscript"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghostscript.svg/200px-Ghostscript.svg.png" alt="Ghostscript" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Ghostscript とは {#a116e094}
 
@@ -72,8 +72,7 @@ AFPL 版は商業的な配布に制限があります。<br>
 
 <!-- -[[git.ghostscript.com Git:http://git.ghostscript.com/]] -->
 - [git.ghostscript.com Git - ghostpdl.git/summary](http://git.ghostscript.com/?p=ghostpdl.git)
-- \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+    - [コミットログ](http://git.ghostscript.com/?p=ghostpdl.git;a=shortlog)
 
 Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
 
@@ -114,6 +113,8 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
     - [http://www.tug.org/pipermail/tex-live/2014-April/035066.html](http://www.tug.org/pipermail/tex-live/2014-April/035066.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035067.html](http://www.tug.org/pipermail/tex-live/2014-April/035067.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035068.html](http://www.tug.org/pipermail/tex-live/2014-April/035068.html)
+    - [http://www.tug.org/pipermail/tex-live/2014-April/035072.html](http://www.tug.org/pipermail/tex-live/2014-April/035072.html)
+    - [http://www.tug.org/pipermail/tex-live/2014-April/035075.html](http://www.tug.org/pipermail/tex-live/2014-April/035075.html)
 
 <!-- *注意点 [#t786e49a] -->
 
