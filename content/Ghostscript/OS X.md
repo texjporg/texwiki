@@ -11,6 +11,8 @@ pukiwiki: "Ghostscript/OS X"
 
 ## Ghostscript for OS X {#ccf6bfc2}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ### 配布先 {#see6fdd7}
 
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
