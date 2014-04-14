@@ -11,6 +11,8 @@ pukiwiki: "Ghostscript/Linux"
 
 ## Ghostscript for Linux {#j0238493}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ### ダウンロード/インストール {#g31ae747}
 
 #### Arch Linux {#icf0081e}
