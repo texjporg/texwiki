@@ -258,16 +258,6 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/STHeiti-Regular              /AdobeHeitiStd-Regular  ;
 %/MSung-Light                  /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium           /AdobeMyungjoStd-Medium ;
-
-%%% CID-keyed fonts in Adobe Acrobat Reader 4
-%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
-%/Ryumin-Light                 /HeiseiMin-W3-Acro       ;
-%/GothicBBB-Medium             /HeiseiKakuGo-W5-Acro    ;
-%/STSong-Light                 /STSong-Light-Acro       ;
-%/MSung-Light                  /MSung-Light-Acro        ;
-%/MHei-Medium                  /MHei-Medium-Acro        ;
-%/HYSMyeongJo-Medium           /HYSMyeongJo-Medium-Acro ;
-%/HYGoThic-Medium              /HYGoThic-Medium-Acro    ;
 ```
 
 ***
