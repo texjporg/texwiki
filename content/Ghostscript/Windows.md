@@ -507,43 +507,54 @@ CID フォントを用いる場合，経験によるとエラーになるかも�
 
 ### 日本語 OpenType font {#j4509a9f}
 
-ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．
+ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．<br>
 
-CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．<br>
+このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．<br>
 
-OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)．これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります．従って，この作業を行うためのファイルあるいはPSコードが必要になります．
+OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)．<br>
+これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります．<br>
+従って，この作業を行うためのファイルあるいはPSコードが必要になります．<br>
 
-上の HiraMinProN-W3 を例に取ってみましょう．ps file に HiraMinProN-W3-H が指定されており，これをそのまま HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
+上の HiraMinProN-W3 を例に取ってみましょう．<br>
+ps file に HiraMinProN-W3-H が指定されており，これをそのまま HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．<br>
+フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．<br>
 
-cidfmap でのフォント代替の記述は CID font の場合と同様です．例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう．ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります．この場合には，
+cidfmap でのフォント代替の記述は CID font の場合と同様です．<br>
+例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう．<br>
+ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります．<br>
+この場合には，
 
 ```
 /Ryumin-Light-H /H [/Ryumin-Light] composefont pop
 ```
 
-という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．<br>
+どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．<br>
 
-なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．また W32TeX における 2013/10/01 以降の dvipsk-w32.tar.xz, dvipsk-w64.tar.xz
+なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．<br>
+当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．<br>
+また W32TeX における 2013/10/01 以降の dvipsk-w32.tar.xz, dvipsk-w64.tar.xz
 に入っている ps2otfps.exe を用いて
 
 ```
 ps2otfps old.ps new.ps
 ```
 
-によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます．
+によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます．<br>
 また最新の ps2otfps はオプション -f を付けるとフィルタとして働くので
 
 ```
 dvips -f ... dviname | ps2otfps -f >psfile.ps
 ```
 
-とすると更に便利です．
+とすると更に便利です．<br>
 
 ### 日本語 TrueType font {#wbee8199}
 
