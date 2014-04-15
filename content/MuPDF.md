@@ -31,7 +31,7 @@ MuPDF は<br>
 
 ### 動作環境 {#u6c9b420}
 
-Windows, OS X, Linux, Android, iOS で動作します．<br>
+Windows, OS X, Linux, Android, iOS
 
 ### License {#kcee43f7}
 
@@ -42,9 +42,8 @@ Windows, OS X, Linux, Android, iOS で動作します．<br>
 - [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
     - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
 
-### fork {#d573b664}
-
-- [https://github.com/monami-ya/mupdf/](https://github.com/monami-ya/mupdf/)
+<!-- **fork [#d573b664] -->
+<!-- -https://github.com/monami-ya/mupdf/ -->
 
 ## インストール {#m15a5d1f}
 
