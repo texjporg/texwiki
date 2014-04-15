@@ -302,34 +302,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/STSong-Light                 /AdobeSongStd-Light     ;
 %/MSung-Light                  /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium           /AdobeMyungjoStd-Medium ;
-
-%%% CID-keyed fonts in Adobe Acrobat Reader 4
-%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
-%/Ryumin-Light                 /HeiseiMin-W3-Acro       ;
-%/GothicBBB-Medium             /HeiseiKakuGo-W5-Acro    ;
-%/STSong-Light                 /STSong-Light-Acro       ;
-%/MSung-Light                  /MSung-Light-Acro        ;
-%/MHei-Medium                  /MHei-Medium-Acro        ;
-%/HYSMyeongJo-Medium           /HYSMyeongJo-Medium-Acro ;
-%/HYGoThic-Medium              /HYGoThic-Medium-Acro    ;
 ```
-
-<!--  -->
-<!-- %%% RICOH LX TrueType fonts in Vine Linux 3.2 CR -->
-<!-- %%% See http://vinelinux.org/whatsnew.html#news/20060123 -->
-<!-- /LX-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmincho.ttc)  /SubfontID 0 >> ; -->
-<!-- /LX-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothic.ttc)  /SubfontID 0 >> ; -->
-<!-- /LX-Gothic-UB                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxgothub.ttc)  /SubfontID 0 >> ; -->
-<!-- /LX-MaruGothic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxmgoth.ttc)   /SubfontID 0 >> ; -->
-<!-- /LX-POP                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/lxpop.ttc)     /SubfontID 0 >> ; -->
-<!--  -->
-<!-- %%% DynaComware DynaFont series in Vine Linux 3.2 CR -->
-<!-- %%% See http://vinelinux.org/whatsnew.html#news/20060123 -->
-<!-- /DFMincho-UB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfminc.ttc)   /SubfontID 0 >> ; -->
-<!-- /DFKaisho-SB                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfkai7.ttc)   /SubfontID 0 >> ; -->
-<!-- /DFBrushRD-W7                 << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfbrr7.ttc)   /SubfontID 0 >> ; -->
-<!-- /DFPOPStencil-W7              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dfpost7.ttc)  /SubfontID 0 >> ; -->
-<!-- /DFFreeRyuyou-Lt              << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/dffry2.ttc)   /SubfontID 0 >> ; -->
 
 ***
 
