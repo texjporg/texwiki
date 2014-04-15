@@ -59,6 +59,14 @@ $ pacman -S perl
 TeX Live の Windows 版には Perl の処理系が収録されています．<br>
 
 - [http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/?view=log)
+
+### インストール (Linux) {#y6a5abef}
+
+#### Arch Linux {#t5beee15}
+
+- [https://www.archlinux.org/packages/core/x86_64/perl/](https://www.archlinux.org/packages/core/x86_64/perl/)
+- [https://www.archlinux.org/packages/core/i686/perl/](https://www.archlinux.org/packages/core/i686/perl/)
 
 ### TeX関連モジュール {#y91d7e77}
 
