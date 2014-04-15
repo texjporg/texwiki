@@ -128,6 +128,10 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 DEFAULT_COMMAND_WINDOWS_MIKTEX = DEFAULT_COMMAND_LATEXMK
 ```
 
+#### SumatraPDF のインストール {#l6a7a293}
+
+[SumatraPDF](/SumatraPDF/) をインストールします．<br>
+
 #### SumatraPDF の設定 {#xdcd22a2}
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します．<br>
@@ -204,6 +208,10 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
 
+#### Skim のインストール {#uf11e28c}
+
+[Skim](/Skim/) をインストールします．<br>
+
 #### 使い方 {#i5f73594}
 
 TeX ファイルを編集して Cmd+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
@@ -234,6 +242,10 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
+
+#### Evince のインストール {#q24adbfa}
+
+[Evince](/Evince/) をインストールします．<br>
 
 #### 使い方 {#rcdb8d80}
 
