@@ -21,7 +21,7 @@ MuPDF は<br>
 
 <table>
 <tbody>
-<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/SumatraPDF/">SumatraPDF</a>, <a href="/zathura/">zathura</a> (zathura-pdf-mupdf)</td></tr>
+<tr><th style="color:#468">PDF ビューア</th><td style="color:#468;background-color:#DDD"><a href="/SumatraPDF/">SumatraPDF</a>, <a href="/zathura/">zathura</a> (zathura-pdf-mupdf), <a href="/qpdfview/">qpdfview</a> (fitz-plugin)</td></tr>
 </tbody>
 </table>
 
