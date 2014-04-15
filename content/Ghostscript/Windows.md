@@ -173,7 +173,7 @@ Ghostscript を C:\gs\gs9.14 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib<br>C:\texlive\2013\bin\win32;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib<br>C:\w32tex\bin;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib<br>C:\w32tex\bin;C:\gs\gs9.14\bin;C:\gs\gs9.14\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -205,7 +205,7 @@ Ghostscript を C:\Program Files\gs\gs9.14 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\texlive\2013\bin\win64;C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib<br>C:\texlive\2013\bin\win32;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib<br>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.14\bin;C:\Program Files\gs\gs9.14\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -866,33 +866,7 @@ composefont pop
 %/STHeiti-Regular              /AdobeHeitiStd-Regular  ;
 %/MSung-Light                  /AdobeMingStd-Light     ;
 %/HYSMyeongJo-Medium           /AdobeMyungjoStd-Medium ;
-
-%%% CID-keyed fonts in Adobe Acrobat Reader 4
-%%% See ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
-%/Ryumin-Light                 /HeiseiMin-W3-Acro       ;
-%/GothicBBB-Medium             /HeiseiKakuGo-W5-Acro    ;
-%/STSong-Light                 /STSong-Light-Acro       ;
-%/MSung-Light                  /MSung-Light-Acro        ;
-%/MHei-Medium                  /MHei-Medium-Acro        ;
-%/HYSMyeongJo-Medium           /HYSMyeongJo-Medium-Acro ;
-%/HYGoThic-Medium              /HYGoThic-Medium-Acro    ;
 ```
-
-<!--  -->
-<!-- %%% Hiragino TrueType fonts -->
-<!-- %%% See http://www.screen.co.jp/ga_product/sento/products/pr_TrueType.html -->
-<!-- %/HiraMinProN-W2               /HiraginoMin-W2-90ms-RKSJ-H  ; -->
-<!-- %/HiraMinProN-W3               /HiraginoMin-W3-90ms-RKSJ-H  ; -->
-<!-- %/HiraMinProN-W6               /HiraginoMin-W6-90ms-RKSJ-H  ; -->
-<!-- %/HiraKakuProN-W3              /HiraginoKaku-W3-90ms-RKSJ-H ; -->
-<!-- %/HiraKakuProN-W6              /HiraginoKaku-W6-90ms-RKSJ-H ; -->
-<!-- %/HiraKakuStdN-W8              /HiraginoKaku-W8-90ms-RKSJ-H ; -->
-<!-- /HiraginoMin-W2-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn2.ttc)  /SubfontID 1 >> ; -->
-<!-- /HiraginoMin-W3-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn3.ttc)  /SubfontID 1 >> ; -->
-<!-- /HiraginoMin-W6-90ms-RKSJ-H   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirmn6.ttc)  /SubfontID 1 >> ; -->
-<!-- /HiraginoKaku-W3-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg3.ttc)  /SubfontID 1 >> ; -->
-<!-- /HiraginoKaku-W6-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg6.ttc)  /SubfontID 1 >> ; -->
-<!-- /HiraginoKaku-W8-90ms-RKSJ-H  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/DShirkg8.ttc)  /SubfontID 1 >> ; -->
 
 ***
 
