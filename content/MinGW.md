@@ -239,3 +239,5 @@ fmtutil-sys.exe   pdftosrc.exe
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
+- [MinGW (64bit) + MSYS 環境の構築 (1)](http://www.devlog.alt-area.org/?p=2802)
+- [MinGW (64bit) + MSYS 環境の構築 (2)](http://www.devlog.alt-area.org/?p=2900)
