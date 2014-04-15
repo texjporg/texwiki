@@ -64,7 +64,7 @@ Java でプログラミングをしたい人は JDK をインストールしま�
 JDK 8, JDDE 2.0.3, JRegistry 1.8.1, JNA 4.0.0 で動作確認しています．<br>
 
 ```
->javac -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.0.0.jar Fwdsumatrapdf.java
+>javac -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf.java
 ```
 
 ```
@@ -79,7 +79,7 @@ C:.
         ├─jregistry-1.8.1.jar
         ├─reg.dll
         ├─reg_x64.dll
-        └─jna-4.0.0.jar
+        └─jna-4.1.0.jar
 ```
 
 ***
@@ -90,8 +90,8 @@ C:.
 
 ```
 /* vim: ts=4 sw=4 expandtab:
- * >javac -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.0.0.jar Fwdsumatrapdf.java
- * >java -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.0.0.jar Fwdsumatrapdf
+ * >javac -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf.java
+ * >java -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf
  */
 
 import java.util.List;
@@ -193,7 +193,7 @@ public class Fwdsumatrapdf
     public static void usage(String[] args)
     {
         if (args.length != 3) {
-            String s = "usage: java -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.0.0.jar Fwdsumatrapdf pdf tex line";
+            String s = "usage: java -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf pdf tex line";
             System.err.println(s);
             System.exit(2);
         }
