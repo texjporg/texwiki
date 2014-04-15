@@ -59,6 +59,7 @@ Windows, OS X, Linux で動作します．<br>
 
 - [http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
 - [ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
+- [http://www.partha.com/](http://www.partha.com/)
 
 ## 不具合 {#tedcde5e}
 
