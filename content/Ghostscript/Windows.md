@@ -11,7 +11,7 @@ pukiwiki: "Ghostscript/Windows"
 
 ## Ghostscript for Microsoft Windows {#zaffc352}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### Ghostscript {#w95eb08a}
 
@@ -19,17 +19,22 @@ Windows 版の Ghostscript バイナリが公式サイトで配布されてい�
 Windows 版には日本語の縦書き PostScript ファイルがきれいに表示できる角藤版 Ghostscript が存在します．<br>
 日本語の縦書き PostScript ファイルを表示する必要がある場合は角藤版 Ghostscript を使用してください．<br>
 
-### 角藤版 Ghostscript {#m511355c}
-
-Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語の縦書き PostScript ファイルがきれいに表示できるバイナリが存在します．<br>
-ここではそれを角藤版 Ghostscript と呼ぶことにします．<br>
-
 ### tlgs {#j25e0f58}
 
 TeX Live 2014 に含まれている Ghostscript (tlgs) は日本語・中国語・韓国語 (CJK) に対応しています．<br>
 
 - \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760)
 - \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504)
+
+#### ChangeLog {#a9e655e3}
+
+- \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+
+### 角藤版 Ghostscript {#m511355c}
+
+Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語の縦書き PostScript ファイルがきれいに表示できるバイナリが存在します．<br>
+ここではそれを角藤版 Ghostscript と呼ぶことにします．<br>
 
 ### 注意点 {#de072348}
 
