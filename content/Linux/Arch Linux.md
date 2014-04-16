@@ -251,3 +251,11 @@ $ sudo pacman -S awesome
 ```
 $ sudo pacman -S sakura
 ```
+
+## fcitx-mozc-ut {#y9e621be}
+
+- [https://aur.archlinux.org/packages/fcitx-mozc-ut/](https://aur.archlinux.org/packages/fcitx-mozc-ut/)
+
+```
+$ yaourt -S fcitx-mozc-ut
+```
