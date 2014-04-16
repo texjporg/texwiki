@@ -16,6 +16,7 @@ pukiwiki: "Perl"
 ## Perl 6 {#xd216707}
 
 - [Perl 6](http://perl6.org/)
+- [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
 
 ## Perl 5 {#lf5a8369}
 
