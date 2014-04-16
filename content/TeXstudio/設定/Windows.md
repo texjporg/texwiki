@@ -263,9 +263,9 @@ Ghostscript
 
 : rungs.exe
 
-: "C:\gs\gs9.14\bin\gswin64c.exe"
+: gswin64c.exe
 
-: "C:\gs\gs9.14\bin\gswin32c.exe"
+: gswin32c.exe
 
 Latexmk
 : &nbsp;
