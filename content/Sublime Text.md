@@ -13,7 +13,7 @@ pukiwiki: "Sublime Text"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Sublime Text とは {#w93773a9}
+## Summary {#w93773a9}
 
 Sublime Text はカスタマイズ性に優れたモダンなテキストエディタです． (シェアウェア)
 
@@ -312,7 +312,8 @@ LaTeXTools を使用している場合は Ctrl+左クリック を実行する�
 
 ### Windows {#m51226c8}
 
-- [Sublime Text 3 導入手順 (Windows7)](http://nanoway.net/pc/sublime-text-3)
+- [Sublime text3でTeXworksを使う](http://cumadeer.matrix.jp/?p=516)
+    <!-- -[[Sublime Text 3 導入手順 (Windows7):http://nanoway.net/pc/sublime-text-3]] -->
     <!-- -[[[Windows] Sublime Text 2 で LaTeX のコンパイル:http://gymnagisane.blog.fc2.com/blog-entry-170.html]] -->
     <!-- -[[Sublime Text3におけるLaTeXコンパイル時のゴミファイルの処理:http://hagetak.hatenablog.com/entry/2014/01/05/180432]] -->
     <!-- -[[SublimeText3でのLaTeX環境設定方法:http://hagetak.hatenablog.com/entry/2013/10/01/002830]] -->
