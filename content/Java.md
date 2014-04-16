@@ -79,7 +79,8 @@ C:.
         ├─jregistry-1.8.1.jar
         ├─reg.dll
         ├─reg_x64.dll
-        └─jna-4.1.0.jar
+        ├─jna-4.1.0.jar
+        └─jna-platform-4.1.0.jar
 ```
 
 ***
