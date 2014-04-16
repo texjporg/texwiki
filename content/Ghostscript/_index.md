@@ -86,7 +86,8 @@ Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正�
 
 GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い (縦書き) に優れています。<br>
 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました．<br>
-Ghostscript 7.07 と比べて，CJK （中国語・日本語・韓国語）の縦書きへの対応が不充分です (CID フォントやWindows API を使った日本語の表示はできます)．<br>
+Ghostscript 7.07 と比べて，CJK （中国語・日本語・韓国語）の縦書きへの対応が不充分です．<br>
+CID フォントや Windows API を使った日本語の表示はできます．<br>
 Ghostscript 7.07 には脆弱性が存在するので縦書きが必要ない場合は最新版の Ghostscript を使用してください。<br>
 
 ### フロントエンド {#ka477802}
@@ -101,8 +102,6 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
 Ghostscript 9.14 はハイパーリンクが動作しません．<br>
 Ghostscript 9.10 はハイパーリンクが動作します．<br>
 
-- [pdfwrite - while processing pdfmarks, ensure strings are null-terminated before using sscanf](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=fb1ac66da597d9d6fe773ddaf3413098028cc6a0)
-- [Bug 695119 &ndash; Ghostscript inconsistently fails creating links with pdfmark](http://bugs.ghostscript.com/show_bug.cgi?id=695119)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
 - [http://www.tug.org/pipermail/tex-live/2014-April/thread.html#35059](http://www.tug.org/pipermail/tex-live/2014-April/thread.html#35059)
@@ -118,8 +117,6 @@ Ghostscript 9.10 はハイパーリンクが動作します．<br>
     - [http://www.tug.org/pipermail/tex-live/2014-April/035068.html](http://www.tug.org/pipermail/tex-live/2014-April/035068.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035072.html](http://www.tug.org/pipermail/tex-live/2014-April/035072.html)
     - [http://www.tug.org/pipermail/tex-live/2014-April/035075.html](http://www.tug.org/pipermail/tex-live/2014-April/035075.html)
-
-<!-- *注意点 [#t786e49a] -->
 
 ## Ghostscript for Microsoft Windows {#w33eec77}
 
