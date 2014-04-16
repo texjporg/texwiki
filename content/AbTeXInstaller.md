@@ -289,8 +289,8 @@ otf パッケージの最新版は otfbeta です。<br>
 
 　　　Ghostscript<br>
 　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
-　　　　 ∣☑gs914w32full-gpl.exe　　　　　　　　無い　　　10.9MB<br>
-　　　　 ∣☐gs914w64full-gpl.exe　　　　　　　　無い　　　11.1MB<br>
+　　　　 ∣☑gs910w32full-gpl.exe　　　　　　　　無い　　　10.8MB<br>
+　　　　 ∣☐gs910w64full-gpl.exe　　　　　　　　無い　　　11.0MB<br>
 
 　　　GSview<br>
 　　　　 ∣<ins> ファイル名　　　　　　　　　　　　　　∣ 状態　　∣ サイズ　　</ins>∣<br>
