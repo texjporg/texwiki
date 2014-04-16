@@ -16,7 +16,7 @@ pukiwiki: "OTF"
 ## OTF (japanese-otf, japanese-otf-uptex) パッケージとは {#h230c839}
 
 [LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
-[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) は Adobe-Japan1-6 相当のフォントあたり最大23,058文字（ベータ版を利用した場合）の
+[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) のベータ版は Adobe-Japan1-6 相当のフォントあたり最大23,058文字の
 和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。<br>
 ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
 など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br>
@@ -326,7 +326,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
 そのためには OpenType フォントが必要です。<br>
 
-#### Microsoft Windows NT 6.x系 の場合 {#p413a15f}
+#### Microsoft Windows の場合 {#p413a15f}
 
 とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。<br>
@@ -930,7 +930,7 @@ ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.
 ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 ```
 
-Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
+Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
 
@@ -952,7 +952,7 @@ ptex2pdf -u -l -od "-f uptex-morisawa-pr6n-04.map -f otf-up-morisawa-pr6n.map" h
 ptex2pdf -u -l -od "-f morisawapr6n04.map" hoge.tex
 ```
 
-Microsoft Windows NT6.x から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
+Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
 
 ### <a id="map-dvips">For dvips</a> {#k1eb9f9c}
 
