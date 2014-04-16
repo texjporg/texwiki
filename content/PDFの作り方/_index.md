@@ -864,7 +864,7 @@ RedMon を展開して setup.exe を実行します。
 Redirect this port to the program:
 : &nbsp;
 
-C:\gs\gs9.14\bin\gswin64c.exe または C:\gs\gs9.14\bin\gswin32c.exe
+C:\gs\gs9.10\bin\gswin64c.exe または C:\gs\gs9.10\bin\gswin32c.exe
 
 Arguments for this program are:
 : -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dSAFER -sPAPERSIZE=a4 -sOutputFile="%1" -
