@@ -18,5 +18,6 @@ pukiwiki: "LuaJIT"
 - [SciLua](http://scilua.org/)
 - [【LuaJIT】たらい回しとフィボナッチでベンチマーク](http://atmarksharp.com/posts/c-lua-javascript-benchmark.html)
 - [LuaJITでWindowsアプリ](http://d.hatena.ne.jp/jeg/20130406/1365266391)
+- [http://luapower.com/](http://luapower.com/)
 - [http://colberg.org/gcc-lua/](http://colberg.org/gcc-lua/)
 - [http://colberg.org/gcc-lua-cdecl/](http://colberg.org/gcc-lua-cdecl/)
