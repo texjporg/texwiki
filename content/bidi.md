@@ -11,3 +11,4 @@ pukiwiki: "bidi"
 
 - [https://github.com/vafa/bidi/](https://github.com/vafa/bidi/)
 - [http://ctan.org/pkg/bidi](http://ctan.org/pkg/bidi)
+- [http://tex.stackexchange.com/questions/tagged/bidi](http://tex.stackexchange.com/questions/tagged/bidi)
