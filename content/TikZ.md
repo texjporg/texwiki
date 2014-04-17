@@ -911,5 +911,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [Miffy Code Snipets](http://miffysora.wikidot.com/tikz)
 - [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
     - TikZによるグラフ作成（折れ線グラフ、棒グラフ）の例
+- [TeX Alchemist Online / TikZによる連成振動アニメーション (1) ～ アニメーションGIF篇](http://doratex.hatenablog.jp/entry/20140301/1393604168) [(2) ～ 動くPDF篇](http://doratex.hatenablog.jp/entry/20140418/1397750533)
+    - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
 - [TikZを利用した図形描画](http://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)
     - 初等幾何の作図例（扇型、円を組み合わせた面積、角度）
