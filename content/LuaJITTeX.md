@@ -28,23 +28,8 @@ LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を [LuaJIT](http:
 
 ## インストール {#e0acc4f5}
 
-W32TeX に含まれています．<br>
-W32TeX の LuaJITTeX は [LuaTeX-ja](/LuaTeX-ja/) が使用可能です．<br>
-
-Linux の場合は以下のサイトからバイナリが入手出来ます．<br>
-
-- [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
-- [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
-
-```
-$ wget http://standalone.contextgarden.net/current/bin/luajittex/linux-64/bin/luajittex
-$ chmod +x luajittex
-$ sudo cp luajittex /usr/bin
-$ sudo ln -s /usr/bin/luajittex /usr/bin/luajitlatex
-$ luajitlatex --fmt=lualatex.fmt test.tex
-```
-
-などとすればとりあえず動作するようです．
+TeX Live 2014, W32TeX に含まれています．<br>
+[LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．<br>
 
 ## 使い方 {#vad7d54e}
 
@@ -172,3 +157,5 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 - [https://code.launchpad.net/~reviczky/luatex/debian-luajittex](https://code.launchpad.net/~reviczky/luatex/debian-luajittex)
 - [https://code.launchpad.net/~reviczky/+archive/luatex-daily](https://code.launchpad.net/~reviczky/+archive/luatex-daily)
 - [https://code.launchpad.net/~reviczky/+recipe/luajittex-daily](https://code.launchpad.net/~reviczky/+recipe/luajittex-daily)
+- [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
+- [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
