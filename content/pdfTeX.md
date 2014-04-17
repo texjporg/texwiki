@@ -17,6 +17,7 @@ pukiwiki: "pdfTeX"
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/pdftexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/ChangeLog?view=markup)
+    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/NEWS?view=markup)
 
 ## pdfLaTeX で日本語 {#dfcf126c}
 
