@@ -19,7 +19,7 @@ pukiwiki: "TeX Live"
 TeX Live は TeX のディストリビューションです．<br>
 
 - [TeX Live - TeX Users Group](http://www.tug.org/texlive/)
-- [The tex-live Archives](http://www.tug.org/pipermail/tex-live/)
+- [The tex-live Archives](http://tug.org/pipermail/tex-live/)
 
 ### 動作環境 {#j0ebf49b}
 
@@ -36,8 +36,6 @@ TeX Live には e-upTeX, XeTeX, LuaTeX が収録されています．<br>
 SyncTeX にも対応しています．<br>
 
 ### ChangeLog {#g68f0fa7}
-
-#### [Subversion Repository](http://www.tug.org/texlive/svn/) {#n6e3df9b}
 
 - [TeX Live and Subversion](http://www.tug.org/texlive/svn/)
 - \[[texlive\] Index of /trunk](http://www.tug.org/svn/texlive/trunk/)
@@ -219,15 +217,6 @@ TeX Live はアップデートが簡単に行えます．<br>
 
 ## [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
 
-<!-- TeX Live 2013 pretest が開始されました．~ -->
-<!--  -->
-<!-- TeX Live 2012 is frozen forever and will no -->
-<!-- longer be updated.  This happens in preparation for a new release. -->
-<!--  -->
-<!-- If you're interested in helping to pretest the new release (when -->
-<!-- pretests are available), please read http://tug.org/texlive/pretest.html. -->
-<!-- Otherwise, just wait, and the new release will be ready in due time. -->
-
 TeX Live pretest はミラーサイトを利用してください．<br>
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．<br>
 
@@ -310,6 +299,8 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 ## [ビルド](http://www.tug.org/texlive/build.html) <a id="build"></a> {#tdb9387a}
+
+- [TeX Live build procedure](http://www.tug.org/texlive/build.html)
 
 ### Windows {#mc7cf9a9}
 
