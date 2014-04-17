@@ -18,6 +18,12 @@ pukiwiki: "Perl"
 - [Perl 6](http://perl6.org/)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
 
+### インストール (Linux) {#yc5da695}
+
+#### Arch Linux {#g18a79fa}
+
+- [https://aur.archlinux.org/packages/rakudo/](https://aur.archlinux.org/packages/rakudo/)
+
 ## Perl 5 {#lf5a8369}
 
 - [The Perl Programming Language - www.perl.org](http://www.perl.org/)
