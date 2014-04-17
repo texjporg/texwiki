@@ -46,6 +46,7 @@ texdoc metapost
 
 - [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
     - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
+    - [CHANGES](https://foundry.supelec.fr/scm/viewvc.php/trunk/CHANGES?view=markup&root=metapost)
 
 ### MetaPost (日本語版) {#vcd749fc}
 
