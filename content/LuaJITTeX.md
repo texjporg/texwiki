@@ -19,7 +19,7 @@ LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を [LuaJIT](http:
 
 ### License {#a9b7759e}
 
-[GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luajittex)
+[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luajittex)
 
 ### ChangeLog {#s3ef1408}
 
