@@ -19,6 +19,7 @@ LuaTeX は Lua が使える TeX です．<br>
 LuaTeX に関しては以下のページを参照してください．<br>
 
 - [Luatex home page](http://www.luatex.org/)
+- [Main Page - LuaTeXWiki](http://wiki.luatex.org/)
 - [FusionForge: LuaTeX: Project Home](https://foundry.supelec.fr/projects/luatex/)
 - [lualatex · GitHub](https://github.com/lualatex)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
