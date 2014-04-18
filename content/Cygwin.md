@@ -246,7 +246,7 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.844 (64-bit)</strong> または <strong>Setup.exe version 2.844 (32-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.844 (64-bit or 32-bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
