@@ -45,6 +45,10 @@ Poppler は font configuration で win32 を選択した場合，日本語のフ
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します．<br>
 
+## Bug {#nbe31c73}
+
+- [poppler does not show fl ligature](https://bugs.freedesktop.org/show_bug.cgi?id=73291) -> Fixed
+
 ## Installation {#e0d6f40b}
 
 ### Windows {#o45a1c30}
