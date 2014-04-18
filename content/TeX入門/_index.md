@@ -18,6 +18,8 @@ pukiwiki: "TeX入門"
 
 ## TeX，LaTeX とは？ {#nef9fd41}
 
+### 読み方 {#gea7d22e}
+
 TeX は「テック」または「テフ」(\[tex\])と読みます。<br>
 どちらかというと大学系の人は「テフ」派が多いようです。<br>
 英語圏では \[tek\]，\[tekh\]
@@ -25,9 +27,13 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。<br>
 とも読むようです。<br>
 同様に LaTeX は「ラテック」「ラテフ」などと読みます。<br>
 
+### ロゴ {#k4f3130b}
+
 TeX および LaTeX
 の正式なロゴはこのページのタイトルのようなデザインです。<br>
 ただし，プレーンテキストや電子メールなどで書くときには組版《くみはん》処理による表記ができないのでそれぞれ “TeX”，“LaTeX” と書くことになっています。<br>
+
+### 作者 {#a2f15ee9}
 
 TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 が作った組版システムです。<br>
@@ -37,6 +43,11 @@ LaTeX
 の上に構築した文書処理システムです。<br>
 TeX, LaTeX はフリーウェアです。<br>
 
+### 動作環境 {#u28a6dc4}
+
+ほとんどの OS で動作します。<br>
+つまり，ほとんどのコンピュータで使えます。<br>
+
 - [Microsoft Windows](http://www.microsoft.com/japan/windows/)
 - UNIX&reg;（[OS X](http://www.apple.com/jp/osx/) など）
 - UNIX 互換
@@ -45,7 +56,7 @@ TeX, LaTeX はフリーウェアです。<br>
 
 - モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）
 
-など，ほとんどの OS（つまり，ほとんどのコンピュータ）で使えます。<br>
+### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
 日本では TeX，LaTeX
 を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/)）が日本語化した
@@ -58,6 +69,9 @@ p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用していました。<br>
 現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。<br>
+
+### Unicode に対応した TeX, LaTeX {#bcc0d89c}
+
 Unicode に完全対応したものには<br>
 
 - [LuaTeX, LuaLaTeX](/LuaTeX/)
@@ -65,6 +79,8 @@ Unicode に完全対応したものには<br>
 - [XeTeX, XeLaTeX](/XeTeX/)
 
 があります。<br>
+
+### LaTeX のバージョン {#q9d2d675}
 
 1994年に LaTeX の新版 LaTeX 2ε（トゥー・イー），1995年にはアスキーから日本語版
 pLaTeX 2ε が出ました。<br>
