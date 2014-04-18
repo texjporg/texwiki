@@ -327,13 +327,15 @@ nkf の場所は以下のようにして確認できます．<br>
 
     Path
     ----
+    C:\w32tex\bin64\nkf.exe
     C:\w32tex\bin\nkf.exe
     ```
 
-- コマンド プロンプトの場合 (Windows Vista 以降)
+- コマンド プロンプトの場合
 
     ```
     >where nkf
+    C:\w32tex\bin64\nkf.exe
     C:\w32tex\bin\nkf.exe
     ```
 
