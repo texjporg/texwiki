@@ -237,15 +237,15 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
-- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura-pdf-mupdf などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Evince, Okular, zathura-pdf-poppler, qpdfview などで使われています．
+- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin) などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#p8c9577b}
 
-- [Zotero](http://www.zotero.org/)
+- [Zotero](https://www.zotero.org/)
 - [JabRef](http://jabref.sourceforge.net/)
 - [QRef](http://members3.jcom.home.ne.jp/qref/)
 
