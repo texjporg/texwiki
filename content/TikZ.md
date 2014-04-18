@@ -369,8 +369,14 @@ node はそれ自体に大きさがあり、色や形も指定できます。
     - \[fill=色指定\] で node 内を塗ることができる
 - ラベル
     - \[label=位置:ラベル\] はラベル専用のノードを指定の位置（上下左右、東西南北、角度のいずれか）に設定する
+        - \usetikzlibrary{quotes}を用いると簡略化して \["ラベル"\] と指定できる（3.0.0からの新機能）
     - このオプションを用いることで、ノードを指定座標に置きつつラベルをずらして配置できる
     - \[pin=位置:ラベル\] は、ノードとラベルのあいだを線で結ぶ（線の太さはデフォルトではhelp line）
+- パス上に位置指定
+    - \[pos=○\] （○は0〜1までの数字）を指定するとパスの端点ではなく、パス上の相対的な位置にノードを設定する
+    - \[midway\] とすると \[pos=0.5\] と同じ意味になる。その他のオプションとして、at start/end, near start/end, very near start/end を指定することもできる。（それぞれ pos=0/1, 0.25/0.75, 0.125/0.875 を表す。）
+- ラベルの向き
+    - \[sloped\] とすると、パスにそって文字が配置される
 
 ```
 \begin{tikzpicture}
@@ -602,6 +608,55 @@ calc ライブラリを読み込むことで、簡単な座標計算ができま
 \foreach \P in {A,...,E,O} \fill (\P) circle (2pt);
 \fill [name intersections={of=line 1 and line 2}] (intersection-1) circle (2pt) node [below left] {垂心};
 \end{scope}
+\end{tikzpicture}
+\end{document}
+```
+
+角度記号をつける例。<br>
+
+```
+\documentclass[uplatex,dvipdfmx]{jsarticle}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc, quotes, angles}%quotesは角度のラベルオプション内に記述するために使用
+\begin{document}
+```
+
+```
+%直角記号の付け方の例1（calc ライブラリ必須）
+\begin{tikzpicture}
+ \draw
+ (20:3cm) coordinate (A) node[right] {A}
+ -- (0,0) coordinate (O) node[below left] {O}
+ -- (110:2cm) coordinate (C) node[above left] {C};
+ \coordinate (P) at ($(O)!.3cm!(A)!.3cm!90:(A)$);%直角記号の頂点の設定
+ \draw[thick, red] ($(O)!(P)!(A)$)--(P);
+ \draw[thick, red] ($(O)!(P)!(C)$)--(P);
+\end{tikzpicture}
+```
+
+```
+%直角記号の付け方の例2（calc ライブラリ必須）
+\begin{tikzpicture}
+ \draw
+ (20:3cm) coordinate (A) node[right] {A}
+ -- (0,0) coordinate (O) node[below left] {O}
+ -- (110:2cm) coordinate (C) node[above left] {C};
+ \draw[thick, red] ($(O)!8pt!(A)$)--($(O)!8pt!(A)!8pt!90:(A)$)--($(O)!8pt!(C)$);
+\end{tikzpicture}
+```
+
+```
+%一般の角度記号の付け方（3.0.0以降、angles ライブラリ必須）
+\begin{tikzpicture}
+ \draw
+ (3,-1) coordinate (A)
+ -- (0,0) coordinate (B)
+ -- (2,2) coordinate (C)
+ pic["$\alpha$",draw=orange, <->, very thick, angle eccentricity=1.2, angle radius=1cm] {angle=A--B--C};
+%線分の長さを示す例
+ \draw (B).. controls ($(B)!.2!(C)!10pt!90:(C)$) and ($(B)!.8!(C)!10pt!90:(C)$) .. (C) node [midway, sloped, fill=white] {$a$};
+ \draw (A).. controls ($(A)!.2!(B)!10pt!90:(B)$) and ($(A)!.8!(B)!10pt!90:(B)$) .. (B) node [midway, sloped, fill=white] {$b$};
 \end{tikzpicture}
 \end{document}
 ```
