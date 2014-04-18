@@ -83,6 +83,158 @@ babel のオプションを設定する場合は以下の方法があります�
 
 ## 文書の設定 {#x90c6e46}
 
+### レイアウトファイルの追加 {#g3fd040c}
+
+- [LyX wiki | Layouts / Layouts](http://wiki.lyx.org/Layouts/Layouts)
+- [LyX wiki | Layouts / CreatingLayouts](http://wiki.lyx.org/Layouts/CreatingLayouts)
+
+LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\]-\[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
+pdfLaTeX/XeLaTeX/LuaLaTeX/LuaJITLaTeX で新ドキュメントクラス相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
+レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．<br>
+
+#### bxjsarticle.layout {#zcc42b2e}
+
+bxjsarticle.layout ファイルを新規作成して以下の内容を編集します．
+
+***
+
+```
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Japanese Article (bxjsarticle)}
+#  \DeclareCategory{Articles}
+# Japanese new article textclass definition file.
+
+# This style provides japanese features 
+Format 49
+Provides japanese 1
+
+# Input general definitions
+Input article.layout
+```
+
+***
+
+#### bxjsreport.layout {#a19d53bc}
+
+bxjsreport.layout ファイルを新規作成して以下の内容を編集します．
+
+***
+
+```
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Japanese Report (bxjsreport)}
+#  \DeclareCategory{Reports}
+# Japanese new report textclass definition file.
+
+# This style provides japanese features 
+Format 49
+Provides japanese 1
+
+# Input general definitions
+Input report.layout
+```
+
+***
+
+#### ltjsarticle.layout {#v6cea741}
+
+ltjsarticle.layout ファイルを新規作成して以下の内容を編集します．
+
+***
+
+```
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Japanese Article (ltjsarticle)}
+#  \DeclareCategory{Articles}
+# Japanese new article textclass definition file.
+
+# This style provides japanese features 
+Format 49
+Provides japanese 1
+
+# Input general definitions
+Input article.layout
+```
+
+***
+
+#### ltjsbook.layout {#p91c61b8}
+
+ltjsbook.layout ファイルを新規作成して以下の内容を編集します．
+
+***
+
+```
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Japanese Book (ltjsbook)}
+#  \DeclareCategory{Books}
+# Japanese new book textclass definition file.
+
+# This style provides japanese features 
+Format 49
+Provides japanese 1
+
+# Input general definitions
+Input book.layout
+```
+
+***
+
+#### Windows の場合 {#k55c07b3}
+
+レイアウトファイルを
+
+- %USERPROFILE%\AppData\Roaming\LyX2.1\layouts\ (例えば C:\Users\Lydia\AppData\Roaming\LyX2.1\layouts\\)
+    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.1\Resources\layouts\ -->
+    <!-- -C:\Program Files\LyX 2.1\Resources\layouts\ (32-bit Windows の場合) -->
+    <!-- -C:\Program Files (x86)\LyX 2.1\Resources\layouts\ (64-bit Windows の場合) -->
+
+フォルダーにコピーします．<br>
+\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
+
+- Japanese Article (bxjsarticle)
+- Japanese Report (bxjsreport)
+- Japanese Article (ltjsarticle)
+- Japanese Book (ltjsbook)
+
+が追加されていることを確認します．<br>
+
+#### OS X の場合 {#r68e04c4}
+
+レイアウトファイルを
+
+<!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
+- &#x7e;/Library/Application Support/LyX-2.1/layouts/
+
+フォルダにコピーします．<br>
+\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
+
+- Japanese Article (bxjsarticle)
+- Japanese Report (bxjsreport)
+- Japanese Article (ltjsarticle)
+- Japanese Book (ltjsbook)
+
+が追加されていることを確認します．<br>
+
+#### Linux の場合 {#aa21cddd}
+
+レイアウトファイルを
+
+- &#x7e;/.lyx/layouts/
+
+ディレクトリにコピーします．<br>
+\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
+
+- Japanese Article (bxjsarticle)
+- Japanese Report (bxjsreport)
+- Japanese Article (ltjsarticle)
+- Japanese Book (ltjsbook)
+
+が追加されていることを確認します．<br>
+
 ### 言語 {#a5afecd2}
 
 #### 日本語の文書を作成する場合 {#ea058295}
