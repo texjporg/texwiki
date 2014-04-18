@@ -78,7 +78,6 @@ PGF/TikZには
 - 1165ページの長大なマニュアル (ver 3.0.0 の場合)
 
 が付属しています．<br>
-
 PGF/TikZ のマニュアルはコマンドラインから
 
 ```
@@ -86,11 +85,8 @@ texdoc tikz
 ```
 
 を実行することで表示できます．<br>
-
 マニュアルの前半には 70 ページにも及ぶチュートリアルがあるので、学習を始めるのは比較的容易です。<br>
-
 ところが、示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり、マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。<br>
-
 たとえば、チュートリアルの
 
 - p.39 (ver 3.0.0 の場合)
@@ -889,6 +885,11 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [How to draw nanotubes with TeX?](http://tex.stackexchange.com/questions/54341/how-to-draw-nanotubes-with-tex)
 - [「TikZ」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=TikZ)
 - [ZR-TeXnobabbler/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=TikZ)
+- [TikZ - TeX Alchemist Online](http://doratex.hatenablog.jp/category/TikZ)
+    - [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
+        - TikZによるグラフ作成（折れ線グラフ、棒グラフ）の例
+    - [TeX Alchemist Online / TikZによる連成振動アニメーション (1) ～ アニメーションGIF篇](http://doratex.hatenablog.jp/entry/20140417/1397742060) [(2) ～ 動くPDF篇](http://doratex.hatenablog.jp/entry/20140418/1397750533)
+        - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
 - [いわにぃのブログ : TikZ](http://blog.livedoor.jp/ti5942/tag/TikZ), [いわにぃのブログ : PGF/TikZ](http://blog.livedoor.jp/ti5942/archives/cat_131138.html)
 - [岩崎 隆盛/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=TikZ)
 - [「TikZ」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TikZ)
@@ -909,9 +910,5 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [BeamerのためのTikZ](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html)
     - 木構造を表す模式図の作成例
 - [Miffy Code Snipets](http://miffysora.wikidot.com/tikz)
-- [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
-    - TikZによるグラフ作成（折れ線グラフ、棒グラフ）の例
-- [TeX Alchemist Online / TikZによる連成振動アニメーション (1) ～ アニメーションGIF篇](http://doratex.hatenablog.jp/entry/20140301/1393604168) [(2) ～ 動くPDF篇](http://doratex.hatenablog.jp/entry/20140418/1397750533)
-    - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
 - [TikZを利用した図形描画](http://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)
     - 初等幾何の作図例（扇型、円を組み合わせた面積、角度）
