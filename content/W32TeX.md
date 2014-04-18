@@ -248,7 +248,7 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 入手してください。何故ならば、64-bit 用アーカイブには、バイナリだけしか<br>
 入っていないからです。<br>
 また、64-bit バイナリは、Ghostscript が必要な場合、64-bit の Ghostscript<br>
-を使用するようになっていますから、64-bit の Ghostscript (例えば gs914w64full-gpl.exe)<br>
+を使用するようになっていますから、64-bit の Ghostscript (例えば gs910w64full-gpl.exe)<br>
 をインストールしておいて下さい。<br>
 頻繁に更新されていますのでバージョン番号は下と異なるかもしれません。<br>
 
@@ -258,7 +258,7 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 - [ChangeLog](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ChangeLog)（変更履歴）← W32TeX
     は更新が頻繁に行われるので目を通しておいた方が良いです。
 
-- [texinst2013.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2013.zip)（簡易インストーラー）
+- [texinst2014.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2014.zip)（簡易インストーラー）
 - [unzip.exe](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/unzip.exe)（ZIP 展開ツール）
     - Windows は ZIP 形式の展開に標準で対応しています。[ZIP 形式](https://ja.wikipedia.org/wiki/ZIP_%28%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%29)の展開に対応したソフトウェア[^3]を用いてもかまいません。
     - unzip.exe は TeX Live Win32 版にも含まれています．
@@ -373,14 +373,14 @@ C:\w32tex\ 以外の別のフォルダー（ディレクトリ）にインスト
 
 1. Windows PowerShell またはコマンド プロンプトを起動します。<br>
 1. Windows PowerShell またはコマンド プロンプトに次のように
-    打ち込んで，C:\w32tex\ フォルダーの中に texinst2013.zip を展開します。<br>
+    打ち込んで，C:\w32tex\ フォルダーの中に texinst2014.zip を展開します。<br>
     なお，これはダウンロードしたファイル群がCドライブの
     temp というフォルダーに入っている場合です。<br>
 
     ```
     PS C:\Users\$Env:USERNAME> c:
     PS C:\Users\$Env:USERNAME> cd \w32tex
-    PS C:\w32tex> c:\temp\unzip c:\temp\texinst2013.zip
+    PS C:\w32tex> c:\temp\unzip c:\temp\texinst2014.zip
     ```
 
 1. Windows PowerShell またはコマンド プロンプトに次のように打ち込みます。<br>
@@ -388,7 +388,7 @@ C:\w32tex\ 以外の別のフォルダー（ディレクトリ）にインスト
     入っている場合です。<br>
 
     ```
-    PS C:\w32tex> .\texinst2013 c:/temp
+    PS C:\w32tex> .\texinst2014 c:/temp
     ```
 
     沢山のメッセージが出てきますが，メッセージが完全に止まるまで
