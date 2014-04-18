@@ -15,7 +15,7 @@ pukiwiki: "BibTeX関連ツール"
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-| [Zotero](http://www.zotero.org/) | Firefox, Windows, OS X, Linux | フリーソフトウェア． |
+| [Zotero](https://www.zotero.org/) | Firefox, Windows, OS X, Linux | フリーソフトウェア． |
 |  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://jbibtexmanager.sourceforge.net/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
 | [QRef](http://members3.jcom.home.ne.jp/qref/) | Windows 7, Vista, XP<br>OS X<br>Linux | フリーソフトウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://members3.jcom.home.ne.jp/qref/html/latex.htm) |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | OS X 10.6 以降 |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
