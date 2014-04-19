@@ -52,6 +52,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
     - [print/texlive-collection-langcjk](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 - [TeX Live 2012 on FreeBSD Extended support](http://anthesphoria.net/FreeBSD/TeXLive-2012/bin/)
+- [FreeBSDへのTeXliveインストール](http://sphinx-users.jp/cookbook/pdf/latex-install-freebsd.html)
 
 ## その他関連Ports {#k9078aba}
 
