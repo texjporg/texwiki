@@ -19,14 +19,11 @@ pukiwiki: "Cygwin"
 
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
 64-bit 版と 32-bit 版のインストーラーがあります．<br>
-アーカイブ展開のみで即座に cygwin と emacs が使える環境を提供してくれる gnupack もあります．<br>
 
 - [Cygwin](http://www.cygwin.com/)
     - [The Cygwin Project mailing list archives](http://cygwin.com/ml/cygwin/)
     - [The cygwin-announce mailing list archives](http://cygwin.com/ml/cygwin-announce/)
     - [The cygwin-apps mailing list archives](http://cygwin.com/ml/cygwin-apps/)
-- [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
-    - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 
 ### 動作環境 {#n6af06c2}
 
@@ -544,6 +541,8 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 ## 関連リンク {#bc8cfcc3}
 
 - [Gow (Gnu On Windows)](https://github.com/bmatzelle/gow/wiki)
+- [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
+    - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 - [ゼロからはじめる「Cygwin」 - WindowsでUNIXを動かしてみよう！](http://news.mynavi.jp/articles/2013/08/06/cygwin/)
 - [いつの間にか Cygwin の 64bit 版がリリースされてた](http://d.hatena.ne.jp/sa-y/20130821#1377076966)
 - [Cygwin 64 と gcc 4.8.1](http://www.oki-osk.jp/esc/cyg/cygwin-27.html)
