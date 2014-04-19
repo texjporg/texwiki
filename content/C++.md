@@ -43,6 +43,7 @@ pukiwiki: "C++"
 - [http://www.slideshare.net/adankevich/c11-15621074](http://www.slideshare.net/adankevich/c11-15621074)
 - [You cannot override a class (static) constant](https://gist.github.com/MihailJP/4236262)
 - [C++ Advent Calendar 2013 - PARTAKE](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
+- [C++ (fork) Advent Calendar 2013](http://www.adventar.org/calendars/211)
 
 ### 処理系 {#zc4c802d}
 
