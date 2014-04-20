@@ -37,6 +37,7 @@ XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
+    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/NEWS?view=markup)
 
 ### 概要 {#n5d8d950}
 
@@ -170,13 +171,13 @@ Windows のシステムフォントディレクトリの他に，購入したフ
     <dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 ```
 
-コンソール上で
+Windows PowerShell またはコマンド プロンプトで
 
 ```
     fc-cache -v
 ```
 
-なるコマンドを実行して下さい。<br>
+を実行して下さい。<br>
 これはフォントディレクトリにある各ファイルを
 スキャンして，キャッシュファイルを作成するコマンドです。<br>
 サブディレクトリは自動的にサーチされます。<br>
@@ -500,7 +501,8 @@ Graphite フォントの中にはビルマ文字の[Padauk Font](http://scripts.
 <!-- どなたか、修正加筆して頂くと嬉しいです。 -->
 
 そもそも TeX で改行が可能な位置は、(数式と kern を無視して)単純化すると、
-glue, penalty, discretionary break です。ハイフンは日本語に関係しないので、無視します。<br>
+glue, penalty, discretionary break です。<br>
+ハイフンは日本語に関係しないので、無視します。<br>
 文章中のどのような箇所に glue と penalty が現れるかというと、
 
 1. ユーザーが直に書き込んだ場所、
