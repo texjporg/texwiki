@@ -18,7 +18,7 @@ pukiwiki: "TeXworks"
 
 TeXworks は，TeX でドキュメントを作成するためのシンプルな統合環境です．<br>
 TeXworks は Dick[^1] Koch 氏の [TeXShop](/TeXShop/) をモデルにしています．<br>
-[TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/)，[MacTeX](/Mac/#mactex) 等のディストリビューションに標準で含まれています．<br>
+[TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等のディストリビューションに標準で含まれています．<br>
 [SyncTeX](/SyncTeX/) もサポートしており，メニューも日本語化されています．<br>
 TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 
@@ -112,9 +112,9 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
     <!-- - -[[Issue 261: Scripts:https://code.google.com/p/texworks/issues/detail?id=261]] -->
     <!-- - -[[Issue 516: backslash becomes yen:https://code.google.com/p/texworks/issues/detail?id=516]] -->
 
-### [MacTeX-2013 の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用する {#n5c2ae8e}
+### [OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用する {#n5c2ae8e}
 
-MacTeX-2013 の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
+OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
 TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できるそうです．<br>
 
 ■ 参考リンク<br>
