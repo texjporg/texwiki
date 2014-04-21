@@ -49,9 +49,6 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
     - [Apache OpenOffice Community](https://cwiki.apache.org/OOOUSERS/wiki-home.html)
 - [Apache OpenOffice 日本語プロジェクト](http://ja.openoffice.org/)
 - [Apache OpenOffice - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/openoffice/)
-- [OpenOffice.org 日本ユーザー会](http://oooug.jp/)
-    - [OpenOffice.org 日本ユーザー会 出版物リスト](http://pub.oooug.jp/)
-        - [OpenOffice.orgユーザーのためのLibreOffice移行ガイド](http://pub.oooug.jp/guide/migration/0_0_0/)
 
 ## LibreOffice/Apache OpenOffice Writer {#z088446c}
 
@@ -83,8 +80,11 @@ Apache OpenOffice (AOO) はフリーのオフィススイートです．
 ## 関連リンク {#x6de2338}
 
 - [LibreOfficeの導入事例 - The Document Foundation Wiki](https://wiki.documentfoundation.org/JA/Marketing/CaseStudy)
-- [LibreOffice/OpenOffice.org を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
+- [LibreOffice/Apache OpenOffice を使おう！](http://www.mct.ne.jp/users/fjv/OOo/)
 - [USBメモリ活用講座【基礎編・LibreOffice/OpenOffice.org のポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/ooo/)
 - [LibreOffice | 福岡市農業協同組合](http://www.ja-fukuoka.or.jp/category/libre/)
 - [LibreOffice アーカイブ - Jablog（ジャブログ） -JA福岡市公式ブログ-](http://www.ja-fukuoka.or.jp/blog/archives/cat2/libreoffice/)
 - [オープンソース | 会津若松市](http://www.city.aizuwakamatsu.fukushima.jp/bunya/opensource/)
+- [オーユージー](http://oooug.jp/)
+    - [オーユージー 出版物リスト](http://pub.oooug.jp/)
+        - [OpenOffice.orgユーザーのためのLibreOffice移行ガイド](http://pub.oooug.jp/guide/migration/0_0_0/)
