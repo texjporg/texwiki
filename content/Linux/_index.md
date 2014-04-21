@@ -187,6 +187,27 @@ TeX Live に収録されていないプログラムを使用したい場合は W
 
 - [install-w32tex.py](https://gist.github.com/2766442) (a.k.a. 誰得スクリプト) Install W32TeX on Wine<br>
 
+## プログラミング言語 {#ccef7053}
+
+- C
+- C++
+- Fortran
+- D
+- Go
+- Haskell
+- F#
+- C#
+- VB
+- Java
+- JavaScript
+- PHP
+- [Python](/Python/)
+- [Ruby](/Ruby/)
+- [Perl](/Perl/)
+- Lua
+- LuaJIT
+- [Lisp](/Lisp/)
+
 ## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
 
 LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
