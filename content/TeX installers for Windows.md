@@ -34,7 +34,7 @@ TeX インストーラを色々な視点から比較してみます。
 
 がおすすめです。
 
-## install-tl-windows.zip (TeX Live 2013 の場合は install-tl.zip) {#g1a25b59}
+## install-tl.zip {#g1a25b59}
 
 - <strong>ウェブサイト</strong>：[mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
 - <strong>作者</strong>：[TUG](http://www.tug.org/)さん
