@@ -62,6 +62,13 @@ Windows
 - [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
 - TeX ユーザのための [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) → 本家にマージされました．
 
+## 使い方 {#wd50e1d3}
+
+### コマンドラインオプション {#d9cff28c}
+
+- [http://blog.kowalczyk.info/software/sumatrapdf/manual-ja.html](http://blog.kowalczyk.info/software/sumatrapdf/manual-ja.html)
+- [https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp](https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp)
+
 ## SyncTeX {#m55b995b}
 
 ### forward search {#m71d9172}
