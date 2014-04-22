@@ -43,14 +43,19 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 
 ```
 \documentclass{article}
+\usepackage{luacode}
 \begin{document}
-\directlua{
+\begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
-    int MessageBoxA(void* window, const char* text, const char* caption, int type);
+    typedef void*          HANDLE;
+    typedef HANDLE         HWND;
+    typedef unsigned int   UINT;
+    typedef const char*    LPCSTR;
+    int MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType);
   ]]
   ffi.C.MessageBoxA(nil, "Happy LuaJITLaTeXing!", "LuaJITTeX", 0)
-}
+\end{luacode*}
 \end{document}
 ```
 
@@ -63,6 +68,8 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 \begin{luacode*}
   local ffi = require("ffi")
   ffi.cdef[[
+    typedef void*          HANDLE;
+    typedef HANDLE         HWND;
     typedef unsigned int   UINT;
     typedef unsigned short WORD;
     typedef unsigned long  DWORD;
@@ -74,7 +81,7 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
     };
     int MultiByteToWideChar(UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr,
           int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar);
-    int MessageBoxW(void* window, const wchar_t* text, const wchar_t* caption, int type);
+    int MessageBoxW(HWND hWnd, LPCWSTR lpText, LPCWSTR lpCaption, UINT uType);
   ]]
   local kernel32 = ffi.load("kernel32")
   local user32 = ffi.load("user32")
