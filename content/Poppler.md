@@ -191,34 +191,9 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - Install FreeType.
 
-- Install [nkf](/nkf/).
-
-- Install libxml2.
-
 - Install [Fontconfig](/Fontconfig/).
 
 - Install cairo.
-
-- Install OpenSSL.
-
-<!-- -[[Libgcrypt:http://directory.fsf.org/wiki/Libgcrypt]] をインストールします． -->
-<!--  -->
-<!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.10.tar.bz2 -->
-<!-- $ tar xvf libgpg-error-1.10.tar.bz2 -->
-<!-- $ pushd libgpg-error-1.10 -->
-<!-- $ ./config - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-<!-- $ curl -R -L -O ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.5.0.tar.bz2 -->
-<!-- $ tar xvf libgcrypt-1.5.0.tar.bz2 -->
-<!-- $ pushd libgcrypt-1.5.0 -->
-<!-- $ ./config - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
-
-- Install libssh2.
 
 - Install cURL.
 
