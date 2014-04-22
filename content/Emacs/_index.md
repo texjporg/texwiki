@@ -19,10 +19,9 @@ pukiwiki: "Emacs"
 ## Emacs とは {#a9896c87}
 
 [Emacs](https://ja.wikipedia.org/wiki/Emacs) は，拡張性のあるカスタマイズ可能なテキストエディタです．<br>
-でも，それだけではありません．<br>
 Emacs の核となる部分は [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) インタプリタです．<br>
 Emacs Lisp は [Lisp](/Lisp/) の方言の一つで，テキストの編集をサポートする機能があります．<br>
-Emacs Lisp を使えば自由に楽しくカスタマイズすることができます．<br>
+Emacs Lisp を使えば自由にカスタマイズすることができます．<br>
 
 ### GNU Emacs {#e77c7c99}
 
@@ -364,22 +363,19 @@ Source editor:
 
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
     - [Emacs24 のインストールと新機能](http://sakito.jp/emacs/emacs24.html)
-    - [Emacs23 (Cocoa Emacs) 入門から中毒まで](http://sakito.jp/emacs/emacs23.html)
 - [emacs:init.el - PastelWiki](http://pastelwill.jp/wiki/doku.php?id=emacs:init.el)
 - [MacEmacs JP Project](http://macemacsjp.sourceforge.jp/)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [Retina を活かす Emacs へ移行](http://milanista224.blogspot.jp/2012/08/retina-emacs24.html)
 - [Mac研究環境/【エディタ】](http://www.rmss.is.uec.ac.jp/pukiwiki/index.php?Mac%B8%A6%B5%E6%B4%C4%B6%AD%2F%A1%DA%A5%A8%A5%C7%A5%A3%A5%BF%A1%DB)
-- [Build Emacs 24.1 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1648)
 - [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
 - [Cocoa Emacs のフォント設定について](http://d.hatena.ne.jp/setoryohei/20110117/1295336454)
-- [Cocoa Emacs 64bit版を作ってみる](http://moimoitei.blogspot.com/2010/05/build-cocoa-emacs-64bit.html)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [CocoaEmacsに環境変数は引き継がれない](http://d.hatena.ne.jp/sugyan/20100704/1278241492)
 
 ### Linux {#l2b4bca7}
 
-- [Ubuntu12.04にEmacs24.1をソースからコンパイルしてインストールする方法](http://dqn.sakusakutto.jp/2012/06/ubuntu1204_emacs241_build.html)
+- [CentOS 6.4 に emacs 24.3 をインストールする。](http://jaxx2104.info/centos-6-4-emacs-24-3)
 
 ## 使い方 {#e776cf5f}
 
