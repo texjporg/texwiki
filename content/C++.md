@@ -52,6 +52,8 @@ pukiwiki: "C++"
     - [http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)
 - Microsoft Visual Studio Express
     - [Visual C++ Compiler November 2013 CTP](http://www.microsoft.com/en-us/download/details.aspx?id=41151)
+    - [Support For C++11 Features (Modern C++)](http://msdn.microsoft.com/en-us/library/vstudio/hh567368.aspx)
+    - [C++11 の機能 (Modern C++) のサポート](http://msdn.microsoft.com/ja-jp/library/vstudio/hh567368.aspx)
 
 ### ライブラリ・フレームワーク {#se7f734e}
 
