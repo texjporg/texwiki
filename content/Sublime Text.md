@@ -323,6 +323,7 @@ LaTeXTools を使用している場合は Ctrl+左クリック を実行する�
 
 ### OS X {#d13b8a86}
 
+- [Sublime Text 2 with LaTeX &amp; Skim on Mac (XeTeX支援中文)](http://tech.marsw.tw/blog/2014/04/18/sublime-text-2-with-latex-skim-on-mac-xelatex-chinese-support)
 - [【2014-3-12以降版】Mac Sublime Text2 or Sublime Text3 で Tex 導入の初歩から](http://yusuke0.hatenablog.com/entry/2014/04/06/111945)
 - [【2014年版】『MacTex 2013』と『Sublime Text 2』でpLaTeX環境をつくる](http://www.moxbit.com/2014/03/mac-tex-st2-latex-2014.html)
 - [Sublime Text2で書きたくてTeX環境（@Mac）整えようとしたら詰んだ](http://kmdrism.com/2013/texkowai/)
