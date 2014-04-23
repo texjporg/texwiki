@@ -770,7 +770,7 @@ composefont pop
 /HYSMyeongJo-Medium-Acro      /HYSMyeongJoStd-Medium-Acro  ;
 /HYGoThic-Medium-Acro         /HYGoThic-Medium             ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% monospaced TrueType outline fonts in Windows
 %%% See C:\Windows\Fonts\
 /MS-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 0 >> ;
 /MS-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 0 >> ;
@@ -783,7 +783,7 @@ composefont pop
 /GulimChe                     << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 1 >> ;
 /GungsuhChe                   << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 3 >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% proportional TrueType outline fonts in Windows
 %%% See C:\Windows\Fonts\
 /MS-PMincho                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 1 >> ;
 /MS-PGothic                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 1 >> ;
@@ -795,14 +795,14 @@ composefont pop
 /Gulim                        << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 0 >> ;
 /Gungsuh                      << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 2 >> ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% monospaced TrueType outline fonts in Windows
 %%% See C:\Windows\Fonts\
 /SimSun-ExtB                  << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simsunb.ttf) >> ;
 /KaiTi                        << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simkai.ttf)  >> ;
 /FangSong                     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simfang.ttf) >> ;
 /DFKaiShu-SB-Estd-BF          << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (C:/Windows/Fonts/kaiu.ttf)    >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7/Vista
+%%% proportional TrueType outline fonts in Windows
 %%% See C:\Windows\Fonts\
 /Meiryo                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 0 >> ;
 /Meiryo-Italic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 1 >> ;
