@@ -33,7 +33,7 @@ TeX Live は TeX のディストリビューションです．<br>
 [TeX Live - TeX Users Group](http://www.tug.org/texlive/) の Current release を参照．<br>
 
 TeX Live 2014 には e-upTeX, XeTeX, LuaTeX, LuaJITTeX が収録されています．<br>
-SyncTeX にも対応しています．<br>
+[SyncTeX](/SyncTeX/) にも対応しています．<br>
 
 ### ChangeLog {#g68f0fa7}
 
