@@ -26,6 +26,7 @@ TeX Live, W32TeX には既にインストールされています．<br>
 
 参考
 
+- [latex: revtex4-1 スタイルのインストール (MacOS X)](http://qiita.com/ryokbys/items/206e5a9bdfa5f174edb9)
 - [VineLinux6にrevtex4-1を入れる](http://m.ils.uec.ac.jp/memo/)
 
 ### AMS-LaTeX と natbib のインストール {#f1d3fb76}
