@@ -209,7 +209,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /ZenKai-Uni-Adobe-GB1         << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/ttf-arphic-ukai/ukai.ttf)   >> ;
 
 %%% WenQuanYi outline fonts
-%%% See http://wqy.sourceforge.net/en/
+%%% See http://wenq.org/
 %%%     http://sourceforge.net/projects/wqy/
 /WenQuanYiZenHei              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/wqy-zenhei/wqy-zenhei.ttf) >> ;
 /WenQuanYiZenHei-Adobe-CNS1   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/wqy-zenhei/wqy-zenhei.ttf) >> ;
@@ -250,7 +250,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %%% OpenType fonts with PostScript outlines in Adobe Reader/Acrobat XI
 %%% See http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac
 %%%     ftp://ftp.adobe.com/pub/adobe/reader/mac/11.x/11.0.00/misc/
-%%%     /Library/"Application Support"/Adobe/PDFL/?.0/Fonts/
+%%%     /Library/"Application Support"/Adobe/Fonts/
 %/Ryumin-Light                 /KozMinPr6N-Regular     ;
 %/GothicBBB-Medium             /KozGoPr6N-Medium       ;
 %/GothicBBB-Medium             /KozGoPro-Medium        ;
