@@ -228,7 +228,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /ZenKai-Uni-Adobe-GB1         << /FileType /TrueType  /CSI [(GB1) 5]     /Path (/usr/share/fonts/truetype/arphic/ukai.ttf)  >> ;
 
 %%% WenQuanYi outline fonts
-%%% See http://wqy.sourceforge.net/en/
+%%% See http://wenq.org/
 %%%     http://sourceforge.net/projects/wqy/
 /WenQuanYiZenHei              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttf) >> ;
 /WenQuanYiZenHei-Adobe-CNS1   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/wenquanyi/wqy-zenhei/wqy-zenhei.ttf) >> ;
