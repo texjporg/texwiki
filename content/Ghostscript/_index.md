@@ -97,12 +97,15 @@ Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という
 
 ## 不具合 {#o389845b}
 
-### Ghostscript 9.14 でハイパーリンクが動作しない → Ghostscript 9.10 を使用する {#g8a715bc}
+### Ghostscript 9.14 でハイパーリンクが動作しない → Ghostscript 9.10 を使用する → commit [c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c) で修正されました {#g8a715bc}
 
+commit [c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c) で修正されました．<br>
 Ghostscript 9.14 はハイパーリンクが動作しません．<br>
 Ghostscript 9.10 はハイパーリンクが動作します．<br>
 
+- [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
+- [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](http://bugs.ghostscript.com/show_bug.cgi?id=695175)
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
 - [http://tug.org/pipermail/tex-live/2014-April/thread.html#35059](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
     - [http://tug.org/pipermail/tex-live/2014-April/035059.html](http://tug.org/pipermail/tex-live/2014-April/035059.html)
