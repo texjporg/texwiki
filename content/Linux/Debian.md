@@ -38,6 +38,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary)
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary)
 - [http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk](http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk)
+- [http://people.debian.org/~preining/TeX/](http://people.debian.org/~preining/TeX/)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
