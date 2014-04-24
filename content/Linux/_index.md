@@ -119,7 +119,7 @@ TEXMFLOCAL の値を確認します．<br>
 
 ```
 $ kpsewhich -var-value TEXMFLOCAL
-/usr/local/texlive/????/../texmf-local
+/usr/local/texlive/texmf-local
 ```
 
 /usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
