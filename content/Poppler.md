@@ -197,8 +197,6 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - Install cURL.
 
-- Install libffi.
-
 - Install GLib.
 
 - Install [Poppler](http://poppler.freedesktop.org/).
