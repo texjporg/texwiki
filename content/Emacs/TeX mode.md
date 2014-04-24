@@ -27,6 +27,15 @@ Emacs には標準で [TeX mode](http://www.gnu.org/software/emacs/manual/html_n
 
 GPLv3
 
+## 注意点 {#m2671d0c}
+
+### " を入力しようとすると \`\` が入力される → C-q " {#y76d0516}
+
+- [Emacs (Meadow) + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
+
+TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
+\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
+
 ## 設定 {#x084b3ec}
 
 ### Windows {#m2df1dd4}
