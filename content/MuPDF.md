@@ -7,7 +7,7 @@ pukiwiki: "MuPDF"
 
 # MuPDF
 
-## [MuPDF](http://www.mupdf.com/) {#x9985d4a}
+## [MuPDF](http://www.mupdf.com/) → 問題が発生する場合は [Poppler](/Poppler/) を使用する {#x9985d4a}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/a/a7/MuPDF.png" alt="MuPDF" style="float:right">
 
@@ -49,9 +49,44 @@ Windows, OS X, Linux, Android, iOS
 
 ### Windows {#j0820160}
 
+- [http://www.mupdf.com/downloads/](http://www.mupdf.com/downloads/)
+
+### OS X {#bad1a3d8}
+
+- [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
+- [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
+
+### Arch Linux {#y10f7abd}
+
+- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
+
+### Linux Mint {#od9b1036}
+
+- [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
+
+### Debian {#ve64b6e7}
+
+- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
+
+### Fedora {#k5d2c514}
+
+- [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
+
+### openSUSE {#sa86e80c}
+
+- [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
+
+### Gentoo Linux {#d1a956ba}
+
+- [http://packages.gentoo.org/package/app-text/mupdf](http://packages.gentoo.org/package/app-text/mupdf)
+
+## ビルド {#ddb9bb15}
+
+### Windows {#o34a88ba}
+
 #### MinGW {#qd80d98f}
 
-[Poppler - TeX Wiki](/Poppler/) を参照して MinGW, freetype2, libjpeg, libopenjpeg, zlib 等をインストールします．
+[MinGW](/MinGW/), zlib, libjpeg, OpenJPEG, FreeType 等をインストールします．
 
 - [jbig2dec](http://git.ghostscript.com/?p=jbig2dec.git) をインストールします．
 
@@ -118,35 +153,6 @@ fitz/image_jpx.c の
 ```
 $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg zlib`" LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 `pkg-config --libs freetype2 libopenjpeg zlib`" make build=release prefix=/mingw install
 ```
-
-### OS X {#bad1a3d8}
-
-- [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
-- [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
-
-### Arch Linux {#y10f7abd}
-
-- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
-
-### Linux Mint {#od9b1036}
-
-- [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
-
-### Debian {#ve64b6e7}
-
-- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
-
-### Fedora {#k5d2c514}
-
-- [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
-
-### openSUSE {#sa86e80c}
-
-- [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
-
-### Gentoo Linux {#d1a956ba}
-
-- [http://packages.gentoo.org/package/app-text/mupdf](http://packages.gentoo.org/package/app-text/mupdf)
 
 ## 関連リンク {#u27a744e}
 
