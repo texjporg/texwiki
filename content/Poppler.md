@@ -7,7 +7,7 @@ pukiwiki: "Poppler"
 
 # Poppler
 
-## [Poppler](http://poppler.freedesktop.org/) {#c1f030c4}
+## [Poppler](http://poppler.freedesktop.org/) → 問題が発生する場合は [MuPDF](/MuPDF/) を使用する {#c1f030c4}
 
 <img src="http://poppler.freedesktop.org/logo.png" alt="poppler" style="float:right">
 
@@ -212,9 +212,9 @@ CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用で�
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.25.3.tar.xz
-$ tar xvf poppler-0.25.3.tar.xz
-$ pushd poppler-0.25.3
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.26.0.tar.xz
+$ tar xvf poppler-0.26.0.tar.xz
+$ pushd poppler-0.26.0
 ```
 
 ***
