@@ -107,19 +107,7 @@ Ghostscript 9.10 はハイパーリンクが動作します．<br>
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
 - [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](http://bugs.ghostscript.com/show_bug.cgi?id=695175)
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
-- [http://tug.org/pipermail/tex-live/2014-April/thread.html#35059](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
-    - [http://tug.org/pipermail/tex-live/2014-April/035059.html](http://tug.org/pipermail/tex-live/2014-April/035059.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035060.html](http://tug.org/pipermail/tex-live/2014-April/035060.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035061.html](http://tug.org/pipermail/tex-live/2014-April/035061.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035062.html](http://tug.org/pipermail/tex-live/2014-April/035062.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035063.html](http://tug.org/pipermail/tex-live/2014-April/035063.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035064.html](http://tug.org/pipermail/tex-live/2014-April/035064.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035065.html](http://tug.org/pipermail/tex-live/2014-April/035065.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035066.html](http://tug.org/pipermail/tex-live/2014-April/035066.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035067.html](http://tug.org/pipermail/tex-live/2014-April/035067.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035068.html](http://tug.org/pipermail/tex-live/2014-April/035068.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035072.html](http://tug.org/pipermail/tex-live/2014-April/035072.html)
-    - [http://tug.org/pipermail/tex-live/2014-April/035075.html](http://tug.org/pipermail/tex-live/2014-April/035075.html)
+- \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
 
 ## Ghostscript for Microsoft Windows {#w33eec77}
 
