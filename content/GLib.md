@@ -16,6 +16,7 @@ pukiwiki: "GLib"
 
 #### MinGW {#s8134160}
 
+- Install libffi.
 - Install GLib.
 
 ```
