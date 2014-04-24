@@ -50,6 +50,15 @@ AUCTeX は GNU Emacs / XEmacs の TeX モードです．<br>
 　[![Showing a sectioning command and math rendered as images inside an Emacs buffer.](http://www.gnu.org/software/auctex/img/preview-screenshot-thumb.png)](http://www.gnu.org/software/auctex/img/preview-screenshot.png)
 　[![Showing a less puristic interface setup with LATEX-specific tool bar and scroll bar.](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar.png)
 
+## 注意点 {#gb666e4a}
+
+### " を入力しようとすると \`\` が入力される → C-q " {#q07274ce}
+
+- [Emacs (Meadow) + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
+
+AUCTeX, TeX mode, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
+\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
+
 ## 不具合 {#dd1381aa}
 
 - [bug-auctex](http://www.mail-archive.com/bug-auctex@gnu.org/)
