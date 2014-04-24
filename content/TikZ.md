@@ -936,6 +936,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TeXample.net](http://www.texample.net/)
     - [TikZ and PGF examples](http://www.texample.net/tikz/examples/)
 - [Newest &#39;tikz-pgf&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/tikz-pgf)
+    - [diagrams - Nice scientific pictures show off](http://tex.stackexchange.com/questions/158668/nice-scientific-pictures-show-off)
     - [How can we display fireworks?](http://tex.stackexchange.com/questions/39485/how-can-we-display-fireworks)
     - [How to draw nanotubes with TeX?](http://tex.stackexchange.com/questions/54341/how-to-draw-nanotubes-with-tex)
 - [「TikZ」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=TikZ)
