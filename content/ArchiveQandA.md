@@ -35,12 +35,12 @@ pukiwiki: "ArchiveQandA"
 
 ### dviout のエラーメッセージ {#lb61846e}
 
-dviout で問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
+dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ### xdvi のエラーメッセージ {#x72af3e8}
 
-xdvi で問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
+xdvi で日本語が表示されないなどの問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ### TeX本体のエラーメッセージ {#s54a975c}
