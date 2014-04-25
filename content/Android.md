@@ -121,17 +121,10 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 
 ***
 
-### TeXPortal Free {#s2aa743c}
-
-- [TeXPortal Free](https://play.google.com/store/apps/details?id=lah.texportal)
-- [オフラインのルートなしAndroid上で日本語texをする(インストールなどにオンライン作業要、PC不要、フリーソフトのみ)](http://note.chiebukuro.yahoo.co.jp/detail/n189208)
-
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [LaTeX for Android](https://play.google.com/store/apps/details?id=in.rgksugan.latex4android)
-    - [https://github.com/rgksugan/Latex4Android](https://github.com/rgksugan/Latex4Android)
 - [MobileOrg (Donate)](https://play.google.com/store/apps/details?id=com.matburt.mobileorg.donate), [MobileOrg](https://play.google.com/store/apps/details?id=com.matburt.mobileorg)
     - [https://github.com/matburt/mobileorg-android](https://github.com/matburt/mobileorg-android)
     - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
@@ -142,9 +135,6 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 - [rbox](http://d.hatena.ne.jp/rattcv/searchdiary?word=rbox)
     - [http://twilog.org/ti5942/search?word=rbox](http://twilog.org/ti5942/search?word=rbox)
     - [Vim - TeX Wiki](/Vim/)
-- [Emacs](https://play.google.com/store/apps/details?id=com.zielm.emacs)
-    - [https://github.com/zielmicha/emacs-android](https://github.com/zielmicha/emacs-android)
-    - [Emacs - TeX Wiki](/Emacs/)
 - [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
     - [https://github.com/jecelyin/920-Text-Editor](https://github.com/jecelyin/920-Text-Editor)
 
