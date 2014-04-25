@@ -118,14 +118,14 @@ $ pacman -S ruby
 
 inverse search は実装していません．<br>
 forward search のみ実装しています．<br>
-Evince 3.10.3, Ruby 2.1.1, ruby-dbus 0.10.0 で動作確認しています．<br>
+Evince 3.12.1, Ruby 2.1.1, ruby-dbus 0.11.0 で動作確認しています．<br>
 
 ```
 $ sudo gem install ruby-dbus
-Fetching: ruby-dbus-0.10.0.gem (100%)
-Successfully installed ruby-dbus-0.10.0
-Parsing documentation for ruby-dbus-0.10.0
-Installing ri documentation for ruby-dbus-0.10.0
+Fetching: ruby-dbus-0.11.0.gem (100%)
+Successfully installed ruby-dbus-0.11.0
+Parsing documentation for ruby-dbus-0.11.0
+Installing ri documentation for ruby-dbus-0.11.0
 Done installing documentation for ruby-dbus after 1 seconds
 1 gem installed
 ```
