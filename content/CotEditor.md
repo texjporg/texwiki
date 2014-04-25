@@ -17,30 +17,25 @@ pukiwiki: "CotEditor"
 
 CotEditor はテキストエディタです．
 
-- [CotEditor](http://sourceforge.jp/projects/coteditor/)
+- [CotEditor -Text Editor for OS X](http://coteditor.github.io/)
+    - [CotEditor Beta](http://coteditor.github.io/beta)
+- [https://github.com/coteditor/](https://github.com/coteditor/)
 
 ### 動作環境 {#he679a78}
 
-OS X 10.8, 10.7, 10.6, 10.5, 10.4
+OS X
 
 ### License {#m60344b8}
 
-[GPLv2](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=blob;f=Docs/GPL.txt;hb=HEAD)
+[GPLv2](https://github.com/coteditor/CotEditor/blob/develop/LICENSE)
 
 ### リリース情報 {#ed02eb4b}
 
-[git.sourceforge.jp Git - coteditor/CotEditor.git/tags](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=tags)
+- [https://github.com/coteditor/coteditor.github.io/tree/master/releasenotes](https://github.com/coteditor/coteditor.github.io/tree/master/releasenotes)
 
 ### ChangeLog {#o0aedc6a}
 
-- [coteditor/CotEditor.git](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git)
-    - [shortlog](http://git.sourceforge.jp/view?p=coteditor/CotEditor.git;a=shortlog)
-- [1024jp/CotEditor · GitHub](https://github.com/1024jp/CotEditor)
-    - [コミットログ](https://github.com/1024jp/CotEditor/commits/)
-
-## ダウンロード {#v461a501}
-
-[http://sourceforge.jp/projects/coteditor/releases/](http://sourceforge.jp/projects/coteditor/releases/)
+- [https://github.com/coteditor/CotEditor/commits/develop](https://github.com/coteditor/CotEditor/commits/develop)
 
 ## CotEditor で TeX {#acb0f7fd}
 
