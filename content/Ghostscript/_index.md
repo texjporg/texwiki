@@ -129,6 +129,7 @@ Ghostscript/OS X を参照．
 
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/gs.html)
+- [ghoastscriptの日本語文字化けについて。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Windows 用 Ghostscript と GSview のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/gs.htm)（トニイさん）
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
