@@ -52,7 +52,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選択
 
 ```
-Arch Linux 3.11.6-1-ARCH (tty1)
+Arch Linux ?.??.?-?-ARCH (tty1)
 
 archiso login: root (automatic login)
 root@archiso ~ # 
@@ -198,6 +198,26 @@ $ sudo pacman -S mupdf
 [Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
+
+- [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
+
+```
+$ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
+$ sudo pacman -S wine
+$ wine AdbeRdr11006_ja_JP.exe
+$ wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe
+```
+
+```
+Adobe Reader の保護モード
+システム設定の互換性に問題があるので、 Adobe Reader を保護モードで開けません。保護モードを無効にして Adobe Reader を開きますか？
+```
+
+```
+◯ 保護モードを無効にして開く(O)
+◎ 常に保護モードを無効にして開く(A) ← 常に保護モードを無効にして開くを選択
+◯ 保護モードを無効にした状態では開かない(D)
+```
 
 ## [LyX](/LyX/) {#odd649e9}
 
