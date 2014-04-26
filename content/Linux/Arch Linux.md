@@ -202,9 +202,46 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
 ```
-$ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
 $ sudo pacman -S wine
+$ sudo pacman -S wine_gecko
+$ sudo pacman -S wine-mono
+```
+
+Wine のインストールで
+
+```
+$ sudo pacman -S wine
+エラー: 対象が見つかりませんでした: wine
+```
+
+と表示される場合は multilib を有効にして pacman -Syu を実行します．<br>
+
+```
+$ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
 $ wine AdbeRdr11006_ja_JP.exe
+```
+
+インストールが途中で終了してしまう場合は
+
+```
+$ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行します．<br>
+
+```
+Wine cannot find the ncurses library (libncursesw.so.5).
+```
+
+と表示される場合は
+
+```
+$ sudo pacman -S lib32-ncurses
+```
+
+を実行します．<br>
+
+```
 $ wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe
 ```
 
