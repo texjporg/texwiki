@@ -95,6 +95,8 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 
 ### コマンドラインオプション {#f3a7bfad}
 
+- [http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/sources/main.cpp](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/sources/main.cpp)
+
 ```
 $ qpdfview --help
 Usage: qpdfview [options] [--] [file[#page]] [file[#src:name:line:column]] ...
