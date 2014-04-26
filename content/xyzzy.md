@@ -26,6 +26,10 @@ Windows 8.1, 8, 7, Vista, XP
 
 MIT License
 
+### ChangeLog {#l81f20e0}
+
+- [https://github.com/xyzzy-022/xyzzy/commits/develop](https://github.com/xyzzy-022/xyzzy/commits/develop)
+
 ## xyzzy で LaTeX {#mac2333e}
 
 - [xyzzy 付属の LaTeX モード](https://github.com/xyzzy-022/xyzzy/blob/develop/lisp/LaTeX.l)
