@@ -31,8 +31,16 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 
 ### License {#fe355f24}
 
+GPLv3
+
 - [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
 - [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
+- [https://cygwin.com/viewvc/src/winsup/COPYING?view=markup](https://cygwin.com/viewvc/src/winsup/COPYING?view=markup)
+
+### ChangeLog {#t7089ab8}
+
+- [https://cygwin.com/viewvc/src/winsup/doc/ChangeLog?view=markup](https://cygwin.com/viewvc/src/winsup/doc/ChangeLog?view=markup)
+- [https://cygwin.com/viewvc/src/winsup/ChangeLog?view=markup](https://cygwin.com/viewvc/src/winsup/ChangeLog?view=markup)
 
 ## TeX Live <a id="texlive"></a> {#dead7b03}
 
