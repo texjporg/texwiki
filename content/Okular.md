@@ -80,6 +80,8 @@ KDE
 
 ### コマンドラインオプション {#md2d6a7f}
 
+- [https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/shell/main.cpp](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/shell/main.cpp)
+
 ```
 $ okular --help
 使用法: okular [Qt-オプション] [KDE-オプション] [オプション] [URL] 
