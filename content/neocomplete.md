@@ -11,7 +11,7 @@ pukiwiki: "neocomplete"
 
 ## [neocomplete](https://github.com/Shougo/neocomplete.vim) &amp; [neosnippet](https://github.com/Shougo/neosnippet.vim) {#g1ec4871}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## neocomplete とは {#a5118d33}
 
