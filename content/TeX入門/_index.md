@@ -27,6 +27,13 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。<br>
 とも読むようです。<br>
 同様に LaTeX は「ラテック」「ラテフ」などと読みます。<br>
 
+- [TeX の発音](http://d.hatena.ne.jp/takeda25/20140428/1398662547)
+- [TeXはテック](http://kahei.org/blog/2014/04/tex-3.html)
+- [TeXはテック - Talpa memorandum](http://sonmin-sokuho.hatenablog.com/entry/2014/04/28/120221)
+- [「TeX」の読み方は「テック」だった | スラッシュドット・ジャパン IT](http://it.slashdot.jp/story/14/04/28/0911215/%E3%80%8CTeX%E3%80%8D%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9%E3%81%AF%E3%80%8C%E3%83%86%E3%83%83%E3%82%AF%E3%80%8D%E3%81%A0%E3%81%A3%E3%81%9F)
+- [「TeX」の読み方はテフ、それともテック？](http://www.kksanshusha.jp/booklab/archives/1184)
+- [Wikipedia.ja:TeX](https://ja.wikipedia.org/wiki/TeX)
+
 ### ロゴ {#k4f3130b}
 
 TeX および LaTeX
