@@ -32,3 +32,4 @@ $ popd
 ### fork {#s2fdc39a}
 
 - [LibreSSL](http://www.libressl.org/)
+- [LibreSSL Watch](http://libressl.tumblr.com/)
