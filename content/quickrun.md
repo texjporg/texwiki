@@ -11,7 +11,7 @@ pukiwiki: "quickrun"
 
 ## quickrun → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box を使用する {#f53cc325}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## quicrun とは {#nc05191d}
 
