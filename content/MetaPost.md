@@ -157,7 +157,7 @@ $ sudo tlmgr update --all
 
 ### 不具合 {#z01f418a}
 
-#### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される {#c01c14c0}
+#### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップデート {#c01c14c0}
 
 ```
 (最近の W32TeX ではフィックスされている。)
