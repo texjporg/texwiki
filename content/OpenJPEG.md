@@ -17,7 +17,7 @@ pukiwiki: "OpenJPEG"
 
 #### MinGW {#c2a477ae}
 
-OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.1 をインストールしてください．<br>
+OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.2 をインストールしてください．<br>
 
 OpenJPEG 最新版の場合
 
@@ -45,9 +45,9 @@ $ popd
 OpenJPEG 1.5.1 の場合
 
 ```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz
-$ tar xvf openjpeg-1.5.1.tar.gz
-$ pushd openjpeg-1.5.1
+$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.2.tar.gz
+$ tar xvf openjpeg-1.5.2.tar.gz
+$ pushd openjpeg-1.5.2
 $ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
 $ make
 $ make install
