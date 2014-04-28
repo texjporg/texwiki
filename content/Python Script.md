@@ -9,7 +9,7 @@ pukiwiki: "Python Script"
 
 [Notepad++](/Notepad++/) > Python Script
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Python Script → 問題が発生する場合は [NppExec](/NppExec/) または [jN](/jN/) を使用する {#k806f6f8}
 
