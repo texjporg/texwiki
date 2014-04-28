@@ -30,7 +30,7 @@ TeX インストーラを色々な視点から比較してみます。
 
 初心者の方は 
 
-- 「install-tl-windows.zip (TeX Live 2013 の場合は install-tl.zip)」
+- 「install-tl.zip」
 
 がおすすめです。
 
@@ -57,7 +57,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>作者</strong>：角藤 亮さん
 - <strong>初心者オススメ度</strong>：★★★★☆
 - <strong>ライセンス</strong>：フリーウェア
-- <strong>インストールする対象</strong>：W32TeX バイナリ
+- <strong>インストールする対象</strong>：W32TeX バイナリ，TeXworks
 - <strong>ユーザーインターフェース</strong>：CUI（Windows PowerShell, コマンド プロンプト）
 - <strong>ネットワーク・ローカルインストール</strong>：ローカルのみ
 - <strong>環境変数・レジストリ</strong>：手動（環境変数 PATH）
