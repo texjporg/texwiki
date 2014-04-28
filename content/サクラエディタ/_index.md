@@ -12,7 +12,7 @@ pukiwiki: "サクラエディタ"
 
 <img src="http://yaruhara.moe-nifty.com/photos/uncategorized/2007/10/20/sakuravista_2.png" alt="サクラエディタ" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
 
