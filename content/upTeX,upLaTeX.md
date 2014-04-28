@@ -47,6 +47,39 @@ upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
 
+### 注意点 {#rfce644f}
+
+#### uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する → -kanji=utf8 -no-guess-input-enc オプションを指定する {#zb472e1c}
+
+以下の様な TeX ファイルを hoge.tex という名前で UTF-8 で保存します．<br>
+
+```
+\documentclass[uplatex]{jsarticle}
+\begin{document}
+日本語①
+\end{document}
+```
+
+hoge.tex を
+
+```
+uplatex -guess-input-enc hoge
+```
+
+のように文字コードの自動判別機能を使用してタイプセットすると UTF-8 ではなく Shift_JIS として間違った文字コードで判別されてタイプセットされます．<br>
+
+```
+(./hoge.tex(guessed encoding: Shift_JIS = sjis)
+```
+
+この場合は
+
+```
+uplatex -kanji=utf8 -no-guess-input-enc hoge
+```
+
+として -kanji=utf8 -no-guess-input-enc オプションを指定してタイプセットすれば OK です．<br>
+
 ### 不具合 {#p35560b1}
 
 #### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする → backend に biber を指定して biber を使用する {#g3e20a4e}
