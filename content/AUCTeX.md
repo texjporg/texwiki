@@ -11,7 +11,7 @@ pukiwiki: "AUCTeX"
 
 ## [AUCTeX](http://www.gnu.org/software/auctex/) → 問題が発生する場合は [TeX mode](</Emacs/TeX mode/>) または [YaTeX](/YaTeX/) を使用する {#d40177aa}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## AUCTeX とは {#h92ad1b8}
 
