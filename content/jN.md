@@ -9,7 +9,7 @@ pukiwiki: "jN"
 
 [Notepad++](/Notepad++/) > jN
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) または [Python Script](</Python Script/>) を使用する {#i71db25c}
 
