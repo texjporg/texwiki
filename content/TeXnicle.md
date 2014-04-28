@@ -9,8 +9,6 @@ pukiwiki: "TeXnicle"
 
 ## [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html) {#p6c2084c}
 
-<img src="http://www.bobsoft-mac.de/texnicle/files/blocks_image_0_1.png" alt="TeXnicle" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## TeXnicle とは {#k3131c97}
