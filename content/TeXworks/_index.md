@@ -354,7 +354,7 @@ nkf やメモ帳以外の変換ツールを使用したい場合は [KanjiTransl
 <!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
 <!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
 
-Windows 版 TeXworks 0.4.5 の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
+Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
 
 ### TeX Live の場合 {#aa8923ee}
 
