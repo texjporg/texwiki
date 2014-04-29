@@ -36,11 +36,6 @@ $ curl -R -L -O http://cairographics.org/releases/cairo-1.12.16.tar.xz
 $ tar xvf cairo-1.12.16.tar.xz
 $ pushd cairo-1.12.16
 $ ./configure --prefix=/mingw
-```
-
-<!-- $ qt_CFLAGS="-IC:/Qt/4.8.5/include -IC:/Qt/4.8.5/include/QtCore -IC:/Qt/4.8.5/include/QtGui" qt_LIBS="-LC:/Qt/4.8.5/lib -lQtCore4 -LC:/Qt/4.8.5/lib -lQtGui4" ./configure - -prefix=/mingw - -enable-xml - -enable-qt -->
-
-```
 
 cairo (version 1.12.16 [release]) will be compiled with:
 
