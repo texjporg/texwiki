@@ -20,7 +20,7 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
 xdvik は DVI プレビューアです．<br>
 xdvi を Kpathsea ライブラリに対応させたものです．<br>
-[CJK package](/LaTeX-CJK/) を使用すれば xdvik でも日本語が表示できます．<br>
+[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvik でも日本語が表示できます．<br>
 
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
 - [xdvi](http://math.berkeley.edu/~vojta/xdvi.html)
@@ -44,6 +44,35 @@ xdvik は TeX Live に含まれています．<br>
 
 ### 使い方 {#m5b0a3d2}
 
+以下の様な文書を作成して hoge.tex という名前で UTF-8 で保存します．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+\else
+  \documentclass{scrartcl}
+  \usepackage[whole]{bxcjkjatype}
+\fi
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+hoge.tex を LaTeX で処理します．<br>
+
+```
+$ latex hoge
+```
+
+[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+
 ```
 $ xdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
@@ -53,6 +82,20 @@ $ xdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
 $ xdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
+
+PDF ファイルに出力する場合は
+
+```
+$ ptex2pdf -u -l hoge
+```
+
+または
+
+```
+$ pdflatex hoge
+```
+
+で PDF ファイルに出力できます．<br>
 
 ### SyncTeX {#g4e4f193}
 
