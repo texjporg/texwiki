@@ -103,8 +103,8 @@ pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成し�
 
 ***
 
-- C:\texlive\2013\bin\win64\pdfuplatex.bat
-- C:\texlive\2013\bin\win32\pdfuplatex.bat
+- C:\texlive\2014\bin\win64\pdfuplatex.bat
+- C:\texlive\2014\bin\win32\pdfuplatex.bat
 - C:\w32tex\bin64\pdfuplatex.bat
 - C:\w32tex\bin\pdfuplatex.bat
 
@@ -161,8 +161,8 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 ***
 
-- C:\texlive\2013\bin\win64\pdfuplatex2.bat
-- C:\texlive\2013\bin\win32\pdfuplatex2.bat
+- C:\texlive\2014\bin\win64\pdfuplatex2.bat
+- C:\texlive\2014\bin\win32\pdfuplatex2.bat
 - C:\w32tex\bin64\pdfuplatex2.bat
 - C:\w32tex\bin\pdfuplatex2.bat
 
@@ -891,7 +891,7 @@ SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマン�
 ■ TeX Live に含まれている TeXworks の場合
 
 ```
-"C:\texlive\2013\tlpkg\texworks\texworks.exe" --position=%l "%f"
+"C:\texlive\2014\tlpkg\texworks\texworks.exe" --position=%l "%f"
 ```
 
 ■ W32TeX に含まれている TeXworks の場合
