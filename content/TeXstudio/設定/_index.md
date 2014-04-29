@@ -10,7 +10,7 @@ pukiwiki: "TeXstudio/設定"
 
 [TeXstudio](/TeXstudio/) > 設定
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## 設定 {#p076e369}
 
