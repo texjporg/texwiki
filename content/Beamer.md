@@ -9,7 +9,7 @@ pukiwiki: "Beamer"
 
 ## [Beamer](https://bitbucket.org/rivanvx/beamer/) {#wc0b104e}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Beamer とは {#g7e9b20e}
 
