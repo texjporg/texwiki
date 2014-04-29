@@ -9,7 +9,7 @@ pukiwiki: "TikZ"
 
 ## [TikZ &amp; PGF](http://pgf.sourceforge.net/) {#w315bc8f}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## はじめに {#aacc19e6}
 
