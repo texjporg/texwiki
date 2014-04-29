@@ -11,7 +11,7 @@ pukiwiki: "OTF"
 
 ## OTF (japanese-otf, japanese-otf-uptex), luatexja-otf, ZXotf {#l22413ec}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## OTF (japanese-otf, japanese-otf-uptex) パッケージとは {#h230c839}
 
@@ -165,41 +165,32 @@ Adobe Reader XI で使えるアジア・拡張言語フォントパック
 これを “hoge.tex” という名前で UTF-8 で保存します。<br>
 Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。<br>
 
-- TeX Live の場合
+- upLaTeX (ptex2pdf) の場合
 
-> - upLaTeX (ptex2pdf) の場合
+> - TeX Live の場合
 >
 >     ```
 >     ptex2pdf -u -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 >     ```
 >
-> - LuaLaTeX の場合
->
->     ```
->     lualatex hoge.tex
->     ```
->
-
-- W32TeX の場合
-
-> - upLaTeX (ptex2pdf) の場合
+> - W32TeX の場合
 >
 >     ```
 >     ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 >     ```
 >
-> - LuaLaTeX の場合
->
->     ```
->     lualatex hoge.tex
->     ```
->
-> - LuaJITLaTeX の場合
->
->     ```
->     luajitlatex hoge.tex
->     ```
->
+
+- LuaLaTeX の場合
+
+    ```
+    lualatex hoge.tex
+    ```
+
+- LuaJITLaTeX の場合
+
+    ```
+    luajitlatex hoge.tex
+    ```
 
 出力された PDF ファイルを表示します。
 
@@ -334,44 +325,34 @@ C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $T
 
 Windows PowerShell またはコマンド プロンプトで次のようにして処理します。<br>
 
-- TeX Live の場合
+- upLaTeX (ptex2pdf) の場合
 
-> - upLaTeX (ptex2pdf) の場合
+> - TeX Live の場合
 >
 >     ```
 >     ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
 >     ```
 >
-> - LuaLaTeX の場合
->
->     ```
->     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
->     lualatex hoge.tex
->     ```
->
-
-- W32TeX の場合
-
-> - upLaTeX (ptex2pdf) の場合
+> - W32TeX の場合
 >
 >     ```
 >     ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 >     ```
 >
-> - LuaLaTeX の場合
->
->     ```
->     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
->     lualatex hoge.tex
->     ```
->
-> - LuaJITLaTeX の場合
->
->     ```
->     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
->     luajitlatex hoge.tex
->     ```
->
+
+- LuaLaTeX の場合
+
+    ```
+    \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
+    lualatex hoge.tex
+    ```
+
+- LuaJITLaTeX の場合
+
+    ```
+    \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
+    luajitlatex hoge.tex
+    ```
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 
