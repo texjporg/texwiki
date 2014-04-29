@@ -11,7 +11,7 @@ pukiwiki: "LaTeX-CJK"
 
 (Could someone please translate this page into English?) → [TeX Wiki の英訳](http://jun0inoue.blogspot.fr/2013/05/tex-wiki.html)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## [The CJK package for LaTeX](http://cjk.ffii.org/)/[BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) {#ue7194c1}
 
