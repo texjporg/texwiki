@@ -10,7 +10,7 @@ pukiwiki: "LyX/設定"
 
 [LyX](/LyX/) > 設定
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## 設定 {#d6c4c951}
 
