@@ -93,13 +93,9 @@ GNU Emacs は，フリーソフトウェアです．<br>
         - [コミットログ](https://bitbucket.org/xemacs/xemacs/changesets)
 - [ErgoEmacs](http://ergoemacs.org/)
 
-#### Android {#meb27277}
+<!-- ***Android [#meb27277] -->
 
-- [Emacs - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.zielm.emacs&hl=ja)
-
-#### iOS {#nf68bb78}
-
-- [Emacs for iOS](http://gamma-level.com/iphoneos/ports/)
+<!-- ***iOS [#nf68bb78] -->
 
 ### [EmacsWiki](http://www.emacswiki.org/) {#mde20549}
 
