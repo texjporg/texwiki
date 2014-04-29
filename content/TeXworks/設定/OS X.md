@@ -19,10 +19,6 @@ pukiwiki: "TeXworks/設定/OS X"
 
 ### [MacTeX &amp; TeX Live](/Mac/#mactex) {#p614bf13}
 
-- [MacTeX 2012 on Mac (snow leopard)](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html)
-
-を参照．
-
 #### upLaTeX (ptex2pdf) {#hb35622b}
 
 IPAexフォントを埋め込む場合は<br>
