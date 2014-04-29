@@ -58,19 +58,19 @@ MacTeX がインストールされていることを前提としています．<
 1. 24行目の ENGINE の行を以下のように修正します．
 
     ```
-    ENGINE=/usr/texbin/uplatex
+    ENGINE=/Library/TeX/texbin/uplatex
     ```
 
 1. 25行目の BIBTEX の行を以下のように修正します．
 
     ```
-    BIBTEX=/usr/texbin/upbibtex
+    BIBTEX=/Library/TeX/texbin/upbibtex
     ```
 
 1. 26行目の DVIPS の行を以下のように修正します．
 
     ```
-    DVIPDFMX=/usr/texbin/dvipdfmx
+    DVIPDFMX=/Library/TeX/texbin/dvipdfmx
     ```
 
 1. 27行目の PS2PDF の行は不要なのでコメントアウトします．その他、ps2pdf に係わる行を好みに応じてコメントアウトしておきます．
