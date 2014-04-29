@@ -11,7 +11,7 @@ pukiwiki: "hyperref"
 
 [hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです。
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### 更新履歴 {#e8ca0037}
 
