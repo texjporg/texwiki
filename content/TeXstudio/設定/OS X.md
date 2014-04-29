@@ -9,7 +9,7 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 [TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > OS X
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### コマンド {#a32ff532}
 
