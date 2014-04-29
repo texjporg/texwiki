@@ -11,7 +11,7 @@ pukiwiki: "LuaTeX-ja"
 
 ## LuaTeX-ja {#nec94db0}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## LuaTeX-ja とは {#ha0b38ce}
 
