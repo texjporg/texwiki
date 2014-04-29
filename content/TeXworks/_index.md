@@ -309,7 +309,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\4.8.5\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\4.8.6\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ## 文字コードの変換 {#e8ba5265}
 
