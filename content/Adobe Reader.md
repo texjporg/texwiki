@@ -48,7 +48,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://helpx.adobe.com/jp/acrobat/kb/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
-### Windows 8.1, 8, 7 64-bit で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+### 64-bit Windows で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
 
 - [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
 - [ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/](ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/)
