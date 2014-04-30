@@ -137,7 +137,6 @@ Vim を起動し
 #### 設定 {#q8a0044b}
 
 $HOME/vimfiles/vimrc に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -212,7 +211,6 @@ Vim を起動し
 #### 設定 {#hf6d9f36}
 
 $HOME/.vim/vimrc に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -299,7 +297,6 @@ Vim を起動し
 #### 設定 {#j3b0f658}
 
 $HOME/.vim/vimrc に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
