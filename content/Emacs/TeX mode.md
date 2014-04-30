@@ -9,7 +9,7 @@ pukiwiki: "Emacs/TeX mode"
 
 [Emacs](/Emacs/) > TeX mode
 
-## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) → 問題が発生する場合は [AUCTeX](/AUCTeX/) または [YaTeX](/YaTeX/) を使用する <a id="tex-mode"></a> {#e09eebbf}
+## [TeX mode](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -50,7 +50,6 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
@@ -159,7 +158,6 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -249,7 +247,6 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
