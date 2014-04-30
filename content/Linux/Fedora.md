@@ -25,7 +25,7 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 
 ### ミラーサイト {#oc47dabf}
 
-- [Public mirror list](http://mirrors.fedoraproject.org/publiclist/)
+- [Public mirror list#JP](http://mirrors.fedoraproject.org/publiclist/#JP)
 
 ## [TeX Live](</TeX Live/>) {#u412c2cf}
 
