@@ -143,6 +143,35 @@ pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexliv
 
 ### 使い方 {#o73d19d8}
 
+以下の様な文書を作成して hoge.tex という名前で UTF-8 で保存します．<br>
+
+```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+\else
+  \documentclass{scrartcl}
+  \usepackage[whole]{bxcjkjatype}
+\fi
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+hoge.tex を LaTeX で処理します．<br>
+
+```
+$ latex -synctex=1 hoge
+```
+
+[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+
 ```
 $ pxdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
@@ -152,6 +181,20 @@ $ pxdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
 $ pxdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
+
+PDF ファイルに出力する場合は
+
+```
+$ ptex2pdf -u -l -ot "-synctex=1" hoge
+```
+
+または
+
+```
+$ pdflatex -synctex=1 hoge
+```
+
+を実行します．<br>
 
 ### SyncTeX {#i441324e}
 
