@@ -647,7 +647,7 @@ PS ファイルを PDF ファイルに変換することができます。
 もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
 必ず削除しておきます（方法は上で説明した 「環境変数 PATH の設定」 の場合と同じです）。
 
-インストールの詳細に関しては
+インストールの詳細に関しては<br>
 
 - [Ghostscript/Windows](/Ghostscript/Windows/)
 
@@ -655,7 +655,12 @@ PS ファイルを PDF ファイルに変換することができます。
 
 ## [SumatraPDF](/SumatraPDF/) {#g6688c53}
 
-[SumatraPDF - TeX Wiki](/SumatraPDF/) を参照してください．
+SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．<br>
+インストール・設定に関しては<br>
+
+- [SumatraPDF - TeX Wiki](/SumatraPDF/)
+
+を参照してください．
 
 ## テスト {#bfc3538f}
 
@@ -740,12 +745,12 @@ C:\w32tex\share\texworks\TeXworks.exe のアイコンを右クリックして<br
 </tbody>
 </table>
 
-この表は、日本語版Windowsにおけるものです。<br>
-ここで、「command_line_encoding」とは、texmf.cnfのオプション設定です。<br>
+この表は、日本語版 Windows におけるものです。<br>
+ここで、「command_line_encoding」とは、texmf.cnf のオプション設定です。<br>
 「コンソール入力」とは、標準入力(STDIN)からの入力、「コンソール出力」とは、標準出力(STDOUT)や標準エラー出力(STDERR)への出力を指します。<br>
 「specialファイル名」とは、挿入する画像のファイル名など、special命令によってdviファイルに書き込まれるファイル名の文字コードを指します。<br>
 「CP932」「Unicode」は文字集合の意味で、「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています。<br>
-スクリーンが「Unicode」「CP932(UTF-8)」の場合、(u)p(la)tex.exeでは"-sjis-terminal"オプションにて、その他ではリダイレクトやパイプ経由でutf8prin.exeを使用することで、文字化けせずに表示させることができます。<br>
+スクリーンが「Unicode」「CP932(UTF-8)」の場合、(u)p(la)tex.exe では "-sjis-terminal" オプションにて、その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで、文字化けせずに表示させることができます。<br>
 以下はその例です。<br>
 
 ```
@@ -761,7 +766,13 @@ C:\work>dvipdfmx sourcename.dvi 2>&1 | utf8prin
 ```
 
 スクリーンが「Unicode(\*)」のものは、そのままでも文字化けせずに表示させることができます。<br>
-p(la)texを主に使用される方は、texmf.cnfに
+up(la)tex を主に使用される方は、texmf.cnf に
+
+```
+command_line_encoding = utf-8
+```
+
+p(la)tex を主に使用される方は、texmf.cnf に
 
 ```
 command_line_encoding = utf-8
@@ -769,16 +780,11 @@ command_line_encoding.dvipdfmx =
 command_line_encoding.dvips = 
 ```
 
-up(la)texを主に使用される方は、texmf.cnfに
-
-```
-command_line_encoding = utf-8
-```
-
 と設定するとよいでしょう。<br>
-なお、マクロ、パッケージやフォントなどのファイル名はASCIIの範囲にとどめ、漢字(日本語)や他言語のUnicode文字を使用しないことをお勧めします。<br>
-文字エンコーディングの齟齬により、ソフトウェアによってはkpathseach経由で探し出すことに失敗するケースがあるためです。<br>
-また、p(la)texにおいてspecialの種類によっては0x5cを含むファイル名の場合、失敗することがあります。この場合もASCIIの範囲で使用してください。( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))<br>
+なお、マクロ、パッケージやフォントなどのファイル名は ASCII の範囲にとどめ、漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします。<br>
+文字エンコーディングの齟齬により、ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです。<br>
+また、p(la)tex において special の種類によっては 0x5c を含むファイル名の場合、失敗することがあります。<br>
+この場合もASCIIの範囲で使用してください。( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))<br>
 
 ## 関連リンク {#b5892c8c}
 
