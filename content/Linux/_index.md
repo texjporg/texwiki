@@ -113,6 +113,13 @@ $ sudo tlmgr update --self --all
 
 を実行すれば OK です．<br>
 
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+
+- /usr/local/texlive/????/tlpkg/backups
+
+にパッケージのバックアップが保存されます．<br>
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+
 #### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
 
 TEXMFLOCAL の値を確認します．<br>
