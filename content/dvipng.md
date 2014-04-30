@@ -40,7 +40,7 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ### DVI -> PNG {#wff0573c}
 
-[CJK package](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
+[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
 
 DVI ファイルを PNG ファイルに変換する場合は
 
