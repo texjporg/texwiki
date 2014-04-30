@@ -9,7 +9,7 @@ pukiwiki: "AUCTeX"
 
 [Emacs](/Emacs/) > AUCTeX
 
-## [AUCTeX](http://www.gnu.org/software/auctex/) → 問題が発生する場合は [TeX mode](</Emacs/TeX mode/>) または [YaTeX](/YaTeX/) を使用する {#d40177aa}
+## [AUCTeX](http://www.gnu.org/software/auctex/) {#d40177aa}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -109,7 +109,6 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 #### 設定 {#g637a7d7}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
@@ -285,7 +284,6 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 
 動作未確認です．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 
 ***
 
@@ -471,7 +469,6 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 #### 設定 {#p2d711b9}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 ***
