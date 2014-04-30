@@ -164,14 +164,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 TeX Live は OS ごとにインストール方法が異なります．<br>
 それぞれの OS のインストール方法を参照してください．<br>
-TeX Live はアップデートが簡単に行えます．<br>
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
-
-- C:\texlive\2014\tlpkg\backups (Windows (Win64, Win32) の場合)
-- /usr/local/texlive/2014/tlpkg/backups (Windows (Cygwin), OS X, Linux の場合)
-
-などのディレクトリにパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
 
 ### Windows {#afd270d8}
 
@@ -248,7 +240,7 @@ install-tl.zip をダウンロードして install-tl.zip を展開します．<
 Windows PowerShell またはコマンド プロンプトから
 
 ```
-.\install-tl.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+.\install-tl-windows.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 または管理者として実行した Windows PowerShell またはコマンド プロンプトから
@@ -261,7 +253,7 @@ Windows PowerShell またはコマンド プロンプトから
 
 #### OS X {#a9a1fd1b}
 
-mactex-????.pkg をダウンロードしてインストールします．<br>
+mactex-\*.(pkg|zip) または mactex-basictex-\*.(pkg|zip) をダウンロードしてインストールします．<br>
 
 #### Linux {#v9c33c6a}
 
