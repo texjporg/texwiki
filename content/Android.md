@@ -52,7 +52,7 @@ pdflatex は普通に使用できるそうです．(→ [https://twitter.com/ti5
 
 <span style="color:White;background-color:Black;">u0_a77@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-<span style="color:White;background-color:Black;">pdfTeX 3.1415926-2.5-1.40.14 (Web2C 2013 for Android)　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">pdfTeX 3.14159265-2.6-1.40.15 (Web2C 2014 for Android) 　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 ***
 
@@ -66,11 +66,11 @@ uplatex も普通に使用できるそうです．(→ [https://twitter.com/ti59
 
 <span style="color:White;background-color:Black;">u0_a77@android:/ $ uplatex -version 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-<span style="color:White;background-color:Black;">e-upTeX 3.1415926-p3.4-u1.11-110825-2.6 (utf8.uptex) (Web2C 2013 for Android) 　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">e-upTeX 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (Web2C 2014 for Android)　　　　　　　　　　　　</span><br>
 
 ***
 
-dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640) )
+dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640) )
 
 ***
 
@@ -147,6 +147,10 @@ dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイ�
 
 - [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
 - [Adobe Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
+
+## BibTeX 関連 {#m2bc1f0c}
+
+- [Androidの文献管理アプリ](http://myfuturesightforpast.blogspot.jp/2014/04/android_19.html)
 
 ## 関連リンク {#o413eb91}
 
