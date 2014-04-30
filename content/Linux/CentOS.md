@@ -54,6 +54,12 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 - [TeX Live 2013 on Scientific Linux 6.4](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4)
 - [#014.LyX - kosewiki](http://kousei42.s246.xrea.com/wiki/index.cgi?page=%23014%2ELyX)
 
+### TeX Live/RHEL/CentOS/SL {#w0c3dfae}
+
+```
+$ sudo yum install texlive-scheme-full
+```
+
 ## [Evince](/Evince/) {#b582893c}
 
 ```
