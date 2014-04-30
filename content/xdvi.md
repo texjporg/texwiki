@@ -68,7 +68,7 @@ xdvik は TeX Live に含まれています．<br>
 hoge.tex を LaTeX で処理します．<br>
 
 ```
-$ latex hoge
+$ latex -synctex=1 hoge
 ```
 
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
@@ -86,16 +86,16 @@ $ xdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 PDF ファイルに出力する場合は
 
 ```
-$ ptex2pdf -u -l hoge
+$ ptex2pdf -u -l -ot "-synctex=1" hoge
 ```
 
 または
 
 ```
-$ pdflatex hoge
+$ pdflatex -synctex=1 hoge
 ```
 
-で PDF ファイルに出力できます．<br>
+を実行します．<br>
 
 ### SyncTeX {#g4e4f193}
 
