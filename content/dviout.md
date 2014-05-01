@@ -171,8 +171,8 @@ Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/
 - [http://www.ring.gr.jp/pub/text/TeX/dviout/](https://mirror.ctan.org/../TeX/dviout/)
     （安定版のミラー）
 
-- [ftp://ftp.kddilabs.jp/TeX/dviout/current/](ftp://ftp.kddilabs.jp/TeX/dviout/current/) (安定版のミラー)
-- [ftp://ftp.kddilabs.jp/CTAN/dviware/dviout/](ftp://ftp.kddilabs.jp/CTAN/dviware/dviout/) (安定版のミラー)
+- [ftp://ftp.ne.jp/pub/tex/dviout/current/](ftp://ftp.ne.jp/pub/tex/dviout/current/) (安定版のミラー)
+- [ftp://ftp.ne.jp/pub/ctan/dviware/dviout/](ftp://ftp.ne.jp/pub/ctan/dviware/dviout/) (安定版のミラー)
 
 64-bit dviout を使用する場合は dviout-x64.zip と tex318w.zip をダウンロードします。<br>
 32-bit dviout を使用する場合は tex318w.zip をダウンロードします。<br>
