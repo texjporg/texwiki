@@ -174,8 +174,9 @@ Web 用なら 最小ファイルサイズ，論文提出用には低品位でよ
 
 ［設定］ → ［Adobe PDF 設定の編集］は次のように設定します。<br>
 
-- ［一般］で「互換性のある形式」は Acrobat 4.0 (PDF 1.3) までにしておくほうが無難です。
-    デフォルトページサイズが米国のレターサイズ（8.5 inches × 11 inches，21.59 cm × 27.94 cm）になっています。
+- ［一般］で「互換性のある形式」が標準で Acrobat 6.0 (PDF1.5) になっている場合は Acrobat 5.0 (PDF 1.4) までにしておくほうが無難です。
+    Acrobat 6.0 (PDF1.5) の場合は extractbb を使用するとエラーが発生することがあります。
+    デフォルトページサイズが米国のレターサイズ（8.5 inches × 11 inches，21.59 cm × 27.94 cm）になっていて
     A4サイズを主に使うなら，ここを 21.0 cm × 29.7 cm に直します（ただし文書側の設定が優先されます）。
 
 - ［フォント］で，「すべてのフォントを埋め込む」は，軽くするためにはオフ，見栄えをまったく同じにしたいときはオンにします。
@@ -914,6 +915,7 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [TeXにpng画像を挿入するときの注意](http://qiita.com/items/32ea69d031701463f789)
 - [http://www.willus.com/k2pdfopt/](http://www.willus.com/k2pdfopt/)
 - [Mac OS XでGhostScriptを使わない、日本語PostScriptファイルのPDF化](http://mechawooser.blogspot.jp/2013/11/mac-os-xghostscriptpostscriptpdf.html)
+- [PDF画像を使う（TeX on Win8.1）](http://njmnjm.blogspot.jp/2014/04/pdftex-on-win81.html)
 
 ## 要約 {#gf004f58}
 
