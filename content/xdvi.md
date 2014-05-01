@@ -42,6 +42,44 @@ X Window System
 
 xdvik は TeX Live に含まれています．<br>
 
+```
+$ xdvi --version
+xdvik version 22.87 (Xaw toolkit)
+Libraries: kpathsea version 6.2.0, freetype version 2.5.3
+```
+
+### 注意点 {#mfca3e3a}
+
+#### xdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示される → /usr/local/texlive/????/texmf-dist/xdvi/&#x58;Dvi を修正する {#l9a6d5b3}
+
+xdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示されることがあります．<br>
+
+```
+Warning: Cannot convert string "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-*" to type FontStruct
+Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to type FontStruct
+```
+
+以下の作業を行います．<br>
+
+```
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+```
+
+OS X の場合
+
+```
+$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+Linux の場合
+
+```
+$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
 ### 使い方 {#m5b0a3d2}
 
 以下の様な文書を作成して hoge.tex という名前で UTF-8 で保存します．<br>
@@ -143,6 +181,44 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．<br>
 pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
 
 - [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+
+```
+$ pxdvi --version
+xdvik version 22.85 j1.41-ptexlive (Xaw toolkit)
+Libraries: kpathsea version 6.1.1dev, T1lib version 5.1.2, FreeType version 2.4.11, Fontconfig version 2.9.0
+```
+
+### 注意点 {#jd5a94be}
+
+#### pxdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示される → /usr/local/texlive/????/texmf-dist/xdvi/&#x58;Dvi を修正する {#ha5f0016}
+
+pxdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示されることがあります．<br>
+
+```
+Warning: Cannot convert string "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-*" to type FontStruct
+Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to type FontStruct
+```
+
+以下の作業を行います．<br>
+
+```
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+```
+
+OS X の場合
+
+```
+$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+Linux の場合
+
+```
+$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
 
 ### 使い方 {#o73d19d8}
 
