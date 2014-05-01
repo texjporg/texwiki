@@ -204,8 +204,8 @@ Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/
 
 ***
 
-32-bit dviout を使用する場合は \[名前の変更(M)\] を選択して dviout という名前のフォルダー名に変更します。<br>
 64-bit dviout を使用する場合は 32-bit dviout のフォルダーの dviout.exe と dviout.chm 以外のファイルを dviout-x64 フォルダーにコピーします．<br>
+32-bit dviout を使用する場合は \[名前の変更(M)\] を選択して dviout という名前のフォルダー名に変更します。<br>
 dviout-x64 フォルダーまたは dviout フォルダーを C:\w32tex (W32TeX をインストールしたフォルダー) に移動させます。<br>
 dviout-x64 フォルダーまたは dviout フォルダーの dviout.exe を右クリックします。<br>
 
