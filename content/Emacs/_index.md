@@ -339,6 +339,7 @@ Source editor:
 ### Windows {#a1ddfe8b}
 
 - [NTEmacs の設定](http://www49.atwiki.jp/ntemacs/pages/1.html)
+- [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
 - [C/Migemo を Windows 8 にインストール (Emacs 24 に移行のため)](http://uep.ipe.media.kyoto-u.ac.jp/cmigemo-%E3%82%92-windows-8-%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-emacs-24-%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%AE%E3%81%9F%E3%82%81/)
 - [Emacs 24のpackage管理機能を使う](http://keisanbutsuriya.blog.fc2.com/blog-entry-43.html)
 - [NTEmacs version 24 とパッケージマネージャ](http://skalldan.wordpress.com/2012/06/26/ntemacs-version-24-%E3%81%A8%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3/)
