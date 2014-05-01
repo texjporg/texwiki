@@ -29,6 +29,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 - [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
     - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
+- [http://software.opensuse.org/package/texlive-dummy_install](http://software.opensuse.org/package/texlive-dummy_install)
 
 ### TeX Live 公式パッケージ {#v87b6755}
 
@@ -36,7 +37,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
-[texlive-dummy-opensuse](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
+[texlive-dummy-opensuse](http://software.opensuse.org/package/texlive-dummy_install)
 をインストールします．<br>
 texlive-dummy-opensuse をインストールすると
 TeX Live/TeX Live for SUSE Linux に依存するパッケージが
