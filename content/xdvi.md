@@ -72,6 +72,7 @@ $ latex -synctex=1 hoge
 ```
 
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+DVI ファイルを表示するには<br>
 
 ```
 $ xdvi -nofork -unique -watchfile 1 'hoge.dvi' &
@@ -82,6 +83,8 @@ $ xdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
 $ xdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
+
+を実行します．<br>
 
 PDF ファイルに出力する場合は
 
@@ -171,6 +174,7 @@ $ latex -synctex=1 hoge
 ```
 
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+DVI ファイルを表示するには<br>
 
 ```
 $ pxdvi -nofork -unique -watchfile 1 'hoge.dvi' &
@@ -181,6 +185,8 @@ $ pxdvi -nofork -unique -watchfile 1 'hoge.dvi' &
 ```
 $ pxdvi -nofork -unique -watchfile 1 "hoge.dvi" &
 ```
+
+を実行します．<br>
 
 PDF ファイルに出力する場合は
 
