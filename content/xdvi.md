@@ -110,6 +110,7 @@ $ latex -synctex=1 hoge
 ```
 
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+
 DVI ファイルを表示するには<br>
 
 ```
@@ -243,13 +244,22 @@ $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDv
 \end{document}
 ```
 
-hoge.tex を LaTeX で処理します．<br>
+DVI ファイルに出力する場合は
+
+```
+$ uplatex -synctex=1 hoge
+```
+
+または
 
 ```
 $ latex -synctex=1 hoge
 ```
 
+を実行します．<br>
+
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvi でも日本語が表示できます．<br>
+
 DVI ファイルを表示するには<br>
 
 ```
