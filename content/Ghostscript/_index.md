@@ -32,6 +32,9 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
     - [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
     - [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
 - [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
+- [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
+- [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
+- [Ghostscript Studio - Home](https://ghostscriptstudio.codeplex.com/)
 
 ### お知らせ {#c2f53cec}
 
