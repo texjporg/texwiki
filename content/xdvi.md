@@ -139,6 +139,10 @@ $ pdflatex -synctex=1 hoge
 
 を実行します．<br>
 
+#### コマンドラインオプション {#ce42827f}
+
+- [http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup)
+
 ### SyncTeX {#g4e4f193}
 
 #### forward search {#ic1815e4}
@@ -287,6 +291,10 @@ $ pdflatex -synctex=1 hoge
 ```
 
 を実行します．<br>
+
+#### コマンドラインオプション {#bf61120e}
+
+- [http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup)
 
 ### SyncTeX {#i441324e}
 
