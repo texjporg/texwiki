@@ -43,10 +43,10 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
 - [Linux](/Linux/#texliveinstall)
+- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
+- [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
 - [Debian 7 wheezy stable への TeX Live 2013 導入の備忘録](http://skalldan.wordpress.com/2013/11/25/debian-7-wheezy-stable-%E3%81%B8%E3%81%AE-tex-live-2013-%E5%B0%8E%E5%85%A5%E3%81%AE%E5%82%99%E5%BF%98%E9%8C%B2/)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
-- [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
-- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．<br>
@@ -230,9 +230,9 @@ $ sudo apt-get install emacs24
 
 ### AUCTeX {#t099fe57}
 
-- [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/Emacs/auctex_config.html)
 - [https://launchpad.net/debian/+source/auctex/](https://launchpad.net/debian/+source/auctex/)
     - [https://launchpad.net/debian/+source/auctex/+changelog](https://launchpad.net/debian/+source/auctex/+changelog)
+- [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/emacs/auctex_config.html)
 
 ### YaTeX {#r57295dd}
 
