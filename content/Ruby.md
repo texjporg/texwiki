@@ -88,7 +88,7 @@ $ pacman -S ruby
 #### Linux Mint {#o6dd6f52}
 
 - [http://packages.ubuntu.com/ja/ruby](http://packages.ubuntu.com/ja/ruby)
-- [http://packages.ubuntu.com/ja/ruby2.0](http://packages.ubuntu.com/ja/ruby2.0)
+- [http://packages.ubuntu.com/ja/ruby2.1](http://packages.ubuntu.com/ja/ruby2.1)
 
 #### Debian {#z226ac1e}
 
