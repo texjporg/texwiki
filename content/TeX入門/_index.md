@@ -56,6 +56,7 @@ TeX, LaTeX はフリーウェアです。<br>
 つまり，ほとんどのコンピュータで使えます。<br>
 
 - [Microsoft Windows](http://www.microsoft.com/japan/windows/)
+- [Cygwin](http://www.cygwin.com/)
 - UNIX&reg;（[OS X](http://www.apple.com/jp/osx/) など）
 - UNIX 互換
     OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
