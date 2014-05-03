@@ -192,7 +192,7 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 [W32TeX](/W32TeX/) は Wine で動作します．<br>
 TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．<br>
 
-- [install-w32tex.py](https://gist.github.com/2766442) (a.k.a. 誰得スクリプト) Install W32TeX on Wine<br>
+- [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
 
 ## プログラミング言語 {#ccef7053}
 
