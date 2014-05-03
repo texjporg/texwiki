@@ -108,6 +108,14 @@ Do you want to continue with the exact same settings as before (y/N): y
 
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
+x86_64-cygwin の場合
+
+```
+$ /usr/local/texlive/????/bin/x86_64-cygwin/tlmgr path add
+```
+
+i386-cygwin の場合
+
 ```
 $ /usr/local/texlive/????/bin/i386-cygwin/tlmgr path add
 ```
@@ -121,6 +129,13 @@ $ tlmgr update --self --all
 ```
 
 を実行すれば OK です．<br>
+
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+
+- /usr/local/texlive/????/tlpkg/backups
+
+にパッケージのバックアップが保存されます．<br>
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
 
 #### extractbb の追加 {#od9c58f2}
 
@@ -252,7 +267,7 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.844 (64-bit or 32-bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.850 (64 bit or 32 bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
 
@@ -329,6 +344,7 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
       texlive-collection-humanities-doc: Documentation for texlive-collection-humanities
       texlive-collection-langafrican: TeX Live African language support
       texlive-collection-langarabic: TeX Live Arabic language suppport
+      texlive-collection-langchinese: TeX Live Chinese language support
       texlive-collection-langcjk: TeX Live Chinese/Japanese/Korean language support
       texlive-collection-langcroatian: TeX Live Croatian language support
       texlive-collection-langcyrillic: TeX Live Cyrillic language support
@@ -341,6 +357,8 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
       texlive-collection-langhungarian: TeX Live Hungarian language support
       texlive-collection-langindic: TeX Live Indic language support
       texlive-collection-langitalian: TeX Live Italian language support
+      texlive-collection-langjapanese: TeX Live Japanese language support
+      texlive-collection-langkorean: TeX Live Korean language support
       texlive-collection-langlithuanian: TeX Live Lithuanian language support
       texlive-collection-langmongolian: TeX Live Mongolian language support
       texlive-collection-langpolish: TeX Live Polish language support
