@@ -137,6 +137,8 @@ Application Options:
 
 ## SyncTeX {#g93d0312}
 
+- [LaTeX forward/inverse searches with Zathura](http://wiki.math.cmu.edu/iki/wiki/tips/20140310-zathura-fsearch.html)
+
 ### forward search {#m29e6702}
 
 TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
