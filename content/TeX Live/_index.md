@@ -253,7 +253,7 @@ Windows PowerShell またはコマンド プロンプトから
 
 #### OS X {#a9a1fd1b}
 
-mactex-\*.(pkg|zip) または mactex-basictex-\*.(pkg|zip) をダウンロードしてインストールします．<br>
+mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．<br>
 
 #### Linux {#v9c33c6a}
 
