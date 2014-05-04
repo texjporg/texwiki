@@ -91,13 +91,13 @@ Do you want to continue with the exact same settings as before (y/N): y
 
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
-- 64-bit 版の場合
+- x86_64-linux の場合
 
     ```
     $ sudo /usr/local/texlive/????/bin/x86_64-linux/tlmgr path add
     ```
 
-- 32-bit 版の場合
+- i386-linux の場合
 
     ```
     $ sudo /usr/local/texlive/????/bin/i386-linux/tlmgr path add
