@@ -22,6 +22,7 @@ The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使っ�
     - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
 - [http://www.ctan.org/pkg/acrotex](http://www.ctan.org/pkg/acrotex)
 - [CTAN:help/Catalogue/entries/acrotex.html](https://mirror.ctan.org/help/Catalogue/entries/acrotex.html)
+- [https://aur.archlinux.org/packages/texlive-acrotex/](https://aur.archlinux.org/packages/texlive-acrotex/)
 
 ## インストール {#a7637893}
 
