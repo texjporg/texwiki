@@ -15,7 +15,8 @@ pukiwiki: "MetaPost"
 [MetaPost の紹介 (PDF) \[Internet Archive\]](http://web.archive.org/web/20030318073200/http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
 という文章に触発されて書いたものです。角藤さんに感謝いたします。」
 
-↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
+↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。<br>
+この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。<br>
 
 ### MetaPost とは {#e4617397}
 
@@ -31,7 +32,7 @@ texdoc metapost
 
 で確認してください。<br>
 
-[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。
+[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。<br>
 
 - [FusionForge: MetaPost: Project Home](https://foundry.supelec.fr/projects/metapost/) （本家）
 - [The MetaPost page](http://cm.bell-labs.com/who//hobby/MetaPost.html) (作者 John D. Hobby のページ)
@@ -48,7 +49,7 @@ texdoc metapost
     - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
     - [CHANGES](https://foundry.supelec.fr/scm/viewvc.php/trunk/CHANGES?view=markup&root=metapost)
 
-### MetaPost (日本語版) {#vcd749fc}
+### MetaPost 日本語版 {#vcd749fc}
 
 W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
 
@@ -159,11 +160,10 @@ $ sudo tlmgr update --all
 
 #### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップデート {#c01c14c0}
 
-```
-(最近の W32TeX ではフィックスされている。)
-```
+TeX Live 2014 (MetaPost 1.902), W32TeX (MetaPost 1.999) では修正されています．<br>
 
 - [TeXLive 2013のmf2pt1がおかしい件](http://qiita.com/_yyu_/items/b1fac90074545ccee727)
+- [http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003](http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003)
 
 ### MetaPostプログラミング入門 {#p3fbc416}
 
@@ -197,36 +197,40 @@ mpost test
 ```
 
 と打ち込むと，beginfig(1); から endfig;
-までに描かれた内容が test.1 という EPS ファイルに出力されます。
-Ghostscript などで確認してみてください。
+までに描かれた内容が test.1 という EPS ファイルに出力されます。<br>
+Ghostscript などで確認してみてください。<br>
 
 もしさらに beginfig(2);……endfig;
 が同じ test.mp に書かれていれば，その中身は test.2
-に出力されます。
+に出力されます。<br>
 要するに beginfig() は拡張子を決めるだけですが，
-拡張子は数字（番号）しか使えません。
+拡張子は数字（番号）しか使えません。<br>
 
-上の例は単なる折れ線でした。閉じた図形にするには，
+上の例は単なる折れ線でした。<br>
+閉じた図形にするには，
 
 ```
 draw (u,0)--(2u,u)--(u,2u)--(0,u)--cycle;
 ```
 
-とします。さらに，滑らかな線で結ぶには，
+とします。<br>
+さらに，滑らかな線で結ぶには，
 
 ```
 draw (u,0)..(2u,u)..(u,2u)..(0,u)..cycle;
 ```
 
-とします。もちろん
+とします。<br>
+もちろん
 
 ```
 draw (u,0)--(2u,u)--(u,2u)..(0,u)..cycle;
 ```
 
-のような使い方もできます。
+のような使い方もできます。<br>
 
-塗りつぶしや色指定もできます。たとえば
+塗りつぶしや色指定もできます。<br>
+たとえば
 
 ```
 fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
@@ -236,7 +240,8 @@ fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
 
 #### 図に文字を挿入する {#j8ce9e55}
 
-文字を入れることもできます。たとえば
+文字を入れることもできます。<br>
+たとえば
 
 ```
 prologues:=1;
@@ -250,17 +255,17 @@ endfig;
 end.
 ```
 
-のようにすれば，点 (u,u) を中心とする位置に Red Ball と書かれます。
+のようにすれば，点 (u,u) を中心とする位置に Red Ball と書かれます。<br>
 このように文字を入れる場合は，
 PostScript フォントを指定し，
 最初に prologues:=1; としておけば，
-独立のEPSとして使えます。
+独立のEPSとして使えます。<br>
 ただし，
 defaultfont := "rptmr";
 のような命令でデフォールトのフォント名を標準的な PS
 フォントに指定しておく必要があります（rptmr
-は Times-Roman の TeX での名前です）。
-そうでなければ cmr10 になってしまい，一般のプリンタでは出力できません。
+は Times-Roman の TeX での名前です）。<br>
+そうでなければ cmr10 になってしまい，一般のプリンタでは出力できません。<br>
 
 > しかし Ghostscript では次のようにして cmr10 などを出力することができます：
 > GS_LIB という環境変数を CM Type1 フォントのある場所
@@ -277,14 +282,14 @@ defaultfont := "rptmr";
 > /CMEX10                                 (cmex10.pfb)    ;
 > ```
 >
-> などのように書いておきます。
+> などのように書いておきます。<br>
 > 別の手として，cmr10.pfb などを CMR10 という名前で /Resource/Font
-> ディレクトリにコピーしておいてもいいでしょう。
+> ディレクトリにコピーしておいてもいいでしょう。<br>
 
 #### 作成した図をTeX文章に取り込む {#ee4db6cc}
 
 TeX/LaTeX の文書の中に組み込んで使う場合は，
-逆に prologues:=1; は指定しません。
+逆に prologues:=1; は指定しません。<br>
 この場合，たとえば
 
 ```
@@ -312,7 +317,7 @@ dvips test -o test.ps
 ```
 
 と打ち込むと test.ps というPostScriptファイルができますので，
-Ghostscriptで見るか，PostScriptプリンタに送ります。
+Ghostscriptで見るか，PostScriptプリンタに送ります。<br>
 
 ここで
 
@@ -333,14 +338,14 @@ dvips -E test -o test.eps
 
 のように dvips の -E オプションを使えば，
 本物の EPS ファイルになり，
-TeX 以外のアプリケーションに取り込むこともできます。
+TeX 以外のアプリケーションに取り込むこともできます。<br>
 
 #### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
 
 上のような方法ではカーニングやリガチャは入りませんし，
-数式を含ませることもできません。
+数式を含ませることもできません。<br>
 ちゃんと組まれた文や数式を含ませるには，次のように label
-中に btex …… etex で囲んで入れます。
+中に btex …… etex で囲んで入れます。<br>
 
 ```
 verbatimtex
@@ -395,13 +400,14 @@ endfig;
 end.
 ```
 
-と書いておくだけで、自動的に latex を使ってくれます。ただしその場合の TEX
+と書いておくだけで、自動的に latex を使ってくれます。<br>
+ただしその場合の TEX
 変数は、latex.fmt に対するエンジンでなければいけません。(最近のものでは
-pdftex)。
+pdftex)。<br>
 
 #### PSfragの利用 {#gd4ef62a}
 
-日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
+日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。<br>
 さきほどの例で（prologues:=1; を指定しておき）
 
 ```
@@ -417,9 +423,9 @@ pdftex)。
 \end{document}
 ```
 
-のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。
+のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。<br>
 ただし，日本語としてセンタリングされるわけではありませんので，
-一般に位置がずれます。
+一般に位置がずれます。<br>
 
 #### その他の注意点 {#ddd5a5aa}
 
