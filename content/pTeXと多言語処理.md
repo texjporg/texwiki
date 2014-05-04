@@ -88,7 +88,7 @@ ASCII 翻字入力についての詳細は
 Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト
 (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
-input method については，[Google](http://www.google.co.jp/) などで探してみましょう。<br>
+input method については，[Google](https://www.google.co.jp/) などで探してみましょう。<br>
 参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?eLearning%2FInputMethod%2FGreek%2FWindows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では
