@@ -185,7 +185,7 @@ mxedruli を読み込みます。<br>
 すなわち，
 
 ```
-ptex2pdf -l -u gtest-o.tex
+ptex2pdf -u -l gtest-o.tex
 ```
 
 を実行します。<br>
@@ -286,7 +286,7 @@ UTF82TeX で変換してください。
 出来上がったら ptex2pdf で処理します。
 
 ```
-ptex2pdf -l -u vtest-o.tex
+ptex2pdf -u -l vtest-o.tex
 ```
 
 PDF ファイルを見ると，ヴェトナム語が正常に表示されているはずです。
@@ -295,17 +295,18 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 
 [タイ語をどうにかする実験 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/bxthai.html) を参照．<br>
 
-タイ語はthailatexを使って記述できます。
-ただし，タイ文字を7ビット化するなど，一工夫必要です。
+タイ語はthailatexを使って記述できます。<br>
+ただし，タイ文字を7ビット化するなど，一工夫必要です。<br>
 
 まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。<br>
-TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
+TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。<br>
 
-[libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。
+[libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。<br>
 
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
-など，Perl が必要になりますので，忘れずにインストールしてください。[8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
+など，Perl が必要になりますので，忘れずにインストールしてください。<br>
+[8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
 
 ```
 #!perl
@@ -317,11 +318,13 @@ TIS-620を直接編集できるテキストエディタとして，Windowsの場
 #!/strawberry/perl/bin/perl
 ```
 
-など自分の環境に合わせて修正します。そして C:\w32tex\bin\ など platex.exe などのある場所にコピーし，同じ場所にある perlexec.exe を同じ場所にコピーして 8bt2ptex.exe と名前を変更します。（こうすることで，8bt2ptex を実行しやすくなります。）
+など自分の環境に合わせて修正します。<br>
+そして C:\w32tex\bin\ など platex.exe などのある場所にコピーし，同じ場所にある perlexec.exe を同じ場所にコピーして 8bt2ptex.exe と名前を変更します。（こうすることで，8bt2ptex を実行しやすくなります。）<br>
 
 thailatexのWindows用はMikTeXで用いられるものになっていますが，TDS 1.1に合わせて
-適切にコピーすることで角藤さんのW32TeX(pTeX)でも使えるようになります。[thailatexの解説ページ（タイ語）](http://khombkk.tripod.com/mikfiles/miktle.htm)より，「miktl025.zip」と「SWATH」（下の\[local copy\]のリンク先からダウンロード可能）
-の2つをダウンロードします。（直接リンクするとうまくダウンロードできませんでしたので，ご面倒でも上の解説ページより各自ダウンロードしてください。）
+適切にコピーすることで角藤さんのW32TeX(pTeX)でも使えるようになります。<br>
+[thailatexの解説ページ（タイ語）](http://khombkk.tripod.com/mikfiles/miktle.htm)より，「miktl025.zip」と「SWATH」（下の\[local copy\]のリンク先からダウンロード可能）
+の2つをダウンロードします。（直接リンクするとうまくダウンロードできませんでしたので，ご面倒でも上の解説ページより各自ダウンロードしてください。）<br>
 
 以下 $TEXMFLOCAL を share/texmf-local など自分の環境に置き換えて作業を進めてください。
 
@@ -355,7 +358,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 8bt2ptex thaiold.ldf >thai.ldf
 ```
 
-で7ビット化したthai.ldfをコピーします。
+で7ビット化したthai.ldfをコピーします。<br>
 
 その後，$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
 
@@ -386,12 +389,14 @@ rnorasiz Norasi-BoldItalic " TeXTISEncoding ReEncodeFont " <TeXTIS.enc <norasiz.
 と記述します。もう一つダウンロードしてきた swathw32.zip は展開（解凍）して，
 data/ ディレクトリと swath.exe を
 C:\w32tex\bin\ など PATH の通ったところにコピーします
-（data/ ディレクトリは別にどこにコピーしても同じだと思いますが）。
+（data/ ディレクトリは別にどこにコピーしても同じだと思いますが）。<br>
 
 では，実際にタイ語文書を作りましょう。
 
-Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。 ([Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。)これをthaiutf8.txtとします。<br>
-Windows PowerShell またはコマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。
+Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。<br>
+[Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。<br>
+これをthaiutf8.txtとします。<br>
+Windows PowerShell またはコマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。<br>
 
 ```
 iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
@@ -400,9 +405,9 @@ iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 TIS-620 の文字コードで編集して保存した場合は上のようなiconvでの変換作業は不要です。
 
 これらの方法などで出来た thaimemo.txt を Windows PowerShell またはコマンド プロンプトにて SWATH で
-処理し，単語の切れ目に \wbr という目印を付けます。
+処理し，単語の切れ目に \wbr という目印を付けます。<br>
 例えば data/ ディレクトリを C:\w32tex\bin\ にコピーしたなら，
-Windows PowerShell またはコマンド プロンプトで次のように実行します。
+Windows PowerShell またはコマンド プロンプトで次のように実行します。<br>
 
 ```
 swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
@@ -465,7 +470,7 @@ swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
 あとはいつもの通りに処理します。
 
 ```
-ptex2pdf -l -u foo.tex
+ptex2pdf -u -l foo.tex
 ```
 
 foo.pdf を開くとタイ語と日本語が共存しているはずです。
@@ -1254,7 +1259,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 あとは ptex2pdf などで処理し，PDF 文書で確認しましょう。
 
 ```
-ptex2pdf -l -u cjkintro.tex
+ptex2pdf -u -l cjkintro.tex
 ```
 
 または，
