@@ -80,7 +80,7 @@ Windows
 
 ## コマンドラインオプション {#j41d5a42}
 
-- [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp/HLP000109.html)
+- [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html)
 - [コマンドラインオプション - SakuraEditorWiki](http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3)
 
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
