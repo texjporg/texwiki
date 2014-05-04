@@ -67,7 +67,7 @@ TeX, LaTeX はフリーウェアです。<br>
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
 日本では TeX，LaTeX
-を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/)）が日本語化した
+を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化した
 [pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 が使用されています。<br>
 pTeX，pLaTeX の頭文字の
