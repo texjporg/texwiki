@@ -82,6 +82,27 @@ pdflatex neko.tex
 
 ! Package keyval Error: pdflatex undefined. のエラーが発生する場合は BXjscls を最新版にアップデートします．<br>
 
+KOMA-Script classes と組み合わせて使用する場合は以下のようにします．<br>
+
+***
+
+```
+\documentclass{scrartcl}
+\usepackage[whole]{bxcjkjatype}
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+***
+
 ## CJK パッケージの詳細 {#k191ae10}
 
 ### はじめに {#ebc72ee3}
