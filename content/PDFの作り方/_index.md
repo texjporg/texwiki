@@ -13,7 +13,7 @@ pukiwiki: "PDFの作り方"
 投稿論文や予稿で PDF を要求されることが増えました。<br>
 ここでは PDF の上手な作り方を解説します。<br>
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ### PDF を作るためのソフト {#mde22763}
 
