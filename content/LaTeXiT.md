@@ -65,6 +65,7 @@ OS X
 
 ## 関連リンク {#tab9989c}
 
+- [MacにLaTeXiT (+LaTeX) を導入＆日本語に対応](http://harulab.info/?p=631)
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - MacWiki:LaTeXiT
