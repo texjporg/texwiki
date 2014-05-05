@@ -70,24 +70,16 @@ l.12 \ProvidesClassRCS
 
 CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
 
-### dvipdfmx でナビゲーションシンボルと \framezoom が機能しない, XeLaTeX で \framezoom が機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
+### dvipdfmx, XeLaTeX でナビゲーションシンボルと \framezoom が機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
+
+bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 - [LaTeX: to make the navigation symbols (and \framezoom) work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
 - [Beamer は dvipdfmx をサポートするか否か？ (2)](http://d.hatena.ne.jp/zrbabbler/20130221/1361455788)
 - [Beamer は dvipdfmx をサポートするか否か？ (3)](http://d.hatena.ne.jp/zrbabbler/20130303/1362319511)
 - [おっ、platex+dvipdfmxで拡大表示ができるようになった！？](http://blog.livedoor.jp/ti5942/archives/7760380.html)
-
-### XeLaTeX でナビゲーションシンボルが機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用するもしくは Beamer 3.17 以降にアップデートする {#s082f108}
-
 - [「XeLaTeX でナビゲーションシンボルが機能しない →bxdpx-beamerパッケージを使う」がいい！？](http://blog.livedoor.jp/ti5942/archives/7765237.html)
-- [Ubuntu 12.10 のBeamerのバージョンは？](http://blog.livedoor.jp/ti5942/archives/7763783.html) → [Ubuntu 13.10 で Beamer 3.24 にアップデートされました](http://packages.ubuntu.com/ja/latex-beamer)
-
-### Beamer 3.18 で dvipdfmx を使用すると block 環境の影がおかしくなる → Beamer 3.19 で修正されました {#pc9c1e18}
-
-- [#161 \[Patch\] Real transparency for box shadows](https://bitbucket.org/rivanvx/beamer/issue/161/patch-real-transparency-for-box-shadows)
-- [#192 beamer 3.18 with dvipdfmx breaks the shadow of block environments](https://bitbucket.org/rivanvx/beamer/issue/192/beamer-318-with-dvipdfmx-breaks-the-shadow) → resolved
-- beamer 3.18 &amp; texlive 2011 ([qa:56746](https://okumuralab.org/~okumura/texfaq/qa/56746.html), [qa:56747](https://okumuralab.org/~okumura/texfaq/qa/56747.html), [qa:56748](https://okumuralab.org/~okumura/texfaq/qa/56748.html), [QA: beamer 3.18 &amp; texlive 2011](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=815))
 
 ## ダウンロード {#o77feabf}
 
