@@ -11,7 +11,7 @@ pukiwiki: "Inkscape"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Inkscape_logo_2.svg/120px-Inkscape_logo_2.svg.png" alt="Inkscape" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
 
@@ -41,7 +41,7 @@ Inkscape は，オープンソースのベクターグラフィックエディ�
 
 ### 動作環境 {#a70b2acc}
 
-Windows, OS X, Linux で動作します．<br>
+Windows, OS X, Linux
 
 ### License {#ibc5e002}
 
