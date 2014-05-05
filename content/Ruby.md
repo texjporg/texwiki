@@ -88,11 +88,13 @@ $ pacman -S ruby
 #### Linux Mint {#o6dd6f52}
 
 - [http://packages.ubuntu.com/ja/ruby](http://packages.ubuntu.com/ja/ruby)
+- [http://packages.ubuntu.com/ja/ruby-full](http://packages.ubuntu.com/ja/ruby-full)
 - [http://packages.ubuntu.com/ja/ruby2.1](http://packages.ubuntu.com/ja/ruby2.1)
 
 #### Debian {#z226ac1e}
 
 - [https://packages.debian.org/ja/ruby](https://packages.debian.org/ja/ruby)
+- [https://packages.debian.org/ja/ruby-full](https://packages.debian.org/ja/ruby-full)
 - [https://packages.debian.org/ja/ruby2.1](https://packages.debian.org/ja/ruby2.1)
 
 #### Fedora {#c69aed3b}
