@@ -9,7 +9,7 @@ pukiwiki: "newtx"
 
 ## newtx {#xd8a1457}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## newtx とは {#cec39c59}
 
@@ -19,6 +19,8 @@ newtx は TX フォントを改良したものです．<br>
     - [MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
+- [http://www.ctan.org/pkg/newtxtt](http://www.ctan.org/pkg/newtxtt)
+    - newtxtt – Enhancement of typewriter fonts from newtx
 - [http://www.ctan.org/pkg/newpx](http://www.ctan.org/pkg/newpx)
     - newpx – Al­ter­na­tive uses of the PX fonts, with im­proved met­rics
 - [http://www.ctan.org/pkg/boondox](http://www.ctan.org/pkg/boondox)
@@ -38,11 +40,11 @@ newtx は TX フォントを改良したものです．<br>
 
 #### TeX Live {#v5e856b3}
 
-TeX Live には newtx, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
+TeX Live 2014 には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
 
 #### W32TeX {#h170776e}
 
-W32TeX には newtx, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
+W32TeX には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
 
 ### 使い方 {#rcf88e0c}
 
