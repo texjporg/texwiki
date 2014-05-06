@@ -26,7 +26,10 @@ pukiwiki: "Texmaker"
 <!-- あなたが邪魔しているわけです． -->
 <!-- Wiki の記述がバックアップに保存された時点で -->
 <!-- 情報を残してほしいという願いは叶えられています． -->
-<!-- Wiki の記述があなたが書いた文書であれば納得するのですが -->
+<!-- 公式ページのマニュアルは Wiki を書いている人間よりも -->
+<!-- はるかに Texmaker に関して詳しい情報を持った人間が書いているので -->
+<!-- そちらを参照したほうがいいと思います． -->
+<!-- それに Wiki の記述があなたが書いた文書であれば納得するのですが -->
 <!-- ここに書かれている文書は -->
 <!-- Texmaker を選ぶ理由がないと思っている人間が書いたものなので -->
 <!-- 復活させてもあなたの言葉ではないので説得力がないんですよね． -->
@@ -45,6 +48,6 @@ pukiwiki: "Texmaker"
 Texmaker は日本語入力に関する不具合とコマンドのパラメータの処理に関する不具合が発生することがあるかもしれません．<br>
 問題が発生する場合は Texmaker の派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
 
-## [Texmaker](http://www.xm1math.net/texmaker/) → 日本語入力に関する不具合とコマンドのパラメータの処理に関する不具合が発生する場合は [TeXstudio](/TeXstudio/) を使用する {#x838d855}
+## [Texmaker](http://www.xm1math.net/texmaker/) → [TeXstudio](/TeXstudio/) を使用する {#x838d855}
 
 see [http://www.xm1math.net/texmaker/](http://www.xm1math.net/texmaker/)
