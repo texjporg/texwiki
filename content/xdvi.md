@@ -69,6 +69,7 @@ $ sudo cp XDvi XDvi.org
 OS X の場合
 
 ```
+$ brew install gnu-sed
 $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
@@ -193,6 +194,80 @@ xdvik version 22.85 j1.41-ptexlive (Xaw toolkit)
 Libraries: kpathsea version 6.1.1dev, T1lib version 5.1.2, FreeType version 2.4.11, Fontconfig version 2.9.0
 ```
 
+#### TeX Live 公式パッケージ (OS X) の場合 {#r20c1e45}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr update --all
+$ cd /usr/local/texlive/????
+$ sudo ln -s texmf-dist texmf
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+$ brew install gnu-sed
+$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+#### TeX Live 公式パッケージ (Linux) の場合 {#ud34ec40}
+
+```
+$ sudo tlmgr update --self --all
+$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr install pxdvi pmetapost
+$ sudo /usr/local/texlive/????/bin/*/tlmgr path add
+$ sudo tlmgr update --all
+$ cd /usr/local/texlive/????
+$ sudo ln -s texmf-dist texmf
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
+$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+```
+
+#### TeX Live/Arch Linux (x86_64) の場合 {#p7bf914d}
+
+- [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
+
+tlptexlive リポジトリから pxdvi をダウンロード・展開して<br>
+pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して<br>
+/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定します．<br>
+
+```
+$ mkdir pxdvi
+$ cd pxdvi
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.tar.xz
+$ curl -O http://www.tug.org/~preining/tlptexlive/archive/pxdvi.x86_64-linux.tar.xz
+$ tar xvf pxdvi.tar.xz
+$ tar xvf pxdvi.x86_64-linux.tar.xz
+$ sudo cp -p bin/x86_64-linux/pxdvi-xaw /usr/bin
+$ sudo ln -s /usr/bin/pxdvi-xaw /usr/bin/pxdvi
+$ sudo cp -pR texmf-dist/xdvi /usr/share/texmf-dist/pxdvi
+$ sudo cp -pR texmf-dist/fonts/map/pxdvi /usr/share/texmf-dist/fonts/map/pxdvi
+$ sudo mkdir -p /usr/share/texmf-local/web2c
+$ sudo cp /usr/share/texmf-dist/web2c/texmf.cnf /usr/share/texmf-local/web2c
+```
+
+/usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を追加します．<br>
+
+```
+$ printf '\n%% pxdvi\nXDVIINPUTS = /usr/share/texmf-dist/pxdvi\n' | sudo tee -a /usr/share/texmf-local/web2c/texmf.cnf
+$ tail /usr/share/texmf-local/web2c/texmf.cnf
+...
+% pxdvi
+XDVIINPUTS = /usr/share/texmf-dist/pxdvi
+```
+
+&#x58;DVIINPUTS に /usr/share/texmf-dist/pxdvi が設定されていることを確認します．<br>
+
+```
+$ kpsewhich -var-value XDVIINPUTS
+/usr/share/texmf-dist/pxdvi
+```
+
 ### 注意点 {#jd5a94be}
 
 #### pxdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示される → /usr/local/texlive/????/texmf-dist/xdvi/&#x58;Dvi を修正する {#ha5f0016}
@@ -214,6 +289,7 @@ $ sudo cp XDvi XDvi.org
 OS X の場合
 
 ```
+$ brew install gnu-sed
 $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
