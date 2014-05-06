@@ -133,6 +133,7 @@ $ tlmgr update --self --all
 $ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ tlmgr pinning add tlptexlive "*"
 $ tlmgr install pmetapost
+$ /usr/local/texlive/????/bin/*/tlmgr path add
 $ tlmgr update --all
 ```
 
@@ -153,6 +154,7 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
 $ sudo tlmgr install pmetapost
+$ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo tlmgr update --all
 ```
 
