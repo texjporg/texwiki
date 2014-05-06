@@ -218,7 +218,7 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
 $ sudo tlmgr install pxdvi pmetapost
-$ sudo /usr/local/texlive/????/bin/*/tlmgr path add
+$ sudo tlmgr path add
 $ sudo tlmgr update --all
 $ cd /usr/local/texlive/????
 $ sudo ln -s texmf-dist texmf
