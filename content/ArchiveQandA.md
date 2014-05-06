@@ -9,9 +9,11 @@ pukiwiki: "ArchiveQandA"
 
 ここでは、[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
 
-<!-- *目次 [#c74dbb77] -->
+## Archive Q &amp; A {#c74dbb77}
 
-### ヘルプドキュメントの探し方 {#bdcc8e5a}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## ヘルプドキュメントの探し方 {#bdcc8e5a}
 
 ([qa:53707](https://okumuralab.org/~okumura/texfaq/qa/53707.html), [qa:53708](https://okumuralab.org/~okumura/texfaq/qa/53708.html), [qa:55521](https://okumuralab.org/~okumura/texfaq/qa/55521.html) など)
 
@@ -25,7 +27,7 @@ pukiwiki: "ArchiveQandA"
 
 - TeXworks など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-### TeXworks のエラーメッセージ {#g1eb4223}
+## TeXworks のエラーメッセージ {#g1eb4223}
 
 - エラーが発生した場合は，エラーメッセージをよく読んで対処してください。
 
@@ -33,23 +35,23 @@ pukiwiki: "ArchiveQandA"
 
     よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
 
-### dviout のエラーメッセージ {#lb61846e}
+## dviout のエラーメッセージ → dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#lb61846e}
 
 dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
-### xdvi のエラーメッセージ {#x72af3e8}
+## xdvi のエラーメッセージ → xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする {#x72af3e8}
 
 xdvi で日本語が表示されないなどの問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
-### TeX本体のエラーメッセージ {#s54a975c}
+## TeX本体のエラーメッセージ {#s54a975c}
 
 <!-- -''! TeX capacity exceeded, sorry ...''（[[qa:32844]], [[qa:32596]]など） -->
 <!-- Q&A で良く出るものはここに書いたほうが良い？  -->
 - [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
 
-### LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
+## LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
 
 - [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)
 - [LaTeX の警告メッセージ](</LaTeX の警告メッセージ/>)
@@ -58,11 +60,11 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
 - [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)（エラーや警告は生じないが，深刻な問題があるもの）
 
-### 表記の哲学 {#l951f950}
+## 表記の哲学 {#l951f950}
 
 - [表記の哲学](</表記の哲学/>)
 
-### 画像の作り方、扱い方 {#kbcf5f4a}
+## 画像の作り方、扱い方 {#kbcf5f4a}
 
 - “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG など）が取り込めない
     - 画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
@@ -98,7 +100,7 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
         とソース中に記述し dvipdfmx を実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
         <!-- -[[TeX と「TeX 以外」]] -->
 
-### Tips {#de167df2}
+## Tips {#de167df2}
 
 - 自分自身のファイル名の取得
     - \jobname ([qa:32943](https://okumuralab.org/~okumura/texfaq/qa/32943.html), [qa:17412](https://okumuralab.org/~okumura/texfaq/qa/17412.html), [qa:11872](https://okumuralab.org/~okumura/texfaq/qa/11872.html)).
