@@ -21,7 +21,6 @@ pukiwiki: "Markdown"
 
 ### エディタ {#vb4c5393}
 
-- [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)
 - [Emacs](/Emacs/)
     - [Emacs Markdown Mode](http://jblevins.org/projects/markdown-mode/)
 - [Vim](/Vim/)
@@ -29,6 +28,8 @@ pukiwiki: "Markdown"
     - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
     - [VimでMarkdown, ブラウザでプレビュー](http://qiita.com/us10096698/items/1ac05c5c9543d2f79fa3)
     - [Vim で GitHub Flavored Markdown をプレビューする](http://superbrothers.hatenablog.com/entry/2013/09/28/123546)
+- [Atom](/Atom/)
+- [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)
 - [StackEdit](https://stackedit.io/)
     - [https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
