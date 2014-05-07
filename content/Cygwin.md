@@ -108,16 +108,8 @@ Do you want to continue with the exact same settings as before (y/N): y
 
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
-x86_64-cygwin の場合
-
 ```
-$ /usr/local/texlive/????/bin/x86_64-cygwin/tlmgr path add
-```
-
-i386-cygwin の場合
-
-```
-$ /usr/local/texlive/????/bin/i386-cygwin/tlmgr path add
+$ /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
 #### アップデート {#k71f6600}
