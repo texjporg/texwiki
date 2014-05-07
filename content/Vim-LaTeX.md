@@ -153,6 +153,7 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'pdf'
 let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
@@ -227,6 +228,7 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'pdf'
 let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
@@ -267,6 +269,17 @@ set imdisable
 ***
 
 set imdisable を設定すると問題が発生する場合は set imdisable を削除してください．<br>
+
+***
+
+bibtexを使うなど，複数回のコンパイルが必要な場合は，「g:Tex_MultipleCompileFormats」オプションを設定する必要があります．例えば，pdfでbibtexを使う場合は，
+
+```
+let g:Tex_MultipleCompileFormats = 'pdf'
+```
+
+という設定を書き加えます．
+参考：[http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho](http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho)
 
 ### Linux {#f59a6b76}
 
@@ -313,6 +326,7 @@ let g:Imap_UsePlaceHolders = 1
 let g:Imap_DeleteEmptyPlaceHolders = 1
 let g:Imap_StickyPlaceHolders = 0
 let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'pdf'
 let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 "let g:Tex_FormatDependency_pdf = 'dvi,ps,pdf'
