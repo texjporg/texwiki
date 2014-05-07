@@ -21,3 +21,11 @@ pukiwiki: "Atom"
 ### ChangeLog {#ifd2779d}
 
 - [https://github.com/atom/atom/commits/master](https://github.com/atom/atom/commits/master)
+
+## インストール {#x414b295}
+
+### Linux {#r0d89918}
+
+#### Arch Linux {#ea1ae897}
+
+- [https://aur.archlinux.org/packages/atom-editor/](https://aur.archlinux.org/packages/atom-editor/)
