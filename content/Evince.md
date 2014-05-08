@@ -35,7 +35,7 @@ Windows, OS X, Linux
 
 ### リリース情報 {#m8e1200a}
 
-[https://git.gnome.org/browse/evince/refs/tags](https://git.gnome.org/browse/evince/refs/tags) を参照．<br>
+[https://git.gnome.org/browse/evince/refs/tags](https://git.gnome.org/browse/evince/refs/tags)
 
 ### ChangeLog {#nb7ae766}
 
