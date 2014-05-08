@@ -10,6 +10,10 @@ pukiwiki: "Atom"
 
 ## [Atom](https://atom.io/) {#r1ce0de4}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## Summary {#y42be4f2}
+
 - [https://atom.io/](https://atom.io/)
 - [https://github.com/atom](https://github.com/atom)
 - [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
