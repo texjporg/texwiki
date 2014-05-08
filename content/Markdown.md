@@ -37,3 +37,4 @@ pukiwiki: "Markdown"
 ### Markdown → LaTeX {#v519987b}
 
 - [markdown->TeXの変換だけで卒論を仕上げるのに便利だったツール10個まとめ](http://mizchi.hatenablog.com/entry/2014/01/20/090957)
+- [kramdownに関する覚え書き](http://cup.sakura.ne.jp/kmd_a.htm)
