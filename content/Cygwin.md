@@ -560,6 +560,7 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 ## 関連リンク {#bc8cfcc3}
 
 - [Gow (Gnu On Windows)](https://github.com/bmatzelle/gow/wiki)
+- [OSSはアルミニウムの翼で飛ぶ: gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
 - [gnupack](http://gnupack.sourceforge.jp/docs/latest/UsersGuide.html)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
 - [ゼロからはじめる「Cygwin」 - WindowsでUNIXを動かしてみよう！](http://news.mynavi.jp/articles/2013/08/06/cygwin/)
