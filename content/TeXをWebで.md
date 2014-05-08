@@ -54,12 +54,13 @@ openin_any = p
 parse_first_line = f
 ```
 
-さらに，shell_escape_commands = ... の形で例外的に呼び出せるコマンドを列挙している場合がありますので，これも精査あるいは削除します。(shell_escape = f の場合は shell_escape_commannds = に列挙してあるコマンドも実行しません。)
+さらに，shell_escape_commands = ... の形で例外的に呼び出せるコマンドを列挙している場合がありますので，これも精査あるいは削除します。<br>
+shell_escape = f の場合は shell_escape_commannds = に列挙してあるコマンドも実行しません。<br>
 
 #### テスト1 {#p4f76648}
 
-次のようなファイルを処理してみてください。
-エラーになれば大丈夫です。
+次のようなファイルを処理してみてください。<br>
+エラーになれば大丈夫です。<br>
 
 ```
 \documentclass{article}
@@ -71,8 +72,8 @@ parse_first_line = f
 
 #### テスト2 {#o74e23ce}
 
-次のようなファイルを処理してみてください。
-カレントディレクトリに hoge というファイルができなければ大丈夫です。
+次のようなファイルを処理してみてください。<br>
+カレントディレクトリに hoge というファイルができなければ大丈夫です。<br>
 
 ```
 \documentclass{article}
@@ -85,18 +86,18 @@ parse_first_line = f
 
 ### スクリプトの準備 {#bf97e60c}
 
-まず適当な Apache のドキュメントが置ける場所に適当なディレクトリを作ります。
-このディレクトリ自体は Apache のプロセスに書き込みができないようにしておきます。
+まず適当な Apache のドキュメントが置ける場所に適当なディレクトリを作ります。<br>
+このディレクトリ自体は Apache のプロセスに書き込みができないようにしておきます。<br>
 
-この中に次の二つのファイルを置きます。
+この中に次の二つのファイルを置きます。<br>
 
 - [index.php](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/index_php.txt)
 - [do.php](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/do_php.txt)
 
 また，空のファイル count.txt と空のディレクトリ work
-を作ります。
+を作ります。<br>
 これらは Apache のプロセスに書き込みができるようにします（ファイルは 666，ディレクトリは 777
-にすればいいでしょう）。
+にすればいいでしょう）。<br>
 
 ビットマップフォントの自動生成を許すなら $TEXMF/fonts/pk
 というディレクトリも Apache のプロセスに書き込みができるようにします。<br>
@@ -106,9 +107,9 @@ parse_first_line = f
 もっとも，tfm の生成もありますので，$TEXMF/fonts/tfm/jknappen
 も書き込み可にしておかなければならないでしょう。<br>
 
-do.php の中身は適当に直します（特に TeX Live をインストールしたパス）。
+do.php の中身は適当に直します（特に TeX Live をインストールしたパス）。<br>
 次のようになっている部分も必要に応じて直します。
-これは処理を10秒，1024Kバイトに制限する場合です。
+これは処理を10秒，1024Kバイトに制限する場合です。<br>
 
 ```
 ulimit -t 10 -f 1024
