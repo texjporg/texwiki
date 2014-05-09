@@ -11,7 +11,7 @@ pukiwiki: "KyoTeX"
 
 ## [KyoTeX](http://www.ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/xyzzy/kyotex/) {#v6739e44}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## kyotex-mode とは {#sb34eaed}
 
