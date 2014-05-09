@@ -9,7 +9,7 @@ pukiwiki: "xyzzy"
 
 ## xyzzy → 問題が発生する場合は [Emacs](/Emacs/) を使用する {#r2e32810}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## xyzzy とは {#a651aa7e}
 
