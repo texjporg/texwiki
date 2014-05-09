@@ -28,6 +28,14 @@ pukiwiki: "Atom"
 
 ## インストール {#x414b295}
 
+### Windows {#d8e05887}
+
+- [Atom Builds for Windows](http://blog.someguy123.com/atom-builds-for-windows/)
+
+### OS X {#o272a8e0}
+
+- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/atom.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/atom.rb)
+
 ### Linux {#r0d89918}
 
 #### Arch Linux {#ea1ae897}
