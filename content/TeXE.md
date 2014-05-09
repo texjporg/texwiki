@@ -9,7 +9,7 @@ pukiwiki: "TeXE"
 
 ## [TeXE](http://www5.ocn.ne.jp/~fact/download.html) {#d1c324af}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## TeXE とは {#b019eb8f}
 
