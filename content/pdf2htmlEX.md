@@ -9,7 +9,7 @@ pukiwiki: "pdf2htmlEX"
 
 ## [pdf2htmlEX](http://coolwanglu.github.com/pdf2htmlEX/) {#t74544cf}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## pdf2htmlEX とは {#h92a9ad3}
 
@@ -440,7 +440,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.25.3
+--   found poppler, version 0.26.0
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
