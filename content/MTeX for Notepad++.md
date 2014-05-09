@@ -9,7 +9,7 @@ pukiwiki: "MTeX for Notepad++"
 
 [Notepad++](/Notepad++/) > MTeX for Notepad++
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## [MTeX for Notepad++](http://ich.sakura.ne.jp/manabu/jp/html/program.html#MTeXnpp) {#i94bcee5}
 
