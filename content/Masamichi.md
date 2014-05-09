@@ -9,7 +9,7 @@ pukiwiki: "Masamichi"
 
 ## [『雅理』 Masamichi エディタ](http://hiraba.webcrow.jp/) {#re9385b5}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Masamichi とは {#hfca40e4}
 
