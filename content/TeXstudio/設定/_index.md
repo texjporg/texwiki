@@ -228,7 +228,7 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
+コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -236,7 +236,7 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span><br>
+キーボードショートカット　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
@@ -248,7 +248,7 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+コマンドの補完　　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ Replace Tab by Whitespace<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
@@ -293,7 +293,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
+コマンド　　　　　　　　　　　　フォントファミリー:　　　　　　　　　　<ins>メイリオ　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> ☐ モノスペースフォントのみ表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -305,7 +305,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
-メニュー　　　　　　　　　　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　▼\]</ins></span><br>
+メニュー　　　　　　　　　　　　既定のフォントエンコーディング:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
@@ -317,7 +317,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定　　　　　 字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げを維持する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+詳細なエディタ設定　　　　　 字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ Replace Tab by Whitespace<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
