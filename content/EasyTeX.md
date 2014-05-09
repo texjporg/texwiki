@@ -9,7 +9,7 @@ pukiwiki: "EasyTeX"
 
 ## [EasyTeX](http://www.juen.ac.jp/math/nakagawa/texguide.html#easytex) {#et3357}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
 
