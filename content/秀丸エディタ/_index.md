@@ -10,7 +10,7 @@ pukiwiki: "秀丸エディタ"
 
 ## [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) {#z8c2c3a5}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## 秀丸エディタとは {#w73ea51b}
 
