@@ -13,7 +13,7 @@ pukiwiki: "Mery"
 
 <img src="http://www.haijin-boys.com/wiki/skins/common/images/wiki.png" alt="Mery" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
 
