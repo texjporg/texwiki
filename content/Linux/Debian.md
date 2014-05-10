@@ -65,7 +65,26 @@ $ sudo dpkg -i texlive-local_2013-1_all.deb
 
 ```
 $ sudo apt-get install texlive-full
+$ sudo apt-get install xzdec
+$ tlmgr init-usertree
 ```
+
+#### 注意点 {#sec567fd}
+
+```
+$ tlmgr update --self
+(running on Debian, switching to user mode!)
+cannot setup TLPDB in /home/`logname`/texmf at /usr/bin/tlmgr line 5335.
+```
+
+と表示される場合は
+
+```
+$ sudo apt-get install xzdec
+$ tlmgr init-usertree
+```
+
+を実行します．<br>
 
 ## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#y4c2003d}
 
