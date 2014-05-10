@@ -11,6 +11,8 @@ pukiwiki: "MiKTeX"
 
 ## [MiKTeX](http://miktex.org/) {#n766a2b6}
 
+<img src="http://upload.wikimedia.org/wikipedia/de/thumb/b/b7/Logo_MiKTeX.svg/500px-Logo_MiKTeX.svg.png" alt="MiKTeX" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## MiKTeX とは {#b83589db}
@@ -28,6 +30,11 @@ Windows
 ### ChangeLog {#o3eda5f2}
 
 - [http://sourceforge.net/p/miktex/code/HEAD/log/](http://sourceforge.net/p/miktex/code/HEAD/log/)
+
+### ミラーサイト {#xfbee989}
+
+- [http://ring.maffin.ad.jp/pub/text/CTAN/systems/win32/miktex/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/win32/miktex/)
+- [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/miktex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/miktex/)
 
 ### 派生版 {#v2c807b8}
 
