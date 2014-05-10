@@ -113,17 +113,30 @@ $ equivs-build debian-equivs-2013-ex.txt
 $ sudo dpkg -i texlive-local_2013-1_all.deb
 ```
 
-<!-- [[texlive-dummy-ubuntu:https://github.com/krlmlr/texlive-dummy-ubuntu]] を使用する場合は以下のようにします．~ -->
-<!--  -->
-<!-- $ sudo add-apt-repository ppa:krlmlr/ppa -->
-<!-- $ sudo apt-get update -->
-<!-- $ sudo apt-get install texlive-dummy -->
-
 ### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
 ```
 $ sudo apt-get install texlive-full
+$ sudo apt-get install xzdec
+$ tlmgr init-usertree
 ```
+
+#### 注意点 {#u1cbe355}
+
+```
+$ tlmgr update --self
+(running on Debian, switching to user mode!)
+cannot setup TLPDB in /home/`logname`/texmf at /usr/bin/tlmgr line 5335.
+```
+
+と表示される場合は
+
+```
+$ sudo apt-get install xzdec
+$ tlmgr init-usertree
+```
+
+を実行します．<br>
 
 ## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#ve306e42}
 
