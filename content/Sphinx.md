@@ -11,7 +11,7 @@ pukiwiki: "Sphinx"
 
 <img src="http://sphinx-doc.org/latest/_static/sphinxheader.png" alt="Sphinx" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Sphinx とは {#pbb2bc6a}
 
@@ -106,6 +106,7 @@ make latexpdfja
     - \[[Sphinx-Users 176\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000175.html)
     - \[[Sphinx-Users 178\] Re:	日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000177.html)
     - \[[Sphinx-Users 179\] Re: 日本語 LaTeX 経由 PDF の改良 fork](http://www.python.jp/pipermail/sphinx-users/2011-November/000178.html)
+- [Ubuntu trusty testing No2:14.04でSphinxを使ってPDF作成をする](http://nekomatu.blogspot.jp/2014/03/ubuntu-trusty-testing-no2-howto-sphinx.html)
 - [テキストからHTMLやTeX,pdf,docxをつくれるSphinxがドキュメント作成にかなり便利だったのでメモ](http://nwpct1.hatenablog.com/entry/2013/10/03/212309)
 - [Sphinx と LaTeX を使うときの 小技](https://gist.github.com/uchida/4545280)
 - [使い始めたばかりのSphinxでPDFを生成してみた](http://kanonji.info/blog/2013/04/12/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E3%81%B0%E3%81%8B%E3%82%8A%E3%81%AEsphinx%E3%81%A7pdf%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
@@ -118,8 +119,6 @@ make latexpdfja
 - [latex_documentsで \and を使うとLaTeXのビルドでこける](http://d.hatena.ne.jp/tboffice/20121126/1353945728)
 - [Windows8にPDFありのsphinx環境](http://fseek.blogspot.com/2012/11/windows8pdfsphinx.html)
 - [独学Linux : Sphinx を含む記事](http://blog.livedoor.jp/vine_user/search?q=Sphinx)
-    - [ゼロからはじめるSphinx《入門編》](http://blog.livedoor.jp/vine_user/archives/51917814.html)
-    - [ゼロからはじめるSphinx《LaTeX編》](http://blog.livedoor.jp/vine_user/archives/51918624.html)
 - [CentOS5(Scientific Linux 6) + texlive2011 + Sphinx1.1でlatex経由のpdf出力](http://room6933.com/blog/2012/01/16/sphinx2pdf/)
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
 - [Sphinx と W32TeX で PDF 出力](http://d.hatena.ne.jp/hokorobi/20120108/1326023180)
@@ -127,7 +126,6 @@ make latexpdfja
 - [(11日目) Sphinx から PDF を生成してみよう (LaTeX 編)](http://d.hatena.ne.jp/tk0miya/20111211), [(11日目) Sphinx から PDF を生成してみよう (LaTeX 編) - Hack like a rolling stone](http://d.hatena.ne.jp/tk0miya/touch/20111211)
 - [ubuntuでsphinxのpdf出力をする環境を作る2](http://d.hatena.ne.jp/bols-blue/20110821/1313925176)
 - [ubuntuでsphinxのpdf出力をする環境を作る](http://d.hatena.ne.jp/bols-blue/20110820/1313832820)
-- [SphinxとTeXとPDFと日本語](http://d.hatena.ne.jp/s_yano/20100921/1285048025)
 - [sphinx math](http://ggutter.blogspot.com/2009/12/sphinx-math.html)
 - [Sphinx - laclefwiki](http://saekiyoshiyasu.org/wiki/Sphinx)
 - [Sphinxでドキュメント生成 - 図を描く、TeX経由でPDF（Windowsでの始め方）（続）](http://d.hatena.ne.jp/torutk/20110618/p1)
