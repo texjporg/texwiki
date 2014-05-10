@@ -119,9 +119,8 @@ TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できる�
 
 ■ 参考リンク<br>
 
-- [http://twilog.org/munepixyz/search?word=TeXworks](http://twilog.org/munepixyz/search?word=TeXworks)
-    - [https://twitter.com/munepixyz/status/372835284217774080](https://twitter.com/munepixyz/status/372835284217774080)
-    - [https://twitter.com/munepixyz/status/373461950824321024](https://twitter.com/munepixyz/status/373461950824321024)
+- [https://twitter.com/munepixyz/status/372835284217774080](https://twitter.com/munepixyz/status/372835284217774080)
+- [https://twitter.com/munepixyz/status/373461950824321024](https://twitter.com/munepixyz/status/373461950824321024)
 - [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
 - [Issue 623 - texworks - Built-in PDF viewer cannot display Japanese characters correctly.](https://code.google.com/p/texworks/issues/detail?id=623)
