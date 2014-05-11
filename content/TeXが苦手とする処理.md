@@ -48,18 +48,18 @@ pukiwiki: "TeXが苦手とする処理"
 
 TeX は「お絵描き」ソフトではない以上，そのような飾り枠の類は苦手とします。<br>
 それゆえ，凝った枠が要る場合には画像にするなり
-[TikZ](/TikZ/), [PSTricks](/PSTricks/) などの「描画用」パッケージを用いるなりするのが簡単でしょう。<br>
+[TikZ](/TikZ/) などの「描画用」パッケージを用いるなりするのが簡単でしょう。<br>
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
 枠の途中でのページ分割の必要がなければ，比較的単純な形状の枠については
-ascmac パッケージが提供する itembox 環境といったものが存在します
-（さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます）。<br>
+ascmac パッケージが提供する itembox 環境といったものが存在します。<br>
+さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます。<br>
 また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は
 「飾り文字を並べて作成した枠（ページ分割は不可）」を
-作成するマクロを提供しています
-（niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
-Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう）。<br>
+作成するマクロを提供しています。<br>
+niceframe パッケージを用いる場合には，このパッケージで使用するフォントの
+Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう。<br>
 
 <!-- // 枠の四隅を四分円にする例（PSTricks 使用）： -->
 <!-- // 枠線上に見出し文字列を乗せるにはもう少し細工が必要です。 -->
