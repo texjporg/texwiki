@@ -187,8 +187,9 @@ wine を使用して Windows 用バイナリを実行する際にも、Multiarch
 wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使う場合、保護モードを無効にしないとファイルが開けないようです．<br>
 
 ```
-$ sudo dpkg --add-architecture i386 
-$ sudo apt-get install wine-bin:i386
+$ sudo dpkg --add-architecture i386
+$ sudo apt-get update
+$ apt-get install wine-bin:i386
 $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
 $ wine AdbeRdr11006_ja_JP.exe
 $ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Reader/AcroRd32.exe
