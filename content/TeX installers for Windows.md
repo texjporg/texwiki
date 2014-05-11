@@ -66,22 +66,3 @@ TeX インストーラを色々な視点から比較してみます。
     しか触ったことのない人や，初心者には厳しいかもしれません。初心者の方は install-tl.zip を使ったほうがいいでしょう。
 
 - <strong>参考</strong>：[W32TeX - TeX Wiki](/W32TeX/)
-
-## TeX インストーラ 3 (abtexinst.exe) {#w0d7240a}
-
-- <strong>ウェブサイト</strong>：[www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)
-- <strong>作者</strong>：[阿部 紀行](http://www.math.sci.hokudai.ac.jp/~abenori/)さん
-- <strong>初心者オススメ度</strong>：★★★★☆
-- <strong>ライセンス</strong>：修正 BSD（2009/9/10, バージョン 0.75 から）
-- <strong>インストールする対象</strong>：W32TeX バイナリ，TeXworks，Ghostscript，GSview，dviout for Windows（DLL プラグインおよび Ruby スクリプトの追加方式により ispell，WinShell）
-- <strong>ユーザーインターフェース</strong>：GUI
-- <strong>ネットワーク・ローカルインストール</strong>：ネットワークインストーラー。ローカルにも対応しています。
-- <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
-- <strong>長所</strong>：『モットーは「誰にでもインストール出来る TeX」』の通りのインストーラ。単にサーバーからのダウンロードなので，インストーラ用のパッケージャーが不要。専用プラグインは Ruby により，比較的簡単に作成できる。
-- <strong>短所</strong>：
-    W32TeX の仕様が変更された場合にうまく動作しなくなる可能性があります。
-
-- <strong>備考</strong>： TeX インストーラ 3 ローカル特化バージョンも別途公開されています。
-    その他，多数の TeX 関連ツールおよび解説をされています。
-
-- <strong>参考</strong>：AbTeXInstaller - TeX Wiki
