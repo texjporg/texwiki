@@ -41,3 +41,7 @@ pukiwiki: "Atom"
 #### Arch Linux {#ea1ae897}
 
 - [https://aur.archlinux.org/packages/atom-editor/](https://aur.archlinux.org/packages/atom-editor/)
+
+## atom-latex {#c420e42b}
+
+- [https://atom.io/packages/latex](https://atom.io/packages/latex)
