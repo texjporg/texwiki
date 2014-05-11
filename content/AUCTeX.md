@@ -15,7 +15,7 @@ pukiwiki: "AUCTeX"
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は GNU Emacs / XEmacs の TeX モードです．<br>
+AUCTeX は Emacs の TeX モードです．<br>
 
 - [AUCTeX - Sophisticated document creation](http://www.gnu.org/software/auctex/)
     (公式ページ)
