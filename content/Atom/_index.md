@@ -46,10 +46,11 @@ pukiwiki: "Atom"
 ## atom-latex {#c420e42b}
 
 - [https://atom.io/packages/latex](https://atom.io/packages/latex)
+- [http://discuss.atom.io/users/thomasjo/activity](http://discuss.atom.io/users/thomasjo/activity)
 
 ## language-latex {#ge4d0d65}
 
-- [https://github.com/area/language-latex](https://github.com/area/language-latex)
+- [https://atom.io/packages/language-latex](https://atom.io/packages/language-latex)
 - [http://discuss.atom.io/users/area/activity](http://discuss.atom.io/users/area/activity)
 - [http://discuss.atom.io/t/latex-language-support/541](http://discuss.atom.io/t/latex-language-support/541)
 
