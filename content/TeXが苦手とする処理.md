@@ -184,13 +184,13 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 （著名な）既製品では提供されていないようですので，
 ユーザ自身で作成することになります。<br>
 要は，eclbkbox パッケージによる breakbox 環境などの処理をふまえつつ
-「枠の四隅」のところだけ書き換えればよいということになります
-（やるべきことは [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) の例と同様です）。<br>
+「枠の四隅」のところだけ書き換えればよいということになります。<br>
+やるべきことは [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) の例と同様です。<br>
 さらに，ページ分割可能な破線の枠を作成するとなると，もはや自動化は諦めて
 「手動で枠を分割しつつ，枠の断片を pstricks あたりで描画する」
-という方針をとるのが現実的かもしれません
-（一応，長方形の枠についてマクロレベルの処理で済ませた例が
-[qa:17408](https://okumuralab.org/~okumura/texfaq/qa/17408.html) にあります）。<br>
+という方針をとるのが現実的かもしれません。<br>
+一応，長方形の枠についてマクロレベルの処理で済ませた例が
+[qa:17408](https://okumuralab.org/~okumura/texfaq/qa/17408.html) にあります。<br>
 
 #### 複数ページにわたる枠 (2) ［複数の枠を作成する場合］ {#s982eb3b}
 
