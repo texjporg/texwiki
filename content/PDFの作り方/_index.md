@@ -486,7 +486,7 @@ sudo nano /usr/local/texlive/texmf-local/web2c/texmf.cnf　（ここでは例と
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,texindy,\
+makeindex,mendex,texindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
