@@ -153,8 +153,6 @@ TeX Live の Win32 版には dviout が含まれています．<br>
 ### W32TeX の場合 {#r4cfc9ce}
 
 W32TeX には dviout が含まれていないので dviout をダウンロードします．<br>
-TeX インストーラ 3 で，dviout をインストールすることもできます．<br>
-デフォルトでは C:\w32tex\dviout にインストールされます．<br>
 
 #### 64-bit dviout {#e57715d6}
 
