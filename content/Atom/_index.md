@@ -41,7 +41,18 @@ pukiwiki: "Atom"
 #### Arch Linux {#ea1ae897}
 
 - [https://aur.archlinux.org/packages/atom-editor/](https://aur.archlinux.org/packages/atom-editor/)
+- [https://aur.archlinux.org/packages/atom-editor-git/](https://aur.archlinux.org/packages/atom-editor-git/)
 
 ## atom-latex {#c420e42b}
 
 - [https://atom.io/packages/latex](https://atom.io/packages/latex)
+
+## language-latex {#ge4d0d65}
+
+- [https://github.com/area/language-latex](https://github.com/area/language-latex)
+- [http://discuss.atom.io/users/area/activity](http://discuss.atom.io/users/area/activity)
+- [http://discuss.atom.io/t/latex-language-support/541](http://discuss.atom.io/t/latex-language-support/541)
+
+## vim-mode {#q7e40896}
+
+- [https://atom.io/packages/vim-mode](https://atom.io/packages/vim-mode)
