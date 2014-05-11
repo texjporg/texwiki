@@ -19,7 +19,7 @@ pukiwiki: "YaTeX"
 
 ## YaTeX とは {#q88fd71b}
 
-YaTeX（野鳥）は GNU Emacs / XEmacs の TeX モードです．
+YaTeX（野鳥）は Emacs の TeX モードです．
 
 - [YaTeX (Yet Another TeX mode for Emacs)](https://www.yatex.org/) (公式ページ)
     - [『野鳥』クイックリファレンス](https://www.yatex.org/yatexref.txt)
