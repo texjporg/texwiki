@@ -46,6 +46,8 @@ pukiwiki: "TeXが苦手とする処理"
 
 ### 飾り枠（ときとしてページ分割可能なもの） {#t43fb31c}
 
+- [LaTeX2e で定理などを枠を囲む方法](http://nalab.mind.meiji.ac.jp/~mk/labo/tex/how-to-waku/how-to-waku.html)
+
 TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手とします。<br>
 それゆえ，凝った枠が要る場合には以下の方法を用いるのが簡単でしょう。<br>
 
@@ -179,13 +181,13 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 
 「テキストに枠をつけたものを分割する」という形でのページ分割の必要がある場合，
 長方形の枠については
-[eclbkbox パッケージ](http://mechanics.civil.tohoku.ac.jp/~bear/bear-collections/style-files/eclbkbox.lzh)が
+[boites パッケージ](http://www.ctan.org/pkg/boites)が
 提供する breakbox 環境が利用できます。<br>
 なお，ページ分割可能な枠の四隅を四分円にしたり
 斜めに切り落とした（八角形状の）枠にしたものは
 （著名な）既製品では提供されていないようですので，
 ユーザ自身で作成することになります。<br>
-要は，eclbkbox パッケージによる breakbox 環境などの処理をふまえつつ
+要は，boites パッケージによる breakbox 環境などの処理をふまえつつ
 「枠の四隅」のところだけ書き換えればよいということになります。<br>
 やるべきことは [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) の例と同様です。<br>
 さらに，ページ分割可能な破線の枠を作成するとなると，もはや自動化は諦めて
@@ -208,10 +210,6 @@ Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) 
 
 - [http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html](http://www.foxking.org/oldsite/pc/genkoyoshi-on-tex.html)
 - [http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=819](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=819) （上のインストール解説）
-    <!-- - http://home.hiroshima-u.ac.jp/mnishida/linux/genkou01.html // URL切れ -->
-
-- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.news) （LaTeX 2.09 用）
-- [http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1](http://www.sapmed.ac.jp/satui/std/doc/genkou.sty.patch1) （上のパッチ）
 
 ## 苦手とする数式 {#u35e5d4c}
 
