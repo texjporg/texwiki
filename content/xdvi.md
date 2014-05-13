@@ -61,6 +61,15 @@ Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to typ
 
 以下の作業を行います．<br>
 
+- Cygwin の場合
+
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ cp XDvi XDvi.org
+    $ sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
+
 - OS X の場合
 
     ```
