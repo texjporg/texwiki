@@ -94,9 +94,9 @@ pukiwiki: "Fortran"
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
 
-### Fortran 2008 の使い方 {#r3bbac60}
+## Fortran 2008 の使い方 {#r3bbac60}
 
-#### 使用可能な拡張子 {#d9d770b5}
+### 使用可能な拡張子 {#d9d770b5}
 
 GNU Fortran の場合は拡張子に .f90, .f95, .f03, .f08, .F90, .F95, .F03, .F08 などが使用できます．<br>
 GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを作成する場合は拡張子は .f90 または .F90 を使用することをおすめします．<br>
@@ -111,7 +111,7 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html)
 - [http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm)
 
-#### 標準出力，MessageBox に "Hello World" を出力 {#x79017be}
+### 標準出力，MessageBox に "Hello World" を出力 {#x79017be}
 
 ***
 
@@ -279,7 +279,7 @@ MinGW の gfortran でビルドしたバイナリで
 
 のように -static オプションを追加してビルドすれば OK です．<br>
 
-#### 標準出力に 1 から 100 までの和を出力 {#m969de65}
+### 標準出力に 1 から 100 までの和を出力 {#m969de65}
 
 ***
 
@@ -309,7 +309,7 @@ end program sum_from_1_to_100
 配列要素の足し算をする場合は sum 関数を使用すると便利です．<br>
 1 から 100 までの和であれば sum 関数を使わずに 100\*(100+1)/2 で計算することもできます．<br>
 
-#### コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
+### コマンドライン引数から整数 N を取得して標準出力に 1 から N までの和を出力 {#cd8aab45}
 
 ***
 
@@ -464,7 +464,7 @@ C で簡単に記述できます．<br>
 
 - C を参照．
 
-#### cat ライクなコマンド {#s0a9990f}
+### cat ライクなコマンド {#s0a9990f}
 
 ***
 
@@ -534,7 +534,7 @@ end program cat2
 
 ***
 
-#### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
+### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
 - [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
 - [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
