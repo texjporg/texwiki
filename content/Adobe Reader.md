@@ -83,7 +83,16 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 - Adobe Acrobat
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
 
-<!-- **Linux [#v6f09b59] -->
+### Linux {#v6f09b59}
+
+#### Arch Linux {#afe89c55}
+
+- [Linux/Arch Linux](</Linux/Arch Linux/#f6223c5b>)
+
+#### Debian {#gf95f954}
+
+- Linux/Debian
+
 <!--  -->
 <!-- -Adobe Reader -->
 <!-- - -http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix -->
@@ -205,7 +214,6 @@ synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files\Adobe\Reader
 
 ## 関連リンク {#m8d917f7}
 
-- Linux/Debian - TeX Wiki#Adobe Reader
 - [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
 - [Acrobat DDE Message 一覧](http://pdf-dde.nnn2.com/?p=43)
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
