@@ -204,7 +204,7 @@ TeX Live 由来のパッケージが，texlive.tlpkg に沿ったパッケージ
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．<br>
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
-<!-- [[tlptexliveリポジトリ:http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA]] に Cygwin のバイナリが用意されています．~ -->
+<!-- [[tlptexlive:http://www.preining.info/blog/software-projects/tlptexlive/]] に Cygwin のバイナリが用意されています．~ -->
 <!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
@@ -520,18 +520,8 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 
 ## setup-x86_64.exe, setup-x86.exe 以外のパッケージ管理 {#re5d2b36}
 
-- [apt-cyg](https://code.google.com/p/apt-cyg/)
-    - [https://github.com/paprykarz/apt-cyg](https://github.com/paprykarz/apt-cyg)
-    - [https://github.com/kou1okada/apt-cyg](https://github.com/kou1okada/apt-cyg)
-    - [https://github.com/transcode-open/apt-cyg](https://github.com/transcode-open/apt-cyg)
-    - [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
-- [cyg-apt](https://code.google.com/p/cyg-apt/)
-- [CygApt](https://code.google.com/p/maphew/wiki/CygApt)
-- [cyg-get](https://code.google.com/p/cyg-get/)
-- [cyg-get](http://www.nabber.org/projects/cyg-get/)
-- [cyg-pm](http://sourceforge.jp/projects/gnupack/downloads/49574/)
-    - [Cygwinパッケージマネージャの自作中（その１）](http://d.hatena.ne.jp/ksugita0510/20101031/p2)
-    - [Cygwinパッケージマネージャの自作中（その２）](http://d.hatena.ne.jp/ksugita0510/20101106/p1)
+- [cyg-fast](https://github.com/lambdalice/cyg-fast)
+    - [Cygwin使うならcyg-fastも](http://unasuke.com/howto/2014/cyg-fast-is-faster-than-apt-cyg/)
 
 ## [Terminal Emulator](https://ja.wikipedia.org/wiki/%E7%AB%AF%E6%9C%AB%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF) {#y02da075}
 
