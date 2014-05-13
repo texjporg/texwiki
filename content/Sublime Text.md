@@ -42,6 +42,7 @@ Windows, OS X, Linux
 
 #### Linux {#bf9812ef}
 
+- [Sublime Mozc Input](http://yasuyuky.github.io/SublimeMozcInput/)
 - [SublimeIBus](https://github.com/chikatoike/SublimeIBus)
 
 ### Shift_JIS, EUC-JP 対応 {#bc9dcabf}
