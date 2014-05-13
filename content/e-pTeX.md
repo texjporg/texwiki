@@ -106,6 +106,8 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 #### Microsoft Windows 環境で特に気を付けるべき環境依存文字 {#h9bb4c4e}
 
+- [Windowsの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc_img.html)
+
 <!-- Windows-31J …… Microsoft による Shift_JIS の拡張。 -->
 <!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 <!-- x-CP51932 …… Microsoft による EUC-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
@@ -174,6 +176,8 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
     ある文献による種類分けと上の表の種類分けとが一致しないことがあります。
 
 #### Mac OS 環境で特に気を付けるべき環境依存文字 {#w0cac168}
+
+- [Macintoshの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc_img.html)
 
 <!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
 
