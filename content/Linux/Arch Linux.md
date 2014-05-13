@@ -217,8 +217,8 @@ $ sudo pacman -S wine
 と表示される場合は multilib を有効にして pacman -Syu を実行します．<br>
 
 ```
-$ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.06/ja_JP/AdbeRdr11006_ja_JP.exe
-$ wine AdbeRdr11006_ja_JP.exe
+$ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.07/ja_JP/AdbeRdr11007_ja_JP.exe
+$ wine AdbeRdr11007_ja_JP.exe
 ```
 
 インストールが途中で終了してしまう場合は
