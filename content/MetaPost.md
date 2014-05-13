@@ -9,7 +9,9 @@ pukiwiki: "MetaPost"
 
 ## MetaPost {#v0160eb8}
 
-### はじめに {#q0dc30bf}
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## はじめに {#q0dc30bf}
 
 「この文章は角藤さんの
 [MetaPost の紹介 (PDF) \[Internet Archive\]](http://web.archive.org/web/20030318073200/http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
@@ -18,7 +20,7 @@ pukiwiki: "MetaPost"
 ↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。<br>
 この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。<br>
 
-### MetaPost とは {#e4617397}
+## MetaPost とは {#e4617397}
 
 MetaPost は John D. Hobby が作った [METAFONT](/METAFONT/) 類似のソフトです。<br>
 METAFONT が gf 形式のフォントを出力するのに対して，
@@ -37,94 +39,36 @@ texdoc metapost
 - [FusionForge: MetaPost: Project Home](https://foundry.supelec.fr/projects/metapost/) （本家）
 - [The MetaPost page](http://cm.bell-labs.com/who//hobby/MetaPost.html) (作者 John D. Hobby のページ)
 
-#### License {#ze87e412}
+### License {#ze87e412}
 
 1995年から AT&amp;T ライセンス不要のフリーソフトになりました。
 
 [LGPLv3](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING.LESSER?root=metapost&view=log)
 
-#### ChangeLog {#q9da79df}
+### ChangeLog {#q9da79df}
 
 - [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
     - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
     - [CHANGES](https://foundry.supelec.fr/scm/viewvc.php/trunk/CHANGES?view=markup&root=metapost)
 
-### MetaPost 日本語版 {#vcd749fc}
+## MetaPost 日本語版 {#vcd749fc}
 
-W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
+### TeX Live {#l36a3b95}
 
 TeX Live の場合は
 
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/)
 
 から入手可能です．<br>
-tlptexlive については
-
-- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
-
-を参照してください．<br>
 
 #### インストール (Windows) {#h80cb69d}
 
 ```
 PS C:\Users\$Env:USERNAME> tlmgr update --self --all
 PS C:\Users\$Env:USERNAME> tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-```
-
-<!-- tlmgr.pl: added repository with tag tlptexlive: http://www.tug.org/~preining/tlptexlive/ -->
-
-```
 PS C:\Users\$Env:USERNAME> tlmgr pinning add tlptexlive "*"
-```
-
-<!-- tlmgr.pl: package repositories: -->
-<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
-<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- tlmgr.pl: new pinning data for tlptexlive: * -->
-
-```
 PS C:\Users\$Env:USERNAME> tlmgr install pmetapost
 ```
-
-<!-- tlmgr.pl: package repositories: -->
-<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
-<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- [1/2, ??:??/??:??] install: pmetapost.win32 @tlptexlive [739k] -->
-<!-- [2/2, 00:06/00:06] install: pmetapost @tlptexlive [1k] -->
-<!-- tlmgr.pl: package log updated: C:/texlive/2013/texmf-var/web2c/tlmgr.log -->
-<!-- running mktexlsr ... -->
-<!-- done running mktexlsr. -->
-<!-- running mtxrun - -generate ... -->
-<!-- done running mtxrun - -generate. -->
-
-```
-PS C:\Users\$Env:USERNAME> tlmgr update --all
-```
-
-<!-- tlmgr.pl: package repositories: -->
-<!--         main = http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet -->
-<!--         tlptexlive = http://www.tug.org/~preining/tlptexlive/ -->
-<!-- tlmgr: saving backups to C:/texlive/2013/tlpkg/backups -->
-<!-- [1/4, ??:??/??:??] update: dvipdfmx.win32 [271k] (30827 -> 31000@tlptexlive) ... done -->
-<!-- [2/4, 00:05/00:31] update: dvips.win32 [84k] (29816 -> 31000@tlptexlive) ... done -->
-<!-- [3/4, 00:08/00:37] update: ptex.win32 [837k] (30245 -> 31002@tlptexlive) ... done -->
-<!-- [4/4, 00:16/00:22] update: uptex.win32 [487k] (30412 -> 31000@tlptexlive) ... done -->
-<!-- tlmgr.pl: package log updated: C:/texlive/2013/texmf-var/web2c/tlmgr.log -->
-<!-- running mktexlsr ... -->
-<!-- done running mktexlsr. -->
-<!-- running mtxrun - -generate ... -->
-<!-- done running mtxrun - -generate. -->
-<!-- running updmap-sys ... -->
-<!-- done running updmap-sys. -->
-<!-- regenerating fmtutil.cnf in C:/texlive/2013/texmf-var -->
-<!-- running fmtutil-sys - -no-error-if-no-format - -byengine ptex ... -->
-<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine ptex. -->
-<!-- running fmtutil-sys - -no-error-if-no-format - -byengine euptex ... -->
-<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine euptex. -->
-<!-- running fmtutil-sys - -no-error-if-no-format - -byengine eptex ... -->
-<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine eptex. -->
-<!-- running fmtutil-sys - -no-error-if-no-format - -byengine uptex ... -->
-<!-- done running fmtutil-sys - -no-error-if-no-format - -byengine uptex. -->
 
 #### インストール (Cygwin) {#w370c0b7}
 
@@ -134,7 +78,6 @@ $ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ tlmgr pinning add tlptexlive "*"
 $ tlmgr install pmetapost
 $ tlmgr path add
-$ tlmgr update --all
 ```
 
 #### インストール (OS X) {#q808c38d}
@@ -144,7 +87,6 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
 $ sudo tlmgr install pmetapost
-$ sudo tlmgr update --all
 ```
 
 #### インストール (Linux) {#adc6bf92}
@@ -155,21 +97,24 @@ $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
 $ sudo tlmgr install pmetapost
 $ sudo tlmgr path add
-$ sudo tlmgr update --all
 ```
 
-### 不具合 {#z01f418a}
+### W32TeX {#ab245e27}
 
-#### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップデート {#c01c14c0}
+W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
+
+## 不具合 {#z01f418a}
+
+### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップデート {#c01c14c0}
 
 TeX Live 2014 (MetaPost 1.902), W32TeX (MetaPost 1.999) では修正されています．<br>
 
 - [TeXLive 2013のmf2pt1がおかしい件](http://qiita.com/_yyu_/items/b1fac90074545ccee727)
 - [http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003](http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003)
 
-### MetaPostプログラミング入門 {#p3fbc416}
+## MetaPostプログラミング入門 {#p3fbc416}
 
-#### 簡単な線画の作成 {#t3a63dd6}
+### 簡単な線画の作成 {#t3a63dd6}
 
 まず簡単なMetaPostプログラムを作ってみましょう。
 
@@ -240,7 +185,7 @@ fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
 
 としてみてください。
 
-#### 図に文字を挿入する {#j8ce9e55}
+### 図に文字を挿入する {#j8ce9e55}
 
 文字を入れることもできます。<br>
 たとえば
@@ -288,7 +233,7 @@ defaultfont := "rptmr";
 > 別の手として，cmr10.pfb などを CMR10 という名前で /Resource/Font
 > ディレクトリにコピーしておいてもいいでしょう。<br>
 
-#### 作成した図をTeX文章に取り込む {#ee4db6cc}
+### 作成した図をTeX文章に取り込む {#ee4db6cc}
 
 TeX/LaTeX の文書の中に組み込んで使う場合は，
 逆に prologues:=1; は指定しません。<br>
@@ -342,7 +287,7 @@ dvips -E test -o test.eps
 本物の EPS ファイルになり，
 TeX 以外のアプリケーションに取り込むこともできます。<br>
 
-#### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
+### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
 
 上のような方法ではカーニングやリガチャは入りませんし，
 数式を含ませることもできません。<br>
@@ -407,7 +352,7 @@ end.
 変数は、latex.fmt に対するエンジンでなければいけません。(最近のものでは
 pdftex)。<br>
 
-#### PSfragの利用 {#gd4ef62a}
+### PSfragの利用 {#gd4ef62a}
 
 日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。<br>
 さきほどの例で（prologues:=1; を指定しておき）
@@ -429,12 +374,12 @@ pdftex)。<br>
 ただし，日本語としてセンタリングされるわけではありませんので，
 一般に位置がずれます。<br>
 
-#### その他の注意点 {#ddd5a5aa}
+### その他の注意点 {#ddd5a5aa}
 
 Unix 版（web2c 版）では曲線 ..
 でつなぐ場合の最大長はデフォルトでは 2000 点です。
 
-### 例 {#nda680a6}
+## 例 {#nda680a6}
 
 もうちょっと数学のテスト問題に使えそうな例をあげておきます。
 
@@ -463,16 +408,16 @@ end.
 [Metapost : exemples](http://www.math.jussieu.fr/~zoonek/LaTeX/Metapost/metapost.html)
 というページにあります。
 
-### おまけ {#nec162e2}
+## おまけ {#nec162e2}
 
 MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/contour.html)
 を作ってみました。
 
-### 関連アプリケーション {#o3813278}
+## 関連アプリケーション {#o3813278}
 
 MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MePoTeX](http://homepage2.nifty.com/domae/metapost/mepotex.html)というものもあります。
 
-### 最新バージョンで追加された機能のいくつか {#ze022f07}
+## 最新バージョンで追加された機能のいくつか {#ze022f07}
 
 0.970 (beta) 以降で追加された新機能のいくつかを述べます。
 
@@ -636,7 +581,7 @@ mpost -numbersystem=binary test
 を出力します(読みやすいように編集してあります)。これは最後の数字(8)を除いて
 正しいものです。
 
-### 参考サイト {#sa284452}
+## 参考サイト {#sa284452}
 
 - [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
 - [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
