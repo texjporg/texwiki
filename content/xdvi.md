@@ -61,25 +61,24 @@ Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to typ
 
 以下の作業を行います．<br>
 
-```
-$ cd /usr/local/texlive/????/texmf-dist/xdvi
-$ sudo cp XDvi XDvi.org
-```
+- OS X の場合
 
-OS X の場合
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ sudo cp XDvi XDvi.org
+    $ brew install gnu-sed
+    $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
 
-```
-$ brew install gnu-sed
-$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-```
+- Linux の場合
 
-Linux の場合
-
-```
-$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-```
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ sudo cp XDvi XDvi.org
+    $ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
 
 ### 使い方 {#m5b0a3d2}
 
