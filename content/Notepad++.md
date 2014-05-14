@@ -67,12 +67,6 @@ Windows
 
 - [Notepad++ 派生ビルド](http://freesftys.wkeya.com/app/npp/)
     - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
-        <!-- -[[Notepad++EUC-JP対応他:https://bitbucket.org/yttkans/notepad-euc-jp]] -->
-        <!-- - -EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません． -->
-
-- [Notepad++ Portable](http://portableapps.com/apps/development/notepadpp_portable)
-    - [Notepad++ Portable on SourceForge](http://sourceforge.net/projects/portableapps/files/Notepad%2B%2B%20Portable/Additional%20Versions/)
-    - [Notepad++ Portable Source Code](http://sourceforge.net/projects/portableapps/files/Source%20%28Notepad%2B%2B%29/Additional%20Versions/)
 
 ### 日本語言語ファイル {#i35c46e6}
 
