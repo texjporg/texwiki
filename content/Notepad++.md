@@ -80,14 +80,64 @@ Windows
 
 ## エンコード (Encoding) {#d626279b}
 
-デフォルトの設定では文字コードを自動判別します．<br>
-文字コードの自動判別機能を OFF にすることもできます．<br>
 メニューの Encoding (日本語メニューでは“エンコード(M)”) で Encode in ANSI (日本語メニューでは“ANSI で開く”) が選択されている場合，日本語を入力すると文字化けを起こします．<br>
 日本語が使えるエンコーディング (Encode in UTF-8 without BOM (日本語メニューでは“UTF-8 (BOM なし) で開く”) など) を選択してください．<br>
 
 ## 環境設定 (Preferences) {#ka388f7d}
 
 \[設定(T)\]-\[環境設定...\]
+
+### Autodetect character encoding {#be4e089e}
+
+デフォルトの設定では文字コードを自動判別します．<br>
+文字コードの自動判別機能を OFF にすることもできます．<br>
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　全般設定<br>
+　　エディット画面<br>
+　　新規作成<br>
+　　既定ディレクトリー<br>
+　　ファイル履歴<br>
+　　ファイルの関連付け<br>
+　　言語メニュー<br>
+　　タブ設定<br>
+　　印刷 - 色・余白<br>
+　　自動保存<br>
+　　入力補完<br>
+　　Multi-Instance<br>
+　　Delimiter<br>
+　　<span style="color:White;background-color:#1188FF;">その他　　　　　　　　　　</span><br>
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　　　　ビューを切り替える(Ctrl+Tab)　　　　　　　　　　　　　　　　　　　　　URLリンク設定<br>
+　　　　　☑有効　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☑有効<br>
+　　　　　☑最近使用した順にビューを切り替える　　　　　　　　　　　　　☐下線を引かない<br>
+　　　　　　　　　　　　SmartHighlighting　　　　　　　　　　　　　　　　　　　　　　　　　ファイルの状態監視<br>
+　　　　　☑スマート強調表示を有効　　　　　　　　　　　　　　　　　　　　　☑有効<br>
+　　　　　☐Match case　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐自動で最新状態に更新<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☐更新後最後の行にスクロール<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一致しているタグを強調する<br>
+　　　　☑Autodetect character encoding　　　　　　　　　　　　　　　　　　☑有効<br>
+　　　　☑オートインデント　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☑タグの属性を強調する<br>
+　　　　☐タスクトレイに格納　　　　　　　　　　　　　　　　　　　　　　　　　　☐コメント/PHP/ASP 領域を強調する<br>
+　　　　☐タイトルバーにファイル名のみ表示　　　　　　　　　　　　　　　　　　　　　　　セッションファイル拡張子:<br>
+　　　　☑Backslash is escape character for SQL<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　閉じる　　\]</span><br>
+
+***
 
 ### 新規ドキュメント (New Document) {#eb38bb7e}
 
@@ -99,20 +149,20 @@ Windows
 
 <br>
 
-　　General<br>
-　　Editing<br>
-　　<span style="color:White;background-color:#1188FF;">New Document　　　　　　</span><br>
-　　Default Directory<br>
-　　Recent Files History<br>
-　　File Association<br>
-　　Language Menu<br>
-　　Tab Settings<br>
-　　Print<br>
-　　Backup<br>
-　　Auto-Completion<br>
+　　全般設定<br>
+　　エディット画面<br>
+　　<span style="color:White;background-color:#1188FF;">新規作成　　　　　　　　　</span><br>
+　　既定ディレクトリー<br>
+　　ファイル履歴<br>
+　　ファイルの関連付け<br>
+　　言語メニュー<br>
+　　タブ設定<br>
+　　印刷 - 色・余白<br>
+　　自動保存<br>
+　　入力補完<br>
 　　Multi-Instance<br>
 　　Delimiter<br>
-　　MISC.<br>
+　　その他<br>
 
 ***
 
