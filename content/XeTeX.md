@@ -226,7 +226,7 @@ nkf によって 2 バイト仮名に変換されたりするからです。<br>
 
 ### 入力用エンコーディング {#dd951bae}
 
-XeTeX はデフォルトではファイルを UTF8 として読み込みますが、
+XeTeX はデフォルトではファイルを UTF-8 として読み込みますが、
 
 ```
 \XeTeXinputencoding (エンコーディング名)
@@ -706,6 +706,7 @@ Hello, \TeX !
 - [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
 - [XeLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_127398.html)
 - [http://miyazakikenji.wordpress.com/?s=xelatex](http://miyazakikenji.wordpress.com/?s=xelatex)
+- [XeLaTeX覚書：多言語環境で部分的に日本語を使おう！](http://jamejammy.hatenablog.com/entry/2014/05/14/211112)
 - [経済学系のレポート・論文を XeLaTeX で書く際の Tips](http://ill-identified.hatenablog.com/entry/2014/01/30/033242)
 - [XeTeX on Web](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130225214304767), [XeTeX on Web（続き）](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130226144129711)
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
@@ -719,7 +720,6 @@ Hello, \TeX !
 - [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
 - [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
-- [XeTeX を使ってみよう（事故で全部消してしまったのでサービス停止中）](http://jupiter.math.kyushu-u.ac.jp/~norio/XeTeX/)
 - [Jonathan Kew - Interview - TeX Users Group](http://www.tug.org/interviews/kew.html)
 
 ### コメント {#d0504266}
