@@ -1,0 +1,700 @@
+---
+title: "Microsoft Windows"
+url: "/Microsoft Windows/"
+date: 2014-05-15T22:21:45Z
+bookCollapseSection: true
+pukiwiki: "Microsoft Windows"
+---
+
+# Microsoft Windows
+
+## [Microsoft Windows](http://www.windows.com/) {#i4bf0c85}
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Windows_logo_and_wordmark_-_2012.svg/500px-Windows_logo_and_wordmark_-_2012.svg.png" alt="Microsoft Windows" style="float:right">
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## お知らせ {#ya6914d3}
+
+Windows XP のサポートは終了しました．<br>
+
+- [Windows XP、Office 2003 サポート終了の重要なお知らせ | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos.aspx)
+- [Windows XP/Office 2003 サポート終了のお知らせ - Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/consumer/default.aspx)
+- [サポート終了に関するよくあるご質問 | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/faq.aspx)
+- [Windows XP のサポートは終了しました - Microsoft Windows](http://windows.microsoft.com/ja-jp/windows/end-support-help)
+- [http://www.microsoft.com/windows/ja-jp/xp/](http://www.microsoft.com/windows/ja-jp/xp/)
+
+## Windows サポート ライフサイクル {#vc8606da}
+
+- [http://windows.microsoft.com/ja-jp/windows/products/lifecycle](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
+
+## TeX ディストリビューション {#vb660ba1}
+
+Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
+Windows 上では，国際的には [MiKTeX](/MiKTeX/) と [TeX Live](</TeX Live/>) が広く使われています．<br>
+しかし日本語を扱う上では，問題点の少なさや日本人ユーザの数，日本語情報の多さなどの理由から，W32TeX または TeX Live を選択されることをお薦めします．<br>
+
+- 最新のバイナリを使いたい場合は W32TeX
+- CTAN の豊富なパッケージを使いたい場合は TeX Live
+
+を選択するといいと思います．<br>
+普段はパッケージが豊富な TeX Live を使用して最新のバイナリをテストしたり TeX Live に収録されていないプログラムを使用したりする場合に W32TeX を使用するといった使い方も可能です．<br>
+
+### [W32TeX](/W32TeX/) <a id="w32tex"></a> {#yd4deb73}
+
+W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
+
+### [TeX Live](</TeX Live/>) (Win64, Win32) <a id="texlive"></a><a id="texlive-win64-win32"></a> {#ia336ed2}
+
+TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
+
+#### 動作環境 {#afd7194b}
+
+Windows
+
+#### TeX Live のインストール {#ca517ea6}
+
+- [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
+- フォルダー オプション
+
+Windows PowerShell または コマンド プロンプトを起動します．<br>
+
+> <table>
+> <thead>
+> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">Windows PowerShell の起動方法</th></tr>
+> </thead>
+> <tbody>
+> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］<br>［Windows キー + X キーを押す］または［左下隅を右クリック］-［Windows PowerShell］</td></tr>
+> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
+> </tbody>
+> </table>
+>
+
+> <table>
+> <thead>
+> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">コマンド プロンプトの起動方法</th></tr>
+> </thead>
+> <tbody>
+> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］<br>［Windows キー + X キーを押す］または［左下隅を右クリック］-［コマンド プロンプト］</td></tr>
+> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
+> </tbody>
+> </table>
+>
+
+Windows PowerShell またはコマンド プロンプトに次のように
+打ち込んでフォルダー オプションを表示します．<br>
+
+```
+control folders
+```
+
+表示タブをクリックします．<br>
+
+- 隠しファイル、隠しフォルダーおよび隠しドライブを表示する
+
+を選択します．<br>
+
+- 登録されている拡張子は表示しない
+- 保護されたオペレーティング システム ファイルを表示しない (推奨)
+
+のチェックをはずします．<br>
+
+***
+
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>フォルダー オプション</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 全般　 \]</ins></span><strong>\[ 表示　 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 検索　 \]</ins></span><br>
+
+　　 フォルダーの表示<br>
+　　　　　　　　　　　　この表示方法 (詳細表示やアイコンなど) をこの種類のフォルダーす<br>
+　　　　　　　　　　　　べてに適用することができます。<br>
+　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[　　フォルダーに適用(L)　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　フォルダーをリセット(R)　　\]</span><br>
+
+<br>
+
+<br>
+
+　　 詳細設定:<br>
+　　　　ファイルおよびフォルダー<br>
+　　　　☑ ステータス バーを表示する<br>
+　　　　☐ タイトル バーに完全なパスを表示する<br>
+　　　　☐ チェックボックスを使用して項目を選択する<br>
+　　　　☑ ドライブ文字を表示する<br>
+　　　　　ファイルとフォルダーの表示<br>
+　　　　　<span style="color:black;background-color:yellow;"><strong>(●) 隠しファイル、隠しフォルダーおよび隠しドライブを表示する ← 選択する</strong></span><br>
+　　　　　 ◯ 隠しファイル、隠しフォルダーおよび隠しドライブを表示しない<br>
+　　　　☑ フォルダーとデスクトップの項目の説明をポップアップで表示する<br>
+　　　　☑ フォルダーのヒントにファイル サイズ情報を表示する<br>
+　　　　☑ フォルダーの結合の競合を非表示にする<br>
+　　　　☑ プレビュー ウィンドウでプレビューのハンドラーを表示する<br>
+　　　　　リスト ビューで入力するとき<br>
+　　　　　 ◯ 検索ボックスに自動的に入力する<br>
+　　　　　(●) 入力した項目をビューで選択する<br>
+　　　　☐ ログオン時に以前のフォルダー ウィンドウを表示する<br>
+　　　　☑ 暗号化や圧縮された NTFS ファイルをカラーで表示する<br>
+　　　　☑ 共有ウィザードを使用する (推奨)<br>
+　　　　☑ 空のドライブは表示しない<br>
+　　　　☑ 縮小版にファイル アイコンを表示する<br>
+　　　　☐ 常にアイコンを表示し、縮小版は表示しない<br>
+　　　　☐ 常にメニューを表示する<br>
+　　　　<span style="color:black;background-color:yellow;"><strong>☐ 登録されている拡張子は表示しない ← チェックをはずす</strong></span><br>
+　　　　☐ 別のプロセスでフォルダー ウィンドウを開く<br>
+　　　　<span style="color:black;background-color:yellow;"><strong>☐ 保護されたオペレーティング システム ファイルを表示しない (推奨) ← チェックをはずす</strong></span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値に戻す(D)　　\]</span><br>
+
+***
+
+■■■ ダウンロード ■■■<br>
+
+[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl.zip をダウンロードして install-tl.zip を展開します．<br>
+Cygwin の unzip は install-tl.zip の展開に使用しないでください．<br>
+インストールに失敗する可能性があります．<br>
+
+- [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
+- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
+
+install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
+
+***
+
+■■■ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) の場合 ■■■<br>
+
+■ テキストモードでインストールする場合<br>
+
+テキストモードでリポジトリを指定してインストールする場合は Windows PowerShell またはコマンド プロンプトから
+
+```
+.\install-tl-windows.bat -no-gui --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
+```
+
+TeX Live 2013 の場合は
+
+```
+.\install-tl.bat -no-gui --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
+```
+
+を実行します．<br>
+テキストモードの場合は以下のように表示されます．<br>
+
+```
+...
+Actions:
+ <I> start installation to hard disk
+ <H> help
+ <Q> quit
+
+Enter command: I
+```
+
+インストールする場合は I を入力してインストールを開始します．<br>
+インストールしない場合は Q を入力して終了します．<br>
+
+■ GUI でインストールする場合<br>
+
+install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) をダブルクリックします．<br>
+プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget の設定をしてからインストールしてください．<br>
+install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
+
+***
+
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Install-tl</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+<br>
+
+　　　TeX Live 2014 の導入<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　1/5<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　Welcome to the installation of TeX Live 2014<br>
+　　　&#x68;ttp://tug.org/texlive<br>
+
+<br>
+
+　　　This wizard will guide you through the installation.<br>
+
+<br>
+
+　　　Best to disable your virus scanner during installation.<br>
+
+<br>
+
+　　　For an advanced, customizable installation, please consult<br>
+　　　the web pages or installation guide.<br>
+　　　Or use install-tl-advanced.bat<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　<span style="color:black;background-color:yellow;"><strong>☑ 既定リポジトリを変更 ← リポジトリを指定する場合はチェックする</strong></span><br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　\[　　終了　　\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[　　次へ→　　\]<br>
+
+***
+
+インストールする場合は \[　　次へ→　　\] をクリックします．<br>
+インストールしない場合は \[　　終了　　\] をクリックします．<br>
+
+***
+
+■■■ install-tl-advanced.bat の場合 ■■■<br>
+
+■ テキストモードでインストールする場合<br>
+
+テキストモードでリポジトリを指定してインストールする場合は管理者として実行した Windows PowerShell またはコマンド プロンプトから
+
+```
+.\install-tl-advanced.bat -no-gui --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
+```
+
+を実行します．<br>
+テキストモードの場合は以下のように表示されます．<br>
+
+```
+...
+Actions:
+ <I> start installation to hard disk
+ <H> help
+ <Q> quit
+
+Enter command: I
+```
+
+インストールする場合は I を入力してインストールを開始します．<br>
+インストールしない場合は Q を入力して終了します．<br>
+
+■ GUI でインストールする場合<br>
+
+install-tl-advanced.bat を選択して右クリックして \[管理者として実行(A)\] をクリックします．<br>
+管理者として実行していない場合は以下のようなメッセージが表示されます．<br>
+
+***
+
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　<span style="color:Black;"><strong>TeX Live 2014 の導入</strong></span>　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　Best to disable your virus scanner during installation.<br>
+
+<br>
+
+　The installer does not have adminstractive permissions;<br>
+　so can only install for current user.<br>
+
+<br>
+
+　Right-click install-tl-advanced and select "run as administrator"<br>
+　if you want to install for all users.<br>
+　　　\[　　終了　　\]　　　　　　　　　　　　　　　　　　　　　\[ Continue \]<br>
+
+***
+
+install-tl-advanced.bat を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
+
+***
+
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Install-tl</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　TeX Live 2014 の導入<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------基本情報-------<br>
+　　選択したスキーム　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　scheme-full　　　　　　　　　　 \[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------追加設定-------<br>
+　　Installation collections　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　45 コレクション（全 45 中） (必要ディスク領域: 3707MB)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
+　　可搬設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
+　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2014　　　　　　　　　 \[ 変更 \]<br>
+　　TEXMFLOCAL（サイト固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\texmf-local　　　　　　　 \[ 変更 \]<br>
+　　TEXMFSYSVAR（自動生成データ用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\2014\texmf-var　　　　　 \[ 変更 \]<br>
+　　TEXMFSYSCONFIG（ローカル設定用ディレクトリ）　　　　　　　　　　　　　　C:\texlive\2014\texmf-config　　　　　 \[ 変更 \]<br>
+　　TEXMFHOME（ユーザ固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　　　　　~\texmf　　　　　　　　　　　　　\[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------オプション-------<br>
+　　既定用紙寸法　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　A4　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　\write18 を用いて制限リスト中のプログラムを実行することを許可　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　フォーマットファイルをすべて生成　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　font と macro の doc ツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　font と macro のソースツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　レジストリの PATH 設定を調整する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
+　　メニュー短絡キーを追加　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　ファイル関連付けを変更する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規のみ　　　　　　　　　　　　　　\[ 変更 \]<br>
+　　全ユーザ用に導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　TeXworks フロントエンドを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　\[ TeX Live の導入 \]　　\[ 終了 \]<br>
+
+***
+
+インストールする場合は \[ TeX Live の導入 \] をクリックします．<br>
+インストールしない場合は \[ 終了 \] をクリックします．<br>
+
+#### 64-bit バイナリ (tl-win64.zip) {#gc2fed74}
+
+■ HTTP<br>
+
+- [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
+- [http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
+- [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+- [http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+
+■ FTP<br>
+
+- [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
+- [ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
+- [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+- [ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+- [ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+
+から TeX Live の 64-bit バイナリ (tl-win64.zip) が入手できます．<br>
+インストール方法は 00README.TLW64 を読んでください．<br>
+
+#### PATH の設定 {#g9863636}
+
+PATH は自動的に設定されるので手動で設定する必要はありません．<br>
+
+Windows PowerShell から
+
+```
+$Env:Path
+```
+
+またはコマンド プロンプトから
+
+```
+path
+```
+
+を実行して出力結果に C:\texlive\2014\bin\win32 が表示されていれば PATH が正しく設定されています．<br>
+
+64-bit バイナリを使用する場合は PATH に C:\texlive\2014\bin\win64 を追加して<br>
+出力結果に C:\texlive\2014\bin\win64;C:\texlive\2014\bin\win32 が表示されるように設定します．<br>
+
+***
+
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境変数</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　TeX Live のユーザー環境変数(U)<br>
+
+> <table>
+> <tbody>
+> <tr><td>変数</td><td>値</td></tr>
+> <tr><td>PATH</td><td>C:\texlive\2014\bin\win64;C:\texlive\2014\bin\win32</td></tr>
+> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
+
+　　システム環境変数(S)<br>
+...<br>
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
+
+***
+
+#### アップデート {#g130b940}
+
+アップデートは Windows PowerShell またはコマンド プロンプトから
+
+```
+tlmgr update --self --all
+```
+
+を実行すれば OK です．<br>
+
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+
+- C:\texlive\2014\tlpkg\backups
+
+にパッケージのバックアップが保存されます．<br>
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+
+#### extractbb の追加 {#tf06ef9d}
+
+<!-- [[C:\texlive\2014\texmf-dist\web2c\texmf.cnf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/web2c/texmf.cnf?view=markup]] に shell_escape_commands が以下のように記述されていると思います． -->
+<!--  -->
+<!-- shell_escape_commands = \ -->
+<!-- bibtex,bibtex8,\ -->
+<!-- kpsewhich,\ -->
+<!-- makeindex,\ -->
+<!-- mpost,\ -->
+<!-- repstopdf,\ -->
+<!--  -->
+<!-- デフォルトでは extractbb が自動実行されません．~ -->
+<!--  -->
+
+TEXMFLOCAL の値を確認します．<br>
+
+```
+PS C:\Users\$Env:USERNAME> kpsewhich -var-value TEXMFLOCAL
+C:/texlive/texmf-local
+```
+
+TeX Live 2013 ではこれは以下のように表示されます(同じ場所ですが):
+
+```
+PS C:\Users\$Env:USERNAME> kpsewhich -var-value TEXMFLOCAL
+C:/texlive/2013/../texmf-local
+```
+
+C:\texlive\texmf-local\web2c\texmf.cnf を作成して編集します．<br>
+shell_escape_commands を以下のように編集して保存します．<br>
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,\
+mpost,upmpost,\
+repstopdf,epspdf,extractbb
+```
+
+mktexlsr を実行します．<br>
+
+```
+PS C:\Users\$Env:USERNAME> mktexlsr
+```
+
+#### フォント埋め込みの設定 {#h915a565}
+
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
+
+```
+kanji-config-updmap-sys ipaex
+```
+
+または
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．<br>
+
+TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
+
+```
+PS C:\Users\$Env:USERNAME> kpsewhich ipaexm.ttf ipaexg.ttf
+c:/texlive/2014/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
+c:/texlive/2014/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
+
+PS C:\Users\$Env:USERNAME> kpsewhich uptex-ipaex.map
+c:/texlive/2014/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
+```
+
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+
+```
+ptex2pdf -u -l -ot "-synctex=1" -od "-f uptex-ipaex.map" hoge.tex
+```
+
+ヒラギノフォントを埋め込む場合は
+
+- [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](http://ichiro-maruta.blogspot.jp/2013/08/windows-tex-live-2013.html)
+- [TeX Live 2013 on Windows+ヒラギノOTF版 を使ってPDFにフォントを埋め込む方法](http://yanoshi.hatenablog.jp/entry/2014/01/24/024426)
+
+を参照してください．<br>
+
+#### インストールのやり方などの事例 {#w0a33f0d}
+
+<!-- :[[574. Texmaker and texlive on windows xp:http://verahill.blogspot.jp/2014/05/574-texmaker-and-texlive-on-windows-xp.html]] | 2014-05-09 -->
+
+[TeXLive 2014 pretest](http://progress.tistory.com/214)
+: 2014-04-27
+
+[Windows 8.1 Update &amp; TeX Live](http://cygx1.axialz.com/?eid=293)
+: 2014-04-21
+
+[Installing TeX Live 2013 on Windows 8.1 Tablet (32bit) and Solution for some errors](http://www.am.ics.keio.ac.jp/~keimiya/wordpress/?p=746)
+: 2014-04-15
+
+[Windows 7 における TeX Live 2013 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-792.html)
+: 2014-02-19
+
+[Windows7でTeX環境を構築するメモ](http://cuteleaf.seesaa.net/article/389041860.html)
+: 2014-02-18
+
+[TeX Live 2013 インストール](http://83bismuth.blog.fc2.com/blog-entry-8.html)
+: 2014-02-15
+
+[Tex Live 2013をWin7 64-bitマシンにインストール](http://wshinya.hatenablog.com/entry/2013/12/04/140746)
+: 2013-12-04
+
+[WindowsへのTeXのインストール](http://www.ic.daito.ac.jp/~mizutani/tex/install_win.html)
+: 2013-10-27
+
+[Windows環境でTeXLive 2013 と TeXworks を使う](http://xaro.hatenablog.jp/entry/2013/09/05/002235)
+: 2013-09-05
+
+[TeX Live 2013のインストール](http://next1.msi.sk.shibaura-it.ac.jp/MATHEQN/latex/node4.html)
+: 2013-08-26
+
+[Windows 8にTeX環境を構築(1)](http://ubutun.blogspot.jp/2013/08/windows-8tex1.html), [Windows 8にTex環境を構築(2) YaTeXの設定 ドル記号入力で数式入力モードへ](http://ubutun.blogspot.jp/2013/08/windows-8tex2-yatex.html)
+: 2013-08-17
+
+[TeX/Install](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
+: 2013-07-01
+
+### [TeX Live](</TeX Live/>) ([Cygwin](/Cygwin/)) <a id="texlive-cygwin"></a> {#sfbd073e}
+
+Microsoft Windows 上で動く Linux ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
+
+- [Cygwin - TeX Wiki](/Cygwin/)
+
+### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) <a id="texlive-linux"></a> {#h0f78970}
+
+VirtualBox などの仮想マシン上に Linux をインストールして TeX Live を使用する方法もあります．
+
+- [Linux - TeX Wiki](/Linux/)
+
+***
+
+<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">ファイル(F)</span>　 <span style="color:Black;">仮想マシン(M)</span>　 <span style="color:Black;">ヘルプ(H)</span>　　　　　　　　　　　　　</ins></span><br>
+
+<br>
+
+　　新規(N)　 設定(S)　 起動(T)　 <span style="color:#888888;">破棄</span><br>
+<span style="color:White;background-color:#1188FF;">　　　　　Arch Linux　　　　　　　　　　　　　　　　　　</span><br>
+
+　　　　　CentOS<br>
+　　　　　Debian<br>
+　　　　　Fedora<br>
+　　　　　Gentoo Linux<br>
+　　　　　Linux Mint<br>
+　　　　　openSUSE<br>
+　　　　　Vine Linux<br>
+
+***
+
+<span style="color:Black;background-color:#DAE0FE;"><ins>　　仮想マシン　 ビュー　 デバイス　 ヘルプ　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+```
+$ uplatex -v
+e-upTeX 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014)
+kpathsea version 6.2.0
+ptexenc version 1.3.2
+Copyright 2014 D.E. Knuth.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the e-upTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the e-upTeX source.
+Primary author of e-upTeX: Peter Breitenlohner.
+```
+
+***
+
+### [MiKTeX](/MiKTeX/) {#x2459fb9}
+
+W32TeX, TeX Live の他に MiKTeX もあります．
+
+- [MiKTeX - TeX Wiki](/MiKTeX/)
+
+## パッケージ管理 {#sf700883}
+
+- [Chocolatey NuGet](http://chocolatey.org/)
+    <!-- - -http://chocolatey.org/packages/texlive -->
+
+## プログラミング言語 {#ub9d2035}
+
+- C, C++
+    - Microsoft Visual Studio Express
+    - [MinGW](/MinGW/)
+    - [Cygwin](/Cygwin/)
+- F#, C#, VB
+    - Microsoft Visual Studio Express
+- Fortran
+- D
+- Go
+- Haskell
+- Java
+- JavaScript
+- PHP
+- [Python](/Python/)
+- [Ruby](/Ruby/)
+- [Perl](/Perl/)
+- Lua
+- LuaJIT
+- [Lisp](/Lisp/)
+
+## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
+
+LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
+初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのがいいとおもいます．<br>
+エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります．<br>
+問題が発生した場合は別のエディタを使用してください．<br>
+人によってエディタの好みは様々なので自分にあったエディタを見つけてください．<br>
+見つからない人は自作してみるのもいいかもしれません．<br>
+
+- [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
+- [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
+
+にも Microsoft Windows で使用可能な LaTeX 用の統合環境・エディタが紹介されています．
+
+### フリーソフトウェア (オープンソースソフトウェア) {#e2433aac}
+
+- [LyX](/LyX/)
+- [TeXstudio](/TeXstudio/)
+- [TeXworks](/TeXworks/)
+- [Eclipse](/Eclipse/)
+    - [TeXlipse](/TeXlipse/)
+- [Emacs](/Emacs/)
+    - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
+    - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
+    - [AUCTeX](/AUCTeX/)
+    - [YaTeX](/YaTeX/)
+- [Vim](/Vim/)
+    - [tex.vim](/Vim/tex.vim/) + LaTeX Box + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+    - [Vim-LaTeX](/Vim-LaTeX/)
+    - ATP
+- [Notepad++](/Notepad++/)
+    - [NppExec](/NppExec/)
+    - [jN](/jN/)
+    - [Python Script](</Python Script/>)
+- [サクラエディタ](</サクラエディタ/>)
+    - [Happy](/Happy/)
+
+## PDF ファイルビューア {#y17ec745}
+
+### フリーソフトウェア (オープンソースソフトウェア) {#m5a5dc1e}
+
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
+- [SumatraPDF](/SumatraPDF/)
+- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．[SumatraPDF](/SumatraPDF/) などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks などで使われています．
+- [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
+
+## [BibTeX 関連](</BibTeX関連ツール/>) {#s7d96524}
+
+### フリーソフトウェア (オープンソースソフトウェア) {#kee4f4fe}
+
+- [Zotero](https://www.zotero.org/)
+- [JabRef](http://jabref.sourceforge.net/)
+- [QRef](http://members3.jcom.home.ne.jp/qref/)
