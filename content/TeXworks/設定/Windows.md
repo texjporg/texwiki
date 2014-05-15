@@ -281,7 +281,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
@@ -310,7 +310,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
@@ -349,7 +349,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
