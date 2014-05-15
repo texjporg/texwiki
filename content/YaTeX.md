@@ -330,7 +330,7 @@ begin 型補完を使うのを忘れた場合は
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
 % #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && pdfopen --rxi --file hogehoge.pdf && pdfclose --rxi --file hogehoge.pdf & ptex2pdf -u -l hogehoge && pdfopen --rxi --file hogehoge.pdf
 %#BIBTEX upbibtex hogehoge
-%#MAKEINDEX makeindex hogehoge
+%#MAKEINDEX mendex -U hogehoge
 %#LPR if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf
 % #LPR acroread.bat /p hogehoge.pdf
 ```
@@ -438,10 +438,10 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq bibtex-command "biber --bblencoding=utf8 -u -U --output_safechars")
 ```
 
-### makeindex の指定 {#i3950de0}
+### mendex の指定 {#i3950de0}
 
 ```
-(setq makeindex-command "makeindex")
+(setq makeindex-command "mendex -U")
 ```
 
 ### preview {#t737f278}
