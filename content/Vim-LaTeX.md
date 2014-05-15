@@ -167,7 +167,7 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'upbibtex'
-let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
+let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
 let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n -c \":RemoteOpen +\%l \%f\""'
 "let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
@@ -242,7 +242,7 @@ let g:Tex_CompileRule_pdf = '/usr/texbin/ptex2pdf -u -l -ot "-synctex=1 -interac
 let g:Tex_CompileRule_ps = '/usr/texbin/dvips -Ppdf -o $*.ps $*.dvi'
 let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = '/usr/texbin/upbibtex'
-let g:Tex_MakeIndexFlavor = '/usr/texbin/makeindex $*.idx'
+let g:Tex_MakeIndexFlavor = '/usr/texbin/mendex -U $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
 let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
@@ -340,7 +340,7 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-synctex=1 -interaction=nonstop
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'upbibtex'
-let g:Tex_MakeIndexFlavor = 'makeindex $*.idx'
+let g:Tex_MakeIndexFlavor = 'mendex -U $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
 let g:Tex_ViewRule_pdf = 'xdg-open'
 "let g:Tex_ViewRule_pdf = 'evince'
