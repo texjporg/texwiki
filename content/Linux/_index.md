@@ -229,7 +229,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
-    - [Org mode](</Emacs/Org mode/>)
+    - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
     - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
