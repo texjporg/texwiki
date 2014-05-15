@@ -32,7 +32,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'makeindex %O -o %D %S';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -49,7 +49,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'makeindex %O -o %D %S';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -86,7 +86,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'makeindex %O -o %D %S';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.bat %O %S %D';
@@ -103,7 +103,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'makeindex %O -o %D %S';
+  $makeindex = 'mendex %O -U -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
