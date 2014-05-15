@@ -13,6 +13,7 @@ pukiwiki: "YASnippet"
 
 YASnippet は [Emacs](/Emacs/) のスニペットプラグインです．<br>
 
+- [Org Mode での yasnippet を利用した入力支援 ( #+BEGIN_SRC )](http://bhby39.blogspot.jp/2012/01/yasnippet.html)
 - [Emacs で LaTeX を書いている人が今すぐ yasnippet を最新版にすべきたった1つの理由](http://kita.dyndns.org/diary/?date=20121212)
 - [Nyoho/my-snippets · GitHub](https://github.com/Nyoho/my-snippets)
 
