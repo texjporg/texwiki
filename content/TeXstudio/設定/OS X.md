@@ -220,8 +220,6 @@ Makeindex
 
 : "/usr/texbin/mendex" -U %.idx
 
-: "/usr/texbin/makeindex" %.idx
-
 Texindy
 : &nbsp;
 
