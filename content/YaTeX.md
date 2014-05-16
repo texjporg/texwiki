@@ -897,7 +897,8 @@ yatexadd.elのYaTeX:includegraphicsの最後を下記のように変更
 
 ### コンパイルプログラムの使い分け {#ga20e87e}
 
-普段は ptex2pdf (uplatex + dvipdfmx) を使っていても，投稿先のスタイルシートによっては pdflatex を前提としているものがあります．TeX ソースの先頭行に例えば，
+普段は ptex2pdf (uplatex + dvipdfmx) を使っていても，投稿先のスタイルシートによっては pdflatex を前提としているものがあります．<br>
+TeX ソースの先頭行に例えば，
 
 ```
 %#!pdflatex
