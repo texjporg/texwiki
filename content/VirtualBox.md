@@ -22,3 +22,7 @@ VirtualBox は x86 と x86_64 の仮想化ソフトウェアです．<br>
 ### ChangeLog {#v361881d}
 
 - [https://www.virtualbox.org/wiki/Changelog](https://www.virtualbox.org/wiki/Changelog)
+
+## 関連リンク {#kd1f103c}
+
+- [仮想環境構築ツール「Vagrant」で開発環境を仮想マシン上に自動作成する](http://knowledge.sakura.ad.jp/tech/1552/)
