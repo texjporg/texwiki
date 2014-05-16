@@ -140,8 +140,9 @@ $ kpsewhich -var-value XDVIINPUTS
 
 #### TeX Live/Debian の場合 {#g7b22367}
 
-- [https://packages.debian.org/ja/xdvik-ja](https://packages.debian.org/ja/xdvik-ja)
 - [http://packages.ubuntu.com/ja/xdvik-ja](http://packages.ubuntu.com/ja/xdvik-ja)
+- [https://packages.debian.org/ja/xdvik-ja](https://packages.debian.org/ja/xdvik-ja)
+- [#638764 - xdvik-ja: please remove t1lib dependency - Debian Bug report logs](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=638764)
 
 ```
 $ sudo apt-get install xdvik-ja
