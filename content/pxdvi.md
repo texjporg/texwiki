@@ -7,14 +7,22 @@ pukiwiki: "pxdvi"
 
 # pxdvi
 
-## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
+pxdvi で日本語が表示されないなどの問題が発生する場合は <strong>pxdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
+[ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
+
+## [pxdvi](http://www.preining.info/blog/software-projects/tlptexlive/) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
+
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## pxdvi (xdvik-ja) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする {#q4ba8496}
 
 ### pxdvi とは {#e137631f}
 
 pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです．<br>
-pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．<br>
+pxdvi は [xdvik](/xdvi/) を (e-)(u)pTeX に対応させたものです．<br>
 
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/)
+- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
@@ -27,16 +35,31 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．<br>
     - [https://gitorious.org/tlptexlive/build-tlptexlive/commits/master](https://gitorious.org/tlptexlive/build-tlptexlive/commits/master)
     - [https://gitorious.org/tlptexlive/tlptexlive-root/commits/master](https://gitorious.org/tlptexlive/tlptexlive-root/commits/master)
 
-### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
+### pxdvi のインストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．<br>
-
-- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+pxdvi は [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/) からインストールできます．<br>
 
 ```
 $ pxdvi --version
 xdvik version 22.85 j1.41-ptexlive (Xaw toolkit)
 Libraries: kpathsea version 6.1.1dev, T1lib version 5.1.2, FreeType version 2.4.11, Fontconfig version 2.9.0
+```
+
+#### TeX Live 公式パッケージ (Cygwin) の場合 {#s31803b9}
+
+```
+$ tlmgr update --self --all
+$ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
+$ tlmgr pinning add tlptexlive '*'
+$ tlmgr install pxdvi pmetapost
+$ tlmgr path add
+$ tlmgr update --all
+$ cd /usr/local/texlive/????
+$ ln -s texmf-dist texmf
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ cp XDvi XDvi.org
+$ sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+$ sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
 
 #### TeX Live 公式パッケージ (OS X) の場合 {#r20c1e45}
@@ -113,6 +136,20 @@ $ kpsewhich -var-value XDVIINPUTS
 /usr/share/texmf-dist/pxdvi
 ```
 
+### xdvik-ja のインストール <a id="xdvik-jainstall"></a> {#tfc9f890}
+
+#### TeX Live/Debian の場合 {#g7b22367}
+
+- [https://packages.debian.org/ja/xdvik-ja](https://packages.debian.org/ja/xdvik-ja)
+- [http://packages.ubuntu.com/ja/xdvik-ja](http://packages.ubuntu.com/ja/xdvik-ja)
+
+```
+$ sudo apt-get install xdvik-ja
+$ xdvi --version
+xdvik version 22.84.16 j1.41-ptexlive (Xaw toolkit)
+Libraries: kpathsea version 6.2.0, T1lib version 5.1.2, FreeType version 2.4.9
+```
+
 ### 注意点 {#jd5a94be}
 
 #### pxdvi で DVI ファイルを表示するとコンソールに Warning: Cannot convert string ... が表示される → /usr/local/texlive/????/texmf-dist/xdvi/&#x58;Dvi を修正する {#ha5f0016}
@@ -126,25 +163,33 @@ Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to typ
 
 以下の作業を行います．<br>
 
-```
-$ cd /usr/local/texlive/????/texmf-dist/xdvi
-$ sudo cp XDvi XDvi.org
-```
+- Cygwin の場合
 
-OS X の場合
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ cp XDvi XDvi.org
+    $ sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
 
-```
-$ brew install gnu-sed
-$ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-$ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-```
+- OS X の場合
 
-Linux の場合
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ sudo cp XDvi XDvi.org
+    $ brew install gnu-sed
+    $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
 
-```
-$ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-$ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
-```
+- Linux の場合
+
+    ```
+    $ cd /usr/local/texlive/????/texmf-dist/xdvi
+    $ sudo cp XDvi XDvi.org
+    $ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
+    ```
 
 ### 使い方 {#o73d19d8}
 
