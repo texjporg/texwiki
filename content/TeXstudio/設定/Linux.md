@@ -233,8 +233,6 @@ Makeindex
 
 : mendex -U %.idx
 
-: makeindex %.idx
-
 Texindy
 : &nbsp;
 
