@@ -238,8 +238,6 @@ Makeindex
 
 : mendex.exe -U %.idx
 
-: makeindex.exe %.idx
-
 Texindy
 : &nbsp;
 
