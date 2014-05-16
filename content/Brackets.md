@@ -14,6 +14,9 @@ pukiwiki: "Brackets"
 ## Summary {#pd6336fa}
 
 - [http://brackets.io/](http://brackets.io/)
+- [CodeMirror](http://codemirror.net/)
+- [https://github.com/adobe/brackets/wiki](https://github.com/adobe/brackets/wiki)
+    - [https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
 
 ### License {#h102f68a}
 
