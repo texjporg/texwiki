@@ -20,8 +20,10 @@ PostScript形式での出力が可能なためTeXへの挿入も簡単に行え�
 
 ### インストール {#l5809210}
 
-基本的にはX Windows System上で動作するので、Linux はもちろん、
-OS Xでは XQuartz (X11)、WindowsではCygwinなどで動作します。
+基本的にはX Windows System上で動作します。<br>
+Linux はもちろん、
+OS Xでは XQuartz (X11)、Cygwin などで動作します。<br>
+Cygwin を必要としない Windows Native バージョンもあります。<br>
 公式ページからダウンロードして展開します。
 
 ソースからインストールする場合は
