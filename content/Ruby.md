@@ -20,13 +20,15 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 - [https://www.ruby-lang.org/](https://www.ruby-lang.org/)
 - [http://www.ruby-doc.org/](http://www.ruby-doc.org/)
+
+### 関連リンク {#ha4e0479}
+
 - [http://ruby.morphball.net/](http://ruby.morphball.net/)
-- [若手エンジニア／初心者のためのRuby 2.1入門（1）](http://www.atmarkit.co.jp/ait/articles/1402/27/news042.html)
-- [若手エンジニア／初心者のためのRuby 2.1入門（2）](http://www.atmarkit.co.jp/ait/articles/1403/26/news030.html)
+- [「若手エンジニア／初心者のためのRuby 2.1入門」最新記事一覧](http://www.atmarkit.co.jp/ait/kw/ruby_nyumon.html)
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
-- [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://tech.recompile.net/post/13843318337/shebang-bin-env-ruby-0)
-- [Ruby 2.1.1 で Hash#reject のデグレ](http://diary.sorah.jp/2014/02/28/ruby211-hash-reject)
+- [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://takai.tumblr.com/post/13843318337/shebang-bin-env-ruby-0)
+- [Ruby 2.1.1 で Hash#reject のデグレ](http://diary.sorah.jp/2014/02/28/ruby211-hash-reject) → [Ruby 2.1.2](https://www.ruby-lang.org/ja/news/2014/05/09/ruby-2-1-2-is-released/) で修正されました
 
 ### 派生版 {#w5708e1c}
 
@@ -44,18 +46,18 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 - [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
 
-RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場合は
-
-```
-;C:\Ruby200\bin
-```
-
-を環境変数 PATH に追加します
-
 RubyInstaller for Windows の Ruby を C:\Ruby200-x64 にインストールした場合は
 
 ```
 ;C:\Ruby200-x64\bin
+```
+
+を環境変数 PATH に追加します
+
+RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場合は
+
+```
+;C:\Ruby200\bin
 ```
 
 を環境変数 PATH に追加します
@@ -76,7 +78,7 @@ $ pacman -S ruby
 
 ### OS X {#def5cf73}
 
-- [Ruby 2.1.1インストール](http://qiita.com/shu_0115/items/9efb4b060f465cde0ff2)
+- [brewとrbenvを使ってRuby2.1.2を突っ込む](http://qiita.com/217/items/2d4f2d9551572e2c7352)
 
 ### Linux {#pfcca84f}
 
