@@ -12,6 +12,7 @@ pukiwiki: "GitHub"
 - [zr-tex8r (Takayuki YATO) · GitHub](https://github.com/zr-tex8r)
 - [zr-tex8r&#39;s Gists](https://gist.github.com/zr-tex8r)
 - [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
+- [abenori · GitHub](https://github.com/abenori)
 - [kmaed (Kazuki Maeda) · GitHub](https://github.com/kmaed)
 - [munepi (Munehiro Yamamoto) · GitHub](https://github.com/munepi)
 - [doraTeX (Yusuke Terada) · GitHub](https://github.com/doraTeX)
