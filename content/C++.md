@@ -381,7 +381,13 @@ auto main() -> int
 #endif
 
     if (argc != 4) {
-        std::wcerr << L"usage: " << argv[0] << L" pdffile texfile line" << std::endl;
+        auto hStdError = ::GetStdHandle(STD_ERROR_HANDLE);
+        DWORD dwWriteByte;
+        wchar_t usage[256] = L"";
+        std::wcscat(usage, L"usage: ");
+        std::wcscat(usage, argv[0]);
+        std::wcscat(usage, L" pdffile texfile line\n");
+        WriteConsoleW(hStdError, usage, std::wcslen(usage), &dwWriteByte, nullptr);
         err = 2;
         return err;
     }
