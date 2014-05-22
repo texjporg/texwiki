@@ -23,6 +23,7 @@ pukiwiki: "D"
 - [http://qiita.com/tags/dlang](http://qiita.com/tags/dlang)
 - [D言語 Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/dlang)
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
+- [D言語でShift-JISを入出力する](http://qiita.com/___uhu/items/9fc09e6aea9939395d74)
 - [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#nfc264ca}
