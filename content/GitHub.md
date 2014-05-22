@@ -11,11 +11,14 @@ pukiwiki: "GitHub"
 
 - [zr-tex8r (Takayuki YATO) · GitHub](https://github.com/zr-tex8r)
 - [zr-tex8r&#39;s Gists](https://gist.github.com/zr-tex8r)
-- [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
-- [abenori · GitHub](https://github.com/abenori)
+- [doraTeX (Yusuke Terada) · GitHub](https://github.com/doraTeX)
+- [doraTeX&#39;s Gists](https://gist.github.com/doraTeX)
 - [kmaed (Kazuki Maeda) · GitHub](https://github.com/kmaed)
 - [munepi (Munehiro Yamamoto) · GitHub](https://github.com/munepi)
-- [doraTeX (Yusuke Terada) · GitHub](https://github.com/doraTeX)
+- [munepi&#39;s Gists](https://gist.github.com/munepi)
+- [kmaed&#39;s Gists](https://gist.github.com/kmaed)
+- [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
+- [abenori · GitHub](https://github.com/abenori)
 - [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
 - [DVI のパース](https://gist.github.com/anonymous/4318395) ([swtw7466](https://github.com/swtw7466))
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
