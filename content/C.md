@@ -623,7 +623,13 @@ main(void)
 #endif
 
     if (argc != 4) {
-        fwprintf(stderr, L"usage: %ls pdffile texfile line\n", argv[0]);
+        HANDLE hStdError = GetStdHandle(STD_ERROR_HANDLE);
+        DWORD dwWriteByte;
+        wchar_t usage[256] = L"";
+        wcscat(usage, L"usage: ");
+        wcscat(usage, argv[0]);
+        wcscat(usage, L" pdffile texfile line\n");
+        WriteConsoleW(hStdError, usage, wcslen(usage), &dwWriteByte, NULL);
         err = 2;
         return err;
     }
