@@ -19,15 +19,17 @@ pukiwiki: "OpenJPEG"
 
 OpenJPEG 2.0.0 以降を使用して Poppler がビルドできない場合は OpenJPEG 1.5.2 をインストールしてください．<br>
 
-OpenJPEG 最新版の場合
+<!-- OpenJPEG 最新版の場合 -->
 
-<!-- $ curl - -insecure -R -L -O https://openjpeg.googlecode.com/files/openjpeg-2.0.0.tar.gz -->
-<!-- $ tar xvf openjpeg-2.0.0.tar.gz -->
-<!-- $ pushd openjpeg-2.0.0 -->
+OpenJPEG 2.1.0 の場合
+
+<!-- $ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only -->
+<!-- $ pushd openjpeg-read-only -->
 
 ```
-$ svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only
-$ pushd openjpeg-read-only
+$ curl -R -L -O http://download.sourceforge.net/openjpeg.mirror/openjpeg-2.1.0.tar.gz
+$ tar xvf openjpeg-2.1.0.tar.gz
+$ pushd openjpeg-2.1.0
 $ mkdir build
 $ pushd build
 ```
@@ -42,10 +44,10 @@ $ popd
 $ popd
 ```
 
-OpenJPEG 1.5.1 の場合
+OpenJPEG 1.5.2 の場合
 
 ```
-$ curl -R -L -O http://openjpeg.googlecode.com/files/openjpeg-1.5.2.tar.gz
+$ curl -R -L -O http://download.sourceforge.net/openjpeg.mirror/openjpeg-1.5.2.tar.gz
 $ tar xvf openjpeg-1.5.2.tar.gz
 $ pushd openjpeg-1.5.2
 $ ./configure --prefix=/mingw --enable-mj2 --enable-jpwl
