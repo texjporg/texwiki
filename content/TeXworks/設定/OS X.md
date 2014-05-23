@@ -24,6 +24,12 @@ pukiwiki: "TeXworks/設定/OS X"
 IPAexフォントを埋め込む場合は<br>
 
 ```
+$ sudo kanji-config-updmap-sys ipaex
+```
+
+または
+
+```
 $ kanji-config-updmap ipaex
 ```
 
