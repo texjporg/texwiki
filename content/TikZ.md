@@ -904,6 +904,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [Texmaker](/Texmaker/)
 - [TikzEdt](http://www.tikzedt.org/)
 - [TikZiT](http://tikzit.sourceforge.net/)
+- [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
 - [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入、メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
 - [GeoGebra](http://www.geogebra.org/cms/ja)
