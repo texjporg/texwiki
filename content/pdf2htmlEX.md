@@ -21,26 +21,13 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 - [WANG Lu (coolwanglu) - Twitter](https://twitter.com/coolwanglu)
     - 日本語で返信していただいてもかまいません。
 
-<!-- *注意点 [#j715c0ef] -->
-<!-- **pdf2htmlEX version 0.6 で - -auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりする → - -auto-hint 1 オプションを指定する [#t8c12146] -->
-<!--  -->
-<!-- pdf2htmlEX version 0.6 で - -auto-hint 1 オプションを指定しないで変換した HTML ファイルを Windows 版の Google Chrome で表示すると拡大/縮小の値によって細い線 (1−x の − (マイナス) など) が表示されたりされなかったりします．~ -->
-<!-- Windows 版の Google Chrome で [[Formulas:http://coolwanglu.github.com/pdf2htmlEX/demo/cheat.html]] の元になった cheat.pdf を - -auto-hint 1 オプション指定なしで -->
-<!--  -->
-<!-- $ pdf2htmlEX - -zoom 2 cheat.pdf -->
-<!--  -->
-<!-- として変換して表示すると -->
-<!--  -->
-<!-- 拡大/縮小 90% → 1−x の − (マイナス) が表示される~ -->
-<!-- 拡大/縮小 100% → 1−x の − (マイナス) が表示されない~ -->
-<!-- 拡大/縮小 110% → 1−x の − (マイナス) が表示される~ -->
-<!--  -->
-<!-- といった現象が発生します．~ -->
-<!-- オプション指定で - -auto-hint 1 を指定すると表示できるようになりました -->
-<!--  -->
-<!-- $ pdf2htmlEX - -auto-hint 1 - -zoom 2 cheat.pdf -->
-<!--  -->
-<!-- Windows 版の Chrome では IE や Firefox とは異なり，アンチエイリアスが効いていないようです． → [[Chromeはwindowsでanti-aliasがないようです:https://twitter.com/coolwanglu/status/246220925454934016]] -->
+### License {#n5a65da7}
+
+[GPLv3](https://github.com/coolwanglu/pdf2htmlEX/blob/master/LICENSE)
+
+### ChangeLog {#z70dc8d6}
+
+- [https://github.com/coolwanglu/pdf2htmlEX/commits/master](https://github.com/coolwanglu/pdf2htmlEX/commits/master)
 
 ## 不具合 {#q60cf17d}
 
@@ -440,7 +427,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.26.0
+--   found poppler, version 0.26.1
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
@@ -568,7 +555,11 @@ Cygwin では問題なく動作するようです．<br>
 
 ### Linux {#bbc3ecf8}
 
-#### Ubuntu {#z45bd221}
+#### Arch Linux {#ae9f73e9}
+
+- [AUR (en) - pdf2htmlex-git](https://aur.archlinux.org/packages.php?ID=62426)
+
+#### Linux Mint {#z45bd221}
 
 - [ppa:coolwanglu/pdf2htmlex](https://launchpad.net/~coolwanglu/+archive/pdf2htmlex)
 - [pdf2htmlEX - Convert PDF to HTML without losing format](http://linux.ikoinoba.net/index.php?UID=1349019363)
@@ -579,10 +570,6 @@ $ sudo apt-add-repository ppa:coolwanglu/pdf2htmlex
 $ sudo apt-get update
 $ sudo apt-get install pdf2htmlex
 ```
-
-#### Arch Linux {#ae9f73e9}
-
-- [AUR (en) - pdf2htmlex-git](https://aur.archlinux.org/packages.php?ID=62426)
 
 #### Gentoo Linux {#d917d3e1}
 
