@@ -20,7 +20,7 @@ xyzzy は国産のテキストエディタです．<br>
 
 ### 動作環境 {#h05168de}
 
-Windows 8.1, 8, 7, Vista, XP
+Windows
 
 ### License {#gf798577}
 
