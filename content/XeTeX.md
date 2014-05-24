@@ -241,7 +241,33 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 ```
 
 で、これにより、 XeTeX はファイルを 1 バイトずつ、文字コードの解釈を行わずに読み込むようになるので、 8 ビットのハイフネーションパターンや、 inputenc, CJK 等の 8 ビットの TeX を前提としたマクロも (原理的には) 使用できるようになります。<br>
+ただし \usepackage\[utf8\]{inputenc} とすると
 
+```
+*** you should *not* be loading the inputenc package
+*** XeTeX expects the source to be in UTF8 encoding
+*** some features of other encodings may conflict, resulting in poor output.
+```
+
+と出力されるので XeLaTeX で inputenc は使用しないでください．<br>
+また CJK パッケージと xeCJK パッケージを両方使用しようとすると
+
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! xeCJK error: "incompatible-package"
+!
+! The `CJK' package and xeCJK are incompatible.
+!
+! Please do not use it.
+!
+! See the xeCJK documentation for further information.
+!
+! Type <return> to continue.
+!...............................................
+```
+
+と出力されるので XeLaTeX で CJK パッケージは使用しないでください．<br>
 エンコーディングの解釈には、 ICU ライブラリが使われるので、 iconv の規則とは異なり、
 
 ```
