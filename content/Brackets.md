@@ -9,6 +9,8 @@ pukiwiki: "Brackets"
 
 ## [Brackets](http://brackets.io/) {#h3ab6d24}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/200px-Brackets_Icon.svg.png" alt="Brackets" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#pd6336fa}
@@ -28,4 +30,5 @@ pukiwiki: "Brackets"
 
 ## brackets-latex {#k0f5bd9d}
 
+- [https://github.com/thehogfather/brackets-latex](https://github.com/thehogfather/brackets-latex)
 - [https://brackets-registry.aboutweb.com/](https://brackets-registry.aboutweb.com/)
