@@ -336,6 +336,8 @@ LuaJITTeX<br>
 
 ### 注意点 {#j34b2038}
 
+#### フォルダー名 {#y9648ac1}
+
 &#x2a;.tar.xz ファイルをスペースやマルチバイト文字を含む名前のフォルダー［例えば
 "C:\Program&nbsp;Files\W32TeX\\"，C:\日本語テフ\\
 など］で展開しないでください。<br>
@@ -714,6 +716,22 @@ TeXworks をコマンドラインからではなく<br>
 デスクトップでダブルクリックして起動したい場合は<br>
 C:\w32tex\share\texworks\TeXworks.exe のアイコンを右クリックして<br>
 \[送る\]-\[デスクトップ (ショートカットを作成)\] をクリックします．<br>
+
+### 注意点 {#maff36c0}
+
+#### 文字コードの自動判別 {#z6946085}
+
+W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．<br>
+texmf.cnf には以下のように設定されています．<br>
+
+```
+%
+% guess input encoding in pTeX and its friends if 1. (W32 only)
+%
+guess_input_kanji_encoding = 1
+```
+
+(e-)upTeX で UTF-8 を使用している場合に文字コードの自動判別が失敗する場合は [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
 
 ## 漢字入出力対応状況 {#qc9f2e7d}
 
