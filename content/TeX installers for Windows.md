@@ -66,3 +66,17 @@ TeX インストーラを色々な視点から比較してみます。
     しか触ったことのない人や，初心者には厳しいかもしれません。初心者の方は install-tl.zip を使ったほうがいいでしょう。
 
 - <strong>参考</strong>：[W32TeX - TeX Wiki](/W32TeX/)
+
+## MiKTeX {#yf4cb922}
+
+- <strong>ウェブサイト</strong>：[MiKTeX Project Page](http://miktex.org/)
+- <strong>作者</strong>：Christian Schenk さん
+- <strong>初心者オススメ度</strong>：★★★☆☆
+- <strong>ライセンス</strong>：フリーウェア
+- <strong>インストールする対象</strong>：MiKTeX バイナリ，TeXworks，Ghostscript，yap
+- <strong>ユーザーインターフェース</strong>：GUI
+- <strong>ネットワーク・ローカルインストール</strong>：Basic Installer, Net Installer, Portable Edition などがあります。ISO Image でローカルインストールもできます。
+- <strong>環境変数・レジストリ</strong>：自動（環境変数 PATH，レジストリ）
+- <strong>長所</strong>：自動アップデート機能があります。
+- <strong>短所</strong>：日本語 (u)pTeX が含まれていません。
+- <strong>参考</strong>：[MiKTeX - TeX Wiki](/MiKTeX/)
