@@ -40,6 +40,24 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) や [TeXwork
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+## 注意点 {#t3ac3069}
+
+### ツールパネルウィンドウ (「サインイン」，「PDF を書き出し」，「PDF を作成」，「ファイルを送信」，「ファイルを保存」が表示されているパネル) が邪魔 → ツールパネルウィンドウの上にある「ツール」をクリック {#ea4f48ea}
+
+- [Adobe Reader X/XIで 画面右側に「PDFを書き出し」「PDFを作成」などがあり邪魔](http://d.hatena.ne.jp/psquare/20130523/p1)
+- [PDFの右側が邪魔。ずっと出ないようにする設定は？](http://blog.livedoor.jp/takky315-gadget/archives/33033775.html)
+
+***
+
+　　　　　　　　　　　ツール[^1] ← 「ツール」をクリック<br>
+　　　　　　　　　　　　　　　　　　　　　　サインイン<br>
+▶ PDF を書き出し<br>
+▶ PDF を作成<br>
+▶ ファイルを送信<br>
+▶ ファイルを保存<br>
+
+***
+
 ## 不具合 {#r92dd454}
 
 ### Windows 版 Adobe Reader XI, Adobe Reader X で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
@@ -250,3 +268,5 @@ synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files\Adobe\Reader
 - [Acrobatのロックを回避する](http://d.hatena.ne.jp/abenori/20121223)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
+
+[^1]: ツールパネルウィンドウを表示
