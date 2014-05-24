@@ -249,7 +249,7 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 *** some features of other encodings may conflict, resulting in poor output.
 ```
 
-と出力されるので XeLaTeX で inputenc は使用しないでください．<br>
+と出力されるので XeLaTeX で inputenc パッケージは使用しないでください．<br>
 また CJK パッケージと xeCJK パッケージを両方使用しようとすると
 
 ```
