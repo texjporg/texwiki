@@ -215,22 +215,22 @@ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui �
 
 <br>
 
-　　　Welcome to the installation of TeX Live 2014<br>
+　　　TeX Live 2014 のインストールへようこそ<br>
 　　　&#x68;ttp://tug.org/texlive<br>
 
 <br>
 
-　　　This wizard will guide you through the installation.<br>
+　　　このガイドが、あなたの導入作業のご案内をします。<br>
 
 <br>
 
-　　　Best to disable your virus scanner during installation.<br>
+　　　導入作業中はウィルス探知器を無効にするのが最善です。<br>
 
 <br>
 
-　　　For an advanced, customizable installation, please consult<br>
-　　　the web pages or installation guide.<br>
-　　　Or use install-tl-advanced.bat<br>
+　　　調節可能な進んだ導入作業については、<br>
+　　　ウェブページか導入ガイドをご覧ください。<br>
+　　　あるいは install-tl-advanced.batをご使用ください。<br>
 
 <br>
 
@@ -238,7 +238,9 @@ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui �
 
 <br>
 
-　　　<span style="color:black;background-color:yellow;"><strong>☑ 既定リポジトリを変更 ← リポジトリを指定する場合はチェックする</strong></span><br>
+<!-- 　　　&color(black,yellow){''☑ 既定リポジトリを変更 ← リポジトリを指定する場合はチェックする''};&br; -->
+
+<br>
 
 <br>
 
@@ -288,20 +290,20 @@ install-tl-advanced.bat を選択して右クリックして \[管理者とし�
 
 ***
 
-<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　<span style="color:Black;"><strong>TeX Live 2014 の導入</strong></span>　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX Live 2014 の導入</strong></span>　　　　　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
 
-　Best to disable your virus scanner during installation.<br>
-
-<br>
-
-　The installer does not have adminstractive permissions;<br>
-　so can only install for current user.<br>
+　導入作業中はウィルス探知器を無効にするのが最善です。<br>
 
 <br>
 
-　Right-click install-tl-advanced and select "run as administrator"<br>
-　if you want to install for all users.<br>
-　　　\[　　終了　　\]　　　　　　　　　　　　　　　　　　　　　\[ Continue \]<br>
+　本導入プログラムは管理者権限を与えられていません．<br>
+　よって，現ユーザー用にしか導入することができません．<br>
+
+<br>
+
+　全ユーザー用に導入したい場合には，install-tl-advancedを右クリックして，<br>
+　"runを管理者として選択してください．<br>
+　\[ 終了 \]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 続行 \]<br>
 
 ***
 
@@ -315,8 +317,8 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに実行し�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------基本情報-------<br>
 　　選択したスキーム　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　scheme-full　　　　　　　　　　 \[ 変更 \]<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------追加設定-------<br>
-　　Installation collections　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 変更 \]<br>
-　　　　　　　　　　　　　　　　　　45 コレクション（全 45 中） (必要ディスク領域: 3707MB)<br>
+　　インストール選集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　48 コレクション（全 48 中） (必要ディスク領域: 3778MB)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
 　　可搬設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
 　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2014　　　　　　　　　 \[ 変更 \]<br>
@@ -333,8 +335,9 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに実行し�
 　　レジストリの PATH 設定を調整する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
 　　メニュー短絡キーを追加　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　ファイル関連付けを変更する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規のみ　　　　　　　　　　　　　　\[ 変更 \]<br>
-　　全ユーザ用に導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　全ユーザ用に導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　TeXworks フロントエンドを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　導入後，CTANからパッケージの更新を受け取る　　　　　　　　　　　　　　　　　　　　 はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　\[ TeX Live の導入 \]　　\[ 終了 \]<br>
 
 ***
@@ -521,6 +524,19 @@ ptex2pdf -u -l -ot "-synctex=1" -od "-f uptex-ipaex.map" hoge.tex
 - [TeX Live 2013 on Windows+ヒラギノOTF版 を使ってPDFにフォントを埋め込む方法](http://yanoshi.hatenablog.jp/entry/2014/01/24/024426)
 
 を参照してください．<br>
+
+#### 文字コードの自動判別 {#se4397b3}
+
+TeX Live 2014 以降はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．<br>
+texmf.cnf には以下のように設定されています．<br>
+
+```
+% Guess input encoding (SJIS vs. Unicode, etc.) in pTeX and friends?
+% Default is 0, to not guess.
+guess_input_kanji_encoding = 1
+```
+
+(e-)upTeX で UTF-8 を使用している場合に文字コードの自動判別が失敗する場合は [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
