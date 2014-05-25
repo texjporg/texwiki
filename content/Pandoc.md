@@ -9,12 +9,27 @@ pukiwiki: "Pandoc"
 
 ## Pandoc {#j60e5103}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## Summary {#z02a0637}
+
 - [Pandoc](http://johnmacfarlane.net/pandoc/) a universal document converter
-- [https://code.google.com/p/pandoc/](https://code.google.com/p/pandoc/)
+- [https://github.com/jgm/pandoc](https://github.com/jgm/pandoc)
 
-### 注意点 {#hee589a6}
+### License {#q6e7e4cc}
 
-#### pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex を実行するとエラーになる → ltjsarticle.cls を修正して myltjsarticle.cls を作成して documentclass に myltjsarticle を指定する {#h2f8de68}
+GPLv3, GPLv2
+
+- [https://github.com/jgm/pandoc/blob/master/COPYING](https://github.com/jgm/pandoc/blob/master/COPYING)
+- [https://github.com/jgm/pandoc/blob/master/COPYRIGHT](https://github.com/jgm/pandoc/blob/master/COPYRIGHT)
+
+### ChangeLog {#d1c7275b}
+
+- [https://github.com/jgm/pandoc/commits/master](https://github.com/jgm/pandoc/commits/master)
+
+## 注意点 {#hee589a6}
+
+### pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex を実行するとエラーになる → ltjsarticle.cls を修正して myltjsarticle.cls を作成して documentclass に myltjsarticle を指定する {#h2f8de68}
 
 - [pandoc で PDF変換 エラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1005)
 - [Pandocを使ってMarkdownからPDFを生成する](http://qiita.com/takeh1k0/items/ff84cb85bfffedc75066)
@@ -110,7 +125,7 @@ documentclass に myltjsarticle を指定すればエラーにならずに PDF �
 $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=lualatex
 ```
 
-### エディタ {#h2a45f83}
+## エディタ {#h2a45f83}
 
 - [Emacs](/Emacs/)
     - [Pandoc-mode](http://joostkremers.github.io/pandoc-mode/)
@@ -119,16 +134,20 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=luala
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
 
-### 関連リンク {#ud9aba13}
+## 関連リンク {#ud9aba13}
 
 - [Pandoc ユーザーズガイド 日本語版](http://sky-y.github.io/site-pandoc-jp/users-guide/)
 - [http://qiita.com/tags/pandoc](http://qiita.com/tags/pandoc)
 - [pandoc : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/pandoc)
+- [texを書かずにtex原稿をつくる](http://d.hatena.ne.jp/at_akada/20140522/1400771773)
 - [pandoc の使い方メモ — 相互参照について](http://pasero.net/~mako/blog/s/577)
 - [MarkdownからWordやPDF生成ができるようにする (またはPandoc環境の構築方法)](http://k1low.hatenablog.com/entry/2014/02/16/205839)
 - [卒論関連の覚え書き](http://d.hatena.ne.jp/tondol/20140215/1392420965)
 - [Pandoc+MarkdownでLaTeXとSphinx(reStructuredText)を操る。](http://nwpct1.hatenablog.com/entry/2014/01/20/203733)
+- [markdown->TeXの変換だけで卒論を仕上げるのに便利だったツール10個まとめ](http://mizchi.hatenablog.com/entry/2014/01/20/090957)
 - [MarkdownとPandocを用いた簡易Latex環境の構築 ref: http://qiita.com/mountcedar/items/e7603c2eb65661369c3b](https://gist.github.com/mountcedar/7006977)
 - [pandocでlatexをpdfに変換](https://gist.github.com/add20/a4ea9b143c41552e72f5)
 - [http://blog.fusic.co.jp/archives/3924](http://blog.fusic.co.jp/archives/3924)
 - [省力TeX](http://mith009.hatenablog.com/entry/2013/11/18/025450)
+- [kramdownに関する覚え書き](http://cup.sakura.ne.jp/kmd_a.htm)
+- [md2pdf](https://github.com/vzaccaria/md2pdf)
