@@ -22,11 +22,11 @@ Windows XP のサポートは終了しました．<br>
 - [Windows XP/Office 2003 サポート終了のお知らせ - Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/consumer/default.aspx)
 - [サポート終了に関するよくあるご質問 | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/faq.aspx)
 - [Windows XP のサポートは終了しました - Microsoft Windows](http://windows.microsoft.com/ja-jp/windows/end-support-help)
-- [http://www.microsoft.com/windows/ja-jp/xp/](http://www.microsoft.com/windows/ja-jp/xp/)
+- [Windows XP - Microsoft Windows](http://www.microsoft.com/windows/ja-jp/xp/)
 
 ## Windows サポート ライフサイクル {#vc8606da}
 
-- [http://windows.microsoft.com/ja-jp/windows/products/lifecycle](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
+- [Windows ライフサイクルのファクト シート - Microsoft Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
 
 ## TeX ディストリビューション {#vb660ba1}
 
@@ -215,7 +215,7 @@ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui �
 
 <br>
 
-　　　TeX Live 2014 のインストールへようこそ<br>
+　　　TeX Live 2014 導入プログラムへようこそ<br>
 　　　&#x68;ttp://tug.org/texlive<br>
 
 <br>
@@ -228,7 +228,7 @@ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui �
 
 <br>
 
-　　　調節可能な進んだ導入作業については、<br>
+　　　微調節可能な熟練者向き導入作業については、<br>
 　　　ウェブページか導入ガイドをご覧ください。<br>
 　　　あるいは install-tl-advanced.batをご使用ください。<br>
 
@@ -316,9 +316,9 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに実行し�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　TeX Live 2014 の導入<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------基本情報-------<br>
 　　選択したスキーム　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　scheme-full　　　　　　　　　　 \[ 変更 \]<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------追加設定-------<br>
-　　インストール選集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 変更 \]<br>
-　　　　　　　　　　　　　　　　　　48 コレクション（全 48 中） (必要ディスク領域: 3778MB)<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------詳細設定-------<br>
+　　導入対象選集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 変更 \]<br>
+　　　　　　　　　　　　　　　　　　　　48選集（全 48 選集中） (＠必要ディスク領域: 3779MB)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
 　　可搬設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
 　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2014　　　　　　　　　 \[ 変更 \]<br>
@@ -333,7 +333,7 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに実行し�
 　　font と macro の doc ツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
 　　font と macro のソースツリーを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　レジストリの PATH 設定を調整する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　\[ 入切 \]<br>
-　　メニュー短絡キーを追加　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
+　　メニューショートカットを追加　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　ファイル関連付けを変更する　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規のみ　　　　　　　　　　　　　　\[ 変更 \]<br>
 　　全ユーザ用に導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
 　　TeXworks フロントエンドを導入　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　　　 \[ 入切 \]<br>
