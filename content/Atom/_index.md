@@ -10,13 +10,21 @@ pukiwiki: "Atom"
 
 ## [Atom](https://atom.io/) {#r1ce0de4}
 
+<img src="https://raw.githubusercontent.com/atom/atom/master/resources/atom.png" alt="Atom" width="256" height="256" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#y42be4f2}
 
+Atom はテキストエディタです．<br>
+
 - [https://atom.io/](https://atom.io/)
 - [https://github.com/atom](https://github.com/atom)
 - [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
+
+### System Requirements {#aed34ff8}
+
+Windows, OS X, Linux
 
 ### License {#z80ed4e3}
 
@@ -26,11 +34,11 @@ pukiwiki: "Atom"
 
 - [https://github.com/atom/atom/commits/master](https://github.com/atom/atom/commits/master)
 
-## インストール {#x414b295}
+## Installation {#x414b295}
 
 ### Windows {#d8e05887}
 
-- [Atom Builds for Windows](http://blog.someguy123.com/atom-builds-for-windows/)
+- [Atom Builds for Windows](http://atom.someguy123.com/)
 
 ### OS X {#o272a8e0}
 
