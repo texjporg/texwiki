@@ -23,7 +23,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 - [Linux Mint](http://linuxmint.com/)
 - [Linux Mint Japan](http://linuxmint-jp.net/)
 - [https://github.com/linuxmint](https://github.com/linuxmint)
-- [Linux Mint 16 で Fcitx を使用し、日本語入力を快適にする。](http://fu-sen.org/post/69046386632/linux-mint-16-fcitx)
+- [Linux Mint 日本語支援サイト - リナックスミントを使おう](http://linuxmintjp.jimdo.com/)
 
 ## ダウンロード {#a6b4fe07}
 
@@ -40,6 +40,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 #### パッケージ {#ub67daca}
 
 - [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/)
+- [Linux Mint の日本語化](http://linuxmintjp.jimdo.com/%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/)
 - [Linux MintのパッケージをJAISTから取得するようにするには](http://blog.lindwurm.biz/2013/06/get-mint-packages-from-jaist.html)
 
 ## TeX Live <a id="texlive"></a> {#d237a7b2}
