@@ -37,8 +37,8 @@ W32TeX は Visual C++ 2010 でビルドされているため Windows XP 以降�
 
 Windows PowerShell やコマンド プロンプトでの作業が苦手な方は [LyX](/LyX/)，[TeXstudio](/TeXstudio/)，[TeXworks](/TeXworks/) などの [TeX 専用の統合環境・エディタ](</TeX用エディタ/>) を使用すればマウスを使って作業することができます。<br>
 
-[Emacs](/Emacs/)，[Vim](/Vim/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) などのオープンソースの TeX 対応テキストエディタでも TeX ファイルを編集できます．<br>
-[Emacs](/Emacs/)，[Vim](/Vim/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) は UTF-8 に対応しています．<br>
+[Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) などのオープンソースの TeX 対応テキストエディタでも TeX ファイルを編集できます．<br>
+[Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) は UTF-8 に対応しています．<br>
 TeX ファイルは UTF-8 以外に Shift_JIS（シフト JIS）[^2]，EUC-JP（日本語 EUC），ISO-2022-JP（いわゆる「JIS コード」）などの文字コードが使用されることもあります．<br>
 標準のテキストエディタとしてメモ帳 (Notepad) を使っている方にはこの機会に他のテキストエディタへの乗り換えをお薦めします．<br>
 ただし Emacs，Vim は初期設定ではショートカットキーなどの操作性がメモ帳とは異なるので，慣れるまでは大変かもしれません．<br>
