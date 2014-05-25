@@ -15,18 +15,32 @@ pukiwiki: "Brackets"
 
 ## Summary {#pd6336fa}
 
+Brackets はテキストエディタです．<br>
+
 - [http://brackets.io/](http://brackets.io/)
-- [CodeMirror](http://codemirror.net/)
-- [https://github.com/adobe/brackets/wiki](https://github.com/adobe/brackets/wiki)
-    - [https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
+
+### System Requirements {#u0ccbb39}
+
+Windows, OS X, Linux
 
 ### License {#h102f68a}
 
 [MIT License](https://github.com/adobe/brackets/blob/master/LICENSE)
 
+### Releases / Tags {#i571ef97}
+
+- [https://github.com/adobe/brackets/releases](https://github.com/adobe/brackets/releases)
+- [https://github.com/adobe/brackets/tags](https://github.com/adobe/brackets/tags)
+
 ### ChangeLog {#a6e7226e}
 
 - [https://github.com/adobe/brackets/commits/master](https://github.com/adobe/brackets/commits/master)
+
+### CodeMirror {#k10b020b}
+
+- [CodeMirror](http://codemirror.net/)
+- [https://github.com/adobe/brackets/wiki](https://github.com/adobe/brackets/wiki)
+    - [https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
 
 ## brackets-latex {#k0f5bd9d}
 
