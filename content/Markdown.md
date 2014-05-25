@@ -15,8 +15,6 @@ pukiwiki: "Markdown"
 - [kramdown](http://kramdown.gettalong.org/)
 - [Redcarpet](https://github.com/vmg/redcarpet)
 - [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
-- [Pandoc](/Pandoc/)
-- [md2pdf](https://github.com/vzaccaria/md2pdf)
 - [markdown2latex](http://pypi.python.org/pypi/markdown2latex/)
 
 ### エディタ {#vb4c5393}
@@ -37,5 +35,4 @@ pukiwiki: "Markdown"
 
 ### Markdown → LaTeX {#v519987b}
 
-- [markdown->TeXの変換だけで卒論を仕上げるのに便利だったツール10個まとめ](http://mizchi.hatenablog.com/entry/2014/01/20/090957)
-- [kramdownに関する覚え書き](http://cup.sakura.ne.jp/kmd_a.htm)
+- [Pandoc](/Pandoc/)
