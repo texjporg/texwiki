@@ -45,7 +45,7 @@ VineSeed は Vine Linux の開発版です．<br>
 $ sudo apt-get install task-texlive-full
 ```
 
-VineSeed の TeX Live は TeX Live 2014/Vine Linux です．<br>
+VineSeed (Vine Linux 7) の TeX Live は TeX Live 2014/Vine Linux です．<br>
 
 ```
 $ uplatex -v
