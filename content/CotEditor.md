@@ -39,11 +39,17 @@ OS X
 
 - [https://github.com/coteditor/CotEditor/commits/develop](https://github.com/coteditor/CotEditor/commits/develop)
 
-<!-- *CotEditor で TeX [#acb0f7fd] -->
-<!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
-<!-- **[[CotEditorでLaTeXファイルをタイプセットするスクリプト:http://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] [#nbc61989] -->
-<!-- **[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] [#yaef2f72] -->
-<!-- *関連リンク [#t0e859e9] -->
-<!-- -[[Vimのシンタックス定義をCotEditor用に変換.app:http://odorusaboten.web.fc2.com/mac/coteditor_syntaxs.html#vim2cot]] -->
-<!-- -[[CotEditorまとめ:http://d.hatena.ne.jp/tanaponchikidun/20120207/1328603967]] -->
-<!-- -[[CotEditor Replacement Icon:http://wolfrosch.com/text/2011/04/08]] -->
+## 不具合 {#yd9b9b72}
+
+- [https://github.com/coteditor/CotEditor/issues](https://github.com/coteditor/CotEditor/issues)
+
+## CotEditor で LaTeX {#acb0f7fd}
+
+- [CotEditor用Texスクリプト](http://ubi-lab.naist.jp/~ara/?p=1498&lang=ja)
+    <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
+    <!-- **[[CotEditorでLaTeXファイルをタイプセットするスクリプト:http://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] [#nbc61989] -->
+    <!-- **[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] [#yaef2f72] -->
+    <!-- *関連リンク [#t0e859e9] -->
+    <!-- -[[Vimのシンタックス定義をCotEditor用に変換.app:http://odorusaboten.web.fc2.com/mac/coteditor_syntaxs.html#vim2cot]] -->
+    <!-- -[[CotEditorまとめ:http://d.hatena.ne.jp/tanaponchikidun/20120207/1328603967]] -->
+    <!-- -[[CotEditor Replacement Icon:http://wolfrosch.com/text/2011/04/08]] -->
