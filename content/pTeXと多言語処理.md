@@ -96,14 +96,15 @@ Unicode (UTF-8) 対応テキストエディタについては，Microsoft Window
 オープンソースソフトウェアとして
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
+[Atom](/Atom/)，
+[Brackets](/Brackets/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降
 などがあります。<br>
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。<br>
 起動の速さを重視する方はメモ帳がおすすめです。<br>
-OS X では
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)，[Mac Emacs](http://www.muskmelon.jp/?page_id=79)，[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) が，Linux などの UNIX 互換 OS では
-GNU Emacs，Vim が定番だと思います。<br>
+OS X や Linux などでは
+[Emacs](/Emacs/)，[Vim](/Vim/), [Atom](/Atom/), [Brackets](/Brackets/) が定番だと思います。<br>
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
