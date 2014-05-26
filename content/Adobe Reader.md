@@ -49,7 +49,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ***
 
-　　　　　　　　　　　ツール[^1] ← 「ツール」をクリック<br>
+　　　　　　　　　　　<span style="color:black;background-color:yellow;">ツール[^1] ← 「ツール」をクリック</span><br>
 　　　　　　　　　　　　　　　　　　　　　　サインイン<br>
 ▶ PDF を書き出し<br>
 ▶ PDF を作成<br>
