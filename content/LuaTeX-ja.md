@@ -104,6 +104,21 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
 
 ## 他のパッケージとの併用 {#kdbc7cfe}
 
+### [microtype](http://ctan.org/pkg/microtype) {#m65358c5}
+
+ltjsarticle.cls と microtype パッケージを使用してタイプセットすると以下のエラーが発生することがあるかもしれません．<br>
+
+```
+! Extra \else.
+\XKV@wh@list ...r \expandafter \XKV@wh@list \else
+                                                  \def #3{#6}\expandafter \e...
+l.64    }
+
+?
+```
+
+上記のエラーが発生する場合は [pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex を実行するとエラーになる](/Pandoc/#h2f8de68) を参照してください．<br>
+
 ### [OTF](/OTF/) {#g94672b9}
 
 OTF パッケージ (japanese-otf, japanese-otf-uptex) は使用できません．<br>
