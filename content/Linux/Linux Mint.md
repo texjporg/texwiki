@@ -27,6 +27,8 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ## ダウンロード {#a6b4fe07}
 
+### ミラーサイト {#nba22f7f}
+
 - [Mirrors - Linux Mint](http://www.linuxmint.com/mirrors.php)
 
 ### 国内ミラーサイト {#ce6708ed}
