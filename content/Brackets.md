@@ -18,6 +18,7 @@ pukiwiki: "Brackets"
 Brackets はテキストエディタです．<br>
 
 - [http://brackets.io/](http://brackets.io/)
+- [Brackets Extension Registry](https://brackets-registry.aboutweb.com/)
 
 ### System Requirements {#u0ccbb39}
 
@@ -45,4 +46,7 @@ Windows, OS X, Linux
 ## brackets-latex {#k0f5bd9d}
 
 - [https://github.com/thehogfather/brackets-latex](https://github.com/thehogfather/brackets-latex)
-- [https://brackets-registry.aboutweb.com/](https://brackets-registry.aboutweb.com/)
+
+## brackets-vim {#b1f7e26d}
+
+- [https://github.com/megalord/brackets-vim](https://github.com/megalord/brackets-vim)
