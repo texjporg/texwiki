@@ -16,6 +16,8 @@ pukiwiki: "TeX入門"
 
 <div style="text-align:right">—『ジーニアス英和大辞典』（大修館書店，2001年）</div>
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ## TeX，LaTeX とは？ {#nef9fd41}
 
 ### 読み方 {#gea7d22e}
