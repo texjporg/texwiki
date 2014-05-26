@@ -8,3 +8,7 @@ pukiwiki: "tlmgr"
 # tlmgr
 
 ## tlmgr {#y0e2a3d4}
+
+- [http://www.tug.org/texlive/tlmgr.html](http://www.tug.org/texlive/tlmgr.html)
+- [http://www.tug.org/texlive/doc/tlmgr.html](http://www.tug.org/texlive/doc/tlmgr.html)
+- [http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html](http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html)
