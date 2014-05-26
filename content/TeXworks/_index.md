@@ -18,7 +18,7 @@ pukiwiki: "TeXworks"
 
 TeXworks は，TeX でドキュメントを作成するためのシンプルな統合環境です．<br>
 TeXworks は Dick[^1] Koch 氏の [TeXShop](/TeXShop/) をモデルにしています．<br>
-[TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等のディストリビューションに標準で含まれています．<br>
+[TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．<br>
 [SyncTeX](/SyncTeX/) もサポートしており，メニューも日本語化されています．<br>
 TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 
@@ -467,4 +467,4 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
         ```
 
 [^1]: Dick は Richard のニックネーム (愛称)．Richard → Rich → Rick → Dick．
-[^2]: GNU/Linux の TeX Live には TeXworks は収録されていません．
+[^2]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
