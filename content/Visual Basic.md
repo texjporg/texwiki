@@ -15,6 +15,7 @@ pukiwiki: "Visual Basic"
 
 - [http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/2x7h1hfk.aspx)
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/2x7h1hfk.aspx)
+- [Visual Basic Advent Calendar 2013 : ATND](http://atnd.org/events/45244)
 - [Visual Basic Advent Calendar 2012 : ATND](http://atnd.org/events/33729)
 
 ## 処理系 {#gfc5181e}
