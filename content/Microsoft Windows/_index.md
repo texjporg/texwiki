@@ -50,7 +50,7 @@ TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照し�
 
 #### 動作環境 {#afd7194b}
 
-Windows
+TeX Live (Win64, Win32) は Visual C++ 2010 でビルドされているため Windows XP 以降で動作します．<br>
 
 #### TeX Live のインストール {#ca517ea6}
 
@@ -550,6 +550,9 @@ guess_input_kanji_encoding = 1
 
 [Installing TeX Live 2013 on Windows 8.1 Tablet (32bit) and Solution for some errors](http://www.am.ics.keio.ac.jp/~keimiya/wordpress/?p=746)
 : 2014-04-15
+
+[TeX Live 2013をインストール](http://blankrune.hateblo.jp/entry/2014/04/07/224434)
+: 2014-04-07
 
 [Windows 7 における TeX Live 2013 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-792.html)
 : 2014-02-19
