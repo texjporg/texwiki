@@ -9,21 +9,29 @@ pukiwiki: "TeX Live Manager"
 
 ## TeX Live Manager {#l32e41e6}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## TeX Live Manager とは {#e10391ba}
+
+TeX Live Manager は TeX Live のパッケージ管理ツールです．<br>
+TeX Live をインストールすると TeX Live Manager もインストールされます．<br>
+コマンドラインから使用する場合は [tlmgr](/tlmgr/) を使用します．<br>
+
 ***
 
-<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">tlmgr</span>　 <span style="color:Black;">オプション</span>　 <span style="color:Black;">作業</span>　 　<span style="color:Black;">ヘルプ</span>　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">[tlmgr](/tlmgr/)</span>　 <span style="color:Black;">オプション</span>　 <span style="color:Black;">作業</span>　 　<span style="color:Black;">ヘルプ</span>　　　　　　　　　　　　　</ins></span><br>
 
 　　　リポジトリ<br>
-　　　 読み込み完了：なし　　既定値を読み込む　　既定値：&#x68;ttp://mirror.ctan.org/systems/texlive/tlnet<br>
+　　　 読み込み完了：なし　　\[既定値を読み込む\]　　既定値：&#x68;ttp://mirror.ctan.org/systems/texlive/tlnet<br>
 
 <br>
 
 　　　表示設定<br>
-　　　　状態　　　　　　　区分　　　　　　　　　一致　　　　　　　　　　　　　選択　　　　　　　　　　　　　すべて選択<br>
+　　　　状態　　　　　　　区分　　　　　　　　　一致　　　　　　　　　　　　　選択　　　　　　　　　　　 \[　 すべて選択 　\]<br>
 　　　　(●) すべて　　　☑ パッケージ　　　　　　　　　　　　　　　　　　　(●) すべて<br>
-　　　　 ◯ 導入済　　　☑ 選集　　　　　　　 ☑ 説明　　　　　　　　　　　◯ 選択分　　　　　　　　　すべて非選択<br>
+　　　　 ◯ 導入済　　　☑ 選集　　　　　　　 ☑ 説明　　　　　　　　　　　◯ 選択分　　　　　　　　\[　すべて非選択　\]<br>
 　　　　 ◯ 未導入　　　☑ スキーム　　　　　☑ 分類　　　　　　　　　　　◯ 非選択分<br>
-　　　　 ◯ 更新　　　　　　　　　　　　　　　　　☑ ファイル名　　　　　　　　　　　　　　　　　　　　　　フィルタをリセット<br>
+　　　　 ◯ 更新　　　　　　　　　　　　　　　　　☑ ファイル名　　　　　　　　　　　　　　　　　　　　　 \[フィルタをリセット\]<br>
 
 <br>
 
@@ -40,5 +48,65 @@ pukiwiki: "TeX Live Manager"
 <tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
 </tbody>
 </table>
+
+***
+
+<br>
+
+　　　　　　　　\[導入済のものをすべて更新\]<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[更新\]　　\[導入\]　　\[取り除く\]　　\[バックアップ\]<br>
+　　　　 ☐ 前回取り除いたパッケージを再導入<br>
+
+***
+
+　　(C:/texlive/2014/tlpkg/texlive.tlpdb)<br>
+　これには少し時間がかかるかもしれません．我慢してください...<br>
+　... 読み込み終わりました.<br>
+
+***
+
+### 一般オプション {#p434b2db}
+
+\[オプション\]-\[一般...\]
+
+***
+
+一般オプション<br>
+　既定のパッケージレポジトリ　　　　　　&#x68;ttp://mirror.ctan.org/systems/texlive/tlnet　　\[変更\]<br>
+　導入時にフォーマットを作成する　　　　　　　　　　　　　　　　はい　　　　　　　　　　　　　 \[入切\]<br>
+　macro および font ソースを導入する　　　　　　　　　　　　　 はい　　　　　　　　　　　　　 \[入切\]<br>
+　macro および font 説明書を導入する　　　　　　　　　　　　　はい　　　　　　　　　　　　　 \[入切\]<br>
+　既定のバックアップディレクトリ　　　　　　　　　　　　　　　tlpkg/backups　　　　　　　　　　\[変更\]<br>
+　自動バックアップ設定　　　　　　　　　　　　　　　　　　　　　　　　1　　　　　　　　　　　　　　\[変更\]<br>
+　ショートカットをデスクトップに作成　　　　　　　　　　　　　　　 はい　　　　　　　　　　　　　 \[入切\]<br>
+　全ユーザ向けに導入する　　　　　　　　　　　　　　　　　　　　 はい　　　　　　　　　　　　　 \[入切\]<br>
+　ファイル関連付けを変更する　　　　　　　　　　　　　　　　　新規のみ　　　　　　　　　　　　\[変更\]<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　\[変更を適用\]　　\[取消\]<br>
+
+***
+
+### 用紙オプション {#uccd4c87}
+
+\[オプション\]-\[用紙...\]
+
+***
+
+用紙オプション<br>
+　全体の既定用紙　　　　　　　　　　\[A4\]　　\[レター\]<br>
+　既定用紙：設定先 = dvipdfmx　　 a4　　　\[変更\]<br>
+　既定用紙：設定先 = dvips　　　　　a4　　　\[変更\]<br>
+　既定用紙：設定先 = pdftex　　　　 a4　　　\[変更\]<br>
+　既定用紙：設定先 = psutils　　　　 a4　　　\[変更\]<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　\[変更を適用\]　　\[取消\]<br>
 
 ***
