@@ -123,7 +123,10 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 しおりを作成する場合は2回コンパイルが必要です．<br>
 \usepackage で dvipdfmx を指定してエラーが発生する場合は hyperref パッケージを最新版 にアップデートしてください．<br>
 
-hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．[pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
+hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．<br>
+
+- [pLaTeX縦書きでhyperrefパッケージを使うときの変更点](http://qiita.com/munepi/items/004d19a657d3bf2d4ded)
+- [pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
 #### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
 
