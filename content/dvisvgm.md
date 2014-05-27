@@ -58,6 +58,7 @@ TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイ
 \fi
 \usepackage[active,tightpage]{preview}
 \begin{document}
+\begin{preview}
 
 吾輩は猫である。名前はまだ無い。
 
@@ -66,6 +67,7 @@ TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイ
 ニャーニャー泣いていた事だけは記憶している。
 吾輩はここで始めて人間というものを見た。
 
+\end{preview}
 \end{document}
 ```
 
