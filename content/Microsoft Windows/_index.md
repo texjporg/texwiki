@@ -191,6 +191,19 @@ Enter command: I
 
 インストールする場合は I を入力してインストールを開始します．<br>
 インストールしない場合は Q を入力して終了します．<br>
+サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
+エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
+
+```
+.\install-tl-windows.bat -no-gui --profile installation.profile
+```
+
+```
+ABORTED INSTALLATION FOUND: installation.profile
+Do you want to continue with the exact same settings as before (y/N): y
+```
+
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
 
 ■ GUI でインストールする場合<br>
 
@@ -282,6 +295,19 @@ Enter command: I
 
 インストールする場合は I を入力してインストールを開始します．<br>
 インストールしない場合は Q を入力して終了します．<br>
+サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
+エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
+
+```
+.\install-tl-advanced.bat -no-gui --profile installation.profile
+```
+
+```
+ABORTED INSTALLATION FOUND: installation.profile
+Do you want to continue with the exact same settings as before (y/N): y
+```
+
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
 
 ■ GUI でインストールする場合<br>
 
@@ -321,9 +347,9 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに実行し�
 　　　　　　　　　　　　　　　　　　　　48選集（全 48 選集中） (＠必要ディスク領域: 3779MB)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　-------ディレクトリ設定-------<br>
 　　可搬設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　いいえ　　　　　　　　　　　　　\[ 入切 \]<br>
-　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2014　　　　　　　　　 \[ 変更 \]<br>
-　　TEXMFLOCAL（サイト固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\texmf-local　　　　　　　 \[ 変更 \]<br>
-　　TEXMFSYSVAR（自動生成データ用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\2014\texmf-var　　　　　 \[ 変更 \]<br>
+　　TEXDIR（TeX主幹ディレクトリ）　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　C:\texlive\2014　　　　　　　　　　\[ 変更 \]<br>
+　　TEXMFLOCAL（サイト固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\texmf-local　　　　　　　　\[ 変更 \]<br>
+　　TEXMFSYSVAR（自動生成データ用ディレクトリ）　　　　　　　　　　　　　　　　C:\texlive\2014\texmf-var　　　　　　\[ 変更 \]<br>
 　　TEXMFSYSCONFIG（ローカル設定用ディレクトリ）　　　　　　　　　　　　　　C:\texlive\2014\texmf-config　　　　　 \[ 変更 \]<br>
 　　TEXMFHOME（ユーザ固有ファイル用ディレクトリ）　　　　　　　　　　　　　　　　　　　　~\texmf　　　　　　　　　　　　　\[ 変更 \]<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　-------オプション-------<br>
@@ -437,6 +463,13 @@ tlmgr update --self --all
 
 にパッケージのバックアップが保存されます．<br>
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+
+パッケージは
+
+- [tlmgr](/tlmgr/) (コマンドライン)
+- [TeX Live Manager](</TeX Live Manager/>) (GUI)
+
+で管理できます．<br>
 
 #### extractbb の追加 {#tf06ef9d}
 
