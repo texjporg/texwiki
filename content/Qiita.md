@@ -13,3 +13,4 @@ pukiwiki: "Qiita"
 - [LaTexに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTex)
 - [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
 - [http://qiita.com/zr_tex8r](http://qiita.com/zr_tex8r)
+- [http://qiita.com/munepi](http://qiita.com/munepi)
