@@ -81,7 +81,6 @@ Enter command: I
 I を入力してインストールを開始します．<br>
 サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
 エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
 
 ```
 $ sudo ./install-tl --profile installation.profile
@@ -89,6 +88,7 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
 ```
