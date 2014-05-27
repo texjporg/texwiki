@@ -53,7 +53,7 @@ Windows, OS X, Linux
 
 - [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
-## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) → 問題が発生する場合は LaTeXSQ を使用する <a id="latextools"></a> {#e60d4c0f}
+## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) → 問題が発生する場合は LaTeX-Plus を使用する <a id="latextools"></a> {#e60d4c0f}
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](http://tekonomist.wordpress.com/tag/latex/)
@@ -122,7 +122,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 
@@ -204,7 +204,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
@@ -239,7 +239,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'makeindex %O -o %D %S'",
+				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
@@ -253,17 +253,17 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます．<br>
 PDF ファイルが作成されると Evince で PDF ファイルが表示されて forward search が実行されます．<br>
 
-## [LaTeXSQ](https://github.com/randy3k/LaTeXSQ) → 問題が発生する場合は LaTeXTools を使用する <a id="latexsq"></a> {#xcd64fdd}
+## [LaTeX-Plus](https://github.com/randy3k/LaTeX-Plus) → 問題が発生する場合は LaTeXTools を使用する <a id="latex-plus"></a> {#xcd64fdd}
 
 ### ChangeLog {#zc1e6581}
 
-[https://github.com/randy3k/LaTeXSQ/commits/master](https://github.com/randy3k/LaTeXSQ/commits/master)
+[https://github.com/randy3k/LaTeX-Plus/commits/master](https://github.com/randy3k/LaTeX-Plus/commits/master)
 
 ### インストール {#b204bf82}
 
 メニューの \[Preferences\]-\[Package Control\] を選択します．<br>
 Package Control: Install Package を選択します．<br>
-LaTeXSQ を入力して LaTeXSQ を選択します．<br>
+LaTeX-Plus を入力して LaTeX-Plus を選択します．<br>
 
 ## SumatraPDF との連携 {#hf07fc30}
 
