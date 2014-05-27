@@ -922,7 +922,7 @@ TeX ソースの先頭行に例えば，
 
 ## 関連リンク {#fcad5d2d}
 
-- [野鳥（YaTeX） \[物理のかぎしっぽ\]](http://hooktail.sub.jp/tex/yatex/)
+- [モダンな日本語 TeX 環境を整える](http://qiita.com/ynakayama/items/706ae9e59c1b6fd3e3d2)
 - [Linux Mintを導入する（８）](http://note.chiebukuro.yahoo.co.jp/detail/n220718)
 - [NTEmacsでYaTeXによるフルパス内に日本語を含む .tex のタイプセット](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12106481462), [（再）NTEmacsでYaTeXによるフルパス内に日本語を含む .tex のタイプセット](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11106826351)
 - [文字コード毎の tex-command and bibtex-command 切り替え for yatex](http://meq-yo.sblo.jp/article/64863422.html)
@@ -949,3 +949,4 @@ TeX ソースの先頭行に例えば，
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [File #osqaqi27-12106](http://www.sourcepod.com/osqaqi27-12106)
 - [TeX Memo \[Internet Archive\]](http://web.archive.org/web/20100601184838/http://homepages.inf.ed.ac.uk/s0675112/tex_memo.html)
+- [野鳥（YaTeX） \[物理のかぎしっぽ\]](http://hooktail.sub.jp/tex/yatex/)
