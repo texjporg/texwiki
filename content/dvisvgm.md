@@ -7,15 +7,14 @@ pukiwiki: "dvisvgm"
 
 # dvisvgm
 
-dvisvgm で問題が発生する場合は <strong>dvisvgm を使用せず PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する</strong>方法があります。<br>
-
-## [dvisvgm](http://dvisvgm.sourceforge.net/) → 問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する {#hefd7ca2}
+## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dvisvgm とは {#xb898030}
 
-dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
+dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
+TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
 - [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
@@ -40,23 +39,60 @@ dvisvgm は DVI/EPS ファイルを SVG ファイルに変換するソフトウ�
 
 ## 使い方 {#he5a75c1}
 
-### DVI -> SVG {#e2526b87}
+### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
-dvisvgm 1.5 以降は pTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
-
-DVI ファイルを SVG ファイルに変換する場合は
+TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
 
 ```
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+\else
+  \ifdefined\pdfoutput
+    \documentclass[latex]{bxjsarticle}
+    \usepackage[whole]{bxcjkjatype}
+  \else
+    \documentclass[xelatex]{bxjsarticle}
+    \usepackage{zxjatype}
+    \setjamainfont{ipaexm.ttf}
+  \fi
+\fi
+\usepackage[active,tightpage]{preview}
+\begin{document}
+
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたかとんと見当がつかぬ。
+何でも薄暗いじめじめした所で
+ニャーニャー泣いていた事だけは記憶している。
+吾輩はここで始めて人間というものを見た。
+
+\end{document}
+```
+
+upLaTeX で出力された DVI ファイルを SVG ファイルに変換する場合は
+
+```
+$ uplatex hoge.tex
 $ dvisvgm hoge.dvi
 ```
 
-EPS ファイルを SVG ファイルに変換する場合は
+XeLaTeX で出力された &#x58;DV ファイルを SVG ファイルに変換する場合は
 
 ```
+$ xelatex -no-pdf hoge.tex
+$ dvisvgm hoge.xdv
+```
+
+LaTeX で出力された DVI ファイルを EPS ファイルに変換して EPS ファイルを SVG ファイルに変換する場合は
+
+```
+$ latex hoge.tex
+$ dvips -E -o hoge.eps hoge.dvi
 $ dvisvgm -E hoge.eps
 ```
 
-dvisvgm を使用して SVG ファイルに変換した場合はテキストデータも保持されます．<br>
+dvisvgm を使用して DVI ファイル，XDV ファイルを SVG ファイルに変換した場合はテキストデータも保持されます．<br>
+dvisvgm を使用して EPS ファイルを SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
 
 ### DVI -> PDF -> Inkscape -> SVG {#y57cab44}
 
@@ -88,3 +124,4 @@ $ pdftocairo -svg hoge.pdf
 ## 関連リンク {#b9432180}
 
 - [dvisvgm : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvisvgm)
+- [LaTeX dviをsvgに変換 (dvisvgm)](http://www.yamamo10.jp/yamamoto/comp/latex/dvisvgm/)
