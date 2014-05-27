@@ -15,7 +15,14 @@ pukiwiki: "TeX Live Manager"
 
 TeX Live Manager は TeX Live のパッケージ管理ツールです．<br>
 TeX Live をインストールすると TeX Live Manager もインストールされます．<br>
-コマンドラインから使用する場合は [tlmgr](/tlmgr/) を使用します．<br>
+Windows PowerShell またはコマンド プロンプトから
+
+```
+tlmgr-gui
+```
+
+を実行すると TeX Live Manager が起動します．<br>
+コマンドラインでパッケージ管理する場合は [tlmgr](/tlmgr/) を使用します．<br>
 
 ***
 
