@@ -39,6 +39,8 @@ TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイ
 
 ## 使い方 {#he5a75c1}
 
+dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する方法があります。<br>
+
 ### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
 TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
@@ -53,7 +55,7 @@ TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイ
   \else
     \documentclass[xelatex]{bxjsarticle}
     \usepackage{zxjatype}
-    \setjamainfont{ipaexm.ttf}
+    \setjamainfont{ipam.ttf}
   \fi
 \fi
 \usepackage[active,tightpage]{preview}
