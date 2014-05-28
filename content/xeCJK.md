@@ -306,9 +306,9 @@ ZXjatype 0.6 で波ダッシュ「〜」(U+301C) が LuaLaTeX + LuaTeX-ja や up
 ```
 \documentclass[xelatex]{bxjsarticle}
 \usepackage{zxjatype}
-\setjamainfont{ipaexm.ttf}
-\setjasansfont{ipaexg.ttf}
-\setjamonofont{ipaexg.ttf}
+\setjamainfont{ipam.ttf}
+\setjasansfont{ipag.ttf}
+\setjamonofont{ipag.ttf}
 \begin{document}
 
 吾輩は猫である。名前はまだ無い。
