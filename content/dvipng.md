@@ -36,6 +36,8 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ## 使い方 {#ic72a209}
 
+dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります。<br>
+
 ### DVI -> dvipng -> PNG {#wff0573c}
 
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
