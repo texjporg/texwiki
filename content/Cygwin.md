@@ -219,11 +219,6 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
-- [CygwinでTeX](http://imys.la/sh/index.php?itemid=1315)
-- [Windowsに執筆支援ツールのReVIEWを入れて書籍制作をCIする](http://ch3cooh.hatenablog.jp/entry/20130826/1377523171)
-- [CygwinにLaTeXをapt-cygで入れてみた](http://looxu.blogspot.jp/2013/05/cygwinlatexapt-cyg.html)
-- [Cygwin で TeX 環境を作る](http://keisanbutsuriya.blog.fc2.com/blog-entry-55.html)
-
 Cygwin オフィシャルインストーラーの setup-x86_64.exe または setup-x86.exe を使って TeX Live/Cygwin をインストールできます．<br>
 パッケージ選択画面で Publishing を Default から Install に変更すると TeX Live/Cygwin がフルインストールされます．<br>
 
