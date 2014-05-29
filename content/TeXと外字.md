@@ -72,6 +72,7 @@ extractbb kou-itai.pdf
 ```
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 \begin{document}
 
 精興社
