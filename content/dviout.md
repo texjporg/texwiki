@@ -786,6 +786,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ```
 
 PDF ファイルの作成がうまくいかない場合は Windows PowerShell またはコマンド プロンプトから dvipdfmx を実行してください．<br>
@@ -884,6 +885,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ```
 
 PNG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
@@ -908,6 +910,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ```
 
 JPEG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
