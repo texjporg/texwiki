@@ -28,18 +28,19 @@ pukiwiki: "Illustrator"
 #### ai/PDF 形式ファイル {#l3862bb1}
 
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。<br>
-TeX Live 2014 (→ TeX Live [revision 31722](http://www.tug.org/svn/texlive?view=revision&revision=31722) を参照) 以降, W32TeX \[2014/01/22\] 以降は dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
+TeX Live 2014 以降, W32TeX では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
 なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。<br>
 TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
-dvipdfmx.def \[2014/01/23 v3.4 LaTeX graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br>
+dvipdfmx.def \[2014/04/28 v4.01 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br>
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 \begin{document}
 \includegraphics{hoge.ai}
 \end{document}
