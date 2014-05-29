@@ -464,6 +464,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です。<br
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ```
 
 のようにすると，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。<br>
@@ -511,6 +512,7 @@ extractbb zu.png
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ...
 \includegraphics[width=8cm]{zu.png}
 ```
@@ -649,7 +651,7 @@ dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG �
 <!-- → xbb ファイルの作成が面倒。また \includegraphics で画像の使い分けをする分岐命令が面倒，煩雑。([[qa:32749]]) -->
 <!-- - -texmf.cnf の shell_escape_commands に extractbb を追加する~ -->
 <!-- → xbb ファイルの作成が不要となる -->
-<!-- - -\usepackage[dvipdfmx]{graphicx}~ -->
+<!-- - -\usepackage[dvipdfmx]{graphicx}&br;\usepackage{bmpsize}~ -->
 <!-- → いちいち EPS/PDF 画像の選択を \includegraphics 命令の分岐で行う必要がなくなる -->
 <!--  -->
 <!-- >いずれにせよ，''画像の EPS 版と PDF 版との間の整合性''には充分な注意を払う必要がある。 -->
@@ -732,6 +734,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 ```
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 \begin{document}
 ...
 \includegraphics[bb=100 400 500 700,clip,width=5cm]{zu.pdf}
