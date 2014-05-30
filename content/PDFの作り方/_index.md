@@ -131,9 +131,9 @@ Acrobat Distiller を含む製品（商品）です。
     - Adobe Acrobat XI Standard — PDF の編集が可能
     - Adobe Acrobat XI Pro — 様々な PDF の編集が可能
 
-[Adobe Reader](</Adobe Reader/>) は Acrobat の表示・印刷機能だけを抜き出したもので，[Adobe Reader のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます。
+[Adobe Reader](</Adobe Reader/>) は Acrobat の表示・印刷機能だけを抜き出したもので，[Adobe Reader のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます。<br>
 
-Adobe Acrobat があれば Adobe Reader は不要です。
+Adobe Acrobat があれば Adobe Reader がなくても PDF ファイルを表示できます。<br>
 
 Microsoft 製品でも Adobe 製品でも，なるべく最新のアップデートを適用しておきましょう。<br>
 Microsoft Office は [Windows Update 利用の手順](http://www.microsoft.com/ja-jp/security/pc-security/j_musteps.aspx)を参照して Office をアップデートします。<br>
@@ -411,7 +411,14 @@ dvipdfmx -f dlbase14.map ファイル名
 なる special コマンドを書いておいてもよいです。(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
 
 次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます。<br>
-TeX Live の場合は IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
+TeX Live の場合は IPAexフォントを埋め込む場合は
+Windows PowerShell またはコマンド プロンプトから
+
+```
+kanji-config-updmap-sys ipaex
+```
+
+または
 
 ```
 kanji-config-updmap ipaex
@@ -487,7 +494,7 @@ sudo nano /usr/local/texlive/texmf-local/web2c/texmf.cnf　（ここでは例と
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,mendex,texindy,\
+makeindex,mendex,texindy,xindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
