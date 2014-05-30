@@ -269,12 +269,6 @@ $ yaourt -S lyx-git
 $ yaourt -S texstudio
 ```
 
-## [Texmaker](/Texmaker/) {#kc254e63}
-
-```
-$ sudo pacman -S texmaker
-```
-
 ## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
