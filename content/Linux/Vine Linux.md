@@ -33,11 +33,11 @@ VineSeed は Vine Linux の開発版です．<br>
 
 ## TeX Live {#c1d98d5f}
 
-### TeX Live 公式パッケージ {#a6e990be}
+### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#a6e990be}
 
 - [Linux](/Linux/#texliveinstall)
 
-### TeX Live/Vine Linux {#ue950dcc}
+### TeX Live/Vine Linux <a id="texlivevinelinux"></a> {#ue950dcc}
 
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
 
