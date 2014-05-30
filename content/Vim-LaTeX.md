@@ -475,7 +475,7 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 
 &#x3c;+options+>, &lt;+class+>, &lt;++> は place-holder で，&#x3c;Ctrl-J> をタイプすると place-holder が表示されている場所へジャンプします．
 
-place-holder を使った移動は [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) にも実装されています．
+place-holder を使った移動は [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) にも実装されています．
 
 EDO を表示したい場合は，EDo をタイプして &#x3c;Esc> (&#x3c;Ctrl-\[> または &#x3c;Ctrl-C> でも OK) をタイプして ~ をタイプします．
 
