@@ -81,9 +81,9 @@ Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
 
 - [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
 - [LaTeX - ArchWiki](https://wiki.archlinux.org/index.php/LaTeX)
-- [Kile and TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/Kile_and_TeX_Live)
+    <!-- -[[Kile and TeX Live - ArchWiki:https://wiki.archlinux.org/index.php/Kile_and_TeX_Live]] -->
 
-### TeX Live 公式パッケージ {#w9579c29}
+### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
 
 - [Linux](/Linux/#texliveinstall)
 
@@ -98,7 +98,7 @@ TeX Live/Arch Linux をインストールするのを防止できます．<br>
 $ yaourt -S texlive-dummy
 ```
 
-### TeX Live/Arch Linux {#y18009db}
+### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
@@ -214,7 +214,7 @@ $ sudo pacman -S wine
 エラー: 対象が見つかりませんでした: wine
 ```
 
-と表示される場合は multilib を有効にして pacman -Syu を実行します．<br>
+と表示される場合は multilib を有効にして sudo pacman -Syu を実行します．<br>
 
 ```
 $ curl -O ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.07/ja_JP/AdbeRdr11007_ja_JP.exe
@@ -266,7 +266,7 @@ $ yaourt -S lyx-git
 ## [TeXstudio](/TeXstudio/) {#geb231cb}
 
 ```
-$ yaourt -S texstudio
+$ sudo pacman -S texstudio
 ```
 
 ## [TeXworks](/TeXworks/) {#y01d9b26}
