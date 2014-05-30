@@ -30,7 +30,7 @@ Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;
 
 Windows でも動作するようです。 → ｢TeXを使ってみよう｣をWindows上で動かせました ([qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html))
 
-最近の Linux ディストリビューションは TeX Live 2013 以降になっているので UTF-8 に対応した e-upTeX, XeTeX, LuaTeX が収録されています。<br>
+最近の Linux ディストリビューションは TeX Live 2014 以降になっているので UTF-8 に対応した e-upTeX, XeTeX, LuaTeX, LuaJITTeX が収録されています。<br>
 ソースからコンパイルする方法は以下のページをご参照ください。<br>
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
