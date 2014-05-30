@@ -52,10 +52,8 @@ $ pacman -S python
 
 #### Arch Linux {#y0be7e82}
 
-- [https://www.archlinux.org/packages/extra/x86_64/python/](https://www.archlinux.org/packages/extra/x86_64/python/)
-- [https://www.archlinux.org/packages/extra/i686/python/](https://www.archlinux.org/packages/extra/i686/python/)
-- [https://www.archlinux.org/packages/extra/x86_64/python2/](https://www.archlinux.org/packages/extra/x86_64/python2/)
-- [https://www.archlinux.org/packages/extra/i686/python2/](https://www.archlinux.org/packages/extra/i686/python2/)
+- [https://www.archlinux.org/packages/?name=python](https://www.archlinux.org/packages/?name=python)
+- [https://www.archlinux.org/packages/?name=python2](https://www.archlinux.org/packages/?name=python2)
 
 #### Linux Mint {#fb9002c1}
 
