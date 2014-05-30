@@ -64,10 +64,10 @@ make &amp;&amp; make installで導入できます．
 #### TeXソースの入力支援 {#z413bd5e}
 
 <!-- |[[TeXmacs]]|editors/texmacs|A free WYSIWYG scientific text editor| -->
+<!-- |[[Texmaker]]|editors/texmaker|LaTeX Development Environment| -->
 
 <table>
 <tbody>
-<tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
 <tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
 <tr><td><a href="/YaTeX/">YaTeX</a></td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
