@@ -124,6 +124,43 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 使い方 {#qabeb774}
 
+### PDF のバージョンを指定する {#b272a636}
+
+- [pdfの図が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=690)
+- [mediabb パッケージが（あまり）役に立たない話](http://d.hatena.ne.jp/zrbabbler/20140530/1401462549)
+
+PDF 1.4 で出力したい場合はプリアンブルに
+
+```
+\special{pdf: minorversion=4}
+```
+
+PDF 1.5 で出力したい場合はプリアンブルに
+
+```
+\special{pdf: minorversion=5}
+```
+
+PDF 1.6 で出力したい場合はプリアンブルに
+
+```
+\special{pdf: minorversion=6}
+```
+
+PDF 1.7 で出力したい場合はプリアンブルに
+
+```
+\special{pdf: minorversion=7}
+```
+
+と記述すれば OK です．<br>
+
+コマンドラインオプションで指定することもできます．<br>
+
+```
+-V number     Set PDF minor version
+```
+
 ### dvipdfmx を画像キャッシュで高速化 {#y11c4b43}
 
 - TeX Live 2013 以降で使用可能です (→ TeX Live [Revision 29495](http://www.tug.org/svn/texlive?view=revision&revision=29495), [Revision 29512](http://www.tug.org/svn/texlive?view=revision&revision=29512) でコミットされました)
