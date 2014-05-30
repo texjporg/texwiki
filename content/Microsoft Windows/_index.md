@@ -506,7 +506,7 @@ shell_escape_commands を以下のように編集して保存します．<br>
 shell_escape_commands = \
 bibtex,bibtex8,bibtexu,upbibtex,biber,\
 kpsewhich,\
-makeindex,mendex,texindy,\
+makeindex,mendex,texindy,xindy,\
 mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
