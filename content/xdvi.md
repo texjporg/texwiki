@@ -21,7 +21,6 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 xdvik は DVI プレビューアです．<br>
 xdvi を Kpathsea ライブラリに対応させたものです．<br>
 [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば日本語化されていない xdvik でも日本語が表示できます．<br>
-(e-)(u)pTeX で出力された DVI ファイルを表示する場合は pxdvi を使用します．<br>
 
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
 - [xdvi](http://math.berkeley.edu/~vojta/xdvi.html)
