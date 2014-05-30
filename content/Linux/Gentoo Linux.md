@@ -75,10 +75,6 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 - [http://gentwoo.elisp.net/packages/app-office/texstudio](http://gentwoo.elisp.net/packages/app-office/texstudio)
 
-## [Texmaker](/Texmaker/) {#s4e0cb5d}
-
-- [http://gentwoo.elisp.net/packages/app-office/texmaker](http://gentwoo.elisp.net/packages/app-office/texmaker)
-
 ## [TeXworks](/TeXworks/) {#b5894e2b}
 
 ## [Emacs](/Emacs/) {#wd024ab5}
