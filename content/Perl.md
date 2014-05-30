@@ -72,8 +72,7 @@ TeX Live の Windows 版には Perl の処理系が収録されています．<b
 
 #### Arch Linux {#t5beee15}
 
-- [https://www.archlinux.org/packages/core/x86_64/perl/](https://www.archlinux.org/packages/core/x86_64/perl/)
-- [https://www.archlinux.org/packages/core/i686/perl/](https://www.archlinux.org/packages/core/i686/perl/)
+- [https://www.archlinux.org/packages/?name=perl](https://www.archlinux.org/packages/?name=perl)
 
 ### TeX関連モジュール {#y91d7e77}
 
