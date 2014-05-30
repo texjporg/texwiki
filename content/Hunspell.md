@@ -22,7 +22,6 @@ Hunspell はスペルチェッカーです．<br>
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
