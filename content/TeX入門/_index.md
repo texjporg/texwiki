@@ -111,7 +111,7 @@ TeX，pTeX，upTeX が働いていると言うに留めておき，詳しい説�
 
 まずは次の本を挙げておきます。
 
-- [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』（[技術評論社](http://gihyo.jp/)，2013年10月，定価 &yen;3,360 (本体 &yen;3,200)，[ISBN 978-4-7741-6045-0](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6045-0)）……
+- [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』（[技術評論社](http://gihyo.jp/)，2013年10月，定価 &yen;3,456 (本体 &yen;3,200)，[ISBN 978-4-7741-6045-0](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6045-0)）……
     [TeX Live](</TeX Live/>) 2013 を収録した
     DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2013/978-4-7741-6107-5)もあります。
 
