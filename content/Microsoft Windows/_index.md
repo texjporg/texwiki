@@ -573,8 +573,6 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
-<!-- :[[574. Texmaker and texlive on windows xp:http://verahill.blogspot.jp/2014/05/574-texmaker-and-texlive-on-windows-xp.html]] | 2014-05-09 -->
-
 [TeXLive 2014 pretest](http://progress.tistory.com/214)
 : 2014-04-27
 
@@ -739,10 +737,10 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#m5a5dc1e}
 
-- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
 - [SumatraPDF](/SumatraPDF/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．[SumatraPDF](/SumatraPDF/) などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#s7d96524}
