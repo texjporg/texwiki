@@ -82,7 +82,6 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
