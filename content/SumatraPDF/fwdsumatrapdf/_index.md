@@ -70,7 +70,6 @@ fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使�
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
