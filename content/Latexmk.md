@@ -17,6 +17,23 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 
 - [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
 
+### インストール {#t07c147c}
+
+TeX Live, W32TeX には Latexmk が最初から含まれています．<br>
+
+#### Arch Linux {#qee2215d}
+
+- [https://www.archlinux.org/packages/?name=texlive-core](https://www.archlinux.org/packages/?name=texlive-core)
+- [https://www.archlinux.org/packages/?name=texlive-bin](https://www.archlinux.org/packages/?name=texlive-bin)
+
+#### Linux Mint {#r8b1b822}
+
+- [http://packages.ubuntu.com/ja/latexmk](http://packages.ubuntu.com/ja/latexmk)
+
+#### Debian {#la23c405}
+
+- [https://packages.debian.org/ja/latexmk](https://packages.debian.org/ja/latexmk)
+
 ### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
 
 ***
