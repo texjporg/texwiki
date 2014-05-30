@@ -31,6 +31,16 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 - [Mirrors - Linux Mint](http://www.linuxmint.com/mirrors.php)
 
+### 台湾ミラーサイト {#v3e8b140}
+
+#### ISO Images {#vd1db1bf}
+
+- [http://free.nchc.org.tw/linuxmint/isos/stable/](http://free.nchc.org.tw/linuxmint/isos/stable/)
+
+#### パッケージ {#ie619db8}
+
+- [http://free.nchc.org.tw/linuxmint/packages/](http://free.nchc.org.tw/linuxmint/packages/)
+
 ### 国内ミラーサイト {#ce6708ed}
 
 日本のミラーサイト (JAIST) は No codecs 版のみの配布になっています． (→ [Linux Mintのミラーを再開しました](http://ftp-admin.blogspot.jp/2013/06/linux-mint.html))<br>
@@ -53,10 +63,10 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
+- [Ubuntu -- パッケージ検索結果 -- texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
 - [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
-- [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
-- [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
