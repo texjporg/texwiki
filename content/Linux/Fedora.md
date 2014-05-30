@@ -127,12 +127,6 @@ $ sudo yum install lyx
 $ sudo yum install texstudio
 ```
 
-## [Texmaker](/Texmaker/) {#lcaf9397}
-
-```
-$ sudo yum install texmaker
-```
-
 ## [TeXworks](/TeXworks/) {#q8a87364}
 
 ```
