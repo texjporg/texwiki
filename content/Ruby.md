@@ -84,8 +84,7 @@ $ pacman -S ruby
 
 #### Arch Linux {#k152c3d6}
 
-- [https://www.archlinux.org/packages/extra/x86_64/ruby/](https://www.archlinux.org/packages/extra/x86_64/ruby/)
-- [https://www.archlinux.org/packages/extra/i686/ruby/](https://www.archlinux.org/packages/extra/i686/ruby/)
+- [https://www.archlinux.org/packages/?name=ruby](https://www.archlinux.org/packages/?name=ruby)
 
 #### Linux Mint {#o6dd6f52}
 
