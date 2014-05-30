@@ -33,7 +33,7 @@ PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
 - [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
     - [e-TeX](/e-TeX/) 拡張が必要です． ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
-    - [TeX Live](</TeX Live/>) 2013 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
+    - [TeX Live](</TeX Live/>) 2014 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
         <!-- - -[[ChangeLog:http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog]] -->
 
