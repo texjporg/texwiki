@@ -70,6 +70,7 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 ### Arch Linux {#h8cd5d50}
 
+- [https://www.archlinux.org/packages/?name=zathura](https://www.archlinux.org/packages/?name=zathura)
 - [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
 ### Linux Mint {#cc8ebe01}
