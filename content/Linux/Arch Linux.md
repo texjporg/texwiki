@@ -260,7 +260,6 @@ Adobe Reader の保護モード
 
 ```
 $ sudo pacman -S lyx
-$ yaourt -S lyx-git
 ```
 
 ## [TeXstudio](/TeXstudio/) {#geb231cb}
