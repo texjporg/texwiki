@@ -49,7 +49,7 @@ Windows, OS X, Linux
 #### Arch Linux {#ea1ae897}
 
 - [https://aur.archlinux.org/packages/atom-editor/](https://aur.archlinux.org/packages/atom-editor/)
-- [https://aur.archlinux.org/packages/atom-editor-git/](https://aur.archlinux.org/packages/atom-editor-git/)
+- [https://aur.archlinux.org/packages/atom-editor-bin/](https://aur.archlinux.org/packages/atom-editor-bin/)
 
 ## atom-latex {#c420e42b}
 
