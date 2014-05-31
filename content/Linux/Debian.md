@@ -29,7 +29,6 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
 - [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
-- [Debian -- パッケージ検索結果 -- texlive-lang-cjk](https://packages.debian.org/ja/texlive-lang-cjk)
 - [Debian -- パッケージ検索結果 -- texlive-latex-recommended](https://packages.debian.org/ja/texlive-latex-recommended)
 - [Debian -- パッケージ検索結果 -- texlive-fonts-recommended](https://packages.debian.org/ja/texlive-fonts-recommended)
 - [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
