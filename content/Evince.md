@@ -58,7 +58,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ### Arch Linux {#eb51c4f9}
 
-- [https://www.archlinux.org/packages/?q=evince](https://www.archlinux.org/packages/?q=evince)
+- [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
 
 ### Linux Mint {#lacd43b5}
 
