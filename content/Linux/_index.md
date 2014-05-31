@@ -16,6 +16,8 @@ pukiwiki: "Linux"
 
 ## Linux ディストリビューション {#h2a1700b}
 
+- [Distros - TeX Live - TeX Users Group](http://www.tug.org/texlive/distro.html)
+
 Linux はディストリビューションによって TeX のインストール方法が異なります．<br>
 Linux ディストリビューションに収録されている TeX Live をインストールする場合はディストリビューションごとの項目をご覧ください．<br>
 [TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．<br>
