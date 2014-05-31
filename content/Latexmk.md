@@ -34,7 +34,7 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．<br>
 
 - [https://packages.debian.org/ja/latexmk](https://packages.debian.org/ja/latexmk)
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXworks, YaTeX, AUCTeX (TeX-interactive-mode が ON の場合), tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
+### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXworks, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX, tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
 
 ***
 
@@ -88,7 +88,7 @@ latexmk -gg -pdfps hoge.tex
 latexmk -gg -pdf hoge.tex
 ```
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), quickrun などの場合) {#ke005cd5}
+### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXstudio, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), quickrun などの場合) {#ke005cd5}
 
 ***
 
@@ -161,6 +161,7 @@ latexmk -C
 - [【質問】日本語環境における文献処理について](http://qiita.com/mr_konn/items/3f523eb6dcf1d9837c92)
 - [https://gist.github.com/konn](https://gist.github.com/konn)
     - [https://gist.github.com/konn/8234466](https://gist.github.com/konn/8234466)
+- [latexmk | miyazakikenji](http://miyazakikenji.wordpress.com/2014/01/27/latexmk/)
 - [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
 - [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
