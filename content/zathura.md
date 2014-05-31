@@ -26,7 +26,7 @@ SyncTeX に対応しています．<br>
 
 ### 動作環境 {#q9b59e7d}
 
-Linux, BSD
+OS X, Linux, BSD
 
 [Known supported distributions](http://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
 
@@ -67,6 +67,11 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 <!-- -[[Re: [zathura] Synctex support:http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html]] -->
 
 ## ダウンロード/インストール {#w2221884}
+
+### OS X {#hcc17832}
+
+- [/trunk/dports/office/zathura](http://trac.macports.org/browser/trunk/dports/office/zathura/Portfile)
+- [/trunk/dports/office/zathura-plugin-pdf-poppler](http://trac.macports.org/browser/trunk/dports/office/zathura-plugin-pdf-poppler/Portfile)
 
 ### Arch Linux {#h8cd5d50}
 
