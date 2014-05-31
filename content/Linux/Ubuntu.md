@@ -67,6 +67,7 @@ Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの L
 Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Xubuntu](http://xubuntu.org/)
+- [xubuntuが一番いいと思う訳](http://takoejplus.blogspot.jp/2013/11/xubuntu.html), [Xubuntuを勧める10の理由](http://takoejplus.blogspot.jp/2014/01/xubuntu10.html) → [結局ArchLinuxに戻る](http://takoejplus.blogspot.jp/2014/01/archlinux.html)
 
 #### Lubuntu とは {#zdc5ee41}
 
@@ -90,10 +91,10 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
+- [Ubuntu -- パッケージ検索結果 -- texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
 - [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
-- [Ubuntu -- パッケージ検索結果 -- latexmk](http://packages.ubuntu.com/ja/latexmk)
-- [Ubuntu -- パッケージ検索結果 -- ghostscript](http://packages.ubuntu.com/ja/ghostscript)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
